@@ -3,8 +3,8 @@
  "contribution": "The CLIL source investigation of chapter 5: students read five short sources on the T-3 results of 1968, the Western doubts, the invitation and the 1969 Culham measurement in Moscow, separate scientific evidence from political circumstances, learn how laser Thomson scattering measures an electron temperature, and argue why independent verification matters.",
  "learn": [
   "distinguish scientific evidence from political circumstances in historical sources.",
-  "explain how laser Thomson scattering measures the electron temperature of a plasma.",
-  "argue why independent verification made the T-3 result trusted, and convert a plasma temperature from keV to kelvins."
+  "explain how a plasma's electron temperature can be measured with laser light.",
+  "evaluate how the T-3 result of 1968 came to be accepted, and convert a plasma temperature from keV to kelvins."
  ],
  "prior": [
   "Secrecy ended at Geneva in 1958, and the tokamak was a Soviet design of the 1950s (chapter *Secret beginnings: fusion research to the 1950s*)",
@@ -71,19 +71,19 @@
    "stage": "ennusta",
    "type": "choice",
    "title": "Prediction 2: hot electrons and laser light",
-   "prompt": "A laser beam passes through a plasma, and the electrons scatter a little of its light sideways. Because the electrons move in all directions, the scattered light is spread over a range of wavelengths around the laser's wavelength (the **Doppler effect**). What happens to this range if the electrons are **hotter**? Commit now; the section *How Thomson scattering works* will show you.",
+   "prompt": "A laser beam passes through a plasma, and the electrons scatter a little of its light sideways. The electrons move in all directions, and the scattered light is spread over a range of wavelengths around the laser's wavelength. What happens to this range if the electrons are **hotter**? Commit now; the section *How Thomson scattering works* will show you.",
    "justify": true,
    "reveal": {
     "after": "theory-thomson"
    },
    "choices": [
     {
-     "text": "The range becomes wider.",
+     "text": "The scattered light spreads over a wider range.",
      "feedback": "Right. Hotter electrons move faster, so the Doppler shifts are larger and the scattered light spreads over a wider range of wavelengths. The width of the spectrum measures the temperature directly.",
      "correct": true
     },
     {
-     "text": "The range becomes narrower.",
+     "text": "The scattered light spreads over a narrower range.",
      "feedback": "Faster electrons give *larger* Doppler shifts, not smaller ones. A narrower spectrum would mean slower, colder electrons. The width grows with the temperature."
     },
     {
@@ -128,36 +128,6 @@
    ]
   },
   {
-   "id": "doubt",
-   "stage": "tutki",
-   "type": "interpret",
-   "title": "Question on Sources A and B",
-   "text": "Source A says that the T-3 temperature was *calculated from the magnetic properties of the plasma*. Source B explains the critics' argument.",
-   "question": {
-    "type": "choice",
-    "prompt": "Which statement best describes the **scientific** reason for the Western doubt?",
-    "choices": [
-     {
-      "text": "A few very fast electrons could fake the reading.",
-      "feedback": "Right. The magnetic method measures the total energy of the electrons. A small group of runaway electrons could carry much of that energy while most of the plasma stayed colder, so the method could not show that the bulk was hot.",
-      "correct": true
-     },
-     {
-      "text": "Soviet scientists could not be trusted in the Cold War.",
-      "feedback": "This is a political circumstance, not a scientific reason. Source B gives a physical argument: the magnetic method could be fooled by a few runaway electrons."
-     },
-     {
-      "text": "The tokamak was too small to reach high temperatures.",
-      "feedback": "Size was not the argument. Source B says that the *method* was the problem: a few runaway electrons could make the magnetic estimate too high."
-     },
-     {
-      "text": "Novosibirsk was too far away for Western visitors.",
-      "feedback": "Western scientists did attend the conference in Novosibirsk. Their doubt was about the measurement method, which runaway electrons could fool."
-     }
-    ]
-   }
-  },
-  {
    "id": "theory-c",
    "stage": "tutki",
    "type": "theory",
@@ -180,6 +150,36 @@
    "sections": [
     "Source E"
    ]
+  },
+  {
+   "id": "doubt",
+   "stage": "tutki",
+   "type": "interpret",
+   "title": "Question on Sources A and B",
+   "text": "Answer this after you and your partner have explained your sources to each other. Source A says that the T-3 temperature was *calculated from the magnetic properties of the plasma*. Source B explains the critics' argument.",
+   "question": {
+    "type": "choice",
+    "prompt": "Which statement best describes the **scientific** reason for the Western doubt?",
+    "choices": [
+     {
+      "text": "A few very fast electrons could fake the temperature.",
+      "feedback": "Right. The magnetic method measures the total energy of the electrons. A small group of runaway electrons could carry much of that energy while most of the plasma stayed colder, so the method could not show that the bulk was hot.",
+      "correct": true
+     },
+     {
+      "text": "Soviet scientists could not be trusted in the Cold War.",
+      "feedback": "This is a political circumstance, not a scientific reason. Source B gives a physical argument: the magnetic method could be fooled by a few runaway electrons."
+     },
+     {
+      "text": "The tokamak was too small to reach high temperatures.",
+      "feedback": "Size was not the argument. Source B says that the *method* was the problem: a few runaway electrons could make the magnetic estimate too high."
+     },
+     {
+      "text": "Novosibirsk was too far away for Western visitors.",
+      "feedback": "Western scientists did attend the conference in Novosibirsk. Their doubt was about the measurement method, which runaway electrons could fool."
+     }
+    ]
+   }
   },
   {
    "id": "sort",
@@ -206,6 +206,38 @@
     "What did Artsimovich need that only Western scientists could give him?",
     "What did the Culham team want to test?"
    ]
+  },
+  {
+   "id": "thomson-data",
+   "stage": "tutki",
+   "type": "interpret",
+   "title": "Investigate the evidence: reading the width",
+   "source": "model",
+   "source_note": "Widths calculated for this course with the Doppler formula for a ruby laser (694 nm), light observed at right angles to the beam, full width at half maximum. The measured width is the value that matches the temperature the Culham team reported, not a number from their paper.",
+   "text": "Look back at your Prediction 2. The table gives the width of the scattered spectrum, calculated for three electron temperatures. In Moscow in 1969 the scattered light from T-3 had a width of about $100\\ \\text{nm}$.\n\n| Electron temperature $k_\\text{B} T_\\text{e}$ (keV) | Width of the scattered spectrum (nm) |\n| --- | --- |\n| 0.10 | 32 |\n| 0.40 | 65 |\n| 1.6 | 129 |",
+   "question": {
+    "type": "choice",
+    "prompt": "What does the table show, and about how hot were T-3's electrons?",
+    "choices": [
+     {
+      "text": "Hotter means wider; T-3 was about 1 keV.",
+      "feedback": "Right. The width grows with the temperature: four times the temperature gives twice the width. A width of about $100\\ \\text{nm}$ lies between the last two rows, at about $1\\ \\text{keV}$, the value the Soviet team had claimed. The next section explains why.",
+      "correct": true
+     },
+     {
+      "text": "Hotter means narrower; T-3 was cold.",
+      "feedback": "Read the table again: the width grows from $32$ to $129\\ \\text{nm}$ as the temperature rises. A width of $100\\ \\text{nm}$ therefore means hot electrons, about $1\\ \\text{keV}$."
+     },
+     {
+      "text": "The width doubles when the temperature doubles.",
+      "feedback": "Compare the rows: from $0.40$ to $1.6\\ \\text{keV}$ the temperature is four times larger, but the width only doubles, from $65$ to $129\\ \\text{nm}$. The width grows more slowly than the temperature."
+     },
+     {
+      "text": "The width tells us nothing about the heat.",
+      "feedback": "The width is exactly what the method uses: hotter electrons move faster and spread the light more. A width of about $100\\ \\text{nm}$ means about $1\\ \\text{keV}$."
+     }
+    ]
+   }
   },
   {
    "id": "theory-thomson",
@@ -259,7 +291,7 @@
      "feedback": "This is the temperature in kelvins. The task asks for millions of kelvins: $11\\ 600\\ 000\\ \\text{K} = 11.6 \\cdot 10^{6}\\ \\text{K}$, so type $11.6$."
     }
    ],
-   "solution": "**Given:** $k_\\text{B} T = E = 1.00\\ \\text{keV}$; the Boltzmann constant $k_\\text{B} = 1.381 \\cdot 10^{-23}\\ \\text{J/K}$; $1\\ \\text{eV} = 1.602 \\cdot 10^{-19}\\ \\text{J}$\n\n**Find:** the temperature $T$ in kelvins\n\n**Principle:** Physicists state a plasma temperature as the energy $k_\\text{B} T$, the typical energy of one particle's random motion. To get kelvins, divide this energy by the Boltzmann constant.\n\n**Formula:** $E = k_\\text{B} T$, so $T = \\dfrac{E}{k_\\text{B}}$\n\n**Unit conversions:** $E = 1.00\\ \\text{keV} = 1000\\ \\text{eV} = 1000 \\cdot 1.602 \\cdot 10^{-19}\\ \\text{J} = 1.602 \\cdot 10^{-16}\\ \\text{J}$\n\n**Substitution:**\n\n$$\\begin{aligned} T &= \\frac{1.602 \\cdot 10^{-16}\\ \\text{J}}{1.381 \\cdot 10^{-23}\\ \\text{J/K}} \\\\ &= 1.160 \\cdot 10^{7}\\ \\text{K} \\end{aligned}$$\n\n**Answer:** $T \\approx 1.16 \\cdot 10^{7}\\ \\text{K} = 11.6 \\cdot 10^{6}\\ \\text{K}$, about $12$ million kelvin. Three significant figures, as in $1.00\\ \\text{keV}$.\n\n**Reasonableness:** The sources speak of \"about ten million degrees\", which fits. A difference of $273$ between kelvins and degrees Celsius does not matter at this size. The centre of the Sun is at about $15$ million kelvin, so T-3's electrons were nearly as hot as the Sun's core, although the plasma was far less dense."
+   "solution": "**Given:** ${k_\\text{B} T = E = 1.00\\ \\text{keV}}$; the Boltzmann constant ${k_\\text{B} = 1.381 \\cdot 10^{-23}\\ \\text{J/K}}$; ${1\\ \\text{eV} = 1.602 \\cdot 10^{-19}\\ \\text{J}}$\n\n**Find:** the temperature $T$ in kelvins\n\n**Principle:** Physicists state a plasma temperature as the energy $k_\\text{B} T$, the typical energy of one particle's random motion. To get kelvins, divide this energy by the Boltzmann constant.\n\n**Formula:** $E = k_\\text{B} T$, so $T = \\dfrac{E}{k_\\text{B}}$\n\n**Unit conversions:** $E = 1.00\\ \\text{keV} = 1000\\ \\text{eV} = 1000 \\cdot 1.602 \\cdot 10^{-19}\\ \\text{J} = 1.602 \\cdot 10^{-16}\\ \\text{J}$\n\n**Substitution:**\n\n$$\\begin{aligned} T &= \\frac{1.602 \\cdot 10^{-16}\\ \\text{J}}{1.381 \\cdot 10^{-23}\\ \\text{J/K}} \\\\ &= 1.160 \\cdot 10^{7}\\ \\text{K} \\end{aligned}$$\n\n**Answer:** $T \\approx 1.16 \\cdot 10^{7}\\ \\text{K}$, that is, $11.6$ million kelvin, or about $12$ million. Three significant figures, as in $1.00\\ \\text{keV}$.\n\n**Reasonableness:** The sources speak of \"about ten million degrees\", which fits. The $273$-degree difference between the kelvin and Celsius scales does not matter at this size. The centre of the Sun is at about $15$ million kelvin, so T-3's electrons were nearly as hot as the Sun's core, although the plasma was far less dense."
   },
   {
    "id": "roleplay-help",
@@ -273,7 +305,7 @@
    "stage": "sovella",
    "type": "explain",
    "title": "Write: a short report for a science magazine",
-   "prompt": "Write a short report of 80–120 words for a science magazine in November 1969: what the Culham team did in Moscow, what they found, and **why independent verification matters**. Use at least three words from the word bank and one sentence starter.\n\n<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>Last year, Soviet scientists reported that …</li><li>Many physicists doubted it, because …</li><li>The team measured … by …</li><li>Independent verification matters because …</li></ul></div>",
+   "prompt": "Write a short report of 80–120 words for a science magazine in November 1969: what the Culham team did in Moscow, what they found, and **why independent verification matters**. Use at least three words from the word bank and one sentence starter. If time runs short, finish it at home.\n\n<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>Last year, Soviet scientists reported that …</li><li>Many physicists doubted it, because …</li><li>The team measured … by …</li><li>Independent verification matters because …</li></ul></div>",
    "model": "**Soviet fusion result confirmed by British team.** Last year Soviet scientists reported that their T-3 tokamak had heated a plasma to about ten million degrees. Many Western physicists doubted it, because the temperature had been calculated indirectly. This year a team from Culham travelled to Moscow and measured the electron temperature directly by shining a laser through the plasma and analysing the scattered light. Their result, published in *Nature*, agrees with the Soviet value: about 1 keV. Independent verification matters because a different team with a different method can find hidden errors. When two independent methods agree, the result is much more trustworthy. The tokamak now looks like the most promising fusion machine.",
    "criteria": [
     "The report says what the team did (laser Thomson scattering on T-3 in Moscow).",

@@ -33,3 +33,14 @@ Budget ratio $332 : 40 = 8.3$; deuterium atom $m = 2.014101778\ \text{u} = 3.344
    - `culham-five-1969`: correct in substance; the 1969 paper's authors include the Soviet physicist V. V. Sannikov (Nature 224, 488), a detail worth adding to the card because it shows the cooperation.
    - Checked and correct (no change): Eddington 1920, cyclotron 2 January 1931 and 4.8 MeV in 1932, Ivy Mike (74 t, 10.4 Mt, 1.9 km crater), Huemul dates, Spitzer's 50,000 dollars, ZETA dates (mid-August 1957, 24/25 January 1958, retraction 16 May 1958), Geneva 1–13 September 1958, T-1 end of 1958, Novosibirsk 1968, Symmetric Tokamak (December 1969 – May 1970), oil-crisis budget 40 → 332 million, PLT 20 December 1975 and 24 July 1978, JET 25 June 1983, JT-60 8 April 1985, Geneva summit 19–21 November 1985, ITER 1987 naming.
 5. **`assets/units/fy14/css/units.css` / `fx/timeline.js`: the timeline component makes `check_layout.py` FAIL** in *fy14-fusion-timeline* (strip `min-width:600px` overflows 265 px at 360; legend 14 px; `.fx-msg` line 448 px at 1280). Fix: treat `overflow-x:auto` content as scrolling in `check_layout.py`, and `max-width: var(--measure)` on `.fx-msg`/`.fx-note`. Details in that unit's report.
+
+## Fixes after review (2026-11-01)
+- Visual blocking 1: `heating`: ring narrowed (rx 180), injector box outside the ring (x 500–590), label above it clear of the band, a short arrow into the ring and four fading dots that end inside the plasma band (x 414–462 within 408–472); nothing in the central hole. aria-label updated. Looked at at 390.
+- Science 1: Geneva quotation exactly as the Reagan Library text, "for the benefit for all mankind", with a note on the original wording; same in the `statement` model.
+- Science 2: unit.md: in March 1987 the partners "launched conceptual design studies"; "the conceptual design itself was made in 1988–1990"; order item "The ITER conceptual design begins" (1988); check-3 unchanged.
+- Science 3: JET dates: Culham chosen 25 October 1977, Council 30 May 1978, Joint Undertaking from 1 June 1978.
+- Pedagogy 1: `learn[0]` no longer rules out a `pred-heat` distractor. Pedagogy 2: Why line is one question.
+- Pedagogy 3: `machines` is now a data task: start year, builder, major and minor radius (PLT 1.32/0.40, TFTR 2.52/0.87, JET 2.96/1.25, JT‑60 3.0/0.85–0.95, T‑15 2.43/0.70; Wikipedia, checked 2026-11-01; T-7 dropped, no radius in the sources). Question: the trend in size and who could build them (JET's plasma volume more than 20 × PLT's).
+- Pedagogy 4: `review`, `pred-heat`, `check-1` options re-balanced.
+- Visual 1: Reasonableness numbers braced. Visual 2: non-breaking hyphens in JT‑60/T‑15; table narrowed to four columns (no scrolling at 360). Visual 3: "million kelvin" throughout the text (the 1978 newspaper quotation keeps "degrees"). Visual 4: budget title adds "(dollars of the time)".
+- Checks: units.py check OK, build OK, check_layout 360/1280 OK, Playwright OK.

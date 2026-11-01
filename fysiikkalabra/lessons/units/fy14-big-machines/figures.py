@@ -59,25 +59,27 @@ def heating():
     """A tokamak cross-section and the three ways to heat its plasma: the current (ohmic), a neutral beam, radio waves."""
     f = Fig("fy14bm-heating", 560, "Diagram of three ways to heat a tokamak plasma, drawn on a cross-section of the plasma ring "
             "seen from above. In the middle, an orange ring of plasma. A dark arrow along the ring shows the plasma current: "
-            "ohmic heating. From the right, a box labelled neutral beam sends a row of grey dots, fast neutral atoms, straight "
-            "into the plasma. From the lower left, an antenna sends curved wave lines into the plasma: radio waves.",
+            "ohmic heating. From the right, outside the ring, a box labelled neutral beam sends a short arrow and a row of dark dots, fast neutral "
+            "atoms, into the plasma band, where the dots fade out: the atoms are caught in the plasma. From the lower left, an antenna sends curved wave lines into the plasma: radio waves.",
             width=600, size=28)
     f.rect(0, 0, 600, 560, WHITE)
-    cx, cy = 270, 290
-    f.add(f'<ellipse cx="{cx}" cy="{cy}" rx="200" ry="150" fill="none" stroke="{HEAT_LIGHT}" stroke-width="64"/>')
-    f.add(f'<ellipse cx="{cx}" cy="{cy}" rx="200" ry="150" fill="none" stroke="{HEAT}" stroke-width="6" stroke-opacity="0.5"/>')
+    cx, cy, rx, ry = 260, 290, 180, 150                 # the plasma band reaches from rx - 32 to rx + 32 (x 408-472 at the right)
+    f.add(f'<ellipse cx="{cx}" cy="{cy}" rx="{rx}" ry="{ry}" fill="none" stroke="{HEAT_LIGHT}" stroke-width="64"/>')
+    f.add(f'<ellipse cx="{cx}" cy="{cy}" rx="{rx}" ry="{ry}" fill="none" stroke="{HEAT}" stroke-width="6" stroke-opacity="0.5"/>')
     # current arrow along the ring (ohmic heating)
-    pts = [(cx + 200 * math.cos(a), cy + 150 * math.sin(a)) for a in [math.pi * (1.1 + 0.02 * k) for k in range(31)]]
+    pts = [(cx + rx * math.cos(a), cy + ry * math.sin(a)) for a in [math.pi * (1.1 + 0.02 * k) for k in range(31)]]
     f.path("M" + " L".join(f"{n(x)},{n(y)}" for x, y in pts), stroke=INK, w=5)
     x2, y2 = pts[-1]; x1, y1 = pts[-3]
     f.arrow(x1, y1, x2 + (x2 - x1) * 0.8, y2 + (y2 - y1) * 0.8, INK, 5, 20)
     f.tex(cx, cy - 210, r"\text{current: ohmic heating}", "middle", size=28, w=420)
     # neutral beam from the right
-    f.rect(470, 250, 120, 80, IRON, INK, 2, 6)
-    f.tex(500, 222, r"\text{neutral beam}", "middle", size=28, w=190)
-    for k in range(6):
-        f.circle(455 - 24 * k, 290, 7, METAL_EDGE)
-    f.arrow(330, 290, 300, 290, IRON, 4, 14)
+    # neutral beam: the injector box stands outside the ring; the fast atoms fly into the plasma band and are caught there
+    f.rect(500, 255, 90, 70, IRON, INK, 2, 6)
+    f.tex(545, 196, r"\text{neutral}", "middle", size=28, w=110)
+    f.tex(545, 230, r"\text{beam}", "middle", size=28, w=110)
+    f.arrow(500, 290, 478, 290, INK, 4, 14)
+    for k, x in enumerate((462, 446, 430, 414)):     # inside the band (x 408-472); fading: ionised and caught
+        f.add(f'<circle cx="{x}" cy="290" r="8" fill="{INK}" fill-opacity="{1 - 0.22 * k:.2f}"/>')
     # radio waves from the lower left
     f.rect(20, 470, 90, 34, COPPER, INK, 2, 4)
     for k in range(3):
@@ -93,7 +95,7 @@ def budget():
             "the time: 40 in 1973, 332 in 1978 and 469 in 1984. The 1978 bar is about eight times as tall as the 1973 bar.",
             width=600, size=28)
     f.rect(0, 0, 600, 420, WHITE)
-    x0, yb, top, vmax = 110, 350, 80, 500
+    x0, yb, top, vmax = 110, 350, 104, 500
     Y = lambda v: yb - (yb - top) * v / vmax
     for v in (0, 100, 200, 300, 400, 500):
         f.line(x0, Y(v), 580, Y(v), RULE_LIGHT if v else INK, 1.5 if v else 2.5)
@@ -104,6 +106,7 @@ def budget():
         f.tex(x + 45, Y(v) - 22, str(v), "middle", size=28, w=90)
         f.tex(x + 45, yb + 28, yr, "middle", size=28, w=90)
     f.tex(10, 24, r"\text{US fusion budget, million dollars a year}", size=28, w=580)
+    f.tex(10, 58, r"\text{(dollars of the time)}", size=26, w=580, color=INK)
     return f.svg()
 
 

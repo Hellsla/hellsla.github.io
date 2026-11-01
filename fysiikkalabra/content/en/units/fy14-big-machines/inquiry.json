@@ -2,7 +2,7 @@
  "version": 1,
  "contribution": "The third history unit of chapter 5: the physics problems of the 1970s (ohmic heating's limit, neutral beams and radio waves, superconducting magnets), the oil crisis and the budgets that built PLT, TFTR, JET, JT-60 and T-15, and the Geneva summit of 1985 that turned Cold War rivalry into the cooperation that became ITER.",
  "learn": [
-  "explain why ohmic heating is not enough and how neutral beams and superconducting magnets helped tokamaks.",
+  "explain how a tokamak plasma can be heated beyond its own current, and how superconducting magnets helped.",
   "describe how the 1973 oil crisis and international cooperation shaped the big machines of the 1980s.",
   "evaluate why Cold War rivals agreed on fusion at Geneva in 1985 and how this led to ITER."
  ],
@@ -27,7 +27,7 @@
    "prompt": "In the chapter on plasma you met the conditions a fusion plasma must meet. Which list is complete?",
    "choices": [
     {
-     "text": "Temperature, density and confinement time.",
+     "text": "Temperature, density and the confinement time.",
      "feedback": "Right. The Lawson criterion combines all three: the product of density, temperature and confinement time must be large enough. Remember this when you read about the records of the 1970s.",
      "correct": true
     },
@@ -57,7 +57,7 @@
    },
    "choices": [
     {
-     "text": "It heats less well as the plasma gets hotter.",
+     "text": "It heats less and less well as the plasma heats up.",
      "feedback": "Right. The heating power is $P = RI^2$; with the same current and a smaller resistance, the power falls. Above about $20$–$30$ million kelvin ohmic heating is not enough, so the 1970s developed neutral beams and radio-wave heating.",
      "correct": true
     },
@@ -150,28 +150,28 @@
    "type": "interpret",
    "title": "Data: the big machines",
    "source": "statistics",
-   "source_note": "Start dates from the sources of this unit (Wikipedia articles on the machines, PPPL, checked 1 November 2026).",
-   "text": "| Machine | Built by | Place | Start |\n| --- | --- | --- | --- |\n| PLT | USA | Princeton | 1975 |\n| T-7 | USSR | Moscow | 1979 |\n| TFTR | USA | Princeton | 1982 |\n| JET | Europe (EC) | Culham | 1983 |\n| JT-60 | Japan | Naka | 1985 |\n| T-15 | USSR | Moscow | 1988 |\n\nUSA: the United States; USSR: the Soviet Union; EC: the European Community. Culham is in England, Naka in Japan.",
+   "source_note": "Start dates and plasma radii from the Wikipedia articles on the machines and PPPL (checked 1 November 2026). JT‑60 is the original machine of 1985, not the later JT‑60U.",
+   "text": "The **major radius** is the distance from the centre of the doughnut to the middle of the plasma tube; the **minor radius** is the radius of the tube itself. A larger plasma keeps its heat longer, because the heat must travel further to escape.\n\n| Machine (start) | Built by | Major radius (m) | Minor radius (m) |\n| --- | --- | --- | --- |\n| PLT (1975) | USA | 1.32 | 0.40 |\n| TFTR (1982) | USA | 2.52 | 0.87 |\n| JET (1983) | EC | 2.96 | 1.25 |\n| JT‑60 (1985) | Japan | 3.0 | 0.85–0.95 |\n| T‑15 (1988) | USSR | 2.43 | 0.70 |\n\nUSA: the United States (Princeton); EC: the European Community (Culham, England); Japan: Naka; USSR: the Soviet Union (Moscow).",
    "question": {
     "type": "choice",
-    "prompt": "What does the table show about **who** could build the largest machines of the 1980s?",
+    "prompt": "What does the table show about the machines of the late 1970s and 1980s, and about who could build them?",
     "choices": [
      {
-      "text": "Big economies or groups of countries.",
-      "feedback": "Right. The largest machines were built by the two superpowers, by Japan, and by the European Community together: no smaller European country built a JET of its own. The step after these machines, ITER, needed almost the whole world.",
+      "text": "Later ones were bigger, built by big economies.",
+      "feedback": "Right. The major radius grew from $1.3\\ \\text{m}$ (PLT) to about $3\\ \\text{m}$ (JET, JT‑60), and JET's plasma tube is three times as thick: its plasma volume is more than twenty times PLT's. Machines of this size were built only by the superpowers, by Japan and by the European Community together. The next step, ITER, needed almost the whole world.",
       "correct": true
      },
      {
-      "text": "Every country with a university built one.",
-      "feedback": "The table shows the opposite: only the United States, the Soviet Union, Japan and a group of European countries built the large machines, because they were so expensive."
+      "text": "The machines got smaller as the magnets improved.",
+      "feedback": "Read the radii again: PLT has a major radius of $1.32\\ \\text{m}$, JET and JT‑60 about $3\\ \\text{m}$. The machines grew, because a larger plasma keeps its heat longer, and the cost grew with them."
      },
      {
-      "text": "Only the two Cold War superpowers.",
-      "feedback": "Japan and the European Community also built big tokamaks; JET was the largest of its time. But all builders were large economies or groups of countries."
+      "text": "Each big country built a machine of the same size.",
+      "feedback": "The sizes differ a lot: from $1.32\\ \\text{m}$ (PLT) to $3.0\\ \\text{m}$ (JT‑60). The trend is upwards over time, and only large economies or groups of countries could pay for the largest."
      },
      {
-      "text": "Private companies, not governments.",
-      "feedback": "All these machines were built by governments or government research agencies. Private fusion companies became important only much later."
+      "text": "The size stayed the same; only the cost grew.",
+      "feedback": "The major radius more than doubled from PLT to JET. The cost grew because the machines grew: a larger plasma keeps its heat longer."
      }
     ]
    }
@@ -191,7 +191,7 @@
    "title": "Source question: the Geneva statement",
    "prompt": "Read the quotations from the joint statement of 21 November 1985 in the section above. Discuss with a partner, then write three or four sentences. Reagan and Gorbachev could not agree on arms control, but they did agree on fusion. Give **two** reasons why fusion was an easier topic for the two rivals.\n\n<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>Fusion was easier because …</li><li>Unlike nuclear weapons, fusion …</li><li>The statement says …, which shows …</li><li>The stronger reason is …, because …</li></ul></div>",
    "pair": "Pair work: each partner suggests one reason; then decide together which is the stronger one.",
-   "model": "Fusion power was still decades away, so cooperating on it gave neither side a military advantage or a risk. Both countries had already shared fusion results openly since 1958 and had worked together in the INTOR study, so their scientists trusted each other. The machines needed were so expensive that sharing the cost made sense for both. Finally, a joint fusion project was a positive symbol: the statement speaks of energy \"for the benefit of all mankind\", which helped both leaders show that the relationship was improving.",
+   "model": "Fusion power was still decades away, so cooperating on it gave neither side a military advantage or a risk. Both countries had already shared fusion results openly since 1958 and had worked together in the INTOR study, so their scientists trusted each other. The machines needed were so expensive that sharing the cost made sense for both. Finally, a joint fusion project was a positive symbol: the statement speaks of energy \"for the benefit for all mankind\", which helped both leaders show that the relationship was improving.",
    "criteria": [
     "The answer gives two different reasons (no military advantage, cost, earlier cooperation, symbolic value).",
     "At least one reason uses information from the sections (INTOR, the 1958 openness, the cost of the machines).",
@@ -207,7 +207,7 @@
    "stage": "tutki",
    "type": "text",
    "title": "Put the events in order",
-   "text": "<div class=\"fx\" data-fx=\"order\" id=\"fx-bm-order\"><script type=\"application/json\">{\"prompt\": \"Put these events in order, from the earliest to the latest. Use the buttons, then press *Check the order*.\", \"items\": [\"The Arab oil embargo begins.\", \"PLT reaches about 60 million degrees.\", \"T-7, the first superconducting tokamak, starts.\", \"TFTR starts in Princeton.\", \"JET makes its first plasma at Culham.\", \"JT-60 starts in Naka.\", \"Reagan and Gorbachev meet in Geneva.\", \"The ITER design work begins.\"], \"hints\": [\"The earliest event is from October 1973.\", \"This one is from July 1978.\", \"This one is from 1979.\", \"This one is from 1982.\", \"This one is from June 1983.\", \"This one is from April 1985.\", \"This one is from November 1985.\", \"The last event is from 1988.\"], \"explain\": \"Right. The oil crisis (1973) brought the money, PLT (1978) showed that reactor temperatures were possible, the big machines followed (1982–1985), and politics turned rivalry into cooperation (Geneva 1985, ITER design from 1988).\"}</script></div>"
+   "text": "<div class=\"fx\" data-fx=\"order\" id=\"fx-bm-order\"><script type=\"application/json\">{\"prompt\": \"Put these events in order, from the earliest to the latest. Use the buttons, then press *Check the order*.\", \"items\": [\"The Arab oil embargo begins.\", \"PLT reaches about 60 million kelvin.\", \"T-7, the first superconducting tokamak, starts.\", \"TFTR starts in Princeton.\", \"JET makes its first plasma at Culham.\", \"JT-60 starts in Naka.\", \"Reagan and Gorbachev meet in Geneva.\", \"The ITER conceptual design begins.\"], \"hints\": [\"The earliest event is from October 1973.\", \"This one is from July 1978.\", \"This one is from 1979.\", \"This one is from 1982.\", \"This one is from June 1983.\", \"This one is from April 1985.\", \"This one is from November 1985.\", \"The last event is from 1988.\"], \"explain\": \"Right. The oil crisis (1973) brought the money, PLT (1978) showed that reactor temperatures were possible, the big machines followed (1982–1985), and politics turned rivalry into cooperation (Geneva 1985, ITER design from 1988).\"}</script></div>"
   },
   {
    "id": "theory-key",
@@ -253,7 +253,7 @@
      "feedback": "You used $40\\ \\text{eV}$ instead of $40\\ \\text{keV}$: $1\\ \\text{keV} = 1000\\ \\text{eV}$."
     }
    ],
-   "solution": "**Given:** kinetic energy $E_\\text{k} = 40\\ \\text{keV}$; mass of a deuterium atom $m = 3.344 \\cdot 10^{-27}\\ \\text{kg}$; $1\\ \\text{eV} = 1.602 \\cdot 10^{-19}\\ \\text{J}$\n\n**Find:** the speed $v$\n\n**Principle:** The beam energy is kinetic energy, $E_\\text{k} = \\frac{1}{2} m v^2$. The speed is far below the speed of light (checked below), so the classical formula is accurate enough.\n\n**Formula:** $v = \\sqrt{\\dfrac{2 E_\\text{k}}{m}}$\n\n**Unit conversions:** $E_\\text{k} = 40\\ \\text{keV} = 40\\ 000\\ \\text{eV} = 40\\ 000 \\cdot 1.602 \\cdot 10^{-19}\\ \\text{J} = 6.408 \\cdot 10^{-15}\\ \\text{J}$\n\n**Substitution:**\n\n$$\\begin{aligned} v &= \\sqrt{\\frac{2 \\cdot 6.408 \\cdot 10^{-15}\\ \\text{J}}{3.344 \\cdot 10^{-27}\\ \\text{kg}}} \\\\ &= \\sqrt{3.833 \\cdot 10^{12}\\ \\text{m}^2/\\text{s}^2} \\\\ &= 1.958 \\cdot 10^{6}\\ \\text{m/s} \\end{aligned}$$\n\n**Answer:** $v \\approx 1.96 \\cdot 10^{6}\\ \\text{m/s}$, three significant figures as in the mass (the energy $40\\ \\text{keV}$ is a round design value).\n\n**Reasonableness:** This is about $2000\\ \\text{km}$ every second, but only $1.958 \\cdot 10^{6} : 3.00 \\cdot 10^{8} \\approx 0.65\\ \\%$ of the speed of light, so the classical formula is fine. The beam atoms are much faster than the plasma ions they heat: at $60$ million kelvin a deuterium ion has a typical energy of only about $5\\ \\text{keV}$. In collisions the fast atoms share their energy with the plasma."
+   "solution": "**Given:** kinetic energy $E_\\text{k} = 40\\ \\text{keV}$; mass of a deuterium atom $m = 3.344 \\cdot 10^{-27}\\ \\text{kg}$; $1\\ \\text{eV} = 1.602 \\cdot 10^{-19}\\ \\text{J}$\n\n**Find:** the speed $v$\n\n**Principle:** The beam energy is kinetic energy, $E_\\text{k} = \\frac{1}{2} m v^2$. The speed is far below the speed of light (checked below), so the classical formula is accurate enough.\n\n**Formula:** $v = \\sqrt{\\dfrac{2 E_\\text{k}}{m}}$\n\n**Unit conversions:** $E_\\text{k} = 40\\ \\text{keV} = 40\\ 000\\ \\text{eV} = 40\\ 000 \\cdot 1.602 \\cdot 10^{-19}\\ \\text{J} = 6.408 \\cdot 10^{-15}\\ \\text{J}$\n\n**Substitution:**\n\n$$\\begin{aligned} v &= \\sqrt{\\frac{2 \\cdot 6.408 \\cdot 10^{-15}\\ \\text{J}}{3.344 \\cdot 10^{-27}\\ \\text{kg}}} \\\\ &= \\sqrt{3.833 \\cdot 10^{12}\\ \\text{m}^2/\\text{s}^2} \\\\ &= 1.958 \\cdot 10^{6}\\ \\text{m/s} \\end{aligned}$$\n\n**Answer:** $v \\approx 1.96 \\cdot 10^{6}\\ \\text{m/s}$, three significant figures as in the mass (the energy $40\\ \\text{keV}$ is a round design value).\n\n**Reasonableness:** This is about $2000\\ \\text{km}$ every second, but only ${1.958 \\cdot 10^{6}} : {3.00 \\cdot 10^{8}} \\approx 0.65\\ \\%$ of the speed of light, so the classical formula is fine. The beam atoms are much faster than the plasma ions they heat: at $60$ million kelvin a deuterium ion has a typical energy of only about $5\\ \\text{keV}$. In collisions the fast atoms share their energy with the plasma."
   },
   {
    "id": "find-error",
@@ -269,11 +269,11 @@
     },
     {
      "text": "PLT never reached 60 million degrees.",
-     "feedback": "It did: about 60 million degrees on 24 July 1978. The error is the conclusion: temperature alone does not make a reactor."
+     "feedback": "It did: about 60 million kelvin on 24 July 1978. The error is the conclusion: temperature alone does not make a reactor."
     },
     {
      "text": "Sixty million degrees is too hot for fusion.",
-     "feedback": "A useful D–T plasma needs about 100 million kelvin or more, so 60 million degrees was not too hot. The error is to treat temperature as the only condition."
+     "feedback": "A useful D–T plasma needs about 100 million kelvin or more, so 60 million kelvin was not too hot. The error is to treat temperature as the only condition."
     },
     {
      "text": "Princeton was not allowed to publish it.",
@@ -315,12 +315,12 @@
    "prompt": "Why are the fast particles of a neutral beam injector made **neutral** before they enter the tokamak?",
    "choices": [
     {
-     "text": "The field would turn charged ions away.",
+     "text": "The magnetic field would turn charged ions away.",
      "feedback": "Right. The magnetic force on a moving charge would bend charged particles away before they reach the plasma. Neutral atoms fly straight in; inside the plasma they are ionised and trapped.",
      "correct": true
     },
     {
-     "text": "Neutral atoms carry more energy than ions.",
+     "text": "Neutral atoms carry more energy than charged ions.",
      "feedback": "The energy is the same, about $40\\ \\text{keV}$ per particle in PLT. They are made neutral so that the magnetic field cannot deflect them on the way in."
     },
     {

@@ -30,3 +30,15 @@ Events by era and theme (discovery / machine / politics / people): modern physic
    - `culham-five-1969`: correct in substance; the 1969 paper's authors include the Soviet physicist V. V. Sannikov (Nature 224, 488), a detail worth adding to the card because it shows the cooperation.
    - Checked and correct (no change): Eddington 1920, cyclotron 2 January 1931 and 4.8 MeV in 1932, Ivy Mike (74 t, 10.4 Mt, 1.9 km crater), Huemul dates, Spitzer's 50,000 dollars, ZETA dates (mid-August 1957, 24/25 January 1958, retraction 16 May 1958), Geneva 1–13 September 1958, T-1 end of 1958, Novosibirsk 1968, Symmetric Tokamak (December 1969 – May 1970), oil-crisis budget 40 → 332 million, PLT 20 December 1975 and 24 July 1978, JET 25 June 1983, JT-60 8 April 1985, Geneva summit 19–21 November 1985, ITER 1987 naming.
 5. **`assets/units/fy14/css/units.css` / `fx/timeline.js`: the timeline component makes `check_layout.py` FAIL** in *fy14-fusion-timeline*. At 360 px the year strip overflows by 265 px (`.fx-tl-strip svg{min-width:600px}` inside an `overflow-x:auto` box); at 360 and 1280 the legend is 14 px (issue 3); at 1280 the `.fx-msg` count line ("104 events shown.") is 448 px long. Fix: let `check_layout.py` treat content inside `overflow-x:auto` as scrolling, as it does for tables (or let the strip fit at narrow widths), and give `.fx-msg`/`.fx-note` `max-width: var(--measure)`.
+
+## Fixes after review (2026-11-01)
+- Science blocking 1: *Claims and checks* now says the three claims "all failed when others checked them. Only ZETA's team withdrew its claim; Huemul was exposed by an inspection, and other laboratories could not repeat cold fusion."
+- Science blocking 2–3, polish 2 (timeline.json): fixed in the shared file by the coordinator.
+- Science polish 1: Kurchatov feedback: "The head of the Soviet atomic programme described secret Soviet fusion experiments in a lecture in Britain".
+- Pedagogy blocking 1: map links kept (published together with fy14-global-fusion-explorer); teacher.md says so, with the fallback.
+- Pedagogy blocking 2: cards are now collapsed (shared). Tasks 2, 3 and 5 have their own small timelines (`ids`) beside the task, so on a phone the cards are next to the task; Task 3's small timeline carries the three map links (checked: #f-t-3, #f-jet, #f-jt-60).
+- Pedagogy 3: new Task 5a/5b (`task-geo`, `task-steps`, before *What the timeline shows*): count the countries in a small timeline of the events since 2015 (seven) and subtract T-1's year from JET's 16 MW year (39). Both predictions are now revealed after the student has checked the data.
+- Pedagogy 4: Task 1 gives the 16 counts; students check one row with the buttons and interpret.
+- Visual 3: the seven countries since 2015 are named. Visual 2 (LaTeX in timeline.json card texts) is in the shared data file; not edited.
+- How-to and teacher.md updated (closed cards, small timelines, new timing). Option lengths re-balanced (pred-geo, find-error, check-1).
+- Checks: units.py check OK, build OK, check_layout 360 and 1280 OK (the earlier component failures are gone), Playwright OK (5 timelines on the page, no console errors).

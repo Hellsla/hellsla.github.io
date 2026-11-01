@@ -2,10 +2,10 @@
 
 - **0–7 min, Think about it.** Read the hook aloud. Pairs discuss the Cold War and secret research today, and write two or three sentences.
 - **7–12 min, Predict.** Both predictions individually, committed, with a short reason. Do not discuss the answers yet.
-- **12–40 min, Investigate.** Jigsaw in groups of four (10 min reading one section each, 8 min telling the group, 4 min for the expert notes). Then everyone reads *ZETA* and *Geneva 1958* (5 min) and orders the eight events (2 min).
+- **12–40 min, Investigate.** Jigsaw in groups of four (9 min reading one section each, 7 min telling the group, 3 min for the expert notes). Then pairs read Rose's neutron table and answer its question (3 min): this is the evidence for Prediction 2. Everyone reads *ZETA* and *Geneva 1958* (4 min) and orders the eight events (2 min).
 - **40–50 min, Theory summary.** Read the key idea and the misconception together; back to the predictions (the reflection). The biographies are optional.
 - **50–64 min, Apply.** ZETA's temperature (numeric, 4 min), claim–evidence–motive sorting (3 min), the headline error (2 min), the pair debate and the paragraph (5 min speaking; the paragraph can be finished at home).
-- **64–75 min, Check your understanding.** Three checks individually, the transfer task (cold fusion), the summary and the French corner in pairs.
+- **64–75 min, Check your understanding.** Three checks individually (5 min), the summary and the French corner in pairs (6 min). The transfer task (cold fusion, `check-write`) is homework; start the next lesson with two or three answers.
 
 **Fast pairs** do the optional biographies and the comparison of Richter and Spitzer, or open the course timeline (unit *Fusion history: an interactive timeline*) and find two more events of the secret years. **If time runs short**, give the expert notes only orally, make the debate paragraph homework, and do the French corner at the start of the next lesson.
 

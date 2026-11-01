@@ -34,3 +34,13 @@ $1.00\ \text{keV}/k_\text{B} = 1.1605 \cdot 10^{7}\ \text{K}$ (with rounded cons
    - `culham-five-1969`: correct in substance; the 1969 paper's authors include the Soviet physicist V. V. Sannikov (Nature 224, 488), a detail worth adding to the card because it shows the cooperation.
    - Checked and correct (no change): Eddington 1920, cyclotron 2 January 1931 and 4.8 MeV in 1932, Ivy Mike (74 t, 10.4 Mt, 1.9 km crater), Huemul dates, Spitzer's 50,000 dollars, ZETA dates (mid-August 1957, 24/25 January 1958, retraction 16 May 1958), Geneva 1–13 September 1958, T-1 end of 1958, Novosibirsk 1968, Symmetric Tokamak (December 1969 – May 1970), oil-crisis budget 40 → 332 million, PLT 20 December 1975 and 24 July 1978, JET 25 June 1983, JT-60 8 April 1985, Geneva summit 19–21 November 1985, ITER 1987 naming.
 5. **`assets/units/fy14/css/units.css` / `fx/timeline.js`: the timeline component makes `check_layout.py` FAIL** in *fy14-fusion-timeline* (strip `min-width:600px` overflows 265 px at 360; legend 14 px; `.fx-msg` line 448 px at 1280). Fix: treat `overflow-x:auto` content as scrolling in `check_layout.py`, and `max-width: var(--measure)` on `.fx-msg`/`.fx-note`. Details in that unit's report.
+
+## Fixes after review (2026-11-01)
+- Pedagogy blocking 1: `learn` no longer gives away `pred-verify`: "explain how a plasma's electron temperature can be measured with laser light" and "evaluate how the T-3 result of 1968 came to be accepted, and convert …".
+- Pedagogy 2: new `thomson-data` interpret before *How Thomson scattering works*: spectrum widths for 0.10, 0.40 and 1.6 keV (32, 65, 129 nm; Doppler FWHM for ruby 694.3 nm at 90°, computed: $\Delta\lambda = 2\sqrt{\ln 2}\cdot 2\lambda\sin 45^\circ\sqrt{2k_\text{B}T/m_ec^2}$, 102 nm at 1 keV) and a measured width of about 100 nm; badge `model`, note says the 100 nm matches the reported temperature, not a number from the paper. Students find "four times T, twice the width" and about 1 keV.
+- Pedagogy 3: `doubt` moved after the pair exchange (after Source E) and says so.
+- Pedagogy 4: `pred-thomson` prompt no longer explains the Doppler link; options rewritten ("The scattered light spreads over a wider range." etc.), correct one mid-length.
+- Pedagogy 5: `report` prompt: "If time runs short, finish it at home." teacher.md re-timed.
+- Visual 1–3: `kev-kelvin` Given values braced; Answer box holds one equation ("that is, 11.6 million kelvin"); Reasonableness sentence rewritten.
+- Visual 4: Source C notes that the original spells "Artsimovitch". Visual 5: `thomson` hotter curve now orange (HEAT), red only for the laser.
+- Checks: units.py check OK, build OK, check_layout 360/1280 OK, Playwright OK, figure looked at.

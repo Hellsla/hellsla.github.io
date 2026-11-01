@@ -2,7 +2,7 @@
 
 - **0–7 min, Think about it.** Read the hook aloud. Pairs share one surprising claim from the news and decide what made it believable.
 - **7–12 min, Predict.** Both predictions individually, committed, with a short reason.
-- **12–42 min, Investigate.** The introduction together (3 min). Pairs split the sources: A reads Sources A and C, B reads Sources B and D, both read E (10 min); they explain their sources to each other (5 min). The question on Sources A and B, the evidence-or-circumstance sorting and the source question on the invitation (8 min). Then *How Thomson scattering works* with the figure (4 min).
+- **12–42 min, Investigate.** The introduction together (3 min). Pairs split the sources: A reads Sources A and C, B reads Sources B and D, both read E (9 min); they explain their sources to each other (5 min). After the exchange: the question on Sources A and B, the evidence-or-circumstance sorting and the source question on the invitation (7 min). Then pairs read the spectrum-width table (*Investigate the evidence: reading the width*, 2 min), the evidence for Prediction 2, and *How Thomson scattering works* with the figure (3 min).
 - **42–50 min, Theory summary.** The key idea and the misconception; back to the predictions.
 - **50–65 min, Apply.** The keV-to-kelvin calculation (4 min), the Culham role-play in groups of three or four (8 min), the find-the-error task (1 min). The magazine report is started in class and finished at home if needed.
 - **65–75 min, Check your understanding.** Three checks individually, the transfer task, the summary and the French corner.

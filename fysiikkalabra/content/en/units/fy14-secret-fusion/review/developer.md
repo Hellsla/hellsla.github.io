@@ -33,3 +33,14 @@ $k_\text{B} T$ for $5.0 \cdot 10^{6}\ \text{K}$: $6.905 \cdot 10^{-17}\ \text{J}
    - `culham-five-1969`: correct in substance; the 1969 paper's authors include the Soviet physicist V. V. Sannikov (Nature 224, 488), a detail worth adding to the card because it shows the cooperation.
    - Checked and correct (no change): Eddington 1920, cyclotron 2 January 1931 and 4.8 MeV in 1932, Ivy Mike (74 t, 10.4 Mt, 1.9 km crater), Huemul dates, Spitzer's 50,000 dollars, ZETA dates (mid-August 1957, 24/25 January 1958, retraction 16 May 1958), Geneva 1–13 September 1958, T-1 end of 1958, Novosibirsk 1968, Symmetric Tokamak (December 1969 – May 1970), oil-crisis budget 40 → 332 million, PLT 20 December 1975 and 24 July 1978, JET 25 June 1983, JT-60 8 April 1985, Geneva summit 19–21 November 1985, ITER 1987 naming.
 5. **`assets/units/fy14/css/units.css` / `fx/timeline.js`: the timeline component makes `check_layout.py` FAIL** in *fy14-fusion-timeline* (strip `min-width:600px` overflows 265 px at 360; legend 14 px; `.fx-msg` line 448 px at 1280). Fix: treat `overflow-x:auto` content as scrolling in `check_layout.py`, and `max-width: var(--measure)` on `.fx-msg`/`.fx-note`. Details in that unit's report.
+
+## Fixes after review (2026-11-01)
+- Pedagogy 1: new `zeta-data` interpret before *ZETA*: neutron shares along and against the current, before and after reversal (70/30 → 30/70, badge `example`: simplified numbers showing the pattern Rose reported). `pred-zeta` is now revealed by evidence the student handles first.
+- Pedagogy 2 / visual 2: `pred-secret` correct option "It was too close to hydrogen-bomb physics and fuel." (both reasons, no dangling "Their"); feedback updated; distractor shortened so the correct option is neither longest nor shortest.
+- Pedagogy 3: sort item now "Governments feared that fusion neutrons could make bomb fuel." (motive).
+- Pedagogy 4: teacher.md: `check-write` is homework; Investigate re-timed with the ZETA data (3 min).
+- Pedagogy 5: `check-1`, `check-3` correct options lengthened (generator now warns on shortest as well as longest).
+- Science 1: check-3 Fuchs feedback now says atomic bomb and early hydrogen-bomb ideas before 1950.
+- Visual 1: `pinch`: field rings drawn as back half (faint, behind the column) and front half with arrowheads (downwards at the front, right-hand rule for I to the right); a copper arrowhead on the last coil turn shows the coil current. aria-label updated.
+- Visual 3: Summary bullet on accelerators now matches the section. Visual 4: `neutrons` key in ink.
+- Checks: units.py check OK, build OK, check_layout 360/1280 OK, Playwright (both predictions lock and reveal; no console errors, raw `$` or katex errors), pinch figure looked at.

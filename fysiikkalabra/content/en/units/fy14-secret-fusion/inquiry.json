@@ -47,12 +47,12 @@
    },
    "choices": [
     {
-     "text": "Their neutrons could be used to make bomb fuel.",
-     "feedback": "This is one of the main reasons in the reading. A fusion device makes neutrons, and neutrons can turn uranium into plutonium. The physics of hot fusion fuel is also close to the physics of the hydrogen bomb, which all three countries were building. The Huemul claim and Fuchs's spying added fear of falling behind.",
+     "text": "It was too close to hydrogen-bomb physics and fuel.",
+     "feedback": "Right, these are the two main reasons in the reading. The physics of hot fusion fuel is close to the physics of the hydrogen bomb, which all three countries were building, and a fusion device makes neutrons, which can turn uranium into plutonium for bombs. The Huemul claim and Fuchs's spying added fear of falling behind.",
      "correct": true
     },
     {
-     "text": "A fusion reactor could explode like a hydrogen bomb.",
+     "text": "A reactor could explode like a hydrogen bomb.",
      "feedback": "The reading does not give this reason, and it is not true. A controlled fusion device holds a tiny amount of fuel; if something goes wrong, the plasma cools and the reactions stop. The secret was the weapons *knowledge*: the physics close to the hydrogen bomb, and neutrons that can make bomb fuel."
     },
     {
@@ -151,6 +151,38 @@
     "Look again at the three things in your notes: what, who, how affected.",
     "Use a sentence starter from the word bank above."
    ]
+  },
+  {
+   "id": "zeta-data",
+   "stage": "tutki",
+   "type": "interpret",
+   "title": "Investigate the evidence: ZETA's neutrons",
+   "source": "example",
+   "source_note": "Numbers simplified for the lesson. They show the pattern that Basil Rose reported at Harwell in early 1958 (Wikipedia, *ZETA (fusion reactor)*, checked 1 November 2026), not his raw data.",
+   "text": "Early in 1958 Basil Rose at Harwell measured the neutrons from ZETA's pulses. He compared the neutrons that left the tube **in the direction of the current** with those that left it **in the opposite direction**. Then the current was reversed and he measured again. Look back at your Prediction 2 before you read the table.\n\n| Current in the tube | Share of neutrons in the direction of the original current (%) | Share in the opposite direction (%) |\n| --- | --- | --- |\n| one way | 70 | 30 |\n| reversed | 30 | 70 |",
+   "question": {
+    "type": "choice",
+    "prompt": "What do these measurements show about where ZETA's neutrons came from?",
+    "choices": [
+     {
+      "text": "Most fly one way, and the current sets the way.",
+      "feedback": "Right. The neutrons leave mostly in one direction, and that direction follows the current. Ions in a hot plasma move at random, so their fusion neutrons would leave equally both ways. Here a few ions were pushed one way by the electric field: the next section tells the story.",
+      "correct": true
+     },
+     {
+      "text": "The neutrons fly out equally in both directions.",
+      "feedback": "Look at the table again: 70 % go one way and only 30 % the other. Equal shares, 50 and 50, would be the sign of a hot plasma with randomly moving ions."
+     },
+     {
+      "text": "Reversing the current stops the neutrons.",
+      "feedback": "The neutrons do not stop: the shares only swap, 70/30 becomes 30/70. The direction of the neutrons follows the current."
+     },
+     {
+      "text": "The plasma gets hotter when the current reverses.",
+      "feedback": "The table gives no temperatures, only directions, and the two rows are mirror images. What changes is the direction in which most neutrons leave, and it follows the current."
+     }
+    ]
+   }
   },
   {
    "id": "theory-zeta",
@@ -254,7 +286,7 @@
    "stage": "sovella",
    "type": "text",
    "title": "Claim, evidence or motive?",
-   "text": "<div class=\"fx\" data-fx=\"match\" id=\"fx-sf-sort\"><script type=\"application/json\">{\"prompt\": \"Historians separate three kinds of statement: a **claim** (someone says something is true), **evidence** (an observation or measurement that others can check) and a **motive** (a reason why someone acts). Sort each statement, then press *Check*.\", \"options\": [\"claim\", \"evidence\", \"motive\"], \"items\": [{\"text\": \"Perón tells the press that Argentina has produced controlled fusion.\", \"answer\": \"claim\", \"feedback\": \"Perón *says* it is true, but he shows no measurements. It is a claim.\"}, {\"text\": \"Balseiro's team finds no sign of nuclear reactions on Huemul Island.\", \"answer\": \"evidence\", \"feedback\": \"An inspection with observations that others could repeat: evidence. It showed that the claim was false.\"}, {\"text\": \"A fusion device makes neutrons that could be used to make bomb fuel.\", \"answer\": \"motive\", \"feedback\": \"This is a reason why governments made the work secret: a motive for their actions.\"}, {\"text\": \"Cockcroft says he is 90 percent certain that ZETA's neutrons come from fusion.\", \"answer\": \"claim\", \"feedback\": \"A careful claim with a probability, but still a claim: the test came later.\"}, {\"text\": \"Most of ZETA's neutrons fly in one direction, which reverses with the current.\", \"answer\": \"evidence\", \"feedback\": \"Rose's measurement: an observation that showed the neutrons came from accelerated ions.\"}, {\"text\": \"Governments fear that a rival country could be ahead in fusion.\", \"answer\": \"motive\", \"feedback\": \"Fear of a rival explains why governments paid for secret programmes: a motive.\"}, {\"text\": \"All three countries' plasmas lose heat much faster than expected.\", \"answer\": \"evidence\", \"feedback\": \"The results shown at Geneva in 1958: measurements from many machines, which everyone could now compare.\"}], \"done\": \"All right. A claim needs evidence before scientists accept it, and a motive explains why people act, but it is not evidence about nature.\"}</script></div>"
+   "text": "<div class=\"fx\" data-fx=\"match\" id=\"fx-sf-sort\"><script type=\"application/json\">{\"prompt\": \"Historians separate three kinds of statement: a **claim** (someone says something is true), **evidence** (an observation or measurement that others can check) and a **motive** (a reason why someone acts). Sort each statement, then press *Check*.\", \"options\": [\"claim\", \"evidence\", \"motive\"], \"items\": [{\"text\": \"Perón tells the press that Argentina has produced controlled fusion.\", \"answer\": \"claim\", \"feedback\": \"Perón *says* it is true, but he shows no measurements. It is a claim.\"}, {\"text\": \"Balseiro's team finds no sign of nuclear reactions on Huemul Island.\", \"answer\": \"evidence\", \"feedback\": \"An inspection with observations that others could repeat: evidence. It showed that the claim was false.\"}, {\"text\": \"Governments feared that fusion neutrons could make bomb fuel.\", \"answer\": \"motive\", \"feedback\": \"This is a reason why governments made the work secret: a motive for their actions.\"}, {\"text\": \"Cockcroft says he is 90 percent certain that ZETA's neutrons come from fusion.\", \"answer\": \"claim\", \"feedback\": \"A careful claim with a probability, but still a claim: the test came later.\"}, {\"text\": \"Most of ZETA's neutrons fly in one direction, which reverses with the current.\", \"answer\": \"evidence\", \"feedback\": \"Rose's measurement: an observation that showed the neutrons came from accelerated ions.\"}, {\"text\": \"Governments fear that a rival country could be ahead in fusion.\", \"answer\": \"motive\", \"feedback\": \"Fear of a rival explains why governments paid for secret programmes: a motive.\"}, {\"text\": \"All three countries' plasmas lose heat much faster than expected.\", \"answer\": \"evidence\", \"feedback\": \"The results shown at Geneva in 1958: measurements from many machines, which everyone could now compare.\"}], \"done\": \"All right. A claim needs evidence before scientists accept it, and a motive explains why people act, but it is not evidence about nature.\"}</script></div>"
   },
   {
    "id": "find-error",
@@ -317,7 +349,7 @@
    "prompt": "Why did Lyman Spitzer bend his stellarator tube into a figure-eight instead of a simple ring?",
    "choices": [
     {
-     "text": "So the sideways drifts of particles cancel.",
+     "text": "So the sideways drifts of the particles cancel out.",
      "feedback": "Right. In a simple ring the particles slowly drift sideways and hit the wall. In a figure-eight the drift in one half of the loop is opposite to the drift in the other half, so on average it cancels.",
      "correct": true
     },
@@ -373,7 +405,7 @@
      "feedback": "ZETA's claim had been corrected in May 1958. No one was close to fusion power, and that was part of the reason for openness: there was no working reactor to hide."
     },
     {
-     "text": "Everyone met the same hard plasma problems.",
+     "text": "All the countries met the same hard plasma problems.",
      "feedback": "Right. All programmes met the same unstable, leaky plasmas. With no reactor to protect, openness helped every country more than secrecy did, and at Geneva scientists found they had tried many of the same ideas.",
      "correct": true
     },
@@ -383,7 +415,7 @@
     },
     {
      "text": "A spy had already given all the results to the press.",
-     "feedback": "Klaus Fuchs spied on the atomic bomb project, not on later fusion work, and the press did not publish the secret programmes. The research was opened because everyone faced the same hard plasma problems."
+     "feedback": "Klaus Fuchs passed secrets on the atomic bomb and early hydrogen-bomb ideas before 1950, not the later fusion results, and the press did not publish the secret programmes. The research was opened because everyone faced the same hard plasma problems."
     }
    ]
   },

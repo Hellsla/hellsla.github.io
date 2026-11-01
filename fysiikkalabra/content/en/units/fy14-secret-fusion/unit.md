@@ -276,20 +276,23 @@ A fusion fuel must be heated to many millions of degrees, so it becomes a **plas
 
 In a **pinch**, a strong current flows through the plasma itself. The current makes a magnetic field that circles around it, and the magnetic force on the moving charges squeezes the plasma towards the axis. In a **Z-pinch** the current flows along the plasma column. In a **theta pinch** a current in an outer coil flows *around* the column, and the field along the axis squeezes it. British teams at Harwell and Aldermaston built ring-shaped pinches, and James Tuck at Los Alamos built one he called the *Perhapsatron*. The squeezed column was unstable: it bent sideways (the **kink instability**) or narrowed in places like a chain of sausages (the **sausage instability**) and touched the wall in a tiny fraction of a second.
 
-<svg data-fig="pinch" viewBox="0 0 600 640" role="img" aria-label="Diagram of two kinds of pinch. Top, the Z-pinch: a horizontal orange plasma column with an arrow for the current I flowing along it, from left to right. Green rings around the column show the magnetic field B circling the current. Red arrows above and below the column point inwards, towards its axis: the magnetic force F squeezes the plasma. Bottom, the theta pinch: the same kind of column inside a copper coil whose turns carry the current I around the column. A green arrow along the axis shows the magnetic field B pointing along the column, and red arrows again point inwards." style="max-width:100%;font-size:28px">
+<svg data-fig="pinch" viewBox="0 0 600 640" role="img" aria-label="Diagram of two kinds of pinch. Top, the Z-pinch: a horizontal orange plasma column with an arrow for the current I flowing along it, from left to right. Green rings around the column show the magnetic field B circling the current, with arrowheads showing its direction (downwards on the front of each ring). Red arrows above and below the column point inwards, towards its axis: the magnetic force F squeezes the plasma. Bottom, the theta pinch: the same kind of column inside a copper coil whose turns carry the current I around the column (an arrowhead on the last turn shows the direction). A green arrow along the axis shows the magnetic field B pointing along the column, and red arrows again point inwards." style="max-width:100%;font-size:28px">
   <defs><linearGradient id="sf-pl1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></linearGradient><linearGradient id="sf-pl2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></linearGradient></defs>
   <rect x="0" y="0" width="600" height="640" fill="#ffffff"/>
   <foreignObject x="16" y="13" width="568" height="34" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:28px">$\text{Z-pinch: current along the plasma}$</div></foreignObject>
+  <path d="M140,108 A18,62 0 0 0 140,232" fill="none" stroke="#2b8a3e" stroke-width="3" stroke-linejoin="round" stroke-opacity="0.45"/>
+  <path d="M280,108 A18,62 0 0 0 280,232" fill="none" stroke="#2b8a3e" stroke-width="3" stroke-linejoin="round" stroke-opacity="0.45"/>
+  <path d="M420,108 A18,62 0 0 0 420,232" fill="none" stroke="#2b8a3e" stroke-width="3" stroke-linejoin="round" stroke-opacity="0.45"/>
   <rect x="60" y="140" width="440" height="60" rx="30" fill="url(#sf-pl1)"/>
   <line x1="90" y1="170" x2="453" y2="170" stroke="#1f2933" stroke-width="4" stroke-linecap="butt"/>
   <path d="M470,170 L452,178 L452,162 Z" fill="#1f2933" stroke-linejoin="round"/>
   <foreignObject x="512" y="152" width="24" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:30px">$I$</div></foreignObject>
-  <ellipse cx="140" cy="170" rx="18" ry="62" fill="none" stroke="#2b8a3e" stroke-width="3.5"/>
-  <path d="M158,162 l-6,14 l12,-2 Z" fill="#2b8a3e" stroke-linejoin="round"/>
-  <ellipse cx="280" cy="170" rx="18" ry="62" fill="none" stroke="#2b8a3e" stroke-width="3.5"/>
-  <path d="M298,162 l-6,14 l12,-2 Z" fill="#2b8a3e" stroke-linejoin="round"/>
-  <ellipse cx="420" cy="170" rx="18" ry="62" fill="none" stroke="#2b8a3e" stroke-width="3.5"/>
-  <path d="M438,162 l-6,14 l12,-2 Z" fill="#2b8a3e" stroke-linejoin="round"/>
+  <path d="M140,108 A18,62 0 0 1 140,232" fill="none" stroke="#2b8a3e" stroke-width="3.5" stroke-linejoin="round"/>
+  <path d="M151.6,217.5 L148.7,195.3 L167.6,201.9 Z" fill="#2b8a3e" stroke-linejoin="round"/>
+  <path d="M280,108 A18,62 0 0 1 280,232" fill="none" stroke="#2b8a3e" stroke-width="3.5" stroke-linejoin="round"/>
+  <path d="M291.6,217.5 L288.7,195.3 L307.6,201.9 Z" fill="#2b8a3e" stroke-linejoin="round"/>
+  <path d="M420,108 A18,62 0 0 1 420,232" fill="none" stroke="#2b8a3e" stroke-width="3.5" stroke-linejoin="round"/>
+  <path d="M431.6,217.5 L428.7,195.3 L447.6,201.9 Z" fill="#2b8a3e" stroke-linejoin="round"/>
   <foreignObject x="96" y="78" width="39" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:30px;color:#2b8a3e">$\overline{B}$</div></foreignObject>
   <line x1="210" y1="78" x2="210" y2="117" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
   <path d="M210,130 L203.5,116 L216.5,116 Z" fill="#c92a2a" stroke-linejoin="round"/>
@@ -313,6 +316,7 @@ In a **pinch**, a strong current flows through the plasma itself. The current ma
   <ellipse cx="390" cy="500" rx="10" ry="52" fill="none" stroke="#b8622d" stroke-width="7"/>
   <ellipse cx="440" cy="500" rx="10" ry="52" fill="none" stroke="#b8622d" stroke-width="7"/>
   <ellipse cx="490" cy="500" rx="10" ry="52" fill="none" stroke="#b8622d" stroke-width="7"/>
+  <path d="M501.1,550.8 L493.8,524.9 L517.4,529.5 Z" fill="#b8622d" stroke-linejoin="round"/>
   <line x1="80" y1="500" x2="503" y2="500" stroke="#2b8a3e" stroke-width="4" stroke-linecap="butt"/>
   <path d="M520,500 L502,508 L502,492 Z" fill="#2b8a3e" stroke-linejoin="round"/>
   <foreignObject x="530" y="482" width="39" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:30px;color:#2b8a3e">$\overline{B}$</div></foreignObject>
@@ -393,7 +397,7 @@ Neutrons can also come from a few ions that are accelerated by electric fields i
   <path d="M561,106 L553,116.5 L547.5,107.5 Z" fill="#1f2933" stroke-linejoin="round"/>
   <foreignObject x="2" y="284.5" width="296" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:26px">$\text{fusion in a hot plasma}$</div></foreignObject>
   <foreignObject x="302" y="284.5" width="296" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:26px">$\text{a few accelerated ions}$</div></foreignObject>
-  <foreignObject x="10" y="334.5" width="580" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:26px;color:#6b7480">$\text{Arrows show where neutrons fly.}$</div></foreignObject>
+  <foreignObject x="10" y="334.5" width="580" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:26px">$\text{Arrows show where neutrons fly.}$</div></foreignObject>
 </svg>
 
 ## Geneva 1958: the doors open {Geneva}
@@ -439,7 +443,7 @@ Andrei Sakharov was a Soviet physicist who helped to design the Soviet hydrogen 
 
 ## Summary
 
-- From 1920 to 1939 physicists explained the energy of the stars (Eddington, Gamow, Bethe) and made the first fusion reactions with accelerators (Oliphant, 1934), but accelerator beams could never give more energy than they used.
+- From 1920 to 1939 physicists explained the energy of the stars (Eddington, Gamow, Bethe) and made the first fusion reactions with accelerators (Oliphant, 1934), but in accelerator beams only a tiny fraction of the nuclei fuse, so they use far more energy than they give.
 - After the atomic bomb, nuclear physics became secret. Around 1950–1951 Britain, the Soviet Union and the United States all started secret, government-funded programmes on controlled fusion.
 - The reasons were the link with the hydrogen bomb, neutrons that can make bomb fuel, and the hope of an advantage; Richter's false Huemul claim of 1951 added pressure.
 - Three designs competed: pinches (Z-pinch, theta pinch; kink and sausage instabilities), Spitzer's stellarator (1951) and the Soviet tokamak (Tamm and Sakharov, 1950; T-1 in 1958).

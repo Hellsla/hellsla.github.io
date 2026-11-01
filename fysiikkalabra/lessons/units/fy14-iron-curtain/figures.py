@@ -96,7 +96,7 @@ def thomson():
     f.tex(xc, yb + 26, r"694\ \text{nm}", "middle", size=26, w=140)
     f.tex(x1, yb - 22, r"\lambda", "end", size=30)
     f.tex(x0 + 12, yt + 4, r"\text{intensity}", size=26)
-    for sig, col, dash, lab, lx, ly in ((34, COLD, None, r"\text{cooler}", xc + 52, yt + 46), (68, HOT, "12 8", r"\text{hotter}", xc + 128, yb - 112)):
+    for sig, col, dash, lab, lx, ly in ((34, COLD, None, r"\text{cooler}", xc + 52, yt + 46), (68, HEAT, "12 8", r"\text{hotter}", xc + 128, yb - 112)):
         hgt = 210 * 34 / sig
         pts = [(xc + t, yb - hgt * math.exp(-t * t / (2 * sig * sig))) for t in range(-230, 231, 5)]
         d = "M" + " L".join(f"{n(x)},{n(y)}" for x, y in pts)

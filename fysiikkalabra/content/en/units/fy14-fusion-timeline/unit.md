@@ -93,7 +93,7 @@
 
 ## How to use the timeline {Howto}
 
-The timeline below tells the whole story of this course in about a hundred events, from the discovery of X-rays in 1895 to the construction of ITER today. Every event is a card with its date, place and country, a short text, the people involved and the sources it was checked against.
+The timeline below tells the whole story of this course in about a hundred events, from the discovery of X-rays in 1895 to the construction of ITER today. Every event is a card. A closed card shows its year, place and title; open it to read a short text, the people involved and the sources it was checked against.
 
 - **Eras.** The buttons above the timeline choose one of four eras: *The birth of modern physics* (1895–1938), *The nuclear age and secrecy* (1938–1958), *The tokamak race* (1958–1985) and *From Geneva to ITER* (1985–2026). *All eras* shows everything.
 - **Themes.** Each event has one theme, shown by a colour **and** a shape on the year strip: scientific discovery (circle), machines and experiments (square), politics and society (diamond) and people (triangle). The *Theme* menu shows one theme only.
@@ -104,7 +104,7 @@ The events were checked on 1 November 2026. Facts that change, such as ITER's sc
 
 ## The timeline {Timeline}
 
-Choose an era, a theme or a search word. Click a mark on the year strip to jump to its card.
+Choose an era, a theme or a search word. Click a mark on the year strip to open its card. Some tasks below have their own small timeline with only the events they need.
 
 <div class="fx" data-fx="timeline" id="fx-ft-timeline" data-src="units/fy14/data/timeline.json"><script type="application/json">{"map": "fy14-global-fusion-explorer.html"}</script></div>
 
@@ -112,9 +112,9 @@ Choose an era, a theme or a search word. Click a mark on the year strip to jump 
 
 **From open science to secrecy, and back.** Until 1938 fusion was open science about the stars. From the discovery of fission to 1958, the nuclear age, politics is the most common theme: bombs, secret programmes and false claims. In 1958 the files were opened at Geneva, and from 1985 the story becomes one of cooperation, which led to ITER.
 
-**A wider world.** In the 1950s almost all events take place in the United States, Britain and the Soviet Union, with Argentina's false claim and the conference in Switzerland. Since 2015 the events come from at least seven countries in Europe, North America and Asia, including China, Japan and South Korea. Fusion research has spread from a few rival powers to a worldwide network. (The map unit shows many more facilities than the timeline.)
+**A wider world.** In the 1950s almost all events take place in the United States, Britain and the Soviet Union, with Argentina's false claim and the conference in Switzerland. Since 2015 the events come from seven countries in Europe, North America and Asia (China, France, Germany, Japan, South Korea, the United Kingdom and the United States). Fusion research has spread from a few rival powers to a worldwide network. (The map unit shows many more facilities than the timeline.)
 
-**Claims and checks.** The Huemul claim (1951), ZETA's neutrons (1958) and cold fusion (1989) were announced before others could check them, and all were withdrawn. The T-3 result (1968) went the other way: it was doubted, then confirmed by an independent measurement in 1969. In every case, checking by others decided.
+**Claims and checks.** The Huemul claim (1951), ZETA's neutrons (1958) and cold fusion (1989) were announced before others could check them, and all failed when others checked them. Only ZETA's team withdrew its claim; Huemul was exposed by an inspection, and other laboratories could not repeat cold fusion. The T-3 result (1968) went the other way: it was doubted, then confirmed by an independent measurement in 1969. In every case, checking by others decided.
 
 **Slow steps.** The first tokamak, T-1, started in 1958. Almost forty years later, in 1997, JET produced $16\ \text{MW}$ of fusion power, still with less fusion power out than heating power in. Each step needed a bigger and more expensive machine, so progress came in decades, not years. From Eddington's idea in 1920 to ITER's planned deuterium–tritium operation in 2039 (the plan as of November 2026) is about 120 years.
 

@@ -67,25 +67,40 @@ def hero():
     return f.svg()
 
 
+def head(f, x, y, dx, dy, color, size=20):
+    """A filled arrowhead at (x, y) pointing along (dx, dy)."""
+    L = math.hypot(dx, dy); ux, uy = dx / L, dy / L
+    bx, by = x - size * ux, y - size * uy
+    f.path(f"M{x:.1f},{y:.1f} L{bx - 0.5 * size * uy:.1f},{by + 0.5 * size * ux:.1f} L{bx + 0.5 * size * uy:.1f},{by - 0.5 * size * ux:.1f} Z", color)
+
+
+def ring_point(cx, cy, rx, ry, deg):
+    t = math.radians(deg)
+    return cx + rx * math.cos(t), cy + ry * math.sin(t), -rx * math.sin(t), ry * math.cos(t)
+
+
 def pinch():
     """Two kinds of pinch, one above the other: a Z-pinch (current along the column, field circling it) and a theta
     pinch (current in a coil around the column, field along the axis). Force arrows red and pointing inwards."""
     f = Fig("fy14sf-pinch", 640, "Diagram of two kinds of pinch. Top, the Z-pinch: a horizontal orange plasma column with an "
             "arrow for the current I flowing along it, from left to right. Green rings around the column show the magnetic "
-            "field B circling the current. Red arrows above and below the column point inwards, towards its axis: the "
+            "field B circling the current, with arrowheads showing its direction (downwards on the front of each ring). Red arrows above and below the column point inwards, towards its axis: the "
             "magnetic force F squeezes the plasma. Bottom, the theta pinch: the same kind of column inside a copper coil whose "
-            "turns carry the current I around the column. A green arrow along the axis shows the magnetic field B pointing "
+            "turns carry the current I around the column (an arrowhead on the last turn shows the direction). A green arrow along the axis shows the magnetic field B pointing "
             "along the column, and red arrows again point inwards.", width=600, size=28)
     f.rect(0, 0, 600, 640, WHITE)
     # --- Z-pinch
     f.tex(16, 30, r"\text{Z-pinch: current along the plasma}", size=28, w=568)
     cy = 170
+    for x in (140, 280, 420):                           # back halves of the field rings, behind the column
+        f.path(f"M{x},{cy - 62} A18,62 0 0 0 {x},{cy + 62}", stroke=GOOD, w=3, extra='stroke-opacity="0.45"')
     f.rect(60, cy - 30, 440, 60, H.grad(f, "sf-pl1", HEAT_LIGHT, HEAT), None, 2, 30)
     f.arrow(90, cy, 470, cy, INK, 4, 18)
     f.tex(512, cy, r"I", size=30)
-    for x in (140, 280, 420):                           # field rings drawn as ellipses around the column
-        f.add(f'<ellipse cx="{x}" cy="{cy}" rx="18" ry="62" fill="none" stroke="{GOOD}" stroke-width="3.5"/>')
-        f.path(f"M{x + 18},{cy - 8} l-6,14 l12,-2 Z", GOOD)
+    for x in (140, 280, 420):                           # front halves, with the right-hand-rule direction (down at the front)
+        f.path(f"M{x},{cy - 62} A18,62 0 0 1 {x},{cy + 62}", stroke=GOOD, w=3.5)
+        px, py, dx, dy = ring_point(x, cy, 18, 62, 50)
+        head(f, px, py, dx, dy, GOOD, 20)
     f.tex(96, cy - 74, r"\overline{B}", color=GOOD, size=30)
     for x in (210, 350):
         f.arrow(x, cy - 92, x, cy - 40, HOT, 4, 14)
@@ -100,6 +115,8 @@ def pinch():
     for k in range(9):                                  # coil turns: copper ellipses around the column
         x = 90 + 50 * k
         f.add(f'<ellipse cx="{x}" cy="{cy}" rx="10" ry="52" fill="none" stroke="{COPPER}" stroke-width="7"/>')
+    px, py, dx, dy = ring_point(490, cy, 10, 52, 45)    # current in the front of the last turn flows down
+    head(f, px + 4, py + 14, dx, dy, COPPER, 24)
     f.arrow(80, cy, 520, cy, GOOD, 4, 18)
     f.tex(530, cy, r"\overline{B}", color=GOOD, size=30)
     for x in (165, 365):
@@ -131,7 +148,7 @@ def neutrons():
             f.arrow(x0, y0, x0 + (L - 30) * math.cos(a) + 1e-6, y0 + (L - 30) * math.sin(a), INK, 3, 12)
     f.tex(150, 300, r"\text{fusion in a hot plasma}", "middle", size=26, w=296)
     f.tex(450, 300, r"\text{a few accelerated ions}", "middle", size=26, w=296)
-    f.tex(300, 350, r"\text{Arrows show where neutrons fly.}", "middle", size=26, w=580, color=MUTED)
+    f.tex(300, 350, r"\text{Arrows show where neutrons fly.}", "middle", size=26, w=580)
     return f.svg()
 
 
