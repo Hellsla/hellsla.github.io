@@ -143,7 +143,7 @@ same way across the chapter; one instructional voice (the student addressed cons
 in a logical order; no needless repetition, ambiguity or over-long sentences; no mechanical AI phrasing ("On tärkeää
 huomata, että …", stacked "Tämä tarkoittaa, että …", every paragraph ending in a summary); headings consistent in
 form; exercise instructions that say exactly what to do; observations, conclusions and assumptions kept apart;
-correct case after a number and unit ("80 N:n voimalla"). A complete explanation is better than a shorter
+correct case after a number and unit ("$80\,\text{N}$:n voimalla", the quantity in LaTeX: NOTES §1). A complete explanation is better than a shorter
 incomplete one: never shorten for brevity, never rewrite a correct sentence because another phrasing is possible.
 English and Selkeä suomi versions are judged in their own language by the same standard.
 - **5** Reads like carefully authored educational prose throughout.

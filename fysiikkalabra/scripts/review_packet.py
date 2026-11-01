@@ -175,7 +175,7 @@ def exercise_rules(role, lid):
             "1. Levels per the rubric (CLAUDE.md \"Exercise levels\" and the counts above); none repeats the worked example in the brief; together they practise the slot's goals, no more.\n"
             "2. Each task: the situation first, the question last as its own sentence; everyday contexts a 17-year-old recognises; the data needed and no trap the lesson did not prepare.\n"
             "3. Every solution can be followed step by step by a student who could not solve the task (the principle explained, not just named; nothing skipped).\n"
-            "4. Finnish: grammar, glossary terms, case after number+unit (80 N:n voimalla), reading level; give the corrected sentence.\n"
+            "4. Finnish: grammar, glossary terms, case after number+unit ($80\\,\\text{N}$:n voimalla), reading level; give the corrected sentence.\n"
             "5. Phone usability of the exercise captures listed above: nothing clipped, a long calculation still readable at 360 px.")
     return ((guardrails() if role == "science" else "") + force_rules(lid) + f"\n## What you judge (only the exercise set; the deterministic checks above are not repeated)\n{what}\n\n"
             f"## Report: write `exercises/review/{role}.md` (in the lesson folder), under 400 words, findings only\n"
@@ -199,7 +199,7 @@ def reviewer_rules(role, lid, both=False):
             "2. The activities fit the topic: predictions before evidence where the topic allows, an investigation, data, a graph or a model that the student acts on; no simulation or game for its own sake; workload one lesson.\n"
             "3. Lesson form: figures next to the paragraphs they explain and legible in their captures; no wall of text; staged example, one step per stage.\n"
             "4. Exercises: levels per the rubric; none repeats the example; feedback repairs misconceptions; the exit ticket tests the core idea; every solution can be followed step by step by a student who could not solve the task (the principle explained, not just named; nothing skipped).\n"
-            "5. Finnish: grammar, glossary terms, case after number+unit (80 N:n voimalla), reading level; give the corrected sentence.\n"
+            "5. Finnish: grammar, glossary terms, case after number+unit ($80\\,\\text{N}$:n voimalla), reading level; give the corrected sentence.\n"
             "6. Phone usability from the captures: nothing clipped, controls and readout understandable. The inquiry mechanics (gating, locking, "
             "reveal, option feedback, 360 px) are already tested (checks above); open the preview in Playwright only for what a capture cannot show, "
             "such as whether the simulation makes sense when you move it.")

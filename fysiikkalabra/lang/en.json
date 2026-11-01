@@ -443,7 +443,6 @@
       "massa_sama_kaikkialla": "<strong>Mass $m = {{m}}\\,\\text{kg}$</strong> (the same everywhere)<br>$g = {{g}}\\,\\text{m/s}^2$ ({{body}})",
       "palkkikaavion_asteikko_on": "<br>The scale of the bar chart $0\\text{–}{{chartfull}}\\,\\text{N}$ is the weight of this mass on Jupiter.",
       "sama_massa_paino": "$\\text{Same mass, weight in different places}$",
-      "asteikko_0": "$\\text{scale } 0\\text{–}{{chartfull}}\\,\\text{N}$",
       "paino": "$\\text{weight } G$",
       "massa_2": "$\\text{mass } m$",
       "values": {
@@ -480,7 +479,7 @@
       "hidas": "slow",
       "normaali": "normal",
       "nopea": "fast",
-      "oranssi_kaasun_tekema": "Orange: work done by the gas. Blue: work done on the gas. Same colour, same energy.",
+      "oranssi_kaasun_tekema": "Orange: work by the gas. Blue: work on the gas. Same colour, same energy.",
       "lampo": "Heat $Q = {{p}}\\,\\text{J}$",
       "paine_jaahdytyksen_jalkeen": "Pressure after cooling $p_2 = {{p}}\\,\\text{kPa}$",
       "palauta_manta": "Return the piston",

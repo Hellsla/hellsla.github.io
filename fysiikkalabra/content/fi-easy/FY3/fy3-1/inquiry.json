@@ -67,8 +67,8 @@
           "feedback": "Mallin arvoissa paino kolminkertaistuu: $98{,}1\\,\\text{N}$ ja $294\\,\\text{N}$. Voimamittarin jousessa venymä on suoraan verrannollinen voimaan, kun jousta ei venytetä liikaa. Mittari on tehty sille alueelle."
         },
         {
-          "text": "Paino kasvaa yhtä monta newtonia kuin massa kasvaa kilogrammoja, eli 20 N.",
-          "feedback": "Mallin arvot näyttävät kasvun $98{,}1\\,\\text{N}$:sta $294\\,\\text{N}$:iin, eli lähes 200 N. Jokainen kilogramma lisää painoa noin 9,8 N Maassa. Siksi $20\\,\\text{kg}$ lisää painoa noin 196 N. Paino ja massa ovat eri suureita, ja niillä on eri yksiköt."
+          "text": "Paino kasvaa yhtä monta newtonia kuin massa kasvaa kilogrammoja, eli $20\\,\\text{N}$.",
+          "feedback": "Mallin arvot näyttävät kasvun $98{,}1\\,\\text{N}$:sta $294\\,\\text{N}$:iin, eli lähes $200\\,\\text{N}$. Jokainen kilogramma lisää painoa noin $9{,}8\\,\\text{N}$ Maassa. Siksi $20\\,\\text{kg}$ lisää painoa noin $196\\,\\text{N}$. Paino ja massa ovat eri suureita, ja niillä on eri yksiköt."
         },
         {
           "text": "Paino pysyy samana, koska paino riippuu vain paikasta.",
@@ -215,27 +215,27 @@
       "stage": "tutki",
       "type": "interpret",
       "title": "Voimamittarin asteikko",
-      "text": "Jousi ei tiedä mitään newtoneista. Asteikko tehdään ripustamalla jouseen samanlaisia punnuksia. Taulukossa on *esimerkkiarvot* (ne eivät ole oikean mittauksen tuloksia) jouselle, jonka punnusten paino on kunkin 1,0 N. Jousta ei venytetä liikaa.\n\n| Punnuksia | Voima $F$ (N) | Venymä (cm) |\n|---|---|---|\n| 0 | 0 | 0,0 |\n| 1 | 1,0 | 1,6 |\n| 2 | 2,0 | 3,2 |\n| 3 | 3,0 | 4,8 |\n| 4 | 4,0 | 6,4 |",
+      "text": "Jousi ei tiedä mitään newtoneista. Asteikko tehdään ripustamalla jouseen samanlaisia punnuksia. Taulukossa on *esimerkkiarvot* (ne eivät ole oikean mittauksen tuloksia) jouselle, jonka punnusten paino on kunkin $1{,}0\\,\\text{N}$. Jousta ei venytetä liikaa.\n\n| Punnuksia | Voima $F$ (N) | Venymä (cm) |\n|---|---|---|\n| 0 | 0 | 0,0 |\n| 1 | 1,0 | 1,6 |\n| 2 | 2,0 | 3,2 |\n| 3 | 3,0 | 4,8 |\n| 4 | 4,0 | 6,4 |",
       "question": {
         "type": "choice",
-        "prompt": "Samaan jouseen ripustetaan tuntematon kappale, ja jousi venyy 5,6 cm. Kuinka suuri voima jousta venyttää?",
+        "prompt": "Samaan jouseen ripustetaan tuntematon kappale, ja jousi venyy $5{,}6\\,\\text{cm}$. Kuinka suuri voima jousta venyttää?",
         "choices": [
           {
-            "text": "3,5 N",
+            "text": "$3{,}5\\,\\text{N}$",
             "correct": true,
-            "feedback": "Oikein. Jokainen newton venyttää jousta 1,6 cm. Siksi $5{,}6\\,\\text{cm}$ vastaa voimaa $5{,}6 / 1{,}6 \\cdot 1{,}0\\,\\text{N} = 3{,}5\\,\\text{N}$. Venymä on suoraan verrannollinen voimaan, joten asteikon väliin voi lukea."
+            "feedback": "Oikein. Jokainen newton venyttää jousta $1{,}6\\,\\text{cm}$. Siksi $5{,}6\\,\\text{cm}$ vastaa voimaa $5{,}6 / 1{,}6 \\cdot 1{,}0\\,\\text{N} = 3{,}5\\,\\text{N}$. Venymä on suoraan verrannollinen voimaan, joten asteikon väliin voi lukea."
           },
           {
-            "text": "5,6 N",
-            "feedback": "Venymä senttimetreinä ei ole sama luku kuin voima newtoneina. Taulukossa 1,0 N venyttää jousta 1,6 cm, joten 5,6 cm vastaa $5{,}6/1{,}6 = 3{,}5$ newtonia."
+            "text": "$5{,}6\\,\\text{N}$",
+            "feedback": "Venymä senttimetreinä ei ole sama luku kuin voima newtoneina. Taulukossa $1{,}0\\,\\text{N}$ venyttää jousta $1{,}6\\,\\text{cm}$, joten $5{,}6\\,\\text{cm}$ vastaa $5{,}6/1{,}6 = 3{,}5$ newtonia."
           },
           {
-            "text": "Sitä ei voi tietää, koska 5,6 cm ei ole taulukossa.",
-            "feedback": "Taulukon arvot ovat origon kautta kulkevalla suoralla. Venymä kasvaa 1,6 cm jokaista newtonia kohti. Siksi myös välissä olevan venymän voi muuttaa voimaksi: $5{,}6/1{,}6 \\cdot 1{,}0\\,\\text{N} = 3{,}5\\,\\text{N}$."
+            "text": "Sitä ei voi tietää, koska $5{,}6\\,\\text{cm}$ ei ole taulukossa.",
+            "feedback": "Taulukon arvot ovat origon kautta kulkevalla suoralla. Venymä kasvaa $1{,}6\\,\\text{cm}$ jokaista newtonia kohti. Siksi myös välissä olevan venymän voi muuttaa voimaksi: $5{,}6/1{,}6 \\cdot 1{,}0\\,\\text{N} = 3{,}5\\,\\text{N}$."
           },
           {
-            "text": "9,0 N",
-            "feedback": "Kerroit venymän ja venymän yhtä newtonia kohti ($5{,}6 \\cdot 1{,}6$), vaikka pitää jakaa. Kysy: kuinka monta 1,6 cm:n venymää mahtuu 5,6 cm:iin? Vastaus on 3,5, siis 3,5 N."
+            "text": "$9{,}0\\,\\text{N}$",
+            "feedback": "Kerroit venymän ja venymän yhtä newtonia kohti ($5{,}6 \\cdot 1{,}6$), vaikka pitää jakaa. Kysy: kuinka monta $1{,}6\\,\\text{cm}$:n venymää mahtuu $5{,}6\\,\\text{cm}$:iin? Vastaus on 3,5, siis $3{,}5\\,\\text{N}$."
           }
         ]
       },
@@ -281,7 +281,7 @@
         {
           "text": "Massa pitää muuttaa kilogrammoiksi: $G = 0{,}500\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 \\approx 4{,}91\\,\\text{N}$.",
           "correct": true,
-          "feedback": "Oikein. Paino tulee newtoneina vain, kun massa on kilogrammoina, sillä $1\\,\\text{N} = 1\\,\\text{kg}\\cdot\\text{m/s}^2$. Järkevyystarkistus kertoo saman: puolen kilon pussin paino on noin 5 N, ei lähes 5000 N."
+          "feedback": "Oikein. Paino tulee newtoneina vain, kun massa on kilogrammoina, sillä $1\\,\\text{N} = 1\\,\\text{kg}\\cdot\\text{m/s}^2$. Järkevyystarkistus kertoo saman: puolen kilon pussin paino on noin $5\\,\\text{N}$, ei lähes $5000\\,\\text{N}$."
         },
         {
           "text": "Paino pitäisi ilmoittaa kilogrammoina, eli vastaus on $500\\,\\text{g}$.",
@@ -293,7 +293,7 @@
         },
         {
           "text": "Laskussa ei ole virhettä.",
-          "feedback": "Tarkista suuruusluokka. Yhden kilogramman paino Maassa on noin 10 N, joten $500\\,\\text{g}$ ei voi painaa lähes 5000 N. Massa on sijoitettu grammoina, vaikka kaava vaatii kilogrammat."
+          "feedback": "Tarkista suuruusluokka. Yhden kilogramman paino Maassa on noin $10\\,\\text{N}$, joten $500\\,\\text{g}$ ei voi painaa lähes $5000\\,\\text{N}$. Massa on sijoitettu grammoina, vaikka kaava vaatii kilogrammat."
         }
       ],
       "optional": true
@@ -303,7 +303,7 @@
       "stage": "sovella",
       "type": "numeric",
       "title": "Sovella uuteen tilanteeseen",
-      "prompt": "Astronautti ripustaa Kuussa kivinäytteitä sisältävän laatikon voimamittariin. Mittari näyttää 12 N. Laatikko tuodaan sellaisenaan Maahan. Kuinka suuri on sen paino Maassa? Putoamiskiihtyvyydet ovat oppitunnin taulukossa. Vastaa newtoneina.",
+      "prompt": "Astronautti ripustaa Kuussa kivinäytteitä sisältävän laatikon voimamittariin. Mittari näyttää $12\\,\\text{N}$. Laatikko tuodaan sellaisenaan Maahan. Kuinka suuri on sen paino Maassa? Putoamiskiihtyvyydet ovat oppitunnin taulukossa. Vastaa newtoneina.",
       "answer": 72.7,
       "unit": "N",
       "tolerance": 0.02,
@@ -315,11 +315,11 @@
       "mistakes": [
         {
           "value": 19.44,
-          "feedback": "Kerroit Kuun lukeman Kuun putoamiskiihtyvyydellä. 12 N on jo paino, ei massa. Laske ensin massa jakamalla: $m = 12\\,\\text{N} / 1{,}62\\,\\text{m/s}^2 \\approx 7{,}41\\,\\text{kg}$."
+          "feedback": "Kerroit Kuun lukeman Kuun putoamiskiihtyvyydellä. $12\\,\\text{N}$ on jo paino, ei massa. Laske ensin massa jakamalla: $m = 12\\,\\text{N} / 1{,}62\\,\\text{m/s}^2 \\approx 7{,}41\\,\\text{kg}$."
         },
         {
           "value": 117.72,
-          "feedback": "Käsittelit 12 N:n lukemaa kuin massaa ($12\\,\\text{kg}$). Kuun lukema on paino; massa on $12\\,\\text{N} / 1{,}62\\,\\text{m/s}^2 \\approx 7{,}41\\,\\text{kg}$, ja sen paino Maassa on noin 73 N."
+          "feedback": "Käsittelit $12\\,\\text{N}$:n lukemaa kuin massaa ($12\\,\\text{kg}$). Kuun lukema on paino; massa on $12\\,\\text{N} / 1{,}62\\,\\text{m/s}^2 \\approx 7{,}41\\,\\text{kg}$, ja sen paino Maassa on noin $73\\,\\text{N}$."
         },
         {
           "value": 7.41,
@@ -408,7 +408,7 @@
         },
         {
           "value": 44.9,
-          "feedback": "Jaoit painon Maan arvolla $9{,}81\\,\\text{m/s}^2$. Silloin sait massan, jonka paino olisi Maassa 440 N. Kysytty on tämän taivaankappaleen $g$: $g = G/m$."
+          "feedback": "Jaoit painon Maan arvolla $9{,}81\\,\\text{m/s}^2$. Silloin sait massan, jonka paino olisi Maassa $440\\,\\text{N}$. Kysytty on tämän taivaankappaleen $g$: $g = G/m$."
         }
       ],
       "solution": "**Annettu:** $(m, G)$-kuvaaja on origon kautta kulkeva suora, joka kulkee pisteen $(50\\,\\text{kg}, 440\\,\\text{N})$ kautta\n\n**Kysytty:** putoamiskiihtyvyys $g$ yksikössä $\\text{m/s}^2$\n\n**Periaate:** Paino on suoraan verrannollinen massaan, $G = m g$. Siksi kuvaaja on origon kautta kulkeva suora. Suoran kulmakerroin $\\dfrac{G}{m}$ on sama kaikissa pisteissä. Se on juuri putoamiskiihtyvyys $g$.\n\n**Kuvaajan lukeminen:** Luetaan suoralta yksi piste, $m = 50\\,\\text{kg}$ ja $G = 440\\,\\text{N}$. Koska suora kulkee origon kautta, kulmakerroin on pisteen paino jaettuna sen massalla. Muita pisteitä ei tarvita, koska suhde on kaikkialla sama.\n\n**Kaava:** $G = m g$, joten\n\n$$g = \\frac{G}{m}$$\n\n**Muunnokset:** Muunnoksia ei tarvita: paino on newtoneina ja massa kilogrammoina, ja $1\\,\\text{N} = 1\\,\\text{kg} \\cdot \\text{m/s}^2$, joten $\\dfrac{\\text{N}}{\\text{kg}}$ on $\\text{m/s}^2$.\n\n**Sijoitus:** $g = \\dfrac{440\\,\\text{N}}{50\\,\\text{kg}} = 8{,}8\\,\\text{m/s}^2$\n\n**Vastaus:** $8{,}8\\,\\text{m/s}^2$, kaksi merkitsevää numeroa kuten massassa $50\\,\\text{kg}$ ja painossa $440\\,\\text{N}$.\n\n**Järkevyys:** Arvo on lähellä Maan arvoa $9{,}81\\,\\text{m/s}^2$, mutta se on hieman pienempi. Taivaankappale ei siis ole mikään taulukon taivaankappaleista. Palautuslasku: $50\\,\\text{kg} \\cdot 8{,}8\\,\\text{m/s}^2 = 440\\,\\text{N}$, joten piste on suoralla."

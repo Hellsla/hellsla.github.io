@@ -161,13 +161,14 @@ new p5((p) => {
     const raw = chartFull / 6, mag = Math.pow(10, Math.floor(Math.log10(raw)));
     const step = [1, 2, 2.5, 5, 10].map((f) => f * mag).find((s) => s >= raw);       // gridline step, a round number
     p.textSize(ts(10)); p.textAlign(p.RIGHT, p.CENTER);
-    for (let v = step; v < 0.8 * chartFull; v += step) {
+    for (let v = step; v < 0.9 * chartFull; v += step) {          // gridlines up to near the full-scale line (248 N: 50…200)
       const y = base - H * v / chartFull;
       p.stroke(0, 0, 0, 30); p.strokeWeight(1); p.line(BARS.x, y, BARS.x + BARS.w, y);
       p.noStroke(); p.fill(70); p.text(`$${fi(v, 0)}$`, BARS.x - 6, y);
     }
     p.stroke(0, 0, 0, 45); p.line(BARS.x, top, BARS.x + BARS.w, top);                 // full-scale gridline
-    p.noStroke(); p.fill(40); p.textStyle(p.BOLD); p.text('$G\\ (\\text{N})$', BARS.x - 6, top + ts(3)); p.textStyle(p.NORMAL);
+    p.noStroke(); p.fill(70); p.text(`$${tx(chartFull, chartFull < 100 ? 1 : 0)}$`, BARS.x - 6, top);   // the full-scale value closes the axis (readout: this mass on Jupiter)
+    p.fill(40); p.textStyle(p.BOLD); p.text('$G\\ (\\text{N})$', BARS.x - 6, top - ts(14)); p.textStyle(p.NORMAL);   // axis title above the axis
     p.stroke(60); p.strokeWeight(2); p.line(BARS.x, base, BARS.x + BARS.w, base);
     p.line(BARS.x, base, BARS.x, top); p.line(BARS.x - 5, top, BARS.x + 5, top);   // y axis ends at full scale, with a tick
     const bw = BARS.w / 4 - 16;
@@ -187,11 +188,10 @@ new p5((p) => {
       p.fill(on ? 120 : 70, on ? 20 : 70, on ? 20 : 70); p.text(vt, x + bw / 2, base - h - 6); p.textStyle(p.NORMAL);
     });
     p.noStroke(); p.fill(26, 77, 46); p.textAlign(p.CENTER, p.BASELINE); p.textSize(ts(13));   // title: shrunk to fit inside the canvas when scaled down
-    const title = __('sama_massa_paino'), titleMax = 2 * (600 - (BARS.x + BARS.w / 2)) - 10;
+    const title = __('sama_massa_paino'), titleMax = BARS.w - 8;   // over the chart only: the axis title G (N) stays left of it
     if (p.textWidth(title) > titleMax) p.textSize(ts(13) * titleMax / p.textWidth(title));
-    p.text(title, BARS.x + BARS.w / 2, BARS.y - ts(6));
-    p.fill(60); p.textSize(ts(11));                               // scale line: short, the explanation is in the readout
-    p.textAlign(p.LEFT); p.text(__(`asteikko_0`, {chartfull: tx(chartFull, chartFull < 100 ? 1 : 0)}), BARS.x + 9, top - ts(4));
+    p.text(title, BARS.x + BARS.w / 2, BARS.y - ts(14));                                // above the axis title G (N)
+
   }
 
   function planet(i, x, y, r, on) {                            // small shaded disc of the body, in its own colour

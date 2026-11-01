@@ -112,7 +112,7 @@
 </svg>
 
 ## Key idea
-When two objects act on each other, they interact. For example, the Earth pulls an apple towards itself. Force tells you how strong the interaction is: the greater the force, the stronger the interaction. The unit of force is the newton (N), and about 1 N is the weight of a 100 g apple on Earth. At this stage only the magnitude of the force matters, and in the figures an arrow shows the direction in which the force points.
+When two objects act on each other, they interact. For example, the Earth pulls an apple towards itself. Force tells you how strong the interaction is: the greater the force, the stronger the interaction. The unit of force is the newton (N), and about $1\,\text{N}$ is the weight of a hundred-gram apple on Earth. At this stage only the magnitude of the force matters, and in the figures an arrow shows the direction in which the force points.
 
 You can measure a force with a force meter. It contains a spring that stretches more the greater the force acting on it.
 
@@ -126,8 +126,8 @@ You can measure a force with a force meter. It contains a spring that stretches 
   <path d="M170,156 v6 a7,7 0 1,1 -7,7" fill="none" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
   <rect x="140" y="170" width="60" height="42" rx="5" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
   <foreignObject x="160" y="176.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$m$</div></foreignObject>
-  <line x1="170" y1="212" x2="170" y2="233" stroke="#e8590c" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M170,248 L163,232 L177,232 Z" fill="#e8590c" stroke-linejoin="round"/>
+  <line x1="170" y1="212" x2="170" y2="233" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M170,248 L163,232 L177,232 Z" fill="#c92a2a" stroke-linejoin="round"/>
   <foreignObject x="184" y="219.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$G$</div></foreignObject>
   <line x1="370" y1="36" x2="370" y2="48" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
   <path d="M370,48 L384,57.125 L356,75.375 L384,93.625 L356,111.875 L384,130.125 L356,148.375 L384,166.625 L356,184.875 L370,194" fill="none" stroke="#6c757d" stroke-width="3" stroke-linejoin="round"/>
@@ -138,8 +138,8 @@ You can measure a force with a force meter. It contains a spring that stretches 
   <line x1="370" y1="262" x2="370" y2="270" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
   <rect x="340" y="270" width="60" height="42" rx="5" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
   <foreignObject x="360" y="276.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$m$</div></foreignObject>
-  <line x1="370" y1="312" x2="370" y2="369" stroke="#e8590c" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M370,384 L363,368 L377,368 Z" fill="#e8590c" stroke-linejoin="round"/>
+  <line x1="370" y1="312" x2="370" y2="369" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M370,384 L363,368 L377,368 Z" fill="#c92a2a" stroke-linejoin="round"/>
   <foreignObject x="384" y="337.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$2G$</div></foreignObject>
   <line x1="192" y1="106" x2="252" y2="106" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 4"/>
   <line x1="192" y1="156" x2="252" y2="156" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 4"/>
@@ -151,7 +151,7 @@ You can measure a force with a force meter. It contains a spring that stretches 
   <foreignObject x="460" y="141.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$2x$</div></foreignObject>
 </svg>
 
-The extension is directly proportional to the force as long as the spring is not stretched too far: double the force stretches the spring double the distance. The graph (force, extension) is therefore a straight line through the origin, like the directly proportional models in FY1, for example uniform motion $s = v t$. If 5.0 N stretches a spring by 2.0 cm, then 10 N stretches it by 4.0 cm and 2.5 N stretches it by 1.0 cm.
+The extension is directly proportional to the force as long as the spring is not stretched too far: double the force stretches the spring double the distance. The graph (force, extension) is therefore a straight line through the origin, like the directly proportional models in FY1, for example uniform motion $s = v t$. If $5.0\,\text{N}$ stretches a spring by $2.0\,\text{cm}$, then $10\,\text{N}$ stretches it by $4.0\,\text{cm}$ and $2.5\,\text{N}$ stretches it by $1.0\,\text{cm}$.
 
 <svg data-fig="force-extension" viewBox="0 0 600 330" role="img" aria-label="Graph to scale: extension x of a spring in centimetres as a function of force F, for F from 0 to 11 N. The measurement points 2.5 N and 1.0 cm, 5.0 N and 2.0 cm, and 10 N and 4.0 cm are on the same straight line through the origin; dashed lines show the values of the points on the axes." style="max-width:100%;font-size:24px">
   <line x1="179.5" y1="290" x2="179.5" y2="70" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -198,10 +198,10 @@ The extension is directly proportional to the force as long as the spring is not
   <foreignObject x="309.5" y="222.5" width="220" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{line through origin}$</span></div></foreignObject>
 </svg>
 
-The scale is calibrated by hanging identical small objects on the spring, each with a mass of about $100\,\text{g}$, that is, a weight of about 1 N:
+The scale is calibrated by hanging identical small objects on the spring, each with a mass of about $100\,\text{g}$, that is, a weight of about $1\,\text{N}$:
 
-- One object stretches the spring by a certain distance, and the position is marked 1 N.
-- Each object pulls on the spring equally hard, so two objects pull with double the force and stretch it double the distance. This position is marked 2 N, and so on.
+- One object stretches the spring by a certain distance, and the position is marked $1\,\text{N}$.
+- Each object pulls on the spring equally hard, so two objects pull with double the force and stretch it double the distance. This position is marked $2\,\text{N}$, and so on.
 - After that you can read the force directly in newtons from the extension.
 
 The weight of an object is a measure of the strength of the interaction between the Earth and the object. It is a force, and its unit is the newton. Mass is something quite different: it tells you how much matter an object contains, and its unit is the kilogram. Mass is the same everywhere, but weight depends on where the object is. The Moon is a much smaller celestial body than the Earth, and the interaction between the Moon and the astronaut is weaker than between the Earth and the astronaut, so the astronaut weighs less on the Moon.
@@ -211,7 +211,7 @@ Two identical objects stretch the spring of a force meter twice as much as one, 
 ```latex
 G = m g
 ```
-where $G$ is the weight (N), $m$ the mass (kg) and $g$ the acceleration of free fall (m/s²), $9.81\,\text{m/s}^2$ on the surface of the Earth. When mass is in kilograms and $g$ in m/s², the weight comes out in newtons, because 1 N = $1\,\text{kg}\cdot\text{m/s}^2$ (this is justified in FY4). So the weight of a 1 kg mass on Earth is 9.81 N. Elsewhere $g$ is different. The values in the table apply to the surface of the celestial body (for Jupiter, the level of the cloud tops):
+where $G$ is the weight (N), $m$ the mass (kg) and $g$ the acceleration of free fall (m/s²), $9.81\,\text{m/s}^2$ on the surface of the Earth. When mass is in kilograms and $g$ in m/s², the weight comes out in newtons, because $1\,\text{N} = 1\,\text{kg}\cdot\text{m/s}^2$ (this is justified in FY4). So the weight of a one-kilogram mass on Earth is $9.81\,\text{N}$. Elsewhere $g$ is different. The values in the table apply to the surface of the celestial body (for Jupiter, the level of the cloud tops):
 
 | Celestial body | $g$ at the surface (m/s²) |
 | --- | --- |
@@ -220,7 +220,7 @@ where $G$ is the weight (N), $m$ the mass (kg) and $g$ the acceleration of free 
 | Earth | 9.81 |
 | Jupiter | 24.8 |
 
-The Moon's $g$ is about one sixth of the Earth's value (1.62/9.81 ≈ 0.17 ≈ 1/6), so the same mass weighs about one sixth as much on the Moon as on Earth. This answers the question about the astronaut at the beginning.
+The Moon's $g$ is about one sixth of the Earth's value ($1.62 : 9.81 \approx 0.17 \approx 1 : 6$), so the same mass weighs about one sixth as much on the Moon as on Earth. This answers the question about the astronaut at the beginning.
 
 In the graph, weight is plotted as a function of mass. For each celestial body, weight is directly proportional to mass, so the graph is a straight line through the origin. The greater $g$ is, the steeper the line: for the same mass, weight is greatest on Jupiter and smallest on the Moon.
 
@@ -307,19 +307,19 @@ G_\text{Mars} &= m g_\text{Mars}
 
 <!-- vaihe -->
 
-**Result.** To three significant figures, the robot's weight on Earth is $G_\text{Earth} \approx 1180\,\text{N}$, or about 1.18 kN, and on Mars $G_\text{Mars} \approx 445\,\text{N}$. Three figures, because the mass $120\,\text{kg}$ and the $g$ values are given to three figures.
+**Result.** To three significant figures, the robot's weight on Earth is $G_\text{Earth} \approx 1180\,\text{N}$, or about $1.18\,\text{kN}$, and on Mars $G_\text{Mars} \approx 445\,\text{N}$. Three figures, because the mass $120\,\text{kg}$ and the $g$ values are given to three figures.
 
 <!-- vaihe -->
 
-**Reasonableness.** The weight of a 1 kg mass on Earth is about 10 N, so the weight of a $120\,\text{kg}$ mass is about 1200 N. Mars's $g$ is a little over one third of the Earth's value (3.71/9.81 ≈ 0.38), and 445 N is a little over one third of 1180 N. On Mars the weight is smaller because the interaction between Mars and the robot is weaker than between the Earth and the robot. The mass is the same in both.
+**Reasonableness.** The weight of a one-kilogram mass on Earth is about $10\,\text{N}$, so the weight of a $120\,\text{kg}$ mass is about $1200\,\text{N}$. Mars's $g$ is a little over one third of the Earth's value ($3.71 : 9.81 \approx 0.38$), and $445\,\text{N}$ is a little over one third of $1180\,\text{N}$. On Mars the weight is smaller because the interaction between Mars and the robot is weaker than between the Earth and the robot. The mass is the same in both.
 
 ## Common misconception
-In everyday language people say "I weigh 70 kilos", but the kilogram is a unit of mass, not of weight. In physics the mass is $70\,\text{kg}$ and the weight on Earth is about 690 N. Another mistake is to think that an object's mass changes on the Moon. The mass stays the same, and only the weight decreases. Note also that a force meter measures force, not mass: its reading changes when the same object is taken to another place. A bathroom scale still shows kilograms, because it measures force and its scale has been made on Earth by dividing the force by $9.81\,\text{m/s}^2$. On the Moon such a scale would show only about one sixth of the mass.
+In everyday language people say "I weigh 70 kilos", but the kilogram is a unit of mass, not of weight. In physics the mass is $70\,\text{kg}$ and the weight on Earth is about $690\,\text{N}$. Another mistake is to think that an object's mass changes on the Moon. The mass stays the same, and only the weight decreases. Note also that a force meter measures force, not mass: its reading changes when the same object is taken to another place. A bathroom scale still shows kilograms, because it measures force and its scale has been made on Earth by dividing the force by $9.81\,\text{m/s}^2$. On the Moon such a scale would show only about one sixth of the mass.
 
 ## Summary
 - Force tells you the strength of an interaction, and its unit is the newton (N). The extension of a force meter's spring is directly proportional to the force.
 - Weight is a force: $G = m g$. Mass tells you how much matter an object contains, and it is the same everywhere.
-- $g = 9.81\,\text{m/s}^2$ on the surface of the Earth, so the weight of a 1 kg mass on Earth is 9.81 N. On the Moon $g = 1.62\,\text{m/s}^2$ and on Mars $3.71\,\text{m/s}^2$.
+- $g = 9.81\,\text{m/s}^2$ on the surface of the Earth, so the weight of a one-kilogram mass on Earth is $9.81\,\text{N}$. On the Moon $g = 1.62\,\text{m/s}^2$ and on Mars $3.71\,\text{m/s}^2$.
 
 <svg data-fig="scene" viewBox="0 0 600 360" role="img" aria-label="Illustration: the same backpack hangs from a spring balance on Earth and on the Moon. On Earth the spring stretches far, on the Moon only one sixth as much, because the Moon pulls the backpack six times more weakly. The extensions are drawn to scale." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy31s-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#eef5f9"/></linearGradient><radialGradient id="fy31s-ocean" cx="0.35" cy="0.35" r="0.8"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></radialGradient><clipPath id="fy31s-clip"><circle cx="540" cy="60" r="26"/></clipPath></defs>

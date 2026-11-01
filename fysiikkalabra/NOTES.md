@@ -18,7 +18,14 @@ course's `scope_notes` in `curriculum.json`, not here. Lines without a date pred
   (`scripts/mathlayout.py`, §8), so never hand-split a chain or rewrite it as display maths for the layout's sake. Inline SVG labels are LaTeX as well (§3). A symbol or formula named in the student's text is inline maths
   everywhere: `lesson.md`, `inquiry.json`, `exercises.json`, `exit-ticket.json` ("$T$:hen", "$(V, p)$-kuvaaja"); a
   number with its unit in prose is maths too ($98\,\text{N}$, $4{,}0\,\%$; teacher 2026-10-28, as FY1 and FY2 do), only
-  an `aria-label` stays plain text. The experiments' Alkutila line and table headers turn
+  an `aria-label` stays plain text. **Standing rule (teacher 2026-11-01, "jatkossa näin"):** the whole quantity, number
+  and unit, is one inline formula in every language (fi, en, fi-easy) and every text a student reads (`lesson.md`,
+  `inquiry.json` with its choices and feedback, `exercises.json`, `solutions.md`, `exit-ticket.json`): "noin 10 N" →
+  "noin $10\,\text{N}$", "1,18 kN" → "$1{,}18\,\text{kN}$", "9,81 m/s²" → "$9{,}81\,\text{m/s}^2$", "45 m²" →
+  "$45\,\text{m}^2$", case endings after the maths ("$12\,\text{N}$:n", "$1\,\text{N}$:ksi"). A lesson written
+  or edited from now on has none in plain text (`lint_lesson.py` PLAIN_QTY: an error for a lesson being edited, a
+  warning in a reviewed one until it is next edited); a reviewer reports a plain one in new or edited text as Major,
+  in untouched reviewed text as Minor. The experiments' Alkutila line and table headers turn
   a symbol in `names`/`measure` labels into maths at build time (scripts/inquiry.py `tex_name`). The simulation too
   (teacher 2026-10-26, "latexilla kaikki"): every label drawn on the canvas is a `p.text('$…$', x, y)` string, words
   as `\text{}`, numbers with `{,}`, units `\,\text{kPa}` (`templates/sim-embed.js` draws a `$…$` string with KaTeX

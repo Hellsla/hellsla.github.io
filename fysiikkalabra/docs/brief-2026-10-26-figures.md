@@ -55,8 +55,8 @@ Decimal comma `{,}`, multiplication `\cdot`, `\approx` where rounded, `^\circ\te
 `\Delta`, `\rho`, powers `10^{-6}`. Prose words stay outside maths. Keep each Sijoitus inline (it wraps at `=`).
 
 **C. Symbols in theory prose.** In `lesson.md` (outside figures) a symbol named in prose is inline maths:
-"missä $G$ on paino (N), $m$ massa (kg)", "ΔU" → `$\Delta U$`, "p₀" → `$p_0$`. Numbers with units in plain prose
-stay as they are (9,81 m/s²). Do not change wording otherwise.
+"missä $G$ on paino (N), $m$ massa (kg)", "ΔU" → `$\Delta U$`, "p₀" → `$p_0$`. Numbers with units in plain prose:
+superseded (NOTES §1, teacher 2026-10-28 and 2026-11-01): they are maths too ($9{,}81\,\text{m/s}^2$). Do not change wording otherwise.
 
 **Do not touch**: `sim.js`, `assets/sims/`, `tests/sims/`, `inquiry.json`, `exercises.json`, `answers.py`,
 `exit-ticket.json`, `review/` (another thread is changing the simulations and some inquiry texts right now),
