@@ -1,20 +1,20 @@
-VERDICT: FAIL
-CONTENT-HASH: 2639786ad1ef09dd
+VERDICT: PASS
+CONTENT-HASH: ed6f842cf8a1ed44
 
 ## Blocking
-- [Major] inquiry.json `values` (lines 125-132, 227-234); captures exp-koe-1-390-1, exp-koe-2-390-1, lab-1280-1 — the "Initial state" line of both experiments shows Finnish words in the English page: "device A: hiustenkuivain", "device B: lamppu", "device A: vedenkeitin" — the student sees untranslated text right next to the simulation menus that say "hair dryer", "lamp", "kettle"; a language error on the core experiment card — set the `values` map to the English display names ("hair dryer", "lamp", "kettle", as the sim's own menus show).
+(none) Round 1 Major resolved: the "Initial state" lines of both experiments now read "hair dryer", "lamp", "kettle", matching the sim menus (exp-koe-1-390-1, exp-koe-2-390-1, lab-1280-1).
 
 ## Polish
-- [Minor] lesson.md Common misconception — straight quotes around "the power is 2 kWh" — use typographic quotes (curly) as elsewhere in the book.
-- [Minor] Worked example step 3 "Rearranged formula" — the first line is E = Pt, which is not rearranged; the step reads as "Formula". Rename to "Formulas" or "Formula".
-- [Minor] exp-koe-2-390-1 (316 px capture) — the intro text sits flush at the card edge with no padding, unlike koe-1; probably a capture crop, check on a phone.
-- [Minor] Kilowatt-hour display chain — the second row "= 3 600 000 J" is centred rather than aligned under the first "=" in the 1280 capture; align the equals signs.
-- [Minor] bars figure — the 80 J bar is only a sliver and its label sits on the dashed baseline at 390 px; leave a gap above the baseline.
+- [Minor] exp-koe-2-390-1 — intro text still sits flush at the card edge (316 px capture); probably a capture crop, check on a phone.
+- [Minor] lesson.md Common misconception — straight quotes around "the power is 2 kWh" (carried over; check) — use curly quotes.
+- [Minor] Worked example step 3 — first line is "Rearranged formula" but shows E = Pt (carried over; check) — rename to "Formulas".
+- [Minor] Kilowatt-hour display chain — second row centred rather than aligned under the first "=" — align the equals signs.
+- [Minor] bars figure — the 80 J bar is a sliver and its label touches the baseline at 390 px.
 
 ## Checked
-- contact-1 (captures 1-12); fig-1/2/3-390 (hero, bars, graph); top/intro-1280; theory-1280-1/2/3; example-390-1 and sovella-390-1; sim-1280; lab-1280-1; exp-koe-1-390-1; exp-koe-2-390-1; open-ennusta-1280; open-tarkista-1280-1; open-exit-1280.
-- Not opened individually: contact sheets 2-5, stage-selita/tarkista-390 parts, open-tarkista parts 2-4 (layout seen consistent in the contact sheets and the parts opened).
-- The figures: the graph's 40 kJ / 20 s triangle matches the text; hero reads at 390 px.
+- exp-koe-1-390-1, exp-koe-2-390-1, lab-1280-1 (translated values, sim, experiment cards).
+- open-exit-1280: unit conversion is now its own sentence ("First convert the power to kilowatts: substituting 1 W = 10^-3 kW, so"); the kettle conversion likewise; the displays are clear.
+- Not re-opened: the figures, theory, example and exercises (unchanged in this delta; first-round captures showed no defects there).
 
 ## Scores
 illustrations 4 · typography 4 · English 4 · accessibility 4
