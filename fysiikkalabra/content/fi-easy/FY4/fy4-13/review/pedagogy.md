@@ -1,9 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: b33f3070c074bb84
+CONTENT-HASH: 03cd808dc1697eff
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-Rechecked after the redrawn figures and the removed level-policy sentence. The text, hints, staged worked example and figure descriptions are unchanged; the figures keep their labels and descriptions, and the sentence in the exercises intro now matches the Finnish. check_i18n clean (0 errors).
+Delta review: the new captions "Kappaleen m_1 voimakuvio" / "Kappaleen m_2 voimakuvio" are short, clear and consistent with the one-body captions ("Kärryn voimakuvio", "Punnuksen voimakuvio"). Nothing else changed.

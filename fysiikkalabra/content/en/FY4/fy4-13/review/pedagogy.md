@@ -1,9 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 6adb7baad5ee0a31
+CONTENT-HASH: 53a6c9035667e48c
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-Rechecked after the redrawn figures and the removed level-policy sentence. The text, hints, staged worked example and figure descriptions are unchanged; the figures keep their labels and descriptions, and the sentence in the exercises intro now matches the Finnish. check_i18n clean (0 errors).
+Delta review: "situation" is clear English and the new captions "Free-body diagram: m_1/m_2" match the existing one-body captions in style, so the diagram title reads consistently in both modes. Nothing else changed.

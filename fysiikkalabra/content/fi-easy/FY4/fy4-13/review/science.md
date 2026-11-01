@@ -1,9 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: b33f3070c074bb84
+CONTENT-HASH: 03cd808dc1697eff
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-Rechecked after the redrawn figures and the removal of the level-policy sentence ("levels 2 and 3 are advanced"). The redraw only changed geometry in the Atwood and example free-body diagrams (body sizes, arrow lengths, viewBox 380 to 410); the aria-labels, TeX labels and all words are unchanged and agree with the Finnish. The arrows still show T1 > G1 for the lighter body, G2 > T2 for the heavier body and equal acceleration magnitudes, so the physics matches the Finnish. The Finnish inquiry text change is mirrored. check_i18n clean (0 errors).
+Delta review: the selector name stays Finnish "tilanne" (correct for fi-easy). The two-body free-body diagram captions come from lang/fi-easy.json sims.fy4-13.vk1_kaksi / vk2_kaksi: "Kappaleen m_1 voimakuvio" / "Kappaleen m_2 voimakuvio", same physics as Finnish "Voimakuvio: m_1/m_2", natural plain Finnish and the same form as "Kärryn voimakuvio". check_i18n 0 errors.
