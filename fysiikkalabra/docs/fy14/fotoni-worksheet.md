@@ -28,7 +28,7 @@ differ from the Fotoni instructions: check them at the station and write down wh
 - Electron beam: 2U = (e/m)·B²r². Coil pair: B = (4/5)^(3/2)·μ₀·N·I/R, μ₀ = 4π·10⁻⁷ T·m/A.
 - Double slit: bright bands Δy = λ·L/d apart (small angles).
 - Wien's law: λ_max·T = 2.898·10⁻³ m·K.
-- Repeated readings: mean ± half of the range (largest − smallest)/2.
+- Repeated readings: the mean; Δx of one reading ≈ (largest − smallest)/2, that is, half of the range (it shows how much single readings spread).
 
 ---
 
@@ -73,9 +73,13 @@ Where does each LED's wavelength come from (a label, the instructor, a spectrome
 | turns of one coil N | | |
 | coil radius R (m) | | |
 
-**Observation:** what does the beam do when a bar magnet comes near it?
+**Observations** (before the measurements):
 
-&nbsp;
+| What we did | What happened to the beam |
+| --- | --- |
+| a bar magnet near the tube (not touching) | |
+| U kept the same, coil current up | |
+| coil current kept the same, U up | |
 
 **Measurements:**
 
@@ -161,6 +165,8 @@ How did you measure the radius, and what is Δr?
 ---
 
 ## Station: oil drops
+
+**Research question:** how do charged oil drops move between the plates, and what happens when a drop's charge changes?
 
 | What we saw | Our explanation |
 | --- | --- |

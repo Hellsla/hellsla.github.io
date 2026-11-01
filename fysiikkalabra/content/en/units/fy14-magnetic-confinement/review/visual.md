@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: c5fef9077a48f7ca
+CONTENT-HASH: c14fd77f3c588c7d
 
 ## Blocking
-(none) Fixed in 3735b0fa: in the "Field along the particle" view, the top-right card ($B_0$, $B_\max$) now drops under the top-left card when they would touch. I checked at 360, 390 and 1280, with and without the mirror, for the proton and the electron. No cards overlap, all text is 14 px and readable, and there are no page errors.
+(none) The earlier card overlap is fixed (3735b0fa, 4ec672e4). I rebuilt the unit and checked both views at 360, 390 and 1280: the uniform view for the proton and the electron and with the electric field on, and the field-along view with and without the mirror, for the proton and the electron. No label card overlaps another. A top-right card that would touch the top-left one drops below it, and a bottom-right card that would touch the bottom-left one rises above it. The $\overline{B}$ tag clears the cards, canvas text is 14 px, and there are no page errors.
 
 ## Polish
-1. [Minor] At 390 the dropped $B_0$/$B_\max$ card sits close to the $\overline{B}$ tag and to the particle's arrows when the particle is near the right end. Their tags stay readable. Placing the dropped card at the lower right, above the reflections card, would keep it clear of the orbit.
+1. [Minor] At 360–390 the moving tags still crowd the particle in some frames. $\overline{F}$ and $\overline{v}$ sit on each other's arrows near the right mirror, $\overline{F}$ touches the $r$ tag in the uniform view, and $\overline{F}_E$/$\overline{F}_B$ bunch together with the electric field on. They stay readable. Treat the arrows themselves as obstacles for the tags.
 2. [Minor] Figure `lorentz`: the upper $\overline{v}$ label now sits on a ⊗ field symbol ("⊗v"). Remove that one symbol, or move the label 10 units up.
 3. [Minor] Uniform view, electron: the grid scale uses an italic μ ("5 $\mu$m"). Use an upright `\mu\text{m}` or `\text{µm}`.
 4. [Minor] The "Electric field" and "Magnetic mirror" checkboxes still sit centred above their labels.
