@@ -1,10 +1,11 @@
-VERDICT: FAIL
-CONTENT-HASH: a8a5be11ce98c4fb
+VERDICT: PASS
+CONTENT-HASH: c5fef9077a48f7ca
 
 ## Blocking
-1. [Major] Simulation, "Field along the particle" view at 390 (my capture of the sim at 390, field-along view) — with the new 14 px text, the two top label cards run into each other: "time slowed down $2 \cdot 10^7$ times" ends right where "$B_\max = 4.0\ \text{T}$ (ends)" starts. It reads "timesB_max", and the cards overlap. The ink boxes in `simState.labels` do not overlap, so the check script misses it, but the cards do. Students read the field ratio here for Experiment 2. Fix in `sim.js` `drawAlong` (the `panel` calls near line 255): when the left and right top cards would overlap, either put the right card ($B_0$, $B_\max$) under the left one, or shorten the strings to "slowed $2 \cdot 10^7$×" and "$B_\max = 4.0\ \text{T}$". Then check at 360 and 390 with the electron as well.
+(none) Fixed in 3735b0fa: in the "Field along the particle" view, the top-right card ($B_0$, $B_\max$) now drops under the top-left card when they would touch. I checked at 360, 390 and 1280, with and without the mirror, for the proton and the electron. No cards overlap, all text is 14 px and readable, and there are no page errors.
 
 ## Polish
+1. [Minor] At 390 the dropped $B_0$/$B_\max$ card sits close to the $\overline{B}$ tag and to the particle's arrows when the particle is near the right end. Their tags stay readable. Placing the dropped card at the lower right, above the reflections card, would keep it clear of the orbit.
 2. [Minor] Figure `lorentz`: the upper $\overline{v}$ label now sits on a ⊗ field symbol ("⊗v"). Remove that one symbol, or move the label 10 units up.
 3. [Minor] Uniform view, electron: the grid scale uses an italic μ ("5 $\mu$m"). Use an upright `\mu\text{m}` or `\text{µm}`.
 4. [Minor] The "Electric field" and "Magnetic mirror" checkboxes still sit centred above their labels.

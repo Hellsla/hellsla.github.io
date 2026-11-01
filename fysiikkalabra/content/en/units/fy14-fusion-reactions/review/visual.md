@@ -6,8 +6,7 @@ CONTENT-HASH: af00c5738a515fa3
 
 ## Polish
 1. [Minor] Figure `barrier`: "strong force" now sits right of the well wall, at $r \approx 4$–$9\ \text{fm}$, under the tunnelling arrow. There it reads as a label for the region where the electric force dominates. Fix: put it inside or below the green well (left of $r = 3\ \text{fm}$, under the axis), or add a short leader to the well.
-2. [Minor] Reaction component, details box (shared `fx/reaction.js`, 390 px): the line "$= 0.018883\ \text{u} \cdot 931.494\ \text{MeV/u}$" loses its final "u" at the right edge. Fix: break before "$\cdot\ 931.494$".
-3. [Minor] Reaction component, step 4: the labels "$^{4}_{2}\text{He}$" and "$^{1}_{0}\text{n}$" sit almost touching under the flash. Fix: spread them about 10 units apart.
+2. Resolved after the shared `fx/reaction.js` update, rechecked at 360, 390 and 1280: the "MeV/u" line and the $m_\alpha$ line now break and fit, and the step-4 products have a clear gap.
 
 The earlier items are resolved:
 - No duplicate scales heading.
@@ -28,4 +27,4 @@ The earlier items are resolved:
 illustrations 4 · typography 4 · English/French 4 · accessibility 4
 
 ## Shared issues
-- `fx/reaction.js`: Polish 2 and 3.
+- none open.

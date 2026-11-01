@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: a8a5be11ce98c4fb
+CONTENT-HASH: c5fef9077a48f7ca
 
 Pedagogy re-review of fy14-magnetic-confinement (2026-11-01), after "Fixes after review" (commit cf5a329b) and the simulation fix (commit 7561f2b5). Rebuilt. Playwright at 390 px:
 - exp-mirror records 10° and 20° as *escapes*, 40° and 80° as *trapped*;
@@ -25,3 +25,5 @@ None.
 - The conclusion is gated on both experiments, with a word bank and starters.
 - The single-particle model is separated from collective plasma behaviour.
 - teacher.md has plans for fast pairs and for running out of time.
+
+Hash update (2026-11-01): the only change since this review is the placement of the canvas label cards in `assets/sims/fy14/magnetic/sim.js` (commit 3735b0fa). It is layout only and does not change the pedagogy.

@@ -1,0 +1,333 @@
+{
+ "version": 1,
+ "contribution": "The last unit of the French chapter: beginners read an original A2–B1 news text about the WEST record at Cadarache and the ITER worksite, discover that partial comprehension is possible through names, numbers, look-alike words in English, Swedish and Finnish, word endings and context, learn the common false friends (actuel, expérience, milliard), and transfer the strategies to a second short text.",
+ "learn": [
+  "find the topic and the main facts of a short French news text without a dictionary.",
+  "use look-alike words in English, Swedish and Finnish, word endings and the context to work out new words.",
+  "recognise false friends: French words that look like English ones but mean something else."
+ ],
+ "prior": [
+  "The CEA, Cadarache and ITER (chapter *At a research centre in Provence*)",
+  "Numbers to 100 (chapter *Numbers and prices*)"
+ ],
+ "activities": [
+  {
+   "id": "hook",
+   "stage": "herata",
+   "type": "hook",
+   "text": "On the last morning of your (imagined) visit, you have breakfast in a café in Manosque. Someone has left the regional newspaper on the table. On the science page you see the words *<span lang=\"fr\">tokamak</span>*, *<span lang=\"fr\">Cadarache</span>* and *<span lang=\"fr\">ITER</span>*. You have studied French for a few weeks, and you have no dictionary with you.",
+   "question": "Can you find out what the article says, and how?"
+  },
+  {
+   "id": "think-help",
+   "stage": "herata",
+   "type": "text",
+   "text": "<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>When I read a text in a language I do not know well, I first …</li><li>A French word I understood because of English or Swedish is …</li><li>I think I will understand …, but not …</li></ul></div>"
+  },
+  {
+   "id": "think",
+   "stage": "herata",
+   "type": "explain",
+   "title": "Think about it: reading in a language you hardly know",
+   "prompt": "Have you ever understood something in a language you have not studied: a sign abroad, a menu, a German or Spanish product label? What helped you? Then look at these French words and say what they mean: <span lang=\"fr\">la température</span>, <span lang=\"fr\">un réacteur</span>, <span lang=\"fr\">international</span>, <span lang=\"fr\">la physique</span>, <span lang=\"fr\">un kilomètre</span>.",
+   "pair": "Discuss with a partner for three minutes, then write your answer together.",
+   "model": "On a trip we understood signs and menus because many words looked like English or Swedish words, because of pictures and numbers, and because we knew what kind of text it was (a timetable, a menu). The French words mean temperature, a reactor, international, physics and a kilometre: they look almost the same in English, and Swedish and Finnish have similar words (*temperatur*, *reaktor*, *fysiikka*, *kilometri*).",
+   "criteria": [
+    "We name at least two things that help: look-alike words, numbers, pictures, the type of text.",
+    "We give the meaning of the five French words.",
+    "We notice that Swedish or Finnish have similar words too."
+   ]
+  },
+  {
+   "id": "pred-gist",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Prediction 1: how much will you understand?",
+   "prompt": "You will read a French news text of about 190 words, with no dictionary and five minutes of time. How much do you think you will understand? Commit now; your reading and the theory summary will show you.",
+   "justify": true,
+   "reveal": {
+    "after": "theory-why"
+   },
+   "choices": [
+    {
+     "text": "The topic and the main facts",
+     "correct": true,
+     "feedback": "This is what most beginners manage: names, numbers and international words carry the topic and most of the facts. The theory shows why: thousands of French words have relatives in English, Swedish and Finnish."
+    },
+    {
+     "text": "Almost nothing: I hardly speak French",
+     "feedback": "Speaking and reading are different skills. Names, dates, numbers and look-alike words (*<span lang=\"fr\">record</span>*, *<span lang=\"fr\">physiciens</span>*, *<span lang=\"fr\">projet</span>*) give most readers the topic and the main facts even after a few weeks of French."
+    },
+    {
+     "text": "Every sentence, word by word",
+     "feedback": "A few words have no look-alike (*<span lang=\"fr\">aimants</span>*, *<span lang=\"fr\">chantier</span>*) and some grammar is new, so word-by-word comprehension is unlikely. But you do not need it: the topic and the main facts are enough."
+    },
+    {
+     "text": "Only the names of people and places",
+     "feedback": "You will understand much more than names: numbers, dates and many look-alike words (*<span lang=\"fr\">record</span>*, *<span lang=\"fr\">physiciens</span>*, *<span lang=\"fr\">projet</span>*) carry the facts."
+    }
+   ]
+  },
+  {
+   "id": "pred-actuel",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Prediction 2: a look-alike",
+   "prompt": "The text ends with <span lang=\"fr\">« Selon le calendrier actuel … »</span>. What does *<span lang=\"fr\">actuel</span>* mean? Commit now; the theory summary will show you.",
+   "justify": true,
+   "reveal": {
+    "after": "theory-false"
+   },
+   "choices": [
+    {
+     "text": "current, present",
+     "correct": true,
+     "feedback": "Right: *<span lang=\"fr\">actuel</span>* is a false friend. <span lang=\"fr\">Le calendrier actuel</span> is the current schedule, and <span lang=\"fr\">actuellement</span> means *currently*, not *actually*."
+    },
+    {
+     "text": "actual, real",
+     "feedback": "This is the trap: *<span lang=\"fr\">actuel</span>* looks like *actual*, but it means *current*. <span lang=\"fr\">Le calendrier actuel</span> is the current schedule."
+    },
+    {
+     "text": "active, busy",
+     "feedback": "*<span lang=\"fr\">Actuel</span>* is not related to *active* here: it means *current*. <span lang=\"fr\">Le calendrier actuel</span> is the schedule as it is now."
+    },
+    {
+     "text": "accurate, exact",
+     "feedback": "A schedule should be accurate, but that is not what the word says. *<span lang=\"fr\">Actuel</span>* means *current*: the schedule as it is now."
+    }
+   ]
+  },
+  {
+   "id": "skim",
+   "stage": "tutki",
+   "type": "text",
+   "title": "Step 1: a first look (two minutes)",
+   "text": "Read only the title, the place, the names and every number. Do not read the sentences yet. Then answer the question below.\n\n<div class=\"wordbank\" lang=\"fr\"><h4>Fusion nucléaire : record de durée à Cadarache</h4><p><em>Saint-Paul-lez-Durance (Bouches-du-Rhône).</em> Le 12 février 2025, les physiciens du CEA ont battu un record mondial. Dans leur tokamak WEST, installé au centre de Cadarache, ils ont maintenu un plasma pendant 1 337 secondes, soit plus de 22 minutes. C'est 25 % de plus que le record précédent, obtenu en Chine quelques semaines plus tôt.</p><p>Un plasma est un gaz très chaud, à plusieurs dizaines de millions de degrés. Aucun matériau ne résiste à cette température : la machine utilise donc des aimants très puissants pour garder le plasma loin des parois.</p><p>Selon les chercheurs, ce résultat est important pour ITER, le grand projet international construit juste à côté. Sept membres participent au projet : la Chine, l'Union européenne, l'Inde, le Japon, la Corée, la Russie et les États-Unis. Leur objectif : produire 500 mégawatts de puissance de fusion avec seulement 50 mégawatts de chauffage. Attention : ITER ne produira pas d'électricité. C'est une expérience scientifique.</p><p>Le chantier avance. En juillet 2026, les équipes ont installé le sixième des neuf modules qui forment le cœur de la machine, avec presque six mois d'avance sur le calendrier. Selon le calendrier actuel, les premières expériences scientifiques commenceront en 2034.</p></div>\n\n*The text was written for this course in the style of a newspaper; the facts were checked against the CEA, EUROfusion and ITER in November 2026.*"
+  },
+  {
+   "id": "gist",
+   "stage": "tutki",
+   "type": "choice",
+   "title": "What is the text about?",
+   "prompt": "From the title, the names and the numbers only: what is the text about?",
+   "choices": [
+    {
+     "text": "A fusion record and ITER's progress",
+     "correct": true,
+     "feedback": "Yes. <span lang=\"fr\">Record</span>, <span lang=\"fr\">WEST</span>, <span lang=\"fr\">1 337 secondes</span>, <span lang=\"fr\">ITER</span>, <span lang=\"fr\">2026</span> and <span lang=\"fr\">2034</span> already give you the topic: a long plasma at Cadarache and the ITER worksite."
+    },
+    {
+     "text": "A new fusion power station in Provence",
+     "feedback": "The text speaks of a tokamak and of ITER, which *<span lang=\"fr\">ne produira pas d'électricité</span>*. It is a scientific record and a worksite, not a power station."
+    },
+    {
+     "text": "An accident at a research centre",
+     "feedback": "Nothing in the title or the numbers suggests an accident: *<span lang=\"fr\">record</span>*, *<span lang=\"fr\">secondes</span>* and *<span lang=\"fr\">projet</span>* point to a scientific success and a building project."
+    },
+    {
+     "text": "A meeting of seven heads of state",
+     "feedback": "Seven countries and the EU are named, but as ITER's members, not at a meeting. The title speaks of a *<span lang=\"fr\">record</span>* at Cadarache."
+    }
+   ]
+  },
+  {
+   "id": "look",
+   "stage": "tutki",
+   "type": "text",
+   "title": "Step 2: hunt for look-alikes",
+   "text": "Now read the sentences. Underline in your head (or on paper) every word that looks like a word you know in English, Swedish or Finnish. Then work out the words below.\n\n<div class=\"fx\" data-fx=\"match\" id=\"fx-match-lookalike\"><script type=\"application/json\">{\"prompt\": \"What do these words from the text mean? Choose an English meaning for each, then press *Check*. The feedback shows the relatives in English, Swedish and Finnish.\", \"lang_items\": \"fr\", \"options\": [\"physicists\", \"seconds\", \"material\", \"powerful\", \"project\", \"electricity\", \"beaten\", \"schedule\", \"heating\", \"construction site\"], \"items\": [{\"text\": \"les physiciens\", \"answer\": \"physicists\", \"feedback\": \"English *physicists*, Swedish *fysiker*, Finnish *fyysikot*.\"}, {\"text\": \"secondes\", \"answer\": \"seconds\", \"feedback\": \"English *seconds*, Swedish *sekunder*, Finnish *sekunnit*. And 1,337 seconds is just over 22 minutes.\"}, {\"text\": \"aucun matériau\", \"answer\": \"material\", \"feedback\": \"English *material*, Swedish *material*, Finnish *materiaali*. *{fr}Aucun{/fr}* means *no, not any*.\"}, {\"text\": \"très puissants\", \"answer\": \"powerful\", \"feedback\": \"No easy look-alike: the context helps. Magnets that hold a gas of millions of degrees must be strong. *{fr}La puissance{/fr}* is power, as in *{fr}puissance de fusion{/fr}*.\"}, {\"text\": \"le projet\", \"answer\": \"project\", \"feedback\": \"English *project*, Swedish *projekt*, Finnish *projekti*.\"}, {\"text\": \"l'électricité\", \"answer\": \"electricity\", \"feedback\": \"*{fr}-ité{/fr}* = *-ity*: *electricity*, Swedish *elektricitet*.\"}, {\"text\": \"ont battu un record\", \"answer\": \"beaten\", \"feedback\": \"Context: what do you do with a record? You *beat* it. English *battle* and *battery* come from the same French verb, *{fr}battre{/fr}*.\"}, {\"text\": \"le calendrier\", \"answer\": \"schedule\", \"feedback\": \"A look-alike of *calendar* (Swedish *kalender*, Finnish *kalenteri*), but with *six months ahead of*, it means the schedule.\"}, {\"text\": \"le chauffage\", \"answer\": \"heating\", \"feedback\": \"Context: 500 megawatts of fusion power *with only 50 megawatts of …* something you put in. The word is related to *{fr}chaud{/fr}* (hot), which you met in the same text.\"}, {\"text\": \"le chantier\", \"answer\": \"construction site\", \"feedback\": \"Context: *{fr}le chantier avance{/fr}* and teams *installed* modules: a place where something is being built.\"}], \"done\": \"You understood ten words without a dictionary.\"}</script></div>"
+  },
+  {
+   "id": "detail",
+   "stage": "tutki",
+   "type": "text",
+   "title": "Step 3: read for detail",
+   "text": "<div class=\"fx\" data-fx=\"match\" id=\"fx-match-detail\"><script type=\"application/json\">{\"prompt\": \"Read the whole text again. Is each statement true (*vrai*), false (*faux*) or not in the text (*pas dans le texte*)? Then press *Check*.\", \"lang_options\": \"fr\", \"options\": [\"vrai\", \"faux\", \"pas dans le texte\"], \"items\": [{\"text\": \"WEST kept its plasma for more than 22 minutes.\", \"answer\": \"vrai\", \"feedback\": \"*{fr}1 337 secondes, soit plus de 22 minutes{/fr}*.\"}, {\"text\": \"The earlier record was set in Japan.\", \"answer\": \"faux\", \"feedback\": \"*{fr}obtenu en Chine{/fr}*: the earlier record was set in China.\"}, {\"text\": \"WEST is a part of the ITER machine.\", \"answer\": \"faux\", \"feedback\": \"WEST is the CEA's tokamak at Cadarache. ITER is a separate project *{fr}construit juste à côté{/fr}*, next door.\"}, {\"text\": \"ITER has seven members.\", \"answer\": \"vrai\", \"feedback\": \"*{fr}Sept membres participent au projet{/fr}*, and the text names them.\"}, {\"text\": \"ITER will produce electricity for Provence.\", \"answer\": \"faux\", \"feedback\": \"*{fr}ITER ne produira pas d'électricité{/fr}*: it is a scientific experiment.\"}, {\"text\": \"In July 2026, six of the nine core modules were in place.\", \"answer\": \"vrai\", \"feedback\": \"*{fr}le sixième des neuf modules{/fr}*: the sixth of nine.\"}, {\"text\": \"Most people at ITER speak French at work.\", \"answer\": \"pas dans le texte\", \"feedback\": \"The text does not say which languages people speak at work.\"}, {\"text\": \"ITER's experiments will start before 2030.\", \"answer\": \"faux\", \"feedback\": \"*{fr}commenceront en 2034{/fr}*, according to the current schedule.\"}], \"done\": \"You understood the facts of a French news text.\"}</script></div>"
+  },
+  {
+   "id": "theory-why",
+   "stage": "selita",
+   "type": "theory",
+   "sections": [
+    "Why you understand more than you think"
+   ]
+  },
+  {
+   "id": "theory-false",
+   "stage": "selita",
+   "type": "theory",
+   "sections": [
+    "False friends"
+   ]
+  },
+  {
+   "id": "theory-summary",
+   "stage": "selita",
+   "type": "theory",
+   "sections": [
+    "Tiivistelmä"
+   ]
+  },
+  {
+   "id": "back-to-predictions",
+   "stage": "selita",
+   "type": "reflect",
+   "title": "Back to your predictions",
+   "prompt": "Compare your two predictions with what happened when you read, and with the theory. Then answer the opening question in English in one or two sentences: why can you understand a French news text about fusion after only a few weeks of French?",
+   "predictions": [
+    "pred-gist",
+    "pred-actuel"
+   ]
+  },
+  {
+   "id": "sort",
+   "stage": "sovella",
+   "type": "text",
+   "title": "Look-alike, false friend or context?",
+   "text": "<div class=\"fx\" data-fx=\"match\" id=\"fx-match-strategy\"><script type=\"application/json\">{\"prompt\": \"How can you work out each word? Sort them, then press *Check*.\", \"lang_items\": \"fr\", \"options\": [\"a look-alike helps\", \"careful: a false friend\", \"no look-alike: use the context\"], \"items\": [{\"text\": \"record\", \"answer\": \"a look-alike helps\", \"feedback\": \"English *record*, Swedish *rekord*, Finnish *rekordi*.\"}, {\"text\": \"physiciens\", \"answer\": \"a look-alike helps\", \"feedback\": \"*Physicists*, Swedish *fysiker*.\"}, {\"text\": \"projet\", \"answer\": \"a look-alike helps\", \"feedback\": \"*Project*, *projekt*, *projekti*.\"}, {\"text\": \"actuel\", \"answer\": \"careful: a false friend\", \"feedback\": \"*{fr}Actuel{/fr}* means current, not actual: *{fr}le calendrier actuel{/fr}* is the current schedule.\"}, {\"text\": \"expérience\", \"answer\": \"careful: a false friend\", \"feedback\": \"In this text *{fr}une expérience scientifique{/fr}* is a scientific experiment, not an experience.\"}, {\"text\": \"aimants\", \"answer\": \"no look-alike: use the context\", \"feedback\": \"They are strong and keep the hot plasma away from the walls: magnets.\"}, {\"text\": \"chantier\", \"answer\": \"no look-alike: use the context\", \"feedback\": \"*{fr}Le chantier avance{/fr}*, and modules are installed: a construction site.\"}, {\"text\": \"parois\", \"answer\": \"no look-alike: use the context\", \"feedback\": \"The plasma must stay away from them inside the machine: the walls.\"}], \"done\": \"You know when to trust a look-alike and when to use the context.\"}</script></div>"
+  },
+  {
+   "id": "summary-help",
+   "stage": "sovella",
+   "type": "text",
+   "title": "Tell a friend what the text says",
+   "text": "<div class=\"wordbank\"><h4>Word bank</h4><p>a record, a plasma, a tokamak, the CEA, Cadarache, ITER, next door, the members, fusion power, heating power, no electricity, a scientific experiment, the worksite, ahead of schedule, research operation</p></div><div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>The text is about …</li><li>On 12 February 2025, …</li><li>The record matters for ITER because …</li><li>The text also says that ITER …</li><li>I understood … because the word looks like …</li></ul></div>"
+  },
+  {
+   "id": "summary",
+   "stage": "sovella",
+   "type": "explain",
+   "title": "Write: the text in English",
+   "prompt": "A friend who does not read French asks what the article says. Write a summary in English in four or five sentences: what happened, where and when, why it matters for ITER, and what the text says about ITER's progress.",
+   "pair": "Tell your partner first, in English, without looking at the text; then write the summary together.",
+   "model": "On 12 February 2025, physicists of the French CEA kept a plasma in their tokamak WEST at Cadarache for 1,337 seconds, more than 22 minutes. This was a world record, 25 % longer than a record set in China a few weeks before. The machine uses strong magnets to keep the very hot plasma away from the walls. The researchers say the result matters for ITER, the international project next door, which aims to produce 500 MW of fusion power from 50 MW of heating but will not produce electricity. In July 2026 six of the nine core modules of ITER were installed, almost six months ahead of schedule, and research operation is planned to start in 2034.",
+   "criteria": [
+    "The summary gives what happened, where and when (WEST, Cadarache, 12 February 2025, over 22 minutes).",
+    "It explains the link to ITER and says that ITER will not produce electricity.",
+    "It includes ITER's progress (six of nine modules in July 2026, start in 2034) with correct numbers.",
+    "The English is clear, and the facts are not changed or invented."
+   ]
+  },
+  {
+   "id": "transfer-text",
+   "stage": "sovella",
+   "type": "text",
+   "title": "A second text: your turn",
+   "text": "Use the five strategies on a second, shorter text, also written for this course. Read it once for the topic, then once for detail.\n\n<div class=\"wordbank\" lang=\"fr\"><h4>Manosque : une école internationale pour les familles d'ITER</h4><p>À Manosque, à une quinzaine de kilomètres d'ITER, une école internationale accueille les enfants des familles qui travaillent sur le projet. Elle a ouvert en 2007 avec 130 élèves de 3 à 18 ans. L'enseignement est bilingue : l'école a six sections linguistiques et une section européenne. La France s'était engagée à créer cette école quand ITER a choisi la Provence.</p></div>"
+  },
+  {
+   "id": "transfer",
+   "stage": "sovella",
+   "type": "explain",
+   "title": "What does the second text say?",
+   "prompt": "Write in English, in two or three sentences, what the second text says. Then list four French words you understood because of a look-alike, and one you worked out from the context.",
+   "model": "In Manosque, about fifteen kilometres from ITER, an international school teaches the children of families who work on the project. It opened in 2007 with 130 pupils aged 3 to 18, teaches in two languages and has six language sections and a European section. France promised to create the school when ITER chose Provence. Look-alikes: <span lang=\"fr\">internationale</span>, <span lang=\"fr\">familles</span>, <span lang=\"fr\">bilingue</span>, <span lang=\"fr\">sections linguistiques</span>, <span lang=\"fr\">européenne</span>. From the context: <span lang=\"fr\">élèves</span> (pupils), because the school has 130 of them, aged 3 to 18.",
+   "criteria": [
+    "I give the topic: an international school in Manosque for ITER families.",
+    "I include at least two facts with numbers (2007, 130 pupils, ages 3–18, six sections).",
+    "I list four look-alike words and one word from the context, with their meaning."
+   ]
+  },
+  {
+   "id": "ext-real",
+   "stage": "sovella",
+   "type": "text",
+   "optional": true,
+   "title": "Extension: real French news",
+   "text": "Find a real French text about fusion or ITER: the French pages of iter.org, the CEA's news, or a French newspaper. Choose a short article or the first paragraph of a longer one. Use the five strategies, write its topic and three facts in English, and note where and when it was published. Tell another pair what you found."
+  },
+  {
+   "id": "check-1",
+   "stage": "tarkista",
+   "type": "choice",
+   "title": "1. A false friend",
+   "prompt": "A French news text says: <span lang=\"fr\">« Actuellement, 5 000 personnes travaillent sur le site. »</span> What does *<span lang=\"fr\">actuellement</span>* mean?",
+   "choices": [
+    {
+     "text": "currently, at present",
+     "correct": true,
+     "feedback": "Yes: *<span lang=\"fr\">actuellement</span>* is a false friend. The sentence says that about 5,000 people work on the site at present."
+    },
+    {
+     "text": "actually, in fact",
+     "feedback": "This is the trap: *<span lang=\"fr\">actuellement</span>* looks like *actually*, but it means *currently*. *Actually* is <span lang=\"fr\">en fait</span> in French."
+    },
+    {
+     "text": "eventually, finally",
+     "feedback": "*<span lang=\"fr\">Actuellement</span>* is about now: *currently*. *Finally* is <span lang=\"fr\">finalement</span>."
+    },
+    {
+     "text": "exactly, precisely",
+     "feedback": "The number is a round figure, but the word means *currently*, at present. *Exactly* is <span lang=\"fr\">exactement</span>."
+    }
+   ]
+  },
+  {
+   "id": "check-2",
+   "stage": "tarkista",
+   "type": "choice",
+   "title": "2. A big number",
+   "prompt": "A French article says that a project costs <span lang=\"fr\">« plusieurs milliards d'euros »</span>. What does *<span lang=\"fr\">un milliard</span>* mean?",
+   "choices": [
+    {
+     "text": "a billion, $10^{9}$",
+     "correct": true,
+     "feedback": "Yes: *<span lang=\"fr\">un milliard</span>* is a thousand million, the English *billion* (Swedish *miljard*, Finnish *miljardi*)."
+    },
+    {
+     "text": "a million, $10^{6}$",
+     "feedback": "A million is <span lang=\"fr\">un million</span>. *<span lang=\"fr\">Un milliard</span>* is a thousand times more: $10^{9}$, a billion."
+    },
+    {
+     "text": "a trillion, $10^{12}$",
+     "feedback": "That is the French *<span lang=\"fr\">un billion</span>*, another false friend. *<span lang=\"fr\">Un milliard</span>* is $10^{9}$, a billion."
+    },
+    {
+     "text": "a thousand, $10^{3}$",
+     "feedback": "A thousand is <span lang=\"fr\">mille</span>. *<span lang=\"fr\">Un milliard</span>* is $10^{9}$, a billion: Swedish *miljard*, Finnish *miljardi*."
+    }
+   ]
+  },
+  {
+   "id": "check-3",
+   "stage": "tarkista",
+   "type": "choice",
+   "title": "3. An unknown word",
+   "prompt": "In a French text you meet *<span lang=\"fr\">les aimants</span>*, and it looks like no word you know. What is the best first step?",
+   "choices": [
+    {
+     "text": "Read on and use the context.",
+     "correct": true,
+     "feedback": "Yes. The sentence says the *<span lang=\"fr\">aimants</span>* are very strong and keep the hot plasma away from the walls: they must be magnets. Context often solves a word."
+    },
+    {
+     "text": "Stop reading until you look it up.",
+     "feedback": "Looking a word up is fine later, but stopping at every word loses the meaning of the text. Read on first: the context shows that *<span lang=\"fr\">aimants</span>* are magnets."
+    },
+    {
+     "text": "Decide it means *aims*, as it looks.",
+     "feedback": "A guess from the spelling alone can mislead: *<span lang=\"fr\">aimants</span>* has nothing to do with *aims*. The context (strong, keeping plasma from the walls) shows they are magnets."
+    },
+    {
+     "text": "Skip the whole paragraph.",
+     "feedback": "Skipping one word can be fine, but not the whole paragraph: it has the key facts. Read on, and the context shows that *<span lang=\"fr\">aimants</span>* are magnets."
+    }
+   ]
+  },
+  {
+   "id": "check-write",
+   "stage": "tarkista",
+   "type": "explain",
+   "title": "4. Write: how I read French",
+   "prompt": "Explain to a classmate who starts French next year how to read a short French text without a dictionary. Name three strategies and give one example of each from today's texts (four to six sentences, in English).",
+   "model": "First read the title, the names and the numbers: *Cadarache*, *WEST*, *12 février 2025* and *1 337 secondes* already tell you that the text is about a record. Then look for words that look like English, Swedish or Finnish words, such as *physiciens* (physicists, *fysiker*) or *projet* (project, *projekti*). When a word looks like nothing you know, read on and use the context: *aimants* keep a very hot plasma away from the walls, so they must be magnets. Be careful with false friends: *actuel* means current, not actual.",
+   "criteria": [
+    "I name three different strategies.",
+    "Each strategy has a correct example from the texts.",
+    "I mention false friends or checking a guess against the context.",
+    "My explanation is clear enough for a beginner to follow."
+   ]
+  }
+ ]
+}

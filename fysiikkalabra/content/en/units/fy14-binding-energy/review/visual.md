@@ -1,32 +1,24 @@
-VERDICT: FAIL
+VERDICT: PASS
 CONTENT-HASH: c4cb2276f3c98102
 
 ## Blocking
-1. [Major] Binding Energy Explorer, *Whole curve* at 390 px (`fx-be-explorer`; shared `fx/binding.js`). Most of the earlier finding is fixed:
-   - $^{56}\text{Fe}$ now stands over the peak.
-   - Nothing is preselected.
-   - The reaction steps are stacked, with no overflow in any of the four reactions.
+(none) The explorer label finding is resolved by the updated `fx/binding.js`, now that point labels are paper cards drawn above the points:
+- $^{4}\text{He}$ sits beside its own point at $A = 4$ and is no longer in the C, N and O cluster.
+- $^{56}\text{Fe}$ marks the peak.
+- $^{2}\text{H}$, $^{92}\text{Kr}$, $^{141}\text{Ba}$ and $^{235}\text{U}$ are fully readable.
+- "fusion" sits below its arrow.
 
-   The helium label is still misleading on a phone. Automatic placement puts "$^{4}\text{He}$" at about $A = 18$, $B/A = 7.3$, inside the cluster of C, N and O points. Those points cover the "4" and the leader line, so the student reads "He" next to nuclei with $A \approx 12$–$16$. Helium-4 is the unit's worked example and the first point the explorer question sends them to. The same happens to the "235" of $^{235}\text{U}$ in the fission view, and to the "f" of "fusion", which sits under a data point. At 1280 the leader line shows and the labels are readable.
-
-   Fix in `binding.js`:
-   - draw the label layer above the points, with a white halo (`paint-order: stroke` or a background box);
-   - on narrow plots, place the He-4 label above and right of its own point (about $A = 8$, $B/A = 7.8$), not in the cluster;
-   - move "fusion" below its arrow, away from the Li and Be points.
+This holds at 360, 390 and 1280. The reaction steps (D–T and U-235) have no display overflow at any of the three widths.
 
 ## Polish
-1. [Minor] The explorer's light-nuclei view and the D–T, D–D and Li-6 reactions are clear at both widths; no change needed. The reaction table now writes "$3 \cdot {}^{1}_{0}\text{n}$": resolved.
+1. [Minor] Explorer at 390: the $^{4}\text{He}$ card covers part of the Li-6 and Li-7 points just below it. Optional: a little transparency (`opacity: .9`) on the cards.
 
 ## Checked
-- Fresh build and captures for this hash (stamp c4cb2276f3c98102).
-- I opened the worked example with all steps at 390: the substitution is split one term per line, and the Given is braced. Answer: $0.0304\ \text{u}$, with a clear significant-figure reason.
-- Ladder and qbars label sizes at 390 and 1280 (smallest 14.3 px).
-- The explorer at 390 and 1280 in the start state and with each of the four reactions. I zoomed the 390 graph.
-- Playwright: no display overflow in the page or the explorer, no label outside the plot, no KaTeX errors, no raw `$`, no console errors.
+- Rebuilt for this hash; the components changed outside the hash.
+- Captured the explorer myself at 360, 390 and 1280, in the start state and with U-235 fission and D–T fusion. The 360 and 390 graphs zoomed ×2.
+- From the earlier pass for this hash: the worked example with all steps at 390, and the ladder and qbars figures.
+- Playwright: no display overflow, no console errors, no KaTeX errors, no raw `$`.
 - Hash unchanged at the end.
 
 ## Scores
-illustrations 3 · typography 4 · English/French 4 · accessibility 3
-
-## Shared issues
-- `fx/binding.js`: the label layer sits under the points and has no halo on narrow plots (Blocking 1).
+illustrations 4 · typography 4 · English/French 4 · accessibility 4

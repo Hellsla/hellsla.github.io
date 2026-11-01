@@ -1,0 +1,70 @@
+{
+ "id": "fy14-fr-lire",
+ "course": "FY14",
+ "chapter": 10,
+ "order": 5,
+ "title": "Reading French news without a dictionary",
+ "description": "Read a short original French news text about a fusion record at Cadarache and the ITER worksite, and discover how much you understand through look-alike words, numbers, names and context.",
+ "kind": "french",
+ "minutes": 75,
+ "subjects": [
+  "french",
+  "english"
+ ],
+ "sources": [
+  {
+   "title": "EUROfusion: World record fusion plasma in Europe (CEA news)",
+   "url": "https://euro-fusion.org/member-news/cea/world-record-fusion-plasma-in-europe/",
+   "checked": "2026-11-01",
+   "note": "WEST at CEA Cadarache held a plasma for 1,337 seconds on 12 February 2025 (plasma 61299), 25 % longer than the record set in China a few weeks earlier; 2 MW of lower hybrid heating."
+  },
+  {
+   "title": "Connaissance des énergies (AFP): Fusion nucléaire, le CEA annonce un record mondial de durée de plasma en France, 18 February 2025",
+   "url": "https://www.connaissancedesenergies.org/afp/fusion-nucleaire-le-cea-annonce-un-record-mondial-de-duree-de-plasma-en-france-250218",
+   "checked": "2026-11-01",
+   "note": "The record on 12 February 2025, announced on 18 February; about 22 minutes; a plasma of several tens of millions of degrees; the earlier record set in China in January. Used only to check the facts: the lesson's text is original."
+  },
+  {
+   "title": "WEST (formerly Tore Supra) (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/WEST_(formerly_Tore_Supra)",
+   "checked": "2026-11-01",
+   "note": "WEST is the CEA's tokamak at Cadarache; 1,337 s on 12 February 2025."
+  },
+  {
+   "title": "ITER Organization: What will ITER do?",
+   "url": "https://www.iter.org/fusion-energy/what-will-iter-do",
+   "checked": "2026-11-01",
+   "note": "500 MW of fusion power from 50 MW of input heating power (Q = 10)."
+  },
+  {
+   "title": "ITER press release: two-thirds of the tokamak core in place, 29 July 2026 (PDF)",
+   "url": "https://www.iter.org/sites/default/files/media/2026-07/2026-07_pr_two-thirds-of-tokamak-core-in-place_0.pdf",
+   "checked": "2026-11-01",
+   "note": "The sixth of nine sector modules lowered into the tokamak pit on 28 July 2026, almost six months ahead of schedule; the last one planned for mid-2027."
+  },
+  {
+   "title": "ITER (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/ITER",
+   "checked": "2026-11-01",
+   "note": "Seven members; 2024 baseline: start of research operation 2034."
+  },
+  {
+   "title": "ITER Organization: ITER France",
+   "url": "https://www.iter.org/about/iter-france",
+   "checked": "2026-11-01",
+   "note": "The PACA International School in Manosque began in 2007 with 130 pupils aged 3 to 18; six language sections and a European section; France committed to bilingual education as host."
+  },
+  {
+   "title": "Nombres en français (Wikipédia): milliard, billion",
+   "url": "https://fr.wikipedia.org/wiki/Nombres_en_fran%C3%A7ais",
+   "checked": "2026-11-01",
+   "note": "French uses the long scale: un milliard = 10^9, un billion = 10^12."
+  },
+  {
+   "title": "False friend (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/False_friend",
+   "checked": "2026-11-01",
+   "note": "Words that look alike in two languages but differ in meaning."
+  }
+ ]
+}
