@@ -376,6 +376,7 @@ def draw(spec, fid, _frame=None):
     """The SVG of one spec (one or two bodies side by side). The physics checks of fbd.FBD run on the true sizes; a
     force much smaller than the largest is drawn at MIN_SHOWN of it (the text alternative then says so). The figure is
     drawn once on a tall canvas, then again cut to what it holds."""
+    global W, H
     bodies = parse(spec)
     two = len(bodies) > 1
     big = max(f[1] for b in bodies for f in b["forces"])
@@ -401,6 +402,7 @@ def draw(spec, fid, _frame=None):
                                                                                    # bodies: a rope turning over a pulley
             hz[mh < mv] = SPLIT * max(mv, mh) / weak
     split = hz[True] != hz[False]
+    small_body = False
     if not two and not split:                                                      # a small force or component keeps a shaft behind its
         parts = []                                                                 # head: the whole figure on a larger scale, still one
         for b in bodies:                                                           # scale (visual audit 2026-11-01)
@@ -412,10 +414,12 @@ def draw(spec, fid, _frame=None):
                     if ang_ is not None:
                         d = math.radians(ang_ - b["axes"]); parts += [abs(size * math.cos(d)), abs(size * math.sin(d))]
         least = min([x for x in parts if x > 1e-9 * big] or [big])
-        scale = max(scale, min(180.0, 32 * big / least) / big)
+        scale = max(scale, min(220.0, 32 * big / least) / big)
+        if least * scale < 31: small_body = True                                    # and a smaller rectangle, so the arrows outgrow it
     shown = lambda size, horiz=False: floor(size * hz[horiz])
     for i, b in enumerate(bodies):
         _body_size()
+        if small_body: W, H = W * 0.7, H * 0.7
         cx = (150 + 300 * i) if two else 300; cy = 230 - shift
         surf = b["surface"]; ang = surf if surf is not None else 0.0
         a_dir = None
@@ -424,7 +428,7 @@ def draw(spec, fid, _frame=None):
         forces, faces = _restore_sums(_forces(b, cx, cy, ang, shown, scale), hz, big)
         short = _short_inside(forces, cx, cy, ang, scale)
         if short:                                                                  # a force from the centre that would end inside the
-            global W, H                                                            # body: a smaller rectangle, the arrows kept to scale
+            # body: a smaller rectangle, the arrows kept to scale
             k = max(0.35, min(1.0, (short - 12) / (H / 2))); W, H = W * k, H * k
             forces, faces = _restore_sums(_forces(b, cx, cy, ang, shown, scale), hz, big)
         approx = approx or any(0 < size * hz[h] < MIN_SHOWN * big for size, h in _probe(b, cx, cy, ang, scale))   # one drawn at the floor
