@@ -1,7 +1,7 @@
 VERDICT: DONE
 
 Unit fy14-global-fusion-explorer, "Global Fusion Explorer" (FY14 chapter 8, order 3). Developer report 2026-11-01.
-Content hash at hand-over: 7e1ae7d3661b6fbd (`python3 scripts/units.py hash fy14-global-fusion-explorer`).
+Content hash at hand-over: 7e1ae7d3661b6fbd; after the shared data and map.js update: ce8f1c5ebc2ecf63 (`python3 scripts/units.py hash fy14-global-fusion-explorer`).
 
 ## Files
 - `unit.json` (kind explorer, 12 sources checked 2026-11-01), `unit.md` (Why, hero, sections Reading, Story, Key idea, Common misconception, Summary), `inquiry.json` (25 activities), `teacher.md`; `lessons/units/fy14-global-fusion-explorer/figures.py` (hero: the Earth with glowing sites joined by arcs; no text).
@@ -26,3 +26,12 @@ units.py check OK; check_layout 360 and 1280 OK; screenshot.py captures looked a
 4. **facilities.json, compass**: start 1989 and "Built at Culham (1989), restarted in Prague in 2006"; Wikipedia's COMPASS article gives 1992–2002 in the UK and transfer to Prague in autumn 2004 (operation in Prague from 2006). Check the Culham start year (COMPASS-C/-D) and add the transfer year.
 5. **facilities.json, coverage**: no 1960s–70s machines outside the US/UK/USSR (e.g. France's TFR at Fontenay-aux-Roses, 1973), so the 1975 view shows only the US and the USSR. Adding a few verified European and Japanese machines of the 1970s would make the year filter tell the history more fairly.
 6. **map.js, panel focus on a phone**: when a list button is pressed, `panel.focus()` scrolls the panel under the sticky stage bar, hiding its first line at 390 px. Proposed: `scroll-margin-top` on `.fx-map-panel` (units.css) equal to the bar height.
+
+## Update after the shared data fix (2026-11-01)
+facilities.json and map.js changed (retired machines with real end years, unknown ends counted to `last_seen` or start + 10, T-3 from 1962, COMPASS split into Culham 1989–2002 and Prague 2008–2021, TFR and Pulsator added). Shared issues 1, 2, 4 and 5 above are resolved; issue 3 was resolved by dropping `country_then`.
+- Counts recomputed in Python with the new `live()` rule and checked in the browser: 63 facilities in 14 countries; before 1970 in 3 countries; 1958: 6 in 3; 1963: 6, 1964: 4 (Model A and Perhapsatron leave after start + 10); 1970: T-3 and ST; 1973: ST, TFR, Pulsator; 1985: 8 in 6 (TFR, T-10, PLT, ASDEX, TEXTOR, TFTR, JET, JT-60); 2026: 24 in 12 (Canada in, Italy out), equal to status Operating.
+- Rewritten: Reading (unknown end years are counted ten years or to `last_seen`, the panel note says which; COMPASS's two records), missions 2–5 (watch Model A leave after 1963, the 1973 newcomers, year 2026, COMPASS search), findings and check-write models, find-error (now: the explorer is a selection; IPP founded 1960, first listed machine Pulsator 1973; source added to unit.json), check-2 (Model A counted only to 1963), Story (TFR and Pulsator 1973; 24 facilities in 12 countries), unit.json note (63), teacher.md counts and difficulties.
+- Rechecked: units.py check, build, check_layout 360/1280 OK, screenshots, Playwright (predictions, 7 choices, models after writing, year filter at 1958/1963/1964/1965/1970/1973/1985/2026, COMPASS search, Model A panel note, `#f-jet` opens JET; only the OSM tile requests fail).
+
+New shared issue:
+7. **facilities.json, country_then for TEXTOR and W7-AS**: with `country_then` dropped, the 1985 list shows ASDEX as "West Germany (today Germany)" but TEXTOR (Jülich, also West Germany in 1985) as plain "Germany", so students may count two countries. The unit counts 6 and teacher.md explains it. A per-period label (or a note "West Germany until 1990") would make the list consistent.

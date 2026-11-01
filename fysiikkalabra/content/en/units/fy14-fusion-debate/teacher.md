@@ -1,11 +1,11 @@
 ## Timing (75 minutes)
 
 - **0–7 min, Think about it.** Read the hook; the review question; each student writes a first opinion (keep it for the end).
-- **7–10 min, Predict.** The two predictions (ITER's cost growth, private investment), committed with a reason; feedback opens when the student reaches the evidence cards.
+- **7–10 min, Predict.** The two predictions (how large the public share of private fusion money is, card E; where the company behind a company claim came from, card I), committed with a reason. They are new questions: the society unit already covered ITER's cost and the arrival of fusion electricity; feedback opens when the student reaches the evidence cards.
 - **10–24 min, Investigate.** Groups of four read the nine evidence cards (two or three cards each, then share), sort them, and agree on the strongest card for each side. The video task is optional (homework).
 - **24–30 min, Theory summary.** Claim–evidence–reasoning, the roles and the order of the debate, the debate-phrase match. Hand out roles now.
 - **30–42 min, Apply: preparation.** Teams prepare three arguments and the opening speech; fact-checkers list the key numbers and dates of every card; judges read the criteria. The rebuttal choice is done by everyone in two minutes.
-- **42–63 min, The debate.** First vote (1 min), opening speeches (two of 2 min), rebuttals (two of 2 min), open floor (6 min), fact-check report (2 min), closing speeches (two of 90 s), second vote and scores (2 min).
+- **42–63 min, The debate.** 21 minutes: first vote (1 min), two opening speeches (2 min each), two rebuttals (2 min each), open floor (5 min), fact-check report (2 min), two closing speeches (90 s each), second vote and scores (2 min).
 - **63–75 min, Check your understanding.** Three checks, the individual position paragraph (finish as homework if needed), the French corner.
 
 **Roles for a class of 24.** Chair (the teacher or a confident student), three speakers in each team, 2 fact-checkers, 15–16 judges. With a large class, run two parallel debates in two rooms, or let each team have three back-room researchers who pass notes to the speakers. Give roles regardless of students' own opinions: arguing the other side is part of the learning.
@@ -13,6 +13,8 @@
 **Fast groups.** Groups that finish sorting early watch the optional video (about fission) and do its source-evaluation task, or prepare the questions they will ask in the open floor. Fast teams in preparation write the rebuttal to the other side's probable strongest card (F for the proposition, A for the opposition).
 
 **Running out of time.** Drop the open floor to 3 minutes and the rebuttals to 90 seconds; keep the fact-check report, which is where the physics is assessed. The final position paragraph can be homework. If the class has only one lesson, skip the video entirely.
+
+**Chair's script.** *"The motion is: public money should be spent on fusion research. Please vote now."* — *"I call the first speaker for the motion. You have two minutes."* — *"Thank you. Time is up; please finish your sentence."* — *"The floor is open. Please raise your hand; questions must name a card."* — *"I call the fact-checkers to report."* — *"Please vote again. Did anyone change their mind, and which card did it?"* The same phrases are on the page as sentence starters.
 
 ## Organisation and preparation
 - Print the nine evidence cards (or let teams use one device for the cards and another for notes). A timer visible to all (phone or projector).

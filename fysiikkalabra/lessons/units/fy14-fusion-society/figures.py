@@ -13,6 +13,7 @@ SOLAR, SOLAR_EDGE = "#1f4e8c", "#0b2547"
 CONCRETE, CONCRETE_DARK = "#d9d4c7", "#a8a191"
 GRASS, GRASS_DARK = "#8db36b", "#5f8a45"
 VIOLET, VIOLET_LIGHT = "#7048e8", "#e5dbff"
+NEUTRON = "#0b7285"
 
 
 def solar_panel(f, x, y, w=70, h=34):
@@ -84,33 +85,33 @@ def hero():
 def cycle():
     f = Fig("fy14fs-cycle", 470, "Diagram of the fuel cycle of a deuterium–tritium fusion power plant. In the centre, "
             "a plasma ring where a deuterium nucleus and a tritium nucleus fuse into a helium-4 nucleus and a neutron. "
-            "Deuterium comes in from water on the left. The neutron flies out of the plasma into the surrounding green "
-            "blanket that contains lithium-6. There the neutron and lithium-6 make a new tritium nucleus and a helium-4 "
-            "nucleus, as the equation under the blanket says. A red arrow carries the new tritium back to the plasma. "
-            "Heat from the blanket goes out to the right.", width=600, size=28)
+            "Deuterium comes in from water on the left (blue arrow). The neutron (teal arrow) flies out of the plasma into "
+            "the surrounding green blanket that contains lithium-6. There the neutron and lithium-6 make a new tritium "
+            "nucleus and a helium-4 nucleus, as the equation under the blanket says. A red arrow carries the new tritium "
+            "back to the plasma. Heat from the blanket goes out to the right.", width=600, size=28)
     f.add(f'<ellipse cx="320" cy="190" rx="200" ry="150" fill="{GOOD_LIGHT}" stroke="{GOOD}" stroke-width="3"/>')
     f.add(f'<ellipse cx="320" cy="190" rx="140" ry="82" fill="{VIOLET_LIGHT}" stroke="{VIOLET}" stroke-width="3"/>')
     f.tex(320, 140, r"\text{plasma}", "middle", VIOLET)
-    f.tex(320, 192, r"\text{D} + \text{T} \to {}^{4}\text{He} + \text{n}", "middle")
+    f.tex(320, 192, r"\text{D} + \text{T} \to {}^{4}_{2}\text{He} + \text{n}", "middle")
     f.tex(320, 60, r"\text{blanket}", "middle", GOOD)
-    # the neutron flies into the blanket
-    f.arrow(390, 222, 470, 290, COLD, 3)
-    f.tex(476, 262, r"\text{n}", "start", COLD)
+    # the neutron flies into the blanket and stops inside it
+    f.arrow(388, 230, 440, 278, NEUTRON, 3)
+    f.tex(452, 240, r"\text{n}", "start", NEUTRON)
     # the bred tritium returns to the plasma
-    f.path("M210,300 C160,280 168,240 196,226", stroke=HOT, w=3)
-    f.arrow(190, 230, 202, 222, HOT, 3)
-    f.tex(196, 312, r"\text{T}", "end", HOT)
+    f.path("M226,300 C176,286 176,250 200,234", stroke=HOT, w=3)
+    f.arrow(194, 240, 206, 230, HOT, 3)
+    f.tex(176, 312, r"\text{T}", "end", HOT)
     # deuterium from water
     f.rect(4, 86, 92, 44, COLD_LIGHT, COLD, 2, 4)
     f.tex(50, 108, r"\text{water}", "middle")
     f.arrow(96, 118, 186, 170, COLD, 3)
-    f.tex(150, 120, r"\text{D}", "middle", COLD)
+    f.tex(158, 112, r"\text{D}", "middle", COLD)
     # heat out to the right
     f.block_arrow(520, 190, 594, 190, HEAT_LIGHT, 18, 34, 18)
     f.tex(596, 150, r"\text{heat}", "end", HEAT)
     # the breeding reaction under the blanket
     f.tex(300, 400, r"\text{in the blanket:}", "middle", GOOD)
-    f.tex(300, 440, r"\text{n} + {}^{6}\text{Li} \to \text{T} + {}^{4}\text{He}", "middle", GOOD)
+    f.tex(300, 440, r"\text{n} + {}^{6}_{3}\text{Li} \to \text{T} + {}^{4}_{2}\text{He}", "middle", GOOD)
     return f.svg()
 
 

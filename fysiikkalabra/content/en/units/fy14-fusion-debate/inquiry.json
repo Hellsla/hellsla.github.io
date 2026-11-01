@@ -65,62 +65,62 @@
    ]
   },
   {
-   "id": "pred-cost",
+   "id": "pred-public",
    "stage": "ennusta",
    "type": "choice",
-   "title": "Prediction 1: ITER's cost",
-   "prompt": "When ITER was agreed in 2006, its cost was estimated at about $5.9$ billion euros. How do later estimates of its cost compare?",
+   "title": "Prediction 1: whose money?",
+   "prompt": "By July 2026, private fusion companies had raised USD 14.24 billion in total. About how much of this came from **public** sources (governments and public agencies)?",
    "justify": true,
    "reveal": {
     "after": "theory-cards"
    },
    "choices": [
     {
-     "text": "They are about the same as in 2006.",
-     "feedback": "Card F shows a large rise: later estimates are $18\\text{–}22$ billion euros, three to four times the 2006 figure. First-of-a-kind megaprojects often grow in cost."
-    },
-    {
-     "text": "They are about twice the 2006 estimate.",
-     "feedback": "The growth was larger: $18 : 5.9 \\approx 3.1$ and $22 : 5.9 \\approx 3.7$, so three to four times (card F)."
-    },
-    {
-     "text": "They are about three to four times as high.",
+     "text": "About USD 1 billion, under a tenth",
      "correct": true,
-     "feedback": "Right. Card F: $18\\text{–}22$ billion euros against $5.9$ billion, a factor of $3.1\\text{–}3.7$. Both teams will use this: as a warning, or as the price of a first-of-a-kind machine."
+     "feedback": "Right. Card E: about USD 0.98 billion of USD 14.24 billion, about $7\\ \\%$. The rest came from private investors. Both teams can use this: investors pay most of the bill, but the companies still ask for government support."
     },
     {
-     "text": "They are about ten times as high.",
-     "feedback": "That would be about $59$ billion euros. The ITER Organization disputes such high outside estimates; the figures on card F are $18\\text{–}22$ billion euros, three to four times the 2006 estimate."
+     "text": "About USD 7 billion, about half",
+     "feedback": "Card E gives much less: about USD 0.98 billion, about $7\\ \\%$ of the total. Most of the money of fusion companies comes from private investors."
+    },
+    {
+     "text": "About USD 13 billion, almost all",
+     "feedback": "The opposite: private investors gave about USD 13.26 billion and public sources only about USD 0.98 billion (card E). Public money for fusion goes mainly to public laboratories and to ITER, not to companies."
+    },
+    {
+     "text": "Nothing: companies use only private money",
+     "feedback": "Card E shows about USD 0.98 billion of public money, about $7\\ \\%$. Governments also give companies milestone-based grants, as card I shows for Commonwealth Fusion Systems."
     }
    ]
   },
   {
-   "id": "pred-private",
+   "id": "pred-origin",
    "stage": "ennusta",
    "type": "choice",
-   "title": "Prediction 2: private money",
-   "prompt": "Private fusion companies also raise money from investors. How much did fusion companies raise in the one year to July 2026, according to their industry association?",
+   "title": "Prediction 2: where do companies come from?",
+   "prompt": "Commonwealth Fusion Systems is one of the best-funded fusion companies; it builds the SPARC tokamak in Massachusetts. Where did the company come from?",
    "justify": true,
    "reveal": {
     "after": "theory-cards"
    },
    "choices": [
     {
-     "text": "About USD 45 million",
-     "feedback": "Card E gives a hundred times more: USD 4.48 billion in one year, the largest amount yet, and USD 14.24 billion in total."
-    },
-    {
-     "text": "About USD 450 million",
-     "feedback": "Ten times more: USD 4.48 billion in the year to July 2026 (card E). Private investment in fusion has grown fast."
-    },
-    {
-     "text": "About USD 4.5 billion",
+     "text": "A spin-off of a university laboratory",
      "correct": true,
-     "feedback": "Right. Card E: USD 4.48 billion in the year to July 2026, USD 14.24 billion in total, of which about USD 0.98 billion came from public sources. Remember that these are amounts raised, not results."
+     "feedback": "Right. Card I: it was founded in 2018 as a spin-off from MIT's Plasma Science and Fusion Center, where the Alcator C-Mod tokamak had run for 25 years with US government money. The proposition will use this: public research created the company."
     },
     {
-     "text": "About USD 45 billion",
-     "feedback": "Too much: the whole industry had raised USD 14.24 billion in total by July 2026, and USD 4.48 billion of it in the last year (card E)."
+     "text": "The research department of an oil company",
+     "feedback": "An oil company (Eni) was an early investor, but the company itself came from a university: it is a 2018 spin-off of MIT's Plasma Science and Fusion Center (card I)."
+    },
+    {
+     "text": "A former nuclear weapons laboratory",
+     "feedback": "Some fusion research is done at weapons laboratories, such as NIF, but this company is a 2018 spin-off of MIT's Plasma Science and Fusion Center (card I)."
+    },
+    {
+     "text": "A start-up of investors with no laboratory",
+     "feedback": "Investors pay for it today, but its knowledge came from a university laboratory: it began in 2018 as a spin-off of MIT's Plasma Science and Fusion Center (card I)."
     }
    ]
   },
@@ -137,7 +137,7 @@
    "stage": "tutki",
    "type": "text",
    "title": "Sort the evidence",
-   "text": "Decide which side each card supports best. You will defend your choices in the debate.\n\n<div class=\"fx\" data-fx=\"match\" id=\"fx-fd-sort\"><script type=\"application/json\">{\"prompt\": \"Which side of the motion does each card support best? Some cards can be used by both teams.\", \"options\": [\"for more public money\", \"against more public money\", \"could support either side\"], \"items\": [{\"text\": \"Card A: Records in the laboratory\", \"answer\": \"for more public money\", \"feedback\": \"Measured records show that the science works and is improving: a strong argument that more research money is well spent. The opposition may reply that records are not electricity.\"}, {\"text\": \"Card B: The fuel\", \"answer\": \"for more public money\", \"feedback\": \"Fuel that lasts for centuries is a reason to invest in fusion. Note the source: the lithium estimate comes from the ITER Organization, which is not neutral.\"}, {\"text\": \"Card C: Waste and safety\", \"answer\": \"for more public money\", \"feedback\": \"No long-lived high-level waste and no runaway reaction are real advantages over fission. The opposition can still point out that the neutrons activate the machine.\"}, {\"text\": \"Card D: A changing electricity system\", \"answer\": \"could support either side\", \"feedback\": \"Both sides can use it. The proposition: a grid with much wind and solar needs firm low-carbon power, which fusion could give. The opposition: renewables are already growing fast without fusion.\"}, {\"text\": \"Card E: Private money\", \"answer\": \"could support either side\", \"feedback\": \"Both sides can use it. The proposition: investors believe in fusion, and the companies still ask for government support. The opposition: if private money is flowing, the state can spend its money elsewhere.\"}, {\"text\": \"Card F: ITER's cost and schedule\", \"answer\": \"against more public money\", \"feedback\": \"Costs that grew about three to four times and a schedule that keeps moving are the opposition's strongest facts. The proposition may reply that ITER is a first-of-a-kind machine.\"}, {\"text\": \"Card G: Gain is not electricity\", \"answer\": \"against more public money\", \"feedback\": \"No device has delivered electricity yet: an argument that fusion is still far from paying back. It also warns both teams never to present gain as electricity.\"}, {\"text\": \"Card H: The climate clock\", \"answer\": \"against more public money\", \"feedback\": \"Fusion plants planned for the 2040s cannot help with the cuts needed by 2030 and 2050, so money may do more elsewhere. The proposition can reply that the world will need energy after 2050 too.\"}, {\"text\": \"Card I: From public laboratory to company\", \"answer\": \"for more public money\", \"feedback\": \"Public research created the knowledge on which today's companies build. The argument: without public money there would be no private fusion industry.\"}], \"done\": \"All sorted. Notice that the strongest cards for each side are results (A, F, G), and that two cards (D and E) need reasoning to decide which side they help.\"}</script></div>"
+   "text": "Decide which side each card supports best. You will defend your choices in the debate.\n\n<div class=\"fx\" data-fx=\"match\" id=\"fx-fd-sort\"><script type=\"application/json\">{\"prompt\": \"Which side of the motion does each card support best? Some cards can be used by both teams.\", \"options\": [\"for more public money\", \"against more public money\", \"could support either side\"], \"items\": [{\"text\": \"Card A: Records in the laboratory\", \"answer\": \"for more public money\", \"feedback\": \"Measured records show that the science works and is improving: a strong argument that more research money is well spent. The opposition may reply that records are not electricity.\"}, {\"text\": \"Card B: The fuel\", \"answer\": \"for more public money\", \"feedback\": \"Fuel that lasts for centuries is a reason to invest in fusion. Note the source: the lithium estimate comes from the ITER Organization, which is not neutral.\"}, {\"text\": \"Card C: Waste and safety\", \"answer\": \"for more public money\", \"feedback\": \"Mainly for: no long-lived high-level waste and no runaway reaction are real advantages over fission. If you chose *either*, your reasoning is fair: the opposition can point out that the neutrons still activate the machine. But the card's facts favour fusion.\"}, {\"text\": \"Card D: A changing electricity system\", \"answer\": \"could support either side\", \"feedback\": \"Both sides can use it. The proposition: a grid with much wind and solar needs firm low-carbon power, which fusion could give. The opposition: renewables are already growing fast without fusion.\"}, {\"text\": \"Card E: Private money\", \"answer\": \"could support either side\", \"feedback\": \"Both sides can use it. The proposition: investors believe in fusion, and the companies still ask for government support. The opposition: if private money is flowing, the state can spend its money elsewhere.\"}, {\"text\": \"Card F: ITER's cost and schedule\", \"answer\": \"against more public money\", \"feedback\": \"Construction estimates that grew into $18\\\\text{–}22$ billion euros for construction and operation, and a schedule that keeps moving, are the opposition's strongest facts. The proposition may reply that ITER is a first-of-a-kind machine.\"}, {\"text\": \"Card G: Gain is not electricity\", \"answer\": \"against more public money\", \"feedback\": \"No device has delivered electricity yet: an argument that fusion is still far from paying back. It also warns both teams never to present gain as electricity.\"}, {\"text\": \"Card H: The climate clock\", \"answer\": \"against more public money\", \"feedback\": \"Fusion is not planned to deliver electricity in time for 2030, and even the public prototype STEP targets 2040, so climate plans cannot count on it for 2050; money may do more elsewhere. The proposition can reply that the world will need energy after 2050 too.\"}, {\"text\": \"Card I: From public laboratory to company\", \"answer\": \"for more public money\", \"feedback\": \"Public research created the knowledge on which today's companies build. The argument: without public money there would be no private fusion industry.\"}], \"done\": \"All sorted. Notice that the strongest cards rest on documented facts: A (measured results), F (a documented history of official estimates and schedule changes) and G (measured energies and ITER's design). Two cards (D and E) need reasoning to decide which side they help.\"}</script></div>"
   },
   {
    "id": "strongest-help",
@@ -152,7 +152,7 @@
    "title": "Discuss: the strongest card for each side",
    "pair": "Group work in fours: two of you look for the proposition's best card, two for the opposition's; then compare.",
    "prompt": "Discuss in your group, then write four sentences. Which card is the strongest for each side, and why? Which card is the weakest, and why? Use the words *result*, *plan* or *claim* at least once.",
-   "model": "The strongest card for the proposition is card A, because it reports measured results: JET's $69\\ \\text{MJ}$ in 2023 and NIF's $3.15\\ \\text{MJ}$ in 2022 show that the science is improving. The strongest card for the opposition is card F, because ITER's cost has grown from $5.9$ to $18\\text{–}22$ billion euros, which is also a result, not a guess. Card H is weaker for both sides as evidence about fusion itself, because STEP's 2040 date is only a plan. Card E could help both sides: investors believe in fusion, but that may mean the state does not need to pay.",
+   "model": "The strongest card for the proposition is card A, because it reports measured results: JET's $69\\ \\text{MJ}$ in 2023 and NIF's $3.15\\ \\text{MJ}$ in 2022 show that the science is improving. The strongest card for the opposition is card F, because ITER's construction estimate of $5.9$ billion euros (2006) has become $18\\text{–}22$ billion euros for construction and operation, and its schedule has slipped; this is a documented history of official estimates, not a company's guess. Card H is weaker for both sides as evidence about fusion itself, because STEP's 2040 date is only a plan. Card E could help both sides: investors believe in fusion, but that may mean the state does not need to pay.",
    "criteria": [
     "The answer names one card for each side and gives a reason based on what the card shows.",
     "The answer judges the strength of the evidence (result, plan or claim; the source).",
@@ -166,7 +166,7 @@
    "type": "explain",
    "title": "Optional source: nuclear energy and climate (video)",
    "optional": true,
-   "prompt": "Watch the video below (9 minutes) at home or with headphones. It is about **fission**, not fusion. Then write three or four sentences: Who made the video, and when? Which one argument from it could a team use in today's debate, and for which side? What are the limits of this source for a debate about fusion?\n\n<div class=\"fx\" data-fx=\"video\" id=\"fx-fd-video\"><script type=\"application/json\">{\"id\": \"EhAemz1v7dQ\", \"title\": \"Do we Need Nuclear Energy to Stop Climate Change?\", \"channel\": \"Kurzgesagt – In a Nutshell\", \"year\": \"2021\", \"length\": \"9:03\", \"note\": \"An animated popular-science video about **fission** power and climate change (13 April 2021). It is not about fusion.\"}</script></div>",
+   "prompt": "Watch the video below (9 minutes) at home or with headphones. It is about **fission**, not fusion. Then write three or four sentences: Who made the video, and when? Which one argument from it could a team use in today's debate, and for which side? What are the limits of this source for a debate about fusion? You can start with *The video was made by … in …*, *One argument we could use is …* and *A limit of this source is …*.\n\n<div class=\"fx\" data-fx=\"video\" id=\"fx-fd-video\"><script type=\"application/json\">{\"id\": \"EhAemz1v7dQ\", \"title\": \"Do we Need Nuclear Energy to Stop Climate Change?\", \"channel\": \"Kurzgesagt – In a Nutshell\", \"year\": \"2021\", \"length\": \"9:03\", \"note\": \"An animated popular-science video about **fission** power and climate change (13 April 2021). It is not about fusion.\"}</script></div>",
    "model": "The video was made by Kurzgesagt – In a Nutshell, a popular-science channel, and published on 13 April 2021. Its question is whether we need nuclear energy to stop climate change, and its description says the answer is \"complicated\". A team could use its point that low-carbon power that runs whatever the weather is valuable; the proposition could say that fusion might one day give the same benefit without long-lived waste. The limits are that it is about fission, not fusion, that it is from 2021, and that an animated video is a summary, so the team should check its numbers in the sources it lists.",
    "criteria": [
     "The answer names the creator and the date of the video.",
@@ -188,24 +188,24 @@
    "stage": "selita",
    "type": "text",
    "title": "Debate language",
-   "text": "Learn the phrases that do the work in a debate.\n\n<div class=\"fx\" data-fx=\"match\" id=\"fx-fd-phrases\"><script type=\"application/json\">{\"prompt\": \"What does each debate phrase do? Match it with its function.\", \"options\": [\"states your position\", \"introduces evidence\", \"rebuts an argument\", \"concedes a point\", \"asks a question\", \"sums up\"], \"items\": [{\"text\": \"We believe that governments should …\", \"answer\": \"states your position\", \"feedback\": \"An opening speech begins by stating clearly which side you are on.\"}, {\"text\": \"According to EUROfusion (February 2024), …\", \"answer\": \"introduces evidence\", \"feedback\": \"*According to* + source + date: the listeners know where the fact comes from.\"}, {\"text\": \"Our opponents claim that …, but the evidence shows …\", \"answer\": \"rebuts an argument\", \"feedback\": \"A rebuttal repeats the other side's point fairly and then answers it with evidence.\"}, {\"text\": \"We accept that ITER is over budget; however, …\", \"answer\": \"concedes a point\", \"feedback\": \"*We accept that* admits a true point; *however* turns back to your argument. Conceding makes you more credible.\"}, {\"text\": \"Could you tell us where that number comes from?\", \"answer\": \"asks a question\", \"feedback\": \"A polite question asks for the source instead of attacking the speaker.\"}, {\"text\": \"To sum up, the strongest reason is …\", \"answer\": \"sums up\", \"feedback\": \"A closing speech repeats the one or two strongest arguments, not every argument.\"}]}</script></div>\n\n<div class=\"wordbank\"><h4>Sentence starters for every speech</h4><ul><li>**Opening:** Madam / Mr Chair, we believe that … Our first argument is … Our second argument is …</li><li>**Evidence:** According to … (date), … · The figures on card … show that …</li><li>**Rebuttal:** Our opponents claim that …, but … · This argument ignores the fact that …</li><li>**Conceding:** We accept that …; however, … · That is a fair point, but …</li><li>**Question:** Could you explain how …? · Where does that number come from?</li><li>**Closing:** To sum up, … · The strongest reason is … · For these reasons, we urge you to vote for / against the motion.</li></ul></div>"
+   "text": "Learn the phrases that do the work in a debate.\n\n<div class=\"fx\" data-fx=\"match\" id=\"fx-fd-phrases\"><script type=\"application/json\">{\"prompt\": \"What does each debate phrase do? Match it with its function.\", \"options\": [\"states your position\", \"introduces evidence\", \"rebuts an argument\", \"concedes a point\", \"asks a question\", \"sums up\"], \"items\": [{\"text\": \"We believe that governments should …\", \"answer\": \"states your position\", \"feedback\": \"An opening speech begins by stating clearly which side you are on.\"}, {\"text\": \"According to EUROfusion (February 2024), …\", \"answer\": \"introduces evidence\", \"feedback\": \"*According to* + source + date: the listeners know where the fact comes from.\"}, {\"text\": \"Our opponents claim that …, but the evidence shows …\", \"answer\": \"rebuts an argument\", \"feedback\": \"A rebuttal repeats the other side's point fairly and then answers it with evidence.\"}, {\"text\": \"We accept that ITER is over budget; however, …\", \"answer\": \"concedes a point\", \"feedback\": \"*We accept that* admits a true point; *however* turns back to your argument. Conceding makes you more credible.\"}, {\"text\": \"Could you tell us where that number comes from?\", \"answer\": \"asks a question\", \"feedback\": \"A polite question asks for the source instead of attacking the speaker.\"}, {\"text\": \"To sum up, the strongest reason is …\", \"answer\": \"sums up\", \"feedback\": \"A closing speech repeats the one or two strongest arguments, not every argument.\"}]}</script></div>\n\n<div class=\"wordbank\"><h4>Sentence starters for every speech</h4><ul><li><strong>Chair:</strong> Welcome to the debate. I now give the floor to … · You have 30 seconds left. · Thank you; time is up.</li><li><strong>Opening:</strong> Madam / Mr Chair, we believe that … Our first argument is … Our second argument is …</li><li><strong>Evidence:</strong> According to … (date), … · The figures on card … show that …</li><li><strong>Rebuttal:</strong> Our opponents claim that …, but&nbsp;… · This argument ignores the fact that …</li><li><strong>Conceding:</strong> We accept that …; however,&nbsp;… · That is a fair point, but&nbsp;…</li><li><strong>Question:</strong> Could you explain how …? · Where does that number come from?</li><li><strong>Closing:</strong> To sum up, … · The strongest reason is … · For these reasons, we urge you to vote for / against the motion.</li></ul></div>"
   },
   {
    "id": "back-to-predictions",
    "stage": "selita",
    "type": "reflect",
    "title": "Back to your predictions",
-   "prompt": "Compare your predictions with cards E and F. Which fact surprised you more, and which team will it help?",
+   "prompt": "Compare your predictions with cards E and I. Which fact surprised you more, and which team will it help? You can start with *I expected …, but card … shows …*.",
    "predictions": [
-    "pred-cost",
-    "pred-private"
+    "pred-public",
+    "pred-origin"
    ]
   },
   {
    "id": "prepare-help",
    "stage": "sovella",
    "type": "text",
-   "text": "Your teacher gives each student a role: proposition, opposition, chair, fact-checker or judge (see the table above). Teams have 12 minutes to prepare. Plan three arguments with claim, evidence and reasoning, decide who speaks when, and predict the other side's strongest argument so that you can rebut it. Fact-checkers prepare by noting the key numbers and dates of every card; judges read the four criteria.\n\n<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>We believe that … Our first argument is that …</li><li>According to card …, … This shows that …</li><li>Our opponents will probably say that …, but …</li><li>We accept that …; however, …</li></ul></div>"
+   "text": "Your teacher gives each student a role: proposition, opposition, chair, fact-checker or judge (see the table above). Teams have 12 minutes to prepare. Plan three arguments with claim, evidence and reasoning, decide who speaks when, and predict the other side's strongest argument so that you can rebut it. Rebuttal speakers write two lines of the form *Our opponents will say …, but …*; closing speakers choose the one card they will repeat at the end. The chair learns the chair's phrases below. Fact-checkers prepare by noting the key numbers and dates of every card; judges read the four criteria.\n\n<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>We believe that … Our first argument is that …</li><li>According to card …, … This shows that …</li><li>Our opponents will probably say that …, but …</li><li>We accept that …; however, …</li></ul></div>"
   },
   {
    "id": "prepare",
@@ -214,7 +214,7 @@
    "title": "Write your team's opening speech",
    "pair": "Team work: plan together, then each speaker writes their own part; the first speaker reads the opening speech in the debate.",
    "prompt": "Write the opening speech of your team (about 100–150 words, about 2 minutes when spoken). State your position, give two arguments, each with a card (source and date) and your reasoning, and end with one sentence that the listeners will remember. Fact-checkers and judges: write the opening speech of the side you find *less* convincing.",
-   "model": "Proposition: Madam Chair, we believe that governments should invest more public money in fusion research. Our first argument is that the science is working. According to EUROfusion, JET released $69\\ \\text{MJ}$ of fusion heat in one pulse in 2023, and in 2022 the National Ignition Facility released more energy than its laser light delivered. These are measured results, not promises. Our second argument is that public research builds industries: Commonwealth Fusion Systems began in 2018 as a spin-off of a publicly funded MIT laboratory, and companies themselves still ask for government support. We accept that ITER is over budget; however, every first-of-a-kind machine is. Fusion fuel would last for centuries. Let us not stop halfway to a new source of energy.\n\nOpposition (alternative model): We believe that governments should not invest more public money in fusion. ITER's cost has grown from $5.9$ to $18\\text{–}22$ billion euros, and its fusion experiments are planned only from 2039. No fusion device has delivered any electricity yet. Meanwhile, the climate needs cuts by 2030 and 2050, and renewables already gave $33.8\\ \\%$ of the world's electricity in 2025. Public money should go where it reduces emissions soonest.",
+   "model": "Proposition: Madam Chair, we believe that governments should invest more public money in fusion research. Our first argument is that the science is working. According to EUROfusion, JET released $69\\ \\text{MJ}$ of fusion heat in one pulse in 2023, and in 2022 the National Ignition Facility released more energy than its laser light delivered. These are measured results, not promises. Our second argument is that public research builds industries: Commonwealth Fusion Systems began in 2018 as a spin-off of a publicly funded MIT laboratory, and companies themselves still ask for government support. We accept that ITER is over budget; however, every first-of-a-kind machine is. Fusion fuel would last for centuries. Let us not stop halfway to a new source of energy.\n\nOpposition (alternative model): Madam Chair, we believe that governments should not invest more public money in fusion. Our first argument is cost and delay. ITER's construction was estimated at $5.9$ billion euros in 2006; later estimates of construction and operation are $18\\text{–}22$ billion euros, and its deuterium–tritium experiments are planned only from 2039. Our second argument is that fusion has not yet made any electricity: NIF's lasers used about $300\\ \\text{MJ}$ of electricity for one shot, and ITER will produce none. Meanwhile, the IPCC says emissions must fall by about $45\\ \\%$ by 2030, and renewables already gave $33.8\\ \\%$ of the world's electricity in 2025. We accept that fusion research is exciting; however, public money should go where it cuts emissions soonest.",
    "criteria": [
     "The speech states the team's position on the motion clearly at the start.",
     "The speech gives two arguments, each with a card's fact, its source and its date.",
@@ -231,7 +231,7 @@
    "prompt": "The opposition says: *\"ITER's cost has tripled. Fusion is a waste of public money.\"* Which reply by the proposition is the best rebuttal?",
    "choices": [
     {
-     "text": "\"We accept the cost grew; however, measured records keep improving.\"",
+     "text": "\"We accept the cost grew; however, records keep improving.\"",
      "correct": true,
      "feedback": "Right. It concedes a true point, then answers with evidence (results such as card A) and reasoning. Conceding makes the speaker more credible."
     },
@@ -354,7 +354,7 @@
    "type": "explain",
    "title": "4. Write: your position after the debate",
    "prompt": "Write a paragraph of 120–150 words in your own name (not your debate role). Is your opinion now for, against or undecided? Compare it with your first opinion. Give your main argument with one card (source and date) and your reasoning, and answer the strongest argument of the other side.",
-   "model": "Before the debate I was undecided; now I am, on balance, for more public money, but only for research with clear milestones. The most convincing argument was that public research created the knowledge that companies now use: Commonwealth Fusion Systems began in 2018 as a spin-off of a publicly funded MIT laboratory (card I). Without that money, the private investment of USD 4.48 billion in 2025–2026 (card E) would probably not exist. I accept that ITER's cost has grown from $5.9$ to $18\\text{–}22$ billion euros and that no fusion device has yet made electricity (cards F and G); however, this is a reason to fund research carefully, not to stop it. Because fusion cannot help with the cuts needed by 2030, I think most climate money should still go to renewables and grids, and fusion should get a smaller, long-term share.",
+   "model": "Before the debate I was undecided; now I am, on balance, for more public money, but only for research with clear milestones. The most convincing argument was that public research created the knowledge that companies now use: Commonwealth Fusion Systems began in 2018 as a spin-off of a publicly funded MIT laboratory (card I). Without that money, the private investment of USD 4.48 billion in 2025–2026 (card E) would probably not exist. I accept that ITER's estimates have grown to $18\\text{–}22$ billion euros and that no fusion device has yet made electricity (cards F and G); however, this is a reason to fund research carefully, not to stop it. Because fusion is not planned to deliver electricity before 2030 and the public prototype STEP targets 2040, I think most climate money should still go to renewables and grids, and fusion should get a smaller, long-term share.",
    "criteria": [
     "The answer states a clear position and compares it with the first opinion.",
     "The main argument uses at least one card with its source or date.",
@@ -375,7 +375,7 @@
    "id": "french-corner",
    "stage": "tarkista",
    "type": "text",
-   "text": "<div class=\"french-corner\"><h4>Le coin français</h4><p>French debates also use these phrases: <span lang=\"fr\">à mon avis</span>, <span lang=\"fr\">je suis d'accord</span>, <span lang=\"fr\">je ne suis pas d'accord</span>. Listen, repeat, and then give your opinion on <span lang=\"fr\">l'argent public pour la recherche sur la fusion</span> in one French sentence to your partner. In the hints, capitals show the stressed syllable, and <em>õ</em>, <em>ã</em> are nasal vowels: the air goes through the nose and no <em>n</em> is heard.</p></div>\n\n<div class=\"fx\" data-fx=\"say\" id=\"fx-fd-french\"><script type=\"application/json\">{\"lang\": \"fr-FR\", \"title\": \"Le coin français: debating in French\", \"phrases\": [{\"fr\": \"À mon avis, …\", \"en\": \"In my opinion, …\", \"tip\": \"*a mõ-na-VI*: the *n* of {fr}mon{/fr} links to {fr}avis{/fr}, and the final *s* is silent.\"}, {\"fr\": \"Je suis d'accord.\", \"en\": \"I agree.\", \"tip\": \"*žö svi da-KOR*: {fr}je{/fr} begins with the sound in English *measure*, and the final *d* is silent.\"}, {\"fr\": \"Je ne suis pas d'accord.\", \"en\": \"I disagree.\", \"tip\": \"*žön svi pa da-KOR*: in quick speech the *e* of {fr}ne{/fr} almost disappears.\"}, {\"fr\": \"l'argent public\", \"en\": \"public money\", \"tip\": \"*lar-ŽÃ py-BLIK*: the *u* is the Finnish *y*, and *en* is a nasal *a*.\"}, {\"fr\": \"la recherche\", \"en\": \"research\", \"tip\": \"*la rö-ŠERŠ*: both *ch* sound like the Finnish *š*.\"}]}</script></div>"
+   "text": "<div class=\"french-corner\"><h4>Le coin français</h4><p>French debates also use these phrases: <span lang=\"fr\">à mon avis</span>, <span lang=\"fr\">je suis d'accord</span>, <span lang=\"fr\">je ne suis pas d'accord</span>. Listen, repeat, and then give your opinion on <span lang=\"fr\">l'argent public pour la recherche sur la fusion</span> in one French sentence to your partner. In the hints, capitals show the stressed syllable, and <em>õ</em>, <em>ã</em> are nasal vowels: the air goes through the nose and no <em>n</em> is heard.</p></div>\n\n<div class=\"fx\" data-fx=\"say\" id=\"fx-fd-french\"><script type=\"application/json\">{\"lang\": \"fr-FR\", \"title\": \"Le coin français: debating in French\", \"phrases\": [{\"fr\": \"À mon avis, …\", \"en\": \"In my opinion, …\", \"tip\": \"*a mõ-na-VI*: the *n* of {fr}mon{/fr} links to {fr}avis{/fr}, and the final *s* is silent.\"}, {\"fr\": \"Je suis d'accord.\", \"en\": \"I agree.\", \"tip\": \"*žö SYI da-KOR*: {fr}je{/fr} begins with the sound in English *measure*, the *u* of {fr}suis{/fr} is the Finnish *y*, and the final *d* is silent.\"}, {\"fr\": \"Je ne suis pas d'accord.\", \"en\": \"I disagree.\", \"tip\": \"*žön SYI pa da-KOR*: in quick speech the *e* of {fr}ne{/fr} almost disappears.\"}, {\"fr\": \"l'argent public\", \"en\": \"public money\", \"tip\": \"*lar-ŽÃ py-BLIK*: the *u* is the Finnish *y*, and *en* is a nasal *a*.\"}, {\"fr\": \"la recherche\", \"en\": \"research\", \"tip\": \"*la rö-ŠERŠ*: both *ch* sound like the Finnish *š*.\"}]}</script></div>"
   }
  ]
 }

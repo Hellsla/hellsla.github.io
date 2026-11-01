@@ -1,7 +1,7 @@
 VERDICT: DONE
 
 Unit fy14-fusion-debate, "Debate: should governments invest more in fusion?" (FY14 chapter 8, order 2). Developer report 2026-11-01.
-Content hash at hand-over: 974cbb7890e9f925.
+Content hash at hand-over: 974cbb7890e9f925; after the review fixes: 82acc2ba7765614a.
 
 ## Files
 - `unit.json` (14 sources, 1 media credit for the video, checked 2026-11-01), `unit.md` (Why, hero, nine evidence cards A–I, Key idea: claim–evidence–reasoning, Format: motion, roles table, order and time limits, judging criteria; Common misconception; Summary), `inquiry.json` (26 activities), `teacher.md`; `lessons/units/fy14-fusion-debate/figures.py` (hero: classroom debate, two lecterns, chair with a timer, screen with a bar chart and a torus, audience from behind; faceless figures, no text).
@@ -22,3 +22,9 @@ units.py check OK; check_layout 360/1280 OK; screenshots looked at (hero redrawn
 
 ## Shared issues
 None in the components used (match, video, say).
+
+## Review fixes (2026-11-01, after review/science.md, pedagogy.md, visual.md)
+- Science: cards F and G and every feedback now call them estimates, a plan or design intent, not results; ITER D–D from 2035, D–T from 2039; card F compares construction (€5.9 bn) with construction and operation (€18–22 bn) and mentions the disputed US DOE estimate (up to $65 bn); card H feedback and the final model no longer predict 2030/2050 arrival (only "not planned in time for 2030; STEP targets 2040"); card I dated (proposed 1985, 2014 spending law $22 m).
+- Pedagogy: the two predictions are new (pred-public: public share of private fusion funding, card E; pred-origin: CFS as a university spin-off, card I) instead of repeating the society unit; debate steps now total 21 minutes (open floor 5 min); chair script in the starters and teacher.md; rebuttal and closing-speaker help lines; video task starters; card C feedback "mainly for".
+- Visual: role labels in the starters bold with `<strong>`; shorter rebuttal option.
+- Rechecked: units.py check, build, check_layout 360/1280 OK, screenshots, Playwright (predictions lock and reveal after the cards, 7 choices, models after writing, no console/katex errors).

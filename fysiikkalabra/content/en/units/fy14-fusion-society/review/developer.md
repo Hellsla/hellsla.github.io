@@ -1,7 +1,7 @@
 VERDICT: DONE
 
 Unit fy14-fusion-society, "Fusion in the energy system" (FY14 chapter 8, order 1). Developer report 2026-11-01.
-Content hash at hand-over: f86c35be7cb1d95d.
+Content hash at hand-over: f86c35be7cb1d95d; after the review fixes: a079620513e19e92.
 
 ## Files
 - `unit.json` (21 sources checked 2026-11-01), `unit.md` (Why, hero, Energy, Claims, Uncertain, Key idea, Fuel with the fuel-cycle figure, Compare, staged worked example, Common misconception, Summary), `inquiry.json` (28 activities), `teacher.md`; `lessons/units/fy14-fusion-society/figures.py` (hero: wind, solar, coal, fission, town and a fusion building under construction, no text; `cycle`: D–T fuel cycle with the lithium blanket, labels 28 units in a 600-wide figure).
@@ -26,3 +26,9 @@ units.py check OK; check_layout 360/1280 OK (long inline formulas split); screen
 
 ## Shared issues
 None found in the components used (match, say). See fy14-global-fusion-explorer for facilities.json.
+
+## Review fixes (2026-11-01, after review/science.md, pedagogy.md, visual.md)
+- Science: no implied arrival time (Key idea, headline task and grid model now say no plant has delivered electricity and the public prototype plans, STEP 2040, come after the 2030 target); cost figures compared at the same scope (construction €5.9 bn in 2006 vs construction and operation €18–22 bn); DEMO 121 USD/MWh removed (no study year found); "a claim is not necessarily false"; "more than four fifths" fossil; "slightly more than one new tritium nucleus"; main waste row; worked example shows 3.3747e14.
+- Pedagogy: shorter correct options (find-error, check-1, check-3); pred-waste prompt points to *Inside ITER*; reflect and sort tasks get starters and a merged intro; teacher timing says check 4 is usually homework.
+- Visual: mistake feedback plain text (no asterisks); cycle figure relabelled with a teal neutron arrow and nuclide notation; electricity table "other¹" footnote.
+- Rechecked: units.py check, build, check_layout 360/1280 OK, screenshots looked at, Playwright (predictions lock and reveal, 8 choices, models after writing, no console/katex errors, no raw `$`).

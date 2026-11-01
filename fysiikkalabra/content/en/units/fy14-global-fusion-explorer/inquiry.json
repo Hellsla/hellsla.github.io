@@ -1,6 +1,6 @@
 {
  "version": 1,
- "contribution": "The course's world map: students use the Global Fusion Explorer (60 facilities, year, status, country and type filters) to compare the Cold-War geography of fusion research with today's networks, read the data critically (selection, unknown years, today's country names) and connect the map with the course timeline.",
+ "contribution": "The course's world map: students use the Global Fusion Explorer (63 facilities, year, status, country and type filters) to compare the Cold-War geography of fusion research with today's networks, read the data critically (selection, unknown end years, today's country names) and connect the map with the course timeline.",
  "learn": [
   "compare the geography of fusion research during the Cold War with today's network, using a data map.",
   "explain how declassification, verification and cost turned competition into collaboration.",
@@ -69,7 +69,7 @@
    "stage": "ennusta",
    "type": "choice",
    "title": "Prediction 1: the early map",
-   "prompt": "The explorer lists 60 facilities. In how many countries does it show fusion machines that **started before 1970**?",
+   "prompt": "The explorer lists 63 facilities. In how many countries does it show fusion machines that **started before 1970**?",
    "justify": true,
    "reveal": {
     "after": "theory-main"
@@ -144,7 +144,7 @@
    "stage": "tutki",
    "type": "text",
    "title": "Missions: from competition to collaboration",
-   "text": "Work in pairs and write your findings in a table with the columns *year*, *facilities*, *countries* and *notes*.\n\n1. **The secret years.** Untick *any year* and move the year slider to **1958**. Which facilities and countries does the list show? Open ZETA and T-1. (Ignore lines that end in *–?* after their real working life: the end year is unknown.)\n2. **Before 1970.** Tick *any year* again and look at the start years in the list: which countries had machines that started before 1970? Search for **T-3**: why does it never appear under a year?\n3. **The age of big machines.** Set the year to **1985**. Count the facilities and countries again, leaving out the old machines with unknown end years (such as Model A, 1953–?). Which machine is shared by several countries? Open its panel.\n4. **Today's network.** Tick *any year*, choose the status **Operating** and count the countries in the list. Then choose *Under construction* and *Planned*: who builds new machines?\n5. **Machines that cross borders.** Open the panels of ITER, JT-60SA, HL-2A and COMPASS. Note for each one which countries are involved.\n6. **Back to the timeline.** Open the unit [Fusion history: an interactive timeline](fy14-fusion-timeline.html), find the events of 1958, 1969 and 1985, and follow a *Show on the map* link back to this explorer."
+   "text": "Work in pairs and write your findings in a table with the columns *year*, *facilities*, *countries* and *notes*.\n\n1. **The secret years.** Untick *any year* and move the year slider to **1958**. Which facilities and countries does the list show? Open ZETA and T-1.\n2. **Unknown years.** Move the slider slowly from 1958 to 1975. Model A and the Perhapsatron disappear after 1963: open Model A and read the note at the end of its panel. Why does the filter stop counting it there? Then tick *any year* and look at the start years: which countries had machines that started before 1970, and which countries followed in 1973?\n3. **The age of big machines.** Untick *any year* and set the year to **1985**. Count the facilities and countries. Which machine is shared by several countries? Open its panel.\n4. **Today's network.** Set the year to **2026** and count the facilities and countries. Then tick *any year* and choose *Under construction* and *Planned*: who builds new machines?\n5. **Machines that cross borders.** Open the panels of ITER, JT-60SA and HL-2A, and search for **COMPASS**: why does one machine have two records? Note for each one which countries are involved.\n6. **Back to the timeline.** Open the unit [Fusion history: an interactive timeline](fy14-fusion-timeline.html), find the events of 1958, 1969 and 1985, and follow a *Show on the map* link back to this explorer."
   },
   {
    "id": "missions-help",
@@ -159,12 +159,12 @@
    "title": "Record and compare your findings",
    "pair": "Pair work: one of you operates the explorer, the other writes; swap roles after mission 3.",
    "prompt": "Discuss with your partner, then write four or five sentences from your table. How many facilities and countries did you find in 1958, in 1985 and in 2026 (operating)? Which machines involve several countries? Name one limitation of the data that affected your counts.",
-   "model": "In 1958 the list shows six facilities in three countries: the United States (Model A, Model B, the Perhapsatron and Scylla I), the United Kingdom (ZETA) and the Soviet Union (T-1). By 1985, leaving out old machines with unknown end years, it shows seven machines in five countries: the United States, the Soviet Union, the United Kingdom, Japan and West Germany, and JET in the UK was shared by European countries. In 2026, operating facilities stand in 12 countries on three continents, from Canada to South Korea. ITER (seven members), JT-60SA (Japan and Europe), HL-2A (built from German ASDEX parts in China) and COMPASS (from the UK to the Czech Republic) cross borders. One limitation of the data is that machines with unknown years, such as T-3, are counted wrongly or not at all by the year filter.",
+   "model": "In 1958 the list shows six facilities in three countries: the United States (Model A, Model B, the Perhapsatron and Scylla I), the United Kingdom (ZETA) and the Soviet Union (T-1). By 1985 it shows eight machines in six countries: the United States, the Soviet Union, the United Kingdom, France, West Germany and Japan, and JET in the UK was shared by European countries. In 2026, 24 facilities operate in 12 countries on three continents, from Canada to South Korea. ITER (seven members), JT-60SA (Japan and Europe), HL-2A (built from German ASDEX parts in China) and COMPASS (two records: first at Culham in the UK, then in Prague) cross borders. One limitation of the data is that no source gives the end year of some old machines, such as Model A, so the year filter only guesses: it counts them for ten years after their start.",
    "criteria": [
     "The answer gives counts of facilities or countries for at least two different years.",
     "The answer names at least two machines that involve several countries and says which countries.",
     "The answer describes the change from a few countries to many.",
-    "The answer names a limitation of the data (selection, unknown years, today's country names, company-reported results)."
+    "The answer names a limitation of the data (selection, unknown end years, today's country names, company-reported results)."
    ]
   },
   {
@@ -219,24 +219,24 @@
    "stage": "sovella",
    "type": "choice",
    "title": "Find the error",
-   "prompt": "A student sets the year slider to 1965 and writes: *\"In 1965 nobody in the Soviet Union did fusion research: the list shows only American and British machines.\"* What is wrong with this conclusion?",
+   "prompt": "A student sets the year slider to 1965 and writes: *\"In 1965 only three countries in the world did fusion research: the list shows only American, British and Soviet machines.\"* What is wrong with this conclusion?",
    "choices": [
     {
-     "text": "The data is a selection, and T-3, whose start year is unknown, is hidden.",
+     "text": "The explorer is a selection: other countries had fusion labs without listed machines.",
      "correct": true,
-     "feedback": "Right. T-3 was running in Moscow in the 1960s, but the explorer has no exact start year for it, so the year filter never shows it. An empty country in a selection is a gap in the data, not proof of no research."
+     "feedback": "Right. For example, Germany's Max Planck Institute for Plasma Physics (IPP) was founded in 1960, but its first machine in the explorer, Pulsator, starts only in 1973. A short list in a selection is not proof that nobody else did research."
     },
     {
-     "text": "Nothing: the Soviet Union stopped its fusion research from 1959 to 1975.",
-     "feedback": "The Soviet Union never stopped: T-3 produced the famous results of 1968. The year filter hides T-3 because its start year is unknown."
+     "text": "Nothing: other countries began fusion research only after the T-3 measurement of 1969.",
+     "feedback": "Some did start tokamaks after 1969, but research had begun earlier: Germany's IPP was founded in 1960. The explorer is a selection of important machines, so it cannot show every lab."
     },
     {
      "text": "The slider shows only machines built in exactly 1965.",
-     "feedback": "The slider shows machines *operating* in that year, not only those built then. The problem is the missing start year of T-3 and the selection of the data."
+     "feedback": "The slider shows machines *operating* in that year, not only those built then. The real problem is that the explorer is a selection."
     },
     {
-     "text": "Soviet machines appear under Russia, so the student chose the wrong country.",
-     "feedback": "The country filter uses today's names, but the student used the year slider, not the country filter. T-3 is hidden because its start year is unknown."
+     "text": "The year filter hides every machine whose end year is unknown.",
+     "feedback": "It does not hide them: it counts them for ten years after their start, so T-3 and Scylla I are in the 1965 list. The real problem is that the explorer is a selection."
     }
    ]
   },
@@ -279,24 +279,24 @@
    "stage": "tarkista",
    "type": "choice",
    "title": "2. Data: reading the explorer",
-   "prompt": "The list shows *NSTX, 1999–?*. What does the question mark mean, and what does it do to the year filter?",
+   "prompt": "The list shows *Model A, 1953–?*. What does the question mark mean, and how does the year filter treat Model A?",
    "choices": [
     {
-     "text": "No end year is known, so the filter shows NSTX in every later year.",
+     "text": "No end year is known, so the filter counts it only up to 1963.",
      "correct": true,
-     "feedback": "Right. The data has no end year for NSTX, so the filter keeps it in every later year, although it was rebuilt as NSTX-U. Check such lines yourself."
+     "feedback": "Right. No source gives Model A's end year, so the explorer counts it for ten years after its start, as the note in its panel says. This is a reasonable guess, not a fact: check such lines yourself."
     },
     {
-     "text": "NSTX is still operating, so the filter shows it correctly.",
-     "feedback": "An operating machine has *today* as its end. *–?* means that the end year is unknown; NSTX was in fact rebuilt as NSTX-U."
+     "text": "Model A is still operating, so the filter shows it up to today.",
+     "feedback": "An operating machine shows *today* as its end. *–?* means that the end year is unknown, and the filter counts Model A only up to 1963."
     },
     {
-     "text": "The start year is uncertain, so the filter hides NSTX.",
-     "feedback": "The start year, 1999, is known. The question mark replaces the *end* year, and then the filter keeps showing the machine."
+     "text": "The start year is uncertain, so the filter never shows Model A.",
+     "feedback": "The start year, 1953, is known. The question mark replaces the *end* year, and the filter counts Model A from 1953 to 1963."
     },
     {
-     "text": "NSTX is planned, so the filter shows it only after 1999.",
-     "feedback": "NSTX is retired, not planned. *–?* means only that its end year is unknown."
+     "text": "No end year is known, so the filter shows it in every later year.",
+     "feedback": "The explorer avoids that mistake: a retired machine with an unknown end is counted only for ten years after its start (or to the last year a source shows it running)."
     }
    ]
   },
@@ -338,7 +338,7 @@
    "type": "explain",
    "title": "4. Write: from competition to collaboration",
    "prompt": "Write a paragraph of 100–140 words. Compare the geography of fusion research during the Cold War with today's network. Use at least two pieces of evidence from the explorer (counts, facilities or panels) and one event from the timeline, explain why the change happened, and name one limit of the data.",
-   "model": "During the Cold War, fusion machines in the explorer stood only in the United States, the United Kingdom and the Soviet Union, and until 1958 their research was secret. Today, operating facilities stand in 12 countries on three continents, and the largest machine, ITER, is built by seven members. The change happened because the 1958 Geneva conference made the field open, because surprising results such as T-3's needed independent checks, and because machines became too expensive for one country: JET (1978) and ITER (agreement in 2006) were shared. Machines even crossed borders, like Germany's ASDEX, which became HL-2A in China. However, the data has limits: it is a selection, and machines with unknown years, such as T-3, are missing from the year filter. Competition has not disappeared: countries and companies still race for records.",
+   "model": "During the Cold War, fusion machines in the explorer stood only in the United States, the United Kingdom and the Soviet Union, and until 1958 their research was secret. Today, operating facilities stand in 12 countries on three continents, and the largest machine, ITER, is built by seven members. The change happened because the 1958 Geneva conference made the field open, because surprising results such as T-3's needed independent checks, and because machines became too expensive for one country: JET (1978) and ITER (agreement in 2006) were shared. Machines even crossed borders, like Germany's ASDEX, which became HL-2A in China. However, the data has limits: it is a selection, and for old machines with unknown end years, such as T-3, the year filter can only guess. Competition has not disappeared: countries and companies still race for records.",
    "criteria": [
     "The answer describes the Cold War geography (few countries, secrecy) and today's network with evidence from the explorer.",
     "The answer uses at least one dated event (1958, 1969, 1978, 1985 or 2006).",

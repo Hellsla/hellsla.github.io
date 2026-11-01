@@ -146,7 +146,7 @@ A survey of 56 fusion companies by the Fusion Industry Association (July 2026) f
 
 ### Card F: ITER's cost and schedule
 
-When ITER was agreed in 2006, its cost was estimated at $5.9$ billion euros over ten years. Later estimates are $18\text{–}22$ billion euros. The 2024 baseline moved the start of deuterium–tritium operation to 2039 and added an estimated $5$ billion euros, partly for repairing faulty parts (ITER, Wikipedia summary of the 2024 baseline).
+When ITER was agreed in 2006, its construction was estimated at $5.9$ billion euros over ten years. Later estimates of construction and operation together are $18\text{–}22$ billion euros; other, higher estimates of up to $65$ billion US dollars are disputed by ITER. The 2024 baseline plans deuterium–deuterium plasmas from 2035 and deuterium–tritium operation from 2039, and added an estimated $5$ billion euros, partly for repairing faulty parts (Wikipedia summary of the 2024 baseline).
 
 ### Card G: Gain is not electricity
 
@@ -158,37 +158,37 @@ The IPCC concluded in 2018 that, to limit warming to $1.5\ ^\circ\text{C}$, net 
 
 ### Card I: From public laboratory to company
 
-Commonwealth Fusion Systems was founded in 2018 as a spin-off from the Plasma Science and Fusion Center of the Massachusetts Institute of Technology (MIT). There, the publicly funded Alcator C-Mod tokamak (1991–2016) set a record plasma pressure of $2.05$ atmospheres in 2016. In May 2023 the US Department of Energy gave the company, with seven others, milestone-based funding.
+Commonwealth Fusion Systems was founded in 2018 as a spin-off from the Plasma Science and Fusion Center of the Massachusetts Institute of Technology (MIT). There, the Alcator C-Mod tokamak (1991–2016), proposed to the US Department of Energy in 1985, set a record plasma pressure of $2.05$ atmospheres in 2016; in 2014 a US federal spending law gave it 22 million dollars to keep running. In May 2023 the US Department of Energy gave the company, with seven others, milestone-based funding.
 
 ## Key idea {Ydinajatus}
 
 A good debate argument has three parts: a **claim** (what you say), **evidence** (a fact with its source and date) and **reasoning** (why the evidence supports the claim). The same evidence can support both sides: private investment can show that fusion is attractive, or that governments can leave it to companies. So reasoning, not the fact alone, wins the argument.
 
-Check the *kind* of evidence. An **established result** is stronger than an **institutional plan**, and a plan is stronger than a **corporate claim**. Never use scientific gain $Q$ as if it were electricity. A strong speaker also **rebuts**: answers the best argument of the other side instead of ignoring it, and **concedes** a fair point when it is true.
+Check the *kind* of evidence. An **established result** is stronger than an **institutional plan**, and a plan is usually stronger than a **corporate claim**, although a plan's own record matters too: ITER's schedule has slipped several times. Never use scientific gain $Q$ as if it were electricity. A strong speaker also **rebuts**: answers the best argument of the other side instead of ignoring it, and **concedes** a fair point when it is true.
 
 ## How a structured debate works {Format}
 
-The **motion** is *"This house believes that governments should invest more public money in fusion research."* The **proposition** argues for it, the **opposition** against it. Your role in the debate is not necessarily your own opinion: arguing the other side helps you understand it.
+The **motion** is *"This house believes that governments should invest more public money in fusion research."* The **proposition** (the team *for*) argues for it, the **opposition** (the team *against*) argues against it; the **fact-checkers** check numbers. Your role in the debate is not necessarily your own opinion: arguing the other side helps you understand it.
 
 | Role | Who | Task |
 | --- | --- | --- |
-| chair | 1 student or the teacher | opens, gives the floor, keeps time |
-| proposition | 3 speakers | opening, rebuttal, closing |
-| opposition | 3 speakers | opening, rebuttal, closing |
-| fact-checkers | 2 students | check every number against the cards |
-| judges | everyone else | score with the criteria, then vote |
+| chair | 1 | opens, gives the floor, keeps time |
+| for | 3 | opening, rebuttal, closing |
+| against | 3 | opening, rebuttal, closing |
+| checkers | 2 | check numbers against the cards |
+| judges | the rest | score, then vote |
 
 The order and the time limits are:
 
 1. The chair opens and the audience votes once (*for*, *against*, *undecided*), 1 minute.
 2. Opening speeches: proposition, then opposition, 2 minutes each.
 3. Rebuttals: opposition, then proposition, 2 minutes each.
-4. Open floor: questions from the judges to both teams, 6 minutes.
+4. Open floor: questions from the judges to both teams, 5 minutes.
 5. Fact-check report: correct facts and any mistakes, 2 minutes.
 6. Closing speeches: opposition, then proposition, 90 seconds each.
 7. Second vote and the judges' scores, 2 minutes.
 
-The judges score each team from 0 to 3 on each **criterion**: *evidence* (at least two cards, with source and date), *accuracy* (results, plans and claims kept apart; gain is not electricity), *reasoning* (evidence linked to the motion; the other side answered) and *language* (clear, polite debate language). The team that changes more votes, not the team that started with more support, wins.
+The judges score each team from 0 to 3 on each **criterion**: *evidence* (at least two cards, with source and date), *accuracy* (results, plans and claims kept apart; gain is not electricity), *reasoning* (evidence linked to the motion; the other side answered) and *language* (clear, polite debate language). The scores give each team feedback and are used for assessment; the winner is decided by the votes: the team that changes more votes, not the team that started with more support, wins.
 
 ## Common misconception {Yleinen virhekäsitys}
 
@@ -199,7 +199,7 @@ The judges score each team from 0 to 3 on each **criterion**: *evidence* (at lea
 ## Summary {Tiivistelmä}
 
 - A debate argument has a claim, evidence (with source and date) and reasoning.
-- Established results are stronger evidence than plans, and plans are stronger than corporate claims; scientific gain is not electricity.
+- Established results are stronger evidence than plans, and plans are usually stronger than corporate claims (check their record); scientific gain is not electricity.
 - The same evidence can support both sides; the reasoning decides.
 - Rebut the strongest argument of the other side and concede what is true.
 - Whether to spend more public money on fusion is a question of values and priorities as well as of physics: well-informed people can disagree.

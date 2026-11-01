@@ -1010,7 +1010,8 @@
           "url": "https://de.wikipedia.org/wiki/Wendelstein_7-AS"
         }
       ],
-      "note": "Plotted at the shared site point so the map can group devices at this site."
+      "note": "Plotted at the shared site point so the map can group devices at this site.",
+      "country_then": "West Germany until 1990"
     },
     {
       "id": "w7-x",
@@ -1370,7 +1371,8 @@
           "url": "https://de.wikipedia.org/wiki/Forschungszentrum_J%C3%BClich"
         }
       ],
-      "note": "German Wikipedia gives 1981 for start of operation and 1983 for the official inauguration. Coordinates are for the research centre."
+      "note": "German Wikipedia gives 1981 for start of operation and 1983 for the official inauguration. Coordinates are for the research centre.",
+      "country_then": "West Germany until 1990"
     },
     {
       "id": "ftu",

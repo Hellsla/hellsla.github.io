@@ -5,7 +5,7 @@
 - **12–40 min, Investigate.** Read *The world's energy challenge* together; pairs study the 2025 electricity table and answer its question (5 min); pair discussion on firm and variable power with the word bank (8 min). Read *Results, plans and claims* and *Uncertainties*; the sorting task in pairs (8 min), then each student justifies two choices in writing.
 - **40–52 min, Theory summary.** Key idea, fuel and tritium breeding (with the fuel-cycle diagram), fusion and fission compared; the vocabulary match; back to the predictions.
 - **52–64 min, Apply.** The worked example step by step on the board; the tritium task individually (hints available). The error-spotting task about NIF is optional.
-- **64–75 min, Check your understanding.** Three checks, the headline evaluation (with its word bank and sentence starters), the summary and the French corner in pairs.
+- **64–75 min, Check your understanding.** Three checks, the summary and the French corner in pairs; start the headline evaluation (check 4, with its word bank and sentence starters) in class and usually finish it as homework.
 
 **Fast pairs.** Pairs that finish the sorting early do the optional NIF error-spotting task, or look up one more fusion headline on a news site, date it, and sort its main statement. In Apply they can compute how long the 25 kg stock would last a 1 GW plant (about five months), and what the decay of about $5\ \%$ a year means for storing tritium.
 
