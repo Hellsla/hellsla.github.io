@@ -111,7 +111,7 @@ def grid():
     f.tex(400, 296, r"\text{sähköasema}", "middle", w=150)
     if longer(r"\text{jakeluverkko}"):       # two lines, e.g. "distribution" over "network"
         first, _, rest = translate(r"\text{jakeluverkko}")[6:-1].partition(" ")
-        f.tex(522, 256, r"\text{" + first + "}", "middle", size=22, w=140); f.tex(522, 282, r"\text{" + rest + "}", "middle", size=22, w=140)
+        f.tex(530, 254, r"\text{" + first + "}", "middle", size=22, w=136); f.tex(530, 280, r"\text{" + rest + "}", "middle", size=22, w=96)   # clear of "substation" below left
     else: f.tex(520, 262, r"\text{jakeluverkko}", "middle", w=140)
     # the energy flow underneath, to scale of nothing: a schematic arrow
     f.block_arrow(30, 228, 570, 228, HEAT, 14, 30, 26)
