@@ -1,19 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 62919df3860876fd
+CONTENT-HASH: 0e35175c4902c240
 
-Science review, 2026-11-01. Sources re-read today: the ITER baseline PDF (3 July 2024), iter.org Members, Facts & figures, node/20387 (repairs), the ITER press release of 29 July 2026, Wikipedia ITER.
+Science re-review, 2026-11-01, of commit c6532e4f. Earlier findings 1–3 are all fixed:
+- §Why now gives 1987 for the agreement and 1988 for the conceptual design, matching `order-story`.
+- §Challenges now says the assembly was halted and the next sector module went into the pit only in April 2025 (NEI, April 2025; ITER PR of 29 July 2026: "Sector module installation began in April 2025").
+- `pred-why` now uses KSTAR.
+The re-ordered site paragraph (Nov 2003 EU choice, Dec 2003 Canadian withdrawal and deadlock) matches the sources. The schedule table, the shares and the Members are unchanged and still match the 2024 baseline PDF and iter.org.
 
 ## Blocking
 None.
 
 ## Polish
-1. `unit.md` §Why ("In 1987 four partners started the design") and the summary vs `inquiry.json` `order-story` explain ("1985, 1988, …"). The same step has two years. Wikipedia: the conceptual design studies were launched in Vienna in March 1987 and the project "was initiated in 1988" (CDA 1988–1990). Fix: in §Why write "In 1987 four partners agreed to design it together, and the conceptual design began in 1988". Keep 1988 in `order-story`.
-2. `unit.md` §Challenges, "stopped the assembly for about two years". ITER's article (4 Sep 2023) says only that the defects "brought vacuum vessel sub-assembly works to a halt", one year earlier. NEI (Apr 2025): module #6 went into the pit in May 2022 and was taken out 14 months later; the next module went in in April 2025. Fix: "…which halted the vessel assembly; the next sector module went into the pit only in April 2025."
-3. `inquiry.json` `pred-why`, the feedback of option 2. JT-60SA is a joint EU–Japan machine (it is the Broader Approach, which this unit itself teaches), so it does not show that one country can build its own. Fix: replace it with "KSTAR in Korea".
+None in the unit files.
 
-## Checked (correct)
-- 2016 baseline: first plasma 2025, full magnetic energy and full current 2033, D–T 2035. 2024 baseline: SRO 2034, D–D 2035, full magnetic energy 2036, D–T 2039, and the four reasons. All match the PDF word for word. The +4 years for D–T matches too.
-- The figure's timeline is to scale.
-- Members and shares 45.6 % / 9.1 %, nine-tenths in kind, 100 % of results and IP, UK out, Switzerland in F4E from 1 Jan 2026, Domestic Agencies, about 5,000 people, 180 ha / 42 ha, 104 km: all match iter.org.
-- Also correct: the site contest and Moscow 28 June 2005, Ikeda, Barabaschi from Oct 2022, about €5 billion (Wikipedia), and the sixth of nine modules on 28 July 2026 about six months early.
-- All choice keys and feedbacks are correct. `find-error` gets gain vs electricity right.
+## Shared issues
+1. `assets/units/fy14/data/timeline.json`, card `iter-first-module-2025`, which this unit's timeline task now shows. The card says "Assembly had been stopped for about two years". That is the claim this unit dropped: module #6 was in the pit from May 2022 and came out 14 months later, and the next module went in in April 2025. The card also calls the bevel non-conformities "welding defects". Fix: "…after repairs to defects at the welding edges of its sectors. Assembly of the vessel had been halted since 2022…".

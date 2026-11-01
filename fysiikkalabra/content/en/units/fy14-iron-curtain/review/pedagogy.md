@@ -1,23 +1,25 @@
-VERDICT: FAIL
-CONTENT-HASH: 1f6cfeb92c19a88f
+VERDICT: PASS
+CONTENT-HASH: 400e66d0ff06b85c
 
-Pedagogy review of fy14-iron-curtain (2026-11-01). I built the page, tested it in Playwright at 390 px and looked at the captures. Both predictions lock when the student commits. `pred-verify` opens at `theory-d` and `pred-thomson` at `theory-thomson`. Model answers stay closed until the student writes. No console errors.
+Pedagogy re-review of fy14-iron-curtain (2026-11-01), after commit 3ed55db3. I rebuilt the page and tested it in Playwright at 390 px. Both predictions lock when the student commits. `pred-verify` opens at `theory-d` and `pred-thomson` at `theory-thomson`. Model answers stay closed until the student writes. No console errors.
+
+## Earlier findings: all resolved
+1. **The old blocking finding is resolved.** The `learn` goals no longer name the laser measurement or independent verification. Nothing above `pred-verify` answers it now.
+2. `thomson-data` comes before the Thomson section. The student reads a width-versus-temperature table (32, 65 and 129 nm for 0.10, 0.40 and 1.6 keV). From it the student finds "four times the temperature, twice the width" and places the measured 100 nm at about 1 keV. The distractor "the width doubles when the temperature doubles" targets the right misconception. The `model` badge and the note are honest about where the numbers come from.
+3. `doubt` now comes after the pair exchange and says so.
+4. The `pred-thomson` prompt no longer gives away the Doppler link.
+5. The `report` prompt now says it can be finished at home.
+
+The unit meets the brief for *Science Across the Iron Curtain*:
+- why the two sides cooperated (`why-invite`, the role-play);
+- evidence versus circumstances (`doubt`, the sorting, `find-error`, check 3);
+- why independent verification matters (the Key idea, the report, the transfer task, check 1).
 
 ## Blocking
-1. **`inquiry.json` `learn` gives away `pred-verify`.** The goals stand at the top of the page (capture #1/#2), before the prediction. They say "explain how laser Thomson scattering measures …" and "argue why independent verification made the T-3 result trusted". The student reads that an independent laser measurement settled it, then is asked which way would settle it. Fix: change them to, for example, "explain how a plasma's electron temperature can be measured with laser light" and "evaluate how the T-3 result of 1968 came to be accepted, and convert a plasma temperature from keV to kelvins."
+None.
 
 ## Polish
-2. **Engagement, `theory-thomson`.** `pred-thomson` is revealed by text and a static figure. Let the student act on the evidence: either an `interpret` with two measured spectra and their widths ("which one is about 1 keV?"), or a small width-versus-$T_\text{e}$ slider. Then the physics of the measurement is investigated, not only read.
-3. **Order of `doubt`.** In the pair split, partner A reads Sources A and C only, but `doubt` asks about A and B and comes straight after `theory-b`. Move it after the pair exchange, or say "after your partner has explained Source B".
-4. **`pred-thomson` prompt.** The prompt already explains the Doppler spreading. Cut it to the setup ("electrons move in all directions; the scattered light is spread over a range of wavelengths") so that the student must reason out the link with speed.
-5. **Workload.** The unit has three written tasks in class (`why-invite`, `report`, `check-write`) plus the role-play. `teacher.md` already makes the report homework if needed: say so in the `report` prompt as well.
-
-## Checked against the brief (*Science Across the Iron Curtain*)
-- **Why they cooperated:** `why-invite` and the role-play, with four roles, a word bank and starters.
-- **Evidence and circumstances:** the sorting, `doubt`, `find-error` and check 3.
-- **Why independent verification matters:** the Key idea, the misconception about repeating and verifying, the report and the transfer task.
-
-The source labels and the teacher's note that the texts were written for the course support source criticism. The French tips compare with Finnish *y*.
+1. `thomson-data`: ask the student to say *between which rows* 100 nm lies before they choose. This makes the interpolation an explicit step, not just one choice among options.
 
 ## Shared issues
-The `pair` note is rendered after the textarea (`scripts/inquiry.py`; see fy14-secret-fusion).
+- The `pair` note is still rendered after the textarea (`scripts/inquiry.py`).

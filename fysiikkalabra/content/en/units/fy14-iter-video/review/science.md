@@ -1,19 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: dc30a3e24eb0b99d
+CONTENT-HASH: 14be3bd2753d402e
 
-Science review, 2026-11-01. The video itself was not watched. Every video claim used in a question or a model was checked against The B1M's own page (theb1m.com/video/inside-iter-worlds-largest-nuclear-fusion-reactor, read today). These are all on that page: 35 nations, $22BN, 23,000 t, a million components, 104 km, bridges and police convoys, ten times the Sun's core, twice a shuttle launch, uranium and plutonium, carbon-free and not weather-dependent, the Lego kit, languages and cultures, first power-on 2025, "net energy … at least for a few seconds", grid "a couple of decades away", Thinkproject paid promotion, 13 April 2022. "Cranes" is not on the page: it says only "overhead". It is a teacher-check item, which is fine. The unit claims nothing beyond the page and says so in `teacher.md`.
+Science re-review, 2026-11-01, of commit c6532e4f. Earlier Polish 1–3 are all fixed:
+- "35 nations" is now ITER's long-used count (EU-28, Switzerland and six Members). Today it is 34 (27 EU states, Switzerland and six), and the verdict is "outdated".
+- The cost row now gives official estimates of €18–22 billion (Wikipedia).
+- The `pred-focus` feedbacks now speak of "the channel's own text".
+The new `sort-claims` item ("35 nations" as outdated) and the moved activities agree with the table. Every video claim used is still on The B1M's own page, read today.
 
 ## Blocking
 None.
 
 ## Polish
-1. `unit.md` §Checked, row "35 nations", verdict "true then". By April 2022 the UK had already left (2020). Switzerland rejoined only in 2025–26. "35" is ITER's long-used figure (EU-28 + Switzerland + 6). Today's count is 27 + Switzerland + 6 = 34, as the table's own middle column implies. Fix the verdict to: "ITER's long-used figure; today 34".
-2. Same table, cost row: "ITER gives about 20 billion euros or more". The unit's source for this is Wikipedia ("official budget estimate … €18–20 billion"; "over €22 billion" in 2016). Fix: "official estimates of about €18–22 billion".
-3. `inquiry.json` `pred-focus`, the feedbacks: "Most of the video is about building…" is a claim about screen time, and it cannot be checked from the page. Write "The channel's own text spends most of its words on …".
+1. `unit.md` §Checked table, "no reactor has made more fusion energy …" row. The middle cell "NIF passed it in 2022" reads as if NIF made more energy than it took in. The paragraph under the table corrects this, but the cell stands alone. Fix: "NIF's target passed the laser energy in 2022".
+2. `inquiry.json` `pred-date`, the feedback of option 2030: "No ITER plan gave 2030." Before 2016 the official plans gave earlier dates, and none gave 2030. The claim is safer narrowed to "Neither the 2016 plan nor the 2024 plan gave 2030."
 
 ## Checked (correct)
-- 23,000 t, about a million components, 104 km, 150 vs 15 million °C (iter.org facts).
-- The 2024 baseline dates (PDF).
-- The NIF note, December 2022: target gain above 1, not facility gain.
-- Deuterium from water and tritium from lithium; Q = 10 and no electricity.
-- All choice keys and feedbacks, and the sort-claims keys.
+The table rows, the bare-year `pred-date` key (2025), the `check-2` key (the 2016 baseline said 2025 and the 2024 one says 2034), and the `check-1` and `check-3` keys.

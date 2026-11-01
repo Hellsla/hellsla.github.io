@@ -1,20 +1,26 @@
 VERDICT: FAIL
-CONTENT-HASH: c017b09db5bac17d
+CONTENT-HASH: 239a2f7980246a6a
 
-Pedagogy review of fy14-fusion-timeline (2026-11-01). I built the page and tested it in Playwright at 390 px. `screenshot.py` had not been run for this unit. The predictions lock and open at `theory-patterns`. Model answers stay closed until the student writes. No console errors. The theme counts in `task-themes` match `timeline.json` (26/23/15/40 events; politics 9 of 23).
+Pedagogy re-review of fy14-fusion-timeline (2026-11-01), after commit 3ed55db3. I rebuilt the page and tested it in Playwright at 390 px. The predictions lock when the student commits and open at `theory-patterns`, after Tasks 5a and 5b. Model answers stay closed until the student writes. No console errors.
+
+## Earlier findings
+- **Old Blocking 2 (phone usability) is resolved.** The cards now start closed. The main timeline is about 15,200 px at 390 px, down from 52,000. Tasks 3, 5a and 5b have their own small timelines next to the task (1,100, 4,100 and 1,000 px).
+- **Old Polish 3 is resolved.** In `task-geo` the student counts the seven countries and in `task-steps` subtracts the years (39). Both predictions are now revealed after the student has checked the data.
+- **Old Polish 4 is resolved.** Task 1 gives the counts. The student checks one row and interprets the list.
 
 ## Blocking
-1. **Task 3 and the 53 map links are broken.** Every "Show on the map →" goes to `fy14-global-fusion-explorer.html`, which returns 404: the unit does not exist in `content/en/units/`. `task-map` (7 minutes of the plan) cannot be done. Its criterion "status taken from the map panel" cannot be met. Fix: place a `map` component (`fx/map.js`, `data/facilities.json`) in this unit for Task 3, or until the map unit is published, drop `"map"` from the timeline data and rewrite Task 3 to use the cards.
-2. **Phone usability of the investigation.** At 390 px the timeline is about 52,000 px tall with *All eras* (104 cards, all open) and about 12,600 px with one era. The four exploration tasks are *below* it, so a pair on a phone must scroll tens of thousands of pixels between a task and its data. Fix: in `timeline.js`, collapse cards to date and title, opened on tap. Also put the exploration sheet before the timeline, or give each task a "go to the timeline" link and the timeline a sticky control bar.
+1. **The map links still return 404 (old Blocking 1).** The page now has 56 "Show on the map →" links, including the three in Task 3's own small timeline. All go to `fy14-global-fusion-explorer.html`, which does not exist: there is no `content/en/units/fy14-global-fusion-explorer/`. Nothing in the build or the review gate holds this unit back until the map unit is published. "Published together" is a note in `teacher.md`, not a check. `task-map` and its criterion "status taken from the map panel" cannot be done.
+   Fix, one of:
+   - in `timeline.js`, show "Show on the map" only when the target page exists in the build;
+   - leave `"map"` out of the unit's timeline elements until the map unit passes its reviews;
+   - give Task 3 a `map` component (`fx/map.js`, `data/facilities.json`) on this page.
+
+   When the map unit exists and is published with this one, this finding is resolved.
 
 ## Polish
-3. **The predictions are revealed by text, not by the student's own evidence.** `pred-time` says "you will check it in the timeline", but no task asks for it. Add to Task 2 or Task 4: "Search *JET*: in which year came 16 MW? How many years after T-1?" Add "Count the countries in the 1950s and since 2015" for `pred-geo`.
-4. **Task 1 workload.** Switching four eras and four themes to write 16 numbers is mechanical. Show the per-theme counts in the count line ("23 events: 5 science, 7 machines, 9 politics, 2 people"). Ask the student to interpret them instead.
-5. **The brief asks for authentic photographs** on the timeline. The cards are text only until the photo pass. This makes the timeline much less engaging than the brief intends.
-
-## Checked
-The chapter's big question is a writing task with starters and observable criteria. `find-error` and check 3 handle plans as plans. The misconception "history is a straight line" is good. `teacher.md` has plans for fast pairs and for running short of time.
+2. **The small timelines (`ids`) still show the era buttons, the theme menu and the search.** In `task-geo`, choosing an era such as "The birth of modern physics" gives an empty list. Hide the filters when `ids` is set.
+3. Task 4 (turning points) still uses the 15,000 px main timeline. Suggest the search or an era button in its prompt.
 
 ## Shared issues
-- `assets/units/fy14/fx/timeline.js`: cards are not collapsible and the list is very long (finding 2).
-- The `map` links point to an unpublished unit.
+- `fx/timeline.js`: the small timelines show filters that do not apply to them (Polish 2), and the links to the map unit are not checked (Blocking 1).
+- There are no photographs on the cards yet (the photo pass). The brief asks for them.
