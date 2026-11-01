@@ -1,16 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 34e4c1e8b25e449f
+CONTENT-HASH: e3b9ca921e71f66f
 
 ## Blocking
-(none left; list what you fixed under Fixed)
-
-## Fixed
-- lesson.md:24 — causality shifted: 'Siksi' put between Moon's size and the weaker interaction and the conclusion 'joten astronautti painaa vähemmän' lost → weaker interaction stated, then 'Siksi astronautti painaa Kuussa vähemmän.' (as in the Finnish)
-- lesson.md:18 — 'Asteikko kalibroidaan eli tehdään näin' (wrong gloss of kalibroida) → term explained: 'Se tarkoittaa, että asteikkoon merkitään oikeat lukemat.'
+(none)
 
 ## Polish
 - none
 
 ## Checked
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): lesson.md prose, table, worked example steps, misconception, summary; inquiry.json all fields incl. intros, names, source_note, choices/feedback and the two solutions; exit-ticket.json; figures.json (was empty, now filled with simplified descriptions; figures redrawn). Comma decimals, numbers, units and physics unchanged.
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked unit-in-math wrapping, the new check-c2 item, trimmed exit ticket, new figure description, lesson text.
+- Round 3 delta since 4253a4a: only lessons/FY3/fy3-1/sim.js drawChart title placement (drawn ts(8) higher, width capped at the chart's 292 px); lang/, content/fi-easy/FY3/fy3-1 unchanged (only the exercise review log carry.tsv in fi changed). No physics, numbers, readout, simState or text changed.
+- sim-390/sim-1280 (fi-easy, 10 kg, Maa): bars 16,2 / 37,1 / 98,1 / 248 N correct for m·g, axis top 248 = Jupiter weight, readout scale sentence agrees; title no longer touches G (N).
+- Earlier findings hold; check_i18n fi-easy: 0 errors. Hash e3b9ca921e71f66f at start and end.

@@ -24,7 +24,7 @@
 </svg>
 
 ## Ydinajatus
-Kun voima jakautuu pinnalle, sen vaikutus riippuu siitä, kuinka suurelle alalle se jakautuu. Nastan terävä kärki uppoaa seinään samalla voimalla, jolla tylppä kanta ei jätä jälkeäkään, ja sukset kantavat hangella, vaikka kengät uppoavat. Suure, joka kuvaa tätä, on paine: voima jaettuna sillä pinta-alalla, jolle voima jakautuu. Paineen yksikkö on pascal (Pa), ja 1 Pa = 1 N/m². Pascal on pieni yksikkö, joten arjessa käytetään kilopascalia: 1 kPa = 1000 Pa.
+Kun voima jakautuu pinnalle, sen vaikutus riippuu siitä, kuinka suurelle alalle se jakautuu. Nastan terävä kärki uppoaa seinään samalla voimalla, jolla tylppä kanta ei jätä jälkeäkään, ja sukset kantavat hangella, vaikka kengät uppoavat. Suure, joka kuvaa tätä, on paine: voima jaettuna sillä pinta-alalla, jolle voima jakautuu. Paineen yksikkö on pascal (Pa), ja $1\,\text{Pa} = 1\,\text{N/m}^2$. Pascal on pieni yksikkö, joten arjessa käytetään kilopascalia: $1\,\text{kPa} = 1000\,\text{Pa}$.
 
 <svg data-fig="pressure-area" viewBox="0 0 600 380" role="img" aria-label="Sama voima F kohdistuu samanlaiseen tiiliskiveen kahdella tavalla. Vasemmalla tiili on pystyssä ja koskettaa alustaa pienellä alalla A1, jolloin paine p1 = F/A1 on suuri. Oikealla tiili on kyljellään ja koskettaa alustaa kolme kertaa suuremmalla alalla A2 = 3 A1, jolloin paine p2 = F/A2 on kolmasosa vasemman paineesta. Voimanuolet ovat yhtä pitkät. Kontaktialat ovat mittakaavassa, kaaviokuva muuten." style="max-width:100%;font-size:24px">
   <defs><pattern id="fy34-snow" width="14" height="14" patternUnits="userSpaceOnUse"><rect width="14" height="14" fill="#eef5f9"/><circle cx="3" cy="4" r="1.3" fill="#a9d1f0"/><circle cx="10" cy="10" r="1.3" fill="#a9d1f0"/></pattern></defs>
@@ -78,22 +78,22 @@ Kaasun paine syntyy mikromallin mukaan hiukkasten törmäyksistä astian seinäm
 Paine ei ole voima vaan voiman ja alan suhde, ja levossa olevassa nesteessä paine vaikuttaa joka suuntaan yhtä suurena. Jos paine sivulle olisi pienempi kuin alaspäin, vesi valuisi sivuun eikä pysyisi levossa. Jos pullon kylkeen tekee reikiä usealle korkeudelle, alimmasta reiästä vesi suihkuaa voimakkaimmin, koska paine kasvaa syvyyden mukana. Paineen aiheuttama voima on aina kohtisuorassa pintaa vastaan: padon pystysuoraan seinään voima osoittaa vaakasuoraan, sukeltajan kehoon joka puolelta. Siksi voima voidaan tässä laskea pelkkänä suuruutena, suunta tulee pinnasta.
 
 ### Ilmanpaine ja ylipaine
-Veden pinnalla vaikuttaa jo ilmakehän paine eli ilmanpaine, joka on merenpinnan tasolla noin 101 kPa. Se on ilmapatsaan paino pinta-alaa kohti. Ilmanpaine vaikuttaa myös veden pintaan ja välittyy veden kautta syvyyteen. Veden alla kokonaispaine on siis ilmanpaineen ja hydrostaattisen paineen summa. Kymmenen metrin syvyydessä hydrostaattinen paine on jo suunnilleen yhden ilmanpaineen suuruinen.
+Veden pinnalla vaikuttaa jo ilmakehän paine eli ilmanpaine, joka on merenpinnan tasolla noin $101\,\text{kPa}$. Se on ilmapatsaan paino pinta-alaa kohti. Ilmanpaine vaikuttaa myös veden pintaan ja välittyy veden kautta syvyyteen. Veden alla kokonaispaine on siis ilmanpaineen ja hydrostaattisen paineen summa. Kymmenen metrin syvyydessä hydrostaattinen paine on jo suunnilleen yhden ilmanpaineen suuruinen.
 
-Tämä vastaa alun kysymykseen. Ilmanpaine vaikuttaa padon muuriin molemmilta puolilta, joten muuria kuormittaa vain veden ylipaine eli paineen ilmanpainetta suurempi osa. Ylipaine on yläreunassa nolla ja kasvaa syvyyden mukana tasaisesti: 30 metrin syvyydessä se on noin 290 kPa, eli jokaiseen muurin neliömetriin kohdistuu noin 290 kN:n voima. Siksi muurin alaosan on kestettävä paljon suurempi voima kuin yläosan, ja muuri tehdään pohjalta paksuksi.
+Tämä vastaa alun kysymykseen. Ilmanpaine vaikuttaa padon muuriin molemmilta puolilta, joten muuria kuormittaa vain veden ylipaine eli paineen ilmanpainetta suurempi osa. Ylipaine on yläreunassa nolla ja kasvaa syvyyden mukana tasaisesti: 30 metrin syvyydessä se on noin $290\,\text{kPa}$, eli jokaiseen muurin neliömetriin kohdistuu noin $290\,\text{kN}$:n voima. Siksi muurin alaosan on kestettävä paljon suurempi voima kuin yläosan, ja muuri tehdään pohjalta paksuksi.
 
 ## Kaava: Paine ja hydrostaattinen paine
 Paine on pintaa vastaan kohtisuora voima jaettuna pinta-alalla:
 ```latex
 p = \frac{F}{A}
 ```
-missä $p$ on paine (Pa), $F$ pintaa vastaan kohtisuora voima (N) ja $A$ pinta-ala (m²). Yksi pascal on yhden newtonin voima yhden neliömetrin alalle: 1 Pa = 1 N/m².
+missä $p$ on paine (Pa), $F$ pintaa vastaan kohtisuora voima (N) ja $A$ pinta-ala (m²). Yksi pascal on yhden newtonin voima yhden neliömetrin alalle: $1\,\text{Pa} = 1\,\text{N/m}^2$.
 
 Nesteessä syvyydessä $h$ paine on
 ```latex
 p = p_0 + \rho g h
 ```
-missä $p_0$ on paine nesteen pinnalla, yleensä ilmanpaine (Pa), $\rho$ nesteen tiheys (kg/m³), $g$ = $9{,}81\,\text{m/s}^2$ ja $h$ syvyys pinnasta (m). Termi $\rho g h$ on hydrostaattinen paine eli ylipaine $\Delta p = p - p_0$, joka kertoo, kuinka paljon paine on pinnan painetta suurempi. Kuvaaja $(h, p)$ on suora, jonka kulmakerroin on $\rho g$ ja vakiotermi $p_0$, kuten FY1:n lineaarisessa mallissa $y = kx + b$. Vedelle $\rho$ = $1000\,\text{kg/m}^3$, joten paine kasvaa 9,81 kPa jokaista metriä kohti.
+missä $p_0$ on paine nesteen pinnalla, yleensä ilmanpaine (Pa), $\rho$ nesteen tiheys (kg/m³), $g$ = $9{,}81\,\text{m/s}^2$ ja $h$ syvyys pinnasta (m). Termi $\rho g h$ on hydrostaattinen paine eli ylipaine $\Delta p = p - p_0$, joka kertoo, kuinka paljon paine on pinnan painetta suurempi. Kuvaaja $(h, p)$ on suora, jonka kulmakerroin on $\rho g$ ja vakiotermi $p_0$, kuten FY1:n lineaarisessa mallissa $y = kx + b$. Vedelle $\rho$ = $1000\,\text{kg/m}^3$, joten paine kasvaa $9{,}81\,\text{kPa}$ jokaista metriä kohti.
 
 <svg data-fig="pressure-depth" viewBox="0 0 600 340" role="img" aria-label="Kuvaaja mittakaavassa: veden paine p kilopascaleina syvyyden h funktiona, kun h on 0–10 m. Paine on nouseva suora: pinnalla paine on ilmanpaine 101 kPa ja 10 metrin syvyydessä noin 199 kPa. Suoran ja katkoviivan väli on hydrostaattinen paine ρgh." style="max-width:100%;font-size:24px">
   <line x1="173" y1="285" x2="173" y2="70" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -141,7 +141,7 @@ missä $p_0$ on paine nesteen pinnalla, yleensä ilmanpaine (Pa), $\rho$ nesteen
 </svg>
 
 ## Esimerkki
-Sukeltaja on järvessä $12{,}0\,\text{m}$:n syvyydessä vedenalaisen tarkkailuhuoneen ikkunan vieressä. Ilmanpaine pinnalla on 101 kPa ja veden tiheys $1000\,\text{kg/m}^3$. Mikä on paine sukeltajan ympärillä, ja kuinka suuri voima kohdistuu ikkunaan, jonka pinta-ala on 150 cm², kun huoneessa on ilmaa normaalipaineessa?
+Sukeltaja on järvessä $12{,}0\,\text{m}$:n syvyydessä vedenalaisen tarkkailuhuoneen ikkunan vieressä. Ilmanpaine pinnalla on $101\,\text{kPa}$ ja veden tiheys $1000\,\text{kg/m}^3$. Mikä on paine sukeltajan ympärillä, ja kuinka suuri voima kohdistuu ikkunaan, jonka pinta-ala on $150\,\text{cm}^2$, kun huoneessa on ilmaa normaalipaineessa?
 
 <!-- vaihe -->
 
@@ -198,10 +198,10 @@ F &= \rho g h \cdot A
 Moni ajattelee, että paine pohjassa riippuu siitä, kuinka paljon vettä astiassa on. Kapeassa putkessa ja leveässä altaassa, joissa vesi ulottuu samaan korkeuteen, pohjan paine on sama, vaikka altaassa on tuhatkertainen määrä vettä. Paine riippuu vain syvyydestä, tiheydestä ja pinnan paineesta. Toinen virhe on sekoittaa paine ja voima: nastan terävä kärki ei tuota suurempaa voimaa kuin kanta, vaan jakaa saman voiman pienemmälle alalle, jolloin paine on suurempi. Kolmas virhe on unohtaa ilmanpaine: pelkkä $\rho g h$ antaa vain ylipaineen, ja kokonaispaine veden alla on aina sitä suurempi.
 
 ## Tiivistelmä
-- Paine on voima pinta-alaa kohti: $p = F/A$. Yksikkö on pascal, 1 Pa = 1 N/m², ja 1 kPa = 1000 Pa.
+- Paine on voima pinta-alaa kohti: $p = F/A$. Yksikkö on pascal, $1\,\text{Pa} = 1\,\text{N/m}^2$, ja $1\,\text{kPa} = 1000\,\text{Pa}$.
 - Nesteessä paine kasvaa syvyyden mukana: $p = p_0 + \rho g h$. Termi $\rho g h$ on hydrostaattinen paine, ja se riippuu vain syvyydestä ja tiheydestä, ei astian muodosta.
 - Paineen aiheuttama voima on kohtisuorassa pintaa vastaan ja vaikuttaa nesteessä joka suuntaan.
-- Ilmanpaine on merenpinnan tasolla noin 101 kPa. Vedessä paine kasvaa noin yhden ilmanpaineen verran jokaista kymmentä metriä kohti.
+- Ilmanpaine on merenpinnan tasolla noin $101\,\text{kPa}$. Vedessä paine kasvaa noin yhden ilmanpaineen verran jokaista kymmentä metriä kohti.
 
 <svg data-fig="scene" viewBox="0 0 600 360" role="img" aria-label="Kuvitus: sukeltaja on syvällä järvessä. Vesi tummuu syvemmälle mentäessä, ilmakuplat nousevat pintaan, ja sukeltajan ranteessa on syvyys- ja painemittari." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy34s-water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></linearGradient><linearGradient id="fy34s-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#eef5f9"/></linearGradient></defs>

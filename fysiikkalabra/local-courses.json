@@ -48,5 +48,218 @@
       {"id": "fy1-4", "why": "kuvaajan laatiminen, suoran sovittaminen ja kulmakertoimen tulkinta"},
       {"id": "fy1-8", "why": "oman kokeellisen tutkimuksen suunnittelu, toteutus ja raportointi"}
     ]
+  },
+  "FY14": {
+    "title": "Road to Fusion",
+    "subtitle": "Modernin fysiikan synnystä ITERiin.",
+    "school": "Kiviruukin lukio",
+    "status": "ready",
+    "authors": [
+      "Lauri Hellsten",
+      "Marjo Inkala"
+    ],
+    "language": "en",
+    "sessions": 16,
+    "description": "Englanninkielinen monitieteinen opintojakso, jossa yhdistyvät fysiikka, englanti ja ranska (CLIL). Kurssi etenee modernin fysiikan synnystä ytimen energiaan, tähtien fuusioon, plasmaan, kylmän sodan fuusiokilpailuun ja kansainväliseen ITER-hankkeeseen. Koko kurssi vastaa yhteen kysymykseen: jos fuusio on ymmärretty lähes sata vuotta, miksi fuusiosähkön tuottaminen on yhä niin vaikeaa?",
+    "goals": [
+      "selittämään, miksi klassinen fysiikka ei riittänyt ja miten kvanttifysiikka syntyi",
+      "laskemaan ydinreaktioiden energioita massavajeen ja sidosenergian avulla",
+      "selittämään, miksi fuusio vaatii äärimmäisiä lämpötiloja ja miten plasmaa hallitaan magneettikentillä",
+      "arvioimaan, miten politiikka, yhteistyö ja tekniikka ovat ohjanneet fuusiotutkimusta",
+      "erottamaan todennetut tutkimustulokset ennusteista ja kaupallisista lupauksista",
+      "keskustelemaan ja kirjoittamaan tieteestä englanniksi ja selviytymään arkitilanteista ranskaksi"
+    ],
+    "overview": "Opintojaksossa on noin 16 opetuskertaa: 8 fysiikan, 5 ranskan ja 3 projektikertaa. Fotoni-laboratoriovierailu on näiden kertojen lisäksi. ★ merkitsee valinnaista lisämateriaalia, jota ei tarvita opintojakson suorittamiseen.",
+    "chapters": [
+      {
+        "title": "The Birth of Modern Physics",
+        "question": "Why did classical physics fail to explain everything?",
+        "units": [
+          {
+            "id": "fy14-classical-limits",
+            "title": "When classical physics ran out of answers",
+            "optional": true
+          },
+          {
+            "id": "fy14-photoelectric",
+            "title": "Light as particles: the photoelectric effect"
+          },
+          {
+            "id": "fy14-atom-models",
+            "title": "From Rutherford's nucleus to Bohr's atom",
+            "optional": true
+          },
+          {
+            "id": "fy14-quantum-tunnelling",
+            "title": "Waves, probability and quantum tunnelling",
+            "optional": true
+          }
+        ]
+      },
+      {
+        "title": "Inside the Atom",
+        "question": "How can such a small nucleus contain so much energy?",
+        "units": [
+          {
+            "id": "fy14-nucleus",
+            "title": "Building nuclei: isotopes and nuclear notation"
+          },
+          {
+            "id": "fy14-binding-energy",
+            "title": "Mass defect and binding energy",
+            "optional": true
+          }
+        ]
+      },
+      {
+        "title": "The Energy of the Stars",
+        "question": "Why hasn't the Sun burned out?",
+        "units": [
+          {
+            "id": "fy14-sun-puzzle",
+            "title": "The puzzle of the Sun's energy"
+          },
+          {
+            "id": "fy14-fusion-reactions",
+            "title": "Fusion reactions: from the Sun to deuterium and tritium"
+          }
+        ]
+      },
+      {
+        "title": "Plasma: The Fourth State of Matter",
+        "question": "How can we control something hotter than the centre of the Sun?",
+        "units": [
+          {
+            "id": "fy14-plasma",
+            "title": "Plasma: the fourth state of matter"
+          },
+          {
+            "id": "fy14-magnetic-confinement",
+            "title": "Charged particles and magnetic confinement",
+            "optional": true
+          }
+        ]
+      },
+      {
+        "title": "The Cold War and the Race for Fusion",
+        "question": "How did the Cold War influence scientific research?",
+        "units": [
+          {
+            "id": "fy14-secret-fusion",
+            "title": "Secret beginnings: fusion research to the 1950s"
+          },
+          {
+            "id": "fy14-iron-curtain",
+            "title": "Science across the Iron Curtain"
+          },
+          {
+            "id": "fy14-big-machines",
+            "title": "Big machines and world politics: 1970s to 1985",
+            "optional": true
+          },
+          {
+            "id": "fy14-fusion-timeline",
+            "title": "Fusion history: an interactive timeline",
+            "optional": true
+          }
+        ]
+      },
+      {
+        "title": "From Early Machines to Modern Reactors",
+        "question": "Which reactor design has the best chance of making fusion work?",
+        "units": [
+          {
+            "id": "fy14-confinement-concepts",
+            "title": "Pinches, lasers and other paths to fusion",
+            "optional": true
+          },
+          {
+            "id": "fy14-tokamak-stellarator",
+            "title": "Tokamak or stellarator?",
+            "optional": true
+          }
+        ]
+      },
+      {
+        "title": "ITER: An International Megaproject",
+        "question": "Can the world's largest fusion collaboration succeed?",
+        "units": [
+          {
+            "id": "fy14-iter-project",
+            "title": "ITER: why, where and who"
+          },
+          {
+            "id": "fy14-inside-iter",
+            "title": "Inside ITER: the machine and fusion gain"
+          },
+          {
+            "id": "fy14-iter-video",
+            "title": "Inside the largest fusion reactor: a video investigation",
+            "optional": true
+          },
+          {
+            "id": "fy14-iter-media",
+            "title": "ITER: promise, progress and reality",
+            "optional": true
+          }
+        ]
+      },
+      {
+        "title": "Fusion, Energy and Society",
+        "question": "Could fusion become part of our future energy system?",
+        "units": [
+          {
+            "id": "fy14-fusion-society",
+            "title": "Fusion in the energy system"
+          },
+          {
+            "id": "fy14-fusion-debate",
+            "title": "Debate: should governments invest more in fusion?",
+            "optional": true
+          },
+          {
+            "id": "fy14-global-fusion-explorer",
+            "title": "Global Fusion Explorer",
+            "optional": true
+          }
+        ]
+      },
+      {
+        "title": "Fotoni Lab Visit",
+        "question": "What can we measure about light and electrons ourselves?",
+        "units": [
+          {
+            "id": "fy14-fotoni",
+            "title": "Fotoni lab visit: modern physics experiments"
+          }
+        ]
+      },
+      {
+        "title": "Le français de la fusion",
+        "question": "How do you get by in French on a visit to France?",
+        "units": [
+          {
+            "id": "fy14-fr-bonjour",
+            "title": "Bonjour ! Introducing yourself"
+          },
+          {
+            "id": "fy14-fr-nombres",
+            "title": "Numbers and prices"
+          },
+          {
+            "id": "fy14-fr-cafe",
+            "title": "Au café: a role-play"
+          },
+          {
+            "id": "fy14-fr-cadarache",
+            "title": "At a research centre in Provence"
+          },
+          {
+            "id": "fy14-fr-lire",
+            "title": "Reading French news without a dictionary"
+          }
+        ]
+      }
+    ]
   }
 }

@@ -1,10 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: c317a9201957d537
+CONTENT-HASH: e3b9ca921e71f66f
 
 ## Blocking
+(none)
 
 ## Polish
-- None.
+- none
 
 ## Checked
-batch delta review: every `learn` goal completes "Tällä tunnilla opit" with a lowercase -maan/-mään verb in parallel form; the skill, demand, key terms, symbols and numbers match the previous wording; plain Selkeä suomi.
+- Round 3 delta since 4253a4a: only the chart title's position and width cap in sim.js; no text, lang key or lesson content changed.
+- sim-390 and sim-1280: "Sama massa, paino eri paikoissa" on its own line above G (N), no overlap, readable size on a phone; readout scale sentence still matches the axis 0–248 N.
+- Earlier findings hold; check_i18n fi-easy: 0 errors. Hash e3b9ca921e71f66f at start and end.

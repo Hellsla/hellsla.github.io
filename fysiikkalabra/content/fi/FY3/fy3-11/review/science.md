@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: b726ca376903e1f8
+CONTENT-HASH: 24f3551fe9d8cba8
 
 ## Blocking
+- none
 
 ## Polish
+- none
 
 ## Checked
-batch delta review (round 1, 2026-10-28): the hashed content on this branch is identical to the version passed on main after the physics audit (same hash b726ca376903e1f8; git diff against origin/main touches only review/usage.tsv), so the diff is empty. The sim LaTeX pass (KaTeX labels and readouts in lang/fi.json, window.simText tests, howto/model/calc boxes) is already part of that passed version; spot-read its sim strings for physics, symbols and units against the guardrails: no new or changed claim.
+Judged the change since the passed version (hash 3ed8319b): sim.js W_k label now `__('wk')` with lang/fi.json sims.fy3-11.wk = W_\\text{k} (same TeX as before, both in the work-area label and in the Delta U + W_k bar label). Output is identical, the sim does not change any computation, state or simState, so the model, limits and numbers approved earlier (isobaric heating, W_k = p dV, dU = 3/2 p dV, cycle work and efficiency) stand. Deterministic checks (sims, latex, inquiry 65 passed) ok.

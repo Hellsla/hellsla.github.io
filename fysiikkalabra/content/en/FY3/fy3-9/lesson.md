@@ -345,7 +345,7 @@ T = \theta + 273.15\,\text{K}
 ```
 where $\theta$ is the temperature in degrees Celsius as a number; in calculations $273\,\text{K}$ is enough.
 
-<svg data-fig="absolute-zero" viewBox="0 0 600 622" role="img" aria-label="Graphs to scale when T is 0–400 K. Above, the volume of a gas at constant pressure, below, the pressure of a gas at constant volume, as a function of the temperature in kelvins. The measurement points between 253 and 373 K are on a straight line. The extension of the line, drawn dashed, passes through the origin: the volume or the pressure would be zero at absolute zero, 0 K, that is, −273 °C." style="max-width:100%;font-size:24px">
+<svg data-fig="absolute-zero" viewBox="0 0 600 640" role="img" aria-label="Graphs to scale when T is 0–400 K. Above, the volume of a gas at constant pressure, below, the pressure of a gas at constant volume, as a function of the temperature in kelvins. The measurement points between 253 and 373 K are on a straight line. The extension of the line, drawn dashed, passes through the origin: the volume or the pressure would be zero at absolute zero, 0 K, that is, −273 °C." style="max-width:100%;font-size:24px">
   <line x1="179.5" y1="240" x2="179.5" y2="76" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="263" y1="240" x2="263" y2="76" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="346.5" y1="240" x2="346.5" y2="76" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>

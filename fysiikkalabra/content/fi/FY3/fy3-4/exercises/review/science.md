@@ -1,12 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 71f841a0fe71562f
-
-Round 2: L2-03 tolerance 0,03 → 0,04; the round-1 blocking item is fixed.
+CONTENT-HASH: 54b0a1df7915e8ab
 
 ## Blocking
 - none
+
 ## Polish
 - none
+
 ## Checked
-- Tolerance 0,04 on 6,0 m accepts 5,76–6,24 m, which covers the solution's stated 5,8–6,2 m; the swapped ratio 4,0 · 10/15 = 2,7 m stays rejected.
-- Recomputed: k_A = 10 kPa/m, k_B = 15 kPa/m, p_B(4,0 m) = 160 kPa, h_A = 6,0 m.
+Re-review after typesetting round. exercises.json only: numbers with units re-set as maths (720 N, 0,30 m², 98,5 kPa, 750 N, 0,0025 m², 600 N, 1,5 cm², 350 kPa, 0,85 bar and 1 bar = 100 kPa, 380 cm², 6,0 kPa, 0,25 m²). Word-level diff shows identical digits and units; answers.py, solutions.md unchanged, so answers still match (e.g. 720/0,30 = 2,4 kPa; 750/0,0025 = 300 kPa; 600/1,5e-4 = 4,0 MPa; 85 kg·9,81/6,0 kPa = 0,14 m²; 0,85 bar·380 cm² = 3,2 kN). Case endings ($…$:n) fine, LaTeX valid.

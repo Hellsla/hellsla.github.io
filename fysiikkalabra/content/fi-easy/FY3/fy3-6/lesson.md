@@ -317,7 +317,7 @@ Toinen virhe on laskea tasapainolämpötila keskiarvona. Esimerkki: $1{,}0\,\tex
 &T = 35\,{}^\circ\text{C}
 \end{aligned}
 ```
-Kuuma vesi on vasemmalla puolella, kuten yleisessä yhtälössä. Kolmannella rivillä yhtälö on jaettu puolittain kilogrammalla ja sulut on kerrottu auki. Lopputulos ei siis ole $50\,{}^\circ\text{C}$ vaan $35\,{}^\circ\text{C}$. Kylmää vettä on nimittäin kolme kertaa enemmän kuin kuumaa. Saman tuloksen saa painotetulla keskiarvolla: $T = \tfrac{3{,}0\,\text{kg} \cdot 20\,{}^\circ\text{C} + 1{,}0\,\text{kg} \cdot 80\,{}^\circ\text{C}}{4{,}0\,\text{kg}} = 35\,{}^\circ\text{C}$.
+Kuuma vesi on vasemmalla puolella, kuten yleisessä yhtälössä. Kolmannella rivillä yhtälö on jaettu puolittain kilogrammalla ja sulut on kerrottu auki. Lopputulos ei siis ole $50\,{}^\circ\text{C}$ vaan $35\,{}^\circ\text{C}$. Kylmää vettä on nimittäin kolme kertaa enemmän kuin kuumaa. Saman tuloksen saa painotetulla keskiarvolla: $T = (3{,}0\,\text{kg} \cdot 20\,{}^\circ\text{C} + 1{,}0\,\text{kg} \cdot 80\,{}^\circ\text{C}) : 4{,}0\,\text{kg} = 35\,{}^\circ\text{C}$.
 
 Kolmas virhe on muuntaa $\Delta T$ kelvineiksi lisäämällä 273. Lämpötilan muutos on sama kummallakin asteikolla.
 

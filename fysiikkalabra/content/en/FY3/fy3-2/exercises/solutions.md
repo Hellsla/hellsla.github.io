@@ -6,7 +6,7 @@
 **Conversions:** The force is in newtons and the distance in metres, so the product is directly in joules ($1\,\text{J} = 1\,\text{N}\cdot\text{m}$). Finally $1\,\text{kJ} = 1000\,\text{J}$.
 **Substitution:** $W = 80\,\text{N} \cdot 25\,\text{m} = 2000\,\text{J} = 2.000\,\text{kJ}$
 **Answer:** $2.0\,\text{kJ}$, two significant figures like the given values $80\,\text{N}$ and $25\,\text{m}$.
-**Reasonableness:** Rough estimate: $80\,\text{N} \approx 8\,\text{kg}$ in weight, and $8\,\text{kg}\cdot 10\,\tfrac{\text{m}}{\text{s}^2}\cdot 25\,\text{m} = 2000\,\text{J}$. The same work would lift a $20\,\text{kg}$ object about $10\,\text{m}$ ($20\,\text{kg}\cdot 9.81\,\tfrac{\text{m}}{\text{s}^2}\cdot 10\,\text{m} \approx 2.0\,\text{kJ}$). $W$ is positive because the force is in the direction of motion.
+**Reasonableness:** Rough estimate: $80\,\text{N} \approx 8\,\text{kg}$ in weight, and $8\,\text{kg}\cdot 10\,\tfrac{\text{m}}{\text{s}^2}\cdot 25\,\text{m} = 2000\,\text{J}$. The same work would lift a $20\,\text{kg}$ object about $10\,\text{m}$: $20\,\text{kg}\cdot 9.81\,\tfrac{\text{m}}{\text{s}^2}\cdot 10\,\text{m} \approx 2.0\,\text{kJ}$. $W$ is positive because the force is in the direction of motion.
 
 ## fy3-2-L1-02
 **Given:** weight $G = 150\,\text{N}$, lifting height $h = 1.2\,\text{m}$, slow lift
@@ -26,7 +26,7 @@
 **Conversions:** $36\,\text{kJ} = 36 \cdot 1000\,\text{J} = 36\,000\,\text{J}$, so that the result comes out in watts ($1\,\text{W} = 1\,\text{J/s}$). Finally $1\,\text{kW} = 1000\,\text{W}$.
 **Substitution:** $P = \dfrac{36\,000\,\text{J}}{12\,\text{s}} = 3000\,\text{W} = 3.000\,\text{kW}$
 **Answer:** $3.0\,\text{kW}$, two significant figures like the time $12\,\text{s}$.
-**Reasonableness:** The units kilojoule and second give kilowatts directly: $\tfrac{36\,\text{kJ}}{12\,\text{s}} = 3\,\tfrac{\text{kJ}}{\text{s}} = 3\,\text{kW}$. With this power you could lift a load of about $300\,\text{kg}$ at a steady one metre per second ($300\,\text{kg}\cdot 9.81\,\tfrac{\text{m}}{\text{s}^2}\cdot 1\,\tfrac{\text{m}}{\text{s}} \approx 2.9\,\text{kW}$), which suits the motor of a lift.
+**Reasonableness:** The units kilojoule and second give kilowatts directly: $\tfrac{36\,\text{kJ}}{12\,\text{s}} = 3\,\tfrac{\text{kJ}}{\text{s}} = 3\,\text{kW}$. With this power you could lift a load of about $300\,\text{kg}$ at a steady one metre per second: $300\,\text{kg}\cdot 9.81\,\tfrac{\text{m}}{\text{s}^2}\cdot 1\,\tfrac{\text{m}}{\text{s}} \approx 2.9\,\text{kW}$. This suits the motor of a lift.
 
 ## fy3-2-L1-04
 **Given:** read from the graph, force $F_1 = 25\,\text{N}$ over $0\ldots 6\,\text{m}$ and $F_2 = 10\,\text{N}$ over $6\ldots 10\,\text{m}$, the force is in the direction of motion
@@ -67,7 +67,7 @@
 **Conversions:** $1.5\,\text{kW} = 1500\,\text{W}$ and $4.0\,\text{min} = 4.0 \cdot 60\,\text{s} = 240\,\text{s}$, so that the work comes out in joules. Finally $1\,\text{kJ} = 1000\,\text{J}$.
 **Substitution:** $W = 1500\,\text{W} \cdot 240\,\text{s} = 360\,000\,\text{J} = 360\,\text{kJ}$
 **Answer:** $360\,\text{kJ}$, two significant figures like the power $1.5\,\text{kW}$ and the time $4.0\,\text{min}$.
-**Reasonableness:** Another route: $1.5\,\text{kW} \cdot \tfrac{4}{60}\,\text{h} = 0.10\,\text{kWh}$, and $1\,\text{kWh} = 3600\,\text{kJ}$, so $0.10 \cdot 3600\,\text{kJ} = 360\,\text{kJ}$. This work could lift $1000\,\text{kg}$ of water to a height of about $37\,\text{m}$ ($\tfrac{360\,000\,\text{J}}{1000\,\text{kg}\cdot 9.81\,\text{m/s}^2} \approx 37\,\text{m}$).
+**Reasonableness:** Another route: $1.5\,\text{kW} \cdot \tfrac{4}{60}\,\text{h} = 0.10\,\text{kWh}$, and $1\,\text{kWh} = 3600\,\text{kJ}$, so $0.10 \cdot 3600\,\text{kJ} = 360\,\text{kJ}$. This work could lift $1000\,\text{kg}$ of water to a height of about $37\,\text{m}$: $\tfrac{360\,000\,\text{J}}{1000\,\text{kg}\cdot 9.81\,\text{m/s}^2} \approx 37\,\text{m}$.
 
 ## fy3-2-L2-03
 **Given:** mass $m = 850\,\text{kg}$, lifting height $h = 30\,\text{m}$, slow lift, $g = 9.81\,\text{m/s}^2$

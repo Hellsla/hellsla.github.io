@@ -1,10 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 1b250c4eae57155d
+CONTENT-HASH: 0b2d8154f98ba8a6
 
 ## Blocking
+(none)
 
 ## Polish
-- A goal keeps a short second sentence of explanation after the -maan/-mään clause; it reads acceptably in Selkeä suomi, but folding it into the clause would be tidier.
+- None.
 
 ## Checked
-batch delta review: every `learn` goal completes "Tällä tunnilla opit" with a lowercase -maan/-mään verb in parallel form; the skill, demand, key terms, symbols and numbers match the previous wording; plain Selkeä suomi.
+- Delta review 2026-11-01: the learn list now continues the page prefix and the experiment panels show translated values.
+- Learn list reads correctly after "In this lesson, you will learn to" / "Tällä tunnilla opit"; teaching sequence identical to the Finnish; no Finnish words left in experiment names or values; check_i18n 0 errors.

@@ -1,19 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 53a1321f7866ba94
+CONTENT-HASH: a31dd74dd56c8b2c
 
 ## Blocking
-(none left; see Fixed)
-
-## Fixed
-- lesson.md — worked example (Periaate, Yksikkömuunnokset, Tulos, Järkevyys) and the misconception paragraph were still the dense Finnish original → split into short sentences, significant figures explained in brackets, 'verrannollinen' explained, 'liikuntasauma' explained at first use, 'mikromalli (hiukkasmalli)' explained.
-- figures.json — was empty (figures showed the dense Finnish); filled all 15 values (labels kept, 4 descriptions simplified) and redrew with figures.py.
-- inquiry.json:pred-1 choice 1 feedback — typo "100 K, Mallin" → "100 K. Mallin".
-- inquiry.json — long choice texts (pred-3 Bea and Cem, olomuodot choice 3, check-1 choice 3, kertaus choice 2 feedback) split into short sentences; worked solutions of siirto and check-2 (Periaate, Vastaus, Järkevyys) simplified, formulas unchanged.
+(none)
 
 ## Polish
 - None.
 
 ## Checked
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): lesson.md, inquiry.json (all prompts, choices, feedback, hints, mistakes, solutions, experiment intros/names, howto/model), exit-ticket.json, meta.json and figures.json against the Finnish; sim labels sims.fy3-8 resolved in the language. Compared physics statements, signs, 'at least/at most', quantities, units, symbols in prose, chapter titles from courses.json, decimal sign, step labels.
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked the changed lesson texts (unit formatting, interactions wording, water/liquid caveat), the new check-c2 hole item, the trimmed exit ticket, the new activity titles and the figure description against the new Finnish.
-- Update 2026-10-29 (sim LaTeX PR #132): pred-3 reveal {after: theory, min: 1} and exp-1 intro "Testaa ennuste 1." match the Finnish source exactly; pred-3 still has Bea alone correct and all four feedbacks translate the Finnish physics (asymmetric vibration, particles keep their size, heat is transferred energy); no other text still refers to prediction 3 being tested in experiment 1. lang/fi-easy.json inquiry.pending_theory "Ennusteesi on tallessa. Saat palautteen, kun olet lukenut teoriaosan." says the same as the Finnish and the built page carries it. The Finnish source and this translation changed only in these lines since the last PASS; check_i18n 0 errors; test_sims fy3-8 PASS in this language.
+- Delta review 2026-11-01 (commit 79af52c4 and learn list): the new `values` maps for the experiment panels and the learn-list wording, compared with the reviewed Finnish source.
+- inquiry.json: experiment `values` map (keys unchanged, plain Finnish values) gives the right terms; physics, numbers, answers and feedback unchanged and equal to the Finnish.

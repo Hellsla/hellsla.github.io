@@ -14,6 +14,15 @@ A course's fields (all texts in the language of the file):
   report                                 [{title, text}]: the sections of the course's report template
   prepare                                [{id, why}]: published Ruukkilabra chapters to study first, by lesson id;
                                          linked only where the language published the chapter, never a broken link
+  authors                                optional: the course's authors, shown under its title
+  language                               optional: the language its units are written in (FY14: "en"); the course page
+                                         of every language says so and links to the units in that language's folder
+  chapters                               optional: [{title, question, units: [{id, title}]}], the course's chapters and
+                                         their units (scripts/units.py) in teaching order; a unit not yet published is
+                                         named as coming; a unit with "optional": true is marked ★ (optional extra material)
+  sessions                               optional: about how many lessons the course is taught in; the front page
+                                         says "about N lessons" instead of counting the units (FY14: 16)
+  overview                               optional: one paragraph after the chapters' lead (FY14: sessions, ★, Fotoni)
   pathway                                investigation ids in the course's order; the course page lists its published
                                          investigations in this order, any others after them by title
   python scripts/local_courses.py        validate the registry (also run by build.py and test_home.py)
@@ -24,7 +33,7 @@ from courses import ROOT
 import i18n
 
 REGISTRY = "local-courses.json"
-STATUSES = ("planning",)                 # add one (and its lang key site.local_status_<status>) when a course needs it
+STATUSES = ("planning", "building", "ready")        # add one (and its lang key site.local_status_<status>) when a course needs it; "ready" shows no status box (teacher 2026-11-01)
 TEXT_FIELDS = ("title", "subtitle", "school", "description")
 esc = lambda s: _h.escape(str(s), quote=True)
 
@@ -53,17 +62,32 @@ def validate(curriculum):
         for p in c.get("prepare", []):
             if p.get("id") not in lessons: errs.append(f"{REGISTRY} {code}: prepare id {p.get('id')!r} is not a lesson of curriculum.json")
             if not p.get("why"): errs.append(f"{REGISTRY} {code}: prepare {p.get('id')} has no why")
+        lang = c.get("language")
+        if lang is not None and lang not in i18n.languages(): errs.append(f"{REGISTRY} {code}: language {lang!r} is not a site language")
+        seen = set()
+        for i, ch in enumerate(c.get("chapters", []), 1):
+            if not (ch.get("title") and ch.get("question") and isinstance(ch.get("units"), list)): errs.append(f"{REGISTRY} {code}: chapter {i} needs title, question and units")
+            for u in ch.get("units", []):
+                if not (u.get("id") and u.get("title")): errs.append(f"{REGISTRY} {code}: chapter {i}: a unit needs id and title")
+                elif u["id"] in seen: errs.append(f"{REGISTRY} {code}: unit {u['id']} is listed twice")
+                seen.add(u.get("id"))
+        if c.get("chapters") and not lang: errs.append(f"{REGISTRY} {code}: a course with chapters of units names their language")
         for f in ("modes", "report"):
             errs += [f"{REGISTRY} {code}: {f}[{i}] needs title and text" for i, x in enumerate(c.get(f, [])) if not (x.get("title") and x.get("text"))]
     return errs
 
 
-def home_row(code, c, T, investigations=0):
+def home_row(code, c, T, investigations=0, n_units=0):
     """The front page row: the same anatomy as a national module's row, one link stretched over it. What the course
     already publishes (its investigations in this language) comes first; the plan's status is said apart from it
     (teacher 2026-10-31: published investigations are not "planned", the course plan may still be)."""
-    avail = T.count("site.local_investigations", investigations) if investigations else T("site.local_status_" + c["status"])
-    status = f'<span class="mod-coming">{T("site.local_status_home_" + c["status"])}</span>' if investigations else ""
+    avail = (T.count("site.local_investigations", investigations) if investigations
+             else T("units.home_sessions", n=c["sessions"]) if n_units and c.get("sessions")   # the lessons taught, not the units written
+             else T.count("units.home_count", n_units) if n_units
+             else T("site.local_status_" + c["status"]))
+    status = f'<span class="mod-coming">{T("site.local_status_home_" + c["status"])}</span>' if (investigations or n_units) and c["status"] != "ready" else ""
+    if c.get("language") and c["language"] != T.lang:
+        status += f'<span class="mod-coming">{T("units.taught_in_" + c["language"])}</span>'
     import module_icons
     return (f'<li class="mod-row local-row">{module_icons.img(code)}<span class="mod-code">{code}</span>'
             f'<div class="mod-main"><h3 class="mod-title"><a class="mod-link" href="{code}.html">'
@@ -74,7 +98,7 @@ def home_row(code, c, T, investigations=0):
             f'<span class="mod-go" aria-hidden="true">{T("site.open_course")}</span></li>')
 
 
-def page_body(code, c, T, chapters, published, investigations=(), guides_html=""):
+def page_body(code, c, T, chapters, published, investigations=(), guides_html="", course_units=()):
     """The course landing page. chapters: lesson id -> (module code, title) in this language; published: the page
     names this language built. Planned parts say so, and a chapter not published here is named without a link."""
     status = c["status"]
@@ -82,8 +106,27 @@ def page_body(code, c, T, chapters, published, investigations=(), guides_html=""
     out = (f'<div class="mod-head">{module_icons.img(code, 56, "mod-head-icon")}<div><span class="eyebrow">{code} · {T("site.local_course_kind")}</span><h1>{esc(c["title"])}</h1></div></div>'
            f'<p class="lead">{esc(c["subtitle"])}</p>'
            f'<p class="notice local-kind" role="note">{T("site.local_distinct", school=esc(c["school"]))}</p>'
-           f'<p class="notice local-status" role="note"><strong>{T("site.local_status_" + status)}.</strong> {T("site.local_status_note_" + status)}</p>'
-           f'<p class="local-desc">{esc(c["description"])}</p>')
+           + (f'<p class="notice local-status" role="note"><strong>{T("site.local_status_" + status)}.</strong> {T("site.local_status_note_" + status)}</p>' if status != "ready" else "")
+           + (f'<p class="local-authors">{T("units.authors")}: {esc(", ".join(c["authors"][:-1]) + " " + T("units.and") + " " + c["authors"][-1] if len(c["authors"]) > 1 else c["authors"][0])}</p>' if c.get("authors") else "")
+           + (f'<p class="notice local-language" role="note">{T("units.language_note_" + c["language"])}</p>' if c.get("language") and c["language"] != T.lang else "")
+           + f'<p class="local-desc">{esc(c["description"])}</p>')
+    if c.get("chapters"):                # the course's chapters and their units (scripts/units.py), published ones as links
+        hrefs = {u: href for u, _, href in course_units}
+        lang_attr = f' lang="{c["language"]}"' if c.get("language") and c["language"] != T.lang else ""
+        css = ROOT / "assets" / "units" / code.lower() / "units.css"
+        if css.is_file(): out += f'<link rel="stylesheet" href="units/{code.lower()}/units.css">'
+        out += (f'<h2 id="chapters">{T("units.chapters")}</h2><p class="section-lead">{T("units.chapters_lead")}</p>'
+                + (f'<p class="section-lead local-overview">{esc(c["overview"])}</p>' if c.get("overview") else "") + '<ol class="unit-chapters">')
+        for i, ch in enumerate(c["chapters"], 1):
+            items = ""
+            for j, u in enumerate(ch["units"], 1):
+                num = f'<span class="l-num">{i}.{j}</span>'
+                star = f' <span aria-hidden="true">★</span><span class="visually-hidden"> ({T("units.optional_mark")})</span>' if u.get("optional") else ""
+                if u["id"] in hrefs: items += f'<li class="live">{num}<a href="{hrefs[u["id"]]}"{lang_attr}>{esc(u["title"])}</a>{star}</li>'
+                else: items += f'<li class="soon">{num}<span{lang_attr}>{esc(u["title"])}</span>{star} <span class="tag">{T("site.lesson_coming")}</span></li>'
+            out += (f'<li class="unit-chapter"><h3><span class="l-num">{i}</span><span{lang_attr}>{esc(ch["title"])}</span></h3>'
+                    f'<p class="local-why"{lang_attr}>{esc(ch["question"])}</p><ol class="lessons">{items}</ol></li>')
+        out += "</ol>"
     if investigations:                   # the course's published investigations: canonical pages it refers to, never copies
         import investigations as inv     # the bank with its filter (teacher 2026-10-31)
         order = {i: n for n, i in enumerate(c.get("pathway", []))}

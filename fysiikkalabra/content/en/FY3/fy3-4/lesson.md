@@ -24,7 +24,7 @@
 </svg>
 
 ## Key idea
-When a force is spread over a surface, its effect depends on how large an area it is spread over. The sharp tip of a drawing pin sinks into a wall with the same force that leaves no mark when applied to the blunt head, and skis carry you on deep snow although boots sink in. The quantity that describes this is pressure: force divided by the area over which the force is spread. The unit of pressure is the pascal (Pa), and 1 Pa = 1 N/m². The pascal is a small unit, so in everyday life we use the kilopascal: 1 kPa = 1000 Pa.
+When a force is spread over a surface, its effect depends on how large an area it is spread over. The sharp tip of a drawing pin sinks into a wall with the same force that leaves no mark when applied to the blunt head, and skis carry you on deep snow although boots sink in. The quantity that describes this is pressure: force divided by the area over which the force is spread. The unit of pressure is the pascal (Pa), and $1\,\text{Pa} = 1\,\text{N/m}^2$. The pascal is a small unit, so in everyday life we use the kilopascal: $1\,\text{kPa} = 1000\,\text{Pa}$.
 
 <svg data-fig="pressure-area" viewBox="0 0 600 380" role="img" aria-label="The same force F acts on an identical brick in two ways. On the left the brick stands on end and touches the ground with a small area A1, so the pressure p1 = F/A1 is large. On the right the brick lies on its side and touches the ground with an area three times as large, A2 = 3 A1, so the pressure p2 = F/A2 is one third of the pressure on the left. The force arrows are equally long. The contact areas are to scale; the diagram is otherwise schematic." style="max-width:100%;font-size:24px">
   <defs><pattern id="fy34-snow" width="14" height="14" patternUnits="userSpaceOnUse"><rect width="14" height="14" fill="#eef5f9"/><circle cx="3" cy="4" r="1.3" fill="#a9d1f0"/><circle cx="10" cy="10" r="1.3" fill="#a9d1f0"/></pattern></defs>
@@ -78,22 +78,22 @@ According to the micro model, the pressure of a gas comes from particles collidi
 Pressure is not a force but the ratio of force to area, and in a liquid at rest the pressure acts equally in every direction. If the pressure sideways were smaller than downwards, the water would flow sideways and would not stay at rest. If you make holes at several heights in the side of a bottle, the water squirts out hardest from the lowest hole, because the pressure grows with depth. The force caused by pressure is always perpendicular to the surface: on the vertical wall of a dam the force points horizontally, and on a diver's body it acts from all sides. That is why here we can treat the force as just a magnitude; the direction comes from the surface.
 
 ### Atmospheric pressure and gauge pressure
-Atmospheric pressure, the pressure of the atmosphere, already acts on the surface of the water. At sea level it is about 101 kPa. It is the weight of the column of air per unit area. Atmospheric pressure also acts on the surface of the water and is transmitted through the water to depth. Under water the total pressure is therefore the sum of atmospheric pressure and hydrostatic pressure. At a depth of ten metres the hydrostatic pressure is already about the same as one atmosphere.
+Atmospheric pressure, the pressure of the atmosphere, already acts on the surface of the water. At sea level it is about $101\,\text{kPa}$. It is the weight of the column of air per unit area. Atmospheric pressure also acts on the surface of the water and is transmitted through the water to depth. Under water the total pressure is therefore the sum of atmospheric pressure and hydrostatic pressure. At a depth of ten metres the hydrostatic pressure is already about the same as one atmosphere.
 
-This answers the opening question. Atmospheric pressure acts on both sides of the dam wall, so the wall is loaded only by the gauge pressure of the water, that is, the part of the pressure that is greater than atmospheric pressure. The gauge pressure is zero at the top and grows steadily with depth: at a depth of 30 metres it is about 290 kPa, so every square metre of the wall feels a force of about 290 kN. The lower part of the wall must therefore withstand a much greater force than the upper part, and the wall is built thick at the bottom.
+This answers the opening question. Atmospheric pressure acts on both sides of the dam wall, so the wall is loaded only by the gauge pressure of the water, that is, the part of the pressure that is greater than atmospheric pressure. The gauge pressure is zero at the top and grows steadily with depth: at a depth of 30 metres it is about $290\,\text{kPa}$, so every square metre of the wall feels a force of about $290\,\text{kN}$. The lower part of the wall must therefore withstand a much greater force than the upper part, and the wall is built thick at the bottom.
 
 ## Formula: Pressure and hydrostatic pressure
 Pressure is the force perpendicular to a surface divided by the area:
 ```latex
 p = \frac{F}{A}
 ```
-where $p$ is the pressure (Pa), $F$ the force perpendicular to the surface (N) and $A$ the area (m²). One pascal is a force of one newton on an area of one square metre: 1 Pa = 1 N/m².
+where $p$ is the pressure (Pa), $F$ the force perpendicular to the surface (N) and $A$ the area (m²). One pascal is a force of one newton on an area of one square metre: $1\,\text{Pa} = 1\,\text{N/m}^2$.
 
 In a liquid at depth $h$ the pressure is
 ```latex
 p = p_0 + \rho g h
 ```
-where $p_0$ is the pressure at the surface of the liquid, usually atmospheric pressure (Pa), $\rho$ the density of the liquid (kg/m³), $g$ = $9.81\,\text{m/s}^2$ and $h$ the depth below the surface (m). The term $\rho g h$ is the hydrostatic pressure, that is, the gauge pressure $\Delta p = p - p_0$, which tells how much greater the pressure is than the pressure at the surface. The graph $(h, p)$ is a straight line whose slope is $\rho g$ and whose constant term is $p_0$, as in the linear model $y = kx + b$ of FY1. For water $\rho$ = $1000\,\text{kg/m}^3$, so the pressure grows by 9.81 kPa for every metre.
+where $p_0$ is the pressure at the surface of the liquid, usually atmospheric pressure (Pa), $\rho$ the density of the liquid (kg/m³), $g$ = $9.81\,\text{m/s}^2$ and $h$ the depth below the surface (m). The term $\rho g h$ is the hydrostatic pressure, that is, the gauge pressure $\Delta p = p - p_0$, which tells how much greater the pressure is than the pressure at the surface. The graph $(h, p)$ is a straight line whose slope is $\rho g$ and whose constant term is $p_0$, as in the linear model $y = kx + b$ of FY1. For water $\rho$ = $1000\,\text{kg/m}^3$, so the pressure grows by $9.81\,\text{kPa}$ for every metre.
 
 <svg data-fig="pressure-depth" viewBox="0 0 600 340" role="img" aria-label="Graph to scale: the pressure p of water in kilopascals as a function of the depth h for h from 0 to 10 m. The pressure is a rising straight line: at the surface the pressure is atmospheric pressure, 101 kPa, and at a depth of 10 metres about 199 kPa. The gap between the line and the dashed line is the hydrostatic pressure ρgh." style="max-width:100%;font-size:24px">
   <line x1="173" y1="285" x2="173" y2="70" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -141,7 +141,7 @@ where $p_0$ is the pressure at the surface of the liquid, usually atmospheric pr
 </svg>
 
 ## Worked example
-A diver is in a lake at a depth of $12.0\,\text{m}$, next to the window of an underwater observation room. Atmospheric pressure at the surface is 101 kPa and the density of water is $1000\,\text{kg/m}^3$. What is the pressure around the diver, and how large is the force on a window of area 150 cm² when the room contains air at normal pressure?
+A diver is in a lake at a depth of $12.0\,\text{m}$, next to the window of an underwater observation room. Atmospheric pressure at the surface is $101\,\text{kPa}$ and the density of water is $1000\,\text{kg/m}^3$. What is the pressure around the diver, and how large is the force on a window of area $150\,\text{cm}^2$ when the room contains air at normal pressure?
 
 <!-- vaihe -->
 
@@ -198,10 +198,10 @@ F &= \rho g h \cdot A
 Many people think that the pressure at the bottom depends on how much water the container holds. In a narrow tube and a wide pool, where the water reaches the same height, the pressure at the bottom is the same, even though the pool holds a thousand times as much water. Pressure depends only on the depth, the density and the pressure at the surface. Another mistake is to confuse pressure and force: the sharp tip of a drawing pin does not produce a greater force than the head, but spreads the same force over a smaller area, so the pressure is greater. A third mistake is to forget atmospheric pressure: $\rho g h$ alone gives only the gauge pressure, and the total pressure under water is always greater than that.
 
 ## Summary
-- Pressure is force per unit area: $p = F/A$. The unit is the pascal, 1 Pa = 1 N/m², and 1 kPa = 1000 Pa.
+- Pressure is force per unit area: $p = F/A$. The unit is the pascal, $1\,\text{Pa} = 1\,\text{N/m}^2$, and $1\,\text{kPa} = 1000\,\text{Pa}$.
 - In a liquid the pressure grows with depth: $p = p_0 + \rho g h$. The term $\rho g h$ is the hydrostatic pressure, and it depends only on the depth and the density, not on the shape of the container.
 - The force caused by pressure is perpendicular to the surface and acts in every direction in a liquid.
-- Atmospheric pressure at sea level is about 101 kPa. In water the pressure grows by about one atmosphere for every ten metres.
+- Atmospheric pressure at sea level is about $101\,\text{kPa}$. In water the pressure grows by about one atmosphere for every ten metres.
 
 <svg data-fig="scene" viewBox="0 0 600 360" role="img" aria-label="Illustration: a diver deep in a lake. The water gets darker with depth, air bubbles rise to the surface, and the diver wears a depth and pressure gauge on the wrist." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy34s-water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></linearGradient><linearGradient id="fy34s-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#eef5f9"/></linearGradient></defs>

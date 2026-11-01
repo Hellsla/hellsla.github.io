@@ -1,15 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 49e4e98f5f76430f
+CONTENT-HASH: d1b5be1ad9b4b8ac
 
 ## Blocking
-(none left; see Fixed)
-
-## Fixed
-- exercises.json level3/1 text — the conditional "Jos sama sähkö tuotettaisiin" had become a flat statement "Sama sähkö tuotettaisiin" → "Ajatellaan, että sama sähkö tuotettaisiin kivihiilellä ..." (hypothetical restored)
+(none)
 
 ## Polish
 - None.
 
 ## Checked
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): compared exercises.json and solutions.md; text is genuinely simplified (short sentences, causal clauses split, terms kept), no steps, hints or feedback dropped, correct options unambiguous. Figure descriptions in figures.json are simplified and each translates its own key.
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked exercises.json and solutions.md against the new Finnish.
+- Translation review against the reviewed Finnish (2026-10-28): same task sequence (5/4/3), same figure task, same staged solution steps and labels; the language is natural and clear (fi-easy: short sentences, the L3 tasks split into separate sentences as in the previous round). Nothing in the typesetting round changes the pedagogy.

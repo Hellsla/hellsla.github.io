@@ -1,10 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 04281790c95f9cd7
+CONTENT-HASH: f2b6f9c335faa267
 
 ## Blocking
+(none)
+
+## Fixed
+- none needed
 
 ## Polish
 - None.
 
 ## Checked
-batch delta review: every `learn` goal completes "Tällä tunnilla opit" with a lowercase -maan/-mään verb in parallel form; the skill, demand, key terms, symbols and numbers match the previous wording; plain Selkeä suomi.
+Same structure, tasks, hints, feedback and teaching sequence as the Finnish; short clear sentences (long Finnish sentences split, e.g. in the Ydinajatus and the heat pump text); terms and symbols as in the Finnish; no content added or dropped. The sim's option values (sama paine, jäähdytys ensin) are Finnish, so fine here.

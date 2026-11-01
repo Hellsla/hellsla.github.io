@@ -1,0 +1,87 @@
+{
+ "id": "fy14-fr-nombres",
+ "course": "FY14",
+ "chapter": 10,
+ "order": 2,
+ "title": "Numbers and prices",
+ "description": "Count from 0 to 100 in French, including the tricky 70, 80 and 90, and understand and say prices in euros on a visit to Provence.",
+ "kind": "french",
+ "minutes": 75,
+ "subjects": [
+  "french",
+  "english"
+ ],
+ "sources": [
+  {
+   "title": "Nombres en français (Wikipédia)",
+   "url": "https://fr.wikipedia.org/wiki/Nombres_en_fran%C3%A7ais",
+   "checked": "2026-11-01",
+   "note": "France: soixante-dix, quatre-vingts, quatre-vingt-dix; Belgium and Switzerland: septante, nonante; huitante in Vaud, Valais and Fribourg; et only in 21, 31 … 71 (not in 81, 91); quatre-vingts takes s only when no number follows; the 1990 spelling hyphenates every part (vingt-et-un)."
+  },
+  {
+   "title": "Euro (Wikipédia)",
+   "url": "https://fr.wikipedia.org/wiki/Euro",
+   "checked": "2026-11-01",
+   "note": "In France the cent is called centime; the word cent is avoided because it is confusing."
+  },
+  {
+   "title": "Séparateur décimal (Wikipédia)",
+   "url": "https://fr.wikipedia.org/wiki/S%C3%A9parateur_d%C3%A9cimal",
+   "checked": "2026-11-01",
+   "note": "French uses the decimal comma (standard NF X 02-003); thousands are grouped with a space."
+  },
+  {
+   "title": "Telephone numbers in France (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Telephone_numbers_in_France",
+   "checked": "2026-11-01",
+   "note": "Ten digits, usually stated as five pairs (0x xx xx xx xx); 06 and 07 are mobile numbers."
+  },
+  {
+   "title": "Liaison (French) (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Liaison_(French)",
+   "checked": "2026-11-01",
+   "note": "Liaison between a number and the noun that follows (deux‿euros, six‿euros)."
+  },
+  {
+   "title": "French phonology (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/French_phonology",
+   "checked": "2026-11-01",
+   "note": "Nasal vowels; the final stressed syllable of a phrase."
+  },
+  {
+   "title": "ITER Organization: Visiting ITER",
+   "url": "https://www.iter.org/about/visiting-iter",
+   "checked": "2026-11-01",
+   "note": "The site is about 35 km north of Aix-en-Provence."
+  },
+  {
+   "title": "YouTube oEmbed metadata of AvHO3T7cyNI and O68Ql8Ux4iE",
+   "url": "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=AvHO3T7cyNI&format=json",
+   "checked": "2026-11-01",
+   "note": "AvHO3T7cyNI: French NUMBERS 1–100 (Les NOMBRES en Français 1-100), Juancker´s Languages, 21 August 2023, chapters 1–10 … 91–100 (the last from 3:55). O68Ql8Ux4iE: French Pronunciation: French vowel combinations, Learn French, 19 October 2022. The spoken content could not be played from the sandbox."
+  }
+ ],
+ "media": [
+  {
+   "file": "https://www.youtube.com/watch?v=AvHO3T7cyNI",
+   "title": "French NUMBERS 1-100 (Les NOMBRES en Français 1-100) (embedded video)",
+   "creator": "Juancker´s Languages",
+   "source": "https://www.youtube.com/watch?v=AvHO3T7cyNI",
+   "licence": "Standard YouTube licence; embedded with YouTube's player, not copied"
+  },
+  {
+   "file": "https://www.youtube.com/watch?v=O68Ql8Ux4iE",
+   "title": "French Pronunciation: French vowel combinations (embedded video, optional)",
+   "creator": "Learn French",
+   "source": "https://www.youtube.com/watch?v=O68Ql8Ux4iE",
+   "licence": "Standard YouTube licence; embedded with YouTube's player, not copied"
+  },
+  {
+   "file": "units/fy14/pics/french-market.jpg",
+   "title": "Morning market in Aix-en-Provence",
+   "creator": "Lauri Hellsten",
+   "source": "Photograph supplied by the author (2026-11-01)",
+   "licence": "© Lauri Hellsten, all rights reserved; used with the author's permission"
+  }
+ ]
+}

@@ -1,0 +1,420 @@
+{
+ "version": 1,
+ "contribution": "The third history unit of chapter 5: the physics problems of the 1970s (ohmic heating's limit, neutral beams and radio waves, superconducting magnets), the oil crisis and the budgets that built PLT, TFTR, JET, JT-60 and T-15, and the Geneva summit of 1985 that turned Cold War rivalry into the cooperation that became ITER.",
+ "learn": [
+  "explain how a tokamak plasma can be heated beyond its own current, and how superconducting magnets helped.",
+  "describe how the 1973 oil crisis and international cooperation shaped the big machines of the 1980s.",
+  "evaluate why Cold War rivals agreed on fusion at Geneva in 1985 and how this led to ITER."
+ ],
+ "prior": [
+  "After the 1969 Culham measurement, laboratories around the world built tokamaks (chapter *Science across the Iron Curtain*)",
+  "A useful fusion plasma needs high temperature, density and energy confinement time (chapter *Plasma: the fourth state of matter*)",
+  "Electric power in a resistor $P = RI^2$ and kinetic energy $E_\\text{k} = \\frac{1}{2} m v^2$ (earlier physics courses)"
+ ],
+ "activities": [
+  {
+   "id": "hook",
+   "stage": "herata",
+   "type": "hook",
+   "text": "The T-3 tokamak of 1968 fitted into one room. JET, which started in 1983, stands in a hall the size of a cathedral, and it was paid for by a whole group of countries. In just fifteen years, fusion machines grew from laboratory experiments into some of the largest scientific instruments on Earth.\n\nIn the same years, the world had an oil crisis, and the leaders of the two Cold War superpowers met for the first time in six years.",
+   "question": "What made fusion machines grow so big, and how did world politics shape them?"
+  },
+  {
+   "id": "review",
+   "stage": "herata",
+   "type": "choice",
+   "title": "Review: what does a fusion plasma need?",
+   "prompt": "In the chapter on plasma you met the conditions a fusion plasma must meet. Which list is complete?",
+   "choices": [
+    {
+     "text": "Temperature, density and the confinement time.",
+     "feedback": "Right. The Lawson criterion combines all three: the product of density, temperature and confinement time must be large enough. Remember this when you read about the records of the 1970s.",
+     "correct": true
+    },
+    {
+     "text": "High temperature only; the rest follows by itself.",
+     "feedback": "Temperature is necessary but not enough. A hot plasma that is too thin, or that loses its heat too fast, gives out less fusion energy than it costs to heat it."
+    },
+    {
+     "text": "A strong magnetic field and a large current only.",
+     "feedback": "These are the tools of a tokamak, not the conditions of the plasma. The plasma itself needs high temperature, enough density and a long energy confinement time."
+    },
+    {
+     "text": "Deuterium fuel and a vacuum chamber of steel.",
+     "feedback": "These are needed to build a machine, but the physics conditions are temperature, density and confinement time (the Lawson criterion)."
+    }
+   ]
+  },
+  {
+   "id": "pred-heat",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Prediction 1: heating with the current",
+   "prompt": "The current in a tokamak plasma heats it, just as the current in a kettle heats the water, because the plasma has electrical resistance. When a plasma gets hotter, its resistance **falls**. The current stays about the same. What does this mean for heating with the current? Commit and give a reason; the section *Heating beyond the current* will tell you.",
+   "justify": true,
+   "reveal": {
+    "after": "theory-heating"
+   },
+   "choices": [
+    {
+     "text": "It heats less and less well as the plasma heats up.",
+     "feedback": "Right. The heating power is $P = RI^2$; with the same current and a smaller resistance, the power falls. Above about $20$–$30$ million kelvin ohmic heating is not enough, so the 1970s developed neutral beams and radio-wave heating.",
+     "correct": true
+    },
+    {
+     "text": "It heats better and better, so nothing else is needed.",
+     "feedback": "Less resistance means *less* heating for the same current: $P = RI^2$. That is why ohmic heating stops being enough at about $20$–$30$ million kelvin and new methods were needed."
+    },
+    {
+     "text": "It heats at the same rate, whatever the temperature.",
+     "feedback": "The heating power $P = RI^2$ depends on the resistance, and the resistance falls as the plasma heats up. So ohmic heating becomes weaker: above about $20$–$30$ million kelvin it is not enough."
+    },
+    {
+     "text": "It stops completely once the gas becomes a plasma.",
+     "feedback": "Ohmic heating only *starts* to work when the gas is a plasma that conducts. It then gets weaker as the plasma heats up, because the resistance falls; it does not stop at once."
+    }
+   ]
+  },
+  {
+   "id": "pred-budget",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Prediction 2: the oil crisis and the budget",
+   "prompt": "In 1973 the US government spent about 40 million dollars a year on fusion research. Then came the oil crisis of 1973–1974. Estimate the yearly fusion budget five years later, in 1978. Commit and give a reason; the section *Oil, money and big machines* shows the data.",
+   "justify": true,
+   "reveal": {
+    "after": "theory-oil"
+   },
+   "choices": [
+    {
+     "text": "About 20 million dollars: about half.",
+     "feedback": "The budget did not fall. After the oil crisis energy security became a priority, and the fusion budget rose to 332 million dollars in 1978, more than eight times the 1973 level."
+    },
+    {
+     "text": "About 40 million dollars: about the same.",
+     "feedback": "The data show a very large rise: 332 million dollars in 1978, more than eight times the 1973 level. The oil crisis made energy research a political priority."
+    },
+    {
+     "text": "About 80 million dollars: about double.",
+     "feedback": "The rise was much larger: 332 million dollars in 1978, more than eight times the 1973 level. This money paid for TFTR and other large machines."
+    },
+    {
+     "text": "About 330 million dollars: eight times.",
+     "feedback": "Right. The budget rose from 40 to 332 million dollars a year, a factor of about $8.3$. The oil crisis made energy security urgent, and the money made the big machines possible.",
+     "correct": true
+    }
+   ]
+  },
+  {
+   "id": "read-guide",
+   "stage": "tutki",
+   "type": "text",
+   "title": "How to read: a newspaper desk",
+   "text": "Work in pairs. You are the science desk of a newspaper in 1985, preparing a page on *Fusion: fifteen years of big machines*. Read the five sections. For each, note **one physics fact** and **one fact about money or politics**. You will need your notes for the tasks.\n\n<div class=\"wordbank\"><h4>Word bank</h4><p>ohmic heating · resistance · a neutral beam · radio waves · a superconductor · a coil · liquid helium · an oil embargo · energy security · a budget · a joint project · a summit · a joint statement</p></div>\n\n<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>The physics problem was …</li><li>Scientists solved it by …</li><li>The money came from …, because …</li><li>This machine was built by …</li><li>Politics affected fusion when …</li></ul></div>"
+  },
+  {
+   "id": "theory-stampede",
+   "stage": "tutki",
+   "type": "theory",
+   "sections": [
+    "Stampede"
+   ]
+  },
+  {
+   "id": "theory-heating",
+   "stage": "tutki",
+   "type": "theory",
+   "sections": [
+    "Heating"
+   ]
+  },
+  {
+   "id": "theory-magnets",
+   "stage": "tutki",
+   "type": "theory",
+   "sections": [
+    "Magnets"
+   ]
+  },
+  {
+   "id": "theory-oil",
+   "stage": "tutki",
+   "type": "theory",
+   "sections": [
+    "Oil"
+   ]
+  },
+  {
+   "id": "machines",
+   "stage": "tutki",
+   "type": "interpret",
+   "title": "Data: the big machines",
+   "source": "statistics",
+   "source_note": "Start dates and plasma radii from the Wikipedia articles on the machines and PPPL (checked 1 November 2026). JT‑60 is the original machine of 1985, not the later JT‑60U.",
+   "text": "The **major radius** is the distance from the centre of the doughnut to the middle of the plasma tube; the **minor radius** is the radius of the tube itself. A larger plasma keeps its heat longer, because the heat must travel further to escape.\n\n| Machine (start) | Built by | Major radius (m) | Minor radius (m) |\n| --- | --- | --- | --- |\n| PLT (1975) | USA | 1.32 | 0.40 |\n| TFTR (1982) | USA | 2.52 | 0.87 |\n| JET (1983) | EC | 2.96 | 1.25 |\n| JT‑60 (1985) | Japan | 3.0 | 0.85–0.95 |\n| T‑15 (1988) | USSR | 2.43 | 0.70 |\n\nUSA: the United States (Princeton); EC: the European Community (Culham, England); Japan: Naka; USSR: the Soviet Union (Moscow).",
+   "question": {
+    "type": "choice",
+    "prompt": "What does the table show about the machines of the late 1970s and 1980s, and about who could build them?",
+    "choices": [
+     {
+      "text": "Later ones were bigger, built by big economies.",
+      "feedback": "Right. The major radius grew from $1.3\\ \\text{m}$ (PLT) to about $3\\ \\text{m}$ (JET, JT‑60), and JET's plasma tube is three times as thick: its plasma volume is more than twenty times PLT's. Machines of this size were built only by the superpowers, by Japan and by the European Community together. The next step, ITER, needed almost the whole world.",
+      "correct": true
+     },
+     {
+      "text": "The machines got smaller as the magnets improved.",
+      "feedback": "Read the radii again: PLT has a major radius of $1.32\\ \\text{m}$, JET and JT‑60 about $3\\ \\text{m}$. The machines grew, because a larger plasma keeps its heat longer, and the cost grew with them."
+     },
+     {
+      "text": "Each big country built a machine of the same size.",
+      "feedback": "The sizes differ a lot: from $1.32\\ \\text{m}$ (PLT) to $3.0\\ \\text{m}$ (JT‑60). The trend is upwards over time, and only large economies or groups of countries could pay for the largest."
+     },
+     {
+      "text": "The size stayed the same; only the cost grew.",
+      "feedback": "The major radius more than doubled from PLT to JET. The cost grew because the machines grew: a larger plasma keeps its heat longer."
+     }
+    ]
+   }
+  },
+  {
+   "id": "theory-geneva",
+   "stage": "tutki",
+   "type": "theory",
+   "sections": [
+    "Geneva"
+   ]
+  },
+  {
+   "id": "statement",
+   "stage": "tutki",
+   "type": "explain",
+   "title": "Source question: the Geneva statement",
+   "prompt": "Read the quotations from the joint statement of 21 November 1985 in the section above. Discuss with a partner, then write three or four sentences. Reagan and Gorbachev could not agree on arms control, but they did agree on fusion. Give **two** reasons why fusion was an easier topic for the two rivals.\n\n<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>Fusion was easier because …</li><li>Unlike nuclear weapons, fusion …</li><li>The statement says …, which shows …</li><li>The stronger reason is …, because …</li></ul></div>",
+   "pair": "Pair work: each partner suggests one reason; then decide together which is the stronger one.",
+   "model": "Fusion power was still decades away, so cooperating on it gave neither side a military advantage or a risk. Both countries had already shared fusion results openly since 1958 and had worked together in the INTOR study, so their scientists trusted each other. The machines needed were so expensive that sharing the cost made sense for both. Finally, a joint fusion project was a positive symbol: the statement speaks of energy \"for the benefit for all mankind\", which helped both leaders show that the relationship was improving.",
+   "criteria": [
+    "The answer gives two different reasons (no military advantage, cost, earlier cooperation, symbolic value).",
+    "At least one reason uses information from the sections (INTOR, the 1958 openness, the cost of the machines).",
+    "The answer refers to the wording of the statement."
+   ],
+   "hints": [
+    "Could fusion help either side to win a war?",
+    "Who had already worked together in INTOR since 1978?"
+   ]
+  },
+  {
+   "id": "order",
+   "stage": "tutki",
+   "type": "text",
+   "title": "Put the events in order",
+   "text": "<div class=\"fx\" data-fx=\"order\" id=\"fx-bm-order\"><script type=\"application/json\">{\"prompt\": \"Put these events in order, from the earliest to the latest. Use the buttons, then press *Check the order*.\", \"items\": [\"The Arab oil embargo begins.\", \"PLT reaches about 60 million kelvin.\", \"T-7, the first superconducting tokamak, starts.\", \"TFTR starts in Princeton.\", \"JET makes its first plasma at Culham.\", \"JT-60 starts in Naka.\", \"Reagan and Gorbachev meet in Geneva.\", \"The ITER conceptual design begins.\"], \"hints\": [\"The earliest event is from October 1973.\", \"This one is from July 1978.\", \"This one is from 1979.\", \"This one is from 1982.\", \"This one is from June 1983.\", \"This one is from April 1985.\", \"This one is from November 1985.\", \"The last event is from 1988.\"], \"explain\": \"Right. The oil crisis (1973) brought the money, PLT (1978) showed that reactor temperatures were possible, the big machines followed (1982–1985), and politics turned rivalry into cooperation (Geneva 1985, ITER design from 1988).\"}</script></div>"
+  },
+  {
+   "id": "theory-key",
+   "stage": "selita",
+   "type": "theory",
+   "sections": [
+    "Ydinajatus",
+    "Yleinen virhekäsitys"
+   ]
+  },
+  {
+   "id": "back-to-predictions",
+   "stage": "selita",
+   "type": "reflect",
+   "title": "Back to your predictions",
+   "prompt": "Compare your two predictions with the sections. Then answer the opening question in two sentences: what made fusion machines grow so big, and how did world politics shape them?",
+   "predictions": [
+    "pred-heat",
+    "pred-budget"
+   ]
+  },
+  {
+   "id": "beam-speed",
+   "stage": "sovella",
+   "type": "numeric",
+   "title": "How fast are the beam atoms?",
+   "prompt": "The neutral beam injectors of PLT accelerated particles to an energy of $40\\ \\text{keV}$. Calculate the speed of a deuterium atom with the kinetic energy $E_\\text{k} = 40\\ \\text{keV}$. The mass of a deuterium atom is $m = 3.344 \\cdot 10^{-27}\\ \\text{kg}$. Give the speed in units of $10^{6}\\ \\text{m/s}$: for example, type $4.2$ for $4.2 \\cdot 10^{6}\\ \\text{m/s}$.",
+   "answer": 1.958,
+   "unit": "$\\cdot 10^{6}\\ \\text{m/s}$",
+   "tolerance": 0.02,
+   "hints": [
+    "Convert the energy to joules: $1\\ \\text{keV} = 1000 \\cdot 1.602 \\cdot 10^{-19}\\ \\text{J}$.",
+    "Solve $E_\\text{k} = \\frac{1}{2} m v^2$ for $v$: $v = \\sqrt{2 E_\\text{k} / m}$.",
+    "$E_\\text{k} = 6.408 \\cdot 10^{-15}\\ \\text{J}$"
+   ],
+   "mistakes": [
+    {
+     "value": 1.384,
+     "feedback": "You forgot the factor $2$: $v = \\sqrt{2 E_\\text{k}/m}$, because $E_\\text{k} = \\frac{1}{2} m v^2$."
+    },
+    {
+     "value": 0.0619,
+     "feedback": "You used $40\\ \\text{eV}$ instead of $40\\ \\text{keV}$: $1\\ \\text{keV} = 1000\\ \\text{eV}$."
+    }
+   ],
+   "solution": "**Given:** kinetic energy $E_\\text{k} = 40\\ \\text{keV}$; mass of a deuterium atom $m = 3.344 \\cdot 10^{-27}\\ \\text{kg}$; $1\\ \\text{eV} = 1.602 \\cdot 10^{-19}\\ \\text{J}$\n\n**Find:** the speed $v$\n\n**Principle:** The beam energy is kinetic energy, $E_\\text{k} = \\frac{1}{2} m v^2$. The speed is far below the speed of light (checked below), so the classical formula is accurate enough.\n\n**Formula:** $v = \\sqrt{\\dfrac{2 E_\\text{k}}{m}}$\n\n**Unit conversions:** $E_\\text{k} = 40\\ \\text{keV} = 40\\ 000\\ \\text{eV} = 40\\ 000 \\cdot 1.602 \\cdot 10^{-19}\\ \\text{J} = 6.408 \\cdot 10^{-15}\\ \\text{J}$\n\n**Substitution:**\n\n$$\\begin{aligned} v &= \\sqrt{\\frac{2 \\cdot 6.408 \\cdot 10^{-15}\\ \\text{J}}{3.344 \\cdot 10^{-27}\\ \\text{kg}}} \\\\ &= \\sqrt{3.833 \\cdot 10^{12}\\ \\text{m}^2/\\text{s}^2} \\\\ &= 1.958 \\cdot 10^{6}\\ \\text{m/s} \\end{aligned}$$\n\n**Answer:** $v \\approx 1.96 \\cdot 10^{6}\\ \\text{m/s}$, three significant figures as in the mass (the energy $40\\ \\text{keV}$ is a round design value).\n\n**Reasonableness:** This is about $2000\\ \\text{km}$ every second, but only ${1.958 \\cdot 10^{6}} : {3.00 \\cdot 10^{8}} \\approx 0.65\\ \\%$ of the speed of light, so the classical formula is fine. The beam atoms are much faster than the plasma ions they heat: at $60$ million kelvin a deuterium ion has a typical energy of only about $5\\ \\text{keV}$. In collisions the fast atoms share their energy with the plasma."
+  },
+  {
+   "id": "find-error",
+   "stage": "sovella",
+   "type": "choice",
+   "title": "Find the error",
+   "prompt": "A newspaper in August 1978 writes: *\"PLT reaches 60 million degrees: the fusion problem is solved, and power stations will follow within ten years.\"* What is the main error?",
+   "choices": [
+    {
+     "text": "Temperature is one of three conditions.",
+     "feedback": "Right. Density and energy confinement time were still far from reactor values, and no D–T fuel had been used. Even today, no fusion machine has produced electricity. A prediction of power stations is not a result.",
+     "correct": true
+    },
+    {
+     "text": "PLT never reached 60 million degrees.",
+     "feedback": "It did: about 60 million kelvin on 24 July 1978. The error is the conclusion: temperature alone does not make a reactor."
+    },
+    {
+     "text": "Sixty million degrees is too hot for fusion.",
+     "feedback": "A useful D–T plasma needs about 100 million kelvin or more, so 60 million kelvin was not too hot. The error is to treat temperature as the only condition."
+    },
+    {
+     "text": "Princeton was not allowed to publish it.",
+     "feedback": "Fusion research had been open since 1958, and the result was presented at Innsbruck in August 1978. The error is the jump from one record to power stations."
+    }
+   ]
+  },
+  {
+   "id": "debate-help",
+   "stage": "sovella",
+   "type": "text",
+   "title": "Discuss: public money for fusion?",
+   "text": "Work in groups of four: two students argue **for** and two **against**. Question: *Should governments spend more public money on fusion research?* First argue as if it were **1976**, just after the oil crisis. Then argue as if it were **today**. Did your arguments change? (You will return to this question in the chapter on reactor designs.)\n\n<div class=\"wordbank\"><h4>Word bank</h4><p>energy security · a long-term investment · a risk · an opportunity cost (what else the money could pay for) · renewable energy · climate change · a breakthrough · a delay</p></div>\n\n<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>We should spend more, because …</li><li>The money would be better spent on …</li><li>In 1976 the strongest argument was …, but today …</li><li>A limitation of this argument is …</li><li>The evidence suggests that …</li></ul></div>"
+  },
+  {
+   "id": "debate",
+   "stage": "sovella",
+   "type": "explain",
+   "title": "Write: 1976 and today",
+   "prompt": "After the discussion, write five or six sentences: give the strongest argument **for** more public money in 1976, the strongest argument **against** today, and your own conclusion. Use at least one fact from this unit.\n\n<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>In 1976, the strongest argument for … was …</li><li>Today, an important argument against is …</li><li>On the other hand, …</li><li>In my view, governments should …</li></ul></div>",
+   "pair": "Group work: argue first, then write on your own.",
+   "model": "In 1976 the strongest argument for more money was energy security: the oil crisis had shown that depending on imported oil was dangerous, and fusion promised a fuel that every country has, deuterium from water. The US budget rose from 40 to 332 million dollars between 1973 and 1978, and big machines like TFTR were built. Today a strong argument against is the opportunity cost: renewable energy such as wind and solar power is already cheap and can cut emissions now, while no fusion machine has yet produced electricity. On the other hand, fusion could one day give steady power without carbon dioxide. In my view governments should keep funding fusion as long-term research, but not at the expense of energy that works today.",
+   "criteria": [
+    "The answer gives an argument for 1976 connected to the oil crisis.",
+    "The answer gives an argument against today (cost, time, alternatives) that is different from the first.",
+    "The answer uses at least one fact or number from the unit.",
+    "The conclusion is clear and does not present a future date for fusion power as a fact."
+   ],
+   "hints": [
+    "What had just happened to oil prices in 1973–1974?",
+    "What else could the money pay for today?"
+   ]
+  },
+  {
+   "id": "check-1",
+   "stage": "tarkista",
+   "type": "choice",
+   "title": "1. Why neutral?",
+   "prompt": "Why are the fast particles of a neutral beam injector made **neutral** before they enter the tokamak?",
+   "choices": [
+    {
+     "text": "The magnetic field would turn charged ions away.",
+     "feedback": "Right. The magnetic force on a moving charge would bend charged particles away before they reach the plasma. Neutral atoms fly straight in; inside the plasma they are ionised and trapped.",
+     "correct": true
+    },
+    {
+     "text": "Neutral atoms carry more energy than charged ions.",
+     "feedback": "The energy is the same, about $40\\ \\text{keV}$ per particle in PLT. They are made neutral so that the magnetic field cannot deflect them on the way in."
+    },
+    {
+     "text": "Charged particles would make the plasma explode.",
+     "feedback": "A plasma is made of charged particles already. The reason is that the magnetic field would deflect charged beam particles before they reach the plasma."
+    },
+    {
+     "text": "Neutral atoms cannot take part in fusion.",
+     "feedback": "Once inside, the atoms are ionised and become part of the plasma and its fuel. They are made neutral only so that the magnetic field lets them in."
+    }
+   ]
+  },
+  {
+   "id": "check-2",
+   "stage": "tarkista",
+   "type": "choice",
+   "title": "2. Superconducting magnets",
+   "prompt": "What is the main advantage of superconducting magnets in a tokamak?",
+   "choices": [
+    {
+     "text": "They need no cooling at all.",
+     "feedback": "The opposite: they must be cooled to a few kelvin, usually with liquid helium. Their advantage is zero resistance, so a strong field costs no heating losses in the coils."
+    },
+    {
+     "text": "No resistance: strong fields, small losses.",
+     "feedback": "Right. Without resistance the current flows without heating the coils, so a strong field can be kept for a long time with little power; copper coils limited the machines to short pulses.",
+     "correct": true
+    },
+    {
+     "text": "They make the plasma itself superconducting.",
+     "feedback": "The plasma is not a superconductor: its resistance falls with temperature but never reaches zero. The superconductor is the material of the coils."
+    },
+    {
+     "text": "They make neutral beams unnecessary.",
+     "feedback": "Magnets confine the plasma; they do not heat it. Neutral beams and radio waves are still needed for heating, in superconducting machines as well."
+    }
+   ]
+  },
+  {
+   "id": "check-3",
+   "stage": "tarkista",
+   "type": "choice",
+   "title": "3. Geneva 1985",
+   "prompt": "What was the importance of the Geneva summit of November 1985 for fusion?",
+   "choices": [
+    {
+     "text": "It ended the Cold War and nuclear weapons.",
+     "feedback": "The summit did not end the Cold War or bring an arms-control breakthrough. For fusion, it started the cooperation that led to ITER."
+    },
+    {
+     "text": "It showed that fusion power was almost ready.",
+     "feedback": "No one claimed that. The leaders called for cooperation *because* fusion was a long-term, very expensive goal. This led to ITER."
+    },
+    {
+     "text": "It started the cooperation that became ITER.",
+     "feedback": "Right. Gorbachev proposed a joint fusion machine, the joint statement called for the widest practicable cooperation, and from 1987 the ITER design was started by four partners.",
+     "correct": true
+    },
+    {
+     "text": "It chose Cadarache in France as the ITER site.",
+     "feedback": "The site was chosen much later, in 2005. In 1985 the leaders only called for cooperation; the ITER name and design came in 1987–1988."
+    }
+   ]
+  },
+  {
+   "id": "check-write",
+   "stage": "tarkista",
+   "type": "explain",
+   "title": "4. Transfer: two Genevas",
+   "prompt": "Geneva appears twice in this chapter: in 1958 and in 1985. Write three or four sentences comparing them. What happened to fusion research at each meeting, and what do the two meetings show about how the Cold War influenced science?\n\n<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>In 1958, …</li><li>In 1985, by contrast, …</li><li>Both meetings show that …</li></ul></div>",
+   "model": "In 1958 the United States, the Soviet Union and Britain declassified their fusion research at the UN conference in Geneva, because all of them had met the same hard plasma problems and secrecy no longer helped. In 1985 the leaders of the two superpowers went further and called for international cooperation on fusion, which led to ITER. Both meetings show that the Cold War first made fusion secret and competitive, but that the difficulty and the cost of fusion pushed the rivals towards openness and then towards working together.",
+   "criteria": [
+    "The answer says what happened in 1958 (declassification) and in 1985 (a call for cooperation leading to ITER).",
+    "The answer explains a reason for each step (shared problems; cost and long-term goal).",
+    "The answer draws a conclusion about the Cold War and science."
+   ],
+   "hints": [
+    "What did the scientists show each other in 1958?",
+    "What did Gorbachev propose in 1985?"
+   ]
+  },
+  {
+   "id": "summary",
+   "stage": "tarkista",
+   "type": "theory",
+   "sections": [
+    "Tiivistelmä"
+   ]
+  },
+  {
+   "id": "french-corner",
+   "stage": "tarkista",
+   "type": "text",
+   "text": "<div class=\"french-corner\"><h4>Le coin français</h4><p>Geneva, <span lang=\"fr\">Genève</span>, is a French-speaking city, and ITER is now being built in France (under construction as of November 2026). A superconducting magnet is <span lang=\"fr\">un aimant supraconducteur</span>. Listen, repeat, and then say the last sentence to your partner.</p></div>\n\n<div class=\"fx\" data-fx=\"say\" id=\"fx-bm-french\"><script type=\"application/json\">{\"lang\": \"fr-FR\", \"title\": \"Le coin français: big machines\", \"phrases\": [{\"fr\": \"Genève\", \"en\": \"Geneva\", \"tip\": \"zhuh-NÈV: *G* before *e* sounds like the *s* in *pleasure*.\"}, {\"fr\": \"le chauffage du plasma\", \"en\": \"plasma heating\", \"tip\": \"luh shoh-FAZH dy plas-MA: *ch* is like English *sh*, *u* is the Finnish *y*.\"}, {\"fr\": \"un aimant supraconducteur\", \"en\": \"a superconducting magnet\", \"tip\": \"uh-ne-MAN sy-pra-kon-dyk-TUHR: link *un* and *aimant*.\"}, {\"fr\": \"la crise pétrolière\", \"en\": \"the oil crisis\", \"tip\": \"la KREEZ pay-troh-LYAIR\"}, {\"fr\": \"La fusion, une énergie pour tous.\", \"en\": \"Fusion, an energy for everyone.\", \"tip\": \"la fy-ZYON, y-nay-nair-ZHEE poor TOOS: the final *s* of *{fr}tous{/fr}* is heard here.\"}]}</script></div>"
+  }
+ ]
+}

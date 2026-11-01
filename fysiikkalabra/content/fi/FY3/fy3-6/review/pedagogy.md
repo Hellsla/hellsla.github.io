@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: adfa5c7727829d1c
+CONTENT-HASH: 73a72fe302bfea2a
 
 ## Blocking
 - none
@@ -8,4 +8,4 @@ CONTENT-HASH: adfa5c7727829d1c
 - none
 
 ## Checked
-batch delta review: the rephrased learning goals each complete "Tällä tunnilla opit" with a lowercase -maan/-mään verb, parallel within the list, symbols and numbers unchanged, meaning kept; the change touches no figure, simulation or task.
+Delta: the colon form with parentheses is readable on a phone (no stacked fraction in running text), still states the 'weighted average' explanation, result 35 °C consistent with the preceding staged solution and the note that it is not 50 °C. No meaning change.

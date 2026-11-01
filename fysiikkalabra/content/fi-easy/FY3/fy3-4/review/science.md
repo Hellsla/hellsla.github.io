@@ -1,16 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 5b5822ca16a3232f
+CONTENT-HASH: 1154302d46e52d67
 
 ## Blocking
-(none left)
-
-## Fixed
-- inquiry.json (exp-1, johtopaatos model, siirto, check-2 solutions; check-3 model) — dense Finnish copied unchanged → split into short sentences, every step label, formula and number kept
-- inquiry.json pred-1/pred-2/pred-3, sim model, check-1, virhe feedbacks — long compound sentences split
+(none)
 
 ## Polish
-- none
+(none)
 
 ## Checked
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): Lesson.md, meta, inquiry.json (incl. sim labels via i18n resolve: *Show gauge pressure only* matches the sim; experiment intro/names/solutions), exit-ticket.json, figures.json (each value translates its own key) read against the reviewed Finnish.
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked lesson, inquiry (incl. new check-c2 items), exit ticket and figure texts against the new Finnish; no issues found.
+- Translation reviewed against the reviewed Finnish after the typesetting round: every inline-math segment of lesson.md, inquiry.json, exit-ticket.json, figures.json compared with the Finnish (same numbers, units, symbols, decimal comma); no bare number+unit left outside LaTeX; sentences remain short and plain; JSON valid; check_i18n 0 errors for fi-easy.
+- Physics: numbers, answers and formulas identical to the Finnish; no new claim introduced.
+- Translation-only review (teacher's procedure 2026-10-28); no translation edits were needed.

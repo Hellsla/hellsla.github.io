@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: b5693f207e2ab3f8
+CONTENT-HASH: 987fd85d1a533a05
 
 ## Blocking
+- none
 
 ## Polish
+- none
 
 ## Checked
-batch delta review (round 1, 2026-10-28): the hashed content on this branch is identical to the version passed on main after the physics audit (same hash b5693f207e2ab3f8; git diff against origin/main touches only review/usage.tsv), so the diff is empty. The sim LaTeX pass (KaTeX labels and readouts in lang/fi.json, window.simText tests, howto/model/calc boxes) is already part of that passed version; spot-read its sim strings for physics, symbols and units against the guardrails: no new or changed claim.
+Re-review after typesetting round (word-level diff against the passed versions). Only change: inquiry.json activity 17 solution, Sijoitus line. Old nested fraction 100 / (1/3 1/°C) replaced by 100 · 3 °C: 100 ÷ (1/3 per °C) = 300 °C, so θ0 = 27 °C − 300 °C = −273 °C unchanged; k = 1/3 1/°C, answer, Järkevyys chain and absolute-zero remark untouched and correct (linear extrapolation, p ∝ T; −273,15 °C stated). Unit is correct (°C), \cdot used, valid LaTeX. Learning-goal verb changes (-maan/-mään) carry no physics.

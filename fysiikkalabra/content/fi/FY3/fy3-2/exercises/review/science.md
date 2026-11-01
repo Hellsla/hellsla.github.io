@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: f68c612785f86818
+CONTENT-HASH: 97ec41ff120e01f4
 
-Delta review over the audit's PASS (692e3c67259f2b1a): L1-04 replaced by figure task pull-steps, LaTeX units elsewhere.
+Delta review: three Järkevyys paragraphs in solutions.md rewritten, brackets to colon sentences.
 
 ## Blocking
 - none
 ## Polish
 - none
 ## Checked
-- L1-04 recomputed: 25 N · 6 m + 10 N · 4 m = 150 J + 40 J = 190 J; answers.py gives 190.
-- Figure pull-steps: levels 25 N and 10 N and ends 0, 6, 10 m all on the 1 m × 5 N grid; drop drawn dashed at 6 m; description lists the levels, not the work.
-- Tolerance 0,02 accepts 186,2–193,8 J; wrong methods 25 N · 10 m = 250 J, 10 N · 10 m = 100 J and 25 · 6 = 150 J are rejected.
-- Solution: two-rectangle reasoning, Kuvaajan lukeminen, average force 19 N check correct; other LaTeX unit edits recomputed (unchanged values).
+- 80 N x 25 m = 2000 J; 20 kg · 9,81 · 10 m = 1962 J = 2,0 kJ; 10,2 m is "noin 10 m". Same numbers as before.
+- 300 kg · 9,81 · 1 m/s = 2,94 kW = 2,9 kW vs 3 kW; sentence "Tämä sopii hissin moottorille" keeps the meaning.
+- 1,5 kW · 4/60 h = 0,10 kWh = 360 kJ; 360 000 / (1000 · 9,81) = 36,7 = 37 m. Unchanged.
+- No number, unit or answer changed; answers.py and exercises untouched. FY3 scope (W = Fs, G = mg) kept.

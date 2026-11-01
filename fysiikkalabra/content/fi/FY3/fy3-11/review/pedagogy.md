@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 7c789ad59a5252aa
+CONTENT-HASH: 24f3551fe9d8cba8
 
 ## Blocking
 - none
@@ -8,4 +8,4 @@ CONTENT-HASH: 7c789ad59a5252aa
 - none
 
 ## Checked
-batch delta review: the rephrased learning goals each complete "Tällä tunnilla opit" with a lowercase -maan/-mään verb, parallel within the list, symbols and numbers unchanged, meaning kept; the change touches no figure, simulation or task.
+Judged the change since the passed version: only the source of the W_k label in the sim moved to the language file with identical Finnish/TeX output; no visible change on the page, controls, experiments, wording or workload. Inquiry tests (65 passed) and layout checks at 360/768/1280 px ok, so the earlier pedagogy PASS stands.

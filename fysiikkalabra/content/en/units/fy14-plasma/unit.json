@@ -1,0 +1,76 @@
+{
+ "id": "fy14-plasma",
+ "course": "FY14",
+ "chapter": 4,
+ "order": 1,
+ "title": "Plasma: the fourth state of matter",
+ "description": "Ionisation turns a gas into a plasma, the matter of stars, lightning and the northern lights; a fusion plasma is hotter than the Sun's core but far thinner, and Lawson's triple product sets its target.",
+ "kind": "physics",
+ "minutes": 75,
+ "subjects": [
+  "physics",
+  "english",
+  "french"
+ ],
+ "sources": [
+  {
+   "title": "Plasma (physics) (Wikipedia): Langmuir's name of 1928, quasi-neutrality, plasma as most of the visible ordinary matter",
+   "url": "https://en.wikipedia.org/wiki/Plasma_(physics)",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Sun (Wikipedia): core temperature 1.57 · 10⁷ K, core density up to 150 g/cm³",
+   "url": "https://en.wikipedia.org/wiki/Sun",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Solar core (Wikipedia): central pressure 26.5 million GPa, power density about 276.5 W/m³",
+   "url": "https://en.wikipedia.org/wiki/Solar_core",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Lightning (Wikipedia): channel temperature about 30 000 °C, average return-stroke current about 30 kA, plasma channel",
+   "url": "https://en.wikipedia.org/wiki/Lightning",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Aurora (Wikipedia): heights (maximum near 100 km, few above 150 km), electrons of a few keV, oxygen 557.7 nm and 630.0 nm, nitrogen blue",
+   "url": "https://en.wikipedia.org/wiki/Aurora",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Finnish Meteorological Institute: Northern lights (how often in Kilpisjärvi–Utsjoki, Sodankylä and Helsinki; the auroral oval about 2500 km from the poles)",
+   "url": "https://en.ilmatieteenlaitos.fi/northern-lights",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "ITER: Facts and figures (150 million °C, 830 m³, 500 MW from 50 MW, pulses of 400–600 s)",
+   "url": "https://www.iter.org/facts-figures",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "CIEMAT fusion wiki: ITER reference scenario (density about 1.0 · 10²⁰ m⁻³, R = 6.2 m, a = 2.0 m, 15 MA, 5.3 T)",
+   "url": "https://wiki.fusion.ciemat.es/wiki/ITER",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Lawson criterion (Wikipedia): Lawson's classified 1955 Harwell report, published 1957; the triple product",
+   "url": "https://en.wikipedia.org/wiki/Lawson_criterion",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Wurzel and Hsu, Progress toward fusion energy breakeven and gain as measured against the Lawson criterion, AIP, doi 10.1063/5.0083990 (arXiv 2105.10954): ignition needs about 2.9 · 10²¹ keV·s/m³ near 14 keV",
+   "url": "https://arxiv.org/abs/2105.10954",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "EUROfusion glossary: Lawson criteria and triple product",
+   "url": "https://euro-fusion.org/glossary/lawson-criteria/",
+   "checked": "2026-11-01"
+  }
+ ],
+ "media": [
+  {"file": "units/fy14/pics/lightning.jpg", "title": "Lightning strike", "creator": "Rollingskyphoto", "source": "https://commons.wikimedia.org/wiki/File:High_Quality_Lightning_Strike.jpg", "licence": "CC BY 4.0", "licence_url": "https://creativecommons.org/licenses/by/4.0"},
+  {"file": "units/fy14/pics/aurora.jpg", "title": "Northern lights over Saana, Finland", "creator": "WikiLucas00", "source": "https://commons.wikimedia.org/wiki/File:Aurora_borealis_over_Saana_fell.jpg", "licence": "CC BY-SA 4.0", "licence_url": "https://creativecommons.org/licenses/by-sa/4.0"}
+ ]
+}

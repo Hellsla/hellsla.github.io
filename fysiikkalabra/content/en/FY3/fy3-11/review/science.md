@@ -1,17 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 6a250e96e0e41497
+CONTENT-HASH: 979dd4b15493dfaa
 
 ## Blocking
-(none left; see Fixed)
-
-## Fixed
-- content/en/FY3/fy3-11/lesson.md (Refrigerator and heat pump) — "three times the power of the electric power it uses" was clumsy and could be read as comparing the wrong powers → "three times as much heating power as the electric power it uses"
-- content/en/FY3/fy3-11/meta.json glossary — "yhteistuotanto" and "lauhdevoimalaitos" were left in Finnish → "combined heat and power", "condensing power plant"
+(none)
 
 ## Polish
-- The experiment tables show the select value "sama paine" / "jäähdytys ensin" in Finnish in the setup line and rows, because the Finnish inquiry.json has no `values` map ({paluu: {...}}). A `values` map in en is refused by check_i18n (keys differ from Finnish). Add it to the Finnish source first, then en can show "at the same pressure" / "cool first".
+(none)
 
 ## Checked
-- Update 2026-10-28: meta.json glossary terms restored to English (the update tool had reverted them to Finnish); pages unchanged.
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): lesson.md, inquiry.json (all activities, hints, feedback, solutions, experiment names/intros), exit-ticket.json, meta.json, figures.json and the sim labels (lang/en.json sims.fy3-11). Science: meaning, signs (W_g, Delta U = Q - W_g), numbers, units, terms, chapter titles and decimal sign compared with the Finnish.
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked lesson, inquiry (check-c2 heat-pump item, units, feedback), exit ticket, figure description.
+- Only change since the PASS at ee6b2ec: sims.fy3-11.oranssi_kaasun_tekema shortened to "Orange: work by the gas. Blue: work on the gas. Same colour, same energy." Physics identical: orange = work done by the gas (W_g, expansion), blue = work done on the gas (compression), equal colour for equal energy, as in the Finnish ("kaasun tekemä työ", "kaasuun tehty työ", "sama väri, sama energia").
+- Rest of the sim's English strings compared with the Finnish key by key: heating, piston return, cool first / same pressure, Q1, Q2, net work W, pressure after cooling, hot plate / cold water / insulation, symbol W_g for W_k. All match in meaning and signs; no number or formula altered.
+- The note is 14 words, so it stays a short caption and does not fold into the assumptions box; the model statement is unchanged.
+- check_i18n: 0 errors. Lesson text, inquiry, exercises and solutions are unchanged from the earlier PASS.

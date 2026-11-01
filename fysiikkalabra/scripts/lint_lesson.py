@@ -93,7 +93,8 @@ def math_fragments(text):
         yield line, (m.group(1) if m.group(1) is not None else m.group(2)), m.group(1) is not None or any(a <= m.start() < b for a, b in figs)
 
 
-PLAIN_QTY = re.compile(r"(?<![\w,])\d+(?:[ ,]\d+)*\s?(?:%|(?:[kMGT]?(?:W|J|Wh)|snt|€|kg|g|t|km|m|min|h|s|l|°C|K|ppm)\b)")
+# a number and its unit on one line: newtons, pascals, lengths, amounts, compound units (m/s, m²) too (teacher 2026-11-01, "jatkossa näin")
+PLAIN_QTY = re.compile(r"(?<![\w,.])\d+(?:[ ,.]\d+)*[ \u00a0]?(?:%|(?:[kMGTm]?(?:Wh|W|J|N|Pa|V|A|Hz)|snt|€|kg|g|t|km|cm|mm|m|min|h|s|l|°C|K|ppm|mol)(?:/[a-zA-Z]+)?[²³]?(?!\w))")
 
 
 def check_plain_quantities(L, name, text):

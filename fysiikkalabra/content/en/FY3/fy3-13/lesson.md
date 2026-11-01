@@ -203,7 +203,7 @@ where $\theta_{0,\text{max}}$ is the larger (less negative) and $\theta_{0,\text
 <path d="M84.0,314.0 V322.0 H128.9 V314.0" fill="none" stroke="#c92a2a" stroke-width="3"/>
 <circle cx="107.6" cy="270.0" r="6" fill="#c92a2a"/>
 <foreignObject x="4" y="324" width="210" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$\theta_0 \pm \Delta\theta_0$</div></foreignObject>
-<foreignObject x="204" y="76" width="200" height="36"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:left">$\text{extrapolation}$</div></foreignObject><line x1="264" y1="114" x2="264" y2="184" stroke="#1f2933" stroke-width="1.5"/><foreignObject x="300" y="6" width="152" height="36"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:right">$\text{measurement range}$</div></foreignObject><path d="M462,48 V32 H574 V48" fill="none" stroke="#1f2933" stroke-width="2"/>
+<foreignObject x="204" y="76" width="200" height="36"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:left">$\text{extrapolation}$</div></foreignObject><line x1="264" y1="114" x2="264" y2="184" stroke="#1f2933" stroke-width="1.5"/><foreignObject x="240" y="6" width="212" height="36"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:right">$\text{measurement range}$</div></foreignObject><path d="M462,48 V32 H574 V48" fill="none" stroke="#1f2933" stroke-width="2"/>
 </svg>
 
 The picture is drawn to scale. The limit lines run close to each other in the measurement range but move apart when you extrapolate, so the uncertainty grows as you extend the line. A more precise pressure gauge, more measurement points and a wider measurement range reduce the uncertainty. Once the result is known, the zero of the kelvin scale is placed there: the temperature in kelvins is $T = \theta - \theta_0$.
@@ -211,7 +211,7 @@ The picture is drawn to scale. The limit lines run close to each other in the me
 ## Worked example
 The example data give the pressure of the air in a sealed flask at seven temperatures, as a gas thermometer would measure them. The values have been calculated from the ideal gas model, and scatter corresponding to measurement imprecision has been added; they are not the results of a real measurement. The uncertainty of the pressure reading is estimated as $\pm 1\,\text{kPa}$.
 
-| θ (°C) | p (kPa) |
+| $\theta$ (°C) | $p$ (kPa) |
 | --- | --- |
 | 10 | 105 |
 | 25 | 110 |

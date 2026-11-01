@@ -56,12 +56,12 @@
       "choices": [
         {
           "text": "$W_\\text{k} = 200\\,\\text{J}$, koska työ määräytyy paineesta, joka pysyy $200\\,\\text{kPa}$:ssa.",
-          "feedback": "Kokeessa paine on joka rivillä 200 kPa, mutta mallin $W_\\text{k}$ kasvaa tilavuuden muutoksen mukana: $\\Delta V = 1{,}00\\,\\text{l}$ antaa $200\\,\\text{J}$ ja $\\Delta V = 1{,}50\\,\\text{l}$ antaa $300\\,\\text{J}$. Pelkkä paine ei tee työtä; mäntä tekee työtä vain liikkuessaan."
+          "feedback": "Kokeessa paine on joka rivillä $200\\,\\text{kPa}$, mutta mallin $W_\\text{k}$ kasvaa tilavuuden muutoksen mukana: $\\Delta V = 1{,}00\\,\\text{l}$ antaa $200\\,\\text{J}$ ja $\\Delta V = 1{,}50\\,\\text{l}$ antaa $300\\,\\text{J}$. Pelkkä paine ei tee työtä; mäntä tekee työtä vain liikkuessaan."
         },
         {
           "text": "$W_\\text{k} = 300\\,\\text{J}$",
           "correct": true,
-          "feedback": "Mallin arvot tukevat tätä: kun lämpö $Q = 750\\,\\text{J}$ vie tilavuuden 1,0 litrasta 2,5 litraan, malli antaa $W_\\text{k} = 300\\,\\text{J}$. $(V, p)$-kuvaajan oranssi suorakulmio on 200 kPa korkea ja $1{,}5\\,\\textsf{l}$ leveä: $200\\,000\\,\\text{Pa} \\cdot 0{,}0015\\,\\text{m}^3 = 300\\,\\text{J}$."
+          "feedback": "Mallin arvot tukevat tätä: kun lämpö $Q = 750\\,\\text{J}$ vie tilavuuden $1{,}0\\,\\textsf{l}$:stä $2{,}5\\,\\textsf{l}$:ään, malli antaa $W_\\text{k} = 300\\,\\text{J}$. $(V, p)$-kuvaajan oranssi suorakulmio on $200\\,\\text{kPa}$ korkea ja $1{,}5\\,\\textsf{l}$ leveä: $200\\,000\\,\\text{Pa} \\cdot 0{,}0015\\,\\text{m}^3 = 300\\,\\text{J}$."
         },
         {
           "text": "$W_\\text{k} = 500\\,\\text{J}$",
@@ -69,7 +69,7 @@
         },
         {
           "text": "$W_\\text{k} = 300\\,000\\,\\text{J}$",
-          "feedback": "Tässä pascalit on kerrottu litroilla. Kokeessa malli antaa 1,5 litran laajenemiselle $W_\\text{k} = 300\\,\\text{J}$: tilavuus on muunnettava kuutiometreiksi, $1{,}5\\,\\text{l} = 0{,}0015\\,\\text{m}^3$."
+          "feedback": "Tässä pascalit on kerrottu litroilla. Kokeessa malli antaa $1{,}5\\,\\textsf{l}$:n laajenemiselle $W_\\text{k} = 300\\,\\text{J}$: tilavuus on muunnettava kuutiometreiksi, $1{,}5\\,\\text{l} = 0{,}0015\\,\\text{m}^3$."
         }
       ]
     },
@@ -87,7 +87,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 1: lämmitys vakiopaineessa",
-      "intro": "Testaa ennuste 1. Paine pysyy 200 kPa:ssa, koska punnukset eivät muutu. Muuta vain lämpöä $Q$, esimerkiksi $500\\,\\text{J}$, $750\\,\\text{J}$ ja $1000\\,\\text{J}$. Paina joka kerta *Lämmitä* ja kirjaa mittaus vasta, kun mäntä on pysähtynyt. Kirjaa ainakin rivi $Q = 1000\\,\\text{J}$.",
+      "intro": "Testaa ennuste 1. Paine pysyy $200\\,\\text{kPa}$:ssa, koska punnukset eivät muutu. Muuta vain lämpöä $Q$, esimerkiksi $500\\,\\text{J}$, $750\\,\\text{J}$ ja $1000\\,\\text{J}$. Paina joka kerta *Lämmitä* ja kirjaa mittaus vasta, kun mäntä on pysähtynyt. Kirjaa ainakin rivi $Q = 1000\\,\\text{J}$.",
       "initial": {
         "Qin": 500,
         "paluu": "sama paine",
@@ -223,16 +223,16 @@
       "min": 2,
       "question": {
         "type": "choice",
-        "prompt": "Kierroksen B jälkeen $(V, p)$-kuvaajaan jää oranssi suorakulmio paineiden 100 kPa ja 200 kPa väliin. Mitä sen pinta-ala kertoo?",
+        "prompt": "Kierroksen B jälkeen $(V, p)$-kuvaajaan jää oranssi suorakulmio paineiden $100\\,\\text{kPa}$ ja $200\\,\\text{kPa}$ väliin. Mitä sen pinta-ala kertoo?",
         "choices": [
           {
             "text": "Kierroksen nettotyön: $W = (p_1 - p_2)\\,\\Delta V = 100\\,\\text{kPa} \\cdot 1{,}0\\,\\text{l} = 100\\,\\text{J}$.",
             "correct": true,
-            "feedback": "Oikein. Kaasu teki noustessaan $200\\,\\text{J}$:n työn, ja paluussa paineessa 100 kPa siihen tehtiin $100\\,\\text{J}$:n työ (sininen). Erotus $100\\,\\text{J}$ on sama kuin $Q_1 - Q_2 = 650\\,\\text{J} - 550\\,\\text{J}$, ja se on punnuksen nostamiseen kulunut energia."
+            "feedback": "Oikein. Kaasu teki noustessaan $200\\,\\text{J}$:n työn, ja paluussa paineessa $100\\,\\text{kPa}$ siihen tehtiin $100\\,\\text{J}$:n työ (sininen). Erotus $100\\,\\text{J}$ on sama kuin $Q_1 - Q_2 = 650\\,\\text{J} - 550\\,\\text{J}$, ja se on punnuksen nostamiseen kulunut energia."
           },
           {
             "text": "Kylmään veteen siirtyneen lämmön $Q_2$.",
-            "feedback": "Malli antaa $Q_2 = 550\\,\\text{J}$, mutta suorakulmio on 100 kPa korkea ja $1{,}0\\,\\textsf{l}$ leveä eli $100\\,\\text{J}$. $(V, p)$-kuvaajan pinta-ala on työtä, ei lämpöä; lämpö näkyy vain palkeissa."
+            "feedback": "Malli antaa $Q_2 = 550\\,\\text{J}$, mutta suorakulmio on $100\\,\\text{kPa}$ korkea ja $1{,}0\\,\\textsf{l}$ leveä eli $100\\,\\text{J}$. $(V, p)$-kuvaajan pinta-ala on työtä, ei lämpöä; lämpö näkyy vain palkeissa."
           },
           {
             "text": "Kaasun tekemän työn männän noustessa.",

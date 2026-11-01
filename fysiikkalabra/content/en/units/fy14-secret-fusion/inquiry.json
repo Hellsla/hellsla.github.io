@@ -1,0 +1,454 @@
+{
+ "version": 1,
+ "contribution": "The first history unit of chapter 5: how fusion research grew from the physics of the stars and the first accelerator reactions into secret, state-funded Cold War programmes; why governments hid it; how pinches, the stellarator and the tokamak idea began; and how the Huemul and ZETA claims were tested and the work was declassified at Geneva in 1958.",
+ "learn": [
+  "explain why governments made controlled fusion research secret around 1950 and why they opened it in 1958.",
+  "describe how a pinch, a stellarator and a tokamak try to confine a hot plasma.",
+  "distinguish a claim from evidence, using the Huemul and ZETA cases."
+ ],
+ "prior": [
+  "Fusion joins light nuclei, and the repulsion of their charges must be overcome by high temperature and tunnelling (chapter *Fusion reactions: from the Sun to deuterium and tritium*)",
+  "A magnetic field pushes moving charges sideways and can guide them along field lines (chapter *Charged particles and magnetic confinement*)"
+ ],
+ "activities": [
+  {
+   "id": "hook",
+   "stage": "herata",
+   "type": "hook",
+   "text": "In 1946 two physicists in London applied for a patent on a machine that would produce energy by fusion, the process that powers the stars. A few years later their work, and similar work in the United States and the Soviet Union, disappeared behind locked doors. Then, in March 1951, the President of Argentina told the world press that his country had already tamed fusion.\n\nNobody had built a fusion power plant. Nobody was close.",
+   "question": "Why would governments hide research on a source of energy that might one day help everybody, and how could anyone know whether a fusion claim was true?"
+  },
+  {
+   "id": "think",
+   "stage": "herata",
+   "type": "explain",
+   "title": "Think about it: secrets in science",
+   "prompt": "Discuss with a partner for three minutes, then write two or three sentences together. What do you already know about the **Cold War** (about 1947–1991)? Can you think of a kind of research that a government might keep secret today? Give one reason why.\n\n<div class=\"wordbank\"><h4>Word bank</h4><p>the Cold War · the United States · the Soviet Union (the USSR) · a rival · a weapon · secret · a spy · an advantage</p></div>\n\n<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>The Cold War was a rivalry between …</li><li>A government might keep … secret, because …</li><li>One reason for secrecy is …</li></ul></div>",
+   "pair": "Pair work: one of you starts with the Cold War, the other with research today; then write together.",
+   "model": "The Cold War was a long rivalry between the United States and its allies and the Soviet Union and its allies, from the late 1940s to 1991. They did not fight a direct war, but they competed in nuclear weapons, space and technology. Today a government might keep research on new weapons, codes or computer security secret, because an enemy could use it. A company might also keep research secret so that others cannot copy it.",
+   "criteria": [
+    "The answer says who the two sides of the Cold War were and roughly when it happened.",
+    "The answer names one kind of secret research and gives a reason (safety, military advantage, money)."
+   ],
+   "hints": [
+    "Think of the two superpowers after the Second World War.",
+    "Weapons, codes, medicines, computer chips: which of these might be secret, and for whom?"
+   ]
+  },
+  {
+   "id": "pred-secret",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Prediction 1: the reason for secrecy",
+   "prompt": "Around 1950–1951, Britain, the United States and the Soviet Union all made their research on **controlled** fusion (fusion for energy, not for bombs) secret. What do you think was the most important reason? Commit to an answer and give a short reason. The reading in Investigate will show you.",
+   "justify": true,
+   "reveal": {
+    "after": "theory-war"
+   },
+   "choices": [
+    {
+     "text": "It was too close to hydrogen-bomb physics and fuel.",
+     "feedback": "Right, these are the two main reasons in the reading. The physics of hot fusion fuel is close to the physics of the hydrogen bomb, which all three countries were building, and a fusion device makes neutrons, which can turn uranium into plutonium for bombs. The Huemul claim and Fuchs's spying added fear of falling behind.",
+     "correct": true
+    },
+    {
+     "text": "A reactor could explode like a hydrogen bomb.",
+     "feedback": "The reading does not give this reason, and it is not true. A controlled fusion device holds a tiny amount of fuel; if something goes wrong, the plasma cools and the reactions stop. The secret was the weapons *knowledge*: the physics close to the hydrogen bomb, and neutrons that can make bomb fuel."
+    },
+    {
+     "text": "Governments thought fusion was useless and hid the cost.",
+     "feedback": "The opposite: governments thought fusion might be very valuable, which is why they paid for it and feared that a rival could be ahead. The reading gives other reasons: neutrons that can make bomb fuel and the link with the hydrogen bomb."
+    },
+    {
+     "text": "Scientists wanted to patent their ideas and sell them.",
+     "feedback": "Thomson and Blackman did apply for a patent in 1946, but the secrecy came from governments, not from the scientists, and it stopped them from publishing. The reading shows that the reasons were military: neutrons for bomb fuel and the link with the hydrogen bomb."
+    }
+   ]
+  },
+  {
+   "id": "pred-zeta",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Prediction 2: testing a claim",
+   "prompt": "In 1957–1958 the British machine ZETA produced about a million neutrons in each pulse of hot deuterium gas. Two deuterium nuclei that fuse can make a neutron, but so can a few very fast ions that crash into others. Which observation would show best that the neutrons came from fusion in a really **hot** plasma? Commit now; the section on ZETA will tell you.",
+   "justify": true,
+   "reveal": {
+    "after": "theory-zeta"
+   },
+   "choices": [
+    {
+     "text": "The neutrons fly out equally in all directions.",
+     "feedback": "Right. In a hot plasma the ions move at random in every direction, so fusion neutrons leave equally in all directions. Basil Rose found the opposite at ZETA: most neutrons flew one way, and the direction reversed with the current. So they came from a few accelerated ions, not from a hot plasma.",
+     "correct": true
+    },
+    {
+     "text": "The number of neutrons in each pulse is very large.",
+     "feedback": "A large number shows that *some* nuclear reactions happen, but not why. A few fast ions can also make many neutrons. ZETA's million neutrons per pulse turned out to come from accelerated ions: Rose's measurement of their directions showed it."
+    },
+    {
+     "text": "Neutrons appear only while the current flows.",
+     "feedback": "In ZETA everything happens while the current flows: the current both heats the gas and accelerates a few ions. So this cannot tell the two causes apart. Rose measured the *directions* of the neutrons instead, and they flew mostly one way."
+    },
+    {
+     "text": "Famous scientists agree at a press conference.",
+     "feedback": "This is what happened in January 1958, and it was wrong. Agreement among experts is not a measurement. Rose's measurement of the neutron directions in early 1958 showed that the neutrons did not come from a hot plasma."
+    }
+   ]
+  },
+  {
+   "id": "jigsaw",
+   "stage": "tutki",
+   "type": "text",
+   "title": "How to read: a jigsaw in groups of four",
+   "text": "The story of fusion before 1958 is told in six short sections. Work in groups of four. **Each of you reads one of the first four sections** (*From the stars to the laboratory*, *War, bombs and secrecy*, *An island in Patagonia*, *Pinches, stellarators and a Soviet ring*) and becomes its expert. Take notes on three things: **what happened**, **who was involved**, and **how governments, war or secrecy affected it**. Then tell your group about your section in one minute each. After that, everyone reads *ZETA* and *Geneva 1958*.\n\n<div class=\"wordbank\"><h4>Word bank</h4><p>to classify (to make secret) · to declassify · a claim · evidence · to inspect · an accelerator · a beam · a plasma · a pinch · an instability · to confine · a neutron · the hydrogen bomb · funding</p></div>\n\n<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>My section is about …</li><li>The most important event was … in …</li><li>The government (or the war) affected this because …</li><li>This was important for fusion because …</li><li>I was surprised that …</li></ul></div>"
+  },
+  {
+   "id": "theory-stars",
+   "stage": "tutki",
+   "type": "theory",
+   "sections": [
+    "Stars"
+   ]
+  },
+  {
+   "id": "theory-war",
+   "stage": "tutki",
+   "type": "theory",
+   "sections": [
+    "War"
+   ]
+  },
+  {
+   "id": "theory-huemul",
+   "stage": "tutki",
+   "type": "theory",
+   "sections": [
+    "Huemul"
+   ]
+  },
+  {
+   "id": "theory-machines",
+   "stage": "tutki",
+   "type": "theory",
+   "sections": [
+    "Machines"
+   ]
+  },
+  {
+   "id": "expert",
+   "stage": "tutki",
+   "type": "explain",
+   "title": "Expert notes: your section",
+   "prompt": "After the jigsaw, write three sentences about **your own** section: what happened, who was involved, and how governments, the war or secrecy affected it. Then listen to your group and add **one** sentence about another section.\n\n<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>My section is about …</li><li>In …, … happened.</li><li>This was affected by the war (or by secrecy) because …</li><li>From another expert I learned that …</li></ul></div>",
+   "pair": "Group work: each expert speaks for one minute; the others ask one question each.",
+   "model": "*Stars:* In 1920 Eddington suggested that the Sun turns hydrogen into helium, and in 1934 Oliphant, Harteck and Rutherford made the first fusion reactions with an accelerator. The scientists published openly in journals, because the work had no military use yet. But accelerator beams lose most of their energy, so Rutherford thought atomic power was impossible.\n\n*War:* After fission was discovered in 1938, nuclear physics became part of the war and the atomic bomb. Fusion became secret around 1950–1951 in Britain, the Soviet Union and the United States, because of its links with the hydrogen bomb and because a fusion device makes neutrons. Governments started secret, state-funded programmes, such as the Soviet laboratory approved by Stalin in 1951 and Project Sherwood.\n\n*Huemul:* In 1951 Perón announced that Ronald Richter had produced controlled fusion on Huemul Island. There was no checkable evidence, and an inspection by Balseiro's team in 1952 found no nuclear reactions. The false claim still pushed other governments to fund fusion.\n\n*Machines:* In the early 1950s pinches, Spitzer's stellarator and the Soviet tokamak competed. Pinches were unstable (kink and sausage instabilities). The work was secret, so each country developed its ideas alone.",
+   "criteria": [
+    "The sentences give at least one date and one name from the section.",
+    "The answer says *how* governments, war or secrecy affected the events, not only *what* happened.",
+    "The extra sentence about another section is correct and in your own words."
+   ],
+   "hints": [
+    "Look again at the three things in your notes: what, who, how affected.",
+    "Use a sentence starter from the word bank above."
+   ]
+  },
+  {
+   "id": "zeta-data",
+   "stage": "tutki",
+   "type": "interpret",
+   "title": "Investigate the evidence: ZETA's neutrons",
+   "source": "example",
+   "source_note": "Numbers simplified for the lesson. They show the pattern that Basil Rose reported at Harwell in early 1958 (Wikipedia, *ZETA (fusion reactor)*, checked 1 November 2026), not his raw data.",
+   "text": "Early in 1958 Basil Rose at Harwell measured the neutrons from ZETA's pulses. He compared the neutrons that left the tube **in the direction of the current** with those that left it **in the opposite direction**. Then the current was reversed and he measured again. Look back at your Prediction 2 before you read the table.\n\n| Current in the tube | Share of neutrons in the direction of the original current (%) | Share in the opposite direction (%) |\n| --- | --- | --- |\n| one way | 70 | 30 |\n| reversed | 30 | 70 |",
+   "question": {
+    "type": "choice",
+    "prompt": "What do these measurements show about where ZETA's neutrons came from?",
+    "choices": [
+     {
+      "text": "Most fly one way, and the current sets the way.",
+      "feedback": "Right. The neutrons leave mostly in one direction, and that direction follows the current. Ions in a hot plasma move at random, so their fusion neutrons would leave equally both ways. Here a few ions were pushed one way by the electric field: the next section tells the story.",
+      "correct": true
+     },
+     {
+      "text": "The neutrons fly out equally in both directions.",
+      "feedback": "Look at the table again: 70 % go one way and only 30 % the other. Equal shares, 50 and 50, would be the sign of a hot plasma with randomly moving ions."
+     },
+     {
+      "text": "Reversing the current stops the neutrons.",
+      "feedback": "The neutrons do not stop: the shares only swap, 70/30 becomes 30/70. The direction of the neutrons follows the current."
+     },
+     {
+      "text": "The plasma gets hotter when the current reverses.",
+      "feedback": "The table gives no temperatures, only directions, and the two rows are mirror images. What changes is the direction in which most neutrons leave, and it follows the current."
+     }
+    ]
+   }
+  },
+  {
+   "id": "theory-zeta",
+   "stage": "tutki",
+   "type": "theory",
+   "sections": [
+    "ZETA"
+   ]
+  },
+  {
+   "id": "theory-geneva",
+   "stage": "tutki",
+   "type": "theory",
+   "sections": [
+    "Geneva"
+   ]
+  },
+  {
+   "id": "order-events",
+   "stage": "tutki",
+   "type": "text",
+   "title": "Put the story in order",
+   "text": "<div class=\"fx\" data-fx=\"order\" id=\"fx-sf-order\"><script type=\"application/json\">{\"prompt\": \"Put these events in the order in which they happened, from the earliest to the latest. Use the buttons, then press *Check the order*.\", \"items\": [\"Eddington suggests that the Sun builds helium out of hydrogen.\", \"Oliphant, Harteck and Rutherford make fusion reactions with an accelerator.\", \"Fission of uranium is discovered in Berlin.\", \"Thomson and Blackman apply for a patent on a fusion reactor.\", \"Perón announces Richter's fusion success on Huemul Island.\", \"The first US hydrogen bomb, Ivy Mike, is tested.\", \"ZETA is presented to the press as a possible breakthrough.\", \"Fusion research is declassified at a conference in Geneva.\"], \"hints\": [\"The earliest event is from 1920.\", \"This one is from 1934.\", \"This one is from 1938.\", \"This one is from 1946.\", \"This one is from 1951.\", \"This one is from 1952.\", \"This one is from January 1958.\", \"The last event is from September 1958.\"], \"explain\": \"Right. From 1920 to 1938 the research was open science. After 1945 it was tied to the bomb and became secret; the false Huemul claim (1951) and the hydrogen bomb (1952) came in the secret years. ZETA's announcement (January 1958) and the Geneva conference (September 1958) mark the end of secrecy.\"}</script></div>"
+  },
+  {
+   "id": "theory-key",
+   "stage": "selita",
+   "type": "theory",
+   "sections": [
+    "Ydinajatus",
+    "Yleinen virhekäsitys"
+   ]
+  },
+  {
+   "id": "back-to-predictions",
+   "stage": "selita",
+   "type": "reflect",
+   "title": "Back to your predictions",
+   "prompt": "Compare your two predictions with the reading. Then answer the opening question in two sentences: why did governments hide research on a peaceful source of energy, and why did they stop hiding it in 1958?",
+   "predictions": [
+    "pred-secret",
+    "pred-zeta"
+   ]
+  },
+  {
+   "id": "theory-people",
+   "stage": "selita",
+   "type": "theory",
+   "optional": true,
+   "title": "Three people of the secret years",
+   "sections": [
+    "People"
+   ]
+  },
+  {
+   "id": "people-task",
+   "stage": "selita",
+   "type": "explain",
+   "optional": true,
+   "title": "Compare two lives",
+   "prompt": "Read the biographies of Richter and Spitzer. Both reacted to the same event, the Huemul claim of 1951. Write three sentences: what each of them did, and what their stories teach about how science should work.\n\n<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>Richter claimed that …, but …</li><li>Spitzer reacted by …</li><li>Their stories show that a scientific claim …</li></ul></div>",
+   "model": "Richter announced controlled fusion in 1951 without evidence that others could check, and an inspection showed that his temperatures were far too low. Spitzer read about the claim, doubted it, and instead worked carefully on a new way to confine a plasma, the stellarator. Their stories show that a claim must be supported by measurements that others can test, and that doubt can lead to good new work.",
+   "criteria": [
+    "The answer says what Richter claimed and how it was shown to be false.",
+    "The answer says how Spitzer reacted and what he invented.",
+    "The answer draws a lesson about evidence or checking in science."
+   ]
+  },
+  {
+   "id": "zeta-temperature",
+   "stage": "sovella",
+   "type": "numeric",
+   "title": "How hot was ZETA?",
+   "prompt": "Spectroscopic measurements suggested that ZETA's plasma was at $1$ to $5$ million kelvin. A useful fusion plasma of deuterium and tritium needs an average particle energy of about $10\\ \\text{keV}$. The typical thermal energy of a particle is $E = k_\\text{B} T$. Calculate this energy for the highest ZETA value, $T = 5.0 \\cdot 10^{6}\\ \\text{K}$, in electronvolts.",
+   "answer": 430.9,
+   "unit": "$\\text{eV}$",
+   "tolerance": 0.02,
+   "hints": [
+    "Use $E = k_\\text{B} T$ with the Boltzmann constant $k_\\text{B} = 1.381 \\cdot 10^{-23}\\ \\text{J/K}$.",
+    "The result in joules is very small. Divide by $1.602 \\cdot 10^{-19}\\ \\text{J/eV}$ to get electronvolts.",
+    "$E = 1.381 \\cdot 10^{-23}\\ \\text{J/K} \\cdot 5.0 \\cdot 10^{6}\\ \\text{K} = 6.90 \\cdot 10^{-17}\\ \\text{J}$"
+   ],
+   "mistakes": [
+    {
+     "value": 6.9e-17,
+     "feedback": "This is the energy in **joules**. The task asks for electronvolts: divide by $1.602 \\cdot 10^{-19}\\ \\text{J/eV}$."
+    },
+    {
+     "value": 0.4309,
+     "feedback": "This is the energy in **kiloelectronvolts**, $0.43\\ \\text{keV}$. The task asks for electronvolts: $1\\ \\text{keV} = 1000\\ \\text{eV}$."
+    },
+    {
+     "value": 86.17,
+     "feedback": "This is the energy for $1.0 \\cdot 10^{6}\\ \\text{K}$, the lowest value. Use the highest value, $5.0 \\cdot 10^{6}\\ \\text{K}$."
+    }
+   ],
+   "solution": "**Given:** the highest ZETA temperature $T = 5.0 \\cdot 10^{6}\\ \\text{K}$; the Boltzmann constant $k_\\text{B} = 1.381 \\cdot 10^{-23}\\ \\text{J/K}$; $1\\ \\text{eV} = 1.602 \\cdot 10^{-19}\\ \\text{J}$\n\n**Find:** the typical thermal energy $E$ of one particle, in electronvolts\n\n**Principle:** In a gas or a plasma at temperature $T$, the typical energy of one particle's random motion is about $k_\\text{B} T$. Temperature is a measure of this energy, so this formula turns kelvins into an energy per particle.\n\n**Formula:** $E = k_\\text{B} T$, and in electronvolts $E_\\text{eV} = \\dfrac{k_\\text{B} T}{1.602 \\cdot 10^{-19}\\ \\text{J/eV}}$\n\n**Unit conversions:** None for the temperature, which is already in kelvins. The answer in joules is converted to electronvolts with $1\\ \\text{eV} = 1.602 \\cdot 10^{-19}\\ \\text{J}$.\n\n**Substitution:**\n\n$$\\begin{aligned} E &= 1.381 \\cdot 10^{-23}\\ \\text{J/K} \\cdot 5.0 \\cdot 10^{6}\\ \\text{K} \\\\ &= 6.905 \\cdot 10^{-17}\\ \\text{J} \\\\ E_\\text{eV} &= \\frac{6.905 \\cdot 10^{-17}\\ \\text{J}}{1.602 \\cdot 10^{-19}\\ \\text{J/eV}} \\\\ &= 431\\ \\text{eV} \\end{aligned}$$\n\n**Answer:** $E \\approx 430\\ \\text{eV}$, about $0.43\\ \\text{keV}$. The temperature is given to two significant figures, so the answer is too.\n\n**Reasonableness:** A useful deuterium–tritium plasma needs about $10\\ \\text{keV}$, which is about $10\\ 000 : 431 \\approx 23$ times more, or about $120$ million kelvin. So even the highest ZETA value was far too cold for useful fusion, and it fits that ZETA's neutrons did not come from a hot plasma. As a check, $1\\ \\text{eV}$ corresponds to about $11\\ 600\\ \\text{K}$, and $5.0 \\cdot 10^{6} : 11\\ 600 \\approx 431$."
+  },
+  {
+   "id": "sort-claims",
+   "stage": "sovella",
+   "type": "text",
+   "title": "Claim, evidence or motive?",
+   "text": "<div class=\"fx\" data-fx=\"match\" id=\"fx-sf-sort\"><script type=\"application/json\">{\"prompt\": \"Historians separate three kinds of statement: a **claim** (someone says something is true), **evidence** (an observation or measurement that others can check) and a **motive** (a reason why someone acts). Sort each statement, then press *Check*.\", \"options\": [\"claim\", \"evidence\", \"motive\"], \"items\": [{\"text\": \"Perón tells the press that Argentina has produced controlled fusion.\", \"answer\": \"claim\", \"feedback\": \"Perón *says* it is true, but he shows no measurements. It is a claim.\"}, {\"text\": \"Balseiro's team finds no sign of nuclear reactions on Huemul Island.\", \"answer\": \"evidence\", \"feedback\": \"An inspection with observations that others could repeat: evidence. It showed that the claim was false.\"}, {\"text\": \"Governments feared that fusion neutrons could make bomb fuel.\", \"answer\": \"motive\", \"feedback\": \"This is a reason why governments made the work secret: a motive for their actions.\"}, {\"text\": \"Cockcroft says he is 90 percent certain that ZETA's neutrons come from fusion.\", \"answer\": \"claim\", \"feedback\": \"A careful claim with a probability, but still a claim: the test came later.\"}, {\"text\": \"Most of ZETA's neutrons fly in one direction, which reverses with the current.\", \"answer\": \"evidence\", \"feedback\": \"Rose's measurement: an observation that showed the neutrons came from accelerated ions.\"}, {\"text\": \"Governments fear that a rival country could be ahead in fusion.\", \"answer\": \"motive\", \"feedback\": \"Fear of a rival explains why governments paid for secret programmes: a motive.\"}, {\"text\": \"All three countries' plasmas lose heat much faster than expected.\", \"answer\": \"evidence\", \"feedback\": \"The results shown at Geneva in 1958: measurements from many machines, which everyone could now compare.\"}], \"done\": \"All right. A claim needs evidence before scientists accept it, and a motive explains why people act, but it is not evidence about nature.\"}</script></div>"
+  },
+  {
+   "id": "find-error",
+   "stage": "sovella",
+   "type": "choice",
+   "title": "Find the error in a headline",
+   "prompt": "Imagine a newspaper of 25 January 1958 with the headline: **\"Neutrons detected: Britain has achieved fusion power.\"** Which statement best describes what is wrong with it?",
+   "choices": [
+    {
+     "text": "Neutrons alone do not show a hot, fusing plasma.",
+     "feedback": "Right. Neutrons can also come from a few fast ions, and a few reactions are far from a power plant. Rose's later measurement showed that ZETA's neutrons were not from a hot plasma, and even real fusion reactions would not have been \"fusion power\": ZETA used much more energy than it released.",
+     "correct": true
+    },
+    {
+     "text": "ZETA did not produce any neutrons at all.",
+     "feedback": "ZETA did produce about a million neutrons per pulse; the measurement of the number was correct. The error was the *conclusion*: what caused the neutrons, and the jump to \"fusion power\"."
+    },
+    {
+     "text": "British scientists were not allowed to publish anything in 1958.",
+     "feedback": "In January 1958 Britain and the United States released their results together, in the journal *Nature* and at a press conference. Publication was allowed; the problem was the headline's conclusion from the neutrons."
+    },
+    {
+     "text": "Fusion can only happen inside the Sun, not on Earth.",
+     "feedback": "Fusion on Earth had been made with accelerators since 1934. The headline's error is the jump from neutrons to a hot, fusing plasma and to power."
+    }
+   ]
+  },
+  {
+   "id": "debate-help",
+   "stage": "sovella",
+   "type": "text",
+   "title": "Discuss: did secrecy help or harm?",
+   "text": "Work in pairs. Partner A argues that secrecy **helped** fusion research in the 1950s, partner B that it **harmed** it. Each has one minute; then try to agree on a balanced answer. Use evidence from the reading.\n\n<div class=\"wordbank\"><h4>Word bank</h4><p>funding · duplication (doing the same work twice) · to check a result · to share · rivalry · pressure · progress · openness</p></div>\n\n<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>Secrecy helped, because governments …</li><li>Secrecy harmed research, because nobody outside could …</li><li>The evidence suggests that …</li><li>On the one hand …, on the other hand …</li><li>I agree with you that …, but …</li></ul></div>"
+  },
+  {
+   "id": "debate",
+   "stage": "sovella",
+   "type": "explain",
+   "title": "Write: did secrecy help or harm?",
+   "prompt": "After the discussion, write a balanced paragraph of five or six sentences: did the secrecy of the 1950s help or harm fusion research? Give at least one argument on each side and one example from the reading, and end with your own conclusion.\n\n<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>On the one hand, …</li><li>On the other hand, …</li><li>For example, in 1958 …</li><li>In my view, secrecy …, because …</li></ul></div>",
+   "pair": "Pair work: argue first (A: helped, B: harmed), then write on your own.",
+   "model": "On the one hand, secrecy came with a lot of government money. Because fusion was linked to national security, the United States, Britain and the Soviet Union all funded large programmes, and Spitzer received money only weeks after the Huemul claim. On the other hand, secrecy meant that teams in different countries repeated the same experiments without knowing it, and nobody outside could check a result. The ZETA announcement of 1958 shows the danger: the claim reached the newspapers before the neutron directions had been measured. When the work was declassified at Geneva in 1958, scientists found that they all faced the same unstable plasmas. In my view secrecy harmed the science more than it helped, because science depends on others checking results, but it helped to start the funding.",
+   "criteria": [
+    "The paragraph gives at least one argument that secrecy helped and one that it harmed.",
+    "It uses at least one concrete example with a date or a name (Huemul, ZETA, Geneva, Spitzer's funding).",
+    "It ends with a clear conclusion that follows from the arguments.",
+    "It uses linking words such as *on the one hand*, *however*, *because*, *in my view*."
+   ],
+   "hints": [
+    "Who paid for the research, and why?",
+    "What could not happen while results were secret?",
+    "Use ZETA as an example of a claim that was not checked in time."
+   ]
+  },
+  {
+   "id": "check-1",
+   "stage": "tarkista",
+   "type": "choice",
+   "title": "1. Spitzer's figure-eight",
+   "prompt": "Why did Lyman Spitzer bend his stellarator tube into a figure-eight instead of a simple ring?",
+   "choices": [
+    {
+     "text": "So the sideways drifts of the particles cancel out.",
+     "feedback": "Right. In a simple ring the particles slowly drift sideways and hit the wall. In a figure-eight the drift in one half of the loop is opposite to the drift in the other half, so on average it cancels.",
+     "correct": true
+    },
+    {
+     "text": "So a strong current can flow through the plasma.",
+     "feedback": "That is the idea of the pinch and, partly, of the tokamak. The stellarator's field comes from outside coils only; the shape was chosen so that the sideways drifts of the particles cancel."
+    },
+    {
+     "text": "So the machine fits into a smaller, secret building.",
+     "feedback": "The shape has a physics reason, not a practical one: the sideways drift of the particles in one half of the figure-eight cancels the drift in the other half."
+    },
+    {
+     "text": "So the neutrons fly out in every direction.",
+     "feedback": "Neutron directions were the test for ZETA's claim, not a design aim. The figure-eight cancels the sideways drift of the charged particles, which would otherwise carry them to the wall."
+    }
+   ]
+  },
+  {
+   "id": "check-2",
+   "stage": "tarkista",
+   "type": "choice",
+   "title": "2. Two pinches",
+   "prompt": "What is the main difference between a **Z-pinch** and a **theta pinch**?",
+   "choices": [
+    {
+     "text": "Only a Z-pinch carries a current along the plasma itself.",
+     "feedback": "Right. In a Z-pinch the current flows along the column and its circling field squeezes it. In a theta pinch an outer coil carries the current around the column, and the field along the axis squeezes it.",
+     "correct": true
+    },
+    {
+     "text": "Only a theta pinch uses a magnetic field to squeeze.",
+     "feedback": "Both use a magnetic field to squeeze the plasma. The difference is where the current flows: along the plasma (Z-pinch) or in a coil around it (theta pinch)."
+    },
+    {
+     "text": "A Z-pinch is ring-shaped, a theta pinch is always straight.",
+     "feedback": "Both can be built straight or bent into a ring: ZETA was a ring-shaped Z-pinch, and many theta pinches were straight. The difference is the direction of the current: along the plasma or around it."
+    },
+    {
+     "text": "A theta pinch has no instabilities at all.",
+     "feedback": "Every 1950s pinch had problems with instabilities and losses. The difference between the two is the direction of the current: along the plasma (Z-pinch) or around it in a coil (theta pinch)."
+    }
+   ]
+  },
+  {
+   "id": "check-3",
+   "stage": "tarkista",
+   "type": "choice",
+   "title": "3. Geneva 1958",
+   "prompt": "Why did Britain, the United States and the Soviet Union declassify their fusion research in September 1958?",
+   "choices": [
+    {
+     "text": "ZETA had shown that fusion power was ready to use.",
+     "feedback": "ZETA's claim had been corrected in May 1958. No one was close to fusion power, and that was part of the reason for openness: there was no working reactor to hide."
+    },
+    {
+     "text": "All the countries met the same hard plasma problems.",
+     "feedback": "Right. All programmes met the same unstable, leaky plasmas. With no reactor to protect, openness helped every country more than secrecy did, and at Geneva scientists found they had tried many of the same ideas.",
+     "correct": true
+    },
+    {
+     "text": "The Cold War ended at the Geneva conference.",
+     "feedback": "The Cold War went on until about 1991. Fusion was opened because it was harder than expected and gave no quick military or economic advantage, not because the rivalry ended."
+    },
+    {
+     "text": "A spy had already given all the results to the press.",
+     "feedback": "Klaus Fuchs passed secrets on the atomic bomb and early hydrogen-bomb ideas before 1950, not the later fusion results, and the press did not publish the secret programmes. The research was opened because everyone faced the same hard plasma problems."
+    }
+   ]
+  },
+  {
+   "id": "check-write",
+   "stage": "tarkista",
+   "type": "explain",
+   "title": "4. Transfer: a new claim",
+   "prompt": "In March 1989 two chemists announced at a press conference in Utah that they had made fusion at room temperature in a small glass cell. You are a science journalist. Using what you learned from Huemul and ZETA, write three or four sentences: what would you ask before you report it as a discovery, and why?\n\n<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>Before I report it, I would ask …, because …</li><li>At Huemul (or ZETA), …</li><li>A claim is not evidence until …</li></ul></div>",
+   "model": "Before I report it, I would ask whether other laboratories have repeated the experiment and found the same result, because Huemul and ZETA both looked like fusion until other people checked. I would ask what exactly was measured: are there neutrons, how many, and could they have another cause, as ZETA's neutrons did? I would also ask why the results were given at a press conference before they were published in a journal, because a claim that others cannot check is not yet evidence. (In 1989, laboratories around the world tried to repeat the cold fusion experiment and could not.)",
+   "criteria": [
+    "The answer asks for independent repetition or checking by others.",
+    "The answer asks what was measured and whether there could be another explanation.",
+    "The answer links at least one question to Huemul or ZETA."
+   ],
+   "hints": [
+    "How was the Huemul claim shown to be false?",
+    "What did Rose measure at ZETA, and why?"
+   ]
+  },
+  {
+   "id": "summary",
+   "stage": "tarkista",
+   "type": "theory",
+   "sections": [
+    "Tiivistelmä"
+   ]
+  },
+  {
+   "id": "french-corner",
+   "stage": "tarkista",
+   "type": "text",
+   "text": "<div class=\"french-corner\"><h4>Le coin français</h4><p>Fusion research is a topic of every language. In French, the Cold War is <span lang=\"fr\">la guerre froide</span>, a secret is <span lang=\"fr\">un secret</span>, and controlled fusion is <span lang=\"fr\">la fusion contrôlée</span>. Listen, repeat, and then say the last sentence to your partner.</p></div>\n\n<div class=\"fx\" data-fx=\"say\" id=\"fx-sf-french\"><script type=\"application/json\">{\"lang\": \"fr-FR\", \"title\": \"Le coin français: secrets and science\", \"phrases\": [{\"fr\": \"la guerre froide\", \"en\": \"the Cold War\", \"tip\": \"la GAIR FRWAD: *gu* is a hard *g*, and the final *e* is silent.\"}, {\"fr\": \"un secret\", \"en\": \"a secret\", \"tip\": \"uh suh-KRÈ: a nasal *un*, and the final *t* is silent.\"}, {\"fr\": \"la fusion contrôlée\", \"en\": \"controlled fusion\", \"tip\": \"la fy-ZYON kon-troh-LAY: the French *u* is the Finnish *y*.\"}, {\"fr\": \"le plasma\", \"en\": \"the plasma\", \"tip\": \"luh plas-MA: almost as in Finnish.\"}, {\"fr\": \"En 1958, la recherche sur la fusion n'est plus secrète.\", \"en\": \"In 1958, fusion research is no longer secret.\", \"tip\": \"{fr}mille neuf cent cinquante-huit{/fr}: meel nuhf san san-kant-WEET.\"}]}</script></div>"
+  }
+ ]
+}

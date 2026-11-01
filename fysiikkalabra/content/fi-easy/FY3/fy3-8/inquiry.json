@@ -160,6 +160,11 @@
         "L0": "alkupituus L₀",
         "T": "lämpötila T"
       },
+      "values": {
+        "material": {
+          "teräs": "teräs"
+        }
+      },
       "units": {
         "L0": "m",
         "T": "°C"
@@ -196,6 +201,11 @@
         "material": "aine",
         "L0": "alkupituus L₀",
         "T": "lämpötila T"
+      },
+      "values": {
+        "material": {
+          "teräs": "teräs"
+        }
       },
       "units": {
         "L0": "m",

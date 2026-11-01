@@ -211,7 +211,7 @@ Kuva on piirretty mittakaavassa. Ääriviivat kulkevat lähellä toisiaan mittau
 ## Esimerkki
 Esimerkkiaineistossa on suljetun pullon ilman paine seitsemässä lämpötilassa, kuten kaasulämpömittarilla mitattaisiin. Arvot on laskettu ideaalikaasumallista ja niihin on lisätty mittausepätarkkuutta vastaavaa hajontaa; ne eivät ole oikean mittauksen tuloksia. Paineen lukeman epävarmuudeksi on arvioitu $\pm 1\,\text{kPa}$.
 
-| θ (°C) | p (kPa) |
+| $\theta$ (°C) | $p$ (kPa) |
 | --- | --- |
 | 10 | 105 |
 | 25 | 110 |

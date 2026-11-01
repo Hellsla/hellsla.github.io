@@ -61,7 +61,7 @@ When a gas expands and pushes a piston, it does work. The gas pushes the piston 
   <line x1="359" y1="226" x2="408" y2="226" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <path d="M419,226 L407,231.5 L407,220.5 Z" fill="#1f2933" stroke-linejoin="round"/>
   <foreignObject x="318.5" y="211.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\Delta s$</div></foreignObject>
-  <foreignObject x="183.5" y="275.5" width="233" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$W_\text{k} = F\,\Delta s = pA\,\Delta s = p\,\Delta V$</div></foreignObject>
+  <foreignObject x="183.5" y="275.5" width="233" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$W_\text{g} = F\,\Delta s = pA\,\Delta s = p\,\Delta V$</div></foreignObject>
 </svg>
 
 ### A heat engine repeats its motion
@@ -100,7 +100,7 @@ A refrigerator and a heat pump work the opposite way to a heat engine: they use 
   <path d="M16,120 L208,120 L208,124 L230,110 L208,96 L208,100 L16,100 Z" fill="#1f2933" stroke-linejoin="round"/>
   <path d="M16,178 L208,178 L208,182 L230,158 L208,134 L208,138 L16,138 Z" fill="#ffc078" stroke-linejoin="round"/>
   <path d="M360,169 L532,169 L532,174 L560,139 L532,104 L532,109 L360,109 Z" fill="#e8590c" stroke-linejoin="round"/>
-  <foreignObject x="16" y="59.5" width="174" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{electricity}\ E_\text{s}$</div></foreignObject>
+  <foreignObject x="16" y="59.5" width="186" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{electricity}\ E_\text{el}$</div></foreignObject>
   <foreignObject x="16" y="191.5" width="233" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{heat from outdoor air}$</div></foreignObject>
   <foreignObject x="16" y="223.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$Q_\text{outdoors}$</div></foreignObject>
   <foreignObject x="387.5" y="77.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{heat indoors}$</div></foreignObject>
@@ -152,7 +152,7 @@ where $Q_1$ is the heat transferred to the engine from the hot source (J), $Q_2$
   <line x1="269" y1="112.5" x2="278" y2="112.5" stroke="#1f2933" stroke-width="4.5" stroke-linecap="butt"/>
   <path d="M297,112.5 L277,121.5 L277,103.5 Z" fill="#1f2933" stroke-linejoin="round"/>
   <foreignObject x="216.5" y="72" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{gas expands}$</div></foreignObject>
-  <foreignObject x="235.5" y="156" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$W_\text{k} = p\,\Delta V$</div></foreignObject>
+  <foreignObject x="235.5" y="156" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$W_\text{g} = p\,\Delta V$</div></foreignObject>
   <line x1="257" y1="228" x2="218" y2="228" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <path d="M206,228 L219,222 L219,234 Z" fill="#1f2933" stroke-linejoin="round"/>
   <line x1="309" y1="228" x2="348" y2="228" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>

@@ -1,7 +1,7 @@
 ## fy3-7-L1-01
 **Given:** ice, $m = 1.20\,\text{kg}$, temperature $0\,{}^\circ\text{C}$; from the table $s = 334\,\tfrac{\text{kJ}}{\text{kg}}$
 **Find:** the quantity of heat $Q$ needed to melt the ice, in kilojoules
-**Principle:** The ice is already at the melting temperature $0\,{}^\circ\text{C}$ and turns into water at 0 °C. The temperature does not change, so $Q = cm\Delta T$ does not apply. Instead we need the latent heat of fusion: the quantity of heat is proportional to the mass that melts.
+**Principle:** The ice is already at the melting temperature $0\,{}^\circ\text{C}$ and turns into water at $0\,{}^\circ\text{C}$. The temperature does not change, so $Q = cm\Delta T$ does not apply. Instead we need the latent heat of fusion: the quantity of heat is proportional to the mass that melts.
 **Formula:** $Q = sm$, and the quantity we want, $Q$, is already alone on the left-hand side: $Q = sm$
 **Conversions:** None needed: the mass is in kilograms and $s$ is in kilojoules per kilogram, so the result comes out directly in kilojoules.
 **Substitution:** $Q = 334\,\tfrac{\text{kJ}}{\text{kg}} \cdot 1.20\,\text{kg} = 400.8\,\text{kJ}$
@@ -21,7 +21,7 @@
 ## fy3-7-L1-03
 **Given:** water freezing at the surface of a lake, $m = 45\,\text{kg}$ for every square metre, temperature $0\,{}^\circ\text{C}$; from the table $s = 334\,\tfrac{\text{kJ}}{\text{kg}}$
 **Find:** the quantity of heat $Q$ released in freezing, in megajoules
-**Principle:** The water freezes into ice at 0 °C at a constant temperature. When a substance freezes, it releases the same quantity of heat that the same mass would absorb when melting, so we use the latent heat of fusion $s$ and not a temperature change.
+**Principle:** The water freezes into ice at $0\,{}^\circ\text{C}$ at a constant temperature. When a substance freezes, it releases the same quantity of heat that the same mass would absorb when melting, so we use the latent heat of fusion $s$ and not a temperature change.
 **Formula:** $Q = sm$ (the quantity of heat released is given as a positive number), and $Q$ is already solved for: $Q = sm$
 **Conversions:** The result comes out in kilojoules: $15\,030\,\text{kJ}$. Finally $1\,\text{MJ} = 1000\,\text{kJ}$, so $15\,030\,\text{kJ} = 15.03\,\text{MJ}$.
 **Substitution:** $Q = 334\,\tfrac{\text{kJ}}{\text{kg}} \cdot 45\,\text{kg} = 15\,030\,\text{kJ} = 15.03\,\text{MJ}$
@@ -29,7 +29,7 @@
 **Reasonableness:** Estimate: $330\,\tfrac{\text{kJ}}{\text{kg}} \cdot 45\,\text{kg} \approx 15\,000\,\text{kJ}$. The thickness of the layer of water is $\dfrac{45\,\text{kg}}{1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 1\,\text{m}^2} = 4.5\,\text{cm}$, which fits a layer that freezes during a week of frost. The heat released slows down the freezing, so a lake does not freeze in an instant.
 
 ## fy3-7-L1-04
-**Given:** steam that condenses into $100$-degree water, $m = 0.030\,\text{kg}$; from the table $r = 2260\,\tfrac{\text{kJ}}{\text{kg}}$
+**Given:** steam that condenses into water at $100\,{}^\circ\text{C}$, $m = 0.030\,\text{kg}$; from the table $r = 2260\,\tfrac{\text{kJ}}{\text{kg}}$
 **Find:** the quantity of heat $Q$ given out by the steam, in kilojoules
 **Principle:** The steam condenses into water at the same temperature of $100\,{}^\circ\text{C}$, so the temperature does not change. When steam condenses, it releases the same quantity of heat that would be needed to vaporise it, so we use the latent heat of vaporisation $r$.
 **Formula:** $Q = rm$ (the quantity of heat released is given as a positive number), and $Q$ is already solved for: $Q = rm$
@@ -60,7 +60,7 @@
 **Reasonableness:** Estimate: about $1.1\,\text{MJ}$ of energy at a power of $2\,\text{kW}$ takes about $550\,\text{s}$, which is just under $10\,\text{min}$. Half a kilogram boiling away in about ten minutes matches experience. Units: $\tfrac{\text{J}}{\text{W}} = \tfrac{\text{J}}{\text{J/s}} = \text{s}$.
 
 ## fy3-7-L2-02
-**Given:** ice, $m = 750\,\text{g}$, $T_1 = -18\,{}^\circ\text{C}$, ending as water at 0 °C; from the table $c_\text{ice} = 2100\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ and $s = 334\,\tfrac{\text{kJ}}{\text{kg}}$
+**Given:** ice, $m = 750\,\text{g}$, $T_1 = -18\,{}^\circ\text{C}$, ending as water at $0\,{}^\circ\text{C}$; from the table $c_\text{ice} = 2100\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ and $s = 334\,\tfrac{\text{kJ}}{\text{kg}}$
 **Find:** the total quantity of heat $Q$ in kilojoules
 **Principle:** The process has two stages. First the ice warms from $-18\,{}^\circ\text{C}$ to the melting temperature $0\,{}^\circ\text{C}$ ($Q_1 = cm\Delta T$), and then it melts at a constant temperature ($Q_2 = sm$). The total quantity of heat is the sum of these.
 **Formula:** $Q = Q_1 + Q_2$, and $Q = c_\text{ice} m \Delta T + sm$, where $\Delta T = 0\,{}^\circ\text{C} - T_1$
@@ -100,7 +100,7 @@
 $$T = \dfrac{16\,622.5}{1717.9}\,{}^\circ\text{C} = 9.68\,{}^\circ\text{C}$$
 
 **Answer:** $9.7\,{}^\circ\text{C}$, two significant figures like the mass $0.35\,\text{kg}$.
-**Reasonableness:** The result is between $0\,{}^\circ\text{C}$ and $25\,{}^\circ\text{C}$. If the $60\,\text{g}$ were already water at $0$ degrees, the final temperature would be $\dfrac{0.35 \cdot 25}{0.41}\,{}^\circ\text{C} \approx 21\,{}^\circ\text{C}$. Ice cools much more, because melting absorbs $20\,040\,\text{J}$ of heat without any change of temperature: this is why the drink cools by over $11\,\text{K}$ more.
+**Reasonableness:** The result is between $0\,{}^\circ\text{C}$ and $25\,{}^\circ\text{C}$. If the $60\,\text{g}$ were already water at $0\,{}^\circ\text{C}$, the final temperature would be $\dfrac{0.35 \cdot 25}{0.41}\,{}^\circ\text{C} \approx 21\,{}^\circ\text{C}$. Ice cools much more, because melting absorbs $20\,040\,\text{J}$ of heat without any change of temperature: this is why the drink cools by over $11\,\text{K}$ more.
 
 ## fy3-7-L3-02
 **Given:** water $m = 0.25\,\text{kg}$, $T_1 = 20\,{}^\circ\text{C}$, warms to $T_2 = 100\,{}^\circ\text{C}$ and vaporises completely; stones $m_\text{s} = 30\,\text{kg}$, $c_\text{s} = 800\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$; from the table $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ and $r = 2260\,\tfrac{\text{kJ}}{\text{kg}}$
@@ -113,11 +113,11 @@ $$T = \dfrac{16\,622.5}{1717.9}\,{}^\circ\text{C} = 9.68\,{}^\circ\text{C}$$
 **Reasonableness:** Vaporisation takes $\dfrac{565}{648.8} \approx 87\,\%$ of the energy and warming only $13\,\%$, even though the temperature rises by $80\,\text{K}$: vaporising one kilogram takes the same energy as warming it by about $\dfrac{2260}{4.19} \approx 540\,\text{K}$. The heat capacity of the stones is $24\,000\,\tfrac{\text{J}}{\text{K}}$, so one ladleful cools the stones by a few tens of kelvins, which fits the experience of a sauna.
 
 ## fy3-7-L3-03
-**Given:** $P_1 = 800\,\text{W}$, $\Delta m_1 = 196\,\text{g}$; $P_2 = 400\,\text{W}$, $\Delta m_2 = 90.0\,\text{g}$; in both $t = 10.0\,\text{min}$; the water is at $100\,{}^\circ\text{C}$, so the power $P_\text{l}$ passing to the air is the same
+**Given:** $P_1 = 800\,\text{W}$, $\Delta m_1 = 196\,\text{g}$; $P_2 = 400\,\text{W}$, $\Delta m_2 = 90.0\,\text{g}$; in both $t = 10.0\,\text{min}$; the water is at $100\,{}^\circ\text{C}$, so the power $P_\text{loss}$ passing to the air is the same
 **Find:** the specific latent heat of vaporisation $r$ in $\tfrac{\text{MJ}}{\text{kg}}$
-**Principle:** The water boils all the time, so its temperature does not change and the energy that stays in the water is used for vaporisation: $(P - P_\text{l})t = r\Delta m$. There are two equations and two unknowns ($r$ and $P_\text{l}$), so they can be solved together.
-**Formula:** $(P_1 - P_\text{l})t = r\Delta m_1$ and $(P_2 - P_\text{l})t = r\Delta m_2$. Subtract the equations: $(P_1 - P_2)t = r(\Delta m_1 - \Delta m_2)$, from which $r = \dfrac{(P_1 - P_2)t}{\Delta m_1 - \Delta m_2}$
+**Principle:** The water boils all the time, so its temperature does not change and the energy that stays in the water is used for vaporisation: $(P - P_\text{loss})t = r\Delta m$. There are two equations and two unknowns ($r$ and $P_\text{loss}$), so they can be solved together.
+**Formula:** $(P_1 - P_\text{loss})t = r\Delta m_1$ and $(P_2 - P_\text{loss})t = r\Delta m_2$. Subtract the equations: $(P_1 - P_2)t = r(\Delta m_1 - \Delta m_2)$, from which $r = \dfrac{(P_1 - P_2)t}{\Delta m_1 - \Delta m_2}$
 **Conversions:** $t = 10.0\,\text{min} = 600\,\text{s}$, $\Delta m_1 = 0.196\,\text{kg}$ and $\Delta m_2 = 0.0900\,\text{kg}$. Finally $1\,\text{MJ} = 10^6\,\text{J}$.
 **Substitution:** $r = \dfrac{(800\,\text{W} - 400\,\text{W}) \cdot 600\,\text{s}}{0.196\,\text{kg} - 0.0900\,\text{kg}} = \dfrac{240\,000\,\text{J}}{0.106\,\text{kg}} = 2\,264\,151\,\tfrac{\text{J}}{\text{kg}} = 2.264\,\tfrac{\text{MJ}}{\text{kg}}$
 **Answer:** $2.26\,\tfrac{\text{MJ}}{\text{kg}}$, three significant figures: the difference $196\,\text{g} - 90.0\,\text{g} = 106\,\text{g}$ is accurate to the nearest gram and has three figures.
-**Reasonableness:** The energy passing to the air, $P_\text{l}t$, is the same in both measurements and cancels in the difference. The individual measurements would give $\dfrac{800\,\text{W} \cdot 600\,\text{s}}{0.196\,\text{kg}} \approx 2.45\,\tfrac{\text{MJ}}{\text{kg}}$ and $\dfrac{400\,\text{W} \cdot 600\,\text{s}}{0.0900\,\text{kg}} \approx 2.67\,\tfrac{\text{MJ}}{\text{kg}}$, both too large, because the energy passing to the air would also be counted as vaporisation. The loss power is $800\,\text{W} - 2.264 \cdot 10^6\,\tfrac{\text{J}}{\text{kg}} \cdot \dfrac{0.196\,\text{kg}}{600\,\text{s}} \approx 60\,\text{W}$, and the result agrees with the table value $2.26\,\tfrac{\text{MJ}}{\text{kg}}$.
+**Reasonableness:** The energy passing to the air, $P_\text{loss}t$, is the same in both measurements and cancels in the difference. The individual measurements would give $\dfrac{800\,\text{W} \cdot 600\,\text{s}}{0.196\,\text{kg}} \approx 2.45\,\tfrac{\text{MJ}}{\text{kg}}$ and $\dfrac{400\,\text{W} \cdot 600\,\text{s}}{0.0900\,\text{kg}} \approx 2.67\,\tfrac{\text{MJ}}{\text{kg}}$, both too large, because the energy passing to the air would also be counted as vaporisation. The loss power is $800\,\text{W} - 2.264 \cdot 10^6\,\tfrac{\text{J}}{\text{kg}} \cdot \dfrac{0.196\,\text{kg}}{600\,\text{s}} \approx 60\,\text{W}$, and the result agrees with the table value $2.26\,\tfrac{\text{MJ}}{\text{kg}}$.

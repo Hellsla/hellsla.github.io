@@ -1,0 +1,58 @@
+{
+ "id": "fy14-magnetic-confinement",
+ "course": "FY14",
+ "chapter": 4,
+ "order": 2,
+ "title": "Charged particles and magnetic confinement",
+ "description": "The Lorentz force bends charged particles into circles and helices; a magnetic mirror and a ring-shaped field show how a plasma can be held, and why the real, collective plasma is much harder to confine.",
+ "kind": "physics",
+ "minutes": 75,
+ "subjects": [
+  "physics",
+  "english",
+  "french"
+ ],
+ "sim": "fy14/magnetic",
+ "sources": [
+  {
+   "title": "Lorentz force (Wikipedia): the force on a moving charge and its direction",
+   "url": "https://en.wikipedia.org/wiki/Lorentz_force",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Gyroradius (Wikipedia): r = m v⊥ / (|q| B)",
+   "url": "https://en.wikipedia.org/wiki/Gyroradius",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Magnetic mirror (Wikipedia): reflection, the loss cone and the Earth's radiation belts",
+   "url": "https://en.wikipedia.org/wiki/Magnetic_mirror",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "CODATA 2022 recommended values (NIST): masses of the proton, deuteron, alpha particle and electron; e exact",
+   "url": "https://physics.nist.gov/cuu/Constants/index.html",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "US ITER: toroidal field coil conductor fact sheet (18 coils, 5.3 T, 134 turns, 68 kA)",
+   "url": "https://usiter.ornl.gov/wp-content/uploads/2026/05/TFCC-Fact-Sheet-Toroidal-Field-Coil-Conductor-2026-May.pdf",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "CIEMAT fusion wiki: ITER reference scenario (R = 6.2 m, a = 2.0 m, about 1.0 · 10²⁰ m⁻³)",
+   "url": "https://wiki.fusion.ciemat.es/wiki/ITER",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Z-pinch (Wikipedia): ZETA and the kink instability of early pinches",
+   "url": "https://en.wikipedia.org/wiki/Z-pinch",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Tokamak (Wikipedia): drifts in a purely toroidal field and why the field lines are twisted",
+   "url": "https://en.wikipedia.org/wiki/Tokamak",
+   "checked": "2026-11-01"
+  }
+ ]
+}

@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 88ea5876132cd89f
+CONTENT-HASH: 24a775f97a637664
 
 ## Blocking
 - none
@@ -8,4 +8,4 @@ CONTENT-HASH: 88ea5876132cd89f
 - none
 
 ## Checked
-batch delta review: the rephrased learning goals each complete "Tällä tunnilla opit" with a lowercase -maan/-mään verb, parallel within the list, symbols and numbers unchanged, meaning kept; the change touches no figure, simulation or task.
+Delta: sign typesetting (+15 °C now one maths span, no stray + before the span) and learn verbs only. Wording, activities, feedback and staging unchanged; the table cell now renders the same as the -18 °C cell, which helps the comparison.

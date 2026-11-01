@@ -274,6 +274,7 @@ details.answer .answer-body p{display:block;margin:0 0 .4rem;padding:0;backgroun
 .eq-lead{grid-column:1/-1}.eq-chain.lead .eq-r{padding-left:1.4em}
 .eq-l{text-align:right;min-width:0}.eq-r{min-width:0}
 .eq-chain .katex{font-size:1.1em}
+.eq-chain>.eq-row>span:has(.mfrac),.eq-chain>.eq-row:has(.mfrac)+.eq-row>span{padding-top:.3em}   /* a \dfrac row's denominator no longer jams into the next row (visual audit 2026-11-01) */
 /* a solution: every step a block with its label on a line of its own; long calculations in aligned rows (build.py
    solution_html, scripts/mathlayout.py); the answer set apart, the reasonableness check its own block */
 details.solution .steps{margin:.3rem 0 0;padding:.9rem 1.1rem;background:var(--bg);border:1px solid var(--line-2);border-radius:var(--inner-radius);font-size:var(--fs-inner);line-height:1.6}

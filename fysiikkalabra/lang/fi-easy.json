@@ -116,7 +116,11 @@
     "local_prepare": "Valmistaudu jo nyt",
     "local_prepare_lead": "Nämä luvut ovat jo valmiita. Ne auttavat opintojakson kokeissa.",
     "local_unavailable_note": "Sivua <strong>{{title}}</strong> ei vielä ole selkosuomeksi. Se on vain tavallisella suomella.",
-    "lang_unavailable_home": "sivua ei vielä ole, vie etusivulle"
+    "lang_unavailable_home": "sivua ei vielä ole, vie etusivulle",
+    "local_status_building": "Tekeillä",
+    "local_status_home_building": "Opintojakso on tekeillä",
+    "local_status_note_building": "Oppitunteja tulee sivulle sitä mukaa kuin ne valmistuvat. Laajuutta ja arviointia ei ole vielä päätetty.",
+    "local_status_ready": "Valmis"
   },
   "lesson": {
     "steps_nav": "Oppitunnin vaiheet",
@@ -449,7 +453,6 @@
       "massa_sama_kaikkialla": "<strong>Massa $m = {{m}}\\,\\text{kg}$</strong> (sama kaikkialla)<br>$g = {{g}}\\,\\text{m/s}^2$ ({{body}})",
       "palkkikaavion_asteikko_on": "<br>Palkkikaavion asteikko $0\\text{–}{{chartfull}}\\,\\text{N}$ on tämän massan paino Jupiterissa.",
       "sama_massa_paino": "$\\text{Sama massa, paino eri paikoissa}$",
-      "asteikko_0": "$\\text{asteikko } 0\\text{–}{{chartfull}}\\,\\text{N}$",
       "paino": "$\\text{paino } G$",
       "massa_2": "$\\text{massa } m$",
       "values": {
@@ -503,7 +506,12 @@
       "kylma_vesi": "kylmä vesi",
       "eriste": "eriste",
       "kierros_2": "$\\text{kierros}$",
-      "lammitys_2": "$\\text{lämmitys}$"
+      "lammitys_2": "$\\text{lämmitys}$",
+      "wk": "W_\\text{k}",
+      "values": {
+        "sama paine": "sama paine",
+        "jäähdytys ensin": "jäähdytys ensin"
+      }
     },
     "fy3-14": {
       "sekoita": "Sekoita",
@@ -1341,5 +1349,26 @@
     "split": "vaakasuorat voimat on piirretty eri mittakaavassa kuin pystysuorat;",
     "split_note": "vaaka- ja pystyvoimat eri mittakaavassa",
     "velocity": "nopeus {{dir}};"
+  },
+  "units": {
+    "home_sessions": "noin {{n}} oppituntia",
+    "home_count": {
+      "one": "{{n}} oppitunti valmiina",
+      "other": "{{n}} oppituntia valmiina"
+    },
+    "taught_in_en": "englanniksi",
+    "language_note_en": "Tämä opintojakso on englanniksi. Oppitunnit ovat sivuston englanninkielisessä osassa.",
+    "authors": "Tekijät",
+    "and": "ja",
+    "optional_mark": "vapaaehtoista lisämateriaalia",
+    "chapters": "Luvut ja oppitunnit",
+    "chapters_lead": "Luvut ovat tässä järjestyksessä. Jokaisessa luvussa on yksi iso kysymys.",
+    "credits": "Kuvat ja videot",
+    "credit_source": "lähde",
+    "sources": "Lähteet",
+    "sources_lead": "Muuttuvat tiedot on tarkistettu näistä lähteistä. Päivämäärä kertoo, milloin.",
+    "checked": "tarkistettu {{date}}",
+    "teacher": "Opettajalle",
+    "notice_draft": "Tämä oppitunti on vielä kesken. Sitä ei ole julkaistu."
   }
 }

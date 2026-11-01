@@ -1,0 +1,71 @@
+{
+ "id": "fy14-tokamak-stellarator",
+ "course": "FY14",
+ "chapter": 6,
+ "order": 2,
+ "title": "Tokamak or stellarator?",
+ "description": "Why a magnetic fusion machine needs twisted field lines, how the tokamak twists them with a plasma current and the stellarator with three-dimensional coils, the toroidal field of ITER's coils, pulsed and steady operation, and the limitations of each design.",
+ "kind": "physics",
+ "minutes": 75,
+ "subjects": [
+  "physics",
+  "english",
+  "french"
+ ],
+ "sources": [
+  {
+   "title": "Tokamak (Wikipedia): Tamm and Sakharov, toroidal and poloidal fields, drifts in a purely toroidal field, plasma current and the transformer, disruptions",
+   "url": "https://en.wikipedia.org/wiki/Tokamak",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Stellarator (Wikipedia): Spitzer 1951, no induced plasma current, an inherently steady-state machine",
+   "url": "https://en.wikipedia.org/wiki/Stellarator",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Wendelstein 7-X (Wikipedia): 50 non-planar and 20 planar superconducting coils, first plasma 10 December 2015, 8-minute plasma in February 2023",
+   "url": "https://en.wikipedia.org/wiki/Wendelstein_7-X",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "CEA: WEST record of 1337 s on 12 February 2025 with lower hybrid current drive",
+   "url": "https://www.cea.fr/english/Pages/News/nuclear-fusion-west-beats-the-world-record-for-plasma-duration.aspx",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "WEST (formerly Tore Supra) (Wikipedia): Tore Supra's 6 min 30 s plasma in December 2003; WEST 22 min 17 s in 2025",
+   "url": "https://en.wikipedia.org/wiki/WEST_(formerly_Tore_Supra)",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Experimental Advanced Superconducting Tokamak (Wikipedia): 1056 s on 30 December 2021, 1066 s on 20 January 2025",
+   "url": "https://en.wikipedia.org/wiki/Experimental_Advanced_Superconducting_Tokamak",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "US ITER: toroidal field coil conductor fact sheet (18 coils, 134 turns, 68 kA, 5.3 T)",
+   "url": "https://usiter.ornl.gov/wp-content/uploads/2026/05/TFCC-Fact-Sheet-Toroidal-Field-Coil-Conductor-2026-May.pdf",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "ITER Organization: magnets (central solenoid drives 15 MA for 300 to 500 s; peak toroidal field 11.8 T)",
+   "url": "https://www.iter.org/machine/magnets",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "CIEMAT fusion wiki: ITER reference scenario (R = 6.2 m, a = 2.0 m, 15 MA, 5.3 T)",
+   "url": "https://wiki.fusion.ciemat.es/wiki/ITER",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "ITER (Wikipedia): 2024 baseline schedule",
+   "url": "https://en.wikipedia.org/wiki/ITER",
+   "checked": "2026-11-01"
+  }
+ ],
+ "media": [
+  {"file": "units/fy14/pics/wendelstein-7x-2.jpg", "title": "A non-planar coil of Wendelstein 7-X", "creator": "Siarhei Besarab", "source": "https://commons.wikimedia.org/wiki/File:A_non-planar_coil_from_the_Wendelstein_7-X_stellarator.jpg", "licence": "CC BY-SA 4.0", "licence_url": "https://creativecommons.org/licenses/by-sa/4.0"},
+  {"file": "units/fy14/pics/west.jpg", "title": "Inside the WEST tokamak", "creator": "Christophe Roux / IRFM", "source": "https://commons.wikimedia.org/wiki/File:Int%C3%A9rieur_Tokamak_WEST_%28cropped%29.jpg", "licence": "CC BY 4.0", "licence_url": "https://creativecommons.org/licenses/by/4.0"}
+ ]
+}

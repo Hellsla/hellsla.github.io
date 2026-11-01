@@ -1,0 +1,25 @@
+{
+ "id": "fy14-nucleus",
+ "course": "FY14",
+ "chapter": 2,
+ "order": 1,
+ "title": "Building nuclei: isotopes and nuclear notation",
+ "description": "Protons and neutrons, atomic and mass number, nuclear notation and isotopes with the Isotope Builder, and the short-range strong force that holds the nucleus together against the repulsion of its protons.",
+ "kind": "physics",
+ "minutes": 75,
+ "subjects": ["physics", "english", "french"],
+ "sources": [
+  {"title": "Atomic nucleus (Wikipedia): Rutherford 1911, R = r0·A^(1/3), nucleus about 1/60 000 (hydrogen) to 1/27 000 (uranium) of the atom's diameter", "url": "https://en.wikipedia.org/wiki/Atomic_nucleus", "checked": "2026-11-01"},
+  {"title": "Proton (Wikipedia): Rutherford's identification 1917–1920, the name 'proton' 1920, mass about 1836 electron masses", "url": "https://en.wikipedia.org/wiki/Proton", "checked": "2026-11-01"},
+  {"title": "The Nobel Prize in Physics 1935: James Chadwick, for the discovery of the neutron", "url": "https://www.nobelprize.org/prizes/physics/1935/summary/", "checked": "2026-11-01"},
+  {"title": "James Chadwick (Wikipedia): 1891–1974, Cavendish Laboratory, letter 'Possible Existence of a Neutron' to Nature, February 1932, polonium–beryllium radiation on paraffin", "url": "https://en.wikipedia.org/wiki/James_Chadwick", "checked": "2026-11-01"},
+  {"title": "Isotope (Wikipedia): the word suggested by Margaret Todd to Frederick Soddy in 1913, Greek 'same place'; about 251 stable nuclides", "url": "https://en.wikipedia.org/wiki/Isotope", "checked": "2026-11-01"},
+  {"title": "Nuclear force (Wikipedia): attractive from about 0.7 fm, negligible beyond about 2.5 fm, repulsive core below 0.7 fm, nearly the same for protons and neutrons", "url": "https://en.wikipedia.org/wiki/Nuclear_force", "checked": "2026-11-01"},
+  {"title": "Deuterium (Wikipedia): about 1 in 6420 hydrogen atoms (0.0156 %), discovered by Harold Urey in 1931", "url": "https://en.wikipedia.org/wiki/Deuterium", "checked": "2026-11-01"},
+  {"title": "NUBASE2020 and AME2020 (IAEA Atomic Mass Data Center): stability, half-lives (tritium 12.3 a, carbon-14 5700 a) and masses in the Isotope Builder's data file", "url": "https://www-nds.iaea.org/amdc/", "checked": "2026-11-01"},
+  {"title": "CODATA 2018 recommended values (NIST): proton, neutron and electron masses, e, u", "url": "https://physics.nist.gov/cuu/Constants/ArchiveASCII/allascii_2018.txt", "checked": "2026-11-01"}
+ ],
+ "media": [
+  {"file": "units/fy14/pics/chadwick.jpg", "title": "James Chadwick with Manhattan Project leaders", "creator": "United States Army Signal Corps", "source": "https://commons.wikimedia.org/wiki/File:James_Chadwick%2C_Leslie_Groves%2C_Richard_Tolman%2C_%26_Henry_deWolf_Smyth.jpg", "licence": "Public domain", "licence_url": "https://creativecommons.org/publicdomain/mark/1.0/"}
+ ]
+}

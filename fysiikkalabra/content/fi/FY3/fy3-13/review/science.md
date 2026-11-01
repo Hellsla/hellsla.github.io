@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 5d476fe889e2eff9
+CONTENT-HASH: eaf9669e846ed993
 
-Delta review over the audit's PASS (4c5aa43d224fa957): new choice check-c2 (fitting a line to scattered points before extrapolating) from the exit ticket, checks renumbered, exit text "kaksi", numbers in feedback turned into LaTeX.
+Re-review after the typesetting round (diff since the PASS: table headers $\theta$ and $p$ as maths in lesson.md and in the example task of inquiry.json; "95 kPa" as $95\,\text{kPa}$; learning goals rephrased).
 
 ## Blocking
 - none
 ## Polish
 - none
 ## Checked
-- Correct option (one fitted line through the error bars, then extrapolate) and its feedback use the guardrail sentence "…eivät yleensä sijaitse täsmälleen samalla suoralla…"; slope from two distant points on the line; a line may pass through a point.
-- Distractor "murtoviiva" wrong; feedback right (not a model, last segment from two neighbouring points).
-- Distractor "mittaus epäonnistui, pisteet aina samalla suoralla" wrong; feedback uses the guardrail outlier sentence.
-- Distractor "poistetaan poikkeavat" wrong; feedback uses "Tulosta ei poisteta pelkästään…, hylkääminen perusteltava ja dokumentoitava".
-- Exactly one correct option.
-- LaTeX conversions (20 kPa, 1 kPa, 108,6 kPa, 133,0 kPa, 18 kPa) keep their values.
-- Removed exit question (why the line misses points) is the one converted; two remain; "kaksi" matches.
+- Changed items carry the same values and units: header symbols theta (°C) and p (kPa) match the formula section and figure; axis start 95 kPa unchanged.
+- Recomputed the example data (7 points): least-squares slope 0,367 kPa/°C, p0 = 101,3 kPa, theta0 = -276 °C; matches the figure text and model answer.
+- Two-point task: A(20,0; 108,6), B(90,0; 134,3) gives k = 0,367, theta0 = -275,8, answer -276 ok. Second task (30; 133,0), (90; 159,0) gives -276,9, answer -277 ok.
+- Extreme lines: steepest 100,1 + 0,387 theta gives -258,7; shallowest 102,3 + 0,347 theta gives -294,8; half-range 18 °C; both touch the stated bar ends (10 and 85 °C; 100 °C). Result (-276 +/- 18) °C contains -273,15 °C; wording says estimate, not guaranteed limit.
+- Scope and conditions (rigid vessel, constant n and V, extrapolation caveat) unchanged. LaTeX valid: \,, decimal {,}, units in \text.
+- Learning goals still the same three goals, no change of physics.

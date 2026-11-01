@@ -1,0 +1,398 @@
+{
+ "version": 1,
+ "contribution": "The course's CLIL video activity on ITER: vocabulary and predictions before watching The B1M's video (13 April 2022), four note-taking frames while watching (main ideas, technical concepts, collaboration, construction), and after watching a claim-by-claim check against verified facts of November 2026, a pair discussion, source evaluation (sponsor, date, claim types, precise wording), a short written explanation and a comprehension check; an optional comparison with Kurzgesagt's 2016 explainer.",
+ "learn": [
+  "take structured notes on a video about science in English.",
+  "check the claims of a video against current primary sources.",
+  "evaluate a video as a source by its author, date, purpose and wording."
+ ],
+ "prior": [
+  "ITER's Members, site and 2024 baseline (chapter *ITER: why, where and who*)",
+  "The fusion gain $Q$ and why ITER produces no electricity (chapter *Inside ITER: the machine and fusion gain*)"
+ ],
+ "activities": [
+  {
+   "id": "hook",
+   "stage": "herata",
+   "type": "hook",
+   "text": "Millions of people learn about science from YouTube. In 2022 a popular channel about construction visited ITER and made a ten-minute video about it. It has been watched millions of times. But a video is filmed on one day, and a construction project keeps changing.",
+   "question": "How much can you learn from such a video, and how do you know which parts to trust?"
+  },
+  {
+   "id": "review",
+   "stage": "herata",
+   "type": "choice",
+   "title": "Review: plan or result?",
+   "prompt": "In the units *ITER: why, where and who* and *Inside ITER*, you met facts and plans. Which of these statements is a **plan**, not a result?",
+   "choices": [
+    {
+     "text": "ITER will start research operation in 2034.",
+     "correct": true,
+     "feedback": "Right. This is the 2024 baseline, a plan. Plans can change, as the 2016 plan did."
+    },
+    {
+     "text": "Seven Members signed the ITER Agreement in 2006.",
+     "feedback": "This happened on 21 November 2006 in Paris: a historical result, not a plan."
+    },
+    {
+     "text": "Cadarache was chosen as the site in 2005.",
+     "feedback": "The decision was made in Moscow on 28 June 2005: an event that happened."
+    },
+    {
+     "text": "JET reached a fusion gain of 0.67 in 1997.",
+     "feedback": "This was measured in 1997: a result. A plan is something that has not happened yet."
+    }
+   ]
+  },
+  {
+   "id": "pred-date",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Prediction 1: the date in the video",
+   "prompt": "The video was published in April 2022. Which year for ITER's first plasma do you expect it to give?",
+   "justify": true,
+   "reveal": {
+    "after": "theory-checked"
+   },
+   "choices": [
+    {
+     "text": "2025",
+     "correct": true,
+     "feedback": "Right. In 2022 the official plan (the 2016 baseline) still had first plasma in 2025, and the video gives 2025. The 2024 baseline later replaced it: research operation in 2034."
+    },
+    {
+     "text": "2030",
+     "feedback": "No ITER plan gave 2030. In April 2022 the plan valid then, the 2016 baseline, said 2025, and so does the video."
+    },
+    {
+     "text": "2034",
+     "feedback": "The 2034 date was announced only in July 2024, two years after the video. In April 2022 the plan said 2025, and so does the video."
+    },
+    {
+     "text": "2039",
+     "feedback": "2039 is the start of deuterium–tritium operation in the 2024 baseline, published after the video. The video gives the plan of its time: first power-on in 2025."
+    }
+   ]
+  },
+  {
+   "id": "pred-focus",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Prediction 2: what the video focuses on",
+   "prompt": "The B1M is a channel about construction, and this video contains a paid promotion for a company that manages contracts. From the channel and the sponsor alone, predict: what will the video spend most time on?",
+   "justify": true,
+   "reveal": {
+    "after": "theory-checked"
+   },
+   "choices": [
+    {
+     "text": "Size, transport and teamwork on the site",
+     "correct": true,
+     "feedback": "The channel's own text supports this: it describes the 23,000-tonne machine, a million components, the 104-km route for heavy loads, 35 nations working together and the contracts. Physics gets only a short explanation."
+    },
+    {
+     "text": "The plasma physics and the equations of fusion",
+     "feedback": "Physics gets only a short part: fusion versus fission and the temperature. The channel's own text spends most of its words on building, transport and collaboration, as you would expect from a construction channel."
+    },
+    {
+     "text": "The Cold War history of fusion research",
+     "feedback": "History appears only briefly, if at all. The channel's own text spends most of its words on the construction: size, parts, transport and collaboration."
+    },
+    {
+     "text": "The French language and life in Provence",
+     "feedback": "The video is set in France, but the channel's own text spends most of its words on the construction project: its size, parts, transport and the many nations involved."
+    }
+   ]
+  },
+  {
+   "id": "vocabulary",
+   "stage": "tutki",
+   "type": "text",
+   "title": "Before watching: key vocabulary",
+   "text": "Before you press play, check the key words of the video.\n\n<div class=\"fx\" data-fx=\"match\" id=\"fx-iv-words\"><script type=\"application/json\">{\"prompt\": \"Before watching: match each word or phrase from the video with its meaning.\", \"options\": [\"a building where parts are put together\", \"one piece of a machine\", \"joining light nuclei together\", \"splitting heavy nuclei\", \"hot gas of ions and electrons\", \"no CO₂ emissions\", \"the company that paid for a mention\", \"the route for very heavy loads\"], \"items\": [{\"text\": \"assembly hall\", \"answer\": \"a building where parts are put together\", \"feedback\": \"To *assemble* is to put parts together; ITER's assembly hall prepares huge modules before they go into the pit.\"}, {\"text\": \"component\", \"answer\": \"one piece of a machine\", \"feedback\": \"ITER has about one million components.\"}, {\"text\": \"fusion\", \"answer\": \"joining light nuclei together\", \"feedback\": \"*Fuse* means join: two light nuclei become one heavier nucleus.\"}, {\"text\": \"fission\", \"answer\": \"splitting heavy nuclei\", \"feedback\": \"Fission splits heavy nuclei such as uranium; today's nuclear power plants use it.\"}, {\"text\": \"plasma\", \"answer\": \"hot gas of ions and electrons\", \"feedback\": \"When a gas is hot enough, electrons leave the atoms: the fourth state of matter.\"}, {\"text\": \"carbon-free\", \"answer\": \"no CO₂ emissions\", \"feedback\": \"The power source itself does not release carbon dioxide.\"}, {\"text\": \"sponsor\", \"answer\": \"the company that paid for a mention\", \"feedback\": \"A sponsor pays a creator; the video must say so (a *paid promotion*).\"}, {\"text\": \"ITER Itinerary\", \"answer\": \"the route for very heavy loads\", \"feedback\": \"About 104 km of roads were adapted so that the largest parts can travel from the coast to the site.\"}], \"done\": \"All right. Listen for these words in the video.\"}</script></div>"
+  },
+  {
+   "id": "watch",
+   "stage": "tutki",
+   "type": "text",
+   "title": "While watching",
+   "text": "Watch the whole video once without stopping. Then watch it a second time and pause to make notes in the four frames below. Write short notes, not full sentences: key words, numbers, names. Each of you writes in all four frames; your pair can share the listening (one listens closely for frames 1–2, the other for 3–4) and then you complete each other's notes.\n\n<div class=\"fx\" data-fx=\"video\" id=\"fx-iv-b1m\"><script type=\"application/json\">{\"id\": \"4BkOUOK0XzM\", \"title\": \"We Went Inside the Largest Nuclear Fusion Reactor\", \"channel\": \"The B1M\", \"year\": \"13 April 2022\", \"length\": \"about 10 min\", \"note\": \"The video contains a paid promotion, as the channel states. English subtitles can be switched on in the player.\"}</script></div>"
+  },
+  {
+   "id": "frame-main",
+   "stage": "tutki",
+   "type": "explain",
+   "title": "Frame 1: main ideas",
+   "prompt": "Note the **main ideas**:\n\n<ol type=\"a\"><li>What is ITER trying to do, according to the video?</li><li>Why does the video say fusion is needed?</li><li>What has no reactor done yet, according to the video?</li><li>What does the video say about the future?</li></ol>",
+   "model": "(a) Build the largest fusion reactor and get more energy out than it takes in, for a short time (\"net energy\"). (b) A carbon-free energy source that does not depend on the weather, because the world needs less fossil fuel. (c) No reactor has produced more fusion energy than it uses. (d) First power-on in 2025 (the plan in 2022); electricity to the grid is decades away and would come from later reactors; private companies are also working on fusion. Notes are checked by your teacher against the video; the model shows what good notes can contain, based on the narration published on the channel's web page.",
+   "criteria": [
+    "The notes give ITER's goal in the video's words (more energy out than in).",
+    "They note at least one reason the video gives for fusion.",
+    "They record the future date or time scale the video gives.",
+    "They are short notes with key words and numbers."
+   ]
+  },
+  {
+   "id": "frame-tech",
+   "stage": "tutki",
+   "type": "explain",
+   "title": "Frame 2: technical concepts",
+   "prompt": "Note the **technical concepts**:\n\n<ol type=\"a\"><li>How does the video explain the difference between fission and fusion?</li><li>What is the fuel?</li><li>Which extreme conditions must the machine survive?</li><li>Which parts or numbers about the machine do you hear?</li></ol>",
+   "model": "(a) Fission splits heavy atoms such as uranium and plutonium and leaves dangerous waste; fusion joins light atoms. (b) Hydrogen isotopes that can be taken from water. (c) Temperatures about ten times hotter than the Sun's core and forces about twice those needed to launch a space shuttle. (d) A tokamak of 23,000 tonnes with about one million components; heat would make steam for turbines in a future power plant. Notes are checked by your teacher against the video; the model shows what good notes can contain, based on the narration published on the channel's web page.",
+   "criteria": [
+    "The notes contrast splitting (fission) and joining (fusion).",
+    "They name the fuel the video gives.",
+    "They record at least one extreme condition with its comparison.",
+    "They include at least two numbers about the machine."
+   ]
+  },
+  {
+   "id": "frame-collab",
+   "stage": "tutki",
+   "type": "explain",
+   "title": "Frame 3: international collaboration",
+   "prompt": "Note what the video says about **international collaboration**: how many nations, where the parts come from, and what makes working together difficult.",
+   "model": "35 nations work on ITER. The parts are made in the member countries and shipped to the site in France, where they are assembled. Working together is difficult because of different languages, cultures and ways of building; contracts with many organisations must be managed (the sponsor's topic). Notes are checked by your teacher against the video; the model shows what good notes can contain, based on the narration published on the channel's web page.",
+   "criteria": [
+    "The notes record the number of nations the video gives.",
+    "They say that parts are made in member countries and assembled in France.",
+    "They name at least one difficulty of working together."
+   ]
+  },
+  {
+   "id": "frame-build",
+   "stage": "tutki",
+   "type": "explain",
+   "title": "Frame 4: construction challenges",
+   "prompt": "Note the **construction challenges**: how the parts travel to the site, how they are assembled, and what the video says about the schedule.",
+   "model": "About 104 km of roads were adapted (the ITER Itinerary), with bridges and police convoys for the heaviest loads. Parts are prepared in the assembly hall and lifted into the machine with overhead cranes; the video compares the tokamak with an enormous construction kit. The schedule: first power-on planned for 2025. Notes are checked by your teacher against the video; the model shows what good notes can contain, based on the narration published on the channel's web page.",
+   "criteria": [
+    "The notes describe how heavy parts travel to the site (with the 104 km route or the convoys).",
+    "They describe how parts are assembled (hall, cranes).",
+    "They record what the video says about the schedule."
+   ]
+  },
+  {
+   "id": "sort-claims",
+   "stage": "tutki",
+   "type": "text",
+   "title": "Source evaluation: sort the claims",
+   "text": "<div class=\"fx\" data-fx=\"match\" id=\"fx-iv-claims\"><script type=\"application/json\">{\"prompt\": \"Source evaluation: sort the claims from the video (2022). Use your notes, what you know from the chapter's first two units, and iter.org's Facts page.\", \"options\": [\"correct today\", \"outdated\", \"needs context\"], \"items\": [{\"text\": \"ITER weighs 23,000 tonnes.\", \"answer\": \"correct today\", \"feedback\": \"ITER's facts page gives the same mass.\"}, {\"text\": \"First power-on is planned for 2025.\", \"answer\": \"outdated\", \"feedback\": \"The 2024 baseline replaced it: research operation 2034, D–T operation 2039.\"}, {\"text\": \"It is ten times hotter than the Sun's core.\", \"answer\": \"needs context\", \"feedback\": \"True for the temperature, but the Sun's core is far denser and its pressure far higher.\"}, {\"text\": \"The fuel comes from water.\", \"answer\": \"needs context\", \"feedback\": \"Deuterium does; tritium must be bred from lithium.\"}, {\"text\": \"About 104 km of roads were adapted.\", \"answer\": \"correct today\", \"feedback\": \"The ITER Itinerary is about 104 km long.\"}, {\"text\": \"35 nations work on ITER.\", \"answer\": \"outdated\", \"feedback\": \"This was ITER's long-used count. Since the UK left, it is 34: 27 EU states, Switzerland and six other Members.\"}, {\"text\": \"The goal is net energy.\", \"answer\": \"needs context\", \"feedback\": \"Which energy? ITER aims at a plasma gain $Q = 10$ and makes no electricity.\"}, {\"text\": \"The project costs 22 billion dollars.\", \"answer\": \"needs context\", \"feedback\": \"Estimates differ with what is counted, and costs rose after 2022.\"}], \"done\": \"Well sorted. Most claims are fine; the date and the count of nations are outdated, and several need more precise wording. The table below gives the evidence.\"}</script></div>"
+  },
+  {
+   "id": "sponsor",
+   "stage": "tutki",
+   "type": "choice",
+   "title": "What does a paid promotion change?",
+   "prompt": "The video says it contains a paid promotion. What is the best way to deal with this as a viewer?",
+   "choices": [
+    {
+     "text": "Notice the sponsor's topics and check facts elsewhere.",
+     "correct": true,
+     "feedback": "Right. A sponsor rarely changes a fact like 23,000 tonnes, but it can decide which topics get time. Keep watching critically and check claims in primary sources."
+    },
+    {
+     "text": "Ignore the whole video, because sponsored content is always false.",
+     "feedback": "Many claims in this video agree with ITER's own facts. A sponsor is a reason to read carefully, not to reject everything."
+    },
+    {
+     "text": "Trust it more, because a company checked it.",
+     "feedback": "A sponsor pays for visibility; it does not check the science. The facts still need checking in independent or primary sources."
+    },
+    {
+     "text": "Nothing: sponsors never affect what a video shows.",
+     "feedback": "A sponsor can affect which topics get time, here the contracts. That does not make the facts wrong, but it is worth noticing."
+    }
+   ]
+  },
+  {
+   "id": "theory-checked",
+   "stage": "tutki",
+   "type": "theory",
+   "sections": [
+    "Checked"
+   ]
+  },
+  {
+   "id": "theory-key",
+   "stage": "selita",
+   "type": "theory",
+   "sections": [
+    "Ydinajatus"
+   ]
+  },
+  {
+   "id": "language-support",
+   "stage": "selita",
+   "type": "text",
+   "text": "<div class=\"wordbank\"><h4>Word bank</h4><p>reliable · up to date · outdated · a sponsor · a paid promotion · a primary source · a claim · evidence · to check · to compare · accurate · misleading</p></div>\n\n<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>I think the video is reliable when it comes to …, because …</li><li>However, the claim that … is outdated, because …</li><li>The sponsor might explain why …</li><li>If I compare the video with iter.org, …</li><li>I partly agree, but …</li></ul></div>"
+  },
+  {
+   "id": "pair-discuss",
+   "stage": "selita",
+   "type": "explain",
+   "title": "Pair discussion: can we trust the video?",
+   "prompt": "Discuss with a partner, using the word bank and sentence starters: *Is The B1M's video a reliable source for a school report on ITER?* Each of you gives two arguments; then agree on how you would use the video. Write your shared answer in three or four sentences.",
+   "model": "The video is reliable when it comes to the size and the construction of ITER: its numbers on the mass, the components and the 104-km route agree with ITER's facts. However, its date of 2025 is outdated, because the 2024 baseline moved research operation to 2034. The paid promotion might explain why contracts get so much time. We would use the video to see the machine and the logistics, but check every date and cost on iter.org.",
+   "criteria": [
+    "The answer names at least one strength and one weakness of the video as a source.",
+    "It uses a dated fact to show what is outdated.",
+    "It mentions the sponsor or the channel's purpose.",
+    "It ends with a decision about how to use the video."
+   ]
+  },
+  {
+   "id": "back-to-predictions",
+   "stage": "selita",
+   "type": "reflect",
+   "title": "Back to your predictions",
+   "prompt": "Compare your predictions with the video and the table of checked claims. Then answer the opening question in one or two sentences: how can a video be useful and out of date at the same time?",
+   "predictions": [
+    "pred-date",
+    "pred-focus"
+   ]
+  },
+  {
+   "id": "write",
+   "stage": "sovella",
+   "type": "explain",
+   "title": "Write: what will ITER do?",
+   "prompt": "A classmate has watched only this video. Write a short explanation of 80–100 words: what will ITER do, and what will it **not** do? Correct at least one claim of the video with current, dated information.\n\n<div class=\"wordbank\"><h4>Word bank</h4><p>to aim at · a plasma gain · electricity · a plan · according to · as of November 2026</p></div>\n\n<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>The video shows that …</li><li>However, …</li><li>According to ITER's 2024 baseline, …</li><li>This means that …</li></ul></div>",
+   "model": "The video shows that ITER is a gigantic machine of 23,000 tonnes built by many nations to study fusion. ITER aims at a plasma gain of $Q = 10$: $500\\ \\text{MW}$ of fusion power from $50\\ \\text{MW}$ of heating. However, ITER will not produce electricity; it has no turbines. The video's date of 2025 is outdated: according to ITER's 2024 baseline, research operation starts in 2034 and deuterium–tritium operation in 2039. This means that ITER is an experiment on the way to fusion power, not a power plant.",
+   "criteria": [
+    "The explanation says what ITER will do (a burning plasma or $Q = 10$) and that it will not produce electricity.",
+    "It corrects at least one claim of the video with a dated fact (for example the 2024 baseline).",
+    "It is 80–100 words long, in clear sentences with linking words.",
+    "It uses at least two terms from the word bank correctly."
+   ]
+  },
+  {
+   "id": "extra-video",
+   "stage": "sovella",
+   "type": "explain",
+   "title": "Extra video: a physics explainer from 2016",
+   "optional": true,
+   "prompt": "Watch this short animated video. Compare it with The B1M's video: who made each one, when, and for what purpose? Which video explains the physics better, and which shows ITER better? Write three or four sentences.\n\n<div class=\"fx\" data-fx=\"video\" id=\"fx-iv-kurz\"><script type=\"application/json\">{\"id\": \"mZsaaturR6E\", \"title\": \"Fusion Power Explained – Future or Failure\", \"channel\": \"Kurzgesagt – In a Nutshell\", \"year\": \"10 November 2016\", \"length\": \"6 min 15 s\", \"note\": \"An animated explainer of fusion physics, magnetic and inertial confinement, fuel and safety.\"}</script></div>\n\n<div class=\"wordbank\"><h4>Word bank</h4><p>an explainer · animation · to focus on · in contrast · older</p></div>\n\n<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>The first video focuses on …, whereas the second …</li><li>The explainer is older, so …</li><li>For a report on ITER, I would use …</li></ul></div>",
+   "model": "The B1M's video (2022) is filmed inside ITER by a construction channel and focuses on the size of the machine, transport and collaboration. In contrast, Kurzgesagt's animated explainer (2016) focuses on how fusion works: magnetic and inertial confinement, the fuel and safety. The explainer explains the physics better, but it is older, so its numbers on costs and fuel need checking. For a report on ITER I would use the B1M video for the construction and the explainer for the physics, and check both against iter.org.",
+   "criteria": [
+    "The answer compares the creators, the dates and the purposes of the two videos.",
+    "It says which video is better for physics and which for ITER's construction.",
+    "It notes that both need checking because facts change."
+   ]
+  },
+  {
+   "id": "misconception",
+   "stage": "sovella",
+   "type": "theory",
+   "sections": [
+    "Yleinen virhekäsitys"
+   ]
+  },
+  {
+   "id": "check-1",
+   "stage": "tarkista",
+   "type": "choice",
+   "title": "1. Comprehension: numbers",
+   "prompt": "Which pair of numbers from the video agrees with ITER's own facts?",
+   "choices": [
+    {
+     "text": "23,000 tonnes and about one million components",
+     "correct": true,
+     "feedback": "Right. ITER's facts page gives 23,000 tonnes and about one million components."
+    },
+    {
+     "text": "A mass of 2,300 tonnes and about one thousand components",
+     "feedback": "Both numbers are too small. ITER weighs about 23,000 tonnes, about three Eiffel Towers, and has about one million components."
+    },
+    {
+     "text": "A mass of 23,000 tonnes and 35 Members",
+     "feedback": "The mass is right, but ITER has seven Members. The video's 35 counts the nations, with every EU state separately."
+    },
+    {
+     "text": "Ten times the Sun's mass and 104 components",
+     "feedback": "The video compares the temperature, not the mass, with the Sun, and 104 is the length of the adapted road in kilometres."
+    }
+   ]
+  },
+  {
+   "id": "check-2",
+   "stage": "tarkista",
+   "type": "choice",
+   "title": "2. Up to date?",
+   "prompt": "The video says first power-on is planned for 2025. How should you report this in November 2026?",
+   "choices": [
+    {
+     "text": "\"The 2016 baseline said 2025; the 2024 one says 2034.\"",
+     "correct": true,
+     "feedback": "Right. Give each date with the plan it comes from: the plan valid in 2022 was the 2016 baseline. Its 2025 date was replaced by the 2024 baseline (research operation 2034, D–T 2039)."
+    },
+    {
+     "text": "\"ITER made its first plasma in 2025, as it had planned.\"",
+     "feedback": "That did not happen. The 2024 baseline replaced the 2025 first plasma with research operation in 2034."
+    },
+    {
+     "text": "\"The video lied about the date of ITER's first plasma.\"",
+     "feedback": "The video correctly reported the plan of April 2022. The plan changed later; that makes the date outdated, not a lie."
+    },
+    {
+     "text": "\"ITER has had no schedule at all since the year 2024.\"",
+     "feedback": "ITER has a new baseline from July 2024: research operation in 2034, D–D in 2035, D–T in 2039."
+    }
+   ]
+  },
+  {
+   "id": "check-3",
+   "stage": "tarkista",
+   "type": "choice",
+   "title": "3. Precise words",
+   "prompt": "The video says ITER's first goal is \"net energy\". What is the most precise way to state ITER's goal?",
+   "choices": [
+    {
+     "text": "To send more electricity to the grid than the site uses",
+     "feedback": "ITER has no turbines and produces no electricity. Its goal is a plasma gain: $Q = 10$."
+    },
+    {
+     "text": "A plasma gain $Q = 10$: $500\\ \\text{MW}$ from $50\\ \\text{MW}$ of heating",
+     "correct": true,
+     "feedback": "Right. ITER's goal is a burning plasma with a fusion gain of ten. It is a gain of the plasma, not of electricity."
+    },
+    {
+     "text": "To run for ever without any external heating",
+     "feedback": "That would be ignition and steady operation. ITER aims at $Q = 10$ in pulses of $400\\text{–}600\\ \\text{s}$."
+    },
+    {
+     "text": "To make as much energy as a large coal plant",
+     "feedback": "ITER is an experiment without turbines. Its goal is a plasma gain, $Q = 10$."
+    }
+   ]
+  },
+  {
+   "id": "check-explain",
+   "stage": "tarkista",
+   "type": "explain",
+   "title": "4. Evaluate in one paragraph",
+   "prompt": "Write four or five sentences: would you recommend this video to a younger student who wants to learn about ITER? Give one strength, one weakness, and one piece of advice for watching it.\n\n<div class=\"wordbank\"><h4>Word bank</h4><p>to recommend · a strength · a weakness · outdated · to check · a sponsor</p></div>\n\n<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>I would recommend the video because …</li><li>One weakness is that …</li><li>My advice is to …</li></ul></div>",
+   "model": "I would recommend the video because it shows the enormous size of ITER and how parts from many countries are brought together, which is hard to imagine from text. Its numbers on the mass and the components agree with ITER's facts. One weakness is that it is from 2022, so its first-plasma date of 2025 is outdated; the 2024 baseline plans research operation in 2034. It also has a sponsor. My advice is to watch it for the construction and to check every date on iter.org.",
+   "criteria": [
+    "The answer takes a clear position (recommend or not).",
+    "It gives one strength and one weakness, each with a reason.",
+    "It gives practical advice, such as checking dates in a primary source.",
+    "It uses at least one dated fact correctly."
+   ]
+  },
+  {
+   "id": "summary",
+   "stage": "tarkista",
+   "type": "theory",
+   "sections": [
+    "Tiivistelmä"
+   ]
+  },
+  {
+   "id": "french-corner",
+   "stage": "tarkista",
+   "type": "text",
+   "text": "<div class=\"french-corner\"><h4>Le coin français</h4><p>Many videos about ITER are also made in French, because the machine is built in France. Listen, repeat, and say the last sentence to your partner.</p></div>\n\n<div class=\"fx\" data-fx=\"say\" id=\"fx-iv-french\"><script type=\"application/json\">{\"lang\": \"fr-FR\", \"title\": \"Le coin français: watching and checking\", \"phrases\": [{\"fr\": \"une vidéo\", \"en\": \"a video\", \"tip\": \"*ewn vee-day-OH*: *u* in *une* is like the Finnish *y*.\"}, {\"fr\": \"regarder\", \"en\": \"to watch\", \"tip\": \"*ruh-gar-DAY*: the final *r* is silent.\"}, {\"fr\": \"le chantier\", \"en\": \"the construction site\", \"tip\": \"*luh shahn-TYAY*: *ch* like English *sh*, a nasal *an*.\"}, {\"fr\": \"une source fiable\", \"en\": \"a reliable source\", \"tip\": \"*ewn SOORSS fee-AH-bluh*.\"}, {\"fr\": \"Je regarde une vidéo sur le chantier d'ITER.\", \"en\": \"I am watching a video about the ITER construction site.\", \"tip\": \"*d'ITER* is said *dee-TAIR*.\"}]}</script></div>"
+  }
+ ]
+}

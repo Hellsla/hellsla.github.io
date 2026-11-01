@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: d194591925297ae9
+CONTENT-HASH: d61ddef784685b68
 
 ## Blocking
 - none
@@ -8,4 +8,4 @@ CONTENT-HASH: d194591925297ae9
 - none
 
 ## Checked
-batch delta review: the rephrased learning goals each complete "Tällä tunnilla opit" with a lowercase -maan/-mään verb, parallel within the list, symbols and numbers unchanged, meaning kept; the change touches no figure, simulation or task.
+Delta: typesetting only; no wording, order, figure or task changed apart from learning goals now phrased -maan/-mään (parallel, already passed). Inquiry tests 67/67, layout 360 px ok. Units set off with thin space improve legibility; feedback texts still repair the misconception (total pressure not proportional to depth) with the same numbers.

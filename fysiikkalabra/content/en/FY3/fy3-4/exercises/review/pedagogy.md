@@ -1,15 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: bb11c6301bd96c28
+CONTENT-HASH: d888d837342119d7
 
 ## Blocking
-(none left)
-
-## Fixed
-- (none needed)
+(none)
 
 ## Polish
-- none
+(none)
 
 ## Checked
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): exercises.json and solutions.md (all 13 tasks, units, significant-figure remarks, step labels) read against the reviewed Finnish.
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked exercise texts, the new figure task fy3-4-L2-03 (solution and figure description) against the new Finnish; no issues found.
+- Translation reviewed against the reviewed Finnish after the typesetting round: every inline-math segment of exercises.json, solutions.md compared with the Finnish (same numbers, units, symbols, order; only subscript labels differ, translated); no bare number+unit left outside LaTeX; decimal point (not comma) in English; no Finnish words left (Lake Päijänne is a proper noun); JSON valid; check_i18n 0 errors for en in these chapters.
+- Pedagogy: teaching sequence, staging, tasks, feedback and hints identical in structure to the Finnish; units in LaTeX read cleanly; language natural.
+- Translation-only review (teacher's procedure 2026-10-28); no translation edits were needed.

@@ -67,8 +67,8 @@
           "feedback": "In the values of the model the weight triples: $98.1\\,\\text{N}$ and $294\\,\\text{N}$. The spring of a force meter works so that the extension is directly proportional to the force as long as the spring is not stretched too far; the meter is made for that range."
         },
         {
-          "text": "The weight increases by as many newtons as the mass increases in kilograms, that is, by 20 N.",
-          "feedback": "The values of the model show an increase from $98.1\\,\\text{N}$ to $294\\,\\text{N}$, that is, almost 200 N. Each kilogram adds about 9.8 N of weight on Earth, so $20\\,\\text{kg}$ adds about 196 N. Weight and mass are different quantities in different units."
+          "text": "The weight increases by as many newtons as the mass increases in kilograms, that is, by $20\\,\\text{N}$.",
+          "feedback": "The values of the model show an increase from $98.1\\,\\text{N}$ to $294\\,\\text{N}$, that is, almost $200\\,\\text{N}$. Each kilogram adds about $9.8\\,\\text{N}$ of weight on Earth, so $20\\,\\text{kg}$ adds about $196\\,\\text{N}$. Weight and mass are different quantities in different units."
         },
         {
           "text": "The weight stays the same, because weight depends only on the place.",
@@ -142,7 +142,12 @@
       "min": 2,
       "names": {
         "m": "mass m",
-        "body": "taivaankappale"
+        "body": "celestial body"
+      },
+      "values": {
+        "body": {
+          "Maa": "Earth"
+        }
       }
     },
     {
@@ -179,7 +184,12 @@
       "min": 2,
       "names": {
         "m": "mass m",
-        "body": "taivaankappale"
+        "body": "celestial body"
+      },
+      "values": {
+        "body": {
+          "Maa": "Earth"
+        }
       }
     },
     {
@@ -205,27 +215,27 @@
       "stage": "tutki",
       "type": "interpret",
       "title": "The scale of a force meter",
-      "text": "A spring knows nothing about newtons: the scale is made by hanging identical weights on it. The table has *example values* (not the results of a real measurement) for a spring whose weights each weigh 1.0 N. The spring is not stretched too far.\n\n| Weights | Force $F$ (N) | Extension (cm) |\n|---|---|---|\n| 0 | 0 | 0.0 |\n| 1 | 1.0 | 1.6 |\n| 2 | 2.0 | 3.2 |\n| 3 | 3.0 | 4.8 |\n| 4 | 4.0 | 6.4 |",
+      "text": "A spring knows nothing about newtons: the scale is made by hanging identical weights on it. The table has *example values* (not the results of a real measurement) for a spring whose weights each weigh $1.0\\,\\text{N}$. The spring is not stretched too far.\n\n| Weights | Force $F$ (N) | Extension (cm) |\n|---|---|---|\n| 0 | 0 | 0.0 |\n| 1 | 1.0 | 1.6 |\n| 2 | 2.0 | 3.2 |\n| 3 | 3.0 | 4.8 |\n| 4 | 4.0 | 6.4 |",
       "question": {
         "type": "choice",
-        "prompt": "An unknown object is hung on the same spring, and the spring stretches 5.6 cm. How great is the force stretching the spring?",
+        "prompt": "An unknown object is hung on the same spring, and the spring stretches $5.6\\,\\text{cm}$. How great is the force stretching the spring?",
         "choices": [
           {
-            "text": "3.5 N",
+            "text": "$3.5\\,\\text{N}$",
             "correct": true,
-            "feedback": "Correct. Each newton stretches the spring 1.6 cm, so $5.6\\,\\text{cm}$ corresponds to a force of $5.6 / 1.6 \\cdot 1.0\\,\\text{N} = 3.5\\,\\text{N}$. The extension is directly proportional to the force, so you can read between the marks on the scale."
+            "feedback": "Correct. Each newton stretches the spring $1.6\\,\\text{cm}$, so $5.6\\,\\text{cm}$ corresponds to a force of $5.6 / 1.6 \\cdot 1.0\\,\\text{N} = 3.5\\,\\text{N}$. The extension is directly proportional to the force, so you can read between the marks on the scale."
           },
           {
-            "text": "5.6 N",
-            "feedback": "The extension in centimetres is not the same number as the force in newtons. In the table 1.0 N stretches the spring 1.6 cm, so 5.6 cm corresponds to $5.6/1.6 = 3.5$ newtons."
+            "text": "$5.6\\,\\text{N}$",
+            "feedback": "The extension in centimetres is not the same number as the force in newtons. In the table $1.0\\,\\text{N}$ stretches the spring $1.6\\,\\text{cm}$, so $5.6\\,\\text{cm}$ corresponds to $5.6/1.6 = 3.5$ newtons."
           },
           {
-            "text": "It cannot be known, because 5.6 cm is not in the table.",
-            "feedback": "The values in the table are on a straight line through the origin: the extension grows 1.6 cm for every newton. So you can also turn an extension between the table values into a force, $5.6/1.6 \\cdot 1.0\\,\\text{N} = 3.5\\,\\text{N}$."
+            "text": "It cannot be known, because $5.6\\,\\text{cm}$ is not in the table.",
+            "feedback": "The values in the table are on a straight line through the origin: the extension grows $1.6\\,\\text{cm}$ for every newton. So you can also turn an extension between the table values into a force, $5.6/1.6 \\cdot 1.0\\,\\text{N} = 3.5\\,\\text{N}$."
           },
           {
-            "text": "9.0 N",
-            "feedback": "You multiplied the extension by the extension per newton ($5.6 \\cdot 1.6$), when you should divide. Ask: how many 1.6 cm extensions fit into 5.6 cm? The answer is 3.5, so 3.5 N."
+            "text": "$9.0\\,\\text{N}$",
+            "feedback": "You multiplied the extension by the extension per newton ($5.6 \\cdot 1.6$), when you should divide. Ask: how many $1.6\\,\\text{cm}$ extensions fit into $5.6\\,\\text{cm}$? The answer is 3.5, so $3.5\\,\\text{N}$."
           }
         ]
       },
@@ -271,7 +281,7 @@
         {
           "text": "The mass must be converted to kilograms: $G = 0.500\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 \\approx 4.91\\,\\text{N}$.",
           "correct": true,
-          "feedback": "Correct. The weight comes out in newtons only when the mass is in kilograms, because $1\\,\\text{N} = 1\\,\\text{kg}\\cdot\\text{m/s}^2$. The reasonableness check says the same: the weight of a half-kilo bag is about 5 N, not almost 5000 N."
+          "feedback": "Correct. The weight comes out in newtons only when the mass is in kilograms, because $1\\,\\text{N} = 1\\,\\text{kg}\\cdot\\text{m/s}^2$. The reasonableness check says the same: the weight of a half-kilo bag is about $5\\,\\text{N}$, not almost $5000\\,\\text{N}$."
         },
         {
           "text": "The weight should be given in kilograms, so the answer is $500\\,\\text{g}$.",
@@ -283,7 +293,7 @@
         },
         {
           "text": "There is no error in the calculation.",
-          "feedback": "Check the order of magnitude: the weight of 1 kg on Earth is about 10 N, so $500\\,\\text{g}$ cannot weigh almost 5000 N. The mass was substituted in grams, although the formula needs kilograms."
+          "feedback": "Check the order of magnitude: the weight of one kilogram on Earth is about $10\\,\\text{N}$, so $500\\,\\text{g}$ cannot weigh almost $5000\\,\\text{N}$. The mass was substituted in grams, although the formula needs kilograms."
         }
       ],
       "optional": true
@@ -293,7 +303,7 @@
       "stage": "sovella",
       "type": "numeric",
       "title": "Apply to a new situation",
-      "prompt": "On the Moon, an astronaut hangs a box of rock samples on a force meter, and the meter shows 12 N. The box is brought to Earth as it is. How great is its weight on Earth? The accelerations of free fall are in the table of the lesson. Answer in newtons.",
+      "prompt": "On the Moon, an astronaut hangs a box of rock samples on a force meter, and the meter shows $12\\,\\text{N}$. The box is brought to Earth as it is. How great is its weight on Earth? The accelerations of free fall are in the table of the lesson. Answer in newtons.",
       "answer": 72.7,
       "unit": "N",
       "tolerance": 0.02,
@@ -305,11 +315,11 @@
       "mistakes": [
         {
           "value": 19.44,
-          "feedback": "You multiplied the reading on the Moon by the Moon's acceleration of free fall. 12 N is already a weight, not a mass. First calculate the mass by dividing: $m = 12\\,\\text{N} / 1.62\\,\\text{m/s}^2 \\approx 7.41\\,\\text{kg}$."
+          "feedback": "You multiplied the reading on the Moon by the Moon's acceleration of free fall. $12\\,\\text{N}$ is already a weight, not a mass. First calculate the mass by dividing: $m = 12\\,\\text{N} / 1.62\\,\\text{m/s}^2 \\approx 7.41\\,\\text{kg}$."
         },
         {
           "value": 117.72,
-          "feedback": "You treated the reading of 12 N as if it were a mass ($12\\,\\text{kg}$). The reading on the Moon is a weight; the mass is $12\\,\\text{N} / 1.62\\,\\text{m/s}^2 \\approx 7.41\\,\\text{kg}$, and its weight on Earth is about 73 N."
+          "feedback": "You treated the reading of $12\\,\\text{N}$ as if it were a mass ($12\\,\\text{kg}$). The reading on the Moon is a weight; the mass is $12\\,\\text{N} / 1.62\\,\\text{m/s}^2 \\approx 7.41\\,\\text{kg}$, and its weight on Earth is about $73\\,\\text{N}$."
         },
         {
           "value": 7.41,
@@ -398,7 +408,7 @@
         },
         {
           "value": 44.9,
-          "feedback": "You divided the weight by the Earth's value $9.81\\,\\text{m/s}^2$, which gives the mass whose weight on Earth would be 440 N. The question asks for the $g$ of this celestial body: $g = G/m$."
+          "feedback": "You divided the weight by the Earth's value $9.81\\,\\text{m/s}^2$, which gives the mass whose weight on Earth would be $440\\,\\text{N}$. The question asks for the $g$ of this celestial body: $g = G/m$."
         }
       ],
       "solution": "**Given:** the $(m, G)$ graph is a straight line through the origin that passes through the point $(50\\,\\text{kg}, 440\\,\\text{N})$\n\n**Find:** the acceleration of free fall $g$ in $\\text{m/s}^2$\n\n**Principle:** Weight is directly proportional to mass, $G = m g$, so the graph is a straight line through the origin. The slope of the line $\\dfrac{G}{m}$ is the same at every point, and it is exactly the acceleration of free fall $g$.\n\n**Reading the graph:** Read one point from the line, $m = 50\\,\\text{kg}$ and $G = 440\\,\\text{N}$. Because the line passes through the origin, the slope is the weight at the point divided by its mass. No other points are needed, because the ratio is the same everywhere.\n\n**Formula:** $G = m g$, so\n\n$$g = \\frac{G}{m}$$\n\n**Conversions:** No conversions are needed: the weight is in newtons and the mass in kilograms, and $1\\,\\text{N} = 1\\,\\text{kg} \\cdot \\text{m/s}^2$, so $\\dfrac{\\text{N}}{\\text{kg}}$ is $\\text{m/s}^2$.\n\n**Substitution:** $g = \\dfrac{440\\,\\text{N}}{50\\,\\text{kg}} = 8.8\\,\\text{m/s}^2$\n\n**Answer:** $8.8\\,\\text{m/s}^2$, two significant figures like the mass $50\\,\\text{kg}$ and the weight $440\\,\\text{N}$.\n\n**Reasonableness:** The value is close to the Earth's value $9.81\\,\\text{m/s}^2$ but slightly smaller, so it is none of the celestial bodies in the table. Check by calculating back: $50\\,\\text{kg} \\cdot 8.8\\,\\text{m/s}^2 = 440\\,\\text{N}$, so the point is on the line."

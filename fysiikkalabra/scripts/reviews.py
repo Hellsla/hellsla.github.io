@@ -528,10 +528,17 @@ def _math_view(s):
 
 def _set_view(s):
     """A line as read, whether a value or symbol is set as text or as maths: no $, no spacing commands, \\text{x} and
-    \\textsf{x} as x, \\mu as µ, {,} as a comma, no spaces."""
+    \\textsf{x} as x, \\mu as µ, {,} as a comma, no spaces; ^2, \\cdot, \\theta … as the characters ², ·, θ … (SET_SYMBOLS)."""
     s = s.replace("\\\\", "\\").replace("$", "").replace("{,}", ",").replace("\\mu", "µ")
     s = re.sub(r"\\(?:text|textsf|mathrm)\{([^{}]*)\}", r"\1", s)
-    return re.sub(r"\\[,;:!]|\s+", "", s)
+    s = re.sub(r"\\[,;:!]|\s+", "", s)
+    for tex, uni in SET_SYMBOLS: s = s.replace(tex, uni)          # "45 m²" and "$45\,\text{m}^2$" read alike (visual audit 2026-11-01)
+    return s
+
+
+SET_SYMBOLS = (("{}^\\circ", "°"), ("^\\circ", "°"), ("^{2}", "²"), ("^{3}", "³"), ("^2", "²"), ("^3", "³"), ("\\cdot", "·"),
+               ("\\%", "%"), ("\\theta", "θ"), ("\\Delta", "Δ"), ("\\alpha", "α"), ("\\gamma", "γ"), ("\\eta", "η"),
+               ("\\rho", "ρ"), ("\\lambda", "λ"), ("\\pm", "±"), ("\\approx", "≈"), ("-", "−"))
 
 
 def _typography_pair(old, new):

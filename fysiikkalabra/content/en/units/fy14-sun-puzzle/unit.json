@@ -1,0 +1,26 @@
+{
+ "id": "fy14-sun-puzzle",
+ "course": "FY14",
+ "chapter": 3,
+ "order": 1,
+ "title": "The puzzle of the Sun's energy",
+ "description": "Why burning and gravitational contraction could not explain the Sun, how Eddington in 1920 used Aston's helium measurement to propose hydrogen fusion, and an estimate of the Sun's lifetime with clearly stated assumptions.",
+ "kind": "history",
+ "minutes": 75,
+ "subjects": ["physics", "english", "french"],
+ "sources": [
+  {"title": "A. S. Eddington, 'The Internal Constitution of the Stars', address in Cardiff, 24 August 1920, Nature 106, 14–20 (1920); text read from the University of Colorado course copy", "url": "https://jila.colorado.edu/~ajsh/courses/astr1120_03/text/eddington.html", "checked": "2026-11-01", "note": "Quotations used: 'vast reservoir of energy', 'sub-atomic energy', Aston's helium result, '1 part in 120'."},
+  {"title": "P. Coles, 'Eddington in Cardiff 100 years ago today' (date of the address, 24 August 1920, British Association meeting)", "url": "https://telescoper.blog/2020/08/24/eddington-in-cardiff-100-years-ago-today-the-first-proposal-that-stars-are-powered-by-fusion/", "checked": "2026-11-01"},
+  {"title": "H. Kragh, 'The Source of Solar Energy, ca. 1840–1910' (arXiv:1609.02834): Helmholtz 1854, Kelvin 1862 ('not illuminated the earth for 100,000,000 years') and 1887 (about 20 million years), Curie and Laborde 1903", "url": "https://arxiv.org/abs/1609.02834", "checked": "2026-11-01"},
+  {"title": "H. Kragh, 'Before Bethe: Early Ideas of the Sun's Generation of Energy' (arXiv:2209.00072): Aston, Eddington 1920, Gamow 1928, Atkinson and Houtermans 1929, Bethe 1938–1939", "url": "https://arxiv.org/abs/2209.00072", "checked": "2026-11-01"},
+  {"title": "Sun (Wikipedia): mass 1.988 · 10³⁰ kg, luminosity 3.828 · 10²⁶ W, age 4.6 billion years, core 15.7 million K, about 4 million tonnes of mass converted per second, main-sequence lifetime about 10 billion years", "url": "https://en.wikipedia.org/wiki/Sun", "checked": "2026-11-01"},
+  {"title": "Arthur Eddington (Wikipedia): 1882–1944, Kendal, Plumian Professor from 1913, Príncipe eclipse 1919, The Internal Constitution of the Stars (1926)", "url": "https://en.wikipedia.org/wiki/Arthur_Eddington", "checked": "2026-11-01"},
+  {"title": "Heat of combustion (Wikipedia): anthracite 32.5 MJ/kg", "url": "https://en.wikipedia.org/wiki/Heat_of_combustion", "checked": "2026-11-01"},
+  {"title": "AME2020 atomic masses (IAEA Atomic Mass Data Center): ¹H 1.007825 u, ⁴He 4.002603 u", "url": "https://www-nds.iaea.org/amdc/", "checked": "2026-11-01"},
+  {"title": "World energy supply and consumption (Wikipedia; Energy Institute 2025): about 590 EJ in 2024, used for 'half a million years' in the hook", "url": "https://en.wikipedia.org/wiki/World_energy_supply_and_consumption", "checked": "2026-11-01"}
+ ],
+ "media": [
+  {"file": "units/fy14/pics/eddington.jpg", "title": "Arthur Eddington", "creator": "Bain News Service, publisher", "source": "https://commons.wikimedia.org/wiki/File:Prof._Arthur_S._Eddington_LCCN2014718210.jpg", "licence": "Public domain", "licence_url": "https://creativecommons.org/publicdomain/mark/1.0/"},
+  {"file": "units/fy14/pics/aston.jpg", "title": "Francis William Aston in 1922", "creator": "Bain News Service, publisher", "source": "https://commons.wikimedia.org/wiki/File:Dr._F.W._Aston_LCCN2014715455.jpg", "licence": "Public domain", "licence_url": "https://creativecommons.org/publicdomain/mark/1.0/"}
+ ]
+}

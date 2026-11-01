@@ -14,7 +14,8 @@ texts, `howto`/`calc` boxes, table cells in markdown tables.
   "$\\theta$", "P = UAΔT" → "$P = UA\\Delta T$", "n = pV/(RT)" → "$n = \\dfrac{pV}{RT}$", "R = 8,31 J/(mol·K)" →
   "$R = 8{,}31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$", "10¹² J" → "$10^{12}\\,\\text{J}$".
 - A symbol given a value inside a formula takes its unit inside the maths (`$m = 10\\,\\text{kg}$`). A number with a
-  unit alone in plain prose stays as it is ("98 N painoista reppua", "20 m").
+  unit alone in plain prose: superseded by the teacher's rules of 2026-10-28 and 2026-11-01 (NOTES §1), it is maths too
+  ("$98\\,\\text{N}$:n painoinen reppu", "$20\\,\\text{m}$").
 - Markdown table headers: "| t (s) | x (m) |" → "| $t$ (s) | $x$ (m) |".
 - Finnish case endings after maths: "$T$:hen", "$V$:n".
 - Decimal comma `{,}`, `\\cdot`, `\\Delta`, Greek as commands, subscripts `T_\\text{alku}` for word subscripts.

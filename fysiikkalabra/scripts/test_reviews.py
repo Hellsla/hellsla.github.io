@@ -393,6 +393,10 @@ expect("a value with its unit set as maths is typography", rv._typography_pair("
 expect("... the litre \\text{l} → \\textsf{l} is typography", rv._typography_pair(r"$3{,}0\,\text{l}$", r"$3{,}0\,\textsf{l}$"))
 expect("... but $m$ → $\\text{m}$ (mass → metre) is not", not rv._typography_pair(r"massa $m$ on", r"massa $\text{m}$ on"))
 expect("... nor a changed value set as maths", not rv._typography_pair("on 82 µm.", r"on $83\,\mu\text{m}$."))
+expect("... an area with a Unicode square set as maths is typography", rv._typography_pair("ala on 45 m² ja", r"ala on $45\,\text{m}^2$ ja"))
+expect("... a temperature with °C and a header symbol too", rv._typography_pair("| θ (°C) | 95 kPa", r"| $\theta$ (°C) | $95\,\text{kPa}$"))
+expect("... but not when the power changes", not rv._typography_pair("ala on 45 m² ja", r"ala on $45\,\text{m}^3$ ja"))
+expect("... nor a changed sign", not rv._typography_pair("on -15 °C", r"on $+15\,{}^\circ\text{C}$"))
 _lo = r"    label('$t\\ (\\text{s})$', CH.x1 + 10, CH.y0 + ts(36), p.RIGHT, ts(12));"
 expect("a LaTeX label moved in a sim's own label() helper is a label nudge", rv._js_label_pair(_lo, _lo.replace("ts(36)", "ts(39)")))
 expect("... but not its size", not rv._js_label_pair(_lo, _lo.replace("ts(12)", "ts(14)")))

@@ -1,0 +1,78 @@
+{
+ "id": "fy14-iron-curtain",
+ "course": "FY14",
+ "chapter": 5,
+ "order": 2,
+ "title": "Science across the Iron Curtain",
+ "description": "A source investigation: in 1968 the Soviet T-3 tokamak reported record temperatures, the West doubted them, and in 1969 a British team measured them in Moscow with a laser. What was evidence, and what was politics?",
+ "kind": "clil",
+ "minutes": 75,
+ "subjects": [
+  "physics",
+  "english",
+  "french"
+ ],
+ "sources": [
+  {
+   "title": "Tokamak (Wikipedia): Culham 1965, Novosibirsk 1968 (1000 eV, at least 50 times the Bohm limit), indirect magnetic measurement, runaway electrons, the Culham Five, results phoned to Culham, Nature November 1969, the Symmetric Tokamak",
+   "url": "https://en.wikipedia.org/wiki/Tokamak",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "ITER Newsline: Off to Russia with a thermometer (the Novosibirsk conference, Artsimovich's offer to Bas Pease, the team chosen in December 1968, five tonnes of equipment, about 88 shots, Princeton's conversion)",
+   "url": "https://www.iter.org/node/25203",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "ITER Newsline: Science collaboration in the time of the Cold War (Mike Forrest's account: the laser in the basement, the vibrating floor, 22 July 1969, KGB surveillance, Artsimovich's patronage)",
+   "url": "https://www.iter.org/node/17475",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Derek Robinson (physicist) (Wikipedia): the travel rule, the ruby laser, the Culham Five led by Nicol Peacock, Velikhov's tribute",
+   "url": "https://en.wikipedia.org/wiki/Derek_Robinson_(physicist)",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "UKAEA: Mission to Moscow, 50 years on (temperatures of about ten million degrees; clearance for the trip; Thomson scattering still used today)",
+   "url": "https://www.ukaea.org/news/mission-to-moscow-50-years-on/",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Peacock, Robinson, Forrest, Wilcock and Sannikov: Measurement of the electron temperature by Thomson scattering in tokamak T3, Nature 224, 488 (1969), abstract (NASA ADS)",
+   "url": "https://ui.adsabs.harvard.edu/abs/1969Natur.224..488P/abstract",
+   "checked": "2026-11-01",
+   "note": "The abstract reports electron temperatures from 100 eV to 1 keV and densities of $1\\text{–}3 \\cdot 10^{13}\\ \\text{cm}^{-3}$."
+  },
+  {
+   "title": "Mike Forrest: list of refereed papers (the author list of the 1969 Nature paper)",
+   "url": "https://mjforrest.co.uk/publications.php",
+   "checked": "2026-11-01",
+   "note": "The list gives the volume as 234; the Nature/ADS reference is volume 224, page 488."
+  },
+  {
+   "title": "Stellarator (Wikipedia): Model C shut in December 1969 and reopened in May 1970 as the Symmetric Tokamak",
+   "url": "https://en.wikipedia.org/wiki/Stellarator",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Warsaw Pact invasion of Czechoslovakia (Wikipedia): 20–21 August 1968, the end of the Prague Spring",
+   "url": "https://en.wikipedia.org/wiki/Warsaw_Pact_invasion_of_Czechoslovakia",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Institute of Plasma Physics, Czech Academy of Sciences: Thomson scattering on the COMPASS tokamak (the electron temperature from the Doppler width of the scattered spectrum)",
+   "url": "https://www.ipp.cas.cz/vedecka_struktura_ufp/tokamak/COMPASS/diagnostics/spektroskopicke-diagnostiky/thomsonuv-rozptyl.html",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "CODATA 2018 (NIST): Boltzmann constant and elementary charge, exact since 2019",
+   "url": "https://physics.nist.gov/cuu/Constants/index.html",
+   "checked": "2026-11-01",
+   "note": "$k_\\text{B} = 1.380649 \\cdot 10^{-23}\\ \\text{J/K}$ and $e = 1.602176634 \\cdot 10^{-19}\\ \\text{C}$; the unit rounds them to four significant figures."
+  }
+ ],
+ "media": [
+  {"file": "units/fy14/pics/artsimovich.jpg", "title": "Lev Artsimovich at the Kurchatov Institute, 1967", "creator": "В. Савостьянов, Е. Кассин", "source": "https://commons.wikimedia.org/wiki/File:Artsimovich_1967.jpg", "licence": "CC BY 4.0", "licence_url": "https://creativecommons.org/licenses/by/4.0"}
+ ]
+}

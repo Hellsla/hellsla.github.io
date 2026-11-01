@@ -1,0 +1,393 @@
+{
+ "version": 1,
+ "contribution": "Opens the ITER chapter: why one shared machine (Geneva 1985, cost, risk, knowledge, politics), the 2003–2005 site contest and the choice of Cadarache, the seven Members, in-kind contributions and the organisation, the change from the 2016 to the 2024 baseline, and technical versus organisational challenges; prepares the physics of the machine in the next unit.",
+ "learn": [
+  "explain why ITER is built by seven Members together and how they share the work.",
+  "describe how the site at Cadarache was chosen and what the host country provides.",
+  "compare the 2016 and 2024 schedules and tell plans from results."
+ ],
+ "prior": [
+  "The 1985 Geneva summit and the large tokamaks JET and JT-60 (chapter *Big machines and world politics: 1970s to 1985*)",
+  "A tokamak holds a plasma ring with magnetic fields (chapter *Tokamak or stellarator?*)"
+ ],
+ "activities": [
+  {
+   "id": "hook",
+   "stage": "herata",
+   "type": "hook",
+   "text": "On a hill in southern France, about 5,000 people work on one machine. Its parts are made in factories in Asia, Europe and North America and travel by ship and by road to the site. Some parts weigh hundreds of tonnes. The countries that pay for it are often rivals in politics and in trade. The idea for the machine is about forty years old, and the machine has still not made its first plasma.",
+   "question": "Why would countries that often disagree build one fusion machine together, and can such a project succeed?"
+  },
+  {
+   "id": "review",
+   "stage": "herata",
+   "type": "choice",
+   "title": "Review: the machines before ITER",
+   "prompt": "In chapter 5 you met JET in Britain and JT-60 in Japan, the largest fusion experiments of the 1980s. What kind of machine were they?",
+   "choices": [
+    {
+     "text": "Tokamaks: a plasma ring held by magnetic fields.",
+     "correct": true,
+     "feedback": "Right. JET and JT-60 were tokamaks, like ITER. ITER is the next, much larger step on the same path."
+    },
+    {
+     "text": "Stellarators with twisted coils and no plasma current.",
+     "feedback": "Stellarators such as Wendelstein 7-X are another design. JET and JT-60 were tokamaks, which use a current in the plasma."
+    },
+    {
+     "text": "Laser facilities that compress small fuel pellets.",
+     "feedback": "That is inertial confinement, as at NIF. JET and JT-60 confined a plasma ring with magnetic fields: they were tokamaks."
+    },
+    {
+     "text": "Fission reactors that produce electricity from uranium.",
+     "feedback": "JET and JT-60 were fusion experiments, not power stations. They were tokamaks and never produced electricity."
+    }
+   ]
+  },
+  {
+   "id": "pred-why",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Prediction 1: why share one machine?",
+   "prompt": "The partners decided to build one shared machine instead of several national ones. What do you think was the most important reason?",
+   "justify": true,
+   "reveal": {
+    "after": "theory-why"
+   },
+   "choices": [
+    {
+     "text": "One machine of that size was too costly and risky for one country.",
+     "correct": true,
+     "feedback": "The text supports this. A machine that makes far more fusion power than it receives is very large, needs new technology and costs tens of billions of euros. Sharing spreads the cost and the risk and brings knowledge together, and it also had a political value after the Cold War."
+    },
+    {
+     "text": "International law does not allow one country to build a fusion reactor.",
+     "feedback": "There is no such law: many countries have their own fusion machines, such as EAST in China or KSTAR in Korea. The reason was the size, cost and risk of the next step."
+    },
+    {
+     "text": "Sharing kept the secrets of fusion weapons under joint control.",
+     "feedback": "Fusion research was declassified in 1958, and ITER is a peaceful research project. Its partners share it because it is too large and costly for one country."
+    },
+    {
+     "text": "Only one place in the world was suitable for such a machine.",
+     "feedback": "Four sites were offered, and two of them were judged excellent. The reason for sharing was the cost, the risk and the knowledge needed."
+    }
+   ]
+  },
+  {
+   "id": "pred-schedule",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Prediction 2: the new plan",
+   "prompt": "In 2016, ITER planned its first plasma for 2025. In 2024 ITER made a new plan. When do you think the new plan starts the first plasma experiments? Justify your choice: how large are delays in big projects you know of?",
+   "justify": true,
+   "reveal": {
+    "after": "theory-schedule"
+   },
+   "choices": [
+    {
+     "text": "Still in 2025, as in the old plan.",
+     "feedback": "The 2024 baseline moved the start: research operation is planned for 2034. Defects, the pandemic and too optimistic schedules made 2025 impossible."
+    },
+    {
+     "text": "In 2027, two years after the old first-plasma date.",
+     "feedback": "The delay is much longer: the 2024 baseline plans research operation in 2034, nine years after the old first-plasma date."
+    },
+    {
+     "text": "In 2034, nine years after the old date.",
+     "correct": true,
+     "feedback": "Right. The 2024 baseline plans the start of research operation in 2034 and $\\text{D–T}$ operation in 2039. It skips the short test plasma of 2025 and starts with a more complete machine."
+    },
+    {
+     "text": "No new date: the project was stopped.",
+     "feedback": "ITER was not stopped. The 2024 baseline gives new dates: research operation in 2034 and $\\text{D–T}$ operation in 2039, and assembly continues."
+    }
+   ]
+  },
+  {
+   "id": "timeline",
+   "stage": "tutki",
+   "type": "interpret",
+   "title": "Investigate 1: forty years in the timeline",
+   "text": "The timeline below shows eight events about ITER. Open and read at least five of the cards (about 10 minutes). For each, make a short note: year, what happened, and whether it shows **cooperation**, **progress** or **a problem**.\n\n<div class=\"fx\" data-fx=\"timeline\" id=\"fx-ip-timeline\" data-src=\"units/fy14/data/timeline.json\"><script type=\"application/json\">{\"eras\": [\"cooperation\"], \"start_era\": \"cooperation\", \"ids\": [\"geneva-summit-1985\", \"iter-name-1987\", \"iter-site-2005\", \"iter-agreement-2006\", \"iter-assembly-2020\", \"iter-baseline-2024\", \"iter-first-module-2025\", \"iter-two-thirds-2026\"], \"intro\": \"Eight events about ITER, from 1985 to 2026. Each card is closed: click its title, or its mark on the strip, to open it.\"}</script></div>",
+   "question": {
+    "type": "explain",
+    "prompt": "From your notes, name two events that show cooperation or progress and two that show problems or delays. Write one sentence for each, with its year.",
+    "model": "Cooperation and progress: In 1985 Gorbachev proposed to Reagan in Geneva that their countries build a fusion experiment together. In 2006 seven Members signed the ITER Agreement in Paris. Problems and delays: The site choice took until 2005 because the partners could not agree between France and Japan. In 2024 ITER presented a new plan with research operation only in 2034, after defects in key components.",
+    "criteria": [
+     "The answer gives four events, each with its year.",
+     "Two events show cooperation or progress and two show problems or delays.",
+     "Each sentence says what happened in the student's own words."
+    ]
+   }
+  },
+  {
+   "id": "theory-why",
+   "stage": "tutki",
+   "type": "theory",
+   "sections": [
+    "Why"
+   ]
+  },
+  {
+   "id": "site",
+   "stage": "tutki",
+   "type": "interpret",
+   "title": "Investigate 2: choosing the site",
+   "text": "**A two-year contest for the site.** Four places were offered for ITER: Clarington in Canada, Vandellòs in Spain, Cadarache in France and Rokkasho in Japan. In November 2003 the European Union chose Cadarache as its one candidate, and in December 2003 the Canadian offer was withdrawn. The same month a meeting of ministers ended in deadlock: the European Union, China and Russia supported Cadarache, while Japan, Korea and the United States supported Rokkasho. The ministers said that both sites were excellent and needed more study.\n\nOnly on **28 June 2005**, at a meeting in Moscow, did the partners agree on Cadarache. Japan, which lost the contest, received compensation: the *Broader Approach* projects in Japan, among them the satellite tokamak JT-60SA and a research facility for fusion materials. The first Director-General of ITER, Kaname Ikeda, was also Japanese.\n\nThe site is at Saint-Paul-lez-Durance, next to the French research centre **CEA Cadarache**, about 75 km north of Marseille. Studies showed that it met the geological, hydrological and seismic requirements and had water, electricity and a strong scientific and industrial environment. As the host, France prepared the 180-hectare site with its 42-hectare platform, opened an international school in Manosque for the staff's children and adapted 104 km of roads, the *ITER Itinerary*, so that the heaviest parts can travel from a Mediterranean port to the site.\n\n<figure class=\"unit-photo\"><img src=\"units/fy14/pics/iter-site-aerial.jpg\" alt=\"Wide-angle aerial colour photograph of the ITER construction site: the round tokamak pit, tall assembly hall and cranes, surrounded by forest.\" width=\"1600\" height=\"1060\" loading=\"lazy\"><figcaption>The ITER construction site at Saint-Paul-lez-Durance in southern France, photographed from a drone in 2017. Construction began in 2010. <span class=\"photo-credit\">Photo: Oak Ridge National Laboratory, CC BY 2.0, via Wikimedia Commons</span></figcaption></figure>",
+   "question": {
+    "type": "choice",
+    "prompt": "What does the contest for the site show about large international projects?",
+    "choices": [
+     {
+      "text": "A technical-looking choice also depends on politics.",
+      "correct": true,
+      "feedback": "Right. Both sites met the requirements. The decision took two years of negotiation, and Japan agreed only with compensation in the Broader Approach."
+     },
+     {
+      "text": "The site was chosen by a test that showed where plasma works best.",
+      "feedback": "Plasma physics is the same in France and in Japan. The sites were compared on geology, water, electricity and industry, and the final choice was a political agreement."
+     },
+     {
+      "text": "Rokkasho lost because it did not meet the technical requirements.",
+      "feedback": "The ministers called both sites excellent. Rokkasho lost a negotiation, not a technical test, and Japan received compensation."
+     },
+     {
+      "text": "The decision was quick, because every partner wanted the same thing.",
+      "feedback": "It took from 2003 to 2005, because the partners were split: three supported Cadarache and three supported Rokkasho."
+     }
+    ]
+   }
+  },
+  {
+   "id": "theory-schedule",
+   "stage": "tutki",
+   "type": "theory",
+   "sections": [
+    "Schedule"
+   ]
+  },
+  {
+   "id": "language-support",
+   "stage": "tutki",
+   "type": "text",
+   "text": "<div class=\"wordbank\"><h4>Word bank</h4><p>host country · Member · to contribute · in kind · a share · to compensate · a contest · a deadlock · to negotiate · a baseline (official plan) · a milestone · a delay · to postpone</p></div>\n\n<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>The host country gains …, but it also has to …</li><li>The other Members gain …</li><li>One advantage of sharing is …</li><li>A disadvantage of sharing is …</li><li>I agree with you, but …</li><li>The evidence suggests that …</li></ul></div>"
+  },
+  {
+   "id": "pair-host",
+   "stage": "tutki",
+   "type": "explain",
+   "title": "Pair discussion: what does the host gain?",
+   "prompt": "Discuss with a partner, using the word bank and the sentence starters. One of you argues for the host country, the other for the other Members. Then write three or four sentences: what does France (and the EU) gain by hosting ITER, and what does it cost them? What do the other Members gain?",
+   "model": "The host country gains jobs, contracts for local industry, international scientists and prestige; in 2005 France expected billions of euros of research money and construction work. But it also has to prepare the site, build roads and a school, and the EU pays the largest share, $45.6\\ \\%$ of the construction costs. The other Members pay only $9.1\\ \\%$ each and still receive all the results and the intellectual property. One disadvantage for them is that the machine and most of the jobs on the site are far from home.",
+   "criteria": [
+    "The answer names at least one gain and one cost for the host.",
+    "The answer names at least one gain for the other Members.",
+    "The answer uses at least one number from the text (a share, a size or a date).",
+    "The answer uses at least three words from the word bank."
+   ]
+  },
+  {
+   "id": "theory-main",
+   "stage": "selita",
+   "type": "theory",
+   "sections": [
+    "Members",
+    "Challenges"
+   ]
+  },
+  {
+   "id": "sort-challenges",
+   "stage": "selita",
+   "type": "text",
+   "title": "Sort the challenges",
+   "text": "<div class=\"fx\" data-fx=\"match\" id=\"fx-ip-challenges\"><script type=\"application/json\">{\"prompt\": \"Sort each problem: is it mainly a technical challenge or an organisational challenge?\", \"options\": [\"technical\", \"organisational\"], \"items\": [{\"text\": \"The welding edges of steel vessel sectors had the wrong shape.\", \"answer\": \"technical\", \"feedback\": \"A part did not have the shape the design needs: an engineering and manufacturing problem.\"}, {\"text\": \"Seven Members must all agree on a new baseline.\", \"answer\": \"organisational\", \"feedback\": \"This is about decisions between partners, not about how a part works.\"}, {\"text\": \"Cooling pipes of the thermal shield had cracks.\", \"answer\": \"technical\", \"feedback\": \"Cracks in a pipe are a materials and manufacturing problem.\"}, {\"text\": \"Seven Domestic Agencies sign their own contracts.\", \"answer\": \"organisational\", \"feedback\": \"Many contracts in many countries must fit one schedule: that is a question of organisation.\"}, {\"text\": \"The magnets must work at 4 K beside a very hot plasma.\", \"answer\": \"technical\", \"feedback\": \"Keeping superconductors cold next to a 150-million-degree plasma is an engineering problem.\"}, {\"text\": \"The United States left the project in 1998.\", \"answer\": \"organisational\", \"feedback\": \"A political decision of one Member: an organisational and political challenge.\"}, {\"text\": \"Huge parts must fit together to within millimetres.\", \"answer\": \"technical\", \"feedback\": \"Precision in making and assembling parts is a technical challenge.\"}, {\"text\": \"Each government decides its own fusion budget.\", \"answer\": \"organisational\", \"feedback\": \"Money depends on seven political systems, not on physics.\"}], \"done\": \"All sorted. Many real problems are both: a technical defect becomes an organisational problem when it changes the shared schedule.\"}</script></div>"
+  },
+  {
+   "id": "back-to-predictions",
+   "stage": "selita",
+   "type": "reflect",
+   "title": "Back to your predictions",
+   "prompt": "Compare your predictions with the text and the timeline. Then answer the opening question in one or two sentences: why do rival countries build one machine together?",
+   "predictions": [
+    "pred-why",
+    "pred-schedule"
+   ]
+  },
+  {
+   "id": "order-story",
+   "stage": "sovella",
+   "type": "text",
+   "title": "Put the story in order",
+   "text": "<div class=\"fx\" data-fx=\"order\" id=\"fx-ip-order\"><script type=\"application/json\">{\"prompt\": \"Put the steps of the ITER story in time order, from the oldest to the newest. The last two are plans.\", \"items\": [\"Gorbachev and Reagan meet in Geneva.\", \"Four partners start the conceptual design.\", \"The partners choose Cadarache in Moscow.\", \"Seven Members sign the ITER Agreement in Paris.\", \"Assembly of the machine begins.\", \"ITER presents a new baseline schedule.\", \"Planned: research operation starts.\", \"Planned: deuterium–tritium operation starts.\"], \"explain\": \"Right: 1985, 1988, 2005, 2006, 2020, 2024, and the plans 2034 and 2039. More than fifty years separate the idea from the first planned $\\\\text{D–T}$ plasma.\", \"hints\": [\"The Cold War summit came first.\", \"The site was chosen before the agreement was signed.\", \"The two plans come last: 2034, then 2039.\"]}</script></div>"
+  },
+  {
+   "id": "find-error",
+   "stage": "sovella",
+   "type": "choice",
+   "title": "Find the errors",
+   "prompt": "A website wrote in 2026: \"France is building ITER, which will produce $500\\ \\text{MW}$ of electricity from 2025.\" What needs to be corrected?",
+   "choices": [
+    {
+     "text": "Three things: builder, electricity and date.",
+     "correct": true,
+     "feedback": "Right. Seven Members build ITER, not France alone. Its $500\\ \\text{MW}$ is fusion power in the plasma, and ITER makes no electricity. And 2025 was the 2016 plan; the 2024 baseline plans research operation in 2034 and $\\text{D–T}$ operation in 2039."
+    },
+    {
+     "text": "Only the date is wrong: 2025 should be 2034.",
+     "feedback": "The date is wrong, but so are two other things: seven Members build ITER, and ITER will not produce electricity. Its $500\\ \\text{MW}$ is planned fusion power."
+    },
+    {
+     "text": "Only one word: electricity should be fusion heat.",
+     "feedback": "That is one error. But ITER is not a French project, and 2025 is an old plan: the 2024 baseline plans research operation in 2034."
+    },
+    {
+     "text": "Nothing: every part of the sentence is correct.",
+     "feedback": "Look again at three claims: who builds ITER (seven Members), what the $500\\ \\text{MW}$ is (fusion power, not electricity) and which plan the date comes from (2016)."
+    }
+   ]
+  },
+  {
+   "id": "write-why",
+   "stage": "sovella",
+   "type": "explain",
+   "title": "Write: why is ITER international?",
+   "prompt": "Write a short paragraph of 60–80 words for your school's science newsletter: *Why is ITER an international project?* Give at least two reasons and one fact with a date or a number.\n\n<div class=\"wordbank\"><h4>Word bank</h4><p>to share the cost · the risk · knowledge · industry · a Member · in kind · peaceful cooperation · the Cold War</p></div>\n\n<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>ITER is international because …</li><li>Another reason is …</li><li>For example, in … </li><li>As a result, …</li></ul></div>",
+   "model": "ITER is international because the machine is too large, too expensive and too risky for one country. It needs new technology from many industries, so seven Members share the work: most of their contribution is parts made in their own factories. Another reason is political. The idea came from the 1985 Geneva summit, when Gorbachev and Reagan looked for peaceful cooperation during the Cold War. As a result, all seven Members receive all the scientific results.",
+   "criteria": [
+    "The paragraph gives at least two different reasons (for example cost and risk, knowledge and industry, politics).",
+    "It includes at least one correct fact with a date or a number.",
+    "It is 60–80 words long and uses linking words (because, another reason, as a result).",
+    "Key terms such as Member or in kind are used correctly."
+   ]
+  },
+  {
+   "id": "misconception",
+   "stage": "sovella",
+   "type": "theory",
+   "sections": [
+    "Yleinen virhekäsitys"
+   ]
+  },
+  {
+   "id": "roleplay",
+   "stage": "sovella",
+   "type": "explain",
+   "title": "Role-play: Moscow, June 2005",
+   "optional": true,
+   "prompt": "Groups of four: two of you speak for the European Union (Cadarache), two for Japan (Rokkasho). Prepare for five minutes, then negotiate for five minutes: why should the machine be built at your site, and what would you accept if it is not? Afterwards, write two sentences: what did your group agree, and was it close to what really happened?\n\n<div class=\"wordbank\"><h4>Word bank</h4><p>we propose · in return · we cannot accept · a compromise · compensation · both sides</p></div>\n\n<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>We propose that …</li><li>In return, we would accept …</li><li>We cannot accept …, because …</li><li>A fair compromise would be …</li></ul></div>",
+   "model": "Our group agreed to build ITER at Cadarache, and in return Japan would host research projects and have the first Director-General. This was close to the real outcome of 28 June 2005, when Japan received the Broader Approach projects, such as JT-60SA, after it accepted Cadarache.",
+   "criteria": [
+    "The answer states what the group agreed.",
+    "It compares the result with the real decision of 2005 (Cadarache, compensation for Japan).",
+    "It uses at least two negotiation phrases from the word bank."
+   ]
+  },
+  {
+   "id": "check-1",
+   "stage": "tarkista",
+   "type": "choice",
+   "title": "1. How ITER is paid for",
+   "prompt": "Which statement about how the Members pay for ITER is correct?",
+   "choices": [
+    {
+     "text": "Mostly as parts made by their own industry.",
+     "correct": true,
+     "feedback": "Right. About nine-tenths of the contributions are finished components, systems or buildings, ordered by each Member's Domestic Agency from its own industry."
+    },
+    {
+     "text": "France pays most, because the machine is in France.",
+     "feedback": "The host is the European Union as a whole, which pays $45.6\\ \\%$ of the construction costs. France has extra host duties, such as the site, the roads and the school."
+    },
+    {
+     "text": "All seven Members pay equal shares in money.",
+     "feedback": "The shares are not equal: the EU pays $45.6\\ \\%$ and the others $9.1\\ \\%$ each. And most of it is paid in kind, as machine parts."
+    },
+    {
+     "text": "ITER sells its electricity to pay for itself.",
+     "feedback": "ITER is an experiment and produces no electricity. The Members pay for it, mostly in kind."
+    }
+   ]
+  },
+  {
+   "id": "check-2",
+   "stage": "tarkista",
+   "type": "choice",
+   "title": "2. The site",
+   "prompt": "Why did choosing the site of ITER take from 2003 to 2005?",
+   "choices": [
+    {
+     "text": "No site met the seismic and water rules before 2005.",
+     "feedback": "Both Cadarache and Rokkasho met the requirements; the ministers even called them both excellent. The delay was political."
+    },
+    {
+     "text": "The partners were split between two excellent sites.",
+     "correct": true,
+     "feedback": "Right. The EU, China and Russia supported Cadarache; Japan, Korea and the United States supported Rokkasho. The deadlock ended in Moscow on 28 June 2005, with compensation for Japan."
+    },
+    {
+     "text": "The partners waited for JET's results before choosing.",
+     "feedback": "JET's main results came in the 1990s. The site choice was slow because the partners were split between France and Japan."
+    },
+    {
+     "text": "France at first refused to host a nuclear installation.",
+     "feedback": "France and the EU wanted ITER and proposed Cadarache. The problem was that Japan wanted it too."
+    }
+   ]
+  },
+  {
+   "id": "check-3",
+   "stage": "tarkista",
+   "type": "choice",
+   "title": "3. Reading a date",
+   "prompt": "In November 2026 a student writes: \"ITER will start deuterium–tritium operation in 2035.\" What is the problem?",
+   "choices": [
+    {
+     "text": "It is the 2016 plan; the 2024 baseline plans 2039.",
+     "correct": true,
+     "feedback": "Right. 2035 was the $\\text{D–T}$ date of the 2016 baseline. The 2024 baseline moved it to 2039. A text should say which plan, and of which year, it quotes."
+    },
+    {
+     "text": "Nothing: 2035 is still the planned date.",
+     "feedback": "In the 2024 baseline, 2035 is the start of deuterium–deuterium operation. Deuterium–tritium operation is planned for 2039."
+    },
+    {
+     "text": "$\\text{D–T}$ operation already began with first plasma in 2025.",
+     "feedback": "There was no first plasma in 2025: the 2024 baseline replaced it with research operation in 2034. $\\text{D–T}$ operation is planned for 2039."
+    },
+    {
+     "text": "ITER will use only deuterium, never tritium.",
+     "feedback": "ITER's main goal needs deuterium–tritium fuel. $\\text{D–T}$ operation is planned for 2039 in the 2024 baseline."
+    }
+   ]
+  },
+  {
+   "id": "check-explain",
+   "stage": "tarkista",
+   "type": "explain",
+   "title": "4. The big question",
+   "prompt": "Can the world's largest fusion collaboration succeed? Write four to six sentences: one argument that it can, one argument that it may not, and your own conclusion. Use at least one dated fact, and say which facts are plans.\n\n<div class=\"wordbank\"><h4>Word bank</h4><p>to succeed · a goal · a delay · progress · a plan · a result · uncertain · to depend on</p></div>\n\n<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>One reason to think ITER can succeed is …</li><li>On the other hand, …</li><li>This is a plan, not a result: …</li><li>In my view, …, because …</li></ul></div>",
+   "model": "One reason to think ITER can succeed is that assembly is now advancing: in July 2026 the sixth of nine vacuum vessel modules was placed in the pit, about six months ahead of the new schedule. Seven Members have stayed together for twenty years. On the other hand, the project has been delayed many times, and the 2024 baseline moved $\\text{D–T}$ operation from 2035 to 2039. These dates are plans, not results. In my view ITER can reach its scientific goals, but success depends on whether the Members keep paying and the repaired parts work.",
+   "criteria": [
+    "The answer gives one argument for and one against.",
+    "It uses at least one correct fact with a date.",
+    "It says clearly that future dates are plans, not results.",
+    "It ends with the student's own conclusion and a reason."
+   ]
+  },
+  {
+   "id": "summary",
+   "stage": "tarkista",
+   "type": "theory",
+   "sections": [
+    "Tiivistelmä"
+   ]
+  },
+  {
+   "id": "french-corner",
+   "stage": "tarkista",
+   "type": "text",
+   "text": "<div class=\"french-corner\"><h4>Le coin français</h4><p>ITER is built in the <span lang=\"fr\">région Provence-Alpes-Côte d'Azur</span>. Many people on the site speak English at work, but in the village, the shops and the school you hear French. Listen, repeat, and say the last sentence to your partner.</p></div>\n\n<div class=\"fx\" data-fx=\"say\" id=\"fx-ip-french\"><script type=\"application/json\">{\"lang\": \"fr-FR\", \"title\": \"Le coin français: the ITER site\", \"phrases\": [{\"fr\": \"le site d'ITER\", \"en\": \"the ITER site\", \"tip\": \"*luh SEET dee-TAIR*: the *i* is short and clear, like the Finnish *i*.\"}, {\"fr\": \"la coopération internationale\", \"en\": \"international cooperation\", \"tip\": \"*ko-o-pay-ra-SYON*: *-tion* is said *syon*, and the final *on* is nasal (no *n* sound).\"}, {\"fr\": \"les pays membres\", \"en\": \"the member countries\", \"tip\": \"*lay pay-EE MAHN-bruh*: *pays* has two syllables.\"}, {\"fr\": \"Saint-Paul-lez-Durance\", \"en\": \"the village where ITER is built\", \"tip\": \"*san-pol-lay-dew-RAHNSS*: the *u* of *Durance* is like the Finnish *y*.\"}, {\"fr\": \"Nous construisons ITER ensemble.\", \"en\": \"We are building ITER together.\", \"tip\": \"*ensemble* = together: *ahn-SAHM-bluh*.\"}]}</script></div>"
+  }
+ ]
+}

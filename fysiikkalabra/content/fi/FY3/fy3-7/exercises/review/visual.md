@@ -1,18 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 378e4d7ef17c1e99
+CONTENT-HASH: 8b0e2df23d46ded5
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] L1-05 melting-curve graph — the x tick numbers (40 … 320) are tight under 20-kJ gridlines; label every second tick with more room, or widen the figure.
-- [Minor] L3-01 Järkevyys chain — the unit sits on the fraction row and again on the result (`frac °C ≈ 21 °C`); the overlap is gone, but writing the unit once on the result would read cleaner.
-- [Minor] solutions L3-01 Annettu — a line starts with "; ei lämpöhäviöitä" after "0 °C"; rephrase so the semicolon does not open a line.
-- [Minor] tarkista captures — a selected wrong option is drawn in the green "correct" tint with red feedback below; use a neutral tint for a selected, unmarked answer (project style, for the teacher).
+- [Minor] L1-05 melting-curve graph — x tick numbers (40 … 320) tight under 20-kJ gridlines; label every second tick or widen.
+- [Minor] L3-01 Järkevyys — unit sits both on the fraction row and on the result ("frac °C ≈ 21 °C"); write it once on the result.
+- [Minor] Selected wrong option in tarkista drawn in the green "correct" tint (project style, for the teacher) — neutral tint.
+- [Minor] New "$0\,{}^\circ\text{C}$:n lämpöinen" phrasing is correct but repeated in nearly every task; acceptable, vary only where it reads heavy ("0-asteinen" is gone by design).
 
 ## Checked
-- Round 1: stage-exercises-390, open-exercises-1280-1 and -5 (L1 solution, L1-05 graph), open-exercises-L2-1280-2, open-exercises-L3-1280-1.
-- Round 1 blocker (°C over ≈ in L3-01 Järkevyys) re-checked in the re-taken open-exercises-L3-1280-2 (17:52): the row now renders cleanly, "frac °C ≈ 21 °C", no overlap; the other calculation rows on that capture (T = frac °C = 9,68 °C, aligned Sijoitus rows) are intact.
-- Exercise wording read in Finnish: situation then question, clear units, case endings right.
+- Delta (numbers with units set as inline LaTeX, "…:n lämpöiseksi/-istä" case endings): open-exercises-1280-1 (L1-01 text, solution Periaate/Sijoitus), open-exercises-L3-1280-2 (L3-01 Järkevyys chain and exercise 2 start), open-exercises-L3-1280-4 (L3 vaporisation task with "10,0 min:ssa", "100 °C:n lämpöistä", stacked-fraction chain).
+- Case endings after maths read naturally; no clipping, spacing between consecutive fraction rows clean, layout intact.
 
 ## Scores
 illustrations 4 · typography 4 · Finnish 5 · accessibility 4

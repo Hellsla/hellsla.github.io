@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: dfb2320915a10bf1
+CONTENT-HASH: 7af079e6fca22cc3
 
 ## Blocking
-(none left; see Fixed)
+(none)
 
 ## Fixed
-- solutions.md (fy3-15-L1-04) — "three-digit precision" → "three significant figures".
+- solutions.md L3-01 Reasonableness: garbled clause "electricity is good for anything but district heating only for heating" -> "electricity can be used for anything, but district heat only for heating" (matches the Finnish).
 
 ## Polish
 - None.
 
 ## Checked
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): compared exercises.json and solutions.md with the Finnish for meaning, sign/causality, quantities, units, numbers in prose, formulas, chapter titles (courses.json), solution steps and step labels. No physics changed, added or lost.
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked exercises.json and solutions.md against the new Finnish.
+- Translation review against the reviewed Finnish (teacher's procedure 2026-10-28), after the typesetting round: exercises.json (answers, units, tolerances, figure id) and solutions.md compared with content/fi; every number in all 12 texts and solutions matches by script; recomputed L1-01 90.2 %, L2-01 109 MW, L2-04 7.16 t/s, L3-01 206 MW / 67.6 %, L3-02 13.6 kt, L3-03 87.7 kWh. Values with units set as inline LaTeX like the Finnish; no Finnish words left.

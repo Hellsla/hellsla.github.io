@@ -6,7 +6,7 @@
 **Muunnokset:** Voima on newtoneina ja matka metreinä. Siksi tulo on suoraan jouleina ($1\,\text{J} = 1\,\text{N}\cdot\text{m}$). Lopuksi muunnetaan kilojouleiksi: $1\,\text{kJ} = 1000\,\text{J}$.
 **Sijoitus:** $W = 80\,\text{N} \cdot 25\,\text{m} = 2000\,\text{J} = 2{,}000\,\text{kJ}$
 **Vastaus:** $2{,}0\,\text{kJ}$. Vastauksessa on kaksi merkitsevää numeroa, kuten annetuissa arvoissa $80\,\text{N}$ ja $25\,\text{m}$.
-**Järkevyys:** Karkea arvio: $80\,\text{N} \approx 8\,\text{kg}$:n paino, ja $8\,\text{kg}\cdot 10\,\tfrac{\text{m}}{\text{s}^2}\cdot 25\,\text{m} = 2000\,\text{J}$. Sama työ nostaisi $20\,\text{kg}$:n kappaleen noin $10\,\text{m}$:n korkeuteen ($20\,\text{kg}\cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2}\cdot 10\,\text{m} \approx 2{,}0\,\text{kJ}$). $W$ on positiivinen, koska voima on liikkeen suuntainen.
+**Järkevyys:** Karkea arvio: $80\,\text{N} \approx 8\,\text{kg}$:n paino, ja $8\,\text{kg}\cdot 10\,\tfrac{\text{m}}{\text{s}^2}\cdot 25\,\text{m} = 2000\,\text{J}$. Sama työ nostaisi $20\,\text{kg}$:n kappaleen noin $10\,\text{m}$:n korkeuteen: $20\,\text{kg}\cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2}\cdot 10\,\text{m} \approx 2{,}0\,\text{kJ}$. $W$ on positiivinen, koska voima on liikkeen suuntainen.
 
 ## fy3-2-L1-02
 **Annettu:** paino $G = 150\,\text{N}$, nostokorkeus $h = 1{,}2\,\text{m}$, nosto hidas
@@ -26,7 +26,7 @@
 **Muunnokset:** $36\,\text{kJ} = 36 \cdot 1000\,\text{J} = 36\,000\,\text{J}$. Silloin tulos tulee watteina ($1\,\text{W} = 1\,\text{J/s}$). Lopuksi muunnetaan kilowateiksi: $1\,\text{kW} = 1000\,\text{W}$.
 **Sijoitus:** $P = \dfrac{36\,000\,\text{J}}{12\,\text{s}} = 3000\,\text{W} = 3{,}000\,\text{kW}$
 **Vastaus:** $3{,}0\,\text{kW}$. Vastauksessa on kaksi merkitsevää numeroa, kuten ajassa $12\,\text{s}$.
-**Järkevyys:** Kilojoule jaettuna sekunnilla antaa suoraan kilowatin: $\tfrac{36\,\text{kJ}}{12\,\text{s}} = 3\,\tfrac{\text{kJ}}{\text{s}} = 3\,\text{kW}$. Tällä teholla voisi nostaa noin $300\,\text{kg}$:n kuorman tasaisesti metrin sekunnissa ($300\,\text{kg}\cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2}\cdot 1\,\tfrac{\text{m}}{\text{s}} \approx 2{,}9\,\text{kW}$). Tämä sopii hissin moottorille.
+**Järkevyys:** Kilojoule jaettuna sekunnilla antaa suoraan kilowatin: $\tfrac{36\,\text{kJ}}{12\,\text{s}} = 3\,\tfrac{\text{kJ}}{\text{s}} = 3\,\text{kW}$. Tällä teholla voisi nostaa noin $300\,\text{kg}$:n kuorman tasaisesti metrin sekunnissa: $300\,\text{kg}\cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2}\cdot 1\,\tfrac{\text{m}}{\text{s}} \approx 2{,}9\,\text{kW}$. Tämä sopii hissin moottorille.
 
 ## fy3-2-L1-04
 **Annettu:** kuvaajasta luettuna voima $F_1 = 25\,\text{N}$ matkalla $0\ldots 6\,\text{m}$ ja $F_2 = 10\,\text{N}$ matkalla $6\ldots 10\,\text{m}$. Voima on liikkeen suuntainen.
@@ -67,7 +67,7 @@
 **Muunnokset:** $1{,}5\,\text{kW} = 1500\,\text{W}$ ja $4{,}0\,\text{min} = 4{,}0 \cdot 60\,\text{s} = 240\,\text{s}$. Silloin työ tulee jouleina. Lopuksi muunnetaan kilojouleiksi: $1\,\text{kJ} = 1000\,\text{J}$.
 **Sijoitus:** $W = 1500\,\text{W} \cdot 240\,\text{s} = 360\,000\,\text{J} = 360\,\text{kJ}$
 **Vastaus:** $360\,\text{kJ}$. Vastauksessa on kaksi merkitsevää numeroa, kuten tehossa $1{,}5\,\text{kW}$ ja ajassa $4{,}0\,\text{min}$.
-**Järkevyys:** Lasketaan toisella tavalla: $1{,}5\,\text{kW} \cdot \tfrac{4}{60}\,\text{h} = 0{,}10\,\text{kWh}$. Lisäksi $1\,\text{kWh} = 3600\,\text{kJ}$, joten $0{,}10 \cdot 3600\,\text{kJ} = 360\,\text{kJ}$. Tällä työllä voisi nostaa $1000\,\text{kg}$ vettä noin $37\,\text{m}$:n korkeuteen ($\tfrac{360\,000\,\text{J}}{1000\,\text{kg}\cdot 9{,}81\,\text{m/s}^2} \approx 37\,\text{m}$).
+**Järkevyys:** Lasketaan toisella tavalla: $1{,}5\,\text{kW} \cdot \tfrac{4}{60}\,\text{h} = 0{,}10\,\text{kWh}$. Lisäksi $1\,\text{kWh} = 3600\,\text{kJ}$, joten $0{,}10 \cdot 3600\,\text{kJ} = 360\,\text{kJ}$. Tällä työllä voisi nostaa $1000\,\text{kg}$ vettä noin $37\,\text{m}$:n korkeuteen: $\tfrac{360\,000\,\text{J}}{1000\,\text{kg}\cdot 9{,}81\,\text{m/s}^2} \approx 37\,\text{m}$.
 
 ## fy3-2-L2-03
 **Annettu:** massa $m = 850\,\text{kg}$, nostokorkeus $h = 30\,\text{m}$, nosto hidas, $g = 9{,}81\,\text{m/s}^2$

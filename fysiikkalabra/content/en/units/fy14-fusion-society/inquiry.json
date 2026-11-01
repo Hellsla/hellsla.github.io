@@ -1,0 +1,436 @@
+{
+ "version": 1,
+ "contribution": "The first unit of chapter 8 places fusion in the real energy system: world energy and electricity data (2025), variable and firm power, the fuel and waste of fusion compared with fission, tritium breeding, and a sorting task that separates established results, institutional plans and corporate claims, each dated.",
+ "learn": [
+  "compare fusion with fission and with renewable energy as parts of an energy system.",
+  "calculate the energy per kilogram of fusion fuel and the tritium a power plant burns.",
+  "distinguish established results from institutional plans and corporate claims."
+ ],
+ "prior": [
+  "D–T fusion releases $17.6\\ \\text{MeV}$, of which $3.5\\ \\text{MeV}$ goes to the helium nucleus and $14.1\\ \\text{MeV}$ to the neutron (chapter *Fusion reactions: from the Sun to deuterium and tritium*)",
+  "The fusion gain $Q$ compares fusion power with heating power, not with electricity (chapter *Inside ITER: the machine and fusion gain*)"
+ ],
+ "activities": [
+  {
+   "id": "hook",
+   "stage": "herata",
+   "type": "hook",
+   "text": "Every few months a headline says that fusion has made a *breakthrough*. Laboratories report new records, governments announce power plants for the 2040s, and companies promise electricity even sooner. At the same time, the world needs to cut its carbon dioxide emissions now, and wind and solar power are growing fast.",
+   "question": "If fusion is so powerful, why can nobody tell you the year when it will power your home?"
+  },
+  {
+   "id": "review",
+   "stage": "herata",
+   "type": "choice",
+   "title": "Review: what Q means",
+   "prompt": "In the chapter *Inside ITER: the machine and fusion gain*, you met the fusion gain $Q = P_\\text{fusion} / P_\\text{heating}$. ITER aims for $Q = 10$. What does this mean?",
+   "choices": [
+    {
+     "text": "The plasma gives ten times the heating power it receives.",
+     "correct": true,
+     "feedback": "Right. ITER aims for $500\\ \\text{MW}$ of fusion power from $50\\ \\text{MW}$ of heating. $Q$ says nothing about electricity: today you will see why that matters for the energy system."
+    },
+    {
+     "text": "The plant sends ten times its own electricity use to the grid.",
+     "feedback": "That would be an *engineering* gain. $Q$ compares fusion power with heating power only. ITER will not produce electricity at all: its heat is released, not turned into power."
+    },
+    {
+     "text": "ITER will make $500\\ \\text{MW}$ of electricity from $50\\ \\text{MW}$.",
+     "feedback": "The $500\\ \\text{MW}$ is heat from fusion, and the $50\\ \\text{MW}$ is heating power into the plasma. Running ITER takes over $300\\ \\text{MW}$ of electricity, and it makes none."
+    },
+    {
+     "text": "The plasma stays hot ten times longer than in earlier machines.",
+     "feedback": "$Q$ is a ratio of two powers, not of two times. A long pulse is a different goal: WEST and EAST hold records for duration."
+    }
+   ]
+  },
+  {
+   "id": "hook-help",
+   "stage": "herata",
+   "type": "text",
+   "text": "<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>I think fusion is still not used because …</li><li>One problem could be …</li><li>I have read / heard that …, but I am not sure if …</li><li>Maybe the difference between … and … is important.</li></ul></div>"
+  },
+  {
+   "id": "hook-discuss",
+   "stage": "herata",
+   "type": "explain",
+   "title": "Think about it: when will fusion arrive?",
+   "pair": "Pair work: share your ideas aloud first, then each of you writes your own answer.",
+   "prompt": "Discuss the opening question with a partner. List two or three reasons why nobody can give a reliable year for fusion electricity. Write two or three sentences. It is fine to be unsure: you will test your ideas today.",
+   "model": "I think nobody can give a year because no fusion machine has yet produced electricity, so we do not know how long the engineering will take. One problem could be the fuel: tritium is rare and radioactive. Another reason may be money: fusion machines are very expensive, and their costs and schedules have grown before. Maybe it is also important who says the year: a company that needs investors may be more optimistic than a laboratory.",
+   "criteria": [
+    "The answer gives at least two different reasons (for example engineering, fuel, cost, time).",
+    "The answer separates what has already happened from what is hoped for.",
+    "The answer uses a sentence starter or a clear *because*."
+   ]
+  },
+  {
+   "id": "pred-fuel",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Prediction 1: how much fuel?",
+   "prompt": "In its final experiments in 2023, the JET tokamak in the UK released $69\\ \\text{MJ}$ of heat from fusion in one pulse of about six seconds. That is about the energy released when $1.5\\ \\text{kg}$ of petrol burns. How much fusion fuel (deuterium and tritium) did this pulse use up?",
+   "justify": true,
+   "reveal": {
+    "after": "theory-main"
+   },
+   "choices": [
+    {
+     "text": "About $0.2\\ \\text{mg}$ (milligrams)",
+     "correct": true,
+     "feedback": "Right: EUROfusion reports $0.21\\ \\text{mg}$ of fuel for $69.26\\ \\text{MJ}$. That is about $3.3 \\cdot 10^{14}\\ \\text{J}$ per kilogram, millions of times more than any chemical fuel, because a nuclear reaction releases millions of electronvolts instead of a few."
+    },
+    {
+     "text": "About $0.2\\ \\text{g}$ (grams)",
+     "feedback": "A thousand times too much. JET used $0.21\\ \\text{mg}$. A nuclear reaction releases about $17.6\\ \\text{MeV}$, millions of times the few electronvolts of a chemical reaction, so a tiny mass is enough."
+    },
+    {
+     "text": "About $20\\ \\text{g}$ (grams)",
+     "feedback": "This would be about a hundred thousand times the real amount, $0.21\\ \\text{mg}$. Compare the energy of one reaction: $17.6\\ \\text{MeV}$ in fusion, a few $\\text{eV}$ when one molecule burns."
+    },
+    {
+     "text": "About $1.5\\ \\text{kg}$ (kilograms)",
+     "feedback": "That would mean fusion releases no more energy per kilogram than petrol. In fact JET used only $0.21\\ \\text{mg}$: fusion fuel holds millions of times more energy per kilogram."
+    }
+   ]
+  },
+  {
+   "id": "pred-waste",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Prediction 2: what is radioactive?",
+   "prompt": "A fission power plant and a D–T fusion power plant both produce some radioactive material. What will be the main radioactive waste of a fusion power plant? Remember *Inside ITER*, or reason from the neutron.",
+   "justify": true,
+   "reveal": {
+    "after": "theory-main"
+   },
+   "choices": [
+    {
+     "text": "Its steel and other parts, made radioactive by neutrons",
+     "correct": true,
+     "feedback": "Right. The fast $14.1\\ \\text{MeV}$ neutrons activate the materials around the plasma. This gives low- and intermediate-level waste whose activity fades mostly within about 100 years. Tritium, also radioactive, is kept inside the fuel cycle."
+    },
+    {
+     "text": "Spent fuel that stays highly radioactive for millennia",
+     "feedback": "That describes fission: its spent fuel holds long-lived fission products. The product of D–T fusion is helium, so there is no long-lived high-level waste from the fuel. The waste comes from the machine, activated by neutrons."
+    },
+    {
+     "text": "The helium that fusion produces, which is radioactive",
+     "feedback": "Helium-4 is a stable, harmless gas. The radioactive materials in a fusion plant are tritium and the parts of the machine that neutrons have activated."
+    },
+    {
+     "text": "None: fusion does not make radioactive material",
+     "feedback": "This is a common myth. Tritium is radioactive (half-life $12.3$ years), and fast neutrons make the steel of the machine radioactive. The waste is shorter-lived than fission waste, not absent."
+    }
+   ]
+  },
+  {
+   "id": "theory-energy",
+   "stage": "tutki",
+   "type": "theory",
+   "sections": [
+    "Energy"
+   ]
+  },
+  {
+   "id": "grid-data",
+   "stage": "tutki",
+   "type": "interpret",
+   "title": "Where did the world's electricity come from in 2025?",
+   "source": "statistics",
+   "source_note": "Ember, Global Electricity Review 2026 and Ember world data (shares of 2025, read 2026-11-01); the row *other* is the remainder computed from the listed shares.",
+   "text": "| Source | Share in 2025 | Low-carbon? | Weather-dependent? |\n| --- | --- | --- | --- |\n| coal | $33.0\\ \\%$ | no | no |\n| gas | $21.8\\ \\%$ | no | no |\n| hydro | $14\\ \\%$ | yes | partly (rain) |\n| nuclear (fission) | $8.9\\ \\%$ | yes | no |\n| solar | $8.7\\ \\%$ | yes | yes |\n| wind | $8.5\\ \\%$ | yes | yes |\n| other¹ | $5.1\\ \\%$ | mixed | no |\n| fusion | $0\\ \\%$ | yes | no |\n\n¹ Bioenergy, oil and other sources: the remainder of the listed shares. Ember gives hydro only to the nearest per cent.",
+   "question": {
+    "type": "choice",
+    "prompt": "Wind and solar vary with the weather and the time of day. About what share of the world's electricity did they give together in 2025?",
+    "choices": [
+     {
+      "text": "About one sixth",
+      "correct": true,
+      "feedback": "Right: $8.7\\ \\% + 8.5\\ \\% = 17.2\\ \\%$, about one sixth (Ember reports $17.3\\ \\%$ from unrounded data). Both grew fast, so a grid needs more storage and firm power to balance them."
+     },
+     {
+      "text": "About one third",
+      "feedback": "One third, $33\\ \\%$, is the share of coal alone, or of all renewables together. Wind and solar are $8.7\\ \\% + 8.5\\ \\% = 17.2\\ \\%$."
+     },
+     {
+      "text": "About one half",
+      "feedback": "Add only the two weather-dependent rows: $8.7\\ \\% + 8.5\\ \\% = 17.2\\ \\%$. Even all low-carbon sources together were $43\\ \\%$, less than half."
+     },
+     {
+      "text": "About one twentieth",
+      "feedback": "One twentieth is $5\\ \\%$, much less than one of the two alone. Together: $8.7\\ \\% + 8.5\\ \\% = 17.2\\ \\%$."
+     }
+    ]
+   }
+  },
+  {
+   "id": "grid-help",
+   "stage": "tutki",
+   "type": "text",
+   "text": "<div class=\"wordbank\"><h4>Word bank</h4><p>demand · supply · dispatchable · variable · firm power · storage · grid · low-carbon · fossil fuel · to balance · to replace · to complement · in addition to</p></div>\n\n<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>The table shows that …</li><li>Wind and solar are useful because …, but …</li><li>A fusion plant could complement … because …</li><li>A limitation of fusion is …</li><li>Fusion cannot help before … because …</li></ul></div>"
+  },
+  {
+   "id": "grid-discuss",
+   "stage": "tutki",
+   "type": "explain",
+   "title": "Discuss: what could fusion add?",
+   "pair": "Pair work: one of you argues for a role for fusion, the other looks for problems; then each of you writes.",
+   "prompt": "Discuss with a partner, then write four or five sentences. Use at least one number from the table. What kind of power does a grid with a lot of wind and solar need? What could a fusion power plant add, and why can it not help with today's emissions?",
+   "model": "The table shows that coal and gas still gave more than half of the world's electricity in 2025, while wind and solar gave about one sixth, $17.2\\ \\%$. Wind and solar are useful because they are low-carbon, but their output depends on the weather, so the grid also needs storage and firm power. A fusion plant could complement them, because it would be low-carbon and could run whatever the weather, like a fission plant. A limitation of fusion is that no fusion plant has produced electricity yet, and the UK's public prototype STEP targets 2040, so climate plans for 2030 cannot count on it.",
+   "criteria": [
+    "The answer uses a number from the table correctly.",
+    "The answer explains the difference between variable and firm (or dispatchable) power.",
+    "The answer gives a possible role for fusion and one limitation, such as timing or the lack of any working plant.",
+    "The answer uses at least two words from the word bank."
+   ]
+  },
+  {
+   "id": "theory-claims",
+   "stage": "tutki",
+   "type": "theory",
+   "sections": [
+    "Claims",
+    "Uncertain"
+   ]
+  },
+  {
+   "id": "sort",
+   "stage": "tutki",
+   "type": "text",
+   "title": "Evaluate: result, plan or claim?",
+   "text": "All nine statements were really reported or announced; decide what kind of statement each one is.\n\n<div class=\"fx\" data-fx=\"match\" id=\"fx-fs-sort\"><script type=\"application/json\">{\"prompt\": \"Sort each statement: is it an established result, an institutional plan or a corporate claim? The date in brackets says when the statement was made or the event happened.\", \"options\": [\"established result\", \"institutional plan\", \"corporate claim\"], \"items\": [{\"text\": \"On 5 December 2022, the National Ignition Facility (NIF) released $3.15\\\\ \\\\text{MJ}$ from a fuel target hit by $2.05\\\\ \\\\text{MJ}$ of laser light.\", \"answer\": \"established result\", \"feedback\": \"This happened and was measured. It is a result reported by a national laboratory (Lawrence Livermore) and repeated in later shots. Check the meaning: the gain compares fusion energy with laser light, not with the electricity used.\"}, {\"text\": \"JET released $69\\\\ \\\\text{MJ}$ of fusion heat in a single pulse (experiment in autumn 2023, reported by EUROfusion in February 2024).\", \"answer\": \"established result\", \"feedback\": \"A measured event in a public research programme, so it is a result. The future tense is missing: nothing here is promised.\"}, {\"text\": \"The WEST tokamak in France held a plasma for $1337\\\\ \\\\text{s}$ (12 February 2025).\", \"answer\": \"established result\", \"feedback\": \"A measured record of a public laboratory (CEA). A record is a result, even if a later machine beats it.\"}, {\"text\": \"Tritium decays to helium-3 with a half-life of $12.3$ years (measured many times).\", \"answer\": \"established result\", \"feedback\": \"A well-tested measurement of nuclear physics, as established as a result can be.\"}, {\"text\": \"ITER's baseline (2024): deuterium–tritium operation will start in 2039.\", \"answer\": \"institutional plan\", \"feedback\": \"This is an intergovernmental organisation's schedule. It is a plan, and it has changed before: an earlier plan had first plasma in 2025.\"}, {\"text\": \"The UK government (June 2025): the STEP prototype plant at West Burton targets first operations in 2040.\", \"answer\": \"institutional plan\", \"feedback\": \"A government programme with public money: an institutional plan. The word *targets* shows that it is about the future.\"}, {\"text\": \"Helion Energy (2023): it will supply Microsoft with $50\\\\ \\\\text{MW}$ of fusion electricity from 2028.\", \"answer\": \"corporate claim\", \"feedback\": \"A private company's announcement. Helion had also aimed to show net electricity in 2024, and that goal was not met. A claim is not evidence until it happens.\"}, {\"text\": \"Commonwealth Fusion Systems (as of 2026): SPARC will make its first plasma in 2027 and reach a gain above 1 soon after.\", \"answer\": \"corporate claim\", \"feedback\": \"A company's goal for its own machine. It may well happen, but today it is a claim about the future, not a result.\"}, {\"text\": \"Fusion Industry Association survey (July 2026): $71\\\\ \\\\%$ of fusion companies expect to deliver power to the grid by the 2030s.\", \"answer\": \"corporate claim\", \"feedback\": \"The survey itself is real, but what it reports are the companies' own expectations. Many expectations do not make a result.\"}], \"done\": \"All sorted. Notice the signal words: results use the past tense and numbers that were measured; plans and claims use will, aims, targets and expects.\"}</script></div>"
+  },
+  {
+   "id": "sort-help",
+   "stage": "tutki",
+   "type": "text",
+   "text": "<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>… is an established result, because it has already …</li><li>… is only a plan, because the words … show that …</li><li>This is a corporate claim: the company …</li><li>I was not sure about …, because …</li><li>The date matters here because …</li></ul></div>"
+  },
+  {
+   "id": "sort-explain",
+   "stage": "tutki",
+   "type": "explain",
+   "title": "Justify two of your choices",
+   "pair": "Pair work: compare your sorting with a partner and talk about any statement you sorted differently.",
+   "prompt": "Discuss with a partner, then write three or four sentences. Choose one statement you found easy and one you found difficult to sort. For each one, explain which words or facts decided the category. Why does the date of a statement matter?",
+   "model": "The NIF statement is an established result, because it has already happened: the energies were measured on 5 December 2022 by a national laboratory. The survey of fusion companies was harder, because the survey itself is real, but it only reports what the companies expect. So it is a corporate claim: the words *expect* and *by the 2030s* show that it is about the future. The date matters because plans change; ITER's schedule has moved several times.",
+   "criteria": [
+    "The answer names a signal for a result (past event, measured numbers, a laboratory or a check by others).",
+    "The answer names a signal for a plan or a claim (future tense, words such as *will*, *aims*, *targets*, *expects*, a company as the source).",
+    "The answer explains why the date of a statement matters.",
+    "The answer uses a sentence starter or a clear *because*."
+   ]
+  },
+  {
+   "id": "theory-main",
+   "stage": "selita",
+   "type": "theory",
+   "sections": [
+    "Ydinajatus",
+    "Fuel",
+    "Compare"
+   ]
+  },
+  {
+   "id": "vocabulary",
+   "stage": "selita",
+   "type": "text",
+   "title": "Words of the lesson",
+   "text": "Check the key words of the lesson.\n\n<div class=\"fx\" data-fx=\"match\" id=\"fx-fs-words\"><script type=\"application/json\">{\"prompt\": \"Match each word with its meaning.\", \"options\": [\"radioactive hydrogen-3\", \"lithium layer that makes tritium\", \"made radioactive by neutrons\", \"can be turned up or down\", \"output depends on the weather\", \"time for half the nuclei to decay\"], \"items\": [{\"text\": \"tritium\", \"answer\": \"radioactive hydrogen-3\", \"feedback\": \"Tritium ($^{3}_{1}\\\\text{H}$) has one proton and two neutrons; it decays by beta decay.\"}, {\"text\": \"breeding blanket\", \"answer\": \"lithium layer that makes tritium\", \"feedback\": \"To *breed* means to produce new ones: a neutron and lithium-6 give a new tritium nucleus.\"}, {\"text\": \"neutron activation\", \"answer\": \"made radioactive by neutrons\", \"feedback\": \"A nucleus that absorbs a neutron can become unstable, so the steel of the machine becomes radioactive.\"}, {\"text\": \"dispatchable\", \"answer\": \"can be turned up or down\", \"feedback\": \"To *dispatch* means to send out when needed: gas, hydro and nuclear plants can follow demand.\"}, {\"text\": \"variable source\", \"answer\": \"output depends on the weather\", \"feedback\": \"Wind and solar power vary with the weather and the time of day.\"}, {\"text\": \"half-life\", \"answer\": \"time for half the nuclei to decay\", \"feedback\": \"After one half-life ($12.3$ years for tritium) half of the nuclei are left, after two a quarter.\"}]}</script></div>"
+  },
+  {
+   "id": "back-to-predictions",
+   "stage": "selita",
+   "type": "reflect",
+   "title": "Back to your predictions",
+   "prompt": "Compare your predictions with the theory. Then answer in one or two sentences: what makes fusion fuel attractive, and what makes tritium a problem? You can start with *Fusion fuel is attractive because …* and *Tritium is a problem because …*",
+   "predictions": [
+    "pred-fuel",
+    "pred-waste"
+   ]
+  },
+  {
+   "id": "example",
+   "stage": "sovella",
+   "type": "theory",
+   "sections": [
+    "Esimerkki"
+   ]
+  },
+  {
+   "id": "tritium-task",
+   "stage": "sovella",
+   "type": "numeric",
+   "title": "How much tritium does a power plant burn?",
+   "prompt": "A fusion power plant releases a fusion power of $1.0\\ \\text{GW}$ for one year, $3.156 \\cdot 10^{7}\\ \\text{s}$. Each D–T reaction releases $17.6\\ \\text{MeV}$ and burns one tritium nucleus of mass $3.016\\ \\text{u}$. How many kilograms of tritium does the plant burn in a year? Compare your answer with the world's civilian stock of about $25\\ \\text{kg}$ (2024).",
+   "answer": 56.1,
+   "unit": "$\\text{kg}$",
+   "tolerance": 0.03,
+   "hints": [
+    "First find the energy released in a year: $E = Pt$.",
+    "The number of reactions is $N = E : E_1$, where $E_1$ is the energy of one reaction in joules.",
+    "$E_1 = 17.6 \\cdot 1.602 \\cdot 10^{-13}\\ \\text{J}$ $= 2.820 \\cdot 10^{-12}\\ \\text{J}$ and $E = 3.156 \\cdot 10^{16}\\ \\text{J}$, so $N = 1.119 \\cdot 10^{28}$."
+   ],
+   "mistakes": [
+    {
+     "value": 93.5,
+     "feedback": "You used the mass of a deuterium nucleus and a tritium nucleus together, $5.030\\ \\text{u}$. The question asks only for the tritium: use $3.016\\ \\text{u}$ for each reaction."
+    },
+    {
+     "value": 1.78e-06,
+     "feedback": "This is the tritium burned in one second. Multiply the power by the time of one year, $3.156 \\cdot 10^{7}\\ \\text{s}$, first."
+    }
+   ],
+   "solution": "**Given:** Fusion power ${P = 1.0\\ \\text{GW} = 1.0 \\cdot 10^{9}\\ \\text{W}}$, time ${t = 3.156 \\cdot 10^{7}\\ \\text{s}}$, energy of one reaction ${E_1 = 17.6\\ \\text{MeV}}$, mass of a tritium nucleus ${m_\\text{T} = 3.016\\ \\text{u}}$. We want the mass of tritium $m$ burned in a year.\n\n**Principle:** Every reaction burns one tritium nucleus. The number of reactions is the total energy divided by the energy of one reaction, and the mass is that number times the mass of one nucleus.\n\n**Formula:**\n```latex\n\\begin{aligned}\nN &= \\frac{Pt}{E_1} \\\\\nm &= N m_\\text{T} = \\frac{Pt\\, m_\\text{T}}{E_1}\n\\end{aligned}\n```\n\n**Unit conversions:** ${E_1 = 17.6 \\cdot 1.602 \\cdot 10^{-13}\\ \\text{J}}$ ${= 2.820 \\cdot 10^{-12}\\ \\text{J}}$ and ${m_\\text{T} = 3.016 \\cdot 1.661 \\cdot 10^{-27}\\ \\text{kg}}$ ${= 5.010 \\cdot 10^{-27}\\ \\text{kg}}$.\n\n**Substitution:**\n```latex\n\\begin{aligned}\nN &= \\frac{1.0 \\cdot 10^{9}\\ \\text{W} \\cdot 3.156 \\cdot 10^{7}\\ \\text{s}}{2.820 \\cdot 10^{-12}\\ \\text{J}} \\\\\n&= 1.119 \\cdot 10^{28} \\\\[6pt]\nm &= 1.119 \\cdot 10^{28} \\cdot 5.010 \\cdot 10^{-27}\\ \\text{kg} \\\\\n&= 56.1\\ \\text{kg}\n\\end{aligned}\n```\n\n**Answer:** The plant burns about ${m \\approx 56\\ \\text{kg}}$ of tritium a year. Two significant figures are enough, because the power $1.0\\ \\text{GW}$ has two.\n\n**Reasonableness:** One gigawatt for a year is $3.2 \\cdot 10^{16}\\ \\text{J}$; with $3.4 \\cdot 10^{14}\\ \\text{J}$ per kilogram of D–T fuel this is about $94\\ \\text{kg}$ of fuel, and tritium is $3.016 : 5.030 \\approx 60\\ \\%$ of that mass, about $56\\ \\text{kg}$. It is more than twice the world's civilian stock of about $25\\ \\text{kg}$: a power plant cannot buy its tritium, it must breed it."
+  },
+  {
+   "id": "find-error",
+   "stage": "sovella",
+   "type": "choice",
+   "title": "Find the error",
+   "optional": true,
+   "prompt": "A student writes: \"In December 2022 the National Ignition Facility got $3.15\\ \\text{MJ}$ out from $2.05\\ \\text{MJ}$ in. So laser fusion now makes more electricity than it uses.\" Where is the error?",
+   "choices": [
+    {
+     "text": "The $2.05\\ \\text{MJ}$ was laser light, made with about $300\\ \\text{MJ}$.",
+     "correct": true,
+     "feedback": "Right. The gain of about $1.5$ compares fusion energy with the laser energy on the target. The lasers drew about $300\\ \\text{MJ}$ of electricity, so the whole facility used about a hundred times more energy than the target released, and it turned none of it into electricity."
+    },
+    {
+     "text": "The numbers are wrong: NIF released less than the laser gave.",
+     "feedback": "The numbers are right: $3.15\\ \\text{MJ}$ out from $2.05\\ \\text{MJ}$ of laser light, a target gain of about $1.5$. The error is the step from target gain to electricity."
+    },
+    {
+     "text": "Nothing is wrong: any gain above $1$ means net electricity.",
+     "feedback": "A gain above 1 at the target is a scientific milestone, not net electricity. The lasers drew about $300\\ \\text{MJ}$ from the grid, and NIF has no equipment to turn heat into electricity."
+    },
+    {
+     "text": "The date is wrong: this result was first reached in 2025.",
+     "feedback": "The date is right: 5 December 2022. In 2025 NIF reached a larger yield, $8.6\\ \\text{MJ}$. The error is in the conclusion about electricity."
+    }
+   ]
+  },
+  {
+   "id": "misconception",
+   "stage": "sovella",
+   "type": "theory",
+   "sections": [
+    "Yleinen virhekäsitys"
+   ]
+  },
+  {
+   "id": "check-1",
+   "stage": "tarkista",
+   "type": "choice",
+   "title": "1. Concept: can a fusion plant run away?",
+   "prompt": "Why can a fusion plasma not run away like an uncontrolled fission chain reaction?",
+   "choices": [
+    {
+     "text": "It holds only grams of fuel and cools in seconds if disturbed.",
+     "correct": true,
+     "feedback": "Right. The fuel is fed in continuously, a few grams at a time, and the plasma must be kept extremely hot. If anything goes wrong, it cools and the reactions stop. Tritium, activation and heat remain real hazards."
+    },
+    {
+     "text": "Its magnets are strong enough to hold back any amount of energy.",
+     "feedback": "The magnets confine the plasma, but they are not a safety barrier against energy. The reason is the fuel: only grams of it are present, and the plasma cools and stops when disturbed."
+    },
+    {
+     "text": "D–T fusion makes no neutrons, so nothing can multiply.",
+     "feedback": "D–T fusion does make neutrons ($14.1\\ \\text{MeV}$ each); they activate the machine. But fusion is not a chain reaction: a neutron does not start the next fusion."
+    },
+    {
+     "text": "The plasma is too cold to release dangerous amounts of energy.",
+     "feedback": "The plasma is the hottest thing on Earth, over $100$ million kelvin. It is safe because it holds very little fuel and stops when it cools, not because it is cold."
+    }
+   ]
+  },
+  {
+   "id": "check-2",
+   "stage": "tarkista",
+   "type": "choice",
+   "title": "2. Calculation: tritium decays",
+   "prompt": "In 2024 the world's civilian stock of tritium was about $25\\ \\text{kg}$. If none were used and none were added, about how much would be left after ten years? The half-life of tritium is $12.3$ years.",
+   "choices": [
+    {
+     "text": "About $14\\ \\text{kg}$",
+     "correct": true,
+     "feedback": "Right. $m = 25\\ \\text{kg} \\cdot (1/2)^{10/12.3} = 25\\ \\text{kg} \\cdot 0.570 \\approx 14\\ \\text{kg}$. Stored tritium loses about $5\\ \\%$ a year, another reason why a power plant must breed its own."
+    },
+    {
+     "text": "About $12.5\\ \\text{kg}$",
+     "feedback": "Half of the stock is left after one half-life, $12.3$ years. Ten years is less than one half-life, so more than half is left: $25\\ \\text{kg} \\cdot (1/2)^{10/12.3} \\approx 14\\ \\text{kg}$."
+    },
+    {
+     "text": "About $5\\ \\text{kg}$",
+     "feedback": "Decay is not that fast. After $10$ years the factor is $(1/2)^{10/12.3} = 0.570$, so about $14\\ \\text{kg}$ is left."
+    },
+    {
+     "text": "About $25\\ \\text{kg}$",
+     "feedback": "Tritium decays whether it is used or not: about $5\\ \\%$ a year. After ten years, $25\\ \\text{kg} \\cdot (1/2)^{10/12.3} \\approx 14\\ \\text{kg}$ remain."
+    }
+   ]
+  },
+  {
+   "id": "check-3",
+   "stage": "tarkista",
+   "type": "choice",
+   "title": "3. Evaluate a source",
+   "prompt": "A website says: \"Fusion power produces no radioactive waste at all.\" Which evaluation is best?",
+   "choices": [
+    {
+     "text": "Wrong: neutrons activate the machine (short-lived waste).",
+     "correct": true,
+     "feedback": "Right. Activated steel and other parts give low- and intermediate-level waste that fades mostly within about 100 years, and tritium must be contained. There is no long-lived high-level waste from the fuel."
+    },
+    {
+     "text": "Right: the only product of D–T fusion is harmless helium.",
+     "feedback": "Helium is harmless, but the reaction also makes a fast neutron. Neutrons activate the materials of the machine, and the tritium fuel itself is radioactive."
+    },
+    {
+     "text": "Wrong: fusion waste is as long-lived as spent fission fuel.",
+     "feedback": "The website is wrong, but not in this way. Fusion makes no long-lived high-level waste from its fuel; most of the activated material fades within about 100 years."
+    },
+    {
+     "text": "Right: tritium is not radioactive, so nothing harmful remains.",
+     "feedback": "Tritium is radioactive, with a half-life of $12.3$ years, and the neutrons activate the machine. Both must be managed."
+    }
+   ]
+  },
+  {
+   "id": "check-explain-help",
+   "stage": "tarkista",
+   "type": "text",
+   "text": "<div class=\"wordbank\"><h4>Word bank</h4><p>established result · institutional plan · corporate claim · scientific gain · net electricity · tritium · breeding · uncertain · evidence · to overstate</p></div>\n\n<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>The headline is partly right, because …</li><li>However, … is only a plan / a claim, not a result.</li><li>No fusion device has yet …</li><li>A more accurate headline would be …</li></ul></div>"
+  },
+  {
+   "id": "check-explain",
+   "stage": "tarkista",
+   "type": "explain",
+   "title": "4. Write: evaluate a headline",
+   "prompt": "Imagine a news site writes in 2026: *\"Fusion breakthrough: clean energy for everyone by 2035!\"* Write five to seven sentences that evaluate the headline. Say what is an established result, what is a plan or a claim, and what problems are still unsolved. End with a more accurate headline of your own.",
+   "model": "The headline is partly right, because fusion experiments have produced real results: NIF released more energy than its laser light delivered in 2022, and JET released $69\\ \\text{MJ}$ in one pulse in 2023. However, \"by 2035\" is only a plan or a claim, not a result, and no fusion device has yet delivered electricity to a grid. ITER, for example, plans deuterium–tritium operation only from 2039, and it will not make electricity. Fusion also has unsolved problems: breeding enough tritium, materials that survive the neutrons and an affordable cost. \"Clean\" is also too simple, because the machine becomes radioactive, although the waste is short-lived. A more accurate headline would be: \"Fusion records grow, but no one can yet say when fusion electricity will come.\"",
+   "criteria": [
+    "The answer names at least one established result with its date.",
+    "The answer identifies the year in the headline as a plan or claim and says that no fusion electricity exists yet (2026).",
+    "The answer names at least two unsolved problems (for example tritium, materials, cost, gain versus electricity).",
+    "The answer corrects \"clean\" or \"for everyone\" with a fact about waste or cost.",
+    "The answer ends with a balanced headline of its own."
+   ]
+  },
+  {
+   "id": "summary",
+   "stage": "tarkista",
+   "type": "theory",
+   "sections": [
+    "Tiivistelmä"
+   ]
+  },
+  {
+   "id": "french-corner",
+   "stage": "tarkista",
+   "type": "text",
+   "text": "<div class=\"french-corner\"><h4>Le coin français</h4><p>France hosts ITER, so energy debates there often include <span lang=\"fr\">la fusion</span>. Listen, repeat, and say the last sentence to your partner. In the hints, capitals show the stressed syllable, and <em>õ</em> is a nasal vowel: the air goes through the nose and no <em>n</em> is heard.</p></div>\n\n<div class=\"fx\" data-fx=\"say\" id=\"fx-fs-french\"><script type=\"application/json\">{\"lang\": \"fr-FR\", \"title\": \"Le coin français: energy words\", \"phrases\": [{\"fr\": \"l'énergie\", \"en\": \"energy\", \"tip\": \"*le-ner-ŽI*: the *g* before *i* (*ž*) sounds like the *s* in English *measure*.\"}, {\"fr\": \"la fusion\", \"en\": \"fusion\", \"tip\": \"*la fy-ZJÕ*: the French *u* is the Finnish *y*, the *s* between vowels is a *z*, and *on* is nasal.\"}, {\"fr\": \"le réseau électrique\", \"en\": \"the electricity grid\", \"tip\": \"*lö re-ZO e-lek-TRIK*: *eau* is a short Finnish *o*; the *e* of *{fr}le{/fr}* is close to the Finnish *ö*.\"}, {\"fr\": \"les déchets\", \"en\": \"waste\", \"tip\": \"*le de-ŠE*: *ch* is the Finnish *š* in *šakki*, and the final *ts* is silent.\"}, {\"fr\": \"La fusion pourrait aider le climat.\", \"en\": \"Fusion could help the climate.\", \"tip\": \"*la fy-ZJÕ pu-RE e-DE lö kli-MA*: the final *t* of {fr}pourrait{/fr} and {fr}climat{/fr} is silent.\"}]}</script></div>"
+  }
+ ]
+}

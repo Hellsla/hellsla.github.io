@@ -1,0 +1,366 @@
+{
+ "version": 1,
+ "contribution": "The media-literacy assignment of the ITER chapter: students read a Finnish news article (Helsingin Sanomat 2018, or Yle 2020 or 2005), sort its statements into results, plans and opinions, compare its information with ITER's official information of 2018 and November 2026 (2016 baseline → 2024 baseline), and write a 300-word English text on the six points of the brief with criteria and a model.",
+ "learn": [
+  "read a news article about ITER and take notes in English.",
+  "tell results, plans and opinions apart in reporting about science.",
+  "compare an older article with current verified information and write about it."
+ ],
+ "prior": [
+  "ITER's Members, site and 2024 baseline (chapter *ITER: why, where and who*)",
+  "The fusion gain $Q$ and why ITER produces no electricity (chapter *Inside ITER: the machine and fusion gain*)",
+  "Mass defect and $E = mc^2$ (chapter *Mass defect and binding energy*)"
+ ],
+ "activities": [
+  {
+   "id": "hook",
+   "stage": "herata",
+   "type": "hook",
+   "text": "In 2018 Helsingin Sanomat published a large multimedia story about ITER, with pictures from the construction site in France. Yle has reported on ITER since the site was chosen in 2005. Journalists check their facts, interview experts and report the official plans. Eight years later, a student reads the 2018 story for a school report.",
+   "question": "Which parts of a well-researched article about ITER can you still trust years later, and which must you check?"
+  },
+  {
+   "id": "review",
+   "stage": "herata",
+   "type": "choice",
+   "title": "Review: where does the energy come from?",
+   "prompt": "In chapter 2 and chapter 3 you calculated the energy of fusion reactions. Where does the energy released in $\\text{D–T}$ fusion come from?",
+   "choices": [
+    {
+     "text": "The products have less mass than the fuel: $E = mc^2$.",
+     "correct": true,
+     "feedback": "Right. The helium nucleus and the neutron together have less mass than the deuterium and the tritium; the difference becomes $17.6\\ \\text{MeV}$ per reaction."
+    },
+    {
+     "text": "The fuel burns with oxygen, like natural gas.",
+     "feedback": "Burning is a chemical reaction of electron shells and releases only a few electronvolts. Fusion is a nuclear reaction: the mass decreases and $17.6\\ \\text{MeV}$ is released."
+    },
+    {
+     "text": "Heavy nuclei split into lighter ones, as in fission.",
+     "feedback": "Splitting heavy nuclei is fission. In fusion, light nuclei join, and the energy comes from the mass difference."
+    },
+    {
+     "text": "The magnets give their stored energy to the plasma.",
+     "feedback": "The magnets hold the plasma but do not supply fusion energy. It comes from the decrease in mass when the nuclei fuse."
+    }
+   ]
+  },
+  {
+   "id": "pred-ages",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Prediction 1: what ages fastest?",
+   "prompt": "News about ITER mixes results, plans and opinions. Which kind of statement in a careful 2018 article do you think is most likely to be out of date by 2026? Explain your choice with an example you can think of.",
+   "justify": true,
+   "reveal": {
+    "after": "theory-thennow"
+   },
+   "choices": [
+    {
+     "text": "Plans and forecasts, such as dates of future steps",
+     "correct": true,
+     "feedback": "Right. In the table *ITER then and now*, the rows that changed most are plans and estimates: the dates of first plasma and $\\text{D–T}$ operation, and the cost. A plan is correct only as the plan of its date. Results about the past, such as the site chosen in 2005, stay true."
+    },
+    {
+     "text": "Results, such as the year the site was chosen",
+     "feedback": "A result about the past stays true: Cadarache was chosen in 2005, whether you read about it in 2018 or in 2026. The table shows that plans and estimates changed most: the dates of first plasma and $\\text{D–T}$ operation, and the cost."
+    },
+    {
+     "text": "Opinions, such as a researcher's hopes for fusion",
+     "feedback": "An opinion stays what someone said: a researcher's hope is still a hope, and the reader must mark it as one. The table shows that plans and estimates changed most: the dates and the cost."
+    },
+    {
+     "text": "None: a well-checked article stays correct for years",
+     "feedback": "Even a careful article reports the plans of its time. The table shows that the dates of first plasma and $\\text{D–T}$ operation and the cost estimate changed between 2018 and 2026."
+    }
+   ]
+  },
+  {
+   "id": "pred-change",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Prediction 2: what goes out of date?",
+   "prompt": "Which kind of information in a 2018 article about ITER do you think is most likely to be out of date in 2026?",
+   "justify": true,
+   "reveal": {
+    "after": "theory-thennow"
+   },
+   "choices": [
+    {
+     "text": "The physics of how fusion releases energy",
+     "feedback": "The physics has not changed: $17.6\\ \\text{MeV}$ per $\\text{D–T}$ reaction is the same in 2018 and 2026. Dates, costs and the construction status changed."
+    },
+    {
+     "text": "Dates, costs and the construction status",
+     "correct": true,
+     "feedback": "Right. The first-plasma date moved from 2025 to research operation in 2034, D–T from 2035 to 2039, the cost grew, and assembly moved on. The goal, the site and the physics stayed the same."
+    },
+    {
+     "text": "The location of the site in southern France",
+     "feedback": "The site at Cadarache was chosen in 2005 and has not changed. Dates, costs and the construction status did."
+    },
+    {
+     "text": "ITER's scientific goal of a gain of ten",
+     "feedback": "The goal is still $Q = 10$: $500\\ \\text{MW}$ from $50\\ \\text{MW}$. What changed are the dates, the costs and the construction status."
+    }
+   ]
+  },
+  {
+   "id": "choose",
+   "stage": "tutki",
+   "type": "text",
+   "title": "Investigate 1: choose and read an article",
+   "text": "Choose **one** article. They are in Finnish; you read in Finnish and write in English.\n\n- **Helsingin Sanomat, 2018:** a large multimedia story about ITER, <https://dynamic.hs.fi/2018/iter/>. Your teacher tells you how to open it (it may need the school's subscription).\n- **Yle Uutiset, 14 January 2020:** *Tamperelaisessa teollisuushallissa on kehitetty tekniikkaa, joka voi vielä pelastaa maailman öljykriisiltä ja ydinjätteiltä*, about the Finnish research centre VTT in Tampere, which develops robots and tools for maintaining ITER, <https://yle.fi/a/3-11146330>.\n- **Yle Uutiset, 28 June 2005 (short):** *Koeluontoinen fuusioreaktori Ranskaan*, the news of the site decision, with reactions, <https://yle.fi/a/3-5217376>. Good for a comparison, or for a shorter reading.\n\n**Reading strategy.** First skim: look at the headline, the date, the pictures and who is quoted. Then read for the six points of the writing task and make notes in English. You do not need to understand every word."
+  },
+  {
+   "id": "notes",
+   "stage": "tutki",
+   "type": "explain",
+   "title": "Reading notes",
+   "prompt": "While you read, make notes in English under six headings: (1) ITER's purpose, (2) why fusion is difficult, (3) how fusion releases energy, (4) what makes ITER international, (5) dates, costs and the state of construction that the article gives, (6) what the article says about the future, and who says it. Write the article's name and date at the top.",
+   "model": "The format of good notes, with two headings filled in for Yle, 14 January 2020. **Article:** Yle Uutiset, 14 January 2020, VTT in Tampere. **(1) Purpose:** first machine where fusion power can really be tested. **(2) Why difficult:** plasma about $150$ million $^\\circ\\text{C}$, magnets at $-269\\ ^\\circ\\text{C}$; radioactivity, so robots do the maintenance. **(3)–(6):** short notes in the same style, with numbers copied exactly and, for the future, who says it. Your teacher checks your notes against the article you read.",
+   "criteria": [
+    "The notes have the article's name and date.",
+    "There are notes under all six headings, or the student notes that the article does not cover a point.",
+    "Dates, numbers and costs are copied exactly as the article gives them.",
+    "Statements about the future say who makes them."
+   ]
+  },
+  {
+   "id": "claims",
+   "stage": "tutki",
+   "type": "text",
+   "title": "Investigate 2: result, plan or opinion?",
+   "text": "<div class=\"fx\" data-fx=\"match\" id=\"fx-im-claims\"><script type=\"application/json\">{\"prompt\": \"What kind of statement is it? The statements are paraphrased from the two Yle articles (2005 and 2020). Even if you read the HS story, sort these Yle statements: they train the same skill.\", \"options\": [\"result or fact\", \"plan or forecast\", \"opinion or hope\"], \"items\": [{\"text\": \"ITER will be built at Cadarache in France. (2005)\", \"answer\": \"result or fact\", \"feedback\": \"The partners decided this on 28 June 2005: a decision that had been made.\"}, {\"text\": \"The project may create up to 100,000 jobs. (2005)\", \"answer\": \"plan or forecast\", \"feedback\": \"An estimate of the future; check whether it is backed by evidence.\"}, {\"text\": \"Greenpeace: the money should go to cutting emissions. (2005)\", \"answer\": \"opinion or hope\", \"feedback\": \"A judgement by an environmental group, reported fairly by the article.\"}, {\"text\": \"Tampere engineers built a water-hydraulic tool for divertor cassettes. (2020)\", \"answer\": \"result or fact\", \"feedback\": \"Work that had been done and could be shown to visitors.\"}, {\"text\": \"Parts made in Tampere will go to France in 5 to 10 years. (2020)\", \"answer\": \"plan or forecast\", \"feedback\": \"An expectation of the future, which depends on ITER's schedule.\"}, {\"text\": \"Fusion is the energy source of the future. (2020)\", \"answer\": \"opinion or hope\", \"feedback\": \"A researcher's hope and view, not a result.\"}, {\"text\": \"The EU aims to put fusion power on the grid in the 2050s. (2020)\", \"answer\": \"plan or forecast\", \"feedback\": \"An institutional goal: a plan, not a result.\"}, {\"text\": \"The magnets are cooled to $-269\\\\ ^\\\\circ\\\\text{C}$ to become superconducting. (2020)\", \"answer\": \"result or fact\", \"feedback\": \"A design fact of the machine, based on how superconductors work.\"}], \"done\": \"Well sorted. A good article mixes all three: the reader's job is to see which is which.\"}</script></div>"
+  },
+  {
+   "id": "theory-thennow",
+   "stage": "tutki",
+   "type": "theory",
+   "sections": [
+    "ThenNow"
+   ]
+  },
+  {
+   "id": "compare",
+   "stage": "tutki",
+   "type": "explain",
+   "title": "Compare: your article and today",
+   "prompt": "Compare two pieces of information from your article (dates, costs, construction, people or Members) with the table *ITER then and now*. For each, write one sentence: what the article says, what is true in November 2026, and whether the article was correct when it was written.",
+   "model": "The Yle article of 2020 expected the Tampere parts to go to France in five to ten years; in 2026 this depends on ITER's new schedule, which moved research operation to 2034, so the estimate was reasonable then but uncertain now. The article named Europe, China, India, Japan, Russia, South Korea and the USA as partners; in 2026 the seven Members are the same, so this is still correct.",
+   "criteria": [
+    "Two pieces of information are compared.",
+    "Each comparison gives the article's information and the information of November 2026 with a date.",
+    "The answer judges whether the article was correct at its own time."
+   ]
+  },
+  {
+   "id": "theory-key",
+   "stage": "selita",
+   "type": "theory",
+   "sections": [
+    "Ydinajatus",
+    "Physics"
+   ]
+  },
+  {
+   "id": "language-support",
+   "stage": "selita",
+   "type": "text",
+   "text": "<div class=\"wordbank\"><h4>Word bank</h4><p>a headline · a source · to quote · according to · to report · a plan · a forecast · a result · an opinion · outdated · up to date · as of (a date) · to update</p></div>\n\n<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>According to the article, …</li><li>The article was written in …, when the official plan was …</li><li>As of November 2026, …</li><li>This is a plan/forecast/opinion, not a result, because …</li><li>My partner's article focuses more on …</li></ul></div>"
+  },
+  {
+   "id": "pair",
+   "stage": "selita",
+   "type": "explain",
+   "title": "Pair discussion: two articles, two angles",
+   "prompt": "Work with a partner who read a different article if possible. Tell each other in English, using the word bank: who wrote it, when, what its angle is (science, Finland, politics, construction) and who is quoted. Then write three sentences: how are the two articles different, and why?",
+   "model": "The Yle article of 2005 reports a political decision: the site, the money for France and the reactions of Chirac and Greenpeace. The Yle article of 2020 focuses on Finland's part, the robots developed in Tampere, and quotes one researcher. They are different because they were written for different news: a decision in 2005 and a Finnish success story in 2020.",
+   "criteria": [
+    "The answer names the date and the angle of both articles.",
+    "It says who is quoted in at least one of them.",
+    "It gives a reason for the difference (date, news event, audience)."
+   ]
+  },
+  {
+   "id": "back-to-predictions",
+   "stage": "selita",
+   "type": "reflect",
+   "title": "Back to your predictions",
+   "prompt": "Compare your predictions with the table *ITER then and now*. Then answer the opening question in one or two sentences: how can a well-researched article give a wrong picture years later?",
+   "predictions": [
+    "pred-ages",
+    "pred-change"
+   ]
+  },
+  {
+   "id": "write",
+   "stage": "sovella",
+   "type": "explain",
+   "title": "Writing task: “ITER: promise, progress and reality”",
+   "prompt": "Start in class and finish at home. Write about **300 words** in English on the article you read. Cover all six points: (1) ITER's scientific purpose, (2) why fusion is technically difficult, (3) how energy is released in fusion, (4) what makes ITER an international project, (5) how its development has changed over time: compare the article's information with the verified information of November 2026, (6) what the article says about the future of fusion, and who says it. End with your own short evaluation of the article. Use your reading notes and give dates.\n\n<div class=\"wordbank\"><h4>Word bank</h4><p>a burning plasma · fusion gain · to release · mass defect · to repel · confinement · a Member · in kind · a baseline · to postpone · a forecast · a hope · as of November 2026</p></div>\n\n<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>The article, published in … by …, describes …</li><li>ITER's purpose is to …</li><li>Fusion releases energy because …</li><li>It is difficult because …</li><li>ITER is international because …</li><li>When the article was written, the plan was …; as of November 2026, …</li><li>According to …, the future of fusion …</li><li>In my view, the article …</li></ul></div>",
+   "model": "**Outline:** (1) the article, its date and its angle; (2) ITER's purpose; (3) how fusion releases energy; (4) why it is difficult; (5) what makes ITER international; (6) how the project has changed: the article's information against the information of November 2026; (7) what the article says about the future, and your evaluation.\n\n**Model text (about 300 words, based on the Yle article of 2020):**\n\nIn January 2020, Yle reported on VTT's laboratory in Tampere, where Finnish engineers develop robots and tools for maintaining ITER. The article presents ITER as the first machine in which fusion power can really be tested.\n\nITER's scientific purpose is to create a burning plasma: according to ITER, it should produce $500\\ \\text{MW}$ of fusion power from $50\\ \\text{MW}$ of heating, a gain of ten. It will not produce electricity, but it should show that a fusion power plant is possible.\n\nIn fusion, light hydrogen nuclei join into helium. The products have less mass than the fuel, and the missing mass becomes energy: one deuterium–tritium reaction releases $17.6\\ \\text{MeV}$. This is difficult because the positive nuclei repel each other, so the fuel must be heated to about $150$ million degrees and held by superconducting magnets cooled to $-269\\ ^\\circ\\text{C}$. The neutrons also make the machine radioactive, which is why robots from Tampere are needed.\n\nITER is international because the machine is too large and expensive for one country. Seven Members, among them the EU, China, India and the USA, deliver parts; about twenty Finnish companies have taken part.\n\nThe article gives no date for ITER's first plasma. In 2020 the official plan was first plasma in 2025. As of November 2026, ITER's 2024 baseline plans research operation in 2034 and deuterium–tritium operation in 2039, after defects and the pandemic. The researcher's estimate that the Tampere parts would leave in five to ten years also depends on this schedule.\n\nAbout the future, the article quotes the researcher's hope that fusion is the energy source of the future, and the EU's aim of fusion electricity in the 2050s. These are hopes and plans, not results. In my view the article explains the technology well, but a reader today must update its time scale.",
+   "criteria": [
+    "Point 1: ITER's purpose is stated correctly ($Q = 10$ or a burning plasma; no electricity).",
+    "Point 2: at least two reasons why fusion is difficult (repulsion and temperature, confinement, materials, tritium).",
+    "Point 3: energy release explained by the decrease in mass ($E = mc^2$), ideally with $17.6\\ \\text{MeV}$.",
+    "Point 4: what makes ITER international (seven Members, shared cost and parts).",
+    "Point 5: at least one dated comparison between the article and November 2026.",
+    "Point 6: the article's view of the future, with who says it, marked as a plan, forecast or hope.",
+    "Language: about 300 words (250–350), paragraphs, linking words, key terms used correctly; facts in the student's own words."
+   ]
+  },
+  {
+   "id": "find-error",
+   "stage": "sovella",
+   "type": "choice",
+   "title": "Find the error",
+   "prompt": "A student writes in a 2026 report: \"According to Helsingin Sanomat, ITER will make its first plasma in 2025.\" Assume the 2018 article really gave 2025. What is the problem?",
+   "choices": [
+    {
+     "text": "A 2018 plan is presented as still valid.",
+     "correct": true,
+     "feedback": "Right. Write: \"In 2018, Helsingin Sanomat reported the plan of that time, first plasma in 2025; ITER's 2024 baseline plans research operation in 2034.\""
+    },
+    {
+     "text": "Helsingin Sanomat is not a reliable newspaper.",
+     "feedback": "The newspaper may well have reported the official plan correctly. The problem is that the student presents a 2018 plan as current."
+    },
+    {
+     "text": "Nothing: the student names the source correctly.",
+     "feedback": "Naming the source is good, but the date of the source is missing, and the plan has changed since 2018."
+    },
+    {
+     "text": "ITER already made its first plasma in 2025.",
+     "feedback": "It did not. The 2024 baseline replaced the 2025 first plasma with research operation in 2034."
+    }
+   ]
+  },
+  {
+   "id": "peer",
+   "stage": "sovella",
+   "type": "explain",
+   "title": "Peer feedback",
+   "optional": true,
+   "prompt": "Swap texts with a partner. Check your partner's text with the seven criteria of the writing task. Write two things that are done well and one concrete suggestion, using the sentence starters.\n\n<div class=\"wordbank\"><h4>Word bank</h4><p>clear · well organised · a dated fact · to add · to explain more</p></div>\n\n<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>You explain … clearly.</li><li>I liked how you …</li><li>You could add …, because …</li></ul></div>",
+   "model": "You explain the physics clearly, and I liked how you compared the 2018 plan with the 2024 baseline. You could add who says that fusion is the energy of the future, because it is a researcher's hope, not a result.",
+   "criteria": [
+    "The feedback names two strengths with reference to the criteria.",
+    "It gives one concrete, polite suggestion with a reason."
+   ]
+  },
+  {
+   "id": "misconception",
+   "stage": "sovella",
+   "type": "theory",
+   "sections": [
+    "Yleinen virhekäsitys"
+   ]
+  },
+  {
+   "id": "check-1",
+   "stage": "tarkista",
+   "type": "choice",
+   "title": "1. Kinds of claims",
+   "prompt": "Which of these sentences from a news article is a **result**, not a plan or an opinion?",
+   "choices": [
+    {
+     "text": "In July 2026 a sixth vessel module was installed.",
+     "correct": true,
+     "feedback": "Right. It happened and was reported by ITER: a result."
+    },
+    {
+     "text": "Deuterium–tritium operation will start in 2039.",
+     "feedback": "This is the 2024 baseline: a plan. It may change, as the 2016 plan did."
+    },
+    {
+     "text": "Fusion will solve the world's energy problems.",
+     "feedback": "This is a hope or opinion. It cannot be checked today."
+    },
+    {
+     "text": "Fusion electricity should reach the grid in the 2050s.",
+     "feedback": "This is a goal or forecast, not something that has happened."
+    }
+   ]
+  },
+  {
+   "id": "check-2",
+   "stage": "tarkista",
+   "type": "choice",
+   "title": "2. Checking a date",
+   "prompt": "You want to know ITER's current schedule for your report. Which source should you check first?",
+   "choices": [
+    {
+     "text": "A popular video about ITER from 2022",
+     "feedback": "A video shows the plan of its time. In 2022 that was still 2025. Check ITER's newest official information."
+    },
+    {
+     "text": "ITER's newest baseline on iter.org",
+     "correct": true,
+     "feedback": "Right. The primary, newest source is ITER's baseline (July 2024) and its recent news; then note the date you checked it."
+    },
+    {
+     "text": "The 2018 Helsingin Sanomat article",
+     "feedback": "It reported the plan of 2018 (first plasma 2025). For the current schedule, use ITER's newest information."
+    },
+    {
+     "text": "A comment by a reader under an article",
+     "feedback": "A comment is not a checked source. Use ITER's newest official information and give its date."
+    }
+   ]
+  },
+  {
+   "id": "check-3",
+   "stage": "tarkista",
+   "type": "choice",
+   "title": "3. The physics in the article",
+   "prompt": "An article says: \"Fusion is so hard because the fuel is very rare.\" Which correction is the most accurate?",
+   "choices": [
+    {
+     "text": "Deuterium is plentiful; repulsion and confinement are hard.",
+     "correct": true,
+     "feedback": "Right. Deuterium comes from water. Fusion is hard because the positive nuclei repel each other, so the plasma must be very hot and well confined, the walls must survive, and tritium must be bred from lithium."
+    },
+    {
+     "text": "The article is right: all the fusion fuels are extremely rare.",
+     "feedback": "Deuterium is plentiful in water. Only tritium is rare, and it can be bred from lithium. The hardest problems are physical and technical."
+    },
+    {
+     "text": "Fusion is hard because the reaction can run away like a bomb.",
+     "feedback": "A fusion plasma stops by itself when conditions fail. The difficulty is the opposite: keeping it hot and confined."
+    },
+    {
+     "text": "Fusion is hard because it releases too little energy per reaction.",
+     "feedback": "One $\\text{D–T}$ reaction releases $17.6\\ \\text{MeV}$, millions of times more than a chemical reaction. The problem is reaching the conditions."
+    }
+   ]
+  },
+  {
+   "id": "check-explain",
+   "stage": "tarkista",
+   "type": "explain",
+   "title": "4. A correction note",
+   "prompt": "Write a correction note of two or three sentences that a news site could add today under a 2018 article saying \"ITER's first plasma is planned for 2025\". Be fair to the journalist and precise about the new plan.\n\n<div class=\"wordbank\"><h4>Word bank</h4><p>a correction · an update · at the time · since then · replaced</p></div>\n\n<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li><em>Update, November 2026:</em> …</li><li>At the time of writing, …</li><li>Since then, …</li></ul></div>",
+   "model": "Update, November 2026: At the time of writing, ITER's official plan (the 2016 baseline) foresaw first plasma in 2025. In July 2024 ITER replaced this plan; its new baseline plans the start of research operation in 2034 and deuterium–tritium operation in 2039.",
+   "criteria": [
+    "The note says the 2018 information was correct at the time.",
+    "It gives the new plan with its year (2024 baseline: 2034 and 2039).",
+    "It is dated and written in clear, neutral language."
+   ]
+  },
+  {
+   "id": "summary",
+   "stage": "tarkista",
+   "type": "theory",
+   "sections": [
+    "Tiivistelmä"
+   ]
+  },
+  {
+   "id": "french-corner",
+   "stage": "tarkista",
+   "type": "text",
+   "text": "<div class=\"french-corner\"><h4>Le coin français</h4><p>French newspapers such as <span lang=\"fr\">Le Monde</span> or the regional <span lang=\"fr\">La Provence</span> also report on ITER. These phrases help you to talk about an article. Listen, repeat, and say the last sentence to your partner.</p></div>\n\n<div class=\"fx\" data-fx=\"say\" id=\"fx-im-french\"><script type=\"application/json\">{\"lang\": \"fr-FR\", \"title\": \"Le coin français: reading the news\", \"phrases\": [{\"fr\": \"un article\", \"en\": \"an article\", \"tip\": \"*uh-nar-TEEKL*: the *n* of *un* links to *article*.\"}, {\"fr\": \"un journaliste\", \"en\": \"a journalist\", \"tip\": \"*uhn zhoor-na-LEEST*: *j* sounds like the *s* in *measure*.\"}, {\"fr\": \"selon l'article\", \"en\": \"according to the article\", \"tip\": \"*suh-LON lar-TEEKL*: the *on* is nasal.\"}, {\"fr\": \"l'avenir de la fusion\", \"en\": \"the future of fusion\", \"tip\": \"*la-vuh-NEER duh la few-ZYON*: the *u* of *fusion* is like the Finnish *y*.\"}, {\"fr\": \"Selon l'article, ITER est un grand projet international.\", \"en\": \"According to the article, ITER is a big international project.\", \"tip\": \"*grand projet*: *grahn pro-ZHAY*.\"}]}</script></div>"
+  }
+ ]
+}

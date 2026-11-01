@@ -1,0 +1,28 @@
+{
+ "id": "fy14-inside-iter",
+ "course": "FY14",
+ "chapter": 7,
+ "order": 2,
+ "title": "Inside ITER: the machine and fusion gain",
+ "description": "Explore ITER's magnets, vacuum vessel, blanket, divertor and heating, calculate the fusion gain Q, and see why ITER's planned Q = 10 is a plasma gain, not electricity or a commercial power plant.",
+ "kind": "physics",
+ "minutes": 75,
+ "subjects": ["physics", "english", "french"],
+ "sources": [
+  {"title": "ITER Organization: What will ITER do? (Q = 10, 500 MW from 50 MW, burning plasma, test blanket modules, no electricity, licence 2012)", "url": "https://www.iter.org/fusion-energy/what-will-iter-do", "checked": "2026-11-01"},
+  {"title": "ITER Organization: Facts and figures (plasma volume 830 m³, 400–600 s pulses, 150 million °C, JET Q = 0.67)", "url": "https://www.iter.org/facts-figures", "checked": "2026-11-01"},
+  {"title": "ITER Organization: Magnets (18 TF coils, 11.8 T; 6 PF coils; central solenoid 13 m, 6 modules)", "url": "https://www.iter.org/machine/magnets", "checked": "2026-11-01", "note": "The component data of the explorer (units/fy14/data/iter.json) give every part's sources; checked 2026-11-01."},
+  {"title": "ITER Organization: Divertor (54 cassettes, tungsten, 10–20 MW/m²)", "url": "https://www.iter.org/machine/divertor", "checked": "2026-11-01"},
+  {"title": "ITER Organization: Blanket (440 modules)", "url": "https://www.iter.org/machine/blanket", "checked": "2026-11-01"},
+  {"title": "ITER Organization: External heating systems", "url": "https://www.iter.org/machine/supporting-systems/external-heating-systems", "checked": "2026-11-01"},
+  {"title": "ITER Organization: Tritium Plant Summit (closed fuel loop, burn fraction about 1 %, detritiation)", "url": "https://iter.org/node/15779", "checked": "2026-11-01"},
+  {"title": "ITER Organization: Tokamak Building (the concrete bioshield)", "url": "https://www.iter.org/node/20365", "checked": "2026-11-01"},
+  {"title": "ITER (Wikipedia): 15 MA plasma current; ITER produces no electricity", "url": "https://en.wikipedia.org/wiki/ITER", "checked": "2026-11-01"},
+  {"title": "ITER Organization: Power supply (110 MW to 620 MW in 30-second peaks; cooling water and cryogenics about 80 %)", "url": "https://www.iter.org/node/2751", "checked": "2026-11-01"},
+  {"title": "Tritium (Wikipedia): half-life 12.32 a, beta decay, production in CANDU reactors, Li-6 breeding releases 4.8 MeV", "url": "https://en.wikipedia.org/wiki/Tritium", "checked": "2026-11-01"},
+  {"title": "NIST: Atomic Weights and Isotopic Compositions (relative atomic masses of H-2, H-3, He-4, Li-6)", "url": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl", "checked": "2026-11-01", "note": "D–T: $17.59\\ \\text{MeV}$, of which $3.54\\ \\text{MeV}$ to helium and $14.05\\ \\text{MeV}$ to the neutron; $^{6}\\text{Li} + \\text{n}$: $4.78\\ \\text{MeV}$, computed from the atomic masses."}
+ ],
+ "media": [
+  {"file": "units/fy14/pics/iter-magnet-coil.jpg", "title": "ITER poloidal field coil factory", "creator": "Johannes Reimer", "source": "https://commons.wikimedia.org/wiki/File:ITER_Polodial_Field_Coils_Construction_%2811%29.jpg", "licence": "CC BY 4.0", "licence_url": "https://creativecommons.org/licenses/by/4.0"}
+ ]
+}

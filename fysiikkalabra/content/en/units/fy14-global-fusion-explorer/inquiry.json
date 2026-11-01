@@ -1,0 +1,365 @@
+{
+ "version": 1,
+ "contribution": "The course's world map: students use the Global Fusion Explorer (63 facilities, year, status, country and type filters) to compare the Cold-War geography of fusion research with today's networks, read the data critically (selection, unknown end years, today's country names) and connect the map with the course timeline.",
+ "learn": [
+  "compare the geography of fusion machines in the early Cold War years with today's network, using a data map.",
+  "explain how declassification, verification and cost turned competition into collaboration.",
+  "evaluate the limits of a facility map: selection, unknown years and company-reported results."
+ ],
+ "prior": [
+  "The T-3 results of 1968 were confirmed by a British team in 1969 (chapter *Science across the Iron Curtain*)",
+  "ITER began with the 1985 Geneva summit and has seven members (chapter *ITER: why, where and who*)"
+ ],
+ "activities": [
+  {
+   "id": "hook",
+   "stage": "herata",
+   "type": "hook",
+   "text": "In 1955 a fusion physicist in Princeton could not tell a colleague in Moscow what she was working on: both worked in secret, on opposite sides of the Iron Curtain. Today, physicists from China, India, Russia, the United States and Europe build one machine together in southern France and share their data by e-mail every day. Somewhere between these two pictures, the map of fusion research changed.",
+   "question": "How did fusion research move from secret national projects to a worldwide network, and how can a map show it?"
+  },
+  {
+   "id": "review",
+   "stage": "herata",
+   "type": "choice",
+   "title": "Review: science across the Iron Curtain",
+   "prompt": "In the chapter *Science across the Iron Curtain*, you met the T-3 tokamak. Why was the British measurement of T-3 in 1969 so important?",
+   "choices": [
+    {
+     "text": "It checked a surprising Soviet result independently, so others believed it.",
+     "correct": true,
+     "feedback": "Right. A British team measured the plasma with their own laser and confirmed about ten million degrees. After this independent check, laboratories around the world started building tokamaks."
+    },
+    {
+     "text": "It was the first time that a tokamak produced electricity.",
+     "feedback": "No tokamak has ever produced electricity. The 1969 measurement checked the temperature of T-3's plasma."
+    },
+    {
+     "text": "It showed that the Soviet results had been invented for propaganda.",
+     "feedback": "The opposite: the British measurement confirmed the Soviet result, about ten million degrees."
+    },
+    {
+     "text": "It started the secret period of fusion research in Britain.",
+     "feedback": "Fusion research had been declassified in 1958. The 1969 visit was possible because the field had become open."
+    }
+   ]
+  },
+  {
+   "id": "think-help",
+   "stage": "herata",
+   "type": "text",
+   "text": "<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>During the Cold War, fusion research was probably …</li><li>Today I think research is done in …, because …</li><li>A map could show … but not …</li></ul></div>"
+  },
+  {
+   "id": "think",
+   "stage": "herata",
+   "type": "explain",
+   "title": "Think about it: a map of science",
+   "pair": "Pair work: share your ideas aloud, then each of you writes.",
+   "prompt": "Discuss with a partner, then write two or three sentences. Where do you think fusion research was done in the 1950s, and where is it done today? What can a map of fusion facilities show about history, and what can it not show?",
+   "model": "During the Cold War, fusion research was probably done in a few rich countries with nuclear weapons, such as the United States and the Soviet Union. Today I think research is done in many countries, including China, Japan and Europe, because the machines are very expensive and countries cooperate. A map could show where and when machines were built, but not what the scientists said to each other or how good their results were.",
+   "criteria": [
+    "The answer suggests a difference between the 1950s and today.",
+    "The answer gives a reason for the change (for example politics, cost, cooperation).",
+    "The answer names one thing a map can show and one thing it cannot."
+   ]
+  },
+  {
+   "id": "pred-cold",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Prediction 1: the early map",
+   "prompt": "The explorer lists 63 facilities. In how many countries does it show fusion machines that **started before 1970**?",
+   "justify": true,
+   "reveal": {
+    "after": "theory-main"
+   },
+   "choices": [
+    {
+     "text": "In 3 countries",
+     "correct": true,
+     "feedback": "Right: the United States, the United Kingdom and the Soviet Union, the three nuclear powers that ran secret fusion programmes and declassified them together in 1958. Remember that the explorer is a selection: smaller programmes elsewhere are missing."
+    },
+    {
+     "text": "In 7 countries",
+     "feedback": "The explorer shows early machines in only three: the United States (Model A to C, Perhapsatron, Scylla), the United Kingdom (ZETA) and the Soviet Union (T-1, T-3). Fusion research began in secret in the nuclear powers."
+    },
+    {
+     "text": "In 12 countries",
+     "feedback": "Twelve is the number of countries with *operating* facilities in 2026. Before 1970 the explorer shows machines in only three: the United States, the United Kingdom and the Soviet Union."
+    },
+    {
+     "text": "In 20 countries",
+     "feedback": "The whole explorer, all years together, has facilities in only 14 countries. Before 1970 it shows three: the United States, the United Kingdom and the Soviet Union."
+    }
+   ]
+  },
+  {
+   "id": "pred-now",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Prediction 2: the map today",
+   "prompt": "In how many countries does the explorer show facilities that are **operating** in 2026, and on how many continents?",
+   "justify": true,
+   "reveal": {
+    "after": "theory-main"
+   },
+   "choices": [
+    {
+     "text": "4 countries on 2 continents",
+     "feedback": "The network is much wider: 12 countries on three continents (Europe, North America and Asia). China, Japan, South Korea and India all operate machines."
+    },
+    {
+     "text": "12 countries on 3 continents",
+     "correct": true,
+     "feedback": "Right: the United States, Canada, the United Kingdom, France, Germany, Switzerland, Spain, Russia, China, Japan, South Korea and India. Many of their machines prepare ITER or test its parts."
+    },
+    {
+     "text": "25 countries on 5 continents",
+     "feedback": "Too many for this selection: 12 countries on three continents (Europe, North America and Asia). The whole explorer, all years together, covers only 14 countries."
+    },
+    {
+     "text": "6 countries, all of them in Europe",
+     "feedback": "Europe has many machines, but so do North America and Asia: 12 countries on three continents in 2026."
+    }
+   ]
+  },
+  {
+   "id": "theory-reading",
+   "stage": "tutki",
+   "type": "theory",
+   "sections": [
+    "Reading"
+   ]
+  },
+  {
+   "id": "explorer",
+   "stage": "tutki",
+   "type": "text",
+   "title": "The Global Fusion Explorer",
+   "text": "The map loads its background from OpenStreetMap, so it needs an internet connection. The list and the panels work even without the map.\n\n<div class=\"fx\" data-fx=\"map\" id=\"fx-gfe-map\" data-src=\"units/fy14/data/facilities.json\"><script type=\"application/json\">{\"map_height\": 440, \"intro\": \"Explore freely for two minutes: open a few markers, try the filters, then press *Clear filters* and start the missions below.\"}</script></div>"
+  },
+  {
+   "id": "missions",
+   "stage": "tutki",
+   "type": "text",
+   "title": "Missions: from competition to collaboration",
+   "text": "Work in pairs and write your findings in a table with the columns *year*, *facilities*, *countries* and *notes*.\n\n1. **The secret years.** Untick *any year* and move the year slider to **1958**. Which facilities and countries does the list show? Open ZETA and T-1.\n2. **Unknown years.** Move the slider slowly from 1958 to 1975. Model A and the Perhapsatron disappear after 1963: open Model A and read the note at the end of its panel. Why does the filter stop counting it there? Then tick *any year* and look at the start years: which countries had machines that started before 1970, and which countries followed in 1973?\n3. **The age of big machines.** Untick *any year* and set the year to **1985**. Count the facilities and countries. Which machine is shared by several countries? Open its panel.\n4. **Today's network.** Set the year to **2026** and count the facilities and countries. Then tick *any year* and choose *Under construction* and *Planned*: who builds new machines?\n5. **Machines that cross borders.** Open the panels of ITER, JT-60SA and HL-2A, and search for **COMPASS**: why does one machine have two records? Note for each one which countries are involved.\n6. **Back to the timeline.** Open the unit [Fusion history: an interactive timeline](fy14-fusion-timeline.html), find the events of 1958, 1969 and 1985, and follow a *Show on the map* link back to this explorer."
+  },
+  {
+   "id": "missions-help",
+   "stage": "tutki",
+   "type": "text",
+   "text": "<div class=\"wordbank\"><h4>Word bank</h4><p>site · facility · device · operating · retired · under construction · planned · to cluster · to spread · to share · a joint project · a network · secrecy · the Cold War</p></div>\n\n<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>In 1958 the list shows … facilities in … countries.</li><li>By 1985, … had joined, and … was shared by …</li><li>In 2026, operating facilities stand in …</li><li>The biggest change is that …</li><li>One limitation of the data is …</li></ul></div>"
+  },
+  {
+   "id": "findings",
+   "stage": "tutki",
+   "type": "explain",
+   "title": "Record and compare your findings",
+   "pair": "Pair work: one of you operates the explorer, the other writes; swap roles after mission 3.",
+   "prompt": "Discuss with your partner, then write four or five sentences from your table. How many facilities and countries did you find in 1958, in 1985 and in 2026 (operating)? Which machines involve several countries? Name one limitation of the data that affected your counts.",
+   "model": "In 1958 the list shows six facilities in three countries: the United States (Model A, Model B, the Perhapsatron and Scylla I), the United Kingdom (ZETA) and the Soviet Union (T-1). By 1985 it shows eight machines in six countries: the United States, the Soviet Union, the United Kingdom, France, West Germany and Japan, and JET in the UK was shared by European countries. In 2026, 24 facilities operate in 12 countries on three continents, from Canada to South Korea. ITER (seven members), JT-60SA (Japan and Europe), HL-2A (built from German ASDEX parts in China) and COMPASS (two records: first at Culham in the UK, then in Prague) cross borders. One limitation of the data is that no source gives the end year of some old machines, such as Model A, so the year filter only guesses: it counts them for ten years after their start.",
+   "criteria": [
+    "The answer gives counts of facilities or countries for at least two different years.",
+    "The answer names at least two machines that involve several countries and says which countries.",
+    "The answer describes the change from a few countries to many.",
+    "The answer names a limitation of the data (selection, unknown end years, today's country names, company-reported results)."
+   ]
+  },
+  {
+   "id": "theory-main",
+   "stage": "selita",
+   "type": "theory",
+   "sections": [
+    "Story",
+    "Ydinajatus"
+   ]
+  },
+  {
+   "id": "vocabulary",
+   "stage": "selita",
+   "type": "text",
+   "title": "Words of the lesson",
+   "text": "<div class=\"fx\" data-fx=\"match\" id=\"fx-gfe-words\"><script type=\"application/json\">{\"prompt\": \"Match each word with its meaning.\", \"options\": [\"kept hidden by a government\", \"made public after secrecy\", \"checked by someone else\", \"a project run by several countries\", \"a country that builds the machine\", \"a company that grew out of a lab\"], \"items\": [{\"text\": \"secret (research)\", \"answer\": \"kept hidden by a government\", \"feedback\": \"Until 1958 fusion research in the United States, the Soviet Union and the United Kingdom was secret.\"}, {\"text\": \"declassified\", \"answer\": \"made public after secrecy\", \"feedback\": \"To *declassify* means to remove the *classified* (secret) status, as happened in Geneva in 1958.\"}, {\"text\": \"independent verification\", \"answer\": \"checked by someone else\", \"feedback\": \"The British measurement of T-3 in 1969 verified a Soviet result independently.\"}, {\"text\": \"joint undertaking\", \"answer\": \"a project run by several countries\", \"feedback\": \"JET was run as the JET Joint Undertaking by European countries from 1978.\"}, {\"text\": \"host country\", \"answer\": \"a country that builds the machine\", \"feedback\": \"France is ITER's host country: the machine stands at Cadarache, built by seven members.\"}, {\"text\": \"spin-off\", \"answer\": \"a company that grew out of a lab\", \"feedback\": \"Several fusion companies are spin-offs of university or national laboratories.\"}]}</script></div>"
+  },
+  {
+   "id": "back-to-predictions",
+   "stage": "selita",
+   "type": "reflect",
+   "title": "Back to your predictions",
+   "prompt": "Compare your predictions with your own counts and with the story. In one or two sentences: what changed the geography of fusion research most?",
+   "predictions": [
+    "pred-cold",
+    "pred-now"
+   ]
+  },
+  {
+   "id": "label-help",
+   "stage": "sovella",
+   "type": "text",
+   "text": "<div class=\"wordbank\"><h4>Word bank</h4><p>was built in · started operating in · was shut down in · is still running · is shared by · achieved · was the first to · matters because</p></div>\n\n<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>… is a … in …, which started operating in …</li><li>Its most important result was …</li><li>It matters for the story of collaboration because …</li></ul></div>"
+  },
+  {
+   "id": "label",
+   "stage": "sovella",
+   "type": "explain",
+   "title": "Write a museum label",
+   "prompt": "Imagine the explorer becomes an exhibition. Choose one facility (not ITER) and write its museum label of 60–90 words. Use the facts in its panel: name, place, type, years, one achievement with its date, and why it matters for the story *from competition to collaboration*. Write in your own words.",
+   "model": "**JET, Culham, United Kingdom (1983–2023).** The Joint European Torus was a tokamak built and run by European countries together, under a joint undertaking set up in 1978. For 40 years it was the largest tokamak in the world. In 1997 it produced $16\\ \\text{MW}$ of fusion power, and in 2023 it released $69\\ \\text{MJ}$ of fusion energy in a single pulse. JET matters because it showed that only countries working together can afford the biggest fusion machines: it was the model for ITER.",
+   "criteria": [
+    "The label gives name, place, type and years from the panel.",
+    "The label gives one achievement with its date and keeps results and plans apart.",
+    "The label explains why the facility matters for competition or collaboration.",
+    "The label is 60–90 words and written in the writer's own words."
+   ]
+  },
+  {
+   "id": "find-error",
+   "stage": "sovella",
+   "type": "choice",
+   "title": "Find the error",
+   "prompt": "A student sets the year slider to 1965 and writes: *\"In 1965 only three countries in the world did fusion research: the list shows only American, British and Soviet machines.\"* What is wrong with this conclusion?",
+   "choices": [
+    {
+     "text": "The explorer is a selection, not every lab.",
+     "correct": true,
+     "feedback": "Right. For example, Germany's Max Planck Institute for Plasma Physics (IPP) was founded in 1960, and its first Wendelstein stellarators ran from 1960, but its first machine in the explorer, Pulsator, starts only in 1973. A short list in a selection is not proof that nobody else did research."
+    },
+    {
+     "text": "Nothing: others began only after T-3 in 1969.",
+     "feedback": "Some did start tokamaks after 1969, but research had begun earlier: Germany's IPP was founded in 1960. The explorer is a selection of important machines, so it cannot show every lab."
+    },
+    {
+     "text": "The slider shows only machines built in 1965.",
+     "feedback": "The slider shows machines *operating* in that year, not only those built then. The real problem is that the explorer is a selection."
+    },
+    {
+     "text": "The filter hides machines with unknown end years.",
+     "feedback": "It does not hide them: it counts them for ten years after their start, so T-3 and Scylla I are in the 1965 list. The real problem is that the explorer is a selection."
+    }
+   ]
+  },
+  {
+   "id": "misconception",
+   "stage": "sovella",
+   "type": "theory",
+   "sections": [
+    "Yleinen virhekäsitys"
+   ]
+  },
+  {
+   "id": "check-1",
+   "stage": "tarkista",
+   "type": "choice",
+   "title": "1. History: the turning point",
+   "prompt": "Which event made fusion research open to scientists of all countries?",
+   "choices": [
+    {
+     "text": "The UN atomic energy conference in Geneva in 1958",
+     "correct": true,
+     "feedback": "Right. The United States, the Soviet Union and the United Kingdom declassified their fusion research there and presented it in detail."
+    },
+    {
+     "text": "The Reagan–Gorbachev summit in Geneva in 1985",
+     "feedback": "The 1985 summit started the idea of ITER, but fusion research had already been open since the 1958 conference in the same city."
+    },
+    {
+     "text": "The signing of the ITER Agreement in Paris in 2006",
+     "feedback": "By 2006 fusion research had been open for almost fifty years. It became open at the 1958 Geneva conference."
+    },
+    {
+     "text": "The first plasma of the T-1 tokamak in Moscow in 1958",
+     "feedback": "T-1 was a Soviet machine, not an act of openness. The declassification came at the Geneva conference of September 1958."
+    }
+   ]
+  },
+  {
+   "id": "check-2",
+   "stage": "tarkista",
+   "type": "choice",
+   "title": "2. Data: reading the explorer",
+   "prompt": "The list shows *Model A, 1953–?*. What does the question mark mean, and how does the year filter treat Model A?",
+   "choices": [
+    {
+     "text": "No end year is known, so the filter counts it only up to 1963.",
+     "correct": true,
+     "feedback": "Right. No source gives Model A's end year, so the explorer counts it for ten years after its start, as the note in its panel says. This is a reasonable guess, not a fact: check such lines yourself."
+    },
+    {
+     "text": "Model A is still operating, so the filter shows it up to today.",
+     "feedback": "An operating machine shows *today* as its end. *–?* means that the end year is unknown, and the filter counts Model A only up to 1963."
+    },
+    {
+     "text": "The start year is uncertain, so the filter never shows Model A.",
+     "feedback": "The start year, 1953, is known. The question mark replaces the *end* year, and the filter counts Model A from 1953 to 1963."
+    },
+    {
+     "text": "No end year is known, so the filter shows it in every later year.",
+     "feedback": "The explorer avoids that mistake: a retired machine with an unknown end is counted only for ten years after its start (or to the last year a source shows it running)."
+    }
+   ]
+  },
+  {
+   "id": "check-3",
+   "stage": "tarkista",
+   "type": "choice",
+   "title": "3. Collaboration: which machine?",
+   "prompt": "Which facility in the explorer is the best example of international collaboration in the building of one machine?",
+   "choices": [
+    {
+     "text": "JT-60SA, built by Japan and Europe together",
+     "correct": true,
+     "feedback": "Right. JT-60SA at Naka was built and is run by Japan and the European Union. ITER, JET and HL-2A are other examples."
+    },
+    {
+     "text": "ZETA, Britain's large pinch machine of 1957",
+     "feedback": "ZETA was a national, at first secret, British project. It shows the competition of the 1950s, not collaboration."
+    },
+    {
+     "text": "T-1, the first Soviet tokamak of 1958",
+     "feedback": "T-1 was a national Soviet machine. Collaboration came later, for example with the British measurement of T-3 in 1969."
+    },
+    {
+     "text": "Perhapsatron, a secret Los Alamos pinch",
+     "feedback": "The Perhapsatron was part of a secret US programme in the 1950s, an example of competition, not collaboration."
+    }
+   ]
+  },
+  {
+   "id": "check-write-help",
+   "stage": "tarkista",
+   "type": "text",
+   "text": "<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>Before 1970, fusion machines in the explorer stood only in …</li><li>Today, the map shows …</li><li>The change happened because …</li><li>However, the data has limits: …</li><li>Competition has not disappeared: …</li></ul></div>"
+  },
+  {
+   "id": "check-write",
+   "stage": "tarkista",
+   "type": "explain",
+   "title": "4. Write: from competition to collaboration",
+   "prompt": "Write a paragraph of 100–140 words. Compare the geography of fusion machines before 1970 with today's network. Use at least two pieces of evidence from the explorer (counts, facilities or panels) and one event from the timeline, explain why the change happened, and name one limit of the data.",
+   "model": "Before 1970, fusion machines in the explorer stood only in the United States, the United Kingdom and the Soviet Union, and until 1958 their large programmes were secret. Today, operating facilities stand in 12 countries on three continents, and the largest machine, ITER, is built by seven members. The change happened because the 1958 Geneva conference made the field open, because surprising results such as T-3's needed independent checks, and because machines became too expensive for one country: JET (1978) and ITER (agreement in 2006) were shared. Machines even crossed borders, like Germany's ASDEX, which became HL-2A in China. However, the data has limits: it is a selection, and for old machines with unknown end years, such as T-3, the year filter can only guess. Competition has not disappeared: countries and companies still race for records.",
+   "criteria": [
+    "The answer describes the geography before 1970 (few countries, secrecy until 1958) and today's network with evidence from the explorer.",
+    "The answer uses at least one dated event (1958, 1969, 1978, 1985 or 2006).",
+    "The answer explains at least one reason for the change.",
+    "The answer names a limitation of the data.",
+    "The answer is 100–140 words with clear linking words (*because*, *however*)."
+   ]
+  },
+  {
+   "id": "summary",
+   "stage": "tarkista",
+   "type": "theory",
+   "sections": [
+    "Tiivistelmä"
+   ]
+  },
+  {
+   "id": "french-corner",
+   "stage": "tarkista",
+   "type": "text",
+   "text": "<div class=\"french-corner\"><h4>Le coin français</h4><p>The biggest marker on the map is in France. Listen, repeat, and show your partner ITER on the map while you say the last sentence. In the hints, capitals show the stressed syllable, and <em>õ</em>, <em>ã</em>, <em>ẽ</em> are nasal vowels: the air goes through the nose and no <em>n</em> is heard.</p></div>\n\n<div class=\"fx\" data-fx=\"say\" id=\"fx-gfe-french\"><script type=\"application/json\">{\"lang\": \"fr-FR\", \"title\": \"Le coin français: the map\", \"phrases\": [{\"fr\": \"la carte du monde\", \"en\": \"the world map\", \"tip\": \"*la KART dy MÕD*: the French *u* is the Finnish *y*, and *on* is nasal.\"}, {\"fr\": \"le pays\", \"en\": \"the country\", \"tip\": \"*lö pe-I*: two syllables; the final *s* is silent.\"}, {\"fr\": \"la coopération internationale\", \"en\": \"international cooperation\", \"tip\": \"*la ko-o-pe-ra-SJÕ ẽ-ter-na-sjo-NAL*: say both *o* sounds of {fr}coo{/fr} separately.\"}, {\"fr\": \"La France accueille ITER.\", \"en\": \"France hosts ITER.\", \"tip\": \"*la FRÃS a-KÖJ i-TER*: {fr}accueille{/fr} ends like Finnish *öi* without the *i* clearly heard.\"}]}</script></div>"
+  }
+ ]
+}

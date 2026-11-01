@@ -1,0 +1,85 @@
+{
+ "id": "fy14-atom-models",
+ "course": "FY14",
+ "chapter": 1,
+ "order": 3,
+ "title": "From Rutherford's nucleus to Bohr's atom",
+ "description": "The gold-foil experiment reveals a tiny nucleus, and Bohr's energy levels explain why glowing hydrogen gives only a few sharp lines of colour.",
+ "kind": "physics",
+ "minutes": 75,
+ "subjects": [
+  "physics",
+  "english",
+  "french"
+ ],
+ "sources": [
+  {
+   "title": "Rutherford scattering experiments (Wikipedia): Geiger and Marsden 1909 (about 1 in 8000 alpha particles turned back by a platinum reflector), zinc sulfide screen and microscope, Rutherford's 1911 paper, his 'tissue paper' quote, nuclear radius estimate 27 fm and the gold nucleus about 7.3 fm",
+   "url": "https://en.wikipedia.org/wiki/Rutherford_scattering_experiments",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Plum pudding model (Wikipedia): Thomson 1904, large-angle scattering negligible in his model",
+   "url": "https://en.wikipedia.org/wiki/Plum_pudding_model",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Ernest Marsden (Wikipedia): born 1889, a 20-year-old undergraduate in 1909, Secretary of New Zealand's DSIR from 1926, died 1970",
+   "url": "https://en.wikipedia.org/wiki/Ernest_Marsden",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Ernest Rutherford (Wikipedia): Manchester from 1907, Cambridge from 1919, Nobel Prize in Chemistry 1908",
+   "url": "https://en.wikipedia.org/wiki/Ernest_Rutherford",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Bohr model (Wikipedia): published July 1913, energy levels −13.6 eV/n², Balmer 1885 and Rydberg 1888, the model's failures for many-electron atoms, Larmor's radiating accelerated charge",
+   "url": "https://en.wikipedia.org/wiki/Bohr_model",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Niels Bohr (Wikipedia): 1885–1962, Copenhagen, the 1913 trilogy, his institute opened in 1921, Nobel Prize 1922 and its motivation",
+   "url": "https://en.wikipedia.org/wiki/Niels_Bohr",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Balmer series (Wikipedia): wavelengths in air 656.279, 486.135, 434.0472 and 410.1734 nm; transitions to n = 2",
+   "url": "https://en.wikipedia.org/wiki/Balmer_series",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Johann Jakob Balmer (Wikipedia): Swiss mathematician who taught at a girls' school in Basel; his formula of 1885",
+   "url": "https://en.wikipedia.org/wiki/Johann_Jakob_Balmer",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Gold (Wikipedia): atomic number 79, empirical atomic radius 144 pm",
+   "url": "https://en.wikipedia.org/wiki/Gold",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Fotoni material bank, University of Helsinki: the station on spectra of light sources (filament lamp and gas discharge tubes)",
+   "url": "https://www.helsinki.fi/fi/tiedekasvatus/opettajille/fysiikan-avoin-opetuslaboratorio-fotoni/fotonin-materiaalipankki",
+   "checked": "2026-11-01"
+  }
+ ],
+ "media": [
+  {
+   "file": "units/fy14/pics/rutherford.jpg",
+   "title": "Ernest Rutherford",
+   "creator": "Bain News Service, publisher",
+   "source": "https://commons.wikimedia.org/wiki/File:Sir_Ernest_Rutherford_LCCN2014716719_-_restoration1.jpg",
+   "licence": "Public domain",
+   "licence_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  {
+   "file": "units/fy14/pics/bohr.jpg",
+   "title": "Niels Bohr around 1922",
+   "creator": "AB Lagrelius & Westphal",
+   "source": "https://commons.wikimedia.org/wiki/File:Niels_Bohr.jpg",
+   "licence": "Public domain",
+   "licence_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  }
+ ]
+}

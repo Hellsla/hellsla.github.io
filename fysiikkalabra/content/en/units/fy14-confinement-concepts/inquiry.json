@@ -1,0 +1,394 @@
+{
+ "version": 1,
+ "contribution": "Opens chapter 6 with the paths other than the conventional tokamak: Z- and theta-pinches and their instabilities and end losses, inertial confinement with NIF's 2022 ignition and what target gain does and does not mean, spherical tokamaks, HTS magnets and private concepts, practising the distinction between measured results, public plans and company claims.",
+ "learn": [
+  "explain how pinches and inertial confinement compress a fusion fuel, and why each has limitations.",
+  "calculate a target gain and compare it with the electricity a facility uses.",
+  "evaluate statements about fusion as measured results, public plans or company claims."
+ ],
+ "prior": [
+  "A magnetic field holds charged particles across field lines but not along them, so a straight field has open ends (chapter *Charged particles and magnetic confinement*)",
+  "Lawson's triple product: density, temperature and confinement time are all needed (chapter *Plasma: the fourth state of matter*)"
+ ],
+ "activities": [
+  {
+   "id": "hook",
+   "stage": "herata",
+   "type": "hook",
+   "text": "Since the 1950s, fusion researchers have tried long straight tubes, rings of every shape, giant lasers and machines that crush plasma with pistons. In December 2022 news around the world announced a fusion breakthrough at a laser laboratory in California. Today private companies promise fusion electricity within a few years, while the large public project ITER plans its first deuterium–tritium experiments for 2039.",
+   "question": "With so many paths and so many promises, how can you tell which ones are closest to working?"
+  },
+  {
+   "id": "review",
+   "stage": "herata",
+   "type": "choice",
+   "title": "Review: open ends",
+   "prompt": "In the unit *Charged particles and magnetic confinement* you saw a proton in a straight magnetic field. What happens to a particle that has some velocity along the field lines?",
+   "choices": [
+    {
+     "text": "It spirals along a field line and out of an end.",
+     "correct": true,
+     "feedback": "Right. The field holds particles across the field lines, but not along them. In a straight field every particle with $v_{\\parallel} \\neq 0$ eventually reaches an end, unless a magnetic mirror reflects it. Keep this in mind for the straight pinch machines of the 1950s."
+    },
+    {
+     "text": "It stays in place, as the field stops all motion.",
+     "feedback": "The magnetic force is perpendicular to the velocity: it bends the motion across the field into circles, but it does not affect the motion along the field."
+    },
+    {
+     "text": "The field pushes it to the centre of the tube.",
+     "feedback": "The force points to the centre of the particle's own small circle, not to the centre of the machine. Along the field the particle moves freely."
+    }
+   ]
+  },
+  {
+   "id": "pred-pinch",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Prediction 1: a current through a plasma",
+   "justify": true,
+   "reveal": {
+    "after": "theory-pinch"
+   },
+   "prompt": "A very large electric current is sent *along* a column of plasma in a straight tube. Every current is surrounded by its own magnetic field. What does this field do to the plasma column?",
+   "choices": [
+    {
+     "text": "It pushes the plasma outward against the walls.",
+     "feedback": "Parallel currents attract each other: all the small currents in the column pull together. The magnetic force on the plasma points *inward*, which is why the device is called a pinch."
+    },
+    {
+     "text": "It squeezes the column inward and makes it thinner.",
+     "correct": true,
+     "feedback": "The theory supports this. The current's circular magnetic field pushes the current-carrying plasma inward: the column is pinched, compressed and heated. The trouble is that the squeezed column is unstable and kinks."
+    },
+    {
+     "text": "Nothing, because a current's own field cannot act on it.",
+     "feedback": "Each part of the current feels the field made by the other parts. The result is an inward force: the Z-pinch."
+    },
+    {
+     "text": "It bends the straight column into a closed ring.",
+     "feedback": "The field of a straight current circles around it and squeezes it inward. A pinched column can kink, but it does not form a neat ring."
+    }
+   ]
+  },
+  {
+   "id": "pred-nif",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Prediction 2: the 2022 breakthrough",
+   "justify": true,
+   "reveal": {
+    "after": "theory-inertial"
+   },
+   "prompt": "On 5 December 2022, the lasers of the National Ignition Facility delivered $2.05\\ \\text{MJ}$ of light to a tiny fuel target, and the target released $3.15\\ \\text{MJ}$ of fusion energy. Did the facility as a whole produce more energy than it used?",
+   "choices": [
+    {
+     "text": "Yes, it produced about $50\\ \\%$ more energy than it used.",
+     "feedback": "$3.15 : 2.05 \\approx 1.5$ compares the fusion energy with the laser light on the *target*. The lasers took about $300\\ \\text{MJ}$ of electricity to fire, so the facility used about a hundred times more energy than the target released."
+    },
+    {
+     "text": "No: making the laser light took far more electricity.",
+     "correct": true,
+     "feedback": "The evidence supports this: the theory, the NIF table and the sorting task. The laser pulse of $2.05\\ \\text{MJ}$ took about $300\\ \\text{MJ}$ of electricity, so the fusion energy was only about $1\\ \\%$ of it. The target gain above one was still a real scientific first."
+    },
+    {
+     "text": "Yes, and since then NIF has supplied electricity to the grid.",
+     "feedback": "NIF has no equipment to make electricity, and it uses far more energy than its targets release. It is a research facility, built mainly for nuclear-weapons science."
+    },
+    {
+     "text": "Nobody knows, because fusion energy cannot be measured.",
+     "feedback": "The fusion energy is measured from the neutrons the target gives off, and the laser and electrical energies are measured too. The result is clear: about $3.15\\ \\text{MJ}$ out against about $300\\ \\text{MJ}$ of electricity."
+    }
+   ]
+  },
+  {
+   "id": "nif-data",
+   "stage": "tutki",
+   "type": "interpret",
+   "title": "Investigation 1: NIF's ignition shots",
+   "source": "statistics",
+   "source_note": "Lawrence Livermore National Laboratory, *Achieving fusion ignition* (lmf.llnl.gov), read 2026-11-01. Selected shots; energies as published by LLNL (to one decimal for 2024, and the fusion energy of that shot only estimated).",
+   "text": "| Date | Laser energy on target (MJ) | Fusion energy (MJ) |\n| --- | --- | --- |\n| 5 Dec 2022 | $2.05$ | $3.15$ |\n| 30 Jul 2023 | $2.05$ | $3.88$ |\n| 12 Feb 2024 | $2.2$ | about $5.2$ (estimate) |\n| 23 Feb 2025 | $2.05$ | $5.0$ |\n| 7 Apr 2025 | $2.08$ | $8.6$ |\n\nThe **target gain** is the fusion energy divided by the laser energy on target: $G = E_\\text{fusion} : E_\\text{laser}$.",
+   "question": {
+    "type": "numeric",
+    "prompt": "Calculate the target gain $G$ of the record shot on 7 April 2025.",
+    "answer": 4.13,
+    "unit": "",
+    "tolerance": 0.02,
+    "hints": [
+     "Divide the fusion energy by the laser energy of the same row.",
+     "$G = 8.6\\ \\text{MJ} : 2.08\\ \\text{MJ}$"
+    ],
+    "mistakes": [
+     {
+      "value": 0.242,
+      "feedback": "You divided the laser energy by the fusion energy. The gain is *energy out* divided by *energy in*, so it is larger than one here."
+     },
+     {
+      "value": 6.52,
+      "feedback": "That is the *difference* $8.6\\ \\text{MJ} - 2.08\\ \\text{MJ}$, the net energy of the target in megajoules. The gain is a ratio."
+     }
+    ],
+    "solution": "**Given:** $E_\\text{fusion} = 8.6\\ \\text{MJ}$, $E_\\text{laser} = 2.08\\ \\text{MJ}$ (7 April 2025)\n\n**Asked:** the target gain $G$\n\n**Principle:** The target gain compares the fusion energy released with the laser energy that reached the target.\n\n**Formula:**\n\n$$G = \\frac{E_\\text{fusion}}{E_\\text{laser}}$$\n\n**Unit conversions:** None: both energies are in megajoules, and the units cancel.\n\n**Substitution:**\n\n$$G = \\frac{8.6\\ \\text{MJ}}{2.08\\ \\text{MJ}} = 4.13$$\n\n**Answer:** $G \\approx 4.1$. LLNL reports $4.13$; the fusion energy $8.6\\ \\text{MJ}$ has two significant figures, and it has an uncertainty of about $\\pm 0.45\\ \\text{MJ}$.\n\n**Reasonableness:** The table shows the fusion energy growing from $3.15$ to $8.6\\ \\text{MJ}$ with almost the same laser energy, so the gain grew from about $1.5$ to about $4$. The laser energy is still only a small part of the electricity the facility uses."
+   }
+  },
+  {
+   "id": "claims-sort",
+   "stage": "tutki",
+   "type": "text",
+   "title": "Investigation 2: result, plan or claim?",
+   "text": "Scientists, governments and companies all make statements about fusion. A **measured result** has already happened and been reported with data. A **public plan** is a goal of a public project or government. A **company claim** is a target that a company sets for itself. Sort the statements (all checked on 1 November 2026).\n\n<div class=\"fx\" data-fx=\"match\" id=\"fx-cc-claims\"><script type=\"application/json\">{\"prompt\": \"What kind of statement is it?\", \"options\": [\"measured result\", \"public plan\", \"company claim\"], \"items\": [{\"text\": \"On 5 December 2022, a NIF target released 3.15 MJ from 2.05 MJ of laser light.\", \"answer\": \"measured result\", \"feedback\": \"It has happened: LLNL measured and published it, and the result has been repeated.\"}, {\"text\": \"In September 2021, a large high-temperature superconducting magnet reached 20 tesla.\", \"answer\": \"measured result\", \"feedback\": \"The test was carried out and reported by MIT and Commonwealth Fusion Systems.\"}, {\"text\": \"ITER plans to start deuterium–tritium operation in 2039.\", \"answer\": \"public plan\", \"feedback\": \"It is the schedule of an international public project, from 2024. It may still change.\"}, {\"text\": \"STEP, a UK prototype plant at West Burton, aims to operate by 2040.\", \"answer\": \"public plan\", \"feedback\": \"A goal of a government programme, delivered by a public company owned by UKAEA.\"}, {\"text\": \"Helion will deliver fusion electricity to Microsoft from 2028.\", \"answer\": \"company claim\", \"feedback\": \"A commercial agreement and a target set by the company itself; no fusion device has yet produced net electricity.\"}, {\"text\": \"SPARC will make its first plasma around 2027 and reach a gain of about 11.\", \"answer\": \"company claim\", \"feedback\": \"The company's own plan and prediction. Earlier dates for SPARC have already slipped.\"}], \"done\": \"A result is evidence; a plan or a claim is a promise. Read the date and the source of every statement.\"}</script></div>"
+  },
+  {
+   "id": "lang-claims",
+   "stage": "tutki",
+   "type": "text",
+   "text": "<div class=\"wordbank\"><h4>Word bank</h4><p>a measured result · a plan · a claim · evidence · a target · to announce · to promise · to confirm · independent · reliable</p></div>\n\n<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>This is a result, because …</li><li>This is only a claim, because …</li><li>The evidence for this comes from …</li><li>Before I believe this, I would want to know …</li><li>I agree / I disagree, because …</li></ul></div>"
+  },
+  {
+   "id": "claims-talk",
+   "stage": "tutki",
+   "type": "explain",
+   "title": "Discuss: why does the difference matter?",
+   "prompt": "Discuss with a partner, then write three sentences. Choose one *measured result* and one *company claim* from the sorting task. What makes the first one evidence? What would you need to see before you believed the second one?",
+   "model": "NIF's shot of 5 December 2022 is a measured result, because the laboratory measured the laser energy and the fusion energy, published them, and repeated ignition later. Helion's promise of electricity for Microsoft from 2028 is only a claim, because no fusion device has yet produced net electricity. Before I believed it, I would want to see measured data from the machine, reviewed by independent scientists, showing more electricity out than in.",
+   "criteria": [
+    "The answer names one measured result and one company claim from the task.",
+    "The answer says what makes a result evidence (it happened, was measured, published or repeated).",
+    "The answer names what would be needed to believe the claim (data, independent checks, a demonstration).",
+    "The answer uses at least two words from the word bank and a sentence starter."
+   ]
+  },
+  {
+   "id": "theory-pinch",
+   "stage": "selita",
+   "type": "theory",
+   "sections": [
+    "Pinches"
+   ]
+  },
+  {
+   "id": "theory-inertial",
+   "stage": "selita",
+   "type": "theory",
+   "sections": [
+    "Inertial"
+   ]
+  },
+  {
+   "id": "theory-compact",
+   "stage": "selita",
+   "type": "theory",
+   "sections": [
+    "Compact",
+    "Private",
+    "Ydinajatus"
+   ]
+  },
+  {
+   "id": "vocabulary",
+   "stage": "selita",
+   "type": "text",
+   "title": "Words of the lesson",
+   "text": "<div class=\"fx\" data-fx=\"match\" id=\"fx-cc-words\"><script type=\"application/json\">{\"prompt\": \"Match each word with its meaning.\", \"options\": [\"a squeeze by the plasma's own current\", \"fusion held only by inertia\", \"gold cylinder that makes X-rays\", \"fusion energy : laser energy\", \"major radius : minor radius\", \"superconductor at about 20 K\"], \"items\": [{\"text\": \"pinch\", \"answer\": \"a squeeze by the plasma's own current\", \"feedback\": \"To *pinch* means to squeeze between two fingers. The magnetic field of the current squeezes the plasma column.\"}, {\"text\": \"inertial confinement\", \"answer\": \"fusion held only by inertia\", \"feedback\": \"*Inertia* is the resistance of matter to a change of motion: the compressed fuel cannot fly apart instantly.\"}, {\"text\": \"hohlraum\", \"answer\": \"gold cylinder that makes X-rays\", \"feedback\": \"German for *hollow room*. Its hot walls fill it with X-rays that drive the capsule.\"}, {\"text\": \"target gain\", \"answer\": \"fusion energy : laser energy\", \"feedback\": \"$G = E_\\\\text{fusion} : E_\\\\text{laser}$. It does not include the electricity that fires the lasers.\"}, {\"text\": \"aspect ratio\", \"answer\": \"major radius : minor radius\", \"feedback\": \"$R : a$, about $3$ for ITER and below $2$ for a spherical tokamak.\"}, {\"text\": \"HTS\", \"answer\": \"superconductor at about 20 K\", \"feedback\": \"*High-temperature superconductor*: high only compared with the $4\\\\ \\\\text{K}$ of older superconductors.\"}], \"done\": \"Use these words when you compare the concepts.\"}</script></div>"
+  },
+  {
+   "id": "back-to-predictions",
+   "stage": "selita",
+   "type": "reflect",
+   "title": "Back to your predictions",
+   "prompt": "Compare your two predictions with the theory. Then answer the opening question in one or two sentences: why have researchers built so many different kinds of fusion machines?",
+   "predictions": [
+    "pred-pinch",
+    "pred-nif"
+   ]
+  },
+  {
+   "id": "example",
+   "stage": "sovella",
+   "type": "theory",
+   "sections": [
+    "Esimerkki"
+   ]
+  },
+  {
+   "id": "gain-task",
+   "stage": "sovella",
+   "type": "numeric",
+   "title": "Apply: what gain would be needed?",
+   "prompt": "Suppose that for the record shot of 7 April 2025 the lasers again drew about $300\\ \\text{MJ}$ of electricity to deliver $2.08\\ \\text{MJ}$ to the target. What target gain $G$ would a shot need so that its fusion energy at least *equals* the electricity drawn?",
+   "answer": 144,
+   "unit": "",
+   "tolerance": 0.03,
+   "hints": [
+    "The fusion energy must be $300\\ \\text{MJ}$. What is $G$ then?",
+    "$G = E_\\text{fusion} : E_\\text{laser}$ with $E_\\text{fusion} = 300\\ \\text{MJ}$ and $E_\\text{laser} = 2.08\\ \\text{MJ}$."
+   ],
+   "mistakes": [
+    {
+     "value": 4.13,
+     "feedback": "That is the gain the shot actually reached. The question asks for the gain that would give $300\\ \\text{MJ}$ of fusion energy."
+    },
+    {
+     "value": 0.00693,
+     "feedback": "You divided the laser energy by the electricity. The gain is fusion energy divided by laser energy, with $E_\\text{fusion} = 300\\ \\text{MJ}$."
+    }
+   ],
+   "solution": "**Given:** $E_\\text{el} \\approx 300\\ \\text{MJ}$, $E_\\text{laser} = 2.08\\ \\text{MJ}$; the fusion energy must equal the electricity, $E_\\text{fusion} = E_\\text{el}$\n\n**Asked:** the target gain $G$ needed\n\n**Principle:** The target gain is $E_\\text{fusion} : E_\\text{laser}$. Setting $E_\\text{fusion}$ equal to the electricity gives the gain at which the shot would just pay back the electricity, before any losses in making electricity.\n\n**Formula:**\n\n$$G = \\frac{E_\\text{fusion}}{E_\\text{laser}} = \\frac{E_\\text{el}}{E_\\text{laser}}$$\n\n**Unit conversions:** None: both energies are in megajoules.\n\n**Substitution:**\n\n$$G = \\frac{300\\ \\text{MJ}}{2.08\\ \\text{MJ}} = 144$$\n\n**Answer:** A target gain of about $140$ would be needed, about $35$ times the record $4.13$. The electricity is known only as \"about $300\\ \\text{MJ}$\", so two significant figures are enough.\n\n**Reasonableness:** Lasers that turn under $1\\ \\%$ of their electricity into light on target need a gain of over a hundred just to break even. A power plant needs even more, because turning fusion heat into electricity loses more than half of it. This is why laser-fusion plants would need much more efficient lasers and targets with very high gain."
+  },
+  {
+   "id": "problems-match",
+   "stage": "sovella",
+   "type": "text",
+   "optional": true,
+   "title": "Compare: each path and its main problem",
+   "text": "<div class=\"fx\" data-fx=\"match\" id=\"fx-cc-problems\"><script type=\"application/json\">{\"prompt\": \"Which difficulty belongs to which concept?\", \"options\": [\"kinks and sausages\", \"plasma escapes at the ends\", \"inefficient lasers, slow shots\", \"crowded central column\", \"heat and neutrons in a small space\"], \"items\": [{\"text\": \"Z-pinch\", \"answer\": \"kinks and sausages\", \"feedback\": \"The squeezed column is unstable: it bends (kinks) or pinches off (sausages).\"}, {\"text\": \"theta-pinch in a straight tube\", \"answer\": \"plasma escapes at the ends\", \"feedback\": \"Its field runs along the tube, and particles stream out of the open ends.\"}, {\"text\": \"laser inertial fusion\", \"answer\": \"inefficient lasers, slow shots\", \"feedback\": \"NIF's lasers turn under 1 % of their electricity into light on target, and in 2014 fired about once every two days, not several times a second.\"}, {\"text\": \"spherical tokamak\", \"answer\": \"crowded central column\", \"feedback\": \"The narrow centre leaves little room for the solenoid, superconducting coils and neutron shielding.\"}, {\"text\": \"compact HTS tokamak\", \"answer\": \"heat and neutrons in a small space\", \"feedback\": \"A smaller machine with the same fusion power has stronger heat and neutron loads on every square metre of wall.\"}], \"done\": \"Every concept trades one difficulty for another.\"}</script></div>"
+  },
+  {
+   "id": "find-error",
+   "stage": "sovella",
+   "type": "choice",
+   "title": "Find the error",
+   "optional": true,
+   "prompt": "A news text says: “The target gain of $1.5$ means that the National Ignition Facility now produces $50\\ \\%$ more energy than it uses, so laser fusion power plants can be built.” What is the main error?",
+   "choices": [
+    {
+     "text": "The gain ignores the electricity for the lasers.",
+     "correct": true,
+     "feedback": "Right. $G = 3.15 : 2.05$ compares the fusion energy with the laser light on the target. The facility used about $300\\ \\text{MJ}$ of electricity, a hundred times more than the fusion energy."
+    },
+    {
+     "text": "The gain is wrong: it should be $3.15 - 2.05 = 1.1$ instead.",
+     "feedback": "A gain is a ratio, not a difference: $3.15 : 2.05 \\approx 1.5$ is right. The error is in what the gain is compared with."
+    },
+    {
+     "text": "NIF uses magnetic confinement, not powerful lasers.",
+     "feedback": "NIF is an inertial confinement facility: its 192 lasers drive the implosion. The error is in reading the gain as a gain of the whole facility."
+    },
+    {
+     "text": "There is no error; the news text is quite correct.",
+     "feedback": "Ignition was a real milestone, but the facility draws far more electricity than the target releases, and a plant would also need many cheap shots every second."
+    }
+   ]
+  },
+  {
+   "id": "misconception",
+   "stage": "sovella",
+   "type": "theory",
+   "sections": [
+    "Yleinen virhekäsitys"
+   ]
+  },
+  {
+   "id": "check-1",
+   "stage": "tarkista",
+   "type": "choice",
+   "title": "1. Concept: two pinches",
+   "prompt": "How do a Z-pinch and a theta-pinch differ?",
+   "choices": [
+    {
+     "text": "Z: current along the plasma; theta: around the tube.",
+     "correct": true,
+     "feedback": "Right. In a Z-pinch the current along the column makes a circular field that squeezes it. In a theta-pinch a coil current around the tube makes a field along the tube, which squeezes the plasma from all sides."
+    },
+    {
+     "text": "A Z-pinch uses lasers, and a theta-pinch uses magnets.",
+     "feedback": "Both are magnetic: in both, a current and its magnetic field squeeze the plasma. Lasers are used in inertial confinement."
+    },
+    {
+     "text": "A Z-pinch is a ring, and a theta-pinch is a sphere.",
+     "feedback": "Both were usually straight tubes. The names come from the direction of the current: along the axis $z$ or around it, in the direction of the angle $\\theta$."
+    },
+    {
+     "text": "Only the theta-pinch has a magnetic field at all.",
+     "feedback": "Every current has a magnetic field. In a Z-pinch the field of the plasma current itself does the squeezing."
+    }
+   ]
+  },
+  {
+   "id": "check-2",
+   "stage": "tarkista",
+   "type": "choice",
+   "title": "2. Inertial confinement",
+   "prompt": "In inertial confinement fusion, what keeps the hot, compressed fuel together long enough to fuse?",
+   "choices": [
+    {
+     "text": "A strong magnetic field around the capsule.",
+     "feedback": "There is no confining magnetic field in laser inertial fusion. The fuel is compressed so fast that it fuses before it flies apart."
+    },
+    {
+     "text": "Its own inertia, for less than a billionth of a second.",
+     "correct": true,
+     "feedback": "Right. Matter cannot change its motion instantly. The imploding fuel needs a short time to fly apart again, and fusion happens within that time."
+    },
+    {
+     "text": "The gold walls of the hohlraum, which press on the fuel.",
+     "feedback": "The hohlraum's walls make X-rays; they never touch the fuel. The capsule is driven inward by its own boiling outer layer."
+    },
+    {
+     "text": "Gravity, as in the core of the Sun.",
+     "feedback": "A capsule the size of a peppercorn has no significant gravity. Only stars are held together by gravity."
+    }
+   ]
+  },
+  {
+   "id": "check-3",
+   "stage": "tarkista",
+   "type": "choice",
+   "title": "3. Evaluate a statement",
+   "prompt": "Which of these statements about fusion is an established, measured result (as of November 2026)?",
+   "choices": [
+    {
+     "text": "A compact HTS tokamak will reach a gain of about 11 by 2027.",
+     "feedback": "This is a company's plan and prediction. Nothing of it has been measured yet."
+    },
+    {
+     "text": "Fusion electricity will be sold to a data-centre firm from 2028 on.",
+     "feedback": "This is a commercial agreement and a company target. No fusion device has yet produced net electricity."
+    },
+    {
+     "text": "A fusion target released more energy than the laser light on it.",
+     "correct": true,
+     "feedback": "Right. NIF first did this on 5 December 2022 ($3.15\\ \\text{MJ}$ from $2.05\\ \\text{MJ}$) and has repeated it several times. It is measured and published."
+    },
+    {
+     "text": "A prototype fusion power plant will supply the UK grid by 2040.",
+     "feedback": "This is the goal of the public STEP programme: a plan, not a result."
+    }
+   ]
+  },
+  {
+   "id": "lang-explain",
+   "stage": "tarkista",
+   "type": "text",
+   "text": "<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>I would fund … because …</li><li>One advantage of … is that …</li><li>A limitation of this technology is …</li><li>On the other hand, …</li><li>The evidence so far shows …, but … is only a claim.</li></ul></div>"
+  },
+  {
+   "id": "check-explain",
+   "stage": "tarkista",
+   "type": "explain",
+   "title": "4. Argue: which path would you fund?",
+   "prompt": "You advise a research council with money for one fusion concept from this unit (a pinch, laser inertial fusion, a spherical tokamak or a compact HTS tokamak). Write four or five sentences: name your choice, give one advantage and one limitation, and separate what has been shown from what is only planned or claimed.",
+   "model": "I would fund the compact HTS tokamak. One advantage is that high-temperature superconducting magnets reach very strong fields, and a $20\\ \\text{T}$ magnet was really tested in 2021, so the plasma can be held in a much smaller and perhaps cheaper machine. A limitation of this technology is that the heat and neutrons are concentrated on a smaller wall area, and nobody has yet shown that the materials survive. The magnet result is evidence, but the company's first plasma around 2027 and its gain of about 11 are only plans. So I would fund it with clear checkpoints based on measured results.",
+   "criteria": [
+    "The answer names one concept from the unit and gives a reason for the choice.",
+    "The answer gives one correct advantage and one correct limitation of that concept.",
+    "The answer separates a measured result from a plan or a claim, with a date or a number.",
+    "The answer uses an argument structure with a sentence starter (I would …, One advantage …, On the other hand …)."
+   ]
+  },
+  {
+   "id": "summary",
+   "stage": "tarkista",
+   "type": "theory",
+   "sections": [
+    "Tiivistelmä"
+   ]
+  },
+  {
+   "id": "french-corner",
+   "stage": "tarkista",
+   "type": "text",
+   "text": "<div class=\"french-corner\"><h4>Le coin français</h4><p>Ignition at NIF made headlines in France too: <span lang=\"fr\">l'allumage</span> is ignition, and the target is <span lang=\"fr\">la cible</span>. France has its own large laser facility for this kind of research, <span lang=\"fr\">le Laser Mégajoule</span>, near Bordeaux. Listen, repeat, and then say the last sentence to your partner. In the hints, capitals show the stressed syllable, and <em>õ</em>, <em>ã</em> and <em>ẽ</em> are nasal vowels: the air goes through the nose and no <em>n</em> is heard.</p></div>\n\n<div class=\"fx\" data-fx=\"say\" id=\"fx-cc-french\"><script type=\"application/json\">{\"lang\": \"fr-FR\", \"title\": \"Le coin français: lasers and targets\", \"phrases\": [{\"fr\": \"le laser\", \"en\": \"the laser\", \"tip\": \"*lö la-ZER*: the *s* between two vowels sounds like *z*, and the final *r* is heard.\"}, {\"fr\": \"la cible\", \"en\": \"the target\", \"tip\": \"*la SIBL*: *{fr}c{/fr}* before *i* is an *s*, and the final *e* is silent.\"}, {\"fr\": \"l'allumage\", \"en\": \"ignition\", \"tip\": \"*la-ly-MAŽ*: the *u* is the Finnish *y*; *ž* is the sound of *s* in English *measure*.\"}, {\"fr\": \"une impulsion\", \"en\": \"a pulse\", \"tip\": \"*yn ẽ-pyl-SJÕ*: *{fr}im{/fr}* and *{fr}on{/fr}* are nasal vowels, so no *m* or *n* is heard.\"}, {\"fr\": \"Les lasers compriment la cible.\", \"en\": \"The lasers compress the target.\", \"tip\": \"*le la-ZER kõ-PRIM la SIBL*: *{fr}-ent{/fr}* at the end of a verb is silent.\"}]}</script></div>"
+  }
+ ]
+}

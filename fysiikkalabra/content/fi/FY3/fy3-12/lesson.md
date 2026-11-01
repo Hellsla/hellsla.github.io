@@ -1,6 +1,6 @@
 # Lämmön siirtyminen, energiatasapaino ja ilmastonmuutos
 
-> **Miksi** maapallon keskilämpötila on noin +$15\,{}^\circ\text{C}$ eikä pakkasen puolella, vaikka maapallo säteilee avaruuteen yhtä paljon energiaa kuin imee Auringosta?
+> **Miksi** maapallon keskilämpötila on noin $+15\,{}^\circ\text{C}$ eikä pakkasen puolella, vaikka maapallo säteilee avaruuteen yhtä paljon energiaa kuin imee Auringosta?
 
 <svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: Maa avaruudesta nähtynä, ympärillään ohut ilmakehä. Kuvan vasemmassa reunassa paistaa Aurinko, ja tähdet tuikkivat mustalla taivaalla." class="fig-hero" style="max-width:100%;font-size:24px">
   <defs><radialGradient id="fy312h-sun" cx="0.5" cy="0.5" r="0.5"><stop offset="0.55" stop-color="#ffc078"/><stop offset="0.8" stop-color="#e8590c"/><stop offset="1" stop-color="#e8590c" stop-opacity="0"/></radialGradient><radialGradient id="fy312h-ocean" cx="0.35" cy="0.35" r="0.8"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></radialGradient><clipPath id="fy312h-clip"><circle cx="800" cy="300" r="210"/></clipPath></defs>
@@ -158,7 +158,7 @@ Talon lämmitysenergiasta suuri osa kuluu siihen, että lämpö johtuu seinien, 
 Kappaleen lämpötila pysyy vakiona, kun siihen tulee yhtä suuri teho kuin siitä lähtee. Tätä sanotaan energiatasapainoksi. Maapallo saa energiaa Auringon säteilynä, josta noin $30\,\%$ heijastuu suoraan takaisin avaruuteen pilvistä, jäästä ja vaaleista pinnoista. Loppu imeytyy, ja maapallo säteilee saman tehon pois pitkäaaltoisena lämpösäteilynä. Ilman ilmakehää tasapaino asettuisi noin $-18\,{}^\circ\text{C}$:n keskilämpötilaan.
 
 ### Kasvihuoneilmiö
-Ilmakehän vesihöyry, hiilidioksidi ja metaani päästävät auringonvalon pääosin läpi, vaikka noin viidesosa siitä imeytyy ilmakehään. Ne imevät maanpinnan lähettämää lämpösäteilyä ja säteilevät osan siitä takaisin alas. Maanpinta saa siksi enemmän energiaa kuin pelkästä Auringosta, ja tasapaino asettuu noin +$15\,{}^\circ\text{C}$:een. Tätä sanotaan kasvihuoneilmiöksi, ja se vastaa alun kysymykseen.
+Ilmakehän vesihöyry, hiilidioksidi ja metaani päästävät auringonvalon pääosin läpi, vaikka noin viidesosa siitä imeytyy ilmakehään. Ne imevät maanpinnan lähettämää lämpösäteilyä ja säteilevät osan siitä takaisin alas. Maanpinta saa siksi enemmän energiaa kuin pelkästä Auringosta, ja tasapaino asettuu noin $+15\,{}^\circ\text{C}$:een. Tätä sanotaan kasvihuoneilmiöksi, ja se vastaa alun kysymykseen.
 
 <svg data-fig="energy-balance" viewBox="0 0 600 300" role="img" aria-label="Maapallon energiatasapaino, periaatekuva. Auringosta tuleva säteily kulkee ilmakehän läpi maanpintaan; osa siitä heijastuu takaisin avaruuteen. Maanpinta säteilee lämpösäteilyä ylöspäin, ja ilmakehän kasvihuonekaasut säteilevät osan siitä takaisin alas." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy312-ground" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d9b26a"/><stop offset="1" stop-color="#f1dfb5"/></linearGradient><linearGradient id="fy312-air" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#d0e6fb"/></linearGradient><radialGradient id="fy312-sun" cx="0.4" cy="0.4" r="0.7"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#ffc078"/></radialGradient></defs>
@@ -264,7 +264,7 @@ Moni sekoittaa kasvihuoneilmiön ja otsonikadon, vaikka ne ovat eri asioita: ots
 - Lämpö siirtyy johtumalla, konvektiolla ja lämpösäteilynä, ja lämpötilaeron vuoksi energiaa siirtyy nettomääräisesti lämpimämmästä kylmempään. Lämpösäteilyä lähettävät kaikki kappaleet, myös kylmempi.
 - Rakennusosan läpi johtuva lämpöteho on $P = UA\Delta T$. Pieni U-arvo tarkoittaa hyvää lämmöneristystä.
 - Energiatasapainossa tuleva ja lähtevä teho ovat yhtä suuret, ja lämpötila pysyy vakiona.
-- Kasvihuonekaasut imevät maanpinnan lämpösäteilyä ja säteilevät osan takaisin, mikä nostaa maanpinnan tasapainolämpötilan noin $-18\,{}^\circ\text{C}$:sta noin +$15\,{}^\circ\text{C}$:een.
+- Kasvihuonekaasut imevät maanpinnan lämpösäteilyä ja säteilevät osan takaisin, mikä nostaa maanpinnan tasapainolämpötilan noin $-18\,{}^\circ\text{C}$:sta noin $+15\,{}^\circ\text{C}$:een.
 - Kasvihuonekaasujen lisääntyminen rikkoo tasapainon hetkellisesti, ja maapallo lämpenee, kunnes uusi tasapaino asettuu korkeampaan lämpötilaan.
 
 <svg data-fig="scene" viewBox="0 0 600 360" role="img" aria-label="Kuvitus: omakotitalo talviyönä. Lämpöä karkaa ulos ikkunoiden ja katon kautta, mitä kuvaavat oranssit nuolet. Maassa on lunta." style="max-width:100%;font-size:24px">

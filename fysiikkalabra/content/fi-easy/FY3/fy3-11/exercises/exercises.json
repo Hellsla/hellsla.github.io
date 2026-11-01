@@ -3,7 +3,7 @@
     {
       "id": "fy3-11-L1-01",
       "level": 1,
-      "text": "Museorautatien höyryveturin sylinteriin virtaa kattilasta höyryä. Höyry työntää mäntää. Männän liikkuessa höyryn paine pysyy 480,0 kPa:na. Höyryn tilavuus sylinterissä kasvaa 0,0250 m³. Kuinka suuren työn höyry tekee männän liikkuessa? Anna vastaus kilojouleina.",
+      "text": "Museorautatien höyryveturin sylinteriin virtaa kattilasta höyryä. Höyry työntää mäntää. Männän liikkuessa höyryn paine pysyy $480{,}0\\,\\text{kPa}$:na. Höyryn tilavuus sylinterissä kasvaa $0{,}0250\\,\\text{m}^3$. Kuinka suuren työn höyry tekee männän liikkuessa? Anna vastaus kilojouleina.",
       "answer": 12.0,
       "unit": "kJ",
       "tolerance": 0.02
@@ -11,7 +11,7 @@
     {
       "id": "fy3-11-L1-02",
       "level": 1,
-      "text": "Saunan kiukaalle heitetään löylyvettä. Kun gramma vettä höyrystyy, syntyvä $100\\,{}^\\circ\\text{C}$:n höyry vie 1,70 litraa enemmän tilaa kuin vesi vei. Höyrystyminen tapahtuu ilmanpaineessa. Ilmanpaine on 101 kPa. Kuinka suuren työn höyry tekee, kun se työntää ympäröivää ilmaa tieltään?",
+      "text": "Saunan kiukaalle heitetään löylyvettä. Kun gramma vettä höyrystyy, syntyvä $100\\,{}^\\circ\\text{C}$:n höyry vie $1{,}70\\,\\textsf{l}$ enemmän tilaa kuin vesi vei. Höyrystyminen tapahtuu ilmanpaineessa. Ilmanpaine on $101\\,\\text{kPa}$. Kuinka suuren työn höyry tekee, kun se työntää ympäröivää ilmaa tieltään?",
       "answer": 172,
       "unit": "J",
       "tolerance": 0.02
@@ -19,7 +19,7 @@
     {
       "id": "fy3-11-L1-03",
       "level": 1,
-      "text": "Olkiluodon kolmannen ydinvoimalaitosyksikön reaktori tuottaa höyryä lämpöteholla 4,30 · 10³ MW. Yksikön sähköteho on 1,60 · 10³ MW. Mikä on yksikön hyötysuhde? Anna vastaus prosentteina.",
+      "text": "Olkiluodon kolmannen ydinvoimalaitosyksikön reaktori tuottaa höyryä lämpöteholla $4{,}30 \\cdot 10^{3}\\,\\text{MW}$. Yksikön sähköteho on $1{,}60 \\cdot 10^{3}\\,\\text{MW}$. Mikä on yksikön hyötysuhde? Anna vastaus prosentteina.",
       "answer": 37.2,
       "unit": "%",
       "tolerance": 0.02
@@ -62,7 +62,7 @@
     {
       "id": "fy3-11-L2-03",
       "level": 2,
-      "text": "Fysiikan tunnilla sylinterissä on ilmaa. Kevyesti liikkuva mäntä sulkee sylinterin. Ilmaa lämmitetään, ja siihen siirtyy lämpömäärä $700{,}0\\,\\text{J}$. Ilma laajenee niin, että sen paine pysyy 125 kPa:na ja tilavuus kasvaa 1,60 litraa. Kuinka paljon ilman sisäenergia muuttuu? Käytä ensimmäistä pääsääntöä $\\Delta U = Q - W_\\text{k}$. Siinä $W_\\text{k}$ on ilman tekemä työ. Anna vastaus etumerkkeineen.",
+      "text": "Fysiikan tunnilla sylinterissä on ilmaa. Kevyesti liikkuva mäntä sulkee sylinterin. Ilmaa lämmitetään, ja siihen siirtyy lämpömäärä $700{,}0\\,\\text{J}$. Ilma laajenee niin, että sen paine pysyy $125\\,\\text{kPa}$:na ja tilavuus kasvaa $1{,}60\\,\\textsf{l}$. Kuinka paljon ilman sisäenergia muuttuu? Käytä ensimmäistä pääsääntöä $\\Delta U = Q - W_\\text{k}$. Siinä $W_\\text{k}$ on ilman tekemä työ. Anna vastaus etumerkkeineen.",
       "answer": 500,
       "unit": "J",
       "tolerance": 0.02
