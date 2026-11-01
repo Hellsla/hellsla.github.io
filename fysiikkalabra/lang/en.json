@@ -119,7 +119,8 @@
     "lang_unavailable_home": "page not available yet, goes to the front page",
     "local_status_building": "Under construction",
     "local_status_home_building": "Course under construction",
-    "local_status_note_building": "Units are published as they are completed and checked. The scope and assessment have not been confirmed."
+    "local_status_note_building": "Units are published as they are completed and checked. The scope and assessment have not been confirmed.",
+    "local_status_ready": "Ready"
   },
   "lesson": {
     "steps_nav": "Steps of the lesson",
