@@ -1,35 +1,27 @@
 VERDICT: PASS
-CONTENT-HASH: 78ca43a94673e3d9
+CONTENT-HASH: a8a5be11ce98c4fb
 
-Pedagogy review of fy14-magnetic-confinement (2026-11-01). Built with `scripts/build.py`. I ran it in Playwright at 390 px:
-- committed both predictions;
-- exp-field rows: 0.5 → 41.8 mm, 1 → 20.9 mm, 2 → 10.4 mm, 4 → 5.22 mm;
-- exp-mirror rows: 10° and 20° false, 40°, 60° and 80° true.
+Pedagogy re-review of fy14-magnetic-confinement (2026-11-01), after "Fixes after review" (commit cf5a329b) and the simulation fix (commit 7561f2b5). Rebuilt. Playwright at 390 px:
+- exp-mirror records 10° and 20° as *escapes*, 40° and 80° as *trapped*;
+- the readout shows $\mu$, $\sin^2\theta = 0.12$ and $B_0/B_{\max} = 0.25$, but no verdict and no 30° rule;
+- the `calc` box now gives only the mirror ratio;
+- no console errors.
 
-There were no console errors.
+## Earlier findings
+- **Polish 1 is done.** `review`, `exp-particles` and `find-error` are within ±30 %.
+- **Polish 2 is done.** `check-2` is a new case (an electron moving up, ⊙, answer left). The distractor "to the right" carries the sign misconception.
+- **Polish 3 is done.** The trapped/escapes verdict now appears only in the student's table after recording, so it is evidence. The rule is left for the student to infer.
+- **Polish 5 is done.** The French corner uses the shared style, with Finnish *nj*.
+- **Polish 4 (workload) still holds.** This is the heaviest unit of the four, but the optional tasks keep the core path to 75 minutes.
 
 ## Blocking
-None. Each prediction is tested by its own experiment, and both experiments can refute the prediction (a student who predicts "small θ turns back" sees 10° and 20° escape). The simulation is the investigation, not decoration.
+None.
 
 ## Polish
-1. Option lengths in `inquiry.json`: the correct option is clearly the longest in four choices:
-   - `review`: 82 against 56–59;
-   - `find-error`: 78 against 46–56;
-   - `check-1`: 77 against 48–63;
-   - `check-2`: within the limit, but `exp-particles` is spread 28–51.
-
-   Shorten the correct options, for example `check-1` "Its speed stays the same." and `review` "Its free charges feel magnetic forces.", or lengthen a distractor, so that each choice is within ±30 %.
-2. `check-2` uses the same situation as the unit's orbit figure: a positive charge moving right, the field into the page, the force up. Its feedback even says "as in the figure". The check tests looking up, not the right-hand rule. Change the case, for example an electron moving up the page with the field out of the page (⊙). Adapt the options and feedback.
-3. Simulation readout (shared file, see below): in the side view, the readout prints the mirror condition and the verdict ("inside the loss cone (θ < 30°), escapes through the end" / "trapped between the mirrors"). Students can fill the *trapped* column from the text without watching the orbit, and the rule they should infer from their table is printed for them. "How the calculation works" also states θ ≥ 30°. In experiments, hide the verdict line, or collapse it until the experiment has 3 rows. Then the evidence is the motion.
-4. Workload: this is the heaviest unit of the four, with a simulation, two experiments, a pair conclusion, about 610 words of core theory, an ordering task and a three-step alpha task. The timing in teacher.md works only if exp-particles and find-error stay optional, as they are. Consider moving the *Electric field* checkbox mention out of `howto`, so that no one spends time on it in the core path.
-5. French corner: the respelling style (*luh shahn mah-nyay-TEEK*) differs from the passed units (italic, Finnish letters, õ/ã/ẽ). *shahn* suggests a sounded *n* in a nasal vowel. Use the shared style.
+1. `check-1`: the correct option ("Its speed stays the same all the time.", 38 characters) is now the shortest by about 25–35 % (the distractors have 48–52). Lengthen it slightly, for example "Its speed stays the same, only its direction changes." (52 characters).
 
 ## Checked
-- The learning goals and prior knowledge do not answer the predictions.
-- The reveals are gated on 3 rows. The conclusion is gated on both experiments, with a word bank and starters.
-- The single-particle model is clearly separated from the collective behaviour of a plasma (theory, `model` box, check-3).
-- The alpha task has a full solution and mistake feedback. teacher.md has plans for fast pairs and for running out of time.
-
-## Shared issues
-- `assets/sims/fy14/magnetic/`: the mirror verdict and the loss-cone rule are printed in the readout during experiments (Polish 3).
-- Experiment tables show the raw `true`/`false` (already noted by the developer).
+- Predictions: committed before the simulation and revealed only after 3 rows each. Both experiments can refute their predictions.
+- The conclusion is gated on both experiments, with a word bank and starters.
+- The single-particle model is separated from collective plasma behaviour.
+- teacher.md has plans for fast pairs and for running out of time.

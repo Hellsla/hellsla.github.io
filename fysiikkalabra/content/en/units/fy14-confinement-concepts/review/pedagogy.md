@@ -1,32 +1,24 @@
 VERDICT: PASS
-CONTENT-HASH: f99d2c16745c6793
+CONTENT-HASH: eeec805ba4f919ad
 
-Pedagogy review of fy14-confinement-concepts (2026-11-01). Built with `scripts/build.py`. I read unit.md, inquiry.json and teacher.md, and looked at the captures (intro, ennusta, tutki, fx).
+Pedagogy re-review of fy14-confinement-concepts (2026-11-01), after "Fixes after review" (commit cf5a329b). Rebuilt; I read inquiry.json and unit.md again.
+
+## Earlier findings
+- **Polish 1 is done.** `review`, `find-error`, `check-1` and `check-3` are within ±30 %. The correct option in `check-1` (52 characters) no longer gives itself away.
+- **Polish 2 is done.** *Pinches* now says that parallel currents attract, so `theory-pinch` explains the inward squeeze it reveals.
+- **Polish 3 is done.** `problems-match` is optional and teacher.md is updated. The core theory is still about 740 words, the longest of the chapter, but the jigsaw in teacher.md and the optional task keep the lesson to 75 minutes.
+- **Polish 4 is done.** The `pred-nif` feedback names the theory, the NIF table and the sort as its evidence.
+- **Polish 5 is done.** The French corner uses the shared style.
 
 ## Blocking
-None. Both predictions come before any evidence:
-- `pred-nif` is a real argument point (target gain against facility energy). The NIF table, the claims sort and theory-inertial answer it.
-- The investigation trains the chapter's key skill: telling a measured result from a public plan and a company claim. Every item is dated.
+None.
 
 ## Polish
-1. Option lengths in `inquiry.json`. In `check-1`, the correct option has 91 characters against 42–58, and it is the only one that names both pinches. It gives itself away. Shorten it to "Z: current along the plasma; theta: around the tube." (52 characters), or lengthen two distractors. Two more choices have a correct option that is clearly the longest:
-   - `find-error`: 68 against 37–42;
-   - `review`: 62 against 52–54.
-2. `pred-pinch` is answered only by `theory-pinch`, which just asserts that the field "pushes the current-carrying plasma inward". A student who predicted "outward" learns why only from the hidden feedback ("parallel currents attract"). Add that sentence to the *Pinches* section, next to the figure. The theory is then evidence that repairs the misconception.
-3. Workload: this is the densest unit of the chapter.
-   - Core theory is about 716 words, the longest of the four and well above the guide's 500.
-   - Four written or spoken tasks: claims-talk, reflect, the funding argument and the vocabulary match.
-   - Two match tasks and two numeric tasks.
-
-   teacher.md's jigsaw for *Compact* and *Private* helps. Also mark `problems-match` `optional`: the Key idea and check-explain already cover the trade-offs. Alternatively, trim the Helion and General Fusion bullets to one line each.
-4. `claims-sort` feedback and `claims-talk` model ("no fusion device has yet produced net electricity") come before `theory-inertial`. That is fine, because the prediction is already committed. The reveal could still name the table and the sort as evidence too: "The evidence supports this", not only "The theory".
-5. French corner: the respellings (*lah-ZAIR*, *yn an-pyl-SYON*) differ from the passed units' shared style (italic, Finnish letters, õ/ã/ẽ). *an-pyl-SYON* also teaches a sounded *n*. Use the shared style.
+1. `check-2`: the options range from 35 to 56 characters. "Gravity, as in the core of the Sun." is the outlier. Lengthen it, for example "Gravity, as in the core of the Sun, pulls it together." The correct option is not the longest, so this is minor.
 
 ## Checked
-- The hook, Why line and hero (a three-way fork with no words) do not give away a prediction.
-- Reveals are tied to their theory sections. The model answers of explain tasks open after writing (developer's test; the logic is the same as in the passed units).
+- Predictions: committed before the evidence and revealed by their theory sections. The hook, Why line and hero give nothing away.
+- The result / plan / claim sort is dated.
 - Word bank and starters before both argue tasks.
-- The worked example (G ≈ 1.5, about 1 % of the electricity) is staged.
-- gain-task (G ≈ 144) has full solutions and mistake feedback.
-- Dated changing facts.
+- The worked example is staged, and the numeric tasks have full solutions.
 - teacher.md has plans for fast pairs and for running out of time.

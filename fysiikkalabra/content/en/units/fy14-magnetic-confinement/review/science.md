@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 78ca43a94673e3d9
+CONTENT-HASH: a8a5be11ce98c4fb
+
+Re-review of commit cf5a329b and of the simulation commit 7561f2b5. The previous Polish 1–3 are fixed: the alpha task shows $mv^2/2 = 1.67 \cdot 10^{-15}\ \text{J} \approx 10\ \text{keV}$, the sim model says the fastest speed is 3.3 % of c, and the howto names the sideways drift with $\overline{E}$.
 
 ## Blocking
 None.
 
 ## Polish
-1. **`inquiry.json` alpha-task, Reasonableness.** "about 340 times the energy of the deuteron in the worked example ($10\ \text{keV}$)": the worked example never gives this energy. Add the step: "($\frac{1}{2}mv^2 = 1.67 \cdot 10^{-15}\ \text{J} \approx 10\ \text{keV}$)".
-2. **`inquiry.json` simulation `model`.** "all speeds below 4 % of the speed of light" is true of the sim, whose maximum is $10^{7}$ m/s, or 3.3 % of c. The alpha task's 3.5 MeV alpha (outside the sim) moves at 4.3 % of c. The solution's "about 4 %" is fine, but "below 4 %" should not be quoted for it.
-3. **`inquiry.json` simulation `howto`.** The *Electric field* checkbox shows the $E \times B$ drift, which the theory never names. Add one clause, for example "the centre of the circle then drifts sideways, the same way for ions and electrons, which is how the separated charges in a ring push the plasma outward". The *Torus* section can then refer back to it.
+None.
 
 ## Checked
-- Recomputed with CODATA 2022 values. Worked example: $r = 4.17$ mm, $T = 26.2$ ns, 38 million turns per second. Proton at $2.0 \cdot 10^{6}$ m/s: 20.9 / 10.4 mm and 65.6 / 32.8 ns at 1 / 2 T. Deuteron 41.7 mm and alpha 41.5 mm; electron 0.0114 mm. Alpha at 3.5 MeV: $v = 1.299 \cdot 10^{7}$ m/s, $r = 5.08$ cm. The mistake 10.2 cm (charge $e$) is correct. Mirror with $R_m = 4$: loss cone 30°.
-- Force direction (check-2): $q\,\overline{v} \times \overline{B}$ with $\overline{v}$ to the right and $\overline{B}$ into the page gives a force up the page and anticlockwise motion. This agrees with the figure, the model (`uniform()`) and the sim's force arrow ($F = q(v_yB_z, -v_xB_z)$).
-- Mirror physics: $\mu$ is conserved, $\sin^2\theta \ge B_0/B_{\max}$. The theory, sim and model text agree. `node tests/models/magnetic.test.js` runs 708 checks, all OK. In Playwright at the experiment values, `simState` gives $r$ = 41.8, 20.9, 10.4, 5.22 mm at 0.5, 1, 2, 4 T, and $T$ halves with each step. At 10° and 20° the proton escapes (`escaped` true, `trapped` false); at 30–80° it is trapped and does not escape. Each experiment varies only one parameter; the others are locked.
-- Single-particle vs collective: the *Collective* section, check-3 and the sim's note state the model's limits (collisions, self-fields, turbulence, instabilities, ZETA 1958). Toroidal drift: the grad-B and curvature drift separates the charges, and $E \times B$ moves the plasma outward. The cause is correct.
-- Tungsten melts at about 3400 °C (3422). Van Allen belts 1958.
+- New check-2: an electron moves up the page with $\overline{B}$ ⊙. $\overline{v} \times \overline{B} = \hat{y} \times \hat{z} = +\hat{x}$, and the charge is negative, so the force points to the **left**. Only that option is marked correct, and every distractor's feedback is correct.
+- Rebalanced options (review, exp-particles, find-error, check-1) were re-read. The physics and the correct answers are unchanged ("1836 times smaller, not larger" is correct).
+- The experiment `values` now name the particles and show trapped / escapes. The sim strings no longer state the mirror condition or verdict, so the prediction is not answered before the experiment. The readout still gives $\sin^2\theta$ and $B_0/B_{\max}$, which is correct. `simState.trapped` comes from the model, unchanged. `node tests/models/magnetic.test.js` runs 708 checks, all OK. The model and physics in `sim.js` are unchanged: only the font size and the readout strings changed.
+- The worked example (4.17 mm, 26.2 ns), the alpha task (5.08 cm) and the model values in the feedback (20.9 / 10.4 mm, 65.6 / 32.8 ns, loss cone 30°) are unchanged and correct.
