@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 400e66d0ff06b85c
+CONTENT-HASH: c107808fdf27e4d4
 
 ## Blocking
 (none) The five polish items of the first review are resolved:
@@ -22,3 +22,5 @@ CONTENT-HASH: 400e66d0ff06b85c
 
 ## Scores
 illustrations 4 · typography 4 · English 4 · accessibility 4
+
+2026-11-01: re-checked the intro sentence changed to "written for this course from historical documents" (Sources and verification no longer published); accurate, clear at B1-B2, no remaining pointer to a hidden section in unit.md or inquiry.json.

@@ -1349,6 +1349,7 @@
     "language_note_en": "Opintojakso opiskellaan englanniksi. Oppituntien sivut ovat sivuston englanninkielisessä osassa.",
     "authors": "Tekijät",
     "and": "ja",
+    "optional_mark": "valinnaista lisämateriaalia",
     "chapters": "Luvut ja oppitunnit",
     "chapters_lead": "Opintojakson luvut järjestyksessä. Jokaisella luvulla on oma kysymyksensä, ja oppitunnit vastaavat siihen yhdessä.",
     "credits": "Kuvat ja videot",
