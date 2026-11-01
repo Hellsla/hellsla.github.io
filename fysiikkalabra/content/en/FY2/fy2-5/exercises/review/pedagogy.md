@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: cb36ba3d505d55e8
+CONTENT-HASH: 2a503594826e5f77
 
 ## Blocking
 (none)
@@ -8,4 +8,4 @@ CONTENT-HASH: cb36ba3d505d55e8
 (none)
 
 ## Checked
-- Translation review against the reviewed Finnish (2026-10-29): L1-02 requires reading H from the figure, the value is not stated in the task, and the worked solution shows how the graph is read; demand equals the Finnish. Natural textbook English, decimal point in text and LaTeX.
+- Translation review against the reviewed Finnish (2026-11-01): task order, levels, wording of demands (read from figure, explain why, justify) and solution step sequence (Given, Find, Principle, Formula, Conversions, Substitution, Answer, Reasonableness) equal the Finnish. Language is natural and clear; no edits needed.

@@ -1,14 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 6e456fb39dd84bb3
+CONTENT-HASH: a5be5206fcf10172
 
 ## Blocking
-
+(none)
 
 ## Polish
-- none beyond the open polish of the Finnish reviews, which the translation follows.
+- none
 
 ## Checked
-- check-patteri and the rebalanced ennuste-2 options (and their feedback) follow the reviewed Finnish; physics, numbers, units, LaTeX and decimal sign preserved; correct options not the longest (check_choices clean for fy2-4).
-- Titles 3. and 4. renumbered; grid figure description and labels in the language, layout OK at 360 and 1280 px.
-- No answer given away; feedback per option translated fully. Selkeä suomi keeps the demand with shorter sentences.
-- Hash unchanged at end.
+- Lesson translation checked against the Finnish.
+- Physics, numbers (100 J / 5 J / 95 J; 60 W / 3 W / 57 W; 10 W / 7 W; 36 kJ worked example; 5.0 / 4.0 cm scale example), formulas, LaTeX and symbols follow the reviewed Finnish; figure labels and alt texts correct. Short clear sentences, plain Finnish, decimal comma kept; the 5,0 cm / 4,0 cm example is introduced as a separate diagram.
+- No edits needed; hash unchanged at end.

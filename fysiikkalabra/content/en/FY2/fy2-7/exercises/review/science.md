@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: f210ba7052cc81a7
+CONTENT-HASH: 41be8c1da51836d5
 
 ## Blocking
 (none)
 
 ## Fixed
-- (none)
+- Chapter title cited as *Power P = ΔE/Δt* in lesson.md, inquiry.json and solutions.md; the course title is *Power: P = ΔE/Δt*, colon restored.
 
 ## Polish
 - (none)
 
 ## Checked
-- Update 2026-10-29: exercise fy2-7-L1-02 now reads the loss share (9 %) from fy2-7/sankey: text and solution (Reading the graph step, 0.09 · 360 MWh = 32.4 MWh, about 32 MWh) match content/fi; answer 32.4, tolerance 0.03, figure id unchanged; no energies given away by the figure.
+- All ten-plus tasks: text numbers, answers, units and tolerances equal the Finnish; solutions.md numbers identical (348 numeric tokens match); recomputed 480, 32.4, 96.0, 120, 60, 150, 1500, 10.96, 1200, 21, 13.0, 65.7. English answer unit 'houses' for L3-03. Figure fy2-7/sankey referenced, 9 % / 91 % as in the figure.

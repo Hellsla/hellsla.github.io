@@ -60,6 +60,12 @@
   "note": "adapter declares kohde only"
  },
  {
+  "expr": "(() => { const o=[...document.querySelectorAll('#sim-root select option')]; return o.length===28 && o.every((x)=>x.value===x.textContent) ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "every option's value is its Finnish name (the sim's FI map matches lang/fi.json n_<id>), so inquiry.json's initial state picks it in every language"
+ },
+ {
   "expr": "(() => { const c=document.querySelector('#sim-root canvas'); return c.width===600 && c.height===400 ? 1 : 0 })()",
   "expected": 1,
   "tol": 0,

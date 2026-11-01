@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 7adf7b7d136869eb
+CONTENT-HASH: ef5656b572d016c7
 
 ## Blocking
 - none
@@ -8,4 +8,4 @@ CONTENT-HASH: 7adf7b7d136869eb
 - none
 
 ## Checked
-- Checked (batch delta review): the figure-reading exercise keeps its demand (read the value, then m = e * E); the solution models how to read the value without giving the answer in the task text; the L3-01 conclusion keeps the argument about uncertainty and states the practical conclusion for low-emission electricity.
+- Teaching sequence preserved from the Finnish: three levels, one-step factor-times-energy tasks first, unit conversion and reverse use at level 2, transfer with interpretation questions at level 3; solutions keep Given/Find/Principle/Formula/Conversions/Substitution/Answer/Reasonableness. Language (en) is natural and at the intended level; no content added or dropped. No edits needed.

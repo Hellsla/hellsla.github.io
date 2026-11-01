@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: ac3ab83b5af60863
+CONTENT-HASH: 12704897f4970fb1
 
 ## Blocking
 - none
@@ -8,4 +8,4 @@ CONTENT-HASH: ac3ab83b5af60863
 - none
 
 ## Checked
-- Selkeä suomi: kuvaajan lukemisen vaihe on lyhyin lausein ja antaa taidon ilman vastausta tehtävätekstissä; L3-01:n johtopäätös säilyttää epävarmuuden perustelun ja käytännön johtopäätöksen.
+- Teaching sequence preserved from the Finnish: three levels, one-step factor-times-energy tasks first, unit conversion and reverse use at level 2, transfer with interpretation questions at level 3; solutions keep Given/Find/Principle/Formula/Conversions/Substitution/Answer/Reasonableness. Language (fi-easy) is short, clear plain Finnish (one step per sentence, as intended for fi-easy); no content added or dropped. No edits needed.

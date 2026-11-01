@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: fa8e3fe39ce547c9
+CONTENT-HASH: 720c6ae0861c5f45
 
 ## Blocking
 (none)
@@ -8,4 +8,7 @@ CONTENT-HASH: fa8e3fe39ce547c9
 - (none)
 
 ## Checked
-- Translation review against the reviewed Finnish (2026-10-29 update): new check-c2 (2.2 MJ = 2200 kJ; 2200 : 300 = 7.3; distractors 1000x and 7000x with correct feedback), rebalanced options of kertaus, virhe and tarkistus-1 (correct option and feedback physics unchanged), tarkistus-3 model ('no longer easily' collected), exit ticket reduced to two questions, lesson waste-heat and misconception wording, figure labels and the new figure's description. Decimal point/comma, LaTeX and numbers preserved. Selkeä suomi: short sentences, same physics terms and demand.
+- Translation of lesson.md, inquiry.json, exit-ticket.json and figures.json compared with the reviewed Finnish: every number, unit, formula and answer (340 kJ, 66 MJ, 51 GJ, 100 days' food, ratio 3.2, 620 EJ against 620 EJ) is identical; a script check found no differing number in any text.
+- Same physics: conservation, heat at every step, prefixes k/M/G/T, order-of-magnitude comparison; each prediction has one correct option and the feedback matches the values; no physics added or lost.
+- Terms and units are Plain Finnish with no Finnish left in text or units. The experiments keep the Finnish initial value (correct for the simulation); the values map shows it in words (unchanged Finnish, as in the Finnish source), matching the menu labels in lang/fi-easy.json.
+- figures.json labels checked against the Finnish: correct, none lengthened.

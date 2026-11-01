@@ -37,6 +37,38 @@ new p5((p) => {
     ['asteroidi', 4, 23, 'arvio'],
     ['aurinko', 3.8, 26, 'lahde']
   ];
+  // the select's option values are the Finnish names in every language, so an investigation's initial state (inquiry.json,
+  // the same in every language: check_i18n.py) picks the same object; the label is the page language's name (lang/<lang>.json n_<id>)
+  const FI = {
+    foton: 'vihreän valon fotoni',
+    sydan: 'sydämenlyönti',
+    omena: 'omena metrin ylös',
+    luoti: 'pienoiskiväärin luoti',
+    tikku: 'palava tulitikku',
+    paristo: 'AA-paristo',
+    puhelin: 'puhelimen akku',
+    banaani: 'banaani',
+    suklaa: 'suklaalevy 200 g',
+    ruoka: 'päivän ruoka',
+    bensiini: 'litra bensiiniä',
+    kaasu: 'kaasupullo 11 kg',
+    salama: 'salamanisku',
+    tankki: 'bensiinitankki 50 l',
+    tnt: 'tonni TNT:tä',
+    lento: 'Helsinki–Tokio-lento',
+    uraani: 'kilo uraani-235:tä',
+    ol3: 'Olkiluoto 3, vrk',
+    sahkopaiva: 'Suomen sähkö, vrk',
+    tankkeri: 'öljytankkerin lasti',
+    aurinko_s: 'Aurinko Maahan, 1 s',
+    sahkovuosi: 'Suomen sähkö, vuosi',
+    suomi: 'Suomen energia, vuosi',
+    jaristys: 'maanjäristys, M 9',
+    ihmiskunta: 'ihmiskunta, vuosi',
+    aurinko_h: 'Aurinko Maahan tunnissa',
+    asteroidi: 'Chicxulub-asteroidi',
+    aurinko: 'Aurinko, 1 s'
+  };
   const PRE = { 3: 'k', 6: 'M', 9: 'G', 12: 'T', 15: 'P', 18: 'E', 21: 'Z', 24: 'Y' };
   const LMIN = -19, LMAX = 26.6, HALF = 1.2;
   const Y0 = 205, PD = 150;                                  // y of the view centre, pixels per power of ten
@@ -48,7 +80,7 @@ new p5((p) => {
   const num = (x) => (Math.abs(x - Math.round(x)) < 1e-9 ? String(Math.round(x)) : tx(x, 1));
   const setL = (v) => { L = Math.max(LMIN, Math.min(LMAX, Math.round(v * 10) / 10)); };
   const objOf = (id) => OBJ.find((o) => o[0] === id);
-  const byName = (nm) => OBJ.find((o) => __('n_' + o[0]) === nm) || OBJ[0];
+  const byName = (nm) => OBJ.find((o) => FI[o[0]] === nm) || OBJ[0];
   // a name as TeX without space characters, so that the label is one word for the page's text count
   // objects with a number and a unit in their name have a TeX name t_<id> (lang/fi.json); the select keeps the plain name
   const texOf = (o) => { const t = __('t_' + o[0]); return t && t !== 't_' + o[0] ? t : null; };
@@ -75,10 +107,10 @@ new p5((p) => {
     btnUp = p.createButton(__('ylos')).parent(controls);
     btnDown = p.createButton(__('alas')).parent(controls);
     const lk = p.createElement('label').parent(controls); p.createSpan(__('kohde')).parent(lk); selK = p.createSelect().parent(lk);
-    for (const o of OBJ) selK.option(__('n_' + o[0]), __('n_' + o[0]));
+    for (const o of OBJ) selK.option(__('n_' + o[0]), FI[o[0]]);
     p.createP(__('selite')).parent('sim-root').class('note');
     p.textFont('Arial');
-    selK.selected(__('n_bensiini')); setL(lg(objOf('bensiini')));
+    selK.selected(FI.bensiini); setL(lg(objOf('bensiini')));
     btnUp.mousePressed(() => { setL(Math.round(L) + 1); p.redraw(); });
     btnDown.mousePressed(() => { setL(Math.round(L) - 1); p.redraw(); });
     const jump = () => { setL(lg(byName(selK.value()))); p.redraw(); };
@@ -87,7 +119,7 @@ new p5((p) => {
     // adapter for guided investigations (sim-embed.js): the page may set, lock and reset the object
     if (window.defineSimAdapter) window.defineSimAdapter({
       params: { kohde: { input: selK.elt, unit: '' } },
-      reset: () => { selK.selected(__('n_bensiini')); setL(lg(objOf('bensiini'))); },
+      reset: () => { selK.selected(FI.bensiini); setL(lg(objOf('bensiini'))); },
       step: () => p.redraw(), pause: () => p.noLoop(), resume: () => p.loop(),
     });
   };
@@ -105,7 +137,7 @@ new p5((p) => {
     const pt = prefTex(fo), dir = kf > L + HALF + 0.05 ? __('yla') : kf < L - HALF - 0.05 ? __('ala') : '';
     readout.html(__('valittu', { nimi: texOf(fo) ? `$${texOf(fo)}$` : __('n_' + fo[0]), arvo: powTex(fo) + (pt ? ` = ${pt}` : ''), lahde: __('s_' + fo[0]) }) +
       (dir ? __('ulkona', { suunta: dir }) : ''));
-    window.simState = { L, kohde: selK.value(), k: kf, E_J: E, E_MJ: E / 1e6, E_EJ: E / 1e18, tyyppi: fo[3] === 'lahde' ? 1 : 0, nakyvat: vis.length, labels: null };
+    window.simState = { L, kohde: __('n_' + fo[0]), k: kf, E_J: E, E_MJ: E / 1e6, E_EJ: E / 1e18, tyyppi: fo[3] === 'lahde' ? 1 : 0, nakyvat: vis.length, labels: null };
 
     p.background(250);
     // zones between powers of ten that are multiples of three: one prefix each

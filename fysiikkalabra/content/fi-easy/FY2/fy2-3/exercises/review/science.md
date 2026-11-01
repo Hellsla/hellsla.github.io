@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: eabb81996cdd2424
+CONTENT-HASH: 659f54eaa9fbae03
 
 ## Blocking
 (none)
@@ -8,4 +8,4 @@ CONTENT-HASH: eabb81996cdd2424
 (none)
 
 ## Checked
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28), delta after the option rebalance: Exercise L1-04 (graph reading, figure fy2-3/graph-ab) and its solution block against the Finnish: points (40 s; 60 kJ) and (80 s; 120 kJ), dE = 60 kJ, dt = 40 s, P = 1500 W, check with line B = 500 W; answer, unit, tolerance and figure id unchanged; step labels as in other en solutions ('Reading the graph'). Figure description and axis ticks match the Finnish; numbers use decimal comma.
+- Full translation review of all 12 exercises and solutions against the Finnish: numbers, units, answers, tolerances and the graph-ab figure reference identical; solution calculations identical (60 kJ in 40 s gives 1500 W; 1 440 000 J in 1200 s; 78,84 kWh; 15,18 EUR; 342,5 W; 102,2 km); decimal comma; physics unchanged.

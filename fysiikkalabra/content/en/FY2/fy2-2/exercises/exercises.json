@@ -13,7 +13,7 @@
       "level": 1,
       "text": "The energy of a chocolate bar ($200\\,\\text{g}$) is $4.4\\,\\text{MJ}$, and the energy of an adult's day's food is about $10\\,\\text{MJ}$. How many chocolate bars correspond in energy to a day's food?",
       "answer": 2.3,
-      "unit": "kpl",
+      "unit": "bars",
       "tolerance": 0.02
     },
     {
@@ -38,7 +38,7 @@
       "text": "The figure shows the order of magnitude of the energy of three things on a power-of-ten scale, and each small step is a factor of ten. Read the energy of an AA battery and of a lightning flash from the figure in joules. How many AA batteries correspond in energy to one lightning flash?",
       "figure": "fy2-2/tikapuut-kohteet",
       "answer": 100000,
-      "unit": "kpl",
+      "unit": "batteries",
       "tolerance": 0.02
     }
   ],
@@ -72,7 +72,7 @@
       "level": 2,
       "text": "The energy of explosives is often given in tonnes of TNT: by convention, one tonne of TNT corresponds to about $4.2\\,\\text{GJ}$. The energy of a chocolate bar ($200\\,\\text{g}$) is $4.4\\,\\text{MJ}$. How many chocolate bars correspond in energy to one tonne of TNT?",
       "answer": 950,
-      "unit": "kpl",
+      "unit": "bars",
       "tolerance": 0.02
     }
   ],
@@ -82,7 +82,7 @@
       "level": 3,
       "text": "In Finland, on average about $790\\,\\text{TJ}$ of electrical energy is consumed per day (calculated from Statistics Finland data for 2023). An Olkiluoto 3 nuclear power plant unit produces electrical energy of $140\\,\\text{TJ}$ per day. What is the smallest number of such units whose output would cover the whole consumption? Give the answer as a whole number.",
       "answer": 6,
-      "unit": "kpl",
+      "unit": "units",
       "tolerance": 0.02
     },
     {
@@ -90,7 +90,7 @@
       "level": 3,
       "text": "In the reactor of a nuclear power plant unit, thermal energy of $370\\,\\text{TJ}$ is released per day. Of this, $140\\,\\text{TJ}$ turns into electricity, and the rest is carried into the sea by the cooling water. Heating a detached house takes, for example, $72\\,\\text{GJ}$ per year. The energy transferred to the sea in one day corresponds to a year's heating for how many detached houses?",
       "answer": 3200,
-      "unit": "kpl",
+      "unit": "houses",
       "tolerance": 0.02
     },
     {

@@ -84,7 +84,7 @@
 **Kysytty:** kotitalouksien lukumäärä miljoonina
 **Periaate:** Ensin lasketaan laitoksen vuosienergia kaavalla $E = P t$, koska teho on vakio. Sitten energia jaetaan yhden kotitalouden kulutuksella.
 **Kaava:** $N = \dfrac{P t}{E_\text{koti}}$
-**Muunnokset:** $1{,}6\,\text{GW} = 1{,}6 \cdot 10^{6}\,\text{kW}$, Kun kilowatit kerrotaan tunneilla, tulos on kilowattitunteina.
+**Muunnokset:** $1{,}6\,\text{GW} = 1{,}6 \cdot 10^{6}\,\text{kW}$. Kun kilowatit kerrotaan tunneilla, tulos on kilowattitunteina.
 **Sijoitus:** $N = 1{,}6 \cdot 10^{6}\,\text{kW} \cdot 8760\,\text{h} : 5000\,\text{kWh} = 14\,016\,000\,000\,\text{kWh} : 5000\,\text{kWh} = 2\,803\,200$
 **Vastaus:** $2{,}8$ miljoonaa kotitaloutta, kaksi merkitsevää numeroa kuten tehossa $1{,}6\,\text{GW}$.
 **Järkevyys:** Tulos on samaa suuruusluokkaa kuin Suomen kotitalouksien lukumäärä (noin $2{,}86$ miljoonaa vuonna 2024, Tilastokeskus). Yksi laitos ei silti kata koko maan sähköä. Teollisuus ja palvelut käyttävät suuren osan sähköstä.

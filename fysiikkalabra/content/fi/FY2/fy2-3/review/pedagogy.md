@@ -1,11 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: ea405b6f8cf91e17
+CONTENT-HASH: afb3b91be208f94f
 
 ## Blocking
 
 ## Polish
-- Mittarin punainen painike käyttää lämpötilan väriä; harmaa riittää.
-- Lampun valokeila valuu tason yli kaapinoviin; rajaus tasolle siistisi.
+- exit-ticket.json a — "Muunnetaan teho kilowateiksi: sijoitetaan ..." toimii; minuuttien muunnos tunneiksi on edelleen sulkeissa-vapaa mutta vailla omaa lausetta. Samaa rakennetta ("Muunnetaan aika tunneiksi: ...") kannattaisi käyttää, jotta kaksi muunnosta näyttävät samalta.
 
 ## Checked
-batch delta review: uusi tekstitön avauskuva (data-fig="hero") Miksi-kysymyksen alla, kaappaukset 1200 ja 360 px sekä SVG. Keittiö: höyryävä vedenkeitin lyhyen ajan kellon alla, pieni lamppu pitkän ajan kellon alla, keskellä sähkömittari johtoineen: teho ja aika erikseen, kuten kysymys vaatii. Kellojen sektorit lukevat 360 px:ssä. Aria-label vastaa kuvaa, ei tekstiä, värit figuuripaletista.
+- Delta: vain mallivastauksen sanamuoto; kaavat, luvut ja tulokset (43,8 kWh ≈ 44 kWh; 36,5 kWh ≈ 37 kWh) ennallaan.
+- Yksikkömuunnos on nyt oma lauseensa ennen tulosta eikä sulkeissa: askeleet seuraavat järjestyksessä (energia = teho · aika, muunnos, tulo, pyöristys), joten oppilas näkee muunnoksen omana vaiheenaan.
+- Suomi: "Muunnetaan teho kilowateiksi" on oikea muoto; lauserakenne ja pyöristysperuste kunnossa.
+- Aiempi hyväksyntä (hero-kuva, kaappaukset, rakenne) ei muutu, koska diff ei kosketa niitä.

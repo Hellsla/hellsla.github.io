@@ -1,14 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 20d0c49f99fa4bda
+CONTENT-HASH: 930ded3bc7f18fae
 
 ## Blocking
 (none)
 
 ## Polish
-- (none new beyond the Finnish exercise report)
+- (none beyond the Finnish report's own polish items)
 
 ## Checked
-- L1-03: situation first, question last, the reading of the figure is the demand as in Finnish; no hint toward the result.
-- Selkeä suomi: shorter sentences, same physics terms and numbers, same demand.
-- Figure is labelled in the language (only A, B, C and the description are text).
-- The solution models reading the bars from the 100 J gridlines and states the precision.
+- Plain Finnish: sentences are short and clear (long sentences split, e.g. L1-02, L2-01, L2-04, L3-03 and the solutions), terms follow the course glossary (lämpöenergia, liike-energia, eristetty systeemi), same step order as the Finnish solutions, no content lost.

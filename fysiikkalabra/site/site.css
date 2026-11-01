@@ -22,6 +22,7 @@
 @font-face{font-family:"Fraunces";font-style:normal;font-weight:100 900;font-display:swap;src:url(vendor/fonts/fraunces-latin-wght-normal.woff2) format("woff2")}
 @font-face{font-family:"Fraunces";font-style:italic;font-weight:100 900;font-display:swap;src:url(vendor/fonts/fraunces-latin-wght-italic.woff2) format("woff2")}
 @font-face{font-family:"Plus Jakarta Sans";font-style:normal;font-weight:200 800;font-display:swap;src:url(vendor/fonts/plus-jakarta-sans-latin-wght-normal.woff2) format("woff2")}
+@font-face{font-family:"Plus Jakarta Sans";font-style:italic;font-weight:200 800;font-display:swap;src:url(vendor/fonts/plus-jakarta-sans-latin-wght-italic.woff2) format("woff2")}   /* a real italic: the synthesized slant leaned into the next space ("transferredbecause") */
 @font-face{font-family:"JetBrains Mono";font-style:normal;font-weight:100 800;font-display:swap;src:url(vendor/fonts/jetbrains-mono-latin-wght-normal.woff2) format("woff2")}
 
 :root{
