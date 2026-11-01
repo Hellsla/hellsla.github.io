@@ -1,0 +1,5 @@
+{"version": 1, "contribution": "test", "learn": ["explain the photoelectric effect with photons", "calculate the maximum kinetic energy of an electron"],
+ "activities": [{"id": "hook-1", "stage": "herata", "type": "hook", "text": "Test hook."},
+  {"id": "sim-1", "stage": "tutki", "type": "sim", "text": "Explore."},
+  {"id": "teoria-1", "stage": "selita", "type": "theory", "sections": ["Ydinajatus"]},
+  {"id": "check-1", "stage": "tarkista", "type": "choice", "prompt": "Q?", "choices": [{"text": "a", "correct": true, "feedback": "yes"}, {"text": "b", "feedback": "no"}]}]}

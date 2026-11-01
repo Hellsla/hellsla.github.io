@@ -1,6 +1,7 @@
 """Readable screenshots of a built page for the reviewers. Usage: python scripts/screenshot.py <id> [--lang en|fi-easy] [--if-stale] [--no-build]
 
-<id> is a lesson, an investigation (fy10-jousivakio), a TVT guide (tvt-kuvaaja) or a Sovella set (FY3-sovella). The
+<id> is a lesson, an investigation (fy10-jousivakio), a TVT guide (tvt-kuvaaja), a Sovella set (FY3-sovella) or a course
+unit (fy14-photoelectric, captured in its own language with every box open, its stages and its components). The
 page is built first (build.py <id>, into preview/) so the captures show the content as it is now. review/shots/
 stamp.txt records what they show (the content hashes, the built page, the templates): with --if-stale an unchanged
 page keeps its captures and nothing is taken again. contact-N.png sheets show every capture small and numbered, for
@@ -42,8 +43,14 @@ SUB = "" if LANG == courses.SOURCE_LANG else f"{LANG}/"
 
 
 def target(pid):
-    """(kind, review folder, content hashes) of a page id: a lesson, an investigation, a TVT guide or <COURSE>-sovella."""
-    import guides, investigations, practice, reviews
+    """(kind, review folder, content hashes) of a page id: a lesson, an investigation, a TVT guide, <COURSE>-sovella or a
+    course unit (scripts/units.py: captured in the language it is written in)."""
+    import guides, investigations, practice, reviews, units
+    ul = units.lang_of(pid)
+    if ul:
+        global SUB
+        SUB = "" if ul == courses.SOURCE_LANG else f"{ul}/"
+        return "unit", units.folder(pid, ul) / "review", units.content_hash(pid, ul)
     if SUB and (pid.endswith("-sovella") or pid in investigations.ids() or pid in guides.ids()):
         sys.exit(f"--lang captures a translated lesson; {pid} is captured in {courses.SOURCE_LANG}")
     if pid.endswith("-sovella"):
@@ -107,6 +114,17 @@ with sync_playwright() as pw:
         pg.evaluate("window.scrollTo(0, 0)"); pg.wait_for_timeout(200)
         pg.screenshot(path=str(OUT / f"{lid}-top-{w}.png")); rows.append((f"{lid}-top-{w}.png", f"first screen at {w} px", w, hgt))
         pg.add_style_tag(content="header.top, nav.toc, nav.crumbs { position: static !important; }")   # sticky bars would be drawn into part captures
+        if kind == "unit":                            # a course unit: its stages, components and the end of the page, every box open
+            pg.evaluate("document.querySelectorAll('main details').forEach((d) => { d.open = true; })"); pg.wait_for_timeout(500)
+            if pg.locator(".intro").count(): save(pg, f"intro-{w}", f"the opening at {w} px", locator=pg.locator(".intro").first)
+            for st in pg.locator("section.stage").all():
+                sid = st.get_attribute("id"); save(pg, f"stage-{sid}-{w}", f"stage {sid} at {w} px, every box open", locator=st)
+            if pg.locator("#sim").count(): save(pg, f"sim-{w}", f"simulation with controls and readout at {w} px", locator=pg.locator("#sim"))
+            for k, fx in enumerate(pg.locator(".fx").all()):
+                save(pg, f"fx-{k + 1}-{w}", f"component {k + 1} ({fx.get_attribute('data-fx')}) at {w} px", locator=fx)
+            for sel, nm in ((".unit-credits", "credits"), (".unit-sources", "sources"), (".unit-teacher", "teacher")):
+                if pg.locator(sel).count(): save(pg, f"{nm}-{w}", f"{nm} at {w} px", locator=pg.locator(sel).first)
+            pg.close(); continue
         if kind != "lesson":                          # an investigation, a guide or a Sovella set: the whole text, every box open, in tiles
             pg.evaluate("document.querySelectorAll('main details').forEach((d) => { d.open = true; })"); pg.wait_for_timeout(300)
             art = pg.locator("main article").first if pg.locator("main article").count() else pg.locator("main").first

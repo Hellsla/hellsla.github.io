@@ -1,0 +1,4 @@
+{"id": "fy14-photoelectric", "course": "FY14", "chapter": 1, "order": 2, "title": "Light as particles: the photoelectric effect",
+ "description": "Why does red light never free electrons from sodium, however bright it is?", "kind": "physics", "minutes": 75,
+ "subjects": ["physics", "english", "french"], "sim": "fy14/photoelectric",
+ "sources": [{"title": "Fotoni material bank, University of Helsinki", "url": "https://www.helsinki.fi/fi/tiedekasvatus/opettajille/fysiikan-avoin-opetuslaboratorio-fotoni/fotonin-materiaalipankki", "checked": "2026-11-01"}]}

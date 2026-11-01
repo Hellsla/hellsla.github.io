@@ -27,6 +27,7 @@ ICONS = {
     "FY7": "sauvamagneetti ja kenttäviivat",
     "FY8": "energiatasot ja fotonin emissio",
     "FY10": "mittauskuvaaja",
+    "FY14": "tokamakin rengasplasma ja magneettikelat",
 }
 
 

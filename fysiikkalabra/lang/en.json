@@ -116,7 +116,10 @@
     "local_prepare": "Prepare now",
     "local_prepare_lead": "These published chapters support the experimental work of the course.",
     "local_unavailable_note": "<strong>{{title}}</strong> is only available in Finnish for now.",
-    "lang_unavailable_home": "page not available yet, goes to the front page"
+    "lang_unavailable_home": "page not available yet, goes to the front page",
+    "local_status_building": "Under construction",
+    "local_status_home_building": "Course under construction",
+    "local_status_note_building": "Units are published as they are completed and checked. The scope and assessment have not been confirmed."
   },
   "lesson": {
     "steps_nav": "Steps of the lesson",
@@ -1331,5 +1334,24 @@
     "split": "the horizontal forces are drawn to a different scale from the vertical ones;",
     "split_note": "horizontal and vertical forces to different scales",
     "velocity": "velocity {{dir}};"
+  },
+  "units": {
+    "home_count": {
+      "one": "{{n}} unit available",
+      "other": "{{n}} units available"
+    },
+    "taught_in_en": "in English",
+    "language_note_en": "This course is taught in English.",
+    "authors": "Authors",
+    "and": "and",
+    "chapters": "Chapters and units",
+    "chapters_lead": "The chapters of the course in order. Each chapter has its own big question, and its units answer it together.",
+    "credits": "Photographs and videos",
+    "credit_source": "source",
+    "sources": "Sources and verification",
+    "sources_lead": "Facts that may change were checked against these sources on the date given.",
+    "checked": "checked {{date}}",
+    "teacher": "For the teacher",
+    "notice_draft": "This unit is a draft: its reviews are not complete and it is not published."
   }
 }

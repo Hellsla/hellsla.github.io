@@ -28,7 +28,7 @@ stay in their lesson folders and keep their <id>-sim.js URLs.
 """
 import json, os, sys, re, shutil, pathlib, atexit, html as _h, markdown
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent)); from reviews import status as review_status, published_exercises, WorkTree
-import answers_shown, courses, fbdspec, figcat, guides, i18n, inquiry, investigations, local_courses, mathlayout, module_icons, practice, svgids
+import answers_shown, courses, fbdspec, figcat, guides, i18n, inquiry, investigations, local_courses, mathlayout, module_icons, practice, svgids, units
 from i18n import t as T
 
 ROOT = pathlib.Path(os.environ.get("FYSIIKKALABRA_ROOT") or pathlib.Path(__file__).resolve().parents[1])   # tests build a copy
@@ -52,6 +52,8 @@ for f in ("site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js"
 shutil.copytree(TPL / "vendor", SITE / "vendor", dirs_exist_ok=True)   # p5 + KaTeX, no CDN needed
 if (ROOT / "assets/shared/brand").is_dir():                   # the Ruukkilabra logos and favicon (scripts/brand_logos.py); test copies may leave them out
     shutil.copytree(ROOT / "assets/shared/brand", SITE / "brand", dirs_exist_ok=True)
+if (ROOT / "assets/units").is_dir():                          # the local courses' unit components (scripts/units.py)
+    shutil.copytree(ROOT / "assets/units", SITE / "units", dirs_exist_ok=True)
 if module_icons.DIR.is_dir():                                 # one icon per module (scripts/module_icons.py), front page and module pages
     shutil.copytree(module_icons.DIR, SITE / module_icons.PUBLISHED, dirs_exist_ok=True)
 tpl = (TPL / "lesson.html").read_text()
@@ -360,6 +362,71 @@ def chapter_nav(out, modules, built_ids, practice_built):
             f.write_text(f.read_text().replace(f"<!--fl-chapter-nav:{name[:-5]}-->", nav))
 
 
+def unit_sections(md_text):
+    """(intro html, {section key: html}) of a unit's text, laid out as a lesson's (figures beside their paragraph,
+    the worked example in stages, a formula section named after its law)."""
+    html = staged_example(fig_rows(named_sections(nbsp_units(render_md(example_md(md_text))))))
+    pieces = re.split(r"(?=<h2[ >])", html)
+    intro = pieces[0] if not pieces[0].startswith("<h2") else ""
+    sections = {}
+    for piece in pieces[1:] if intro or len(pieces) > 1 else []:
+        m = re.match(r'<h2(?: data-section="([^"]*)")?>(.*?)</h2>', piece)
+        if m: sections[_h.unescape(m.group(1) or m.group(2))] = re.sub(r"^<h2[^>]*>(.*?)</h2>", r'<h3 class="theory-h">\1</h3>',
+                                                             re.sub(r"<(/?)h3>", r"<\1h4>", piece), count=1)
+    return intro, sections
+
+
+def build_units(lang, out, unit_pub):
+    """The course units written in this language (scripts/units.py): each page in the lesson template with the
+    inquiry stages, the course's components (units/<course>/units.js and units.css), its simulation, its credits,
+    sources and teacher notes, and Previous / Next unit in the course's order. A draft is built only as a preview."""
+    published = {f"{u}.html" for u, ul in unit_pub.items() if ul == lang}
+    for uid in units.ids(lang):
+        if only and only != uid: continue
+        if uid not in unit_pub: continue
+        errs = units.check(uid, lang)
+        if errs: sys.exit("\n".join(errs))
+        d = units.load(uid, lang); st = units.status(uid, lang); f = units.folder(uid, lang); code = d["course"]
+        md_text = (f / "unit.md").read_text()
+        inq = json.loads((f / "inquiry.json").read_text())
+        intro, sections = unit_sections(md_text)
+        sim = ""; sf = units.sim_folder(uid, lang)
+        if sf:
+            pub = "sims/" + d["sim"]
+            shutil.copytree(sf, SITE / pub, dirs_exist_ok=True); assets.append(f"{pub}/sim.js")
+            css = f'<link rel="stylesheet" href="{pub}/sim.css">' if (sf / "sim.css").is_file() else ""
+            model = f'<script src="{pub}/model.js"></script>' if (sf / "model.js").is_file() else ""
+            sim = (f'<section id="sim">{sim_head(inq)}{css}<div id="sim-root" data-base="{pub}/"></div>'
+                   f'<script src="vendor/p5.min.js"></script><script src="sim-embed.js"></script>{model}<script src="{pub}/sim.js"></script><!--sim-info--></section>')
+        exit_html = ""
+        if (f / "exit-ticket.json").is_file():
+            exit_q = json.loads((f / "exit-ticket.json").read_text())
+            exit_html = (f'<div id="exit"><h3>{inquiry.exit_title()}</h3><ol>' + "".join(
+                f"<li>{nbsp_units(q['q'])}<details class=\"answer\"><summary>{T('lesson.answer')}</summary><div class=\"answer-body\">{nbsp_units(render_md(q['a']))}</div></details></li>"
+                for q in exit_q) + "</ol></div>")
+        md = lambda t: nbsp_units(render_md(t))
+        body, toc = inquiry.render(f, inq, {"intro": intro, "sections": sections, "sim": sim, "exercises": "", "exit": exit_html}, md)
+        tail = units.tail_html(uid, lang, T, md)
+        if "id=\"sources\"" in tail: toc += f'<a href="#sources" class="toc-end"><span class="toc-label">{T("units.sources")}</span></a>'
+        cdir = ROOT / "assets" / "units" / code.lower()
+        if cdir.is_dir(): assets.append(f"units/{code.lower()}/units.js")
+        head = f'<link rel="stylesheet" href="units/{code.lower()}/units.css">' if (cdir / "units.css").is_file() else ""
+        block = strings_block(None)
+        sb = units.sim_block(uid, lang)
+        if sb is not None:
+            data = json.loads(re.search(r'>(.*)</script>', block, re.S).group(1).replace("<\\/", "</")); data["sim"] = sb
+            block = '<script id="fl-strings" type="application/json">' + json.dumps(data, ensure_ascii=False).replace("</", "<\\/") + "</script>"
+        notice_html = "" if st["state"] == "reviewed" else f'<p class="notice" role="note">{T("units.notice_draft")}</p>'
+        html = (texts(tpl).replace("{{title}}", esc(d["title"])).replace("{{course}}", code).replace("{{notice}}", notice_html)
+                .replace("{{strings}}", block + head).replace("{{back_to_course}}", esc(T("site.back_to_course", course=code)))
+                .replace("{{toc}}", toc).replace("{{main}}", f'<article id="teoria" class="inquiry unit unit-{d["kind"]}" data-course="{code.lower()}">{body}{tail}</article>' + units.course_nav(uid, lang, T, published))
+                .replace("{{scripts}}", f'<script src="inquiry.js"></script><script src="units/{code.lower()}/units.js"></script>')
+                .replace("{{description}}", esc(d["description"])).replace("{{url}}", URL + f"{uid}.html")
+                .replace("{{home}}", HOME).replace("{{languages}}", ""))
+        (out / f"{uid}.html").write_text(rebase(html))
+        print("built", uid, f"({st['state']})")
+
+
 def build_language(lang):
     """Every lesson, course page and the front page of one language into OUTS[lang]."""
     global UP, HOME, URL, COURSES
@@ -606,13 +673,19 @@ def build_language(lang):
                 .replace("{{home}}", HOME).replace("{{languages}}", languages_nav(f"{iid}.html")))
         (out / f"{iid}.html").write_text(rebase(html)); inv_built[iid] = d
         print("built", iid, f"({st['state']})")
+    # Course units (teacher's brief 2026-11-01, FY14; scripts/units.py): the lessons of a local course written in its
+    # own language, published only in that language's folder when all three reviews pass. Every language's course
+    # page links to them there, so which units are published is decided from their reviews, not from built files.
+    unit_pub = {u: ul for ul, u in units.all_units() if units.status(u, ul)["state"] == "reviewed" or build_all or only == u}
+    if lang in units.languages(): build_units(lang, out, unit_pub)
     local = local_courses.load(lang)
     local_rows = ""
     for code, c in local.items():
-        local_rows += local_courses.home_row(code, c, T, sum(code in d["courses"] for d in inv_built.values()))
+        cu = [(u, units.load(u, ul), os.path.relpath(OUTS[ul] / f"{u}.html", out).replace(os.sep, "/")) for u, ul in unit_pub.items() if units.load(u, ul)["course"] == code]
+        local_rows += local_courses.home_row(code, c, T, sum(code in d["courses"] for d in inv_built.values()), len(cu))
         (out / f"{code}.html").write_text(page(f"{code} {c['title']}", local_courses.page_body(code, c, T, chapters, {f"{i}.html" for i in built_ids},
                                                                                                   [(i, d) for i, d in inv_built.items() if code in d["courses"]],
-                                                                                                  guides.course_section(T, published, lang) if code == "FY10" else "")
+                                                                                                  guides.course_section(T, published, lang) if code == "FY10" else "", cu)
                                                 + '<script src="invfilter.js"></script>',
                                                 f'<a href="index.html">{T("site.name")}</a> › {code}', f"{code}.html", c["description"]))
     local_notes = "".join(f'<p class="unavailable" id="unavailable-{code}" role="note" tabindex="-1">'
@@ -649,7 +722,12 @@ def build_language(lang):
                 removed.append(lid if lang == i18n.SOURCE else f"{lang}/{lid}")
                 print(f"{'::warning::' if os.environ.get('GITHUB_ACTIONS') else 'WARNING:'} {old_page.relative_to(LIVE)} is on the live site but its reviews are not current ({why}); this build removes it")
     pre = out.relative_to(SITE).as_posix() + "/" if out != SITE else ""
-    expected.extend(pre + n for n in ["index.html"] + [f"{c}.html" for c, _ in modules] + [f"{c}.html" for c in local] + [f"{i}.html" for i in built_ids] + [f"{i}.html" for i in inv_built] + [f"{g}.html" for g in guide_built] + [practice.page_name(c) for c in practice_built])
+    expected.extend(pre + n for n in ["index.html"] + [f"{c}.html" for c, _ in modules] + [f"{c}.html" for c in local] + [f"{i}.html" for i in built_ids] + [f"{i}.html" for i in inv_built] + [f"{g}.html" for g in guide_built] + [practice.page_name(c) for c in practice_built]
+                    + [f"{u}.html" for u, ul in unit_pub.items() if ul == lang and not only])
+    if SITE.name == "site.tmp" and lang in units.languages():   # a unit that lost its reviews leaves the site only with a warning
+        for u in units.ids(lang):
+            if u not in unit_pub and (LIVE / out.relative_to(SITE) / f"{u}.html").is_file():
+                print(f"{'::warning::' if os.environ.get('GITHUB_ACTIONS') else 'WARNING:'} {u}.html is on the live site but its reviews are not current; this build removes it")
     print(f"built {pre or ''}index +", len(modules), "module pages ->", ((LIVE if SITE.name == "site.tmp" else SITE) / pre).relative_to(ROOT),
           f"({sum(m['state'] == 'reviewed' for ms in built.values() for m in ms)} reviewed, {len(legacy_ids)} legacy, "
           f"{sum(m['state'] == 'draft' for ms in built.values() for m in ms)} draft" + (f", {len(removed)} removed: {', '.join(removed)}" if removed else "") + ")")
