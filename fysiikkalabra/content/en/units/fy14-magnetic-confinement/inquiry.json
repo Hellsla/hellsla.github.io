@@ -1,8 +1,513 @@
-{"version": 1, "contribution": "test", "learn": ["explain why a charged particle circles in a magnetic field", "calculate the radius of the circular orbit"],
- "activities": [{"id": "hook-1", "stage": "herata", "type": "hook", "text": "Test hook."},
-  {"id": "sim-1", "stage": "tutki", "type": "sim", "text": "Explore."},
-  {"id": "exp-1", "stage": "tutki", "type": "experiment", "title": "Experiment 1: radius and field", "intro": "Vary $B$ and record $r$.",
-   "initial": {"view": "uniform", "particle": "p", "v": 2000000, "B": 1}, "names": {"B": "field B", "v": "speed v"}, "units": {"B": "T", "v": "m/s"},
-   "locked": ["view", "particle", "v"], "vary": "B", "measure": [{"key": "rmm", "label": "r (mm)"}, {"key": "T", "label": "T (s)"}], "min": 3},
-  {"id": "teoria-1", "stage": "selita", "type": "theory", "sections": ["Ydinajatus"]},
-  {"id": "check-1", "stage": "tarkista", "type": "choice", "prompt": "Q?", "choices": [{"text": "a", "correct": true, "feedback": "yes"}, {"text": "b", "feedback": "no"}]}]}
+{
+ "version": 1,
+ "contribution": "The physics core of chapter 4: the magnetic part of the Lorentz force, circular orbits $r = mv/(|q|B)$ and $T = 2\\pi m/(|q|B)$, helices, the magnetic mirror and its loss cone, why a torus and why its curved field causes drifts, and the limits of the single-particle model (collisions, turbulence, instabilities); students investigate the orbits in the simulation.",
+ "learn": [
+  "calculate the radius and period of a charged particle's circular orbit in a magnetic field.",
+  "explain how a magnetic field holds particles across field lines but not along them, using the mirror and the torus.",
+  "evaluate what the single-particle model shows and what the collective behaviour of a plasma adds."
+ ],
+ "prior": [
+  "A plasma is a quasi-neutral mixture of ions and free electrons that reacts strongly to magnetic fields (chapter *Plasma: the fourth state of matter*)",
+  "Uniform circular motion needs a centripetal force $F = mv^2/r$, and kinetic energy is $E_\\text{k} = \\frac{1}{2}mv^2$ (earlier physics courses)"
+ ],
+ "activities": [
+  {
+   "id": "hook",
+   "stage": "herata",
+   "type": "hook",
+   "text": "A fusion plasma is about $1.5 \\cdot 10^{8}\\ \\text{K}$ hot. No material can touch it: even tungsten, the metal with the highest melting point, melts at about $3400\\ ^\\circ\\text{C}$, and a plasma that touches a wall cools down at once. So the plasma must float inside its vessel without touching anything. In the previous unit you learnt that a plasma is made of free ions and electrons. Charged particles feel magnetic forces.",
+   "question": "How could a magnetic field, which you cannot see or touch, keep millions of degrees away from the walls?"
+  },
+  {
+   "id": "review",
+   "stage": "herata",
+   "type": "choice",
+   "title": "Review: plasma and magnetic fields",
+   "prompt": "In the unit *Plasma: the fourth state of matter* you saw that a plasma reacts strongly to magnetic fields, while ordinary air hardly does. Why?",
+   "choices": [
+    {
+     "text": "A plasma contains free charged particles, and moving charges feel magnetic forces.",
+     "correct": true,
+     "feedback": "Right. A magnetic field acts on a *moving charge*. Neutral air molecules carry no net charge, so the field hardly affects them; the free ions and electrons of a plasma are pushed by it."
+    },
+    {
+     "text": "A plasma is much hotter, and hot matter is always magnetic.",
+     "feedback": "Temperature alone does not make anything magnetic: a very hot iron bar even loses its magnetism. What matters is that a plasma has free charges."
+    },
+    {
+     "text": "A plasma has a large net charge that the field attracts.",
+     "feedback": "A plasma is quasi-neutral: its positive and negative charges balance. The field acts on each *moving* charge separately, not on a net charge."
+    }
+   ]
+  },
+  {
+   "id": "pred-field",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Prediction 1: a stronger field",
+   "justify": true,
+   "reveal": {
+    "after": "exp-field",
+    "min": 3
+   },
+   "prompt": "A proton moves at $2.0 \\cdot 10^{6}\\ \\text{m/s}$ perpendicular to a uniform magnetic field and goes round in a circle. You make the field twice as strong, from $1.0\\ \\text{T}$ to $2.0\\ \\text{T}$. What happens to the radius of the circle?",
+   "choices": [
+    {
+     "text": "It becomes twice as large: a stronger field throws the proton outward.",
+     "feedback": "The model values show the opposite: about $20.9\\ \\text{mm}$ at $1.0\\ \\text{T}$ and $10.4\\ \\text{mm}$ at $2.0\\ \\text{T}$. The magnetic force points to the centre of the circle, and a stronger force bends the path more sharply."
+    },
+    {
+     "text": "It becomes half as large: a stronger field bends the path more.",
+     "correct": true,
+     "feedback": "The model values support this: about $20.9\\ \\text{mm}$ at $1.0\\ \\text{T}$ and $10.4\\ \\text{mm}$ at $2.0\\ \\text{T}$. The radius is $r = mv/(|q|B)$, inversely proportional to $B$."
+    },
+    {
+     "text": "It stays the same: the field changes only the speed of the proton.",
+     "feedback": "The magnetic force is perpendicular to the velocity, so it never changes the speed. It changes the direction, and the model values show that the circle shrinks from about $20.9\\ \\text{mm}$ to $10.4\\ \\text{mm}$."
+    },
+    {
+     "text": "It becomes four times smaller, because the force grows as $B^2$.",
+     "feedback": "The force $|q|vB$ grows in proportion to $B$, not $B^2$. The model values show the radius halving: about $20.9\\ \\text{mm}$ at $1.0\\ \\text{T}$, $10.4\\ \\text{mm}$ at $2.0\\ \\text{T}$."
+    }
+   ]
+  },
+  {
+   "id": "pred-mirror",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Prediction 2: a magnetic mirror",
+   "justify": true,
+   "reveal": {
+    "after": "exp-mirror",
+    "min": 3
+   },
+   "prompt": "In a **magnetic mirror** the field is four times stronger at both ends than in the middle. Protons start in the middle with the same speed but different directions. The **pitch angle** $\\theta$ is the angle between a proton's velocity and the field line. Which protons will turn back before the ends?",
+   "choices": [
+    {
+     "text": "Those moving almost along the field lines (small $\\theta$).",
+     "feedback": "The model values show the opposite: protons with small pitch angles, for example $10^\\circ$ or $20^\\circ$, escape through the ends. Their motion is mostly *along* the field, and the stronger field at the end cannot stop it."
+    },
+    {
+     "text": "Those moving mostly across the field lines (large $\\theta$).",
+     "correct": true,
+     "feedback": "The model values support this: with this mirror, protons with $\\theta \\geq 30^\\circ$ are trapped and those with smaller angles escape. In the stronger field more of the motion turns into circling, and the motion along the field stops and reverses."
+    },
+    {
+     "text": "All of them, because the field at the ends is so strong.",
+     "feedback": "Not all of them: in the model values protons with small pitch angles, such as $10^\\circ$ or $20^\\circ$, escape through the ends. A mirror always has a **loss cone**."
+    },
+    {
+     "text": "None of them, because a magnetic field never stops motion.",
+     "feedback": "A magnetic force does not change the *speed*, but it can turn the *direction* of motion along the field around. In the model values protons with $\\theta \\geq 30^\\circ$ were reflected."
+    }
+   ]
+  },
+  {
+   "id": "simulation",
+   "stage": "tutki",
+   "type": "sim",
+   "text": "One charged particle in a magnetic field. Choose the view, the particle, its speed and the field, and watch the orbit. The blue arrow is the velocity, the red one the force.",
+   "howto": "*View: Uniform field* shows $\\overline{B}$ perpendicular to the page (⊗ into, ⊙ out of it): the particle circles. The checkbox *Electric field* adds a field $\\overline{E}$ in the page. *View: Field along the particle* shows the field from the side: the pitch angle $\\theta$ sets how much of the velocity is along the field; tick *Magnetic mirror* to make the field stronger at both ends. The canvas says how long one grid square is and how much time is slowed down. *Playback* changes only the animation speed.",
+   "model": "One particle only, with no collisions and no other particles; a real plasma has billions of interacting particles in every cubic millimetre. The particle is non-relativistic (all speeds are below $4\\ \\%$ of the speed of light). The uniform field is exact. In the mirror the field grows from $B_0$ in the middle to $B_{\\max} = 4B_0$ at the ends, and the motion is computed with the guiding-centre model, which conserves the magnetic moment $m v_{\\perp}^2 / (2B)$. All readings are model values, not measurements.",
+   "calc": "$r = mv_{\\perp}/(|q|B)$ and $T = 2\\pi m/(|q|B)$ with CODATA masses (proton $1.673 \\cdot 10^{-27}\\ \\text{kg}$, deuteron $3.344 \\cdot 10^{-27}\\ \\text{kg}$, alpha particle $6.645 \\cdot 10^{-27}\\ \\text{kg}$ with $q = 2e$, electron $9.109 \\cdot 10^{-31}\\ \\text{kg}$) and $e = 1.602 \\cdot 10^{-19}\\ \\text{C}$. In the side view $v_{\\parallel} = v\\cos\\theta$ and $v_{\\perp} = v\\sin\\theta$. A particle is reflected by the mirror if $\\sin^2\\theta \\geq B_0/B_{\\max} = 0.25$, that is if $\\theta \\geq 30^\\circ$."
+  },
+  {
+   "id": "exp-field",
+   "stage": "tutki",
+   "type": "experiment",
+   "title": "Experiment 1: field strength and radius",
+   "intro": "Test prediction 1. A proton moves at $2.0 \\cdot 10^{6}\\ \\text{m/s}$ in a uniform field. Change only the field $B$, for example $0.5$, $1.0$, $2.0$ and $4.0\\ \\text{T}$, and record the radius $r$ and the period $T$ each time. Watch the grid scale on the canvas: it changes when the circle becomes very small or large.",
+   "initial": {
+    "view": "uniform",
+    "particle": "p",
+    "v": 2000000,
+    "B": 1
+   },
+   "locked": [
+    "view",
+    "particle",
+    "v"
+   ],
+   "vary": "B",
+   "names": {
+    "B": "field B (T)",
+    "v": "speed v (m/s)",
+    "particle": "particle",
+    "view": "view",
+    "pitch": "θ (degrees)"
+   },
+   "values": {
+    "particle": {
+     "p": "proton"
+    },
+    "view": {
+     "uniform": "uniform field",
+     "along": "field along the particle"
+    }
+   },
+   "measure": [
+    {
+     "key": "rmm",
+     "label": "$r\\;(\\text{mm})$"
+    },
+    {
+     "key": "Tns",
+     "label": "$T\\;(\\text{ns})$"
+    }
+   ],
+   "min": 3
+  },
+  {
+   "id": "exp-mirror",
+   "stage": "tutki",
+   "type": "experiment",
+   "title": "Experiment 2: the magnetic mirror",
+   "intro": "Test prediction 2. The view shows the field from the side; make sure *Magnetic mirror* is ticked. A proton starts in the middle at $2.0 \\cdot 10^{6}\\ \\text{m/s}$. Change only the pitch angle $\\theta$, for example $10^\\circ$, $20^\\circ$, $40^\\circ$, $60^\\circ$ and $80^\\circ$. Watch each orbit for a few seconds, then record whether the proton stays trapped.",
+   "initial": {
+    "view": "along",
+    "particle": "p",
+    "v": 2000000,
+    "B": 1,
+    "pitch": 60
+   },
+   "locked": [
+    "view",
+    "particle",
+    "v",
+    "B"
+   ],
+   "vary": "pitch",
+   "names": {
+    "B": "field B (T)",
+    "v": "speed v (m/s)",
+    "particle": "particle",
+    "view": "view",
+    "pitch": "θ (degrees)"
+   },
+   "values": {
+    "particle": {
+     "p": "proton"
+    },
+    "view": {
+     "uniform": "uniform field",
+     "along": "field along the particle"
+    }
+   },
+   "measure": [
+    {
+     "key": "trapped",
+     "label": "$\\text{trapped (true or false)}$"
+    }
+   ],
+   "min": 3
+  },
+  {
+   "id": "exp-particles",
+   "stage": "tutki",
+   "type": "experiment",
+   "title": "Optional experiment: which particle?",
+   "optional": true,
+   "intro": "Keep the speed $2.0 \\cdot 10^{6}\\ \\text{m/s}$ and the field $1.0\\ \\text{T}$, and change only the particle. In the table, *p* is a proton, *d* a deuteron, *a* an alpha particle (a helium nucleus, $q = 2e$) and *e* an electron. Which two particles have almost the same circle, and why? Which one turns the other way?",
+   "initial": {
+    "view": "uniform",
+    "particle": "p",
+    "v": 2000000,
+    "B": 1
+   },
+   "locked": [
+    "view",
+    "v",
+    "B"
+   ],
+   "vary": "particle",
+   "names": {
+    "B": "field B (T)",
+    "v": "speed v (m/s)",
+    "particle": "particle",
+    "view": "view",
+    "pitch": "θ (degrees)"
+   },
+   "values": {
+    "particle": {
+     "p": "proton"
+    },
+    "view": {
+     "uniform": "uniform field",
+     "along": "field along the particle"
+    }
+   },
+   "measure": [
+    {
+     "key": "rmm",
+     "label": "$r\\;(\\text{mm})$"
+    },
+    {
+     "key": "Tns",
+     "label": "$T\\;(\\text{ns})$"
+    }
+   ],
+   "min": 3,
+   "question": {
+    "type": "choice",
+    "prompt": "The deuteron and the alpha particle have almost the same radius. Why?",
+    "choices": [
+     {
+      "text": "The ratio $m : q$ is almost the same for both.",
+      "correct": true,
+      "feedback": "Right. An alpha particle has about twice the mass of a deuteron and twice the charge, so $r = mv/(|q|B)$ is nearly the same: $41.7\\ \\text{mm}$ and $41.5\\ \\text{mm}$ in the model."
+     },
+     {
+      "text": "Both are nuclei of hydrogen.",
+      "feedback": "An alpha particle is a helium nucleus. What decides the radius at the same speed and field is the ratio of mass to charge."
+     },
+     {
+      "text": "The magnetic force does not depend on the particle.",
+      "feedback": "$F = |q|vB$ depends on the charge, and the radius also on the mass. The alpha particle feels twice the force, but it is also about twice as heavy."
+     }
+    ]
+   }
+  },
+  {
+   "id": "lang-conclusion",
+   "stage": "tutki",
+   "type": "text",
+   "text": "<div class=\"wordbank\"><h4>Word bank</h4><p>magnetic field · magnetic force · radius · period · inversely proportional · pitch angle · along / across the field · trapped · reflected · to escape · loss cone</p></div>\n\n<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>When we doubled the field, the radius …</li><li>The period did not depend on …</li><li>Protons with a pitch angle of … were …, whereas …</li><li>The evidence suggests that a magnetic field can hold particles across …, but not along …</li><li>I agree / disagree, because …</li></ul></div>"
+  },
+  {
+   "id": "conclusion",
+   "stage": "tutki",
+   "type": "explain",
+   "title": "Conclusion: what can a magnetic field do?",
+   "after": [
+    "exp-field",
+    "exp-mirror"
+   ],
+   "prompt": "Discuss with a partner, then write four or five sentences. Use numbers from your two tables. How does the radius depend on the field? Which protons does the mirror hold and which escape? What does this tell you about holding a plasma with a magnetic field?",
+   "model": "When we doubled the field from $1.0\\ \\text{T}$ to $2.0\\ \\text{T}$, the radius fell from about $20.9\\ \\text{mm}$ to $10.4\\ \\text{mm}$, so the radius is inversely proportional to $B$. The period also halved, from about $65.6\\ \\text{ns}$ to $32.8\\ \\text{ns}$. In the mirror, protons with pitch angles of $40^\\circ$ or more were trapped, whereas protons at $10^\\circ$ and $20^\\circ$ escaped through the ends. So a strong field holds particles well *across* the field lines, on small circles, but motion *along* the field lines is a problem: a machine needs field lines without ends. These are model values for one particle.",
+   "criteria": [
+    "The answer says that a stronger field gives a smaller radius (inversely proportional), with numbers from the table.",
+    "The answer says that protons with large pitch angles are reflected and protons with small pitch angles escape, with angles from the table.",
+    "The answer draws a conclusion: the field holds particles across the field lines, but not along them.",
+    "The answer uses at least three words from the word bank correctly and calls the numbers model values."
+   ]
+  },
+  {
+   "id": "theory-forces",
+   "stage": "selita",
+   "type": "theory",
+   "sections": [
+    "Lorentz",
+    "Kaava",
+    "Mirror"
+   ]
+  },
+  {
+   "id": "theory-torus",
+   "stage": "selita",
+   "type": "theory",
+   "sections": [
+    "Torus",
+    "Collective"
+   ]
+  },
+  {
+   "id": "order-ring",
+   "stage": "selita",
+   "type": "text",
+   "title": "Describe a process: from a straight field to a twisted ring",
+   "text": "Put the steps of the argument in a logical order. Then explain the chain to your partner aloud, one step each.\n\n<div class=\"fx\" data-fx=\"order\" id=\"fx-mc-order\"><script type=\"application/json\">{\"prompt\": \"Why do fusion machines use twisted, ring-shaped magnetic fields?\", \"items\": [\"Charged particles circle around field lines but move freely along them.\", \"In a straight field, particles moving along the lines leak out at the ends.\", \"Bending the field into a ring closes the field lines, so there are no ends.\", \"In a ring the field is stronger on the inside, so ions and electrons drift apart.\", \"The separated charges make an electric field that pushes the plasma outward.\", \"Twisting the field lines lets the charges flow back and stops the outward drift.\"], \"explain\": \"Each step answers the problem of the step before it. The last step leads to the next chapter: tokamaks and stellarators twist the field in different ways.\", \"hints\": [\"Start with what a field does to one particle.\", \"Ends come before rings.\", \"The ring solves one problem but creates a new one.\"]}</script></div>"
+  },
+  {
+   "id": "back-to-predictions",
+   "stage": "selita",
+   "type": "reflect",
+   "title": "Back to your predictions",
+   "prompt": "Compare your two predictions with your tables. Then answer the opening question in one or two sentences: how can a magnetic field hold a fuel that would melt any solid container?",
+   "predictions": [
+    "pred-field",
+    "pred-mirror"
+   ]
+  },
+  {
+   "id": "example",
+   "stage": "sovella",
+   "type": "theory",
+   "sections": [
+    "Esimerkki"
+   ]
+  },
+  {
+   "id": "alpha-task",
+   "stage": "sovella",
+   "type": "numeric",
+   "title": "Apply: can the plasma hold its alpha particles?",
+   "prompt": "Each deuterium–tritium reaction makes an alpha particle (a helium-4 nucleus) with a kinetic energy of $3.5\\ \\text{MeV}$. Its mass is $6.645 \\cdot 10^{-27}\\ \\text{kg}$ and its charge $2e$. Calculate the radius of its circle in ITER's field $B = 5.3\\ \\text{T}$, assuming that it moves perpendicular to the field. Give the answer in centimetres.",
+   "answer": 5.08,
+   "unit": "$\\text{cm}$",
+   "tolerance": 0.03,
+   "hints": [
+    "First find the speed from $E_\\text{k} = \\frac{1}{2}mv^2$. Change $3.5\\ \\text{MeV}$ into joules.",
+    "$1\\ \\text{MeV} = 1.602 \\cdot 10^{-13}\\ \\text{J}$, and $v = \\sqrt{2E_\\text{k}/m}$ gives about $1.3 \\cdot 10^{7}\\ \\text{m/s}$.",
+    "Then $r = mv/(|q|B)$ with $|q| = 2e = 3.204 \\cdot 10^{-19}\\ \\text{C}$."
+   ],
+   "mistakes": [
+    {
+     "value": 10.2,
+     "feedback": "You used the charge $e$. An alpha particle has two protons, so $|q| = 2e$ and the radius is half as large."
+    },
+    {
+     "value": 0.0508,
+     "feedback": "That is the radius in metres. The question asks for centimetres: $1\\ \\text{m} = 100\\ \\text{cm}$."
+    }
+   ],
+   "solution": "**Given:** $E_\\text{k} = 3.5\\ \\text{MeV}$, $m = 6.645 \\cdot 10^{-27}\\ \\text{kg}$, $|q| = 2e = 2 \\cdot 1.602 \\cdot 10^{-19}\\ \\text{C}$, $B = 5.3\\ \\text{T}$, velocity perpendicular to the field\n\n**Asked:** the radius $r$ of the circle, in centimetres\n\n**Principle:** The magnetic force is the centripetal force, so $r = mv/(|q|B)$. The speed comes from the kinetic energy; the speed is far below the speed of light (about $4\\ \\%$), so $E_\\text{k} = \\frac{1}{2}mv^2$ is accurate enough.\n\n**Formula:**\n\n$$v = \\sqrt{\\frac{2E_\\text{k}}{m}}, \\qquad r = \\frac{m v}{|q| B}$$\n\n**Unit conversions:**\n\n$$\\begin{aligned} E_\\text{k} &= 3.5 \\cdot 10^{6} \\cdot 1.602 \\cdot 10^{-19}\\ \\text{J} \\\\ &= 5.607 \\cdot 10^{-13}\\ \\text{J} \\end{aligned}$$\n\n**Substitution:**\n\n$$\\begin{aligned} v &= \\sqrt{\\frac{2 \\cdot 5.607 \\cdot 10^{-13}\\ \\text{J}}{6.645 \\cdot 10^{-27}\\ \\text{kg}}} \\\\ &= 1.299 \\cdot 10^{7}\\ \\text{m/s} \\\\[6pt] r &= \\frac{6.645 \\cdot 10^{-27}\\ \\text{kg} \\cdot 1.299 \\cdot 10^{7}\\ \\text{m/s}}{3.204 \\cdot 10^{-19}\\ \\text{C} \\cdot 5.3\\ \\text{T}} \\\\ &= 5.08 \\cdot 10^{-2}\\ \\text{m} \\\\ &= 5.08\\ \\text{cm} \\end{aligned}$$\n\n**Answer:** $r \\approx 5.1\\ \\text{cm}$, two significant figures as in the energy and the field.\n\n**Reasonableness:** The alpha particle has about $340$ times the energy of the deuteron in the worked example ($10\\ \\text{keV}$), but its circle is still only about $5\\ \\text{cm}$, small compared with ITER's plasma, which is about $4\\ \\text{m}$ across. So the field can hold the alpha particles long enough for them to give their energy to the plasma by collisions, which keeps the plasma hot."
+  },
+  {
+   "id": "find-error",
+   "stage": "sovella",
+   "type": "choice",
+   "title": "Find the error",
+   "optional": true,
+   "prompt": "A student writes: \\\"An electron and a proton move at the same speed perpendicular to the same field. The electron has the same charge, so it moves on a circle of the same size, only the other way round.\\\" What is wrong?",
+   "choices": [
+    {
+     "text": "The electron is about 1836 times lighter, so its circle is 1836 times smaller.",
+     "correct": true,
+     "feedback": "Right. The size of the charge is the same, but $r = mv/(|q|B)$ depends on the mass too. In the simulation at $2.0 \\cdot 10^{6}\\ \\text{m/s}$ and $1.0\\ \\text{T}$ the proton circles at $20.9\\ \\text{mm}$, the electron at about $0.011\\ \\text{mm}$."
+    },
+    {
+     "text": "The electron turns the same way as the proton.",
+     "feedback": "The student is right about the direction: the electron's charge is negative, so the force on it points the other way and it circles in the opposite sense. The error is the size of the circle."
+    },
+    {
+     "text": "The electron feels a much smaller force than the proton.",
+     "feedback": "$F = |q|vB$ is the same for both, because they have charges of the same size and the same speed. The electron's circle is smaller because its mass is much smaller."
+    },
+    {
+     "text": "Nothing is wrong; both circles have the same radius.",
+     "feedback": "Look at $r = mv/(|q|B)$: with the same $v$, $|q|$ and $B$, the radius is proportional to the mass, and the electron is about 1836 times lighter."
+    }
+   ]
+  },
+  {
+   "id": "misconception",
+   "stage": "sovella",
+   "type": "theory",
+   "sections": [
+    "Yleinen virhekäsitys"
+   ]
+  },
+  {
+   "id": "check-1",
+   "stage": "tarkista",
+   "type": "choice",
+   "title": "1. Concept: force and speed",
+   "prompt": "A deuteron circles in a uniform magnetic field with no other forces. Which statement is correct?",
+   "choices": [
+    {
+     "text": "Its speed stays the same, because the force is perpendicular to its velocity.",
+     "correct": true,
+     "feedback": "Right. A force perpendicular to the motion does no work, so the kinetic energy and the speed stay constant. Only the direction changes."
+    },
+    {
+     "text": "It slowly speeds up, because the force acts on it all the time.",
+     "feedback": "A force changes the speed only if it has a part along the velocity. The magnetic force is always perpendicular to the velocity, so it does no work."
+    },
+    {
+     "text": "It slowly spirals into the centre of its circle.",
+     "feedback": "In a uniform field and without collisions or radiation, the radius $r = mv/(|q|B)$ stays constant, because $v$ does not change."
+    },
+    {
+     "text": "Its speed falls, because the field takes energy from it.",
+     "feedback": "A static magnetic field cannot give or take energy from a moving charge: the force is perpendicular to the velocity, so it does no work."
+    }
+   ]
+  },
+  {
+   "id": "check-2",
+   "stage": "tarkista",
+   "type": "choice",
+   "title": "2. Representation: the direction of the force",
+   "prompt": "A positive ion moves to the right across a field that points into the page (⊗). In which direction is the magnetic force on it at that moment?",
+   "choices": [
+    {
+     "text": "Up the page, at right angles to its velocity.",
+     "correct": true,
+     "feedback": "Right. The force is perpendicular to both $\\overline{v}$ and $\\overline{B}$; the right-hand rule for a positive charge moving right in a field into the page gives *up*. The ion starts to circle anticlockwise, as in the figure of this unit."
+    },
+    {
+     "text": "To the right, the same way as its velocity.",
+     "feedback": "A force along the velocity would speed the ion up. The magnetic force is always perpendicular to the velocity."
+    },
+    {
+     "text": "Into the page, along the field.",
+     "feedback": "The magnetic force is perpendicular to the field as well as to the velocity, so it lies in the page."
+    },
+    {
+     "text": "There is no force, because the ion moves across the field.",
+     "feedback": "The force is *largest* when the motion is across the field ($\\sin 90^\\circ = 1$); it is zero only for motion along the field."
+    }
+   ]
+  },
+  {
+   "id": "check-3",
+   "stage": "tarkista",
+   "type": "choice",
+   "title": "3. Model and reality",
+   "prompt": "In the simulation a proton circles for ever in a uniform field. Why does this not prove that a real fusion plasma would stay confined?",
+   "choices": [
+    {
+     "text": "The simulation is wrong: protons never circle in magnetic fields.",
+     "feedback": "The circular motion is real and well tested, for example in particle accelerators. The problem is what the one-particle model leaves out."
+    },
+    {
+     "text": "A real plasma has collisions, currents, drifts and instabilities.",
+     "correct": true,
+     "feedback": "Right. Collisions let particles jump between field lines, the plasma's own currents change the field, a ring-shaped field causes drifts, and turbulence and instabilities carry heat out. The single-particle model shows only why confinement is possible."
+    },
+    {
+     "text": "Real protons are too fast to be held by any magnetic field.",
+     "feedback": "Even the $3.5\\ \\text{MeV}$ alpha particles have circles of only about $5\\ \\text{cm}$ in ITER's field. Speed is not the main problem; the collective behaviour of the plasma is."
+    },
+    {
+     "text": "Magnetic fields only work on electrons, not on protons.",
+     "feedback": "The magnetic force acts on every moving charge. Protons circle on larger circles than electrons because they are heavier."
+    }
+   ]
+  },
+  {
+   "id": "lang-explain",
+   "stage": "tarkista",
+   "type": "text",
+   "text": "<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>Charged particles circle around …, but they can move freely …</li><li>A straight field has … , so …</li><li>That is why fusion machines are shaped like …</li><li>However, in a ring the field is …, which makes …</li><li>One limitation of the one-particle model is …</li></ul></div>"
+  },
+  {
+   "id": "check-explain",
+   "stage": "tarkista",
+   "type": "explain",
+   "title": "4. Explain: why a ring?",
+   "prompt": "A younger student asks: \\\"Why are fusion machines shaped like a doughnut and not like a long tube?\\\" Answer in four or five sentences. Mention what a magnetic field does to a charged particle, why a tube does not work, and one problem that remains in the ring.",
+   "model": "A charged particle in a magnetic field circles around a field line, so the field holds it across the field lines, but it can still slide freely along them. In a long tube the field lines end, so particles that move along them leak out at the ends, even with magnetic mirrors, because of the loss cone. Bending the tube into a ring closes the field lines, so there are no ends. However, in a ring the field is stronger on the inside than on the outside, so ions and electrons drift apart and the plasma is pushed outward. That is why the field lines must also be twisted.",
+   "criteria": [
+    "The answer says that particles circle around field lines but move freely along them.",
+    "The answer explains that a straight field (a tube) has ends where particles escape.",
+    "The answer says that a ring closes the field lines.",
+    "The answer names a remaining problem: the uneven, curved field makes particles drift (or: collisions, turbulence, instabilities)."
+   ]
+  },
+  {
+   "id": "summary",
+   "stage": "tarkista",
+   "type": "theory",
+   "sections": [
+    "Tiivistelmä"
+   ]
+  },
+  {
+   "id": "french-corner",
+   "stage": "tarkista",
+   "type": "text",
+   "text": "<div class=\"french-corner\"><h4>Le coin français</h4><p>The magnetic field is <span lang=\"fr\">le champ magnétique</span>, and a fusion machine shaped like a ring is <span lang=\"fr\">un tore</span>. Many words are almost the same as in English. Listen, repeat, and then say the last sentence to your partner.</p></div>\n\n<div class=\"fx\" data-fx=\"say\" id=\"fx-mc-french\"><script type=\"application/json\">{\"lang\": \"fr-FR\", \"title\": \"Le coin français: fields and particles\", \"phrases\": [{\"fr\": \"le champ magnétique\", \"en\": \"the magnetic field\", \"tip\": \"luh shahn mah-nyay-TEEK: *champ* has a nasal vowel and a silent *p*; *gn* is like Finnish *nj*.\"}, {\"fr\": \"une particule chargée\", \"en\": \"a charged particle\", \"tip\": \"yn par-tee-KYL shar-ZHAY: the *u* is the Finnish *y*.\"}, {\"fr\": \"un tore\", \"en\": \"a torus (a ring shape)\", \"tip\": \"uhn TOR: the *r* at the back of the throat.\"}, {\"fr\": \"la force\", \"en\": \"the force\", \"tip\": \"lah FORS: the same word as in English.\"}, {\"fr\": \"Le champ magnétique guide les particules.\", \"en\": \"The magnetic field guides the particles.\", \"tip\": \"*guide* is said geed, with a hard *g*.\"}]}</script></div>"
+  }
+ ]
+}

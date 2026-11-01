@@ -176,7 +176,7 @@ def check(uid, lang):
 def figures(uid, lang, write=True):
     """Fill every <svg data-fig="name"> of unit.md from figures.py; True when it was up to date (or there is none)."""
     src = code_folder(uid) / "figures.py"
-    if not src.is_file(): return True
+    if not src.is_file() or not (folder(uid, lang) / "unit.md").is_file(): return True   # a missing unit.md is check()'s error
     spec = importlib.util.spec_from_file_location("figures", src)
     mod = importlib.util.module_from_spec(spec); spec.loader.exec_module(mod)
     md = folder(uid, lang) / "unit.md"; text = md.read_text(); new = text
