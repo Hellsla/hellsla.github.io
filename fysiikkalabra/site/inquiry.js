@@ -34,6 +34,9 @@
     return '$' + n + unitTex + '$';
   };
   const typeset = (el) => { if (window.renderMathInElement) window.renderMathInElement(el, { delimiters: [{ left: '$', right: '$', display: false }], throwOnError: false }); if (window.flGlueMath) window.flGlueMath(el); };
+  // an element's content without its form controls, as HTML: rendered formulas stay formulas (textContent would read
+  // KaTeX's hidden MathML copy as well and repeat every formula as plain letters)
+  const asHtml = (n) => { const c = n.cloneNode(true); c.querySelectorAll('input, .feedback').forEach((x) => x.remove()); c.querySelectorAll('.scenario').forEach((x) => x.after(' ')); return c.innerHTML.trim(); };
   const measured = {};              // experiment id -> number of recorded measurements
   const bus = new EventTarget();
 
@@ -67,7 +70,7 @@
     };
     const commit = (i, silent) => {
       fs.dataset.committed = '1';
-      store.set(id, { choice: i, text: radios[i].parentElement.textContent.trim(), why: justify ? justify.value : '' });
+      store.set(id, { choice: i, text: radios[i].parentElement.textContent.trim(), html: asHtml(radios[i].parentElement), why: justify ? justify.value : '' });
       if (reveal) {
         radios.forEach((r) => { r.disabled = true; });
         btn.hidden = true;
@@ -284,15 +287,15 @@
       list.innerHTML = '';
       ids.forEach((pid) => {
         const act = document.getElementById(pid), fs = act && act.querySelector('fieldset.choice');
-        const legend = fs ? fs.querySelector('legend').textContent.trim() : pid;
+        const legend = fs ? asHtml(fs.querySelector('legend')) : pid;
         const saved = store.get(pid);
         const li = document.createElement('li');
-        const q = document.createElement('p'); q.className = 'rq'; q.textContent = legend; li.appendChild(q);
+        const q = document.createElement('p'); q.className = 'rq'; q.innerHTML = legend; li.appendChild(q);
         const a = document.createElement('p');
         if (saved && fs) {
           const ok = fs.querySelectorAll('input[type=radio]')[saved.choice]?.dataset.correct === '1';
           const revealed = fs.dataset.state !== undefined;
-          a.innerHTML = msg('reflect_you_predicted', { text: saved.text }) + (saved.why ? ` <em>(${saved.why})</em>` : '') +
+          a.innerHTML = msg('reflect_you_predicted', { text: saved.html || saved.text }) + (saved.why ? ` <em>(${saved.why})</em>` : '') +
             (revealed ? ` — ${ok ? msg('reflect_supported') : msg('reflect_not_supported')}` : msg('reflect_measure_first'));
         } else { a.innerHTML = msg('reflect_not_answered', { href: '#' + pid }); }
         li.appendChild(a); list.appendChild(li);
