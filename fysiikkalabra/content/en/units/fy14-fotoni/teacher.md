@@ -7,8 +7,8 @@ What Fotoni offers was checked in its material bank and its work instructions on
 ## Lesson 1, before the visit (75 minutes)
 
 - **0–10 min, Think about it.** Read the hook together; the review question on the stopping voltage; pairs discuss what makes a measured number trustworthy (sentence starters on the page).
-- **10–20 min, Predict.** Predictions 1–3 individually, each committed with a short reason. Prediction 4 (hot filament) only for the groups that will do that station. The feedback stays closed until the section *After the visit: what the stations show* is on screen, so students should not open the second half of the page yet.
-- **20–40 min, Investigate: the physics of each station.** Read the station that each group will do, in groups, and report it to the class in one minute each. The matching task on what each station measures.
+- **10–20 min, Predict.** Predictions 1–3 individually, each committed with a short reason. Prediction 4 (hot filament) only for the groups that will do that station. The feedback stays closed until the closed box *Lesson 2: after visit* (in *Theory summary*) is opened after the visit.
+- **20–40 min, Investigate: the physics of each station.** Fotoni requires the double-slit video (7:25) before the visit and recommends the photoelectric video (5:30); both are linked on the material bank page. Show the double-slit video here if a group will do that station, and give the photoelectric video as homework (or show it here instead). Then each group reads the station it will do and reports it to the class in one minute; the matching task on what each station measures.
 - **40–60 min, Planning and safety.** Read *Planning a measurement*; the safety match; pairs write the plan for the photoelectric station with the word bank.
 - **60–75 min, the worksheet.** Hand out the printed worksheet. Each group reads the tables for its stations and writes its research questions; decide who records and who reads the meters.
 
@@ -21,19 +21,19 @@ What Fotoni offers was checked in its material bank and its work instructions on
 
 ## Printing the worksheet
 
-Print only the section *During the visit: lab worksheet* of the page: open the page, open that section, and in the browser's print dialogue choose the pages that contain it (the worksheet is plain tables and headings, so it prints cleanly on A4). The same worksheet is also a separate file, `docs/fy14/fotoni-worksheet.md` in the repository (and `fy14/fotoni-worksheet.md` in the project files), which you can open in any Markdown editor and print or export as PDF. Print one copy per student and leave out the stations a group will not do.
+Print the worksheet from the separate file `docs/fy14/fotoni-worksheet.md` in the repository (also `fy14/fotoni-worksheet.md` in the project files): open it in a Markdown editor or viewer, export it as PDF and print one copy per student, leaving out the stations a group will not do. Check the print preview: the empty cells should be large enough to write in by hand. The section *During the visit: lab worksheet* on the page has the same tables and is meant for reading on screen or for typing results on a laptop; printing the page itself also prints the tasks around it, and its tables keep their narrow screen width.
 
 ## Lesson 2, after the visit (75 minutes)
 
 - **0–15 min, Theory summary.** Read *What the stations show* and the key idea; every group compares its own worksheet with it; *Back to your predictions*; the vocabulary match.
-- **15–35 min, Apply: the fit.** The formula and the worked example step by step; then each pair analyses its own photoelectric data in a spreadsheet (pairs without photoelectric data use the example table). The e/m task with the example reading.
-- **35–45 min, Connect to modern physics.** Groups of three: each student explains one station, then each writes the answer.
-- **45–65 min, the report.** Read *Writing a lab report in English*; put the report in order; each student writes the discussion of the report.
-- **65–75 min, Check your understanding.** Three checks individually, the explanation task, the summary and the French corner.
+- **15–40 min, Apply: the fit.** The formula and the worked example step by step; then each pair analyses its own photoelectric data in a spreadsheet (pairs without photoelectric data use the example table). The e/m task is optional.
+- **40–50 min, Connect to modern physics.** Groups of three: each student explains one station, then each writes the answer.
+- **50–65 min, the report.** Read *Writing a lab report in English*; put the report in order; each student writes the discussion of the report.
+- **65–75 min, Check your understanding.** Three checks individually, the explanation task and the summary. The French corner if time allows.
 
-**Fast pairs.** The optional task on the spacing of the bands; a full fit for e/m from their own table (2U against B²r², through the origin); a second discussion for another station.
+**Fast pairs.** The optional e/m task and the optional task on the spacing of the bands; a full fit for $e/m$ from their own table ($2U$ against $B^2r^2$, through the origin); a second discussion for another station.
 
-**Running out of time.** In lesson 1, give the planning text as homework and keep the predictions and the safety match in class. In lesson 2, give the whole lab report (all seven parts) as homework and keep the fit, the discussion paragraph and the checks in class. The French corner can move to the next lesson.
+**Running out of time.** In lesson 1, give the planning text as homework and keep the predictions and the safety match in class. In lesson 2, give the whole lab report (all seven parts) as homework and keep the fit, the discussion paragraph and the checks in class. The French corner can move to the next lesson or be done at home.
 
 ## Preparation
 

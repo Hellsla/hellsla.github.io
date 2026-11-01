@@ -46,3 +46,38 @@ Where a detail is not confirmed (LED colours and wavelengths, meter types, the r
 2. `templates/inquiry.js` (or lesson.js) numeric `mistakes` feedback is inserted without KaTeX typesetting: `$…$` shows raw (also in fy14-photoelectric's planck-data, e.g. "4.12"). Fix: call the typeset function on the output after setting the mistake text. Workaround here: mistake feedback written in words.
 3. `scripts/inquiry.py` renders `explain.pair` as `<p class="pair"><p>…</p></p>` (nested `<p>`, invalid HTML); use a `<div class="pair">`. The criteria box links to `#exercises`, which a unit without exercises does not have.
 4. Pilot `content/en/units/fy14-photoelectric` says students measure Planck's constant at Fotoni "with a real photocell and a mercury lamp" (unit.md Formula section, teacher.md, planck-data text "like the measurement at Fotoni"). Fotoni's instruction uses LEDs: change to "a photocell and LEDs of different colours" (the mercury-lamp example table can stay as an example, without "like the measurement at Fotoni").
+
+## Fixes after review (2026-11-01)
+
+Content hash after the fixes: 9da4587953c810e1.
+
+### Pedagogy
+1. (Blocking) `theory-main` (Evidence + Key idea) has `"fold": "Lesson 2: after visit"` and the title "After the visit: open in lesson 2". Tested in Playwright at 390 and 1280: with the fold closed and on screen, none of the four predictions opens; they open only once the fold is opened. The teacher.md text about the predictions now refers to the fold.
+2. Lesson 2: `em-task` is optional; Apply is 25 minutes (15–40); the French corner is "if time allows" and listed under running out of time.
+3. Printing: teacher.md makes `docs/fy14/fotoni-worksheet.md` (export to PDF) the way to print. The page section is for screen and laptops. The A4 claim is removed.
+4. Lesson 1 timing (20–40 min) includes the double-slit video (7:25, required) and the photoelectric video (5:30, recommended, or as homework).
+5. The e/m worksheet now has an observation table on the page and in the md file: the bar magnet; $U$ kept the same, coil current up (prediction 2); coil current kept the same, $U$ up.
+6. `report-order`: the part labels are removed, so students sort by content and tense. The prompt says so, and the explanation lists the order.
+
+### Science
+1. Key idea: "A charged particle circles around a magnetic field line and slides along it. Your electron beam shows the circling part, because it moves perpendicular to the field. A tokamak bends the field lines into closed loops inside the vessel…"
+2. Half range: in *Planning* it is an estimate of the spread of single readings, used as Δx of one reading and not the uncertainty of the mean. The vocabulary feedback and the check-3 feedback ("Half the range of the single counts…") say the same.
+3. Misconception: the uncertainty estimates how far the true value may be. Scatter shows part of it. Systematic errors (for example the LED band) do not show as scatter, and repeating does not reduce them.
+4. Oil drops (Evidence and `stations-match` feedback): "Millikan's measurements showed that the charge changes in whole steps of e".
+5. `pred-photons` feedback: "a photon can free one electron". The hot-filament feedback now says lamp filaments are tungsten.
+
+### Visual
+1. `emtube()`: the ⊙ marker moved from (328, 108) to (290, 62), and the B label moved inside the bulb to its left. The top marker moved to (150, 50). The v label is clear (checked in the 390 capture).
+2. Worksheet md: "the mean; Δx of one reading ≈ (largest − smallest)/2, that is, half of the range".
+3. Printing: see Pedagogy 3.
+4. Inline maths with `\cdot` or `\pm` is wrapped in `{…}` in unit.md and inquiry.json (including steps 1 and 7 of the worked example). The range is written as ${(6.1\ \text{to}\ 6.7) \cdot 10^{-34}\ \text{J} \cdot \text{s}}$. The percentage difference is one display line with `\dfrac`.
+5. Page and md worksheet aligned: 5 position rows with a "Counts at different positions" lead, e/m observation tables, and an oil-drop research question in both. The md file was copied again to /mnt/project-files/fy14/.
+6. teacher.md Fast pairs uses $2U$ against $B^2r^2$.
+7. Every explain task and the three check choices have `practice` (links to #tutki, #selita, #sovella). The page no longer links to #exercises.
+8. The `report-order` analysis item has no unbreakable formula; with it, the order row overflowed at 360 px.
+
+### Checks
+`units.py check` (no fotoni errors), `figures --check` up to date, `build.py fy14-fotoni`, `check_layout` 360 OK and 1280 OK, `screenshot.py` re-run (88 captures). Playwright at 390 and 1280: the fold gates the reveals; plain choices, explain models, numerics and fx components all work; no console errors, no raw TeX, no `.katex-error`.
+
+### Shared issue (from the pedagogy review, not edited)
+- `templates/inquiry.js`: the pending text "Feedback appears when you have read the theory section" misleads in a lab unit. A per-prediction `pending` text would help.

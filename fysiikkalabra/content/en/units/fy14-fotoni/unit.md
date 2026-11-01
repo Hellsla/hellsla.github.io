@@ -86,17 +86,17 @@ A heated cathode emits electrons, and an **accelerating voltage** $U$ of about $
   <circle cx="210" cy="195" r="172" fill="#eef5f9" fill-opacity="0.5" stroke="#8a96a3" stroke-width="3"/>
   <circle cx="92" cy="108" r="12" fill="#ffffff" stroke="#2b8a3e" stroke-width="3"/>
   <circle cx="92" cy="108" r="4" fill="#2b8a3e"/>
-  <circle cx="328" cy="108" r="12" fill="#ffffff" stroke="#2b8a3e" stroke-width="3"/>
-  <circle cx="328" cy="108" r="4" fill="#2b8a3e"/>
+  <circle cx="290" cy="62" r="12" fill="#ffffff" stroke="#2b8a3e" stroke-width="3"/>
+  <circle cx="290" cy="62" r="4" fill="#2b8a3e"/>
   <circle cx="80" cy="230" r="12" fill="#ffffff" stroke="#2b8a3e" stroke-width="3"/>
   <circle cx="80" cy="230" r="4" fill="#2b8a3e"/>
-  <circle cx="210" cy="52" r="12" fill="#ffffff" stroke="#2b8a3e" stroke-width="3"/>
-  <circle cx="210" cy="52" r="4" fill="#2b8a3e"/>
+  <circle cx="150" cy="50" r="12" fill="#ffffff" stroke="#2b8a3e" stroke-width="3"/>
+  <circle cx="150" cy="50" r="4" fill="#2b8a3e"/>
   <circle cx="330" cy="290" r="12" fill="#ffffff" stroke="#2b8a3e" stroke-width="3"/>
   <circle cx="330" cy="290" r="4" fill="#2b8a3e"/>
   <circle cx="100" cy="312" r="12" fill="#ffffff" stroke="#2b8a3e" stroke-width="3"/>
   <circle cx="100" cy="312" r="4" fill="#2b8a3e"/>
-  <foreignObject x="350" y="65" width="37" height="34" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:28px;color:#2b8a3e">$\overline{B}$</div></foreignObject>
+  <foreignObject x="237" y="47" width="37" height="34" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:28px;color:#2b8a3e">$\overline{B}$</div></foreignObject>
   <circle cx="210" cy="185" r="98" fill="none" stroke="#3bc9db" stroke-width="10" stroke-opacity="0.3"/>
   <circle cx="210" cy="185" r="98" fill="none" stroke="#3bc9db" stroke-width="3.5"/>
   <rect x="166" y="274" width="40" height="18" rx="3" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
@@ -144,7 +144,7 @@ Every station has a **research question**: what do you want to find out? Then na
 - the **dependent variable** is the one you measure (the stopping voltage, the radius);
 - the **controlled variables** are kept the same (the accelerating voltage, the intensity).
 
-No measurement is exact. The **uncertainty** $\Delta x$ of a quantity $x$ tells how far the true value may be from your reading. For a scale or a digital display, the reading uncertainty is about half of the smallest step you can read, unless the reading jumps around more. If you repeat a measurement, use the mean and take half of the range (largest minus smallest) as $\Delta x$. Write the result as $x \pm \Delta x$ with its unit. The **relative uncertainty** $\Delta x / x$ is often given in percent.
+No measurement is exact. The **uncertainty** $\Delta x$ of a quantity $x$ tells how far the true value may be from your reading. For a scale or a digital display, the reading uncertainty is about half of the smallest step you can read, unless the reading jumps around more. If you repeat a measurement, use the mean. Half of the range, (largest minus smallest) divided by two, is a simple estimate of how much single readings spread; use it as $\Delta x$ of one reading. It is not the uncertainty of the mean, which is smaller. Write the result as ${x \pm \Delta x}$ with its unit. The **relative uncertainty** $\Delta x / x$ is often given in percent.
 
 ### Safety at the stations
 
@@ -199,7 +199,13 @@ Research question: what is the ratio $e/m$ of the electron?
 | turns of one coil $N$ | &emsp;&emsp;&emsp;&emsp; | &emsp;&emsp;&emsp;&emsp; |
 | coil radius $R\ (\text{m})$ | &emsp;&emsp;&emsp;&emsp; | &emsp;&emsp;&emsp;&emsp; |
 
-Observation: what does the beam do when a bar magnet comes near it?
+Observations before the measurements:
+
+| What we did | What happened to the beam |
+| --- | --- |
+| a bar magnet near the tube (not touching) | &emsp;&emsp;&emsp;&emsp; |
+| $U$ kept the same, coil current up | &emsp;&emsp;&emsp;&emsp; |
+| coil current kept the same, $U$ up | &emsp;&emsp;&emsp;&emsp; |
 
 Measurements:
 
@@ -241,8 +247,11 @@ Repeated counts at one position (each in $10\ \text{s}$):
 | --- | --- | --- | --- | --- |
 | &emsp;&emsp; | &emsp;&emsp; | &emsp;&emsp; | &emsp;&emsp; | &emsp;&emsp; |
 
+Counts at different positions:
+
 | Position $x\ (\text{mm})$ | Counts in $10\ \text{s}$ | Position $x\ (\text{mm})$ | Counts in $10\ \text{s}$ |
 | --- | --- | --- | --- |
+| &emsp;&emsp; | &emsp;&emsp; | &emsp;&emsp; | &emsp;&emsp; |
 | &emsp;&emsp; | &emsp;&emsp; | &emsp;&emsp; | &emsp;&emsp; |
 | &emsp;&emsp; | &emsp;&emsp; | &emsp;&emsp; | &emsp;&emsp; |
 | &emsp;&emsp; | &emsp;&emsp; | &emsp;&emsp; | &emsp;&emsp; |
@@ -273,6 +282,8 @@ Research question: which light sources give a continuous spectrum, and which giv
 
 ### Station: oil drops
 
+Research question: how do charged oil drops move between the plates, and what happens when a drop's charge changes?
+
 | What we saw | Our explanation |
 | --- | --- |
 | &emsp;&emsp;&emsp;&emsp; | &emsp;&emsp;&emsp;&emsp; |
@@ -293,19 +304,19 @@ Compare these results with your own worksheet.
 
 **Photoelectric effect.** When the counter-voltage is slightly negative, more intensity gives more current, because more photons free more electrons. At the stopping voltage the current stays at zero however bright the LED is. One photon frees at most one electron, and the photon's energy $hf$ depends only on the colour. Shorter wavelengths give larger stopping voltages, and the points $(f, U_\text{s})$ lie close to a straight line with the slope $h/e$.
 
-**Electron beam.** A larger coil current makes a stronger field and a *smaller* circle, because ${r = mv/(eB)}$. A larger accelerating voltage makes the electrons faster and the circle larger. The points $(B^2r^2, 2U)$ lie on a line through the origin, and its slope is $e/m$, about $1.76 \cdot 10^{11}\ \text{C/kg}$.
+**Electron beam.** A larger coil current makes a stronger field and a *smaller* circle, because ${r = mv/(eB)}$. A larger accelerating voltage makes the electrons faster and the circle larger. The points $(B^2r^2, 2U)$ lie on a line through the origin, and its slope is $e/m$, about ${1.76 \cdot 10^{11}\ \text{C/kg}}$.
 
 **Single photons.** The counter clicks at random moments, and repeated counts at one place differ a little. But the counts at different positions form the same bright and dark bands as bright light does. Each photon arrives at one point like a particle, but the probability of where it arrives follows a wave pattern.
 
 **Hot filament.** When the temperature rises, the peak moves to shorter wavelengths and the light looks whiter. The peak still stays in the infrared, so most of the energy of an ordinary filament lamp is not visible light. The curves fall at short wavelengths, as Planck's law says, not as classical physics predicted.
 
-**Spectra and oil drops.** A filament gives a continuous spectrum. A gas tube gives lines at fixed wavelengths, for hydrogen $656$, $486$, $434$ and $410\ \text{nm}$. An oil drop that suddenly changes its speed has gained or lost charge, always in whole steps of $e$.
+**Spectra and oil drops.** A filament gives a continuous spectrum. A gas tube gives lines at fixed wavelengths, for hydrogen $656$, $486$, $434$ and $410\ \text{nm}$. An oil drop that suddenly changes its speed has gained or lost charge. Millikan's measurements showed that the charge changes in whole steps of $e$.
 
 ## Key idea
 
 Each station shows a result that classical physics could not explain. Light gives and takes energy in **quanta** $hf$: the photoelectric effect, line spectra and the shape of the filament's spectrum all need Planck's constant. Electrons are particles with a fixed charge $e$ and a fixed ratio $e/m$. And single photons behave like particles when they are detected and like waves when they travel. This is the **wave–particle duality** of modern physics.
 
-The same physics is a tool in fusion research. A charged particle in a magnetic field moves on a circle, just like your electron beam, and a tokamak uses this to keep a hot plasma away from the walls. Spectrometers measure the light of the plasma: at ITER, spectroscopic instruments cover the range from visible light to X-rays and measure, for example, which impurities the plasma contains and the temperature of its ions.
+The same physics is a tool in fusion research. A charged particle circles around a magnetic field line and slides along it. Your electron beam shows the circling part, because it moves perpendicular to the field. A tokamak bends the field lines into closed loops inside the vessel, so the hot plasma stays away from the walls. Spectrometers measure the light of the plasma: at ITER, spectroscopic instruments cover the range from visible light to X-rays and measure, for example, which impurities the plasma contains and the temperature of its ions.
 
 ## Formula: A straight-line fit
 
@@ -329,21 +340,18 @@ The uncertainty of the slope can be estimated with the **steepest and least stee
 Finally, compare your result with the accepted value by the **percentage difference**:
 
 ```latex
-\begin{aligned}
-\text{difference} &= \frac{x - x_\text{acc}}{x_\text{acc}} \\
-&\quad \cdot 100\ \%
-\end{aligned}
+\text{difference} = \dfrac{x - x_\text{acc}}{x_\text{acc}} \cdot 100\ \%
 ```
 
 where $x$ is your result and $x_\text{acc}$ the accepted value.
 
-If the accepted value lies inside $x \pm \Delta x$, your result **agrees** with it within the uncertainty.
+If the accepted value lies inside ${x \pm \Delta x}$, your result **agrees** with it within the uncertainty.
 
 ## Worked example
 
 <!-- photo: fotoni-photocell-station -->
 
-A group measured the stopping voltage with five LEDs. The numbers are an invented example, rounded like real readings. The group estimated the uncertainty of every stopping voltage as $\Delta U_\text{s} = 0.02\ \text{V}$. Find Planck's constant with its uncertainty, and compare it with the accepted value $6.626 \cdot 10^{-34}\ \text{J} \cdot \text{s}$.
+A group measured the stopping voltage with five LEDs. The numbers are an invented example, rounded like real readings. The group estimated the uncertainty of every stopping voltage as $\Delta U_\text{s} = 0.02\ \text{V}$. Find Planck's constant with its uncertainty, and compare it with the accepted value ${6.626 \cdot 10^{-34}\ \text{J} \cdot \text{s}}$.
 
 | LED | $\lambda\ (\text{nm})$ | $f\ (10^{14}\ \text{Hz})$ | $U_\text{s}\ (\text{V})$ |
 | --- | --- | --- | --- |
@@ -401,7 +409,7 @@ The graph shows the five points and the line that a spreadsheet fits through the
 
 <!-- vaihe -->
 
-**Given:** five pairs $(f, U_\text{s})$ from the table, ${\Delta U_\text{s} = 0.02\ \text{V}}$, the elementary charge ${e = 1.602 \cdot 10^{-19}\ \text{C}}$. We want Planck's constant $h$, its uncertainty $\Delta h$ and the percentage difference from $6.626 \cdot 10^{-34}\ \text{J} \cdot \text{s}$.
+**Given:** five pairs $(f, U_\text{s})$ from the table, ${\Delta U_\text{s} = 0.02\ \text{V}}$, the elementary charge ${e = 1.602 \cdot 10^{-19}\ \text{C}}$. We want Planck's constant $h$, its uncertainty $\Delta h$ and the percentage difference from ${6.626 \cdot 10^{-34}\ \text{J} \cdot \text{s}}$.
 
 <!-- vaihe -->
 
@@ -422,7 +430,7 @@ k_\text{min} &= \frac{(U_5 - \Delta U_\text{s}) - (U_1 + \Delta U_\text{s})}{f_5
 
 <!-- vaihe -->
 
-**Unit conversions:** The frequencies are in units of $10^{14}\ \text{Hz}$, so the difference of the last and the first frequency is ${f_5 - f_1 = (7.40 - 4.80) \cdot 10^{14}\ \text{Hz}}$, that is, ${2.60 \cdot 10^{14}\ \text{Hz}}$. A slope in $\text{V/Hz} = \text{V} \cdot \text{s}$ times a charge in coulombs gives $\text{C} \cdot \text{V} \cdot \text{s} = \text{J} \cdot \text{s}$.
+**Unit conversions:** The frequencies are in units of $10^{14}\ \text{Hz}$, so the difference of the last and the first frequency is ${f_5 - f_1 = (7.40 - 4.80) \cdot 10^{14}\ \text{Hz}}$, that is, ${2.60 \cdot 10^{14}\ \text{Hz}}$. A slope in ${\text{V/Hz} = \text{V} \cdot \text{s}}$ times a charge in coulombs gives ${\text{C} \cdot \text{V} \cdot \text{s} = \text{J} \cdot \text{s}}$.
 
 <!-- vaihe -->
 
@@ -452,7 +460,7 @@ k_\text{min} &= \frac{1.58\ \text{V} - 0.57\ \text{V}}{2.60 \cdot 10^{14}\ \text
 
 <!-- vaihe -->
 
-**Reasonableness:** The accepted value $6.626 \cdot 10^{-34}\ \text{J} \cdot \text{s}$ lies inside $6.1\text{–}6.7 \cdot 10^{-34}\ \text{J} \cdot \text{s}$, so the result agrees with it within the uncertainty. The intercept gives ${W = -e\,b \approx 1.34\ \text{eV}}$, positive and of the order of one electronvolt, as a work function should be. Possible systematic errors: an LED gives a band of wavelengths, not one exact wavelength, and it is hard to decide when the current is exactly zero.
+**Reasonableness:** The accepted value ${6.626 \cdot 10^{-34}\ \text{J} \cdot \text{s}}$ lies inside ${(6.1\ \text{to}\ 6.7) \cdot 10^{-34}\ \text{J} \cdot \text{s}}$, so the result agrees with it within the uncertainty. The intercept gives ${W = -e\,b \approx 1.34\ \text{eV}}$, positive and of the order of one electronvolt, as a work function should be. Possible systematic errors: an LED gives a band of wavelengths, not one exact wavelength, and it is hard to decide when the current is exactly zero.
 
 ## Writing a lab report in English {Report}
 
@@ -462,7 +470,7 @@ A lab report tells a reader what you did, what you found and how sure you are. S
 2. **Background**: the physics and the equation you test, in the present tense ("The stopping voltage *depends* on …").
 3. **Method**: the equipment and what you did, in the past tense ("We *measured* …", or the passive "The voltage *was increased* …").
 4. **Results**: tables with units in the headings, a graph with labelled axes and the fitted line.
-5. **Analysis**: the fit, the result with its uncertainty, $x \pm \Delta x$.
+5. **Analysis**: the fit, the result with its uncertainty, ${x \pm \Delta x}$.
 6. **Discussion**: the comparison with the accepted value, the sources of uncertainty and how to improve the experiment.
 7. **Conclusion**: the answer to the research question in one or two sentences.
 
@@ -470,14 +478,14 @@ Write numbers with a decimal point and their unit ($0.93\ \text{V}$). Do not cla
 
 ## Common misconception
 
-"An uncertainty means that we made a mistake." No: every measurement has an uncertainty, even a perfect one. A **mistake** (a wrong connection, a misread scale) is something you can find and correct. The uncertainty tells how much the result could change if you repeated the measurement.
+"An uncertainty means that we made a mistake." No: every measurement has an uncertainty, even a perfect one. A **mistake** (a wrong connection, a misread scale) is something you can find and correct. The uncertainty estimates how far the true value may be from the result. Part of it shows as scatter when you repeat the measurement. **Systematic errors**, such as the band of wavelengths of an LED, do not show as scatter, and repeating does not reduce them.
 
-A second misconception is that more decimals mean a better result. A calculator may show $6.351596 \cdot 10^{-34}$, but with $\Delta h = 0.3 \cdot 10^{-34}\ \text{J} \cdot \text{s}$ only the first decimal means something. A third is that a result that differs from the accepted value is wrong. It is fine if the accepted value lies inside $x \pm \Delta x$.
+A second misconception is that more decimals mean a better result. A calculator may show ${6.351596 \cdot 10^{-34}}$, but with ${\Delta h = 0.3 \cdot 10^{-34}\ \text{J} \cdot \text{s}}$ only the first decimal means something. A third is that a result that differs from the accepted value is wrong. It is fine if the accepted value lies inside ${x \pm \Delta x}$.
 
 ## Summary
 
 - At Fotoni you measure modern physics yourself: Planck's constant from stopping voltages, $e/m$ from a circular electron beam, single photons in a double slit, the spectrum of a hot filament, line spectra and charged oil drops.
 - Plan every measurement: research question, independent, dependent and controlled variables, and the uncertainty $\Delta x$ of each reading.
 - The slope of a fitted line gives the constant: ${h = e\,k}$ from ${U_\text{s} = (h/e)\,f - W/e}$, and $e/m$ from ${2U = (e/m) \cdot B^2r^2}$.
-- The steepest and least steep lines give ${\Delta k \approx (k_\text{max} - k_\text{min})/2}$. Report $x \pm \Delta x$ and the percentage difference from the accepted value.
+- The steepest and least steep lines give ${\Delta k \approx (k_\text{max} - k_\text{min})/2}$. Report ${x \pm \Delta x}$ and the percentage difference from the accepted value.
 - A lab report has a fixed structure: aim, background, method, results, analysis, discussion and conclusion.

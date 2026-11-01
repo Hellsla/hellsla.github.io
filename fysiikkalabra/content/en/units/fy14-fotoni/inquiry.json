@@ -57,6 +57,7 @@
    "id": "hook-discuss",
    "stage": "herata",
    "type": "explain",
+   "practice": "Read *Planning a measurement* in [Investigate](#tutki) and compare.",
    "title": "Think about it: a number you can trust",
    "pair": "Pair work: share your ideas aloud first, then each of you writes your own answer.",
    "prompt": "Discuss with a partner: you will measure Planck's constant yourselves. What would make your number trustworthy? Write two or three sentences. Name at least one thing that could make the result less precise.",
@@ -75,7 +76,8 @@
    "prompt": "At the photoelectric station you set the counter-voltage to the stopping voltage of the red LED, so the current is zero. Then you turn the intensity of the LED up. What happens to the current?",
    "justify": true,
    "reveal": {
-    "after": "theory-main"
+    "after": "theory-main",
+    "pending": "Feedback opens with the box “Lesson 2: after visit” in the Theory summary, after the Fotoni visit."
    },
    "choices": [
     {
@@ -105,7 +107,8 @@
    "prompt": "At the electron-beam station the beam moves on a circle. You keep the accelerating voltage the same and increase the current in the coils, so the magnetic field becomes stronger. What happens to the circle?",
    "justify": true,
    "reveal": {
-    "after": "theory-main"
+    "after": "theory-main",
+    "pending": "Feedback opens with the box “Lesson 2: after visit” in the Theory summary, after the Fotoni visit."
    },
    "choices": [
     {
@@ -135,7 +138,8 @@
    "prompt": "At the double-slit station the light is made so dim that there is practically never more than one photon in the apparatus. A counter counts the photons at different positions behind the two slits. What will the counts show after a long time?",
    "justify": true,
    "reveal": {
-    "after": "theory-main"
+    "after": "theory-main",
+    "pending": "Feedback opens with the box “Lesson 2: after visit” in the Theory summary, after the Fotoni visit."
    },
    "choices": [
     {
@@ -153,7 +157,7 @@
     },
     {
      "text": "No counts at all, because one photon is too weak to be detected.",
-     "feedback": "A photomultiplier is made to detect single photons: one photon frees one electron, and the tube multiplies it into a pulse that the counter registers. The counts form the bands of an interference pattern."
+     "feedback": "A photomultiplier is made to detect single photons: a photon can free one electron, and the tube multiplies it into a pulse that the counter registers. The counts form the bands of an interference pattern."
     }
    ]
   },
@@ -166,7 +170,8 @@
    "prompt": "At the hot-filament station you raise the lamp voltage from $7\\ \\text{V}$ to $10\\ \\text{V}$, and the filament becomes hotter. The visible range is about $400\\text{–}700\\ \\text{nm}$. Where is the peak of the spectrum?",
    "justify": true,
    "reveal": {
-    "after": "theory-main"
+    "after": "theory-main",
+    "pending": "Feedback opens with the box “Lesson 2: after visit” in the Theory summary, after the Fotoni visit."
    },
    "choices": [
     {
@@ -201,7 +206,7 @@
    "stage": "tutki",
    "type": "text",
    "title": "Which station measures what?",
-   "text": "Check that you know what each station is for.\n\n<div class=\"fx\" data-fx=\"match\" id=\"fx-fo-stations\"><script type=\"application/json\">{\"prompt\": \"Match each station with what you find out there.\", \"options\": [\"Planck's constant h\", \"the ratio e/m of the electron\", \"light as particles and waves\", \"how a spectrum shifts with heat\", \"the lines of each gas\", \"charge comes in steps of e\"], \"items\": [{\"text\": \"photocell and LEDs\", \"answer\": \"Planck's constant h\", \"feedback\": \"The stopping voltages of several LEDs give a straight line with the slope $h/e$.\"}, {\"text\": \"electron beam between two coils\", \"answer\": \"the ratio e/m of the electron\", \"feedback\": \"The radius of the circle, the voltage and the field give $2U = (e/m) \\\\cdot B^2r^2$.\"}, {\"text\": \"double slit with a photon counter\", \"answer\": \"light as particles and waves\", \"feedback\": \"Single photons are counted one at a time, but their positions are tested for a wave pattern.\"}, {\"text\": \"filament lamp, prism and sensor\", \"answer\": \"how a spectrum shifts with heat\", \"feedback\": \"The intensity is measured at each wavelength at four voltages, so at four temperatures.\"}, {\"text\": \"gas tubes and a spectroscope\", \"answer\": \"the lines of each gas\", \"feedback\": \"Each element gives light only at its own wavelengths.\"}, {\"text\": \"oil drops between charged plates\", \"answer\": \"charge comes in steps of e\", \"feedback\": \"A drop that suddenly changes its motion has gained or lost charge.\"}]}</script></div>"
+   "text": "Check that you know what each station is for.\n\n<div class=\"fx\" data-fx=\"match\" id=\"fx-fo-stations\"><script type=\"application/json\">{\"prompt\": \"Match each station with what you find out there.\", \"options\": [\"Planck's constant h\", \"the ratio e/m of the electron\", \"light as particles and waves\", \"how a spectrum shifts with heat\", \"the lines of each gas\", \"charge comes in steps of e\"], \"items\": [{\"text\": \"photocell and LEDs\", \"answer\": \"Planck's constant h\", \"feedback\": \"The stopping voltages of several LEDs give a straight line with the slope $h/e$.\"}, {\"text\": \"electron beam between two coils\", \"answer\": \"the ratio e/m of the electron\", \"feedback\": \"The radius of the circle, the voltage and the field give ${2U = (e/m) \\\\cdot B^2r^2}$.\"}, {\"text\": \"double slit with a photon counter\", \"answer\": \"light as particles and waves\", \"feedback\": \"Single photons are counted one at a time, but their positions are tested for a wave pattern.\"}, {\"text\": \"filament lamp, prism and sensor\", \"answer\": \"how a spectrum shifts with heat\", \"feedback\": \"The intensity is measured at each wavelength at four voltages, so at four temperatures.\"}, {\"text\": \"gas tubes and a spectroscope\", \"answer\": \"the lines of each gas\", \"feedback\": \"Each element gives light only at its own wavelengths.\"}, {\"text\": \"oil drops between charged plates\", \"answer\": \"charge comes in steps of e\", \"feedback\": \"A drop that suddenly changes its motion has gained or lost charge. Millikan's measurements showed that it changes in whole steps of $e$.\"}]}</script></div>"
   },
   {
    "id": "theory-planning",
@@ -228,6 +233,7 @@
    "id": "plan",
    "stage": "tutki",
    "type": "explain",
+   "practice": "Read *Planning a measurement* again in [Investigate](#tutki).",
    "title": "Plan the photoelectric measurement",
    "pair": "Pair work: plan together, then each of you writes the plan on your own worksheet.",
    "prompt": "Discuss with a partner and write a short plan for the photoelectric station: the research question, the independent, dependent and controlled variables, how many LEDs you will measure and how you will estimate the uncertainty of one stopping voltage.",
@@ -258,6 +264,8 @@
    "id": "theory-main",
    "stage": "selita",
    "type": "theory",
+   "fold": "Lesson 2: after visit",
+   "title": "After the visit: open in lesson 2",
    "sections": [
     "Evidence",
     "Ydinajatus"
@@ -281,7 +289,7 @@
    "stage": "selita",
    "type": "text",
    "title": "Words of the lab",
-   "text": "<div class=\"fx\" data-fx=\"match\" id=\"fx-fo-words\"><script type=\"application/json\">{\"prompt\": \"Match each word with its meaning.\", \"options\": [\"how far the true value may be\", \"the quantity you change\", \"the quantity you measure\", \"kept the same during a series\", \"the best straight line\", \"half of the largest minus smallest\"], \"items\": [{\"text\": \"uncertainty\", \"answer\": \"how far the true value may be\", \"feedback\": \"We write a result as $x \\\\pm \\\\Delta x$; $\\\\Delta x$ is its uncertainty.\"}, {\"text\": \"independent variable\", \"answer\": \"the quantity you change\", \"feedback\": \"At the photoelectric station, the LED and so the frequency $f$.\"}, {\"text\": \"dependent variable\", \"answer\": \"the quantity you measure\", \"feedback\": \"It *depends* on what you changed, for example the stopping voltage $U_\\\\text{s}$.\"}, {\"text\": \"controlled variable\", \"answer\": \"kept the same during a series\", \"feedback\": \"For example the accelerating voltage while you change the coil current.\"}, {\"text\": \"linear fit\", \"answer\": \"the best straight line\", \"feedback\": \"A spreadsheet finds the line that passes closest to all points; its slope gives the constant.\"}, {\"text\": \"half range\", \"answer\": \"half of the largest minus smallest\", \"feedback\": \"A simple estimate of $\\\\Delta x$ from repeated readings.\"}]}</script></div>"
+   "text": "<div class=\"fx\" data-fx=\"match\" id=\"fx-fo-words\"><script type=\"application/json\">{\"prompt\": \"Match each word with its meaning.\", \"options\": [\"how far the true value may be\", \"the quantity you change\", \"the quantity you measure\", \"kept the same during a series\", \"the best straight line\", \"half of the largest minus smallest\"], \"items\": [{\"text\": \"uncertainty\", \"answer\": \"how far the true value may be\", \"feedback\": \"We write a result as ${x \\\\pm \\\\Delta x}$; $\\\\Delta x$ is its uncertainty.\"}, {\"text\": \"independent variable\", \"answer\": \"the quantity you change\", \"feedback\": \"At the photoelectric station, the LED and so the frequency $f$.\"}, {\"text\": \"dependent variable\", \"answer\": \"the quantity you measure\", \"feedback\": \"It *depends* on what you changed, for example the stopping voltage $U_\\\\text{s}$.\"}, {\"text\": \"controlled variable\", \"answer\": \"kept the same during a series\", \"feedback\": \"For example the accelerating voltage while you change the coil current.\"}, {\"text\": \"linear fit\", \"answer\": \"the best straight line\", \"feedback\": \"A spreadsheet finds the line that passes closest to all points; its slope gives the constant.\"}, {\"text\": \"half range\", \"answer\": \"half of the largest minus smallest\", \"feedback\": \"It shows how much single readings spread, a simple estimate of $\\\\Delta x$ for one reading. It is not the uncertainty of the mean.\"}]}</script></div>"
   },
   {
    "id": "theory-fit",
@@ -297,14 +305,15 @@
    "stage": "sovella",
    "type": "numeric",
    "title": "The charge-to-mass ratio from one reading",
-   "prompt": "Example data: at $U = 200\\ \\text{V}$ and a coil current of $I = 1.50\\ \\text{A}$, a group measured the **diameter** of the circle as $8.2\\ \\text{cm}$. One coil has $N = 130$ turns and the radius $R = 0.150\\ \\text{m}$, as in the Fotoni instruction. Calculate $e/m$. Give the answer as a number times $10^{11}\\ \\text{C/kg}$: for example, type $1.9$ for $1.9 \\cdot 10^{11}\\ \\text{C/kg}$.",
+   "optional": true,
+   "prompt": "Example data: at $U = 200\\ \\text{V}$ and a coil current of $I = 1.50\\ \\text{A}$, a group measured the **diameter** of the circle as $8.2\\ \\text{cm}$. One coil has $N = 130$ turns and the radius $R = 0.150\\ \\text{m}$, as in the Fotoni instruction. Calculate $e/m$. Give the answer as a number times $10^{11}\\ \\text{C/kg}$: for example, type $1.9$ for ${1.9 \\cdot 10^{11}\\ \\text{C/kg}}$.",
    "answer": 1.74,
-   "unit": "$\\cdot 10^{11}\\ \\text{C/kg}$",
+   "unit": "${\\cdot 10^{11}\\ \\text{C/kg}}$",
    "tolerance": 0.025,
    "hints": [
-    "First find the field: $B = (4/5)^{3/2}\\,\\mu_0 N I / R$, with $\\mu_0 = 4\\pi \\cdot 10^{-7}\\ \\text{T} \\cdot \\text{m/A}$.",
-    "The equation is $2U = (e/m) \\cdot B^2r^2$, so $e/m = 2U/(B^2r^2)$. Is $8.2\\ \\text{cm}$ the radius?",
-    "$B \\approx 1.169 \\cdot 10^{-3}\\ \\text{T}$ and $r = 0.041\\ \\text{m}$, so $B^2r^2 \\approx 2.30 \\cdot 10^{-9}\\ \\text{T}^2 \\cdot \\text{m}^2$."
+    "First find the field: $B = (4/5)^{3/2}\\,\\mu_0 N I / R$, with ${\\mu_0 = 4\\pi \\cdot 10^{-7}\\ \\text{T} \\cdot \\text{m/A}}$.",
+    "The equation is ${2U = (e/m) \\cdot B^2r^2}$, so $e/m = 2U/(B^2r^2)$. Is $8.2\\ \\text{cm}$ the radius?",
+    "${B \\approx 1.169 \\cdot 10^{-3}\\ \\text{T}}$ and $r = 0.041\\ \\text{m}$, so ${B^2r^2 \\approx 2.30 \\cdot 10^{-9}\\ \\text{T}^2 \\cdot \\text{m}^2}$."
    ],
    "mistakes": [
     {
@@ -316,7 +325,7 @@
      "feedback": "You forgot the factor of two. It comes from the kinetic energy, which is one half of the mass times the speed squared."
     }
    ],
-   "solution": "**Given:** accelerating voltage $U = 200\\ \\text{V}$, coil current $I = 1.50\\ \\text{A}$, diameter of the circle $8.2\\ \\text{cm}$, turns of one coil $N = 130$, coil radius $R = 0.150\\ \\text{m}$, $\\mu_0 = 4\\pi \\cdot 10^{-7}\\ \\text{T} \\cdot \\text{m/A}$. We want $e/m$.\n\n**Principle:** The magnetic force is the centripetal force, $evB = mv^2/r$, and the accelerating voltage gives the kinetic energy, $eU = \\tfrac{1}{2}mv^2$. Eliminating $v$ gives $2U = (e/m) \\cdot B^2r^2$. The field of the coil pair is $B = (4/5)^{3/2}\\,\\mu_0 N I / R$.\n\n**Formula:** Solved in symbols:\n\n$$\\begin{aligned} B &= \\left(\\frac{4}{5}\\right)^{3/2} \\frac{\\mu_0 N I}{R} \\\\ \\frac{e}{m} &= \\frac{2U}{B^2 r^2} \\end{aligned}$$\n\n**Unit conversions:** The radius is half of the diameter, in metres: $r = 8.2\\ \\text{cm} : 2 = 4.1\\ \\text{cm} = 0.041\\ \\text{m}$. The units: $\\text{V}/(\\text{T}^2 \\cdot \\text{m}^2) = \\text{C/kg}$.\n\n**Substitution:**\n\n$$\\begin{aligned} \\mu_0 N I &= 4\\pi \\cdot 10^{-7}\\ \\text{T} \\cdot \\text{m/A} \\\\ &\\quad \\cdot 130 \\cdot 1.50\\ \\text{A} \\\\ &= 2.450 \\cdot 10^{-4}\\ \\text{T} \\cdot \\text{m} \\\\[6pt] B &= 0.7155 \\cdot \\frac{2.450 \\cdot 10^{-4}\\ \\text{T} \\cdot \\text{m}}{0.150\\ \\text{m}} \\\\ &= 1.169 \\cdot 10^{-3}\\ \\text{T} \\\\[6pt] B^2r^2 &= (1.169 \\cdot 10^{-3}\\ \\text{T})^2 \\\\ &\\quad \\cdot (0.041\\ \\text{m})^2 \\\\ &= 2.297 \\cdot 10^{-9}\\ \\text{T}^2 \\cdot \\text{m}^2 \\\\[6pt] \\frac{e}{m} &= \\frac{2 \\cdot 200\\ \\text{V}}{B^2r^2} \\\\ &= \\frac{400\\ \\text{V}}{2.297 \\cdot 10^{-9}\\ \\text{T}^2 \\cdot \\text{m}^2} \\\\ &= 1.741 \\cdot 10^{11}\\ \\text{C/kg} \\end{aligned}$$\n\n**Answer:** $e/m \\approx 1.74 \\cdot 10^{11}\\ \\text{C/kg}$. The diameter has only two significant figures, so a report would give $1.7 \\cdot 10^{11}\\ \\text{C/kg}$; the third figure is kept here only to compare with the accepted value.\n\n**Reasonableness:** The accepted value is $1.76 \\cdot 10^{11}\\ \\text{C/kg}$, so the result is about $1\\ \\%$ too small. A radius error of only $1\\ \\text{mm}$ changes $r^2$ by about $5\\ \\%$, so the radius is the most important uncertainty, and one point is not enough: at Fotoni you measure six and fit a line."
+   "solution": "**Given:** accelerating voltage $U = 200\\ \\text{V}$, coil current $I = 1.50\\ \\text{A}$, diameter of the circle $8.2\\ \\text{cm}$, turns of one coil $N = 130$, coil radius $R = 0.150\\ \\text{m}$, ${\\mu_0 = 4\\pi \\cdot 10^{-7}\\ \\text{T} \\cdot \\text{m/A}}$. We want $e/m$.\n\n**Principle:** The magnetic force is the centripetal force, $evB = mv^2/r$, and the accelerating voltage gives the kinetic energy, $eU = \\tfrac{1}{2}mv^2$. Eliminating $v$ gives ${2U = (e/m) \\cdot B^2r^2}$. The field of the coil pair is $B = (4/5)^{3/2}\\,\\mu_0 N I / R$.\n\n**Formula:** Solved in symbols:\n\n$$\\begin{aligned} B &= \\left(\\frac{4}{5}\\right)^{3/2} \\frac{\\mu_0 N I}{R} \\\\ \\frac{e}{m} &= \\frac{2U}{B^2 r^2} \\end{aligned}$$\n\n**Unit conversions:** The radius is half of the diameter, in metres: $r = 8.2\\ \\text{cm} : 2 = 4.1\\ \\text{cm} = 0.041\\ \\text{m}$. The units: ${\\text{V}/(\\text{T}^2 \\cdot \\text{m}^2) = \\text{C/kg}}$.\n\n**Substitution:**\n\n$$\\begin{aligned} \\mu_0 N I &= 4\\pi \\cdot 10^{-7}\\ \\text{T} \\cdot \\text{m/A} \\\\ &\\quad \\cdot 130 \\cdot 1.50\\ \\text{A} \\\\ &= 2.450 \\cdot 10^{-4}\\ \\text{T} \\cdot \\text{m} \\\\[6pt] B &= 0.7155 \\cdot \\frac{2.450 \\cdot 10^{-4}\\ \\text{T} \\cdot \\text{m}}{0.150\\ \\text{m}} \\\\ &= 1.169 \\cdot 10^{-3}\\ \\text{T} \\\\[6pt] B^2r^2 &= (1.169 \\cdot 10^{-3}\\ \\text{T})^2 \\\\ &\\quad \\cdot (0.041\\ \\text{m})^2 \\\\ &= 2.297 \\cdot 10^{-9}\\ \\text{T}^2 \\cdot \\text{m}^2 \\\\[6pt] \\frac{e}{m} &= \\frac{2 \\cdot 200\\ \\text{V}}{B^2r^2} \\\\ &= \\frac{400\\ \\text{V}}{2.297 \\cdot 10^{-9}\\ \\text{T}^2 \\cdot \\text{m}^2} \\\\ &= 1.741 \\cdot 10^{11}\\ \\text{C/kg} \\end{aligned}$$\n\n**Answer:** ${e/m \\approx 1.74 \\cdot 10^{11}\\ \\text{C/kg}}$. The diameter has only two significant figures, so a report would give ${1.7 \\cdot 10^{11}\\ \\text{C/kg}}$; the third figure is kept here only to compare with the accepted value.\n\n**Reasonableness:** The accepted value is ${1.76 \\cdot 10^{11}\\ \\text{C/kg}}$, so the result is about $1\\ \\%$ too small. A radius error of only $1\\ \\text{mm}$ changes $r^2$ by about $5\\ \\%$, so the radius is the most important uncertainty, and one point is not enough: at Fotoni you measure six and fit a line."
   },
   {
    "id": "own-help",
@@ -328,19 +337,20 @@
    "id": "own-data",
    "stage": "sovella",
    "type": "explain",
+   "practice": "Follow the worked example step by step in [Apply](#sovella).",
    "title": "Analyse your own photoelectric data",
-   "prompt": "Use the table on your worksheet (or the example table above, if your group did not do this station). Plot $U_\\text{s}$ against $f$ in a spreadsheet, fit a line and find $h$, $\\Delta h$ and the percentage difference from $6.626 \\cdot 10^{-34}\\ \\text{J} \\cdot \\text{s}$. Write your result and three or four sentences on how you got it.",
+   "prompt": "Use the table on your worksheet (or the example table above, if your group did not do this station). Plot $U_\\text{s}$ against $f$ in a spreadsheet, fit a line and find $h$, $\\Delta h$ and the percentage difference from ${6.626 \\cdot 10^{-34}\\ \\text{J} \\cdot \\text{s}}$. Write your result and three or four sentences on how you got it.",
    "hints": [
-    "The frequency is $f = c/\\lambda$ with $c = 2.998 \\cdot 10^{8}\\ \\text{m/s}$ and $\\lambda$ in metres.",
-    "In most spreadsheets: make a scatter chart, add a linear trendline and show its equation. The slope is in $\\text{V/Hz} = \\text{V} \\cdot \\text{s}$.",
-    "For $\\Delta h$, draw the steepest and least steep lines through the first and last point moved by $\\pm \\Delta U_\\text{s}$, as in the worked example."
+    "The frequency is $f = c/\\lambda$ with ${c = 2.998 \\cdot 10^{8}\\ \\text{m/s}}$ and $\\lambda$ in metres.",
+    "In most spreadsheets: make a scatter chart, add a linear trendline and show its equation. The slope is in ${\\text{V/Hz} = \\text{V} \\cdot \\text{s}}$.",
+    "For $\\Delta h$, draw the steepest and least steep lines through the first and last point moved by ${\\pm \\Delta U_\\text{s}}$, as in the worked example."
    ],
-   "model": "We plotted the stopping voltage on the vertical axis and the frequency on the horizontal axis. The five points lay close to a straight line, and the spreadsheet fit gave the slope $3.96 \\cdot 10^{-15}\\ \\text{V} \\cdot \\text{s}$, so $h = e\\,k = 6.35 \\cdot 10^{-34}\\ \\text{J} \\cdot \\text{s}$. The steepest and least steep lines gave $\\Delta h \\approx 0.3 \\cdot 10^{-34}\\ \\text{J} \\cdot \\text{s}$, so $h = (6.4 \\pm 0.3) \\cdot 10^{-34}\\ \\text{J} \\cdot \\text{s}$. This is about $4\\ \\%$ smaller than the accepted value, which lies inside our uncertainty. (These are the numbers of the example table; your own will differ.)",
+   "model": "We plotted the stopping voltage on the vertical axis and the frequency on the horizontal axis. The five points lay close to a straight line, and the spreadsheet fit gave the slope ${3.96 \\cdot 10^{-15}\\ \\text{V} \\cdot \\text{s}}$, so ${h = e\\,k = 6.35 \\cdot 10^{-34}\\ \\text{J} \\cdot \\text{s}}$. The steepest and least steep lines gave ${\\Delta h \\approx 0.3 \\cdot 10^{-34}\\ \\text{J} \\cdot \\text{s}}$, so ${h = (6.4 \\pm 0.3) \\cdot 10^{-34}\\ \\text{J} \\cdot \\text{s}}$. This is about $4\\ \\%$ smaller than the accepted value, which lies inside our uncertainty. (These are the numbers of the example table; your own will differ.)",
    "criteria": [
     "The answer says which quantity is on which axis and that the points lie close to a line (or where they do not).",
     "The answer gives $h = e\\,k$ with a unit, and an uncertainty $\\Delta h$ found from the graph.",
-    "The value and the uncertainty are rounded consistently ($x \\pm \\Delta x$ to the same decimal place).",
-    "The answer compares with the accepted value by a percentage difference and says whether it lies inside $x \\pm \\Delta x$."
+    "The value and the uncertainty are rounded consistently (${x \\pm \\Delta x}$ to the same decimal place).",
+    "The answer compares with the accepted value by a percentage difference and says whether it lies inside ${x \\pm \\Delta x}$."
    ]
   },
   {
@@ -355,7 +365,7 @@
    "tolerance": 0.02,
    "hints": [
     "Write all three lengths in metres before you substitute.",
-    "$\\lambda = 550 \\cdot 10^{-9}\\ \\text{m}$, $L = 0.49\\ \\text{m}$ and $d = 0.3556 \\cdot 10^{-3}\\ \\text{m}$."
+    "${\\lambda = 550 \\cdot 10^{-9}\\ \\text{m}}$, $L = 0.49\\ \\text{m}$ and ${d = 0.3556 \\cdot 10^{-3}\\ \\text{m}}$."
    ],
    "mistakes": [
     {
@@ -363,7 +373,7 @@
      "feedback": "You used the slit separation in millimetres but the other two lengths in metres. Write all three in metres first, and then convert the answer to millimetres."
     }
    ],
-   "solution": "**Given:** $\\lambda = 550\\ \\text{nm}$, $L = 49\\ \\text{cm}$, $d = 0.3556\\ \\text{mm}$. We want the distance $\\Delta y$ between neighbouring bright bands.\n\n**Principle:** Bright bands appear where the paths from the two slits differ by a whole number of wavelengths, $d \\sin\\theta_n = n\\lambda$. For small angles $\\sin\\theta \\approx \\tan\\theta = y/L$, so the bands are evenly spaced.\n\n**Formula:** $y_n = n\\lambda L/d$, so neighbouring bands are $\\Delta y = \\lambda L/d$ apart.\n\n**Unit conversions:** $\\lambda = 550 \\cdot 10^{-9}\\ \\text{m}$, $L = 0.49\\ \\text{m}$, $d = 0.3556 \\cdot 10^{-3}\\ \\text{m}$.\n\n**Substitution:**\n\n$$\\begin{aligned} \\Delta y &= \\frac{550 \\cdot 10^{-9}\\ \\text{m} \\cdot 0.49\\ \\text{m}}{0.3556 \\cdot 10^{-3}\\ \\text{m}} \\\\ &= 7.58 \\cdot 10^{-4}\\ \\text{m} \\\\ &= 0.758\\ \\text{mm} \\end{aligned}$$\n\n**Answer:** $\\Delta y \\approx 0.76\\ \\text{mm}$, two significant figures, as in $L = 49\\ \\text{cm}$.\n\n**Reasonableness:** The bands are less than a millimetre apart, so the detector needs a narrow measuring slit that moves in small steps. The angle is about $0.76\\ \\text{mm} : 490\\ \\text{mm} \\approx 0.0015$, so the small-angle approximation is very good."
+   "solution": "**Given:** $\\lambda = 550\\ \\text{nm}$, $L = 49\\ \\text{cm}$, $d = 0.3556\\ \\text{mm}$. We want the distance $\\Delta y$ between neighbouring bright bands.\n\n**Principle:** Bright bands appear where the paths from the two slits differ by a whole number of wavelengths, $d \\sin\\theta_n = n\\lambda$. For small angles $\\sin\\theta \\approx \\tan\\theta = y/L$, so the bands are evenly spaced.\n\n**Formula:** $y_n = n\\lambda L/d$, so neighbouring bands are $\\Delta y = \\lambda L/d$ apart.\n\n**Unit conversions:** ${\\lambda = 550 \\cdot 10^{-9}\\ \\text{m}}$, $L = 0.49\\ \\text{m}$, ${d = 0.3556 \\cdot 10^{-3}\\ \\text{m}}$.\n\n**Substitution:**\n\n$$\\begin{aligned} \\Delta y &= \\frac{550 \\cdot 10^{-9}\\ \\text{m} \\cdot 0.49\\ \\text{m}}{0.3556 \\cdot 10^{-3}\\ \\text{m}} \\\\ &= 7.58 \\cdot 10^{-4}\\ \\text{m} \\\\ &= 0.758\\ \\text{mm} \\end{aligned}$$\n\n**Answer:** $\\Delta y \\approx 0.76\\ \\text{mm}$, two significant figures, as in $L = 49\\ \\text{cm}$.\n\n**Reasonableness:** The bands are less than a millimetre apart, so the detector needs a narrow measuring slit that moves in small steps. The angle is about $0.76\\ \\text{mm} : 490\\ \\text{mm} \\approx 0.0015$, so the small-angle approximation is very good."
   },
   {
    "id": "modern-help",
@@ -375,6 +385,7 @@
    "id": "modern",
    "stage": "sovella",
    "type": "explain",
+   "practice": "Read the key idea in the [Theory summary](#selita).",
    "title": "Connect to modern physics",
    "pair": "Group work in threes: each of you explains one station to the others, then each writes an own answer.",
    "prompt": "Discuss in a group of three. Choose two stations you did. For each one, write two sentences: what the measurement shows that classical physics could not explain, and how the same physics is used in fusion research or elsewhere in modern technology.",
@@ -399,7 +410,7 @@
    "stage": "sovella",
    "type": "text",
    "title": "Put the report in order",
-   "text": "<div class=\"fx\" data-fx=\"order\" id=\"fx-fo-report\"><script type=\"application/json\">{\"prompt\": \"These sentences come from one photoelectric report. Put them in the order of the report's parts.\", \"items\": [\"*Aim:* We wanted to find out whether the stopping voltage depends on the frequency of the light.\", \"*Background:* According to Einstein, the stopping voltage is a linear function of the frequency.\", \"*Method:* We measured the stopping voltage for five LEDs of different colours.\", \"*Results:* The points of the stopping voltage against the frequency lie close to a straight line.\", \"*Analysis:* The slope of the fitted line gave $h = (6.4 \\\\pm 0.3) \\\\cdot 10^{-34}\\\\ \\\\text{J} \\\\cdot \\\\text{s}$.\", \"*Discussion:* The largest uncertainty came from deciding when the current was zero.\", \"*Conclusion:* The stopping voltage grows linearly with the frequency, as Einstein predicted.\"], \"explain\": \"This is the usual order: what you wanted to know, the theory, what you did, what you saw, what you calculated, how reliable it is, and the answer.\", \"hints\": [\"The aim comes first: it is the question the report answers.\", \"The theory comes before the method.\", \"What you did comes before what you saw.\", \"The data comes before the calculation.\", \"The calculation comes before you judge its reliability.\", \"The reliability comes before the final answer.\", \"The conclusion answers the aim.\"]}</script></div>"
+   "text": "<div class=\"fx\" data-fx=\"order\" id=\"fx-fo-report\"><script type=\"application/json\">{\"prompt\": \"These sentences come from one photoelectric report, one from each part. Put them in the order of the report's parts. The tense and the content are your clues.\", \"items\": [\"We wanted to find out whether the stopping voltage depends on the frequency of the light.\", \"According to Einstein, the stopping voltage is a linear function of the frequency.\", \"We measured the stopping voltage for five LEDs of different colours.\", \"The points of the stopping voltage against the frequency lie close to a straight line.\", \"The slope of the fitted line gave Planck's constant with an uncertainty of about five percent.\", \"The largest uncertainty came from deciding when the current was zero.\", \"The stopping voltage grows linearly with the frequency, as Einstein predicted.\"], \"explain\": \"Aim, background, method, results, analysis, discussion, conclusion. This is the usual order: what you wanted to know, the theory, what you did, what you saw, what you calculated, how reliable it is, and the answer.\", \"hints\": [\"The aim comes first: it is the question the report answers.\", \"The theory comes before the method.\", \"What you did comes before what you saw.\", \"The data comes before the calculation.\", \"The calculation comes before you judge its reliability.\", \"The reliability comes before the final answer.\", \"The conclusion answers the aim.\"]}</script></div>"
   },
   {
    "id": "report-help",
@@ -411,9 +422,10 @@
    "id": "report-write",
    "stage": "sovella",
    "type": "explain",
+   "practice": "Read *Writing a lab report in English* in [Apply](#sovella) and use the word bank.",
    "title": "Write the discussion of your report",
    "prompt": "Write the **Discussion** of your photoelectric report (or of another quantitative station) in five to seven sentences. Compare your result with the accepted value, name the main sources of uncertainty, say whether they are random or systematic, and suggest one improvement.",
-   "model": "Our value $h = (6.4 \\pm 0.3) \\cdot 10^{-34}\\ \\text{J} \\cdot \\text{s}$ is about $4\\ \\%$ smaller than the accepted value $6.626 \\cdot 10^{-34}\\ \\text{J} \\cdot \\text{s}$, but the accepted value lies within our uncertainty. The main source of uncertainty was deciding when the current was exactly zero, because the reading jumped between two values; this is a random error. A possible systematic error is that an LED does not give one exact wavelength but a band of wavelengths, so the frequencies in our table are not exact. A limitation of our measurement is that we had only five LEDs. To improve the experiment, we could measure each stopping voltage several times and find the wavelength of each LED with a spectrometer.",
+   "model": "Our value ${h = (6.4 \\pm 0.3) \\cdot 10^{-34}\\ \\text{J} \\cdot \\text{s}}$ is about $4\\ \\%$ smaller than the accepted value ${6.626 \\cdot 10^{-34}\\ \\text{J} \\cdot \\text{s}}$, but the accepted value lies within our uncertainty. The main source of uncertainty was deciding when the current was exactly zero, because the reading jumped between two values; this is a random error. A possible systematic error is that an LED does not give one exact wavelength but a band of wavelengths, so the frequencies in our table are not exact. A limitation of our measurement is that we had only five LEDs. To improve the experiment, we could measure each stopping voltage several times and find the wavelength of each LED with a spectrometer.",
    "criteria": [
     "The discussion compares the result with the accepted value with a number (a percentage difference) and says whether it agrees within the uncertainty.",
     "It names at least two concrete sources of uncertainty and calls at least one of them random or systematic correctly.",
@@ -433,21 +445,22 @@
    "id": "check-1",
    "stage": "tarkista",
    "type": "choice",
+   "practice": "Read *Formula: A straight-line fit* and *Common misconception* in [Apply](#sovella).",
    "title": "1. Concept: does the result agree?",
-   "prompt": "A group reports $h = (6.4 \\pm 0.3) \\cdot 10^{-34}\\ \\text{J} \\cdot \\text{s}$. The accepted value is $6.626 \\cdot 10^{-34}\\ \\text{J} \\cdot \\text{s}$. What can the group conclude?",
+   "prompt": "A group reports ${h = (6.4 \\pm 0.3) \\cdot 10^{-34}\\ \\text{J} \\cdot \\text{s}}$. The accepted value is ${6.626 \\cdot 10^{-34}\\ \\text{J} \\cdot \\text{s}}$. What can the group conclude?",
    "choices": [
     {
      "text": "It agrees with the accepted value within the uncertainty.",
      "correct": true,
-     "feedback": "Right. $6.4 \\pm 0.3$ covers $6.1\\text{–}6.7$, and $6.626$ lies inside. A difference smaller than the uncertainty is what we expect from a good measurement."
+     "feedback": "Right. ${6.4 \\pm 0.3}$ covers $6.1$ to $6.7$, and $6.626$ lies inside. A difference smaller than the uncertainty is what we expect from a good measurement."
     },
     {
      "text": "Their result is wrong, because it is not exactly $6.626$.",
-     "feedback": "No measurement gives exactly the accepted value. What matters is whether the accepted value lies inside $x \\pm \\Delta x$, and here it does: $6.1\\text{–}6.7$."
+     "feedback": "No measurement gives exactly the accepted value. What matters is whether the accepted value lies inside ${x \\pm \\Delta x}$, and here it does: $6.1$ to $6.7$."
     },
     {
      "text": "The uncertainty is so large that the result tells nothing.",
-     "feedback": "An uncertainty of about $5\\ \\%$ is quite small for a school measurement. The result clearly shows that $h$ is about $6 \\cdot 10^{-34}\\ \\text{J} \\cdot \\text{s}$, not, say, ten times larger."
+     "feedback": "An uncertainty of about $5\\ \\%$ is quite small for a school measurement. The result clearly shows that $h$ is about ${6 \\cdot 10^{-34}\\ \\text{J} \\cdot \\text{s}}$, not, say, ten times larger."
     },
     {
      "text": "The accepted value is likely wrong, since they measured with care.",
@@ -459,13 +472,14 @@
    "id": "check-2",
    "stage": "tarkista",
    "type": "choice",
+   "practice": "Read the electron-beam part of *Before the visit* in [Investigate](#tutki).",
    "title": "2. Graph: which axes for e/m?",
    "prompt": "You measured the radius $r$ of the electron beam for several voltages $U$ and fields $B$. Which graph gives a straight line through the origin whose slope is $e/m$?",
    "choices": [
     {
      "text": "$2U$ on the vertical axis, $B^2r^2$ on the horizontal",
      "correct": true,
-     "feedback": "Right. The equation $2U = (e/m) \\cdot B^2r^2$ has the form $y = kx$, with $y = 2U$, $x = B^2r^2$ and the slope $k = e/m$."
+     "feedback": "Right. The equation ${2U = (e/m) \\cdot B^2r^2}$ has the form $y = kx$, with $y = 2U$, $x = B^2r^2$ and the slope $k = e/m$."
     },
     {
      "text": "$U$ on the vertical axis, $r$ on the horizontal axis",
@@ -477,7 +491,7 @@
     },
     {
      "text": "$2U$ on the vertical axis, $Br$ on the horizontal axis",
-     "feedback": "The product $Br$ appears squared in $2U = (e/m) \\cdot B^2r^2$, so this graph is a parabola. Put $B^2r^2$ on the horizontal axis."
+     "feedback": "The product $Br$ appears squared in ${2U = (e/m) \\cdot B^2r^2}$, so this graph is a parabola. Put $B^2r^2$ on the horizontal axis."
     }
    ]
   },
@@ -485,20 +499,21 @@
    "id": "check-3",
    "stage": "tarkista",
    "type": "choice",
+   "practice": "Read *Planning a measurement* in [Investigate](#tutki).",
    "title": "3. Data: report a repeated count",
    "prompt": "At one position the photon counter gave $412$, $389$, $405$, $398$ and $421$ counts in five periods of $10\\ \\text{s}$. How should the group report the count?",
    "choices": [
     {
-     "text": "$(405 \\pm 16)$ counts in $10\\ \\text{s}$, the mean",
+     "text": "${(405 \\pm 16)}$ counts in $10\\ \\text{s}$, the mean",
      "correct": true,
-     "feedback": "Right. The mean is $2025 : 5 = 405$, and half of the range is $(421 - 389) : 2 = 16$. For random counts the spread is typically about $\\sqrt{N} \\approx 20$, which fits."
+     "feedback": "Right. The mean is $2025 : 5 = 405$. Half the range of the single counts is $(421 - 389) : 2 = 16$, a simple measure of how much one count spreads. For random counts the spread is typically about $\\sqrt{N} \\approx 20$, which fits."
     },
     {
      "text": "$412$ counts in $10\\ \\text{s}$, the first reading",
      "feedback": "The first reading is no better than the others. The counts are random, so use all five: the mean and half of the range."
     },
     {
-     "text": "$(405.0 \\pm 0.1)$ counts in $10\\ \\text{s}$",
+     "text": "${(405.0 \\pm 0.1)}$ counts in $10\\ \\text{s}$",
      "feedback": "The mean is $405$, but the readings differ by up to $32$ counts. An uncertainty of $0.1$ claims a precision that the data does not have."
     },
     {
@@ -517,9 +532,10 @@
    "id": "check-explain",
    "stage": "tarkista",
    "type": "explain",
+   "practice": "Read *Common misconception* in [Apply](#sovella).",
    "title": "4. Explain and argue",
-   "prompt": "A classmate writes in a report: \"Our value of $e/m$ was $1.74 \\cdot 10^{11}\\ \\text{C/kg}$, $1\\ \\%$ smaller than the accepted value, so the experiment failed.\" Do you agree? Explain the difference between an uncertainty and a mistake, and suggest two ways to make the result more reliable.",
-   "model": "I disagree. Every measurement has an uncertainty, and a difference of $1\\ \\%$ is small: a radius error of only $1\\ \\text{mm}$ in $4\\ \\text{cm}$ already changes $e/m$ by about $5\\ \\%$. An experiment fails only if the accepted value lies far outside $x \\pm \\Delta x$, or if there was a mistake such as a wrong connection or using the diameter instead of the radius. To make the result more reliable, we could measure the radius several times and use the mean, and measure at several voltages and currents and find $e/m$ from the slope of a fitted line.",
+   "prompt": "A classmate writes in a report: \"Our value of $e/m$ was ${1.74 \\cdot 10^{11}\\ \\text{C/kg}}$, $1\\ \\%$ smaller than the accepted value, so the experiment failed.\" Do you agree? Explain the difference between an uncertainty and a mistake, and suggest two ways to make the result more reliable.",
+   "model": "I disagree. Every measurement has an uncertainty, and a difference of $1\\ \\%$ is small: a radius error of only $1\\ \\text{mm}$ in $4\\ \\text{cm}$ already changes $e/m$ by about $5\\ \\%$. An experiment fails only if the accepted value lies far outside ${x \\pm \\Delta x}$, or if there was a mistake such as a wrong connection or using the diameter instead of the radius. To make the result more reliable, we could measure the radius several times and use the mean, and measure at several voltages and currents and find $e/m$ from the slope of a fitted line.",
    "criteria": [
     "The answer takes a position and explains that a small difference is expected because every measurement has an uncertainty.",
     "The answer explains what a mistake is (something wrong that can be found and corrected) and how it differs from an uncertainty.",

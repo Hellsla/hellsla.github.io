@@ -93,10 +93,10 @@ def emtube():
             "points to the centre of the circle.", width=420, size=28)
     cx, cy, R, r = 210, 195, 172, 98
     f.add(f'<circle cx="{cx}" cy="{cy}" r="{R}" fill="{GLASS}" fill-opacity="0.5" stroke="{METAL_EDGE}" stroke-width="3"/>')
-    for x, y in ((92, 108), (328, 108), (80, 230), (210, 52), (330, 290), (100, 312)):
+    for x, y in ((92, 108), (290, 62), (80, 230), (150, 50), (330, 290), (100, 312)):
         f.add(f'<circle cx="{x}" cy="{y}" r="12" fill="{WHITE}" stroke="{GOOD}" stroke-width="3"/>')
         f.circle(x, y, 4, GOOD)
-    f.tex(350, 82, r"\overline{B}", "start", color=GOOD)
+    f.tex(274, 64, r"\overline{B}", "end", color=GOOD)
     # the beam: a circle that starts at the gun's exit at the bottom
     oy = cy + 88                                  # the lowest point of the orbit, where the beam leaves the gun
     ocx, ocy = cx, oy - r
