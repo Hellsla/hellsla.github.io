@@ -113,10 +113,11 @@
   // 6. Solution editor (teacher 2026-11-01). Every exercise the build writes (build.py exercise_html: an <li id> with a
   // p.task, in #exercises) and every Sovella itsenäisesti task (practice.py: section.practice-task > .task-card) gets
   // the button, so every page, now and later, has it without a change to a lesson or task. The answer box, the
-  // check, the answer, the model solution and the rubric are left as they are; the editor goes before them.
+  // check, the answer, the model solution and the rubric are left as they are; the editor goes before them (in an
+  // exercise before the answer box too: the student writes the solution first, then checks the number).
   // Nothing is stored: the solution lives in the page until the student copies it (vendor/digabi/README.md).
   const PAD_TASKS = [   // [the task, its part the editor goes in, what it goes before]
-    ['#exercises li[id]', (t) => t.querySelector(':scope > .task') && t, (box) => box.querySelector(':scope > details.answer')],
+    ['#exercises li[id]', (t) => t.querySelector(':scope > .task') && t, (box) => box.querySelector(':scope > form.check, :scope > details.answer')],   // write first, then check (teacher 2026-11-01)
     ['section.practice-task[id]', (t) => t.querySelector(':scope > .task-card'), (box) => box.querySelector(':scope > details.reveal')],
   ];
   const VENDOR = new URL('vendor/digabi/', document.currentScript ? document.currentScript.src : location.href).href;
