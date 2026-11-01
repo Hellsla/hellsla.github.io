@@ -90,10 +90,14 @@
   if (location.hash) openTo(hashId(location.hash));
 
   // 6. Solution editor (teacher 2026-11-01). Every exercise the build writes (build.py exercise_html: an <li id> with a
-  // p.task, in #exercises) gets the button, so every lesson, now and later, has it without a change to the lesson.
-  // The answer box, the check, the answer and the model solution are left as they are; the editor goes before them.
+  // p.task, in #exercises) and every Sovella itsenäisesti task (practice.py: section.practice-task > .task-card) gets
+  // the button, so every page, now and later, has it without a change to a lesson or task. The answer box, the
+  // check, the answer, the model solution and the rubric are left as they are; the editor goes before them.
   // Nothing is stored: the solution lives in the page until the student copies it (vendor/digabi/README.md).
-  const PAD_TASKS = '#exercises li[id]';
+  const PAD_TASKS = [   // [the task, its part the editor goes in, what it goes before]
+    ['#exercises li[id]', (t) => t.querySelector(':scope > .task') && t, (box) => box.querySelector(':scope > details.answer')],
+    ['section.practice-task[id]', (t) => t.querySelector(':scope > .task-card'), (box) => box.querySelector(':scope > details.reveal')],
+  ];
   const VENDOR = new URL('vendor/digabi/', document.currentScript ? document.currentScript.src : location.href).href;
   let padLib = null;
   const load = (src) => new Promise((ok, fail) => { const s = document.createElement('script'); s.src = VENDOR + src; s.onload = ok; s.onerror = fail; document.head.appendChild(s); });
@@ -134,14 +138,15 @@
     }
     return viaEvent();
   };
-  document.querySelectorAll(PAD_TASKS).forEach((li) => {
-    if (!li.querySelector(':scope > .task')) return;
-    const id = li.id + '-pad';
+  PAD_TASKS.forEach(([sel, partOf, beforeOf]) => document.querySelectorAll(sel).forEach((task) => {
+    const li = partOf(task);
+    if (!li) return;
+    const id = task.id + '-pad';
     const open = document.createElement('button');
     open.type = 'button'; open.className = 'pad-open'; open.textContent = msg('pad_write');
     open.setAttribute('aria-expanded', 'false'); open.setAttribute('aria-controls', id);
     const box = document.createElement('div'); box.className = 'pad'; box.id = id; box.hidden = true;
-    li.insertBefore(open, li.querySelector(':scope > details.answer'));
+    li.insertBefore(open, beforeOf(li));
     open.after(box);
     let answer = { answerHtml: '' }, made = false;
     const status = document.createElement('p'); status.className = 'pad-status'; status.setAttribute('aria-live', 'polite');
@@ -170,7 +175,7 @@
         setTimeout(() => root.querySelector('.rich-text-editor')?.focus(), 0);
       }, () => { made = false; status.textContent = msg('pad_failed'); status.dataset.state = 'no'; });
     });
-  });
+  }));
 
   let opened = [];
   window.addEventListener('beforeprint', () => {

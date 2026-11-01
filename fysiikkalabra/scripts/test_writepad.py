@@ -13,6 +13,9 @@ secure page):
     clipboard, and pasting that HTML into another exercise's editor (the same editor as in Abitti) gives back an
     editable formula with the same LaTeX
   - at 360, 768 and 1280 px the open editor fits the exercise: no horizontal scroll, buttons at least 40 px high
+And on the Sovella itsenäisesti page of every course in every language (teacher 2026-11-01, "myös Sovella"): one
+button per task, inside its task card before the model answer, the editor opens and the copy works, and at 360 and
+1280 px the open editor fits the card.
 Exit status 1 on any failure."""
 import functools, http.server, re, sys, threading, pathlib
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
@@ -52,8 +55,9 @@ for lang in pages:
 
 targets = [p for p in (args or [pp[0] for pp in pages.values()])]
 
-handler = functools.partial(http.server.SimpleHTTPRequestHandler, directory=str(SITE))
-handler.log_message = lambda *a, **k: None
+class Quiet(http.server.SimpleHTTPRequestHandler):
+    def log_message(self, *a): pass
+handler = functools.partial(Quiet, directory=str(SITE))
 srv = http.server.ThreadingHTTPServer(("127.0.0.1", 0), handler)
 threading.Thread(target=srv.serve_forever, daemon=True).start()
 BASE = f"http://127.0.0.1:{srv.server_address[1]}/"
@@ -124,6 +128,32 @@ with sync_playwright() as pw:
                 li.locator(".pad").scroll_into_view_if_needed()
                 shot = ROOT / "preview" / "writepad"; shot.mkdir(parents=True, exist_ok=True)
                 li.screenshot(path=str(shot / f"{page.replace('/', '_')}-{w}.png"))
+        expect(f"{page}: no script errors", not errs, errs)
+        ctx.close()
+    for page in sorted(p.relative_to(SITE).as_posix() for p in SITE.glob("**/*-sovella.html")):
+        lang = page.split("/")[0] if "/" in page else i18n.SOURCE
+        T = i18n.T(lang)
+        ctx = b.new_context(viewport={"width": 1280, "height": 900}, permissions=["clipboard-read", "clipboard-write"])
+        pg = ctx.new_page(); errs = []
+        pg.on("pageerror", lambda e: errs.append(str(e)))
+        pg.goto(BASE + page); pg.wait_for_load_state("load")
+        n = pg.locator("section.practice-task[id]").count()
+        ok = pg.evaluate("""() => [...document.querySelectorAll('section.practice-task[id]')].every(s => {
+            const card = s.querySelector(':scope > .task-card'), b = card && card.querySelector(':scope > .pad-open'), r = card && card.querySelector(':scope > details.reveal');
+            return b && b.textContent && r && (b.compareDocumentPosition(r) & 4); })""")
+        expect(f"{page}: one '{T('js.pad_write')}' per task ({n}), in its card before the model answer", n > 0 and ok and pg.locator(".pad-open").count() == n)
+        card = pg.locator("section.practice-task[id] > .task-card").first
+        card.locator(".pad-open").scroll_into_view_if_needed(); card.locator(".pad-open").click()
+        card.locator(".rich-text-editor").wait_for(timeout=20000)
+        pg.keyboard.type("a) "); pg.keyboard.press("Control+e"); pg.keyboard.type("P=UI"); pg.keyboard.press("Escape"); pg.wait_for_timeout(300)
+        card.locator(".pad-copy").click(); pg.wait_for_timeout(300)
+        clip = pg.evaluate("async () => { for (const it of await navigator.clipboard.read()) return await (await it.getType('text/plain')).text(); }")
+        expect(f"{page}: the solution is copied", (clip or "").replace("\u00a0", " ") == "a) \\(P=UI\\)", clip)
+        for w in (360, 1280):
+            pg.set_viewport_size({"width": w, "height": 800}); pg.wait_for_timeout(200)
+            m = pg.evaluate("""() => { const c = document.querySelector('section.practice-task[id] > .task-card'), e = c.querySelector('.rich-text-editor').getBoundingClientRect(), r = c.getBoundingClientRect();
+                return { scroll: document.documentElement.scrollWidth - innerWidth, inside: e.left >= r.left - 1 && e.right <= r.right + 1 }; }""")
+            expect(f"{page} {w} px: the open editor fits the task card, no horizontal scroll", m["scroll"] <= 0 and m["inside"], m)
         expect(f"{page}: no script errors", not errs, errs)
         ctx.close()
     b.close()
