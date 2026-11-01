@@ -1,24 +1,22 @@
-VERDICT: FAIL
+VERDICT: PASS
 CONTENT-HASH: 5a08794ae859a389
 
 ## Blocking
-- [Critical] simulation in Tutki and Koe 1–3 at 390 px (`stage-tutki-390-1`, `exp-exp-1-390-1`, `exp-exp-2-390-1`, `exp-exp-3-390-1`) — the canvas is cropped: only the left slope shows (the valley floor, the right slope and the $h_2$ the student must read are missing), and the energy-bar panel is gone completely; its labels are drawn at desktop size and pile up over each other ("Energia" on top of $E_\text{p}$; $E_\text{k}$, $E_\text{mek}$, $W_\text{muut}$ stacked into an unreadable blot). `sim-390` draws the same sim correctly, so the fault is the sizing inside the stage or experiment card. — On a phone this is where the student runs the experiments, and the bars show $\Delta E_\text{mek} = W_\text{muut}$. — Fix: re-measure and redraw the canvas at the card's width when the stage or card becomes visible (to match `sim-390`), then recapture at 390 px.
+(none)
 
 ## Polish
-- [Minor] `lab-1280-1`, `sim-1280` — in the sticky side panel at a 900 px high window, the last readout line ($W_\text{muut}$, $\Delta E_\text{mek}$, the very quantity Koe 2 compares) starts below the panel's fold and only shows after an inner scroll. — Fix: put $\Delta E_\text{mek}$ on an earlier readout line, or shorten the energy canvas a little.
-- [Minor] lesson.md, Kitka muuttaa… second paragraph — "Painon eli painovoiman ja kitkan eron muistat luvusta …: paino on konservatiivinen voima." reads clumsily. — Fix: "Luvusta *Liike-energia, potentiaalienergia ja mekaaninen energia* muistat, että paino eli painovoima on **konservatiivinen voima** mutta kitka ei."
-- [Minor] lesson.md, Energiaperiaate — "(…, esimerkiksi kuljetinhihna kantaa laatikkoa.)" is missing its link word. — Fix: "esimerkiksi kun kuljetinhihna kantaa laatikkoa".
-- [Minor] sim readout — $h = 10{,}00\,\text{m}$ but $s = 0{,}0\,\text{m}$. — Fix: same decimals for both lengths.
+- [Minor] lesson.md Ydinajatus, 2nd paragraph — "Kaikki vaunuun vaikuttavat voimat eivät muuta sen energiaa" can be read as "no force changes the energy" — fix: "Kaikki vaunuun vaikuttavat voimat eivät muuta sen energiaa" -> "Kaikki voimat eivät muuta vaunun energiaa: vain työtä tekevät voimat muuttavat sitä."
+- [Minor] fig laakso (fig-3-390) — energy bar E_k is blue like the velocity arrow; the legend and bars make the meaning clear, so only a note: a project palette implication, no change asked.
+- [Minor] figs laakso and palkit at 390 px — legend letters and subscripts (E_k,1, E_p,2, |W_muut|) are near the lower limit of legibility (about 11 px) — enlarge those labels slightly at the next figure edit.
+- [Minor] fy4-8-exp-exp-3-390-1 — the opened optional Koe 3 renders 316 px wide with the text flush to the left edge, unlike Koe 1 and 2 in their cards — check the collapsed block's padding.
+- [Minor] sim-390 — the four bar legend letters under the energy bars sit far below the bars with a blank gap; works, but a little loose.
 
 ## Checked
-- contact-1…6 for triage; `fig-6-390` is a stray inline $\sqrt{2gh}$ crop, not a figure.
-- Figures at full size: hero (`top-390`, `intro-1280`), `fig-3-390` laakso, `fig-4-390` työ (colours: force red, velocity blue), `fig-5-390` palkit.
-- `theory-1280-2`, `theory-1280-3` (aligned derivations, energy principle, misconceptions).
-- `example-390-1` plus the example in contact-1 (#9): substitution chain and the colon division.
-- `sim-390`, `sim-1280`, `lab-1280-1/2`.
-- `stage-tutki-390-1`, `exp-exp-1-390-1`, `exp-exp-2-390-1` (the defect) and exp-3 on contact-3.
-- `open-tarkista-1280-2`; ennusta, tarkista and exit thumbnails on contact-1, -3, -4 and -5.
-- Plain-quantity scan of the prose (lesson, inquiry, exit ticket): none found.
+- contact sheets not needed; opened fig-1, fig-3, fig-4, fig-5 (fig-6 is a 60x31 stray crop of an inline formula, not a figure), top-390, intro-1280
+- theory-1280-1/2/3, fig-row context, example-390-1/2 (all seven stages, aligned chain rows), sim-390, sim-1280
+- stage-ennusta-390-1, stage-tutki-390-2, exp-2-390-1, exp-3-390-1, lab-1280-1
+- open-tarkista-1280-1, open-exercises-1280-1 (L1), open-exercises-L3-1280-2
+- Not opened: remaining L2/L3 parts, exit-ticket, stage-selita/sovella 390 (text read from the packet)
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 2
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

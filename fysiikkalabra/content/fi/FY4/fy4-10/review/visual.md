@@ -1,23 +1,21 @@
-VERDICT: FAIL
+VERDICT: PASS
 CONTENT-HASH: 94c81d5bb9ef34aa
 
 ## Blocking
-- [Critical] simulation at 390 px (sim-390, exp-exp-1/2/3-390-1) — the canvas is drawn at desktop scale in the phone card: vaunu 2 is cut off at the right edge, and both bar charts collapse into one line where "$p$ (kg·m/s)", "$E$ (J)", "ennen", "nyt", $p_1$, $p_2$, $p_\text{kok}$ and the legend overprint. stage-tutki-390-1 renders the same sim correctly, so it depends on state (after *Aseta alkutila* or re-initialisation). — On a phone the three experiments, the core of Tutki, are unreadable. — Make the canvas re-measure its container whenever the sim is re-initialised or shown; if this is a capture-timing artefact, fix the capture and re-shoot before a PASS.
+(none)
 
 ## Polish
-- [Minor] fig tyypit — the purple arrows carry no $\overline{p}$ label, so only colour says they are momenta; the explosion spring is a barely visible tick — label one arrow $\overline{p}$ and draw the spring larger.
-- [Minor] fig vuorovaikutus — the "$\Delta t$" label floats above the cars, tied to nothing — move it next to the force pair, for example "$\text{kosketusaika } \Delta t$", or drop it.
-- [Minor] lesson.md Miksi kokonaisliikemäärä säilyy, Kimmoisa törmäys — two sentences read awkwardly or ambiguously → "Liikemäärä, jonka toinen vaunu saa, on täsmälleen yhtä suuri kuin liikemäärä, jonka toinen menettää." and "Kun tunnetaan yhden kappaleen nopeus törmäyksen jälkeen, toisen kappaleen nopeus saadaan liikemäärän säilymislaista, …"
-- [Minor] Esimerkki (example-390-1/2) — Sijoitus writes units as $\tfrac{\text{m}}{\text{s}}$, while the rest of the chapter writes $\text{m/s}$, and in Kaava ratkaistuna the $v' = \dfrac{…}{…}$ row starts left of the two rows above it — use $\text{m/s}$ throughout and give all three rows one left edge.
-- [Minor] experiment tables (lab-1280-1, exp-exp-3-390-2) — header units "(kg·m/s)" are set in sans text, while "(m/s)" and "(J)" are KaTeX; exp-3's sim shows an empty "Käytössä:" — set every header unit in maths and fill in or hide the empty label.
+- [Minor] lab-1280-1, Koe 2 table — the 4-column results table is wider than the narrow experiment card at 1280 px, so the last header "E′k (J)" is cut off until the table is scrolled — let the table card scroll visibly or shorten the headers.
+- [Minor] exp tables 390/1280 — header units are mixed: "(m/s)" in serif maths, "(kg·m/s)" in bold sans plain text — set the unit in the same maths style (inquiry.json measure labels).
+- [Minor] exercises L3-1, Kaava row — the chain "½(m+M)v′² = (m+M)gh" breaks inside the bracket ("(m + / M)gh") — break after "=" or give the line more room.
+- [Minor] open-tarkista-1280-1, hint 2 — the closing full stop falls alone on a line below the display-like formula — keep the stop with the formula.
+- [Minor] fig-3 / fig-4 at 390 — the "½v̄" label and the "p_kok = 0" label are small and the carts overlap the spring in the explosion "before" row — enlarge the label or separate the carts slightly.
 
 ## Checked
-- contact-1…6 for triage; fig-2-390, fig-3-390, fig-4-390; hero in intro-1280 and contact (#3)
-- theory-1280-1…4 (all four figures beside or under their text, display maths, summary)
-- sim-390, sim-1280, stage-tutki-390-1, lab-1280-1 (sim panel scrolls inside the sticky column: OK)
-- exp-exp-1-390-1, exp-exp-3-390-1/-2; exp-2 and contact #28–#32
-- example-390-1 (and #8 in contact), open-tarkista-1280-2, contact #43–#48 (ennusta, tarkista, exit open)
-- lesson.md, inquiry.json, exit-ticket.json read in full; lint: no plain quantities
+- Contact sheet scan; fig-1..fig-4 at 390; fig-row, intro-1280, top; theory-1280-1/3/4; sim-390, sim-1280; example-390-1/2.
+- exp-1 (390-2), exp-2 (390-2), exp-3 (390-2); lab-1280-1/2; open-ennusta-1280-1; open-tarkista-1280-1; exercises L1-1 and L3-1.
+- Source read in full: Finnish prose, glossary terms (liikemäärän säilyminen, kimmoisa, kimmoton, räjähdys) and the plain-quantity rule: no plain quantities found in the text I read.
+- Velocity blue, momentum violet, force red are consistent in figures and sim; every figure label is LaTeX.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 2
+illustrations 4 · typography 4 · Finnish 5 · accessibility 4
