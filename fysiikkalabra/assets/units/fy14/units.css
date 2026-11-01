@@ -367,3 +367,5 @@
 /* a match select never wider than its column; prose tables in units wrap (site tables are nowrap for numbers) */
 .fx-match-row select{max-width:100%;min-width:0;width:100%}
 .unit table:not(.exp-table) td,.unit table:not(.exp-table) th{white-space:normal}
+/* French is never hyphenated automatically: beginners learn these words' spelling from the page */
+[lang|="fr"]{hyphens:manual;-webkit-hyphens:manual}
