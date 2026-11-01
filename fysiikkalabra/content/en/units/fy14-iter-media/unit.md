@@ -85,13 +85,15 @@ Facts about a project under construction change. The table compares ITER's own o
 
 | Topic | Official in 2018 | Official in November 2026 |
 | --- | --- | --- |
-| first plasma experiments | first plasma in 2025 (2016 baseline) | research operation in 2034 (2024 baseline) |
-| deuterium–tritium operation | 2035 | 2039 |
-| construction | "halfway" to first plasma (December 2017) | six of nine vessel modules in the pit (July 2026); all six central solenoid modules stacked (June 2026) |
-| cost | about 20 billion euros (estimate of 2017) | about 5 billion euros more for repairs and changes (2024) |
-| plasma-facing wall | beryllium | tungsten (decided with the 2024 baseline) |
+| first plasma | 2025 (2016 baseline) | research operation 2034 (2024 baseline) |
+| $\text{D–T}$ operation | 2035 | 2039 |
+| construction | "halfway" to first plasma (December 2017) | 6 of 9 vessel modules in the pit (July 2026) |
+| cost | about €20 billion (2017 estimate) | about €5 billion more for repairs and changes (2024) |
+| wall facing the plasma | beryllium | tungsten (decided 2023, part of the 2024 baseline) |
 | Members | seven; the UK through Euratom | seven; the UK has left, Switzerland is back through Europe (2026) |
 | Director-General | Bernard Bigot | Pietro Barabaschi (since 2022) |
+
+Construction has also moved on elsewhere in the machine: in June 2026 all six modules of the central solenoid were stacked.
 
 Some things have **not** changed: ITER's scientific goal ($Q = 10$, $500\ \text{MW}$ of fusion power from $50\ \text{MW}$ of heating), the site at Cadarache, the seven Members, and the physics of fusion. An article from 2018 that reported the plan of 2018 was correct at the time; a reader in 2026 must update the dates, the costs and the construction status.
 
@@ -105,7 +107,7 @@ Reading about science in the news needs three questions.
 
 ## The physics behind the story {Physics}
 
-**How fusion releases energy.** When light nuclei fuse, the new nucleus is more tightly bound, and the total mass decreases. The missing mass becomes energy, $E = mc^2$. One D–T reaction releases $17.6\ \text{MeV}$: $3.5\ \text{MeV}$ to the helium nucleus and $14.1\ \text{MeV}$ to the neutron.
+**How fusion releases energy.** When light nuclei fuse, the new nucleus is more tightly bound, and the total mass decreases. The missing mass becomes energy, $E = mc^2$. One $\text{D–T}$ reaction releases $17.6\ \text{MeV}$: $3.5\ \text{MeV}$ to the helium nucleus and $14.1\ \text{MeV}$ to the neutron.
 
 **Why it is difficult.** The nuclei are positively charged and repel each other, so they fuse only when they move very fast: the plasma must be at about $150$ million $^\circ\text{C}$. It must be dense enough and held long enough by magnetic fields, while the walls survive the heat and the neutrons. Tritium is radioactive and rare, so a future plant must breed it from lithium. And a high gain in the plasma is still not electricity: ITER has no turbines.
 
@@ -117,7 +119,7 @@ A second mistake is to treat every sentence of an article as the journalist's cl
 
 ## Summary
 
-- Official information on ITER changed between 2018 and 2026: first plasma 2025 → research operation 2034; D–T 2035 → 2039; costs and the construction status changed too.
+- Official information on ITER changed between 2018 and 2026: first plasma 2025 → research operation 2034; $\text{D–T}$ 2035 → 2039; costs and the construction status changed too.
 - The goal ($Q = 10$), the site, the seven Members and the physics did not change.
 - Read news about science by asking when it was written, what kind of claim each statement is (result, plan, opinion) and who says it.
 - Fusion releases energy because the mass decreases ($E = mc^2$); it is difficult because of the Coulomb repulsion, the extreme temperature, confinement, materials and tritium.

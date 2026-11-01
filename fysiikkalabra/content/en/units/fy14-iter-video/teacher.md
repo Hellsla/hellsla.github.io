@@ -15,9 +15,9 @@ An automatically generated transcript on a third-party site also mentions points
 - **0–8 min, Think about it.** Hook, the review question (plan or result?).
 - **8–12 min, Predict.** Two predictions, committed with a reason.
 - **12–15 min, Before watching.** The vocabulary match.
-- **15–40 min, While watching.** First viewing without stopping (about 10 min); second viewing with pauses, pairs filling the four note frames (one pair member notes frames 1–2, the other 3–4, then they share). Then read the table of checked claims (both predictions open).
-- **40–50 min, Theory summary.** Key idea on evaluating a video; pair discussion with the word bank; back to the predictions.
-- **50–65 min, Apply.** Sort the claims, the sponsor question, the 80–100-word written explanation. The Kurzgesagt comparison is optional.
+- **15–45 min, While watching.** First viewing without stopping (about 10 min); second viewing with pauses, each student fills all four note frames; a pair can share the listening (one listens closely for frames 1–2, the other for 3–4) and then they complete each other's notes. Then sort the claims and answer the sponsor question *before* the table of checked claims, which checks the sort (both predictions open).
+- **45–53 min, Theory summary.** Key idea on evaluating a video; pair discussion with the word bank; back to the predictions.
+- **53–65 min, Apply.** The 80–100-word written explanation. The Kurzgesagt comparison is optional.
 - **65–75 min, Check your understanding.** Three checks, the recommendation paragraph, the summary and the French corner.
 
 ## Organisation and preparation
@@ -33,7 +33,7 @@ An automatically generated transcript on a third-party site also mentions points
 ## Common difficulties
 - Fast speech: allow the second viewing with pauses and English subtitles.
 - Students call outdated claims "lies". Discuss the difference between *false when said* and *true then, outdated now*.
-- "35 nations" against "seven Members": the EU is one Member made of many states.
+- "35 nations" against "seven Members": the EU is one Member made of many states. 35 was ITER's long-used count (EU-28, Switzerland and six others); since the UK left it is 34.
 - "Ten times hotter than the Sun" is about the core temperature only.
 
 ## Fast pairs and running out of time

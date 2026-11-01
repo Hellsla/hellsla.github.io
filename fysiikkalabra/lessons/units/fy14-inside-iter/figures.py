@@ -77,40 +77,42 @@ def hero():
 
 def power():
     """Power bars to scale: heating into the plasma, the fusion power split into neutrons and alphas, and the
-    electrical power the whole plant draws."""
-    f = Fig("fy14ii-power", 440, "Bar chart to scale, power in megawatts. First bar: 50 MW of heating power delivered into the "
-            "plasma. Second bar: 500 MW of fusion power, divided into about 400 MW carried by neutrons, which leave the "
-            "plasma and heat the blanket, and about 100 MW carried by helium nuclei, which stay in the plasma and heat it. "
-            "Third bar: the electrical power that the whole ITER plant draws from the grid, over 300 MW, drawn with a dashed "
-            "top because the value varies. A note says that ITER produces no electricity.", size=24)
-    base, top = 360, 40          # 0 MW and 500 MW
-    S = (base - top) / 500
+    range of electrical power the whole plant draws from the grid (iter.org: 110 MW at least, up to 620 MW in
+    30-second peaks)."""
+    f = Fig("fy14ii-power", 500, "Bar chart to scale, power in megawatts. First bar: 50 MW of heating power delivered into the "
+            "plasma. Second bar: 500 MW of fusion power made in the plasma, divided into about 400 MW carried by neutrons, "
+            "which leave the plasma and heat the blanket, and about 100 MW carried by helium nuclei, which stay in the plasma "
+            "and heat it. Third bar: the electricity that the whole ITER plant draws from the grid, at least 110 MW, drawn "
+            "solid, and up to 620 MW in peaks of 30 seconds, drawn as a pale range with a dashed outline.", width=560, size=26)
+    base, top = 400, 70          # 0 MW and 650 MW
+    S = (base - top) / 650
     y = lambda mw: base - mw * S
-    f.line(40, base, 580, base, INK, 2.5)
-    for mw in (100, 200, 300, 400, 500):
-        f.line(40, y(mw), 580, y(mw), RULE_LIGHT, 1.5)
-        f.tex(34, y(mw), str(mw), "end", size=22)
-    f.tex(34, base, "0", "end", size=22)
-    f.tex(44, 16, r"P\ (\text{MW})", "start", size=22)
+    f.line(64, base, 545, base, INK, 2.5)
+    for mw in (200, 400, 600):
+        f.line(64, y(mw), 545, y(mw), RULE_LIGHT, 1.5)
+        f.tex(56, y(mw), str(mw), "end")
+    f.tex(56, base, "0", "end")
+    f.tex(8, 26, r"P\ (\text{MW})", "start")
     # bar 1: heating
-    f.rect(70, y(50), 90, 50 * S, HEAT, INK, 2)
-    f.tex(115, y(50) - 20, r"50", "middle", size=24)
-    f.tex(115, base + 24, r"P_\text{heating}", "middle", size=24)
+    f.rect(80, y(50), 90, 50 * S, HEAT, INK, 2)
+    f.tex(125, y(50) - 22, r"50", "middle")
     # bar 2: fusion power, neutrons and alphas
     pa = 500 * ALPHA_SHARE
-    f.rect(230, y(500), 120, pa * S, HOT, INK, 2)
-    f.rect(230, y(500 - pa), 120, (500 - pa) * S, COLD, INK, 2)
-    f.tex(290, y(500) + pa * S / 2, r"\alpha\text{: }100", "middle", color=WHITE, size=22)
-    f.tex(290, y(200), r"\text{n: }400", "middle", color=WHITE, size=24)
-    f.tex(290, base + 24, r"P_\text{fusion}", "middle", size=24)
-    # bar 3: grid electricity drawn by the plant
-    f.rect(420, y(300), 120, 300 * S, GOOD_LIGHT, INK, 2)
-    f.path(f"M420,{n(y(300))} L420,{n(y(340))} M540,{n(y(300))} L540,{n(y(340))}", stroke=INK, w=2, extra='stroke-dasharray="6 5"')
-    f.tex(480, y(340) - 18, r"> 300", "middle", size=24)
-    f.tex(480, base + 24, r"\text{grid}", "middle", size=24)
-    f.tex(480, base + 52, r"\text{electricity in}", "middle", size=22, color=MUTED)
-    f.tex(115, base + 52, r"\text{into plasma}", "middle", size=22, color=MUTED)
-    f.tex(290, base + 52, r"\text{made in plasma}", "middle", size=22, color=MUTED)
+    f.rect(215, y(500), 130, pa * S, HOT, INK, 2)
+    f.rect(215, y(500 - pa), 130, (500 - pa) * S, COLD, INK, 2)
+    f.tex(280, y(500) + pa * S / 2, r"\alpha\text{: }100", "middle", color=WHITE)
+    f.tex(280, y(200), r"\text{n: }400", "middle", color=WHITE)
+    f.tex(280, y(500) - 22, r"500", "middle")
+    # bar 3: grid electricity drawn by the plant, a range
+    f.rect(395, y(620), 130, (620 - 110) * S, GOOD_LIGHT, None, 0, extra='fill-opacity="0.45"')
+    f.path(f"M395,{n(y(110))} L395,{n(y(620))} L525,{n(y(620))} L525,{n(y(110))}", stroke=INK, w=2, extra='stroke-dasharray="6 5"')
+    f.rect(395, y(110), 130, 110 * S, GOOD_LIGHT, INK, 2)
+    f.tex(460, y(55), r"110", "middle")
+    f.tex(460, y(620) - 22, r"620", "middle")
+    f.tex(460, y(365), r"\text{peaks}", "middle")
+    for x, a, b in ((125, "heating", "into plasma"), (280, "fusion", "in plasma"), (460, "grid", "electricity in")):
+        f.tex(x, base + 26, rf"\text{{{a}}}", "middle")
+        f.tex(x, base + 60, rf"\text{{{b}}}", "middle")
     return f.svg()
 
 

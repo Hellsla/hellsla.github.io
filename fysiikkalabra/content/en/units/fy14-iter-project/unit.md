@@ -139,17 +139,17 @@
 
 ## Why one machine for the world {Why}
 
-In November 1985, at their first summit in Geneva, the Soviet leader Mikhail Gorbachev proposed to the US President Ronald Reagan that their countries should build a fusion experiment together. In 1987 four partners started the design: the European Community, Japan, the Soviet Union and the United States. The machine was called **ITER**; *iter* is also Latin for "the way".
+In November 1985, at their first summit in Geneva, the Soviet leader Mikhail Gorbachev proposed to the US President Ronald Reagan that their countries should build a fusion experiment together. In 1987 four partners agreed to design it together: the European Community, Japan, the Soviet Union and the United States. The conceptual design began in 1988. The machine was called **ITER**; *iter* is also Latin for "the way".
 
 Why share one machine? The next step after JET and JT-60 had to be a machine that makes **far more fusion power than it receives**. Such a machine is very large, it needs new technology from many industries, and it costs tens of billions of euros. No single country wanted to carry the whole cost and the whole risk. Sharing also brings together the knowledge of many fusion laboratories. And cooperation had a political value: rivals of the Cold War could work on a peaceful energy project. In return, every Member receives all the scientific results and the intellectual property that ITER produces.
 
 ## The plan that changed {Schedule}
 
-A big project has a **baseline**: the official plan for its schedule and cost. ITER's baseline of 2016 planned a short first plasma in 2025 and deuterium–tritium (D–T) operation in 2035. On 3 July 2024, ITER presented a new baseline. It skips the early test plasma and starts with a more complete machine:
+A big project has a **baseline**: the official plan for its schedule and cost. ITER's baseline of 2016 planned a short first plasma in 2025 and deuterium–tritium ($\text{D–T}$) operation in 2035. On 3 July 2024, ITER presented a new baseline. It skips the early test plasma and starts with a more complete machine:
 
 | Milestone | 2016 baseline | 2024 baseline |
 | --- | --- | --- |
-| first experiments | 2025 (first plasma) | 2034 (research operation) |
+| first experiments | 2025 (first plasma) | 2034 (research) |
 | deuterium–deuterium (D–D) | — | 2035 |
 | full magnetic energy | 2033 | 2036 |
 | deuterium–tritium (D–T) | 2035 | 2039 |
@@ -195,8 +195,8 @@ A big project has a **baseline**: the official plan for its schedule and cost. I
   <foreignObject x="511" y="176.5" width="49" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:26px;color:#c92a2a"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{D–T}$</span></div></foreignObject>
   <foreignObject x="200.5" y="66.5" width="157" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:26px;color:#1971c2"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{first plasma}$</span></div></foreignObject>
   <foreignObject x="315" y="246.5" width="197" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:26px;color:#1971c2"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{research starts}$</span></div></foreignObject>
-  <line x1="446" y1="132" x2="518" y2="202.5" stroke="#c92a2a" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M525.5,210 L513.5,205.5 L521,197.5 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <line x1="446" y1="132" x2="504" y2="192" stroke="#c92a2a" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M511.5,200 L499.5,195 L507,187.5 Z" fill="#c92a2a" stroke-linejoin="round"/>
   <foreignObject x="358" y="159.5" width="107" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:26px;color:#c92a2a"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$+4\ \text{years}$</span></div></foreignObject>
   <foreignObject x="181" y="10.5" width="116" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:26px;color:#6b7480"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{Nov. 2026}$</span></div></foreignObject>
 </svg>
@@ -205,13 +205,13 @@ ITER gave several reasons: the COVID-19 pandemic slowed factories and transport,
 
 ## Who: seven Members {Members}
 
-ITER has seven **Members**: China, the European Union, India, Japan, Korea, Russia and the United States. As the host, the European Union pays 45.6 % of the construction costs; the six others pay 9.1 % each. Together they represent more than thirty countries, because the EU counts its member states.
+ITER has seven **Members**: China, the European Union, India, Japan, Korea, Russia and the United States. As the host, the European Union pays $45.6\ \%$ of the construction costs; the six others pay $9.1\ \%$ each. Together they represent more than thirty countries, because the EU counts its member states.
 
 The Members pay mostly **in kind**: about nine-tenths of their contribution is delivered as finished components, systems or buildings, not as money. Each Member has a **Domestic Agency** that signs contracts with its own industry; Europe's agency is Fusion for Energy. On the site, the **ITER Organization** assembles the machine and will run it. It is led by a Director-General, since October 2022 Pietro Barabaschi, and the **ITER Council**, where every Member is represented, takes the major decisions. About 5,000 people work on the site and in its offices (2026).
 
 ## Technical and organisational challenges {Challenges}
 
-The **technical** challenges come from building parts that have never existed. In 2022 the steel sectors of the vacuum vessel did not have the right shape at their welding edges, and the cooling pipes of the thermal shield had cracks. Both had to be repaired, which stopped the assembly for about two years. The parts must also fit to within millimetres, and the machine is a nuclear installation that must pass the French safety authority's rules.
+The **technical** challenges come from building parts that have never existed. In 2022 the steel sectors of the vacuum vessel did not have the right shape at their welding edges, and the cooling pipes of the thermal shield had cracks. Both had to be repaired, which halted the vessel assembly; the next sector module went into the pit only in April 2025. The parts must also fit to within millimetres, and the machine is a nuclear installation that must pass the French safety authority's rules.
 
 The **organisational** challenges come from sharing. A coil made in one country must fit a part made in another, so thousands of interfaces must be managed. Decisions need the agreement of seven Members with their own budgets and politics. The United States left the project in 1998 and came back in 2003, and the United Kingdom left after Brexit.
 
@@ -225,8 +225,8 @@ A second mistake is to quote an old date as if it were still the plan. A newspap
 
 ## Summary
 
-- ITER grew from the 1985 Geneva summit; four partners started its design in 1987, and seven Members signed the ITER Agreement in 2006.
+- ITER grew from the 1985 Geneva summit; four partners agreed in 1987 to design it together, and seven Members signed the ITER Agreement in 2006.
 - One machine is shared because it is too large, too expensive and too risky for one country, and because cooperation also has political value.
 - The site at Cadarache in southern France was chosen in Moscow on 28 June 2005, after a long contest with Rokkasho in Japan.
 - The Members pay mostly in kind, through Domestic Agencies; the ITER Organization assembles and runs the machine.
-- The 2024 baseline plans research operation in 2034 and D–T operation in 2039. These are plans, not results.
+- The 2024 baseline plans research operation in 2034 and $\text{D–T}$ operation in 2039. These are plans, not results.

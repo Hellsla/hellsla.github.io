@@ -49,28 +49,28 @@
    "stage": "ennusta",
    "type": "choice",
    "title": "Prediction 1: the date in the video",
-   "prompt": "The video was published in April 2022. Which date for ITER's first plasma do you expect it to give?",
+   "prompt": "The video was published in April 2022. Which year for ITER's first plasma do you expect it to give?",
    "justify": true,
    "reveal": {
     "after": "theory-checked"
    },
    "choices": [
     {
-     "text": "2025, the plan of that time",
+     "text": "2025",
      "correct": true,
      "feedback": "Right. In 2022 the official plan (the 2016 baseline) still had first plasma in 2025, and the video gives 2025. The 2024 baseline later replaced it: research operation in 2034."
     },
     {
-     "text": "2034, the date of today's plan",
+     "text": "2030",
+     "feedback": "No ITER plan gave 2030. In April 2022 the plan valid then, the 2016 baseline, said 2025, and so does the video."
+    },
+    {
+     "text": "2034",
      "feedback": "The 2034 date was announced only in July 2024, two years after the video. In April 2022 the plan said 2025, and so does the video."
     },
     {
-     "text": "2039, the start of D–T operation",
-     "feedback": "2039 comes from the 2024 baseline, published after the video. The video gives the plan of its time: first power-on in 2025."
-    },
-    {
-     "text": "No date at all, only \"in the future\"",
-     "feedback": "The video does give a date: 2025, the plan of 2022. This is why its date must be checked today."
+     "text": "2039",
+     "feedback": "2039 is the start of deuterium–tritium operation in the 2024 baseline, published after the video. The video gives the plan of its time: first power-on in 2025."
     }
    ]
   },
@@ -79,7 +79,7 @@
    "stage": "ennusta",
    "type": "choice",
    "title": "Prediction 2: what the video focuses on",
-   "prompt": "The B1M is a channel about construction, and this video contains a paid promotion for a company that manages contracts. What do you expect the video to spend most time on?",
+   "prompt": "The B1M is a channel about construction, and this video contains a paid promotion for a company that manages contracts. From the channel and the sponsor alone, predict: what will the video spend most time on?",
    "justify": true,
    "reveal": {
     "after": "theory-checked"
@@ -92,15 +92,15 @@
     },
     {
      "text": "The plasma physics and the equations of fusion",
-     "feedback": "Physics gets only a short part: fusion versus fission and the temperature. Most of the video is about building, transport and collaboration, as you would expect from a construction channel."
+     "feedback": "Physics gets only a short part: fusion versus fission and the temperature. The channel's own text spends most of its words on building, transport and collaboration, as you would expect from a construction channel."
     },
     {
      "text": "The Cold War history of fusion research",
-     "feedback": "History appears only briefly, if at all. The video spends most of its time on the construction: size, parts, transport and collaboration."
+     "feedback": "History appears only briefly, if at all. The channel's own text spends most of its words on the construction: size, parts, transport and collaboration."
     },
     {
      "text": "The French language and life in Provence",
-     "feedback": "The video is set in France but is about the construction project: its size, parts, transport and the many nations involved."
+     "feedback": "The video is set in France, but the channel's own text spends most of its words on the construction project: its size, parts, transport and the many nations involved."
     }
    ]
   },
@@ -116,14 +116,14 @@
    "stage": "tutki",
    "type": "text",
    "title": "While watching",
-   "text": "Watch the whole video once without stopping. Then watch it a second time and pause to make notes in the four frames below. Write short notes, not full sentences: key words, numbers, names.\n\n<div class=\"fx\" data-fx=\"video\" id=\"fx-iv-b1m\"><script type=\"application/json\">{\"id\": \"4BkOUOK0XzM\", \"title\": \"We Went Inside the Largest Nuclear Fusion Reactor\", \"channel\": \"The B1M\", \"year\": \"13 April 2022\", \"length\": \"about 10 min\", \"note\": \"The video contains a paid promotion, as the channel states. English subtitles can be switched on in the player.\"}</script></div>"
+   "text": "Watch the whole video once without stopping. Then watch it a second time and pause to make notes in the four frames below. Write short notes, not full sentences: key words, numbers, names. Each of you writes in all four frames; your pair can share the listening (one listens closely for frames 1–2, the other for 3–4) and then you complete each other's notes.\n\n<div class=\"fx\" data-fx=\"video\" id=\"fx-iv-b1m\"><script type=\"application/json\">{\"id\": \"4BkOUOK0XzM\", \"title\": \"We Went Inside the Largest Nuclear Fusion Reactor\", \"channel\": \"The B1M\", \"year\": \"13 April 2022\", \"length\": \"about 10 min\", \"note\": \"The video contains a paid promotion, as the channel states. English subtitles can be switched on in the player.\"}</script></div>"
   },
   {
    "id": "frame-main",
    "stage": "tutki",
    "type": "explain",
    "title": "Frame 1: main ideas",
-   "prompt": "Note the **main ideas**: (a) What is ITER trying to do, according to the video? (b) Why does the video say fusion is needed? (c) What has no reactor done yet, according to the video? (d) What does the video say about the future?",
+   "prompt": "Note the **main ideas**:\n\n<ol type=\"a\"><li>What is ITER trying to do, according to the video?</li><li>Why does the video say fusion is needed?</li><li>What has no reactor done yet, according to the video?</li><li>What does the video say about the future?</li></ol>",
    "model": "(a) Build the largest fusion reactor and get more energy out than it takes in, for a short time (\"net energy\"). (b) A carbon-free energy source that does not depend on the weather, because the world needs less fossil fuel. (c) No reactor has produced more fusion energy than it uses. (d) First power-on in 2025 (the plan in 2022); electricity to the grid is decades away and would come from later reactors; private companies are also working on fusion. Notes are checked by your teacher against the video; the model shows what good notes can contain, based on the narration published on the channel's web page.",
    "criteria": [
     "The notes give ITER's goal in the video's words (more energy out than in).",
@@ -137,7 +137,7 @@
    "stage": "tutki",
    "type": "explain",
    "title": "Frame 2: technical concepts",
-   "prompt": "Note the **technical concepts**: (a) How does the video explain the difference between fission and fusion? (b) What is the fuel? (c) Which extreme conditions must the machine survive? (d) Which parts or numbers about the machine do you hear?",
+   "prompt": "Note the **technical concepts**:\n\n<ol type=\"a\"><li>How does the video explain the difference between fission and fusion?</li><li>What is the fuel?</li><li>Which extreme conditions must the machine survive?</li><li>Which parts or numbers about the machine do you hear?</li></ol>",
    "model": "(a) Fission splits heavy atoms such as uranium and plutonium and leaves dangerous waste; fusion joins light atoms. (b) Hydrogen isotopes that can be taken from water. (c) Temperatures about ten times hotter than the Sun's core and forces about twice those needed to launch a space shuttle. (d) A tokamak of 23,000 tonnes with about one million components; heat would make steam for turbines in a future power plant. Notes are checked by your teacher against the video; the model shows what good notes can contain, based on the narration published on the channel's web page.",
    "criteria": [
     "The notes contrast splitting (fission) and joining (fusion).",
@@ -170,6 +170,39 @@
     "The notes describe how heavy parts travel to the site (with the 104 km route or the convoys).",
     "They describe how parts are assembled (hall, cranes).",
     "They record what the video says about the schedule."
+   ]
+  },
+  {
+   "id": "sort-claims",
+   "stage": "tutki",
+   "type": "text",
+   "title": "Source evaluation: sort the claims",
+   "text": "<div class=\"fx\" data-fx=\"match\" id=\"fx-iv-claims\"><script type=\"application/json\">{\"prompt\": \"Source evaluation: sort the claims from the video (2022). Use your notes, what you know from the chapter's first two units, and iter.org's Facts page.\", \"options\": [\"correct today\", \"outdated\", \"needs context\"], \"items\": [{\"text\": \"ITER weighs 23,000 tonnes.\", \"answer\": \"correct today\", \"feedback\": \"ITER's facts page gives the same mass.\"}, {\"text\": \"First power-on is planned for 2025.\", \"answer\": \"outdated\", \"feedback\": \"The 2024 baseline replaced it: research operation 2034, D–T operation 2039.\"}, {\"text\": \"It is ten times hotter than the Sun's core.\", \"answer\": \"needs context\", \"feedback\": \"True for the temperature, but the Sun's core is far denser and its pressure far higher.\"}, {\"text\": \"The fuel comes from water.\", \"answer\": \"needs context\", \"feedback\": \"Deuterium does; tritium must be bred from lithium.\"}, {\"text\": \"About 104 km of roads were adapted.\", \"answer\": \"correct today\", \"feedback\": \"The ITER Itinerary is about 104 km long.\"}, {\"text\": \"35 nations work on ITER.\", \"answer\": \"outdated\", \"feedback\": \"This was ITER's long-used count. Since the UK left, it is 34: 27 EU states, Switzerland and six other Members.\"}, {\"text\": \"The goal is net energy.\", \"answer\": \"needs context\", \"feedback\": \"Which energy? ITER aims at a plasma gain $Q = 10$ and makes no electricity.\"}, {\"text\": \"The project costs 22 billion dollars.\", \"answer\": \"needs context\", \"feedback\": \"Estimates differ with what is counted, and costs rose after 2022.\"}], \"done\": \"Well sorted. Most claims are fine; the date and the count of nations are outdated, and several need more precise wording. The table below gives the evidence.\"}</script></div>"
+  },
+  {
+   "id": "sponsor",
+   "stage": "tutki",
+   "type": "choice",
+   "title": "What does a paid promotion change?",
+   "prompt": "The video says it contains a paid promotion. What is the best way to deal with this as a viewer?",
+   "choices": [
+    {
+     "text": "Notice the sponsor's topics and check facts elsewhere.",
+     "correct": true,
+     "feedback": "Right. A sponsor rarely changes a fact like 23,000 tonnes, but it can decide which topics get time. Keep watching critically and check claims in primary sources."
+    },
+    {
+     "text": "Ignore the whole video, because sponsored content is always false.",
+     "feedback": "Many claims in this video agree with ITER's own facts. A sponsor is a reason to read carefully, not to reject everything."
+    },
+    {
+     "text": "Trust it more, because a company checked it.",
+     "feedback": "A sponsor pays for visibility; it does not check the science. The facts still need checking in independent or primary sources."
+    },
+    {
+     "text": "Nothing: sponsors never affect what a video shows.",
+     "feedback": "A sponsor can affect which topics get time, here the contracts. That does not make the facts wrong, but it is worth noticing."
+    }
    ]
   },
   {
@@ -217,39 +250,6 @@
    "predictions": [
     "pred-date",
     "pred-focus"
-   ]
-  },
-  {
-   "id": "sort-claims",
-   "stage": "sovella",
-   "type": "text",
-   "title": "Source evaluation: sort the claims",
-   "text": "<div class=\"fx\" data-fx=\"match\" id=\"fx-iv-claims\"><script type=\"application/json\">{\"prompt\": \"Source evaluation: sort the claims from the video (2022). Use the table above.\", \"options\": [\"correct today\", \"outdated\", \"needs context\"], \"items\": [{\"text\": \"ITER weighs 23,000 tonnes.\", \"answer\": \"correct today\", \"feedback\": \"ITER's facts page gives the same mass.\"}, {\"text\": \"First power-on is planned for 2025.\", \"answer\": \"outdated\", \"feedback\": \"The 2024 baseline replaced it: research operation 2034, D–T operation 2039.\"}, {\"text\": \"It is ten times hotter than the Sun's core.\", \"answer\": \"needs context\", \"feedback\": \"True for the temperature, but the Sun's core is far denser and its pressure far higher.\"}, {\"text\": \"The fuel comes from water.\", \"answer\": \"needs context\", \"feedback\": \"Deuterium does; tritium must be bred from lithium.\"}, {\"text\": \"About 104 km of roads were adapted.\", \"answer\": \"correct today\", \"feedback\": \"The ITER Itinerary is about 104 km long.\"}, {\"text\": \"The goal is net energy.\", \"answer\": \"needs context\", \"feedback\": \"Which energy? ITER aims at a plasma gain Q = 10 and makes no electricity.\"}, {\"text\": \"The project costs 22 billion dollars.\", \"answer\": \"needs context\", \"feedback\": \"Estimates differ with what is counted, and costs rose after 2022.\"}], \"done\": \"Well sorted. Most claims are fine; the date is outdated, and several need more precise wording.\"}</script></div>"
-  },
-  {
-   "id": "sponsor",
-   "stage": "sovella",
-   "type": "choice",
-   "title": "What does a paid promotion change?",
-   "prompt": "The video says it contains a paid promotion. What is the best way to deal with this as a viewer?",
-   "choices": [
-    {
-     "text": "Notice the sponsor's topics and check facts elsewhere.",
-     "correct": true,
-     "feedback": "Right. A sponsor rarely changes a fact like 23,000 tonnes, but it can decide which topics get time. Keep watching critically and check claims in primary sources."
-    },
-    {
-     "text": "Ignore the whole video, because sponsored content is always false.",
-     "feedback": "Many claims in this video agree with ITER's own facts. A sponsor is a reason to read carefully, not to reject everything."
-    },
-    {
-     "text": "Trust it more, because a company checked it.",
-     "feedback": "A sponsor pays for visibility; it does not check the science. The facts still need checking in independent or primary sources."
-    },
-    {
-     "text": "Nothing: sponsors never affect what a video shows.",
-     "feedback": "A sponsor can affect which topics get time, here the contracts. That does not make the facts wrong, but it is worth noticing."
-    }
    ]
   },
   {
@@ -322,20 +322,20 @@
    "prompt": "The video says first power-on is planned for 2025. How should you report this in November 2026?",
    "choices": [
     {
-     "text": "\"The 2022 plan said 2025; the 2024 plan says 2034.\"",
+     "text": "\"The 2016 baseline said 2025; the 2024 one says 2034.\"",
      "correct": true,
-     "feedback": "Right. Give each date with the plan it comes from: the 2025 date was replaced by the 2024 baseline (research operation 2034, D–T 2039)."
+     "feedback": "Right. Give each date with the plan it comes from: the plan valid in 2022 was the 2016 baseline. Its 2025 date was replaced by the 2024 baseline (research operation 2034, D–T 2039)."
     },
     {
-     "text": "\"ITER made its first plasma in 2025, as planned.\"",
+     "text": "\"ITER made its first plasma in 2025, as it had planned.\"",
      "feedback": "That did not happen. The 2024 baseline replaced the 2025 first plasma with research operation in 2034."
     },
     {
-     "text": "\"The video lied about the date of the first plasma.\"",
+     "text": "\"The video lied about the date of ITER's first plasma.\"",
      "feedback": "The video correctly reported the plan of April 2022. The plan changed later; that makes the date outdated, not a lie."
     },
     {
-     "text": "\"ITER no longer has any schedule at all.\"",
+     "text": "\"ITER has had no schedule at all since the year 2024.\"",
      "feedback": "ITER has a new baseline from July 2024: research operation in 2034, D–D in 2035, D–T in 2039."
     }
    ]

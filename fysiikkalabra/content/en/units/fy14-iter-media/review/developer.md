@@ -20,3 +20,12 @@ Unit fy14-iter-media, "ITER: promise, progress and reality" (FY14 chapter 7, ord
 2. The course brief links Yle "https://yle.fi/a/20-153568" for the ITER media task, but that page is an Yle Oppiminen French lesson, *Osa 4: Ravintolat, kahvilat, baarit* (2012, updated 2016), about restaurants and cafés. It is not about ITER. The media unit uses two verified Yle ITER articles instead (2020 and 2005) and says so in teacher.md. Proposal: offer the café page to the developer of `fy14-fr-cafe`.
 3. `scripts/test_inquiry.py` / `check_choices.py` do not cover units (known); I tested predictions, reveals, model answers, choices, numeric and components with my own Playwright script over HTTP.
 4. `docs/FY14_PLAN.md` says the B1M video's spoken content could not be read. The channel's own page (theb1m.com/video/inside-iter-worlds-largest-nuclear-fusion-reactor) publishes the narration as an article; the plan could mention it as the verification source.
+
+## Fixes after review (content hash ce7528c836feb20f)
+- Blocking (pedagogy 1): pred-2018 replaced by pred-ages, "Which kind of statement in a careful 2018 article is most likely to be out of date by 2026?" (plans and forecasts / results / opinions / none), with a justification; revealed by the table *ITER then and now*. Back-to-predictions updated.
+- Tungsten wall: "decided 2023, part of the 2024 baseline".
+- Table shortened (topics "first plasma", "D–T operation", "wall facing the plasma"; construction cell "6 of 9 vessel modules in the pit (July 2026)"); the solenoid fact moved to a sentence under the table.
+- notes model shows the format (two headings filled in), not full notes; claims prompt tells HS readers to sort the Yle statements too; writing task starts "Start in class and finish at home"; title "Writing task: “ITER: promise, progress and reality”"; check-explain starter uses `<em>` (no literal asterisks); LaTeX for −269 °C and 150 million °C in model texts and the sort; `$\text{D–T}$` in running text.
+- teacher.md: Yle 2020's "puhdistuskasetit" noted as a loose description that students can check.
+- check-3 options rebalanced (correct no longer the longest).
+- Checks as for the project unit: all OK.

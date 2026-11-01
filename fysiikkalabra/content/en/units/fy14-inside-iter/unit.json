@@ -17,7 +17,8 @@
   {"title": "ITER Organization: External heating systems", "url": "https://www.iter.org/machine/supporting-systems/external-heating-systems", "checked": "2026-11-01"},
   {"title": "ITER Organization: Tritium Plant Summit (closed fuel loop, burn fraction about 1 %, detritiation)", "url": "https://iter.org/node/15779", "checked": "2026-11-01"},
   {"title": "ITER Organization: Tokamak Building (the concrete bioshield)", "url": "https://www.iter.org/node/20365", "checked": "2026-11-01"},
-  {"title": "ITER (Wikipedia): plant draws over 300 MW of electricity; 15 MA plasma current; ITER produces no electricity", "url": "https://en.wikipedia.org/wiki/ITER", "checked": "2026-11-01"},
+  {"title": "ITER (Wikipedia): 15 MA plasma current; ITER produces no electricity", "url": "https://en.wikipedia.org/wiki/ITER", "checked": "2026-11-01"},
+  {"title": "ITER Organization: Power supply (110 MW to 620 MW in 30-second peaks; cooling water and cryogenics about 80 %)", "url": "https://www.iter.org/node/2751", "checked": "2026-11-01"},
   {"title": "Tritium (Wikipedia): half-life 12.32 a, beta decay, production in CANDU reactors, Li-6 breeding releases 4.8 MeV", "url": "https://en.wikipedia.org/wiki/Tritium", "checked": "2026-11-01"},
   {"title": "NIST: Atomic Weights and Isotopic Compositions (relative atomic masses of H-2, H-3, He-4, Li-6)", "url": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl", "checked": "2026-11-01", "note": "D–T: $17.59\\ \\text{MeV}$, of which $3.54\\ \\text{MeV}$ to helium and $14.05\\ \\text{MeV}$ to the neutron; $^{6}\\text{Li} + \\text{n}$: $4.78\\ \\text{MeV}$, computed from the atomic masses."}
  ]

@@ -61,7 +61,7 @@ ITER is a **tokamak**. Its plasma, about $830\ \text{m}^3$ of deuterium and trit
 
 A fusion plasma loses energy all the time: hot particles escape across the magnetic field and the plasma radiates. To keep it hot, we heat it from outside. The **fusion gain** $Q$ compares the fusion power produced in the plasma with this heating power.
 
-At $Q = 1$, called **scientific breakeven**, the plasma produces as much fusion power as it receives. No magnetic fusion experiment has reached it yet with real D–T fuel: JET's record from 1997 was $16\ \text{MW}$ of fusion power from $24\ \text{MW}$ of heating, $Q \approx 0.67$. ITER's goal is $Q = 10$: $500\ \text{MW}$ of fusion power from $50\ \text{MW}$ of heating, in pulses of $400\text{–}600\ \text{s}$. In D–T fusion, $3.5\ \text{MeV}$ of the $17.6\ \text{MeV}$ goes to the helium nucleus, which is charged and stays in the plasma. At $Q = 10$ these helium nuclei heat the plasma about twice as much as the external heating does: a **burning plasma**.
+At $Q = 1$, called **scientific breakeven**, the plasma produces as much fusion power as it receives. No magnetic fusion experiment has reached it yet with real $\text{D–T}$ fuel: JET's record from 1997 was $16\ \text{MW}$ of fusion power from $24\ \text{MW}$ of heating, $Q \approx 0.67$. ITER's goal is $Q = 10$: $500\ \text{MW}$ of fusion power from $50\ \text{MW}$ of heating, in pulses of $400\text{–}600\ \text{s}$. In D–T fusion, $3.5\ \text{MeV}$ of the $17.6\ \text{MeV}$ goes to the helium nucleus, which is charged and stays in the plasma. At $Q = 10$ these helium nuclei heat the plasma about twice as much as the external heating does: a **burning plasma**.
 
 ## Formula: Fusion gain
 
@@ -71,38 +71,38 @@ Q = \frac{P_\text{fusion}}{P_\text{heating}}
 
 Here $P_\text{fusion}$ is the fusion power produced in the plasma and $P_\text{heating}$ is the heating power that reaches the plasma from outside. Both are in watts, so $Q$ has no unit.
 
-<svg data-fig="power" viewBox="0 0 600 440" role="img" aria-label="Bar chart to scale, power in megawatts. First bar: 50 MW of heating power delivered into the plasma. Second bar: 500 MW of fusion power, divided into about 400 MW carried by neutrons, which leave the plasma and heat the blanket, and about 100 MW carried by helium nuclei, which stay in the plasma and heat it. Third bar: the electrical power that the whole ITER plant draws from the grid, over 300 MW, drawn with a dashed top because the value varies. A note says that ITER produces no electricity." style="max-width:100%;font-size:24px">
-  <line x1="40" y1="360" x2="580" y2="360" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <line x1="40" y1="296" x2="580" y2="296" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <foreignObject x="-8" y="283" width="42" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:22px">$100$</div></foreignObject>
-  <line x1="40" y1="232" x2="580" y2="232" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <foreignObject x="-8" y="219" width="42" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:22px">$200$</div></foreignObject>
-  <line x1="40" y1="168" x2="580" y2="168" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <foreignObject x="-8" y="155" width="42" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:22px">$300$</div></foreignObject>
-  <line x1="40" y1="104" x2="580" y2="104" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <foreignObject x="-8" y="91" width="42" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:22px">$400$</div></foreignObject>
-  <line x1="40" y1="40" x2="580" y2="40" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <foreignObject x="-8" y="27" width="42" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:22px">$500$</div></foreignObject>
-  <foreignObject x="15" y="347" width="19" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:22px">$0$</div></foreignObject>
-  <foreignObject x="44" y="3" width="69" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$P\ (\text{MW})$</div></foreignObject>
-  <rect x="70" y="328" width="90" height="32" fill="#e8590c" stroke="#1f2933" stroke-width="2"/>
-  <foreignObject x="98.5" y="293.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$50$</div></foreignObject>
-  <foreignObject x="61" y="369.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$P_\text{heating}$</div></foreignObject>
-  <rect x="230" y="40" width="120" height="63.5" fill="#c92a2a" stroke="#1f2933" stroke-width="2"/>
-  <rect x="230" y="103.5" width="120" height="256.5" fill="#1971c2" stroke="#1f2933" stroke-width="2"/>
-  <foreignObject x="257.5" y="59" width="65" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:22px;color:#ffffff">$\alpha\text{: }100$</div></foreignObject>
-  <foreignObject x="255" y="217.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#ffffff">$\text{n: }400$</div></foreignObject>
-  <foreignObject x="242.5" y="369.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$P_\text{fusion}$</div></foreignObject>
-  <rect x="420" y="168" width="120" height="192" fill="#b2f2bb" stroke="#1f2933" stroke-width="2"/>
-  <path d="M420,168 L420,142.5 M540,168 L540,142.5" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round" stroke-dasharray="6 5"/>
-  <foreignObject x="451" y="110" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$> 300$</div></foreignObject>
-  <foreignObject x="451" y="369.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{grid}$</div></foreignObject>
-  <foreignObject x="401.5" y="399" width="157" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:22px;color:#6b7480">$\text{electricity in}$</div></foreignObject>
-  <foreignObject x="54" y="399" width="122" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:22px;color:#6b7480">$\text{into plasma}$</div></foreignObject>
-  <foreignObject x="217.5" y="399" width="145" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:22px;color:#6b7480">$\text{made in plasma}$</div></foreignObject>
+<svg data-fig="power" viewBox="0 0 560 500" role="img" aria-label="Bar chart to scale, power in megawatts. First bar: 50 MW of heating power delivered into the plasma. Second bar: 500 MW of fusion power made in the plasma, divided into about 400 MW carried by neutrons, which leave the plasma and heat the blanket, and about 100 MW carried by helium nuclei, which stay in the plasma and heat it. Third bar: the electricity that the whole ITER plant draws from the grid, at least 110 MW, drawn solid, and up to 620 MW in peaks of 30 seconds, drawn as a pale range with a dashed outline." style="max-width:100%;font-size:26px">
+  <line x1="64" y1="400" x2="545" y2="400" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <line x1="64" y1="298.5" x2="545" y2="298.5" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="7" y="283" width="49" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:26px">$200$</div></foreignObject>
+  <line x1="64" y1="197" x2="545" y2="197" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="7" y="181.5" width="49" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:26px">$400$</div></foreignObject>
+  <line x1="64" y1="95.5" x2="545" y2="95.5" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="7" y="80" width="49" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:26px">$600$</div></foreignObject>
+  <foreignObject x="34" y="384.5" width="22" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:26px">$0$</div></foreignObject>
+  <foreignObject x="8" y="10.5" width="80" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:26px">$P\ (\text{MW})$</div></foreignObject>
+  <rect x="80" y="374.5" width="90" height="25.5" fill="#e8590c" stroke="#1f2933" stroke-width="2"/>
+  <foreignObject x="107.5" y="337" width="35" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:26px">$50$</div></foreignObject>
+  <rect x="215" y="146" width="130" height="50.5" fill="#c92a2a" stroke="#1f2933" stroke-width="2"/>
+  <rect x="215" y="196.5" width="130" height="203.5" fill="#1971c2" stroke="#1f2933" stroke-width="2"/>
+  <foreignObject x="242" y="156" width="76" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:26px;color:#ffffff">$\alpha\text{: }100$</div></foreignObject>
+  <foreignObject x="242" y="283" width="76" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:26px;color:#ffffff">$\text{n: }400$</div></foreignObject>
+  <foreignObject x="255.5" y="108.5" width="49" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:26px">$500$</div></foreignObject>
+  <rect x="395" y="85" width="130" height="259" fill="#b2f2bb" fill-opacity="0.45"/>
+  <path d="M395,344 L395,85 L525,85 L525,344" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round" stroke-dasharray="6 5"/>
+  <rect x="395" y="344" width="130" height="56" fill="#b2f2bb" stroke="#1f2933" stroke-width="2"/>
+  <foreignObject x="435.5" y="356.5" width="49" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:26px">$110$</div></foreignObject>
+  <foreignObject x="435.5" y="47.5" width="49" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:26px">$620$</div></foreignObject>
+  <foreignObject x="422" y="199" width="76" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:26px">$\text{peaks}$</div></foreignObject>
+  <foreignObject x="73.5" y="410.5" width="103" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:26px">$\text{heating}$</div></foreignObject>
+  <foreignObject x="53.5" y="444.5" width="143" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:26px">$\text{into plasma}$</div></foreignObject>
+  <foreignObject x="235.5" y="410.5" width="89" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:26px">$\text{fusion}$</div></foreignObject>
+  <foreignObject x="222" y="444.5" width="116" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:26px">$\text{in plasma}$</div></foreignObject>
+  <foreignObject x="429" y="410.5" width="62" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:26px">$\text{grid}$</div></foreignObject>
+  <foreignObject x="368" y="444.5" width="184" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:26px">$\text{electricity in}$</div></foreignObject>
 </svg>
 
-**Gain is not electricity.** $Q$ describes the plasma only. ITER has no turbines and will not produce any electricity. To deliver $50\ \text{MW}$ of heating, the plant draws over $300\ \text{MW}$ of electricity from the grid, and its magnets, cryogenics and pumps need power too. A power plant would turn the heat into electricity with steam turbines, typically about one third of it. Even then, $500\ \text{MW}$ of heat would give only about $170\ \text{MW}$ of electricity: less than ITER draws.
+**Gain is not electricity.** $Q$ describes the plasma only. ITER has no turbines and will not produce any electricity. During a pulse the whole plant (heating systems, cooling water, cryogenics, magnets) draws far more electricity than the $50\ \text{MW}$ that reaches the plasma. According to ITER, it needs $110\ \text{MW}$ at the least and up to $620\ \text{MW}$ in peaks of $30\ \text{s}$; the cooling water and the cryogenic systems take about $80\ \%$ of it. A power plant would turn the heat into electricity with steam turbines, typically about one third of it. Even then, $500\ \text{MW}$ of heat would give only about $170\ \text{MW}$ of electricity: far less than ITER's peak demand of $620\ \text{MW}$.
 
 **Scientific gain is not commercial viability.** A power plant must also produce more electricity than the whole plant uses, run for months instead of minutes, breed its own tritium, survive years of neutron damage and sell its electricity at a price people will pay. ITER is built to test the physics and the technology for that, not to show that fusion electricity is cheap.
 
@@ -120,7 +120,7 @@ ITER's goal is a pulse with $P_\text{heating} = 50\ \text{MW}$ and $P_\text{fusi
 
 <!-- vaihe -->
 
-**Given:** heating power $P_\text{heating} = 50\ \text{MW}$, fusion power $P_\text{fusion} = 500\ \text{MW}$. In one D–T reaction, $E_\text{total} = 17.6\ \text{MeV}$ is released and the helium nucleus carries $E_\alpha = 3.5\ \text{MeV}$. **Find:** $Q$ and the helium power $P_\alpha$.
+**Given:** heating power ${P_\text{heating} = 50\ \text{MW}}$, fusion power ${P_\text{fusion} = 500\ \text{MW}}$. In one $\text{D–T}$ reaction, ${E_\text{total} = 17.6\ \text{MeV}}$ is released and the helium nucleus carries ${E_\alpha = 3.5\ \text{MeV}}$. **Find:** $Q$ and the helium power $P_\alpha$.
 
 <!-- vaihe -->
 
@@ -158,7 +158,7 @@ P_\alpha &= \frac{3.5\ \text{MeV}}{17.6\ \text{MeV}} \cdot 500\ \text{MW} \\
 
 <!-- vaihe -->
 
-**Reasonableness:** The helium nucleus is about four times heavier than the neutron, so by conservation of momentum it gets about one fifth of the energy: one fifth of $500\ \text{MW}$ is $100\ \text{MW}$. The other $401\ \text{MW}$ leaves with the neutrons and heats the blanket. $Q = 10$ is far above JET's $0.67$, which is why ITER is so much larger.
+**Reasonableness:** The helium nucleus is about four times heavier than the neutron, so by conservation of momentum it gets about one fifth of the energy: one fifth of $500\ \text{MW}$ is $100\ \text{MW}$. The other, about $400\ \text{MW}$, leaves with the neutrons and heats the blanket. $Q = 10$ is far above JET's $0.67$, which is why ITER is so much larger.
 
 ## Common misconception
 

@@ -4,10 +4,10 @@
  "learn": [
   "name ITER's main components and explain what each of them does.",
   "calculate the fusion gain $Q$ and the power carried by the helium nuclei.",
-  "explain why scientific gain is not electricity or commercial viability."
+  "compare the fusion gain $Q$ with the electricity a power plant would produce, and explain what else commercial viability needs."
  ],
  "prior": [
-  "D–T fusion releases $17.6\\ \\text{MeV}$: $3.5\\ \\text{MeV}$ to the helium nucleus and $14.1\\ \\text{MeV}$ to the neutron (chapter *Fusion reactions: from the Sun to deuterium and tritium*)",
+  "$\\text{D–T}$ fusion releases $17.6\\ \\text{MeV}$: $3.5\\ \\text{MeV}$ to the helium nucleus and $14.1\\ \\text{MeV}$ to the neutron (chapter *Fusion reactions: from the Sun to deuterium and tritium*)",
   "A magnetic field exerts a force only on moving charges (chapter *Charged particles and magnetic confinement*)",
   "Why ITER is built by seven Members (chapter *ITER: why, where and who*)"
  ],
@@ -24,7 +24,7 @@
    "stage": "herata",
    "type": "choice",
    "title": "Review: the D–T neutron",
-   "prompt": "In D–T fusion, $^{2}_{1}\\text{H} + {}^{3}_{1}\\text{H} \\to {}^{4}_{2}\\text{He}\\ (3.5\\ \\text{MeV}) + \\text{n}\\ (14.1\\ \\text{MeV})$. Why can the magnetic field of a tokamak hold the helium nucleus in the plasma but not the neutron?",
+   "prompt": "In $\\text{D–T}$ fusion, $^{2}_{1}\\text{H} + {}^{3}_{1}\\text{H} \\to {}^{4}_{2}\\text{He}\\ (3.5\\ \\text{MeV}) + \\text{n}\\ (14.1\\ \\text{MeV})$. Why can the magnetic field of a tokamak hold the helium nucleus in the plasma but not the neutron?",
    "choices": [
     {
      "text": "The neutron has no charge, so no magnetic force acts on it.",
@@ -57,20 +57,20 @@
    },
    "choices": [
     {
-     "text": "The divertor at the bottom of the vessel.",
+     "text": "The divertor, targets at the bottom of the vessel.",
      "correct": true,
      "feedback": "Right. Heat and particles flow out along the edge of the plasma onto a narrow strip of the divertor targets: about $10\\text{–}20\\ \\text{MW}$ on each square metre, the highest in the machine. The targets are made of tungsten and cooled with water."
     },
     {
-     "text": "The central solenoid in the middle.",
+     "text": "The central solenoid, the magnet in the middle of the ring.",
      "feedback": "The central solenoid is a superconducting magnet at about $4\\ \\text{K}$, shielded from the plasma. The largest heat flow hits the divertor targets, where the edge of the plasma touches the wall."
     },
     {
-     "text": "The toroidal field coils around the vessel.",
+     "text": "The toroidal field coils, the magnets around the vessel.",
      "feedback": "These coils must be kept extremely cold, so the blanket, the vessel and the thermal shield protect them. The highest heat flow is on the divertor targets."
     },
     {
-     "text": "The cryostat around the whole machine.",
+     "text": "The cryostat, the outer vacuum tank around everything.",
      "feedback": "The cryostat is the outermost vacuum chamber, far from the plasma and near room temperature. The highest heat flow is on the divertor targets."
     }
    ]
@@ -80,28 +80,28 @@
    "stage": "ennusta",
    "type": "choice",
    "title": "Prediction 2: power out",
-   "prompt": "ITER is designed to make $500\\ \\text{MW}$ of fusion power from $50\\ \\text{MW}$ of heating. How much electricity do you think ITER will send to the grid?",
+   "prompt": "ITER is designed to make $500\\ \\text{MW}$ of fusion power from $50\\ \\text{MW}$ of heating. Suppose ITER had turbines that turn one third of its $500\\ \\text{MW}$ of fusion heat into electricity. Would it send net electricity to the grid?",
    "justify": true,
    "reveal": {
     "after": "theory-gain"
    },
    "choices": [
     {
-     "text": "About $500\\ \\text{MW}$: all of its fusion power goes to the grid.",
-     "feedback": "Fusion power is heat in the plasma, not electricity. ITER has no turbines and sends no electricity to the grid; it draws over $300\\ \\text{MW}$ from it."
+     "text": "Yes, about $450\\ \\text{MW}$: the fusion power minus the heating.",
+     "feedback": "Fusion power is heat. Turbines turn only about a third of it into electricity, about $170\\ \\text{MW}$. And the plant itself draws $110$ to $620\\ \\text{MW}$, so nothing like $450\\ \\text{MW}$ would be left for the grid."
     },
     {
-     "text": "About $450\\ \\text{MW}$, the fusion power minus the heating.",
-     "feedback": "This treats the plasma gain as electricity. ITER has no turbines, so it sends nothing to the grid, and the whole plant draws over $300\\ \\text{MW}$."
+     "text": "Yes, about $170\\ \\text{MW}$: one third of the heat.",
+     "feedback": "Turbines would make about $170\\ \\text{MW}$, but that is not a net gain. The plant draws at least $110\\ \\text{MW}$ and up to $620\\ \\text{MW}$ in peaks during plasma operation, so it would use more than it makes."
     },
     {
-     "text": "About $170\\ \\text{MW}$, after turbines turn heat to electricity.",
-     "feedback": "A power plant could do this, but ITER has no turbines. It is an experiment: it sends no electricity to the grid and draws over $300\\ \\text{MW}$ from it."
+     "text": "About break-even: it would make about what it uses.",
+     "feedback": "$170\\ \\text{MW}$ is a little more than ITER's minimum demand of $110\\ \\text{MW}$, but during plasma operation the plant draws up to $620\\ \\text{MW}$, and between pulses turbines would make nothing. Over a day it would use more than it makes."
     },
     {
-     "text": "None: it has no turbines and uses power from the grid.",
+     "text": "No: the plant would still use more than it makes.",
      "correct": true,
-     "feedback": "Right. ITER is an experiment to study a burning plasma. It has no turbines, and the plant draws over $300\\ \\text{MW}$ of electricity. $Q = 10$ is a gain of the plasma, not of the power station."
+     "feedback": "Right. Turbines would give about $170\\ \\text{MW}$, and only during a pulse. The plant draws at least $110\\ \\text{MW}$ and up to $620\\ \\text{MW}$ in peaks, mostly for cooling water and cryogenics. $Q = 10$ is a gain of the plasma; a power plant needs a much higher gain and a plant that uses little of its own power."
     }
    ]
   },
@@ -110,7 +110,7 @@
    "stage": "tutki",
    "type": "interpret",
    "title": "Investigate: explore the machine",
-   "text": "Explore the cross-section of ITER. Select every part, in the drawing or in the list below it. For each part, note in your own words: what it does, one number, and why it is hard to build. Work in pairs: one of you reads the panel aloud, the other takes notes, then swap.\n\n<div class=\"fx\" data-fx=\"iter\" id=\"fx-ii-explore\" data-src=\"units/fy14/data/iter.json\"><script type=\"application/json\">{\"mode\": \"explore\", \"about\": false}</script></div>",
+   "text": "Explore the cross-section of ITER. Select every part, in the drawing or in the list of parts below the panel. For each part, note in your own words: what it does, one number, and why it is hard to build. Work in pairs: one of you reads the panel aloud, the other takes notes, then swap.\n\n<div class=\"fx\" data-fx=\"iter\" id=\"fx-ii-explore\" data-src=\"units/fy14/data/iter.json\"><script type=\"application/json\">{\"mode\": \"explore\", \"about\": false}</script></div>",
    "question": {
     "type": "explain",
     "prompt": "From your notes, explain to your partner, then write four or five sentences: how do the three kinds of magnets work together to hold the plasma, and why must they be so cold?",
@@ -118,7 +118,7 @@
     "criteria": [
      "The answer names the toroidal field coils, the poloidal field coils and the central solenoid, each with its job.",
      "It says that the central solenoid drives the plasma current like a transformer.",
-     "It explains that the coils are superconducting only at a very low temperature (about 4 K).",
+     "It explains that the coils are superconducting only at a very low temperature (about $4\\ \\text{K}$).",
      "It uses at least one number from the explorer."
     ]
    }
@@ -159,11 +159,11 @@
    "type": "explain",
    "title": "Pair discussion: gain and electricity",
    "prompt": "Discuss with a partner, using the word bank and the sentence starters, then each write three or four sentences: what is the difference between the gain of the plasma and the electricity a power plant produces? Use the bar chart.",
-   "model": "The gain $Q$ compares the fusion power made in the plasma with the heating power that reaches the plasma: for ITER $500\\ \\text{MW} : 50\\ \\text{MW} = 10$. This does not mean that ITER produces electricity, because ITER has no turbines and the plant draws over $300\\ \\text{MW}$ from the grid. A power plant would turn only about a third of its heat into electricity, so it needs a much higher gain and a plant that uses little of its own power.",
+   "model": "The gain $Q$ compares the fusion power made in the plasma with the heating power that reaches the plasma: for ITER $500\\ \\text{MW} : 50\\ \\text{MW} = 10$. This does not mean that ITER produces electricity, because ITER has no turbines and the plant draws $110$ to $620\\ \\text{MW}$ from the grid, far more than the $50\\ \\text{MW}$ of heating. A power plant would turn only about a third of its heat into electricity, so it needs a much higher gain and a plant that uses little of its own power.",
    "criteria": [
     "The answer defines $Q$ as fusion power divided by heating power into the plasma.",
-    "It says that ITER produces no electricity and draws over 300 MW from the grid.",
-    "It explains that a power plant loses energy when it turns heat into electricity, so it needs more than $Q > 1$.",
+    "It says that ITER produces no electricity and that the plant draws far more than $50\\ \\text{MW}$ from the grid ($110\\text{–}620\\ \\text{MW}$).",
+    "It explains that a power plant loses energy when it turns heat into electricity, so it needs a $Q$ far above $1$.",
     "It uses at least three words from the word bank correctly."
    ]
   },
@@ -199,7 +199,7 @@
    "stage": "sovella",
    "type": "numeric",
    "title": "How much tritium burns in one pulse?",
-   "prompt": "During one planned pulse ITER produces $500\\ \\text{MW}$ of fusion power for $400\\ \\text{s}$. Each D–T reaction releases $17.6\\ \\text{MeV}$ and uses one tritium atom, mass $3.016\\ \\text{u}$. How many grams of tritium fuse during the pulse? ($1\\ \\text{MeV} = 1.602 \\cdot 10^{-13}\\ \\text{J}$, $1\\ \\text{u} = 1.661 \\cdot 10^{-27}\\ \\text{kg}$)",
+   "prompt": "During one planned pulse ITER produces $500\\ \\text{MW}$ of fusion power for $400\\ \\text{s}$. Each $\\text{D–T}$ reaction releases $17.6\\ \\text{MeV}$ and uses one tritium atom, mass $3.016\\ \\text{u}$. How many grams of tritium fuse during the pulse? ($1\\ \\text{MeV} = 1.602 \\cdot 10^{-13}\\ \\text{J}$, $1\\ \\text{u} = 1.661 \\cdot 10^{-27}\\ \\text{kg}$)",
    "answer": 0.355,
    "unit": "g",
    "tolerance": 0.03,
@@ -222,7 +222,7 @@
      "feedback": "Check the unit: $3.55 \\cdot 10^{-4}\\ \\text{kg}$ is $0.355\\ \\text{g}$ (or $355\\ \\text{mg}$)."
     }
    ],
-   "solution": "**Given:** fusion power $P = 500\\ \\text{MW} = 5.00 \\cdot 10^{8}\\ \\text{W}$, pulse length $t = 400\\ \\text{s}$, energy of one D–T reaction $E = 17.6\\ \\text{MeV}$, mass of a tritium atom $m_\\text{T} = 3.016\\ \\text{u}$, $1\\ \\text{u} = 1.661 \\cdot 10^{-27}\\ \\text{kg}$, $1\\ \\text{MeV} = 1.602 \\cdot 10^{-13}\\ \\text{J}$\n\n**Find:** the mass $m$ of tritium that fuses during the pulse\n\n**Principle:** Each reaction uses one tritium nucleus and releases $17.6\\ \\text{MeV}$. The number of reactions is the fusion energy of the pulse divided by the energy of one reaction, and the mass is that number times the mass of one atom.\n\n**Formula:**\n\n$$N = \\frac{Pt}{E}, \\qquad m = N m_\\text{T} = \\frac{Pt}{E}\\,m_\\text{T}$$\n\n**Unit conversions:** $E = 17.6\\ \\text{MeV} = 17.6 \\cdot 1.602 \\cdot 10^{-13}\\ \\text{J} = 2.820 \\cdot 10^{-12}\\ \\text{J}$ and $m_\\text{T} = 3.016 \\cdot 1.661 \\cdot 10^{-27}\\ \\text{kg} = 5.010 \\cdot 10^{-27}\\ \\text{kg}$.\n\n**Substitution:**\n\n$$\\begin{aligned} N &= \\frac{5.00 \\cdot 10^{8}\\ \\text{W} \\cdot 400\\ \\text{s}}{2.820 \\cdot 10^{-12}\\ \\text{J}} \\\\ &= 7.093 \\cdot 10^{22} \\\\[6pt] m &= 7.093 \\cdot 10^{22} \\cdot 5.010 \\cdot 10^{-27}\\ \\text{kg} \\\\ &= 3.554 \\cdot 10^{-4}\\ \\text{kg} \\end{aligned}$$\n\n**Answer:** $m \\approx 0.36\\ \\text{g}$ of tritium in one $400$-second pulse, two significant figures, because the fusion power and the pulse length are planned, rounded values.\n\n**Reasonableness:** One gram of tritium has about $2 \\cdot 10^{23}$ atoms, and the pulse needs about $7 \\cdot 10^{22}$ reactions, about a third of that. The pulse releases $200\\ \\text{GJ}$ of fusion energy from less than half a gram of tritium (and about a quarter of a gram of deuterium): the huge energy density that makes fusion attractive. Because only about one per cent of the fuel burns on one pass, far more tritium is pumped through the plasma and recycled."
+   "solution": "**Given:** fusion power $P = 500\\ \\text{MW} = 5.00 \\cdot 10^{8}\\ \\text{W}$, pulse length $t = 400\\ \\text{s}$, energy of one $\\text{D–T}$ reaction $E = 17.6\\ \\text{MeV}$, mass of a tritium atom $m_\\text{T} = 3.016\\ \\text{u}$, $1\\ \\text{u} = 1.661 \\cdot 10^{-27}\\ \\text{kg}$, $1\\ \\text{MeV} = 1.602 \\cdot 10^{-13}\\ \\text{J}$\n\n**Find:** the mass $m$ of tritium that fuses during the pulse\n\n**Principle:** Each reaction uses one tritium nucleus and releases $17.6\\ \\text{MeV}$. The number of reactions is the fusion energy of the pulse divided by the energy of one reaction, and the mass is that number times the mass of one atom.\n\n**Formula:**\n\n$$N = \\frac{Pt}{E}, \\qquad m = N m_\\text{T} = \\frac{Pt}{E}\\,m_\\text{T}$$\n\n**Unit conversions:** $E = 17.6\\ \\text{MeV} = 17.6 \\cdot 1.602 \\cdot 10^{-13}\\ \\text{J} = 2.820 \\cdot 10^{-12}\\ \\text{J}$ and $m_\\text{T} = 3.016 \\cdot 1.661 \\cdot 10^{-27}\\ \\text{kg} = 5.010 \\cdot 10^{-27}\\ \\text{kg}$.\n\n**Substitution:**\n\n$$\\begin{aligned} N &= \\frac{5.00 \\cdot 10^{8}\\ \\text{W} \\cdot 400\\ \\text{s}}{2.820 \\cdot 10^{-12}\\ \\text{J}} \\\\ &= 7.093 \\cdot 10^{22} \\\\[6pt] m &= 7.093 \\cdot 10^{22} \\cdot 5.010 \\cdot 10^{-27}\\ \\text{kg} \\\\ &= 3.554 \\cdot 10^{-4}\\ \\text{kg} \\end{aligned}$$\n\n**Answer:** $m \\approx 0.36\\ \\text{g}$. This is the tritium burned in one $400$-second pulse; two significant figures, because the fusion power and the pulse length are planned, rounded values.\n\n**Reasonableness:** One gram of tritium has about $2 \\cdot 10^{23}$ atoms, and the pulse needs about $7 \\cdot 10^{22}$ reactions, about a third of that. The pulse releases $200\\ \\text{GJ}$ of fusion energy from less than half a gram of tritium (and about a quarter of a gram of deuterium): the huge energy density that makes fusion attractive. Because only about one per cent of the fuel burns on one pass, far more tritium is pumped through the plasma and recycled."
   },
   {
    "id": "find-error",
@@ -350,11 +350,11 @@
    "type": "explain",
    "title": "4. Explain and argue",
    "prompt": "Your friend says: \"ITER makes $500\\ \\text{MW}$. That is enough for a city, so why don't they connect it to the grid?\" Answer your friend in four or five sentences. Use $Q$, numbers and at least one reason why a power plant needs more than ITER can show.\n\n<div class=\"wordbank\"><h4>Word bank</h4><p>fusion power · heat · turbine · gain $Q$ · experiment · to draw power from the grid · to breed · pulse</p></div>\n\n<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>That is a good question, but …</li><li>The $500\\ \\text{MW}$ is …, not …</li><li>ITER is built to …, whereas a power plant …</li><li>Even if …, it would still …</li></ul></div>",
-   "model": "That is a good question, but the $500\\ \\text{MW}$ is fusion power, heat in the plasma, not electricity. ITER has no turbines, and to heat the plasma with $50\\ \\text{MW}$ the plant draws over $300\\ \\text{MW}$ from the grid. Even if turbines turned about a third of the heat into electricity, $500\\ \\text{MW}$ would give only about $170\\ \\text{MW}$, less than ITER uses. ITER is built to show a burning plasma with $Q = 10$ and to test the technology; a power plant must also run for months, breed its own tritium and be affordable.",
+   "model": "That is a good question, but the $500\\ \\text{MW}$ is fusion power, heat in the plasma, not electricity. ITER has no turbines, and during plasma operation the whole plant draws up to $620\\ \\text{MW}$ from the grid, far more than the $50\\ \\text{MW}$ of heating that reaches the plasma. Even if turbines turned about a third of the heat into electricity, $500\\ \\text{MW}$ would give only about $170\\ \\text{MW}$, far less than ITER's peak demand. ITER is built to show a burning plasma with $Q = 10$ and to test the technology; a power plant must also run for months, breed its own tritium and be affordable.",
    "criteria": [
-    "The answer says that 500 MW is fusion power (heat), not electricity, and that ITER has no turbines.",
-    "It uses $Q = 10$ or the numbers 500 MW and 50 MW correctly.",
-    "It mentions that the plant draws over 300 MW, or that conversion to electricity loses most of the heat.",
+    "The answer says that $500\\ \\text{MW}$ is fusion power (heat), not electricity, and that ITER has no turbines.",
+    "It uses $Q = 10$ or the numbers $500\\ \\text{MW}$ and $50\\ \\text{MW}$ correctly.",
+    "It mentions that the plant draws far more electricity than it could make (up to $620\\ \\text{MW}$), or that conversion to electricity loses most of the heat.",
     "It gives at least one more requirement for a power plant (long operation, tritium breeding, cost, materials)."
    ]
   },

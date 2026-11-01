@@ -62,7 +62,7 @@
     },
     {
      "text": "International law does not allow one country to build a fusion reactor.",
-     "feedback": "There is no such law: many countries have their own fusion machines, such as EAST in China or JT-60SA in Japan. The reason was the size, cost and risk of the next step."
+     "feedback": "There is no such law: many countries have their own fusion machines, such as EAST in China or KSTAR in Korea. The reason was the size, cost and risk of the next step."
     },
     {
      "text": "Sharing kept the secrets of fusion weapons under joint control.",
@@ -79,7 +79,7 @@
    "stage": "ennusta",
    "type": "choice",
    "title": "Prediction 2: the new plan",
-   "prompt": "In 2016, ITER planned its first plasma for 2025. In 2024 ITER made a new plan. When do you think the new plan starts the first plasma experiments?",
+   "prompt": "In 2016, ITER planned its first plasma for 2025. In 2024 ITER made a new plan. When do you think the new plan starts the first plasma experiments? Justify your choice: how large are delays in big projects you know of?",
    "justify": true,
    "reveal": {
     "after": "theory-schedule"
@@ -96,11 +96,11 @@
     {
      "text": "In 2034, nine years after the old date.",
      "correct": true,
-     "feedback": "Right. The 2024 baseline plans the start of research operation in 2034 and D–T operation in 2039. It skips the short test plasma of 2025 and starts with a more complete machine."
+     "feedback": "Right. The 2024 baseline plans the start of research operation in 2034 and $\\text{D–T}$ operation in 2039. It skips the short test plasma of 2025 and starts with a more complete machine."
     },
     {
      "text": "No new date: the project was stopped.",
-     "feedback": "ITER was not stopped. The 2024 baseline gives new dates: research operation in 2034 and D–T operation in 2039, and assembly continues."
+     "feedback": "ITER was not stopped. The 2024 baseline gives new dates: research operation in 2034 and $\\text{D–T}$ operation in 2039, and assembly continues."
     }
    ]
   },
@@ -109,7 +109,7 @@
    "stage": "tutki",
    "type": "interpret",
    "title": "Investigate 1: forty years in the timeline",
-   "text": "Explore the timeline of the era *From Geneva to ITER*. Open at least five cards that are about ITER (for example 1985, 1987, 2005, 2006, 2020, 2024, 2026). Make short notes: year, what happened, and whether it shows **cooperation**, **progress** or **a problem**.\n\n<div class=\"fx\" data-fx=\"timeline\" id=\"fx-ip-timeline\" data-src=\"units/fy14/data/timeline.json\"><script type=\"application/json\">{\"eras\": [\"cooperation\"], \"start_era\": \"cooperation\", \"intro\": \"Events from 1985 to 2026. Open the cards about ITER and read them.\"}</script></div>",
+   "text": "The timeline below shows eight events about ITER. Open and read at least five of the cards (about 10 minutes). For each, make a short note: year, what happened, and whether it shows **cooperation**, **progress** or **a problem**.\n\n<div class=\"fx\" data-fx=\"timeline\" id=\"fx-ip-timeline\" data-src=\"units/fy14/data/timeline.json\"><script type=\"application/json\">{\"eras\": [\"cooperation\"], \"start_era\": \"cooperation\", \"ids\": [\"geneva-summit-1985\", \"iter-name-1987\", \"iter-site-2005\", \"iter-agreement-2006\", \"iter-assembly-2020\", \"iter-baseline-2024\", \"iter-first-module-2025\", \"iter-two-thirds-2026\"], \"intro\": \"Eight events about ITER, from 1985 to 2026. Each card is closed: click its title, or its mark on the strip, to open it.\"}</script></div>",
    "question": {
     "type": "explain",
     "prompt": "From your notes, name two events that show cooperation or progress and two that show problems or delays. Write one sentence for each, with its year.",
@@ -134,7 +134,7 @@
    "stage": "tutki",
    "type": "interpret",
    "title": "Investigate 2: choosing the site",
-   "text": "**A two-year contest for the site.** Four places were offered for ITER: Clarington in Canada, Vandellòs in Spain, Cadarache in France and Rokkasho in Japan. The Canadian offer was withdrawn in December 2003, and in November 2003 the European Union chose Cadarache as its one candidate. In December 2003 a meeting of ministers ended in deadlock: the European Union, China and Russia supported Cadarache, while Japan, Korea and the United States supported Rokkasho. The ministers said that both sites were excellent and needed more study.\n\nOnly on **28 June 2005**, at a meeting in Moscow, did the partners agree on Cadarache. Japan, which lost the contest, received compensation: the *Broader Approach* projects in Japan, among them the satellite tokamak JT-60SA and a research facility for fusion materials. The first Director-General of ITER, Kaname Ikeda, was also Japanese.\n\nThe site is at Saint-Paul-lez-Durance, next to the French research centre **CEA Cadarache**, about 75 km north of Marseille. Studies showed that it met the geological, hydrological and seismic requirements and had water, electricity and a strong scientific and industrial environment. As the host, France prepared the 180-hectare site with its 42-hectare platform, opened an international school in Manosque for the staff's children and adapted 104 km of roads, the *ITER Itinerary*, so that the heaviest parts can travel from a Mediterranean port to the site.\n\n<!-- photo: iter-site-aerial -->",
+   "text": "**A two-year contest for the site.** Four places were offered for ITER: Clarington in Canada, Vandellòs in Spain, Cadarache in France and Rokkasho in Japan. In November 2003 the European Union chose Cadarache as its one candidate, and in December 2003 the Canadian offer was withdrawn. The same month a meeting of ministers ended in deadlock: the European Union, China and Russia supported Cadarache, while Japan, Korea and the United States supported Rokkasho. The ministers said that both sites were excellent and needed more study.\n\nOnly on **28 June 2005**, at a meeting in Moscow, did the partners agree on Cadarache. Japan, which lost the contest, received compensation: the *Broader Approach* projects in Japan, among them the satellite tokamak JT-60SA and a research facility for fusion materials. The first Director-General of ITER, Kaname Ikeda, was also Japanese.\n\nThe site is at Saint-Paul-lez-Durance, next to the French research centre **CEA Cadarache**, about 75 km north of Marseille. Studies showed that it met the geological, hydrological and seismic requirements and had water, electricity and a strong scientific and industrial environment. As the host, France prepared the 180-hectare site with its 42-hectare platform, opened an international school in Manosque for the staff's children and adapted 104 km of roads, the *ITER Itinerary*, so that the heaviest parts can travel from a Mediterranean port to the site.\n\n<!-- photo: iter-site-aerial -->",
    "question": {
     "type": "choice",
     "prompt": "What does the contest for the site show about large international projects?",
@@ -179,7 +179,7 @@
    "type": "explain",
    "title": "Pair discussion: what does the host gain?",
    "prompt": "Discuss with a partner, using the word bank and the sentence starters. One of you argues for the host country, the other for the other Members. Then write three or four sentences: what does France (and the EU) gain by hosting ITER, and what does it cost them? What do the other Members gain?",
-   "model": "The host country gains jobs, contracts for local industry, international scientists and prestige; in 2005 France expected billions of euros of research money and construction work. But it also has to prepare the site, build roads and a school, and the EU pays the largest share, 45.6 % of the construction costs. The other Members pay only 9.1 % each and still receive all the results and the intellectual property. One disadvantage for them is that the machine and most of the jobs on the site are far from home.",
+   "model": "The host country gains jobs, contracts for local industry, international scientists and prestige; in 2005 France expected billions of euros of research money and construction work. But it also has to prepare the site, build roads and a school, and the EU pays the largest share, $45.6\\ \\%$ of the construction costs. The other Members pay only $9.1\\ \\%$ each and still receive all the results and the intellectual property. One disadvantage for them is that the machine and most of the jobs on the site are far from home.",
    "criteria": [
     "The answer names at least one gain and one cost for the host.",
     "The answer names at least one gain for the other Members.",
@@ -219,7 +219,7 @@
    "stage": "sovella",
    "type": "text",
    "title": "Put the story in order",
-   "text": "<div class=\"fx\" data-fx=\"order\" id=\"fx-ip-order\"><script type=\"application/json\">{\"prompt\": \"Put the steps of the ITER story in time order, from the oldest to the newest. The last two are plans.\", \"items\": [\"Gorbachev and Reagan meet in Geneva.\", \"Four partners start the conceptual design.\", \"The partners choose Cadarache in Moscow.\", \"Seven Members sign the ITER Agreement in Paris.\", \"Assembly of the machine begins.\", \"ITER presents a new baseline schedule.\", \"Planned: research operation starts.\", \"Planned: deuterium–tritium operation starts.\"], \"explain\": \"Right: 1985, 1988, 2005, 2006, 2020, 2024, and the plans 2034 and 2039. More than fifty years separate the idea from the first planned D–T plasma.\", \"hints\": [\"The Cold War summit came first.\", \"The site was chosen before the agreement was signed.\", \"The two plans come last: 2034, then 2039.\"]}</script></div>"
+   "text": "<div class=\"fx\" data-fx=\"order\" id=\"fx-ip-order\"><script type=\"application/json\">{\"prompt\": \"Put the steps of the ITER story in time order, from the oldest to the newest. The last two are plans.\", \"items\": [\"Gorbachev and Reagan meet in Geneva.\", \"Four partners start the conceptual design.\", \"The partners choose Cadarache in Moscow.\", \"Seven Members sign the ITER Agreement in Paris.\", \"Assembly of the machine begins.\", \"ITER presents a new baseline schedule.\", \"Planned: research operation starts.\", \"Planned: deuterium–tritium operation starts.\"], \"explain\": \"Right: 1985, 1988, 2005, 2006, 2020, 2024, and the plans 2034 and 2039. More than fifty years separate the idea from the first planned $\\\\text{D–T}$ plasma.\", \"hints\": [\"The Cold War summit came first.\", \"The site was chosen before the agreement was signed.\", \"The two plans come last: 2034, then 2039.\"]}</script></div>"
   },
   {
    "id": "find-error",
@@ -229,9 +229,9 @@
    "prompt": "A website wrote in 2026: \"France is building ITER, which will produce $500\\ \\text{MW}$ of electricity from 2025.\" What needs to be corrected?",
    "choices": [
     {
-     "text": "Three things: who builds it, electricity, and the date.",
+     "text": "Three things: builder, electricity and date.",
      "correct": true,
-     "feedback": "Right. Seven Members build ITER, not France alone. Its $500\\ \\text{MW}$ is fusion power in the plasma, and ITER makes no electricity. And 2025 was the 2016 plan; the 2024 baseline plans research operation in 2034 and D–T operation in 2039."
+     "feedback": "Right. Seven Members build ITER, not France alone. Its $500\\ \\text{MW}$ is fusion power in the plasma, and ITER makes no electricity. And 2025 was the 2016 plan; the 2024 baseline plans research operation in 2034 and $\\text{D–T}$ operation in 2039."
     },
     {
      "text": "Only the date is wrong: 2025 should be 2034.",
@@ -345,19 +345,19 @@
     {
      "text": "It is the 2016 plan; the 2024 baseline plans 2039.",
      "correct": true,
-     "feedback": "Right. 2035 was the D–T date of the 2016 baseline. The 2024 baseline moved it to 2039. A text should say which plan, and of which year, it quotes."
+     "feedback": "Right. 2035 was the $\\text{D–T}$ date of the 2016 baseline. The 2024 baseline moved it to 2039. A text should say which plan, and of which year, it quotes."
     },
     {
      "text": "Nothing: 2035 is still the planned date.",
      "feedback": "In the 2024 baseline, 2035 is the start of deuterium–deuterium operation. Deuterium–tritium operation is planned for 2039."
     },
     {
-     "text": "D–T operation already began with first plasma in 2025.",
-     "feedback": "There was no first plasma in 2025: the 2024 baseline replaced it with research operation in 2034. D–T operation is planned for 2039."
+     "text": "$\\text{D–T}$ operation already began with first plasma in 2025.",
+     "feedback": "There was no first plasma in 2025: the 2024 baseline replaced it with research operation in 2034. $\\text{D–T}$ operation is planned for 2039."
     },
     {
      "text": "ITER will use only deuterium, never tritium.",
-     "feedback": "ITER's main goal needs deuterium–tritium fuel. D–T operation is planned for 2039 in the 2024 baseline."
+     "feedback": "ITER's main goal needs deuterium–tritium fuel. $\\text{D–T}$ operation is planned for 2039 in the 2024 baseline."
     }
    ]
   },
@@ -367,7 +367,7 @@
    "type": "explain",
    "title": "4. The big question",
    "prompt": "Can the world's largest fusion collaboration succeed? Write four to six sentences: one argument that it can, one argument that it may not, and your own conclusion. Use at least one dated fact, and say which facts are plans.\n\n<div class=\"wordbank\"><h4>Word bank</h4><p>to succeed · a goal · a delay · progress · a plan · a result · uncertain · to depend on</p></div>\n\n<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>One reason to think ITER can succeed is …</li><li>On the other hand, …</li><li>This is a plan, not a result: …</li><li>In my view, …, because …</li></ul></div>",
-   "model": "One reason to think ITER can succeed is that assembly is now advancing: in July 2026 the sixth of nine vacuum vessel modules was placed in the pit, about six months ahead of the new schedule. Seven Members have stayed together for twenty years. On the other hand, the project has been delayed many times, and the 2024 baseline moved D–T operation from 2035 to 2039. These dates are plans, not results. In my view ITER can reach its scientific goals, but success depends on whether the Members keep paying and the repaired parts work.",
+   "model": "One reason to think ITER can succeed is that assembly is now advancing: in July 2026 the sixth of nine vacuum vessel modules was placed in the pit, about six months ahead of the new schedule. Seven Members have stayed together for twenty years. On the other hand, the project has been delayed many times, and the 2024 baseline moved $\\text{D–T}$ operation from 2035 to 2039. These dates are plans, not results. In my view ITER can reach its scientific goals, but success depends on whether the Members keep paying and the repaired parts work.",
    "criteria": [
     "The answer gives one argument for and one against.",
     "It uses at least one correct fact with a date.",

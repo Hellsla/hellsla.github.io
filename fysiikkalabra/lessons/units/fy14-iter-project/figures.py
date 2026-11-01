@@ -117,7 +117,7 @@ def schedule():
         f.tex(x, yrow - 34, r"\text{D–T}", "middle", color=HOT, bg=True)
     f.tex(X(2025) + 6, r1 - 34, r"\text{first plasma}", "start", color=COLD, bg=True)
     f.tex(X(2034), r2 + 36, r"\text{research starts}", "middle", color=COLD, bg=True)
-    f.arrow(X(2035) + 8, r1 + 16, X(2039) - 10, r2 - 16, HOT, 2.5, 12)
+    f.arrow(X(2035) + 8, r1 + 16, X(2039) - 24, r2 - 26, HOT, 2.5, 12)
     f.tex(X(2037) - 22, (r1 + r2) / 2 + 4, r"+4\ \text{years}", "end", color=HOT, bg=True)
     f.tex(xn, 26, r"\text{Nov. 2026}", "middle", color=MUTED, bg=True)
     return f.svg()

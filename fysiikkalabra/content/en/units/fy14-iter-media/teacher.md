@@ -1,7 +1,7 @@
 ## About the articles (checked 1 November 2026)
 
 - **Helsingin Sanomat 2018** (dynamic.hs.fi/2018/iter/): the brief's main article. Its page could not be opened from the development environment, so this unit says nothing about its content. Read it before the lesson, check that students can open it (it may need the school's subscription), and check the students' reading notes on it yourself. In 2018 ITER's official plan was the 2016 baseline: first plasma in 2025, D–T operation in 2035; in December 2017 ITER said it was halfway to first plasma, at a cost of about 20 billion euros.
-- **Yle 14 January 2020** (yle.fi/a/3-11146330) and **Yle 28 June 2005** (yle.fi/a/3-5217376) were read and checked; the claim sorting task and the model answer use them.
+- **Yle 14 January 2020** (yle.fi/a/3-11146330) and **Yle 28 June 2005** (yle.fi/a/3-5217376) were read and checked; the claim sorting task and the model answer use them. Yle 2020 calls the divertor cassettes *puhdistuskasetit* that collect dust. That is a loose description: the cassettes carry the divertor targets, which take the heat and the helium ash from the edge of the plasma. It is a good claim for students to check against the parts explorer in *Inside ITER*.
 - **The link yle.fi/a/20-153568 in the course brief is not about ITER.** It is an Yle Oppiminen French lesson, *Osa 4: Ravintolat, kahvilat, baarit* (2012, updated 2016), on restaurants and cafés. It is not used here; it suits the French unit *Au café: a role-play*.
 
 ## Timing (75 minutes)
@@ -10,7 +10,7 @@
 - **6–10 min, Predict.** Two predictions, committed with a reason.
 - **10–35 min, Investigate.** Students choose an article (stronger readers: HS 2018; others: Yle 2020; Yle 2005 for a short reading), skim, read and make notes under the six headings; sort the Yle claims; read *ITER then and now* (both predictions open); compare two pieces of information.
 - **35–45 min, Theory summary.** Key idea and the physics reminder; pair discussion with a partner who read another article; back to the predictions.
-- **45–70 min, Apply.** The 300-word writing task (start in class, finish at home if needed); find the error. Peer feedback is optional.
+- **45–70 min, Apply.** The 300-word writing task (start in class, finish at home; the page says so too); find the error. Peer feedback is optional.
 - **70–75 min, Check your understanding.** Three checks and the correction note; summary and French corner.
 
 ## Organisation and preparation
