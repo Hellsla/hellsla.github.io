@@ -20,13 +20,13 @@ pronunciation, videos, the timeline, the map and the explorers), placed in the t
         course's chapters), title, description (one sentence), kind (one of KINDS), minutes (the planned class time),
         subjects (physics, english, french), sim (optional: "<course slug>/<name>", a folder of assets/sims/ with
         sim.js and strings.json), sources [{title, url, checked: "YYYY-MM-DD", note?}] (shown as "Sources and
-        verification" at the end of the page; every fact that may change carries a checked date), media
+        verification" at the end of a preview, never on the published page; every fact that may change carries a checked date), media
         [{file, title, creator, source, licence, licence_url?}] (credits of every photograph and video used)
   content/<lang>/units/<id>/unit.md      the text: `# Title`, `> **Why** …` (the opening question), the opening
         illustration (`<svg data-fig="hero">`), then `## ` sections that inquiry.json places with "theory"
         activities (a section placed nowhere goes to the Theory summary)
   content/<lang>/units/<id>/inquiry.json the activities by stage, exactly as a lesson's (validated by inquiry.py)
-  content/<lang>/units/<id>/teacher.md   public teacher guidance: timing, organisation, assessment criteria; never
+  content/<lang>/units/<id>/teacher.md   teacher guidance (in previews only, not on the published page): timing, organisation, assessment criteria; never
         answers to graded work or anything confidential
   content/<lang>/units/<id>/review/      science.md, pedagogy.md and visual.md, as a lesson's
   lessons/units/<id>/figures.py          the figures (scripts/figlib.py), optional
@@ -197,9 +197,10 @@ def sim_block(uid, lang):
     return json.loads((sf / "strings.json").read_text()).get(lang, {})
 
 
-def tail_html(uid, lang, T, md):
-    """The end of the page: credits of the photographs and videos, the sources with the date each was checked, and
-    the teacher's notes in a closed box, out of the students' stage navigation."""
+def tail_html(uid, lang, T, md, teacher=False):
+    """The end of the page: credits of the photographs and videos, and with teacher=True (previews for reviewers
+    only) the sources with the date each was checked and the teacher's notes in a closed box. The published pages
+    leave both out: they are not for students (teacher 2026-11-01)."""
     d = load(uid, lang); out = ""
     if d.get("media"):
         out += (f'<section class="unit-credits" id="credits"><h2>{T("units.credits")}</h2><ul>'
@@ -207,13 +208,13 @@ def tail_html(uid, lang, T, md):
                           f'<a href="{esc(m["source"])}">{T("units.credit_source")}</a>, '
                           + (f'<a href="{esc(m["licence_url"])}">{esc(m["licence"])}</a>' if m.get("licence_url") else esc(m["licence"])) + "</li>"
                           for m in d["media"]) + "</ul></section>")
-    if d.get("sources"):
+    if teacher and d.get("sources"):
         out += (f'<section class="unit-sources" id="sources"><h2>{T("units.sources")}</h2><p class="unit-sources-lead">{T("units.sources_lead")}</p><ul>'
                 + "".join(f'<li><a href="{esc(s["url"])}">{esc(s["title"])}</a> <span class="checked">{T("units.checked", date=s["checked"])}</span>'
                           + (f'<span class="source-note">{md(s["note"])[3:-4]}</span>' if s.get("note") else "") + "</li>"
                           for s in d["sources"]) + "</ul></section>")
     t = folder(uid, lang) / "teacher.md"
-    if t.is_file():
+    if teacher and t.is_file():
         out += f'<details class="inv-teacher unit-teacher" id="teacher"><summary>{T("units.teacher")}</summary>{md(t.read_text())}</details>'
     return out
 
