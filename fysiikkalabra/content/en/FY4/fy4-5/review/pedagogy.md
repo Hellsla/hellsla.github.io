@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: eb566cbcc01e931e
+CONTENT-HASH: f271d762ae985eb4
 
 ## Blocking
 
@@ -9,3 +9,4 @@ CONTENT-HASH: eb566cbcc01e931e
 ## Checked
 - Delta `git diff a6af45ae` of fi, en and fi-easy for fy4-5; every changed passage compared with the Finnish: reads naturally; same stages, hint order and exit ticket; the changed sentences keep the teaching order (ice-only model in the inquiry, pull and push as the compared cases, the extra T-vs-F remark placed in the model box).
 - All `voimakuvio` blocks in inquiry.json and lesson.md identical to the Finnish (check_i18n enforces); `check_i18n.py` 0 errors; `build.py fy4-5` builds; `figures.py fy4-5 --lang en --check` up to date.
+- Delta since the last PASS (commit 63d2f6f8, shared sim.js force diagram enlarged, nested list in step 3 re-indented): lesson text differs only in whitespace (`git diff -w` empty), so the earlier comparison with the Finnish stands; `check_i18n.py` 0 errors, figures up to date.
