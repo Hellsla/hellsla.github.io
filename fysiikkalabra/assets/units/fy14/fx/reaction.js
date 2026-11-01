@@ -26,7 +26,7 @@ window.FX.reaction = (el, d, A) => {
     if (part !== 'scales') reaction(data);
     if (part !== 'reaction') scales(data);
     if (d.question) root.append(h('div', { class: 'fx-question' }, h('p', { class: 'fx-question-h' }, 'Think'), h('p', { html: md(d.question) })));
-    root.append(h('p', { class: 'fx-note', html: `Masses: AME2020; constants: CODATA 2018 (checked ${data.checked}).` }));
+    root.append(h('p', { class: 'fx-note', html: `Masses: AME2020; constants: CODATA 2018 (checked ${A.date(data.checked)}).` }));
     typeset(root);
 
     function reaction(data) {

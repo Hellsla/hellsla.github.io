@@ -326,9 +326,10 @@
 .ip-svg.has-sel .ip-part.sel .ip-hl{stroke:#14171e;stroke-width:2.5}
 .ip-mk circle{fill:#14171e;stroke:#fff;stroke-width:2}
 .ip-mk text{fill:#fff;font:700 13px/1 var(--sans);text-anchor:middle;dominant-baseline:central;pointer-events:none}
-.ip-part.sel .ip-mk circle{fill:#fff;stroke:#14171e;stroke-width:3}
-.ip-part.sel .ip-mk text{fill:#14171e}
-.ip-part:focus-visible .ip-mk circle{stroke:#ffd43b;stroke-width:4}
+.ip-mk{cursor:pointer}
+.ip-mk.sel circle{fill:#fff;stroke:#14171e;stroke-width:3}
+.ip-mk.sel text{fill:#14171e}
+.ip-mk.focus circle{stroke:#ffd43b;stroke-width:4}
 .ip-scale{position:absolute;font:600 .8125rem/1 var(--sans);color:var(--ink-2);transform:translate(-50%,0)}
 .ip-list{list-style:none;margin:.75rem 0 0;padding:0;display:grid;gap:.3rem;grid-template-columns:repeat(auto-fill,minmax(14rem,1fr))}
 .ip-list button{display:flex;gap:.5rem;align-items:center;width:100%;min-height:44px;text-align:left;font:inherit;font-size:var(--fs-small);padding:.35rem .6rem;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink);cursor:pointer}
@@ -354,8 +355,8 @@
 .ip-box li{margin:.2rem 0}
 .ip-formula{text-align:center;margin:.4rem 0 .8rem;font-size:1.1em}
 .ip-bars{display:grid;gap:.45rem;margin:.2rem 0 .8rem}
-.ip-bar{display:grid;grid-template-columns:7.5rem minmax(0,1fr);gap:.6rem;align-items:center;font-size:var(--fs-small)}
-.ip-bar span:last-child{display:block;height:1.6rem;border-radius:4px;color:#fff;font-weight:700;padding:0 .5rem;line-height:1.6rem;white-space:nowrap;min-width:fit-content}
+.ip-bar{display:grid;grid-template-columns:minmax(6.5rem,10rem) minmax(0,1fr);gap:.6rem;align-items:center;font-size:var(--fs-small)}
+.ip-bar>span:last-child{display:block;height:1.6rem;border-radius:4px;color:#fff;font-weight:700;padding:0 .5rem;line-height:1.6rem;white-space:nowrap;min-width:fit-content}
 .ip-bar-in{background:#1971c2;background-image:repeating-linear-gradient(45deg,rgba(255,255,255,.18) 0 6px,transparent 6px 12px)}
 .ip-bar-out{background:#c2255c}
 .ip-sched{list-style:none!important;padding:0!important;border-left:3px solid var(--fig-line);margin-left:.4rem!important}

@@ -58,7 +58,9 @@
     if (own) { try { return Promise.resolve(JSON.parse(own.textContent)); } catch (e) { return Promise.reject(e); } }
     return fetch(src).then((r) => r.json());
   };
-  const api = { base, store, typeset, h, shuffle, scramble, speech, md, data };
+  // a checked date (ISO 2026-11-01) as English prose (1 November 2026): the page typography would turn the hyphens into dashes
+  const date = (iso) => { const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(String(iso)); return m ? new Date(Date.UTC(+m[1], +m[2] - 1, +m[3], 12)).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' }) : String(iso); };
+  const api = { base, store, typeset, h, shuffle, scramble, speech, md, data, date };
   window.FXAPI = api;
 
   const loaded = {};

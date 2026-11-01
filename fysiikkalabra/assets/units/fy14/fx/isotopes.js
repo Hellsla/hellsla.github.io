@@ -80,7 +80,7 @@ window.FX.isotopes = (el, d, A) => {
       });
       root.append(h('h4', { class: 'fx-iso-tasks-h' }, 'Challenges'), tasksBox);
     }
-    root.append(h('p', { class: 'fx-note', html: `Data: masses AME2020, half-lives NUBASE2020 (checked ${data.checked}).` }));
+    root.append(h('p', { class: 'fx-note', html: `Data: masses AME2020, half-lives NUBASE2020 (checked ${A.date(data.checked)}).` }));
 
     function save() { store.set(el.id, { z: Z, n: N, solved }); }
     function el0(z) { return els[z] || { symbol: '?', name: 'unknown' }; }

@@ -53,7 +53,7 @@ window.FX.binding = (el, d, A) => {
         h('div', { class: 'fx-field fx-field-wide' }, h('label', { for: idp + 'rx' }, 'Compare a reaction'), rsel)),
       h('figure', { class: 'fx-be-fig' }, plot, h('figcaption', {}, caption)), info, calc,
       ...(d.question ? [h('div', { class: 'fx-question' }, h('p', { class: 'fx-question-h' }, 'Think'), h('p', { html: md(d.question) }))] : []),
-      h('p', { class: 'fx-note', html: `Masses and binding energies: AME2020; $1\\ \\text{u} = ${uMeV.toFixed(6)}\\ \\text{MeV}/c^2$ (CODATA 2018). Checked ${data.checked}.` }));
+      h('p', { class: 'fx-note', html: `Masses and binding energies: AME2020; $1\\ \\text{u} = ${uMeV.toFixed(6)}\\ \\text{MeV}/c^2$ (CODATA 2018). Checked ${A.date(data.checked)}.` }));
 
     const xs = (a) => X0 + ((a - VIEWS[view].a0) / (VIEWS[view].a1 - VIEWS[view].a0)) * (X1 - X0);
     const ys = (b) => Y1 - (b / BMAX) * (Y1 - Y0);

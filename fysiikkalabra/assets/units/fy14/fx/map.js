@@ -54,7 +54,7 @@ window.FX.map = (el, d, A) => {
     const list = h('ul', { class: 'fx-map-list' });
     root.append(...(d.intro ? [h('p', { class: 'fx-prompt', html: md(d.intro) })] : []), form, count, h('div', { class: 'fx-map-main' }, mapBox, panel), legend,
       h('h4', { class: 'fx-map-list-h' }, 'Facilities shown'), list,
-      h('p', { class: 'fx-note' }, `Data checked ${data.checked}. Not an exhaustive list of fusion experiments. Map tiles © OpenStreetMap contributors.`));
+      h('p', { class: 'fx-note' }, `Data checked ${A.date(data.checked)}. Not an exhaustive list of fusion experiments. Map tiles © OpenStreetMap contributors.`));
 
     let map = null; const markers = {};
     if (window.L) {
