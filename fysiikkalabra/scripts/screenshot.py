@@ -104,7 +104,6 @@ def save(pg, name, what, box=None, locator=None):
         pg.evaluate(f"window.scrollTo({{top: {clip['y']}, behavior: 'instant'}})"); pg.wait_for_timeout(100)   # within the viewport: a full-page capture resizes it
         sy = pg.evaluate("window.scrollY")                                        # and a sim redrawn mid-capture came out at the wrong scale
         vw, vh = pg.viewport_size["width"], pg.viewport_size["height"]; y0 = clip["y"] - sy
-        print(fname, clip, sy, vw, vh) if "SSDBG" in __import__("os").environ else None
         pg.screenshot(path=str(OUT / fname), clip={"x": clip["x"], "y": max(0, y0), "width": min(clip["width"], vw - clip["x"]), "height": min(clip["height"], vh - max(0, y0))})
         w, hh = int(clip["width"]), int(clip["height"])
         rows.append((fname, what + (f" (part {k + 1}/{parts})" if parts > 1 else ""), w, hh))
@@ -117,8 +116,9 @@ with sync_playwright() as pw:
         pg.evaluate("try { localStorage.clear() } catch (e) {}"); pg.reload(); pg.wait_for_timeout(700)
         pg.evaluate("window.scrollTo(0, 0)"); pg.wait_for_timeout(200)
         pg.screenshot(path=str(OUT / f"{lid}-top-{w}.png")); rows.append((f"{lid}-top-{w}.png", f"first screen at {w} px", w, hgt))
-        pg.add_style_tag(content="header.top, nav.toc, nav.crumbs { position: static !important; }")
-        pg.set_viewport_size({"width": w, "height": TILE + 16}); pg.wait_for_timeout(300)   # sticky bars would be drawn into part captures; every tile fits the viewport
+        pg.add_style_tag(content="header.top, nav.toc, nav.crumbs { visibility: hidden !important; }")
+        pg.set_viewport_size({"width": w, "height": TILE + 16}); pg.wait_for_timeout(300)   # sticky bars would be drawn into the captures (hidden, not unstuck: the
+        # table of contents scrolls its active link into view, which scrolled an unstuck bar's page back up); every tile fits the viewport
         if kind == "unit":                            # a course unit: its stages, components and the end of the page, every box open
             pg.evaluate("document.querySelectorAll('main details').forEach((d) => { d.open = true; })"); pg.wait_for_timeout(500)
             if pg.locator(".intro").count(): save(pg, f"intro-{w}", f"the opening at {w} px", locator=pg.locator(".intro").first)

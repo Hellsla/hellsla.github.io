@@ -303,7 +303,8 @@ class FBD:
 def _bold(sym):
     """\\overline{G}, \\overline{F}_\\mu, \\overline{T}_1 from "G", "F_mu", "T_1"."""
     base, _, sub = sym.partition("_")
-    sub = {"mu": r"\mu"}.get(sub, sub)
+    parts = [{"mu": r"\mu"}.get(x, x) for x in sub.split("_")] if sub else []
+    sub = (parts[0] + "".join((" " if p.startswith("\\") else "") + x for p, x in zip(parts, parts[1:]))) if parts else ""   # T_1_y -> T_{1y}, no nested subscript (visual audit 2026-11-01)
     return rf"\overline{{{base}}}" + (f"_{{{sub}}}" if sub else "")
 
 

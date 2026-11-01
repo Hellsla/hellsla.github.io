@@ -240,10 +240,40 @@ def _apart(out, scale):
                 p0 = u[0] * dx + u[1] * dy; p1 = p0 + (u[0] * u2[0] + u[1] * u2[1]) * math.hypot(*L2) * scale * (-1 if ex2.get("push") else 1)
                 gap = -26 if u[0] * u2[0] + u[1] * u2[1] > 0 else 4                 # same way: their labels need room too
                 if min(a1, max(p0, p1)) - max(a0, min(p0, p1)) > gap: hit = True; break   # along a common stretch
+                if math.hypot(dx, dy) < 2 and not extra.get("push") and not ex2.get("push"): hit = True; break   # two tails on one point read as one double arrow (visual audit 2026-11-01)
             if not hit: break
             at = (at[0] + (-u[1]) * 18 * (1 if weights < 3 else -1), at[1] - u[0] * 18)
         res.append((sym, vec, L, at, k, extra))
     return res
+
+
+def _exit(cx, cy, ang, at, d):
+    """How far a ray from the point at (figure coords) in direction d (y up) runs inside the body rectangle (0 unless at is
+    inside it: a normal force from the contact surface runs through the body by design)."""
+    c, s = math.cos(math.radians(ang)), math.sin(math.radians(ang))
+    px, py = at[0] - cx, cy - at[1]
+    lu, lv = px * c + py * s, -px * s + py * c
+    if abs(lu) > W / 2 - 1 or abs(lv) > H / 2 - 1: return 0.0
+    u, v = d[0] * c + d[1] * s, -d[0] * s + d[1] * c
+    t = [((W / 2 if u > 0 else -W / 2) - lu) / u] if abs(u) > 1e-9 else []
+    t += [((H / 2 if v > 0 else -H / 2) - lv) / v] if abs(v) > 1e-9 else []
+    return max(0.0, min(t)) if t else 0.0
+
+
+EXIT = 24                          # a force drawn from inside the body reaches at least this far past its outline (visual audit 2026-11-01)
+
+
+def _out_of_body(forces, cx, cy, ang, scale):
+    """A small force from the centre (a light body's weight beside a heavy load) would end inside the rectangle, its label
+    then naming the wrong arrow: it is drawn long enough to leave the body. Returns the forces and whether one was lengthened."""
+    res, longer = [], False
+    for sym, vec, L, at, k, extra in forces:
+        n = math.hypot(*L)
+        if n and not extra.get("push"):
+            e = _exit(cx, cy, ang, at, (L[0] / n, L[1] / n)); need = (e + EXIT) / scale
+            if e > 1 and n < need: L = (L[0] / n * need, L[1] / n * need); longer = True   # starts inside, would end too near the outline
+        res.append((sym, vec, L, at, k, extra))
+    return res, longer
 
 
 def _box(cx, cy, tex, size=24):
@@ -337,6 +367,10 @@ def draw(spec, fid, _frame=None):
     two = len(bodies) > 1
     big = max(f[1] for b in bodies for f in b["forces"])
     scale = (70 if two else 100) / big
+    small = min([f[1] for b in bodies for f in b["forces"] if f[1] > 0] or [big])
+    if two: scale = min(130.0, max(70.0, 26 * big / small)) / big           # two bodies: the same, within their half of the figure
+    if not two and any(b["surface"] not in (None, 0) for b in bodies): scale = min(180.0, max(100.0, 26 * big / small)) / big      # on a slope a small force (friction, a gentle slope) keeps a shaft
+                                                                            # behind its head: the whole figure on a larger scale (visual audit 2026-11-01)
     floor = lambda x: math.copysign(max(abs(x), MIN_SHOWN * big), x) if x else 0.0   # one linear scale, tiny ones visible
     Hfig, shift, xr = _frame or (460, 0, None)
     f = Fig(fid, Hfig, "")
@@ -361,6 +395,7 @@ def draw(spec, fid, _frame=None):
         if b["a"] is not None:
             a_dir = (0, 0) if b["a"] in ("0", "nolla", "none") else _unit(along(b["a"], surf))
         forces, faces = _restore_sums(_forces(b, cx, cy, ang, shown, scale), hz, big)
+        forces, longer = _out_of_body(forces, cx, cy, ang, scale); approx = approx or longer
         approx = approx or any(0 < size * hz[h] < MIN_SHOWN * big for size, h in _probe(b, cx, cy, ang, scale))   # one drawn at the floor
         true = fbd.FBD(f, scale, body=(cx, cy, W, H, ang), a_dir=a_dir)              # the physics, on the true sizes
         for sym, vec, _, at, k, extra in forces: true.force(sym, vec, at, "gravity" if k == "gravity2" else k, tex=tex_of(sym), **extra)

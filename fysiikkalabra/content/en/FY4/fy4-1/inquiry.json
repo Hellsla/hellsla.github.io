@@ -151,7 +151,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Experiment 1: two different velocities",
-      "intro": "Test prediction 1. The initial state selects case 1, where carts A and B start from the same point. Press *Start* and watch how the graphs are drawn. Then stop the clock by dragging the *Moment t* slider and record the positions at at least three different moments, for example $t = 0$, $t = 4.0\\,\\text{s}$ and $t = 10\\,\\text{s}$.",
+      "intro": "Test prediction 1. The initial state selects case 1, where carts A and B start from the same point. Press *Start* and watch how the graphs are drawn. Then stop the clock by dragging the *Moment $t$* slider and record the positions at at least three different moments, for example $t = 0$, $t = 4.0\\,\\text{s}$ and $t = 10\\,\\text{s}$.",
       "initial": {
         "tapaus": "1",
         "t": 0
@@ -327,7 +327,7 @@
         "unit": "m/s",
         "tolerance": 0.03,
         "hints": [
-          "The line does not pass through all the measured points, so read the point from the line, not from the table. Choose a point that is far from the starting point, for example near the moment $t = 10\\,\\text{s}$, and record its t and x.",
+          "The line does not pass through all the measured points, so read the point from the line, not from the table. Choose a point that is far from the starting point, for example near the moment $t = 10\\,\\text{s}$, and record its $t$ and $x$.",
           "$v = \\dfrac{\\Delta x}{\\Delta t} = \\dfrac{x_2 - x_1}{t_2 - t_1}$. The starting point is $(0\\,\\text{s};\\, 4.1\\,\\text{m})$; the line ends at about the position $19\\,\\text{m}$.",
           "Between the moments $t = 0$ and $t = 10\\,\\text{s}$ the position of the line grows by about $19\\,\\text{m} - 4\\,\\text{m} = 15\\,\\text{m}$."
         ],

@@ -647,7 +647,7 @@ t = \frac{-v_0 + \sqrt{v_0^2 + 2a\,\Delta x}}{a}
 
 <!-- vaihe -->
 
-**Reasonableness.** The velocity grows steadily, so the average velocity is the mean of the initial and final velocities, $\tfrac{4.0\,\text{m/s} + 8.72\,\text{m/s}}{2} \approx 6.36\,\text{m/s}$, and $6.36\,\text{m/s} \cdot 9.44\,\text{s} \approx 60\,\text{m}$, the length of the hill. The final velocity $8.7\,\text{m/s} \approx 31\,\text{km/h}$ is a usual cycling speed on a downhill.
+**Reasonableness.** The velocity grows steadily, so the average velocity is the mean of the initial and final velocities, $(4.0\,\text{m/s} + 8.72\,\text{m/s}) : 2 \approx 6.36\,\text{m/s}$, and $6.36\,\text{m/s} \cdot 9.44\,\text{s} \approx 60\,\text{m}$, the length of the hill. The final velocity $8.7\,\text{m/s} \approx 31\,\text{km/h}$ is a usual cycling speed on a downhill.
 
 ## Common misconception
 Many people think that the acceleration is zero whenever the velocity is zero. A ball thrown up is at rest for a moment at the highest point, but its velocity changes all the time: just before the highest point it moves up and just after it moves down. The acceleration is $g = 9.81\,\text{m/s}^2$ downwards during the whole flight. Another mistake is to take a negative acceleration to always mean slowing down: the speed decreases only when the acceleration and the velocity point in opposite directions. A third mistake is to think that a heavy object falls faster than a light one. When air resistance is small, both fall with the same acceleration.

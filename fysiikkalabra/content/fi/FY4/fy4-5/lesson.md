@@ -218,11 +218,11 @@ Voimakuvio piirretään aina samoilla kahdeksalla vaiheella. Ne kannattaa käyd�
 1. **Valitse kappale.** Päätä, minkä kappaleen voimat piirrät. Voimakuvioon tulevat vain voimat, jotka vaikuttavat **tähän kappaleeseen**. Voimat, joilla kappale itse vaikuttaa muihin, eivät kuulu siihen.
 2. **Etsi vuorovaikutukset.** Luettele kaikki, mikä vaikuttaa kappaleeseen: Maa (paino), jokainen pinta, jota kappale koskettaa (tukivoima ja kitka), jokainen naru (jännitysvoima), työntö tai veto sekä ilma tai vesi (vastus ja noste). Jokaisella voimalla on aiheuttaja kappaleen ulkopuolella. Pelkkä liike ei aiheuta voimaa.
 3. **Piirrä kappale ja voimat.** Piirrä kappale pelkistettynä suorakulmiona. Piirrä kullekin voimalle yksi nuoli, joka lähtee voiman vaikutuskohdasta. Työntävän voiman nuoli voi myös päättyä vaikutuskohtaan.
-   - Paino $\overline{G}$ osoittaa suoraan alas.
-   - Tukivoima $\overline{N}$ on kohtisuorassa kosketuspintaa vastaan ja työntää kappaletta poispäin pinnasta. Se ei aina osoita ylös: katto työntää alas ja seinä sivulle.
-   - Kitkavoima $\overline{F}_\mu$ on kosketuspinnan suuntainen. Sen suunta tulee siitä, mihin suuntaan kappale liukuu tai pyrkii liukumaan pinnan suhteen. Se ei aina ole nopeutta vastaan. Kitkan nuoli alkaa kosketuspinnan kulmasta kappaleen ulkopuolelle tai päättyy siihen. Sitä ei piirretä kappaleen sivua pitkin sivun keskeltä.
-   - Jännitysvoima $\overline{T}$ vaikuttaa narun suuntaisesti ja vetää kappaletta narua kohti.
-   - Ilmanvastus piirretään vain, kun tilanne ja sen oletukset sitä vaativat.
+    - Paino $\overline{G}$ osoittaa suoraan alas.
+    - Tukivoima $\overline{N}$ on kohtisuorassa kosketuspintaa vastaan ja työntää kappaletta poispäin pinnasta. Se ei aina osoita ylös: katto työntää alas ja seinä sivulle.
+    - Kitkavoima $\overline{F}_\mu$ on kosketuspinnan suuntainen. Sen suunta tulee siitä, mihin suuntaan kappale liukuu tai pyrkii liukumaan pinnan suhteen. Se ei aina ole nopeutta vastaan. Kitkan nuoli alkaa kosketuspinnan kulmasta kappaleen ulkopuolelle tai päättyy siihen. Sitä ei piirretä kappaleen sivua pitkin sivun keskeltä.
+    - Jännitysvoima $\overline{T}$ vaikuttaa narun suuntaisesti ja vetää kappaletta narua kohti.
+    - Ilmanvastus piirretään vain, kun tilanne ja sen oletukset sitä vaativat.
 4. **Nimeä voimat.** Anna jokaiselle voimalle oma tunnus. Kaksi samanlaista voimaa erotetaan indekseillä, esimerkiksi $\overline{T}_1$ ja $\overline{T}_2$.
 5. **Mieti suuruudet.** Levossa ja tasaisessa liikkeessä kokonaisvoima on nolla, joten nuolet kumoavat toisensa. Kiihtyvässä liikkeessä kokonaisvoima osoittaa kiihtyvyyden suuntaan, joka ei aina ole nopeuden suunta. Älä keksi tarkkoja pituuksia, jos tiedot eivät niitä määrää.
 6. **Vain voimat.** Nopeus, kiihtyvyys ja siirtymä eivät ole voimia. Jos niitä tarvitaan, ne piirretään kappaleen viereen ohuina nuolina ja eri värein: tässä kurssissa voimat ovat punaisia, nopeus sininen ja kiihtyvyys oranssi. Kokonaisvoima ei ole yksi voima lisää.

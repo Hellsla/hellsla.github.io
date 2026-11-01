@@ -45,7 +45,7 @@
 **Kaava:** $E_\text{p} = m g h$. Kaava on jo valmiiksi ratkaistu kysytylle suureelle.
 **Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $E_\text{p} = 4{,}0\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot (-6{,}5\,\text{m}) \approx -255\,\text{J}$
-**Vastaus:** $-255\,\text{J}$ eli kahdella merkitsevällä numerolla $-2{,}6 \cdot 10^{2}\,\text{J}$, kuten massassa $4{,}0\,\text{kg}$ ja syvyydessä $6{,}5\,\text{m}$.
+**Vastaus:** $-2{,}6 \cdot 10^{2}\,\text{J}$ eli kahdella merkitsevällä numerolla, kuten massassa $4{,}0\,\text{kg}$ ja syvyydessä $6{,}5\,\text{m}$.
 **Järkevyys:** Ämpärin nostaminen maanpinnalle vaatii noin $40\,\text{N} \cdot 6{,}5\,\text{m} = 260\,\text{J}$, ja juuri sen verran ämpärin potentiaalienergia on maanpinnan arvoa nollaa pienempi. Etumerkki on negatiivinen, kuten nollatason alapuolella pitää.
 
 ## fy4-7-L2-01
@@ -55,7 +55,7 @@
 **Kaava:** $E_\text{k} = \tfrac{1}{2}\,mv^2$. Kaava on jo valmiiksi ratkaistu kysytylle suureelle.
 **Muunnokset:** $90\,\text{km/h} = \dfrac{90 \cdot 1000\,\text{m}}{3600\,\text{s}} = 25\,\text{m/s}$ ja lopuksi $1\,\text{kJ} = 1000\,\text{J}$.
 **Sijoitus:** $E_\text{k} = \tfrac{1}{2} \cdot 1350\,\text{kg} \cdot (25\,\text{m/s})^2 = 675\,\text{kg} \cdot 625\,\text{m}^2/\text{s}^2 = 421\,875\,\text{J} \approx 422\,\text{kJ}$
-**Vastaus:** $422\,\text{kJ}$ eli kahdella merkitsevällä numerolla $4{,}2 \cdot 10^{2}\,\text{kJ}$, kuten nopeudessa $90\,\text{km/h}$.
+**Vastaus:** $4{,}2 \cdot 10^{2}\,\text{kJ}$ eli kahdella merkitsevällä numerolla, kuten nopeudessa $90\,\text{km/h}$.
 **Järkevyys:** Lasketaan pyöristetyillä luvuilla: $\tfrac{1}{2} \cdot 1400\,\text{kg} \cdot 600\,\text{m}^2/\text{s}^2 = 420\,\text{kJ}$. Jos nopeus sijoitettaisiin kilometreinä tunnissa, tulos olisi lähes $13$ kertaa liian suuri, koska $3{,}6^2 \approx 13$.
 
 ## fy4-7-L2-02

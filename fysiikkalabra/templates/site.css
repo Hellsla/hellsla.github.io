@@ -301,11 +301,11 @@ p.sol-answer{display:inline-block;margin:.1rem 0 .5rem;padding:.35rem .9rem;back
 #sim-root .readout{font-size:var(--fs-ui);line-height:1.5;margin:.6rem 0;font-variant-numeric:tabular-nums}
 #sim-root .note{font-size:var(--fs-small);color:var(--ink-2);margin:.5rem 0 0}
 #sim-root .controls{display:flex;flex-wrap:wrap;align-items:flex-end;gap:.5rem 1.5rem;margin:.5rem 0}
-#sim-root label{display:flex;flex-direction:column;flex:1 1 11rem;font-size:var(--fs-ui)}
+#sim-root label{display:flex;flex-direction:column;flex:1 1 11rem;min-width:0;font-size:var(--fs-ui)}
 #sim-root input[type=range]{width:100%;min-height:40px;margin:0;accent-color:var(--accent)}
 #sim-root button{font:600 var(--fs-ui) var(--sans);min-height:40px;padding:0 1.4rem;border:1px solid var(--accent-deep);border-radius:999px;background:var(--accent-deep);color:#fff;cursor:pointer}
 #sim-root button:hover{background:var(--accent)}
-#sim-root select{min-height:40px;font:inherit;font-size:var(--fs-ui);padding:0 .6rem;border:1px solid #767676;border-radius:.4rem;background:#fff;color:var(--ink)}
+#sim-root select{max-width:100%;min-height:40px;font:inherit;font-size:var(--fs-ui);padding:0 .6rem;border:1px solid #767676;border-radius:.4rem;background:#fff;color:var(--ink)}
 #sim-root label.locked{opacity:.6}#sim-root label.locked::after{content:" (vakio)";font-size:.85em}html[lang=en] #sim-root label.locked::after{content:" (fixed)"}   /* a locked control in an experiment, in the page's language (visual audit 2026-10-31) */
 .sim-info{margin:.6rem 0 0;border-top:1px solid var(--line-2)}
 details.sim-box,#sim-root details.note{margin:0;border-bottom:1px solid var(--line-2)}

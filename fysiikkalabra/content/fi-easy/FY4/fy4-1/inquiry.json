@@ -151,7 +151,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 1: kaksi eri nopeutta",
-      "intro": "Testaa ennuste 1. Alkutila valitsee tapauksen 1. Siinä kärryt A ja B lähtevät samasta kohdasta. Paina *Käynnistä* ja seuraa, miten kuvaajat piirtyvät. Pysäytä sitten kello vetämällä *Hetki t* -liukusäädintä. Kirjaa paikat ainakin kolmella eri hetkellä, esimerkiksi $t = 0$, $t = 4{,}0\\,\\text{s}$ ja $t = 10\\,\\text{s}$.",
+      "intro": "Testaa ennuste 1. Alkutila valitsee tapauksen 1. Siinä kärryt A ja B lähtevät samasta kohdasta. Paina *Käynnistä* ja seuraa, miten kuvaajat piirtyvät. Pysäytä sitten kello vetämällä *Hetki $t$* -liukusäädintä. Kirjaa paikat ainakin kolmella eri hetkellä, esimerkiksi $t = 0$, $t = 4{,}0\\,\\text{s}$ ja $t = 10\\,\\text{s}$.",
       "initial": {
         "tapaus": "1",
         "t": 0
