@@ -34,6 +34,8 @@
     return '$' + n + unitTex + '$';
   };
   const typeset = (el) => { if (window.renderMathInElement) window.renderMathInElement(el, { delimiters: [{ left: '$', right: '$', display: false }], throwOnError: false }); if (window.flGlueMath) window.flGlueMath(el); };
+  // an element's text as read once: KaTeX keeps a hidden MathML copy of every formula, and textContent would repeat it
+  const plainText = (n) => { const c = n.cloneNode(true); c.querySelectorAll('input, .katex-mathml').forEach((x) => x.remove()); return c.textContent.replace(/\s+/g, ' ').trim(); };
   const measured = {};              // experiment id -> number of recorded measurements
   const bus = new EventTarget();
 
@@ -67,7 +69,7 @@
     };
     const commit = (i, silent) => {
       fs.dataset.committed = '1';
-      store.set(id, { choice: i, text: radios[i].parentElement.textContent.trim(), why: justify ? justify.value : '' });
+      store.set(id, { choice: i, text: plainText(radios[i].parentElement), why: justify ? justify.value : '' });
       if (reveal) {
         radios.forEach((r) => { r.disabled = true; });
         btn.hidden = true;
@@ -284,7 +286,7 @@
       list.innerHTML = '';
       ids.forEach((pid) => {
         const act = document.getElementById(pid), fs = act && act.querySelector('fieldset.choice');
-        const legend = fs ? fs.querySelector('legend').textContent.trim() : pid;
+        const legend = fs ? plainText(fs.querySelector('legend')) : pid;
         const saved = store.get(pid);
         const li = document.createElement('li');
         const q = document.createElement('p'); q.className = 'rq'; q.textContent = legend; li.appendChild(q);

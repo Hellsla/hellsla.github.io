@@ -19,8 +19,8 @@ read English. This guide is the yardstick the three reviewers (science, pedagogy
   français</h4>…</div>`: three to six French words or one sentence tied to the unit (*la lumière*, *un électron*,
   *la fusion*, *l'énergie*), with `lang="fr"` on every French span (`<span lang="fr">la lumière</span>`), and a
   `say` component when pronunciation matters. The French chapter units are mostly French with English instructions.
-- **Discussion, not only quizzes.** Use `explain` tasks with `"pair": true` style prompts ("Discuss with a partner,
-  then write…"), role-plays, debates and source analysis. Every written task has a model answer and observable
+- **Discussion, not only quizzes.** Use `explain` tasks whose prompt says so ("Discuss with a partner,
+  then write…"; there is no `pair` field), role-plays, debates and source analysis. Every written task has a model answer and observable
   criteria (what the answer shows), revealed only after the student has written something.
 
 ## 2. The unit page (inquiry stages, docs/inquiry.md)
@@ -96,7 +96,8 @@ Place one as raw HTML on its own lines (blank line before and after), with a uni
 ```
 `match` (also for sorting into categories), `order`, `gapfill` (`[[right|wrong|wrong]]` gaps), `say` (French phrases,
 browser voice), `dialogue` (roles, lines with `fr`, `en`, `cue`), `video` (`id`, `title`, `channel`, `year`, `length`).
-Each file's header comment documents its data. Feedback explains why, not only right/wrong. In an inquiry activity
+Each file's header comment documents its data. `match` options are plain text in a `<select>`: no `$…$`, keep
+them short (under about 40 characters) so the select fits a phone. Feedback explains why, not only right/wrong. In an inquiry activity
 the same HTML can be the `text` of a `text` or `interpret` activity.
 
 ## 7. Before you hand over

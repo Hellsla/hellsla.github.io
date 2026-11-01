@@ -4,7 +4,7 @@
     "jatka": "Continue",
     "aallonpituus": "Wavelength $\\lambda = {{l}}\\,\\text{nm}$",
     "intensiteetti": "Intensity ${{i}}\\,\\%$",
-    "jannite": "Retarding voltage $U = {{u}}\\,\\text{V}$",
+    "jannite": "Voltage $U = {{u}}\\,\\text{V}$",
     "metalli": "Metal",
     "m_cs": "caesium",
     "m_k": "potassium",

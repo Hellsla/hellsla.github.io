@@ -7,7 +7,9 @@
 // the saturation current I_sat is proportional to the light intensity (the number of photons per second) and does not
 // depend on the wavelength (one quantum efficiency for every wavelength, a simplification). Work functions are typical
 // textbook values (they depend on the surface). Every canvas text goes through lab(), which pushes its ink box to
-// simState.labels. p5.js 1.9 instance mode; texts from strings.json via __().
+// simState.labels. simState.f is in units of 10^14 Hz (as the readout shows it), so an experiment table records
+// readable values; photonE, W and Ekmax are in eV, Us and U in V, I in nA. The retarding voltage makes the cathode the
+// positive plate (+) and the collector the negative one (−); its range 0–4.5 V can stop every electron of the model. p5.js 1.9 instance mode; texts from strings.json via __().
 new p5((p) => {
   const H = 6.62607015e-34, E = 1.602176634e-19, C = 2.99792458e8;
   const METALS = { cs: 2.14, k: 2.29, na: 2.36, zn: 4.3 };                        // eV, typical values
@@ -38,7 +40,7 @@ new p5((p) => {
     btn = p.createButton(__('tauko')).parent(controls); btn.elt.addEventListener('click', () => { running = !running; });
     const l1 = p.createElement('label').parent(controls); lL = p.createSpan('').parent(l1); slL = p.createSlider(200, 650, 450, 5).parent(l1);
     const l2 = p.createElement('label').parent(controls); lI = p.createSpan('').parent(l2); slI = p.createSlider(0, 100, 60, 10).parent(l2);
-    const l3 = p.createElement('label').parent(controls); lU = p.createSpan('').parent(l3); slU = p.createSlider(0, 3, 0, 0.05).parent(l3);
+    const l3 = p.createElement('label').parent(controls); lU = p.createSpan('').parent(l3); slU = p.createSlider(0, 4.5, 0, 0.02).parent(l3);
     const lm = p.createElement('label').parent(controls); p.createSpan(__('metalli')).parent(lm); selM = p.createSelect().parent(lm);
     for (const k of Object.keys(METALS)) selM.option(__('m_' + k), k);
     selM.selected('na');
@@ -60,7 +62,7 @@ new p5((p) => {
     const bt = running ? __('tauko') : __('jatka'); if (btn.elt.textContent !== bt) btn.elt.textContent = bt;
     readout.html(__('lukemat', { f: tx(s.f / 1e14, 2), E: tx(s.Eph, 2), W: tx(s.W, 2) }) + '<br>'
       + (s.Ek > 0 ? __('lukemat_ek', { ek: tx(s.Ek, 2), I: tx(s.I, 1) }) : __('lukemat_ei', { I: tx(0, 1) })));
-    window.simState = { lambda: s.lam, f: s.f, metal: selM.value(), W: s.W, intensity: s.inten, U: s.U, photonE: s.Eph, Ekmax: s.Ek, Us: s.Us, I: s.I, running, labels: null };
+    window.simState = { lambda: s.lam, f: s.f / 1e14, metal: selM.value(), W: s.W, intensity: s.inten, U: s.U, photonE: s.Eph, Ekmax: s.Ek, Us: s.Us, I: s.I, running, labels: null };
     // photons from the lamp to the cathode: their number per second follows the intensity
     acc += dt * s.inten * 0.4;
     while (acc >= 1) { acc -= 1; photons.push({ t: 0, y: TOP + 12 + Math.random() * (BOT - TOP - 24) }); }
@@ -105,17 +107,17 @@ new p5((p) => {
     p.noStroke(); p.fill(...ELEC); electrons.forEach((e) => p.circle(e.x, e.y, 6));
     // circuit: from each plate down to the battery and the ammeter
     p.stroke(...INK); p.strokeWeight(2); p.noFill();
-    p.line(CAT, BOT, CAT, 360); p.line(CAT, 360, 280, 360); p.line(330, 360, 360, 360); p.line(410, 360, ANO, 360); p.line(ANO, 360, ANO, BOT);
+    p.line(CAT, BOT, CAT, 360); p.line(CAT, 360, 280, 360); p.line(330, 360, 367, 360); p.line(403, 360, ANO, 360); p.line(ANO, 360, ANO, BOT);
     p.line(280, 345, 280, 375); p.strokeWeight(4); p.line(292, 352, 292, 368); p.strokeWeight(2);   // battery: long + short
     p.line(292, 360, 330, 360);
-    p.fill(255); p.circle(385, 360, 44); p.noFill();
+    p.fill(255); p.circle(385, 360, 36); p.noFill();
     lab('$\\text{A}$', 385, 360 + fh * 0.36, 'c', fh * 1.2, INK);
-    lab('$-$', CAT - 18, TOP + fh, 'c', fh * 1.3, INK); lab('$+$', ANO + 18, TOP + fh, 'c', fh * 1.3, INK);
+    lab('$+$', CAT - 16, BOT + 18, 'c', fh * 1.3, INK); lab('$-$', ANO + 16, BOT + 18, 'c', fh * 1.3, INK);   // retarding: cathode +, collector −, below the beam
     lab(`$U = ${tx(s.U, 2)}\\,\\text{V}$`, 286, 340, 'c', fh, INK);
-    lab(`$I = ${tx(s.I, 1)}\\,\\text{nA}$`, 385, 395, 'c', fh, INK);
-    lab(__('katodi'), CAT, TOP - 10, 'c', fh, MUTED); lab(__('kerain'), ANO, TOP - 10, 'c', fh, MUTED);
-    lab(`$\\lambda = ${tx(s.lam, 0)}\\,\\text{nm}$` + (s.lam < 380 ? ' ' + __('uv') : ''), 22, 108, 'l', fh, INK);
-    lab(`$E = hf = ${tx(s.Eph, 2)}\\,\\text{eV}$`, 22, 26, 'l', fh, INK);
+    lab(`$I = ${tx(s.I, 1)}\\,\\text{nA}$`, 407, 384 + fh * 0.4, 'l', fh, INK);   // beside the ammeter, under the wire
+    lab(__('katodi'), CAT - 8, 345, 'r', fh, MUTED); lab(__('kerain'), ANO + 8, 345, 'l', fh, MUTED);   // under the tube, clear of the light beam
+    lab(`$\\lambda = ${tx(s.lam, 0)}\\,\\text{nm}$` + (s.lam < 380 ? ' ' + __('uv') : ''), 22, 26, 'l', fh, INK);   // both readings on the top line, clear of the beam
+    lab(`$E = hf = ${tx(s.Eph, 2)}\\,\\text{eV}$`, 578, 26, 'r', fh, INK);
     if (s.Ek <= 0) lab(__('ei_elektroneja'), 315, 220, 'c', fh, [138, 59, 26]);
     window.simState.labels = labels;
   };

@@ -1,5 +1,462 @@
-{"version": 1, "contribution": "test", "learn": ["explain the photoelectric effect with photons", "calculate the maximum kinetic energy of an electron"],
- "activities": [{"id": "hook-1", "stage": "herata", "type": "hook", "text": "Test hook."},
-  {"id": "sim-1", "stage": "tutki", "type": "sim", "text": "Explore."},
-  {"id": "teoria-1", "stage": "selita", "type": "theory", "sections": ["Ydinajatus"]},
-  {"id": "check-1", "stage": "tarkista", "type": "choice", "prompt": "Q?", "choices": [{"text": "a", "correct": true, "feedback": "yes"}, {"text": "b", "feedback": "no"}]}]}
+{
+ "version": 1,
+ "contribution": "The first quantum explanation of the course: the photoelectric effect shows where the classical wave model of light fails, introduces the photon $E = hf$, the work function and Einstein's equation $E_{\\text{k,max}} = hf - W$, and prepares the measurement of Planck's constant at the Fotoni lab visit.",
+ "learn": [
+  "explain the photoelectric effect with photons and the work function.",
+  "calculate the energy of a photon and the largest kinetic energy of the freed electrons.",
+  "determine Planck's constant from the slope of a stopping-voltage graph."
+ ],
+ "prior": [
+  "Planck explained the radiation of hot objects with energy packets $E = hf$ (chapter *When classical physics ran out of answers*)",
+  "The frequency and wavelength of light are linked by $c = f\\lambda$, and a charge $q$ moving through a voltage $U$ gains or loses the energy $qU$ (earlier physics courses)"
+ ],
+ "activities": [
+  {
+   "id": "hook",
+   "stage": "herata",
+   "type": "hook",
+   "text": "Imagine a clean metal plate inside a glass tube with no air in it. You shine a very bright red lamp on the plate. Nothing happens: no electrons leave the plate, even after many minutes. Then you switch on a weak violet lamp. Electrons fly out of the plate at once. Around 1900 almost every physicist believed that light is a wave, and a stronger wave carries more energy.",
+   "question": "How can weak light do something that strong light cannot?"
+  },
+  {
+   "id": "review",
+   "stage": "herata",
+   "type": "choice",
+   "title": "Review: Planck's energy packets",
+   "prompt": "In the chapter *When classical physics ran out of answers*, Planck explained the radiation of hot objects by assuming that energy is exchanged in packets of size $E = hf$. What does this mean for radiation of a higher frequency $f$?",
+   "choices": [
+    {
+     "text": "Each energy packet is larger.",
+     "correct": true,
+     "feedback": "Right. $h$ is a constant, so the packet $hf$ grows in proportion to the frequency: doubling $f$ doubles the size of one packet. Today you will see what this means when light hits a metal."
+    },
+    {
+     "text": "There are more packets every second, but each packet is the same size.",
+     "feedback": "The size of a packet is $hf$, so it changes with the frequency. The *number* of packets every second is a different thing: it depends on how much radiation there is."
+    },
+    {
+     "text": "The packets become smaller, because high-frequency radiation has a short wavelength.",
+     "feedback": "A short wavelength means a *high* frequency ($c = f\\lambda$), and $E = hf$ grows with $f$. Short-wavelength radiation, such as ultraviolet, has the larger packets."
+    }
+   ]
+  },
+  {
+   "id": "pred-red",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Prediction 1: brighter red light",
+   "prompt": "Red light of wavelength $650\\ \\text{nm}$ falls on a sodium plate, and no current flows. Now you turn the red lamp up to full intensity. What happens?",
+   "justify": true,
+   "reveal": {
+    "after": "exp-stop",
+    "min": 2
+   },
+   "choices": [
+    {
+     "text": "Electrons start to leave the plate, because brighter light carries more energy.",
+     "feedback": "This is what the wave model predicts, and the experiment rejects it: at $650\\ \\text{nm}$ the current stayed at $0\\ \\text{nA}$ even at $100\\ \\%$ intensity. A red photon has only $1.91\\ \\text{eV}$, less than the work function of sodium, $2.36\\ \\text{eV}$, and more photons do not make one photon bigger."
+    },
+    {
+     "text": "After a delay, when the electrons have collected enough energy, they start to leave.",
+     "feedback": "The model values show no current at $650\\ \\text{nm}$, however long you wait. An electron absorbs one photon at a time and loses that energy again as heat before another photon arrives, so the energy does not add up. Real experiments show no such delay either."
+    },
+    {
+     "text": "Still no electrons leave the plate, however bright the red light is.",
+     "correct": true,
+     "feedback": "The model values support this: at $650\\ \\text{nm}$ the current is $0\\ \\text{nA}$ even at full intensity, but at shorter wavelengths current flows. One red photon has $1.91\\ \\text{eV}$, less than the work function of sodium, $2.36\\ \\text{eV}$. More photons every second do not help, because each electron takes the energy of only one photon."
+    }
+   ]
+  },
+  {
+   "id": "pred-bright",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Prediction 2: brighter violet light",
+   "prompt": "Violet light of wavelength $400\\ \\text{nm}$ frees electrons from sodium. You make the light three times as intense, from $30\\ \\%$ to $90\\ \\%$. What happens to the current $I$ and to the largest kinetic energy $E_{\\text{k,max}}$ of the electrons?",
+   "justify": true,
+   "reveal": {
+    "after": "exp-intensity",
+    "min": 2
+   },
+   "choices": [
+    {
+     "text": "$I$ stays the same, but $E_{\\text{k,max}}$ becomes three times as large.",
+     "feedback": "The model values show the opposite: $E_{\\text{k,max}}$ stayed at $0.74\\ \\text{eV}$, but the current grew from $6.0\\ \\text{nA}$ to $18.0\\ \\text{nA}$. The energy of one photon, $3.10\\ \\text{eV}$, depends on the wavelength only."
+    },
+    {
+     "text": "$I$ becomes three times as large, but $E_{\\text{k,max}}$ stays the same.",
+     "correct": true,
+     "feedback": "The model values support this: the current grew from $6.0\\ \\text{nA}$ to $18.0\\ \\text{nA}$, and $E_{\\text{k,max}}$ stayed at $0.74\\ \\text{eV}$. Three times as many photons every second free three times as many electrons, but each photon still has $3.10\\ \\text{eV}$."
+    },
+    {
+     "text": "Both become three times as large.",
+     "feedback": "Only the current grew, from $6.0\\ \\text{nA}$ to $18.0\\ \\text{nA}$. $E_{\\text{k,max}} = hf - W$ contains no intensity: it stayed at $0.74\\ \\text{eV}$, because each electron still takes the energy of just one photon."
+    },
+    {
+     "text": "Neither changes, because the colour of the light is the same.",
+     "feedback": "The colour fixes the energy of one photon, so $E_{\\text{k,max}}$ stayed at $0.74\\ \\text{eV}$. But the current grew from $6.0\\ \\text{nA}$ to $18.0\\ \\text{nA}$: brighter light means more photons, and more photons free more electrons."
+    }
+   ]
+  },
+  {
+   "id": "simulation",
+   "stage": "tutki",
+   "type": "sim",
+   "text": "A photocell: light falls on a metal plate in a vacuum tube. Change the wavelength, the intensity and the retarding voltage, and watch the electrons and the current.",
+   "howto": "*Wavelength* sets the colour of the light (below $380\\ \\text{nm}$ it is ultraviolet, drawn grey-violet). *Intensity* sets how many photons arrive every second. *Voltage* $U$ is the retarding voltage: it makes the collector negative, so it pushes the electrons back. Raise $U$ slowly until the ammeter shows $I = 0.0\\ \\text{nA}$: that is the stopping voltage $U_\\text{s}$. The slider moves in steps of $0.02\\ \\text{V}$; after clicking it, the arrow keys move it one step at a time. *Metal* changes the work function. *Speed* changes only the animation.",
+   "model": "Each photon frees at most one electron, and only if $hf > W$. The work functions are typical textbook values (caesium $2.14\\ \\text{eV}$, potassium $2.29\\ \\text{eV}$, sodium $2.36\\ \\text{eV}$, zinc $4.3\\ \\text{eV}$); a real surface can differ by some tenths of an electronvolt. The freed electrons have kinetic energies spread evenly between $0$ and $E_{\\text{k,max}}$. The current without a retarding voltage is proportional to the intensity and the same for every wavelength, a simplification. All readings are values of the model, not measurements.",
+   "calc": "$f = c/\\lambda$ and $E = hf$ with $h = 6.62607015 \\cdot 10^{-34}\\ \\text{J} \\cdot \\text{s}$ and $c = 2.998 \\cdot 10^{8}\\ \\text{m/s}$, shown in electronvolts. $E_{\\text{k,max}} = hf - W$. With a retarding voltage $U$, only electrons with $E_\\text{k} > eU$ reach the collector, so $I = I_0 \\left(1 - \\dfrac{eU}{E_{\\text{k,max}}}\\right)$ for $eU < E_{\\text{k,max}}$ and $I = 0$ above, where $I_0 = 20\\ \\text{nA}$ at $100\\ \\%$ intensity. The current is zero from $U_\\text{s} = E_{\\text{k,max}}/e$ on."
+  },
+  {
+   "id": "exp-stop",
+   "stage": "tutki",
+   "type": "experiment",
+   "title": "Experiment 1: colour and the stopping voltage",
+   "intro": "Test prediction 1, then measure the stopping voltage. The metal is sodium and the lamp is at full intensity. Start at $650\\ \\text{nm}$ and record the reading. Then choose shorter wavelengths, for example $500$, $450$, $400$, $350$ and $300\\ \\text{nm}$. At each one, raise the voltage $U$ slowly until the current is $I = 0.0\\ \\text{nA}$, and record. Keep your table: you need it for the conclusion.",
+   "initial": {
+    "lambda": 650,
+    "intensity": 100,
+    "metal": "na",
+    "U": 0
+   },
+   "locked": [
+    "intensity",
+    "metal"
+   ],
+   "vary": "lambda",
+   "names": {
+    "lambda": "wavelength",
+    "intensity": "intensity",
+    "metal": "metal",
+    "U": "voltage U"
+   },
+   "units": {
+    "lambda": "nm",
+    "intensity": "%",
+    "U": "V"
+   },
+   "values": {
+    "metal": {
+     "na": "sodium"
+    }
+   },
+   "measure": [
+    {
+     "key": "f",
+     "label": "$f\\;(10^{14}\\,\\text{Hz})$"
+    },
+    {
+     "key": "U",
+     "label": "U"
+    },
+    {
+     "key": "I",
+     "label": "I (nA)"
+    }
+   ],
+   "min": 3
+  },
+  {
+   "id": "exp-intensity",
+   "stage": "tutki",
+   "type": "experiment",
+   "title": "Experiment 2: brighter light",
+   "intro": "Test prediction 2. Violet light ($400\\ \\text{nm}$) falls on sodium, and there is no retarding voltage. Change only the intensity, for example $30\\ \\%$, $60\\ \\%$ and $90\\ \\%$, and record the current and the largest kinetic energy at each one.",
+   "initial": {
+    "lambda": 400,
+    "intensity": 30,
+    "metal": "na",
+    "U": 0
+   },
+   "locked": [
+    "lambda",
+    "metal",
+    "U"
+   ],
+   "vary": "intensity",
+   "names": {
+    "lambda": "wavelength",
+    "intensity": "intensity",
+    "metal": "metal",
+    "U": "voltage U"
+   },
+   "units": {
+    "lambda": "nm",
+    "intensity": "%",
+    "U": "V"
+   },
+   "values": {
+    "metal": {
+     "na": "sodium"
+    }
+   },
+   "measure": [
+    {
+     "key": "I",
+     "label": "I (nA)"
+    },
+    {
+     "key": "Ekmax",
+     "label": "$E_{\\text{k,max}}\\;(\\text{eV})$"
+    }
+   ],
+   "min": 2
+  },
+  {
+   "id": "language-support",
+   "stage": "tutki",
+   "type": "text",
+   "text": "<div class=\"wordbank\"><h4>Word bank</h4><p>photon · photon energy $hf$ · work function $W$ · threshold frequency · intensity · current $I$ · stopping voltage $U_\\text{s}$ · largest kinetic energy $E_{\\text{k,max}}$ · to free (an electron) · to absorb · to depend on · to be independent of · proportional to</p></div>\n\n<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>The evidence suggests that …</li><li>When we increased the intensity, …</li><li>At a wavelength of … nm, the current stopped at …</li><li>This does not depend on …, but it does depend on …</li><li>The wave model predicts …, whereas the photon model …</li><li>I agree / I disagree with you, because …</li></ul></div>"
+  },
+  {
+   "id": "conclusion",
+   "stage": "tutki",
+   "type": "explain",
+   "title": "Conclusion: what frees the electrons?",
+   "pair": "Pair work: one of you explains aloud with the sentence starters, the other asks questions; then each of you writes your own answer.",
+   "after": [
+    "exp-stop",
+    "exp-intensity"
+   ],
+   "prompt": "Discuss with a partner, then write four or five sentences. Use the numbers in your two tables. What decides *whether* electrons leave the sodium plate? What does a brighter lamp change, and what does it not change? How did the stopping voltage change when the wavelength became shorter?",
+   "model": "The evidence suggests that the colour of the light, not its brightness, decides whether electrons leave. At $650\\ \\text{nm}$ the current was $0\\ \\text{nA}$ even at full intensity, but at $500\\ \\text{nm}$ and shorter wavelengths current flowed. When we made violet light three times as intense, the current grew from $6.0\\ \\text{nA}$ to $18.0\\ \\text{nA}$, but the largest kinetic energy stayed at $0.74\\ \\text{eV}$. When the wavelength became shorter, the stopping voltage grew, for example from about $0.40\\ \\text{V}$ at $450\\ \\text{nm}$ to about $1.78\\ \\text{V}$ at $300\\ \\text{nm}$. So a higher frequency gives each electron more energy, and a brighter lamp only frees more electrons. These are values of a model, not measurements.",
+   "criteria": [
+    "The answer says that below a certain frequency (above a certain wavelength) no electrons leave, whatever the intensity, with a value from the table.",
+    "The answer says that a higher intensity gives a larger current but the same largest kinetic energy, with numbers.",
+    "The answer says that the stopping voltage grows when the frequency grows (the wavelength gets shorter).",
+    "The answer uses at least three words from the word bank correctly and says the values come from a model."
+   ]
+  },
+  {
+   "id": "theory-main",
+   "stage": "selita",
+   "type": "theory",
+   "sections": [
+    "Puzzle",
+    "Ydinajatus",
+    "Kaava"
+   ]
+  },
+  {
+   "id": "vocabulary",
+   "stage": "selita",
+   "type": "text",
+   "title": "Words of the lesson",
+   "text": "Check the key words before you read about the people behind the equation.\n\n<div class=\"fx\" data-fx=\"match\" id=\"fx-pe-words\"><script type=\"application/json\">{\"prompt\": \"Match each word with its meaning.\", \"options\": [\"a packet of light energy\", \"least energy to leave a metal\", \"lowest frequency to free electrons\", \"voltage that stops all electrons\", \"an electron freed by light\", \"how bright the light is\"], \"items\": [{\"text\": \"photon\", \"answer\": \"a packet of light energy\", \"feedback\": \"Einstein's idea: light carries its energy in packets, and one packet has $E = hf$.\"}, {\"text\": \"work function\", \"answer\": \"least energy to leave a metal\", \"feedback\": \"The *work* is done against the pull of the metal; it depends on the metal, for sodium about $2.4\\\\ \\\\text{eV}$.\"}, {\"text\": \"threshold frequency\", \"answer\": \"lowest frequency to free electrons\", \"feedback\": \"A *threshold* is a limit you must cross, like the threshold of a door: $f_0 = W/h$.\"}, {\"text\": \"stopping voltage\", \"answer\": \"voltage that stops all electrons\", \"feedback\": \"At the stopping voltage the current falls to zero: $eU_\\\\text{s} = E_{\\\\text{k,max}}$.\"}, {\"text\": \"photoelectron\", \"answer\": \"an electron freed by light\", \"feedback\": \"*Photo-* means light (as in *photograph*): a photoelectron is set free by light.\"}, {\"text\": \"intensity\", \"answer\": \"how bright the light is\", \"feedback\": \"Intensity tells how *bright* the light is. In the photon model it means how many photons arrive every second.\"}], \"done\": \"All right. Use these words in your explanations today.\"}</script></div>"
+  },
+  {
+   "id": "theory-people",
+   "stage": "selita",
+   "type": "theory",
+   "sections": [
+    "People"
+   ]
+  },
+  {
+   "id": "people-task",
+   "stage": "selita",
+   "type": "explain",
+   "title": "Read and compare: three roles in one discovery",
+   "pair": "Pair work: each of you reads one or two biographies and tells your partner about them.",
+   "optional": true,
+   "prompt": "Read the three short biographies. Discuss with a partner, then write three sentences: one about Planck, one about Einstein and one about Millikan. Say what each one *did* for the photoelectric equation (proposed an idea, explained, tested). Which of them believed the photon idea at first?",
+   "model": "Planck introduced the energy packets $hf$ in 1900 to explain the radiation of hot objects, but he thought of them as a mathematical step and at first rejected light quanta. Einstein proposed in 1905 that light itself consists of quanta and used this idea to explain the photoelectric effect with the equation $E_{\\text{k,max}} = hf - W$. Millikan tested the equation for about ten years and confirmed it in 1914–1916, although he did not believe in light quanta; he also measured $h$ from the slope. Only Einstein believed the photon idea at first.",
+   "criteria": [
+    "The answer gives each person a different role: Planck an idea about energy packets, Einstein the photon explanation, Millikan the experimental test.",
+    "The answer says that Planck and Millikan both doubted light quanta at first.",
+    "Each sentence has a verb of action in the past tense (introduced, proposed, tested, confirmed)."
+   ]
+  },
+  {
+   "id": "back-to-predictions",
+   "stage": "selita",
+   "type": "reflect",
+   "title": "Back to your predictions",
+   "prompt": "Compare your predictions with your tables and with the photon model. Then answer the opening question in one or two sentences: why can a dim violet lamp free electrons when a bright red lamp cannot?",
+   "predictions": [
+    "pred-red",
+    "pred-bright"
+   ]
+  },
+  {
+   "id": "example",
+   "stage": "sovella",
+   "type": "theory",
+   "sections": [
+    "Esimerkki"
+   ]
+  },
+  {
+   "id": "planck-data",
+   "stage": "sovella",
+   "type": "interpret",
+   "title": "Planck's constant from example data",
+   "source": "example",
+   "text": "A group measured the stopping voltage of a photocell with the spectral lines of a mercury lamp, like the measurement at Fotoni. The numbers below are an invented example, rounded like real readings.\n\n| Wavelength $\\lambda$ (nm) | Frequency $f$ ($10^{14}\\ \\text{Hz}$) | Stopping voltage $U_\\text{s}$ (V) |\n| --- | --- | --- |\n| 578.0 | 5.19 | 0.25 |\n| **546.1** | **5.49** | **0.37** |\n| 435.8 | 6.88 | 0.94 |\n| 404.7 | 7.41 | 1.17 |\n| **365.0** | **8.21** | **1.49** |",
+   "question": {
+    "type": "numeric",
+    "prompt": "Use the two rows in bold. Calculate Planck's constant $h$ from the slope of the line $U_\\text{s} = \\dfrac{h}{e}\\,f - \\dfrac{W}{e}$. Give $h$ as a number times $10^{-34}\\ \\text{J} \\cdot \\text{s}$: for example, type $6.1$ for $6.1 \\cdot 10^{-34}\\ \\text{J} \\cdot \\text{s}$.",
+    "answer": 6.6,
+    "unit": "· 10⁻³⁴ J·s",
+    "tolerance": 0.02,
+    "hints": [
+     "The slope of the line is $\\Delta U_\\text{s} / \\Delta f$. Which two values of $U_\\text{s}$ and $f$ do you need?",
+     "The slope is $h/e$, so $h = e \\cdot \\dfrac{\\Delta U_\\text{s}}{\\Delta f}$, with $e = 1.602 \\cdot 10^{-19}\\ \\text{C}$.",
+     "$\\Delta U_\\text{s} = 1.49\\ \\text{V} - 0.37\\ \\text{V} = 1.12\\ \\text{V}$ and $\\Delta f = (8.21 - 5.49) \\cdot 10^{14}\\ \\text{Hz} = 2.72 \\cdot 10^{14}\\ \\text{Hz}$."
+    ],
+    "mistakes": [
+     {
+      "value": 4.12,
+      "feedback": "You found the slope $\\Delta U_\\text{s}/\\Delta f = 4.12 \\cdot 10^{-15}\\ \\text{V} \\cdot \\text{s}$. That is $h/e$, not $h$: multiply it by $e = 1.602 \\cdot 10^{-19}\\ \\text{C}$."
+     },
+     {
+      "value": 2.91,
+      "feedback": "You used only one point, $h = eU_\\text{s}/f$. That forgets the work function: $eU_\\text{s} = hf - W$. Use the *difference* of two points, so that $W$ cancels."
+     }
+    ],
+    "solution": "**Given:** from the example table, $f_1 = 5.49 \\cdot 10^{14}\\ \\text{Hz}$, $U_1 = 0.37\\ \\text{V}$ and $f_2 = 8.21 \\cdot 10^{14}\\ \\text{Hz}$, $U_2 = 1.49\\ \\text{V}$; elementary charge $e = 1.602 \\cdot 10^{-19}\\ \\text{C}$\n\n**Find:** Planck's constant $h$ in $\\text{J} \\cdot \\text{s}$\n\n**Principle:** Einstein's equation with the stopping voltage, $eU_\\text{s} = hf - W$, gives a straight line $U_\\text{s} = \\dfrac{h}{e}f - \\dfrac{W}{e}$. Its slope is $h/e$. Taking the difference of two points removes the unknown work function $W$.\n\n**Formula:** $eU_2 - eU_1 = hf_2 - hf_1$, from which\n\n$$h = \\frac{e\\,(U_2 - U_1)}{f_2 - f_1}$$\n\n**Conversions:** None are needed: volts times coulombs give joules, and $\\text{J}/\\text{Hz} = \\text{J} \\cdot \\text{s}$. The frequencies are written out with the power of ten.\n\n**Substitution:** $h = \\dfrac{1.602 \\cdot 10^{-19}\\ \\text{C} \\cdot (1.49\\ \\text{V} - 0.37\\ \\text{V})}{(8.21 - 5.49) \\cdot 10^{14}\\ \\text{Hz}} = \\dfrac{1.794 \\cdot 10^{-19}\\ \\text{J}}{2.72 \\cdot 10^{14}\\ \\text{Hz}} = 6.597 \\cdot 10^{-34}\\ \\text{J} \\cdot \\text{s}$\n\n**Answer:** $h \\approx 6.60 \\cdot 10^{-34}\\ \\text{J} \\cdot \\text{s}$, three significant figures, as in the differences $1.12\\ \\text{V}$ and $2.72 \\cdot 10^{14}\\ \\text{Hz}$.\n\n**Reasonableness:** The exact value is $6.626 \\cdot 10^{-34}\\ \\text{J} \\cdot \\text{s}$, so the result is about $0.4\\ \\%$ too small, which is well within the reading precision of $0.01\\ \\text{V}$: an error of $0.01\\ \\text{V}$ in $\\Delta U_\\text{s}$ changes $h$ by almost $1\\ \\%$. Using two points far apart, as here, keeps this error small."
+   }
+  },
+  {
+   "id": "find-error",
+   "stage": "sovella",
+   "type": "choice",
+   "title": "Find the error",
+   "optional": true,
+   "prompt": "Light of wavelength $500\\ \\text{nm}$ falls on caesium, $W = 2.14\\ \\text{eV}$. A student writes:\n\n$$E = \\frac{hc}{\\lambda} = 3.97 \\cdot 10^{-19}\\ \\text{J}$$\n\n$$\\begin{aligned} E_{\\text{k,max}} &= E - W \\\\ &= 3.97 - 2.14 = 1.83\\ \\text{eV} \\end{aligned}$$\n\nWhere is the error?",
+   "choices": [
+    {
+     "text": "The photon energy is in joules and the work function in electronvolts: $E = 3.97 \\cdot 10^{-19}\\ \\text{J} = 2.48\\ \\text{eV}$, so $E_{\\text{k,max}} = 0.34\\ \\text{eV}$.",
+     "correct": true,
+     "feedback": "Right. The student subtracted numbers in two different units. Convert first: $3.97 \\cdot 10^{-19}\\ \\text{J} : 1.602 \\cdot 10^{-19}\\ \\text{J/eV} = 2.48\\ \\text{eV}$, then $2.48\\ \\text{eV} - 2.14\\ \\text{eV} = 0.34\\ \\text{eV}$."
+    },
+    {
+     "text": "The work function should be added: $E_{\\text{k,max}} = E + W$.",
+     "feedback": "Energy is conserved: the photon's energy is *shared* between the work function and the kinetic energy, $hf = W + E_{\\text{k,max}}$. So $W$ is subtracted. The real error is in the units."
+    },
+    {
+     "text": "The wavelength should be in nanometres in $hc/\\lambda$, which gives a different photon energy.",
+     "feedback": "With $\\lambda = 5.00 \\cdot 10^{-7}\\ \\text{m}$ in SI units, $hc/\\lambda = 3.97 \\cdot 10^{-19}\\ \\text{J}$ is right. The error comes in the next line, where joules and electronvolts are mixed."
+    },
+    {
+     "text": "There is no error in the calculation.",
+     "feedback": "Look at the units in the subtraction: $3.97$ is in units of $10^{-19}\\ \\text{J}$, but $2.14$ is in electronvolts. The answer $1.83\\ \\text{eV}$ is about five times too large."
+    }
+   ]
+  },
+  {
+   "id": "misconception",
+   "stage": "sovella",
+   "type": "theory",
+   "sections": [
+    "Yleinen virhekäsitys"
+   ]
+  },
+  {
+   "id": "check-1",
+   "stage": "tarkista",
+   "type": "choice",
+   "title": "1. Concept: brightness or colour?",
+   "prompt": "Zinc has a work function of about $4.3\\ \\text{eV}$. One zinc plate is lit by a very bright green lamp ($530\\ \\text{nm}$, photon energy $2.34\\ \\text{eV}$) for an hour. Another zinc plate is lit for one second by a dim ultraviolet lamp ($250\\ \\text{nm}$, photon energy $4.96\\ \\text{eV}$). Which plate gives off electrons?",
+   "choices": [
+    {
+     "text": "Only the plate under the dim ultraviolet lamp, and the electrons leave at once.",
+     "correct": true,
+     "feedback": "Right. One ultraviolet photon, $4.96\\ \\text{eV}$, is more than the work function, so it can free an electron immediately. A green photon, $2.34\\ \\text{eV}$, is too small, and a brighter lamp or a longer time only gives more photons that are too small."
+    },
+    {
+     "text": "Only the plate under the bright green lamp, because it receives far more energy in an hour.",
+     "feedback": "The total energy is large, but it arrives in packets of $2.34\\ \\text{eV}$, and each electron takes only one packet. Since $2.34\\ \\text{eV} < 4.3\\ \\text{eV}$, no electron can leave. This was exactly the wave model's mistake."
+    },
+    {
+     "text": "Both plates, the green one after a delay while the energy builds up.",
+     "feedback": "An electron does not store the energy of many photons: the energy turns into heat in the metal before the next photon arrives. There is no delay that helps, and green light never frees electrons from zinc."
+    },
+    {
+     "text": "Neither plate, because the ultraviolet lamp is too dim.",
+     "feedback": "A dim lamp sends fewer photons, but each ultraviolet photon still has $4.96\\ \\text{eV}$, more than $4.3\\ \\text{eV}$. So a few electrons leave: the current is small, not zero."
+    }
+   ]
+  },
+  {
+   "id": "check-2",
+   "stage": "tarkista",
+   "type": "choice",
+   "title": "2. Calculation: the stopping voltage",
+   "prompt": "Light with a photon energy of $3.10\\ \\text{eV}$ ($400\\ \\text{nm}$) falls on sodium, $W = 2.36\\ \\text{eV}$. What is the stopping voltage $U_\\text{s}$?",
+   "choices": [
+    {
+     "text": "$3.10\\ \\text{V}$",
+     "feedback": "This is the photon energy divided by $e$. But the electron first uses $2.36\\ \\text{eV}$ to escape: $eU_\\text{s} = hf - W$."
+    },
+    {
+     "text": "$5.46\\ \\text{V}$",
+     "feedback": "You added the work function. The photon's energy is shared: $hf = W + E_{\\text{k,max}}$, so $E_{\\text{k,max}} = 3.10\\ \\text{eV} - 2.36\\ \\text{eV}$."
+    },
+    {
+     "text": "$0.74\\ \\text{V}$",
+     "correct": true,
+     "feedback": "Right. $E_{\\text{k,max}} = 3.10\\ \\text{eV} - 2.36\\ \\text{eV} = 0.74\\ \\text{eV}$, and $eU_\\text{s} = E_{\\text{k,max}}$ gives $U_\\text{s} = 0.74\\ \\text{V}$. An energy in electronvolts and the voltage in volts have the same number for one electron."
+    },
+    {
+     "text": "$1.19 \\cdot 10^{-19}\\ \\text{V}$",
+     "feedback": "$1.19 \\cdot 10^{-19}$ is $E_{\\text{k,max}}$ in *joules*. The voltage is $U_\\text{s} = E_{\\text{k,max}}/e = 1.19 \\cdot 10^{-19}\\ \\text{J} : 1.602 \\cdot 10^{-19}\\ \\text{C} = 0.74\\ \\text{V}$."
+    }
+   ]
+  },
+  {
+   "id": "check-3",
+   "stage": "tarkista",
+   "type": "choice",
+   "title": "3. Graph: two metals",
+   "prompt": "Students measure the stopping voltage $U_\\text{s}$ at several frequencies $f$ for caesium ($W = 2.14\\ \\text{eV}$) and for zinc ($W = 4.3\\ \\text{eV}$), and draw both graphs in one coordinate system. How do the two lines compare?",
+   "choices": [
+    {
+     "text": "The zinc line is steeper, because zinc has the larger work function.",
+     "feedback": "The slope of $U_\\text{s} = \\dfrac{h}{e}f - \\dfrac{W}{e}$ is $h/e$, which contains no property of the metal. The work function only moves the line along the frequency axis."
+    },
+    {
+     "text": "They are the same line, because $h$ is the same for every metal.",
+     "feedback": "The slopes are the same, but $W$ is different, so the lines start at different threshold frequencies $f_0 = W/h$: caesium at about $5.2 \\cdot 10^{14}\\ \\text{Hz}$, zinc at about $10.4 \\cdot 10^{14}\\ \\text{Hz}$."
+    },
+    {
+     "text": "They are parallel; the zinc line starts at a higher frequency on the $f$ axis.",
+     "correct": true,
+     "feedback": "Right. Both lines have the slope $h/e$. Zinc needs more energy, so its threshold frequency $f_0 = W/h \\approx 10.4 \\cdot 10^{14}\\ \\text{Hz}$ is higher than that of caesium, $5.2 \\cdot 10^{14}\\ \\text{Hz}$, and its line lies to the right."
+    },
+    {
+     "text": "The caesium line is steeper, because caesium releases more electrons.",
+     "feedback": "The number of electrons changes the *current*, not the stopping voltage. The slope of every $U_\\text{s}$–$f$ line is $h/e$."
+    }
+   ]
+  },
+  {
+   "id": "check-explain",
+   "stage": "tarkista",
+   "type": "explain",
+   "title": "4. Explain and argue",
+   "prompt": "Your friend says: \"If we only had a powerful enough red laser, it would knock electrons out of zinc.\" Do you agree? Explain with the photon model and a calculation or a number, and suggest what light would work instead.",
+   "model": "I disagree. Red light of about $650\\ \\text{nm}$ has photons of $hf = hc/\\lambda \\approx 1.9\\ \\text{eV}$, but the work function of zinc is about $4.3\\ \\text{eV}$. Each electron absorbs only one photon, so a more powerful laser only sends more photons that are each too small: the current stays zero. Light works only if $hf > W$, so the wavelength must be shorter than $hc/W \\approx 290\\ \\text{nm}$. Ultraviolet light, even a dim lamp, would free electrons from zinc.",
+   "criteria": [
+    "The answer compares the energy of one red photon (about $1.9\\ \\text{eV}$) with the work function of zinc (about $4.3\\ \\text{eV}$).",
+    "The answer explains that a more powerful laser means more photons, not bigger ones, and that one electron takes one photon.",
+    "The answer suggests ultraviolet light, ideally with the threshold wavelength (about $290\\ \\text{nm}$) or frequency.",
+    "The answer takes a clear position (agree or disagree) and gives a reason."
+   ]
+  },
+  {
+   "id": "summary",
+   "stage": "tarkista",
+   "type": "theory",
+   "sections": [
+    "Tiivistelmä"
+   ]
+  },
+  {
+   "id": "french-corner",
+   "stage": "tarkista",
+   "type": "text",
+   "text": "<div class=\"french-corner\"><h4>Le coin français</h4><p>Physics is the same in every language. In French, the photoelectric effect is <span lang=\"fr\">l'effet photoélectrique</span>, and Einstein's idea is that <span lang=\"fr\">la lumière</span> is made of <span lang=\"fr\">photons</span>. Listen, repeat, and then say the last sentence to your partner.</p></div>\n\n<div class=\"fx\" data-fx=\"say\" id=\"fx-pe-french\"><script type=\"application/json\">{\"lang\": \"fr-FR\", \"title\": \"Le coin français: light and electrons\", \"phrases\": [{\"fr\": \"la lumière\", \"en\": \"light\", \"tip\": \"*lu-mee-AIR*: the French *u* is said with rounded lips, as in German *ü*.\"}, {\"fr\": \"un photon\", \"en\": \"a photon\", \"tip\": \"The final *-on* is nasal: do not say the *n*.\"}, {\"fr\": \"un électron\", \"en\": \"an electron\", \"tip\": \"Say the two words as one: *uh-nay-lek-TRON*.\"}, {\"fr\": \"l'énergie\", \"en\": \"energy\", \"tip\": \"*lay-nair-ZHEE*: the *g* before *i* sounds like the *s* in *measure*.\"}, {\"fr\": \"la fréquence\", \"en\": \"frequency\", \"tip\": \"*fray-KAHNSS*: *qu* is said like *k*.\"}, {\"fr\": \"La lumière violette libère des électrons.\", \"en\": \"Violet light frees electrons.\", \"tip\": \"*libérer* = to free, to release.\"}]}</script></div>"
+  }
+ ]
+}
