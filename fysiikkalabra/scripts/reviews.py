@@ -433,7 +433,7 @@ def _svg_pair(old, new):
 
 
 NUM = re.compile(r"(?<![\w.])-?\d+(?:\.\d+)?")
-LABEL_CALL = re.compile(r"""\b(?:lab|p\.text)\(\s*(['"`])((?:(?!\1)[^\\]|\\.)*)\1""")
+LABEL_CALL = re.compile(r"""\b(?:lab|label|p\.text)\(\s*(['"`])((?:(?!\1)[^\\]|\\.)*)\1""")
 
 
 def _label_args(line):
