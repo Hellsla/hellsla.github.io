@@ -51,6 +51,18 @@ beginner French; authors Lauri Hellsten and Marjo Inkala). Work in `fysiikkalabr
 - Changing facts (ITER schedule, records, device status, companies) carry their date ("as of November 2026").
   Distinguish results, institutional plans and corporate claims. Scientific gain $Q$ is not electricity.
 
+## Lessons from the pilot reviews (2026-11-01)
+- **Never give away a prediction.** The hook text, the *Why* line, the opening illustration and any component placed
+  before a prediction must not show or state its answer. Every `prediction` has a `reveal` tied to the evidence
+  that answers it (an experiment, a theory section, a source); feedback appears only then.
+- Correct options are not the longest: keep all options of a choice within about ±30 % of each other in length.
+- Sentence starters next to every argue/explain task, not only the first one.
+- One 75-minute lesson: a theory summary of at most about 500 words; biographies and extras `optional`.
+- French tips for Finnish learners compare with Finnish sounds (French *u* ≈ Finnish *y*), not German.
+- `teacher.md` includes a plan for fast pairs and for running out of time.
+- `scripts/test_inquiry.py` and `check_choices.py` do not know units yet: test the inquiry mechanics yourself in
+  the browser (predictions lock, reveals open at the right point, model answers stay closed until the student writes).
+
 ## Checks before you hand over (each unit)
 `python3 scripts/units.py check` (no errors) · `python3 scripts/build.py <id>` → `preview/en/<id>.html` ·
 `python3 scripts/check_layout.py <id> --width 360` and `--width 1280` (all OK) · `python3 scripts/screenshot.py <id>`
