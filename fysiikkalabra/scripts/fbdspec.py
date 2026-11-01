@@ -170,6 +170,19 @@ def _surface(f, p, q, solid):
         k += 16
 
 
+def _meet(p, q, a, b, pad):
+    """Whether segment p-q comes within pad of segment a-b (both in figure coords)."""
+    def d(pt, u, v):
+        L2 = (v[0] - u[0]) ** 2 + (v[1] - u[1]) ** 2
+        t = 0 if not L2 else max(0, min(1, ((pt[0] - u[0]) * (v[0] - u[0]) + (pt[1] - u[1]) * (v[1] - u[1])) / L2))
+        return math.hypot(pt[0] - u[0] - t * (v[0] - u[0]), pt[1] - u[1] - t * (v[1] - u[1]))
+    def cr(p1, p2, p3, p4):
+        o = lambda a_, b_, c_: (b_[0] - a_[0]) * (c_[1] - a_[1]) - (b_[1] - a_[1]) * (c_[0] - a_[0])
+        return o(p1, p2, p3) * o(p1, p2, p4) < 0 and o(p3, p4, p1) * o(p3, p4, p2) < 0
+    if cr(p, q, a, b): return True
+    return min(d(p, a, b), d(q, a, b), d(a, p, q), d(b, p, q)) < pad
+
+
 def _forces(b, cx, cy, ang, shown, scale):
     """(sym, vec, at, kind, extra, description direction) of each force of a body; shown(size) is the drawn size."""
     out, faces = [], set()
@@ -266,6 +279,7 @@ def _exit(cx, cy, ang, at, d):
     return max(0.0, min(t)) if t else 0.0
 
 
+LEAST, CAP = 44.0, 300.0           # one body: the smallest force or component drawn at least LEAST, the largest at most CAP (visual audit 2026-11-01)
 EXIT = 24                          # a force drawn from inside the body reaches at least this far past its outline (visual audit 2026-11-01)
 
 
@@ -414,8 +428,8 @@ def draw(spec, fid, _frame=None):
                     if ang_ is not None:
                         d = math.radians(ang_ - b["axes"]); parts += [abs(size * math.cos(d)), abs(size * math.sin(d))]
         least = min([x for x in parts if x > 1e-9 * big] or [big])
-        scale = max(scale, min(220.0, 32 * big / least) / big)
-        if least * scale < 31: small_body = True                                    # and a smaller rectangle, so the arrows outgrow it
+        scale = max(scale, min(CAP, LEAST * big / least) / big)
+        if least * scale < LEAST - 1: small_body = True                                    # and a smaller rectangle, so the arrows outgrow it
     shown = lambda size, horiz=False: floor(size * hz[horiz])
     for i, b in enumerate(bodies):
         _body_size()
@@ -427,8 +441,8 @@ def draw(spec, fid, _frame=None):
             a_dir = (0, 0) if b["a"] in ("0", "nolla", "none") else _unit(along(b["a"], surf))
         forces, faces = _restore_sums(_forces(b, cx, cy, ang, shown, scale), hz, big)
         short = _short_inside(forces, cx, cy, ang, scale)
-        if short and not two and not split and short < 52:                         # one body: first the whole figure on a larger
-            grow = min(52 / short, 220.0 / (big * scale))                          # scale, so the short arrow keeps a shaft outside
+        if short and not two and not split and short < 70:                         # one body: first the whole figure on a larger
+            grow = min(70 / short, CAP / (big * scale))                          # scale, so the short arrow keeps a shaft outside
             if grow > 1:
                 scale *= grow
                 forces, faces = _restore_sums(_forces(b, cx, cy, ang, shown, scale), hz, big)
@@ -480,7 +494,12 @@ def draw(spec, fid, _frame=None):
             nx, ny = -dir_[1], dir_[0]
             if ny < 0 or (ny == 0 and nx < 0): nx, ny = -nx, -ny                  # on the body's upper side
             R += math.hypot(W, H) / 2
-            st = (cx + nx * R - dir_[0] * 28, cy - ny * R + dir_[1] * 28)
+            def crosses(st):                                                       # over a force's shaft (visual audit 2026-11-01)
+                tip = (st[0] + dir_[0] * 56, st[1] - dir_[1] * 56)
+                return any(_meet(st, tip, a_, b_, 10) for a_, b_, *_ in arrows)
+            cands = [(cx + nx * (R + dr) - dir_[0] * (28 - sh), cy - ny * (R + dr) + dir_[1] * (28 - sh))
+                     for dr in (0, 24) for sh in (0, 48, -48, 96, -96)]
+            st = next((c for c in cands if not crosses(c)), cands[0])
             motion.append((sym_, dir_, st)); arrows.append((st, (st[0] + dir_[0] * 56, st[1] - dir_[1] * 56), sym_, False))
         offs, boxes = _place(arrows, solid, 600, 2 - shift, 458 - shift)          # the same in both passes
         ys += [y for bx in boxes for y in (bx[1], bx[3])] + [y for t, q, *_ in arrows for y in (t[1], q[1])] + [p[1] for p in solid]
