@@ -1,0 +1,296 @@
+{
+ "version": 1,
+ "contribution": "The first unit of the French chapter: complete beginners learn the phrases of a first meeting (greetings, name, origin, home, languages, goodbye), choose between tu and vous and between Bonjour, Bonsoir and Salut, practise four pronunciation points for Finnish speakers, and use them in a role-play set at a scenario visit to ITER.",
+ "learn": [
+  "greet people in French, choosing between *<span lang=\"fr\">Bonjour</span>*, *<span lang=\"fr\">Bonsoir</span>* and *<span lang=\"fr\">Salut</span>* and between *<span lang=\"fr\">tu</span>* and *<span lang=\"fr\">vous</span>*.",
+  "introduce yourself: your name, where you come from and live, and which languages you speak.",
+  "pronounce silent final letters, the French *r*, nasal vowels and the liaison in *<span lang=\"fr\">vous êtes</span>* understandably."
+ ],
+ "activities": [
+  {
+   "id": "hook",
+   "stage": "herata",
+   "type": "hook",
+   "text": "ITER is in the commune of Saint-Paul-lez-Durance (Bouches-du-Rhône), about 35 kilometres north of Aix-en-Provence. Its seven members are China, the European Union, India, Japan, Korea, Russia and the United States, so many people at work speak English, but the region around the site speaks French.\n\nYou step off the bus at the ITER visitor centre. It is ten o'clock in the morning and already warm. A woman with a visitor badge on her jacket smiles at you and says <span lang=\"fr\">« Bonjour ! »</span> Your teacher is still on the bus.",
+   "question": "What do you say back, and what do you say next?"
+  },
+  {
+   "id": "think",
+   "stage": "herata",
+   "type": "explain",
+   "title": "Think about it: greetings and the French you know",
+   "prompt": "In Finnish, you might say *moi* to a friend, *hei* to a teacher and *hyvää päivää* to an older stranger. Who do you greet with which word, and why? Then write down every French word or phrase you already know or recognise, for example from films, songs, food or signs.",
+   "pair": "Discuss with a partner for two minutes, then write a few lines together.",
+   "model": "We choose the greeting by the person and the situation: friends get *moi* or *terve*, adults we do not know get *hei* or *päivää*, and very formal situations *hyvää päivää*. French works the same way, but the polite form is used more. French we already recognise: <span lang=\"fr\">bonjour</span>, <span lang=\"fr\">merci</span>, <span lang=\"fr\">au revoir</span>, <span lang=\"fr\">oui</span>, <span lang=\"fr\">non</span>, <span lang=\"fr\">s'il vous plaît</span>, <span lang=\"fr\">croissant</span>, <span lang=\"fr\">café</span>, <span lang=\"fr\">restaurant</span>, <span lang=\"fr\">bon appétit</span>.",
+   "criteria": [
+    "I name at least two greetings and say who each one is for.",
+    "I explain that the choice depends on how well we know the person and how formal the situation is.",
+    "I list some French words or phrases I already know."
+   ]
+  },
+  {
+   "id": "pred-greet",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Prediction 1: the first word",
+   "prompt": "It is Monday, ten o'clock in the morning. You arrive at the reception desk of the visitor centre. The receptionist is a woman of about fifty whom you have never met. What do you say first?",
+   "justify": true,
+   "choices": [
+    {
+     "text": "<span lang=\"fr\">Bonjour, madame.</span>",
+     "correct": true,
+     "feedback": "Yes. <span lang=\"fr\">Bonjour</span> is the daytime greeting for anyone, and <span lang=\"fr\">madame</span> makes it polite. An adult you have never met, at work: this is exactly the place for the polite form."
+    },
+    {
+     "text": "<span lang=\"fr\">Salut !</span>",
+     "feedback": "<span lang=\"fr\">Salut</span> means *hi*, and it is for friends and people your own age. To a receptionist you do not know it sounds too familiar, as if you said *moikka* to a stranger at an office. Use <span lang=\"fr\">Bonjour, madame.</span>"
+    },
+    {
+     "text": "<span lang=\"fr\">Bonsoir, madame.</span>",
+     "feedback": "<span lang=\"fr\">Bonsoir</span> is polite, but it means *good evening*. At ten in the morning the greeting is <span lang=\"fr\">Bonjour</span>."
+    },
+    {
+     "text": "<span lang=\"fr\">Au revoir, madame.</span>",
+     "feedback": "<span lang=\"fr\">Au revoir</span> means *goodbye*: you say it when you leave. When you arrive, say <span lang=\"fr\">Bonjour, madame.</span>"
+    }
+   ]
+  },
+  {
+   "id": "pred-name",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Prediction 2: asking a name",
+   "prompt": "An engineer of about forty shows your group around. You want to ask her name. Which question fits best? You will find out in the theory summary.",
+   "justify": true,
+   "reveal": {
+    "after": "theory-tuvous"
+   },
+   "choices": [
+    {
+     "text": "<span lang=\"fr\">Comment vous appelez-vous ?</span>",
+     "correct": true,
+     "feedback": "Right. She is an adult you have just met, in a work situation, so you use *<span lang=\"fr\">vous</span>*: <span lang=\"fr\">Comment vous appelez-vous ?</span> If she later says <span lang=\"fr\">On peut se tutoyer</span>, you can change to *<span lang=\"fr\">tu</span>*."
+    },
+    {
+     "text": "<span lang=\"fr\">Comment tu t'appelles ?</span>",
+     "feedback": "This is correct French, but it uses *<span lang=\"fr\">tu</span>*, the informal *you*. To an adult you have just met at work it sounds too familiar. Use *<span lang=\"fr\">vous</span>* until she offers *<span lang=\"fr\">tu</span>*: <span lang=\"fr\">Comment vous appelez-vous ?</span>"
+    },
+    {
+     "text": "<span lang=\"fr\">Je m'appelle Claire ?</span>",
+     "feedback": "<span lang=\"fr\">Je m'appelle …</span> means *my name is …*: it is the answer, not the question. To ask, say <span lang=\"fr\">Comment vous appelez-vous ?</span>"
+    },
+    {
+     "text": "<span lang=\"fr\">Où habitez-vous ?</span>",
+     "feedback": "This is polite, but it asks *where do you live?* To ask her name, say <span lang=\"fr\">Comment vous appelez-vous ?</span>"
+    }
+   ]
+  },
+  {
+   "id": "listen",
+   "stage": "tutki",
+   "type": "text",
+   "title": "Listen: the phrases of a first meeting",
+   "text": "Listen to each phrase, first slowly, then at normal speed, and repeat it aloud. Read the tip: it tells you which letters are silent or how a sound is made.\n\n<div class=\"fx\" data-fx=\"say\" id=\"fx-say-phrases\"><script type=\"application/json\">{\"phrases\": [{\"fr\": \"Bonjour !\", \"en\": \"Hello! Good morning! Good afternoon! For the whole day, with anyone.\", \"tip\": \"*{fr}Bon{/fr}* is a nasal vowel: do not say the *n*. The *j* sounds like the *s* in English *pleasure*.\"}, {\"fr\": \"Bonjour, madame.\", \"en\": \"Hello (to a woman). Polite: use it with adults you do not know.\", \"tip\": \"Stress the end of the phrase: ma-DAM.\"}, {\"fr\": \"Bonjour, monsieur.\", \"en\": \"Hello (to a man). Polite.\", \"tip\": \"*{fr}Monsieur{/fr}* sounds roughly like Finnish *mösjöö*: the *n* and the final *r* are silent.\"}, {\"fr\": \"Bonsoir !\", \"en\": \"Good evening! In the evening, when you meet and also when you leave.\", \"tip\": \"*{fr}oi{/fr}* sounds like *{fr}wa{/fr}*; the final *r* is heard.\"}, {\"fr\": \"Salut !\", \"en\": \"Hi! or Bye! Only with friends and people of your own age.\", \"tip\": \"The French *u* is the Finnish *y*: sa-LY. The final *t* is silent.\"}, {\"fr\": \"Comment tu t'appelles ?\", \"en\": \"What is your name? (to a friend or someone your age, tu)\", \"tip\": \"The *{fr}-ent{/fr}* of *{fr}comment{/fr}* and the *{fr}-es{/fr}* of *{fr}appelles{/fr}* are silent.\"}, {\"fr\": \"Comment vous appelez-vous ?\", \"en\": \"What is your name? (polite, vous)\", \"tip\": \"Liaison: *{fr}vous‿appelez{/fr}* sounds like *{fr}vu-za-plé{/fr}*.\"}, {\"fr\": \"Je m'appelle Aino.\", \"en\": \"My name is Aino. (Literally: I call myself Aino.)\", \"tip\": \"*{fr}Je{/fr}* has a short, weak vowel, close to Finnish *ö*.\"}, {\"fr\": \"Enchanté.\", \"en\": \"Pleased to meet you. (A woman writes *{fr}Enchantée{/fr}*; it sounds the same.)\", \"tip\": \"Two nasal vowels: *{fr}en{/fr}* and *{fr}an{/fr}*.\"}, {\"fr\": \"Comment ça va ?\", \"en\": \"How are you? How is it going?\", \"tip\": \"*ç* is always an *s*: sa va.\"}, {\"fr\": \"Ça va bien, merci. Et toi ?\", \"en\": \"I'm fine, thank you. And you? (tu)\", \"tip\": \"*{fr}toi{/fr}* sounds like *{fr}twa{/fr}*. *{fr}Bien{/fr}* ends in a nasal vowel.\"}, {\"fr\": \"Ça va bien, merci. Et vous ?\", \"en\": \"I'm fine, thank you. And you? (vous)\", \"tip\": \"The *t* of *{fr}et{/fr}* is never pronounced: *{fr}e vu{/fr}*.\"}, {\"fr\": \"Où habites-tu ?\", \"en\": \"Where do you live? (tu)\", \"tip\": \"The *h* is always silent in French: *{fr}u a-bit-ty{/fr}*.\"}, {\"fr\": \"J'habite à Espoo.\", \"en\": \"I live in Espoo. Use *à* with a town.\", \"tip\": \"*{fr}J'habite{/fr}* is said as one word: *{fr}ža-bit{/fr}*.\"}, {\"fr\": \"Je viens de Finlande.\", \"en\": \"I come from Finland. Use *{fr}de{/fr}* (from) with the country.\", \"tip\": \"*{fr}viens{/fr}* and *{fr}Fin-{/fr}* are nasal vowels.\"}, {\"fr\": \"Je suis finlandais.\", \"en\": \"I am Finnish (a boy or a man).\", \"tip\": \"The final *s* is silent: fin-lan-DÈ.\"}, {\"fr\": \"Je suis finlandaise.\", \"en\": \"I am Finnish (a girl or a woman).\", \"tip\": \"Now the *s* is heard, as a *z*: fin-lan-DÈZ.\"}, {\"fr\": \"Parles-tu anglais ?\", \"en\": \"Do you speak English? (tu)\", \"tip\": \"*{fr}Parles{/fr}* sounds like *{fr}parl{/fr}*: the *{fr}-es{/fr}* is silent.\"}, {\"fr\": \"Parlez-vous anglais ?\", \"en\": \"Do you speak English? (vous)\", \"tip\": \"*{fr}-ez{/fr}* sounds like Finnish *e*: par-LE.\"}, {\"fr\": \"Je parle un peu français.\", \"en\": \"I speak a little French.\", \"tip\": \"*{fr}eu{/fr}* in *{fr}peu{/fr}* is close to Finnish *ö*. The *s* of *{fr}français{/fr}* is silent.\"}, {\"fr\": \"Merci beaucoup !\", \"en\": \"Thank you very much!\", \"tip\": \"*{fr}beaucoup{/fr}*: bo-KU, the *p* is silent.\"}, {\"fr\": \"Au revoir !\", \"en\": \"Goodbye!\", \"tip\": \"*{fr}au{/fr}* is an *o*. Say the *r* at the back of the throat.\"}, {\"fr\": \"À bientôt !\", \"en\": \"See you soon!\", \"tip\": \"The final *t* is silent, and *{fr}bien{/fr}* is a nasal vowel.\"}]}</script></div>"
+  },
+  {
+   "id": "dialogue",
+   "stage": "tutki",
+   "type": "text",
+   "title": "A first meeting at ITER",
+   "text": "Read the dialogue first and notice three things: which greeting each person uses, whether they say *<span lang=\"fr\">tu</span>* or *<span lang=\"fr\">vous</span>*, and in which order the topics come.\n\n<div class=\"fx\" data-fx=\"dialogue\" id=\"fx-dlg-iter\"><script type=\"application/json\">{\"title\": \"**At the ITER visitor centre.** Aino, a Finnish student, meets Claire, a French engineer (both are invented characters).\", \"roles\": {\"A\": \"A · Aino\", \"B\": \"B · Claire\"}, \"lines\": [{\"role\": \"B\", \"fr\": \"Bonjour ! Bienvenue à ITER.\", \"en\": \"Hello! Welcome to ITER.\", \"cue\": \"Greet the visitor and welcome her to ITER.\"}, {\"role\": \"A\", \"fr\": \"Bonjour, madame. Merci !\", \"en\": \"Hello, madam. Thank you!\", \"cue\": \"Greet politely and say thank you.\"}, {\"role\": \"B\", \"fr\": \"Je m'appelle Claire. Je suis ingénieure ici. Comment vous appelez-vous ?\", \"en\": \"My name is Claire. I am an engineer here. What is your name?\", \"cue\": \"Say your name and job. Ask her name (vous).\"}, {\"role\": \"A\", \"fr\": \"Je m'appelle Aino. Enchantée !\", \"en\": \"My name is Aino. Pleased to meet you!\", \"cue\": \"Say your name. Say you are pleased to meet her.\"}, {\"role\": \"B\", \"fr\": \"Enchantée, Aino. D'où venez-vous ?\", \"en\": \"Pleased to meet you, Aino. Where do you come from?\", \"cue\": \"Answer, and ask where she comes from (vous).\"}, {\"role\": \"A\", \"fr\": \"Je viens de Finlande. Je suis finlandaise. J'habite à Espoo.\", \"en\": \"I come from Finland. I am Finnish. I live in Espoo.\", \"cue\": \"Say your country, your nationality and your home town.\"}, {\"role\": \"B\", \"fr\": \"Ah, la Finlande ! Comment ça va ? Pas trop chaud ?\", \"en\": \"Oh, Finland! How are you? Not too hot?\", \"cue\": \"React to the country. Ask how she is, and whether it is too hot.\"}, {\"role\": \"A\", \"fr\": \"Ça va bien, merci. Il fait chaud ! Et vous ?\", \"en\": \"I'm fine, thank you. It's hot! And you?\", \"cue\": \"Say you are fine and that it is hot. Ask her back (vous).\"}, {\"role\": \"B\", \"fr\": \"Très bien, merci. Vous parlez bien français !\", \"en\": \"Very well, thank you. You speak French well!\", \"cue\": \"Answer, and say she speaks French well.\"}, {\"role\": \"A\", \"fr\": \"Merci ! Je parle un peu français. Parlez-vous anglais ?\", \"en\": \"Thank you! I speak a little French. Do you speak English?\", \"cue\": \"Thank her, say you speak a little French, ask if she speaks English (vous).\"}, {\"role\": \"B\", \"fr\": \"Oui, bien sûr. Ici, on parle anglais avec les collègues de tous les pays.\", \"en\": \"Yes, of course. Here we speak English with colleagues from every country.\", \"cue\": \"Say yes, and that people at ITER speak English with colleagues from many countries.\"}, {\"role\": \"A\", \"fr\": \"Super ! Merci beaucoup, madame. Au revoir !\", \"en\": \"Great! Thank you very much, madam. Goodbye!\", \"cue\": \"Thank her politely and say goodbye.\"}, {\"role\": \"B\", \"fr\": \"Au revoir, Aino. Bonne visite et à bientôt !\", \"en\": \"Goodbye, Aino. Enjoy the visit and see you soon!\", \"cue\": \"Say goodbye, wish her a good visit, see you soon.\"}], \"task\": \"Work in pairs. **1 Read:** read the dialogue aloud together and listen to the lines. **2 Practise:** read the French only. **3 Perform:** say the lines from the English cues, without the French text. Then swap roles, and use your own name, nationality and home town.\"}</script></div>"
+  },
+  {
+   "id": "order",
+   "stage": "tutki",
+   "type": "text",
+   "title": "Order an evening conversation",
+   "text": "<div class=\"fx\" data-fx=\"order\" id=\"fx-order-evening\"><script type=\"application/json\">{\"prompt\": \"In the evening, Eetu from Finland meets Léa, a French student of his age, at the hotel. Put their conversation in order with the ↑ and ↓ buttons, then press *Check the order*.\", \"lang\": \"fr\", \"items\": [\"Léa : Salut ! Je m'appelle Léa. Et toi, comment tu t'appelles ?\", \"Eetu : Salut, Léa ! Je m'appelle Eetu. Je viens de Finlande.\", \"Léa : Cool ! Où habites-tu en Finlande ?\", \"Eetu : J'habite à Espoo. Et toi ?\", \"Léa : Moi, j'habite à Marseille. Tu parles français ?\", \"Eetu : Un peu. Je parle un peu français.\", \"Léa : Bravo ! Bon, à bientôt, Eetu !\", \"Eetu : Salut, Léa ! À bientôt !\"], \"hints\": [\"The conversation starts with a greeting and a name.\", \"Eetu answers the question about his name.\", \"A question about the country comes before a question about the town.\", \"Eetu answers *{fr}Où habites-tu ?{/fr}*\", \"*{fr}Et toi ?{/fr}* asks Léa where she lives.\", \"*{fr}Un peu{/fr}* answers *{fr}Tu parles français ?{/fr}*\", \"Who says goodbye first?\", \"The last line is a goodbye.\"], \"explain\": \"A greeting, names, where you come from, where you live, languages, goodbye: the same order as in most first meetings. Notice that Léa and Eetu say *{fr}tu{/fr}* and *{fr}Salut{/fr}*: they are young and of the same age.\"}</script></div>"
+  },
+  {
+   "id": "notice",
+   "stage": "tutki",
+   "type": "choice",
+   "title": "What did you notice?",
+   "prompt": "Compare the two conversations: Aino and Claire at the visitor centre, and Eetu and Léa at the hotel. Why do Eetu and Léa say *<span lang=\"fr\">tu</span>* and *<span lang=\"fr\">Salut</span>*, while Aino and Claire say *<span lang=\"fr\">vous</span>* and *<span lang=\"fr\">Bonjour</span>*?",
+   "choices": [
+    {
+     "text": "Eetu and Léa are young people of the same age, while Claire is an adult Aino has just met at work.",
+     "correct": true,
+     "feedback": "Yes. The choice depends on the people and the situation: young people of the same age use *<span lang=\"fr\">tu</span>* at once; with an adult in a formal or work setting you use *<span lang=\"fr\">vous</span>*."
+    },
+    {
+     "text": "Because it is evening: *<span lang=\"fr\">tu</span>* and *<span lang=\"fr\">Salut</span>* are used in the evening.",
+     "feedback": "The time of day changes only <span lang=\"fr\">Bonjour</span> to <span lang=\"fr\">Bonsoir</span>. *<span lang=\"fr\">Tu</span>* or *<span lang=\"fr\">vous</span>* depends on the people, not on the clock: Eetu would say *<span lang=\"fr\">vous</span>* to the hotel receptionist in the evening too."
+    },
+    {
+     "text": "Because Léa lives in Marseille, and people in the south always say *<span lang=\"fr\">tu</span>*.",
+     "feedback": "Where someone lives does not decide it. In every part of France you say *<span lang=\"fr\">vous</span>* to an adult you do not know, and young people of the same age say *<span lang=\"fr\">tu</span>* to each other."
+    },
+    {
+     "text": "Because Eetu speaks only a little French, and *<span lang=\"fr\">tu</span>* is easier for beginners.",
+     "feedback": "*<span lang=\"fr\">Tu</span>* is not a beginner's form: it is the informal *you*. Aino speaks only a little French too, but she correctly uses *<span lang=\"fr\">vous</span>* with an adult she has just met."
+    }
+   ]
+  },
+  {
+   "id": "theory-tuvous",
+   "stage": "selita",
+   "type": "theory",
+   "sections": [
+    "Tu or vous?"
+   ]
+  },
+  {
+   "id": "theory-sounds",
+   "stage": "selita",
+   "type": "theory",
+   "sections": [
+    "Sounds for Finnish speakers"
+   ]
+  },
+  {
+   "id": "theory-summary",
+   "stage": "selita",
+   "type": "theory",
+   "sections": [
+    "Tiivistelmä"
+   ]
+  },
+  {
+   "id": "gapfill",
+   "stage": "sovella",
+   "type": "text",
+   "title": "Complete the sentences",
+   "text": "<div class=\"fx\" data-fx=\"gapfill\" id=\"fx-gap-intro\"><script type=\"application/json\">{\"prompt\": \"Aino (a girl) talks with Claire, an engineer at ITER. In the evening, Eetu (a boy) talks with Léa, a French student of his age. Choose the word that fits each gap, then press *Check*.\", \"lang\": \"fr\", \"lines\": [{\"text\": \"Aino : [[Bonjour|Salut|Bonsoir]], madame. Je m'appelle Aino.\", \"feedback\": \"It is daytime and Claire is an adult Aino does not know: *{fr}Bonjour{/fr}* (with *{fr}madame{/fr}*) is the polite daytime greeting. *{fr}Salut{/fr}* is for friends; *{fr}Bonsoir{/fr}* is for the evening.\", \"en\": \"Hello, madam. My name is Aino.\"}, {\"text\": \"Aino : Comment vous [[appelez|appelle|appelles]]-vous ?\", \"feedback\": \"With *{fr}vous{/fr}* the verb ends in *{fr}-ez{/fr}*: *{fr}vous appelez{/fr}*. *{fr}Appelle{/fr}* goes with *{fr}je{/fr}*, *{fr}appelles{/fr}* with *{fr}tu{/fr}*.\", \"en\": \"What is your name?\"}, {\"text\": \"Aino : Je viens [[de|à|en]] Finlande. J'habite [[à|de|en]] Espoo.\", \"feedback\": \"You come *from* a country: *{fr}Je viens de Finlande{/fr}*. You live *{fr}in{/fr}* a town: *{fr}J'habite à Espoo{/fr}*.\", \"en\": \"I come from Finland. I live in Espoo.\"}, {\"text\": \"Aino : Je suis [[finlandaise|finlandais|Finlande]].\", \"feedback\": \"Aino is a girl, so she adds *{fr}-e{/fr}*: *{fr}finlandaise{/fr}* (the *s* is then heard as *z*). *{fr}Finlande{/fr}* is the country, not the nationality.\", \"en\": \"I am Finnish.\"}, {\"text\": \"Eetu : Je suis [[finlandais|finlandaise|Finlande]].\", \"feedback\": \"Eetu is a boy: *{fr}finlandais{/fr}*, with a silent *s*. *{fr}Finlandaise{/fr}* is the form for a girl or a woman.\", \"en\": \"I am Finnish.\"}, {\"text\": \"Eetu : Ça va bien, merci. Et [[toi|tu|te]] ?\", \"feedback\": \"After *{fr}et{/fr}* the form is *{fr}toi{/fr}*: *{fr}Et toi ?{/fr}* (And you?). *{fr}Tu{/fr}* comes only right before a verb, as in *{fr}tu parles{/fr}*.\", \"en\": \"I'm fine, thank you. And you?\"}, {\"text\": \"Eetu : Je [[parle|parlez|parles]] un peu français.\", \"feedback\": \"With *{fr}je{/fr}* the verb is *{fr}parle{/fr}* (the final *e* is silent). *{fr}Parlez{/fr}* goes with *{fr}vous{/fr}*, *{fr}parles{/fr}* with *{fr}tu{/fr}*.\", \"en\": \"I speak a little French.\"}, {\"text\": \"Eetu : [[Salut|Bonjour, monsieur|Bonsoir, madame]], Léa ! À bientôt !\", \"feedback\": \"Léa is a friend of his age, so *{fr}Salut{/fr}* fits, and it works for goodbye too. *{fr}Monsieur{/fr}* (for a man) and *{fr}madame{/fr}* (for a woman) are for adults you address politely.\", \"en\": \"Bye, Léa! See you soon!\"}]}</script></div>"
+  },
+  {
+   "id": "match",
+   "stage": "sovella",
+   "type": "text",
+   "title": "What does it mean?",
+   "text": "<div class=\"fx\" data-fx=\"match\" id=\"fx-match-phrases\"><script type=\"application/json\">{\"prompt\": \"Match each French phrase with its meaning. Then press *Check*.\", \"lang_items\": \"fr\", \"options\": [\"Good evening.\", \"Hi! (to a friend)\", \"Goodbye.\", \"See you soon!\", \"How are you?\", \"Where do you live?\", \"I come from Finland.\", \"I speak a little French.\", \"Pleased to meet you.\", \"Thank you very much.\"], \"items\": [{\"text\": \"Bonsoir.\", \"answer\": \"Good evening.\", \"feedback\": \"*{fr}Soir{/fr}* means evening: *{fr}bon soir{/fr}*, good evening.\"}, {\"text\": \"Salut !\", \"answer\": \"Hi! (to a friend)\", \"feedback\": \"*{fr}Salut{/fr}* is the informal greeting (and goodbye) between friends.\"}, {\"text\": \"Au revoir.\", \"answer\": \"Goodbye.\", \"feedback\": \"*{fr}Au revoir{/fr}*: literally, until we see each other again.\"}, {\"text\": \"À bientôt !\", \"answer\": \"See you soon!\", \"feedback\": \"*{fr}Bientôt{/fr}* means soon.\"}, {\"text\": \"Comment ça va ?\", \"answer\": \"How are you?\", \"feedback\": \"*{fr}Ça va ?{/fr}* asks how things are going. The answer is *{fr}Ça va bien, merci.{/fr}*\"}, {\"text\": \"Où habites-tu ?\", \"answer\": \"Where do you live?\", \"feedback\": \"*{fr}Où{/fr}* means where, and *{fr}habiter{/fr}* means to live (somewhere): *{fr}J'habite à Espoo.{/fr}*\"}, {\"text\": \"Je viens de Finlande.\", \"answer\": \"I come from Finland.\", \"feedback\": \"*{fr}Venir de{/fr}*: to come from. *{fr}Finlande{/fr}* is the country.\"}, {\"text\": \"Je parle un peu français.\", \"answer\": \"I speak a little French.\", \"feedback\": \"*{fr}Parler{/fr}*: to speak. *{fr}Un peu{/fr}*: a little.\"}, {\"text\": \"Enchanté.\", \"answer\": \"Pleased to meet you.\", \"feedback\": \"*{fr}Enchanté(e){/fr}* is what you say when you have just been introduced to someone.\"}, {\"text\": \"Merci beaucoup.\", \"answer\": \"Thank you very much.\", \"feedback\": \"*{fr}Beaucoup{/fr}* means a lot, very much.\"}], \"done\": \"You know the phrases of a first meeting.\"}</script></div>"
+  },
+  {
+   "id": "roleplay-help",
+   "stage": "sovella",
+   "type": "text",
+   "title": "Role-play: meeting at ITER",
+   "text": "Work in pairs. **Round 1:** A is a Finnish student, B is a researcher at ITER who speaks French (choose where B comes from: France, Italy, Japan, India …). Meet at the visitor centre in the morning, introduce yourselves and say goodbye. **Round 2:** swap roles. Now you are two young visitors who meet at the hotel in the evening. Speak without reading if you can; the word bank is there if you get stuck.\n\n<div class=\"wordbank\"><h4>Word bank</h4><p><span lang=\"fr\">Bonjour, madame / monsieur</span>, <span lang=\"fr\">Salut</span>, <span lang=\"fr\">Bonsoir</span>, <span lang=\"fr\">Je m'appelle …</span>, <span lang=\"fr\">Comment vous appelez-vous ?</span>, <span lang=\"fr\">Comment tu t'appelles ?</span>, <span lang=\"fr\">Enchanté(e)</span>, <span lang=\"fr\">Je viens de Finlande</span>, <span lang=\"fr\">Je suis finlandais / finlandaise</span>, <span lang=\"fr\">J'habite à …</span>, <span lang=\"fr\">Je parle un peu français</span>, <span lang=\"fr\">Parlez-vous anglais ?</span>, <span lang=\"fr\">Merci beaucoup</span>, <span lang=\"fr\">Au revoir</span>, <span lang=\"fr\">À bientôt</span></p></div><div class=\"wordbank\"><h4>Sentence starters</h4><ul><li><span lang=\"fr\">Bonjour, madame. Je m'appelle …</span></li><li><span lang=\"fr\">Je viens de … J'habite à …</span></li><li><span lang=\"fr\">Et vous, d'où venez-vous ?</span></li><li><span lang=\"fr\">Pardon, je parle un peu français. Parlez-vous anglais ?</span></li><li><span lang=\"fr\">Merci beaucoup ! Au revoir et à bientôt !</span></li></ul></div>"
+  },
+  {
+   "id": "roleplay",
+   "stage": "sovella",
+   "type": "explain",
+   "title": "Role-play: your dialogue",
+   "prompt": "After both rounds, write the French of the dialogue you performed in round 1, or at least six lines of it.",
+   "pair": "Perform the role-play with a partner first, then write it together. If you can, perform it to another pair, who check it with the criteria below.",
+   "model": "**Round 1 (polite):**\n\n- <span lang=\"fr\">B: Bonjour ! Bienvenue à ITER.</span>\n- <span lang=\"fr\">A: Bonjour, monsieur. Je m'appelle Eetu. Comment vous appelez-vous ?</span>\n- <span lang=\"fr\">B: Je m'appelle Marco. Je suis italien. Enchanté ! D'où venez-vous ?</span>\n- <span lang=\"fr\">A: Je viens de Finlande. Je suis finlandais. J'habite à Espoo.</span>\n- <span lang=\"fr\">B: Comment ça va ?</span>\n- <span lang=\"fr\">A: Ça va bien, merci. Et vous ?</span>\n- <span lang=\"fr\">B: Très bien, merci.</span>\n- <span lang=\"fr\">A: Je parle un peu français. Parlez-vous anglais ?</span>\n- <span lang=\"fr\">B: Oui, bien sûr !</span>\n- <span lang=\"fr\">A: Merci beaucoup, monsieur. Au revoir !</span>\n- <span lang=\"fr\">B: Au revoir, Eetu. À bientôt !</span>\n\n**Round 2 (informal, in the evening):**\n\n- <span lang=\"fr\">A: Salut ! Je m'appelle Léa. Et toi, comment tu t'appelles ?</span>\n- <span lang=\"fr\">B: Salut ! Je m'appelle Aino. Je viens de Finlande.</span>\n- <span lang=\"fr\">A: Où habites-tu ?</span>\n- <span lang=\"fr\">B: J'habite à Espoo. Et toi ?</span>\n- <span lang=\"fr\">A: J'habite à Marseille. Bon, à bientôt, Aino !</span>\n- <span lang=\"fr\">B: Salut, Léa ! À bientôt !</span>",
+   "criteria": [
+    "**Communicates the message:** we greet, say our names, where we come from and live, which languages we speak, and say goodbye.",
+    "**Polite form chosen correctly:** in round 1 we use *<span lang=\"fr\">Bonjour, madame / monsieur</span>* and *<span lang=\"fr\">vous</span>*; in round 2 *<span lang=\"fr\">Salut</span>* or *<span lang=\"fr\">Bonsoir</span>* and *<span lang=\"fr\">tu</span>*.",
+    "**Pronunciation understandable:** we do not pronounce the silent final letters, and we link *<span lang=\"fr\">vous‿êtes</span>* / *<span lang=\"fr\">vous‿appelez</span>*.",
+    "We speak mostly from memory and keep the conversation going when we get stuck (*<span lang=\"fr\">Pardon ?</span>*, *<span lang=\"fr\">Encore une fois, s'il vous plaît</span>*)."
+   ]
+  },
+  {
+   "id": "extension",
+   "stage": "sovella",
+   "type": "text",
+   "optional": true,
+   "title": "Extension: introducing a classmate",
+   "text": "To introduce someone else, change *<span lang=\"fr\">je</span>* to **<span lang=\"fr\">il</span>** (he) or **<span lang=\"fr\">elle</span>** (she). For a woman or a girl, the nationality takes *<span lang=\"fr\">-e</span>*, as before. Start with <span lang=\"fr\">Voici …</span> (This is …).\n\n<div class=\"fx\" data-fx=\"say\" id=\"fx-say-classmate\"><script type=\"application/json\">{\"phrases\": [{\"fr\": \"Voici Eetu.\", \"en\": \"This is Eetu.\", \"tip\": \"*{fr}Voici{/fr}*: vwa-SI.\"}, {\"fr\": \"Il s'appelle Eetu. Il est finlandais.\", \"en\": \"His name is Eetu. He is Finnish.\", \"tip\": \"*{fr}il{/fr}* (he) is said like Finnish *{fr}il{/fr}*.\"}, {\"fr\": \"Elle s'appelle Aino. Elle est finlandaise.\", \"en\": \"Her name is Aino. She is Finnish.\", \"tip\": \"*{fr}elle{/fr}* (she) is said *{fr}el{/fr}*; *{fr}elle est{/fr}* is linked: *{fr}e-lè{/fr}*.\"}, {\"fr\": \"Il habite à Espoo.\", \"en\": \"He lives in Espoo.\", \"tip\": \"Said together, as one word: *{fr}i-la-bit{/fr}*.\"}, {\"fr\": \"Elle parle un peu français.\", \"en\": \"She speaks a little French.\", \"tip\": \"*{fr}parle{/fr}* sounds the same with *{fr}je{/fr}*, *{fr}il{/fr}* and *{fr}elle{/fr}*.\"}]}</script></div>\n\n<div class=\"fx\" data-fx=\"gapfill\" id=\"fx-gap-classmate\"><script type=\"application/json\">{\"prompt\": \"Introduce Aino (a girl) and Eetu (a boy) to Claire. Choose the right word, then press *Check*.\", \"lang\": \"fr\", \"lines\": [{\"text\": \"Voici Aino. [[Elle|Il|Je]] s'appelle Aino.\", \"feedback\": \"Aino is a girl: *{fr}elle{/fr}* (she). *{fr}Il{/fr}* means he.\", \"en\": \"This is Aino. Her name is Aino.\"}, {\"text\": \"Elle [[est|suis|es]] finlandaise.\", \"feedback\": \"With *{fr}il{/fr}* and *{fr}elle{/fr}* the verb *{fr}être{/fr}* (to be) is *{fr}est{/fr}*. *{fr}Je suis{/fr}*, *{fr}tu es{/fr}*.\", \"en\": \"She is Finnish.\"}, {\"text\": \"Voici Eetu. Il [[habite|habites|habitez]] à Espoo.\", \"feedback\": \"With *{fr}il{/fr}* and *{fr}elle{/fr}* the verb ends in a silent *{fr}-e{/fr}*, as with *{fr}je{/fr}*: *{fr}il habite{/fr}*.\", \"en\": \"This is Eetu. He lives in Espoo.\"}, {\"text\": \"Il est [[finlandais|finlandaise|Finlande]].\", \"feedback\": \"Eetu is a boy: *{fr}finlandais{/fr}*.\", \"en\": \"He is Finnish.\"}]}</script></div>\n\nNow introduce your partner from the role-play to another pair: <span lang=\"fr\">Voici … Il / Elle s'appelle … Il / Elle vient de … Il / Elle habite à …</span>"
+  },
+  {
+   "id": "check-1",
+   "stage": "tarkista",
+   "type": "choice",
+   "title": "1. Greeting a professor",
+   "prompt": "At nine in the morning you enter a seminar room at ITER. Professor Dubois, a senior physicist you have never met, is standing at the door. What do you say?",
+   "choices": [
+    {
+     "text": "<span lang=\"fr\">Salut !</span>",
+     "feedback": "<span lang=\"fr\">Salut</span> is the informal *hi* for friends and people your age. To a professor you have never met it sounds disrespectful. Say <span lang=\"fr\">Bonjour, monsieur.</span>"
+    },
+    {
+     "text": "<span lang=\"fr\">Bonjour, monsieur.</span>",
+     "correct": true,
+     "feedback": "Yes: the daytime greeting, made polite with *<span lang=\"fr\">monsieur</span>*. The professor may offer a less formal tone later; it is his choice, not yours."
+    },
+    {
+     "text": "<span lang=\"fr\">Bonsoir, monsieur.</span>",
+     "feedback": "The tone is polite, but <span lang=\"fr\">Bonsoir</span> means *good evening*. At nine in the morning, say <span lang=\"fr\">Bonjour, monsieur.</span>"
+    },
+    {
+     "text": "<span lang=\"fr\">Salut, comment tu t'appelles ?</span>",
+     "feedback": "Both <span lang=\"fr\">Salut</span> and *<span lang=\"fr\">tu</span>* are informal: this is how you talk to a new friend of your age. To a professor: <span lang=\"fr\">Bonjour, monsieur. Comment vous appelez-vous ?</span>"
+    }
+   ]
+  },
+  {
+   "id": "check-2",
+   "stage": "tarkista",
+   "type": "choice",
+   "title": "2. Saying your nationality",
+   "prompt": "Aino, a Finnish girl, wants to say *I am Finnish*. Which sentence is correct?",
+   "choices": [
+    {
+     "text": "<span lang=\"fr\">Je suis finlandais.</span>",
+     "feedback": "This is the form for a boy or a man. A girl or a woman adds *<span lang=\"fr\">-e</span>*: <span lang=\"fr\">Je suis finlandaise.</span> You can hear the difference: the *s* is silent in *<span lang=\"fr\">finlandais</span>* but sounds like *z* in *<span lang=\"fr\">finlandaise</span>*."
+    },
+    {
+     "text": "<span lang=\"fr\">Je suis Finlande.</span>",
+     "feedback": "<span lang=\"fr\">Finlande</span> is the country. With *<span lang=\"fr\">je suis</span>* you need the nationality: <span lang=\"fr\">Je suis finlandaise.</span> The country goes with *<span lang=\"fr\">venir de</span>*: <span lang=\"fr\">Je viens de Finlande.</span>"
+    },
+    {
+     "text": "<span lang=\"fr\">Je suis finlandaise.</span>",
+     "correct": true,
+     "feedback": "Yes. *<span lang=\"fr\">Finlandaise</span>* is the feminine form, and in French a nationality is written with a small letter."
+    },
+    {
+     "text": "<span lang=\"fr\">Je viens finlandaise.</span>",
+     "feedback": "*<span lang=\"fr\">Je viens</span>* means *I come*, and it needs *<span lang=\"fr\">de</span>* and the country: <span lang=\"fr\">Je viens de Finlande.</span> For the nationality, use *<span lang=\"fr\">je suis</span>*: <span lang=\"fr\">Je suis finlandaise.</span>"
+    }
+   ]
+  },
+  {
+   "id": "check-3",
+   "stage": "tarkista",
+   "type": "choice",
+   "title": "3. Pronouncing vous êtes",
+   "prompt": "How do you pronounce <span lang=\"fr\">vous êtes</span> (you are)?",
+   "choices": [
+    {
+     "text": "*<span lang=\"fr\">vu-ZET</span>*: the *s* of *<span lang=\"fr\">vous</span>* sounds like a *z* and starts the next word.",
+     "correct": true,
+     "feedback": "Yes. This is a liaison: the silent *s* of *<span lang=\"fr\">vous</span>* is heard because *<span lang=\"fr\">êtes</span>* starts with a vowel, and in liaison an *s* sounds like *z*. After *<span lang=\"fr\">vous</span>* before a verb it is always made."
+    },
+    {
+     "text": "*<span lang=\"fr\">vu ET</span>*, with a short pause and no consonant between the words.",
+     "feedback": "People will understand you, but it sounds wrong: the liaison after *<span lang=\"fr\">vous</span>* before a verb is compulsory. Link the words: *<span lang=\"fr\">vu-ZET</span>*."
+    },
+    {
+     "text": "*<span lang=\"fr\">vus E-tes</span>*, saying every letter as in Finnish.",
+     "feedback": "This is the Finnish habit of saying every letter. The final *<span lang=\"fr\">-es</span>* of *<span lang=\"fr\">êtes</span>* is silent, and the *s* of *<span lang=\"fr\">vous</span>* sounds like *z* when it is linked: *<span lang=\"fr\">vu-ZET</span>*."
+    },
+    {
+     "text": "*<span lang=\"fr\">vu-SET</span>*, with a sharp *s* as in *sauna*.",
+     "feedback": "You made the liaison, well done, but in liaison the *s* is voiced: it sounds like *z*, as in English *zoo*. Say *<span lang=\"fr\">vu-ZET</span>*."
+    }
+   ]
+  },
+  {
+   "id": "check-write",
+   "stage": "tarkista",
+   "type": "explain",
+   "title": "4. Write: introduce yourself",
+   "prompt": "Before the (imagined) visit, your teacher asks each student to write a short French introduction for the researchers you will meet. Write four or five sentences: a greeting, your name, where you come from and live, your nationality, which languages you speak, and a polite ending.",
+   "model": "<span lang=\"fr\">Bonjour ! Je m'appelle Eetu.</span> <span lang=\"fr\">Je viens de Finlande et j'habite à Espoo.</span> <span lang=\"fr\">Je suis finlandais.</span> <span lang=\"fr\">Je parle finnois, suédois et anglais, et je parle un peu français.</span> <span lang=\"fr\">Merci et à bientôt !</span>",
+   "criteria": [
+    "I greet politely (*<span lang=\"fr\">Bonjour</span>*, not *<span lang=\"fr\">Salut</span>*: I am writing to adults I do not know).",
+    "I say my name with *<span lang=\"fr\">Je m'appelle …</span>*, my country with *<span lang=\"fr\">Je viens de …</span>* and my town with *<span lang=\"fr\">J'habite à …</span>*.",
+    "I use the right form of the nationality: *<span lang=\"fr\">finlandais</span>* for a boy or man, *<span lang=\"fr\">finlandaise</span>* for a girl or woman.",
+    "I say which languages I speak and end politely (*<span lang=\"fr\">Merci</span>*, *<span lang=\"fr\">À bientôt</span>*, *<span lang=\"fr\">Au revoir</span>*)."
+   ]
+  }
+ ]
+}

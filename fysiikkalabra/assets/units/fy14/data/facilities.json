@@ -1,0 +1,1898 @@
+{
+  "_about": "Fusion research facilities for the FY14 Global Fusion Explorer. Each fact was checked against the listed sources on the date given. Not an exhaustive list.",
+  "checked": "2026-11-01",
+  "categories": {
+    "tokamak": "Tokamak",
+    "spherical-tokamak": "Spherical tokamak",
+    "stellarator": "Stellarator",
+    "pinch": "Pinch",
+    "inertial": "Inertial confinement (laser or pulsed power)",
+    "other": "Other magnetic concept"
+  },
+  "statuses": {
+    "operating": "Operating",
+    "construction": "Under construction",
+    "planned": "Planned",
+    "retired": "Retired"
+  },
+  "facilities": [
+    {
+      "id": "zeta",
+      "name": "ZETA",
+      "full_name": "Zero Energy Thermonuclear Assembly",
+      "category": "pinch",
+      "status": "retired",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "site": "Atomic Energy Research Establishment, Harwell, Oxfordshire",
+      "lat": 51.581,
+      "lon": -1.305,
+      "operator": "UKAEA (AERE Harwell)",
+      "start": 1957,
+      "end": 1968,
+      "achievements": [
+        "Produced about a million neutrons per pulse in August 1957",
+        "Fusion claim of January 1958 was withdrawn in May 1958: the neutrons were not thermonuclear",
+        "Its 'quiescent' plasmas later led to the reversed field pinch concept (Taylor, 1974)"
+      ],
+      "importance": "ZETA was one of the first large fusion machines in the world. In 1958 it was wrongly announced as a fusion success, and the public retraction taught scientists to check their measurements very carefully. Ideas tested on ZETA, such as laser Thomson scattering, are still used today.",
+      "sources": [
+        {
+          "title": "ZETA (fusion reactor) (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/ZETA_(fusion_reactor)"
+        },
+        {
+          "title": "Atomic Energy Research Establishment (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Atomic_Energy_Research_Establishment"
+        }
+      ],
+      "note": "Coordinates are for the AERE Harwell site, not the exact hangar."
+    },
+    {
+      "id": "model-a",
+      "name": "Model A",
+      "full_name": "Model A stellarator",
+      "category": "stellarator",
+      "status": "retired",
+      "country": "United States",
+      "country_code": "US",
+      "site": "Princeton Plasma Physics Laboratory, Forrestal Campus, Plainsboro NJ",
+      "lat": 40.349,
+      "lon": -74.602,
+      "operator": "Project Matterhorn, Princeton University",
+      "start": 1953,
+      "end": null,
+      "achievements": [
+        "Showed better confinement than a simple torus (1953)"
+      ],
+      "importance": "Model A was Lyman Spitzer's first stellarator, a small tabletop device made of glass tubes. It showed that a twisted (figure-8) magnetic field could hold a plasma better than a simple ring. It started the stellarator line that leads to Wendelstein 7-X today.",
+      "sources": [
+        {
+          "title": "Stellarator (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Stellarator"
+        },
+        {
+          "title": "List of fusion experiments (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/List_of_fusion_experiments"
+        }
+      ],
+      "note": "End year not verified. Plotted at today's PPPL site; the exact building of the 1950s machine was not verified."
+    },
+    {
+      "id": "model-b",
+      "name": "Model B",
+      "full_name": "Model B stellarator series",
+      "category": "stellarator",
+      "status": "retired",
+      "country": "United States",
+      "country_code": "US",
+      "site": "Princeton Plasma Physics Laboratory, Forrestal Campus, Plainsboro NJ",
+      "lat": 40.349,
+      "lon": -74.602,
+      "operator": "Project Matterhorn, Princeton University",
+      "start": 1954,
+      "end": 1959,
+      "achievements": [
+        "B-2 was shown at the 1958 Atoms for Peace exhibition in Geneva",
+        "B-3 showed particle losses about three times worse than the Bohm estimate"
+      ],
+      "importance": "The Model B machines were a series of improved stellarators. They showed that plasma escaped much faster than simple theory predicted, a problem called Bohm diffusion. Understanding these losses became one of the main challenges of fusion research.",
+      "sources": [
+        {
+          "title": "Stellarator (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Stellarator"
+        },
+        {
+          "title": "List of fusion experiments (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/List_of_fusion_experiments"
+        }
+      ],
+      "note": "Years for the whole B series differ between machines (B-64 1955, B-65 1957, B-66 1958); 1954–1959 is the range given for Model B. Plotted at today's PPPL site."
+    },
+    {
+      "id": "model-c",
+      "name": "Model C",
+      "full_name": "Model C stellarator",
+      "category": "stellarator",
+      "status": "retired",
+      "country": "United States",
+      "country_code": "US",
+      "site": "Princeton Plasma Physics Laboratory, Forrestal Campus, Plainsboro NJ",
+      "lat": 40.349,
+      "lon": -74.602,
+      "operator": "Princeton Plasma Physics Laboratory",
+      "start": 1961,
+      "end": 1969,
+      "achievements": [
+        "Reached electron temperatures of about 400 eV (about 4.6 million K) in 1969",
+        "Converted into the Symmetric Tokamak in 1970 to test Soviet tokamak results"
+      ],
+      "importance": "Model C was the largest of the early Princeton stellarators. Its results stayed limited by fast plasma losses, so after the Soviet tokamak success Princeton rebuilt it as a tokamak. This moment shows how the field changed direction around 1969–1970.",
+      "sources": [
+        {
+          "title": "Stellarator (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Stellarator"
+        },
+        {
+          "title": "Princeton Plasma Physics Laboratory (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Princeton_Plasma_Physics_Laboratory"
+        }
+      ],
+      "note": null
+    },
+    {
+      "id": "perhapsatron",
+      "name": "Perhapsatron",
+      "full_name": "Perhapsatron toroidal pinch",
+      "category": "pinch",
+      "status": "retired",
+      "country": "United States",
+      "country_code": "US",
+      "site": "Los Alamos National Laboratory, New Mexico",
+      "lat": 35.876,
+      "lon": -106.324,
+      "operator": "Los Alamos Scientific Laboratory",
+      "start": 1953,
+      "end": null,
+      "achievements": [
+        "Showed early the instabilities that troubled the pinch concept (1950s)"
+      ],
+      "importance": "The Perhapsatron was an early American pinch device built from spare parts. Its name joked that it might 'perhaps' make fusion. It quickly showed that pinched plasmas are unstable, a lesson that shaped later designs.",
+      "sources": [
+        {
+          "title": "Perhapsatron (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Perhapsatron"
+        }
+      ],
+      "note": "The first device was built in winter 1952–53; end year not verified (Z-pinch work at Los Alamos had largely ended by 1961). Coordinates are for LANL in general."
+    },
+    {
+      "id": "scylla",
+      "name": "Scylla I",
+      "full_name": "Scylla theta-pinch",
+      "category": "pinch",
+      "status": "retired",
+      "country": "United States",
+      "country_code": "US",
+      "site": "Los Alamos National Laboratory, New Mexico",
+      "lat": 35.876,
+      "lon": -106.324,
+      "operator": "Los Alamos Scientific Laboratory",
+      "start": 1958,
+      "end": null,
+      "achievements": [
+        "Ion temperatures near 15 million K in 1958: described as the first clear evidence of thermonuclear fusion in a laboratory",
+        "Successor Scylla IV (1963) reached about 80 million K"
+      ],
+      "importance": "Scylla was a theta-pinch, which squeezes plasma very quickly with a strong magnetic field. In 1958 it gave the first convincing evidence that laboratory plasma was hot enough for real thermonuclear reactions. Its confinement time was very short, so the line ended with Scyllac in 1977.",
+      "sources": [
+        {
+          "title": "Theta pinch (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Theta_pinch"
+        }
+      ],
+      "note": "End year for Scylla I not verified. Coordinates are for LANL in general."
+    },
+    {
+      "id": "t-1",
+      "name": "T-1",
+      "full_name": "Tokamak-1",
+      "category": "tokamak",
+      "status": "retired",
+      "country": "Russia",
+      "country_code": "RU",
+      "site": "Kurchatov Institute, Moscow",
+      "lat": 55.795,
+      "lon": 37.473,
+      "operator": "Kurchatov Institute",
+      "start": 1958,
+      "end": 1959,
+      "achievements": [
+        "First working tokamak, began operation at the end of 1958"
+      ],
+      "importance": "T-1 was the first tokamak, a Soviet design that combines a strong toroidal field with a current in the plasma. Its plasma was cooled by impurities from the wall, but it proved the basic idea. Almost all large fusion machines today are tokamaks.",
+      "sources": [
+        {
+          "title": "Tokamak (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Tokamak"
+        },
+        {
+          "title": "Kurchatov Institute (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Kurchatov_Institute"
+        },
+        {
+          "title": "List of fusion experiments (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/List_of_fusion_experiments"
+        }
+      ],
+      "note": "Coordinates for the Kurchatov Institute are from Russian Wikipedia."
+    },
+    {
+      "id": "t-3",
+      "name": "T-3",
+      "full_name": "Tokamak-3",
+      "category": "tokamak",
+      "status": "retired",
+      "country": "Russia",
+      "country_code": "RU",
+      "site": "Kurchatov Institute, Moscow",
+      "lat": 55.795,
+      "lon": 37.473,
+      "operator": "Kurchatov Institute",
+      "start": null,
+      "end": null,
+      "achievements": [
+        "Electron temperature of about 1000 eV (about 10 million K) reported in 1968",
+        "Results confirmed by a British team with laser Thomson scattering in 1969"
+      ],
+      "importance": "T-3 made the tokamak famous. In 1968 Soviet scientists reported temperatures far higher than other machines, and many doubted them. When a British team measured the plasma in Moscow and confirmed the result, laboratories around the world started building tokamaks.",
+      "sources": [
+        {
+          "title": "Tokamak (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Tokamak"
+        },
+        {
+          "title": "ZETA (fusion reactor) (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/ZETA_(fusion_reactor)"
+        },
+        {
+          "title": "List of fusion experiments (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/List_of_fusion_experiments"
+        }
+      ],
+      "note": "Start year uncertain: sources give 1960 (Kurchatov Institute article) and 1962 (List of fusion experiments). End year not given in sources."
+    },
+    {
+      "id": "symmetric-tokamak",
+      "name": "ST",
+      "full_name": "Symmetric Tokamak",
+      "category": "tokamak",
+      "status": "retired",
+      "country": "United States",
+      "country_code": "US",
+      "site": "Princeton Plasma Physics Laboratory, Forrestal Campus, Plainsboro NJ",
+      "lat": 40.349,
+      "lon": -74.602,
+      "operator": "Princeton Plasma Physics Laboratory",
+      "start": 1970,
+      "end": 1974,
+      "achievements": [
+        "Rebuilt from Model C in 1970 and matched Soviet tokamak performance"
+      ],
+      "importance": "The Symmetric Tokamak was the first American tokamak, made by rebuilding the Model C stellarator in a few months. It quickly confirmed the Soviet results and beat Model C by more than ten times. After this, the United States moved its programme to tokamaks.",
+      "sources": [
+        {
+          "title": "Stellarator (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Stellarator"
+        },
+        {
+          "title": "List of fusion experiments (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/List_of_fusion_experiments"
+        }
+      ],
+      "note": null
+    },
+    {
+      "id": "t-10",
+      "name": "T-10",
+      "full_name": "Tokamak-10",
+      "category": "tokamak",
+      "status": "retired",
+      "country": "Russia",
+      "country_code": "RU",
+      "site": "Kurchatov Institute, Moscow",
+      "lat": 55.795,
+      "lon": 37.473,
+      "operator": "Kurchatov Institute",
+      "start": 1975,
+      "end": null,
+      "achievements": [
+        "Large Soviet tokamak used for decades, including tests for ITER"
+      ],
+      "importance": "T-10 was a large Soviet tokamak and one of the longest-running machines in fusion history. It was used for heating and plasma studies and later for testing equipment for ITER. Its hall is now used by the new T-15MD.",
+      "sources": [
+        {
+          "title": "Tokamak (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Tokamak"
+        },
+        {
+          "title": "Kurchatov Institute (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Kurchatov_Institute"
+        },
+        {
+          "title": "On the Program of Russian Research in the Field of Controlled Thermonuclear Fusion (Plasma Physics Reports, 2021)",
+          "url": "https://link.springer.com/10.1134/S1063780X21110179"
+        }
+      ],
+      "note": "A 2021 paper describes T-10 as being replaced by T-15MD; the exact last year of operation could not be verified, so end is null."
+    },
+    {
+      "id": "t-15",
+      "name": "T-15",
+      "full_name": "Tokamak-15",
+      "category": "tokamak",
+      "status": "retired",
+      "country": "Russia",
+      "country_code": "RU",
+      "site": "Kurchatov Institute, Moscow",
+      "lat": 55.795,
+      "lon": 37.473,
+      "operator": "Kurchatov Institute",
+      "start": 1988,
+      "end": 1995,
+      "achievements": [
+        "Early tokamak with superconducting magnets; first plasma 1988",
+        "Reached 1 MA plasma current"
+      ],
+      "importance": "T-15 was one of the first large tokamaks with superconducting magnets, which are needed for long pulses. Lack of money stopped it in 1995 after only about 100 shots. The machine was later rebuilt as T-15MD.",
+      "sources": [
+        {
+          "title": "T-15 (reactor) (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/T-15_(reactor)"
+        },
+        {
+          "title": "Kurchatov Institute (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Kurchatov_Institute"
+        }
+      ],
+      "note": null
+    },
+    {
+      "id": "t-15md",
+      "name": "T-15MD",
+      "full_name": "Tokamak-15 Modernised, Divertor",
+      "category": "tokamak",
+      "status": "operating",
+      "country": "Russia",
+      "country_code": "RU",
+      "site": "Kurchatov Institute, Moscow",
+      "lat": 55.795,
+      "lon": 37.473,
+      "operator": "Kurchatov Institute",
+      "start": 2021,
+      "end": null,
+      "achievements": [
+        "Physically launched on 18 May 2021"
+      ],
+      "importance": "T-15MD is Russia's newest large tokamak, built on the T-15 project. It uses copper coils and a divertor and is meant to support ITER work and studies of fusion-fission hybrids. It is the flagship of today's Russian magnetic fusion programme.",
+      "sources": [
+        {
+          "title": "T-15 (reactor) (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/T-15_(reactor)"
+        },
+        {
+          "title": "On the Program of Russian Research in the Field of Controlled Thermonuclear Fusion (Plasma Physics Reports, 2021)",
+          "url": "https://link.springer.com/10.1134/S1063780X21110179"
+        }
+      ],
+      "note": null
+    },
+    {
+      "id": "plt",
+      "name": "PLT",
+      "full_name": "Princeton Large Torus",
+      "category": "tokamak",
+      "status": "retired",
+      "country": "United States",
+      "country_code": "US",
+      "site": "Princeton Plasma Physics Laboratory, Forrestal Campus, Plainsboro NJ",
+      "lat": 40.349,
+      "lon": -74.602,
+      "operator": "Princeton Plasma Physics Laboratory",
+      "start": 1975,
+      "end": 1986,
+      "achievements": [
+        "About 60 million degrees with neutral beam heating on 24 July 1978",
+        "First plasma current driven by lower-hybrid radio waves (1981)"
+      ],
+      "importance": "PLT showed that a tokamak can reach the temperatures a fusion reactor needs. It used neutral beams and radio waves to heat the plasma, methods that are still used today. Its results gave confidence to build the much larger TFTR.",
+      "sources": [
+        {
+          "title": "Princeton Large Torus (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Princeton_Large_Torus"
+        },
+        {
+          "title": "Princeton Plasma Physics Laboratory (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Princeton_Plasma_Physics_Laboratory"
+        }
+      ],
+      "note": null
+    },
+    {
+      "id": "pdx",
+      "name": "PDX",
+      "full_name": "Poloidal Divertor Experiment",
+      "category": "tokamak",
+      "status": "retired",
+      "country": "United States",
+      "country_code": "US",
+      "site": "Princeton Plasma Physics Laboratory, Forrestal Campus, Plainsboro NJ",
+      "lat": 40.349,
+      "lon": -74.602,
+      "operator": "Princeton Plasma Physics Laboratory",
+      "start": 1978,
+      "end": 1983,
+      "achievements": [
+        "Tested the divertor for removing heat and impurities (from 1978)"
+      ],
+      "importance": "PDX tested the divertor, a part of the magnetic field that guides heat and impurities away from the main plasma. It also tried different plasma shapes. Divertors are now part of every large tokamak, including ITER.",
+      "sources": [
+        {
+          "title": "Poloidal Divertor Experiment 1978–1983 (PPPL)",
+          "url": "https://www.pppl.gov/posts/2026/poloidal-divertor-experiment-1978-1983"
+        },
+        {
+          "title": "List of fusion experiments (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/List_of_fusion_experiments"
+        }
+      ],
+      "note": "PDX was later rebuilt as PBX/PBX-M; those years were not verified, so they are not given as a separate entry."
+    },
+    {
+      "id": "tftr",
+      "name": "TFTR",
+      "full_name": "Tokamak Fusion Test Reactor",
+      "category": "tokamak",
+      "status": "retired",
+      "country": "United States",
+      "country_code": "US",
+      "site": "Princeton Plasma Physics Laboratory, Forrestal Campus, Plainsboro NJ",
+      "lat": 40.349,
+      "lon": -74.602,
+      "operator": "Princeton Plasma Physics Laboratory",
+      "start": 1982,
+      "end": 1997,
+      "achievements": [
+        "Began deuterium–tritium experiments in December 1993",
+        "10.7 MW of fusion power from a 50–50 D–T plasma (1994)",
+        "Plasma temperature of 510 million °C (1995)"
+      ],
+      "importance": "TFTR was the large American tokamak of the 1980s and 1990s. It was one of the first machines to use real fusion fuel, a 50–50 mix of deuterium and tritium, and it produced more than 10 MW of fusion power. It did not reach break-even, but its data helped design ITER.",
+      "sources": [
+        {
+          "title": "Tokamak Fusion Test Reactor (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Tokamak_Fusion_Test_Reactor"
+        },
+        {
+          "title": "Princeton Plasma Physics Laboratory (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Princeton_Plasma_Physics_Laboratory"
+        }
+      ],
+      "note": null
+    },
+    {
+      "id": "nstx",
+      "name": "NSTX",
+      "full_name": "National Spherical Torus Experiment",
+      "category": "spherical-tokamak",
+      "status": "retired",
+      "country": "United States",
+      "country_code": "US",
+      "site": "Princeton Plasma Physics Laboratory, Forrestal Campus, Plainsboro NJ",
+      "lat": 40.349,
+      "lon": -74.602,
+      "operator": "Princeton Plasma Physics Laboratory",
+      "start": 1999,
+      "end": null,
+      "achievements": [
+        "First plasma on 12 February 1999"
+      ],
+      "importance": "NSTX was one of the two large spherical tokamaks of its time, together with MAST in the UK. A spherical tokamak is shaped more like a cored apple than a doughnut and can hold a higher plasma pressure for the same magnetic field. NSTX was rebuilt as NSTX-U.",
+      "sources": [
+        {
+          "title": "National Spherical Torus Experiment (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/National_Spherical_Torus_Experiment"
+        }
+      ],
+      "note": "End of NSTX operation (before the upgrade completed in 2015) not verified."
+    },
+    {
+      "id": "nstx-u",
+      "name": "NSTX-U",
+      "full_name": "National Spherical Torus Experiment Upgrade",
+      "category": "spherical-tokamak",
+      "status": "construction",
+      "country": "United States",
+      "country_code": "US",
+      "site": "Princeton Plasma Physics Laboratory, Forrestal Campus, Plainsboro NJ",
+      "lat": 40.349,
+      "lon": -74.602,
+      "operator": "Princeton Plasma Physics Laboratory",
+      "start": 2015,
+      "end": null,
+      "achievements": [
+        "Upgrade completed in 2015, doubling magnetic field and plasma current"
+      ],
+      "importance": "NSTX-U was meant to be the most powerful spherical tokamak of its kind. A coil failure stopped it in 2016, and a long repair project followed. Its restart matters for testing spherical tokamaks as a route to compact power plants.",
+      "sources": [
+        {
+          "title": "National Spherical Torus Experiment (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/National_Spherical_Torus_Experiment"
+        },
+        {
+          "title": "Princeton Plasma Physics Laboratory (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Princeton_Plasma_Physics_Laboratory"
+        }
+      ],
+      "note": "Status 'construction' means under repair: operations stopped in 2016 after a coil failure; as of 2026 restart was expected in 2027. Start = completion of the upgrade (2015)."
+    },
+    {
+      "id": "jet",
+      "name": "JET",
+      "full_name": "Joint European Torus",
+      "category": "tokamak",
+      "status": "retired",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "site": "Culham Campus, Oxfordshire",
+      "lat": 51.659,
+      "lon": -1.228,
+      "operator": "EUROfusion / UKAEA",
+      "start": 1983,
+      "end": 2023,
+      "achievements": [
+        "First controlled release of D–T fusion power, November 1991 (about 10% tritium, 1.7 MW peak)",
+        "16 MW peak fusion power in 1997",
+        "69 MJ of fusion energy in a single pulse in its final D–T campaign (2023, announced February 2024)"
+      ],
+      "importance": "JET was the largest tokamak in the world for 40 years and the only one that could use tritium during most of that time. It produced record amounts of fusion energy and tested the fuel mix, wall materials and remote handling planned for ITER. It stopped in December 2023 and is now being decommissioned.",
+      "sources": [
+        {
+          "title": "Joint European Torus (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Joint_European_Torus"
+        },
+        {
+          "title": "JET takes off to new heights in fusion performance (Nuclear Engineering International)",
+          "url": "https://www.neimagazine.com/analysis/jet-takes-off-to-new-heights-in-fusion-performance/"
+        },
+        {
+          "title": "JET's final tritium experiments yield new fusion energy record (GOV.UK, 8 Feb 2024)",
+          "url": "https://www.gov.uk/government/news/jets-final-tritium-experiments-yield-new-fusion-energy-record"
+        },
+        {
+          "title": "Breaking new ground: JET tokamak's latest fusion energy record (EUROfusion)",
+          "url": "https://euro-fusion.org/eurofusion-news/dte3record/"
+        }
+      ],
+      "note": "The 1991 experiment used a dilute fuel (about 10% tritium), not a tritium-rich mix. Sources give 69 MJ (GOV.UK) and 69.26 MJ (EUROfusion) for the 2023 record."
+    },
+    {
+      "id": "start",
+      "name": "START",
+      "full_name": "Small Tight Aspect Ratio Tokamak",
+      "category": "spherical-tokamak",
+      "status": "retired",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "site": "Culham Campus, Oxfordshire",
+      "lat": 51.659,
+      "lon": -1.228,
+      "operator": "UKAEA",
+      "start": 1990,
+      "end": 1998,
+      "achievements": [
+        "Reached a plasma beta of 32%, well above the earlier tokamak record of 12.6%",
+        "Non-ohmic beta of 40% in 1998"
+      ],
+      "importance": "START was the first full-sized spherical tokamak. It showed that this compact shape can hold a much higher plasma pressure compared with the magnetic field than a normal tokamak. Its success led to MAST and to private spherical-tokamak companies.",
+      "sources": [
+        {
+          "title": "Small Tight Aspect Ratio Tokamak (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Small_Tight_Aspect_Ratio_Tokamak"
+        },
+        {
+          "title": "Culham Centre for Fusion Energy (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Culham_Centre_for_Fusion_Energy"
+        }
+      ],
+      "note": "Start year: 1990 (START article, List of fusion experiments); the Culham article says 1991."
+    },
+    {
+      "id": "mast",
+      "name": "MAST",
+      "full_name": "Mega Ampere Spherical Tokamak",
+      "category": "spherical-tokamak",
+      "status": "retired",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "site": "Culham Campus, Oxfordshire",
+      "lat": 51.659,
+      "lon": -1.228,
+      "operator": "UKAEA",
+      "start": 1999,
+      "end": 2013,
+      "achievements": [
+        "Confirmed the high efficiency (high beta) of spherical tokamaks",
+        "Produced 30,471 plasmas between 1999 and 2013"
+      ],
+      "importance": "MAST continued the START work at a larger size. It studied how to control edge instabilities and how the spherical shape behaves at high power. It was rebuilt as MAST Upgrade.",
+      "sources": [
+        {
+          "title": "Mega Ampere Spherical Tokamak (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Mega_Ampere_Spherical_Tokamak"
+        },
+        {
+          "title": "Culham Centre for Fusion Energy (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Culham_Centre_for_Fusion_Energy"
+        }
+      ],
+      "note": null
+    },
+    {
+      "id": "mast-u",
+      "name": "MAST Upgrade",
+      "full_name": "Mega Ampere Spherical Tokamak Upgrade",
+      "category": "spherical-tokamak",
+      "status": "operating",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "site": "Culham Campus, Oxfordshire",
+      "lat": 51.659,
+      "lon": -1.228,
+      "operator": "UKAEA",
+      "start": 2020,
+      "end": null,
+      "achievements": [
+        "First plasma on 29 October 2020",
+        "Tested the Super-X divertor, designed to cut heat loads about ten times",
+        "Fully suppressed edge-localised modes with magnetic perturbation coils (2025)"
+      ],
+      "importance": "MAST Upgrade tests ways to handle the intense heat that leaves a fusion plasma, especially with its Super-X divertor. These results feed into STEP, the UK's planned spherical-tokamak power plant. It is the main UK machine after JET closed.",
+      "sources": [
+        {
+          "title": "Mega Ampere Spherical Tokamak (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Mega_Ampere_Spherical_Tokamak"
+        }
+      ],
+      "note": null
+    },
+    {
+      "id": "jt-60",
+      "name": "JT-60",
+      "full_name": "Japan Torus-60",
+      "category": "tokamak",
+      "status": "retired",
+      "country": "Japan",
+      "country_code": "JP",
+      "site": "Naka Fusion Institute, Naka, Ibaraki",
+      "lat": 36.457,
+      "lon": 140.487,
+      "operator": "Japan Atomic Energy Research Institute (JAERI)",
+      "start": 1985,
+      "end": 1989,
+      "achievements": [
+        "Began operation on 8 April 1985"
+      ],
+      "importance": "JT-60 was Japan's large tokamak and one of the 'big three' of the 1980s with JET and TFTR. It was soon rebuilt as JT-60U with a larger plasma.",
+      "sources": [
+        {
+          "title": "JT-60 (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/JT-60"
+        },
+        {
+          "title": "List of fusion experiments (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/List_of_fusion_experiments"
+        }
+      ],
+      "note": "End year 1989 is from the List of fusion experiments; the upgrade to JT-60U followed in 1991. Coordinates are for Naka city (Wikipedia), not the exact institute site. Plotted at the shared site point so the map can group devices at this site."
+    },
+    {
+      "id": "jt-60u",
+      "name": "JT-60U",
+      "full_name": "Japan Torus-60 Upgrade",
+      "category": "tokamak",
+      "status": "retired",
+      "country": "Japan",
+      "country_code": "JP",
+      "site": "Naka Fusion Institute, Naka, Ibaraki",
+      "lat": 36.457,
+      "lon": 140.487,
+      "operator": "Japan Atomic Energy Research Institute / JAEA",
+      "start": 1991,
+      "end": 2008,
+      "achievements": [
+        "Estimated equivalent D–T gain Q of 1.25 (1998, estimate from deuterium plasmas)",
+        "Ion temperature of 45 keV (522 million K) reported in 1996"
+      ],
+      "importance": "JT-60U reached some of the best plasma conditions of any tokamak, although it never used tritium. Its 'equivalent Q' above 1 is a calculation of what D–T fuel would have given, not a measured result. It ended in 2008 to make room for JT-60SA.",
+      "sources": [
+        {
+          "title": "JT-60 (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/JT-60"
+        }
+      ],
+      "note": "Records are claims from deuterium plasmas; the Wikipedia article notes that the 1996 temperature claim was disputed. Coordinates are for Naka city (Wikipedia), not the exact institute site. Plotted at the shared site point so the map can group devices at this site."
+    },
+    {
+      "id": "jt-60sa",
+      "name": "JT-60SA",
+      "full_name": "Japan Torus-60 Super Advanced",
+      "category": "tokamak",
+      "status": "operating",
+      "country": "Japan",
+      "country_code": "JP",
+      "site": "Naka Fusion Institute, Naka, Ibaraki",
+      "lat": 36.457,
+      "lon": 140.487,
+      "operator": "QST (Japan) and the European Union (Fusion for Energy)",
+      "start": 2023,
+      "end": null,
+      "achievements": [
+        "First plasma on 23 October 2023",
+        "Largest operating superconducting tokamak in the world"
+      ],
+      "importance": "JT-60SA is a joint project of Japan and Europe and the largest superconducting tokamak working before ITER. It tests plasma scenarios and control methods that ITER and later DEMO power plants will need. Its first plasma came after a two-year delay caused by an electrical fault.",
+      "sources": [
+        {
+          "title": "JT-60SA (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/JT-60SA"
+        },
+        {
+          "title": "JT-60 (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/JT-60"
+        },
+        {
+          "title": "Tokamak (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Tokamak"
+        }
+      ],
+      "note": "Coordinates are for Naka city (Wikipedia), not the exact institute site. Plotted at the shared site point so the map can group devices at this site."
+    },
+    {
+      "id": "iter",
+      "name": "ITER",
+      "full_name": "ITER (International Thermonuclear Experimental Reactor)",
+      "category": "tokamak",
+      "status": "construction",
+      "country": "France",
+      "country_code": "FR",
+      "site": "Cadarache, Saint-Paul-lez-Durance",
+      "lat": 43.704,
+      "lon": 5.765,
+      "operator": "ITER Organization (China, EU, India, Japan, Russia, South Korea, United States)",
+      "start": null,
+      "end": null,
+      "achievements": [
+        "Tokamak complex construction started in 2013; machine assembly began in 2020"
+      ],
+      "importance": "ITER is the largest fusion experiment ever built, a joint project of seven members: China, the EU, India, Japan, Russia, South Korea and the United States. It aims to produce 500 MW of fusion power from 50 MW of heating (Q = 10), but it will not make electricity. The 2024 baseline plans research operation from 2034 and deuterium–tritium operation from 2039.",
+      "sources": [
+        {
+          "title": "ITER (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/ITER"
+        },
+        {
+          "title": "ITER Organization",
+          "url": "https://www.iter.org/"
+        }
+      ],
+      "note": "Schedule is a plan (2024 baseline). ITER's own site is about 1 km NE of Tore Supra/WEST (about 43.709, 5.778); plotted at the shared site point so the map can group devices at this site."
+    },
+    {
+      "id": "tore-supra",
+      "name": "Tore Supra",
+      "full_name": "Tore Supra",
+      "category": "tokamak",
+      "status": "retired",
+      "country": "France",
+      "country_code": "FR",
+      "site": "Cadarache, Saint-Paul-lez-Durance",
+      "lat": 43.704,
+      "lon": 5.765,
+      "operator": "CEA (IRFM)",
+      "start": 1988,
+      "end": 2010,
+      "achievements": [
+        "6 min 30 s plasma with over 1 GJ of energy injected and extracted (December 2003)"
+      ],
+      "importance": "Tore Supra was one of the first large tokamaks with superconducting magnets and actively cooled walls. This let it run very long pulses, a key step towards steady-state fusion. It was rebuilt as WEST.",
+      "sources": [
+        {
+          "title": "WEST (formerly Tore Supra) (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/WEST_(formerly_Tore_Supra)"
+        },
+        {
+          "title": "List of fusion experiments (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/List_of_fusion_experiments"
+        }
+      ],
+      "note": "End year: 2010 (WEST article); the List of fusion experiments gives 2011."
+    },
+    {
+      "id": "west",
+      "name": "WEST",
+      "full_name": "W (Tungsten) Environment in Steady-state Tokamak",
+      "category": "tokamak",
+      "status": "operating",
+      "country": "France",
+      "country_code": "FR",
+      "site": "Cadarache, Saint-Paul-lez-Durance",
+      "lat": 43.704,
+      "lon": 5.765,
+      "operator": "CEA (IRFM)",
+      "start": 2016,
+      "end": null,
+      "achievements": [
+        "First plasma in December 2016",
+        "World record plasma duration for a tokamak: 22 min 17 s (1,337 s) on 12 February 2025"
+      ],
+      "importance": "WEST is Tore Supra rebuilt with a tungsten divertor like ITER's. It tests how tungsten walls behave in very long plasmas. Its 2025 pulse of more than 22 minutes was the longest for any tokamak at the time.",
+      "sources": [
+        {
+          "title": "WEST (formerly Tore Supra) (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/WEST_(formerly_Tore_Supra)"
+        }
+      ],
+      "note": null
+    },
+    {
+      "id": "asdex",
+      "name": "ASDEX",
+      "full_name": "Axially Symmetric Divertor Experiment",
+      "category": "tokamak",
+      "status": "retired",
+      "country": "Germany",
+      "country_code": "DE",
+      "site": "Max Planck Institute for Plasma Physics, Garching",
+      "lat": 48.262,
+      "lon": 11.676,
+      "operator": "Max Planck Institute for Plasma Physics (IPP)",
+      "start": 1980,
+      "end": 1990,
+      "achievements": [
+        "Discovery of the high-confinement mode (H-mode) in 1982"
+      ],
+      "importance": "ASDEX discovered the H-mode, a state in which the plasma suddenly holds its heat much better. Almost all tokamak power plant designs, including ITER, now rely on the H-mode. After 1990 the machine was moved to China and used to build HL-2A.",
+      "sources": [
+        {
+          "title": "ASDEX Upgrade (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/ASDEX_Upgrade"
+        },
+        {
+          "title": "Max Planck Institute for Plasma Physics (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Max_Planck_Institute_for_Plasma_Physics"
+        }
+      ],
+      "note": "Plotted at the shared site point so the map can group devices at this site."
+    },
+    {
+      "id": "asdex-upgrade",
+      "name": "ASDEX Upgrade",
+      "full_name": "Axially Symmetric Divertor Experiment Upgrade",
+      "category": "tokamak",
+      "status": "operating",
+      "country": "Germany",
+      "country_code": "DE",
+      "site": "Max Planck Institute for Plasma Physics, Garching",
+      "lat": 48.262,
+      "lon": 11.676,
+      "operator": "Max Planck Institute for Plasma Physics (IPP)",
+      "start": 1991,
+      "end": null,
+      "achievements": [
+        "First plasma on 21 March 1991",
+        "Operates with an all-tungsten first wall"
+      ],
+      "importance": "ASDEX Upgrade is Germany's main tokamak. It pioneered the use of tungsten walls, which ITER also uses, and studies how to control heat exhaust and edge instabilities. It is one of the most productive medium-sized tokamaks in Europe.",
+      "sources": [
+        {
+          "title": "ASDEX Upgrade (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/ASDEX_Upgrade"
+        },
+        {
+          "title": "ASDEX Upgrade (German Wikipedia)",
+          "url": "https://de.wikipedia.org/wiki/ASDEX_Upgrade"
+        }
+      ],
+      "note": "Coordinates from German Wikipedia. Plotted at the shared site point so the map can group devices at this site."
+    },
+    {
+      "id": "w7-as",
+      "name": "Wendelstein 7-AS",
+      "full_name": "Wendelstein 7 Advanced Stellarator",
+      "category": "stellarator",
+      "status": "retired",
+      "country": "Germany",
+      "country_code": "DE",
+      "site": "Max Planck Institute for Plasma Physics, Garching",
+      "lat": 48.262,
+      "lon": 11.676,
+      "operator": "Max Planck Institute for Plasma Physics (IPP)",
+      "start": 1988,
+      "end": 2002,
+      "achievements": [
+        "First advanced stellarator with modular coils (1988)",
+        "First stellarator to reach H-mode and to use an island divertor"
+      ],
+      "importance": "Wendelstein 7-AS was the first stellarator with a partly optimised magnetic field made by modular, twisted coils. It confirmed the theory behind optimisation and showed that stellarators can reach tokamak-like high-confinement states. Its results led directly to Wendelstein 7-X.",
+      "sources": [
+        {
+          "title": "Wendelstein 7-AS (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Wendelstein_7-AS"
+        },
+        {
+          "title": "Wendelstein 7-AS (German Wikipedia)",
+          "url": "https://de.wikipedia.org/wiki/Wendelstein_7-AS"
+        }
+      ],
+      "note": "Plotted at the shared site point so the map can group devices at this site."
+    },
+    {
+      "id": "w7-x",
+      "name": "Wendelstein 7-X",
+      "full_name": "Wendelstein 7-X",
+      "category": "stellarator",
+      "status": "operating",
+      "country": "Germany",
+      "country_code": "DE",
+      "site": "Max Planck Institute for Plasma Physics, Greifswald",
+      "lat": 54.073,
+      "lon": 13.424,
+      "operator": "Max Planck Institute for Plasma Physics (IPP)",
+      "start": 2015,
+      "end": null,
+      "achievements": [
+        "First helium plasma on 10 December 2015; first hydrogen plasma on 3 February 2016",
+        "Energy turnover of 1.3 GJ in a long plasma (2023)",
+        "World record triple product for long plasma discharges (2025 campaign)"
+      ],
+      "importance": "Wendelstein 7-X is the world's largest stellarator, with superconducting coils shaped by computer optimisation. It tests whether a stellarator can confine plasma as well as a tokamak while running continuously and without large plasma currents. Its results have made stellarators a serious option for power plants.",
+      "sources": [
+        {
+          "title": "Wendelstein 7-X (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Wendelstein_7-X"
+        },
+        {
+          "title": "Wendelstein 7-X (German Wikipedia)",
+          "url": "https://de.wikipedia.org/wiki/Wendelstein_7-X"
+        }
+      ],
+      "note": "Coordinates from German Wikipedia."
+    },
+    {
+      "id": "east",
+      "name": "EAST",
+      "full_name": "Experimental Advanced Superconducting Tokamak",
+      "category": "tokamak",
+      "status": "operating",
+      "country": "China",
+      "country_code": "CN",
+      "site": "Hefei Institutes of Physical Science, Hefei",
+      "lat": 31.911,
+      "lon": 117.148,
+      "operator": "Hefei Institutes of Physical Science (Chinese Academy of Sciences)",
+      "start": 2006,
+      "end": null,
+      "achievements": [
+        "First plasma on 28 September 2006",
+        "403-second steady-state H-mode plasma (12 April 2023)",
+        "Plasma sustained for 1,066 seconds (20 January 2025)"
+      ],
+      "importance": "EAST is a superconducting tokamak in Hefei that specialises in very long pulses, which a power plant needs. Its long-pulse records made China a leader in this area.",
+      "sources": [
+        {
+          "title": "Experimental Advanced Superconducting Tokamak (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Experimental_Advanced_Superconducting_Tokamak"
+        },
+        {
+          "title": "EAST (German Wikipedia)",
+          "url": "https://de.wikipedia.org/wiki/Experimental_Advanced_Superconducting_Tokamak"
+        }
+      ],
+      "note": "Coordinates from German Wikipedia. Plotted at the shared site point so the map can group devices at this site."
+    },
+    {
+      "id": "best",
+      "name": "BEST",
+      "full_name": "Burning Plasma Experimental Superconducting Tokamak",
+      "category": "tokamak",
+      "status": "construction",
+      "country": "China",
+      "country_code": "CN",
+      "site": "Hefei Institutes of Physical Science, Hefei",
+      "lat": 31.911,
+      "lon": 117.148,
+      "operator": "Institute of Energy, Hefei Comprehensive National Science Center",
+      "start": null,
+      "end": null,
+      "achievements": [
+        "Construction began in 2023"
+      ],
+      "importance": "BEST is a compact superconducting tokamak being built in Hefei. It aims to reach scientific break-even (Q ≥ 1) with long deuterium–tritium pulses and to study burning plasmas. First plasma is targeted for late 2027.",
+      "sources": [
+        {
+          "title": "Burning Plasma Experimental Superconducting Tokamak (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Burning_Plasma_Experimental_Superconducting_Tokamak"
+        }
+      ],
+      "note": "Goals and dates are plans. Exact site not verified; plotted at the EAST point in Hefei so the map groups the Hefei devices."
+    },
+    {
+      "id": "hl-2a",
+      "name": "HL-2A",
+      "full_name": "Huan-Liuqi-2A",
+      "category": "tokamak",
+      "status": "retired",
+      "country": "China",
+      "country_code": "CN",
+      "site": "Southwestern Institute of Physics, Chengdu",
+      "lat": 30.66,
+      "lon": 104.063,
+      "operator": "Southwestern Institute of Physics (CNNC)",
+      "start": 2002,
+      "end": null,
+      "achievements": [
+        "First tokamak with a divertor in China (2002)"
+      ],
+      "importance": "HL-2A was built from the main parts of the German ASDEX tokamak. It was China's first tokamak with a divertor and trained a generation of Chinese fusion scientists. It was followed by the larger HL-3.",
+      "sources": [
+        {
+          "title": "HL-2A (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/HL-2A"
+        },
+        {
+          "title": "ASDEX Upgrade (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/ASDEX_Upgrade"
+        },
+        {
+          "title": "List of fusion experiments (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/List_of_fusion_experiments"
+        }
+      ],
+      "note": "Status uncertain: the List of fusion experiments gives 2002–2018, while the HL-2A article lists it as operating. End left null. Coordinates are city-level (Wikipedia city page); the exact site could not be verified."
+    },
+    {
+      "id": "hl-3",
+      "name": "HL-3",
+      "full_name": "Huan-Liuqi-3 (formerly HL-2M)",
+      "category": "tokamak",
+      "status": "operating",
+      "country": "China",
+      "country_code": "CN",
+      "site": "Southwestern Institute of Physics, Chengdu",
+      "lat": 30.66,
+      "lon": 104.063,
+      "operator": "Southwestern Institute of Physics (CNNC)",
+      "start": 2020,
+      "end": null,
+      "achievements": [
+        "Commissioned on 4 December 2020",
+        "H-mode with 1 MA plasma current (reported January 2024)",
+        "Ion temperature 117 million °C and electron temperature 160 million °C (announced March 2025)"
+      ],
+      "importance": "HL-3 is China's largest copper-coil tokamak and an ITER satellite device. It is designed for high plasma current and high temperatures and is open to international teams. Its 'double 100 million degrees' result was a key Chinese milestone in 2025.",
+      "sources": [
+        {
+          "title": "HL-2M (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/HL-2M"
+        },
+        {
+          "title": "China sets new records in the research of new-generation 'artificial sun' HL-3 (CNNC / China Daily)",
+          "url": "https://subsites.chinadaily.com.cn/cnnc/2025-03/31/c_1082798.htm"
+        },
+        {
+          "title": "China sets out fusion progress, collaboration opportunities (World Nuclear News)",
+          "url": "https://www.world-nuclear-news.org/articles/china-sets-out-fusion-progress-collaboration-opportunities"
+        }
+      ],
+      "note": "Sources differ on the 2025 ion temperature (117 million °C in the March 2025 CNNC release, 120 million °C in a later WNN article). Coordinates are city-level (Wikipedia city page); the exact site could not be verified."
+    },
+    {
+      "id": "kstar",
+      "name": "KSTAR",
+      "full_name": "Korea Superconducting Tokamak Advanced Research",
+      "category": "tokamak",
+      "status": "operating",
+      "country": "South Korea",
+      "country_code": "KR",
+      "site": "Korea Institute of Fusion Energy, Yuseong-gu, Daejeon",
+      "lat": 36.35,
+      "lon": 127.385,
+      "operator": "Korea Institute of Fusion Energy (KFE)",
+      "start": 2008,
+      "end": null,
+      "achievements": [
+        "First plasma in 2008 (15 July 2008 per German Wikipedia)",
+        "Plasma above 100 million degrees for 48 seconds (2024)",
+        "H-mode sustained for 102 seconds (2024)"
+      ],
+      "importance": "KSTAR is South Korea's superconducting tokamak and a partner device for ITER. It is known for holding very hot plasmas, above 100 million degrees, for tens of seconds. These long, hot pulses test the control methods a power plant will need.",
+      "sources": [
+        {
+          "title": "KSTAR (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/KSTAR"
+        },
+        {
+          "title": "KSTAR (Korean Wikipedia)",
+          "url": "https://ko.wikipedia.org/wiki/KSTAR"
+        },
+        {
+          "title": "KSTAR (German Wikipedia)",
+          "url": "https://de.wikipedia.org/wiki/KSTAR"
+        }
+      ],
+      "note": "English Wikipedia gives both June and July 2008 for first plasma. Coordinates are city-level (Wikipedia city page); the exact site could not be verified."
+    },
+    {
+      "id": "lhd",
+      "name": "LHD",
+      "full_name": "Large Helical Device",
+      "category": "stellarator",
+      "status": "retired",
+      "country": "Japan",
+      "country_code": "JP",
+      "site": "National Institute for Fusion Science, Toki, Gifu",
+      "lat": 35.326,
+      "lon": 137.169,
+      "operator": "National Institute for Fusion Science (NIFS)",
+      "start": 1998,
+      "end": 2025,
+      "achievements": [
+        "Experiments began on 31 March 1998",
+        "Longest sustained runs of any magnetic fusion experiment (about 48–54 minutes at low density)",
+        "Over 200,000 discharges before the programme ended on 25 December 2025"
+      ],
+      "importance": "LHD was a large superconducting heliotron, a type of stellarator, and for many years the biggest stellarator in the world. It showed that stellarators can run plasmas for close to an hour. Its programme ended at Christmas 2025 after 27 years.",
+      "sources": [
+        {
+          "title": "Large Helical Device (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Large_Helical_Device"
+        },
+        {
+          "title": "Completion of the LHD experimental program (NIFS)",
+          "url": "https://www.nifs.ac.jp/en/info/251225e.html"
+        },
+        {
+          "title": "Large Helical Device (German Wikipedia)",
+          "url": "https://de.wikipedia.org/wiki/Large_Helical_Device"
+        }
+      ],
+      "note": "Coordinates from German Wikipedia."
+    },
+    {
+      "id": "sst-1",
+      "name": "SST-1",
+      "full_name": "Steady State Superconducting Tokamak",
+      "category": "tokamak",
+      "status": "operating",
+      "country": "India",
+      "country_code": "IN",
+      "site": "Institute for Plasma Research, Gandhinagar",
+      "lat": 23.098,
+      "lon": 72.626,
+      "operator": "Institute for Plasma Research (IPR)",
+      "start": null,
+      "end": null,
+      "achievements": [
+        "Fully commissioned in 2013",
+        "Repeatable plasmas up to about 500 ms with currents above 75 kA (2015)"
+      ],
+      "importance": "SST-1 is India's superconducting tokamak and the country's largest. It was built to study long, steady pulses and helped India become a full ITER partner. It will be followed by the planned SST-2.",
+      "sources": [
+        {
+          "title": "Steady State Superconducting Tokamak (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Steady_State_Superconducting_Tokamak"
+        },
+        {
+          "title": "Institute for Plasma Research (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Institute_for_Plasma_Research"
+        }
+      ],
+      "note": "First plasma year not verified (machine fabricated by 2005, fully commissioned 2013). Current operating status not confirmed beyond Wikipedia's '2005–present'. Plotted at the shared site point so the map can group devices at this site."
+    },
+    {
+      "id": "aditya",
+      "name": "ADITYA",
+      "full_name": "ADITYA tokamak (upgraded to ADITYA-U)",
+      "category": "tokamak",
+      "status": "operating",
+      "country": "India",
+      "country_code": "IN",
+      "site": "Institute for Plasma Research, Gandhinagar",
+      "lat": 23.098,
+      "lon": 72.626,
+      "operator": "Institute for Plasma Research (IPR)",
+      "start": 1989,
+      "end": null,
+      "achievements": [
+        "India's first tokamak, commissioned in 1989",
+        "First plasma of the upgraded ADITYA-U in 2016"
+      ],
+      "importance": "ADITYA was India's first tokamak and started the national fusion programme. Its upgrade, ADITYA-U, has a divertor-ready shape. It is mainly used for physics studies and training.",
+      "sources": [
+        {
+          "title": "ADITYA (tokamak) (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/ADITYA_(tokamak)"
+        },
+        {
+          "title": "Institute for Plasma Research (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Institute_for_Plasma_Research"
+        }
+      ],
+      "note": "Current operating status not confirmed. Plotted at the shared site point so the map can group devices at this site."
+    },
+    {
+      "id": "tcv",
+      "name": "TCV",
+      "full_name": "Tokamak à Configuration Variable",
+      "category": "tokamak",
+      "status": "operating",
+      "country": "Switzerland",
+      "country_code": "CH",
+      "site": "Swiss Plasma Center, EPFL, Lausanne",
+      "lat": 46.52,
+      "lon": 6.566,
+      "operator": "Swiss Plasma Center (EPFL)",
+      "start": 1992,
+      "end": null,
+      "achievements": [
+        "First plasma in November 1992",
+        "First showed that negative triangularity shaping improves confinement",
+        "Plasma shape controlled by deep reinforcement learning (with DeepMind, published February 2022)"
+      ],
+      "importance": "TCV can shape its plasma in more ways than almost any other tokamak. This makes it a test bed for new shapes and divertors, such as negative triangularity and the snowflake divertor. In 2022 it became the first tokamak whose plasma was steered by an AI controller.",
+      "sources": [
+        {
+          "title": "Tokamak à configuration variable (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Tokamak_%C3%A0_configuration_variable"
+        },
+        {
+          "title": "EPFL and DeepMind use AI to control plasmas for nuclear fusion (EPFL)",
+          "url": "https://actu.epfl.ch/news/epfl-and-deepmind-use-ai-to-control-plasmas-for-nu"
+        }
+      ],
+      "note": "Coordinates are for the EPFL campus (Wikipedia), not the exact building."
+    },
+    {
+      "id": "textor",
+      "name": "TEXTOR",
+      "full_name": "Tokamak Experiment for Technology Oriented Research",
+      "category": "tokamak",
+      "status": "retired",
+      "country": "Germany",
+      "country_code": "DE",
+      "site": "Forschungszentrum Jülich",
+      "lat": 50.905,
+      "lon": 6.412,
+      "operator": "Forschungszentrum Jülich",
+      "start": 1981,
+      "end": 2013,
+      "achievements": [
+        "Studied plasma–wall interaction for fusion reactors (1981–2013)"
+      ],
+      "importance": "TEXTOR was a medium-sized tokamak focused on how the hot plasma interacts with the wall. These questions decide how long wall materials can last in a reactor. Its results supported the preparation of ITER.",
+      "sources": [
+        {
+          "title": "TEXTOR (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/TEXTOR"
+        },
+        {
+          "title": "Forschungszentrum Jülich (German Wikipedia)",
+          "url": "https://de.wikipedia.org/wiki/Forschungszentrum_J%C3%BClich"
+        }
+      ],
+      "note": "German Wikipedia gives 1981 for start of operation and 1983 for the official inauguration. Coordinates are for the research centre."
+    },
+    {
+      "id": "ftu",
+      "name": "FTU",
+      "full_name": "Frascati Tokamak Upgrade",
+      "category": "tokamak",
+      "status": "retired",
+      "country": "Italy",
+      "country_code": "IT",
+      "site": "ENEA Frascati Research Centre, Frascati",
+      "lat": 41.817,
+      "lon": 12.683,
+      "operator": "ENEA",
+      "start": 1990,
+      "end": null,
+      "achievements": [
+        "Reached 1.6 MA at 8 T with average electron density above 4×10²⁰ m⁻³"
+      ],
+      "importance": "FTU was a compact, high-field tokamak with an 8-tesla magnetic field, much stronger than most tokamaks. It showed that strong fields allow dense plasmas in a small device, an idea now used by SPARC. It is being replaced by the DTT on the same site.",
+      "sources": [
+        {
+          "title": "Frascati Tokamak Upgrade (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Frascati_Tokamak_Upgrade"
+        },
+        {
+          "title": "La fusione nucleare (ENEA Open Day della Ricerca)",
+          "url": "https://www.opendaydellaricerca.enea.it/iniziative-frascati/laboratorio-di-ricerca/la-fusione-nucleare-soluzione-sostenibile-al-problema-energetico.html"
+        }
+      ],
+      "note": "End year not verified: an ENEA page says FTU will be dismantled to make room for DTT, but Wikipedia still lists 1989–present. Coordinates are city-level (Wikipedia city page); the exact site could not be verified."
+    },
+    {
+      "id": "dtt",
+      "name": "DTT",
+      "full_name": "Divertor Tokamak Test facility",
+      "category": "tokamak",
+      "status": "construction",
+      "country": "Italy",
+      "country_code": "IT",
+      "site": "ENEA Frascati Research Centre, Frascati",
+      "lat": 41.817,
+      "lon": 12.683,
+      "operator": "ENEA and partners",
+      "start": null,
+      "end": null,
+      "achievements": [
+        "Construction started at the ENEA Frascati centre (about 2019)"
+      ],
+      "importance": "DTT is an Italian tokamak being built to test solutions for removing heat from the plasma, one of the hardest problems for future power plants. It will support the European DEMO design.",
+      "sources": [
+        {
+          "title": "La fusione nucleare (ENEA Open Day della Ricerca)",
+          "url": "https://www.opendaydellaricerca.enea.it/iniziative-frascati/laboratorio-di-ricerca/la-fusione-nucleare-soluzione-sostenibile-al-problema-energetico.html"
+        },
+        {
+          "title": "List of fusion experiments (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/List_of_fusion_experiments"
+        }
+      ],
+      "note": "Planned first plasma about 2029 according to the List of fusion experiments (uncertain). Coordinates are city-level (Wikipedia city page); the exact site could not be verified."
+    },
+    {
+      "id": "compass",
+      "name": "COMPASS",
+      "full_name": "COMPact ASSembly tokamak",
+      "category": "tokamak",
+      "status": "retired",
+      "country": "Czech Republic",
+      "country_code": "CZ",
+      "site": "Institute of Plasma Physics CAS, Prague-Libeň",
+      "lat": 50.112,
+      "lon": 14.47,
+      "operator": "Institute of Plasma Physics, Czech Academy of Sciences",
+      "start": 1989,
+      "end": 2021,
+      "achievements": [
+        "Built at Culham (1989), restarted in Prague in 2006",
+        "Last experiments on 20 August 2021"
+      ],
+      "importance": "COMPASS began as a British tokamak and was given a second life in Prague. With an ITER-like plasma shape it let a smaller lab do research useful for ITER. It made the Czech Republic an active fusion country.",
+      "sources": [
+        {
+          "title": "COMPASS tokamak (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/COMPASS_tokamak"
+        }
+      ],
+      "note": "Start = first operation at Culham in 1989; the Prague period began in 2006. Coordinates are for the Libeň district of Prague, not the exact building."
+    },
+    {
+      "id": "compass-u",
+      "name": "COMPASS-U",
+      "full_name": "COMPASS Upgrade",
+      "category": "tokamak",
+      "status": "construction",
+      "country": "Czech Republic",
+      "country_code": "CZ",
+      "site": "Institute of Plasma Physics CAS, Prague-Libeň",
+      "lat": 50.112,
+      "lon": 14.47,
+      "operator": "Institute of Plasma Physics, Czech Academy of Sciences",
+      "start": null,
+      "end": null,
+      "achievements": [
+        "Under construction in Prague as a high-magnetic-field tokamak (assembly phase 2023–2025)"
+      ],
+      "importance": "COMPASS-U is a new compact tokamak with a strong magnetic field and hot walls. It is designed to study heat exhaust and wall materials under conditions close to those of future reactors.",
+      "sources": [
+        {
+          "title": "COMPASS tokamak (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/COMPASS_tokamak"
+        },
+        {
+          "title": "COMPASS-U further information (IPP Prague)",
+          "url": "https://www.ipp.cas.cz/Compass_U/Further_information"
+        },
+        {
+          "title": "COMPASS and COMPASS Upgrade (ÖAW)",
+          "url": "https://www.oeaw.ac.at/en/fusion/fusion-research-in-europe/compass-and-compass-upgrade"
+        }
+      ],
+      "note": "Project pages planned first plasma for 2025; whether it has happened could not be verified. Coordinates are district-level."
+    },
+    {
+      "id": "globus-m2",
+      "name": "Globus-M2",
+      "full_name": "Globus-M2 spherical tokamak",
+      "category": "spherical-tokamak",
+      "status": "operating",
+      "country": "Russia",
+      "country_code": "RU",
+      "site": "Ioffe Institute, St Petersburg",
+      "lat": 60.007,
+      "lon": 30.369,
+      "operator": "Ioffe Institute",
+      "start": 2019,
+      "end": null,
+      "achievements": [
+        "Toroidal magnetic field raised to 0.83 T and plasma current to 0.4 MA",
+        "Energy confinement time about 270% longer than on Globus-M"
+      ],
+      "importance": "Globus-M2 is a compact Russian spherical tokamak, the upgrade of Globus-M from 1999. It runs at a stronger magnetic field than most devices of its size. It supports Russian plans for compact fusion neutron sources and hybrid reactors.",
+      "sources": [
+        {
+          "title": "Globus-M2 (Nature, Russian Science Highlights)",
+          "url": "https://www.nature.com/articles/d42473-021-00131-5"
+        },
+        {
+          "title": "Ioffe Institute (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Ioffe_Institute"
+        },
+        {
+          "title": "List of fusion experiments (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/List_of_fusion_experiments"
+        }
+      ],
+      "note": "Start = first full-scale experimental campaign (2019); the first Globus-M2 plasma may be earlier."
+    },
+    {
+      "id": "tj-ii",
+      "name": "TJ-II",
+      "full_name": "TJ-II flexible heliac",
+      "category": "stellarator",
+      "status": "operating",
+      "country": "Spain",
+      "country_code": "ES",
+      "site": "CIEMAT National Fusion Laboratory, Madrid",
+      "lat": 40.417,
+      "lon": -3.703,
+      "operator": "CIEMAT",
+      "start": 1998,
+      "end": null,
+      "achievements": [
+        "First plasma in 1998",
+        "Tested lithium wall coatings (2008)"
+      ],
+      "importance": "TJ-II is Spain's main fusion device, a flexible heliac whose magnetic field can be changed during research. It studies turbulence, transport barriers and wall materials. It keeps Spain active in European stellarator research.",
+      "sources": [
+        {
+          "title": "TJ-II (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/TJ-II"
+        },
+        {
+          "title": "CIEMAT (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/CIEMAT"
+        }
+      ],
+      "note": "Coordinates are city-level (Wikipedia city page); the exact site could not be verified."
+    },
+    {
+      "id": "step",
+      "name": "STEP",
+      "full_name": "Spherical Tokamak for Energy Production",
+      "category": "spherical-tokamak",
+      "status": "planned",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "site": "Former West Burton A power station, Nottinghamshire",
+      "lat": 53.361,
+      "lon": -0.811,
+      "operator": "UKAEA",
+      "start": null,
+      "end": null,
+      "achievements": [
+        "Site chosen at West Burton; detailed design phase 2025–2032"
+      ],
+      "importance": "STEP is the UK plan for a prototype spherical-tokamak power plant. It aims to deliver about 100 MW of net electricity and to breed its own tritium, with operation planned for about 2040. It builds on START, MAST and MAST Upgrade.",
+      "sources": [
+        {
+          "title": "Spherical Tokamak for Energy Production (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Spherical_Tokamak_for_Energy_Production"
+        },
+        {
+          "title": "West Burton power stations (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/West_Burton_power_stations"
+        }
+      ],
+      "note": "All dates and goals are plans."
+    },
+    {
+      "id": "diii-d",
+      "name": "DIII-D",
+      "full_name": "DIII-D National Fusion Facility",
+      "category": "tokamak",
+      "status": "operating",
+      "country": "United States",
+      "country_code": "US",
+      "site": "General Atomics, San Diego, California",
+      "lat": 32.894,
+      "lon": -117.234,
+      "operator": "General Atomics for the US Department of Energy",
+      "start": 1986,
+      "end": null,
+      "achievements": [
+        "Renamed and upgraded from Doublet III (first plasma 1978) in 1986",
+        "Highest plasma beta of its time (early 1980s, as Doublet III) and highest neutron rate (early 1990s)",
+        "Developed ways to suppress edge-localised modes (2000s)"
+      ],
+      "importance": "DIII-D is the largest tokamak operating in the United States today. Its D-shaped plasma helped create the 'advanced tokamak' idea, and many plasma shaping and control methods used by ITER were tested there. It is a national user facility for scientists from many countries.",
+      "sources": [
+        {
+          "title": "DIII-D (tokamak) (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/DIII-D_(tokamak)"
+        },
+        {
+          "title": "General Atomics (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/General_Atomics"
+        }
+      ],
+      "note": "Coordinates are for General Atomics headquarters (Wikipedia); the exact DIII-D building was not verified."
+    },
+    {
+      "id": "alcator-c-mod",
+      "name": "Alcator C-Mod",
+      "full_name": "Alcator C-Mod (Alto Campo Toro)",
+      "category": "tokamak",
+      "status": "retired",
+      "country": "United States",
+      "country_code": "US",
+      "site": "MIT Plasma Science and Fusion Center, Cambridge, Massachusetts",
+      "lat": 42.36,
+      "lon": -71.098,
+      "operator": "Massachusetts Institute of Technology",
+      "start": 1991,
+      "end": 2016,
+      "achievements": [
+        "Magnetic field up to 8 T",
+        "World record plasma pressure of 2.05 atmospheres on its last day (September 2016)"
+      ],
+      "importance": "Alcator C-Mod was a compact tokamak with a very strong magnetic field. Its record plasma pressure showed that high fields can make smaller fusion devices possible. The same high-field idea is behind SPARC, designed by MIT and Commonwealth Fusion Systems.",
+      "sources": [
+        {
+          "title": "Alcator C-Mod (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Alcator_C-Mod"
+        },
+        {
+          "title": "MIT Plasma Science and Fusion Center (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/MIT_Plasma_Science_and_Fusion_Center"
+        }
+      ],
+      "note": "Start year: 1991 (C-Mod article); the PSFC article says 1993. Coordinates are for the PSFC."
+    },
+    {
+      "id": "hsx",
+      "name": "HSX",
+      "full_name": "Helically Symmetric Experiment",
+      "category": "stellarator",
+      "status": "operating",
+      "country": "United States",
+      "country_code": "US",
+      "site": "University of Wisconsin–Madison",
+      "lat": 43.075,
+      "lon": -89.404,
+      "operator": "University of Wisconsin–Madison",
+      "start": 1999,
+      "end": null,
+      "achievements": [
+        "Showed reduced neoclassical transport with quasi-helical symmetry (from 1999)"
+      ],
+      "importance": "HSX is a university stellarator built with quasi-helical symmetry, a special kind of optimised field. It showed in practice that this symmetry reduces particle losses. The idea is used in several new stellarator designs.",
+      "sources": [
+        {
+          "title": "Helically Symmetric Experiment (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Helically_Symmetric_Experiment"
+        },
+        {
+          "title": "University of Wisconsin–Madison (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/University_of_Wisconsin%E2%80%93Madison"
+        }
+      ],
+      "note": "Coordinates are for the university campus."
+    },
+    {
+      "id": "sparc",
+      "name": "SPARC",
+      "full_name": "SPARC",
+      "category": "tokamak",
+      "status": "construction",
+      "country": "United States",
+      "country_code": "US",
+      "site": "Commonwealth Fusion Systems, Devens, Massachusetts",
+      "lat": 42.544,
+      "lon": -71.627,
+      "operator": "Commonwealth Fusion Systems (with MIT PSFC)",
+      "start": null,
+      "end": null,
+      "achievements": [
+        "Record 20 T high-temperature superconducting magnet test (September 2021)",
+        "First of 18 toroidal field magnets placed in the SPARC building (January 2026)"
+      ],
+      "importance": "SPARC is a private compact tokamak using new high-temperature superconducting magnets. It aims to make more fusion energy than the heating it receives (Q > 1, design value about 11), with first operation planned for 2027. If it works, it will show that strong magnets can make fusion devices much smaller.",
+      "sources": [
+        {
+          "title": "SPARC (tokamak) (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/SPARC_(tokamak)"
+        },
+        {
+          "title": "Commonwealth Fusion Systems (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Commonwealth_Fusion_Systems"
+        }
+      ],
+      "note": "All performance figures are design goals, not results."
+    },
+    {
+      "id": "nif",
+      "name": "NIF",
+      "full_name": "National Ignition Facility",
+      "category": "inertial",
+      "status": "operating",
+      "country": "United States",
+      "country_code": "US",
+      "site": "Lawrence Livermore National Laboratory, Livermore, California",
+      "lat": 37.691,
+      "lon": -121.701,
+      "operator": "Lawrence Livermore National Laboratory",
+      "start": 2009,
+      "end": null,
+      "achievements": [
+        "First fusion ignition: 3.15 MJ out from 2.05 MJ of laser energy (5 December 2022)",
+        "Record yield of 8.6 MJ from 2.08 MJ of laser energy, target gain above 4 (7 April 2025)"
+      ],
+      "importance": "NIF is a giant laser facility that focuses its beams on a tiny fuel capsule. In 2022 it became the first experiment to get more fusion energy out of the target than the laser energy put in. The lasers themselves still use far more electricity than the fusion output, so this is a scientific, not a practical, break-even.",
+      "sources": [
+        {
+          "title": "National Ignition Facility (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/National_Ignition_Facility"
+        },
+        {
+          "title": "Target breakthrough enabled fusion record at NIF (LLNL)",
+          "url": "https://lmf.llnl.gov/news/target-breakthrough-enabled-fusion-record-nif"
+        },
+        {
+          "title": "National Ignition Facility (German Wikipedia)",
+          "url": "https://de.wikipedia.org/wiki/National_Ignition_Facility"
+        }
+      ],
+      "note": "Start = dedication and first large experiments (2009). Gain refers to laser energy on target, not total facility energy. Coordinates from German Wikipedia."
+    },
+    {
+      "id": "omega",
+      "name": "OMEGA",
+      "full_name": "OMEGA laser (and OMEGA EP)",
+      "category": "inertial",
+      "status": "operating",
+      "country": "United States",
+      "country_code": "US",
+      "site": "Laboratory for Laser Energetics, University of Rochester, New York",
+      "lat": 43.113,
+      "lon": -77.632,
+      "operator": "Laboratory for Laser Energetics (University of Rochester)",
+      "start": 1995,
+      "end": null,
+      "achievements": [
+        "Upgraded to 60 beams in 1995",
+        "OMEGA EP dedicated on 16 May 2008",
+        "Implosions with internal pressures above 50 gigabar (reported 2016)"
+      ],
+      "importance": "OMEGA is the main laser for direct-drive fusion, where the beams hit the fuel capsule directly. It is a university facility used by many students and laboratories. Its results guide experiments at NIF and designs for laser fusion power plants.",
+      "sources": [
+        {
+          "title": "Laboratory for Laser Energetics (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Laboratory_for_Laser_Energetics"
+        }
+      ],
+      "note": "Start = 60-beam OMEGA (1995); a first 24-beam OMEGA was completed in 1980."
+    },
+    {
+      "id": "z-machine",
+      "name": "Z machine",
+      "full_name": "Z Pulsed Power Facility",
+      "category": "inertial",
+      "status": "operating",
+      "country": "United States",
+      "country_code": "US",
+      "site": "Sandia National Laboratories, Albuquerque, New Mexico",
+      "lat": 35.034,
+      "lon": -106.543,
+      "operator": "Sandia National Laboratories",
+      "start": 1996,
+      "end": null,
+      "achievements": [
+        "Plasma temperatures of over 2 billion K reported (2006)",
+        "Refurbished as ZR in 2007 (350 TW radiated power)",
+        "Used for magnetized liner inertial fusion (MagLIF) experiments"
+      ],
+      "importance": "Z is the world's most powerful pulsed-power machine. It sends an enormous electric current through a small target, which creates huge magnetic forces and X-rays. It studies an inertial fusion route without lasers, called MagLIF.",
+      "sources": [
+        {
+          "title": "Z Pulsed Power Facility (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Z_Pulsed_Power_Facility"
+        },
+        {
+          "title": "Z-Maschine (German Wikipedia)",
+          "url": "https://de.wikipedia.org/wiki/Z-Maschine"
+        }
+      ],
+      "note": "Coordinates from German Wikipedia."
+    },
+    {
+      "id": "lmj",
+      "name": "Laser Mégajoule",
+      "full_name": "Laser Mégajoule (LMJ)",
+      "category": "inertial",
+      "status": "operating",
+      "country": "France",
+      "country_code": "FR",
+      "site": "CEA CESTA, Le Barp, near Bordeaux",
+      "lat": 44.607,
+      "lon": -0.767,
+      "operator": "CEA (Commissariat à l'énergie atomique)",
+      "start": 2014,
+      "end": null,
+      "achievements": [
+        "Declared operational on 23 October 2014",
+        "First fusion experiment with 48 beams in October 2019"
+      ],
+      "importance": "Laser Mégajoule is France's large laser facility, similar in size to NIF. Its main task is research for the French nuclear deterrent, but some time is used for open science. It was designed for 176 beams, which are being added step by step.",
+      "sources": [
+        {
+          "title": "Laser Mégajoule (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Laser_M%C3%A9gajoule"
+        },
+        {
+          "title": "Laser Mégajoule (French Wikipedia)",
+          "url": "https://fr.wikipedia.org/wiki/Laser_M%C3%A9gajoule"
+        },
+        {
+          "title": "Le Barp (French Wikipedia)",
+          "url": "https://fr.wikipedia.org/wiki/Le_Barp"
+        }
+      ],
+      "note": "Coordinates are for Le Barp commune; CESTA lies in the north of the commune, exact site not verified."
+    },
+    {
+      "id": "st40",
+      "name": "ST40",
+      "full_name": "ST40 high-field spherical tokamak",
+      "category": "spherical-tokamak",
+      "status": "operating",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "site": "Tokamak Energy, Milton Park, Oxfordshire",
+      "lat": 51.623,
+      "lon": -1.292,
+      "operator": "Tokamak Energy Ltd",
+      "start": 2018,
+      "end": null,
+      "achievements": [
+        "Plasma ion temperature above 100 million °C (March 2022)"
+      ],
+      "importance": "ST40 is a privately built compact spherical tokamak with a strong magnetic field. In 2022 it became the first private device to reach ion temperatures above 100 million degrees. The company aims to use high-temperature superconducting magnets in future power plants.",
+      "sources": [
+        {
+          "title": "Tokamak Energy (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Tokamak_Energy"
+        },
+        {
+          "title": "Company spotlight: Tokamak Energy (Milton Park)",
+          "url": "https://www.miltonpark.co.uk/business/company-spotlight-tokamak-energy/"
+        },
+        {
+          "title": "Milton Park (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Milton_Park"
+        }
+      ],
+      "note": "Tokamak Energy has been based at Milton Park since 2013; ST40's location there is inferred, not stated directly. Coordinates are for Milton Park."
+    },
+    {
+      "id": "tae-norman",
+      "name": "Norman (C-2W)",
+      "full_name": "Norman field-reversed configuration device",
+      "category": "other",
+      "status": "operating",
+      "country": "United States",
+      "country_code": "US",
+      "site": "TAE Technologies, Foothill Ranch, California",
+      "lat": 33.689,
+      "lon": -117.664,
+      "operator": "TAE Technologies",
+      "start": 2017,
+      "end": null,
+      "achievements": [
+        "First plasma announced in July 2017",
+        "Stable plasmas above 50 million °C reported (2021)"
+      ],
+      "importance": "Norman is a beam-driven field-reversed configuration, a compact plasma ring without a central column. TAE's long-term aim is fusion with hydrogen–boron fuel, which produces few neutrons. These goals are plans; a smaller follow-on device, Norm, was disclosed in 2025.",
+      "sources": [
+        {
+          "title": "TAE Technologies (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/TAE_Technologies"
+        },
+        {
+          "title": "Foothill Ranch (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Foothill_Ranch,_Lake_Forest,_California"
+        }
+      ],
+      "note": "Current status of Norman after Norm (2025) not verified. Company-reported results. Coordinates are city-level (Wikipedia city page); the exact site could not be verified."
+    },
+    {
+      "id": "helion-polaris",
+      "name": "Polaris",
+      "full_name": "Polaris (Helion 7th-generation prototype)",
+      "category": "other",
+      "status": "operating",
+      "country": "United States",
+      "country_code": "US",
+      "site": "Helion Energy, Everett, Washington",
+      "lat": 47.979,
+      "lon": -122.202,
+      "operator": "Helion Energy",
+      "start": 2024,
+      "end": null,
+      "achievements": [
+        "Began operating at the end of 2024",
+        "Company reported measurable D–T fusion and 150 million °C plasma (announced 13 February 2026)"
+      ],
+      "importance": "Polaris is a pulsed field-reversed configuration machine that merges and compresses plasma rings. Helion aims to recover electricity directly from the plasma and plans a 50 MW plant for Microsoft by 2028. Its 2024 net-electricity target was not met, so its claims should be watched carefully.",
+      "sources": [
+        {
+          "title": "Helion Energy (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Helion_Energy"
+        },
+        {
+          "title": "Helion achieves new industry-first fusion energy milestones (Business Wire, 13 Feb 2026)",
+          "url": "https://www.businesswire.com/news/home/20260213457749/en/Helion-Achieves-New-Industry-First-Fusion-Energy-Milestones-Accelerating-Path-to-Commercial-Fusion"
+        },
+        {
+          "title": "Everett, Washington (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Everett,_Washington"
+        }
+      ],
+      "note": "Achievements are company-reported, not independently peer-reviewed. Exact Polaris site not stated in sources. Coordinates are city-level (Wikipedia city page); the exact site could not be verified."
+    },
+    {
+      "id": "general-fusion-lm26",
+      "name": "LM26",
+      "full_name": "Lawson Machine 26",
+      "category": "other",
+      "status": "operating",
+      "country": "Canada",
+      "country_code": "CA",
+      "site": "General Fusion, Richmond, British Columbia",
+      "lat": 49.167,
+      "lon": -123.133,
+      "operator": "General Fusion",
+      "start": null,
+      "end": null,
+      "achievements": [
+        "Announced in August 2023 as a magnetized target fusion demonstration machine"
+      ],
+      "importance": "LM26 tests magnetized target fusion, where a plasma is squeezed by a collapsing lithium liner. General Fusion aims to reach 100 million °C and conditions equivalent to scientific break-even. Financial problems in 2025 reduced its operations, so the timeline is uncertain.",
+      "sources": [
+        {
+          "title": "General Fusion (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/General_Fusion"
+        },
+        {
+          "title": "Richmond, British Columbia (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Richmond,_British_Columbia"
+        }
+      ],
+      "note": "First plasma date not verified, so start is null. Operation was reduced in May 2025 after a funding crisis; present status not confirmed. Goals are plans. Coordinates are city-level (Wikipedia city page); the exact site could not be verified."
+    }
+  ]
+}

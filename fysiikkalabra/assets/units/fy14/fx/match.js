@@ -9,7 +9,7 @@ window.FX.match = (el, d, A) => {
   const saved = store.get(el.id) || {};
   let tries = 0;
   const rows = items.map((it) => {
-    const sel = h('select', { 'aria-label': 'Answer for: ' + it.text.replace(/[*{}\/]|fr/g, '') },
+    const sel = h('select', { 'aria-label': 'Answer for: ' + it.text.replace(/\{\/?fr\}|[*]/g, '') },
       h('option', { value: '' }, 'Choose…'), ...opts.map((o, k) => h('option', { value: String(k), lang: d.lang_options || false }, o)));
     if (saved[it.i] != null) sel.value = saved[it.i];
     const out = h('output', { 'aria-live': 'polite' });
