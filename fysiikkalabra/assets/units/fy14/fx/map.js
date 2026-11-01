@@ -2,7 +2,7 @@
    OpenStreetMap tiles loaded by the student's browser, © OpenStreetMap contributors). The facts live in the data file
    named by the element's data-src (units/fy14/data/facilities.json), apart from this presentation code.
    - One marker per site; a site with several devices (Culham, Princeton, Naka, Cadarache …) lists them all.
-   - Filters: search (name, country, site), country, device type, status and a year ("operating in …" or any year);
+   - Filters: search (name, country then and now, site), country, device type, status and a year ("operating in …" or any year);
      the list under the map shows exactly the facilities the filters leave, as buttons, so the whole explorer works
      with a keyboard and a screen reader without touching the map.
    - Selecting a facility (marker, list or #f-<id> in the address, as the timeline links) shows its panel: type,
@@ -63,14 +63,15 @@ window.FX.map = (el, d, A) => {
       mapBox.addEventListener('focus', () => map.scrollWheelZoom.enable()); mapBox.addEventListener('blur', () => map.scrollWheelZoom.disable());
     } else mapBox.replaceChildren(h('p', { class: 'fx-note' }, 'The map could not be loaded. Use the list below.'));
 
+    const where = (f) => (f.country_then ? `${f.country_then} (today ${f.country})` : f.country);
     const site = (f) => f.lat.toFixed(2) + ',' + f.lon.toFixed(2);
     const years = (f) => (f.start ? f.start : '?') + '–' + (f.end ? f.end : f.status === 'operating' ? 'today' : f.status === 'retired' ? '?' : '');
     const live = (f, y) => f.start != null && f.start <= y && (f.end == null ? f.status !== 'planned' && f.status !== 'construction' : f.end >= y);
     const show = (f, focusPanel) => {
       panel.replaceChildren(
         h('p', { class: 'fx-map-kicker' }, h('span', { class: 'fx-swatch', style: `background:${COL[f.category] || '#555'}` }), `${cats[f.category] || f.category} · ${stats[f.status] || f.status}`),
-        h('h4', {}, f.name + (f.full_name && f.full_name !== f.name ? ' — ' + f.full_name : '')),
-        h('p', { class: 'fx-map-where' }, `${f.site}, ${f.country} · ${years(f)}` + (f.operator ? ' · ' + f.operator : '')),
+        h('h4', {}, !f.full_name || f.full_name === f.name ? f.name : f.full_name.toLowerCase().startsWith(f.name.toLowerCase()) ? f.full_name : f.name + ' — ' + f.full_name),
+        h('p', { class: 'fx-map-where' }, `${f.site}, ${where(f)} · ${years(f)}` + (f.operator ? ' · ' + f.operator : '')),
         ...(f.photo ? [h('figure', { class: 'fx-map-photo' }, h('img', { src: f.photo.src, alt: f.photo.alt || '', loading: 'lazy' }), h('figcaption', { html: md(f.photo.credit || '') }))] : []),
         h('p', { html: md(f.importance) }),
         ...(f.achievements && f.achievements.length ? [h('ul', {}, f.achievements.map((a) => h('li', { html: md(a) })))] : []),
@@ -84,11 +85,11 @@ window.FX.map = (el, d, A) => {
     const draw = () => {
       const s = q.value.trim().toLowerCase(), c = form.querySelector('#' + idp + 'country').value, k = form.querySelector('#' + idp + 'cat').value, st = form.querySelector('#' + idp + 'status').value;
       const y = Number(yr.value); yrOut.textContent = anyYear.checked ? 'any' : String(y); yr.disabled = anyYear.checked;
-      const shown = F.filter((f) => (!s || [f.name, f.full_name, f.country, f.site, f.operator].join(' ').toLowerCase().includes(s))
+      const shown = F.filter((f) => (!s || [f.name, f.full_name, f.country, f.country_then, f.site, f.operator].join(' ').toLowerCase().includes(s))
         && (!c || f.country === c) && (!k || f.category === k) && (!st || f.status === st) && (anyYear.checked || live(f, y)));
       count.textContent = `${shown.length} of ${F.length} facilities shown` + (anyYear.checked ? '.' : ` (operating in ${y}).`);
       list.replaceChildren(...shown.sort((a, b) => (a.start || 9999) - (b.start || 9999)).map((f) => h('li', {}, h('button', { type: 'button', 'data-id': f.id, 'aria-pressed': 'false', onclick: () => show(f, true) },
-        h('span', { class: 'fx-swatch', style: `background:${COL[f.category] || '#555'}` }), h('strong', {}, f.name), ` ${f.country}, ${years(f)} · ${cats[f.category] || f.category} · ${stats[f.status] || f.status}`))));
+        h('span', { class: 'fx-swatch', style: `background:${COL[f.category] || '#555'}` }), h('strong', {}, f.name), ` ${where(f)}, ${years(f)} · ${cats[f.category] || f.category} · ${stats[f.status] || f.status}`))));
       if (!map) return;
       Object.values(markers).forEach((m) => m.remove());
       const groups = {}; shown.forEach((f) => (groups[site(f)] = groups[site(f)] || []).push(f));
