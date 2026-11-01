@@ -188,9 +188,9 @@ new p5((p) => {
       p.fill(on ? 120 : 70, on ? 20 : 70, on ? 20 : 70); p.text(vt, x + bw / 2, base - h - 6); p.textStyle(p.NORMAL);
     });
     p.noStroke(); p.fill(26, 77, 46); p.textAlign(p.CENTER, p.BASELINE); p.textSize(ts(13));   // title: shrunk to fit inside the canvas when scaled down
-    const title = __('sama_massa_paino'), titleMax = 2 * (600 - (BARS.x + BARS.w / 2)) - 10;
+    const title = __('sama_massa_paino'), titleMax = BARS.w - 8;   // over the chart only: the axis title G (N) stays left of it
     if (p.textWidth(title) > titleMax) p.textSize(ts(13) * titleMax / p.textWidth(title));
-    p.text(title, BARS.x + BARS.w / 2, BARS.y - ts(6));
+    p.text(title, BARS.x + BARS.w / 2, BARS.y - ts(14));                                // above the axis title G (N)
 
   }
 
