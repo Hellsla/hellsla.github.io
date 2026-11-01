@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 44904908c0e5a59c
+CONTENT-HASH: 978c8eb6bbde4904
 ## Blocking
+(none)
 ## Polish
-- exercises.json fy4-13-L1-03 — still the worked example's cart and hanging weight with new numbers (carried over from the previous report); a level-1 task would be fresher with a different arrangement, e.g. a given T asked back as m_2.
-- solutions.md fy4-13-L3-01 — write the answer as 1,9 · 10⁴ N (two figures), not "19000 N"; describe the pulley diagram as "pyörä suorakulmiona" (carried over).
-- solutions.md fy4-13-L1-03 Järkevyys — "a = T : m_1" should be "a = T/m_1" (carried over).
+- solutions.md fy4-13-L3-01 — the question asks the force on the axle, but the pulley's diagram (two T down, F_akseli up) is only described in text and the pulley as a body is not taught in the lesson; add it as a third diagram block, or a hint "piirrä myös pyörän voimakuvio".
+- exercises.json fy4-13-L1-03 — same set-up as the worked example (cart + hanging weight, find T) with new numbers; make it ask for a, or give the cart a pull so it is not a copy.
+- solutions.md fy4-13-L2-01 — nosturin köysi is a new, good situation, but the lesson never shows a chain of bodies on ropes; Periaate should say why alempi köysi vetää ylempää laatikkoa alas (third law) in one more sentence.
+- solutions.md fy4-13-L1-04 — "Vastaus: 29 N" with answer tolerance 2 % rejects 30 N (g = 10); fine for the set, but note in Järkevyys that 29,4 N rounds to 29.
 ## Checked
-- Delta: only the L2-04 Sijoitus line changed. The units are factored out: (9,81 + 2,0) m/s² over (9,81 − 2,0) m/s².
-- The factored line is correct and easy to follow. 0,60 kg · 11,81 m/s² = 7,086 N, 7,086 N / 7,81 m/s² = 0,9073 kg, and the units cancel to kg. It matches the Kaava line above it and the answer 0,91 kg.
-- Pedagogically sound: the sum and the difference read as "g plus a" and "g minus a", which is the physical point of the task. Each bracket is a plain number with one unit, so no step is skipped.
-- On a 360 px phone the line is shorter than before. The 360 px layout check passes (no overflow), and no 360 px capture of L2-04 exists, so the fit rests on that check.
-- Nothing else in L2-04 changed: diagram before the equation, a Järkevyys check against the a formula, and the answer in two figures with the reason given.
-- Levels stay 5/4/3, and the fbd plan (error, draw, equations) is untouched by the diff.
+- Levels rise: L1 one body or one rope (incl. static, which repairs T = sum of weights), L2 two bodies with internal tension and inverse tasks, L3 limit, kinematics and pulley force.
+- Every task says to draw the diagram first; fbd tags cover draw (L2-01 with model_figure) and equations.
+- All twelve answers recomputed (2,0; 4,7; 2,8; 29; 4,0; 880; 6,5; 8,0; 0,91; 19000; 0,44; 0,86): correct.
+- Solutions follow annettu, kysytty, periaate, voimakuvio, kaava, sijoitus, vastaus, järkevyys with the diagram before equations; principle explained, no skipped steps.
+- Variety: pulley, hanging pair, sleds, lift, rope strength; not a copy of the example except L1-03.
+- Finnish: case after unit ("20 N:n voimalla"), terms correct.
