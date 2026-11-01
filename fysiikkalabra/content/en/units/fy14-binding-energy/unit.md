@@ -231,34 +231,33 @@ B = \Delta m \cdot c^2
 
 <svg data-fig="ladder" viewBox="0 0 600 380" role="img" aria-label="Energy diagram of helium-4. An upper level: two protons and two neutrons far apart, with the total mass 4.032980 u. A lower level, 28.3 MeV below: the helium-4 nucleus, mass 4.002603 u. An arrow up on the left is the binding energy B = 28.3 MeV that must be added to separate the nucleons. An arrow down on the right is the same energy released when they join." style="max-width:100%;font-size:26px">
   <defs><radialGradient id="fy14be-l-p" cx="35%" cy="32%" r="70%"><stop offset="0%" stop-color="#ff8a80"/><stop offset="55%" stop-color="#c92a2a"/><stop offset="100%" stop-color="#7f1d1d"/></radialGradient><radialGradient id="fy14be-l-n" cx="35%" cy="32%" r="70%"><stop offset="0%" stop-color="#e9ecef"/><stop offset="55%" stop-color="#9aa1a9"/><stop offset="100%" stop-color="#4b5259"/></radialGradient></defs>
-  <line x1="200" y1="110" x2="420" y2="110" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <line x1="200" y1="300" x2="420" y2="300" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <circle cx="220" cy="86" r="17" fill="url(#fy14be-l-p)" stroke="#1f2933" stroke-width="1.5"/>
-  <line x1="212.5" y1="86" x2="227.5" y2="86" stroke="#ffffff" stroke-width="2.72" stroke-linecap="round"/>
-  <line x1="220" y1="78.5" x2="220" y2="93.5" stroke="#ffffff" stroke-width="2.72" stroke-linecap="round"/>
-  <circle cx="275" cy="86" r="17" fill="url(#fy14be-l-n)" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="345" cy="86" r="17" fill="url(#fy14be-l-p)" stroke="#1f2933" stroke-width="1.5"/>
-  <line x1="337.5" y1="86" x2="352.5" y2="86" stroke="#ffffff" stroke-width="2.72" stroke-linecap="round"/>
-  <line x1="345" y1="78.5" x2="345" y2="93.5" stroke="#ffffff" stroke-width="2.72" stroke-linecap="round"/>
-  <circle cx="400" cy="86" r="17" fill="url(#fy14be-l-n)" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="279.5" cy="291.5" r="17" fill="url(#fy14be-l-n)" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="262.5" cy="238.5" r="17" fill="url(#fy14be-l-p)" stroke="#1f2933" stroke-width="1.5"/>
-  <line x1="254.5" y1="238.5" x2="270" y2="238.5" stroke="#ffffff" stroke-width="2.72" stroke-linecap="round"/>
-  <line x1="262.5" y1="231" x2="262.5" y2="246.5" stroke="#ffffff" stroke-width="2.72" stroke-linecap="round"/>
-  <circle cx="244.5" cy="280.5" r="17" fill="url(#fy14be-l-p)" stroke="#1f2933" stroke-width="1.5"/>
-  <line x1="236.5" y1="280.5" x2="252" y2="280.5" stroke="#ffffff" stroke-width="2.72" stroke-linecap="round"/>
-  <line x1="244.5" y1="272.5" x2="244.5" y2="288" stroke="#ffffff" stroke-width="2.72" stroke-linecap="round"/>
-  <circle cx="272.5" cy="266" r="17" fill="url(#fy14be-l-n)" stroke="#1f2933" stroke-width="1.5"/>
-  <foreignObject x="225" y="18.5" width="170" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:26px">$\text{free nucleons}$</div></foreignObject>
-  <foreignObject x="236.5" y="316.5" width="147" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:26px">${}^{4}\text{He}\ \text{nucleus}$</div></foreignObject>
-  <foreignObject x="432" y="94.5" width="134" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:26px">$4.032980\ \text{u}$</div></foreignObject>
-  <foreignObject x="432" y="284.5" width="134" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:26px">$4.002603\ \text{u}$</div></foreignObject>
-  <path d="M177,296 L177,140 L187,140 L170,114 L153,140 L163,140 L163,296 Z" fill="#2b8a3e" stroke-linejoin="round"/>
-  <foreignObject x="16" y="134.5" width="49" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:26px;color:#2b8a3e">$\text{add}$</div></foreignObject>
-  <foreignObject x="16" y="180.5" width="35" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:26px">$B =$</div></foreignObject>
-  <foreignObject x="16" y="214.5" width="107" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:26px">$28.3\ \text{MeV}$</div></foreignObject>
-  <path d="M323,124 L323,202 L313,202 L330,228 L347,202 L337,202 L337,124 Z" fill="#e8590c" stroke-linejoin="round"/>
-  <foreignObject x="354" y="177.5" width="116" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:26px;color:#e8590c">$\text{released}$</div></foreignObject>
+  <line x1="230" y1="110" x2="440" y2="110" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <line x1="230" y1="300" x2="440" y2="300" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <circle cx="250" cy="86" r="17" fill="url(#fy14be-l-p)" stroke="#1f2933" stroke-width="1.5"/>
+  <line x1="242.5" y1="86" x2="257.5" y2="86" stroke="#ffffff" stroke-width="2.72" stroke-linecap="round"/>
+  <line x1="250" y1="78.5" x2="250" y2="93.5" stroke="#ffffff" stroke-width="2.72" stroke-linecap="round"/>
+  <circle cx="305" cy="86" r="17" fill="url(#fy14be-l-n)" stroke="#1f2933" stroke-width="1.5"/>
+  <circle cx="370" cy="86" r="17" fill="url(#fy14be-l-p)" stroke="#1f2933" stroke-width="1.5"/>
+  <line x1="362.5" y1="86" x2="377.5" y2="86" stroke="#ffffff" stroke-width="2.72" stroke-linecap="round"/>
+  <line x1="370" y1="78.5" x2="370" y2="93.5" stroke="#ffffff" stroke-width="2.72" stroke-linecap="round"/>
+  <circle cx="420" cy="86" r="17" fill="url(#fy14be-l-n)" stroke="#1f2933" stroke-width="1.5"/>
+  <circle cx="309.5" cy="291.5" r="17" fill="url(#fy14be-l-n)" stroke="#1f2933" stroke-width="1.5"/>
+  <circle cx="292.5" cy="238.5" r="17" fill="url(#fy14be-l-p)" stroke="#1f2933" stroke-width="1.5"/>
+  <line x1="284.5" y1="238.5" x2="300" y2="238.5" stroke="#ffffff" stroke-width="2.72" stroke-linecap="round"/>
+  <line x1="292.5" y1="231" x2="292.5" y2="246.5" stroke="#ffffff" stroke-width="2.72" stroke-linecap="round"/>
+  <circle cx="274.5" cy="280.5" r="17" fill="url(#fy14be-l-p)" stroke="#1f2933" stroke-width="1.5"/>
+  <line x1="266.5" y1="280.5" x2="282" y2="280.5" stroke="#ffffff" stroke-width="2.72" stroke-linecap="round"/>
+  <line x1="274.5" y1="272.5" x2="274.5" y2="288" stroke="#ffffff" stroke-width="2.72" stroke-linecap="round"/>
+  <circle cx="302.5" cy="266" r="17" fill="url(#fy14be-l-n)" stroke="#1f2933" stroke-width="1.5"/>
+  <foreignObject x="250" y="18.5" width="170" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:26px">$\text{free nucleons}$</div></foreignObject>
+  <foreignObject x="261.5" y="316.5" width="147" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:26px">${}^{4}\text{He}\ \text{nucleus}$</div></foreignObject>
+  <foreignObject x="450" y="94.5" width="134" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:26px">$4.032980\ \text{u}$</div></foreignObject>
+  <foreignObject x="450" y="284.5" width="134" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:26px">$4.002603\ \text{u}$</div></foreignObject>
+  <path d="M212,296 L212,140 L222,140 L205,114 L188,140 L198,140 L198,296 Z" fill="#2b8a3e" stroke-linejoin="round"/>
+  <foreignObject x="6" y="153.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#2b8a3e">$\text{add}$</div></foreignObject>
+  <foreignObject x="6" y="189.5" width="184" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">${B = 28.3\ \text{MeV}}$</div></foreignObject>
+  <path d="M348,124 L348,202 L338,202 L355,228 L372,202 L362,202 L362,124 Z" fill="#e8590c" stroke-linejoin="round"/>
+  <foreignObject x="379" y="177.5" width="116" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:26px;color:#e8590c">$\text{released}$</div></foreignObject>
 </svg>
 
 We calculate with the **atomic masses** of tables such as AME2020, which include the electrons. So for the protons we use the mass of a hydrogen-1 atom, $m_\text{H} = 1.007825\ \text{u}$, and the electrons cancel:
@@ -269,7 +268,7 @@ Here $m_\text{n} = 1.008665\ \text{u}$ is the mass of a neutron.
 
 ## Binding energy per nucleon {Curve}
 
-To compare nuclei, we divide the binding energy by the number of nucleons. The **binding energy per nucleon** $B/A$ tells how tightly each nucleon is held on average. A large $B/A$ means a stable, tightly bound nucleus with little mass per nucleon.
+To compare nuclei, we divide the binding energy by the number of nucleons. The **binding energy per nucleon** $B/A$ tells how tightly each nucleon is held on average. A large $B/A$ means a tightly bound nucleus.
 
 The curve of $B/A$ rises steeply among the light nuclei: $1.11\ \text{MeV}$ for deuterium, $7.07\ \text{MeV}$ for helium-4. It reaches its peak near iron and nickel ($8.79\ \text{MeV}$ for $^{56}\text{Fe}$ and $^{62}\text{Ni}$) and then falls slowly to $7.59\ \text{MeV}$ for $^{235}\text{U}$. In light nuclei, every added nucleon finds more neighbours to bind to. In heavy nuclei, the electric repulsion of the many protons wins back part of the binding.
 
@@ -315,7 +314,7 @@ Both sides of the peak can climb towards it:
 
 The figure shows one possible split of uranium-235, into barium-141, krypton-92 and three neutrons: it releases $173\ \text{MeV}$ at once, and the radioactive fragments release more later.
 
-Fission was discovered in Berlin in December 1938 by Otto Hahn and Fritz Strassmann. Lise Meitner and Otto Frisch explained it early in 1939 and used $E = \Delta m \cdot c^2$ to estimate the energy. Fission gives about $0.85\ \text{MeV}$ per nucleon of fuel; D–T fusion gives $3.5\ \text{MeV}$ per nucleon, about four times more.
+Fission was discovered in Berlin in December 1938 by Otto Hahn and Fritz Strassmann. Lise Meitner and Otto Frisch explained it at Christmas 1938 (published February 1939) and used $E = \Delta m \cdot c^2$ to estimate the energy. Fission gives about $0.85\ \text{MeV}$ per nucleon of fuel; D–T fusion gives $3.5\ \text{MeV}$ per nucleon, about four times more.
 
 ## Worked example
 
@@ -323,7 +322,7 @@ The atomic mass of helium-4 is $4.002603\ \text{u}$ (AME2020). Calculate the mas
 
 <!-- vaihe -->
 
-**Given:** $m(^{4}\text{He}) = 4.002603\ \text{u}$, $Z = 2$, $N = 2$, $A = 4$; from AME2020, $m_\text{H} = 1.007825\ \text{u}$ and $m_\text{n} = 1.008665\ \text{u}$; $1\ \text{u} \cdot c^2 = 931.5\ \text{MeV}$. **Find:** the mass defect $\Delta m$, the binding energy $B$ and $B/A$.
+**Given:** $m(^{4}\text{He}) = 4.002603\ \text{u}$, $Z = 2$, $N = 2$, $A = 4$; from AME2020, $m_\text{H} = 1.007825\ \text{u}$ and $m_\text{n} = 1.008665\ \text{u}$; ${1\ \text{u} \cdot c^2 = 931.5\ \text{MeV}}$. **Find:** the mass defect $\Delta m$, the binding energy $B$ and $B/A$.
 
 <!-- vaihe -->
 
@@ -334,7 +333,8 @@ The atomic mass of helium-4 is $4.002603\ \text{u}$ (AME2020). Calculate the mas
 **Formula:**
 ```latex
 \begin{aligned}
-\Delta m &= Z \cdot m_\text{H} + N \cdot m_\text{n} - m(^{4}\text{He}) \\
+\Delta m &= Z \cdot m_\text{H} + N \cdot m_\text{n} \\
+&\quad - m(^{4}\text{He}) \\
 B &= \Delta m \cdot c^2 \\
 \frac{B}{A} &= \frac{\Delta m \cdot c^2}{A}
 \end{aligned}
@@ -342,14 +342,15 @@ B &= \Delta m \cdot c^2 \\
 
 <!-- vaihe -->
 
-**Unit conversions:** The mass defect stays in $\text{u}$, and $1\ \text{u} \cdot c^2 = 931.5\ \text{MeV}$ turns it into an energy in megaelectronvolts.
+**Unit conversions:** The mass defect stays in $\text{u}$, and ${1\ \text{u} \cdot c^2 = 931.5\ \text{MeV}}$ turns it into an energy in megaelectronvolts.
 
 <!-- vaihe -->
 
 **Substitution:**
 ```latex
 \begin{aligned}
-\Delta m &= 2 \cdot 1.007825\ \text{u} + 2 \cdot 1.008665\ \text{u} \\
+\Delta m &= 2 \cdot 1.007825\ \text{u} \\
+&\quad + 2 \cdot 1.008665\ \text{u} \\
 &\quad - 4.002603\ \text{u} \\
 &= 4.032980\ \text{u} - 4.002603\ \text{u} \\
 &= 0.030377\ \text{u} \\[4pt]
@@ -361,7 +362,7 @@ B &= 0.030377\ \text{u} \cdot 931.5\ \text{MeV/u} \\
 
 <!-- vaihe -->
 
-**Answer:** $\Delta m = 0.03038\ \text{u}$, $B = 28.3\ \text{MeV}$ and $B/A = 7.07\ \text{MeV}$ per nucleon. Three significant figures are enough, although the masses have more digits, because the difference is what matters.
+**Answer:** $\Delta m = 0.0304\ \text{u}$, $B = 28.3\ \text{MeV}$ and $B/A = 7.07\ \text{MeV}$ per nucleon. Three significant figures are enough, because $931.5\ \text{MeV/u}$ is given to four and the result is used only to three.
 
 <!-- vaihe -->
 

@@ -77,8 +77,8 @@ def notation():
             "Bottom left, the atomic number 6, with a label: atomic number Z, the number of protons. A label on the right says "
             "that the symbol names the element, and that Z and the symbol always belong together. Below: N = A − Z = 8 neutrons.")
     f.tex(392, 150, r"\text{C}", "middle", size=130, w=110)
-    f.tex(330, 84, "14", "end", size=56, w=80)
-    f.tex(330, 214, "6", "end", size=56, w=50)
+    f.tex(337, 84, "14", "end", size=56, w=80)
+    f.tex(337, 214, "6", "end", size=56, w=50)
     f.tex(16, 52, r"\text{mass number}", "start")
     f.tex(16, 86, r"A = Z + N", "start")
     f.arrow(160, 86, 252, 86, INK, 2.5, 13)
@@ -130,7 +130,7 @@ def ranges():
     for t in range(0, 11, 2):
         f.line(X(t), 300, X(t), 308, INK, 2)
         f.tex(X(t), 328, str(t), "middle")
-    f.tex(X1 + 30, 274, r"r\ (\text{fm})", "start")
+    f.tex(X1 + 24, 274, r"r\ (\text{fm})", "start")
     # strong force bar
     f.defs_add(f'<linearGradient id="fy14nu-r-g" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="{GOOD}"/>'
                f'<stop offset="0.6" stop-color="{GOOD}"/><stop offset="1" stop-color="{GOOD}" stop-opacity="0.05"/></linearGradient>')
@@ -143,10 +143,10 @@ def ranges():
     f.tex(X(0) + 2, 30, r"\text{repels}", "start", color=MUTED)
     # electric force bar
     f.defs_add(f'<linearGradient id="fy14nu-r-e" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="{HOT}"/>'
-               f'<stop offset="1" stop-color="{HOT}" stop-opacity="0.25"/></linearGradient>')
+               f'<stop offset="0.65" stop-color="{HOT}"/><stop offset="1" stop-color="{HOT}" stop-opacity="0.25"/></linearGradient>')
     f.path(f"M{n(X(0))},126 H{n(X1)} V118 L{n(X1 + 22)},146 L{n(X1)},174 V166 H{n(X(0))} Z", "url(#fy14nu-r-e)", INK, 1.5)
-    f.tex(X(2.8), 146, r"\text{electric force: repels}", "start", color=WHITE)
-    f.tex(X(2.8), 192, r"\text{(two protons, any distance)}", "start", color=MUTED)
+    f.tex(X(0.4), 146, r"\text{electric force: repels}", "start", color=WHITE)
+    f.tex(X(0.4), 192, r"\text{(two protons, any distance)}", "start", color=MUTED)
     # iron-56 diameter
     d = 2 * R_FE
     f.path(f"M{n(X(0))},256 V270 H{n(X(d))} V256", stroke=INK, w=2.5)

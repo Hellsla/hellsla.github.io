@@ -24,7 +24,7 @@
 - Thinking that the Sun "burns". Ask: "What would it burn with? How long would it last?"
 - Thinking that the whole mass of the Sun turns into energy ($Mc^2$). The error-spotting task and the third misconception address this.
 - Overprecise answers: an estimate built on a $10\ \%$ assumption deserves one significant figure. Discuss which digits mean something.
-- Eddington's "1 part in 120" ($0.83\ \%$) differs from today's $0.71\ \%$. His values (hydrogen $1.008$, helium "just $4$") were the measurements of 1920, on the older scale where oxygen had the mass $16$; with today's AME2020 masses the loss is $0.71\ \%$. This is a good example of how measurements improve.
+- Eddington's "1 part in 120" ($0.83\ \%$) differs from today's $0.71\ \%$. The cause is his rounded helium value: hydrogen $1.008$ against helium "just $4$" gives $0.79\ \%$, about 1 part in 126, which he rounded to 1 in 120. With helium's measured $4.003$ (or today's AME2020 masses) the loss is about $0.71\ \%$. The older oxygen-16 mass scale is not the cause: a change of scale multiplies all masses by almost the same factor, so the fraction stays the same. A good example of how a rounded value can hide in a famous number.
 
 ## Extension ideas
 - Read more of Eddington's 1920 address (link in the sources): what did he say about using sub-atomic energy on Earth, "for the well-being of the human race — or for its suicide"?

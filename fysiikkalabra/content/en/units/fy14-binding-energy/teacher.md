@@ -25,6 +25,6 @@
 - The explorer shows $Q = 173\ \text{MeV}$ for one particular split of uranium-235; the "about $200\ \text{MeV}$" in the text includes the later decays of the fragments and the other energy released. Both numbers are right for what they describe.
 
 ## Extension ideas
-- Use the explorer to find a reaction of light nuclei that releases more energy per nucleon than D–T, and explain why D–T is still the choice for reactors (the next chapter answers this: the Coulomb barrier).
+- Calculate $Q$ for $^{2}\text{H} + {}^{3}\text{He} \to {}^{4}\text{He} + {}^{1}\text{H}$ with the AME2020 atomic masses ($2.014102\ \text{u}$, $3.016029\ \text{u}$, $4.002603\ \text{u}$, $1.007825\ \text{u}$): $Q \approx 18.4\ \text{MeV}$, or $3.7\ \text{MeV}$ per nucleon, slightly more than D–T's $3.5\ \text{MeV}$. Then discuss why D–T is still the choice for reactors (the next chapter answers this: the Coulomb barrier of helium-3, with $Z = 2$, is higher, and helium-3 is rare on Earth).
 - Estimate how much mass the Sun loses every second from its power output (next unit, *The puzzle of the Sun's energy*).
-- Discuss the history: why did it take until 1939 to understand fission, when the binding energy curve was already known from Aston's measurements in the 1920s?
+- Discuss the history: why did it take until the end of 1938 to understand fission, when the binding energy curve was already known from Aston's measurements in the 1920s?

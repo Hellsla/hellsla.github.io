@@ -33,3 +33,21 @@ units.py check (ok), build, check_layout 360 and 1280 (OK), screenshot.py (54 ca
 2. `assets/units/fy14/units.css` / `fx/reaction.js` energy-scales chart: at 390 px the bar track is 210 px wide but the axis row is 314 px (`.fx-sc-axisrow` keeps an empty label column while the bar rows stack the label above), so the bars do not line up with the logarithmic axis on a phone (D–T ends near 10¹² instead of 3.4 · 10¹⁴). At 1280 px they match. Fix: give the axis row the same grid columns as the bar rows at narrow widths.
 3. `fx/binding.js`: at 390 px the graph labels (axis numbers, nuclide labels, "fusion"/"fission") are about 8–10 px, below the 14 px rule, and the $^{56}\text{Fe}$ label touches the $B/A$ axis title.
 4. `docs/fy14/writing-guide.md` says there is no `pair` field on `explain`, while the pilot unit uses it as text; I did not use it.
+
+## Fixes after review
+Content hash after the fixes: c3553fea1e86a21a (2026-11-01).
+- Science, Polish:
+  - The proton date now matches the source: "in experiments from 1917 to 1920".
+  - The text now says "practically the same chemistry".
+- Pedagogy, Polish:
+  - The `pred-heavy` options are rebalanced: the correct option is "More neutrons, $N > Z$, for attraction without repulsion.", and all three are 51–63 characters.
+  - Builder task 6 now ends: "Neutrons have no charge, so they cannot cancel anything; they add attraction."
+  - Options in `pred-glue`, `find-error` and `check-3` are balanced, so the correct option is no longer the longest.
+- Visual, Polish:
+  - The inline equalities in the worked example's Given and Unit conversions are braced.
+  - Notation figure: 14 and 6 moved 7 units towards the C.
+  - Ranges figure:
+    - The electric-force labels start at 0.4 fm, and the red bar stays full-colour to 65 % of its length.
+    - The "r (fm)" label moved 6 units left, because check_layout reported it 2 px outside the figure at 1280.
+- Shared: the isotope readout is a component issue (isotopes.js). It was being changed while I worked; at one point check_layout failed at 360 (`{A = Z + N = 1 + 0 = 1}`), but it passes after the committed version.
+- Checks: units.py check, build, check_layout at 360 and 1280, screenshot.py and the browser run (predictions, reveals, components, KaTeX, console) all pass.

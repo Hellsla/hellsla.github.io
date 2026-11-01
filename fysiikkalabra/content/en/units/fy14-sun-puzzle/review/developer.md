@@ -32,3 +32,27 @@ units.py check, build, check_layout 360/1280 (OK), screenshot.py (55 captures), 
 2. `assets/units/fy14/units.css` / `fx/reaction.js` energy-scales chart: at 390 px the bar track is 210 px wide but the axis row is 314 px (`.fx-sc-axisrow` keeps an empty label column while the bar rows stack the label above), so the bars do not line up with the logarithmic axis on a phone (D–T ends near 10¹² instead of 3.4 · 10¹⁴). At 1280 px they match. Fix: give the axis row the same grid columns as the bar rows at narrow widths.
 3. `fx/binding.js`: at 390 px the graph labels (axis numbers, nuclide labels, "fusion"/"fission") are about 8–10 px, below the 14 px rule, and the $^{56}\text{Fe}$ label touches the $B/A$ axis title.
 4. `docs/fy14/writing-guide.md` says there is no `pair` field on `explain`, while the pilot unit uses it as text; I did not use it.
+
+## Fixes after review
+Content hash after the fixes: 193182898c9dcf0e (2026-11-01).
+- Science, Blocking:
+  - Reasonableness no longer claims mixing. The burning region "slowly grows outwards and reaches fresh hydrogen".
+  - Teacher note: Eddington's "1 in 120" comes from rounding helium to 4. His values give 0.79 %, about 1 in 126. With helium at 4.003 the loss is 0.72 %. A change of mass scale cannot change the fraction.
+- Science, Polish:
+  - Radium "over its whole decay".
+  - Gamow (alpha decay, 1928), then Atkinson and Houtermans (stars, 1929).
+  - `check-explain`: "A helium atom …".
+  - Kelvin prompt: "from 1862 to the 1890s … from about 100 million to a few tens of millions of years".
+- Pedagogy:
+  - The `review` feedback no longer hints at pred-models. It now ends: "Keep this in mind for later in the lesson."
+  - `find-error` options are rebalanced.
+  - `check-explain` uses $E = \Delta m \cdot c^2$.
+  - `check-3` now tests the 70 % hydrogen assumption: shorter, longer or no change.
+- Visual:
+  - The Key idea display is split into three lines.
+  - Kelvin's 1862 claim reads "for less than 100 million years" in the text and in the order component.
+  - The estimates aria-label says "about 5000 years" and "about 10 billion years".
+  - `find-error` uses $t = Mc^2/L$.
+  - Hero: all rock layers now end on the single cliff-face line, with no wedges.
+- `check-1` options are rebalanced.
+- Checks: all pass. No display overflows at 360.

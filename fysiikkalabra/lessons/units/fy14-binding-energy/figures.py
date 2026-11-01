@@ -84,20 +84,19 @@ def ladder():
             f"same energy released when they join.")
     nucleon_defs(f, "fy14be-l")
     yt, yb = 110, 300
-    f.line(200, yt, 420, yt, INK, 3); f.line(200, yb, 420, yb, INK, 3)
-    for x, kind in ((220, "p"), (275, "n"), (345, "p"), (400, "n")):
+    f.line(230, yt, 440, yt, INK, 3); f.line(230, yb, 440, yb, INK, 3)
+    for x, kind in ((250, "p"), (305, "n"), (370, "p"), (420, "n")):
         nucleon(f, "fy14be-l", x, yt - 24, 17, kind)
-    blob(f, "fy14be-l", 260, yb - 34, 17, ["n", "p", "p", "n"])
-    f.tex(310, 34, r"\text{free nucleons}", "middle")
-    f.tex(310, yb + 32, r"{}^{4}\text{He}\ \text{nucleus}", "middle")
-    f.tex(432, yt, rf"{m_free:.6f}\ \text{{u}}", "start")
-    f.tex(432, yb, rf"{m_he:.6f}\ \text{{u}}", "start")
-    f.block_arrow(170, yb - 4, 170, yt + 4, GOOD, shaft=14, head=34, headlen=26)
-    f.tex(16, 150, r"\text{add}", "start", color=GOOD)
-    f.tex(16, 196, r"B =", "start")
-    f.tex(16, 230, rf"{b:.1f}\ \text{{MeV}}", "start")
-    f.block_arrow(330, yt + 14, 330, yb - 72, HEAT, shaft=14, head=34, headlen=26)
-    f.tex(354, (yt + yb) / 2 - 12, r"\text{released}", "start", color=HEAT)
+    blob(f, "fy14be-l", 290, yb - 34, 17, ["n", "p", "p", "n"])
+    f.tex(335, 34, r"\text{free nucleons}", "middle")
+    f.tex(335, yb + 32, r"{}^{4}\text{He}\ \text{nucleus}", "middle")
+    f.tex(450, yt, rf"{m_free:.6f}\ \text{{u}}", "start")
+    f.tex(450, yb, rf"{m_he:.6f}\ \text{{u}}", "start")
+    f.block_arrow(205, yb - 4, 205, yt + 4, GOOD, shaft=14, head=34, headlen=26)
+    f.tex(6, 168, r"\text{add}", "start", color=GOOD, size=24)
+    f.tex(6, 204, rf"{{B = {b:.1f}\ \text{{MeV}}}}", "start", size=24, w=184)
+    f.block_arrow(355, yt + 14, 355, yb - 72, HEAT, shaft=14, head=34, headlen=26)
+    f.tex(379, (yt + yb) / 2 - 12, r"\text{released}", "start", color=HEAT)
     return f.svg()
 
 

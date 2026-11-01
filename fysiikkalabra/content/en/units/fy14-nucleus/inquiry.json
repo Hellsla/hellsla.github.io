@@ -83,7 +83,7 @@
      "feedback": "Gravity grows at short distance too, but in the same way as the electric force, so the ratio stays the same: gravity between two protons is about $10^{36}$ times weaker than their electric repulsion."
     },
     {
-     "text": "A separate attractive force between all nucleons, with a very short reach.",
+     "text": "A separate attractive force between nucleons, with a very short reach.",
      "correct": true,
      "feedback": "This is the **strong nuclear force**. It attracts protons and neutrons almost equally and wins over the electric repulsion when nucleons nearly touch, but it fades out by about $2.5\\ \\text{fm}$."
     },
@@ -109,16 +109,16 @@
    },
    "choices": [
     {
-     "text": "Also $N = Z$, because the rule is the same for every nucleus.",
+     "text": "The same number, $N = Z$, because the rule holds for all nuclei.",
      "feedback": "The table of stable nuclei shows otherwise: lead-208 has $N = 126$, so $N/Z = 1.54$. The more protons there are, the more extra neutrons are needed."
     },
     {
-     "text": "More neutrons than protons, $N > Z$.",
+     "text": "More neutrons, $N > Z$, for attraction without repulsion.",
      "correct": true,
      "feedback": "Right: lead-208 has $126$ neutrons and $82$ protons. Every proton pushes every other proton, but the strong force acts only between neighbours, so a large nucleus needs extra neutrons for extra attraction."
     },
     {
-     "text": "Fewer neutrons than protons, $N < Z$, to keep the nucleus light.",
+     "text": "Fewer neutrons, $N < Z$, to keep the nucleus light.",
      "feedback": "No stable heavy nucleus has $N < Z$. Lead-208 has $N = 126$ and $Z = 82$. Neutrons add attraction without repulsion, so heavy nuclei need *more* of them."
     }
    ]
@@ -128,7 +128,7 @@
    "stage": "tutki",
    "type": "text",
    "title": "Investigation 1: the Isotope Builder",
-   "text": "Test prediction 1 here. Work in pairs: one of you changes the nucleus, the other reads the notation and the stability line aloud.\n\n<div class=\"fx\" data-fx=\"isotopes\" id=\"fx-nu-builder\" data-src=\"units/fy14/data/nuclides.json\"><script type=\"application/json\">{\"zmax\": 26, \"start\": [1, 0], \"intro\": \"Change the number of protons $Z$ and neutrons $N$. Watch the name, the notation and the stability line. Then solve the tasks below the builder; each has its own *Check* button.\", \"tasks\": [{\"text\": \"Build **deuterium**, the isotope of hydrogen with mass number $A = 2$.\", \"z\": 1, \"n\": 1, \"hint\": \"Hydrogen always has one proton. How many neutrons make $A = 2$?\", \"done\": \"Deuterium, $^{2}_{1}\\\\text{H}$: one proton and one neutron. It is stable.\"}, {\"text\": \"Build **tritium**, $^{3}_{1}\\\\text{H}$. Read its stability line.\", \"z\": 1, \"n\": 2, \"hint\": \"$N = A - Z$.\", \"done\": \"Tritium, $^{3}_{1}\\\\text{H}$, is radioactive: its half-life is $12.3$ years.\"}, {\"text\": \"Build a nucleus with $2$ protons and $1$ neutron. Which element and which isotope is it?\", \"z\": 2, \"n\": 1, \"done\": \"Helium-3, $^{3}_{2}\\\\text{He}$. It has the same mass number as tritium, but it is a different element.\"}, {\"text\": \"Build **carbon-14**, $^{14}_{6}\\\\text{C}$, the isotope used to date old wood and bones.\", \"z\": 6, \"n\": 8, \"hint\": \"Carbon has $Z = 6$, and $A = 14$.\", \"done\": \"Carbon-14: $6$ protons and $8$ neutrons, radioactive with a half-life of about $5700$ years.\"}, {\"text\": \"Build **iron-56**, $^{56}_{26}\\\\text{Fe}$. Compare $N$ with $Z$.\", \"z\": 26, \"n\": 30, \"done\": \"Iron-56 has $26$ protons and $30$ neutrons: already more neutrons than protons.\"}, {\"text\": \"Try a nucleus of $2$ protons and **no** neutrons. What does the builder say?\", \"z\": 2, \"n\": 0, \"done\": \"Two protons alone do not form a bound nucleus: without a neutron, the attraction is not enough. Neutrons matter.\"}]}</script></div>"
+   "text": "Test prediction 1 here. Work in pairs: one of you changes the nucleus, the other reads the notation and the stability line aloud.\n\n<div class=\"fx\" data-fx=\"isotopes\" id=\"fx-nu-builder\" data-src=\"units/fy14/data/nuclides.json\"><script type=\"application/json\">{\"zmax\": 26, \"start\": [1, 0], \"intro\": \"Change the number of protons $Z$ and neutrons $N$. Watch the name, the notation and the stability line. Then solve the tasks below the builder; each has its own *Check* button.\", \"tasks\": [{\"text\": \"Build **deuterium**, the isotope of hydrogen with mass number $A = 2$.\", \"z\": 1, \"n\": 1, \"hint\": \"Hydrogen always has one proton. How many neutrons make $A = 2$?\", \"done\": \"Deuterium, $^{2}_{1}\\\\text{H}$: one proton and one neutron. It is stable.\"}, {\"text\": \"Build **tritium**, $^{3}_{1}\\\\text{H}$. Read its stability line.\", \"z\": 1, \"n\": 2, \"hint\": \"$N = A - Z$.\", \"done\": \"Tritium, $^{3}_{1}\\\\text{H}$, is radioactive: its half-life is $12.3$ years.\"}, {\"text\": \"Build a nucleus with $2$ protons and $1$ neutron. Which element and which isotope is it?\", \"z\": 2, \"n\": 1, \"done\": \"Helium-3, $^{3}_{2}\\\\text{He}$. It has the same mass number as tritium, but it is a different element.\"}, {\"text\": \"Build **carbon-14**, $^{14}_{6}\\\\text{C}$, the isotope used to date old wood and bones.\", \"z\": 6, \"n\": 8, \"hint\": \"Carbon has $Z = 6$, and $A = 14$.\", \"done\": \"Carbon-14: $6$ protons and $8$ neutrons, radioactive with a half-life of about $5700$ years.\"}, {\"text\": \"Build **iron-56**, $^{56}_{26}\\\\text{Fe}$. Compare $N$ with $Z$.\", \"z\": 26, \"n\": 30, \"done\": \"Iron-56 has $26$ protons and $30$ neutrons: already more neutrons than protons.\"}, {\"text\": \"Try a nucleus of $2$ protons and **no** neutrons. What does the builder say?\", \"z\": 2, \"n\": 0, \"done\": \"Two protons alone do not form a bound nucleus: without a neutron, the attraction is not enough. Neutrons have no charge, so they cannot cancel anything; they add attraction.\"}]}</script></div>"
   },
   {
    "id": "stable-table",
@@ -262,7 +262,7 @@
    "prompt": "A student writes: \"Oxygen-17, $^{17}_{8}\\text{O}$, has $8$ protons and $17$ neutrons.\" What is wrong?",
    "choices": [
     {
-     "text": "17 counts all nucleons, so it has $N = 17 - 8 = 9$ neutrons.",
+     "text": "17 counts all nucleons, so $N = 17 - 8 = 9$ neutrons.",
      "correct": true,
      "feedback": "Right. The upper number is the mass number $A = Z + N$, so $N = A - Z = 9$."
     },
@@ -354,7 +354,7 @@
    "prompt": "Lead-208 has $44$ more neutrons than protons. What is the best explanation?",
    "choices": [
     {
-     "text": "Neutrons add strong-force attraction but no electric repulsion.",
+     "text": "Neutrons add strong-force attraction but no repulsion.",
      "correct": true,
      "feedback": "Right. Each proton repels every other proton across the whole nucleus, while the strong force acts only between neighbours. Extra neutrons add attraction without adding repulsion."
     },

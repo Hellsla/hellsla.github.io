@@ -34,9 +34,10 @@ def hero():
     cols = ["#e9c98a", "#c99a5b", "#a97a35", "#d9b26a", "#8a6a45", "#b9a07a", "#7a6a5a", "#d6bf94", "#9c7b52", "#6c5a48"]
     top = 150
     ys = [top + i * 34 for i in range(len(cols) + 1)]
+    face = lambda y: 560 + (y - top) * 125 / 340      # the cliff face: every layer ends on this one line
     for c, y0, y1 in zip(cols, ys, ys[1:]):
-        f.path(f"M0,{y0} L{560 + (y0 - top) * 0.25:.0f},{y0} L{600 + (y1 - top) * 0.25:.0f},{y1} L0,{y1} Z", c)
-    f.path(f"M0,{top} L560,{top} L{600 + (ys[-1] - top) * 0.25:.0f},{ys[-1]}", stroke=INK, w=2.5)
+        f.path(f"M0,{y0} L{face(y0):.0f},{y0} L{face(y1):.0f},{y1} L0,{y1} Z", c)
+    f.path(f"M0,{top} L560,{top} L{face(ys[-1]):.0f},{ys[-1]}", stroke=INK, w=2.5)
     f.rect(0, ys[-1], 720, 600 - ys[-1], "#5f4f40")
     # grass on top
     f.path(f"M0,{top} L560,{top} L556,{top - 14} L0,{top - 14} Z", "#7aa35a")
@@ -55,8 +56,8 @@ def hero():
 def estimates():
     """The three lifetime estimates on a logarithmic time axis, with the age of the Sun."""
     f = Fig("fy14sp-estimates", 360, size=26, label=f"Horizontal bar chart on a logarithmic axis of time in years, from 10 to the power 3 "
-            f"to 10 to the power 11. Chemical burning: about {T_CHEM:.0f} years. Gravitational contraction: about {T_GRAV / 1e6:.0f} million "
-            f"years. Hydrogen fusion: about {T_NUC / 1e9:.0f} billion years. A dashed vertical line marks the age of the Sun, "
+            f"to 10 to the power 11. Chemical burning: about {round(T_CHEM, -3):.0f} years. Gravitational contraction: about {T_GRAV / 1e6:.0f} million "
+            f"years. Hydrogen fusion: about {round(T_NUC / 1e10) * 10:.0f} billion years. A dashed vertical line marks the age of the Sun, "
             f"4.6 billion years: only the fusion bar reaches past it.")
     X0, X1 = 30, 560
     X = lambda t: X0 + (X1 - X0) * (math.log10(t) - 3) / 8

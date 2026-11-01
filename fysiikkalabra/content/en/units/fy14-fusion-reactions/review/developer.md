@@ -32,3 +32,28 @@ units.py check, build, check_layout 360/1280 (OK), screenshot.py (64 captures), 
 2. `assets/units/fy14/units.css` / `fx/reaction.js` energy-scales chart: at 390 px the bar track is 210 px wide but the axis row is 314 px (`.fx-sc-axisrow` keeps an empty label column while the bar rows stack the label above), so the bars do not line up with the logarithmic axis on a phone (D–T ends near 10¹² instead of 3.4 · 10¹⁴). At 1280 px they match. Fix: give the axis row the same grid columns as the bar rows at narrow widths.
 3. `fx/binding.js`: at 390 px the graph labels (axis numbers, nuclide labels, "fusion"/"fission") are about 8–10 px, below the 14 px rule, and the $^{56}\text{Fe}$ label touches the $B/A$ axis title.
 4. `docs/fy14/writing-guide.md` says there is no `pair` field on `explain`, while the pilot unit uses it as text; I did not use it.
+
+## Fixes after review
+Content hash after the fixes: af00c5738a515fa3 (2026-11-01).
+- Science:
+  - Investigation 2 no longer says the arrows are to scale. It now reads: "The arrows compare speeds within one step only; the line under the figure gives the real speeds." This matches the updated reaction.js.
+  - The tunnelling sentence was added to Key idea: D–T fuses readily near 0.1 MeV, well below the 0.5 MeV top, and in a reactor (about 15 keV) the fastest nuclei do most of the fusing.
+  - `reaction-describe` model: "about $3 \cdot 10^{-15}$ m … tunnel through the rest of the barrier".
+  - Summary: "a few keV in the Sun, about 10–20 keV in a reactor".
+- Workload (75 min):
+  - The first paragraph of *Fusion in the laboratory* is cut, about 110 words. It repeated the Oliphant source.
+  - `scales-text` and `coal-equivalent` are now optional.
+  - `lab-vs-sun` asks for three or four sentences.
+  - The worked example now says in its first line that it repeats the diagram's calculation.
+  - The teacher.md timing and the plans for fast pairs and running out of time are updated.
+- Pedagogy:
+  - `reaction-text` tests predictions 1 and 2 again, because the updated diagram has a tunnelling step.
+  - The scales activity has no title, so the component's heading is not duplicated, and it uses `scales_compare: false`. Its question asks only for coal, and the numeric task follows.
+  - The tritium-breeding extension works, because binding-energy's explorer now lists `li6`.
+- Visual:
+  - "150 million kelvin" replaces "degrees" in the hook, the theory, the `lab-vs-sun` model and `check-3`.
+  - Table: the row label "temperature" became "how hot", and the header became "ITER (plan)". The table cells are equal width, so this was the only way to stop "temper-ature" hyphenating at 390.
+  - Barrier figure: the "strong force" label sits right of the well wall, below the tunnelling arrow.
+- Not changed: the *tritium* respelling stays "tree-SYOM". The science reviewer suggested "tree-TYOM", but the visual reviewer checked \tʁi.sjɔm\ in Wiktionnaire. A French speaker can settle it.
+- After the shared update: no text quotes the old step count, the methane value or the 4.10 ratio.
+- Checks: all pass.

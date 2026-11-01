@@ -29,16 +29,16 @@
   <path d="M0,546 Q30,540 60,546 Q90,540 120,546 Q150,540 180,546 Q210,540 240,546 Q270,540 300,546 Q330,540 360,546 Q390,540 420,546 Q450,540 480,546 Q510,540 540,546 Q570,540 600,546 Q630,540 660,546 Q690,540 720,546 Q750,540 780,546 Q810,540 840,546 Q870,540 900,546 Q930,540 960,546 Q990,540 1020,546 Q1050,540 1080,546 Q1110,540 1140,546 Q1170,540 1200,546" fill="none" stroke="#ffffff" stroke-width="2" stroke-linejoin="round" stroke-opacity="0.5"/>
   <path d="M0,562 Q30,556 60,562 Q90,556 120,562 Q150,556 180,562 Q210,556 240,562 Q270,556 300,562 Q330,556 360,562 Q390,556 420,562 Q450,556 480,562 Q510,556 540,562 Q570,556 600,562 Q630,556 660,562 Q690,556 720,562 Q750,556 780,562 Q810,556 840,562 Q870,556 900,562 Q930,556 960,562 Q990,556 1020,562 Q1050,556 1080,562 Q1110,556 1140,562 Q1170,556 1200,562" fill="none" stroke="#ffffff" stroke-width="2" stroke-linejoin="round" stroke-opacity="0.5"/>
   <path d="M0,578 Q30,572 60,578 Q90,572 120,578 Q150,572 180,578 Q210,572 240,578 Q270,572 300,578 Q330,572 360,578 Q390,572 420,578 Q450,572 480,578 Q510,572 540,578 Q570,572 600,578 Q630,572 660,578 Q690,572 720,578 Q750,572 780,578 Q810,572 840,578 Q870,572 900,578 Q930,572 960,578 Q990,572 1020,578 Q1050,572 1080,578 Q1110,572 1140,578 Q1170,572 1200,578" fill="none" stroke="#ffffff" stroke-width="2" stroke-linejoin="round" stroke-opacity="0.5"/>
-  <path d="M0,150 L560,150 L608,184 L0,184 Z" fill="#e9c98a" stroke-linejoin="round"/>
-  <path d="M0,184 L568,184 L617,218 L0,218 Z" fill="#c99a5b" stroke-linejoin="round"/>
-  <path d="M0,218 L577,218 L626,252 L0,252 Z" fill="#a97a35" stroke-linejoin="round"/>
-  <path d="M0,252 L586,252 L634,286 L0,286 Z" fill="#d9b26a" stroke-linejoin="round"/>
-  <path d="M0,286 L594,286 L642,320 L0,320 Z" fill="#8a6a45" stroke-linejoin="round"/>
-  <path d="M0,320 L602,320 L651,354 L0,354 Z" fill="#b9a07a" stroke-linejoin="round"/>
-  <path d="M0,354 L611,354 L660,388 L0,388 Z" fill="#7a6a5a" stroke-linejoin="round"/>
-  <path d="M0,388 L620,388 L668,422 L0,422 Z" fill="#d6bf94" stroke-linejoin="round"/>
-  <path d="M0,422 L628,422 L676,456 L0,456 Z" fill="#9c7b52" stroke-linejoin="round"/>
-  <path d="M0,456 L636,456 L685,490 L0,490 Z" fill="#6c5a48" stroke-linejoin="round"/>
+  <path d="M0,150 L560,150 L572,184 L0,184 Z" fill="#e9c98a" stroke-linejoin="round"/>
+  <path d="M0,184 L572,184 L585,218 L0,218 Z" fill="#c99a5b" stroke-linejoin="round"/>
+  <path d="M0,218 L585,218 L598,252 L0,252 Z" fill="#a97a35" stroke-linejoin="round"/>
+  <path d="M0,252 L598,252 L610,286 L0,286 Z" fill="#d9b26a" stroke-linejoin="round"/>
+  <path d="M0,286 L610,286 L622,320 L0,320 Z" fill="#8a6a45" stroke-linejoin="round"/>
+  <path d="M0,320 L622,320 L635,354 L0,354 Z" fill="#b9a07a" stroke-linejoin="round"/>
+  <path d="M0,354 L635,354 L648,388 L0,388 Z" fill="#7a6a5a" stroke-linejoin="round"/>
+  <path d="M0,388 L648,388 L660,422 L0,422 Z" fill="#d6bf94" stroke-linejoin="round"/>
+  <path d="M0,422 L660,422 L672,456 L0,456 Z" fill="#9c7b52" stroke-linejoin="round"/>
+  <path d="M0,456 L672,456 L685,490 L0,490 Z" fill="#6c5a48" stroke-linejoin="round"/>
   <path d="M0,150 L560,150 L685,490" fill="none" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
   <rect x="0" y="490" width="720" height="110" fill="#5f4f40"/>
   <path d="M0,150 L560,150 L556,136 L0,136 Z" fill="#7aa35a" stroke-linejoin="round"/>
@@ -61,22 +61,23 @@ The Sun radiates the power $L = 3.83 \cdot 10^{26}\ \text{W}$, its **luminosity*
 
 The first idea was **chemical energy**: perhaps the Sun burns like a giant fire. But even if the whole Sun were coal, and the oxygen came for free, it would burn out in about $5000$ years. Chemical reactions release only a few electronvolts per molecule, far too little.
 
-In 1854 Hermann von Helmholtz proposed **gravitational contraction**. If the Sun slowly shrinks, its gravitational potential energy turns into heat, as when a falling stone warms the ground. William Thomson, later Lord Kelvin, calculated the consequences. In 1862 he wrote that the Sun had most probably not lit the Earth for $100$ million years, and in 1887 he lowered the limit to about $20$ million years.
+In 1854 Hermann von Helmholtz proposed **gravitational contraction**. If the Sun slowly shrinks, its gravitational potential energy turns into heat, as when a falling stone warms the ground. William Thomson, later Lord Kelvin, calculated the consequences. In 1862 he wrote that the Sun had most probably shone on the Earth for less than $100$ million years, and in 1887 he lowered the limit to about $20$ million years.
 
-This was a real conflict. Geologists, who studied how slowly rocks form and wear away, and biologists, who followed Charles Darwin's theory of evolution, needed hundreds of millions of years. Kelvin's physics was correct; what he did not know was that a new form of energy existed. In 1903 Pierre Curie and Albert Laborde found that radium gives off heat without any chemical reaction, about $200\,000$ times as much as the same mass of burning coal. Energy was hidden inside atoms.
+This was a real conflict. Geologists, who studied how slowly rocks form, and biologists, who followed Darwin's theory of evolution, needed hundreds of millions of years. Kelvin's physics was correct; what he did not know was that a new form of energy existed. In 1903 Pierre Curie and Albert Laborde found that radium gives off heat without any chemical reaction, over its whole decay about $200\,000$ times as much as the same mass of burning coal. Energy was hidden inside atoms.
 
 ## Key idea
 
 The answer came in 1920. On 24 August, the astronomer **Arthur Eddington** spoke to the British Association for the Advancement of Science in Cardiff. He used a new measurement by the chemist Francis Aston: a helium atom has less mass than the four hydrogen atoms it could be made of. With today's AME2020 masses:
 ```latex
 \begin{aligned}
-4 \cdot m(^{1}\text{H}) &= 4 \cdot 1.007825\ \text{u} = 4.031300\ \text{u} \\
+4 \cdot m(^{1}\text{H}) &= 4 \cdot 1.007825\ \text{u} \\
+&= 4.031300\ \text{u} \\
 m(^{4}\text{He}) &= 4.002603\ \text{u}
 \end{aligned}
 ```
 About $0.71\ \%$ of the mass disappears, and by $E = \Delta m \cdot c^2$ it must leave as energy. Eddington argued that a star is "drawing on some vast reservoir of energy", which "can scarcely be other than the sub-atomic energy". Turning hydrogen into helium, he showed, would easily keep the Sun shining for billions of years.
 
-Eddington could not say *how* the protons fuse: by classical physics, the Sun's core was much too cold for them to overcome their electric repulsion. Quantum tunnelling (George Gamow, 1928) solved this, and in 1938–1939 Hans Bethe worked out the reactions. That is the next unit.
+Eddington could not say *how* the protons fuse: by classical physics, the Sun's core was much too cold for them to overcome their electric repulsion. George Gamow explained alpha decay with quantum tunnelling in 1928; in 1929 Robert Atkinson and Fritz Houtermans applied tunnelling to stars, and in 1938–1939 Hans Bethe worked out the reactions. That is the next unit.
 
 ## Formula: The lifetime of an energy source
 
@@ -90,7 +91,7 @@ E = 0.0071 \cdot m_\text{H} \cdot c^2
 ```
 For comparison, gravitational contraction can release at most about $GM^2/R$, where $M$ is the mass and $R$ the radius of the Sun, and burning gives the mass times the **heat of combustion** of the fuel. The three estimates are shown below on a logarithmic scale.
 
-<svg data-fig="estimates" viewBox="0 0 600 360" role="img" aria-label="Horizontal bar chart on a logarithmic axis of time in years, from 10 to the power 3 to 10 to the power 11. Chemical burning: about 5351 years. Gravitational contraction: about 31 million years. Hydrogen fusion: about 11 billion years. A dashed vertical line marks the age of the Sun, 4.6 billion years: only the fusion bar reaches past it." style="max-width:100%;font-size:26px">
+<svg data-fig="estimates" viewBox="0 0 600 360" role="img" aria-label="Horizontal bar chart on a logarithmic axis of time in years, from 10 to the power 3 to 10 to the power 11. Chemical burning: about 5000 years. Gravitational contraction: about 31 million years. Hydrogen fusion: about 10 billion years. A dashed vertical line marks the age of the Sun, 4.6 billion years: only the fusion bar reaches past it." style="max-width:100%;font-size:26px">
   <line x1="30" y1="286" x2="570" y2="286" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
   <path d="M582,286 L569,292 L569,280 Z" fill="#1f2933" stroke-linejoin="round"/>
   <line x1="30" y1="286" x2="30" y2="294" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
@@ -174,7 +175,7 @@ t &= \frac{1.27 \cdot 10^{44}\ \text{J}}{3.83 \cdot 10^{26}\ \text{J/s}} \\
 
 <!-- vaihe -->
 
-**Reasonableness:** The result is far longer than the chemical ($5000$ years) and gravitational (about $30$ million years) estimates, and longer than the age of the Solar System, $4.6$ billion years, so the Sun is roughly in the middle of its life. Computer models of the Sun give a similar total of about $10$ billion years. The assumptions work in both directions: the core is not pure hydrogen (it started with about $70\ \%$), but the Sun's power slowly grows, and some hydrogen outside the core mixes in.
+**Reasonableness:** The result is far longer than the chemical ($5000$ years) and gravitational (about $30$ million years) estimates, and longer than the age of the Solar System, $4.6$ billion years, so the Sun is roughly in the middle of its life. Computer models of the Sun give a similar total of about $10$ billion years. The assumptions are rough in both directions: the core is not pure hydrogen and the Sun's power slowly grows, while the burning region slowly grows outwards and reaches fresh hydrogen.
 
 ## The people behind the idea {People}
 

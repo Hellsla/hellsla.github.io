@@ -28,7 +28,7 @@
     {
      "text": "Energy was released when the nucleus formed.",
      "correct": true,
-     "feedback": "Right: the missing mass left as energy, $E = \\Delta m \\cdot c^2$. Today you see why this solved one of the great puzzles of the 19th century."
+     "feedback": "Right: the missing mass left as energy, $E = \\Delta m \\cdot c^2$. Keep this in mind for later in the lesson."
     },
     {
      "text": "Some nucleons were lost when the nucleus formed.",
@@ -142,7 +142,7 @@
      {
       "text": "A laboratory measurement of the masses of atoms",
       "correct": true,
-      "feedback": "Right: Aston's mass spectrograph showed that helium is lighter than four hydrogen atoms. Eddington connected this measurement with $E = mc^2$ and with the Sun's power."
+      "feedback": "Right: Aston's mass spectrograph showed that helium is lighter than four hydrogen atoms. Eddington connected this measurement with $E = \\Delta m \\cdot c^2$ and with the Sun's power."
      },
      {
       "text": "An experiment that fused hydrogen in a laboratory",
@@ -160,7 +160,7 @@
    "stage": "tutki",
    "type": "text",
    "title": "Investigation 3: the story in order",
-   "text": "<div class=\"fx\" data-fx=\"order\" id=\"fx-sp-timeline\"><script type=\"application/json\">{\"prompt\": \"Put the steps of the story in time order, the earliest at the top.\", \"items\": [\"Helmholtz proposes that the Sun shines because it slowly contracts (1854).\", \"Kelvin calculates that the Sun has most probably not shone for 100 million years (1862).\", \"Kelvin lowers his limit to about 20 million years (1887).\", \"Curie and Laborde measure the heat given off by radium (1903).\", \"Eddington proposes in Cardiff that stars turn hydrogen into helium (1920).\", \"Gamow explains quantum tunnelling through a barrier in the nucleus (1928).\", \"Bethe works out the fusion reactions that power the Sun (1938–1939).\"], \"explain\": \"Each step answered a weakness of the one before: contraction gave more time than burning, radioactivity showed that atoms hide energy, Eddington named the source, and quantum physics explained how it works.\", \"hints\": [\"The contraction idea came first.\", \"Kelvin worked on contraction for decades.\", \"\", \"Radioactivity was discovered in 1896.\", \"\", \"Tunnelling was first used for alpha decay.\", \"\"]}</script></div>"
+   "text": "<div class=\"fx\" data-fx=\"order\" id=\"fx-sp-timeline\"><script type=\"application/json\">{\"prompt\": \"Put the steps of the story in time order, the earliest at the top.\", \"items\": [\"Helmholtz proposes that the Sun shines because it slowly contracts (1854).\", \"Kelvin calculates that the Sun has most probably shone for less than 100 million years (1862).\", \"Kelvin lowers his limit to about 20 million years (1887).\", \"Curie and Laborde measure the heat given off by radium (1903).\", \"Eddington proposes in Cardiff that stars turn hydrogen into helium (1920).\", \"Gamow explains quantum tunnelling through a barrier in the nucleus (1928).\", \"Bethe works out the fusion reactions that power the Sun (1938–1939).\"], \"explain\": \"Each step answered a weakness of the one before: contraction gave more time than burning, radioactivity showed that atoms hide energy, Eddington named the source, and quantum physics explained how it works.\", \"hints\": [\"The contraction idea came first.\", \"Kelvin worked on contraction for decades.\", \"\", \"Radioactivity was discovered in 1896.\", \"\", \"Tunnelling was first used for alpha decay.\", \"\"]}</script></div>"
   },
   {
    "id": "language-support",
@@ -173,7 +173,7 @@
    "stage": "tutki",
    "type": "explain",
    "title": "Discussion: Kelvin against the geologists",
-   "prompt": "Discuss with a partner, then write four or five sentences of your own. In the 1860s–1890s, Kelvin said that the Sun was at most a few tens of millions of years old, while geologists and biologists needed hundreds of millions. Who was right, and why? What did Kelvin not know? What does this story tell you about how science deals with a conflict between two kinds of evidence?",
+   "prompt": "Discuss with a partner, then write four or five sentences of your own. From 1862 to the 1890s, Kelvin lowered his limit for the Sun's age from about 100 million to a few tens of millions of years, while geologists and biologists needed hundreds of millions. Who was right, and why? What did Kelvin not know? What does this story tell you about how science deals with a conflict between two kinds of evidence?",
    "model": "The geologists and biologists were right about the time: the Earth and the Sun are about $4.6$ billion years old. Kelvin's estimate contradicted the evidence from rocks and fossils, but his physics was correct for the energy sources he knew, chemical burning and contraction. Kelvin could not have known about nuclear energy, which was discovered only after radioactivity in 1896. The conflict was a sign that a piece of physics was missing. One lesson is that when careful evidence from two fields disagrees, the disagreement itself can point to new science.",
    "criteria": [
     "The answer says that the long timescale of geology and biology was right (billions of years).",
@@ -280,19 +280,19 @@
    "type": "choice",
    "title": "Find the error",
    "optional": true,
-   "prompt": "A student estimates the Sun's lifetime as $t = \\frac{Mc^2}{L}$ and gets $1.5 \\cdot 10^{13}$ years, a thousand times the age of the Universe. What is wrong?",
+   "prompt": "A student estimates the Sun's lifetime as $t = Mc^2/L$ and gets $1.5 \\cdot 10^{13}$ years, a thousand times the age of the Universe. What is wrong?",
    "choices": [
     {
-     "text": "Fusion turns only about $0.7\\ \\%$ of the fused mass into energy.",
+     "text": "Only $0.7\\ \\%$ of the fused mass becomes energy.",
      "correct": true,
      "feedback": "Right. $Mc^2$ would mean that all of the Sun's mass disappears. Hydrogen becomes helium, and only $0.71\\ \\%$ of the fused mass, in the core only, becomes energy."
     },
     {
-     "text": "The formula should use $c$, not $c^2$.",
+     "text": "The formula should use $c$ instead of $c^2$.",
      "feedback": "$E = \\Delta m \\cdot c^2$ is right. The error is the mass: not all of $M$ turns into energy."
     },
     {
-     "text": "The Sun's power was much higher in the past.",
+     "text": "The Sun's power was much higher in the distant past.",
      "feedback": "The young Sun was in fact a little *less* bright. The real error is that $Mc^2$ treats the whole mass as fuel."
     }
    ]
@@ -323,7 +323,7 @@
    "prompt": "Why can chemical burning not explain the Sun's energy?",
    "choices": [
     {
-     "text": "Chemical reactions release far too little energy per kilogram.",
+     "text": "Burning releases far too little energy per kilogram.",
      "correct": true,
      "feedback": "Right: some $10^{7}\\ \\text{J/kg}$, so even a Sun of coal would last only about $5000$ years."
     },
@@ -368,20 +368,20 @@
    "stage": "tarkista",
    "type": "choice",
    "title": "3. Assumptions: the lifetime estimate",
-   "prompt": "Our estimate of $10^{10}$ years assumed that $10\\ \\%$ of the Sun's mass is fused. If $20\\ \\%$ could be fused, at the same power, what would the estimate be?",
+   "prompt": "Our estimate of $10^{10}$ years treated the core, $10\\ \\%$ of the Sun's mass, as pure hydrogen. In fact the core started with only about $70\\ \\%$ hydrogen. If the other assumptions stay the same, how does this change the estimate?",
    "choices": [
     {
-     "text": "$2 \\cdot 10^{10}$ years",
+     "text": "It becomes about $30\\ \\%$ shorter.",
      "correct": true,
-     "feedback": "Right: the energy $E$ is proportional to the fused mass, and $t = E/L$, so twice the fuel lasts twice as long."
+     "feedback": "Right: only $0.70 \\cdot 10\\ \\% = 7\\ \\%$ of the mass can be fused, so $E$ and $t = E/L$ shrink to $70\\ \\%$: about $7 \\cdot 10^{9}$ years."
     },
     {
-     "text": "$5 \\cdot 10^{9}$ years",
-     "feedback": "More fuel at the same power lasts *longer*, not shorter: $t = E/L$ grows with $E$."
+     "text": "It becomes about $30\\ \\%$ longer.",
+     "feedback": "Less hydrogen means less fuel. At the same power, less fuel lasts a *shorter* time: $t = E/L$ shrinks with $E$."
     },
     {
-     "text": "$10^{10}$ years still",
-     "feedback": "The fused mass is in the energy: $E = 0.0071 \\cdot m_\\text{H} \\cdot c^2$. Twice the mass gives twice the energy and twice the time."
+     "text": "It does not change at all.",
+     "feedback": "The fused mass is in the energy: $E = 0.0071 \\cdot m_\\text{H} \\cdot c^2$. Only $70\\ \\%$ of the hydrogen gives $70\\ \\%$ of the energy and of the time."
     }
    ]
   },
@@ -391,10 +391,10 @@
    "type": "explain",
    "title": "4. Explain to a younger student",
    "prompt": "A younger student says: \"The Sun is a huge fire, and one day it will run out of wood.\" Write a short, friendly answer (four or five sentences) that corrects the idea with the physics of this lesson. Use at least one number.\n\n<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>It is a good question, but the Sun is not …</li><li>If the Sun were a fire, it would last only …</li><li>Instead, in the Sun's core …</li><li>This is why the Sun can shine for …</li></ul></div>",
-   "model": "It is a good question, but the Sun is not a fire. If it were burning like coal, it would have burned out after only about $5000$ years. Instead, in the Sun's core, hydrogen nuclei fuse into helium. A helium nucleus has about $0.7\\ \\%$ less mass than the four hydrogen atoms it is made from, and that mass becomes energy by $E = mc^2$. This is why the Sun can shine for about $10$ billion years, and it is only about halfway through.",
+   "model": "It is a good question, but the Sun is not a fire. If it were burning like coal, it would have burned out after only about $5000$ years. Instead, in the Sun's core, hydrogen nuclei fuse into helium. A helium atom has about $0.7\\ \\%$ less mass than the four hydrogen atoms it is made from, and that lost mass becomes energy by $E = \\Delta m \\cdot c^2$. This is why the Sun can shine for about $10$ billion years, and it is only about halfway through.",
    "criteria": [
     "The answer says that the Sun is not burning (no chemical fire) and gives the short chemical lifetime.",
-    "The answer explains fusion of hydrogen into helium and the loss of mass ($E = mc^2$).",
+    "The answer explains fusion of hydrogen into helium and the loss of mass ($E = \\Delta m \\cdot c^2$).",
     "The answer gives the lifetime of about $10$ billion years or the age of $4.6$ billion years.",
     "The language is clear and friendly, with full sentences."
    ]

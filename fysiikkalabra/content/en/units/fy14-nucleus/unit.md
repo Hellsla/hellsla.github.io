@@ -198,7 +198,7 @@
 
 ## Inside the atom {Particles}
 
-An atom has a tiny **nucleus** with **electrons** around it (Rutherford, 1911). The nucleus is made of **protons** and **neutrons**, together called **nucleons**. Rutherford identified the proton around 1919–1920; James Chadwick discovered the neutron in 1932.
+An atom has a tiny **nucleus** with **electrons** around it (Rutherford, 1911). The nucleus is made of **protons** and **neutrons**, together called **nucleons**. Rutherford identified the proton in experiments from 1917 to 1920; James Chadwick discovered the neutron in 1932.
 
 | Particle | Charge | Mass (u) | Where |
 | --- | --- | --- | --- |
@@ -212,7 +212,7 @@ Here $e = 1.602 \cdot 10^{-19}\ \text{C}$ is the elementary charge and $1\ \text
 
 The number of protons is the **atomic number** $Z$. It decides the element: every carbon nucleus has $Z = 6$, every uranium nucleus $Z = 92$. The number of neutrons is the **neutron number** $N$. Nuclei of one element with different numbers of neutrons are **isotopes** of the element, from the Greek for "same place": they share a place in the periodic table. The Scottish doctor Margaret Todd suggested the word to the chemist Frederick Soddy in 1913.
 
-Isotopes have the same chemistry but different masses. Some are **stable**; others are **radioactive** and change into another nucleus after some time. Hydrogen has three isotopes, and two of them are the fuel of fusion reactors:
+Isotopes have practically the same chemistry but different masses. Some are **stable**; others are **radioactive** and change into another nucleus after some time. Hydrogen has three isotopes, and two of them are the fuel of fusion reactors:
 
 <svg data-fig="hydrogen" viewBox="0 0 600 300" role="img" aria-label="Three nuclei side by side, drawn as red protons with a plus sign and grey neutrons. Left: hydrogen-1, one proton only, notation 1 over 1 H, stable. Middle: hydrogen-2 or deuterium, one proton and one neutron, 2 over 1 H, stable. Right: hydrogen-3 or tritium, one proton and two neutrons, 3 over 1 H, radioactive with a half-life of 12.3 years. All three have Z = 1, so they are the same element." style="max-width:100%;font-size:26px">
   <defs><radialGradient id="fy14nu-hy-p" cx="35%" cy="32%" r="70%"><stop offset="0%" stop-color="#ff8a80"/><stop offset="55%" stop-color="#c92a2a"/><stop offset="100%" stop-color="#7f1d1d"/></radialGradient><radialGradient id="fy14nu-hy-n" cx="35%" cy="32%" r="70%"><stop offset="0%" stop-color="#e9ecef"/><stop offset="55%" stop-color="#9aa1a9"/><stop offset="100%" stop-color="#4b5259"/></radialGradient></defs>
@@ -253,8 +253,8 @@ A nucleus is written in **nuclear notation** as $^{A}_{Z}\text{X}$, where $\text
 
 <svg data-fig="notation" viewBox="0 0 600 300" role="img" aria-label="Diagram of nuclear notation, using carbon-14 as the example. In the middle the large chemical symbol C. Top left, the mass number 14, with a label: mass number A, the number of protons plus neutrons. Bottom left, the atomic number 6, with a label: atomic number Z, the number of protons. A label on the right says that the symbol names the element, and that Z and the symbol always belong together. Below: N = A − Z = 8 neutrons." style="max-width:100%;font-size:26px">
   <foreignObject x="337" y="72" width="110" height="156" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:130px">$\text{C}$</div></foreignObject>
-  <foreignObject x="250" y="50.5" width="80" height="67" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:56px">$14$</div></foreignObject>
-  <foreignObject x="280" y="180.5" width="50" height="67" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:56px">$6$</div></foreignObject>
+  <foreignObject x="257" y="50.5" width="80" height="67" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:56px">$14$</div></foreignObject>
+  <foreignObject x="287" y="180.5" width="50" height="67" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:56px">$6$</div></foreignObject>
   <foreignObject x="16" y="36.5" width="143" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:26px">$\text{mass number}$</div></foreignObject>
   <foreignObject x="16" y="70.5" width="76" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:26px">$A = Z + N$</div></foreignObject>
   <line x1="160" y1="86" x2="240" y2="86" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
@@ -280,7 +280,7 @@ Inside a nucleus, protons are only about $1\text{–}2\ \text{fm}$ apart ($1\ \t
 The nucleus is held by a different force, the **strong nuclear force**. It attracts any two nucleons, protons and neutrons alike, and it beats the electric repulsion when they nearly touch. But it has a very **short range**: it fades out by about $2.5\ \text{fm}$. Below about $0.7\ \text{fm}$ it repels, so nucleons cannot be squeezed together.
 
 <svg data-fig="ranges" viewBox="0 0 600 350" role="img" aria-label="Schematic bar diagram along an axis of distance r between the centres of two nucleons, from 0 to 10 femtometres. Top bar, green: the strong nuclear force attracts from about 0.7 fm and fades out by about 2.5 fm; below 0.7 fm it repels (a hatched grey part). Middle bar, red: the electric repulsion between two protons acts at every distance and continues past the end of the axis, getting weaker with distance. Bottom: a bracket shows the diameter of an iron-56 nucleus, about 9.2 fm, much wider than the reach of the strong force." style="max-width:100%;font-size:26px">
-  <defs><linearGradient id="fy14nu-r-g" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#2b8a3e"/><stop offset="0.6" stop-color="#2b8a3e"/><stop offset="1" stop-color="#2b8a3e" stop-opacity="0.05"/></linearGradient><pattern id="fy14nu-r-h" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="10" height="10" fill="#e3dccb"/><line x1="0" y1="0" x2="0" y2="10" stroke="#6b7480" stroke-width="3"/></pattern><linearGradient id="fy14nu-r-e" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#c92a2a"/><stop offset="1" stop-color="#c92a2a" stop-opacity="0.25"/></linearGradient></defs>
+  <defs><linearGradient id="fy14nu-r-g" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#2b8a3e"/><stop offset="0.6" stop-color="#2b8a3e"/><stop offset="1" stop-color="#2b8a3e" stop-opacity="0.05"/></linearGradient><pattern id="fy14nu-r-h" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="10" height="10" fill="#e3dccb"/><line x1="0" y1="0" x2="0" y2="10" stroke="#6b7480" stroke-width="3"/></pattern><linearGradient id="fy14nu-r-e" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#c92a2a"/><stop offset="0.65" stop-color="#c92a2a"/><stop offset="1" stop-color="#c92a2a" stop-opacity="0.25"/></linearGradient></defs>
   <line x1="40" y1="300" x2="514" y2="300" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
   <path d="M526,300 L513,306 L513,294 Z" fill="#1f2933" stroke-linejoin="round"/>
   <line x1="40" y1="300" x2="40" y2="308" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
@@ -295,15 +295,15 @@ The nucleus is held by a different force, the **strong nuclear force**. It attra
   <foreignObject x="397" y="312.5" width="22" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:26px">$8$</div></foreignObject>
   <line x1="500" y1="300" x2="500" y2="308" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <foreignObject x="482.5" y="312.5" width="35" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:26px">$10$</div></foreignObject>
-  <foreignObject x="530" y="258.5" width="80" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:26px">$r\ (\text{fm})$</div></foreignObject>
+  <foreignObject x="524" y="258.5" width="80" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:26px">$r\ (\text{fm})$</div></foreignObject>
   <rect x="40" y="56" width="32" height="40" fill="url(#fy14nu-r-h)" stroke="#1f2933" stroke-width="1.5"/>
   <rect x="72" y="56" width="83" height="40" fill="url(#fy14nu-r-g)" stroke="#1f2933" stroke-width="1.5"/>
   <foreignObject x="169" y="46.5" width="278" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:26px;color:#2b8a3e">$\text{strong force: attracts}$</div></foreignObject>
   <foreignObject x="169" y="76.5" width="224" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:26px;color:#6b7480">$\text{(any two nucleons)}$</div></foreignObject>
   <foreignObject x="42" y="14.5" width="89" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:26px;color:#6b7480">$\text{repels}$</div></foreignObject>
   <path d="M40,126 H500 V118 L522,146 L500,174 V166 H40 Z" fill="url(#fy14nu-r-e)" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
-  <foreignObject x="169" y="130.5" width="278" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:26px;color:#ffffff">$\text{electric force: repels}$</div></foreignObject>
-  <foreignObject x="169" y="176.5" width="332" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:26px;color:#6b7480">$\text{(two protons, any distance)}$</div></foreignObject>
+  <foreignObject x="58.5" y="130.5" width="278" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:26px;color:#ffffff">$\text{electric force: repels}$</div></foreignObject>
+  <foreignObject x="58.5" y="176.5" width="332" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:26px;color:#6b7480">$\text{(two protons, any distance)}$</div></foreignObject>
   <path d="M40,256 V270 H462.5 V256" fill="none" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
   <foreignObject x="110" y="220.5" width="282" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:26px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{diameter of }{}^{56}\text{Fe} \approx 9.2\ \text{fm}$</span></div></foreignObject>
 </svg>
@@ -316,7 +316,7 @@ An iron-56 nucleus, $^{56}_{26}\text{Fe}$, has the mass $m = 9.29 \cdot 10^{-26}
 
 <!-- vaihe -->
 
-**Given:** mass number $A = 56$, atomic number $Z = 26$, mass $m = 9.29 \cdot 10^{-26}\ \text{kg}$, $r_0 = 1.2\ \text{fm}$. **Find:** the number of protons $Z$, the number of neutrons $N$, the radius $R$ and the density $\rho$.
+**Given:** mass number $A = 56$, atomic number $Z = 26$, mass ${m = 9.29 \cdot 10^{-26}\ \text{kg}}$, ${r_0 = 1.2\ \text{fm}}$. **Find:** the number of protons $Z$, the number of neutrons $N$, the radius $R$ and the density $\rho$.
 
 <!-- vaihe -->
 
@@ -335,7 +335,7 @@ R &= r_0 A^{1/3} \\
 
 <!-- vaihe -->
 
-**Unit conversions:** $r_0 = 1.2\ \text{fm} = 1.2 \cdot 10^{-15}\ \text{m}$, so that the density comes out in $\text{kg/m}^3$.
+**Unit conversions:** ${r_0 = 1.2\ \text{fm} = 1.2 \cdot 10^{-15}\ \text{m}}$, so that the density comes out in $\text{kg/m}^3$.
 
 <!-- vaihe -->
 

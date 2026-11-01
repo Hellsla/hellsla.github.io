@@ -392,7 +392,7 @@ Two nuclei are both positive, so they repel each other. To fuse, they must come 
   <rect x="72" y="359.5" width="54" height="22" fill="#b2f2bb"/>
   <line x1="130" y1="112" x2="126" y2="382" stroke="#2b8a3e" stroke-width="3" stroke-linecap="butt"/>
   <line x1="74" y1="382" x2="126" y2="382" stroke="#2b8a3e" stroke-width="3" stroke-linecap="butt"/>
-  <foreignObject x="76" y="305.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#2b8a3e"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{strong force}$</span></div></foreignObject>
+  <foreignObject x="142" y="319.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#2b8a3e"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{strong force}$</span></div></foreignObject>
   <polyline points="130,112 133,123 135.5,133.5 138.5,143 141.5,151.5 144,159.5 147,167 150,173.5 152.5,180 155.5,186 158.5,191.5 161,197 164,201.5 167,206.5 169.5,210.5 172.5,215 175.5,218.5 178,222.5 181,226 184,229.5 186.5,232.5 189.5,235.5 192.5,238.5 195,241 198,244 201,246.5 203.5,248.5 206.5,251 209.5,253 212,255.5 215,257.5 218,259.5 220.5,261 223.5,263 226.5,265 229,266.5 232,268 235,269.5 237.5,271.5 240.5,272.5 243.5,274 246,275.5 249,277 252,278 254.5,279.5 257.5,280.5 260.5,282 263,283 266,284 269,285 271.5,286 274.5,287 277.5,288 280,289 283,290 286,291 288.5,292 291.5,293 294.5,293.5 297,294.5 300,295.5 303,296 305.5,297 308.5,297.5 311.5,298.5 314,299 317,300 320,300.5 322.5,301 325.5,302 328.5,302.5 331,303 334,303.5 337,304 339.5,305 342.5,305.5 345.5,306 348,306.5 351,307 354,307.5 356.5,308 359.5,308.5 362.5,309 365,309.5 368,310 371,310.5 373.5,311 376.5,311.5 379.5,312 382,312.5 385,313 388,313 390.5,313.5 393.5,314 396.5,314.5 399,315 402,315 405,315.5 407.5,316 410.5,316.5 413.5,316.5 416,317 419,317.5 422,317.5 424.5,318 427.5,318.5 430.5,318.5 433,319 436,319.5 439,319.5 441.5,320 444.5,320.5 447.5,320.5 450,321 453,321 456,321.5 458.5,321.5 461.5,322 464.5,322.5 467,322.5 470,323" fill="none" stroke="#c92a2a" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
   <foreignObject x="138" y="92.5" width="107" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:26px;color:#c92a2a"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$0.48\ \text{MeV}$</span></div></foreignObject>
   <foreignObject x="250" y="174" width="76" height="62" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:26px;color:#c92a2a"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$U = \dfrac{ke^2}{r}$</span></div></foreignObject>
@@ -407,7 +407,7 @@ Two nuclei are both positive, so they repel each other. To fuse, they must come 
 
 The temperature of the Sun's core is about $15.7$ million kelvin. There, the average kinetic energy of a nucleus is only $\frac{3}{2}kT \approx 2\ \text{keV}$, more than $200$ times too little. By classical physics, practically no nucleus would ever get over the barrier, and the Sun could not shine.
 
-The answer is **quantum tunnelling**. A nucleus behaves partly like a wave, and it has a small probability of appearing on the other side of the barrier without having the energy to climb over it. George Gamow found this effect in 1928 for alpha decay, and in 1929 Robert Atkinson and Fritz Houtermans used it to calculate fusion in stars. Tunnelling is most likely for the fastest nuclei and for barriers that are low and thin, so fusion needs high temperatures, and it is easiest for the hydrogen isotopes, which have the smallest charge.
+The answer is **quantum tunnelling**. A nucleus behaves partly like a wave, and it has a small probability of appearing on the other side of the barrier without having the energy to climb over it. George Gamow found this effect in 1928 for alpha decay, and in 1929 Robert Atkinson and Fritz Houtermans used it to calculate fusion in stars. Tunnelling is most likely for the fastest nuclei and for barriers that are low and thin, so fusion needs high temperatures, and it is easiest for the hydrogen isotopes, which have the smallest charge. Because of tunnelling, deuterium and tritium already fuse readily at collision energies of about $0.1\ \text{MeV}$, well below the $0.5\ \text{MeV}$ top of the barrier, and in a reactor plasma (about $15\ \text{keV}$) the fastest nuclei do most of the fusing.
 
 ## Formula: Sharing the energy of D–T fusion
 
@@ -426,25 +426,23 @@ So the neutron carries $14.1\ \text{MeV}$ and the helium nucleus, the **alpha pa
 
 ## Fusion in the laboratory {Lab}
 
-The first fusion reactions made on purpose were observed in 1934 at the Cavendish Laboratory in Cambridge by Mark Oliphant, Paul Harteck and Ernest Rutherford. They accelerated deuterons through voltages of tens of kilovolts into targets that contained deuterium; already at $20\ \text{kV}$, fast protons came out. The protons and neutrons came from two reactions, $^{2}\text{H} + {}^{2}\text{H} \to {}^{3}\text{H} + \text{p}$ and $^{2}\text{H} + {}^{2}\text{H} \to {}^{3}\text{He} + \text{n}$. In this way they discovered tritium and helium-3. Each reaction released far more energy than the deuteron brought in, but almost all of the beam's deuterons only lost their energy in collisions with electrons, so the beam as a whole used far more energy than it produced.
+A power plant cannot simply copy the Sun:
 
-A power plant cannot copy the Sun either:
-
-| | Sun's core | D–T reactor plasma |
+| | Sun's core | ITER (plan) |
 | --- | --- | --- |
-| fuel | protons | deuterium and tritium |
-| temperature | $1.6 \cdot 10^{7}\ \text{K}$ | about $1.5 \cdot 10^{8}\ \text{K}$ |
-| density | $150\ \text{g/cm}^3$ | a millionth of air |
+| fuel | protons | D and T |
+| how hot | $1.6 \cdot 10^{7}\ \text{K}$ | $1.5 \cdot 10^{8}\ \text{K}$ |
+| density | $150\ \text{g/cm}^3$ | $10^{-6}$ of air |
 | held by | gravity | magnetic fields |
-| power per $\text{m}^3$ | about $280\ \text{W}$ | $0.6\ \text{MW}$ (ITER plan) |
+| power per $\text{m}^3$ | $280\ \text{W}$ | $0.6\ \text{MW}$ |
 
-The Sun's reaction is far too slow for a machine, and its gravity holds a dense core for billions of years. A reactor must use the fastest reaction, D–T, in a thin plasma that it can hold only for seconds or less. To make enough nuclei tunnel in that short time, the plasma must be about ten times hotter than the Sun's core, which ITER plans at about $150$ million degrees. "Hotter than the Sun" refers to the temperature only; the Sun's core has a far higher density and pressure.
+The Sun's reaction is far too slow for a machine, and its gravity holds a dense core for billions of years. A reactor must use the fastest reaction, D–T, in a thin plasma that it can hold only for seconds or less. To make enough nuclei tunnel in that short time, the plasma must be about ten times hotter than the Sun's core, which ITER plans at about $150$ million kelvin. "Hotter than the Sun" refers to the temperature only; the Sun's core has a far higher density and pressure.
 
 The neutron has no charge, so magnetic fields cannot hold it: it leaves the plasma with $80\ \%$ of the energy and heats the wall around it, where its energy can be collected and where it can breed new tritium from lithium. The alpha particle is charged and stays in the plasma, keeping it hot.
 
 ## Worked example
 
-In D–T fusion, $Q = 17.6\ \text{MeV}$ is released. The nuclear masses are $m_\alpha = 4.0015\ \text{u}$ for the helium nucleus and $m_\text{n} = 1.0087\ \text{u}$ for the neutron. Calculate the kinetic energy of each product, assuming that the fuel nuclei are almost at rest.
+This example repeats the calculation of the reaction diagram and the formula step by step, so that you can do it yourself. In D–T fusion, $Q = 17.6\ \text{MeV}$ is released. The nuclear masses are $m_\alpha = 4.0015\ \text{u}$ for the helium nucleus and $m_\text{n} = 1.0087\ \text{u}$ for the neutron. Calculate the kinetic energy of each product, assuming that the fuel nuclei are almost at rest.
 
 <!-- vaihe -->
 
@@ -509,7 +507,7 @@ Mark Oliphant was an Australian physicist from Adelaide. In 1927 he came to the 
 ## Summary
 
 - The Sun fuses four protons into helium-4 through the proton–proton chain and releases $26.7\ \text{MeV}$; its first step is very slow, because it needs the weak interaction.
-- Positive nuclei repel: the Coulomb barrier is about $0.5\ \text{MeV}$, far more than the thermal energy of a few keV. Fusion happens by quantum tunnelling, mostly for the fastest nuclei.
+- Positive nuclei repel: the Coulomb barrier is about $0.5\ \text{MeV}$, far more than the thermal energy: a few keV in the Sun, about $10\text{–}20\ \text{keV}$ in a reactor. Fusion happens by quantum tunnelling, mostly for the fastest nuclei.
 - Oliphant, Harteck and Rutherford made the first fusion reactions in a laboratory in 1934 (D–D), discovering tritium and helium-3.
 - D–T fusion releases $17.6\ \text{MeV}$; by momentum conservation the neutron gets $14.1\ \text{MeV}$ and the alpha particle $3.5\ \text{MeV}$.
 - A reactor uses the fastest reaction, D–T, in a thin plasma held by magnets, so it needs about ten times the temperature of the Sun's core.

@@ -16,7 +16,7 @@
    "id": "hook",
    "stage": "herata",
    "type": "hook",
-   "text": "The centre of the Sun has a temperature of about $15$ million kelvin. ITER, the international fusion experiment under construction in the south of France (as of November 2026), plans to heat its fuel to about $150$ million degrees, ten times hotter. That sounds strange: the Sun has been fusing hydrogen for $4.6$ billion years at a much lower temperature. And in 1920, when Eddington proposed fusion in the Sun, his critics said that even the Sun was far too cold for it.",
+   "text": "The centre of the Sun has a temperature of about $15$ million kelvin. ITER, the international fusion experiment under construction in the south of France (as of November 2026), plans to heat its fuel to about $150$ million kelvin, ten times hotter. That sounds strange: the Sun has been fusing hydrogen for $4.6$ billion years at a much lower temperature. And in 1920, when Eddington proposed fusion in the Sun, his critics said that even the Sun was far too cold for it.",
    "question": "How can fusion happen at all, and why does a machine on Earth need so much more heat than the Sun?"
   },
   {
@@ -115,7 +115,7 @@
      "feedback": "Right: a proton must turn into a neutron, which needs the weak interaction. An average proton in the Sun waits about $9$ billion years. A machine needs a much faster reaction: D–T."
     },
     {
-     "text": "It gives too little energy to be worth using.",
+     "text": "It gives too little energy per reaction to be useful.",
      "feedback": "Four protons give $26.7\\ \\text{MeV}$, more than one D–T reaction. The problem is the rate: the first step is extremely slow, because it needs the weak interaction."
     },
     {
@@ -155,7 +155,7 @@
    "stage": "tutki",
    "type": "text",
    "title": "Investigation 2: inside a D–T reaction",
-   "text": "Test predictions 1 and 2. Step through the reaction with *Next step* and read each sentence aloud in your pair. The arrows are to scale: blue for velocity $\\overline{v}$, red for force $\\overline{F}$.\n\n<div class=\"fx\" data-fx=\"reaction\" id=\"fx-fr-dt\" data-src=\"units/fy14/data/nuclides.json\"><script type=\"application/json\">{\"part\": \"reaction\", \"question\": \"Step through the reaction twice. Which forces act in each step? After the reaction, which product moves faster, and which carries more of the energy?\"}</script></div>"
+   "text": "Test predictions 1 and 2. Step through the reaction with *Next step* and read each sentence aloud in your pair. Blue arrows show velocity $\\overline{v}$, red arrows force $\\overline{F}$. The arrows compare speeds within one step only; the line under the figure gives the real speeds.\n\n<div class=\"fx\" data-fx=\"reaction\" id=\"fx-fr-dt\" data-src=\"units/fy14/data/nuclides.json\"><script type=\"application/json\">{\"part\": \"reaction\", \"question\": \"Step through the reaction twice. Which forces act in each step? After the reaction, which product moves faster, and which carries more of the energy?\"}</script></div>"
   },
   {
    "id": "language-support",
@@ -169,7 +169,7 @@
    "type": "explain",
    "title": "Describe the process",
    "prompt": "Discuss with a partner, then write a description of the D–T reaction in four or five steps, in your own words. Say what happens to the nuclei, which force wins at each moment, and how the energy is shared at the end.",
-   "model": "In the first step, a deuterium nucleus and a tritium nucleus move towards each other. Then the electric force pushes them apart, because both are positive, and they slow down: this is the Coulomb barrier. When the nuclei are close enough, about $10^{-15}\\ \\text{m}$, the strong force wins, and they fuse into a very short-lived helium-5 nucleus. It breaks up at once into a helium-4 nucleus and a neutron, which have less mass than the fuel, so $17.6\\ \\text{MeV}$ is released. The products fly apart with equal and opposite momenta, so the lighter neutron moves faster and carries $14.1\\ \\text{MeV}$, while the helium nucleus carries $3.5\\ \\text{MeV}$.",
+   "model": "In the first step, a deuterium nucleus and a tritium nucleus move towards each other. Then the electric force pushes them apart, because both are positive, and they slow down: this is the Coulomb barrier. When the fastest nuclei are close enough, about $3 \\cdot 10^{-15}\\ \\text{m}$, they tunnel through the rest of the barrier, the strong force wins, and they fuse into a very short-lived helium-5 nucleus. It breaks up at once into a helium-4 nucleus and a neutron, which have less mass than the fuel, so $17.6\\ \\text{MeV}$ is released. The products fly apart with equal and opposite momenta, so the lighter neutron moves faster and carries $14.1\\ \\text{MeV}$, while the helium nucleus carries $3.5\\ \\text{MeV}$.",
    "criteria": [
     "The description is in time order, with linking words (first, then, when, finally).",
     "It names the electric repulsion (Coulomb barrier) and the strong force at the right moments.",
@@ -247,8 +247,8 @@
    "stage": "sovella",
    "type": "explain",
    "title": "Compare: the Sun and a fusion reactor",
-   "prompt": "Discuss with a partner, then write a short paragraph (five or six sentences) of your own that answers the opening question: why must a fusion reactor on Earth be hotter than the centre of the Sun? Compare the fuel, the density, how the plasma is held and for how long. Also say what \"hotter than the Sun\" does *not* mean.",
-   "model": "The main difference between the Sun and a reactor is how the fuel is held. The Sun's gravity holds a huge, dense core, $150\\ \\text{g/cm}^3$, for billions of years, so it can use the very slow proton–proton reaction. A reactor cannot do this: its magnetic fields hold only a thin plasma, about a million times thinner than air, for seconds or less. So it must use the fastest reaction, deuterium–tritium, and make the nuclei so fast that many of them tunnel through the Coulomb barrier in that short time. That needs about $150$ million degrees, ten times the temperature of the Sun's core. \"Hotter than the Sun\" refers only to the temperature: the Sun's core has a far higher density and pressure.",
+   "prompt": "Discuss with a partner, then write three or four sentences of your own that answers the opening question: why must a fusion reactor on Earth be hotter than the centre of the Sun? Compare the fuel, the density, how the plasma is held and for how long. Also say what \"hotter than the Sun\" does *not* mean.",
+   "model": "The main difference between the Sun and a reactor is how the fuel is held. The Sun's gravity holds a huge, dense core, $150\\ \\text{g/cm}^3$, for billions of years, so it can use the very slow proton–proton reaction. A reactor cannot do this: its magnetic fields hold only a thin plasma, about a million times thinner than air, for seconds or less. So it must use the fastest reaction, deuterium–tritium, and make the nuclei so fast that many of them tunnel through the Coulomb barrier in that short time. That needs about $150$ million kelvin, ten times the temperature of the Sun's core. \"Hotter than the Sun\" refers only to the temperature: the Sun's core has a far higher density and pressure.",
    "criteria": [
     "The answer compares the fuels: slow proton–proton fusion in the Sun, fast D–T fusion in a reactor.",
     "The answer compares the density and the confinement: gravity for billions of years against magnetic fields for a short time.",
@@ -261,14 +261,15 @@
    "id": "scales-text",
    "stage": "sovella",
    "type": "text",
-   "title": "Energy scales: chemical and nuclear fuels",
-   "text": "Compare the energy released by chemical and nuclear fuels. The chart has a logarithmic axis: each step is ten times the one before.\n\n<div class=\"fx\" data-fx=\"reaction\" id=\"fx-fr-scales\" data-src=\"units/fy14/data/nuclides.json\"><script type=\"application/json\">{\"part\": \"scales\", \"scales_mode\": \"kg\", \"question\": \"Switch between *per kilogram* and *per reaction*. How many times more energy does $1\\\\ \\\\text{kg}$ of D–T fuel give than $1\\\\ \\\\text{kg}$ of coal? And than $1\\\\ \\\\text{kg}$ of uranium-235?\"}</script></div>"
+   "optional": true,
+   "text": "Compare the energy released by chemical and nuclear fuels. The chart has a logarithmic axis: each step is ten times the one before.\n\n<div class=\"fx\" data-fx=\"reaction\" id=\"fx-fr-scales\" data-src=\"units/fy14/data/nuclides.json\"><script type=\"application/json\">{\"part\": \"scales\", \"scales_mode\": \"kg\", \"scales_compare\": false, \"question\": \"Switch between *per kilogram* and *per reaction*. Roughly how many times more energy does $1\\\\ \\\\text{kg}$ of D–T fuel give than $1\\\\ \\\\text{kg}$ of coal? Then calculate it below.\"}</script></div>"
   },
   {
    "id": "coal-equivalent",
    "stage": "sovella",
    "type": "numeric",
    "title": "How much coal is one kilogram of D–T fuel?",
+   "optional": true,
    "prompt": "One kilogram of D–T fuel releases $3.37 \\cdot 10^{14}\\ \\text{J}$ by fusion, and one kilogram of anthracite coal releases $3.25 \\cdot 10^{7}\\ \\text{J}$ by burning. How many kilograms of coal give the same energy as one kilogram of D–T fuel?",
    "answer": 10400000.0,
    "unit": "kg",
@@ -370,7 +371,7 @@
     },
     {
      "text": "The plasma will be cooler; the Sun's core is $150$ million kelvin.",
-     "feedback": "The Sun's core is about $15$ million kelvin; ITER plans about $150$ million degrees. The temperature claim is right, but the density is far lower."
+     "feedback": "The Sun's core is about $15$ million kelvin; ITER plans about $150$ million kelvin. The temperature claim is right, but the density is far lower."
     },
     {
      "text": "There is nothing to correct: ITER's plasma is more extreme.",

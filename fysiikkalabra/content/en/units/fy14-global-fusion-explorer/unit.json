@@ -1,0 +1,17 @@
+{"id": "fy14-global-fusion-explorer", "course": "FY14", "chapter": 8, "order": 3, "title": "Global Fusion Explorer",
+ "description": "An interactive world map of 60 fusion facilities and the activity From Competition to Collaboration: how the geography of fusion research changed from Cold War secrecy to worldwide networks.",
+ "kind": "explorer", "minutes": 75, "subjects": ["physics", "english", "french"],
+ "sources": [
+  {"title": "Course data: Global Fusion Explorer facilities (assets/units/fy14/data/facilities.json, each facility with its own sources)", "url": "https://hellsla.github.io/fysiikkalabra/site/units/fy14/data/facilities.json", "checked": "2026-11-01", "note": "60 facilities, data checked 2026-11-01. Counts in this unit were computed from this file: before 1970 machines in three countries; facilities with status 'operating' in 12 countries."},
+  {"title": "UN Digital Library: Second United Nations International Conference on the Peaceful Uses of Atomic Energy, Geneva, 1–13 September 1958", "url": "https://digitallibrary.un.org/record/3892717", "checked": "2026-11-01"},
+  {"title": "Timeline of nuclear fusion (Wikipedia): declassification in 1958, T-3 results 1968–1969", "url": "https://en.wikipedia.org/wiki/Timeline_of_nuclear_fusion", "checked": "2026-11-01"},
+  {"title": "UKAEA: Mission to Moscow, 50 years on (the 1969 Culham measurement of T-3)", "url": "https://www.ukaea.org/news/mission-to-moscow-50-years-on/", "checked": "2026-11-01"},
+  {"title": "Tokamak (Wikipedia): T-3 and the spread of tokamaks after 1969", "url": "https://en.wikipedia.org/wiki/Tokamak", "checked": "2026-11-01"},
+  {"title": "EUR-Lex: Council Decision 78/471/Euratom of 30 May 1978 on the establishment of the Joint European Torus (JET) Joint Undertaking", "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:31978D0471", "checked": "2026-11-01"},
+  {"title": "Geneva Summit (1985) (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Geneva_Summit_(1985)", "checked": "2026-11-01", "note": "19–21 November 1985, Reagan and Gorbachev."},
+  {"title": "ITER (Wikipedia): origins at the 1985 Geneva summit, the ITER Agreement of 21 November 2006 and its seven members", "url": "https://en.wikipedia.org/wiki/ITER", "checked": "2026-11-01"},
+  {"title": "HL-2A (Wikipedia): built from the main parts of the German ASDEX tokamak", "url": "https://en.wikipedia.org/wiki/HL-2A", "checked": "2026-11-01"},
+  {"title": "COMPASS tokamak (Wikipedia): from Culham to the Institute of Plasma Physics in Prague", "url": "https://en.wikipedia.org/wiki/COMPASS_tokamak", "checked": "2026-11-01"},
+  {"title": "JT-60SA (Wikipedia): joint project of Japan and the European Union, first plasma on 23 October 2023", "url": "https://en.wikipedia.org/wiki/JT-60SA", "checked": "2026-11-01"},
+  {"title": "OpenStreetMap: copyright and licence of the map tiles", "url": "https://www.openstreetmap.org/copyright", "checked": "2026-11-01", "note": "Map tiles © OpenStreetMap contributors; loaded by the student's browser, so the map needs an internet connection."}
+ ]}

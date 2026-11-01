@@ -129,7 +129,7 @@
    "stage": "tutki",
    "type": "text",
    "title": "Investigation 2: the Binding Energy Explorer",
-   "text": "Test prediction 2. Choose nuclei from the list or click the points of the curve, and read $B/A$ in the panel. Then compare the reactions. Work in pairs: one of you operates the explorer, the other writes the numbers down.\n\n<div class=\"fx\" data-fx=\"binding\" id=\"fx-be-explorer\" data-src=\"units/fy14/data/nuclides.json\"><script type=\"application/json\">{\"highlight\": [\"H-2\", \"He-4\", \"C-12\", \"Fe-56\", \"U-235\"], \"reactions\": [\"dt\", \"dd-he3\", \"u235\"], \"select\": \"He-4\", \"question\": \"Find the three nuclei with the largest $B/A$ in the list. Then choose the reaction *D–T fusion* and the reaction *U-235 fission*: which way does each arrow point on the curve, and how large is $Q$?\"}</script></div>"
+   "text": "Test prediction 2. Choose nuclei from the list or click the points of the curve, and read $B/A$ in the panel. Then compare the reactions. Work in pairs: one of you operates the explorer, the other writes the numbers down.\n\n<div class=\"fx\" data-fx=\"binding\" id=\"fx-be-explorer\" data-src=\"units/fy14/data/nuclides.json\"><script type=\"application/json\">{\"highlight\": [\"H-2\", \"He-4\", \"Fe-56\"], \"reactions\": [\"dt\", \"dd-he3\", \"li6\", \"u235\"], \"question\": \"Find the three nuclei with the largest $B/A$ in the list. Then choose silver-107 or tin-120 ($A$ close to $112$) and compare its $B/A$ with iron-56: would fusing two iron nuclei climb the curve or go down it? Last, choose the reaction *D–T fusion* and the reaction *U-235 fission*: which way does each arrow point on the curve, and how large is $Q$?\"}</script></div>"
   },
   {
    "id": "language-support",
@@ -142,10 +142,11 @@
    "stage": "tutki",
    "type": "explain",
    "title": "Conclusion: two ways to the peak",
-   "prompt": "Discuss with a partner, then write three or four sentences of your own with numbers from the explorer. Where on the curve are the most tightly bound nuclei? In which direction does D–T fusion move on the curve, and in which direction does uranium fission move? Why do both release energy?",
-   "model": "The curve shows that the most tightly bound nuclei are near iron and nickel, with about $8.79\\ \\text{MeV}$ per nucleon. In D–T fusion, the light nuclei deuterium ($1.11\\ \\text{MeV}$) and tritium ($2.83\\ \\text{MeV}$) form helium-4 ($7.07\\ \\text{MeV}$), so the reaction climbs the curve from the left and releases $Q = 17.6\\ \\text{MeV}$. In fission, uranium-235 ($7.59\\ \\text{MeV}$) splits into barium and krypton, which have about $8.3$ and $8.5\\ \\text{MeV}$, so it climbs from the right and releases $173\\ \\text{MeV}$. Both release energy because the products are more tightly bound than the fuel.",
+   "prompt": "Discuss with a partner, then write four or five sentences of your own with numbers from the explorer. Where on the curve are the most tightly bound nuclei? Would fusing two iron-56 nuclei release energy? In which direction does D–T fusion move on the curve, and in which direction does uranium fission move? Why do both release energy?",
+   "model": "The curve shows that the most tightly bound nuclei are near iron and nickel, with about $8.79\\ \\text{MeV}$ per nucleon. Silver-107 has only $8.55\\ \\text{MeV}$ per nucleon, so fusing two iron nuclei into $A \\approx 112$ would go down the curve and need energy. In D–T fusion, the light nuclei deuterium ($1.11\\ \\text{MeV}$) and tritium ($2.83\\ \\text{MeV}$) form helium-4 ($7.07\\ \\text{MeV}$), so the reaction climbs the curve from the left and releases $Q = 17.6\\ \\text{MeV}$. In fission, uranium-235 ($7.59\\ \\text{MeV}$) splits into barium and krypton, which have about $8.3$ and $8.5\\ \\text{MeV}$, so it climbs from the right and releases $173\\ \\text{MeV}$. Both release energy because the products are more tightly bound than the fuel.",
    "criteria": [
     "The answer says that the peak of $B/A$ is near iron or nickel, at about $8.8\\ \\text{MeV}$.",
+    "The answer compares iron-56 with silver-107 or tin-120 (about $8.5\\ \\text{MeV}$) and concludes that fusing two iron nuclei would need energy.",
     "The answer says that fusion moves light nuclei up the curve from the left and fission moves heavy nuclei up from the right.",
     "The answer explains that energy is released because the products have a larger $B/A$, with at least one number from the explorer.",
     "The answer uses a sentence starter and key words from the word bank."
@@ -305,8 +306,8 @@
      "feedback": "This is the mass defect in $\\text{u}$, not an energy. Multiply by $931.5\\ \\text{MeV/u}$."
     },
     {
-     "text": "$3.6 \\cdot 10^{-13}\\ \\text{MeV}$",
-     "feedback": "The order of magnitude is that of joules, not $\\text{MeV}$: $3.6 \\cdot 10^{-13}\\ \\text{J} = 2.22\\ \\text{MeV}$."
+     "text": "$22.2\\ \\text{MeV}$",
+     "feedback": "Check the power of ten: $0.002388\\ \\text{u} \\cdot 931.5\\ \\text{MeV/u} = 2.22\\ \\text{MeV}$."
     }
    ]
   },
@@ -322,7 +323,7 @@
      "feedback": "Uranium has the largest *total* $B$, about $1784\\ \\text{MeV}$, but per nucleon only $7.59\\ \\text{MeV}$."
     },
     {
-     "text": "$^{56}\\text{Fe}$, at the peak of the curve",
+     "text": "$^{56}\\text{Fe}$, because medium nuclei are bound best",
      "correct": true,
      "feedback": "Right: $8.79\\ \\text{MeV}$ per nucleon, near the top together with $^{62}\\text{Ni}$."
     },

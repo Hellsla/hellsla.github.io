@@ -108,7 +108,7 @@ def barrier():
     f.rect(ax.X(0) + 2, ax.Y(0) - 0.5, ax.X(r0 - 0.2) - ax.X(0) - 2, 22, GOOD_LIGHT, None)
     f.line(ax.X(r0), ax.Y(KE2 / r0), ax.X(r0 - 0.2), ax.Y(0) + 22, GOOD, 3)
     f.line(ax.X(0.2), ax.Y(0) + 22, ax.X(r0 - 0.2), ax.Y(0) + 22, GOOD, 3)
-    f.tex(ax.X(0.3), ax.Y(0) - 40, r"\text{strong force}", "start", color=GOOD, size=24, bg=True)
+    f.tex(ax.X(r0) + 12, ax.Y(0) - 26, r"\text{strong force}", "start", color=GOOD, size=24, bg=True)
     ax.curve(lambda r: KE2 / r, r0, 20, HOT, 3.5)
     f.tex(ax.X(r0) + 8, ax.Y(KE2 / r0) - 4, rf"{KE2 / r0:.2f}\ \text{{MeV}}", "start", color=HOT, bg=True)
     f.tex(ax.X(9), ax.Y(0.30), r"U = \dfrac{ke^2}{r}", "start", color=HOT, bg=True)

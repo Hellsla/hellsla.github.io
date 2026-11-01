@@ -31,3 +31,25 @@ units.py check, build, check_layout 360/1280 (OK), screenshot.py (50 captures), 
 2. `assets/units/fy14/units.css` / `fx/reaction.js` energy-scales chart: at 390 px the bar track is 210 px wide but the axis row is 314 px (`.fx-sc-axisrow` keeps an empty label column while the bar rows stack the label above), so the bars do not line up with the logarithmic axis on a phone (D–T ends near 10¹² instead of 3.4 · 10¹⁴). At 1280 px they match. Fix: give the axis row the same grid columns as the bar rows at narrow widths.
 3. `fx/binding.js`: at 390 px the graph labels (axis numbers, nuclide labels, "fusion"/"fission") are about 8–10 px, below the 14 px rule, and the $^{56}\text{Fe}$ label touches the $B/A$ axis title.
 4. `docs/fy14/writing-guide.md` says there is no `pair` field on `explain`, while the pilot unit uses it as text; I did not use it.
+
+## Fixes after review
+Content hash after the fixes: c4cb2276f3c98102 (2026-11-01).
+- Science:
+  - "A large $B/A$ means a tightly bound nucleus." The claims about stability and mass per nucleon are removed.
+  - Meitner and Frisch: "explained it at Christmas 1938 (published February 1939)". The teacher note now says "the end of 1938".
+- Pedagogy:
+  - The explorer question now asks students to compare silver-107 or tin-120 ($A \approx 112$) with iron-56, testing prediction 2.
+  - `explorer-findings` has a matching question, model sentence (silver-107, 8.55 MeV) and criterion.
+  - `check-3`'s correct option is now a reason: "because medium nuclei are bound best".
+  - The teacher extension is now a calculation of D + He-3 with AME2020 masses: Q ≈ 18.4 MeV, 3.7 MeV per nucleon.
+  - `li6` was added to the explorer's reactions, so the fusion unit's tritium-breeding extension works.
+- Visual, Blocking:
+  - The Formula and Substitution chains are broken one term per line.
+  - The explorer no longer preselects a nuclide and highlights only H-2, He-4 and Fe-56.
+- Visual, Polish:
+  - `${1\ \text{u} \cdot c^2 = 931.5\ \text{MeV}}$` is braced.
+  - The Answer now reads $\Delta m = 0.0304\ \text{u}$, with the significant-figure reason.
+  - Ladder figure: one label, "$B = 28.3\ \text{MeV}$", under "add". The drawing moved 30 units right to make room.
+  - `check-2`'s 3.6·10⁻¹³ MeV distractor was replaced by 22.2 MeV, a power-of-ten error, to balance the option lengths.
+- After the shared update: no text quotes the old binding.js labels or values.
+- Checks: all pass, as for fy14-nucleus.
