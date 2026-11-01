@@ -1,15 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 2c3491834a24668e
-
-Delta review over the audit's PASS (7ade301110d15aed): L1-04 (chainsaw W = Q1 − Q2) replaced by a figure task (fy3-11/pv-isobaari, work in an isobaric expansion); L3-02 answer 9.60 -> 9.6 (same value).
+CONTENT-HASH: 4604925a4c158221
 
 ## Blocking
 - none
+
 ## Polish
 - none
+
 ## Checked
-- Figure code: horizontal segment at p = 250 kPa from V = 1 to 4 l, grid 1 l / 50 kPa, every y tick labelled; end points on grid crossings; arrow shows expansion; no area or work value; screenshot matches the description.
-- W_k = 250 000 Pa · 0,0030 m³ = 750 J (= 750 kPa·l); answers.py = 750.
-- Tolerance 0,02 -> 735–765 J (the solution says so); rejects p·V2 = 1000 J and p·V1 = 250 J.
-- Positive work in expansion, units (Pa·m³ = J, kPa·l = J) and 2 s.f. reasoning right; task text gives no values from the figure.
-- L3-02: 9.6 equals 9.60, unit and tolerance unchanged.
+Text-only re-set of units in L1-01 (480,0 kPa, 0,0250 m³), L1-02 (1,70 l, 101 kPa), L2 efficiency (4,30 · 10³ MW, 1,60 · 10³ MW) and the lab-cylinder task (125 kPa, 1,60 l). Recomputed: 12,0 kJ, 171,7 J (172 J), 37,2 %, ΔU = 700 - 200 = 500 J; answers.py matches and is unchanged. No number, unit or answer changed; endings (:na, :n) grammatical, JSON and LaTeX valid.

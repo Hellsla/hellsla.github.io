@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: b726ca376903e1f8
+CONTENT-HASH: 3ed8319b2e02b3ee
 
 ## Blocking
+- none
 
 ## Polish
+- none
 
 ## Checked
-batch delta review (round 1, 2026-10-28): the hashed content on this branch is identical to the version passed on main after the physics audit (same hash b726ca376903e1f8; git diff against origin/main touches only review/usage.tsv), so the diff is empty. The sim LaTeX pass (KaTeX labels and readouts in lang/fi.json, window.simText tests, howto/model/calc boxes) is already part of that passed version; spot-read its sim strings for physics, symbols and units against the guardrails: no new or changed claim.
+Every changed inline number re-set as maths in inquiry.json and exit-ticket.json: 200 kPa, 100 kPa, 1,0 l / 2,5 l, 1,5 l, 0,30 · 60 kW = 18 kW (0,30*60=18 correct, 60-18=42 kW). Values, units and rounding identical to before; feedback arithmetic (200 000 Pa · 0,0015 m³ = 300 J; 100 J = 650-550 J) still right. Finnish case endings after maths (:na, :ssa, :stä, :ään, :n) grammatical. Learn goals reworded only. check_latex ok.

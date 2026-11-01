@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 7c789ad59a5252aa
+CONTENT-HASH: 3ed8319b2e02b3ee
 
 ## Blocking
 - none
@@ -8,4 +8,4 @@ CONTENT-HASH: 7c789ad59a5252aa
 - none
 
 ## Checked
-batch delta review: the rephrased learning goals each complete "Tällä tunnilla opit" with a lowercase -maan/-mään verb, parallel within the list, symbols and numbers unchanged, meaning kept; the change touches no figure, simulation or task.
+Delta: typesetting only plus learn-goal verbs (laskemaan, selittämään). Meaning, order and feedback logic unchanged; units now spaced consistently (\, before units, decimal {,}, \cdot). Exit-ticket answer reads as one equation 0,30 · 60 kW = 18 kW. Nothing here affects staging, prediction or experiment design.

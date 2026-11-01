@@ -1,11 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 37a5fe9968b14bfe
+CONTENT-HASH: eaf9669e846ed993
+
+Delta review over the earlier PASS: only table headers and "95 kPa" re-set as maths.
 
 ## Blocking
 - none
-
 ## Polish
 - none
-
 ## Checked
-batch delta review: the rephrased learning goals each complete "Tällä tunnilla opit" with a lowercase -maan/-mään verb, parallel within the list, symbols and numbers unchanged, meaning kept; the change touches no figure, simulation or task.
+- Header cells $\theta$ (°C) and $p$ (kPa) now match the symbols used in the core idea, formula and the figure axes, so the student reads the same symbol in the table and the graph.
+- "arvosta $95\,\text{kPa}$" reads naturally; no case ending follows the maths. The figure alt text keeps plain "95 kPa" (fine for screen readers).
+- No change to the learning path, prediction, task order, feedback or figures; the example data and its description are unchanged and still do not give the answer away.
+- Learning goals (muuttamaan, määrittämään, arvioimaan) complete "Tällä tunnilla opit" grammatically and remain parallel.
