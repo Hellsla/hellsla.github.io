@@ -51,7 +51,7 @@
    "stage": "ennusta",
    "type": "choice",
    "title": "Prediction 1: who runs Cadarache?",
-   "prompt": "The Cadarache research centre, next to ITER, is run by one French national organisation. Which one? Commit now; the theory summary will show you.",
+   "prompt": "The Cadarache research centre, next to ITER, is run by one French national organisation. Which one? Use the names as clues and give your reason. Commit now; the theory summary will show you.",
    "justify": true,
    "reveal": {
     "after": "theory-science"
@@ -72,7 +72,7 @@
     },
     {
      "text": "EDF, the French electricity company",
-     "feedback": "EDF produces and sells electricity; it does not run research centres like Cadarache. Cadarache belongs to the CEA, the atomic and alternative energy body."
+     "feedback": "EDF produces and sells electricity and has its own R&D labs, but Cadarache belongs to the CEA, the atomic and alternative energy body."
     }
    ]
   },
@@ -208,14 +208,46 @@
    "stage": "sovella",
    "type": "text",
    "title": "Where are you from?",
-   "text": "<div class=\"fx\" data-fx=\"gapfill\" id=\"fx-gap-centre\"><script type=\"application/json\">{\"prompt\": \"Three researchers say where they come from, and Aino asks for help. Choose the word that fits each gap, then press *Check*.\", \"lang\": \"fr\", \"lines\": [{\"text\": \"Kenji : Je viens [[du|de|des]] Japon.\", \"feedback\": \"*{fr}Le Japon{/fr}* is masculine, so *{fr}de + le{/fr}* becomes *{fr}du{/fr}*: *{fr}Je viens du Japon{/fr}*.\", \"en\": \"Kenji: I come from Japan.\"}, {\"text\": \"Priya : Je viens [[d'|de|du]] Inde.\", \"feedback\": \"*{fr}L'Inde{/fr}* starts with a vowel, so *{fr}de{/fr}* becomes *{fr}d'{/fr}*: *{fr}Je viens d'Inde{/fr}*.\", \"en\": \"Priya: I come from India.\"}, {\"text\": \"Sarah : Je viens [[des|du|de]] États-Unis.\", \"feedback\": \"*{fr}Les États-Unis{/fr}* is plural, so *{fr}de + les{/fr}* becomes *{fr}des{/fr}*.\", \"en\": \"Sarah: I come from the United States.\"}, {\"text\": \"Aino : Moi, je viens [[de|du|d']] Finlande.\", \"feedback\": \"*{fr}La Finlande{/fr}* is feminine: *{fr}de Finlande{/fr}*, without an article.\", \"en\": \"Aino: I come from Finland.\"}, {\"text\": \"Aino : [[Excusez-moi|Salut|Au revoir]], monsieur. Je cherche la bibliothèque.\", \"feedback\": \"To get the attention of an adult you do not know: *{fr}Excusez-moi{/fr}*. *{fr}Salut{/fr}* is for friends; *{fr}Au revoir{/fr}* means goodbye.\", \"en\": \"Excuse me, sir. I am looking for the library.\"}, {\"text\": \"Monsieur : C'est [[au bout du|au premier|à côté]] couloir, à gauche.\", \"feedback\": \"*{fr}Au bout du couloir{/fr}*: at the end of the corridor. *{fr}À côté de{/fr}* needs *{fr}de{/fr}*, and *{fr}au premier{/fr}* goes with *{fr}étage{/fr}*.\", \"en\": \"It is at the end of the corridor, on the left.\"}, {\"text\": \"Aino : Merci beaucoup, c'est très [[gentil|gentille|bien]].\", \"feedback\": \"The fixed phrase is *{fr}C'est très gentil{/fr}* (that is very kind): after *{fr}c'est{/fr}* the adjective stays in its basic form, *{fr}gentil{/fr}*. *{fr}Bien{/fr}* would mean *that is very good*.\", \"en\": \"Thank you very much, that is very kind.\"}, {\"text\": \"Monsieur : Je vous en [[prie|prier|prix]].\", \"feedback\": \"*{fr}Je vous en prie{/fr}*: you are welcome. *{fr}Prix{/fr}* means price.\", \"en\": \"You are welcome.\"}]}</script></div>"
+   "text": "<div class=\"fx\" data-fx=\"gapfill\" id=\"fx-gap-centre\"><script type=\"application/json\">{\"prompt\": \"Three researchers say where they come from, and Aino asks for help. Choose the word that fits each gap, then press *Check*.\", \"lang\": \"fr\", \"lines\": [{\"text\": \"Kenji : Je viens [[du|de|des]] Japon.\", \"feedback\": \"*{fr}Le Japon{/fr}* is masculine, so *{fr}de + le{/fr}* becomes *{fr}du{/fr}*: *{fr}Je viens du Japon{/fr}*.\", \"en\": \"Kenji: I come from Japan.\"}, {\"text\": \"Priya : Je viens [[d'|de|du]] Inde.\", \"feedback\": \"*{fr}L'Inde{/fr}* starts with a vowel, so *{fr}de{/fr}* becomes *{fr}d'{/fr}*: *{fr}Je viens d'Inde{/fr}*.\", \"en\": \"Priya: I come from India.\"}, {\"text\": \"Sarah : Je viens [[des|du|de]] États-Unis.\", \"feedback\": \"*{fr}Les États-Unis{/fr}* is plural, so *{fr}de + les{/fr}* becomes *{fr}des{/fr}*.\", \"en\": \"Sarah: I come from the United States.\"}, {\"text\": \"Aino : Moi, je viens [[de|du|d']] Finlande.\", \"feedback\": \"*{fr}La Finlande{/fr}* is feminine: *{fr}de Finlande{/fr}*, without an article.\", \"en\": \"Aino: I come from Finland.\"}, {\"text\": \"Aino : [[Excusez-moi|Salut|Au revoir]], monsieur. Je cherche la bibliothèque.\", \"feedback\": \"To get the attention of an adult you do not know: *{fr}Excusez-moi{/fr}*. *{fr}Salut{/fr}* is for friends; *{fr}Au revoir{/fr}* means goodbye.\", \"en\": \"Excuse me, sir. I am looking for the library.\"}, {\"text\": \"Monsieur : C'est [[au bout du|au premier|à côté]] couloir, à gauche.\", \"feedback\": \"*{fr}Au bout du couloir{/fr}*: at the end of the corridor. *{fr}À côté de{/fr}* needs *{fr}de{/fr}*, and *{fr}au premier{/fr}* goes with *{fr}étage{/fr}*.\", \"en\": \"It is at the end of the corridor, on the left.\"}, {\"text\": \"Aino : Merci beaucoup, c'est très [[gentil|gentille|gentils]].\", \"feedback\": \"The fixed phrase is *{fr}C'est très gentil{/fr}* (that is very kind): after *{fr}c'est{/fr}* the adjective stays in its basic form, *{fr}gentil{/fr}*. *{fr}Gentils{/fr}* is the plural, for several people.\", \"en\": \"Thank you very much, that is very kind.\"}, {\"text\": \"Monsieur : Je vous en [[prie|prier|prix]].\", \"feedback\": \"*{fr}Je vous en prie{/fr}*: you are welcome. *{fr}Prix{/fr}* means price.\", \"en\": \"You are welcome.\"}]}</script></div>"
   },
   {
    "id": "roleplay-help",
    "stage": "sovella",
    "type": "text",
    "title": "Role-play: arriving at the research centre",
-   "text": "Work in pairs with the plan of the building. **Round 1:** A takes card A, B takes card B. **Round 2:** swap: A takes card D, B takes card C. Read only your own card and do not show it. Speak without writing first; the word bank is a safety net.\n\n<div class=\"wordbank\"><h4>Card A · Visitor</h4><p>You are a Finnish student on a visit. Introduce yourself at the reception (name, school town, why you are here, your appointment at 14 h with Dr Rossi). Then ask how to find the library. Check that you understood, and thank.</p></div><div class=\"wordbank\"><h4>Card B · Receptionist</h4><p>Welcome the visitor, ask where he or she comes from, and give a badge. Dr Rossi is Italian and works on the first floor. Give the way to the library with the plan above. If the visitor asks you to repeat, repeat more slowly.</p></div><div class=\"wordbank\"><h4>Card C · Visitor (swap)</h4><p>You arrive late and you are lost. Stop a researcher in the corridor, explain who you are, and ask for help to find the conference room and the toilets. Ask one question about the researcher's work.</p></div><div class=\"wordbank\"><h4>Card D · Researcher (swap)</h4><p>Choose your country (Japan, India, Korea, the United States …) and your work (the magnets, the vacuum vessel, the computers). Answer the visitor's questions and give the way with the plan above.</p></div><div class=\"wordbank\"><h4>Word bank</h4><p><span lang=\"fr\">Bonjour, madame / monsieur</span>, <span lang=\"fr\">Je m'appelle …</span>, <span lang=\"fr\">Je suis lycéen / lycéenne</span>, <span lang=\"fr\">Je viens de / d' / du / des …</span>, <span lang=\"fr\">J'ai <span class=\"nobr\">rendez-vous</span> avec …</span>, <span lang=\"fr\"><span class=\"nobr\">Excusez-moi</span></span>, <span lang=\"fr\">Je cherche …</span>, <span lang=\"fr\">Où est … ?</span>, <span lang=\"fr\">à gauche</span>, <span lang=\"fr\">à droite</span>, <span lang=\"fr\">tout droit</span>, <span lang=\"fr\">au bout du couloir</span>, <span lang=\"fr\">à côté de</span>, <span lang=\"fr\">en face de</span>, <span lang=\"fr\">au premier étage</span>, <span lang=\"fr\">Vous pouvez répéter plus lentement ?</span>, <span lang=\"fr\">Merci, c'est très gentil</span>, <span lang=\"fr\">Je vous en prie</span></p></div><div class=\"wordbank\"><h4>Sentence starters</h4><ul><li><span lang=\"fr\">Bonjour, monsieur. Je m'appelle … J'ai <span class=\"nobr\">rendez-vous</span> avec …</span></li><li><span lang=\"fr\">Je suis lycéenne à …, en Finlande.</span></li><li><span lang=\"fr\"><span class=\"nobr\">Excusez-moi</span>, madame. Je cherche …</span></li><li><span lang=\"fr\"><span class=\"nobr\">Qu'est-ce</span> que vous faites ici ?</span></li><li><span lang=\"fr\">Vous venez d'où ?</span></li><li><span lang=\"fr\">À droite, puis au bout du couloir ? Merci beaucoup !</span></li></ul><p>The receptionist or researcher: <span lang=\"fr\">Je peux vous aider ?</span>, <span lang=\"fr\">Voici votre badge.</span>, <span lang=\"fr\">C'est au premier étage.</span>, <span lang=\"fr\">Je viens du Japon.</span>, <span lang=\"fr\">Je travaille sur les aimants.</span></p></div>"
+   "text": "Work in pairs with the plan of the building. **Round 1:** A takes card A, B takes card B. **Round 2:** swap: A takes card D, B takes card C. Open only your own card below and do not show it. Speak without writing first; the word bank is a safety net.\n\n<div class=\"wordbank\"><h4>Word bank</h4><p><span lang=\"fr\">Bonjour, madame / monsieur</span>, <span lang=\"fr\">Je m'appelle …</span>, <span lang=\"fr\">Je suis lycéen / lycéenne</span>, <span lang=\"fr\">Je viens de / d' / du / des …</span>, <span lang=\"fr\">J'ai <span class=\"nobr\">rendez-vous</span> avec …</span>, <span lang=\"fr\"><span class=\"nobr\">Excusez-moi</span></span>, <span lang=\"fr\">Je cherche …</span>, <span lang=\"fr\">Où est … ?</span>, <span lang=\"fr\">à gauche</span>, <span lang=\"fr\">à droite</span>, <span lang=\"fr\">tout droit</span>, <span lang=\"fr\">au bout du couloir</span>, <span lang=\"fr\">à côté de</span>, <span lang=\"fr\">en face de</span>, <span lang=\"fr\">au premier étage</span>, <span lang=\"fr\">Vous pouvez répéter plus lentement ?</span>, <span lang=\"fr\">Merci, c'est très gentil</span>, <span lang=\"fr\">Je vous en prie</span></p></div><div class=\"wordbank\"><h4>Sentence starters</h4><ul><li><span lang=\"fr\">Bonjour, monsieur. Je m'appelle … J'ai <span class=\"nobr\">rendez-vous</span> avec …</span></li><li><span lang=\"fr\">Je suis lycéenne à …, en Finlande.</span></li><li><span lang=\"fr\"><span class=\"nobr\">Excusez-moi</span>, madame. Je cherche …</span></li><li><span lang=\"fr\"><span class=\"nobr\">Qu'est-ce</span> que vous faites ici ?</span></li><li><span lang=\"fr\">Vous venez d'où ?</span></li><li><span lang=\"fr\">À droite, puis au bout du couloir ? Merci beaucoup !</span></li></ul><p>The receptionist or researcher: <span lang=\"fr\">Je peux vous aider ?</span>, <span lang=\"fr\">Voici votre badge.</span>, <span lang=\"fr\">C'est au premier étage.</span>, <span lang=\"fr\">Je viens du Japon.</span>, <span lang=\"fr\">Je travaille sur les aimants.</span></p></div>"
+  },
+  {
+   "id": "card-a",
+   "stage": "sovella",
+   "type": "text",
+   "fold": "Visitor only",
+   "title": "Round 1, card A: visitor",
+   "text": "You are a Finnish student on a visit. Introduce yourself at the reception (name, school town, why you are here, your appointment at 14 h with Dr Rossi). Then ask how to find the library. Check that you understood, and thank."
+  },
+  {
+   "id": "card-b",
+   "stage": "sovella",
+   "type": "text",
+   "fold": "Receptionist only",
+   "title": "Round 1, card B: receptionist",
+   "text": "Welcome the visitor, ask where he or she comes from, and give a badge. Dr Rossi is Italian and works on the first floor. Give the way to the library with the plan above. If the visitor asks you to repeat, repeat more slowly."
+  },
+  {
+   "id": "card-c",
+   "stage": "sovella",
+   "type": "text",
+   "fold": "Visitor only",
+   "title": "Round 2, card C: visitor",
+   "text": "You arrive late and you are lost. Stop a researcher in the corridor, explain who you are, and ask for help to find the conference room and the toilets. Ask one question about the researcher's work."
+  },
+  {
+   "id": "card-d",
+   "stage": "sovella",
+   "type": "text",
+   "fold": "Researcher only",
+   "title": "Round 2, card D: researcher",
+   "text": "Choose your country (Japan, India, Korea, the United States …) and your work (the magnets, the vacuum vessel, the computers). Answer the visitor's questions and give the way with the plan above."
   },
   {
    "id": "roleplay",

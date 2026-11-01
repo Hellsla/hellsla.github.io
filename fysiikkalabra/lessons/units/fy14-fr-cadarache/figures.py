@@ -91,7 +91,7 @@ def map_():
     f = Fig("fy14frca-map", HGT, "Simplified map of the region around ITER, drawn to scale (scale bar 20 km). The Mediterranean "
             "Sea is at the bottom, with Marseille on the coast and Toulon further east. Aix-en-Provence lies about 25 km north of "
             "Marseille. The river Durance flows from the north-east past Manosque, then past the ITER and Cadarache site, and "
-            "then west to Avignon, where it joins the Rhône. The ITER and Cadarache site is marked with a red star, about 35 km "
+            "then west to Avignon, where it joins the Rhône. A lagoon, the Étang de Berre, lies north-west of Marseille. The ITER and Cadarache site is marked with a red star, about 35 km "
             "north of Aix-en-Provence and about 15 km south of Manosque.", width=W, size=30)
     f.rect(0, 0, W, HGT, LAND)
     f.path("M" + poly(COAST) + f" L{W},{HGT} L0,{HGT} Z", SEA, WATER, 2)
@@ -112,9 +112,10 @@ def map_():
     f.path("M" + " L".join(f"{n(a)},{n(b)}" for a, b in pts) + " Z", HOT, INK, 1.5)
     f.tex(x + 10, y + 40, r"\text{ITER et Cadarache}", "end", color=HOT)
     f.tex(*P(5.30, 43.12), r"\text{mer Méditerranée}", "middle", color=WATER)
-    lx, ly = P(5.00, 43.80)
+    lx, ly = P(5.24, 43.90)
     f.tex(lx, ly + 34, r"\text{la Durance}", "middle", color=WATER)
-    f.tex(*P(4.78, 43.64), r"\text{le Rhône}", "start", color=WATER)
+    f.tex(22, 148, r"\text{le Rhône}", "start", color=WATER)
+    f.tex(cx, cy - 0.07 * KY * PX - 14, r"\text{l'étang de Berre}", "middle", color=WATER)
     # scale bar and north arrow
     x0, y0 = 40, HGT - 70
     f.rect(x0, y0, 20 * PX, 10, INK)
@@ -131,7 +132,7 @@ def plan():
             "straight up. On the left of the corridor, first comes the cafeteria and then the library. On the right, first "
             "comes the lift and then the toilets, opposite the library. At the end of the corridor is the conference room. "
             "A separate strip below the plan shows the first floor, one level up by the lift, where the laboratory is.",
-            width=800, size=30)
+            width=800, size=32)
     wall, room, corr = INK, "#fbf8f1", "#eee6d3"
     f.rect(20, 20, 760, 660, room, wall, 4)
     f.rect(300, 140, 200, 540, corr)                                  # the corridor
@@ -162,7 +163,7 @@ def plan():
     f.path("M" + " L".join(f"{n(a)},{n(b)}" for a, b in pts) + " Z", HOT, INK, 1.5)
     f.line(350, 680, 450, 680, room, 10)
     f.tex(400, 712, r"\text{l'entrée}", "middle")
-    f.tex(400, 330, r"\text{le couloir}", "middle", color=MUTED)
+    f.tex(400, 330, r"\text{le couloir}", "middle")
     # the first floor, one level up
     f.rect(20, 770, 760, 150, "#f4f0fa", wall, 3)
     f.tex(40, 800, r"\text{au premier étage}", "start", color=MUTED)

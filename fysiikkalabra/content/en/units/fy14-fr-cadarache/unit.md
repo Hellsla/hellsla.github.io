@@ -96,14 +96,14 @@ France has two large public research organisations:
 
 - **The CEA** (<span lang="fr">Commissariat à l'énergie atomique et aux énergies alternatives</span>) was created in 1945 under Charles de
   Gaulle, first for atomic energy. Since 2010 its name has included *alternative energies*. It has about 21,000
-  staff in ten centres in France.
+  staff in nine centres in France (cea.fr, 2026).
 - **The CNRS** (<span lang="fr">Centre national de la recherche scientifique</span>) was founded in 1939. It is the largest public research body in
   Europe, with about 33,000 staff (2021), and does fundamental research in every field.
 
 **Cadarache** is one of the CEA's centres. Research there began in 1959, and over 5,000 people work on energy:
 fission reactors and their fuel, nuclear waste, solar energy and fusion. Its tokamak **Tore Supra** (1988–2010)
-was rebuilt as **WEST**. On 12 February 2025, WEST held a plasma for 1,337 seconds, a world record for a tokamak at
-the time.
+was rebuilt as **WEST**. On 12 February 2025, WEST held a plasma for 1,337 seconds (over 22 minutes), which the CEA called a world record for
+plasma duration: 25 % longer than China's EAST tokamak had managed a few weeks before.
 
 **ITER** is not part of the CEA: it is a separate international organisation, built next to the Cadarache centre.
 On 28 June 2005, in Moscow, the ITER partners chose Cadarache instead of Rokkasho in Japan, and the ITER Agreement
@@ -116,7 +116,7 @@ Cadarache and ITER are in the commune of **Saint-Paul-lez-Durance**, in the depa
 region **Provence-Alpes-Côte d'Azur**. The site lies by the river **Durance**, among dry hills and oak woods, about 35 km north of Aix-en-Provence. Because the staff come from many countries, an **international school**
 opened in nearby Manosque in 2007 for their children.
 
-<svg data-fig="map" viewBox="0 0 734 739" role="img" aria-label="Simplified map of the region around ITER, drawn to scale (scale bar 20 km). The Mediterranean Sea is at the bottom, with Marseille on the coast and Toulon further east. Aix-en-Provence lies about 25 km north of Marseille. The river Durance flows from the north-east past Manosque, then past the ITER and Cadarache site, and then west to Avignon, where it joins the Rhône. The ITER and Cadarache site is marked with a red star, about 35 km north of Aix-en-Provence and about 15 km south of Manosque." style="max-width:100%;font-size:30px">
+<svg data-fig="map" viewBox="0 0 734 739" role="img" aria-label="Simplified map of the region around ITER, drawn to scale (scale bar 20 km). The Mediterranean Sea is at the bottom, with Marseille on the coast and Toulon further east. Aix-en-Provence lies about 25 km north of Marseille. The river Durance flows from the north-east past Manosque, then past the ITER and Cadarache site, and then west to Avignon, where it joins the Rhône. A lagoon, the Étang de Berre, lies north-west of Marseille. The ITER and Cadarache site is marked with a red star, about 35 km north of Aix-en-Provence and about 15 km south of Manosque." style="max-width:100%;font-size:30px">
   <rect x="0" y="0" width="734" height="739" fill="#efe6cf"/>
   <path d="M0,443.5 L73.5,466.5 L124,490 L169.5,521 L237,521 L310.5,498 L344,544.5 L350,614.5 L395,614.5 L446,614.5 L485.5,645.5 L536,669 L592.5,715.5 L666,700 L733.5,715.5 L734,739 L0,739 Z" fill="#cfe4f5" stroke="#2f74b5" stroke-width="2" stroke-linejoin="round"/>
   <ellipse cx="197.5" cy="412.5" rx="45" ry="54.5" fill="#cfe4f5" stroke="#2f74b5" stroke-width="2"/>
@@ -135,8 +135,9 @@ opened in nearby Manosque in 2007 for their children.
   <path d="M573,208.5 L578,223 L593.5,223.5 L581.5,233 L585.5,248 L573,239.5 L560,248 L564,233 L552,223.5 L567.5,223 Z" fill="#c92a2a" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
   <foreignObject x="341" y="252.5" width="242" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:30px;color:#c92a2a">$\text{ITER et Cadarache}$</div></foreignObject>
   <foreignObject x="189.5" y="666.5" width="242" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:30px;color:#2f74b5">$\text{mer Méditerranée}$</div></foreignObject>
-  <foreignObject x="67" y="171.5" width="148" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:30px;color:#2f74b5">$\text{la Durance}$</div></foreignObject>
-  <foreignObject x="17" y="262" width="117" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:30px;color:#2f74b5">$\text{le Rhône}$</div></foreignObject>
+  <foreignObject x="202.5" y="94" width="148" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:30px;color:#2f74b5">$\text{la Durance}$</div></foreignObject>
+  <foreignObject x="22" y="130" width="117" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:30px;color:#2f74b5">$\text{le Rhône}$</div></foreignObject>
+  <foreignObject x="84.5" y="326" width="226" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:30px;color:#2f74b5">$\text{l'étang de Berre}$</div></foreignObject>
   <rect x="40" y="669" width="140" height="10" fill="#1f2933"/>
   <foreignObject x="72.5" y="687" width="75" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:30px">$20\ \text{km}$</div></foreignObject>
   <line x1="544" y1="699" x2="544" y2="628" stroke="#1f2933" stroke-width="4" stroke-linecap="butt"/>
@@ -169,19 +170,19 @@ The directions you hear most often:
 **Careful with floors.** In France the ground floor is the *<span lang="fr"><span class="nobr">rez-de-chaussée</span></span>*, and the *<span lang="fr">premier étage</span>* is
 the floor above it. In Finland that floor is the *toinen kerros*.
 
-<svg data-fig="plan" viewBox="0 0 800 940" role="img" aria-label="Plan of the ground floor of an invented research building. The entrance is at the bottom in the middle. Just inside is the reception desk with a star: you are here, facing a long corridor that runs straight up. On the left of the corridor, first comes the cafeteria and then the library. On the right, first comes the lift and then the toilets, opposite the library. At the end of the corridor is the conference room. A separate strip below the plan shows the first floor, one level up by the lift, where the laboratory is." style="max-width:100%;font-size:30px">
+<svg data-fig="plan" viewBox="0 0 800 940" role="img" aria-label="Plan of the ground floor of an invented research building. The entrance is at the bottom in the middle. Just inside is the reception desk with a star: you are here, facing a long corridor that runs straight up. On the left of the corridor, first comes the cafeteria and then the library. On the right, first comes the lift and then the toilets, opposite the library. At the end of the corridor is the conference room. A separate strip below the plan shows the first floor, one level up by the lift, where the laboratory is." style="max-width:100%;font-size:32px">
   <rect x="20" y="20" width="760" height="660" fill="#fbf8f1" stroke="#1f2933" stroke-width="4"/>
   <rect x="300" y="140" width="200" height="540" fill="#eee6d3"/>
   <rect x="20" y="20" width="760" height="120" fill="#e3eef8" stroke="#1f2933" stroke-width="3"/>
-  <foreignObject x="248" y="62" width="304" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:30px">$\text{la salle de conférence}$</div></foreignObject>
+  <foreignObject x="238" y="61" width="324" height="38" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:32px">$\text{la salle de conférence}$</div></foreignObject>
   <rect x="20" y="140" width="280" height="230" fill="#e6f2e1" stroke="#1f2933" stroke-width="3"/>
-  <foreignObject x="47" y="237" width="226" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:30px">$\text{la bibliothèque}$</div></foreignObject>
+  <foreignObject x="39.5" y="236" width="241" height="38" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:32px">$\text{la bibliothèque}$</div></foreignObject>
   <rect x="20" y="370" width="280" height="210" fill="#fdebd3" stroke="#1f2933" stroke-width="3"/>
-  <foreignObject x="70" y="457" width="180" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:30px">$\text{la cafétéria}$</div></foreignObject>
+  <foreignObject x="64.5" y="456" width="191" height="38" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:32px">$\text{la cafétéria}$</div></foreignObject>
   <rect x="500" y="140" width="280" height="260" fill="#eef0f3" stroke="#1f2933" stroke-width="3"/>
-  <foreignObject x="542.5" y="252" width="195" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:30px">$\text{les toilettes}$</div></foreignObject>
+  <foreignObject x="536" y="251" width="208" height="38" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:32px">$\text{les toilettes}$</div></foreignObject>
   <rect x="500" y="400" width="280" height="180" fill="#e9e4f4" stroke="#1f2933" stroke-width="3"/>
-  <foreignObject x="550" y="442" width="180" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:30px">$\text{l'ascenseur}$</div></foreignObject>
+  <foreignObject x="544.5" y="441" width="191" height="38" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:32px">$\text{l'ascenseur}$</div></foreignObject>
   <line x1="640" y1="548" x2="640" y2="515" stroke="#1f2933" stroke-width="4" stroke-linecap="butt"/>
   <path d="M640,500 L647,516 L633,516 Z" fill="#1f2933" stroke-linejoin="round"/>
   <line x1="300" y1="490" x2="300" y2="550" stroke="#eee6d3" stroke-width="8" stroke-linecap="butt"/>
@@ -190,17 +191,17 @@ the floor above it. In Finland that floor is the *toinen kerros*.
   <line x1="500" y1="270" x2="500" y2="330" stroke="#eee6d3" stroke-width="8" stroke-linecap="butt"/>
   <line x1="370" y1="140" x2="430" y2="140" stroke="#eee6d3" stroke-width="8" stroke-linecap="butt"/>
   <rect x="330" y="600" width="140" height="34" fill="#d9b26a" stroke="#1f2933" stroke-width="2"/>
-  <foreignObject x="326" y="558" width="148" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:30px">$\text{l'accueil}$</div></foreignObject>
+  <foreignObject x="321" y="557" width="158" height="38" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:32px">$\text{l'accueil}$</div></foreignObject>
   <path d="M400,644 L404,654.5 L415,655 L406.5,662 L409.5,673 L400,667 L390.5,673 L393.5,662 L385,655 L396,654.5 Z" fill="#c92a2a" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
   <line x1="350" y1="680" x2="450" y2="680" stroke="#fbf8f1" stroke-width="10" stroke-linecap="butt"/>
-  <foreignObject x="333.5" y="694" width="133" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:30px">$\text{l'entrée}$</div></foreignObject>
-  <foreignObject x="326" y="312" width="148" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:30px;color:#6b7480">$\text{le couloir}$</div></foreignObject>
+  <foreignObject x="329.5" y="693" width="141" height="38" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:32px">$\text{l'entrée}$</div></foreignObject>
+  <foreignObject x="321" y="311" width="158" height="38" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:32px">$\text{le couloir}$</div></foreignObject>
   <rect x="20" y="770" width="760" height="150" fill="#f4f0fa" stroke="#1f2933" stroke-width="3"/>
-  <foreignObject x="40" y="782" width="226" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:30px;color:#6b7480">$\text{au premier étage}$</div></foreignObject>
+  <foreignObject x="40" y="781" width="241" height="38" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:32px;color:#6b7480">$\text{au premier étage}$</div></foreignObject>
   <rect x="500" y="770" width="280" height="150" fill="#e9e4f4" stroke="#1f2933" stroke-width="3"/>
-  <foreignObject x="550" y="827" width="180" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:30px">$\text{l'ascenseur}$</div></foreignObject>
+  <foreignObject x="544.5" y="826" width="191" height="38" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:32px">$\text{l'ascenseur}$</div></foreignObject>
   <rect x="40" y="826" width="420" height="80" fill="#e1f0f5" stroke="#1f2933" stroke-width="2.5"/>
-  <foreignObject x="144.5" y="848" width="211" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:30px">$\text{le laboratoire}$</div></foreignObject>
+  <foreignObject x="138" y="847" width="224" height="38" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:32px">$\text{le laboratoire}$</div></foreignObject>
 </svg>
 
 <div class="fx" data-fx="say" id="fx-say-directions"><script type="application/json">{"phrases": [{"fr": "Excusez-moi, madame. Je cherche la bibliothèque.", "en": "Excuse me, madam. I am looking for the library.", "tip": "*eks-ky-ze-MWA*: *{fr}oi{/fr}* sounds like *wa*. *{fr}Bibliothèque{/fr}*: *bi-bli-jo-TÈK*."}, {"fr": "C'est à gauche, au bout du couloir.", "en": "It is on the left, at the end of the corridor.", "tip": "*sè-ta GOŠ, o bu dy ku-LWAR*: *{fr}au{/fr}* is an *o*."}, {"fr": "Le laboratoire est au premier étage.", "en": "The laboratory is on the first floor.", "tip": "*prö-mjè-re-TAŽ*: the *r* of *{fr}premier{/fr}* is linked to *{fr}étage{/fr}*."}]}</script></div>

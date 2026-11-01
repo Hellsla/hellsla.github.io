@@ -29,5 +29,11 @@ Map: positions from latitude and longitude (ITER 43.704° N 5.765° E from `faci
 
 ## Shared issues (not edited)
 - `templates/site.css` line 326: below 48 rem `th,td{hyphens:auto}` hyphenates French words inside table cells (e.g. *choco-lat*, *sand-wich* in a first version of the café menu). Worked around in the units: hyphenated French words in `lang="fr"` spans are wrapped in `.nobr`, and wide tables were turned into two columns. Proposed fix: `[lang=fr] td, td[lang=fr], table[lang=fr] td{hyphens:manual}`.
-- `assets/units/fy14/fx/say.js`: no listening mode that hides the French text. A dictation (hear a price, write it) is therefore done in pairs: one partner plays the line, the other does not look. Proposed: an optional `"hide": true` that shows only *Listen* buttons and reveals the text on demand.
 - `templates/inquiry.js` reflection list: the quoted prediction prompts end with "Commit now; the theory summary will show you", which reads oddly after the reveal (already noted in the pilot reviews).
+
+## Fixes after review (2026-11-01)
+- WEST: "1,337 seconds (over 22 minutes), which the CEA called a world record for plasma duration: 25 % longer than China's EAST tokamak had managed a few weeks before" (TRIAM-1M held a 5 h plasma in 2003).
+- CEA: nine centres (cea.fr, 2026), 21,763 employees (2023) in the source notes; the iter.org 2024 baseline PDF cited; EDF feedback corrected (EDF has its own R&D labs).
+- pred-who asks for a reason from the names; role cards are four `fold` activities (*Visitor only*, *Receptionist only*, *Researcher only*); gap distractor *gentils*.
+- Visual: plan labels 32 units (about 14.3 px at 390), *le couloir* in ink; map: *le Rhône* beside its line, *la Durance* above the river's middle, the lagoon labelled *l'étang de Berre* and added to the aria-label; *rez-de-chaussée* in the source note tagged.
+- Checks rerun: `units.py check` (29 units ok), build, `check_layout` 360/1280 OK, screenshots, Playwright (all tasks, wrong-then-right component answers) OK.

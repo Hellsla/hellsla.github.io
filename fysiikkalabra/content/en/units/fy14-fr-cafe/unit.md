@@ -159,14 +159,14 @@ for practice.
 A visit to a café follows a simple order, and each step has its own phrase.
 
 1. **Greet.** When the waiter comes, say <span lang="fr">Bonjour, madame</span> or <span lang="fr">Bonjour, monsieur</span> before anything else.
-   Call a waiter with <span lang="fr">S'il vous plaît !</span> or <span lang="fr"><span class="nobr">Excusez-moi</span> !</span>, never with *<span lang="fr">Garçon !</span>*: today it sounds rude.
+   Call a waiter with <span lang="fr">S'il vous plaît !</span> or <span lang="fr"><span class="nobr">Excusez-moi</span> !</span>, not with *<span lang="fr">Garçon !</span>*: it is old-fashioned, and many waiters find it rude.
 2. **Order.** The waiter asks <span lang="fr">Vous avez choisi ?</span> or <span lang="fr">Vous désirez ?</span>, and you answer with
    **<span lang="fr">Je voudrais …</span>** (I would like) or **<span lang="fr">Je vais prendre …</span>** (I'll have), and <span lang="fr">s'il vous plaît</span>.
    <span lang="fr">Et avec ça ?</span> means *anything else?*
 3. **Ask.** <span lang="fr"><span class="nobr">Qu'est-ce</span> que vous avez comme sandwichs ?</span> (What kind of sandwiches do you have?), <span lang="fr"><span class="nobr">Qu'est-ce</span> qu'il y a dans la quiche ?</span>
    (What is in the quiche?), <span lang="fr">C'est combien, le <span class="nobr">croque-monsieur</span> ?</span>
-4. **Ask for the bill.** In France the waiter does not hurry you: you may sit for as long as you like, and the bill
-   usually comes when you ask for it: **<span lang="fr">L'addition, s'il vous plaît.</span>**
+4. **Ask for the bill.** In France the waiter usually does not hurry you, and the bill often comes only when you
+   ask for it: **<span lang="fr">L'addition, s'il vous plaît.</span>**
 5. **Pay and thank.** <span lang="fr">Je peux payer par carte ?</span> or pay in cash (<span lang="fr">en espèces</span>). The service charge is already
    included in French prices by law (<span lang="fr">service compris</span>), so a tip is not required; many people simply round up
    a small bill: <span lang="fr">Gardez la monnaie.</span> (Keep the change.) Then <span lang="fr">Merci, bonne journée !</span> and <span lang="fr">Au revoir !</span>

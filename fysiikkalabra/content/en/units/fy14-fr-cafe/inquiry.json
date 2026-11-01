@@ -4,10 +4,10 @@
  "learn": [
   "order drinks and food politely in a French café.",
   "ask what there is, what is in a dish and what it costs, and understand the waiter's answers.",
-  "ask for the bill, pay and thank in a role-play without a script."
+  "pay, thank and hold a whole café conversation in a role-play without a script."
  ],
  "prior": [
-  "Greetings, *tu* and *vous* (chapter *Bonjour ! Introducing yourself*)",
+  "Greetings, *<span lang=\"fr\">tu</span>* and *<span lang=\"fr\">vous</span>* (chapter *Bonjour ! Introducing yourself*)",
   "Prices in euros (chapter *Numbers and prices*)"
  ],
  "activities": [
@@ -29,11 +29,11 @@
    "stage": "herata",
    "type": "explain",
    "title": "Think about it: a café visit step by step",
-   "prompt": "List the steps of a café visit, from the moment you sit down to the moment you leave. How does it go in a Finnish café: do you order at the counter or at the table, and when do you pay? Then write every French café word you already know (drinks, food, phrases).",
+   "prompt": "List the steps of a café visit, from the moment you sit down to the moment you leave. How does it go in a Finnish café: do you order at the counter or at the table? Then write every French café word you already know (drinks, food, phrases).",
    "pair": "Discuss with a partner for three minutes, then write your list together.",
-   "model": "Steps: sit down and read the menu, greet the waiter, order drinks and food, ask about anything we do not understand, eat, ask for the bill, pay, thank and say goodbye. In many Finnish cafés we order and pay at the counter first and carry our own tray; at a French café terrace the waiter usually takes the order at the table and we pay at the end. French words we know: <span lang=\"fr\">café</span>, <span lang=\"fr\">croissant</span>, <span lang=\"fr\">crêpe</span>, <span lang=\"fr\">baguette</span>, <span lang=\"fr\"><span class=\"nobr\">croque-monsieur</span></span>, <span lang=\"fr\">bon appétit</span>, <span lang=\"fr\">merci</span>, <span lang=\"fr\">s'il vous plaît</span>.",
+   "model": "Steps: sit down and read the menu, greet the waiter, order drinks and food, ask about anything we do not understand, eat, thank and say goodbye. In many Finnish cafés we order at the counter and carry our own tray; at a French café terrace the waiter usually takes the order at the table. French words we know: <span lang=\"fr\">café</span>, <span lang=\"fr\">croissant</span>, <span lang=\"fr\">crêpe</span>, <span lang=\"fr\">baguette</span>, <span lang=\"fr\"><span class=\"nobr\">croque-monsieur</span></span>, <span lang=\"fr\">bon appétit</span>, <span lang=\"fr\">merci</span>, <span lang=\"fr\">s'il vous plaît</span>.",
    "criteria": [
-    "We list the steps in a sensible order: greet, order, ask, eat, bill, pay, thank.",
+    "We list the steps in a sensible order: greet, order, ask, eat, thank.",
     "We compare at least one step with a Finnish café.",
     "We list some French café words."
    ]
@@ -60,7 +60,7 @@
     },
     {
      "text": "<span lang=\"fr\">Garçon ! Un café, s'il vous plaît.</span>",
-     "feedback": "<span lang=\"fr\">Garçon</span> (boy) was used to call waiters long ago, and today it sounds rude. Answer his greeting: <span lang=\"fr\">Bonjour. Un café, s'il vous plaît.</span>"
+     "feedback": "<span lang=\"fr\">Garçon</span> (boy) was once the usual way to call a waiter; today many people find it old-fashioned or rude. Answer his greeting: <span lang=\"fr\">Bonjour. Un café, s'il vous plaît.</span>"
     },
     {
      "text": "<span lang=\"fr\">Salut ! Tu me donnes un café ?</span>",
@@ -73,24 +73,24 @@
    "stage": "ennusta",
    "type": "choice",
    "title": "Prediction 2: the bill",
-   "prompt": "You have finished eating, and your bus leaves soon. How do you get the bill at a French café terrace? Commit now; the theory summary will show you.",
+   "prompt": "You finished eating ten minutes ago, and the waiter has not brought the bill. Your bus leaves soon. What is the best thing to do? Commit now; the theory summary will show you.",
    "justify": true,
    "reveal": {
     "after": "theory-steps"
    },
    "choices": [
     {
-     "text": "Call the waiter and ask for *<span lang=\"fr\">l'addition</span>*.",
+     "text": "Ask the waiter for *<span lang=\"fr\">l'addition</span>*.",
      "correct": true,
-     "feedback": "Right. The waiter does not hurry you, so the bill usually comes when you ask: <span lang=\"fr\">L'addition, s'il vous plaît.</span>"
+     "feedback": "Right. The waiter usually does not hurry you, and the bill often comes only when you ask for it: <span lang=\"fr\">L'addition, s'il vous plaît.</span>"
     },
     {
-     "text": "Wait: the bill comes when the plates go.",
-     "feedback": "In France you can sit at your table for as long as you like, so the waiter usually waits until you ask: <span lang=\"fr\">L'addition, s'il vous plaît.</span> If you only wait, you may miss your bus."
+     "text": "Wait: the waiter will bring it soon.",
+     "feedback": "Perhaps, but the waiter usually does not hurry you, and the bill often comes only when you ask for it: <span lang=\"fr\">L'addition, s'il vous plaît.</span> If you only wait, you may miss your bus."
     },
     {
-     "text": "Pay at the counter before you order.",
-     "feedback": "That is how many Finnish cafés work. At a French café terrace the waiter takes your order at the table, and you pay at the end: <span lang=\"fr\">L'addition, s'il vous plaît.</span>"
+     "text": "Go to the kitchen to find the waiter.",
+     "feedback": "Customers do not go into the kitchen. Catch the waiter's eye from your table, or say <span lang=\"fr\"><span class=\"nobr\">Excusez-moi</span> !</span> when he passes, and ask: <span lang=\"fr\">L'addition, s'il vous plaît.</span>"
     },
     {
      "text": "Leave the money on the table and go.",
@@ -110,7 +110,7 @@
    "stage": "tutki",
    "type": "text",
    "title": "Listen: the phrases of a café visit",
-   "text": "Listen to each phrase, first slowly and then at normal speed, and repeat it aloud. The hints in italics use Finnish letters: capitals show the stressed syllable, and *õ*, *ã* and *ẽ* are nasal vowels; *č* is the *ch* of English *church*.\n\n<div class=\"fx\" data-fx=\"say\" id=\"fx-say-cafe\"><script type=\"application/json\">{\"phrases\": [{\"fr\": \"Bonjour ! Vous avez choisi ?\", \"en\": \"Hello! Have you chosen? (the waiter)\", \"tip\": \"*vu-za-ve šwa-ZI*: the liaison *{fr}vous‿avez{/fr}* gives a *z*.\"}, {\"fr\": \"Je voudrais un café crème, s'il vous plaît.\", \"en\": \"I would like a coffee with milk, please.\", \"tip\": \"*žö vu-DRÈ*: *{fr}-ais{/fr}* is an open *è*.\"}, {\"fr\": \"Je vais prendre un croque-monsieur.\", \"en\": \"I'll have a croque-monsieur (a toasted ham and cheese sandwich).\", \"tip\": \"*žö vè PRÃDR*: *{fr}prendre{/fr}* starts with a nasal *ã*.\"}, {\"fr\": \"Et avec ça ?\", \"en\": \"Anything else? (literally: and with that?)\", \"tip\": \"*e a-vèk SA*\"}, {\"fr\": \"Qu'est-ce que vous avez comme sandwichs ?\", \"en\": \"What kind of sandwiches do you have?\", \"tip\": \"*kès-kö vu-za-ve kom sãd-WIČ*: *{fr}qu'est-ce que{/fr}* is said as two short syllables.\"}, {\"fr\": \"Qu'est-ce qu'il y a dans la quiche ?\", \"en\": \"What is in the quiche?\", \"tip\": \"*kès-ki-LJA dã la KIŠ*\"}, {\"fr\": \"C'est combien, le croque-monsieur ?\", \"en\": \"How much is the croque-monsieur?\", \"tip\": \"*sè kõ-BJẼ*\"}, {\"fr\": \"Tu prends quoi ?\", \"en\": \"What are you having? (to your friend, tu)\", \"tip\": \"*ty prã KWA*: the *d* and *s* of *{fr}prends{/fr}* are silent.\"}, {\"fr\": \"L'addition, s'il vous plaît.\", \"en\": \"The bill, please.\", \"tip\": \"*la-di-SJÕ*\"}, {\"fr\": \"Je peux payer par carte ?\", \"en\": \"Can I pay by card?\", \"tip\": \"*žö pö pe-JE par KART*\"}, {\"fr\": \"Ça fait huit euros trente.\", \"en\": \"That comes to eight euros thirty. (the waiter)\", \"tip\": \"*sa fè yi-tö-RO TRÃT*: the *t* of *{fr}huit{/fr}* is linked to *{fr}euros{/fr}*.\"}, {\"fr\": \"Gardez la monnaie.\", \"en\": \"Keep the change.\", \"tip\": \"*gar-DE la mo-NÈ*\"}, {\"fr\": \"Merci, bonne journée !\", \"en\": \"Thank you, have a nice day!\", \"tip\": \"*bon žur-NE*: in *{fr}bonne{/fr}* the *n* is heard, because an *e* follows.\"}]}</script></div>"
+   "text": "Listen to each phrase, first slowly and then at normal speed, and repeat it aloud. The hints in italics use Finnish letters: capitals show the stressed syllable, and *õ*, *ã* and *ẽ* are nasal vowels; *č* is the *ch* of English *church*.\n\n<div class=\"fx\" data-fx=\"say\" id=\"fx-say-cafe\"><script type=\"application/json\">{\"phrases\": [{\"fr\": \"Bonjour ! Vous avez choisi ?\", \"en\": \"Hello! Have you chosen? (the waiter)\", \"tip\": \"*vu-za-ve šwa-ZI*: the liaison *{fr}vous‿avez{/fr}* gives a *z*.\"}, {\"fr\": \"Je voudrais un café crème, s'il vous plaît.\", \"en\": \"I would like a coffee with milk, please.\", \"tip\": \"*žö vu-DRÈ*: *{fr}-ais{/fr}* is an open *è*.\"}, {\"fr\": \"Je vais prendre un croque-monsieur.\", \"en\": \"I'll have a croque-monsieur (a toasted ham and cheese sandwich).\", \"tip\": \"*žö vè PRÃDR*: *{fr}prendre{/fr}* has a nasal *ã*.\"}, {\"fr\": \"Et avec ça ?\", \"en\": \"Anything else? (literally: and with that?)\", \"tip\": \"*e a-vèk SA*\"}, {\"fr\": \"Qu'est-ce que vous avez comme sandwichs ?\", \"en\": \"What kind of sandwiches do you have?\", \"tip\": \"*kès-kö vu-za-ve kom sãd-WIČ*: *{fr}qu'est-ce que{/fr}* is said as two short syllables.\"}, {\"fr\": \"Qu'est-ce qu'il y a dans la quiche ?\", \"en\": \"What is in the quiche?\", \"tip\": \"*kès-ki-LJA dã la KIŠ*\"}, {\"fr\": \"C'est combien, le croque-monsieur ?\", \"en\": \"How much is the croque-monsieur?\", \"tip\": \"*sè kõ-BJẼ*\"}, {\"fr\": \"Tu prends quoi ?\", \"en\": \"What are you having? (to your friend, tu)\", \"tip\": \"*ty prã KWA*: the *d* and *s* of *{fr}prends{/fr}* are silent.\"}, {\"fr\": \"L'addition, s'il vous plaît.\", \"en\": \"The bill, please.\", \"tip\": \"*la-di-SJÕ*\"}, {\"fr\": \"Je peux payer par carte ?\", \"en\": \"Can I pay by card?\", \"tip\": \"*žö pö pe-JE par KART*\"}, {\"fr\": \"Ça fait huit euros trente.\", \"en\": \"That comes to eight euros thirty. (the waiter)\", \"tip\": \"*sa fè yi-tö-RO TRÃT*: the *t* of *{fr}huit{/fr}* is linked to *{fr}euros{/fr}*.\"}, {\"fr\": \"Gardez la monnaie.\", \"en\": \"Keep the change.\", \"tip\": \"*gar-DE la mo-NÈ*\"}, {\"fr\": \"Merci, bonne journée !\", \"en\": \"Thank you, have a nice day!\", \"tip\": \"*bon žur-NE*: in *{fr}bonne{/fr}* the *n* is heard, because an *e* follows.\"}]}</script></div>"
   },
   {
    "id": "dialogue",
@@ -199,7 +199,7 @@
    "stage": "sovella",
    "type": "text",
    "title": "Complete the order",
-   "text": "<div class=\"fx\" data-fx=\"gapfill\" id=\"fx-gap-cafe\"><script type=\"application/json\">{\"prompt\": \"Aino orders for herself and her friend Eetu. Choose the word that fits each gap, then press *Check*.\", \"lang\": \"fr\", \"lines\": [{\"text\": \"Serveuse : Bonjour ! Vous [[avez|as|ont]] choisi ?\", \"feedback\": \"The waitress speaks to two customers, so she uses *{fr}vous{/fr}*: *{fr}vous avez{/fr}*. *{fr}Tu as{/fr}* is for one friend.\", \"en\": \"Hello! Have you chosen?\"}, {\"text\": \"Aino : Oui. Je [[voudrais|veux|voudrez]] un thé, s'il vous plaît.\", \"feedback\": \"*{fr}Je voudrais{/fr}* (I would like) is the polite way to order. *{fr}Je veux{/fr}* (I want) sounds like a demand.\", \"en\": \"Yes. I would like a tea, please.\"}, {\"text\": \"Aino : Eetu, tu [[prends|prenez|prendre]] quoi ?\", \"feedback\": \"Aino speaks to her friend, so she says *{fr}tu prends{/fr}*. *{fr}Prenez{/fr}* goes with *{fr}vous{/fr}*.\", \"en\": \"Eetu, what are you having?\"}, {\"text\": \"Eetu : Pour moi, un croissant, [[s'il vous plaît|s'il te plaît|merci beaucoup]].\", \"feedback\": \"Eetu orders from the waitress, an adult he does not know: *{fr}s'il vous plaît{/fr}*. *{fr}S'il te plaît{/fr}* is for a friend.\", \"en\": \"For me, a croissant, please.\"}, {\"text\": \"Aino : [[Qu'est-ce qu'il y a|Combien|Où est]] dans la tarte ?\", \"feedback\": \"To ask what is in a dish: *{fr}Qu'est-ce qu'il y a dans …?{/fr}* *{fr}Combien{/fr}* asks a price, *{fr}où{/fr}* asks where.\", \"en\": \"What is in the tart?\"}, {\"text\": \"Serveuse : Des pommes. Elle coûte quatre euros [[cinquante|quinze|cinq]].\", \"feedback\": \"The menu says 4,50 €: *{fr}quatre euros cinquante{/fr}*. *{fr}Quinze{/fr}* is 15 and *{fr}cinq{/fr}* is 5.\", \"en\": \"Apples. It costs four euros fifty.\"}, {\"text\": \"Aino : [[L'addition|La carte|Le menu]], s'il vous plaît.\", \"feedback\": \"At the end you ask for *{fr}l'addition{/fr}* (the bill). *{fr}La carte{/fr}* is the menu, which you ask for at the start.\", \"en\": \"The bill, please.\"}, {\"text\": \"Aino : Je peux payer [[par|en|avec la]] carte ?\", \"feedback\": \"*{fr}Payer par carte{/fr}* (by card), but *{fr}payer en espèces{/fr}* (in cash).\", \"en\": \"Can I pay by card?\"}]}</script></div>"
+   "text": "<div class=\"fx\" data-fx=\"gapfill\" id=\"fx-gap-cafe\"><script type=\"application/json\">{\"prompt\": \"Aino orders for herself and her friend Eetu. Choose the word that fits each gap, then press *Check*.\", \"lang\": \"fr\", \"lines\": [{\"text\": \"Serveuse : Bonjour ! Vous [[avez|as|ont]] choisi ?\", \"feedback\": \"The waitress speaks to two customers, so she uses *{fr}vous{/fr}*: *{fr}vous avez{/fr}*. *{fr}Tu as{/fr}* is for one friend.\", \"en\": \"Hello! Have you chosen?\"}, {\"text\": \"Aino : Oui. Je [[voudrais|veux|voudrez]] un thé, s'il vous plaît.\", \"feedback\": \"*{fr}Je voudrais{/fr}* (I would like) is the polite way to order. *{fr}Je veux{/fr}* (I want) sounds like a demand.\", \"en\": \"Yes. I would like a tea, please.\"}, {\"text\": \"Aino : Eetu, tu [[prends|prenez|prendre]] quoi ?\", \"feedback\": \"Aino speaks to her friend, so she says *{fr}tu prends{/fr}*. *{fr}Prenez{/fr}* goes with *{fr}vous{/fr}*.\", \"en\": \"Eetu, what are you having?\"}, {\"text\": \"Eetu : Pour moi, un croissant, [[s'il vous plaît|s'il te plaît|de rien]].\", \"feedback\": \"Eetu orders from the waitress, an adult he does not know: *{fr}s'il vous plaît{/fr}*. *{fr}S'il te plaît{/fr}* is for a friend.\", \"en\": \"For me, a croissant, please.\"}, {\"text\": \"Aino : [[Qu'est-ce qu'il y a|Combien|Où est]] dans la tarte ?\", \"feedback\": \"To ask what is in a dish: *{fr}Qu'est-ce qu'il y a dans …?{/fr}* *{fr}Combien{/fr}* asks a price, *{fr}où{/fr}* asks where.\", \"en\": \"What is in the tart?\"}, {\"text\": \"Serveuse : Des pommes. Elle coûte quatre euros [[cinquante|quinze|cinq]].\", \"feedback\": \"The menu says 4,50 €: *{fr}quatre euros cinquante{/fr}*. *{fr}Quinze{/fr}* is 15 and *{fr}cinq{/fr}* is 5.\", \"en\": \"Apples. It costs four euros fifty.\"}, {\"text\": \"Aino : [[L'addition|La carte|Le menu]], s'il vous plaît.\", \"feedback\": \"At the end you ask for *{fr}l'addition{/fr}* (the bill). *{fr}La carte{/fr}* is the menu, which you ask for at the start.\", \"en\": \"The bill, please.\"}, {\"text\": \"Aino : Je peux payer [[par|en|à la]] carte ?\", \"feedback\": \"*{fr}Payer par carte{/fr}* (by card), but *{fr}payer en espèces{/fr}* (in cash).\", \"en\": \"Can I pay by card?\"}]}</script></div>"
   },
   {
    "id": "match",
@@ -213,7 +213,39 @@
    "stage": "sovella",
    "type": "text",
    "title": "Role-play: from script to free speaking",
-   "text": "Work in pairs, with the menu above. Each round gives you less support.\n\n**Round 1 (cues):** perform the dialogue *A lunch at the café* again in step 3 (*Perform*), from the English cues only. Change the drink and the dish, and the total with them.\n\n**Rounds 2 and 3 (role cards):** one partner is the customer, the other the waiter. Read only your own card, do not show it, and speak without writing first. The other partner has information that you do not have, so listen and react. Swap the roles in round 3.\n\n<div class=\"wordbank\"><h4>Round 2 · Customer card</h4><p>You are hungry, but you do not eat meat. You have 10 € and want a hot drink too. Ask what is in at least one dish and ask one price before you order. Pay by card.</p></div><div class=\"wordbank\"><h4>Round 2 · Waiter card</h4><p>Today there are no more croissants (<span lang=\"fr\">Il n'y a plus de croissants.</span>). The quiche has vegetables and cheese; the croque-monsieur has ham and cheese. Answer the customer's questions, give the total and take the card.</p></div><div class=\"wordbank\"><h4>Round 3 · Customer card</h4><p>You order for two: you and your friend (your partner's imaginary friend). Order two different drinks and one dessert to share. Ask the price of one dessert. Pay in cash and let the waiter keep the change.</p></div><div class=\"wordbank\"><h4>Round 3 · Waiter card</h4><p>The card reader does not work today: cash only (<span lang=\"fr\">Désolé, seulement en espèces.</span>). Recommend a dessert (<span lang=\"fr\">Je vous conseille la tarte aux pommes.</span>). Give the total and thank the customers.</p></div><div class=\"wordbank\"><h4>Word bank</h4><p><span lang=\"fr\">Bonjour, madame / monsieur</span>, <span lang=\"fr\">Vous avez choisi ?</span>, <span lang=\"fr\">Je voudrais …</span>, <span lang=\"fr\">Je vais prendre …</span>, <span lang=\"fr\">Et avec ça ?</span>, <span lang=\"fr\"><span class=\"nobr\">Qu'est-ce</span> que vous avez comme … ?</span>, <span lang=\"fr\"><span class=\"nobr\">Qu'est-ce</span> qu'il y a dans … ?</span>, <span lang=\"fr\">C'est combien, … ?</span>, <span lang=\"fr\">Il n'y a plus de …</span>, <span lang=\"fr\">L'addition, s'il vous plaît</span>, <span lang=\"fr\">Ça fait …</span>, <span lang=\"fr\">par carte</span>, <span lang=\"fr\">en espèces</span>, <span lang=\"fr\">Gardez la monnaie</span>, <span lang=\"fr\">Merci, bonne journée</span></p></div><div class=\"wordbank\"><h4>Sentence starters</h4><ul><li><span lang=\"fr\">Bonjour, monsieur. Je voudrais …, s'il vous plaît.</span></li><li><span lang=\"fr\"><span class=\"nobr\">Qu'est-ce</span> qu'il y a dans le <span class=\"nobr\">croque-monsieur</span> ?</span></li><li><span lang=\"fr\">Ah, je ne mange pas de viande. Alors, je vais prendre …</span></li><li><span lang=\"fr\"><span class=\"nobr\">Excusez-moi</span> ! L'addition, s'il vous plaît.</span></li><li><span lang=\"fr\">Je peux payer par carte ?</span></li><li><span lang=\"fr\">Merci beaucoup. Au revoir !</span></li></ul><p>The waiter: <span lang=\"fr\">Désolé, il n'y a plus de …</span>, <span lang=\"fr\">Je vous conseille …</span>, <span lang=\"fr\">Ça fait … euros …</span>, <span lang=\"fr\">Bon appétit !</span></p></div>"
+   "text": "Work in pairs, with the menu above. Each round gives you less support.\n\n**Round 1 (cues):** perform the dialogue *A lunch at the café* again in step 3 (*Perform*), from the English cues only. Change the drink and the dish, and the total with them.\n\n**Rounds 2 and 3 (role cards):** one partner is the customer, the other the waiter. Open only your own card below (*Customer only* or *Waiter only*), do not show it, and speak without writing first. The other partner has information that you do not have, so listen and react. Swap the roles in round 3.\n\n<div class=\"wordbank\"><h4>Word bank</h4><p><span lang=\"fr\">Bonjour, madame / monsieur</span>, <span lang=\"fr\">Vous avez choisi ?</span>, <span lang=\"fr\">Je voudrais …</span>, <span lang=\"fr\">Je vais prendre …</span>, <span lang=\"fr\">Et avec ça ?</span>, <span lang=\"fr\"><span class=\"nobr\">Qu'est-ce</span> que vous avez comme … ?</span>, <span lang=\"fr\"><span class=\"nobr\">Qu'est-ce</span> qu'il y a dans … ?</span>, <span lang=\"fr\">C'est combien, … ?</span>, <span lang=\"fr\">L'addition, s'il vous plaît</span>, <span lang=\"fr\">Ça fait …</span>, <span lang=\"fr\">par carte</span>, <span lang=\"fr\">en espèces</span>, <span lang=\"fr\">Gardez la monnaie</span>, <span lang=\"fr\">Merci, bonne journée</span></p></div><div class=\"wordbank\"><h4>Sentence starters</h4><ul><li><span lang=\"fr\">Bonjour, monsieur. Je voudrais …, s'il vous plaît.</span></li><li><span lang=\"fr\">C'est combien, la tarte ?</span></li><li><span lang=\"fr\"><span class=\"nobr\">Excusez-moi</span> ! L'addition, s'il vous plaît.</span></li><li><span lang=\"fr\">Je peux payer par carte ?</span></li><li><span lang=\"fr\">Merci beaucoup. Au revoir !</span></li></ul><p>The waiter: <span lang=\"fr\">Ça fait … euros …</span>, <span lang=\"fr\">Bon appétit !</span>, <span lang=\"fr\">Je vous apporte ça tout de suite.</span></p></div>"
+  },
+  {
+   "id": "card-2c",
+   "stage": "sovella",
+   "type": "text",
+   "fold": "Customer only",
+   "title": "Round 2: customer card",
+   "text": "You are hungry, but you do not eat meat. You have 10 € and want a hot drink too. Ask what is in at least one dish and ask one price before you order. Pay by card.\n\nUseful: <span lang=\"fr\"><span class=\"nobr\">Qu'est-ce</span> qu'il y a dans le <span class=\"nobr\">croque-monsieur</span> ?</span> <span lang=\"fr\">Ah, je ne mange pas de viande. Alors, je vais prendre …</span>"
+  },
+  {
+   "id": "card-2w",
+   "stage": "sovella",
+   "type": "text",
+   "fold": "Waiter only",
+   "title": "Round 2: waiter card",
+   "text": "Today there are no more croissants: <span lang=\"fr\">Désolé, il n'y a plus de croissants.</span> The quiche has vegetables and cheese; the croque-monsieur has ham and cheese. Answer the customer's questions, give the total and take the card."
+  },
+  {
+   "id": "card-3c",
+   "stage": "sovella",
+   "type": "text",
+   "fold": "Customer only",
+   "title": "Round 3: customer card",
+   "text": "You order for two: you and your friend (your partner's imaginary friend). Order two different drinks and one dessert to share. Ask the price of one dessert. Pay in cash and let the waiter keep the change."
+  },
+  {
+   "id": "card-3w",
+   "stage": "sovella",
+   "type": "text",
+   "fold": "Waiter only",
+   "title": "Round 3: waiter card",
+   "text": "The card reader does not work today: cash only (<span lang=\"fr\">Désolé, seulement en espèces.</span>). Recommend a dessert (<span lang=\"fr\">Je vous conseille la tarte aux pommes.</span>). Give the total and thank the customers."
   },
   {
    "id": "roleplay",
@@ -251,8 +283,8 @@
      "feedback": "Yes. <span lang=\"fr\">C'est combien … ?</span> asks the price of one thing."
     },
     {
-     "text": "<span lang=\"fr\">Combien de quiches ?</span>",
-     "feedback": "This asks *how many quiches?*, a number, not a price. Ask <span lang=\"fr\">C'est combien, la quiche ?</span>"
+     "text": "<span lang=\"fr\">Il y a combien de quiches ?</span>",
+     "feedback": "This asks *how many quiches are there?*, a number, not a price. Ask <span lang=\"fr\">C'est combien, la quiche ?</span>"
     },
     {
      "text": "<span lang=\"fr\">Vous avez une quiche ?</span>",

@@ -28,5 +28,11 @@ Both texts were written for the unit (A2–B1, about 190 and 70 words); no sente
 
 ## Shared issues (not edited)
 - `templates/site.css` line 326: below 48 rem `th,td{hyphens:auto}` hyphenates French words inside table cells (e.g. *choco-lat*, *sand-wich* in a first version of the café menu). Worked around in the units: hyphenated French words in `lang="fr"` spans are wrapped in `.nobr`, and wide tables were turned into two columns. Proposed fix: `[lang=fr] td, td[lang=fr], table[lang=fr] td{hyphens:manual}`.
-- `assets/units/fy14/fx/say.js`: no listening mode that hides the French text. A dictation (hear a price, write it) is therefore done in pairs: one partner plays the line, the other does not look. Proposed: an optional `"hide": true` that shows only *Listen* buttons and reveals the text on demand.
 - `templates/inquiry.js` reflection list: the quoted prediction prompts end with "Commit now; the theory summary will show you", which reads oddly after the reveal (already noted in the pilot reviews).
+
+## Fixes after review (2026-11-01)
+- Article: the record is attributed to the CEA ("Selon le CEA, ils ont battu un record mondial de durée : c'est 25 % de plus que le record du tokamak chinois EAST, établi quelques semaines plus tôt"); the summary model and the true/false feedback follow.
+- Opening question is open ("How much of a French news text about fusion can you understand after a few weeks of French?"); learn goal 1 and the back-to-predictions prompt reworded; "about 200 words".
+- *battre* feedback ("are related to"); second text: "s'était engagée à offrir une scolarité bilingue à ces enfants"; a new read-aloud `say` task with four sentences from the article.
+- Visual: word endings use non-breaking hyphens (U+2011) in theory, table and feedback; no-break spaces between numbers and units; `.nobr` on *États-Unis*, *Saint-Paul-lez-Durance*, *Bouches-du-Rhône*; *vrai / faux / pas dans le texte* tagged French.
+- Checks rerun: `units.py check` (29 units ok), build, `check_layout` 360/1280 OK, screenshots, Playwright (all tasks, wrong-then-right component answers) OK.

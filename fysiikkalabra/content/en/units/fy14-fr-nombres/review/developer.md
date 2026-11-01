@@ -29,5 +29,11 @@ Receipt: 1,80 + 1,20 + 3,70 + 4,95 + 9,90 = 21,55 €. Market model: 4,90 + 1,20
 
 ## Shared issues (not edited)
 - `templates/site.css` line 326: below 48 rem `th,td{hyphens:auto}` hyphenates French words inside table cells (e.g. *choco-lat*, *sand-wich* in a first version of the café menu). Worked around in the units: hyphenated French words in `lang="fr"` spans are wrapped in `.nobr`, and wide tables were turned into two columns. Proposed fix: `[lang=fr] td, td[lang=fr], table[lang=fr] td{hyphens:manual}`.
-- `assets/units/fy14/fx/say.js`: no listening mode that hides the French text. A dictation (hear a price, write it) is therefore done in pairs: one partner plays the line, the other does not look. Proposed: an optional `"hide": true` that shows only *Listen* buttons and reveals the text on demand.
 - `templates/inquiry.js` reflection list: the quoted prediction prompts end with "Commit now; the theory summary will show you", which reads oddly after the reveal (already noted in the pilot reviews).
+
+## Fixes after review (2026-11-01)
+- Science/pedagogy: the double `mathify` in the generator wrapped maths twice in component feedback (`$$4 \cdot …`); fixed, all eight feedback strings render (Playwright now answers every match and gapfill wrong first and scans the feedback for raw `$`).
+- Pair listening uses the new `say` `"hide": true`, and the instruction says not to open the text before *Check*. Added the missing item B5 (84 €) to `fx-match-heardA`.
+- "Older English … (Lincoln, 1863)"; Sounds point 2 "21–29"; phone numbers from the reserved fictional ranges 06 39 98 … and 01 99 00 …; check-write model in the present tense (*je prends*); the correct `notice` option shortened.
+- Visual: row 97 of the 70–100 table no longer has `.nobr` (the table fits at 360 px); *euros*, *centimes*, *vous* in `prior` tagged French; check-3 retitled "Linking before a vowel".
+- Checks rerun: `units.py check` (29 units ok), build, `check_layout` 360/1280 OK, screenshots, Playwright (all tasks, wrong-then-right component answers) OK.

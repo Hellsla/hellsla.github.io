@@ -268,7 +268,7 @@ From 70 to 99, France counts with **twenties**, a little like the old English *f
 | 80 | <span lang="fr"><span class="nobr">quatre-vingts</span></span> | $4 \cdot 20$ |
 | 81 | <span lang="fr"><span class="nobr">quatre-vingt-un</span></span> | $4 \cdot 20 + 1$ (no *et*) |
 | 90 | <span lang="fr"><span class="nobr">quatre-vingt-dix</span></span> | $4 \cdot 20 + 10$ |
-| 97 | <span lang="fr"><span class="nobr">quatre-vingt-dix-sept</span></span> | $4 \cdot 20 + 17$ |
+| 97 | <span class="wrap" lang="fr">quatre-vingt-dix-sept</span> | $4 \cdot 20 + 17$ |
 | 100 | <span lang="fr">cent</span> | |
 
 So from 70 and from 90 you count on with the numbers 10–19. *<span lang="fr"><span class="nobr">Quatre-vingts</span></span>* has an *s* only when no number follows it.
@@ -299,7 +299,7 @@ The hints in italics use Finnish letters, as in the first lesson: capitals show 
 1. **Final consonants.** *<span lang="fr">Six</span>* and *<span lang="fr">dix</span>* end in a clear *s* when they stand alone (*SIS*, *DIS*), but the *s* is
    silent before a consonant: <span lang="fr">six croissants</span> *si krwa-SÃ*. *<span lang="fr">Sept</span>* is *SET* and *<span lang="fr">huit</span>* is *YIT*: the French
    *u* is the Finnish *y*.
-2. **<span lang="fr">Vingt</span> and <span lang="fr">cent</span>.** The final *gt* and *t* are silent: *VẼ*, *SÃ*. In 22–29 the *t* of *<span lang="fr">vingt</span>* is heard
+2. **<span lang="fr">Vingt</span> and <span lang="fr">cent</span>.** The final *gt* and *t* are silent: *VẼ*, *SÃ*. In 21–29 the *t* of *<span lang="fr">vingt</span>* is heard
    (*vẽt-DÖ*), but never in 81–99: <span lang="fr"><span class="nobr">quatre-vingt-un</span></span> is *ka-trö-vẽ-Ẽ*.
 3. **Liaison with <span lang="fr">euros</span>.** *<span lang="fr">Euro</span>* starts with a vowel, so a silent final consonant is linked to it:
    <span lang="fr">deux euros</span> *dö-zö-RO*, <span lang="fr">trois euros</span> *trwa-zö-RO*, <span lang="fr">six euros</span> *si-zö-RO*, <span lang="fr">dix euros</span> *di-zö-RO*,
@@ -318,7 +318,7 @@ The hints in italics use Finnish letters, as in the first lesson: capitals show 
 | 80 | <span lang="fr"><span class="nobr">quatre-vingts</span></span>: 4 · 20, with *s* |
 | 81–89 | <span lang="fr"><span class="nobr">quatre-vingt-un</span></span> … <span lang="fr"><span class="nobr">quatre-vingt-neuf</span></span>: no *s*, no *et* |
 | 90–99 | <span lang="fr"><span class="nobr">quatre-vingt-dix</span></span> … <span lang="fr"><span class="nobr">quatre-vingt-dix-neuf</span></span>: $4 \cdot 20 + 10$ … $4 \cdot 20 + 19$ |
-| 2,50 € | <span lang="fr">deux euros cinquante</span>: *euros* in the middle |
-| 0,90 € | <span lang="fr"><span class="nobr">quatre-vingt-dix</span> centimes</span>: under one euro, *centimes* |
+| 2,50 € | <span lang="fr">deux euros cinquante</span>: *<span lang="fr">euros</span>* in the middle |
+| 0,90 € | <span lang="fr"><span class="nobr">quatre-vingt-dix</span> centimes</span>: under one euro, *<span lang="fr">centimes</span>* |
 | a price? | <span lang="fr">C'est combien ?</span> (one thing), <span lang="fr">Ça fait combien ?</span> (the total) |
 
