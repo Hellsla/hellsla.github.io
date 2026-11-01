@@ -130,7 +130,7 @@
       ],
       "vary": "t",
       "names": {
-        "laite": "laite",
+        "laite": "device",
         "Po": "input power P_o",
         "t": "time t"
       },
@@ -200,7 +200,7 @@
       ],
       "vary": "t",
       "names": {
-        "laite": "laite",
+        "laite": "device",
         "Po": "input power P_o",
         "t": "time t"
       },
@@ -242,7 +242,7 @@
       "optional": true,
       "values": {
         "laite": {
-          "lamppu": "hehkulamppu"
+          "lamppu": "incandescent lamp"
         }
       }
     },

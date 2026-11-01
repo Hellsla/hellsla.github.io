@@ -255,14 +255,14 @@ The sum includes all forms of energy, thermal energy too. When a skateboarder sl
   <foreignObject x="258.5" y="303.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{middle}$</div></foreignObject>
   <foreignObject x="477.5" y="303.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{end}$</div></foreignObject>
   <line x1="24" y1="164" x2="576" y2="164" stroke="#1f2933" stroke-width="2" stroke-linecap="butt" stroke-dasharray="8 6"/>
-  <foreignObject x="183.5" y="129.5" width="233" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{total energy} E = 800\,\text{J}$</div></foreignObject>
+  <foreignObject x="183.5" y="129.5" width="233" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{total energy } E = 800\,\text{J}$</div></foreignObject>
   <line x1="30" y1="292" x2="570" y2="292" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
   <rect x="120" y="348" width="20" height="20" fill="#1971c2" stroke="#1f2933" stroke-width="2"/>
   <foreignObject x="150" y="343.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$E_\text{p}$</div></foreignObject>
   <rect x="270" y="348" width="20" height="20" fill="#ffc078" stroke="#1f2933" stroke-width="2"/>
   <foreignObject x="300" y="343.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$E_\text{k}$</div></foreignObject>
   <rect x="420" y="348" width="20" height="20" fill="url(#fy21-hatch)" stroke="#1f2933" stroke-width="2"/>
-  <foreignObject x="450" y="343.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$E_\text{heat}$</div></foreignObject>
+  <foreignObject x="450" y="343.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$E_\text{thermal}$</div></foreignObject>
 </svg>
 
 ### Using up energy is changing energy
@@ -273,7 +273,7 @@ A skateboarder starts from rest at the edge of a half-pipe. At the edge her pote
 
 <!-- vaihe -->
 
-**Given and find.** At the start the potential energy is $E_\text{p} = 840\,\text{J}$ and the kinetic energy is zero, because the skateboarder is at rest. At the bottom the potential energy is zero and the kinetic energy is $E_\text{k} = 0.72\,\text{kJ}$. We want the mechanical energy $E_\text{thermal}$ that friction changes into thermal energy during the slide.
+**Given and find.** At the start the potential energy is $E_\text{p} = 840\,\text{J}$ and the kinetic energy is zero, because the skateboarder is at rest. At the bottom the potential energy is zero and the kinetic energy is $E_\text{k} = 0.72\,\text{kJ}$. We want the amount of mechanical energy $E_\text{thermal}$ that friction changes into thermal energy during the slide.
 
 <!-- vaihe -->
 

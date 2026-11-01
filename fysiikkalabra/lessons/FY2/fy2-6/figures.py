@@ -1,5 +1,6 @@
 """Figures of fy2-6 (scripts/figlib.py); `python scripts/figures.py fy2-6` writes them into lesson.md."""
 import math
+from figlib import translate, visible_len
 from figlib import (Fig, INK, MUTED, WHITE, RULE, RULE_LIGHT, HEAT, HEAT_LIGHT, GLASS, WATER, WATER_LIGHT, n)
 from figlib import ALUMINIUM, COLD_LIGHT, GOOD, GOOD_LIGHT, HOT_LIGHT, IRON, SAND_DARK, SAND_LIGHT
 import herolib as H
@@ -60,7 +61,11 @@ def plants():
             ("uraani", "reaktori, turbiini", True), ("polttoaine", "kattila, turbiini", True)]
     top, step, bh = 14, 66, 44
     f.rect(496, top, 88, step * 4 + bh, GLASS, INK, 3, 10)
-    f.tex(540, top + (step * 4 + bh) / 2, r"\text{sähkö}", "middle", size=24, w=80)
+    cy_e = top + (step * 4 + bh) / 2
+    if visible_len(translate(r"\text{sähkö}")) * 24 * 0.52 + 8 <= 80:     # the Finnish word fits across the narrow box
+        f.tex(540, cy_e, r"\text{sähkö}", "middle", size=24, w=80)
+    else:                                                                   # a longer word (en "electricity") runs up the box
+        f.body.append(f'<g transform="rotate(-90 540 {n(cy_e)})">'); f.tex(540, cy_e, r"\text{sähkö}", "middle", size=24, w=step * 4 + bh - 24); f.body.append("</g>")
     for i, (src, dev, gen) in enumerate(rows):
         y = top + step * i; cy = y + bh / 2
         f.rect(16, y, 132, bh, WHITE, INK, 2.5, 10)

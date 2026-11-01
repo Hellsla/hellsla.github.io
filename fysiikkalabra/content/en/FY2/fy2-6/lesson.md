@@ -166,7 +166,9 @@ A power plant does not produce energy out of nothing. It converts the energy of 
 
 <svg data-fig="plants" viewBox="0 0 600 366" role="img" aria-label="Schematic diagram: five ways of producing electricity. Falling water turns a water turbine and wind turns a rotor, and the shaft of each turns a generator G. Solar radiation hits a solar panel, which produces electricity directly without a generator. The nuclear energy of uranium heats steam in a reactor and the chemical energy of fuel heats steam in a boiler, and the steam turns a turbine and a generator. The grey arrows are the energy of the natural resource, the dark arrows are electricity, and from every plant an orange arrow points downwards: some of the energy ends up as heat in the surroundings. The figure is schematic; the length of the arrows does not show power." style="max-width:100%;font-size:24px">
   <rect x="496" y="14" width="88" height="308" rx="10" fill="#eef5f9" stroke="#1f2933" stroke-width="3"/>
-  <foreignObject x="500" y="153.5" width="80" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{electricity}$</div></foreignObject>
+  <g transform="rotate(-90 540 168)">
+  <foreignObject x="398" y="153.5" width="284" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{electricity}$</div></foreignObject>
+  </g>
   <rect x="16" y="14" width="132" height="44" rx="10" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
   <foreignObject x="20" y="21.5" width="124" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{water}$</div></foreignObject>
   <path d="M150,42 L160,42 L160,48 L174,36 L160,24 L160,30 L150,30 Z" fill="#6b7480" stroke-linejoin="round"/>
