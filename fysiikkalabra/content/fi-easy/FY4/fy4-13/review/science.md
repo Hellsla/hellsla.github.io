@@ -1,13 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 6925a89c1f6cb694
+CONTENT-HASH: b33f3070c074bb84
 
 ## Blocking
 
 ## Polish
-- Where the Finnish says kiihtyvyydet ovat yhtä suuret for two bodies with opposite accelerations (one up, one down), the sentence is correct as magnitudes but could say "yhtä suuret suuruudeltaan" for the two hanging bodies; left as in the Finnish idea.
 
 ## Checked
-Compared lesson.md, inquiry.json (all activities, hints, feedback, solutions, model answers, criteria, table labels), exit-ticket.json, meta.json, figures.json and the simulation labels with the Finnish: all numbers, formulas, steps and justifications kept, decimal comma {,}, LaTeX with \overline and \cdot, chapter names in Finnish.
-Physics terms correct (paino, tukivoima, jännitysvoima, kokonaisvoima, voima ja vastavoima); no wrong physics introduced by simplifying; figure descriptions and labels match the figures.
-Fixed: the simulation how-to said "kaksi riippuvaa kappaletta on yhtä painavia"; the Finnish says the masses are equal, so it now reads "kahden riippuvan kappaleen massat ovat yhtä suuret".
-check_layout ok at 360, 768 and 1280 px; figures.py --check, check_latex and check_i18n clean.
+Rechecked after the redrawn figures and the removal of the level-policy sentence ("levels 2 and 3 are advanced"). The redraw only changed geometry in the Atwood and example free-body diagrams (body sizes, arrow lengths, viewBox 380 to 410); the aria-labels, TeX labels and all words are unchanged and agree with the Finnish. The arrows still show T1 > G1 for the lighter body, G2 > T2 for the heavier body and equal acceleration magnitudes, so the physics matches the Finnish. The Finnish inquiry text change is mirrored. check_i18n clean (0 errors).
