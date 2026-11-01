@@ -21,7 +21,7 @@ new p5((p) => {
   const DEF = { view: 'uniform', particle: 'p', v: 2e6, B: 1, dir: 'in', E: false, pitch: 45, mirror: true };
   let selView, selP, slV, slB, selDir, cbE, slPitch, cbMirror, selSpeed, btn, readout;
   let lV, lB, lPitch, rowDir, rowE, rowPitch, rowMirror;
-  let running = true, labels = [], sig = '', st = null, trail = [], tShow = 0, scale1 = null, scale2 = null;
+  let running = true, labels = [], cards = [], sig = '', st = null, trail = [], tShow = 0, scale1 = null, scale2 = null;
 
   const nice = [];
   for (let n = -9; n <= 1; n++) for (const a of [1, 2, 5]) nice.push(a * Math.pow(10, n));
@@ -106,7 +106,7 @@ new p5((p) => {
 
     const k = Math.max(1, 600 / (document.getElementById('sim-root').clientWidth || 600));
     const fh = Math.round(14 * k);
-    labels = [];
+    labels = []; cards = []; topLeft = botLeft = null;
     let escaped = false, trapped = false, extra = {};
     if (s.view === 'uniform') extra = drawUniform(s, dt, fh);
     else { extra = drawAlong(s, dt, fh); escaped = st.a.escaped; trapped = s.mirror && M.mirrorTrapped(s.pitch, M.RM); }
@@ -258,7 +258,8 @@ new p5((p) => {
     panelBottom([[__('c_nimi_' + s.key), pcol(s)], [__('c_kulma', { a: tx(s.pitch, 0) })]], 18, 'l', fh);
     const status = a.escaped ? __('c_karkasi') : s.pitch >= 90 ? __('c_paikallaan') : a.refl > 0 ? __('c_heijastui', { n: a.refl }) : '';
     if (status) panelBottom([[status, a.escaped ? [138, 59, 26] : INK]], W - 18, 'r', fh);
-    tag('$\\overline{B}$', 470, CY2 - 104 / Math.sqrt(M.profile((470 - CX) / HALF, s.mirror ? M.RM : 1).g) + fh + 2, GREEN, fh);
+    for (const xb of [470, 150, 300])                                           // under the top field line, where no card covers it
+      if (tag('$\\overline{B}$', xb, CY2 - 104 / Math.sqrt(M.profile((xb - CX) / HALF, s.mirror ? M.RM : 1).g) + fh + 2, GREEN, fh)) break;
     if (vtip) tag('$\\overline{v}$', vtip[0], vtip[1], BLUE, fh);
     if (ftip) tag('$\\overline{F}$', ftip[0], ftip[1], RED, fh);
     return { x: a.x, reflections: a.refl, vpar: a.vpar };
@@ -334,10 +335,13 @@ new p5((p) => {
     p.stroke(160, 172, 186, 160); p.strokeWeight(1); p.fill(255, 255, 255, 222);
     p.rect(x0 - 7, yTop, w + 14, lines.length * lh + 6, 7);
     lines.forEach((l, i) => lab(l[0], align === 'r' ? x : x, yTop + 3 + lh * (i + 0.72), align, fh, l[1] || INK));
-    return { x0: x0 - 7, x1: x0 + w + 7, y1: yTop + lines.length * lh + 6 };
+    const box = { x0: x0 - 7, y0: yTop, x1: x0 + w + 7, y1: yTop + lines.length * lh + 6 };
+    cards.push(box);                                                            // the tags keep clear of the whole card
+    return box;
   }
-  // top cards: the left one first; a right card that would touch it goes under it (narrow canvases)
-  let topLeft = null;
+  // top cards: the left one first; a right card that would touch it goes under it (narrow canvases); the bottom
+  // cards likewise, a right one that would touch the left one goes above it
+  let topLeft = null, botLeft = null;
   const panel = (lines, x, align, fh) => {
     if (align !== 'r') { topLeft = card(lines, x, align, fh, 14); return; }
     p.textSize(fh);
@@ -345,15 +349,22 @@ new p5((p) => {
     const clash = topLeft && x - w - 7 < topLeft.x1 + 8;
     card(lines, x, align, fh, clash ? topLeft.y1 + 6 : 14); topLeft = null;
   };
-  const panelBottom = (lines, x, align, fh) => card(lines, x, align, fh, H - 14 - 6 - lines.length * fh * 1.5);
-  // a label at an arrow tip, at the first offset where it overlaps nothing and stays inside the view
+  const panelBottom = (lines, x, align, fh) => {
+    const h = 6 + lines.length * fh * 1.5;
+    if (align !== 'r') { botLeft = card(lines, x, align, fh, H - 14 - h); return; }
+    p.textSize(fh);
+    const w = Math.max(...lines.map((l) => p.textWidth(l[0])));
+    const clash = botLeft && x - w - 7 < botLeft.x1 + 8;
+    card(lines, x, align, fh, (clash ? botLeft.y0 - 6 : H - 14) - h); botLeft = null;
+  };
+  // a label at an arrow tip, at the first offset where it overlaps no label and no card and stays inside the view
   function tag(s, x, y, col, fh) {
     p.textSize(fh);
     const w = p.textWidth(s), pad = 4;
     for (const [dx, dy] of [[6, -6], [6, fh + 2], [-w - 6, -6], [-w - 6, fh + 2], [-w / 2, -10], [-w / 2, fh + 8]]) {
       const x0 = x + dx, yb = y + dy, b = { x0: x0 - pad, y0: yb - 0.75 * fh - pad, x1: x0 + w + pad, y1: yb + 0.25 * fh + pad };
       if (b.x0 < 12 || b.x1 > W - 12 || b.y0 < 12 || b.y1 > H - 12) continue;
-      if (labels.some((l) => l.x0 < b.x1 && b.x0 < l.x1 && l.y0 < b.y1 && b.y0 < l.y1)) continue;
+      if ([...labels, ...cards].some((l) => l.x0 < b.x1 && b.x0 < l.x1 && l.y0 < b.y1 && b.y0 < l.y1)) continue;
       lab(s, x0, yb, 'l', fh, col); return true;
     }
     return false;
