@@ -1,26 +1,26 @@
-VERDICT: FAIL
-CONTENT-HASH: 760022a5d3f36678
+VERDICT: PASS
+CONTENT-HASH: f5bc3f119dc791ac
 
 ## Blocking
-1. [Major] `unit.md`, *Why you understand more than you think*, strategy 3 (*Use word endings*): the endings `-ité`, `-ique`, `-ment` break after their leading hyphen. At **1280 px** the line ends "partner: -" and the next line starts "ité = -ity". At 360 px *-ique* splits the same way. This leaves a detached hyphen in the theory, at the default desktop width, on exactly the morphemes the strategy teaches. The pilot treated the same defect as blocking. Fix: write each ending with a non-breaking hyphen (U+2011, `‑ité`) or wrap it in `.nobr`, both here and in the summary table (`-ity`, `-ic`, `-ly`) and in inquiry.json wherever endings appear.
+(none) The earlier blocking finding is resolved. The endings now use non-breaking hyphens (*‑ité*, *‑ique*, *‑ity* …). At 1280 the strategy wraps between whole items, and the audit finds no split ending at 360, 390 or 1280.
 
 ## Polish
-1. [Minor] The news texts (`inquiry.json`, both articles): a number is separated from its unit at a line break ("500 / mégawatts" at 390). French typography keeps them together. Fix: put a no-break space between number and unit (`500 mégawatts`, `50 mégawatts`, `22 minutes`, `130 élèves`). Optionally add `.nobr` on *États-Unis* and *Bouches-du-Rhône*, as the other units do.
-2. [Minor] The true/false prompt: "(*vrai*) … (*faux*) … (*pas dans le texte*)" is untagged French. Fix: `{fr}…{/fr}`.
-3. [Minor] The false-friends and summary tables at 390: the shared `td{hyphens:auto}` rule hyphenates English ("even-tually", "construc-tion site"). This is harmless.
+1. [Minor] News texts: a number can still be separated from its unit at a line break ("500 / mégawatts" at 390). Fix: put a no-break space between number and unit (`500 mégawatts`, `50 mégawatts`, `22 minutes`).
+2. [Minor] False-friends table at 390: the shared `td{hyphens:auto}` rule hyphenates the English "even-tually" and "construc-tion". This is harmless.
 
 ## Checked
-- Contact sheets 1–4. At full size: tutki-390-1 (the news text, with French spacing before `:` and `?` and `1 337` intact), the theory and false-friends table, and the matches and true/false at 390 and 1280.
-- The hero at 390 and 1280: the columns are lines with no readable words, and nothing gives away a prediction.
-- A word-break audit at 360, 390 and 1280. A targeted capture of the `-ité` break at 1280.
-- All four model answers, opened after writing.
-- No console errors, no `.katex-error`. The maths ($10^{9}$, $10^{12}$) renders.
+- Fresh captures for this hash and the contact sheets.
+- selita-1280-1 at full size: the endings, the false friends and the maths ($10^{9}$, $10^{12}$).
+- The news text at 390. The hero.
+- A word-break audit and an untagged-French scan at 360, 390 and 1280: the true/false prompt is now tagged.
+- The new *How much* opening line renders correctly.
+- No console errors, no `.katex-error`.
 - Hash unchanged at the end.
 
 ## Scores
-illustrations 4 · typography 3 · English/French 4 · accessibility 4
+illustrations 4 · typography 4 · English/French 4 · accessibility 4
 
 ## Shared issues (all four units)
-- `templates/site.css:327` `th,td{hyphens:auto}` below 48 rem hyphenates English in table cells and leaves untagged French words exposed. The developer's proposed `[lang=fr]` exemption is good. Also consider `hyphens:manual` for `td:first-child`.
-- `scripts/screenshot.py` makes no `fig-N` captures for course units, so the cadarache map and plan had to be captured by hand.
-- `templates/inquiry.js`: the reflection list repeats "Commit now; the theory summary will show you" (known from the pilot).
+- `templates/site.css:327` `th,td{hyphens:auto}` below 48 rem hyphenates English in table cells.
+- `scripts/screenshot.py` makes no `fig-N` captures for course units.
+- `templates/inquiry.js`: the reflection list repeats "Commit now; …" (known from the pilot).
