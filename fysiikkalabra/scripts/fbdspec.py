@@ -228,7 +228,10 @@ def _forces(b, cx, cy, ang, shown, scale):
                         dict(surface=math.degrees(math.atan2(tan[1], tan[0])), outward=nrm)))
             continue
         u = _unit(direction(word))
-        if face: fo = _face(face); at = _local(cx, cy, ang, fo[0] * W / 2, fo[1] * H / 2)       # from the middle of that face
+        if face:                                                                   # on that face: a slanted push on the top or
+            fo = _face(face); u_loc = _rot(-ang, u[0], u[1])                       # bottom at its rear part, clear of the weight's line
+            off = -0.3 * W * math.copysign(1, u_loc[0]) if push and fo[1] and abs(u_loc[0]) > 0.2 else 0.0
+            at = _local(cx, cy, ang, fo[0] * W / 2 + off, fo[1] * H / 2)           # (visual audit 2026-11-01), else its middle
         else: at = (cx, cy) if k == "buoyancy" else _outline(cx, cy, ang, (-u[0], -u[1]) if push else u)   # a push ends on the outline
         extra = {"rope": u} if k == "tension" else {"v_rel": (-u[0], -u[1])} if k == "drag" else {}
         if push: extra["push"] = True
@@ -496,7 +499,10 @@ def draw(spec, fid, _frame=None):
             R += math.hypot(W, H) / 2
             def crosses(st):                                                       # over a force's shaft (visual audit 2026-11-01)
                 tip = (st[0] + dir_[0] * 56, st[1] - dir_[1] * 56)
-                return any(_meet(st, tip, a_, b_, 10) for a_, b_, *_ in arrows)
+                return any(_meet(st, tip, a_, b_, 10) for a_, b_, *_ in arrows) or any(   # or beside a push's label at its tail
+                    _meet(st, tip, a_, a_, 40) for a_, b_, _, at_tail in arrows if at_tail) or (b["axes"] is not None and any(
+                    _meet(st, tip, (ax_, ay_), (ax_ + ex_, ay_ - ey_), 18) for ax_, ay_ in [(cx + (W * 0.75 if two else W * 1.5), cy - H * 1.5)]
+                    for ex_, ey_ in ((50, 0), (0, 50))))                           # or over the axes
             cands = [(cx + nx * (R + dr) - dir_[0] * (28 - sh), cy - ny * (R + dr) + dir_[1] * (28 - sh))
                      for dr in (0, 24) for sh in (0, 48, -48, 96, -96)]
             st = next((c for c in cands if not crosses(c)), cands[0])

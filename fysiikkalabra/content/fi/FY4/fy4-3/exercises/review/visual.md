@@ -5,16 +5,15 @@ CONTENT-HASH: 1b72d20a59f51860
 (none)
 
 ## Polish
-- [Minor] fy4-3-L2-04 diagram (diagram 9, open-exercises-L2-1280-5) — $\overline{G}_\text{m}$ is now a clearly visible short arrow with a shaft below the box, but it still runs close beside $\overline{G}_\text{k}$ and its label sits right of the tip, so the pair is a little crowded — offset the two arrows slightly more sideways.
-- [Minor] fy4-3-L3-02 diagram (diagram 11, open-exercises-L3-1280-3) — the $\overline{G}$ arrowhead and shaft cross the ground line and hatching; $\overline{F}_\text{m}$ and $\overline{N}$ labels stand close together at the top — readable, only noting it.
-- [Minor] Carried over from the previous report: $F_\text{A}$/$F_\text{B}$ upright in figure labels, italic in prose (L1-02); Sijoitus chain boxes set smaller than surrounding maths.
+- [Minor] L1-04 diagram (svg 4, rendered 252x230): $\overline{F}_\text{i}$ and $\overline{F}_\text{r}$ still overlap on one line, the $\overline{F}_\text{r}$ label lands on the ground hatching — offset the arrows or move the label.
+- [Minor] Diagram 11 ($\overline{F}_\text{n}$, $\overline{F}_\text{v}$, $\overline{G}$, $\overline{v}$; 116x363 at 390) and diagram 13 (95x382) are tall and narrow: no clipping, and the white space is clean, but they are the largest figures in the card — acceptable, only noting it.
+- [Minor] Diagram 9 ($\overline{G}_\text{m}$ beside $\overline{G}_\text{k}$) is still close; both weights read.
+- [Minor] Carried over: figure $F_\text{A}$/$F_\text{B}$ upright, prose italic; Sijoitus boxes set smaller than the maths around them.
 
 ## Checked
-- Hash 1b72d20a59f51860 at start and end; text unchanged, only the diagram scale changed.
-- Contact sheet contact-5 (#49-#59); open-exercises-L2-1280-5 (diagram 9), open-exercises-L3-1280-3 (diagram 11), open-exercises-L3-1280-4 (diagram 12), each also cropped and enlarged.
-- No 390 px exercise capture exists in the packet, so I rendered diagrams 9-12 from preview/fy4-3.html at 390 and 1280 myself (scratchpad). They look the same at both widths (SVG scales with its box); labels readable, none overlap.
-- Diagram 12: $\overline{G}_\text{v}$ now has a visible shaft below the box and sits offset from $\overline{F}_\text{o}$, so both weights read (the earlier Minor is resolved). Diagram 11: $\overline{N}$ is twice $\overline{G}$, matching the answer $N=2G$.
-- Force red throughout; the layout around the diagrams is intact.
+- Hash 1b72d20a59f51860 at start and end; text unchanged.
+- Rendered every force diagram of the exercises from preview/fy4-3.html at 390 and 1280 (the packet has only 1280 captures) and opened them enlarged, including redrawn 6 and 9-12 (support N and v, T with G_k and G_m, F_n/F_v/G with v, F_m with N, G_v with F_o).
+- v (blue) is now clear of the force shafts, a orange; labels readable, nothing overlaps or is clipped; the heights are 170-382 px, none dominating the page; the widths are the same at both viewports.
 
 ## Scores
 illustrations 4 · typography 4 · Finnish 5 · accessibility 4
