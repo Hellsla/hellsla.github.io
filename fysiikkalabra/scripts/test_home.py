@@ -94,7 +94,7 @@ for lang in i18n.languages():
             expect(f"{lang} {code}: the row says what is published ('{want}'), the plan's status apart", f'<span class="mod-avail">{want}</span>' in r, r[:400])
             pg = (out / f"{code}.html").read_text() if (out / f"{code}.html").is_file() else ""
             expect(f"{lang} {code}: the page exists, says it is school-specific and what is planned",
-                   bool(pg) and 'class="notice local-kind"' in pg and 'class="notice local-status"' in pg and T("site.local_status_" + local[code]["status"]) in pg)
+                   bool(pg) and 'class="notice local-kind"' in pg and (('class="notice local-status"' not in pg) if local[code]["status"] == "ready" else ('class="notice local-status"' in pg and T("site.local_status_" + local[code]["status"]) in pg)))
             prep = re.search(r'<ul class="local-prepare">(.*?)</ul>', pg, re.S)
             hrefs = re.findall(r'href="([^"]+)"', prep.group(1)) if prep else []
             expect(f"{lang} {code}: chapters to prepare with link only published pages ({len(hrefs)})", all((out / h).is_file() for h in hrefs), hrefs)

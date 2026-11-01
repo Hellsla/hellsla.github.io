@@ -119,7 +119,8 @@
     "lang_unavailable_home": "sivua ei vielä ole, vie etusivulle",
     "local_status_building": "Tekeillä",
     "local_status_home_building": "Opintojakso on tekeillä",
-    "local_status_note_building": "Oppitunteja tulee sivulle sitä mukaa kuin ne valmistuvat. Laajuutta ja arviointia ei ole vielä päätetty."
+    "local_status_note_building": "Oppitunteja tulee sivulle sitä mukaa kuin ne valmistuvat. Laajuutta ja arviointia ei ole vielä päätetty.",
+    "local_status_ready": "Valmis"
   },
   "lesson": {
     "steps_nav": "Oppitunnin vaiheet",

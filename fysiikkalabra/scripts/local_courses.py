@@ -31,7 +31,7 @@ from courses import ROOT
 import i18n
 
 REGISTRY = "local-courses.json"
-STATUSES = ("planning", "building")                 # add one (and its lang key site.local_status_<status>) when a course needs it
+STATUSES = ("planning", "building", "ready")        # add one (and its lang key site.local_status_<status>) when a course needs it; "ready" shows no status box (teacher 2026-11-01)
 TEXT_FIELDS = ("title", "subtitle", "school", "description")
 esc = lambda s: _h.escape(str(s), quote=True)
 
@@ -81,7 +81,7 @@ def home_row(code, c, T, investigations=0, n_units=0):
     (teacher 2026-10-31: published investigations are not "planned", the course plan may still be)."""
     avail = (T.count("site.local_investigations", investigations) if investigations else T.count("units.home_count", n_units) if n_units
              else T("site.local_status_" + c["status"]))
-    status = f'<span class="mod-coming">{T("site.local_status_home_" + c["status"])}</span>' if investigations or n_units else ""
+    status = f'<span class="mod-coming">{T("site.local_status_home_" + c["status"])}</span>' if (investigations or n_units) and c["status"] != "ready" else ""
     if c.get("language") and c["language"] != T.lang:
         status += f'<span class="mod-coming">{T("units.taught_in_" + c["language"])}</span>'
     import module_icons
@@ -102,7 +102,7 @@ def page_body(code, c, T, chapters, published, investigations=(), guides_html=""
     out = (f'<div class="mod-head">{module_icons.img(code, 56, "mod-head-icon")}<div><span class="eyebrow">{code} · {T("site.local_course_kind")}</span><h1>{esc(c["title"])}</h1></div></div>'
            f'<p class="lead">{esc(c["subtitle"])}</p>'
            f'<p class="notice local-kind" role="note">{T("site.local_distinct", school=esc(c["school"]))}</p>'
-           f'<p class="notice local-status" role="note"><strong>{T("site.local_status_" + status)}.</strong> {T("site.local_status_note_" + status)}</p>'
+           + (f'<p class="notice local-status" role="note"><strong>{T("site.local_status_" + status)}.</strong> {T("site.local_status_note_" + status)}</p>' if status != "ready" else "")
            + (f'<p class="local-authors">{T("units.authors")}: {esc(", ".join(c["authors"][:-1]) + " " + T("units.and") + " " + c["authors"][-1] if len(c["authors"]) > 1 else c["authors"][0])}</p>' if c.get("authors") else "")
            + (f'<p class="notice local-language" role="note">{T("units.language_note_" + c["language"])}</p>' if c.get("language") and c["language"] != T.lang else "")
            + f'<p class="local-desc">{esc(c["description"])}</p>')
