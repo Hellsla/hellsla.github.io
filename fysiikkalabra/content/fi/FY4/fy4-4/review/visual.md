@@ -5,15 +5,15 @@ CONTENT-HASH: 4d93fdd86e12b6e3
 (none)
 
 ## Polish
-- [Minor] example Sijoitus (example-390-2) — unit written as stacked `\tfrac{\text{m}}{\text{s}^2}` while every other place uses `\text{m/s}^2` — use `\text{m/s}^2` for consistency.
-- [Minor] lesson.md Tiivistelmä and inquiry `learn` — "$\Sigma F = ma$" without the vector overline, while Ydinajatus/Kaava use `\Sigma\overline{F} = m\overline{a}` — unify (scalar form only where it is said to be the component form).
-- [Minor] exit ticket heading "Exit ticket" is English in the Finnish page — "Loppukysymykset" or similar (if not a project-wide label; then ignore).
-- [Minor] sim force diagram (sim-390/1280) — the F arrow is tiny against G and N and overlaps the N/G shaft at the box; the model text says so, but a small gap or offset would read better.
-- [Minor] kokonaisvoima figure — the ΣF arrow is green, which the palette keeps for a "correct/stable state"; a neutral ink outline would avoid that meaning.
+- [Minor] Inquiry force diagram 2 (rendered 358x369 at 390, 608x628 at 1280; $\overline{T}$, $\overline{G}$, $\overline{F}$) — the small $\overline{F}$ arrow beside $\overline{G}$ has a short shaft partly in the box and its label sits on the tip; readable, but a little more shaft or an offset would read better.
+- [Minor] Split-scale diagrams (svg 8, 9: $\overline{F}_\mu$ and $\overline{F}$) — the short $\overline{F}_\mu$ now keeps a visible shaft; its tail lies on the ground hatching, so offset it a little more.
+- [Minor] Carried over, text unchanged: example Sijoitus uses \tfrac units; Tiivistelmä "$\Sigma F = ma$" without overline; "Exit ticket" heading in English; ΣF arrow in the kokonaisvoima figure is green (palette keeps green for stable states).
 
 ## Checked
-- Hash at start and end 4d93fdd86e12b6e3. Opened fig-2, fig-3, fig-4 (390), fig-6 (option figure), intro-1280, theory-1280-1, sim-390, sim-1280, exp-3-390-1, example-390-1/-2, open-ennusta-1280, open-tarkista-1280-1/-3, open-exercises-1280-3, open-exit-1280, stage-sovella-390-2.
-- Not individually opened: fig-7–9 (same template as fig-6), L2/L3 exercise captures, remaining 390 stage shots.
+- Hash 4d93fdd86e12b6e3 at start and end; text unchanged, only the diagram renderer changed.
+- Rendered all force diagrams of the lesson from preview/fy4-4.html at 390 and 1280 (inquiry diagrams 1 and 2, the four option figures, and the split-scale pair) and opened them enlarged: force red, velocity blue, acceleration orange, v and a clear of the force shafts, labels readable, nothing overlaps or clips.
+- Heights 189-369 px at 390: the largest (inquiry diagram 2) does not dominate the page.
+- Layout around the figures survived (contact sheet and the captures of the earlier PASS are unchanged in content).
 
 ## Scores
 illustrations 4 · typography 4 · Finnish 4 · accessibility 4
