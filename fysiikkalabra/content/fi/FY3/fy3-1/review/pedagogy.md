@@ -1,18 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 62daa651fbd9a7eb
+CONTENT-HASH: f349123e5b25e48b
 
 ## Blocking
 - none
 
 ## Polish
-- content/fi/FY3/fy3-1/lesson.md:214 — "sillä $1\,\text{N}$ = $1\,\text{kg}\cdot\text{m/s}^2$" splits one equation into two maths spans with a plain "=" between — "sillä $1\,\text{N} = 1\,\text{kg}\cdot\text{m/s}^2$".
-- content/fi/FY3/fy3-1/inquiry.json:222,226,230 — the calibration feedback divides with "/" while the lesson now writes "1{,}62 : 9{,}81"; one notation would read more consistently.
+- content/fi/FY3/fy3-1/inquiry.json:222,226,230 — the calibration feedback divides with "/" while the lesson writes "1{,}62 : 9{,}81"; one notation would read more consistently (unchanged since the PASS).
 
 ## Checked
-- Finnish case endings after re-set maths are right: $1\,\text{N}$:ksi, $2\,\text{N}$:ksi, $8{,}0\,\text{N}$:n voima, $20\,\text{N}$:n voimalla, $1{,}6\,\text{cm}$:n venymää, $5{,}6\,\text{cm}$:iin, $98{,}1\,\text{N}$:sta $294\,\text{N}$:iin, $1180\,\text{N}$:sta, $12\,\text{N}$:n lukemaa; punctuation stays after the closing $.
-- Ratio "($1{,}62 : 9{,}81 \approx 0{,}17 \approx 1 : 6$)" reads naturally as "noin kuudesosa"; same for Mars 0,38.
-- No change of meaning, task wording, options, feedback logic or order anywhere in the diff; predictions still gated, experiments unchanged.
-- Forcemeter figure (capture fig-2): red G/2G arrows match the sim's red weight arrow, pointer and bars — colour now carries one meaning across figure and sim; labels G, 2G keep it from relying on colour alone.
-- Simulation (capture sim-390): gridlines 50…200 N reach close to the 248 N full-scale line, so the Jupiter bar is readable; caption "kaavion asteikko 0–248 N" no longer reads as the spring ruler's scale (0–2500 N), and the readout sentence explains it.
-- Learning path, staged example (one step per stage), opening question answered in "Kaava: Paino", workload one lesson — unchanged since the PASS at ee6b2ec.
-- Exit ticket still tests the core proportionality idea; answer $7{,}5\,\text{cm}$ correct.
+- Delta against 7f8acef; hash f349123e5b25e48b at start and end.
+- lesson.md:214 now reads "sillä $1\,\text{N} = 1\,\text{kg}\cdot\text{m/s}^2$" as one equation — my earlier Polish item is resolved; sentence still reads naturally.
+- Simulation at 390 px (sim-390): the old caption that collided with the Jupiter label is gone; the y axis now ends in "248" at its tick, and "G (N)" sits above the axis under the chart title — nothing overlaps, every label legible on a phone.
+- Simulation at 1280 px (sim-1280): same layout, axis 50…200, 248; Jupiter bar meets the full-scale line, so the student sees directly that the top of the axis is the Jupiter weight.
+- Readout sentence "Palkkikaavion asteikko 0–248 N on tämän massan paino Jupiterissa" still explains the changing scale and matches the axis number; the spring's fixed 0–2500 N ruler is not confused with it.
+- Colour meaning unchanged: red weight bar/arrow, grey mass, legend present; labels keep it from relying on colour alone.
+- Learning path, staged example, predictions gated by experiments, workload one lesson, exit ticket (7,5 cm) — unchanged since the PASS; inquiry tests 65/65, 360 px layout ok.
