@@ -77,7 +77,8 @@
         "units": [
           {
             "id": "fy14-classical-limits",
-            "title": "When classical physics ran out of answers"
+            "title": "When classical physics ran out of answers",
+            "optional": true
           },
           {
             "id": "fy14-photoelectric",
@@ -105,7 +106,8 @@
           },
           {
             "id": "fy14-binding-energy",
-            "title": "Mass defect and binding energy"
+            "title": "Mass defect and binding energy",
+            "optional": true
           }
         ]
       },
@@ -133,7 +135,8 @@
           },
           {
             "id": "fy14-magnetic-confinement",
-            "title": "Charged particles and magnetic confinement"
+            "title": "Charged particles and magnetic confinement",
+            "optional": true
           }
         ]
       },
@@ -172,7 +175,8 @@
           },
           {
             "id": "fy14-tokamak-stellarator",
-            "title": "Tokamak or stellarator?"
+            "title": "Tokamak or stellarator?",
+            "optional": true
           }
         ]
       },
