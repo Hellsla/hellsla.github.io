@@ -66,6 +66,17 @@ def ready(page):
     try: page.wait_for_function("window.simState", timeout=1500)
     except Exception: pass
     page.wait_for_timeout(120)
+    settle(page)
+
+
+FONTS_SETTLED = "document.fonts.ready.then(() => new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r))))"
+
+
+def settle(page):
+    """Wait for web fonts (KaTeX's load on first use) and two more frames: sim-embed re-measures $…$ labels once a
+    font has loaded, so label boxes read before that are the fallback font's, not what the student sees."""
+    try: page.evaluate(FONTS_SETTLED)
+    except Exception: pass
 
 
 def combos(controls, thin):
@@ -124,7 +135,7 @@ with sync_playwright() as pw:
         bad = []
         if state is not None:
             for c in checks:
-                if c.get("setup"): page.evaluate(c["setup"]); page.wait_for_timeout(200)
+                if c.get("setup"): page.evaluate(c["setup"]); page.wait_for_timeout(200); settle(page)
                 got = page.evaluate(c["expr"])
                 if got is None or abs(got - c["expected"]) > c.get("tol", 0.01) * max(1, abs(c["expected"])):
                     bad.append(f"{c['expr'][:160]} = {got} (expected {c['expected']})")
