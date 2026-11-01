@@ -60,6 +60,14 @@ beginner French; authors Lauri Hellsten and Marjo Inkala). Work in `fysiikkalabr
 - One 75-minute lesson: a theory summary of at most about 500 words; biographies and extras `optional`.
 - French tips for Finnish learners compare with Finnish sounds (French *u* ≈ Finnish *y*), not German.
 - `teacher.md` includes a plan for fast pairs and for running out of time.
+- The opening illustration has **no text** (no speech bubbles with words); labels in other figures at least 14 px at
+  390 px width (in a 1200-wide SVG that means about 48 units).
+- Experiment tables: put the unit in the quantity name (`"names": {"lambda": "wavelength λ (nm)"}`) and in every
+  measure label (`$U\;(\text{V})$`); a column without a unit fails the visual review. Simulation canvas text ≥ 14 px.
+- A display equation never splits a sentence; no `\dfrac` inline.
+- Respellings of French pronunciation are plain English-alphabet hints in one consistent style, not tagged `lang="fr"`.
+- `screenshot.py` captures only the first step of a staged worked example and closed solutions: open them yourself
+  in the browser and look.
 - `scripts/test_inquiry.py` and `check_choices.py` do not know units yet: test the inquiry mechanics yourself in
   the browser (predictions lock, reveals open at the right point, model answers stay closed until the student writes).
 
