@@ -1055,6 +1055,8 @@
       "tilannekuva": "$\\text{Tilannekuva}$",
       "vk1": "$\\text{Voimakuvio: kärry}$",
       "vk2": "$\\text{Voimakuvio: punnus}$",
+      "vk1_kaksi": "$\\text{Voimakuvio: }m_1$",
+      "vk2_kaksi": "$\\text{Voimakuvio: }m_2$",
       "lukemat1": "$G_1 = {{G1}}\\,\\text{N}$, $G_2 = {{G2}}\\,\\text{N}$, $T = {{T}}\\,\\text{N}$<br>$\\Sigma F_1 = {{s1}}\\,\\text{N}$, $\\Sigma F_2 = {{s2}}\\,\\text{N}$<br><strong>$a = {{a}}\\,\\text{m/s}^2$</strong>, $v = {{v}}\\,\\text{m/s}$, $t = {{t}}\\,\\text{s}$",
       "lukemat2": "$G_1 = {{G1}}\\,\\text{N}$, $G_2 = {{G2}}\\,\\text{N}$, $T = {{T}}\\,\\text{N}$<br>$\\Sigma F_1 = {{s1}}\\,\\text{N}$, $\\Sigma F_2 = {{s2}}\\,\\text{N}$<br><strong>$a = {{a}}\\,\\text{m/s}^2$</strong>, $v = {{v}}\\,\\text{m/s}$, $t = {{t}}\\,\\text{s}$"
     },

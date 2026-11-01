@@ -1077,6 +1077,8 @@
       "tilannekuva": "$\\text{Tilanne}$",
       "vk1": "$\\text{Kärryn voimakuvio}$",
       "vk2": "$\\text{Punnuksen voimakuvio}$",
+      "vk1_kaksi": "$\\text{Kappaleen }m_1\\text{ voimakuvio}$",
+      "vk2_kaksi": "$\\text{Kappaleen }m_2\\text{ voimakuvio}$",
       "lukemat1": "$G_1 = {{G1}}\\,\\text{N}$, $G_2 = {{G2}}\\,\\text{N}$, $T = {{T}}\\,\\text{N}$<br>$\\Sigma F_1 = {{s1}}\\,\\text{N}$, $\\Sigma F_2 = {{s2}}\\,\\text{N}$<br><strong>$a = {{a}}\\,\\text{m/s}^2$</strong>, $v = {{v}}\\,\\text{m/s}$, $t = {{t}}\\,\\text{s}$",
       "lukemat2": "$G_1 = {{G1}}\\,\\text{N}$, $G_2 = {{G2}}\\,\\text{N}$, $T = {{T}}\\,\\text{N}$<br>$\\Sigma F_1 = {{s1}}\\,\\text{N}$, $\\Sigma F_2 = {{s2}}\\,\\text{N}$<br><strong>$a = {{a}}\\,\\text{m/s}^2$</strong>, $v = {{v}}\\,\\text{m/s}$, $t = {{t}}\\,\\text{s}$"
     },
