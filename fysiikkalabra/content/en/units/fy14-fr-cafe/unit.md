@@ -156,9 +156,9 @@ for practice.
 
 ## At a French café: what happens when
 
-A visit to a café follows a simple order, and each step has its own phrase.
-
 <figure class="unit-photo"><img src="units/fy14/pics/paris-cafe.jpg" alt="Colour photograph of people sitting at tables on a café terrace on a Paris street." width="1600" height="1093" loading="lazy"><figcaption>A café terrace on the Rue de Buci in Paris. Ordering at a café is a classic first conversation in French. <span class="photo-credit">Photo: zoetnet, CC BY 2.0, via Wikimedia Commons</span></figcaption></figure>
+
+A visit to a café follows a simple order, and each step has its own phrase.
 
 1. **Greet.** When the waiter comes, say <span lang="fr">Bonjour, madame</span> or <span lang="fr">Bonjour, monsieur</span> before anything else.
    Call a waiter with <span lang="fr">S'il vous plaît !</span> or <span lang="fr"><span class="nobr">Excusez-moi</span> !</span>, not with *<span lang="fr">Garçon !</span>*: it is old-fashioned, and many waiters find it rude.

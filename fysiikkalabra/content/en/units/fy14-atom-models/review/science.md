@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 9aa351a8af4c0779
+CONTENT-HASH: 98884cb62e662452
 
 Science re-review of fy14-atom-models, 2026-11-01. It covers the fixes in commit cdc675d6.
 
@@ -24,3 +24,6 @@ None.
 
 ## Polish
 None.
+
+## Re-check 2026-11-01: photographs
+Rutherford (1871–1937, nucleus 1911) and Bohr (1885–1962, levels 1913, Nobel 1922) are correct and consistent with the text; images match the alt. PD (Bain/PD-US-expired; PD-Sweden-photo). The media creator "AB Lagrelius & Westphal" is a cleaned-up form of the photos.json creator field, which is correct.

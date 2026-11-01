@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 46ad737ab67de926
+CONTENT-HASH: 222bf8240799daec
 
 ## Blocking
 (none) The earlier blocking finding is resolved. The `power` chart is rebuilt:
@@ -29,3 +29,7 @@ The earlier Polish is resolved:
 
 ## Scores
 illustrations 4 · typography 4 · English/French 4 · accessibility 4
+
+## Re-check 2026-11-01: photographs
+- Screenshots at 360, 768 and 1280 px (details opened, image loaded); check_layout.py OK at 360 and 1280 px; figure gaps 20 px above and 24 px below, no overflow, credit on its own line and legible.
+- Coil-factory photo ends the section and sits clearly above the 'Words of the machine' matching task.

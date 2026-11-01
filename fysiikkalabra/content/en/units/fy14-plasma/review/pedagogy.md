@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 8e9aae9fb545c2d4
+CONTENT-HASH: b5b52f45c65467fe
 
 Pedagogy re-review of fy14-plasma (2026-11-01), after "Fixes after review" (commit cf5a329b). Rebuilt; I read inquiry.json again.
 
@@ -20,3 +20,6 @@ None.
 - Predictions: committed before evidence and revealed by their theory sections. The hook, Why line and hero do not give away either prediction.
 - CLIL: word bank and starters for both writing tasks; vocabulary match; French corner.
 - Workload: about 650 words of core theory, with a realistic 75-minute plan and a plan for running out of time.
+
+## Re-check 2026-11-01: photographs
+Lightning and aurora photos each follow the paragraph they illustrate in Nature; both tasks about them (`pred-aurora`, `plasma-sort`) come before the section, so nothing is given away. Authentic, Finnish aurora is a good link to the students' own experience. No lesson ids, no ×, British spelling.

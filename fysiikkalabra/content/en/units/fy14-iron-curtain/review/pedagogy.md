@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: c107808fdf27e4d4
+CONTENT-HASH: 57a7914428d502bd
 
 Pedagogy re-review of fy14-iron-curtain (2026-11-01), after commit 3ed55db3. I rebuilt the page and tested it in Playwright at 390 px. Both predictions lock when the student commits. `pred-verify` opens at `theory-d` and `pred-thomson` at `theory-thomson`. Model answers stay closed until the student writes. No console errors.
 
@@ -25,3 +25,6 @@ None.
 - The `pair` note is still rendered after the textarea (`scripts/inquiry.py`).
 
 2026-11-01: re-checked the intro sentence changed to "written for this course from historical documents" (Sources and verification no longer published); accurate, clear at B1-B2, no remaining pointer to a hidden section in unit.md or inquiry.json.
+
+## Re-check 2026-11-01: photographs
+Artsimovich photo follows Source A (outside the quoted source) and names the person the later source questions talk about; the caption answers neither `why-invite` nor `check-3`. No lesson ids, no ×, British spelling.

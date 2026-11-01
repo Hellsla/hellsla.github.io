@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: b1710febe7eb7638
+CONTENT-HASH: d2bb84b94122e667
 
 ## Blocking
 (none)
@@ -21,3 +21,7 @@ CONTENT-HASH: b1710febe7eb7638
 
 ## Scores
 illustrations 4 · typography 4 · English/French 4 · accessibility 4
+
+## Re-check 2026-11-01: photographs
+- Screenshots at 360, 768 and 1280 px (details opened, image loaded); check_layout.py OK at 360 and 1280 px; figure gaps 20 px above and 24 px below, no overflow, credit on its own line and legible.
+- Café terrace photo between the intro and the numbered steps fits well; the street scene is still readable on a phone.

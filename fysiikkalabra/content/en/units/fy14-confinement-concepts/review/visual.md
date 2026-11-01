@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: eeec805ba4f919ad
+CONTENT-HASH: 19e029c637aecc7b
 
 ## Blocking
 (none) The earlier blocking finding is fixed: the "Find the error" news quote now uses curly quotes. Also fixed: the energy-chart bars are visible and the theta-pinch label clears the coils. The 2024 table value is now explained in the source note.
@@ -20,3 +20,7 @@ illustrations 4 · typography 4 · English 4 · accessibility 4
 ## Shared issues
 - Known: raw select keys and true/false in experiment tables; the unit repeats in the initial-state line.
 - Italic-space rendering in the site font.
+
+## Re-check 2026-11-01: photographs
+- Screenshots at 360, 768 and 1280 px (details opened, image loaded); check_layout.py OK at 360 and 1280 px; figure gaps 20 px above and 24 px below, no overflow, credit on its own line and legible.
+- NIF chamber photo fine at all widths; the text paragraph and the side-by-side figure row that follow are not crowded.

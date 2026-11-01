@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: c3553fea1e86a21a
+CONTENT-HASH: b8edfaa71c7e32c5
 
 Science re-review of fy14-nucleus, 2026-11-01, after commit 7843fefa (unit) and 371c50b6 (shared files).
 
@@ -23,3 +23,6 @@ None.
 
 ## Checked
 Physics, mathematics, the worked example, every option and its feedback, the data the builder uses, the figures, history and sources.
+
+## Re-check 2026-11-01: photographs
+The photo shows four men at a table with Groves in uniform, as the alt says; the caption names Chadwick, Groves, Tolman and Smyth without positions, and neutron 1932 matches the text. PD-USGov-Military-Army; credit matches.

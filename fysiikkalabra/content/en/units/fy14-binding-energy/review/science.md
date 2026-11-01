@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: c4cb2276f3c98102
+CONTENT-HASH: 9c862ad14f6e60cb
 
 Science re-review of fy14-binding-energy, 2026-11-01, after commit 7843fefa (unit) and 371c50b6 (binding.js, nuclides.json).
 
@@ -25,3 +25,6 @@ None.
 
 ## Checked
 Physics, mathematics, every option and its feedback, the explorer's computations and data, history and sources.
+
+## Re-check 2026-11-01: photographs
+Meitner (1878–1968) with Frisch, fission explained at Christmas 1938 and published 1939: consistent with the text. The image matches the alt. PD (Harris & Ewing, Library of Congress); credit matches.

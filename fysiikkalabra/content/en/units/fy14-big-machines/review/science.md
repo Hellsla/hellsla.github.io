@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 01a45cca341ca829
+CONTENT-HASH: 849e390d8423fd52
 
 Science re-review of fy14-big-machines, 2026-11-01. It covers the changes in commit 3ed55db3 and what they touch.
 
@@ -34,3 +34,6 @@ None.
 
 ## Polish
 None.
+
+## Re-check 2026-11-01: photographs
+The T-15 stamp is correct: the stamp reads "термоядерная система ТОКАМАК 1987", Wikipedia's T-15 article uses it as "T-15 tokamak on a 1987 USSR stamp", and T-15's first plasma in 1988 matches the text. JET 1991 is the first D–T experiment (9 Nov 1991). Fixed: the JET caption said "The vacuum vessel inside is 6 metres across". The vessel's outer diameter is about 8.5 m (R = 2.96 m, a = 1.25 m). The caption now reads "Its D-shaped vacuum chamber is 4.2 metres high and 2.5 metres wide" (Wikipedia, Joint European Torus). The photos.json caption still has the old sentence.

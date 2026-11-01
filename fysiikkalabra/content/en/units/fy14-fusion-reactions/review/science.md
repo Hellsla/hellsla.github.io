@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: af00c5738a515fa3
+CONTENT-HASH: f9123ac373589430
 
 Science re-review of fy14-fusion-reactions, 2026-11-01, after commit 7843fefa (unit) and 371c50b6 (reaction.js, nuclides.json).
 
@@ -33,3 +33,6 @@ None.
 
 ## Checked
 Physics, mathematics, the worked example, every option and its feedback, the reaction and energy-scale components and their data, history and sources.
+
+## Re-check 2026-11-01: photographs
+Oliphant (1901–2000), D–D fusion at the Cavendish in 1934, and his discovery of tritium and helium-3 are correct and match the text. The image matches the alt. PD-USGov-DOE; credit matches.

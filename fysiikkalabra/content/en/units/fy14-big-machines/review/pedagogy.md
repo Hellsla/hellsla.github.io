@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 01a45cca341ca829
+CONTENT-HASH: 849e390d8423fd52
 
 Pedagogy re-review of fy14-big-machines (2026-11-01), after commit 3ed55db3. I rebuilt the page and tested it in Playwright at 390 px. `pred-heat` opens at `theory-heating` and `pred-budget` at `theory-oil` (the budget chart). Model answers stay closed until the student writes. No console errors.
 
@@ -14,3 +14,6 @@ None.
 
 ## Polish
 1. `machines`: the feedback says JET's plasma volume is "more than twenty times PLT's". Ask the student to estimate this with $V \approx 2\pi R \cdot \pi a^2$ (the volume of a ring-shaped tube) as an optional extension, so that the claim is something the student checks, not reads.
+
+## Re-check 2026-11-01: photographs
+T-15 stamp supports the national-pride/politics thread; JET photo closes the Oil section after the machines list; the caption fact (1991, first tritium) is asked by no task. Neither photo interrupts the `machines` data task. No lesson ids, no ×, British spelling.

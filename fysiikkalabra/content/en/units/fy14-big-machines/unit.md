@@ -184,7 +184,7 @@ The money made bigger machines possible:
 
 With TFTR and JET, JT-60 was one of the "big three" tokamaks of the 1980s. In 1978 scientists from Europe, Japan, the Soviet Union and the United States also began **INTOR**, a study under the International Atomic Energy Agency for a shared international tokamak reactor. It was never built, but it brought the four sides' fusion experts together.
 
-<figure class="unit-photo"><img src="units/fy14/pics/jet-exterior.jpg" alt="Colour photograph of the JET machine, a huge ring hidden under heating systems, pipes and diagnostics." width="1600" height="1257" loading="lazy"><figcaption>The Joint European Torus (JET) at Culham, UK, in 1991, the year it first produced fusion power with tritium. The vacuum vessel inside is 6 metres across. <span class="photo-credit">Photo: EFDA JET, CC BY-SA 3.0, via Wikimedia Commons</span></figcaption></figure>
+<figure class="unit-photo"><img src="units/fy14/pics/jet-exterior.jpg" alt="Colour photograph of the JET machine, a huge ring hidden under heating systems, pipes and diagnostics." width="1600" height="1257" loading="lazy"><figcaption>The Joint European Torus (JET) at Culham, UK, in 1991, the year it first produced fusion power with tritium. Its D-shaped vacuum chamber is 4.2 metres high and 2.5 metres wide. <span class="photo-credit">Photo: EFDA JET, CC BY-SA 3.0, via Wikimedia Commons</span></figcaption></figure>
 
 ## Geneva 1985: an offer between rivals {Geneva}
 
