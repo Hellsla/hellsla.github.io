@@ -13,8 +13,14 @@
       "find": "the hot, ionised fuel, held by the magnetic field in the middle of the vessel",
       "hint": "It is not a solid part: it fills the D-shaped space inside the vessel.",
       "sources": [
-        {"title": "ITER: The tokamak", "url": "https://www.iter.org/components"},
-        {"title": "ITER: Facts & figures", "url": "https://www.iter.org/facts-figures"}
+        {
+          "title": "ITER: The tokamak",
+          "url": "https://www.iter.org/components"
+        },
+        {
+          "title": "ITER: Facts & figures",
+          "url": "https://www.iter.org/facts-figures"
+        }
       ]
     },
     {
@@ -26,8 +32,14 @@
       "find": "the lining of modules that faces the plasma all around the inside of the vessel",
       "hint": "Look just outside the plasma, but not at the bottom.",
       "sources": [
-        {"title": "ITER: Blanket", "url": "https://www.iter.org/machine/blanket"},
-        {"title": "ITER: What will ITER do?", "url": "https://www.iter.org/fusion-energy/what-will-iter-do"}
+        {
+          "title": "ITER: Blanket",
+          "url": "https://www.iter.org/machine/blanket"
+        },
+        {
+          "title": "ITER: What will ITER do?",
+          "url": "https://www.iter.org/fusion-energy/what-will-iter-do"
+        }
       ]
     },
     {
@@ -39,7 +51,10 @@
       "find": "the exhaust at the bottom of the vessel that takes the heat and the helium ash",
       "hint": "Follow the edge of the plasma down to where its legs touch the wall.",
       "sources": [
-        {"title": "ITER: Divertor", "url": "https://www.iter.org/machine/divertor"}
+        {
+          "title": "ITER: Divertor",
+          "url": "https://www.iter.org/machine/divertor"
+        }
       ]
     },
     {
@@ -51,7 +66,10 @@
       "find": "the double-walled steel container that holds the vacuum around the plasma",
       "hint": "It is the D-shaped double wall just outside the blanket.",
       "sources": [
-        {"title": "ITER: Vacuum vessel", "url": "https://www.iter.org/machine/vacuum-vessel"}
+        {
+          "title": "ITER: Vacuum vessel",
+          "url": "https://www.iter.org/machine/vacuum-vessel"
+        }
       ]
     },
     {
@@ -63,7 +81,10 @@
       "find": "the big D-shaped coils that make the magnetic field going around the ring",
       "hint": "They are D-shaped and surround the vessel; there are 18 of them.",
       "sources": [
-        {"title": "ITER: Magnets", "url": "https://www.iter.org/machine/magnets"}
+        {
+          "title": "ITER: Magnets",
+          "url": "https://www.iter.org/machine/magnets"
+        }
       ]
     },
     {
@@ -75,8 +96,14 @@
       "find": "the six horizontal rings that shape the plasma and hold it in position",
       "hint": "In a cross-section each ring is a small rectangle outside the D-shaped coils.",
       "sources": [
-        {"title": "ITER: Magnets", "url": "https://www.iter.org/machine/magnets"},
-        {"title": "ITER: Cryostat", "url": "https://www.iter.org/machine/cryostat"}
+        {
+          "title": "ITER: Magnets",
+          "url": "https://www.iter.org/machine/magnets"
+        },
+        {
+          "title": "ITER: Cryostat",
+          "url": "https://www.iter.org/machine/cryostat"
+        }
       ]
     },
     {
@@ -88,7 +115,10 @@
       "find": "the tall stack of coils in the middle that induces the plasma current, like a transformer",
       "hint": "Look at the centre of the machine, next to the axis.",
       "sources": [
-        {"title": "ITER: Magnets", "url": "https://www.iter.org/machine/magnets"}
+        {
+          "title": "ITER: Magnets",
+          "url": "https://www.iter.org/machine/magnets"
+        }
       ]
     },
     {
@@ -100,7 +130,10 @@
       "find": "the cooled panels that stop heat radiation reaching the cold magnets",
       "hint": "Thin layers: one just outside the vacuum vessel, one just inside the cryostat wall.",
       "sources": [
-        {"title": "ITER: Vacuum vessel (thermal shield)", "url": "https://www.iter.org/machine/vacuum-vessel"}
+        {
+          "title": "ITER: Vacuum vessel (thermal shield)",
+          "url": "https://www.iter.org/machine/vacuum-vessel"
+        }
       ]
     },
     {
@@ -112,7 +145,10 @@
       "find": "the giant vacuum chamber that surrounds the whole machine",
       "hint": "It is the outermost wall in the drawing.",
       "sources": [
-        {"title": "ITER: Cryostat", "url": "https://www.iter.org/machine/cryostat"}
+        {
+          "title": "ITER: Cryostat",
+          "url": "https://www.iter.org/machine/cryostat"
+        }
       ]
     },
     {
@@ -124,8 +160,14 @@
       "find": "the openings at the top, middle and bottom of the vessel that lead out through the cryostat",
       "hint": "Look for the ducts that lead from the vessel out through the cryostat wall.",
       "sources": [
-        {"title": "ITER: Vacuum vessel", "url": "https://www.iter.org/machine/vacuum-vessel"},
-        {"title": "ITER: Cryostat", "url": "https://www.iter.org/machine/cryostat"}
+        {
+          "title": "ITER: Vacuum vessel",
+          "url": "https://www.iter.org/machine/vacuum-vessel"
+        },
+        {
+          "title": "ITER: Cryostat",
+          "url": "https://www.iter.org/machine/cryostat"
+        }
       ]
     },
     {
@@ -137,8 +179,14 @@
       "find": "the systems that heat the plasma from outside with beams and waves",
       "hint": "In the drawing they sit in the ports on the right.",
       "sources": [
-        {"title": "ITER: External heating systems", "url": "https://www.iter.org/machine/supporting-systems/external-heating-systems"},
-        {"title": "ITER: What will ITER do?", "url": "https://www.iter.org/fusion-energy/what-will-iter-do"}
+        {
+          "title": "ITER: External heating systems",
+          "url": "https://www.iter.org/machine/supporting-systems/external-heating-systems"
+        },
+        {
+          "title": "ITER: What will ITER do?",
+          "url": "https://www.iter.org/fusion-energy/what-will-iter-do"
+        }
       ]
     },
     {
@@ -150,19 +198,29 @@
       "find": "the instruments that measure the plasma, mostly in port plugs",
       "hint": "In the drawing they are in the ports on the left; dashed lines show their lines of sight.",
       "sources": [
-        {"title": "ITER: Diagnostics", "url": "https://www.iter.org/machine/supporting-systems/diagnostics"}
+        {
+          "title": "ITER: Diagnostics",
+          "url": "https://www.iter.org/machine/supporting-systems/diagnostics"
+        }
       ]
     },
     {
       "id": "cryopumps",
       "name": "Cryopumps",
-      "does": "Pumps that catch gas on very cold panels coated with activated charcoal and cooled with supercritical helium. They pump the helium ash and the unburnt fuel out of the vessel and keep the vacuum in the cryostat.",
+      "does": "Pumps that catch gas on very cold panels coated with activated charcoal and cooled with supercritical helium. The six torus pumps sit in the lower (divertor) ports of the vacuum vessel; they pump the helium ash and the unburnt fuel out. Two more keep the vacuum in the cryostat.",
       "number": "$6$ torus exhaust pumps, $2$ cryostat cryopumps, $4$ for the neutral beam injectors",
       "hard": "Helium is hard to catch. The charcoal (made from coconut shells) traps it only when it is extremely cold, and the panels fill up, so they must be emptied regularly by warming them.",
       "find": "the pumps with very cold panels that take the helium ash and unburnt fuel out of the vessel",
-      "hint": "In the drawing one sits in a lower port, below the level of the divertor.",
+      "hint": "In the drawing one sits in a lower (divertor) port, below the level of the divertor.",
       "sources": [
-        {"title": "ITER: Vacuum system", "url": "https://www.iter.org/machine/supporting-systems/vacuum-system"}
+        {
+          "title": "ITER: Vacuum system",
+          "url": "https://www.iter.org/machine/supporting-systems/vacuum-system"
+        },
+        {
+          "title": "ITER Newsline: First unit reaches ITER (June 2024)",
+          "url": "https://www.iter.org/node/20687/first-unit-reaches-iter"
+        }
       ]
     }
   ],
@@ -174,55 +232,130 @@
       "$Q$ compares the fusion power made in the plasma with the heating power put into the plasma.",
       "$Q = 1$ is **scientific breakeven**: the plasma makes as much fusion power as it receives.",
       "ITER's goal is $Q = 10$: $500\\ \\text{MW}$ of fusion power from $50\\ \\text{MW}$ of heating, in pulses of $400\\ \\text{s}$ to $600\\ \\text{s}$.",
-      "$Q$ is a plasma gain, **not electricity**. ITER will not turn its heat into electricity, and the whole plant needs far more electrical power than the $50\\ \\text{MW}$ that reaches the plasma (over $300\\ \\text{MW}$, according to Wikipedia)."
+      "$Q$ is a plasma gain, **not electricity**. ITER will not turn its heat into electricity. During operation the whole plant draws far more electricity than the $50\\ \\text{MW}$ of heating that reaches the plasma: from about $110\\ \\text{MW}$ up to $620\\ \\text{MW}$ in peaks of $30\\ \\text{s}$. About $80\\%$ of it goes to the cooling water and the cryogenic systems."
     ],
     "sources": [
-      {"title": "ITER: What will ITER do?", "url": "https://www.iter.org/fusion-energy/what-will-iter-do"},
-      {"title": "ITER: Facts & figures", "url": "https://www.iter.org/facts-figures"},
-      {"title": "Wikipedia: ITER", "url": "https://en.wikipedia.org/wiki/ITER"}
+      {
+        "title": "ITER: What will ITER do?",
+        "url": "https://www.iter.org/fusion-energy/what-will-iter-do"
+      },
+      {
+        "title": "ITER: Facts & figures",
+        "url": "https://www.iter.org/facts-figures"
+      },
+      {
+        "title": "ITER: Power supply",
+        "url": "https://www.iter.org/machine/supporting-systems/power-supply"
+      }
     ]
   },
   "schedule": {
     "baseline": "The baseline that ITER presented on 3 July 2024 (it replaced the earlier baseline).",
     "items": [
-      {"year": 2005, "event": "The ITER Members choose the site in southern France (June 2005)."},
-      {"year": 2034, "event": "Start of Research Operation (SRO): the first plasma experiments with the full machine."},
-      {"year": 2035, "event": "Deuterium–deuterium (D–D) fusion operation."},
-      {"year": 2036, "event": "Full magnetic energy."},
-      {"year": 2039, "event": "Deuterium–tritium (D–T) operation begins."}
+      {
+        "year": 2005,
+        "event": "The ITER Members choose the site in southern France (June 2005)."
+      },
+      {
+        "year": 2034,
+        "event": "Start of Research Operation (SRO): the first plasma experiments with a more complete machine."
+      },
+      {
+        "year": 2035,
+        "event": "Deuterium–deuterium (D–D) fusion operation."
+      },
+      {
+        "year": 2036,
+        "event": "Full magnetic energy."
+      },
+      {
+        "year": 2039,
+        "event": "Deuterium–tritium (D–T) operation begins."
+      }
     ],
     "note": "These are planned dates. ITER's schedule has changed before; check the date of any plan you quote.",
     "sources": [
-      {"title": "ITER baseline press conference summary, 3 July 2024 (PDF)", "url": "https://www.iter.org/sites/default/files/media/2024-07/baseline_press_conference_summary_july-2024_b.pdf"},
-      {"title": "Wikipedia: ITER", "url": "https://en.wikipedia.org/wiki/ITER"},
-      {"title": "ITER France", "url": "https://www.iter.org/about/iter-france"}
+      {
+        "title": "ITER baseline press conference summary, 3 July 2024 (PDF)",
+        "url": "https://www.iter.org/sites/default/files/media/2024-07/baseline_press_conference_summary_july-2024_b.pdf"
+      },
+      {
+        "title": "Wikipedia: ITER",
+        "url": "https://en.wikipedia.org/wiki/ITER"
+      },
+      {
+        "title": "ITER France",
+        "url": "https://www.iter.org/about/iter-france"
+      }
     ]
   },
   "members": {
     "list": [
-      {"name": "European Union", "share": "45.6%"},
-      {"name": "China", "share": "9.1%"},
-      {"name": "India", "share": "9.1%"},
-      {"name": "Japan", "share": "9.1%"},
-      {"name": "Korea", "share": "9.1%"},
-      {"name": "Russia", "share": "9.1%"},
-      {"name": "United States", "share": "9.1%"}
+      {
+        "name": "European Union",
+        "share": "45.6%"
+      },
+      {
+        "name": "China",
+        "share": "9.1%"
+      },
+      {
+        "name": "India",
+        "share": "9.1%"
+      },
+      {
+        "name": "Japan",
+        "share": "9.1%"
+      },
+      {
+        "name": "Korea",
+        "share": "9.1%"
+      },
+      {
+        "name": "Russia",
+        "share": "9.1%"
+      },
+      {
+        "name": "United States",
+        "share": "9.1%"
+      }
     ],
     "share_note": "Shares of the construction costs. As host, the European Union pays the largest part.",
     "cooperation": [
-      {"name": "Australia", "year": 2016, "note": "technical cooperation agreement through ANSTO"},
-      {"name": "Kazakhstan", "year": 2017, "note": "through the National Nuclear Center; extended in 2025"},
-      {"name": "Canada", "year": 2020, "note": "technical cooperation agreement"}
+      {
+        "name": "Australia",
+        "year": 2016,
+        "note": "technical cooperation agreement through ANSTO"
+      },
+      {
+        "name": "Kazakhstan",
+        "year": 2017,
+        "note": "through the National Nuclear Center; extended in 2025"
+      },
+      {
+        "name": "Canada",
+        "year": 2020,
+        "note": "technical cooperation agreement"
+      }
     ],
     "sources": [
-      {"title": "ITER: ITER Members", "url": "https://www.iter.org/about/iter-members"}
+      {
+        "title": "ITER: ITER Members",
+        "url": "https://www.iter.org/about/iter-members"
+      }
     ]
   },
   "site": {
     "text": "Saint-Paul-lez-Durance in southern France, next to the CEA Cadarache research centre. The 180-hectare site has a 42-hectare platform in the middle where the machine is built.",
     "sources": [
-      {"title": "ITER: Facts & figures", "url": "https://www.iter.org/facts-figures"},
-      {"title": "ITER France", "url": "https://www.iter.org/about/iter-france"}
+      {
+        "title": "ITER: Facts & figures",
+        "url": "https://www.iter.org/facts-figures"
+      },
+      {
+        "title": "ITER France",
+        "url": "https://www.iter.org/about/iter-france"
+      }
     ]
   }
 }
