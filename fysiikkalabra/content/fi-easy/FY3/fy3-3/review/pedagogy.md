@@ -1,10 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 6fe743a380049a03
+CONTENT-HASH: 37f0e60480e34b50
 
 ## Blocking
+(none)
 
 ## Polish
-- A goal keeps a short second sentence of explanation after the -maan/-mään clause; it reads acceptably in Selkeä suomi, but folding it into the clause would be tidier.
+- none
 
 ## Checked
-batch delta review: every `learn` goal completes "Tällä tunnilla opit" with a lowercase -maan/-mään verb in parallel form; the skill, demand, key terms, symbols and numbers match the previous wording; plain Selkeä suomi.
+- Teaching sequence, levels, step order (given, principle, symbolic, substitution, answer, reasonableness) and activities identical to the reviewed Finnish; nothing added or removed in translation.
+- plain Finnish: short main-clause sentences kept, Finnish symbol subscripts kept.
+- Latest change: inquiry transfer-task solution substitution re-typeset (100·3 °C); matches the Finnish exactly.
+- Task wording keeps what the student must work out undisclosed; hints and feedback repair the same misconceptions as the Finnish.

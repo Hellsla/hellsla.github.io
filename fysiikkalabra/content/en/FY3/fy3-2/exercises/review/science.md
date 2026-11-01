@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 9150b8c06ea719e7
+CONTENT-HASH: d1ba268bbb90b188
 
 ## Blocking
-(none left; list what you fixed under Fixed)
-
-## Fixed
-- fy3-2 update: unit values in the changed Finnish texts wrapped in math, en decimal point kept; no further issues found.
+(none)
 
 ## Polish
 - none
 
 ## Checked
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): all 12 exercise texts in exercises.json and every solution step in solutions.md (Given … Reasonableness): quantities, directions (at least / at most bounds in L2-04, average vs peak in L3-01), assumptions in L3-02 and L3-03, numbers, units, decimal points and significant-figure statements match the Finnish; terms (trapezium, displacement, lifting work) correct.
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked exercise texts, the new figure task L1-04 and its solution, and the solution unit math.
+- Translation review against the reviewed Finnish (teacher's procedure 2026-10-28): all 12 exercise texts, solutions and answers compared with content/fi; every number, inline-math value with unit, formula, symbol and answer matches (automatic math/number diff clean; only language and subscript words differ).
+- Physics unchanged from the Finnish: conditions stated (dilute gas, constant V and n; rigid container; extrapolation as model), recomputed key results (W, P, F_avg, trapezium areas) agree.
+- English: natural, no Finnish words left, units and symbols (F_avg, A_rectangle, etc.) translated.
+- The typesetting round only wrapped values and units in math and split a few sentences ("... m: calculation" colons); no number, formula or answer changed.
+- check_i18n.py: 0 errors for en.

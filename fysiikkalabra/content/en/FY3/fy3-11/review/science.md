@@ -1,17 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 6a250e96e0e41497
+CONTENT-HASH: 59f8c6d98072df03
 
 ## Blocking
-(none left; see Fixed)
+(none)
 
 ## Fixed
-- content/en/FY3/fy3-11/lesson.md (Refrigerator and heat pump) — "three times the power of the electric power it uses" was clumsy and could be read as comparing the wrong powers → "three times as much heating power as the electric power it uses"
-- content/en/FY3/fy3-11/meta.json glossary — "yhteistuotanto" and "lauhdevoimalaitos" were left in Finnish → "combined heat and power", "condensing power plant"
+- none needed
 
 ## Polish
-- The experiment tables show the select value "sama paine" / "jäähdytys ensin" in Finnish in the setup line and rows, because the Finnish inquiry.json has no `values` map ({paluu: {...}}). A `values` map in en is refused by check_i18n (keys differ from Finnish). Add it to the Finnish source first, then en can show "at the same pressure" / "cool first".
+- The lesson figures and the simulation draw their own symbols from shared code (lessons/FY3/fy3-11/figures.py, sim.js): they show $W_\text{k}$ (and $E_\text{s}$ in the heat-pump figure label) while the English text uses $W_\text{g}$ / $E_\text{el}$. Not a translation file and meaning is unambiguous from the figure captions and the text; suggest letting the shared code take the symbols from the language.
 
 ## Checked
-- Update 2026-10-28: meta.json glossary terms restored to English (the update tool had reverted them to Finnish); pages unchanged.
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): lesson.md, inquiry.json (all activities, hints, feedback, solutions, experiment names/intros), exit-ticket.json, meta.json, figures.json and the sim labels (lang/en.json sims.fy3-11). Science: meaning, signs (W_g, Delta U = Q - W_g), numbers, units, terms, chapter titles and decimal sign compared with the Finnish.
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked lesson, inquiry (check-c2 heat-pump item, units, feedback), exit ticket, figure description.
+Full translation review (English) of lesson.md, inquiry.json, exit-ticket.json, figures.json and meta.json against the reviewed Finnish. Script comparison of all numbers and inline LaTeX: every value, unit and answer equals the Finnish (worked example 38.0 % / 310 MW and 88.0 % / 60 MW; $W = p\Delta V$; $\Delta U = Q - W_\text{g}$ sign convention and $W = -W_\text{g}$ kept). Symbol subscripts translated consistently in text, inquiry and solutions. Physics statements (second law, cogeneration, heat pump COP can exceed 1, no work without volume change) agree with the Finnish. No Finnish words left. check_i18n 0 errors.

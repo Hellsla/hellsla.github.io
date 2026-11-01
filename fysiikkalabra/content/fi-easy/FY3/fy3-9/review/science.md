@@ -1,16 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: ab4f0a6870837ccf
+CONTENT-HASH: 30ee8b4a6ddae833
 
 ## Blocking
-(none left)
+(none)
 
 ## Fixed
 - none needed
 
 ## Polish
-- Terminology and decimal point consistent; no meaning changed.
+- None for the translation. (Shared sim.js and figure code are not translation files.)
 
 ## Checked
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): compared lesson.md, inquiry.json, exit-ticket.json, meta.json, figures.json, and the simulation labels with the Finnish source for meaning, physics terms, units, sign/causality, chapter titles, figure texts (each value translates its own key), and Selkeä suomi level without lowering the cognitive demand.
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked lesson.md, inquiry.json (new check-c2 item, rewording of dilute-gas/measurement-uncertainty claims), exit-ticket.json (1 question) and figures.json (boyle-points) against the new Finnish.
-- Update 2026-10-29 (sim LaTeX PR #132): sim.js lost the dial numbers and the gauge's kPa label; the reading with its unit ($p$ in kPa, one decimal) stands above the gauge and matches the readout and the graph's $p$ (kPa) axis. Every sims.fy3-9 key is present in lang/fi-easy.json with the same placeholders, units and LaTeX as the Finnish; the PR added or removed no key. Canvas captures at 390 and 1280 px: thermometer °C scale, $T$ in K, $V$ in ml, axis labels and the gauge reading render in KaTeX with no raw $ or missing keys. test_sims fy3-9 PASS in this language. No lesson text changed in the Finnish source or the translation since the last PASS.
+Full translation review (Selkeä suomi) of lesson.md, inquiry.json, exit-ticket.json, figures.json and meta.json against the reviewed Finnish. Every number, unit, value, formula and answer matches the Finnish in the same place (checked by a script comparing all numbers and inline LaTeX line by line and key by key); the worked example (V2 = p1V1/p2 = 1.036 l, 1.0 l to two figures, pV = 80.8 kPa·l) and the three misconceptions agree with the Finnish. Micro-model, Boyle, absolute-zero and kelvin figures: viewBox values equal the Finnish (kelvin figure widened as in the Finnish), figure labels translated. Teaching sequence (key idea, experiment, formula, worked example in stages, misconceptions, summary) is unchanged. No Finnish words left in the text, units or labels. check_i18n 0 errors.

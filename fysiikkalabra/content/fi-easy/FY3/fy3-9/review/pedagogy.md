@@ -1,10 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 1b250c4eae57155d
+CONTENT-HASH: 30ee8b4a6ddae833
 
 ## Blocking
+(none)
+
+## Fixed
+- none needed
 
 ## Polish
-- A goal keeps a short second sentence of explanation after the -maan/-mään clause; it reads acceptably in Selkeä suomi, but folding it into the clause would be tidier.
+- None.
 
 ## Checked
-batch delta review: every `learn` goal completes "Tällä tunnilla opit" with a lowercase -maan/-mään verb in parallel form; the skill, demand, key terms, symbols and numbers match the previous wording; plain Selkeä suomi.
+Same section order, stages, predictions, experiments, feedback and exit ticket as the Finnish; the typesetting round is applied identically. Sentences are short and clear, terms explained in plain words (e.g. harva kaasu = particles far apart; kääntäen verrannollisuus explained as doubling V halves p).

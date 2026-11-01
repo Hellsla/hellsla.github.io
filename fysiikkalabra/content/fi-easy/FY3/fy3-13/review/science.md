@@ -1,15 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 8880c7068bb75dd3
-
+CONTENT-HASH: 8ac41027cacb6e6c
 ## Blocking
-(none left; see Fixed)
-
-## Fixed
-- lesson.md:~171 — figure aria-label read "Merkki ±1 kPa:n virhejanat ovat pisteiden kokoisia" (stray word "Merkki") → "Virhejanat (±1 kPa) ovat pisteiden kokoisia"
-
+(none)
 ## Polish
-- none
-
+(none)
 ## Checked
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): lesson.md, inquiry.json (prompts, choices, feedback, hints, solutions, model answers), exit-ticket.json, figures.json and SVG aria-labels against the Finnish: sentences are short, all terms kept (ekstrapolointi, mittausepävarmuus explained on first use), no step, hint or feedback dropped; lesson.md and solutions.md differ from the Finnish.
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked lesson.md, inquiry.json (incl. new check-c2 multiple-choice item and its feedback), exit-ticket.json (now 2 questions), figures.json for both the physics audit and the figures/assessment changes against the new Finnish; the correct choice of the new item stays unambiguous, units and decimal signs follow the language.
+- Translation reviewed against the reviewed Finnish source (fy3-13, fi-easy): every number, unit, symbol and formula agrees (script comparison of all numbers after decimal-mark normalisation: lesson.md, inquiry.json, exit-ticket.json; only SVG label coordinates differ, as expected).
+- inquiry.json and exit-ticket.json have the same structure as the Finnish: same correct options, numeric answers, hint and option counts.
+- Inline-LaTeX typesetting round applied: signs now inside the maths ($+15\,{}^\circ\text{C}$), values with units and symbols as in the Finnish.
+- Physics, model conditions and worked-example reasoning identical to the Finnish; no content added or dropped.
+- Selkeä suomi: short clear sentences, glossary terms and Finnish number format as in the source; case after number+unit correct (esim. -18 °C:n, +15 °C:een).

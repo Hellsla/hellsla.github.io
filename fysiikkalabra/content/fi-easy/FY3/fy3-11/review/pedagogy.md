@@ -1,10 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 04281790c95f9cd7
+CONTENT-HASH: 2263e91e4536bee2
 
 ## Blocking
+(none)
+
+## Fixed
+- none needed
 
 ## Polish
 - None.
 
 ## Checked
-batch delta review: every `learn` goal completes "Tällä tunnilla opit" with a lowercase -maan/-mään verb in parallel form; the skill, demand, key terms, symbols and numbers match the previous wording; plain Selkeä suomi.
+Same sections, worked-example stages, predictions, experiments, feedback and exit ticket as the Finnish; typesetting identical. Natural English / plain short Finnish sentences.

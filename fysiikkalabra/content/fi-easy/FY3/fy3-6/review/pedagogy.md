@@ -1,10 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: c81e80773a7261cd
+CONTENT-HASH: a487caa4b89e2d12
 
 ## Blocking
+(none)
 
 ## Polish
-- None.
+(none)
 
 ## Checked
-batch delta review: every `learn` goal completes "Tällä tunnilla opit" with a lowercase -maan/-mään verb in parallel form; the skill, demand, key terms, symbols and numbers match the previous wording; plain Selkeä suomi.
+- Translation reviewed against the reviewed Finnish after the typesetting round: every inline-math segment of lesson.md, inquiry.json, exit-ticket.json, figures.json compared with the Finnish (same numbers, units, symbols, decimal comma); no bare number+unit left outside LaTeX; sentences remain short and plain; JSON valid; check_i18n 0 errors for fi-easy.
+- Pedagogy: teaching sequence, staging, tasks, feedback and hints identical in structure to the Finnish; units in LaTeX read cleanly; language natural.
+- Translation-only review (teacher's procedure 2026-10-28); no translation edits were needed.

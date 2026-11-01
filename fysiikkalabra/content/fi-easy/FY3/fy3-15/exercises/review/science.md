@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 49e4e98f5f76430f
+CONTENT-HASH: d1b5be1ad9b4b8ac
 
 ## Blocking
-(none left; see Fixed)
+(none)
 
 ## Fixed
-- exercises.json level3/1 text — the conditional "Jos sama sähkö tuotettaisiin" had become a flat statement "Sama sähkö tuotettaisiin" → "Ajatellaan, että sama sähkö tuotettaisiin kivihiilellä ..." (hypothetical restored)
+- None.
 
 ## Polish
 - None.
 
 ## Checked
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): compared exercises.json and solutions.md with the Finnish for meaning, sign/causality, quantities, units, numbers in prose, formulas, chapter titles (courses.json), solution steps and step labels. No physics changed, added or lost.
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked exercises.json and solutions.md against the new Finnish.
+- Translation review against the reviewed Finnish (teacher's procedure 2026-10-28), after the typesetting round: exercises.json (answers, units, tolerances, figure id) and solutions.md compared with content/fi; every number in all 12 texts and solutions matches by script; recomputed L1-01 90.2 %, L2-01 109 MW, L2-04 7.16 t/s, L3-01 206 MW / 67.6 %, L3-02 13.6 kt, L3-03 87.7 kWh. Values with units set as inline LaTeX like the Finnish; no Finnish words left.

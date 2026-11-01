@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 9b9ed5fc0b569643
+CONTENT-HASH: bf0594d55683fe21
 
 ## Blocking
-(none left; see Fixed)
+(none)
 
 ## Fixed
-- (none)
+- none needed
 
 ## Polish
 - None.
 
 ## Checked
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): exercises.json (texts, units, answers) and solutions.md, all 17 tasks. Science: meaning, signs (W_g, Delta U = Q - W_g), numbers, units, terms, chapter titles and decimal sign compared with the Finnish.
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked exercises (solutions, task texts, new figure task fy3-11-L1-04 with Reading the graph step) in Selkeä suomi.
+Translation review of exercises.json and solutions.md against the reviewed Finnish. A script comparing every number, unit, inline formula and answer found no difference (only symbol subscripts translated consistently: W_g / P_e / P_dh / E_el etc. in English). Answers and worked solutions unchanged: e.g. W = 480 kPa·0.0250 m³ = 12.0 kJ, 172 J, 37.2 % efficiencies, 720 kW, heat pump 9.60 MWh from outdoors; the sign convention ΔU = Q - W_gas is kept. answers.py is shared and not a translation file. check_i18n 0 errors.

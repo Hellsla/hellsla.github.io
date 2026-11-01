@@ -1,8 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 738ad504ed25803e
+CONTENT-HASH: 59f8c6d98072df03
+
 ## Blocking
 (none)
+
+## Fixed
+- none needed
+
 ## Polish
-(none)
+- None.
+
 ## Checked
-batch delta review: only `learn` changed; each goal now completes "In this lesson, you will learn to" as a bare lowercase verb, parallel across the list, and keeps the same skill, demand, physics, symbols and numbers as the old "You can ..." wording.
+Same sections, worked-example stages, predictions, experiments, feedback and exit ticket as the Finnish; typesetting identical. Natural English / plain short Finnish sentences.
