@@ -114,7 +114,7 @@
 @container content (min-width:56rem){.fx-map-main{grid-template-columns:minmax(0,1.6fr) minmax(0,1fr)}}
 .fx-map-canvas{width:100%;min-height:320px;border:1px solid var(--line);border-radius:var(--inner-radius);overflow:hidden;background:#dfe9ef;z-index:0}
 @media (max-width:40rem){.fx-map-canvas{height:60vh!important;max-height:420px}}
-.fx-map-panel{border:1px solid var(--line);border-radius:var(--inner-radius);background:var(--surface);padding:1rem 1.1rem;font-size:var(--fs-inner);max-height:520px;overflow:auto}
+.fx-map-panel{border:1px solid var(--line);border-radius:var(--inner-radius);background:var(--surface);padding:1rem 1.1rem;font-size:var(--fs-inner);max-height:520px;overflow:auto;scroll-margin-top:var(--sticky-top)}
 .fx-map-panel h4{margin:.2rem 0 .3rem;font-size:var(--fs-h3);font-family:var(--serif)}
 .fx-map-kicker,.fx-map-where{font-size:var(--fs-small);color:var(--ink-2);margin:0 0 .3rem;display:flex;align-items:center;gap:.4rem;flex-wrap:wrap}
 .fx-map-src{font-size:var(--fs-small)}
@@ -145,9 +145,10 @@
    viewBox, so they scale with the figure; the font follows the figure's width (container units). ===== */
 .fx-plot{position:relative;container-type:inline-size;border:1px solid var(--line);border-radius:var(--inner-radius);background:var(--fig-paper)}
 .fx-plot>svg{display:block;width:100%;height:auto}
-.fx-labs{position:absolute;inset:0;pointer-events:none}
+.fx-labs{position:absolute;inset:0;pointer-events:none;z-index:1}
 .fx-lab{position:absolute;transform:translate(-50%,-50%);white-space:nowrap;font-size:clamp(14px,2.45cqw,16px);line-height:1;color:var(--fig-ink)}
 .fx-lab .katex{font-size:1.05em}
+.fx-lab{text-shadow:0 0 2px var(--fig-paper),0 0 2px var(--fig-paper),0 0 3px var(--fig-paper),0 0 4px var(--fig-paper)}   /* a halo: a label stays readable over a point or a line */
 .fx-lab-start{transform:translate(0,-50%)}
 .fx-lab-end{transform:translate(-100%,-50%)}
 .fx-lab.fx-lab-abs{transform:none}

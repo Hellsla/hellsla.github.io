@@ -1,5 +1,5 @@
 {
-  "_about": "Fusion research facilities for the FY14 Global Fusion Explorer. Each fact was checked against the listed sources on the date given. Not an exhaustive list. country is today's country; country_then names the state at the time when it differed (Soviet Union, West Germany).",
+  "_about": "Fusion research facilities for the FY14 Global Fusion Explorer. Each fact was checked against the listed sources on the date given. Not an exhaustive list. country is today's country; country_then names the state at the time when it differed (Soviet Union, West Germany). end is null when the machine still runs or its end year was not found; for a retired machine last_seen (optional) is the latest year a source shows it running.",
   "checked": "2026-11-01",
   "categories": {
     "tokamak": "Tokamak",
@@ -76,7 +76,7 @@
           "url": "https://en.wikipedia.org/wiki/List_of_fusion_experiments"
         }
       ],
-      "note": "End year not verified. Plotted at today's PPPL site; the exact building of the 1950s machine was not verified."
+      "note": "End year not verified, so the year filter counts it only to start + 10. Plotted at today's PPPL site; the exact building of the 1950s machine was not verified."
     },
     {
       "id": "model-b",
@@ -164,7 +164,7 @@
           "url": "https://en.wikipedia.org/wiki/Perhapsatron"
         }
       ],
-      "note": "The first device was built in winter 1952–53; end year not verified (Z-pinch work at Los Alamos had largely ended by 1961). Coordinates are for LANL in general."
+      "note": "The first device was built in winter 1952–53; end year not verified, so the year filter counts it only to start + 10 (Z-pinch work at Los Alamos had largely ended by 1961). Coordinates are for LANL in general."
     },
     {
       "id": "scylla",
@@ -191,7 +191,7 @@
           "url": "https://en.wikipedia.org/wiki/Theta_pinch"
         }
       ],
-      "note": "End year for Scylla I not verified. Coordinates are for LANL in general."
+      "note": "End year for Scylla I not verified, so the year filter counts it only to 1968 (start + 10). Coordinates are for LANL in general."
     },
     {
       "id": "t-1",
@@ -241,7 +241,7 @@
       "lat": 55.795,
       "lon": 37.473,
       "operator": "Kurchatov Institute",
-      "start": null,
+      "start": 1962,
       "end": null,
       "achievements": [
         "Electron temperature of about 1000 eV (about 10 million K) reported in 1968",
@@ -262,7 +262,7 @@
           "url": "https://en.wikipedia.org/wiki/List_of_fusion_experiments"
         }
       ],
-      "note": "Start year uncertain: sources give 1960 (Kurchatov Institute article) and 1962 (List of fusion experiments). End year not given in sources."
+      "note": "Start: 1962, first operation as given by the List of fusion experiments (construction 1960; the Kurchatov Institute article gives 1960). End year not given in sources, so the year filter counts it only to 1972 (start + 10)."
     },
     {
       "id": "symmetric-tokamak",
@@ -325,9 +325,14 @@
         {
           "title": "On the Program of Russian Research in the Field of Controlled Thermonuclear Fusion (Plasma Physics Reports, 2021)",
           "url": "https://link.springer.com/10.1134/S1063780X21110179"
+        },
+        {
+          "title": "Review of Recent Experiments on the T-10 Tokamak with All Metal Wall (Sarychev et al., IAEA Fusion Energy Conference, Kyoto, 18 October 2016)",
+          "url": "https://conferences.iaea.org/event/98/contributions/11890"
         }
       ],
-      "note": "A 2021 paper describes T-10 as being replaced by T-15MD; the exact last year of operation could not be verified, so end is null."
+      "note": "End year not found in the sources: a 2021 paper describes T-10 as being replaced by T-15MD. last_seen = 2015: a talk at the 2016 IAEA Fusion Energy Conference reports experiments after the limiters were replaced with tungsten ones in 2015. The year filter counts T-10 to 2015.",
+      "last_seen": 2015
     },
     {
       "id": "t-15",
@@ -390,6 +395,38 @@
         }
       ],
       "note": null
+    },
+    {
+      "id": "tfr",
+      "name": "TFR",
+      "full_name": "Tokamak de Fontenay-aux-Roses",
+      "category": "tokamak",
+      "status": "retired",
+      "country": "France",
+      "country_code": "FR",
+      "site": "CEA Fontenay-aux-Roses, near Paris",
+      "lat": 48.789,
+      "lon": 2.287,
+      "operator": "CEA (French Atomic Energy Commission)",
+      "start": 1973,
+      "end": 1986,
+      "achievements": [
+        "First plasma on 22 March 1973: the first French tokamak",
+        "World's most powerful tokamak until 1976, when the Princeton Large Torus passed it",
+        "Ion temperatures of 1 keV in 1974 and about 2 keV with neutral beam heating by the end of 1975"
+      ],
+      "importance": "TFR was France's first tokamak, built soon after the Soviet T-3 results, and for a few years the most powerful tokamak in the world. It showed that the tokamak idea worked outside the Soviet Union too. It was replaced by Tore Supra at Cadarache.",
+      "sources": [
+        {
+          "title": "Tokamak de Fontenay-aux-Roses (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Tokamak_de_Fontenay-aux-Roses"
+        },
+        {
+          "title": "List of fusion experiments (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/List_of_fusion_experiments"
+        }
+      ],
+      "note": "End: 1986 (TFR article: decommissioned in 1986); the List of fusion experiments gives 1973–1984. Coordinates are city-level for Fontenay-aux-Roses, not the exact building."
     },
     {
       "id": "plt",
@@ -497,9 +534,10 @@
       "lon": -74.602,
       "operator": "Princeton Plasma Physics Laboratory",
       "start": 1999,
-      "end": null,
+      "end": 2012,
       "achievements": [
-        "First plasma on 12 February 1999"
+        "First plasma on 12 February 1999",
+        "Shut down in 2012 for the upgrade to NSTX-U"
       ],
       "importance": "NSTX was one of the two large spherical tokamaks of its time, together with MAST in the UK. A spherical tokamak is shaped more like a cored apple than a doughnut and can hold a higher plasma pressure for the same magnetic field. NSTX was rebuilt as NSTX-U.",
       "sources": [
@@ -508,7 +546,7 @@
           "url": "https://en.wikipedia.org/wiki/National_Spherical_Torus_Experiment"
         }
       ],
-      "note": "End of NSTX operation (before the upgrade completed in 2015) not verified."
+      "note": "End: 2012, when NSTX was shut down for the upgrade (NSTX article)."
     },
     {
       "id": "nstx-u",
@@ -850,6 +888,38 @@
       "note": null
     },
     {
+      "id": "pulsator",
+      "name": "Pulsator",
+      "full_name": "Pulsator tokamak",
+      "category": "tokamak",
+      "status": "retired",
+      "country": "Germany",
+      "country_then": "West Germany",
+      "country_code": "DE",
+      "site": "Max Planck Institute for Plasma Physics, Garching",
+      "lat": 48.262,
+      "lon": 11.676,
+      "operator": "Max Planck Institute for Plasma Physics (IPP)",
+      "start": 1973,
+      "end": 1979,
+      "achievements": [
+        "IPP's first tokamak (1973–1979)",
+        "Discovered high-density operation: plasma density raised to seven times what had been possible"
+      ],
+      "importance": "Pulsator was a small tokamak, heated only by its own plasma current. It found a way to run tokamaks at much higher density, which brought plasmas a step closer to ignition. It began the Garching tokamak line that led to ASDEX and ASDEX Upgrade.",
+      "sources": [
+        {
+          "title": "Pulsator (Max Planck Institute for Plasma Physics)",
+          "url": "https://www.ipp.mpg.de/3951851/pulsator"
+        },
+        {
+          "title": "List of fusion experiments (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/List_of_fusion_experiments"
+        }
+      ],
+      "note": "Plotted at the shared site point so the map can group devices at this site."
+    },
+    {
       "id": "asdex",
       "name": "ASDEX",
       "full_name": "Axially Symmetric Divertor Experiment",
@@ -918,7 +988,6 @@
       "category": "stellarator",
       "status": "retired",
       "country": "Germany",
-      "country_then": "West Germany",
       "country_code": "DE",
       "site": "Max Planck Institute for Plasma Physics, Garching",
       "lat": 48.262,
@@ -1046,7 +1115,7 @@
       "lon": 104.063,
       "operator": "Southwestern Institute of Physics (CNNC)",
       "start": 2002,
-      "end": null,
+      "end": 2018,
       "achievements": [
         "First tokamak with a divertor in China (2002)"
       ],
@@ -1065,7 +1134,7 @@
           "url": "https://en.wikipedia.org/wiki/List_of_fusion_experiments"
         }
       ],
-      "note": "Status uncertain: the List of fusion experiments gives 2002–2018, while the HL-2A article lists it as operating. End left null. Coordinates are city-level (Wikipedia city page); the exact site could not be verified."
+      "note": "End: 2018 as given by the List of fusion experiments (2002–2018); the HL-2A article still says 2002–present, so the end year is uncertain. Coordinates are city-level (Wikipedia city page); the exact site could not be verified."
     },
     {
       "id": "hl-3",
@@ -1187,10 +1256,10 @@
       "lat": 23.098,
       "lon": 72.626,
       "operator": "Institute for Plasma Research (IPR)",
-      "start": null,
+      "start": 2013,
       "end": null,
       "achievements": [
-        "Fully commissioned in 2013",
+        "First plasma on 20 June 2013",
         "Repeatable plasmas up to about 500 ms with currents above 75 kA (2015)"
       ],
       "importance": "SST-1 is India's superconducting tokamak and the country's largest. It was built to study long, steady pulses and helped India become a full ITER partner. It will be followed by the planned SST-2.",
@@ -1202,9 +1271,13 @@
         {
           "title": "Institute for Plasma Research (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/Institute_for_Plasma_Research"
+        },
+        {
+          "title": "SST-1 overview (IAEA Fusion Energy Conference 2014, OV/5-5)",
+          "url": "https://conferences.iaea.org/event/46/contributions/8286/attachments/3335/4024/OV_5-5.pdf"
         }
       ],
-      "note": "First plasma year not verified (machine fabricated by 2005, fully commissioned 2013). Current operating status not confirmed beyond Wikipedia's '2005–present'. Plotted at the shared site point so the map can group devices at this site."
+      "note": "Start: first plasma 20 June 2013 (IAEA overview OV/5-5); Wikipedia's '2005–present' counts from fabrication. Current operating status not confirmed beyond Wikipedia. Plotted at the shared site point so the map can group devices at this site."
     },
     {
       "id": "aditya",
@@ -1276,7 +1349,6 @@
       "category": "tokamak",
       "status": "retired",
       "country": "Germany",
-      "country_then": "West Germany",
       "country_code": "DE",
       "site": "Forschungszentrum Jülich",
       "lat": 50.905,
@@ -1326,9 +1398,14 @@
         {
           "title": "La fusione nucleare (ENEA Open Day della Ricerca)",
           "url": "https://www.opendaydellaricerca.enea.it/iniziative-frascati/laboratorio-di-ricerca/la-fusione-nucleare-soluzione-sostenibile-al-problema-energetico.html"
+        },
+        {
+          "title": "Overview of the FTU results (Pucella et al., Nucl. Fusion 59, 112015, 2019)",
+          "url": "https://infoscience.epfl.ch/record/271659/files/Pucella_2019_Nucl._Fusion_59_112015.pdf"
         }
       ],
-      "note": "End year not verified: an ENEA page says FTU will be dismantled to make room for DTT, but Wikipedia still lists 1989–present. Coordinates are city-level (Wikipedia city page); the exact site could not be verified."
+      "note": "End year not found in the sources: an ENEA page says FTU will be dismantled to make room for DTT, and the 2019 overview reports experiments after the 2016 IAEA conference, so last_seen = 2017 (the latest year a source shows it running). Coordinates are city-level (Wikipedia city page); the exact site could not be verified.",
+      "last_seen": 2017
     },
     {
       "id": "dtt",
@@ -1361,6 +1438,34 @@
       "note": "Planned first plasma about 2029 according to the List of fusion experiments (uncertain). Coordinates are city-level (Wikipedia city page); the exact site could not be verified."
     },
     {
+      "id": "compass-culham",
+      "name": "COMPASS (Culham)",
+      "full_name": "COMPact ASSembly tokamak at Culham",
+      "category": "tokamak",
+      "status": "retired",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "site": "Culham Campus, Oxfordshire",
+      "lat": 51.659,
+      "lon": -1.228,
+      "operator": "UKAEA",
+      "start": 1989,
+      "end": 2002,
+      "achievements": [
+        "First plasma in 1989 in a C-shaped (circular) vessel",
+        "Restarted with a D-shaped vessel in 1992 (COMPASS-D)",
+        "Sent to Prague in autumn 2004"
+      ],
+      "importance": "COMPASS was a small British tokamak built at Culham. Its D-shaped vessel gave the plasma a shape like that planned for ITER. When Culham turned to the spherical tokamak MAST, the machine was given to the Czech Republic.",
+      "sources": [
+        {
+          "title": "COMPASS tokamak (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/COMPASS_tokamak"
+        }
+      ],
+      "note": "Wikipedia gives 1989 for the first plasma and 1992–2002 for the years of operation in the UK (with the D-shaped vessel). Plotted at the shared Culham site point."
+    },
+    {
       "id": "compass",
       "name": "COMPASS",
       "full_name": "COMPact ASSembly tokamak",
@@ -1372,20 +1477,24 @@
       "lat": 50.112,
       "lon": 14.47,
       "operator": "Institute of Plasma Physics, Czech Academy of Sciences",
-      "start": 1989,
+      "start": 2008,
       "end": 2021,
       "achievements": [
-        "Built at Culham (1989), restarted in Prague in 2006",
+        "First plasma in Prague on 9 December 2008",
         "Last experiments on 20 August 2021"
       ],
-      "importance": "COMPASS began as a British tokamak and was given a second life in Prague. With an ITER-like plasma shape it let a smaller lab do research useful for ITER. It made the Czech Republic an active fusion country.",
+      "importance": "COMPASS began as a British tokamak at Culham and was given a second life in Prague. With an ITER-like plasma shape it let a smaller lab do research useful for ITER. It made the Czech Republic an active fusion country.",
       "sources": [
         {
           "title": "COMPASS tokamak (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/COMPASS_tokamak"
+        },
+        {
+          "title": "COMPASS tokamak in Prague had its first plasma (ITER Newsline, 12 January 2009)",
+          "url": "https://www.iter.org/fr/node/20687/compass-tokamak-prague-had-its-first-plasma"
         }
       ],
-      "note": "Start = first operation at Culham in 1989; the Prague period began in 2006. Coordinates are for the Libeň district of Prague, not the exact building."
+      "note": "This record is the Prague period; the Culham years are the record COMPASS (Culham). The machine was sent to Prague in autumn 2004; Wikipedia gives 2006–2021 for operation in the Czech Republic, ITER Newsline gives the first Prague plasma as 9 December 2008. Coordinates are for the Libeň district of Prague, not the exact building."
     },
     {
       "id": "compass-u",
@@ -1883,10 +1992,11 @@
       "lat": 49.167,
       "lon": -123.133,
       "operator": "General Fusion",
-      "start": null,
+      "start": 2025,
       "end": null,
       "achievements": [
-        "Announced in August 2023 as a magnetized target fusion demonstration machine"
+        "Announced in August 2023 as a magnetized target fusion demonstration machine",
+        "First plasma in February 2025"
       ],
       "importance": "LM26 tests magnetized target fusion, where a plasma is squeezed by a collapsing lithium liner. General Fusion aims to reach 100 million °C and conditions equivalent to scientific break-even. Financial problems in 2025 reduced its operations, so the timeline is uncertain.",
       "sources": [
@@ -1895,11 +2005,15 @@
           "url": "https://en.wikipedia.org/wiki/General_Fusion"
         },
         {
+          "title": "All systems go: LM26 ready to compress plasmas (General Fusion, 24 April 2025)",
+          "url": "https://generalfusion.com/post/all-systems-go-lm26-ready-to-compress-plasmas/"
+        },
+        {
           "title": "Richmond, British Columbia (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/Richmond,_British_Columbia"
         }
       ],
-      "note": "First plasma date not verified, so start is null. Operation was reduced in May 2025 after a funding crisis; present status not confirmed. Goals are plans. Coordinates are city-level (Wikipedia city page); the exact site could not be verified."
+      "note": "Start: first plasma in February 2025 (General Fusion). Operation was reduced in May 2025 after a funding crisis; present status not confirmed. Goals are plans. Coordinates are city-level (Wikipedia city page); the exact site could not be verified."
     }
   ]
 }
