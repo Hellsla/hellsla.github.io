@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: ac3ab83b5af60863
+CONTENT-HASH: 12704897f4970fb1
 
 ## Blocking
 - none
@@ -8,4 +8,4 @@ CONTENT-HASH: ac3ab83b5af60863
 - none
 
 ## Checked
-- Selkeä suomi: tehtävä L1-05 lukee päästökertoimen kuvasta (vastaus 1,2 kg ennallaan); ratkaisuun lisätty kuvaajan lukemisen vaihe; L3-01 järkevyys ja johtopäätös seuraavat pehmennettyä suomea (kivihiili noin 10 % rajan yli, ero pienempi kuin epävarmuus). Luvut, yksiköt ja merkitsevät numerot säilyneet.
+- Translation review against the reviewed Finnish source, all 12 exercises and solutions (fi-easy): same data, units, answers (72 kg, 2.5 kg, 220 g, 12 times, 1.2 kg, 460 t, 2.9 t, 24 000 kWh, 250 g/kWh, 740 g/kWh, 50 times, 4.1 times), tolerances, figure reference fy2-8/emissions and solution structure (same number of values in every section). Graph reading (second bar, 400-600 grid lines) and the L3-01 conclusion (coal about 10 % above the limit, within the uncertainty) match the Finnish. No Finnish words left; units as in the Finnish ("times" for kertaa). No edits needed. check_i18n: 0 errors.

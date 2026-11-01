@@ -1,19 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: bbce289c9b4b1f34
+CONTENT-HASH: afb3b91be208f94f
 
 ## Blocking
 (none)
 
 ## Polish
-- inquiry.json simulaatio.model and sim-spec — says the sim's powers are "luvun taulukon" values, but the table has LED-lamppu 8 W and no 10 W lamp or toaster (1000 W, only in the figure) — say "tyypillisiä pyöristettyjä arvoja" or add the two rows.
-- lesson.md Kaava — "$\Delta E$ energian muutos eli muuntunut tai siirtynyt energia" blurs with conservation (total energy does not change) — write "muuntunut tai siirtynyt energia" only.
-- glossary "teho" (shown as tooltip) — adds P = W/t and P = Fv, i.e. work and force, which the slot says FY2 does not use — shorten to P = ΔE/Δt for FY2.
-- lesson.md Tyypillisiä tehoja — the Tilastokeskus 2025 "noin 18 snt/kWh" figure could not be verified here — check the source value.
+- Previous Polish items (sim "luvun taulukon" wording, ΔE "energian muutos", glossary "teho" adding P = W/t and P = Fv, the Tilastokeskus 18 snt/kWh source) are outside this diff and still stand as before.
 
 ## Checked
-- Recomputed all lesson and inquiry numbers in one script: 15 h, 864 kJ, 800 W, 21,9 kWh, 43,8 and 36,5 kWh, 1,92 €, 800 000 kettles all agree.
-- Both figures to scale (bar lengths 400:200:16 px; graph points 20 s/40 kJ, 40 s/80 kJ, endpoints 120, 60, 4,8 kJ).
-- Exactly one correct option in every choice; all distractor feedback is right, also after the option-text rebalancing (01da3ae6).
-- Koe 1 and Koe 2 isolate the varied time; simState has EA_kJ, EB_kJ, EA_kWh; 900 min and 30 min are reachable on the 1 min slider.
-- Interpret table (2000, 1000, 80 W at 20 s steps) correct; sim model limits stated (steady power, disc as in an old meter, model values).
-- Worked example symbolic first, units and 2 s.f. justified; exit ticket and model answers agree with the theory.
+- exit-ticket.json: the W → kW conversion now stands as its own sentence before the result; the order of steps and every formula and number are unchanged. 1 W = 10⁻³ kW and 5,0 W = 0,0050 kW are correct.
+- Recomputed in one script: 0,0050 kW · 8760 h = 43,8 kWh ≈ 44 kWh; 3,0 min · 365 = 1095 min = 18,25 h; 2,0 kW · 18,25 h = 36,5 kWh ≈ 37 kWh (2 s.f., as the data). The conclusion (standby uses more energy) follows, and it agrees with the theory P = ΔE/Δt and E = Pt.
+- lesson.md hero SVG (new in the diff, not named in the brief): a decorative picture with no numbers. Kettle clock sector ≈ 26° (short time), lamp clock sector ≈ 334° (long time), and the hands lie on the sector edges. A single meter feeds both devices. It matches the lesson's opening question (the bill depends on power and time) and draws no misleading physics; checked against the 390 px capture.
+- Content hash the same at start and end (afb3b91be208f94f).

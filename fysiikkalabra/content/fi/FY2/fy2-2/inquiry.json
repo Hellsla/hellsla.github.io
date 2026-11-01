@@ -119,6 +119,11 @@
       "names": {
         "kohde": "kohde"
       },
+      "values": {
+        "kohde": {
+          "päivän ruoka": "päivän ruoka"
+        }
+      },
       "measure": [
         {
           "key": "E_MJ",
@@ -140,6 +145,11 @@
       "vary": "kohde",
       "names": {
         "kohde": "kohde"
+      },
+      "values": {
+        "kohde": {
+          "Aurinko Maahan tunnissa": "Aurinko Maahan tunnissa"
+        }
       },
       "measure": [
         {

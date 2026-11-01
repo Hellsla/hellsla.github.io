@@ -149,7 +149,7 @@ Lamppu, jonka hyötysuhde on pieni, tarvitsee saman hyödyn saamiseen suuremman 
   <foreignObject x="257" y="412.5" width="230" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$P_\text{h} = 7\,\text{W}\ (\text{lämpö})$</div></foreignObject>
 </svg>
 
-Mittakaavaan piirretystä kuviosta näkee hyötysuhteen suoraan. Se on hyötynuolen paksuuden osuus tulevan nuolen paksuudesta. Tuleva nuoli on $5{,}0\,\text{cm}$ ja hyötynuoli $4{,}0\,\text{cm}$ paksu. Silloin hyötysuhde on $4{,}0 : 5{,}0 = 0{,}80$ eli $80\,\%$.
+Mittakaavaan piirretystä kuviosta näkee hyötysuhteen suoraan. Se on hyötynuolen paksuuden osuus tulevan nuolen paksuudesta. Ajatellaan toista kuviota, jossa tuleva nuoli on $5{,}0\,\text{cm}$ ja hyötynuoli $4{,}0\,\text{cm}$ paksu. Silloin hyötysuhde on $4{,}0 : 5{,}0 = 0{,}80$ eli $80\,\%$.
 
 ## Esimerkki
 Vedenkeittimen hyötysuhde on $90\,\%$. Se ottaa sähköverkosta tehon $2{,}0\,\text{kW}$. Keitin on päällä $3{,}0\,\text{min}$. Kuinka paljon sähköenergiaa muuttuu häviöiksi eli lämmöksi, joka ei lämmitä vettä?

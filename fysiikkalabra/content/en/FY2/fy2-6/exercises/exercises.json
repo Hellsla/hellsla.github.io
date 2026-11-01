@@ -46,7 +46,7 @@
     {
       "id": "fy2-6-L2-01",
       "level": 2,
-      "text": "The wind farm in the example has a rated power of $25\\,\\text{MW}$, and its average power over the year is $32\\,\\%$ of the rated power. How much electricity does the farm produce in a year, when a year has $8760\\,\\text{h}$? Give the answer in gigawatt-hours.",
+      "text": "An example wind farm has a rated power of $25\\,\\text{MW}$, and its average power over the year is $32\\,\\%$ of the rated power. How much electricity does the farm produce in a year, when a year has $8760\\,\\text{h}$? Give the answer in gigawatt-hours.",
       "answer": 70,
       "unit": "GWh",
       "tolerance": 0.02
@@ -62,15 +62,15 @@
     {
       "id": "fy2-6-L2-03",
       "level": 2,
-      "text": "Nuclear power plants produced about $31\\,\\text{TWh}$ of electricity in 2024. The wind turbine in the example produces $12\\,\\text{GWh}$ in a year. How many such wind turbines would be needed to produce the same annual energy as the nuclear power plants produced?",
+      "text": "Nuclear power plants produced about $31\\,\\text{TWh}$ of electricity in 2024. An example wind turbine produces $12\\,\\text{GWh}$ in a year. How many such wind turbines would be needed to produce the same annual energy as the nuclear power plants produced?",
       "answer": 2600,
-      "unit": "kpl",
+      "unit": "turbines",
       "tolerance": 0.02
     },
     {
       "id": "fy2-6-L2-04",
       "level": 2,
-      "text": "Olkiluoto 3 ($1.6\\,\\text{GW}$) runs at full power for the whole year ($8760\\,\\text{h}$). A household without electric heating in the example uses $5000\\,\\text{kWh}$ in a year. How many households' annual consumption would the plant cover? Give the answer in millions of households.",
+      "text": "Olkiluoto 3 ($1.6\\,\\text{GW}$) runs at full power for the whole year ($8760\\,\\text{h}$). An example household without electric heating uses $5000\\,\\text{kWh}$ in a year. How many households' annual consumption would the plant cover? Give the answer in millions of households.",
       "answer": 2.8,
       "unit": "million",
       "tolerance": 0.02
@@ -80,7 +80,7 @@
     {
       "id": "fy2-6-L3-01",
       "level": 3,
-      "text": "The frosty evening in the example: the consumption of electricity in Finland is $11\\,\\text{GW}$. Nuclear power plants run at a power of $3.5\\,\\text{GW}$. The combined rated power of wind turbines is $9.0\\,\\text{GW}$, but the wind is weak and they produce only $4.0\\,\\%$ of their rated power. How much power must other power plants and imported electricity produce? Give the answer in gigawatts.",
+      "text": "An example frosty evening: the consumption of electricity in Finland is $11\\,\\text{GW}$. Nuclear power plants run at a power of $3.5\\,\\text{GW}$. The combined rated power of wind turbines is $9.0\\,\\text{GW}$, but the wind is weak and they produce only $4.0\\,\\%$ of their rated power. How much power must other power plants and imported electricity produce? Give the answer in gigawatts.",
       "answer": 7.1,
       "unit": "GW",
       "tolerance": 0.02
@@ -88,15 +88,15 @@
     {
       "id": "fy2-6-L3-02",
       "level": 3,
-      "text": "The wind farm and the nuclear power plant in the example have the same rated power, $600\\,\\text{MW}$. The average power of the wind farm is $33\\,\\%$ and that of the nuclear power plant $90\\,\\%$ of the rated power. How many times as much energy does the nuclear power plant produce in a year? Give the answer as a factor.",
+      "text": "An example wind farm and nuclear power plant have the same rated power, $600\\,\\text{MW}$. The average power of the wind farm is $33\\,\\%$ and that of the nuclear power plant $90\\,\\%$ of the rated power. How many times as much energy does the nuclear power plant produce in a year? Give the answer as a factor.",
       "answer": 2.7,
-      "unit": "kertaa",
+      "unit": "times",
       "tolerance": 0.02
     },
     {
       "id": "fy2-6-L3-03",
       "level": 3,
-      "text": "The municipality in the example proposes a solar park that would replace Olkiluoto 3 ($1600\\,\\text{MW}$). The average power of the solar park over the year is $11\\,\\%$ and that of Olkiluoto 3 $90\\,\\%$ of the rated power. How large should the rated power of the solar park be for it to produce as much energy in a year as Olkiluoto 3? Give the answer in gigawatts. Also consider whether such a park would replace Olkiluoto 3 on a January evening.",
+      "text": "An example municipality proposes a solar park that would replace Olkiluoto 3 ($1600\\,\\text{MW}$). The average power of the solar park over the year is $11\\,\\%$ and that of Olkiluoto 3 $90\\,\\%$ of the rated power. How large should the rated power of the solar park be for it to produce as much energy in a year as Olkiluoto 3? Give the answer in gigawatts. Also consider whether such a park would replace Olkiluoto 3 on a January evening.",
       "answer": 13,
       "unit": "GW",
       "tolerance": 0.02

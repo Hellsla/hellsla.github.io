@@ -1,8 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 6bf178eaf366b56f
+CONTENT-HASH: 962fa95054071799
+
 ## Blocking
+(none)
 
 ## Polish
+- none
 
 ## Checked
-batch delta review: hero illustration aria-label (en) compared with the Finnish description and the rendered picture; faithful, natural, complete, no Finnish left.
+- Lesson translation checked against the Finnish.
+- Teaching sequence, steps (<!-- vaihe -->), misconception section and summary follow the Finnish; language natural and no Finnish left over.
+- No edits needed; hash unchanged at end.

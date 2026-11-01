@@ -2,6 +2,7 @@
 from figlib import (Fig, INK, MUTED, RULE, RULE_LIGHT, WHITE, GLASS, COLD, COLD_LIGHT, HEAT, HEAT_LIGHT, HOT, HOT_LIGHT, ALUMINIUM,
                     METAL_EDGE, IRON, GOOD, GOOD_LIGHT, WATER, WATER_LIGHT, SAND, SAND_LIGHT, n)
 from figlib import GRAIN
+from figlib import translate, visible_len
 import herolib as H
 from figlib import SAND_DARK
 from herolib import grad, rnd
@@ -44,6 +45,12 @@ def hero():
 def wire(f, x1, y1, x2, y2, sag=10, w=2):
     """A sagging power line between two points (a quadratic curve)."""
     return f.path(f"M{n(x1)},{n(y1)} Q{n((x1 + x2) / 2)},{n((y1 + y2) / 2 + 2 * sag)} {n(x2)},{n(y2)}", stroke=INK, w=w)
+
+
+def longer(tex):
+    """True when the page language's label is clearly longer than the Finnish one (en "distribution network" for
+    "jakeluverkko"): such a label gets its own place or size, and the Finnish figure stays as it was reviewed."""
+    return visible_len(translate(tex)) > visible_len(tex)
 
 
 def pylon(f, cx, base=206, top=112):
@@ -94,14 +101,18 @@ def grid():
     f.tex(245, 62, r"110\text{–}400\,\text{kV}", "middle", w=170)
     f.tex(476, 116, r"20\,\text{kV}", "middle", w=100)
     f.tex(556, 62, r"0{,}4\,\text{kV}", "middle", w=100)
-    f.tex(130, 100.5, r"\text{muuntaja}", "middle", w=90)
+    if longer(r"\text{muuntaja}"): f.tex(122, 100.5, r"\text{muuntaja}", "middle", size=20, w=110)
+    else: f.tex(130, 100.5, r"\text{muuntaja}", "middle", w=90)
     f.line(130, 118, 130, 171, MUTED, 1.5, "4 4")
     f.line(556, 82, 556, 130, RULE, 1.5, "5 5")
     # names below
     f.tex(88, 262, r"\text{voimalaitos}", "middle", w=140)
     f.tex(250, 262, r"\text{kantaverkko}", "middle", w=150)
     f.tex(400, 296, r"\text{sähköasema}", "middle", w=150)
-    f.tex(520, 262, r"\text{jakeluverkko}", "middle", w=140)
+    if longer(r"\text{jakeluverkko}"):       # two lines, e.g. "distribution" over "network"
+        first, _, rest = translate(r"\text{jakeluverkko}")[6:-1].partition(" ")
+        f.tex(530, 254, r"\text{" + first + "}", "middle", size=22, w=136); f.tex(530, 280, r"\text{" + rest + "}", "middle", size=22, w=96)   # clear of "substation" below left
+    else: f.tex(520, 262, r"\text{jakeluverkko}", "middle", w=140)
     # the energy flow underneath, to scale of nothing: a schematic arrow
     f.block_arrow(30, 228, 570, 228, HEAT, 14, 30, 26)
     return f.svg()
@@ -132,11 +143,15 @@ def district():
     for x in (180, 420):
         f.block_arrow(x, 204, x, 236, HEAT, 8, 20, 14)
     f.tex(444, 224, r"\text{häviö}", "start", w=100)
-    f.tex(250, 94, r"\text{menovesi}", "middle", w=160)
+    if longer(r"\text{menovesi}"):           # side by side with "eriste" it would read as one phrase: a leader to the red pipe
+        f.tex(196, 94, r"\text{menovesi}", "middle", w=150); f.line(196, 108, 196, 137, MUTED, 1.5)
+    else: f.tex(250, 94, r"\text{menovesi}", "middle", w=160)
     f.tex(250, 268, r"\text{paluuvesi}", "middle", w=170)
-    f.tex(376, 94, r"\text{eriste}", "middle", w=90)
-    f.line(376, 108, 376, 124, MUTED, 1.5)
-    f.tex(63, 262, r"\text{lämpölaitos}", "middle", w=140)
+    ex = 404 if longer(r"\text{eriste}") else 376
+    f.tex(ex, 94, r"\text{eriste}", "middle", w=130 if ex != 376 else 90)
+    f.line(ex, 108, ex, 124, MUTED, 1.5)
+    if longer(r"\text{lämpölaitos}"): f.tex(12, 262, r"\text{lämpölaitos}", "start", size=22, w=150)
+    else: f.tex(63, 262, r"\text{lämpölaitos}", "middle", w=140)
     f.tex(545, 262, r"\text{koti}", "middle", w=80)
     return f.svg()
 
@@ -164,14 +179,19 @@ def storage():
     f.rect(430, 102, 80, 98, "url(#fy27-hot)", INK, 2, 8)
     f.line(470, 82, 470, 92, INK, 4); f.line(470, 210, 470, 222, INK, 4)
     f.tex(100, 267, r"\text{akku}", "middle", w=90)
-    f.tex(255, 267, r"\text{pumppuvoimala}", "middle", w=190)
+    if " " in translate(r"\text{pumppuvoimala}"): f.tex(282, 267, r"\text{pumppuvoimala}", "middle", size=22, w=170)   # en "pumped storage": clear of the divider
+    else: f.tex(255, 267, r"\text{pumppuvoimala}", "middle", w=190)
     f.tex(470, 267, r"\text{lämpövarasto}", "middle", w=190)
     f.tex(100, 40, r"\text{kemiallinen}", "middle", w=150)
-    f.tex(283, 28.5, r"\text{potentiaali-}", "middle", w=190)
-    f.tex(283, 56.5, r"\text{energia}", "middle", w=190)
+    if translate(r"\text{potentiaali-}") != r"\text{potentiaali-}":   # a language without the hyphenated compound: one line
+        f.tex(283, 40, r"\text{potentiaali-}" + r"\ " + r"\text{energia}", "middle", size=22, w=186)
+    else:
+        f.tex(283, 28.5, r"\text{potentiaali-}", "middle", w=190)
+        f.tex(283, 56.5, r"\text{energia}", "middle", w=190)
     f.tex(470, 40, r"\text{lämpö}", "middle", w=100)
     f.tex(251, 92.5, r"\text{yläallas}", "middle", w=110)
-    f.tex(231, 224.5, r"\text{alaallas}", "middle", w=110)
+    if longer(r"\text{alaallas}"): f.tex(240, 226, r"\text{alaallas}", "middle", size=22, w=110)
+    else: f.tex(231, 224.5, r"\text{alaallas}", "middle", w=110)
     f.line(184, 20, 184, 280, RULE, 2, "6 6"); f.line(380, 20, 380, 280, RULE, 2, "6 6")
     return f.svg()
 

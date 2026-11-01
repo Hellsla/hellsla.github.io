@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 8c27f245eeedabca
+CONTENT-HASH: fa0fb23fca92af8d
 
 ## Blocking
 (none)
@@ -11,4 +11,4 @@ CONTENT-HASH: 8c27f245eeedabca
 (none)
 
 ## Checked
-Translation delta review against the reviewed Finnish: new choice checks 'Rated power and production' and 'Properties do not exclude each other' (one correct option each, feedback per option faithful and not revealing), the rebalanced option texts of the find-the-mistake and concept checks (correct option no longer longest, feedback updated), exit ticket reduced to one question, check numbering 4./5., lesson wording (peat, properties not categories, nuclear output can be reduced). Physics, numbers, units and LaTeX preserved; learn goals untouched. Science: statements about nuclear modulation, hydropower and rated versus average power are correct.
+Translation of lesson.md, inquiry.json, exit-ticket.json, meta.json and figures.json against the reviewed Finnish: numbers, units, LaTeX, table values (Statistics Finland 2024 figures, 79.9 TWh total), worked example (1598 kW, 32 %), model answers, choice feedback and correct options identical in physics; rated vs average power, base load, controllability and renewable statements correct; no Finnish left in text, units or figure labels.

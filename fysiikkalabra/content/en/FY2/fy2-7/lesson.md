@@ -338,13 +338,14 @@ The **electricity grid** carries electrical energy from the power plant to the h
   <foreignObject x="160" y="47.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$110\text{–}400\,\text{kV}$</div></foreignObject>
   <foreignObject x="426" y="101.5" width="100" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$20\,\text{kV}$</div></foreignObject>
   <foreignObject x="506" y="47.5" width="100" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$0.4\,\text{kV}$</div></foreignObject>
-  <foreignObject x="85" y="86" width="90" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{transformer}$</div></foreignObject>
+  <foreignObject x="67" y="88.5" width="110" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px">$\text{transformer}$</div></foreignObject>
   <line x1="130" y1="118" x2="130" y2="171" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="4 4"/>
   <line x1="556" y1="82" x2="556" y2="130" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 5"/>
   <foreignObject x="18" y="247.5" width="140" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{power plant}$</div></foreignObject>
   <foreignObject x="175" y="247.5" width="150" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{national grid}$</div></foreignObject>
   <foreignObject x="325" y="281.5" width="150" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{substation}$</div></foreignObject>
-  <foreignObject x="450" y="247.5" width="140" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{distribution network}$</div></foreignObject>
+  <foreignObject x="462" y="241" width="136" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:22px">$\text{distribution}$</div></foreignObject>
+  <foreignObject x="482" y="267" width="96" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:22px">$\text{network}$</div></foreignObject>
   <path d="M30,235 L544,235 L544,243 L570,228 L544,213 L544,221 L30,221 Z" fill="#e8590c" stroke-linejoin="round"/>
 </svg>
 
@@ -377,12 +378,13 @@ A transformer raises the voltage at the power plant and lowers it again close to
   <path d="M288,173 L307,165 L307,181 Z" fill="#ffffff" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
   <path d="M176,204 L176,222 L170,222 L180,236 L190,222 L184,222 L184,204 Z" fill="#e8590c" stroke-linejoin="round"/>
   <path d="M416,204 L416,222 L410,222 L420,236 L430,222 L424,222 L424,204 Z" fill="#e8590c" stroke-linejoin="round"/>
-  <foreignObject x="444" y="209.5" width="100" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{loss}$</div></foreignObject>
-  <foreignObject x="170" y="79.5" width="160" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{supply water}$</div></foreignObject>
+  <foreignObject x="444" y="209.5" width="100" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{heat loss}$</div></foreignObject>
+  <foreignObject x="121" y="79.5" width="150" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{supply water}$</div></foreignObject>
+  <line x1="196" y1="108" x2="196" y2="137" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
   <foreignObject x="165" y="253.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{return water}$</div></foreignObject>
-  <foreignObject x="331" y="79.5" width="90" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{insulation}$</div></foreignObject>
-  <line x1="376" y1="108" x2="376" y2="124" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <foreignObject x="-7" y="247.5" width="140" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{heating plant}$</div></foreignObject>
+  <foreignObject x="339" y="79.5" width="130" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{insulation}$</div></foreignObject>
+  <line x1="404" y1="108" x2="404" y2="124" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="12" y="249" width="150" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$\text{heating plant}$</div></foreignObject>
   <foreignObject x="505" y="247.5" width="80" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{home}$</div></foreignObject>
 </svg>
 
@@ -415,14 +417,13 @@ Energy is also transferred in time. Wind power and solar electricity are produce
   <line x1="470" y1="82" x2="470" y2="92" stroke="#1f2933" stroke-width="4" stroke-linecap="butt"/>
   <line x1="470" y1="210" x2="470" y2="222" stroke="#1f2933" stroke-width="4" stroke-linecap="butt"/>
   <foreignObject x="55" y="252.5" width="90" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{battery}$</div></foreignObject>
-  <foreignObject x="160" y="252.5" width="190" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{pumped storage}$</div></foreignObject>
+  <foreignObject x="197" y="254" width="170" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:22px">$\text{pumped storage}$</div></foreignObject>
   <foreignObject x="375" y="252.5" width="190" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{heat store}$</div></foreignObject>
   <foreignObject x="25" y="25.5" width="150" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{chemical}$</div></foreignObject>
-  <foreignObject x="188" y="14" width="190" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{potential}$</div></foreignObject>
-  <foreignObject x="188" y="42" width="190" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{energy}$</div></foreignObject>
-  <foreignObject x="420" y="25.5" width="100" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{heat}$</div></foreignObject>
+  <foreignObject x="190" y="27" width="186" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:22px">$\text{potential}\ \text{energy}$</div></foreignObject>
+  <foreignObject x="420" y="25.5" width="100" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{thermal}$</div></foreignObject>
   <foreignObject x="196" y="78" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{upper pool}$</div></foreignObject>
-  <foreignObject x="176" y="210" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{lower pool}$</div></foreignObject>
+  <foreignObject x="185" y="213" width="110" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:22px">$\text{lower pool}$</div></foreignObject>
   <line x1="184" y1="20" x2="184" y2="280" stroke="#c9c2b2" stroke-width="2" stroke-linecap="butt" stroke-dasharray="6 6"/>
   <line x1="380" y1="20" x2="380" y2="280" stroke="#c9c2b2" stroke-width="2" stroke-linecap="butt" stroke-dasharray="6 6"/>
 </svg>
@@ -465,7 +466,7 @@ In the figure the width of a stream shows the amount of energy. In the electrici
 
 A loss percentage is always taken of the sent energy. If the loss is $9.0\,\%$, then $100\,\% - 9.0\,\% = 91.0\,\%$ of the sent energy arrives, and $91.0\,\% = 91.0 : 100 = 0.910$. The energy you need is solved from the formula: $E_\text{arrived} = \eta\, E_\text{sent}$ and $E_\text{sent} = E_\text{arrived} : \eta$.
 
-The same applies to power: the power that arrives is $\eta$ times the power sent. Energy and power are connected by the formula $P = \tfrac{E}{t}$ (chapter *Power P = ΔE/Δt*), so with a steady loss power $P_\text{loss}$ the energy lost during a time $t$ is $E_\text{loss} = P_\text{loss} \cdot t$.
+The same applies to power: the power that arrives is $\eta$ times the power sent. Energy and power are connected by the formula $P = \tfrac{E}{t}$ (chapter *Power: P = ΔE/Δt*), so with a steady loss power $P_\text{loss}$ the energy lost during a time $t$ is $E_\text{loss} = P_\text{loss} \cdot t$.
 
 ## Worked example
 

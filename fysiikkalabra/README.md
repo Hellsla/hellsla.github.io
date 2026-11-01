@@ -70,8 +70,13 @@ Merging a pull request is the teacher's publication decision. CI (`.github/workf
 lints every lesson, builds all previews, runs the review and course tests, the simulation tests, every lesson's
 inquiry tests, the answer-position check and the LaTeX check, verifies carried reviews from history, lists the
 review impact of the branch,
-rebuilds `site/` and fails if the committed copy differs, and checks every published page at 360 px. A lesson
+rebuilds `site/` and fails if the committed copy differs, and checks every published page at eight widths. A lesson
 whose reviews went stale is left out of the build with a WARNING (a CI annotation), never silently.
+
+On a pull request the browser steps (simulations, inquiry tests, layout at eight widths) test only the pages the change
+can alter (teacher 2026-11-01): `python scripts/ci_scope.py origin/main` prints them, or `full` when a shared file
+(scripts, templates, shared site files, configuration, interface texts, the visual baseline, the workflow) changed. Its
+docstring is the mapping. Main, the weekly run and a manual run (`workflow_dispatch`) test everything.
 
 ## Libraries
 p5.js 1.9.4 and KaTeX 0.16.11 are vendored in `templates/vendor/` and copied to `site/vendor/` on build; fonts

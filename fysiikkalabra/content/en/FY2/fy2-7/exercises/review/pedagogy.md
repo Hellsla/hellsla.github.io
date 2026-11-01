@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: f210ba7052cc81a7
+CONTENT-HASH: 41be8c1da51836d5
 
 ## Blocking
 (none)
@@ -11,4 +11,4 @@ CONTENT-HASH: f210ba7052cc81a7
 - (none)
 
 ## Checked
-- Update 2026-10-29: figure-reading exercise keeps the Finnish demand; the solution names the figure's lower flow and the 9 % / 91 % labels; step labels as in other solutions.
+- Same three levels and order as the Finnish; solution format (Given, Find, Principle, Formula, Conversions, Substitution, Answer, Reasonableness) kept; every question states the unit asked; natural English; no Finnish left.

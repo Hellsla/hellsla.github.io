@@ -8,7 +8,7 @@
  "sähköasema": "substation",
  "jakeluverkko": "distribution network",
  "Kaavakuva kaukolämmön kierrosta. Vasemmalla lämpölaitos, oikealla koti. Punainen menoputki vie kuumaa vettä kotiin ja sininen paluuputki tuo jäähtyneen veden takaisin. Putket ovat yhteisen eristeen sisällä maan alla. Oranssit nuolet osoittavat, että eristeestäkin pääsee vähän lämpöä maahan. Kuva ei ole mittakaavassa.": "Schematic of the district heating loop. On the left the heating plant, on the right a home. A red supply pipe takes hot water to the home and a blue return pipe brings the cooled water back. The pipes are inside shared insulation underground. Orange arrows show that a little heat still escapes through the insulation into the ground. Not to scale.",
- "häviö": "loss",
+ "häviö": "heat loss",
  "menovesi": "supply water",
  "paluuvesi": "return water",
  "eriste": "insulation",
@@ -21,10 +21,12 @@
  "kemiallinen": "chemical",
  "potentiaali-": "potential",
  "energia": "energy",
- "lämpö": "heat",
+ "lämpö": "thermal",
  "yläallas": "upper pool",
  "alaallas": "lower pool",
  "Energiavirtakuva mittakaavassa. Ylhäällä sähköverkko: lähtevästä energiasta 96 % tulee perille ja 4 % häviää. Alhaalla kaukolämpöverkko: 91 % tulee perille ja 9 % häviää. Virran leveys on verrannollinen energiaan; lähtevän energian leveys on molemmissa sama.": "Energy flow diagram to scale. At the top the electricity grid: of the sent energy 96 % arrives and 4 % is lost. At the bottom the district heating network: 91 % arrives and 9 % is lost. The width of a stream is proportional to the energy; the width of the sent energy is the same in both.",
  "sähkö": "electricity",
- "kaukolämpö": "district heating"
+ "kaukolämpö": "district heating",
+ "distribution": "distribution",
+ "network": "network"
 }

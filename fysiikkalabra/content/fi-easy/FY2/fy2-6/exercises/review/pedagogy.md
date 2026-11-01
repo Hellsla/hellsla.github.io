@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: c3fa2fcc9a2e0233
+CONTENT-HASH: a4da1b73178687b1
 
 ## Blocking
 (none)
 
 ## Fixed
-(none)
+- solutions.md line 87: a comma and capital 'Kun' (run-on) fixed to a full stop.
 
 ## Polish
 (none)
 
 ## Checked
-Translation delta review against the reviewed Finnish: L1-04 figure-reading exercise (text, figure fy2-6/fi-bars, answer 26.4 %, unit and tolerance unchanged), solutions.md L1-04 (Annettu, Kuvaajan lukeminen step, 20.2 + 0.9 = 21.1 TWh of 79.9 TWh = 0.2641, three significant figures). Numbers, units and LaTeX preserved; the task does not give the readings away; figure is labelled in the language. Selkeä suomi keeps short sentences, same physics terms and the same cognitive demand. Pedagogy: demand and scaffolding match the Finnish; the check is answerable from the lesson.
+Short clear sentences, same task demand and solution sequence as the Finnish; principle and reasonableness steps split into short sentences without losing content; terms (keskiteho, nimellisteho, sääriippuvainen) as in the lesson.

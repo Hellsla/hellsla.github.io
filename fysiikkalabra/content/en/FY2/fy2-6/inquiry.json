@@ -113,7 +113,7 @@
         "type": "numeric",
         "prompt": "How many $5.0\\,\\text{MW}$ wind turbines are needed for their rated power to be equal to the rated power of Olkiluoto 3, $1600\\,\\text{MW}$?",
         "answer": 320,
-        "unit": "kpl",
+        "unit": "turbines",
         "tolerance": 0.02,
         "hints": [
           "We compare the same quantity, power: how many times does $5.0\\,\\text{MW}$ fit into $1600\\,\\text{MW}$?",
@@ -345,7 +345,7 @@
       "id": "tarkistus-2",
       "stage": "tarkista",
       "type": "numeric",
-      "title": "2. Calculation",
+      "title": "4. Calculation",
       "prompt": "The average power of a wind turbine over the year is $1.0\\,\\text{MW}$. How much energy does it produce in a year ($8760\\,\\text{h}$)? Give the answer in gigawatt-hours.",
       "answer": 8.8,
       "unit": "GWh",
@@ -367,7 +367,7 @@
       "id": "tarkistus-3",
       "stage": "tarkista",
       "type": "explain",
-      "title": "3. Explain and compare",
+      "title": "5. Explain and compare",
       "prompt": "Compare nuclear power and wind power using at least three criteria (for example power, controllability, storability, environment). Which is suitable as base load and why?",
       "criteria": [
         "I compare at least three criteria.",
