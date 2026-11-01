@@ -1,7 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: 82acc2ba7765614a
+CONTENT-HASH: 2953f276a281a98f
 
-Science re-review of fy14-fusion-debate, 2026-11-01, after commit 04ac2449. Previous hash: 974cbb7890e9f925.
+Science re-review of fy14-fusion-debate, 2026-11-01, after commits 04ac2449 and f3c5f463. Previous hashes: 974cbb7890e9f925, 82acc2ba7765614a.
 
 ## Previous findings
 All six findings are resolved:
@@ -22,7 +22,10 @@ All six findings are resolved:
 None.
 
 ## Polish
-1. In `teacher.md` and the chair's script, the chair reads the motion as "public money should be spent on fusion research". The motion is about *more* public money. Read the motion word for word: "governments should invest more public money in fusion research".
+None. My earlier polish item is fixed: the chair's script now reads the motion word for word.
+
+## Second-round diff
+The check-1 distractor now reads "ITER's cost estimates grew from 5.9 to 18–22 billion euros". Its feedback notes that the later figure includes operation, which matches card F and Wikipedia. It stays a distractor: the correct answer is still "Everyone knows…".
 
 ## Checked
 Cards A–I against their sources, as in the first review: JET, NIF, deuterium, ITER's waste, safety and lithium statements, Ember, FIA/WNN, ITER's costs and 2024 baseline, IPCC, STEP, CFS, C-Mod and DOE 2023, and the video's metadata.
