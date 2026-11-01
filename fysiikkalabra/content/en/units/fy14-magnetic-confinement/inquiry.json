@@ -1,0 +1,8 @@
+{"version": 1, "contribution": "test", "learn": ["explain why a charged particle circles in a magnetic field", "calculate the radius of the circular orbit"],
+ "activities": [{"id": "hook-1", "stage": "herata", "type": "hook", "text": "Test hook."},
+  {"id": "sim-1", "stage": "tutki", "type": "sim", "text": "Explore."},
+  {"id": "exp-1", "stage": "tutki", "type": "experiment", "title": "Experiment 1: radius and field", "intro": "Vary $B$ and record $r$.",
+   "initial": {"view": "uniform", "particle": "p", "v": 2000000, "B": 1}, "names": {"B": "field B", "v": "speed v"}, "units": {"B": "T", "v": "m/s"},
+   "locked": ["view", "particle", "v"], "vary": "B", "measure": [{"key": "rmm", "label": "r (mm)"}, {"key": "T", "label": "T (s)"}], "min": 3},
+  {"id": "teoria-1", "stage": "selita", "type": "theory", "sections": ["Ydinajatus"]},
+  {"id": "check-1", "stage": "tarkista", "type": "choice", "prompt": "Q?", "choices": [{"text": "a", "correct": true, "feedback": "yes"}, {"text": "b", "feedback": "no"}]}]}
