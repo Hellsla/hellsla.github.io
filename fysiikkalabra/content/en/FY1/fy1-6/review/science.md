@@ -1,16 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 84025b2368339939
+CONTENT-HASH: 97ba35b47f1bb414
 
 ## Blocking
 (none left)
 
 ## Fixed
-- none needed for science (wording fixes are in pedagogy.md)
+- inquiry.json:11 — prior item named the chapter *Graphs and fitting a straight line*, but the English title of fy1-4 is *Graphing and fitting a straight line* — corrected.
 
 ## Polish
-- none
+- fy1-8 (lesson.md:366, inquiry.json:11 and :110) still uses *Graphs and fitting a straight line*; not this chapter's file, left alone.
 
 ## Checked
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): lesson.md (Key idea, formula v = gt, slope Δv/Δt, worked example 1.5 s → 14.715 m/s → 53 km/h, misconception, summary), every inquiry.json text (prior, predictions 1–2 with feedback, sim howto/model/calc, experiments 1–3 questions and solutions, example data 0.1–0.5 s and slope solution, conclusion model answer, find-the-error, new-planet problem, three levels, explain criteria), exit-ticket, meta, figures.json. Meaning, causality (air, not mass as such), "at least/at most" phrasing, numbers, decimal points, \cdot, chapter titles (*Uniform motion: s = vt*, *Graphs and fitting a straight line*) and English terms (acceleration of free fall, free fall, slope, terminal speed) all match. Sim labels (Drop, Moment t, Environment vacuum/air, Mass m_A) match the prose.
-- Update 2026-10-28: newly translated stage fields of Koe 1–3 (intro, column names moment t / mass m_A / mass m_B / air resistance, word units (no air: vacuum) / (air present)) checked against the Finnish and the en sim labels (*Drop*, *Moment t*); numeric answers unchanged.
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked the fitted-line example data text and solution, new check-c2 item (g = 9.81 m/s^2, four options with feedback, only option 2 correct) and renumbered titles, the one-question exit ticket (Moon vs Earth, 4.9 and 29 m/s, ratio 6.1) and its intro, figure description; numbers, decimal signs, formulas and answers match the new Finnish.
+- Translation review against the reviewed Finnish (teacher's procedure 2026-10-28), lesson.md and inquiry.json, exit-ticket, meta, figures.json: every number, decimal sign, formula and answer matches the Finnish (script comparison of all numeric tokens, inquiry and lesson).
+- Key idea, formula v = gt, slope, worked example 1.5 s -> 14.715 m/s -> 53 km/h (3.6 factor, rounding from the unrounded value), misconception and summary: same physics and same teaching sequence; air, not mass as such, named as the cause.
+- Chapter reference *Uniform motion: speed, position and graphs* matches the fy1-5 English title.
+- Experiments 1-3, prediction feedback, find-the-error, new-planet problem (3.7 m/s^2, 11 m/s), three levels: one correct option each, distractor feedback correct; model answers (10.5 / 37.5 / 39.2 m/s) as in the Finnish.
+- No Finnish words in English text, names or units: the stage field "air resistance" (was "ilmanvastus") is now English; "Ydinajatus/Kaava/Esimerkki" in sections are section keys shared with all chapters.
+- Hero figure description and the three other figure descriptions: numbers match the Finnish.
+- Learn objectives are bare verb phrases (objective-form change), consistent with the other chapters.

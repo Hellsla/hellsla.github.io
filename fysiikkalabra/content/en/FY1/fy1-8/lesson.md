@@ -221,6 +221,7 @@ A **hypothesis** is a reasoned, testable prediction that answers the question. F
 
 ### Variables
 A **variable** is a quantity whose value can vary in an investigation. In an experiment you change one variable, measure another and keep everything else the same:
+
 - **independent variable**: the experimenter chooses its values, here the distance $s$
 - **dependent variable**: its value is read from an instrument, here the time $t$
 - **controlled variables**: stay the same throughout the experiment, here the car, the batteries, the surface and the way of starting.
@@ -298,6 +299,7 @@ Record the readings as they are. Do not quietly delete or correct a measurement 
 
 ### Report
 A **report** describes the investigation so that someone else can repeat it and judge the conclusion. Its parts are:
+
 1. research question and hypothesis
 2. method: equipment, variables and procedure
 3. results: table, graph and the value of the quantity with its uncertainty
@@ -361,7 +363,7 @@ where $\varepsilon$ is the relative uncertainty (often given as a percentage), $
   <foreignObject x="184" y="73.5" width="180" height="58" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$\varepsilon = \dfrac{0.2\,\text{s}}{t}$</div></foreignObject>
 </svg>
 
-The required distance follows from the model of uniform motion $s = vt$. If the measurement is made at several distances, a straight line is fitted to the data points (chapter *Graphs and fitting a straight line*). When $t$ is on the horizontal axis and $s$ on the vertical axis, the slope of the line is the speed $v$. The shortest valid distance is the one at which the relative uncertainty just stays within the chosen limit $\varepsilon_\text{max}$. On a shorter distance the relative uncertainty exceeds this limit, and the result is too imprecise.
+The required distance follows from the model of uniform motion $s = vt$. If the measurement is made at several distances, a straight line is fitted to the data points (chapter *Graphing and fitting a straight line*). When $t$ is on the horizontal axis and $s$ on the vertical axis, the slope of the line is the speed $v$. The shortest valid distance is the one at which the relative uncertainty just stays within the chosen limit $\varepsilon_\text{max}$. On a shorter distance the relative uncertainty exceeds this limit, and the result is too imprecise.
 
 ## Worked example
 Students investigate the motion of a toy car. In a trial run the speed of the car is about $0.42\,\text{m/s}$. The time is measured with a hand stopwatch, and the timing uncertainty is $\Delta t = 0.2\,\text{s}$. The relative uncertainty of the measurement should be at most $5.0\,\%$. What is the shortest distance the car must travel?

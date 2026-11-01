@@ -1,18 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: d2cd6b8493fbdd36
+CONTENT-HASH: efc0b513fd88dfa9
 
 ## Blocking
-(none left; list what you fixed under Fixed)
+(none)
 
 ## Fixed
-- inquiry.json activities[6].text — "the particle wind of the Sun" → "the stream of particles from the Sun, the solar wind" (standard term, matches activity 0)
-- lesson.md:112 and :127 — "For light, one AU is 8.3 min" (unclear) → "Light travels one AU in (about) 8.3 min"
+- none needed
 
 ## Polish
 - none
 
 ## Checked
-- Update 2026-10-28: meta.json glossary terms restored to English (the update tool had reverted them to Finnish); pages unchanged.
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): lesson.md (all prose, worked example steps, misconceptions, summary), inquiry.json (every prompt, choice, feedback, model answer, hints, mistakes, solutions), exit-ticket.json, meta.json, figures.json against content/fi; physics, sign/direction of conversions, sig-fig statements, numbers, decimal points, \cdot, chapter references to *Physics as a science and the scales of the universe* (courses.json). check_i18n en: 0 errors.
-- Update 2026-10-28: reviewed the newly translated fields intro, source_note, names, word units (pcs, million km) and string answers; button names in *asterisks* match the sim labels and lang exp_record; check_i18n shows no fy1-2 error.
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked lesson, inquiry (check-c2 item, renumbered titles, exit ticket trimmed to two questions), figures.json (ruler-read description) and prefix sentence.
+- Delta review 2026-10-31 against the reviewed Finnish (en): hero illustration (SVG identical to fi apart from aria-label, which is faithful), light-travel-time label in the AU figure, inquiry learn-list endings (now match the fi infinitives after the prefix), Mercury check item with unit in maths (0.387 AU, answer 3.22 min recomputed: 0.387*1.496e8/2.998e5/60 = 3.22), figures.json keys. Numbers, units and physics unchanged. check_i18n en: 0 errors.
+- Delta review 2026-10-31 (prediction 2 title only): title "Prediction 2: a probe farther away" matches the reviewed Finnish "kauempana oleva luotain" (the lesson text introduces Voyager 2, a probe); no premise about the distance stated, prompt numbers (10^7 km, 33 s, 10^9 km) unchanged. check_i18n en: 0 errors.

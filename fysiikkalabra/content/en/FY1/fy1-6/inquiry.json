@@ -8,7 +8,7 @@
   ],
   "prior": [
     "In uniform motion the distance is the product of speed and time, $s = vt$ (chapter *Uniform motion: speed, position and graphs*)",
-    "The slope of a straight-line graph tells how much the quantity on the vertical axis changes when the quantity on the horizontal axis increases by one (chapter *Graphs and fitting a straight line*)"
+    "The slope of a straight-line graph tells how much the quantity on the vertical axis changes when the quantity on the horizontal axis increases by one (chapter *Graphing and fitting a straight line*)"
   ],
   "activities": [
     {
@@ -132,7 +132,7 @@
       "vary": "t",
       "names": {
         "t": "moment t",
-        "ilma": "ilmanvastus",
+        "ilma": "air resistance",
         "mA": "mass m_A",
         "mB": "mass m_B"
       },
@@ -198,7 +198,7 @@
       "names": {
         "mB": "mass m_B",
         "t": "moment t",
-        "ilma": "ilmanvastus",
+        "ilma": "air resistance",
         "mA": "mass m_A"
       },
       "units": {
@@ -263,7 +263,7 @@
       "names": {
         "mB": "mass m_B",
         "t": "moment t",
-        "ilma": "ilmanvastus",
+        "ilma": "air resistance",
         "mA": "mass m_A"
       },
       "units": {

@@ -1,16 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: e3c0a78fbb04b7c1
+CONTENT-HASH: f754ddef14a4deee
 
 ## Blocking
-(none left; list what you fixed under Fixed)
+(none)
 
 ## Fixed
-- (nothing needed for physics)
+- content/fi-easy/FY1/fy1-1/lesson.md:263 — added sentence "Oortin pilvi on tuhansia kertoja kauempana kuin heliopaussi" was wrong (2000–100 000 AU against 120 AU is about 17 to 830 times) → "kymmeniä tai jopa satoja kertoja kauempana".
 
 ## Polish
-- (none)
+(none)
 
 ## Checked
-- Update 2026-10-28: only tests/sims/fy1-1.json changed (the canvas-label assertion follows the audit's "etäisyys Proxima Centauriin"; it runs on the Finnish page); translation unchanged.
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): every split sentence of lesson.md, inquiry.json, exit-ticket.json and figures.json against content/fi for unchanged meaning (orders of magnitude, nesting of structures, interactions, black hole/neutron star statements), decimal comma, \cdot, symbols and numbers. Experiment intros included. check_i18n fi-easy: no fy1-1 error.
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked the new check-c2 item, renumbered activities, the two-question exit ticket, "on the axis of powers of ten" wording and the new scale-marks figure text.
+- Delta against the Finnish source: AU explained (1 AU about 150 million km, correct) in short plain sentences; heliopause 120 AU and Oort cloud 2000–100 000 AU as in fi; $\overline{F}$ as in fi; learn goals complete "Tällä tunnilla opit" with -maan/-mään verbs; exercise-level sentence shortened as in fi. check_i18n fi-easy: 0 errors.

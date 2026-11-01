@@ -1,11 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 72394e13137908d8
+CONTENT-HASH: ac597b2b7b79c1f5
 
 ## Blocking
 
 ## Polish
-- Oranssi viivain käyttää energian/lämmön väriä ja vihreä 'oikean tilan' väriä; kolme neutraalimpaa sävyä (esim. lasi, alumiini, hiekka) välttäisi väreille annetut merkitykset.
-- Viivainten päätyjen pystyviivat voisi jatkaa katkoviivaan asti, jotta 'sama matka' näkyy suoraan.
+- inquiry.json:83 — otsikko "kauempana oleva luotain" ei vastaa kysymystä, joka puhuu vain matkasta ($10^{9}\,\text{km}$), ei luotaimesta; kirjoita esim. "Ennuste 2: sata kertaa pidempi matka" tai "Ennuste 2: valon kulkuaika kauemmas". Huom. "kymmenkertainen" oli ennen virheellinen (matka on satakertainen), joten muutos korjaa oikean asian eikä paljasta vastausta.
+- Edellisen kierroksen Polish-kohdat (AU-lause, mm→µm-esimerkki, ennusteen 33 s, Neptunus-toisto, merkitsevät numerot tutkimusvaiheessa) ovat ennallaan eivätkä estä.
 
 ## Checked
-batch delta review: uusi tekstitön avauskuva (data-fig="hero") Miksi-kysymyksen alla, kaappaukset 1200 ja 360 px sekä SVG. Aurinko, planeettojen radat ja Voyager 2 mustalla avaruustaustalla, katkoviiva luotaimeen ja sen alla kolme samanpituista viivainta eri jakotiheydellä: kuva on juuri Miksi-kysymyksen 'sama matka, kolme yksikköä', ei pelkkä avaruusmaisema. Luotain ja viivaimet erottuvat 360 px:ssä. Aria-label vastaa kuvaa, ei tekstiä, värit figuuripaletista.
+- Diff on yksi otsikon vaihto; ei lukuja, symboleja eikä vastausta paljastavaa sisältöä.
+- Uusi otsikko ei kerro tulosta (ei aikaa, ei kerrointa); ennustekysymys ja vaihtoehdot ennallaan.
+- Otsikko pysyy mielekkäänä, kun ennuste avataan uudelleen kokeen jälkeen.
+- Hash tarkistettu alussa ja lopussa: ac597b2b7b79c1f5.

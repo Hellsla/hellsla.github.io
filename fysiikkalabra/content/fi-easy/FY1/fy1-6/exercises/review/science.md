@@ -1,15 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 677720258c3c0c04
+CONTENT-HASH: f65fdea3cf3a11ad
 
 ## Blocking
 (none left)
-
-## Fixed
-- none needed
 
 ## Polish
 - none
 
 ## Checked
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): exercises.json texts and every solution step (L1-01…L3-03): numbers, decimal commas, formulas, answers, significant-figure reasoning and reasonableness checks unchanged; L3-03 reworded task still asks for the shortfall v_vapaa − v_mitattu.
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked exercise L2-02 (two-planets graph task, solution with Reading the graph, accepted 3 %, figure description and exercise figure reference); numbers, decimal signs, formulas and answers match the new Finnish.
+- All 12 tasks against the Finnish: answers, units, tolerances and figure id identical; every numeric token of solutions.md matches the Finnish (327 tokens), decimal commas as {,} in maths.
+- Same physics and conditions (ilmanvastus jätetään huomiotta, tyhjiö, ei ilmakehää); L2-02 reading values 20 and 40 m/s at 5,0 s and answer 2,5 s unchanged.
+- Terms as in the lesson (putoamiskiihtyvyys, vapaa pudotus); values with units set as maths.

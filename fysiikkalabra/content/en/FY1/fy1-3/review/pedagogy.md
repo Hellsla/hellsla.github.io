@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 6592b9fd7070d4cc
+CONTENT-HASH: 6d344e8dd6cf6285
 
 ## Blocking
 
@@ -12,3 +12,4 @@ CONTENT-HASH: 6592b9fd7070d4cc
 ## Checked
 - Round 2 delta: the first Summary bullet now says "Every measurement result has some uncertainty. The error is usually not known, but its possible size is estimated as the measurement uncertainty"; it matches the Key idea paragraph and the worked example's wording, separates the unknown error from the stated uncertainty, and removes the earlier "an error belongs to every measurement" ambiguity.
 - The rest of the lesson is as approved in round 1 (hash change comes only from this sentence).
+- Round 3: the only change is the figure label "systematic error: wrong zero" (was "zero"). It is clearer for learners: it says the zero is what is faulty, consistent with the text and the correction m = m_reading - m_0. Label fits its widened box and is centred above the dashed line; no other difference from the approved version.

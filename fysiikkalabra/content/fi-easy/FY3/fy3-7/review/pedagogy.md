@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: c788dd5f5ae2f954
+CONTENT-HASH: e386345ac96c4481
 
 ## Blocking
+- none
 
 ## Polish
-- None.
+- none
 
 ## Checked
-batch delta review: every `learn` goal completes "Tällä tunnilla opit" with a lowercase -maan/-mään verb in parallel form; the skill, demand, key terms, symbols and numbers match the previous wording; plain Selkeä suomi.
+delta review: the only change is sim.js line 165, the time-axis label "t (s)" moved 3 units lower (ts(36) to ts(39)). In the 390 px simulation capture the label now sits clearly below the last tick label and no longer touches it; the axis stays inside the canvas, nothing is clipped, and text, controls, readout and tasks are unchanged.

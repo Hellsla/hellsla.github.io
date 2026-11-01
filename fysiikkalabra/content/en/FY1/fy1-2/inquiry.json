@@ -80,7 +80,7 @@
       "id": "ennuste-2",
       "stage": "ennusta",
       "type": "choice",
-      "title": "Prediction 2: a ten times longer distance",
+      "title": "Prediction 2: a probe farther away",
       "prompt": "Light travels a distance of $10^{7}\\,\\text{km}$ in about 33 seconds. How long does it take to travel a distance of $10^{9}\\,\\text{km}$?",
       "justify": true,
       "reveal": {
@@ -413,12 +413,12 @@
       "stage": "tarkista",
       "type": "numeric",
       "title": "3. Travel time of light",
-      "prompt": "Mercury is at a mean distance of 0.387 AU from the Sun. How many minutes does light take to travel from the Sun to Mercury? Use the values $1\\,\\text{AU} = 1.496\\cdot10^{8}\\,\\text{km}$ and $c = 2.998\\cdot10^{5}\\,\\text{km/s}$. Answer in minutes.",
+      "prompt": "Mercury is at a mean distance of $0.387\\,\\text{AU}$ from the Sun. How many minutes does light take to travel from the Sun to Mercury? Use the values $1\\,\\text{AU} = 1.496\\cdot10^{8}\\,\\text{km}$ and $c = 2.998\\cdot10^{5}\\,\\text{km/s}$. Answer in minutes.",
       "answer": 3.22,
       "unit": "min",
       "tolerance": 0.02,
       "hints": [
-        "First convert the distance to kilometres: how many kilometres is 0.387 AU?",
+        "First convert the distance to kilometres: how many kilometres is $0.387\\,\\text{AU}$?",
         "The travel time of light is $t = \\dfrac{s}{c}$. It comes out in seconds when the distance is in kilometres and the speed in $\\text{km/s}$.",
         "$s = 0.387\\cdot1.496\\cdot10^{8}\\,\\text{km} = 5.790\\cdot10^{7}\\,\\text{km}$ and $t = \\dfrac{5.790\\cdot10^{7}\\,\\text{km}}{2.998\\cdot10^{5}\\,\\text{km/s}}$; finally convert to minutes."
       ],

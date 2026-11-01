@@ -1,15 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 677720258c3c0c04
+CONTENT-HASH: f65fdea3cf3a11ad
 
 ## Blocking
 (none left)
-
-## Fixed
-- none needed (solutions.md was already simplified throughout: long "joten/ja" chains split into short sentences)
 
 ## Polish
 - none
 
 ## Checked
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): Selkeä suomi in tasks and all solution steps, same cognitive demand, all steps present, Finnish step labels (**Annettu:** … **Järkevyys:**) kept.
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked exercise L2-02 (two-planets graph task, solution with Reading the graph, accepted 3 %, figure description and exercise figure reference); numbers, decimal signs, formulas and answers match the new Finnish.
+- Plain Finnish: tasks split into short sentences (e.g. L1-03, L1-04, L2-04, L3-01, L3-03) without changing what is asked; the solutions stay in the same eight-step order.
+- Same teaching sequence and level structure as the Finnish; no new terms introduced.
+- Hints in the Principle lines use direct address (Voit laskea, Ratkaise ensin) and are clear.

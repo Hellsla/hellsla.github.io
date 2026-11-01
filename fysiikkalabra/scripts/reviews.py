@@ -106,7 +106,7 @@ RULES = {                       # category: (science, pedagogy, visual)
     "illustration":   ("none",  "delta", "delta"),   # an illustration (data-fig="hero" or "scene"): no text, no physics claim (teacher 2026-10-26)
     "split":          ("none",  "none", "none"),    # passed as one lesson before the split; this part's files moved, unchanged (answers.py: line for line)
 }
-WHY = {"typography": "formulas re-set (spacing, fraction style, decimal comma) without a change of meaning", "tests": "simulation tests added or tightened", "comments": "comments only", "style": "figure or sim styling only",
+WHY = {"typography": "formulas re-set (spacing, fraction style, decimal comma) or a symbol set as maths, or blank lines, without a change of meaning", "tests": "simulation tests added or tightened", "comments": "comments only", "style": "figure or sim styling only",
        "label-position": "a figure label nudged, text unchanged", "wording": "wording without numbers or symbols",
        "relocated": "the sim's text moved word for word into its lead and boxes",
        "chapter-ref": "a chapter reference follows that chapter's new title",
@@ -433,7 +433,7 @@ def _svg_pair(old, new):
 
 
 NUM = re.compile(r"(?<![\w.])-?\d+(?:\.\d+)?")
-LABEL_CALL = re.compile(r"""\b(?:lab|p\.text)\(\s*(['"`])((?:(?!\1)[^\\]|\\.)*)\1""")
+LABEL_CALL = re.compile(r"""\b(?:lab|label|p\.text)\(\s*(['"`])((?:(?!\1)[^\\]|\\.)*)\1""")
 
 
 def _label_args(line):
@@ -526,10 +526,22 @@ def _math_view(s):
     return TYPO_TOKEN.sub("", s.replace("{,}", ","))
 
 
+def _set_view(s):
+    """A line as read, whether a value or symbol is set as text or as maths: no $, no spacing commands, \\text{x} and
+    \\textsf{x} as x, \\mu as µ, {,} as a comma, no spaces."""
+    s = s.replace("\\\\", "\\").replace("$", "").replace("{,}", ",").replace("\\mu", "µ")
+    s = re.sub(r"\\(?:text|textsf|mathrm)\{([^{}]*)\}", r"\1", s)
+    return re.sub(r"\\[,;:!]|\s+", "", s)
+
+
 def _typography_pair(old, new):
     """True when two lines differ only inside their $…$ formulas, and there only in how the formula is set (_math_view):
     the words outside the maths identical, the same number of formulas."""
-    if old == new or "$" not in old: return False
+    if old == new: return False
+    if _set_view(old) == _set_view(new):
+        fa, fb = [_math_view(x).replace("\\textsf", "\\text") for x in old.split("$")[1::2]], [_math_view(x).replace("\\textsf", "\\text") for x in new.split("$")[1::2]]
+        if fa == fb or (len(fa) < len(fb) and all(x in fb for x in fa)): return True   # the old formulas kept as they were ($m$ → $\\text{m}$ is a new meaning, not this)   # a symbol or a value with its unit set as maths ("82 µm" → "$82\\,\\mu\\text{m}$", "(t, s)" → "$(t, s)$", \\text{l} → \\textsf{l}), nothing else (visual audit 2026-10-31)
+    if "$" not in old: return False
     a, b = old.split("$"), new.split("$")
     return len(a) == len(b) and all(x == y if i % 2 == 0 else _math_view(x) == _math_view(y) for i, (x, y) in enumerate(zip(a, b)))
 
@@ -557,6 +569,9 @@ def classify(path, diff_lines, lid):
             for o in [l for l in rem if l.startswith("## ")]:
                 n = next((l for l in add if l.startswith("## ") and inquiry.heading(l[3:])[0] == inquiry.heading(o[3:])[0] and l != o), None)
                 if n is not None: cats.add("section-name"); rem.remove(o); add.remove(n)
+        if name.endswith(".md"):                       # a blank line added or removed (a list now builds as a list, visual audit 2026-10-31): only how the text is set
+            for l in [l for l in rem + add if not l.strip()]:
+                cats.add("typography"); (rem if l in rem else add).remove(l)
         if not (code or py):                           # "(luku *Tasainen liike: s = vt*)" → the chapter's current title
             for o in list(rem):
                 n = next((l for l in add if l != o and _chapter_refs_renamed(o, l)), None)
@@ -567,6 +582,10 @@ def classify(path, diff_lines, lid):
             for o in list(rem):                        # a formula re-set, its meaning unchanged: only the visual reviewer looks
                 n = next((l for l in add if _typography_pair(o, l)), None)
                 if n is not None: cats.add("typography"); rem.remove(o); add.remove(n)
+        dedup = lambda l: tuple(list(dict.fromkeys(x)) for x in _math_and_numbers(l))
+        if name.endswith((".md", ".json")) and len(rem) == len(add) == 1 and not SVG_LINE.match(rem[0]) and dedup(rem[0]) == dedup(add[0]) \
+                and not rem[0].lstrip().startswith(("#", "<", "```")) and {_line(name, rem[0], lid), _line(name, add[0], lid)} <= {"numbers", "wording"}:
+            cats.add("wording"); return               # one prose line reworded, its formulas and numbers the same ("Voyager 2" is not a new number) or a repeated formula dropped (visual audit 2026-10-31)
         if code and len(rem) == len(add) and rem and all(_js_label_pair(o, n) for o, n in zip(rem, add)):
             cats.add("label-position"); return       # a canvas label moved, its text unchanged: check_layout and test_sims see it
         if code or py:

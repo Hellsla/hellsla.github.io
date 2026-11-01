@@ -121,9 +121,9 @@
       ],
       "vary": "t",
       "names": {
-        "s0": "alkupaikka",
-        "v": "nopeus",
-        "t": "hetki"
+        "s0": "initial position",
+        "v": "speed",
+        "t": "moment"
       },
       "units": {
         "s0": "m",
@@ -174,9 +174,9 @@
       ],
       "vary": "t",
       "names": {
-        "s0": "alkupaikka",
-        "v": "nopeus",
-        "t": "hetki"
+        "s0": "initial position",
+        "v": "speed",
+        "t": "moment"
       },
       "units": {
         "s0": "m",

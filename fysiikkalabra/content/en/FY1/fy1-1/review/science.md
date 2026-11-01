@@ -1,16 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 5983165534fdb565
+CONTENT-HASH: ccfbd1801ea26700
 
 ## Blocking
-(none left; list what you fixed under Fixed)
+(none)
 
 ## Fixed
-- content/en/FY1/fy1-1/lesson.md:267 — "Not all astronomical objects are steps in the same nesting. They are inside galaxies…" read as if all objects were inside galaxies → "…steps in the same nested series. Instead, they are found inside galaxies, among the stars." (same meaning as the Finnish)
+- (nothing needed)
 
 ## Polish
-- (none)
+(none)
 
 ## Checked
-- Update 2026-10-28: only tests/sims/fy1-1.json changed (the canvas-label assertion follows the audit's "etäisyys Proxima Centauriin"; it runs on the Finnish page); translation unchanged.
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): lesson.md all sections against content/fi (scale statements, orders of magnitude, nuclear/atomic sizes, observable-universe and black-hole statements, the four interactions, worked example steps and numbers), inquiry.json (predictions, feedback, solutions, model/calc texts), exit-ticket.json, meta.json, figures.json; decimal points, \cdot, units in prose, chapter reference "Quantities, units and the SI system" = courses.json. Also the experiment intros (activities[5–7]) and answer units after the check_i18n update. check_i18n en: no fy1-1 error.
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked the new check-c2 item, renumbered activities, the two-question exit ticket, "on the axis of powers of ten" wording and the new scale-marks figure text.
+- Delta since the reviewed version against the Finnish source: learn goals now complete "In this lesson you will learn to" (parallel verbs, same skills, numbers and terms as fi); $\overline{F}$ on the force arrow as in fi; experiment-table name "object" for the select (sim key kohdeNimi unchanged, display name only); units "orders of magnitude" and "times" with no Finnish left; exercise-level sentence shortened as in fi. check_i18n en: 0 errors.

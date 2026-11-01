@@ -77,7 +77,7 @@
 **Conversions:** None needed: the masses are in kilograms and the volumes in litres, so $k$ comes out in kg/l.
 **Substitution:** $k = \dfrac{9.9\,\text{kg} - 3.9\,\text{kg}}{9.0\,\textsf{l} - 3.0\,\textsf{l}} = 1.0\,\tfrac{\text{kg}}{\textsf{l}}$ and $b = 3.9\,\text{kg} - 1.0\,\tfrac{\text{kg}}{\textsf{l}} \cdot 3.0\,\textsf{l} = 0.9\,\text{kg}$
 **Answer:** $0.9\,\text{kg}$, one decimal place like the given masses $3.9\,\text{kg}$ and $9.9\,\text{kg}$.
-**Reasonableness:** The slope $1.0\,\text{kg/l}$ is the density of water, so the liquid is correctly identified as water. An empty plastic canister weighs about $1\,\text{kg}$, so $0.9\,\text{kg}$ is reasonable.
+**Reasonableness:** The slope $1.0\,\text{kg/l}$ is the density of water, so the liquid is correctly identified as water. An empty plastic canister has a mass of about $1\,\text{kg}$, so $0.9\,\text{kg}$ is reasonable.
 
 ## fy1-4-L2-04
 **Given:** starting charge $b = 4.0\,\text{€}$ and price per kilometre $k = 2.5\,\tfrac{\text{€}}{\text{km}}$; distances $x_1 = 5.0\,\text{km}$ and $x_2 = 10\,\text{km}$

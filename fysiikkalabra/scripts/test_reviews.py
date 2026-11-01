@@ -367,9 +367,35 @@ expect("... but a changed number in a formula is not typography: science full", 
 p.write_text(src_md.replace(line, line + " Lisäsana.", 1))
 code, out = run(t, "reviews.py", "scope", LESSON)
 expect("... and a sentence added outside the maths is not typography", "typography" not in out and "science: none" not in out, out)
+plain = next(l for l in src_md.splitlines() if l.strip() and "$" not in l and not l.lstrip().startswith(("<", "#", "-", "`")) and len(l.split()) > 3)
+w = plain.split()[1]
+p.write_text(src_md.replace(plain, plain.replace(" " + w + " ", " $" + w + "$ ", 1), 1))
+code, out = run(t, "reviews.py", "scope", LESSON)
+expect("a symbol in the text set as maths, nothing else, is typography: science and pedagogy none", "science: none" in out and "pedagogy: none" in out and "visual: delta" in out, out)
+ls = src_md.split("\n"); k = next(i for i in range(1, len(ls)) if ls[i - 1].strip() and ls[i].strip() and not ls[i - 1].lstrip().startswith(("<", "`", "{")) and not ls[i].lstrip().startswith(("<", "`", "{")))
+p.write_text("\n".join(ls[:k] + [""] + ls[k:]))
+code, out = run(t, "reviews.py", "scope", LESSON)
+expect("a blank line added (a list builds as a list) is typography: science and pedagogy none", "science: none" in out and "pedagogy: none" in out and "visual: delta" in out, out)
+p.write_text(src_md.replace(plain, plain.replace(" " + w + " ", " $" + w + "2$ ", 1), 1))
+code, out = run(t, "reviews.py", "scope", LESSON)
+expect("... but a symbol changed while set as maths is not typography", "science: none" not in out, out)
+
+numline = next(l for l in src_md.splitlines() if re.search(r"\d", l) and not l.lstrip().startswith(("<", "#", "-", "`", "|", "{")) and len(l.split()) > 6)
+words = [x for x in numline.split() if x.isalpha() and len(x) > 3]
+p.write_text(src_md.replace(numline, numline.replace(" " + words[0] + " ", " " + words[0] + "kin ", 1), 1))
+code, out = run(t, "reviews.py", "scope", LESSON)
+expect("a prose line with a number reworded, its numbers and formulas the same: wording (science delta, not full)", "science: delta" in out and "wording" in out, out)
+p.write_text(src_md)
 
 # 8c. investigations, TVT guides and Sovella sets: three reports, or a baseline row for exactly this hash
 sys.path.insert(0, str(HERE)); import reviews as rv
+expect("a value with its unit set as maths is typography", rv._typography_pair("paksuus on 82 µm.", r"paksuus on $82\,\mu\text{m}$."))
+expect("... the litre \\text{l} → \\textsf{l} is typography", rv._typography_pair(r"$3{,}0\,\text{l}$", r"$3{,}0\,\textsf{l}$"))
+expect("... but $m$ → $\\text{m}$ (mass → metre) is not", not rv._typography_pair(r"massa $m$ on", r"massa $\text{m}$ on"))
+expect("... nor a changed value set as maths", not rv._typography_pair("on 82 µm.", r"on $83\,\mu\text{m}$."))
+_lo = r"    label('$t\\ (\\text{s})$', CH.x1 + 10, CH.y0 + ts(36), p.RIGHT, ts(12));"
+expect("a LaTeX label moved in a sim's own label() helper is a label nudge", rv._js_label_pair(_lo, _lo.replace("ts(36)", "ts(39)")))
+expect("... but not its size", not rv._js_label_pair(_lo, _lo.replace("ts(12)", "ts(14)")))
 d = pathlib.Path(tempfile.mkdtemp()); (d / "review").mkdir(); keep = rv.BASELINE, rv.VISUAL_GATE
 for n in ("science", "pedagogy"): (d / "review" / f"{n}.md").write_text("VERDICT: PASS\nCONTENT-HASH: 1111111111111111\n")
 rv.BASELINE = d / "visual-baseline.tsv"; rv.VISUAL_GATE = True

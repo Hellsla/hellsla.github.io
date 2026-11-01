@@ -1,16 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: d6971f3803f69ec4
+CONTENT-HASH: e73d5c50b1992213
 
 ## Blocking
-(none left; list what you fixed under Fixed)
+(none)
 
 ## Fixed
 - none needed
 
 ## Polish
-- Word units translated: pcs, million km.
+- none
 
 ## Checked
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): Task wording natural for students and asks the same as the Finnish; step labels match lang/en.json.
-- Update 2026-10-28: reviewed the newly translated fields intro, source_note, names, word units (pcs, million km) and string answers; button names in *asterisks* match the sim labels and lang exp_record; check_i18n shows no fy1-2 error.
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked exercise translations (ruler-read figure task and its solution, unit-in-math numbers).
+- Delta review 2026-10-31 (en): task wording asks the same as the Finnish; units in maths formatted as in the Finnish; answer-unit words are in en.

@@ -80,7 +80,7 @@
       "id": "ennuste-2",
       "stage": "ennusta",
       "type": "choice",
-      "title": "Ennuste 2: kymmenkertainen matka",
+      "title": "Ennuste 2: kauempana oleva luotain",
       "prompt": "Valo kulkee $10^{7}\\,\\text{km}$ pituisen matkan noin 33 sekunnissa. Kuinka kauan se kulkee $10^{9}\\,\\text{km}$ pituisen matkan?",
       "justify": true,
       "reveal": {
@@ -413,12 +413,12 @@
       "stage": "tarkista",
       "type": "numeric",
       "title": "3. Valon kulkuaika",
-      "prompt": "Merkurius on keskimäärin 0,387 AU:n etäisyydellä Auringosta. Kuinka monta minuuttia valolla kestää kulkea Auringosta Merkuriukseen? Käytä arvoja $1\\,\\text{AU} = 1{,}496\\cdot10^{8}\\,\\text{km}$ ja $c = 2{,}998\\cdot10^{5}\\,\\text{km/s}$. Vastaa minuutteina.",
+      "prompt": "Merkurius on keskimäärin $0{,}387\\,\\text{AU}$:n etäisyydellä Auringosta. Kuinka monta minuuttia valolla kestää kulkea Auringosta Merkuriukseen? Käytä arvoja $1\\,\\text{AU} = 1{,}496\\cdot10^{8}\\,\\text{km}$ ja $c = 2{,}998\\cdot10^{5}\\,\\text{km/s}$. Vastaa minuutteina.",
       "answer": 3.22,
       "unit": "min",
       "tolerance": 0.02,
       "hints": [
-        "Muunna ensin matka kilometreiksi: kuinka monta kilometriä on 0,387 AU?",
+        "Muunna ensin matka kilometreiksi: kuinka monta kilometriä on $0{,}387\\,\\text{AU}$?",
         "Valon kulkuaika on $t = \\dfrac{s}{c}$. Se tulee sekunteina, kun matka on kilometreinä ja nopeus on $\\text{km/s}$.",
         "$s = 0{,}387\\cdot1{,}496\\cdot10^{8}\\,\\text{km} = 5{,}790\\cdot10^{7}\\,\\text{km}$ ja $t = \\dfrac{5{,}790\\cdot10^{7}\\,\\text{km}}{2{,}998\\cdot10^{5}\\,\\text{km/s}}$; muuta lopuksi minuuteiksi."
       ],

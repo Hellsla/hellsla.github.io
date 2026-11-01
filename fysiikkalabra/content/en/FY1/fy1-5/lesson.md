@@ -230,10 +230,10 @@ Uniform motion is motion along a straight line at constant speed: in equal inter
 </svg>
 
 ### Direct proportionality
-Two quantities are directly proportional if their ratio is always the same. When uniform motion starts from the zero point, the distance travelled $s$ and the time $t$ are directly proportional: double the time gives double the distance, and the ratio $s : t$ is the speed $v$. In a (t, s) graph this shows as a straight line through the origin.
+Two quantities are directly proportional if their ratio is always the same. When uniform motion starts from the zero point, the position $s$, which here equals the distance travelled, and the time $t$ are directly proportional: double the time gives double the distance, and the ratio $s : t$ is the speed $v$. In a $(t, s)$ graph this shows as a straight line through the origin.
 
 ### Linear model
-Uniform motion is a model, not reality. A cyclist pedals unevenly, and Voyager 2 slows down slightly because of the Sun's gravity. The model is still good when the speed changes little compared with the time being considered. Its graph is a straight line, and a straight line is described by a linear model: the position changes by the same amount every second. Values calculated with the model are model values, which are compared with measurements.
+Uniform motion is a model, not reality. A cyclist pedals unevenly, and Voyager 2 slows down slightly because of the Sun's gravity. The model is still good when the speed changes only a little during the time being considered. Its graph is a straight line, and a straight line is described by a linear model: the position changes by the same amount every second. Values calculated with the model are model values, which are compared with measurements.
 
 ## Formula: Uniform motion
 Suppose that at the start of the observation ($t = 0$) an object is at position $s_0$ and moves along a straight line at constant speed $v$. Its position at time $t$ is
@@ -243,7 +243,7 @@ s = s_0 + v t
 where $s$ is the position (m) measured from the chosen zero point, $s_0$ the initial position (m), $v$ the speed (m/s) and $t$ the time from the start (s). The distance travelled by the object is $\Delta s = s - s_0 = vt$. In this chapter the object moves in one direction, so the speed is positive.
 
 ### Speed from a graph
-The (t, s) graph is a straight line, and the slope of the line is the speed:
+The $(t, s)$ graph is a straight line, and the slope of the line is the speed:
 ```latex
 v = \frac{\Delta s}{\Delta t}
 ```
@@ -345,6 +345,6 @@ Many people think that in uniform motion the position doubles when the time doub
 ## Summary
 - In uniform motion the speed is constant, and the object travels equal distances in equal intervals of time: $s = s_0 + vt$.
 - The distance travelled $\Delta s = vt$ is directly proportional to time. The position $s$ is proportional to time only when $s_0 = 0$.
-- The (t, s) graph is a straight line. Its slope $\Delta s : \Delta t$ is the speed, and the intercept on the $s$-axis is the initial position $s_0$.
+- The $(t, s)$ graph is a straight line. Its slope $\Delta s : \Delta t$ is the speed, and the intercept on the $s$-axis is the initial position $s_0$.
 - Convert units before calculating by substitution, for example $1\,\text{km} = 1000\,\text{m}$ and $1\,\text{h} = 3600\,\text{s}$.
 - Uniform motion is a linear model. The values it gives are model values, which can be compared with measurements, such as the distance of Voyager 2.

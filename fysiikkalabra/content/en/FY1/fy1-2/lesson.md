@@ -538,7 +538,7 @@ where $t$ is the travel time of light, $s$ the distance travelled by light and $
   <line x1="12" y1="244" x2="588" y2="244" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <foreignObject x="135" y="267.5" width="330" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$s = 1.496\cdot10^{8}\,\text{km}$</div></foreignObject>
   <foreignObject x="230" y="307.5" width="140" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$= 1\,\text{AU}$</div></foreignObject>
-  <foreignObject x="35" y="341.5" width="530" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$= 499\,\text{s} = 8.32\,\text{min}\ \text{(travel time of light)}$</div></foreignObject>
+  <foreignObject x="35" y="341.5" width="530" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{light travel time } t = 499\,\text{s} = 8.32\,\text{min}$</div></foreignObject>
 </svg>
 
 ## Worked example

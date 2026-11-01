@@ -121,7 +121,7 @@
       ],
       "vary": "k",
       "names": {
-        "aineisto": "aineisto",
+        "aineisto": "data set",
         "k": "slope k",
         "b": "constant term b"
       },
@@ -155,7 +155,7 @@
       ],
       "vary": "b",
       "names": {
-        "aineisto": "aineisto",
+        "aineisto": "data set",
         "k": "slope k",
         "b": "constant term b"
       },
@@ -189,7 +189,7 @@
       ],
       "vary": "k",
       "names": {
-        "aineisto": "aineisto",
+        "aineisto": "data set",
         "k": "slope k",
         "b": "constant term b"
       },
@@ -341,7 +341,7 @@
       "title": "Apply to a new situation",
       "prompt": "The height $h$ of a plant was followed as a function of days $t$, and the line fitted to the data points passes through the points $(2.0\\,\\text{days};\\ 5.6\\,\\text{cm})$ and $(10.0\\,\\text{days};\\ 12.0\\,\\text{cm})$. On which day from the start of the measurements is the plant 20 cm tall according to the line, when the line is extended beyond the measured range? Give the answer in days.",
       "answer": 20,
-      "unit": "vrk",
+      "unit": "days",
       "tolerance": 0.02,
       "hints": [
         "What is the slope of the line and what unit does it use? Calculate it from two points on the line.",

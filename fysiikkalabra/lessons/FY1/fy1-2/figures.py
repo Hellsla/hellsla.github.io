@@ -125,7 +125,7 @@ def conversion():
     f.line(12, 244, 588, 244, RULE_LIGHT, 1.5)
     f.tex(300, 282, r"s = 1{,}496\cdot10^{8}\,\text{km}", "middle", w=330)
     f.tex(300, 322, r"= 1\,\text{AU}", "middle", w=140)
-    f.tex(300, 356, r"= 499\,\text{s} = 8{,}32\,\text{min}\ \text{(valon kulkuaika)}", "middle", w=530)
+    f.tex(300, 356, r"\text{valon kulkuaika } t = 499\,\text{s} = 8{,}32\,\text{min}", "middle", w=530)   # a time on its own row, never "= 1 AU = 499 s" (visual audit 2026-10-31)
     return f.svg()
 
 

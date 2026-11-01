@@ -1,8 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 81dfde6a187b03e5
+CONTENT-HASH: 9aee59eec243934c
 ## Blocking
 
 ## Polish
-- None.
+
 ## Checked
-batch delta review: title change only (and objective rephrasings); new title names the contents (speed, position, graphs) and matches the goals and the s = s0 + vt model; no physics claim, option or number changed.
+Translation review against the reviewed Finnish source (selkeä suomi): lesson.md, inquiry.json, exit-ticket.json, figures.json. Same physics, formulas, numbers and answers; correct options, feedback numbers and the Voyager 2 example identical (JSON structure and number sets compared by script, no differences).

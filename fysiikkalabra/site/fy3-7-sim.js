@@ -162,7 +162,7 @@ new p5((p) => {
     for (let v = -20; v <= 120; v += 20) label(`$${tx(v, 0)}$`, CH.x0 - 10, Y(v) + ts(4), p.RIGHT, ts(11));
     const every = k > 1.5 ? 2 : 1;                                                                // every second label on a phone
     for (let i = 0; i * step <= tMax; i += every) label(`$${i * step}$`, X(i * step), CH.y0 + ts(17), p.CENTER, ts(11));
-    label('$t\\ (\\text{s})$', CH.x1 + 10, CH.y0 + ts(36), p.RIGHT, ts(12));                                  // below the tick labels
+    label('$t\\ (\\text{s})$', CH.x1 + 10, CH.y0 + ts(39), p.RIGHT, ts(12));                                  // below the tick labels
     label('$T\\ (^\\circ\\text{C})$', CH.x0 + 6, CH.y1 - 14, p.LEFT, ts(12));                                       // above the T axis
     p.noFill(); p.stroke(205); p.strokeWeight(2); p.beginShape(); pts.forEach(([a, b]) => p.vertex(X(a), Y(b))); p.endShape();
     p.stroke(200, 60, 40); p.strokeWeight(3); p.beginShape();

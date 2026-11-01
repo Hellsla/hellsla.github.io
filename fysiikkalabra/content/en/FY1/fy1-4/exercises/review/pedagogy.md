@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: f2643bb5cbbb085c
+CONTENT-HASH: 6cf368f32329a031
 
 ## Blocking
-(none left; list what you fixed under Fixed)
+(none)
 
 ## Fixed
-- (none)
+- solutions.md: "weighs about 1 kg" (mass context) -> "has a mass of about 1 kg" in L2-03.
 
 ## Polish
-- L2-03 "weighs about 1 kg" kept as everyday wording, as in the Finnish "painaa".
+(none)
 
 ## Checked
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): exercises.json and solutions.md: natural English, consistent terms and step labels (Given/Find/Principle/Formula/Conversions/Substitution/Answer/Reasonableness), tasks ask the same thing.
-- Update 2026-10-28 14:00 fields (intro, source_note, names, word units, string answers): word units (times, d for days) and string answers: correct.
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked exercises and solutions (figure task L2-02, unit formatting) against the new Finnish.
+- Translation review against the reviewed Finnish source (teacher procedure 2026-10-28), pedagogy role: exercises.json and solutions.md compared with content/fi: same numbers, answers, tolerances, units, signs, significant-figure reasoning and teaching sequence in all 12 exercises; every number sequence in solutions.md matches the Finnish.
+- Figure task L2-02 (fy1-4/scatter-points) and the point list in its solution agree with the Finnish.
+- Natural English, no Finnish words left; units (days, times) correct; check_i18n 0 errors.

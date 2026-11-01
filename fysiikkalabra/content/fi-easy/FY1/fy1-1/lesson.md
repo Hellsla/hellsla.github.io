@@ -260,7 +260,7 @@ Aurinko on yksi Linnunradan sadoista miljardeista tähdistä. **Linnunrata** on 
 
 ### Aurinkokunnan reuna riippuu siitä, mitä mitataan
 
-Aurinkokunnalla ei ole yhtä tarkkaa reunaa. Auringosta virtaa hiukkasia. Niitä sanotaan **aurinkotuuleksi**. Aurinkotuuli puhaltaa Auringon ympärille kuplan, **heliosfäärin**. Kuplan raja on heliopaussi. Se on noin $120\,\text{AU}$:n päässä Auringosta, ja Voyager-luotaimet ovat ylittäneet sen. Auringon painovoima hallitsee kuitenkin paljon kauempana. Pitkäjaksoisten komeettojen radoista päätellään, että Aurinkoa kiertää kaukana komeettojen parvi, Oortin pilvi. Se on noin $2000$–$100\,000\,\text{AU}$:n päässä. Voyagerit ovat siis tähtienvälisessä avaruudessa. Ne ovat silti yhä Auringon painovoiman piirissä.
+Aurinkokunnalla ei ole yhtä tarkkaa reunaa. Auringosta virtaa hiukkasia. Niitä sanotaan **aurinkotuuleksi**. Aurinkotuuli puhaltaa Auringon ympärille kuplan, **heliosfäärin**. Kuplan raja on heliopaussi. Etäisyys ilmoitetaan astronomisena yksikkönä (AU). Yksi AU eli astronominen yksikkö on Maan ja Auringon keskietäisyys, noin 150 miljoonaa kilometriä. Heliopaussi on noin $120\,\text{AU}$:n päässä Auringosta, ja Voyager-luotaimet ovat ylittäneet sen. Auringon painovoima hallitsee kuitenkin paljon kauempana. Pitkäjaksoisten komeettojen radoista päätellään, että Aurinkoa kiertää kaukana komeettojen parvi, Oortin pilvi. Se on noin $2000$–$100\,000\,\text{AU}$:n päässä. Oortin pilvi on kymmeniä tai jopa satoja kertoja kauempana kuin heliopaussi. Voyagerit ovat siis tähtienvälisessä avaruudessa. Ne ovat silti yhä Auringon painovoiman piirissä.
 
 ### Kohdetyyppejä, ei portaita
 
