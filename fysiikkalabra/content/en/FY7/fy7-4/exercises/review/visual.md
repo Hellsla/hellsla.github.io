@@ -1,13 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: b1ea1c2c7efc0600
+CONTENT-HASH: b23d6b7a8c4b3f3f
 
 ## Blocking
 
 ## Polish
-- [Minor] fy7-4-L2-02 graph (open-exercises-L2-1280-2) — the dashed extension beyond the last point is not mentioned in the task and the data are not labelled as made-up; the points are violet, the colour of momentum in the project palette — add "(illustrative data)" to the task and use the ink or green for data points.
+- [Minor] fy7-4-L2-02 graph — the earlier Polish item (mark the data as illustrative; violet points are the momentum colour) is unchanged by this diff and still open.
 
 ## Checked
-- open-exercises-L2-1280-2 (L2-02 with graph), -L2-1280-3 (L2-02 solution), -L3-1280-2 (L3 solutions 1–2), open-tarkista-1280-2; solution layout, aligned rows, fractions, units, answer boxes and the decimal point checked; all 12 tasks and solutions read from the packet.
+- fy7-4-fig-13-390 (parallel wires, headings changed): "same direction" and "opposite directions" fit on one line above each panel at 390 px, nothing clipped, labels, arrows and attract/repel captions intact.
+- The diff touches only these figure labels, so the exercise layout captures are unaffected.
 
 ## Scores
 illustrations 4 · typography 4 · Finnish (English prose) 4 · accessibility 4
