@@ -1,21 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 311b8a552540fc24
+CONTENT-HASH: d9ad8d1ce3ec7242
 
 ## Blocking
 
 ## Polish
-- [Minor] fig lahteet (fig-4-390) — the x-axis label reads `mSv/a` and the bar label "aineet elimistössä", while the prose and table say "vuodessa" and "elimistön omat aineet" — use the table's wording and write `\text{mSv/vuosi}` or explain `a` once.
-- [Minor] fig painotus (fig-6-390) — the grey `w_R = 1` / `w_R = 20` lines are low-contrast on the pale page and read as secondary although they carry the point; darken them to the body text colour.
-- [Minor] fig etaisyys (fig-8-390) — the row `1`, `1/4`, `1/9` under `\dot{H}` has no unit or "suhteellinen"; add "(suhteellinen)" to the label so it is not read as 1 µSv/h.
-- [Minor] fig hero — the hero already shows radon rising into the house, which gives away the lesson's question before the student has predicted (for pedagogy; no visual defect).
-- [Minor] inquiry experiment tables — `measure` label "annosnopeus (µSv/h)" is plain text, not LaTeX; use `$\dot{H}\ (\mu\text{Sv/h})$` if the table renderer allows it.
+- [Minor] exp-koe-1-390-1 / lab-1280-1 — "Alkutila: etäisyys $r = 1\,\text{m}$" while everywhere else the model uses `1,0 m`; significant figures differ. — Generate the initial-state line with one decimal.
+- [Minor] fig hero (fig-1-390) — the cellar is an empty white box and reads as unfinished. — Add a door or window line, or a faint floor.
+- [Minor] fig etaisyys (fig-8-390) — row label "suhteellinen" sits below $\dot{H}$ in the same orange as the values; fine, but set it in body text colour so only the numbers carry the colour.
 
 ## Checked
-- top-1280 (opening, hero beside the learning goals), fig-1-390 (hero), fig-4, fig-6, fig-8, fig-10 at 390 px (all four figures legible, uncluttered, palette consistent; the graph shows model points distinct from the curve and the half-value bracket).
-- sim-390 and sim-1280 (controls, readout, legend line, the three named boxes closed).
-- example-390-1 (staged example: formulas, unit conversion and substitution aligned, KaTeX clean).
-- open-tarkista-1280-2 (graph task with hints and solution), fig-12-390 (vaimennus graph).
-- Source text: Finnish reads naturally, glossary terms consistent, decimal comma and `\,\text{}` units used throughout; no plain-text units found in new prose.
+- Round-1 items verified fixed: fig-4 axis now `H_E (mSv/vuosi)` and labels "muu luonnon säteily"; fig-6 w_R lines dark and legible; fig-8 labelled "suhteellinen"; experiment tables use LaTeX labels and `d`; hero no longer shows radon.
+- fig-1, fig-4, fig-6, fig-8, fig-10, fig-12 at 390 px: legible, palette consistent, model points distinct from curve, half-value bracket clear, no clipping.
+- top-390, intro-1280, sim-1280, lab-1280-1, exp-koe-1-390-1 (controls, locked sliders, readout with $d$), theory-1280-1 (prose, table, bar chart beside text), example-390-1 (staged formulas aligned), open-tarkista-1280-2 (graph task solution).
+- Source: terminology now consistently puoliintumispaksuus, symbol $d$ vs $d_{1/2}$ consistent in sim, text, tasks; units in LaTeX with thin spaces and decimal commas.
+- Not opened: theory-1280-2..6, exercise captures (covered by the exercise review).
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 5 · accessibility 4
