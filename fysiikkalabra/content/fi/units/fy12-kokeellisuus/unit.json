@@ -1,0 +1,14 @@
+{
+ "id": "fy12-kokeellisuus",
+ "course": "FY12",
+ "chapter": 1,
+ "order": 3,
+ "title": "Kokeellinen työ ja sen arviointi",
+ "description": "Kerrataan, miten koe suunnitellaan, miten tulos lasketaan kuvaajasta epävarmuuksineen ja miten raportin virheet ja systemaattiset virheet tunnistetaan.",
+ "kind": "review",
+ "minutes": 75,
+ "subjects": [
+  "physics"
+ ],
+ "sources": []
+}
