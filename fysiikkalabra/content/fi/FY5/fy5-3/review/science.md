@@ -1,20 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: b8e74f9726d4330d
+CONTENT-HASH: 33990645fb664192
 
 ## Blocking
 
 ## Polish
-- assets/sims/fy5/fy5-3/sim.js:863 — after the release, `before = state(t - dtStep)` still lies on the circle for the first T/12, so the readout and the panel show a nonzero |Δv̄| for that interval. inquiry.json:238 says "katkeamisen jälkeen Δv̄ oli nolla". That is true once T/12 has passed, and the run always lasts longer than T/12 (τ > T/12 for every r and T the sliders allow) — fix: clamp `before` to the release state (`max(t - dtStep, rel.t)` gives Δv̄ = 0 straight away), or add "hetken kuluttua" to the model answer.
-- inquiry.json:401 — the 4th criterion of tarkistus-3 asks students to mention gravity curving the path, but the prompt asks only about direction and timing. A criterion should ask only what the task asks — fix: drop it, or add "miltä lento näyttää sivulta" to the prompt.
-- lesson.md:260 — the aria-label says "kaksi kohtaa A ja B ovat samalla säteellä". This clashes with A at r and B at 2r, because *säde* also means the distance — fix: write "samalla keskipisteestä lähtevällä suoralla".
+- lesson.md:260 — the two-radii aria-label still says "kaksi kohtaa A ja B ovat samalla säteellä". This sits awkwardly beside "A etäisyydellä r ja B etäisyydellä 2r" — fix: write "samalla keskipisteestä lähtevällä suoralla" (carried over from round 1; not physics).
 
 ## Checked
-- One script recomputed every number in the lesson, inquiry, exit ticket and sim: Esimerkki 29 m/s, siirto 29,9 km/s with its mistakes, tarkistus-2 72,0 m/s with its mistakes, Etsi virhe 13 / 6,6 / 26, sim 1,57 / 3,14 m/s, |Δv̄| 1,63 m/s, exit 0,25 1/s, 4,0 s, ×3. All agree, and so does lesson-answers.py.
-- Definitions match the glossary. There are no angular quantities, so the lesson is in scope.
-- Causality: no horizontal force after the break, so by N1 the puck goes along the tangent. Nothing says a force pushes outward.
-- The figures are to scale. Tangent: 4 equal tangent arrows, CCW. Release: equal spacing. Δv̄: v̄ ⟂ r, Δv̄ points inward. Two-radii: 1:2 radii and arrows. Hero: arrow ratio 2,0.
-- The ennuste-1 option figures match their texts, and exactly one is correct.
-- sim.js: exact circle, straight-line release, board time τ = √(R²−r²)/v, α from the actual displacement. simState gives every measured key.
-- Experiments: each locks the right parameter and isolates the varied one.
-- Every choice item has exactly one correct option, and each distractor's feedback is right.
-- Hash checked at the start and the end.
+- Round-1 sim finding fixed. sim.js:78 now takes `before` at `max(t − T/12, rel.t)` after the release, and `state()` returns the straight-line velocity for tt ≥ rel.t. So |Δv̄| = 0 from the moment of release, which matches the conclusion's model answer (inquiry.json:238).
+- sim.js panel rework: the triangle is recentred, labels are larger, and both arrows are BLUE. The vectors and Δv̄ = v̄₂ − v̄₁ are unchanged; only the drawing offset moves. The physics in `state()` and `advance()` is unchanged.
+- tarkistus-3: the gravity criterion and its model-answer sentence are gone. The remaining 3 criteria ask only what the prompt asks, and the model answer is still right.
+- koe-1 intro: breaking at different points (top and left edge) and at two radii tests whether the departure direction depends on the release point. The setup still locks T and varies r, and α, v and vIrti are in simState.
+- lesson.md "Suunnan muutos": the new sentence says the net force points toward the centre, not outward. That is correct for uniform circular motion, and it previews fy5-4 without introducing a_n.
+- Unit wording (1/s as \tfrac) and the rpm-conversion mistake sentence have the same physics as before.
+- Exit ticket 2: the ratio 9,0 cm / 3,0 cm = 3,0 is correct, and so is the reason (same T, v ∝ r).
+- figures.py: the Δv̄ figure's v̄₁ colour changed only. Its geometry, checked in round 1, is unchanged.
+- All lesson numbers from round 1 still hold, because none of the changed text alters them.
+- Hash taken at the start and the end: 33990645fb664192.
