@@ -102,10 +102,10 @@
   "note": "adapter declares U (V), R1-R3 (ohm), probe and ground"
  },
  {
-  "expr": "(() => { const c=document.querySelector('#sim-root canvas'); const w=document.getElementById('sim-root').clientWidth; return c.width===600 && c.height===(w<500?780:400) ? 1 : 0; })()",
+  "expr": "(() => { const c=document.querySelector('#sim-root canvas'); const w=document.getElementById('sim-root').clientWidth; return c.width===600 && c.height===(w<500?966:400) ? 1 : 0; })()",
   "expected": 1,
   "tol": 0,
-  "note": "canvas 600x400 on a wide screen, 600x780 (stacked, larger labels) under 500 px"
+  "note": "canvas 600x400 on a wide screen, 600x966 (stacked, larger labels, the meter under the circuit) under 500 px"
  },
  {
   "expr": "(() => { const t=document.querySelector('#sim-root .readout').textContent; return /Virrat/.test(t) && /Mittari/.test(t) ? 1 : 0 })()",

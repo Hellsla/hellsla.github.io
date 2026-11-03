@@ -10,12 +10,15 @@
 new p5((p) => {
   const INKC = [31, 41, 51], MUTEDC = [107, 116, 128], GRID = [227, 220, 203], POTC = [25, 113, 194], POTL = [208, 230, 251],
         CURC = [112, 72, 232], GLASSC = [238, 245, 249], ALU = [196, 204, 212], HOTC = [201, 42, 42];
-  const X = { S: 60, A: 100, R1: 172, B: 245, J: 300, C: 450, M: 548 };
+  const XW = { S: 60, A: 100, R1: 172, B: 245, J: 300, C: 450, M: 548 },
+        XN = { S: 50, A: 95, R1: 172, B: 250, J: 305, C: 430, M: 305 };   // phone: the meter sits under the circuit
   const WIDE = { H: 400, top: 62, bot: 196, letTop: 50, potTop: 32, letBot: 214, potBot: 230, picH: 244,
                  ox: 70, oy: 360, gx1: 540, gy1: 274, glab: 386 };
-  const NARROW = { H: 780, top: 112, bot: 380, letTop: 84, potTop: 46, letBot: 418, potBot: 456, picH: 478,
-                   ox: 112, oy: 700, gx1: 540, gy1: 522, glab: 744 };
-  let G = WIDE, sk = 1, fh = 13, narrow = false, labels = [];
+  // phone: letters and potentials beside their points, the voltmeter and its reading under the circuit, its leads
+  // drawn as right-angled wires in lanes that no label occupies (below the labels, up the right edge, over the top)
+  const NARROW = { H: 966, top: 142, bot: 410, letTop: 121, potTop: 70, letBot: 453, potBot: 496, picH: 642, my: 549,
+                   ox: 112, oy: 892, gx1: 500, gy1: 714, glab: 944 };   // the plot ends early: "kohta" sits past its end
+  let X = XW, G = WIDE, sk = 1, fh = 13, narrow = false, labels = [], leads = [];
   let slU, slR1, slR2, slR3, selP, selG, lU, lR1, lR2, lR3, readout;
   const POINTS = ['A', 'B', 'C', 'D', 'E', 'F'];
 
@@ -65,17 +68,17 @@ new p5((p) => {
     window.simState = { U: S.U, R1: S.R1, R2: S.R2, R3: S.R3, R23: S.R23, Rkok: S.Rkok, I1: S.I1, I2: S.I2, I3: S.I3,
                         U1: S.U1, U2: S.U23, U3: S.U23, VA: S.V.A, VB: S.V.B, VC: S.V.C, VD: S.V.D, VE: S.V.E, VF: S.V.F,
                         Vp: S.Vp, probe: S.probe, ground: S.ground, sumLoop: S.U - S.U1 - S.U23, labels: null };
-    const cw = document.getElementById('sim-root').clientWidth || 600;
-    narrow = cw < 500; const k = Math.max(1, 600 / cw);
-    sk = narrow ? k : 1; fh = narrow ? Math.round(14 * k) : 13; G = narrow ? NARROW : WIDE;
+    const cw = (p.canvas && p.canvas.parentElement && p.canvas.parentElement.clientWidth) || document.getElementById('sim-root').clientWidth || 600;   // the canvas's box, not the padded root
+    narrow = cw < 500; const k = Math.min(2.4, Math.max(1, 600 / cw));   // phone: labels about 14 px, a little less under 250 px
+    sk = narrow ? k : 1; fh = narrow ? Math.round(14 * k) : 13; G = narrow ? NARROW : WIDE; X = narrow ? XN : XW;
     if (p.__H !== G.H) { p.__H = G.H; p.resizeCanvas(600, G.H); setTimeout(() => p.redraw(), 0); return; }
-    labels = [];
+    labels = []; leads = [];
     p.background(255);
     grect(0, 0, 600, G.picH, [[246, 241, 230], [255, 255, 255]]);
     circuit(S);
     p.stroke(220); p.strokeWeight(1); p.line(0, G.picH, 600, G.picH);
     graph(S);
-    window.simState.labels = labels;
+    window.simState.labels = labels; window.simState.leads = leads;
   };
 
   // --- the circuit -------------------------------------------------------------------------------------------
@@ -93,9 +96,15 @@ new p5((p) => {
     const { top, bot } = G, mid = (top + bot) / 2, V = S.V;
     const cA = tint(V.A, S), cB = tint(V.B, S), cF = tint(V.F, S);
     const pos = { A: [X.A, top], B: [X.B, top], C: [X.C, top], D: [X.C, bot], E: [X.J, bot], F: [X.A, bot] };
-    const mx = narrow ? 556 : X.M, my = mid, r = (narrow ? 15 : 18) * sk;
-    lead(mx - r, my + 6 * sk, pos[S.ground], INKC);                                // the meter's leads behind the circuit
-    lead(mx - r, my - 6 * sk, pos[S.probe], HOTC);
+    const mx = X.M, my = narrow ? G.my : mid, r = (narrow ? 15 : 18) * sk;
+    if (narrow) {                  // the lead with the longer way takes the outer lane, so the two never cross
+      const far = (k) => (pos[k][1] === bot ? Math.abs(pos[k][0] - mx) : 1000 - pos[k][0]), outer = far(S.ground) >= far(S.probe);
+      wireLead(mx, my, r, S.ground, pos, false, outer); wireLead(mx, my, r, S.probe, pos, true, !outer);
+    }
+    else {
+      lead(mx - r, my + 6 * sk, pos[S.ground], INKC);                              // the meter's leads behind the circuit
+      lead(mx - r, my - 6 * sk, pos[S.probe], HOTC);
+    }
     seg([[X.S, mid - 9 * sk], [X.S, top], [X.R1, top]], cA);                       // + pole to R1: potential of A
     seg([[X.R1, top], [X.C, top], [X.C, mid]], cB);                                // R1 to the branches: B and C
     seg([[X.J, top], [X.J, mid]], cB);
@@ -111,14 +120,14 @@ new p5((p) => {
     p.fill(255); p.stroke(...INKC); p.strokeWeight(3 * sk);
     p.rect(X.R1 - rw / 2, top - rh / 2 * sk, rw, rh * sk);
     for (const x of [X.J, X.C]) p.rect(x - rh / 2 * sk, mid - rw / 2, rh * sk, rw);
-    lab('$R_1$', X.R1, top + (narrow ? 40 : 26), 'c');
+    lab('$R_1$', X.R1, top + (narrow ? 12 * sk + 4 + 0.95 * fh : 26), 'c');
     lab('$R_2$', X.J + 16 * sk, mid + 0.36 * fh, 'l', INKC, true);
     lab('$R_3$', X.C + 16 * sk, mid + 0.36 * fh, 'l', INKC, true);
     p.noStroke(); p.fill(...INKC); p.circle(X.J, top, 10 * sk); p.circle(X.J, bot, 10 * sk);
     // currents: conventional, from + through R1 and down the branches
     head(124, top, 'r'); head(X.J, bot - 26 * sk, 'd'); head(X.C, bot - 26 * sk, 'd');
     if (narrow) {
-      lab('$I_1$', 98, top + 40, 'c', CURC, true);
+      lab('$I_1$', X.S + 14 * sk, top + 12 * sk + 4 + 0.95 * fh, 'l', CURC, true);
       lab('$I_2$', X.J + 16 * sk, bot - 18 * sk, 'l', CURC, true);
       lab('$I_3$', X.C + 16 * sk, bot - 18 * sk, 'l', CURC, true);
     } else {
@@ -130,8 +139,9 @@ new p5((p) => {
     for (const k of POINTS) {
       const [x, y] = pos[k], up = y === top, on = k === S.probe;
       p.fill(on ? [...HOTC] : 255); p.stroke(...INKC); p.strokeWeight(2 * sk); p.circle(x, y, (on ? 13 : 10) * sk);
-      lab('$' + k + '$', x, up ? G.letTop : G.letBot, 'c');
-      lab('$' + tx(S.V[k], 1) + '\\,\\text{V}$', x, up ? G.potTop : G.potBot, 'c', POTC);
+      const lx = narrow ? x + 10 * sk : x, al = narrow ? 'l' : 'c';             // phone: beside the point, clear of the leads
+      lab('$' + k + '$', lx, up ? G.letTop : G.letBot, al);
+      lab('$' + tx(S.V[k], 1) + '\\,\\text{V}$', lx, up ? G.potTop : G.potBot, al, POTC);
     }
     // the reference point: an earth symbol
     const [gx, gy] = pos[S.ground];
@@ -139,16 +149,29 @@ new p5((p) => {
     // the voltmeter: black lead on the reference point, red lead on the probe
     p.fill(255); p.stroke(...INKC); p.strokeWeight(2.5 * sk); p.circle(mx, my, 2 * r);
     lab('$\\text{V}$', mx, my + 0.36 * fh, 'c');
-    lab('$V_' + S.probe + ' = ' + tx(S.Vp, 1) + '\\,\\text{V}$', mx, my - r - (narrow ? 26 : 12), 'c');
+    lab('$V_' + S.probe + ' = ' + tx(S.Vp, 1) + '\\,\\text{V}$', mx, narrow ? my + r + 6 + 0.95 * fh : my - r - 12, 'c');
   }
   function earth(x, y) {        // three shortening bars under a short stem, on the side away from the circuit
-    const d = y === G.top ? -1 : 1, s0 = y + d * 10 * sk, ex = x - (narrow ? 28 : 18) * sk;
+    const d = y === G.top ? -1 : 1, s0 = y + d * 10 * sk;
+    const ex = !narrow ? x - 18 * sk : d > 0 ? X.S : 390;    // phone: on the same wire, away from the labels and the black lead
     p.stroke(...INKC); p.strokeWeight(2.5 * sk); p.line(ex, y, ex, s0);
     for (let i = 0; i < 3; i++) { const w = (11 - 4 * i) * sk, yy = s0 + d * 4 * i * sk; p.line(ex - w, yy, ex + w, yy); }
   }
   function lead(x0, y0, [x1, y1], col) {
     p.noFill(); p.stroke(...col, 150); p.strokeWeight(2.5 * sk);
     p.bezier(x0, y0, x0 - 40 * sk, y0, x1 + 40 * sk, y1 + (y1 < y0 ? -30 : 30) * sk, x1, y1);
+  }
+  // phone: a lead as a right-angled wire from the meter's side; a top point is reached round the right edge and from above
+  function wireLead(mx, my, r, k, pos, red, outer) {
+    const [px, py] = pos[k], o = 8 * sk, y0 = my + (outer ? o : -o), x = px + (red ? 3 : -3) * sk;
+    const side = (dir) => mx + dir * Math.sqrt(r * r - o * o);
+    let pts;
+    if (py === G.bot) pts = Math.abs(x - mx) < r ? [[x, my - Math.sqrt(r * r - (x - mx) ** 2)], [x, py]]
+                                                 : [[side(Math.sign(x - mx)), y0], [x, y0], [x, py]];
+    else { const xr = outer ? 590 : 574, yl = outer ? 16 : 30; pts = [[side(1), y0], [xr, y0], [xr, yl], [x, yl], [x, py]]; }
+    p.noFill(); p.stroke(...(red ? HOTC : INKC), red ? 190 : 170); p.strokeWeight(2.5 * sk); p.strokeJoin(p.ROUND);
+    p.beginShape(); for (const [a, b] of pts) p.vertex(a, b); p.endShape();
+    leads.push(pts);
   }
   function head(x, y, d) {
     const s = 8 * sk; p.noStroke(); p.fill(...CURC);
