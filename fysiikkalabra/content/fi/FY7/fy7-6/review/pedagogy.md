@@ -1,21 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: a32bd82d8c0f6140
+CONTENT-HASH: 120a47aa4437ec30
 
 ## Blocking
 
 ## Polish
-- inquiry.json — learning goal 1 (deduce current direction with Lenz's law) has no prediction or experiment; it is taught from the ring figure and checked only by check-1 and the optional Etsi virhe. Consider an optional prediction ("ring hylkii vai vetää, kun magneetti loittonee?") before the theory.
-- inquiry.json (ennuste-putket) — the prompt says "Kupari johtaa paremmin kuin alumiini", which nearly gives the ordering; and the third option's reason ("alumiini on kevyempää") is a contrived misconception — use a real one, e.g. "alumiini on magneettisempaa".
-- lesson.md "Pyörrevirrat" and "Pyörrevirtajarru, induktioliesi ja metallinilmaisin" — each is one 130-150 word paragraph; split the applications into three short items or add a figure.
-- inquiry.json (hook) — "ei tartu seinään" is repeated in the hook and the misconception section; keep one.
-- inquiry.json (ennuste-rako) — the sim's slit-tube k (one tenth of copper) is an estimate; the conclusion model answer should say "arvio".
+- Earlier polish items stand (no prediction for the Lenz direction goal; ennuste-putket wording and contrived third option; long application paragraphs; repeated "ei tartu seinään"); none is Blocking.
+- inquiry.json (ennuste-rako, right option) — "Se lyhenee paljon" and the new feedback agree, but the lesson's "Pyörrevirrat" text now says "paljon nopeammin" while the student sees 0,82 s against 0,45 s; fine, but "arvio" for the slit k is still not stated in the model answer: add "rakoputken kerroin on arvio".
 
 ## Checked
-- Path: hook, retrieval (optional), two predictions with a controlled sim and two experiments, conclusion, theory, staged example, transfer, three checks, exit ticket; workload one lesson.
-- Predictions can be refuted: plastic 0.45 s, aluminium 4.24 s, copper 6.68 s, slit 0.82 s; recomputed from m = 20 g, terminal speed 0.15 m/s, k scaling 0.63 and 0.1.
-- Energy: mgh = 196.2 mJ, Ek 0.2 mJ, Q 196.0 mJ; example 0.29 J and 0.003 K recomputed.
-- Figures ring, tube, core legible; ring and tube current/field directions consistent with Lenz (I into page top gives B to the left toward the magnet).
-- Transfer 21 kN with all three mistake values (25, 9, 42) real; check 2 42 mW with real mistakes.
-- Etsi virhe and check 1 repair the "against the field" and "magnets attract metals" misconceptions.
-- Sim at 390 and 1280 px understandable; table scrolls without loss.
-- Finnish: Lenzin laki, pyörrevirta, induktiojarru consistent.
+- Delta fixes the earlier overstatement: the slit tube no longer "falls almost freely" and the sim-spec now says the slit weakens the braking clearly but does not remove it.
+- Recomputed slit tube: k = 0,1 of copper, v_t = 1,5 m/s, fall of 1,00 m takes 0,82 s, final speed 1,49 m/s, Ek 22,3 mJ, Q = 196,2 - 22,3 = 173,9 mJ. The new model-answer value matches.
+- "noin kaksinkertainen" is right (0,82 s : 0,45 s = 1,8); the reason (smaller eddy currents still circulate in the wall around the slit) is physically sound and repairs the "slit removes everything" misconception.
+- Grammar of "kaksinkertainen muoviputken 0,45 s:iin verrattuna" and "6,68 s:sta 0,82 s:iin" is correct.
+- Lesson text, ennuste-rako options, the Q = 173,9 mJ in the conclusion and the learning point on the theory page now agree; the student can reconcile the table with the explanation.
+- Conclusion criterion ("rako lyhentää putoamisaikaa, koska virta ei pääse kiertämään putken ympäri") is still observable and consistent; the transformer-core analogy (thin laminations reduce, not eliminate, losses) is now consistent with it.

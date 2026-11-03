@@ -1,21 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: f736e8dbc2f04541
+CONTENT-HASH: 9e04d532454b24f2
 
 ## Blocking
 
 ## Polish
-- lesson.md "Tehollinen arvo" — the step from "keskimääräinen teho on puolet huipputehosta" to $U = U_0 : \sqrt{2}$ is asserted, not shown — add one line: $P = \tfrac12 U_0 I_0 = \dfrac{U_0}{\sqrt{2}} \cdot \dfrac{I_0}{\sqrt{2}} = UI$.
-- lesson.md "Mistä huippuarvo tulee" — "kierros" means both a winding ("Yhdessä kierroksessa jännite", "N kierroksessa") and a rotation ("kahdesti jokaisen kierroksen aikana") — write "yhdessä käämin kierteessä / johdinkierroksessa" for the winding.
-- inquiry.json johtopaatos — the conclusion (after koe-1 only) covers f; the B and N dependence of e₀ sits in optional koe-2, so a student on the core path meets $NBA$ in the formula without having seen B or N vary — make koe-2 core or add one line about B and N to the model answer's check.
-- exit-ticket.json — neither question tests the lesson's central idea (why the voltage is sinusoidal, zero when flux is maximum); Q1 is a recall of √2 — swap Q1 for "Milloin käämin jännite on nolla ja miksi?".
-- inquiry.json hook — "jotakin pyörii magneettikentässä" half-answers the opening question before the student commits; drop the last sentence or move it to the reflection.
+- inquiry.json koe-2 intro — "Kokeile lopuksi, mitä tapahtuu, kun kierrosten lukumäärä kaksinkertaistuu" but N is locked ("vakio", greyed out in the 390 px capture), so the student cannot do it — drop the sentence, or unlock N for the last step and say so.
+- lesson.md "Tehollinen arvo" — the step from "keskiarvo on puolet huipputehosta" to $U = U_0 : \sqrt{2}$ is asserted — add: $P = \tfrac12 U_0 I_0 = \dfrac{U_0}{\sqrt{2}} \cdot \dfrac{I_0}{\sqrt{2}} = UI$ (carried over from round 1, still open).
+- lesson.md "Mistä huippuarvo tulee" — "kierros" means both winding and rotation ("Yhdessä kierroksessa jännite", "N kierroksessa" vs "kierroksen aikana") — write "yhdessä johdinkierroksessa"; also "Vuo vaihtelee siis tasaisesti" is ambiguous, write "jaksollisesti".
+- inquiry.json johtopaatos / koe-2 — the core path (koe-1 only) never varies B or N, yet the formula has $NBA$; make koe-2 core or add a line on B and N to the conclusion (round 1, still open).
+- exit-ticket.json — Q1 is recall of √2; the central idea (voltage zero at maximum flux) is untested — swap Q1 for "Milloin käämin jännite on nolla ja miksi?" (round 1, still open). Also the hook's last sentence half-answers the opening question.
 
 ## Checked
-- Path: induction (fy7-6/earlier) → flux cos graph → slope → sine → e₀ derivation → effective value → example; opening question answered, slot goals only.
-- Two predictions are refutable by koe-1 (e₀ and T vs f; peak at Φ = 0); option feedback repairs each misconception.
-- Simulation computes e from −NΔΦ/Δt, not the formula, so the check against $NBA\cdot2\pi$ is genuine (390 px capture legible, readout clear).
-- Figures phi-e and derive (390 px) legible, colour with labels, θ and v sin θ defined consistently with $e = e_0\sin\theta$.
-- Example staged one step per stage, units and sanity check present; siirto (stationary coil, rotating magnet) has 3 hints and real mistake values.
-- Check-1/2 distractors are misconception-based; Etsi virhe (230 V is already RMS) is a strong item.
-- Finnish: no case or term errors found beyond the "kierros" ambiguity.
-- Hash unchanged at end (f736e8dbc2f04541).
+- Path: induction → flux cosine graph → slope → sine → e₀ derivation → effective value → example; opening question answered; slot goals only (generator, sinusoidal voltage, wind power).
+- Predictions are refutable: koe-1 (f varied, N and B locked) gives e₀ and T; the pause-at-peak instruction tests the "max flux" prediction; option feedback repairs each misconception.
+- Sim computes e from −NΔΦ/Δt, so comparing e₀:f with NBA·2π is genuine; 390 and 1280 px captures legible, readout clear.
+- Figures phi-e and derive legible, colour labelled; θ and v sin θ consistent with e = e₀ sin θ.
+- Example staged one step per stage with units and sanity check; siirto (stationary coil, rotating magnet) has 3 hints, real mistake values, 16 V answer matches.
+- Etsi virhe (230 V already effective) and check-1/2 distractors are misconception-based; check-3 criteria observable.
+- Finnish and cases correct apart from the polish above.
+- Hash unchanged at end (9e04d532454b24f2).
