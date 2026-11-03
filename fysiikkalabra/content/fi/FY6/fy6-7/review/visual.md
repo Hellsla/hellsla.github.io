@@ -1,22 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: a2b962dd2aa22135
+CONTENT-HASH: fcb065ab0c26d6d6
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] inquiry.json saastot, taulukko (tutki-390-2) — solu $365 \cdot 10\,\text{min}$ ulottuu taulukon oikeaan reunaan asti ja "min" koskettaa reunaa; lyhennä esim. muotoon $365 \cdot 10\,\text{min}$ -> kapeampi sarakeotsikko "aika vuodessa" tai kavenna keino-saraketta.
-- [Minor] ennuste-2 keitin-palaute — "kolminkertainen keittimen $2{,}0\,\text{kW}$:n verrattuna" -> "kolminkertainen keittimen $2{,}0\,\text{kW}$:n tehoon verrattuna"; lisäksi 120 kWh vs 122 kWh muualla.
-- [Minor] Tiivistelmän rivi "Sähkölasku on energian ja siirron hinta kertaa ..." (selita-390-4) näyttää koskettavan oikeaa reunaa; ei uusi, ei diffissä.
-- for science: valmiustilapalautteen "$8760\,\text{h}$" ei täsmää 23 kWh:iin (7665 h).
+- [Minor] inquiry.json ennuste-2 standby feedback — "$365 \cdot 21\,\text{h} = 7665\,\text{h}$" sits mid-sentence in parentheses; fine, but 120 vs 122 kWh in keitin feedback differs from the solution; use one value.
+- [Minor] saastot table (carried over) — cell "$365 \cdot 10\,\text{min}$" tight to the right edge at 390 px; shorten header.
 
 ## Checked
-- Hash alussa ja lopussa.
-- open-ennusta-1280-1 ja -2: ennusteiden 1 ja 2 vaihtoehdot, yksiköt LaTeXissa, taitto ehjä.
-- stage-tutki-390-2 ja -3: uusi taulukon keitin-rivi, kysymys, johtopäätös-kenttä renderöityvät; taulukko mahtuu.
-- stage-selita-390-4: muutettu Tiivistelmän rivi luettavissa, "230 V:n" oikein.
-- stage-sovella-390-2 ja -3: siirto-tehtävä ehjä.
-- Muutetuissa teksteissä ei paljaita lukuja ilman yksikköä.
+- Hash at start and end: fcb065ab0c26d6d6.
+- contact-1 (top, hero, both figures, example part 1/2, ennusta).
+- stage-ennusta-390-2 and open-ennusta-1280-1/-2: prediction 2 options render, units in KaTeX, no clipping.
+- The changed feedback (hidden until reveal, so not in any capture) was rendered in the preview at 390 px with Playwright: 0 katex-error elements, "365 · 21 h = 7665 h" parsed and rendered; the other changed feedback and lesson-answers.py diff are plain text/unit-LaTeX, no bare quantities.
+- Diff covers only inquiry.json feedback text and lesson-answers.py (no figure change).
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 4 · accessibility 4
