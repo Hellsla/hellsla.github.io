@@ -21,7 +21,8 @@ for n in (1, 2, 3, 4):
 # --- worked example: hydrogen 3d -> 2p, the red line ---
 a["ex-dE-eV"] = E(3) - E(2)                               # 1,8889 eV
 a["ex-dE-J"] = a["ex-dE-eV"] * e                          # 3,0260e-19 J
-a["ex-lambda-nm"] = h * c / a["ex-dE-J"] * 1e9            # 656,5 nm -> 656 nm
+a["ex-hc"] = h * c                                        # 1,98647e-25 J m
+a["ex-lambda-nm"] = h * c / a["ex-dE-J"] * 1e9            # 656,47 nm -> 656 nm
 a["ex-check-3s"] = a["ex-lambda-nm"]                      # 3s -> 2p gives the same line in hydrogen
 
 # --- 1s: radial probability P(r < R) = 1 - e^(-2x)(1 + 2x + 2x^2), x = R / a0 ---
@@ -62,17 +63,27 @@ d2s = lambda r, mu: (2 - r) ** 2 * math.exp(-r)
 d2p = lambda r, mu: r * r * mu * mu * math.exp(-r)
 t2s = threshold(d2s, 0.90, nr=8000)
 a["R2s-90"] = root(lambda r: t2s - d2s(r, 1), 4, 40) * a0                 # outer edge along any direction
+a["gap-2s-in"] = root(lambda r: t2s - d2s(r, 1), 0, 2) * a0           # the region's inner ball ends (density falls to the node)
+a["gap-2s-out"] = root(lambda r: d2s(r, 1) - t2s, 2, 4) * a0          # the outer shell begins: the gap is not in the region
 t2p = threshold(d2p, 0.90, nr=1500, nmu=300)
 a["R2p-90"] = root(lambda r: t2p - d2p(r, 1), 2, 40) * a0                 # lobe tip on the z axis
 
 # --- inquiry: predictions and checks ---
 a["pred1-out-1000"] = 0.10 * 1000                         # 90 % boundary: about 100 of 1000 hits outside
+a["pred1-P10-all"] = 0.9 ** 10                             # N = 10: all ten inside with probability 0,349
+a["pred1-P10-9"] = 10 * 0.9 ** 9 * 0.1                     # exactly nine inside: 0,387
+a["pred1-P10-8"] = 45 * 0.9 ** 8 * 0.1 ** 2                # exactly eight inside: 0,194, so 80-100 % in 93 % of series
+a["pred1-sd-1000"] = 100 * math.sqrt(0.9 * 0.1 / 1000)     # N = 1000: share inside scatters by about 0,95 percentage points
+# sim model values (seeds 1, 2, 3, 4 = first series and three "Uusi mittaussarja"): N = 10 inside 8, 9, 9, 10;
+# N = 1000 inside 918, 901, 908, 903 (82 outside in the first series)
 a["siirto"] = 0.90 * 6000 / 2                             # 2p_z, 6000 hits, 90 % inside, half in the upper lobe: 2700
 a["siirto-mis-all"] = 0.90 * 6000                         # forgot the two lobes: 5400
 a["siirto-mis-half"] = 6000 / 2                           # forgot the threshold: 3000
 a["virhe-n3"] = 2 * 3 ** 2                                # 18 electrons, not 6
-a["tarkistus-2"] = E(1) * -1 - E(2) * -1                  # 2p -> 1s photon energy 13,6 - 3,40 = 10,2 eV
-a["tarkistus-2-mis-sum"] = 13.6 + 3.4                     # added the levels: 17,0 eV
-a["tarkistus-2-mis-E2"] = 3.4                             # took one level: 3,4 eV
+a["tarkistus-3"] = E(1) * -1 - E(2) * -1                  # 2p -> 1s photon energy 13,6 - 3,40 = 10,2 eV
+a["tarkistus-3-mis-sum"] = 13.6 + 3.4                     # added the levels: 17,0 eV
+a["tarkistus-3-mis-E2"] = 3.4                             # took one level: 3,4 eV
+a["tarkistus-3-vs-violet"] = a["tarkistus-3"] / 3.3              # 3,1 times a 3,3 eV violet photon
+a["tarkistus-3-vs-red"] = a["tarkistus-3"] / 1.6                 # 6,4 times a 1,6 eV red photon: "noin 3-6-kertainen"
 a["exit-orb-n3"] = 3 ** 2                                 # 9 orbitals in shell n = 3
 print(json.dumps({k: round(v, 6) if abs(v) >= 1e-3 else float(f"{v:.6g}") for k, v in a.items()}))

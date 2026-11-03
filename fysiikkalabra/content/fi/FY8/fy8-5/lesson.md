@@ -16,147 +16,176 @@
   <ellipse cx="478" cy="410" rx="88" ry="64" fill="none" stroke="#6b7480" stroke-width="3"/>
   <circle cx="478" cy="410" r="13" fill="#c92a2a" stroke="#1f2933" stroke-width="2"/>
   <circle cx="560" cy="384" r="9" fill="#1971c2" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="686" cy="404" r="66" fill="url(#fy85h-cloud)"/>
-  <circle cx="679" cy="415.5" r="2.2" fill="#1971c2"/>
-  <circle cx="682.5" cy="413.5" r="2.2" fill="#1971c2"/>
-  <circle cx="689.5" cy="400" r="2.2" fill="#1971c2"/>
-  <circle cx="658" cy="398.5" r="2.2" fill="#1971c2"/>
-  <circle cx="713.5" cy="424.5" r="2.2" fill="#1971c2"/>
-  <circle cx="673.5" cy="416" r="2.2" fill="#1971c2"/>
-  <circle cx="694.5" cy="421" r="2.2" fill="#1971c2"/>
-  <circle cx="673" cy="410" r="2.2" fill="#1971c2"/>
-  <circle cx="686.5" cy="395.5" r="2.2" fill="#1971c2"/>
-  <circle cx="679.5" cy="389.5" r="2.2" fill="#1971c2"/>
-  <circle cx="705.5" cy="384" r="2.2" fill="#1971c2"/>
-  <circle cx="674.5" cy="396" r="2.2" fill="#1971c2"/>
-  <circle cx="659.5" cy="398" r="2.2" fill="#1971c2"/>
-  <circle cx="662.5" cy="406.5" r="2.2" fill="#1971c2"/>
-  <circle cx="687.5" cy="384.5" r="2.2" fill="#1971c2"/>
-  <circle cx="681.5" cy="419.5" r="2.2" fill="#1971c2"/>
-  <circle cx="688" cy="402.5" r="2.2" fill="#1971c2"/>
-  <circle cx="673.5" cy="424" r="2.2" fill="#1971c2"/>
-  <circle cx="681" cy="375" r="2.2" fill="#1971c2"/>
-  <circle cx="692.5" cy="379.5" r="2.2" fill="#1971c2"/>
-  <circle cx="681" cy="404" r="2.2" fill="#1971c2"/>
-  <circle cx="679.5" cy="406" r="2.2" fill="#1971c2"/>
-  <circle cx="667.5" cy="394" r="2.2" fill="#1971c2"/>
-  <circle cx="692.5" cy="379.5" r="2.2" fill="#1971c2"/>
-  <circle cx="694.5" cy="401.5" r="2.2" fill="#1971c2"/>
-  <circle cx="689.5" cy="405.5" r="2.2" fill="#1971c2"/>
-  <circle cx="688" cy="404.5" r="2.2" fill="#1971c2"/>
-  <circle cx="672.5" cy="417.5" r="2.2" fill="#1971c2"/>
-  <circle cx="682.5" cy="383.5" r="2.2" fill="#1971c2"/>
-  <circle cx="685.5" cy="406.5" r="2.2" fill="#1971c2"/>
-  <circle cx="679" cy="389" r="2.2" fill="#1971c2"/>
-  <circle cx="694" cy="403.5" r="2.2" fill="#1971c2"/>
-  <circle cx="700" cy="412" r="2.2" fill="#1971c2"/>
-  <circle cx="691" cy="415" r="2.2" fill="#1971c2"/>
-  <circle cx="704.5" cy="409.5" r="2.2" fill="#1971c2"/>
-  <circle cx="691" cy="402" r="2.2" fill="#1971c2"/>
-  <circle cx="682.5" cy="407.5" r="2.2" fill="#1971c2"/>
-  <circle cx="698" cy="391.5" r="2.2" fill="#1971c2"/>
-  <circle cx="686" cy="387" r="2.2" fill="#1971c2"/>
-  <circle cx="692" cy="411" r="2.2" fill="#1971c2"/>
-  <circle cx="683" cy="369" r="2.2" fill="#1971c2"/>
-  <circle cx="687" cy="400.5" r="2.2" fill="#1971c2"/>
-  <circle cx="658" cy="388.5" r="2.2" fill="#1971c2"/>
-  <circle cx="684.5" cy="396.5" r="2.2" fill="#1971c2"/>
-  <circle cx="696.5" cy="378.5" r="2.2" fill="#1971c2"/>
-  <circle cx="680.5" cy="408" r="2.2" fill="#1971c2"/>
-  <circle cx="683" cy="397" r="2.2" fill="#1971c2"/>
-  <circle cx="714" cy="409" r="2.2" fill="#1971c2"/>
-  <circle cx="681.5" cy="422" r="2.2" fill="#1971c2"/>
-  <circle cx="674.5" cy="414" r="2.2" fill="#1971c2"/>
-  <circle cx="666" cy="403" r="2.2" fill="#1971c2"/>
-  <circle cx="683" cy="414.5" r="2.2" fill="#1971c2"/>
-  <circle cx="704.5" cy="390.5" r="2.2" fill="#1971c2"/>
-  <circle cx="679.5" cy="403.5" r="2.2" fill="#1971c2"/>
-  <circle cx="683.5" cy="389" r="2.2" fill="#1971c2"/>
-  <circle cx="727.5" cy="398.5" r="2.2" fill="#1971c2"/>
-  <circle cx="702" cy="406" r="2.2" fill="#1971c2"/>
-  <circle cx="694" cy="397" r="2.2" fill="#1971c2"/>
-  <circle cx="697" cy="419" r="2.2" fill="#1971c2"/>
-  <circle cx="630" cy="415.5" r="2.2" fill="#1971c2"/>
-  <circle cx="631" cy="411.5" r="2.2" fill="#1971c2"/>
-  <circle cx="693.5" cy="400" r="2.2" fill="#1971c2"/>
-  <circle cx="678" cy="408" r="2.2" fill="#1971c2"/>
-  <circle cx="720" cy="379.5" r="2.2" fill="#1971c2"/>
-  <circle cx="685.5" cy="402" r="2.2" fill="#1971c2"/>
-  <circle cx="685" cy="387" r="2.2" fill="#1971c2"/>
-  <circle cx="709" cy="392" r="2.2" fill="#1971c2"/>
-  <circle cx="693.5" cy="417" r="2.2" fill="#1971c2"/>
-  <circle cx="701" cy="387.5" r="2.2" fill="#1971c2"/>
-  <circle cx="709" cy="401.5" r="2.2" fill="#1971c2"/>
-  <circle cx="692.5" cy="409.5" r="2.2" fill="#1971c2"/>
-  <circle cx="685" cy="405.5" r="2.2" fill="#1971c2"/>
-  <circle cx="677" cy="417.5" r="2.2" fill="#1971c2"/>
-  <circle cx="683.5" cy="402.5" r="2.2" fill="#1971c2"/>
-  <circle cx="694" cy="428" r="2.2" fill="#1971c2"/>
-  <circle cx="660.5" cy="409.5" r="2.2" fill="#1971c2"/>
-  <circle cx="676.5" cy="372" r="2.2" fill="#1971c2"/>
-  <circle cx="691" cy="419" r="2.2" fill="#1971c2"/>
-  <circle cx="695.5" cy="414" r="2.2" fill="#1971c2"/>
-  <circle cx="688" cy="422.5" r="2.2" fill="#1971c2"/>
-  <circle cx="685" cy="405" r="2.2" fill="#1971c2"/>
-  <circle cx="679.5" cy="405.5" r="2.2" fill="#1971c2"/>
-  <circle cx="686" cy="417.5" r="2.2" fill="#1971c2"/>
-  <circle cx="685.5" cy="409" r="2.2" fill="#1971c2"/>
-  <circle cx="678.5" cy="396" r="2.2" fill="#1971c2"/>
-  <circle cx="716.5" cy="415.5" r="2.2" fill="#1971c2"/>
-  <circle cx="690.5" cy="423" r="2.2" fill="#1971c2"/>
-  <circle cx="705.5" cy="380" r="2.2" fill="#1971c2"/>
-  <circle cx="696" cy="387" r="2.2" fill="#1971c2"/>
-  <circle cx="690" cy="390" r="2.2" fill="#1971c2"/>
-  <circle cx="687.5" cy="408" r="2.2" fill="#1971c2"/>
-  <circle cx="664" cy="395.5" r="2.2" fill="#1971c2"/>
-  <circle cx="661.5" cy="404" r="2.2" fill="#1971c2"/>
-  <circle cx="702.5" cy="414.5" r="2.2" fill="#1971c2"/>
-  <circle cx="699.5" cy="396.5" r="2.2" fill="#1971c2"/>
-  <circle cx="687.5" cy="398.5" r="2.2" fill="#1971c2"/>
-  <circle cx="685.5" cy="416.5" r="2.2" fill="#1971c2"/>
-  <circle cx="690.5" cy="425" r="2.2" fill="#1971c2"/>
-  <circle cx="680.5" cy="396" r="2.2" fill="#1971c2"/>
-  <circle cx="694.5" cy="417" r="2.2" fill="#1971c2"/>
-  <circle cx="671.5" cy="460" r="2.2" fill="#1971c2"/>
-  <circle cx="697" cy="426.5" r="2.2" fill="#1971c2"/>
-  <circle cx="662.5" cy="428.5" r="2.2" fill="#1971c2"/>
-  <circle cx="717.5" cy="403.5" r="2.2" fill="#1971c2"/>
-  <circle cx="717.5" cy="405" r="2.2" fill="#1971c2"/>
-  <circle cx="692.5" cy="408.5" r="2.2" fill="#1971c2"/>
-  <circle cx="686" cy="426.5" r="2.2" fill="#1971c2"/>
-  <circle cx="714.5" cy="387.5" r="2.2" fill="#1971c2"/>
-  <circle cx="685.5" cy="393" r="2.2" fill="#1971c2"/>
-  <circle cx="690" cy="414" r="2.2" fill="#1971c2"/>
-  <circle cx="682.5" cy="425" r="2.2" fill="#1971c2"/>
-  <circle cx="689.5" cy="393" r="2.2" fill="#1971c2"/>
-  <circle cx="666.5" cy="365.5" r="2.2" fill="#1971c2"/>
-  <circle cx="686.5" cy="406" r="2.2" fill="#1971c2"/>
-  <circle cx="690.5" cy="393.5" r="2.2" fill="#1971c2"/>
-  <circle cx="696.5" cy="398.5" r="2.2" fill="#1971c2"/>
-  <circle cx="674.5" cy="402.5" r="2.2" fill="#1971c2"/>
-  <circle cx="683" cy="400" r="2.2" fill="#1971c2"/>
-  <circle cx="686" cy="409" r="2.2" fill="#1971c2"/>
-  <circle cx="665" cy="390" r="2.2" fill="#1971c2"/>
-  <circle cx="699" cy="409" r="2.2" fill="#1971c2"/>
-  <circle cx="663.5" cy="404" r="2.2" fill="#1971c2"/>
-  <circle cx="671" cy="415" r="2.2" fill="#1971c2"/>
-  <circle cx="717" cy="369" r="2.2" fill="#1971c2"/>
-  <circle cx="660.5" cy="405.5" r="2.2" fill="#1971c2"/>
-  <circle cx="698.5" cy="387" r="2.2" fill="#1971c2"/>
-  <circle cx="662" cy="427.5" r="2.2" fill="#1971c2"/>
-  <circle cx="690" cy="391" r="2.2" fill="#1971c2"/>
-  <circle cx="687" cy="397" r="2.2" fill="#1971c2"/>
-  <circle cx="685.5" cy="429" r="2.2" fill="#1971c2"/>
-  <circle cx="676" cy="421" r="2.2" fill="#1971c2"/>
-  <circle cx="699.5" cy="401" r="2.2" fill="#1971c2"/>
-  <circle cx="711.5" cy="394" r="2.2" fill="#1971c2"/>
-  <circle cx="685" cy="394.5" r="2.2" fill="#1971c2"/>
-  <circle cx="678.5" cy="401" r="2.2" fill="#1971c2"/>
-  <circle cx="714" cy="422.5" r="2.2" fill="#1971c2"/>
-  <circle cx="686" cy="404" r="6" fill="#c92a2a" stroke="#ffffff" stroke-width="1.5"/>
-  <path d="M790,408 L769,400 L767.5,397.5 L766,395 L765,392.5 L764.5,390 L764,387.5 L764,385 L764.5,382 L765,379.5 L766,377 L767.5,375 L769,372.5 L770.5,370.5 L772.5,368.5 L774.5,367 L777,365.5 L779.5,364 L782,363.5 L784.5,362.5 L787,362 L790,362 L793,362 L795.5,362.5 L798,363.5 L800.5,364 L803,365.5 L805.5,367 L807.5,368.5 L809.5,370.5 L811,372.5 L812.5,375 L814,377 L815,379.5 L815.5,382 L816,385 L816,387.5 L815.5,390 L815,392.5 L814,395 L812.5,397.5 L811,400 Z" fill="#d0e6fb" stroke="#1971c2" stroke-width="2.5" stroke-linejoin="round"/>
-  <path d="M790,416 L769,424 L767.5,426.5 L766,429 L765,431.5 L764.5,434 L764,436.5 L764,439 L764.5,442 L765,444.5 L766,447 L767.5,449 L769,451.5 L770.5,453.5 L772.5,455.5 L774.5,457 L777,458.5 L779.5,460 L782,460.5 L784.5,461.5 L787,462 L790,462 L793,462 L795.5,461.5 L798,460.5 L800.5,460 L803,458.5 L805.5,457 L807.5,455.5 L809.5,453.5 L811,451.5 L812.5,449 L814,447 L815,444.5 L815.5,442 L816,439 L816,436.5 L815.5,434 L815,431.5 L814,429 L812.5,426.5 L811,424 Z" fill="#d0e6fb" stroke="#1971c2" stroke-width="2.5" stroke-linejoin="round"/>
-  <circle cx="790" cy="412" r="5" fill="#c92a2a" stroke="#ffffff" stroke-width="1.5"/>
+  <circle cx="682" cy="408" r="78" fill="url(#fy85h-cloud)"/>
+  <circle cx="674" cy="421.5" r="3" fill="#1971c2"/>
+  <circle cx="678" cy="419.5" r="3" fill="#1971c2"/>
+  <circle cx="686" cy="403.5" r="3" fill="#1971c2"/>
+  <circle cx="649" cy="401.5" r="3" fill="#1971c2"/>
+  <circle cx="714" cy="432" r="3" fill="#1971c2"/>
+  <circle cx="667.5" cy="422" r="3" fill="#1971c2"/>
+  <circle cx="692.5" cy="428" r="3" fill="#1971c2"/>
+  <circle cx="666.5" cy="415" r="3" fill="#1971c2"/>
+  <circle cx="683" cy="398" r="3" fill="#1971c2"/>
+  <circle cx="674.5" cy="391" r="3" fill="#1971c2"/>
+  <circle cx="704.5" cy="384.5" r="3" fill="#1971c2"/>
+  <circle cx="668" cy="398.5" r="3" fill="#1971c2"/>
+  <circle cx="650.5" cy="401" r="3" fill="#1971c2"/>
+  <circle cx="654.5" cy="411" r="3" fill="#1971c2"/>
+  <circle cx="683.5" cy="385" r="3" fill="#1971c2"/>
+  <circle cx="676.5" cy="426.5" r="3" fill="#1971c2"/>
+  <circle cx="684" cy="406" r="3" fill="#1971c2"/>
+  <circle cx="667.5" cy="432" r="3" fill="#1971c2"/>
+  <circle cx="676.5" cy="374" r="3" fill="#1971c2"/>
+  <circle cx="689.5" cy="379.5" r="3" fill="#1971c2"/>
+  <circle cx="676" cy="408" r="3" fill="#1971c2"/>
+  <circle cx="674.5" cy="410" r="3" fill="#1971c2"/>
+  <circle cx="660.5" cy="396.5" r="3" fill="#1971c2"/>
+  <circle cx="689.5" cy="379" r="3" fill="#1971c2"/>
+  <circle cx="692" cy="405" r="3" fill="#1971c2"/>
+  <circle cx="686.5" cy="409.5" r="3" fill="#1971c2"/>
+  <circle cx="684.5" cy="408.5" r="3" fill="#1971c2"/>
+  <circle cx="666" cy="424" r="3" fill="#1971c2"/>
+  <circle cx="678" cy="383.5" r="3" fill="#1971c2"/>
+  <circle cx="681" cy="410.5" r="3" fill="#1971c2"/>
+  <circle cx="673.5" cy="390.5" r="3" fill="#1971c2"/>
+  <circle cx="691.5" cy="407.5" r="3" fill="#1971c2"/>
+  <circle cx="698.5" cy="417.5" r="3" fill="#1971c2"/>
+  <circle cx="688" cy="421" r="3" fill="#1971c2"/>
+  <circle cx="704" cy="414.5" r="3" fill="#1971c2"/>
+  <circle cx="688" cy="405.5" r="3" fill="#1971c2"/>
+  <circle cx="678" cy="412.5" r="3" fill="#1971c2"/>
+  <circle cx="696" cy="393.5" r="3" fill="#1971c2"/>
+  <circle cx="682" cy="388" r="3" fill="#1971c2"/>
+  <circle cx="689" cy="416" r="3" fill="#1971c2"/>
+  <circle cx="679" cy="367" r="3" fill="#1971c2"/>
+  <circle cx="683" cy="404" r="3" fill="#1971c2"/>
+  <circle cx="649.5" cy="389.5" r="3" fill="#1971c2"/>
+  <circle cx="680" cy="399" r="3" fill="#1971c2"/>
+  <circle cx="694.5" cy="378" r="3" fill="#1971c2"/>
+  <circle cx="675.5" cy="412.5" r="3" fill="#1971c2"/>
+  <circle cx="678.5" cy="400" r="3" fill="#1971c2"/>
+  <circle cx="715" cy="414" r="3" fill="#1971c2"/>
+  <circle cx="676.5" cy="429" r="3" fill="#1971c2"/>
+  <circle cx="668.5" cy="420" r="3" fill="#1971c2"/>
+  <circle cx="658.5" cy="407" r="3" fill="#1971c2"/>
+  <circle cx="678.5" cy="420.5" r="3" fill="#1971c2"/>
+  <circle cx="704" cy="392.5" r="3" fill="#1971c2"/>
+  <circle cx="674" cy="407.5" r="3" fill="#1971c2"/>
+  <circle cx="679" cy="390" r="3" fill="#1971c2"/>
+  <circle cx="731" cy="402" r="3" fill="#1971c2"/>
+  <circle cx="701" cy="410.5" r="3" fill="#1971c2"/>
+  <circle cx="691.5" cy="399.5" r="3" fill="#1971c2"/>
+  <circle cx="695" cy="426" r="3" fill="#1971c2"/>
+  <circle cx="616.5" cy="421.5" r="3" fill="#1971c2"/>
+  <circle cx="617.5" cy="417" r="3" fill="#1971c2"/>
+  <circle cx="691" cy="403.5" r="3" fill="#1971c2"/>
+  <circle cx="672.5" cy="412.5" r="3" fill="#1971c2"/>
+  <circle cx="722" cy="379" r="3" fill="#1971c2"/>
+  <circle cx="681.5" cy="405.5" r="3" fill="#1971c2"/>
+  <circle cx="680.5" cy="388" r="3" fill="#1971c2"/>
+  <circle cx="709.5" cy="394" r="3" fill="#1971c2"/>
+  <circle cx="690.5" cy="423" r="3" fill="#1971c2"/>
+  <circle cx="699.5" cy="388.5" r="3" fill="#1971c2"/>
+  <circle cx="709" cy="405" r="3" fill="#1971c2"/>
+  <circle cx="690" cy="414.5" r="3" fill="#1971c2"/>
+  <circle cx="680.5" cy="409.5" r="3" fill="#1971c2"/>
+  <circle cx="671" cy="424" r="3" fill="#1971c2"/>
+  <circle cx="679.5" cy="406.5" r="3" fill="#1971c2"/>
+  <circle cx="691.5" cy="436" r="3" fill="#1971c2"/>
+  <circle cx="652" cy="414.5" r="3" fill="#1971c2"/>
+  <circle cx="670.5" cy="370.5" r="3" fill="#1971c2"/>
+  <circle cx="688" cy="425.5" r="3" fill="#1971c2"/>
+  <circle cx="693" cy="419.5" r="3" fill="#1971c2"/>
+  <circle cx="684" cy="430" r="3" fill="#1971c2"/>
+  <circle cx="681" cy="409" r="3" fill="#1971c2"/>
+  <circle cx="674" cy="410" r="3" fill="#1971c2"/>
+  <circle cx="682" cy="424" r="3" fill="#1971c2"/>
+  <circle cx="681.5" cy="414" r="3" fill="#1971c2"/>
+  <circle cx="673" cy="398.5" r="3" fill="#1971c2"/>
+  <circle cx="718" cy="421.5" r="3" fill="#1971c2"/>
+  <circle cx="687" cy="430.5" r="3" fill="#1971c2"/>
+  <circle cx="704.5" cy="379.5" r="3" fill="#1971c2"/>
+  <circle cx="694" cy="388" r="3" fill="#1971c2"/>
+  <circle cx="687" cy="391.5" r="3" fill="#1971c2"/>
+  <circle cx="684" cy="413" r="3" fill="#1971c2"/>
+  <circle cx="656" cy="398" r="3" fill="#1971c2"/>
+  <circle cx="653" cy="408" r="3" fill="#1971c2"/>
+  <circle cx="701" cy="420.5" r="3" fill="#1971c2"/>
+  <circle cx="698" cy="399" r="3" fill="#1971c2"/>
+  <circle cx="684" cy="401.5" r="3" fill="#1971c2"/>
+  <circle cx="681.5" cy="422.5" r="3" fill="#1971c2"/>
+  <circle cx="687.5" cy="433" r="3" fill="#1971c2"/>
+  <circle cx="676" cy="399" r="3" fill="#1971c2"/>
+  <circle cx="692" cy="423" r="3" fill="#1971c2"/>
+  <circle cx="665" cy="473.5" r="3" fill="#1971c2"/>
+  <circle cx="694.5" cy="434.5" r="3" fill="#1971c2"/>
+  <circle cx="654.5" cy="437" r="3" fill="#1971c2"/>
+  <circle cx="719" cy="407" r="3" fill="#1971c2"/>
+  <circle cx="719" cy="409" r="3" fill="#1971c2"/>
+  <circle cx="689.5" cy="413" r="3" fill="#1971c2"/>
+  <circle cx="682" cy="434.5" r="3" fill="#1971c2"/>
+  <circle cx="715.5" cy="388.5" r="3" fill="#1971c2"/>
+  <circle cx="681" cy="395" r="3" fill="#1971c2"/>
+  <circle cx="686.5" cy="420" r="3" fill="#1971c2"/>
+  <circle cx="678" cy="432.5" r="3" fill="#1971c2"/>
+  <circle cx="686.5" cy="395.5" r="3" fill="#1971c2"/>
+  <circle cx="659" cy="363" r="3" fill="#1971c2"/>
+  <circle cx="682.5" cy="410.5" r="3" fill="#1971c2"/>
+  <circle cx="687" cy="396" r="3" fill="#1971c2"/>
+  <circle cx="694.5" cy="401" r="3" fill="#1971c2"/>
+  <circle cx="668.5" cy="406" r="3" fill="#1971c2"/>
+  <circle cx="678.5" cy="403" r="3" fill="#1971c2"/>
+  <circle cx="682.5" cy="414" r="3" fill="#1971c2"/>
+  <circle cx="657.5" cy="391.5" r="3" fill="#1971c2"/>
+  <circle cx="697.5" cy="413.5" r="3" fill="#1971c2"/>
+  <circle cx="655.5" cy="407.5" r="3" fill="#1971c2"/>
+  <circle cx="664" cy="421" r="3" fill="#1971c2"/>
+  <circle cx="718.5" cy="366.5" r="3" fill="#1971c2"/>
+  <circle cx="652" cy="410" r="3" fill="#1971c2"/>
+  <circle cx="696.5" cy="387.5" r="3" fill="#1971c2"/>
+  <circle cx="653.5" cy="435.5" r="3" fill="#1971c2"/>
+  <circle cx="686.5" cy="392.5" r="3" fill="#1971c2"/>
+  <circle cx="683.5" cy="400" r="3" fill="#1971c2"/>
+  <circle cx="681.5" cy="437" r="3" fill="#1971c2"/>
+  <circle cx="670" cy="428" r="3" fill="#1971c2"/>
+  <circle cx="698" cy="404.5" r="3" fill="#1971c2"/>
+  <circle cx="711.5" cy="396" r="3" fill="#1971c2"/>
+  <circle cx="680.5" cy="397" r="3" fill="#1971c2"/>
+  <circle cx="673" cy="404" r="3" fill="#1971c2"/>
+  <circle cx="714.5" cy="430" r="3" fill="#1971c2"/>
+  <circle cx="687" cy="420.5" r="3" fill="#1971c2"/>
+  <circle cx="679" cy="386.5" r="3" fill="#1971c2"/>
+  <circle cx="676.5" cy="396.5" r="3" fill="#1971c2"/>
+  <circle cx="653.5" cy="429.5" r="3" fill="#1971c2"/>
+  <circle cx="691.5" cy="417" r="3" fill="#1971c2"/>
+  <circle cx="667.5" cy="442" r="3" fill="#1971c2"/>
+  <circle cx="687" cy="350.5" r="3" fill="#1971c2"/>
+  <circle cx="710.5" cy="391.5" r="3" fill="#1971c2"/>
+  <circle cx="691.5" cy="415" r="3" fill="#1971c2"/>
+  <circle cx="684" cy="401" r="3" fill="#1971c2"/>
+  <circle cx="695.5" cy="382" r="3" fill="#1971c2"/>
+  <circle cx="692.5" cy="411" r="3" fill="#1971c2"/>
+  <circle cx="673.5" cy="435.5" r="3" fill="#1971c2"/>
+  <circle cx="692.5" cy="437.5" r="3" fill="#1971c2"/>
+  <circle cx="668.5" cy="374.5" r="3" fill="#1971c2"/>
+  <circle cx="674" cy="429" r="3" fill="#1971c2"/>
+  <circle cx="687.5" cy="404.5" r="3" fill="#1971c2"/>
+  <circle cx="649.5" cy="429" r="3" fill="#1971c2"/>
+  <circle cx="629.5" cy="441.5" r="3" fill="#1971c2"/>
+  <circle cx="680" cy="386.5" r="3" fill="#1971c2"/>
+  <circle cx="665.5" cy="422.5" r="3" fill="#1971c2"/>
+  <circle cx="682.5" cy="420.5" r="3" fill="#1971c2"/>
+  <circle cx="680" cy="407.5" r="3" fill="#1971c2"/>
+  <circle cx="684" cy="410" r="3" fill="#1971c2"/>
+  <circle cx="695" cy="395" r="3" fill="#1971c2"/>
+  <circle cx="656.5" cy="420.5" r="3" fill="#1971c2"/>
+  <circle cx="682.5" cy="418" r="3" fill="#1971c2"/>
+  <circle cx="658.5" cy="419" r="3" fill="#1971c2"/>
+  <circle cx="655.5" cy="372" r="3" fill="#1971c2"/>
+  <circle cx="682" cy="408" r="7" fill="#c92a2a" stroke="#ffffff" stroke-width="1.5"/>
+  <path d="M796,408 L767.5,397 L765.5,394 L763.5,390.5 L762.5,387.5 L761.5,384 L761,380.5 L761,377 L761.5,373.5 L762.5,370 L764,366.5 L765.5,363.5 L767.5,360 L769.5,357.5 L772.5,355 L775,352.5 L778.5,350.5 L781.5,349 L785,347.5 L788.5,347 L792.5,346 L796,346 L799.5,346 L803.5,347 L807,347.5 L810.5,349 L813.5,350.5 L817,352.5 L819.5,355 L822.5,357.5 L824.5,360 L826.5,363.5 L828,366.5 L829.5,370 L830.5,373.5 L831,377 L831,380.5 L830.5,384 L829.5,387.5 L828.5,390.5 L826.5,394 L824.5,397 Z" fill="#d0e6fb" stroke="#1971c2" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M796,416 L767.5,427 L765.5,430 L763.5,433.5 L762.5,436.5 L761.5,440 L761,443.5 L761,447 L761.5,450.5 L762.5,454 L764,457.5 L765.5,460.5 L767.5,464 L769.5,466.5 L772.5,469 L775,471.5 L778.5,473.5 L781.5,475 L785,476.5 L788.5,477 L792.5,478 L796,478 L799.5,478 L803.5,477 L807,476.5 L810.5,475 L813.5,473.5 L817,471.5 L819.5,469 L822.5,466.5 L824.5,464 L826.5,460.5 L828,457.5 L829.5,454 L830.5,450.5 L831,447 L831,443.5 L830.5,440 L829.5,436.5 L828.5,433.5 L826.5,430 L824.5,427 Z" fill="#d0e6fb" stroke="#1971c2" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="796" cy="412" r="6" fill="#c92a2a" stroke="#ffffff" stroke-width="1.5"/>
   <path d="M1040,560 h120 v-16 q0,-12 -12,-12 h-96 q-12,0 -12,12 Z" fill="#6c757d" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
   <path d="M1100,532 L1060,250" fill="none" stroke="#1f2933" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
   <path d="M1060,250 L960,150" fill="none" stroke="#1f2933" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
@@ -171,12 +200,14 @@
 ## Ydinajatus
 
 ### Radasta aaltoon
-Bohrin malli antoi vetyatomin energiatasot oikein (luku *Vetyatomin energiatasot ja Bohrin malli*), mutta sen kuva pienestä pallosta ympyräradalla ei kestä tarkempaa tarkastelua. Malli ei kerro, miksi vain tietyt radat ovat sallittuja, eikä se toimi atomeille, joissa on useita elektroneja. Luvussa *Valo ja elektroni aaltoina ja hiukkasina* nähtiin lisäksi, että yksi kerrallaan lähetetyt elektronit muodostavat kaksoisraon taakse interferenssikuvion: elektronin liikettä on kuvattava aallolla. **Aaltomekaanisessa atomimallissa** elektronin tilaa atomissa kuvaa ytimen ympärille levittäytyvä aalto, ei rata.
+Bohrin malli antoi vetyatomin energiatasot oikein (luku *Vetyatomin energiatasot ja Bohrin malli*), mutta sen kuva pienestä pallosta ympyräradalla ei kestä tarkempaa tarkastelua. Malli ei kerro, miksi vain tietyt radat ovat sallittuja, eikä se toimi atomeille, joissa on useita elektroneja.
+
+Luvussa *Valo ja elektroni aaltoina ja hiukkasina* nähtiin lisäksi, että yksi kerrallaan lähetetyt elektronit muodostavat kaksoisraon taakse interferenssikuvion: elektronin liikettä on kuvattava aallolla. **Aaltomekaanisessa atomimallissa** elektronin tilaa atomissa kuvaa ytimen ympärille levittäytyvä aalto, ei rata.
 
 ### Sallitut tilat ovat seisovia aaltoja
-Kitaran kieli on kiinni molemmista päistään, joten siihen syntyy vain sellaisia seisovia aaltoja, joissa kielen päät ovat solmukohtia. Värähtelytapoja on siksi vain tietyt: yksi kupu, kaksi kupua, kolme kupua ja niin edelleen. Ytimen sähköinen vetovoima sitoo elektronin, ja sen aallon täytyy samaan tapaan sopia ytimen ympärille. Pysyviä tiloja syntyy vain tietyillä aallon muodoilla, ja jokaisella muodolla on oma energiansa. Energian kvantittuminen ei siis ole erillinen oletus kuten Bohrin mallissa, vaan se seuraa siitä, että sidottu aalto voi olla vain seisova aalto. Mitä enemmän aallossa on solmuja, sitä suurempi on tilan energia.
+Kitaran kieli on kiinni molemmista päistään, joten siihen syntyy vain sellaisia seisovia aaltoja, joissa kielen päät ovat solmukohtia. Värähtelytapoja on siksi vain tietyt: yksi kupu, kaksi kupua, kolme kupua ja niin edelleen. Ytimen sähköinen vetovoima sitoo elektronin, ja sen aallon täytyy samaan tapaan sopia ytimen ympärille. Pysyviä tiloja syntyy vain tietyillä aallon muodoilla, ja jokaisella muodolla on oma energiansa. Energian kvantittuminen ei siis ole erillinen oletus kuten Bohrin mallissa, vaan se seuraa siitä, että sidottu aalto voi olla vain seisova aalto. Kielessä lisäsolmu nostaa värähtelyn taajuutta. Vetyatomissa tilan energia on sitä suurempi, mitä enemmän aallossa on solmuja; monen elektronin atomissa tämä pätee saman muotoisiin tiloihin (s, p, …).
 
-<svg data-fig="string" viewBox="0 0 600 330" role="img" aria-label="Kaavakuva: molemmista päistä kiinnitetyn kielen kolme ensimmäistä seisovaa aaltoa. Ylimmässä kieli värähtelee yhtenä kupuna eikä sen keskellä ole solmua, keskimmäisessä on yksi solmu ja kaksi kupua, alimmassa kaksi solmua ja kolme kupua. Muita värähtelytapoja ei synny, koska kielen päät pysyvät paikallaan. Mitä enemmän solmuja, sitä suurempi värähtelyn energia." style="max-width:100%;font-size:24px">
+<svg data-fig="string" viewBox="0 0 600 330" role="img" aria-label="Kaavakuva: molemmista päistä kiinnitetyn kielen kolme ensimmäistä seisovaa aaltoa. Ylimmässä kieli värähtelee yhtenä kupuna eikä sen keskellä ole solmua, keskimmäisessä on yksi solmu ja kaksi kupua, alimmassa kaksi solmua ja kolme kupua. Muita värähtelytapoja ei synny, koska kielen päät pysyvät paikallaan. Mitä enemmän solmuja, sitä suurempi värähtelyn taajuus." style="max-width:100%;font-size:24px">
   <rect x="96" y="52" width="12" height="68" rx="2" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
   <rect x="456" y="52" width="12" height="68" rx="2" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
   <path d="M112,86 L115.5,85 L119,84 L122,83 L125.5,82 L129,81.5 L132.5,80.5 L136,79.5 L139,78.5 L142.5,77.5 L146,76.5 L149.5,76 L153,75 L156,74 L159.5,73 L163,72.5 L166.5,71.5 L170,70.5 L173,70 L176.5,69 L180,68.5 L183.5,67.5 L187,67 L190,66 L193.5,65.5 L197,65 L200.5,64 L204,63.5 L207,63 L210.5,62.5 L214,61.5 L217.5,61 L221,60.5 L224,60 L227.5,59.5 L231,59.5 L234.5,59 L238,58.5 L241,58 L244.5,58 L248,57.5 L251.5,57 L255,57 L258,56.5 L261.5,56.5 L265,56.5 L268.5,56 L272,56 L275,56 L278.5,56 L282,56 L285.5,56 L289,56 L292,56 L295.5,56 L299,56.5 L302.5,56.5 L306,56.5 L309,57 L312.5,57 L316,57.5 L319.5,58 L323,58 L326,58.5 L329.5,59 L333,59.5 L336.5,59.5 L340,60 L343,60.5 L346.5,61 L350,61.5 L353.5,62.5 L357,63 L360,63.5 L363.5,64 L367,65 L370.5,65.5 L374,66 L377,67 L380.5,67.5 L384,68.5 L387.5,69 L391,70 L394,70.5 L397.5,71.5 L401,72.5 L404.5,73 L408,74 L411,75 L414.5,76 L418,76.5 L421.5,77.5 L425,78.5 L428,79.5 L431.5,80.5 L435,81.5 L438.5,82 L442,83 L445,84 L448.5,85 L452,86" fill="none" stroke="#2f74b5" stroke-width="3" stroke-linejoin="round"/>
@@ -207,7 +238,7 @@ Kitaran kieli on kiinni molemmista päistään, joten siihen syntyy vain sellais
 
 Atomissa aalto on kolmiulotteinen, joten sen solmut ovat pintoja, ja solmupinnalla elektronia ei havaita. Alimman tilan, $1\text{s}$-tilan, aallossa ei ole solmua. Kuoren $n = 2$ tiloissa on yksi solmu: $2\text{s}$-tilassa se on ytimen ympärillä oleva pallopinta, $2\text{p}$-tilassa ytimen kautta kulkeva taso. Tilan nimen numero on pääkvanttiluku $n$, ja solmuja on yhteensä $n - 1$. Kirjain kertoo aallon muodon: s-tila on pallosymmetrinen, ja p-tilassa on kaksi lohkoa ytimen vastakkaisilla puolilla.
 
-<svg data-fig="nodes" viewBox="0 0 600 360" role="img" aria-label="Periaatekuva, ei mittakaavassa: vetyatomin kolmen orbitaalin poikkileikkaukset ytimen kautta. 1s-orbitaali on pallo, jossa ei ole solmua. 2s-orbitaali on pallo, jonka sisällä on solmupallo: sen kohdalla elektronia ei havaita, ja sen sisä- ja ulkopuolella aalto värähtelee vastakkaisissa vaiheissa. 2p-orbitaalissa on kaksi lohkoa, yksi ytimen kummallakin puolella, ja niiden välissä ytimen kautta kulkeva solmutaso. Ydin on punainen piste." style="max-width:100%;font-size:24px">
+<svg data-fig="nodes" viewBox="0 0 600 360" role="img" aria-label="Periaatekuva, ei mittakaavassa: vetyatomin kolmen orbitaalin poikkileikkaukset ytimen kautta. 1s-orbitaali on pallo, jossa ei ole solmua. 2s-orbitaali on pallo, jonka sisällä on solmupallo: sen kohdalla elektronia ei havaita, ja sen sisä- ja ulkopuolella aalto värähtelee vastakkaisissa vaiheissa. 2p-orbitaalissa on kaksi lohkoa, yksi ytimen kummallakin puolella, ja niiden välissä ytimen kautta kulkeva solmutaso. Kuvassa on yksi kolmesta 2p-orbitaalista, jonka lohkot ovat pystysuunnassa; kaksi muuta osoittavat kahteen muuhun suuntaan. Ydin on punainen piste." style="max-width:100%;font-size:24px">
   <defs><radialGradient id="fy85-cloud"><stop offset="0" stop-color="#1971c2" stop-opacity="0.95"/><stop offset="1" stop-color="#1971c2" stop-opacity="0.12"/></radialGradient><radialGradient id="fy85-ring" r="0.5"><stop offset="0.42" stop-color="#1971c2" stop-opacity="0"/><stop offset="0.5" stop-color="#1971c2" stop-opacity="0.12"/><stop offset="0.72" stop-color="#1971c2" stop-opacity="0.55"/><stop offset="1" stop-color="#1971c2" stop-opacity="0.08"/></radialGradient></defs>
   <line x1="200" y1="30" x2="200" y2="300" stroke="#c9c2b2" stroke-width="2" stroke-linecap="butt" stroke-dasharray="6 6"/>
   <line x1="400" y1="30" x2="400" y2="300" stroke="#c9c2b2" stroke-width="2" stroke-linecap="butt" stroke-dasharray="6 6"/>
@@ -242,7 +273,7 @@ missä $P$ on todennäköisyys, $k$ alueeseen osuneiden mittausten määrä ja $
 ### Orbitaali on todennäköisyysalue
 Kun mittaustulokset merkitään pisteiksi, syntyy elektronipilvi, joka on tihein siellä, missä elektroni havaitaan todennäköisimmin. Pilvellä ei ole terävää reunaa. Siksi **orbitaali** piirretään alueena, jonka sisällä elektroni havaitaan valitulla todennäköisyydellä, tavallisesti $90\,\%$:n todennäköisyydellä. Raja on sovittu kynnysarvo eikä seinä: noin kymmenesosa mittauksista osuu sen ulkopuolelle. Vetyatomin $1\text{s}$-orbitaalin $90\,\%$:n raja on pallo, jonka säde on $0{,}14\,\text{nm}$. Sanalla orbitaali tarkoitetaan myös itse tilaa, esimerkiksi $2\text{p}$-orbitaalia.
 
-<svg data-fig="cloud" viewBox="0 0 600 372" role="img" aria-label="Pistekuva mittakaavassa: vetyatomin 1s-elektronin paikka on mitattu yhden kerran, 20 kertaa ja 1000 kertaa, ja jokainen mittaustulos on merkitty pisteeksi. Yksi piste ei kerro jakaumasta mitään, 20 pistettä kasautuu ytimen ympärille, ja 1000 pisteestä muodostuu pilvi, joka on tihein ytimen lähellä ja harvenee ulospäin. Kolmanteen kuvaan on piirretty ympyrä, jonka sisällä on 90 prosenttia osumista: se on 1s-orbitaalin raja, säde 0,14 nm. Rajan ulkopuolelle jääneet osumat ovat harmaita. Ydin on punainen piste." style="max-width:100%;font-size:24px">
+<svg data-fig="cloud" viewBox="0 0 600 372" role="img" aria-label="Pistekuva mittakaavassa: vetyatomin 1s-elektronin paikka on mitattu yhden kerran, 20 kertaa ja 1000 kertaa, ja jokainen mittaustulos on merkitty pisteeksi. Yksi piste ei kerro jakaumasta mitään, 20 pistettä kasautuu ytimen ympärille, ja 1000 pisteestä muodostuu pilvi, joka on tihein ytimen lähellä ja harvenee ulospäin. Kolmanteen kuvaan on piirretty ympyrä, jonka sisällä on 90 prosenttia osumista: se on 1s-orbitaalin raja, säde 0,14 nm. Rajan ulkopuolelle jääneet osumat ovat harmaita. Kuva on läpivalaisu: kolmiulotteiset osumat on piirretty yhteen tasoon, joten osa harmaista pisteistä näkyy ympyrän sisällä, vaikka ne ovat rajan edessä tai takana. Ydin on punainen piste." style="max-width:100%;font-size:24px">
   <line x1="200" y1="24" x2="200" y2="296" stroke="#c9c2b2" stroke-width="2" stroke-linecap="butt" stroke-dasharray="6 6"/>
   <line x1="400" y1="24" x2="400" y2="296" stroke="#c9c2b2" stroke-width="2" stroke-linecap="butt" stroke-dasharray="6 6"/>
   <circle cx="79.5" cy="150" r="5" fill="#1971c2"/>
@@ -1280,6 +1311,7 @@ Kun mittaustulokset merkitään pisteiksi, syntyy elektronipilvi, joka on tihein
   <line x1="40" y1="347" x2="40" y2="361" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <line x1="81.5" y1="347" x2="81.5" y2="361" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <foreignObject x="91.5" y="339.5" width="90" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$0{,}1\,\text{nm}$</div></foreignObject>
+  <foreignObject x="438" y="339.5" width="150" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$\text{läpivalaisu}$</div></foreignObject>
 </svg>
 
 Pilvi on tihein ytimen kohdalla, mutta yleisin etäisyys ytimestä ei ole nolla. Ohueen pallokuoreen kauempana ytimestä mahtuu enemmän tilavuutta kuin pieneen palloon aivan ytimen ympärillä, joten $1\text{s}$-elektroni havaitaan useimmin noin $0{,}053\,\text{nm}$:n etäisyydellä. Se on sama kuin Bohrin mallin pienimmän radan säde: Bohrin rata on aaltomallissa yleisin etäisyys, ei elektronin kulkema reitti.
@@ -1289,7 +1321,9 @@ Vetyatomissa tilan energia riippuu vain pääkvanttiluvusta $n$, ja aaltomalli a
 ```latex
 E_n = -\frac{13{,}6\,\text{eV}}{n^2}
 ```
-missä $E_n$ on elektronin energia (eV) kuorella $n = 1, 2, 3, \ldots$ Samaan pääkvanttilukuun kuuluvat tilat muodostavat elektronikuoren. Kuorella $n$ on $n$ alikuorta, s, p, d ja f, joissa on $1$, $3$, $5$ ja $7$ orbitaalia, joten kuoren orbitaalien määrä on $n^2$. Kullakin orbitaalilla voi olla enintään kaksi elektronia, joilla on vastakkainen spin (Paulin kieltosääntö). Kuorelle mahtuu siksi enintään
+missä $E_n$ on elektronin energia (eV) kuorella $n = 1, 2, 3, \ldots$ Samaan pääkvanttilukuun kuuluvat tilat muodostavat elektronikuoren. Kuorella $n$ on $n$ alikuorta, s, p, d ja f, joissa on $1$, $3$, $5$ ja $7$ orbitaalia, joten kuoren orbitaalien määrä on $n^2$.
+
+Alikuoren orbitaalien määrä riippuu aallon muodosta. s-orbitaali on pallo, joten sitä voi olla vain yksi. p-orbitaalin lohkopari voi osoittaa kolmeen toisiaan vastaan kohtisuoraan suuntaan ($x$, $y$ ja $z$), joten p-orbitaaleja on kolme; tämän luvun kuvissa näkyy niistä yksi, jonka lohkot ovat pystysuunnassa. d- ja f-alikuorilla erilaisia orbitaaleja on vastaavasti viisi ja seitsemän. Elektronilla on lisäksi spin, sen oma ominaisuus, jolla on vain kaksi mahdollista arvoa. Kullakin orbitaalilla voi siksi olla enintään kaksi elektronia, ja niillä on vastakkainen spin (Paulin kieltosääntö). Kuorelle mahtuu siksi enintään
 ```latex
 N_\text{max} = 2n^2
 ```
@@ -1343,11 +1377,14 @@ Kun elektroni siirtyy ylemmästä tilasta alempaan, atomi lähettää fotonin, j
   <path d="M520,230 L504.5,229.5 L511,217.5 Z" fill="#c92a2a" stroke-linejoin="round"/>
   <foreignObject x="476" y="173.5" width="50" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#c92a2a">$hf$</div></foreignObject>
   <foreignObject x="440" y="243.5" width="160" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\lambda = 656\,\text{nm}$</div></foreignObject>
-  <foreignObject x="160" y="285.5" width="300" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{orbitaalissa enintään } 2\ e^-$</div></foreignObject>
+  <line x1="210" y1="360" x2="228" y2="360" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="234" y="345.5" width="300" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{orbitaalissa enintään } 2\ e^-$</div></foreignObject>
 </svg>
 
 ### Yhteys kemian orbitaaleihin
-Monen elektronin atomissa elektronit hylkivät toisiaan, joten saman kuoren alikuorilla on eri energiat: $2\text{s}$ on alempana kuin $2\text{p}$ ja $3\text{s}$ alempana kuin $3\text{p}$. Perustilassa elektronit täyttävät orbitaalit alimmasta energiasta alkaen, kullekin orbitaalille enintään kaksi. Kevyiden atomien täyttöjärjestys on $1\text{s}$, $2\text{s}$, $2\text{p}$, $3\text{s}$, $3\text{p}$. Hiilen kuusi elektronia sijoittuvat näin: $1\text{s}^2\,2\text{s}^2\,2\text{p}^2$, missä yläindeksi on alikuoren elektronien määrä. Uloimman kuoren elektronit, valenssielektronit, ovat keskimäärin kauimpana ytimestä ja heikoimmin sidottuja, ja ne ratkaisevat, millaisia sidoksia atomi muodostaa. Kemian jaksollinen järjestelmä ja orbitaalikuvat nojaavat siis samaan aaltomalliin.
+Monen elektronin atomissa elektronit hylkivät toisiaan, joten saman kuoren alikuorilla on eri energiat: $2\text{s}$ on alempana kuin $2\text{p}$ ja $3\text{s}$ alempana kuin $3\text{p}$. Perustilassa elektronit täyttävät orbitaalit alimmasta energiasta alkaen, kullekin orbitaalille enintään kaksi. Kevyiden atomien täyttöjärjestys on $1\text{s}$, $2\text{s}$, $2\text{p}$, $3\text{s}$, $3\text{p}$. Hiilen kuusi elektronia sijoittuvat näin: $1\text{s}^2\,2\text{s}^2\,2\text{p}^2$, missä yläindeksi on alikuoren elektronien määrä.
+
+Uloimman kuoren elektronit, valenssielektronit, ovat keskimäärin kauimpana ytimestä ja heikoimmin sidottuja, ja ne ratkaisevat, millaisia sidoksia atomi muodostaa. Kemian jaksollinen järjestelmä ja orbitaalikuvat nojaavat siis samaan aaltomalliin.
 
 ## Esimerkki
 Vetyatomin elektroni siirtyy $3\text{d}$-orbitaalilta $2\text{p}$-orbitaalille, ja atomi lähettää fotonin. Mikä on fotonin aallonpituus?
@@ -1372,17 +1409,17 @@ Vetyatomin elektroni siirtyy $3\text{d}$-orbitaalilta $2\text{p}$-orbitaalille, 
 
 <!-- vaihe -->
 
-**Yksikkömuunnokset.** Energiaero on elektronivoltteina $E_3 - E_2 = -\tfrac{13{,}6\,\text{eV}}{9} + \tfrac{13{,}6\,\text{eV}}{4} = 1{,}8889\,\text{eV}$. Jouleiksi se muunnetaan sijoittamalla $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$: $E_3 - E_2 = 1{,}8889 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 3{,}0260 \cdot 10^{-19}\,\text{J}$.
+**Yksikkömuunnokset.** Energiaero on elektronivoltteina $E_3 - E_2 = -\tfrac{13{,}6\,\text{eV}}{9} + \tfrac{13{,}6\,\text{eV}}{4} = 1{,}8889\,\text{eV}$. Välituloksissa pidetään ylimääräisiä numeroita, ja pyöristys tehdään vasta lopuksi. Jouleiksi energiaero muunnetaan sijoittamalla $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$: $E_3 - E_2 = 1{,}8889 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 3{,}0260 \cdot 10^{-19}\,\text{J}$.
 
 <!-- vaihe -->
 
-**Sijoitus.** Lasketaan ensin osoittaja $hc = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8}\,\text{m/s} = 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}$ ja jaetaan se energiaerolla:
+**Sijoitus.** Lasketaan ensin osoittaja $hc = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8}\,\text{m/s} = 1{,}98647 \cdot 10^{-25}\,\text{J}\,\text{m}$ ja jaetaan se energiaerolla:
 ```latex
 \begin{aligned}
 &\lambda = \frac{hc}{E_3 - E_2} \\
-&= \frac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{3{,}0260 \cdot 10^{-19}\,\text{J}} \\
-&= 6{,}565 \cdot 10^{-7}\,\text{m} \\
-&= 656{,}5\,\text{nm}
+&= \frac{1{,}98647 \cdot 10^{-25}\,\text{J}\,\text{m}}{3{,}0260 \cdot 10^{-19}\,\text{J}} \\
+&= 6{,}5647 \cdot 10^{-7}\,\text{m} \\
+&= 656{,}47\,\text{nm}
 \end{aligned}
 ```
 
@@ -1398,7 +1435,7 @@ Vetyatomin elektroni siirtyy $3\text{d}$-orbitaalilta $2\text{p}$-orbitaalille, 
 Moni ajattelee, että orbitaali on rata, jota pitkin elektroni kiertää, tai kuori, jonka sisällä elektroni pysyy. Aaltomallissa elektronilla ei ole rataa, ja orbitaalin raja on sovittu todennäköisyysraja: $90\,\%$:n rajan ulkopuolelta elektroni havaitaan keskimäärin joka kymmenennellä mittauksella. Toinen virhe on ajatella, että pilvi syntyy, koska elektroni kiitää niin nopeasti, että sen rata sumenee kuin pyörivän tuulettimen siivet. Pilvi kuvaa mittaustulosten jakaumaa: yksittäinen mittaus antaa aina yhden pisteen, eikä elektronin paikkaa mittausten välillä voi kuvata reittinä.
 
 ## Tiivistelmä
-- Aaltomekaanisessa atomimallissa elektronin tilaa kuvaa ytimen ympärille levittäytyvä seisova aalto. Vain tietyt aallon muodot ovat mahdollisia, joten energia on kvantittunut; mitä enemmän solmuja, sitä suurempi energia.
+- Aaltomekaanisessa atomimallissa elektronin tilaa kuvaa ytimen ympärille levittäytyvä seisova aalto. Vain tietyt aallon muodot ovat mahdollisia, joten energia on kvantittunut; vetyatomissa mitä enemmän solmuja, sitä suurempi energia.
 - Todennäköisyystulkinta: aalto kertoo, kuinka todennäköisesti elektroni havaitaan kussakin kohdassa. Yksi mittaus antaa yhden satunnaisen pisteen, ja jakauma näkyy vasta monesta mittauksesta: $P \approx \tfrac{k}{N}$.
 - Orbitaali on alue, jonka sisällä elektroni havaitaan valitulla todennäköisyydellä, esimerkiksi $90\,\%$. Vetyatomin $1\text{s}$-orbitaalin $90\,\%$:n raja on pallo, jonka säde on $0{,}14\,\text{nm}$.
 - Kuorella $n$ on $n^2$ orbitaalia ja enintään $2n^2$ elektronia. Vetyatomin energiatasot ovat $E_n = -\tfrac{13{,}6\,\text{eV}}{n^2}$.

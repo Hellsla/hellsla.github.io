@@ -6,7 +6,8 @@
 // The orbital's boundary at threshold p is the surface of constant density that encloses the probability p (the region
 // where the density is largest); the threshold density is found once from a grid in r and cos(theta). A hit is inside
 // when its density exceeds the threshold. The picture is a see-through view along y: every hit is drawn at (x, z),
-// inside hits blue, outside hits grey, and the boundary as the region's outline. Beside it: the histogram of the hits'
+// inside hits blue, outside hits grey, and the boundary as the region's outline (for 2s also the two circles of the
+// untinted gap around the node sphere). Beside it: the histogram of the hits'
 // distances r from the nucleus (0,02 nm bins) with the expected counts faint behind it.
 // Every canvas text goes through lab(), which pushes its ink box to simState.labels. p5.js 1.9 instance mode, static
 // picture (nothing moves, so no speed control).
@@ -88,6 +89,16 @@ new p5((p) => {
     return (lo + hi) / 2 * A0;
   }
 
+  // 2s: the region is an inner ball r < g0 and a shell g1 < r < R; around the node sphere r = 2 a0 the density is below
+  // the threshold, so the gap g0 < r < g1 (nm) is not part of the orbital's region
+  function gap2s(t) {
+    const f = (r) => DENS['2s'](r, 1) - t;
+    let lo = 0, hi = 2; for (let i = 0; i < 60; i++) { const m = (lo + hi) / 2; if (f(m) > 0) lo = m; else hi = m; }
+    const g0 = (lo + hi) / 2;
+    lo = 2; hi = 4; for (let i = 0; i < 60; i++) { const m = (lo + hi) / 2; if (f(m) > 0) hi = m; else lo = m; }
+    return [g0 * A0, (lo + hi) / 2 * A0];
+  }
+
   const params = () => ({ orb: selOrb.value().slice(1), N: Number(selN.value()), p: Number(slP.value()) });
 
   p.setup = () => {
@@ -132,7 +143,7 @@ new p5((p) => {
     lP.html(__('kynnys', { p: String(S.p) }));
     const sN = String(S.N), sK = String(k), sOut = String(S.N - k), sF = tx(frac, 1), sRp = tx(rpeak, 2), sR = tx(R, 3);
     readout.html(__('lukemat', { N: sN, k: sK, out: sOut, f: sF, rp: sRp, R: sR }));
-    window.simState = { orb: 'o' + S.orb, N: S.N, p: S.p, seed, k, out: S.N - k, frac, rpeak, R, labels: null };
+    window.simState = { orb: 'o' + S.orb, N: S.N, p: S.p, seed, k, out: S.N - k, frac, rpeak, R, gap: S.orb === '2s' ? gap2s(t) : null, labels: null };
     const cw = document.getElementById('sim-root').clientWidth || 600;
     const narrow = cw < 500, kk = Math.max(1, 600 / cw);
     sk = narrow ? kk : 1;
@@ -157,11 +168,13 @@ new p5((p) => {
     const X = (u) => cx + u * A0 * sc, Z = (v) => cy - v * A0 * sc;
     ctx.fillStyle = `rgba(${COLDL.join(',')},0.9)`; ctx.strokeStyle = `rgb(${COLDC.join(',')})`; ctx.lineWidth = 2.5 * sk;
     const outline = boundary(S.orb, t);
+    // one path, even-odd: for 2s the gap around the node sphere between the inner ball and the outer shell stays untinted
+    ctx.beginPath();
     for (const poly of outline) {
-      ctx.beginPath();
       poly.forEach(([u, v], i) => (i ? ctx.lineTo(X(u), Z(v)) : ctx.moveTo(X(u), Z(v))));
-      ctx.closePath(); ctx.fill();
+      ctx.closePath();
     }
+    ctx.fill('evenodd');
     // the hits: outside grey first, then inside blue on top
     const rad = (S.N <= 100 ? 3.2 : S.N <= 1000 ? 2 : 1.4) * sk;
     for (const inside of [false, true]) {
@@ -190,11 +203,9 @@ new p5((p) => {
   // outline polygons of the region where the density exceeds t, in the plane y = 0 (a0 units)
   function boundary(orb, t) {
     const f = DENS[orb];
-    if (orb !== '2p') {
-      const R = extent(orb, t) / A0, poly = [];
-      for (let i = 0; i < 120; i++) { const a = i * 2 * Math.PI / 120; poly.push([R * Math.cos(a), R * Math.sin(a)]); }
-      return [poly];
-    }
+    const circ = (R) => { const poly = []; for (let i = 0; i < 120; i++) { const a = i * 2 * Math.PI / 120; poly.push([R * Math.cos(a), R * Math.sin(a)]); } return poly; };
+    if (orb === '1s') return [circ(extent(orb, t) / A0)];
+    if (orb === '2s') { const [g0, g1] = gap2s(t); return [circ(extent(orb, t) / A0), circ(g1 / A0), circ(g0 / A0)]; }
     // 2p: for each polar angle theta, the region along the ray is r_in < r < r_out around the maximum r = 2
     const g = (r) => r * r * Math.exp(-r), gmax = g(2), lobes = [];
     for (const sgn of [1, -1]) {

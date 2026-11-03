@@ -15,7 +15,7 @@
       "id": "hook",
       "stage": "herata",
       "type": "hook",
-      "text": "Kemian kirjan sivulla hiiliatomin elektronit eivät kierrä ydintä siistejä ratoja pitkin. Ne on piirretty sinisinä pilvinä ja kaksilohkoisina muotoina, ja kuvatekstissä lukee: ”alue, jonka sisällä elektroni havaitaan $90\\,\\%$:n todennäköisyydellä”. Fysiikassa vetyatomin energiatasot laskettiin kuitenkin Bohrin mallilla, jossa elektroni kiertää ydintä ympyrärataa.",
+      "text": "Kemian kirjan sivulla hiiliatomin elektronit eivät kierrä ydintä siistejä ratoja pitkin. Ne on piirretty sinisinä pilvinä ja kaksilohkoisina muotoina, ja kuvatekstissä puhutaan alueesta, jossa elektroni todennäköisesti havaitaan. Fysiikassa vetyatomin energiatasot laskettiin kuitenkin Bohrin mallilla, jossa elektroni kiertää ydintä ympyrärataa.",
       "question": "Mitä orbitaalin kuva oikeastaan esittää, jos se ei ole elektronin rata?"
     },
     {
@@ -51,24 +51,24 @@
         "after": "koe-1",
         "min": 2
       },
-      "prompt": "Vetyatomin elektroni on $1\\text{s}$-tilassa. Sen paikka mitataan $1000$ kertaa, joka kerta uudessa samanlaisessa atomissa, ja kuvaan piirretään $1\\text{s}$-orbitaalin $90\\,\\%$:n raja. Kuinka moni mittaustulos osuu rajan ulkopuolelle?",
+      "prompt": "Vetyatomin elektroni on $1\\text{s}$-tilassa, ja kuvaan piirretään $1\\text{s}$-orbitaalin $90\\,\\%$:n raja. Elektronin paikka mitataan sarjoissa, joka kerta uudessa samanlaisessa atomissa: ensin $10$ mittausta, sitten $1000$ mittausta, ja kumpikin sarja toistetaan muutaman kerran. Miten rajan sisälle osuneiden mittausten osuus käyttäytyy?",
       "choices": [
         {
-          "text": "Ei yksikään, koska raja on orbitaalin pinta, jota elektroni ei voi ylittää.",
-          "feedback": "Mallin arvot kumoavat tämän: $1000$ mittauksesta rajan ulkopuolelle osuu keskimäärin noin $100$, yhdessä sarjassa esimerkiksi $82$ tai $110$. Raja ei ole seinä vaan sovittu kynnys. Sen sisällä elektroni havaitaan $90\\,\\%$:n todennäköisyydellä, joten keskimäärin joka kymmenes osuma on ulkopuolella."
+          "text": "Osuus on jokaisessa sarjassa tasan $90\\,\\%$, koska raja on piirretty $90\\,\\%$:n todennäköisyydellä.",
+          "feedback": "Mallin arvot kumoavat tämän: kymmenen mittauksen sarjoissa rajan sisälle osui esimerkiksi $8$, $9$, $9$ ja $10$ mittausta eli $80$–$100\\,\\%$, ja $1000$ mittauksen sarjoissakin osuus vaihteli esimerkiksi $90{,}1\\,\\%$:sta $91{,}8\\,\\%$:iin. Todennäköisyys kertoo, mihin osuus asettuu monen mittauksen jälkeen, ei tarkkaa tulosta yhdessä sarjassa."
         },
         {
-          "text": "Noin $100$, mutta tarkka määrä vaihtelee hieman mittaussarjasta toiseen.",
+          "text": "Kaikki osumat ovat rajan sisällä, koska raja on orbitaalin pinta, jota elektroni ei voi ylittää.",
+          "feedback": "Mallin arvot kumoavat tämän: ensimmäisessä $1000$ mittauksen sarjassa rajan ulkopuolelle osui $82$ mittausta. Raja ei ole seinä vaan sovittu kynnys. Sen sisällä elektroni havaitaan $90\\,\\%$:n todennäköisyydellä, joten keskimäärin joka kymmenes osuma on ulkopuolella."
+        },
+        {
+          "text": "Kymmenen mittauksen sarjoissa osuus vaihtelee selvästi, mutta $1000$ mittauksen sarjoissa se pysyy lähellä $90\\,\\%$:a.",
           "correct": true,
-          "feedback": "Mallin arvot tukevat tätä: $1000$ mittauksesta rajan ulkopuolelle osuu keskimäärin noin $100$, ja jokainen uusi mittaussarja antaa hieman eri luvun, esimerkiksi $82$ tai $110$. Raja on piirretty niin, että sen sisään jää $90\\,\\%$ todennäköisyydestä, mutta yksittäiset osumat ovat satunnaisia."
+          "feedback": "Mallin arvot tukevat tätä: kymmenen mittauksen sarjoissa rajan sisälle osui esimerkiksi $8$, $9$, $9$ ja $10$ mittausta eli $80$–$100\\,\\%$, mutta $1000$ mittauksen sarjoissa osuus oli esimerkiksi $90{,}1$–$91{,}8\\,\\%$. Yksittäiset osumat ovat satunnaisia, ja vasta monesta mittauksesta osuus asettuu lähelle rajan todennäköisyyttä $90\\,\\%$."
         },
         {
-          "text": "Tasan $100$ joka sarjassa, koska todennäköisyys rajan ulkopuolelle on tasan $10\\,\\%$.",
-          "feedback": "Mallin arvot näyttävät, että määrä vaihtelee sarjasta toiseen, ja pienissä sarjoissa vaihtelu on suhteessa suuri. Todennäköisyys kertoo, mihin osuus asettuu monen mittauksen jälkeen, ei tarkkaa määrää yhdessä sarjassa."
-        },
-        {
-          "text": "Noin puolet, koska elektroni voi olla atomissa missä tahansa kohdassa.",
-          "feedback": "Mallin arvot kumoavat tämän: ulkopuolelle osuu vain noin joka kymmenes. Yksittäinen osuma on satunnainen, mutta jakauma ei ole tasainen: elektroni havaitaan useimmin lähellä ydintä."
+          "text": "Suuremmassa sarjassa osuus on pienempi, koska kaukaisia osumia ehtii kertyä silloin enemmän.",
+          "feedback": "Mallin arvot kumoavat tämän: $1000$ mittauksen sarjoissa osuus pysyi lähellä $90\\,\\%$:a. Jokainen mittaus osuu rajan ulkopuolelle samalla todennäköisyydellä $0{,}10$, joten ulkopuolisten osumien määrä kasvaa samassa suhteessa kuin $N$, mutta niiden osuus ei kasva."
         }
       ]
     },
@@ -82,16 +82,16 @@
         "after": "koe-2",
         "min": 2
       },
-      "prompt": "Bohrin mallissa vetyatomin perustilan elektroni kiertää ydintä aina $0{,}053\\,\\text{nm}$:n etäisyydellä. Aaltomallissa $1\\text{s}$-elektronin etäisyys ytimestä mitataan $5000$ kertaa. Millainen on etäisyyksien jakauma?",
+      "prompt": "Bohrin mallissa vetyatomin perustilan elektroni kiertää ydintä aina samalla etäisyydellä. Aaltomallissa $1\\text{s}$-elektronin etäisyys ytimestä mitataan $5000$ kertaa. Millainen on etäisyyksien jakauma?",
       "choices": [
         {
-          "text": "Kaikki etäisyydet ovat $0{,}053\\,\\text{nm}$, kuten Bohrin radalla.",
+          "text": "Kaikki etäisyydet ovat samat, yhtä suuret kuin Bohrin radan säde.",
           "feedback": "Mallin arvot kumoavat tämän: etäisyydet vaihtelevat lähes nollasta yli $0{,}2\\,\\text{nm}$:iin. Elektronilla ei ole rataa, ja $0{,}053\\,\\text{nm}$ on vain yleisin etäisyys."
         },
         {
           "text": "Etäisyydet vaihtelevat, ja yleisin niistä on noin $0{,}05\\,\\text{nm}$.",
           "correct": true,
-          "feedback": "Mallin arvot tukevat tätä: histogrammin korkein pylväs on noin $0{,}05\\,\\text{nm}$:n kohdalla, mutta osumia on paljon myös lähempänä ja kauempana. Bohrin radan säde on aaltomallissa yleisin etäisyys, ei kulkureitti."
+          "feedback": "Mallin arvot tukevat tätä: histogrammin korkein pylväs on noin $0{,}05\\,\\text{nm}$:n kohdalla, mutta osumia on paljon myös lähempänä ja kauempana. Bohrin radan säde $0{,}053\\,\\text{nm}$ on aaltomallissa yleisin etäisyys, ei kulkureitti."
         },
         {
           "text": "Yleisin etäisyys on lähes nolla, koska pilvi on tihein ytimen kohdalla.",
@@ -109,7 +109,7 @@
       "type": "sim",
       "text": "Mittaa elektronin paikka yhä uudelleen ja katso, miten satunnaisista osumista syntyy orbitaali.",
       "howto": "Valitse elektronin tila ($1\\text{s}$, $2\\text{s}$ tai $2\\text{p}$) ja mittausten määrä $N$. Jokainen piste on yhden paikanmittauksen tulos. Liukusäädin valitsee rajan kynnyksen $p$: raja piirretään niin, että sen sisällä elektroni havaitaan todennäköisyydellä $p$. Rajan sisään osuneet pisteet ovat sinisiä ja ulkopuolelle osuneet harmaita. Oikealla oleva histogrammi näyttää, kuinka monta osumaa on kullakin etäisyydellä ytimestä $0{,}02\\,\\text{nm}$:n väleissä; tummin pylväs on yleisin etäisyys ja katkoviiva mallin odotusarvo. *Uusi mittaussarja* arpoo uudet mittaustulokset. Kun $N$ kasvaa, aiempiin osumiin lisätään uusia.",
-      "model": "Malli on vetyatomi, jonka elektroni on $1\\text{s}$-, $2\\text{s}$- tai $2\\text{p}$-tilassa. Jokainen mittaus tehdään uudessa samassa tilassa olevassa atomissa, ja tulos arvotaan tilan todennäköisyysjakaumasta. Kuva on läpivalaisu: kolmiulotteiset mittaustulokset ja raja on piirretty yhteen tasoon, joten osa rajan kohdalle piirretyistä harmaista pisteistä on todellisuudessa rajan edessä tai takana. $2\\text{p}$-tilan lohkot ovat pystysuunnassa. Todellisessa kokeessa yksittäisen atomin elektronin paikkaa ei mitata näin suoraan; malli havainnollistaa todennäköisyystulkintaa.",
+      "model": "Malli on vetyatomi, jonka elektroni on $1\\text{s}$-, $2\\text{s}$- tai $2\\text{p}$-tilassa. Jokainen mittaus tehdään uudessa samassa tilassa olevassa atomissa, ja tulos arvotaan tilan todennäköisyysjakaumasta. Kuva on läpivalaisu: kolmiulotteiset mittaustulokset ja raja on piirretty yhteen tasoon, joten osa rajan kohdalle piirretyistä harmaista pisteistä on todellisuudessa rajan edessä tai takana. $2\\text{s}$-tilassa solmupallon ympärillä on rako, joka ei kuulu alueeseen, joten sen raja piirretään kolmena ympyränä. $2\\text{p}$-tilan lohkot ovat pystysuunnassa. Todellisessa kokeessa yksittäisen atomin elektronin paikkaa ei mitata näin suoraan; malli havainnollistaa todennäköisyystulkintaa.",
       "calc": "Osuus rajan sisällä on $k : N$, missä $k$ on sinisten pisteiden määrä. Raja on pinta, jolla todennäköisyystiheys on kaikkialla sama ja jonka sisään jää todennäköisyys $p$. Rajan suurin etäisyys $R$ mitataan ytimestä siihen suuntaan, johon alue ulottuu kauimmas; $2\\text{p}$-tilassa se on lohkon kärki. Yleisin etäisyys on histogrammin korkeimman pylvään keskikohta. Pituudet on laskettu Bohrin säteen $0{,}0529\\,\\text{nm}$ avulla."
     },
     {
@@ -344,7 +344,7 @@
         {
           "text": "Tila kuuluu kuoreen $n = 3$, ja sen energia on suurempi kuin minkään kuoren $n = 2$ tilan.",
           "correct": true,
-          "feedback": "Oikein. Solmuja on $n - 1$, joten $n = 3$. Mitä enemmän solmuja, sitä suurempi energia: $E_3 = -1{,}51\\,\\text{eV}$ on suurempi kuin $E_2 = -3{,}40\\,\\text{eV}$."
+          "feedback": "Oikein. Solmuja on $n - 1$, joten $n = 3$. Vetyatomissa mitä enemmän solmuja, sitä suurempi energia: $E_3 = -1{,}51\\,\\text{eV}$ on suurempi kuin $E_2 = -3{,}40\\,\\text{eV}$."
         },
         {
           "text": "Tila kuuluu kuoreen $n = 2$, koska solmujen määrä on sama kuin pääkvanttiluku.",
@@ -352,7 +352,7 @@
         },
         {
           "text": "Tilan energia on pienempi kuin $1\\text{s}$-tilan, koska solmut pienentävät aallon energiaa.",
-          "feedback": "Asia on päinvastoin: kuten kielessä, jokainen lisäsolmu nostaa värähtelytavan energiaa. $1\\text{s}$-tila, jossa ei ole solmuja, on vetyatomin alin tila."
+          "feedback": "Asia on päinvastoin: kielessä jokainen lisäsolmu nostaa värähtelyn taajuutta, ja vetyatomissa lisäsolmu nostaa tilan energiaa. $1\\text{s}$-tila, jossa ei ole solmuja, on vetyatomin alin tila."
         },
         {
           "text": "Elektroni havaitaan useimmin solmupinnoilla, koska aalto kulkee niiden kautta.",
@@ -384,7 +384,7 @@
           "feedback": "Tämä on vain kuoren $n = 2$ energian itseisarvo. Fotonin energia on alku- ja lopputilan energioiden erotus."
         }
       ],
-      "solution": "**Annettu:** alkutila $2\\text{p}$, joten $n = 2$; lopputila $1\\text{s}$, joten $n = 1$; vetyatomin energiatasot $E_n = -\\tfrac{13{,}6\\,\\text{eV}}{n^2}$\n\n**Kysytty:** fotonin energia $E$ elektronivoltteina\n\n**Periaate:** Energia säilyy: kun elektroni siirtyy alempaan tilaan, atomin energia pienenee tilojen energioiden erotuksen verran, ja sama energia lähtee fotonina. Vetyatomissa tilan energia riippuu vain pääkvanttiluvusta, joten kirjaimet p ja s eivät vaikuta.\n\n**Kaava:** $E = E_2 - E_1 = -\\dfrac{13{,}6\\,\\text{eV}}{2^2} + \\dfrac{13{,}6\\,\\text{eV}}{1^2}$\n\n**Muunnokset:** Ei tarvita, koska energiatasot ja kysytty energia ovat elektronivoltteina.\n\n**Sijoitus:** $E = -\\dfrac{13{,}6\\,\\text{eV}}{4} + 13{,}6\\,\\text{eV} = -3{,}40\\,\\text{eV} + 13{,}6\\,\\text{eV} = 10{,}2\\,\\text{eV}$\n\n**Vastaus:** $10{,}2\\,\\text{eV}$, kolme merkitsevää numeroa kuten energiassa $13{,}6\\,\\text{eV}$.\n\n**Järkevyys:** Energia on positiivinen ja pienempi kuin perustilan sidosenergia $13{,}6\\,\\text{eV}$, koska elektroni ei irtoa vaan siirtyy kuorelta toiselle. Fotonin energia on noin kolminkertainen näkyvän valon fotoneihin verrattuna, joten säteily on ultraviolettia, kuten vedyn spektrin lyhyimmät viivat.",
+      "solution": "**Annettu:** alkutila $2\\text{p}$, joten $n = 2$; lopputila $1\\text{s}$, joten $n = 1$; vetyatomin energiatasot $E_n = -\\tfrac{13{,}6\\,\\text{eV}}{n^2}$\n\n**Kysytty:** fotonin energia $E$ elektronivoltteina\n\n**Periaate:** Energia säilyy: kun elektroni siirtyy alempaan tilaan, atomin energia pienenee tilojen energioiden erotuksen verran, ja sama energia lähtee fotonina. Vetyatomissa tilan energia riippuu vain pääkvanttiluvusta, joten kirjaimet p ja s eivät vaikuta.\n\n**Kaava:** $E = E_2 - E_1 = -\\dfrac{13{,}6\\,\\text{eV}}{2^2} + \\dfrac{13{,}6\\,\\text{eV}}{1^2}$\n\n**Muunnokset:** Ei tarvita, koska energiatasot ja kysytty energia ovat elektronivoltteina.\n\n**Sijoitus:** $E = -\\dfrac{13{,}6\\,\\text{eV}}{4} + 13{,}6\\,\\text{eV} = -3{,}40\\,\\text{eV} + 13{,}6\\,\\text{eV} = 10{,}2\\,\\text{eV}$\n\n**Vastaus:** $10{,}2\\,\\text{eV}$, kolme merkitsevää numeroa kuten energiassa $13{,}6\\,\\text{eV}$.\n\n**Järkevyys:** Energia on positiivinen ja pienempi kuin perustilan sidosenergia $13{,}6\\,\\text{eV}$, koska elektroni ei irtoa vaan siirtyy kuorelta toiselle. Fotonin energia on noin $3$–$6$-kertainen näkyvän valon fotonien energioihin $1{,}6$–$3{,}3\\,\\text{eV}$ verrattuna, joten säteily on ultraviolettia, kuten vedyn spektrin lyhyimmät viivat.",
       "practice": "Kertaa *Esimerkki* ja tason 2 tehtävät."
     },
     {

@@ -6,7 +6,7 @@
 **Muunnokset:** Ei tarvita, koska kysytään lukumäärää.
 **Sijoitus:** $N_\text{max} = 2 \cdot 5^2 = 2 \cdot 25 = 50$
 **Vastaus:** $50$ elektronia; tulos on tarkka kokonaisluku, koska se on laskettu lukumääristä.
-**Järkevyys:** Kuorella $n = 5$ on viisi alikuorta, joissa on $1 + 3 + 5 + 7 + 9 = 25$ orbitaalia, ja kahdella elektronilla kutakin kohden saadaan sama $50$. Tulos jatkaa taulukon sarjaa $2, 8, 18, 32$.
+**Järkevyys:** Tulos jatkaa taulukon sarjaa $2, 8, 18, 32$: peräkkäisten kuorten erotukset $6$, $10$ ja $14$ kasvavat neljällä, joten seuraava erotus on $18$ ja $32 + 18 = 50$. Kuorelle $n = 5$ mahtuu siis enemmän elektroneja kuin kuorelle $n = 4$, kuten pitääkin.
 
 ## fy8-5-L1-02
 **Annettu:** mittauksia $N = 8000$, solmupallon sisäpuolelle osuneita $k = 421$

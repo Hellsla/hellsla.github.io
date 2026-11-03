@@ -1,9 +1,9 @@
 VERDICT: DONE
 
-Draft, round 1. `check_lesson.py fy8-5`: every line ok.
+Fix, round 1. `check_lesson.py fy8-5`: every line ok.
 
-- `lesson.md`: Ydinajatus (radasta aaltoon, seisovat aallot ja solmut, todennäköisyystulkinta $P \approx k/N$, orbitaali $90\,\%$:n alueena, Bohrin säde yleisimpänä etäisyytenä), Kaava: Kuoret, orbitaalit ja energiatasot ($E_n$ annettuna, $N_\text{max} = 2n^2$, taulukko, yhteys kemiaan), Esimerkki $3\text{d} \to 2\text{p}$ = $656\,\text{nm}$ seitsemässä vaiheessa, virhekäsitys, tiivistelmä. Ei de Broglieta eikä Schrödingeriä. Orbitaalien nimet LaTeXina ($1\text{s}$), koska lint lukee "1s" sekunniksi.
-- `figures.py`: hero, kielen seisovat aallot, 1s/2s/2p-solmut, pistekuvat $N = 1, 20, 1000$ ja $90\,\%$:n raja, energiatasokaavio orbitaalilaatikoineen.
-- `inquiry.json`: kaksi ennustetta, simulaatio, kaksi koetta, johtopäätös, Etsi virhe, siirto, kolme tarkistusta (+ valinnainen selitys), exit ticket.
-- Uusi simulaatio `assets/sims/fy8/fy8-5/sim.js`: siemennetyt paikanmittaukset (1s, 2s, 2p), kynnysraja, etäisyyshistogrammi; `tests/sims/fy8-5.json` (22 väitettä), tekstit `lang/fi.json` `sims.fy8-5`.
-- `exercises/` 5/4/3, `answers.py`, `lesson-answers.py`, `sim-spec.md`, `exit-ticket.json`; sanastoon kolme termiä.
+- `lesson.md`: Blocking: "more nodes, higher energy" is now stated for hydrogen (and for states of the same shape in other atoms), in Ydinajatus and Tiivistelmä; for the string, a node raises the frequency. Added why there are 1, 3, 5 and 7 orbitals (three p directions; the figures show one 2p) and what spin is. Split the two long paragraphs. Esimerkki: $1{,}98647$, $656{,}47\,\text{nm}$ in the chain, and a note on the intermediate digits.
+- `figures.py` (regenerated): string aria says "taajuus"; nodes aria says it shows one of three 2p orbitals; cloud aria explains the see-through view, plus a "läpivalaisu" label; levels note beside the 1s box; larger hero cloud and lobes.
+- `inquiry.json`: hook without 90 %; ennuste-1 asks how the share varies at 10 and 1000 measurements; ennuste-2 prompt without 0,053 nm; tarkistus-2 feedback (hydrogen, the string's frequency); tarkistus-3 "noin 3–6-kertainen"; sim model box mentions the 2s gap.
+- `sim.js`: draws the 2s gap and adds `simState.gap`; `tests/sims/fy8-5.json`: two assertions; `lang/fi.json`: readout formulas grouped so they do not wrap.
+- `lesson-answers.py`: keys renamed to tarkistus-3; new numbers added. `solutions.md` L1-01: no g subshell.

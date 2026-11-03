@@ -112,6 +112,18 @@
   "note": "2s: about 90 % of 5000 hits inside (statistical; seed 1 gives 89,0 %)"
  },
  {
+  "expr": "window.simState.gap[0]",
+  "expected": 0.096073,
+  "tol": 0.01,
+  "note": "2s: the region's inner ball ends at 0,096 nm, where the gap around the node sphere begins (lesson-answers gap-2s-in)"
+ },
+ {
+  "expr": "window.simState.gap[1]",
+  "expected": 0.117737,
+  "tol": 0.01,
+  "note": "2s: the outer shell of the region begins at 0,118 nm; hits in the gap are outside (lesson-answers gap-2s-out)"
+ },
+ {
   "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'o2p'); I(S[1],'5000'); I(R[0],90);",
   "expr": "window.simState.R",
   "expected": 0.482844,

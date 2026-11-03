@@ -33,7 +33,7 @@ def string_modes():
     f = Fig("fy85-string", 330, "Kaavakuva: molemmista päistä kiinnitetyn kielen kolme ensimmäistä seisovaa aaltoa. Ylimmässä kieli "
             "värähtelee yhtenä kupuna eikä sen keskellä ole solmua, keskimmäisessä on yksi solmu ja kaksi kupua, alimmassa kaksi "
             "solmua ja kolme kupua. Muita värähtelytapoja ei synny, koska kielen päät pysyvät paikallaan. Mitä enemmän "
-            "solmuja, sitä suurempi värähtelyn energia.")
+            "solmuja, sitä suurempi värähtelyn taajuus.")
     x0, x1 = 112, 452
     for row, (y, m) in enumerate(((86, 1), (186, 2), (286, 3))):
         f.rect(x0 - 16, y - 34, 12, 68, IRON, INK, 2, 2)
@@ -55,7 +55,8 @@ def orbital_nodes():
     f = Fig("fy85-nodes", 360, "Periaatekuva, ei mittakaavassa: vetyatomin kolmen orbitaalin poikkileikkaukset ytimen kautta. "
             "1s-orbitaali on pallo, jossa ei ole solmua. 2s-orbitaali on pallo, jonka sisällä on solmupallo: sen kohdalla "
             "elektronia ei havaita, ja sen sisä- ja ulkopuolella aalto värähtelee vastakkaisissa vaiheissa. 2p-orbitaalissa "
-            "on kaksi lohkoa, yksi ytimen kummallakin puolella, ja niiden välissä ytimen kautta kulkeva solmutaso. Ydin on punainen piste.")
+            "on kaksi lohkoa, yksi ytimen kummallakin puolella, ja niiden välissä ytimen kautta kulkeva solmutaso. Kuvassa on yksi "
+            "kolmesta 2p-orbitaalista, jonka lohkot ovat pystysuunnassa; kaksi muuta osoittavat kahteen muuhun suuntaan. Ydin on punainen piste.")
     f.defs_add(f'<radialGradient id="fy85-cloud"><stop offset="0" stop-color="{COLD}" stop-opacity="0.95"/><stop offset="1" stop-color="{COLD}" stop-opacity="0.12"/></radialGradient>')
     f.defs_add(f'<radialGradient id="fy85-ring" r="0.5"><stop offset="0.42" stop-color="{COLD}" stop-opacity="0"/><stop offset="0.5" stop-color="{COLD}" stop-opacity="0.12"/>'
                f'<stop offset="0.72" stop-color="{COLD}" stop-opacity="0.55"/><stop offset="1" stop-color="{COLD}" stop-opacity="0.08"/></radialGradient>')
@@ -93,7 +94,9 @@ def cloud_panels():
             "1000 kertaa, ja jokainen mittaustulos on merkitty pisteeksi. Yksi piste ei kerro jakaumasta mitään, 20 pistettä "
             "kasautuu ytimen ympärille, ja 1000 pisteestä muodostuu pilvi, joka on tihein ytimen lähellä ja harvenee "
             "ulospäin. Kolmanteen kuvaan on piirretty ympyrä, jonka sisällä on 90 prosenttia osumista: se on 1s-orbitaalin "
-            "raja, säde 0,14 nm. Rajan ulkopuolelle jääneet osumat ovat harmaita. Ydin on punainen piste.")
+            "raja, säde 0,14 nm. Rajan ulkopuolelle jääneet osumat ovat harmaita. Kuva on läpivalaisu: kolmiulotteiset osumat on "
+            "piirretty yhteen tasoon, joten osa harmaista pisteistä näkyy ympyrän sisällä, vaikka ne ovat rajan edessä tai takana. "
+            "Ydin on punainen piste.")
     rng = random.Random(85)
     sc = 22.0                      # px per a0
     R90 = 2.66116 * sc             # lesson-answers R1s-90 = 0,1408 nm
@@ -128,6 +131,7 @@ def cloud_panels():
     f.line(40, 347, 40, 361, INK, 2)
     f.line(40 + L, 347, 40 + L, 361, INK, 2)
     f.tex(40 + L + 10, 354, r"0{,}1\,\text{nm}", "start", w=90)
+    f.tex(588, 354, r"\text{läpivalaisu}", "end", MUTED, w=150)
     return f.svg()
 
 
@@ -165,7 +169,9 @@ def levels():
     wavy(f, xb + 30, yb + 28, 520, 230, HOT, waves=5, amp=7)
     f.tex(476, 188, "hf", "start", HOT, w=50)
     f.tex(520, 258, r"\lambda = 656\,\text{nm}", "middle", HOT, w=160)
-    f.tex(160, 300, r"\text{orbitaalissa enintään } 2\ e^-", "start", w=300)
+    x1s, y1s = boxes[(1, "s", 0)]
+    f.line(x1s + bw / 2 + 6, y1s, x1s + bw / 2 + 24, y1s, MUTED, 1.5)
+    f.tex(x1s + bw / 2 + 30, y1s, r"\text{orbitaalissa enintään } 2\ e^-", "start", w=300)
     return f.svg()
 
 
@@ -195,21 +201,21 @@ def hero():
     f.circle(478, 410, 13, HOT, INK, 2)
     f.circle(560, 384, 9, COLD, INK, 2)
     # right page: electron cloud and a p orbital
-    f.circle(686, 404, 66, "url(#fy85h-cloud)")
+    f.circle(682, 408, 78, "url(#fy85h-cloud)")
     rng = random.Random(7)
-    for _ in range(140):
+    for _ in range(170):
         x, z, r = sample_1s(rng)
         if r < 3.6:
-            f.circle(686 + x * 17, 404 - z * 17, 2.2, COLD)
-    f.circle(686, 404, 6, HOT, WHITE, 1.5)
+            f.circle(682 + x * 20, 408 - z * 20, 3, COLD)
+    f.circle(682, 408, 7, HOT, WHITE, 1.5)
     for sgn in (1, -1):
         pts = []
         for k in range(41):
             th = -1.2 + 2.4 * k / 40
-            rr = 46 * math.cos(th) ** 0.7
-            pts.append((790 + rr * math.sin(th), 412 - sgn * (4 + rr * math.cos(th))))
-        f.path(f"M790,{412 - sgn * 4} L" + " L".join(f"{n(a)},{n(b)}" for a, b in pts) + " Z", COLD_LIGHT, COLD, 2.5)
-    f.circle(790, 412, 5, HOT, WHITE, 1.5)
+            rr = 62 * math.cos(th) ** 0.7
+            pts.append((796 + rr * math.sin(th), 412 - sgn * (4 + rr * math.cos(th))))
+        f.path(f"M796,{412 - sgn * 4} L" + " L".join(f"{n(a)},{n(b)}" for a, b in pts) + " Z", COLD_LIGHT, COLD, 3)
+    f.circle(796, 412, 6, HOT, WHITE, 1.5)
     # lamp
     f.path("M1040,560 h120 v-16 q0,-12 -12,-12 h-96 q-12,0 -12,12 Z", IRON, INK, 3)
     f.path("M1100,532 L1060,250", stroke=INK, w=8, extra='stroke-linecap="round"')
