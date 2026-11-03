@@ -1,18 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 13e12af1756aa91b
+CONTENT-HASH: a69017819b563a29
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] L3-01 (charges on a line, three charges) and L2-04 (two balls, weight balance) — no sketch; a simple position line with q1, q3, q2 would help the vector-sum task. Optional.
-- [Minor] L2-04 solution Sijoitus — one chain joins mg, mg/k and q with "ja"; the page renders it in aligned rows and it reads, but a separate step per quantity would be easier on a phone.
-- [Minor] check-graph (Tarkista 2, fy6-10/check-graph) — the curve continues past the last point (9 cm) toward 10 cm as a faint kink; stop the curve at the last point or dash it.
+- [Minor] Solutions now use k = 8,988; the rows are longer (L1-02, L2-01, L3-01 Sijoitus). Only 1280 px captures exist for the exercise opens; re-check at 390 px that the aligned rows are not clipped as in the lesson example. If one is, break it at the fraction.
+- [Minor] L3-02 Vastaus "Tarkista selityksesi: suhde ei riipu..." — reads as an instruction to the student inside a model solution; state it plainly ("Suhde ei riipu etäisyydestä, koska...").
+- [Minor] Earlier polish items (no sketch for L3-01, long "ja" chain in L2-04) unchanged.
 
 ## Checked
-- open-exercises-1280-1, -3 (L1), L2-1280-4, L3-1280-1, -3; stage-exercises-390; stage-tarkista-390-1 and open-tarkista-1280-1 (check-graph at 390 and 1280).
-- Solutions: structure Annettu to Järkevyys consistent, units upright with thin space, `\cdot`, decimal comma, significant figures stated each time; Vastaus box set apart; ydintehtävät marked.
-- No plain numbers with units found in the source text.
+- Delta: k = 8,988 and rounding changes in answers and solutions (0,2876 N; 0,2022 mN; 36,94 nC; 4,045; 3,595 and so on), the L3-02 precision wording. Surrounding open-exercise captures at 1280 px (L1, L2-1280-4, L3-1280-1/3) from the earlier round still show the same layout; text edits are numeric only.
+- Hash at start and end: a69017819b563a29.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations 4 · typography 4 · Finnish 5 · accessibility 4
