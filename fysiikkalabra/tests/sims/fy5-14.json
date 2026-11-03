@@ -1,0 +1,225 @@
+[
+ {
+  "expr": "(() => { const S=window.simState; return S.tila==='lahde' && S.f0===400 && S.u===0 && S.v===340 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "on load: the source moves (case lähde), f0 = 400 Hz, u = 0, v = 340 m/s (must run before any setup)"
+ },
+ {
+  "expr": "window.simState.fA",
+  "expected": 400.0,
+  "tol": 0.01,
+  "note": "on load: at rest both listeners hear f0 = 400 Hz (lesson-answers sim-load-f)"
+ },
+ {
+  "expr": "window.simState.fB",
+  "expected": 400.0,
+  "tol": 0.01,
+  "note": "on load: f_B = 400 Hz"
+ },
+ {
+  "expr": "window.simState.lamA",
+  "expected": 0.85,
+  "tol": 0.01,
+  "note": "on load: λ = v/f0 = 340/400 m = 0,85 m on both sides"
+ },
+ {
+  "expr": "(() => { const R=document.querySelectorAll('#sim-root input[type=range]'); return R.length===2 && R[0].min==='200' && R[0].max==='800' && R[0].step==='10' && R[1].min==='0' && R[1].max==='150' && R[1].step==='2' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "two sliders: f0 200–800 Hz in steps of 10; u 0–150 m/s in steps of 2"
+ },
+ {
+  "expr": "(() => { const L=[...document.querySelectorAll('#sim-root select')].map(s=>[...s.options].map(o=>o.value).join(',')); return L.length===2 && L[0]==='lahde,kuulija' && L[1]==='0.5,1,2' && document.querySelectorAll('#sim-root input[type=checkbox]').length===0 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "two selects: the case (source moves, listeners move) and speed hidas/normaali/nopea"
+ },
+ {
+  "expr": "(() => { const k=[...document.getElementById('sim-root').children].map(e=>e.tagName==='CANVAS'?'canvas':e.className); return k.indexOf('canvas')<k.indexOf('controls') && k.indexOf('controls')<k.indexOf('readout') ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "DOM order canvas, controls, readout"
+ },
+ {
+  "expr": "(() => { const n=document.querySelectorAll('#sim-root p.note'); return !document.querySelector('#sim-root details') && n.length===1 && n[0].textContent.trim().split(/\\s+/).length<=15 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "no Lisätietoja box; one legend line of at most 15 words"
+ },
+ {
+  "expr": "(() => { const P=window.simAdapter && window.simAdapter.params; return P && Object.keys(P).sort().join(',')==='f0,tila,u' && P.f0.unit==='Hz' && P.u.unit==='m/s' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "adapter declares tila, f0 (Hz) and u (m/s)"
+ },
+ {
+  "expr": "(() => { const c=document.querySelector('#sim-root canvas'); const w=document.getElementById('sim-root').clientWidth; return c.width===600 && c.height===(w<500?600:400) ? 1 : 0; })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "canvas is 600x400 on a wide screen, 600x600 (stacked, larger labels) when #sim-root is under 500 px"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'lahde'); I(R[0],400); I(R[1],34);",
+  "expr": "window.simState.fA",
+  "expected": 444.444444,
+  "tol": 0.01,
+  "note": "koe 1: source moves at 34 m/s, f0 = 400 Hz: A hears 444.4 Hz (counted from wavefront arrivals)"
+ },
+ {
+  "expr": "window.simState.fB",
+  "expected": 363.636364,
+  "tol": 0.01,
+  "note": "koe 1: B hears 363.6 Hz"
+ },
+ {
+  "expr": "window.simState.lamA",
+  "expected": 0.765,
+  "tol": 0.01,
+  "note": "koe 1: wavelength towards A 0.765 m (shorter ahead of a moving source)"
+ },
+ {
+  "expr": "window.simState.lamB",
+  "expected": 0.935,
+  "tol": 0.01,
+  "note": "koe 1: wavelength towards B 0.935 m"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'lahde'); I(R[0],400); I(R[1],102);",
+  "expr": "window.simState.fA",
+  "expected": 571.428571,
+  "tol": 0.01,
+  "note": "koe 1 / prediction 2: source moves at 102 m/s, f0 = 400 Hz: A hears 571.4 Hz (counted from wavefront arrivals)"
+ },
+ {
+  "expr": "window.simState.fB",
+  "expected": 307.692308,
+  "tol": 0.01,
+  "note": "koe 1 / prediction 2: B hears 307.7 Hz"
+ },
+ {
+  "expr": "window.simState.lamA",
+  "expected": 0.595,
+  "tol": 0.01,
+  "note": "koe 1 / prediction 2: wavelength towards A 0.595 m (shorter ahead of a moving source)"
+ },
+ {
+  "expr": "window.simState.lamB",
+  "expected": 1.105,
+  "tol": 0.01,
+  "note": "koe 1 / prediction 2: wavelength towards B 1.105 m"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'lahde'); I(R[0],400); I(R[1],136);",
+  "expr": "window.simState.fA",
+  "expected": 666.666667,
+  "tol": 0.01,
+  "note": "koe 1: source moves at 136 m/s, f0 = 400 Hz: A hears 666.7 Hz (counted from wavefront arrivals)"
+ },
+ {
+  "expr": "window.simState.fB",
+  "expected": 285.714286,
+  "tol": 0.01,
+  "note": "koe 1: B hears 285.7 Hz"
+ },
+ {
+  "expr": "window.simState.lamA",
+  "expected": 0.51,
+  "tol": 0.01,
+  "note": "koe 1: wavelength towards A 0.510 m (shorter ahead of a moving source)"
+ },
+ {
+  "expr": "window.simState.lamB",
+  "expected": 1.19,
+  "tol": 0.01,
+  "note": "koe 1: wavelength towards B 1.190 m"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'kuulija'); I(R[0],400); I(R[1],34);",
+  "expr": "window.simState.fA",
+  "expected": 440.0,
+  "tol": 0.01,
+  "note": "koe 2: listeners move at 34 m/s, f0 = 400 Hz: A hears 440.0 Hz (counted from wavefront arrivals)"
+ },
+ {
+  "expr": "window.simState.fB",
+  "expected": 360.0,
+  "tol": 0.01,
+  "note": "koe 2: B hears 360.0 Hz"
+ },
+ {
+  "expr": "window.simState.lamA",
+  "expected": 0.85,
+  "tol": 0.01,
+  "note": "koe 2: wavelength towards A 0.850 m (unchanged when only the listeners move)"
+ },
+ {
+  "expr": "window.simState.lamB",
+  "expected": 0.85,
+  "tol": 0.01,
+  "note": "koe 2: wavelength towards B 0.850 m"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'kuulija'); I(R[0],400); I(R[1],102);",
+  "expr": "window.simState.fA",
+  "expected": 520.0,
+  "tol": 0.01,
+  "note": "koe 2 / prediction 2: listeners move at 102 m/s, f0 = 400 Hz: A hears 520.0 Hz (counted from wavefront arrivals)"
+ },
+ {
+  "expr": "window.simState.fB",
+  "expected": 280.0,
+  "tol": 0.01,
+  "note": "koe 2 / prediction 2: B hears 280.0 Hz"
+ },
+ {
+  "expr": "window.simState.lamA",
+  "expected": 0.85,
+  "tol": 0.01,
+  "note": "koe 2 / prediction 2: wavelength towards A 0.850 m (unchanged when only the listeners move)"
+ },
+ {
+  "expr": "window.simState.lamB",
+  "expected": 0.85,
+  "tol": 0.01,
+  "note": "koe 2 / prediction 2: wavelength towards B 0.850 m"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'lahde'); I(R[0],800); I(R[1],68);",
+  "expr": "window.simState.fA",
+  "expected": 1000.0,
+  "tol": 0.01,
+  "note": "high f0: source moves at 68 m/s, f0 = 800 Hz: A hears 1000.0 Hz (counted from wavefront arrivals)"
+ },
+ {
+  "expr": "window.simState.fB",
+  "expected": 666.666667,
+  "tol": 0.01,
+  "note": "high f0: B hears 666.7 Hz"
+ },
+ {
+  "expr": "window.simState.lamA",
+  "expected": 0.34,
+  "tol": 0.01,
+  "note": "high f0: wavelength towards A 0.340 m (shorter ahead of a moving source)"
+ },
+ {
+  "expr": "window.simState.lamB",
+  "expected": 0.51,
+  "tol": 0.01,
+  "note": "high f0: wavelength towards B 0.510 m"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'lahde'); I(R[0],400); I(R[1],34); I(S[1],'2');",
+  "expr": "window.simState.fA",
+  "expected": 444.444444,
+  "tol": 0.01,
+  "note": "speed nopea changes nothing but the pace"
+ },
+ {
+  "expr": "new Promise((r) => { const t0=window.simState.t; setTimeout(() => r(window.simState.t > t0 ? 1 : 0), 400); })",
+  "expected": 1,
+  "tol": 0,
+  "note": "the picture's slowed time runs"
+ }
+]

@@ -1,0 +1,390 @@
+{
+  "version": 1,
+  "contribution": "Sound loudness gets a quantity and a scale: the intensity $I = \\tfrac{P}{A}$ and the inverse-square law for a point source, the threshold of hearing $I_0$ and the sound intensity level in decibels through a logarithm, solving the intensity from a level, and the combined level of several sources as a sum of intensities.",
+  "learn": [
+    "calculate the intensity of a sound from its power and area, and from the distance to a point source.",
+    "calculate the sound intensity level in decibels and solve the intensity from a known level using a logarithm.",
+    "explain the meaning of the threshold of hearing and calculate the combined level of several sound sources."
+  ],
+  "prior": [
+    "Sound is a longitudinal wave travelling in air, and its amplitude tells how loud the sound is (chapter *Properties of sound*)",
+    "A wave carries energy from the source to its surroundings without the medium travelling along (chapter *Mechanical waves*)",
+    "Power is energy per unit time, $P = \\tfrac{\\Delta E}{\\Delta t}$, and its unit is the watt (chapter *Power*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "At an open-air concert in front of the stage the music can be felt in your chest, yet the same music is heard clearly from a hillside hundreds of metres away. The ear can tell apart both the quiet rustle of leaves and the roar of the concert, even though their intensities differ by a factor of about a billion. A sound level meter gives both on the same scale, in decibels.",
+      "question": "How does the loudness of a sound change when the listener moves farther away or when more sound sources are added, and why is loudness given in decibels?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Review: properties of sound",
+      "optional": true,
+      "prompt": "A guitar string sounds first quietly and then loudly at the same pitch. What changes in the sound?",
+      "choices": [
+        {
+          "text": "The amplitude of the sound wave, that is, the size of the pressure variation in the air, increases.",
+          "correct": true,
+          "feedback": "Correct. The same pitch means the same frequency, and a louder sound means a greater amplitude (chapter *Properties of sound*). Today loudness is measured by the power the wave carries per unit area."
+        },
+        {
+          "text": "The frequency of the sound increases, because a loud sound is higher.",
+          "feedback": "Frequency determines pitch, not loudness: the same note can sound quietly or loudly (chapter *Properties of sound*). A louder sound is a wave of the same frequency with a greater amplitude."
+        },
+        {
+          "text": "The sound travels faster in air, so it reaches the ear stronger.",
+          "feedback": "The speed of sound depends on the medium and its temperature, not on how loudly it is played. A quiet and a loud sound travel through air at the same speed."
+        },
+        {
+          "text": "The wavelength of the sound wave increases, because a loud sound reaches farther.",
+          "feedback": "The wavelength is $\\lambda = \\tfrac{v}{f}$, and when the pitch and the speed of sound stay the same, so does the wavelength. A louder sound is heard farther away because its amplitude and energy are greater."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: twice as far away",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 2
+      },
+      "prompt": "A sound level meter is $2.0\\,\\text{m}$ from a loudspeaker and reads $90\\,\\text{dB}$. The meter is moved to $4.0\\,\\text{m}$ from the same loudspeaker. The loudspeaker radiates evenly in all directions and the sound is not reflected from anywhere. What does the meter read now?",
+      "choices": [
+        {
+          "text": "About $45\\,\\text{dB}$, because at twice the distance the sound is half as strong.",
+          "feedback": "The model's values refute this: at $4.0\\,\\text{m}$ the level is $84.0\\,\\text{dB}$. The intensity does decrease, all the way to a quarter ($0.995 \\to 0.249\\,\\text{mW/m}^2$), but the decibel scale is logarithmic: a change in intensity by a factor shows in the level as only a few decibels."
+        },
+        {
+          "text": "About $22\\,\\text{dB}$, because the same power is spread over four times the area.",
+          "feedback": "The growth of the area is a correct observation, and in the model's values the intensity does fall to a quarter, $0.995 \\to 0.249\\,\\text{mW/m}^2$. The level, however, is not divided by four: it is $84.0\\,\\text{dB}$. In decibels a fourfold difference in intensity is only about $6\\,\\text{dB}$."
+        },
+        {
+          "text": "About $84\\,\\text{dB}$, because a fourfold difference in intensity shows in the level as only a few decibels.",
+          "correct": true,
+          "feedback": "The model's values support this: at $4.0\\,\\text{m}$ the level is $84.0\\,\\text{dB}$ and at $8.0\\,\\text{m}$ it is $77.9\\,\\text{dB}$. The intensity falls to a quarter every time, but the level decreases by only about $6\\,\\text{dB}$, because the scale is logarithmic."
+        },
+        {
+          "text": "Still $90\\,\\text{dB}$, because the power of the loudspeaker does not change.",
+          "feedback": "The model's values refute this: the level drops to $84.0\\,\\text{dB}$. The power of the loudspeaker stays the same, but farther away it is spread over a larger spherical surface, so less power reaches the surface of the meter."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: a second loudspeaker next to it",
+      "justify": true,
+      "reveal": {
+        "after": "koe-2",
+        "min": 2
+      },
+      "prompt": "One loudspeaker produces a level of $90\\,\\text{dB}$ at a distance of $2.0\\,\\text{m}$. A second, identical loudspeaker playing a different piece equally loudly is placed next to it. What does the meter read when both are playing?",
+      "choices": [
+        {
+          "text": "$180\\,\\text{dB}$, because two loudspeakers produce twice the sound.",
+          "feedback": "The model's values refute this: with two loudspeakers the level is $93.0\\,\\text{dB}$. It is the power, and therefore the intensity, that doubles, not the decibel reading. A level of $180\\,\\text{dB}$ would have an intensity a billion times that of a single loudspeaker at $90\\,\\text{dB}$ and thousands of times that of a jet aircraft at close range."
+        },
+        {
+          "text": "About $93\\,\\text{dB}$, because doubling the intensity raises the level by only a few decibels.",
+          "correct": true,
+          "feedback": "The model's values support this: with two loudspeakers the level is $93.0\\,\\text{dB}$, with four $96.0\\,\\text{dB}$ and with ten $100.0\\,\\text{dB}$. The intensity grows in the same proportion as the number of loudspeakers, and every doubling raises the level by about $3\\,\\text{dB}$."
+        },
+        {
+          "text": "Still $90\\,\\text{dB}$, because the loudspeakers are equally loud.",
+          "feedback": "The model's values refute this: the level rises to $93.0\\,\\text{dB}$. The powers of the two loudspeakers add up, so the meter receives twice the intensity, and this shows in the level as a small but clear rise."
+        },
+        {
+          "text": "About $100\\,\\text{dB}$, because every extra loudspeaker raises the level by ten decibels.",
+          "feedback": "The model's values refute this: with two loudspeakers the level is $93.0\\,\\text{dB}$. A level of $100.0\\,\\text{dB}$ is reached only with ten loudspeakers, because a rise of $10\\,\\text{dB}$ requires ten times the intensity."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Move the sound level meter and add loudspeakers. Observe how the intensity and the sound intensity level change.",
+      "howto": "Adjust the sound power $P$ of one loudspeaker, the number of loudspeakers and the distance $r$ of the meter from the loudspeakers. Above the meter is its reading, the sound intensity level $L$, and the readouts also show the total power, the area of the sphere $4\\pi r^2$ and the intensity $I$. The graph shows the level as a function of distance with the present loudspeakers, and the ring marks the position of the meter. The brightness of the arcs shows the level. *Speed* changes only the pace of the arcs' motion, not the readings.",
+      "model": "The loudspeakers are at the same place and radiate evenly in all directions like one point source. The sound is not reflected from the ground or from anywhere else, and the air does not absorb it, so the whole power passes through every spherical surface. The loudspeakers play independent sounds, so their powers add up. The readings are values calculated by the model, not measurements. The motion of the arcs is only an illustration, not the real speed of sound.",
+      "calc": "The total power is $P_\\text{tot} = N P$, where $N$ is the number of loudspeakers. The intensity at distance $r$ is\n\n$$I = \\frac{P_\\text{tot}}{4\\pi r^2}$$\n\nand the sound intensity level is $L = 10\\,\\text{dB} \\cdot \\lg \\tfrac{I}{I_0}$, where $I_0 = 1.0 \\cdot 10^{-12}\\,\\text{W/m}^2$. In the tables of the experiments the intensity is in $\\text{mW/m}^2$, where $1\\,\\text{mW/m}^2 = 10^{-3}\\,\\text{W/m}^2$. The vertical axis of the graph starts at the level $40\\,\\text{dB}$."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 1: only the distance changes",
+      "intro": "Test prediction 1. One loudspeaker plays at a power of $50\\,\\text{mW}$; change only the distance of the meter. Record the readings at least at distances $2.0\\,\\text{m}$ and $4.0\\,\\text{m}$, preferably also at $1.0\\,\\text{m}$ and $8.0\\,\\text{m}$. Compare: by what factor does the intensity change and by how many decibels does the level change when the distance doubles?",
+      "initial": {
+        "P": 50,
+        "N": "1",
+        "r": 2
+      },
+      "locked": [
+        "P",
+        "N"
+      ],
+      "vary": "r",
+      "names": {
+        "P": "power per loudspeaker",
+        "N": "loudspeakers",
+        "r": "distance"
+      },
+      "units": {
+        "P": "mW",
+        "r": "m"
+      },
+      "values": {
+        "N": {
+          "1": "one",
+          "2": "two",
+          "4": "four",
+          "10": "ten"
+        }
+      },
+      "measure": [
+        {
+          "key": "ImW",
+          "label": "I (mW/m²)"
+        },
+        {
+          "key": "L",
+          "label": "L (dB)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 2: only the number of loudspeakers changes",
+      "intro": "Test prediction 2. The meter is $2.0\\,\\text{m}$ away and the power of each loudspeaker is $50\\,\\text{mW}$; change only the number of loudspeakers. Record the readings at least with one and two loudspeakers, preferably also with four and ten. By how many decibels does the level rise when the number of loudspeakers doubles, and by how many when it increases tenfold?",
+      "initial": {
+        "P": 50,
+        "N": "1",
+        "r": 2
+      },
+      "locked": [
+        "P",
+        "r"
+      ],
+      "vary": "N",
+      "names": {
+        "P": "power per loudspeaker",
+        "N": "loudspeakers",
+        "r": "distance"
+      },
+      "units": {
+        "P": "mW",
+        "r": "m"
+      },
+      "values": {
+        "N": {
+          "1": "one",
+          "2": "two",
+          "4": "four",
+          "10": "ten"
+        }
+      },
+      "measure": [
+        {
+          "key": "ImW",
+          "label": "I (mW/m²)"
+        },
+        {
+          "key": "L",
+          "label": "L (dB)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion: intensity and decibels",
+      "after": [
+        "koe-1",
+        "koe-2"
+      ],
+      "prompt": "Based on your tables, write: by what factor did the intensity change and by how many decibels did the level change when the distance doubled? What about when the number of loudspeakers doubled or increased tenfold? Why does the level not change in the same proportion as the intensity?",
+      "model": "When the distance doubled, the intensity fell to a quarter, for example from $0.995\\,\\text{mW/m}^2$ to $0.249\\,\\text{mW/m}^2$, because the same power was spread over a spherical surface four times as large. Even so, the level decreased by only about $6\\,\\text{dB}$, from $90.0\\,\\text{dB}$ to $84.0\\,\\text{dB}$. With two loudspeakers the intensity doubled and the level rose by about $3\\,\\text{dB}$, to $93.0\\,\\text{dB}$; with ten loudspeakers the intensity increased tenfold and the level rose by $10\\,\\text{dB}$, to $100.0\\,\\text{dB}$. The decibel scale is logarithmic: the same ratio of intensities always changes the level by the same number of decibels. The values are calculated by the model: in the model the sound is not reflected or absorbed.",
+      "criteria": [
+        "I stated the ratios of the intensities: a quarter at twice the distance, and double and tenfold when adding loudspeakers.",
+        "I stated the changes in level in decibels: about $-6\\,\\text{dB}$, $+3\\,\\text{dB}$ and $+10\\,\\text{dB}$.",
+        "I explained that the same ratio of intensities always changes the level by the same number of decibels, because the scale is logarithmic.",
+        "I mentioned the assumption of the model that the sound is not reflected or absorbed."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Return to your predictions",
+      "optional": true,
+      "prompt": "Compare your predictions with the model's values in the experiments and with the equation $L = 10\\,\\text{dB} \\cdot \\lg \\tfrac{I}{I_0}$. Then return to the opening question: why is the sound of the concert still heard as far as the hillside, even though the intensity there is only a small fraction of the intensity in front of the stage?",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2"
+      ]
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the error",
+      "optional": true,
+      "prompt": "A student calculates the intensity of a sound when the level is $65\\,\\text{dB}$. She writes\n\n$$\\begin{aligned} &\\lg \\frac{I}{I_0} = \\frac{65\\,\\text{dB}}{10\\,\\text{dB}} = 6.5 \\\\ &\\frac{I}{I_0} = 6.5 \\\\ &I = 6.5 \\cdot 10^{-12}\\,\\text{W/m}^2 \\end{aligned}$$\n\nWhere is the error?",
+      "choices": [
+        {
+          "text": "The logarithm has not been undone: $\\lg x = 6.5$ means that $x = 10^{6.5}$, so $I = 10^{6.5} \\cdot I_0 \\approx 3.2 \\cdot 10^{-6}\\,\\text{W/m}^2$.",
+          "correct": true,
+          "feedback": "Correct. On the second line $\\lg$ has simply been dropped, although undoing a logarithm requires the power $10^x$. The result could have been seen to be wrong even without a calculation: $6.5 \\cdot 10^{-12}\\,\\text{W/m}^2$ is only about six times the threshold of hearing, and its level would be about $8\\,\\text{dB}$, not $65\\,\\text{dB}$."
+        },
+        {
+          "text": "Dividing by $10\\,\\text{dB}$ is wrong: the correct result is $\\lg \\tfrac{I}{I_0} = 650$.",
+          "feedback": "The division is correct: $L = 10\\,\\text{dB} \\cdot \\lg \\tfrac{I}{I_0}$, so $\\lg \\tfrac{I}{I_0} = \\tfrac{L}{10\\,\\text{dB}} = 6.5$. The error is on the next line, where the logarithm should be undone as the power $10^{6.5}$."
+        },
+        {
+          "text": "The threshold of hearing is wrong: it should be $0\\,\\text{W/m}^2$, because the level of the threshold of hearing is $0\\,\\text{dB}$.",
+          "feedback": "A level of $0\\,\\text{dB}$ means the intensity $I_0 = 1.0 \\cdot 10^{-12}\\,\\text{W/m}^2$, because $\\lg 1 = 0$. If $I_0$ were zero, the quotient $\\tfrac{I}{I_0}$ could not be calculated. The error is in undoing the logarithm."
+        },
+        {
+          "text": "There is no error in the calculation; $65\\,\\text{dB}$ is a quiet sound, so a small intensity is correct.",
+          "feedback": "$65\\,\\text{dB}$ is the level of a conversation or a slightly louder sound, and its intensity is $3.2 \\cdot 10^{-6}\\,\\text{W/m}^2$, about three million times the threshold of hearing. In the calculation the logarithm has not been undone as the power $10^{6.5}$."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply to a new situation",
+      "prompt": "In a banquet hall there are two identical loudspeakers playing independent sounds at the same power. A listener is $2.0\\,\\text{m}$ from one loudspeaker and $4.0\\,\\text{m}$ from the other. The nearer loudspeaker alone produces $80\\,\\text{dB}$ at the listener. By how many decibels is the combined level greater than the level of the nearer loudspeaker alone? Assume that each loudspeaker radiates evenly in all directions and the sound is not reflected. Answer in decibels.",
+      "answer": 0.97,
+      "unit": "dB",
+      "tolerance": 0.03,
+      "hints": [
+        "Which loudspeaker produces the greater intensity at the listener, and by what factor? The farther one is twice as far away.",
+        "Calculate the intensity of the nearer loudspeaker $I_1 = I_0 \\cdot 10^{\\,L_1/(10\\,\\text{dB})}$. The intensity of the farther one is $I_2 = \\tfrac{I_1}{4}$, because the intensity is inversely proportional to the square of the distance.",
+        "$L = 10\\,\\text{dB} \\cdot \\lg \\dfrac{I_1 + I_2}{I_0} = 10\\,\\text{dB} \\cdot \\lg \\dfrac{1.25\\, I_1}{I_0} = 80\\,\\text{dB} + 10\\,\\text{dB} \\cdot \\lg 1.25$."
+      ],
+      "mistakes": [
+        {
+          "value": 3.0,
+          "feedback": "You treated the loudspeakers as if each produced $80\\,\\text{dB}$ at the listener. The farther loudspeaker is twice as far away, so its intensity at the listener is only a quarter of the intensity of the nearer one."
+        },
+        {
+          "value": 1.76,
+          "feedback": "You halved the intensity of the farther loudspeaker. The intensity is inversely proportional to the *square* of the distance, because the power is spread over a spherical surface $4\\pi r^2$: twice the distance gives a quarter."
+        }
+      ],
+      "solution": "**Given:** nearer loudspeaker $r_1 = 2.0\\,\\text{m}$, level alone $L_1 = 80\\,\\text{dB}$; an identical loudspeaker at $r_2 = 4.0\\,\\text{m}$; $I_0 = 1.0 \\cdot 10^{-12}\\,\\text{W/m}^2$; even spreading, no reflections\n\n**Find:** the difference $L - L_1$ between the combined level and the level of the nearer loudspeaker, in decibels\n\n**Principle:** The loudspeakers play independent sounds, so the intensities add up. Each is a point source whose intensity is inversely proportional to the square of the distance, and the powers of the loudspeakers are equal.\n\n**Formula:** $I_1 = I_0 \\cdot 10^{\\,L_1/(10\\,\\text{dB})}$ and $I_2 = I_1 \\cdot \\dfrac{r_1^2}{r_2^2}$, so\n\n$$L - L_1 = 10\\,\\text{dB} \\cdot \\lg \\frac{I_1 + I_2}{I_1}$$\n\n**Conversions:** Not needed: the distances are in metres and cancel in the ratio $\\tfrac{r_1^2}{r_2^2}$.\n\n**Substitution:** $I_1 = 10^{-12}\\,\\text{W/m}^2 \\cdot 10^{8} = 1.0 \\cdot 10^{-4}\\,\\text{W/m}^2$ and $I_2 = 1.0 \\cdot 10^{-4}\\,\\text{W/m}^2 \\cdot \\dfrac{(2.0\\,\\text{m})^2}{(4.0\\,\\text{m})^2} = 2.5 \\cdot 10^{-5}\\,\\text{W/m}^2$, so $L - L_1 = 10\\,\\text{dB} \\cdot \\lg \\dfrac{1.25 \\cdot 10^{-4}\\,\\text{W/m}^2}{1.0 \\cdot 10^{-4}\\,\\text{W/m}^2} = 10\\,\\text{dB} \\cdot \\lg 1.25 = 0.969\\,\\text{dB}$\n\n**Answer:** $0.97\\,\\text{dB}$, to two significant figures like the distances; the combined level is about $81\\,\\text{dB}$.\n\n**Reasonableness:** The farther loudspeaker alone produces $80\\,\\text{dB} - 6.0\\,\\text{dB} = 74\\,\\text{dB}$. The increase must be less than $3\\,\\text{dB}$, which two equally strong sources would give, and clearly above zero: under $1\\,\\text{dB}$ fits, because the weaker source adds only a quarter to the intensity."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise at three levels. Level 1 tasks use one formula, level 2 tasks combine two steps, such as distance and level or two sources, and level 3 requires reasoning in a new situation."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Threshold of hearing",
+      "prompt": "In an anechoic room the meter shows a level of $0\\,\\text{dB}$. What does the reading tell you?",
+      "choices": [
+        {
+          "text": "There is no sound at all: the intensity is zero.",
+          "feedback": "A level of $0\\,\\text{dB}$ does not mean zero intensity. Because $\\lg 1 = 0$, the level is $0\\,\\text{dB}$ when $I = I_0 = 1.0 \\cdot 10^{-12}\\,\\text{W/m}^2$. For even weaker sounds the level is negative."
+        },
+        {
+          "text": "The intensity equals the threshold of hearing, about $1.0 \\cdot 10^{-12}\\,\\text{W/m}^2$, so the sound is only just audible.",
+          "correct": true,
+          "feedback": "Correct. The threshold of hearing $I_0$ is the reference value of the sound intensity level, and $\\tfrac{I}{I_0} = 1$ gives the level $0\\,\\text{dB}$. It is the weakest sound that a person with normal hearing can distinguish at a frequency of about $1000\\,\\text{Hz}$."
+        },
+        {
+          "text": "The sound is so weak that no meter can measure it any more precisely.",
+          "feedback": "The level $0\\,\\text{dB}$ is set according to the ear's threshold of hearing, not according to the limit of a meter. Sensitive microphones also measure sounds weaker than the threshold of hearing, sounds with a negative level."
+        },
+        {
+          "text": "The intensity is $1\\,\\text{W/m}^2$, because the decibel scale starts from one watt per square metre.",
+          "feedback": "$1\\,\\text{W/m}^2$ is approximately the threshold of pain, whose level is $120\\,\\text{dB}$. The zero point of the scale is the threshold of hearing $1.0 \\cdot 10^{-12}\\,\\text{W/m}^2$, a trillionth of that."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Difference in levels",
+      "prompt": "In a quiet office the level is $50\\,\\text{dB}$ and beside a busy street $70\\,\\text{dB}$. By what factor is the sound intensity beside the street greater than in the office? Answer as a plain number.",
+      "answer": 100,
+      "unit": "",
+      "tolerance": 0.02,
+      "hints": [
+        "The difference in levels depends only on the ratio of the intensities.",
+        "$L_2 - L_1 = 10\\,\\text{dB} \\cdot \\lg \\tfrac{I_2}{I_1}$, so $\\tfrac{I_2}{I_1} = 10^{\\,(L_2 - L_1)/(10\\,\\text{dB})}$.",
+        "$\\tfrac{I_2}{I_1} = 10^{\\,20\\,\\text{dB}/(10\\,\\text{dB})} = 10^2$."
+      ],
+      "mistakes": [
+        {
+          "value": 1.4,
+          "feedback": "You divided the decibel values, $70 : 50 = 1.4$. Decibel readings are not intensities but logarithms of their ratio to the threshold of hearing. Use the difference in levels, $20\\,\\text{dB}$."
+        },
+        {
+          "value": 20,
+          "feedback": "$20\\,\\text{dB}$ is the difference in levels, not the ratio of the intensities. Every $10\\,\\text{dB}$ means ten times the intensity, so $20\\,\\text{dB}$ means the factor $10 \\cdot 10$."
+        }
+      ],
+      "solution": "**Given:** level in the office $L_1 = 50\\,\\text{dB}$, level beside the street $L_2 = 70\\,\\text{dB}$\n\n**Find:** the ratio of the intensities $\\tfrac{I_2}{I_1}$ as a plain number\n\n**Principle:** The difference in levels of two sounds depends only on the ratio of their intensities, because the threshold of hearing $I_0$ cancels. The ratio is obtained by undoing the logarithm as a power.\n\n**Formula:** $L_2 - L_1 = 10\\,\\text{dB} \\cdot \\lg \\dfrac{I_2}{I_1}$, so $\\lg \\dfrac{I_2}{I_1} = \\dfrac{L_2 - L_1}{10\\,\\text{dB}}$ and\n\n$$\\frac{I_2}{I_1} = 10^{\\,(L_2 - L_1)/(10\\,\\text{dB})}$$\n\n**Conversions:** Not needed: the decibels cancel in the quotient.\n\n**Substitution:** $\\dfrac{I_2}{I_1} = 10^{\\,(70\\,\\text{dB} - 50\\,\\text{dB})/(10\\,\\text{dB})} = 10^{2} = 100$\n\n**Answer:** $100$; the difference in levels $20\\,\\text{dB}$ is a whole number, and the ratio is given accordingly.\n\n**Reasonableness:** The intensity in the office is $10^{-7}\\,\\text{W/m}^2$ and beside the street $10^{-5}\\,\\text{W/m}^2$, and their ratio is $100$. The sound of the street does not seem a hundred times as loud but about four times as loud, because the ear senses loudness roughly logarithmically."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Explain and apply",
+      "optional": true,
+      "prompt": "At an open-air concert you are $5\\,\\text{m}$ from a loudspeaker and the level is too loud. A friend says: “If we move twice as far away, the sound is only half of what it is now.” Evaluate the claim. Explain how the intensity and the sound intensity level change when the distance doubles, and why.",
+      "criteria": [
+        "I say that the same power is spread over a spherical surface $4\\pi r^2$ whose area quadruples when the distance doubles.",
+        "I conclude that the intensity falls to a quarter, not to a half.",
+        "I calculate that the level decreases by about $10\\,\\text{dB} \\cdot \\lg 4 \\approx 6\\,\\text{dB}$, so the decibel reading does not halve.",
+        "I mention the assumption that the sound is not reflected or absorbed."
+      ],
+      "model": "The claim does not hold. When the sound spreads evenly in all directions and is not reflected, the power of the loudspeaker is spread over a spherical surface whose area is $4\\pi r^2$. At twice the distance the area is four times as large, so the intensity falls to a quarter, not to a half. The decibel reading, however, neither halves nor falls to a quarter: the level decreases by $10\\,\\text{dB} \\cdot \\lg 4 \\approx 6\\,\\text{dB}$, for example from $100\\,\\text{dB}$ to about $94\\,\\text{dB}$. To the ear this is a clear but not a large drop in loudness. Note that \"half\" can also mean perceived loudness: a drop of about $10\\,\\text{dB}$ sounds roughly half as loud, even though the intensity then falls to a tenth. Intensity and perceived loudness are not the same thing, and neither interpretation fits exactly: the intensity falls to a quarter, and a drop of about $6\\,\\text{dB}$ sounds only about a third quieter, not half. In reality the ground and structures reflect sound, so the level often decreases even less."
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, two quick questions. Answer first yourself and open the answer only then."
+    }
+  ]
+}

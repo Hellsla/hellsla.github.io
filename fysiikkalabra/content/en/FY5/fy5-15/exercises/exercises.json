@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy5-15-L1-01",
+      "level": 1,
+      "text": "A lawn mower is running next to the wall of a house. The area of an open window opening is $1.5\\,\\text{m}^2$, and a sound power of $3.0\\,\\text{mW}$ passes through the opening into the room. What is the intensity of the sound at the window opening? Assume that the power is spread evenly over the whole opening. Give the answer in $\\text{W/m}^2$.",
+      "answer": 0.002,
+      "unit": "W/m²",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-15-L1-02",
+      "level": 1,
+      "text": "The intensity of the sound of a vacuum cleaner at the ear of the user is $3.2 \\cdot 10^{-5}\\,\\text{W/m}^2$. What is the sound intensity level? Give the answer in decibels.",
+      "answer": 75,
+      "unit": "dB",
+      "tolerance": 0.01
+    },
+    {
+      "id": "fy5-15-L1-03",
+      "level": 1,
+      "text": "As a motorcycle passes a pedestrian, a sound level meter reads $95\\,\\text{dB}$. What is the intensity of the sound at the meter? Give the answer in $\\text{W/m}^2$.",
+      "answer": 0.0032,
+      "unit": "W/m²",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-15-L1-04",
+      "level": 1,
+      "text": "The emergency siren of a rescue service produces a sound power of $2.0\\,\\text{W}$. What is the intensity of the sound at a distance of $25\\,\\text{m}$ from the siren when the sound spreads evenly in all directions and is not reflected? Give the answer in $\\text{W/m}^2$.",
+      "answer": 0.00025,
+      "unit": "W/m²",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy5-15-L1-05",
+      "level": 1,
+      "text": "The intensity of a sound increases a hundredfold. By how many decibels does the sound intensity level increase?",
+      "answer": 20,
+      "unit": "dB",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy5-15-L2-01",
+      "level": 2,
+      "text": "A portable loudspeaker produces a sound power of $0.050\\,\\text{W}$. What is the sound intensity level at a distance of $3.0\\,\\text{m}$ from the loudspeaker when the sound spreads evenly in all directions and is not reflected? Give the answer in decibels.",
+      "answer": 86,
+      "unit": "dB",
+      "tolerance": 0.01
+    },
+    {
+      "id": "fy5-15-L2-02",
+      "level": 2,
+      "text": "A lawn mower and a leaf blower are running in the yard at the same time. At the meter the lawn mower alone produces $85\\,\\text{dB}$ and the leaf blower alone $88\\,\\text{dB}$. By how many decibels is the combined level greater than the level of the leaf blower alone?",
+      "answer": 1.8,
+      "unit": "dB",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy5-15-L2-03",
+      "level": 2,
+      "text": "At $3.0\\,\\text{m}$ in front of a loudspeaker a meter reads $85\\,\\text{dB}$. What does the meter read at $12\\,\\text{m}$ from the same loudspeaker when the sound spreads evenly in all directions and is not reflected? Give the answer in decibels.",
+      "answer": 73,
+      "unit": "dB",
+      "tolerance": 0.01
+    },
+    {
+      "id": "fy5-15-L2-04",
+      "level": 2,
+      "text": "At a construction site one concrete saw produces $85\\,\\text{dB}$ at the meter. When more identical saws are brought to the site at the same distance from the meter, the level rises to $91\\,\\text{dB}$. How many saws are running at the same time now?",
+      "answer": 4,
+      "unit": "",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy5-15-L3-01",
+      "level": 3,
+      "text": "There are $12\\,000$ spectators in an ice hall. When one spectator shouts, the voice produces an average level of $42\\,\\text{dB}$ at the centre of the rink. At the same time the public address system of the hall is playing, and alone it produces a level of $80\\,\\text{dB}$ at the centre of the rink. What is the sound intensity level at the centre of the rink when all the spectators shout at once and the public address system is playing? Assume that every shout produces the same intensity at the centre of the rink and that all the sound sources are independent of each other. Give the answer in decibels.",
+      "answer": 85,
+      "unit": "dB",
+      "tolerance": 0.01
+    },
+    {
+      "id": "fy5-15-L3-02",
+      "level": 3,
+      "text": "The whine of a mosquito has a level of $30\\,\\text{dB}$ at a distance of $0.50\\,\\text{m}$ from the mosquito. From how far away could the whine in principle be heard, that is, at what distance does its level fall to the threshold of hearing? Assume that the mosquito is a point source, the sound spreads evenly in all directions without being reflected or absorbed, and it is completely quiet all around. Give the answer in metres.",
+      "answer": 16,
+      "unit": "m",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy5-15-L3-03",
+      "level": 3,
+      "text": "In the anechoic room of an acoustics laboratory the sound intensity level of a very quiet fan is measured as $-5\\,\\text{dB}$. A student says: “The measurement must be wrong, because a negative sound intensity level would mean a negative intensity.” Is she right? Explain what a negative sound intensity level means and whether the fan can be heard. Remember that the threshold of hearing $I_0$ is defined for a frequency of about $1000\\,\\text{Hz}$.",
+      "answer": "She is not: a negative level means that the intensity is positive but less than the threshold of hearing, $I = 10^{-0.5} I_0 \\approx 3.2 \\cdot 10^{-13}\\,\\text{W/m}^2$; the average listener cannot hear it, but the most sensitive listeners may hear it at the most sensitive frequencies.",
+      "unit": "",
+      "tolerance": 0.02
+    }
+  ]
+}

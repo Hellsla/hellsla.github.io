@@ -1,0 +1,10 @@
+[
+  {
+    "q": "A bat hunts moths and other insects about a centimetre in size. Why is the frequency of its calls tens of kilohertz and not, for example, $1\\,\\text{kHz}$?",
+    "a": "From an object much smaller than the wavelength only a very weak echo returns, because the wave bends around it. At the frequency $50\\,\\text{kHz}$ the wavelength in air is $\\tfrac{343\\,\\text{m/s}}{50\\,000\\,\\text{Hz}} \\approx 7\\,\\text{mm}$, which is of the order of the size of an insect, but at the frequency $1\\,\\text{kHz}$ it is about $34\\,\\text{cm}$, tens of times greater, so only a very weak echo would return from an insect."
+  },
+  {
+    "q": "Why can a tsunami that is only about a metre high in the ocean rise to many metres high at the coast?",
+    "a": "The speed of a tsunami is $v = \\sqrt{gh}$, so in the shallow water near the shore the wave slows down. The back of the wave catches up with the front, the wavelength shortens and the energy is concentrated in a smaller amount of water, so the height of the wave grows."
+  }
+]

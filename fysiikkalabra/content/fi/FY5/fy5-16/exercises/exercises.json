@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy5-16-L1-01",
+      "level": 1,
+      "text": "Rakennustyömaalla iskuporakoneen melutaso käyttäjän korvalla on $91\\,\\text{dB}$. Kuinka monta tuntia päivässä hän saa käyttää konetta ilman kuulonsuojaimia, kun vertailukohtana on ylempi toiminta-arvo, $8\\,\\text{h}$ tasolla $85\\,\\text{dB}$? Vastaa tunteina.",
+      "answer": 2.0,
+      "unit": "h",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-16-L1-02",
+      "level": 1,
+      "text": "Ilmanvaihtokoneessa on kaksi samanlaista puhallinta. Kun vain toinen on käynnissä, melutaso konehuoneen ovella on $70\\,\\text{dB}$. Mikä on taso samassa kohdassa, kun molemmat puhaltimet ovat käynnissä?",
+      "answer": 73,
+      "unit": "dB",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-16-L1-03",
+      "level": 1,
+      "text": "Pihajuhlan kaiuttimen taso on $4{,}0\\,\\text{m}$:n päässä $88\\,\\text{dB}$. Mikä on taso $8{,}0\\,\\text{m}$:n päässä? Pidä kaiutinta pistemäisenä lähteenä avoimessa tilassa, jossa heijastuksia ei ole.",
+      "answer": 82,
+      "unit": "dB",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-16-L1-04",
+      "level": 1,
+      "text": "Paineilmavasaran melutaso käyttäjän korvalla on $106\\,\\text{dB}$. Käyttäjällä on kupusuojaimet, joiden vaimennus on $23\\,\\text{dB}$. Mikä on korvaan pääsevä melutaso?",
+      "answer": 83,
+      "unit": "dB",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-16-L1-05",
+      "level": 1,
+      "text": "Mihin melun torjunnan kohtaan, lähteeseen, kulkutiehen vai korvaan, kukin keino kuuluu? a) moottoritien varren meluseinä, b) kompressorin sulkeminen ääntä vaimentavaan koteloon, c) korvatulpat, d) ääntä vaimentavat levyt tehdashallin katossa.",
+      "answer": "a) kulkutie, b) lähde, c) korva, d) kulkutie",
+      "unit": "",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy5-16-L2-01",
+      "level": 2,
+      "text": "Tehdashallissa on kaksi samanlaista konetta. Kumpikin tuottaa yksin käydessään työntekijän kohdalle tason $85\\,\\text{dB}$. Kuinka monta tuntia päivässä työntekijä saa olla hallissa ilman kuulonsuojaimia, kun molemmat koneet ovat käynnissä? Vertailukohtana on ylempi toiminta-arvo. Vastaa tunteina.",
+      "answer": 4.0,
+      "unit": "h",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-16-L2-02",
+      "level": 2,
+      "text": "Opiskelija kuuntelee musiikkia kuulokkeilla bussimatkoilla yhteensä $1{,}5\\,\\text{h}$ päivässä, ja taso hänen korvassaan on noin $94\\,\\text{dB}$. Kuinka monta prosenttia hänen päivittäinen annoksensa on siitä annoksesta, joka vastaa ylempää toiminta-arvoa ($8\\,\\text{h}$ tasolla $85\\,\\text{dB}$)?",
+      "answer": 150,
+      "unit": "%",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-16-L2-03",
+      "level": 2,
+      "text": "Ruohonleikkurin melutaso on $2{,}0\\,\\text{m}$:n päässä $78\\,\\text{dB}$. Naapuri toivoo, että taso hänen terassillaan olisi enintään $60\\,\\text{dB}$. Kuinka kaukana leikkurista terassin pitäisi olla? Pidä leikkuria pistemäisenä lähteenä avoimessa tilassa.",
+      "answer": 16,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-16-L2-04",
+      "level": 2,
+      "text": "Tyhjässä luokassa taputetaan kerran käsiä. Puhelimen äänitasosovellus näyttää, että taso laskee taputuksen jälkeen $92\\,\\text{dB}$:stä $62\\,\\text{dB}$:iin ajassa $0{,}45\\,\\text{s}$. Oleta, että taso laskee tasaisesti. Jälkikaiunta-aika on aika, jossa taso laskee $60\\,\\text{dB}$, mutta sen voi päätellä, vaikka tasoa ei ehditä mitata $60\\,\\text{dB}$:n pudotukseen asti. Mikä on luokan jälkikaiunta-aika?",
+      "answer": 0.9,
+      "unit": "s",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy5-16-L3-01",
+      "level": 3,
+      "text": "Varastotyöntekijä on työpäivästään $4{,}0\\,\\text{h}$ lastauslaiturilla, jossa melutaso on $88\\,\\text{dB}$, ja loput $4{,}0\\,\\text{h}$ pakkaamossa, jossa taso on $82\\,\\text{dB}$. Kuinka monta prosenttia hänen päivän annoksensa on ylempää toiminta-arvoa ($8\\,\\text{h}$ tasolla $85\\,\\text{dB}$) vastaavasta annoksesta?",
+      "answer": 125,
+      "unit": "%",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-16-L3-02",
+      "level": 3,
+      "text": "Kahden rivitalon pihoilla on kummallakin samanlainen ilmalämpöpumpun ulkoyksikkö, jonka taso on $3{,}0\\,\\text{m}$:n päässä $55\\,\\text{dB}$. Kolmannen talon makuuhuoneen ikkuna on $12\\,\\text{m}$:n päässä kummastakin yksiköstä. Mikä on taso ikkunan kohdalla, kun molemmat yksiköt käyvät? Pidä yksiköitä pistemäisinä lähteinä avoimessa tilassa.",
+      "answer": 46,
+      "unit": "dB",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-16-L3-03",
+      "level": 3,
+      "text": "Vastamelukuulokkeet vaimentavat lentokoneen moottorin matalan huminan, jonka taajuus on noin $100\\,\\text{Hz}$, hyvin. Matkustajien puhe, jonka taajuudet ovat noin $1000$–$3000\\,\\text{Hz}$, kuuluu läpi selvästi paremmin. Selitä ero aallonpituuksien ja vaiheen avulla, kun äänen nopeus ilmassa on $343\\,\\text{m/s}$.",
+      "answer": "Huminan aallonpituus on noin $3{,}4\\,\\text{m}$ ja jaksonaika $10\\,\\text{ms}$, joten vastamelu pysyy korvan kohdalla vastakkaisessa vaiheessa; puheen aallonpituus on vain noin $11$–$34\\,\\text{cm}$, ja pienikin ajoitus- tai paikkaero pilaa kumoutumisen.",
+      "unit": "",
+      "tolerance": 0.02
+    }
+  ]
+}
