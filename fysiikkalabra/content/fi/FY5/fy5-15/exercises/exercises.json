@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy5-15-L1-01",
+      "level": 1,
+      "text": "Ruohonleikkuri käy talon seinän vieressä. Avoimen ikkunan aukon pinta-ala on $1{,}5\\,\\text{m}^2$, ja aukon läpi kulkee huoneeseen ääniteho $3{,}0\\,\\text{mW}$. Kuinka suuri on äänen intensiteetti ikkuna-aukossa? Oletetaan, että teho jakautuu tasaisesti koko aukolle. Anna vastaus yksikössä $\\text{W/m}^2$.",
+      "answer": 0.002,
+      "unit": "W/m²",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-15-L1-02",
+      "level": 1,
+      "text": "Pölynimurin äänen intensiteetti on imurin käyttäjän korvan kohdalla $3{,}2 \\cdot 10^{-5}\\,\\text{W/m}^2$. Mikä on intensiteettitaso? Anna vastaus desibeleinä.",
+      "answer": 75,
+      "unit": "dB",
+      "tolerance": 0.01
+    },
+    {
+      "id": "fy5-15-L1-03",
+      "level": 1,
+      "text": "Moottoripyörän ohittaessa jalankulkijan desibelimittari näyttää $95\\,\\text{dB}$. Kuinka suuri on äänen intensiteetti mittarin kohdalla? Anna vastaus yksikössä $\\text{W/m}^2$.",
+      "answer": 0.0032,
+      "unit": "W/m²",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-15-L1-04",
+      "level": 1,
+      "text": "Pelastuslaitoksen hälytyssireeni tuottaa äänitehon $2{,}0\\,\\text{W}$. Kuinka suuri on äänen intensiteetti $25\\,\\text{m}$:n päässä sireenistä, kun ääni leviää tasaisesti joka suuntaan eikä heijastu? Anna vastaus yksikössä $\\text{W/m}^2$.",
+      "answer": 0.00025,
+      "unit": "W/m²",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy5-15-L1-05",
+      "level": 1,
+      "text": "Äänen intensiteetti kasvaa satakertaiseksi. Kuinka monta desibeliä intensiteettitaso kasvaa?",
+      "answer": 20,
+      "unit": "dB",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy5-15-L2-01",
+      "level": 2,
+      "text": "Kannettava kaiutin tuottaa äänitehon $0{,}050\\,\\text{W}$. Mikä on intensiteettitaso $3{,}0\\,\\text{m}$:n päässä kaiuttimesta, kun ääni leviää tasaisesti joka suuntaan eikä heijastu? Anna vastaus desibeleinä.",
+      "answer": 86,
+      "unit": "dB",
+      "tolerance": 0.01
+    },
+    {
+      "id": "fy5-15-L2-02",
+      "level": 2,
+      "text": "Pihalla käy samaan aikaan ruohonleikkuri ja lehtipuhallin. Mittarin kohdalla ruohonleikkuri tuottaa yksinään $85\\,\\text{dB}$ ja lehtipuhallin yksinään $88\\,\\text{dB}$. Kuinka monta desibeliä yhteistaso on suurempi kuin lehtipuhaltimen taso yksinään?",
+      "answer": 1.8,
+      "unit": "dB",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy5-15-L2-03",
+      "level": 2,
+      "text": "Kaiuttimen edessä $2{,}0\\,\\text{m}$:n päässä mittari näyttää $90\\,\\text{dB}$. Mitä mittari näyttää $8{,}0\\,\\text{m}$:n päässä samasta kaiuttimesta, kun ääni leviää tasaisesti joka suuntaan eikä heijastu? Anna vastaus desibeleinä.",
+      "answer": 78,
+      "unit": "dB",
+      "tolerance": 0.01
+    },
+    {
+      "id": "fy5-15-L2-04",
+      "level": 2,
+      "text": "Rakennustyömaalla yksi betonisaha tuottaa mittarin kohdalle $85\\,\\text{dB}$. Kun työmaalle tuodaan lisää samanlaisia sahoja samalle etäisyydelle mittarista, taso nousee $91\\,\\text{dB}$:iin. Kuinka monta sahaa käy nyt yhtä aikaa?",
+      "answer": 4,
+      "unit": "",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy5-15-L3-01",
+      "level": 3,
+      "text": "Jäähallissa on $12\\,000$ katsojaa. Kun yksi katsoja huutaa, hänen äänensä tuottaa kentän keskelle keskimäärin tason $42\\,\\text{dB}$. Mikä on intensiteettitaso kentän keskellä, kun kaikki huutavat yhtä aikaa? Oletetaan, että jokainen huuto tuottaa kentän keskelle saman intensiteetin ja että huudot ovat toisistaan riippumattomia. Anna vastaus desibeleinä.",
+      "answer": 83,
+      "unit": "dB",
+      "tolerance": 0.01
+    },
+    {
+      "id": "fy5-15-L3-02",
+      "level": 3,
+      "text": "Hyttysen ininä on $0{,}50\\,\\text{m}$:n päässä hyttysestä tasoltaan $30\\,\\text{dB}$. Kuinka kaukaa ininän voisi periaatteessa kuulla, eli millä etäisyydellä sen taso laskee kuulokynnykselle? Oletetaan, että hyttynen on pistemäinen lähde, ääni leviää tasaisesti joka suuntaan eikä heijastu tai vaimene ja ympärillä on täysin hiljaista. Anna vastaus metreinä.",
+      "answer": 16,
+      "unit": "m",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy5-15-L3-03",
+      "level": 3,
+      "text": "Akustiikkalaboratorion kaiuttomassa huoneessa mitataan hyvin hiljaisen tuulettimen intensiteettitasoksi $-5\\,\\text{dB}$. Opiskelija sanoo: ”Mittaus on varmasti väärä, koska negatiivinen intensiteettitaso tarkoittaisi negatiivista intensiteettiä.” Onko hän oikeassa? Selitä, mitä negatiivinen intensiteettitaso tarkoittaa, ja voiko tuulettimen kuulla.",
+      "answer": "Ei ole: negatiivinen taso tarkoittaa, että intensiteetti on positiivinen mutta kuulokynnystä pienempi, $I = 10^{-0{,}5} I_0 \\approx 3{,}2 \\cdot 10^{-13}\\,\\text{W/m}^2$; keskimääräinen kuulija ei kuule sitä, mutta herkimmät kuulijat voivat kuulla herkimmillä taajuuksilla.",
+      "unit": "",
+      "tolerance": 0.02
+    }
+  ]
+}
