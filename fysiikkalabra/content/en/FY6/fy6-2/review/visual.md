@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: a8b74c904901a12b
+CONTENT-HASH: 875a2259874cf175
 
 ## Blocking
 
@@ -7,4 +7,4 @@ CONTENT-HASH: a8b74c904901a12b
 
 
 ## Checked
-- Captures reviewed (contact sheets, figures at 390, sim at 390 and 1280, experiments, opened states, exit ticket): no overflow, labels fit, maths renders, no Finnish left in en figures, sim or headings after the fixes. Fixed in review: three chapter names left in Finnish in en text now use the English chapter titles; inquiry experiment table labels (selector, batteries, lamp, lit) and the sim note (shortened under 15 words so it is not folded into a duplicate box) translated.
+- Recaptured at 390 px (--if-stale): the error-bands figure (fig-5) shows the 20 V and 2 V bars to scale with labels ±0.03 V and ±0.010 V, no overflow, labels fit, no Finnish in the en figure; the worked example steps 6/7 and 7/7 render, maths and % signs fine.

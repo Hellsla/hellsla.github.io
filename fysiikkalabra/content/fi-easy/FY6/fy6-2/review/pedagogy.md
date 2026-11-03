@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 0a2ea34f3a38c6c4
+CONTENT-HASH: d41b82358c583a6a
 
 ## Blocking
 
@@ -7,4 +7,4 @@ CONTENT-HASH: 0a2ea34f3a38c6c4
 
 
 ## Checked
-- Same structure as Finnish: sections, 7 stages, figures, predictions, 3 experiments, 3 checks, exit ticket, 3 levels; nothing dropped. clear plain Finnish: mean sentence 8.3 words against 12.2 in the Finnish original, key terms (sarjassa, rinnalla, haaraton piiri, resoluutio, mittausalue) explained in place, not a copy. No change needed.
+- Delta re-review (internal energy wording; error limit rounded to one significant figure, two if the first digit is 1): structure unchanged, nothing dropped. The Δx notation note and the same-p-and-n condition are present and read naturally (plain Finnish, short sentences, 'sarjassa' and 'haaraton piiri' still explained). The rounding rule in the Result step is explained in full in a clear sentence.

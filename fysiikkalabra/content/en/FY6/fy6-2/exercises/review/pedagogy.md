@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 88abbed7ed168cb4
+CONTENT-HASH: be0f50f33880b161
 
 ## Blocking
 
@@ -7,4 +7,4 @@ CONTENT-HASH: 88abbed7ed168cb4
 
 
 ## Checked
-- Same exercise set (5/4/3), same tasks, hints and levels as Finnish; natural textbook English; goals read 'In this lesson, you will learn to' + verb. Solutions are as complete as the Finnish ones.
+- Same exercise set (5/4/3), tasks, hints and levels as the Finnish; the changed solution wordings ('one significant figure like the error limit', 'because the first figure is 1') are clear in natural English. Solutions as complete as the Finnish.

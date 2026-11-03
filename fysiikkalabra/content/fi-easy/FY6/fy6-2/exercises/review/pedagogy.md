@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: adb77072636b467d
+CONTENT-HASH: 136f0066b1d7fb38
 
 ## Blocking
 
@@ -7,4 +7,4 @@ CONTENT-HASH: adb77072636b467d
 
 
 ## Checked
-- Same exercise set (5/4/3), same tasks, hints and levels as Finnish; clear plain Finnish: mean sentence 8.3 words against 12.2 in the Finnish original, key terms (sarjassa, rinnalla, haaraton piiri, resoluutio, mittausalue) explained in place, not a copy. Solutions are as complete as the Finnish ones.
+- Same exercise set (5/4/3), tasks, hints and levels as the Finnish; the changed solution wordings ('one significant figure like the error limit', 'because the first figure is 1') are clear in plain Finnish. Solutions as complete as the Finnish.

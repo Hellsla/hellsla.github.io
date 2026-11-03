@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: a8b74c904901a12b
+CONTENT-HASH: 875a2259874cf175
 
 ## Blocking
 
 ## Polish
-- Finnish source wording of the example reasonableness line is reworded in translation; harmless.
+- Result step: the relative limits 2 % and 0.67 % are computed from the rounded limits (unrounded 1.8 % and 0.63 %); identical to the Finnish, which has the same open polish note.
 
 ## Checked
-- en vs Finnish: every number, unit and LaTeX formula in lesson.md, inquiry.json, exit-ticket.json and exercises identical (token comparison, 0 differences; en decimal point, fi-easy decimal comma). JSON keys, correct options, answers, units, tolerances equal. Worked example has 7 stages. Terms: error limit, resolution, measuring range, short circuit, fuse correct. Fixed in review: three chapter names left in Finnish in en text now use the English chapter titles; inquiry experiment table labels (selector, batteries, lamp, lit) and the sim note (shortened under 15 words so it is not folded into a duplicate box) translated.
+- Delta re-review (internal energy wording; error limit rounded to one significant figure, two if the first digit is 1): token comparison of en against the Finnish: every changed number identical (worked example ±0.03 V / ±0.010 V, 2 % and 0.67 %, error-bands figure incl. aria-label and figures.json keys, exit ticket 0.04 V, "Find the error" 0.05 V, check-2 6 mV, inquiry numbers); the internal-energy wording matches ('internal energy of the filament' / hehkulangan sisäenergia).
+- Physics terms and formulas unchanged; same-p-and-n condition in 'Miksi pienin sopiva alue' present and correct; the Δx note matches the Finnish.

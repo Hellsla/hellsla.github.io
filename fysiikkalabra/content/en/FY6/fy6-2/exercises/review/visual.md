@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 88abbed7ed168cb4
+CONTENT-HASH: be0f50f33880b161
 
 ## Blocking
 
@@ -7,4 +7,4 @@ CONTENT-HASH: 88abbed7ed168cb4
 
 
 ## Checked
-- Exercise level captures (L1-L3 opened, solutions) reviewed: layout intact, maths renders, no overflow, no stray Finnish.
+- Exercise captures recaptured (L1-L3 opened, solutions): layout intact, maths renders, no overflow, no stray Finnish.

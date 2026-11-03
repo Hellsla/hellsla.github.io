@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 0a2ea34f3a38c6c4
+CONTENT-HASH: d41b82358c583a6a
 
 ## Blocking
 
@@ -7,4 +7,4 @@ CONTENT-HASH: 0a2ea34f3a38c6c4
 
 
 ## Checked
-- Captures reviewed (contact sheets, figures at 390, sim at 390 and 1280, experiments, opened states, exit ticket): no overflow, labels fit, maths renders, no Finnish left in fi-easy figures, sim or headings after the fixes. No change needed.
+- Recaptured at 390 px (--if-stale): the error-bands figure (fig-5) shows the 20 V and 2 V bars to scale with labels ±0,03 V ja ±0,010 V, no overflow, labels fit, no Finnish in the fi-easy figure; the worked example steps 6/7 and 7/7 render, maths and % signs fine.
