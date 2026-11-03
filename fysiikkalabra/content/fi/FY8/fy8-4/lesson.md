@@ -1117,14 +1117,14 @@ Kaksoisrakokokeessa käytetään punaista laservaloa, jonka aallonpituus on $633
 
 <!-- vaihe -->
 
-**Tulos.** Rakoihin tulee noin $3{,}2 \cdot 10^5$ fotonia sekunnissa, ja peräkkäisten fotonien väli on keskimäärin noin $9{,}4 \cdot 10^2\,\text{m}$. Kaksi merkitsevää numeroa, koska teho $1{,}0 \cdot 10^{-13}\,\text{W}$ tunnetaan kahden numeron tarkkuudella. Laitteen pituus $1{,}2\,\text{m}$ on alle tuhannesosa fotonien välistä, joten laitteessa on yleensä enintään yksi fotoni kerrallaan.
+**Tulos.** Rakoihin tulee noin $3{,}2 \cdot 10^5$ fotonia sekunnissa, ja peräkkäisten fotonien väli on keskimäärin noin $9{,}4 \cdot 10^2\,\text{m}$. Kaksi merkitsevää numeroa, koska teho $1{,}0 \cdot 10^{-13}\,\text{W}$ tunnetaan kahden numeron tarkkuudella. Laitteen pituus $1{,}2\,\text{m}$ on vain noin tuhannesosa ($0{,}13\,\%$) fotonien välistä, joten laitteessa on yleensä enintään yksi fotoni kerrallaan.
 
 <!-- vaihe -->
 
 **Järkevyys.** Keskimäärin laitteessa on $1{,}2\,\text{m} : 940{,}8\,\text{m} \approx 0{,}0013$ fotonia, joten useimmiten siellä ei ole yhtään fotonia ja kaksi yhtä aikaa on harvinaista. Tavallinen $1\,\text{mW}$:n laserosoitin lähettää noin $3 \cdot 10^{15}$ fotonia sekunnissa, joten valoa on himmennetty noin $10^{10}$-kertaisesti, mikä onnistuu tummilla suodattimilla. Raitakuvio ei siis voi syntyä fotonien keskinäisestä vuorovaikutuksesta.
 
 ## Yleinen virhekäsitys
-Moni ajattelee, että kaksoisrakokokeen raitakuvio syntyy, kun fotonit tai elektronit törmäilevät toisiinsa, tai että jokainen kvantti kulkee pienen kuulan tavoin vain jommankumman raon kautta. Esimerkin heikossa valossa fotonit tulevat yksi kerrallaan, ja kuvio syntyy silti. Kuulamallissa toisen raon avaaminen lisäisi osumia kaikkialla, kun lähde lähettää yhtä monta kvanttia sekunnissa, mutta todellisuudessa tummiin raitoihin tulee osumia vähemmän kuin yhden raon kanssa.
+Moni ajattelee, että kaksoisrakokokeen raitakuvio syntyy, kun fotonit tai elektronit törmäilevät toisiinsa, tai että jokainen kvantti kulkee pienen kuulan tavoin vain jommankumman raon kautta. Esimerkin heikossa valossa fotonit tulevat yksi kerrallaan, ja kuvio syntyy silti. Kun osumia lasketaan yhtä monta yhteensä, kuulamallissa osumien osuus $n : N$ tietyssä kohdassa pysyisi samana kuin yhden raon kanssa, koska toinen rako vain lisäisi osumia (jos lähde lähettää yhtä monta kvanttia sekunnissa yhtä kauan). Todellisuudessa tummiin raitoihin osuu osuudeltaan selvästi vähemmän kuin yhden raon kanssa.
 
 Toinen virhe on ajatella, ettei fotonilla ole liikemäärää, koska sillä ei ole massaa. Comptonin ilmiössä fotoni luovuttaa elektronille sekä energiaa että liikemäärää, ja valo, joka heijastuu peilistä tai imeytyy pintaan, työntää sitä. Fotonin liikemäärä on $p = \tfrac{h}{\lambda}$.
 

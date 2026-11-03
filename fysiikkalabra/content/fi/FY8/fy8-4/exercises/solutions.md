@@ -36,7 +36,7 @@
 **Muunnokset:** Ei tarvita: suureet ovat SI-yksiköissä, ja $\text{kg}\cdot\tfrac{\text{m}}{\text{s}} \cdot \tfrac{\text{m}}{\text{s}} = \text{kg}\cdot\tfrac{\text{m}^2}{\text{s}^2} = \text{J}$.
 **Sijoitus:** $E = 2{,}00 \cdot 10^{-27}\,\text{kg}\cdot\text{m/s} \cdot 2{,}998 \cdot 10^8\,\text{m/s} = 5{,}996 \cdot 10^{-19}\,\text{J}$
 **Vastaus:** $6{,}00 \cdot 10^{-19}\,\text{J}$, kolme merkitsevää numeroa kuten liikemäärässä $2{,}00 \cdot 10^{-27}\,\text{kg}\cdot\text{m/s}$.
-**Järkevyys:** Elektronivoltteina energia on $\tfrac{5{,}996 \cdot 10^{-19}\,\text{J}}{1{,}602 \cdot 10^{-19}\,\text{J}} \cdot 1\,\text{eV} \approx 3{,}7\,\text{eV}$. Fotonin aallonpituus on $\lambda = \tfrac{h}{p} = \tfrac{6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}}{2{,}00 \cdot 10^{-27}\,\text{kg}\cdot\text{m/s}} \approx 331\,\text{nm}$, joten fotoni kuuluu lähi-ultraviolettiin, vähän näkyvän valon violetin pään ($400\,\text{nm}$) ulkopuolelle. Se on järkevä, koska liikemäärä on vähän suurempi kuin $500\,\text{nm}$:n fotonilla.
+**Järkevyys:** Elektronivoltteina energia on $\tfrac{5{,}996 \cdot 10^{-19}\,\text{J}}{1{,}602 \cdot 10^{-19}\,\text{J}} \cdot 1\,\text{eV} \approx 3{,}7\,\text{eV}$. Fotonin aallonpituus on $\lambda = \tfrac{h}{p} = \tfrac{6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}}{2{,}00 \cdot 10^{-27}\,\text{kg}\cdot\text{m/s}} \approx 331\,\text{nm}$, joten fotoni kuuluu lähi-ultraviolettiin, vähän näkyvän valon violetin pään ($400\,\text{nm}$) ulkopuolelle. Se on järkevä, koska liikemäärä on noin puolitoistakertainen $500\,\text{nm}$:n fotonin liikemäärään verrattuna.
 
 ## fy8-4-L1-05
 **Annettu:** laserin teho $P = 1{,}0\,\text{mW}$, yhden fotonin energia $hf = 3{,}14 \cdot 10^{-19}\,\text{J}$

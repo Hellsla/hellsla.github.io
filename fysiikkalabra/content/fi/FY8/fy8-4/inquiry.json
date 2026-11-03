@@ -50,7 +50,7 @@
       "stage": "ennusta",
       "type": "choice",
       "title": "Ennuste 1: toinen rako auki",
-      "prompt": "Kaksoisrakokokeessa fotonit lähetetään yksi kerrallaan. Varjostimelta lasketaan osumat kapealla välillä kohdassa $x_0 = 1{,}0\\,\\text{mm}$. Kahdesta raosta tulevien aaltojen matkaero on tässä kohdassa puolikas aallonpituus, joten aaltomallin mukaan kohta on tumma raita. Ensin vain vasen rako on auki. Sitten myös oikea rako avataan, ja fotoneja lähetetään yhtä monta. Mitä laskentavälin osumien osuudelle tapahtuu? Mieti, mitä kuulamalli ja mitä aaltomalli ennustaa.",
+      "prompt": "Kaksoisrakokokeessa fotonit lähetetään yksi kerrallaan. Varjostimelta lasketaan osumat kapealla välillä kohdassa $x_0 = 1{,}0\\,\\text{mm}$. Kahdesta raosta tulevien aaltojen matkaero on tässä kohdassa puolikas aallonpituus. Ensin vain vasen rako on auki. Sitten myös oikea rako avataan, ja fotoneja lähetetään yhtä monta. Mitä laskentavälin osumien osuudelle $n : N$ tapahtuu, kun osumia on yhteensä yhtä monta? Mieti, mitä kuulamalli ja mitä aaltomalli ennustaa.",
       "justify": true,
       "reveal": {
         "after": "koe-1",
