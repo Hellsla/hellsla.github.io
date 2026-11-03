@@ -1,0 +1,105 @@
+{
+  "level1": [
+    {
+      "id": "fy6-6-L1-01",
+      "level": 1,
+      "text": "USB-laturi antaa puhelimelle jännitteen $5{,}0\\,\\text{V}$ ja virran $2{,}4\\,\\text{A}$. Kuinka suuri on latausteho?",
+      "answer": 12.0,
+      "unit": "W",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-6-L1-02",
+      "level": 1,
+      "text": "Vastuksen resistanssi on $47\\,\\Omega$, ja sen läpi kulkee virta $0{,}20\\,\\text{A}$. Kuinka suuri teho vastuksessa muuttuu sisäenergiaksi?",
+      "answer": 1.88,
+      "unit": "W",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-6-L1-03",
+      "level": 1,
+      "text": "Vedenkeittimen lämmitysvastuksen resistanssi on $26{,}5\\,\\Omega$, ja keitin on kytketty $230\\,\\text{V}$:n verkkojännitteeseen. Kuinka suuri on keittimen teho? Vastaa kilowatteina.",
+      "answer": 1.996,
+      "unit": "kW",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-6-L1-04",
+      "level": 1,
+      "text": "Led-lamppu, jonka teho on $9{,}0\\,\\text{W}$, palaa $2{,}0\\,\\text{h}$. Kuinka paljon sähköenergiaa lampussa muuttuu valoksi ja sisäenergiaksi tänä aikana? Vastaa kilojouleina.",
+      "answer": 64.8,
+      "unit": "kJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-6-L1-05",
+      "level": 1,
+      "text": "Kuvaajassa on vastuksen mitattu teho virran funktiona. Kuinka suuri on vastuksen resistanssi? Lue tarvittavat arvot kuvaajasta.",
+      "figure": "fy6-6/ex-pi",
+      "answer": 5.0,
+      "unit": "Ω",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy6-6-L2-01",
+      "level": 2,
+      "text": "Hiustenkuivaajan teho on $1{,}8\\,\\text{kW}$, kun se on kytketty $230\\,\\text{V}$:n verkkojännitteeseen. Kuinka suuri virta kulkee kuivaajan läpi?",
+      "answer": 7.83,
+      "unit": "A",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-6-L2-02",
+      "level": 2,
+      "text": "Vastukset $R_1 = 10\\,\\Omega$ ja $R_2 = 20\\,\\Omega$ on kytketty sarjaan $12\\,\\text{V}$:n jännitelähteeseen. Lähteen ja johtimien resistanssit jätetään huomiotta. Kuinka suuri on vastuksen $R_2$ teho?",
+      "answer": 3.2,
+      "unit": "W",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-6-L2-03",
+      "level": 2,
+      "text": "Vastuksen resistanssi on $1{,}0\\,\\text{k}\\Omega$, ja valmistaja ilmoittaa sen suurimmaksi sallituksi tehoksi $0{,}25\\,\\text{W}$. Kuinka suuri jännite vastuksen yli saa enintään olla?",
+      "answer": 15.8,
+      "unit": "V",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-6-L2-04",
+      "level": 2,
+      "text": "Uppokuumentimen teho on $200\\,\\text{W}$. Se lämmittää $0{,}80\\,\\text{kg}$ vettä $5{,}0\\,\\text{min}$:n ajan. Oleta, että koko sähköenergia lämmittää vettä. Veden ominaislämpökapasiteetti on $4190\\,\\tfrac{\\text{J}}{\\text{kg} \\cdot \\text{K}}$. Kuinka paljon veden lämpötila nousee?",
+      "answer": 17.9,
+      "unit": "K",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy6-6-L3-01",
+      "level": 3,
+      "text": "Hehkulamput, joihin on merkitty $230\\,\\text{V}$, $40\\,\\text{W}$ ja $230\\,\\text{V}$, $100\\,\\text{W}$, kytketään sarjaan $230\\,\\text{V}$:n verkkojännitteeseen. Oleta, että lamppujen resistanssit pysyvät samoina kuin nimellisjännitteellä. Kuinka suuri on $40\\,\\text{W}$:n lampun teho tässä kytkennässä?",
+      "answer": 20.4,
+      "unit": "W",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy6-6-L3-02",
+      "level": 3,
+      "text": "Joulukuusen valosarjassa on $20$ samanlaista lamppua sarjassa, ja sarja on kytketty $230\\,\\text{V}$:n verkkojännitteeseen. Koko valosarjan teho on $9{,}2\\,\\text{W}$. Kuinka suuri on yhden lampun resistanssi, kun sarja palaa?",
+      "answer": 287.5,
+      "unit": "Ω",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-6-L3-03",
+      "level": 3,
+      "text": "Kaksi vastusta on kytketty rinnan $12\\,\\text{V}$:n jännitelähteeseen. Lähteen ja johtimien resistanssit jätetään huomiotta. Toisen vastuksen resistanssi on $6{,}0\\,\\Omega$, ja vastusten yhteenlaskettu teho on $36\\,\\text{W}$. Kuinka suuri on toisen vastuksen resistanssi?",
+      "answer": 12.0,
+      "unit": "Ω",
+      "tolerance": 0.02
+    }
+  ]
+}
