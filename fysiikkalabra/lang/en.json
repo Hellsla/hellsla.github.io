@@ -1782,6 +1782,7 @@
     "also": "Also accepted",
     "practise_more": "Practise more:",
     "practise_link": "{{competency}}, chapter {{chapter}}",
+    "skills": "Skills from the chapters:",
     "course_lead": "At the end of the module you can try whether you can apply what you have learned independently, in the style of the matriculation examination. The model answers and marking guides open after your own solution.",
     "course_count": "{{tasks}} · {{points}}",
     "kind_own": "own work",

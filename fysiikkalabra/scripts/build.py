@@ -541,9 +541,13 @@ def build_units(lang, out, unit_pub):
                 f"<li>{nbsp_units(q['q'])}<details class=\"answer\"><summary>{T('lesson.answer')}</summary><div class=\"answer-body\">{nbsp_units(render_md(q['a']))}</div></details></li>"
                 for q in exit_q) + "</ol></div>")
         md = lambda t: nbsp_units(render_md(t))
-        body, toc = inquiry.render(f, inq, {"intro": intro, "sections": sections, "sim": sim, "exercises": "", "exit": exit_html}, md)
-        for key in ("check_practice", "further_practice"):   # a unit has no exercises section: point to the theory summary only
-            body = body.replace(T(f"inquiry.{key}"), re.sub(r'(,| and)[^<]*<a href="#exercises">[^<]*</a>', "", T(f"inquiry.{key}")))
+        tasks_html = ""                                  # the unit's own task set (FY12): its Tehtävät, last on the page
+        if units.has_tasks(uid, lang):
+            tasks_html, _ = practice.render(units.task_key(uid), lang, md, solution_html, T("practice.title"), embedded=True)
+        body, toc = inquiry.render(f, inq, {"intro": intro, "sections": sections, "sim": sim, "exercises": tasks_html, "exit": exit_html}, md)
+        if not tasks_html:
+            for key in ("check_practice", "further_practice"):   # a unit without tasks has no exercises section: point to the theory summary only
+                body = body.replace(T(f"inquiry.{key}"), re.sub(r'(,| and)[^<]*<a href="#exercises">[^<]*</a>', "", T(f"inquiry.{key}")))
         tail = units.tail_html(uid, lang, T, md, teacher=bool(only or build_all))   # sources and teacher notes: previews only
         if "id=\"sources\"" in tail: toc += f'<a href="#sources" class="toc-end"><span class="toc-label">{T("units.sources")}</span></a>'
         cdir = ROOT / "assets" / "units" / code.lower()
@@ -562,7 +566,8 @@ def build_units(lang, out, unit_pub):
         html = (texts(tpl).replace("{{title}}", esc(d["title"])).replace("{{course}}", code).replace("{{notice}}", notice_html)
                 .replace("{{strings}}", block + head).replace("{{back_to_course}}", esc(T("site.back_to_course", course=code)))
                 .replace("{{toc}}", toc).replace("{{main}}", f'<article id="teoria" class="inquiry unit unit-{d["kind"]}" data-course="{code.lower()}">{body}{tail}</article>' + units.course_nav(uid, lang, T, published) + embedded)
-                .replace("{{scripts}}", f'<script src="inquiry.js"></script><script src="units/{code.lower()}/units.js"></script>')
+                .replace("{{scripts}}", f'<script src="inquiry.js"></script>' + ('<script src="selfassess.js"></script>' if tasks_html else "")
+                         + (f'<script src="units/{code.lower()}/units.js"></script>' if cdir.is_dir() else ""))
                 .replace("{{description}}", esc(d["description"])).replace("{{url}}", URL + f"{uid}.html")
                 .replace("{{home}}", HOME).replace("{{languages}}", ""))
         (out / f"{uid}.html").write_text(rebase(html))

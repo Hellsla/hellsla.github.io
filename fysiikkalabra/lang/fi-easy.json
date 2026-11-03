@@ -1782,6 +1782,7 @@
     "also": "Hyväksytään myös",
     "practise_more": "Harjoittele lisää:",
     "practise_link": "{{competency}}, luku {{chapter}}",
+    "skills": "Taidot luvuista:",
     "course_lead": "Moduulin lopuksi voit kokeilla, osaatko käyttää oppimaasi itse niin kuin ylioppilaskokeessa. Mallivastaukset ja pisteytysohjeet aukeavat, kun olet ratkaissut tehtävän itse.",
     "course_count": "{{tasks}} · {{points}}",
     "kind_own": "oma työ",

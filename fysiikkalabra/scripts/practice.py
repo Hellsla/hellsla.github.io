@@ -25,6 +25,13 @@ criteria. The same rubric component (rubric_html, templates/selfassess.js) score
 chapter-level "Arvioi osaamistasi" of 2026-10-28 was removed by the teacher the same day: guided self-assessment of
 written answers lives in the explain tasks, scripts/inquiry.py).
 Nothing here needs a model at runtime: links for a weak competency come from the task's `links`.
+
+A course unit (scripts/units.py) can carry a task set of its own in the same format: its key is "units/<unit id>", so
+content/<lang>/units/<id>/sovella/ holds tasks.json and solutions.md and lessons/units/<id>/sovella/ answers.py and
+figures.py (FY12, the exam review course, teacher 2026-11-04). Its task ids are <unit id>-s<n>, the files are part of
+the unit's content hash and reviews (no page of their own), and the unit page shows the tasks last, as its Tehtävät
+(render(..., embedded=True)). Any task may name `skills`: the chapters of FY1–FY8 whose skills it uses, by lesson id,
+shown as chapter-name links (never an id, teacher's rule 6).
 """
 import hashlib, importlib.util, json, re, subprocess, sys, pathlib, html as _h
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
@@ -32,6 +39,7 @@ import courses, i18n
 
 ROOT = courses.ROOT
 DIR = "sovella"
+UNIT_PREFIX = "units/"                  # the task set of a course unit: "units/<unit id>"
 TEXTS = ("tasks.json", "solutions.md")
 CODE = ("answers.py", "figures.py")
 KINDS = ("calc", "word", "graph", "own")
@@ -48,12 +56,20 @@ def esc(s): return _h.escape(str(s), quote=True)
 def folder(code, lang=i18n.SOURCE): return ROOT / "content" / lang / code / DIR
 def code_folder(code): return ROOT / "lessons" / code / DIR
 def page_name(code): return f"{code}-sovella.html"
+def is_unit(code): return code.startswith(UNIT_PREFIX)
+def set_slug(code): return code[len(UNIT_PREFIX):] if is_unit(code) else courses.slug(code)
 def framework(): return json.loads((ROOT / "competencies.json").read_text())
 
 
 def courses_with(lang=i18n.SOURCE):
     """The courses that have module-end tasks in this language."""
     return [c for c in courses.codes() if (folder(c, lang) / "tasks.json").is_file()]
+
+
+def unit_sets(lang=i18n.SOURCE):
+    """The keys ("units/<id>") of the course units that have a task set in this language."""
+    base = ROOT / "content" / lang / "units"
+    return sorted(UNIT_PREFIX + d.parent.parent.name for d in base.glob(f"*/{DIR}/tasks.json")) if base.is_dir() else []
 
 
 def answer_list(part):
@@ -129,7 +145,7 @@ def figures(code, lang=i18n.SOURCE, write=True):
     if lang != i18n.SOURCE:
         tr = folder(code, lang) / "figures.json"
         figlib.set_language(json.loads(tr.read_text()) if tr.is_file() else {}, i18n.T(lang)("format.decimal"))
-    spec = importlib.util.spec_from_file_location(f"figures_{code}", f); mod = importlib.util.module_from_spec(spec); spec.loader.exec_module(mod)
+    spec = importlib.util.spec_from_file_location(f"figures_{code.replace('/', '_')}", f); mod = importlib.util.module_from_spec(spec); spec.loader.exec_module(mod)
     sol = folder(code, lang) / "solutions.md"; text = sol.read_text(); new = text
     for name, fn in mod.FIGURES.items():
         pat = re.compile(r'<svg\b[^>]*\bdata-fig="' + re.escape(name) + r'"[^>]*>.*?</svg>', re.S)
@@ -151,7 +167,7 @@ def check(code, lang=i18n.SOURCE, seen=None):
     except (OSError, ValueError) as e: return [f"{where}/tasks.json: {e}"]
     sol_file = folder(code, lang) / "solutions.md"
     sols = solution_blocks(sol_file.read_text() if sol_file.is_file() else "")
-    slug = courses.slug(code)
+    slug = set_slug(code)
     for key in list(shared) + [f"_{t}" for t in tags]:     # the shared texts every language must have
         k = f"competency.{key[1:]}" if key.startswith("_") else f"criteria.{key}"
         try: i18n.lookup(i18n.strings(lang), k)
@@ -215,6 +231,12 @@ def check(code, lang=i18n.SOURCE, seen=None):
             elif "Yleisiä virheitä" not in sols[tid]["extra"]: W("no `### Yleisiä virheitä` in its solution")
             for head in sols.get(tid, {}).get("extra", {}):
                 if head not in EXTRA: W(f"unknown solution section `### {head}` (parts are `### a)`, then {', '.join(EXTRA)})")
+        skills = task.get("skills", [])
+        if not isinstance(skills, list) or not all(isinstance(x, str) for x in skills): W("skills: a list of lesson ids (the chapters whose skills the task uses)")
+        else:
+            for lid in skills:
+                if not any(l["id"] == lid for c in courses.codes() for l in courses.course(c).get("lessons", [])): W(f"skills: {lid!r} is not a lesson of curriculum.json")
+                elif not (ROOT / "content" / i18n.SOURCE / courses.course_of(lid) / lid / "meta.json").is_file(): W(f"skills: lesson {lid} has no folder yet")
         links = task.get("links") or {}
         for tag in used - set(links):
             if tag in tags: W(f"no link for the competency {tag!r}: links names the chapter to practise it in")
@@ -319,14 +341,22 @@ def _with_figures(solution_html, body):
     return re.sub(r"(?:<p>)?FIGTOKEN(\d+)X(?:</p>)?", lambda m: f'<div class="fig">{figs[int(m.group(1))]}</div>', out)
 
 
-def render(code, lang, md, solution_html, title):
-    """(body html, toc html) of the course's Sovella itsenäisesti page."""
+def skills_html(task):
+    """'Taidot luvuista: <chapter>, <chapter>': where the skills of a task were taught, by chapter name."""
+    if not task.get("skills"): return ""
+    return (f'<p class="task-skills">{i18n.t("practice.skills")} '
+            + ", ".join(f'<a href="{lid}.html">{esc(chapter(lid))}</a>' for lid in task["skills"]) + "</p>")
+
+
+def render(code, lang, md, solution_html, title, embedded=False):
+    """(body html, toc html) of the course's Sovella itsenäisesti page; embedded=True: the tasks only, each a task card
+    under an h3, for the end of a unit page (no header, no stage sections, no table of contents)."""
     T = i18n.t; data = load(code, lang)
     sols = solution_blocks((folder(code, lang) / "solutions.md").read_text() if (folder(code, lang) / "solutions.md").is_file() else "")
     inline = lambda s: re.sub(r"^<p>(.*)</p>$", r"\1", md(s).strip(), flags=re.S)
     import figcat
     fig = lambda x: figcat.figure_html(x["figure"], lang) if x.get("figure") else ""   # a task's or a part's figure by its id
-    body = (f'<header class="practice-head"><span class="eyebrow">{T("practice.eyebrow", code=code)}</span><h1>{T("practice.title")}</h1>'
+    body = "" if embedded else (f'<header class="practice-head"><span class="eyebrow">{T("practice.eyebrow", code=code)}</span><h1>{T("practice.title")}</h1>'
             f'<p class="lead">{T("practice.lead")}</p>' + (md(data["intro"]) if data.get("intro") else "")
             + f'<p class="howto">{T("practice.howto")}</p></header>')
     toc = ""
@@ -348,8 +378,12 @@ def render(code, lang, md, solution_html, title):
             reveal = (f'<details class="reveal"><summary>{T("practice.reveal")} <span class="reveal-hint">{T("practice.reveal_hint")}</span></summary>'
                       f'<div class="reveal-body"><h3>{T("practice.solution")}</h3>{sol}{extra}<h3>{T("practice.rubric")}</h3>{rubric_html(task, md)}</div></details>')
         pts = T.count("practice.task_points", total(task)) if not own else T("practice.kind_own")
+        if embedded:
+            body += (f'<div class="activity task-card practice-task" id="{tid}" data-type="practice"><h3>{n}. {esc(task["title"])} <span class="pts">{pts}</span></h3>'
+                     f'{badge}<div class="situation">{md(task["text"])}{fig(task)}</div>{parts}{skills_html(task)}{reveal}</div>')
+            continue
         body += (f'<section class="stage practice-task" id="{tid}"><h2><span class="stage-no" aria-hidden="true">{n}</span>{esc(task["title"])}'
-                 f' <span class="pts">{pts}</span></h2><div class="activity task-card">{badge}<div class="situation">{md(task["text"])}{fig(task)}</div>{parts}{reveal}</div></section>')
+                 f' <span class="pts">{pts}</span></h2><div class="activity task-card">{badge}<div class="situation">{md(task["text"])}{fig(task)}</div>{parts}{skills_html(task)}{reveal}</div></section>')
         toc += (f'<a href="#{tid}"><span class="toc-no" aria-hidden="true">{n}</span><span class="toc-label">{esc(task["title"])}</span></a>')
     return body, toc
 
@@ -358,6 +392,7 @@ def render(code, lang, md, solution_html, title):
 def packet(code, role, lang=i18n.SOURCE):
     """The agent's packet: the course's scope, the framework, the shared criteria and the files to write or judge. An
     agent reads this file and nothing else of the course (token economy: no lesson texts)."""
+    if is_unit(code): return unit_packet(code, role, lang)
     c = courses.course(code); fw = framework(); T = i18n.T(lang); st = status(code, lang)
     lines = [f"# Sovella itsenäisesti {code} ({lang}): {role} packet", "",
              f"Course: {code} {c['title']}, {c.get('op', '')} op. Content hash now: {st['hash']} (python scripts/practice.py hash {code}"
@@ -387,6 +422,28 @@ def packet(code, role, lang=i18n.SOURCE):
     return out
 
 
+def unit_packet(code, role, lang=i18n.SOURCE):
+    """A unit's task set is reviewed with its unit (one hash, scripts/units.py): this packet is the developer's
+    checklist for it, the framework, the shared criteria, the chapters it may name and the checks."""
+    fw = framework(); T = i18n.T(lang); uid = set_slug(code)
+    lines = [f"# Task set of unit {uid} ({lang}): {role} packet", "",
+             "## Chapters of FY1–FY8 with a folder (ids for `skills` and `links`)"]
+    for c in courses.codes():
+        ls = [l for l in courses.course(c).get("lessons", []) if (ROOT / "content" / i18n.SOURCE / c / l["id"] / "meta.json").is_file()]
+        if ls: lines.append(f"- {c}: " + "; ".join(f"{l['id']} {l['title']}" for l in ls))
+    lines += ["", "## Framework (competencies.json, NOTES.md §9)"] + [f"- {k}: {v} ({T('competency.' + k)})" for k, v in fw["competencies"].items()]
+    lines += ["", "## Shared criteria (lang \"criteria\"; use the key, add `detail` for the task's specifics)"] + [f"- {k} [{t}]: {T('criteria.' + k)}" for k, t in fw["criteria"].items()]
+    errs = check(code, lang)
+    lines += ["", "## Deterministic checks", "\n".join(errs) if errs else "practice.py check: OK"]
+    for name, path in files(code, lang):
+        if path.is_file():
+            txt = re.sub(r"<svg\b.*?</svg>", "<svg …figure from figures.py…>", path.read_text(), flags=re.S) if name == "solutions.md" else path.read_text()
+            lines += ["", f"## {path.relative_to(ROOT)}", "```", txt.rstrip(), "```"]
+    out = folder(code, lang) / "review" / f"packet-{role}.md"
+    out.parent.mkdir(parents=True, exist_ok=True); out.write_text("\n".join(lines) + "\n")
+    return out
+
+
 if __name__ == "__main__":
     a = sys.argv[1:]
     if not a: sys.exit(__doc__)
@@ -395,7 +452,7 @@ if __name__ == "__main__":
     if cmd == "check":
         errs, seen = [], {}
         for lg in i18n.languages():
-            for code in courses_with(lg):
+            for code in courses_with(lg) + unit_sets(lg):
                 if rest and code != rest[0]: continue
                 e = check(code, lg, seen if lg == i18n.SOURCE else None); errs += e
                 print(("FAIL " if e else "OK   ") + f"{lg}/{code}: {len(load(code, lg)['tasks'])} tasks, {sum(total(t) for t in load(code, lg)['tasks'])} points")
