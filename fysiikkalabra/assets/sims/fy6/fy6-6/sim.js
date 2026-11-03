@@ -140,7 +140,7 @@ new p5((p) => {
   }
 
   function beaker(n, B, xl, xr, P, T, R, L, w) {
-    const x0 = B - w, x1 = B + w, glowT = Math.min(1, P / 36);
+    const x0 = B - w, x1 = B + w, glowT = Math.min(1, P / PMAX);
     // water, tinted warmer with the temperature
     const ht = Math.max(0, Math.min(1, (T - T0) / (TMAX - T0)));
     p.noStroke(); p.fill(...mix(WATERL, HOTL, ht), 230);

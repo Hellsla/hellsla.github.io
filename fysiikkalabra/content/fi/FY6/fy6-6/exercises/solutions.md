@@ -25,8 +25,8 @@
 **Kaava:** $P = \dfrac{U^2}{R}$
 **Muunnokset:** Tulos watteina muunnetaan: $1\,\text{kW} = 1000\,\text{W}$.
 **Sijoitus:** $P = \dfrac{(230\,\text{V})^2}{26{,}5\,\Omega} = \dfrac{52\,900\,\text{V}^2}{26{,}5\,\Omega} = 1996\,\text{W} = 1{,}996\,\text{kW}$
-**Vastaus:** $2{,}00\,\text{kW}$, kolme merkitsevää numeroa kuten jännitteessä ja resistanssissa.
-**Järkevyys:** Kodin vedenkeittimen teho on tyypillisesti $2\,\text{kW}$:n luokkaa. Virta on $230\,\text{V} : 26{,}5\,\Omega \approx 8{,}7\,\text{A}$, mikä mahtuu tavallisen $10\,\text{A}$:n sulakkeen rajaan.
+**Vastaus:** $2{,}00\,\text{kW}$, kolme merkitsevää numeroa kuten resistanssissa ja verkkojännitteessä $230\,\text{V}$ (sen oletetaan olevan kolmen numeron tarkkuudella).
+**Järkevyys:** Kodin vedenkeittimen teho on tyypillisesti $2\,\text{kW}$:n luokkaa. Virta on $230\,\text{V} : 26{,}5\,\Omega \approx 8{,}7\,\text{A}$, mikä mahtuu tavallisen pistorasian virtarajaan.
 
 ## fy6-6-L1-04
 **Annettu:** teho $P = 9{,}0\,\text{W}$, aika $t = 2{,}0\,\text{h}$
@@ -39,9 +39,9 @@
 **Järkevyys:** Tunnissa lamppu käyttää $9\,\text{W} \cdot 3600\,\text{s} \approx 32\,\text{kJ}$, joten kahdessa tunnissa noin kaksinkertaisen määrän. Yksikkö $\text{W} \cdot \text{s} = \text{J}$ on oikea.
 
 ## fy6-6-L1-05
-**Annettu:** kuvaajan mittauspisteet teho $P$ virran $I$ funktiona
+**Annettu:** kuvaajan pisteet: teho $P$ virran $I$ funktiona
 **Kysytty:** vastuksen resistanssi $R$ ohmeina
-**Periaate:** Joulen lain mukaan vastuksen teho on $P = RI^2$. Kun yhden mittauspisteen virta ja teho tunnetaan, resistanssi saadaan ratkaistua.
+**Periaate:** Joulen lain mukaan vastuksen teho on $P = RI^2$. Kun yhden pisteen virta ja teho tunnetaan, resistanssi saadaan ratkaistua.
 **Kuvaajan lukeminen:** Luetaan piste, jossa virta on suurin ja tarkin luettava: kun $I = 2{,}0\,\text{A}$, piste on ruudukkoviivalla $P = 20\,\text{W}$. Myös piste $(1{,}0\,\text{A};\ 5{,}0\,\text{W})$ on ruudukkoviivalla ja antaa saman tuloksen.
 **Kaava:** $P = RI^2$, josta $R = \dfrac{P}{I^2}$
 **Muunnokset:** Ei tarvita: $\text{W} : \text{A}^2 = \text{V} : \text{A} = \Omega$.
@@ -57,7 +57,7 @@
 **Muunnokset:** $P = 1{,}8\,\text{kW} = 1{,}8 \cdot 1000\,\text{W} = 1800\,\text{W}$
 **Sijoitus:** $I = \dfrac{1800\,\text{W}}{230\,\text{V}} = 7{,}83\,\text{A}$
 **Vastaus:** $7{,}8\,\text{A}$, kaksi merkitsevää numeroa kuten tehossa $1{,}8\,\text{kW}$.
-**Järkevyys:** Arvio $2000\,\text{W} : 250\,\text{V} = 8\,\text{A}$ on lähellä tulosta. Virta on pienempi kuin tavallisen $10\,\text{A}$:n sulakkeen raja. Ilman kilowattien muuntamista virraksi tulisi $0{,}008\,\text{A}$, mikä on aivan liian pieni näin tehokkaalle laitteelle.
+**Järkevyys:** Arvio $2000\,\text{W} : 250\,\text{V} = 8\,\text{A}$ on lähellä tulosta. Virta on pienempi kuin tavallisen pistorasian virtaraja. Ilman kilowattien muuntamista virraksi tulisi $0{,}008\,\text{A}$, mikä on aivan liian pieni näin tehokkaalle laitteelle.
 
 ## fy6-6-L2-02
 **Annettu:** $R_1 = 10\,\Omega$, $R_2 = 20\,\Omega$ sarjassa, lähteen jännite $U = 12\,\text{V}$
@@ -77,7 +77,7 @@
 **Muunnokset:** $R = 1{,}0\,\text{k}\Omega = 1{,}0 \cdot 1000\,\Omega = 1000\,\Omega$
 **Sijoitus:** $U = \sqrt{0{,}25\,\text{W} \cdot 1000\,\Omega} = \sqrt{250\,\text{V}^2} = 15{,}8\,\text{V}$
 **Vastaus:** $16\,\text{V}$, kaksi merkitsevää numeroa kuten tehossa ja resistanssissa.
-**Järkevyys:** Tarkistus: $(15{,}8\,\text{V})^2 : 1000\,\Omega = 0{,}25\,\text{W}$. Yksikkö $\sqrt{\text{W} \cdot \Omega} = \sqrt{\text{V}^2} = \text{V}$ on oikea. Tavallisessa $5\,\text{V}$:n tai $9\,\text{V}$:n piirissä vastus on siis turvallisella alueella.
+**Järkevyys:** Tarkistus: $(15{,}8\,\text{V})^2 : 1000\,\Omega = 0{,}25\,\text{W}$. Yksikkö $\sqrt{\text{W} \cdot \Omega} = \sqrt{\text{V}^2} = \text{V}$ on oikea. Tavallisessa $5\,\text{V}$:n tai $9\,\text{V}$:n piirissä vastus on siis turvallisella alueella, vaikka koko jännite olisi vastuksen yli.
 
 ## fy6-6-L2-04
 **Annettu:** teho $P = 200\,\text{W}$, veden massa $m = 0{,}80\,\text{kg}$, aika $t = 5{,}0\,\text{min}$, $c = 4190\,\tfrac{\text{J}}{\text{kg} \cdot \text{K}}$
@@ -97,7 +97,7 @@
 **Muunnokset:** Ei tarvita: kaikki suureet ovat perusyksiköissä.
 **Sijoitus:** $R_{40} = \dfrac{(230\,\text{V})^2}{40\,\text{W}} = 1322{,}5\,\Omega$, $R_{100} = \dfrac{(230\,\text{V})^2}{100\,\text{W}} = 529\,\Omega$, $I = \dfrac{230\,\text{V}}{1851{,}5\,\Omega} = 0{,}1242\,\text{A}$ ja $P_{40} = 1322{,}5\,\Omega \cdot (0{,}1242\,\text{A})^2 = 20{,}4\,\text{W}$
 **Vastaus:** $20\,\text{W}$, kaksi merkitsevää numeroa kuten tehossa $40\,\text{W}$.
-**Järkevyys:** Lampun $100\,\text{W}$ teho on $529\,\Omega \cdot (0{,}1242\,\text{A})^2 \approx 8{,}2\,\text{W}$, joten sarjassa $40\,\text{W}$:n lamppu palaa kirkkaammin, koska sen resistanssi on suurempi ja virta on sama. Kummankin teho on pienempi kuin merkitty, koska kummankin yli on vain osa verkkojännitteestä.
+**Järkevyys:** $100\,\text{W}$:n lampun teho on $529\,\Omega \cdot (0{,}1242\,\text{A})^2 \approx 8{,}2\,\text{W}$, joten sarjassa $40\,\text{W}$:n lamppu palaa kirkkaammin, koska sen resistanssi on suurempi ja virta on sama. Kummankin teho on pienempi kuin merkitty, koska kummankin yli on vain osa verkkojännitteestä.
 
 ## fy6-6-L3-02
 **Annettu:** $20$ samanlaista lamppua sarjassa, verkkojännite $U = 230\,\text{V}$, sarjan teho $P = 9{,}2\,\text{W}$

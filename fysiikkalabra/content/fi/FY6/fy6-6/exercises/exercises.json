@@ -27,7 +27,7 @@
     {
       "id": "fy6-6-L1-04",
       "level": 1,
-      "text": "Led-lamppu, jonka teho on $9{,}0\\,\\text{W}$, palaa $2{,}0\\,\\text{h}$. Kuinka paljon sähköenergiaa lampussa muuttuu valoksi ja sisäenergiaksi tänä aikana? Vastaa kilojouleina.",
+      "text": "Led-lamppu, jonka teho on $9{,}0\\,\\text{W}$, palaa $2{,}0\\,\\text{h}$. Kuinka paljon sähköenergiaa lampussa muuttuu muuksi energiaksi tänä aikana? Vastaa kilojouleina.",
       "answer": 64.8,
       "unit": "kJ",
       "tolerance": 0.02
@@ -35,7 +35,7 @@
     {
       "id": "fy6-6-L1-05",
       "level": 1,
-      "text": "Kuvaajassa on vastuksen mitattu teho virran funktiona. Kuinka suuri on vastuksen resistanssi? Lue tarvittavat arvot kuvaajasta.",
+      "text": "Kuvaajassa on vastuksen teho virran funktiona. Kuinka suuri on vastuksen resistanssi? Lue tarvittavat arvot kuvaajasta.",
       "figure": "fy6-6/ex-pi",
       "answer": 5.0,
       "unit": "Ω",
@@ -70,7 +70,7 @@
     {
       "id": "fy6-6-L2-04",
       "level": 2,
-      "text": "Uppokuumentimen teho on $200\\,\\text{W}$. Se lämmittää $0{,}80\\,\\text{kg}$ vettä $5{,}0\\,\\text{min}$:n ajan. Oleta, että koko sähköenergia lämmittää vettä. Veden ominaislämpökapasiteetti on $4190\\,\\tfrac{\\text{J}}{\\text{kg} \\cdot \\text{K}}$. Kuinka paljon veden lämpötila nousee?",
+      "text": "Uppokuumentimen teho on $200\\,\\text{W}$. Se lämmittää $0{,}80\\,\\text{kg}$ vettä, jonka lämpötila on aluksi $20\\,{}^\\circ\\text{C}$, $5{,}0\\,\\text{min}$:n ajan. Oleta, että koko sähköenergia lämmittää vettä eikä vettä höyrysty. Veden ominaislämpökapasiteetti on $4190\\,\\tfrac{\\text{J}}{\\text{kg} \\cdot \\text{K}}$. Kuinka paljon veden lämpötila nousee?",
       "answer": 17.9,
       "unit": "K",
       "tolerance": 0.02
@@ -80,7 +80,7 @@
     {
       "id": "fy6-6-L3-01",
       "level": 3,
-      "text": "Hehkulamput, joihin on merkitty $230\\,\\text{V}$, $40\\,\\text{W}$ ja $230\\,\\text{V}$, $100\\,\\text{W}$, kytketään sarjaan $230\\,\\text{V}$:n verkkojännitteeseen. Oleta, että lamppujen resistanssit pysyvät samoina kuin nimellisjännitteellä. Kuinka suuri on $40\\,\\text{W}$:n lampun teho tässä kytkennässä?",
+      "text": "Kaksi hehkulamppua, joiden merkinnät ovat $230\\,\\text{V}$, $40\\,\\text{W}$ ja $230\\,\\text{V}$, $100\\,\\text{W}$, on kytketty sarjaan $230\\,\\text{V}$:n verkkojännitteeseen. Oleta, että lamppujen resistanssit pysyvät samoina kuin nimellisjännitteellä. Kuinka suuri on $40\\,\\text{W}$:n lampun teho tässä kytkennässä?",
       "answer": 20.4,
       "unit": "W",
       "tolerance": 0.03

@@ -168,7 +168,7 @@ Kuvassa samat vastukset $4\,\Omega$ ja $8\,\Omega$ on kytketty $12\,\text{V}$:n 
 </svg>
 
 ### Paahdin ja sen johto
-Paahtimen vastuslanka ja johto ovat sarjassa, joten niiden läpi kulkee sama virta. Vastuslangan resistanssi on kymmeniä ohmeja, johdon kuparijohtimien vain sadasosia ohmista. Joulen lain mukaan johtoon tuleva teho on siksi yli tuhat kertaa pienempi kuin vastuslankaan tuleva. Paahtimessa, jonka teho on $900\,\text{W}$, vastuslangan resistanssi on noin $59\,\Omega$ ja virta noin $3{,}9\,\text{A}$. Jos johdon resistanssi on $0{,}050\,\Omega$, johto saa tehon $0{,}050\,\Omega \cdot (3{,}9\,\text{A})^2 \approx 0{,}8\,\text{W}$, joka jakautuu koko johdon pituudelle. Vastuslanka sen sijaan hehkuu.
+Paahtimen vastuslanka ja johto ovat sarjassa, joten niiden läpi kulkee sama virta. Vastuslangan resistanssi on kymmeniä ohmeja, johdon kuparijohtimien vain sadasosia ohmista. Paahtimessa, jonka teho on $900\,\text{W}$, vastuslangan resistanssi on noin $59\,\Omega$ ja virta noin $3{,}9\,\text{A}$. Jos johdon resistanssi on $0{,}050\,\Omega$, johto saa tehon $0{,}050\,\Omega \cdot (3{,}9\,\text{A})^2 \approx 0{,}8\,\text{W}$, joka jakautuu koko johdon pituudelle. Joulen lain mukaan johtoon tuleva teho on siksi yli tuhat kertaa pienempi kuin vastuslankaan tuleva: resistanssien suhde on $59\,\Omega : 0{,}050\,\Omega \approx 1200$. Vastuslanka sen sijaan hehkuu.
 
 ### Vastuksen lämpeneminen tasaantuu
 Kun virta kytketään, vastus lämpenee aluksi nopeasti, koska lähes koko sähköteho kasvattaa sen sisäenergiaa. Mitä lämpimämpi vastus on ympäristöönsä verrattuna, sitä enemmän lämpöä siitä siirtyy ympäristöön sekunnissa, joten lämpeneminen hidastuu. Lämpötila tasaantuu, kun vastuksesta siirtyy ympäristöön lämpöä yhtä nopeasti kuin siihen tulee sähköenergiaa. Siksi vastukselle ilmoitetaan suurin sallittu teho, esimerkiksi $0{,}25\,\text{W}$: suuremmalla teholla tasaantumislämpötila nousisi niin korkeaksi, että vastus vaurioituisi.
@@ -207,7 +207,7 @@ E = Pt
 ```
 missä $E$ on energia (J) ja $t$ aika (s). Vastuksessa tämä energia muuttuu sisäenergiaksi ja siirtyy lämpönä ympäristöön.
 
-Laitteeseen merkitty teho, esimerkiksi $230\,\text{V}$ ja $900\,\text{W}$, on sen teho nimellisjännitteellä. Pienemmällä jännitteellä vastuslaitteen teho on pienempi, koska $P = U^2 : R$. Kuvaajassa vastuksen teho kasvaa virran neliönä: kun $4\,\Omega$:n vastuksen virta kasvaa $1{,}0\,\text{A}$:sta $2{,}0\,\text{A}$:iin, teho kasvaa $4{,}0\,\text{W}$:sta $16\,\text{W}$:iin.
+Laitteeseen merkitty teho, esimerkiksi $230\,\text{V}$ ja $900\,\text{W}$, on sen teho nimellisjännitteellä. Pienemmällä jännitteellä vastuslaitteen teho on pienempi, koska $P = U^2 : R$, kun resistanssi pysyy likimain samana. Kuvaajassa vastuksen teho kasvaa virran neliönä: kun $4\,\Omega$:n vastuksen virta kasvaa $1{,}0\,\text{A}$:sta $2{,}0\,\text{A}$:iin, teho kasvaa $4{,}0\,\text{W}$:sta $16\,\text{W}$:iin.
 
 <svg data-fig="graph" viewBox="0 0 600 360" role="img" aria-label="Kuvaaja mittakaavassa: vastuksen teho P watteina virran I funktiona ampeereina kahdelle vastukselle. 8 ohmin vastuksen paraabeli kulkee pisteiden (1,0 A; 8,0 W) ja (2,0 A; 32 W) kautta ja 4 ohmin vastuksen paraabeli pisteiden (1,0 A; 4,0 W) ja (2,0 A; 16 W) kautta. Katkoviivat merkitsevät 4 ohmin vastuksen pisteet: kun virta kaksinkertaistuu yhdestä ampeerista kahteen, teho nelinkertaistuu 4,0 watista 16 wattiin." style="max-width:100%;font-size:24px">
   <line x1="173" y1="304" x2="173" y2="66" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
