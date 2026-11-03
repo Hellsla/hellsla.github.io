@@ -520,7 +520,8 @@ F = k\,\frac{\lvert q_1 q_2 \rvert}{r^2}
 ```latex
 \begin{aligned}
 &F = k\,\frac{\lvert q_1 q_2 \rvert}{r^2} \\
-&= 8{,}988 \cdot 10^{9}\,\tfrac{\text{N} \cdot \text{m}^2}{\text{C}^2} \cdot \frac{9{,}6 \cdot 10^{-17}\,\text{C}^2}{(0{,}060\,\text{m})^2} \\
+&= 8{,}988 \cdot 10^{9}\,\tfrac{\text{N} \cdot \text{m}^2}{\text{C}^2} \\
+&\quad \cdot \frac{9{,}6 \cdot 10^{-17}\,\text{C}^2}{(0{,}060\,\text{m})^2} \\
 &= 2{,}397 \cdot 10^{-4}\,\text{N}
 \end{aligned}
 ```
