@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy5-16-L1-01",
+      "level": 1,
+      "text": "On a building site the noise level of a hammer drill at the user's ear is $91\\,\\text{dB}$. For how many hours a day may the user use the tool without hearing protectors, when the reference is the upper action value, $8\\,\\text{h}$ at a level of $85\\,\\text{dB}$? Answer in hours.",
+      "answer": 2.0,
+      "unit": "h",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-16-L1-02",
+      "level": 1,
+      "text": "A ventilation unit has two identical fans. When only one is running, the noise level at the door of the machine room is $70\\,\\text{dB}$. What is the level at the same place when both fans are running?",
+      "answer": 73,
+      "unit": "dB",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-16-L1-03",
+      "level": 1,
+      "text": "The level of a loudspeaker at a garden party is $88\\,\\text{dB}$ at a distance of $4.0\\,\\text{m}$. What is the level at a distance of $8.0\\,\\text{m}$? Treat the loudspeaker as a point source in an open space with no reflections.",
+      "answer": 82,
+      "unit": "dB",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-16-L1-04",
+      "level": 1,
+      "text": "The noise level of a pneumatic hammer at the user's ear is $106\\,\\text{dB}$. The user wears ear defenders whose attenuation is $23\\,\\text{dB}$. What is the noise level reaching the ear?",
+      "answer": 83,
+      "unit": "dB",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-16-L1-05",
+      "level": 1,
+      "text": "To which point of noise control, the source, the path or the ear, does each measure belong? a) a noise barrier beside a motorway, b) enclosing a compressor in a sound-absorbing casing, c) earplugs, d) sound-absorbing panels in the ceiling of a factory hall.",
+      "answer": "a) path, b) source, c) ear, d) path",
+      "unit": "",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy5-16-L2-01",
+      "level": 2,
+      "text": "A factory hall has two identical machines. Each alone produces a level of $85\\,\\text{dB}$ at the worker's position. For how many hours a day may the worker stay in the hall without hearing protectors when both machines are running? The reference is the upper action value. Answer in hours.",
+      "answer": 4.0,
+      "unit": "h",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-16-L2-02",
+      "level": 2,
+      "text": "A student listens to music with headphones on bus journeys for a total of $1.5\\,\\text{h}$ a day, and the level at the student's ear is about $94\\,\\text{dB}$. What percentage is the student's daily dose of the dose that corresponds to the upper action value ($8\\,\\text{h}$ at a level of $85\\,\\text{dB}$)?",
+      "answer": 150,
+      "unit": "%",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-16-L2-03",
+      "level": 2,
+      "text": "The noise level of a lawn mower is $78\\,\\text{dB}$ at a distance of $2.0\\,\\text{m}$. A neighbour wants the level on their terrace to be at most $60\\,\\text{dB}$. How far from the mower should the terrace be? Treat the mower as a point source in an open space.",
+      "answer": 16,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-16-L2-04",
+      "level": 2,
+      "text": "Hands are clapped once in an empty classroom. A sound level app on a phone shows that after the clap the level falls from $92\\,\\text{dB}$ to $62\\,\\text{dB}$ in $0.45\\,\\text{s}$. Assume the level falls steadily. The reverberation time is the time in which the level falls by $60\\,\\text{dB}$, but it can be deduced even if the level cannot be followed through the whole drop of $60\\,\\text{dB}$. What is the reverberation time of the classroom?",
+      "answer": 0.9,
+      "unit": "s",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy5-16-L3-01",
+      "level": 3,
+      "text": "A warehouse worker spends $4.0\\,\\text{h}$ of the working day at the loading dock, where the noise level is $88\\,\\text{dB}$, and the remaining $4.0\\,\\text{h}$ in the packing room, where the level is $82\\,\\text{dB}$. What percentage is the worker's daily dose of the dose that corresponds to the upper action value ($8\\,\\text{h}$ at a level of $85\\,\\text{dB}$)?",
+      "answer": 125,
+      "unit": "%",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-16-L3-02",
+      "level": 3,
+      "text": "Two terraced houses each have an identical air-source heat pump outdoor unit in the yard. The level of each unit is $55\\,\\text{dB}$ at a distance of $3.0\\,\\text{m}$. The bedroom window of a third house is $12\\,\\text{m}$ from each unit. What is the level at the window when both units are running? Treat the units as point sources in an open space.",
+      "answer": 46,
+      "unit": "dB",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-16-L3-03",
+      "level": 3,
+      "text": "Noise-cancelling headphones dampen the low hum of an aircraft engine, whose frequency is about $100\\,\\text{Hz}$, well. The speech of passengers, whose frequencies are about $1000$–$3000\\,\\text{Hz}$, can be heard through clearly better. Explain the difference using wavelengths and phase, when the speed of sound in air is $343\\,\\text{m/s}$.",
+      "answer": "The wavelength of the hum is about $3.4\\,\\text{m}$ and its period $10\\,\\text{ms}$, so the anti-noise stays in the opposite phase at the ear; the wavelength of speech is only about $11$–$34\\,\\text{cm}$, and even a small difference in timing or position spoils the cancellation.",
+      "unit": "",
+      "tolerance": 0.02
+    }
+  ]
+}
