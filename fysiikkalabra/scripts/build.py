@@ -448,6 +448,8 @@ def build_language(lang):
         try: rs = review_status(folder)
         except ValueError as e: sys.exit(str(e))
         meta["state"] = rs["state"]; states[meta["id"]] = rs
+        tr = folder / "figures.json"                                               # force-diagram symbols in this language
+        fbdspec.SYMBOLS = {k: v for k, v in json.loads(tr.read_text()).items() if re.fullmatch(r"[A-Z]_\w+", k)} if tr.exists() else {}
         if rs["state"] == "draft" and not (only or build_all): continue   # publish only lessons whose reviews are current
         missing = [f for f in ("lesson.md", "exit-ticket.json") if not (folder / f).exists()]
         if (only or build_all): missing += [f"exercises/{f}" for f in courses.EXERCISE_FILES if not courses.lesson_file(folder, f).exists()]
@@ -538,6 +540,7 @@ def build_language(lang):
         built.setdefault(meta["course"], []).append(meta)
         print("built", meta["id"], f"({meta['state']})")
 
+    fbdspec.SYMBOLS = {}                                                           # the pages after the lessons: specs as written
     # Sovella itsenäisesti: one page per course with module-end tasks (scripts/practice.py, teacher 2026-10-28), published
     # like a lesson only when both its reviews pass; a preview builds it with `build.py <COURSE>-sovella` or --all.
     practice_built = {}

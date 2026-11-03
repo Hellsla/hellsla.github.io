@@ -62,9 +62,13 @@ def kind_of(sym):
     return next((k for pat, k in KIND if re.search(pat, sym)), "applied")
 
 
+SYMBOLS = {}                       # a chapter's own symbols in the page's language, {spec symbol: shown symbol} ("F_v": "F_d"),
+                                   # from the "F_v" keys of its figures.json (build.py): the spec stays the Finnish one
+
+
 def tex_of(sym):
     """G -> \\overline{G}, F_mu -> \\overline{F}_{\\mu}, T_1 -> \\overline{T}_{1}, F_AP -> \\overline{F}_{\\text{AP}}."""
-    base, _, sub = sym.partition("_")
+    base, _, sub = SYMBOLS.get(sym, sym).partition("_")
     sub = r"\mu" if sub in ("mu", "μ") else rf"\text{{{sub}}}" if sub.isalpha() else sub       # F_AP, F_i: names, upright
     return rf"\overline{{{base}}}" + (f"_{{{sub}}}" if sub else "")
 
@@ -400,6 +404,7 @@ def draw(spec, fid, _frame=None):
     scale = (70 if two else 100) / big
     small = min([f[1] for b in bodies for f in b["forces"] if f[1] > 0] or [big])
     if two: scale = min(130.0, max(70.0, 26 * big / small)) / big           # two bodies: the same, within their half of the figure
+    if two and small * scale < 24: scale = min(CAP, LEAST * big / small) / big   # a small force would be a bare head: taller (visual audit 2026-11-01)
     centre = [f[1] for b in bodies for f in b["forces"] if kind_of(f[0]) in ("gravity", "buoyancy") and f[1] > 0]
     if not two and centre and min(centre) * scale < 40: scale = min(160.0, 40 * big / min(centre)) / big   # a light body's weight beside a heavy
                                                                             # load: the figure on a larger scale, still one scale (visual audit 2026-11-01)
@@ -489,7 +494,8 @@ def draw(spec, fid, _frame=None):
         comps = []
         if axes:
             for sym in b["comps"]:
-                sym_, vec, at = next((x[0], x[2], x[3]) for x in forces if x[0] == sym)
+                sym_, vec, at, push = next((x[0], x[2], x[3], x[5].get("push")) for x in forces if x[0] == sym)
+                if push: at = (at[0] - vec[0] * scale, at[1] + vec[1] * scale)        # a push's components start at its tail
                 for ax, c in zip(axes, "xy"):
                     approx = approx or 0 < abs(vec[0] * ax[0] + vec[1] * ax[1]) < MIN_SHOWN * big - 1e-9   # a component at the floor
                     kk = _keep_order(floor(vec[0] * ax[0] + vec[1] * ax[1]), next(x[1] for x in forces if x[0] == sym), ax, forces, sym, big)
@@ -543,7 +549,7 @@ def draw(spec, fid, _frame=None):
 
 def _plain(sym):
     """F_mu -> Fμ, T_1 -> T1: a symbol for a screen reader."""
-    base, _, sub = sym.partition("_")
+    base, _, sub = SYMBOLS.get(sym, sym).partition("_")
     return base + {"mu": "μ"}.get(sub, sub)
 
 

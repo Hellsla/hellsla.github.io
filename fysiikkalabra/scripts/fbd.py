@@ -252,7 +252,7 @@ class FBD:
                         extra=f'transform="rotate({n(-ang)} {n(cx)} {n(cy)})"' if ang else "")
         for x in self.forces: self._arrow(x, solid=True, size=label_size)
         for c in self.comps:
-            c = dict(c); c["at"] = c["at"] or next(x for x in self.forces if x["sym"] == c["of"])["at"]
+            c = dict(c); c["at"] = c["at"] or self._ends(next(x for x in self.forces if x["sym"] == c["of"]))[0]   # from the force's tail, a push's too (Lauri 2026-11-02)
             self._arrow(c, solid=False, size=label_size)
         return self
 
