@@ -1637,7 +1637,8 @@
       "kohtaC": "point C",
       "kohtaD": "point D",
       "kohtaE": "point E",
-      "kohtaF": "point F"
+      "kohtaF": "point F",
+      "kohta_akseli": "$\\text{point}$"
     }
   },
   "practice": {

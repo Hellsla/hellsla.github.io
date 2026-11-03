@@ -198,7 +198,7 @@ new p5((p) => {
     }
     if (L < 0) { p.stroke(...MUTEDC); p.strokeWeight(1.5 * sk); p.line(ox, GY(0), gx1, GY(0)); }
     lab('$V\\,(\\text{V})$', ox + 12 * sk, gy1 - 14 * sk, 'l');
-    lab('$\\text{kohta}$', 598, oy - 10 * sk, 'r');
+    lab(__('kohta_akseli'), 598, oy - 10 * sk, 'r');
     const V = S.V, path = [[0, V.F], [1, V.F], [1, V.A], [3, V.A], [4, V.B], [6, V.B], [7, V.E], [9, V.F]];
     p.noFill(); p.stroke(...POTC); p.strokeWeight(3 * sk); p.beginShape();
     for (const [s, v] of path) p.vertex(GX(s), GY(v)); p.endShape();

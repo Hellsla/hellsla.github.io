@@ -1637,7 +1637,8 @@
       "nollaF": "lähteen miinusnapa",
       "nollaB": "haarautumispiste B",
       "selite": "Sininen: potentiaali, tummempi on korkeampi. Violetti: virta. Mittarin musta johto on nollakohdassa.",
-      "lukemat": "Virrat $I_1 = {{I1}}\\,\\text{A}$, $I_2 = {{I2}}\\,\\text{A}$, $I_3 = {{I3}}\\,\\text{A}$<br>Jännitteet $U_1 = {{U1}}\\,\\text{V}$, $U_2 = U_3 = {{U2}}\\,\\text{V}$<br>Silmukan summa $U - U_1 - U_2 = {{sum}}\\,\\text{V}$<br><strong>Mittari {{Vp}}</strong>"
+      "lukemat": "Virrat $I_1 = {{I1}}\\,\\text{A}$, $I_2 = {{I2}}\\,\\text{A}$, $I_3 = {{I3}}\\,\\text{A}$<br>Jännitteet $U_1 = {{U1}}\\,\\text{V}$, $U_2 = U_3 = {{U2}}\\,\\text{V}$<br>Silmukan summa $U - U_1 - U_2 = {{sum}}\\,\\text{V}$<br><strong>Mittari {{Vp}}</strong>",
+      "kohta_akseli": "$\\text{kohta}$"
     }
   },
   "practice": {
