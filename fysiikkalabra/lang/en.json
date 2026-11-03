@@ -169,7 +169,10 @@
     "notice_legacy": "Prototype version: this lesson was published before the current review process and is waiting to be renewed. The content may still change.",
     "notice_draft": "Draft: this lesson has not been reviewed yet.",
     "why_marker": "Why",
-    "goal_note": "Clarification"
+    "goal_note": "Clarification",
+    "kc_title": "Key concepts of the chapter",
+    "kc_optional": "Optional",
+    "kc_lead": "Get to know the key concepts of the chapter. You can write their meanings in your strongest language or in several languages."
   },
   "inquiry": {
     "stage_herata": "Think about it",

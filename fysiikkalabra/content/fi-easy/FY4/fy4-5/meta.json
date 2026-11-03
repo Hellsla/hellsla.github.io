@@ -18,6 +18,24 @@
     "tukivoima",
     "jännitysvoima"
   ],
+  "key_concepts": [
+    {
+      "term": "voimakuvio",
+      "explain": "Kuva, jossa näkyvät vain yhteen kappaleeseen vaikuttavat voimat nuolina."
+    },
+    {
+      "term": "kokonaisvoima",
+      "explain": "Kaikkien kappaleeseen vaikuttavien voimien summa."
+    },
+    {
+      "term": "komponentti",
+      "explain": "Voiman osa jonkin akselin suunnassa. Komponentit eivät ole uusia voimia."
+    },
+    {
+      "term": "jännitysvoima",
+      "explain": "Voima, jolla kireä naru tai lanka vetää kappaletta."
+    }
+  ],
   "sim": true,
   "solutions": "all",
   "image": false

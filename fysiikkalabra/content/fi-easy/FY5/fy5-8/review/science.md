@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: c8040b0ec5917f54
+CONTENT-HASH: cf4d35d21384f84f
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- jousivakio: "kun jousta venytetään metrin verran" reads as a real one-metre stretch, which goes past the range where the law holds (the lesson itself says so). The lesson's "montako newtonia tarvitaan yhtä venymämetriä kohti" avoids that.
 
 ## Checked
-batch delta review: new pinball close-up: pulling the plunger knob out compresses the coil spring between tip and front wall, consistent with the lesson's compressed-spring launch; references to fy5-7 and fy5-9 updated. Every changed chapter reference names the renamed chapter that holds the cited content, and no old title remains.
+batch delta review: added meta.json key_concepts (Luvun tärkeät käsitteet) checked term by term against the lesson's own definitions, summary and the physics guardrails; no number, formula or choice changed. Terms: harmoninen voima, jousivakio (stiffness, N/m) and jousen potentiaalienergia agree with the lesson.

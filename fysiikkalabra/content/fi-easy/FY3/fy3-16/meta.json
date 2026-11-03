@@ -13,6 +13,24 @@
     "fy3-12"
   ],
   "glossary": [],
+  "key_concepts": [
+    {
+      "term": "lämpömäärä",
+      "explain": "Kertoo, kuinka paljon energiaa siirtyy lämpönä."
+    },
+    {
+      "term": "ominaislämpökapasiteetti",
+      "explain": "Kertoo, kuinka paljon energiaa tarvitaan, kun kilogramman lämpötilaa nostetaan yhdellä kelvinillä."
+    },
+    {
+      "term": "sulamislämpö",
+      "explain": "Energia, joka tarvitaan kiinteän aineen sulattamiseen. Kun puhdas aine sulaa vakiopaineessa, sen lämpötila pysyy samana."
+    },
+    {
+      "term": "hukkalämpö",
+      "explain": "Lämpö, joka siirtyy koneesta ympäristöön käyttämättä."
+    }
+  ],
   "sim": false,
   "solutions": "all",
   "image": false

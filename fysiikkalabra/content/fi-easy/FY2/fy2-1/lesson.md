@@ -93,7 +93,7 @@
 ## Ydinajatus
 **Energia** on suure. Sen avulla kerrotaan, mitä systeemissä (tarkasteltavassa kokonaisuudessa) tapahtuu, kun jokin liikkuu, lämpenee, loistaa tai muuttaa muotoaan. Energian tunnus on $E$ ja yksikkö on **joule**, $\text{J}$. Joule on pieni yksikkö. Siksi energia ilmoitetaan usein myös kilojouleina. Etuliite kilo tarkoittaa tuhatta, joten $1\,\text{kJ} = 1000\,\text{J}$.
 
-Energiaa on monessa muodossa. Jokaista muotoa sanotaan **energialajiksi**. Energialaji kertoo, mihin energia on sitoutunut tai miten se näkyy.
+Energiaa on monessa muodossa. Jokaista muotoa sanotaan **energialajiksi**. Energialaji kertoo, mihin energia on sitoutunut eli varastoitunut tai miten se näkyy. Esimerkiksi liikkuvan pallon energia näkyy liikkeenä, ja pariston energia on varastoitunut sen aineisiin.
 
 <figure class="unit-photo"><img src="pics/fy2/hydropower-plant-aerial.webp" alt="Vesivoimalaitoksen alue ylhäältä. Vasemmalla on joki ja alhaalla sähkölaitteita."><figcaption>Vesivoimalaitos ylhäältä. Veden potentiaalienergia muuttuu turbiinissa liike-energiaksi. Generaattori muuttaa sen sähköenergiaksi.</figcaption></figure>
 

@@ -15,6 +15,20 @@
     "liikeyhtälö",
     "jännitysvoima"
   ],
+  "key_concepts": [
+    {
+      "term": "liikeyhtälö",
+      "explain": "Newtonin toinen laki kirjoitettuna yhdelle kappaleelle: kokonaisvoima on massa kertaa kiihtyvyys."
+    },
+    {
+      "term": "jännitysvoima",
+      "explain": "Voima, jolla kireä lanka vetää kappaletta."
+    },
+    {
+      "term": "voimakuvio",
+      "explain": "Kuva, jossa näkyvät vain yhteen kappaleeseen vaikuttavat voimat nuolina."
+    }
+  ],
   "sim": true,
   "solutions": "all",
   "image": false

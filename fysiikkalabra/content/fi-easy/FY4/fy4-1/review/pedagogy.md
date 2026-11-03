@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 1d23f75557c706fd
+CONTENT-HASH: 3bf40868749c04fd
 
 ## Blocking
+(none)
 
 ## Polish
-- The Finnish needs no changes.
+(none)
 
 ## Checked
-Read all files in full. The content, order, stages, predictions, hints, feedback and exit ticket are the same as in the Finnish; the language is plain: short sentences with one thing in each, and the terms are explained when they appear (origo eli nollakohta, vektorisuure, vauhti = nopeuden suuruus ilman etumerkkiä, kulmakerroin eli jyrkkyys, keskivauhti). Step labels as in the Finnish. The same $...$ mentions as in the Finnish. Nothing needed fixing.
-- Delta review (1d23f75557c706fd): Delta since the passed version: only the Finnish punctuation change above; the fi-easy sentences are already short and unaffected. No wording, sequence or interaction change. check_i18n fi-easy 0 errors.
+batch delta review: key_concepts judged against NOTES.md §12 and the editorial standard (central concepts, plain 1–2 sentence explanations, natural Finnish, physics unchanged); lesson rewordings, photos and captions, experiment/prompt wording and solution diagrams in this diff read clearly and agree with the tasks they touch.

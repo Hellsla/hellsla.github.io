@@ -16,6 +16,24 @@
     "teho",
     "joule"
   ],
+  "key_concepts": [
+    {
+      "term": "työ",
+      "explain": "Energian siirtämistä voiman avulla. Työtä tehdään, kun voima siirtää kappaletta voiman suuntaan."
+    },
+    {
+      "term": "energia",
+      "explain": "Suure, joka kertoo, kuinka paljon jokin voi saada aikaan muutosta. Työ siirtää energiaa."
+    },
+    {
+      "term": "teho",
+      "explain": "Kertoo, kuinka nopeasti työtä tehdään tai energiaa siirtyy. Teho on työ jaettuna ajalla."
+    },
+    {
+      "term": "joule",
+      "explain": "Työn ja energian yksikkö."
+    }
+  ],
   "sim": true,
   "image": false
 }

@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 8ac41027cacb6e6c
+CONTENT-HASH: d05795d001598a6f
+
 ## Blocking
 (none)
+
 ## Polish
-(none)
+- meta.json key_concepts "ekstrapolointi" — fragment — "Mittauspisteisiin sovitettua suoraa jatketaan alueelle, jolla ei ole mitattu."
+
 ## Checked
-- Teaching sequence (opening question, predictions, investigation, theory, worked example, checks, exit ticket) and structure of inquiry.json/exit-ticket.json equal the Finnish source.
-- Wording of prompts and feedback keeps the same skill and demand; no answer disclosed early by the translation.
-- Selkeä suomi: short clear sentences, glossary terms and Finnish number format as in the source; case after number+unit correct (esim. -18 °C:n, +15 °C:een).
-- Delta since last pass is typesetting only (sign placed inside $...$); no change to demand or sequence.
+batch delta review: key_concepts judged against NOTES.md §12 and the editorial standard (central concepts, plain 1–2 sentence explanations, natural Finnish, physics unchanged); lesson rewordings, photos and captions, experiment/prompt wording and solution diagrams in this diff read clearly and agree with the tasks they touch.

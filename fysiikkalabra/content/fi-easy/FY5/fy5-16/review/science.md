@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 6a510754753f8a6c
+CONTENT-HASH: d10acd84a4cef2c2
 
 ## Blocking
 (none)
@@ -8,4 +8,4 @@ CONTENT-HASH: 6a510754753f8a6c
 (none)
 
 ## Checked
-batch delta review: references to fy5-11, fy5-12, fy5-15 updated in exit ticket, prior, feedbacks, solution and theory; 48 min and 4,0 h answers recomputed and correct. Every changed chapter reference names the renamed chapter that holds the cited content, and no old title remains.
+batch delta review: added meta.json key_concepts (Luvun tärkeät käsitteet) checked term by term against the lesson's own definitions, summary and the physics guardrails; no number, formula or choice changed. Terms: melu, jälkikaiunta (reflections after the source stops), kaiutin (signal to sound) and mikrofoni (sound to signal) agree with the lesson.

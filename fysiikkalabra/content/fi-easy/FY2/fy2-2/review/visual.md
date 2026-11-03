@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 9e60540cd71fe93c
+CONTENT-HASH: ef97f98516bfe537
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
+
 
 ## Checked
-batch delta review: preview/fi-easy/fy2-2.html opened in Chromium (Playwright) at 360, 768 and 1280 px; moved Artemis I launch photo captured with its surroundings. New spot after the Joule paragraph; at 1280 it floats beside the "Energian yksikkö ja kerrannaisyksiköt" heading, text and the kJ–TJ formula box without touching it. No overlap with any figure, table, formula box or example (measured), stays in the column at 360/768, no horizontal overflow at any width, image loads, caption and credit unchanged; placement reads naturally (a large-energy example next to the unit multiples).
+Round 2 delta: scratchpad kc/r2-fy2-2-390.png and kc/r2-fy2-2-1280.png (section cut from rebuilt preview/fi-easy/fy2-2.html; sheets r2sheet390.png, r2sheet1280.png). Changed text read in the diff f83714cd..b8a6e1bb and seen in the capture: fluent, plain, physics unchanged. Stacked at 390 px, two columns at 1280 px, no overflow, no KaTeX errors, nothing clipped.

@@ -13,6 +13,7 @@ A digital textbook for Finnish upper-secondary physics (LOPS 2019): theory, simu
 ## Audience and language
 - Students aged 16–19, smart but meeting the idea for the first time. Site language Finnish; agent prompts and reports may be in English.
 - Physics terms come from `glossary.json`; add a missing term there, do not invent synonyms.
+- **Selkeä suomi** (`content/fi-easy/`, for S2 students; teacher 2026-11-03): the same physics in clearer Finnish, difficult words explained the first time, concrete examples, clear instructions, and 3–5 *Luvun tärkeät käsitteet* in `meta.json` `key_concepts`; NOTES.md §12 is the rule set, `check_i18n.py` checks it.
 
 ## Physics and maths conventions
 - SI units, upright with a thin space: `9,81 m/s²`. Decimal comma in Finnish text, decimal point in JSON.

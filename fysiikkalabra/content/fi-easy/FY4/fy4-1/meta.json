@@ -15,6 +15,28 @@
     "keskinopeus",
     "(t,x)-kuvaaja"
   ],
+  "key_concepts": [
+    {
+      "term": "paikka",
+      "explain": "Kertoo, missä kappale on valittuun nollakohtaan eli origoon nähden. Etumerkki kertoo, kummalla puolella origoa kappale on."
+    },
+    {
+      "term": "siirtymä",
+      "explain": "Paikan muutos alusta loppuun. Siirtymällä on suuruus ja suunta, joten se on vektorisuure."
+    },
+    {
+      "term": "matka",
+      "explain": "Kuljetun reitin pituus. Matka ei voi olla negatiivinen, toisin kuin siirtymä."
+    },
+    {
+      "term": "nopeus",
+      "explain": "Kertoo, kuinka nopeasti paikka muuttuu ja mihin suuntaan. Nopeuden suuruus ilman suuntaa on vauhti."
+    },
+    {
+      "term": "$(t,x)$-kuvaaja",
+      "explain": "Kuvaaja, jossa vaaka-akselilla on aika ja pystyakselilla paikka. Suoran jyrkkyys kertoo nopeuden."
+    }
+  ],
   "sim": true,
   "solutions": "all",
   "image": false

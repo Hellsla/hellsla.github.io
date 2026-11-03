@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 4dc1f2caef0dbf5b
+CONTENT-HASH: 2fd86b4d3019398a
 
 ## Blocking
+(none)
 
 ## Polish
-
+(none)
 
 ## Checked
-Checked that every step, hint, prediction option and common-mistake feedback is kept and clearer: single-idea sentences, questions split, no extra content.
-The three-question exit ticket, the commit-before-evidence order and the chapter references match the Finnish; the page renders at 360 px without overflow.
+batch delta review: key_concepts judged against NOTES.md §12 and the editorial standard (central concepts, plain 1–2 sentence explanations, natural Finnish, physics unchanged); lesson rewordings, photos and captions, experiment/prompt wording and solution diagrams in this diff read clearly and agree with the tasks they touch.

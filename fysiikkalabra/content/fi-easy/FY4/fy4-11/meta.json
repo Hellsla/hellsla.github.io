@@ -19,6 +19,28 @@
     "turvavyö",
     "törmäysaika"
   ],
+  "key_concepts": [
+    {
+      "term": "reaktioaika",
+      "explain": "Aika, joka kuluu vaaran huomaamisesta siihen, että kuljettaja alkaa jarruttaa."
+    },
+    {
+      "term": "reaktiomatka",
+      "explain": "Matka, jonka auto kulkee reaktioajan aikana ennen jarrutusta."
+    },
+    {
+      "term": "jarrutusmatka",
+      "explain": "Matka, jonka auto kulkee jarrutuksen alusta pysähtymiseen."
+    },
+    {
+      "term": "pysähtymismatka",
+      "explain": "Reaktiomatkan ja jarrutusmatkan summa."
+    },
+    {
+      "term": "törmäysaika",
+      "explain": "Aika, jonka pysähtyminen törmäyksessä kestää. Pidempi aika tarkoittaa pienempää voimaa."
+    }
+  ],
   "sim": true,
   "solutions": "all",
   "image": false

@@ -17,6 +17,24 @@
     "ilmastonmuutos",
     "kestävä energiatalous"
   ],
+  "key_concepts": [
+    {
+      "term": "kasvihuoneilmiö",
+      "explain": "Ilmakehän kaasut hidastavat lämpösäteilyn pääsyä avaruuteen. Siksi maanpinta pysyy lämpimämpänä kuin ilman niitä."
+    },
+    {
+      "term": "ilmastonmuutos",
+      "explain": "Maapallon keskilämpötilan pitkäaikainen nousu, kun ihminen lisää ilmakehään kasvihuonekaasuja."
+    },
+    {
+      "term": "päästökerroin",
+      "explain": "Kertoo, kuinka paljon kasvihuonekaasuja (laskettuna hiilidioksidiksi) syntyy yhtä energiayksikköä kohti."
+    },
+    {
+      "term": "kestävä energiatalous",
+      "explain": "Energiaa tuotetaan ja käytetään niin, että tulevilla sukupolvilla on yhtä hyvät mahdollisuudet kuin meillä."
+    }
+  ],
   "sim": true,
   "solutions": "all",
   "image": false
