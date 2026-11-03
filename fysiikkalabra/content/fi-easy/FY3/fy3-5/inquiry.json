@@ -224,7 +224,7 @@
         "koe-1",
         "koe-2"
       ],
-      "prompt": "Kirjoita taulukoidesi perusteella lyhyt johtopäätös. Vastaa kolmeen kysymykseen. Miten lämpötilan nousu riippui tehdystä työstä eristetyssä sylinterissä? Mihin työn tuoma energia joutui johtavassa sylinterissä? Minkä ennusteen 1 selityksistä mittauksesi kumoavat, ja millä lukemilla?",
+      "prompt": "Kirjoita taulukoidesi perusteella lyhyt johtopäätös. Vastaa kolmeen kysymykseen. Miten lämpötilan nousu riippui tehdystä työstä eristetyssä sylinterissä? Mihin työn tuoma energia joutui johtavassa sylinterissä? Minkä ennusteen 1 selityksistä mittauksesi kumoavat eli osoittavat vääräksi, ja millä lukemilla?",
       "model": "Eristetyssä sylinterissä lämpötila nousi sitä enemmän, mitä enemmän mäntä teki työtä. Hitaalla työnnöllä $W = +13{,}1\\,\\text{J}$ ja $\\Delta T \\approx 37\\,\\text{K}$. Nopealla työnnöllä $W = +19{,}1\\,\\text{J}$ ja $\\Delta T \\approx 53\\,\\text{K}$. Kummallakin lämpötila nousi noin $2{,}8\\,\\text{K}$ joulea kohden. Koko työ jäi kaasuun, $\\Delta U = W$. Johtavassa sylinterissä sama puristus teki työn $W \\approx +12{,}4\\,\\text{J}$. Yhtä suuri energia lähti lämpönä seinien läpi, $Q \\approx -12{,}4\\,\\text{J}$. Lämpötila palasi $293\\,\\text{K}$:iin, vaikka paine jäi $1{,}33$-kertaiseksi. Siksi Ainon selitys (paine nostaa lämpötilan) ja Cemin selitys (lämpö tiivistyy) eivät pidä. Sama puristus antoi eri lämpötilan sen mukaan, jäikö energia kaasuun. Lukemat ovat mallin laskemia. Oikeasta pumpusta saman voisi mitata lämpömittarilla.",
       "criteria": [
         "Liitin lämpötilan nousun tehtyyn työhön lukujen avulla.",

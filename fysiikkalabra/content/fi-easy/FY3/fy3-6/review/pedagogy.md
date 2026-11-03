@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: a487caa4b89e2d12
+CONTENT-HASH: a363bfc106abb2db
 
 ## Blocking
 (none)
@@ -8,6 +8,4 @@ CONTENT-HASH: a487caa4b89e2d12
 (none)
 
 ## Checked
-- Translation reviewed against the reviewed Finnish after the typesetting round: every inline-math segment of lesson.md, inquiry.json, exit-ticket.json, figures.json compared with the Finnish (same numbers, units, symbols, decimal comma); no bare number+unit left outside LaTeX; sentences remain short and plain; JSON valid; check_i18n 0 errors for fi-easy.
-- Pedagogy: teaching sequence, staging, tasks, feedback and hints identical in structure to the Finnish; units in LaTeX read cleanly; language natural.
-- Translation-only review (teacher's procedure 2026-10-28); no translation edits were needed.
+batch delta review: key_concepts judged against NOTES.md §12 and the editorial standard (central concepts, plain 1–2 sentence explanations, natural Finnish, physics unchanged); lesson rewordings, photos and captions, experiment/prompt wording and solution diagrams in this diff read clearly and agree with the tasks they touch.

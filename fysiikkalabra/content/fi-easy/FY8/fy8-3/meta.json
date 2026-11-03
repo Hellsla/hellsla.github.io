@@ -1,0 +1,39 @@
+{
+  "id": "fy8-3",
+  "course": "FY8",
+  "title": "Vetyatomin energiatasot ja Bohrin malli",
+  "goals": [
+    "LOPS FY8: atomin rakenne, atomin elektronien kvanttitilat ja aaltomekaanisen atomimallin periaate",
+    "Täsmennys: vetyatomin energiatasot ytimen kentässä, siirtymät ja spektriviivat; Bohrin malli historiallisena välivaiheena"
+  ],
+  "prerequisites": [
+    "fy8-2"
+  ],
+  "glossary": [
+    "perustila",
+    "viritystila",
+    "ionisaatioenergia",
+    "Bohrin malli"
+  ],
+  "key_concepts": [
+    {
+      "term": "perustila",
+      "explain": "Atomin alin energiatila."
+    },
+    {
+      "term": "viritystila",
+      "explain": "Perustilaa ylempi energiatila. Viritystilassa atomilla on enemmän energiaa kuin perustilassa."
+    },
+    {
+      "term": "ionisaatioenergia",
+      "explain": "Energia, joka tarvitaan elektronin irrottamiseen atomista perustilasta."
+    },
+    {
+      "term": "Bohrin malli",
+      "explain": "Historiallinen vetyatomin malli, jossa elektroni kiertää ydintä vain sallituilla radoilla. Se antaa vedylle oikeat energiat, mutta ratoja ei ole."
+    }
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

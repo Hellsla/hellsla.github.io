@@ -1,12 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 0b2d8154f98ba8a6
+CONTENT-HASH: fe7f595d5dc5d197
 
 ## Blocking
 (none)
 
 ## Polish
-- None.
+(none)
 
 ## Checked
-- Delta review 2026-11-01: the learn list now continues the page prefix and the experiment panels show translated values.
-- Learn list reads correctly after "In this lesson, you will learn to" / "Tällä tunnilla opit"; teaching sequence identical to the Finnish; no Finnish words left in experiment names or values; check_i18n 0 errors.
+batch delta review: key_concepts judged against NOTES.md §12 and the editorial standard (central concepts, plain 1–2 sentence explanations, natural Finnish, physics unchanged); lesson rewordings, photos and captions, experiment/prompt wording and solution diagrams in this diff read clearly and agree with the tasks they touch.

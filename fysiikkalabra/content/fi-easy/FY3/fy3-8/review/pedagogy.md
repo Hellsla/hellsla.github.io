@@ -1,12 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: a31dd74dd56c8b2c
+CONTENT-HASH: 9c8ff42bf212e921
 
 ## Blocking
 (none)
 
 ## Polish
-- None.
+(none)
 
 ## Checked
-- Delta review 2026-11-01: the learn list now continues the page prefix and the experiment panels show translated values.
-- Learn list reads correctly after "In this lesson, you will learn to" / "Tällä tunnilla opit"; teaching sequence identical to the Finnish; no Finnish words left in experiment names or values; check_i18n 0 errors.
+Round 2 delta (b8a6e1bb): 'vie niitä kauemmas toisistaan kuin kiinteässä aineessa' fixes the clumsy phrase and states the comparison.

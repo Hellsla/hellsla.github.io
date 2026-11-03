@@ -79,7 +79,7 @@
         "after": "koe-2",
         "min": 2
       },
-      "prompt": "Aurinko lähettää Maahan säteilyenergiaa jatkuvasti. Auringon säteily lämmittää koko maapallon. Se pitää yllä tuulet, sateet ja kasvien kasvun. Ihmisten voimalat ja moottorit ovat sen rinnalla pieniä pisteitä Maan pinnalla. Kuinka pitkän ajan ihmiskunnan koko energiankäyttö (sähkö, lämmitys, liikenne, teollisuus) on yhteensä yhtä suuri kuin yhden tunnin auringonsäteily Maahan?",
+      "prompt": "Aurinko lähettää Maahan säteilyenergiaa jatkuvasti. Auringon säteily lämmittää koko maapallon. Se pitää yllä tuulet, sateet ja kasvien kasvun. Ihmisten voimalat ja moottorit ovat sen rinnalla pieniä pisteitä Maan pinnalla. Ihmiskunta käyttää energiaa sähköön, lämmitykseen, liikenteeseen ja teollisuuteen. Kuinka pitkässä ajassa ihmiskunta käyttää yhteensä yhtä paljon energiaa kuin Aurinko säteilee Maahan yhdessä tunnissa?",
       "choices": [
         {
           "text": "Noin tunnin.",
@@ -200,7 +200,7 @@
         "koe-1",
         "koe-2"
       ],
-      "prompt": "Kirjoita taulukoidesi ja energiaketjun perusteella vastaukset kolmeen kysymykseen. Kumpi oli suurempi, litra bensiiniä vai päivän ruoka, ja kuinka moninkertainen? Miten Auringosta tuleva tunnin energia vertautui ihmiskunnan vuoden energiankäyttöön? Mihin muotoon ketjun energia lopulta päätyy?",
+      "prompt": "Vastaa taulukoidesi ja energiaketjun perusteella kolmeen kysymykseen. Ensimmäinen: kumpi oli suurempi, litra bensiiniä vai päivän ruoka, ja kuinka moninkertainen? Toinen: miten Auringosta tunnissa tuleva energia vertautui ihmiskunnan vuoden energiankäyttöön? Kolmas: mihin muotoon ketjun energia lopulta päätyy?",
       "model": "Litra bensiiniä oli noin $32\\,\\text{MJ}$ ja päivän ruoka noin $10\\,\\text{MJ}$. Bensiinissä on siis noin $32\\,\\text{MJ} : 10\\,\\text{MJ} \\approx 3$ kertaa enemmän energiaa. Tunnin auringonsäteily Maahan ja ihmiskunnan vuoden energiankäyttö olivat taulukossa kumpikin noin $620\\,\\text{EJ}$ eli $6{,}2 \\cdot 10^{20}\\,\\text{J}$. Ne ovat siis samaa suuruusluokkaa. Energiaketjussa energia säilyy. Suuri osa muuttuu kuitenkin joka vaiheessa lämpöenergiaksi, joka hajaantuu ympäristöön. Arvot ovat pyöristettyjä suuruusluokkia, osin arvioita.",
       "criteria": [
         "Vertasin bensiiniä ja ruokaa luvuilla ja sanoin, kuinka moninkertainen ero on.",

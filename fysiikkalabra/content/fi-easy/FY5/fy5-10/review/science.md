@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 2e924e2326ebf2b6
+CONTENT-HASH: 2173dd681221e44c
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- aallonpituus is defined by crests only, while the example of a longitudinal wave (ääni ilmassa) has none; the lesson adds "tai tihentymien".
 
 ## Checked
-batch delta review: new lakeside illustration keeps one pulse travelling to the post and bell; references to fy5-7, fy5-9, fy5-11 updated; f = 12/6,0 s = 2,0 Hz, T = 0,50 s correct. Every changed chapter reference names the renamed chapter that holds the cited content, and no old title remains.
+batch delta review: added meta.json key_concepts (Luvun tärkeät käsitteet) checked term by term against the lesson's own definitions, summary and the physics guardrails; no number, formula or choice changed. Terms: aaltoliike (energy moves, matter does not), aallon nopeus (depends on the medium) and both wave types agree with the lesson.

@@ -1,0 +1,20 @@
+{
+  "id": "fy8-4",
+  "course": "FY8",
+  "title": "Light and electrons as waves and particles",
+  "goals": [
+    "LOPS FY8: the photon as a quantum of the electromagnetic radiation field",
+    "Clarification: the photon is treated through different models (state of the field, quantum of the field, quantum particle, mediator of an interaction); the Compton effect; the double-slit experiment with single photons and electrons. The de Broglie wavelength is not treated (teacher's decision 2026-11-03)"
+  ],
+  "prerequisites": [
+    "fy8-3"
+  ],
+  "glossary": [
+    "aalto-hiukkasdualismi",
+    "Comptonin ilmiö",
+    "kaksoisrakokoe"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

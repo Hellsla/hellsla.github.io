@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 09e505c3a0405998
+CONTENT-HASH: 3bed4efadd884d08
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] fy3-10-1280-0 — the balloon photo sits beside the paragraph on the combined gas law, which does not mention balloons; the caption itself is correct — move it next to the paragraph where pressure and open containers are discussed, if one exists.
+- none
 
 ## Checked
-- batch delta review: opened fy-easy captures fy3-10-1280 and fy3-10-360 (photo, caption, credit line, alt text read against picture and neighbouring paragraph; no clipping or horizontal overflow; no plain-text quantity in new caption/alt).
+- batch delta review: "Luvun tärkeät käsitteet" panel captured from preview/fi-easy/fy3-10.html at 390 and 1280 px (the review/shots set has no capture of it) and opened — between the opening and stage 1, term bold over its explanation at 390 px, two-column at 1280 px, no clipping, no horizontal overflow, no KaTeX error; the edited lesson.md/inquiry.json sentences read in their diff (prose only, no new maths); top-390 opened in a montage (read-aloud "Kuuntele" button under the title, layout intact).

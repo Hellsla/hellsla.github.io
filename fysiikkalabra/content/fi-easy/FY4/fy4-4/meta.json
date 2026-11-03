@@ -20,6 +20,28 @@
     "tukivoima",
     "voimakuvio"
   ],
+  "key_concepts": [
+    {
+      "term": "kokonaisvoima",
+      "explain": "Kaikkien kappaleeseen vaikuttavien voimien summa. Se kertoo voimien yhteisvaikutuksen."
+    },
+    {
+      "term": "kiihtyvyys",
+      "explain": "Kertoo, kuinka nopeasti nopeus muuttuu. Kokonaisvoima osoittaa kiihtyvyyden suuntaan."
+    },
+    {
+      "term": "massa",
+      "explain": "Kertoo, kuinka vaikea kappaleen liikettä on muuttaa. Suurempi massa kiihtyy samasta voimasta vähemmän."
+    },
+    {
+      "term": "tukivoima",
+      "explain": "Voima, jolla alusta työntää kappaletta. Se on kohtisuorassa alustaa vastaan."
+    },
+    {
+      "term": "voimakuvio",
+      "explain": "Kuva, jossa näkyvät vain yhteen kappaleeseen vaikuttavat voimat nuolina."
+    }
+  ],
   "sim": true,
   "solutions": "all",
   "image": false

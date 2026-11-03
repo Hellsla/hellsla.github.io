@@ -181,6 +181,13 @@
   },
   "FY8": {
     "title": "Aine, säteily ja kvantittuminen",
+    "themes": [
+      "Kvantittuminen ja atomi",
+      "Kvanttiteknologia",
+      "Atomiydin ja ydinenergia",
+      "Säteily ja ihminen",
+      "Hiukkaset ja maailmankaikkeus"
+    ],
     "tavoitteet": [
       "tuntee ionisoivan säteilyn vaikutukset ja tutustuu säteilyn turvalliseen käyttöön",
       "tutustuu kvanttifysiikkaan perustuvaan maailmankuvaan alkeishiukkasista kosmologiaan asti",
@@ -188,21 +195,21 @@
     ],
     "lessons": {
       "fy8-1": "Valosähköinen ilmiö ja fotoni",
-      "fy8-2": "Atomien spektrit ja energian kvantittuminen",
-      "fy8-3": "Bohrin malli ja aaltomekaaninen atomimalli",
-      "fy8-13": "Hiukkasten aaltoluonne ja de Broglien aallonpituus",
-      "fy8-4": "Laser ja kvanttirakenteet",
-      "fy8-14": "LED, laserdiodi ja Planckin vakio",
-      "fy8-5": "Atomiytimen rakenne ja radioaktiivinen hajoaminen",
-      "fy8-6": "Hajoamislaki ja puoliintumisaika",
-      "fy8-7": "Massan ja energian ekvivalenssi ja ytimen sidosenergia",
-      "fy8-8": "Fissio, fuusio ja ydinvoima",
-      "fy8-9": "Ionisoiva säteily: lajit, läpäisykyky ja biologiset vaikutukset",
-      "fy8-15": "Säteilyturvallisuus ja säteilyannos",
-      "fy8-10": "Säteilyn sovellukset lääketieteessä ja teknologiassa",
-      "fy8-11": "Hiukkasfysiikan standardimalli",
-      "fy8-12": "Maailmankaikkeuden kehitys",
-      "fy8-16": "Ilmastonmuutos ja kasvihuoneilmiö säteilyn kannalta"
+      "fy8-2": "Spektrit paljastavat atomin energiatasot",
+      "fy8-3": "Vetyatomin energiatasot ja Bohrin malli",
+      "fy8-4": "Valo ja elektroni aaltoina ja hiukkasina",
+      "fy8-5": "Aaltomekaaninen atomimalli ja orbitaalit",
+      "fy8-6": "LEDin valo ja Planckin vakion mittaaminen",
+      "fy8-7": "Laser ja kvanttirakenteet",
+      "fy8-8": "Atomiydin ja radioaktiivinen hajoaminen",
+      "fy8-9": "Hajoamislaki ja puoliintumisaika",
+      "fy8-10": "Massavaje ja ytimen sidosenergia",
+      "fy8-11": "Fissio, fuusio ja ydinvoima",
+      "fy8-12": "Ionisoiva säteily ja elimistö",
+      "fy8-13": "Säteilyannos ja säteilyturvallisuus Suomessa",
+      "fy8-14": "Säteily lääketieteessä ja teknologiassa",
+      "fy8-15": "Standardimalli: perushiukkaset ja vuorovaikutukset",
+      "fy8-16": "Maailmankaikkeuden kehitys"
     }
   }
 }

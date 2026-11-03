@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Nimeä yksi ilmiö, jossa valo käyttäytyy aallon tavoin, ja yksi ilmiö, jossa se käyttäytyy hiukkasen tavoin.",
+    "a": "Aallon tavoin: kaksoisrakokokeen raitakuvio eli interferenssi (myös diffraktio). Hiukkasen tavoin: valosähköinen ilmiö, Comptonin ilmiö tai heikon valon yksittäiset osumat varjostimella."
+  },
+  {
+    "q": "Kumman fotonin liikemäärä on suurempi: punaisen valon ($700\\,\\text{nm}$) vai sinisen valon ($450\\,\\text{nm}$)? Perustele.",
+    "a": "Sinisen valon fotonin. Fotonin liikemäärä on $p = \\tfrac{h}{\\lambda}$, joten lyhyempi aallonpituus antaa suuremman liikemäärän. Sinisen fotonin liikemäärä on $700 : 450 \\approx 1{,}6$-kertainen."
+  }
+]

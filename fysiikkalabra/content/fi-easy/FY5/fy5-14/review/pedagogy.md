@@ -1,8 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 56cfec165120dd17
+CONTENT-HASH: ef5aa0e95b1398de
 ## Blocking
 
 ## Polish
-
+- Käsite on glossaarin muodossa *Doppler-ilmiö*, mutta otsikot ja teksti käyttävät muotoa *Dopplerin ilmiö*. Molemmat ovat oikein; S2-lukijalle sama muoto kaikkialla olisi helpompi.
 ## Checked
-batch delta review: new lesson title and renamed chapter cross-references (prior lists, feedback, theory text) read in context; the names match the new titles of the target lessons, wording and Finnish unchanged otherwise, no stale old titles left in the lesson files.
+batch delta review: added meta.json key_concepts ("Luvun tärkeät käsitteet") read against lesson.md: every term is a term the lesson bolds and uses, each explanation is short S2 Finnish, physically correct and consistent with the lesson's own definition, wording, tasks and feedback; no numbers or symbols changed, nothing in the lesson disclosed or removed.

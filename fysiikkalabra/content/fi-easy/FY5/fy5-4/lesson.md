@@ -129,6 +129,8 @@ Luvussa *Ympyrärata: jaksonaika ja ratanopeus* opit, että tasaisessa ympyräli
 
 Kuvassa kappaleen nopeus on ensin $\overline{v}_1$ ja hetken kuluttua $\overline{v}_2$. Kun nuolet piirretään samasta pisteestä, niiden kärkien välinen nuoli on nopeuden muutos $\Delta\overline{v}$. Se osoittaa kohti radan keskipistettä. Kiihtyvyys kertoo, kuinka nopeasti nopeus muuttuu. Siksi myös kiihtyvyys osoittaa kohti keskipistettä.
 
+<figure class="unit-photo"><img src="pics/fy5/apollo8-centrifuge.webp" alt="Kolme astronauttia makaa selällään istuimissa pyöreän luukun takana."><figcaption>Apollo 8:n astronautit sentrifugissa vuonna 1968. Sentrifugi pyörittää astronautteja ympyrää pitkin. Sentrifugissa normaalikiihtyvyys voi olla yhtä suuri kuin laukaisun kiihtyvyys.</figcaption></figure>
+
 ### Normaalikiihtyvyys osoittaa keskipisteeseen
 Tasaisessa ympyräliikkeessä kiihtyvyys on kohtisuorassa nopeutta vastaan. Se osoittaa radan joka kohdassa kohti ympyrän keskipistettä. Tätä kiihtyvyyttä kutsutaan **normaalikiihtyvyydeksi** $\overline{a}_\text{n}$ tai **keskeiskiihtyvyydeksi**. Nimi tulee siitä, että kiihtyvyys on radan normaalin suuntainen. Normaali on suora, joka on kohtisuorassa tangenttia vastaan. Kiihtyvyydellä ei ole nopeuden suuntaista osaa, joten vauhti ei kasva eikä pienene. Kiihtyvyys muuttaa vain nopeuden suuntaa.
 

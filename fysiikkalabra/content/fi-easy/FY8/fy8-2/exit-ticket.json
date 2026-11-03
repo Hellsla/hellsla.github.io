@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Kaasun atomilla on kolme energiatilaa: $0$, $2{,}0\\,\\text{eV}$ ja $3{,}0\\,\\text{eV}$. Kuinka monta eri spektriviivaa kuuma kaasu voi lähettää? Mitkä ovat niiden fotonien energiat?",
+    "a": "Viivoja on kolme, yksi jokaista tilaparia kohti. Fotonien energiat ovat tilojen erotukset: $3{,}0\\,\\text{eV} - 2{,}0\\,\\text{eV} = 1{,}0\\,\\text{eV}$, $2{,}0\\,\\text{eV} - 0 = 2{,}0\\,\\text{eV}$ ja $3{,}0\\,\\text{eV} - 0 = 3{,}0\\,\\text{eV}$."
+  },
+  {
+    "q": "Fluoresoiva aine absorboi sinistä valoa, jonka aallonpituus on $450\\,\\text{nm}$. Voiko se lähettää fluoresenssina violettia valoa, jonka aallonpituus on $400\\,\\text{nm}$? Perustele energian avulla.",
+    "a": "Ei voi. Fotonin energia on $E = \\tfrac{hc}{\\lambda}$. Siksi $400\\,\\text{nm}$:n fotonin energia on suurempi kuin $450\\,\\text{nm}$:n fotonin. Fluoresenssissa osa absorboidun fotonin energiasta muuttuu lämmöksi. Siksi lähetetyn fotonin energia on pienempi ja aallonpituus pidempi kuin absorboidun."
+  }
+]

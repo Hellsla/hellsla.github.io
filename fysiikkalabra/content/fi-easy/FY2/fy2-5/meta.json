@@ -14,6 +14,20 @@
     "polttoaine",
     "kemiallinen energia"
   ],
+  "key_concepts": [
+    {
+      "term": "polttoaine",
+      "explain": "Aine, jonka energia vapautetaan polttamalla, esimerkiksi bensiini tai puu."
+    },
+    {
+      "term": "kemiallinen energia",
+      "explain": "Aineen rakenteeseen varastoitunut energia. Se vapautuu esimerkiksi palamisessa lämpönä ja valona."
+    },
+    {
+      "term": "lämpöarvo",
+      "explain": "Kertoo, kuinka paljon energiaa vapautuu, kun kilogramma polttoainetta palaa."
+    }
+  ],
   "sim": false,
   "solutions": "all",
   "image": false

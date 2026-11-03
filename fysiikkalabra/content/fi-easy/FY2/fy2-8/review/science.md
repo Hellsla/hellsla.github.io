@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 453829cb08be8da1
+CONTENT-HASH: bf5fa376fbf61f32
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+- meta.json päästökerroin: 'laskettuna hiilidioksidiksi' could say 'muunnettuna ilmastovaikutukseltaan vastaavaksi hiilidioksidimääräksi'; not wrong.
 
 ## Checked
-- Selkeä suomi: kaikki uudet ja muuttuneet tekstit tarkistettu sana sanalta suomenkielistä lähdettä vasten. Fysiikka, luvut (230, 820 g/kWh, 900 000 t, 100 000 t), yksiköt, desimaalipilkku ja LaTeX säilyneet; lyhennetyt oikeat vaihtoehdot sisältävät saman väitteen; vääriin vaihtoehtoihin ei ole tullut oikeaa väitettä. check_i18n: 0 virhettä.
+- batch delta review, round 2 (diff f83714cd..b8a6e1bb): päästökerroin now greenhouse gases counted as CO2 per energy unit, correct for CO2-ekv; no other content changed.

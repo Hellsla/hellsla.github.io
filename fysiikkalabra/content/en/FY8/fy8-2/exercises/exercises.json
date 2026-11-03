@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy8-2-L1-01",
+      "level": 1,
+      "text": "The spectrum of a helium gas tube has a green line at the wavelength $502\\,\\text{nm}$. What is the difference between the energies of the helium atom's states in the transition that produces this line? Give the answer in electronvolts.",
+      "answer": 2.47,
+      "unit": "eV",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-2-L1-02",
+      "level": 1,
+      "text": "The difference between the energies of two states of a gas atom is $2.86\\,\\text{eV}$. What is the wavelength of the photon that the atom emits when it moves from the upper state to the lower one? Give the answer in nanometres.",
+      "answer": 434,
+      "unit": "nm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-2-L1-03",
+      "level": 1,
+      "text": "The wavelength of the red spectral line of hydrogen is $656\\,\\text{nm}$. What is the frequency of this light? Give the answer in the unit $10^{14}\\,\\text{Hz}$.",
+      "answer": 4.57,
+      "unit": "10¹⁴ Hz",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-2-L1-04",
+      "level": 1,
+      "text": "The energies of two energy states of the hydrogen atom are $E_3 = -1.51\\,\\text{eV}$ and $E_2 = -3.40\\,\\text{eV}$. What is the energy of the photon that the atom emits when it moves from state $3$ to state $2$? Give the answer in electronvolts.",
+      "answer": 1.89,
+      "unit": "eV",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-2-L1-05",
+      "level": 1,
+      "text": "The difference between the energies of two states of an atom is $3.03 \\cdot 10^{-19}\\,\\text{J}$. What is the wavelength of the photon produced in the transition? Give the answer in nanometres.",
+      "answer": 656,
+      "unit": "nm",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy8-2-L2-01",
+      "level": 2,
+      "text": "A hydrogen atom moves from the state $n = 4$, whose energy is $-0.85\\,\\text{eV}$, to the state $n = 2$, whose energy is $-3.40\\,\\text{eV}$. What is the wavelength of the photon produced? Give the answer in nanometres.",
+      "answer": 486,
+      "unit": "nm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-2-L2-02",
+      "level": 2,
+      "text": "A model atom has three energy states: the ground state $0$ and the excited states $1.85\\,\\text{eV}$ and $4.00\\,\\text{eV}$. A hot gas of such atoms emits three different lines. What is the wavelength of the longest of the lines? Give the answer in nanometres.",
+      "answer": 670,
+      "unit": "nm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-2-L2-03",
+      "level": 2,
+      "text": "The atoms of hydrogen gas at room temperature are in the ground state, whose energy is $-13.6\\,\\text{eV}$. The next energy state is $-3.40\\,\\text{eV}$. What wavelength of light does the gas absorb when an atom moves from the ground state to this state? Give the answer in nanometres.",
+      "answer": 122,
+      "unit": "nm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-2-L2-04",
+      "level": 2,
+      "text": "The frequency of the yellow light of sodium vapour is $5.09 \\cdot 10^{14}\\,\\text{Hz}$. What is the difference between the energies of the sodium atom's states in the transition that produces this light? Give the answer in electronvolts.",
+      "answer": 2.11,
+      "unit": "eV",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy8-2-L3-01",
+      "level": 3,
+      "text": "The visible spectral lines of hydrogen are formed when an atom moves from a higher level to the level $n = 2$, whose energy is $-3.40\\,\\text{eV}$. The higher the starting level, the shorter the wavelength of the line, but the lines never go beyond a certain limit. The energy of levels very high up is almost zero. What is the shortest possible wavelength of this series? Give the answer in nanometres.",
+      "answer": 365,
+      "unit": "nm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-2-L3-02",
+      "level": 3,
+      "text": "Carbon dioxide in the atmosphere strongly absorbs infrared radiation with a wavelength of $15.0\\,\\mu\\text{m}$. The absorption occurs when the molecule moves from one vibrational state to another. What is the energy difference between these vibrational states? Give the answer in millielectronvolts ($1\\,\\text{meV} = 10^{-3}\\,\\text{eV}$).",
+      "answer": 82.7,
+      "unit": "meV",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-2-L3-03",
+      "level": 3,
+      "text": "The molecule of a dye absorbs a UV photon with a wavelength of $365\\,\\text{nm}$. The molecule returns to the ground state in two steps: first it emits an infrared photon with an energy of $1.20\\,\\text{eV}$, and then a second photon, with which it ends up in the ground state. Assume that no energy is transferred to heat. What is the wavelength of the second photon? Give the answer in nanometres.",
+      "answer": 564,
+      "unit": "nm",
+      "tolerance": 0.02
+    }
+  ]
+}

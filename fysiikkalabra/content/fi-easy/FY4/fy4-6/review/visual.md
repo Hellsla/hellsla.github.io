@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 2043669293c73c5a
+CONTENT-HASH: 3687f56e0da2f243
 
 ## Blocking
 - none
@@ -8,4 +8,4 @@ CONTENT-HASH: 2043669293c73c5a
 - none
 
 ## Checked
-- batch delta review: opened fy4-6-360-0 and fy4-6-1280-0 captures: photo loads, floats right beside the text at 1280 px or sits in the column (no clipping, no horizontal overflow), at 360 px full column width; caption and alt text natural plain Finnish and consistent with the picture, no unit-bearing numbers needing LaTeX, credit line present under the caption.
+- batch delta review: "Luvun tärkeät käsitteet" panel captured from preview/fi-easy/fy4-6.html at 390 and 1280 px (the review/shots set has no capture of it) and opened — between the opening and stage 1, term bold over its explanation at 390 px, two-column at 1280 px, no clipping, no horizontal overflow, no KaTeX error; top-390 opened in a montage (read-aloud "Kuuntele" button under the title, layout intact).

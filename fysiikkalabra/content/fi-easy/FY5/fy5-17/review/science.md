@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 9ab7735f51541cfd
+CONTENT-HASH: f46b0497089516a3
 
 ## Blocking
 (none)
@@ -8,4 +8,4 @@ CONTENT-HASH: 9ab7735f51541cfd
 (none)
 
 ## Checked
-batch delta review: new prenatal-scan illustration is physically neutral (gel under the probe kept); objective reworded with same meaning; references updated; lambda = 343/40000 = 8,6 mm correct. Every changed chapter reference names the renamed chapter that holds the cited content, and no old title remains.
+batch delta review: added meta.json key_concepts (Luvun tärkeät käsitteet) checked term by term against the lesson's own definitions, summary and the physics guardrails; no number, formula or choice changed. Terms: ultraääni, heijastuminen (part returns at a boundary between two materials) and maanjäristysaalto (from the rupture, through crust and interior) agree with the lesson.

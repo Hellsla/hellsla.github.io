@@ -17,6 +17,28 @@
     "merkitsevä numero",
     "astronominen yksikkö"
   ],
+  "key_concepts": [
+    {
+      "term": "suure",
+      "explain": "Ominaisuus, jonka voi mitata, esimerkiksi pituus, massa tai aika."
+    },
+    {
+      "term": "yksikkö",
+      "explain": "Sovittu mitta, johon suuretta verrataan, esimerkiksi metri tai sekunti. Lukuarvo ilman yksikköä ei kerro mitään."
+    },
+    {
+      "term": "SI-järjestelmä",
+      "explain": "Kansainvälisesti sovittu yksikköjärjestelmä. Siinä on seitsemän perusyksikköä, esimerkiksi metri, kilogramma ja sekunti."
+    },
+    {
+      "term": "etuliite",
+      "explain": "Yksikön eteen lisätty osa, joka kertoo kymmenpotenssin. Esimerkiksi kilo tarkoittaa tuhatta ja milli tuhannesosaa."
+    },
+    {
+      "term": "merkitsevä numero",
+      "explain": "Lukuarvon numero, joka kertoo, kuinka tarkasti suure tunnetaan."
+    }
+  ],
   "sim": true,
   "solutions": "all",
   "image": false
