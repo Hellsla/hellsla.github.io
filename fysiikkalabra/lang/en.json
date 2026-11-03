@@ -1560,7 +1560,7 @@
       "n1": "1 battery",
       "n2": "2 batteries",
       "n3": "3 batteries",
-      "selite": "Red lead from the plus jack of the meter, black from the COM jack. Purple arrow: direction of the current.",
+      "selite": "Red lead from the meter's plus jack, black from COM. Purple arrow: current direction.",
       "lukemat": "Measuring range ${{alue}}$<br><strong>{{lukema}}</strong><br>Lamp {{lamppu}}",
       "lukema": "Meter reading ${{q}} = {{v}}$",
       "lukema_ol": "Meter reading: OL, that is over the measuring range",

@@ -1,0 +1,22 @@
+{
+  "id": "fy6-1",
+  "course": "FY6",
+  "title": "Circuit, electric current and voltage",
+  "goals": [
+    "LOPS FY6: voltage and electric current in direct-current circuits",
+    "Clarification: the basic concepts related to the electric interaction, electric current and the components of direct-current circuits",
+    "Skills: drawing circuit diagrams"
+  ],
+  "prerequisites": [],
+  "glossary": [
+    "sähkövirta",
+    "jännite",
+    "virtapiiri",
+    "kytkentäkaavio",
+    "johde",
+    "eriste"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}
