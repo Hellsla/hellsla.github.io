@@ -78,7 +78,7 @@ def grid():
     f = Fig("fy78-grid", 372, "Kaavakuva sähköverkosta, ei mittakaavassa. Ylärivillä voimalaitoksen generaattorin "
             "jännite 20 kV nostetaan muuntajalla 400 kilovoltiksi, ja kantaverkon suuret pylväät vievät sähkön "
             "sähköasemalle. Sähköasemalla muuntaja laskee jännitteen, ja alarivillä jakeluverkon pienet pylväät vievät "
-            "20 kV:n jännitteen muuntamolle, joka laskee sen kotien 230 voltiksi.")
+            "20 kV:n jännitteen muuntamolle, joka laskee sen kotien 230 voltiksi.", width=640)
     # top row: plant -> step-up transformer -> 400 kV line -> substation
     plant(f, 16, 170)
     f.line(80, 150, 152, 150, INK, 2.5)
