@@ -110,7 +110,7 @@
 
 ## fy6-10-L3-03
 **Annettu:** $Q_1 = +4{,}0\,\text{nC}$ kohdassa $x = 0$, $Q_2 = +1{,}0\,\text{nC}$ kohdassa $d = 12\,\text{cm}$. Kolmas varaus näiden välissä
-**Kysytty:** kohta $x$, jossa kolmanteen varaukseen ei vaikuta kokonaisvoimaa, senttimetreinä
+**Kysytty:** kohta $x$, jossa kolmanteen varaukseen kohdistuva kokonaisvoima on nolla, senttimetreinä
 **Periaate:** Molemmat varaukset ovat positiivisia, joten niiden välissä ne työntävät kolmatta varausta vastakkaisiin suuntiin. Kokonaisvoima on nolla, kun voimat ovat yhtä suuret. Coulombin laissa kolmannen varauksen suuruus ja $k$ ovat kummassakin voimassa samat. Siksi ne supistuvat eli jäävät pois, eikä tulos riipu kolmannen varauksen suuruudesta tai merkistä.
 **Kaava:** $k\,\dfrac{Q_1 q}{x^2} = k\,\dfrac{Q_2 q}{(d - x)^2}$, josta $\dfrac{x}{d - x} = \sqrt{\dfrac{Q_1}{Q_2}}$ ja $x = \dfrac{d \sqrt{Q_1 : Q_2}}{1 + \sqrt{Q_1 : Q_2}}$
 **Muunnokset:** Ei tarvita: varausten suhteessa nanocoulombit supistuvat, ja kohta saadaan senttimetreinä.

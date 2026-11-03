@@ -95,7 +95,7 @@
     {
       "id": "fy6-10-L3-03",
       "level": 3,
-      "text": "Pistevaraus $+4{,}0\\,\\text{nC}$ on kohdassa $x = 0$ ja pistevaraus $+1{,}0\\,\\text{nC}$ kohdassa $x = 12\\,\\text{cm}$. Niiden väliselle $x$-akselin kohdalle tuodaan kolmas pistevaraus. Missä kohdassa kolmanteen varaukseen ei vaikuta kokonaisvoimaa? Vastaa senttimetreinä kohdasta $x = 0$.",
+      "text": "Pistevaraus $+4{,}0\\,\\text{nC}$ on kohdassa $x = 0$ ja pistevaraus $+1{,}0\\,\\text{nC}$ kohdassa $x = 12\\,\\text{cm}$. Niiden väliselle $x$-akselin kohdalle tuodaan kolmas pistevaraus. Missä kohdassa kolmanteen varaukseen kohdistuva kokonaisvoima on nolla? Vastaa senttimetreinä kohdasta $x = 0$.",
       "answer": 8.0,
       "unit": "cm",
       "tolerance": 0.02

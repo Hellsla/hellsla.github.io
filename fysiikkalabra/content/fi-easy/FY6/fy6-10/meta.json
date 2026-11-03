@@ -27,7 +27,7 @@
     },
     {
       "term": "alkeisvaraus",
-      "explain": "Pienin vapaana esiintyvä varaus. Protonin varaus on tämän verran positiivinen ja elektronin varaus yhtä paljon negatiivinen."
+      "explain": "Pienin varaus, joka voi olla vapaana. Protonilla on tämän suuruinen positiivinen varaus ja elektronilla yhtä suuri negatiivinen varaus."
     },
     {
       "term": "Coulombin laki",
