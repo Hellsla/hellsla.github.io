@@ -1,14 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: cba23ec607e17a7b
-
+CONTENT-HASH: e1edbdcd1504df0c
 ## Blocking
-- none
 
 ## Polish
-- "interferoivat" jää selittämättä, mutta viittaus lukuun *Aaltojen interferenssi* riittää.
 
 ## Checked
-- Lyhyet virkkeet, yksi asia kerrallaan; mitään syy-seuraussuhdetta tai vaihetta ei ole pudotettu (rakenne verrattu avain kerrallaan, ei pituuseroja).
-- Tavoitteet täydentävät lauseen "Tällä tunnilla opit"; esitiedot päättyvät luvun nimeen; ei lesson-id:tä.
-- Kaappaukset: contact-1 (top-390, sim-390, kuvat 1–5, esimerkki, Pohdinta, Ennusta).
-- Esimerkki seitsemässä vaiheessa; kokeiden alkutilat ja lukitut muuttujat ennallaan.
+batch delta review: new lesson title and renamed chapter cross-references (prior lists, feedback, theory text) read in context; the names match the new titles of the target lessons, wording and Finnish unchanged otherwise, no stale old titles left in the lesson files.

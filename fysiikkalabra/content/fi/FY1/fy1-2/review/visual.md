@@ -1,15 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: ac597b2b7b79c1f5
+CONTENT-HASH: d21e3de3f3e15ea0
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] stage-tarkista-390-1 Q1/Q2 — rivinvaihto jättää "." ja "(" yksin rivin alkuun/loppuun inline-kaavan ympärillä (ennallaan) — sitova välimerkki tai nowrap.
-- [Minor] theory-1280 — $a\cdot10^n$ voi katketa kertomerkin kohdalta (ennallaan).
+- [Minor] Photo sits unfloated in the column at 1280 px (a figure row follows, so the house rule keeps it inline) and leaves the right side empty; acceptable, no change asked.
 
 ## Checked
-- Delta: stage-ennusta-390-1 ja open-ennusta-1280-1: otsikko "Ennuste 2: kauempana oleva luotain" on sujuva, mahtuu kahdelle riville 390 px:ssä eikä katkea, sopii Ennuste 1 -otsikon rinnalle; tehtävän asettelu ehjä, $10^{7}\,\text{km}$ ja $10^{9}\,\text{km}$ luettavia.
-
-## Scores
-illustrations 5 · typography 4 · Finnish 5 · accessibility 4
+- batch delta review: opened fy1-2-1280-0.png and fy1-2-360-0.png (photo floated or inline in the column, no clipping or horizontal overflow, credit line present); alt text and caption read against the picture and the neighbouring paragraph; no number with a unit in the new caption or alt text.

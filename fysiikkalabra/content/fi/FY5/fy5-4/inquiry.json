@@ -7,7 +7,7 @@
     "selittämään, mikä voima kääntää auton kaarteessa ja mistä ulospäin painautumisen tunne tulee."
   ],
   "prior": [
-    "Ratanopeus $v = \\tfrac{2\\pi r}{T}$ ja nopeuden suunnan muuttuminen ympyräliikkeessä (luku *Ympyräliike ja ratanopeus*)",
+    "Ratanopeus $v = \\tfrac{2\\pi r}{T}$ ja nopeuden suunnan muuttuminen ympyräliikkeessä (luku *Ympyrärata: jaksonaika ja ratanopeus*)",
     "Voimakuvion piirtäminen ja liikeyhtälöt $\\Sigma F_x = m a_x$ ja $\\Sigma F_y = m a_y$ (luku *Voimakuvio ja voimien yhteisvaikutus*)",
     "Lepokitka on enintään $\\mu_0 N$ (luku *Paino, kitka ja kalteva taso*)"
   ],
@@ -30,7 +30,7 @@
         {
           "text": "Nopeuden suuruus pysyy samana, mutta sen suunta muuttuu.",
           "correct": true,
-          "feedback": "Oikein. Kuten luvussa *Ympyräliike ja ratanopeus* opit, nopeus on aina radan tangentin suuntainen, joten sen suunta kääntyy kappaleen kiertäessä. Tässä luvussa selvitetään, mitä suunnan muutos merkitsee kiihtyvyydelle ja voimille."
+          "feedback": "Oikein. Kuten luvussa *Ympyrärata: jaksonaika ja ratanopeus* opit, nopeus on aina radan tangentin suuntainen, joten sen suunta kääntyy kappaleen kiertäessä. Tässä luvussa selvitetään, mitä suunnan muutos merkitsee kiihtyvyydelle ja voimille."
         },
         {
           "text": "Nopeus pysyy kokonaan samana, koska kappaleen vauhti ei muutu.",

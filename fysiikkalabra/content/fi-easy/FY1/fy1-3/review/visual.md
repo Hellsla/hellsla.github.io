@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 45c7521da661129d
+CONTENT-HASH: fbf6f7fb59fa651f
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] Caption is two sentences but the second is long; consider "Sen kilometrien pituiset varret mittaavat hyvin pieniä pituuden muutoksia." (optional).
+- none
 
 ## Checked
-batch delta review: Playwright captures of the built page at 360 and 1280 px (LIGO Hanford); photo sits after a paragraph, 320 px wide, caption and credit under it, no horizontal overflow, float beside text at 1280, full-width flow at 360; alt text matches the image; caption plain Finnish and factual.
+- batch delta review: opened fy-easy captures fy1-3-1280 and fy1-3-360 (photo, caption, credit line, alt text read against picture and neighbouring paragraph; no clipping or horizontal overflow; no plain-text quantity in new caption/alt).

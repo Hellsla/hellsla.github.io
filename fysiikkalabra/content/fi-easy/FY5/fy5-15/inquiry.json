@@ -2,13 +2,13 @@
   "version": 1,
   "contribution": "Äänen voimakkuudelle tulee suure ja asteikko. Suure on intensiteetti $I = \\tfrac{P}{A}$. Pistemäisestä lähteestä tulevalle äänelle pätee etäisyyden neliön käänteislaki. Lisäksi opitaan kuulokynnys $I_0$ ja intensiteettitaso desibeleinä logaritmin avulla. Opitaan myös laskemaan intensiteetti tasosta ja usean lähteen yhteistaso intensiteettien summana.",
   "learn": [
-    "laskemaan äänen intensiteetin, kun tiedät tehon ja pinta-alan tai etäisyyden pistemäiseen lähteeseen.",
+    "laskemaan äänen intensiteetin tehon ja pinta-alan avulla tai tehon ja pistemäisen lähteen etäisyyden avulla.",
     "laskemaan intensiteettitason desibeleinä ja laskemaan intensiteetin tunnetusta tasosta logaritmin avulla.",
     "selittämään, mitä kuulokynnys tarkoittaa, ja laskemaan usean äänilähteen yhteistason."
   ],
   "prior": [
-    "Ääni on ilmassa etenevä pitkittäinen aalto. Aallon amplitudi kertoo, kuinka voimakas ääni on (luku *Äänen ominaisuudet*)",
-    "Aalto kuljettaa energiaa lähteestä ympäristöön. Väliaine ei siirry mukana (luku *Mekaaninen aaltoliike*)",
+    "Ääni on ilmassa etenevä pitkittäinen aalto. Aallon amplitudi kertoo, kuinka voimakas ääni on (luku *Ääni aaltona: korkeus, sointiväri ja Dopplerin ilmiö*)",
+    "Aalto kuljettaa energiaa lähteestä ympäristöön. Väliaine ei siirry mukana (luku *Aaltojen synty ja eteneminen*)",
     "Teho on energia aikayksikköä kohti, $P = \\tfrac{\\Delta E}{\\Delta t}$. Tehon yksikkö on watti (luku *Teho*)"
   ],
   "activities": [
@@ -30,11 +30,11 @@
         {
           "text": "Ääniaallon amplitudi eli ilman painevaihtelun suuruus kasvaa.",
           "correct": true,
-          "feedback": "Oikein. Sama sävel tarkoittaa samaa taajuutta. Voimakkaampi ääni tarkoittaa suurempaa amplitudia (luku *Äänen ominaisuudet*). Tässä luvussa voimakkuutta mitataan aallon kuljettamalla teholla pinta-alaa kohti."
+          "feedback": "Oikein. Sama sävel tarkoittaa samaa taajuutta. Voimakkaampi ääni tarkoittaa suurempaa amplitudia (luku *Ääni aaltona: korkeus, sointiväri ja Dopplerin ilmiö*). Tässä luvussa voimakkuutta mitataan aallon kuljettamalla teholla pinta-alaa kohti."
         },
         {
           "text": "Äänen taajuus kasvaa, koska kova ääni on korkeampi.",
-          "feedback": "Taajuus määrää sävelkorkeuden, ei voimakkuutta. Sama sävel voi soida hiljaa tai kovaa (luku *Äänen ominaisuudet*). Kovempi ääni on aalto, jolla on sama taajuus mutta suurempi amplitudi."
+          "feedback": "Taajuus määrää sävelkorkeuden, ei voimakkuutta. Sama sävel voi soida hiljaa tai kovaa (luku *Ääni aaltona: korkeus, sointiväri ja Dopplerin ilmiö*). Kovempi ääni on aalto, jolla on sama taajuus mutta suurempi amplitudi."
         },
         {
           "text": "Ääni etenee ilmassa nopeammin, joten se ehtii korvaan voimakkaampana.",

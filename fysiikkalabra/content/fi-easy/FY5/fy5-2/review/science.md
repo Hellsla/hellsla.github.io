@@ -1,14 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 3656c1e180151112
+CONTENT-HASH: 0391b8113be17541
 
 ## Blocking
 (none)
 
 ## Polish
-- Sim canvas draws $x_\text{pp}$ and $F_\text{k}$: same as Finnish, consistent.
+(none)
 
 ## Checked
-- Lesson, inquiry, exit ticket, figures.json compared with the Finnish by script (numbers, latex blocks, structure) and by reading: nothing dropped, no physics changed.
-- Terms uniform: "liikkeen suhteen" and "kiertymisen suhteen" now used everywhere (the exercise and inquiry solution texts were still "etenemisen/pyörimisen"; fixed).
-- Fixed: simplified texts that were still identical to the Finnish; each keeps all numbers and formulas.
-- Delta (drawn force diagrams in solutions of siirto and tarkistus-2): figure words in figures.json fi-easy (keinulauta, hyppylauta) are Finnish and consistent; diagram labels F_p, F_h, F_l, F, G, N match the symbols in the fi-easy solutions; distances and the 294 N result match the Finnish.
+batch delta review: new opening illustration description (painter on the plank between trestles, paint can on the unsupported overhang) still poses the tipping question correctly; cross-references to fy5-1 renamed; momentti feedback numbers (20 N x 0,80 m = 16 Nm) unchanged and correct. Every changed chapter reference names the renamed chapter that holds the cited content, and no old title remains.

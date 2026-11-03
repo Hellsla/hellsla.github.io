@@ -218,6 +218,8 @@ Kuva on kaaviokuva: nuolen pituus kuvaa hiukkasen nopeutta. Astiat ovat yhtä su
 
 Lämpötilaa mitataan celsiusasteikolla, jossa $0\,{}^\circ\text{C}$ on veden jäätymispiste ja $100\,{}^\circ\text{C}$ veden kiehumispiste normaalipaineessa, ja kelvinasteikolla. Kelvinasteikon nollapiste on absoluuttinen nollapiste, alin mahdollinen lämpötila. Siinä hiukkasten keskimääräinen liike-energia on pienimmillään, eikä kylmempää voi olla. Celsiusasteen ja kelvinin suuruus on sama, joten lämpötilaero on sama kelvineinä ja celsiusasteina. Kun tilavuus ja kaasun määrä pysyvät samoina ja kaasu on harvaa eli kaukana nesteytymisestä, kaasun paine on suoraan verrannollinen kelvinlämpötilaan. Myös harvan kaasun hiukkasten keskimääräinen liike-energia on suoraan verrannollinen kelvinlämpötilaan, joten lämpötilojen suhteita verrataan kelvineinä. Paineen, tilavuuden ja lämpötilan yhteyttä tutkitaan tarkemmin luvussa *Kaasujen tilanmuutokset ja Boylen laki*.
 
+<figure class="unit-photo"><img src="pics/fy3/liquid-thermometer.webp" alt="Lasinen nestelämpömittari sinisellä taustalla. Asteikolla näkyvät luvut 36–39."><figcaption>Lämpömittari näyttää oman lämpötilansa. Siksi mittarin on oltava kohteen kanssa lämpötasapainossa ennen kuin lukema kertoo kohteen lämpötilan.</figcaption></figure>
+
 <figure class="unit-photo"><img src="pics/fy3/liquid-nitrogen.webp" alt="Käsi pitää lasimaljaa, jolta valuu nestettä ja jonka ympärillä leijuu valkoista sumua."><figcaption>Nestemäistä typpeä kaadetaan lasimaljalta tiedetapahtumassa Katowicessa. Typpi kiehuu hyvin matalassa lämpötilassa, ja valkoinen sumu on pieniä vesipisaroita, jotka tiivistyvät ilman vesihöyrystä kylmässä.</figcaption></figure>
 
 ### Mallin rajat

@@ -1,17 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 1d23f75557c706fd
+CONTENT-HASH: 670f9d2d6811618b
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] lesson.md, Kaava, "Kappale voi olla hetkellä $t = 0$ paikassa $x_0$. Silloin kaavasta saadaan…" — "voi olla" makes a given condition sound like a possibility — "Jos kappale on hetkellä $t = 0$ paikassa $x_0$, kaavasta saadaan paikka ajan funktiona:".
-- [Minor] lesson.md, Kaava — "Epätasaisessa liikkeessä keskinopeus kertoo vain yhden asian. Se kertoo vakionopeuden…" is a mechanical pair of sentences — "Epätasaisessa liikkeessä keskinopeus on vakionopeus, jolla sama siirtymä tehtäisiin samassa ajassa."
-- [Minor] inquiry.json, Mittausaineisto (`stage-tutki-390-2`) — "(0 s; 4,1 m)" is plain text with units, twice (inherited from the reviewed Finnish text) — `$(0\,\text{s};\, 4{,}1\,\text{m})$`.
-- [Minor] Tutki experiment status line and Tehtävät intro at 390 are set in a much larger type than the card text; shared template, same on the Finnish page.
+- [Minor] fy4-1 kuva: kuva istuu hyvin $(t,x)$-kuvaajan kappaleen viereen, mutta se kuvaa liikettä vain epäsuorasti; kuvatekstiin voisi lisätä lauseen: "Viivan pituus kertoo, kuinka pitkän matkan auto kulki valotuksen aikana."
 
 ## Checked
-- All six contact sheets (#1–#69 thumbnails); full size: fig-5 (390), sim-1280, intro-1280, open-exercises-1280-3. Figures 1–7 (same drawings as the Finnish page, labels translated: "sovitettu suora", "menomatka", "paluumatka" fit), worked example, Ennusta, Tutki, Teoriatiivistelmä, Sovella, Tarkista, exit ticket and exercises from the contact sheets.
-- No English word on any capture; Case select fits ("1: sama lähtöpaikka"); decimal comma and units correct; no overflow or red KaTeX. Language is deliberately short-sentenced, glossary terms consistent (paikka, siirtymä, nopeus, keskinopeus).
-
-## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 4
+- batch delta review: opened fy4-1-360-0 and fy4-1-1280-0 captures: photo loads, floats right beside the text at 1280 px or sits in the column (no clipping, no horizontal overflow), at 360 px full column width; caption and alt text natural plain Finnish and consistent with the picture, no unit-bearing numbers needing LaTeX, credit line present under the caption.

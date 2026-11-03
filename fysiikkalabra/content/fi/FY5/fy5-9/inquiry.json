@@ -7,8 +7,8 @@
     "määrittämään heilurin jaksonajan mittauksesta epävarmuuksineen."
   ],
   "prior": [
-    "Jaksonaika $T$ on yhden jakson kesto, taajuus $f = \\tfrac{1}{T}$ ja amplitudi suurin poikkeama tasapainoasemasta (luku *Jaksollinen liike*)",
-    "Harmoninen voima $F = -kx$ osoittaa kohti tasapainoasemaa, ja jousen potentiaalienergia on $\\tfrac{1}{2}kx^2$ (luku *Harmoninen voima ja jousen potentiaalienergia*)"
+    "Jaksonaika $T$ on yhden jakson kesto, taajuus $f = \\tfrac{1}{T}$ ja amplitudi suurin poikkeama tasapainoasemasta (luku *Värähtelyn suureet: jaksonaika, taajuus ja amplitudi*)",
+    "Harmoninen voima $F = -kx$ osoittaa kohti tasapainoasemaa, ja jousen potentiaalienergia on $\\tfrac{1}{2}kx^2$ (luku *Jousivoima ja jousen energia*)"
   ],
   "activities": [
     {
@@ -29,7 +29,7 @@
         {
           "text": "Vasemmalle, kohti tasapainoasemaa, $2{,}0\\,\\text{N}$.",
           "correct": true,
-          "feedback": "Oikein. Harmoninen voima on $F = -kx$: sen suuruus on $kx = 40\\,\\text{N/m} \\cdot 0{,}050\\,\\text{m} = 2{,}0\\,\\text{N}$, ja miinusmerkki kertoo, että se osoittaa poikkeamaa vastaan eli kohti tasapainoasemaa (luku *Harmoninen voima ja jousen potentiaalienergia*). Tänään selvitetään, millaisen liikkeen tämä voima saa aikaan, kun kappale päästetään irti."
+          "feedback": "Oikein. Harmoninen voima on $F = -kx$: sen suuruus on $kx = 40\\,\\text{N/m} \\cdot 0{,}050\\,\\text{m} = 2{,}0\\,\\text{N}$, ja miinusmerkki kertoo, että se osoittaa poikkeamaa vastaan eli kohti tasapainoasemaa (luku *Jousivoima ja jousen energia*). Tänään selvitetään, millaisen liikkeen tämä voima saa aikaan, kun kappale päästetään irti."
         },
         {
           "text": "Oikealle, poikkeaman suuntaan, $2{,}0\\,\\text{N}$.",

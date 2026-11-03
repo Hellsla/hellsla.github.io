@@ -1,129 +1,204 @@
-# Tasapaino kiertymisen suhteen
+# Kappaleen tasapaino: voimat ja momentit
 
 > **Miksi** maalauspukkien päällä olevan lankun ulokkeelle voi nostaa maalipurkin, mutta vain tiettyyn kohtaan asti ennen kuin lankku kaatuu?
 
-<svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: talon seinän edessä on kaksi maalauspukkia ja niiden päällä pitkä lankku. Lankun oikea pää ulottuu reilusti oikeanpuoleisen pukin yli, ja ulokkeen päällä on maalipurkki ja sivellin. Maalari seisoo maassa lankun vieressä. Kuvasta herää kysymys, kuinka kauas ulokkeelle kuormaa voi viedä ennen kuin lankku kaatuu." class="fig-hero" style="max-width:100%;font-size:24px">
-  <defs><linearGradient id="fy52h-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#eef5f9"/></linearGradient><linearGradient id="fy52h-grass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b2f2bb"/><stop offset="1" stop-color="#2b8a3e"/></linearGradient><linearGradient id="fy52h-plank" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9c98a"/><stop offset="1" stop-color="#d9b26a"/></linearGradient></defs>
-  <rect x="0" y="0" width="1200" height="470" fill="url(#fy52h-sky)"/>
-  <path d="M149,128 Q147,97.5 183,101 Q197.5,68.5 233.5,79.5 Q266,61.5 284,95.5 Q316.5,99 313,128 Z" fill="#ffffff" stroke-linejoin="round"/>
-  <path d="M947,94 Q945.5,70 973.5,73 Q985,48 1013,56 Q1038,42 1052,69 Q1077,71.5 1074.5,94 Z" fill="#ffffff" stroke-linejoin="round"/>
-  <rect x="120" y="120" width="960" height="350" fill="#f1dfb5"/>
-  <line x1="120" y1="120" x2="120" y2="470" stroke="#d9b26a" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="152" y1="120" x2="152" y2="470" stroke="#d9b26a" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="184" y1="120" x2="184" y2="470" stroke="#d9b26a" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="216" y1="120" x2="216" y2="470" stroke="#d9b26a" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="248" y1="120" x2="248" y2="470" stroke="#d9b26a" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="280" y1="120" x2="280" y2="470" stroke="#d9b26a" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="312" y1="120" x2="312" y2="470" stroke="#d9b26a" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="344" y1="120" x2="344" y2="470" stroke="#d9b26a" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="376" y1="120" x2="376" y2="470" stroke="#d9b26a" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="408" y1="120" x2="408" y2="470" stroke="#d9b26a" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="440" y1="120" x2="440" y2="470" stroke="#d9b26a" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="472" y1="120" x2="472" y2="470" stroke="#d9b26a" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="504" y1="120" x2="504" y2="470" stroke="#d9b26a" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="536" y1="120" x2="536" y2="470" stroke="#d9b26a" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="568" y1="120" x2="568" y2="470" stroke="#d9b26a" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="600" y1="120" x2="600" y2="470" stroke="#d9b26a" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="632" y1="120" x2="632" y2="470" stroke="#d9b26a" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="664" y1="120" x2="664" y2="470" stroke="#d9b26a" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="696" y1="120" x2="696" y2="470" stroke="#d9b26a" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="728" y1="120" x2="728" y2="470" stroke="#d9b26a" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="760" y1="120" x2="760" y2="470" stroke="#d9b26a" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="792" y1="120" x2="792" y2="470" stroke="#d9b26a" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="824" y1="120" x2="824" y2="470" stroke="#d9b26a" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="856" y1="120" x2="856" y2="470" stroke="#d9b26a" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="888" y1="120" x2="888" y2="470" stroke="#d9b26a" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="920" y1="120" x2="920" y2="470" stroke="#d9b26a" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="952" y1="120" x2="952" y2="470" stroke="#d9b26a" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="984" y1="120" x2="984" y2="470" stroke="#d9b26a" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="1016" y1="120" x2="1016" y2="470" stroke="#d9b26a" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="1048" y1="120" x2="1048" y2="470" stroke="#d9b26a" stroke-width="2" stroke-linecap="butt"/>
-  <path d="M100,128 L600,40 L1100,128 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <rect x="470" y="190" width="170" height="150" fill="#eef5f9" stroke="#1f2933" stroke-width="3"/>
-  <line x1="555" y1="190" x2="555" y2="340" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <line x1="470" y1="265" x2="640" y2="265" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <rect x="458" y="340" width="194" height="14" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
-  <rect x="120" y="120" width="300" height="350" fill="#f2a69c" fill-opacity="0.55"/>
-  <rect x="0" y="470" width="1200" height="130" fill="url(#fy52h-grass)"/>
-  <line x1="20" y1="487.5" x2="26" y2="477.5" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="50" y1="509.5" x2="56" y2="499.5" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="80" y1="502.5" x2="86" y2="492.5" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="110" y1="498" x2="116" y2="488" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="140" y1="491" x2="146" y2="481" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="170" y1="513" x2="176" y2="503" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="200" y1="510" x2="206" y2="500" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="230" y1="500" x2="236" y2="490" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="260" y1="501" x2="266" y2="491" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="290" y1="501" x2="296" y2="491" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="320" y1="481" x2="326" y2="471" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="350" y1="503.5" x2="356" y2="493.5" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="380" y1="504.5" x2="386" y2="494.5" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="410" y1="496" x2="416" y2="486" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="440" y1="514" x2="446" y2="504" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="470" y1="493.5" x2="476" y2="483.5" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="500" y1="497" x2="506" y2="487" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="530" y1="489.5" x2="536" y2="479.5" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="560" y1="519.5" x2="566" y2="509.5" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="590" y1="508.5" x2="596" y2="498.5" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="620" y1="514.5" x2="626" y2="504.5" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="650" y1="514" x2="656" y2="504" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="680" y1="481.5" x2="686" y2="471.5" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="710" y1="505" x2="716" y2="495" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="740" y1="517.5" x2="746" y2="507.5" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="770" y1="489" x2="776" y2="479" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="800" y1="510.5" x2="806" y2="500.5" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="830" y1="486" x2="836" y2="476" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="860" y1="516.5" x2="866" y2="506.5" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="890" y1="487" x2="896" y2="477" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="920" y1="493.5" x2="926" y2="483.5" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="950" y1="502.5" x2="956" y2="492.5" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="980" y1="494.5" x2="986" y2="484.5" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="1010" y1="496" x2="1016" y2="486" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="1040" y1="503" x2="1046" y2="493" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="1070" y1="484.5" x2="1076" y2="474.5" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="1100" y1="505.5" x2="1106" y2="495.5" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="1130" y1="518.5" x2="1136" y2="508.5" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="1160" y1="490" x2="1166" y2="480" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="1190" y1="490.5" x2="1196" y2="480.5" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
-  <path d="M440,392 L394,530" fill="none" stroke="#a97a35" stroke-width="12" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M440,392 L486,530" fill="none" stroke="#a97a35" stroke-width="12" stroke-linejoin="round" stroke-linecap="round"/>
-  <rect x="400" y="388" width="80" height="14" rx="3" fill="#e9c98a" stroke="#a97a35" stroke-width="2.5"/>
-  <line x1="410" y1="470" x2="470" y2="470" stroke="#a97a35" stroke-width="6" stroke-linecap="butt"/>
-  <path d="M780,392 L734,530" fill="none" stroke="#a97a35" stroke-width="12" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M780,392 L826,530" fill="none" stroke="#a97a35" stroke-width="12" stroke-linejoin="round" stroke-linecap="round"/>
-  <rect x="740" y="388" width="80" height="14" rx="3" fill="#e9c98a" stroke="#a97a35" stroke-width="2.5"/>
-  <line x1="750" y1="470" x2="810" y2="470" stroke="#a97a35" stroke-width="6" stroke-linecap="butt"/>
-  <rect x="320" y="370" width="680" height="18" rx="3" fill="url(#fy52h-plank)" stroke="#a97a35" stroke-width="2.5"/>
-  <line x1="350" y1="379" x2="384" y2="379" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="420" y1="379" x2="454" y2="379" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="490" y1="379" x2="524" y2="379" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="560" y1="379" x2="594" y2="379" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="630" y1="379" x2="664" y2="379" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="700" y1="379" x2="734" y2="379" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="770" y1="379" x2="804" y2="379" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="840" y1="379" x2="874" y2="379" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="910" y1="379" x2="944" y2="379" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
-  <rect x="918" y="308" width="56" height="62" rx="4" fill="#c4ccd4" stroke="#8a96a3" stroke-width="3"/>
-  <rect x="918" y="326" width="56" height="22" fill="#1971c2"/>
-  <rect x="912" y="302" width="68" height="10" rx="3" fill="#8a96a3" stroke="#1f2933" stroke-width="2"/>
-  <path d="M926,302 Q946,256 966,302" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
-  <path d="M860,362 L900,366" fill="none" stroke="#a97a35" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
-  <rect x="838" y="358" width="26" height="12" rx="2" fill="#1971c2" stroke="#1f2933" stroke-width="1.5"/>
-  <path d="M202.5,560 L209,402.5 H251 L257.5,560 H236.5 L230,455 L223.5,560 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <path d="M194.5,413 Q190,297.5 230,291 Q270,297.5 265.5,413 Z" fill="#1971c2" stroke-linejoin="round"/>
-  <path d="M198.5,312 L188,413" fill="none" stroke="#1971c2" stroke-width="23.1" stroke-linejoin="round" stroke-linecap="round"/>
-  <circle cx="188" cy="421.5" r="11.55" fill="#f1dfb5"/>
-  <path d="M261.5,312 L272,413" fill="none" stroke="#1971c2" stroke-width="23.1" stroke-linejoin="round" stroke-linecap="round"/>
-  <circle cx="272" cy="421.5" r="11.55" fill="#f1dfb5"/>
-  <rect x="220.5" y="270" width="19" height="25" fill="#f1dfb5"/>
-  <circle cx="230" cy="249" r="31.5" fill="#f1dfb5"/>
-  <path d="M197.5,249 Q198.5,211.5 230,213.5 Q263.5,213.5 262.5,245 Q236.5,232.5 197.5,249 Z" fill="#1f2933" stroke-linejoin="round"/>
+<svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: maalari maalaa talon seinää punaiseksi. Seinän edessä on kaksi maalauspukkia. Niiden päällä on pitkä lankku. Maalari seisoo lankulla pukkien välissä ja maalaa siveltimellä seinän yläosaa. Lankun oikea pää ulottuu pitkälle oikean pukin yli. Tämän ulokkeen päällä on iso maalipurkki. Ulokkeen alla ei ole tukea. Kuvasta herää kysymys: kuinka kauas ulokkeelle purkin voi viedä ennen kuin lankku kaatuu?" class="fig-hero" style="max-width:100%;font-size:24px">
+  <defs><linearGradient id="fy52h-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#eef5f9"/></linearGradient><linearGradient id="fy52h-win90" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eef5f9"/><stop offset="1" stop-color="#a5d8ff"/></linearGradient><linearGradient id="fy52h-win720" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eef5f9"/><stop offset="1" stop-color="#a5d8ff"/></linearGradient><linearGradient id="fy52h-grass" gradientUnits="userSpaceOnUse" x1="0" y1="506" x2="0" y2="600"><stop offset="0" stop-color="#b2f2bb"/><stop offset="1" stop-color="#2b8a3e"/></linearGradient><linearGradient id="fy52h-beam1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9c98a"/><stop offset="1" stop-color="#a97a35"/></linearGradient><linearGradient id="fy52h-beam2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9c98a"/><stop offset="1" stop-color="#a97a35"/></linearGradient><linearGradient id="fy52h-plank" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9c98a"/><stop offset="1" stop-color="#a97a35"/></linearGradient></defs>
+  <rect x="0" y="0" width="1200" height="480" fill="url(#fy52h-sky)"/>
+  <path d="M1056,132 Q1055,111.5 1079,114 Q1088.5,92.5 1112.5,99.5 Q1134,87.5 1146,110.5 Q1167.5,113 1165,132 Z" fill="#ffffff" stroke-linejoin="round"/>
+  <path d="M1000,430 L1010,402 L1020,430 L1030.5,400.5 L1041,430 L1054,391 L1066.5,430 L1079,392 L1092,430 L1109.5,372 L1127.5,430 L1141.5,385.5 L1156,430 L1170.5,384 L1185,430 L1199.5,384.5 L1214,430 V510 H1000 Z" fill="#2b8a3e" stroke-linejoin="round"/>
+  <rect x="-10" y="40" width="1020" height="452" fill="#f2a69c"/>
+  <path d="M-10,40 H600 L594,96 L606,150 L590,214 L604,290 L592,360 L604,430 L596,492 H-10 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <line x1="14" y1="44" x2="14" y2="490" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="14" y1="44" x2="14" y2="490" stroke="#ffffff" stroke-width="3" stroke-opacity="0.18" transform="translate(3 0)"/>
+  <line x1="48" y1="44" x2="48" y2="490" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="48" y1="44" x2="48" y2="490" stroke="#ffffff" stroke-width="3" stroke-opacity="0.18" transform="translate(3 0)"/>
+  <line x1="82" y1="44" x2="82" y2="490" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="82" y1="44" x2="82" y2="490" stroke="#ffffff" stroke-width="3" stroke-opacity="0.18" transform="translate(3 0)"/>
+  <line x1="116" y1="44" x2="116" y2="490" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="116" y1="44" x2="116" y2="490" stroke="#ffffff" stroke-width="3" stroke-opacity="0.18" transform="translate(3 0)"/>
+  <line x1="150" y1="44" x2="150" y2="490" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="150" y1="44" x2="150" y2="490" stroke="#ffffff" stroke-width="3" stroke-opacity="0.18" transform="translate(3 0)"/>
+  <line x1="184" y1="44" x2="184" y2="490" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="184" y1="44" x2="184" y2="490" stroke="#ffffff" stroke-width="3" stroke-opacity="0.18" transform="translate(3 0)"/>
+  <line x1="218" y1="44" x2="218" y2="490" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="218" y1="44" x2="218" y2="490" stroke="#ffffff" stroke-width="3" stroke-opacity="0.18" transform="translate(3 0)"/>
+  <line x1="252" y1="44" x2="252" y2="490" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="252" y1="44" x2="252" y2="490" stroke="#ffffff" stroke-width="3" stroke-opacity="0.18" transform="translate(3 0)"/>
+  <line x1="286" y1="44" x2="286" y2="490" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="286" y1="44" x2="286" y2="490" stroke="#ffffff" stroke-width="3" stroke-opacity="0.18" transform="translate(3 0)"/>
+  <line x1="320" y1="44" x2="320" y2="490" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="320" y1="44" x2="320" y2="490" stroke="#ffffff" stroke-width="3" stroke-opacity="0.18" transform="translate(3 0)"/>
+  <line x1="354" y1="44" x2="354" y2="490" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="354" y1="44" x2="354" y2="490" stroke="#ffffff" stroke-width="3" stroke-opacity="0.18" transform="translate(3 0)"/>
+  <line x1="388" y1="44" x2="388" y2="490" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="388" y1="44" x2="388" y2="490" stroke="#ffffff" stroke-width="3" stroke-opacity="0.18" transform="translate(3 0)"/>
+  <line x1="422" y1="44" x2="422" y2="490" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="422" y1="44" x2="422" y2="490" stroke="#ffffff" stroke-width="3" stroke-opacity="0.18" transform="translate(3 0)"/>
+  <line x1="456" y1="44" x2="456" y2="490" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="456" y1="44" x2="456" y2="490" stroke="#ffffff" stroke-width="3" stroke-opacity="0.18" transform="translate(3 0)"/>
+  <line x1="490" y1="44" x2="490" y2="490" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="490" y1="44" x2="490" y2="490" stroke="#ffffff" stroke-width="3" stroke-opacity="0.18" transform="translate(3 0)"/>
+  <line x1="524" y1="44" x2="524" y2="490" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="524" y1="44" x2="524" y2="490" stroke="#ffffff" stroke-width="3" stroke-opacity="0.18" transform="translate(3 0)"/>
+  <line x1="558" y1="44" x2="558" y2="490" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="558" y1="44" x2="558" y2="490" stroke="#ffffff" stroke-width="3" stroke-opacity="0.18" transform="translate(3 0)"/>
+  <line x1="592" y1="44" x2="592" y2="490" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="592" y1="44" x2="592" y2="490" stroke="#ffffff" stroke-width="3" stroke-opacity="0.18" transform="translate(3 0)"/>
+  <line x1="626" y1="44" x2="626" y2="490" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="626" y1="44" x2="626" y2="490" stroke="#ffffff" stroke-width="3" stroke-opacity="0.18" transform="translate(3 0)"/>
+  <line x1="660" y1="44" x2="660" y2="490" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="660" y1="44" x2="660" y2="490" stroke="#ffffff" stroke-width="3" stroke-opacity="0.18" transform="translate(3 0)"/>
+  <line x1="694" y1="44" x2="694" y2="490" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="694" y1="44" x2="694" y2="490" stroke="#ffffff" stroke-width="3" stroke-opacity="0.18" transform="translate(3 0)"/>
+  <line x1="728" y1="44" x2="728" y2="490" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="728" y1="44" x2="728" y2="490" stroke="#ffffff" stroke-width="3" stroke-opacity="0.18" transform="translate(3 0)"/>
+  <line x1="762" y1="44" x2="762" y2="490" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="762" y1="44" x2="762" y2="490" stroke="#ffffff" stroke-width="3" stroke-opacity="0.18" transform="translate(3 0)"/>
+  <line x1="796" y1="44" x2="796" y2="490" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="796" y1="44" x2="796" y2="490" stroke="#ffffff" stroke-width="3" stroke-opacity="0.18" transform="translate(3 0)"/>
+  <line x1="830" y1="44" x2="830" y2="490" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="830" y1="44" x2="830" y2="490" stroke="#ffffff" stroke-width="3" stroke-opacity="0.18" transform="translate(3 0)"/>
+  <line x1="864" y1="44" x2="864" y2="490" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="864" y1="44" x2="864" y2="490" stroke="#ffffff" stroke-width="3" stroke-opacity="0.18" transform="translate(3 0)"/>
+  <line x1="898" y1="44" x2="898" y2="490" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="898" y1="44" x2="898" y2="490" stroke="#ffffff" stroke-width="3" stroke-opacity="0.18" transform="translate(3 0)"/>
+  <line x1="932" y1="44" x2="932" y2="490" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="932" y1="44" x2="932" y2="490" stroke="#ffffff" stroke-width="3" stroke-opacity="0.18" transform="translate(3 0)"/>
+  <line x1="966" y1="44" x2="966" y2="490" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="966" y1="44" x2="966" y2="490" stroke="#ffffff" stroke-width="3" stroke-opacity="0.18" transform="translate(3 0)"/>
+  <line x1="1000" y1="44" x2="1000" y2="490" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="1000" y1="44" x2="1000" y2="490" stroke="#ffffff" stroke-width="3" stroke-opacity="0.18" transform="translate(3 0)"/>
+  <path d="M750.5,438 l14,-3 l6,9 l-10,8 l-12,-4 Z" fill="#f1dfb5" fill-opacity="0.8"/>
+  <path d="M980.5,184 l14,-3 l6,9 l-10,8 l-12,-4 Z" fill="#f1dfb5" fill-opacity="0.8"/>
+  <path d="M703,236 l14,-3 l6,9 l-10,8 l-12,-4 Z" fill="#f1dfb5" fill-opacity="0.8"/>
+  <path d="M713.5,273.5 l14,-3 l6,9 l-10,8 l-12,-4 Z" fill="#f1dfb5" fill-opacity="0.8"/>
+  <path d="M636.5,113 l14,-3 l6,9 l-10,8 l-12,-4 Z" fill="#f1dfb5" fill-opacity="0.8"/>
+  <path d="M654.5,306.5 l14,-3 l6,9 l-10,8 l-12,-4 Z" fill="#f1dfb5" fill-opacity="0.8"/>
+  <path d="M841,198.5 l14,-3 l6,9 l-10,8 l-12,-4 Z" fill="#f1dfb5" fill-opacity="0.8"/>
+  <path d="M944,282.5 l14,-3 l6,9 l-10,8 l-12,-4 Z" fill="#f1dfb5" fill-opacity="0.8"/>
+  <path d="M829.5,229.5 l14,-3 l6,9 l-10,8 l-12,-4 Z" fill="#f1dfb5" fill-opacity="0.8"/>
+  <path d="M657.5,203.5 l14,-3 l6,9 l-10,8 l-12,-4 Z" fill="#f1dfb5" fill-opacity="0.8"/>
+  <path d="M850.5,378.5 l14,-3 l6,9 l-10,8 l-12,-4 Z" fill="#f1dfb5" fill-opacity="0.8"/>
+  <path d="M713.5,186.5 l14,-3 l6,9 l-10,8 l-12,-4 Z" fill="#f1dfb5" fill-opacity="0.8"/>
+  <path d="M808,399.5 l14,-3 l6,9 l-10,8 l-12,-4 Z" fill="#f1dfb5" fill-opacity="0.8"/>
+  <path d="M675,404 l14,-3 l6,9 l-10,8 l-12,-4 Z" fill="#f1dfb5" fill-opacity="0.8"/>
+  <rect x="90" y="96" width="150" height="170" rx="2" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
+  <rect x="104" y="110" width="122" height="142" fill="url(#fy52h-win90)" stroke="#1f2933" stroke-width="2"/>
+  <line x1="165" y1="110" x2="165" y2="252" stroke="#ffffff" stroke-width="8" stroke-linecap="butt"/>
+  <line x1="104" y1="181" x2="226" y2="181" stroke="#ffffff" stroke-width="8" stroke-linecap="butt"/>
+  <rect x="80" y="266" width="170" height="14" rx="2" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
+  <rect x="720" y="96" width="150" height="170" rx="2" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
+  <rect x="734" y="110" width="122" height="142" fill="url(#fy52h-win720)" stroke="#1f2933" stroke-width="2"/>
+  <line x1="795" y1="110" x2="795" y2="252" stroke="#ffffff" stroke-width="8" stroke-linecap="butt"/>
+  <line x1="734" y1="181" x2="856" y2="181" stroke="#ffffff" stroke-width="8" stroke-linecap="butt"/>
+  <rect x="710" y="266" width="170" height="14" rx="2" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
+  <rect x="994" y="40" width="22" height="452" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
+  <rect x="-10" y="22" width="1050" height="22" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
+  <path d="M-10,0 H1060 L1044,24 H-10 Z" fill="#6c757d" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
+  <rect x="-10" y="488" width="1020" height="20" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+  <rect x="0" y="506" width="1200" height="94" fill="url(#fy52h-grass)"/>
+  <line x1="10" y1="588.5" x2="16" y2="576.5" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="36" y1="585.5" x2="42" y2="573.5" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="62" y1="568" x2="68" y2="556" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="88" y1="570" x2="94" y2="558" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="114" y1="533.5" x2="120" y2="521.5" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="140" y1="557.5" x2="146" y2="545.5" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="166" y1="556" x2="172" y2="544" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="192" y1="556" x2="198" y2="544" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="218" y1="555.5" x2="224" y2="543.5" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="244" y1="556" x2="250" y2="544" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="270" y1="567.5" x2="276" y2="555.5" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="296" y1="535" x2="302" y2="523" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="322" y1="541.5" x2="328" y2="529.5" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="348" y1="578" x2="354" y2="566" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="374" y1="545" x2="380" y2="533" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="400" y1="550" x2="406" y2="538" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="426" y1="532.5" x2="432" y2="520.5" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="452" y1="562.5" x2="458" y2="550.5" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="478" y1="534.5" x2="484" y2="522.5" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="504" y1="560" x2="510" y2="548" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="530" y1="558.5" x2="536" y2="546.5" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="556" y1="560" x2="562" y2="548" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="582" y1="584" x2="588" y2="572" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="608" y1="585" x2="614" y2="573" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="634" y1="565.5" x2="640" y2="553.5" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="660" y1="537.5" x2="666" y2="525.5" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="686" y1="555.5" x2="692" y2="543.5" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="712" y1="581" x2="718" y2="569" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="738" y1="557.5" x2="744" y2="545.5" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="764" y1="544" x2="770" y2="532" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="790" y1="589" x2="796" y2="577" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="816" y1="552" x2="822" y2="540" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="842" y1="588" x2="848" y2="576" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="868" y1="566.5" x2="874" y2="554.5" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="894" y1="578.5" x2="900" y2="566.5" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="920" y1="546.5" x2="926" y2="534.5" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="946" y1="546.5" x2="952" y2="534.5" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="972" y1="541.5" x2="978" y2="529.5" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="998" y1="562.5" x2="1004" y2="550.5" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="1024" y1="564" x2="1030" y2="552" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="1050" y1="564.5" x2="1056" y2="552.5" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="1076" y1="565" x2="1082" y2="553" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="1102" y1="584" x2="1108" y2="572" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="1128" y1="560" x2="1134" y2="548" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="1154" y1="560.5" x2="1160" y2="548.5" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="1180" y1="533" x2="1186" y2="521" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
+  <ellipse cx="560" cy="562" rx="430" ry="10" fill="#1f2933" fill-opacity="0.18"/>
+  <path d="M282,418 L232,560" fill="none" stroke="#1f2933" stroke-width="17" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M282,418 L232,560" fill="none" stroke="#e9c98a" stroke-width="12" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M298,418 L348,560" fill="none" stroke="#1f2933" stroke-width="17" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M298,418 L348,560" fill="none" stroke="#e9c98a" stroke-width="12" stroke-linejoin="round" stroke-linecap="round"/>
+  <rect x="252" y="482" width="76" height="12" rx="3" fill="#e9c98a" stroke="#a97a35" stroke-width="2"/>
+  <rect x="274" y="408" width="32" height="22" rx="3" fill="url(#fy52h-beam1)" stroke="#1f2933" stroke-width="2.5"/>
+  <path d="M662,418 L612,560" fill="none" stroke="#1f2933" stroke-width="17" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M662,418 L612,560" fill="none" stroke="#e9c98a" stroke-width="12" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M678,418 L728,560" fill="none" stroke="#1f2933" stroke-width="17" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M678,418 L728,560" fill="none" stroke="#e9c98a" stroke-width="12" stroke-linejoin="round" stroke-linecap="round"/>
+  <rect x="632" y="482" width="76" height="12" rx="3" fill="#e9c98a" stroke="#a97a35" stroke-width="2"/>
+  <rect x="654" y="408" width="32" height="22" rx="3" fill="url(#fy52h-beam2)" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="170" y="390" width="760" height="18" rx="2" fill="url(#fy52h-plank)" stroke="#1f2933" stroke-width="2.5"/>
+  <path d="M200,399 q30,-3 60,0" fill="none" stroke="#f1dfb5" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M290,399 q30,-3 60,0" fill="none" stroke="#f1dfb5" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M380,399 q30,-3 60,0" fill="none" stroke="#f1dfb5" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M470,399 q30,-3 60,0" fill="none" stroke="#f1dfb5" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M560,399 q30,-3 60,0" fill="none" stroke="#f1dfb5" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M650,399 q30,-3 60,0" fill="none" stroke="#f1dfb5" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M740,399 q30,-3 60,0" fill="none" stroke="#f1dfb5" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M830,399 q30,-3 60,0" fill="none" stroke="#f1dfb5" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M469.5,239.5 L457,379" fill="none" stroke="#1f2933" stroke-width="31.7143" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M469.5,239.5 L457,379" fill="none" stroke="#ffffff" stroke-width="26.9571" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M444.5,385 h25.5" fill="none" stroke="#1f2933" stroke-width="12.6857" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M482.5,239.5 L495,379" fill="none" stroke="#1f2933" stroke-width="31.7143" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M482.5,239.5 L495,379" fill="none" stroke="#ffffff" stroke-width="26.9571" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M482.5,385 h25.5" fill="none" stroke="#1f2933" stroke-width="12.6857" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M442.5,141 L438,234.5" fill="none" stroke="#1f2933" stroke-width="21.4071" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M442.5,141 L438,234.5" fill="none" stroke="#ffffff" stroke-width="16.65" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="437" cy="242.5" r="8.72143" fill="#f1dfb5"/>
+  <path d="M439.5,142.5 Q436.5,119 476,117.5 Q515.5,119 512.5,142.5 L507.5,250.5 H444.5 Z" fill="#ffffff" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M458.5,120.5 L455.5,207.5 M493.5,120.5 L496.5,207.5" fill="none" stroke="#c9c2b2" stroke-width="4" stroke-linejoin="round"/>
+  <rect x="452" y="209" width="47.5" height="27" rx="4" fill="#e3dccb" stroke="#1f2933" stroke-width="2"/>
+  <path d="M507.5,139.5 L568,72" fill="none" stroke="#1f2933" stroke-width="21.4071" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M507.5,139.5 L568,72" fill="none" stroke="#ffffff" stroke-width="16.65" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="570" cy="68" r="8.72143" fill="#f1dfb5"/>
+  <rect x="468" y="98" width="16" height="22" fill="#f1dfb5"/>
+  <circle cx="476" cy="77.5" r="25.3714" fill="#a97a35"/>
+  <path d="M449,74.5 Q450.5,46 476,46 Q501.5,46 503,74.5 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
+  <rect x="447.5" y="69.5" width="57" height="8" rx="3" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
+  <path d="M564,76 L576,56" fill="none" stroke="#a97a35" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"/>
+  <rect x="572" y="32" width="16" height="26" fill="#1f2933" transform="rotate(28 574 58)"/>
+  <rect x="575" y="18" width="10" height="16" fill="#c92a2a" transform="rotate(28 574 58)"/>
+  <path d="M815.0,332 L819.0,390 H863.0 L867.0,332 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
+  <rect x="818" y="354" width="46" height="19.5" fill="#c92a2a"/>
+  <rect x="812" y="328" width="58" height="9" rx="3" fill="#c9c2b2" stroke="#1f2933" stroke-width="2"/>
+  <path d="M817.0,336 Q841,288 865.0,336" fill="none" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M835,328 q6,10 12,0" fill="#c92a2a"/>
 </svg>
 
 ## Ydinajatus
 
 ### Kaksi tasapainoehtoa
-Luvussa *Voiman momentti ja kappaleen kiertyminen* opittiin, että voima kiertää kappaletta sitä enemmän, mitä suurempi on voiman momentti $M = Fr$. Levossa olevalle kappaleelle ei riitä, että voimat kumoavat toisensa. Kappale on **tasapainossa**, kun se ei lähde liikkeelle eikä kiertymään. Liikkeen suhteen ehto on tuttu Newtonin laeista: voimien summa on nolla. Kiertymisen suhteen ehto on uusi: voimien momenttien summa on nolla. Kuvassa viivaimeen vaikuttaa kahdessa tapauksessa kaksi yhtä suurta ja vastakkaista voimaa. Siksi voimien summa on nolla. Vasemmalla voimat ovat samalla suoralla, eivätkä ne kierrä viivainta. Oikealla voimat ovat eri suorilla, ja niiden momentit kiertävät viivainta samaan suuntaan. Viivain alkaa kiertyä, vaikka sen keskipiste ei lähde liikkeelle.
+Luvussa *Momentti: voiman kiertävä vaikutus* opittiin, että voima kiertää kappaletta sitä enemmän, mitä suurempi on voiman momentti $M = Fr$. Levossa olevalle kappaleelle ei riitä, että voimat kumoavat toisensa. Kappale on **tasapainossa**, kun se ei lähde liikkeelle eikä kiertymään. Liikkeen suhteen ehto on tuttu Newtonin laeista: voimien summa on nolla. Kiertymisen suhteen ehto on uusi: voimien momenttien summa on nolla. Kuvassa viivaimeen vaikuttaa kahdessa tapauksessa kaksi yhtä suurta ja vastakkaista voimaa. Siksi voimien summa on nolla. Vasemmalla voimat ovat samalla suoralla, eivätkä ne kierrä viivainta. Oikealla voimat ovat eri suorilla, ja niiden momentit kiertävät viivainta samaan suuntaan. Viivain alkaa kiertyä, vaikka sen keskipiste ei lähde liikkeelle.
 
 <svg data-fig="pari" viewBox="0 0 600 330" role="img" aria-label="Kaavakuva, viivain pöydällä ylhäältä katsottuna, kaksi tapausta. Vasemmalla yhtä suuret ja vastakkaiset voimat F1 ja F2 vetävät viivaimen päistä viivaimen suuntaisesti samalla suoralla: voimien summa ja momenttien summa ovat nolla, eikä viivain kierry. Oikealla yhtä suuret ja vastakkaiset voimat vaikuttavat viivaimen päihin kohtisuoraan sitä vastaan eri suorilla: voimien summa on nolla, mutta momenttien summa ei, ja viivain alkaa kiertyä, mitä kuvaa kaareva nuoli." style="max-width:100%;font-size:24px">
   <line x1="300" y1="20" x2="300" y2="316" stroke="#c9c2b2" stroke-width="2" stroke-linecap="butt" stroke-dasharray="6 6"/>
@@ -258,7 +333,7 @@ Kappale on tasapainossa, kun voimien summa on nolla ja voimien momenttien summa 
 &\Sigma M = 0
 \end{aligned}
 ```
-Tässä $\Sigma\overline{F}$ on kappaleeseen vaikuttavien voimien vektorisumma ($\text{N}$). $\Sigma M$ on voimien momenttien summa jonkin pisteen suhteen ($\text{Nm}$). Ensimmäinen on **tasapainoehto liikkeen suhteen**. Toinen on **momenttiehto** eli tasapainoehto kiertymisen suhteen. Komponenteittain ensimmäinen ehto on $\Sigma F_x = 0$ ja $\Sigma F_y = 0$. Momentit lasketaan kuten luvussa *Voiman momentti ja kappaleen kiertyminen*: $M = Fr$, missä $r$ on voiman varsi. Etumerkki kertoo kiertosuunnan. Tässä luvussa vastapäivään kiertävä momentti on positiivinen.
+Tässä $\Sigma\overline{F}$ on kappaleeseen vaikuttavien voimien vektorisumma ($\text{N}$). $\Sigma M$ on voimien momenttien summa jonkin pisteen suhteen ($\text{Nm}$). Ensimmäinen on **tasapainoehto liikkeen suhteen**. Toinen on **momenttiehto** eli tasapainoehto kiertymisen suhteen. Komponenteittain ensimmäinen ehto on $\Sigma F_x = 0$ ja $\Sigma F_y = 0$. Momentit lasketaan kuten luvussa *Momentti: voiman kiertävä vaikutus*: $M = Fr$, missä $r$ on voiman varsi. Etumerkki kertoo kiertosuunnan. Tässä luvussa vastapäivään kiertävä momentti on positiivinen.
 
 ### Momenttipisteen valinta
 Levossa oleva kappale ei kierry minkään pisteen ympäri. Siksi momenttiehto pätee jokaisen pisteen suhteen. Momenttipisteeksi kannattaa valita tuntemattoman voiman vaikutuspiste. Silloin sen voiman varsi on nolla, eikä voima näy momenttiehdossa. Jos voima ei ole kohtisuorassa sauvamaista kappaletta (lankku, tanko) vastaan, se jaetaan komponentteihin. Kun momenttipiste on sauvan suoralla, momentin antaa sauvaa vastaan kohtisuora komponentti kerrottuna etäisyydellä momenttipisteestä. Kuvassa tangon päähän vaikuttava voima $\overline{F}$ muodostaa tangon kanssa kulman $\alpha$. Tangon suuntainen komponentti $F\cos\alpha$ kulkee saranan kautta eikä kierrä tankoa. Kohtisuora komponentti $F\sin\alpha$ antaa momentin $M = F\sin\alpha \cdot r$.

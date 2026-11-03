@@ -21,17 +21,6 @@
     "width": 1600,
     "height": 742
   },
-  "night-traffic-light-trails.webp": {
-    "title": "The Night Bus (Unsplash)",
-    "creator": "Paul Smith (wizz-bang photography)",
-    "source": "https://commons.wikimedia.org/wiki/File:The_Night_Bus_(Unsplash).jpg",
-    "licence": "CC0 1.0",
-    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-    "edit": "Alareunasta rajattu 4 %, pienennetty, WebP",
-    "checked": "2026-11-03",
-    "width": 1600,
-    "height": 1024
-  },
   "blue-iceberg.webp": {
     "title": "Very Blue Iceberg With Anvil Top",
     "creator": "Eric Kilby",
@@ -64,5 +53,38 @@
     "checked": "2026-11-03",
     "width": 1600,
     "height": 1067
+  },
+  "nist-4-kibble-balance.webp": {
+    "title": "NIST-4 Kibble balance",
+    "creator": "Jennifer Lauren Lee / NIST",
+    "source": "https://commons.wikimedia.org/wiki/File:NIST-4_Kibble_balance.jpg",
+    "licence": "public domain (PD-USGov-NIST)",
+    "licence_url": "https://commons.wikimedia.org/wiki/Template:PD-USGov-NIST",
+    "edit": "Pienennetty, WebP",
+    "checked": "2026-11-03",
+    "width": 1150,
+    "height": 1600
+  },
+  "caliper-measurement.webp": {
+    "title": "High angle shot of person measuring an object",
+    "creator": "Antoni Shkraba",
+    "source": "https://www.pexels.com/photo/high-angle-shot-of-person-measuring-an-object-7166998/",
+    "licence": "Pexels License",
+    "licence_url": "https://www.pexels.com/license/",
+    "edit": "Pienennetty, WebP",
+    "checked": "2026-11-03",
+    "width": 1600,
+    "height": 1067
+  },
+  "city-highway-light-trails.webp": {
+    "title": "Long exposure of highway traffic light trails at night",
+    "creator": "Tao Yuan",
+    "source": "https://unsplash.com/photos/long-exposure-of-highway-traffic-light-trails-at-night-OJ19iDwgBz0",
+    "licence": "Unsplash License",
+    "licence_url": "https://unsplash.com/license",
+    "edit": "Pienennetty, WebP",
+    "checked": "2026-11-03",
+    "width": 1600,
+    "height": 900
   }
 }

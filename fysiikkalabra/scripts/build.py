@@ -48,7 +48,7 @@ if SITE.name == "site.tmp":
 else:
     SITE.mkdir(exist_ok=True)                         # preview/ is shared by agents building at the same time, so it is never wiped
 TPL = ROOT / "templates"
-for f in ("site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js", "investigation.js", "invfilter.js", "padstore.js"): shutil.copy(TPL / f, SITE / f)
+for f in ("site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js", "investigation.js", "invfilter.js", "padstore.js", "readaloud.js"): shutil.copy(TPL / f, SITE / f)
 shutil.copytree(TPL / "vendor", SITE / "vendor", dirs_exist_ok=True)   # p5 + KaTeX, no CDN needed
 if (ROOT / "assets/shared/brand").is_dir():                   # the Ruukkilabra logos and favicon (scripts/brand_logos.py); test copies may leave them out
     shutil.copytree(ROOT / "assets/shared/brand", SITE / "brand", dirs_exist_ok=True)
@@ -162,7 +162,7 @@ def fig_side(text_html, svg):
     return 0.6 <= text_height(text_html) / fig_h <= 1.5
 
 
-PHOTO = re.compile(r'<figure class="unit-photo"><img src="((?:pics/[a-z0-9]+|shared/pics)/[^"]+)"([^>]*)>(?:<figcaption>(.*?)</figcaption>)?</figure>', re.S)
+PHOTO = re.compile(r'<figure class="unit-photo( wide)?"><img src="((?:pics/[a-z0-9]+|shared/pics)/[^"]+)"([^>]*)>(?:<figcaption>(.*?)</figcaption>)?</figure>', re.S)
 
 
 def photo_credits(ref):
@@ -178,13 +178,14 @@ def photo_credits(ref):
 
 def photos(html):
     """(html, credits section) of a lesson's photographs: each `<figure class="unit-photo"><img src alt><figcaption>`
+    (class "unit-photo wide": a data map or chart that needs the column's width, 2026-11-03 FY2 temperature map)
     written in the text gets its size, lazy loading and a short credit under the caption from photos.json, and the
     page ends with the full credits (the FY14 units' form, scripts/units.py tail_html)."""
     used = []
     def one(m):
-        ref, attrs, cap = m.group(1), m.group(2), m.group(3) or ""
+        wide, ref, attrs, cap = m.group(1) or "", m.group(2), m.group(3), m.group(4) or ""
         c = photo_credits(ref); used.append(c)
-        return (f'<figure class="unit-photo"><img src="{ref}"{attrs} width="{c["width"]}" height="{c["height"]}" loading="lazy" decoding="async">'
+        return (f'<figure class="unit-photo{wide}"><img src="{ref}"{attrs} width="{c["width"]}" height="{c["height"]}" loading="lazy" decoding="async">'
                 f'<figcaption>{cap} <span class="photo-credit">{T("lesson.photo_by")}: {esc(c["creator"])}, {esc(c["licence"])}</span></figcaption></figure>')
     html = PHOTO.sub(one, html)
     if not used: return html, ""
@@ -317,7 +318,7 @@ def notice(state): return f'<p class="notice" role="note">{T("lesson.notice_" + 
 def strings_block(sim_key):
     """The texts the page's scripts read (lesson.js, inquiry.js, sim-embed.js and the simulation): lang "js", the
     number format and the simulation's own block of "sims", as one JSON element in the page."""
-    data = {"js": T("js"), "format": {"decimal": T("format.decimal")}}
+    data = {"js": T("js"), "format": {"decimal": T("format.decimal")}, "speech": T("speech")}   # speech: readaloud.js
     if sim_key: data["sim"] = i18n.sim_strings(sim_key, T.lang) or i18n.sim_strings(sim_key)
     return '<script id="fl-strings" type="application/json">' + json.dumps(data, ensure_ascii=False).replace("</", "<\\/") + "</script>"
 assets = []  # published asset paths (relative to the output folder), checked before the swap
@@ -579,6 +580,7 @@ def build_language(lang):
             for q in exit_q) + "</ol>"
         lesson_md = (folder / "lesson.md").read_text()
         lesson_html = staged_example(fig_rows(named_sections(nbsp_units(render_md(example_md(lesson_md))))))
+        lesson_raw = lesson_html                          # the inquiry layout credits the photographs of the whole page (theory and tasks)
         lesson_html, photo_tail = photos(lesson_html)
         inq = inquiry.load(folder)
         if inq is not None:
@@ -617,7 +619,7 @@ def build_language(lang):
                     f'<section id="exit"><h2>{inquiry.exit_title()}</h2>{exit_items}</section>\n'
                     f'<section id="exercises"><h2>{inquiry.exercises_title()}</h2>{howto if ex else ""}{ex_html}</section>{photo_tail}')
         else:                                             # inquiry layout: the same parts placed by inquiry.json (scripts/inquiry.py)
-            lesson_html = lesson_html.replace("<!-- sim -->", "")
+            lesson_html = lesson_raw.replace("<!-- sim -->", "")
             pieces = re.split(r"(?=<h2[ >])", lesson_html)
             intro = pieces[0] if not pieces[0].startswith("<h2") else ""
             sections = {}
@@ -628,6 +630,7 @@ def build_language(lang):
             parts = {"intro": intro, "sections": sections, "sim": sim, "exercises": f'{howto if ex else ""}{ex_html}',
                      "exit": f'<div id="exit"><h3>{inquiry.exit_title()}</h3>{exit_items}</div>'}
             body, toc = inquiry.render(folder, inq, parts, lambda t: nbsp_units(render_md(t)))
+            body, photo_tail = photos(body)               # a photograph may also open a task (FY4 2026-11-03: Pohdinta)
             main = f'<article id="teoria" class="inquiry">{body}{photo_tail}</article>'
         skey = (meta["id"] if where[0] == "lesson" else where[1].name) if where else None   # the sim's block of lang "sims"
         html = (texts(tpl).replace("<title>{{title}}", "<title>" + esc(plain_tex(meta["title"]))).replace('og:title" content="{{title}}', 'og:title" content="' + esc(plain_tex(meta["title"])))
@@ -850,7 +853,7 @@ link_languages()
 i18n.set_lang(i18n.SOURCE)
 # Cache busting (teacher 2026-11-03: a page fetched just after a deploy showed new HTML with yesterday's cached site.css):
 # every link to a shared stylesheet or script carries ?v=<first 8 hex of its SHA-256>, so a changed file is a new URL.
-SHARED = ("site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js", "investigation.js", "invfilter.js", "padstore.js")
+SHARED = ("site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js", "investigation.js", "invfilter.js", "padstore.js", "readaloud.js")
 _ver = {f: hashlib.sha256((SITE / f).read_bytes()).hexdigest()[:8] for f in SHARED if (SITE / f).is_file()}
 _ref = re.compile(r'((?:href|src)="(?:\.\./)*)(' + "|".join(re.escape(f) for f in _ver) + r')(?:\?v=[0-9a-f]*)?"')
 for _page in SITE.rglob("*.html"):
@@ -858,7 +861,7 @@ for _page in SITE.rglob("*.html"):
     _old = _page.read_text(); _new = _ref.sub(lambda m: f'{m[1]}{m[2]}?v={_ver[m[2]]}"', _old)
     if _new != _old: _page.write_text(_new)
 if SITE.name == "site.tmp":                      # check the render, then swap it in; the old site comes back if the swap fails
-    expected += ["site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js", "investigation.js", "invfilter.js", "padstore.js"] + assets
+    expected += ["site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js", "investigation.js", "invfilter.js", "padstore.js", "readaloud.js"] + assets
     broken = [n for n in expected if not (SITE / n).is_file() or (SITE / n).stat().st_size == 0]
     if broken or not (SITE / "vendor").is_dir(): sys.exit(f"build check failed, site/ left unchanged: missing or empty {broken or ['vendor/']}")
     old = ROOT / "site.old"

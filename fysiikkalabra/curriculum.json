@@ -1159,10 +1159,17 @@
       "Hyvinvointiosaaminen"
     ],
     "initialized": "2026-11-03",
+    "themes": [
+      {"title": "Pyöriminen ja tasapaino", "first": "fy5-1"},
+      {"title": "Ympyräliike ja gravitaatio", "first": "fy5-3"},
+      {"title": "Värähtelyt", "first": "fy5-7"},
+      {"title": "Aaltoliike", "first": "fy5-10"},
+      {"title": "Ääni", "first": "fy5-14"}
+    ],
     "lessons": [
       {
         "id": "fy5-1",
-        "title": "Voiman momentti ja kappaleen kiertyminen",
+        "title": "Momentti: voiman kiertävä vaikutus",
         "goals": [
           "LOPS FY5: momentti ja kappaleen kiertyminen"
         ],
@@ -1177,7 +1184,7 @@
       },
       {
         "id": "fy5-2",
-        "title": "Tasapaino kiertymisen suhteen",
+        "title": "Kappaleen tasapaino: voimat ja momentit",
         "goals": [
           "LOPS FY5: tasapaino kiertymisen suhteen yksinkertaisissa tilanteissa",
           "Täsmennys: voimien komponentteihin jako voi olla tarpeen, kun pääpaino on fysiikan ymmärtämisessä eikä matematiikassa"
@@ -1195,7 +1202,7 @@
       },
       {
         "id": "fy5-3",
-        "title": "Ympyräliike ja ratanopeus",
+        "title": "Ympyrärata: jaksonaika ja ratanopeus",
         "goals": [
           "LOPS FY5: tasainen ympyräliike",
           "Täsmennys: nopeuden suunta muuttuu ympyräliikkeessä; ratanopeus v = 2πr/T, kierrosaika ja pyörimistaajuus; kulmasuureita ei tarvitse käsitellä ympyräliikkeen yhteydessä; pyörimisliike ei kuulu keskeisiin sisältöihin"
@@ -1211,7 +1218,7 @@
       },
       {
         "id": "fy5-4",
-        "title": "Tasainen ympyräliike ja normaalikiihtyvyys",
+        "title": "Normaalikiihtyvyys ja ympyräliikkeen liikeyhtälö",
         "goals": [
           "LOPS FY5: tasainen ympyräliike ja normaalikiihtyvyys",
           "Täsmennys: normaalikiihtyvyyden suunta ja suuruus a_n = v²/r; Newtonin 2. laki tasaisessa ympyräliikkeessä (voimakuvio, kokonaisvoima keskipistettä kohti)"
@@ -1228,7 +1235,7 @@
       },
       {
         "id": "fy5-5",
-        "title": "Newtonin gravitaatiolaki",
+        "title": "Kappaleiden välinen gravitaatiovoima",
         "goals": [
           "LOPS FY5: gravitaatiolaki ja planetaarinen liike",
           "Täsmennys: kaikki kappaleet vetävät toisiaan; gravitaatiovoima F = γm₁m₂/r², painovoima ja gravitaatiokentän voimakkuus; gravitaatio maailmankaikkeuden rakenteiden synnyssä"
@@ -1245,7 +1252,7 @@
       },
       {
         "id": "fy5-6",
-        "title": "Gravitaation alainen ympyräliike",
+        "title": "Satelliitit ja planeetat ympyräradalla",
         "goals": [
           "LOPS FY5: gravitaatiolaki ja planetaarinen liike",
           "LOPS FY5: osaa mallintaa planetaarista liikettä ympyräliikkeenä",
@@ -1263,7 +1270,7 @@
       },
       {
         "id": "fy5-7",
-        "title": "Jaksollinen liike",
+        "title": "Värähtelyn suureet: jaksonaika, taajuus ja amplitudi",
         "goals": [
           "LOPS FY5: jaksollinen liike, jaksonaika, taajuus ja amplitudi",
           "LOPS FY5: osaa kuvata jaksollista liikettä fysikaalisilla ja matemaattisilla käsitteillä",
@@ -1282,7 +1289,7 @@
       },
       {
         "id": "fy5-8",
-        "title": "Harmoninen voima ja jousen potentiaalienergia",
+        "title": "Jousivoima ja jousen energia",
         "goals": [
           "LOPS FY5: harmoninen voima",
           "LOPS FY5: harmonisen voiman potentiaalienergia",
@@ -1300,7 +1307,7 @@
       },
       {
         "id": "fy5-9",
-        "title": "Harmoninen värähtely ja heiluri",
+        "title": "Jousivärähtelijä ja heiluri",
         "goals": [
           "LOPS FY5: harmoninen voima ja värähtelyliike",
           "Kokeellisesti: heilurin heilahdusajan määrittäminen",
@@ -1320,7 +1327,7 @@
       },
       {
         "id": "fy5-10",
-        "title": "Mekaaninen aaltoliike",
+        "title": "Aaltojen synty ja eteneminen",
         "goals": [
           "LOPS FY5: mekaanisten aaltojen synty, eteneminen ja heijastuminen",
           "Taidot: aaltoilmiöiden mallintaminen",
@@ -1340,7 +1347,7 @@
       },
       {
         "id": "fy5-11",
-        "title": "Aaltojen heijastuminen ja diffraktio",
+        "title": "Aalto kohtaa esteen tai raon",
         "goals": [
           "LOPS FY5: mekaanisten aaltojen synty, eteneminen ja heijastuminen",
           "LOPS FY5: mekaanisten aaltojen diffraktio ja interferenssi",
@@ -1359,7 +1366,7 @@
       },
       {
         "id": "fy5-12",
-        "title": "Aaltojen interferenssi",
+        "title": "Aaltojen yhteisvaikutus: superpositio ja interferenssi",
         "goals": [
           "LOPS FY5: mekaanisten aaltojen diffraktio ja interferenssi",
           "Täsmennys: superpositioperiaate, vahvistava ja heikentävä interferenssi kahden samassa vaiheessa olevan saman taajuisen aaltolähteen avulla; Fourier-muunnoksen hyödyllisyys valinnaisena"
@@ -1377,7 +1384,7 @@
       },
       {
         "id": "fy5-13",
-        "title": "Seisovat aallot",
+        "title": "Seisova aalto: solmut, kuvut ja ominaistaajuudet",
         "goals": [
           "LOPS FY5: seisovat aallot",
           "Temaattinen tarkastelu: soittimet; kielen ja ilmapatsaan ominaistaajuudet"
@@ -1396,7 +1403,7 @@
       },
       {
         "id": "fy5-14",
-        "title": "Äänen ominaisuudet",
+        "title": "Ääni aaltona: korkeus, sointiväri ja Dopplerin ilmiö",
         "goals": [
           "LOPS FY5: ääni aaltoliikkeenä, äänen ominaisuudet ja eteneminen",
           "Kokeellisesti: äänen nopeuden määrittäminen ja äänen taajuusanalyysi",
@@ -1420,7 +1427,7 @@
       },
       {
         "id": "fy5-15",
-        "title": "Äänen voimakkuus",
+        "title": "Intensiteetti ja desibeliasteikko",
         "goals": [
           "LOPS FY5: äänen intensiteettitaso",
           "Täsmennys: intensiteetti, intensiteettitaso desibeleinä ja kuulokynnys",
@@ -1439,7 +1446,7 @@
       },
       {
         "id": "fy5-16",
-        "title": "Ääni ympäristössämme",
+        "title": "Melu, akustiikka ja äänentoisto",
         "goals": [
           "LOPS FY5: ääni aaltoliikkeenä, äänen intensiteettitaso, äänen ominaisuudet ja eteneminen",
           "Temaattinen tarkastelu: melun haittavaikutukset ja kuulon suojaaminen",
@@ -1460,7 +1467,7 @@
       },
       {
         "id": "fy5-17",
-        "title": "Soveltava luku: ultraäänikuvaus ja aallot luonnossa",
+        "title": "Soveltava luku: ultraäänikuvaus ja maanjäristysaallot",
         "goals": [
           "LOPS FY5: mekaanisten aaltojen synty, eteneminen ja heijastuminen",
           "Temaattinen tarkastelu: ultraäänikuvaus",

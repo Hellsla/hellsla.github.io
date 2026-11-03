@@ -4,7 +4,7 @@ travelling towards the fixed end orange #e8590c (dashed), the reflected wave vio
 Force red is never used for a displacement."""
 import math
 from figlib import (Fig, INK, MUTED, WHITE, RULE, RULE_LIGHT, GLASS, WATER_LIGHT, WATER, SAND_LIGHT, SAND, SAND_DARK, GRAIN,
-                    HEAT, ALUMINIUM, METAL_EDGE, IRON, COPPER, ICE, PAPER, n)
+                    HEAT, ALUMINIUM, METAL_EDGE, IRON, COPPER, ICE, ICE_EDGE, COLD_LIGHT, HOT, PAPER, n)
 import herolib as H
 
 WAVE, INC, REF = WATER, HEAT, "#7048e8"
@@ -180,60 +180,111 @@ def task_string():
 
 
 def hero():
-    """The chapter's opening illustration: a music room with organ pipes, an acoustic guitar on its stand and a flute."""
-    f = H.hero("fy513-hero", "Kuvitus: musiikkiluokka. Vasemmalla puisen kaapin päällä on rivi eripituisia hopeanvärisiä urkupillejä, "
-               "keskellä lattialla telineessä akustinen kitara, jonka kuusi kieltä kulkevat kaulalta kaikukopan tallaan, ja "
-               "oikealla pöydällä poikkihuilu. Taustalla on ikkuna.")
-    f.rect(0, 0, 1200, 520, PAPER)
-    # window
-    f.rect(830, 70, 270, 210, H.grad(f, "fy513h-sky", ICE, GLASS), INK, 4, 4)
-    f.line(965, 70, 965, 280, INK, 4); f.line(830, 175, 1100, 175, INK, 4)
-    H.cloud(f, 900, 130, 0.45)
-    # floor
-    f.rect(0, 520, 1200, 80, SAND_LIGHT)
-    for y in (540, 566): f.line(0, y, 1200, y, SAND, 3)
-    for k in range(9): f.line(60 + 140 * k + (40 if k % 2 else 0), 520, 60 + 140 * k + (40 if k % 2 else 0), 600, SAND, 2)
-    f.line(0, 520, 1200, 520, GRAIN, 3)
-    # organ pipes on a wooden case
-    f.rect(70, 440, 330, 80, SAND_DARK, INK, 3, 4)
-    f.rect(86, 456, 298, 48, SAND, extra='fill-opacity="0.6"')
-    metal = H.grad(f, "fy513h-metal", ALUMINIUM, METAL_EDGE, horizontal=True)
-    heights = (150, 190, 236, 286, 330, 286, 236, 190, 150)
-    for k, h in enumerate(heights):
-        x = 92 + 32 * k
-        top = 440 - h
-        f.path(f"M{x},{top} H{x + 24} V{440 - 34} L{x + 16},440 H{x + 8} L{x},{440 - 34} Z", metal, INK, 2.5)
-        f.rect(x + 6, 440 - 58, 12, 10, INK, extra='fill-opacity="0.75"')
-        f.add(f'<ellipse cx="{x + 12}" cy="{top}" rx="12" ry="3.5" fill="{METAL_EDGE}" stroke="{INK}" stroke-width="2"/>')
-    # guitar stand
-    f.path("M560,520 L520,580 M640,520 L680,580 M600,520 L600,585", stroke=INK, w=6, extra='stroke-linecap="round"')
-    f.path("M548,512 Q600,532 652,512", stroke=INK, w=6, extra='stroke-linecap="round"')
-    # guitar body
-    body = ("M600,236 C650,236 680,262 678,302 C676,334 650,348 652,370 C655,394 708,404 708,454 C708,512 660,540 600,540 "
-            "C540,540 492,512 492,454 C492,404 545,394 548,370 C550,348 524,334 522,302 C520,262 550,236 600,236 Z")
-    f.path(body, H.grad(f, "fy513h-wood", SAND_DARK, COPPER), INK, 3.5)
-    f.path("M600,248 C640,248 664,268 664,302 C662,330 638,346 640,370 C643,396 692,408 692,454 C692,504 650,526 600,526",
-           stroke=SAND_LIGHT, w=3, extra='stroke-opacity="0.6"')
-    f.circle(600, 340, 30, INK, SAND, 4)
-    f.rect(564, 452, 72, 14, "#8a5f22", INK, 2, 3)
-    # neck, frets and head
-    f.rect(588, 76, 24, 172, "#8a5f22", INK, 2.5, 2)
-    y = 92
-    for k in range(12):
-        f.line(589, y, 611, y, ALUMINIUM, 2)
-        y += 16 - k * 0.6
-    f.path("M584,30 H616 L620,78 H580 Z", "#8a5f22", INK, 2.5)
-    for k in range(3):
-        f.circle(574, 42 + 14 * k, 5, ALUMINIUM, INK, 1.5); f.circle(626, 42 + 14 * k, 5, ALUMINIUM, INK, 1.5)
-    for k in range(6):
-        xt, xb = 591.5 + 3.4 * k, 581 + 7.6 * k
-        f.line(xt, 78, xb, 458, WHITE, 1.5)
-    # table with a flute
-    f.rect(840, 410, 280, 16, SAND_DARK, INK, 3, 3)
-    f.path("M864,426 L852,520 M1096,426 L1108,520", stroke=INK, w=6, extra='stroke-linecap="round"')
-    f.rect(862, 392, 236, 14, H.grad(f, "fy513h-flute", ALUMINIUM, METAL_EDGE), INK, 2.5, 7)
-    f.add(f'<ellipse cx="886" cy="399" rx="6" ry="3.5" fill="{INK}"/>')
-    for k in range(7): f.circle(960 + 18 * k, 399, 4.5, METAL_EDGE, INK, 1.5)
+    """The chapter's opening illustration: an acoustic guitar lies in its open case, seen from above, drawn to one scale
+    (about 1040 px/m: scale length 65 cm from nut to saddle). A capo presses the strings against the fretboard just
+    behind the third fret, and one plucked string vibrates in its fundamental: a standing wave with nodes at the fret
+    and at the saddle, its swing (light blue) widest halfway between them. The frets sit where they really are,
+    x = nut + L (1 − 2^(−k/12))."""
+    f = H.hero("fy513-hero", "Kuvitus: akustinen kitara makaa avatussa kotelossaan ylhäältä katsottuna. Kaulalla on kapo, joka "
+               "painaa kielet otelautaa vasten kolmannen nauhan kohdalta. Yksi kielistä on näpätty, ja se värähtelee: "
+               "kieli on suurimmillaan kapon ja tallan puolivälissä ja pysyy paikallaan kummassakin päässä, ja sen "
+               "liikealue näkyy vaaleansinisenä. Kotelo on puulattialla, ja sen vieressä on plektra.")
+    cy, nut, L = 302, 214, 676.0
+    saddle = nut + L
+    fret = [nut + L * (1 - 2 ** (-k / 12)) for k in range(21)]
+    # floor: wide boards
+    f.rect(0, 0, 1200, 600, H.grad(f, "fy513h-floor", SAND_LIGHT, SAND, y1=0, y2=600))
+    for y in range(40, 600, 92):
+        f.line(0, y, 1200, y, GRAIN, 2)
+        for k in range(4):
+            x = (180 + 330 * k + 140 * (y // 92 % 2)) % 1200
+            f.line(x, y, x, y + 92, SAND_DARK, 2)
+    # the body's outline: half-widths along the body (u from the neck joint to the tail), smoothed
+    x0, x1 = 588, 1108
+    prof = [(0, 112), (0.08, 140), (0.18, 150), (0.3, 141), (0.42, 124), (0.5, 126), (0.6, 160), (0.72, 194), (0.83, 202),
+            (0.93, 188), (1, 150)]
+    def hw(u):                                                   # Catmull–Rom through the profile, rounded at both ends
+        P = [prof[0]] + prof + [prof[-1]]
+        for j in range(1, len(P) - 2):
+            (u0, w0), (u1, w1), (u2, w2), (u3, w3) = P[j - 1], P[j], P[j + 1], P[j + 2]
+            if u1 <= u <= u2:
+                t = (u - u1) / (u2 - u1)
+                w = 0.5 * (2 * w1 + (-w0 + w2) * t + (2 * w0 - 5 * w1 + 4 * w2 - w3) * t * t + (-w0 + 3 * w1 - 3 * w2 + w3) * t ** 3)
+                break
+        else:
+            w = 0
+        return w
+    def cap(u):                                                  # rounds the shoulders and the tail
+        e0, e1 = min(1, u / 0.11), min(1, (1 - u) / 0.2)
+        return math.sqrt(max(0, 1 - (1 - e0) ** 2)) * math.sqrt(max(0, 1 - (1 - e1) ** 2))
+    us = [i / 160 for i in range(161)]
+    def outline(pad):
+        xa, xb = x0 - pad * 0.8, x1 + pad
+        up = [(xa + (xb - xa) * u, cy - (hw(u) + pad) * cap(u)) for u in us]
+        dn = [(x, 2 * cy - y) for x, y in reversed(up)]
+        return "M" + " L".join(f"{n(x)},{n(y)}" for x, y in up) + " L" + " L".join(f"{n(x)},{n(y)}" for x, y in dn[1:-1]) + " Z"
+    # the open case: a dark rim and blue plush, shaped round the guitar, the neck channel and the headstock
+    case_rim, plush = IRON, COLD_LIGHT
+    for pad, fill, edge in ((44, case_rim, INK), (26, plush, None)):
+        f.rect(40 - pad * 0.4, cy - 52 - pad * 0.6, x0 - 40 + pad, 104 + pad * 1.2, fill, edge, 3, 18)
+        f.path(outline(pad), fill, edge, 3)
+    # body: wood top, binding, sound hole with rosette, bridge with the saddle and pins
+    f.path(outline(0), H.grad(f, "fy513h-top", SAND_DARK, COPPER, y1=cy - 210, y2=cy + 210), INK, 3.5)
+    f.path(outline(-8), "none", SAND_LIGHT, 2.5)
+    hole = (752, cy)
+    f.circle(hole[0], hole[1], 70, "none", INK, 3); f.circle(hole[0], hole[1], 62, "none", SAND_LIGHT, 4)
+    f.circle(hole[0], hole[1], 52, INK, INK, 2)
+    f.path(f"M{n(saddle - 22)},{cy - 82} H{n(saddle + 26)} Q{n(saddle + 34)},{cy} {n(saddle + 26)},{cy + 82} H{n(saddle - 22)} Q{n(saddle - 30)},{cy} {n(saddle - 22)},{cy - 82} Z",
+           GRAIN, INK, 2.5)
+    f.rect(saddle - 3, cy - 46, 6, 92, WHITE, INK, 1.5, 2)
+    # neck: fretboard with frets and dots, headstock with six tuners
+    def nw(x): return 24 + (x - nut) / (fret[20] - nut) * 6           # half-width of the fretboard
+    f.path(f"M{n(nut - 4)},{n(cy - 24)} L{n(x0 + 10)},{n(cy - 29)} V{n(cy + 29)} L{n(nut - 4)},{n(cy + 24)} Z", COPPER, INK, 2.5)   # neck
+    f.path(f"M{n(nut)},{n(cy - nw(nut))} L{n(fret[20])},{n(cy - nw(fret[20]))} V{n(cy + nw(fret[20]))} L{n(nut)},{n(cy + nw(nut))} Z", INK, INK, 2)
+    for k in range(1, 21):
+        f.line(fret[k], cy - nw(fret[k]) + 1, fret[k], cy + nw(fret[k]) - 1, ALUMINIUM, 2.5)
+    for k in (3, 5, 7, 9, 15, 17, 19):
+        f.circle((fret[k - 1] + fret[k]) / 2, cy, 4.5, WHITE)
+    for dy in (-11, 11):
+        f.circle((fret[11] + fret[12]) / 2, cy + dy, 4.5, WHITE)
+    f.rect(nut - 6, cy - 25, 7, 50, WHITE, INK, 1.5, 1)                             # nut
+    f.path(f"M{nut - 6},{cy - 26} L74,{cy - 44} Q60,{cy} 74,{cy + 44} L{nut - 6},{cy + 26} Z", COPPER, INK, 3)   # headstock
+    tx = [96, 134, 172]
+    for k, x in enumerate(tx):
+        for sgn in (-1, 1):
+            f.line(x, cy + sgn * 38, x, cy + sgn * 52, METAL_EDGE, 5)
+            f.add(f'<ellipse cx="{x}" cy="{cy + sgn * 62}" rx="10" ry="13" fill="{WHITE}" stroke="{INK}" stroke-width="2"/>')
+            f.circle(x, cy + sgn * 24, 5, ALUMINIUM, INK, 1.5)
+    # the strings: from the tuner posts over the nut to the saddle (wound ones a little thicker)
+    sy = lambda i, x: cy + (i - 2.5) * (7.6 + (x - nut) / L * 3.8)
+    posts = [(tx[2], -1), (tx[1], -1), (tx[0], -1), (tx[0], 1), (tx[1], 1), (tx[2], 1)]
+    VIB = 3                                                   # the plucked string
+    for i in range(6):
+        px_, sg = posts[i]
+        w = 2.6 - 0.3 * i
+        col = COPPER if i < 3 else ALUMINIUM
+        f.path(f"M{px_},{cy + sg * 24} L{nut},{n(sy(i, nut))}", stroke=col, w=w)
+        if i != VIB:
+            f.path(f"M{nut},{n(sy(i, nut))} L{n(saddle)},{n(sy(i, saddle))}", stroke=col, w=w, extra='stroke-linecap="round"')
+    # capo just behind the third fret: a padded bar across the neck and its clamp
+    capx = fret[3] - 9
+    f.rect(capx - 9, cy - 44, 18, 88, INK, INK, 2, 6)
+    f.rect(capx - 5, cy - 40, 10, 80, IRON, None, 2, 4)
+    f.path(f"M{capx + 9},{cy - 40} Q{capx + 48},{cy - 50} {capx + 52},{cy - 18}", stroke=INK, w=8, extra='stroke-linecap="round"')
+    # the plucked string: between the node at the third fret and the node at the saddle, a half wavelength
+    a, b = fret[3], saddle
+    A = 30
+    def s_y(x, amp): return sy(VIB, x) + amp * math.sin(math.pi * (x - a) / (b - a))
+    xs = [a + (b - a) * i / 80 for i in range(81)]
+    lens = "M" + " L".join(f"{n(x)},{n(s_y(x, -A))}" for x in xs) + " L" + " L".join(f"{n(x)},{n(s_y(x, A))}" for x in reversed(xs)) + " Z"
+    f.path(lens, WATER_LIGHT, extra='fill-opacity="0.6"')
+    for amp in (-A, A):
+        f.path("M" + " L".join(f"{n(x)},{n(s_y(x, amp))}" for x in xs), stroke=WATER, w=1.5, extra='stroke-opacity="0.55"')
+    f.path(f"M{nut},{n(sy(VIB, nut))} L{n(a)},{n(sy(VIB, a))}", stroke=ALUMINIUM, w=1.8)
+    f.path("M" + " L".join(f"{n(x)},{n(s_y(x, 0.55 * A))}" for x in xs), stroke=WATER, w=3.5, extra='stroke-linecap="round"')
+    for x in (a, b): f.circle(x, sy(VIB, x), 5, INK)
+    # a pick on the floor beside the case
+    f.path("M1118,520 Q1150,506 1168,526 Q1160,556 1136,566 Q1112,546 1118,520 Z", HOT, INK, 2.5)
     return f.svg()
 
 

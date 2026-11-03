@@ -1,64 +1,101 @@
-# Soveltava luku: ultraäänikuvaus ja aallot luonnossa
+# Soveltava luku: ultraäänikuvaus ja maanjäristysaallot
 
 > **Miksi** ultraäänilaite pystyy piirtämään kuvan kehon sisältä pelkkien kaikujen avulla, ja miksi anturin alle levitetään ensin geeliä?
 
-<svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: ultraäänitutkimus. Potilas makaa selällään tutkimuspöydällä. Hoitaja seisoo pöydän vieressä ja painaa ultraäänianturia potilaan vatsalle, jonka iholla on läpikuultavaa geeliä. Anturista lähtee kaarevia aaltorintamia kehon sisään. Anturin johto kulkee ultraäänilaitteeseen, jonka näytöllä on harmaa viuhkan muotoinen kuva." class="fig-hero" style="max-width:100%;font-size:24px">
-  <defs><linearGradient id="fy517h-wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eef5f9"/><stop offset="1" stop-color="#d0e6fb"/></linearGradient></defs>
-  <rect x="0" y="0" width="1200" height="600" fill="#f6f1e6"/>
-  <rect x="0" y="0" width="1200" height="470" fill="url(#fy517h-wall)"/>
-  <rect x="0" y="470" width="1200" height="130" fill="#e3dccb"/>
-  <line x1="0" y1="470" x2="1200" y2="470" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
-  <path d="M738,390 Q734,284 770,278 Q806,284 802,390 Z" fill="#2b8a3e" stroke-linejoin="round"/>
-  <path d="M798,298 L810,390" fill="none" stroke="#2b8a3e" stroke-width="21" stroke-linejoin="round" stroke-linecap="round"/>
-  <circle cx="810" cy="396" r="10" fill="#f1dfb5"/>
-  <rect x="761" y="258" width="18" height="24" fill="#f1dfb5"/>
-  <circle cx="770" cy="239" r="28" fill="#f1dfb5"/>
-  <path d="M741,239 Q742,205 770,207 Q800,207 799,235 Q776,224 741,239 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <rect x="300" y="400" width="16" height="120" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="308" cy="528" r="10" fill="#1f2933"/>
-  <rect x="840" y="400" width="16" height="120" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="848" cy="528" r="10" fill="#1f2933"/>
-  <rect x="240" y="372" width="680" height="34" rx="8" fill="#c4ccd4" stroke="#1f2933" stroke-width="3"/>
-  <rect x="240" y="352" width="680" height="26" rx="10" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
-  <path d="M262,330 Q262,306 300,306 L326,306 Q350,306 350,330 L350,352 L262,352 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
-  <circle cx="318" cy="300" r="36" fill="#f1dfb5" stroke="#1f2933" stroke-width="2.5"/>
-  <path d="M282,296 Q284,258 322,262 Q352,266 354,292 Q330,276 306,280 Q290,284 282,296 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <path d="M350,318 L420,312 Q520,300 560,292 Q640,270 690,300 L700,352 L350,352 Z" fill="#f1dfb5" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
-  <path d="M350,318 L460,312 L470,352 L350,352 Z" fill="#1971c2" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
-  <path d="M690,300 Q700,310 700,326 L700,352 L880,352 L884,322 Q880,306 860,304 L700,304 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <path d="M880,312 Q904,310 910,324 Q912,344 896,352 L878,352 Z" fill="#d0e6fb" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M560,290 Q574,276 604,276 Q634,276 646,288 Q620,296 600,296 Q578,296 560,290 Z" fill="#a9d1f0" stroke-linejoin="round" fill-opacity="0.9"/>
-  <path d="M585,310.5 Q603,326 621,310.5" fill="none" stroke="#1971c2" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.90"/>
-  <path d="M572,320 Q603,346.5 634,320" fill="none" stroke="#1971c2" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.65"/>
-  <path d="M559.5,330 Q603,367.5 646.5,330" fill="none" stroke="#1971c2" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.40"/>
-  <rect x="578" y="214" width="50" height="68" rx="12" fill="#c4ccd4" stroke="#1f2933" stroke-width="3"/>
-  <rect x="582" y="270" width="42" height="12" fill="#8a96a3"/>
-  <path d="M746,292 Q700,272 642,240" fill="none" stroke="#2b8a3e" stroke-width="21" stroke-linejoin="round" stroke-linecap="round"/>
-  <circle cx="632" cy="232" r="15" fill="#f1dfb5" stroke="#1f2933" stroke-width="2"/>
-  <path d="M603,214 C600,150 760,130 900,170 S1060,250 1080,300" fill="none" stroke="#6c757d" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
-  <rect x="1040" y="300" width="120" height="200" rx="10" fill="#c4ccd4" stroke="#1f2933" stroke-width="3"/>
-  <rect x="1056" y="320" width="88" height="30" rx="6" fill="#8a96a3" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="1064" cy="372" r="6" fill="#6c757d"/>
-  <circle cx="1088" cy="372" r="6" fill="#6c757d"/>
-  <circle cx="1112" cy="372" r="6" fill="#6c757d"/>
-  <circle cx="1136" cy="372" r="6" fill="#6c757d"/>
-  <circle cx="1050" cy="512" r="11" fill="#1f2933"/>
-  <circle cx="1146" cy="512" r="11" fill="#1f2933"/>
-  <rect x="1092" y="230" width="16" height="72" fill="#6c757d"/>
-  <rect x="1010" y="110" width="180" height="128" rx="10" fill="#1f2933" stroke="#1f2933" stroke-width="3"/>
-  <path d="M1100,128 L1048,222 Q1100,236 1152,222 Z" fill="#6b7480" stroke-linejoin="round"/>
-  <ellipse cx="1082" cy="160" rx="10" ry="4" fill="#e3dccb" fill-opacity="0.8"/>
-  <ellipse cx="1106" cy="176" rx="14" ry="4" fill="#e3dccb" fill-opacity="0.8"/>
-  <ellipse cx="1122" cy="196" rx="18" ry="4" fill="#e3dccb" fill-opacity="0.8"/>
-  <ellipse cx="1070" cy="200" rx="10" ry="4" fill="#e3dccb" fill-opacity="0.8"/>
-  <ellipse cx="1094" cy="206" rx="14" ry="4" fill="#e3dccb" fill-opacity="0.8"/>
-  <ellipse cx="1114" cy="214" rx="18" ry="4" fill="#e3dccb" fill-opacity="0.8"/>
-  <path d="M1076,186 Q1100,170 1122,186 Q1100,198 1076,186 Z" fill="#1f2933" stroke-linejoin="round"/>
+<svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: raskausajan ultraäänitutkimus hämärässä huoneessa. Odottava äiti makaa tutkimuspöydällä pää kiilatyynyllä ja katsoo näyttöä. Hoitaja istuu jakkaralla pöydän pääpuolella laitteen vieressä, kurottaa äidin pään ohi ja painaa ultraäänianturia äidin vatsalle läpikuultavan geelitäplän kohdalle. Toisella kädellä hän säätää laitetta. Anturista lähtee kaaria vatsan sisään. Laitteen näytöllä on viuhkan muotoinen harmaasävykuva, jossa näkyy vauva." class="fig-hero" style="max-width:100%;font-size:24px">
+  <defs><linearGradient id="fy517h-wall" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="560"><stop offset="0" stop-color="#d0e6fb"/><stop offset="1" stop-color="#eef5f9"/></linearGradient><linearGradient id="fy517h-floor" gradientUnits="userSpaceOnUse" x1="0" y1="560" x2="0" y2="600"><stop offset="0" stop-color="#e3dccb"/><stop offset="1" stop-color="#c9c2b2"/></linearGradient><radialGradient id="fy517h-fan" gradientUnits="userSpaceOnUse" cx="1020" cy="60" r="164"><stop offset="0" stop-color="#8a96a3"/><stop offset="1" stop-color="#6c757d"/></radialGradient><clipPath id="fy517h-fanclip"><path d="M1012,71.5 L923.5,192.5 A164,164 0 0 0 1116.5,192.5 L1028,71.5 A14,14 0 0 1 1012,71.5 Z"/></clipPath><clipPath id="fy517h-belly"><path d="M430,334 L430,280 A64,64 0 0 1 554.5,264 Q570,298 562,334 Z"/></clipPath></defs>
+  <rect x="0" y="0" width="1200" height="560" fill="url(#fy517h-wall)"/>
+  <rect x="0" y="560" width="1200" height="40" fill="url(#fy517h-floor)"/>
+  <line x1="0" y1="560" x2="1200" y2="560" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
+  <rect x="40" y="60" width="170" height="220" rx="4" fill="#c4ccd4" stroke="#1f2933" stroke-width="3"/>
+  <rect x="46" y="66" width="158" height="13" fill="#ffffff" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="46" y="85.5" width="158" height="13" fill="#ffffff" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="46" y="105" width="158" height="13" fill="#ffffff" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="46" y="124.5" width="158" height="13" fill="#ffffff" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="46" y="144" width="158" height="13" fill="#ffffff" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="46" y="163.5" width="158" height="13" fill="#ffffff" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="46" y="183" width="158" height="13" fill="#ffffff" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="46" y="202.5" width="158" height="13" fill="#ffffff" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="46" y="222" width="158" height="13" fill="#ffffff" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="46" y="241.5" width="158" height="13" fill="#ffffff" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="46" y="261" width="158" height="13" fill="#ffffff" stroke="#1f2933" stroke-width="1.5"/>
+  <line x1="14" y1="30" x2="300" y2="30" stroke="#6c757d" stroke-width="5" stroke-linecap="round"/>
+  <path d="M226,32 Q238,180 224,330 Q250,326 262,330 Q276,180 270,32 Z" fill="#b2f2bb" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M246,40 Q252,180 244,322" fill="none" stroke="#2b8a3e" stroke-width="2" stroke-linejoin="round"/>
+  <rect x="940" y="520" width="150" height="22" rx="6" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
+  <circle cx="954" cy="552" r="9" fill="#1f2933"/>
+  <circle cx="1076" cy="552" r="9" fill="#1f2933"/>
+  <rect x="960" y="260" width="110" height="262" rx="10" fill="#c4ccd4" stroke="#1f2933" stroke-width="3"/>
+  <rect x="972" y="310" width="86" height="6" fill="#8a96a3"/>
+  <rect x="972" y="330" width="86" height="6" fill="#8a96a3"/>
+  <path d="M918,260 L1092,260 L1084,230 L926,230 Z" fill="#ffffff" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <rect x="940" y="236" width="14" height="7" fill="#c9c2b2" stroke="#1f2933" stroke-width="1"/>
+  <rect x="962" y="236" width="14" height="7" fill="#c9c2b2" stroke="#1f2933" stroke-width="1"/>
+  <rect x="984" y="236" width="14" height="7" fill="#c9c2b2" stroke="#1f2933" stroke-width="1"/>
+  <rect x="1006" y="236" width="14" height="7" fill="#c9c2b2" stroke="#1f2933" stroke-width="1"/>
+  <rect x="1028" y="236" width="14" height="7" fill="#c9c2b2" stroke="#1f2933" stroke-width="1"/>
+  <rect x="1050" y="236" width="14" height="7" fill="#c9c2b2" stroke="#1f2933" stroke-width="1"/>
+  <circle cx="1062" cy="244" r="9" fill="#8a96a3" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="1006" y="160" width="14" height="72" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+  <rect x="880" y="40" width="280" height="200" rx="10" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="890" y="50" width="260" height="180" rx="4" fill="#1f2933"/>
+  <path d="M1012,71.5 L923.5,192.5 A164,164 0 0 0 1116.5,192.5 L1028,71.5 A14,14 0 0 1 1012,71.5 Z" fill="url(#fy517h-fan)" stroke-linejoin="round"/>
+  <g clip-path="url(#fy517h-fanclip)"><circle cx="1009" cy="113" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="1063" cy="124" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="998.5" cy="114.5" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="970.5" cy="201" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="959" cy="147.5" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="942.5" cy="188.5" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="1032.5" cy="176.5" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="1034.5" cy="88.5" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="1029.5" cy="200.5" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="1008.5" cy="79.5" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="1028" cy="116.5" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="978.5" cy="178" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="1019" cy="169" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="1004.5" cy="90.5" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="1011.5" cy="82" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="1028.5" cy="104.5" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="1021" cy="147.5" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="1067" cy="125" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="1031" cy="96" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="1027.5" cy="76.5" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="1040" cy="88" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="984.5" cy="161" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="1036.5" cy="191.5" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="1042.5" cy="96.5" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="1029" cy="99.5" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="1031" cy="86.5" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="925" cy="192" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="1033" cy="81.5" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="1079.5" cy="180.5" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="1049.5" cy="125.5" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="1046" cy="184" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="996" cy="197.5" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="1017" cy="148.5" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="1011" cy="96" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="1043.5" cy="128.5" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="962" cy="162.5" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="1030.5" cy="213.5" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="1001" cy="89" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="1052.5" cy="170" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="1034" cy="126.5" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="980.5" cy="117" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="1087" cy="152.5" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="1014.5" cy="85.5" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="1029.5" cy="80" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="1040.5" cy="105" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="989.5" cy="129.5" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="1013.5" cy="119" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="1039.5" cy="126.5" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="1012.5" cy="133.5" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="1060.5" cy="157.5" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="1046" cy="114.5" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="1064" cy="140" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="1057.5" cy="157.5" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="1059" cy="155" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="1018" cy="203" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="1016.5" cy="181" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="1021.5" cy="91" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="1011.5" cy="166.5" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="966.5" cy="136.5" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="1089.5" cy="208.5" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="1000" cy="125" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="1023.5" cy="81.5" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="1090.5" cy="190.5" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="1060.5" cy="212" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="1006.5" cy="201" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="1030.5" cy="192.5" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="1045" cy="120" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="947" cy="179.5" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="1086.5" cy="171.5" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="1026.5" cy="196.5" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="1016.5" cy="79" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="1030" cy="120" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="1001.5" cy="149" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="969" cy="186.5" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="937.5" cy="187" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="1002" cy="132" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="971" cy="141" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="970" cy="183" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="980" cy="121.5" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="1025" cy="146" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="1017.5" cy="77" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="982" cy="132.5" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="1045.5" cy="187" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="1043" cy="162.5" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="994" cy="116.5" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="1038.5" cy="160.5" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="1096" cy="191.5" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="1010" cy="146" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="985.5" cy="134.5" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><circle cx="1008.5" cy="82" r="1.6" fill="#c4ccd4" fill-opacity="0.7"/><ellipse cx="1024" cy="158" rx="74" ry="46" fill="#1f2933"/><path d="M948,152 Q1024,92 1100,152" fill="none" stroke="#ffffff" stroke-width="3" stroke-opacity="0.7"/><circle cx="994" cy="156" r="22" fill="none" stroke="#ffffff" stroke-width="4"/><path d="M1014,142 Q1054,128 1070,156 Q1076,180 1048,184 Q1028,182 1014,176" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/><path d="M1034,164 q14,-6 22,4" fill="none" stroke="#c4ccd4" stroke-width="3" stroke-linecap="round"/></g>
+  <path d="M1012,71.5 L923.5,192.5 A164,164 0 0 0 1116.5,192.5 L1028,71.5 A14,14 0 0 1 1012,71.5 Z" fill="none" stroke="#8a96a3" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M603,153 C623,43 890,90 962,290" fill="none" stroke="#1f2933" stroke-width="3.5" stroke-linejoin="round"/>
+  <rect x="838" y="412" width="64" height="14" rx="5" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+  <rect x="864" y="426" width="12" height="104" fill="#8a96a3" stroke="#1f2933" stroke-width="2"/>
+  <path d="M820,538 L870,526 L920,538" fill="none" stroke="#1f2933" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="822" cy="548" r="8" fill="#1f2933"/>
+  <circle cx="918" cy="548" r="8" fill="#1f2933"/>
+  <path d="M866,404 L792,404 L782,546" fill="none" stroke="#1f2933" stroke-width="31" stroke-linejoin="round" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M866,404 L792,404 L782,546" fill="none" stroke="#1971c2" stroke-width="26" stroke-linejoin="round" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M772,554 h34" fill="none" stroke="#ffffff" stroke-width="14" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M820,422 Q800,330 790,228 Q812,206 844,216 Q874,300 872,422 Z" fill="#2b8a3e" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M826,222 L868,300 L950,238" fill="none" stroke="#2b8a3e" stroke-width="20" stroke-linejoin="round" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="950" cy="238" r="10" fill="#f1dfb5"/>
+  <path d="M790,188 L802,220" fill="none" stroke="#f1dfb5" stroke-width="20" stroke-linejoin="round"/>
+  <circle cx="786" cy="168" r="32" fill="#f1dfb5"/>
+  <path d="M819,178 Q826,134 788,134 Q756,134 758,156 Q792,158 800,190 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <circle cx="818" cy="152" r="13" fill="#1f2933"/>
+  <g transform="translate(1020 0) scale(-1 1)">
+  <rect x="470" y="382" width="110" height="144" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="340" y="526" width="380" height="20" rx="6" fill="#8a96a3" stroke="#1f2933" stroke-width="2.5"/>
+  <circle cx="358" cy="552" r="9" fill="#1f2933"/>
+  <circle cx="702" cy="552" r="9" fill="#1f2933"/>
+  <rect x="250" y="360" width="600" height="24" rx="6" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="240" y="334" width="620" height="30" rx="12" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
+  <path d="M246,334 L246,286 Q246,278 256,280 L360,328 L360,334 Z" fill="#d0e6fb" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M570,312 L660,234 L738,316" fill="none" stroke="#1f2933" stroke-width="49" stroke-linejoin="round" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M570,312 L660,234 L738,316" fill="none" stroke="#6c757d" stroke-width="44" stroke-linejoin="round" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M726,334 L728,308 L752,308 Q786,316 788,334 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M370,334 L370,288 Q390,276 442,278 L570,286 Q594,308 586,334 Z" fill="#6c757d" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M430,334 L430,280 A64,64 0 0 1 554.5,264 Q570,298 562,334 Z" fill="#f1dfb5" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M552,300 Q566,314 564,334" fill="none" stroke="#6c757d" stroke-width="12" stroke-linejoin="round"/>
+  <path d="M358,334 L358,288 Q370,276 410,276 L442,272 Q448,298 442,334 Z" fill="#f2a69c" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
+  <g clip-path="url(#fy517h-belly)"><path d="M482,238.5 A20,20 0 0 1 458.5,252" fill="none" stroke="#2f74b5" stroke-width="4" stroke-linecap="round" stroke-opacity="0.95"/><path d="M499.5,243.5 A38,38 0 0 1 454.5,269.5" fill="none" stroke="#2f74b5" stroke-width="4" stroke-linecap="round" stroke-opacity="0.75"/><path d="M516.5,249 A56,56 0 0 1 450.5,287" fill="none" stroke="#2f74b5" stroke-width="4" stroke-linecap="round" stroke-opacity="0.55"/><path d="M534,254 A74,74 0 0 1 446.5,304.5" fill="none" stroke="#2f74b5" stroke-width="4" stroke-linecap="round" stroke-opacity="0.35"/></g>
+  <rect x="340" y="268" width="34" height="24" fill="#f1dfb5"/>
+  <circle cx="332" cy="258" r="34" fill="#f1dfb5" stroke="#1f2933" stroke-width="2"/>
+  <path d="M300,272 Q292,232 326,224 Q354,220 364,242 Q340,238 328,254 Q320,272 316,288 Q304,286 300,272 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <path d="M306,282 Q296,298 284,302" fill="none" stroke="#1f2933" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M396,294 L442,322 L494,326" fill="none" stroke="#1f2933" stroke-width="25" stroke-linejoin="round" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M396,294 L442,322" fill="none" stroke="#f2a69c" stroke-width="20" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M442,322 L492,326" fill="none" stroke="#f1dfb5" stroke-width="17" stroke-linejoin="round" stroke-linecap="round"/>
+  <g transform="translate(463 232.5) rotate(-30.0)"><ellipse cx="0" cy="-1" rx="30" ry="8" fill="#a5d8ff" fill-opacity="0.85" stroke="#4f8fbf" stroke-width="1.5"/><ellipse cx="-13" cy="-4" rx="8" ry="2.5" fill="#ffffff" fill-opacity="0.9"/><path d="M-18,-4 L-16,-22 Q-12,-32 -9,-44 L-9,-82 Q0,-94 9,-82 L9,-44 Q12,-32 16,-22 L18,-4 Z" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/><rect x="-18" y="-8" width="36" height="6" rx="2" fill="#1f2933"/></g>
+  </g>
+  <path d="M806,226 L704,200" fill="none" stroke="#2b8a3e" stroke-width="21" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M704,200 L576,189.5" fill="none" stroke="#1f2933" stroke-width="21" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M704,200 L576,189.5" fill="none" stroke="#f1dfb5" stroke-width="17" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M806,226 L698,200" fill="none" stroke="#2b8a3e" stroke-width="21" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="580" cy="189.5" r="12" fill="#f1dfb5" stroke="#1f2933" stroke-width="2"/>
+  <rect x="1074" y="298" width="24" height="34" rx="5" fill="#ffc078" stroke="#1f2933" stroke-width="2"/>
+  <path d="M1080,298 L1086,284 L1092,298 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <rect x="1070" y="330" width="36" height="8" rx="2" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
 </svg>
 
 ## Ydinajatus
 ### Kaiku kertoo syvyyden
-Ultraääni on ääntä, jonka taajuus on yli $20\,\text{kHz}$, eli liian suuri ihmisen kuultavaksi. Lääketieteellisessä kuvauksessa käytetään taajuuksia noin $2\text{–}15\,\text{MHz}$. Anturi lähettää kehoon lyhyen ultraäänipulssin ja kuuntelee sitten kaikuja. Kun pulssi osuu kahden kudoksen rajapintaan, osa siitä heijastuu takaisin ja loput jatkaa syvemmälle (luku *Aaltojen heijastuminen ja diffraktio*). Jokainen rajapinta antaa siis oman kaikunsa. Laite mittaa, kuinka pitkän ajan kuluttua kukin kaiku palaa. Koska pulssi kulkee rajapintaan ja takaisin, kaiun kulkuaikana se etenee kaksi kertaa rajapinnan syvyyden. Laite olettaa, että ääni etenee pehmytkudoksessa keskimäärin nopeudella $1540\,\text{m/s}$, ja laskee jokaisen kaiun syvyyden.
+Ultraääni on ääntä, jonka taajuus on yli $20\,\text{kHz}$, eli liian suuri ihmisen kuultavaksi. Lääketieteellisessä kuvauksessa käytetään taajuuksia noin $2\text{–}15\,\text{MHz}$. Anturi lähettää kehoon lyhyen ultraäänipulssin ja kuuntelee sitten kaikuja. Kun pulssi osuu kahden kudoksen rajapintaan, osa siitä heijastuu takaisin ja loput jatkaa syvemmälle (luku *Aalto kohtaa esteen tai raon*). Jokainen rajapinta antaa siis oman kaikunsa. Laite mittaa, kuinka pitkän ajan kuluttua kukin kaiku palaa. Koska pulssi kulkee rajapintaan ja takaisin, kaiun kulkuaikana se etenee kaksi kertaa rajapinnan syvyyden. Laite olettaa, että ääni etenee pehmytkudoksessa keskimäärin nopeudella $1540\,\text{m/s}$, ja laskee jokaisen kaiun syvyyden.
 
 <svg data-fig="kaiku" viewBox="0 0 600 380" role="img" aria-label="Kaavakuva, ei mittakaavassa: ultraäänianturi on ihon päällä, ja anturin ja ihon välissä on ohut geelikerros. Ihon alla ovat allekkain rasvakerros, lihas ja luu. Sininen nuoli kuvaa anturista alaspäin etenevää pulssia ja sen nopeutta. Rasvan ja lihaksen rajapinnalta sekä lihaksen ja luun rajapinnalta palaa ylöspäin kaiku, jota kuvaavat ohuemmat siniset nuolet. Vasemmalla mittajana näyttää syvyyden d ihon pinnasta lihaksen ja luun rajapintaan." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy517-bone" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#e3dccb"/></linearGradient></defs>
@@ -98,7 +135,7 @@ Kun anturia kallistetaan tai siinä on rivi pieniä lähettimiä, pulsseja lähe
 Kuinka suuri osa aallosta heijastuu, riippuu siitä, kuinka erilaisia rajapinnan aineet ovat äänen etenemisen kannalta. Pehmytkudokset muistuttavat toisiaan, joten niiden rajapinnoilta heijastuu vain noin prosentti. Siksi suurin osa pulssista jatkaa syvemmälle ja tuottaa kaikuja myös syvemmistä rajapinnoista. Luun ja pehmytkudoksen rajapinnalta heijastuu noin $40\,\%$, ja luu myös vaimentaa ääntä voimakkaasti, joten luun taakse jää kaikuja antamaton varjo. Ilman ja ihon rajapinnalta heijastuu noin $99{,}9\,\%$. Jos anturin ja ihon väliin jää ohutkin ilmakerros, lähes koko pulssi heijastuu takaisin jo iholta. Geeli syrjäyttää ilman: sen ja ihon rajapinnalta heijastuu vain noin $0{,}2\,\%$.
 
 ### Taajuus: tarkka kuva vai syvälle ulottuva kuva
-Aallonpituus saadaan yhtälöstä $v = f\lambda$ (luku *Mekaaninen aaltoliike*). Taajuudella $5\,\text{MHz}$ ultraäänen aallonpituus pehmytkudoksessa on noin $0{,}3\,\text{mm}$. Pienimmät erottuvat yksityiskohdat ovat karkeasti muutaman aallonpituuden kokoisia, joten suuri taajuus ja lyhyt aallonpituus antavat tarkemman kuvan. Toisaalta kudos muuttaa osan ääniaallon energiasta sisäenergiaksi, ja tämä vaimeneminen kasvaa likimain suoraan verrannollisesti taajuuteen. Suurtaajuinen pulssi heikkenee siksi nopeasti, eikä sen kaiku palaa syvältä riittävän voimakkaana. Syvällä olevat elimet, kuten sydän ja maksa, kuvataan pienellä taajuudella, ja pinnan lähellä olevat rakenteet, kuten jänteet ja kilpirauhanen, suurella.
+Aallonpituus saadaan yhtälöstä $v = f\lambda$ (luku *Aaltojen synty ja eteneminen*). Taajuudella $5\,\text{MHz}$ ultraäänen aallonpituus pehmytkudoksessa on noin $0{,}3\,\text{mm}$. Pienimmät erottuvat yksityiskohdat ovat karkeasti muutaman aallonpituuden kokoisia, joten suuri taajuus ja lyhyt aallonpituus antavat tarkemman kuvan. Toisaalta kudos muuttaa osan ääniaallon energiasta sisäenergiaksi, ja tämä vaimeneminen kasvaa likimain suoraan verrannollisesti taajuuteen. Suurtaajuinen pulssi heikkenee siksi nopeasti, eikä sen kaiku palaa syvältä riittävän voimakkaana. Syvällä olevat elimet, kuten sydän ja maksa, kuvataan pienellä taajuudella, ja pinnan lähellä olevat rakenteet, kuten jänteet ja kilpirauhanen, suurella.
 
 <svg data-fig="taajuus" viewBox="0 0 600 372" role="img" aria-label="Kaavakuva: kaksi ultraäänianturia vierekkäin lähettää pulssin samaan kudokseen. Vasemmalla taajuus on 3 MHz ja aallonpituus noin 0,5 mm, oikealla taajuus 12 MHz ja aallonpituus noin 0,13 mm. Aaltorintamien välit on suurennettu, mutta niiden suhde neljä yhteen on oikea. Vasemman aallon rintamat haalistuvat hitaasti ja ulottuvat noin 17 cm:n syvyyteen, oikean aallon rintamat haalistuvat jo noin 4 cm:n syvyydellä. Syvyysasteikko vasemmalla on senttimetreinä." style="max-width:100%;font-size:24px">
   <rect x="96" y="76" width="470" height="288" fill="#f2a69c" fill-opacity="0.45"/>
@@ -155,10 +192,10 @@ Aallonpituus saadaan yhtälöstä $v = f\lambda$ (luku *Mekaaninen aaltoliike*).
 | $10\,\text{MHz}$ | $0{,}15\,\text{mm}$ | $5\,\text{cm}$ | kilpirauhanen |
 | $15\,\text{MHz}$ | $0{,}10\,\text{mm}$ | $3\,\text{cm}$ | jänteet, iho |
 
-Taulukossa $f$ on taajuus, $\lambda$ aallonpituus kudoksessa ja syvyys tyypillinen kuvaussyvyys. Kuvaussyvyydet ovat suuntaa antavia: ne riippuvat laitteesta ja kudoksesta. Ultraäänellä voidaan mitata myös veren virtausnopeutta. Liikkuvista verisoluista heijastuneen kaiun taajuus on hieman eri kuin lähetetyn pulssin, ja taajuuden muutoksesta laite laskee nopeuden. Tämä on Doppler-ilmiö (luku *Äänen ominaisuudet*).
+Taulukossa $f$ on taajuus, $\lambda$ aallonpituus kudoksessa ja syvyys tyypillinen kuvaussyvyys. Kuvaussyvyydet ovat suuntaa antavia: ne riippuvat laitteesta ja kudoksesta. Ultraäänellä voidaan mitata myös veren virtausnopeutta. Liikkuvista verisoluista heijastuneen kaiun taajuus on hieman eri kuin lähetetyn pulssin, ja taajuuden muutoksesta laite laskee nopeuden. Tämä on Doppler-ilmiö (luku *Ääni aaltona: korkeus, sointiväri ja Dopplerin ilmiö*).
 
 ### Kaikuluotaus luonnossa ja tekniikassa (lisätieto)
-Lepakot ja delfiinit paikantavat saaliinsa samalla periaatteella. Lepakko lähettää lyhyitä ultraääniäännähdyksiä, joiden taajuus on lajista riippuen noin $20$–$100\,\text{kHz}$, ja päättelee kaikujen viiveestä etäisyyden. Taajuudella $50\,\text{kHz}$ aallonpituus ilmassa on noin $7\,\text{mm}$. Kappaleesta, joka on paljon aallonpituutta pienempi, palaa vain hyvin heikko kaiku, koska aalto taipuu sen ympäri (luku *Aaltojen heijastuminen ja diffraktio*). Siksi hyönteisiä saalistavat lepakot käyttävät suuria taajuuksia. Laivojen kaikuluotain mittaa samalla tavalla veden syvyyden ja havaitsee kalaparvia; ääni etenee vedessä noin $1400\text{–}1500\,\text{m/s}$ lämpötilasta riippuen.
+Lepakot ja delfiinit paikantavat saaliinsa samalla periaatteella. Lepakko lähettää lyhyitä ultraääniäännähdyksiä, joiden taajuus on lajista riippuen noin $20$–$100\,\text{kHz}$, ja päättelee kaikujen viiveestä etäisyyden. Taajuudella $50\,\text{kHz}$ aallonpituus ilmassa on noin $7\,\text{mm}$. Kappaleesta, joka on paljon aallonpituutta pienempi, palaa vain hyvin heikko kaiku, koska aalto taipuu sen ympäri (luku *Aalto kohtaa esteen tai raon*). Siksi hyönteisiä saalistavat lepakot käyttävät suuria taajuuksia. Laivojen kaikuluotain mittaa samalla tavalla veden syvyyden ja havaitsee kalaparvia; ääni etenee vedessä noin $1400\text{–}1500\,\text{m/s}$ lämpötilasta riippuen.
 
 ### Maanjäristysaallot
 Maanjäristyksessä kallioperä murtuu, ja murtumakohdasta lähtee maanjäristysaaltoja. Maan sisäosien läpi etenee kahdenlaisia aaltoja. P-aalto on pitkittäinen aalto, jossa kallio tiivistyy ja harvenee etenemissuunnassa. Se on nopein ja saapuu asemalle ensimmäisenä. S-aalto on poikittainen aalto, jossa kallio liikkuu sivusuunnassa. Se on hitaampi kuin P-aalto. Maankuoren yläosassa P-aallon nopeus on tyypillisesti noin $6\,\text{km/s}$ ja S-aallon noin $3{,}5\,\text{km/s}$. Pintaa pitkin etenevät pinta-aallot ovat vielä hitaampia, mutta niiden amplitudi on suurin, ja ne aiheuttavat suurimman osan tuhoista.

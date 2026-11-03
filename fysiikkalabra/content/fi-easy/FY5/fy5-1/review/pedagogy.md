@@ -1,12 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 78f1ba70cd46bee2
-
+CONTENT-HASH: 3aac895d6334731d
 ## Blocking
-(none)
 
 ## Polish
-- Open doubt about the English 'Turn' button does not apply here: 'Väännä' is the same word as in the Finnish page and pairs naturally with vääntövaikutus.
 
 ## Checked
-- Sentences are split and terms glossed, every step, hint, feedback, model answer and seven-stage solution present (activities and criteria counts equal to the Finnish); questions put last; example staged in seven steps.
-- Captures opened: contact sheets 1-2, sim-1280, exp-exp-1-390-2; check_layout fy5-1 --lang fi-easy --width 345 OK. check_i18n reports nothing for fy5-1 in fi-easy.
+batch delta review: new lesson title and renamed chapter cross-references (prior lists, feedback, theory text) read in context; the names match the new titles of the target lessons, wording and Finnish unchanged otherwise, no stale old titles left in the lesson files.

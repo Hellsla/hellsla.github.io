@@ -1,13 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 78f1ba70cd46bee2
+CONTENT-HASH: 3aac895d6334731d
 
 ## Blocking
 (none)
 
 ## Polish
-- Figure 4's aria-label still says 'voiman otekohta' in its first sentence (same as the Finnish source, figures.py); regenerate with the Finnish when figures.py is corrected.
+(none)
 
 ## Checked
-- Every file of content/fi-easy/FY5/fy5-1 against the Finnish: lesson.md, inquiry.json, exit-ticket.json, meta.json, figures.json; every number, formula and option identical (decimal comma kept); recomputed 76,1 / 84 / 135,3 / 1,9 Nm.
-- Physics identical: the net-moment sentence keeps its condition (body at rest, fixed axis), the sign convention, Nm versus joule, vaikutussuora/varsi/d distinction; terms explained in plain words (otekohta explained as the point the hand grips, hypotenuusa, kateetti with their meaning) and nothing dropped.
-- lang/fi-easy.json sims.fy5-1 against fi.json: same keys, placeholders and formulas; the legend sentences are shorter and still visible.
+batch delta review: chapter title renamed in heading/meta and the cross-reference to fy5-2 updated to its new title; physics text unchanged; restyled figure lines not judged beyond the capture list. Every changed chapter reference names the renamed chapter that holds the cited content, and no old title remains.

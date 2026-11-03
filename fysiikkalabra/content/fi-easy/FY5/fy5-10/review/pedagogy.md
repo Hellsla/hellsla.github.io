@@ -1,13 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 59746f905b5818b2
-
+CONTENT-HASH: 2e924e2326ebf2b6
 ## Blocking
 
 ## Polish
-- lesson.md — "Lähde on esimerkiksi käsi, jousen pää tai kaiutin, ja taajuus on sen värähtelyn taajuus" on hieman raskas; voisi jakaa kahdeksi virkkeeksi.
 
 ## Checked
-- Oppimispolku sama kuin suomenkielisessä: Pohdinta → Ennusta (2) → Tutki (3 koetta, johtopäätös neljällä kriteerillä) → Teoriatiivistelmä → Sovella → Tarkista osaamisesi (3) → Exit ticket → Tehtävät.
-- Lyhyet virkkeet, yksi asia virkkeessä, termit selitetty; mitään vaihetta, perustelua tai palautetta ei ole pudotettu. Tavoitteet täydentävät "Tällä tunnilla opit" -lauseen.
-- Korjattu koe 2:n ohje: "taajuudella $0{,}5\,\text{Hz}$:llä" (kaksi sijaa) → "taajuudella $0{,}5\,\text{Hz}$".
-- Kaavio: top-390, contact-1 (sim, kuvat, esimerkki, Pohdinta, Ennusta), contact-3 (Tehtävät-otsikko, kokeet 1–3, sim 1280 px); sim toimii 390 px:n leveydellä.
+batch delta review: new lesson title and renamed chapter cross-references (prior lists, feedback, theory text) read in context; the names match the new titles of the target lessons, wording and Finnish unchanged otherwise, no stale old titles left in the lesson files.

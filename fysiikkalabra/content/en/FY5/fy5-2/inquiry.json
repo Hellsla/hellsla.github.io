@@ -7,7 +7,7 @@
     "explain how the position of the centre of mass decides whether a supported body stays in place or topples."
   ],
   "prior": [
-    "The moment of a force is $M = Fr$, where $r$ is the lever arm of the force, and the sign of the moment tells the direction of rotation (chapter *Moment of a force and rotation of a body*)",
+    "The moment of a force is $M = Fr$, where $r$ is the lever arm of the force, and the sign of the moment tells the direction of rotation (chapter *Moment: the turning effect of a force*)",
     "Only the forces acting on the body are drawn in a free-body diagram, and for a body at rest the sum of the forces acting on it is zero (chapter *Free-body diagrams and the combined effect of forces*)"
   ],
   "activities": [
@@ -29,7 +29,7 @@
         {
           "text": "$16\\,\\text{Nm}$, because the moment is the force times the lever arm.",
           "correct": true,
-          "feedback": "Correct. $M = Fr = 20\\,\\text{N} \\cdot 0.80\\,\\text{m} = 16\\,\\text{Nm}$, because the force is perpendicular to the door and the lever arm is the distance from the hinges (chapter *Moment of a force and rotation of a body*). Today we calculate moments for a body that does not rotate at all."
+          "feedback": "Correct. $M = Fr = 20\\,\\text{N} \\cdot 0.80\\,\\text{m} = 16\\,\\text{Nm}$, because the force is perpendicular to the door and the lever arm is the distance from the hinges (chapter *Moment: the turning effect of a force*). Today we calculate moments for a body that does not rotate at all."
         },
         {
           "text": "$25\\,\\text{Nm}$, because the force is divided by the distance from the hinges.",
@@ -37,7 +37,7 @@
         },
         {
           "text": "$20\\,\\text{Nm}$, because the moment is equal to the force.",
-          "feedback": "The moment also depends on how far from the axis of rotation the force acts. The same $20\\,\\text{N}$ force right next to the hinge hardly turns the door at all. The moment is $M = Fr = 16\\,\\text{Nm}$ (chapter *Moment of a force and rotation of a body*)."
+          "feedback": "The moment also depends on how far from the axis of rotation the force acts. The same $20\\,\\text{N}$ force right next to the hinge hardly turns the door at all. The moment is $M = Fr = 16\\,\\text{Nm}$ (chapter *Moment: the turning effect of a force*)."
         }
       ]
     },

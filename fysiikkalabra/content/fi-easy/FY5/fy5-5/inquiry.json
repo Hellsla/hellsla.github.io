@@ -9,7 +9,7 @@
   "prior": [
     "Vuorovaikutuksessa kappaleet vaikuttavat toisiinsa yhtä suurilla ja vastakkaissuuntaisilla voimilla (luku *Vuorovaikutus ja voima: Newtonin ensimmäinen ja kolmas laki*)",
     "Kappaleen paino on $G = mg$. Maan pinnalla $g = 9{,}81\\,\\text{m/s}^2$ (luku *Paino, kitka ja kalteva taso*)",
-    "Tasaisessa ympyräliikkeessä kappaleella on normaalikiihtyvyys $a_\\text{n} = \\tfrac{v^2}{r}$ kohti radan keskipistettä (luku *Tasainen ympyräliike ja normaalikiihtyvyys*)"
+    "Tasaisessa ympyräliikkeessä kappaleella on normaalikiihtyvyys $a_\\text{n} = \\tfrac{v^2}{r}$ kohti radan keskipistettä (luku *Normaalikiihtyvyys ja ympyräliikkeen liikeyhtälö*)"
   ],
   "activities": [
     {
@@ -30,11 +30,11 @@
         {
           "text": "Kuulla on kiihtyvyys kohti Maata, joten siihen vaikuttaa kokonaisvoima kohti Maata.",
           "correct": true,
-          "feedback": "Oikein. Tasaisessa ympyräliikkeessä nopeuden suunta muuttuu koko ajan. Siksi kappaleella on normaalikiihtyvyys $a_\\text{n} = \\tfrac{v^2}{r}$ kohti radan keskipistettä (luku *Tasainen ympyräliike ja normaalikiihtyvyys*). Newtonin toisen lain mukaan kokonaisvoima osoittaa samaan suuntaan. Tällä tunnilla selviää, mistä tuo voima tulee."
+          "feedback": "Oikein. Tasaisessa ympyräliikkeessä nopeuden suunta muuttuu koko ajan. Siksi kappaleella on normaalikiihtyvyys $a_\\text{n} = \\tfrac{v^2}{r}$ kohti radan keskipistettä (luku *Normaalikiihtyvyys ja ympyräliikkeen liikeyhtälö*). Newtonin toisen lain mukaan kokonaisvoima osoittaa samaan suuntaan. Tällä tunnilla selviää, mistä tuo voima tulee."
         },
         {
           "text": "Kuun kiihtyvyys on nolla, koska sen vauhti pysyy koko ajan samana.",
-          "feedback": "Vauhti pysyy samana, mutta nopeus on vektori. Sen suunta muuttuu koko ajan. Nopeuden muutos kohti radan keskipistettä on normaalikiihtyvyys $a_\\text{n} = \\tfrac{v^2}{r}$ (luku *Tasainen ympyräliike ja normaalikiihtyvyys*)."
+          "feedback": "Vauhti pysyy samana, mutta nopeus on vektori. Sen suunta muuttuu koko ajan. Nopeuden muutos kohti radan keskipistettä on normaalikiihtyvyys $a_\\text{n} = \\tfrac{v^2}{r}$ (luku *Normaalikiihtyvyys ja ympyräliikkeen liikeyhtälö*)."
         },
         {
           "text": "Kuuhun vaikuttaa radan suuntainen voima, joka pitää sen liikkeessä.",
@@ -219,7 +219,7 @@
       "optional": true,
       "source": "statistics",
       "source_note": "NASA, Moon Fact Sheet ja Earth Fact Sheet (nssdc.gsfc.nasa.gov), luettu 2026",
-      "text": "Newton testasi gravitaatiolakiaan vertaamalla omenan ja Kuun kiihtyvyyksiä. Jos Maan veto heikkenee etäisyyden neliön mukaan, Kuun kiihtyvyyden pitäisi olla $\\tfrac{1}{60^2}$ putoamiskiihtyvyydestä. Kuu on nimittäin noin $60$ Maan säteen päässä Maan keskipisteestä.\n\n| suure | arvo |\n|---|---|\n| Maan säde $R$ | $6378\\,\\text{km}$ |\n| Kuun keskietäisyys Maan keskipisteestä $r$ | $384\\,400\\,\\text{km}$ |\n| Kuun kiertoaika $T$ | $27{,}32\\,\\text{vrk}$ |\n| gravitaatiokentän voimakkuus Maan pinnalla $g$ | $9{,}80\\,\\text{m/s}^2$ |\n\nKuun kiihtyvyys voidaan laskea sen radasta. Se tehdään samalla tavalla kuin luvussa *Tasainen ympyräliike ja normaalikiihtyvyys*. Oletetaan, että rata on ympyrä.",
+      "text": "Newton testasi gravitaatiolakiaan vertaamalla omenan ja Kuun kiihtyvyyksiä. Jos Maan veto heikkenee etäisyyden neliön mukaan, Kuun kiihtyvyyden pitäisi olla $\\tfrac{1}{60^2}$ putoamiskiihtyvyydestä. Kuu on nimittäin noin $60$ Maan säteen päässä Maan keskipisteestä.\n\n| suure | arvo |\n|---|---|\n| Maan säde $R$ | $6378\\,\\text{km}$ |\n| Kuun keskietäisyys Maan keskipisteestä $r$ | $384\\,400\\,\\text{km}$ |\n| Kuun kiertoaika $T$ | $27{,}32\\,\\text{vrk}$ |\n| gravitaatiokentän voimakkuus Maan pinnalla $g$ | $9{,}80\\,\\text{m/s}^2$ |\n\nKuun kiihtyvyys voidaan laskea sen radasta. Se tehdään samalla tavalla kuin luvussa *Normaalikiihtyvyys ja ympyräliikkeen liikeyhtälö*. Oletetaan, että rata on ympyrä.",
       "question": {
         "type": "numeric",
         "prompt": "Laske Kuun normaalikiihtyvyys $a_\\text{n} = \\tfrac{v^2}{r}$, kun Kuun ratanopeus on $v = \\tfrac{2\\pi r}{T}$. Anna vastaus yksikössä $\\text{mm/s}^2$.",
