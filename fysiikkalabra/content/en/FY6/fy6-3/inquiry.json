@@ -131,7 +131,7 @@
       ],
       "vary": "U",
       "names": {
-        "comp": "komponentti",
+        "comp": "component",
         "U": "voltage",
         "L": "length of wire",
         "A": "wire area"
@@ -143,9 +143,9 @@
       },
       "values": {
         "comp": {
-          "vastus": "vastus",
-          "lamppu": "hehkulamppu",
-          "lanka": "konstantaanilanka"
+          "vastus": "resistor",
+          "lamppu": "filament lamp",
+          "lanka": "constantan wire"
         }
       },
       "measure": [
@@ -190,7 +190,7 @@
       ],
       "vary": "U",
       "names": {
-        "comp": "komponentti",
+        "comp": "component",
         "U": "voltage",
         "L": "length of wire",
         "A": "wire area"
@@ -202,9 +202,9 @@
       },
       "values": {
         "comp": {
-          "vastus": "vastus",
-          "lamppu": "hehkulamppu",
-          "lanka": "konstantaanilanka"
+          "vastus": "resistor",
+          "lamppu": "filament lamp",
+          "lanka": "constantan wire"
         }
       },
       "measure": [
@@ -234,7 +234,7 @@
       ],
       "vary": "L",
       "names": {
-        "comp": "komponentti",
+        "comp": "component",
         "U": "voltage",
         "L": "length of wire",
         "A": "wire area"
@@ -246,9 +246,9 @@
       },
       "values": {
         "comp": {
-          "vastus": "vastus",
-          "lamppu": "hehkulamppu",
-          "lanka": "konstantaanilanka"
+          "vastus": "resistor",
+          "lamppu": "filament lamp",
+          "lanka": "constantan wire"
         }
       },
       "measure": [
@@ -278,7 +278,7 @@
       ],
       "vary": "A",
       "names": {
-        "comp": "komponentti",
+        "comp": "component",
         "U": "voltage",
         "L": "length of wire",
         "A": "wire area"
@@ -290,9 +290,9 @@
       },
       "values": {
         "comp": {
-          "vastus": "vastus",
-          "lamppu": "hehkulamppu",
-          "lanka": "konstantaanilanka"
+          "vastus": "resistor",
+          "lamppu": "filament lamp",
+          "lanka": "constantan wire"
         }
       },
       "measure": [
