@@ -123,13 +123,13 @@
         "kytkin": "suljettu"
       },
       "names": {
-        "paristot": "paristoja",
-        "lamput": "lamppuja",
-        "kytkin": "kytkin"
+        "paristot": "batteries",
+        "lamput": "lamps",
+        "kytkin": "switch"
       },
       "values": {
         "kytkin": {
-          "suljettu": "suljettu"
+          "suljettu": "closed"
         }
       },
       "locked": [
@@ -184,13 +184,13 @@
         "kytkin": "suljettu"
       },
       "names": {
-        "paristot": "paristoja",
-        "lamput": "lamppuja",
-        "kytkin": "kytkin"
+        "paristot": "batteries",
+        "lamput": "lamps",
+        "kytkin": "switch"
       },
       "values": {
         "kytkin": {
-          "suljettu": "suljettu"
+          "suljettu": "closed"
         }
       },
       "locked": [
