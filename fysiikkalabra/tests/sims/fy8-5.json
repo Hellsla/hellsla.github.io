@@ -1,0 +1,140 @@
+[
+ {
+  "expr": "(() => { const S=window.simState; return S.orb==='o1s' && S.N===1000 && S.p===90 && S.seed===1 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "on load: 1s, N = 1000, p = 90 %, first series (must run before any setup)"
+ },
+ {
+  "expr": "window.simState.R",
+  "expected": 0.140775,
+  "tol": 0.01,
+  "note": "on load: 1s 90 % boundary radius 0,141 nm (lesson-answers R1s-90)"
+ },
+ {
+  "expr": "(() => { const S=window.simState; return S.k + S.out === S.N && Math.abs(S.frac - 100 * S.k / S.N) < 1e-9 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "on load: k + (N - k) = N and frac = 100 k / N"
+ },
+ {
+  "expr": "(() => { const R=document.querySelectorAll('#sim-root input[type=range]'); return R.length===1 && R[0].min==='50' && R[0].max==='95' && R[0].step==='5' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "one slider: threshold p 50–95 % in steps of 5"
+ },
+ {
+  "expr": "(() => { const L=[...document.querySelectorAll('#sim-root select')].map(s=>[...s.options].map(o=>o.value).join(',')); return L.length===2 && L[0]==='o1s,o2s,o2p' && L[1]==='1,10,100,1000,5000' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "two selects: state 1s/2s/2p and number of measurements 1, 10, 100, 1000, 5000"
+ },
+ {
+  "expr": "(() => { const k=[...document.getElementById('sim-root').children].map(e=>e.tagName==='CANVAS'?'canvas':e.className); const c=document.querySelector('#sim-root .controls'); return k.indexOf('canvas')<k.indexOf('controls') && k.indexOf('controls')<k.indexOf('readout') && c.firstElementChild.tagName==='BUTTON' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "DOM order canvas, controls (main button first), readout"
+ },
+ {
+  "expr": "(() => { const n=document.querySelectorAll('#sim-root p.note'); return !document.querySelector('#sim-root details') && n.length===1 && n[0].textContent.trim().split(/\\s+/).length<=15 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "no Lisätietoja box; one legend line of at most 15 words"
+ },
+ {
+  "expr": "(() => { const P=window.simAdapter && window.simAdapter.params; return P && Object.keys(P).sort().join(',')==='N,orb,p' && P.p.unit==='%' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "adapter declares orb, N and p (%)"
+ },
+ {
+  "expr": "(() => { const c=document.querySelector('#sim-root canvas'); const w=document.getElementById('sim-root').clientWidth; return c.width===600 && c.height===(w<500?800:400) ? 1 : 0; })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "canvas 600x400 on a wide screen, 600x800 (stacked, larger labels) under 500 px"
+ },
+ {
+  "expr": "(() => { const t=document.querySelector('#sim-root .readout').textContent; return /nm/.test(t) && /%/.test(t) ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "the readout shows the fraction in % and the distances in nm"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'o1s'); I(S[1],'10'); I(R[0],90);",
+  "expr": "(() => { const S=window.simState; return S.N===10 && S.k+S.out===10 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "koe 1: ten measurements are ten points, each inside or outside"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'o1s'); I(S[1],'5000'); I(R[0],90);",
+  "expr": "window.simState.frac",
+  "expected": 90,
+  "tol": 0.01,
+  "note": "koe 1 and prediction 1: with 5000 measurements about 90 % of the 1s hits lie inside the 90 % boundary"
+ },
+ {
+  "expr": "window.simState.rpeak",
+  "expected": 0.05,
+  "tol": 0.001,
+  "note": "koe 2 and prediction 2: the most common 1s distance is the 0,04–0,06 nm bin, the Bohr radius 0,0529 nm (lesson-answers peak-1s)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'o1s'); I(S[1],'5000'); I(R[0],50);",
+  "expr": "window.simState.R",
+  "expected": 0.070729,
+  "tol": 0.01,
+  "note": "1s 50 % boundary radius 0,0707 nm (lesson-answers R1s-50)"
+ },
+ {
+  "expr": "window.simState.frac",
+  "expected": 50,
+  "tol": 0.02,
+  "note": "about half of 5000 hits inside the 50 % boundary"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'o2s'); I(S[1],'5000'); I(R[0],90);",
+  "expr": "window.simState.R",
+  "expected": 0.483109,
+  "tol": 0.01,
+  "note": "koe 2: 2s 90 % boundary reaches 0,483 nm (lesson-answers R2s-90)"
+ },
+ {
+  "expr": "(() => { const r=window.simState.rpeak; return r>0.25 && r<0.31 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "koe 2: the most common 2s distance lies near the outer maximum 0,277 nm (lesson-answers peak-2s)"
+ },
+ {
+  "expr": "window.simState.frac",
+  "expected": 90,
+  "tol": 0.015,
+  "note": "2s: about 90 % of 5000 hits inside (statistical; seed 1 gives 89,0 %)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'o2p'); I(S[1],'5000'); I(R[0],90);",
+  "expr": "window.simState.R",
+  "expected": 0.482844,
+  "tol": 0.01,
+  "note": "koe 2: the 2p lobe tip at 0,483 nm (lesson-answers R2p-90)"
+ },
+ {
+  "expr": "(() => { const r=window.simState.rpeak; return r>0.17 && r<0.25 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "koe 2: the most common 2p distance lies near 4 a0 = 0,212 nm (lesson-answers peak-2p)"
+ },
+ {
+  "expr": "window.simState.frac",
+  "expected": 90,
+  "tol": 0.01,
+  "note": "2p: about 90 % of 5000 hits inside the lobes"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'o1s'); I(S[1],'1000'); I(R[0],90); document.querySelector('#sim-root .controls button').click();",
+  "expr": "(() => { const S=window.simState; return S.seed===2 && S.N===1000 && S.k+S.out===1000 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "Uusi mittaussarja draws a new series (seed 2) with the same N"
+ }
+]
