@@ -1,12 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 8b90c363e2e77d09
+CONTENT-HASH: c4a1809b541e08ee
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- Round-1 polish resolved: L2-03 Reasonableness now "For this 662 keV line … hundreds of thousands of times greater"; ratio recomputed 2.935e5.
-- L2-01 Reasonableness "Its energy is a little smaller than the 1332.5 keV of the other photon, so the wavelength is a little longer than its 0.931 pm": correct (λ = 1.0568 pm recomputed).
-- L3-02 Reasonableness "as any three levels give three transitions": correct (3 pairs); 1.24 pm, 2.07 pm, 3.10 pm recomputed.
-- Diff since round 1 touches only these three Reasonableness lines in solutions.md; exercises.json and answers.py unchanged, so the 12 round-1 recomputed answers stand.
+- Round 3: only the L2-03 Reasonableness line changed ("For this gamma line the difference between the levels of the nucleus is hundreds of thousands of times greater than the differences between the levels of the electrons of an atom"). Correct: ratio 661,7 keV / 2,2545 eV = 2,935·10⁵ recomputed; the claim is now restricted to this line, so it no longer overgeneralises from the keV range.
+- exercises.json answers (143, 218, 7, 20.8, 10, 1.06, 82, 293000, 138, 4, 1.24, 87) unchanged and equal to the Finnish set; all twelve recomputed with own formulas in this run.
+- Solutions' numbers match the Finnish source (only the decimal separator differs).
