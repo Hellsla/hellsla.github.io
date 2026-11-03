@@ -1,16 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: efd7bc5ec9344686
+CONTENT-HASH: 97282981b41a66db
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] fig-3 / Kaava — the figure uses ice at −10 °C but the beside text never states it — add one sentence or note in the figure description.
-- [Minor] fig-3 aria-label — decimals written with a point ("25.1 kJ", "33.4") — use the decimal comma.
-- [Minor] lesson Ydinajatus — "Siksi lopputilan lämpötilaa ei saa alkulämpötilojen keskiarvona" lacks a verb in plain Finnish — "ei lasketa keskiarvona".
+
 
 ## Checked
-contact-1..5; fig-1..4 (390); example-390-3; sim-390, sim-1280; theory-1280-2; stage/open captures via contact sheets.
-
-## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+batch delta review: scratchpad kc/fy3-14-390.png and kc/fy3-14-1280.png (the new section cut from the built page, preview/fi-easy/fy3-14.html): stacked at 390 px, two columns at 1280 px, no raw maths, no overflow, no clipping; the diff text read for wording (the packet's own captures show no figure change, so only sheets of the new section were opened).

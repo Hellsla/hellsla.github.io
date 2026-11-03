@@ -1,15 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 597b8d6223da9b0e
+CONTENT-HASH: 07be97b4da29a508
 
 ## Blocking
 
 ## Polish
 
-## Checked
-- contact-1: top-390, sim-390, avauskuvitus, jousikuva, x(t)-kuvaaja, heilurin voimakuvio, energiakuvaaja, vaimennuskuvaaja: suomenkieliset tunnisteet, desimaalipilkku, ei leikkautumista.
-- fy5-9-sim-1280: simulaation tekstit (Värähtelijä, jousi ja kappale, lukemat-rivi, selite) mahtuvat yhdelle riville.
-- contact-5 (#49–#60): teoria 390 px, Ennusta, Tarkista osaamisesi, exit ticket ja avatut ratkaisut 1280 px: KaTeX toimii, ketjut tasattu, vastaukset kehystetty.
-- Kieli: selkeä, luonteva yleiskieli; korjattu verbi "poikkesi" → "vei heilurin sivuun".
 
-## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+## Checked
+batch delta review: scratchpad kc/fy5-9-390.png and kc/fy5-9-1280.png (the new section cut from the built page, preview/fi-easy/fy5-9.html): stacked at 390 px, two columns at 1280 px, no raw maths, no overflow, no clipping; the diff text read for wording (the packet's own captures show no figure change, so only sheets of the new section were opened).

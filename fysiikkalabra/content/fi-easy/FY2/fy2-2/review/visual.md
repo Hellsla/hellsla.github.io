@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 9e60540cd71fe93c
+CONTENT-HASH: 7da35743aa59cfd3
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
+- [Minor] meta.json key_concepts `joule` — the unit symbol is plain text ("Energian yksikkö J.") — write `$\text{J}$` or drop the symbol.
 
 ## Checked
-batch delta review: preview/fi-easy/fy2-2.html opened in Chromium (Playwright) at 360, 768 and 1280 px; moved Artemis I launch photo captured with its surroundings. New spot after the Joule paragraph; at 1280 it floats beside the "Energian yksikkö ja kerrannaisyksiköt" heading, text and the kJ–TJ formula box without touching it. No overlap with any figure, table, formula box or example (measured), stays in the column at 360/768, no horizontal overflow at any width, image loads, caption and credit unchanged; placement reads naturally (a large-energy example next to the unit multiples).
+batch delta review: scratchpad kc/fy2-2-390.png and kc/fy2-2-1280.png (the new section cut from the built page, preview/fi-easy/fy2-2.html): stacked at 390 px, two columns at 1280 px, no raw maths, no overflow, no clipping; the diff text read for wording (the packet's own captures show no figure change, so only sheets of the new section were opened).

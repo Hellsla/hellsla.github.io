@@ -1,17 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 01f9a994d152d71a
+CONTENT-HASH: cb44f9e513bc1f17
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] figures.json — kuvien kuvaustekstit ovat yleiskieliset; voisi lyhentää selkokieleksi.
+
 
 ## Checked
-- contact-1…contact-6; fig-1…fig-8 kaapaukset contact-1:ssä: suomenkieliset sanat, desimaalipilkku, ei leikkautumista.
-- Työesimerkki (contact-1 #10–#11) vaiheittain, laskut tasattuina.
-- Simulaatio 390 px (#2): lukemat ja selite mahtuvat, Käyttöohje / Mallin oletukset / Laskennan selitys suljettuina.
-- check_layout.py fy5-8 --width 345: preview/fi-easy/fy5-8 OK.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+batch delta review: scratchpad kc/fy5-8-390.png and kc/fy5-8-1280.png (the new section cut from the built page, preview/fi-easy/fy5-8.html): stacked at 390 px, two columns at 1280 px, no raw maths, no overflow, no clipping; the diff text read for wording (the packet's own captures show no figure change, so only sheets of the new section were opened).

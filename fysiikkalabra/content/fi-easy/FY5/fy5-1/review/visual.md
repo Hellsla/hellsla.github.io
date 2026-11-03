@@ -1,15 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 78f1ba70cd46bee2
+CONTENT-HASH: f22e780536107141
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] figure 4 aria-label 'voiman otekohta' (inherited from the Finnish source).
+
 
 ## Checked
-- Captures: contact-1, contact-2, sim-1280, exp-exp-1-390-2 (status line, legend and table header in Finnish, fit at 390 px), open-exercises-1280-4; figure label widths follow the Finnish; no English left.
-- Layout at 390 and 1280 px equals the Finnish page; longer easy-language text produces no overflow.
-
-## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+batch delta review: scratchpad kc/fy5-1-390.png and kc/fy5-1-1280.png (the new section cut from the built page, preview/fi-easy/fy5-1.html): stacked at 390 px, two columns at 1280 px, no raw maths, no overflow, no clipping; the diff text read for wording (the packet's own captures show no figure change, so only sheets of the new section were opened).

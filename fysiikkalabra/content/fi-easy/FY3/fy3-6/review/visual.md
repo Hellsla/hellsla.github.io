@@ -1,10 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 5dadd1c274763019
+CONTENT-HASH: a363bfc106abb2db
 
 ## Blocking
 
 ## Polish
-- none
+
 
 ## Checked
-batch delta review: intro-1280 (title with the formula as KaTeX, wraps cleanly, chapter references resolve), fig-row-1280; figures unchanged by the diff.
+batch delta review: scratchpad kc/fy3-6-390.png and kc/fy3-6-1280.png (the new section cut from the built page, preview/fi-easy/fy3-6.html): stacked at 390 px, two columns at 1280 px, no raw maths, no overflow, no clipping; the diff text read for wording (the packet's own captures show no figure change, so only sheets of the new section were opened).

@@ -1,17 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: cba23ec607e17a7b
+CONTENT-HASH: af7832a2b6caf3eb
 
 ## Blocking
-- none
 
 ## Polish
-- none
+
 
 ## Checked
-- Kaappaukset: contact-1 (top-390, sim-390, fig 1–5, example-390, stage-herata-390, stage-ennusta-390).
-- Kuvat: tekstit LaTeXia, desimaalipilkku, kuvaukset selkokielellä; asteikkokuvan "kuulokynnys"/"kipukynnys" mahtuvat.
-- Simulaation tekstit (lang/fi-easy.json) mahtuvat 390 px:ssä; selite lyhennetty selkeämmäksi.
-- check_layout --lang fi-easy --width 345 OK; check_i18n fi-easy 0 virhettä.
-
-## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+batch delta review: scratchpad kc/fy5-15-390.png and kc/fy5-15-1280.png (the new section cut from the built page, preview/fi-easy/fy5-15.html): stacked at 390 px, two columns at 1280 px, no raw maths, no overflow, no clipping; the diff text read for wording (the packet's own captures show no figure change, so only sheets of the new section were opened).

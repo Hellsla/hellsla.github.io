@@ -1,10 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 45c7521da661129d
+CONTENT-HASH: 3966c49388305829
 
 ## Blocking
 
 ## Polish
-- [Minor] Caption is two sentences but the second is long; consider "Sen kilometrien pituiset varret mittaavat hyvin pieniä pituuden muutoksia." (optional).
+
 
 ## Checked
-batch delta review: Playwright captures of the built page at 360 and 1280 px (LIGO Hanford); photo sits after a paragraph, 320 px wide, caption and credit under it, no horizontal overflow, float beside text at 1280, full-width flow at 360; alt text matches the image; caption plain Finnish and factual.
+batch delta review: scratchpad kc/fy1-3-390.png and kc/fy1-3-1280.png (the new section cut from the built page, preview/fi-easy/fy1-3.html): stacked at 390 px, two columns at 1280 px, no raw maths, no overflow, no clipping; the diff text read for wording (the packet's own captures show no figure change, so only sheets of the new section were opened).

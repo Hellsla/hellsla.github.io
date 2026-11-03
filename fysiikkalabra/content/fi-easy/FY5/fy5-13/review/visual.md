@@ -1,17 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 85e8f706000c5d31
+CONTENT-HASH: bccd1bee9fe6ed4c
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
+
 
 ## Checked
-- contact-1 avattu: top-390, sim-390, fig-1…fig-5-390 (S- ja K-merkinnät, tuleva/heijastunut/summa, molemmat päät auki / toinen pää suljettu), esimerkki 390 px, Pohdinta ja Ennusta.
-- sim-390 erikseen: ohjainten selkokieliset nimet mahtuvat, selite ja lukemat desimaalipilkulla.
-- Kuvien kuvaukset selkokielellä, samat tiedot kuin suomessa.
-- Kieli luontevaa selkosuomea, termit sanaston mukaiset.
-
-## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+batch delta review: scratchpad kc/fy5-13-390.png and kc/fy5-13-1280.png (the new section cut from the built page, preview/fi-easy/fy5-13.html): stacked at 390 px, two columns at 1280 px, no raw maths, no overflow, no clipping; the diff text read for wording (the packet's own captures show no figure change, so only sheets of the new section were opened).

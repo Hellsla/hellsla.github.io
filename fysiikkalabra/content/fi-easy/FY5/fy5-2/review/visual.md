@@ -1,16 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 3656c1e180151112
+CONTENT-HASH: c7973b6a6f221339
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] sim canvas keeps $x_\text{pp}$, $F_\text{k}$ (shared code, as in Finnish).
+
 
 ## Checked
-- Captures opened: contact-1 (top, sim, figures 1-8, worked example), contact-4 (lab and theory at 1280, predict, check, exit ticket).
-- Layout at 345 px OK (check_layout); figure words Finnish and consistent; decimal comma.
-- Delta captures opened: fy5-2-open-tarkista-1280-1 and -2 (seesaw diagram renders in the solution: labels F_l, F, G, N, 'keinulauta', 1,50 m and 1,20 m, positive-rotation arrow, nothing clipped); the diving-board solution diagram is inside a collapsed optional step and not in a capture, its labels (F_p, F_h, 'hyppylauta') checked in the built preview/fi-easy/fy5-2.html. check_layout at 345 px OK. Scores unchanged.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 4
+batch delta review: scratchpad kc/fy5-2-390.png and kc/fy5-2-1280.png (the new section cut from the built page, preview/fi-easy/fy5-2.html): stacked at 390 px, two columns at 1280 px, no raw maths, no overflow, no clipping; the diff text read for wording (the packet's own captures show no figure change, so only sheets of the new section were opened).

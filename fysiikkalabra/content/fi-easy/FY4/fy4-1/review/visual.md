@@ -1,17 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 1d23f75557c706fd
+CONTENT-HASH: 3bf40868749c04fd
 
 ## Blocking
 
 ## Polish
-- [Minor] lesson.md, Kaava, "Kappale voi olla hetkellä $t = 0$ paikassa $x_0$. Silloin kaavasta saadaan…" — "voi olla" makes a given condition sound like a possibility — "Jos kappale on hetkellä $t = 0$ paikassa $x_0$, kaavasta saadaan paikka ajan funktiona:".
-- [Minor] lesson.md, Kaava — "Epätasaisessa liikkeessä keskinopeus kertoo vain yhden asian. Se kertoo vakionopeuden…" is a mechanical pair of sentences — "Epätasaisessa liikkeessä keskinopeus on vakionopeus, jolla sama siirtymä tehtäisiin samassa ajassa."
-- [Minor] inquiry.json, Mittausaineisto (`stage-tutki-390-2`) — "(0 s; 4,1 m)" is plain text with units, twice (inherited from the reviewed Finnish text) — `$(0\,\text{s};\, 4{,}1\,\text{m})$`.
-- [Minor] Tutki experiment status line and Tehtävät intro at 390 are set in a much larger type than the card text; shared template, same on the Finnish page.
+- [Minor] key concept `$(t,x)$-kuvaaja` — the maths in the bold term renders in regular weight beside the bold "-kuvaaja" — acceptable, optional `\boldsymbol` if the teacher minds.
 
 ## Checked
-- All six contact sheets (#1–#69 thumbnails); full size: fig-5 (390), sim-1280, intro-1280, open-exercises-1280-3. Figures 1–7 (same drawings as the Finnish page, labels translated: "sovitettu suora", "menomatka", "paluumatka" fit), worked example, Ennusta, Tutki, Teoriatiivistelmä, Sovella, Tarkista, exit ticket and exercises from the contact sheets.
-- No English word on any capture; Case select fits ("1: sama lähtöpaikka"); decimal comma and units correct; no overflow or red KaTeX. Language is deliberately short-sentenced, glossary terms consistent (paikka, siirtymä, nopeus, keskinopeus).
-
-## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 4
+batch delta review: scratchpad kc/fy4-1-390.png and kc/fy4-1-1280.png (the new section cut from the built page, preview/fi-easy/fy4-1.html): stacked at 390 px, two columns at 1280 px, no raw maths, no overflow, no clipping; the diff text read for wording (the packet's own captures show no figure change, so only sheets of the new section were opened).
