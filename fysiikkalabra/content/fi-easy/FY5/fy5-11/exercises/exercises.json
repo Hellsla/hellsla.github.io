@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy5-11-L1-01",
+      "level": 1,
+      "text": "Aaltoaltaassa tasoaalto osuu altaan seinään tulokulmassa $35^\\circ$. Mikä on heijastuskulma?",
+      "answer": 35,
+      "unit": "°",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-11-L1-02",
+      "level": 1,
+      "text": "Merestä tuleva aalto osuu laiturin tasaiseen seinään. Tulevan säteen ja seinän pinnan välinen kulma on $20^\\circ$. Mikä on aallon tulokulma?",
+      "answer": 70,
+      "unit": "°",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-11-L1-03",
+      "level": 1,
+      "text": "Aaltoaltaan aaltokone tekee aaltoja taajuudella $8{,}0\\,\\text{Hz}$. Aallot etenevät nopeudella $0{,}24\\,\\text{m/s}$. Mikä on aallonpituus? Anna vastaus senttimetreinä.",
+      "answer": 3.0,
+      "unit": "cm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-11-L1-04",
+      "level": 1,
+      "text": "Köyden pää on sidottu renkaaseen. Rengas liukuu kitkatta pystysuoraa tankoa pitkin. Köyteen lähetetään ylöspäin suuntautuva pulssi, ja se heijastuu renkaan kohdalta. Mihin suuntaan heijastuneen pulssin poikkeama osoittaa, ja miksi?",
+      "answer": "Ylöspäin: vapaa pää ei käännä pulssia.",
+      "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-11-L1-05",
+      "level": 1,
+      "text": "Retkeilijä huutaa järven rannalla. Kaiku vastarannan kallioseinästä kuuluu $1{,}4\\,\\text{s}$ kuluttua. Äänen nopeus ilmassa on $343\\,\\text{m/s}$. Kuinka kaukana kallioseinä on?",
+      "answer": 240,
+      "unit": "m",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy5-11-L2-01",
+      "level": 2,
+      "text": "Tasoaalto osuu tasaiseen seinään tulokulmassa $30^\\circ$. Aaltorintama koskettaa seinää ensin kohdassa $A$ ja vähän myöhemmin toisessa kohdassa. Tämä toinen kohta $B$ on $0{,}60\\,\\text{m}$:n päässä kohdasta $A$. Aallon nopeus on $0{,}40\\,\\text{m/s}$. Kuinka kauan kestää, ennen kuin sama rintama saavuttaa kohdan $B$?",
+      "answer": 0.75,
+      "unit": "s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-11-L2-02",
+      "level": 2,
+      "text": "Pihalle on pingotettu $8{,}0\\,\\text{m}$ pitkä köysi, jonka toinen pää on kiinni puussa. Köyden toisesta päästä lähetetään pulssi. Heijastunut pulssi palaa lähtökohtaan $3{,}2\\,\\text{s}$ kuluttua. Mikä on pulssin nopeus köydessä?",
+      "answer": 5.0,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-11-L2-03",
+      "level": 2,
+      "text": "Seisot kapeassa kanjonissa kahden pystysuoran kallioseinän välissä. Taputat käsiäsi kerran. Ensimmäinen kaiku kuuluu $0{,}40\\,\\text{s}$ ja toinen $0{,}70\\,\\text{s}$ taputuksen jälkeen. Äänen nopeus on $343\\,\\text{m/s}$. Kuinka kaukana seinät ovat toisistaan?",
+      "answer": 190,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-11-L2-04",
+      "level": 2,
+      "text": "Luokan oviaukko on $0{,}90\\,\\text{m}$ leveä, ja äänen nopeus on $343\\,\\text{m/s}$. Millä äänen taajuudella aallonpituus on yhtä suuri kuin oviaukon leveys?",
+      "answer": 380,
+      "unit": "Hz",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy5-11-L3-01",
+      "level": 3,
+      "text": "Naapurin avoimesta ikkunasta kuuluu musiikkia. Ikkunan leveys on $0{,}80\\,\\text{m}$. Kävelet talon nurkan taakse, jossa et enää näe ikkunaa. Bassorummun matala ääni ($100\\,\\text{Hz}$) kuuluu yhä selvästi, mutta symbaalin korkea ääni ($5000\\,\\text{Hz}$) heikkenee paljon. Selitä ilmiö diffraktiolla ja vertaa kummankin äänen aallonpituutta ikkunan leveyteen. Äänen nopeus on $343\\,\\text{m/s}$.",
+      "answer": "Basson aallonpituus $\\lambda = 3{,}4\\,\\text{m}$ on ikkunaa pidempi ($b/\\lambda \\approx 0{,}23$), joten se taipuu voimakkaasti. Symbaalin $\\lambda \\approx 6{,}9\\,\\text{cm}$ on ikkunaa paljon lyhyempi ($b/\\lambda \\approx 12$), joten se etenee lähes suoraan.",
+      "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-11-L3-02",
+      "level": 3,
+      "text": "Aaltoaltaassa tasoaalto osuu vinosti tasaiseen seinään. Seinällä on kaksi merkkiä $A$ ja $B$, ja niiden etäisyys on $0{,}40\\,\\text{m}$. Video näyttää, että sama aallonharja saavuttaa merkin $B$ $0{,}50\\,\\text{s}$ myöhemmin kuin merkin $A$. Aallon nopeus on $0{,}30\\,\\text{m/s}$. Määritä aallon tulokulma.",
+      "answer": 22,
+      "unit": "°",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-11-L3-03",
+      "level": 3,
+      "text": "Köysi on $6{,}0\\,\\text{m}$ pitkä, ja sen kauempi pää on sidottu tolppaan. Lähetät köyteen ylöspäin suuntautuvan pulssin. Sen jälkeen pidät köyden toista päätä tiukasti paikallaan. Pulssin nopeus on $4{,}0\\,\\text{m/s}$. Pulssi heijastuu tolpasta ja palaa kätesi luo. Se heijastuu kädestä ja etenee taas tolppaa kohti. Kuinka kauan pulssin lähettämisestä kuluu, kun pulssi saapuu tolpalle toisen kerran? Anna vastaus sekunteina.",
+      "answer": 4.5,
+      "unit": "s",
+      "tolerance": 0.02
+    }
+  ]
+}
