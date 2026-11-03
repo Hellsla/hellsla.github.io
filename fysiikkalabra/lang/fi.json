@@ -345,7 +345,10 @@
     "ra_normal": "normaali",
     "ra_fast": "nopea",
     "ra_voice": "Ääni",
-    "ra_voice_auto": "paras saatavilla",
+    "ra_female": "Nainen",
+    "ra_male": "Mies",
+    "ra_loading": "Ladataan puheääntä: {{p}} %. Lataus tehdään vain ensimmäisellä kerralla.",
+    "ra_fallback": "Puheääntä ei voitu ladata, joten selain lukee laitteen omalla äänellä.",
     "ra_bar": "Ääneenluku",
     "ra_no_voice": "Laitteessasi ei ole suomenkielistä puheääntä, joten selain lukee toisella äänellä. Suomen puheäänen voi lisätä laitteen kieliasetuksista, tai voit käyttää Edge-selainta."
   },
