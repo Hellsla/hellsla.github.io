@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: e1edbdcd1504df0c
+CONTENT-HASH: fae69bc31f6b2519
 
 ## Blocking
+- none
 
 ## Polish
+- none
 
 ## Checked
-batch delta review: renamed title and chapter cross-references only (no numbers, symbols or figures changed); fy5-7 and fy5-14 top-390 captures opened, long new titles wrap cleanly at 390 px; references read as natural Finnish and match the new titles.
+- batch delta review: "Luvun tärkeät käsitteet" panel captured from preview/fi-easy/fy5-15.html at 390 and 1280 px (the review/shots set has no capture of it) and opened — between the opening and stage 1, term bold over its explanation at 390 px, two-column at 1280 px, no clipping, no horizontal overflow, no KaTeX error; top-390 opened in a montage (read-aloud "Kuuntele" button under the title, layout intact).
