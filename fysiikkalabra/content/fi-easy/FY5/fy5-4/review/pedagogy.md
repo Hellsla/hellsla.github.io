@@ -1,12 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: ec38db9d87b5fd39
-
+CONTENT-HASH: 4ada06d66c310934
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] Many short items are intentionally identical to the Finnish (choices, hints); acceptable.
 
 ## Checked
-- Every stage, prediction, hint, feedback, criterion and model answer present. Simplified in this review: learn goal, two prerequisites, the hard criterion sentences, the exit-ticket question 3 and the long solution lines (hint wording kept).
-- Short sentences, one idea each, terms explained.
+batch delta review: new lesson title and renamed chapter cross-references (prior lists, feedback, theory text) read in context; the names match the new titles of the target lessons, wording and Finnish unchanged otherwise, no stale old titles left in the lesson files.

@@ -125,6 +125,8 @@ How fast energy is transformed or transferred is called **power**. Power is ener
 
 Power does not tell you how much energy a device uses in total. For that you need power together with time: a low power for a long time can transform the same energy as a high power for a short moment. This is why an electricity bill depends on both the power of the device and how long it is used.
 
+<figure class="unit-photo"><img src="pics/fy2/offshore-wind-sunset.webp" alt="Four wind turbines at sea on the horizon against an orange sunset sky."><figcaption>Offshore wind turbines at sunset. A turbine's power tells how fast it produces electrical energy. The energy produced in a day also depends on how long and how strongly the wind blows.</figcaption></figure>
+
 ## Formula: Power
 Power is the quotient of the energy transformed or transferred and the time it takes:
 ```latex

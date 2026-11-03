@@ -7,9 +7,9 @@
     "determine the distance of an earthquake from the difference in arrival times of the P wave and the S wave."
   ],
   "prior": [
-    "The speed, frequency and wavelength of a wave are related by the equation $v = f\\lambda$, and a wave can be transverse or longitudinal (chapter *Mechanical waves*)",
-    "A wave is partly reflected from the boundary of two substances, and an obstacle bends a wave more the greater the wavelength is compared with the obstacle (chapter *Reflection and diffraction of waves*)",
-    "Sound is a longitudinal wave, and a person hears frequencies from about $20\\,\\text{Hz}$ to $20\\,\\text{kHz}$ (chapter *Properties of sound*)"
+    "The speed, frequency and wavelength of a wave are related by the equation $v = f\\lambda$, and a wave can be transverse or longitudinal (chapter *How waves form and travel*)",
+    "A wave is partly reflected from the boundary of two substances, and an obstacle bends a wave more the greater the wavelength is compared with the obstacle (chapter *A wave meets an obstacle or a gap*)",
+    "Sound is a longitudinal wave, and a person hears frequencies from about $20\\,\\text{Hz}$ to $20\\,\\text{kHz}$ (chapter *Sound as a wave: pitch, timbre and the Doppler effect*)"
   ],
   "activities": [
     {
@@ -29,15 +29,15 @@
         {
           "text": "about $8.6\\,\\text{mm}$",
           "correct": true,
-          "feedback": "Correct. From the equation $v = f\\lambda$ we get $\\lambda = \\tfrac{v}{f} = \\tfrac{343\\,\\text{m/s}}{40\\,000\\,\\text{Hz}} \\approx 0.0086\\,\\text{m}$ (chapter *Mechanical waves*). The wavelength is of the same order of magnitude as the size of an insect, and this explains why bats use ultrasound."
+          "feedback": "Correct. From the equation $v = f\\lambda$ we get $\\lambda = \\tfrac{v}{f} = \\tfrac{343\\,\\text{m/s}}{40\\,000\\,\\text{Hz}} \\approx 0.0086\\,\\text{m}$ (chapter *How waves form and travel*). The wavelength is of the same order of magnitude as the size of an insect, and this explains why bats use ultrasound."
         },
         {
           "text": "about $1.4 \\cdot 10^{7}\\,\\text{m}$",
-          "feedback": "You multiplied the speed by the frequency. In the equation $v = f\\lambda$ the wavelength is the speed divided by the frequency, $\\lambda = \\tfrac{v}{f}$. A high frequency means a short wavelength, not a long one (chapter *Mechanical waves*)."
+          "feedback": "You multiplied the speed by the frequency. In the equation $v = f\\lambda$ the wavelength is the speed divided by the frequency, $\\lambda = \\tfrac{v}{f}$. A high frequency means a short wavelength, not a long one (chapter *How waves form and travel*)."
         },
         {
           "text": "about $117\\,\\text{m}$",
-          "feedback": "You divided the frequency by the speed, and the unit of the result is then $1/\\text{m}$, not metres. The wavelength is $\\lambda = \\tfrac{v}{f}$: the speed divided by the frequency (chapter *Mechanical waves*)."
+          "feedback": "You divided the frequency by the speed, and the unit of the result is then $1/\\text{m}$, not metres. The wavelength is $\\lambda = \\tfrac{v}{f}$: the speed divided by the frequency (chapter *How waves form and travel*)."
         }
       ]
     },

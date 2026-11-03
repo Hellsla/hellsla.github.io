@@ -70,7 +70,7 @@ akselit 0
 ## fy5-4-L2-02
 **Given:** period $T = 5.0\,\text{s}$, distance from the centre $r = 3.0\,\text{m}$
 **Find:** the centripetal acceleration $a_\text{n}$ of the child in $\text{m/s}^2$
-**Principle:** The roundabout turns steadily, so the child is in uniform circular motion. By the chapter *Circular motion and speed*, the tangential speed is the length of one revolution divided by the period, and the centripetal acceleration is found from the tangential speed.
+**Principle:** The roundabout turns steadily, so the child is in uniform circular motion. By the chapter *Moving in a circle: period and speed*, the tangential speed is the length of one revolution divided by the period, and the centripetal acceleration is found from the tangential speed.
 **Formula:** $v = \dfrac{2\pi r}{T}$ and $a_\text{n} = \dfrac{v^2}{r}$
 **Conversions:** The quantities are in SI units, so no conversions are needed.
 **Substitution:** $v = \dfrac{2\pi\cdot 3.0\,\text{m}}{5.0\,\text{s}} = 3.770\,\text{m/s}$ and $a_\text{n} = \dfrac{(3.770\,\text{m/s})^2}{3.0\,\text{m}} = 4.737\,\text{m/s}^2$

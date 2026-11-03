@@ -12,8 +12,7 @@ investigation and a course unit (or the pages named):
     a figure and a simulation are not read; the block being read is marked and the sentence and the word are
     highlighted (CSS Custom Highlight API)
   - the best voice of the language is used (neural, Google or enhanced before an old desktop voice; teacher
-    2026-11-03 "the quality in chrome seems really awful"), the voice menu lists the language's voices best first and
-    a voice chosen there is used
+    2026-11-03 "the quality in chrome seems really awful") when the device's voice reads
   - pause and continue, next and previous sentence, Esc stops and hides the bar
   - at 360, 768 and 1280 px the bar fits the window (no horizontal scroll), its controls are at least 40 px high
 Exit status 1 on any failure."""
@@ -62,6 +61,7 @@ MOCK = r"""(() => {
       this.t = setTimeout(tick, 5); },
     pause() {}, resume() {} };
   Object.defineProperty(window, 'speechSynthesis', { value: synth, configurable: true }); window.SpeechSynthesisUtterance = U;
+  window.flTtsEngine = 'browser';   // these checks use the device-voice path; the neural voice has its own check below
 })();"""
 
 TEX = {
@@ -142,12 +142,7 @@ with sync_playwright() as pw:
                 best = "Google UK English Female" if lang == "en" else "Microsoft Noora Online (Natural) - Finnish (Finland)"
                 used = pg.evaluate("window.__voice.slice(-1)[0]")
                 expect(f"{tag}: the best voice is chosen, not the old desktop voice", used == best, used)
-                opts = pg.evaluate("[...document.querySelectorAll('.ra-voice select option')].map(o => o.value)")
-                expect(f"{tag}: the voice menu lists this language's voices, best first", len(opts) >= 3 and opts[0] == "" and opts[1] == best, opts)
-                other = opts[-1]
-                pg.select_option(".ra-voice select", other); pg.wait_for_timeout(80)
-                expect(f"{tag}: a voice chosen from the menu is used", pg.evaluate("window.__voice.slice(-1)[0]") == other, pg.evaluate("window.__voice.slice(-1)[0]"))
-                pg.select_option(".ra-voice select", ""); pg.wait_for_timeout(80)
+                expect(f"{tag}: without the neural voice there is no voice menu", pg.evaluate("document.querySelector('.ra-voice').hidden"))
                 n0 = pg.evaluate("window.__spoken.length")
                 pg.click(".ra-dock .ra-main"); pg.wait_for_timeout(150)
                 paused = pg.evaluate("[document.querySelector('.ra-start').getAttribute('aria-pressed'), window.__spoken.length]")
@@ -166,6 +161,45 @@ with sync_playwright() as pw:
             expect(f"{tag}: no script errors", not errs, errs[:3])
             pg.close()
     b.close()
+
+# The neural voice (teacher 2026-11-03: Supertonic 3, "Nainen / Mies"): the real model in vendor/supertonic3-v1 on the
+# CPU (headless Chromium has no WebGPU), on one Finnish lesson: it loads, the first sentence is synthesised and played
+# with the sentence highlighted, the menu has Nainen and Mies, and Mies gives a new synthesis of the same sentence.
+NPAGE = pick("fy3-6.html") or (targets[0] if targets else None)
+if NPAGE and (SITE / "vendor/supertonic3-v1/manifest.json").is_file():
+    with sync_playwright() as pw:
+        b = launch(pw)
+        pg = b.new_page(viewport={"width": 1280, "height": 800})
+        errs = []; pg.on("pageerror", lambda e: errs.append(str(e)))
+        pg.add_init_script("""window.flTtsGpu = false; window.flTtsWorkers = 1; window.__bufs = [];
+          const cb = AudioContext.prototype.createBuffer; AudioContext.prototype.createBuffer = function (c, n, sr) { window.__bufs.push([n, sr]); return cb.call(this, c, n, sr); };""")
+        pg.goto(BASE + NPAGE); pg.wait_for_timeout(400)
+        T = i18n.T(i18n.SOURCE)
+        opts = pg.evaluate("[...document.querySelectorAll('.ra-voice select option')].map(o => o.textContent)")
+        expect(f"neural {NPAGE}: the voice menu is {T('js.ra_female')} / {T('js.ra_male')}", opts == [T("js.ra_female"), T("js.ra_male")], opts)
+        pg.click(".ra-start")
+        st = {}
+        for _ in range(240):
+            st = pg.evaluate("flSpeech.state()")
+            if st["ep"] or st["failed"]: break
+            pg.wait_for_timeout(500)
+        expect(f"neural {NPAGE}: the model loads (on the CPU here)", st.get("ep") == "wasm" and not st.get("failed"), st)
+        for _ in range(120):
+            if pg.evaluate("window.__bufs.length"): break
+            pg.wait_for_timeout(500)
+        bufs = pg.evaluate("window.__bufs")
+        expect(f"neural {NPAGE}: the first sentence is synthesised and played at 44,1 kHz, 1 to 30 s long",
+               bool(bufs) and bufs[0][1] == 44100 and 44100 <= bufs[0][0] <= 30 * 44100, bufs)
+        expect(f"neural {NPAGE}: the sentence being read is highlighted", pg.evaluate("CSS.highlights.has('ra-sentence') && !!document.querySelector('main .ra-on')"))
+        n0 = len(bufs)
+        pg.select_option(".ra-voice select", "male")
+        for _ in range(120):
+            if pg.evaluate("window.__bufs.length") > n0: break
+            pg.wait_for_timeout(500)
+        expect(f"neural {NPAGE}: Mies reads the sentence again in the male voice", pg.evaluate("window.__bufs.length") > n0 and pg.evaluate("flSpeech.state().voice") == "male")
+        pg.keyboard.press("Escape")
+        expect(f"neural {NPAGE}: no script errors", not errs, errs[:3])
+        b.close()
 srv.shutdown()
 print("FAIL" if fails else "PASS", f"({fails} failures)" if fails else "")
 sys.exit(1 if fails else 0)

@@ -1,10 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 953caadd9f747b5b
+CONTENT-HASH: 9744c01bdff95024
+
 ## Blocking
-(none)
+
 ## Polish
-- hero — Alt says the hump moves towards the post; the still image cannot show direction (clear from the girl's position), fine.
+
+
 ## Checked
-- Delta review: only the hero illustration and its alt text changed; the rest stays as previously approved.
-- Hero shows the opening phenomenon without answering it: single hump on a taut rope, girl at one end, bell on the post at the other; no wave-carries-matter error; alt matches (lake, wooded shore, red cottage, birches).
-- Finnish alt text reads correctly; no text inside the picture; the 390 px capture shows the picture intact.
+batch delta review: title and chapter-reference renames only; every *chapter* reference in lesson.md, inquiry.json, exercises and solutions of FY5 resolves to a current lesson title; new titles are clear and consistent with neighbouring lessons.

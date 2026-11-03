@@ -1,18 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 7546989a9073b1e4
+CONTENT-HASH: 41dcb60373a7417e
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] hero — the light blue motion envelope is slim at 390 px; it is still visible and the string, capo and bridge read clearly.
 
 ## Checked
-- Delta review, category illustration: only the hero (`data-fig="hero"`) and its aria-label changed.
-- fy5-13-top-390.png and fy5-13-intro-1280.png (hero at 390 px and 1280 px, fi page): a guitar in its open case from above, capo, plucked string with a light blue motion envelope, pick. Layout survived: the picture sits in the 16:8 frame, nothing clipped, no horizontal overflow, the first screen is unchanged around it.
-- Hero SVG source is identical in fi, en and fi-easy (checked by comparing the SVG body); the screenshots are the same picture. No text in the picture; flat vector style and palette match the other FY5 openings.
-- Alt text compared with the picture item by item and read in its own language: it matches what is drawn, nothing is claimed that is missing, and it does not give away the chapter's answer.
-- The picture fits the opening question in the Pohdinta; nothing physically misleading seen (science review carried over).
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+batch delta review: diff is chapter-title and chapter-reference renames only (no figures, maths or numbers touched); opened top-390 (and contact context) for titles that wrap at 390 px; renamed title and cross-references read consistently across FY5.

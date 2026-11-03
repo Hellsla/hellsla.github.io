@@ -95,6 +95,8 @@
 
 Energiaa on monessa muodossa, ja jokaista muotoa sanotaan **energialajiksi**. Energialaji kertoo, mihin energia on sitoutunut tai miten se ilmenee.
 
+<figure class="unit-photo"><img src="pics/fy2/hydropower-plant-aerial.webp" alt="Vesivoimalaitoksen alue ylhäältä kuvattuna: vasemmalla virtaa joki, keskellä on pysäköintialue ja alhaalla muuntajia ja sähkölinjojen pylväitä."><figcaption>Vesivoimalaitoksen alue ylhäältä. Vesivoimalaitoksessa veden potentiaalienergia muuttuu turbiinissa liike-energiaksi ja generaattorissa sähköenergiaksi.</figcaption></figure>
+
 ### Seitsemän energialajia
 - **Potentiaalienergia** $E_\text{p}$ on kappaleen asemaan sidottua energiaa, tässä painovoiman potentiaalienergiaa. Mitä korkeammalla kappale on ja mitä suurempi sen massa on, sitä enemmän sillä on potentiaalienergiaa. Hyllyn reunalla oleva pallo voi pudotessaan saada vauhtia.
 - **Liike-energia** $E_\text{k}$ on liikkuvan kappaleen energiaa. Mitä nopeammin kappale liikkuu ja mitä suurempi sen massa on, sitä enemmän sillä on liike-energiaa. Levossa olevalla kappaleella sitä ei ole.

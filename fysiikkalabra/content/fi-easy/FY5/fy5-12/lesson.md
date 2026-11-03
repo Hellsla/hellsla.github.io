@@ -1,4 +1,4 @@
-# Aaltojen interferenssi
+# Aaltojen yhteisvaikutus: superpositio ja interferenssi
 
 > **Miksi** kahden samaa ääntä soittavan kaiuttimen edessä kävellessä ääni välillä voimistuu ja välillä lähes katoaa?
 
@@ -121,10 +121,10 @@ Superpositio näkyy selvimmin narussa. Narun molemmista päistä lähetetään k
   <path d="M402,374 L413,369 L413,379 Z" fill="#7048e8" stroke-linejoin="round"/>
 </svg>
 
-Aaltojen yhteisvaikutusta samassa kohdassa sanotaan **interferenssiksi**. Joskus aallot vahvistavat toisiaan, ja summa-aallon poikkeama kasvaa. Silloin interferenssi on **vahvistava**. Joskus aallot heikentävät toisiaan. Silloin interferenssi on **heikentävä**. Luvussa *Mekaaninen aaltoliike* aallon poikkeama muuttui paikan ja ajan mukaan. Superpositioperiaate pätee jokaisessa kohdassa ja jokaisella hetkellä erikseen.
+Aaltojen yhteisvaikutusta samassa kohdassa sanotaan **interferenssiksi**. Joskus aallot vahvistavat toisiaan, ja summa-aallon poikkeama kasvaa. Silloin interferenssi on **vahvistava**. Joskus aallot heikentävät toisiaan. Silloin interferenssi on **heikentävä**. Luvussa *Aaltojen synty ja eteneminen* aallon poikkeama muuttui paikan ja ajan mukaan. Superpositioperiaate pätee jokaisessa kohdassa ja jokaisella hetkellä erikseen.
 
 ### Kaksi samassa vaiheessa olevaa lähdettä
-Aaltoallas on matala vesiallas, jossa tutkitaan vesiaaltoja. Altaassa kaksi pientä nuppia voi olla kiinni samassa täryttimessä. Tärytin liikuttaa nuppeja ylös ja alas samassa tahdissa. Silloin lähteillä on sama taajuus, ja ne ovat samassa vaiheessa. Kumpikin lähettää aallonharjan samalla hetkellä. Kummastakin lähteestä leviää ympyränmuotoinen aalto, kuten raon jälkeen luvussa *Aaltojen heijastuminen ja diffraktio*. Kaksi kaiutinta toimii samoin ääniaalloille, kun ne on kytketty samaan äänigeneraattoriin.
+Aaltoallas on matala vesiallas, jossa tutkitaan vesiaaltoja. Altaassa kaksi pientä nuppia voi olla kiinni samassa täryttimessä. Tärytin liikuttaa nuppeja ylös ja alas samassa tahdissa. Silloin lähteillä on sama taajuus, ja ne ovat samassa vaiheessa. Kumpikin lähettää aallonharjan samalla hetkellä. Kummastakin lähteestä leviää ympyränmuotoinen aalto, kuten raon jälkeen luvussa *Aalto kohtaa esteen tai raon*. Kaksi kaiutinta toimii samoin ääniaalloille, kun ne on kytketty samaan äänigeneraattoriin.
 
 Aallot kohtaavat altaan jokaisessa kohdassa. Joissakin kohdissa harja kohtaa aina harjan ja pohja pohjan. Siellä vesi värähtelee voimakkaasti. Toisissa kohdissa harja kohtaa aina pohjan. Siellä vesi pysyy lähes levossa. Vesi on levossa kokonaisina viivoina, joita sanotaan **solmuviivoiksi**. Solmuviivojen välissä ovat vahvistavan interferenssin viivat. Kuvio pysyy paikallaan, vaikka aallot etenevät koko ajan. Syy on se, että lähteiden taajuus on sama ja niiden välinen vaihe ei muutu. Jos taajuudet olisivat hieman eri suuret, vahvistavat ja heikentävät kohdat vaeltaisivat.
 
@@ -242,7 +242,7 @@ Superpositioperiaate toimii myös toiseen suuntaan. Jokaisen jaksollisen signaal
   <rect x="457.5" y="308.5" width="18" height="21.5" fill="#2b8a3e"/>
 </svg>
 
-Kuvan yläosassa on kolme siniaaltoa. Niiden taajuudet ovat $220\,\text{Hz}$, $660\,\text{Hz}$ ja $1100\,\text{Hz}$. Niiden summa on lähes kanttiaalto. Spektri näyttää vain nämä kolme taajuutta. Fourier-muunnoksesta on hyötyä äänen tutkimisessa. Spektristä näkee, miksi samaa säveltä soittava piano ja viulu kuulostavat erilaisilta. Melusta näkee, mitkä taajuudet sitä hallitsevat. Mittausohjelmat laskevat spektrin nopealla Fourier-muunnoksella (FFT). Sitä käytetään luvussa *Äänen ominaisuudet*.
+Kuvan yläosassa on kolme siniaaltoa. Niiden taajuudet ovat $220\,\text{Hz}$, $660\,\text{Hz}$ ja $1100\,\text{Hz}$. Niiden summa on lähes kanttiaalto. Spektri näyttää vain nämä kolme taajuutta. Fourier-muunnoksesta on hyötyä äänen tutkimisessa. Spektristä näkee, miksi samaa säveltä soittava piano ja viulu kuulostavat erilaisilta. Melusta näkee, mitkä taajuudet sitä hallitsevat. Mittausohjelmat laskevat spektrin nopealla Fourier-muunnoksella (FFT). Sitä käytetään luvussa *Ääni aaltona: korkeus, sointiväri ja Dopplerin ilmiö*.
 
 ## Esimerkki
 Kaksi kaiutinta on kytketty samaan äänigeneraattoriin. Ne soittavat samassa vaiheessa samaa ääntä, jonka taajuus on $680\,\text{Hz}$. Äänen nopeus ilmassa on $340\,\text{m/s}$. Kuulija on $4{,}25\,\text{m}$:n päässä toisesta kaiuttimesta ja $3{,}00\,\text{m}$:n päässä toisesta. Kuuleeko hän voimakkaan vai heikon äänen?
@@ -253,7 +253,7 @@ Kaksi kaiutinta on kytketty samaan äänigeneraattoriin. Ne soittavat samassa va
 
 <!-- vaihe -->
 
-**Periaate.** Kaiuttimet ovat samassa vaiheessa ja soittavat samaa taajuutta. Siksi interferenssin laadun ratkaisee matkaeron ja aallonpituuden suhde. Aallonpituus saadaan aallon nopeudesta ja taajuudesta, $v = f\lambda$ (luku *Mekaaninen aaltoliike*).
+**Periaate.** Kaiuttimet ovat samassa vaiheessa ja soittavat samaa taajuutta. Siksi interferenssin laadun ratkaisee matkaeron ja aallonpituuden suhde. Aallonpituus saadaan aallon nopeudesta ja taajuudesta, $v = f\lambda$ (luku *Aaltojen synty ja eteneminen*).
 
 <!-- vaihe -->
 

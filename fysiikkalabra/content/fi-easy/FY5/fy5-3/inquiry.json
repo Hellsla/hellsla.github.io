@@ -346,7 +346,7 @@
         {
           "text": "Auton nopeus muuttuu, koska sen suunta muuttuu, joten auto on kiihtyvässä liikkeessä.",
           "correct": true,
-          "feedback": "Oikein. Nopeus on vektori. Vauhti pysyy arvossa $30\\,\\text{km/h}$, mutta nopeuden suunta kääntyy koko ajan. Siksi nopeuden muutos $\\Delta\\overline{v}$ ei ole nolla ja auto kiihtyy. Kiihtyvyyden suuruus lasketaan luvussa *Tasainen ympyräliike ja normaalikiihtyvyys*."
+          "feedback": "Oikein. Nopeus on vektori. Vauhti pysyy arvossa $30\\,\\text{km/h}$, mutta nopeuden suunta kääntyy koko ajan. Siksi nopeuden muutos $\\Delta\\overline{v}$ ei ole nolla ja auto kiihtyy. Kiihtyvyyden suuruus lasketaan luvussa *Normaalikiihtyvyys ja ympyräliikkeen liikeyhtälö*."
         },
         {
           "text": "Auton nopeus ei muutu, koska nopeusmittari näyttää koko ajan samaa lukemaa.",

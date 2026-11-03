@@ -7,7 +7,7 @@
     "fit a sine function to measured points and interpret the result of the fit."
   ],
   "prior": [
-    "The period $T$ is the duration of one revolution, and the rotation frequency $f = \\tfrac{1}{T}$ is the number of revolutions per unit time (chapter *Circular motion and speed*)",
+    "The period $T$ is the duration of one revolution, and the rotation frequency $f = \\tfrac{1}{T}$ is the number of revolutions per unit time (chapter *Moving in a circle: period and speed*)",
     "A $(t, x)$ graph shows the position of an object as a function of time (chapter *Position, velocity and uniform motion as graphs*)"
   ],
   "activities": [
@@ -28,7 +28,7 @@
         {
           "text": "$0.25\\,\\tfrac{1}{\\text{s}}$, because a quarter of a revolution is completed in a second.",
           "correct": true,
-          "feedback": "Correct. The rotation frequency is the reciprocal of the period, $f = \\tfrac{1}{T} = \\tfrac{1}{4.0\\,\\text{s}} = 0.25\\,\\tfrac{1}{\\text{s}}$ (chapter *Circular motion and speed*). Today the same quantities describe back-and-forth motion."
+          "feedback": "Correct. The rotation frequency is the reciprocal of the period, $f = \\tfrac{1}{T} = \\tfrac{1}{4.0\\,\\text{s}} = 0.25\\,\\tfrac{1}{\\text{s}}$ (chapter *Moving in a circle: period and speed*). Today the same quantities describe back-and-forth motion."
         },
         {
           "text": "$4.0\\,\\tfrac{1}{\\text{s}}$, because one revolution lasts four seconds.",

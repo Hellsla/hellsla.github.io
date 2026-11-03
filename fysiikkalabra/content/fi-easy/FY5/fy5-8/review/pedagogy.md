@@ -1,14 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 55ae0e4b739c0193
-
+CONTENT-HASH: c8040b0ec5917f54
 ## Blocking
-(none)
 
 ## Polish
-- lesson.md (hero) — Polish: the cropped playfield (bumpers cut at the top edge) is fine for a close-up, but a student unfamiliar with pinball may not see where the ball will go; the alt text names the launch lane, which helps.
 
 ## Checked
-- Delta only: the hero illustration and its alt text; the rest of the lesson is as previously approved.
-- Plunger pulled out by hand, compressing the coil spring between the plunger head and the front wall, ball resting on the head: this is correct physics for a pinball launcher and matches the question (spring compression and launch speed). No force arrows or numbers disclose the answer.
-- The easy-Finnish alt text (short sentences) matches the picture element by element and is in correct language; the opening question's wording is unchanged.
-- Hero is legible at 390 px and 1280 px (top captures) and carries no text.
+batch delta review: new lesson title and renamed chapter cross-references (prior lists, feedback, theory text) read in context; the names match the new titles of the target lessons, wording and Finnish unchanged otherwise, no stale old titles left in the lesson files.

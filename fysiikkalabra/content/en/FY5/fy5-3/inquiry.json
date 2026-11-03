@@ -346,7 +346,7 @@
         {
           "text": "The velocity of the car changes because its direction changes, so the car is accelerating.",
           "correct": true,
-          "feedback": "Correct. Velocity is a vector. Even though the speed stays at $30\\,\\text{km/h}$, the direction of the velocity turns all the time, so the change of velocity $\\Delta\\overline{v}$ is not zero and the car accelerates. The magnitude of the acceleration is calculated in the chapter *Uniform circular motion and centripetal acceleration*."
+          "feedback": "Correct. Velocity is a vector. Even though the speed stays at $30\\,\\text{km/h}$, the direction of the velocity turns all the time, so the change of velocity $\\Delta\\overline{v}$ is not zero and the car accelerates. The magnitude of the acceleration is calculated in the chapter *Centripetal acceleration and the equation of motion in a circle*."
         },
         {
           "text": "The velocity of the car does not change, because the speedometer shows the same reading all the time.",

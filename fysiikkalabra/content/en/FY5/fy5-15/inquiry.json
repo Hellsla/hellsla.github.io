@@ -7,8 +7,8 @@
     "explain the meaning of the threshold of hearing and calculate the combined level of several sound sources."
   ],
   "prior": [
-    "Sound is a longitudinal wave travelling in air, and its amplitude tells how loud the sound is (chapter *Properties of sound*)",
-    "A wave carries energy from the source to its surroundings without the medium travelling along (chapter *Mechanical waves*)",
+    "Sound is a longitudinal wave travelling in air, and its amplitude tells how loud the sound is (chapter *Sound as a wave: pitch, timbre and the Doppler effect*)",
+    "A wave carries energy from the source to its surroundings without the medium travelling along (chapter *How waves form and travel*)",
     "Power is energy per unit time, $P = \\tfrac{\\Delta E}{\\Delta t}$, and its unit is the watt (chapter *Power*)"
   ],
   "activities": [
@@ -30,11 +30,11 @@
         {
           "text": "The amplitude of the sound wave, that is, the size of the pressure variation in the air, increases.",
           "correct": true,
-          "feedback": "Correct. The same pitch means the same frequency, and a louder sound means a greater amplitude (chapter *Properties of sound*). Today loudness is measured by the power the wave carries per unit area."
+          "feedback": "Correct. The same pitch means the same frequency, and a louder sound means a greater amplitude (chapter *Sound as a wave: pitch, timbre and the Doppler effect*). Today loudness is measured by the power the wave carries per unit area."
         },
         {
           "text": "The frequency of the sound increases, because a loud sound is higher.",
-          "feedback": "Frequency determines pitch, not loudness: the same note can sound quietly or loudly (chapter *Properties of sound*). A louder sound is a wave of the same frequency with a greater amplitude."
+          "feedback": "Frequency determines pitch, not loudness: the same note can sound quietly or loudly (chapter *Sound as a wave: pitch, timbre and the Doppler effect*). A louder sound is a wave of the same frequency with a greater amplitude."
         },
         {
           "text": "The sound travels faster in air, so it reaches the ear stronger.",

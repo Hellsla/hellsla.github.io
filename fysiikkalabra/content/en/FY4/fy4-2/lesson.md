@@ -598,6 +598,8 @@ a = 2A
 ```
 where $A$ is the coefficient of the $t^2$ term of the fitted polynomial ($\text{m/s}^2$). The coefficient $B$ is the initial velocity and $C$ the initial position.
 
+<figure class="unit-photo"><img src="pics/fy4/gull-takeoff-multiple-exposure.webp" alt="The same gull in three successive images as it runs on the water and takes off."><figcaption>A gull taking off, shown as a multiple exposure: the same bird is photographed three times in a row in one picture.</figcaption></figure>
+
 ## Worked example
 A cyclist reaches the top of a hill at $4.0\,\text{m/s}$ and stops pedalling. On the downhill her acceleration is $0.50\,\text{m/s}^2$, and the hill is $60\,\text{m}$ long. How long does the descent take, and what is her velocity at the bottom?
 

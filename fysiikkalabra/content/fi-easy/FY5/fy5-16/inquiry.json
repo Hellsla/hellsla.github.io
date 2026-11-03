@@ -7,9 +7,9 @@
     "selittämään, mitä jälkikaiunta ja vastamelu ovat ja miten kaiutin ja mikrofoni toimivat."
   ],
   "prior": [
-    "Äänen intensiteettitaso $L$ ilmoitetaan desibeleinä. Taso kasvaa aina yhtä paljon, kun intensiteetti kerrotaan samalla luvulla (luku *Äänen voimakkuus*)",
-    "Aalto heijastuu esteestä heijastuslain mukaan. Aalto taipuu myös esteen reunan taakse (luku *Aaltojen heijastuminen ja diffraktio*)",
-    "Kohtaavat aallot summautuvat. Ne voivat vahvistaa tai heikentää toisiaan (luku *Aaltojen interferenssi*)"
+    "Äänen intensiteettitaso $L$ ilmoitetaan desibeleinä. Taso kasvaa aina yhtä paljon, kun intensiteetti kerrotaan samalla luvulla (luku *Intensiteetti ja desibeliasteikko*)",
+    "Aalto heijastuu esteestä heijastuslain mukaan. Aalto taipuu myös esteen reunan taakse (luku *Aalto kohtaa esteen tai raon*)",
+    "Kohtaavat aallot summautuvat. Ne voivat vahvistaa tai heikentää toisiaan (luku *Aaltojen yhteisvaikutus: superpositio ja interferenssi*)"
   ],
   "activities": [
     {
@@ -28,16 +28,16 @@
       "choices": [
         {
           "text": "$180\\,\\text{dB}$, koska kahden tornin tasot lasketaan yhteen.",
-          "feedback": "Desibelit eivät summaudu suoraan. Intensiteetit summautuvat (luku *Äänen voimakkuus*). Kaksi tornia kaksinkertaistaa intensiteetin. Se nostaa tasoa vain noin $3\\,\\text{dB}$. Taso $180\\,\\text{dB}$ vastaisi noin miljardi kertaa suurempaa intensiteettiä."
+          "feedback": "Desibelit eivät summaudu suoraan. Intensiteetit summautuvat (luku *Intensiteetti ja desibeliasteikko*). Kaksi tornia kaksinkertaistaa intensiteetin. Se nostaa tasoa vain noin $3\\,\\text{dB}$. Taso $180\\,\\text{dB}$ vastaisi noin miljardi kertaa suurempaa intensiteettiä."
         },
         {
           "text": "$93\\,\\text{dB}$, koska intensiteetti kaksinkertaistuu.",
           "correct": true,
-          "feedback": "Oikein. Kaksi yhtä voimakasta lähdettä kaksinkertaistaa intensiteetin. Silloin taso nousee $10\\,\\text{dB} \\cdot \\lg 2 \\approx 3\\,\\text{dB}$ (luku *Äänen voimakkuus*). Tätä tarvitaan, kun arvioidaan, kuinka paljon melua korvaan tulee."
+          "feedback": "Oikein. Kaksi yhtä voimakasta lähdettä kaksinkertaistaa intensiteetin. Silloin taso nousee $10\\,\\text{dB} \\cdot \\lg 2 \\approx 3\\,\\text{dB}$ (luku *Intensiteetti ja desibeliasteikko*). Tätä tarvitaan, kun arvioidaan, kuinka paljon melua korvaan tulee."
         },
         {
           "text": "$90\\,\\text{dB}$, koska kummankin tornin taso on sama.",
-          "feedback": "Toinen torni tuo kuulijalle lisää energiaa, joten intensiteetti kasvaa. Taso nousee vain noin $3\\,\\text{dB}$, koska intensiteetti kaksinkertaistuu (luku *Äänen voimakkuus*)."
+          "feedback": "Toinen torni tuo kuulijalle lisää energiaa, joten intensiteetti kasvaa. Taso nousee vain noin $3\\,\\text{dB}$, koska intensiteetti kaksinkertaistuu (luku *Intensiteetti ja desibeliasteikko*)."
         },
         {
           "text": "$96\\,\\text{dB}$, koska kaksi tornia nostaa tasoa $6\\,\\text{dB}$.",
@@ -96,7 +96,7 @@
         {
           "text": "Kuulokkeet tuottavat aallon, joka on melun kanssa vastakkaisessa vaiheessa. Aallot kumoavat toisensa.",
           "correct": true,
-          "feedback": "Oikein. Melun ylipaine ja vastamelun alipaine osuvat samaan kohtaan samaan aikaan. Ne summautuvat lähes nollaksi. Tämä on heikentävää interferenssiä (luku *Aaltojen interferenssi*). Tämä onnistuu parhaiten matalalle ja tasaiselle äänelle, kuten moottorin huminalle."
+          "feedback": "Oikein. Melun ylipaine ja vastamelun alipaine osuvat samaan kohtaan samaan aikaan. Ne summautuvat lähes nollaksi. Tämä on heikentävää interferenssiä (luku *Aaltojen yhteisvaikutus: superpositio ja interferenssi*). Tämä onnistuu parhaiten matalalle ja tasaiselle äänelle, kuten moottorin huminalle."
         },
         {
           "text": "Kuulokkeet vaimentavat melun kuten tavalliset kuulokkeet. Kuvut ja pehmusteet estävät äänen pääsyn korvaan, ja elektroniikka vain säätää sitä.",
@@ -292,7 +292,7 @@
           "feedback": "Vähensit tasoa $18\\,\\text{dB}$ eli kolmen kaksinkertaistumisen verran. Kun etäisyys kasvaa $1{,}0\\,\\text{m}$:stä $4{,}0\\,\\text{m}$:iin, se kaksinkertaistuu vain kaksi kertaa. Taso on siis $88\\,\\text{dB}$."
         }
       ],
-      "solution": "**Annettu:** $L_1 = 100\\,\\text{dB}$ etäisyydellä $r_1 = 1{,}0\\,\\text{m}$, avustajan etäisyys $r_2 = 4{,}0\\,\\text{m}$; vertailu $L_0 = 85\\,\\text{dB}$ ja $t_0 = 8\\,\\text{h}$; pistemäinen lähde avoimessa tilassa.\n\n**Kysytty:** avustajan sallittu päivittäinen aika $t_\\text{sall}$ tunteina.\n\n**Periaate:** Avoimessa tilassa pistemäisen lähteen intensiteetti pienenee neljäsosaan aina, kun etäisyys kaksinkertaistuu. Taso laskee silloin $6\\,\\text{dB}$ (luku *Äänen voimakkuus*). Avustajan tasosta saadaan sallittu aika annossäännöllä, jossa jokainen $3\\,\\text{dB}$ puolittaa ajan.\n\n**Kaava:** $L_2 = L_1 - k \\cdot 6\\,\\text{dB}$, missä $2^{\\,k} = \\dfrac{r_2}{r_1}$, ja $t_\\text{sall} = \\dfrac{t_0}{2^{\\,n}}$, missä $n = \\dfrac{L_2 - L_0}{3\\,\\text{dB}}$\n\n**Muunnokset:** Ei tarvita. Etäisyydet ovat metreinä, joten niiden suhde on yksikötön. Aika saadaan suoraan tunteina.\n\n**Sijoitus:** $2^{\\,k} = 4{,}0\\,\\text{m} : 1{,}0\\,\\text{m} = 4$, joten $k = 2$ ja $L_2 = 100\\,\\text{dB} - 2 \\cdot 6\\,\\text{dB} = 88\\,\\text{dB}$. Sitten $n = \\dfrac{88\\,\\text{dB} - 85\\,\\text{dB}}{3\\,\\text{dB}} = 1$ ja $t_\\text{sall} = \\dfrac{8\\,\\text{h}}{2^1} = 4{,}0\\,\\text{h}$\n\n**Vastaus:** $4{,}0\\,\\text{h}$, kaksi merkitsevää numeroa kuten etäisyyksissä $1{,}0\\,\\text{m}$ ja $4{,}0\\,\\text{m}$.\n\n**Järkevyys:** Sirkkelin vieressä tasolla $100\\,\\text{dB}$ aika olisi vain $15\\,\\text{min}$. Avustajan kohdalla intensiteetti on $16$ kertaa pienempi. Aika on siis $16 \\cdot 15\\,\\text{min} = 240\\,\\text{min} = 4\\,\\text{h}$. Työpäivä on kuitenkin pidempi, joten avustajankin kannattaa käyttää suojaimia."
+      "solution": "**Annettu:** $L_1 = 100\\,\\text{dB}$ etäisyydellä $r_1 = 1{,}0\\,\\text{m}$, avustajan etäisyys $r_2 = 4{,}0\\,\\text{m}$; vertailu $L_0 = 85\\,\\text{dB}$ ja $t_0 = 8\\,\\text{h}$; pistemäinen lähde avoimessa tilassa.\n\n**Kysytty:** avustajan sallittu päivittäinen aika $t_\\text{sall}$ tunteina.\n\n**Periaate:** Avoimessa tilassa pistemäisen lähteen intensiteetti pienenee neljäsosaan aina, kun etäisyys kaksinkertaistuu. Taso laskee silloin $6\\,\\text{dB}$ (luku *Intensiteetti ja desibeliasteikko*). Avustajan tasosta saadaan sallittu aika annossäännöllä, jossa jokainen $3\\,\\text{dB}$ puolittaa ajan.\n\n**Kaava:** $L_2 = L_1 - k \\cdot 6\\,\\text{dB}$, missä $2^{\\,k} = \\dfrac{r_2}{r_1}$, ja $t_\\text{sall} = \\dfrac{t_0}{2^{\\,n}}$, missä $n = \\dfrac{L_2 - L_0}{3\\,\\text{dB}}$\n\n**Muunnokset:** Ei tarvita. Etäisyydet ovat metreinä, joten niiden suhde on yksikötön. Aika saadaan suoraan tunteina.\n\n**Sijoitus:** $2^{\\,k} = 4{,}0\\,\\text{m} : 1{,}0\\,\\text{m} = 4$, joten $k = 2$ ja $L_2 = 100\\,\\text{dB} - 2 \\cdot 6\\,\\text{dB} = 88\\,\\text{dB}$. Sitten $n = \\dfrac{88\\,\\text{dB} - 85\\,\\text{dB}}{3\\,\\text{dB}} = 1$ ja $t_\\text{sall} = \\dfrac{8\\,\\text{h}}{2^1} = 4{,}0\\,\\text{h}$\n\n**Vastaus:** $4{,}0\\,\\text{h}$, kaksi merkitsevää numeroa kuten etäisyyksissä $1{,}0\\,\\text{m}$ ja $4{,}0\\,\\text{m}$.\n\n**Järkevyys:** Sirkkelin vieressä tasolla $100\\,\\text{dB}$ aika olisi vain $15\\,\\text{min}$. Avustajan kohdalla intensiteetti on $16$ kertaa pienempi. Aika on siis $16 \\cdot 15\\,\\text{min} = 240\\,\\text{min} = 4\\,\\text{h}$. Työpäivä on kuitenkin pidempi, joten avustajankin kannattaa käyttää suojaimia."
     },
     {
       "id": "harjoitukset",

@@ -1,4 +1,4 @@
-# Harmoninen värähtely ja heiluri
+# Jousivärähtelijä ja heiluri
 
 > **Miksi** jokainen keinu, heiluri ja jousen varassa pomppiva kappale värähtelee omassa tahdissaan, ja mikä sen tahdin määrää?
 
@@ -123,7 +123,7 @@
 </svg>
 
 ## Ydinajatus
-Luvussa *Harmoninen voima ja jousen potentiaalienergia* jousen voima oli $F = -kx$. Voima on suoraan verrannollinen poikkeamaan $x$ tasapainoasemasta. Se osoittaa aina kohti tasapainoasemaa. Tasapainoasema on kohta, jossa kappale on levossa, kun jousi ei vedä eikä työnnä.
+Luvussa *Jousivoima ja jousen energia* jousen voima oli $F = -kx$. Voima on suoraan verrannollinen poikkeamaan $x$ tasapainoasemasta. Se osoittaa aina kohti tasapainoasemaa. Tasapainoasema on kohta, jossa kappale on levossa, kun jousi ei vedä eikä työnnä.
 
 Vedetään kappale sivuun ja päästetään irti. Voima kiihdyttää kappaletta kohti tasapainoasemaa. Tasapainoasemassa voima on nolla, mutta kappaleella on nopeutta. Siksi se jatkaa toiselle puolelle. Siellä voima jarruttaa kappaleen, pysäyttää sen ääriasennossa ja kääntää takaisin. Sama liike toistuu: kappale värähtelee. Kun värähtelyn aiheuttaa harmoninen voima, liikettä sanotaan **harmoniseksi värähtelyksi**.
 
@@ -171,7 +171,7 @@ Vedetään kappale sivuun ja päästetään irti. Voima kiihdyttää kappaletta 
 Kuvassa näkyy liikkeen rytmi. Ääriasennoissa $x = A$ ja $x = -A$ nopeus on nolla. Siellä voima ja kiihtyvyys ovat suurimmillaan. Tasapainoasemassa on päinvastoin: voima ja kiihtyvyys ovat nolla, ja nopeus on suurimmillaan. Kiihtyvyys osoittaa aina kohti tasapainoasemaa, samaan suuntaan kuin voima.
 
 ### Paikka ajan funktiona
-Piirretään harmonisen värähtelijän paikka ajan funktiona. Saadaan siniaallon muotoinen käyrä. Luvun *Jaksollinen liike* käsitteet näkyvät siinä suoraan.
+Piirretään harmonisen värähtelijän paikka ajan funktiona. Saadaan siniaallon muotoinen käyrä. Luvun *Värähtelyn suureet: jaksonaika, taajuus ja amplitudi* käsitteet näkyvät siinä suoraan.
 
 Amplitudi $A$ on suurin poikkeama tasapainoasemasta. Jaksonaika $T$ on aika, jonka kappale tarvitsee yhteen kokonaiseen edestakaiseen värähdykseen. Sen jälkeen kappale on samassa kohdassa ja liikkuu samaan suuntaan. Jaksonajan näkee esimerkiksi kahden peräkkäisen huipun välistä. Taajuus $f = \tfrac{1}{T}$ kertoo, montako värähdystä tapahtuu sekunnissa.
 
