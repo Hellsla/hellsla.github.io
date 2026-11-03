@@ -32,6 +32,11 @@
       "Monitieteinen ja luova osaaminen"
     ],
     "initialized": "2026-10-27",
+    "themes": [
+      {"title": "Fysiikka ja mittaaminen", "first": "fy1-1"},
+      {"title": "Liike ja aine", "first": "fy1-5"},
+      {"title": "Oma tutkimus", "first": "fy1-8"}
+    ],
     "lessons": [
       {
         "id": "fy1-1",
@@ -130,7 +135,7 @@
       },
       {
         "id": "fy1-6",
-        "title": "Putoamiskiihtyvyys: v = gt",
+        "title": "Putoamiskiihtyvyys: $v = gt$",
         "goals": [
           "Temaattinen tarkastelu: putoamiskiihtyvyyttä voidaan käsitellä (t,v)-kuvaajan lineaarisena mallina v = gt",
           "Kokeellisesti: eri massaisten kappaleiden putoamisliike"
@@ -147,7 +152,7 @@
       },
       {
         "id": "fy1-7",
-        "title": "Tiheys: m = ρV",
+        "title": "Tiheys: $m = \\rho V$",
         "goals": [
           "Temaattinen tarkastelu: tiheysmittaukset",
           "Taidot: suoraan verrannollisuus, esim. m = ρV; suureen ratkaiseminen lineaarisesta mallista"
@@ -225,6 +230,10 @@
       "Data in FY2 (Finnish energy statistics, emission factors, heating values) are real values with a named source (Tilastokeskus, Energiateollisuus, Fingrid, Motiva, IPCC) and year, rounded; mark invented situations as examples, never as statistics."
     ],
     "initialized": "2026-10-28",
+    "themes": [
+      {"title": "Energia ja teho", "first": "fy2-1"},
+      {"title": "Energiantuotanto ja ympäristö", "first": "fy2-5"}
+    ],
     "lessons": [
       {
         "id": "fy2-1",
@@ -263,7 +272,7 @@
       },
       {
         "id": "fy2-3",
-        "title": "Teho: P = ΔE/Δt",
+        "title": "Teho: $P = \\Delta E/\\Delta t$",
         "goals": [
           "LOPS FY2: energian tuotanto, teho, hyötysuhde ja energian siirtäminen",
           "Täsmennys: teho esitellään suureena P = ΔE/Δt; työn käsitettä ei tässä moduulissa vielä käytetä"
@@ -297,7 +306,7 @@
       },
       {
         "id": "fy2-5",
-        "title": "Polttoaineet ja lämpöarvo E = Hm",
+        "title": "Polttoaineet ja lämpöarvo $E = Hm$",
         "goals": [
           "Temaattinen tarkastelu: kemiallinen energia energialähteenä",
           "Täsmennys: energiantuotantoprosesseissa vapautunut energia lasketaan polttoaineiden lämpöarvojen H perusteella käyttäen lakia E = Hm"
@@ -413,10 +422,16 @@
     "scope_notes": [
       "FY3 treats force only as a measure of interaction (G = mg) and work as W = Fs, with graphical integration in (s,F) and Joule's experiment; Newton's laws, vectors, the liikeyhtälö, E_k, E_p, the work-energy theorem and cos α are FY4."
     ],
+    "themes": [
+      {"title": "Voima, työ ja lämpötila", "first": "fy3-1"},
+      {"title": "Paine, lämpö ja olomuodot", "first": "fy3-4"},
+      {"title": "Laajeneminen ja kaasut", "first": "fy3-8"},
+      {"title": "Energia ja ympäristö", "first": "fy3-15"}
+    ],
     "lessons": [
       {
         "id": "fy3-1",
-        "title": "Voima vuorovaikutuksen mittana ja paino G = mg",
+        "title": "Voima vuorovaikutuksen mittana ja paino $G = mg$",
         "goals": [
           "LOPS FY3: voima vuorovaikutuksen voimakkuuden mittana",
           "Täsmennys: kerrataan voiman mittaaminen voimamittarilla ja todetaan massan ja painon yhteys G = mg; voimaa ei käsitellä liiketilan muutoksen aiheuttajana"
@@ -529,7 +544,7 @@
       },
       {
         "id": "fy3-6",
-        "title": "Aineen lämpeneminen ja jäähtyminen: Q = cmΔT",
+        "title": "Aineen lämpeneminen ja jäähtyminen: $Q = cm\\Delta T$",
         "goals": [
           "LOPS FY3: aineen lämpeneminen ja jäähtyminen",
           "Kokeellisesti: kalorimetrinen mittaus",
@@ -624,7 +639,7 @@
       },
       {
         "id": "fy3-10",
-        "title": "Ideaalikaasun tilanyhtälö pV = nRT",
+        "title": "Ideaalikaasun tilanyhtälö $pV = nRT$",
         "goals": [
           "LOPS FY3: ideaalikaasun tilanyhtälö",
           "Taidot: ideaalikaasun tilanyhtälöstä suureen ratkaiseminen",
@@ -759,6 +774,12 @@
       "Introduce acceleration from observations and graphs before the formula; develop Newton's laws one at a time, each from physical situations and, where possible, measured or simulated data, before equations.",
       "Keep independent reasoning: complete model solutions, explain tasks with guided self-assessment, and a Sovella itsenäisesti task count that follows the module's goals.",
       "Force diagrams are a core competency (teacher 2026-10-29, docs/force-diagrams.md): taught in full in Voimakuvio ja voimien yhteisvaikutus with the student guide \"Voimakuvion piirtäminen\", prepared in the chapters on Newton's laws and used again in every later chapter where forces act; each lesson's \"fbd\" lists the skills its tasks practise (identify, select, error, draw, equations; coverage.py checks), and every force chapter has a task where the student draws the diagram alone."
+    ],
+    "themes": [
+      {"title": "Liikkeen kuvaaminen", "first": "fy4-1"},
+      {"title": "Newtonin lait ja voimat", "first": "fy4-3"},
+      {"title": "Mekaaninen energia", "first": "fy4-7"},
+      {"title": "Liikemäärä ja soveltaminen", "first": "fy4-9"}
     ],
     "lessons": [
       {
@@ -1102,7 +1123,7 @@
   "FY5": {
     "title": "Jaksollinen liike ja aallot",
     "op": 2,
-    "planned_lessons": 16,
+    "planned_lessons": 17,
     "type": "valtakunnallinen valinnainen",
     "tavoitteet": [
       "osaa mallintaa planetaarista liikettä ympyräliikkeenä",
@@ -1137,10 +1158,11 @@
       "Monitieteinen ja luova osaaminen",
       "Hyvinvointiosaaminen"
     ],
+    "initialized": "2026-11-03",
     "lessons": [
       {
         "id": "fy5-1",
-        "title": "Momentti ja vääntövaikutus",
+        "title": "Voiman momentti ja kappaleen kiertyminen",
         "goals": [
           "LOPS FY5: momentti ja kappaleen kiertyminen"
         ],
@@ -1173,10 +1195,10 @@
       },
       {
         "id": "fy5-3",
-        "title": "Tasainen ympyräliike: kulmanopeus ja ratanopeus",
+        "title": "Ympyräliike ja ratanopeus",
         "goals": [
           "LOPS FY5: tasainen ympyräliike",
-          "Täsmennys: kulmasuureita ei tarvitse käsitellä ympyräliikkeen yhteydessä; pyörimisliike ei kuulu keskeisiin sisältöihin"
+          "Täsmennys: nopeuden suunta muuttuu ympyräliikkeessä; ratanopeus v = 2πr/T, kierrosaika ja pyörimistaajuus; kulmasuureita ei tarvitse käsitellä ympyräliikkeen yhteydessä; pyörimisliike ei kuulu keskeisiin sisältöihin"
         ],
         "prerequisites": [],
         "sim": true,
@@ -1189,9 +1211,10 @@
       },
       {
         "id": "fy5-4",
-        "title": "Normaalikiihtyvyys ja keskeisvoima",
+        "title": "Tasainen ympyräliike ja normaalikiihtyvyys",
         "goals": [
-          "LOPS FY5: tasainen ympyräliike ja normaalikiihtyvyys"
+          "LOPS FY5: tasainen ympyräliike ja normaalikiihtyvyys",
+          "Täsmennys: normaalikiihtyvyyden suunta ja suuruus a_n = v²/r; Newtonin 2. laki tasaisessa ympyräliikkeessä (voimakuvio, kokonaisvoima keskipistettä kohti)"
         ],
         "prerequisites": [
           "fy5-3"
@@ -1205,11 +1228,10 @@
       },
       {
         "id": "fy5-5",
-        "title": "Gravitaatiolaki ja planetaarinen liike",
+        "title": "Newtonin gravitaatiolaki",
         "goals": [
           "LOPS FY5: gravitaatiolaki ja planetaarinen liike",
-          "LOPS FY5: osaa mallintaa planetaarista liikettä ympyräliikkeenä",
-          "Täsmennys: planeettojen, kuiden ja satelliittien liike; Keplerin lait ja gravitaatiokentän potentiaalienergia eivät kuulu keskeisiin sisältöihin"
+          "Täsmennys: kaikki kappaleet vetävät toisiaan; gravitaatiovoima F = γm₁m₂/r², painovoima ja gravitaatiokentän voimakkuus; gravitaatio maailmankaikkeuden rakenteiden synnyssä"
         ],
         "prerequisites": [
           "fy5-4"
@@ -1218,14 +1240,30 @@
         "glossary": [
           "gravitaatiolaki",
           "gravitaatiovakio",
+          "gravitaatiokenttä"
+        ]
+      },
+      {
+        "id": "fy5-6",
+        "title": "Gravitaation alainen ympyräliike",
+        "goals": [
+          "LOPS FY5: gravitaatiolaki ja planetaarinen liike",
+          "LOPS FY5: osaa mallintaa planetaarista liikettä ympyräliikkeenä",
+          "Täsmennys: planeettojen, kuiden ja satelliittien liike ympyräratamallina, painottomuus, milloin tasaisen ympyräliikkeen malli pätee; Keplerin lait ja gravitaatiokentän potentiaalienergia eivät kuulu keskeisiin sisältöihin"
+        ],
+        "prerequisites": [
+          "fy5-5"
+        ],
+        "sim": true,
+        "glossary": [
           "kiertorata",
           "satelliitti",
           "painottomuus"
         ]
       },
       {
-        "id": "fy5-6",
-        "title": "Jaksollinen liike: jaksonaika, taajuus ja amplitudi",
+        "id": "fy5-7",
+        "title": "Jaksollinen liike",
         "goals": [
           "LOPS FY5: jaksollinen liike, jaksonaika, taajuus ja amplitudi",
           "LOPS FY5: osaa kuvata jaksollista liikettä fysikaalisilla ja matemaattisilla käsitteillä",
@@ -1235,6 +1273,7 @@
         "sim": true,
         "glossary": [
           "jaksollinen liike",
+          "värähtelyliike",
           "jaksonaika",
           "taajuus",
           "amplitudi",
@@ -1242,51 +1281,53 @@
         ]
       },
       {
-        "id": "fy5-7",
-        "title": "Harmoninen voima ja värähtelyliike",
-        "goals": [
-          "LOPS FY5: harmoninen voima ja värähtelyliike",
-          "Kokeellisesti: heilurin heilahdusajan määrittäminen",
-          "Temaattinen tarkastelu: heiluri"
-        ],
-        "prerequisites": [
-          "fy5-6"
-        ],
-        "sim": true,
-        "glossary": [
-          "harmoninen voima",
-          "harmoninen värähtely",
-          "jousivakio",
-          "heiluri"
-        ]
-      },
-      {
         "id": "fy5-8",
-        "title": "Harmonisen voiman potentiaalienergia",
+        "title": "Harmoninen voima ja jousen potentiaalienergia",
         "goals": [
+          "LOPS FY5: harmoninen voima",
           "LOPS FY5: harmonisen voiman potentiaalienergia",
-          "Täsmennys: energian säilyminen värähtelyssä, E = ½kA²"
+          "Täsmennys: F = −kx, jousivakio mittauksesta (kuvaajan kulmakerroin), harmonisen voiman suunta tasapainoasemaa kohti, jousen potentiaalienergia E_p = ½kx²"
         ],
         "prerequisites": [
           "fy5-7"
         ],
         "sim": true,
         "glossary": [
-          "jousen potentiaalienergia",
+          "harmoninen voima",
+          "jousivakio",
+          "jousen potentiaalienergia"
+        ]
+      },
+      {
+        "id": "fy5-9",
+        "title": "Harmoninen värähtely ja heiluri",
+        "goals": [
+          "LOPS FY5: harmoninen voima ja värähtelyliike",
+          "Kokeellisesti: heilurin heilahdusajan määrittäminen",
+          "Temaattinen tarkastelu: heiluri",
+          "Täsmennys: jaksonajan riippuvuustekijät, T = 2π√(m/k) ja matemaattisen heilurin T = 2π√(l/g) pienillä heilahduksilla; energian säilyminen värähtelyssä, E = ½kA²; vaimeneminen valinnaisena"
+        ],
+        "prerequisites": [
+          "fy5-8"
+        ],
+        "sim": true,
+        "glossary": [
+          "harmoninen värähtely",
+          "heiluri",
           "värähtelyn energia",
           "vaimeneminen"
         ]
       },
       {
-        "id": "fy5-9",
-        "title": "Mekaanisten aaltojen synty, eteneminen ja heijastuminen",
+        "id": "fy5-10",
+        "title": "Mekaaninen aaltoliike",
         "goals": [
           "LOPS FY5: mekaanisten aaltojen synty, eteneminen ja heijastuminen",
           "Taidot: aaltoilmiöiden mallintaminen",
-          "Täsmennys: valo käsitellään vasta moduulissa FY7"
+          "Täsmennys: poikittainen ja pitkittäinen aalto, aaltoliikkeen perusyhtälö v = fλ; valo käsitellään vasta moduulissa FY7"
         ],
         "prerequisites": [
-          "fy5-6"
+          "fy5-7"
         ],
         "sim": true,
         "glossary": [
@@ -1294,23 +1335,40 @@
           "aallonpituus",
           "aallon nopeus",
           "poikittainen aalto",
-          "pitkittäinen aalto",
-          "heijastuminen"
+          "pitkittäinen aalto"
         ]
       },
       {
-        "id": "fy5-10",
-        "title": "Diffraktio ja interferenssi",
+        "id": "fy5-11",
+        "title": "Aaltojen heijastuminen ja diffraktio",
         "goals": [
+          "LOPS FY5: mekaanisten aaltojen synty, eteneminen ja heijastuminen",
           "LOPS FY5: mekaanisten aaltojen diffraktio ja interferenssi",
-          "Täsmennys: diffraktio esim. veden pinta-aaltojen taipuminen esteen vaikutuksesta; interferenssi kahden samassa vaiheessa olevan saman taajuisen aaltolähteen avulla"
+          "Täsmennys: tulo- ja heijastuskulma, heijastuslaki, Huygensin periaate; diffraktio esim. veden pinta-aaltojen taipuminen esteen tai raon vaikutuksesta"
         ],
         "prerequisites": [
-          "fy5-9"
+          "fy5-10"
         ],
         "sim": true,
         "glossary": [
-          "diffraktio",
+          "heijastuminen",
+          "heijastuslaki",
+          "Huygensin periaate",
+          "diffraktio"
+        ]
+      },
+      {
+        "id": "fy5-12",
+        "title": "Aaltojen interferenssi",
+        "goals": [
+          "LOPS FY5: mekaanisten aaltojen diffraktio ja interferenssi",
+          "Täsmennys: superpositioperiaate, vahvistava ja heikentävä interferenssi kahden samassa vaiheessa olevan saman taajuisen aaltolähteen avulla; Fourier-muunnoksen hyödyllisyys valinnaisena"
+        ],
+        "prerequisites": [
+          "fy5-11"
+        ],
+        "sim": true,
+        "glossary": [
           "interferenssi",
           "vahvistava interferenssi",
           "heikentävä interferenssi",
@@ -1318,14 +1376,14 @@
         ]
       },
       {
-        "id": "fy5-11",
+        "id": "fy5-13",
         "title": "Seisovat aallot",
         "goals": [
           "LOPS FY5: seisovat aallot",
           "Temaattinen tarkastelu: soittimet; kielen ja ilmapatsaan ominaistaajuudet"
         ],
         "prerequisites": [
-          "fy5-10"
+          "fy5-12"
         ],
         "sim": true,
         "glossary": [
@@ -1337,16 +1395,16 @@
         ]
       },
       {
-        "id": "fy5-12",
-        "title": "Ääni aaltoliikkeenä: ominaisuudet ja eteneminen",
+        "id": "fy5-14",
+        "title": "Äänen ominaisuudet",
         "goals": [
           "LOPS FY5: ääni aaltoliikkeenä, äänen ominaisuudet ja eteneminen",
           "Kokeellisesti: äänen nopeuden määrittäminen ja äänen taajuusanalyysi",
-          "Täsmennys: äänenkorkeus ja äänen sointivärin muodostava harmoninen sarja",
+          "Täsmennys: äänenkorkeus ja äänen sointivärin muodostava harmoninen sarja, infra- ja ultraääni, huojunta ja Dopplerin ilmiö",
           "Taidot: FFT-kuvaajan tekeminen"
         ],
         "prerequisites": [
-          "fy5-11"
+          "fy5-13"
         ],
         "sim": true,
         "glossary": [
@@ -1355,80 +1413,75 @@
           "äänenkorkeus",
           "sointiväri",
           "harmoninen sarja",
+          "infraääni",
+          "huojunta",
           "Doppler-ilmiö"
         ]
       },
       {
-        "id": "fy5-14",
-        "title": "Akustiikka ja äänentoisto",
-        "goals": [
-          "LOPS FY5: ääni aaltoliikkeenä, äänen intensiteettitaso, äänen ominaisuudet ja eteneminen",
-          "Temaattinen tarkastelu: akustiikka ja äänentoisto",
-          "Täsmennys: heijastuminen ja jälkikaiunta tiloissa, kaiuttimen ja mikrofonin periaate"
-        ],
-        "prerequisites": [
-          "fy5-12"
-        ],
-        "sim": false,
-        "glossary": [
-          "jälkikaiunta",
-          "intensiteettitaso"
-        ]
-      },
-      {
         "id": "fy5-15",
-        "title": "Ultraäänikuvaus",
-        "goals": [
-          "LOPS FY5: mekaanisten aaltojen synty, eteneminen ja heijastuminen",
-          "Temaattinen tarkastelu: ultraäänikuvaus",
-          "Täsmennys: ultraäänen heijastuminen kudosten rajapinnoilta ja syvyys kulkuajasta"
-        ],
-        "prerequisites": [
-          "fy5-9",
-          "fy5-12"
-        ],
-        "sim": false,
-        "glossary": [
-          "ultraääni",
-          "heijastuminen"
-        ]
-      },
-      {
-        "id": "fy5-13",
-        "title": "Äänen intensiteettitaso ja kuulon suojaaminen",
+        "title": "Äänen voimakkuus",
         "goals": [
           "LOPS FY5: äänen intensiteettitaso",
-          "Temaattinen tarkastelu: melun haittavaikutukset ja kuulon suojaaminen",
-          "Taidot: logaritmiyhtälön käyttö",
-          "Laaja-alainen: hyvinvointiosaaminen"
+          "Täsmennys: intensiteetti, intensiteettitaso desibeleinä ja kuulokynnys",
+          "Taidot: logaritmiyhtälön käyttö"
         ],
         "prerequisites": [
-          "fy5-12"
+          "fy5-14"
         ],
         "sim": true,
         "glossary": [
           "intensiteetti",
           "intensiteettitaso",
           "desibeli",
-          "kuulokynnys",
-          "melu"
+          "kuulokynnys"
         ]
       },
       {
         "id": "fy5-16",
-        "title": "Soveltava tunti: värähtelyt ja aallot rakenteissa ja luonnossa",
+        "title": "Ääni ympäristössämme",
         "goals": [
-          "LOPS FY5: jaksollinen liike, jaksonaika, taajuus ja amplitudi",
-          "LOPS FY5: mekaanisten aaltojen synty, eteneminen ja heijastuminen",
-          "Täsmennys: soveltava tunti, ei kertausta: moduulin ideat yhdistetään uudessa, arkisessa tilanteessa (sillat, maanjäristysaallot, aallot rannalla)"
+          "LOPS FY5: ääni aaltoliikkeenä, äänen intensiteettitaso, äänen ominaisuudet ja eteneminen",
+          "Temaattinen tarkastelu: melun haittavaikutukset ja kuulon suojaaminen",
+          "Temaattinen tarkastelu: akustiikka ja äänentoisto",
+          "Täsmennys: melun haitat ja vähennyskeinot, heijastuminen ja jälkikaiunta tiloissa, kaiuttimen ja mikrofonin periaate",
+          "Laaja-alainen: hyvinvointiosaaminen"
         ],
         "prerequisites": [
-          "fy5-7",
-          "fy5-9"
+          "fy5-15"
         ],
         "sim": false,
-        "glossary": []
+        "glossary": [
+          "melu",
+          "jälkikaiunta",
+          "kaiutin",
+          "mikrofoni"
+        ]
+      },
+      {
+        "id": "fy5-17",
+        "title": "Soveltava luku: ultraäänikuvaus ja aallot luonnossa",
+        "goals": [
+          "LOPS FY5: mekaanisten aaltojen synty, eteneminen ja heijastuminen",
+          "Temaattinen tarkastelu: ultraäänikuvaus",
+          "Täsmennys: soveltava luku, ei kertausta: ultraäänen heijastuminen kudosten rajapinnoilta ja syvyys kulkuajasta; maanjäristysaallot ja muut aallot luonnossa"
+        ],
+        "prerequisites": [
+          "fy5-10",
+          "fy5-14"
+        ],
+        "sim": false,
+        "glossary": [
+          "ultraääni",
+          "maanjäristysaalto"
+        ]
       }
+    ],
+    "scope_notes": [
+      "Plan approved by the teacher 2026-11-03 (17 chapters, order of his FY5 autumn 2026 timetable): gravitation in two chapters (law; circular orbits), harmonic force and spring potential energy together, then harmonic oscillation and the pendulum; reflection with diffraction, interference on its own; noise and hearing protection with acoustics in Ääni ympäristössämme; ultrasound imaging in the applied chapter.",
+      "FY5 builds on FY4 (Newton's laws, force diagrams, energy) without re-teaching it: every chapter where forces act uses the force-diagram skills of docs/force-diagrams.md; vectors with an overline (\\overline{F}); velocity, acceleration and force always in different colours (force red, velocity blue, acceleration orange as in FY4).",
+      "No angular quantities (ω, rad/s) for circular motion and no rotational dynamics (LOPS täsmennys); circular motion uses period, rotation frequency and v = 2πr/T. Gravitational constant written γ as in Finnish textbooks (G in English).",
+      "Old FY05 simulations in the site root fy05/ (momentti, tasapaino, tukki, ratanopeus, ympyraliike, nyppyla, kiertorata, painottomuus, varahtely, harmoninen-varahtely, vaimeneva-varahtely, aalto-langassa, interferenssi, seisova-aalto, doppler) are starting points for ideas only; new sims follow the house rules (LaTeX labels, speed control, assets/sims/fy5/)."
     ]
   },
   "FY6": {

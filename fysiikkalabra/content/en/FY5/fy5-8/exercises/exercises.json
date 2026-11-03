@@ -1,0 +1,107 @@
+{
+  "level1": [
+    {
+      "id": "fy5-8-L1-01",
+      "level": 1,
+      "text": "The handle of a gym machine is attached to a return spring whose spring constant is $250\\,\\text{N/m}$. The exerciser pulls the handle so that the spring stretches $0.12\\,\\text{m}$, and holds the handle still. How large is the force of the spring on the handle?",
+      "answer": 30.0,
+      "unit": "N",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-8-L1-02",
+      "level": 1,
+      "text": "A spring at the edge of a trampoline stretches $0.050\\,\\text{m}$ when a force of $450\\,\\text{N}$ stretches it. What is the spring constant of the spring?",
+      "answer": 9000.0,
+      "unit": "N/m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-8-L1-03",
+      "level": 1,
+      "text": "An exerciser stretches a hand spring whose spring constant is $180\\,\\text{N/m}$ so that the spring extends $0.15\\,\\text{m}$. How much elastic potential energy is stored in the spring?",
+      "answer": 2.025,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-8-L1-04",
+      "level": 1,
+      "text": "The graph shows the force $F_\\text{v}$ stretching a spring as a function of the extension $x$ of the spring. Read two points of the line from the graph. What is the spring constant of the spring?",
+      "figure": "fy5-8/ex-suora",
+      "answer": 60.0,
+      "unit": "N/m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-8-L1-05",
+      "level": 1,
+      "text": "The spring constant of the spring of a fisherman's spring balance is $40\\,\\text{N/m}$. How much does the spring stretch when a force of $6.0\\,\\text{N}$ stretches it? Give the answer in metres.",
+      "answer": 0.15,
+      "unit": "m",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy5-8-L2-01",
+      "level": 2,
+      "text": "A spring is stretched $8.0\\,\\text{cm}$, and the force meter then reads $6.0\\,\\text{N}$. How much elastic potential energy is stored in the spring?",
+      "answer": 0.24,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-8-L2-02",
+      "level": 2,
+      "text": "The spring of a toy gun is compressed $6.0\\,\\text{cm}$, which stores $0.90\\,\\text{J}$ of elastic potential energy in it. What is the spring constant of the spring?",
+      "answer": 500.0,
+      "unit": "N/m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-8-L2-03",
+      "level": 2,
+      "text": "A spring whose spring constant is $150\\,\\text{N/m}$ is stretched $3.0\\,\\text{cm}$. The extension is increased to $9.0\\,\\text{cm}$. By how much does the elastic potential energy of the spring increase?",
+      "answer": 0.54,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-8-L2-04",
+      "level": 2,
+      "text": "The forces stretching two springs A and B are shown as a function of the extension in the same graph. First determine the spring constant of spring A from the graph. Spring A is stretched $0.080\\,\\text{m}$. How much elastic potential energy is stored in it?",
+      "figure": "fy5-8/ex-kaksi",
+      "answer": 0.192,
+      "unit": "J",
+      "tolerance": 0.03
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy5-8-L3-01",
+      "level": 3,
+      "text": "A car rests on four identical springs. When passengers with a total mass of $300\\,\\text{kg}$ get in, the springs are compressed a further $3.0\\,\\text{cm}$. The elasticity of the tyres is ignored. Assume that the extra load is shared equally by the four springs. What is the spring constant of one spring? Give the answer in $\\text{kN/m}$.",
+      "answer": 24.525,
+      "unit": "kN/m",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy5-8-L3-02",
+      "level": 3,
+      "text": "A jumping toy has a vertical spring whose spring constant is $200\\,\\text{N/m}$. The toy is pressed against a table so that the spring is compressed $3.0\\,\\text{cm}$, and a suction cup holds it in place. When the suction cup lets go, the spring launches the $50\\,\\text{g}$ toy straight up. Assume that all of the elastic potential energy changes into the gravitational potential energy of the toy; air resistance and the mass of the spring are neglected. How high does the toy rise from its starting point?",
+      "answer": 0.18349,
+      "unit": "m",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy5-8-L3-03",
+      "level": 3,
+      "text": "A trolley of mass $0.50\\,\\text{kg}$ is on a horizontal frictionless track between two springs. One end of the left spring is attached to the left wall and one end of the right spring to the right wall, and at the equilibrium position both springs are at their rest length. The spring constant of the left spring is $30\\,\\text{N/m}$ and that of the right spring $50\\,\\text{N/m}$. The trolley is moved $4.0\\,\\text{cm}$ to the right and released. What is the net force on the trolley immediately after it is released?",
+      "fbd": "equations",
+      "answer": 3.2,
+      "unit": "N",
+      "tolerance": 0.02
+    }
+  ]
+}

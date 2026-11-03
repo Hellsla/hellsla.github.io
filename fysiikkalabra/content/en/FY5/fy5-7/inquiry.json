@@ -1,0 +1,475 @@
+{
+  "version": 1,
+  "contribution": "Periodic motion and oscillation are defined, and an oscillation is described by its amplitude, period and frequency. The student reads them from a $(t, x)$ graph, writes the model $x = A \\sin\\left(\\tfrac{2\\pi t}{T}\\right)$ and fits a sine function to a simulated measurement by hand and with Graphical Analysis Pro.",
+  "learn": [
+    "read the amplitude, period and frequency of an oscillation from a $(t, x)$ graph.",
+    "calculate the displacement with the sine model $x = A \\sin\\left(\\tfrac{2\\pi t}{T}\\right)$.",
+    "fit a sine function to measured points and interpret the result of the fit."
+  ],
+  "prior": [
+    "The period $T$ is the duration of one revolution, and the rotation frequency $f = \\tfrac{1}{T}$ is the number of revolutions per unit time (chapter *Circular motion and speed*)",
+    "A $(t, x)$ graph shows the position of an object as a function of time (chapter *Position, velocity and uniform motion as graphs*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "A weight hangs from a spring in a laboratory stand. When it is pulled down a little and released, it starts to bounce up and down. On the floor under the weight there is a motion sensor that measures the position of the weight twenty times a second. A wavy curve appears on the screen, and it seems to repeat itself.",
+      "question": "With which numbers can such a motion be described, and how are they obtained from the curve?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Recap: period and rotation frequency",
+      "prompt": "A carousel makes one revolution in $4.0\\,\\text{s}$. What is its rotation frequency?",
+      "choices": [
+        {
+          "text": "$0.25\\,\\tfrac{1}{\\text{s}}$, because a quarter of a revolution is completed in a second.",
+          "correct": true,
+          "feedback": "Correct. The rotation frequency is the reciprocal of the period, $f = \\tfrac{1}{T} = \\tfrac{1}{4.0\\,\\text{s}} = 0.25\\,\\tfrac{1}{\\text{s}}$ (chapter *Circular motion and speed*). Today the same quantities describe back-and-forth motion."
+        },
+        {
+          "text": "$4.0\\,\\tfrac{1}{\\text{s}}$, because one revolution lasts four seconds.",
+          "feedback": "Four seconds is the duration of one revolution, that is, the period. The rotation frequency tells the number of revolutions per second: one revolution in four seconds means $\\tfrac{1}{4.0}$ of a revolution in a second, that is, $0.25\\,\\tfrac{1}{\\text{s}}$."
+        },
+        {
+          "text": "$0.25\\,\\text{s}$, because the frequency is time divided by revolutions.",
+          "feedback": "The number $0.25$ is right, but the unit is not: the rotation frequency is the number of revolutions per unit time, so its unit is $\\tfrac{1}{\\text{s}}$, not the second."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: amplitude of the model",
+      "prompt": "In a simulated measurement the distance between the highest and the lowest position of the weight is about $12\\,\\text{cm}$, and the equilibrium position is halfway between them. The curve $x = A \\sin\\left(\\tfrac{2\\pi t}{T}\\right)$, whose period is already correct, is fitted to the measured points. For which value of $A$ does the curve go through the points?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "$A = 6.0\\,\\text{cm}$, from the equilibrium position to an extreme position.",
+          "correct": true,
+          "feedback": "The values of the model support this: with $A = 6.0\\,\\text{cm}$ the fit error is only $d = 0.13\\,\\text{cm}$, but with $12\\,\\text{cm}$ it is $3.70\\,\\text{cm}$ and with $3.0\\,\\text{cm}$ it is $1.85\\,\\text{cm}$. The sine function takes values from $-1$ to $1$, so $A \\sin(\\ldots)$ varies from $-A$ to $A$: the number $A$ is the greatest displacement from the equilibrium position."
+        },
+        {
+          "text": "$A = 12\\,\\text{cm}$, from one extreme position to the other.",
+          "feedback": "The values of the model refute this: with $A = 12\\,\\text{cm}$ the fit error is $d = 3.70\\,\\text{cm}$, and the curve goes over and under the points by twice as much. Because the values of the sine lie between $-1$ and $1$, the curve $A \\sin(\\ldots)$ reaches $A$ in each direction, $2A$ altogether. The distance between the extreme positions, $12\\,\\text{cm}$, is therefore $2A$, and $A = 6.0\\,\\text{cm}$ gives the smallest fit error, $0.13\\,\\text{cm}$."
+        },
+        {
+          "text": "$A = 3.0\\,\\text{cm}$, half of the distance between the equilibrium position and an extreme position.",
+          "feedback": "The values of the model refute this: with $A = 3.0\\,\\text{cm}$ the curve stays below the peaks of the points, and the fit error is $d = 1.85\\,\\text{cm}$. The greatest value of the sine is $1$, so the peak of the curve is at the height $A$. The peaks must reach about $6\\,\\text{cm}$, so $A = 6.0\\,\\text{cm}$; it gives the fit error $0.13\\,\\text{cm}$."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: period of the model",
+      "prompt": "The period $T$ of the model curve $x = A \\sin\\left(\\tfrac{2\\pi t}{T}\\right)$ is changed from $0.80\\,\\text{s}$ to $1.60\\,\\text{s}$, and the amplitude stays the same. How does the curve change in the time interval $0$–$5\\,\\text{s}$ of the graph?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-2",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "The peaks become farther apart: half as many full oscillations fit in the interval.",
+          "correct": true,
+          "feedback": "The values of the model support this: with $T = 0.80\\,\\text{s}$ there are $N = 6$ full oscillations in the interval and the frequency is $1.25\\,\\text{Hz}$, with $T = 1.60\\,\\text{s}$ only $N = 3$ and the frequency is $0.625\\,\\text{Hz}$. One oscillation takes twice as long, so the curve is stretched horizontally and the frequency $f = \\tfrac{1}{T}$ is halved."
+        },
+        {
+          "text": "The peaks become closer together: twice as many full oscillations fit in the interval.",
+          "feedback": "The values of the model refute this: there are $N = 6$ oscillations with $T = 0.80\\,\\text{s}$ but only $N = 3$ with $T = 1.60\\,\\text{s}$. A longer period means that one oscillation takes longer, so fewer fit in the same time. Peaks closer together would need a higher frequency, that is, a shorter period."
+        },
+        {
+          "text": "The peaks rise twice as high, and there are as many oscillations as before.",
+          "feedback": "The values of the model refute this: the height of the peaks stays the same all the time because the amplitude did not change, but there are $N = 3$ oscillations instead of $N = 6$. The period changes the curve horizontally, that is, in the direction of time, and the amplitude vertically."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Fit a sine curve to the simulated measurement. Adjust the amplitude and the period of the model until the blue curve goes through the middle of the black points.",
+      "howto": "Choose *Data set* and adjust the amplitude $A$ and the period $T$ of the model. The blue curve is your model $x = A \\sin\\left(\\tfrac{2\\pi t}{T}\\right)$, the black points are the simulated measurement. The reading *Fit error* $d$ tells how far the points are from the curve on average: the smaller $d$ is, the better the model fits. *Start* replays the measurement for $5\\,\\text{s}$: the weight moves as in the measurement, the blue triangle beside it shows the displacement of the model, and a dashed line marks the same moment in the graph. If the model fits, the triangle stays level with the weight all the time. The readings $N$ and $f$ concern the model. *Speed* changes only the pace of the replay.",
+      "model": "The weight oscillates vertically on a spring, and up is the positive direction. The oscillation does not die out, and timing starts when the weight passes the equilibrium position going up. Every data set is a simulated measurement: the points have been calculated from a sine model and a small random-looking error of at most $0.25\\,\\text{cm}$ has been added, as in a real measurement. This is why the points do not lie exactly on any sine curve and the fit error is never zero. All the numbers are values of the model and the simulation, not measured values.",
+      "calc": "There are $51$ measured points, at intervals of a tenth of a second from $0$ to $5.0\\,\\text{s}$. The displacement of the model at the time $t$ is $x = A \\sin\\left(\\tfrac{2\\pi t}{T}\\right)$, and the frequency is $f = \\tfrac{1}{T}$. The fit error $d$ is the mean of the vertical distances between the points and the model curve: for each point $|x_i - A \\sin\\left(\\tfrac{2\\pi t_i}{T}\\right)|$ is calculated, and the results are added together and divided by the number of points. $N$ is the number of full oscillations of the model between $0$ and $5.0\\,\\text{s}$, that is, the integer part of $\\tfrac{5.0\\,\\text{s}}{T}$. The reading *simulated measurement* is the value of the nearest measured point."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 1: fitting the amplitude",
+      "intro": "Test prediction 1. The period of the model is the correct $1.60\\,\\text{s}$ of the data set and stays constant. Change only the amplitude of the model and record the fit error $d$ at least for the values $3.0\\,\\text{cm}$, $6.0\\,\\text{cm}$ and $12\\,\\text{cm}$. With which amplitude do the peaks of the curve meet the peaks of the points?",
+      "initial": {
+        "aineisto": "1",
+        "A": 2,
+        "T": 1.6
+      },
+      "locked": [
+        "aineisto",
+        "T"
+      ],
+      "vary": "A",
+      "names": {
+        "aineisto": "data set",
+        "A": "amplitude of the model A",
+        "T": "period of the model T"
+      },
+      "units": {
+        "A": "cm",
+        "T": "s"
+      },
+      "values": {
+        "aineisto": {
+          "1": "data set 1"
+        }
+      },
+      "measure": [
+        {
+          "key": "d",
+          "label": "d (cm)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 2: fitting the period",
+      "intro": "Test prediction 2. The amplitude of the model is $6.0\\,\\text{cm}$ and stays constant. Change only the period of the model and record at least the values $0.80\\,\\text{s}$ and $1.60\\,\\text{s}$. Watch how the number of peaks changes and for which period the fit error is the smallest.",
+      "initial": {
+        "aineisto": "1",
+        "A": 6,
+        "T": 0.8
+      },
+      "locked": [
+        "aineisto",
+        "A"
+      ],
+      "vary": "T",
+      "names": {
+        "aineisto": "data set",
+        "A": "amplitude of the model A",
+        "T": "period of the model T"
+      },
+      "units": {
+        "A": "cm",
+        "T": "s"
+      },
+      "values": {
+        "aineisto": {
+          "1": "data set 1"
+        }
+      },
+      "measure": [
+        {
+          "key": "N",
+          "label": "N"
+        },
+        {
+          "key": "f",
+          "label": "f (Hz)"
+        },
+        {
+          "key": "d",
+          "label": "d (cm)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "koe-3",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 3: fit it yourself",
+      "intro": "The amplitude and the period of data set 3 are not given. First read rough values from the graph: the amplitude from the level of the peaks of the points and the period from the duration of two full oscillations. Set them in the model and then fine-tune both until the fit error is the smallest. Record every attempt.",
+      "initial": {
+        "aineisto": "3",
+        "A": 2,
+        "T": 1
+      },
+      "locked": [
+        "aineisto"
+      ],
+      "vary": "T",
+      "names": {
+        "aineisto": "data set",
+        "A": "amplitude of the model A",
+        "T": "period of the model T"
+      },
+      "units": {
+        "A": "cm",
+        "T": "s"
+      },
+      "values": {
+        "aineisto": {
+          "3": "data set 3"
+        }
+      },
+      "measure": [
+        {
+          "key": "A",
+          "label": "A (cm)"
+        },
+        {
+          "key": "f",
+          "label": "f (Hz)"
+        },
+        {
+          "key": "d",
+          "label": "d (cm)"
+        }
+      ],
+      "min": 2,
+      "question": {
+        "type": "numeric",
+        "prompt": "What is the period of data set 3 according to your best fit? Answer in seconds.",
+        "answer": 2.2,
+        "unit": "s",
+        "tolerance": 0.03,
+        "hints": [
+          "The best fit is the row where the fit error $d$ is the smallest. If it is more than $1\\,\\text{cm}$, the curve does not yet go through the middle of the points.",
+          "Read from the graph where the points pass the equilibrium position going up for the second time. That is the duration of one full oscillation.",
+          "The points rise through the equilibrium position at the time $0$ and the next time a little after $2\\,\\text{s}$. Try values near it in the model and see where $d$ is the smallest."
+        ],
+        "mistakes": [
+          {
+            "value": 1.1,
+            "feedback": "This is half of the period: successive passes through the equilibrium position are only half a period apart. A full period is between two passes going up or between two successive peaks."
+          },
+          {
+            "value": 0.455,
+            "feedback": "This is the frequency $f = \\tfrac{1}{T}$ in hertz. The question asks for the period, that is, the duration of one oscillation, in seconds."
+          }
+        ],
+        "solution": "**Given:** the simulated measured points of data set 3 and your own fit attempts in the table, the model $x = A \\sin\\left(\\tfrac{2\\pi t}{T}\\right)$\n\n**Find:** the period $T$ of the data set in seconds\n\n**Principle:** The smaller the fit error $d$ is, the better the model fits the data. The best fit is the period of the model for which $d$ is the smallest, when the amplitude has also been adjusted suitably.\n\n**Reading the graph:** The points pass the equilibrium position going up at the time $0$ and the next time at about $2.2\\,\\text{s}$, and the peaks are at about $8.5\\,\\text{cm}$. When $A = 8.5\\,\\text{cm}$ is set in the model and the period is adjusted, $d$ drops sharply at $2.20\\,\\text{s}$.\n\n**Formula:** No calculation formula: the period is read directly from the row of the best fit, $T = T_\\text{best}$.\n\n**Conversions:** None needed: the control shows the period in seconds.\n\n**Substitution:** The best row: $A = 8.5\\,\\text{cm}$, $T = 2.20\\,\\text{s}$, $f = 0.455\\,\\text{Hz}$ and $d = 0.13\\,\\text{cm}$, so $T = 2.20\\,\\text{s}$.\n\n**Answer:** $2.2\\,\\text{s}$, to two significant figures, because the step $0.05\\,\\text{s}$ of the control and the scatter of the points limit the precision.\n\n**Reasonableness:** The interval $0$–$5\\,\\text{s}$ holds $\\tfrac{5.0\\,\\text{s}}{2.2\\,\\text{s}} \\approx 2.3$ oscillations, that is, two full peaks and a little more, as in the graph. The fit error $d = 0.13\\,\\text{cm}$ is of the same order of magnitude as the error of the points, at most $0.25\\,\\text{cm}$, so a better fit cannot be expected. The numbers are values of the simulation."
+      }
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion: what A and T do to the curve",
+      "after": [
+        "koe-1",
+        "koe-2",
+        "koe-3"
+      ],
+      "prompt": "Write on the basis of your tables: how do the amplitude and the period change the model curve? Where on the graph is the amplitude read? How did you find the amplitude and the period of data set 3, and why did the fit error not go to zero?",
+      "model": "The amplitude changes the curve vertically: in data set 1 the fit error was $0.13\\,\\text{cm}$ with $A = 6.0\\,\\text{cm}$, but $3.70\\,\\text{cm}$ with $12\\,\\text{cm}$ and $1.85\\,\\text{cm}$ with $3.0\\,\\text{cm}$. So the amplitude is read from the level of the equilibrium position to the level of a peak, not from a peak to a trough. The period changes the curve horizontally: with $T = 0.80\\,\\text{s}$ there were $6$ full oscillations in the interval $0$–$5\\,\\text{s}$ and the frequency was $1.25\\,\\text{Hz}$, with $1.60\\,\\text{s}$ only $3$ and the frequency was $0.625\\,\\text{Hz}$. In data set 3 I first read rough values from the graph and then fine-tuned until $d$ was the smallest: $A = 8.5\\,\\text{cm}$ and $T = 2.20\\,\\text{s}$, $d = 0.13\\,\\text{cm}$. The fit error does not go to zero because the simulated points contain a small error, as real measurements do. The numbers are values of the simulation.",
+      "criteria": [
+        "I explained that the amplitude changes the curve vertically and that the best amplitude is from the equilibrium position to a peak, and I justified it with the fit error $d$.",
+        "I explained that a longer period makes the peaks farther apart and lowers the frequency, and I used the numbers $N$ or $f$ from the table.",
+        "I described how I found the amplitude and the period of data set 3 and gave them with their units.",
+        "I explained why the fit error does not go to zero and mentioned that the numbers are values of the simulation."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Return to your predictions",
+      "prompt": "Compare your predictions with your tables and the formula $x = A \\sin\\left(\\tfrac{2\\pi t}{T}\\right)$. Then return to the opening question: with which numbers is the motion of a weight bouncing on a spring described, and how are they read from the curve drawn by the motion sensor?",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2"
+      ],
+      "optional": true
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the error",
+      "prompt": "A student studies the $(t, x)$ graph of a weight oscillating on a spring. The curve starts from zero going up and crosses the level of the equilibrium position, $x = 0$, at the times $0$, $0.45\\,\\text{s}$, $0.90\\,\\text{s}$ and $1.35\\,\\text{s}$. The student writes:\n\n$$\\begin{aligned} T &= 0.45\\,\\text{s} \\\\ f &= \\frac{1}{T} = \\frac{1}{0.45\\,\\text{s}} \\approx 2.2\\,\\text{Hz} \\end{aligned}$$\n\nWhere is the error?",
+      "choices": [
+        {
+          "text": "Successive passes are half a period apart, so $T = 0.90\\,\\text{s}$ and $f \\approx 1.1\\,\\text{Hz}$.",
+          "correct": true,
+          "feedback": "Correct. At the time $0$ the weight passes the equilibrium position going up and at $0.45\\,\\text{s}$ going down. It passes it in the same direction again only at $0.90\\,\\text{s}$, so $T = 0.90\\,\\text{s}$ and $f = \\tfrac{1}{0.90\\,\\text{s}} = 1.1\\,\\text{Hz}$."
+        },
+        {
+          "text": "The frequency is calculated by multiplying instead of dividing, so $f = 0.45\\,\\text{s} \\cdot 1 = 0.45\\,\\text{Hz}$.",
+          "feedback": "The frequency is the reciprocal of the period, $f = \\tfrac{1}{T}$, as the student wrote. The error is in the period: between the times $0$ and $0.45\\,\\text{s}$ the weight has completed only half an oscillation."
+        },
+        {
+          "text": "The period is the length of three intervals, $1.35\\,\\text{s}$, because the curve crosses the level four times.",
+          "feedback": "Between the times $0$ and $1.35\\,\\text{s}$ there are one and a half oscillations, not one. One full oscillation takes two intervals, that is, $0.90\\,\\text{s}$."
+        },
+        {
+          "text": "There is no error in the calculation.",
+          "feedback": "At $0.45\\,\\text{s}$ the weight passes the equilibrium position going down, that is, in a different direction than at the time $0$. A full period ends only at $0.90\\,\\text{s}$."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "vaihe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Extra: phase",
+      "prompt": "The bob of a pendulum is pulled aside and released, and the timing of the motion sensor starts at the moment of release. The sine fit $y = A \\sin(Bt + C) + D$ of Graphical Analysis Pro gives the constant $C$ the value of about $1.57$, that is, $\\tfrac{\\pi}{2}$. What does this tell?",
+      "choices": [
+        {
+          "text": "At the time $t = 0$ the bob was at an extreme position, a quarter of an oscillation from the equilibrium position.",
+          "correct": true,
+          "feedback": "Correct. A whole oscillation corresponds to the number $2\\pi$ in the argument of the sine, so $\\tfrac{\\pi}{2}$ is a quarter of an oscillation. At the time $t = 0$, $y - D = A \\sin\\tfrac{\\pi}{2} = A$: the bob was at an extreme position, as it should be at the moment of release. The phase changes neither the amplitude nor the period."
+        },
+        {
+          "text": "The amplitude of the oscillation is $1.57$, the same number as the constant $C$ of the fit.",
+          "feedback": "The amplitude is the constant $A$ of the fit. The constant $C$ is in the argument of the sine, so it is a dimensionless number that tells at which point of the oscillation the bob was when the timing started."
+        },
+        {
+          "text": "The period of the oscillation is $1.57\\,\\text{s}$, because the constant $C$ is added to the time.",
+          "feedback": "The period is obtained from the constant $B$: $T = \\tfrac{2\\pi}{B}$. The constant $C$ shifts the curve in the direction of time but does not change the duration of one oscillation."
+        },
+        {
+          "text": "The bob passed the equilibrium position in the positive direction exactly at the time $t = 0$.",
+          "feedback": "Then the constant $C$ would be zero, because $\\sin 0 = 0$. The value $\\tfrac{\\pi}{2}$ gives the greatest displacement at the time $t = 0$, that is, the bob was at an extreme position."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply to a new situation",
+      "prompt": "The deck of a light footbridge oscillates vertically when people run on the bridge in step. The amplitude of the oscillation is $4.0\\,\\text{cm}$ and the frequency $0.50\\,\\text{Hz}$, and the oscillation is assumed to be sinusoidal and undamped. How far from the equilibrium position is the deck $0.40\\,\\text{s}$ after it passed the equilibrium position going up? Answer in centimetres.",
+      "answer": 3.8,
+      "unit": "cm",
+      "tolerance": 0.02,
+      "hints": [
+        "Timing starts at a pass through the equilibrium position going up, so you can use the sine model. Which form fits when you know the frequency?",
+        "$x = A \\sin(2\\pi f t)$. First calculate the argument $2\\pi f t$ and check that the calculator is in radian mode.",
+        "$2\\pi \\cdot 0.50\\,\\text{Hz} \\cdot 0.40\\,\\text{s} = 1.257$, so $x = 4.0\\,\\text{cm} \\cdot \\sin 1.257$."
+      ],
+      "mistakes": [
+        {
+          "value": 0.0877,
+          "feedback": "The calculator is in degree mode. The argument $2\\pi f t = 1.257$ is in radians, so switch the calculator to radian mode: $\\sin 1.257 = 0.951$."
+        },
+        {
+          "value": -3.8,
+          "feedback": "You used the frequency $0.50$ as the period. The period is $T = \\tfrac{1}{f} = 2.0\\,\\text{s}$; substitute it in $x = A \\sin\\left(\\tfrac{2\\pi t}{T}\\right)$ or use $x = A \\sin(2\\pi f t)$ directly."
+        },
+        {
+          "value": 8.0,
+          "feedback": "This is the distance $2A$ between the extreme positions. The question asks for the displacement of the deck from the equilibrium position at the time $0.40\\,\\text{s}$, and it is at most as large as the amplitude, $4.0\\,\\text{cm}$."
+        }
+      ],
+      "solution": "**Given:** amplitude $A = 4.0\\,\\text{cm}$, frequency $f = 0.50\\,\\text{Hz}$, time from the pass through the equilibrium position $t = 0.40\\,\\text{s}$\n\n**Find:** the displacement $x$ of the deck from the equilibrium position in centimetres\n\n**Principle:** The deck oscillates sinusoidally, and the time is counted from the moment when it passed the equilibrium position going in the positive direction, up. Then the displacement is described by the sine model, where the frequency can be used in place of the period because $\\tfrac{1}{T} = f$.\n\n**Formula:**\n\n$$x = A \\sin(2\\pi f t)$$\n\n**Conversions:** None needed: $\\text{Hz} \\cdot \\text{s} = \\tfrac{1}{\\text{s}} \\cdot \\text{s}$ is dimensionless, so the argument is in radians, and $x$ comes out in centimetres like $A$.\n\n**Substitution:** $x = 4.0\\,\\text{cm} \\cdot \\sin(2\\pi \\cdot 0.50\\,\\text{Hz} \\cdot 0.40\\,\\text{s}) = 4.0\\,\\text{cm} \\cdot \\sin 1.257 = 4.0\\,\\text{cm} \\cdot 0.9511 = 3.804\\,\\text{cm}$\n\n**Answer:** $3.8\\,\\text{cm}$ above the equilibrium position, two significant figures as in the amplitude $4.0\\,\\text{cm}$ and the frequency $0.50\\,\\text{Hz}$.\n\n**Reasonableness:** The period is $T = \\tfrac{1}{f} = 2.0\\,\\text{s}$, so the deck is at its highest position at $\\tfrac{T}{4} = 0.50\\,\\text{s}$. The time $0.40\\,\\text{s}$ is a little before that, so the deck is already near the highest position: the displacement $3.8\\,\\text{cm}$ is a little less than the amplitude $4.0\\,\\text{cm}$, as it should be."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise on three levels. In level 1 tasks you read or calculate one quantity, level 2 tasks need two steps or a unit conversion, and level 3 requires reasoning."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept",
+      "prompt": "The seat of a swing moves from one extreme position to the other, and the horizontal distance between the extreme positions is $1.6\\,\\text{m}$. The motion from one extreme position to the other and back takes $3.0\\,\\text{s}$. The displacement is measured horizontally. Which statement is correct?",
+      "choices": [
+        {
+          "text": "The amplitude is $0.80\\,\\text{m}$ and the period $3.0\\,\\text{s}$.",
+          "correct": true,
+          "feedback": "Correct. The amplitude is the greatest displacement from the equilibrium position, which is halfway between the extreme positions, so $A = \\tfrac{1.6\\,\\text{m}}{2} = 0.80\\,\\text{m}$. The motion from one extreme position to the other and back is one full oscillation, so $T = 3.0\\,\\text{s}$."
+        },
+        {
+          "text": "The amplitude is $1.6\\,\\text{m}$ and the period $3.0\\,\\text{s}$.",
+          "feedback": "The period is correct, but $1.6\\,\\text{m}$ is the distance between the extreme positions, that is, $2A$. The amplitude is measured from the equilibrium position to an extreme position, so $A = 0.80\\,\\text{m}$."
+        },
+        {
+          "text": "The amplitude is $0.80\\,\\text{m}$ and the period $1.5\\,\\text{s}$.",
+          "feedback": "The amplitude is correct, but the motion from one extreme position to the other is only half an oscillation. The swing is at the same place and moving in the same direction only after it has returned, so $T = 3.0\\,\\text{s}$."
+        },
+        {
+          "text": "The amplitude is $1.6\\,\\text{m}$ and the period $1.5\\,\\text{s}$.",
+          "feedback": "Both numbers are twice or half of the correct value. The amplitude is half of the distance between the extreme positions, $0.80\\,\\text{m}$, and a full oscillation is there and back, $3.0\\,\\text{s}$."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Frequency from a graph",
+      "figure": "fy5-7/tarkistus-kuvaaja",
+      "prompt": "The graph shows the horizontal displacement of the bob of a pendulum as a function of time according to the sine model. What is the frequency of the pendulum? Answer in hertz.",
+      "answer": 0.56,
+      "unit": "Hz",
+      "tolerance": 0.02,
+      "hints": [
+        "Find the points on the graph where the curve passes the equilibrium position going up. How many full oscillations are there in the graph?",
+        "Read the duration of several full oscillations and divide by the number of oscillations: $T = \\tfrac{t_n}{n}$. Then $f = \\tfrac{1}{T}$.",
+        "The curve rises through the equilibrium position at the times $0$, $1.8\\,\\text{s}$, $3.6\\,\\text{s}$ and $5.4\\,\\text{s}$."
+      ],
+      "mistakes": [
+        {
+          "value": 1.8,
+          "feedback": "This is the period in seconds. The frequency is its reciprocal, $f = \\tfrac{1}{T}$."
+        },
+        {
+          "value": 1.11,
+          "feedback": "You read the interval $0.9\\,\\text{s}$ between two successive passes through the equilibrium position as the period. Between them the pendulum moves in opposite directions, so the interval is half of the period."
+        },
+        {
+          "value": 0.185,
+          "feedback": "You calculated the reciprocal $\\tfrac{1}{5.4\\,\\text{s}}$ of the duration of the whole graph. The graph has three full oscillations, so the duration of one is $\\tfrac{5.4\\,\\text{s}}{3}$."
+        }
+      ],
+      "solution": "**Given:** from the graph, the displacement $x$ of the pendulum as a function of time from $0$ to $5.4\\,\\text{s}$\n\n**Find:** the frequency $f$ of the pendulum in hertz\n\n**Principle:** The period is the duration of one full oscillation. It is read most precisely from the duration of several oscillations and divided by their number, and the frequency is the reciprocal of the period.\n\n**Reading the graph:** The curve starts from zero going up and passes the equilibrium position going up the next times at $1.8\\,\\text{s}$, $3.6\\,\\text{s}$ and $5.4\\,\\text{s}$. So the graph has $n = 3$ full oscillations in the time $t_n = 5.4\\,\\text{s}$. The passes in between, at $0.9\\,\\text{s}$, $2.7\\,\\text{s}$ and $4.5\\,\\text{s}$, are going down.\n\n**Formula:** $T = \\dfrac{t_n}{n}$ and $f = \\dfrac{1}{T}$, from which\n\n$$f = \\frac{n}{t_n}$$\n\n**Conversions:** None needed: the time is in seconds, so the frequency comes out in the unit $\\tfrac{1}{\\text{s}} = \\text{Hz}$.\n\n**Substitution:** $f = \\dfrac{3}{5.4\\,\\text{s}} = 0.5556\\,\\text{Hz}$\n\n**Answer:** $0.56\\,\\text{Hz}$, two significant figures as in the time $5.4\\,\\text{s}$ read from the graph.\n\n**Reasonableness:** One oscillation takes $1.8\\,\\text{s}$, so a little more than half an oscillation is completed in a second, which fits the result $0.56\\,\\text{Hz}$. A pendulum about $0.8\\,\\text{m}$ long swings at this pace, so the result is believable."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Interpret a fit",
+      "prompt": "A motion sensor measures the distance to a weight oscillating on a spring. Suppose that the sine fit $y = A \\sin(Bt + C) + D$ of Graphical Analysis Pro gives the values $A = 0.052\\,\\text{m}$, $B = 7.85\\,\\tfrac{1}{\\text{s}}$, $C = 0.01$ and $D = 0.430\\,\\text{m}$. What does each number tell about the motion of the weight, and what are the period and the frequency of the oscillation?",
+      "criteria": [
+        "I say that $A = 0.052\\,\\text{m}$ is the amplitude, that is, the greatest displacement from the equilibrium position, and $D = 0.430\\,\\text{m}$ is the distance of the equilibrium position from the sensor.",
+        "I calculate the period $T = \\tfrac{2\\pi}{B} = 0.800\\,\\text{s}$ and the frequency $f = \\tfrac{1}{T} = 1.25\\,\\text{Hz}$ with their units.",
+        "I explain that $C \\approx 0$ means that timing started when the weight passed the equilibrium position in the positive direction."
+      ],
+      "model": "The amplitude $A = 0.052\\,\\text{m} = 5.2\\,\\text{cm}$ is the greatest displacement of the weight from the equilibrium position. The constant $D = 0.430\\,\\text{m}$ is the distance from the sensor to the equilibrium position, so the weight moves between the distances $0.378\\,\\text{m}$ and $0.482\\,\\text{m}$. From the constant $B = \\tfrac{2\\pi}{T}$ the period is $T = \\tfrac{2\\pi}{7.85\\,\\tfrac{1}{\\text{s}}} = 0.800\\,\\text{s}$ and the frequency $f = \\tfrac{1}{T} = 1.25\\,\\text{Hz}$. The constant $C \\approx 0$ tells the phase: at the time $t = 0$ the weight was at the equilibrium position and moving in the positive direction, that is, away from the sensor, because the distance started to increase.",
+      "optional": true
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, two quick questions. First answer yourself and open the answer only afterwards."
+    }
+  ]
+}

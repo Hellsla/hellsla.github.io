@@ -1,0 +1,21 @@
+{
+  "id": "fy5-8",
+  "course": "FY5",
+  "title": "Harmonic force and elastic potential energy",
+  "goals": [
+    "LOPS FY5: harmonic force",
+    "LOPS FY5: potential energy of a harmonic force",
+    "Clarification: F = −kx, spring constant from a measurement (gradient of the graph), direction of the harmonic force towards the equilibrium position, elastic potential energy E_p = ½kx²"
+  ],
+  "prerequisites": [
+    "fy5-7"
+  ],
+  "glossary": [
+    "harmoninen voima",
+    "jousivakio",
+    "jousen potentiaalienergia"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

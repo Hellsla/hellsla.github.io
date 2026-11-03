@@ -1,0 +1,442 @@
+{
+  "version": 1,
+  "contribution": "Luku tuo kiertymisen kuvaamiseen voiman momentin $M = Fr$: voiman varren kohtisuorana etäisyytenä vaikutussuorasta, vinon voiman varren $r = d\\sin\\alpha$, kiertosuunnan etumerkin ja kokonaismomentin. Simulaatiossa opiskelija löytää itse, että mutterin aukeamisen ratkaisee momentti eikä voima.",
+  "learn": [
+    "selittämään, mitä voiman momentti kuvaa ja mikä on voiman varsi.",
+    "laskemaan voiman momentin $M = Fr$ myös vinosti vaikuttavalle voimalle.",
+    "laskemaan kokonaismomentin, kun kiertosuunnat merkitään etumerkeillä."
+  ],
+  "prior": [
+    "Voimalla on suuruus, suunta ja vaikutuskohta (luku *Vuorovaikutus ja voima: Newtonin ensimmäinen ja kolmas laki*)",
+    "Vinon voiman komponentit saadaan sinin ja kosinin avulla (luku *Voimakuvio ja voimien yhteisvaikutus*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Pyörän mutteri on juuttunut kiinni. Vedät lyhyen kiintoavaimen vartta kaikin voimin, eikä mutteri liikahdakaan. Kaverisi hakee avaimen, jonka varsi on kaksi kertaa pidempi, ja mutteri aukeaa, vaikka hän ei vedä yhtään sinua kovemmin.",
+      "question": "Mikä ratkaisee, aukeaako mutteri, jos pelkkä voiman suuruus ei sitä ratkaise?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Kertaa: vinon voiman komponentti",
+      "optional": true,
+      "prompt": "Köysi vetää laatikkoa $200\\,\\text{N}$:n voimalla, joka on $30^\\circ$:n kulmassa vaakatasoon nähden. Kuinka suuri on voiman pystykomponentti?",
+      "choices": [
+        {
+          "text": "$100\\,\\text{N}$, koska pystykomponentti on $F\\sin 30^\\circ$.",
+          "correct": true,
+          "feedback": "Oikein. Kulman $30^\\circ$ vastainen kateetti on $F\\sin 30^\\circ = 200\\,\\text{N}\\cdot 0{,}5 = 100\\,\\text{N}$. Samaa suorakulmaisen kolmion sääntöä tarvitaan tässä luvussa, kun lasketaan vinon voiman vartta."
+        },
+        {
+          "text": "$173\\,\\text{N}$, koska pystykomponentti on $F\\cos 30^\\circ$.",
+          "feedback": "Kosini antaa kulman viereisen kateetin eli vaakakomponentin $F\\cos 30^\\circ \\approx 173\\,\\text{N}$. Pystykomponentti on kulman vastainen kateetti $F\\sin 30^\\circ = 100\\,\\text{N}$."
+        },
+        {
+          "text": "$200\\,\\text{N}$, koska komponentti on yhtä suuri kuin voima.",
+          "feedback": "Komponentti on suorakulmaisen kolmion kateetti, ja hypotenuusa on voima itse. Kateetti on aina lyhyempi: pystykomponentti on $F\\sin 30^\\circ = 100\\,\\text{N}$."
+        }
+      ]
+    },
+    {
+      "id": "pred-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 1: otekohdan etäisyys",
+      "justify": true,
+      "reveal": {
+        "after": "exp-1",
+        "min": 2
+      },
+      "prompt": "Tiukassa oleva mutteri aukeaa juuri ja juuri, kun vedät avaimen vartta kohtisuoraan $200\\,\\text{N}$:n voimalla kohdasta, joka on $0{,}15\\,\\text{m}$:n päässä mutterin keskeltä. Kuinka suuri voima tarvitaan, jos tartut varteen kaksi kertaa kauempaa, $0{,}30\\,\\text{m}$:n päästä?",
+      "choices": [
+        {
+          "text": "Noin $100\\,\\text{N}$ eli puolet.",
+          "correct": true,
+          "feedback": "Oikein. Mallin arvoissa mutteri aukeaa otekohdasta $0{,}15\\,\\text{m}$ voimalla $200\\,\\text{N}$ ja otekohdasta $0{,}30\\,\\text{m}$ voimalla $100\\,\\text{N}$. Voiman ja etäisyyden tulo on kummassakin $30\\,\\text{Nm}$: mutteri vaatii tietyn momentin, ei tiettyä voimaa."
+        },
+        {
+          "text": "Edelleen $200\\,\\text{N}$, koska mutteri on yhtä tiukassa.",
+          "feedback": "Mutterin tiukkuus ei vaadi tiettyä voimaa. Mallin arvoissa otekohdasta $0{,}30\\,\\text{m}$ riittää $100\\,\\text{N}$ eli puolet. Ratkaisevaa on voiman ja etäisyyden tulo, joka on kummassakin $30\\,\\text{Nm}$."
+        },
+        {
+          "text": "Noin $400\\,\\text{N}$ eli kaksinkertainen voima.",
+          "feedback": "Kauempaa vetävä voima kiertää mutteria tehokkaammin, ei heikommin. Mallin arvoissa voima puolittuu $100\\,\\text{N}$:iin, kun etäisyys kaksinkertaistuu."
+        },
+        {
+          "text": "Noin $50\\,\\text{N}$ eli neljäsosa.",
+          "feedback": "Mallin arvoissa voima puolittuu $100\\,\\text{N}$:iin eikä neljäsosaan. Vääntövaikutus kasvaa suoraan verrannollisesti etäisyyteen: kaksinkertainen etäisyys, puolet voimasta."
+        }
+      ]
+    },
+    {
+      "id": "pred-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 2: vetokulma",
+      "justify": true,
+      "reveal": {
+        "after": "exp-2",
+        "min": 2
+      },
+      "prompt": "Ruosteessa oleva mutteri aukeaa, kun vedät avaimen vartta $200\\,\\text{N}$:n voimalla kohtisuoraan kohdasta, joka on $0{,}40\\,\\text{m}$:n päässä mutterin keskeltä. Mitä momentille tapahtuu, jos vedät yhtä suurella voimalla samasta kohdasta mutta niin, että voima on $30^\\circ$:n kulmassa varren jatkeeseen nähden?",
+      "choices": [
+        {
+          "text": "Momentti puolittuu, koska voiman varsi lyhenee puoleen.",
+          "correct": true,
+          "feedback": "Oikein. Mallin arvoissa voiman varsi on kulmalla $90^\\circ$ koko $0{,}40\\,\\text{m}$ mutta kulmalla $30^\\circ$ vain $0{,}20\\,\\text{m}$, joten momentti putoaa $80\\,\\text{Nm}$:stä $40\\,\\text{Nm}$:iin. Ruosteessa oleva mutteri ei aukea."
+        },
+        {
+          "text": "Momentti pysyy samana, koska voima ja otekohta ovat samat.",
+          "feedback": "Voima ja otekohta ovat samat, mutta vaikutussuora kulkee nyt lähempää akselia. Mallin arvoissa voiman varsi lyhenee $0{,}40\\,\\text{m}$:stä $0{,}20\\,\\text{m}$:iin ja momentti $80\\,\\text{Nm}$:stä $40\\,\\text{Nm}$:iin."
+        },
+        {
+          "text": "Momentti kasvaa, koska vino voima vetää avainta myös pitkittäin.",
+          "feedback": "Varren suuntainen osa voimasta vetää avainta pitkittäin, mutta se ei kierrä mutteria, koska sen vaikutussuora kulkee akselin kautta. Mallin arvoissa momentti pienenee $80\\,\\text{Nm}$:stä $40\\,\\text{Nm}$:iin."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Simulaatiossa avataan juuttunutta mutteria kiintoavaimella. Säädä käden voimaa, otekohtaa ja vetokulmaa ja kokeile, aukeaako mutteri.",
+      "howto": "Säädä voimaa $F$, otekohdan etäisyyttä $d$ mutterin keskeltä ja kulmaa $\\alpha$, jonka voima muodostaa varren jatkeen kanssa. Paina *Väännä*: mutteri joko aukeaa ja avain kääntyy, tai avain vain nytkähtää. Jokainen yritys piirtyy kuvaajaan kohtaan, jonka vaakakoordinaatti on voiman varsi $r$ ja pystykoordinaatti voima $F$: vihreä täytetty piste, kun mutteri aukesi, ja ontto rengas, kun se ei liikkunut. Punainen risti näyttää nykyisen asetuksen. *Mutteri*-valinta vaihtaa tiukassa ja ruosteessa olevan mutterin ja tyhjentää kuvaajan, samoin *Alusta*. *Nopeus* muuttaa vain kääntymisen tahtia. Ruutu *Näytä voiman varsi* piirtää akselista vaikutussuoralle kohtisuoran janan $r$. Lukemat ovat kuvan alla.",
+      "model": "Arvot ovat simulaation laskemia mallin arvoja. Mutteri voi vain kiertyä pultin ympäri, ja kiertoakseli kulkee mutterin keskeltä. Mutteri aukeaa, kun käden voiman momentti on vähintään se momentti, jonka mutterin kitka vaatii. Tätä arvoa ei näytetä, vaan se selvitetään kokeilemalla. Kaikki kulmat $0^\\circ$–$180^\\circ$ kiertävät mutteria aukeamissuuntaan eli vastapäivään. Avaimen paino jätetään huomiotta. Kääntyminen on vain kuva tuloksesta: simulaatio ei laske, kuinka nopeasti mutteri kiertyy.",
+      "calc": "Voiman varsi on akselin kohtisuora etäisyys voiman vaikutussuorasta, $r = d\\sin\\alpha$. Momentti on $M = Fr$ yksikössä $\\text{Nm}$. Yritys onnistuu, kun $M$ on vähintään mutterin vaatima momentti."
+    },
+    {
+      "id": "exp-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 1: pienin avaava voima",
+      "intro": "Alkutila valitsee tiukassa olevan mutterin ja kulman $\\alpha = 90^\\circ$. Valitse otekohta $d$, säädä voimaa $F$ ja paina *Väännä*, kunnes löydät pienimmän voiman, jolla mutteri aukeaa. Kirjaa mittaus vasta silloin. Toista ainakin etäisyyksillä $0{,}10\\,\\text{m}$, $0{,}15\\,\\text{m}$, $0{,}20\\,\\text{m}$ ja $0{,}30\\,\\text{m}$.",
+      "initial": {
+        "mutteri": "tiukka",
+        "alpha": 90,
+        "d": 0.1,
+        "F": 100
+      },
+      "names": {
+        "d": "otekohta d",
+        "F": "voima F",
+        "alpha": "kulma α",
+        "mutteri": "mutteri"
+      },
+      "units": {
+        "d": "m",
+        "F": "N",
+        "alpha": "°"
+      },
+      "values": {
+        "mutteri": {
+          "tiukka": "tiukassa"
+        },
+        "tulos": {
+          "1": "aukesi",
+          "0": "ei liikkunut"
+        }
+      },
+      "locked": [
+        "mutteri",
+        "alpha"
+      ],
+      "vary": "d",
+      "measure": [
+        {
+          "key": "F",
+          "label": "voima F"
+        },
+        {
+          "key": "M",
+          "label": "M (Nm)"
+        },
+        {
+          "key": "tulos",
+          "label": "mutteri"
+        }
+      ],
+      "min": 2,
+      "question": {
+        "type": "numeric",
+        "prompt": "Laske taulukon rivin $d = 0{,}20\\,\\text{m}$ pienimmästä avaavasta voimasta momentti, jonka mutteri vaatii. Vastaa newtonmetreinä.",
+        "answer": 30,
+        "unit": "Nm",
+        "tolerance": 0.03,
+        "hints": [
+          "Voima on kohtisuorassa vartta vastaan. Kuinka pitkä on silloin voiman varsi?",
+          "Kun $\\alpha = 90^\\circ$, varsi on $r = d$ ja momentti $M = Fd$.",
+          "$M = F\\cdot 0{,}20\\,\\text{m}$, missä $F$ on rivin pienin avaava voima."
+        ],
+        "mistakes": [
+          {
+            "value": 150,
+            "feedback": "Tämä on voima $F$. Momentti on voiman ja varren tulo: kerro voima varrella $0{,}20\\,\\text{m}$."
+          },
+          {
+            "value": 750,
+            "feedback": "Jaoit voiman etäisyydellä. Pidempi varsi tekee voimasta tehokkaamman kiertäjän, joten momentti on tulo $M = Fr$."
+          }
+        ],
+        "solution": "**Annettu:** taulukosta otekohta $d = 0{,}20\\,\\text{m}$ ja pienin avaava voima $F = 150\\,\\text{N}$ (mallin arvo); kulma $\\alpha = 90^\\circ$\n\n**Kysytty:** momentti $M$, jonka mutteri vaatii, yksikössä $\\text{Nm}$\n\n**Periaate:** Mutteri kiertyy akselinsa ympäri, joten aukeamisen ratkaisee voiman momentti $M = Fr$. Pienimmällä avaavalla voimalla momentti on juuri se, jonka mutteri vaatii. Voima on kohtisuorassa vartta vastaan, joten varsi on koko etäisyys $d$.\n\n**Kaava:** $M = Fr$ ja $r = d\\sin 90^\\circ = d$, joten $M = Fd$\n\n**Muunnokset:** Voima on newtoneina ja etäisyys metreinä, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $M = 150\\,\\text{N}\\cdot 0{,}20\\,\\text{m} = 30\\,\\text{Nm}$\n\n**Vastaus:** $30\\,\\text{Nm}$, kaksi merkitsevää numeroa kuten etäisyydessä $0{,}20\\,\\text{m}$.\n\n**Järkevyys:** Muiltakin riveiltä saadaan sama tulo: $300\\,\\text{N}\\cdot 0{,}10\\,\\text{m} = 30\\,\\text{Nm}$ ja $100\\,\\text{N}\\cdot 0{,}30\\,\\text{m} = 30\\,\\text{Nm}$. Mutteri siis todella vaatii tietyn momentin. Kuvaajassa vihreät rajapisteet osuvat käyrälle, jolla $Fr$ on vakio."
+      }
+    },
+    {
+      "id": "exp-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 2: vetokulma muuttuu",
+      "intro": "Alkutila valitsee ruosteessa olevan mutterin, voiman $F = 200\\,\\text{N}$ ja otekohdan $d = 0{,}40\\,\\text{m}$. Muuta vain kulmaa $\\alpha$ ja paina joka kulmalla *Väännä*. Kirjaa mittaus ainakin kulmilla $90^\\circ$, $60^\\circ$, $45^\\circ$, $30^\\circ$ ja $150^\\circ$.",
+      "initial": {
+        "mutteri": "ruoste",
+        "F": 200,
+        "d": 0.4,
+        "alpha": 90
+      },
+      "names": {
+        "d": "otekohta d",
+        "F": "voima F",
+        "alpha": "kulma α",
+        "mutteri": "mutteri"
+      },
+      "units": {
+        "d": "m",
+        "F": "N",
+        "alpha": "°"
+      },
+      "values": {
+        "mutteri": {
+          "ruoste": "ruosteessa"
+        },
+        "tulos": {
+          "1": "aukesi",
+          "0": "ei liikkunut"
+        }
+      },
+      "locked": [
+        "mutteri",
+        "F",
+        "d"
+      ],
+      "vary": "alpha",
+      "measure": [
+        {
+          "key": "r",
+          "label": "r (m)"
+        },
+        {
+          "key": "M",
+          "label": "M (Nm)"
+        },
+        {
+          "key": "tulos",
+          "label": "mutteri"
+        }
+      ],
+      "min": 2,
+      "question": {
+        "type": "choice",
+        "prompt": "Miksi mutteri ei aukea kulmalla $30^\\circ$, vaikka voima ja otekohta ovat samat kuin kulmalla $90^\\circ$?",
+        "choices": [
+          {
+            "text": "Vaikutussuora kulkee lähempää akselia, joten varsi ja momentti pienenevät.",
+            "correct": true,
+            "feedback": "Oikein. Mallin arvoissa varsi on $r = 0{,}40\\,\\text{m}\\cdot\\sin 30^\\circ = 0{,}20\\,\\text{m}$, joten momentti on vain $40\\,\\text{Nm}$. Kulmalla $90^\\circ$ se oli $80\\,\\text{Nm}$."
+          },
+          {
+            "text": "Vino voima on pienempi kuin kohtisuoraan vartta vastaan vaikuttava voima.",
+            "feedback": "Voima on molemmilla kulmilla $200\\,\\text{N}$. Muuttuu voiman varsi: mallin arvoissa se lyhenee $0{,}40\\,\\text{m}$:stä $0{,}20\\,\\text{m}$:iin."
+          },
+          {
+            "text": "Kulmalla $30^\\circ$ voiman otekohta on kauempana akselista.",
+            "feedback": "Vaikutuskohta on sama, $0{,}40\\,\\text{m}$:n päässä. Vaikutussuora kuitenkin kulkee lähempää akselia, joten varsi on vain $0{,}20\\,\\text{m}$."
+          }
+        ]
+      }
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös",
+      "after": [
+        "exp-1",
+        "exp-2"
+      ],
+      "prompt": "Selitä mittaustesi avulla, mikä ratkaisee, aukeaako mutteri. Käytä sanoja voima, voiman varsi ja momentti, ja kerro, miksi vetokulma vaikuttaa tulokseen.",
+      "criteria": [
+        "Vastaus kertoo, että mutteri aukeaa, kun momentti $M = Fr$ saavuttaa tietyn arvon, eikä silloin, kun voima saavuttaa tietyn arvon.",
+        "Vastaus käyttää kokeen 1 tuloksia: pienin avaava voima puolittuu, kun etäisyys kaksinkertaistuu, ja tulo $Fd$ on joka rivillä noin $30\\,\\text{Nm}$.",
+        "Vastaus kertoo, että vinon voiman varsi $r = d\\sin\\alpha$ on lyhyempi kuin $d$, joten momentti pienenee.",
+        "Vastaus käyttää kokeen 2 tulosta, esimerkiksi momenttia kulmilla $90^\\circ$ ja $30^\\circ$."
+      ],
+      "model": "Kokeessa 1 pienin avaava voima oli mallin arvoissa $300\\,\\text{N}$ otekohdasta $0{,}10\\,\\text{m}$, $150\\,\\text{N}$ otekohdasta $0{,}20\\,\\text{m}$ ja $100\\,\\text{N}$ otekohdasta $0{,}30\\,\\text{m}$. Voima ei siis ole sama, mutta voiman ja etäisyyden tulo on joka kerta $30\\,\\text{Nm}$: mutterin aukeamisen ratkaisee voiman momentti $M = Fr$. Kokeessa 2 voima ja otekohta pysyivät samoina, mutta kulman pienentyessä vaikutussuora siirtyi lähemmäs akselia. Voiman varsi $r = d\\sin\\alpha$ lyheni $0{,}40\\,\\text{m}$:stä $0{,}20\\,\\text{m}$:iin kulmalla $30^\\circ$, ja momentti putosi $80\\,\\text{Nm}$:stä $40\\,\\text{Nm}$:iin. Kulmalla $150^\\circ$ momentti oli sama kuin kulmalla $30^\\circ$, koska varsi on yhtä pitkä. Kuvaajassa saman mutterin yritykset jakautuvat samalla rajalla, koska aukeaminen riippuu vain tulosta $Fr$."
+    },
+    {
+      "id": "theory",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "reflect",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Palaa ennusteisiisi",
+      "optional": true,
+      "prompt": "Vertaa ennusteitasi mittauksiin. Mitä opit siitä, mikä tekee voimasta tehokkaan kiertäjän? Palaa myös alun mutteriin: miksi pitkä avain auttaa, vaikka käden voima ei kasva?",
+      "predictions": [
+        "pred-1",
+        "pred-2"
+      ]
+    },
+    {
+      "id": "example",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe",
+      "prompt": "Avaimen vartta vedetään $50\\,\\text{N}$:n voimalla kohdasta, joka on $0{,}40\\,\\text{m}$:n päässä akselista. Voima on $30^\\circ$:n kulmassa varren jatkeeseen nähden. Opiskelija laski momentin näin: $M = Fd = 50\\,\\text{N}\\cdot 0{,}40\\,\\text{m} = 20\\,\\text{Nm}$. Mikä laskussa on vialla?",
+      "choices": [
+        {
+          "text": "Etäisyys $d$ ei ole voiman varsi. Varsi on $d\\sin 30^\\circ = 0{,}20\\,\\text{m}$, joten $M = 10\\,\\text{Nm}$.",
+          "correct": true,
+          "feedback": "Oikein. Vino voima kiertää vain varrellaan, joka on akselin kohtisuora etäisyys vaikutussuorasta. Kohtisuora veto antaisi $20\\,\\text{Nm}$, mutta $30^\\circ$:n kulmassa momentti on puolet siitä."
+        },
+        {
+          "text": "Varsi lasketaan kosinilla, $d\\cos 30^\\circ \\approx 0{,}35\\,\\text{m}$, joten $M \\approx 17\\,\\text{Nm}$.",
+          "feedback": "Kulma on voiman ja varren jatkeen välinen, joten varsi on suorakulmaisessa kolmiossa kulman vastainen kateetti $d\\sin\\alpha$. Lauseke $Fd\\cos\\alpha$ vastaisi voiman varren suuntaista komponenttia, joka ei kierrä mutteria. Oikea momentti on $10\\,\\text{Nm}$."
+        },
+        {
+          "text": "Voima pitää jakaa etäisyydellä, joten $M = \\tfrac{F}{d} = 125\\,\\text{Nm}$.",
+          "feedback": "Pidempi etäisyys tekee voimasta tehokkaamman kiertäjän, joten etäisyys kertoo voiman. Virhe on se, että etäisyys $d$ ei ole tässä voiman varsi: $r = d\\sin 30^\\circ = 0{,}20\\,\\text{m}$ ja $M = 10\\,\\text{Nm}$."
+        },
+        {
+          "text": "Laskussa ei ole virhettä, koska $d$ on mitattu otekohtaan asti.",
+          "feedback": "Kaava $M = Fd$ pätee vain, kun voima on kohtisuorassa vartta vastaan. Vinon voiman varsi on $d\\sin 30^\\circ = 0{,}20\\,\\text{m}$, joten $M = 10\\,\\text{Nm}$."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Sovella uuteen tilanteeseen",
+      "prompt": "Pysäköintialueen puomi on $3{,}00\\,\\text{m}$ pitkä, ja sen massa on $12{,}0\\,\\text{kg}$. Puomi kääntyy toisessa päässään olevan akselin ympäri, ja sen paino vaikuttaa puomin keskikohdassa. Puomi on nostettu $40^\\circ$:n kulmaan vaakatasoon nähden. Kuinka suuri on puomin painon momentti akselin suhteen? Vastaa newtonmetreinä.",
+      "answer": 135.3,
+      "unit": "Nm",
+      "tolerance": 0.02,
+      "hints": [
+        "Paino osoittaa suoraan alas. Kuinka kaukana akselista kulkee pystysuora vaikutussuora?",
+        "Varsi on painon vaikutuskohdan vaakasuora etäisyys akselista: $r = 1{,}50\\,\\text{m}\\cdot\\cos 40^\\circ$.",
+        "$M = mg\\cdot r = 12{,}0\\,\\text{kg}\\cdot 9{,}81\\,\\text{m/s}^2\\cdot 1{,}50\\,\\text{m}\\cdot\\cos 40^\\circ$."
+      ],
+      "mistakes": [
+        {
+          "value": 176.6,
+          "feedback": "Käytit varrena etäisyyttä $1{,}50\\,\\text{m}$. Paino on pystysuora, joten varsi on vaikutuskohdan vaakasuora etäisyys akselista, $1{,}50\\,\\text{m}\\cdot\\cos 40^\\circ$."
+        },
+        {
+          "value": 113.5,
+          "feedback": "Käytit siniä. Kun puomi on $40^\\circ$ vaakatasosta, painon vaakasuora etäisyys akselista on $1{,}50\\,\\text{m}\\cdot\\cos 40^\\circ$, ei $\\sin 40^\\circ$."
+        },
+        {
+          "value": 270.5,
+          "feedback": "Paino vaikuttaa puomin keskikohdassa, $1{,}50\\,\\text{m}$:n päässä akselista, ei puomin päässä."
+        }
+      ],
+      "solution": "**Annettu:** puomin pituus $3{,}00\\,\\text{m}$, massa $m = 12{,}0\\,\\text{kg}$, paino vaikuttaa keskikohdassa $d = 1{,}50\\,\\text{m}$:n päässä akselista, puomin kulma vaakatasoon $40^\\circ$; $g = 9{,}81\\,\\text{m/s}^2$\n\n**Kysytty:** painon momentti $M$ akselin suhteen yksikössä $\\text{Nm}$\n\n**Periaate:** Puomi voi vain kääntyä akselinsa ympäri, joten painon vääntövaikutuksen kertoo sen momentti $M = Fr$. Paino osoittaa suoraan alas, joten sen varsi on akselin kohtisuora etäisyys pystysuorasta vaikutussuorasta eli vaikutuskohdan vaakasuora etäisyys akselista. Se on suorakulmaisessa kolmiossa kulman $40^\\circ$ viereinen kateetti.\n\n**Kaava:** $M = Gr$, missä $G = mg$ ja $r = d\\cos 40^\\circ$, joten $M = mgd\\cos 40^\\circ$\n\n**Muunnokset:** Massa on kilogrammoina ja pituus metreinä, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $M = 12{,}0\\,\\text{kg}\\cdot 9{,}81\\,\\text{m/s}^2\\cdot 1{,}50\\,\\text{m}\\cdot\\cos 40^\\circ = 117{,}72\\,\\text{N}\\cdot 1{,}149\\,\\text{m} = 135{,}3\\,\\text{Nm}$\n\n**Vastaus:** $135\\,\\text{Nm}$, kolme merkitsevää numeroa kuten massassa $12{,}0\\,\\text{kg}$ ja pituudessa $3{,}00\\,\\text{m}$.\n\n**Järkevyys:** Vaakasuoran puomin painon varsi olisi koko $1{,}50\\,\\text{m}$ ja momentti $177\\,\\text{Nm}$. Nostettuna varsi lyhenee, joten momentti pienenee, ja pystyssä se olisi nolla. Kulman voi tarkistaa myös kaavalla $r = d\\sin\\alpha$: painon ja puomin jatkeen välinen kulma on $90^\\circ + 40^\\circ = 130^\\circ$ ja $\\sin 130^\\circ = \\cos 40^\\circ$."
+    },
+    {
+      "id": "tehtavat",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Harjoittele vielä kolmella tasolla. Piirrä joka tehtävässä kiertoakseli, voima ja sen vaikutussuora ennen kuin lasket."
+    },
+    {
+      "id": "check-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Käsite",
+      "prompt": "Ovea työnnetään yhtä suurella voimalla neljällä eri tavalla. Missä tapauksessa voiman momentti saranoiden suhteen on nolla?",
+      "choices": [
+        {
+          "text": "Voima vaikuttaa oven reunaan ja osoittaa oven tasossa suoraan kohti saranoita.",
+          "correct": true,
+          "feedback": "Oikein. Vaikutussuora kulkee kiertoakselin kautta, joten voiman varsi on nolla ja $M = Fr = 0$, vaikka voima vaikuttaa kaukana saranoista."
+        },
+        {
+          "text": "Voima vaikuttaa aivan saranoiden vieressä kohtisuoraan ovea vastaan.",
+          "feedback": "Momentti on silloin pieni mutta ei nolla, koska varsi on pieni etäisyys saranoista. Nolla se on vain, kun vaikutussuora kulkee saranoiden kautta."
+        },
+        {
+          "text": "Voima vaikuttaa kahvaan vinosti, $30^\\circ$:n kulmassa oven tasoon nähden.",
+          "feedback": "Vinon voiman varsi on $d\\sin 30^\\circ$ eli puolet kahvan etäisyydestä saranoista. Momentti on pienempi kuin kohtisuoralla voimalla mutta ei nolla."
+        },
+        {
+          "text": "Voima vaikuttaa kahvaan kohtisuoraan ovea vastaan, mutta ovi on lukossa.",
+          "feedback": "Lukko estää oven kiertymisen, mutta työnnöllä on silti momentti saranoiden suhteen: varsi on kahvan etäisyys saranoista. Lukon voima vastustaa sitä omalla momentillaan."
+        }
+      ]
+    },
+    {
+      "id": "check-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Laskeminen",
+      "prompt": "Kuljettaja kääntää ohjauspyörää, jonka säde on $0{,}19\\,\\text{m}$. Vasen käsi vetää kehää kehän suuntaisesti $25\\,\\text{N}$:n voimalla, joka kiertää pyörää vastapäivään. Oikea käsi vaikuttaa kehään kehän suuntaisesti $15\\,\\text{N}$:n voimalla, joka kiertää pyörää myötäpäivään. Kuinka suuri on käsien voimien kokonaismomentti ohjauspyörän akselin suhteen? Vastaa newtonmetreinä niin, että vastapäivään kiertävä momentti on positiivinen.",
+      "answer": 1.9,
+      "unit": "Nm",
+      "tolerance": 0.03,
+      "hints": [
+        "Kehän suuntainen voima on kohtisuorassa sädettä vastaan. Kuinka pitkä on silloin voiman varsi?",
+        "Kummankin voiman varsi on säde $0{,}19\\,\\text{m}$. Vastapäivään kiertävä momentti on positiivinen, myötäpäivään kiertävä negatiivinen.",
+        "$\\Sigma M = 25\\,\\text{N}\\cdot 0{,}19\\,\\text{m} - 15\\,\\text{N}\\cdot 0{,}19\\,\\text{m}$."
+      ],
+      "mistakes": [
+        {
+          "value": 7.6,
+          "feedback": "Laskit momentit yhteen ilman etumerkkejä. Kädet kiertävät pyörää vastakkaisiin suuntiin, joten myötäpäivään kiertävä momentti on negatiivinen."
+        },
+        {
+          "value": -1.9,
+          "feedback": "Suuruus on oikein, mutta etumerkki ei. Suurempi voima kiertää vastapäivään, joten kokonaismomentti on positiivinen."
+        }
+      ],
+      "practice": "Harjoittele kokonaismomenttia tason 2 tehtävissä.",
+      "solution": "**Annettu:** ohjauspyörän säde $R = 0{,}19\\,\\text{m}$, vasemman käden voima $F_1 = 25\\,\\text{N}$ vastapäivään, oikean käden voima $F_2 = 15\\,\\text{N}$ myötäpäivään, molemmat kehän suuntaisia\n\n**Kysytty:** kokonaismomentti $\\Sigma M$ akselin suhteen yksikössä $\\text{Nm}$, vastapäivään positiivisena\n\n**Periaate:** Ohjauspyörä kiertyy akselinsa ympäri, joten kunkin voiman vääntövaikutuksen kertoo sen momentti. Kehän suuntainen voima on kohtisuorassa sädettä vastaan, joten sen varsi on säde. Kokonaismomentti on momenttien summa etumerkkeineen.\n\n**Kaava:** $M_1 = F_1 R$ ja $M_2 = -F_2 R$, joten $\\Sigma M = F_1 R - F_2 R$\n\n**Muunnokset:** Voimat ovat newtoneina ja säde metreinä, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $\\Sigma M = 25\\,\\text{N}\\cdot 0{,}19\\,\\text{m} - 15\\,\\text{N}\\cdot 0{,}19\\,\\text{m} = 4{,}75\\,\\text{Nm} - 2{,}85\\,\\text{Nm} = 1{,}9\\,\\text{Nm}$\n\n**Vastaus:** $1{,}9\\,\\text{Nm}$ vastapäivään, kaksi merkitsevää numeroa kuten säteessä $0{,}19\\,\\text{m}$ ja voimissa.\n\n**Järkevyys:** Molemmilla voimilla on sama varsi, joten kokonaismomentti on voimien erotuksen $10\\,\\text{N}$ ja säteen tulo: $10\\,\\text{N}\\cdot 0{,}19\\,\\text{m} = 1{,}9\\,\\text{Nm}$. Suurempi voima kiertää vastapäivään, joten etumerkki on positiivinen: käsien voimat kiertävät pyörää yhdessä vastapäivään."
+    },
+    {
+      "id": "check-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Selitä",
+      "prompt": "Selitä momentin avulla, miksi oven kahva sijoitetaan oven reunaan kauas saranoista. Kerro myös, miksi ovi ei aukea, jos sitä työnnetään reunasta oven tasossa kohti saranoita.",
+      "criteria": [
+        "Vastaus kertoo, että ovi kiertyy saranoiden kautta kulkevan kiertoakselin ympäri ja että kiertymisen ratkaisee voiman momentti $M = Fr$.",
+        "Vastaus kertoo, että kahva kaukana saranoista antaa pitkän voiman varren, joten pienikin voima antaa riittävän momentin.",
+        "Vastaus kertoo, että oven tasossa kohti saranoita osoittavan voiman vaikutussuora kulkee akselin kautta, joten varsi ja momentti ovat nolla."
+      ],
+      "model": "Ovi voi vain kiertyä saranoiden kautta kulkevan kiertoakselin ympäri, joten sen kääntymisen ratkaisee voiman momentti $M = Fr$, jossa $r$ on akselin kohtisuora etäisyys voiman vaikutussuorasta. Kun kahva on oven reunassa, kohtisuoran työnnön varsi on lähes koko oven leveys, esimerkiksi $0{,}8\\,\\text{m}$. Silloin pienikin voima antaa riittävän momentin, ja ovi kääntyy helposti. Lähellä saranoita varsi on lyhyt, joten sama voima antaa paljon pienemmän momentin. Jos ovea työnnetään reunasta oven tasossa kohti saranoita, voiman vaikutussuora kulkee kiertoakselin kautta. Varsi on nolla, joten momenttikin on nolla, eikä ovi käänny, vaikka voima olisi suuri."
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Lopuksi kolme nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+    }
+  ]
+}

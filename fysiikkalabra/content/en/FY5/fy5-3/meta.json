@@ -1,0 +1,19 @@
+{
+  "id": "fy5-3",
+  "course": "FY5",
+  "title": "Circular motion and speed",
+  "goals": [
+    "LOPS FY5: uniform circular motion",
+    "Clarification: the direction of the velocity changes in circular motion; speed v = 2πr/T, period and rotation frequency; angular quantities need not be treated in connection with circular motion; rotational motion is not part of the core contents"
+  ],
+  "prerequisites": [],
+  "glossary": [
+    "ympyräliike",
+    "ratanopeus",
+    "kierrosaika",
+    "pyörimistaajuus"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

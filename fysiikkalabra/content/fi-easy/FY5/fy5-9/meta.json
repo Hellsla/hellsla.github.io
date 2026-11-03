@@ -1,0 +1,23 @@
+{
+  "id": "fy5-9",
+  "course": "FY5",
+  "title": "Harmoninen värähtely ja heiluri",
+  "goals": [
+    "LOPS FY5: harmoninen voima ja värähtelyliike",
+    "Kokeellisesti: heilurin heilahdusajan määrittäminen",
+    "Temaattinen tarkastelu: heiluri",
+    "Täsmennys: mistä jaksonaika riippuu. Jousen ja kappaleen jaksonaika on T = 2π√(m/k). Matemaattisen heilurin jaksonaika on pienillä heilahduksilla T = 2π√(l/g). Lisäksi energia säilyy värähtelyssä, E = ½kA². Vaimeneminen on valinnainen."
+  ],
+  "prerequisites": [
+    "fy5-8"
+  ],
+  "glossary": [
+    "harmoninen värähtely",
+    "heiluri",
+    "värähtelyn energia",
+    "vaimeneminen"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

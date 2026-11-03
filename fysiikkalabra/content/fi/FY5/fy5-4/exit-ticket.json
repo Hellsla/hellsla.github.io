@@ -1,0 +1,14 @@
+[
+  {
+    "q": "Auto kääntyy jyrkästi vasemmalle, ja matkustaja tuntee painautuvansa oikealla olevaa ovea vasten. Mikä voima matkustajaan todella vaikuttaa vaakasuunnassa, ja mihin suuntaan se osoittaa?",
+    "a": "Ovi (ja istuin) työntää matkustajaa vasemmalle, kohti kaarteen keskipistettä. Matkustajan keho pyrkii jatkamaan suoraan, joten ovi tulee häntä vasten ja antaa hänelle keskeisvoiman. Ulospäin työntävää keskipakoisvoimaa ei ole: tunne syntyy siitä, että keho jatkaisi suoraan, jos ovi ei kääntäisi sitä."
+  },
+  {
+    "q": "Auto ajaa saman kaarteen ensin nopeudella $40\\,\\text{km/h}$ ja sitten nopeudella $120\\,\\text{km/h}$. Kuinka moninkertainen on normaalikiihtyvyys jälkimmäisellä kerralla?",
+    "a": "Nopeus kolminkertaistuu, ja $a_\\text{n} = \\tfrac{v^2}{r}$ kasvaa nopeuden neliön mukana, joten kiihtyvyys on $3^2 = 9$-kertainen. Samalla tien kitkan on oltava yhdeksänkertainen, ja siksi suuri nopeus vie auton helposti ulos kaarteesta."
+  },
+  {
+    "q": "Miksi auton matkustaja tuntee itsensä kevyeksi, kun auto ajaa nopeasti nyppylän huipun yli?",
+    "a": "Huipulla auto ja matkustaja kiihtyvät alas kohti kaaren keskipistettä, joten istuimen tukivoiman on oltava painoa pienempi: $N = m\\left(g - \\tfrac{v^2}{r}\\right)$. Paino ei muutu, mutta istuin painaa matkustajaa vähemmän, ja se tuntuu keveytenä."
+  }
+]

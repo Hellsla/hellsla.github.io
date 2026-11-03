@@ -1,0 +1,428 @@
+{
+  "version": 1,
+  "contribution": "Gravitation is generalised from weight to an interaction between all bodies: Newton's law of gravitation $F = \\gamma \\tfrac{m_1 m_2}{r^2}$, the equality of the forces and the difference between the accelerations, the gravitational field strength $g = \\gamma \\tfrac{M}{r^2}$ as the acceleration due to gravity on celestial bodies, and the role of gravitation in the formation of the structures of the universe. Orbital speeds are left for the next chapter.",
+  "learn": [
+    "compare the forces and accelerations of two bodies that attract each other.",
+    "calculate the gravitational force and the gravitational field strength using Newton's law of gravitation.",
+    "explain how gravitation gathers matter into stars, planets and galaxies."
+  ],
+  "prior": [
+    "In an interaction, bodies exert forces of equal magnitude and opposite directions on each other (chapter *Interaction and force: Newton's first and third laws*)",
+    "The weight of a body is $G = mg$, and on the Earth's surface $g = 9.81\\,\\text{m/s}^2$ (chapter *Weight, friction and the inclined plane*)",
+    "In uniform circular motion a body has a centripetal acceleration $a_\\text{n} = \\tfrac{v^2}{r}$ towards the centre of the path (chapter *Uniform circular motion and centripetal acceleration*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "On a September evening, a dull thud is heard from under an apple tree at regular intervals as a ripe apple comes loose and falls onto the lawn. The apple starts from rest and accelerates downwards, towards the Earth. Isaac Newton pondered exactly this kind of situation and asked whether the same pull that makes the apple fall reaches all the way to the Moon.",
+      "question": "If the Earth pulls the apple, does the apple also pull the Earth? And if it does, why does the Earth not move towards the apple?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Review: acceleration in circular motion",
+      "optional": true,
+      "prompt": "The Moon moves round the Earth along a nearly circular path at a nearly constant speed. Which statement about the Moon's motion is correct?",
+      "choices": [
+        {
+          "text": "The Moon has an acceleration towards the Earth, so a net force towards the Earth acts on it.",
+          "correct": true,
+          "feedback": "Correct. In uniform circular motion the direction of the velocity changes all the time, so the body has a centripetal acceleration $a_\\text{n} = \\tfrac{v^2}{r}$ towards the centre of the path (chapter *Uniform circular motion and centripetal acceleration*). By Newton's second law the net force points in the same direction. In this lesson you find out where that force comes from."
+        },
+        {
+          "text": "The Moon's acceleration is zero, because its speed stays constant all the time.",
+          "feedback": "The speed stays the same, but velocity is a vector whose direction changes all the time. The change of velocity towards the centre of the path is the centripetal acceleration $a_\\text{n} = \\tfrac{v^2}{r}$ (chapter *Uniform circular motion and centripetal acceleration*)."
+        },
+        {
+          "text": "A force along the path acts on the Moon and keeps it moving.",
+          "feedback": "No force is needed to keep a body moving (Newton's first law). On a circular path a force is needed to change the direction of the velocity, and it points towards the centre of the path, not along the path."
+        },
+        {
+          "text": "The forces acting on the Moon cancel each other, because its distance stays the same.",
+          "feedback": "If the forces cancelled, the Moon would move in a straight line and would not curve round the Earth. In circular motion the net force points towards the centre of the path."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: which pulls more?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 2
+      },
+      "prompt": "In space, far from other bodies, there are two boulders. The mass of one is $10\\,\\text{t}$ and the other $2\\,\\text{t}$, and the distance between their centres is $4.0\\,\\text{m}$. On which boulder does the greater gravitational force act?",
+      "choices": [
+        {
+          "text": "On the smaller one, because the larger boulder pulls harder.",
+          "feedback": "The values of the model disprove this: a force of $83.4\\,\\mu\\text{N}$ acts on each boulder, and the force arrows are equally long. Gravitation is an interaction between two bodies, so by Newton's third law the forces are equal. The difference in mass shows in the accelerations: the smaller boulder accelerates five times as much, $41.7\\,\\text{nm/s}^2$, while the larger one accelerates at $8.34\\,\\text{nm/s}^2$."
+        },
+        {
+          "text": "The same force acts on both.",
+          "correct": true,
+          "feedback": "The values of the model support this: a force of $83.4\\,\\mu\\text{N}$ acts on each boulder, and the forces stay equal to each other even when the mass of one is changed. The forces are an interaction pair (Newton's third law). The accelerations, on the other hand, are different: the smaller boulder accelerates at $41.7\\,\\text{nm/s}^2$, the larger only at $8.34\\,\\text{nm/s}^2$."
+        },
+        {
+          "text": "On the larger one, because the greater mass pulls more.",
+          "feedback": "The values of the model disprove this: a force of $83.4\\,\\mu\\text{N}$ acts on each boulder. The force depends on both masses together, on the product $m_1 m_2$, and it is the same for both bodies. A large mass shows in that the same force accelerates it less: the larger boulder accelerates at only $8.34\\,\\text{nm/s}^2$."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: moving farther away",
+      "justify": true,
+      "reveal": {
+        "after": "koe-2",
+        "min": 3
+      },
+      "prompt": "Two $10\\,\\text{t}$ boulders are at first $3.0\\,\\text{m}$ apart. How does the gravitational force between them change when the distance grows to $6.0\\,\\text{m}$?",
+      "choices": [
+        {
+          "text": "The force halves, because the distance doubles.",
+          "feedback": "The values of the model disprove this: the force falls from $742\\,\\mu\\text{N}$ to $185\\,\\mu\\text{N}$, that is, to a quarter. The force is not inversely proportional to the distance but to the square of the distance: doubling the distance makes the force $2^2 = 4$ times smaller."
+        },
+        {
+          "text": "The force falls to a quarter of the original.",
+          "correct": true,
+          "feedback": "The values of the model support this: the force falls from $742\\,\\mu\\text{N}$ to $185\\,\\mu\\text{N}$. The product $F r^2$ is about $6670\\,\\mu\\text{N}\\cdot\\text{m}^2$ at every distance, so $F$ is inversely proportional to the square of the distance."
+        },
+        {
+          "text": "The force stays the same, because the masses of the boulders do not change.",
+          "feedback": "The values of the model disprove this: the force falls from $742\\,\\mu\\text{N}$ to $185\\,\\mu\\text{N}$. The gravitational force depends on the distance as well as on the masses, and it weakens quickly as the bodies move apart."
+        },
+        {
+          "text": "The force almost disappears, because gravitation acts only nearby.",
+          "feedback": "The values of the model disprove this: at a distance of $6.0\\,\\text{m}$ the force is still $185\\,\\mu\\text{N}$ and at a distance of $10\\,\\text{m}$ it is $66.7\\,\\mu\\text{N}$. The gravitational force weakens as the distance grows, but it never becomes zero."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Two boulders in space. Change the masses and the distance, and compare the force arrows with each other and the acceleration arrows with each other.",
+      "howto": "The sliders change the masses $m_1$ and $m_2$ of the boulders and the distance $r$ between their centres. The red arrows above the boulders are the gravitational forces $\\overline{F}_1$ and $\\overline{F}_2$ acting on the boulders, and the orange arrows below them are the accelerations $\\overline{a}_1$ and $\\overline{a}_2$ of the boulders. The bars in the top right corner show the scale of the arrows. The scale changes when the forces or accelerations change a lot, but arrows of the same colour are always on the same scale. The graph collects a point from every distance you have visited; the points disappear when you change a mass or press *Clear graph*.",
+      "model": "The boulders are uniform stone spheres with a density of $3000\\,\\text{kg/m}^3$, drawn to scale. A spherically symmetric body attracts another as if its mass were at its centre, so the distance is measured between the centres. There are no other bodies nearby, so only the gravitation between the boulders acts on them. The picture shows the forces and accelerations at one instant: the boulders do not move, because with such tiny accelerations they would shift at most about $0.3\\,\\text{mm}$ in a minute. The numbers are values calculated by the model, not measurements.",
+      "calc": "The magnitude of the force is calculated from Newton's law of gravitation $F = \\gamma \\tfrac{m_1 m_2}{r^2}$, where $\\gamma = 6.674 \\cdot 10^{-11}\\,\\tfrac{\\text{N}\\cdot\\text{m}^2}{\\text{kg}^2}$ and the masses are converted to kilograms ($1\\,\\text{t} = 1000\\,\\text{kg}$). $F_1$ is the magnitude of the force acting on boulder 1 and $F_2$ that on boulder 2. The accelerations come from Newton's second law: $a_1 = \\tfrac{F_1}{m_1}$ and $a_2 = \\tfrac{F_2}{m_2}$. The forces are shown in micronewtons, $1\\,\\mu\\text{N} = 10^{-6}\\,\\text{N}$, and the accelerations in nanometres per second squared, $1\\,\\text{nm/s}^2 = 10^{-9}\\,\\text{m/s}^2$."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 1: only the mass of the second boulder changes",
+      "intro": "Test prediction 1. The mass of boulder 1, $m_1 = 10\\,\\text{t}$, and the distance $r = 4.0\\,\\text{m}$ stay constant. Change only the mass $m_2$ and record the forces and accelerations for at least two masses, for example $2\\,\\text{t}$, $6\\,\\text{t}$ and $10\\,\\text{t}$. Compare the forces $F_1$ and $F_2$ with each other. What happens to the accelerations?",
+      "initial": {
+        "m1": 10,
+        "m2": 2,
+        "r": 4
+      },
+      "locked": [
+        "m1",
+        "r"
+      ],
+      "vary": "m2",
+      "names": {
+        "m1": "mass of boulder 1, m₁",
+        "m2": "mass of boulder 2, m₂",
+        "r": "distance r"
+      },
+      "units": {
+        "m1": "t",
+        "m2": "t",
+        "r": "m"
+      },
+      "measure": [
+        {
+          "key": "F1",
+          "label": "F₁ (µN)"
+        },
+        {
+          "key": "F2",
+          "label": "F₂ (µN)"
+        },
+        {
+          "key": "a1",
+          "label": "a₁ (nm/s²)"
+        },
+        {
+          "key": "a2",
+          "label": "a₂ (nm/s²)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 2: only the distance changes",
+      "intro": "Test prediction 2. The mass of each boulder is $10\\,\\text{t}$ and stays constant. Change only the distance $r$ and record the force at at least three distances, for example $3.0\\,\\text{m}$, $6.0\\,\\text{m}$ and $9.0\\,\\text{m}$. At the same time, watch what kind of graph the points form.",
+      "initial": {
+        "m1": 10,
+        "m2": 10,
+        "r": 3
+      },
+      "locked": [
+        "m1",
+        "m2"
+      ],
+      "vary": "r",
+      "names": {
+        "m1": "mass of boulder 1, m₁",
+        "m2": "mass of boulder 2, m₂",
+        "r": "distance r"
+      },
+      "units": {
+        "m1": "t",
+        "m2": "t",
+        "r": "m"
+      },
+      "measure": [
+        {
+          "key": "F1",
+          "label": "F₁ (µN)"
+        }
+      ],
+      "min": 3,
+      "question": {
+        "type": "numeric",
+        "prompt": "How many times as large is the force at a distance of $3.0\\,\\text{m}$ as the force at a distance of $6.0\\,\\text{m}$? Calculate from the readings in your table.",
+        "answer": 4.0,
+        "unit": "",
+        "tolerance": 0.03,
+        "mistakes": [
+          {
+            "value": 2.0,
+            "feedback": "The ratio $2$ would mean that the force halves when the distance doubles. Divide the readings of the table again: $742\\,\\mu\\text{N} : 185\\,\\mu\\text{N}$."
+          },
+          {
+            "value": 0.25,
+            "feedback": "You divided the smaller force by the larger one. The question asks how many times as large the force is at the shorter distance, so divide the force at $3.0\\,\\text{m}$ by the force at $6.0\\,\\text{m}$."
+          }
+        ],
+        "solution": "**Given:** simulation readings $F(3.0\\,\\text{m}) = 742\\,\\mu\\text{N}$ and $F(6.0\\,\\text{m}) = 185\\,\\mu\\text{N}$, when $m_1 = m_2 = 10\\,\\text{t}$\n\n**Find:** the ratio of the forces $\\tfrac{F(3.0\\,\\text{m})}{F(6.0\\,\\text{m})}$, without a unit\n\n**Principle:** The masses stay the same, so the ratio tells how the distance alone affects the force. The ratio of two values of the same quantity is calculated by dividing the readings by each other.\n\n**Formula:** ratio $= \\dfrac{F(3.0\\,\\text{m})}{F(6.0\\,\\text{m})}$\n\n**Conversions:** None needed: both forces are in micronewtons, and the unit cancels.\n\n**Substitution:** ratio $= \\dfrac{742\\,\\mu\\text{N}}{185\\,\\mu\\text{N}} = 4.01$\n\n**Answer:** $4.0$: the force at the shorter distance is four times as large. Two significant figures are enough, because the readings are rounded to three figures.\n\n**Reasonableness:** By the law of gravitation $F \\propto \\tfrac{1}{r^2}$, so halving the distance from $6.0\\,\\text{m}$ to $3.0\\,\\text{m}$ makes the force $2^2 = 4$ times as large. Also $F r^2$ is the same in both: $742 \\cdot 9.0 \\approx 185 \\cdot 36 \\approx 6670\\,\\mu\\text{N}\\cdot\\text{m}^2$."
+      }
+    },
+    {
+      "id": "kuukoe",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Newton's Moon test",
+      "optional": true,
+      "source": "statistics",
+      "source_note": "NASA, Moon Fact Sheet and Earth Fact Sheet (nssdc.gsfc.nasa.gov), read in 2026",
+      "text": "Newton tested his law of gravitation by comparing the accelerations of the apple and the Moon. If the Earth's pull weakens with the square of the distance, the Moon's acceleration should be $\\tfrac{1}{60^2}$ of the acceleration due to gravity, because the Moon is about $60$ Earth radii from the Earth's centre.\n\n| quantity | value |\n|---|---|\n| radius of the Earth $R$ | $6378\\,\\text{km}$ |\n| mean distance of the Moon from the Earth's centre $r$ | $384\\,400\\,\\text{km}$ |\n| orbital period of the Moon $T$ | $27.32\\,\\text{d}$ |\n| gravitational field strength on the Earth's surface $g$ | $9.80\\,\\text{m/s}^2$ |\n\nThe acceleration of the Moon can be calculated from its orbit as in the chapter *Uniform circular motion and centripetal acceleration*, when the orbit is assumed to be a circle.",
+      "question": {
+        "type": "numeric",
+        "prompt": "Calculate the centripetal acceleration of the Moon $a_\\text{n} = \\tfrac{v^2}{r}$, when the orbital speed of the Moon is $v = \\tfrac{2\\pi r}{T}$. Give the answer in $\\text{mm/s}^2$.",
+        "answer": 2.72,
+        "unit": "mm/s²",
+        "tolerance": 0.02,
+        "hints": [
+          "First convert the distance to metres and the period to seconds: $1\\,\\text{d} = 24 \\cdot 3600\\,\\text{s}$.",
+          "Substituting $v = \\tfrac{2\\pi r}{T}$ gives $a_\\text{n} = \\tfrac{4\\pi^2 r}{T^2}$.",
+          "$a_\\text{n} = \\dfrac{4\\pi^2 \\cdot 3.844 \\cdot 10^{8}\\,\\text{m}}{(2.3604 \\cdot 10^{6}\\,\\text{s})^2}$"
+        ],
+        "mistakes": [
+          {
+            "value": 0.00272,
+            "feedback": "Your number is correct in metres per second squared. The answer is asked in $\\text{mm/s}^2$: $1\\,\\text{m/s}^2 = 1000\\,\\text{mm/s}^2$."
+          },
+          {
+            "value": 2.72e-06,
+            "feedback": "The distance was left in kilometres. Convert $r = 384\\,400\\,\\text{km} = 3.844 \\cdot 10^{8}\\,\\text{m}$ before substituting."
+          }
+        ],
+        "solution": "**Given:** mean distance of the Moon $r = 384\\,400\\,\\text{km}$, orbital period $T = 27.32\\,\\text{d}$; for comparison $g = 9.80\\,\\text{m/s}^2$ and $R = 6378\\,\\text{km}$\n\n**Find:** the centripetal acceleration of the Moon $a_\\text{n}$ in $\\text{mm/s}^2$\n\n**Principle:** The Moon moves round the Earth at a nearly constant speed along a nearly circular path, so it has a centripetal acceleration towards the Earth's centre. The orbital speed is obtained from the distance and the time of one revolution.\n\n**Formula:** $a_\\text{n} = \\tfrac{v^2}{r}$ and $v = \\tfrac{2\\pi r}{T}$, so $a_\\text{n} = \\dfrac{4\\pi^2 r}{T^2}$\n\n**Conversions:** $r = 384\\,400\\,\\text{km} = 3.844 \\cdot 10^{8}\\,\\text{m}$; $T = 27.32 \\cdot 24 \\cdot 3600\\,\\text{s} = 2.3604 \\cdot 10^{6}\\,\\text{s}$; finally $1\\,\\text{m/s}^2 = 1000\\,\\text{mm/s}^2$\n\n**Substitution:** $a_\\text{n} = \\dfrac{4\\pi^2 \\cdot 3.844 \\cdot 10^{8}\\,\\text{m}}{(2.3604 \\cdot 10^{6}\\,\\text{s})^2} = 2.724 \\cdot 10^{-3}\\,\\text{m/s}^2 = 2.724\\,\\text{mm/s}^2$\n\n**Answer:** $2.72\\,\\text{mm/s}^2$, three significant figures as in the distance and the period.\n\n**Reasonableness:** The prediction of the inverse-square law is $g \\cdot \\left(\\tfrac{R}{r}\\right)^2 = 9.80\\,\\text{m/s}^2 \\cdot \\left(\\tfrac{6378}{384\\,400}\\right)^2 \\approx 2.70\\,\\text{mm/s}^2$. The values differ by less than one per cent, so the same pull of the Earth that makes the apple fall is enough to explain the motion of the Moon."
+      }
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion: forces, accelerations and distance",
+      "after": [
+        "koe-1",
+        "koe-2"
+      ],
+      "prompt": "Based on your tables, write: how do the forces acting on the boulders compare with each other? Why are the accelerations of the boulders different, and which boulder's acceleration stayed the same in experiment 1? How does the force change when the distance doubles or triples?",
+      "model": "In experiment 1 an equal force acted on both boulders every time: $83.4\\,\\mu\\text{N}$ when $m_2 = 2\\,\\text{t}$ and $250\\,\\mu\\text{N}$ when $m_2 = 6\\,\\text{t}$. The force grew in the same proportion as $m_2$. The acceleration $a = \\tfrac{F}{m}$ was greater for the lighter boulder. The acceleration of boulder 2 stayed the same, $41.7\\,\\text{nm/s}^2$, although its mass changed: when the mass grows, the force grows in the same proportion, so the acceleration of a body does not depend on its own mass. In experiment 2 the force fell to a quarter when the distance doubled ($742\\,\\mu\\text{N}$ and $185\\,\\mu\\text{N}$) and to a ninth when it tripled ($82.4\\,\\mu\\text{N}$). The product $F r^2$ stayed the same, so the force is inversely proportional to the square of the distance. The numbers are values calculated by the model.",
+      "criteria": [
+        "I state, based on the numbers, that the forces $F_1$ and $F_2$ are always equal.",
+        "I explain the difference in the accelerations with the equation $a = \\tfrac{F}{m}$ and notice that the acceleration of boulder 2 does not depend on its own mass.",
+        "I use the numbers to say that doubling the distance reduces the force to a quarter and tripling it to a ninth.",
+        "I mention that the numbers are values calculated by the model."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava",
+        "Painovoima ja gravitaatiokenttä",
+        "Gravitaatio maailmankaikkeudessa"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Return to your predictions",
+      "optional": true,
+      "prompt": "Compare your predictions with the values of the model in the experiments and with the law of gravitation. Then return to the opening question: does the apple pull the Earth, and why does the Earth not move towards the apple?",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2"
+      ]
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "etsi-virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the error",
+      "optional": true,
+      "prompt": "A student calculated the gravitational field strength at a height of $300\\,\\text{km}$ above the Earth's surface like this: $g = \\gamma \\tfrac{M}{r^2} = 6.674 \\cdot 10^{-11}\\,\\tfrac{\\text{N}\\cdot\\text{m}^2}{\\text{kg}^2} \\cdot \\tfrac{5.97 \\cdot 10^{24}\\,\\text{kg}}{(3.0 \\cdot 10^{5}\\,\\text{m})^2} \\approx 4400\\,\\text{m/s}^2$. What is wrong with the solution?",
+      "choices": [
+        {
+          "text": "The distance is measured from the Earth's centre, so $r = 6378\\,\\text{km} + 300\\,\\text{km}$.",
+          "correct": true,
+          "feedback": "Correct. The Earth attracts outside bodies as if its mass were at its centre, so $r = 6.678 \\cdot 10^{6}\\,\\text{m}$ and $g \\approx 8.93\\,\\text{m/s}^2$. The result $4400\\,\\text{m/s}^2$ is impossible, because the field strength decreases as you go up and cannot be greater than at the surface."
+        },
+        {
+          "text": "The height $300\\,\\text{km}$ was not converted to metres correctly.",
+          "feedback": "The conversion is correct: $300\\,\\text{km} = 3.0 \\cdot 10^{5}\\,\\text{m}$. The error is in where the distance is measured from: in the law of gravitation $r$ is the distance from the Earth's centre, not from its surface."
+        },
+        {
+          "text": "The formula is missing the mass $m$ of the body, which must be multiplied in.",
+          "feedback": "The field strength $g = \\gamma \\tfrac{M}{r^2}$ does not depend on the mass of the body in the field; the mass is needed only for the force $F = mg$. The error is in the distance: $r$ is measured from the Earth's centre."
+        },
+        {
+          "text": "The distance should not have been squared.",
+          "feedback": "The square belongs in the formula: the field strength is inversely proportional to the square of the distance. The error is that $r$ was measured from the Earth's surface and not from its centre."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply to a new situation",
+      "prompt": "A space probe rises straight up from the Earth's surface. At what height above the Earth's surface is the Earth's gravitational field strength half of its value at the surface? The radius of the Earth is $6378\\,\\text{km}$. Give the answer in kilometres.",
+      "answer": 2640,
+      "unit": "km",
+      "tolerance": 0.02,
+      "hints": [
+        "How does the field strength depend on the distance $r$ from the Earth's centre? Write the condition $g(r) = \\tfrac{1}{2} g(R)$ using the formula $g = \\gamma \\tfrac{M}{r^2}$.",
+        "$\\gamma \\tfrac{M}{r^2} = \\tfrac{1}{2} \\gamma \\tfrac{M}{R^2}$, so $r^2 = 2R^2$, that is, $r = \\sqrt{2}\\,R$. The height above the surface is $h = r - R$.",
+        "$h = (\\sqrt{2} - 1) R = 0.4142 \\cdot 6378\\,\\text{km}$."
+      ],
+      "mistakes": [
+        {
+          "value": 6378,
+          "feedback": "A distance of twice the radius from the centre, $r = 2R$, would reduce the field to a quarter, because $g \\propto \\tfrac{1}{r^2}$. Half is obtained when $r^2 = 2R^2$."
+        },
+        {
+          "value": 9020,
+          "feedback": "You calculated the distance $r = \\sqrt{2}\\,R$ from the Earth's centre. The question asks for the height above the surface: subtract the radius of the Earth."
+        }
+      ],
+      "solution": "**Given:** radius of the Earth $R = 6378\\,\\text{km}$; the field strength at height $h$ is half of its value at the surface\n\n**Find:** the height $h$ above the Earth's surface in kilometres\n\n**Principle:** The Earth's gravitational field strength is $g = \\gamma \\tfrac{M}{r^2}$, where $r$ is the distance from the Earth's centre, because the Earth attracts as if its mass were at its centre. On the surface $r = R$, at height $h$ it is $r = R + h$. The mass of the Earth is not needed, because it cancels.\n\n**Formula:** $\\gamma \\dfrac{M}{(R + h)^2} = \\dfrac{1}{2} \\gamma \\dfrac{M}{R^2}$, so $(R + h)^2 = 2R^2$ and $h = (\\sqrt{2} - 1) R$\n\n**Conversions:** None needed: the radius is in kilometres, and the answer is asked in kilometres.\n\n**Substitution:** $h = (\\sqrt{2} - 1) \\cdot 6378\\,\\text{km} = 0.41421 \\cdot 6378\\,\\text{km} = 2641.9\\,\\text{km}$\n\n**Answer:** $2640\\,\\text{km}$ to three significant figures; with four figures of the radius the result would be $2642\\,\\text{km}$.\n\n**Reasonableness:** Check: $\\left(\\tfrac{6378}{6378 + 2642}\\right)^2 = \\left(\\tfrac{6378}{9020}\\right)^2 = 0.500$. The height is smaller than the radius of the Earth, which fits the fact that twice the distance from the centre would already reduce the field to a quarter."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise at three levels. The level 1 tasks use the law of gravitation or the formula for the field strength directly, in the level 2 tasks another quantity is solved from the formula or two steps are combined, and level 3 requires reasoning."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Mass and weight",
+      "prompt": "An astronaut whose mass with equipment is $80\\,\\text{kg}$ on the Earth lands on the surface of the Moon. Which statement is correct on the Moon's surface?",
+      "choices": [
+        {
+          "text": "The mass is still $80\\,\\text{kg}$, but the weight is about $130\\,\\text{N}$, one sixth of the value on the Earth.",
+          "correct": true,
+          "feedback": "Correct. Mass tells the amount of matter and does not depend on place. The weight $G = mg$ depends on the field strength: on the Moon $80\\,\\text{kg} \\cdot 1.62\\,\\text{m/s}^2 \\approx 130\\,\\text{N}$, on the Earth $80\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 \\approx 785\\,\\text{N}$."
+        },
+        {
+          "text": "The mass is about $13\\,\\text{kg}$, because the Moon's gravity is about one sixth of the Earth's gravity.",
+          "feedback": "Mass does not change when a body moves to another place. The Moon's weaker field reduces the weight $G = mg$, not the mass: the astronaut's mass is $80\\,\\text{kg}$ on the Moon too."
+        },
+        {
+          "text": "The mass and weight are the same as on the Earth, because the gravitational constant is the same everywhere.",
+          "feedback": "The gravitational constant $\\gamma$ is the same everywhere, but the field strength $g = \\gamma \\tfrac{M}{R^2}$ depends on the mass and radius of the celestial body. On the Moon $g = 1.62\\,\\text{m/s}^2$, so the weight is smaller."
+        },
+        {
+          "text": "The weight is zero, because the Moon has no atmosphere to press on the astronaut.",
+          "feedback": "Weight does not come from the atmosphere; it is the gravitational force between the Moon and the astronaut. The Moon pulls the astronaut with a force of about $130\\,\\text{N}$ even though there is no air."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Change of the force",
+      "prompt": "The gravitational force between two bodies is $12\\,\\text{N}$. The mass of one body is tripled, and the distance between the centres of the bodies is doubled. How large is the gravitational force now? Give the answer in newtons.",
+      "answer": 9.0,
+      "unit": "N",
+      "tolerance": 0.02,
+      "hints": [
+        "How does the force change when only the mass is tripled? And when only the distance is doubled?",
+        "$F \\propto m_1 m_2$ and $F \\propto \\tfrac{1}{r^2}$, so the new force is $F' = F \\cdot \\tfrac{3}{2^2}$.",
+        "$F' = 12\\,\\text{N} \\cdot \\tfrac{3}{4}$."
+      ],
+      "mistakes": [
+        {
+          "value": 18,
+          "feedback": "You divided by two. The distance is squared in the formula, so doubling the distance reduces the force to a quarter, not to a half."
+        },
+        {
+          "value": 144,
+          "feedback": "You multiplied by four. The distance is in the denominator of the formula, so the force decreases as the distance grows: divide by $2^2 = 4$."
+        }
+      ],
+      "solution": "**Given:** original force $F = 12\\,\\text{N}$; second mass $3m_2$; distance $2r$\n\n**Find:** the new gravitational force $F'$ in newtons\n\n**Principle:** By Newton's law of gravitation the force is directly proportional to each mass and inversely proportional to the square of the distance. When the ratio of the new and old forces is calculated, $\\gamma$, $m_1$, $m_2$ and $r$ cancel.\n\n**Formula:** $\\dfrac{F'}{F} = \\dfrac{\\gamma \\tfrac{m_1 \\cdot 3m_2}{(2r)^2}}{\\gamma \\tfrac{m_1 m_2}{r^2}} = \\dfrac{3}{4}$, so $F' = \\dfrac{3}{4} F$\n\n**Conversions:** None needed: the force is in newtons, and the ratio has no unit.\n\n**Substitution:** $F' = \\tfrac{3}{4} \\cdot 12\\,\\text{N} = 9.0\\,\\text{N}$\n\n**Answer:** $9.0\\,\\text{N}$, two significant figures as in the force $12\\,\\text{N}$.\n\n**Reasonableness:** Tripling the mass alone would give $36\\,\\text{N}$ and doubling the distance alone $3.0\\,\\text{N}$. Together the effects almost cancel, so the force is a little smaller than at the start, as $9.0\\,\\text{N}$ is."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Gravitation and the structures of the universe",
+      "prompt": "Gravitation is the weakest of the fundamental interactions. Explain why it is gravitation that has gathered stars and galaxies out of gas, although the electric interaction is much stronger.",
+      "model": "Gravitation is always attractive: every mass adds to the pull, and nothing cancels it. In the electric interaction positive and negative charges cancel each other's effects, so large bodies and gas clouds are nearly neutral and the electric force does not gather them together. Gravitation also reaches far, because $F \\propto \\tfrac{1}{r^2}$ becomes smaller but never becomes zero. When there is a place in the gas where there is slightly more matter than usual, it pulls its surroundings harder and keeps growing. In this way the condensations grew into clouds that collapsed into stars, and the stars gathered into galaxies.",
+      "criteria": [
+        "I say that gravitation is always attractive and does not cancel, unlike the electric interaction.",
+        "I say that large bodies are nearly electrically neutral.",
+        "I mention that gravitation reaches far, because $\\tfrac{1}{r^2}$ does not become zero.",
+        "I explain how a denser place pulls in more matter and grows into a star or a galaxy."
+      ]
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, two quick questions. Answer first by yourself and open the answer only afterwards."
+    }
+  ]
+}

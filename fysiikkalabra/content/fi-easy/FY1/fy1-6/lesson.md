@@ -1,4 +1,4 @@
-# Putoamiskiihtyvyys: v = gt
+# Putoamiskiihtyvyys: $v = gt$
 
 > **Miksi** astronautti Kuussa pudotti vasaran ja höyhenen samaan aikaan ja ne osuivat maahan yhtä aikaa, vaikka Maassa höyhen leijailee hitaasti alas?
 

@@ -1,0 +1,10 @@
+[
+  {
+    "q": "How large is the gravitational force between two bodies of mass $1.0\\,\\text{kg}$ when their centres are $1.0\\,\\text{m}$ apart?",
+    "a": "$F = \\gamma \\tfrac{m_1 m_2}{r^2} = 6.674 \\cdot 10^{-11}\\,\\tfrac{\\text{N}\\cdot\\text{m}^2}{\\text{kg}^2} \\cdot \\tfrac{1.0\\,\\text{kg} \\cdot 1.0\\,\\text{kg}}{(1.0\\,\\text{m})^2} \\approx 6.7 \\cdot 10^{-11}\\,\\text{N}$. The numerical value of the gravitational constant is exactly the magnitude of this force in newtons, and the force is so small that it is not noticed in everyday life."
+  },
+  {
+    "q": "Why do a heavy and a light stone fall in a vacuum with the same acceleration, although a greater gravitational force acts on the heavier one?",
+    "a": "The gravitational force $F = \\gamma \\tfrac{Mm}{R^2}$ is directly proportional to the mass $m$ of the stone, but the inertia of the stone also grows with its mass. The acceleration $a = \\tfrac{F}{m} = \\gamma \\tfrac{M}{R^2} = g$ therefore does not depend on the mass of the stone."
+  }
+]

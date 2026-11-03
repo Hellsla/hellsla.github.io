@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Karuselli tekee $15$ kierrosta minuutissa. Mikä on sen pyörimistaajuus yksikössä $\\tfrac{1}{\\text{s}}$ ja kierrosaika?",
+    "a": "$f = 15\\,\\tfrac{1}{\\text{min}} = \\dfrac{15}{60\\,\\text{s}} = 0{,}25\\,\\tfrac{1}{\\text{s}}$ ja $T = \\dfrac{1}{f} = \\dfrac{1}{0{,}25\\,\\tfrac{1}{\\text{s}}} = 4{,}0\\,\\text{s}$."
+  },
+  {
+    "q": "Pyörivän levyn kohta A on $3{,}0\\,\\text{cm}$:n ja kohta B $9{,}0\\,\\text{cm}$:n päässä akselista. Kuinka moninkertainen on B:n ratanopeus A:n ratanopeuteen verrattuna?",
+    "a": "Kolminkertainen. Kohdilla on sama kierrosaika, ja ratanopeus $v = \\tfrac{2\\pi r}{T}$ on silloin suoraan verrannollinen säteeseen. Etäisyyksien suhde on siis ratanopeuksien suhde:\n\n$\\dfrac{9{,}0\\,\\text{cm}}{3{,}0\\,\\text{cm}} = 3{,}0$."
+  }
+]

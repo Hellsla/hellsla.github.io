@@ -108,7 +108,7 @@ Hyötysuhde $\eta$ (eeta) on hyötyenergian ja laitteeseen otetun energian suhde
 ```
 Tässä $\eta$ on hyötysuhde (suhdeluku, usein prosentteina), $E_\text{a}$ laitteen antama hyötyenergia (J), $E_\text{o}$ laitteeseen otettu energia (J), $P_\text{a}$ hyötyteho (W) ja $P_\text{o}$ laitteeseen otettu teho (W). Suhdeluvun muutat prosenteiksi kertomalla sen luvulla $100\,\%$. Esimerkki: $0{,}30 \cdot 100\,\% = 30\,\%$. Kertominen ei muuta lukua, koska $1\,\% = 0{,}01$ ja siis $100\,\% = 100 \cdot 0{,}01 = 1$.
 
-Tehojen suhde on sama kuin energioiden suhde. Tasaisella teholla energia on nimittäin teho kerrottuna ajalla (luku *Teho P = ΔE/Δt*). Laite käy ajan $t$. Silloin energiat ovat $E_\text{a} = P_\text{a} \cdot t$ ja $E_\text{o} = P_\text{o} \cdot t$, ja aika supistuu:
+Tehojen suhde on sama kuin energioiden suhde. Tasaisella teholla energia on nimittäin teho kerrottuna ajalla (luku *Teho: $P = \Delta E/\Delta t$*). Laite käy ajan $t$. Silloin energiat ovat $E_\text{a} = P_\text{a} \cdot t$ ja $E_\text{o} = P_\text{o} \cdot t$, ja aika supistuu:
 ```latex
 \begin{aligned}
 \eta &= \frac{E_\text{a}}{E_\text{o}} \\

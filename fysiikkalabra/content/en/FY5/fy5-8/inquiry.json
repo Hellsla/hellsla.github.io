@@ -1,0 +1,519 @@
+{
+  "version": 1,
+  "contribution": "The force of a spring is interpreted as a harmonic force $F = -kx$, whose minus sign gives the direction towards the equilibrium position both when the spring is stretched and when it is compressed; the force of the spring on an object is distinguished from the force that stretches the spring by means of Newton's third law; the spring constant is determined from the gradient of the $(x, F_\\text{v})$ measurement graph, and the elastic potential energy, mentioned only qualitatively in FY4, is calculated as the area of the triangle under the graph, $E_\\text{p} = \\tfrac{1}{2}kx^2$. The period of the oscillation is left to the next chapter.",
+  "learn": [
+    "recognise a harmonic force and work out its direction.",
+    "determine the spring constant from the gradient of a measurement graph.",
+    "calculate the magnitude of a harmonic force and the elastic potential energy of a spring."
+  ],
+  "prior": [
+    "In periodic motion an object moves back and forth on both sides of the equilibrium position (chapter *Periodic motion*)",
+    "Two objects exert forces of equal magnitude and opposite direction on each other (chapter *Interaction and force: Newton's first and third laws*)",
+    "A stretched spring has elastic potential energy (chapter *Kinetic energy, potential energy and mechanical energy*)",
+    "Fitting a straight line to measurement points and reading the gradient (chapter *Graphing and fitting a straight line*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "In a pinball machine the ball is shot onto the playing field by a launcher. The player pulls the plunger knob back, which compresses the plunger's spring, and lets go. A short pull sends the ball out gently, a long pull so fast that the ball goes round the whole field. When you hold the knob still, you can feel the spring in your hand.",
+      "question": "In which direction does the spring push the plunger, and how much more energy is stored in the spring when the compression is doubled?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Recap: Newton's third law",
+      "optional": true,
+      "prompt": "A hand pulls the end of a spring fixed to a wall to the right with a force of $5.0\\,\\text{N}$, and the spring is at rest. With what force and in which direction does the spring pull the hand?",
+      "choices": [
+        {
+          "text": "With a force of $5.0\\,\\text{N}$ to the left.",
+          "correct": true,
+          "feedback": "Correct. As you learned in the chapter *Interaction and force: Newton's first and third laws*, two objects exert forces of equal magnitude and opposite direction on each other. The force of the hand acts on the spring, the force of the spring on the hand. In this chapter that distinction is important."
+        },
+        {
+          "text": "With no force, because the spring is at rest.",
+          "feedback": "The forces on a spring at rest cancel each other, but the spring still acts on both of its ends. By Newton's third law the spring pulls the hand with a force of equal magnitude, $5.0\\,\\text{N}$, in the opposite direction, that is to the left."
+        },
+        {
+          "text": "With a force of $5.0\\,\\text{N}$ to the right.",
+          "feedback": "The forces of an interaction have opposite directions. The hand pulls the spring to the right, so the spring pulls the hand to the left with a force of the same magnitude, $5.0\\,\\text{N}$."
+        },
+        {
+          "text": "With a smaller force to the left, because the spring stretches.",
+          "feedback": "Stretching does not reduce the reaction force. By Newton's third law the forces are always equal in magnitude: the spring pulls the hand to the left with a force of $5.0\\,\\text{N}$."
+        }
+      ]
+    },
+    {
+      "id": "pred-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: compressed spring",
+      "justify": true,
+      "reveal": {
+        "after": "exp-1",
+        "min": 2
+      },
+      "prompt": "A trolley is attached to a horizontal spring whose other end is fixed to a wall on the left of the trolley. You push the trolley to the left so that the spring is compressed, and hold the trolley still. In which direction does the force of the spring on the trolley point?",
+      "choices": [
+        {
+          "text": "To the right, towards the point where the spring is at its rest length.",
+          "correct": true,
+          "feedback": "Correct. A compressed spring pushes the trolley away from the wall, towards the equilibrium position. In the values of the model, spring B gives a force $F = +5.0\\,\\text{N}$ at $x = -0.10\\,\\text{m}$ and a force $F = -5.0\\,\\text{N}$ at $x = 0.10\\,\\text{m}$: the sign of the force is always opposite to the sign of the displacement."
+        },
+        {
+          "text": "To the left, in the same direction in which you pushed the trolley.",
+          "feedback": "The force of the hand points to the left. The spring resists the compression and pushes the trolley to the right, towards the equilibrium position. In the simulation's table at $x = -0.10\\,\\text{m}$ the force of the spring is $F = +5.0\\,\\text{N}$ and the force of the hand is $F_\\text{k} = -5.0\\,\\text{N}$."
+        },
+        {
+          "text": "The spring does not act on the trolley, because the trolley is at rest.",
+          "feedback": "The trolley is at rest because the forces on it cancel each other, not because there would be no forces. The compressed spring pushes the trolley to the right, and the hand pushes to the left with a force of the same magnitude: in the values of the model $+5.0\\,\\text{N}$ and $-5.0\\,\\text{N}$ at $x = -0.10\\,\\text{m}$."
+        }
+      ]
+    },
+    {
+      "id": "pred-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: double the displacement",
+      "justify": true,
+      "reveal": {
+        "after": "exp-1",
+        "min": 4
+      },
+      "prompt": "When the trolley is moved $5\\,\\text{cm}$ from the equilibrium position, the magnitude of the spring force is $2.5\\,\\text{N}$. How large is it when the trolley is moved $10\\,\\text{cm}$ in the same direction?",
+      "choices": [
+        {
+          "text": "$5.0\\,\\text{N}$",
+          "correct": true,
+          "feedback": "Correct. The magnitude of the spring force is directly proportional to the displacement: double the displacement gives double the force. In the values of the model, spring B gives forces $-2.5$, $-5.0$ and $-10\\,\\text{N}$ at $0.05$, $0.10$ and $0.20\\,\\text{m}$, and the points of the graph lie on a straight line through the origin."
+        },
+        {
+          "text": "$10\\,\\text{N}$",
+          "feedback": "The force does not grow with the square of the displacement. In the simulation's readings spring B gives a force $-2.5\\,\\text{N}$ at $0.05\\,\\text{m}$ and $-5.0\\,\\text{N}$ at $0.10\\,\\text{m}$: double the displacement, double the force. It is the elastic potential energy that grows with the square."
+        },
+        {
+          "text": "$2.5\\,\\text{N}$",
+          "feedback": "The force of the spring does not stay the same but grows as the spring stretches. In the simulation's readings spring B gives a force $-5.0\\,\\text{N}$ at $0.10\\,\\text{m}$, twice as large as at $0.05\\,\\text{m}$."
+        },
+        {
+          "text": "$3.5\\,\\text{N}$",
+          "feedback": "The force grows more than that: the magnitude of the spring force is directly proportional to the displacement. In the simulation's readings spring B gives a force $-5.0\\,\\text{N}$ at $0.10\\,\\text{m}$, double that at $0.05\\,\\text{m}$."
+        }
+      ]
+    },
+    {
+      "id": "pred-3",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 3: energy of the spring",
+      "justify": true,
+      "reveal": {
+        "after": "exp-2",
+        "min": 3
+      },
+      "prompt": "When a spring is stretched $5\\,\\text{cm}$, elastic potential energy $E$ is stored in it. How much energy is stored when the same spring is stretched $10\\,\\text{cm}$?",
+      "choices": [
+        {
+          "text": "$4E$",
+          "correct": true,
+          "feedback": "Correct. In the simulation's readings the energy of spring B is about $0.063\\,\\text{J}$ at an extension of $0.05\\,\\text{m}$ and $0.250\\,\\text{J}$ at $0.10\\,\\text{m}$, four times as much. With double the extension the force is also doubled, and the triangle of the graph is twice as wide and twice as tall."
+        },
+        {
+          "text": "$2E$",
+          "feedback": "The extension doubles, but the stretching force doubles with it. So the triangle of the graph is twice as wide and twice as tall, and its area is four times as large: in the simulation $0.063\\,\\text{J}$ grows to $0.250\\,\\text{J}$."
+        },
+        {
+          "text": "$E$",
+          "feedback": "A spring does not always store the same energy. The more the spring is stretched, the more work the stretching force does: in the simulation the energy of spring B grows from $0.063\\,\\text{J}$ to $0.250\\,\\text{J}$ when the extension grows from $0.05\\,\\text{m}$ to $0.10\\,\\text{m}$."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "A trolley is attached to a spring on a frictionless track, and a hand holds it still. Move the trolley, change the spring and follow the forces, the readings and the graph.",
+      "howto": "Choose the position $x$ of the trolley with the slider and the spring from the *Spring* menu. At the equilibrium position $x = 0$ the spring is at its rest length; $x > 0$ stretches and $x < 0$ compresses the spring. A point stays on the graph for every position you choose, and the current point is red. *Clear the graph* removes the points of the chosen spring. The readings update at once.",
+      "model": "The values are model values calculated by the simulation. The track is frictionless, and the trolley is at rest because the hand holds it still. The picture shows only the horizontal forces on the trolley; the weight and the support force of the track cancel each other. The spring constants of the springs are model values that are not shown. In the model the spring obeys its law over the whole range of the controls, and it cannot be stretched permanently.",
+      "calc": "For a horizontal spring the origin is at the equilibrium position, where the spring is at its rest length, and the $x$-axis points to the right. The force of the spring on the trolley is $F = -kx$. The trolley is at rest, so the force of the hand on the trolley is $F_\\text{k} = -F = kx$ (the subscripts k and v come from the Finnish words *käsi*, hand, and *venyttävä*, stretching). The trolley pulls or pushes the spring with a force of equal magnitude, so the force that stretches the spring is $F_\\text{v} = kx$; when the spring is compressed it is negative. The vertical axis of the graph shows $F_\\text{v}$. The elastic potential energy is $E_\\text{p} = \\tfrac{1}{2}kx^2$, the area of the triangle of the graph. The length of the force arrows is $6$ pixels per newton."
+    },
+    {
+      "id": "exp-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 1: direction and magnitude of the force",
+      "intro": "Test predictions 1 and 2. The initial state chooses spring B. Change only the position $x$ of the trolley and record a measurement first with the spring compressed at $-0.10$ and $-0.05\\,\\text{m}$, then stretched at $0.05$, $0.10$ and $0.20\\,\\text{m}$. At each position look at which way the arrows point.",
+      "initial": {
+        "jousi": "B",
+        "x": 0
+      },
+      "names": {
+        "x": "position $x$",
+        "jousi": "spring"
+      },
+      "units": {
+        "x": "m"
+      },
+      "values": {
+        "jousi": {
+          "A": "A",
+          "B": "B",
+          "C": "C"
+        }
+      },
+      "locked": [
+        "jousi"
+      ],
+      "vary": "x",
+      "measure": [
+        {
+          "key": "F",
+          "label": "force of the spring $F$ (N)"
+        },
+        {
+          "key": "Fk",
+          "label": "force of the hand $F_\\text{k}$ (N)"
+        }
+      ],
+      "min": 4
+    },
+    {
+      "id": "exp-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 2: energy of the spring",
+      "intro": "Test prediction 3. The initial state chooses spring B. Record a measurement at $0.05$, $0.10$ and $0.20\\,\\text{m}$ and each time look at the coloured triangle of the graph. Finally record the position $-0.10\\,\\text{m}$ as well and compare the energy with that at $0.10\\,\\text{m}$.",
+      "initial": {
+        "jousi": "B",
+        "x": 0
+      },
+      "names": {
+        "x": "position $x$",
+        "jousi": "spring"
+      },
+      "units": {
+        "x": "m"
+      },
+      "values": {
+        "jousi": {
+          "A": "A",
+          "B": "B",
+          "C": "C"
+        }
+      },
+      "locked": [
+        "jousi"
+      ],
+      "vary": "x",
+      "measure": [
+        {
+          "key": "Fv",
+          "label": "stretching force $F_\\text{v}$ (N)"
+        },
+        {
+          "key": "Ep",
+          "label": "$E_\\text{p}$ (J)"
+        }
+      ],
+      "min": 3
+    },
+    {
+      "id": "exp-3",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 3: a stiff and a soft spring",
+      "optional": true,
+      "intro": "The initial state puts the trolley at $x = 0.10\\,\\text{m}$. Change only the spring and record a measurement with springs A, B and C. Finally compare which spring has the largest force at the same extension.",
+      "initial": {
+        "x": 0.1,
+        "jousi": "A"
+      },
+      "names": {
+        "x": "position $x$",
+        "jousi": "spring"
+      },
+      "units": {
+        "x": "m"
+      },
+      "values": {
+        "jousi": {
+          "A": "A",
+          "B": "B",
+          "C": "C"
+        }
+      },
+      "locked": [
+        "x"
+      ],
+      "vary": "jousi",
+      "measure": [
+        {
+          "key": "Fv",
+          "label": "stretching force $F_\\text{v}$ (N)"
+        }
+      ],
+      "min": 3,
+      "question": {
+        "type": "numeric",
+        "prompt": "Calculate the spring constant of spring C from the readings in the table.",
+        "answer": 80.0,
+        "unit": "N/m",
+        "tolerance": 0.02,
+        "hints": [
+          "What do the force $F_\\text{v}$ on the vertical axis of the graph and the extension $x$ tell you about the spring constant?",
+          "The stretching force is $F_\\text{v} = kx$, so $k = \\dfrac{F_\\text{v}}{x}$.",
+          "For spring C the table gives $F_\\text{v} = 8.0\\,\\text{N}$ when $x = 0.10\\,\\text{m}$."
+        ],
+        "mistakes": [
+          {
+            "value": 0.8,
+            "feedback": "Check the calculation and the units. The spring constant is the force divided by the extension in metres: $k = \\tfrac{8.0\\,\\text{N}}{0.10\\,\\text{m}}$, not $8.0\\,\\text{N}\\cdot 0.10\\,\\text{m}$ and not $\\tfrac{8.0\\,\\text{N}}{10\\,\\text{cm}}$."
+          }
+        ],
+        "solution": "**Given:** readings of spring C from the simulation: extension $x = 0.10\\,\\text{m}$ and stretching force $F_\\text{v} = 8.0\\,\\text{N}$ (model values)\n\n**Find:** the spring constant $k$ of spring C in $\\text{N/m}$\n\n**Principle:** The trolley is at rest, so the force that stretches the spring is equal to the magnitude of the spring force, and it is directly proportional to the extension. The constant of proportionality is the spring constant.\n\n**Formula:** $F_\\text{v} = kx$, so $k = \\dfrac{F_\\text{v}}{x}$\n\n**Conversions:** The extension is already in metres, so no conversions are needed.\n\n**Substitution:** $k = \\dfrac{8.0\\,\\text{N}}{0.10\\,\\text{m}} = 80\\,\\text{N/m}$\n\n**Answer:** $80\\,\\text{N/m}$, two significant figures like the reading $8.0\\,\\text{N}$.\n\n**Reasonableness:** Spring C gave the largest force at the same extension, so its spring constant must be the largest: for springs A and B the readings give $\\tfrac{2.0\\,\\text{N}}{0.10\\,\\text{m}} = 20\\,\\text{N/m}$ and $\\tfrac{5.0\\,\\text{N}}{0.10\\,\\text{m}} = 50\\,\\text{N/m}$. The points of spring C lie on the steepest straight line of the graph."
+      }
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion",
+      "after": [
+        "exp-1",
+        "exp-2"
+      ],
+      "prompt": "Use your measurements to explain in which direction the force of the spring points when the spring is stretched and when it is compressed, how its magnitude depends on the displacement, and how the elastic potential energy changes when the extension is doubled.",
+      "criteria": [
+        "The answer says that the force of the spring points towards the equilibrium position both when the spring is stretched and when it is compressed, and uses the signs in the table as evidence.",
+        "The answer says that double the displacement gives double the force, and names a pair of values from the table that shows it.",
+        "The answer says that double the extension gives four times the energy, and links this to the area of the triangle of the graph."
+      ],
+      "model": "In the table the force of the spring is negative when $x > 0$ and positive when $x < 0$: the force of spring B is $+5.0\\,\\text{N}$ at $-0.10\\,\\text{m}$ and $-5.0\\,\\text{N}$ at $0.10\\,\\text{m}$. So the force always points towards the equilibrium position, and the force of the hand is opposite to it. The magnitude of the force grows in direct proportion to the displacement: $0.05\\,\\text{m}$ gives $2.5\\,\\text{N}$, $0.10\\,\\text{m}$ gives $5.0\\,\\text{N}$ and $0.20\\,\\text{m}$ gives $10\\,\\text{N}$. The elastic potential energy in the values of the model is $0.063\\,\\text{J}$, $0.250\\,\\text{J}$ and $1.00\\,\\text{J}$, so double the extension gives four times the energy. The triangle of the graph is then twice as wide and twice as tall. Compressed by $0.10\\,\\text{m}$ the energy is the same $0.250\\,\\text{J}$ as when stretched."
+    },
+    {
+      "id": "theory",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "reflect",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Return to your predictions",
+      "optional": true,
+      "prompt": "Compare your predictions with the measurements and the theory. Also return to the pinball machine at the start: in which direction does the spring push the plunger, and how much more energy is stored in the spring when the compression is doubled?",
+      "predictions": [
+        "pred-1",
+        "pred-2",
+        "pred-3"
+      ]
+    },
+    {
+      "id": "example",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "mittaus",
+      "stage": "sovella",
+      "type": "interpret",
+      "title": "The spring constant from a measurement",
+      "source": "example",
+      "figure": "fy5-8/mittaus",
+      "text": "To measure a spring constant, weights are hung from the spring and the extension $x$ of the spring is measured with a ruler. When a weight hangs at rest, it pulls the spring with a force equal to its weight, so the stretching force is $F_\\text{v} = mg$. The table and the graph are made-up example data.\n\n| $m$ (g) | $50$ | $100$ | $150$ | $200$ | $250$ | $300$ |\n|---|---|---|---|---|---|---|\n| $F_\\text{v}$ (N) | $0.49$ | $0.98$ | $1.47$ | $1.96$ | $2.45$ | $2.94$ |\n| $x$ (cm) | $1.7$ | $3.2$ | $5.0$ | $6.4$ | $8.3$ | $9.8$ |",
+      "question": {
+        "type": "numeric",
+        "prompt": "Fit a straight line through the origin to the points of the graph by eye (place a ruler on the picture) and determine the spring constant of the spring from the gradient of the line.",
+        "answer": 30.0,
+        "unit": "N/m",
+        "tolerance": 0.07,
+        "hints": [
+          "Which quantity is the gradient of the line when the vertical axis shows the stretching force and the horizontal axis the extension?",
+          "Choose two points on the line that are far apart, for example the origin and the point where $x = 10.0\\,\\text{cm}$. Do not use two measurement points.",
+          "The line passes almost through the point $(10.0\\,\\text{cm};\\ 3.0\\,\\text{N})$. Convert the centimetres to metres before dividing."
+        ],
+        "mistakes": [
+          {
+            "value": 0.3,
+            "feedback": "You divided newtons by centimetres, so the unit is $\\text{N/cm}$. Convert the extension to metres: $10.0\\,\\text{cm} = 0.100\\,\\text{m}$."
+          },
+          {
+            "value": 3.06,
+            "feedback": "You used the mass instead of the force. The vertical axis of the graph shows the stretching force $F_\\text{v} = mg$ in newtons."
+          }
+        ],
+        "solution": "**Given:** the stretching forces $F_\\text{v} = mg$ of six weights and the extensions $x$ of the spring in the table and the graph (example data), $g = 9.81\\,\\text{m/s}^2$\n\n**Find:** the spring constant $k$ in $\\text{N/m}$\n\n**Principle:** A weight hanging at rest pulls the spring with a force equal to its weight. The stretching force is directly proportional to the extension, $F_\\text{v} = kx$, so the points of the $(x, F_\\text{v})$ graph lie close to a straight line through the origin, and the gradient of the line is the spring constant. The line passes through the origin because without a weight the spring does not stretch.\n\n**Reading the graph:** Because of measurement uncertainty the points do not lie exactly on one line, so the line is fitted so that there are points on both sides of it. The fitted line passes through the origin and the point $(10.0\\,\\text{cm};\\ 3.0\\,\\text{N})$. The gradient is read from these two points on the line, not from measurement points.\n\n**Formula:** $k = \\dfrac{\\Delta F_\\text{v}}{\\Delta x}$\n\n**Conversions:** $\\Delta x = 10.0\\,\\text{cm} = 10.0 \\cdot 0.01\\,\\text{m} = 0.100\\,\\text{m}$\n\n**Substitution:** $k = \\dfrac{3.0\\,\\text{N} - 0\\,\\text{N}}{0.100\\,\\text{m} - 0\\,\\text{m}} = 30\\,\\text{N/m}$\n\n**Answer:** $k \\approx 30\\,\\text{N/m}$, two significant figures, because the force $3.0\\,\\text{N}$ read from the graph is given to two figures.\n\n**Reasonableness:** Check from the table: the $300\\,\\text{g}$ weight gives $\\tfrac{2.94\\,\\text{N}}{0.098\\,\\text{m}} = 30\\,\\text{N/m}$. For the smallest weight the relative uncertainty of the extension $1.7\\,\\text{cm}$ is the largest, so the line is more reliable than a single point. A spring of about $30\\,\\text{N/m}$ is a soft school measuring spring: $1\\,\\text{N}$ stretches it about $3\\,\\text{cm}$."
+      }
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the error",
+      "fbd": "error",
+      "figure": "fy5-8/virhe",
+      "prompt": "An object hangs at rest from the lower end of a vertical spring. A student drew the free-body diagram of the object shown in the picture and reasoned: $\\overline{G}$ is the weight, $\\overline{F}_1$ is the force of the spring and $\\overline{F}_2$ is the force that stretches the spring. What is wrong in the diagram?",
+      "choices": [
+        {
+          "text": "The force $\\overline{F}_2$ acts on the spring, so it does not belong in the free-body diagram of the object.",
+          "correct": true,
+          "feedback": "Correct. The object pulls the spring with the force $\\overline{F}_2$, and the spring pulls the object with the force $\\overline{F}_1$: they are a Newton's third law pair, and only $\\overline{F}_1$ acts on the object. Without $\\overline{F}_2$ the weight and the force of the spring cancel each other, as they should at rest."
+        },
+        {
+          "text": "The force of the spring $\\overline{F}_1$ should point down, because the spring stretches downwards.",
+          "feedback": "A stretched spring pulls the object towards its equilibrium position, that is up, opposite to the extension. $\\overline{F}_1$ is correct. The error is the force $\\overline{F}_2$, which acts on the spring and not on the object."
+        },
+        {
+          "text": "The force of the spring $\\overline{F}_1$ should be twice as long as the weight.",
+          "feedback": "The object is at rest, so the forces on it must cancel each other: the force of the spring is equal to the weight. The fault of the diagram is that it also has the force $\\overline{F}_2$ acting on the spring."
+        },
+        {
+          "text": "The weight $\\overline{G}$ should start from the lower surface of the object.",
+          "feedback": "The weight acts at the centre of mass of the object, so it is drawn from the centre, as in the diagram. The error is the force $\\overline{F}_2$: it is the force of the object on the spring, and it does not belong in the free-body diagram of the object."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply to a new situation",
+      "prompt": "The spring of a pinball launcher has a spring constant of $250\\,\\text{N/m}$. The player pulls the plunger $6.0\\,\\text{cm}$ back, so that the spring is compressed by the same distance, and lets go. The spring sets the plunger and the $80\\,\\text{g}$ ball in front of it in motion, and the ball leaves the plunger when the spring is at its rest length. Friction, the mass of the plunger and the tilt of the table are neglected. At what speed does the ball leave?",
+      "answer": 3.354,
+      "unit": "m/s",
+      "tolerance": 0.02,
+      "hints": [
+        "Into what does the elastic potential energy change when the spring returns to its rest length?",
+        "The elastic potential energy changes into the kinetic energy of the ball: $\\tfrac{1}{2}kx^2 = \\tfrac{1}{2}mv^2$.",
+        "Solve $v = x\\sqrt{\\dfrac{k}{m}}$ and convert the centimetres and grams to SI units."
+      ],
+      "mistakes": [
+        {
+          "value": 4.743,
+          "feedback": "You used the expression $kx^2$ for the elastic potential energy. It has the factor $\\tfrac{1}{2}$, as does kinetic energy, so the factors cancel: $v = x\\sqrt{\\tfrac{k}{m}}$."
+        },
+        {
+          "value": 0.1061,
+          "feedback": "The mass must be converted to kilograms: $80\\,\\text{g} = 0.080\\,\\text{kg}$."
+        },
+        {
+          "value": 335.4,
+          "feedback": "The compression must be converted to metres: $6.0\\,\\text{cm} = 0.060\\,\\text{m}$."
+        }
+      ],
+      "solution": "**Given:** spring constant $k = 250\\,\\text{N/m}$, compression $x = 6.0\\,\\text{cm}$, mass of the ball $m = 80\\,\\text{g}$; the ball is initially at rest\n\n**Find:** the launch speed $v$ of the ball in $\\text{m/s}$\n\n**Principle:** There is no friction, the mass of the plunger is neglected and the table is horizontal, so mechanical energy is conserved: the elastic potential energy changes entirely into the kinetic energy of the ball. The ball leaves when the spring is at its rest length, when the energy of the spring is zero.\n\n**Formula:** $\\tfrac{1}{2}kx^2 = \\tfrac{1}{2}mv^2$, so $v = x\\sqrt{\\dfrac{k}{m}}$\n\n**Conversions:** $x = 6.0\\,\\text{cm} = 6.0 \\cdot 0.01\\,\\text{m} = 0.060\\,\\text{m}$ and $m = 80\\,\\text{g} = 80 \\cdot 0.001\\,\\text{kg} = 0.080\\,\\text{kg}$\n\n**Substitution:** $v = 0.060\\,\\text{m}\\cdot\\sqrt{\\dfrac{250\\,\\text{N/m}}{0.080\\,\\text{kg}}} = 0.060\\,\\text{m}\\cdot 55.90\\,\\tfrac{1}{\\text{s}} = 3.354\\,\\text{m/s}$\n\n**Answer:** $3.4\\,\\text{m/s}$, two significant figures like the compression $6.0\\,\\text{cm}$ and the mass $80\\,\\text{g}$.\n\n**Reasonableness:** The energy of the spring is $\\tfrac{1}{2}\\cdot 250\\,\\tfrac{\\text{N}}{\\text{m}}\\cdot(0.060\\,\\text{m})^2 = 0.45\\,\\text{J}$, and the kinetic energy of the ball is $\\tfrac{1}{2}\\cdot 0.080\\,\\text{kg}\\cdot(3.354\\,\\text{m/s})^2 \\approx 0.45\\,\\text{J}$, the same. About $12\\,\\text{km/h}$ is a believable launch speed for a pinball. Double the compression would give four times the energy and double the speed."
+    },
+    {
+      "id": "tehtavat",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise further on three levels. Convert centimetres and grams to SI units before substituting, and in force problems first think about which object each force acts on."
+    },
+    {
+      "id": "check-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept",
+      "prompt": "The expression $F = -kx$ has a minus sign. What does it tell you about the force of the spring?",
+      "choices": [
+        {
+          "text": "The force is always opposite to the displacement.",
+          "correct": true,
+          "feedback": "Correct. When $x > 0$ the force is negative, and when $x < 0$ it is positive. So the force always points towards the equilibrium position."
+        },
+        {
+          "text": "The force always points in the negative direction of the $x$-axis.",
+          "feedback": "Only when $x > 0$. When the spring is compressed, that is $x < 0$, $-kx$ is positive and the force points in the positive direction of the $x$-axis, towards the equilibrium position."
+        },
+        {
+          "text": "The force decreases when the displacement grows.",
+          "feedback": "The magnitude of the force $k|x|$ grows when the displacement grows. The minus sign does not tell the magnitude but the direction: the force is opposite to the displacement."
+        },
+        {
+          "text": "The spring constant is a negative number.",
+          "feedback": "The spring constant is always positive, and it tells the stiffness of the spring. The minus sign tells that the force is opposite to the displacement."
+        }
+      ]
+    },
+    {
+      "id": "check-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Sign and magnitude",
+      "prompt": "An object at the end of a spring is acted on by a spring force $F = -6.0\\,\\text{N}$ when the object is at $x = 0.12\\,\\text{m}$. The spring is horizontal, and the origin is at the equilibrium position, where the spring is at its rest length. How large is the spring force $F$, with its sign, when the object is at $x = -0.20\\,\\text{m}$?",
+      "answer": 10.0,
+      "unit": "N",
+      "tolerance": 0.02,
+      "hints": [
+        "First calculate the spring constant from the readings of the first situation.",
+        "$F = -kx$, so $k = -\\dfrac{F}{x}$.",
+        "$k = 50\\,\\text{N/m}$. Then substitute $x = -0.20\\,\\text{m}$ into the expression $F = -kx$."
+      ],
+      "mistakes": [
+        {
+          "value": -10.0,
+          "feedback": "The magnitude is correct but the sign is wrong. The object is on the negative side of the equilibrium position, so the force points in the positive direction: $F = -50\\,\\tfrac{\\text{N}}{\\text{m}}\\cdot(-0.20\\,\\text{m}) = +10\\,\\text{N}$."
+        },
+        {
+          "value": -6.0,
+          "feedback": "The force does not stay the same: its magnitude is directly proportional to the displacement, and its direction reverses when the object moves to the other side of the equilibrium position."
+        }
+      ],
+      "solution": "**Given:** $F_1 = -6.0\\,\\text{N}$ at $x_1 = 0.12\\,\\text{m}$; new position $x_2 = -0.20\\,\\text{m}$; horizontal spring, origin at the equilibrium position, that is at the rest length of the spring\n\n**Find:** the spring force $F_2$ with its sign, in $\\text{N}$\n\n**Principle:** The force of the spring is harmonic: $F = -kx$, and the spring constant is the same at both positions. The spring constant is obtained from the first situation. The sign tells the direction.\n\n**Formula:** $F_1 = -kx_1$, so $k = -\\dfrac{F_1}{x_1}$, and $F_2 = -kx_2$\n\n**Conversions:** The quantities are in SI units, so no conversions are needed.\n\n**Substitution:** $k = -\\dfrac{-6.0\\,\\text{N}}{0.12\\,\\text{m}} = 50\\,\\text{N/m}$ and $F_2 = -50\\,\\tfrac{\\text{N}}{\\text{m}}\\cdot(-0.20\\,\\text{m}) = 10\\,\\text{N}$\n\n**Answer:** $F_2 = +10\\,\\text{N}$, that is $10\\,\\text{N}$ in the positive direction of the $x$-axis, two significant figures like the initial data.\n\n**Reasonableness:** The object is on the negative side of the equilibrium position, so the force must point in the positive direction, towards the equilibrium position. The displacement is $\\tfrac{0.20}{0.12} \\approx 1.7$ times as large, and so is the magnitude of the force: $1.7 \\cdot 6.0\\,\\text{N} = 10\\,\\text{N}$."
+    },
+    {
+      "id": "check-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Draw it yourself",
+      "fbd": "draw",
+      "draw": true,
+      "model_figure": "fy5-8/malli-laatikko",
+      "prompt": "A box of mass $6.0\\,\\text{kg}$ is pulled along a horizontal floor by a horizontal spring so that the box slides at a constant speed. The kinetic friction of the floor on the box is $18\\,\\text{N}$, and the spring constant of the spring is $120\\,\\text{N/m}$. Draw the free-body diagram of the box on paper: the box as a rectangle and each force from its point of application. Write the equations of motion and calculate how much the spring has stretched.",
+      "criteria": [
+        {
+          "key": "fbd_object",
+          "detail": "The diagram has only the box, not the spring, the hand or the floor, with their forces."
+        },
+        {
+          "key": "fbd_forces",
+          "detail": "Four forces: weight, support force of the floor, force of the spring and kinetic friction. No force stretching the spring, which acts on the spring, and no extra force in the direction of motion."
+        },
+        {
+          "key": "fbd_directions",
+          "detail": "Weight down, support force up, spring force horizontal in the direction of the pull and friction against it."
+        },
+        {
+          "key": "fbd_representation",
+          "detail": "Weight from the centre, support force from the lower surface, spring force from the point where the spring is attached, and friction from the corner of the lower surface; each with its own symbol."
+        },
+        {
+          "key": "fbd_magnitudes",
+          "detail": "Support force as long as the weight, spring force as long as the friction, because the speed is constant; the velocity, if drawn, separately beside the box."
+        },
+        {
+          "key": "fbd_equations",
+          "detail": "$x$: $kx - F_\\mu = 0$, so $x = \\tfrac{F_\\mu}{k} = 0.15\\,\\text{m}$, and $y$: $N - mg = 0$."
+        }
+      ],
+      "model": "The Earth, the floor and the spring act on the box. The weight $\\overline{G}$ points down from the centre, and the support force of the floor $\\overline{N}$ up from the lower surface. The spring force $\\overline{F}$ pulls the box horizontally in the direction of the pull, and kinetic friction $\\overline{F}_\\mu$ points against it from the corner of the lower surface. The force that stretches the spring is not drawn, because it acts on the spring. The speed is constant, so the forces cancel each other. With $x$ pointing in the direction of the pull and $y$ up: $y$: $N - mg = 0$, so $N = 6.0\\,\\text{kg}\\cdot 9.81\\,\\text{m/s}^2 \\approx 59\\,\\text{N}$. $x$: $kx - F_\\mu = 0$, so $x = \\dfrac{F_\\mu}{k} = \\dfrac{18\\,\\text{N}}{120\\,\\text{N/m}} = 0.15\\,\\text{m}$. The spring has stretched $15\\,\\text{cm}$."
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally three quick questions. Answer first by yourself and open the answer only afterwards."
+    }
+  ]
+}

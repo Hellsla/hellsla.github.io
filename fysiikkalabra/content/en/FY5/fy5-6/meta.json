@@ -1,0 +1,21 @@
+{
+  "id": "fy5-6",
+  "course": "FY5",
+  "title": "Circular orbits under gravity",
+  "goals": [
+    "LOPS FY5: the law of gravitation and planetary motion",
+    "LOPS FY5: can model planetary motion as circular motion",
+    "Clarification: the motion of planets, moons and satellites in the circular-orbit model, weightlessness, when the model of uniform circular motion holds; Kepler's laws and the potential energy of the gravitational field are not part of the central contents"
+  ],
+  "prerequisites": [
+    "fy5-5"
+  ],
+  "glossary": [
+    "kiertorata",
+    "satelliitti",
+    "painottomuus"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

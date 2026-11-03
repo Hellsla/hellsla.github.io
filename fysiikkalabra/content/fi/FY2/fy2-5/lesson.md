@@ -1,4 +1,4 @@
-# Polttoaineet ja lämpöarvo E = Hm
+# Polttoaineet ja lämpöarvo $E = Hm$
 
 > **Miksi** kilogrammasta bensiiniä ja kilogrammasta ilmakuivaa polttopuuta vapautuu palaessa eri määrä energiaa, vaikka molemmat ovat vain palavaa ainetta?
 

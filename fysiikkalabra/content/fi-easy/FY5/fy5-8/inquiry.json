@@ -1,0 +1,519 @@
+{
+  "version": 1,
+  "contribution": "Jousen voima tulkitaan harmoniseksi voimaksi $F = -kx$. Miinusmerkki kertoo suunnan: voima osoittaa kohti tasapainoasemaa sekä venytettäessä että puristettaessa. Jousen voima kappaleeseen erotetaan jousta venyttävästä voimasta Newtonin kolmannen lain avulla. Jousivakio määritetään $(x, F_\\text{v})$-mittauskuvaajan kulmakertoimesta. Jousen potentiaalienergia mainittiin FY4:ssä vain sanallisesti, ja nyt se lasketaan kuvaajan kolmion pinta-alana $E_\\text{p} = \\tfrac{1}{2}kx^2$. Värähtelyn jaksonaika jää seuraavaan lukuun.",
+  "learn": [
+    "tunnistamaan harmonisen voiman ja päättelemään, mihin suuntaan se osoittaa.",
+    "määrittämään jousivakion mittauskuvaajan kulmakertoimesta.",
+    "laskemaan harmonisen voiman suuruuden ja jousen potentiaalienergian."
+  ],
+  "prior": [
+    "Jaksollisessa liikkeessä kappale liikkuu edestakaisin tasapainoaseman kummallakin puolella (luku *Jaksollinen liike*)",
+    "Kaksi kappaletta vaikuttaa toisiinsa yhtä suurilla ja vastakkaissuuntaisilla voimilla (luku *Vuorovaikutus ja voima: Newtonin ensimmäinen ja kolmas laki*)",
+    "Jännitetyllä jousella on jousen potentiaalienergiaa (luku *Liike-energia, potentiaalienergia ja mekaaninen energia*)",
+    "Suoran sovittaminen mittauspisteisiin ja kulmakertoimen lukeminen (luku *Graafinen esitys ja suoran sovittaminen*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Flipperipelissä kuula ammutaan pelikentälle laukaisimella. Pelaaja vetää männän nuppia taaksepäin. Silloin männän jousi puristuu. Sitten pelaaja päästää irti. Lyhyt veto lähettää kuulan hitaasti. Pitkä veto lähettää kuulan niin kovaa, että se kiertää koko kentän. Kun pidät nuppia paikallaan, tunnet jousen kädessäsi.",
+      "question": "Mihin suuntaan jousi työntää mäntää? Kuinka paljon enemmän energiaa jouseen varastoituu, kun puristusmatka kaksinkertaistuu?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Kertaa: Newtonin kolmas laki",
+      "optional": true,
+      "prompt": "Käsi vetää seinään kiinnitetyn jousen päätä oikealle $5{,}0\\,\\text{N}$:n voimalla. Jousi on levossa. Kuinka suurella voimalla ja mihin suuntaan jousi vetää kättä?",
+      "choices": [
+        {
+          "text": "$5{,}0\\,\\text{N}$:n voimalla vasemmalle.",
+          "correct": true,
+          "feedback": "Oikein. Luvussa *Vuorovaikutus ja voima: Newtonin ensimmäinen ja kolmas laki* opit, että kaksi kappaletta vaikuttaa toisiinsa yhtä suurilla ja vastakkaissuuntaisilla voimilla. Käden voima vaikuttaa jouseen. Jousen voima vaikuttaa käteen. Tässä luvussa tämä ero on tärkeä."
+        },
+        {
+          "text": "Ei millään voimalla, koska jousi on levossa.",
+          "feedback": "Levossa olevaan jouseen vaikuttavat voimat kumoavat toisensa. Jousi vaikuttaa silti kumpaankin päähänsä. Newtonin kolmannen lain mukaan jousi vetää kättä yhtä suurella voimalla, $5{,}0\\,\\text{N}$, vastakkaiseen suuntaan eli vasemmalle."
+        },
+        {
+          "text": "$5{,}0\\,\\text{N}$:n voimalla oikealle.",
+          "feedback": "Vuorovaikutuksen voimat ovat vastakkaissuuntaiset. Käsi vetää jousta oikealle. Siksi jousi vetää kättä vasemmalle yhtä suurella voimalla, $5{,}0\\,\\text{N}$."
+        },
+        {
+          "text": "Pienemmällä voimalla vasemmalle, koska jousi venyy.",
+          "feedback": "Venyminen ei pienennä vastavoimaa. Newtonin kolmannen lain mukaan voimat ovat aina yhtä suuret. Jousi vetää kättä $5{,}0\\,\\text{N}$:n voimalla vasemmalle."
+        }
+      ]
+    },
+    {
+      "id": "pred-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 1: puristettu jousi",
+      "justify": true,
+      "reveal": {
+        "after": "exp-1",
+        "min": 2
+      },
+      "prompt": "Kärry on kiinni vaakasuorassa jousessa. Jousen toinen pää on seinässä kärryn vasemmalla puolella. Työnnät kärryä vasemmalle, jolloin jousi puristuu, ja pidät kärryä paikallaan. Mihin suuntaan jousen voima osoittaa kärryyn?",
+      "choices": [
+        {
+          "text": "Oikealle, kohti kohtaa, jossa jousi on lepopituudessaan.",
+          "correct": true,
+          "feedback": "Oikein. Puristunut jousi työntää kärryä pois seinästä, kohti tasapainoasemaa. Mallin arvoissa jousi B antaa kohdassa $x = -0{,}10\\,\\text{m}$ voiman $F = +5{,}0\\,\\text{N}$ ja kohdassa $x = 0{,}10\\,\\text{m}$ voiman $F = -5{,}0\\,\\text{N}$. Voiman etumerkki on aina poikkeaman etumerkin vastainen."
+        },
+        {
+          "text": "Vasemmalle, samaan suuntaan kuin työnsit kärryä.",
+          "feedback": "Vasemmalle osoittaa käden voima. Jousi vastustaa puristamista ja työntää kärryä oikealle, kohti tasapainoasemaa. Simulaation taulukossa kohdassa $x = -0{,}10\\,\\text{m}$ jousen voima on $F = +5{,}0\\,\\text{N}$ ja käden voima $F_\\text{k} = -5{,}0\\,\\text{N}$."
+        },
+        {
+          "text": "Jousi ei vaikuta kärryyn, koska kärry on paikallaan.",
+          "feedback": "Kärry on paikallaan, koska siihen vaikuttavat voimat kumoavat toisensa. Voimia kyllä on. Puristunut jousi työntää kärryä oikealle, ja käsi työntää yhtä suurella voimalla vasemmalle. Mallin arvoissa voimat ovat $+5{,}0\\,\\text{N}$ ja $-5{,}0\\,\\text{N}$ kohdassa $x = -0{,}10\\,\\text{m}$."
+        }
+      ]
+    },
+    {
+      "id": "pred-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 2: kaksinkertainen poikkeama",
+      "justify": true,
+      "reveal": {
+        "after": "exp-1",
+        "min": 4
+      },
+      "prompt": "Kun kärry siirretään $5\\,\\text{cm}$ tasapainoasemasta, jousen voiman suuruus on $2{,}5\\,\\text{N}$. Kuinka suuri voima on, kun kärry siirretään samaan suuntaan $10\\,\\text{cm}$?",
+      "choices": [
+        {
+          "text": "$5{,}0\\,\\text{N}$",
+          "correct": true,
+          "feedback": "Oikein. Jousen voiman suuruus on suoraan verrannollinen poikkeamaan. Kaksinkertainen poikkeama antaa kaksinkertaisen voiman. Mallin arvoissa jousi B antaa kohdissa $0{,}05$, $0{,}10$ ja $0{,}20\\,\\text{m}$ voimat $-2{,}5$, $-5{,}0$ ja $-10\\,\\text{N}$. Kuvaajan pisteet ovat origon kautta kulkevalla suoralla."
+        },
+        {
+          "text": "$10\\,\\text{N}$",
+          "feedback": "Voima ei kasva poikkeaman neliön mukana. Simulaation lukemissa jousi B antaa kohdassa $0{,}05\\,\\text{m}$ voiman $-2{,}5\\,\\text{N}$ ja kohdassa $0{,}10\\,\\text{m}$ voiman $-5{,}0\\,\\text{N}$. Poikkeama on kaksinkertainen, ja voima on kaksinkertainen. Neliön mukana kasvaa jousen potentiaalienergia."
+        },
+        {
+          "text": "$2{,}5\\,\\text{N}$",
+          "feedback": "Jousen voima ei pysy samana. Se kasvaa, kun jousi venyy enemmän. Simulaation lukemissa jousi B antaa kohdassa $0{,}10\\,\\text{m}$ voiman $-5{,}0\\,\\text{N}$. Se on kaksi kertaa niin suuri kuin kohdassa $0{,}05\\,\\text{m}$."
+        },
+        {
+          "text": "$3{,}5\\,\\text{N}$",
+          "feedback": "Voima kasvaa enemmän. Jousen voiman suuruus on suoraan verrannollinen poikkeamaan. Simulaation lukemissa jousi B antaa kohdassa $0{,}10\\,\\text{m}$ voiman $-5{,}0\\,\\text{N}$. Se on kaksinkertainen verrattuna kohtaan $0{,}05\\,\\text{m}$."
+        }
+      ]
+    },
+    {
+      "id": "pred-3",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 3: jousen energia",
+      "justify": true,
+      "reveal": {
+        "after": "exp-2",
+        "min": 3
+      },
+      "prompt": "Kun jousta venytetään $5\\,\\text{cm}$, siihen varastoituu jousen potentiaalienergiaa $E$. Kuinka paljon energiaa varastoituu, kun samaa jousta venytetään $10\\,\\text{cm}$?",
+      "choices": [
+        {
+          "text": "$4E$",
+          "correct": true,
+          "feedback": "Oikein. Simulaation lukemissa jousen B energia on venymällä $0{,}05\\,\\text{m}$ noin $0{,}063\\,\\text{J}$ ja venymällä $0{,}10\\,\\text{m}$ $0{,}250\\,\\text{J}$. Energia on nelinkertainen. Kun venymä on kaksinkertainen, myös voima on kaksinkertainen. Silloin kuvaajan kolmio on kaksi kertaa niin leveä ja kaksi kertaa niin korkea."
+        },
+        {
+          "text": "$2E$",
+          "feedback": "Venymä kaksinkertaistuu, mutta myös venyttävä voima kaksinkertaistuu. Siksi kuvaajan kolmio on kaksi kertaa niin leveä ja kaksi kertaa niin korkea. Sen pinta-ala on nelinkertainen. Simulaatiossa $0{,}063\\,\\text{J}$ kasvaa $0{,}250\\,\\text{J}$:iin."
+        },
+        {
+          "text": "$E$",
+          "feedback": "Jouseen ei varastoidu aina samaa energiaa. Mitä enemmän jousta venytetään, sitä enemmän venyttävä voima tekee työtä. Simulaatiossa jousen B energia kasvaa $0{,}063\\,\\text{J}$:sta $0{,}250\\,\\text{J}$:iin, kun venymä kasvaa $0{,}05\\,\\text{m}$:sta $0{,}10\\,\\text{m}$:iin."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Kärry on kiinni jousessa kitkattomalla radalla, ja käsi pitää kärryä paikallaan. Siirrä kärryä, vaihda jousta ja katso voimia, lukemia ja kuvaajaa.",
+      "howto": "Valitse kärryn paikka $x$ liukusäätimellä ja jousi *Jousi*-valikosta. Tasapainoasemassa $x = 0$ jousi on lepopituudessaan. Kun $x > 0$, jousi venyy. Kun $x < 0$, jousi puristuu. Kuvaajaan jää piste jokaisesta paikasta, jonka valitset. Nykyinen piste on punainen. *Tyhjennä kuvaaja* poistaa valitun jousen pisteet. Lukemat päivittyvät heti.",
+      "model": "Arvot ovat simulaation laskemia mallin arvoja. Rata on kitkaton. Kärry on levossa, koska käsi pitää sitä paikallaan. Kuvaan on piirretty vain kärryyn vaikuttavat vaakasuorat voimat. Paino ja radan tukivoima kumoavat toisensa. Jousien jousivakiot ovat mallin arvoja, joita ei näytetä. Mallissa jousi noudattaa lakiaan koko säätöalueella, eikä sitä voi venyttää pysyvästi.",
+      "calc": "Vaakasuorassa jousessa origo on tasapainoasemassa, jossa jousi on lepopituudessaan. Akseli $x$ osoittaa oikealle. Jousen voima kärryyn on $F = -kx$. Kärry on levossa, joten käden voima kärryyn on $F_\\text{k} = -F = kx$. Kärry vetää tai työntää jousta yhtä suurella voimalla. Siksi jousta venyttävä voima on $F_\\text{v} = kx$. Puristettaessa se on negatiivinen. Kuvaajan pystyakselilla on $F_\\text{v}$. Jousen potentiaalienergia on $E_\\text{p} = \\tfrac{1}{2}kx^2$. Se on kuvaajan kolmion pinta-ala. Voimanuolten pituus on $6$ kuvapistettä yhtä newtonia kohti."
+    },
+    {
+      "id": "exp-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 1: voiman suunta ja suuruus",
+      "intro": "Testaa ennusteet 1 ja 2. Alkutila valitsee jousen B. Muuta vain kärryn paikkaa $x$. Kirjaa mittaus ensin puristetulla jousella kohdissa $-0{,}10$ ja $-0{,}05\\,\\text{m}$. Kirjaa sitten mittaus venytetyllä jousella kohdissa $0{,}05$, $0{,}10$ ja $0{,}20\\,\\text{m}$. Katso joka kohdassa, mihin suuntaan nuolet osoittavat.",
+      "initial": {
+        "jousi": "B",
+        "x": 0
+      },
+      "names": {
+        "x": "paikka $x$",
+        "jousi": "jousi"
+      },
+      "units": {
+        "x": "m"
+      },
+      "values": {
+        "jousi": {
+          "A": "A",
+          "B": "B",
+          "C": "C"
+        }
+      },
+      "locked": [
+        "jousi"
+      ],
+      "vary": "x",
+      "measure": [
+        {
+          "key": "F",
+          "label": "jousen voima $F$ (N)"
+        },
+        {
+          "key": "Fk",
+          "label": "käden voima $F_\\text{k}$ (N)"
+        }
+      ],
+      "min": 4
+    },
+    {
+      "id": "exp-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 2: jousen energia",
+      "intro": "Testaa ennuste 3. Alkutila valitsee jousen B. Kirjaa mittaus kohdissa $0{,}05$, $0{,}10$ ja $0{,}20\\,\\text{m}$. Katso joka kerta kuvaajan väritettyä kolmiota. Kirjaa lopuksi vielä kohta $-0{,}10\\,\\text{m}$ ja vertaa energiaa kohdan $0{,}10\\,\\text{m}$ energiaan.",
+      "initial": {
+        "jousi": "B",
+        "x": 0
+      },
+      "names": {
+        "x": "paikka $x$",
+        "jousi": "jousi"
+      },
+      "units": {
+        "x": "m"
+      },
+      "values": {
+        "jousi": {
+          "A": "A",
+          "B": "B",
+          "C": "C"
+        }
+      },
+      "locked": [
+        "jousi"
+      ],
+      "vary": "x",
+      "measure": [
+        {
+          "key": "Fv",
+          "label": "venyttävä voima $F_\\text{v}$ (N)"
+        },
+        {
+          "key": "Ep",
+          "label": "$E_\\text{p}$ (J)"
+        }
+      ],
+      "min": 3
+    },
+    {
+      "id": "exp-3",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 3: jäykkä ja pehmeä jousi",
+      "optional": true,
+      "intro": "Alkutila asettaa kärryn kohtaan $x = 0{,}10\\,\\text{m}$. Muuta vain jousta. Kirjaa mittaus jousilla A, B ja C. Vertaa lopuksi, minkä jousen voima on suurin samalla venymällä.",
+      "initial": {
+        "x": 0.1,
+        "jousi": "A"
+      },
+      "names": {
+        "x": "paikka $x$",
+        "jousi": "jousi"
+      },
+      "units": {
+        "x": "m"
+      },
+      "values": {
+        "jousi": {
+          "A": "A",
+          "B": "B",
+          "C": "C"
+        }
+      },
+      "locked": [
+        "x"
+      ],
+      "vary": "jousi",
+      "measure": [
+        {
+          "key": "Fv",
+          "label": "venyttävä voima $F_\\text{v}$ (N)"
+        }
+      ],
+      "min": 3,
+      "question": {
+        "type": "numeric",
+        "prompt": "Laske taulukon lukemista jousen C jousivakio.",
+        "answer": 80.0,
+        "unit": "N/m",
+        "tolerance": 0.02,
+        "hints": [
+          "Mitä pystyakselin voima $F_\\text{v}$ ja venymä $x$ kertovat jousivakiosta?",
+          "Venyttävä voima on $F_\\text{v} = kx$, joten $k = \\dfrac{F_\\text{v}}{x}$.",
+          "Jousella C taulukossa $F_\\text{v} = 8{,}0\\,\\text{N}$, kun $x = 0{,}10\\,\\text{m}$."
+        ],
+        "mistakes": [
+          {
+            "value": 0.8,
+            "feedback": "Tarkista laskutoimitus ja yksiköt. Jousivakio on voima jaettuna venymällä metreinä: $k = \\tfrac{8{,}0\\,\\text{N}}{0{,}10\\,\\text{m}}$. Se ei ole $8{,}0\\,\\text{N}\\cdot 0{,}10\\,\\text{m}$ eikä $\\tfrac{8{,}0\\,\\text{N}}{10\\,\\text{cm}}$."
+          }
+        ],
+        "solution": "**Annettu:** jousen C lukemat simulaatiosta: venymä $x = 0{,}10\\,\\text{m}$ ja jousta venyttävä voima $F_\\text{v} = 8{,}0\\,\\text{N}$ (mallin arvot)\n\n**Kysytty:** jousen C jousivakio $k$ yksikössä $\\text{N/m}$\n\n**Periaate:** Kärry on levossa, joten jousta venyttävä voima on yhtä suuri kuin jousen voiman suuruus, ja se on suoraan verrannollinen venymään. Verrannollisuuskerroin on jousivakio.\n\n**Kaava:** $F_\\text{v} = kx$, joten $k = \\dfrac{F_\\text{v}}{x}$\n\n**Muunnokset:** Venymä on jo metreinä, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $k = \\dfrac{8{,}0\\,\\text{N}}{0{,}10\\,\\text{m}} = 80\\,\\text{N/m}$\n\n**Vastaus:** $80\\,\\text{N/m}$, kaksi merkitsevää numeroa kuten lukemassa $8{,}0\\,\\text{N}$.\n\n**Järkevyys:** Jousi C antoi samalla venymällä suurimman voiman, joten sen jousivakion pitää olla suurin: jousilla A ja B lukemista saadaan $\\tfrac{2{,}0\\,\\text{N}}{0{,}10\\,\\text{m}} = 20\\,\\text{N/m}$ ja $\\tfrac{5{,}0\\,\\text{N}}{0{,}10\\,\\text{m}} = 50\\,\\text{N/m}$. Jousen C pisteet asettuvat kuvaajassa jyrkimmälle suoralle."
+      }
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös",
+      "after": [
+        "exp-1",
+        "exp-2"
+      ],
+      "prompt": "Selitä mittaustesi avulla kolme asiaa. Mihin suuntaan jousen voima osoittaa, kun jousta venytetään ja kun sitä puristetaan? Miten voiman suuruus riippuu poikkeamasta? Miten jousen potentiaalienergia muuttuu, kun venymä kaksinkertaistuu?",
+      "criteria": [
+        "Vastaus kertoo, että jousen voima osoittaa sekä venytettynä että puristettuna kohti tasapainoasemaa, ja käyttää taulukon etumerkkejä perusteluna.",
+        "Vastaus kertoo, että kaksinkertainen poikkeama antaa kaksinkertaisen voiman, ja nimeää taulukosta lukuparin, joka sen osoittaa.",
+        "Vastaus kertoo, että kaksinkertainen venymä antaa nelinkertaisen energian, ja liittää sen kuvaajan kolmion pinta-alaan."
+      ],
+      "model": "Taulukossa jousen voima on negatiivinen, kun $x > 0$, ja positiivinen, kun $x < 0$. Jousen B voima on kohdassa $-0{,}10\\,\\text{m}$ $+5{,}0\\,\\text{N}$ ja kohdassa $0{,}10\\,\\text{m}$ $-5{,}0\\,\\text{N}$. Voima osoittaa siis aina kohti tasapainoasemaa. Käden voima on sille vastakkainen. Voiman suuruus kasvaa suoraan verrannollisesti poikkeamaan: $0{,}05\\,\\text{m}$ antaa $2{,}5\\,\\text{N}$, $0{,}10\\,\\text{m}$ antaa $5{,}0\\,\\text{N}$ ja $0{,}20\\,\\text{m}$ antaa $10\\,\\text{N}$. Jousen potentiaalienergia on mallin arvoissa $0{,}063\\,\\text{J}$, $0{,}250\\,\\text{J}$ ja $1{,}00\\,\\text{J}$. Kaksinkertainen venymä antaa siis nelinkertaisen energian. Silloin kuvaajan kolmio on kaksi kertaa niin leveä ja kaksi kertaa niin korkea. Kun jousta puristetaan $0{,}10\\,\\text{m}$, energia on sama $0{,}250\\,\\text{J}$ kuin venytettäessä."
+    },
+    {
+      "id": "theory",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "reflect",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Palaa ennusteisiisi",
+      "optional": true,
+      "prompt": "Vertaa ennusteitasi mittauksiin ja teoriaan. Palaa myös alun flipperiin. Mihin suuntaan jousi työntää mäntää? Kuinka paljon enemmän energiaa jouseen varastoituu, kun puristusmatka kaksinkertaistuu?",
+      "predictions": [
+        "pred-1",
+        "pred-2",
+        "pred-3"
+      ]
+    },
+    {
+      "id": "example",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "mittaus",
+      "stage": "sovella",
+      "type": "interpret",
+      "title": "Jousivakio mittauksesta",
+      "source": "example",
+      "figure": "fy5-8/mittaus",
+      "text": "Jousivakio mitataan ripustamalla jouseen punnuksia. Jousen venymä $x$ mitataan viivaimella. Kun punnus roikkuu levossa, se vetää jousta voimalla, joka on yhtä suuri kuin sen paino. Venyttävä voima on siis $F_\\text{v} = mg$. Taulukko ja kuvaaja ovat keksittyä esimerkkiaineistoa.\n\n| $m$ (g) | $50$ | $100$ | $150$ | $200$ | $250$ | $300$ |\n|---|---|---|---|---|---|---|\n| $F_\\text{v}$ (N) | $0{,}49$ | $0{,}98$ | $1{,}47$ | $1{,}96$ | $2{,}45$ | $2{,}94$ |\n| $x$ (cm) | $1{,}7$ | $3{,}2$ | $5{,}0$ | $6{,}4$ | $8{,}3$ | $9{,}8$ |",
+      "question": {
+        "type": "numeric",
+        "prompt": "Sovita kuvaajan pisteisiin silmämääräisesti suora, joka kulkee origon kautta (aseta viivoitin kuvan päälle). Määritä suoran kulmakertoimesta jousen jousivakio.",
+        "answer": 30.0,
+        "unit": "N/m",
+        "tolerance": 0.07,
+        "hints": [
+          "Mikä suure on suoran kulmakerroin, kun pystyakselilla on venyttävä voima ja vaaka-akselilla venymä?",
+          "Valitse suoralta kaksi pistettä, jotka ovat kaukana toisistaan. Voit valita esimerkiksi origon ja pisteen, jossa $x = 10{,}0\\,\\text{cm}$. Älä käytä kahta mittauspistettä.",
+          "Suora kulkee lähes pisteen $(10{,}0\\,\\text{cm};\\ 3{,}0\\,\\text{N})$ kautta. Muuta senttimetrit metreiksi ennen jakolaskua."
+        ],
+        "mistakes": [
+          {
+            "value": 0.3,
+            "feedback": "Jaoit newtonit senttimetreillä, jolloin yksikkö on $\\text{N/cm}$. Muuta venymä metreiksi: $10{,}0\\,\\text{cm} = 0{,}100\\,\\text{m}$."
+          },
+          {
+            "value": 3.06,
+            "feedback": "Käytit massaa voiman sijaan. Kuvaajan pystyakselilla on venyttävä voima $F_\\text{v} = mg$ newtoneina."
+          }
+        ],
+        "solution": "**Annettu:** kuuden punnuksen venyttävät voimat $F_\\text{v} = mg$ ja jousen venymät $x$ taulukossa ja kuvaajassa (esimerkkiaineisto), $g = 9{,}81\\,\\text{m/s}^2$\n\n**Kysytty:** jousivakio $k$ yksikössä $\\text{N/m}$\n\n**Periaate:** Levossa riippuva punnus vetää jousta voimalla, joka on yhtä suuri kuin punnuksen paino. Venyttävä voima on suoraan verrannollinen venymään, $F_\\text{v} = kx$. Siksi $(x, F_\\text{v})$-kuvaajan pisteet ovat lähellä suoraa, joka kulkee origon kautta. Suoran kulmakerroin on jousivakio. Suora kulkee origon kautta, koska ilman punnusta jousi ei veny.\n\n**Kuvaajan lukeminen:** Mittausepävarmuuden vuoksi pisteet eivät ole täsmälleen samalla suoralla. Siksi suora sovitetaan niin, että pisteitä jää suoran kummallekin puolelle. Sovitettu suora kulkee origon ja pisteen $(10{,}0\\,\\text{cm};\\ 3{,}0\\,\\text{N})$ kautta. Kulmakerroin luetaan näistä kahdesta suoran pisteestä, ei mittauspisteistä.\n\n**Kaava:** $k = \\dfrac{\\Delta F_\\text{v}}{\\Delta x}$\n\n**Muunnokset:** $\\Delta x = 10{,}0\\,\\text{cm} = 10{,}0 \\cdot 0{,}01\\,\\text{m} = 0{,}100\\,\\text{m}$\n\n**Sijoitus:** $k = \\dfrac{3{,}0\\,\\text{N} - 0\\,\\text{N}}{0{,}100\\,\\text{m} - 0\\,\\text{m}} = 30\\,\\text{N/m}$\n\n**Vastaus:** $k \\approx 30\\,\\text{N/m}$. Vastaus annetaan kahdella merkitsevällä numerolla, koska kuvaajasta luettu voima $3{,}0\\,\\text{N}$ on kahden numeron tarkkuudella.\n\n**Järkevyys:** Tarkistus taulukosta: $300\\,\\text{g}$:n punnus antaa $\\tfrac{2{,}94\\,\\text{N}}{0{,}098\\,\\text{m}} = 30\\,\\text{N/m}$. Pienin venymä $1{,}7\\,\\text{cm}$ on lyhyt, joten sen mittausvirhe on suhteessa suurin. Siksi koko suora on luotettavampi kuin yksi piste. Jousi, jonka jousivakio on noin $30\\,\\text{N/m}$, on pehmeä koulun mittausjousi: $1\\,\\text{N}$ venyttää sitä noin $3\\,\\text{cm}$."
+      }
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe",
+      "fbd": "error",
+      "figure": "fy5-8/virhe",
+      "prompt": "Kappale roikkuu levossa pystysuoran jousen alapäässä. Opiskelija piirsi kappaleesta kuvan mukaisen voimakuvion. Hän perusteli: $\\overline{G}$ on paino, $\\overline{F}_1$ on jousen voima ja $\\overline{F}_2$ on jousta venyttävä voima. Mikä kuviossa on väärin?",
+      "choices": [
+        {
+          "text": "Voima $\\overline{F}_2$ vaikuttaa jouseen, joten se ei kuulu kappaleen voimakuvioon.",
+          "correct": true,
+          "feedback": "Oikein. Kappale vetää jousta voimalla $\\overline{F}_2$, ja jousi vetää kappaletta voimalla $\\overline{F}_1$. Ne ovat Newtonin kolmannen lain voimapari, ja vain $\\overline{F}_1$ vaikuttaa kappaleeseen. Ilman voimaa $\\overline{F}_2$ paino ja jousen voima kumoavat toisensa, niin kuin levossa pitääkin."
+        },
+        {
+          "text": "Jousen voiman $\\overline{F}_1$ pitäisi osoittaa alas, koska jousi venyy alaspäin.",
+          "feedback": "Venynyt jousi vetää kappaletta kohti tasapainoasemaansa eli ylös, venymän vastaiseen suuntaan. Voima $\\overline{F}_1$ on oikein. Virhe on voima $\\overline{F}_2$, joka vaikuttaa jouseen eikä kappaleeseen."
+        },
+        {
+          "text": "Jousen voiman $\\overline{F}_1$ pitäisi olla kaksi kertaa painon pituinen.",
+          "feedback": "Kappale on levossa, joten siihen vaikuttavien voimien täytyy kumota toisensa. Jousen voima on yhtä suuri kuin paino. Kuvion vika on, että siinä on myös jouseen vaikuttava voima $\\overline{F}_2$."
+        },
+        {
+          "text": "Painon $\\overline{G}$ pitäisi lähteä kappaleen alapinnasta.",
+          "feedback": "Paino vaikuttaa kappaleen painopisteessä. Siksi se piirretään keskipisteestä, kuten kuviossa. Virhe on voima $\\overline{F}_2$. Se on kappaleen voima jouseen, eikä se kuulu kappaleen voimakuvioon."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Sovella uuteen tilanteeseen",
+      "prompt": "Flipperin laukaisimen jousen jousivakio on $250\\,\\text{N/m}$. Pelaaja vetää mäntää $6{,}0\\,\\text{cm}$ taaksepäin, jolloin jousi puristuu saman matkan. Sitten hän päästää irti. Jousi työntää männän ja sen edessä olevan $80\\,\\text{g}$:n kuulan liikkeelle. Kuula irtoaa männästä, kun jousi on lepopituudessaan. Kitka, männän massa ja kentän kallistus jätetään huomiotta. Kuinka suurella nopeudella kuula lähtee?",
+      "answer": 3.354,
+      "unit": "m/s",
+      "tolerance": 0.02,
+      "hints": [
+        "Miksi energiaksi jousen potentiaalienergia muuttuu, kun jousi palaa lepopituuteensa?",
+        "Jousen potentiaalienergia muuttuu kuulan liike-energiaksi: $\\tfrac{1}{2}kx^2 = \\tfrac{1}{2}mv^2$.",
+        "Ratkaise nopeus: $v = x\\sqrt{\\dfrac{k}{m}}$. Muuta senttimetrit ja grammat SI-yksiköiksi."
+      ],
+      "mistakes": [
+        {
+          "value": 4.743,
+          "feedback": "Käytit jousen potentiaalienergialle lauseketta $kx^2$. Siinä on kerroin $\\tfrac{1}{2}$, kuten liike-energiassakin. Kertoimet supistuvat: $v = x\\sqrt{\\tfrac{k}{m}}$."
+        },
+        {
+          "value": 0.1061,
+          "feedback": "Massa on muutettava kilogrammoiksi: $80\\,\\text{g} = 0{,}080\\,\\text{kg}$."
+        },
+        {
+          "value": 335.4,
+          "feedback": "Puristusmatka on muutettava metreiksi: $6{,}0\\,\\text{cm} = 0{,}060\\,\\text{m}$."
+        }
+      ],
+      "solution": "**Annettu:** jousivakio $k = 250\\,\\text{N/m}$, puristuma $x = 6{,}0\\,\\text{cm}$, kuulan massa $m = 80\\,\\text{g}$; kuula on aluksi levossa\n\n**Kysytty:** kuulan lähtönopeus $v$ yksikössä $\\text{m/s}$\n\n**Periaate:** Kitkaa ei ole, männän massa jätetään huomiotta ja kenttä on vaakasuora. Siksi mekaaninen energia säilyy. Jousen potentiaalienergia muuttuu kokonaan kuulan liike-energiaksi. Kuula irtoaa, kun jousi on lepopituudessaan. Silloin jousen energia on nolla.\n\n**Kaava:** $\\tfrac{1}{2}kx^2 = \\tfrac{1}{2}mv^2$, joten $v = x\\sqrt{\\dfrac{k}{m}}$\n\n**Muunnokset:** $x = 6{,}0\\,\\text{cm} = 6{,}0 \\cdot 0{,}01\\,\\text{m} = 0{,}060\\,\\text{m}$ ja $m = 80\\,\\text{g} = 80 \\cdot 0{,}001\\,\\text{kg} = 0{,}080\\,\\text{kg}$\n\n**Sijoitus:** $v = 0{,}060\\,\\text{m}\\cdot\\sqrt{\\dfrac{250\\,\\text{N/m}}{0{,}080\\,\\text{kg}}} = 0{,}060\\,\\text{m}\\cdot 55{,}90\\,\\tfrac{1}{\\text{s}} = 3{,}354\\,\\text{m/s}$\n\n**Vastaus:** $3{,}4\\,\\text{m/s}$. Vastaus annetaan kahdella merkitsevällä numerolla, koska puristuma $6{,}0\\,\\text{cm}$ ja massa $80\\,\\text{g}$ on annettu kahdella numerolla.\n\n**Järkevyys:** Jousen energia on $\\tfrac{1}{2}\\cdot 250\\,\\tfrac{\\text{N}}{\\text{m}}\\cdot(0{,}060\\,\\text{m})^2 = 0{,}45\\,\\text{J}$. Kuulan liike-energia on $\\tfrac{1}{2}\\cdot 0{,}080\\,\\text{kg}\\cdot(3{,}354\\,\\text{m/s})^2 \\approx 0{,}45\\,\\text{J}$. Energiat ovat samat. Noin $12\\,\\text{km/h}$ on järkevä lähtönopeus flipperikuulalle. Kaksinkertainen puristus antaisi nelinkertaisen energian ja kaksinkertaisen nopeuden."
+    },
+    {
+      "id": "tehtavat",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Harjoittele vielä kolmella tasolla. Muuta senttimetrit ja grammat SI-yksiköiksi ennen sijoitusta. Mieti voimatehtävissä ensin, mihin kappaleeseen kukin voima vaikuttaa."
+    },
+    {
+      "id": "check-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Käsite",
+      "prompt": "Lausekkeessa $F = -kx$ on miinusmerkki. Mitä se kertoo jousen voimasta?",
+      "choices": [
+        {
+          "text": "Voima on aina poikkeamaa vastakkaissuuntainen.",
+          "correct": true,
+          "feedback": "Oikein. Kun $x > 0$, voima on negatiivinen, ja kun $x < 0$, positiivinen. Voima osoittaa siis aina kohti tasapainoasemaa."
+        },
+        {
+          "text": "Voima osoittaa aina $x$-akselin negatiiviseen suuntaan.",
+          "feedback": "Vain kun $x > 0$. Kun jousi on puristettu eli $x < 0$, $-kx$ on positiivinen ja voima osoittaa $x$-akselin positiiviseen suuntaan, kohti tasapainoasemaa."
+        },
+        {
+          "text": "Voima pienenee, kun poikkeama kasvaa.",
+          "feedback": "Voiman suuruus $k|x|$ kasvaa, kun poikkeama kasvaa. Miinusmerkki ei kerro suuruudesta vaan suunnasta: voima on poikkeamaa vastakkaissuuntainen."
+        },
+        {
+          "text": "Jousivakio on negatiivinen luku.",
+          "feedback": "Jousivakio on aina positiivinen, ja se kertoo jousen jäykkyyden. Miinusmerkki kertoo, että voima on poikkeamaa vastakkaissuuntainen."
+        }
+      ]
+    },
+    {
+      "id": "check-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Etumerkki ja suuruus",
+      "prompt": "Jousen päässä olevaan kappaleeseen vaikuttaa jousen voima $F = -6{,}0\\,\\text{N}$, kun kappale on kohdassa $x = 0{,}12\\,\\text{m}$. Jousi on vaakasuora, ja origo on tasapainoasemassa, jossa jousi on lepopituudessaan. Kuinka suuri on jousen voima $F$ etumerkkeineen, kun kappale on kohdassa $x = -0{,}20\\,\\text{m}$?",
+      "answer": 10.0,
+      "unit": "N",
+      "tolerance": 0.02,
+      "hints": [
+        "Laske ensin jousivakio ensimmäisen tilanteen lukemista.",
+        "$F = -kx$, joten $k = -\\dfrac{F}{x}$.",
+        "$k = 50\\,\\text{N/m}$. Sijoita sitten $x = -0{,}20\\,\\text{m}$ lausekkeeseen $F = -kx$."
+      ],
+      "mistakes": [
+        {
+          "value": -10.0,
+          "feedback": "Suuruus on oikein, mutta etumerkki väärin. Kappale on tasapainoaseman negatiivisella puolella, joten voima osoittaa positiiviseen suuntaan: $F = -50\\,\\tfrac{\\text{N}}{\\text{m}}\\cdot(-0{,}20\\,\\text{m}) = +10\\,\\text{N}$."
+        },
+        {
+          "value": -6.0,
+          "feedback": "Voima ei pysy samana: sen suuruus on suoraan verrannollinen poikkeamaan, ja suunta vaihtuu, kun kappale siirtyy tasapainoaseman toiselle puolelle."
+        }
+      ],
+      "solution": "**Annettu:** $F_1 = -6{,}0\\,\\text{N}$ kohdassa $x_1 = 0{,}12\\,\\text{m}$; uusi paikka $x_2 = -0{,}20\\,\\text{m}$; vaakasuora jousi, origo tasapainoasemassa eli lepopituuden kohdassa\n\n**Kysytty:** jousen voima $F_2$ etumerkkeineen yksikössä $\\text{N}$\n\n**Periaate:** Jousen voima on harmoninen: $F = -kx$, ja jousivakio on sama kummassakin kohdassa. Jousivakio saadaan ensimmäisestä tilanteesta. Etumerkki kertoo suunnan.\n\n**Kaava:** $F_1 = -kx_1$, joten $k = -\\dfrac{F_1}{x_1}$, ja $F_2 = -kx_2$\n\n**Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $k = -\\dfrac{-6{,}0\\,\\text{N}}{0{,}12\\,\\text{m}} = 50\\,\\text{N/m}$ ja $F_2 = -50\\,\\tfrac{\\text{N}}{\\text{m}}\\cdot(-0{,}20\\,\\text{m}) = 10\\,\\text{N}$\n\n**Vastaus:** $F_2 = +10\\,\\text{N}$ eli $10\\,\\text{N}$ $x$-akselin positiiviseen suuntaan, kaksi merkitsevää numeroa kuten lähtötiedoissa.\n\n**Järkevyys:** Kappale on tasapainoaseman negatiivisella puolella, joten voiman on osoitettava positiiviseen suuntaan, kohti tasapainoasemaa. Poikkeama on $\\tfrac{0{,}20}{0{,}12} \\approx 1{,}7$-kertainen, ja voiman suuruus samoin: $1{,}7 \\cdot 6{,}0\\,\\text{N} = 10\\,\\text{N}$."
+    },
+    {
+      "id": "check-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Piirrä itse",
+      "fbd": "draw",
+      "draw": true,
+      "model_figure": "fy5-8/malli-laatikko",
+      "prompt": "Laatikon massa on $6{,}0\\,\\text{kg}$. Laatikkoa vedetään vaakasuoralla lattialla vaakasuoran jousen avulla, ja laatikko liukuu tasaisella nopeudella. Lattian liikekitka laatikkoon on $18\\,\\text{N}$. Jousen jousivakio on $120\\,\\text{N/m}$. Piirrä laatikon voimakuvio paperille: laatikko on suorakulmio, ja jokainen voima piirretään kohdasta, jossa se vaikuttaa. Kirjoita liikeyhtälöt ja laske, kuinka paljon jousi on venynyt.",
+      "criteria": [
+        {
+          "key": "fbd_object",
+          "detail": "Kuviossa on vain laatikko, ei jousta, kättä eikä lattiaa voimineen."
+        },
+        {
+          "key": "fbd_forces",
+          "detail": "Neljä voimaa: paino, lattian tukivoima, jousen voima ja liikekitka. Ei jousta venyttävää voimaa, joka vaikuttaa jouseen, eikä liikkeen suuntaista lisävoimaa."
+        },
+        {
+          "key": "fbd_directions",
+          "detail": "Paino alas, tukivoima ylös, jousen voima vaakasuoraan vetosuuntaan ja kitka sitä vastaan."
+        },
+        {
+          "key": "fbd_representation",
+          "detail": "Paino keskipisteestä, tukivoima alapinnasta, jousen voima kohdasta, johon jousi on kiinnitetty, ja kitka alapinnan kulmasta; jokaisella oma tunnus."
+        },
+        {
+          "key": "fbd_magnitudes",
+          "detail": "Tukivoima yhtä pitkä kuin paino, jousen voima yhtä pitkä kuin kitka, koska nopeus on vakio; nopeus, jos se piirretään, erikseen laatikon vieressä."
+        },
+        {
+          "key": "fbd_equations",
+          "detail": "$x$: $kx - F_\\mu = 0$, joten $x = \\tfrac{F_\\mu}{k} = 0{,}15\\,\\text{m}$, ja $y$: $N - mg = 0$."
+        }
+      ],
+      "model": "Laatikkoon vaikuttavat Maa, lattia ja jousi. Paino $\\overline{G}$ osoittaa keskipisteestä alas, ja lattian tukivoima $\\overline{N}$ alapinnasta ylös. Jousen voima $\\overline{F}$ vetää laatikkoa vaakasuoraan vetosuuntaan, ja liikekitka $\\overline{F}_\\mu$ osoittaa sitä vastaan alapinnan kulmasta. Jousta venyttävää voimaa ei piirretä, koska se vaikuttaa jouseen. Nopeus on vakio, joten voimat kumoavat toisensa. Kun $x$ osoittaa vetosuuntaan ja $y$ ylös: $y$: $N - mg = 0$, joten $N = 6{,}0\\,\\text{kg}\\cdot 9{,}81\\,\\text{m/s}^2 \\approx 59\\,\\text{N}$. $x$: $kx - F_\\mu = 0$, joten $x = \\dfrac{F_\\mu}{k} = \\dfrac{18\\,\\text{N}}{120\\,\\text{N/m}} = 0{,}15\\,\\text{m}$. Jousi on venynyt $15\\,\\text{cm}$."
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Lopuksi on kolme nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+    }
+  ]
+}

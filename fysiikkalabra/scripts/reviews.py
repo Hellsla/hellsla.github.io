@@ -573,7 +573,8 @@ def _chapter_refs_renamed(old, new):
     """True when two lines differ only in the titles of chapter references and every new one is a current title."""
     blank = lambda l: CHAPTER_REF.sub(lambda m: m.group(1) + "*…*", l)
     if blank(old) != blank(new): return False
-    return all(m.group(2) in chapter_titles() for m in CHAPTER_REF.finditer(new))
+    titles = chapter_titles()   # a JSON line carries a title's LaTeX escaped (\\Delta for \Delta)
+    return all(m.group(2) in titles or m.group(2).replace("\\\\", "\\") in titles for m in CHAPTER_REF.finditer(new))
 
 
 def classify(path, diff_lines, lid):

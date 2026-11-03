@@ -66,6 +66,26 @@ expect("a decorative illustration cannot carry a task", c == 1 and "decorative" 
 code, out = run(S / "lint_lesson.py", "fy1-4")
 expect("a figure id is not taken for a chapter reference", "fy1-4/scatter-points" not in out, out[-400:])
 
+# a figure embedded by id inside a solution step (<svg data-fig="<owner>/<name>"></svg>, figcat.embed): drawn in the
+# step, in the page's language, counted where it is used, and an unknown id fails the lint
+code, out = run(S / "build.py", "fy5-2")
+for lang, page in (("fi", "preview/fy5-2.html"), ("en", "preview/en/fy5-2.html")):
+    html = (T / page).read_text() if (T / page).is_file() else ""
+    step = re.search(r'<div class="sol-step" data-step="[^"]*"><p class="sol-label">(?:Voimakuvio|Free-body diagram)</p>(?:(?!</div>\s*<div class="sol-step").)*?'
+                     r'data-fig="fy5-2/keinu-voimat"', html, re.S)
+    expect(f"an embedded figure is drawn inside its solution step ({lang})", step is not None and "FIGREFTOKEN" not in html, out[-400:])
+expect("an embedded figure takes the translation's words", 'aria-label="Model free-body diagram: the seesaw' in (T / "preview/en/fy5-2.html").read_text())
+cat = json.loads((T / "docs/figures/catalog.json").read_text())
+use = next((f.get("used_in", []) for f in cat["figures"] if f["id"] == "fy5-2/keinu-voimat"), [])
+expect("an embedded figure is listed where it is used, not as a pasted copy", any("inquiry.json" in u for u in use)
+       and not any(f.get("managed") is False and "keinu" in json.dumps(f) for f in cat["figures"]), use)
+c, o = run(S / "lint_lesson.py", "fy5-2")
+expect("an embedded figure id is not taken for a chapter reference", "\"fy5-2\": name the chapter" not in o, o[-400:])
+INQ = T / "content/fi/FY5/fy5-2/inquiry.json"; IORIG = INQ.read_text()
+INQ.write_text(IORIG.replace('data-fig=\\"fy5-2/keinu-voimat\\"', 'data-fig=\\"fy5-2/no-such-figure\\"'))
+c, o = run(S / "lint_lesson.py", "fy5-2"); INQ.write_text(IORIG)
+expect("an unknown embedded figure id fails the lint", c == 1 and "no-such-figure" in o and "names no figure" in o, o[-400:])
+
 
 def hashes():
     return run(S / "reviews.py", "hash", "fy1-4", "--exercises")[1].strip(), run(S / "reviews.py", "hash", "fy1-4")[1].strip()

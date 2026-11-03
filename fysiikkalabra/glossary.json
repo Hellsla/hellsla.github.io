@@ -1063,7 +1063,8 @@
     "definition": "Kappaleen paino G on voima, joka kertoo Maan (tai muun taivaankappaleen) ja kappaleen välisen vuorovaikutuksen voimakkuuden. Paino lasketaan kaavalla G = mg ja mitataan newtoneina.",
     "lessons": [
       "fy3-1",
-      "fy4-6"
+      "fy4-6",
+      "fy5-5"
     ],
     "see_also": [
       "massa",
@@ -1114,7 +1115,8 @@
     "lessons": [
       "fy3-1",
       "fy1-6",
-      "fy4-2"
+      "fy4-2",
+      "fy5-5"
     ],
     "see_also": [
       "paino",
@@ -1873,7 +1875,8 @@
     "term": "gravitaatio",
     "definition": "Perusvuorovaikutus kaikkien massallisten kappaleiden välillä, aina vetävä. Pitää planeetat radoillaan ja kokoaa tähtiä ja galakseja; hallitsee suurissa mittakaavoissa.",
     "lessons": [
-      "fy1-1"
+      "fy1-1",
+      "fy5-5"
     ],
     "see_also": [
       "perusvuorovaikutus",
@@ -2491,6 +2494,429 @@
     ],
     "see_also": [
       "turvavyö"
+    ],
+    "locked": false
+  },
+  {
+    "term": "tasapaino",
+    "definition": "Kappale on tasapainossa, kun se pysyy levossa: siihen vaikuttavien voimien summa on nolla (tasapaino etenemisen suhteen) ja voimien momenttien summa minkä tahansa pisteen suhteen on nolla (tasapaino pyörimisen suhteen).",
+    "lessons": [
+      "fy5-2"
+    ],
+    "see_also": [
+      "momenttiehto",
+      "painopiste"
+    ],
+    "locked": false
+  },
+  {
+    "term": "momenttiehto",
+    "definition": "Tasapainoehto pyörimisen suhteen: levossa olevaan kappaleeseen vaikuttavien voimien momenttien summa on nolla, $\\Sigma M = 0$, mitä tahansa pistettä kohti laskettuna. Momenttipiste kannattaa valita tuntemattoman voiman vaikutuspisteeseen, jolloin sen momentti on nolla.",
+    "lessons": [
+      "fy5-2"
+    ],
+    "see_also": [
+      "tasapaino"
+    ],
+    "locked": false
+  },
+  {
+    "term": "painopiste",
+    "definition": "Piste, jossa kappaleen paino voidaan ajatella vaikuttavan, kun lasketaan painon momenttia. Tasa-aineisen ja symmetrisen kappaleen painopiste on sen keskipisteessä. Tuettu kappale pysyy pystyssä, kun painopisteen kautta kulkeva pystysuora kulkee tukipinnan kautta.",
+    "lessons": [
+      "fy5-2"
+    ],
+    "see_also": [
+      "tasapaino"
+    ],
+    "locked": false
+  },
+  {
+    "term": "momentti",
+    "definition": "Voiman vääntövaikutuksen suuruus kiertoakselin suhteen: voiman suuruuden ja voiman varren tulo, $M = Fr$. Yksikkö on newtonmetri ($\\text{Nm}$). Vastapäivään kiertävä momentti on positiivinen ja myötäpäivään kiertävä negatiivinen.",
+    "lessons": [
+      "fy5-1"
+    ],
+    "see_also": [
+      "vääntövaikutus",
+      "voiman varsi",
+      "kiertoakseli"
+    ],
+    "locked": false
+  },
+  {
+    "term": "vääntövaikutus",
+    "definition": "Voiman kyky kiertää kappaletta kiertoakselin ympäri. Se riippuu voiman suuruudesta, suunnasta ja vaikutuskohdasta, ja sen suuruutta mitataan momentilla.",
+    "lessons": [
+      "fy5-1"
+    ],
+    "see_also": [
+      "momentti"
+    ],
+    "locked": false
+  },
+  {
+    "term": "voiman varsi",
+    "definition": "Kiertoakselin kohtisuora etäisyys voiman vaikutussuorasta. Jos vaikutussuora kulkee akselin kautta, varsi on nolla eikä voima kierrä kappaletta.",
+    "lessons": [
+      "fy5-1"
+    ],
+    "see_also": [
+      "momentti",
+      "kiertoakseli"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kiertoakseli",
+    "definition": "Suora, jonka ympäri kappale kiertyy, esimerkiksi oven saranoiden kautta kulkeva suora tai mutterin pultti. Momentit lasketaan aina jonkin kiertoakselin suhteen.",
+    "lessons": [
+      "fy5-1"
+    ],
+    "see_also": [
+      "momentti",
+      "voiman varsi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "ympyräliike",
+    "definition": "Liike, jonka rata on ympyrä: kappale pysyy koko ajan samalla etäisyydellä, radan säteen päässä, keskipisteestä. Tasaisessa ympyräliikkeessä vauhti pysyy samana, mutta nopeuden suunta muuttuu koko ajan.",
+    "lessons": [
+      "fy5-3"
+    ],
+    "see_also": [
+      "ratanopeus",
+      "kierrosaika"
+    ],
+    "locked": false
+  },
+  {
+    "term": "ratanopeus",
+    "definition": "Nopeuden suuruus ympyräradalla: kuljettu matka jaettuna ajalla. Tasaisessa ympyräliikkeessä v = 2πr/T, missä r on radan säde ja T kierrosaika. Nopeus on radan tangentin suuntainen.",
+    "lessons": [
+      "fy5-3"
+    ],
+    "see_also": [
+      "ympyräliike",
+      "kierrosaika",
+      "pyörimistaajuus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kierrosaika",
+    "definition": "Aika, jossa ympyräliikkeessä oleva kappale kiertää radan kerran. Tunnus T, yksikkö sekunti.",
+    "lessons": [
+      "fy5-3"
+    ],
+    "see_also": [
+      "pyörimistaajuus",
+      "ratanopeus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "pyörimistaajuus",
+    "definition": "Kierrosten määrä aikayksikössä, kierrosajan käänteisluku f = 1/T. Yksikkö 1/s; käytännössä myös kierroksina minuutissa.",
+    "lessons": [
+      "fy5-3"
+    ],
+    "see_also": [
+      "kierrosaika",
+      "ratanopeus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "normaalikiihtyvyys",
+    "definition": "Tasaisessa ympyräliikkeessä olevan kappaleen kiihtyvyys $\\overline{a}_\\text{n}$, joka osoittaa kohti radan keskipistettä ja on kohtisuorassa nopeutta vastaan. Sen suuruus on $a_\\text{n} = \\tfrac{v^2}{r}$. Se muuttaa nopeuden suuntaa mutta ei vauhtia.",
+    "lessons": [
+      "fy5-4"
+    ],
+    "see_also": [
+      "keskeiskiihtyvyys",
+      "keskeisvoima",
+      "ympyräliike"
+    ],
+    "locked": false
+  },
+  {
+    "term": "keskeiskiihtyvyys",
+    "definition": "Toinen nimi normaalikiihtyvyydelle: tasaisessa ympyräliikkeessä kohti radan keskipistettä osoittava kiihtyvyys, suuruudeltaan $\\tfrac{v^2}{r}$.",
+    "lessons": [
+      "fy5-4"
+    ],
+    "see_also": [
+      "normaalikiihtyvyys",
+      "keskeisvoima"
+    ],
+    "locked": false
+  },
+  {
+    "term": "keskeisvoima",
+    "definition": "Ympyräliikkeessä olevaan kappaleeseen vaikuttavien voimien summa, joka osoittaa kohti radan keskipistettä; tasaisessa ympyräliikkeessä sen suuruus on $m\\tfrac{v^2}{r}$. Se ei ole oma voiman lajinsa, vaan todellisten voimien, kuten kitkan, jännitysvoiman tai painon, summa. Ulospäin osoittavaa keskipakoisvoimaa ei ole.",
+    "lessons": [
+      "fy5-4"
+    ],
+    "see_also": [
+      "normaalikiihtyvyys",
+      "keskeiskiihtyvyys"
+    ],
+    "locked": false
+  },
+  {
+    "term": "jaksollinen liike",
+    "definition": "Liike, joka toistuu samanlaisena yhtä pitkin väliajoin, esimerkiksi tasainen ympyräliike tai heilurin heilahtelu.",
+    "lessons": [
+      "fy5-7"
+    ],
+    "see_also": [
+      "värähtelyliike",
+      "jaksonaika"
+    ],
+    "locked": false
+  },
+  {
+    "term": "värähtelyliike",
+    "definition": "Jaksollinen liike, jossa kappale liikkuu edestakaisin tasapainoasemansa molemmin puolin, kuten jousen varassa värähtelevä punnus tai heiluri.",
+    "lessons": [
+      "fy5-7"
+    ],
+    "see_also": [
+      "jaksollinen liike",
+      "tasapainoasema",
+      "amplitudi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "tasapainoasema",
+    "definition": "Värähtelijän asema, jossa se pysyisi levossa; poikkeama mitataan siitä, ja siinä poikkeama on nolla.",
+    "lessons": [
+      "fy5-7"
+    ],
+    "see_also": [
+      "värähtelyliike",
+      "amplitudi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "jaksonaika",
+    "definition": "Yhden täyden värähdyksen tai kierroksen kesto: aika, jonka kuluttua kappale on taas samassa paikassa ja liikkuu samaan suuntaan. Tunnus T, yksikkö sekunti (s).",
+    "lessons": [
+      "fy5-7"
+    ],
+    "see_also": [
+      "taajuus",
+      "kierrosaika"
+    ],
+    "locked": false
+  },
+  {
+    "term": "taajuus",
+    "definition": "Täysien värähdysten määrä aikayksikössä, jaksonajan käänteisluku f = 1/T. Yksikkö hertsi, 1 Hz = 1 1/s.",
+    "lessons": [
+      "fy5-7"
+    ],
+    "see_also": [
+      "jaksonaika",
+      "pyörimistaajuus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "amplitudi",
+    "definition": "Värähtelijän suurin poikkeama tasapainoasemasta. Ääriasemien välinen etäisyys on kaksi kertaa amplitudi. Tunnus A.",
+    "lessons": [
+      "fy5-7"
+    ],
+    "see_also": [
+      "tasapainoasema",
+      "värähtelyliike"
+    ],
+    "locked": false
+  },
+  {
+    "term": "vaihe",
+    "definition": "Kohta, jossa värähdystä värähtelijä on tietyllä hetkellä. Sovitusmallissa A sin(Bt + C) + D vakio C kertoo vaiheen hetkellä t = 0; C on nolla, kun ajanotto alkaa tasapainoaseman ohituksesta positiiviseen suuntaan.",
+    "lessons": [
+      "fy5-7"
+    ],
+    "see_also": [
+      "jaksonaika"
+    ],
+    "locked": false
+  },
+  {
+    "term": "sinifunktion sovitus",
+    "definition": "Sinikäyrän x = A sin(2πt/T) valitseminen niin, että se kulkee mittauspisteiden joukon keskeltä; sovituksesta saadaan värähtelyn amplitudi ja jaksonaika.",
+    "lessons": [
+      "fy5-7"
+    ],
+    "see_also": [
+      "amplitudi",
+      "jaksonaika",
+      "suoran sovitus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kiertorata",
+    "definition": "Rata, jota pitkin kappale kiertää toista kappaletta gravitaation varassa, esimerkiksi satelliitin rata Maan ympäri tai Maan rata Auringon ympäri. Monet kiertoradat ovat lähes ympyröitä.",
+    "lessons": [
+      "fy5-6"
+    ],
+    "see_also": [
+      "satelliitti",
+      "gravitaatio"
+    ],
+    "locked": false
+  },
+  {
+    "term": "satelliitti",
+    "definition": "Kappale, joka kiertää toista, paljon massiivisempaa kappaletta gravitaation varassa. Kuu on Maan luonnollinen satelliitti; ihmisen rakentamia satelliitteja ovat esimerkiksi sää- ja GPS-satelliitit ja avaruusasema ISS.",
+    "lessons": [
+      "fy5-6"
+    ],
+    "see_also": [
+      "kiertorata"
+    ],
+    "locked": false
+  },
+  {
+    "term": "painottomuus",
+    "definition": "Tila, jossa kappaleeseen vaikuttaa vain gravitaatio ja se putoaa vapaasti, joten tukivoima on nolla. Paino eli gravitaatiovoima vaikuttaa painottomuudessakin; esimerkiksi avaruusaseman astronautit ovat painottomia, koska he ja asema putoavat samalla kiihtyvyydellä.",
+    "lessons": [
+      "fy5-6"
+    ],
+    "see_also": [
+      "vapaa pudotus",
+      "gravitaatio"
+    ],
+    "locked": false
+  },
+  {
+    "term": "gravitaatiolaki",
+    "definition": "Newtonin gravitaatiolaki: kaksi kappaletta vetävät toisiaan voimalla $F = \\gamma \\tfrac{m_1 m_2}{r^2}$, joka on suoraan verrannollinen kumpaankin massaan ja kääntäen verrannollinen keskipisteiden välisen etäisyyden neliöön. Voimat ovat yhtä suuret ja vastakkaissuuntaiset.",
+    "lessons": [
+      "fy5-5"
+    ],
+    "see_also": [
+      "gravitaatio",
+      "gravitaatiovakio",
+      "gravitaatiokenttä"
+    ],
+    "locked": false
+  },
+  {
+    "term": "gravitaatiovakio",
+    "definition": "Gravitaatiolain verrannollisuuskerroin $\\gamma = 6{,}674 \\cdot 10^{-11}\\,\\tfrac{\\text{N}\\cdot\\text{m}^2}{\\text{kg}^2}$ (englanniksi G). Se on kahden $1\\,\\text{kg}$:n kappaleen välisen voiman suuruus newtoneina, kun niiden etäisyys on $1\\,\\text{m}$.",
+    "lessons": [
+      "fy5-5"
+    ],
+    "see_also": [
+      "gravitaatiolaki"
+    ],
+    "locked": false
+  },
+  {
+    "term": "gravitaatiokenttä",
+    "definition": "Kappaleen ympärillä oleva kenttä, jossa jokaiseen kappaleeseen vaikuttaa gravitaatiovoima $\\overline{F} = m\\overline{g}$. Kentän voimakkuus $g = \\gamma \\tfrac{M}{r^2}$ osoittaa kohti kentän synnyttävän kappaleen keskipistettä, ja se on vapaasti putoavan kappaleen kiihtyvyys; yksikkö $\\text{m/s}^2$.",
+    "lessons": [
+      "fy5-5"
+    ],
+    "see_also": [
+      "gravitaatiolaki",
+      "putoamiskiihtyvyys",
+      "paino"
+    ],
+    "locked": false
+  },
+  {
+    "term": "harmoninen värähtely",
+    "definition": "Värähtely, jonka aiheuttaa harmoninen voima F = −kx: palauttava voima on suoraan verrannollinen poikkeamaan tasapainoasemasta ja osoittaa kohti sitä. Paikka ajan funktiona on siniaallon muotoinen käyrä, ja jaksonaika ei riipu amplitudista. Jousen ja kappaleen jaksonaika on T = 2π√(m/k).",
+    "lessons": [
+      "fy5-9"
+    ],
+    "see_also": [
+      "harmoninen voima",
+      "jaksonaika",
+      "amplitudi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "heiluri",
+    "definition": "Kiinnityskohdan alapuolella riippuva kappale, joka heilahtelee painovoiman vaikutuksesta tasapainoasemansa molemmin puolin. Matemaattisessa heilurissa pistemäinen kappale riippuu massattoman langan varassa; pienillä heilahduksilla sen jaksonaika on T = 2π√(l/g), eikä se riipu kappaleen massasta.",
+    "lessons": [
+      "fy5-9"
+    ],
+    "see_also": [
+      "harmoninen värähtely",
+      "jaksonaika"
+    ],
+    "locked": false
+  },
+  {
+    "term": "värähtelyn energia",
+    "definition": "Värähtelijän mekaaninen energia, liike-energian ja potentiaalienergian summa. Ilman kitkaa ja ilmanvastusta se säilyy; jousen ja kappaleen värähtelyssä se on E = ½kA², missä A on amplitudi. Ääriasennoissa energia on potentiaalienergiaa, tasapainoasemassa liike-energiaa.",
+    "lessons": [
+      "fy5-9"
+    ],
+    "see_also": [
+      "jousen potentiaalienergia",
+      "harmoninen värähtely"
+    ],
+    "locked": false
+  },
+  {
+    "term": "vaimeneminen",
+    "definition": "Värähtelyn amplitudin pieneneminen, kun kitka tai ilmanvastus muuttaa värähtelijän mekaanista energiaa sisäenergiaksi. Pienessä vaimenemisessa jaksonaika pysyy lähes samana.",
+    "lessons": [
+      "fy5-9"
+    ],
+    "see_also": [
+      "värähtelyn energia",
+      "amplitudi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "harmoninen voima",
+    "definition": "Voima, jonka suuruus on suoraan verrannollinen kappaleen poikkeamaan tasapainoasemasta ja joka osoittaa aina kohti tasapainoasemaa: $F = -kx$. Miinusmerkki kertoo, että voima on poikkeamaa vastakkaissuuntainen. Esimerkiksi jousen voima on harmoninen, kun jousta ei venytetä liikaa.",
+    "lessons": [
+      "fy5-8"
+    ],
+    "see_also": [
+      "jousivakio",
+      "tasapainoasema",
+      "harmoninen värähtely"
+    ],
+    "locked": false
+  },
+  {
+    "term": "jousivakio",
+    "definition": "Jousen jäykkyyttä kuvaava vakio $k$ lausekkeissa $F = -kx$ ja $F_\\text{v} = kx$: voima venymän metriä kohti, yksikkö $\\text{N/m}$. Se määritetään mittaamalla jousta venyttävän voiman ja venymän $(x, F_\\text{v})$-kuvaajan kulmakertoimena.",
+    "lessons": [
+      "fy5-8"
+    ],
+    "see_also": [
+      "harmoninen voima",
+      "jousen potentiaalienergia"
+    ],
+    "locked": false
+  },
+  {
+    "term": "jousen potentiaalienergia",
+    "definition": "Venytettyyn tai puristettuun jouseen varastoitunut energia $E_\\text{p} = \\tfrac{1}{2}kx^2$, missä $k$ on jousivakio ja $x$ venymä tai puristuma lepopituudesta. Se on venyttävän voiman tekemä työ eli $(x, F_\\text{v})$-kuvaajan alle jäävän kolmion pinta-ala.",
+    "lessons": [
+      "fy5-8"
+    ],
+    "see_also": [
+      "jousivakio",
+      "potentiaalienergia"
     ],
     "locked": false
   },

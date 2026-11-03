@@ -1,0 +1,10 @@
+[
+ {
+  "q": "Kirjoita kappaleen kaksi tasapainoehtoa: etenemisen ja pyörimisen suhteen.",
+  "a": "Etenemisen suhteen voimien summa on nolla, $\\Sigma\\overline{F} = \\overline{0}$. Pyörimisen suhteen voimien momenttien summa on nolla, $\\Sigma M = 0$, minkä tahansa pisteen suhteen."
+ },
+ {
+  "q": "Kappaleeseen vaikuttavien voimien summa on nolla, mutta momenttien summa ei ole. Mitä kappaleelle tapahtuu?",
+  "a": "Kappale alkaa kiertyä, vaikka sen painopiste ei lähde liikkeelle. Esimerkiksi viivain, jonka päihin vaikuttaa yhtä suuret ja vastakkaiset voimat eri suorilla, kiertyy paikallaan."
+ }
+]

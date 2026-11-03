@@ -38,7 +38,8 @@ import courses, figlib, i18n
 ROOT = courses.ROOT
 CATALOG = ROOT / "docs" / "figures" / "catalog.json"
 KINDS = ("graph", "diagram", "illustration", "photo", "image")
-REF = re.compile(r'"(?:model_)?figure"\s*:\s*"([^"]+)"')
+REF = re.compile(r'"(?:model_)?figure"\s*:\s*"([^"]+)"|<svg data-fig=\\?"([a-z0-9-]+/[A-Za-z0-9_-]+)\\?"></svg>')
+EMBED = re.compile(r'<svg data-fig="([a-z0-9-]+/[A-Za-z0-9_-]+)"></svg>')   # a figure by id inside a text (embed())
 FIG_ID = re.compile(r"^([a-z0-9-]+)/([A-Za-z0-9_-]+)$")
 PHOTO, IMAGE = (".jpg", ".jpeg", ".webp", ".avif"), (".png", ".svg", ".gif")
 
@@ -123,6 +124,24 @@ def figure_html(fid, lang=i18n.SOURCE, read=None):
     return f'<div class="fig task-fig">{render(fid, lang, read)}</div>'
 
 
+def embed(text):
+    """A figure by its id inside a markdown text, where a task field cannot reach (a model solution's **Voimakuvio:**
+    step shows its drawn diagram, teacher 2026-10-30): each empty `<svg data-fig="<owner>/<name>"></svg>` becomes a
+    token on its own paragraph. (text, {token: id}); restore() puts the figures in after markdown."""
+    figs = {}
+    def sub(m):
+        tok = f"FIGREFTOKEN{len(figs)}X"; figs[tok] = m.group(1)
+        return f"\n\n{tok}\n\n"
+    return EMBED.sub(sub, text), figs
+
+
+def restore(html_text, figs, lang=i18n.SOURCE, read=None):
+    """The tokens of embed() -> each figure drawn in `lang` in its figure frame (figure_html)."""
+    for tok, fid in figs.items():
+        html_text = re.sub(rf"(?:<p>)?{tok}(?:</p>|<br\s*/?>)?", lambda m, fid=fid: figure_html(fid, lang, read), html_text)
+    return html_text
+
+
 # --- the source slice of one figure (what a review of a task that uses it judges) ------------------------------------
 def source_slice(text, name):
     """The code of figures.py that draws figure `name`: its FIGURES entry and, transitively, every top-level function,
@@ -167,8 +186,9 @@ def without_reuse(text):
 
 
 def refs_in(text):
-    """Figure ids a text refers to with "figure": "<id>" (exercises.json, inquiry.json, tasks.json)."""
-    return list(dict.fromkeys(REF.findall(text or "")))
+    """Figure ids a text refers to with "figure": "<id>" (exercises.json, inquiry.json, tasks.json) or embeds with an
+    empty `<svg data-fig="<owner>/<name>"></svg>` (a solution step, embed())."""
+    return list(dict.fromkeys(a or b for a, b in REF.findall(text or "")))
 
 
 def slice_of(fid, read):
@@ -252,9 +272,11 @@ def _uses():
             oid = parts[1] if parts[1] != "sovella" else f"{parts[0].lower()}-sovella"
             for fid in refs_in(text): uses.setdefault(fid, []).append(f"{lang}:{rel}")
             if lang != i18n.SOURCE: continue
-            for i, m in enumerate(re.finditer(r"<svg\b[^>]*>", text.replace('\\"', '"'))):
+            src = text.replace('\\"', '"')
+            for i, m in enumerate(re.finditer(r"<svg\b[^>]*>", src)):
                 tag = m.group(0); name = re.search(r'data-fig="([^"]*)"', tag)
                 label = html.unescape((ARIA.search(tag) or [None, ""])[1])
+                if name and "/" in name.group(1) and src.startswith("</svg>", m.end()): continue   # embedded by id: counted by refs_in
                 if name and "/" not in name.group(1):
                     sec = _section(text, m.start()) if f.suffix == ".md" else ""
                     where = f"{lang}:{rel}" + (f" § {sec}" if sec else "")

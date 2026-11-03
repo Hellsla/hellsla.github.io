@@ -7,8 +7,8 @@
     "calculate the temperature of thermal equilibrium when part of the substance melts."
   ],
   "prior": [
-    "The quantity of heat needed to change a temperature is $Q = cm\\Delta T$ (chapter Heating and cooling of a substance: Q = cmΔT)",
-    "In an insulated container, the quantity of heat given out by the hot object is equal to the quantity of heat taken in by the cold object (chapter Heating and cooling of a substance: Q = cmΔT)",
+    "The quantity of heat needed to change a temperature is $Q = cm\\Delta T$ (chapter Heating and cooling of a substance: $Q = cm\\Delta T$)",
+    "In an insulated container, the quantity of heat given out by the hot object is equal to the quantity of heat taken in by the cold object (chapter Heating and cooling of a substance: $Q = cm\\Delta T$)",
     "During a change of state the temperature stays constant, and melting ice needs $Q = sm$ (chapter Changes of state)"
   ],
   "activities": [

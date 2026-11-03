@@ -1,4 +1,4 @@
-# Ideaalikaasun tilanyhtälö pV = nRT
+# Ideaalikaasun tilanyhtälö $pV = nRT$
 
 > **Miksi** heliumpallo on paljon kevyempi kuin samankokoinen ilmapallo? Onko siinä vähemmän kaasua?
 

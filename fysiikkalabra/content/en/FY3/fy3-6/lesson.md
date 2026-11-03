@@ -1,4 +1,4 @@
-# Heating and cooling of matter: Q = cmΔT
+# Heating and cooling of matter: $Q = cm\Delta T$
 
 > **Why** does the sand on a beach burn your feet already in the late morning, when the water is still cool, even though the Sun has shone on both for the same time?
 

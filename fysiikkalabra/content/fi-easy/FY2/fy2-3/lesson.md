@@ -1,4 +1,4 @@
-# Teho: P = ΔE/Δt
+# Teho: $P = \Delta E/\Delta t$
 
 > **Miksi** sähkölaskua ei voi päätellä pelkästä laitteen tehosta?
 

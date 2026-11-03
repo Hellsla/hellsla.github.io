@@ -222,7 +222,7 @@ If the force changes during the motion, the work is the area between the force c
   <foreignObject x="347.5" y="291.5" width="158" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{varying force}$</div></foreignObject>
 </svg>
 
-When you lift an object upwards at a steady speed, the lifting force is equal to the weight of the object $G = mg$ (chapter *Force as a measure of interaction and weight G = mg*). The work of lifting to a height $h$ is therefore:
+When you lift an object upwards at a steady speed, the lifting force is equal to the weight of the object $G = mg$ (chapter *Force as a measure of interaction and weight $G = mg$*). The work of lifting to a height $h$ is therefore:
 ```latex
 W = G h = m g h
 ```

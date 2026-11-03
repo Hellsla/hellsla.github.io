@@ -82,6 +82,15 @@ docstring is the mapping. Main, the weekly run and a manual run (`workflow_dispa
 p5.js 1.9.4 and KaTeX 0.16.11 are vendored in `templates/vendor/` and copied to `site/vendor/` on build; fonts
 are self-hosted. Pages and headless tests work without a CDN.
 
+## Printed A5 book
+`python scripts/print_book.py FY1 [--lang fi|en|fi-easy]` prints a whole course as one A5 book from the committed
+`site/` pages (teacher 2026-11-03): cover, contents, the theory and worked examples of every chapter as the site shows
+them, and a QR code per chapter to its web page for the simulation, tasks and model solutions. Tasks, predictions,
+the investigation and model solutions are left out by print CSS only; the content is not edited. It writes
+`print/<C>-<lang>-A5.pdf` and `print/<C>-<lang>-A4-tulostus.pdf` (git-ignored): two A5 pages per A4 sheet in
+cut-and-stack order. Print the A4 file double-sided, flipped on the short edge, at 100 %; cut the stack in half, put
+the left half on top of the right half and bind the left edge. Needs `pip install playwright segno pypdf reportlab`.
+
 ## Curriculum
 `curriculum.json` covers FY1–FY8 with module goals, central contents and a proposed lesson-slot list per
 module, generated from the LOPS 2019 texts in `docs/lops2019/`. The reference lesson is `content/_gold/`.
