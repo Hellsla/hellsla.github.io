@@ -1,16 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: e4cde2b05daf8db2
+CONTENT-HASH: ced1564d1183b779
 
 ## Blocking
 (none)
 
 ## Polish
-- Experiment 2 table columns were Finnish (box name, topple flag); fixed, now English.
-- Awkward phrasings fixed: "all the time" to "always", "still at" to "still ... at", "at at least" to "no fewer than".
+- lesson.md (hero) — Polish: the closing sentence of the alt text ('this raises the question...') does a job the Pohdinta already does; the alt text may describe only what is seen.
 
 ## Checked
-- Every prediction, experiment, theory stage, worked example (7 stages), error-finding, drawing task, numeric task with 3 hints and 3 mistakes, three checks and the exit ticket are present and mean the same as the Finnish.
-- Prediction options keep their misconception-based feedback; no answer is given away earlier than in the Finnish.
-- Level of English suits 16-19-year-olds; British spelling and textbook terms (spanner-type vocabulary not needed here; lever arm, centre of mass, topple).
-- Captures: contact-1, contact-3, contact-5, contact-6, fy5-2-exp-koe-2-390-2 (before fix), fy5-2-lab-1280-2, fy5-2-sim-1280.
-- Delta: the new force diagrams after the Free-body diagram paragraph of siirto and tarkistus-2 appear only inside the opened solution (after the model answer is requested), so nothing is given away early; they support the free-body step and match the text.
+- Delta only: the hero illustration and its alt text; the rest of the lesson is as previously approved.
+- Plank on two trestles, painter between them, a can on the unsupported overhang: this is exactly the Pohdinta situation. Nothing is annotated, so the answer is not given. Statics is plausible (painter's weight between supports, can on the overhang, nothing beneath it).
+- The English alt text matches the picture element by element and is in correct language; the opening question's wording is unchanged.
+- Hero is legible at 390 px and 1280 px (top captures) and carries no text.

@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 3656c1e180151112
+CONTENT-HASH: d431b09626d1bc1c
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] sim canvas keeps $x_\text{pp}$, $F_\text{k}$ (shared code, as in Finnish).
+- [Minor] hero alt: the plank overhang is described as reaching "far" beyond the trestle, but in the picture it is moderate; the pink (still unpainted) part of the wall is not mentioned. Soften "far" and optionally add the two-tone wall.
 
 ## Checked
-- Captures opened: contact-1 (top, sim, figures 1-8, worked example), contact-4 (lab and theory at 1280, predict, check, exit ticket).
-- Layout at 345 px OK (check_layout); figure words Finnish and consistent; decimal comma.
-- Delta captures opened: fy5-2-open-tarkista-1280-1 and -2 (seesaw diagram renders in the solution: labels F_l, F, G, N, 'keinulauta', 1,50 m and 1,20 m, positive-rotation arrow, nothing clipped); the diving-board solution diagram is inside a collapsed optional step and not in a capture, its labels (F_p, F_h, 'hyppylauta') checked in the built preview/fi-easy/fy5-2.html. check_layout at 345 px OK. Scores unchanged.
+- Delta (illustration only). Opened fy5-2-top-390 (fi), fy5-2-intro-1280 (fi), fy5-2-fig-1-390 in fi, en and fi-easy (same picture in all three, only rendering noise differs).
+- Hero is a flat vector scene in the figure palette on the paper tone, no text in the picture, subject in the middle third, readable at 366 px width, nothing clipped except the intended close-up crop; 16:9-ish column width, layout around it intact.
+- Alt text (fi-easy) read against the picture: it describes what is drawn, with no contradiction; language natural and consistent with the chapter's opening question.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

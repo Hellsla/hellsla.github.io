@@ -1,13 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 59746f905b5818b2
-
+CONTENT-HASH: e549ff46a056d756
 ## Blocking
-
+(none)
 ## Polish
-- lesson.md — "Lähde on esimerkiksi käsi, jousen pää tai kaiutin, ja taajuus on sen värähtelyn taajuus" on hieman raskas; voisi jakaa kahdeksi virkkeeksi.
-
+- hero — Alt says the hump moves towards the post; the still image cannot show direction (clear from the girl's position), fine.
 ## Checked
-- Oppimispolku sama kuin suomenkielisessä: Pohdinta → Ennusta (2) → Tutki (3 koetta, johtopäätös neljällä kriteerillä) → Teoriatiivistelmä → Sovella → Tarkista osaamisesi (3) → Exit ticket → Tehtävät.
-- Lyhyet virkkeet, yksi asia virkkeessä, termit selitetty; mitään vaihetta, perustelua tai palautetta ei ole pudotettu. Tavoitteet täydentävät "Tällä tunnilla opit" -lauseen.
-- Korjattu koe 2:n ohje: "taajuudella $0{,}5\,\text{Hz}$:llä" (kaksi sijaa) → "taajuudella $0{,}5\,\text{Hz}$".
-- Kaavio: top-390, contact-1 (sim, kuvat, esimerkki, Pohdinta, Ennusta), contact-3 (Tehtävät-otsikko, kokeet 1–3, sim 1280 px); sim toimii 390 px:n leveydellä.
+- Delta review: only the hero illustration and its alt text changed; the rest stays as previously approved.
+- Hero shows the opening phenomenon without answering it: single hump on a taut rope, girl at one end, bell on the post at the other; no wave-carries-matter error; alt matches (lake, wooded shore, red cottage, birches).
+- Alt text is in short plain-Finnish sentences, matching the easy-language version; no text inside the picture; the 390 px capture shows the picture intact.

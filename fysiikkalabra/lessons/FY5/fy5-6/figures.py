@@ -3,7 +3,7 @@ Force red, velocity blue, acceleration orange (FY4/FY5). The orbits of the canno
 velocity Verlet step as the simulation, so the drawn paths are the computed ones."""
 import math
 from figlib import (Fig, Axes, fi, INK, MUTED, WHITE, RULE, RULE_LIGHT, HEAT, HEAT_LIGHT, HOT, COLD, COLD_LIGHT, GLASS,
-                    WATER, WATER_LIGHT, SAND_DARK, ALUMINIUM, METAL_EDGE, IRON, ICE, GOOD, n)
+                    WATER, WATER_LIGHT, SAND, SAND_DARK, GRAIN, COPPER, ALUMINIUM, METAL_EDGE, IRON, ICE, GOOD, n)
 from fbd import FBD, FORCE, VELOCITY, ACCEL, open_head
 import herolib as H
 
@@ -217,46 +217,134 @@ def model_fbd():
     return f.svg()
 
 
+def _hull(pts):
+    """The convex hull of screen points (monotone chain), counterclockwise."""
+    pts = sorted(set((round(x, 2), round(y, 2)) for x, y in pts))
+    def half(seq):
+        h = []
+        for p in seq:
+            while len(h) >= 2 and (h[-1][0] - h[-2][0]) * (p[1] - h[-2][1]) - (h[-1][1] - h[-2][1]) * (p[0] - h[-2][0]) <= 0: h.pop()
+            h.append(p)
+        return h
+    lo, hi = half(pts), half(pts[::-1])
+    return lo[:-1] + hi[:-1]
+
+
+def _poly(pts):
+    return "M" + " L".join(f"{n(x)},{n(y)}" for x, y in pts) + " Z"
+
+
+def _blob(cx, cy, rx, ry, seed, k=26, rough=0.35):
+    """An irregular closed outline (a coastline or a cloud bank) around (cx, cy), flattened to ry/rx."""
+    pts = []
+    for i in range(k):
+        a = 2 * math.pi * i / k
+        r = 1 + rough * (H.rnd(i, seed) - 0.5) + 0.5 * rough * math.sin(3 * a + seed)
+        pts.append((cx + rx * r * math.cos(a), cy + ry * r * math.sin(a)))
+    d = f"M{n((pts[-1][0] + pts[0][0]) / 2)},{n((pts[-1][1] + pts[0][1]) / 2)}"
+    for i, p in enumerate(pts):
+        q = pts[(i + 1) % k]
+        d += f" Q{n(p[0])},{n(p[1])} {n((p[0] + q[0]) / 2)},{n((p[1] + q[1]) / 2)}"
+    return d + " Z"
+
+
 def hero():
-    """The chapter's opening illustration: the space station above the Earth's limb, an astronaut floating at a window."""
-    f = H.hero("fy56-hero", "Kuvitus: avaruusasema kiertää Maata. Alhaalla näkyy Maan kaareutuva pinta, jossa on merta, "
-               "maata ja pilviä, ja ohut ilmakehä. Asemalla on pitkä ristikkorunko, suuret aurinkopaneelit ja asuinmoduulit. "
-               "Moduulin ikkunassa näkyy astronautti leijumassa.")
-    H.space(f, seed=6, count=90)
-    # the Earth's limb: a large disc whose top shows at the bottom
-    f.defs_add(f'<radialGradient id="fy56h-ocean" cx="0.4" cy="0.1" r="0.9"><stop offset="0" stop-color="{WATER_LIGHT}"/><stop offset="1" stop-color="{WATER}"/></radialGradient>')
-    f.add(f'<circle cx="600" cy="1580" r="1150" fill="{ICE}" fill-opacity="0.35"/>')
-    f.circle(600, 1580, 1110, "url(#fy56h-ocean)")
-    for x, y, rx, ry in ((260, 520, 170, 50), (720, 486, 220, 44), (1040, 560, 130, 40)):
-        f.add(f'<ellipse cx="{x}" cy="{y}" rx="{rx}" ry="{ry}" fill="{SAND_DARK}"/>')
-    for x, y, w in ((140, 480, 160), (470, 455, 200), (880, 470, 180), (600, 540, 240), (1080, 505, 120)):
-        f.path(f"M{x},{y} q{n(w / 4)},-14 {n(w / 2)},0 t{n(w / 2)},0", stroke=WHITE, w=12, extra='stroke-linecap="round" stroke-opacity="0.85"')
-    # the station: truss, solar arrays, radiators and modules
-    cx, cy = 600, 230
-    f.rect(cx - 330, cy - 9, 660, 18, ALUMINIUM, INK, 2.5, 3)
-    for k in range(-15, 16):
-        f.line(cx + k * 22, cy - 9, cx + k * 22 + 11, cy + 9, METAL_EDGE, 2)
-    f.defs_add(f'<linearGradient id="fy56h-panel" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="{COLD}"/><stop offset="1" stop-color="{WATER}"/></linearGradient>')
-    for side in (-1, 1):
-        for dx in (250, 330):
-            x = cx + side * dx - 30
-            for y0 in (cy - 170, cy + 22):
-                f.rect(x, y0, 60, 148, "url(#fy56h-panel)", INK, 2.5, 2)
-                for j in range(1, 6):
-                    f.line(x, y0 + j * 148 / 6, x + 60, y0 + j * 148 / 6, ICE, 1.5)
-            f.line(x + 30, cy - 22, x + 30, cy + 22, INK, 3)
-    for dx in (-150, 150):
-        f.rect(cx + dx - 20, cy + 14, 40, 80, WHITE, INK, 2.5, 2)
-    f.rect(cx - 110, cy - 46, 220, 70, WHITE, INK, 3, 30)
-    f.rect(cx - 30, cy - 86, 60, 172, WHITE, INK, 3, 26)
-    for x in (cx - 80, cx + 50):
-        f.line(x, cy - 46, x, cy + 24, RULE, 2)
-    # a round window with a floating astronaut
-    f.circle(cx + 76, cy - 11, 22, GLASS, INK, 3)
-    f.add(f'<g transform="rotate(-28 {cx + 76} {cy - 11})">')
-    f.circle(cx + 76, cy - 22, 7, WHITE, INK, 2)
-    f.rect(cx + 70, cy - 15, 12, 18, WHITE, INK, 2, 4)
+    """The chapter's opening illustration: the ISS in an oblique view above the Earth's limb, drawn from its real layout
+    (a 110 m truss, four pairs of solar wings, radiators, the module chain across the truss) in one projection."""
+    f = H.hero("fy56-hero", "Kuvitus: Kansainvälinen avaruusasema ISS kiertää Maata mustaa avaruutta vasten. Aseman poikki kulkee pitkä "
+               "ristikkorunko, jonka kummassakin päässä on kaksi paria suuria kullanruskeita aurinkopaneelisiipiä. Rungon keskeltä "
+               "lähtee sen poikki lieriön muotoisten asuinmoduulien ketju, ja rungosta riippuu valkoisia jäähdytyspaneeleita. "
+               "Alhaalla näkyy Maan kaareutuva reuna: sinistä merta, vihreää ja ruskeaa maata, valkoisia pilviä ja ohut sininen ilmakehä.")
+    H.space(f, seed=6, count=80)
+    # the Earth's limb: ocean, land, clouds, the haze near the edge and the thin blue atmosphere
+    ex, ey, er = 600, 2160, 1690
+    f.add(f'<circle cx="{ex}" cy="{ey}" r="{er + 26}" fill="{COLD_LIGHT}" fill-opacity="0.18"/>')
+    f.add(f'<circle cx="{ex}" cy="{ey}" r="{er + 11}" fill="{ICE}" fill-opacity="0.45"/>')
+    f.defs_add(f'<radialGradient id="fy56h-sea" gradientUnits="userSpaceOnUse" cx="{ex}" cy="{ey}" r="{er}"><stop offset="0.9" stop-color="{WATER}"/>'
+               f'<stop offset="0.975" stop-color="{COLD}"/><stop offset="1" stop-color="{WATER_LIGHT}"/></radialGradient>')
+    f.defs_add(f'<clipPath id="fy56h-clip"><circle cx="{ex}" cy="{ey}" r="{er}"/></clipPath>')
+    f.circle(ex, ey, er, "url(#fy56h-sea)")
+    f.add('<g clip-path="url(#fy56h-clip)">')
+    for cx, cy, rx, ry, sd in ((210, 560, 250, 52, 3), (930, 530, 300, 44, 7), (640, 610, 170, 30, 11)):   # land, foreshortened
+        f.path(_blob(cx, cy, rx, ry, sd), GOOD)
+        f.path(_blob(cx - rx * 0.2, cy, rx * 0.45, ry * 0.4, sd + 20, rough=0.6), INK, extra='fill-opacity="0.16"')      # darker forest
+        f.path(_blob(cx + rx * 0.35, cy + ry * 0.1, rx * 0.22, ry * 0.3, sd + 30, rough=0.6), GRAIN, extra='fill-opacity="0.4"')   # a dry plain
+    for k in range(48):                                               # cloud banks in streets along the limb
+        cx = 1200 * H.rnd(k, 21); cy = 478 + 120 * H.rnd(k, 22) ** 1.4
+        sc = 0.4 + (cy - 470) / 130
+        f.path(_blob(cx, cy, 70 * sc * (0.6 + H.rnd(k, 23)), 8 * sc * (0.7 + H.rnd(k, 24)), k + 40, k=16, rough=0.6), WHITE,
+               extra=f'fill-opacity="{0.55 + 0.35 * H.rnd(k, 25):.2f}"')
+    f.defs_add(f'<radialGradient id="fy56h-haze" gradientUnits="userSpaceOnUse" cx="{ex}" cy="{ey}" r="{er}"><stop offset="0.955" stop-color="{WHITE}" stop-opacity="0"/>'
+               f'<stop offset="1" stop-color="{ICE}" stop-opacity="0.8"/></radialGradient>')
+    f.circle(ex, ey, er, "url(#fy56h-haze)")
     f.add("</g>")
+    f.add(f'<circle cx="{ex}" cy="{ey}" r="{er + 2}" fill="none" stroke="{GLASS}" stroke-width="3" stroke-opacity="0.9"/>')
+
+    # the station, in metres: X along the truss, Y along the module chain (towards the viewer), Z away from the Earth
+    O, k = (600, 236), 6.6
+    def P(x, y, z): return (O[0] + k * (x - 0.42 * y), O[1] + k * (-0.1 * x + 0.32 * y - 0.95 * z))
+    def quad(a, b, c, d, fill, stroke=INK, w=2): f.path(_poly([P(*a), P(*b), P(*c), P(*d)]), fill, stroke, w)
+    def cyl(c0, c1, r, axis, fill, cap=True):
+        """A cylinder from c0 to c1 along the axis 'x' or 'y'; the near end cap drawn when cap."""
+        ring = lambda c: [P(*((c[0], c[1] + r * math.cos(t), c[2] + r * math.sin(t)) if axis == "x" else (c[0] + r * math.cos(t), c[1], c[2] + r * math.sin(t))))
+                          for t in (i * math.pi / 24 for i in range(48))]
+        f.path(_poly(_hull(ring(c0) + ring(c1))), fill, INK, 2)
+        if cap: f.path(_poly(ring(c1)), ALUMINIUM, INK, 1.5)
+    steel = H.steel(f, "fy56h-mod", vertical=True)
+    gold = H.grad(f, "fy56h-wing", SAND_DARK, COPPER)
+    def wing(x0, up, phi):
+        """One solar wing on the truss at X = x0: two blankets either side of a mast, 34 m long, tilted by phi."""
+        s, c = math.sin(phi), math.cos(phi)
+        sg = 1 if up else -1
+        y0, z0 = sg * 3 * s, sg * 3 * c
+        y1, z1 = sg * 37 * s, sg * 37 * c
+        for a, b in ((x0 - 5.8, x0 - 0.5), (x0 + 0.5, x0 + 5.8)):
+            quad((a, y0, z0), (b, y0, z0), (b, y1, z1), (a, y1, z1), gold, INK, 2)
+            for j in range(1, 9):
+                t = j / 9
+                p, q = P(a, y0 + (y1 - y0) * t, z0 + (z1 - z0) * t), P(b, y0 + (y1 - y0) * t, z0 + (z1 - z0) * t)
+                f.line(p[0], p[1], q[0], q[1], GRAIN, 1.5)
+            m0, m1 = P((a + b) / 2, y0, z0), P((a + b) / 2, y1, z1)
+            f.line(m0[0], m0[1], m1[0], m1[1], GRAIN, 1)
+        p, q = P(x0, 0, 0), P(x0, y1, z1)
+        f.line(p[0], p[1], q[0], q[1], INK, 2.5)
+    wings = [(-47, 0.5), (-34, 0.5), (34, 0.5), (47, 0.5)]
+    # behind the truss: the Russian segment (Zvezda with its own small wings, Zarya) and the lower solar wings
+    cyl((0, -36, -4), (0, -27, -4), 1.6, "y", ALUMINIUM, cap=False)                                 # a Progress ship at the back
+    for sg in (-1, 1):
+        quad((sg * 3, -22, -4), (sg * 14, -22, -4), (sg * 14, -19, -4), (sg * 3, -22 + 3, -4), COLD, INK, 1.5)
+    cyl((0, -27, -4), (0, -13, -4), 2.1, "y", steel, cap=False)                                    # Zvezda
+    cyl((0, -13, -4), (0, 0, -4), 2.1, "y", steel, cap=False)                                      # Zarya
+    for x0, phi in wings: wing(x0, False, phi)
+    # the radiators hanging below the truss, near its middle
+    for sg in (-1, 1):
+        for j in range(3):
+            a = sg * (12 + 3.6 * j); b = a + sg * 3.2
+            quad((a, -1, -3), (b, -1, -3), (b, -8, -24), (a, -8, -24), WHITE, INK, 1.5)
+            for t in (0.25, 0.5, 0.75):
+                p, q = P(a, -1 - 7 * t, -3 - 21 * t), P(b, -1 - 7 * t, -3 - 21 * t)
+                f.line(p[0], p[1], q[0], q[1], RULE, 1.5)
+    # the truss: top and front faces with its lattice, rotary joints between the wing pairs
+    L, h = 55, 2.4
+    quad((-L, -h, h), (L, -h, h), (L, h, h), (-L, h, h), ALUMINIUM, INK, 2)
+    quad((-L, h, h), (L, h, h), (L, h, -h), (-L, h, -h), METAL_EDGE, INK, 2)
+    for j in range(44):
+        x = -L + j * 2.5
+        p, q = P(x, h, h), P(x + 2.5, h, -h); f.line(p[0], p[1], q[0], q[1], IRON, 1.5)
+        p, q = P(x, h, -h), P(x, h, h); f.line(p[0], p[1], q[0], q[1], ALUMINIUM, 1)
+    for x in (-40, 40):
+        cyl((x - 1.5, 0, 0), (x + 1.5, 0, 0), 3.4, "x", WHITE)
+    for x0, phi in wings: wing(x0, True, phi)
+    # the US segment in front: Unity, Destiny, Harmony with Columbus and Kibo across it, a docked crew capsule
+    cyl((0, 0, -4), (0, 5, -4), 2.3, "y", steel)                                                  # Unity
+    cyl((0, 3, -6), (0, 3, -6.5), 1.6, "y", WHITE, cap=False)
+    cyl((-15, 21, -4), (-2, 21, -4), 2.2, "x", steel)                                            # Kibo (port)
+    cyl((0, 5, -4), (0, 18, -4), 2.2, "y", steel)                                                 # Destiny
+    cyl((2, 21, -4), (9, 21, -4), 2.2, "x", steel)                                               # Columbus (starboard)
+    cyl((0, 18, -4), (0, 25, -4), 2.3, "y", steel)                                                # Harmony
+    cyl((0, 25, -4), (0, 27, -4), 1.2, "y", ALUMINIUM)                                           # the docking adapter
+    cyl((0, 27, -4), (0, 31, -4), 1.9, "y", WHITE)                                                # a crew capsule
+    p = P(0, 31, -4); f.circle(p[0], p[1], 6, IRON, INK, 1.5)
     return f.svg()
 
 

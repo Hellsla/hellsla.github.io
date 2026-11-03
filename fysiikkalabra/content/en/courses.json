@@ -98,6 +98,7 @@
   },
   "FY5": {
     "title": "Periodic motion and waves",
+    "themes": ["Rotation and equilibrium", "Circular motion and gravitation", "Periodic motion", "Waves", "Sound"],
     "tavoitteet": [
       "can model planetary motion as circular motion",
       "becomes familiar with the basics of oscillation and wave motion by investigating mechanical oscillation and sound",

@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 01f9a994d152d71a
+CONTENT-HASH: 55ae0e4b739c0193
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] figures.json — kuvien kuvaustekstit ovat yleiskieliset; voisi lyhentää selkokieleksi.
+- [Minor] hero: the hand and knob are cropped by the bottom edge and the playfield by the top and left (close-up by design); the pulling hand is small at 390 px. Optional.
 
 ## Checked
-- contact-1…contact-6; fig-1…fig-8 kaapaukset contact-1:ssä: suomenkieliset sanat, desimaalipilkku, ei leikkautumista.
-- Työesimerkki (contact-1 #10–#11) vaiheittain, laskut tasattuina.
-- Simulaatio 390 px (#2): lukemat ja selite mahtuvat, Käyttöohje / Mallin oletukset / Laskennan selitys suljettuina.
-- check_layout.py fy5-8 --width 345: preview/fi-easy/fy5-8 OK.
+- Delta (illustration only). Opened fy5-8-top-390 (fi), fy5-8-intro-1280 (fi), fy5-8-fig-1-390 in fi, en and fi-easy (same picture in all three, only rendering noise differs).
+- Hero is a flat vector scene in the figure palette on the paper tone, no text in the picture, subject in the middle third, readable at 366 px width, nothing clipped except the intended close-up crop; 16:9-ish column width, layout around it intact.
+- Alt text (fi-easy) read against the picture: it describes what is drawn, with no contradiction; language natural and consistent with the chapter's opening question.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

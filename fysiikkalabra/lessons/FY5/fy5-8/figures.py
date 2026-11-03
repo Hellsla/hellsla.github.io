@@ -3,9 +3,9 @@ Harmonic force: the spring's force on the body F = -k x points towards the equil
 or compresses the spring is F_v = k x (Newton III: it acts on the spring, not on the body). Forces are red; the
 displacement x is a thin ink dimension arrow (never red); energy is the light orange area under the (x, F_v) graph.
 Every force diagram is an FBD: the body alone as a plain rectangle, its arrows to scale and its physics checked."""
-import math
+import math, re
 from figlib import (Fig, Axes, INK, MUTED, WHITE, RULE, RULE_LIGHT, SAND_LIGHT, SAND, SAND_DARK, GRAIN, GLASS, ICE, COLD,
-                    COLD_LIGHT, GOOD, HEAT, HEAT_LIGHT, HOT, HOT_LIGHT, IRON, ALUMINIUM, METAL_EDGE, WATER, WATER_LIGHT, PAPER, fi, n)
+                    COLD_LIGHT, GOOD, GOOD_LIGHT, HEAT, HEAT_LIGHT, HOT, HOT_LIGHT, IRON, ALUMINIUM, METAL_EDGE, WATER, WATER_LIGHT, PAPER, fi, n)
 from fbd import FBD, ground, FORCE, VELOCITY
 import herolib as H
 from herolib import grad
@@ -59,51 +59,85 @@ def hand(f, x, y, facing=-1):
 
 # ---------------------------------------------------------------- the opening illustration
 def hero():
-    """A pinball machine from above; the plunger in its lane is pulled back by a hand (no hint of how the force or the
-    energy depends on the pull: that is the chapter's prediction)."""
-    f = H.hero("fy58-hero", "Kuvitus: flipperipeli ylhäältä nähtynä. Pelikentällä on värikkäitä pyöreitä puskureita ja alhaalla kaksi "
-               "valkoista lyöntimailaa. Oikeassa reunassa on kapea laukaisukouru, jonka alapäässä teräskuula lepää jousen "
-               "varassa olevan männän päällä. Käsi vetää männän nuppia alaspäin, jolloin jousi puristuu.")
+    """A close-up of the lower right corner of a pinball machine seen from above, at about 2,3 px per mm so the 27 mm
+    ball and the plunger's coil spring are the subject: the launch lane with the steel ball resting on the plunger tip,
+    the spring compressed between the tip and the bracket inside the front wall, and a hand holding the knob from below,
+    pulling it out of the machine. The right flipper and slingshot say "pinball".
+    No hint of how the force or the energy depends on the pull: that is the chapter's prediction.
+    The machine is drawn in its own units (1,7 px per mm) and the group is scaled by S; its stroke widths are divided by S
+    afterwards so the outlines stay 2-3 px in the picture."""
+    f = H.hero("fy58-hero", "Kuvitus: flipperipelin oikea alakulma läheltä ylhäältä nähtynä. Laukaisukourussa teräskuula lepää "
+               "männän kärjen päällä. Männän varren ympärillä oleva kierrejousi on puristunut kärjen ja etuseinän välissä, koska "
+               "käsi pitää männän nupista alta kiinni ja vetää sitä ulos koneesta. Vasemmalla näkyvät pelikentän oikea lyöntimaila "
+               "ja kumireunainen kolmio, oikealla koneen puinen sivuseinä ja lattia.")
     f.rect(0, 0, 1200, 600, PAPER)
-    f.rect(0, 470, 1200, 130, SAND_LIGHT); f.line(0, 470, 1200, 470, RULE, 2)                     # the floor of the room
-    for x in (130, 1060):                                                                        # two stools beside the machine
-        f.rect(x - 56, 380, 112, 20, HOT, INK, 2.5, 6)
-        f.line(x - 40, 400, x - 50, 520, INK, 4); f.line(x + 40, 400, x + 50, 520, INK, 4)
-    # the cabinet: a wooden frame round the playfield (the subject in the middle third)
-    f.rect(330, 24, 540, 500, grad(f, "fy58h-wood", SAND, SAND_DARK, horizontal=True), INK, 3, 18)
-    f.rect(356, 46, 488, 456, grad(f, "fy58h-field", COLD_LIGHT, GLASS), INK, 2.5, 10)
-    # the launch lane on the right, its wall, and the curve at the top
-    f.rect(792, 140, 46, 362, WHITE, None, 0)
-    f.path("M790,502 V140 Q790,72 720,72 H560", stroke=INK, w=3)
-    f.line(838, 72, 838, 502, INK, 2.5)
-    # bumpers and their rings
-    for (cx, cy, r, c1, c2) in [(480, 170, 40, HOT_LIGHT, HOT), (630, 150, 36, HEAT_LIGHT, HEAT), (555, 255, 38, HOT_LIGHT, HOT)]:
-        f.circle(cx, cy, r + 10, WHITE, INK, 2.5)
-        f.circle(cx, cy, r, grad(f, f"fy58h-b{cx}", c1, c2), INK, 2.5)
-        f.circle(cx, cy, r * 0.45, WHITE, INK, 2)
-    # lane lights, side guides and the two flippers at the bottom
-    for k, x in enumerate(range(440, 720, 56)):
-        f.circle(x, 340, 9, (GOOD if k % 2 else HEAT_LIGHT), INK, 1.5)
-    f.path("M392,370 L392,440 L452,466 Z", HEAT_LIGHT, INK, 2.5)
-    f.path("M758,370 L758,440 L698,466 Z", HEAT_LIGHT, INK, 2.5)
-    f.path("M444,470 Q474,462 560,490 Q566,498 556,503 Q474,494 438,488 Q428,478 444,470 Z", WHITE, INK, 2.5)
-    f.path("M706,470 Q676,462 590,490 Q584,498 594,503 Q676,494 712,488 Q722,478 706,470 Z", WHITE, INK, 2.5)
-    for x in (444, 706): f.circle(x, 479, 7, INK)
-    # the steel ball resting on the plunger tip in the lane
+    S, tx, ty = 1.35, -585, -201
+    for x in range(-30, 1200, 64):                  # the floor's boards, running towards the machine
+        f.line(x, 0, x, 600, RULE_LIGHT, 2)
+    first = len(f.body)
+    f.add(f'<g transform="translate({tx} {ty}) scale({S})">')
+    # this machine: wooden side, playfield, the launch lane between its wall and the side
+    f.add(f'<path d="M1150,160 H1166 V510 H104 V496 H1150 Z" fill="{INK}" fill-opacity="0.12"/>')   # the cabinet's shadow on the floor
+    f.rect(100, 150, 1050, 346, H.grad(f, "fy58h-side", SAND, GRAIN, y1=150, y2=500), INK, 3)
+    f.rect(148, 150, 904, 310, H.grad(f, "fy58h-field", COLD_LIGHT, GLASS, y1=150, y2=460), INK, 3)
+    lx0, lx1 = 1000, 1052
+    f.rect(lx0, 150, lx1 - lx0, 310, WHITE)
+    f.line(lx0, 150, lx0, 460, INK, 3)
+    # inserts, a rollover lane, the right slingshot with its rubber, the inlane guide, the right flipper and the apron
+    f.add('<g transform="translate(16 0)">')
+    for k, (x, y, r, c1, c2) in enumerate(((520, 176, 42, HOT_LIGHT, HOT), (716, 160, 42, HEAT_LIGHT, HEAT))):   # pop bumpers at the top edge
+        f.circle(x, y, r + 11, WHITE, INK, 2.5)
+        f.circle(x, y, r, H.grad(f, f"fy58h-bump{k}", c1, c2), INK, 2.5)
+        f.circle(x, y, r * 0.42, WHITE, INK, 2)
+    for k, (x, y, c) in enumerate(((540, 256, HEAT_LIGHT), (596, 272, GOOD), (652, 278, COLD), (708, 272, HOT_LIGHT), (764, 256, HEAT_LIGHT))):
+        f.circle(x, y, 13, c, INK, 2)
+    f.add(f'<ellipse cx="652" cy="336" rx="40" ry="22" fill="{HEAT_LIGHT}" stroke="{INK}" stroke-width="2"/>')
+    f.rect(878, 150, 44, 90, WHITE, INK, 2.5, 22); f.circle(900, 206, 9, HEAT_LIGHT, INK, 1.5)
+    f.path("M876,258 L876,346 L794,380 Z", HEAT_LIGHT, INK, 2.5)
+    f.path("M870,266 L802,372", stroke=INK, w=6, extra='stroke-linecap="round"')
+    f.path("M940,240 V354 L788,414", stroke=INK, w=4, extra='stroke-linejoin="round"')
+    f.path("M778,396 L638,430 L640,442 L778,416 Z", WHITE, INK, 2.5)
+    f.circle(778, 406, 13, WHITE, INK, 2.5); f.circle(778, 406, 5, INK)
+    f.path("M340,396 L480,430 L478,442 L340,416 Z", WHITE, INK, 2.5)
+    f.path("M984,446 H640 L606,460 H984 Z", IRON, INK, 2.5)
+    f.path("M478,446 L512,460 H400 V446 Z", IRON, INK, 2.5)
+    f.add("</g>")
+    # the glass over the playfield: faint reflections
+    for x in (640, 900):
+        f.add(f'<path d="M{x},150 L{x + 60},150 L{x - 20},460 L{x - 80},460 Z" fill="{WHITE}" fill-opacity="0.3"/>')
+    # the front rail (lockdown bar)
+    f.rect(92, 460, 1066, 34, H.steel(f, "fy58h-bar", vertical=True), INK, 3, 6)
+    # the plunger pulled back about 30 mm: rod through the front wall, coil spring squeezed between tip and bracket
+    cx, tip = (lx0 + lx1) / 2, 356
+    f.rect(cx - 6, tip, 12, 190, ALUMINIUM, INK, 2)
+    f.rect(cx - 24, 446, 48, 12, IRON, INK, 2.5, 2)
+    coils, y0, y1 = 13, tip + 18, 446
+    pts = [(cx + (-19 if i % 2 else 19), y0 + (y1 - y0) * i / (coils - 1)) for i in range(coils)]
+    f.path("M" + " L".join(f"{n(x)},{n(y)}" for x, y in pts), stroke=IRON, w=4, extra='stroke-linejoin="round"')
+    f.rect(cx - 22, tip, 44, 18, INK, INK, 2, 5)
+    # the steel ball resting on the tip (the playfield slopes down towards the player)
     f.defs_add(f'<radialGradient id="fy58h-ball" cx="0.35" cy="0.35" r="0.7"><stop offset="0" stop-color="{WHITE}"/>'
                f'<stop offset="0.5" stop-color="{ALUMINIUM}"/><stop offset="1" stop-color="{IRON}"/></radialGradient>')
-    f.circle(815, 404, 17, "url(#fy58h-ball)", INK, 2)
-    # the plunger: tip, rod, a compressed coil spring, the cabinet's front strip, the knob pulled out by a hand
-    f.rect(803, 422, 24, 12, METAL_EDGE, INK, 2, 3)
-    f.rect(811, 434, 8, 118, ALUMINIUM, INK, 1.5)
-    pts = [(815 + (12 if i % 2 else -12), 440 + i * 4.2) for i in range(15)]
-    f.path("M815,436 L" + " L".join(f"{n(x)},{n(y)}" for x, y in pts), stroke=IRON, w=3)
-    f.rect(330, 502, 540, 22, IRON, INK, 3, 4)
-    f.circle(815, 560, 14, HOT, INK, 2.5)
-    f.rect(774, 540, 82, 30, SAND_LIGHT, INK, 2.5, 12)                                           # fingers round the knob's stem
-    for k in range(3): f.line(790 + k * 18, 543, 790 + k * 18, 566, INK, 1.5)
-    f.rect(840, 552, 70, 26, SAND_LIGHT, INK, 2.5, 8)                                            # the wrist
+    f.circle(cx, tip - 24, 23, "url(#fy58h-ball)", INK, 2)
+    # the knob pulled out of the machine; a hand from the lower right holds it from below, its thumb under the knob
+    # and three fingers curled round the stem between the knob and the front rail
+    ky, skin = 544, SAND_LIGHT
+    def limb(x1, y1, x2, y2, w, q=None):
+        d = f"M{n(x1)},{n(y1)} " + (f"Q{n(q[0])},{n(q[1])} " if q else "L") + f"{n(x2)},{n(y2)}"
+        f.path(d, stroke=INK, w=w + 5, extra='stroke-linecap="round"')
+        f.path(d, stroke=skin, w=w, extra='stroke-linecap="round"')
+    limb(cx + 150, ky + 120, cx + 56, ky + 30, 46)                                   # forearm and wrist
+    f.add(f'<ellipse cx="{n(cx + 40)}" cy="{ky + 18}" rx="38" ry="30" fill="{skin}" stroke="{INK}" stroke-width="2.5" transform="rotate(-30 {n(cx + 40)} {ky + 18})"/>')   # palm
+    limb(cx + 30, ky + 34, cx - 22, ky + 20, 15, q=(cx - 6, ky + 40))               # thumb under the knob
+    f.circle(cx, ky, 18, H.grad(f, "fy58h-knob", HOT_LIGHT, HOT), INK, 2.5)
+    for k, y in enumerate((ky - 26, ky - 40)):                                      # fingers round the stem
+        limb(cx + 44 - 4 * k, y + 22, cx - 20, y, 14, q=(cx + 18, y - 10))
+    f.add(f'<path d="M{n(cx + 52)},{ky - 2} Q{n(cx + 34)},{ky - 20} {n(cx + 8)},{ky - 14}" fill="none" stroke="{INK}" stroke-width="2"/>')   # crease of the ring finger
+    f.add("</g>")
+    for i in range(first, len(f.body)):          # keep the outlines 2-3 px in the picture
+        f.body[i] = re.sub(r'stroke-width="([\d.]+)"', lambda m: f'stroke-width="{n(float(m.group(1)) / S)}"' if float(m.group(1)) <= 6 else m.group(0), f.body[i])
     return f.svg()
+
 
 
 # ---------------------------------------------------------------- theory figures

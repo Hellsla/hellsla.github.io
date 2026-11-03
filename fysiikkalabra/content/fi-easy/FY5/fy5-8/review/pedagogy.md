@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 01f9a994d152d71a
+CONTENT-HASH: 55ae0e4b739c0193
 
 ## Blocking
 (none)
 
 ## Polish
-- Kuvien vaihtoehtoiset tekstit (figures.json) ovat samat kuin yleiskielessä. Ne ovat kuvailevia ja melko selkeitä, mutta pitkiä; lyhentäminen auttaisi ruudunlukijan käyttäjää. Ei estä.
-- Osa lyhyistä teksteistä (esim. Tarkista osaamisesi 1–3, Piirrä itse -mallivastaus) on jätetty yleiskielisiksi. Ne ovat lyhyitä ja käsitteellisesti selkeitä, joten jättäminen on hyväksyttävää.
+- lesson.md (hero) — Polish: the cropped playfield (bumpers cut at the top edge) is fine for a close-up, but a student unfamiliar with pinball may not see where the ball will go; the alt text names the launch lane, which helps.
 
 ## Checked
-- Oppimispolku sama kuin suomenkielisessä; Tällä tunnilla opit -tavoitteet oikeassa muodossa.
-- Pitkät virkkeet on pilkottu, termit (lepopituus, kulmakerroin) selitetty ensimmäisellä kerralla, mikään vaihe tai perustelu ei ole pudonnut.
-- Kaapaukset 390 ja 1280 px (contact-1, contact-6): luettavat, simulaation lukemat mahtuvat.
-- Korjattu: punnitusaineiston mallivastauksen (Jousivakio mittauksesta) pitkät virkkeet pilkottu ja "suhteellinen epävarmuus" sanottu arkikielellä.
+- Delta only: the hero illustration and its alt text; the rest of the lesson is as previously approved.
+- Plunger pulled out by hand, compressing the coil spring between the plunger head and the front wall, ball resting on the head: this is correct physics for a pinball launcher and matches the question (spring compression and launch speed). No force arrows or numbers disclose the answer.
+- The easy-Finnish alt text (short sentences) matches the picture element by element and is in correct language; the opening question's wording is unchanged.
+- Hero is legible at 390 px and 1280 px (top captures) and carries no text.

@@ -1,13 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 148d859a8119a8d4
-
+CONTENT-HASH: c303495cd7b5cceb
 ## Blocking
-- none
-
+(none)
 ## Polish
-- none
-
+- hero — Gel is shown only as a small blue ring at the probe tip; visible but subtle at 390 px (taste).
 ## Checked
-- Muutos on vain yksi tavoite: finiittiverbit "oli"/"tiedät" poistuneet, "laskemaan maanjäristyksen etäisyyden P-aallon ja S-aallon saapumisaikojen erosta" on selkeämpi ja lyhyempi.
-- Sisältö ei muutu: sama P-S-aikaeron tehtävä; ei uutta oppisisältöä.
-- Muu oppitunti ennallaan hyväksytyn version mukaan; tuore tiiviste vastaa pakettia.
+- Delta review: only the hero illustration and its alt text changed; the rest stays as previously approved.
+- Probe on belly with gel, arcs going into the body, cable to machine, fan-shaped greyscale image with baby on the screen: supports both parts of the question; no misleading physics; alt matches the picture.
+- Alt text is in short plain-Finnish sentences, matching the easy-language version; no text inside the picture; the 390 px capture shows the picture intact.

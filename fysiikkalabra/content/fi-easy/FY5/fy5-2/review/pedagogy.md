@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 3656c1e180151112
+CONTENT-HASH: d431b09626d1bc1c
 
 ## Blocking
 (none)
 
 ## Polish
-- Sim labels stay identical to the Finnish: short and plain already.
+- lesson.md (hero) — Polish: the closing sentence of the alt text ('this raises the question...') does a job the Pohdinta already does; the alt text may describe only what is seen.
 
 ## Checked
-- The lesson text was already in short sentences with explained terms. 54 inquiry and exit-ticket strings were still identical to the Finnish; the hard ones are now simplified: prior knowledge, option feedback (split into short sentences, "kumoavat tämän" to "osoittavat tämän vääräksi"), the draw-task model answer, hints, mistakes, the diving-board solution, the final summary prompt, the exit ticket.
-- All steps, hints, feedbacks and model answers kept; nothing dropped.
-- Captures: contact-1, contact-4.
-- Delta: the new force diagrams after the Voimakuvio paragraph of siirto and tarkistus-2 appear only inside the opened solution, so nothing is given away early; they support the force-diagram step and match the text.
+- Delta only: the hero illustration and its alt text; the rest of the lesson is as previously approved.
+- Plank on two trestles, painter between them, a can on the unsupported overhang: this is exactly the Pohdinta situation. Nothing is annotated, so the answer is not given. Statics is plausible (painter's weight between supports, can on the overhang, nothing beneath it).
+- The easy-Finnish alt text (short sentences) matches the picture element by element and is in correct language; the opening question's wording is unchanged.
+- Hero is legible at 390 px and 1280 px (top captures) and carries no text.
