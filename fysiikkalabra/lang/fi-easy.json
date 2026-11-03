@@ -1612,6 +1612,17 @@
       "zone_uv": "UV",
       "zone_nakyva": "näkyvä",
       "zone_ir": "IR"
+    },
+    "fy8-5": {
+      "uusi": "Uusi mittaussarja",
+      "orbitaali": "Tila",
+      "o1s": "1s-orbitaali",
+      "o2s": "2s-orbitaali",
+      "o2p": "2p-orbitaali",
+      "mittauksia": "Mittauksia",
+      "kynnys": "Rajan kynnys $p = {{p}}\\,\\%$",
+      "selite": "Sininen piste: osuma rajan sisällä. Harmaa piste: osuma ulkopuolella. Viiva: orbitaalin raja.",
+      "lukemat": "Mittauksia ${N = {{N}}}$<br>Rajan sisällä ${k = {{k}}}$, ulkopuolella ${N - k = {{out}}}$<br>Osuus rajan sisällä ${k : N = {{f}}\\,\\%}$<br>Yleisin etäisyys ytimestä ${r \\approx {{rp}}\\,\\text{nm}}$<br><strong>Rajan suurin etäisyys ytimestä ${R = {{R}}\\,\\text{nm}}$</strong>"
     }
   },
   "practice": {

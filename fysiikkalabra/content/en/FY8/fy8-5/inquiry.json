@@ -1,0 +1,411 @@
+{
+  "version": 1,
+  "contribution": "The state of an electron is described as a standing wave and as a probability distribution: from the measurement series of the simulation the student sees how random hits build up an orbital, what the $90\\,\\%$ boundary means and why the Bohr radius is the most common distance, and the numbers of orbitals in the shells connect to the electron configurations of chemistry.",
+  "learn": [
+    "explain how standing waves lead to the allowed states of an electron in an atom.",
+    "interpret an orbital as a region inside which the electron is detected with a chosen probability.",
+    "calculate the number of orbitals and electrons in a shell and the energy of the photon produced in a transition."
+  ],
+  "prior": [
+    "Electrons sent one at a time each hit one spot behind a double slit, but many hits build up an interference pattern (chapter *Light and electrons as waves and particles*)",
+    "The energy levels of the hydrogen atom are $E_n = -\\tfrac{13.6\\,\\text{eV}}{n^2}$, and the energy of the photon produced in a transition is the difference between the levels (chapter *Energy levels of the hydrogen atom and the Bohr model*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "On a page of a chemistry book, the electrons of a carbon atom do not go round the nucleus along neat orbits. They are drawn as blue clouds and two-lobed shapes, and the caption speaks of a region where the electron is likely to be detected. In physics, however, the energy levels of the hydrogen atom were calculated with the Bohr model, in which the electron goes round the nucleus on a circular orbit.",
+      "question": "What does the picture of an orbital actually show, if it is not the path of the electron?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Review: the electron in a double slit",
+      "optional": true,
+      "prompt": "In the double-slit experiment, electrons are sent one at a time, and the screen records every hit. What is observed when thousands of hits have accumulated?",
+      "choices": [
+        {
+          "text": "Each electron hits one spot, but many hits build up a striped interference pattern.",
+          "correct": true,
+          "feedback": "Correct. The position of a single hit cannot be predicted, but the distribution of the hits follows the interference pattern of a wave (chapter *Light and electrons as waves and particles*). In this chapter the same idea is moved to the atom: the position of an electron is random, but many measurements build up a regular cloud."
+        },
+        {
+          "text": "Each electron spreads over the whole screen as a faint stripe pattern that gradually grows stronger.",
+          "feedback": "The screen records one point-like hit for each electron. The stripes appear only as the distribution of many hits: the wave tells how likely the electron is to hit each spot, not that the electron would spread out."
+        },
+        {
+          "text": "The electrons hit two bands behind the slits, as small balls would.",
+          "feedback": "The ball model would predict two bands, but many stripes are observed. Each electron is detected at one spot, but the distribution of the hits is the interference pattern of a wave."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: the boundary of an orbital",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 2
+      },
+      "prompt": "The electron of a hydrogen atom is in the $1\\text{s}$ state, and the $90\\,\\%$ boundary of the $1\\text{s}$ orbital is drawn in the picture. The position of the electron is measured in series, each time in a new, similar atom: first $10$ measurements, then $1000$ measurements, and both series are repeated a few times. How does the share of the measurements that hit inside the boundary behave?",
+      "choices": [
+        {
+          "text": "The share is exactly $90\\,\\%$ in every series, because the boundary is drawn at a probability of $90\\,\\%$.",
+          "feedback": "The values of the model refute this: in series of ten measurements, for example $8$, $9$, $9$ and $10$ measurements hit inside the boundary, that is $80$–$100\\,\\%$, and even in series of $1000$ measurements the share varied, for example from $90.1\\,\\%$ to $91.8\\,\\%$. The probability tells where the share settles after many measurements, not the exact result of one series."
+        },
+        {
+          "text": "All hits are inside the boundary, because the boundary is the surface of the orbital that the electron cannot cross.",
+          "feedback": "The values of the model refute this: in the first series of $1000$ measurements, $82$ measurements hit outside the boundary. The boundary is not a wall but an agreed threshold. Inside it the electron is detected with a probability of $90\\,\\%$, so on average every tenth hit is outside."
+        },
+        {
+          "text": "In series of ten measurements the share varies clearly, but in series of $1000$ measurements it stays close to $90\\,\\%$.",
+          "correct": true,
+          "feedback": "The values of the model support this: in series of ten measurements, for example $8$, $9$, $9$ and $10$ measurements hit inside the boundary, that is $80$–$100\\,\\%$, but in series of $1000$ measurements the share was, for example, $90.1$–$91.8\\,\\%$. The individual hits are random, and only after many measurements does the share settle close to the probability of the boundary, $90\\,\\%$."
+        },
+        {
+          "text": "In a larger series the share is smaller, because more distant hits have time to accumulate.",
+          "feedback": "The values of the model refute this: in series of $1000$ measurements the share stayed close to $90\\,\\%$. Each measurement hits outside the boundary with the same probability $0.10$, so the number of hits outside grows in the same proportion as $N$, but their share does not grow."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: how far from the nucleus?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-2",
+        "min": 2
+      },
+      "prompt": "In the Bohr model, the electron of a hydrogen atom in the ground state always goes round the nucleus at the same distance. In the wave model, the distance of a $1\\text{s}$ electron from the nucleus is measured $5000$ times. What is the distribution of the distances like?",
+      "choices": [
+        {
+          "text": "All distances are the same, equal to the radius of the Bohr orbit.",
+          "feedback": "The values of the model refute this: the distances vary from almost zero to over $0.2\\,\\text{nm}$. The electron has no orbit, and $0.053\\,\\text{nm}$ is only the most common distance."
+        },
+        {
+          "text": "The distances vary, and the most common of them is about $0.05\\,\\text{nm}$.",
+          "correct": true,
+          "feedback": "The values of the model support this: the tallest bar of the histogram is at about $0.05\\,\\text{nm}$, but there are many hits both closer and farther away. The radius of the Bohr orbit, $0.053\\,\\text{nm}$, is the most common distance in the wave model, not a path travelled."
+        },
+        {
+          "text": "The most common distance is almost zero, because the cloud is densest at the nucleus.",
+          "feedback": "The values of the model refute this: right next to the nucleus there are few hits. The cloud is densest at the nucleus, but a small sphere around the nucleus holds little volume. Spherical shells farther away hold more, so the most common distance is about $0.05\\,\\text{nm}$."
+        },
+        {
+          "text": "The distances are spread evenly between zero and the greatest measured distance.",
+          "feedback": "The values of the model refute this: the histogram has a clear peak at about $0.05\\,\\text{nm}$, and farther away there are fewer and fewer hits."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Measure the position of the electron again and again and see how random hits build up an orbital.",
+      "howto": "Choose the state of the electron ($1\\text{s}$, $2\\text{s}$ or $2\\text{p}$) and the number of measurements $N$. Each dot is the result of one position measurement. The slider chooses the threshold $p$ of the boundary: the boundary is drawn so that the electron is detected inside it with probability $p$. Dots that hit inside the boundary are blue and those that hit outside are grey. The histogram on the right shows how many hits there are at each distance from the nucleus in steps of $0.02\\,\\text{nm}$; the darkest bar is the most common distance and the dashed line is the expected value of the model. *New measurement series* draws new measurement results. When $N$ increases, new hits are added to the earlier ones.",
+      "model": "The model is a hydrogen atom whose electron is in the $1\\text{s}$, $2\\text{s}$ or $2\\text{p}$ state. Each measurement is made in a new atom in the same state, and the result is drawn from the probability distribution of the state. The picture is a see-through projection: the three-dimensional measurement results and the boundary are drawn in one plane, so some of the grey dots drawn at the boundary are in reality in front of or behind it. In the $2\\text{s}$ state there is a gap around the nodal sphere that does not belong to the region, so its boundary is drawn as three circles. The lobes of the $2\\text{p}$ state are vertical. In a real experiment the position of the electron of a single atom is not measured as directly as this; the model illustrates the probability interpretation.",
+      "calc": "The share inside the boundary is $k : N$, where $k$ is the number of blue dots. The boundary is a surface on which the probability density is the same everywhere and which encloses the probability $p$. The greatest distance $R$ of the boundary is measured from the nucleus in the direction in which the region extends farthest; in the $2\\text{p}$ state it is the tip of a lobe. The most common distance is the midpoint of the tallest bar of the histogram. The lengths have been calculated using the Bohr radius $0.0529\\,\\text{nm}$."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 1: one measurement or many?",
+      "intro": "Test prediction 1. The state is $1\\text{s}$ and the threshold of the boundary is $90\\,\\%$. Increase the number of measurements $N$ and, for each number, record the measurements that hit inside and outside the boundary and the share inside the boundary. Also try what *New measurement series* does with a small and a large $N$.",
+      "initial": {
+        "orb": "o1s",
+        "N": "10",
+        "p": 90
+      },
+      "locked": [
+        "orb",
+        "p"
+      ],
+      "vary": "N",
+      "names": {
+        "orb": "state",
+        "N": "measurements N",
+        "p": "threshold of the boundary p"
+      },
+      "units": {
+        "p": "%"
+      },
+      "values": {
+        "orb": {
+          "o1s": "$1\\text{s}$ orbital"
+        }
+      },
+      "measure": [
+        {
+          "key": "k",
+          "label": "inside k"
+        },
+        {
+          "key": "out",
+          "label": "outside"
+        },
+        {
+          "key": "frac",
+          "label": "share inside (%)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 2: how far from the nucleus is the electron detected?",
+      "intro": "Test prediction 2. There are $5000$ measurements and the threshold of the boundary is $90\\,\\%$. Change the state of the electron and, for each state, record the most common distance of the histogram and the greatest distance of the boundary of the orbital from the nucleus.",
+      "initial": {
+        "orb": "o1s",
+        "N": "5000",
+        "p": 90
+      },
+      "locked": [
+        "N",
+        "p"
+      ],
+      "vary": "orb",
+      "names": {
+        "orb": "state",
+        "N": "measurements N",
+        "p": "threshold of the boundary p"
+      },
+      "units": {
+        "p": "%"
+      },
+      "values": {
+        "orb": {
+          "o1s": "$1\\text{s}$ orbital",
+          "o2s": "$2\\text{s}$ orbital",
+          "o2p": "$2\\text{p}$ orbital"
+        }
+      },
+      "measure": [
+        {
+          "key": "rpeak",
+          "label": "most common r (nm)"
+        },
+        {
+          "key": "R",
+          "label": "R (nm)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion: what does an orbital tell?",
+      "after": [
+        "koe-1",
+        "koe-2"
+      ],
+      "prompt": "Based on your tables, write: what does a single measurement tell about the position of the electron, and what appears only after many measurements? What does the $90\\,\\%$ boundary of an orbital mean? How does the $1\\text{s}$ orbital differ from the $2\\text{s}$ and $2\\text{p}$ orbitals?",
+      "model": "A single measurement gives one random point. With small values of $N$ the share of hits inside the boundary varied clearly, and a new measurement series gave different numbers. When there were $1000$ or $5000$ measurements, the share settled close to $90\\,\\%$. The boundary is thus a probability boundary: about a tenth of the hits remain outside it. According to the values of the model, the most common distance of a $1\\text{s}$ electron from the nucleus was about $0.05\\,\\text{nm}$, the radius of the Bohr orbit, and the boundary of the $1\\text{s}$ orbital was $0.14\\,\\text{nm}$ away. In the $2\\text{s}$ and $2\\text{p}$ states the most common distance was about $0.2$–$0.3\\,\\text{nm}$ and the boundary extended about $0.48\\,\\text{nm}$ away: an electron of the shell $n = 2$ is detected on average farther from the nucleus, and its energy is greater.",
+      "criteria": [
+        "The answer says that a single measurement result is random and the distribution appears only after many measurements.",
+        "The answer uses the numbers of the table: the share inside the boundary approaches $90\\,\\%$ as $N$ increases.",
+        "The answer explains that the boundary of an orbital is an agreed probability boundary, not a wall or an orbit.",
+        "The answer compares the states: the orbitals of the shell $n = 2$ extend farther from the nucleus than the $1\\text{s}$ orbital."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Return to your predictions",
+      "optional": true,
+      "prompt": "Compare your predictions with the values of the model in the experiments. Then return to the question at the beginning: what does the picture of an orbital in a chemistry book show, if it is not the path of the electron?",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2"
+      ]
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the error",
+      "optional": true,
+      "prompt": "A student calculates how many electrons fit in the shell $n = 3$: \"The shell has three subshells, $3\\text{s}$, $3\\text{p}$ and $3\\text{d}$, that is three orbitals. Two electrons fit in each, so $6$ electrons fit in the shell.\" Where is the error?",
+      "choices": [
+        {
+          "text": "A subshell is not one orbital: $3\\text{p}$ has three and $3\\text{d}$ has five orbitals, so $18$ electrons fit.",
+          "correct": true,
+          "feedback": "Correct. There are $1 + 3 + 5 = 9$ orbitals, that is $n^2$, and since each orbital holds at most two electrons, $2n^2 = 18$ electrons fit in the shell."
+        },
+        {
+          "text": "The shell $n = 3$ has only two subshells, $3\\text{s}$ and $3\\text{p}$, so only $4$ electrons fit.",
+          "feedback": "The shell $n$ has $n$ subshells, so the shell $n = 3$ also includes $3\\text{d}$. The error is that a subshell was counted as one orbital: $3\\text{p}$ has three and $3\\text{d}$ has five orbitals."
+        },
+        {
+          "text": "Three electrons fit in an orbital of the shell $n = 3$, so $9$ electrons fit.",
+          "feedback": "An orbital holds at most two electrons with opposite spins, whatever the shell. The error is in the number of orbitals in the subshells: $3\\text{p}$ has three and $3\\text{d}$ has five orbitals."
+        },
+        {
+          "text": "There is no error in the calculation, because exactly $6$ electrons fit in the shell $n = 3$.",
+          "feedback": "$2n^2 = 18$ electrons fit in the shell $n = 3$. A subshell is not one orbital: $3\\text{p}$ has three orbitals and $3\\text{d}$ has five."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply to a new situation",
+      "optional": true,
+      "prompt": "The electron of a hydrogen atom has been excited to the $2\\text{p}$ state, whose two lobes are above and below the nucleus. Its position is measured $6000$ times, and the $90\\,\\%$ boundary of the $2\\text{p}$ orbital is drawn in the picture. How many hits do you expect to land inside the boundary in the upper lobe?",
+      "answer": 2700,
+      "unit": "kpl",
+      "tolerance": 0.02,
+      "hints": [
+        "What fraction of all hits lands inside the boundary?",
+        "The $2\\text{p}$ orbital is symmetric: on average equally many of the hits inside the boundary land in each lobe.",
+        "$0.90 \\cdot 6000 = 5400$ hits land inside the boundary. Divide them between the two lobes."
+      ],
+      "mistakes": [
+        {
+          "value": 5400,
+          "feedback": "You calculated all the hits that land inside the boundary. They are divided equally between the two lobes, so half of them land in the upper lobe."
+        },
+        {
+          "value": 3000,
+          "feedback": "You divided all the hits between the lobes, but on average $10\\,\\%$ of the hits remain outside the boundary."
+        }
+      ],
+      "solution": "**Given:** measurements $N = 6000$, threshold of the boundary $p = 90\\,\\% = 0.90$; the $2\\text{p}$ orbital has two similar lobes on opposite sides of the nucleus\n\n**Asked:** the expected number $k_\\text{upper}$ of measurements that land inside the boundary in the upper lobe\n\n**Principle:** According to the probability interpretation, in many measurements the share of those that land in a region is approximately the probability of the region, $P \\approx \\tfrac{k}{N}$. The probability $0.90$ remains inside the boundary, and the $2\\text{p}$ state is symmetric with respect to the nodal plane through the nucleus, so the probability is divided equally between the lobes.\n\n**Formula:** $k = pN$ and $k_\\text{upper} = \\dfrac{pN}{2}$\n\n**Conversions:** Percentages to a decimal number: $90\\,\\% = 0.90$.\n\n**Substitution:** $k_\\text{upper} = \\dfrac{0.90 \\cdot 6000}{2} = \\dfrac{5400}{2} = 2700$\n\n**Answer:** $2700$ hits, as an expected value; the real number varies from one measurement series to another by a few tens.\n\n**Reasonableness:** Without the boundary, half of the hits, that is $3000$, would land in each half, and a tenth remains outside the boundary, so the result is slightly under $3000$. The total of the lobes, $2 \\cdot 2700 = 5400$, is $90\\,\\%$ of all $6000$ measurements.",
+      "practice": "Review the section *Probability interpretation* of the chapter and the level 2 exercises."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise on three levels. In the level 1 exercises one formula or an estimate of a probability is used, in the level 2 exercises two steps are combined, and in the level 3 exercises you reason with orbitals and energy levels in a new situation."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. What does an orbital show?",
+      "prompt": "In a chemistry book, the $1\\text{s}$ orbital of the hydrogen atom is drawn as a blue sphere. What does the sphere show?",
+      "choices": [
+        {
+          "text": "A region inside which the electron is detected in a position measurement with a probability of $90\\,\\%$.",
+          "correct": true,
+          "feedback": "Correct. An orbital is drawn as a probability boundary: inside it the electron is detected with the chosen probability, and about every tenth measurement lands outside the boundary."
+        },
+        {
+          "text": "The surface of a sphere along which the electron goes round the nucleus at high speed.",
+          "feedback": "In the wave model the electron has no orbit. The sphere tells where the electron is likely to be detected, not a path it travels."
+        },
+        {
+          "text": "The electron itself, spread around the nucleus as a spherical body.",
+          "feedback": "A position measurement always gives one point, not a spherical electron. The sphere describes the distribution of the results of many measurements."
+        },
+        {
+          "text": "A shell from the inside of which the electron can never escape.",
+          "feedback": "The boundary is an agreed threshold, not a wall. About $10\\,\\%$ of the measurements land outside the $90\\,\\%$ boundary."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Nodes and energy",
+      "prompt": "The wave of the state of an electron in a hydrogen atom has two nodal surfaces. Which claim is true?",
+      "choices": [
+        {
+          "text": "The state belongs to the shell $n = 3$, and its energy is greater than that of any state of the shell $n = 2$.",
+          "correct": true,
+          "feedback": "Correct. There are $n - 1$ nodes, so $n = 3$. In the hydrogen atom, the more nodes, the greater the energy: $E_3 = -1.51\\,\\text{eV}$ is greater than $E_2 = -3.40\\,\\text{eV}$."
+        },
+        {
+          "text": "The state belongs to the shell $n = 2$, because the number of nodes is the same as the principal quantum number.",
+          "feedback": "The states of the shell $n$ have $n - 1$ nodes: the $1\\text{s}$ state has none and the states of the shell $n = 2$ have one. Two nodes belong to the states of the shell $n = 3$."
+        },
+        {
+          "text": "The energy of the state is lower than that of the $1\\text{s}$ state, because nodes decrease the energy of a wave.",
+          "feedback": "It is the other way round: in a string, each extra node raises the frequency of the vibration, and in the hydrogen atom an extra node raises the energy of the state. The $1\\text{s}$ state, which has no nodes, is the lowest state of the hydrogen atom."
+        },
+        {
+          "text": "The electron is detected most often on the nodal surfaces, because the wave passes through them.",
+          "feedback": "On a nodal surface the amplitude of the wave is zero, so the electron is not detected there at all. The electron is detected most often at places where the amplitude of the wave is greatest."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "3. Energy of a transition",
+      "prompt": "The electron of a hydrogen atom moves from the $2\\text{p}$ orbital to the $1\\text{s}$ orbital, and the atom emits a photon. What is the energy of the photon in electronvolts?",
+      "answer": 10.2,
+      "unit": "eV",
+      "tolerance": 0.02,
+      "hints": [
+        "Which shells do the initial and final states belong to?",
+        "The energy of the photon is the difference between the energies of the states: $E = E_2 - E_1$, where $E_n = -\\tfrac{13.6\\,\\text{eV}}{n^2}$.",
+        "$E_2 = -3.40\\,\\text{eV}$ and $E_1 = -13.6\\,\\text{eV}$."
+      ],
+      "mistakes": [
+        {
+          "value": 17.0,
+          "feedback": "You added the absolute values of the energies together. The energy of the photon is the difference between the levels: $E_2 - E_1 = -3.40\\,\\text{eV} - (-13.6\\,\\text{eV})$."
+        },
+        {
+          "value": 3.4,
+          "feedback": "This is only the absolute value of the energy of the shell $n = 2$. The energy of the photon is the difference between the energies of the initial and final states."
+        }
+      ],
+      "solution": "**Given:** initial state $2\\text{p}$, so $n = 2$; final state $1\\text{s}$, so $n = 1$; energy levels of the hydrogen atom $E_n = -\\tfrac{13.6\\,\\text{eV}}{n^2}$\n\n**Asked:** the energy $E$ of the photon in electronvolts\n\n**Principle:** Energy is conserved: when the electron moves to a lower state, the energy of the atom decreases by the difference between the energies of the states, and the same energy leaves as a photon. In the hydrogen atom the energy of a state depends only on the principal quantum number, so the letters p and s have no effect.\n\n**Formula:** $E = E_2 - E_1 = -\\dfrac{13.6\\,\\text{eV}}{2^2} + \\dfrac{13.6\\,\\text{eV}}{1^2}$\n\n**Conversions:** None are needed, because the energy levels and the asked energy are in electronvolts.\n\n**Substitution:** $E = -\\dfrac{13.6\\,\\text{eV}}{4} + 13.6\\,\\text{eV} = -3.40\\,\\text{eV} + 13.6\\,\\text{eV} = 10.2\\,\\text{eV}$\n\n**Answer:** $10.2\\,\\text{eV}$, three significant figures like the energy $13.6\\,\\text{eV}$.\n\n**Reasonableness:** The energy is positive and smaller than the binding energy of the ground state, $13.6\\,\\text{eV}$, because the electron is not released but moves from one shell to another. The energy of the photon is about $3$–$6$ times the energies of photons of visible light, $1.6$–$3.3\\,\\text{eV}$, so the radiation is ultraviolet, like the shortest lines of the spectrum of hydrogen.",
+      "practice": "Review the *Worked example* and the level 2 exercises."
+    },
+    {
+      "id": "tarkistus-4",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "4. Explain",
+      "optional": true,
+      "prompt": "Your friend says: \"The electron whizzes around the $1\\text{s}$ orbital so fast that its path looks like a blurry cloud.\" Using the wave model, explain what the picture of an orbital really shows and why its edge is agreed.",
+      "model": "In the wave model the electron has no path that it would travel, so the cloud is not a blurred path. The state of the electron is described by a standing wave, and the square of the amplitude of the wave tells how likely the electron is to be detected at each place. When the position is measured, the result is one random point. The cloud appears only when the measurement is repeated in many atoms in the same state and the results are marked in the same picture. The cloud thins out outwards, but it has no sharp edge. That is why the boundary of an orbital is drawn at an agreed probability, usually so that the electron is detected inside it with a probability of $90\\,\\%$; about every tenth measurement lands outside the boundary.",
+      "criteria": [
+        "The answer says that in the wave model the electron has no orbit.",
+        "The answer explains that the cloud describes the distribution of the results of many position measurements and that one measurement gives one point.",
+        "The answer says that the boundary is drawn at a chosen probability, for example $90\\,\\%$, and some of the measurements land outside it."
+      ]
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, two quick questions. Answer them yourself first and only then open the answer."
+    }
+  ]
+}

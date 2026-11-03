@@ -1612,6 +1612,17 @@
       "zone_uv": "UV",
       "zone_nakyva": "visible",
       "zone_ir": "IR"
+    },
+    "fy8-5": {
+      "uusi": "New measurement series",
+      "orbitaali": "State",
+      "o1s": "1s orbital",
+      "o2s": "2s orbital",
+      "o2p": "2p orbital",
+      "mittauksia": "Measurements",
+      "kynnys": "Threshold of the boundary $p = {{p}}\\,\\%$",
+      "selite": "Blue dot: hit inside the boundary, grey: outside. Line: boundary of the orbital.",
+      "lukemat": "Measurements ${N = {{N}}}$<br>Inside the boundary ${k = {{k}}}$, outside ${N - k = {{out}}}$<br>Share inside the boundary ${k : N = {{f}}\\,\\%}$<br>Most common distance from the nucleus ${r \\approx {{rp}}\\,\\text{nm}}$<br><strong>Greatest distance of the boundary from the nucleus ${R = {{R}}\\,\\text{nm}}$</strong>"
     }
   },
   "practice": {
