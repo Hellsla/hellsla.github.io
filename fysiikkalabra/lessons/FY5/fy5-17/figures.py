@@ -3,7 +3,7 @@ Velocity and the direction a wave travels are blue (COLD) as in the other FY5 ch
 is a solid ink line and the S wave a dashed orange one, so line style tells them apart without colour."""
 import math
 from figlib import (Fig, Axes, fi, n, INK, MUTED, WHITE, RULE, RULE_LIGHT, GLASS, WATER_LIGHT, WATER, SAND_LIGHT, SAND,
-                    HEAT_LIGHT, HEAT, HOT_LIGHT, COLD, COLD_LIGHT, ALUMINIUM, METAL_EDGE, IRON, GOOD, GOOD_LIGHT, PAPER)
+                    HEAT_LIGHT, HEAT, HOT_LIGHT, COLD, COLD_LIGHT, ALUMINIUM, METAL_EDGE, IRON, GOOD, GOOD_LIGHT, ICE, ICE_EDGE, PAPER)
 import herolib as H
 
 V_TISSUE = 1540.0          # m/s
@@ -280,62 +280,154 @@ def seismogrammi_ex():
 
 
 def hero():
-    """The chapter's opening illustration: an ultrasound examination, the probe on the belly, the image on the screen."""
-    f = H.hero("fy517-hero", "Kuvitus: ultraäänitutkimus. Potilas makaa selällään tutkimuspöydällä. Hoitaja seisoo pöydän "
-               "vieressä ja painaa ultraäänianturia potilaan vatsalle, jonka iholla on läpikuultavaa geeliä. Anturista lähtee "
-               "kaarevia aaltorintamia kehon sisään. Anturin johto kulkee ultraäänilaitteeseen, jonka näytöllä on harmaa "
-               "viuhkan muotoinen kuva.")
-    f.rect(0, 0, 1200, 600, PAPER)
-    f.rect(0, 0, 1200, 470, H.grad(f, "fy517h-wall", GLASS, COLD_LIGHT))
-    f.rect(0, 470, 1200, 130, RULE_LIGHT)
-    f.line(0, 470, 1200, 470, RULE, 3)
-    # the nurse stands behind the bed
-    x, yf = 770, 520
-    f.path(f"M{x - 32},{yf - 130} Q{x - 36},{yf - 236} {x},{yf - 242} Q{x + 36},{yf - 236} {x + 32},{yf - 130} Z", GOOD)          # scrubs
-    f.path(f"M{x + 28},{yf - 222} L{x + 40},{yf - 130}", stroke=GOOD, w=21, extra='stroke-linecap="round"')                           # far arm down
-    f.circle(x + 40, yf - 124, 10, SAND_LIGHT)
-    f.rect(x - 9, yf - 262, 18, 24, SAND_LIGHT)
-    f.circle(x, yf - 281, 28, SAND_LIGHT)
-    f.path(f"M{x - 29},{yf - 281} Q{x - 28},{yf - 315} {x},{yf - 313} Q{x + 30},{yf - 313} {x + 29},{yf - 285} Q{x + 6},{yf - 296} {x - 29},{yf - 281} Z", INK)
-    # bed
-    for x in (300, 840):
-        f.rect(x, 400, 16, 120, IRON, INK, 2)
-        f.circle(x + 8, 528, 10, INK)
-    f.rect(240, 372, 680, 34, ALUMINIUM, INK, 3, 8)
-    f.rect(240, 352, 680, 26, WHITE, INK, 2.5, 10)
-    # patient lying on the back, head to the left
-    f.path("M262,330 Q262,306 300,306 L326,306 Q350,306 350,330 L350,352 L262,352 Z", WHITE, INK, 2.5)      # pillow
-    f.circle(318, 300, 36, SAND_LIGHT, INK, 2.5)
-    f.path("M282,296 Q284,258 322,262 Q352,266 354,292 Q330,276 306,280 Q290,284 282,296 Z", INK)
-    f.path("M350,318 L420,312 Q520,300 560,292 Q640,270 690,300 L700,352 L350,352 Z", SAND_LIGHT, INK, 2.5)  # bare belly
-    f.path("M350,318 L460,312 L470,352 L350,352 Z", COLD, INK, 2.5)                                        # shirt pulled up
-    f.path("M690,300 Q700,310 700,326 L700,352 L880,352 L884,322 Q880,306 860,304 L700,304 Z", INK)       # trousers
-    f.path("M880,312 Q904,310 910,324 Q912,344 896,352 L878,352 Z", COLD_LIGHT, INK, 2)                   # feet
-    # gel on the skin and the probe pressed on the belly
-    f.path("M560,290 Q574,276 604,276 Q634,276 646,288 Q620,296 600,296 Q578,296 560,290 Z", WATER_LIGHT, extra='fill-opacity="0.9"')
-    # wavefronts into the body (clipped to the belly by drawing them short)
-    for k, r in enumerate((26, 44, 62)):
-        f.path(f"M{n(603 - r * 0.7)},{n(296 + r * 0.55)} Q603,{n(296 + r * 1.15)} {n(603 + r * 0.7)},{n(296 + r * 0.55)}", stroke=COLD, w=4,
-               extra=f'stroke-linecap="round" stroke-opacity="{0.9 - 0.25 * k:.2f}"')
-    f.rect(578, 214, 50, 68, ALUMINIUM, INK, 3, 12)
-    f.rect(582, 270, 42, 12, METAL_EDGE)
-    # the nurse's arm reaching to the probe
-    f.path("M746,292 Q700,272 642,240", stroke=GOOD, w=21, extra='stroke-linecap="round"')
-    f.circle(632, 232, 15, SAND_LIGHT, INK, 2)
-    # the cable and the ultrasound machine
-    f.path("M603,214 C600,150 760,130 900,170 S1060,250 1080,300", stroke=IRON, w=5, extra='stroke-linecap="round"')
-    f.rect(1040, 300, 120, 200, ALUMINIUM, INK, 3, 10)
-    f.rect(1056, 320, 88, 30, METAL_EDGE, INK, 2, 6)
-    for x in (1064, 1088, 1112, 1136):
-        f.circle(x, 372, 6, IRON)
-    for x in (1050, 1146):
-        f.circle(x, 512, 11, INK)
-    f.rect(1092, 230, 16, 72, IRON)
-    f.rect(1010, 110, 180, 128, INK, INK, 3, 10)
-    f.path("M1100,128 L1048,222 Q1100,236 1152,222 Z", MUTED)
-    for k, (dx, dy) in enumerate(((-18, 160), (6, 176), (22, 196), (-30, 200), (-6, 206), (14, 214))):
-        f.add(f'<ellipse cx="{1100 + dx}" cy="{dy}" rx="{10 + 4 * (k % 3)}" ry="4" fill="{RULE_LIGHT}" fill-opacity="0.8"/>')
-    f.path("M1076,186 Q1100,170 1122,186 Q1100,198 1076,186 Z", INK)
+    """The chapter's opening illustration: a pregnancy ultrasound in a dimmed room. The mother lies on the couch, head on
+    a wedge pillow at the right; the sonographer sits on a stool beyond the couch's head end, between it and the machine,
+    leans in and reaches past the mother's head to hold the probe on a dab of gel on the belly, her other hand on the
+    controls. Pulses run from the probe into the belly, and the screen shows the fan-shaped echo image with the baby.
+    The couch and the mother are drawn head-left and mirrored (x -> MIR - x). Scale about 300 px/m."""
+    f = H.hero("fy517-hero", "Kuvitus: raskausajan ultraäänitutkimus hämärässä huoneessa. Odottava äiti makaa tutkimuspöydällä "
+               "pää kiilatyynyllä ja katsoo näyttöä. Hoitaja istuu jakkaralla pöydän pääpuolella laitteen vieressä, kurottaa "
+               "äidin pään ohi ja painaa ultraäänianturia äidin vatsalle läpikuultavan geelitäplän kohdalle. Toisella kädellä "
+               "hän säätää laitetta. Anturista lähtee "
+               "kaaria vatsan sisään. Laitteen näytöllä on viuhkan muotoinen harmaasävykuva, jossa näkyy vauva.")
+    D = 70                                              # shifts the whole group right
+    floor = 560
+    # room: dim wall, floor, a window with drawn blinds and a curtain on its rail
+    f.rect(0, 0, 1200, floor, H.grad(f, "fy517h-wall", COLD_LIGHT, GLASS, y1=0, y2=floor))
+    f.rect(0, floor, 1200, 40, H.grad(f, "fy517h-floor", RULE_LIGHT, RULE, y1=floor, y2=600))
+    f.line(0, floor, 1200, floor, RULE, 3)
+    f.rect(40, 60, 170, 220, ALUMINIUM, INK, 3, 4)
+    for k in range(11): f.rect(46, 66 + 19.5 * k, 158, 13, WHITE, INK, 1.5)
+    f.line(14, 30, 300, 30, IRON, 5, cap="round")
+    f.path("M226,32 Q238,180 224,330 Q250,326 262,330 Q276,180 270,32 Z", GOOD_LIGHT, INK, 2.5)
+    f.path("M246,40 Q252,180 244,322", stroke=GOOD, w=2)
+    # the machine on its cart, right of the sonographer: base, body, control panel, the screen on an arm
+    mx = 1010
+    f.rect(mx - 70, floor - 40, 150, 22, IRON, INK, 2.5, 6)
+    for wx in (mx - 56, mx + 66): f.circle(wx, floor - 8, 9, INK)
+    f.rect(mx - 50, floor - 300, 110, 262, ALUMINIUM, INK, 3, 10)
+    f.rect(mx - 38, floor - 250, 86, 6, METAL_EDGE); f.rect(mx - 38, floor - 230, 86, 6, METAL_EDGE)
+    f.path(f"M{mx - 92},{floor - 300} L{mx + 82},{floor - 300} L{mx + 74},{floor - 330} L{mx - 84},{floor - 330} Z", WHITE, INK, 3)
+    for k in range(6): f.rect(mx - 70 + 22 * k, floor - 324, 14, 7, RULE, INK, 1)
+    f.circle(mx + 52, floor - 316, 9, METAL_EDGE, INK, 1.5)
+    f.rect(mx - 4, floor - 400, 14, 72, IRON, INK, 2)
+    # the screen and the image on it: a fan of grey speckle with the baby's head and body as bright echoes
+    sx0, sy0, sw, sh = mx - 120, 50, 260, 180
+    f.rect(sx0 - 10, sy0 - 10, sw + 20, sh + 20, IRON, INK, 2.5, 10)
+    f.rect(sx0, sy0, sw, sh, INK, None, 2, 4)
+    ax, ay, R0, R1, half = sx0 + sw / 2, sy0 + 10, 14, sh - 16, math.radians(36)
+    def fan_pt(r, a): return ax + r * math.sin(a), ay + r * math.cos(a)
+    (p1x, p1y), (p2x, p2y), (p3x, p3y), (p4x, p4y) = fan_pt(R0, -half), fan_pt(R1, -half), fan_pt(R1, half), fan_pt(R0, half)
+    fan = f"M{n(p1x)},{n(p1y)} L{n(p2x)},{n(p2y)} A{R1},{R1} 0 0 0 {n(p3x)},{n(p3y)} L{n(p4x)},{n(p4y)} A{R0},{R0} 0 0 1 {n(p1x)},{n(p1y)} Z"
+    f.defs_add(f'<radialGradient id="fy517h-fan" gradientUnits="userSpaceOnUse" cx="{n(ax)}" cy="{n(ay)}" r="{R1}"><stop offset="0" stop-color="{METAL_EDGE}"/>'
+               f'<stop offset="1" stop-color="{IRON}"/></radialGradient>')
+    f.defs_add(f'<clipPath id="fy517h-fanclip"><path d="{fan}"/></clipPath>')
+    f.path(fan, "url(#fy517h-fan)")
+    speck = "".join(f'<circle cx="{n(fan_pt(R0 + (R1 - R0) * H.rnd(k, 3), (2 * H.rnd(k, 8) - 1) * half)[0])}" '
+                    f'cy="{n(fan_pt(R0 + (R1 - R0) * H.rnd(k, 3), (2 * H.rnd(k, 8) - 1) * half)[1])}" r="1.6" fill="{ALUMINIUM}" fill-opacity="0.7"/>'
+                    for k in range(90))
+    cx, cy = ax + 4, ay + 98                            # amniotic fluid (dark, echo-free) with the baby inside
+    f.add(f'<g clip-path="url(#fy517h-fanclip)">{speck}'
+          f'<ellipse cx="{n(cx)}" cy="{n(cy)}" rx="74" ry="46" fill="{INK}"/>'
+          f'<path d="M{n(cx - 76)},{n(cy - 6)} Q{n(cx)},{n(cy - 66)} {n(cx + 76)},{n(cy - 6)}" fill="none" stroke="{WHITE}" stroke-width="3" stroke-opacity="0.7"/>'
+          f'<circle cx="{n(cx - 30)}" cy="{n(cy - 2)}" r="22" fill="none" stroke="{WHITE}" stroke-width="4"/>'
+          f'<path d="M{n(cx - 10)},{n(cy - 16)} Q{n(cx + 30)},{n(cy - 30)} {n(cx + 46)},{n(cy - 2)} Q{n(cx + 52)},{n(cy + 22)} {n(cx + 24)},{n(cy + 26)} '
+          f'Q{n(cx + 4)},{n(cy + 24)} {n(cx - 10)},{n(cy + 18)}" fill="none" stroke="{WHITE}" stroke-width="4" stroke-linecap="round"/>'
+          f'<path d="M{n(cx + 10)},{n(cy + 6)} q14,-6 22,4" fill="none" stroke="{ALUMINIUM}" stroke-width="3" stroke-linecap="round"/></g>')
+    f.path(fan, "none", METAL_EDGE, 1.5)
+
+    # geometry of the mother (lying on her back, head left, knees up) and of the probe on her belly
+    top = 338                                           # mattress top
+    bc, br = (425 + D, top - 50), 64                    # the belly: a dome (circle) rising from the torso
+    phi = math.radians(-30)                             # the probe stands square to the skin, 30° towards the head
+    pc = (bc[0] + br * math.sin(phi), bc[1] - br * math.cos(phi))
+    nrm = (math.sin(phi), -math.cos(phi))
+    MIR = 1020                                          # mirror: drawn head-left, shown head-right
+    def along(t): return MIR - (pc[0] + nrm[0] * t), pc[1] + nrm[1] * t
+    grip, ptop = along(50), along(92)
+    # the probe's cable, from the probe up and over to the machine (behind the sonographer)
+    f.path(f"M{n(ptop[0])},{n(ptop[1])} C{n(ptop[0] + 20)},{n(ptop[1] - 110)} {mx - 120},{floor - 470} {mx - 48},{floor - 270}", stroke=INK, w=3.5)
+    # the sonographer on a stool beyond the couch's head end, leaning in (drawn first: the couch covers her knees)
+    scrub = GOOD
+    f.rect(838, 412, 64, 14, IRON, INK, 2, 5)                                    # stool: seat, column, base on wheels
+    f.rect(864, 426, 12, 104, METAL_EDGE, INK, 2)
+    f.path(f"M820,{floor - 22} L870,{floor - 34} L920,{floor - 22}", stroke=INK, w=6, extra='stroke-linecap="round"')
+    for wx in (822, 918): f.circle(wx, floor - 12, 8, INK)
+    f.path(f"M866,404 L792,404 L782,{floor - 14}", stroke=INK, w=31, extra='stroke-linecap="round" stroke-linejoin="round"')
+    f.path(f"M866,404 L792,404 L782,{floor - 14}", stroke=COLD, w=26, extra='stroke-linecap="round" stroke-linejoin="round"')
+    f.path(f"M772,{floor - 6} h34", stroke=WHITE, w=14, extra='stroke-linecap="round"')
+    hx, hy = 786, 168                                   # head, turned to the probe
+    shl, shr = (806, 226), (826, 222)                   # shoulders: the near one reaches to the probe, the far one to the panel
+    f.path(f"M820,422 Q800,330 790,228 Q812,206 844,216 Q874,300 872,422 Z", scrub, INK, 2.5)
+    elbow2, hand2 = (868, 300), (mx - 60, floor - 322)
+    f.path(f"M{shr[0]},{shr[1]} L{elbow2[0]},{elbow2[1]} L{n(hand2[0])},{n(hand2[1])}", stroke=scrub, w=20, extra='stroke-linecap="round" stroke-linejoin="round"')
+    f.circle(hand2[0], hand2[1], 10, SAND_LIGHT)
+    f.path(f"M{hx + 4},{hy + 20} L{hx + 16},{hy + 52}", stroke=SAND_LIGHT, w=20)
+    f.circle(hx, hy, 32, SAND_LIGHT)
+    f.path(f"M{hx + 33},{hy + 10} Q{hx + 40},{hy - 34} {hx + 2},{hy - 34} Q{hx - 30},{hy - 34} {hx - 28},{hy - 12} Q{hx + 6},{hy - 10} {hx + 14},{hy + 22} Z", INK)
+    f.circle(hx + 32, hy - 16, 13, INK)                 # hair tied in a bun
+    f.add(f'<g transform="translate({MIR} 0) scale(-1 1)">')
+    # the couch: base on wheels, pedestal, frame and mattress, a wedge pillow
+    f.rect(400 + D, top + 44, 110, floor - 34 - top - 44, IRON, INK, 2.5)
+    f.rect(270 + D, floor - 34, 380, 20, METAL_EDGE, INK, 2.5, 6)
+    for wx in (288 + D, 632 + D): f.circle(wx, floor - 8, 9, INK)
+    f.rect(180 + D, top + 22, 600, 24, ALUMINIUM, INK, 2.5, 6)
+    f.rect(170 + D, top - 4, 620, 30, WHITE, INK, 2.5, 12)
+    f.path(f"M{176 + D},{top - 4} L{176 + D},{top - 52} Q{176 + D},{top - 60} {186 + D},{top - 58} L{290 + D},{top - 10} L{290 + D},{top - 4} Z", COLD_LIGHT, INK, 2.5)
+    # the mother: legs with the knees up and the feet flat on the mattress
+    skin, shirt, trousers = SAND_LIGHT, HOT_LIGHT, IRON
+    hip, knee, heel = (500 + D, top - 26), (590 + D, top - 104), (668 + D, top - 22)
+    f.path(f"M{hip[0]},{hip[1]} L{knee[0]},{knee[1]} L{heel[0]},{heel[1]}", stroke=INK, w=49, extra='stroke-linecap="round" stroke-linejoin="round"')
+    f.path(f"M{hip[0]},{hip[1]} L{knee[0]},{knee[1]} L{heel[0]},{heel[1]}", stroke=trousers, w=44, extra='stroke-linecap="round" stroke-linejoin="round"')
+    f.path(f"M{heel[0] - 12},{top - 4} L{heel[0] - 10},{top - 30} L{heel[0] + 14},{top - 30} Q{heel[0] + 48},{top - 22} {heel[0] + 50},{top - 4} Z", WHITE, INK, 2)  # foot in a sock
+    # torso: back on the mattress, the shirt pulled up over the chest, the belly bare
+    f.path(f"M{300 + D},{top - 4} L{300 + D},{top - 50} Q{320 + D},{top - 62} {372 + D},{top - 60} L{500 + D},{top - 52} Q{524 + D},{top - 30} {516 + D},{top - 4} Z", trousers, INK, 2.5)
+    torso = (f"M{360 + D},{top - 4} L{360 + D},{top - 58} "
+             f"A{br},{br} 0 0 1 {n(bc[0] + br * math.sin(math.radians(68)))},{n(bc[1] - br * math.cos(math.radians(68)))} "
+             f"Q{500 + D},{top - 40} {492 + D},{top - 4} Z")
+    f.path(torso, skin, INK, 2.5)
+    f.path(f"M{482 + D},{top - 38} Q{496 + D},{top - 24} {494 + D},{top - 4}", stroke=trousers, w=12)          # waistband
+    f.path(f"M{288 + D},{top - 4} L{288 + D},{top - 50} Q{300 + D},{top - 62} {340 + D},{top - 62} L{372 + D},{top - 66} "
+           f"Q{378 + D},{top - 40} {372 + D},{top - 4} Z", shirt, INK, 2.5)
+    # pulses going into the belly from the probe, clipped to the torso
+    f.defs_add(f'<clipPath id="fy517h-belly"><path d="{torso}"/></clipPath>')
+    pul = []
+    for k, r in enumerate((20, 38, 56, 74)):
+        a0, a1 = phi + math.pi / 2 + 0.75, phi + math.pi / 2 - 0.75 + 2 * 0.75 * 0   # an arc of ±43° around the inward direction
+        ang_c = math.atan2(-nrm[1], -nrm[0])            # inward direction
+        x1, y1 = pc[0] + r * math.cos(ang_c - 0.75), pc[1] + r * math.sin(ang_c - 0.75)
+        x2, y2 = pc[0] + r * math.cos(ang_c + 0.75), pc[1] + r * math.sin(ang_c + 0.75)
+        pul.append(f'<path d="M{n(x1)},{n(y1)} A{r},{r} 0 0 1 {n(x2)},{n(y2)}" fill="none" stroke="{WATER}" stroke-width="4" '
+                   f'stroke-linecap="round" stroke-opacity="{0.95 - 0.2 * k:.2f}"/>')
+    f.add(f'<g clip-path="url(#fy517h-belly)">{"".join(pul)}</g>')
+    # the head on the wedge pillow (hair on the back of the head, the face up towards the screen), the near arm along the side
+    f.rect(270 + D, top - 70, 34, 24, skin)
+    f.circle(262 + D, top - 80, 34, skin, INK, 2)
+    f.path(f"M{230 + D},{top - 66} Q{222 + D},{top - 106} {256 + D},{top - 114} Q{284 + D},{top - 118} {294 + D},{top - 96} "
+           f"Q{270 + D},{top - 100} {258 + D},{top - 84} Q{250 + D},{top - 66} {246 + D},{top - 50} Q{234 + D},{top - 52} {230 + D},{top - 66} Z", INK)
+    f.path(f"M{236 + D},{top - 56} Q{226 + D},{top - 40} {214 + D},{top - 36}", stroke=INK, w=10, extra='stroke-linecap="round"')   # hair on the pillow
+    f.path(f"M{326 + D},{top - 44} L{372 + D},{top - 16} L{424 + D},{top - 12}", stroke=INK, w=25, extra='stroke-linecap="round" stroke-linejoin="round"')
+    f.path(f"M{326 + D},{top - 44} L{372 + D},{top - 16}", stroke=shirt, w=20, extra='stroke-linecap="round"')
+    f.path(f"M{372 + D},{top - 16} L{422 + D},{top - 12}", stroke=skin, w=17, extra='stroke-linecap="round"')
+    # the gel on the skin and the probe square to it
+    ga = math.degrees(phi)
+    f.add(f'<g transform="translate({n(pc[0])} {n(pc[1])}) rotate({ga:.1f})">'
+          f'<ellipse cx="0" cy="-1" rx="30" ry="8" fill="{ICE}" fill-opacity="0.85" stroke="{ICE_EDGE}" stroke-width="1.5"/>'
+          f'<ellipse cx="-13" cy="-4" rx="8" ry="2.5" fill="{WHITE}" fill-opacity="0.9"/>'
+          f'<path d="M-18,-4 L-16,-22 Q-12,-32 -9,-44 L-9,-82 Q0,-94 9,-82 L9,-44 Q12,-32 16,-22 L18,-4 Z" fill="{ALUMINIUM}" stroke="{INK}" stroke-width="2.5" stroke-linejoin="round"/>'
+          f'<rect x="-18" y="-8" width="36" height="6" rx="2" fill="{INK}"/></g>')
+    f.add('</g>')
+    # the sonographer's near arm past the mother's head to the probe (bent, above the head)
+    elbow1 = (704, 200)
+    f.path(f"M{shl[0]},{shl[1]} L{elbow1[0]},{elbow1[1]}", stroke=scrub, w=21, extra='stroke-linecap="round"')
+    f.path(f"M{elbow1[0]},{elbow1[1]} L{n(grip[0] - 6)},{n(grip[1])}", stroke=INK, w=21, extra='stroke-linecap="round"')
+    f.path(f"M{elbow1[0]},{elbow1[1]} L{n(grip[0] - 6)},{n(grip[1])}", stroke=SAND_LIGHT, w=17, extra='stroke-linecap="round"')
+    f.path(f"M{shl[0]},{shl[1]} L{elbow1[0] - 6},{elbow1[1]}", stroke=scrub, w=21, extra='stroke-linecap="round"')
+    f.circle(grip[0] - 2, grip[1], 12, SAND_LIGHT, INK, 2)
+    # a gel bottle on the cart
+    f.rect(mx + 64, floor - 262, 24, 34, HEAT_LIGHT, INK, 2, 5)
+    f.path(f"M{mx + 70},{floor - 262} L{mx + 76},{floor - 276} L{mx + 82},{floor - 262} Z", WHITE, INK, 2)
+    f.rect(mx + 60, floor - 230, 36, 8, IRON, INK, 2, 2)
     return f.svg()
 
 

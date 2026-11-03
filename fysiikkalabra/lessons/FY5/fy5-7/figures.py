@@ -4,7 +4,7 @@ measurement points are ink circles with a white ring; every arrow is a filled pa
 model curves drawn from x = A sin(2πt/T) (no measured data)."""
 import math
 from figlib import (Fig, Axes, INK, MUTED, WHITE, RULE, RULE_LIGHT, COLD, COLD_LIGHT, GLASS, IRON, METAL_EDGE, ALUMINIUM,
-                    GOOD, GOOD_LIGHT, SAND, SAND_LIGHT, SAND_DARK, HEAT, n, fi)
+                    GOOD, GOOD_LIGHT, SAND, SAND_LIGHT, SAND_DARK, GRAIN, HEAT, ICE_EDGE, n, fi)
 import herolib as H
 
 PI = math.pi
@@ -48,48 +48,74 @@ def weight(f, x, yc, ghost=False, wd=56, ht=40):
 
 
 def hero():
-    f = H.hero("fy57-hero", "Kuvitus: lapsi seisoo keinulla puistossa kesäpäivänä ja keinuu edestakaisin. Keinun kaksi "
-               "ääriasentoa näkyvät haaleina katkoviivoina keinun molemmin puolin, ja keskimmäinen, alin asento on piirretty "
-               "täytenä. Keinutelineen takana on koivuja ja kumpuilevia mäkiä.")
-    H.sky(f, "fy57h", bottom=600)
-    H.sun(f, "fy57h", 1050, 110, r=48)
-    H.cloud(f, 230, 100, 1.0); H.cloud(f, 820, 70, 0.8)
-    H.hills(f, "fy57h", 340, [GOOD_LIGHT], amp=34, seed=5)
-    f.rect(0, 400, 1200, 200, H.grad(f, "fy57h-grass", GOOD_LIGHT, GOOD, y1=400, y2=600))
-    for x, h in ((90, 240), (180, 180), (1100, 250), (1020, 175)):
-        H.birch(f, x, 440, h)
-    # worn sand under the swing
-    f.add(f'<ellipse cx="600" cy="520" rx="330" ry="46" fill="{SAND_LIGHT}"/>')
-    # the frame: two A-shaped legs and the top bar
-    top_y, px = 96, 600
-    for lx in (360, 840):
-        f.line(lx, top_y, lx - 70, 520, IRON, 12, cap="round"); f.line(lx, top_y, lx + 70, 520, IRON, 12, cap="round")
-    f.line(340, top_y, 860, top_y, IRON, 16, cap="round")
-    f.line(340, top_y - 8, 860, top_y - 8, METAL_EDGE, 3, cap="round")
-    L = 360
+    """A child on a swing seen from the side (the swing's plane is the picture's plane), at the front end of a swing;
+    a parent at the back of the swing's path times the swings with a stopwatch. A pale band shows the path of the seat
+    from one end of the swing to the other: one full swing repeats the same few numbers (amplitude and period)."""
+    f = H.hero("fy57-hero", "Kuvitus: keinuteline nähtynä sivulta kesäisessä puistossa. Lapsi istuu keinulla heilahduksen "
+               "etummaisessa ääriasennossa jalat ojossa. Vaalea kaari keinun alla näyttää istuimen radan "
+               "ääriasennosta toiseen. Keinun vieressä seisoo aikuinen, joka ottaa heilahdusten aikaa sekuntikellolla. "
+               "Taustalla on koivuja ja metsää.")
+    H.sky(f, "fy57h")
+    H.sun(f, "fy57h", 1080, 96, r=40)
+    H.cloud(f, 250, 92, 0.9); H.cloud(f, 760, 64, 0.7)
+    H.forest(f, 404, 64, 30, GOOD, seed=4, depth=40)
+    f.rect(0, 430, 1200, 170, H.grad(f, "fy57h-grass", GOOD_LIGHT, GOOD, y1=430, y2=1500))
+    for x, h in ((96, 250), (1000, 220), (1104, 270)):
+        H.birch(f, x, 456, h)
+    for k in range(34):
+        x = 30 + H.rnd(k, 3) * 1140; y = 470 + H.rnd(k + 40, 3) * 110
+        if 330 < x < 880 and y < 560: continue
+        f.path(f"M{n(x)},{n(y)} l4,-12 M{n(x + 6)},{n(y)} l-2,-10", stroke=GOOD, w=2)
+    # the worn sand under the swing (longer than wide: the swing moves along the picture)
+    f.add(f'<ellipse cx="600" cy="540" rx="300" ry="30" fill="{SAND_LIGHT}"/>')
+    f.add(f'<ellipse cx="600" cy="540" rx="190" ry="17" fill="{SAND_DARK}" fill-opacity="0.6"/>')
 
-    def swing(deg, ghost):
-        a = math.radians(deg)
-        sx, sy = px + L * math.sin(a), top_y + L * math.cos(a)
-        col = MUTED if ghost else INK
-        extra = 'stroke-dasharray="12 10"' if ghost else ""
-        for dx in (-44, 44):
-            f.path(f"M{n(px + dx)},{top_y} L{n(sx + dx * math.cos(a))},{n(sy - dx * math.sin(a))}", stroke=col, w=4, extra=extra)
-        # the seat, tilted with the ropes
-        c, s = math.cos(a), math.sin(a)
-        pts = [(-56, -6), (56, -6), (56, 10), (-56, 10)]
-        d = "M" + " L".join(f"{n(sx + u * c + v * s)},{n(sy - u * s + v * c)}" for u, v in pts) + " Z"
-        if ghost: f.path(d, WHITE, MUTED, 3, extra='stroke-dasharray="10 8" fill-opacity="0.5"')
-        else: f.path(d, SAND_DARK, INK, 3)
-        return sx, sy
-    swing(-34, True); swing(34, True)
-    sx, sy = swing(0, False)
-    H.person(f, sx, sy - 6, shirt=COLD, sc=0.62, arms="down")
-    # light swooshes along the path of the seat
-    for d0, d1 in ((-30, -8), (8, 30)):
-        pts = [(px + (L + 34) * math.sin(math.radians(d)), top_y + (L + 34) * math.cos(math.radians(d))) for d in range(d0, d1 + 1, 2)]
-        f.path("M" + " L".join(f"{n(x)},{n(y)}" for x, y in pts), stroke=WHITE, w=6, extra='stroke-linecap="round" stroke-opacity="0.85"')
+    px, py, L, deg = 600, 118, 330, 34      # the pivot at the apex (the top bar seen end-on), rope length to the seat, angle
+    foot, spread = 540, 180
+    far = (14, -8)                           # the far A-frame, a little offset in depth
+    for dx in (-spread, spread):
+        f.line(px + far[0], py + far[1], px + far[0] + dx, foot + far[1], METAL_EDGE, 12, cap="round")
+    f.line(px, py, px + far[0], py + far[1], IRON, 20, cap="round")                    # the top bar, running away from the viewer
+    # the pale arc of the seat's path: centred on the pivot, radius the rope length, from one end of the swing to the other
+    a0, a1 = math.radians(-deg), math.radians(deg)
+    f.path(f"M{n(px + L * math.sin(a0))},{n(py + L * math.cos(a0))} A{L},{L} 0 0 0 {n(px + L * math.sin(a1))},{n(py + L * math.cos(a1))}",
+           stroke=WHITE, w=18, extra='stroke-linecap="round" stroke-opacity="0.6"')
+    # the swing in its own frame: the two ropes (one behind the other in a side view) up the y axis from the seat at the
+    # origin to the pivot at (0, -L); the child faces +x. Then the whole swing is turned to the angle about the pivot.
+    a = math.radians(deg)
+    sx, sy = px + L * math.sin(a), py + L * math.cos(a)
+    f.add(f'<g transform="translate({n(sx)} {n(sy)}) rotate({-deg})">')
+    f.line(0, -L, 0, 0, METAL_EDGE, 3)                                                       # the far rope
+    f.add('<g transform="scale(1.15)">')
+    f.path("M6,-12 L44,-16 L80,4", stroke=ICE_EDGE, w=16, extra='stroke-linecap="round" stroke-linejoin="round"')   # far leg
+    f.path("M20,-64 L13,-40 L1,-52", stroke=HEAT, w=11, extra='stroke-linecap="round" stroke-linejoin="round"')      # far arm
+    f.rect(-36, 0, 72, 11, SAND_DARK, INK, 2.5, 4)                                         # the seat, centred on the ropes
+    f.path("M18.6,-4 L33.6,-60.6 Q21,-76 8.4,-67.4 L-10.6,-12 Z", HEAT, INK, 2.5)           # the body, upright on the seat
+    f.path("M2,-8 L44,-10 L82,10", stroke=COLD, w=17, extra='stroke-linecap="round" stroke-linejoin="round"')        # near leg, stretched forward
+    f.path("M78,2 q14,0 16,14 l-18,3 Z", INK, INK, 2.5)                                     # shoe
+    f.rect(23, -78, 10, 12, SAND_LIGHT)                                                     # neck
+    f.circle(29, -97, 19, SAND_LIGHT)                                                       # head
+    f.path("M10,-94 Q6,-122 30,-120 Q50,-118 47,-100 Q30,-110 10,-94 Z", GRAIN)             # hair
+    f.add('</g>')
+    f.line(0, -L, 0, 0, IRON, 4)                                                             # the near rope, in front of the child
+    f.add('<g transform="scale(1.15)">')
+    f.path("M26,-62 L17,-38 L1,-50", stroke=INK, w=15, extra='stroke-linecap="round" stroke-linejoin="round"')
+    f.path("M26,-62 L17,-38 L1,-50", stroke=HEAT, w=10, extra='stroke-linecap="round" stroke-linejoin="round"')      # near arm to the rope
+    f.circle(0, -50, 6, SAND_LIGHT)                                                         # the hand on the rope
+    f.add('</g>')
+    f.add('</g>')
+    # the near A-frame in front of the swing, its cross brace and the end of the top bar at the pivot
+    for dx in (-spread, spread):
+        f.line(px, py, px + dx, foot, IRON, 14, cap="round")
+    yb = py + 0.72 * (foot - py)
+    f.line(px - 0.72 * spread, yb, px + 0.72 * spread, yb, IRON, 8, cap="round")
+    f.circle(px, py, 14, METAL_EDGE, INK, 2.5)
+    # the parent outside the path, timing the swings with a stopwatch held at the chest
+    sw = (252, 392)
+    H.walker(f, 196, 560, coat=GOOD, sc=0.62, hand=sw, stride=0.35)
+    H.stopwatch(f, sw[0] + 10, sw[1] - 14, 15, 0.2)
     return f.svg()
+
 
 
 def osat():

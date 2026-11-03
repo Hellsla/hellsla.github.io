@@ -1,16 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: a916b250ae87b5de
+CONTENT-HASH: 044ab14ee63f1b0d
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] fig-6-390 (Earth cross-section) — the legend sits close to the circle at 390 px but reads; same as Finnish — none needed.
+- [Minor] hero — the mother's upper body is partly hidden behind the probe arm and the pink top; the pose is still understandable and matches the alt text.
 
 ## Checked
-- Contact sheets 1–2; fig-1-390 (hero), fig-2-390 (A-scan: "echo strength", "transmitted pulse", t (μs)), fig-3-390 (seismograms, "distance"), fig-4-390 (gel/fat/muscle/bone, pulse, echoes), fig-5-390 (3 MHz / 12 MHz, λ ≈ 0.5 mm / 0.13 mm), fig-6-390 (earthquake, mantle, outer core (liquid), inner core, legend), fig-7-390 (Δt, P/S lines), fig-9-390 (198 m/s, 99 m/s).
-- No Finnish left in figures, labels or subscripts; decimal points in every figure; English labels fit.
-- intro-1280 (illustration beside the goals), example-390-1, stage-tutki-390-1 (two tables fit at 390 px), open-tarkista-1280-2, open-exercises-L2-1280-1.
-- KaTeX renders; units upright with thin space; \cdot, not ×. check_layout --lang en at 345 px: OK.
+- Delta review, category illustration: only the hero (`data-fig="hero"`) and its aria-label changed.
+- fy5-17-top-390.png and fy5-17-intro-1280.png (hero at 390 px and 1280 px, en page): an ultrasound examination: couch, mother, nurse with probe and gel, fan-shaped image on the screen. Layout survived: the picture sits in the 16:8 frame, nothing clipped, no horizontal overflow, the first screen is unchanged around it.
+- Hero SVG source is identical in fi, en and fi-easy (checked by comparing the SVG body); the screenshots are the same picture. No text in the picture; flat vector style and palette match the other FY5 openings.
+- Alt text compared with the picture item by item and read in its own language: it matches what is drawn, nothing is claimed that is missing, and it does not give away the chapter's answer.
+- The picture fits the opening question in the Pohdinta; nothing physically misleading seen (science review carried over).
 
 ## Scores
-illustrations 4 · typography 4 · Finnish (English) 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

@@ -1,19 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 2b5836b87ab1a81b
+CONTENT-HASH: 7546989a9073b1e4
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fig-4-390 (kieli) and fig-5-390 (putket) — the `L = n \cdot \tfrac{\lambda_n}{2}` and `L = \tfrac{3\lambda}{4}` labels render about 8 px at 390 px (subscript inside a small fraction) — enlarge these labels slightly or drop the `\tfrac` to `\lambda_1/2` in the figure.
-- [Minor] sim-390 readout "Solmuja 1, kupuja 1" at the off-resonance start state (f = 50 Hz, A = 1,0 mm) — could read as a resonance pattern although the amplitude is minimal — consider "-" when A is below the resonance threshold; for science: whether counting nodes off resonance is intended.
-- [Minor] lesson.md Ominaistaajuudet — the paragraph is one 8-sentence block (about 100 words) that defines three terms; fine, but a line break before "Tätä ilmiötä sanotaan resonanssiksi" would help a phone reader.
+- [Minor] hero — the light blue motion envelope is slim at 390 px; it is still visible and the string, capo and bridge read clearly.
 
 ## Checked
-- Contact sheets 1–4; fig-1…fig-5-390 (hero, superposition, nodes/antinodes, string modes, pipes) opened; physics of node/antinode placement in the pipe figure matches the text.
-- top-390, top-1280, sim-390, lab-1280-1, koe-2 sim at 390, example-390-1/2, theory-1280-1 and -3, open-ennusta-1280-1, open-tarkista-1280-1/-2; exit-ticket and the other stage captures only via contact sheets.
-- Source text (lesson.md, inquiry.json, exit-ticket.json) read for Finnish and for plain-text quantities: none found.
-- Round 2: changed spots (inquiry feedback ~103, model/calc ~117-118, lesson.md:297 and :405) read; example-390-2 shows the new Järkevyys line rendered cleanly, no regressions.
+- Delta review, category illustration: only the hero (`data-fig="hero"`) and its aria-label changed.
+- fy5-13-top-390.png and fy5-13-intro-1280.png (hero at 390 px and 1280 px, fi page): a guitar in its open case from above, capo, plucked string with a light blue motion envelope, pick. Layout survived: the picture sits in the 16:8 frame, nothing clipped, no horizontal overflow, the first screen is unchanged around it.
+- Hero SVG source is identical in fi, en and fi-easy (checked by comparing the SVG body); the screenshots are the same picture. No text in the picture; flat vector style and palette match the other FY5 openings.
+- Alt text compared with the picture item by item and read in its own language: it matches what is drawn, nothing is claimed that is missing, and it does not give away the chapter's answer.
+- The picture fits the opening question in the Pohdinta; nothing physically misleading seen (science review carried over).
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

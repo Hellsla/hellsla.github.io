@@ -15,6 +15,9 @@
      simulation too); words outside the dollars stay text in the page font. A p5 element's .html() with $…$ (the
      readout, a legend) renders its maths the same way, and is re-rendered only when its string changes.
    Tests run at 1280 px, where the container is wider than 600 px, so the canvas keeps its native size there.
+   - "Suurenna" (teacher 2026-11-03, "simulaatiot saa klikattua isoksi") shows the whole simulation card full screen
+     (the Fullscreen API, or a fixed layer where it is missing, as on an iPhone); the canvas then fills the window
+     (teacher 2026-11-03: no empty margins; the Käyttöohje and model boxes are hidden there), the controls stay beside it on a wide screen, and Esc or "Pienennä" brings it back.
    It also defines window.defineSimAdapter (docs/inquiry.md, "Simulation interface"): a sim that calls it once
    from setup exposes a small adapter that guided investigations (inquiry.js) use to read the state, set
    parameters, lock controls, reset and pause. The physics stays in the sim; window.simState is untouched.
@@ -141,7 +144,9 @@
         const fit = () => {
           const el = root();
           if (!el || !p.canvas) return;
-          const w = Math.min(W, el.clientWidth || W);
+          const big = el.closest && el.closest('#sim.sim-expanded');   // enlarged (part below): as large as the window allows (site.css keeps it on screen)
+          const w = Math.min(big ? 5 * W : W, el.clientWidth || W);
+          if (big) el.style.setProperty('--sim-ar-x', (W / H).toFixed(4));
           const ns = Math.max(0.3, w / W);
           if (Math.abs(ns - s) < 0.002 && p.height === Math.round(H * s)) return;
           s = ns;
@@ -182,6 +187,39 @@
     }
   }
   Embedded.__fysiikkalabra = true;
+  window.addEventListener('DOMContentLoaded', () => expandable(document.getElementById('sim')));
+  const expandable = (box) => {
+    if (!box || box.querySelector(':scope > .sim-expand')) return;
+    const b = document.createElement('button'); b.type = 'button'; b.className = 'sim-expand';
+    const ICON = '<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path d="%" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+    const OUT = 'M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5', IN = 'M9 4v5H4M15 4v5h5M9 20v-5H4M15 20v-5h5';
+    const label = (on) => {
+      b.innerHTML = ICON.replace('%', on ? IN : OUT);   // the icon alone (teacher 2026-11-03); its name is the label and the tooltip
+      b.setAttribute('aria-label', window.flMsg(on ? 'sim_shrink_aria' : 'sim_expand_aria')); b.title = window.flMsg(on ? 'sim_shrink_aria' : 'sim_expand_aria');
+    };
+    let back = 0;
+    const fs = () => document.fullscreenElement || document.webkitFullscreenElement;
+    const set = (on) => {
+      if (box.classList.contains('sim-expanded') === on) return;
+      if (on) back = window.scrollY;
+      box.classList.toggle('sim-expanded', on);
+      document.documentElement.classList.toggle('sim-open', on);
+      label(on);
+      if (!on) { window.scrollTo(0, back); b.focus({ preventScroll: true }); }
+    };
+    const toggle = (on) => {
+      set(on);
+      const req = box.requestFullscreen || box.webkitRequestFullscreen, exit = document.exitFullscreen || document.webkitExitFullscreen;
+      if (on && req) { try { const r = req.call(box); if (r && r.catch) r.catch(() => {}); } catch (e) { /* a fixed layer is enough */ } }
+      if (!on && fs() && exit) { try { const r = exit.call(document); if (r && r.catch) r.catch(() => {}); } catch (e) { /* already left */ } }
+    };
+    b.addEventListener('click', () => toggle(!box.classList.contains('sim-expanded')));
+    const left = () => { if (!fs() && box.classList.contains('sim-expanded')) set(false); };   // Esc ends full screen: the card returns too
+    document.addEventListener('fullscreenchange', left); document.addEventListener('webkitfullscreenchange', left);
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && box.classList.contains('sim-expanded')) toggle(false); });
+    label(false);
+    box.prepend(b);
+  };
   window.p5 = Embedded;
 })();
 

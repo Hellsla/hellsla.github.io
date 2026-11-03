@@ -1,10 +1,28 @@
 VERDICT: PASS
+<<<<<<< HEAD
 CONTENT-HASH: 9cdcab48d0e8e5b4
+=======
+CONTENT-HASH: c303495cd7b5cceb
+>>>>>>> origin/main
 
 ## Blocking
+(none)
 
 ## Polish
+- [Minor] hero — the mother's upper body is partly hidden behind the probe arm and the pink top; the pose is still understandable and matches the alt text.
 
+<<<<<<< HEAD
 
 ## Checked
 batch delta review: scratchpad kc/fy5-17-390.png and kc/fy5-17-1280.png (the new section cut from the built page, preview/fi-easy/fy5-17.html): stacked at 390 px, two columns at 1280 px, no raw maths, no overflow, no clipping; the diff text read for wording (the packet's own captures show no figure change, so only sheets of the new section were opened).
+=======
+## Checked
+- Delta review, category illustration: only the hero (`data-fig="hero"`) and its aria-label changed.
+- fy5-17-top-390.png and fy5-17-intro-1280.png (hero at 390 px and 1280 px, fi-easy page): an ultrasound examination: couch, mother, nurse with probe and gel, fan-shaped image on the screen. Layout survived: the picture sits in the 16:8 frame, nothing clipped, no horizontal overflow, the first screen is unchanged around it.
+- Hero SVG source is identical in fi, en and fi-easy (checked by comparing the SVG body); the screenshots are the same picture. No text in the picture; flat vector style and palette match the other FY5 openings.
+- Alt text compared with the picture item by item and read in its own language: it matches what is drawn, nothing is claimed that is missing, and it does not give away the chapter's answer.
+- The picture fits the opening question in the Pohdinta; nothing physically misleading seen (science review carried over).
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+>>>>>>> origin/main

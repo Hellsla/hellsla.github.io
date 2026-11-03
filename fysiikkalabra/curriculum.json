@@ -1159,6 +1159,13 @@
       "Hyvinvointiosaaminen"
     ],
     "initialized": "2026-11-03",
+    "themes": [
+      {"title": "Pyöriminen ja tasapaino", "first": "fy5-1"},
+      {"title": "Ympyräliike ja gravitaatio", "first": "fy5-3"},
+      {"title": "Jaksollinen liike", "first": "fy5-7"},
+      {"title": "Aaltoliike", "first": "fy5-10"},
+      {"title": "Ääni", "first": "fy5-14"}
+    ],
     "lessons": [
       {
         "id": "fy5-1",

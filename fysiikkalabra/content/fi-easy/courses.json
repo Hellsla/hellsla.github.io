@@ -98,6 +98,7 @@
   },
   "FY5": {
     "title": "Jaksollinen liike ja aallot",
+    "themes": ["Pyöriminen ja tasapaino", "Ympyräliike ja gravitaatio", "Jaksollinen liike", "Aaltoliike", "Ääni"],
     "tavoitteet": [
       "osaa kuvata planeettojen liikettä ympyräliikkeenä",
       "tutustuu värähtelyn ja aaltoliikkeen perusteisiin tutkimalla mekaanista värähtelyä ja ääntä",
