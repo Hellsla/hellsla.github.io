@@ -1,0 +1,28 @@
+{
+  "_note": "English texts of the Lukuvinkit page; titles, authors, links, courses and the loan marks come from content/fi/lukuvinkit.json in the same order (scripts/reading_tips.py).",
+  "title": "Reading tips",
+  "subtitle": "Physics beyond the textbook",
+  "description": "Fourteen books on physics beyond the textbook: its history, everyday phenomena, thought experiments and some rather unusual questions.",
+  "intro": [
+    "Physics is not only formulas and calculations. It is also stories, surprising questions, experiments and attempts to understand the world.",
+    "In these books you can find new views of familiar phenomena, or meet physics there is no time for in lessons. You do not have to read a book from cover to cover. You can start with one chapter that interests you."
+  ],
+  "list_lead": "If physics interests you, these books are worth a look. They cover the history of physics, everyday phenomena, thought experiments and some rather unusual questions.",
+  "loan_note": "The first nine books on the list are on my own shelf, so feel free to ask to borrow them!",
+  "books": [
+    {"language": "Finnish", "level": "easy–intermediate", "text": "What would happen if the speed of light were as slow as the speed of cars? Imaginative adventures make the strange effects of relativity and quantum physics understandable."},
+    {"language": "Finnish", "level": "intermediate", "text": "Could you travel into the past? Or into the future? The book explores time and the possibilities of time travel from the point of view of physics."},
+    {"language": "Finnish / English", "level": "easy", "text": "What would happen if everyone in the world jumped at the same time? Absurd questions lead to surprisingly serious physics and fun calculations."},
+    {"language": "English", "level": "easy", "text": "More imaginative questions with scientific answers. Could you cool the atmosphere by opening every freezer at once? The book shows how physics can be used to investigate almost any question."},
+    {"language": "Finnish", "level": "easy–intermediate", "text": "A short, thought-provoking book on the big ideas of modern physics: relativity, quantum physics and the universe."},
+    {"language": "English", "level": "easy–intermediate", "text": "Could Spider-Man really swing from his web? How fast could the Flash run? And how do Superman's powers square with Newton's laws? The book examines superheroes' abilities with real physics."},
+    {"language": "Finnish", "level": "intermediate–demanding", "text": "Where did the universe come from? What are black holes? Does time have a beginning or an end? A well-known classic of modern cosmology."},
+    {"language": "Finnish", "level": "intermediate", "text": "Most of the matter in the universe is invisible. How do we know it exists, and what could it be?"},
+    {"language": "English", "level": "demanding", "text": "The quantum revolution of the first decades of the 20th century, told by a physicist of that era. Planck, Bohr, Heisenberg, Schrödinger and the other founders of the theory all appear."},
+    {"language": "English", "level": "easy–intermediate", "text": "Why does popcorn pop? Why does drying coffee leave a ring? Everyday phenomena open connections to the big principles of physics."},
+    {"language": "Finnish", "level": "easy", "text": "Humorous and sometimes astonishing memoirs of a Nobel-winning physicist. Above all, the book is about curiosity, experimenting and the way a scientist thinks."},
+    {"language": "Finnish", "level": "easy–intermediate", "text": "Stories of the people who shaped physics, from Pascal to Higgs. A good choice if you want to know how ideas in physics have changed."},
+    {"language": "English", "level": "intermediate", "text": "Ten landmark experiments in the history of science. The book shows how a simple but cleverly designed experiment can lead to a great scientific discovery."},
+    {"language": "English", "level": "intermediate", "text": "A collection of strange, fun and sometimes dangerous-looking phenomena of physics. The book invites you to ask questions and look for explanations."}
+  ]
+}
