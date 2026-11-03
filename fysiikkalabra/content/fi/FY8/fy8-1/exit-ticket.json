@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Säteilyn taajuus on $1{,}0 \\cdot 10^{15}\\,\\text{Hz}$. Kuinka suuri on yhden fotonin energia?",
+    "a": "$E = hf = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s} \\cdot 1{,}0 \\cdot 10^{15}\\,\\tfrac{1}{\\text{s}} = 6{,}6 \\cdot 10^{-19}\\,\\text{J}$ eli noin $4{,}1\\,\\text{eV}$."
+  },
+  {
+    "q": "Mitä metallin irrotustyö tarkoittaa, ja miksi se on eri metalleilla eri suuri?",
+    "a": "Irrotustyö $W$ on pienin energia, jolla elektroni saadaan irti metallin pinnasta. Se kertoo, kuinka lujasti metalli pitää elektronejaan, ja se riippuu metallin atomeista ja rakenteesta: esimerkiksi natriumilla se on $2{,}28\\,\\text{eV}$ ja sinkillä $4{,}31\\,\\text{eV}$."
+  }
+]

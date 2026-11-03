@@ -3409,7 +3409,7 @@
   },
   {
     "term": "absorptiospektri",
-    "definition": "Jatkuva spektri, jossa on tummia viivoja, kun valo on kulkenut kaasun läpi. Viivat ovat niillä aallonpituuksilla, joiden fotonien energia on täsmälleen kaasun atomien kahden energiatilan erotus, eli samoilla kuin saman kaasun emissiospektrin viivat.",
+    "definition": "Jatkuva spektri, jossa on tummia viivoja, kun valo on kulkenut kaasun läpi. Viivat ovat niillä aallonpituuksilla, joiden fotonien energia on täsmälleen kaasun atomien kahden energiatilan erotus; jokainen niistä on samalla aallonpituudella kuin jokin saman kaasun emissiospektrin viiva.",
     "lessons": [
       "fy8-2"
     ],
