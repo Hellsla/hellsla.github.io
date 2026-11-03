@@ -189,7 +189,7 @@ Kun johdin kierretään kierukaksi eli **käämiksi**, jokaisen kierroksen kentt
 ### Sähkömagneetti
 Kun käämin sisään työnnetään rautasydän, kenttä voimistuu moninkertaiseksi. Käämin kenttä kääntää raudan alkeisalueet samansuuntaisiksi, ja magnetoitunut rauta lisää oman kenttänsä käämin kenttään. Tällainen käämi on **sähkömagneetti**. Kun virta katkaistaan, käämin kenttä häviää, ja pehmeän raudan alkeisalueet palaavat lähes epäjärjestykseen, joten sydän menettää magnetoitumansa lähes kokonaan. Siksi romuttamon nosturi pitää romua vain niin kauan kuin virta kulkee. Kestomagneetti taas on ainetta, jonka alkeisalueet pysyvät järjestyksessä, joten sitä ei voi kytkeä pois.
 
-<svg data-fig="electromagnet" viewBox="0 0 600 360" role="img" aria-label="Kaavakuva, ei mittakaavassa: sähkömagneetti. Pystysuoran harmaan rautasydämen ympärille on kierretty kuparinen käämi, jonka johtimet menevät paristoon ja kytkimeen. Kun kytkin on kiinni, rautasydämen alapää vetää puoleensa rautanauloja, jotka roikkuvat siinä ketjuna. Oikealla sama sähkömagneetti kytkin auki: naulat ovat pudonneet pöydälle." style="max-width:100%;font-size:24px">
+<svg data-fig="electromagnet" viewBox="0 0 600 360" role="img" aria-label="Kaavakuva, ei mittakaavassa: sähkömagneetti. Pystysuoran harmaan rautasydämen ympärille on kierretty kuparinen käämi, jonka johtimet menevät paristoon ja kytkimeen. Vasemmalla kytkin on kiinni ja virta kulkee: rautasydämen alapää vetää puoleensa rautanauloja, jotka roikkuvat siinä ketjuna. Oikealla sama sähkömagneetti kytkin auki: kytkimen terä on nostettu irti kärjestä, virtapiiri on katkennut ja naulat ovat pudonneet pöydälle." style="max-width:100%;font-size:24px">
   <line x1="300" y1="40" x2="300" y2="344" stroke="#c9c2b2" stroke-width="2" stroke-linecap="butt" stroke-dasharray="6 6"/>
   <foreignObject x="77.5" y="9.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{virta kulkee}$</div></foreignObject>
   <foreignObject x="358.5" y="9.5" width="183" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{virta katkaistu}$</div></foreignObject>
@@ -205,13 +205,17 @@ Kun käämin sisään työnnetään rautasydän, kenttä voimistuu moninkertaise
   <path d="M124,183 Q150,193 176,187" fill="none" stroke="#b8622d" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
   <path d="M124,196 Q150,206 176,200" fill="none" stroke="#b8622d" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
   <path d="M124,209 Q150,219 176,213" fill="none" stroke="#b8622d" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M176,96 H224  V128" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M176,96 H184" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M212,96 H224 V128" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <circle cx="184" cy="96" r="4" fill="#1f2933"/>
+  <circle cx="212" cy="96" r="4" fill="#1f2933"/>
   <path d="M176,210 H224 V182" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
   <rect x="208" y="128" width="32" height="54" rx="4" fill="#ffc078" stroke="#1f2933" stroke-width="2"/>
   <rect x="217" y="122" width="14" height="6" fill="#1f2933"/>
-  <line x1="190" y1="96" x2="202" y2="96" stroke="#7048e8" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M212,96 L201,101 L201,91 Z" fill="#7048e8" stroke-linejoin="round"/>
-  <foreignObject x="192" y="57.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#7048e8">$I$</div></foreignObject>
+  <line x1="184" y1="96" x2="212" y2="96" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <line x1="212" y1="210" x2="200" y2="210" stroke="#7048e8" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M190,210 L201,205 L201,215 Z" fill="#7048e8" stroke-linejoin="round"/>
+  <foreignObject x="191" y="221.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#7048e8">$I$</div></foreignObject>
   <rect x="147" y="246" width="6" height="16" rx="1" fill="#8a96a3" stroke="#1f2933" stroke-width="1.5"/>
   <rect x="143" y="246" width="14" height="3" fill="#8a96a3"/>
   <rect x="147" y="263" width="6" height="16" rx="1" fill="#8a96a3" stroke="#1f2933" stroke-width="1.5"/>
@@ -232,11 +236,14 @@ Kun käämin sisään työnnetään rautasydän, kenttä voimistuu moninkertaise
   <path d="M424,183 Q450,193 476,187" fill="none" stroke="#b8622d" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
   <path d="M424,196 Q450,206 476,200" fill="none" stroke="#b8622d" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
   <path d="M424,209 Q450,219 476,213" fill="none" stroke="#b8622d" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M476,96 H524  V128" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M476,96 H484" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M512,96 H524 V128" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <circle cx="484" cy="96" r="4" fill="#1f2933"/>
+  <circle cx="512" cy="96" r="4" fill="#1f2933"/>
   <path d="M476,210 H524 V182" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
   <rect x="508" y="128" width="32" height="54" rx="4" fill="#ffc078" stroke="#1f2933" stroke-width="2"/>
   <rect x="517" y="122" width="14" height="6" fill="#1f2933"/>
-  <line x1="540" y1="155" x2="564" y2="140" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <line x1="484" y1="96" x2="506" y2="72" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
   <rect x="410" y="306" width="22" height="6" rx="1" fill="#8a96a3" stroke="#1f2933" stroke-width="1.5"/>
   <rect x="444" y="306" width="22" height="6" rx="1" fill="#8a96a3" stroke="#1f2933" stroke-width="1.5"/>
   <rect x="476" y="306" width="22" height="6" rx="1" fill="#8a96a3" stroke="#1f2933" stroke-width="1.5"/>
@@ -308,7 +315,7 @@ B = \mu_0 \frac{N I}{l}
 ```
 missä $N$ on käämin kierrosten lukumäärä, $I$ virta (A) ja $l$ käämin pituus (m). Kenttä riippuu kierrostiheydestä $N : l$ eli siitä, kuinka monta kierrosta on metrillä, eikä käämin paksuudesta. Kaava pätee, kun käämi on paljon pidempi kuin paksu ja sen sisällä on vain ilmaa. Käämin päissä kenttä on noin puolet keskikohdan arvosta, ja rautasydän voimistaa kenttää moninkertaiseksi.
 
-<svg data-fig="coil-dims" viewBox="0 0 600 330" role="img" aria-label="Kaavakuva, ei mittakaavassa: käämi sivulta. Käämissä on N kierrosta kuparijohdinta pituudella l. Johtimen päistä kulkee virta I, joka on merkitty violetilla nuolella. Käämin sisällä vihreä nuoli osoittaa akselin suuntaan; nuolen vasemmalla puolella käämin ulkopuolella on merkintä B." style="max-width:100%;font-size:24px">
+<svg data-fig="coil-dims" viewBox="0 0 600 330" role="img" aria-label="Kaavakuva, ei mittakaavassa: käämi sivulta. Käämissä on N kierrosta kuparijohdinta pituudella l. Johtimen päistä kulkee virta I, joka on merkitty violetilla nuolella. Käämin sisällä vihreä nuoli osoittaa akselin suuntaan; nuolen alkupään yläpuolella on merkintä B." style="max-width:100%;font-size:24px">
   <rect x="120" y="103.5" width="290" height="93" fill="#eef5f9" stroke="#8a96a3" stroke-width="1.5"/>
   <line x1="136.5" y1="92" x2="124" y2="208" stroke="#b8622d" stroke-width="2" stroke-opacity="0.45"/>
   <line x1="157.5" y1="92" x2="145" y2="208" stroke="#b8622d" stroke-width="2" stroke-opacity="0.45"/>
@@ -326,7 +333,7 @@ missä $N$ on käämin kierrosten lukumäärä, $I$ virta (A) ja $l$ käämin pi
   <line x1="406" y1="92" x2="393.5" y2="208" stroke="#b8622d" stroke-width="2" stroke-opacity="0.45"/>
   <line x1="150" y1="150" x2="363" y2="150" stroke="#2b8a3e" stroke-width="4" stroke-linecap="butt"/>
   <path d="M380,150 L362,158 L362,142 Z" fill="#2b8a3e" stroke-linejoin="round"/>
-  <foreignObject x="71" y="135.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#2b8a3e">$\overline{B}$</div></foreignObject>
+  <foreignObject x="147.5" y="109.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#2b8a3e"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\overline{B}$</span></div></foreignObject>
   <line x1="124" y1="92" x2="136.5" y2="208" stroke="#b8622d" stroke-width="4" stroke-linecap="round"/>
   <line x1="145" y1="92" x2="157.5" y2="208" stroke="#b8622d" stroke-width="4" stroke-linecap="round"/>
   <line x1="165.5" y1="92" x2="178" y2="208" stroke="#b8622d" stroke-width="4" stroke-linecap="round"/>

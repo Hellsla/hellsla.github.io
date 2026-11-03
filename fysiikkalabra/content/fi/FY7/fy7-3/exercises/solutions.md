@@ -26,7 +26,7 @@
 **Muunnokset:** Ei tarvita: virta on ampeereina ja etäisyys metreinä. Lopuksi $1\,\mu\text{T} = 10^{-6}\,\text{T}$.
 **Sijoitus:** $B = \dfrac{4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot 800\,\text{A}}{2\pi \cdot 16\,\text{m}} = 1{,}0 \cdot 10^{-5}\,\text{T} = 10\,\mu\text{T}$
 **Vastaus:** $10\,\mu\text{T}$, kaksi merkitsevää numeroa kuten etäisyys $16\,\text{m}$.
-**Järkevyys:** Suuri virta mutta suuri etäisyys: $2 \cdot 10^{-7} \cdot 800 : 16\,\text{T} = 1 \cdot 10^{-5}\,\text{T}$. Kenttä on noin viidesosa Maan magneettikentästä $50\,\mu\text{T}$, joten voimajohdon alla kompassi kääntyy vain vähän.
+**Järkevyys:** Suuri virta mutta suuri etäisyys: $2 \cdot 10^{-7} \cdot 800 : 16\,\text{T} = 1 \cdot 10^{-5}\,\text{T}$. Kenttä on noin viidesosa Maan magneettikentästä $50\,\mu\text{T}$.
 
 ## fy7-3-L1-04
 **Annettu:** johdin, virta $I = 2{,}5\,\text{A}$, etäisyys $r = 5{,}0\,\text{mm}$; toisen johtimen vaikutus jätetään huomiotta; $\mu_0 = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$
@@ -61,7 +61,7 @@
 ## fy7-3-L2-02
 **Annettu:** pitkä suora johdin, virta $I = 6{,}0\,\text{A}$, kentän suuruus $B = 14\,\mu\text{T}$; $\mu_0 = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$
 **Kysytty:** etäisyys $r$ senttimetreinä
-**Periaate:** Pitkän suoran johtimen kenttä heikkenee kääntäen verrannollisesti etäisyyteen, joten kenttä on juuri $14\,\mu\text{T}$ vain yhdellä etäisyydellä. Se ratkaistaan suoran johtimen kaavasta.
+**Periaate:** Pitkän suoran johtimen kenttä heikkenee kääntäen verrannollisesti etäisyyteen, joten kenttä on $14\,\mu\text{T}$ täsmälleen yhdellä etäisyydellä. Se ratkaistaan suoran johtimen kaavasta.
 **Kaava:** $B = \dfrac{\mu_0 I}{2\pi r}$, josta $r = \dfrac{\mu_0 I}{2\pi B}$
 **Muunnokset:** $B = 14\,\mu\text{T} = 14 \cdot 10^{-6}\,\text{T}$; lopuksi $1\,\text{m} = 100\,\text{cm}$.
 **Sijoitus:** $r = \dfrac{4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot 6{,}0\,\text{A}}{2\pi \cdot 14 \cdot 10^{-6}\,\text{T}} = 0{,}0857\,\text{m} = 8{,}57\,\text{cm}$
@@ -106,7 +106,7 @@
 **Muunnokset:** Ei tarvita ennen sijoitusta: kaikki suureet ovat SI-yksiköissä. Lopuksi $1\,\text{km} = 1000\,\text{m}$.
 **Sijoitus:** $N = \dfrac{1{,}5\,\text{T} \cdot 1{,}6\,\text{m}}{4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot 400\,\text{A}} = 4775$ ja $L = 4775 \cdot \pi \cdot 1{,}0\,\text{m} = 15\,000\,\text{m} = 15\,\text{km}$
 **Vastaus:** noin $15\,\text{km}$, kaksi merkitsevää numeroa kuten kenttä $1{,}5\,\text{T}$ ja halkaisija $1{,}0\,\text{m}$.
-**Järkevyys:** Kenttä on noin $30\,000$-kertainen Maan kenttään verrattuna, joten tarvitaan sekä suuri virta että tuhansia kierroksia: kierrostiheys on noin $3000$ kierrosta metrillä. Tavallinen kuparilanka kuumenisi tällaisella virralla liikaa, minkä vuoksi lanka on suprajohdetta. Arvio on karkea, koska todellinen käämi ei ole pitkä paksuuteensa verrattuna: kun pituus on vain $1{,}6$-kertainen halkaisijaan nähden, keskikohdan kenttä on noin $85\,\%$ pitkän käämin kaavan arvosta, joten todellinen käämi tarvitsee enemmän lankaa kuin $15\,\text{km}$.
+**Järkevyys:** Kenttä on noin $30\,000$-kertainen Maan kenttään verrattuna, joten tarvitaan sekä suuri virta että tuhansia kierroksia: kierrostiheys on noin $3000$ kierrosta metrillä. Tavallinen kuparilanka kuumenisi tällaisella virralla liikaa, minkä vuoksi lanka on suprajohdetta. Arvio on karkea, koska todellinen käämi ei ole pitkä paksuuteensa verrattuna. Kun pituus on vain $1{,}6$-kertainen halkaisijaan nähden, keskikohdan kenttä on noin $85\,\%$ pitkän käämin kaavan arvosta, joten todellinen käämi tarvitsee enemmän lankaa kuin $15\,\text{km}$.
 
 ## fy7-3-L3-03
 **Annettu:** kaksi pitkää yhdensuuntaista johdinta, etäisyys $d = 10\,\text{cm}$, samansuuntaiset virrat $I_1 = 4{,}0\,\text{A}$ ja $I_2 = 6{,}0\,\text{A}$

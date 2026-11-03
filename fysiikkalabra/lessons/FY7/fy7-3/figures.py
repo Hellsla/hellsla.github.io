@@ -120,9 +120,9 @@ def coil_field():
 
 def electromagnet():
     f = Fig("fy73-em", 360, "Kaavakuva, ei mittakaavassa: sähkömagneetti. Pystysuoran harmaan rautasydämen ympärille on kierretty "
-            "kuparinen käämi, jonka johtimet menevät paristoon ja kytkimeen. Kun kytkin on kiinni, rautasydämen alapää vetää "
-            "puoleensa rautanauloja, jotka roikkuvat siinä ketjuna. Oikealla sama sähkömagneetti kytkin auki: naulat ovat "
-            "pudonneet pöydälle.")
+            "kuparinen käämi, jonka johtimet menevät paristoon ja kytkimeen. Vasemmalla kytkin on kiinni ja virta kulkee: rautasydämen alapää vetää "
+            "puoleensa rautanauloja, jotka roikkuvat siinä ketjuna. Oikealla sama sähkömagneetti kytkin auki: kytkimen terä on nostettu "
+            "irti kärjestä, virtapiiri on katkennut ja naulat ovat pudonneet pöydälle.")
     f.line(300, 40, 300, 344, RULE, 2, "6 6")
     f.tex(150, 24, r"\text{virta kulkee}", "middle")
     f.tex(450, 24, r"\text{virta katkaistu}", "middle")
@@ -134,19 +134,23 @@ def electromagnet():
             f.path(f"M{cx - 26},{y} Q{cx},{y + 10} {cx + 26},{y + 4}", stroke=COPPER, w=4, extra='stroke-linecap="round"')
         # leads to a battery
         bx = cx + 74
-        f.path(f"M{cx + 26},96 H{bx}  V128", stroke=INK, w=2)
+        f.path(f"M{cx + 26},96 H{cx + 34}", stroke=INK, w=2)          # upper lead with a switch between its contacts
+        f.path(f"M{cx + 62},96 H{bx} V128", stroke=INK, w=2)
+        f.circle(cx + 34, 96, 4, INK)
+        f.circle(cx + 62, 96, 4, INK)
         f.path(f"M{cx + 26},210 H{bx} V182", stroke=INK, w=2)
         f.rect(bx - 16, 128, 32, 54, HEAT_LIGHT, INK, 2, 4)
         f.rect(bx - 7, 122, 14, 6, INK)
         if on:
-            f.arrow(cx + 40, 96, cx + 62, 96, CURRENT, 2.5, 11)
-            f.tex(cx + 52, 72, "I", "middle", CURRENT)
+            f.line(cx + 34, 96, cx + 62, 96, INK, 3)                  # closed switch: the blade touches both contacts
+            f.arrow(cx + 62, 210, cx + 40, 210, CURRENT, 2.5, 11)
+            f.tex(cx + 51, 236, "I", "middle", CURRENT)
             for k in range(4):               # a chain of nails stuck to the core's lower end
                 y = 246 + k * 17
                 f.rect(cx - 3, y, 6, 16, METAL_EDGE, INK, 1.5, 1)
                 f.rect(cx - 7, y, 14, 3, METAL_EDGE)
         else:
-            f.line(bx + 16, 155, bx + 40, 140, INK, 2.5)   # open switch drawn as a lifted lever
+            f.line(cx + 34, 96, cx + 56, 72, INK, 3)        # open switch: the blade is lifted, a gap shows
             for k, (x, a) in enumerate(((cx - 40, 0), (cx - 6, 0), (cx + 26, 0), (cx + 54, 0))):
                 f.rect(x, 306, 22, 6, METAL_EDGE, INK, 1.5, 1)
         f.tex(cx - 36, 160, r"\text{rauta}", "end")
@@ -170,7 +174,7 @@ def wire_graph():
 def coil_dims():
     f = Fig("fy73-dims", 330, "Kaavakuva, ei mittakaavassa: käämi sivulta. Käämissä on N kierrosta kuparijohdinta pituudella l. "
             "Johtimen päistä kulkee virta I, joka on merkitty violetilla nuolella. Käämin sisällä vihreä nuoli osoittaa "
-            "akselin suuntaan; nuolen vasemmalla puolella käämin ulkopuolella on merkintä B.")
+            "akselin suuntaan; nuolen alkupään yläpuolella on merkintä B.")
     x0, x1, yc, rr = 120, 410, 150, 58
     xm = (x0 + x1) / 2
     f.rect(x0, yc - rr * 0.8, x1 - x0, rr * 1.6, GLASS, METAL_EDGE, 1.5)
@@ -180,7 +184,7 @@ def coil_dims():
         x = x0 + (i + 0.5) * st
         f.add(f'<line x1="{n(x + st * 0.3)}" y1="{yc - rr}" x2="{n(x - st * 0.3)}" y2="{yc + rr}" stroke="{COPPER}" stroke-width="2" stroke-opacity="0.45"/>')
     f.arrow(x0 + 30, yc, x1 - 30, yc, FIELD, 4, 18)
-    f.tex(x0 - 16, yc, r"\overline{B}", "end", FIELD)
+    f.tex(x0 + 44, yc - 26, r"\overline{B}", "middle", FIELD, bg=True)
     for i in range(turns):
         x = x0 + (i + 0.5) * st
         f.add(f'<line x1="{n(x - st * 0.3)}" y1="{yc - rr}" x2="{n(x + st * 0.3)}" y2="{yc + rr}" stroke="{COPPER}" stroke-width="4" stroke-linecap="round"/>')

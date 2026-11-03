@@ -15,7 +15,7 @@
       "id": "hook",
       "stage": "herata",
       "type": "hook",
-      "text": "Pöydällä on kompassi, ja sen yläpuolella kulkee pohjois–eteläsuuntainen kuparijohdin. Kun johtimeen kytketään virta $3\\,\\text{A}$, neula kääntyy lähes poikittain johtimeen nähden. Kun virran suunta vaihdetaan, neula kääntyy toiseen suuntaan, ja kun virta katkaistaan, neula palaa osoittamaan pohjoiseen. Kupari ei ole magneettista ainetta: kuparinaula ei tartu magneettiin.",
+      "text": "Pöydällä on kompassi, ja sen yläpuolella kulkee pohjois–eteläsuuntainen kuparijohdin. Kun johtimeen kytketään virta $3\\,\\text{A}$, neula kääntyy lähes poikittain johtimeen nähden, kun johdin on aivan neulan yläpuolella. Kun virran suunta vaihdetaan, neula kääntyy toiseen suuntaan, ja kun virta katkaistaan, neula palaa osoittamaan pohjoiseen. Kupari ei ole magneettista ainetta: kuparinaula ei tartu magneettiin.",
       "question": "Mistä kompassia kääntävä magneettikenttä tulee, ja miten saman ilmiön voi tehdä niin voimakkaaksi, että se nostaa autonromun?"
     },
     {
@@ -261,7 +261,7 @@
             "feedback": "Pituus on jäänyt senttimetreiksi. Muunna $l = 16{,}0 \\cdot 0{,}01\\,\\text{m} = 0{,}160\\,\\text{m}$ ennen sijoitusta."
           },
           {
-            "value": 0.00123,
+            "value": 1233,
             "feedback": "Tarkista millitesla: $A = 2{,}465\\,\\tfrac{\\text{mT}}{\\text{A}} = 2{,}465 \\cdot 10^{-3}\\,\\tfrac{\\text{T}}{\\text{A}}$, ja vastaukseksi kirjoitetaan kerroin, joka kerrotaan luvulla $10^{-6}$."
           }
         ],
@@ -433,7 +433,7 @@
           "feedback": "Nimittäjästä puuttuu $2\\pi$. Kenttä jakautuu johdinta kiertävälle ympyrälle, jonka kehän pituus on $2\\pi r$."
         }
       ],
-      "solution": "**Annettu:** virta $I = 150\\,\\text{A}$, etäisyys $r = 2{,}0\\,\\text{cm}$, $\\mu_0 = 4\\pi \\cdot 10^{-7}\\,\\tfrac{\\text{Vs}}{\\text{Am}}$; suora kaapeli, paluujohdin kaukana\n\n**Kysytty:** magneettivuon tiheys $B$ millitesloina\n\n**Periaate:** Kaapeli on suora ja paljon pidempi kuin etäisyys $2\\,\\text{cm}$, ja paluujohdin on kaukana, joten pitkän suoran johtimen kaava pätee eikä toinen johdin heikennä kenttää.\n\n**Kaava:** $B = \\dfrac{\\mu_0 I}{2\\pi r}$\n\n**Muunnokset:** $r = 2{,}0 \\cdot 0{,}01\\,\\text{m} = 0{,}020\\,\\text{m}$; lopuksi $1\\,\\text{mT} = 10^{-3}\\,\\text{T}$.\n\n**Sijoitus:** $B = \\dfrac{4\\pi \\cdot 10^{-7}\\,\\tfrac{\\text{Vs}}{\\text{Am}} \\cdot 150\\,\\text{A}}{2\\pi \\cdot 0{,}020\\,\\text{m}} = 1{,}5 \\cdot 10^{-3}\\,\\text{T} = 1{,}5\\,\\text{mT}$\n\n**Vastaus:** $1{,}5\\,\\text{mT}$, kaksi merkitsevää numeroa kuten etäisyys $2{,}0\\,\\text{cm}$.\n\n**Järkevyys:** Kaavassa $\\mu_0 : 2\\pi = 2 \\cdot 10^{-7}\\,\\tfrac{\\text{Vs}}{\\text{Am}}$, joten $B = 2 \\cdot 10^{-7} \\cdot 150 : 0{,}02\\,\\text{T} = 1{,}5 \\cdot 10^{-3}\\,\\text{T}$. Kenttä on noin $30$-kertainen Maan kenttään verrattuna, mikä sopii siihen, että hitsauskaapeli kääntää lähellä olevan kompassin selvästi."
+      "solution": "**Annettu:** virta $I = 150\\,\\text{A}$, etäisyys $r = 2{,}0\\,\\text{cm}$, $\\mu_0 = 4\\pi \\cdot 10^{-7}\\,\\tfrac{\\text{Vs}}{\\text{Am}}$; suora kaapeli, paluujohdin kaukana\n\n**Kysytty:** magneettivuon tiheys $B$ millitesloina\n\n**Periaate:** Kaapeli on suora ja paljon pidempi kuin etäisyys $2\\,\\text{cm}$, ja paluujohdin on kaukana, joten pitkän suoran johtimen kaava pätee eikä toinen johdin heikennä kenttää.\n\n**Kaava:** $B = \\dfrac{\\mu_0 I}{2\\pi r}$\n\n**Muunnokset:** $r = 2{,}0 \\cdot 0{,}01\\,\\text{m} = 0{,}020\\,\\text{m}$; lopuksi $1\\,\\text{mT} = 10^{-3}\\,\\text{T}$.\n\n**Sijoitus:** $B = \\dfrac{4\\pi \\cdot 10^{-7}\\,\\tfrac{\\text{Vs}}{\\text{Am}} \\cdot 150\\,\\text{A}}{2\\pi \\cdot 0{,}020\\,\\text{m}} = 1{,}5 \\cdot 10^{-3}\\,\\text{T} = 1{,}5\\,\\text{mT}$\n\n**Vastaus:** $1{,}5\\,\\text{mT}$, kaksi merkitsevää numeroa kuten etäisyys $2{,}0\\,\\text{cm}$.\n\n**Järkevyys:** Kaavassa $\\mu_0 : 2\\pi = 2 \\cdot 10^{-7}\\,\\tfrac{\\text{Vs}}{\\text{Am}}$, joten $B = 2 \\cdot 10^{-7} \\cdot 150 : 0{,}02\\,\\text{T} = 1{,}5 \\cdot 10^{-3}\\,\\text{T}$. Kenttä on noin $30$-kertainen Maan kenttään verrattuna, mikä sopii siihen, että hitsauskaapeli kääntää tasavirralla lähellä olevan kompassin selvästi."
     },
     {
       "id": "tarkistus-3",
