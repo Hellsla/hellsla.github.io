@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 97a5c2284af41234
+CONTENT-HASH: 439993a1b66dbd2f
 
 ## Blocking
 (none)
@@ -8,4 +8,4 @@ CONTENT-HASH: 97a5c2284af41234
 - none
 
 ## Checked
-- batch delta review: key_concepts, reworded sentences, photo captions, objective-form and level-policy edits, chapter-reference titles judged against the guardrails and the lesson text; restyled figure lines are styling only.
+- batch delta review, round 2 (diff f83714cd..b8a6e1bb): inertia key concept now 'nopeutta tai liikkeen suuntaa vaikea muuttaa', correct and consistent with the first law; no other content changed.

@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: fe66e969f0e85863
+CONTENT-HASH: 6c8d8036b0fe9cdd
 
 ## Blocking
 (none)
@@ -8,4 +8,4 @@ CONTENT-HASH: fe66e969f0e85863
 - none
 
 ## Checked
-- batch delta review, round 2 (diff cc7b2aeb..debc61a4): paine now force per unit area, tiheys mass per unit volume; consistent with the Ydinajatus and fy3-3; no other content changed.
+- batch delta review, round 3 (diff f83714cd..b8a6e1bb): ilmanpaine now pressure from the weight of the atmosphere acting on all surfaces, matching the lesson's 'ilmapatsaan paino pinta-alaa kohti'; no other content changed.

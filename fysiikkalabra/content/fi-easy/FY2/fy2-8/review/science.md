@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 61143fe0b0f99894
+CONTENT-HASH: bf5fa376fbf61f32
 
 ## Blocking
 (none)
 
 ## Polish
-- none
+- meta.json päästökerroin: 'laskettuna hiilidioksidiksi' could say 'muunnettuna ilmastovaikutukseltaan vastaavaksi hiilidioksidimääräksi'; not wrong.
 
 ## Checked
-- batch delta review: key_concepts, reworded sentences, photo captions, objective-form and level-policy edits, chapter-reference titles judged against the guardrails and the lesson text; restyled figure lines are styling only.
+- batch delta review, round 2 (diff f83714cd..b8a6e1bb): päästökerroin now greenhouse gases counted as CO2 per energy unit, correct for CO2-ekv; no other content changed.

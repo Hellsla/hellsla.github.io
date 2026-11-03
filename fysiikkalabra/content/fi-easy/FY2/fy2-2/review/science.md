@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 7da35743aa59cfd3
+CONTENT-HASH: ef97f98516bfe537
 
 ## Blocking
 (none)
@@ -8,4 +8,4 @@ CONTENT-HASH: 7da35743aa59cfd3
 - none
 
 ## Checked
-- batch delta review: key_concepts, reworded sentences, photo captions, objective-form and level-policy edits, chapter-reference titles judged against the guardrails and the lesson text; restyled figure lines are styling only.
+- batch delta review, round 2 (diff f83714cd..b8a6e1bb): joule key concept (J dropped) unchanged in physics; apple 0,1 kg · 9,81 m/s² · 1 m ≈ 1 J; no other content changed.

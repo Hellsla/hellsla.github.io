@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: b5a7ecf3ff715c68
+CONTENT-HASH: 9c8ff42bf212e921
 
 ## Blocking
 
@@ -7,4 +7,4 @@ CONTENT-HASH: b5a7ecf3ff715c68
 
 
 ## Checked
-batch delta review: scratchpad kc/fy3-8-390.png and kc/fy3-8-1280.png (the new section cut from the built page, preview/fi-easy/fy3-8.html): stacked at 390 px, two columns at 1280 px, no raw maths, no overflow, no clipping; the diff text read for wording (the packet's own captures show no figure change, so only sheets of the new section were opened).
+Round 2 delta: scratchpad kc/r2-fy3-8-390.png and kc/r2-fy3-8-1280.png (section cut from rebuilt preview/fi-easy/fy3-8.html; sheets r2sheet390.png, r2sheet1280.png). Changed text read in the diff f83714cd..b8a6e1bb and seen in the capture: fluent, plain, physics unchanged. Stacked at 390 px, two columns at 1280 px, no overflow, no KaTeX errors, nothing clipped.

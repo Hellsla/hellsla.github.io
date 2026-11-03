@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 4f03db83ad5f480a
+CONTENT-HASH: beea801f93a32cad
 
 ## Blocking
 (none)
@@ -8,4 +8,4 @@ CONTENT-HASH: 4f03db83ad5f480a
 - none
 
 ## Checked
-- batch delta review, round 2 (diff cc7b2aeb..debc61a4): tiheys key concept now mass per unit volume, matching the lesson text; no other content changed.
+- batch delta review, round 3 (diff f83714cd..b8a6e1bb): tiheys key concept 'ei riipu kappaleen koosta' correct; no other content changed.

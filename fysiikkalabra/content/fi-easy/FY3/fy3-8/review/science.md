@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: b5a7ecf3ff715c68
+CONTENT-HASH: 9c8ff42bf212e921
 
 ## Blocking
 (none)
@@ -8,4 +8,4 @@ CONTENT-HASH: b5a7ecf3ff715c68
 - none
 
 ## Checked
-- batch delta review: key_concepts, reworded sentences, photo captions, objective-form and level-policy edits, chapter-reference titles judged against the guardrails and the lesson text; restyled figure lines are styling only.
+- batch delta review, round 2 (diff f83714cd..b8a6e1bb): liquid expansion sentence now compares particle separation with the solid; correct; no other content changed.
