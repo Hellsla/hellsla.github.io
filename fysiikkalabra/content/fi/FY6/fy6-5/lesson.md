@@ -108,7 +108,7 @@ Sähkövirta on varausten liikettä. Varausta ei synny eikä häviä, eikä sit�
 
 Rinnakkaisten haarojen yli on sama jännite (luku *Vastusten sarja- ja rinnankytkennät*), joten Ohmin lain mukaan pienemmän resistanssin haaraan kulkee suurempi virta. Kuvassa $30\,\Omega$:n haaran virta on kaksinkertainen $60\,\Omega$:n haaraan verrattuna, ja haarojen virrat $0{,}20\,\text{A}$ ja $0{,}10\,\text{A}$ ovat yhteensä yhtä suuret kuin tuleva virta $0{,}30\,\text{A}$.
 
-<svg data-fig="junction" viewBox="0 0 600 330" role="img" aria-label="Kaavakuva haarautumispisteestä, ei mittakaavassa. Vasemmalta johdinta pitkin tulee virta I1 = 0,30 A haarautumispisteeseen. Siitä lähtee kaksi haaraa: ylähaarassa on 30 ohmin vastus ja alahaarassa 60 ohmin vastus, ja haarat yhtyvät oikealla uudelleen. Oranssien virtanuolten leveys on verrannollinen virtaan: ylähaarassa I2 = 0,20 A, alahaarassa I3 = 0,10 A, ja yhteensä haaroista lähtee yhtä paljon virtaa kuin pisteeseen tulee, 0,30 A." style="max-width:100%;font-size:24px">
+<svg data-fig="junction" viewBox="0 0 600 330" role="img" aria-label="Kaavakuva haarautumispisteestä, ei mittakaavassa. Vasemmalta johdinta pitkin tulee virta I1 = 0,30 A haarautumispisteeseen. Siitä lähtee kaksi haaraa: ylähaarassa on 30 ohmin vastus ja alahaarassa 60 ohmin vastus, ja haarat yhtyvät oikealla uudelleen. Violettien virtanuolten leveys on verrannollinen virtaan: ylähaarassa I2 = 0,20 A, alahaarassa I3 = 0,10 A, ja yhteensä haaroista lähtee yhtä paljon virtaa kuin pisteeseen tulee, 0,30 A." style="max-width:100%;font-size:24px">
   <polyline points="24,170 200,170" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
   <polyline points="200,170 200,72 520,72 520,268 200,268 200,170" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
   <polyline points="520,170 576,170" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
@@ -118,19 +118,19 @@ Rinnakkaisten haarojen yli on sama jännite (luku *Vastusten sarja- ja rinnankyt
   <circle cx="520" cy="170" r="6" fill="#1f2933"/>
   <foreignObject x="351" y="91.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$30\,\Omega$</div></foreignObject>
   <foreignObject x="351" y="219.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$60\,\Omega$</div></foreignObject>
-  <path d="M40,152 L124,152 L124,160 L150,140 L124,120 L124,128 L40,128 Z" fill="#e8590c" stroke-linejoin="round"/>
-  <foreignObject x="15" y="93.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#e8590c">$I_1 = 0{,}30\,\text{A}$</div></foreignObject>
-  <path d="M230,52 L298,52 L298,60 L320,44 L298,28 L298,36 L230,36 Z" fill="#e8590c" stroke-linejoin="round"/>
-  <path d="M230,300 L302,300 L302,307 L320,296 L302,285 L302,292 L230,292 Z" fill="#e8590c" stroke-linejoin="round"/>
-  <foreignObject x="334" y="27.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#e8590c">$I_2 = 0{,}20\,\text{A}$</div></foreignObject>
-  <foreignObject x="334" y="283.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#e8590c">$I_3 = 0{,}10\,\text{A}$</div></foreignObject>
+  <path d="M40,152 L124,152 L124,160 L150,140 L124,120 L124,128 L40,128 Z" fill="#7048e8" stroke-linejoin="round"/>
+  <foreignObject x="15" y="93.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#7048e8">$I_1 = 0{,}30\,\text{A}$</div></foreignObject>
+  <path d="M230,52 L298,52 L298,60 L320,44 L298,28 L298,36 L230,36 Z" fill="#7048e8" stroke-linejoin="round"/>
+  <path d="M230,300 L302,300 L302,307 L320,296 L302,285 L302,292 L230,292 Z" fill="#7048e8" stroke-linejoin="round"/>
+  <foreignObject x="334" y="27.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#7048e8">$I_2 = 0{,}20\,\text{A}$</div></foreignObject>
+  <foreignObject x="334" y="283.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#7048e8">$I_3 = 0{,}10\,\text{A}$</div></foreignObject>
   <foreignObject x="216" y="155.5" width="230" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{haarautumispiste}$</div></foreignObject>
 </svg>
 
 ### Potentiaali: jokaisen kohdan sähköinen taso
 Virtapiirin jokaisella kohdalla on **potentiaali** $V$: kohdan jännite valittuun nollakohtaan nähden. Nollakohdaksi valitaan usein jännitelähteen miinusnapa tai maadoitus, ja sen potentiaali on $0\,\text{V}$. Kahden kohdan välinen jännite on niiden potentiaalien erotus. Potentiaalia voi verrata korkeuteen: korkeus riippuu siitä, mistä se mitataan, mutta kahden kohdan korkeusero ei riipu. Samoin nollakohdan siirtäminen muuttaa kaikkia potentiaaleja yhtä paljon, mutta jännitteet pysyvät ennallaan.
 
-Potentiaali muuttuu vain lähteessä ja vastuksissa. Lähteessä se nousee miinusnavalta plusnavalle lähteen jännitteen verran. Vastuksessa se laskee virran suuntaan jännitteen $U = RI$ verran. Johtimen resistanssi on niin pieni, että sen jännite jätetään huomiotta, joten saman johtimen kaikissa kohdissa on sama potentiaali. Kuvan piirissä pisteet B ja C ovat samaa johdinta, joten molempien potentiaali on $6{,}0\,\text{V}$.
+Potentiaali muuttuu vain lähteessä ja vastuksissa. Lähteessä se nousee miinusnavalta plusnavalle lähteen jännitteen verran; lähde on tässä luvussa ideaalinen, eli sen oman resistanssin vaikutus jätetään huomiotta. Vastuksessa se laskee virran suuntaan jännitteen $U = RI$ verran. Johtimen resistanssi on niin pieni, että sen jännite jätetään huomiotta, joten saman johtimen kaikissa kohdissa on sama potentiaali. Kuvan piirissä pisteet $B$ ja $C$ ovat samaa johdinta, joten molempien potentiaali on $6{,}0\,\text{V}$.
 
 <svg data-fig="circuit" viewBox="0 0 600 368" role="img" aria-label="Kytkentäkaavio, ei mittakaavassa: jännitelähde 9,0 V, sen plusnavalta vastus R1 = 10 ohmia ja sen jälkeen kaksi rinnakkaista vastusta R2 = 30 ohmia ja R3 = 60 ohmia, jotka palaavat lähteen miinusnapaan. Johtimiin on merkitty pisteet A–F ja niiden potentiaalit, kun lähteen miinusnapa on nollakohta: A 9,0 V, B ja C 6,0 V sekä D, E ja F 0 V. Saman johtimen kaikissa kohdissa potentiaali on sama; se muuttuu vain lähteessä ja vastuksissa." style="max-width:100%;font-size:24px">
   <polyline points="72,177 72,90 470,90 470,280 72,280 72,193" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
@@ -176,7 +176,7 @@ Potentiaali muuttuu vain lähteessä ja vastuksissa. Lähteessä se nousee miinu
 Kuvan piirissä on kaksi silmukkaa, joista toinen kulkee vastuksen $R_2$ ja toinen vastuksen $R_3$ kautta. Kummassakin lähteen $9{,}0\,\text{V}$ jakautuu vastuksen $R_1$ jännitteeseen $3{,}0\,\text{V}$ ja haaran jännitteeseen $6{,}0\,\text{V}$. Siksi rinnakkaisten haarojen yli on sama jännite.
 
 ### Lintu johdolla
-Linnun jalat ovat saman johtimen kahdessa kohdassa vain muutaman senttimetrin päässä toisistaan. Lintu on rinnakkainen haara jalkojen välissä olevalle johtimen pätkälle, jonka resistanssi on häviävän pieni. Siksi jalkojen välinen jännite on vain millivoltteja, ja virtalain mukaan lähes koko virta kulkee johdinta pitkin eikä linnun kautta. Linnun potentiaali maahan nähden on suuri, mutta vaara syntyisi vasta, jos se koskettaisi samalla toista johdinta tai pylvästä, joiden potentiaali on eri. Ihmiselle tilanne ei ole vertailukelpoinen: suurjännitejohtoa ei saa lähestyä, koska valokaari voi syntyä jo ilman kosketusta.
+Linnun jalat ovat saman johtimen kahdessa kohdassa vain muutaman senttimetrin päässä toisistaan. Lintu on rinnakkainen haara jalkojen välissä olevalle johtimen pätkälle, jonka resistanssi on häviävän pieni. Siksi jalkojen välinen jännite on vain millivoltteja, ja Ohmin lain mukaan linnun kautta kulkee häviävän pieni virta. Virtalain mukaan lähes koko virta jatkaa siis johdinta pitkin. Linnun potentiaali maahan nähden on suuri, mutta vaara syntyisi vasta, jos se koskettaisi samalla toista johdinta tai pylvästä, joiden potentiaali on eri. Ihmiselle tilanne ei ole vertailukelpoinen: suurjännitejohtoa ei saa lähestyä, koska valokaari voi syntyä jo ilman kosketusta.
 
 ## Kaava: Kirchhoffin lait
 Kirchhoffin virtalaki haarautumispisteelle:
@@ -197,7 +197,7 @@ Kirchhoffin jännitelaki silmukalle:
 ```
 missä $\Delta V$ (V) on potentiaalin muutos silmukan kussakin osassa, kun silmukka kierretään kerran. Lähteessä miinusnavalta plusnavalle $\Delta V = +U$, vastuksessa virran suuntaan $\Delta V = -RI$ ja johtimessa $\Delta V = 0$. Yhden silmukan piirissä, jossa on kaksi vastusta, laki antaa $U - R_1 I - R_2 I = 0$ eli $U = R_1 I + R_2 I$.
 
-**Potentiaalikuvaaja** näyttää potentiaalin silmukan eri kohdissa. Kuvaajassa kierretään ylemmän kuvan piiri miinusnavasta F vastusten $R_1$ ja $R_2$ kautta takaisin F:ään. Lähteen nousu $+9{,}0\,\text{V}$ on yhtä suuri kuin vastusten laskujen $-3{,}0\,\text{V}$ ja $-6{,}0\,\text{V}$ yhteismäärä, ja johtimissa kuvaaja on vaakasuora.
+**Potentiaalikuvaaja** näyttää potentiaalin silmukan eri kohdissa. Kuvaajassa kierretään pisteillä $A$–$F$ merkityn piirin silmukka miinusnavasta $F$ vastusten $R_1$ ja $R_2$ kautta takaisin pisteeseen $F$. Lähteen nousu $+9{,}0\,\text{V}$ on yhtä suuri kuin vastusten laskujen $-3{,}0\,\text{V}$ ja $-6{,}0\,\text{V}$ yhteismäärä, ja johtimissa kuvaaja on vaakasuora.
 
 <svg data-fig="potential-graph" viewBox="0 0 600 360" role="img" aria-label="Potentiaalikuvaaja, pystyakseli mittakaavassa, vaaka-akseli kaavamainen: potentiaali V volteissa, kun kierretään kuvan virtapiirin silmukka lähteen miinusnavasta F lähteen ja vastusten R1 ja R2 kautta takaisin F:ään. Lähteessä potentiaali nousee 0 voltista 9,0 volttiin. Johdinta pitkin pisteeseen A se pysyy 9,0 voltissa, vastuksessa R1 se laskee 3,0 V arvoon 6,0 V pisteessä B ja vastuksessa R2 6,0 V nollaan pisteessä E. Pisteestä E pisteeseen F potentiaali pysyy nollassa. Nousujen ja laskujen summa on nolla." style="max-width:100%;font-size:24px">
   <line x1="96" y1="230" x2="500" y2="230" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -247,15 +247,15 @@ missä $\Delta V$ (V) on potentiaalin muutos silmukan kussakin osassa, kun silmu
 </svg>
 
 ## Esimerkki
-Jännitelähteen jännite on $12\,\text{V}$. Lähteen plusnavasta virta kulkee vastuksen $R_1 = 20\,\Omega$ kautta haarautumispisteeseen B, josta lähtee kaksi rinnakkaista haaraa: vastus $R_2 = 60\,\Omega$ ja vastus $R_3 = 30\,\Omega$. Haarat palaavat lähteen miinusnapaan, joka on nollakohta. Mikä on pisteen B potentiaali, ja kuinka suuri virta kulkee vastuksen $R_3$ kautta?
+Jännitelähteen jännite on $12\,\text{V}$. Lähteen plusnavasta virta kulkee vastuksen $R_1 = 20\,\Omega$ kautta haarautumispisteeseen $B$, josta lähtee kaksi rinnakkaista haaraa: vastus $R_2 = 60\,\Omega$ ja vastus $R_3 = 30\,\Omega$. Haarat palaavat lähteen miinusnapaan, joka on nollakohta. Mikä on pisteen $B$ potentiaali, ja kuinka suuri virta kulkee vastuksen $R_3$ kautta?
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** $U = 12\,\text{V}$, $R_1 = 20\,\Omega$, $R_2 = 60\,\Omega$, $R_3 = 30\,\Omega$ ja miinusnavan potentiaali $0\,\text{V}$. Kysytään pisteen B potentiaalia $V_B$ ja virtaa $I_3$.
+**Tunnetut ja kysytty.** $U = 12\,\text{V}$, $R_1 = 20\,\Omega$, $R_2 = 60\,\Omega$, $R_3 = 30\,\Omega$ ja miinusnavan potentiaali $0\,\text{V}$. Kysytään pisteen $B$ potentiaalia $V_B$ ja virtaa $I_3$.
 
 <!-- vaihe -->
 
-**Periaate.** Koko virta $I_1$ kulkee lähteen ja vastuksen $R_1$ kautta. Rinnakkaiset vastukset korvataan yhdellä vastuksella $R_{23}$, jolloin Ohmin laki antaa $I_1$. Jännitelain mukaan potentiaali laskee plusnavan arvosta $U$ vastuksessa $R_1$ jännitteen $R_1 I_1$ verran. Vastus $R_3$ on pisteen B ja nollakohdan välissä, joten sen jännite on $V_B$.
+**Periaate.** Koko virta $I_1$ kulkee lähteen ja vastuksen $R_1$ kautta. Rinnakkaiset vastukset korvataan yhdellä vastuksella $R_{23}$, jolloin Ohmin laki antaa $I_1$. Jännitelain mukaan potentiaali laskee plusnavan arvosta $U$ vastuksessa $R_1$ jännitteen $R_1 I_1$ verran. Vastus $R_3$ on pisteen $B$ ja nollakohdan välissä, joten sen jännite on $V_B$.
 
 <!-- vaihe -->
 
@@ -289,7 +289,7 @@ Jännitelähteen jännite on $12\,\text{V}$. Lähteen plusnavasta virta kulkee v
 
 <!-- vaihe -->
 
-**Tulos.** Pisteen B potentiaali on $6{,}0\,\text{V}$, ja vastuksen $R_3$ kautta kulkee virta $0{,}20\,\text{A}$. Tulokset ilmoitetaan kahdella merkitsevällä numerolla kuten resistanssit.
+**Tulos.** Pisteen $B$ potentiaali on $6{,}0\,\text{V}$, ja vastuksen $R_3$ kautta kulkee virta $0{,}20\,\text{A}$. Tulokset ilmoitetaan kahdella merkitsevällä numerolla kuten resistanssit.
 
 <!-- vaihe -->
 

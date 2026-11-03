@@ -26,7 +26,7 @@
 **Muunnokset:** Ei tarvita: potentiaalit ovat voltteina.
 **Sijoitus:** $U_{AB} = 5{,}0\,\text{V} - (-3{,}0\,\text{V}) = 8{,}0\,\text{V}$
 **Vastaus:** $8{,}0\,\text{V}$, yhden desimaalin tarkkuudella kuten potentiaalit.
-**Järkevyys:** Kohta A on $5{,}0\,\text{V}$ nollakohdan yläpuolella ja kohta B $3{,}0\,\text{V}$ sen alapuolella, joten niiden ero on $5{,}0\,\text{V} + 3{,}0\,\text{V}$. Jännite on positiivinen, koska A on korkeammassa potentiaalissa.
+**Järkevyys:** Kohta $A$ on $5{,}0\,\text{V}$ nollakohdan yläpuolella ja kohta $B$ $3{,}0\,\text{V}$ sen alapuolella, joten niiden ero on $5{,}0\,\text{V} + 3{,}0\,\text{V}$. Jännite on positiivinen, koska $A$ on korkeammassa potentiaalissa.
 
 ## fy6-5-L1-04
 **Annettu:** $R = 40\,\Omega$, $I = 0{,}15\,\text{A}$
@@ -36,23 +36,23 @@
 **Muunnokset:** Ei tarvita: $1\,\Omega \cdot 1\,\text{A} = 1\,\text{V}$.
 **Sijoitus:** $U = 40\,\Omega \cdot 0{,}15\,\text{A} = 6{,}0\,\text{V}$
 **Vastaus:** $6{,}0\,\text{V}$, kaksi merkitsevää numeroa kuten resistanssissa ja virrassa.
-**Järkevyys:** Arvio $40\,\Omega \cdot 0{,}1\,\text{A} = 4\,\text{V}$ ja $40\,\Omega \cdot 0{,}2\,\text{A} = 8\,\text{V}$, joten $6\,\text{V}$ on niiden välissä. Potentiaali laskee, koska virta kulkee korkeammasta potentiaalista matalampaan.
+**Järkevyys:** Arvio $40\,\Omega \cdot 0{,}1\,\text{A} = 4\,\text{V}$ ja $40\,\Omega \cdot 0{,}2\,\text{A} = 8\,\text{V}$, joten $6\,\text{V}$ on niiden välissä. Lasku $6\,\text{V}$ on pienempi kuin tyypillisen paristo- tai verkkolaitelähteen jännite ($9\,\text{V}$ tai $12\,\text{V}$), joten vastus voi olla tällaisessa piirissä, ja $\Omega \cdot \text{A} = \text{V}$ antaa oikean yksikön.
 
 ## fy6-5-L1-05
 **Annettu:** kuvaajan potentiaalit silmukan kohdissa; nollakohta on lähteen miinusnapa
 **Kysytty:** vastuksen $R_2$ jännite $U_2$ voltteina
-**Periaate:** Vastuksen jännite on sen päiden potentiaaliero. Vastus $R_2$ on kohtien B ja C välissä, joten sen jännite on potentiaalin lasku kohdasta B kohtaan C.
-**Kuvaajan lukeminen:** Kohdassa B potentiaali on vaakasuoralla viivalla $7\,\text{V}$:n ruudukkoviivalla ja kohdassa C $3\,\text{V}$:n ruudukkoviivalla. Vastuksen $R_2$ kohdalla viiva laskee näiden välillä.
+**Periaate:** Vastuksen jännite on sen päiden potentiaaliero. Vastus $R_2$ on kohtien $B$ ja $C$ välissä, joten sen jännite on potentiaalin lasku kohdasta $B$ kohtaan $C$.
+**Kuvaajan lukeminen:** Kohdassa $B$ potentiaali on vaakasuoralla viivalla $7\,\text{V}$:n ruudukkoviivalla ja kohdassa $C$ $3\,\text{V}$:n ruudukkoviivalla. Vastuksen $R_2$ kohdalla viiva laskee näiden välillä.
 **Kaava:** $U_2 = V_B - V_C$
 **Muunnokset:** Ei tarvita: potentiaalit luetaan voltteina.
 **Sijoitus:** $U_2 = 7{,}0\,\text{V} - 3{,}0\,\text{V} = 4{,}0\,\text{V}$
-**Vastaus:** $4{,}0\,\text{V}$; arvot luetaan $1\,\text{V}$:n ruudukkoviivoilta, joten tulos on kahden merkitsevän numeron tarkkuudella.
+**Vastaus:** $4{,}0\,\text{V}$, kahden merkitsevän numeron tarkkuudella. Arvot luetaan $1\,\text{V}$:n ruudukkoviivoilta.
 **Järkevyys:** Vastusten jännitteet ovat $2\,\text{V}$, $4\,\text{V}$ ja $3\,\text{V}$, yhteensä $9\,\text{V}$ eli yhtä paljon kuin lähteen nousu. Jännitelaki toteutuu.
 
 ## fy6-5-L2-01
-**Annettu:** $R = 220\,\Omega$, $I = 25\,\text{mA}$, $V_A = 9{,}0\,\text{V}$; virta kulkee kohdasta A kohtaan B
-**Kysytty:** kohdan B potentiaali $V_B$ voltteina
-**Periaate:** Vastuksessa potentiaali laskee virran suuntaan Ohmin lain antaman jännitteen $RI$ verran. Kohta B on vastuksen jälkeen, joten sen potentiaali on pienempi kuin kohdan A.
+**Annettu:** $R = 220\,\Omega$, $I = 25\,\text{mA}$, $V_A = 9{,}0\,\text{V}$; virta kulkee kohdasta $A$ kohtaan $B$
+**Kysytty:** kohdan $B$ potentiaali $V_B$ voltteina
+**Periaate:** Vastuksessa potentiaali laskee virran suuntaan Ohmin lain antaman jännitteen $RI$ verran. Kohta $B$ on vastuksen jälkeen, joten sen potentiaali on pienempi kuin kohdan $A$.
 **Kaava:** $V_A - V_B = RI$, josta $V_B = V_A - RI$
 **Muunnokset:** $I = 25\,\text{mA} = 25 \cdot 0{,}001\,\text{A} = 0{,}025\,\text{A}$
 **Sijoitus:** $V_B = 9{,}0\,\text{V} - 220\,\Omega \cdot 0{,}025\,\text{A} = 9{,}0\,\text{V} - 5{,}5\,\text{V} = 3{,}5\,\text{V}$
@@ -110,9 +110,9 @@
 **Järkevyys:** Rinnankytkennän $60\,\Omega$ ja $30\,\Omega$ kokonaisresistanssi on $20\,\Omega$, ja koko piirin $40\,\Omega + 20\,\Omega = 60\,\Omega$ antaa virran $12\,\text{V} : 60\,\Omega = 0{,}20\,\text{A}$, joka on mittarin lukema. Vastuksen $R_3$ virta on kaksinkertainen vastuksen $R_2$ virtaan verrattuna, koska sen resistanssi on puolet.
 
 ## fy6-5-L3-03
-**Annettu:** $U = 12\,\text{V}$, sarjavastus $R = 20\,\Omega$, kaksi rinnakkaista lamppua, kummankin resistanssi $R_\text{L} = 60\,\Omega$ (vakio); miinusnapa on nollakohta
-**Kysytty:** haarautumispisteen potentiaalin muutos $\Delta V$ voltteina etumerkkeineen
-**Periaate:** Haarautumispisteen ja miinusnavan välissä on lamppuhaara, joten pisteen potentiaali on lamppujen jännite. Jännitelain mukaan se on lähteen jännite miinus sarjavastuksen jännite $RI$. Kun lamppu irrotetaan, haaran resistanssi kasvaa, virta pienenee, sarjavastuksen jännite pienenee ja lampun jännite kasvaa.
+**Annettu:** $U = 12\,\text{V}$, vastus $R = 20\,\Omega$ plusnavan ja lamppujen välissä, kaksi rinnakkaista lamppua, kummankin resistanssi $R_\text{L} = 60\,\Omega$ (vakio); miinusnapa on nollakohta
+**Kysytty:** vastuksen ja lamppujen välisen haarautumispisteen potentiaalin muutos $\Delta V$ voltteina etumerkkeineen
+**Periaate:** Lähteen ja johtimien resistanssit jätetään huomiotta. Vastuksen ja lamppujen välisen haarautumispisteen ja miinusnavan välissä on lamppuhaara, joten pisteen potentiaali on lamppujen jännite. Jännitelain mukaan se on lähteen jännite miinus sarjavastuksen jännite $RI$. Kun lamppu irrotetaan, haaran resistanssi kasvaa, virta pienenee, sarjavastuksen jännite pienenee ja lampun jännite kasvaa.
 **Kaava:** $V = \dfrac{R_\text{h}}{R + R_\text{h}}\, U$, missä $R_\text{h}$ on lamppuhaaran resistanssi; $\Delta V = V_\text{yksi} - V_\text{kaksi}$
 **Muunnokset:** Ei tarvita: kaikki suureet ovat perusyksiköissä.
 **Sijoitus:** Kaksi lamppua: $R_\text{h} = 30\,\Omega$ ja $V_\text{kaksi} = \dfrac{30\,\Omega}{50\,\Omega} \cdot 12\,\text{V} = 7{,}2\,\text{V}$. Yksi lamppu: $R_\text{h} = 60\,\Omega$ ja $V_\text{yksi} = \dfrac{60\,\Omega}{80\,\Omega} \cdot 12\,\text{V} = 9{,}0\,\text{V}$. $\Delta V = 9{,}0\,\text{V} - 7{,}2\,\text{V} = 1{,}8\,\text{V}$

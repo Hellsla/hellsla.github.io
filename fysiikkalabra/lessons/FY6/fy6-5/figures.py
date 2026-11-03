@@ -1,11 +1,11 @@
 """Figures of this lesson (scripts/figlib.py); `python scripts/figures.py fy6-5` writes them into lesson.md.
 Circuit diagrams with IEC symbols: resistor a rectangle, source two plates (long +, short −), meters circles with
-their letter; conventional current from + to − as orange arrows; potentials in blue; every label LaTeX."""
+their letter; conventional current from + to − as violet arrows (#7048e8, as in the other FY6 chapters); potentials in blue; every label LaTeX."""
 from figlib import Fig, Axes, fi, INK, MUTED, WHITE, RULE, RULE_LIGHT, HEAT, HEAT_LIGHT, COLD, COLD_LIGHT, GLASS, ICE, \
     ALUMINIUM, METAL_EDGE, IRON, GOOD, GOOD_LIGHT, SAND, SAND_LIGHT, WATER_LIGHT, n
 import herolib as H
 
-CUR = HEAT          # current arrows and their labels
+CUR = "#7048e8"     # current arrows and their labels (FY6: conventional current is violet)
 POT = COLD          # potentials (labels, the potential graph)
 
 
@@ -58,7 +58,7 @@ def junction(values=True):
     lab = ("Kaavakuva haarautumispisteestä, ei mittakaavassa. Vasemmalta johdinta pitkin tulee virta I1 = 0,30 A "
            "haarautumispisteeseen. Siitä lähtee kaksi haaraa: ylähaarassa on 30 ohmin vastus ja alahaarassa 60 ohmin vastus, "
            "ja haarat yhtyvät oikealla uudelleen. ")
-    lab += ("Oranssien virtanuolten leveys on verrannollinen virtaan: ylähaarassa I2 = 0,20 A, alahaarassa I3 = 0,10 A, "
+    lab += ("Violettien virtanuolten leveys on verrannollinen virtaan: ylähaarassa I2 = 0,20 A, alahaarassa I3 = 0,10 A, "
             "ja yhteensä haaroista lähtee yhtä paljon virtaa kuin pisteeseen tulee, 0,30 A." if values else
             "Haarojen virtoja ei ole merkitty, vaan niiden kohdalla on kysymysmerkki.")
     f = new("fy65-junction" + ("" if values else "-q"), 330, lab)
@@ -120,6 +120,28 @@ def circuit():
             "B ja C 6,0 V sekä D, E ja F 0 V. Saman johtimen kaikissa kohdissa potentiaali on sama; se muuttuu vain "
             "lähteessä ja vastuksissa.")
     sim_circuit(f)
+    return f.svg()
+
+
+def circuit_q():
+    """The circuit of the prediction (ennuste-2): the points A-F, the voltmeter with its black lead on the minus pole's
+    wire and a red probe lead, no potentials written."""
+    f = new("fy65-circuit-q", 404, "Kytkentäkaavio, ei mittakaavassa: jännitelähde 9,0 V, sen plusnavalta vastus R1 = 10 ohmia ja "
+            "sen jälkeen kaksi rinnakkaista vastusta R2 = 30 ohmia ja R3 = 60 ohmia, jotka palaavat lähteen miinusnapaan. "
+            "Johtimiin on merkitty pisteet A–F: A heti plusnavan jälkeen, B ja C vastuksen R1 jälkeen, D ja E vastusten "
+            "R2 ja R3 alapuolella ja F miinusnavan johtimessa. Jännitemittarin musta johto on kiinni miinusnavan johtimessa, "
+            "ja punainen johto on vapaa kosketettavaksi eri kohtiin. Potentiaaleja ei ole merkitty.")
+    sim_circuit(f, pots=False)
+    my, bx, rx = 366, 330, 430
+    f.circle(150, BOT, 6, INK)
+    f.add(f'<polyline points="{bx - 20},{my} 150,{my} 150,{BOT}" fill="none" stroke="{INK}" stroke-width="2.5" '
+          'stroke-linejoin="round" stroke-linecap="round"/>')
+    f.add(f'<polyline points="{bx + 20},{my} {rx},{my} {rx},{BOT + 50}" fill="none" stroke="#c92a2a" stroke-width="2.5" '
+          'stroke-linejoin="round" stroke-linecap="round"/>')
+    f.path(f"M{rx},{BOT + 38} L{rx - 7},{BOT + 52} L{rx + 7},{BOT + 52} Z", "#c92a2a")
+    meter(f, bx, my, "V")
+    f.tex(240, my - 22, r"\text{musta}", "middle", w=90)
+    f.tex(rx + 14, my - 22, r"\text{punainen}", "start", w=120)
     return f.svg()
 
 
@@ -251,13 +273,14 @@ def hero():
     return f.svg()
 
 
-FIGURES = {"hero": hero, "junction": junction, "junction-q": lambda: junction(False), "circuit": circuit,
+FIGURES = {"hero": hero, "junction": junction, "junction-q": lambda: junction(False), "circuit": circuit, "circuit-q": circuit_q,
            "potential-graph": potential_graph, "ex-graph": ex_graph, "ex-branch": ex_branch, "ex-branch2": ex_branch2}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
     "junction": "reveals: how 0,30 A splits into 0,20 A and 0,10 A through 30 and 60 ohm",
     "junction-q": "safe: a junction with 0,30 A in and branches of 30 and 60 ohm, branch currents unknown",
     "circuit": "reveals: the potentials of points A-F in the 9,0 V circuit with 10, 30 and 60 ohm",
+    "circuit-q": "safe: the 9,0 V circuit with 10, 30 and 60 ohm, points A-F and a voltmeter, no potentials written",
     "potential-graph": "reveals: the potential graph of the 9,0 V circuit with its drops 3,0 V and 6,0 V",
     "ex-graph": "safe: a potential graph of a three-resistor series loop on 1 V gridlines, no drops written",
     "ex-branch": "safe: 6,0 V source with 20 and 30 ohm in parallel, ammeter reading unknown",

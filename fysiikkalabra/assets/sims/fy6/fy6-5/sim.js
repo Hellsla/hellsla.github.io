@@ -4,12 +4,12 @@
 // to the minus pole: A = U; B = C = U - U1; D = E = F = 0. The reference (zero) point is the minus pole F or the
 // junction B, so every potential shifts by the same amount. A voltmeter's black lead sits on the reference point and
 // its red lead on the chosen point: it shows that point's potential. Wires are tinted by their potential (darker blue
-// = higher), the currents are orange arrows. Below: the potential graph of the loop F -> source -> A -> R1 -> B -> R2
+// = higher), the currents are violet arrows (#7048e8). Below: the potential graph of the loop F -> source -> A -> R1 -> B -> R2
 // -> E -> F, the probe's level dashed. Static picture, no animation. Every canvas text goes through lab(), which
 // pushes its box to simState.labels. p5.js 1.9 instance mode.
 new p5((p) => {
   const INKC = [31, 41, 51], MUTEDC = [107, 116, 128], GRID = [227, 220, 203], POTC = [25, 113, 194], POTL = [208, 230, 251],
-        CURC = [232, 89, 12], GLASSC = [238, 245, 249], ALU = [196, 204, 212], HOTC = [201, 42, 42];
+        CURC = [112, 72, 232], GLASSC = [238, 245, 249], ALU = [196, 204, 212], HOTC = [201, 42, 42];
   const X = { S: 60, A: 100, R1: 172, B: 245, J: 300, C: 450, M: 548 };
   const WIDE = { H: 400, top: 62, bot: 196, letTop: 50, potTop: 32, letBot: 214, potBot: 230, picH: 244,
                  ox: 70, oy: 360, gx1: 540, gy1: 274, glab: 386 };
@@ -93,7 +93,7 @@ new p5((p) => {
     const { top, bot } = G, mid = (top + bot) / 2, V = S.V;
     const cA = tint(V.A, S), cB = tint(V.B, S), cF = tint(V.F, S);
     const pos = { A: [X.A, top], B: [X.B, top], C: [X.C, top], D: [X.C, bot], E: [X.J, bot], F: [X.A, bot] };
-    const mx = X.M, my = mid, r = 18 * sk;
+    const mx = narrow ? 556 : X.M, my = mid, r = (narrow ? 15 : 18) * sk;
     lead(mx - r, my + 6 * sk, pos[S.ground], INKC);                                // the meter's leads behind the circuit
     lead(mx - r, my - 6 * sk, pos[S.probe], HOTC);
     seg([[X.S, mid - 9 * sk], [X.S, top], [X.R1, top]], cA);                       // + pole to R1: potential of A
@@ -118,7 +118,7 @@ new p5((p) => {
     // currents: conventional, from + through R1 and down the branches
     head(124, top, 'r'); head(X.J, bot - 26 * sk, 'd'); head(X.C, bot - 26 * sk, 'd');
     if (narrow) {
-      lab('$I_1$', 124, top + 40, 'c', CURC, true);
+      lab('$I_1$', 98, top + 40, 'c', CURC, true);
       lab('$I_2$', X.J + 16 * sk, bot - 18 * sk, 'l', CURC, true);
       lab('$I_3$', X.C + 16 * sk, bot - 18 * sk, 'l', CURC, true);
     } else {
@@ -142,7 +142,7 @@ new p5((p) => {
     lab('$V_' + S.probe + ' = ' + tx(S.Vp, 1) + '\\,\\text{V}$', mx, my - r - (narrow ? 26 : 12), 'c');
   }
   function earth(x, y) {        // three shortening bars under a short stem, on the side away from the circuit
-    const d = y === G.top ? -1 : 1, s0 = y + d * 10 * sk, ex = x - 18 * sk;
+    const d = y === G.top ? -1 : 1, s0 = y + d * 10 * sk, ex = x - (narrow ? 28 : 18) * sk;
     p.stroke(...INKC); p.strokeWeight(2.5 * sk); p.line(ex, y, ex, s0);
     for (let i = 0; i < 3; i++) { const w = (11 - 4 * i) * sk, yy = s0 + d * 4 * i * sk; p.line(ex - w, yy, ex + w, yy); }
   }
