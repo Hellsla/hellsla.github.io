@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 080111f6bcbb3a32
+CONTENT-HASH: 9713a07afd908166
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] figure.unit-photo (ripple-tank-two-sources) — the portrait image renders only about 150 px wide at 390 px and is dark, so the reinforcing and cancelling directions the caption names are barely visible — optionally a landscape crop of the interference region.
 
 ## Checked
-- batch delta review: "Luvun tärkeät käsitteet" panel captured from preview/fi-easy/fy5-12.html at 390 and 1280 px (the review/shots set has no capture of it) and opened — between the opening and stage 1, term bold over its explanation at 390 px, two-column at 1280 px, no clipping, no horizontal overflow, no KaTeX error; top-390 opened in a montage (read-aloud "Kuuntele" button under the title, layout intact).
+- batch delta review: the new licensed photo (figure.unit-photo) captured in context from preview/fi-easy/fy5-12.html at 390 and 1280 px and opened (review/shots has no dedicated photo capture). The image loads at full resolution, scales inside the column on a phone and sits beside its paragraph at 1280 px. The caption is under the image with its credit line ("Kuva: …, licence"). Nothing is clipped and there is no horizontal overflow. The caption and alt text were read against the picture and the neighbouring paragraph: plain S2 Finnish, quantities in LaTeX.
