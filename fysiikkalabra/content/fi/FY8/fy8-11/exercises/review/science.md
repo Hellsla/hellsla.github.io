@@ -1,18 +1,17 @@
-VERDICT: FAIL
-CONTENT-HASH: 6eb0c76702f807b5
+VERDICT: PASS
+CONTENT-HASH: d88ebf005f47e7f8
 
 ## Blocking
-- exercises.json:82 (fy8-11-L3-01) — B: the task asks how much U-235 fissions per day from the thermal power 4300 MW. That holds only if all the heat comes from U-235 fissions, but a real OL3 core gets a large share from Pu-239 fission, and the task does not state the assumption (house rule: state the model's assumptions in the task). — Add "Oleta, että kaikki lämpöteho syntyy uraani-235:n fissioista." The solution's Periaate should say the same.
 
 ## Polish
-- solutions.md:49 (L1-05) and solutions.md:109 (L3-02) — "fissiossa muuttuu energiaksi vain pieni osa massasta" and "Massaa muuttuu energiaksi" use the wording the lesson's misconception section warns against. Write "massa pienenee" / "massan pieneneminen vastaa energiaa".
-- solutions.md (L3-02 Periaate) — the sum of atomic numbers is not conserved here (4 → 2). Add one clause on why atomic masses still work: the two positrons annihilate with two electrons, and the task tells the student to use atomic masses.
-- solutions.md (L1-04 Järkevyys) — "selittää, miksi voimaloihin suunnitellaan juuri tritiumia": the larger reaction rate of D–T also matters. Soften to "on yksi syy".
-- exercises.json L2-01 / L2-04 — `answer` 1.51 and 4.11 against the solutions' answers "1,5 kg" and "4,1 %". The tolerance covers both, but one form would be cleaner.
+- solutions.md:104 (L3-02 Periaate) — the sum of atomic numbers is not conserved (4 → 2). One clause would say why atomic masses still work: two positrons annihilate with two electrons. The task says to use atomic masses, so this is not blocking.
+- answers.py:30 — the comment says "8,95e37", but the computed value is 8,944·10^37 (exercises.json 8.94). Correct the comment.
+- answers.py:28 — the comment "4,53 kg" agrees with the computed 4,526 kg, and the stored answer 4.5 lies within tolerance (0,6 %). Storing 4.53 would give a tighter answer.
 
 ## Checked
-- All twelve answers recomputed with my own formulas: 4,783; 178,4; 348,7; 3,269; 939,57; 1,509 kg; 3,374·10^14 J/kg; 184,7 MeV (x = 2); 4,106 %; 4,526 kg; 8,944·10^37 1/s; 2,402·10^5 a. All agree with answers.py.
-- Atomic masses are AME2020 values; the stated conditions (charge-number sum conserved, full power all year, all energy radiated) are correct.
-- The reasonableness checks really are checks (round-number estimates, 2^10 ≈ 1000, fission 8,2·10^13 J/kg × 4).
-- Rounding reasons are given; the tolerance of 2 % fits.
-- Hash 6eb0c76702f807b5 at the start and at the end.
+- Round-1 blocker fixed: exercises.json:82 (L3-01) now says "Oleta, että kaikki lämpöteho syntyy uraani-235:n fissioista". The solution's Periaate states the same assumption and notes the Pu-239 share in a real reactor.
+- L3-01 recomputed: 4300 MW · 86 400 s / (200 MeV) = 1,160·10^25 fissions, × 3,903·10^-25 kg = 4,526 kg, which rounds to 4,5 kg. The cross-check (82 GJ/g) is a real check.
+- All twelve answers recomputed with my own formulas: 4,783; 178,4; 348,7; 3,269; 939,57; 1,509 kg; 3,374·10^14 J/kg; 184,7 MeV (x = 2); 4,106 %; 4,526 kg; 8,944·10^37 1/s; 2,402·10^5 a. All are within 0,6 % of exercises.json.
+- Round-1 polish applied: L1-05 now says "massan pienenemistä" instead of "muuttuu energiaksi", and L1-04 says "yksi syy".
+- The stated conditions are right: the charge-number sum is conserved, the plant runs at full power for 365 d, and all the Sun's energy is radiated.
+- Hash d88ebf005f47e7f8 at the start and at the end.
