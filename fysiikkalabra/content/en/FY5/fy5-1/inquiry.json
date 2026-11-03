@@ -1,0 +1,442 @@
+{
+  "version": 1,
+  "contribution": "The chapter introduces the moment of a force $M = Fr$ for describing rotation: the lever arm as the perpendicular distance from the line of action, the lever arm of an oblique force $r = d\\sin\\alpha$, the sign of the direction of rotation and the net moment. In the simulation the student discovers that what decides whether the nut comes loose is the moment, not the force.",
+  "learn": [
+    "explain what the moment of a force describes and what the lever arm of a force is.",
+    "calculate the moment of a force $M = Fr$ also for a force that acts obliquely.",
+    "calculate the net moment when the directions of rotation are marked with signs."
+  ],
+  "prior": [
+    "A force has a magnitude, a direction and a point of application (chapter *Interaction and force: Newton's first and third laws*)",
+    "The components of an oblique force are obtained with sine and cosine (chapter *Free-body diagrams and the combined effect of forces*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "A wheel nut is stuck tight. You pull the handle of a short spanner with all your strength, and the nut does not budge. Your friend fetches a spanner whose handle is twice as long, and the nut comes loose, even though he does not pull any harder than you.",
+      "question": "If the size of the force alone does not decide it, what decides whether the nut comes loose?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Review: the component of an oblique force",
+      "optional": true,
+      "prompt": "A rope pulls a crate with a force of $200\\,\\text{N}$ at an angle of $30^\\circ$ to the horizontal. How large is the vertical component of the force?",
+      "choices": [
+        {
+          "text": "$100\\,\\text{N}$, because the vertical component is $F\\sin 30^\\circ$.",
+          "correct": true,
+          "feedback": "Correct. The side opposite the angle $30^\\circ$ is $F\\sin 30^\\circ = 200\\,\\text{N}\\cdot 0.5 = 100\\,\\text{N}$. The same rule of the right-angled triangle is needed in this chapter when calculating the lever arm of an oblique force."
+        },
+        {
+          "text": "$173\\,\\text{N}$, because the vertical component is $F\\cos 30^\\circ$.",
+          "feedback": "Cosine gives the side adjacent to the angle, that is the horizontal component $F\\cos 30^\\circ \\approx 173\\,\\text{N}$. The vertical component is the side opposite the angle, $F\\sin 30^\\circ = 100\\,\\text{N}$."
+        },
+        {
+          "text": "$200\\,\\text{N}$, because the component is as large as the force.",
+          "feedback": "A component is a leg of a right-angled triangle, and the hypotenuse is the force itself. A leg is always shorter: the vertical component is $F\\sin 30^\\circ = 100\\,\\text{N}$."
+        }
+      ]
+    },
+    {
+      "id": "pred-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: distance of the point of application",
+      "justify": true,
+      "reveal": {
+        "after": "exp-1",
+        "min": 2
+      },
+      "prompt": "A tight nut just barely comes loose when you pull the handle of the spanner perpendicularly with a force of $200\\,\\text{N}$ at a point $0.15\\,\\text{m}$ from the centre of the nut. How large a force is needed if you grip the handle twice as far away, $0.30\\,\\text{m}$ from the centre?",
+      "choices": [
+        {
+          "text": "About $100\\,\\text{N}$, that is half.",
+          "correct": true,
+          "feedback": "Correct. In the values of the model the nut comes loose with a force of $200\\,\\text{N}$ at $0.15\\,\\text{m}$ and with a force of $100\\,\\text{N}$ at $0.30\\,\\text{m}$. The product of the force and the distance is $30\\,\\text{Nm}$ in both: the nut requires a certain moment, not a certain force."
+        },
+        {
+          "text": "Still $200\\,\\text{N}$, because the nut is just as tight.",
+          "feedback": "The tightness of the nut does not require a certain force. In the values of the model $100\\,\\text{N}$, half as much, is enough at $0.30\\,\\text{m}$. What matters is the product of the force and the distance, which is $30\\,\\text{Nm}$ in both."
+        },
+        {
+          "text": "About $400\\,\\text{N}$, that is twice the force.",
+          "feedback": "A force pulling from farther away rotates the nut more effectively, not less. In the values of the model the force is halved to $100\\,\\text{N}$ when the distance doubles."
+        },
+        {
+          "text": "About $50\\,\\text{N}$, that is a quarter.",
+          "feedback": "In the values of the model the force is halved to $100\\,\\text{N}$, not quartered. The turning effect grows in direct proportion to the distance: twice the distance, half the force."
+        }
+      ]
+    },
+    {
+      "id": "pred-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: angle of the pull",
+      "justify": true,
+      "reveal": {
+        "after": "exp-2",
+        "min": 2
+      },
+      "prompt": "A rusted nut comes loose when you pull the handle of the spanner perpendicularly with a force of $200\\,\\text{N}$ at a point $0.40\\,\\text{m}$ from the centre of the nut. What happens to the moment if you pull with the same force from the same point but so that the force makes an angle of $30^\\circ$ with the extension of the handle?",
+      "choices": [
+        {
+          "text": "The moment is halved, because the lever arm of the force becomes half as long.",
+          "correct": true,
+          "feedback": "Correct. In the values of the model the lever arm of the force is the whole $0.40\\,\\text{m}$ at the angle $90^\\circ$ but only $0.20\\,\\text{m}$ at the angle $30^\\circ$, so the moment drops from $80\\,\\text{Nm}$ to $40\\,\\text{Nm}$. The rusted nut does not come loose."
+        },
+        {
+          "text": "The moment stays the same, because the force and the point of application are the same.",
+          "feedback": "The force and the point of application are the same, but the line of action now passes closer to the axis. In the values of the model the lever arm of the force shortens from $0.40\\,\\text{m}$ to $0.20\\,\\text{m}$ and the moment from $80\\,\\text{Nm}$ to $40\\,\\text{Nm}$."
+        },
+        {
+          "text": "The moment grows, because the oblique force also pulls the spanner lengthwise.",
+          "feedback": "The part of the force along the handle pulls the spanner lengthwise, but it does not rotate the nut, because its line of action passes through the axis. In the values of the model the moment decreases from $80\\,\\text{Nm}$ to $40\\,\\text{Nm}$."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "In the simulation a stuck nut is loosened with a spanner. Adjust the force of the hand, the point of application and the angle of the pull, and try whether the nut comes loose.",
+      "howto": "Adjust the force $F$, the distance $d$ of the point of application from the centre of the nut and the angle $\\alpha$ that the force makes with the extension of the handle. Press *Turn*: either the nut comes loose and the spanner turns, or the spanner just gives a jerk. Each attempt is drawn on the graph at the point whose horizontal coordinate is the lever arm $r$ and whose vertical coordinate is the force $F$: a filled green dot when the nut came loose and an empty ring when it did not move. The red cross shows the current setting. The *Nut* selection switches between a tight nut and a rusted nut and clears the graph, and so does *Reset*. *Speed* changes only the pace of the turning. The checkbox *Show the lever arm* draws the segment $r$ perpendicular from the axis to the line of action. The readouts are below the picture.",
+      "model": "The values are model values calculated by the simulation. The nut can only rotate about the bolt, and the axis of rotation passes through the centre of the nut. The nut comes loose when the moment of the hand's force is at least the moment required by the friction of the nut. This value is not shown but is found by trying. All angles $0^\\circ$–$180^\\circ$ turn the nut in the loosening direction, that is anticlockwise. The weight of the spanner is ignored. The turning is only a picture of the result: the simulation does not calculate how fast the nut rotates.",
+      "calc": "The lever arm of a force is the perpendicular distance from the axis to the line of action, $r = d\\sin\\alpha$. The moment is $M = Fr$ in the unit $\\text{Nm}$. An attempt succeeds when $M$ is at least the moment required by the nut."
+    },
+    {
+      "id": "exp-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 1: the smallest force that loosens the nut",
+      "intro": "The initial state selects the tight nut and the angle $\\alpha = 90^\\circ$. Choose the point of application $d$, adjust the force $F$ and press *Turn* until you find the smallest force that loosens the nut. Record a measurement only then. Repeat at least at the distances $0.10\\,\\text{m}$, $0.15\\,\\text{m}$, $0.20\\,\\text{m}$ and $0.30\\,\\text{m}$.",
+      "initial": {
+        "mutteri": "tiukka",
+        "alpha": 90,
+        "d": 0.1,
+        "F": 100
+      },
+      "names": {
+        "d": "point of application d",
+        "F": "force F",
+        "alpha": "angle α",
+        "mutteri": "mutteri"
+      },
+      "units": {
+        "d": "m",
+        "F": "N",
+        "alpha": "°"
+      },
+      "values": {
+        "mutteri": {
+          "tiukka": "tiukassa"
+        },
+        "tulos": {
+          "1": "aukesi",
+          "0": "did not move"
+        }
+      },
+      "locked": [
+        "mutteri",
+        "alpha"
+      ],
+      "vary": "d",
+      "measure": [
+        {
+          "key": "F",
+          "label": "force F"
+        },
+        {
+          "key": "M",
+          "label": "M (Nm)"
+        },
+        {
+          "key": "tulos",
+          "label": "mutteri"
+        }
+      ],
+      "min": 2,
+      "question": {
+        "type": "numeric",
+        "prompt": "From the smallest loosening force in the row $d = 0.20\\,\\text{m}$ of the table, calculate the moment that the nut requires. Answer in newton metres.",
+        "answer": 30,
+        "unit": "Nm",
+        "tolerance": 0.03,
+        "hints": [
+          "The force is perpendicular to the handle. How long is the lever arm of the force then?",
+          "When $\\alpha = 90^\\circ$, the lever arm is $r = d$ and the moment is $M = Fd$.",
+          "$M = F\\cdot 0.20\\,\\text{m}$, where $F$ is the smallest loosening force of the row."
+        ],
+        "mistakes": [
+          {
+            "value": 150,
+            "feedback": "This is the force $F$. The moment is the product of the force and the lever arm: multiply the force by the lever arm $0.20\\,\\text{m}$."
+          },
+          {
+            "value": 750,
+            "feedback": "You divided the force by the distance. A longer lever arm makes the force a more effective rotator, so the moment is the product $M = Fr$."
+          }
+        ],
+        "solution": "**Given:** from the table, point of application $d = 0.20\\,\\text{m}$ and smallest loosening force $F = 150\\,\\text{N}$ (a model value); angle $\\alpha = 90^\\circ$\n\n**Find:** moment $M$ required by the nut, in the unit $\\text{Nm}$\n\n**Principle:** The nut rotates about its axis, so whether it comes loose is decided by the moment of the force $M = Fr$. At the smallest loosening force the moment is exactly the one that the nut requires. The force is perpendicular to the handle, so the lever arm is the whole distance $d$.\n\n**Formula:** $M = Fr$ and $r = d\\sin 90^\\circ = d$, so $M = Fd$\n\n**Conversions:** The force is in newtons and the distance in metres, so no conversions are needed.\n\n**Substitution:** $M = 150\\,\\text{N}\\cdot 0.20\\,\\text{m} = 30\\,\\text{Nm}$\n\n**Answer:** $30\\,\\text{Nm}$, two significant figures like the distance $0.20\\,\\text{m}$.\n\n**Reasonableness:** The other rows give the same product: $300\\,\\text{N}\\cdot 0.10\\,\\text{m} = 30\\,\\text{Nm}$ and $100\\,\\text{N}\\cdot 0.30\\,\\text{m} = 30\\,\\text{Nm}$. So the nut really does require a certain moment. On the graph the green boundary points lie on the curve on which $Fr$ is constant."
+      }
+    },
+    {
+      "id": "exp-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 2: the angle of the pull changes",
+      "intro": "The initial state selects the rusted nut, the force $F = 200\\,\\text{N}$ and the point of application $d = 0.40\\,\\text{m}$. Change only the angle $\\alpha$ and press *Turn* at each angle. Record a measurement at least at the angles $90^\\circ$, $60^\\circ$, $45^\\circ$, $30^\\circ$ and $150^\\circ$.",
+      "initial": {
+        "mutteri": "ruoste",
+        "F": 200,
+        "d": 0.4,
+        "alpha": 90
+      },
+      "names": {
+        "d": "point of application d",
+        "F": "force F",
+        "alpha": "angle α",
+        "mutteri": "mutteri"
+      },
+      "units": {
+        "d": "m",
+        "F": "N",
+        "alpha": "°"
+      },
+      "values": {
+        "mutteri": {
+          "ruoste": "ruosteessa"
+        },
+        "tulos": {
+          "1": "aukesi",
+          "0": "did not move"
+        }
+      },
+      "locked": [
+        "mutteri",
+        "F",
+        "d"
+      ],
+      "vary": "alpha",
+      "measure": [
+        {
+          "key": "r",
+          "label": "r (m)"
+        },
+        {
+          "key": "M",
+          "label": "M (Nm)"
+        },
+        {
+          "key": "tulos",
+          "label": "mutteri"
+        }
+      ],
+      "min": 2,
+      "question": {
+        "type": "choice",
+        "prompt": "Why does the nut not come loose at the angle $30^\\circ$, even though the force and the point of application are the same as at the angle $90^\\circ$?",
+        "choices": [
+          {
+            "text": "The line of action passes closer to the axis, so the lever arm and the moment become smaller.",
+            "correct": true,
+            "feedback": "Correct. In the values of the model the lever arm is $r = 0.40\\,\\text{m}\\cdot\\sin 30^\\circ = 0.20\\,\\text{m}$, so the moment is only $40\\,\\text{Nm}$. At the angle $90^\\circ$ it was $80\\,\\text{Nm}$."
+          },
+          {
+            "text": "An oblique force is smaller than a force acting perpendicular to the handle.",
+            "feedback": "The force is $200\\,\\text{N}$ at both angles. What changes is the lever arm: in the values of the model it shortens from $0.40\\,\\text{m}$ to $0.20\\,\\text{m}$."
+          },
+          {
+            "text": "At the angle $30^\\circ$ the point of application of the force is farther from the axis.",
+            "feedback": "The point of application is the same, $0.40\\,\\text{m}$ away. The line of action, however, passes closer to the axis, so the lever arm is only $0.20\\,\\text{m}$."
+          }
+        ]
+      }
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion",
+      "after": [
+        "exp-1",
+        "exp-2"
+      ],
+      "prompt": "Using your measurements, explain what decides whether the nut comes loose. Use the words force, lever arm and moment, and explain why the angle of the pull affects the result.",
+      "criteria": [
+        "The answer says that the nut comes loose when the moment $M = Fr$ reaches a certain value, not when the force reaches a certain value.",
+        "The answer uses the results of experiment 1: the smallest loosening force is halved when the distance doubles, and the product $Fd$ is about $30\\,\\text{Nm}$ in every row.",
+        "The answer says that the lever arm of an oblique force, $r = d\\sin\\alpha$, is shorter than $d$, so the moment decreases.",
+        "The answer uses the result of experiment 2, for example the moment at the angles $90^\\circ$ and $30^\\circ$."
+      ],
+      "model": "In experiment 1 the smallest loosening force in the values of the model was $300\\,\\text{N}$ at the point $0.10\\,\\text{m}$, $150\\,\\text{N}$ at $0.20\\,\\text{m}$ and $100\\,\\text{N}$ at $0.30\\,\\text{m}$. So the force is not the same, but the product of the force and the distance is $30\\,\\text{Nm}$ every time: what decides whether the nut comes loose is the moment of the force $M = Fr$. In experiment 2 the force and the point of application stayed the same, but as the angle decreased, the line of action moved closer to the axis. The lever arm $r = d\\sin\\alpha$ shortened from $0.40\\,\\text{m}$ to $0.20\\,\\text{m}$ at the angle $30^\\circ$, and the moment dropped from $80\\,\\text{Nm}$ to $40\\,\\text{Nm}$. At the angle $150^\\circ$ the moment was the same as at the angle $30^\\circ$, because the lever arm is equally long. On the graph the attempts with the same nut are divided by the same boundary, because loosening depends only on the product $Fr$."
+    },
+    {
+      "id": "theory",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "reflect",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Return to your predictions",
+      "optional": true,
+      "prompt": "Compare your predictions with the measurements. What did you learn about what makes a force an effective rotator? Return also to the nut at the beginning: why does a long wrench help, even though the force of the hand does not grow?",
+      "predictions": [
+        "pred-1",
+        "pred-2"
+      ]
+    },
+    {
+      "id": "example",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the error",
+      "prompt": "The handle of a spanner is pulled with a force of $50\\,\\text{N}$ at a point $0.40\\,\\text{m}$ from the axis. The force makes an angle of $30^\\circ$ with the extension of the handle. A student calculated the moment like this: $M = Fd = 50\\,\\text{N}\\cdot 0.40\\,\\text{m} = 20\\,\\text{Nm}$. What is wrong with the calculation?",
+      "choices": [
+        {
+          "text": "The distance $d$ is not the lever arm of the force. The lever arm is $d\\sin 30^\\circ = 0.20\\,\\text{m}$, so $M = 10\\,\\text{Nm}$.",
+          "correct": true,
+          "feedback": "Correct. An oblique force rotates only with its lever arm, which is the perpendicular distance from the axis to the line of action. A perpendicular pull would give $20\\,\\text{Nm}$, but at the angle $30^\\circ$ the moment is half of that."
+        },
+        {
+          "text": "The lever arm is calculated with cosine, $d\\cos 30^\\circ \\approx 0.35\\,\\text{m}$, so $M \\approx 17\\,\\text{Nm}$.",
+          "feedback": "The angle is between the force and the extension of the arm, so in the right-angled triangle the lever arm is the side opposite the angle, $d\\sin\\alpha$. The expression $Fd\\cos\\alpha$ would correspond to the component along the arm, which does not rotate the nut. The correct moment is $10\\,\\text{Nm}$."
+        },
+        {
+          "text": "The force must be divided by the distance, so $M = \\tfrac{F}{d} = 125\\,\\text{Nm}$.",
+          "feedback": "A longer distance makes the force a more effective rotator, so the distance multiplies the force. The error is that the distance $d$ is not the lever arm of the force here: $r = d\\sin 30^\\circ = 0.20\\,\\text{m}$ and $M = 10\\,\\text{Nm}$."
+        },
+        {
+          "text": "There is no error in the calculation, because $d$ was measured to the point of application.",
+          "feedback": "The formula $M = Fd$ holds only when the force is perpendicular to the handle. The lever arm of an oblique force is $d\\sin 30^\\circ = 0.20\\,\\text{m}$, so $M = 10\\,\\text{Nm}$."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply to a new situation",
+      "prompt": "The barrier of a car park is $3.00\\,\\text{m}$ long and has a mass of $12.0\\,\\text{kg}$. The barrier turns about an axis at one end, and its weight acts at the middle of the barrier. The barrier has been raised to an angle of $40^\\circ$ to the horizontal. What is the moment of the barrier's weight about the axis? Answer in newton metres.",
+      "answer": 135.3,
+      "unit": "Nm",
+      "tolerance": 0.02,
+      "hints": [
+        "The weight points straight down. How far from the axis does the vertical line of action pass?",
+        "The lever arm is the horizontal distance of the point of application of the weight from the axis: $r = 1.50\\,\\text{m}\\cdot\\cos 40^\\circ$.",
+        "$M = mg\\cdot r = 12.0\\,\\text{kg}\\cdot 9.81\\,\\text{m/s}^2\\cdot 1.50\\,\\text{m}\\cdot\\cos 40^\\circ$."
+      ],
+      "mistakes": [
+        {
+          "value": 176.6,
+          "feedback": "You used the distance $1.50\\,\\text{m}$ as the lever arm. The weight is vertical, so the lever arm is the horizontal distance of the point of application from the axis, $1.50\\,\\text{m}\\cdot\\cos 40^\\circ$."
+        },
+        {
+          "value": 113.5,
+          "feedback": "You used sine. When the barrier is $40^\\circ$ from the horizontal, the horizontal distance of the weight from the axis is $1.50\\,\\text{m}\\cdot\\cos 40^\\circ$, not $\\sin 40^\\circ$."
+        },
+        {
+          "value": 270.5,
+          "feedback": "The weight acts at the middle of the barrier, $1.50\\,\\text{m}$ from the axis, not at the end of the barrier."
+        }
+      ],
+      "solution": "**Given:** length of the barrier $3.00\\,\\text{m}$, mass $m = 12.0\\,\\text{kg}$, the weight acts at the middle, $d = 1.50\\,\\text{m}$ from the axis, angle of the barrier to the horizontal $40^\\circ$; $g = 9.81\\,\\text{m/s}^2$\n\n**Find:** moment $M$ of the weight about the axis in the unit $\\text{Nm}$\n\n**Principle:** The barrier can only turn about its axis, so the turning effect of the weight is given by its moment $M = Fr$. The weight points straight down, so its lever arm is the perpendicular distance from the axis to the vertical line of action, that is the horizontal distance of the point of application from the axis. In the right-angled triangle it is the side adjacent to the angle $40^\\circ$.\n\n**Formula:** $M = Gr$, where $G = mg$ and $r = d\\cos 40^\\circ$, so $M = mgd\\cos 40^\\circ$\n\n**Conversions:** The mass is in kilograms and the length in metres, so no conversions are needed.\n\n**Substitution:** $M = 12.0\\,\\text{kg}\\cdot 9.81\\,\\text{m/s}^2\\cdot 1.50\\,\\text{m}\\cdot\\cos 40^\\circ = 117.72\\,\\text{N}\\cdot 1.149\\,\\text{m} = 135.3\\,\\text{Nm}$\n\n**Answer:** $135\\,\\text{Nm}$, three significant figures like the mass $12.0\\,\\text{kg}$ and the length $3.00\\,\\text{m}$.\n\n**Reasonableness:** For a horizontal barrier the lever arm of the weight would be the whole $1.50\\,\\text{m}$ and the moment $177\\,\\text{Nm}$. When raised, the lever arm shortens, so the moment decreases, and when vertical it would be zero. The angle can also be checked with the formula $r = d\\sin\\alpha$: the angle between the weight and the extension of the barrier is $90^\\circ + 40^\\circ = 130^\\circ$ and $\\sin 130^\\circ = \\cos 40^\\circ$."
+    },
+    {
+      "id": "tehtavat",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise some more at three levels. In every task, draw the axis of rotation, the force and its line of action before you calculate."
+    },
+    {
+      "id": "check-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept",
+      "prompt": "A door is pushed with an equally large force in four different ways. In which case is the moment of the force about the hinges zero?",
+      "choices": [
+        {
+          "text": "The force acts at the edge of the door and points in the plane of the door straight towards the hinges.",
+          "correct": true,
+          "feedback": "Correct. The line of action passes through the axis of rotation, so the lever arm of the force is zero and $M = Fr = 0$, even though the force acts far from the hinges."
+        },
+        {
+          "text": "The force acts right next to the hinges, perpendicular to the door.",
+          "feedback": "The moment is then small but not zero, because the lever arm is a small distance from the hinges. It is zero only when the line of action passes through the hinges."
+        },
+        {
+          "text": "The force acts on the handle obliquely, at an angle of $30^\\circ$ to the plane of the door.",
+          "feedback": "The lever arm of an oblique force is $d\\sin 30^\\circ$, that is half of the distance of the handle from the hinges. The moment is smaller than with a perpendicular force but not zero."
+        },
+        {
+          "text": "The force acts on the handle perpendicular to the door, but the door is locked.",
+          "feedback": "The lock prevents the door from rotating, but the push still has a moment about the hinges: the lever arm is the distance of the handle from the hinges. The force of the lock opposes it with a moment of its own."
+        }
+      ]
+    },
+    {
+      "id": "check-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Calculation",
+      "prompt": "A driver turns a steering wheel whose radius is $0.19\\,\\text{m}$. The left hand pulls the rim along the rim with a force of $25\\,\\text{N}$, which rotates the wheel anticlockwise. The right hand acts on the rim along the rim with a force of $15\\,\\text{N}$, which rotates the wheel clockwise. What is the net moment of the hands' forces about the axis of the steering wheel? Answer in newton metres, with an anticlockwise moment positive.",
+      "answer": 1.9,
+      "unit": "Nm",
+      "tolerance": 0.03,
+      "hints": [
+        "A force along the rim is perpendicular to the radius. How long is the lever arm of the force then?",
+        "The lever arm of both forces is the radius $0.19\\,\\text{m}$. An anticlockwise moment is positive and a clockwise moment negative.",
+        "$\\Sigma M = 25\\,\\text{N}\\cdot 0.19\\,\\text{m} - 15\\,\\text{N}\\cdot 0.19\\,\\text{m}$."
+      ],
+      "mistakes": [
+        {
+          "value": 7.6,
+          "feedback": "You added the moments together without signs. The hands rotate the wheel in opposite directions, so the clockwise moment is negative."
+        },
+        {
+          "value": -1.9,
+          "feedback": "The magnitude is correct but the sign is not. The larger force rotates anticlockwise, so the net moment is positive."
+        }
+      ],
+      "practice": "Harjoittele kokonaismomenttia tason 2 tehtävissä.",
+      "solution": "**Given:** radius of the steering wheel $R = 0.19\\,\\text{m}$, force of the left hand $F_1 = 25\\,\\text{N}$ anticlockwise, force of the right hand $F_2 = 15\\,\\text{N}$ clockwise, both along the rim\n\n**Find:** net moment $\\Sigma M$ about the axis in the unit $\\text{Nm}$, anticlockwise positive\n\n**Principle:** The steering wheel rotates about its axis, so the turning effect of each force is given by its moment. A force along the rim is perpendicular to the radius, so its lever arm is the radius. The net moment is the sum of the moments with their signs.\n\n**Formula:** $M_1 = F_1 R$ and $M_2 = -F_2 R$, so $\\Sigma M = F_1 R - F_2 R$\n\n**Conversions:** The forces are in newtons and the radius in metres, so no conversions are needed.\n\n**Substitution:** $\\Sigma M = 25\\,\\text{N}\\cdot 0.19\\,\\text{m} - 15\\,\\text{N}\\cdot 0.19\\,\\text{m} = 4.75\\,\\text{Nm} - 2.85\\,\\text{Nm} = 1.9\\,\\text{Nm}$\n\n**Answer:** $1.9\\,\\text{Nm}$ anticlockwise, two significant figures like the radius $0.19\\,\\text{m}$ and the forces.\n\n**Reasonableness:** Both forces have the same lever arm, so the net moment is the product of the difference of the forces, $10\\,\\text{N}$, and the radius: $10\\,\\text{N}\\cdot 0.19\\,\\text{m} = 1.9\\,\\text{Nm}$. The larger force rotates anticlockwise, so the sign is positive: together the hands' forces rotate the wheel anticlockwise."
+    },
+    {
+      "id": "check-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Explain",
+      "prompt": "Using the moment, explain why the handle of a door is placed at the edge of the door, far from the hinges. Also explain why the door does not open if it is pushed at the edge in the plane of the door towards the hinges.",
+      "criteria": [
+        "The answer says that the door rotates about the axis of rotation through the hinges and that the rotation is decided by the moment of the force $M = Fr$.",
+        "The answer says that a handle far from the hinges gives a long lever arm, so even a small force gives a sufficient moment.",
+        "The answer says that the line of action of a force pointing in the plane of the door towards the hinges passes through the axis, so the lever arm and the moment are zero."
+      ],
+      "model": "A door can only rotate about the axis of rotation through the hinges, so its turning is decided by the moment of the force $M = Fr$, where $r$ is the perpendicular distance from the axis to the line of action of the force. When the handle is at the edge of the door, the lever arm of a perpendicular push is almost the whole width of the door, for example $0.8\\,\\text{m}$. Then even a small force gives a sufficient moment, and the door turns easily. Close to the hinges the lever arm is short, so the same force gives a much smaller moment. If the door is pushed at the edge in the plane of the door towards the hinges, the line of action of the force passes through the axis of rotation. The lever arm is zero, so the moment is zero too, and the door does not turn even if the force is large."
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, three quick questions. Answer first yourself and open the answer only afterwards."
+    }
+  ]
+}

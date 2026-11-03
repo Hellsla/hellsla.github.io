@@ -1,0 +1,105 @@
+{
+  "level1": [
+    {
+      "id": "fy5-1-L1-01",
+      "level": 1,
+      "text": "A nut is being tightened with a spanner. The hand acts on the handle at a distance of $0.25\\,\\text{m}$ from the centre of the nut with a force of $150\\,\\text{N}$ perpendicular to the handle. What is the moment of the force about the axis of the nut?",
+      "answer": 37.5,
+      "unit": "Nm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-1-L1-02",
+      "level": 1,
+      "text": "A door is opened by pushing the handle with a force of $12\\,\\text{N}$ perpendicular to the door. The handle is $0.80\\,\\text{m}$ from the hinges. What is the moment of the force about the hinges?",
+      "answer": 9.6,
+      "unit": "Nm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-1-L1-03",
+      "level": 1,
+      "text": "The axle nut of a bicycle must be tightened to a moment of $45\\,\\text{Nm}$. The point of application on the spanner is $0.30\\,\\text{m}$ from the centre of the nut, and the force is perpendicular to the handle. How large a force is needed?",
+      "answer": 150,
+      "unit": "N",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-1-L1-04",
+      "level": 1,
+      "text": "In the figure, a horizontal force of $40\\,\\text{N}$ acts at the point $P$ on a rod that turns about the axis of rotation $O$. One square of the grid corresponds to $0.10\\,\\text{m}$. Read the lever arm of the force from the figure. What is the moment of the force about the axis $O$?",
+      "answer": 12,
+      "unit": "Nm",
+      "tolerance": 0.02,
+      "figure": "fy5-1/ruutu"
+    },
+    {
+      "id": "fy5-1-L1-05",
+      "level": 1,
+      "text": "The magnitude of a force is $60\\,\\text{N}$, and its moment about the axis of rotation is $18\\,\\text{Nm}$. What is the lever arm of the force?",
+      "answer": 0.3,
+      "unit": "m",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy5-1-L2-01",
+      "level": 2,
+      "text": "A door is opened by pulling a string tied to the handle. The handle is $0.75\\,\\text{m}$ from the hinges, and the tension of the string is $40\\,\\text{N}$. The string makes an angle of $35^\\circ$ with the plane of the door. What is the moment of the string's force about the hinges?",
+      "answer": 17.2,
+      "unit": "Nm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-1-L2-02",
+      "level": 2,
+      "text": "A wheel nut is being loosened with a force of $85\\,\\text{N}$ perpendicular to the handle of the wrench. The point of application is $35\\,\\text{cm}$ from the centre of the nut. What is the moment of the force about the axis of the nut?",
+      "answer": 29.75,
+      "unit": "Nm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-1-L2-03",
+      "level": 2,
+      "text": "A horizontal board turns about an axis at its left end. A force of $30\\,\\text{N}$ acts straight upwards at the right end of the board, $0.50\\,\\text{m}$ from the axis. In addition, a force of $40\\,\\text{N}$ acts straight downwards at $0.20\\,\\text{m}$ from the axis. What is the net moment of the forces about the axis, when an anticlockwise moment is positive?",
+      "answer": 7.0,
+      "unit": "Nm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-1-L2-04",
+      "level": 2,
+      "text": "The lever of a water-pipe shut-off valve is $0.25\\,\\text{m}$ long, and the valve turns only with a moment of $50\\,\\text{Nm}$. The lever is pulled at its end so that the force makes an angle of $60^\\circ$ with the extension of the lever. How large a force is needed?",
+      "answer": 231,
+      "unit": "N",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy5-1-L3-01",
+      "level": 3,
+      "text": "A cyclist's foot presses the pedal straight down with a force of $500\\,\\text{N}$. The distance of the pedal from the axis of the crank is $0.175\\,\\text{m}$. The crank points forwards and $45^\\circ$ below the horizontal. In which position of the crank would the same force give the greatest moment and in which zero? What is the moment of the foot's force about the axis of the crank when the crank is in this $45^\\circ$ position?",
+      "answer": 61.9,
+      "unit": "Nm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-1-L3-02",
+      "level": 3,
+      "text": "An adult pushes a garden gate at the handle, $0.40\\,\\text{m}$ from the hinges, with a force of $50\\,\\text{N}$ perpendicular to the gate. A child can push with a force of only $20\\,\\text{N}$. The child also pushes perpendicular to the gate. How far from the hinges must the child push so that the turning effect of his force is as large as the adult's?",
+      "answer": 1.0,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-1-L3-03",
+      "level": 3,
+      "text": "The arms of a cross wrench extend $0.20\\,\\text{m}$ from the centre of the nut on both sides. A mechanic presses the end of the left arm straight down with a force of $120\\,\\text{N}$ and pulls the end of the right arm straight up with a force of $120\\,\\text{N}$. The arms are horizontal. What is the sum of the hands' forces? What is the net moment of the hands' forces about the axis of the nut?",
+      "answer": 48,
+      "unit": "Nm",
+      "tolerance": 0.02
+    }
+  ]
+}

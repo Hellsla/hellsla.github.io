@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy5-3-L1-01",
+      "level": 1,
+      "text": "A child standing at the edge of a playground roundabout moves along a circular path of radius $2.5\\,\\text{m}$. The roundabout makes one turn in $6.0\\,\\text{s}$. What is the tangential speed of the child?",
+      "answer": 2.6,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-3-L1-02",
+      "level": 1,
+      "text": "The tip of the blade of a table fan is $0.20\\,\\text{m}$ from the axis, and the blades rotate at the rotation frequency $15\\,\\tfrac{1}{\\text{s}}$. What is the tangential speed of the tip of the blade?",
+      "answer": 19,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-3-L1-03",
+      "level": 1,
+      "text": "The sails of an old windmill make one turn in $4.0\\,\\text{s}$ in steady wind. What is the rotation frequency of the sails?",
+      "answer": 0.25,
+      "unit": "1/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-3-L1-04",
+      "level": 1,
+      "text": "An ice hockey player swings a puck at the end of a string on the ice along a circular path of radius $1.5\\,\\text{m}$, and the tangential speed of the puck is $3.0\\,\\text{m/s}$. The string breaks. How far from the centre of the path is the puck $2.0\\,\\text{s}$ after the break? The ice is frictionless, and the puck does not hit anything.",
+      "answer": 6.2,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-3-L1-05",
+      "level": 1,
+      "text": "The International Space Station orbits the Earth along an almost circular path of radius $6.78 \\cdot 10^{6}\\,\\text{m}$. One revolution takes $5.55 \\cdot 10^{3}\\,\\text{s}$. What is the tangential speed of the space station? Give the answer in m/s.",
+      "answer": 7680,
+      "unit": "m/s",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy5-3-L2-01",
+      "level": 2,
+      "text": "A single record is played on a record player. It turns $45$ revolutions per minute. The edge of the record is $8.5\\,\\text{cm}$ from its centre. What is the tangential speed of the edge of the record?",
+      "answer": 0.4,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-3-L2-02",
+      "level": 2,
+      "text": "The diameter of a Ferris wheel is $40\\,\\text{m}$. A gondola at the rim of the wheel moves along a circular path at a constant speed of $0.35\\,\\text{m/s}$. How long does one revolution take? Give the answer in minutes.",
+      "answer": 6.0,
+      "unit": "min",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-3-L2-03",
+      "level": 2,
+      "text": "In a laboratory centrifuge the bottom of a test tube is $9.5\\,\\text{cm}$ from the axis of rotation and moves at the tangential speed $45\\,\\text{m/s}$. How many revolutions per minute does the centrifuge make? Give the answer in 1/min.",
+      "answer": 4500,
+      "unit": "1/min",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-3-L2-04",
+      "level": 2,
+      "text": "The tip of a wind turbine blade is $52\\,\\text{m}$ from the axis and moves at the tangential speed $65\\,\\text{m/s}$. What is the tangential speed at the point of the same blade that is $20\\,\\text{m}$ from the axis?",
+      "answer": 25,
+      "unit": "m/s",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy5-3-L3-01",
+      "level": 3,
+      "text": "Two runners run side by side in a bend of a track that is a semicircle. The path of the inner runner is a circular arc of radius $36.5\\,\\text{m}$, and the speed of the inner runner is $7.0\\,\\text{m/s}$. The arc of the outer runner has the radius $40.2\\,\\text{m}$, and the arcs are concentric. How great must the speed of the outer runner be for the runners to stay side by side throughout the bend?",
+      "answer": 7.7,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-3-L3-02",
+      "level": 3,
+      "text": "A car drives round a roundabout at a constant speed of $36\\,\\text{km/h}$. What is the magnitude of the change of velocity $|\\Delta\\overline{v}|$ of the car while it goes round a quarter of the circle? Give the answer in m/s.",
+      "answer": 14,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-3-L3-03",
+      "level": 3,
+      "text": "The radius of the front sprocket of a bicycle is $10.0\\,\\text{cm}$ and the radius of the rear sprocket $4.0\\,\\text{cm}$. The chain moves at the same tangential speed on the rim of both sprockets. The rear sprocket and the rear wheel turn together, and the radius of the rear wheel is $0.34\\,\\text{m}$. The cyclist pedals so that the front sprocket rotates at the rotation frequency $1.0\\,\\tfrac{1}{\\text{s}}$. What is the speed of the bicycle when the tyre does not slip against the ground? Give the answer in km/h.",
+      "answer": 19,
+      "unit": "km/h",
+      "tolerance": 0.02
+    }
+  ]
+}

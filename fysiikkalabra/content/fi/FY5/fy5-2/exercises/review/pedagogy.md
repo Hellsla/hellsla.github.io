@@ -1,8 +1,8 @@
-VERDICT: FAIL
-CONTENT-HASH: d390f27b68875a74
+VERDICT: PASS
+CONTENT-HASH: 37db2f4776a48d36
 
 ## Blocking
-1. exercises/exercises.json fy5-2-L1-01 — the new crowbar task has `"answer": 960, "unit": "m"`, but the answer is a force (the solution says $960\,\text{N}$). The student would be asked for a force and see (or have checked) a length unit. Fix: `"unit": "N"` (a leftover from the old keinulauta task, whose answer was in m).
+(none) Round 3: L1-01 now has `"unit": "N"` and says both distances are horizontal ("vaakasuunnassa"), so the lever arms are unambiguous; the answer 960 N is unchanged and correct.
 
 ## Polish
 1. fy5-2-L3-01 — unchanged: the same geometry as koe-2 and ennuste-2 (20 kg plank, supports 0,50 m and 3,00 m), only the load mass differs, so level 3 repeats the investigation. Change the supports or ask for the largest load mass at a given position. (The solution's Järkevyys check was reworded but the task is the same.)
