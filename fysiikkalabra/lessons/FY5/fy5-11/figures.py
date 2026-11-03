@@ -3,7 +3,7 @@ Colours: wavefronts water blue, rays ink, the direction of travel velocity blue,
 incidence and reflection green (a correct pair). No force red: a displacement is not a force."""
 import math
 from figlib import (Fig, INK, MUTED, WHITE, RULE, RULE_LIGHT, GLASS, WATER, WATER_LIGHT, COLD, COLD_LIGHT, GOOD, ALUMINIUM,
-                    METAL_EDGE, IRON, SAND, SAND_LIGHT, SAND_DARK, GRAIN, ICE_EDGE, PAPER, n)
+                    METAL_EDGE, IRON, SAND, SAND_LIGHT, SAND_DARK, GRAIN, ICE, ICE_EDGE, HOT, PAPER, n)
 import herolib as H
 
 ROPE = "#8a5f22"
@@ -196,50 +196,164 @@ def huygens():
 
 
 def hero():
-    """The chapter's opening illustration: a harbour seen from above, waves from the sea pass a narrow gap in the breakwater
-    and spread into the basin, rocking a boat moored in a corner."""
-    f = H.hero("fy511-hero", "Kuvitus: satama ylhäältä katsottuna. Yläosassa on avomeri, jolla aallonharjat kulkevat "
-               "suorina riveinä kohti rantaa. Kivistä tehty aallonmurtaja kulkee poikki kuvan, ja sen keskellä on kapea "
-               "aukko. Aukon takana sataman altaassa aallonharjat ovat kaaria, jotka ulottuvat altaan nurkkiin asti. "
-               "Laitureissa on veneitä, ja nurkassa oleva vene keinuu aalloissa.")
-    f.rect(0, 0, 1200, 600, H.grad(f, "fy511h-sea", WATER_LIGHT, WATER))
-    for y in (40, 100, 160, 220):                      # straight crests on the open sea
-        f.path(f"M0,{y} " + " ".join(f"Q{x + 30},{y - 8} {x + 60},{y}" for x in range(0, 1200, 60)), stroke=WHITE, w=5, extra='stroke-linecap="round" stroke-opacity="0.8"')
-    gap0, gap1, yb = 560, 640, 262
-    # the basin: crests spreading from the gap, clipped to the basin
-    f.defs_add('<clipPath id="fy511h-basin"><rect x="150" y="300" width="900" height="300"/></clipPath>')
-    arcs = "".join(f'<path d="M{600 - r},300 A{r},{r} 0 0 0 {600 + r},300" fill="none" stroke="{WHITE}" stroke-width="5" stroke-opacity="{0.85 - 0.07 * k:.2f}" stroke-linecap="round"/>'
-                   for k, r in enumerate(range(60, 720, 60)))
-    f.add(f'<g clip-path="url(#fy511h-basin)">{arcs}</g>')
-    # quays at both sides and at the bottom (stone)
-    for x, w in ((0, 150), (1050, 150)):
-        f.rect(x, 300, w, 300, SAND_DARK)
-        f.rect(x, 300, w, 300, "none", INK, 3)
-    f.rect(0, 560, 1200, 40, SAND_DARK, INK, 3)
-    for x in range(10, 150, 46):
-        f.line(x, 300, x, 560, SAND, 3)
-    for x in range(1060, 1200, 46):
-        f.line(x, 300, x, 560, SAND, 3)
-    # the breakwater: a band of rocks with a gap
-    for x0, x1 in ((0, gap0), (gap1, 1200)):
-        f.rect(x0, yb, x1 - x0, 40, METAL_EDGE)
-        for k, x in enumerate(range(x0 + 18, x1 - 10, 34)):
-            f.circle(x, yb + 10 + 18 * (k % 2), 15, ALUMINIUM if k % 3 else IRON, INK, 2)
-    # boats: moored at the quays, one rocking in the lower-left corner
-    def boat(cx, cy, ang, hull, deck):
-        f.add(f'<g transform="translate({cx} {cy}) rotate({ang})"><path d="M-60,0 Q-50,-22 0,-24 Q50,-22 70,0 Q50,22 0,24 Q-50,22 -60,0 Z" '
-              f'fill="{hull}" stroke="{INK}" stroke-width="3"/><rect x="-24" y="-11" width="40" height="22" rx="5" fill="{deck}" stroke="{INK}" stroke-width="2.5"/></g>')
-    boat(214, 360, 90, WHITE, COLD_LIGHT)
-    boat(986, 380, 90, WHITE, SAND_LIGHT)
-    boat(986, 470, 90, COLD_LIGHT, WHITE)
-    boat(230, 506, 72, WHITE, SAND_LIGHT)
-    for x, y in ((150, 360), (150, 506), (1050, 380), (1050, 470)):
-        f.circle(x, y, 7, IRON, INK, 2)
-    f.path("M150,360 L178,360", stroke=INK, w=2); f.path("M1050,380 L1022,380", stroke=INK, w=2); f.path("M1050,470 L1022,470", stroke=INK, w=2)
-    f.path("M150,506 L198,496", stroke=INK, w=2)
-    # the rocking boat's own small ripples
-    for r in (82, 100):
-        f.add(f'<ellipse cx="230" cy="506" rx="{r}" ry="{r * 0.45:.0f}" transform="rotate(72 230 506)" fill="none" stroke="{WHITE}" stroke-width="3" stroke-opacity="0.6"/>')
+    """The chapter's opening illustration: a harbour seen from a drone. Straight crests on the open sea reach the breakwater;
+    behind its narrow gap they spread as half circles across the whole basin and rock the boats moored in the corners
+    that lie in the breakwater's shadow. Drawn in true perspective: points on the water (X across, Z ahead, in metres)
+    are projected from a camera 34 m up, tilted 32° down."""
+    f = H.hero("fy511-hero", "Kuvitus: satama ylhäältä viistosti katsottuna. Taustalla on avomeri, jolla aallonharjat kulkevat "
+               "suorina riveinä kohti satamaa. Kivistä tehdyssä aallonmurtajassa on keskellä kapea aukko, jonka "
+               "kummallakin puolella on pieni majakka. Aukon takana sataman altaassa aallonharjat leviävät puoliympyröinä "
+               "koko altaan leveydelle, myös aallonmurtajan taakse altaan nurkkiin, joissa laiturin veneet keinuvat. "
+               "Laitureilla on punaisia venevajoja ja kuusia, ja kaukana merellä purjevene.")
+    th, F, h = math.radians(32), 760, 34.0
+    cy = 50 + F * math.tan(th)                          # the horizon at y = 50
+
+    def P(X, Z, e=0.0):
+        d = (h - e) * math.sin(th) + Z * math.cos(th)
+        v = (e - h) * math.cos(th) + Z * math.sin(th)
+        return 600 + F * X / d, cy - F * v / d
+
+    def poly(pts, close=True):
+        s = " L".join(f"{n(x)},{n(y)}" for x, y in (P(*p) for p in pts))
+        return "M" + s + (" Z" if close else "")
+
+    ZQ, ZB, DB, W, G, LAM = 49.0, 104.0, 9.0, 40.0, 8.0, 7.0     # front quay, breakwater, its width, basin half-width, half gap, λ
+    # sky and the far archipelago
+    f.rect(0, 0, 1200, 60, H.grad(f, "fy511h-sky", ICE, GLASS))
+    f.rect(0, 50, 1200, 550, H.grad(f, "fy511h-sea", WATER_LIGHT, WATER, y1=50, y2=600))
+    H.forest(f, 50, 16, 14, METAL_EDGE, seed=4, x0=70, x1=300, depth=0)
+    H.forest(f, 50, 11, 12, METAL_EDGE, seed=7, x0=860, x1=1010, depth=0)
+    # straight crests on the open sea (broken where the wind breaks them), closer together towards the horizon
+    for k in range(1, 40):
+        Z = ZB + DB + 4 + LAM * k
+        wpx = F / (Z * math.cos(th) + h * math.sin(th))   # px per metre at that distance
+        if wpx < 2.2: break
+        _, y = P(0, Z)
+        amp = 0.18 * LAM * wpx * math.sin(th)
+        x, j = -30 + 60 * H.rnd(k, 3), 0
+        while x < 1220:
+            L = (14 + 10 * H.rnd(j + 40 * k, 9)) * wpx
+            f.path(f"M{n(x)},{n(y)} q{n(L / 2)},{n(-amp)} {n(L)},0", stroke=WHITE, w=round(max(1.5, min(4.5, 0.5 * wpx)), 1),
+                   extra=f'stroke-linecap="round" stroke-opacity="{0.9 - 0.02 * k:.2f}"')
+            x += L + (3 + 5 * H.rnd(j + 40 * k, 2)) * wpx; j += 1
+    # the basin: half circles from the gap's centre (0, ZB), clipped to the basin's water
+    f.defs_add(f'<clipPath id="fy511h-basin"><path d="{poly([(-W, ZQ), (-W, ZB), (W, ZB), (W, ZQ)])}"/></clipPath>')
+    g = []
+    for k in range(1, 20):
+        r = LAM * k
+        segs = 48
+        pts = []
+        for i in range(segs + 1):
+            a = math.pi * i / segs                      # 0 .. π: from +X through towards the viewer to -X
+            pts.append((r * math.cos(a), ZB - r * math.sin(a)))
+        for i in range(segs):
+            a = math.pi * (i + 0.5) / segs
+            amp = 0.45 + 0.5 * math.sin(a) ** 2         # strongest straight through the gap, weaker sideways
+            (xa, ya), (xb, yb) = P(*pts[i]), P(*pts[i + 1])
+            wpx = F / (pts[i][1] * math.cos(th) + h * math.sin(th))
+            g.append(f'<path d="M{n(xa)},{n(ya)} L{n(xb)},{n(yb)}" stroke="{WHITE}" stroke-width="{n(min(6, max(2.5, 0.5 * wpx)))}" '
+                     f'stroke-opacity="{amp * (1 - 0.025 * k):.2f}" stroke-linecap="round"/>')
+    f.add(f'<g clip-path="url(#fy511h-basin)">{"".join(g)}</g>')
+    # land: headlands on both sides reaching past the breakwater, the front quay; a stone edge faces the water
+    ground = H.grad(f, "fy511h-land", SAND_LIGHT, SAND_DARK, y1=60, y2=600)
+    for sgn in (-1, 1):
+        f.path(poly([(sgn * W, ZQ - 30), (sgn * W, ZB + DB), (sgn * (W + 6), ZB + DB + 22), (sgn * (W + 30), ZB + DB + 52),
+                     (sgn * 300, ZB + 90), (sgn * 300, ZQ - 30)]), ground, INK, 2.5)
+        f.path(poly([(sgn * W, ZB + DB), (sgn * (W + 6), ZB + DB + 22), (sgn * (W + 30), ZB + DB + 52), (sgn * 300, ZB + 90)], close=False),
+               stroke=WHITE, w=4, extra='stroke-opacity="0.7"')
+    f.path(poly([(-300, ZQ), (300, ZQ), (300, ZQ - 30), (-300, ZQ - 30)]), ground)
+    f.path(poly([(-W, ZQ), (W, ZQ)], close=False), stroke=INK, w=3)
+    # quay stone edge: a band of granite blocks along the waterline
+    for sgn in (-1, 1):
+        for k in range(18):
+            Z0 = ZQ + k * (ZB - ZQ) / 18
+            f.path(poly([(sgn * W, Z0), (sgn * (W + 1.6), Z0), (sgn * (W + 1.6), Z0 + (ZB - ZQ) / 18), (sgn * W, Z0 + (ZB - ZQ) / 18)]),
+                   ALUMINIUM if k % 2 else RULE, INK, 1.5)
+    for k in range(-12, 12):
+        X0 = k * 4
+        if X0 < -W or X0 + 4 > W: continue
+        f.path(poly([(X0, ZQ), (X0 + 4, ZQ), (X0 + 4, ZQ - 1.6), (X0, ZQ - 1.6)]), ALUMINIUM if k % 2 else RULE, INK, 1.5)
+    # the breakwater: a rubble mound 3 m high with a gap in the middle
+    for s0, s1 in ((-W - 2, -G), (G, W + 2)):
+        f.path(poly([(s0, ZB, 0), (s1, ZB, 0), (s1, ZB, 3), (s0, ZB, 3)]), IRON, INK, 2.5)         # face towards the basin
+        f.path(poly([(s0, ZB, 3), (s1, ZB, 3), (s1, ZB + DB, 3), (s0, ZB + DB, 3)]), METAL_EDGE, INK, 2.5)  # top
+        xe = s1 if s0 < 0 else s0
+        f.path(poly([(xe, ZB, 0), (xe, ZB + DB, 0), (xe, ZB + DB, 3), (xe, ZB, 3)]), IRON, INK, 2.5)   # end face at the gap
+        k = 0
+        for row, Zr in enumerate((ZB + 1.6, ZB + 4.5, ZB + 7.4)):
+            X = s0 + (row % 2) * 1.3
+            while X < s1 - 1:
+                cx, cyy = P(X + 0.9, Zr, 3.2)
+                rr = 1.2 * F / (Zr * math.cos(th) + h * math.sin(th))
+                if -20 < cx < 1220:
+                    f.circle(cx, cyy, round(rr * (0.8 + 0.3 * H.rnd(k, 5)), 1), ALUMINIUM if k % 3 else RULE, INK, 1.5)
+                X += 2.6; k += 1
+    # beacons at the gap: a red one on the left, a green one on the right, on white towers
+    for sgn, col in ((-1, HOT), (1, GOOD)):
+        bx, bz = sgn * (G + 2.2), ZB + DB / 2
+        (x0, y0), (_, y1) = P(bx, bz, 3), P(bx, bz, 10)
+        wpx = F / (bz * math.cos(th) + h * math.sin(th))
+        f.rect(x0 - 1.2 * wpx, y1, 2.4 * wpx, y0 - y1, WHITE, INK, 2)
+        f.rect(x0 - 1.2 * wpx, y1 + (y0 - y1) * 0.35, 2.4 * wpx, (y0 - y1) * 0.25, col, INK, 2)
+        f.rect(x0 - 1.6 * wpx, y1 - 2 * wpx, 3.2 * wpx, 2 * wpx, col, INK, 2, 3)
+        f.path(f"M{n(x0 - 1.9 * wpx)},{n(y1 - 2 * wpx)} L{n(x0)},{n(y1 - 3.4 * wpx)} L{n(x0 + 1.9 * wpx)},{n(y1 - 2 * wpx)} Z", INK)
+
+    def box(X0, X1, Z0, Z1, hh, wall, roof):
+        """A gabled shed on the land, ridge along Z, its gable towards the viewer."""
+        ridge, Xm = hh + (X1 - X0) * 0.4, (X0 + X1) / 2
+        near, far = (X1, X0) if X1 < 0 else (X0, X1)    # the long wall facing the basin and the camera
+        f.path(poly([(far, Z0, hh), (far, Z1, hh), (Xm, Z1, ridge), (Xm, Z0, ridge)]), roof, INK, 2)
+        f.path(poly([(near, Z0, 0), (near, Z1, 0), (near, Z1, hh), (near, Z0, hh)]), wall, INK, 2)
+        f.path(poly([(near, Z0, hh), (near, Z1, hh), (Xm, Z1, ridge), (Xm, Z0, ridge)]), METAL_EDGE, INK, 2)
+        f.path(poly([(X0, Z0, 0), (X1, Z0, 0), (X1, Z0, hh), (Xm, Z0, ridge), (X0, Z0, hh)]), wall, INK, 2)
+        f.path(poly([(Xm - (X1 - X0) * 0.2, Z0, 0), (Xm + (X1 - X0) * 0.2, Z0, 0), (Xm + (X1 - X0) * 0.2, Z0, hh * 0.8), (Xm - (X1 - X0) * 0.2, Z0, hh * 0.8)]), IRON, INK, 1.5)
+        for Zw in (Z0 + (Z1 - Z0) * 0.3, Z0 + (Z1 - Z0) * 0.7):
+            f.path(poly([(near, Zw - 1, hh * 0.45), (near, Zw + 1, hh * 0.45), (near, Zw + 1, hh * 0.8), (near, Zw - 1, hh * 0.8)]), GLASS, INK, 1.5)
+
+    def tree(X, Z, hh):
+        x, y = P(X, Z, 0)
+        wpx = F / (Z * math.cos(th) + h * math.sin(th))
+        H.spruce(f, x, y, hh * wpx)
+
+    # the land behind, back to front (sorted by distance so nearer things cover farther ones)
+    items = [(Z, "t", (X, Z, hh)) for X, Z, hh in ((-112, 168, 14), (-92, 152, 12), (-130, 140, 15), (104, 166, 14), (86, 146, 11),
+                                                    (124, 136, 15), (-72, 128, 11), (70, 126, 12), (-64, 116, 11), (66, 110, 12),
+                                                    (-62, 76, 11), (64, 66, 12))]
+    items += [(104, "b", (-60, -49, 92, 104, 4.0, HOT, IRON)), (96, "b", (49, 60, 84, 96, 4.0, HOT, IRON))]
+    for _, kind, a in sorted(items, key=lambda t: -t[0]):
+        (tree if kind == "t" else box)(*a)
+    # a sailing boat far out at sea
+    sx, sy = P(-70, 260)
+    f.path(f"M{n(sx - 16)},{n(sy)} L{n(sx + 16)},{n(sy)} L{n(sx + 11)},{n(sy + 6)} L{n(sx - 12)},{n(sy + 6)} Z", WHITE, INK, 1.5)
+    f.path(f"M{n(sx)},{n(sy - 2)} L{n(sx)},{n(sy - 34)} L{n(sx + 14)},{n(sy - 4)} Z", WHITE, INK, 1.5)
+    f.path(f"M{n(sx - 2)},{n(sy - 30)} L{n(sx - 2)},{n(sy - 4)} L{n(sx - 14)},{n(sy - 4)} Z", WHITE, INK, 1.5)
+
+    # boats: hulls drawn on the water plane, a cabin on top
+    def boat(X, Z, ang, L, hull, cabin, rock=0.0):
+        ca, sa = math.cos(math.radians(ang)), math.sin(math.radians(ang))
+        def q(u, v, e=0.0): return (X + u * ca - v * sa, Z + u * sa + v * ca, e)
+        outline = [(-L / 2, 0), (-L * 0.42, L * 0.15), (L * 0.1, L * 0.17), (L * 0.38, L * 0.1), (L / 2, 0), (L * 0.38, -L * 0.1), (L * 0.1, -L * 0.17), (-L * 0.42, -L * 0.15)]
+        rk = math.radians(rock)
+        hull_top = [q(u, v, 0.9 + v * math.sin(rk)) for u, v in outline]
+        hull_bot = [q(u * 0.92, v * 0.8, 0) for u, v in outline]
+        f.path("M" + " L".join(f"{n(x)},{n(y)}" for x, y in (P(*p) for p in hull_bot)) + " Z", INK, extra='fill-opacity="0.25"')
+        f.path("M" + " L".join(f"{n(x)},{n(y)}" for x, y in (P(*p) for p in hull_top)) + " Z", hull, INK, 2)
+        cab = [q(u, v, 1.0 + v * math.sin(rk)) for u, v in ((-L * 0.25, -L * 0.09), (L * 0.08, -L * 0.09), (L * 0.08, L * 0.09), (-L * 0.25, L * 0.09))]
+        f.path("M" + " L".join(f"{n(x)},{n(y)}" for x, y in (P(*p) for p in cab)) + " Z", cabin, INK, 2)
+
+    # rocking boats in the corners behind the breakwater (their own ripple rings), moored boats along the quays
+    for sgn in (-1, 1):
+        cxz = (sgn * (W - 10), ZB - 6)
+        for rr in (7.5, 10.5):
+            pts = [P(cxz[0] + rr * math.cos(a), cxz[1] + rr * 0.8 * math.sin(a)) for a in [i * math.pi / 24 for i in range(49)]]
+            f.add('<path d="M' + " L".join(f"{n(x)},{n(y)}" for x, y in pts) + f'" fill="none" stroke="{WHITE}" stroke-width="2.5" stroke-opacity="0.55"/>')
+        boat(cxz[0], cxz[1], sgn * 8, 11, WHITE, COLD_LIGHT if sgn < 0 else SAND_LIGHT, rock=6)
+    boat(-W + 3.2, 72, 90, 9, WHITE, SAND_LIGHT); boat(-W + 3.2, 58, 90, 8, COLD_LIGHT, WHITE)
+    boat(W - 3.2, 76, 90, 9, WHITE, COLD_LIGHT); boat(W - 3.2, 61, 90, 8, SAND_LIGHT, WHITE)
+    # bollards on the front quay
+    for X in (-27, -9, 9, 27):
+        x, y = P(X, ZQ - 2, 0)
+        f.rect(x - 7, y - 16, 14, 16, IRON, INK, 2, 3); f.rect(x - 10, y - 20, 20, 6, INK, None, 2, 2)
     return f.svg()
 
 
