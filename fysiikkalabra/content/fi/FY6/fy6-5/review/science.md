@@ -1,19 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: f2e1fe37fdab7ce1
+CONTENT-HASH: 2cf75b92f149d281
 
 ## Blocking
 
 ## Polish
-- lesson.md:179 and inquiry.json:403 (siirto, Periaate): "virtalain mukaan lähes koko virta kulkee johdinta pitkin" cites the wrong law. The bird's current is tiny by Ohm's law: millivolts across a large resistance. The current law only adds the currents up. Fix: "Ohmin lain mukaan linnun kautta kulkee häviävän pieni virta, joten virtalain mukaan lähes koko virta jatkaa johdinta pitkin".
-- inquiry.json:457 (tarkistus-2, Järkevyys): the check says "napojen välinen jännite on edelleen 9,0 V", so it assumes that A is the plus pole. The prompt does not say so. Fix: say it in the prompt, or check with U_AB.
-- inquiry.json:19 (hook): "jännite maahan nähden on kymmeniä kilovoltteja". For 110–400 kV lines the phase-to-earth voltage is about 64–230 kV. Fix: "kymmeniä tai satoja kilovoltteja".
-- lesson.md, Potentiaali ("nousee … lähteen jännitteen verran"): this holds for an ideal source, and only the sim box says so. C here; a short "(ideaalinen lähde)" would help the later internal-resistance chapter.
+- lesson.md (Lintu johdolla) and inquiry.json (hook, siirto): the line is described with DC reasoning, but power lines carry AC. For the 4 cm segment Ohm's law with R I is still a fair model (C), so this stays as is. A half-sentence such as "hetkellisesti" or "vaihtovirrankin tapauksessa" is optional.
 
 ## Checked
-- One script recomputed the sim on load (20 Ω, 0,30 A, 3,0 V, 6,0 V, 0,20 A, 0,10 A), the koe-1 rows at R3 = 30, 60 and 120 Ω (I2 + I3 = I1 in every row), koe-3 (3,0 V and −6,0 V), the worked example, siirto (1,92 mV; its mistakes of 192 and 1920 mV are diagnosed right), virhe, tarkistus-2 and the exit ticket. All agree.
-- Figures: the junction (current arrows in proportion), the circuit's potentials at A–F, and the potential graph (to scale, 20 px/V).
-- sim.js implements the stated model: the ground shift, the graph path through R2, and simState keys for every experiment. The model box states the ideal source, wires and voltmeter.
-- Each experiment isolates its varied parameter (R3, probe, ground), and the right parameters are locked.
-- In every choice item exactly one option is correct, and each distractor's feedback gives the right reason.
-- The current law rests on charge conservation in steady state, and the voltage law on a single-valued potential and energy. Both agree with the glossary.
-- The bird's safety and the arc-flash warning are correct.
+- Round-1 polish items are fixed: the bird's tiny current now comes from Ohm's law and the current law adds up the currents (lesson.md:178 ff., siirto Periaate); tarkistus-2 now places A on the plus-pole wire, so its −6,0 V / 9,0 V check holds; the hook says "kymmeniä tai satoja kilovoltteja"; the ideal source is stated where the potential rise is taught (lesson.md:133).
+- One script recomputed everything with my own formulas: sim on load (R23 20 Ω, I1 0,30 A, U1 3,0 V, branch 6,0 V, I2 0,20 A, I3 0,10 A); koe-1 at R3 = 30/60/120 Ω (I2 + I3 = I1 in every row: 0,36; 0,30; 0,265 A); koe-3 (V_A 3,0 V, V_F −6,0 V); worked example (V_B 6,0 V, I3 0,20 A, I2 0,10 A); virhe (0,45 A > 0,30 A); siirto 1,92 mV and its mistakes 192 and 1920 mV; tarkistus-2 3,0 V and mistake 15 V; exit ticket 0,15 A and 3,5 V. All agree with lesson-answers.py and the text.
+- Figures: junction arrows 3 : 2 : 1 in width; circuit potentials A–F right; potential graph to scale (20 px/V), drops placed over R1 and R2, loop path through R2 matches the circuit. Prediction figures (junction-q, circuit-q) do not reveal the answers.
+- sim.js implements the stated model (ideal source, wires and voltmeter), the ground shift by a constant, the graph path F → U → A → R1 → B → R2 → E → F; simState carries I1–I3, Vp, VA, VB, VF and U1 for the experiments.
+- Each experiment isolates its varied parameter (R3; probe; ground) with the others locked; reveal minimums match the experiments' minimums.
+- Every choice item has exactly one correct option; each distractor's feedback names the right reason (same voltage, not same current, in parallel; current not consumed; voltage divides in series only).
+- Current law rests on charge conservation in steady state, voltage law on a single-valued potential and energy per charge; both match the glossary and the summary.
+- Scope: Kirchhoff with one junction and branching circuits, potential and potential graph, inside the FY6 täsmennys; no internal resistance or simultaneous loop equations.
+- Bird safety statement and the arc-flash warning are correct.

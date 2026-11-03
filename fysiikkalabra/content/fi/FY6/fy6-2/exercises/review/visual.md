@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 519b0dfa91457c33
+CONTENT-HASH: b33c56a990dea99a
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] solutions.md L1-01 Periaate — "numero" suorissa lainausmerkeissä — käytä suomalaisia ”numero”-lainausmerkkejä.
-- [Minor] solutions.md L2-01 Järkevyys — lause "Virta on liian pieni alueelle 10 A: alueella 200 mA sitä ei voisi mitata, mutta tarkempi mittari tai alue olisi paikallaan" on sekava (0,35 A ylittää 200 mA:n alueen) — selkeytä: "alueella 200 mA lukema ylittäisi alueen, joten 10 A on tässä oikea alue".
+- [Minor] solutions.md L3-03 Mallivastaus — kappale on pitkä (noin 150 sanaa) — jaa kahteen kappaleeseen ennen "Oikein mitattuna" (ei pakollinen).
 
 ## Checked
-- open-exercises-1280-1, -4 (taso 1), open-exercises-L2-1280-3, open-exercises-L3-1280-2, -4.
-- exercises.json ja solutions.md luettu kokonaan: ei tavallisia yksikköllisiä lukuja, desimaalipilkku {,} ja \cdot johdonmukaisesti, Sijoitus-ketjut rivitetty =-merkkien mukaan, kaavat ja ratkaisut mahtuvat korteissa, ei ylivuotoa.
-- Harjoituksissa ei ole kuvia.
+- Harjoituksilla ei omia kuvakaappauksia exercises/review/shots-kansiossa; käytetty lessonin review/shots-kuvia (hash-leima vahvisti harjoitusten hashin b33c56a990dea99a ajan tasalla).
+- fy6-2-open-exercises-L3-1280-1 (L3-01: "lampun ja vastuksen kanssa", 2,2 % ratkaisu), L3-1280-3 ja L3-1280-4 (L3-03: uusi tehtävänanto, vastaus, Kysytty, Mallivastaus, Itsearviointi), L2-1280-1 ja L2-1280-2 (L2-01 uusi Järkevyys, L2-02 muuttumaton). Typografiot suomalaiset lainausmerkit ”numero” korjattu (L1-01).
+- Teksti, vastaus, Kysytty, Mallivastaus ja Itsearviointi vastaavat toisiaan (hetkeksi / syttyy uudelleen); ei ylivuotoa, yksiköt LaTeXina.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 4 · accessibility 5

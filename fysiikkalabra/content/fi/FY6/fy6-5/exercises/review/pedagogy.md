@@ -1,18 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 9b33e8c9e77a651e
+CONTENT-HASH: 098f88de6ba5c331
 
 ## Blocking
 
 ## Polish
-- solutions.md fy6-5-L1-05 "Vastaus": the line begins "; arvot luetaan ..." after the boxed value (stray semicolon in the rendered capture #52); rewrite as a sentence "Arvot luetaan 1 V:n ruudukkoviivoilta."
-- Only L1-05 reads a potential graph and none asks the student to draw one; add one level 2 task (potentials of points in a given circuit as a table or graph).
-- L1-05 solution refers to points B and C while the figure's axis is labelled D, A, B, C, D; state in the task that the points are the axis labels.
+- No exercise has the student draw or tabulate a potential graph (only L1-05 reads one); a level 2 task asking for the potentials of points in a given circuit would close the goal "potentiaalikuvaaja".
+- L1-04 solution "Järkevyys": "joten vastus voi olla tällaisessa piirissä" is a weak check; say instead that 6 V lies between 4 V and 8 V and that the drop must be below the source voltage of the circuit.
+- L1-05: the graph axis is labelled D A B C D while the task never names the points; add "Vastuksen R2 päät ovat kohdat B ja C" or let the solution say "lue kuvaajan akselin merkinnät".
 
 ## Checked
-- Levels rise: L1 single law, L2 law plus Ohm, L3 zero-point shift, unknown resistance from a branching circuit, and a changing-load reasoning task.
-- None repeats the worked example or the Sovella task.
-- Answers verified: 1,2 A; 7,5 V; 8,0 V; 6,0 V; 4,0 V; 3,5 V; 8,0 V; 0,50 A; 60 Ω; -9,0 V; 30 Ω; 1,8 V.
-- Solutions follow the principle, formula, units, substitution, sanity-check pattern and explain the principle before the formula.
-- Figures (ex-graph, ex-branch, ex-branch2) are needed to answer and legible.
-- L3-03 sanity check explains the physics (brighter remaining lamp).
-- Sign and unit slips (mA, negative potential) are anticipated in the solutions.
+- Levels rise: L1 one law, L2 law plus Ohm, L3 zero-point shift, unknown R3 from a branching circuit, changing-load reasoning.
+- None repeats the worked example (12 V, 20/60/30 Ω) or the bird task.
+- Answers recomputed: 1,2 A; 7,5 V; 8,0 V; 6,0 V; 4,0 V; 3,5 V; 8,0 V; 0,50 A; 60 Ω; -9,0 V; 30 Ω; 1,8 V.
+- Situation first, question last as its own sentence; contexts (bike lights, lamps) recognisable.
+- Figures ex-graph, ex-branch, ex-branch2 are needed, legible at 1280 px, and give no answer; descriptions match the data.
+- Solutions follow principle, formula, units, substitution, sanity pattern; round-1 stray semicolon in L1-05 gone.
+- L3-03 sanity check explains the physics (brighter remaining lamp); mA and sign slips anticipated.

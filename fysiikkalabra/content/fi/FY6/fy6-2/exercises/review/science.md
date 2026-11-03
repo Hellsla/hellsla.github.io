@@ -1,17 +1,17 @@
-VERDICT: FAIL
-CONTENT-HASH: 519b0dfa91457c33
+VERDICT: PASS
+CONTENT-HASH: b33c56a990dea99a
 
 ## Blocking
-- exercises.json:96–99 (fy6-2-L3-03) and solutions.md:111–120 — **A** (causality/consistency): the task's observation "Lamppu sammuu, ja mittarin näyttö jää nollaan" is explained by a blown fuse, but a blown fuse removes the meter from the circuit, so the lamp (battery + lamp only) lights again; the end state "lamp off and display 0" cannot follow from that cause. The lesson's sim models this correctly (after the fuse blows the lamp is lit). — Change the observation to "Lamppu sammuu hetkeksi ja syttyy sitten uudelleen, ja mittarin näyttö jää nollaan" (or "lamppu välähtää"), and in the model answer and the self-assessment criterion explain that the lamp was dark only while the meter short-circuited it and relit when the fuse blew.
 
 ## Polish
-- solutions.md:59 (L2-01, Järkevyys) — "Virta on liian pieni alueelle 10 A: alueella 200 mA sitä ei voisi mitata" reads as contradictory; say that 350 mA exceeds the 200 mA range, so 10 A is the only current range here and a meter with a finer high-current range would help.
-- solutions.md (L2-04, Periaate) — "koska lamppu tarvitsee virtaa" is a label; say the lamp's voltage is its resistance times an almost zero current.
+- solutions.md (L1-04, L2-04, L3-01 Järkevyys) — the checks cite the lesson's simulation; the values (4,50 V, 97,8 mA, 0,10 A) agree with the model, but a set reviewed apart from the lesson is safer with checks that stand on the task data alone.
 
 ## Checked
-- One script recomputed every answer from the task text: L1-01 0,0823 V, L1-02 1,663 mA, L1-03 0,75 %, L1-04 0,180 A, L1-05 0,009935 V, L2-01 10,57 %, L2-02 0,001075 A, L2-03 3,20, L2-04 9,0 V, L3-01 2,17 %, L3-02 0,1522 V — all agree with answers.py and exercises.json.
-- L3-02 intervals 4,97–5,07 V and 5,03–5,25 V overlap; conclusion "cannot be shown faulty, does not prove equal" follows the guardrail.
-- L3-01 1,0 mV/mA = 1,0 Ω, consistent with the lesson sim (97,8 mA vs 100 mA).
-- Rounding: error limits to two significant figures with reasons stated; L2-02 unit conversion explicit.
-- Solutions symbolic first, conversions and reasonableness checks present.
+- Round 1 Blocking fixed: L3-03 now says the lamp goes dark for a moment and relights, display stays 0; model answer and criterion explain the short through the meter, the blown fuse opening the meter's path and the lamp relighting — causally correct.
+- Round 1 polish done: L2-01 Järkevyys (350 mA exceeds 200 mA, so 10 A is the smallest fitting range), L2-04 Periaate (lamp voltage = resistance × almost zero current).
+- One script recomputed every answer from the task text: L1-01 0,0823 V, L1-02 1,663 mA, L1-03 0,75 %, L1-04 0,180 A, L1-05 0,009935 V, L2-01 10,57 %, L2-02 0,001075 A, L2-03 3,20, L2-04 ≈ 9,0 V, L3-01 2,17 %, L3-02 0,1522 V — all agree with answers.py and exercises.json; tolerances fit.
+- L3-02 intervals 4,975–5,065 V and 5,033–5,247 V overlap; conclusion "cannot be shown faulty, does not prove equal" follows the guardrail.
+- L3-01 1,0 mV/mA = 1,0 Ω burden, ideal battery stated in the task.
+- Rounding: error limits to two significant figures with reasons; L2-02 conversion explicit; symbolic formula before substitution throughout.
+- Notation (Δx = p·x + n·r, r resolution) matches the lesson brief.
 - Content hash unchanged start/end.
