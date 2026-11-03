@@ -24,7 +24,7 @@
     },
     {
       "term": "virtasilmukka",
-      "explain": "Suljettu johdinsilmukka, jossa kulkee virta. Kentässä sen vastakkaisiin sivuihin kohdistuvat vastakkaiset voimat."
+      "explain": "Suljettu johdinsilmukka, jossa kulkee virta. Homogeenisessa kentässä sen vastakkaisiin sivuihin kohdistuvat vastakkaiset voimat."
     },
     {
       "term": "kaiutin",
