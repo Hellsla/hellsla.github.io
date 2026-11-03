@@ -75,8 +75,39 @@ def md_shape(text):
             "blocks": len(re.findall(r"^## ", text, re.M)), "stages": text.count("<!-- vaihe -->"), "sim": text.count("<!-- sim -->")}
 
 
+S2_LANGS = ("fi-easy",)   # Finnish as a second language: lessons carry "Luvun tärkeät käsitteet" (teacher 2026-11-03, NOTES.md §12)
+
+
+@__import__("functools").lru_cache(None)
+def glossary_terms(): return {g["term"].lower() for g in json.loads((ROOT / "glossary.json").read_text())}
+
+
+def key_concepts(fi_meta, kc, lang, where, errs):
+    """meta.json "key_concepts" of a translation: required in an S2 language, 3–5 {"term", "explain"} with the term
+    as glossary.json or the Finnish lesson's glossary names it (one terminology, never a second glossary), a short
+    explanation (at most 25 words) and no term twice; absent from every other language and from the Finnish source."""
+    if "key_concepts" in fi_meta: errs.append(f"{where}: the Finnish lesson has key_concepts; they belong to its S2 version only (content/{S2_LANGS[0]}/)")
+    if lang not in S2_LANGS:
+        if kc is not None: errs.append(f"{where}: key_concepts belong to an S2 language only ({', '.join(S2_LANGS)})")
+        return
+    lo, hi = inquiry.KEY_CONCEPTS
+    if not (isinstance(kc, list) and lo <= len(kc) <= hi):
+        errs.append(f"{where}: key_concepts: {lo}–{hi} concepts of the chapter (\"Luvun tärkeät käsitteet\", NOTES.md §12), found {len(kc) if isinstance(kc, list) else 'none'}"); return
+    known = glossary_terms() | {t.lower() for t in fi_meta.get("glossary", [])}
+    seen = set()
+    for i, k in enumerate(kc):
+        if not (isinstance(k, dict) and set(k) == {"term", "explain"} and all(isinstance(k[x], str) and k[x].strip() for x in k)):
+            errs.append(f"{where}: key_concepts[{i}]: {{\"term\": …, \"explain\": …}}, both non-empty texts"); continue
+        if k["term"].lower() not in known: errs.append(f"{where}: key_concepts[{i}]: \"{k['term']}\" is not a glossary.json term (add it there, or use the glossary's form)")
+        if k["term"].lower() in seen: errs.append(f"{where}: key_concepts[{i}]: \"{k['term']}\" twice")
+        seen.add(k["term"].lower())
+        if len(re.sub(r"\$[^$]*\$", "x", k["explain"]).split()) > 25: errs.append(f"{where}: key_concepts[{i}]: the explanation of \"{k['term']}\" is over 25 words; keep it short")
+
+
 def check_lesson(fi, tr, lang, errs):
     rel = tr.relative_to(ROOT)
+    try: key_concepts(json.loads((fi / "meta.json").read_text()), json.loads((tr / "meta.json").read_text()).get("key_concepts"), lang, f"{rel}/meta.json", errs)
+    except (OSError, json.JSONDecodeError) as e: errs.append(f"{rel}/meta.json: {e}")
     for n in courses.TEXT_FILES:
         if n in courses.CODE_FILES: continue
         a, b = courses.lesson_file(fi, n), courses.lesson_file(tr, n)

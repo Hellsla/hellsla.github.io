@@ -2482,5 +2482,16 @@
       "turvavyö"
     ],
     "locked": false
+  },
+  {
+    "term": "pinta-ala",
+    "definition": "Pinnan koko. Pinta-alan SI-yksikkö on neliömetri, m². Paine on voima pinta-alaa kohti, joten sama voima pienelle pinta-alalle antaa suuren paineen.",
+    "lessons": [
+      "fy3-4"
+    ],
+    "see_also": [
+      "paine"
+    ],
+    "locked": false
   }
 ]

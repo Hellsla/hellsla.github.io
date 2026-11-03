@@ -495,6 +495,32 @@ def intro_html(intro, inquiry, n_opt, md):
     return f'<div class="intro"><div class="intro-head">{head}</div>{row}' + (f'<div class="intro-more">{more}</div>' if more else "") + '</div>'
 
 
+KEY_CONCEPTS = (3, 5)    # how many "Luvun tärkeät käsitteet" a Selkeä suomi lesson shows (teacher 2026-11-03)
+
+
+def concept_slug(term): return re.sub(r"[^a-z0-9åäö]+", "-", term.lower()).strip("-")
+
+
+def key_concepts_html(lid, items, md):
+    """"Luvun tärkeät käsitteet" (teacher 2026-11-03, NOTES.md §12): the S2 vocabulary activity of a Selkeä suomi
+    lesson, between the opening and the first stage. meta.json "key_concepts" lists 3–5 {"term", "explain"}: the
+    Finnish physics term in bold, a short plain-Finnish explanation and a field where the student may write the
+    meaning in any language or several. Voluntary and never assessed; no language is asked or translated. The fields
+    work without scripts; lesson.js part 7 keeps them in this browser (padstore.js) and adds the copy button.
+    Only a language whose lessons carry the list shows it (check_i18n.py allows it in fi-easy only)."""
+    if not items: return ""
+    rows = []
+    for i, k in enumerate(items, 1):
+        base, name = f"kc-{lid}-{i}", k["term"][:1].upper() + k["term"][1:]
+        rows.append(f'<li class="kc-item"><p class="kc-term" id="{base}-t"><strong>{esc(name)}</strong></p>'
+                    f'<p class="kc-explain" id="{base}-d">{inline(md, k["explain"])}</p>'
+                    f'<label class="kc-label" for="{base}">{T("lesson.kc_note")}<span class="visually-hidden">: {esc(name)}</span></label>'
+                    f'<textarea id="{base}" rows="1" lang="" aria-describedby="{base}-d" data-kc="kc:{lid}:{concept_slug(k["term"])}" data-term="{esc(name)}"></textarea></li>')
+    return (f'<section class="kc" id="kasitteet" aria-labelledby="kc-{lid}-h"><h2 class="intro-h kc-h" id="kc-{lid}-h">{T("lesson.kc_title")} '
+            f'<span class="opt-tag">{T("lesson.kc_optional")}</span></h2><p class="kc-lead">{T("lesson.kc_lead")}</p>'
+            f'<ul class="kc-list">{"".join(rows)}</ul></section>')
+
+
 SENT = re.compile(r"(?<=[.!])\s+(?=[A-ZÅÄÖ])")
 
 
@@ -567,7 +593,7 @@ def render(folder, inquiry, parts, md):
         by_stage["selita"].append({"id": "theory-rest", "type": "theory", "stage": "selita", "sections": leftover})
     elif leftover:                                     # append to the last theory activity in Teoriatiivistelmä
         last = [a for a in by_stage["selita"] if a["type"] == "theory"][-1]; last["sections"] = list(last["sections"]) + leftover
-    body = [intro_html(parts["intro"], inquiry, sum(1 for a in acts if a.get("optional")), md)]
+    body = [intro_html(parts["intro"], inquiry, sum(1 for a in acts if a.get("optional")), md) + parts.get("concepts", "")]
 
     def act(a):
         t, aid = a["type"], a["id"]
