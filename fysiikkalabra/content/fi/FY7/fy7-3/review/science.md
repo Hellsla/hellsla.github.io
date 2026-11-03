@@ -1,18 +1,17 @@
 VERDICT: FAIL
-CONTENT-HASH: eb1f18684a64aec9
+CONTENT-HASH: 0ee7289539a81dc8
 
 ## Blocking
-- lesson.md:192 (figure electromagnet; lessons/FY7/fy7-3/figures.py electromagnet()) — A: the right panel, "virta katkaistu", wires the battery straight to both coil leads (M476,96 H524 V128 and M476,210 H524 V182), so the circuit it draws is closed. The "switch" is a loose line on the battery's side (540,155 → 564,140) and is not part of the circuit. The left panel has no switch at all, although the aria-label says "johtimet menevät paristoon ja kytkimeen". A student sees a closed circuit labelled "current cut". — Fix: put a switch in one lead in both panels, closed on the left and open with a visible gap on the right.
+- lesson.md:216 (figure electromagnet; lessons/FY7/fy7-3/figures.py:146 `f.arrow(cx + 62, 210, cx + 40, 210, ...)`) — A: the current arrow points the wrong way. The battery's terminal nub, which marks the positive terminal, is on top (rect y = 122). The arrow on the bottom lead points left, away from the battery, so the drawing shows current leaving the − terminal. In the outer circuit it flows from + through the switch and the coil back to −. — Fix: make the arrow point right, `f.arrow(cx + 40, 210, cx + 62, 210, …)`, or draw the battery with its nub at the bottom.
 
 ## Polish
-- inquiry.json:15 (hook) — "3 A … neula kääntyy lähes poikittain" holds only when the wire is very close to the needle. With B_h = 14 µT the needle turns 77° at 1 cm, 65° at 2 cm and 41° at 5 cm. Say "aivan neulan yläpuolella" or give about 1 cm.
-- inquiry.json:264 (mittaus mistake 0.00123) — forgetting the mT → T conversion gives 1233, not 0.00123. The value 0.00123 has an extra factor of 10⁻³, so the feedback "Tarkista millitesla" does not describe it. Use 1233, or make the feedback fit the error.
-- inquiry.json:436 (tarkistus-2, Järkevyys) — "hitsauskaapeli kääntää lähellä olevan kompassin selvästi" holds for DC welding current. With a 50 Hz AC welder the needle does not follow the field. Add "tasavirralla".
+- (none)
 
 ## Checked
-- One script, my own formulas: example 12,57 mT/251; Etsi virhe 5,03 mT; siirto 0,2653 A (mistakes 26,5, 3,33); check 2 1,5 mT (0,015, 9,42); exit ×1; wire graph 200/100/50 µT.
-- Sim axis model = calc = lesson-answers: load 1,232 vs 1,257 mT; koe-1 4,67/2,46/1,66/1,25; koe-2 2,46/2,41/1,25/0,363 mT.
-- Fit A = 2,4651, B₀ = 0,0352, ΔA = 0,0121; μ₀ 1,2326·10⁻⁶; 1,74 %; finite factor 0,983 → 1,254. coil-fit figure matches.
-- Round-1 items all fixed.
-- Directions (wire views, compasses, coil •/×, sim N end, exit ticket 2); one correct option per choice item, distractor feedback right; experiments isolate l and x.
-- Conditions stated; scope FY7 only.
+- One script with my own formulas and the coil field as a numerical sum of loops (not the closed form), printed beside lesson-answers.py; every value matches. Sim on load: 1,232 vs long-coil 1,257 mT. Koe 1: 4,67/2,46/1,66/1,25 mT. Koe 2: 2,46/2,41/1,25 mT, and 0,363 mT at 2 cm outside the end.
+- Least-squares fit A = 2,4651, B₀ = 0,0352, ΔA = 0,0121 mT/A. μ₀ = 1,2326·10⁻⁶ Vs/(Am), relative uncertainty 1,74 %, 1,9 % below the true value. Finite-coil factor 0,983, corrected 1,254. Mistake values 123 and 1233 are the right slips, and the coil-fit figure matches the table.
+- Worked example: 12,57 mT and 251×. Etsi virhe: 5,0·10⁻⁵ T and 5,03 mT. Siirto: 0,2653 A, mistakes 26,5 and 3,33. Check 2: 1,5 mT, mistakes 0,015 and 9,42, about 30× Earth's field. Exit ticket ×1. Wire graph: 200/100/50 µT.
+- Round-2 items fixed. The electromagnet now has a switch in one lead in both panels, closed on the left and open on the right. Hook: "aivan neulan yläpuolella" (77° at 1 cm). Mittaus mistake is 1233. Check 2 says "tasavirralla".
+- Directions: wire-field side view (front arcs to the right) and top view (CCW, compass N ends tangent), coil-field •/× giving N on the right, coil-dims (front strands down, B to the right), sim dir = 1 → N on the right, field lines outside running N → S, exit ticket 2.
+- Choice items: exactly one correct option each, and every distractor's feedback is physically right.
+- Conditions stated where used: long wire and other conductors far away, long coil with air inside and far from the ends, about half the centre value at the ends. Scope is FY7 only (no self-induction, no para- or diamagnetism).
