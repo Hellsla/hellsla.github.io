@@ -1,0 +1,10 @@
+[
+  {
+    "q": "The current in a coil is doubled, and at the same time the number of turns is halved so that the length of the coil stays the same. How does the magnetic flux density inside the coil change?",
+    "a": "It stays the same. In the formula $B = \\mu_0 \\tfrac{N I}{l}$ the product $N I$ does not change when $I$ is doubled and $N$ is halved, and the length $l$ is the same."
+  },
+  {
+    "q": "You look at a coil from one end, and the current goes round the turns anticlockwise. Is the end towards you a north pole or a south pole?",
+    "a": "A north pole. When the fingers of the right hand curl in the direction of the current, anticlockwise, the thumb points towards you, so the field comes out of the coil on your side."
+  }
+]

@@ -1,0 +1,433 @@
+{
+  "version": 1,
+  "contribution": "Luku aloittaa sähkömagnetismin. Siinä opitaan magneetin navat ja magneettinen dipoli. Ferromagnetismi selitetään alkeisalueiden avulla. Magneettikenttä ja kenttäviivat tutkitaan kompassin avulla. Lisäksi käsitellään Maan magneettikenttä, magneettivuon tiheys $\\overline{B}$ ja sen yksikkö tesla sekä kenttien vektorisumma. Simulaatiossa opiskelija huomaa itse, että neula seuraa kenttäviivoja. Hän huomaa myös, että magneetin kenttä heikkenee nopeasti, kun etäisyys kasvaa.",
+  "learn": [
+    "selittämään magneetin napojen, alkeisalueiden ja magneettikentän avulla, miksi magneetti vetää rautaa ja kääntää kompassia.",
+    "piirtämään sauvamagneetin ja Maan magneettikentän kenttäviivat ja lukemaan niitä.",
+    "laskemaan yhteen kohtisuorat magneettikentät ja laskemaan kompassin neulan kääntymiskulman."
+  ],
+  "prior": [
+    "Kohtisuorat vektorit lasketaan yhteen Pythagoraan lauseella, ja suunta saadaan tangentista (luku *Voimakuvio ja voimien yhteisvaikutus*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Suunnistaja asettaa kompassin kartan päälle. Neula kääntyy tottelevaisesti pohjoiseen. Sitten hän laskee kompassin viereen taskulampun, jossa on pieni magneetti. Neula kääntyy aivan toiseen suuntaan. Kun lamppu viedään pois, neula palaa pohjoiseen.",
+      "question": "Mikä kääntää kompassin neulaa? Miksi magneetti voittaa kilpailun, kun se tuodaan lähelle?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Kertaa: vektorien summa",
+      "optional": true,
+      "prompt": "Veneeseen vaikuttaa $30\\,\\text{N}$:n voima itään ja $40\\,\\text{N}$:n voima pohjoiseen. Kuinka suuri on voimien summa?",
+      "choices": [
+        {
+          "text": "$50\\,\\text{N}$, koska kohtisuorat voimat ovat kateetteja.",
+          "correct": true,
+          "feedback": "Oikein. Kohtisuorat vektorit ovat suorakulmaisen kolmion kateetit, ja summa on hypotenuusa: $\\sqrt{(30\\,\\text{N})^2 + (40\\,\\text{N})^2} = 50\\,\\text{N}$. Samalla tavalla tässä luvussa lasketaan yhteen magneettikenttiä."
+        },
+        {
+          "text": "$70\\,\\text{N}$, koska voimien suuruudet lasketaan yhteen.",
+          "feedback": "Lukuina voi laskea yhteen vain samansuuntaiset vektorit. Kohtisuorat vektorit ovat suorakulmaisen kolmion kateetit. Siksi summa on $\\sqrt{(30\\,\\text{N})^2 + (40\\,\\text{N})^2} = 50\\,\\text{N}$."
+        },
+        {
+          "text": "$10\\,\\text{N}$, koska suuremmasta voimasta vähennetään pienempi.",
+          "feedback": "Erotus saadaan vain vastakkaissuuntaisista vektoreista. Kohtisuorat vektorit lasketaan yhteen Pythagoraan lauseella: $\\sqrt{(30\\,\\text{N})^2 + (40\\,\\text{N})^2} = 50\\,\\text{N}$."
+        }
+      ]
+    },
+    {
+      "id": "pred-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 1: etäisyys",
+      "justify": true,
+      "reveal": {
+        "after": "exp-1",
+        "min": 2
+      },
+      "prompt": "Kompassi on sauvamagneetin akselilla $10\\,\\text{cm}$:n päässä magneetin keskeltä. Magneetin kenttä on siellä $30\\,\\mu\\text{T}$. Kompassi siirretään samalla suoralla $20\\,\\text{cm}$:n päähän. Kuinka suuri magneetin kenttä on siellä?",
+      "choices": [
+        {
+          "text": "Noin $15\\,\\mu\\text{T}$ eli puolet.",
+          "feedback": "Kenttä ei heikkene suoraan verrannollisesti etäisyyteen. Mallin arvoissa se putoaa $30{,}0\\,\\mu\\text{T}$:sta $2{,}9\\,\\mu\\text{T}$:iin. Se on noin kymmenesosa, vaikka etäisyys vain kaksinkertaistuu."
+        },
+        {
+          "text": "Noin $3\\,\\mu\\text{T}$ eli alle neljäsosa.",
+          "correct": true,
+          "feedback": "Oikein. Mallin arvoissa kenttä on $10\\,\\text{cm}$:n päässä $30{,}0\\,\\mu\\text{T}$ ja $20\\,\\text{cm}$:n päässä vain $2{,}9\\,\\mu\\text{T}$, noin kymmenesosa. Magneetin kenttä heikkenee etäisyyden kasvaessa paljon nopeammin kuin suoraan tai neliöllisesti. Kauempaa katsottuna kummankin navan vaikutukset nimittäin lähes kumoavat toisensa."
+        },
+        {
+          "text": "Noin $7{,}5\\,\\mu\\text{T}$ eli neljäsosa.",
+          "feedback": "Neljäsosa olisi yhden navan kenttä, koska yksittäisen navan kenttä heikkenee etäisyyden neliön mukaan. Magneetilla on kuitenkin kaksi vastakkaista napaa. Kauempana niiden vaikutukset lähes kumoavat toisensa. Mallin arvoissa kenttä putoaa $2{,}9\\,\\mu\\text{T}$:iin eli noin kymmenesosaan."
+        },
+        {
+          "text": "Edelleen $30\\,\\mu\\text{T}$, koska magneetti on sama.",
+          "feedback": "Magneetti on sama, mutta sen kenttä heikkenee etäisyyden kasvaessa. Mallin arvoissa se putoaa $30{,}0\\,\\mu\\text{T}$:sta $2{,}9\\,\\mu\\text{T}$:iin. Sen näkee myös neulasta: kauempana neula kääntyy yhä vähemmän pois pohjoisesta."
+        }
+      ]
+    },
+    {
+      "id": "pred-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 2: magneetin kyljessä",
+      "justify": true,
+      "reveal": {
+        "after": "exp-2",
+        "min": 2
+      },
+      "prompt": "Sauvamagneetin pohjoisnapa $\\text{N}$ osoittaa itään. Kompassi asetetaan magneetin pohjoispuolelle, magneetin keskikohdan kohdalle. Oleta, että Maan kenttää ei ole. Mihin kompassin neulan pohjoispää osoittaa?",
+      "choices": [
+        {
+          "text": "Länteen, magneetin suuntaisesti kohti sen etelänapaa.",
+          "correct": true,
+          "feedback": "Oikein. Mallin arvoissa neula osoittaa magneetin keskikohdan kohdalla tarkalleen länteen, $\\theta = -90^\\circ$. Kenttäviivat kaartuvat pohjoisnavasta magneetin ympäri etelänapaan. Magneetin kyljessä ne kulkevat siis magneetin suuntaisesti pohjoisnavan puolelta etelänavan puolelle."
+        },
+        {
+          "text": "Etelään, suoraan kohti magneetin keskikohtaa.",
+          "feedback": "Magneetin keskikohdassa ei ole napaa, joka vetäisi neulaa. Mallin arvoissa neula osoittaa länteen eli magneetin suuntaisesti. Kenttäviivat kaartuvat kyljen ohi pohjoisnavasta etelänapaan."
+        },
+        {
+          "text": "Pohjoiseen, suoraan poispäin magneetista.",
+          "feedback": "Kenttä osoittaa suoraan navasta poispäin vain pohjoisnavan lähellä. Kyljessä kenttäviivat kulkevat magneetin suuntaisesti. Mallin arvoissa neula osoittaa länteen, kohti etelänapaa."
+        },
+        {
+          "text": "Itään, kohti magneetin pohjoisnapaa.",
+          "feedback": "Neulan pohjoispää on itsekin pohjoisnapa, ja samannimiset navat hylkivät toisiaan. Mallin arvoissa neula osoittaa länteen, poispäin magneetin pohjoisnavasta."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Simulaatiossa sauvamagneetti on pöydällä ylhäältä nähtynä, pohjoinen ylöspäin. Siirrä kompassia magneetin ympärillä. Katso, mihin neula kääntyy.",
+      "howto": "Kompassin paikka annetaan kahdella luvulla. Etäisyys $r$ mitataan magneetin keskeltä. Suunta $\\varphi$ mitataan idästä vastapäivään. Kun $\\varphi = 0^\\circ$, kompassi on magneetin akselilla itäpuolella. Kun $\\varphi = 90^\\circ$, kompassi on magneetin pohjoispuolella. Voit myös vetää kompassia hiirellä tai sormella. *Magneetti* kääntää magneetin niin, että sen pohjoisnapa on idässä tai lännessä. *Maan kenttä* lisää tai poistaa Maan kentän vaakakomponentin. Se osoittaa pohjoiseen. Ruudut näyttävät magneetin omat kenttäviivat ja kompassiruudukon. Ruudukon pienet neulat näyttävät kokonaiskentän suunnan joka kohdassa. *Heilauta neulaa* tönäisee neulaa. *Nopeus* muuttaa vain neulan liikkeen tahtia. Lukemissa $B_\\text{m}$ on magneetin kenttä ja $B_\\text{h}$ on Maan kentän vaakakomponentti. Kokonaiskenttä on $B$. Neulan suunta pohjoisesta on $\\theta$: positiivinen kulma on itään ja negatiivinen länteen.",
+      "model": "Arvot ovat simulaation laskemia mallin arvoja. Magneetti on mallinnettu kahtena napana, jotka ovat $4\\,\\text{cm}$:n päässä magneetin keskeltä. Kentän voimakkuus on valittu niin, että magneetin akselilla $10\\,\\text{cm}$:n päässä keskeltä $B_\\text{m} = 30{,}0\\,\\mu\\text{T}$. Maan kentän vaakakomponentti on Etelä-Suomen arvo $14\\,\\mu\\text{T}$. Pystykomponentti ei käännä vaakasuoraa neulaa. Kompassin oma kenttä ei muuta magneetin kenttää. Neula kääntyy vaimenevasti kokonaiskentän suuntaan. Lukema $\\theta$ on suunta, johon neula asettuu.",
+      "calc": "Kummankin navan kenttä heikkenee etäisyyden neliön mukaan. Magneetin kenttä $\\overline{B}_\\text{m}$ on napojen kenttien vektorisumma. Kokonaiskenttä on $\\overline{B} = \\overline{B}_\\text{m} + \\overline{B}_\\text{h}$. Neulan suunta pohjoisesta on kulma $\\theta$. Sille $\\tan\\theta$ on kokonaiskentän itäkomponentin ja pohjoiskomponentin suhde."
+    },
+    {
+      "id": "exp-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 1: kenttä heikkenee etäisyyden kasvaessa",
+      "intro": "Alkutilassa kompassi on magneetin akselilla itäpuolella ($\\varphi = 0^\\circ$), magneetin pohjoisnapa on idässä ja Maan kenttä on mukana. Muuta etäisyyttä $r$. Kirjaa neulan suunta $\\theta$ ja magneetin kenttä $B_\\text{m}$. Kirjaa ainakin etäisyydet $10\\,\\text{cm}$, $12\\,\\text{cm}$, $14\\,\\text{cm}$ ja $20\\,\\text{cm}$.",
+      "initial": {
+        "phi": 0,
+        "magneetti": "ita",
+        "maa": "1",
+        "r": 10
+      },
+      "names": {
+        "r": "etäisyys r",
+        "phi": "suunta φ",
+        "magneetti": "magneetti",
+        "maa": "Maan kenttä"
+      },
+      "units": {
+        "r": "cm",
+        "phi": "°"
+      },
+      "values": {
+        "magneetti": {
+          "ita": "pohjoisnapa itään"
+        },
+        "maa": {
+          "1": "mukana"
+        }
+      },
+      "locked": [
+        "phi",
+        "magneetti",
+        "maa"
+      ],
+      "vary": "r",
+      "measure": [
+        {
+          "key": "theta",
+          "label": "θ (°)"
+        },
+        {
+          "key": "Bm",
+          "label": "magneetin kenttä B_m (µT)"
+        }
+      ],
+      "min": 2,
+      "question": {
+        "type": "numeric",
+        "prompt": "Laske taulukostasi, kuinka monta kertaa suurempi magneetin kenttä $B_\\text{m}$ on $10\\,\\text{cm}$:n etäisyydellä kuin $20\\,\\text{cm}$:n etäisyydellä.",
+        "answer": 10.4,
+        "unit": "",
+        "tolerance": 0.04,
+        "hints": [
+          "Etsi taulukosta rivit $r = 10\\,\\text{cm}$ ja $r = 20\\,\\text{cm}$.",
+          "Kysymykseen \"kuinka monta kertaa suurempi\" vastataan jakamalla. Jaa suurempi kenttä pienemmällä.",
+          "$30{,}0\\,\\mu\\text{T} : 2{,}9\\,\\mu\\text{T}$"
+        ],
+        "mistakes": [
+          {
+            "value": 2,
+            "feedback": "Etäisyys kaksinkertaistui, mutta kenttä ei puolittunut. Jaa taulukon kenttä $B_\\text{m}$ rivillä $10\\,\\text{cm}$ saman sarakkeen arvolla rivillä $20\\,\\text{cm}$."
+          },
+          {
+            "value": 4,
+            "feedback": "Neljä olisi etäisyyden neliön mukainen heikkeneminen. Laske suhde taulukon arvoista $B_\\text{m}$. Magneetin kenttä heikkenee vielä nopeammin."
+          }
+        ],
+        "solution": "**Annettu:** taulukosta mallin arvot $B_\\text{m} = 30{,}0\\,\\mu\\text{T}$, kun $r = 10\\,\\text{cm}$, ja $B_\\text{m} = 2{,}9\\,\\mu\\text{T}$, kun $r = 20\\,\\text{cm}$\n\n**Kysytty:** kenttien suhde $B_\\text{m}(10\\,\\text{cm}) : B_\\text{m}(20\\,\\text{cm})$, paljas luku\n\n**Periaate:** Kysymys \"kuinka monta kertaa suurempi\" ratkaistaan jakamalla suurempi arvo pienemmällä. Molemmat kentät on mitattu samalla suoralla magneetin akselilla. Ne ovat siis samansuuntaisia, ja niiden suuruuksia voi verrata suoraan.\n\n**Kaava:** $k = \\dfrac{B_1}{B_2}$, missä $B_1$ on kenttä $10\\,\\text{cm}$:n päässä ja $B_2$ kenttä $20\\,\\text{cm}$:n päässä\n\n**Muunnokset:** Niitä ei tarvita. Molemmat kentät ovat mikrotesloina, ja yksikkö supistuu.\n\n**Sijoitus:** $k = \\dfrac{30{,}0\\,\\mu\\text{T}}{2{,}9\\,\\mu\\text{T}} = 10{,}3$\n\n**Vastaus:** noin $10$. Vastauksessa on kaksi merkitsevää numeroa, koska lukemassa $2{,}9\\,\\mu\\text{T}$ on kaksi. Tarkemmilla mallin arvoilla suhde on $10{,}4$.\n\n**Järkevyys:** Jos kenttä heikkenisi etäisyyden neliön mukaan, suhde olisi $2^2 = 4$. Jos kenttä olisi suoraan verrannollinen etäisyyteen, suhde olisi $2$. Saatu $10$ on lähellä lukua $2^3 = 8$ mutta hieman suurempi. Syy on tämä: $10\\,\\text{cm}$:n päässä magneetin lähempi napa vaikuttaa vielä selvästi enemmän kuin kauempi. Neulakin kertoo saman: kulma pieneni $65^\\circ$:sta noin $12^\\circ$:een."
+      }
+    },
+    {
+      "id": "exp-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 2: kentän suunta magneetin ympärillä",
+      "intro": "Alkutilassa Maan kenttä on poistettu. Silloin neula näyttää pelkän magneetin kentän suunnan. Kompassi on $14\\,\\text{cm}$:n päässä magneetin keskeltä. Siirrä kompassia magneetin ympäri muuttamalla suuntaa $\\varphi$. Kirjaa neulan suunta. Kirjaa ainakin suunnat $0^\\circ$, $45^\\circ$, $90^\\circ$, $135^\\circ$ ja $180^\\circ$. Pidä kenttäviivat näkyvissä.",
+      "initial": {
+        "r": 14,
+        "magneetti": "ita",
+        "maa": "0",
+        "phi": 0
+      },
+      "names": {
+        "r": "etäisyys r",
+        "phi": "suunta φ",
+        "magneetti": "magneetti",
+        "maa": "Maan kenttä"
+      },
+      "units": {
+        "r": "cm",
+        "phi": "°"
+      },
+      "values": {
+        "magneetti": {
+          "ita": "pohjoisnapa itään"
+        },
+        "maa": {
+          "0": "pois"
+        }
+      },
+      "locked": [
+        "r",
+        "magneetti",
+        "maa"
+      ],
+      "vary": "phi",
+      "measure": [
+        {
+          "key": "theta",
+          "label": "θ (°)"
+        },
+        {
+          "key": "Bm",
+          "label": "magneetin kenttä B_m (µT)"
+        }
+      ],
+      "min": 2,
+      "question": {
+        "type": "choice",
+        "prompt": "Miten neulan suunnat sopivat magneetin kenttäviivoihin?",
+        "choices": [
+          {
+            "text": "Neula seuraa kenttäviivoja: pohjoispää osoittaa viivan suuntaan.",
+            "correct": true,
+            "feedback": "Oikein. Akselilla itäpuolella neula osoittaa itään eli pois pohjoisnavasta, $\\theta = 90^\\circ$. Länsipuolella neula osoittaa myös itään eli kohti etelänapaa. Kyljessä se osoittaa länteen, $\\theta = -90^\\circ$. Neula seuraa siis kenttäviivoja. Ne kulkevat magneetin ulkopuolella pohjoisnavasta etelänapaan."
+          },
+          {
+            "text": "Neula osoittaa joka kohdassa suoraan kohti magneetin keskikohtaa.",
+            "feedback": "Silloin neula osoittaisi magneetin pohjoispuolella etelään. Mallin arvoissa se osoittaa siellä länteen, $\\theta = -90^\\circ$. Neula on kenttäviivan suuntainen, eivätkä kenttäviivat osoita magneetin keskikohtaan."
+          },
+          {
+            "text": "Neula osoittaa joka kohdassa kohti magneetin lähempää napaa.",
+            "feedback": "Akselin itäpuolella lähempi napa on pohjoisnapa. Mallin arvoissa neula osoittaa siellä itään eli poispäin siitä, $\\theta = 90^\\circ$. Neulan pohjoispää hylkii pohjoisnapaa ja seuraa kenttäviivaa kohti etelänapaa."
+          }
+        ]
+      }
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös",
+      "after": [
+        "exp-1",
+        "exp-2"
+      ],
+      "prompt": "Selitä mittaustesi avulla, mihin kompassin neula kääntyy magneetin lähellä. Selitä myös, miksi magneetin vaikutus neulaan heikkenee, kun kompassi viedään kauemmas. Käytä sanoja kenttäviiva, magneettikenttä ja Maan kenttä.",
+      "criteria": [
+        "Vastaus kertoo, että neula kääntyy kokonaiskentän suuntaiseksi eli kenttäviivan suuntaiseksi. Vastaus kertoo myös, että neulan pohjoispää osoittaa kentän suuntaan.",
+        "Vastaus käyttää kokeen 2 tuloksia: magneetin ulkopuolella kenttä osoittaa pohjoisnavasta poispäin ja kohti etelänapaa. Magneetin kyljessä kenttä osoittaa magneetin suuntaisesti.",
+        "Vastaus käyttää kokeen 1 tuloksia: magneetin kenttä heikkenee $10\\,\\text{cm}$:stä $20\\,\\text{cm}$:iin noin kymmenesosaan. Siksi kauempana Maan kenttä määrää neulan suunnan."
+      ],
+      "model": "Kompassin neula on pieni magneetti. Se kääntyy kokonaiskentän suuntaiseksi: sen pohjoispää osoittaa kentän suuntaan eli kenttäviivaa pitkin. Kokeessa 2 Maan kenttä oli poistettu. Akselilla magneetin itäpuolella neula osoitti itään, poispäin pohjoisnavasta. Länsipuolella neula osoitti myös itään, kohti etelänapaa. Magneetin kyljessä neula osoitti länteen eli magneetin suuntaisesti kohti etelänapaa. Neula seurasi siis kenttäviivoja. Ne kulkevat magneetin ulkopuolella pohjoisnavasta etelänapaan. Kokeessa 1 magneetin kenttä oli mallin arvoissa $10\\,\\text{cm}$:n päässä $30{,}0\\,\\mu\\text{T}$, $14\\,\\text{cm}$:n päässä $9{,}1\\,\\mu\\text{T}$ ja $20\\,\\text{cm}$:n päässä vain $2{,}9\\,\\mu\\text{T}$. Neula kääntyi pohjoisesta $65^\\circ$, $33^\\circ$ ja $12^\\circ$. Lähellä magneettia magneetin kenttä on paljon suurempi kuin Maan kentän vaakakomponentti $14\\,\\mu\\text{T}$. Silloin magneetin kenttä määrää suunnan. Kauempana Maan kenttä voittaa, ja neula kääntyy takaisin kohti pohjoista."
+    },
+    {
+      "id": "theory",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "reflect",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Palaa ennusteisiisi",
+      "optional": true,
+      "prompt": "Vertaa ennusteitasi simulaation tuloksiin. Mitä opit kenttäviivojen suunnasta? Mitä opit siitä, kuinka nopeasti magneetin kenttä heikkenee? Palaa myös alun suunnistajaan: miksi taskulampun magneetti kääntää neulan vain silloin, kun se on lähellä?",
+      "predictions": [
+        "pred-1",
+        "pred-2"
+      ]
+    },
+    {
+      "id": "example",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe",
+      "prompt": "Kompassin kohdalla Maan kentän vaakakomponentti on $14\\,\\mu\\text{T}$ pohjoiseen ja magneetin kenttä $18\\,\\mu\\text{T}$ itään. Opiskelija laski kokonaiskentän näin: $B = 14\\,\\mu\\text{T} + 18\\,\\mu\\text{T} = 32\\,\\mu\\text{T}$. Mikä laskussa on vialla?",
+      "choices": [
+        {
+          "text": "Kohtisuorat kentät lasketaan yhteen vektoreina: $B = \\sqrt{(14\\,\\mu\\text{T})^2 + (18\\,\\mu\\text{T})^2} \\approx 23\\,\\mu\\text{T}$.",
+          "correct": true,
+          "feedback": "Oikein. Kentät ovat vektoreita, ja ne ovat kohtisuorassa toisiaan vastaan. Siksi ne ovat suorakulmaisen kolmion kateetit. Kokonaiskenttä on hypotenuusa $22{,}8\\,\\mu\\text{T}$, ja se on pienempi kuin kenttien lukuarvojen summa."
+        },
+        {
+          "text": "Kentät pitää vähentää: $B = 18\\,\\mu\\text{T} - 14\\,\\mu\\text{T} = 4\\,\\mu\\text{T}$.",
+          "feedback": "Erotus saadaan vain vastakkaissuuntaisista kentistä. Pohjoiseen ja itään osoittavat kentät ovat kohtisuorassa. Siksi $B = \\sqrt{(14\\,\\mu\\text{T})^2 + (18\\,\\mu\\text{T})^2} \\approx 23\\,\\mu\\text{T}$."
+        },
+        {
+          "text": "Kompassi tuntee vain voimakkaamman kentän, joten $B = 18\\,\\mu\\text{T}$.",
+          "feedback": "Neula kääntyy molempien kenttien summan suuntaan. Se ei osoita suoraan itään vaan noin $52^\\circ$ pohjoisesta itään. Kokonaiskenttä on $\\sqrt{(14\\,\\mu\\text{T})^2 + (18\\,\\mu\\text{T})^2} \\approx 23\\,\\mu\\text{T}$."
+        },
+        {
+          "text": "Laskussa ei ole virhettä, koska molemmat kentät ovat mikrotesloina.",
+          "feedback": "Sama yksikkö ei riitä. Lukuina voi laskea yhteen vain samansuuntaiset kentät. Kohtisuorille kentille $B = \\sqrt{(14\\,\\mu\\text{T})^2 + (18\\,\\mu\\text{T})^2} \\approx 23\\,\\mu\\text{T}$."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Sovella uuteen tilanteeseen",
+      "prompt": "Pöydällä on kompassi ja kaksi magneettia. Magneetin A kenttä kompassin kohdalla on $20\\,\\mu\\text{T}$ itään. Magneetin B kenttä on $12\\,\\mu\\text{T}$ pohjoiseen. Maan kentän vaakakomponentti on $14\\,\\mu\\text{T}$ pohjoiseen. Kuinka monta astetta pohjoisesta itään kompassin neula kääntyy?",
+      "answer": 37.6,
+      "unit": "°",
+      "tolerance": 0.02,
+      "hints": [
+        "Mitkä kentistä ovat samansuuntaisia? Ne voi laskea yhteen lukuina.",
+        "Pohjoiseen osoittavat kentät ovat yhteensä $12\\,\\mu\\text{T} + 14\\,\\mu\\text{T} = 26\\,\\mu\\text{T}$. Itään osoittaa $20\\,\\mu\\text{T}$.",
+        "$\\tan\\theta = \\dfrac{20\\,\\mu\\text{T}}{26\\,\\mu\\text{T}}$, kun $\\theta$ mitataan pohjoisesta."
+      ],
+      "mistakes": [
+        {
+          "value": 55.0,
+          "feedback": "Jätit magneetin B kentän pois. Se osoittaa samaan suuntaan kuin Maan kenttä, joten pohjoiskomponentti on $12\\,\\mu\\text{T} + 14\\,\\mu\\text{T} = 26\\,\\mu\\text{T}$."
+        },
+        {
+          "value": 59.0,
+          "feedback": "Jätit Maan kentän pois. Neula kääntyy kaikkien kenttien summan suuntaan, joten pohjoiskomponentti on $12\\,\\mu\\text{T} + 14\\,\\mu\\text{T} = 26\\,\\mu\\text{T}$."
+        },
+        {
+          "value": 52.4,
+          "feedback": "Kulma pohjoisesta on itäkomponentin ja pohjoiskomponentin suhde: $\\tan\\theta = 20 : 26$. Laskit käänteisen suhteen, jolloin saat kulman idästä."
+        }
+      ],
+      "solution": "**Annettu:** magneetin A kenttä $B_\\text{A} = 20\\,\\mu\\text{T}$ itään, magneetin B kenttä $B_\\text{B} = 12\\,\\mu\\text{T}$ pohjoiseen, Maan kentän vaakakomponentti $B_\\text{h} = 14\\,\\mu\\text{T}$ pohjoiseen\n\n**Kysytty:** neulan kääntymiskulma $\\theta$ pohjoisesta itään asteina\n\n**Periaate:** Neula kääntyy kokonaiskentän suuntaiseksi, ja kokonaiskenttä on kenttien vektorisumma. Magneetin B kenttä ja Maan kenttä osoittavat samaan suuntaan, joten ne lasketaan yhteen lukuina. Itään osoittava kenttä on niitä vastaan kohtisuorassa. Siksi kulma saadaan tangentista.\n\n**Kaava:** $B_\\text{pohj} = B_\\text{B} + B_\\text{h}$ ja $\\tan\\theta = \\dfrac{B_\\text{A}}{B_\\text{pohj}}$, joten $\\theta = \\tan^{-1}\\dfrac{B_\\text{A}}{B_\\text{B} + B_\\text{h}}$\n\n**Muunnokset:** Niitä ei tarvita. Kaikki kentät ovat mikrotesloina, ja yksikkö supistuu suhteessa.\n\n**Sijoitus:** $\\theta = \\tan^{-1}\\dfrac{20\\,\\mu\\text{T}}{12\\,\\mu\\text{T} + 14\\,\\mu\\text{T}} = \\tan^{-1} 0{,}769 = 37{,}6^\\circ$\n\n**Vastaus:** $38^\\circ$ pohjoisesta itään. Vastauksessa on kaksi merkitsevää numeroa, koska kentissä on kaksi.\n\n**Järkevyys:** Pohjoiskomponentti $26\\,\\mu\\text{T}$ on suurempi kuin itäkomponentti $20\\,\\mu\\text{T}$. Siksi neulan pitää kääntyä alle $45^\\circ$, ja niin se kääntyy. Ilman magneettia B kulma olisi $55^\\circ$. Magneetti B vetää siis neulaa takaisin kohti pohjoista."
+    },
+    {
+      "id": "tehtavat",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Harjoittele vielä kolmella tasolla. Piirrä laskutehtävissä kentät vektoreina ennen kuin lasket."
+    },
+    {
+      "id": "check-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Käsite",
+      "prompt": "Kompassin neulan pohjoispää osoittaa Suomessa kohti maantieteellistä pohjoista. Mikä magneettinen napa Maalla on maantieteellisen pohjoisnavan lähellä?",
+      "choices": [
+        {
+          "text": "Pohjoisnapa, koska kompassi osoittaa pohjoisnapaa kohti.",
+          "feedback": "Samannimiset navat hylkivät toisiaan. Pohjoisnapa työntäisi siis neulan pohjoispäätä poispäin. Neulaa vetää puoleensa eriniminen napa eli magneettinen etelänapa."
+        },
+        {
+          "text": "Etelänapa, koska se vetää puoleensa neulan pohjoisnapaa.",
+          "correct": true,
+          "feedback": "Oikein. Neulan pohjoispää on magneetin pohjoisnapa, ja sitä vetää puoleensa eriniminen napa. Maantieteellisen pohjoisnavan lähellä on siis Maan magneettinen etelänapa."
+        },
+        {
+          "text": "Ei kumpaakaan, koska Maan pyöriminen kääntää neulan pohjoiseen.",
+          "feedback": "Pyöriminen ei käännä magneettia. Neulaa kääntää Maan magneettikenttä, joka muistuttaa sauvamagneetin kenttää. Maantieteellisen pohjoisnavan lähellä on sen etelänapa."
+        },
+        {
+          "text": "Molemmat navat, koska Maa on magneettinen dipoli.",
+          "feedback": "Dipolissa navat ovat eri päissä. Maan magneettinen etelänapa on maantieteellisen pohjoisnavan lähellä. Magneettinen pohjoisnapa on maantieteellisen etelänavan lähellä."
+        }
+      ]
+    },
+    {
+      "id": "check-2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Kenttäviivakuva",
+      "figure": "fy7-1/two-magnets",
+      "prompt": "Kuvassa on kahden samalle suoralle asetetun sauvamagneetin kenttäviivat. Magneettien napoja ei ole merkitty. Mitä kuvasta voi päätellä magneettien vastakkain olevista navoista?",
+      "choices": [
+        {
+          "text": "Ne ovat samannimiset, mutta niiden lajia ei voi päätellä kuvasta.",
+          "correct": true,
+          "feedback": "Oikein. Viivat eivät kulje magneetista toiseen vaan kaartuvat poispäin. Raon keskelle jää kohta, jossa kenttä on nolla. Samannimiset navat hylkivät toisiaan. Kuvassa ei ole suuntanuolia. Siksi navat voivat olla kaksi pohjoisnapaa tai kaksi etelänapaa."
+        },
+        {
+          "text": "Ne ovat erinimiset, koska viivat lähtevät molemmista navoista.",
+          "feedback": "Erinimisten napojen välillä viivat kulkisivat suoraan navasta toiseen. Kuvassa ne kaartuvat poispäin toisistaan, ja raon keskelle jää tyhjä kohta. Siksi navat ovat samannimiset."
+        },
+        {
+          "text": "Molemmat ovat pohjoisnapoja, koska viivat lähtevät navoista.",
+          "feedback": "Navat ovat samannimiset, mutta viivoissa ei ole suuntanuolia. Ilman suuntaa ei voi päätellä, lähtevätkö viivat navoista vai tulevatko ne niihin. Siksi navat voivat olla myös kaksi etelänapaa."
+        },
+        {
+          "text": "Kuvasta ei voi päätellä mitään, koska napoja ei ole merkitty.",
+          "feedback": "Viivojen muoto kertoo paljon: ne eivät kulje magneetista toiseen, ja raon keskelle jää tyhjä kohta. Navat ovat siis samannimiset. Niiden lajia ei kuitenkaan voi päätellä ilman suuntanuolia."
+        }
+      ]
+    },
+    {
+      "id": "check-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Selitä",
+      "prompt": "Selitä alkeisalueiden avulla, miksi magneetti vetää puoleensa magnetoimatonta rautanaulaa mutta ei alumiinista naulaa.",
+      "criteria": [
+        "Vastaus kertoo, että raudassa on alkeisalueita, joissa atomien magneettiset dipolit osoittavat samaan suuntaan. Vastaus kertoo myös, että magnetoimattomassa raudassa alkeisalueiden suunnat vaihtelevat.",
+        "Vastaus kertoo, että magneetin kenttä järjestää alkeisalueet kentän suuntaisiksi. Silloin naula magnetoituu, ja sen magneetin puoleiseen päähän tulee vastakkaisniminen napa.",
+        "Vastaus kertoo, että alumiini ei ole ferromagneettinen. Siinä ei ole alkeisalueita, eikä se magnetoidu huomattavasti."
+      ],
+      "model": "Rauta on ferromagneettinen aine. Sen atomit ovat pieniä magneettisia dipoleja, jotka asettuvat samansuuntaisiksi alkeisalueiksi. Magnetoimattomassa naulassa alkeisalueiden suunnat vaihtelevat, joten niiden vaikutukset kumoavat toisensa. Kun magneetti tuodaan lähelle, sen kenttä kääntää alkeisalueita. Se kasvattaa niitä alkeisalueita, joiden suunta on kentän suuntainen. Naula magnetoituu. Jos magneetin pohjoisnapa on lähellä, naulan lähempään päähän tulee etelänapa. Erinimiset navat vetävät toisiaan, joten magneetti vetää naulaa. Alumiini ei ole ferromagneettinen. Siinä ei ole alkeisalueita. Se ei myöskään magnetoidu niin paljon, että vetovoiman huomaisi."
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Lopuksi kolme nopeaa kysymystä. Vastaa ensin itse. Avaa vastaus vasta sen jälkeen."
+    }
+  ]
+}

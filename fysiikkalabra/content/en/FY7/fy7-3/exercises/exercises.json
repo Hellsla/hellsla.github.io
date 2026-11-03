@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy7-3-L1-01",
+      "level": 1,
+      "text": "A current of $12\\,\\text{A}$ flows in a long straight wire. How great is the magnetic flux density at a distance of $3.0\\,\\text{cm}$ from the wire? Give the answer in microtesla.",
+      "answer": 80,
+      "unit": "µT",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-3-L1-02",
+      "level": 1,
+      "text": "A coil has $500$ turns, and its length is $25\\,\\text{cm}$. A current of $1.2\\,\\text{A}$ flows in the coil. How great is the magnetic flux density at the centre of the coil? The coil is long compared with its width. Give the answer in millitesla.",
+      "answer": 3.0,
+      "unit": "mT",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-3-L1-03",
+      "level": 1,
+      "text": "A current of $800\\,\\text{A}$ momentarily flows in one wire of a power line. How great is the magnetic flux density of this wire at ground level, $16\\,\\text{m}$ below the wire? Assume that the fields of the other wires have no effect. Give the answer in microtesla.",
+      "answer": 10,
+      "unit": "µT",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-3-L1-04",
+      "level": 1,
+      "text": "A current of $2.5\\,\\text{A}$ flows in one wire of the cord of a desk lamp. How great is the magnetic flux density of this wire at a distance of $5.0\\,\\text{mm}$ from it, when the effect of the other wire is not taken into account? Give the answer in millitesla.",
+      "answer": 0.1,
+      "unit": "mT",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-3-L1-05",
+      "level": 1,
+      "text": "A coil in the physics classroom has $300$ turns, and its length is $15\\,\\text{cm}$. A current of $0.40\\,\\text{A}$ flows in the coil. How great is the magnetic flux density at the centre of the coil? The coil is long compared with its width. Give the answer in millitesla.",
+      "answer": 1.0,
+      "unit": "mT",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy7-3-L2-01",
+      "level": 2,
+      "text": "An experiment needs a coil in which the magnetic flux density is $20\\,\\text{mT}$. The coil has $1200$ turns, and its length is $0.30\\,\\text{m}$. How great a current must flow in the coil? The coil is long compared with its width.",
+      "answer": 4.0,
+      "unit": "A",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-3-L2-02",
+      "level": 2,
+      "text": "A current of $6.0\\,\\text{A}$ flows in a long straight wire. How far from the wire is its magnetic flux density equal to the horizontal component of the Earth's magnetic field, $14\\,\\mu\\text{T}$? Give the answer in centimetres.",
+      "answer": 8.6,
+      "unit": "cm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-3-L2-03",
+      "level": 2,
+      "text": "A student winds $25\\,\\text{m}$ of insulated copper wire in a single layer round a cardboard tube. The diameter of the tube is $4.0\\,\\text{cm}$, and the length of the finished coil is $0.20\\,\\text{m}$. How great is the magnetic flux density at the centre of the coil when a current of $2.0\\,\\text{A}$ flows in it? The thickness of the wire is not taken into account. Give the answer in millitesla.",
+      "answer": 2.5,
+      "unit": "mT",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-3-L2-04",
+      "level": 2,
+      "text": "Two long parallel wires are $10\\,\\text{cm}$ apart. A current of $10\\,\\text{A}$ flows in each, but in opposite directions. How great is the magnetic flux density midway between the wires? Give the answer in microtesla.",
+      "answer": 80,
+      "unit": "µT",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy7-3-L3-01",
+      "level": 3,
+      "text": "A compass is on a table, and its needle points north. A north–south wire is stretched directly above the compass, at a height of $5.0\\,\\text{cm}$. When a current is switched on in the wire, the needle turns through $30^\\circ$. The horizontal component of the Earth's magnetic field is $14\\,\\mu\\text{T}$, and the field of the wire at the compass is horizontal and perpendicular to the horizontal component of the Earth's field. How great is the current in the wire?",
+      "answer": 2.0,
+      "unit": "A",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-3-L3-02",
+      "level": 3,
+      "text": "The superconducting coil of an MRI scanner produces a magnetic field of $1.5\\,\\text{T}$ inside it. The length of the coil is $1.6\\,\\text{m}$, its diameter is $1.0\\,\\text{m}$, and a current of $400\\,\\text{A}$ flows in it. Estimate how many kilometres of superconducting wire are needed for the coil. Assume the coil is long, and assume that all the turns have a diameter of $1.0\\,\\text{m}$.",
+      "answer": 15,
+      "unit": "km",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy7-3-L3-03",
+      "level": 3,
+      "text": "Two long parallel wires are $10\\,\\text{cm}$ apart. The wires carry currents of $4.0\\,\\text{A}$ and $6.0\\,\\text{A}$ in the same direction. At which point between the wires is their combined magnetic field zero? Give the answer as the distance from the $4.0\\,\\text{A}$ wire in centimetres.",
+      "answer": 4.0,
+      "unit": "cm",
+      "tolerance": 0.02
+    }
+  ]
+}
