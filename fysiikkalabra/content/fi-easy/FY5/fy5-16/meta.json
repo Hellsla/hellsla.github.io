@@ -18,6 +18,24 @@
     "kaiutin",
     "mikrofoni"
   ],
+  "key_concepts": [
+    {
+      "term": "melu",
+      "explain": "Ääni, joka häiritsee tai voi vahingoittaa kuuloa."
+    },
+    {
+      "term": "jälkikaiunta",
+      "explain": "Ääni kuuluu vielä hetken lähteen hiljennyttyä, koska se heijastuu huoneen pinnoista."
+    },
+    {
+      "term": "kaiutin",
+      "explain": "Laite, joka muuttaa sähköisen signaalin ääneksi."
+    },
+    {
+      "term": "mikrofoni",
+      "explain": "Laite, joka muuttaa äänen sähköiseksi signaaliksi."
+    }
+  ],
   "sim": false,
   "solutions": "all",
   "image": false

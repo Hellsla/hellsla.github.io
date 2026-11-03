@@ -19,6 +19,28 @@
     "solmuviiva",
     "Fourier-muunnos"
   ],
+  "key_concepts": [
+    {
+      "term": "superpositio",
+      "explain": "Kun aallot kohtaavat, niiden poikkeamat lasketaan yhteen. Aallot jatkavat sen jälkeen matkaansa ennallaan."
+    },
+    {
+      "term": "interferenssi",
+      "explain": "Kahden tai useamman aallon yhteisvaikutus, kun ne kohtaavat."
+    },
+    {
+      "term": "vahvistava interferenssi",
+      "explain": "Aallot kohtaavat samassa vaiheessa, joten yhteinen aalto on suurempi."
+    },
+    {
+      "term": "heikentävä interferenssi",
+      "explain": "Aallot kohtaavat vastakkaisessa vaiheessa, joten ne heikentävät toisiaan."
+    },
+    {
+      "term": "matkaero",
+      "explain": "Kuinka paljon pidemmän matkan toinen aalto kulkee kuin toinen samaan pisteeseen."
+    }
+  ],
   "sim": true,
   "solutions": "all",
   "image": false
