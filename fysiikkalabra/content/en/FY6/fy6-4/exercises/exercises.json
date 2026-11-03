@@ -90,7 +90,7 @@
       "level": 3,
       "text": "An electric heater has two identical $46\\,\\Omega$ heating resistors, and it is connected to a mains voltage of $230\\,\\text{V}$. At low power the resistors are connected in series, at high power in parallel. How many times as large is the current the heater draws in the parallel connection compared with the series connection? Assume that the resistances of the resistors do not change.",
       "answer": 4,
-      "unit": "kertaa",
+      "unit": "times",
       "tolerance": 0.02
     },
     {

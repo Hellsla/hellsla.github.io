@@ -107,7 +107,7 @@ new p5((p) => {
       lab('$R_2 = ' + S.R2 + '\\,\\Omega$', x2, T - gap, 'c', INKC);
       lab('$U_1 = ' + sig(C.U1) + '\\,\\text{V}$', x1, T + gap + 0.4 * fh, 'c', VOLTC);
       lab('$U_2 = ' + sig(C.U2) + '\\,\\text{V}$', x2, T + gap + 0.4 * fh + drop, 'c', VOLTC);
-      lab('$\\text{sama virta}$', Rx - 24 * sk, (T + B) / 2 + 0.3 * fh, 'r', CUR);
+      lab(__('samavirta'), Rx - 24 * sk, (T + B) / 2 + 0.3 * fh, 'r', CUR);
     } else if (S.mode === 'rinnan') {
       const xr = (xa + Rx) / 2;
       // dots only where the wire branches or joins, not at the plain corners
