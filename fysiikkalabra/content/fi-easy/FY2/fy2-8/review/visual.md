@@ -1,11 +1,21 @@
-VERDICT: FAIL
-CONTENT-HASH: 90068beebaa21970
+VERDICT: PASS
+CONTENT-HASH: 7adf51af670ec791
 
 ## Blocking
-- [Major] fy2-8-1280-0, fy2-8-360-0 (figure.unit-photo.wide, GISTEMP map) — the caption and credit line are squeezed into a column about 130 px wide (the table-caption of the shrink-to-fit figure), so the six-line caption becomes a 20-line strip of one or two words per line, both at 1280 px and at 360 px, and the page jumps down — a reader cannot read the explanation of the colours and the grey no-data area comfortably — fix in templates/site.css: add figure.unit-photo.wide figcaption{display:block;max-width:var(--measure)} (the caption text itself is fine and needs no change).
+(none)
 
 ## Polish
-- none
+- [Minor] NASA map (figure.unit-photo.wide, fy2-8-theory-1280-1/2, selita-390) — the colour scale and its labels are baked into the image and are tiny, in English ("Change in Global Temperature", "no data", °F/°C); unreadable at 390 px and barely at 1280 px — add one caption sentence giving the range, e.g. "Asteikko on noin −4 °C … +4 °C" (as LaTeX), so a learner can tell how much "punainen" means.
+- [Minor] Same caption — says "Harmaa väri tarkoittaa, että alueelta ei ole mittauksia", but the image's own legend reads "no data"; add "(kartassa: no data)" or similar so the two can be matched.
+- [Minor] fy2-8-sim-390 — the "Aurinko" label sits partly over the sun's halo; legible, but nudge the label right.
 
 ## Checked
-- batch delta review: opened fy-easy captures fy2-8-1280 and fy2-8-360 (photo, caption, credit line, alt text read against picture and neighbouring paragraph; no clipping or horizontal overflow; no plain-text quantity in new caption/alt).
+- Hash 7adf51af670ec791 at start and end (unchanged); captures current.
+- theory-1280-1..4: the map caption now sits at full reading width, wraps in four lines plus the credit line, no narrow column; map width equals text column; photo of Europe beside its text is unchanged and fine.
+- selita-390-1..3: the map and caption at phone width, no overflow or clipping.
+- fig-1-390 (hero), fig-2-390 (greenhouse), fig-3-390 (emissions bars): legible, labels in LaTeX, units on the axis, fossil and other bars distinct, scale honest.
+- top-390, intro-1280, example-390-1 (aligned chain, units upright), sim-390, sim-1280; theory maths, table and bar chart at 1280.
+- Not opened: contact sheets, exercise, exit-ticket and open-state captures; the change under review does not touch them (PASS limited to the theory, figures, example and sim).
+
+## Scores
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

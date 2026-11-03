@@ -732,6 +732,7 @@ figure.unit-photo .photo-credit{display:block;margin-top:.2rem;font-size:var(--f
 figure.unit-photo.logo img{width:100%;max-width:16rem;max-height:none}
 figure.unit-photo.wide{display:block;width:100%;max-width:var(--measure)}
 figure.unit-photo.wide img{width:100%;max-width:100%;max-height:none}
+figure.unit-photo.wide figcaption{display:block;max-width:var(--measure)}
 /* On a wide screen a photo in the running text sits beside the text column, in the empty space to its right
    (teacher 2026-11-01); inside a box or on a narrower screen it stays in the column. */
 @media (min-width:80rem){
