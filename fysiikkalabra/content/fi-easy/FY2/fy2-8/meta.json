@@ -28,7 +28,7 @@
     },
     {
       "term": "päästökerroin",
-      "explain": "Kertoo, kuinka paljon hiilidioksidiekvivalenttia syntyy yhtä energiayksikköä kohti."
+      "explain": "Kertoo, kuinka paljon kasvihuonekaasuja (laskettuna hiilidioksidiksi) syntyy yhtä energiayksikköä kohti."
     },
     {
       "term": "kestävä energiatalous",

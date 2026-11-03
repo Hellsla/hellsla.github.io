@@ -31,7 +31,7 @@
     },
     {
       "term": "suuruusluokka",
-      "explain": "Kertoo luvun koon suunnilleen: se on lukua lähin kymmenpotenssi."
+      "explain": "Kertoo luvun koon suunnilleen: se on kymmenpotenssien akselilla lukua lähin kymmenpotenssi."
     },
     {
       "term": "alkeishiukkanen",

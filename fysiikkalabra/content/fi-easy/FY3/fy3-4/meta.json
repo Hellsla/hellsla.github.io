@@ -38,7 +38,7 @@
     },
     {
       "term": "ilmanpaine",
-      "explain": "Ilman aiheuttama paine."
+      "explain": "Ilmakehän ilman painosta syntyvä paine. Se vaikuttaa kaikkiin pintoihin ympärillämme."
     }
   ],
   "sim": true,

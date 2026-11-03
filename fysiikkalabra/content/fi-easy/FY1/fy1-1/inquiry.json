@@ -37,7 +37,7 @@
         },
         {
           "text": "$0{,}0001$",
-          "feedback": "Tässä on yksi nolla liikaa: $0{,}0001 = 10^{-4}$. Luvussa $10^{-3}$ on ykkösen jälkeen kolme desimaalia. Viimeinen niistä on ykkönen: $0{,}001$."
+          "feedback": "Tässä on yksi nolla liikaa: $0{,}0001 = 10^{-4}$. Luvussa $10^{-3}$ on pilkun jälkeen kolme desimaalia. Viimeinen niistä on ykkönen: $0{,}001$."
         },
         {
           "text": "$0{,}03$",
@@ -416,7 +416,7 @@
       "stage": "sovella",
       "type": "numeric",
       "title": "Valinnainen: Maan koko mitataan",
-      "prompt": "Kaksi mittaajaa seisoo samalla pohjois–etelä-suoralla etäisyyden $8{,}0\\cdot10^{2}\\,\\text{km}$ päässä toisistaan. Keskipäivällä Aurinko on toisen kohdalla suoraan pään päällä. Toisen mittaajan pystysuora tikku heittää varjon. Varjo kertoo, että Auringon säde on $7{,}2^\\circ$ kulmassa tikkuun nähden. Aurinko on niin kaukana, että sen säteet ovat yhdensuuntaiset. Siksi kulma $7{,}2^\\circ$ on myös mittaajien välinen kaarikulma Maan keskipisteestä. Maa on pallo. Mikä on Maan halkaisija? Vastaa kilometreinä.",
+      "prompt": "Kaksi mittaajaa seisoo samalla pohjois–etelä-suoralla etäisyyden $8{,}0\\cdot10^{2}\\,\\text{km}$ päässä toisistaan. Keskipäivällä Aurinko on toisen kohdalla suoraan pään päällä. Toisen mittaajan pystysuora tikku heittää varjon. Varjo kertoo, että auringonsäteet tulevat $7{,}2^\\circ$:n kulmassa tikkuun nähden. Aurinko on niin kaukana, että sen säteet ovat yhdensuuntaiset. Siksi kulma $7{,}2^\\circ$ on myös mittaajien välinen kaarikulma Maan keskipisteestä. Maa on pallo. Mikä on Maan halkaisija? Vastaa kilometreinä.",
       "answer": 12732,
       "unit": "km",
       "tolerance": 0.03,

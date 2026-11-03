@@ -36,7 +36,7 @@
     },
     {
       "term": "inertia",
-      "explain": "Kappaleen ominaisuus vastustaa liiketilan muutosta. Mitä suurempi massa, sitä suurempi inertia."
+      "explain": "Kappaleen ominaisuus, jonka takia sen nopeutta tai liikkeen suuntaa on vaikea muuttaa. Mitä suurempi massa, sitä suurempi inertia."
     }
   ],
   "sim": true,
