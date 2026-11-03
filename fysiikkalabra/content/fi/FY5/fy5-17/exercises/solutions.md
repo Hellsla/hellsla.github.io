@@ -42,27 +42,27 @@
 **Annettu:** veden syvyys $h = 50\,\text{m}$, $g = 9{,}81\,\text{m/s}^2$; aallonpituus paljon suurempi kuin syvyys
 **Kysytty:** tsunamin nopeus $v$ metreinä sekunnissa
 **Periaate:** Kun aallonpituus on paljon suurempi kuin veden syvyys, aalto on matalan veden aalto, jonka nopeus riippuu vain syvyydestä ja putoamiskiihtyvyydestä.
-**Kaava:** $v = \sqrt{g h}$
+**Kaava:** $v = \sqrt{g h}$; nopeus on verrannollinen syvyyden neliöjuureen.
 **Muunnokset:** Syvyys on metreinä ja $g$ yksikössä $\text{m/s}^2$, joten muunnoksia ei tarvita: $\sqrt{\text{m/s}^2 \cdot \text{m}} = \text{m/s}$.
 **Sijoitus:** $v = \sqrt{9{,}81\,\text{m/s}^2 \cdot 50\,\text{m}} = \sqrt{490{,}5\,\text{m}^2/\text{s}^2} = 22{,}15\,\text{m/s}$
 **Vastaus:** $22\,\text{m/s}$, kaksi merkitsevää numeroa kuten syvyydessä $50\,\text{m}$.
 **Järkevyys:** Nopeus on noin $80\,\text{km/h}$, paljon vähemmän kuin valtamerellä, jossa tsunami etenee neljän kilometrin syvyydessä noin $198\,\text{m/s}$. Syvyys on $80$ kertaa pienempi, joten nopeuden pitäisi olla noin $\sqrt{80} \approx 9$ kertaa pienempi: $198\,\text{m/s} : 9 \approx 22\,\text{m/s}$.
 
 ## fy5-17-L2-01
-**Annettu:** seismogrammi kuvaajana, $v_\text{P} = 6{,}0\,\text{km/s}$, $v_\text{S} = 3{,}5\,\text{km/s}$
+**Annettu:** seismogrammi kuvaajana, $v_\text{P} = 7{,}0\,\text{km/s}$, $v_\text{S} = 4{,}0\,\text{km/s}$
 **Kysytty:** aseman etäisyys $d$ järistyksen alkukohdasta kilometreinä
 **Periaate:** Kumpikin aalto kulkee saman matkan tasaisella nopeudella, joten saapumisaikojen ero on S- ja P-aallon kulkuaikojen erotus. Järistyksen hetkeä ei tarvita, koska aikaero ei riipu siitä, mistä hetkestä aika on laskettu.
 **Kuvaajan lukeminen:** Pieni värähtely eli P-aalto alkaa apuviivalla $12\,\text{s}$ ja suurempi värähtely eli S-aalto apuviivalla $30\,\text{s}$. Aikaero on $\Delta t = 30\,\text{s} - 12\,\text{s} = 18\,\text{s}$.
 **Kaava:** $\Delta t = \dfrac{d}{v_\text{S}} - \dfrac{d}{v_\text{P}}$, joten $d = \dfrac{v_\text{P} v_\text{S}}{v_\text{P} - v_\text{S}}\,\Delta t$
 **Muunnokset:** Nopeudet ovat yksikössä km/s ja aika sekunteina, joten etäisyys tulee kilometreinä.
-**Sijoitus:** $d = \dfrac{6{,}0\,\text{km/s} \cdot 3{,}5\,\text{km/s}}{6{,}0\,\text{km/s} - 3{,}5\,\text{km/s}} \cdot 18\,\text{s} = 8{,}4\,\text{km/s} \cdot 18\,\text{s} = 151{,}2\,\text{km}$
-**Vastaus:** $150\,\text{km}$, kaksi merkitsevää numeroa kuten nopeuksissa $6{,}0\,\text{km/s}$ ja $3{,}5\,\text{km/s}$.
-**Järkevyys:** P-aalto kulkee $151\,\text{km}$ ajassa $151\,\text{km} : 6{,}0\,\text{km/s} \approx 25\,\text{s}$ ja S-aalto ajassa $151\,\text{km} : 3{,}5\,\text{km/s} \approx 43\,\text{s}$; ero on $18\,\text{s}$, kuten kuvaajasta luettiin. Tallennus alkoi siis noin $13\,\text{s}$ järistyksen jälkeen.
+**Sijoitus:** $d = \dfrac{7{,}0\,\text{km/s} \cdot 4{,}0\,\text{km/s}}{7{,}0\,\text{km/s} - 4{,}0\,\text{km/s}} \cdot 18\,\text{s} = 9{,}33\,\text{km/s} \cdot 18\,\text{s} = 168\,\text{km}$
+**Vastaus:** $168\,\text{km}$ (nopeuksien tarkkuus $7{,}0$ ja $4{,}0$ rajoittaisi kahteen merkitsevään numeroon, $170\,\text{km}$; annetaan $168\,\text{km}$ välituloksen kanssa).
+**Järkevyys:** P-aalto kulkee $168\,\text{km}$ ajassa $168\,\text{km} : 7{,}0\,\text{km/s} = 24\,\text{s}$ ja S-aalto ajassa $168\,\text{km} : 4{,}0\,\text{km/s} = 42\,\text{s}$; ero on $18\,\text{s}$, kuten kuvaajasta luettiin. Tallennus alkoi siis $12\,\text{s}$ järistyksen jälkeen.
 
 ## fy5-17-L2-02
 **Annettu:** rakenteiden väli $0{,}300\,\text{mm}$, erottumisen ehto: väli vähintään $2\lambda$, äänen nopeus $v = 1540\,\text{m/s}$
 **Kysytty:** pienin taajuus $f$ megahertseinä
-**Periaate:** Rakenteet erottuvat, kun aallonpituus on enintään puolet niiden välistä. Aallonpituus lyhenee, kun taajuus kasvaa, joten pienin kelpaava taajuus vastaa suurinta kelpaavaa aallonpituutta. Ensin ratkaistaan aallonpituus, sitten taajuus.
+**Periaate:** Oletetaan tehtävän mukaan, että rakenteet erottuvat, kun niiden väli on vähintään kaksi aallonpituutta (luvun tekstissä sanotaan väljemmin "muutama aallonpituus"), eli aallonpituus on enintään puolet niiden välistä. Aallonpituus lyhenee, kun taajuus kasvaa, joten pienin kelpaava taajuus vastaa suurinta kelpaavaa aallonpituutta. Ensin ratkaistaan aallonpituus, sitten taajuus.
 **Kaava:** $2\lambda = 0{,}300\,\text{mm}$, joten $\lambda = \dfrac{0{,}300\,\text{mm}}{2}$; $v = f\lambda$, joten $f = \dfrac{v}{\lambda}$
 **Muunnokset:** $\lambda = 0{,}150\,\text{mm} = 0{,}150 \cdot 10^{-3}\,\text{m}$; lopuksi $1\,\text{MHz} = 10^{6}\,\text{Hz}$.
 **Sijoitus:** $f = \dfrac{1540\,\text{m/s}}{0{,}150 \cdot 10^{-3}\,\text{m}} = 1{,}027 \cdot 10^{7}\,\text{Hz} = 10{,}27\,\text{MHz}$
@@ -71,11 +71,11 @@
 
 ## fy5-17-L2-03
 **Annettu:** suurin kuvaussyvyys $d = 20\,\text{cm}$, äänen nopeus $v = 1540\,\text{m/s}$
-**Kysytty:** suurin pulssien määrä sekunnissa $n$ kilohertseinä
+**Kysytty:** pulssien suurin lähetystaajuus $n$ kilohertseinä
 **Periaate:** Uutta pulssia ei lähetetä, ennen kuin syvimmän kohdan kaiku on palannut. Ensin lasketaan, kuinka kauan kaiku kulkee $20\,\text{cm}$:n syvyyteen ja takaisin; yhden sekunnin aikana mahtuu enintään sekunti jaettuna tällä ajalla pulssia.
 **Kaava:** $t = \dfrac{2d}{v}$ ja $n = \dfrac{1}{t}$, joten $n = \dfrac{v}{2d}$
-**Muunnokset:** $d = 20\,\text{cm} = 0{,}20\,\text{m}$; lopuksi $1\,\text{kHz} = 1000\,\tfrac{1}{\text{s}}$.
-**Sijoitus:** $t = \dfrac{2 \cdot 0{,}20\,\text{m}}{1540\,\text{m/s}} = 2{,}597 \cdot 10^{-4}\,\text{s}$ ja $n = \dfrac{1}{2{,}597 \cdot 10^{-4}\,\text{s}} = 3850\,\tfrac{1}{\text{s}} = 3{,}85\,\text{kHz}$
+**Muunnokset:** $d = 20\,\text{cm} = 0{,}20\,\text{m}$; lopuksi $1\,\text{kHz} = 1000\,\text{s}^{-1}$.
+**Sijoitus:** $t = \dfrac{2 \cdot 0{,}20\,\text{m}}{1540\,\text{m/s}} = 2{,}597 \cdot 10^{-4}\,\text{s}$ ja $n = \dfrac{1}{2{,}597 \cdot 10^{-4}\,\text{s}} = 3850\,\text{s}^{-1} = 3{,}85\,\text{kHz}$
 **Vastaus:** $3{,}9\,\text{kHz}$ eli noin $3900$ pulssia sekunnissa, kaksi merkitsevää numeroa kuten syvyydessä $20\,\text{cm}$.
 **Järkevyys:** Kaiku kulkee $40\,\text{cm}$:n edestakaisen matkan noin neljänneksessä millisekuntia, joten sekuntiin mahtuu muutama tuhat pulssia. Jos kuvattaisiin vain $5\,\text{cm}$:n syvyyteen, pulsseja mahtuisi nelinkertainen määrä.
 
@@ -90,24 +90,24 @@
 **Järkevyys:** S-aallon kulkuaika on $117{,}6\,\text{km} : 3{,}5\,\text{km/s} = 33{,}6\,\text{s}$, ja $33{,}6\,\text{s} - 19{,}6\,\text{s} = 14{,}0\,\text{s}$, kuten mitattiin. P-aallon kulkuaika on suurempi kuin aikaero, koska P-aaltokin tarvitsee aikaa koko matkaan.
 
 ## fy5-17-L3-01
-**Annettu:** lepakon nopeus $v_\text{lep} = 5{,}0\,\text{m/s}$ kohti seinää, kaiun viive $t = 40\,\text{ms}$, äänen nopeus $v = 343\,\text{m/s}$
+**Annettu:** lepakon nopeus $v_\text{lep} = 10\,\text{m/s}$ kohti seinää, kaiun viive $t = 40\,\text{ms}$, äänen nopeus $v = 343\,\text{m/s}$
 **Kysytty:** etäisyys $d$ seinään äännähdyksen hetkellä metreinä
 **Periaate:** Ääni kulkee seinään matkan $d$ ja palaa lepakon luo. Kaiun aikana lepakko on lentänyt matkan $v_\text{lep} t$ kohti seinää, joten paluumatka on $d - v_\text{lep} t$. Äänen kulkema kokonaismatka on äänen nopeus kertaa viive.
 **Kaava:** $d + (d - v_\text{lep} t) = v t$, joten $2d = (v + v_\text{lep})\,t$ ja $d = \dfrac{(v + v_\text{lep})\,t}{2}$
 **Muunnokset:** $40\,\text{ms} = 40 \cdot 10^{-3}\,\text{s} = 0{,}040\,\text{s}$
-**Sijoitus:** $d = \dfrac{(343\,\text{m/s} + 5{,}0\,\text{m/s}) \cdot 0{,}040\,\text{s}}{2} = \dfrac{13{,}92\,\text{m}}{2} = 6{,}96\,\text{m}$
-**Vastaus:** $7{,}0\,\text{m}$, kaksi merkitsevää numeroa kuten viiveessä $40\,\text{ms}$ ja lepakon nopeudessa $5{,}0\,\text{m/s}$.
-**Järkevyys:** Jos lepakko olisi paikallaan, etäisyys olisi $343\,\text{m/s} \cdot 0{,}040\,\text{s} : 2 = 6{,}86\,\text{m}$. Lepakon liike lyhentää paluumatkaa, joten seinä oli vähän kauempana, $10\,\text{cm}$ eli puolet lepakon lentämästä matkasta $0{,}20\,\text{m}$.
+**Sijoitus:** $d = \dfrac{(343\,\text{m/s} + 10\,\text{m/s}) \cdot 0{,}040\,\text{s}}{2} = \dfrac{14{,}12\,\text{m}}{2} = 7{,}06\,\text{m}$
+**Vastaus:** $7{,}06\,\text{m}$ (lähtötiedot kahdella merkitsevällä numerolla antaisivat $7{,}1\,\text{m}$; kolmas numero näytetään, jotta ero paikallaan olevan lepakon tulokseen $6{,}86\,\text{m}$ erottuu).
+**Järkevyys:** Jos lepakko olisi paikallaan, etäisyys olisi $343\,\text{m/s} \cdot 0{,}040\,\text{s} : 2 = 6{,}86\,\text{m}$. Lepakon liike lyhentää paluumatkaa, joten seinä oli kauempana, $20\,\text{cm}$ eli puolet lepakon lentämästä matkasta $10\,\text{m/s} \cdot 0{,}040\,\text{s} = 0{,}40\,\text{m}$.
 
 ## fy5-17-L3-02
-**Annettu:** rasvan paksuus $d_\text{ras} = 2{,}0\,\text{cm}$, $v_\text{ras} = 1450\,\text{m/s}$, lihaksen $v_\text{lih} = 1580\,\text{m/s}$, kaiun kulkuaika $t = 60{,}0\,\mu\text{s}$
+**Annettu:** rasvan paksuus $d_\text{ras} = 4{,}0\,\text{cm}$, $v_\text{ras} = 1450\,\text{m/s}$, lihaksen $v_\text{lih} = 1580\,\text{m/s}$, kaiun kulkuaika $t = 80{,}0\,\mu\text{s}$ lihaskerroksen alapinnalta
 **Kysytty:** rajapinnan todellinen syvyys $d$ ihon pinnasta senttimetreinä
 **Periaate:** Pulssi kulkee ensin rasvan läpi edestakaisin ja käyttää siihen osan kulkuajasta. Loppuaika kuluu lihaksessa edestakaisin. Kummassakin kerroksessa nopeus on vakio, joten kerroksen paksuus on nopeus kertaa kerroksessa kulunut aika jaettuna kahdella.
 **Kaava:** $t_\text{ras} = \dfrac{2 d_\text{ras}}{v_\text{ras}}$ ja $d_\text{lih} = \dfrac{v_\text{lih}\,(t - t_\text{ras})}{2}$, joten $d = d_\text{ras} + d_\text{lih} = d_\text{ras} + \dfrac{v_\text{lih}}{2}\left(t - \dfrac{2 d_\text{ras}}{v_\text{ras}}\right)$
-**Muunnokset:** $d_\text{ras} = 2{,}0\,\text{cm} = 0{,}020\,\text{m}$, $t = 60{,}0 \cdot 10^{-6}\,\text{s}$; lopuksi $1\,\text{m} = 100\,\text{cm}$.
-**Sijoitus:** $t_\text{ras} = \dfrac{2 \cdot 0{,}020\,\text{m}}{1450\,\text{m/s}} = 27{,}59 \cdot 10^{-6}\,\text{s}$, $d_\text{lih} = \dfrac{1580\,\text{m/s} \cdot 32{,}41 \cdot 10^{-6}\,\text{s}}{2} = 0{,}025\,61\,\text{m}$ ja $d = 0{,}020\,\text{m} + 0{,}025\,61\,\text{m} = 0{,}045\,61\,\text{m} = 4{,}561\,\text{cm}$
-**Vastaus:** $4{,}6\,\text{cm}$, kaksi merkitsevää numeroa kuten rasvan paksuudessa $2{,}0\,\text{cm}$.
-**Järkevyys:** Laite, joka olettaa nopeudeksi $1540\,\text{m/s}$, näyttäisi syvyydeksi $1540\,\text{m/s} \cdot 60{,}0\,\mu\text{s} : 2 = 4{,}62\,\text{cm}$. Ero on vain noin millimetri, koska nopeudet poikkeavat keskiarvosta vain muutaman prosentin. Siksi yksi oletusnopeus riittää useimpiin mittauksiin.
+**Muunnokset:** $d_\text{ras} = 4{,}0\,\text{cm} = 0{,}040\,\text{m}$, $t = 80{,}0 \cdot 10^{-6}\,\text{s}$; lopuksi $1\,\text{m} = 100\,\text{cm}$.
+**Sijoitus:** $t_\text{ras} = \dfrac{2 \cdot 0{,}040\,\text{m}}{1450\,\text{m/s}} = 55{,}17 \cdot 10^{-6}\,\text{s}$, $d_\text{lih} = \dfrac{1580\,\text{m/s} \cdot 24{,}83 \cdot 10^{-6}\,\text{s}}{2} = 0{,}019\,62\,\text{m}$ ja $d = 0{,}040\,\text{m} + 0{,}019\,62\,\text{m} = 0{,}059\,62\,\text{m} = 5{,}96\,\text{cm}$
+**Vastaus:** $5{,}96\,\text{cm}$ (rasvan paksuus $4{,}0\,\text{cm}$ rajoittaisi kahteen merkitsevään numeroon, $6{,}0\,\text{cm}$; kolme numeroa näytetään, jotta ero yhden nopeuden tulokseen erottuu).
+**Järkevyys:** Laite, joka olettaa nopeudeksi $1540\,\text{m/s}$, näyttäisi syvyydeksi $1540\,\text{m/s} \cdot 80{,}0\,\mu\text{s} : 2 = 6{,}16\,\text{cm}$, eli $2\,\text{mm}$ liikaa. Jos koko matka olisi lihasta, tulos olisi $1580\,\text{m/s} \cdot 80{,}0\,\mu\text{s} : 2 = 6{,}32\,\text{cm}$. Todellinen syvyys on näiden alapuolella, koska rasvassa ääni etenee hitaammin. Ero on silti vain muutaman prosentin, joten yksi oletusnopeus riittää useimpiin mittauksiin.
 
 ## fy5-17-L3-03
 **Annettu:** syvyydet $h_1 = 4000\,\text{m}$ ja $h_2 = 10\,\text{m}$, aallonpituus $\lambda_1 = 200\,\text{km}$; jaksonaika $T$ sama

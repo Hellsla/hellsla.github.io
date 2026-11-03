@@ -1,12 +1,8 @@
 VERDICT: DONE
 
-Draft, round 1 (applied chapter, no simulation; meta.json unchanged, `"sim": false`).
-
-- `lesson.md`: Ydinajatus (echo depth, B/A-scan, why gel with reflected fractions, frequency vs λ vs depth with a table, Doppler as a link to *Äänen ominaisuudet*, bats/dolphins/sonar, P/S/surface waves and the liquid outer core, tsunami), `## Kaava: Etäisyys aallon kulkuajasta` (d = vt/2, S−P distance, v = √(gh) given), sources paragraph, staged S−P example, misconception, summary.
-- `lessons/FY5/fy5-17/figures.py`: hero (ultrasound exam) and kaiku, taajuus, maapallo, kulkuaika, tsunami in the text; task figures a-scan, seismogrammit (inquiry) and seismogrammi-ex (L2-01). Velocity/propagation blue; P solid ink, S dashed orange.
-- `inquiry.json`: hook, retrieval (v = fλ), two predictions revealed after the theory, three interpret tasks (reflection table, model A-scan reading, three-station seismograms), reflect, example, transfer (tsunami warning time), error-spotting, three checks, exit.
-- `exit-ticket.json`, `exercises/exercises.json` (5/4/3), `exercises/solutions.md`.
-- `answers.py`, `lesson-answers.py`: every number.
-- `glossary.json`: ultraääni, maanjäristysaalto.
-
-Checks: check_lesson all ok; layout 345 ok. figcat.py build not run (coordinator).
+Fix round 1 (lesson).
+- lesson.md:161, exit-ticket.json:3-4: hard "at least one wavelength" rule replaced by "paljon aallonpituutta pienemmästä kappaleesta palaa vain hyvin heikko kaiku"; prey is about 1 cm, answer says 7 mm is mosquito size and 34 cm a hundred times larger. Water speed now "1400–1500 m/s lämpötilasta riippuen".
+- lesson.md:61, 388: "$2\text{–}15\,\text{MHz}$" in one span. lesson.md:337 "likiarvoja". "(lisätieto)" added to the bat and tsunami headings.
+- inquiry.json: sydän "ulottuu yli 10 cm:n syvyyteen", "selittää, miksi lepakot…", "hyönteisen koko", "elinten reunat", clearer error-spotting wording.
+- figures.py (kulkuaika): redrawn at 105 km (17,5 s, 30 s, 12,5 s); figures.py run, lesson.md updated.
+Checks: figures, check_lesson, lint_lesson, check_solutions ok.

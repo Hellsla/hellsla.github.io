@@ -45,8 +45,8 @@
     {
       "id": "fy5-17-L2-01",
       "level": 2,
-      "text": "Kuvaajassa on seismografiaseman seismogrammi maanjäristyksestä. Aika on laskettu tallennuksen alusta, ei järistyksen hetkestä. P-aallon nopeus on $6{,}0\\,\\text{km/s}$ ja S-aallon $3{,}5\\,\\text{km/s}$. Kuinka kaukana asemasta järistys tapahtui? Anna vastaus kilometreinä.",
-      "answer": 150,
+      "text": "Kuvaajassa on seismografiaseman seismogrammi maanjäristyksestä. Aika on laskettu tallennuksen alusta, ei järistyksen hetkestä. P-aallon nopeus on $7{,}0\\,\\text{km/s}$ ja S-aallon $4{,}0\\,\\text{km/s}$. Kuinka kaukana asemasta järistys tapahtui? Anna vastaus kilometreinä.",
+      "answer": 168,
       "unit": "km",
       "tolerance": 0.02,
       "figure": "fy5-17/seismogrammi-ex"
@@ -62,7 +62,7 @@
     {
       "id": "fy5-17-L2-03",
       "level": 2,
-      "text": "Ultraäänilaite lähettää uuden pulssin vasta, kun edellisen pulssin kaiku syvimmästä kuvattavasta kohdasta on palannut. Vatsaa kuvataan $20\\,\\text{cm}$:n syvyyteen asti, ja ääni etenee kudoksessa nopeudella $1540\\,\\text{m/s}$. Kuinka monta pulssia laite voi enintään lähettää sekunnissa? Anna vastaus kilohertseinä.",
+      "text": "Ultraäänilaite lähettää uuden pulssin vasta, kun edellisen pulssin kaiku syvimmästä kuvattavasta kohdasta on palannut. Vatsaa kuvataan $20\\,\\text{cm}$:n syvyyteen asti, ja ääni etenee kudoksessa nopeudella $1540\\,\\text{m/s}$. Mikä on suurin pulssien lähetystaajuus? Anna vastaus kilohertseinä.",
       "answer": 3.9,
       "unit": "kHz",
       "tolerance": 0.02
@@ -80,16 +80,16 @@
     {
       "id": "fy5-17-L3-01",
       "level": 3,
-      "text": "Lepakko lentää suoraan kohti ladon seinää nopeudella $5{,}0\\,\\text{m/s}$ ja päästää äännähdyksen. Se kuulee kaiun seinästä $40\\,\\text{ms}$ myöhemmin. Ääni etenee ilmassa nopeudella $343\\,\\text{m/s}$. Kuinka kaukana seinästä lepakko oli, kun se päästi äännähdyksen? Anna vastaus metreinä.",
-      "answer": 7.0,
+      "text": "Lepakko lentää suoraan kohti ladon seinää nopeudella $10\\,\\text{m/s}$ ja päästää äännähdyksen. Se kuulee kaiun seinästä $40\\,\\text{ms}$ myöhemmin. Ääni etenee ilmassa nopeudella $343\\,\\text{m/s}$. Kuinka kaukana seinästä lepakko oli, kun se päästi äännähdyksen? Anna vastaus metreinä.",
+      "answer": 7.06,
       "unit": "m",
       "tolerance": 0.02
     },
     {
       "id": "fy5-17-L3-02",
       "level": 3,
-      "text": "Ihon alla on $2{,}0\\,\\text{cm}$ paksu rasvakerros, jossa ääni etenee nopeudella $1450\\,\\text{m/s}$, ja sen alla lihas, jossa ääni etenee nopeudella $1580\\,\\text{m/s}$. Lihaksessa olevalta rajapinnalta palaa kaiku $60{,}0\\,\\mu\\text{s}$ pulssin lähettämisen jälkeen. Kuinka syvällä ihon pinnasta rajapinta todella on? Anna vastaus senttimetreinä.",
-      "answer": 4.6,
+      "text": "Ihon alla on $4{,}0\\,\\text{cm}$ paksu rasvakerros, jossa ääni etenee nopeudella $1450\\,\\text{m/s}$, ja sen alla lihas, jossa ääni etenee nopeudella $1580\\,\\text{m/s}$. Lihaskerroksen alapinnalta palaa kaiku $80{,}0\\,\\mu\\text{s}$ pulssin lähettämisen jälkeen. Kuinka syvällä ihon pinnasta rajapinta todella on? Anna vastaus senttimetreinä.",
+      "answer": 5.96,
       "unit": "cm",
       "tolerance": 0.02
     },

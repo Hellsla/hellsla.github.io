@@ -163,20 +163,20 @@ def maapallo():
 def kulkuaika():
     f = Fig("fy517-kulkuaika", 360, "Kuvaaja mittakaavassa: P- ja S-aallon kulkuaika t sekunteina etäisyyden d funktiona "
             "kilometreinä nollasta 300 kilometriin, kun P-aallon nopeus on 6,0 km/s ja S-aallon 3,5 km/s. Kumpikin on origosta "
-            "nouseva suora; S-aallon suora on jyrkempi. Etäisyydellä 210 km P-aallon kulkuaika on 35 s ja S-aallon 60 s, ja "
-            "niiden ero, 25 s, on merkitty pystysuoralla janalla.")
+            "nouseva suora; S-aallon suora on jyrkempi. Etäisyydellä 105 km P-aallon kulkuaika on 17,5 s ja S-aallon 30 s, ja "
+            "niiden ero, 12,5 s, on merkitty pystysuoralla janalla.")
     ax = Axes(f, (96, 306), (480, 72), x=(0, 300), y=(0, 90), xticks=[50, 100, 150, 200, 250, 300],
               yticks=[10, 20, 30, 40, 50, 60, 70, 80, 90], xlabel=r"d\ (\text{km})", ylabel=r"t\ (\text{s})",
               yfmt=lambda v: fi(v) if v % 20 == 0 else "")
     ax.line([(0, 0), (300, 300 / VP)], INK, 3)
     ax.line([(0, 0), (300, 300 / VS)], HEAT, 3, "11 7")
-    d = 210
+    d = 105
     ax.guide(d, d / VS)
     f.line(ax.x0, ax.Y(d / VP), ax.X(d), ax.Y(d / VP), MUTED, 1.5, "6 5")
     ax.point(d, d / VP, INK)
     ax.point(d, d / VS, HEAT)
     f.path(f"M{n(ax.X(d) + 12)},{n(ax.Y(d / VS))} H{n(ax.X(d) + 20)} V{n(ax.Y(d / VP))} H{n(ax.X(d) + 12)}", stroke=INK, w=2)
-    f.tex(ax.X(d) + 28, (ax.Y(d / VS) + ax.Y(d / VP)) / 2, r"\Delta t", "start")
+    f.tex(ax.X(d) + 26, ax.Y(28), r"\Delta t", "start")   # between the lines: P is below 21 s here
     f.tex(ax.X(300) + 8, ax.Y(300 / VP), r"\text{P}", "start")
     f.tex(ax.X(300) - 30, ax.Y(300 / VS) - 4, r"\text{S}", "end", HEAT)
     return f.svg()
@@ -346,7 +346,7 @@ REUSE = {
     "kaiku": "reveals: the echo travels to the boundary and back, depth d from the skin",
     "taajuus": "reveals: a higher frequency has a shorter wavelength and reaches less deep",
     "maapallo": "reveals: S waves stop at the liquid outer core, S shadow zone from about 103°",
-    "kulkuaika": "reveals: t_P and t_S grow linearly with d, Δt = 25 s at 210 km",
+    "kulkuaika": "reveals: t_P and t_S grow linearly with d, Δt = 12,5 s at 105 km",
     "tsunami": "reveals: v = √(gh), 198 m/s at 4000 m",
     "a-scan": "safe: a model A-scan of a thigh, echoes A 20 µs, B 50 µs, C 90 µs, nothing after C; no depths",
     "seismogrammit": "safe: model seismograms at 84, 168 and 252 km, P and S onsets marked on a 2 s grid; no speeds or ratio",

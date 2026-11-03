@@ -16,7 +16,7 @@
       "id": "hook",
       "stage": "herata",
       "type": "hook",
-      "text": "Tutkimushuoneessa potilas makaa selällään. Hoitaja levittää vatsan iholle kylmää, läpikuultavaa geeliä ja painaa sen päälle kämmenen kokoisen anturin. Näytölle piirtyy harmaa viuhka, jossa erottuvat elimien reunat. Anturi ei lähetä valoa eikä röntgensäteilyä. Se lähettää ääntä, jota korva ei kuule, ja kuuntelee kaikuja.",
+      "text": "Tutkimushuoneessa potilas makaa selällään. Hoitaja levittää vatsan iholle kylmää, läpikuultavaa geeliä ja painaa sen päälle kämmenen kokoisen anturin. Näytölle piirtyy harmaa viuhka, jossa erottuvat elinten reunat. Anturi ei lähetä valoa eikä röntgensäteilyä. Se lähettää ääntä, jota korva ei kuule, ja kuuntelee kaikuja.",
       "question": "Miten pelkistä kaiuista voidaan päätellä, kuinka syvällä kehossa jokin rakenne on, ja mihin geeliä tarvitaan?"
     },
     {
@@ -29,7 +29,7 @@
         {
           "text": "noin $8{,}6\\,\\text{mm}$",
           "correct": true,
-          "feedback": "Oikein. Yhtälöstä $v = f\\lambda$ saadaan $\\lambda = \\tfrac{v}{f} = \\tfrac{343\\,\\text{m/s}}{40\\,000\\,\\text{Hz}} \\approx 0{,}0086\\,\\text{m}$ (luku *Mekaaninen aaltoliike*). Aallonpituus on samaa suuruusluokkaa kuin hyönteinen, ja tämä selittää tänään, miksi lepakot käyttävät ultraääntä."
+          "feedback": "Oikein. Yhtälöstä $v = f\\lambda$ saadaan $\\lambda = \\tfrac{v}{f} = \\tfrac{343\\,\\text{m/s}}{40\\,000\\,\\text{Hz}} \\approx 0{,}0086\\,\\text{m}$ (luku *Mekaaninen aaltoliike*). Aallonpituus on samaa suuruusluokkaa kuin hyönteisen koko, ja tämä selittää, miksi lepakot käyttävät ultraääntä."
         },
         {
           "text": "noin $1{,}4 \\cdot 10^{7}\\,\\text{m}$",
@@ -259,7 +259,7 @@
         {
           "text": "Aikaero on kulkuaikojen erotus $\\Delta t = \\tfrac{d}{v_\\text{S}} - \\tfrac{d}{v_\\text{P}}$, joten oikea tulos on $d = 168\\,\\text{km}$.",
           "correct": true,
-          "feedback": "Oikein. Opiskelijan tulo $(v_\\text{P} - v_\\text{S})\\,\\Delta t$ on aaltojen välimatka hetkellä, jolloin P-aalto on kulkenut $20\\,\\text{s}$, ei aseman etäisyys. Aikaero syntyy koko matkalta, ja kulkuajat ovat matka jaettuna nopeudella. Kun $d$ ratkaistaan yhtälöstä $\\Delta t = \\tfrac{d}{v_\\text{S}} - \\tfrac{d}{v_\\text{P}}$, saadaan $d = 8{,}4\\,\\tfrac{\\text{km}}{\\text{s}} \\cdot 20\\,\\text{s} = 168\\,\\text{km}$. Tarkistus: P-aalto kulkee sen $28\\,\\text{s}$:ssa ja S-aalto $48\\,\\text{s}$:ssa."
+          "feedback": "Oikein. Opiskelijan tulo $(v_\\text{P} - v_\\text{S})\\,\\Delta t$ on aaltojen välinen matka $20\\,\\text{s}$ järistyksen jälkeen, ei aseman etäisyys. Aikaero syntyy koko matkalta, ja kulkuajat ovat matka jaettuna nopeudella. Kun $d$ ratkaistaan yhtälöstä $\\Delta t = \\tfrac{d}{v_\\text{S}} - \\tfrac{d}{v_\\text{P}}$, saadaan $d = 8{,}4\\,\\tfrac{\\text{km}}{\\text{s}} \\cdot 20\\,\\text{s} = 168\\,\\text{km}$. Tarkistus: P-aalto kulkee sen $28\\,\\text{s}$:ssa ja S-aalto $48\\,\\text{s}$:ssa."
         },
         {
           "text": "Nopeudet olisi pitänyt muuttaa metreiksi sekunnissa ennen kuin ne sijoitetaan yhtälöön.",
@@ -331,7 +331,7 @@
       "type": "explain",
       "title": "3. Selitä taajuuden valinta",
       "prompt": "Sydän kuvataan tavallisesti noin $3\\,\\text{MHz}$:n anturilla, mutta ranteen jänne noin $12\\,\\text{MHz}$:n anturilla. Selitä, miksi taajuudet valitaan näin. Käytä käsitteitä aallonpituus ja vaimeneminen.",
-      "model": "Aallonpituus on $\\lambda = \\tfrac{v}{f}$, joten $12\\,\\text{MHz}$:n ultraäänen aallonpituus kudoksessa on noin $0{,}13\\,\\text{mm}$ ja $3\\,\\text{MHz}$:n noin $0{,}5\\,\\text{mm}$. Pienimmät erottuvat yksityiskohdat ovat muutaman aallonpituuden kokoisia, joten suurempi taajuus antaa tarkemman kuvan. Vaimeneminen kasvaa kuitenkin likimain suoraan verrannollisesti taajuuteen, joten $12\\,\\text{MHz}$:n pulssi heikkenee nopeasti eikä sen kaiku palaa muutamaa senttimetriä syvemmältä. Jänne on aivan ihon alla, joten sen kuvaamiseen riittää pieni syvyys ja voidaan käyttää suurta taajuutta. Sydän on yli $10\\,\\text{cm}$:n syvyydellä, joten käytetään pientä taajuutta, joka ulottuu sinne asti, ja tarkkuudesta joudutaan tinkimään.",
+      "model": "Aallonpituus on $\\lambda = \\tfrac{v}{f}$, joten $12\\,\\text{MHz}$:n ultraäänen aallonpituus kudoksessa on noin $0{,}13\\,\\text{mm}$ ja $3\\,\\text{MHz}$:n noin $0{,}5\\,\\text{mm}$. Pienimmät erottuvat yksityiskohdat ovat muutaman aallonpituuden kokoisia, joten suurempi taajuus antaa tarkemman kuvan. Vaimeneminen kasvaa kuitenkin likimain suoraan verrannollisesti taajuuteen, joten $12\\,\\text{MHz}$:n pulssi heikkenee nopeasti eikä sen kaiku palaa muutamaa senttimetriä syvemmältä. Jänne on aivan ihon alla, joten sen kuvaamiseen riittää pieni syvyys ja voidaan käyttää suurta taajuutta. Sydän ulottuu yli $10\\,\\text{cm}$:n syvyyteen, joten käytetään pientä taajuutta, joka ulottuu sinne asti, ja tarkkuudesta joudutaan tinkimään.",
       "criteria": [
         "Vastaus kertoo, että suurempi taajuus tarkoittaa lyhyempää aallonpituutta ($\\lambda = \\tfrac{v}{f}$) ja siksi tarkempaa kuvaa.",
         "Vastaus kertoo, että vaimeneminen kasvaa taajuuden kasvaessa, joten suurtaajuinen ultraääni ei ulotu syvälle.",

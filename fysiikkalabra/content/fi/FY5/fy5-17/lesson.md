@@ -58,7 +58,7 @@
 
 ## Ydinajatus
 ### Kaiku kertoo syvyyden
-Ultraääni on ääntä, jonka taajuus on yli $20\,\text{kHz}$, eli liian suuri ihmisen kuultavaksi. Lääketieteellisessä kuvauksessa käytetään taajuuksia noin $2$–$15\,\text{MHz}$. Anturi lähettää kehoon lyhyen ultraäänipulssin ja kuuntelee sitten kaikuja. Kun pulssi osuu kahden kudoksen rajapintaan, osa siitä heijastuu takaisin ja loput jatkaa syvemmälle (luku *Aaltojen heijastuminen ja diffraktio*). Jokainen rajapinta antaa siis oman kaikunsa. Laite mittaa, kuinka pitkän ajan kuluttua kukin kaiku palaa. Koska pulssi kulkee rajapintaan ja takaisin, kaiun kulkuaikana se etenee kaksi kertaa rajapinnan syvyyden. Laite olettaa, että ääni etenee pehmytkudoksessa keskimäärin nopeudella $1540\,\text{m/s}$, ja laskee jokaisen kaiun syvyyden.
+Ultraääni on ääntä, jonka taajuus on yli $20\,\text{kHz}$, eli liian suuri ihmisen kuultavaksi. Lääketieteellisessä kuvauksessa käytetään taajuuksia noin $2\text{–}15\,\text{MHz}$. Anturi lähettää kehoon lyhyen ultraäänipulssin ja kuuntelee sitten kaikuja. Kun pulssi osuu kahden kudoksen rajapintaan, osa siitä heijastuu takaisin ja loput jatkaa syvemmälle (luku *Aaltojen heijastuminen ja diffraktio*). Jokainen rajapinta antaa siis oman kaikunsa. Laite mittaa, kuinka pitkän ajan kuluttua kukin kaiku palaa. Koska pulssi kulkee rajapintaan ja takaisin, kaiun kulkuaikana se etenee kaksi kertaa rajapinnan syvyyden. Laite olettaa, että ääni etenee pehmytkudoksessa keskimäärin nopeudella $1540\,\text{m/s}$, ja laskee jokaisen kaiun syvyyden.
 
 <svg data-fig="kaiku" viewBox="0 0 600 380" role="img" aria-label="Kaavakuva, ei mittakaavassa: ultraäänianturi on ihon päällä, ja anturin ja ihon välissä on ohut geelikerros. Ihon alla ovat allekkain rasvakerros, lihas ja luu. Sininen nuoli kuvaa anturista alaspäin etenevää pulssia ja sen nopeutta. Rasvan ja lihaksen rajapinnalta sekä lihaksen ja luun rajapinnalta palaa ylöspäin kaiku, jota kuvaavat ohuemmat siniset nuolet. Vasemmalla mittajana näyttää syvyyden d ihon pinnasta lihaksen ja luun rajapintaan." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy517-bone" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#e3dccb"/></linearGradient></defs>
@@ -157,8 +157,8 @@ Aallonpituus saadaan yhtälöstä $v = f\lambda$ (luku *Mekaaninen aaltoliike*).
 
 Taulukossa $f$ on taajuus, $\lambda$ aallonpituus kudoksessa ja syvyys tyypillinen kuvaussyvyys. Kuvaussyvyydet ovat suuntaa antavia: ne riippuvat laitteesta ja kudoksesta. Ultraäänellä voidaan mitata myös veren virtausnopeutta. Liikkuvista verisoluista heijastuneen kaiun taajuus on hieman eri kuin lähetetyn pulssin, ja taajuuden muutoksesta laite laskee nopeuden. Tämä on Doppler-ilmiö (luku *Äänen ominaisuudet*).
 
-### Kaikuluotaus luonnossa ja tekniikassa
-Lepakot ja delfiinit paikantavat saaliinsa samalla periaatteella. Lepakko lähettää lyhyitä ultraääniäännähdyksiä, joiden taajuus on lajista riippuen noin $20$–$100\,\text{kHz}$, ja päättelee kaikujen viiveestä etäisyyden. Taajuudella $50\,\text{kHz}$ aallonpituus ilmassa on noin $7\,\text{mm}$. Aalto heijastuu selvästi vain kappaleesta, joka on vähintään aallonpituuden kokoinen; paljon pienemmän kappaleen ympäri aalto taipuu (luku *Aaltojen heijastuminen ja diffraktio*). Siksi hyönteisiä saalistavat lepakot käyttävät suuria taajuuksia. Laivojen kaikuluotain mittaa samalla tavalla veden syvyyden ja havaitsee kalaparvia; ääni etenee vedessä noin $1480\,\text{m/s}$.
+### Kaikuluotaus luonnossa ja tekniikassa (lisätieto)
+Lepakot ja delfiinit paikantavat saaliinsa samalla periaatteella. Lepakko lähettää lyhyitä ultraääniäännähdyksiä, joiden taajuus on lajista riippuen noin $20$–$100\,\text{kHz}$, ja päättelee kaikujen viiveestä etäisyyden. Taajuudella $50\,\text{kHz}$ aallonpituus ilmassa on noin $7\,\text{mm}$. Kappaleesta, joka on paljon aallonpituutta pienempi, palaa vain hyvin heikko kaiku, koska aalto taipuu sen ympäri (luku *Aaltojen heijastuminen ja diffraktio*). Siksi hyönteisiä saalistavat lepakot käyttävät suuria taajuuksia. Laivojen kaikuluotain mittaa samalla tavalla veden syvyyden ja havaitsee kalaparvia; ääni etenee vedessä noin $1400\text{–}1500\,\text{m/s}$ lämpötilasta riippuen.
 
 ### Maanjäristysaallot
 Maanjäristyksessä kallioperä murtuu, ja murtumakohdasta lähtee maanjäristysaaltoja. Maan sisäosien läpi etenee kahdenlaisia aaltoja. P-aalto on pitkittäinen aalto, jossa kallio tiivistyy ja harvenee etenemissuunnassa. Se on nopein ja saapuu asemalle ensimmäisenä. S-aalto on poikittainen aalto, jossa kallio liikkuu sivusuunnassa. Se on hitaampi kuin P-aalto. Maankuoren yläosassa P-aallon nopeus on tyypillisesti noin $6\,\text{km/s}$ ja S-aallon noin $3{,}5\,\text{km/s}$. Pintaa pitkin etenevät pinta-aallot ovat vielä hitaampia, mutta niiden amplitudi on suurin, ja ne aiheuttavat suurimman osan tuhoista.
@@ -198,7 +198,7 @@ Poikittainen aalto tarvitsee väliaineen, joka vastustaa muodon muuttumista: kun
   <foreignObject x="450" y="335.5" width="150" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{S-varjoalue}$</div></foreignObject>
 </svg>
 
-### Tsunami
+### Tsunami (lisätieto)
 Merenpohjan järistys voi nostaa tai laskea yhtäkkiä suuren vesimassan, ja siitä lähtee tsunami. Sen aallonpituus on kymmeniä tai satoja kilometrejä, paljon suurempi kuin valtameren syvyys. Silloin vesi liikkuu pohjasta pintaan asti, ja aallon nopeus riippuu vain veden syvyydestä: syvällä valtamerellä tsunami etenee lentokoneen nopeudella. Kun aalto tulee matalaan rantaveteen, se hidastuu, sen aallonpituus lyhenee ja sen energia kasautuu pienempään vesimäärään. Siksi aallon korkeus kasvaa rannikon lähellä moninkertaiseksi.
 
 ## Kaava: Etäisyys aallon kulkuajasta
@@ -217,7 +217,7 @@ Maanjäristysasema ei tiedä, milloin järistys tapahtui, mutta se mittaa P- ja 
 ```
 missä $d$ on aseman etäisyys järistyksen alkukohdasta (km), $v_\text{P}$ ja $v_\text{S}$ P- ja S-aallon nopeudet (km/s) ja $\Delta t$ S-aallon ja P-aallon saapumisaikojen erotus (s). Kun $v_\text{P} = 6{,}0\,\text{km/s}$ ja $v_\text{S} = 3{,}5\,\text{km/s}$, jokainen sekunti aikaeroa vastaa $8{,}4\,\text{km}$:n etäisyyttä. Kun etäisyys tunnetaan kolmelta asemalta, järistyksen paikka on niiden ympärille piirrettyjen ympyröiden leikkauspisteessä.
 
-<svg data-fig="kulkuaika" viewBox="0 0 600 360" role="img" aria-label="Kuvaaja mittakaavassa: P- ja S-aallon kulkuaika t sekunteina etäisyyden d funktiona kilometreinä nollasta 300 kilometriin, kun P-aallon nopeus on 6,0 km/s ja S-aallon 3,5 km/s. Kumpikin on origosta nouseva suora; S-aallon suora on jyrkempi. Etäisyydellä 210 km P-aallon kulkuaika on 35 s ja S-aallon 60 s, ja niiden ero, 25 s, on merkitty pystysuoralla janalla." style="max-width:100%;font-size:24px">
+<svg data-fig="kulkuaika" viewBox="0 0 600 360" role="img" aria-label="Kuvaaja mittakaavassa: P- ja S-aallon kulkuaika t sekunteina etäisyyden d funktiona kilometreinä nollasta 300 kilometriin, kun P-aallon nopeus on 6,0 km/s ja S-aallon 3,5 km/s. Kumpikin on origosta nouseva suora; S-aallon suora on jyrkempi. Etäisyydellä 105 km P-aallon kulkuaika on 17,5 s ja S-aallon 30 s, ja niiden ero, 12,5 s, on merkitty pystysuoralla janalla." style="max-width:100%;font-size:24px">
   <line x1="160" y1="306" x2="160" y2="72" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="224" y1="306" x2="224" y2="72" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="288" y1="306" x2="288" y2="72" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -267,13 +267,13 @@ missä $d$ on aseman etäisyys järistyksen alkukohdasta (km), $v_\text{P}$ ja $
   <foreignObject x="86" y="15.5" width="62" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$t\ (\text{s})$</div></foreignObject>
   <polyline points="96,306 480,176" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
   <polyline points="96,306 480,83" fill="none" stroke="#e8590c" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="11 7"/>
-  <line x1="365" y1="150" x2="365" y2="306" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
-  <line x1="96" y1="150" x2="365" y2="150" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
-  <line x1="96" y1="215" x2="365" y2="215" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
-  <circle cx="365" cy="215" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="365" cy="150" r="6.5" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
-  <path d="M377,150 H385 V215 H377" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <foreignObject x="393" y="168" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\Delta t$</div></foreignObject>
+  <line x1="230.5" y1="228" x2="230.5" y2="306" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
+  <line x1="96" y1="228" x2="230.5" y2="228" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
+  <line x1="96" y1="260.5" x2="230.5" y2="260.5" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
+  <circle cx="230.5" cy="260.5" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="230.5" cy="228" r="6.5" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
+  <path d="M242.5,228 H250.5 V260.5 H242.5" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <foreignObject x="256.5" y="218.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\Delta t$</div></foreignObject>
   <foreignObject x="488" y="161.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{P}$</div></foreignObject>
   <foreignObject x="430" y="64.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#e8590c">$\text{S}$</div></foreignObject>
 </svg>
@@ -334,7 +334,7 @@ missä $v$ on aallon nopeus (m/s), $g = 9{,}81\,\text{m/s}^2$ putoamiskiihtyvyys
 </svg>
 
 ### Lukuarvojen lähteet
-Äänen nopeus $1540\,\text{m/s}$ on ultraäänilaitteiden vakio-oletus pehmytkudokselle (esimerkiksi Hoskins, Martin ja Thrush: *Diagnostic Ultrasound*, 3. painos, 2019). Maankuoren aaltojen nopeudet ovat pyöristyksiä maapallon nopeusmallista IASP91 (Kennett ja Engdahl 1991), jossa ylimmän kuoren arvot ovat $5{,}8\,\text{km/s}$ ja $3{,}36\,\text{km/s}$. Heijastuvien osuuksien prosentit on laskettu kudosten tyypillisistä akustisista ominaisuuksista, ja ne ovat likiarvoja.
+Äänen nopeus $1540\,\text{m/s}$ on ultraäänilaitteiden vakio-oletus pehmytkudokselle (esimerkiksi Hoskins, Martin ja Thrush: *Diagnostic Ultrasound*, 3. painos, 2019). Maankuoren aaltojen nopeudet ovat likiarvoja maapallon nopeusmallista IASP91 (Kennett ja Engdahl 1991), jossa ylimmän kuoren arvot ovat $5{,}8\,\text{km/s}$ ja $3{,}36\,\text{km/s}$. Heijastuvien osuuksien prosentit on laskettu kudosten tyypillisistä akustisista ominaisuuksista, ja ne ovat likiarvoja.
 
 ## Esimerkki
 Seismografiasema rekisteröi maanjäristyksen. Aseman kello näytti P-aallon saapuessa $12\,\text{h}\ 04\,\text{min}\ 18\,\text{s}$ ja S-aallon saapuessa $12\,\text{h}\ 04\,\text{min}\ 43\,\text{s}$. P-aallon nopeus maankuoressa on $6{,}0\,\text{km/s}$ ja S-aallon $3{,}5\,\text{km/s}$. Kuinka kaukana asemasta järistys tapahtui? Oletetaan, että aallot kulkevat samaa suoraa reittiä tasaisilla nopeuksilla.
@@ -385,7 +385,7 @@ Seismografiasema rekisteröi maanjäristyksen. Aseman kello näytti P-aallon saa
 Yleisin laskuvirhe on unohtaa, että kaiku kulkee edestakaisin. Jos ultraäänen kaiku palaa $65\,\mu\text{s}$:n kuluttua, tulo $v t$ on $10\,\text{cm}$, mutta rajapinta on vain $5{,}0\,\text{cm}$:n syvyydellä. Toinen virhe on ajatella, että suurin taajuus on aina paras, koska se antaa tarkimman kuvan. Suurtaajuinen ultraääni vaimenee nopeasti, joten syvälle kuvataan pienemmällä taajuudella ja tarkkuudesta joudutaan tinkimään. Kolmas virhe on pitää ultraääntä säteilynä kuten röntgensäteilyä. Ultraääni on mekaanista aaltoliikettä, joka tarvitsee väliaineen, eikä se ionisoi kudosta.
 
 ## Tiivistelmä
-- Ultraääni on ääntä, jonka taajuus on yli $20\,\text{kHz}$; lääketieteellinen kuvaus käyttää taajuuksia noin $2$–$15\,\text{MHz}$.
+- Ultraääni on ääntä, jonka taajuus on yli $20\,\text{kHz}$; lääketieteellinen kuvaus käyttää taajuuksia noin $2\text{–}15\,\text{MHz}$.
 - Osa pulssista heijastuu jokaiselta rajapinnalta. Rajapinnan syvyys saadaan kaiun kulkuajasta, $d = \tfrac{vt}{2}$, kun $v = 1540\,\text{m/s}$.
 - Geeli syrjäyttää ilman anturin ja ihon välistä; ilman ja ihon rajapinnalta heijastuisi lähes koko pulssi.
 - Suuri taajuus antaa lyhyen aallonpituuden ja tarkan kuvan, mutta vaimenee nopeasti; syvälle kuvataan pienellä taajuudella.
