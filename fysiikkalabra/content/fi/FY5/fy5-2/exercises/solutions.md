@@ -1,12 +1,12 @@
 ## fy5-2-L1-01
-**Annettu:** lapsi 1: $m_1 = 30\,\text{kg}$, $r_1 = 1{,}6\,\text{m}$; lapsi 2: $m_2 = 40\,\text{kg}$; lauta tuettu keskeltä
-**Kysytty:** toisen lapsen etäisyys $r_2$ tukipisteestä metreinä
-**Periaate:** Lauta pysyy levossa, joten momenttien summa tukipisteen suhteen on nolla. Voimakuviossa laudalla on lasten voimat $m_1 g$ ja $m_2 g$ alas tukipisteen eri puolilla, laudan paino keskeltä ja tuen voima ylös; kaksi viimeistä vaikuttavat tukipisteessä, joten niiden varsi on nolla. Lasten voimat kiertävät lautaa vastakkaisiin suuntiin.
-**Kaava:** $m_1 g r_1 - m_2 g r_2 = 0$, josta $g$ supistuu ja $r_2 = \dfrac{m_1 r_1}{m_2}$
-**Muunnokset:** Ei tarvita: massat ovat kilogrammoina ja etäisyys metreinä, ja massojen yksikkö supistuu.
-**Sijoitus:** $r_2 = \dfrac{30\,\text{kg} \cdot 1{,}6\,\text{m}}{40\,\text{kg}} = 1{,}2\,\text{m}$
-**Vastaus:** $1{,}2\,\text{m}$, kaksi merkitsevää numeroa kuten massoissa ja etäisyydessä $1{,}6\,\text{m}$.
-**Järkevyys:** Raskaampi lapsi istuu lähempänä tukipistettä, kuten pitääkin. Momentit ovat yhtä suuret: $30\,\text{kg} \cdot 1{,}6\,\text{m} = 48\,\text{kg}\cdot\text{m} = 40\,\text{kg} \cdot 1{,}2\,\text{m}$.
+**Annettu:** käden voima $F_\text{k} = 80\,\text{N}$, varsi $r_\text{k} = 0{,}60\,\text{m}$ tukipisteestä; naulan varsi $r_\text{n} = 0{,}050\,\text{m}$ tukipisteestä; rauta on kevyt ja levossa
+**Kysytty:** voima $F_\text{n}$, jolla rauta vetää naulaa, newtoneina
+**Periaate:** Rauta pysyy levossa, joten momenttien summa tukipisteen suhteen on nolla. Voimakuviossa raudalla on käden voima $F_\text{k}$ alas, naulan voima $F_\text{n}$ alas toisella puolella tukipistettä ja tuen voima ylös tukipisteessä; tuen voiman varsi on nolla, joten se ei esiinny momenttiehdossa. Rauta on kevyt, joten sen painoa ei oteta huomioon. Käden voima kiertää rautaa yhteen suuntaan ja naulan voima toiseen.
+**Kaava:** $F_\text{k} r_\text{k} - F_\text{n} r_\text{n} = 0$, josta $F_\text{n} = \dfrac{F_\text{k} r_\text{k}}{r_\text{n}}$
+**Muunnokset:** Ei tarvita: voima on newtoneina ja varret metreinä.
+**Sijoitus:** $F_\text{n} = \dfrac{80\,\text{N} \cdot 0{,}60\,\text{m}}{0{,}050\,\text{m}} = \dfrac{48\,\text{Nm}}{0{,}050\,\text{m}} = 960\,\text{N}$
+**Vastaus:** $960\,\text{N}$, kaksi merkitsevää numeroa kuten käden voimassa $80\,\text{N}$ ja varressa $0{,}60\,\text{m}$.
+**Järkevyys:** Naulan varsi on kaksitoistaosa käden varresta, $0{,}60 : 0{,}050 = 12$, joten naulaa vetävä voima on $12$-kertainen käden voimaan nähden: $12 \cdot 80\,\text{N} = 960\,\text{N}$. Vipu vahvistaa voimaa, kuten sorkkaraudan pitääkin.
 
 ## fy5-2-L1-02
 **Annettu:** punnuksen paino $F_1 = 0{,}50\,\text{N}$, varsi $r_1 = 0{,}30\,\text{m}$; kysytyn voiman varsi $r_2 = 0{,}20\,\text{m}$; kevyt viivain tuettu keskeltä
@@ -65,14 +65,14 @@
 **Kaava:** $m_\text{L} g\, r_\text{L} + m_\text{h} g\, r_\text{h} - N_1 L = 0$, josta $N_1 = \dfrac{(m_\text{L} r_\text{L} + m_\text{h} r_\text{h})\, g}{L}$
 **Muunnokset:** Ei tarvita, mutta varret lasketaan oikeasta päästä: $r_\text{L} = 1{,}5\,\text{m}$ ja $r_\text{h} = 3{,}0\,\text{m} - 1{,}0\,\text{m} = 2{,}0\,\text{m}$.
 **Sijoitus:** Momentit ovat $m_\text{L} g\, r_\text{L} = 20\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 1{,}5\,\text{m} = 294{,}3\,\text{Nm}$ ja $m_\text{h} g\, r_\text{h} = 70\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 2{,}0\,\text{m} = 1373{,}4\,\text{Nm}$, yhteensä $1667{,}7\,\text{Nm}$. Siis $N_1 = \dfrac{1667{,}7\,\text{Nm}}{3{,}0\,\text{m}} = 555{,}9\,\text{N}$
-**Vastaus:** $560\,\text{N}$ eli $5{,}6 \cdot 10^2\,\text{N}$, kaksi merkitsevää numeroa kuten lähtötiedoissa.
+**Vastaus:** $560\,\text{N}$, kaksi merkitsevää numeroa kuten lähtötiedoissa.
 **Järkevyys:** Kokonaispaino on $90\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 882{,}9\,\text{N}$, joten oikea pää kantaa $327\,\text{N}$. Vasen pää kantaa enemmän, koska henkilö seisoo lähempänä sitä.
 
 ## fy5-2-L2-03
 **Annettu:** hyllyn syvyys $d = 0{,}400\,\text{m}$, korkeus $h = 1{,}80\,\text{m}$, painopiste keskellä
 **Kysytty:** kallistuskulma $\alpha$ pystysuoraan nähden kaatumisen rajalla, asteina
-**Periaate:** Etureunansa varassa oleva hylly pysyy paikallaan, kun painopisteen kautta kulkeva pystysuora osuu reunan taakse: silloin painon momentti reunan suhteen kääntää hyllyä takaisin. Raja on, kun painopiste on täsmälleen reunan yläpuolella, jolloin painon momentti reunan suhteen on nolla. Voimakuviossa hyllyyn vaikuttavat vain paino painopisteestä alas ja lattian tukivoima reunasta ylös.
-**Kaava:** Rajalla reunasta painopisteeseen kulkeva jana on pystysuorassa. Hyllyn omassa suunnassa janan osat ovat puolet syvyydestä ja puolet korkeudesta, joten puolikkaat supistuvat: $\tan\alpha = \dfrac{d}{h}$, josta $\alpha = \arctan\dfrac{d}{h}$
+**Periaate:** Kuvassa kulma $\alpha$ on pystysuoran ja hyllyn korkeussuunnan eli etureunan välinen kulma, siis hyllyn kallistus pystysuoraan nähden. Etureunansa varassa oleva hylly pysyy paikallaan, kun painopisteen kautta kulkeva pystysuora osuu reunan taakse: silloin painon momentti reunan suhteen kääntää hyllyä takaisin. Raja on, kun painopiste on täsmälleen reunan yläpuolella, jolloin painon momentti reunan suhteen on nolla. Voimakuviossa hyllyyn vaikuttavat vain paino painopisteestä alas ja lattian tukivoima reunasta ylös.
+**Kaava:** Rajalla painopisteestä etureunaan $P$ kulkeva jana on pystysuora. Painopiste on hyllyn keskellä, joten se on puolen korkeuden, $\tfrac{h}{2}$, päässä hyllyn pohjan keskikohdasta hyllyn korkeussuunnassa, ja pohjan keskikohta on puolen syvyyden, $\tfrac{d}{2}$, päässä reunasta $P$. Syntyy suorakulmainen kolmio, jonka kateetit ovat $\tfrac{d}{2}$ ja $\tfrac{h}{2}$ ja jonka hypotenuusa on pystysuora jana. Painopisteen kohdalla pystysuoran ja kateetin $\tfrac{h}{2}$ välinen kulma on $\alpha$, koska kateetti $\tfrac{h}{2}$ on hyllyn etureunan suuntainen, ja kulman vastainen kateetti on $\tfrac{d}{2}$. Siis $\tan\alpha = \dfrac{d/2}{h/2} = \dfrac{d}{h}$, josta $\alpha = \arctan\dfrac{d}{h}$
 **Muunnokset:** Ei tarvita: kummankin pituuden yksikkö on metri, ja se supistuu.
 **Sijoitus:** $\alpha = \arctan\dfrac{0{,}400\,\text{m}}{1{,}80\,\text{m}} = \arctan 0{,}2222 = 12{,}53^\circ$
 **Vastaus:** $12{,}5^\circ$, kolme merkitsevää numeroa kuten mitoissa $0{,}400\,\text{m}$ ja $1{,}80\,\text{m}$.
@@ -81,12 +81,12 @@
 ## fy5-2-L2-04
 **Annettu:** kahvakuula $m = 5{,}0\,\text{kg}$, varsi $r_\text{k} = 0{,}32\,\text{m}$; kyynärvarren paino $G_\text{v} = 15\,\text{N}$, varsi $r_\text{v} = 0{,}15\,\text{m}$; lihaksen varsi $r_\text{L} = 0{,}040\,\text{m}$; $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** hauislihaksen voima $F$ newtoneina
-**Periaate:** Kyynärvarsi on levossa, joten momenttien summa kyynärnivelen suhteen on nolla. Voimakuviossa kyynärvarteen vaikuttavat kahvakuulan voima $mg$ kämmenestä alas, kyynärvarren paino painopisteestään alas, lihaksen voima $F$ ylös ja nivelen voima. Momenttipisteeksi valitaan nivel, jolloin tuntematon nivelen voima jää pois. Lihas kiertää kyynärvartta yhteen suuntaan, painot toiseen.
+**Periaate:** Kyynärvarsi on levossa, joten momenttien summa kyynärnivelen suhteen on nolla. Voimakuviossa kyynärvarteen vaikuttavat kahvakuulan voima $mg$ kämmenestä alas, kyynärvarren paino painopisteestään alas, lihaksen voima $F$ ylös ja kyynärnivelen voima, joka osoittaa alas, koska lihaksen voima on suurempi kuin painot yhteensä. Momenttipisteeksi valitaan nivel, jolloin tuntematon nivelen voima jää pois. Lihas kiertää kyynärvartta yhteen suuntaan, painot toiseen.
 **Kaava:** $F r_\text{L} - m g\, r_\text{k} - G_\text{v} r_\text{v} = 0$, josta $F = \dfrac{m g\, r_\text{k} + G_\text{v} r_\text{v}}{r_\text{L}}$
 **Muunnokset:** Ei tarvita: varret ovat metreinä ja massa kilogrammoina.
 **Sijoitus:** Momentit ovat $m g\, r_\text{k} = 5{,}0\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 0{,}32\,\text{m} = 15{,}696\,\text{Nm}$ ja $G_\text{v} r_\text{v} = 15\,\text{N} \cdot 0{,}15\,\text{m} = 2{,}25\,\text{Nm}$, yhteensä $17{,}946\,\text{Nm}$. Siis $F = \dfrac{17{,}946\,\text{Nm}}{0{,}040\,\text{m}} = 448{,}65\,\text{N}$
 **Vastaus:** $450\,\text{N}$, kaksi merkitsevää numeroa kuten lähtötiedoissa.
-**Järkevyys:** Lihaksen varsi on vain kahdeksasosa kahvakuulan varresta, joten lihaksen voima on moninkertainen kuulan painoon $49\,\text{N}$ nähden: pelkkä kuula vaatii $8 \cdot 49\,\text{N} \approx 390\,\text{N}$, ja kyynärvarren paino lisää noin $56\,\text{N}$.
+**Järkevyys:** Lihaksen varsi on vain kahdeksasosa kahvakuulan varresta, joten lihaksen voima on moninkertainen kuulan painoon $49\,\text{N}$ nähden: pelkkä kuula vaatii $8 \cdot 49\,\text{N} \approx 390\,\text{N}$, ja kyynärvarren paino lisää noin $56\,\text{N}$. Voimien summasta nivelen voima on alaspäin $448{,}65\,\text{N} - 49{,}05\,\text{N} - 15\,\text{N} = 384{,}6\,\text{N}$: nivel puristuu kokoon, kuten lihaksen vetäessä kyynärvartta ylös pitääkin.
 
 ## fy5-2-L3-01
 **Annettu:** lankku $L = 4{,}00\,\text{m}$, $m_\text{L} = 20{,}0\,\text{kg}$, painopiste $x_\text{L} = 2{,}00\,\text{m}$; pukit $x_1 = 0{,}50\,\text{m}$ ja $x_2 = 3{,}00\,\text{m}$ vasemmasta päästä; maalari $m_\text{m} = 60{,}0\,\text{kg}$
@@ -96,10 +96,10 @@
 **Muunnokset:** Ei tarvita: $g$ ja massojen yksikkö supistuvat, ja pituudet ovat metreinä. Lankun painon varsi pukista on $x_2 - x_\text{L} = 3{,}00\,\text{m} - 2{,}00\,\text{m} = 1{,}00\,\text{m}$.
 **Sijoitus:** $x = 3{,}00\,\text{m} + \dfrac{20{,}0\,\text{kg} \cdot 1{,}00\,\text{m}}{60{,}0\,\text{kg}} = 3{,}00\,\text{m} + 0{,}333\,\text{m} = 3{,}333\,\text{m}$
 **Vastaus:** $3{,}33\,\text{m}$ lankun vasemmasta päästä, kolme merkitsevää numeroa kuten lähtötiedoissa.
-**Järkevyys:** Rajalla lankun ja maalarin yhteinen painopiste on pukin kohdalla: $\dfrac{20{,}0 \cdot 2{,}00 + 60{,}0 \cdot 3{,}333}{80{,}0}\,\text{m} = 3{,}00\,\text{m}$. Maalari voi kävellä vain $0{,}33\,\text{m}$ pukin yli, koska hän on kolme kertaa lankkua raskaampi.
+**Järkevyys:** Rajalla lankun ja maalarin yhteinen painopiste on pukin kohdalla: massojen ja paikkojen tulojen summa on $20{,}0\,\text{kg} \cdot 2{,}00\,\text{m} + 60{,}0\,\text{kg} \cdot 3{,}333\,\text{m} = 240\,\text{kg}\cdot\text{m}$, ja kokonaismassalla $80{,}0\,\text{kg}$ jaettuna saadaan $3{,}00\,\text{m}$. Maalari voi kävellä vain $0{,}33\,\text{m}$ pukin yli, koska hän on kolme kertaa lankkua raskaampi.
 
 ## fy5-2-L3-02
-**Annettu:** tanko $L = 1{,}20\,\text{m}$, $m_\text{t} = 4{,}00\,\text{kg}$, painopiste keskellä; kyltti $m_\text{k} = 8{,}00\,\text{kg}$ uloimmassa päässä; vaijerin ja tangon välinen kulma $\alpha = 30{,}0^\circ$; $g = 9{,}81\,\text{m/s}^2$
+**Annettu:** tanko $L = 1{,}20\,\text{m}$, $m_\text{t} = 4{,}00\,\text{kg}$, painopiste keskellä; kyltti $m_\text{k} = 8{,}00\,\text{kg}$ uloimmassa päässä; vaijeri kiinnitetty seinään saranan yläpuolelle, ja sen ja tangon välinen kulma $\alpha = 30{,}0^\circ$; $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** vaijerin jännitysvoima $T$ newtoneina
 **Periaate:** Tanko on levossa, joten momenttien summa saranan suhteen on nolla. Voimakuviossa tankoon vaikuttavat sen paino keskeltä alas, kyltin voima $m_\text{k} g$ uloimmasta päästä alas, vaijerin jännitysvoima $\overline{T}$ uloimmasta päästä vaijeria pitkin kohti seinää ja saranan voima. Momenttipisteeksi valitaan sarana, jolloin sen tuntematon voima jää pois. $\overline{T}$ jaetaan komponentteihin: tangon suuntainen komponentti kulkee saranan kautta eikä aiheuta momenttia, kohtisuora komponentti $T \sin\alpha$ kiertää tankoa ylös.
 **Kaava:** $T \sin\alpha \cdot L - m_\text{t} g \cdot \tfrac{L}{2} - m_\text{k} g \cdot L = 0$, josta $T = \dfrac{(\tfrac{1}{2} m_\text{t} + m_\text{k})\, g}{\sin\alpha}$

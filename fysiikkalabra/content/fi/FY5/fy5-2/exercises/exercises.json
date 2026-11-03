@@ -3,8 +3,8 @@
   {
    "id": "fy5-2-L1-01",
    "level": 1,
-   "text": "Keinulauta on tuettu keskikohdastaan. Sen toisessa päässä istuu $30\\,\\text{kg}$:n lapsi $1{,}6\\,\\text{m}$:n päässä tukipisteestä. Kuinka kaukana tukipisteestä toisen, $40\\,\\text{kg}$:n lapsen on istuttava, jotta lauta pysyy vaakasuorassa?",
-   "answer": 1.2,
+   "text": "Sorkkarautaa käytetään vipuna naulan vetämiseen. Raudan tukipiste on $0{,}050\\,\\text{m}$:n päässä naulasta, ja käsi painaa rautaa pystysuoraan alas $80\\,\\text{N}$:n voimalla $0{,}60\\,\\text{m}$:n päässä tukipisteestä. Rauta on kevyt, joten sen paino voidaan jättää huomiotta. Kuinka suurella voimalla rauta vetää naulaa ylös, kun rauta on levossa?",
+   "answer": 960,
    "unit": "m",
    "tolerance": 0.02
   },
@@ -19,7 +19,7 @@
   {
    "id": "fy5-2-L1-03",
    "level": 1,
-   "text": "Kottikärryjen ja kuorman yhteinen paino on $620\\,\\text{N}$, ja yhteinen painopiste on vaakasuunnassa $0{,}400\\,\\text{m}$:n päässä pyörän akselista. Kahvat ovat $1{,}20\\,\\text{m}$:n päässä akselista. Kuinka suurella pystysuoralla voimalla kärryjen työntäjän on nostettava kahvoista, jotta kärryt pysyvät levossa pyörän ja kahvojen varassa?",
+   "text": "Kottikärryjen ja kuorman yhteinen paino on $620\\,\\text{N}$, ja yhteinen painopiste on vaakasuunnassa $0{,}400\\,\\text{m}$:n päässä pyörän akselista. Kahvat ovat vaakasuunnassa $1{,}20\\,\\text{m}$:n päässä akselista. Kuinka suurella pystysuoralla voimalla kärryjen työntäjän on nostettava kahvoista, jotta kärryt pysyvät levossa pyörän ja kahvojen varassa?",
    "answer": 207,
    "unit": "N",
    "tolerance": 0.02
@@ -64,7 +64,8 @@
    "text": "Tasa-aineisen kirjahyllyn syvyys on $0{,}400\\,\\text{m}$ ja korkeus $1{,}80\\,\\text{m}$, ja sen painopiste on keskellä. Hyllyä kallistetaan eteenpäin niin, että se nojaa vain etureunaansa. Kuinka suuri on kallistuskulma pystysuoraan nähden, kun hylly on kaatumisen rajalla eli kun se kaatuisi itsestään, jos kulma kasvaisi vielä? Vastaa asteina.",
    "answer": 12.5,
    "unit": "°",
-   "tolerance": 0.02
+   "tolerance": 0.02,
+   "figure": "fy5-2/hylly"
   },
   {
    "id": "fy5-2-L2-04",
@@ -87,10 +88,11 @@
   {
    "id": "fy5-2-L3-02",
    "level": 3,
-   "text": "Liikkeen kyltti roikkuu vaakasuoran, tasa-aineisen tangon päässä. Tangon pituus on $1{,}20\\,\\text{m}$ ja massa $4{,}00\\,\\text{kg}$, ja sen toinen pää on kiinnitetty saranalla seinään. Kyltti, jonka massa on $8{,}00\\,\\text{kg}$, riippuu tangon uloimmasta päästä. Tangon uloimmasta päästä lähtee vaijeri seinään niin, että vaijerin ja tangon välinen kulma on $30{,}0^\\circ$. Kuinka suuri on vaijerin jännitysvoima?",
+   "text": "Liikkeen kyltti roikkuu vaakasuoran, tasa-aineisen tangon päässä. Tangon pituus on $1{,}20\\,\\text{m}$ ja massa $4{,}00\\,\\text{kg}$, ja sen toinen pää on kiinnitetty saranalla seinään. Kyltti, jonka massa on $8{,}00\\,\\text{kg}$, riippuu tangon uloimmasta päästä. Tangon uloimmasta päästä lähtee vaijeri seinään saranan yläpuolelle niin, että vaijerin ja tangon välinen kulma on $30{,}0^\\circ$. Kuinka suuri on vaijerin jännitysvoima?",
    "answer": 196,
    "unit": "N",
-   "tolerance": 0.02
+   "tolerance": 0.02,
+   "figure": "fy5-2/kyltti"
   },
   {
    "id": "fy5-2-L3-03",

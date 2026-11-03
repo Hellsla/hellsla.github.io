@@ -199,8 +199,8 @@ def log_fbd():
     f.circle(X(0.0), cy, 5, INK)
     f.tex(X(0.0) - 14, cy, r"\text{A}", "end")
     f.tex(X(3.0) + 30, cy + 40, r"\text{B}", "start")
-    turn_arrow(f, X(0.0) + 34, 268, 26, -60, 200)
-    f.tex(X(0.0) + 76, 268, r"+", "start")
+    turn_arrow(f, X(0.0) + 34, 284, 26, -60, 200)
+    f.tex(X(0.0) + 76, 284, r"+", "start")
     return f.svg()
 
 
@@ -222,8 +222,10 @@ def board_scene():
     f.rect(X(0) + 1, yt - 32, 22, 8, METAL_EDGE, INK, 2, 2)
     H.person(f, X(4.0) - 24, yt - 20, shirt=COLD, trousers=INK, sc=0.44, arms="up")
     dim(f, X(0) + 12, X(1.5), 300, r"1{,}50\,\text{m}", above=False)
-    f.line(X(0) + 12, 238, X(0) + 12, 330, MUTED, 1.5, "4 4")
-    dim(f, X(0) + 12, X(4.0) - 4, 340, r"4{,}00\,\text{m}", above=True)
+    f.line(X(0) + 12, 238, X(0) + 12, 342, MUTED, 1.5, "4 4")
+    for x in (X(0) + 12, X(4.0) - 4): f.line(x, 335, x, 349, INK, 1.5)
+    f.line(X(0) + 12, 342, X(4.0) - 4, 342, INK, 1.5)               # the label sits in the water, clear of the concrete edge
+    f.tex(440, 322, r"4{,}00\,\text{m}", "middle")
     f.tex(X(0) + 12, 58, r"\text{pultti}", "middle")
     f.line(X(0) + 12, 72, X(0) + 12, yt - 36, MUTED, 1.5)
     f.tex(X(1.5), 270, r"\text{tuki}", "middle", bg=True)
@@ -254,41 +256,109 @@ def board_fbd():
     return f.svg()
 
 
-# --- Tiivistelmä: a tower crane balanced by its counterweight --------------------------------------------------------
-def scene():
-    f = H.scene("fy52-scene", "Kuvitus: rakennustyömaan torninosturi. Pystysuoran tornin päällä on pitkä vaakapuomi, jonka toisessa "
-                "päässä riippuu kuorma ja lyhyemmässä vastapuomissa on raskaat betoniset vastapainot. Nosturin alla on "
-                "keskeneräinen talo.")
-    f.rect(0, 0, 600, 360, H.grad(f, "fy52s-sky", ICE, GLASS))
-    H.cloud(f, 345, 128, 0.5)
-    f.rect(0, 318, 600, 42, SAND)
-    # the building under construction
-    f.rect(330, 220, 190, 98, RULE_LIGHT, INK, 2)
-    for x in (360, 410, 460): f.rect(x, 240, 30, 30, GLASS, INK, 1.5)
-    f.rect(330, 206, 190, 14, IRON)
-    # the tower: a lattice mast
-    x0, x1, top = 196, 226, 74
-    f.rect(x0 - 16, 306, 62, 14, IRON)
-    f.line(x0, 306, x0, top, HEAT, 4); f.line(x1, 306, x1, top, HEAT, 4)
-    for y in range(306, top, -22): f.line(x0, y, x1, y - 22, HEAT, 2); f.line(x0, y - 22, x1, y - 22, HEAT, 2)
-    # the jib and the counter-jib
-    f.rect(70, top - 14, 490, 14, HEAT, INK, 2)
-    for x in range(80, 560, 24): f.line(x, top - 14, x + 12, top, INK, 1)
-    f.path(f"M{x0},{top - 14} L{(x0 + x1) / 2},{top - 54} L{x1},{top - 14} Z", HEAT, INK, 2)
-    f.line((x0 + x1) / 2, top - 54, 540, top - 14, INK, 1.5); f.line((x0 + x1) / 2, top - 54, 80, top - 14, INK, 1.5)
-    f.rect(78, top, 64, 40, RULE, INK, 2, 2); f.line(78, top + 20, 142, top + 20, INK, 1.5)   # counterweight blocks
-    f.rect(x1 + 2, top, 30, 26, GLASS, INK, 2, 3)                                          # the cab
-    # the trolley, the hook and the load
-    f.rect(452, top, 28, 10, IRON)
-    f.line(466, top + 10, 466, 168, INK, 1.5)
-    f.path("M460,168 h12 v8 q-6,10 -12,0 Z", IRON)
-    f.line(466, 178, 432, 204, INK, 1.5); f.line(466, 178, 500, 204, INK, 1.5)
-    f.rect(420, 204, 92, 14, METAL_EDGE, INK, 2)
+# --- Momenttipisteen valinta: a force along and across a rod ----------------------------------------------------------
+from fbd import FORCE, dashed_arrow
+
+
+def wall(f, x, y0, y1, w=56):
+    """A wall on the left of x, hatched, from y0 to y1."""
+    f.rect(x - w, y0, w, y1 - y0, RULE_LIGHT, INK, 2.5)
+    for y in range(int(y0) + 14, int(y1), 22): f.line(x - w, y + 10, x - w + 18, y - 4, MUTED, 1.5)
+
+
+def components():
+    f = Fig("fy52-komponentit", 290, "Kaavakuva: vaakasuora tanko on saranalla seinässä. Tangon uloimpaan päähän vaikuttaa voima F, joka "
+            "osoittaa vinosti ylös kohti seinää ja muodostaa kulman alfa tangon kanssa. Voima on jaettu katkoviivanuolilla "
+            "tangon suuntaiseen komponenttiin, joka kulkee saranan kautta eikä kierrä tankoa, ja tankoa vastaan kohtisuoraan "
+            "komponenttiin F sin alfa, joka antaa momentin saranan suhteen. Momentin varsi on tangon pituus r.")
+    hx, hy, L, a = 90, 190, 340, 35                                       # hinge, rod length in px, angle
+    ca, sa = math.cos(math.radians(a)), math.sin(math.radians(a))
+    ex = hx + L
+    wall(f, hx, 40, 250)
+    f.rect(hx, hy - 8, L, 16, SAND_LIGHT, GRAIN, 2.5, 3)
+    tx, ty = ex - 150 * ca, hy - 150 * sa
+    f.line(tx, ty, ex, ty, MUTED, 1.5, "5 4"); f.line(tx, ty, tx, hy, MUTED, 1.5, "5 4")
+    dashed_arrow(f, ex, hy - 8, ex, ty, FORCE)                            # the component across the rod
+    dashed_arrow(f, ex - 6, hy - 14, tx + 2, hy - 14, FORCE)              # the component along the rod
+    f.arrow(ex, hy, tx, ty, FORCE, 4, 18)
+    f.circle(hx, hy, 7, WHITE, INK, 2.5)
+    f.path(f"M{n(ex - 66)},{n(hy)} A66,66 0 0 1 {n(ex - 66 * ca)},{n(hy - 66 * sa)}", stroke=INK, w=1.5)
+    f.tex(ex - 92, hy - 38, r"\alpha", "middle")
+    f.tex(tx - 12, ty - 8, r"\overline{F}", "end", FORCE)
+    f.tex(ex + 14, (hy + ty) / 2, r"F\sin\alpha", "start", FORCE)
+    f.tex((tx + ex) / 2 - 20, hy + 40, r"F\cos\alpha", "middle", FORCE)
+    dim(f, hx, ex, 262, r"r", above=False)
+    f.tex(hx + 6, hy + 34, r"\text{sarana}", "start")
     return f.svg()
 
 
-FIGURES = {"hero": hero, "pari": couple, "kaatuu": tipping, "lankku": kaava_plank, "hirsi": log_fbd, "scene": scene,
-           "virhe": error_plank, "lauta": board_scene, "lauta-voimat": board_fbd}
+# --- L2-03: a shelf tilted on its front edge, at the limit of tipping (to scale: 0,400 m × 1,80 m, 120 px per metre) ---
+def shelf():
+    f = Fig("fy52-hylly", 350, "Kuva mittakaavassa: kirjahylly, jonka syvyys d on 0,400 m ja korkeus h 1,80 m, on kallistettu eteenpäin "
+            "niin, että se nojaa vain etureunaansa P. Hyllyn painopiste on suorakulmion keskellä. Painopisteestä lähtee "
+            "pystysuora katkoviiva alas etureunaan P, joten hylly on kaatumisen rajalla. Kulma alfa on pystysuoran ja hyllyn "
+            "korkeussuunnan eli etureunan välinen kulma. Hyllyn pohjan puolikas d/2 ja puolet korkeudesta h/2 muodostavat "
+            "suorakulmaisen kolmion, jonka hypotenuusa on pystysuora jana painopisteestä reunaan P.")
+    px, py, k, a = 330, 272, 120, math.degrees(math.atan(0.4 / 1.8))
+    ca, sa = math.cos(math.radians(a)), math.sin(math.radians(a))
+    d, h = 0.400 * k, 1.80 * k
+    u = (-ca, -sa)                                                    # the depth direction on the page (backwards, up a little)
+    v = (sa, -ca)                                                     # the height direction (up, leaning forward)
+    P = lambda s, t: (px + s * u[0] + t * v[0], py + s * u[1] + t * v[1])
+    f.line(60, py, 560, py, INK, 3, cap="round")
+    for x in range(70, 560, 18): f.line(x, py, x - 10, py + 12, MUTED, 1.5)
+    pts = [P(0, 0), P(d, 0), P(d, h), P(0, h)]
+    f.path("M" + " L".join(f"{n(x)},{n(y)}" for x, y in pts) + " Z", SAND_LIGHT, GRAIN, 2.5)
+    for j in (0.3, 0.55, 0.8):                                        # shelf boards
+        a1, b1 = P(0, j * h), P(d, j * h); f.line(a1[0], a1[1], b1[0], b1[1], GRAIN, 1.5)
+    cx, cy = P(d / 2, h / 2)
+    mx, my = P(d / 2, 0)
+    f.line(px, py, px, py - 178, INK, 2, "6 5")                       # the vertical through P and the centre of mass
+    f.line(px, py, mx, my, MUTED, 1.5, "5 4"); f.line(mx, my, cx, cy, MUTED, 1.5, "5 4")
+    cmark(f, cx, cy)
+    f.circle(px, py, 6, INK, WHITE, 2)
+    r = 170
+    f.path(f"M{n(px)},{n(py - r)} A{r},{r} 0 0 1 {n(px + r * sa)},{n(py - r * ca)}", stroke=INK, w=1.5)
+    f.tex(px + r * sa + 26, py - r * ca - 4, r"\alpha", "middle")
+    f.tex(px + 14, py + 36, r"\text{etureuna }P", "start")
+    # half the depth, under the floor: from the foot of M to P
+    f.line(mx, my + 2, mx, py + 26, MUTED, 1.5, "4 4")
+    dim(f, mx, px, py + 26, r"\tfrac{d}{2}", above=False)
+    # half the height, beside the front face
+    o = (34 * ca, 34 * sa)
+    f.line(px + o[0], py + o[1], cx + o[0], cy + o[1], INK, 1.5)
+    for q in ((px, py), (cx, cy)):
+        f.line(q[0] + o[0] - 7 * u[0], q[1] + o[1] - 7 * u[1], q[0] + o[0] + 7 * u[0], q[1] + o[1] + 7 * u[1], INK, 1.5)
+    f.tex((px + cx) / 2 + o[0] + 24, (py + cy) / 2 + o[1], r"\tfrac{h}{2}", "start")
+    return f.svg()
+
+
+# --- L3-02: the sign on a rod, held by a wire above it (to scale: 220 px per metre) -----------------------------------------
+def sign():
+    f = Fig("fy52-kyltti", 350, "Kuva mittakaavassa: vaakasuora, 1,20 m pitkä tanko on kiinnitetty saranalla seinään. Tangon uloimmasta "
+            "päästä riippuu kyltti. Tangon uloimmasta päästä lähtee vaijeri vinosti ylös seinään, saranan yläpuolelle, "
+            "niin että vaijerin ja tangon välinen kulma on 30,0 astetta.")
+    hx, hy, L = 96, 200, 264
+    ex = hx + L
+    ay = hy - L * math.tan(math.radians(30))
+    wall(f, hx, 20, 300)
+    f.line(hx, ay, ex, hy, INK, 3)                                   # the wire
+    f.circle(hx, ay, 5, INK)
+    f.rect(hx, hy - 9, L, 18, SAND_LIGHT, GRAIN, 2.5, 3)
+    f.circle(hx, hy, 7, WHITE, INK, 2.5)
+    f.line(ex, hy + 9, ex, 262, INK, 2)
+    f.rect(ex - 50, 262, 100, 56, ALUMINIUM, METAL_EDGE, 2.5, 4)
+    f.tex(ex, 290, r"\text{kyltti}", "middle")
+    r = 100
+    f.path(f"M{n(ex - r)},{n(hy)} A{r},{r} 0 0 1 {n(ex - r * math.cos(math.radians(30)))},{n(hy - r * 0.5)}", stroke=INK, w=1.5)
+    bx, by = ex - 175 * math.cos(math.radians(15)), hy - 175 * math.sin(math.radians(15))
+    f.tex(bx, by, r"30{,}0^\circ", "middle")
+    f.tex((hx + ex) / 2, hy + 34, r"\text{tanko }1{,}20\,\text{m}", "middle")
+    f.tex(ex - 100, (hy + ay) / 2 - 62, r"\text{vaijeri}", "middle")
+    return f.svg()
+
+FIGURES = {"hero": hero, "pari": couple, "kaatuu": tipping, "lankku": kaava_plank, "komponentit": components, "hirsi": log_fbd,
+           "virhe": error_plank, "lauta": board_scene, "lauta-voimat": board_fbd, "hylly": shelf, "kyltti": sign}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
     "pari": "reveals: a couple turns a body although the forces cancel",
@@ -298,4 +368,7 @@ REUSE = {
     "virhe": "safe: a deliberately wrong diagram (equal support forces), for an error-spotting task",
     "lauta": "safe: situation picture of a diving board, data only",
     "lauta-voimat": "reveals: the model force diagram of the diving board",
+    "komponentit": "reveals: only the component across the rod gives a moment about the hinge",
+    "hylly": "safe: geometry of the tilted shelf at the limit, symbols d, h and alpha only",
+    "kyltti": "safe: situation picture of the sign, rod and wire with the angle and length, no forces",
 }

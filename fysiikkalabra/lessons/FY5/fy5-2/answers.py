@@ -7,7 +7,7 @@ import json, math
 g = 9.81
 a = {}
 # Level 1: one formula, values given
-a["fy5-2-L1-01"] = 30 * g * 1.6 / (40 * g)               # seesaw: m1 g r1 = m2 g r2 -> r2 = 30 · 1,6 / 40 = 1,2 m (g cancels)
+a["fy5-2-L1-01"] = 80 * 0.60 / 0.050                     # crowbar (light), moments about the fulcrum: F_nail · 0,050 m = 80 N · 0,60 m -> 960 N
 a["fy5-2-L1-02"] = 0.50 * 0.30 / 0.20                    # ruler balanced at its middle: F r = F_p r_p -> F = 0,50 N · 0,30 m / 0,20 m = 0,75 N
 a["fy5-2-L1-03"] = 620 * 0.400 / 1.20                    # wheelbarrow, moments about the axle: F · 1,20 m = 620 N · 0,400 m -> 206,7 N
 a["fy5-2-L1-04"] = 12.0 * g / 2                          # plank on supports at both ends, symmetric: N = G / 2 = 117,72 N / 2 = 58,86 N

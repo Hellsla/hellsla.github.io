@@ -261,7 +261,40 @@ Kappale on tasapainossa, kun sekä voimien summa että voimien momenttien summa 
 missä $\Sigma\overline{F}$ on kappaleeseen vaikuttavien voimien vektorisumma ($\text{N}$) ja $\Sigma M$ voimien momenttien summa ($\text{Nm}$) jonkin pisteen suhteen. Ensimmäinen on **tasapainoehto etenemisen suhteen** ja toinen **momenttiehto** eli tasapainoehto pyörimisen suhteen. Komponenteittain ensimmäinen ehto on $\Sigma F_x = 0$ ja $\Sigma F_y = 0$. Momentit lasketaan kuten luvussa *Voiman momentti ja kappaleen kiertyminen*: $M = Fr$, missä $r$ on voiman varsi, ja etumerkki kertoo kiertosuunnan. Tässä luvussa vastapäivään kiertävä momentti on positiivinen.
 
 ### Momenttipisteen valinta
-Levossa oleva kappale ei kierry minkään pisteen ympäri, joten momenttiehto pätee jokaisen pisteen suhteen. Momenttipisteeksi kannattaa valita tuntemattoman voiman vaikutuspiste: sen voiman varsi on nolla, joten voima ei esiinny momenttiehdossa. Jos voima ei ole kohtisuorassa kappaletta vastaan, se jaetaan komponentteihin, ja momentin antaa kappaletta vastaan kohtisuora komponentti kerrottuna etäisyydellä momenttipisteestä.
+Levossa oleva kappale ei kierry minkään pisteen ympäri, joten momenttiehto pätee jokaisen pisteen suhteen. Momenttipisteeksi kannattaa valita tuntemattoman voiman vaikutuspiste: sen voiman varsi on nolla, joten voima ei esiinny momenttiehdossa. Jos voima ei ole kohtisuorassa sauvamaista kappaletta (lankku, tanko) vastaan, se jaetaan komponentteihin. Kun momenttipiste on sauvan suoralla, momentin antaa sauvaa vastaan kohtisuora komponentti kerrottuna etäisyydellä momenttipisteestä. Kuvassa tangon päähän vaikuttava voima $\overline{F}$ muodostaa kulman $\alpha$ tangon kanssa: tangon suuntainen komponentti $F\cos\alpha$ kulkee saranan kautta eikä kierrä tankoa, ja kohtisuora komponentti $F\sin\alpha$ antaa momentin $M = F\sin\alpha \cdot r$.
+
+<svg data-fig="komponentit" viewBox="0 0 600 290" role="img" aria-label="Kaavakuva: vaakasuora tanko on saranalla seinässä. Tangon uloimpaan päähän vaikuttaa voima F, joka osoittaa vinosti ylös kohti seinää ja muodostaa kulman alfa tangon kanssa. Voima on jaettu katkoviivanuolilla tangon suuntaiseen komponenttiin, joka kulkee saranan kautta eikä kierrä tankoa, ja tankoa vastaan kohtisuoraan komponenttiin F sin alfa, joka antaa momentin saranan suhteen. Momentin varsi on tangon pituus r." style="max-width:100%;font-size:24px">
+  <rect x="34" y="40" width="56" height="210" fill="#e3dccb" stroke="#1f2933" stroke-width="2.5"/>
+  <line x1="34" y1="64" x2="52" y2="50" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="34" y1="86" x2="52" y2="72" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="34" y1="108" x2="52" y2="94" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="34" y1="130" x2="52" y2="116" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="34" y1="152" x2="52" y2="138" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="34" y1="174" x2="52" y2="160" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="34" y1="196" x2="52" y2="182" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="34" y1="218" x2="52" y2="204" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="34" y1="240" x2="52" y2="226" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <rect x="90" y="182" width="340" height="16" rx="3" fill="#f1dfb5" stroke="#a97a35" stroke-width="2.5"/>
+  <line x1="307" y1="104" x2="430" y2="104" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 4"/>
+  <line x1="307" y1="104" x2="307" y2="190" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 4"/>
+  <line x1="430" y1="182" x2="430" y2="106" stroke="#c92a2a" stroke-width="2.5" stroke-linecap="butt" stroke-dasharray="7 5"/>
+  <path d="M436.5,117 L430,104 L423.5,117" fill="none" stroke="#c92a2a" stroke-width="2.5" stroke-linejoin="round"/>
+  <line x1="424" y1="176" x2="311" y2="176" stroke="#c92a2a" stroke-width="2.5" stroke-linecap="butt" stroke-dasharray="7 5"/>
+  <path d="M322,169.5 L309,176 L322,182.5" fill="none" stroke="#c92a2a" stroke-width="2.5" stroke-linejoin="round"/>
+  <line x1="430" y1="190" x2="321" y2="113.5" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M307,104 L326.5,107.5 L317,121 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <circle cx="90" cy="190" r="7" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
+  <path d="M364,190 A66,66 0 0 1 376,152" fill="none" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <foreignObject x="328" y="137.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\alpha$</div></foreignObject>
+  <foreignObject x="262" y="81.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#c92a2a">$\overline{F}$</div></foreignObject>
+  <foreignObject x="444" y="132.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#c92a2a">$F\sin\alpha$</div></foreignObject>
+  <foreignObject x="326" y="215.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$F\cos\alpha$</div></foreignObject>
+  <line x1="90" y1="262" x2="430" y2="262" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="90" y1="255" x2="90" y2="269" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="430" y1="255" x2="430" y2="269" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="250" y="267.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$r$</div></foreignObject>
+  <foreignObject x="96" y="209.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{sarana}$</div></foreignObject>
+</svg>
 
 ### Kaksi tukea
 Kuvan lankku on kahden tuen varassa. Lasketaan momentit painopisteen suhteen: painon $\overline{G}$ varsi on nolla, tukivoima $\overline{N}_1$ kiertää lankkua myötäpäivään ja $\overline{N}_2$ vastapäivään. Momenttiehdosta $N_2 r_2 - N_1 r_1 = 0$ saadaan
@@ -341,9 +374,9 @@ Kaksi kantajaa kantaa vaakasuorassa tasa-aineista hirttä, jonka pituus on $4{,}
   <circle cx="80" cy="160" r="5" fill="#1f2933"/>
   <foreignObject x="46" y="145.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{A}$</div></foreignObject>
   <foreignObject x="440" y="185.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{B}$</div></foreignObject>
-  <path d="M127,290.5 A26,26 0 1 0 89,274.5" fill="none" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
-  <path d="M89.5,277 L80,267.5 L91,263.5 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <foreignObject x="156" y="253.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$+$</div></foreignObject>
+  <path d="M127,306.5 A26,26 0 1 0 89,290.5" fill="none" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M89.5,293 L80,283.5 L91,279.5 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <foreignObject x="156" y="269.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$+$</div></foreignObject>
 </svg>
 
 <!-- vaihe -->
@@ -400,7 +433,7 @@ Moni ajattelee, että kaksi tukea kantavat aina puolet painosta tai että kauemp
 
 Toinen virhe on luulla, että kuormitettu lankku kaatuu heti, kun kuorma on tuen ohi. Lankku kaatuu vasta, kun lankun ja kuorman *yhteinen* painopiste on tuen ohi: siihen asti lankun oma paino tukien välissä kumoaa kuorman momentin.
 
-Kolmas virhe on uskoa, että momentit pitää laskea painopisteen tai tuen suhteen. Momenttiehto pätee minkä tahansa pisteen suhteen, ja eri pisteistä laskettuna saadaan samat voimat. Hyvä valinta vain lyhentää laskua.
+Kolmas virhe on uskoa, että momentit pitää laskea vain painopisteen tai tuen suhteen. Momenttiehto pätee minkä tahansa pisteen suhteen, ja eri pisteistä laskettuna saadaan samat voimat. Hyvä valinta vain lyhentää laskua.
 
 ## Tiivistelmä
 - Kappale on tasapainossa, kun voimien summa on nolla, $\Sigma\overline{F} = \overline{0}$ (etenemisen suhteen), ja voimien momenttien summa on nolla, $\Sigma M = 0$ (pyörimisen suhteen).
@@ -408,72 +441,3 @@ Kolmas virhe on uskoa, että momentit pitää laskea painopisteen tai tuen suhte
 - Paino vaikuttaa painopisteessä, joka on tasa-aineisen symmetrisen kappaleen keskellä. Kahden tuen varassa olevalle lankulle $N_1 r_1 = N_2 r_2$: painopistettä lähempänä oleva tuki kantaa enemmän.
 - Tuettu kappale pysyy pystyssä, kun painopisteen kautta kulkeva pystysuora osuu tukipinnan kohdalle; muuten se kaatuu.
 
-<svg data-fig="scene" viewBox="0 0 600 360" role="img" aria-label="Kuvitus: rakennustyömaan torninosturi. Pystysuoran tornin päällä on pitkä vaakapuomi, jonka toisessa päässä riippuu kuorma ja lyhyemmässä vastapuomissa on raskaat betoniset vastapainot. Nosturin alla on keskeneräinen talo." style="max-width:100%;font-size:24px">
-  <defs><linearGradient id="fy52s-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#eef5f9"/></linearGradient></defs>
-  <rect x="0" y="0" width="600" height="360" fill="url(#fy52s-sky)"/>
-  <path d="M300,138 Q299,121 319,123 Q327,105 347,111 Q365,101 375,120 Q393,122 391,138 Z" fill="#ffffff" stroke-linejoin="round"/>
-  <rect x="0" y="318" width="600" height="42" fill="#d9b26a"/>
-  <rect x="330" y="220" width="190" height="98" fill="#e3dccb" stroke="#1f2933" stroke-width="2"/>
-  <rect x="360" y="240" width="30" height="30" fill="#eef5f9" stroke="#1f2933" stroke-width="1.5"/>
-  <rect x="410" y="240" width="30" height="30" fill="#eef5f9" stroke="#1f2933" stroke-width="1.5"/>
-  <rect x="460" y="240" width="30" height="30" fill="#eef5f9" stroke="#1f2933" stroke-width="1.5"/>
-  <rect x="330" y="206" width="190" height="14" fill="#6c757d"/>
-  <rect x="180" y="306" width="62" height="14" fill="#6c757d"/>
-  <line x1="196" y1="306" x2="196" y2="74" stroke="#e8590c" stroke-width="4" stroke-linecap="butt"/>
-  <line x1="226" y1="306" x2="226" y2="74" stroke="#e8590c" stroke-width="4" stroke-linecap="butt"/>
-  <line x1="196" y1="306" x2="226" y2="284" stroke="#e8590c" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="196" y1="284" x2="226" y2="284" stroke="#e8590c" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="196" y1="284" x2="226" y2="262" stroke="#e8590c" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="196" y1="262" x2="226" y2="262" stroke="#e8590c" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="196" y1="262" x2="226" y2="240" stroke="#e8590c" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="196" y1="240" x2="226" y2="240" stroke="#e8590c" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="196" y1="240" x2="226" y2="218" stroke="#e8590c" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="196" y1="218" x2="226" y2="218" stroke="#e8590c" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="196" y1="218" x2="226" y2="196" stroke="#e8590c" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="196" y1="196" x2="226" y2="196" stroke="#e8590c" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="196" y1="196" x2="226" y2="174" stroke="#e8590c" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="196" y1="174" x2="226" y2="174" stroke="#e8590c" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="196" y1="174" x2="226" y2="152" stroke="#e8590c" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="196" y1="152" x2="226" y2="152" stroke="#e8590c" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="196" y1="152" x2="226" y2="130" stroke="#e8590c" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="196" y1="130" x2="226" y2="130" stroke="#e8590c" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="196" y1="130" x2="226" y2="108" stroke="#e8590c" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="196" y1="108" x2="226" y2="108" stroke="#e8590c" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="196" y1="108" x2="226" y2="86" stroke="#e8590c" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="196" y1="86" x2="226" y2="86" stroke="#e8590c" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="196" y1="86" x2="226" y2="64" stroke="#e8590c" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="196" y1="64" x2="226" y2="64" stroke="#e8590c" stroke-width="2" stroke-linecap="butt"/>
-  <rect x="70" y="60" width="490" height="14" fill="#e8590c" stroke="#1f2933" stroke-width="2"/>
-  <line x1="80" y1="60" x2="92" y2="74" stroke="#1f2933" stroke-width="1" stroke-linecap="butt"/>
-  <line x1="104" y1="60" x2="116" y2="74" stroke="#1f2933" stroke-width="1" stroke-linecap="butt"/>
-  <line x1="128" y1="60" x2="140" y2="74" stroke="#1f2933" stroke-width="1" stroke-linecap="butt"/>
-  <line x1="152" y1="60" x2="164" y2="74" stroke="#1f2933" stroke-width="1" stroke-linecap="butt"/>
-  <line x1="176" y1="60" x2="188" y2="74" stroke="#1f2933" stroke-width="1" stroke-linecap="butt"/>
-  <line x1="200" y1="60" x2="212" y2="74" stroke="#1f2933" stroke-width="1" stroke-linecap="butt"/>
-  <line x1="224" y1="60" x2="236" y2="74" stroke="#1f2933" stroke-width="1" stroke-linecap="butt"/>
-  <line x1="248" y1="60" x2="260" y2="74" stroke="#1f2933" stroke-width="1" stroke-linecap="butt"/>
-  <line x1="272" y1="60" x2="284" y2="74" stroke="#1f2933" stroke-width="1" stroke-linecap="butt"/>
-  <line x1="296" y1="60" x2="308" y2="74" stroke="#1f2933" stroke-width="1" stroke-linecap="butt"/>
-  <line x1="320" y1="60" x2="332" y2="74" stroke="#1f2933" stroke-width="1" stroke-linecap="butt"/>
-  <line x1="344" y1="60" x2="356" y2="74" stroke="#1f2933" stroke-width="1" stroke-linecap="butt"/>
-  <line x1="368" y1="60" x2="380" y2="74" stroke="#1f2933" stroke-width="1" stroke-linecap="butt"/>
-  <line x1="392" y1="60" x2="404" y2="74" stroke="#1f2933" stroke-width="1" stroke-linecap="butt"/>
-  <line x1="416" y1="60" x2="428" y2="74" stroke="#1f2933" stroke-width="1" stroke-linecap="butt"/>
-  <line x1="440" y1="60" x2="452" y2="74" stroke="#1f2933" stroke-width="1" stroke-linecap="butt"/>
-  <line x1="464" y1="60" x2="476" y2="74" stroke="#1f2933" stroke-width="1" stroke-linecap="butt"/>
-  <line x1="488" y1="60" x2="500" y2="74" stroke="#1f2933" stroke-width="1" stroke-linecap="butt"/>
-  <line x1="512" y1="60" x2="524" y2="74" stroke="#1f2933" stroke-width="1" stroke-linecap="butt"/>
-  <line x1="536" y1="60" x2="548" y2="74" stroke="#1f2933" stroke-width="1" stroke-linecap="butt"/>
-  <path d="M196,60 L211.0,20 L226,60 Z" fill="#e8590c" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <line x1="211" y1="20" x2="540" y2="60" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="211" y1="20" x2="80" y2="60" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <rect x="78" y="74" width="64" height="40" rx="2" fill="#c9c2b2" stroke="#1f2933" stroke-width="2"/>
-  <line x1="78" y1="94" x2="142" y2="94" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <rect x="228" y="74" width="30" height="26" rx="3" fill="#eef5f9" stroke="#1f2933" stroke-width="2"/>
-  <rect x="452" y="74" width="28" height="10" fill="#6c757d"/>
-  <line x1="466" y1="84" x2="466" y2="168" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <path d="M460,168 h12 v8 q-6,10 -12,0 Z" fill="#6c757d" stroke-linejoin="round"/>
-  <line x1="466" y1="178" x2="432" y2="204" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="466" y1="178" x2="500" y2="204" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <rect x="420" y="204" width="92" height="14" fill="#8a96a3" stroke="#1f2933" stroke-width="2"/>
-</svg>
