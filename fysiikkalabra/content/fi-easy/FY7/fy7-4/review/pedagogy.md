@@ -1,8 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 35d364ad974a1b27
+CONTENT-HASH: a5f83ab368fa4a88
 ## Blocking
 
 ## Polish
 
 ## Checked
-batch delta review: mu0 explanation now a natural constant saying how strong a field a current makes in vacuum (and nearly air); more meaningful than the earlier vague wording, fits the force-between-wires formula and the ampere definition.
+delta review: lesson.md Kaiutin paragraph, "sisäenergiaksi eli lämmöksi" is now "sisäenergiaksi, eli ne lämpenevät". The wording is correct Finnish and plain. It avoids the loose equation of heat with internal energy. It keeps the point that most of the electrical energy ends up as warming and not as sound. The change adds no numbers or symbols and touches no figure, so the rest of the lesson stands as approved.
