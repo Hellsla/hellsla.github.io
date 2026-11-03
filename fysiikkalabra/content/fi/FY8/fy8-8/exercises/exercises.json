@@ -45,7 +45,7 @@
     {
       "id": "fy8-8-L2-01",
       "level": 2,
-      "text": "Nikkeli-60-ytimen energiatasot ovat $2505{,}7\\,\\text{keV}$ ja $1332{,}5\\,\\text{keV}$ perustilan yläpuolella (NNDC NuDat 3). Ydin siirtyy ylemmältä tasolta alemmalle ja lähettää gammafotonin. Laske fotonin aallonpituus pikometreinä ($h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{keV} = 1000\\,\\text{eV}$, $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$).",
+      "text": "Nikkeli-60-ytimen kaksi viritystilaa ovat $2505{,}8\\,\\text{keV}$ ja $1332{,}5\\,\\text{keV}$ perustilan yläpuolella. Ydin siirtyy ylemmältä tasolta alemmalle ja lähettää gammafotonin. Laske fotonin aallonpituus pikometreinä ($h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{keV} = 1000\\,\\text{eV}$, $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$).",
       "answer": 1.06,
       "unit": "pm",
       "tolerance": 0.02

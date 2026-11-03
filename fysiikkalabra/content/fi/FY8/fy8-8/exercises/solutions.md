@@ -5,7 +5,7 @@
 **Kaava:** $A = Z + N$, josta $N = A - Z$
 **Muunnokset:** Ei tarvita, koska luvut ovat kappalemääriä.
 **Sijoitus:** $N = 235 - 92 = 143$
-**Vastaus:** $143$ neutronia; tulos on tarkka kokonaisluku, koska nukleoneja lasketaan kappaleina.
+**Vastaus:** $143$. Tulos on neutronien tarkka lukumäärä, koska nukleoneja lasketaan kappaleina.
 **Järkevyys:** Neutroneja on enemmän kuin protoneja, kuten raskaissa ytimissä kuuluu: $143 : 92 \approx 1{,}6$. Uraani-238:ssa neutroneja on kolme enemmän, $146$, koska isotoopeilla on sama $Z$ mutta eri $N$.
 
 ## fy8-8-L1-02
@@ -15,7 +15,7 @@
 **Kaava:** $A = A' + 4$, josta $A' = A - 4$
 **Muunnokset:** Ei tarvita, koska massaluvut ovat kappalemääriä.
 **Sijoitus:** $A' = 222 - 4 = 218$
-**Vastaus:** $218$; tarkka kokonaisluku. Tytärydin on polonium-218 ${}^{218}_{84}\text{Po}$, koska samalla $Z$ pienenee kahdella.
+**Vastaus:** $218$. Tulos on tarkka kokonaisluku. Tytärydin on polonium-218 ${}^{218}_{84}\text{Po}$, koska samalla $Z$ pienenee kahdella.
 **Järkevyys:** Yhtälö ${}^{222}_{86}\text{Rn} \to {}^{218}_{84}\text{Po} + {}^{4}_{2}\text{He}$ täsmää: $222 = 218 + 4$ ja $86 = 84 + 2$. Sama askel näkyy uraani-238:n sarjassa radonista poloniumiin.
 
 ## fy8-8-L1-03
@@ -25,7 +25,7 @@
 **Kaava:** $Z = Z' + (-1)$, josta $Z' = Z + 1$
 **Muunnokset:** Ei tarvita, koska järjestysluvut ovat kappalemääriä.
 **Sijoitus:** $Z' = 6 + 1 = 7$
-**Vastaus:** $7$; tarkka kokonaisluku. Järjestysluku $7$ on typpi, joten tytärydin on ${}^{14}_{7}\text{N}$.
+**Vastaus:** $7$. Tulos on tarkka kokonaisluku. Järjestysluku $7$ on typpi, joten tytärydin on ${}^{14}_{7}\text{N}$.
 **Järkevyys:** Massaluku pysyy $14$:ssä ja varausluku täsmää: $6 = 7 - 1$. Hiili-14:ssä on kahdeksan neutronia ja kuusi protonia, eli neutroneja on enemmän kuin kevyelle pysyvälle ytimelle sopii, joten beeta miinus -hajoaminen siirtää sen kohti pysyvien ytimien vyötä.
 
 ## fy8-8-L1-04
@@ -45,18 +45,18 @@
 **Kaava:** $A' = A$ ja $Z = Z' + 1$, joten $Z' = Z - 1$ ja $N' = A' - Z' = A - (Z - 1)$
 **Muunnokset:** Ei tarvita, koska luvut ovat kappalemääriä.
 **Sijoitus:** $Z' = 9 - 1 = 8$ ja $N' = 18 - 8 = 10$
-**Vastaus:** $10$ neutronia; tarkka kokonaisluku. Tytärydin on happi-18 ${}^{18}_{8}\text{O}$.
+**Vastaus:** $10$. Tulos on neutronien tarkka lukumäärä. Tytärydin on happi-18 ${}^{18}_{8}\text{O}$.
 **Järkevyys:** Emoytimessä on $18 - 9 = 9$ neutronia, ja protonin muuttuminen neutroniksi lisää niitä yhdellä: $9 + 1 = 10$. Yhtälö ${}^{18}_{9}\text{F} \to {}^{18}_{8}\text{O} + {}^{0}_{+1}\text{e} + \nu$ täsmää: $18 = 18 + 0$ ja $9 = 8 + 1$.
 
 ## fy8-8-L2-01
-**Annettu:** nikkeli-60:n tasot $E_\text{y} = 2505{,}7\,\text{keV}$ ja $E_\text{a} = 1332{,}5\,\text{keV}$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{keV} = 1000\,\text{eV}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
+**Annettu:** nikkeli-60:n tasot $E_\text{y} = 2505{,}8\,\text{keV}$ ja $E_\text{a} = 1332{,}5\,\text{keV}$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{keV} = 1000\,\text{eV}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
 **Kysytty:** gammafotonin aallonpituus $\lambda$ pikometreinä
 **Periaate:** Ytimen energia on kvantittunut. Energia säilyy, joten siirtymässä lähtevän fotonin energia on tasojen erotus, kuten atomin siirtymissä, ja fotonin energia on $\tfrac{hc}{\lambda}$.
 **Kaava:** $\dfrac{hc}{\lambda} = E_\text{y} - E_\text{a}$, josta $\lambda = \dfrac{hc}{E_\text{y} - E_\text{a}}$
-**Muunnokset:** $E_\text{y} - E_\text{a} = 2505{,}7\,\text{keV} - 1332{,}5\,\text{keV} = 1173{,}2\,\text{keV} = 1173{,}2 \cdot 1000 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 1{,}8795 \cdot 10^{-13}\,\text{J}$; lopuksi $1\,\text{m} = 10^{12}\,\text{pm}$.
-**Sijoitus:** Tulo $hc = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8}\,\text{m/s} = 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}$. $\lambda = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{1{,}8795 \cdot 10^{-13}\,\text{J}} = 1{,}0569 \cdot 10^{-12}\,\text{m} = 1{,}0569\,\text{pm}$
-**Vastaus:** $1{,}06\,\text{pm}$, kolme merkitsevää numeroa; tarkemmin $1{,}057\,\text{pm}$, neljä numeroa kuten energiaerossa $1173{,}2\,\text{keV}$.
-**Järkevyys:** Fotonin energia $1173{,}2\,\text{keV}$ on yksi koboltti-60:n gammaspektrin kahdesta piikistä. Se on vähän pienempi kuin toisen fotonin $1332{,}5\,\text{keV}$, joten aallonpituus on vähän pidempi kuin sen $0{,}931\,\text{pm}$, kuten pitää.
+**Muunnokset:** $E_\text{y} - E_\text{a} = 2505{,}8\,\text{keV} - 1332{,}5\,\text{keV} = 1173{,}3\,\text{keV} = 1173{,}3 \cdot 1000 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 1{,}8796 \cdot 10^{-13}\,\text{J}$; lopuksi $1\,\text{m} = 10^{12}\,\text{pm}$.
+**Sijoitus:** Tulo $hc = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8}\,\text{m/s} = 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}$. $\lambda = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{1{,}8796 \cdot 10^{-13}\,\text{J}} = 1{,}0568 \cdot 10^{-12}\,\text{m} = 1{,}0568\,\text{pm}$
+**Vastaus:** $1{,}06\,\text{pm}$, kolme merkitsevää numeroa; tarkemmin $1{,}057\,\text{pm}$, neljä numeroa kuten energiaerossa $1173{,}3\,\text{keV}$.
+**Järkevyys:** Mitattu gammafotoni on $1173{,}2\,\text{keV}$, yksi koboltti-60:n gammaspektrin kahdesta piikistä; ero $0{,}1\,\text{keV}$ syntyy, koska ydin saa fotonin lähtiessä rekyylin eli pienen liike-energian, eikä se muuta aallonpituutta kolmen numeron tarkkuudella. Se on vähän pienempi kuin toisen fotonin $1332{,}5\,\text{keV}$, joten aallonpituus on vähän pidempi kuin sen $0{,}931\,\text{pm}$, kuten pitää.
 
 ## fy8-8-L2-02
 **Annettu:** emoydin ${}^{214}_{83}\text{Bi}$; ensin beeta miinus -hajoaminen, sitten alfahajoaminen
@@ -65,7 +65,7 @@
 **Kaava:** $Z' = Z + 1$ ja $Z'' = Z' - 2$, joten $Z'' = Z + 1 - 2$
 **Muunnokset:** Ei tarvita, koska järjestysluvut ovat kappalemääriä.
 **Sijoitus:** $Z' = 83 + 1 = 84$ ja $Z'' = 84 - 2 = 82$
-**Vastaus:** $82$; tarkka kokonaisluku. Ydin on lyijy-210 ${}^{210}_{82}\text{Pb}$, koska massaluku pienenee vain alfahajoamisessa: $214 - 4 = 210$.
+**Vastaus:** $82$. Tulos on tarkka kokonaisluku. Ydin on lyijy-210 ${}^{210}_{82}\text{Pb}$, koska massaluku pienenee vain alfahajoamisessa: $214 - 4 = 210$.
 **Järkevyys:** Välivaihe on polonium-214 ${}^{214}_{84}\text{Po}$, ja juuri näin sarja kulkee simulaation uraanisarjassa vaiheesta $9$ vaiheeseen $11$. Kaksi hajoamista yhteensä pienentää järjestyslukua yhdellä: $+1 - 2 = -1$.
 
 ## fy8-8-L2-03
@@ -85,7 +85,7 @@
 **Kaava:** $A_\text{loppu} = A - 4$, $Z_\text{loppu} = Z - 2 + 1 + 1$ ja $N = A_\text{loppu} - Z_\text{loppu}$
 **Muunnokset:** Ei tarvita, koska luvut ovat kappalemääriä.
 **Sijoitus:** $A_\text{loppu} = 232 - 4 = 228$, $Z_\text{loppu} = 90 - 2 + 1 + 1 = 90$ ja $N = 228 - 90 = 138$
-**Vastaus:** $138$ neutronia; tarkka kokonaisluku. Ydin on torium-228 ${}^{228}_{90}\text{Th}$.
+**Vastaus:** $138$. Tulos on neutronien tarkka lukumäärä. Ydin on torium-228 ${}^{228}_{90}\text{Th}$.
 **Järkevyys:** Ketju on ${}^{232}_{90}\text{Th} \to {}^{228}_{88}\text{Ra} \to {}^{228}_{89}\text{Ac} \to {}^{228}_{90}\text{Th}$. Lopussa ollaan taas toriumissa, mutta neutroneja on neljä vähemmän kuin alussa ($142 - 4 = 138$): alfa vei kaksi ja kumpikin beetahajoaminen muutti yhden neutronin protoniksi.
 
 ## fy8-8-L3-01
@@ -95,7 +95,7 @@
 **Kaava:** $A_\text{alku} - A_\text{loppu} = 4 n_\alpha$ ja $Z_\text{loppu} = Z_\text{alku} - 2 n_\alpha + n_\beta$, joista $n_\beta = Z_\text{loppu} - Z_\text{alku} + 2 n_\alpha$
 **Muunnokset:** Ei tarvita, koska luvut ovat kappalemääriä.
 **Sijoitus:** $n_\alpha = \dfrac{232 - 208}{4} = 6$ ja $n_\beta = 82 - 90 + 2 \cdot 6 = 4$
-**Vastaus:** $4$ beeta miinus -hajoamista; tarkka kokonaisluku.
+**Vastaus:** $4$. Beeta miinus -hajoamisten määrä on tarkka kokonaisluku.
 **Järkevyys:** Tarkistus: $90 - 2 \cdot 6 + 4 = 82$ ja $232 - 4 \cdot 6 = 208$. Pelkät alfahajoamiset veisivät järjestysluvun arvoon $78$, liian alas; beetahajoamiset nostavat sen lyijyyn. Uraanisarjassakin beetahajoamisia on vähemmän kuin alfahajoamisia ($6$ ja $8$).
 
 ## fy8-8-L3-02
@@ -115,5 +115,5 @@
 **Kaava:** $Z_\text{Rn} = Z_\text{väli} - 2$ ja $Z_\text{väli} = Z_\text{X} + 1$, joista $Z_\text{X} = Z_\text{Rn} + 2 - 1$
 **Muunnokset:** Ei tarvita, koska järjestysluvut ovat kappalemääriä.
 **Sijoitus:** $Z_\text{väli} = 86 + 2 = 88$ ja $Z_\text{X} = 88 - 1 = 87$
-**Vastaus:** $87$; tarkka kokonaisluku. Järjestysluku $87$ on frankium, ja massaluku on $222 + 4 = 226$, joten X on ${}^{226}_{87}\text{Fr}$.
+**Vastaus:** $87$. Tulos on tarkka kokonaisluku. Järjestysluku $87$ on frankium, ja massaluku on $222 + 4 = 226$, joten X on ${}^{226}_{87}\text{Fr}$.
 **Järkevyys:** Eteenpäin laskettuna ${}^{226}_{87}\text{Fr} \to {}^{226}_{88}\text{Ra} \to {}^{222}_{86}\text{Rn}$ täsmää: massaluku pienenee vain alfahajoamisessa, ja varausluvut $87 + 1 = 88$, $88 - 2 = 86$. Välivaihe radium-226 hajoaa myös uraanisarjassa radoniksi.

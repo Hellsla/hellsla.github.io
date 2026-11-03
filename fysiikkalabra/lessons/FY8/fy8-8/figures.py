@@ -102,7 +102,8 @@ def chart():
             "lähellä, raskailla se kaartuu sen alapuolelle, koska raskaissa pysyvissä ytimissä on enemmän neutroneja kuin "
             "protoneja. Vyön alapuolella neutroneja on liikaa ja ydin hajoaa beeta miinus -hajoamisella, yläpuolella neutroneja "
             "on liian vähän ja ydin hajoaa beeta plus -hajoamisella. Vyön yläpäässä, Z yli 82, raskaat ytimet hajoavat usein "
-            "alfahajoamisella.")
+            "alfahajoamisella: violetti nuoli vyön yläpään oikealla puolella osoittaa vinosti alas vasemmalle, koska alfahajoaminen "
+            "pienentää sekä neutronilukua että järjestyslukua kahdella.")
     ax = Axes(f, (80, 336), (470, 76), x=(0, 140), y=(0, 90), xticks=[20, 40, 60, 80, 100, 120, 140], yticks=[20, 40, 60, 80],
               xlabel="N", ylabel="Z", grid=True)
     X, Y = ax.X, ax.Y
@@ -117,8 +118,10 @@ def chart():
     f.add('<polygon points="' + " ".join(f"{n(X(a))},{n(Y(b))}" for a, b in pts) + f'" fill="{GOOD_LIGHT}" stroke="{GOOD}" stroke-width="2"/>')
     f.tex(X(84), Y(22), r"\text{liikaa neutroneja: } \beta^-", "start", BETA)
     f.tex(X(4), Y(68), r"\text{liian vähän: } \beta^+", "start", HOT)
-    f.tex(X(66), Y(90), r"\alpha", "end", ALPHA)
-    f.arrow(X(70), Y(90), X(121), Y(86), ALPHA, 2.5, 12)
+    # alpha: a heavy nucleus beyond the top end of the band steps down and left: (N, Z) -> (N - 2, Z - 2) per decay
+    f.circle(X(139), Y(91), 5, ALPHA, WHITE, 1.5)
+    f.arrow(X(139) - 3, Y(91) + 3, X(132), Y(84), ALPHA, 2.5, 12)
+    f.tex(X(132), Y(93), r"\alpha", "end", ALPHA)
     f.line(X(67), Y(48), X(96), Y(48), GOOD, 1.5)
     f.tex(X(98), Y(48), r"\text{pysyvät}", "start", GOOD)
     return f.svg()
@@ -159,7 +162,7 @@ def decays():
 def levels():
     """Ydinajatus: Co-60 beta-minus decay to Ni-60 and the two gamma photons, level energies to scale (NNDC)."""
     f = Fig("fy88-lv", 380, "Energiatasokaavio, energiat mittakaavassa: koboltti-60 hajoaa beeta miinus -hajoamisella nikkeli-60:n "
-            "viritystilaan, jonka energia on 2505,7 keV perustilan yläpuolella. Ydin palaa perustilaan kahdessa vaiheessa: ensin "
+            "viritystilaan, jonka energia on 2505,8 keV perustilan yläpuolella. Ydin palaa perustilaan kahdessa vaiheessa: ensin "
             "tasolle 1332,5 keV, jolloin lähtee gammafotoni 1173,2 keV, ja sitten perustilaan, jolloin lähtee gammafotoni "
             "1332,5 keV. Tiedot NNDC:n NuDat-tietokannasta.")
     k, y0 = 0.108, 344                                  # px per keV, y of the Ni-60 ground state
@@ -167,15 +170,15 @@ def levels():
     # Co-60 level, 2823,1 keV above the Ni-60 ground state (Q value), at left
     f.line(40, Y(2823), 190, Y(2823), INK, 3)
     f.tex(115, Y(2823) - 22, r"{}^{60}_{27}\text{Co}", "middle")
-    f.arrow(160, Y(2823) + 3, 262, Y(2505.7) - 3, BETA, 3, 13)
+    f.arrow(160, Y(2823) + 3, 262, Y(2505.8) - 3, BETA, 3, 13)
     f.tex(170, Y(2650) + 34, r"\beta^-", "start", BETA)
-    for E in (2505.7, 1332.5, 0):
+    for E in (2505.8, 1332.5, 0):
         f.line(250, Y(E), 430, Y(E), INK, 3)
-    f.tex(440, Y(2505.7), r"2505{,}7\,\text{keV}", "start")
+    f.tex(440, Y(2505.8), r"2505{,}8\,\text{keV}", "start")
     f.tex(440, Y(1332.5), r"1332{,}5\,\text{keV}", "start")
     f.tex(440, Y(0), r"0", "start")
     f.tex(340, Y(0) + 24, r"{}^{60}_{28}\text{Ni}", "middle")
-    photon(f, 300, Y(2505.7) + 3, 300, Y(1332.5) - 2, GAMMA, 3, 6, 14)
+    photon(f, 300, Y(2505.8) + 3, 300, Y(1332.5) - 2, GAMMA, 3, 6, 14)
     photon(f, 370, Y(1332.5) + 3, 370, Y(0) - 2, GAMMA, 3, 6, 14)
     f.tex(282, Y(1919), r"1173{,}2", "end", GAMMA)
     f.tex(352, Y(666), r"1332{,}5", "end", GAMMA)
@@ -239,7 +242,7 @@ REUSE = {
     "isotopes": "reveals: C-12 has 6 p + 6 n, C-14 6 p + 8 n",
     "chart": "reveals: which region decays by beta-, beta+ and alpha relative to the stability band",
     "decays": "reveals: how Z and A change in alpha, beta- and gamma decay",
-    "levels": "reveals: the Ni-60 levels 2505,7 and 1332,5 keV and that the two gammas are their differences",
+    "levels": "reveals: the Ni-60 levels 2505,8 and 1332,5 keV and that the two gammas are their differences",
     "shifts": "reveals: the chart steps of alpha (-2, -2), beta- (+1, -1) and beta+ (-1, +1) in (Z, N)",
     "spectrum": "safe: two gamma peaks of Co-60 at 1173,2 and 1332,5 keV, no level diagram",
 }

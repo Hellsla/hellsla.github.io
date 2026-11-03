@@ -18,13 +18,16 @@ a["chain-beta"] = sum(m == 2 for _, _, m in CHAIN)           # 6 beta-minus deca
 for k, (Z, A, m) in enumerate(CHAIN): a[f"koe-N-{k}"] = A - Z  # N = 146, 144, 143, ...
 # lesson.md: nucleus size ratio 10^-10 m / 10^-15 m
 a["size-ratio"] = 1e-10 / 1e-15                               # 1e5
-# Co-60 -> Ni-60: levels 2505,7 and 1332,5 keV; gammas 1173,2 and 1332,5 keV
-a["co-g1"] = 2505.7 - 1332.5                                  # 1173,2 keV
+# Co-60 -> Ni-60: ENSDF levels 2505,753 and 1332,514 keV; gammas 1173,228 and 1332,492 keV
+a["co-level"] = round(2505.753, 1)                            # 2505,8 keV (lesson text, levels figure)
 a["co-sum"] = 1173.2 + 1332.5                                 # 2505,7 keV (interpret question)
+a["co-recoil"] = 2505.753 - (1173.228 + 1332.492)             # 0,033 keV < 0,1 keV: the recoil share of the nucleus
 a["co-g2-pm"] = lam_pm(1332.5)                                # 0,9305 pm
 a["ratio-co-visible"] = 1332.5e3 / 2.0                        # gamma vs a 2 eV visible photon: ~ 7e5 ("satojatuhansia")
 # worked example: Cs-137 -> Ba-137m, gamma 661,7 keV
-a["ex-E-J-e14"] = 661.7e3 * e / 1e-14                         # 1,0600e-14 J
+a["ex-E-J-e13"] = 661.7e3 * e / 1e-13                         # 1,0600e-13 J
+a["ex-hc-e25"] = hc / 1e-25                                   # 1,9865e-25 J m
+a["ex-lambda-check"] = 1.9865e-25 / 1.0600e-13 * 1e12         # 1,8741 pm from the rounded printed values
 a["ex-lambda-pm"] = lam_pm(661.7)                             # 1,8740 pm
 a["ex-ratio-500nm"] = 500e-9 / (lam_pm(661.7) * 1e-12)        # 2,67e5: visible 500 nm is ~ 270 000 times longer
 # kertaus: hydrogen 3 -> 2 photon 1,89 eV

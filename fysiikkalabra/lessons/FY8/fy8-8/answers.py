@@ -16,7 +16,7 @@ a["fy8-8-L1-03"] = 6 + 1                      # C-14 beta-minus: Z' = Z + 1 = 7 
 a["fy8-8-L1-04"] = lam_pm(59.54)              # Am-241 gamma 59,54 keV: lambda = 20,83 pm
 a["fy8-8-L1-05"] = 18 - (9 - 1)               # F-18 beta-plus: Z' = 8, A' = 18, N' = 10
 # Level 2
-a["fy8-8-L2-01"] = lam_pm(2505.7 - 1332.5)    # Ni-60 levels 2505,7 -> 1332,5 keV: E = 1173,2 keV, lambda = 1,057 pm
+a["fy8-8-L2-01"] = lam_pm(2505.8 - 1332.5)    # Ni-60 levels 2505,8 (ENSDF 2505,753) -> 1332,5 keV: E = 1173,3 keV, lambda = 1,057 pm
 a["fy8-8-L2-02"] = 83 + 1 - 2                 # Bi-214 beta-minus -> Po-214 (84), alpha -> Pb-210 (82)
 E550 = hc / 550e-9 / e                        # green photon 550 nm: 2,2546 eV
 a["fy8-8-L2-03"] = 661.7e3 / E550             # Cs-137 gamma 661,7 keV / 2,2546 eV = 2,935e5
