@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 325908c74bd48348
+CONTENT-HASH: 160a3dd44e35ed9f
 
 ## Blocking
+- none
 
 ## Polish
+- none
 
 ## Checked
-batch delta review: chapter title and chapter cross-reference renames only (no figures, maths or numbers changed); opened contact-1 captures (fy5-13, fy5-14 plus layout of the long new titles at 390 px), titles wrap cleanly, cross-references read naturally.
+- batch delta review: opened fy5-7-1280-0 and fy5-7-360-0; photo loads, floats right beside the text at 1280 px and sits in the column at 360 px without clipping or overflow; caption and alt are natural English, factual and consistent with the picture and the adjacent paragraph; credit line present under the caption.

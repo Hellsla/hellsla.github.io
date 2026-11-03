@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 68ed6284989378b6
+CONTENT-HASH: 405f3eb3db4c3d5a
 
 ## Blocking
+(none)
 
 ## Polish
+- (none)
 
 ## Checked
-batch delta review: renamed title and chapter cross-references only (no numbers, symbols or figures changed); fy5-7 and fy5-14 top-390 captures opened, long new titles wrap cleanly at 390 px; references read as natural Finnish and match the new titles.
+batch delta review: photo ok at 1280/360, alt matches picture, caption consistent with the equal-force paragraph. Artemis II -kuva latautuu, asettuu oikealle ja palstalle; krediitti on.

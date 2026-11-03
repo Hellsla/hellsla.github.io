@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 114c73babb2c6e2b
+CONTENT-HASH: bc453a6e11b3ca9e
 
 ## Blocking
+(none)
 
 ## Polish
+- (none)
 
 ## Checked
-batch delta review: renamed title and chapter cross-references only (no numbers, symbols or figures changed); fy5-7 and fy5-14 top-390 captures opened, long new titles wrap cleanly at 390 px; references read as natural Finnish and match the new titles.
+batch delta review: photo ok at 1280/360, caption plain Finnish and consistent with the period/frequency heading. Keinukuva latautuu ja asettuu oikealle ja palstalle; krediitti on.

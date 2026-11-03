@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: e1edbdcd1504df0c
+CONTENT-HASH: f191c7c54cc561b7
 
 ## Blocking
+(none)
 
 ## Polish
+- Alt-tekstissä "62 dB" on tavallista tekstiä, koska alt ei renderöi LaTeXia. Se luetaan ruudunlukijalla luontevasti; jätä niin tai kirjoita "62 desibeliä".
 
 ## Checked
-batch delta review: renamed title and chapter cross-references only (no numbers, symbols or figures changed); fy5-7 and fy5-14 top-390 captures opened, long new titles wrap cleanly at 390 px; references read as natural Finnish and match the new titles.
+batch delta review: photo ok at both widths, caption number in LaTeX renders, alt consistent with picture; alt 62 dB is plain text (attribute cannot render maths). Melunäyttökuva latautuu, asettuu oikealle ja palstalle; kuvatekstin $62\,\text{dB}$ on LaTeXia ja renderöityy oikein; krediitti on.

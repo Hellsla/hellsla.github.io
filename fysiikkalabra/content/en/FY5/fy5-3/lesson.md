@@ -249,6 +249,8 @@ f = \frac{1}{T}
 ```
 where $f$ is the rotation frequency ($\tfrac{1}{\text{s}}$) and $T$ the period ($\text{s}$). When the period is $T = 0.50\,\text{s}$, the object makes $2.0$ revolutions per second, that is, $f = 2.0\,\tfrac{1}{\text{s}}$. The rotation frequency is also often given in revolutions per minute. For example, $45\,\tfrac{1}{\text{min}}$ is converted by substituting $1\,\text{min} = 60\,\text{s}$, which gives $45\,\tfrac{1}{\text{min}} = \tfrac{45}{60\,\text{s}} = 0.75\,\tfrac{1}{\text{s}}$.
 
+<figure class="unit-photo"><img src="pics/fy5/playground-carousel.webp" alt="A red hand-pushed roundabout in a playground. The round floor has rails at the edge and an axle in the middle."><figcaption>A playground roundabout. Every point of the roundabout makes a revolution in the same time, but the distance travelled at the edge is longer than near the axle.</figcaption></figure>
+
 In one revolution the object travels a distance equal to the circumference $2\pi r$ of the circle, and this takes the period $T$. Because the speed is constant, the magnitude of the velocity on the circular path, the **speed along the path**, is the distance travelled divided by the time:
 ```latex
 v = \frac{2\pi r}{T} = 2\pi r f

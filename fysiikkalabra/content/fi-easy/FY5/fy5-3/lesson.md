@@ -249,6 +249,8 @@ f = \frac{1}{T}
 ```
 missä $f$ on pyörimistaajuus ($\tfrac{1}{\text{s}}$) ja $T$ kierrosaika ($\text{s}$). Kun kierrosaika on $T = 0{,}50\,\text{s}$, kappale tekee $2{,}0$ kierrosta sekunnissa. Silloin $f = 2{,}0\,\tfrac{1}{\text{s}}$. Pyörimistaajuus ilmoitetaan usein myös kierroksina minuutissa. Esimerkiksi $45\,\tfrac{1}{\text{min}}$ muunnetaan sijoittamalla $1\,\text{min} = 60\,\text{s}$. Silloin $45\,\tfrac{1}{\text{min}} = \tfrac{45}{60\,\text{s}} = 0{,}75\,\tfrac{1}{\text{s}}$.
 
+<figure class="unit-photo"><img src="pics/fy5/playground-carousel.webp" alt="Punainen karuselli leikkipuistossa. Keskellä on akseli."><figcaption>Leikkipuiston karuselli. Kaikki karusellin kohdat tekevät kierroksen yhtä nopeasti. Reunalla matka on pidempi kuin akselin lähellä.</figcaption></figure>
+
 Yhdellä kierroksella kappale kulkee ympyrän kehän pituisen matkan $2\pi r$. Siihen kuluu kierrosaika $T$. Vauhti on tasainen, joten ratanopeus on kuljettu matka jaettuna ajalla. **Ratanopeus** on nopeuden suuruus ympyräradalla:
 ```latex
 v = \frac{2\pi r}{T} = 2\pi r f
