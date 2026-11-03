@@ -1,0 +1,23 @@
+{
+  "id": "fy6-3",
+  "course": "FY6",
+  "title": "Resistance and Ohm's law",
+  "goals": [
+    "LOPS FY6: resistance and Ohm's law",
+    "LOPS FY6: can investigate electrical phenomena experimentally and make basic measurements in electricity",
+    "Clarification: characteristic curve of a component, resistivity"
+  ],
+  "prerequisites": [
+    "fy6-2"
+  ],
+  "glossary": [
+    "resistanssi",
+    "Ohmin laki",
+    "vastus",
+    "resistiivisyys",
+    "ominaiskäyrä"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

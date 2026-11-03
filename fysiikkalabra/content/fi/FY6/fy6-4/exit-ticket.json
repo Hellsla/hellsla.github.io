@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Vastukset $47\\,\\Omega$ ja $68\\,\\Omega$ kytketään sarjaan. Kuinka suuri on niiden kokonaisresistanssi?",
+    "a": "Sarjaankytkennässä resistanssit lasketaan yhteen: $R = 47\\,\\Omega + 68\\,\\Omega = 115\\,\\Omega$."
+  },
+  {
+    "q": "Kaksi samanlaista $80\\,\\Omega$:n vastusta kytketään rinnan. Kuinka suuri on kokonaisresistanssi, ja miksi se on pienempi kuin yhden vastuksen resistanssi?",
+    "a": "$\\tfrac{1}{R} = \\tfrac{1}{80\\,\\Omega} + \\tfrac{1}{80\\,\\Omega} = \\tfrac{2}{80\\,\\Omega}$, joten $R = 40\\,\\Omega$. Rinnan kytketty vastus on uusi kulkureitti: samalla jännitteellä paristosta lähtee kaksinkertainen virta, joten kokonaisresistanssi on puolet."
+  }
+]
