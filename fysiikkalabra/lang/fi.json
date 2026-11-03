@@ -1733,7 +1733,8 @@
       "sade": "lasersäde",
       "peili": "peili",
       "eipeilia": "ei peilejä",
-      "pumppauslamppu": "pumppauslamppu"
+      "pumppauslamppu": "pumppauslamppu",
+      "akseli_ulos": "$P_\\text{ulos}\\ (\\text{mW})$"
     }
   },
   "practice": {

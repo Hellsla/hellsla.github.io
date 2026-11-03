@@ -29,7 +29,7 @@
         {
           "text": "$1.89\\,\\text{eV}$, because the energy of the photon is the difference between the levels.",
           "correct": true,
-          "feedback": "Correct (chapter *Energy levels of the hydrogen atom and the Bohr model*): $hf = E_3 - E_2 = -1.51\\,\\text{eV} + 3.40\\,\\text{eV} = 1.89\\,\\text{eV}$, the red line of hydrogen. Today the same principle is carried over to the atomic nucleus."
+          "feedback": "Correct (chapter *Energy levels of the hydrogen atom and the Bohr model*): $hf = E_3 - E_2 = -1.51\\,\\text{eV} + 3.40\\,\\text{eV} = 1.89\\,\\text{eV}$, the red line of hydrogen. In this chapter the same principle is carried over to the atomic nucleus."
         },
         {
           "text": "$1.51\\,\\text{eV}$, because the photon gets the energy of the starting level.",

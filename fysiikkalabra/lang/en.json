@@ -1702,7 +1702,8 @@
       "sade": "laser beam",
       "peili": "mirror",
       "eipeilia": "no mirrors",
-      "pumppauslamppu": "pump lamp"
+      "pumppauslamppu": "pump lamp",
+      "akseli_ulos": "$P_\\text{out}\\ (\\text{mW})$"
     },
     "fy8-9": {
       "kaynnista": "Start",

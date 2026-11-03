@@ -223,7 +223,7 @@ new p5((p) => {
     }
     lab('$0$', X(gx0) - 8 * sk, Y(gy0) + 5 * sk + 1.05 * fh, 'r', MUTEDC);
     lab('$P_\\text{p}\\ (\\text{W})$', X(gx1 + 4), Y(gy0) - 0.75 * fh, 'r', INKC);
-    lab('$P_\\text{ulos}\\ (\\text{mW})$', X(gx0) + 10 * sk, Y(gy1 - 16) + 0.36 * fh, 'l', INKC);
+    lab(__('akseli_ulos'), X(gx0) + 10 * sk, Y(gy1 - 16) + 0.36 * fh, 'l', INKC);
     // the model curve for the chosen medium and mirrors
     p.noFill(); p.stroke(...LASER, 90); p.strokeWeight(3 * sk); p.beginShape();
     for (let i = 0; i <= 100; i++) { const P = PMAX * i / 100; p.vertex(px(P), py(model(P, S.levels, S.mirrors).Pout)); }

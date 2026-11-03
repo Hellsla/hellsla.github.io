@@ -424,8 +424,8 @@ h = ek = \frac{e\,(U_2 - U_1)}{f_2 - f_1}
 ```latex
 \begin{aligned}
 &h = \frac{e\,(U_2 - U_1)}{f_2 - f_1} \\
-&= \frac{1{,}602 \cdot 10^{-19}\,\text{C} \cdot 1{,}22\,\text{V}}{3{,}00 \cdot 10^{14}\,\tfrac{1}{\text{s}}} \\
-&= 6{,}515 \cdot 10^{-34}\,\text{J}\,\text{s}
+&= \frac{1.602 \cdot 10^{-19}\,\text{C} \cdot 1.22\,\text{V}}{3.00 \cdot 10^{14}\,\tfrac{1}{\text{s}}} \\
+&= 6.515 \cdot 10^{-34}\,\text{J}\,\text{s}
 \end{aligned}
 ```
 

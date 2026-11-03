@@ -56,7 +56,7 @@
 **Conversions:** $E_\text{u} - E_\text{l} = 2505.8\,\text{keV} - 1332.5\,\text{keV} = 1173.3\,\text{keV} = 1173.3 \cdot 1000 \cdot 1.602 \cdot 10^{-19}\,\text{J} = 1.8796 \cdot 10^{-13}\,\text{J}$; finally $1\,\text{m} = 10^{12}\,\text{pm}$.
 **Substitution:** The product $hc = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2.998 \cdot 10^{8}\,\text{m/s} = 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}$. $\lambda = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{1.8796 \cdot 10^{-13}\,\text{J}} = 1.0568 \cdot 10^{-12}\,\text{m} = 1.0568\,\text{pm}$
 **Answer:** $1.06\,\text{pm}$, three significant figures; more precisely $1.057\,\text{pm}$, four figures like the energy difference $1173.3\,\text{keV}$.
-**Reasonableness:** The measured gamma photon is $1173.2\,\text{keV}$, one of the two peaks of the gamma spectrum of cobalt-60; the difference of $0.1\,\text{keV}$ from the level difference $1173.3\,\text{keV}$ comes almost entirely from rounding of the levels (the exact level difference is $1173.24\,\text{keV}$), and the recoil of the nucleus takes only about $0.01\,\text{keV}$. The difference does not change the wavelength at three-figure precision. It is a little smaller than the $1332.5\,\text{keV}$ of the other photon, so the wavelength is a little longer than its $0.931\,\text{pm}$, as it should be.
+**Reasonableness:** The measured gamma photon is $1173.2\,\text{keV}$, one of the two peaks of the gamma spectrum of cobalt-60; the difference of $0.1\,\text{keV}$ from the level difference $1173.3\,\text{keV}$ comes almost entirely from rounding of the levels (the exact level difference is $1173.24\,\text{keV}$), and the recoil of the nucleus takes only about $0.01\,\text{keV}$. The difference does not change the wavelength at three-figure precision. Its energy is a little smaller than the $1332.5\,\text{keV}$ of the other photon, so the wavelength is a little longer than its $0.931\,\text{pm}$, as it should be.
 
 ## fy8-8-L2-02
 **Given:** the parent nucleus ${}^{214}_{83}\text{Bi}$; first beta minus decay, then alpha decay
@@ -76,7 +76,7 @@
 **Conversions:** $\lambda = 550\,\text{nm} = 550 \cdot 10^{-9}\,\text{m}$ and $E_\gamma = 661.7\,\text{keV} = 661.7 \cdot 1000\,\text{eV} = 661\,700\,\text{eV}$; the energy of the green photon is converted to electronvolts by substituting $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$.
 **Substitution:** The product $hc = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2.998 \cdot 10^{8}\,\text{m/s} = 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}$. $E_\text{g} = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{550 \cdot 10^{-9}\,\text{m}} = 3.6118 \cdot 10^{-19}\,\text{J} = 2.2545\,\text{eV}$ and $661\,700\,\text{eV} : 2.2545\,\text{eV} = 293\,500$
 **Answer:** about $293\,000$, that is, $2.93 \cdot 10^{5}$ times greater, three significant figures like the wavelength $550\,\text{nm}$.
-**Reasonableness:** An estimate with round numbers: $660\,000\,\text{eV} : 2\,\text{eV} \approx 330\,000$, the same order of magnitude. The differences between the levels of a nucleus are hundreds of thousands of times greater than the differences between the levels of the electrons of an atom, as the theory of the chapter says.
+**Reasonableness:** An estimate with round numbers: $660\,000\,\text{eV} : 2\,\text{eV} \approx 330\,000$, the same order of magnitude. For this 662 keV line the difference between the levels of the nucleus is hundreds of thousands of times greater than the differences between the levels of the electrons of an atom, as the theory of the chapter says.
 
 ## fy8-8-L2-04
 **Given:** the parent nucleus ${}^{232}_{90}\text{Th}$; alpha decay and after it two beta minus decays
@@ -106,7 +106,7 @@
 **Conversions:** $E_\text{max} = 1.00\,\text{MeV} = 1.00 \cdot 10^{6} \cdot 1.602 \cdot 10^{-19}\,\text{J} = 1.602 \cdot 10^{-13}\,\text{J}$; finally $1\,\text{m} = 10^{12}\,\text{pm}$.
 **Substitution:** The product $hc = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2.998 \cdot 10^{8}\,\text{m/s} = 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}$. $\lambda_\text{min} = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{1.602 \cdot 10^{-13}\,\text{J}} = 1.2400 \cdot 10^{-12}\,\text{m} = 1.2400\,\text{pm}$
 **Answer:** $1.24\,\text{pm}$, three significant figures like the energy $1.00\,\text{MeV}$.
-**Reasonableness:** The spectrum shows three lines, as three levels of the hydrogen atom give three transitions. The other two wavelengths are longer: $0.60\,\text{MeV}$ gives $\tfrac{1.24}{0.60}\,\text{pm} \approx 2.1\,\text{pm}$ and $0.40\,\text{MeV}$ about $3.1\,\text{pm}$.
+**Reasonableness:** The spectrum shows three lines, as any three levels give three transitions. The other two wavelengths are longer: $0.60\,\text{MeV}$ gives $\tfrac{1.24}{0.60}\,\text{pm} \approx 2.1\,\text{pm}$ and $0.40\,\text{MeV}$ about $3.1\,\text{pm}$.
 
 ## fy8-8-L3-03
 **Given:** the nucleus X decays first by beta minus decay and then by alpha decay; the end result is ${}^{222}_{86}\text{Rn}$
