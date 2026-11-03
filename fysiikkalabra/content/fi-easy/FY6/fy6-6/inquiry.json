@@ -1,0 +1,402 @@
+{
+  "version": 1,
+  "contribution": "Tasavirtapiirin energia: sähköteho P = UI on jännitteen ja virran tulo. Joulen laki P = RI² = U²/R selittää, miksi vastus lämpenee. Teho jakautuu eri tavalla sarjaan ja rinnan kytketyille vastuksille, ja lämpeneminen tasaantuu.",
+  "learn": [
+    "laskemaan komponentin tehon ja energian kaavoilla $P = UI$, $P = RI^2$ ja $E = Pt$.",
+    "vertaamaan tehoja sarjaan ja rinnan kytketyissä vastuksissa.",
+    "selittämään Joulen lailla, miksi vastus lämpenee ja miksi sen lämpötila tasaantuu."
+  ],
+  "prior": [
+    "Teho kertoo, kuinka paljon energiaa muuttuu muodosta toiseen yhdessä sekunnissa (luku *Teho*)",
+    "Jännite kertoo, kuinka monta joulea energiaa yksi coulombi varausta luovuttaa komponentissa (luku *Virtapiiri, sähkövirta ja jännite*)",
+    "Vastuksen jännite on $U = RI$ (luku *Resistanssi ja Ohmin laki*)",
+    "Sarjaan kytketyissä vastuksissa kulkee sama virta. Rinnan kytketyissä vastuksissa on sama jännite (luku *Vastusten sarja- ja rinnankytkennät*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Aamulla painat leivänpaahtimen vivun alas. Hetken päästä paahtimen aukoissa näkyy punaisena hehkuvia lankoja. Niiden yläpuolella ilma väreilee kuumuudesta. Paahtimen johto kulkee työtason yli pistorasiaan. Kun kosketat johtoa, se tuntuu huoneenlämpöiseltä. Sama sähkövirta kulkee johdon kautta hehkuviin lankoihin ja takaisin.",
+      "question": "Mikä ratkaisee, kuinka paljon virtapiirin osa lämpenee, kun sen läpi kulkee virta?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Kertaa: Ohmin laki",
+      "optional": true,
+      "prompt": "Vastuksen resistanssi on $30\\,\\Omega$. Sen yli on jännite $6{,}0\\,\\text{V}$. Kuinka suuri virta kulkee vastuksen läpi?",
+      "choices": [
+        {
+          "text": "$0{,}20\\,\\text{A}$",
+          "correct": true,
+          "feedback": "Oikein. Ohmin lain mukaan $I = U : R = 6{,}0\\,\\text{V} : 30\\,\\Omega = 0{,}20\\,\\text{A}$ (luku *Resistanssi ja Ohmin laki*). Tänään Ohmin laki yhdistetään tehoon."
+        },
+        {
+          "text": "$180\\,\\text{A}$",
+          "feedback": "Kerroit jännitteen ja resistanssin. Ohmin laki on $U = RI$. Virta on siis jännite jaettuna resistanssilla: $6{,}0\\,\\text{V} : 30\\,\\Omega = 0{,}20\\,\\text{A}$ (luku *Resistanssi ja Ohmin laki*)."
+        },
+        {
+          "text": "$5{,}0\\,\\text{A}$",
+          "feedback": "Jaoit resistanssin jännitteellä. Virta on $I = U : R$. Suurempi resistanssi antaa pienemmän virran. Siis $I = 6{,}0\\,\\text{V} : 30\\,\\Omega = 0{,}20\\,\\text{A}$ (luku *Resistanssi ja Ohmin laki*)."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 1: sarjaan kytketyt vastukset",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 2
+      },
+      "prompt": "Vastukset $4\\,\\Omega$ ja $8\\,\\Omega$ ovat kumpikin omassa lasissaan. Lasissa on yhtä paljon samanlämpöistä vettä. Vastukset kytketään sarjaan $12\\,\\text{V}$:n jännitelähteeseen. Kumman lasin vesi lämpenee nopeammin?",
+      "choices": [
+        {
+          "text": "$4\\,\\Omega$:n lasin vesi, koska pienemmän resistanssin läpi virta kulkee helpommin.",
+          "feedback": "Mallin arvot kumoavat tämän. Sarjaankytkennässä molempien vastusten läpi kulkee sama virta $1{,}0\\,\\text{A}$. Vastuksen $4\\,\\Omega$ teho on $4{,}0\\,\\text{W}$ ja vastuksen $8\\,\\Omega$ teho $8{,}0\\,\\text{W}$. Siksi $8\\,\\Omega$:n lasi lämpenee kaksi kertaa nopeammin."
+        },
+        {
+          "text": "$8\\,\\Omega$:n lasin vesi, koska molempien läpi kulkee sama virta ja suurempi resistanssi saa suuremman tehon.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä. Virta on molemmissa $1{,}0\\,\\text{A}$. Vastuksen $8\\,\\Omega$ yli on $8{,}0\\,\\text{V}$ ja vastuksen $4\\,\\Omega$ yli $4{,}0\\,\\text{V}$. Tehot ovat $8{,}0\\,\\text{W}$ ja $4{,}0\\,\\text{W}$. Kun virta on sama, teho on verrannollinen resistanssiin."
+        },
+        {
+          "text": "Molempien lasien vesi lämpenee yhtä nopeasti, koska molemmissa vastuksissa on sama virta.",
+          "feedback": "Virta on todella sama, $1{,}0\\,\\text{A}$. Mallin tehot ovat silti erisuuret: $4{,}0\\,\\text{W}$ ja $8{,}0\\,\\text{W}$. Teho on $P = UI$. Vastuksen $8\\,\\Omega$ yli on kaksinkertainen jännite. Siksi jokainen coulombi luovuttaa siinä kaksi kertaa enemmän energiaa."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 2: rinnan kytketyt vastukset",
+      "justify": true,
+      "reveal": {
+        "after": "koe-2",
+        "min": 2
+      },
+      "prompt": "Samat vastukset $4\\,\\Omega$ ja $8\\,\\Omega$ kytketään nyt rinnan samaan $12\\,\\text{V}$:n jännitelähteeseen. Kumman lasin vesi lämpenee nopeammin?",
+      "choices": [
+        {
+          "text": "$8\\,\\Omega$:n lasin vesi, koska suuremman resistanssin vastus lämpenee aina enemmän.",
+          "feedback": "Mallin arvot kumoavat tämän. Rinnankytkennässä vastuksen $4\\,\\Omega$ teho on $36\\,\\text{W}$ ja vastuksen $8\\,\\Omega$ vain $18\\,\\text{W}$. Molempien yli on sama jännite $12\\,\\text{V}$. Suurempi resistanssi saa pienemmän virran ja pienemmän tehon."
+        },
+        {
+          "text": "$4\\,\\Omega$:n lasin vesi, koska molempien yli on sama jännite ja pienemmän resistanssin läpi kulkee suurempi virta.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä. Vastuksen $4\\,\\Omega$ läpi kulkee $3{,}0\\,\\text{A}$ ja vastuksen $8\\,\\Omega$ läpi $1{,}5\\,\\text{A}$. Tehot ovat $12\\,\\text{V} \\cdot 3{,}0\\,\\text{A} = 36\\,\\text{W}$ ja $12\\,\\text{V} \\cdot 1{,}5\\,\\text{A} = 18\\,\\text{W}$. Siksi $4\\,\\Omega$:n lasi lämpenee kaksi kertaa nopeammin."
+        },
+        {
+          "text": "Molempien lasien vesi lämpenee yhtä nopeasti, koska molempien vastusten yli on sama jännite.",
+          "feedback": "Jännite on todella sama, $12\\,\\text{V}$. Mallin virrat ovat silti erisuuret: $3{,}0\\,\\text{A}$ ja $1{,}5\\,\\text{A}$. Siksi teho $P = UI$ on $36\\,\\text{W}$ ja $18\\,\\text{W}$. Sama jännite ja kaksinkertainen virta antavat kaksinkertaisen tehon."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Valitse kytkentä. Säädä jännitettä ja vastuksia. Käynnistä sitten kello. Seuraa vastusten tehoja ja veden lämpötilaa kummassakin lasissa.",
+      "howto": "Liukusäätimillä asetetaan lähteen jännite $U$ sekä vastukset $R_1$ ja $R_2$. *Kytkentä* valitsee, ovatko vastukset sarjassa vai rinnan. *Käynnistä* käynnistää kellon ja *Pysäytä* pysäyttää sen. *Nollaa* palauttaa ajan nollaan ja veden lämpötilaksi $20{,}0\\,{}^\\circ\\text{C}$. *Nopeus* muuttaa vain sitä, kuinka nopeasti simuloitu aika kuluu. Violetit nuolet ovat virtaa sovitussa suunnassa plusnavalta miinusnavalle. Kierukka hehkuu sitä kirkkaammin, mitä suurempi sen teho on. Oranssi palkki lasin alla näyttää tehon: täysi palkki on $72\\,\\text{W}$. Lämpömittarin punainen pylväs ja veden sävy näyttävät lämpötilan. Ajo pysähtyy, kun jomman kumman lasin vesi on $80\\,{}^\\circ\\text{C}$.",
+      "model": "Jännitelähde on ideaalinen. Sen napojen välinen jännite on aina $U$, eikä johtimilla ole resistanssia. Vastusten resistanssit pysyvät vakioina, vaikka vastukset lämpenevät. Kummassakin lasissa on $0{,}10\\,\\text{kg}$ vettä. Koko vastuksen sähköenergia lämmittää vettä. Lämpöhäviöt ympäristöön sekä lasin ja kierukan lämpeneminen jätetään huomiotta. Siksi lämpötila nousee tasaisesti. Oikeassa lasissa nousu hidastuisi, kun vesi lämpenee ja luovuttaa enemmän lämpöä ympäristöön. Luvut ovat mallin laskemia arvoja, eivät mittauksia.",
+      "calc": "Sarjaankytkennässä virta on $I = U : (R_1 + R_2)$. Vastusten jännitteet ovat $U_1 = R_1 I$ ja $U_2 = R_2 I$. Rinnankytkennässä kummankin vastuksen yli on $U$. Virrat ovat $I_1 = U : R_1$ ja $I_2 = U : R_2$, ja lähteen virta on $I = I_1 + I_2$. Kummankin vastuksen teho on sen jännite kertaa virta, $P_1 = U_1 I_1$. Lähteen teho on $P = UI$. Kun kello käy ajan $\\Delta t$, lasin veden lämpötila nousee\n\n$$\\Delta T = \\frac{P_1 \\Delta t}{c m}$$\n\nmissä $c = 4190\\,\\tfrac{\\text{J}}{\\text{kg} \\cdot \\text{K}}$ ja $m = 0{,}10\\,\\text{kg}$. Energia on $E_1 = P_1 t$."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 1: tehot sarjaankytkennässä",
+      "intro": "Testaa ennuste 1. Vastukset ovat sarjassa. Lähteen jännite on $12\\,\\text{V}$ ja $R_1 = 4\\,\\Omega$. Muuta vain vastusta $R_2$. Kirjaa arvot ainakin kahdella resistanssilla, esimerkiksi $4\\,\\Omega$, $8\\,\\Omega$ ja $16\\,\\Omega$. Käynnistä kello ja katso, kumpi lasi lämpenee nopeammin. Kumpi vastus saa suuremman tehon?",
+      "initial": {
+        "U": 12,
+        "R1": 4,
+        "R2": 8,
+        "kytkenta": "sarja"
+      },
+      "locked": [
+        "U",
+        "R1",
+        "kytkenta"
+      ],
+      "vary": "R2",
+      "names": {
+        "U": "lähteen jännite U",
+        "R1": "vastus R₁",
+        "R2": "vastus R₂",
+        "kytkenta": "kytkentä"
+      },
+      "units": {
+        "U": "V",
+        "R1": "Ω",
+        "R2": "Ω"
+      },
+      "values": {
+        "kytkenta": {
+          "sarja": "sarjaan",
+          "rinnan": "rinnan"
+        }
+      },
+      "measure": [
+        {
+          "key": "I",
+          "label": "I (A)"
+        },
+        {
+          "key": "U1",
+          "label": "U₁ (V)"
+        },
+        {
+          "key": "U2",
+          "label": "U₂ (V)"
+        },
+        {
+          "key": "P1",
+          "label": "P₁ (W)"
+        },
+        {
+          "key": "P2",
+          "label": "P₂ (W)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 2: tehot rinnankytkennässä",
+      "intro": "Testaa ennuste 2. Vastukset ovat rinnan. Lähteen jännite on $12\\,\\text{V}$ ja $R_1 = 4\\,\\Omega$. Muuta vain vastusta $R_2$. Kirjaa arvot ainakin kahdella resistanssilla, esimerkiksi $4\\,\\Omega$, $8\\,\\Omega$ ja $16\\,\\Omega$. Laske joka rivillä $P_1 + P_2$ ja vertaa sitä lähteen tehoon $P$. Kumpi vastus saa nyt suuremman tehon?",
+      "initial": {
+        "U": 12,
+        "R1": 4,
+        "R2": 8,
+        "kytkenta": "rinnan"
+      },
+      "locked": [
+        "U",
+        "R1",
+        "kytkenta"
+      ],
+      "vary": "R2",
+      "names": {
+        "U": "lähteen jännite U",
+        "R1": "vastus R₁",
+        "R2": "vastus R₂",
+        "kytkenta": "kytkentä"
+      },
+      "units": {
+        "U": "V",
+        "R1": "Ω",
+        "R2": "Ω"
+      },
+      "values": {
+        "kytkenta": {
+          "sarja": "sarjaan",
+          "rinnan": "rinnan"
+        }
+      },
+      "measure": [
+        {
+          "key": "I1",
+          "label": "I₁ (A)"
+        },
+        {
+          "key": "I2",
+          "label": "I₂ (A)"
+        },
+        {
+          "key": "P1",
+          "label": "P₁ (W)"
+        },
+        {
+          "key": "P2",
+          "label": "P₂ (W)"
+        },
+        {
+          "key": "P",
+          "label": "P (W)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös: kumpi vastus saa suuremman tehon?",
+      "after": [
+        "koe-1",
+        "koe-2"
+      ],
+      "prompt": "Kirjoita taulukoidesi perusteella: kumpi vastus sai suuremman tehon sarjaankytkennässä ja kumpi rinnankytkennässä? Mikä suure oli kummassakin kytkennässä vastuksille yhteinen? Miten se selittää tuloksen? Miten vastusten tehot liittyvät lähteen tehoon?",
+      "model": "Sarjaankytkennässä suurempi resistanssi sai suuremman tehon. Kun $R_2 = 8\\,\\Omega$, virta oli molemmissa $1{,}0\\,\\text{A}$ ja tehot olivat $P_1 = 4{,}0\\,\\text{W}$ ja $P_2 = 8{,}0\\,\\text{W}$. Yhteinen suure oli virta. Samalla virralla suuremman resistanssin vastus sai suuremman tehon $P = RI^2$ ($P_2 > P_1$ joka rivillä, jossa $R_2 > R_1$), ja sen yli oli suurempi jännite. Kun $R_2$ kasvoi, koko piirin resistanssi kasvoi ja yhteinen virta pieneni. Siksi $P_2$ ei kasvanut koko ajan. Rinnankytkennässä pienempi resistanssi sai suuremman tehon. Kun $R_2 = 8\\,\\Omega$, tehot olivat $P_1 = 36\\,\\text{W}$ ja $P_2 = 18\\,\\text{W}$. Yhteinen suure oli jännite $12\\,\\text{V}$. Pienempi resistanssi sai suuremman virran, ja teho $P = U^2 : R$ pieneni resistanssin kasvaessa. Kummassakin kytkennässä vastusten tehot olivat yhteensä lähteen teho, esimerkiksi $36\\,\\text{W} + 18\\,\\text{W} = 54\\,\\text{W}$. Arvot ovat mallin laskemia. Mallissa lähteellä ja johtimilla ei ole resistanssia.",
+      "criteria": [
+        "Vastaus kertoo, että sarjaankytkennässä suuremman resistanssin vastus sai suuremman tehon. Vastaus perustelee sen taulukon luvuilla.",
+        "Vastaus kertoo, että rinnankytkennässä pienemmän resistanssin vastus sai suuremman tehon. Vastaus perustelee sen taulukon luvuilla.",
+        "Vastaus nimeää yhteisen suureen: sarjaankytkennässä virran ja rinnankytkennässä jännitteen.",
+        "Vastaus kertoo, että vastusten tehot ovat yhteensä lähteen teho."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Palaa ennusteisiisi",
+      "optional": true,
+      "prompt": "Vertaa ennusteitasi kokeiden mallin arvoihin ja Joulen lakiin. Palaa sitten alun kysymykseen: miksi paahtimen vastuslangat hehkuvat, mutta johto pysyy viileänä? Molempien läpi kulkee sama virta.",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2"
+      ]
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe",
+      "prompt": "Vastukset $R_1 = 4{,}0\\,\\Omega$ ja $R_2 = 8{,}0\\,\\Omega$ on kytketty sarjaan $12\\,\\text{V}$:n jännitelähteeseen. Opiskelija laskee vastusten tehot näin:\n\n$$\\begin{aligned} P_1 &= \\frac{(12\\,\\text{V})^2}{4{,}0\\,\\Omega} = 36\\,\\text{W} \\\\ P_2 &= \\frac{(12\\,\\text{V})^2}{8{,}0\\,\\Omega} = 18\\,\\text{W} \\end{aligned}$$\n\nMissä on virhe?",
+      "choices": [
+        {
+          "text": "Vastusten yli ei ole koko lähteen jännite. Virta on $1{,}0\\,\\text{A}$, joten tehot ovat $4{,}0\\,\\text{W}$ ja $8{,}0\\,\\text{W}$.",
+          "correct": true,
+          "feedback": "Oikein. Sarjaankytkennässä lähteen jännite jakautuu vastuksille: $U_1 = 4{,}0\\,\\text{V}$ ja $U_2 = 8{,}0\\,\\text{V}$. Virheen olisi voinut huomata energian säilymisestä. Opiskelijan tehot ovat yhteensä $54\\,\\text{W}$, mutta lähde antaa vain $12\\,\\text{V} \\cdot 1{,}0\\,\\text{A} = 12\\,\\text{W}$."
+        },
+        {
+          "text": "Kaava on väärä. Sarjaankytkennässä teho lasketaan aina kaavalla $RI^2$, ei koskaan kaavalla $U^2 : R$.",
+          "feedback": "Kumpikin muoto on oikein, kun siihen sijoitetaan juuri sen vastuksen omat arvot. Vastuksen $R_1$ yli on $4{,}0\\,\\text{V}$, joten $(4{,}0\\,\\text{V})^2 : 4{,}0\\,\\Omega = 4{,}0\\,\\text{W}$. Se on sama kuin $4{,}0\\,\\Omega \\cdot (1{,}0\\,\\text{A})^2$. Virhe on jännitteessä."
+        },
+        {
+          "text": "Laskut ovat oikein, koska sarjaankytkennässä suurempi resistanssi saa aina pienemmän tehon.",
+          "feedback": "Sarjaankytkennässä on päinvastoin. Virta on molemmissa sama, joten suurempi resistanssi saa suuremman tehon $RI^2$. Oikeat tehot ovat $4{,}0\\,\\text{W}$ ja $8{,}0\\,\\text{W}$."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Sovella uuteen tilanteeseen",
+      "prompt": "Autoon tarkoitetussa matkavedenkeittimessä on lämmitysvastus. Sen resistanssi on $2{,}4\\,\\Omega$, ja se kytketään auton $12\\,\\text{V}$:n akkuun. Keittimessä on $0{,}40\\,\\text{kg}$ vettä, jonka lämpötila on $20\\,{}^\\circ\\text{C}$. Kuinka kauan veden lämmittäminen kiehumispisteeseen $100\\,{}^\\circ\\text{C}$ kestää? Oleta, että koko sähköenergia lämmittää vettä. Oleta myös, ettei vettä höyrysty ennen kiehumispistettä ja että vastuksen resistanssi pysyy vakiona. Veden ominaislämpökapasiteetti on $4190\\,\\tfrac{\\text{J}}{\\text{kg} \\cdot \\text{K}}$. Vastaa minuutteina.",
+      "answer": 37.24,
+      "unit": "min",
+      "tolerance": 0.02,
+      "hints": [
+        "Kuinka paljon energiaa veden lämmittäminen vaatii? Entä kuinka suuri on keittimen teho, kun vastuksen yli on akun jännite?",
+        "Energia on $Q = cm\\Delta T$ (luku *Aineen lämpeneminen ja jäähtyminen*), ja vastuksen teho on $P = U^2 : R$.",
+        "$P = (12\\,\\text{V})^2 : 2{,}4\\,\\Omega = 60\\,\\text{W}$ ja $Q = 4190\\,\\tfrac{\\text{J}}{\\text{kg} \\cdot \\text{K}} \\cdot 0{,}40\\,\\text{kg} \\cdot 80\\,\\text{K}$. Aika on $t = Q : P$. Muunna lopuksi sekunnit minuuteiksi."
+      ],
+      "mistakes": [
+        {
+          "value": 2235,
+          "feedback": "Laskit ajan oikein sekunteina. Tehtävässä kysytään minuutteja: $2235\\,\\text{s} : 60 \\approx 37\\,\\text{min}$."
+        },
+        {
+          "value": 77.6,
+          "feedback": "Käytit tehona tuloa $UR$. Teho on $P = UI = U^2 : R = (12\\,\\text{V})^2 : 2{,}4\\,\\Omega = 60\\,\\text{W}$."
+        },
+        {
+          "value": 447,
+          "feedback": "Käytit tehona osamäärää $U : R$. Se on virta $5{,}0\\,\\text{A}$, ei teho. Teho on $P = UI = 12\\,\\text{V} \\cdot 5{,}0\\,\\text{A} = 60\\,\\text{W}$."
+        }
+      ],
+      "solution": "**Annettu:** akun jännite $U = 12\\,\\text{V}$, resistanssi $R = 2{,}4\\,\\Omega$, veden massa $m = 0{,}40\\,\\text{kg}$, lämpötilat $20\\,{}^\\circ\\text{C}$ ja $100\\,{}^\\circ\\text{C}$, veden ominaislämpökapasiteetti $c = 4190\\,\\tfrac{\\text{J}}{\\text{kg} \\cdot \\text{K}}$\n\n**Kysytty:** lämmitysaika $t$ minuutteina\n\n**Periaate:** Vastuksen yli on koko akun jännite. Joulen lain mukaan sen teho on siis $P = U^2 : R$. Koko sähköenergia lämmittää vettä, eikä olomuoto muutu ennen kiehumispistettä. Siksi vastuksessa muuttuva energia $Pt$ on yhtä suuri kuin veden lämpenemiseen tarvittava energia $cm\\Delta T$.\n\n**Kaava:** $Pt = cm\\Delta T$ ja $P = \\dfrac{U^2}{R}$, joten $t = \\dfrac{cm\\Delta T}{P}$\n\n**Muunnokset:** Lämpötilan muutos on $\\Delta T = 100\\,{}^\\circ\\text{C} - 20\\,{}^\\circ\\text{C} = 80\\,\\text{K}$. Muutos on sama celsiusasteina ja kelvineinä. Lopuksi $1\\,\\text{min} = 60\\,\\text{s}$.\n\n**Sijoitus:** $P = \\dfrac{(12\\,\\text{V})^2}{2{,}4\\,\\Omega} = 60\\,\\text{W}$ ja $cm\\Delta T = 4190\\,\\tfrac{\\text{J}}{\\text{kg} \\cdot \\text{K}} \\cdot 0{,}40\\,\\text{kg} \\cdot 80\\,\\text{K} = 134\\,080\\,\\text{J}$, joten $t = \\dfrac{134\\,080\\,\\text{J}}{60\\,\\text{W}} = 2234{,}7\\,\\text{s} = 37{,}2\\,\\text{min}$\n\n**Vastaus:** noin $37\\,\\text{min}$. Vastaus on annettu kahdella merkitsevällä numerolla kuten resistanssi $2{,}4\\,\\Omega$ ja massa $0{,}40\\,\\text{kg}$.\n\n**Järkevyys:** Keittimen teho $60\\,\\text{W}$ on vain noin kolmaskymmenesosa kodin $2000\\,\\text{W}$:n vedenkeittimen tehosta. Kodin keitin keittäisi saman veden noin minuutissa. Puolen tunnin luokkaa oleva aika on siis odotettu. Todellisuudessa osa energiasta siirtyy ympäristöön, joten aika olisi vielä pidempi."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Harjoittele kolmella tasolla. Tason 1 tehtävissä käytetään yhtä kaavaa. Tason 2 tehtävissä yhdistetään kaksi vaihetta tai muunnetaan yksiköitä. Taso 3 vaatii päättelyä kytkennöistä ja arkisista laitteista."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Käsite",
+      "prompt": "Kahteen hehkulamppuun on merkitty $230\\,\\text{V}$, $40\\,\\text{W}$ ja $230\\,\\text{V}$, $100\\,\\text{W}$. Kumman lampun hehkulangan resistanssi on suurempi, kun lamput palavat nimellisjännitteellään? Nimellisjännite on jännite, jolle lamppu on tehty.",
+      "choices": [
+        {
+          "text": "$40\\,\\text{W}$:n lampun, koska samalla jännitteellä pienempi teho tarkoittaa suurempaa resistanssia.",
+          "correct": true,
+          "feedback": "Oikein. Kun jännite on sama, $P = U^2 : R$, joten $R = U^2 : P$. Lampun $40\\,\\text{W}$ resistanssi on noin $1300\\,\\Omega$ ja lampun $100\\,\\text{W}$ noin $530\\,\\Omega$. Suurempi resistanssi päästää läpi pienemmän virran."
+        },
+        {
+          "text": "$100\\,\\text{W}$:n lampun, koska suurempi teho syntyy suuremmasta resistanssista.",
+          "feedback": "Teho kasvaa resistanssin mukana vain, kun virta on sama. Verkkoon kytketyillä lampuilla on sama jännite, joten $R = U^2 : P$. Lampun $100\\,\\text{W}$ resistanssi on noin $530\\,\\Omega$ ja lampun $40\\,\\text{W}$ noin $1300\\,\\Omega$."
+        },
+        {
+          "text": "Resistanssit ovat yhtä suuret, koska molempien lamppujen yli on sama jännite.",
+          "feedback": "Sama jännite ei tee resistansseista yhtä suuria. Lamppujen tehot ovat erisuuret, joten niiden virrat ja resistanssit ovat erisuuret: $R = U^2 : P$ antaa noin $1300\\,\\Omega$ ja noin $530\\,\\Omega$."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Jatkojohdon lämpeneminen",
+      "prompt": "Jatkojohdon kahden johtimen yhteinen resistanssi on $0{,}20\\,\\Omega$. Johdon kautta kulkee virta $8{,}0\\,\\text{A}$ lämpöpuhaltimeen. Kuinka suuri teho muuttuu johdossa sisäenergiaksi eli lämmöksi? Vastaa watteina.",
+      "answer": 12.8,
+      "unit": "W",
+      "tolerance": 0.02,
+      "hints": [
+        "Johto on sarjassa puhaltimen kanssa, ja sen läpi kulkevan virran tiedät. Kumpi Joulen lain muoto sopii?",
+        "Kun virta tunnetaan, $P = RI^2$.",
+        "$P = 0{,}20\\,\\Omega \\cdot (8{,}0\\,\\text{A})^2$"
+      ],
+      "mistakes": [
+        {
+          "value": 1.6,
+          "feedback": "Laskit tulon $RI$. Se on johdon jännite $1{,}6\\,\\text{V}$. Teho on $P = UI = RI^2 = 0{,}20\\,\\Omega \\cdot (8{,}0\\,\\text{A})^2 = 12{,}8\\,\\text{W}$."
+        },
+        {
+          "value": 320,
+          "feedback": "Jaoit virran neliön resistanssilla. Joulen laki on $P = RI^2$: resistanssi kerrotaan virran neliöllä."
+        }
+      ],
+      "solution": "**Annettu:** johdon resistanssi $R = 0{,}20\\,\\Omega$, virta $I = 8{,}0\\,\\text{A}$\n\n**Kysytty:** johdossa sisäenergiaksi muuttuva teho $P$ watteina\n\n**Periaate:** Johdossa on resistanssia. Joulen lain mukaan siinä muuttuu sähköenergiaa sisäenergiaksi. Johdon läpi kulkeva virta tunnetaan, joten teho lasketaan muodosta $P = RI^2$.\n\n**Kaava:** $P = RI^2$\n\n**Muunnokset:** Ei tarvita: $\\Omega \\cdot \\text{A}^2 = \\text{V} \\cdot \\text{A} = \\text{W}$.\n\n**Sijoitus:** $P = 0{,}20\\,\\Omega \\cdot (8{,}0\\,\\text{A})^2 = 0{,}20\\,\\Omega \\cdot 64\\,\\text{A}^2 = 12{,}8\\,\\text{W}$\n\n**Vastaus:** noin $13\\,\\text{W}$. Vastaus on annettu kahdella merkitsevällä numerolla kuten resistanssi ja virta.\n\n**Järkevyys:** Puhaltimen teho on noin $230\\,\\text{V} \\cdot 8{,}0\\,\\text{A} \\approx 1800\\,\\text{W}$. Johtoon menee siis alle prosentti. Teho jakautuu metrien matkalle, joten johto lämpenee vain vähän. Jos johto on kelalla, lämpö ei pääse pois. Silloin johto voi kuumentua vaarallisesti."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Selitä paahtimen ilmiö",
+      "optional": true,
+      "prompt": "Selitä Joulen lain avulla alun kysymys: miksi leivänpaahtimen vastuslangat hehkuvat, mutta paahtimen johto pysyy viileänä? Molempien läpi kulkee sama virta.",
+      "model": "Vastuslangat ja johto ovat sarjassa, joten niiden läpi kulkee sama virta. Joulen lain $P = RI^2$ mukaan sisäenergiaksi muuttuva teho on silloin verrannollinen resistanssiin. Vastuslangan resistanssi on kymmeniä ohmeja. Johdon kuparijohtimien resistanssi on vain sadasosia ohmista. Johtoon tulee siksi paljon pienempi teho kuin vastuslankaan. Esimerkiksi resistanssien suhde $59\\,\\Omega : 0{,}050\\,\\Omega \\approx 1200$ tarkoittaa yli tuhat kertaa pienempää tehoa. Lisäksi johdon pieni teho jakautuu metrien matkalle. Johto luovuttaa lämmön ympäristöön jo hieman lämmenneenä. Vastuslanka sen sijaan lämpenee, kunnes se luovuttaa lämpöä yhtä nopeasti kuin siihen tulee sähköenergiaa. Se tapahtuu vasta hehkulämpötilassa.",
+      "criteria": [
+        "Vastaus kertoo, että vastuslangat ja johto ovat sarjassa. Niiden läpi kulkee sama virta.",
+        "Vastaus käyttää Joulen lakia $P = RI^2$: samalla virralla suurempi resistanssi saa suuremman tehon.",
+        "Vastaus vertaa resistansseja: vastuslangan resistanssi on paljon suurempi kuin johdon.",
+        "Vastaus selittää, että lämpötila tasaantuu, kun lämpöä siirtyy ympäristöön yhtä nopeasti kuin sähköenergiaa tulee."
+      ]
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Lopuksi kaksi nopeaa kysymystä. Vastaa ensin itse. Avaa vastaus vasta sitten."
+    }
+  ]
+}

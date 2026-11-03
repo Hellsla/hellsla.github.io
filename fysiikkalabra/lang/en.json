@@ -1690,7 +1690,7 @@
     "fy6-9": {
       "aika": "Duration of charging $t = {{t}}\\,\\text{h}$",
       "ulat": "Charger voltage $U_\\text{ch} = {{U}}\\,\\text{V}$",
-      "resistanssi": "Resistance of charger and wires $R = {{R}}\\,\\Omega$",
+      "resistanssi": "Charger and wires resistance $R = {{R}}\\,\\Omega$",
       "alku": "Charge level at the start ${{s}}\\,\\%$",
       "selite": "Purple: current. Green: charge level. Orange glow: the battery warms up.",
       "lukemat": "Current $I = {{I}}\\,\\text{A}$, source voltage $E = {{E}}\\,\\text{V}$, terminal voltage $U = {{U}}\\,\\text{V}$<br>Charge level ${{soc}}\\,\\%$, charge passed through the battery ${{dQ}}\\,\\text{Ah}$<br>From the charger $W_\\text{ch} = {{Wlat}}\\,\\text{Wh}$, into the battery $W_\\text{batt} = {{Wkem}}\\,\\text{Wh}$, into internal energy ${{Whav}}\\,\\text{Wh}$<br><strong>Efficiency $\\eta = {{eta}}\\,\\%$</strong>",
