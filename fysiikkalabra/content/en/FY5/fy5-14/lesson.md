@@ -491,6 +491,8 @@ where $f_\text{h}$ is the beat frequency (Hz) and $f_1$ and $f_2$ are the freque
 
 Beats are used for tuning instruments. When a string is tightened towards the frequency of the reference note, the beats slow down and stop when the frequencies are equal. Beats stand out clearly when the frequency difference is at most about $10\,\text{Hz}$. With a larger difference the ear hears a rough sound or two separate sounds.
 
+<figure class="unit-photo"><img src="pics/fy5/ambulance-panning.webp" alt="A white ambulance drives along a street. The ambulance is sharp, but the background and the high-rise buildings are blurred horizontally."><figcaption>An ambulance on the move in Toronto. The camera turned with the vehicle, so the background is blurred. As the ambulance approaches, the siren sounds higher, and as it moves away, lower.</figcaption></figure>
+
 ### The Doppler effect when the source moves
 When a sound source moves, each wavefront starts from the point where the source is at that moment and spreads through the air at speed $v$ in every direction. The period of the source is $T_0 = \tfrac{1}{f_0}$. During that time the previous wavefront travels a distance $v T_0$, but the source travels after it a distance $v_\text{s} T_0$. In front of the source the spacing of the wavefronts, that is, the wavelength, is therefore $(v - v_\text{s}) T_0$, and behind the source it is $(v + v_\text{s}) T_0$. A listener at rest hears the frequency $f = \tfrac{v}{\lambda}$, so
 ```latex

@@ -491,6 +491,8 @@ missä $f_\text{h}$ on huojuntataajuus (Hz) ja $f_1$ ja $f_2$ äänten taajuudet
 
 Huojuntaa käytetään soittimien virittämiseen. Kun kieltä kiristetään kohti viritysäänen taajuutta, huojunta hidastuu ja lakkaa, kun taajuudet ovat samat. Huojunta erottuu selvästi, kun taajuusero on enintään noin $10\,\text{Hz}$. Suuremmalla erolla korva kuulee karhean äänen tai kaksi eri ääntä.
 
+<figure class="unit-photo"><img src="pics/fy5/ambulance-panning.webp" alt="Valkoinen ambulanssi ajaa kadulla. Ambulanssi on terävä, mutta tausta ja kerrostalot ovat vaakasuunnassa sumeita."><figcaption>Ambulanssi liikkeessä Torontossa. Kamera kääntyi auton mukana, joten tausta on epäterävä. Kun ambulanssi lähestyy, sireeni kuulostaa korkeammalta, ja kun se loittonee, matalammalta.</figcaption></figure>
+
 ### Dopplerin ilmiö, kun lähde liikkuu
 Kun äänilähde liikkuu, jokainen aaltorintama lähtee siitä kohdasta, jossa lähde on sillä hetkellä, ja leviää ilmassa nopeudella $v$ joka suuntaan. Lähteen jaksonaika on $T_0 = \tfrac{1}{f_0}$. Sinä aikana edellinen rintama etenee matkan $v T_0$, mutta lähde ehtii kulkea sen perässä matkan $v_\text{s} T_0$. Lähteen edessä rintamien väli eli aallonpituus on siksi $(v - v_\text{s}) T_0$ ja lähteen takana $(v + v_\text{s}) T_0$. Paikallaan oleva kuulija kuulee taajuuden $f = \tfrac{v}{\lambda}$, joten
 ```latex

@@ -209,6 +209,8 @@ Summa-aallon amplitudi on silloin amplitudien erotus. Yhtä suuret amplitudit ku
   <foreignObject x="402.5" y="347.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{heikentävä}$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy5/ripple-tank-two-sources.webp" alt="Tumma kuva vedestä. Ylhäällä on kaksi rengassarjaa. Keskellä on kirkas valo."><figcaption>Kaksi lähdettä aaltoaltaassa. Aallot kohtaavat. Joissakin suunnissa aallot vahvistavat toisiaan ja toisissa heikentävät. Kirkas valo on lampun heijastus.</figcaption></figure>
+
 ### Kuvion viivat
 Jokaista lukua $n = 1, 2, \ldots$ vastaa kuviossa yksi viiva keskinormaalin kummallakin puolella. Keskinormaali on suora, jonka jokainen piste on yhtä kaukana molemmista lähteistä. Vahvistavassa tapauksessa luku $n = 0$ vastaa keskinormaalia itseään. Heikentävässä tapauksessa se vastaa kahta solmuviivaa, jotka ovat lähimpänä keskinormaalia. Keskinormaalilla matkaero on nolla. Siellä interferenssi on vahvistava kaikilla taajuuksilla. Matkaero ei voi olla suurempi kuin lähteiden välinen etäisyys $d$, koska kolmion yksi sivu on lyhyempi kuin kahden muun sivun summa. Siksi viivoja on vain rajallinen määrä. Kun aallonpituus pienenee eli taajuus kasvaa, ehdot täyttyvät pienemmillä matkaeroilla. Silloin viivat tihenevät.
 

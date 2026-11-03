@@ -215,6 +215,8 @@ Pieni äänilähde, joka säteilee tasaisesti joka suuntaan, on pistemäinen lä
   <foreignObject x="42" y="311.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$0$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy5/sound-level-meter-park.webp" alt="Puistossa istuu ihmisiä penkeillä puiden alla. Tolpan päässä on punainen numeronäyttö, jossa lukee 62 dB."><figcaption>Melunäyttö Chengdun kansanpuistossa Kiinassa. Näyttö kertoo äänen intensiteettitason desibeleinä. 62 dB on noin tavallisen keskustelun taso.</figcaption></figure>
+
 ### Kuulokynnys ja kipukynnys
 Ihmisen korva on hämmästyttävän herkkä. Heikoin ääni, jonka nuori normaalikuuloinen ihminen erottaa noin $1000\,\text{Hz}$:n taajuudella, on intensiteetiltään noin $I_0 = 1{,}0 \cdot 10^{-12}\,\text{W/m}^2$. Tätä sanotaan **kuulokynnykseksi**. Kuulokynnys ei ole hiljaisuus vaan heikoin kuultavissa oleva ääni, ja se on eri taajuuksilla eri suuri. Voimakkaimmat äänet alkavat tuntua kipuna, kun intensiteetti on noin $1\,\text{W/m}^2$. Tämä kipukynnys on biljoona eli $10^{12}$ kertaa kuulokynnyksen suuruinen. Niin laajaa vaihteluväliä on hankala esittää tavallisella asteikolla.
 

@@ -53,5 +53,82 @@
     "checked": "2026-11-03",
     "width": 1600,
     "height": 1205
+  },
+  "girl-on-swing.webp": {
+    "title": "Girl on Swing in the Dolomites (Flickr 36301294542)",
+    "creator": "Jeff (jrosenblum)",
+    "source": "https://commons.wikimedia.org/wiki/File:Girl_on_Swing_in_the_Dolomites_(36301294542).jpg",
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0/",
+    "edit": "Pienennetty, WebP",
+    "checked": "2026-11-03",
+    "width": 1600,
+    "height": 1200
+  },
+  "spring-rider-suomenlinna.webp": {
+    "title": "Boy in Park - Suomenlinna Fortress - Helsinki - Finland (Flickr 35147400504)",
+    "creator": "Adam Jones",
+    "source": "https://commons.wikimedia.org/wiki/File:Boy_in_Park_-_Suomenlinna_Fortress_-_Helsinki_-_Finland_(35147400504).jpg",
+    "licence": "CC BY-SA 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "edit": "Rajattu ylhäältä, pienennetty, WebP",
+    "checked": "2026-11-03",
+    "width": 1272,
+    "height": 1600
+  },
+  "ripple-tank-single-slit.webp": {
+    "title": "Single-slit diffraction in a ripple tank",
+    "creator": "Armedblowfish",
+    "source": "https://commons.wikimedia.org/wiki/File:Single-slit-diffraction-ripple-tank.jpg",
+    "licence": "BSD",
+    "licence_url": "https://commons.wikimedia.org/wiki/Template:BSD",
+    "edit": "Pienennetty, WebP",
+    "checked": "2026-11-03",
+    "width": 1544,
+    "height": 1024
+  },
+  "ripple-tank-two-sources.webp": {
+    "title": "Two-point interference in a ripple tank",
+    "creator": "Armedblowfish",
+    "source": "https://commons.wikimedia.org/wiki/File:Two-point-interference-ripple-tank.JPG",
+    "licence": "BSD",
+    "licence_url": "https://commons.wikimedia.org/wiki/Template:BSDu",
+    "edit": "Pienennetty, WebP",
+    "checked": "2026-11-03",
+    "width": 1024,
+    "height": 1544
+  },
+  "guitar-playing.webp": {
+    "title": "Close up of an acoustic guitar being played",
+    "creator": "Nataev",
+    "source": "https://commons.wikimedia.org/wiki/File:Close_up_of_an_acoustic_guitar_being_played.jpg",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "edit": "Mustat reunat rajattu, pienennetty, WebP",
+    "checked": "2026-11-03",
+    "width": 1600,
+    "height": 668
+  },
+  "ambulance-panning.webp": {
+    "title": "Kennedy Road ambulance panning",
+    "creator": "Jason Zhang",
+    "source": "https://commons.wikimedia.org/wiki/File:Kennedy_Road_ambulance_panning.jpg",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "edit": "Pienennetty, WebP",
+    "checked": "2026-11-03",
+    "width": 1600,
+    "height": 1067
+  },
+  "sound-level-meter-park.webp": {
+    "title": "62 dB - Peoples Park - Chengdu, China (DSC05341)",
+    "creator": "Daderot",
+    "source": "https://commons.wikimedia.org/wiki/File:62_dB_-_Peoples_Park_-_Chengdu,_China_-_DSC05341.jpg",
+    "licence": "CC0 1.0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "edit": "Pienennetty, WebP",
+    "checked": "2026-11-03",
+    "width": 1600,
+    "height": 1048
   }
 }

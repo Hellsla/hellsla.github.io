@@ -212,6 +212,8 @@ Värähtelevän kappaleen paikka kerrotaan **poikkeamalla** $x$. Poikkeama on ka
   <foreignObject x="429.5" y="319.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$x = 0$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy5/girl-on-swing.webp" alt="Lapsi keinuu keinussa niityllä. Taustalla on vuoria."><figcaption>Keinu Dolomiiteilla Italiassa. Keinuminen on jaksollista liikettä. Keinu palaa samaan kohtaan aina yhtä pitkän ajan jälkeen.</figcaption></figure>
+
 ### Jaksonaika ja taajuus
 **Jaksonaika** $T$ on yhden täyden värähdyksen kesto. Sen jälkeen kappale on taas samassa paikassa ja liikkuu samaan suuntaan. Punnus lähtee tasapainoasemasta ylöspäin. Se käy ylimmässä asemassa ja palaa tasapainoasemaan. Sitten se käy alimmassa asemassa ja palaa taas tasapainoasemaan. Tämä on yksi värähdys. **Taajuus** $f$ kertoo, montako täyttä värähdystä ehtii tapahtua aikayksikössä. Jaksonaika ja taajuus ovat samanlaisia kuin kierrosaika ja pyörimistaajuus luvussa *Ympyräliike ja ratanopeus*. Yksi värähdys vastaa yhtä kierrosta. Jaksonaika mitataan tarkimmin usean värähdyksen ajasta. Jos $n$ värähdystä kestää ajan $t_n$, jaksonaika on $T = \tfrac{t_n}{n}$.
 

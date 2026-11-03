@@ -212,6 +212,8 @@ The position of an oscillating object is described by the **displacement** $x$, 
   <foreignObject x="429.5" y="319.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$x = 0$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy5/girl-on-swing.webp" alt="A child swings on a wooden swing in a green meadow. High rocky mountains rise in the background."><figcaption>A swing in the Dolomites, Italy. Swinging is periodic motion: the swing returns to the same point at nearly equal time intervals.</figcaption></figure>
+
 ### Period and frequency
 The **period** $T$ is the duration of one full oscillation (one cycle): the time after which the object is again in the same place and moving in the same direction. When the weight leaves the equilibrium position going up, it reaches the highest position, returns to the equilibrium position, reaches the lowest position and returns to the equilibrium position again. This is one oscillation. The **frequency** $f$ is the number of full oscillations per unit time. The period and the frequency correspond to the period and the rotation frequency in the chapter *Circular motion and speed*: one oscillation corresponds to one revolution. The period is measured most precisely from the duration of several oscillations: if $n$ oscillations take the time $t_n$, the period is $T = \tfrac{t_n}{n}$.
 

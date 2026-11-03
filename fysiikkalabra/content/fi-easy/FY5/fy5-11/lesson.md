@@ -1031,6 +1031,8 @@ Aalto voi kulkea raosta tai esteen ohi. Silloin se taipuu myös esteen taakse, a
   <path d="M362,318 L349,324 L349,312 Z" fill="#1971c2" stroke-linejoin="round"/>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy5/ripple-tank-single-slit.webp" alt="Epäterävä harmaa kuva vedestä. Oikealla on suoria juovia, vasemmalla kaarevia renkaita."><figcaption>Diffraktio aaltoaltaassa. Suorat aallot tulevat oikealta kapeaan rakoon. Raon takana vasemmalla aallot leviävät kaarina.</figcaption></figure>
+
 Sama pätee esteeseen. Ajatellaan estettä, joka on aallonpituutta kapeampi, esimerkiksi laituripaalua. Se ei juuri jätä taakseen varjoa, koska aalto taipuu sen ympäri. Aallonpituutta paljon leveämmän esteen taakse jää suojaisa alue. Diffraktio on siis voimakasta, kun raon tai esteen leveys on aallonpituuden suuruinen tai pienempi. Ääni taipuu ovesta käytävään. Puheäänen aallonpituus on noin metrin luokkaa. Se on suunnilleen yhtä suuri kuin oviaukon leveys.
 
 ## Kaava: Heijastuslaki
