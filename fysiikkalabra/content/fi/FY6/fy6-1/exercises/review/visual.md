@@ -1,16 +1,17 @@
-VERDICT: FAIL
-CONTENT-HASH: f02ac19e6d16a8fe
+VERDICT: PASS
+CONTENT-HASH: 83920706a91f4df7
 
 ## Blocking
-- [Major] L3-3 solution diagram and virhe-kaavio — the switch is drawn with an open blade although the solution states one closed loop and shows the current arrow $I$ (L3-3), and the task says the switch was closed (virhe) — why it matters: an open-looking switch with a current contradicts the "current only in a closed circuit" rule and makes the model answer unreadable — fix: draw a closed switch (blade on the contacts, or the line symbol used in the lesson's fig-5 once it is added to the symbol sheet).
 
 ## Polish
-- [Minor] L2-2 solution — the substitution row ends at $\approx 9{,}99\cdot10^{17}$ while the answer is $1{,}0\cdot10^{18}$; add one word ("pyöristetään kahteen merkitsevään numeroon") so the jump reads as rounding.
+- [Minor] fy6-1-L2-02, fy6-1-L3-02 — the answer has no unit, so the field shows only "?" and the reader cannot see that a pure number is expected — end the question with "Vastaa lukuna." (L3-02 already asks "kuinka monta kertaa").
+- [Minor] fy6-1/virta-kuvaaja (open-exercises-L2-1280-4) — the zero-current segment 50–60 s runs exactly on the t-axis and hides the axis; reads right with the text, but a slightly offset or dashed end would be clearer.
+- [Minor] fy6-1/kaavio-malli (open-exercises-L3-1280-3) — the figure has no label for the battery polarity beyond the +/− marks and no $U$; fine as a model answer, optional.
 
 ## Checked
-- open-exercises-1280-1 (L1-1), -3 (L1-3/4); L2-1280-2 (L2-2/3), -4 (L2-4 graph); L3-1280-2, -3 (L3-3 diagram)
-- Figures valinta-a/b/c and virhe-kaavio (fig-8 to fig-11); graph virta-kuvaaja (axes, units, ticks, step line fine)
-- Plain-quantity scan of exercises.json and solutions.md: none found
+- open-exercises-1280-1 (L1-01 whole solution), contact-5 #53–57 (L1 all), contact-5 #58–62 and contact-6 #61–62 (L2), contact-6 #63–66 (L3)
+- open-exercises-L2-1280-4 (graph, axes, units, ticks), open-exercises-L3-1280-3/4 (model figure, model answer, equal-sign rows with fractions)
+- figures valinta-a/b/c via fig-9–11 and tarkista-390-2; virhe-kaavio via fig-8
 
 ## Scores
-illustrations 3 · typography 5 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

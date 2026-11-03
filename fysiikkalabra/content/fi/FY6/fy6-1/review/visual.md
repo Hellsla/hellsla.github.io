@@ -1,22 +1,21 @@
 VERDICT: FAIL
-CONTENT-HASH: 1a0b4ef8d49e71bc
+CONTENT-HASH: a9b345687bfb82fb
 
 ## Blocking
-- [Major] fig-4 (symbolit), fig-5 (kaavio), fig-8 (virhe-kaavio), L3-3 solution diagram — the switch convention is inconsistent: the symbol sheet shows only an open switch (tilted blade); fig-5 draws a closed one as a plain line between two small circles, a symbol never introduced; fig-8 (text says "kytkin suljettiin") and the L3-3 solution diagram (shows current arrow $I$ and says "yksi suljettu silmukka") draw the open blade — why it matters: a beginner reading a diagram cannot tell open from closed, and a drawn current through an open-looking switch contradicts the lesson's own rule that current flows only in a closed circuit — fix: add a closed-switch symbol to fig-4 (label "avattu / suljettu kytkin"), use it in fig-5 and the L3-3 solution, keep the open blade only where the switch is meant open (fig-8 to be drawn closed, since the task states it was closed).
+- [Major] fig 7 `jannite` (Kaava: Sähkövirta / Jännite; fy6-1-fig-7-390, theory-1280-3) — the label $U = 1{,}5\,\text{V}$ sits on the vertical wire under the battery and its white pad cuts the wire in two, so the loop looks broken at the battery's lower terminal and "U = 1,5 V" reads with a gap in the middle — a label must never overlap a circuit line (print quality, no overlapping) — move the label left of the wire (or beside the battery body) so the wire runs unbroken.
 
 ## Polish
-- [Minor] fig-3 (johdin) — the label "kupari" sits below the lower insulation strip, so it reads as naming the insulation; no leader lines — move it inside the orange area or add a short leader.
-- [Minor] fig-7 (jannite) — "U = 1,5 V" label touches the wire stub under the battery — shift the label 8–10 px down.
-- [Minor] sim-1280 — "Nopeus" drops to its own full-width row under the other three selects, uneven compared with 390 px — keep the four controls in one grid.
-- [Minor] lesson.md Kytkentäkaavio — "kaikissa kytkentäkaavioissa" appears one section before the term is introduced (Virran suunta) — write "piirrosten" or reorder.
-- [Minor] sim-390 — canvas labels $A$, $B$, $U$ are small at 390 px; legible but at the lower limit.
+- [Minor] fig 7 — the battery has no + / − marks, while fig 2 and fig 5 show polarity; the energy arrow and the return arrow imply a direction without it — add the marks, or say in the description that polarity is not shown.
+- [Minor] fig 2 `piiri` — the left current arrow stands inside the loop and the right one outside; same placement on both sides reads calmer.
+- [Minor] Example, step 7/7 (example-390-2) — the chain $180\,\text{C} : (1{,}602 \cdot 10^{-19}\,\text{C}) \approx …$ breaks the sentence "Elektroneina varaus on … elektronia" into a block mid-sentence; end the sentence before the chain or accept the layout.
+- [Minor] Experiment tables (lab-1280) — headers $Q_\text{A}$ (upright subscript) differ from the readout $Q_A$ (italic) — use one form.
+- [Minor] Sim controls at 1280 (sim-1280, lab-1280) — Mittaa/Nollaa and three selects squeeze into one row and Nopeus spans the full width alone; the two-by-two grid of 390 px reads better. Also: fy6-1-open-tarkista-1280-3 choice cards with figures are about twice as tall as their figure (empty space) at 1280. For pedagogy: the prediction tasks name $A$ and $B$ without a figure beside them.
 
 ## Checked
-- Contact sheets 2, 3, 4; top-390, top-1280, intro-1280, sim-390, sim-1280, lab-1280
-- fig-1 to fig-11 at 390 px (fig-5 also enlarged from theory-1280-2)
-- example-390-1; theory-1280-1..4; open-ennusta-1280-1; open-tarkista-1280-2; open-exit-1280
-- open-exercises-1280-1, -3; L2-1280-2, -4; L3-1280-2, -3
-- Plain-quantity scan of all student text: none found; no ×/÷
+- Contact sheets 1, 2, 5, 6; fig-1…fig-8 at 390 (fig-9–11 via contact-1/tarkista-390-2), fig-5 and fig-7 enlarged for diagnosis
+- top-390 (contact-1), intro-1280, sim-390, sim-1280, lab-1280, exp-exp-1-390-1, stage-tutki-390-2
+- theory-1280-1…4, stage-selita-390-4, example-390-1/2, stage-sovella-390-1/2, stage-tarkista-390-2
+- open-ennusta-1280-1, open-tarkista-1280-2/3, open-exit-1280 (contact-5)
 
 ## Scores
-illustrations 3 · typography 5 · Finnish 4 · accessibility 4
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4
