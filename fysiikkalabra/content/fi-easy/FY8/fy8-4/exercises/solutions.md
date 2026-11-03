@@ -86,7 +86,7 @@
 **Muunnokset:** $550\,\text{nm} = 550 \cdot 10^{-9}\,\text{m}$
 **Sijoitus:** $hc = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^8\,\text{m/s} = 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}$, joten $hf = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{550 \cdot 10^{-9}\,\text{m}} = 3{,}6118 \cdot 10^{-19}\,\text{J}$ ja $P = 2{,}40 \cdot 10^4\,\tfrac{1}{\text{s}} \cdot 3{,}6118 \cdot 10^{-19}\,\text{J} = 8{,}668 \cdot 10^{-15}\,\text{W}$
 **Vastaus:** $8{,}67 \cdot 10^{-15}\,\text{W}$, kolme merkitsevää numeroa kuten fotonimäärässä $2{,}40 \cdot 10^4$ ja aallonpituudessa $550\,\text{nm}$.
-**Järkevyys:** Teho on miljoonasosamiljardisosa wattia. Tällainen valo on silmälle näkymättömän heikkoa. Tarkistus toisin päin: $\tfrac{8{,}668 \cdot 10^{-15}\,\text{W}}{3{,}6118 \cdot 10^{-19}\,\text{J}} = 2{,}40 \cdot 10^4\,\tfrac{1}{\text{s}}$.
+**Järkevyys:** Teho on äärimmäisen pieni, yli satatuhatta kertaa pienempi kuin yksi miljardisosa wattia. Tällainen valo on silmälle näkymättömän heikkoa. Tarkistus toisin päin: $\tfrac{8{,}668 \cdot 10^{-15}\,\text{W}}{3{,}6118 \cdot 10^{-19}\,\text{J}} = 2{,}40 \cdot 10^4\,\tfrac{1}{\text{s}}$.
 
 ## fy8-4-L3-01
 **Annettu:** aallonpituus $\lambda = 589\,\text{nm}$, atomin massa $m = 3{,}82 \cdot 10^{-26}\,\text{kg}$, alkunopeus $v_0 = 3{,}00 \cdot 10^2\,\text{m/s}$; $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$

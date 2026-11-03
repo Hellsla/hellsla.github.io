@@ -24,7 +24,7 @@
       "stage": "herata",
       "type": "choice",
       "title": "Kertaa: valosähköinen ilmiö",
-      "prompt": "Metallilevyä valaistaan valolla, joka irrottaa siitä elektroneja. Aallonpituus pysyy samana, mutta valon intensiteetti kaksinkertaistetaan. Intensiteetti kertoo, kuinka paljon valon energiaa osuu pinnalle sekunnissa. Mitä tapahtuu?",
+      "prompt": "Metallilevyä valaistaan valolla, joka irrottaa siitä elektroneja. Aallonpituus pysyy samana, mutta valon intensiteetti kaksinkertaistetaan. Intensiteetti on teho pinta-alaa kohti: se kertoo, kuinka paljon valon energiaa osuu sekunnissa yhtä pinta-alayksikköä kohti. Mitä tapahtuu?",
       "choices": [
         {
           "text": "Irtoavien elektronien suurin liike-energia kaksinkertaistuu, koska levy saa enemmän energiaa.",
@@ -259,7 +259,7 @@
             "feedback": "Tämä malli ennustaa, että sironneen säteilyn aallonpituus on kaikissa suunnissa $0{,}0711\\,\\text{nm}$. Taulukossa aallonpituus kasvaa sirontakulman mukana aina arvoon $0{,}0760\\,\\text{nm}$ asti. Pelkkä aaltomalli ei siis riitä."
           },
           {
-            "text": "Fotonimalli: fotoni törmää elektroniin ja luovuttaa sille osan energiastaan. Mitä jyrkemmin fotoni kimpoaa, sitä enemmän se luovuttaa.",
+            "text": "Fotonimalli: fotoni törmää elektroniin ja luovuttaa sille osan energiastaan. Mitä suurempi sirontakulma on, sitä enemmän se luovuttaa.",
             "correct": true,
             "feedback": "Oikein. Sironneen fotonin energia $hf' = \\tfrac{hc}{\\lambda'}$ on pienempi kuin tulevan fotonin energia, joten aallonpituus on pidempi. Suoraan taaksepäin kimpoava fotoni luovuttaa eniten energiaa ja liikemäärää, joten sen $\\lambda'$ on suurin. Tämä on Comptonin ilmiö."
           },
