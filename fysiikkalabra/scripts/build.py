@@ -101,8 +101,8 @@ def staged_example(lesson_html):
     """Worked example in stages. In lesson.md the solution of `## Esimerkki` is split by lines `<!-- vaihe -->`:
     the part before the first marker is the problem, each later part one stage of the solution. The page shows
     the problem and stage 1, and a button reveals the next stage (lesson.js). Without JavaScript, and in print,
-    every stage is visible. The problem sits in its own framed box (.example-task); on a wide screen it stays in view
-    beside the steps (site.css .example)."""
+    every stage is visible. The problem sits in its own framed box (.example-task), the steps under it in the reading
+    column at every width (site.css .example, teacher 2026-11-03)."""
     m = re.search(rf"(<h2[^>]*>{re.escape(T('sections.Esimerkki'))}</h2>)(.*?)(?=<h2|<section|\Z)", lesson_html, flags=re.S)
     if not m or STEP not in m.group(2): return lesson_html
     parts = [p.strip() for p in m.group(2).split(STEP)]
@@ -205,7 +205,8 @@ def example_md(lesson_md):
     def stage(part):
         h = re.match(r"\s*\*\*([^*\n]+?)[:.]\*\*", part)
         if not h or h.group(1).strip() not in T("lesson.solution_display_steps"): return part
-        return part[:h.end()] + " " + mathlayout.display_chains(part[h.end():]) + "\n\n"
+        body = mathlayout.display_chains(part[h.end():])
+        return part[:h.end()] + ("\n\n" if body.startswith("<div") else " ") + body + "\n\n"   # a block is not set inside the label's paragraph
     return lesson_md[:m.start(1)] + STEP.join(stage(p) for p in m.group(1).split(STEP)) + lesson_md[m.end(1):]
 
 
