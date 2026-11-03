@@ -291,6 +291,7 @@ with tempfile.TemporaryDirectory() as tmp:
         elif src.exists(): shutil.copy(src, troot / n)
     shutil.copytree(folder, troot / "content/fi/FY3/fy3-2", ignore=shutil.ignore_patterns("review", "packet-*"))
     shutil.copytree(ROOT / "lessons/FY3/fy3-2", troot / "lessons/FY3/fy3-2", ignore=shutil.ignore_patterns("__pycache__"))
+    shutil.copytree(ROOT / "assets/pics/fy3", troot / "assets/pics/fy3")   # the lesson's photograph and its credit (photos.json)
     (troot / "content/fi/FY3/fy3-2/inquiry.json").unlink(); (troot / "content/fi/FY3/fy3-2/lesson.md").write_text(named)
     env = {**os.environ, "FYSIIKKALABRA_ROOT": tmp}
     r = subprocess.run([PY, ROOT / "scripts/build.py", "fy3-2"], capture_output=True, text=True, cwd=ROOT, env=env)
