@@ -1,0 +1,22 @@
+{
+  "id": "fy8-1",
+  "course": "FY8",
+  "title": "Valosähköinen ilmiö ja fotoni",
+  "goals": [
+    "LOPS FY8: energian kvantittuminen aineen ja säteilyn vuorovaikutuksessa",
+    "LOPS FY8: fotoni sähkömagneettisen säteilykentän kvanttina",
+    "Täsmennys: valosähköinen ilmiö esimerkkinä ilmiöstä, jonka selittäminen edellyttää kvantittumista; fotonin energia E = hf"
+  ],
+  "prerequisites": [],
+  "glossary": [
+    "fotoni",
+    "valosähköinen ilmiö",
+    "irrotustyö",
+    "Planckin vakio",
+    "kvantti",
+    "elektronivoltti"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

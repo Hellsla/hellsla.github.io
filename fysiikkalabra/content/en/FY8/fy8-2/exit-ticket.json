@@ -1,0 +1,10 @@
+[
+  {
+    "q": "The atom of a gas has three energy states: $0$, $2.0\\,\\text{eV}$ and $3.0\\,\\text{eV}$. How many different spectral lines can the hot gas emit, and what are the energies of their photons?",
+    "a": "Three lines, one for each pair of states. The energies of the photons are the differences between the states: $3.0\\,\\text{eV} - 2.0\\,\\text{eV} = 1.0\\,\\text{eV}$, $2.0\\,\\text{eV} - 0 = 2.0\\,\\text{eV}$ and $3.0\\,\\text{eV} - 0 = 3.0\\,\\text{eV}$."
+  },
+  {
+    "q": "A fluorescent substance absorbs blue light with a wavelength of $450\\,\\text{nm}$. Can it emit violet light with a wavelength of $400\\,\\text{nm}$ as fluorescence? Justify using energy.",
+    "a": "It cannot. The energy of a photon is $E = \\tfrac{hc}{\\lambda}$, so a photon of $400\\,\\text{nm}$ has more energy than a photon of $450\\,\\text{nm}$. In fluorescence part of the energy of the absorbed photon is turned into heat, so the emitted photon has less energy and a longer wavelength than the absorbed one."
+  }
+]

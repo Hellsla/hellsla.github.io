@@ -3666,5 +3666,257 @@
       "johde"
     ],
     "locked": false
+  },
+  {
+    "term": "emissiospektri",
+    "definition": "Spektri, jonka kuuma ohut kaasu lähettää: tummalla pohjalla erillisiä kirkkaita viivoja niillä aallonpituuksilla, joilla kaasun atomit lähettävät fotoneja siirtyessään ylemmästä energiatilasta alempaan.",
+    "lessons": [
+      "fy8-2"
+    ],
+    "see_also": [
+      "absorptiospektri",
+      "viivaspektri",
+      "energiatila"
+    ],
+    "locked": false
+  },
+  {
+    "term": "absorptiospektri",
+    "definition": "Jatkuva spektri, jossa on tummia viivoja, kun valo on kulkenut kaasun läpi. Viivat ovat niillä aallonpituuksilla, joiden fotonien energia on täsmälleen kaasun atomien kahden energiatilan erotus; jokainen niistä on samalla aallonpituudella kuin jokin saman kaasun emissiospektrin viiva.",
+    "lessons": [
+      "fy8-2"
+    ],
+    "see_also": [
+      "emissiospektri",
+      "viivaspektri",
+      "energiatila"
+    ],
+    "locked": false
+  },
+  {
+    "term": "viivaspektri",
+    "definition": "Spektri, joka koostuu erillisistä viivoista eikä yhtenäisestä värikaistasta. Kaasun atomien viivaspektri johtuu siitä, että atomin energiatilat ovat kvantittuneet; jokaisella alkuaineella on omat viivansa.",
+    "lessons": [
+      "fy8-2"
+    ],
+    "see_also": [
+      "emissiospektri",
+      "absorptiospektri"
+    ],
+    "locked": false
+  },
+  {
+    "term": "energiatila",
+    "definition": "Atomin, molekyylin tai sen elektroniverhon sallittu tila, jolla on tietty energia. Alin energiatila on perustila ja ylemmät viritystiloja. Siirtymässä tilasta toiseen atomi lähettää tai absorboi fotonin, jonka energia on tilojen energioiden erotus.",
+    "lessons": [
+      "fy8-2"
+    ],
+    "see_also": [
+      "emissiospektri",
+      "absorptiospektri",
+      "fluoresenssi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "fluoresenssi",
+    "definition": "Ilmiö, jossa aine absorboi lyhytaaltoista valoa, esimerkiksi ultraviolettia, ja lähettää heti pidempiaaltoista valoa. Osa absorboidun fotonin energiasta muuttuu lämmöksi, joten lähetetyn fotonin energia on pienempi.",
+    "lessons": [
+      "fy8-2"
+    ],
+    "see_also": [
+      "energiatila",
+      "emissiospektri"
+    ],
+    "locked": false
+  },
+  {
+    "term": "fotoni",
+    "definition": "Sähkömagneettisen säteilyn kvantti eli pienin energia-annos, jonka säteily voi luovuttaa tai vastaanottaa. Fotonin energia on $E = hf$, missä $f$ on säteilyn taajuus.",
+    "lessons": [
+      "fy8-1"
+    ],
+    "see_also": [
+      "kvantti",
+      "Planckin vakio",
+      "valosähköinen ilmiö"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kvantti",
+    "definition": "Pienin jakamaton määrä, jonka suure voi saada tai jolla se voi muuttua. Kun energia on kvantittunut, sitä siirtyy vain kokonaisina kvantteina; valon energiakvantti on fotoni.",
+    "lessons": [
+      "fy8-1"
+    ],
+    "see_also": [
+      "fotoni"
+    ],
+    "locked": false
+  },
+  {
+    "term": "valosähköinen ilmiö",
+    "definition": "Ilmiö, jossa sähkömagneettinen säteily irrottaa elektroneja aineen, tavallisesti metallin, pinnasta. Elektroneja irtoaa vain, jos fotonin energia $hf$ on vähintään metallin irrotustyön $W$ suuruinen; valon intensiteetti määrää irtoavien elektronien määrän.",
+    "lessons": [
+      "fy8-1"
+    ],
+    "see_also": [
+      "fotoni",
+      "irrotustyö"
+    ],
+    "locked": false
+  },
+  {
+    "term": "irrotustyö",
+    "definition": "Pienin energia $W$, joka tarvitaan elektronin irrottamiseen metallin pinnasta. Se on metallille ominainen, esimerkiksi natriumilla noin $2{,}3\\,\\text{eV}$ ja sinkillä noin $4{,}3\\,\\text{eV}$.",
+    "lessons": [
+      "fy8-1"
+    ],
+    "see_also": [
+      "valosähköinen ilmiö",
+      "elektronivoltti"
+    ],
+    "locked": false
+  },
+  {
+    "term": "Planckin vakio",
+    "definition": "Luonnonvakio $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, joka yhdistää fotonin energian ja säteilyn taajuuden: $E = hf$.",
+    "lessons": [
+      "fy8-1"
+    ],
+    "see_also": [
+      "fotoni"
+    ],
+    "locked": false
+  },
+  {
+    "term": "elektronivoltti",
+    "definition": "Energian yksikkö $\\text{eV}$: energia, jonka elektroni saa kiihtyessään $1\\,\\text{V}$:n jännitteen läpi. $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$.",
+    "lessons": [
+      "fy8-1"
+    ],
+    "see_also": [
+      "irrotustyö"
+    ],
+    "locked": false
+  },
+  {
+    "term": "perustila",
+    "definition": "Atomin alin energiatila. Vetyatomin perustila on $n = 1$, ja sen energia on $-13{,}6\\,\\text{eV}$. Ilman ulkoista energiaa atomi palaa aina perustilaan.",
+    "lessons": [
+      "fy8-3"
+    ],
+    "see_also": [
+      "viritystila",
+      "ionisaatioenergia"
+    ],
+    "locked": false
+  },
+  {
+    "term": "viritystila",
+    "definition": "Atomin energiatila, jonka energia on suurempi kuin perustilan. Viritystilaan atomi pääsee absorboimalla fotonin tai törmäyksessä, ja siitä se palaa alemmalle tasolle lähettäen fotonin, jonka energia on tasojen erotus.",
+    "lessons": [
+      "fy8-3"
+    ],
+    "see_also": [
+      "perustila"
+    ],
+    "locked": false
+  },
+  {
+    "term": "ionisaatioenergia",
+    "definition": "Energia, joka tarvitaan elektronin irrottamiseen atomista. Vedyn ionisaatioenergia perustilasta on $13{,}6\\,\\text{eV}$; viritystilasta $n$ se on $\\tfrac{13{,}6\\,\\text{eV}}{n^2}$.",
+    "lessons": [
+      "fy8-3"
+    ],
+    "see_also": [
+      "perustila"
+    ],
+    "locked": false
+  },
+  {
+    "term": "Bohrin malli",
+    "definition": "Niels Bohrin vuonna 1913 esittämä vetyatomin malli: elektroni kiertää ydintä vain sallituilla ympyräradoilla säteilemättä ja lähettää tai absorboi fotonin siirtyessään radalta toiselle. Malli antaa vedyn energiatasot oikein, mutta se ei toimi monen elektronin atomeille, ja aaltomekaaninen malli on korvannut sen radat.",
+    "lessons": [
+      "fy8-3"
+    ],
+    "see_also": [
+      "perustila",
+      "viritystila"
+    ],
+    "locked": false
+  },
+  {
+    "term": "aalto-hiukkasdualismi",
+    "definition": "Fotonilla, elektronilla ja muilla kvanttiolioilla on sekä aalto- että hiukkasominaisuuksia. Kulkiessaan kvanttiolio käyttäytyy aallon tavoin, ja aalto kertoo havaitsemisen todennäköisyyden; havaittaessa se rekisteröidään yhdessä kohdassa kuin hiukkanen. Koejärjestely ratkaisee, kumpi ominaisuus näkyy.",
+    "lessons": [
+      "fy8-4"
+    ],
+    "see_also": [
+      "kaksoisrakokoe",
+      "fotoni"
+    ],
+    "locked": false
+  },
+  {
+    "term": "Comptonin ilmiö",
+    "definition": "Röntgen- tai gammafotoni siroaa lähes vapaasta elektronista ja luovuttaa sille osan energiastaan ja liikemäärästään, joten sironneen fotonin aallonpituus on pidempi kuin tulevan. Ilmiö osoittaa, että fotonilla on liikemäärä $p = \\tfrac{h}{\\lambda}$.",
+    "lessons": [
+      "fy8-4"
+    ],
+    "see_also": [
+      "fotoni",
+      "aalto-hiukkasdualismi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kaksoisrakokoe",
+    "definition": "Koe, jossa valo tai hiukkassuihku kulkee kahden kapean, lähekkäisen raon läpi varjostimelle. Varjostimelle syntyy interferenssin raitakuvio. Kun kvantit lähetetään yksi kerrallaan, kuvio kertyy yksittäisistä osumista.",
+    "lessons": [
+      "fy8-4"
+    ],
+    "see_also": [
+      "aalto-hiukkasdualismi",
+      "interferenssi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "aaltomekaaninen atomimalli",
+    "definition": "Atomimalli, jossa elektronin tilaa kuvaa ytimen ympärille levittäytyvä seisova aalto eikä rata. Sallittuja ovat vain tietyt aallon muodot, joten elektronin energia on kvantittunut, ja aalto kertoo, kuinka todennäköisesti elektroni havaitaan kussakin kohdassa.",
+    "lessons": [
+      "fy8-5"
+    ],
+    "see_also": [
+      "orbitaali",
+      "todennäköisyystulkinta",
+      "seisova aalto"
+    ],
+    "locked": false
+  },
+  {
+    "term": "orbitaali",
+    "definition": "Atomin elektronin seisovan aallon kuvaama tila, esimerkiksi 1s tai 2p. Kuvissa orbitaali piirretään alueena, jonka sisällä elektroni havaitaan valitulla todennäköisyydellä, tavallisesti 90 %:n todennäköisyydellä. Orbitaalilla voi olla enintään kaksi elektronia.",
+    "lessons": [
+      "fy8-5"
+    ],
+    "see_also": [
+      "aaltomekaaninen atomimalli",
+      "todennäköisyystulkinta"
+    ],
+    "locked": false
+  },
+  {
+    "term": "todennäköisyystulkinta",
+    "definition": "Aaltomallin tulkinta, jonka mukaan aalto ei kerro hiukkasen paikkaa vaan sen, kuinka todennäköisesti hiukkanen havaitaan kussakin kohdassa. Yksittäinen mittaus antaa yhden satunnaisen tuloksen, ja jakauma näkyy vasta monesta mittauksesta.",
+    "lessons": [
+      "fy8-5"
+    ],
+    "see_also": [
+      "aaltomekaaninen atomimalli",
+      "orbitaali"
+    ],
+    "locked": false
   }
 ]

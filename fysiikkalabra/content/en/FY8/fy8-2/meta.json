@@ -1,0 +1,24 @@
+{
+  "id": "fy8-2",
+  "course": "FY8",
+  "title": "Spectra reveal the energy levels of atoms",
+  "goals": [
+    "LOPS FY8: quantisation of energy in the interaction of matter and radiation",
+    "Experimentally: measuring a spectrum; examining the change of a spectrum in the phenomenon of fluorescence",
+    "Clarification: energy states are understood as quantised states of the electron shell, based on emission and absorption spectra",
+    "Thematic link (optional box): absorption by greenhouse gases and climate change"
+  ],
+  "prerequisites": [
+    "fy8-1"
+  ],
+  "glossary": [
+    "emissiospektri",
+    "absorptiospektri",
+    "viivaspektri",
+    "energiatila",
+    "fluoresenssi"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}
