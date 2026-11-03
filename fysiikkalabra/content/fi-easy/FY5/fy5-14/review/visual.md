@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 56cfec165120dd17
+CONTENT-HASH: 53d577e5094ee8d7
 
 ## Blocking
+(none)
 
 ## Polish
+- Ambulanssi leikkautuu kuvan oikeaan reunaan; kuva toimii silti liikkeen osoittajana.
 
 ## Checked
-batch delta review: renamed title and chapter cross-references only (no numbers, symbols or figures changed); fy5-7 and fy5-14 top-390 captures opened, long new titles wrap cleanly at 390 px; references read as natural Finnish and match the new titles.
+batch delta review: photo ok at both widths, caption factual and matches Doppler section. Ambulanssikuva latautuu, asettuu oikealle ja palstalle; krediitti on.

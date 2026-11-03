@@ -1,0 +1,1139 @@
+# Light and electrons as waves and particles
+
+> **Why** does very weak light or an electron beam draw first random single points on the screen, from which a fringe pattern arises only after thousands of hits?
+
+<svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Illustration: a dim laboratory. On the table are a laser, whose light is dimmed with filters, a double-slit plate and a screen. The beam of light is so weak that it is drawn as a dashed line. On the screen are red dots that become denser into vertical fringes. Next to the table, a counter shows on the screen of a detector." class="fig-hero" style="max-width:100%;font-size:24px">
+  <defs><linearGradient id="fy84h-wall" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="600"><stop offset="0" stop-color="#1f2933"/><stop offset="1" stop-color="#6c757d"/></linearGradient><linearGradient id="fy84h-top" gradientUnits="userSpaceOnUse" x1="0" y1="430" x2="0" y2="470"><stop offset="0" stop-color="#e9c98a"/><stop offset="1" stop-color="#a97a35"/></linearGradient><linearGradient id="fy84h-laser" gradientUnits="userSpaceOnUse" x1="0" y1="352" x2="0" y2="416"><stop offset="0" stop-color="#c4ccd4"/><stop offset="1" stop-color="#8a96a3"/></linearGradient></defs>
+  <rect x="0" y="0" width="1200" height="600" fill="url(#fy84h-wall)"/>
+  <ellipse cx="600" cy="250" rx="520" ry="210" fill="#8a96a3" fill-opacity="0.18"/>
+  <rect x="0" y="430" width="1200" height="40" fill="url(#fy84h-top)"/>
+  <rect x="0" y="470" width="1200" height="130" fill="#8a5f22"/>
+  <rect x="150" y="470" width="26" height="130" fill="#a97a35"/>
+  <rect x="1050" y="470" width="26" height="130" fill="#a97a35"/>
+  <rect x="70" y="352" width="230" height="64" rx="8" fill="url(#fy84h-laser)" stroke="#1f2933" stroke-width="3"/>
+  <rect x="296" y="368" width="22" height="32" rx="3" fill="#6c757d" stroke="#1f2933" stroke-width="3"/>
+  <rect x="140" y="416" width="26" height="16" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+  <rect x="230" y="416" width="26" height="16" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+  <circle cx="110" cy="384" r="9" fill="#c92a2a" stroke="#1f2933" stroke-width="2"/>
+  <rect x="368" y="386" width="8" height="46" fill="#6c757d"/>
+  <ellipse cx="372" cy="384" rx="11" ry="34" fill="#6b7480" fill-opacity="0.55" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="408" y="386" width="8" height="46" fill="#6c757d"/>
+  <ellipse cx="412" cy="384" rx="11" ry="34" fill="#6b7480" fill-opacity="0.70" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="448" y="386" width="8" height="46" fill="#6c757d"/>
+  <ellipse cx="452" cy="384" rx="11" ry="34" fill="#6b7480" fill-opacity="0.85" stroke="#1f2933" stroke-width="2.5"/>
+  <line x1="318" y1="384" x2="640" y2="384" stroke="#c92a2a" stroke-width="3" stroke-linecap="round" stroke-dasharray="3 12"/>
+  <rect x="636" y="300" width="18" height="130" rx="2" fill="#c4ccd4" stroke="#1f2933" stroke-width="3"/>
+  <rect x="640" y="362" width="10" height="10" fill="#1f2933"/>
+  <rect x="640" y="398" width="10" height="10" fill="#1f2933"/>
+  <path d="M674,332.5 A40,40 0 0 1 674,401.5" fill="none" stroke="#f2a69c" stroke-width="2" stroke-linejoin="round" stroke-opacity="0.35"/>
+  <path d="M674,368.5 A40,40 0 0 1 674,437.5" fill="none" stroke="#f2a69c" stroke-width="2" stroke-linejoin="round" stroke-opacity="0.35"/>
+  <path d="M694,297.5 A80,80 0 0 1 694,436.5" fill="none" stroke="#f2a69c" stroke-width="2" stroke-linejoin="round" stroke-opacity="0.35"/>
+  <path d="M694,333.5 A80,80 0 0 1 694,472.5" fill="none" stroke="#f2a69c" stroke-width="2" stroke-linejoin="round" stroke-opacity="0.35"/>
+  <path d="M714,263 A120,120 0 0 1 714,471" fill="none" stroke="#f2a69c" stroke-width="2" stroke-linejoin="round" stroke-opacity="0.35"/>
+  <path d="M714,299 A120,120 0 0 1 714,507" fill="none" stroke="#f2a69c" stroke-width="2" stroke-linejoin="round" stroke-opacity="0.35"/>
+  <path d="M734,228.5 A160,160 0 0 1 734,505.5" fill="none" stroke="#f2a69c" stroke-width="2" stroke-linejoin="round" stroke-opacity="0.35"/>
+  <path d="M734,264.5 A160,160 0 0 1 734,541.5" fill="none" stroke="#f2a69c" stroke-width="2" stroke-linejoin="round" stroke-opacity="0.35"/>
+  <rect x="880" y="150" width="230" height="270" rx="6" fill="#f6f1e6" stroke="#1f2933" stroke-width="4"/>
+  <rect x="980" y="420" width="30" height="12" fill="#6c757d"/>
+  <circle cx="881.5" cy="383" r="2.4" fill="#c92a2a"/>
+  <circle cx="976.5" cy="249.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="980" cy="332.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="955" cy="181" r="2.4" fill="#c92a2a"/>
+  <circle cx="954" cy="297" r="2.4" fill="#c92a2a"/>
+  <circle cx="980" cy="219" r="2.4" fill="#c92a2a"/>
+  <circle cx="956.5" cy="191.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1037.5" cy="400" r="2.4" fill="#c92a2a"/>
+  <circle cx="996.5" cy="324.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1052" cy="245.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="989" cy="311.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="981.5" cy="289.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="979.5" cy="342" r="2.4" fill="#c92a2a"/>
+  <circle cx="1000" cy="283.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1051.5" cy="379" r="2.4" fill="#c92a2a"/>
+  <circle cx="955.5" cy="322" r="2.4" fill="#c92a2a"/>
+  <circle cx="1036" cy="220.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1032" cy="397.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="991" cy="192" r="2.4" fill="#c92a2a"/>
+  <circle cx="936.5" cy="346" r="2.4" fill="#c92a2a"/>
+  <circle cx="973" cy="397.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="974" cy="243.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1014.5" cy="281.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="957.5" cy="199.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="937.5" cy="252.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="993.5" cy="273.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="953" cy="167.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1010" cy="395.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="961" cy="249.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="938" cy="349" r="2.4" fill="#c92a2a"/>
+  <circle cx="1017.5" cy="208.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1034" cy="293" r="2.4" fill="#c92a2a"/>
+  <circle cx="1050.5" cy="359" r="2.4" fill="#c92a2a"/>
+  <circle cx="939" cy="301.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="978" cy="275" r="2.4" fill="#c92a2a"/>
+  <circle cx="999" cy="394" r="2.4" fill="#c92a2a"/>
+  <circle cx="994.5" cy="334" r="2.4" fill="#c92a2a"/>
+  <circle cx="1013.5" cy="364" r="2.4" fill="#c92a2a"/>
+  <circle cx="956" cy="316.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="960" cy="352" r="2.4" fill="#c92a2a"/>
+  <circle cx="1010" cy="186.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="926" cy="305" r="2.4" fill="#c92a2a"/>
+  <circle cx="969" cy="224.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="970.5" cy="382.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="980" cy="211" r="2.4" fill="#c92a2a"/>
+  <circle cx="973.5" cy="232.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="936" cy="193" r="2.4" fill="#c92a2a"/>
+  <circle cx="1013.5" cy="236.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="996" cy="193" r="2.4" fill="#c92a2a"/>
+  <circle cx="982" cy="205.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="993" cy="322" r="2.4" fill="#c92a2a"/>
+  <circle cx="1019.5" cy="225" r="2.4" fill="#c92a2a"/>
+  <circle cx="1012.5" cy="172.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="975.5" cy="360.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="976" cy="362" r="2.4" fill="#c92a2a"/>
+  <circle cx="958.5" cy="194" r="2.4" fill="#c92a2a"/>
+  <circle cx="994" cy="357.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1013" cy="333.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="942" cy="246.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1037.5" cy="214.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="957.5" cy="275.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="933.5" cy="223.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1013.5" cy="226.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1053" cy="326" r="2.4" fill="#c92a2a"/>
+  <circle cx="990.5" cy="385" r="2.4" fill="#c92a2a"/>
+  <circle cx="990" cy="249" r="2.4" fill="#c92a2a"/>
+  <circle cx="1016" cy="399.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="980" cy="327.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1013" cy="305.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1037.5" cy="167.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1014.5" cy="347" r="2.4" fill="#c92a2a"/>
+  <circle cx="959.5" cy="345.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="972" cy="287.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="997.5" cy="219.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="992" cy="330" r="2.4" fill="#c92a2a"/>
+  <circle cx="961" cy="351.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1019" cy="192.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1027.5" cy="174.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="941.5" cy="225.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1047" cy="386" r="2.4" fill="#c92a2a"/>
+  <circle cx="998" cy="299" r="2.4" fill="#c92a2a"/>
+  <circle cx="987.5" cy="198" r="2.4" fill="#c92a2a"/>
+  <circle cx="1054.5" cy="233.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1033" cy="172" r="2.4" fill="#c92a2a"/>
+  <circle cx="991" cy="227" r="2.4" fill="#c92a2a"/>
+  <circle cx="956" cy="341" r="2.4" fill="#c92a2a"/>
+  <circle cx="1050.5" cy="299" r="2.4" fill="#c92a2a"/>
+  <circle cx="937" cy="254" r="2.4" fill="#c92a2a"/>
+  <circle cx="959" cy="214" r="2.4" fill="#c92a2a"/>
+  <circle cx="963.5" cy="231.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1007" cy="239" r="2.4" fill="#c92a2a"/>
+  <circle cx="1027" cy="222.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="996.5" cy="226" r="2.4" fill="#c92a2a"/>
+  <circle cx="961.5" cy="244" r="2.4" fill="#c92a2a"/>
+  <circle cx="998" cy="184.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1018" cy="296" r="2.4" fill="#c92a2a"/>
+  <circle cx="991.5" cy="171.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="998.5" cy="275" r="2.4" fill="#c92a2a"/>
+  <circle cx="1018" cy="252.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="990" cy="177.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="963" cy="265" r="2.4" fill="#c92a2a"/>
+  <circle cx="980.5" cy="249" r="2.4" fill="#c92a2a"/>
+  <circle cx="999" cy="236.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="990" cy="227.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="942.5" cy="299.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="982.5" cy="330" r="2.4" fill="#c92a2a"/>
+  <circle cx="951" cy="305" r="2.4" fill="#c92a2a"/>
+  <circle cx="958" cy="205" r="2.4" fill="#c92a2a"/>
+  <circle cx="1039" cy="168.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="940.5" cy="283.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="995.5" cy="260.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1052" cy="225" r="2.4" fill="#c92a2a"/>
+  <circle cx="954.5" cy="338" r="2.4" fill="#c92a2a"/>
+  <circle cx="980" cy="311.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1035.5" cy="380.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="989" cy="229" r="2.4" fill="#c92a2a"/>
+  <circle cx="977.5" cy="403.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="961" cy="300" r="2.4" fill="#c92a2a"/>
+  <circle cx="1003" cy="269" r="2.4" fill="#c92a2a"/>
+  <circle cx="1054" cy="204.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="939.5" cy="392.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1010.5" cy="313" r="2.4" fill="#c92a2a"/>
+  <circle cx="1015" cy="203" r="2.4" fill="#c92a2a"/>
+  <circle cx="993.5" cy="217.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1013.5" cy="323.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="995.5" cy="323.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1035" cy="345.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="960.5" cy="371" r="2.4" fill="#c92a2a"/>
+  <circle cx="1052.5" cy="255.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="977.5" cy="212.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1014" cy="322" r="2.4" fill="#c92a2a"/>
+  <circle cx="961.5" cy="174.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1048" cy="238" r="2.4" fill="#c92a2a"/>
+  <circle cx="974" cy="208.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="956" cy="314" r="2.4" fill="#c92a2a"/>
+  <circle cx="957" cy="353" r="2.4" fill="#c92a2a"/>
+  <circle cx="1035.5" cy="230.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="921.5" cy="285" r="2.4" fill="#c92a2a"/>
+  <circle cx="989" cy="177.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1011" cy="312" r="2.4" fill="#c92a2a"/>
+  <circle cx="993.5" cy="227.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="952" cy="251.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="976" cy="207.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1016.5" cy="310" r="2.4" fill="#c92a2a"/>
+  <circle cx="1012" cy="339.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="940" cy="368.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1049.5" cy="334.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="991.5" cy="297.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="937" cy="220" r="2.4" fill="#c92a2a"/>
+  <circle cx="993" cy="358.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1008.5" cy="174" r="2.4" fill="#c92a2a"/>
+  <circle cx="1012" cy="238.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="974" cy="236" r="2.4" fill="#c92a2a"/>
+  <circle cx="976.5" cy="175.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="953.5" cy="202" r="2.4" fill="#c92a2a"/>
+  <circle cx="955" cy="237.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="981.5" cy="236.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1032" cy="190.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="982" cy="259.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1047" cy="225.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="999.5" cy="370.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="978" cy="240.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="953" cy="268.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="976.5" cy="339.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="994.5" cy="391" r="2.4" fill="#c92a2a"/>
+  <circle cx="940.5" cy="268" r="2.4" fill="#c92a2a"/>
+  <circle cx="977.5" cy="376" r="2.4" fill="#c92a2a"/>
+  <circle cx="1017.5" cy="351" r="2.4" fill="#c92a2a"/>
+  <circle cx="1048" cy="304" r="2.4" fill="#c92a2a"/>
+  <circle cx="1009.5" cy="213" r="2.4" fill="#c92a2a"/>
+  <circle cx="1008.5" cy="176" r="2.4" fill="#c92a2a"/>
+  <circle cx="921.5" cy="290" r="2.4" fill="#c92a2a"/>
+  <circle cx="971" cy="261.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="998" cy="179.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="983" cy="366" r="2.4" fill="#c92a2a"/>
+  <circle cx="978.5" cy="295" r="2.4" fill="#c92a2a"/>
+  <circle cx="1046" cy="393.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1054" cy="226" r="2.4" fill="#c92a2a"/>
+  <circle cx="1056.5" cy="175.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1000" cy="319" r="2.4" fill="#c92a2a"/>
+  <circle cx="924" cy="262.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1012.5" cy="282.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1013.5" cy="233.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1068" cy="236" r="2.4" fill="#c92a2a"/>
+  <circle cx="975.5" cy="300" r="2.4" fill="#c92a2a"/>
+  <circle cx="995.5" cy="213" r="2.4" fill="#c92a2a"/>
+  <circle cx="1011" cy="263.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="972.5" cy="262" r="2.4" fill="#c92a2a"/>
+  <circle cx="938.5" cy="227.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="976" cy="177" r="2.4" fill="#c92a2a"/>
+  <circle cx="944" cy="320" r="2.4" fill="#c92a2a"/>
+  <circle cx="955" cy="245.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1016" cy="225" r="2.4" fill="#c92a2a"/>
+  <circle cx="954" cy="231.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="978" cy="390" r="2.4" fill="#c92a2a"/>
+  <circle cx="1034" cy="269.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1052.5" cy="368.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="951.5" cy="351.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1049.5" cy="182" r="2.4" fill="#c92a2a"/>
+  <circle cx="997.5" cy="242.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="977" cy="272" r="2.4" fill="#c92a2a"/>
+  <circle cx="973.5" cy="180" r="2.4" fill="#c92a2a"/>
+  <circle cx="1049.5" cy="388" r="2.4" fill="#c92a2a"/>
+  <circle cx="999" cy="282" r="2.4" fill="#c92a2a"/>
+  <circle cx="978.5" cy="317.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1054.5" cy="343.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1010.5" cy="398" r="2.4" fill="#c92a2a"/>
+  <circle cx="979" cy="402.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="962.5" cy="366.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="959.5" cy="299" r="2.4" fill="#c92a2a"/>
+  <circle cx="1015" cy="282" r="2.4" fill="#c92a2a"/>
+  <circle cx="1014" cy="175.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1011.5" cy="174.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="977" cy="296" r="2.4" fill="#c92a2a"/>
+  <circle cx="998.5" cy="173.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1010.5" cy="311.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1008" cy="361" r="2.4" fill="#c92a2a"/>
+  <circle cx="995" cy="395.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="963" cy="176.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1011" cy="368" r="2.4" fill="#c92a2a"/>
+  <circle cx="1069" cy="256" r="2.4" fill="#c92a2a"/>
+  <circle cx="974.5" cy="301" r="2.4" fill="#c92a2a"/>
+  <circle cx="993" cy="385.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="952" cy="268" r="2.4" fill="#c92a2a"/>
+  <circle cx="935" cy="369" r="2.4" fill="#c92a2a"/>
+  <circle cx="1017" cy="191.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1013" cy="191" r="2.4" fill="#c92a2a"/>
+  <circle cx="1030.5" cy="281" r="2.4" fill="#c92a2a"/>
+  <circle cx="1012" cy="322.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="992.5" cy="180.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="973" cy="239" r="2.4" fill="#c92a2a"/>
+  <circle cx="1011.5" cy="264" r="2.4" fill="#c92a2a"/>
+  <circle cx="974.5" cy="362.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1037" cy="254.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="979.5" cy="184.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1020.5" cy="300.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="970.5" cy="284.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="957.5" cy="170" r="2.4" fill="#c92a2a"/>
+  <circle cx="955" cy="191" r="2.4" fill="#c92a2a"/>
+  <circle cx="914.5" cy="338" r="2.4" fill="#c92a2a"/>
+  <circle cx="956" cy="376" r="2.4" fill="#c92a2a"/>
+  <circle cx="956" cy="216.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1028.5" cy="383.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1001.5" cy="171.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="997.5" cy="260.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="982.5" cy="362.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1069.5" cy="334.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1013" cy="360" r="2.4" fill="#c92a2a"/>
+  <circle cx="976.5" cy="205.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="953" cy="379" r="2.4" fill="#c92a2a"/>
+  <circle cx="957.5" cy="400.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1035.5" cy="313.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1013.5" cy="184.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="981" cy="195.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="972" cy="355.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1071" cy="397" r="2.4" fill="#c92a2a"/>
+  <circle cx="1028.5" cy="312" r="2.4" fill="#c92a2a"/>
+  <circle cx="1008.5" cy="373.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="977.5" cy="183.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="975" cy="247.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1014" cy="326.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="978" cy="175" r="2.4" fill="#c92a2a"/>
+  <circle cx="1009" cy="393.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1034.5" cy="343" r="2.4" fill="#c92a2a"/>
+  <circle cx="1008" cy="324.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="957" cy="393" r="2.4" fill="#c92a2a"/>
+  <circle cx="1001" cy="236" r="2.4" fill="#c92a2a"/>
+  <circle cx="958.5" cy="175" r="2.4" fill="#c92a2a"/>
+  <circle cx="971.5" cy="234" r="2.4" fill="#c92a2a"/>
+  <circle cx="997" cy="227" r="2.4" fill="#c92a2a"/>
+  <circle cx="961.5" cy="338.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="997.5" cy="284.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="997.5" cy="284" r="2.4" fill="#c92a2a"/>
+  <circle cx="956" cy="283.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="991" cy="325.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="953" cy="300.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="977" cy="277.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="977" cy="404" r="2.4" fill="#c92a2a"/>
+  <circle cx="993.5" cy="232.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1049.5" cy="389.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="996" cy="203" r="2.4" fill="#c92a2a"/>
+  <circle cx="1031.5" cy="381" r="2.4" fill="#c92a2a"/>
+  <circle cx="978.5" cy="221.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1016" cy="287.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1037.5" cy="270" r="2.4" fill="#c92a2a"/>
+  <circle cx="957" cy="173.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="946" cy="280.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="940" cy="223" r="2.4" fill="#c92a2a"/>
+  <circle cx="963" cy="214" r="2.4" fill="#c92a2a"/>
+  <circle cx="1030.5" cy="387.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="960" cy="345.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1013.5" cy="331.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1017.5" cy="297.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1012" cy="262" r="2.4" fill="#c92a2a"/>
+  <circle cx="993" cy="269.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1032.5" cy="327.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1009.5" cy="168" r="2.4" fill="#c92a2a"/>
+  <circle cx="1031.5" cy="383.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="997" cy="333" r="2.4" fill="#c92a2a"/>
+  <circle cx="961" cy="254.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="976.5" cy="193" r="2.4" fill="#c92a2a"/>
+  <circle cx="969.5" cy="246.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1018" cy="209" r="2.4" fill="#c92a2a"/>
+  <circle cx="993" cy="333.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="952" cy="401.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1011.5" cy="208" r="2.4" fill="#c92a2a"/>
+  <circle cx="1002.5" cy="264" r="2.4" fill="#c92a2a"/>
+  <circle cx="976" cy="290" r="2.4" fill="#c92a2a"/>
+  <circle cx="1038" cy="245.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="940" cy="254.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="940" cy="385.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1032" cy="338.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="994.5" cy="273.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="958" cy="266" r="2.4" fill="#c92a2a"/>
+  <circle cx="955.5" cy="248.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="994.5" cy="253.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="953" cy="333" r="2.4" fill="#c92a2a"/>
+  <circle cx="991.5" cy="258.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1017" cy="380.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="976" cy="180.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1020.5" cy="236" r="2.4" fill="#c92a2a"/>
+  <circle cx="960.5" cy="189.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="994.5" cy="338" r="2.4" fill="#c92a2a"/>
+  <circle cx="1010" cy="206" r="2.4" fill="#c92a2a"/>
+  <circle cx="953" cy="195.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="975" cy="198.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="961.5" cy="198.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="995.5" cy="256.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="970.5" cy="314" r="2.4" fill="#c92a2a"/>
+  <circle cx="935" cy="261" r="2.4" fill="#c92a2a"/>
+  <circle cx="942.5" cy="383.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1011" cy="295" r="2.4" fill="#c92a2a"/>
+  <circle cx="1015" cy="219.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="940.5" cy="238.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1011" cy="336" r="2.4" fill="#c92a2a"/>
+  <circle cx="1013" cy="224" r="2.4" fill="#c92a2a"/>
+  <circle cx="993.5" cy="242.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="993.5" cy="229.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="979.5" cy="166.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1002" cy="209.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1011.5" cy="211.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1020.5" cy="209" r="2.4" fill="#c92a2a"/>
+  <circle cx="1014.5" cy="306.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="955" cy="193.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1011" cy="351.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="973" cy="175" r="2.4" fill="#c92a2a"/>
+  <circle cx="957" cy="398.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1001" cy="378" r="2.4" fill="#c92a2a"/>
+  <circle cx="1054" cy="277" r="2.4" fill="#c92a2a"/>
+  <circle cx="953" cy="364" r="2.4" fill="#c92a2a"/>
+  <circle cx="1013" cy="370" r="2.4" fill="#c92a2a"/>
+  <circle cx="976.5" cy="330.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="993.5" cy="309" r="2.4" fill="#c92a2a"/>
+  <circle cx="1009.5" cy="342.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1037" cy="171" r="2.4" fill="#c92a2a"/>
+  <circle cx="1010.5" cy="269" r="2.4" fill="#c92a2a"/>
+  <circle cx="962.5" cy="178" r="2.4" fill="#c92a2a"/>
+  <circle cx="971.5" cy="190" r="2.4" fill="#c92a2a"/>
+  <circle cx="939" cy="195" r="2.4" fill="#c92a2a"/>
+  <circle cx="1020" cy="311.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1010.5" cy="273.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="994" cy="370" r="2.4" fill="#c92a2a"/>
+  <circle cx="978" cy="210" r="2.4" fill="#c92a2a"/>
+  <circle cx="997.5" cy="381" r="2.4" fill="#c92a2a"/>
+  <circle cx="994.5" cy="341.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1014" cy="383.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1012" cy="212" r="2.4" fill="#c92a2a"/>
+  <circle cx="1053" cy="210" r="2.4" fill="#c92a2a"/>
+  <circle cx="1012.5" cy="278.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="956.5" cy="345.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="997.5" cy="244" r="2.4" fill="#c92a2a"/>
+  <circle cx="991.5" cy="305" r="2.4" fill="#c92a2a"/>
+  <circle cx="1052" cy="184" r="2.4" fill="#c92a2a"/>
+  <circle cx="1015" cy="402" r="2.4" fill="#c92a2a"/>
+  <circle cx="993.5" cy="211.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="937.5" cy="386.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="959.5" cy="332.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="978" cy="342" r="2.4" fill="#c92a2a"/>
+  <circle cx="977" cy="224.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="996.5" cy="242.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1051" cy="173.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="953.5" cy="310.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="995.5" cy="351.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="990.5" cy="193.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="993" cy="394.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="977.5" cy="216" r="2.4" fill="#c92a2a"/>
+  <circle cx="978.5" cy="288.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="994" cy="333" r="2.4" fill="#c92a2a"/>
+  <circle cx="1010" cy="217.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="956.5" cy="322" r="2.4" fill="#c92a2a"/>
+  <circle cx="959" cy="301.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="995.5" cy="344.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1018.5" cy="319.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1011" cy="372" r="2.4" fill="#c92a2a"/>
+  <circle cx="1000" cy="376" r="2.4" fill="#c92a2a"/>
+  <circle cx="1017" cy="239.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1047" cy="339.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1030.5" cy="350" r="2.4" fill="#c92a2a"/>
+  <circle cx="991.5" cy="276.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="982" cy="344" r="2.4" fill="#c92a2a"/>
+  <circle cx="942" cy="221.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1000.5" cy="255.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="883" cy="310" r="2.4" fill="#c92a2a"/>
+  <circle cx="998" cy="385.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="957" cy="201" r="2.4" fill="#c92a2a"/>
+  <circle cx="993" cy="382" r="2.4" fill="#c92a2a"/>
+  <circle cx="1019.5" cy="274" r="2.4" fill="#c92a2a"/>
+  <circle cx="1001" cy="401" r="2.4" fill="#c92a2a"/>
+  <circle cx="1034" cy="321" r="2.4" fill="#c92a2a"/>
+  <circle cx="1035" cy="386.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="934.5" cy="314" r="2.4" fill="#c92a2a"/>
+  <circle cx="954.5" cy="329.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="996" cy="314.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="935.5" cy="225.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1046" cy="171.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1071.5" cy="341" r="2.4" fill="#c92a2a"/>
+  <circle cx="935.5" cy="253" r="2.4" fill="#c92a2a"/>
+  <circle cx="996" cy="327" r="2.4" fill="#c92a2a"/>
+  <circle cx="990" cy="168.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="958" cy="199" r="2.4" fill="#c92a2a"/>
+  <circle cx="979.5" cy="313.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="957" cy="303.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1007.5" cy="401.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="997.5" cy="168.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1001" cy="306.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1054" cy="400.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="954" cy="275" r="2.4" fill="#c92a2a"/>
+  <circle cx="1036" cy="305.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="999.5" cy="360" r="2.4" fill="#c92a2a"/>
+  <circle cx="1031.5" cy="391.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1015" cy="204" r="2.4" fill="#c92a2a"/>
+  <circle cx="920" cy="177" r="2.4" fill="#c92a2a"/>
+  <circle cx="1012.5" cy="251.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="973.5" cy="166.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="998.5" cy="296" r="2.4" fill="#c92a2a"/>
+  <circle cx="1009" cy="213.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="994.5" cy="404" r="2.4" fill="#c92a2a"/>
+  <circle cx="1054.5" cy="200" r="2.4" fill="#c92a2a"/>
+  <circle cx="955" cy="266.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1015.5" cy="367.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1013.5" cy="328.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1009.5" cy="203" r="2.4" fill="#c92a2a"/>
+  <circle cx="953.5" cy="190.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="962.5" cy="303.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1013.5" cy="169" r="2.4" fill="#c92a2a"/>
+  <circle cx="994.5" cy="316" r="2.4" fill="#c92a2a"/>
+  <circle cx="971.5" cy="212.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1012.5" cy="191.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="978.5" cy="361" r="2.4" fill="#c92a2a"/>
+  <circle cx="1025.5" cy="202" r="2.4" fill="#c92a2a"/>
+  <circle cx="882.5" cy="333" r="2.4" fill="#c92a2a"/>
+  <circle cx="1054" cy="235.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="994" cy="367" r="2.4" fill="#c92a2a"/>
+  <circle cx="1001.5" cy="288" r="2.4" fill="#c92a2a"/>
+  <circle cx="1036.5" cy="217" r="2.4" fill="#c92a2a"/>
+  <circle cx="992" cy="250.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="975.5" cy="228.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1016.5" cy="212" r="2.4" fill="#c92a2a"/>
+  <circle cx="1018" cy="228.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1013" cy="337.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1036" cy="343.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1035.5" cy="387.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1001.5" cy="289" r="2.4" fill="#c92a2a"/>
+  <circle cx="974.5" cy="219" r="2.4" fill="#c92a2a"/>
+  <circle cx="975" cy="174.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="971.5" cy="247" r="2.4" fill="#c92a2a"/>
+  <circle cx="1014.5" cy="366.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="996" cy="210" r="2.4" fill="#c92a2a"/>
+  <circle cx="979" cy="194" r="2.4" fill="#c92a2a"/>
+  <circle cx="1016.5" cy="170" r="2.4" fill="#c92a2a"/>
+  <circle cx="1007" cy="386.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1028.5" cy="377" r="2.4" fill="#c92a2a"/>
+  <circle cx="1051" cy="358" r="2.4" fill="#c92a2a"/>
+  <circle cx="955" cy="205.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1015.5" cy="299" r="2.4" fill="#c92a2a"/>
+  <circle cx="919" cy="295" r="2.4" fill="#c92a2a"/>
+  <circle cx="977" cy="224" r="2.4" fill="#c92a2a"/>
+  <circle cx="1036" cy="382.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="977" cy="205.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1037" cy="277" r="2.4" fill="#c92a2a"/>
+  <circle cx="1020.5" cy="279" r="2.4" fill="#c92a2a"/>
+  <circle cx="975.5" cy="194.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1013.5" cy="332.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1014" cy="374" r="2.4" fill="#c92a2a"/>
+  <circle cx="917" cy="313" r="2.4" fill="#c92a2a"/>
+  <circle cx="960" cy="384.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1012.5" cy="317.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="884" cy="173.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="932" cy="199" r="2.4" fill="#c92a2a"/>
+  <circle cx="1015.5" cy="362" r="2.4" fill="#c92a2a"/>
+  <circle cx="993" cy="233.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="979" cy="296" r="2.4" fill="#c92a2a"/>
+  <circle cx="1017.5" cy="223.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1011" cy="328.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1012.5" cy="252.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1049" cy="336" r="2.4" fill="#c92a2a"/>
+  <circle cx="994.5" cy="248.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="969" cy="335" r="2.4" fill="#c92a2a"/>
+  <circle cx="1031.5" cy="381.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1031.5" cy="303.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="943.5" cy="395.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="975.5" cy="247.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="920" cy="277" r="2.4" fill="#c92a2a"/>
+  <circle cx="954" cy="230" r="2.4" fill="#c92a2a"/>
+  <circle cx="1018" cy="249" r="2.4" fill="#c92a2a"/>
+  <circle cx="978.5" cy="190" r="2.4" fill="#c92a2a"/>
+  <circle cx="992" cy="215.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1039.5" cy="335" r="2.4" fill="#c92a2a"/>
+  <circle cx="957" cy="304" r="2.4" fill="#c92a2a"/>
+  <circle cx="981.5" cy="372.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1017.5" cy="390.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="982" cy="177.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="964" cy="305.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1013.5" cy="206.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1055" cy="344" r="2.4" fill="#c92a2a"/>
+  <circle cx="937" cy="392" r="2.4" fill="#c92a2a"/>
+  <circle cx="998.5" cy="329" r="2.4" fill="#c92a2a"/>
+  <circle cx="1008.5" cy="219" r="2.4" fill="#c92a2a"/>
+  <circle cx="991.5" cy="273" r="2.4" fill="#c92a2a"/>
+  <circle cx="1054" cy="175" r="2.4" fill="#c92a2a"/>
+  <circle cx="1000.5" cy="176" r="2.4" fill="#c92a2a"/>
+  <circle cx="992.5" cy="234" r="2.4" fill="#c92a2a"/>
+  <circle cx="1018" cy="306.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="994.5" cy="211.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="972.5" cy="174.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1034" cy="309" r="2.4" fill="#c92a2a"/>
+  <circle cx="1009" cy="403.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1047" cy="292.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="980" cy="286.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1008.5" cy="367" r="2.4" fill="#c92a2a"/>
+  <circle cx="1029.5" cy="388" r="2.4" fill="#c92a2a"/>
+  <circle cx="1013.5" cy="166.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="992.5" cy="319.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="970" cy="264.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="987.5" cy="376.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="960.5" cy="381" r="2.4" fill="#c92a2a"/>
+  <circle cx="1027.5" cy="260" r="2.4" fill="#c92a2a"/>
+  <circle cx="1030" cy="340.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="957.5" cy="308.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="979" cy="346" r="2.4" fill="#c92a2a"/>
+  <circle cx="1049" cy="195" r="2.4" fill="#c92a2a"/>
+  <circle cx="1010" cy="166.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="958.5" cy="185.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="980.5" cy="207.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1026" cy="392.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1016" cy="326.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="998" cy="315.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="974" cy="377.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1015.5" cy="246" r="2.4" fill="#c92a2a"/>
+  <circle cx="993.5" cy="210.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1026.5" cy="199" r="2.4" fill="#c92a2a"/>
+  <circle cx="956.5" cy="246" r="2.4" fill="#c92a2a"/>
+  <circle cx="1031" cy="235.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="975" cy="243" r="2.4" fill="#c92a2a"/>
+  <circle cx="969" cy="315.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="990" cy="354" r="2.4" fill="#c92a2a"/>
+  <circle cx="989" cy="231.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="992.5" cy="299" r="2.4" fill="#c92a2a"/>
+  <circle cx="933.5" cy="251.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="956" cy="401.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1032.5" cy="368.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="975" cy="223.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1029" cy="201.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1015" cy="281" r="2.4" fill="#c92a2a"/>
+  <circle cx="1015.5" cy="167.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="959" cy="284" r="2.4" fill="#c92a2a"/>
+  <circle cx="959" cy="236" r="2.4" fill="#c92a2a"/>
+  <circle cx="926.5" cy="371.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1012" cy="365.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="956.5" cy="390.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1052" cy="222.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1049.5" cy="390.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="955" cy="379" r="2.4" fill="#c92a2a"/>
+  <circle cx="1051" cy="298" r="2.4" fill="#c92a2a"/>
+  <circle cx="1029.5" cy="389.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1007.5" cy="257.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1030.5" cy="360.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1017.5" cy="191.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1016.5" cy="250" r="2.4" fill="#c92a2a"/>
+  <circle cx="953.5" cy="374.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="980" cy="386.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1010.5" cy="258.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="991.5" cy="225" r="2.4" fill="#c92a2a"/>
+  <circle cx="1038" cy="345.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="958.5" cy="403.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="976" cy="316.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1010" cy="185.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1072.5" cy="207" r="2.4" fill="#c92a2a"/>
+  <circle cx="1011" cy="315" r="2.4" fill="#c92a2a"/>
+  <circle cx="1007.5" cy="371" r="2.4" fill="#c92a2a"/>
+  <circle cx="997" cy="265" r="2.4" fill="#c92a2a"/>
+  <circle cx="971" cy="285.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1054" cy="224.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1031.5" cy="307.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1055" cy="171.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1016.5" cy="272.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="996.5" cy="166.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="953" cy="239" r="2.4" fill="#c92a2a"/>
+  <circle cx="1013" cy="312" r="2.4" fill="#c92a2a"/>
+  <circle cx="1038" cy="192.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1013.5" cy="289" r="2.4" fill="#c92a2a"/>
+  <circle cx="1014.5" cy="219.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1011.5" cy="240" r="2.4" fill="#c92a2a"/>
+  <circle cx="990" cy="338" r="2.4" fill="#c92a2a"/>
+  <circle cx="984" cy="371" r="2.4" fill="#c92a2a"/>
+  <circle cx="975" cy="364.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="998.5" cy="179" r="2.4" fill="#c92a2a"/>
+  <circle cx="1012.5" cy="217.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1024.5" cy="317" r="2.4" fill="#c92a2a"/>
+  <circle cx="977" cy="284.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="981" cy="284" r="2.4" fill="#c92a2a"/>
+  <circle cx="961" cy="274" r="2.4" fill="#c92a2a"/>
+  <circle cx="1017" cy="179" r="2.4" fill="#c92a2a"/>
+  <circle cx="1034.5" cy="221" r="2.4" fill="#c92a2a"/>
+  <circle cx="994.5" cy="348" r="2.4" fill="#c92a2a"/>
+  <circle cx="973.5" cy="259.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="981" cy="280.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="992" cy="389.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="959" cy="215" r="2.4" fill="#c92a2a"/>
+  <circle cx="1009.5" cy="399.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="974.5" cy="381" r="2.4" fill="#c92a2a"/>
+  <circle cx="969.5" cy="345" r="2.4" fill="#c92a2a"/>
+  <circle cx="1050" cy="198.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1013.5" cy="285" r="2.4" fill="#c92a2a"/>
+  <circle cx="1027.5" cy="219.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1034" cy="168" r="2.4" fill="#c92a2a"/>
+  <circle cx="1013" cy="334" r="2.4" fill="#c92a2a"/>
+  <circle cx="935" cy="175" r="2.4" fill="#c92a2a"/>
+  <circle cx="962.5" cy="251" r="2.4" fill="#c92a2a"/>
+  <circle cx="1010" cy="195" r="2.4" fill="#c92a2a"/>
+  <circle cx="958" cy="401" r="2.4" fill="#c92a2a"/>
+  <circle cx="1011.5" cy="372.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="954" cy="286.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="973" cy="253" r="2.4" fill="#c92a2a"/>
+  <circle cx="937.5" cy="287.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1034" cy="224.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1018.5" cy="344" r="2.4" fill="#c92a2a"/>
+  <circle cx="994" cy="225" r="2.4" fill="#c92a2a"/>
+  <circle cx="1000" cy="181" r="2.4" fill="#c92a2a"/>
+  <circle cx="978.5" cy="368.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1009.5" cy="276.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="942" cy="231.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="961" cy="287" r="2.4" fill="#c92a2a"/>
+  <circle cx="1054" cy="396" r="2.4" fill="#c92a2a"/>
+  <circle cx="998.5" cy="358" r="2.4" fill="#c92a2a"/>
+  <circle cx="937" cy="243" r="2.4" fill="#c92a2a"/>
+  <circle cx="1035.5" cy="236.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="975.5" cy="261" r="2.4" fill="#c92a2a"/>
+  <circle cx="979.5" cy="241" r="2.4" fill="#c92a2a"/>
+  <circle cx="1028" cy="347" r="2.4" fill="#c92a2a"/>
+  <circle cx="1028" cy="319" r="2.4" fill="#c92a2a"/>
+  <circle cx="988.5" cy="223.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1054" cy="185" r="2.4" fill="#c92a2a"/>
+  <circle cx="988.5" cy="174" r="2.4" fill="#c92a2a"/>
+  <circle cx="962.5" cy="186" r="2.4" fill="#c92a2a"/>
+  <circle cx="1035" cy="367.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1009.5" cy="277.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="956.5" cy="200" r="2.4" fill="#c92a2a"/>
+  <circle cx="981.5" cy="205.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1018.5" cy="404" r="2.4" fill="#c92a2a"/>
+  <circle cx="1011" cy="248.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="976.5" cy="204" r="2.4" fill="#c92a2a"/>
+  <circle cx="988" cy="279" r="2.4" fill="#c92a2a"/>
+  <circle cx="957" cy="376" r="2.4" fill="#c92a2a"/>
+  <circle cx="1002.5" cy="399" r="2.4" fill="#c92a2a"/>
+  <circle cx="1037.5" cy="330" r="2.4" fill="#c92a2a"/>
+  <circle cx="953" cy="392.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1035" cy="248.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1032" cy="232.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="940" cy="222.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="940" cy="395.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="989" cy="399.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="991" cy="249" r="2.4" fill="#c92a2a"/>
+  <circle cx="1013.5" cy="252" r="2.4" fill="#c92a2a"/>
+  <circle cx="1018" cy="180" r="2.4" fill="#c92a2a"/>
+  <circle cx="978.5" cy="331" r="2.4" fill="#c92a2a"/>
+  <circle cx="1010.5" cy="219.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1028" cy="349" r="2.4" fill="#c92a2a"/>
+  <circle cx="1026.5" cy="239" r="2.4" fill="#c92a2a"/>
+  <circle cx="938.5" cy="168.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="939.5" cy="251.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1054" cy="372" r="2.4" fill="#c92a2a"/>
+  <circle cx="992" cy="191" r="2.4" fill="#c92a2a"/>
+  <circle cx="917.5" cy="399.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="975" cy="299" r="2.4" fill="#c92a2a"/>
+  <circle cx="1018.5" cy="320" r="2.4" fill="#c92a2a"/>
+  <circle cx="922" cy="238.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1021.5" cy="335.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="956" cy="171.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="941" cy="398.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1034.5" cy="301" r="2.4" fill="#c92a2a"/>
+  <circle cx="999.5" cy="305" r="2.4" fill="#c92a2a"/>
+  <circle cx="1031" cy="252.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="974.5" cy="390" r="2.4" fill="#c92a2a"/>
+  <circle cx="1028" cy="368.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1036" cy="274" r="2.4" fill="#c92a2a"/>
+  <circle cx="992.5" cy="231.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="979" cy="361" r="2.4" fill="#c92a2a"/>
+  <circle cx="1037.5" cy="317" r="2.4" fill="#c92a2a"/>
+  <circle cx="971.5" cy="213" r="2.4" fill="#c92a2a"/>
+  <circle cx="939.5" cy="328" r="2.4" fill="#c92a2a"/>
+  <circle cx="976.5" cy="363.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="976.5" cy="271" r="2.4" fill="#c92a2a"/>
+  <circle cx="976.5" cy="358" r="2.4" fill="#c92a2a"/>
+  <circle cx="975" cy="286.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="934.5" cy="362.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1018.5" cy="231" r="2.4" fill="#c92a2a"/>
+  <circle cx="1069.5" cy="374.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="939" cy="251.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="957" cy="285" r="2.4" fill="#c92a2a"/>
+  <circle cx="1032.5" cy="366.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="940" cy="237" r="2.4" fill="#c92a2a"/>
+  <circle cx="1035" cy="245.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="981" cy="347.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1033" cy="188" r="2.4" fill="#c92a2a"/>
+  <circle cx="933.5" cy="316" r="2.4" fill="#c92a2a"/>
+  <circle cx="958.5" cy="401" r="2.4" fill="#c92a2a"/>
+  <circle cx="994" cy="388" r="2.4" fill="#c92a2a"/>
+  <circle cx="971.5" cy="238" r="2.4" fill="#c92a2a"/>
+  <circle cx="1019" cy="363.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="992" cy="377" r="2.4" fill="#c92a2a"/>
+  <circle cx="1002" cy="230.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1014" cy="226" r="2.4" fill="#c92a2a"/>
+  <circle cx="1014.5" cy="187" r="2.4" fill="#c92a2a"/>
+  <circle cx="1037" cy="213" r="2.4" fill="#c92a2a"/>
+  <circle cx="1035.5" cy="306.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1035" cy="387" r="2.4" fill="#c92a2a"/>
+  <circle cx="963.5" cy="267" r="2.4" fill="#c92a2a"/>
+  <circle cx="1008.5" cy="265" r="2.4" fill="#c92a2a"/>
+  <circle cx="1048" cy="356.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="980.5" cy="202.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="974.5" cy="275" r="2.4" fill="#c92a2a"/>
+  <circle cx="994" cy="209.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="935.5" cy="181" r="2.4" fill="#c92a2a"/>
+  <circle cx="935.5" cy="172" r="2.4" fill="#c92a2a"/>
+  <circle cx="970.5" cy="300" r="2.4" fill="#c92a2a"/>
+  <circle cx="939" cy="354.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1014.5" cy="348.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="998" cy="331.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1037" cy="191" r="2.4" fill="#c92a2a"/>
+  <circle cx="936.5" cy="244.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="955" cy="226" r="2.4" fill="#c92a2a"/>
+  <circle cx="992.5" cy="310.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="997" cy="209.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="957" cy="319" r="2.4" fill="#c92a2a"/>
+  <circle cx="977" cy="216" r="2.4" fill="#c92a2a"/>
+  <circle cx="934" cy="396" r="2.4" fill="#c92a2a"/>
+  <circle cx="940.5" cy="384.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1016.5" cy="381" r="2.4" fill="#c92a2a"/>
+  <circle cx="1014" cy="322" r="2.4" fill="#c92a2a"/>
+  <circle cx="998.5" cy="252" r="2.4" fill="#c92a2a"/>
+  <circle cx="1016" cy="346.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="969.5" cy="233.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1011" cy="296.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="975" cy="371.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1047" cy="291" r="2.4" fill="#c92a2a"/>
+  <circle cx="977" cy="386.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="973" cy="381" r="2.4" fill="#c92a2a"/>
+  <circle cx="995.5" cy="283" r="2.4" fill="#c92a2a"/>
+  <circle cx="992.5" cy="205.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="955" cy="257.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="957.5" cy="332" r="2.4" fill="#c92a2a"/>
+  <circle cx="941" cy="199" r="2.4" fill="#c92a2a"/>
+  <circle cx="1017.5" cy="210" r="2.4" fill="#c92a2a"/>
+  <circle cx="1012.5" cy="400.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="940.5" cy="394" r="2.4" fill="#c92a2a"/>
+  <circle cx="976" cy="311.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="997" cy="173.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="936.5" cy="176" r="2.4" fill="#c92a2a"/>
+  <circle cx="1034.5" cy="172.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1018" cy="314.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="935" cy="179" r="2.4" fill="#c92a2a"/>
+  <circle cx="941" cy="334" r="2.4" fill="#c92a2a"/>
+  <circle cx="995" cy="329" r="2.4" fill="#c92a2a"/>
+  <circle cx="998.5" cy="166.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="938.5" cy="372" r="2.4" fill="#c92a2a"/>
+  <circle cx="1014.5" cy="381" r="2.4" fill="#c92a2a"/>
+  <circle cx="1035.5" cy="384" r="2.4" fill="#c92a2a"/>
+  <circle cx="995" cy="395.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1034.5" cy="311" r="2.4" fill="#c92a2a"/>
+  <circle cx="1018.5" cy="290.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="961.5" cy="285" r="2.4" fill="#c92a2a"/>
+  <circle cx="974" cy="334" r="2.4" fill="#c92a2a"/>
+  <circle cx="933.5" cy="352.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="978" cy="303" r="2.4" fill="#c92a2a"/>
+  <circle cx="995" cy="377.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="960.5" cy="293" r="2.4" fill="#c92a2a"/>
+  <circle cx="994" cy="291.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1009.5" cy="346" r="2.4" fill="#c92a2a"/>
+  <circle cx="994" cy="265.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="952.5" cy="380" r="2.4" fill="#c92a2a"/>
+  <circle cx="1051.5" cy="307.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1057" cy="335.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="956.5" cy="214" r="2.4" fill="#c92a2a"/>
+  <circle cx="955.5" cy="211.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="997" cy="398.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1033" cy="401.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="956.5" cy="318" r="2.4" fill="#c92a2a"/>
+  <circle cx="1013.5" cy="308" r="2.4" fill="#c92a2a"/>
+  <circle cx="979" cy="322" r="2.4" fill="#c92a2a"/>
+  <circle cx="978" cy="193.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="994.5" cy="254" r="2.4" fill="#c92a2a"/>
+  <circle cx="1018" cy="171.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="956.5" cy="278.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1017.5" cy="312" r="2.4" fill="#c92a2a"/>
+  <circle cx="1012" cy="213" r="2.4" fill="#c92a2a"/>
+  <circle cx="1027.5" cy="267" r="2.4" fill="#c92a2a"/>
+  <circle cx="1031" cy="389.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1050" cy="229" r="2.4" fill="#c92a2a"/>
+  <circle cx="1015" cy="230.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="971" cy="187" r="2.4" fill="#c92a2a"/>
+  <circle cx="1013" cy="354" r="2.4" fill="#c92a2a"/>
+  <circle cx="998.5" cy="269" r="2.4" fill="#c92a2a"/>
+  <circle cx="1013" cy="364" r="2.4" fill="#c92a2a"/>
+  <circle cx="976" cy="228.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="958" cy="256.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1001.5" cy="338" r="2.4" fill="#c92a2a"/>
+  <circle cx="979" cy="267" r="2.4" fill="#c92a2a"/>
+  <circle cx="998" cy="293.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="960" cy="327.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="992" cy="323.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="954" cy="337" r="2.4" fill="#c92a2a"/>
+  <circle cx="1034" cy="325" r="2.4" fill="#c92a2a"/>
+  <circle cx="1012" cy="216.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="955.5" cy="296" r="2.4" fill="#c92a2a"/>
+  <circle cx="1031" cy="360" r="2.4" fill="#c92a2a"/>
+  <circle cx="992" cy="186" r="2.4" fill="#c92a2a"/>
+  <circle cx="1008.5" cy="174.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="957" cy="175" r="2.4" fill="#c92a2a"/>
+  <circle cx="956" cy="212" r="2.4" fill="#c92a2a"/>
+  <circle cx="989" cy="309" r="2.4" fill="#c92a2a"/>
+  <circle cx="953.5" cy="338" r="2.4" fill="#c92a2a"/>
+  <circle cx="973" cy="217" r="2.4" fill="#c92a2a"/>
+  <circle cx="1011" cy="297" r="2.4" fill="#c92a2a"/>
+  <circle cx="970" cy="249" r="2.4" fill="#c92a2a"/>
+  <circle cx="1018" cy="191.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1015.5" cy="232" r="2.4" fill="#c92a2a"/>
+  <circle cx="1028" cy="373.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1014.5" cy="240" r="2.4" fill="#c92a2a"/>
+  <circle cx="1034" cy="374" r="2.4" fill="#c92a2a"/>
+  <circle cx="990" cy="379" r="2.4" fill="#c92a2a"/>
+  <circle cx="996.5" cy="168.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="994" cy="317.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="971.5" cy="255.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1027" cy="298" r="2.4" fill="#c92a2a"/>
+  <circle cx="997" cy="270.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="999.5" cy="310.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="990.5" cy="359.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1031.5" cy="231" r="2.4" fill="#c92a2a"/>
+  <circle cx="977.5" cy="307" r="2.4" fill="#c92a2a"/>
+  <circle cx="957" cy="182" r="2.4" fill="#c92a2a"/>
+  <circle cx="1074" cy="214.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1014.5" cy="331" r="2.4" fill="#c92a2a"/>
+  <circle cx="959.5" cy="288.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="973" cy="274" r="2.4" fill="#c92a2a"/>
+  <circle cx="1009.5" cy="369" r="2.4" fill="#c92a2a"/>
+  <circle cx="1037" cy="394" r="2.4" fill="#c92a2a"/>
+  <circle cx="1040" cy="402" r="2.4" fill="#c92a2a"/>
+  <circle cx="1009.5" cy="390.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1007.5" cy="234.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="977.5" cy="358.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1029.5" cy="311" r="2.4" fill="#c92a2a"/>
+  <circle cx="958.5" cy="345" r="2.4" fill="#c92a2a"/>
+  <circle cx="987.5" cy="373" r="2.4" fill="#c92a2a"/>
+  <circle cx="1032" cy="389" r="2.4" fill="#c92a2a"/>
+  <circle cx="992" cy="273.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="981.5" cy="215" r="2.4" fill="#c92a2a"/>
+  <circle cx="1017.5" cy="290.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="950.5" cy="310" r="2.4" fill="#c92a2a"/>
+  <circle cx="1012" cy="251.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="989.5" cy="347" r="2.4" fill="#c92a2a"/>
+  <circle cx="975.5" cy="306" r="2.4" fill="#c92a2a"/>
+  <circle cx="959.5" cy="345" r="2.4" fill="#c92a2a"/>
+  <circle cx="939" cy="166" r="2.4" fill="#c92a2a"/>
+  <circle cx="940.5" cy="245" r="2.4" fill="#c92a2a"/>
+  <circle cx="976" cy="197" r="2.4" fill="#c92a2a"/>
+  <circle cx="1048" cy="347" r="2.4" fill="#c92a2a"/>
+  <circle cx="1001" cy="341" r="2.4" fill="#c92a2a"/>
+  <circle cx="1008.5" cy="169" r="2.4" fill="#c92a2a"/>
+  <circle cx="1015" cy="170" r="2.4" fill="#c92a2a"/>
+  <circle cx="1068" cy="177" r="2.4" fill="#c92a2a"/>
+  <circle cx="964" cy="321" r="2.4" fill="#c92a2a"/>
+  <circle cx="1009.5" cy="382" r="2.4" fill="#c92a2a"/>
+  <circle cx="1033.5" cy="261" r="2.4" fill="#c92a2a"/>
+  <circle cx="937.5" cy="275" r="2.4" fill="#c92a2a"/>
+  <circle cx="1019.5" cy="373.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1016" cy="302.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1037.5" cy="333.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="992" cy="210" r="2.4" fill="#c92a2a"/>
+  <circle cx="1018" cy="393" r="2.4" fill="#c92a2a"/>
+  <circle cx="1054.5" cy="322.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="989" cy="225" r="2.4" fill="#c92a2a"/>
+  <circle cx="1028.5" cy="346.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="936" cy="321.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="979.5" cy="288.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="977" cy="299" r="2.4" fill="#c92a2a"/>
+  <circle cx="1054.5" cy="251" r="2.4" fill="#c92a2a"/>
+  <circle cx="1011.5" cy="281.5" r="2.4" fill="#c92a2a"/>
+  <circle cx="1053" cy="201" r="2.4" fill="#c92a2a"/>
+  <circle cx="1036.5" cy="397.5" r="2.4" fill="#c92a2a"/>
+  <rect x="470" y="200" width="120" height="76" rx="6" fill="#6c757d" stroke="#1f2933" stroke-width="3"/>
+  <rect x="484" y="214" width="92" height="34" rx="3" fill="#b2f2bb" stroke="#1f2933" stroke-width="2"/>
+  <rect x="492" y="222" width="12" height="18" fill="#2b8a3e"/>
+  <rect x="512" y="222" width="12" height="18" fill="#2b8a3e"/>
+  <rect x="532" y="222" width="12" height="18" fill="#2b8a3e"/>
+  <rect x="552" y="222" width="12" height="18" fill="#2b8a3e"/>
+  <circle cx="500" cy="262" r="5" fill="#ffc078"/>
+  <path d="M530,276 Q705,348 880,300" fill="none" stroke="#6b7480" stroke-width="3" stroke-linejoin="round"/>
+</svg>
+
+## Key idea
+
+### Wave or particle?
+In the double-slit experiment, light passes through two narrow, closely spaced slits to a screen. A pattern of bright and dark fringes arises on the screen, which the wave model explains: the waves from the two slits strengthen each other where the path difference is a multiple of the wavelength, and weaken each other where the path difference is half a wavelength, one and a half wavelengths or another odd multiple of half a wavelength (chapter *Interference of waves*). In the photoelectric effect, however, light gives up its energy in quanta: one photon, whose energy is $hf$, can release at most one electron (chapter *Photoelectric effect and the photon*). Both observations are true. How can the same light be both?
+
+### One quantum at a time
+When the double-slit experiment is done with light so weak that there is on average less than one photon in the apparatus at a time, a sensitive detector registers each photon as a single point. The position of a single point cannot be predicted. When thousands of points have accumulated, they form the same fringe pattern as strong light. The same happens with electrons: in a double-slit experiment with an electron beam, each electron hits the screen at one place, but the hits pile up into fringes. So the electron, which we are used to thinking of as a small particle, behaves like a wave as it travels, and the photon, which the wave model describes well, is detected like a particle.
+
+<svg data-fig="buildup" viewBox="0 0 600 380" role="img" aria-label="Schematic figure: the screen of a double-slit experiment in three stages, when single photons or electrons hit it one at a time. After 10 hits the points look random, after 200 hits the fringes begin to stand out, and after 5000 hits a clear fringe pattern is visible. At the bottom is the intensity according to the wave model, whose peaks are at the same places as the densest fringes of points. The points have been drawn from the probability distribution of the model." style="max-width:100%;font-size:24px">
+  <rect x="156" y="16" width="428" height="64" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
+  <path d="M157,36.6h0 M325,49.8h0 M338.5,61.8h0 M374,55.3h0 M432.5,41.2h0 M405.5,23.9h0 M403.5,70.8h0 M430,48.7h0 M452,55.8h0 M378,70.1h0" stroke="#c92a2a" stroke-width="5.2" stroke-linecap="round" fill="none"/>
+  <foreignObject x="84" y="33.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$N = 10$</div></foreignObject>
+  <rect x="156" y="98" width="428" height="64" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
+  <path d="M156.5,119.8h0 M265.5,125.1h0 M371.5,128.5h0 M333.5,141.5h0 M300,134.8h0 M434.5,107.6h0 M326,135.0h0 M375,115.7h0 M336,103.6h0 M311,141.5h0 M237.5,150.9h0 M372,136.0h0 M476.5,151.7h0 M254.5,146.6h0 M473,112.0h0 M419,142.5h0 M584,126.3h0 M331.5,104.3h0 M474,122.0h0 M441.5,139.0h0 M474,139.7h0 M371,126.4h0 M455.5,126.0h0 M431,115.2h0 M265.5,147.7h0 M295.5,132.7h0 M344.5,108.7h0 M344.5,133.9h0 M374.5,108.3h0 M485,144.8h0 M375.5,149.5h0 M399,119.5h0 M373,155.0h0 M376,110.9h0 M303,140.3h0 M334,122.6h0 M442.5,130.5h0 M328,146.1h0 M441.5,143.9h0 M339.5,126.5h0 M158.5,104.8h0 M374.5,146.6h0 M336.5,156.5h0 M370,112.3h0 M400,116.2h0 M332,136.6h0 M366.5,129.5h0 M370,137.0h0 M433,133.2h0 M326,123.2h0 M294.5,123.9h0 M313.5,152.8h0 M357,148.3h0 M435.5,116.0h0 M333.5,119.9h0 M450,133.4h0 M362.5,126.9h0 M408.5,145.3h0 M413.5,145.3h0 M369,103.5h0 M437.5,151.5h0 M330,122.9h0 M368,143.6h0 M367.5,133.5h0 M382.5,120.0h0 M291,154.8h0 M435,134.3h0 M407.5,129.9h0 M341.5,152.2h0 M400.5,132.9h0 M339.5,148.4h0 M259,150.1h0 M430.5,111.6h0 M325,144.8h0 M294,148.8h0 M344.5,130.1h0 M311,131.3h0 M415.5,131.7h0 M475,123.0h0 M447,138.7h0 M404.5,110.7h0 M441.5,120.6h0 M509,153.5h0 M413,103.5h0 M370,130.6h0 M379.5,129.3h0 M331,146.1h0 M296,151.6h0 M360,122.0h0 M340.5,118.0h0 M367.5,118.6h0 M477.5,109.7h0 M374,137.9h0 M294.5,109.7h0 M296,140.0h0 M252.5,123.5h0 M391.5,109.0h0 M408,147.8h0 M375.5,125.3h0 M486.5,143.1h0 M400.5,122.7h0 M479.5,134.3h0 M369.5,140.7h0 M334.5,145.5h0 M293,136.8h0 M408,145.0h0 M339,154.1h0 M298,128.7h0 M369,125.6h0 M368,142.9h0 M438,120.5h0 M448.5,117.4h0 M284.5,106.6h0 M416,126.7h0 M399.5,153.1h0 M356,121.5h0 M372.5,140.2h0 M333,138.7h0 M438.5,123.0h0 M414.5,143.5h0 M297,103.9h0 M284.5,108.2h0 M467,141.6h0 M334,103.7h0 M505.5,144.5h0 M413.5,146.4h0 M360.5,152.0h0 M399.5,118.8h0 M442.5,127.4h0 M443,153.6h0 M392.5,146.2h0 M275,141.0h0 M408.5,118.5h0 M343.5,151.4h0 M330.5,153.0h0 M290.5,107.9h0 M374,108.6h0 M300,131.9h0 M363.5,145.0h0 M412,117.4h0 M374.5,104.6h0 M407.5,138.3h0 M300.5,138.2h0 M341,137.7h0 M397.5,155.2h0 M253.5,120.4h0 M301.5,121.2h0 M298,151.5h0 M355,141.2h0 M277,143.8h0 M403.5,107.4h0 M370,114.8h0 M406.5,144.4h0 M402,150.4h0 M403.5,137.7h0 M480.5,120.3h0 M333.5,116.5h0 M251.5,153.5h0 M379.5,152.0h0 M375.5,113.7h0 M342,120.6h0 M443.5,128.0h0 M333,154.6h0 M367,116.1h0 M355.5,120.5h0 M359,126.7h0 M308.5,145.3h0 M291,133.8h0 M307.5,113.0h0 M410.5,118.2h0 M343.5,120.6h0 M435,113.7h0 M372.5,128.0h0 M379.5,141.4h0 M369.5,150.0h0 M409.5,136.5h0 M447,117.0h0 M443,121.2h0 M393,144.8h0 M342,144.1h0 M404,116.9h0 M268,135.4h0 M438,134.9h0 M339,140.7h0 M333,138.7h0 M487.5,103.3h0 M362.5,152.4h0 M398,113.1h0 M302.5,147.4h0 M421,130.0h0 M403.5,151.6h0 M325.5,106.1h0 M376,124.9h0 M262,119.8h0 M402,135.3h0 M368,125.0h0 M443,140.9h0 M433.5,135.7h0 M291,156.5h0 M395.5,154.3h0" stroke="#c92a2a" stroke-width="5.2" stroke-linecap="round" fill="none"/>
+  <foreignObject x="72" y="115.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$N = 200$</div></foreignObject>
+  <rect x="156" y="180" width="428" height="64" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
+  <path d="M156.6,229.4h0 M477.8,230.7h0 M392.1,229.9h0 M302.2,225.6h0 M426.6,222.5h0 M443.8,190.4h0 M490.3,208.1h0 M456.2,190.2h0 M156.8,195.6h0 M370.4,191.2h0 M436.8,207.2h0 M394.6,199.4h0 M327.9,232.7h0 M409.4,226.8h0 M357.3,210.4h0 M471.8,212.1h0 M374.2,237.1h0 M324.6,216.0h0 M401.4,202.5h0 M401.9,227.5h0 M410.6,223.4h0 M301.2,207.8h0 M366.6,202.3h0 M476.6,238.7h0 M381.5,232.9h0 M262.3,220.2h0 M444.9,226.1h0 M396.9,236.3h0 M333.6,215.8h0 M364.6,214.8h0 M261.2,215.4h0 M402.7,238.9h0 M341.4,212.1h0 M359.3,189.5h0 M407.7,238.9h0 M364.1,208.2h0 M473.0,207.7h0 M406.7,216.3h0 M298.6,189.2h0 M411.3,222.6h0 M307.2,187.1h0 M347.1,197.3h0 M309.5,204.0h0 M298.2,210.7h0 M475.1,185.8h0 M263.4,234.6h0 M397.6,221.3h0 M362.2,235.0h0 M414.0,230.6h0 M339.0,203.9h0 M260.8,219.5h0 M379.9,194.7h0 M398.9,189.4h0 M364.8,195.5h0 M270.7,204.9h0 M407.0,230.7h0 M336.4,223.1h0 M371.1,190.9h0 M452.7,200.6h0 M410.3,234.6h0 M374.4,212.9h0 M296.4,228.1h0 M436.7,198.6h0 M309.5,216.2h0 M428.5,229.6h0 M230.3,197.2h0 M406.3,236.7h0 M298.5,207.0h0 M273.5,238.3h0 M403.3,205.6h0 M369.5,223.9h0 M368.5,201.4h0 M360.4,219.7h0 M330.3,229.5h0 M257.5,199.8h0 M341.2,231.8h0 M379.7,198.8h0 M376.3,228.7h0 M439.4,228.3h0 M417.4,222.3h0 M367.1,189.2h0 M368.9,225.5h0 M506.4,195.6h0 M235.4,185.6h0 M267.9,193.1h0 M364.5,230.8h0 M402.0,196.7h0 M412.1,188.4h0 M465.6,227.1h0 M412.8,188.0h0 M344.4,188.7h0 M370.0,222.4h0 M293.5,211.6h0 M401.7,192.9h0 M369.8,194.3h0 M401.0,194.5h0 M431.8,226.5h0 M267.3,203.5h0 M262.4,231.0h0 M329.9,202.9h0 M267.3,223.0h0 M328.7,226.9h0 M473.6,190.3h0 M372.6,230.3h0 M321.5,200.4h0 M300.3,190.5h0 M335.4,215.9h0 M329.5,190.8h0 M410.9,187.1h0 M399.2,217.5h0 M342.2,190.9h0 M429.9,187.3h0 M396.8,228.6h0 M335.9,227.7h0 M403.4,205.0h0 M334.3,197.0h0 M306.7,224.0h0 M380.0,232.2h0 M435.1,223.4h0 M367.4,228.0h0 M413.0,215.5h0 M340.7,235.3h0 M367.0,196.2h0 M480.6,234.9h0 M395.2,189.8h0 M308.7,221.5h0 M376.9,233.1h0 M264.5,228.2h0 M327.2,209.0h0 M263.1,225.1h0 M306.4,221.4h0 M290.3,225.0h0 M440.5,188.6h0 M428.9,193.1h0 M375.5,185.1h0 M399.1,230.1h0 M450.3,191.6h0 M340.4,189.7h0 M441.1,234.6h0 M290.1,231.5h0 M400.5,235.9h0 M410.8,236.5h0 M406.4,187.3h0 M371.7,201.5h0 M410.0,187.8h0 M256.0,205.6h0 M447.0,211.5h0 M383.2,237.5h0 M367.0,220.3h0 M365.2,238.1h0 M445.5,195.1h0 M359.9,233.3h0 M401.5,199.6h0 M371.4,221.3h0 M306.6,186.8h0 M441.7,220.2h0 M371.5,210.8h0 M295.2,200.5h0 M416.0,188.9h0 M468.9,232.0h0 M384.0,205.8h0 M265.2,185.1h0 M300.7,221.5h0 M577.3,225.0h0 M408.2,230.3h0 M368.2,232.6h0 M336.5,185.9h0 M435.9,187.1h0 M369.2,221.4h0 M288.5,217.7h0 M396.2,200.9h0 M286.1,197.6h0 M406.0,209.6h0 M404.5,225.5h0 M262.0,225.8h0 M404.8,200.0h0 M417.8,221.1h0 M328.0,196.7h0 M373.8,234.4h0 M390.4,189.4h0 M407.8,235.8h0 M415.9,198.7h0 M333.0,203.1h0 M439.4,190.3h0 M268.5,232.1h0 M404.8,234.5h0 M326.4,189.3h0 M368.3,226.4h0 M342.2,208.0h0 M439.3,197.3h0 M304.2,208.1h0 M482.4,237.8h0 M258.8,205.9h0 M264.3,219.6h0 M372.2,213.4h0 M408.7,201.1h0 M328.0,229.8h0 M371.6,218.8h0 M408.2,209.0h0 M333.8,196.5h0 M378.5,238.6h0 M481.3,225.6h0 M289.6,220.6h0 M302.3,194.9h0 M364.1,198.5h0 M449.9,186.3h0 M401.3,195.6h0 M405.5,209.0h0 M430.1,227.7h0 M404.5,200.4h0 M253.2,217.3h0 M330.6,215.8h0 M268.6,187.7h0 M463.6,201.9h0 M290.7,237.9h0 M380.7,209.1h0 M274.8,221.6h0 M255.5,210.2h0 M364.0,225.2h0 M334.6,192.5h0 M407.2,216.5h0 M289.1,211.8h0 M407.0,231.5h0 M436.0,232.6h0 M470.4,194.5h0 M339.7,234.2h0 M332.6,221.0h0 M260.4,217.2h0 M377.9,236.3h0 M433.7,225.6h0 M345.1,222.2h0 M366.9,234.1h0 M290.3,199.4h0 M299.5,221.9h0 M364.1,220.4h0 M408.3,213.6h0 M370.4,221.2h0 M414.7,209.6h0 M307.9,237.8h0 M305.6,236.0h0 M302.3,221.2h0 M337.4,188.3h0 M334.6,197.8h0 M328.9,217.2h0 M441.9,192.8h0 M445.1,188.3h0 M343.9,194.7h0 M477.8,221.5h0 M439.5,231.9h0 M404.1,210.4h0 M270.3,216.3h0 M303.7,205.6h0 M378.6,207.4h0 M299.3,206.6h0 M476.4,224.8h0 M369.0,230.9h0 M358.7,224.0h0 M365.8,219.1h0 M368.8,198.0h0 M357.3,210.0h0 M295.2,225.5h0 M469.9,236.2h0 M368.7,204.4h0 M366.4,227.2h0 M378.6,236.5h0 M405.7,196.9h0 M365.0,208.9h0 M414.8,217.6h0 M335.8,188.2h0 M375.2,196.8h0 M366.9,224.9h0 M365.9,210.1h0 M400.6,208.2h0 M472.7,208.1h0 M401.4,190.0h0 M362.2,226.6h0 M336.6,207.5h0 M163.4,220.4h0 M362.3,210.4h0 M447.6,235.7h0 M378.0,231.6h0 M323.8,190.1h0 M290.4,194.4h0 M439.4,223.4h0 M304.3,216.1h0 M475.6,200.7h0 M440.0,219.0h0 M298.6,233.6h0 M363.8,219.7h0 M335.3,213.1h0 M436.5,221.9h0 M373.9,211.1h0 M407.1,218.9h0 M415.4,228.3h0 M378.0,223.5h0 M469.9,197.7h0 M263.6,202.0h0 M440.6,197.8h0 M335.6,205.7h0 M347.6,220.1h0 M271.3,185.9h0 M443.8,221.1h0 M295.2,232.2h0 M435.2,237.4h0 M478.5,210.8h0 M364.5,230.2h0 M394.3,219.2h0 M475.1,186.4h0 M434.8,193.1h0 M338.2,225.6h0 M359.4,222.2h0 M340.5,185.8h0 M265.5,220.1h0 M476.7,204.5h0 M431.1,234.4h0 M431.0,220.0h0 M301.0,228.1h0 M255.1,200.0h0 M333.1,227.3h0 M409.9,197.6h0 M405.1,220.0h0 M435.6,215.3h0 M411.2,237.9h0 M372.3,228.2h0 M396.2,221.5h0 M443.0,216.2h0 M369.4,214.4h0 M474.9,196.0h0 M335.0,235.4h0 M380.1,213.3h0 M361.0,212.7h0 M338.6,237.2h0 M397.7,218.4h0 M303.3,225.9h0 M397.8,213.5h0 M373.7,231.9h0 M435.2,233.8h0 M407.5,202.6h0 M402.5,185.0h0 M414.7,234.1h0 M366.8,215.7h0 M296.7,217.3h0 M369.8,221.6h0 M397.4,200.8h0 M310.9,233.7h0 M406.9,238.0h0 M338.3,219.8h0 M400.3,219.6h0 M332.1,201.9h0 M305.3,195.8h0 M399.9,192.7h0 M434.3,194.3h0 M400.7,203.2h0 M366.2,221.6h0 M407.0,213.4h0 M376.1,214.1h0 M409.0,217.9h0 M258.6,228.4h0 M302.8,210.3h0 M363.4,186.8h0 M334.7,209.0h0 M404.0,203.9h0 M400.8,215.5h0 M264.6,195.7h0 M447.3,199.1h0 M372.3,209.0h0 M403.1,230.7h0 M334.4,221.1h0 M364.8,235.5h0 M474.3,225.6h0 M378.1,213.4h0 M267.3,219.6h0 M362.9,205.4h0 M366.7,201.5h0 M340.4,221.3h0 M473.2,188.8h0 M466.3,211.2h0 M397.5,215.9h0 M368.5,189.1h0 M328.7,211.4h0 M398.1,211.8h0 M480.4,201.6h0 M328.9,196.4h0 M296.4,228.7h0 M361.7,210.1h0 M330.5,216.1h0 M266.1,190.0h0 M481.8,218.8h0 M341.2,216.3h0 M373.3,236.2h0 M300.2,187.6h0 M292.7,236.7h0 M295.2,234.1h0 M398.4,224.6h0 M359.9,219.4h0 M410.9,237.2h0 M371.8,215.7h0 M444.1,190.7h0 M488.2,213.0h0 M333.1,227.3h0 M415.3,207.4h0 M475.4,227.6h0 M371.5,229.4h0 M374.8,207.4h0 M359.9,199.7h0 M407.3,190.2h0 M337.6,233.2h0 M476.1,229.4h0 M337.1,200.8h0 M402.9,194.4h0 M337.8,201.9h0 M296.4,205.4h0 M342.7,229.9h0 M405.1,200.3h0 M446.3,230.3h0 M415.1,187.9h0 M333.9,188.3h0 M405.9,233.0h0 M470.6,226.2h0 M392.8,205.1h0 M450.1,203.8h0 M256.4,189.7h0 M371.1,190.3h0 M287.0,224.4h0 M476.7,229.1h0 M413.7,236.8h0 M396.1,218.4h0 M361.0,212.2h0 M376.8,202.9h0 M336.3,206.0h0 M370.2,205.6h0 M221.2,212.2h0 M299.0,232.8h0 M299.7,227.9h0 M308.5,185.2h0 M408.3,236.4h0 M425.7,239.0h0 M506.1,214.5h0 M341.1,228.7h0 M268.6,218.5h0 M368.8,223.9h0 M446.6,205.5h0 M325.3,206.1h0 M429.9,208.3h0 M340.4,233.7h0 M485.4,202.1h0 M444.6,217.6h0 M328.6,196.9h0 M363.7,186.2h0 M485.3,212.8h0 M275.0,202.0h0 M328.0,212.5h0 M349.9,231.5h0 M410.0,191.8h0 M377.5,208.8h0 M328.0,202.9h0 M338.7,221.1h0 M413.9,208.3h0 M445.0,189.5h0 M399.6,226.7h0 M415.4,223.5h0 M304.0,192.6h0 M393.2,210.6h0 M398.1,220.2h0 M472.6,228.7h0 M403.6,226.8h0 M289.6,186.8h0 M338.9,221.1h0 M488.2,199.0h0 M377.1,232.0h0 M378.7,205.6h0 M443.2,195.3h0 M472.5,193.4h0 M265.9,202.1h0 M376.9,226.5h0 M406.7,188.8h0 M304.2,202.0h0 M415.4,210.7h0 M330.3,217.0h0 M399.6,196.3h0 M301.7,222.6h0 M334.8,195.3h0 M336.5,213.1h0 M372.6,191.3h0 M329.3,216.7h0 M305.4,192.3h0 M299.4,202.3h0 M329.6,236.1h0 M411.5,188.4h0 M450.2,216.1h0 M478.1,214.2h0 M448.9,196.4h0 M333.3,229.9h0 M308.7,194.1h0 M364.7,206.8h0 M436.0,206.0h0 M330.8,206.4h0 M450.2,191.0h0 M261.5,206.9h0 M305.2,228.8h0 M433.6,186.0h0 M382.6,195.1h0 M467.5,229.8h0 M369.4,185.9h0 M284.7,225.1h0 M334.1,215.3h0 M328.1,219.8h0 M336.2,207.8h0 M372.8,228.8h0 M371.4,211.6h0 M324.4,202.2h0 M335.8,193.6h0 M402.2,210.4h0 M278.8,198.4h0 M439.3,190.1h0 M441.4,237.8h0 M358.3,233.3h0 M404.7,237.0h0 M376.5,186.6h0 M338.2,197.1h0 M373.7,221.4h0 M413.9,221.7h0 M285.1,223.5h0 M367.0,236.2h0 M335.6,224.9h0 M442.8,212.6h0 M480.4,220.3h0 M300.5,190.4h0 M256.9,221.5h0 M369.0,235.3h0 M370.4,235.5h0 M407.7,237.2h0 M438.9,217.4h0 M402.3,230.4h0 M299.7,195.2h0 M408.1,192.0h0 M438.1,211.3h0 M272.4,204.6h0 M415.4,233.0h0 M402.4,220.1h0 M446.7,217.7h0 M405.1,231.6h0 M444.3,194.4h0 M299.4,217.1h0 M334.9,209.9h0 M450.2,206.9h0 M296.6,200.2h0 M401.8,202.8h0 M298.1,193.1h0 M435.1,208.2h0 M291.5,197.7h0 M488.8,189.4h0 M336.4,197.6h0 M292.1,192.8h0 M402.1,222.5h0 M340.8,211.5h0 M371.9,217.7h0 M370.4,211.6h0 M348.1,232.8h0 M472.6,235.0h0 M333.8,224.2h0 M431.3,216.9h0 M450.8,214.7h0 M405.2,226.5h0 M448.9,194.4h0 M440.1,211.9h0 M368.3,229.4h0 M329.9,232.0h0 M363.9,192.3h0 M309.9,200.4h0 M372.9,222.4h0 M300.8,222.7h0 M337.5,193.7h0 M340.8,233.8h0 M367.7,237.5h0 M324.2,211.1h0 M335.7,189.9h0 M404.3,217.4h0 M439.3,202.8h0 M418.9,237.9h0 M406.4,216.8h0 M337.7,188.8h0 M370.8,224.5h0 M400.0,192.1h0 M399.9,201.7h0 M338.1,194.7h0 M289.0,233.5h0 M406.6,200.3h0 M337.7,192.7h0 M434.6,222.6h0 M295.0,236.0h0 M304.0,193.5h0 M383.8,207.7h0 M325.4,216.2h0 M303.9,219.1h0 M304.6,216.3h0 M344.2,185.0h0 M374.6,201.7h0 M434.8,222.2h0 M368.9,219.3h0 M305.0,191.9h0 M412.0,227.7h0 M302.5,224.2h0 M380.6,193.2h0 M436.0,217.0h0 M331.5,233.1h0 M290.8,223.5h0 M377.7,231.2h0 M367.0,235.7h0 M466.7,193.3h0 M259.4,189.6h0 M447.1,199.7h0 M361.7,227.3h0 M372.8,203.6h0 M374.7,233.3h0 M223.3,235.5h0 M328.3,217.1h0 M334.7,233.8h0 M324.3,214.2h0 M480.8,195.7h0 M375.7,223.6h0 M334.9,225.6h0 M483.6,225.5h0 M330.2,223.2h0 M331.3,186.7h0 M405.4,215.0h0 M395.3,218.8h0 M363.7,206.4h0 M405.5,221.6h0 M436.5,187.9h0 M299.3,220.1h0 M430.9,189.3h0 M441.2,204.7h0 M445.0,227.3h0 M487.7,208.5h0 M398.4,213.3h0 M324.9,201.3h0 M396.3,228.2h0 M332.5,233.1h0 M437.3,213.0h0 M418.9,220.4h0 M293.5,236.3h0 M363.2,197.3h0 M343.2,202.8h0 M337.6,204.5h0 M301.6,196.6h0 M443.2,238.7h0 M258.5,218.9h0 M358.5,233.6h0 M359.1,190.4h0 M327.8,217.3h0 M301.0,202.0h0 M342.7,196.2h0 M446.3,208.2h0 M397.7,229.9h0 M291.9,222.3h0 M324.8,229.9h0 M370.7,203.4h0 M407.1,211.4h0 M300.8,186.9h0 M430.6,225.1h0 M414.8,222.4h0 M333.2,205.8h0 M409.6,215.6h0 M338.8,232.9h0 M558.6,227.8h0 M407.9,230.4h0 M438.3,186.0h0 M441.3,217.8h0 M376.3,188.9h0 M370.0,223.2h0 M339.7,236.7h0 M370.0,215.8h0 M294.4,193.7h0 M407.0,192.0h0 M337.3,211.1h0 M437.3,209.0h0 M399.2,194.3h0 M291.2,235.2h0 M364.5,211.3h0 M398.9,229.1h0 M438.3,202.2h0 M256.0,185.7h0 M365.5,197.6h0 M331.0,220.9h0 M401.0,202.5h0 M372.5,212.9h0 M408.9,226.5h0 M485.4,224.6h0 M406.2,236.6h0 M402.8,213.6h0 M383.7,215.9h0 M344.2,212.4h0 M372.0,192.9h0 M397.8,220.5h0 M343.9,194.1h0 M336.1,195.4h0 M357.8,236.5h0 M461.9,187.3h0 M343.6,202.8h0 M437.8,201.5h0 M439.8,206.9h0 M477.7,208.7h0 M410.7,221.3h0 M370.6,238.2h0 M426.2,192.0h0 M400.6,221.4h0 M377.6,200.6h0 M413.0,193.7h0 M343.1,197.1h0 M296.1,205.4h0 M268.8,194.1h0 M367.8,215.4h0 M378.0,222.1h0 M428.1,187.3h0 M340.9,211.4h0 M409.2,192.2h0 M362.1,233.6h0 M406.1,188.6h0 M362.3,229.3h0 M409.9,212.0h0 M335.4,199.0h0 M300.5,202.3h0 M334.8,235.5h0 M332.9,214.0h0 M293.2,212.3h0 M367.8,214.9h0 M297.1,225.1h0 M479.3,232.3h0 M287.8,196.9h0 M409.6,239.0h0 M341.1,203.5h0 M468.4,221.1h0 M333.6,216.3h0 M397.2,211.7h0 M335.3,211.7h0 M268.3,219.1h0 M397.5,188.7h0 M369.4,205.6h0 M394.5,219.2h0 M430.3,206.0h0 M234.5,215.3h0 M403.1,231.4h0 M362.9,215.5h0 M332.3,236.0h0 M304.7,218.0h0 M337.1,223.3h0 M338.4,238.9h0 M371.1,201.3h0 M411.9,213.9h0 M397.4,195.6h0 M270.8,236.9h0 M292.2,231.0h0 M341.6,211.3h0 M405.0,226.4h0 M287.0,194.0h0 M339.3,229.8h0 M362.2,223.6h0 M332.0,230.4h0 M292.8,207.6h0 M363.5,196.2h0 M376.7,216.8h0 M402.4,233.0h0 M368.5,234.1h0 M360.6,199.5h0 M332.5,223.1h0 M414.4,196.1h0 M401.0,211.8h0 M471.2,227.0h0 M335.0,204.3h0 M324.8,192.6h0 M470.4,229.2h0 M303.4,202.1h0 M376.4,199.7h0 M302.7,190.6h0 M398.2,235.7h0 M369.9,214.3h0 M443.4,190.4h0 M373.4,215.8h0 M408.9,203.5h0 M372.3,236.8h0 M376.2,208.3h0 M229.3,189.1h0 M333.8,198.4h0 M412.4,219.4h0 M375.5,225.1h0 M380.2,225.9h0 M339.8,207.1h0 M300.8,186.5h0 M227.5,228.6h0 M336.4,206.8h0 M366.6,234.8h0 M342.5,209.7h0 M309.6,206.6h0 M437.4,223.1h0 M375.2,223.5h0 M405.3,194.0h0 M492.9,213.5h0 M400.6,208.8h0 M298.6,208.3h0 M234.0,238.1h0 M401.7,218.2h0 M300.7,211.6h0 M399.4,233.7h0 M403.5,207.3h0 M444.6,208.4h0 M398.5,225.1h0 M404.6,235.7h0 M233.5,219.4h0 M297.4,189.7h0 M364.7,211.3h0 M399.8,187.4h0 M237.3,227.1h0 M415.7,218.2h0 M400.3,215.6h0 M454.7,194.2h0 M367.4,200.6h0 M357.4,206.4h0 M337.6,207.3h0 M305.9,212.6h0 M402.3,186.1h0 M333.9,191.2h0 M341.3,190.0h0 M343.8,195.7h0 M471.7,211.3h0 M410.5,223.3h0 M367.7,237.3h0 M410.3,208.2h0 M303.2,185.9h0 M331.3,210.2h0 M295.6,238.7h0 M296.8,193.2h0 M323.6,236.7h0 M363.0,192.7h0 M385.5,228.8h0 M468.8,230.4h0 M302.6,191.7h0 M412.9,230.3h0 M473.4,207.4h0 M473.4,215.4h0 M264.2,238.3h0 M270.6,205.8h0 M235.2,226.5h0 M439.3,207.1h0 M373.2,222.6h0 M285.3,191.9h0 M398.7,231.3h0 M437.7,219.6h0 M157.7,199.1h0 M330.6,214.2h0 M406.0,186.6h0 M378.9,225.3h0 M337.6,226.0h0 M407.5,236.6h0 M325.4,227.6h0 M411.2,211.2h0 M415.1,228.7h0 M378.3,223.9h0 M375.2,235.8h0 M157.3,216.2h0 M365.8,210.2h0 M374.4,203.5h0 M361.6,227.4h0 M329.7,194.9h0 M441.0,211.4h0 M406.1,218.3h0 M415.6,227.2h0 M416.8,223.7h0 M378.3,216.4h0 M365.3,203.0h0 M396.1,233.2h0 M292.9,216.0h0 M339.7,216.2h0 M449.7,185.0h0 M342.9,213.5h0 M410.0,190.0h0 M362.4,236.9h0 M476.3,210.2h0 M295.7,235.6h0 M358.2,218.9h0 M299.2,238.3h0 M413.3,206.3h0 M334.0,197.7h0 M408.3,231.9h0 M381.4,205.4h0 M441.6,204.3h0 M320.4,195.1h0 M477.0,215.0h0 M372.7,230.4h0 M416.9,187.6h0 M384.8,206.5h0 M400.7,233.8h0 M370.7,212.7h0 M327.2,206.4h0 M302.4,234.7h0 M416.7,204.1h0 M298.4,212.3h0 M413.4,196.8h0 M341.7,220.2h0 M377.8,189.9h0 M304.3,207.9h0 M449.1,190.9h0 M408.1,200.2h0 M440.6,193.7h0 M336.4,206.3h0 M471.0,231.6h0 M367.1,192.1h0 M301.8,230.9h0 M368.7,235.1h0 M364.0,186.5h0 M329.1,203.7h0 M339.0,235.0h0 M397.9,228.9h0 M313.6,205.5h0 M410.3,223.6h0 M369.5,202.4h0 M369.2,226.0h0 M374.9,202.4h0 M431.1,227.9h0 M253.8,220.3h0 M345.8,213.0h0 M410.6,231.2h0 M379.6,198.4h0 M380.7,232.1h0 M466.7,202.1h0 M298.4,227.9h0 M370.5,195.6h0 M474.7,199.2h0 M472.7,218.1h0 M471.1,209.6h0 M479.0,214.6h0 M404.6,188.7h0 M227.4,229.2h0 M361.5,238.6h0 M375.3,188.2h0 M470.0,237.3h0 M408.2,237.4h0 M370.0,230.9h0 M402.5,195.7h0 M378.7,223.6h0 M305.5,187.9h0 M381.9,233.1h0 M446.2,228.7h0 M259.0,194.4h0 M443.9,189.5h0 M335.7,232.6h0 M360.9,232.4h0 M416.9,238.8h0 M297.1,214.1h0 M438.4,211.4h0 M406.5,191.7h0 M308.3,190.5h0 M344.3,216.2h0 M501.5,203.9h0 M409.5,206.6h0 M400.6,216.8h0 M368.0,187.8h0 M468.2,226.1h0 M450.5,190.2h0 M376.6,203.7h0 M265.9,188.5h0 M327.4,195.6h0 M437.5,224.6h0 M336.8,188.9h0 M347.0,201.6h0 M312.7,221.8h0 M378.9,187.8h0 M478.2,213.3h0 M341.9,234.7h0 M265.5,210.9h0 M369.4,208.4h0 M381.5,238.9h0 M263.2,188.5h0 M438.8,211.7h0 M341.8,234.0h0 M395.9,230.3h0 M227.5,219.5h0 M230.0,222.4h0 M382.2,232.6h0 M372.3,223.2h0 M477.5,236.0h0 M304.2,213.7h0 M357.4,235.1h0 M370.3,203.5h0 M438.6,227.3h0 M342.0,214.1h0 M305.3,197.4h0 M296.8,226.7h0 M439.6,210.6h0 M407.3,231.1h0 M440.3,195.6h0 M379.7,203.5h0 M469.1,237.5h0 M336.4,223.2h0 M273.9,236.8h0 M232.3,199.4h0 M299.0,213.9h0 M451.3,223.6h0 M445.8,211.2h0 M339.4,200.7h0 M410.3,233.1h0 M411.4,222.9h0 M504.8,198.4h0 M405.2,221.1h0 M327.3,188.8h0 M339.4,206.3h0 M445.6,235.6h0 M510.8,217.7h0 M443.0,235.9h0 M345.4,207.6h0 M347.0,192.7h0 M267.0,195.5h0 M234.3,185.9h0 M358.0,211.1h0 M430.9,207.5h0 M374.0,222.6h0 M338.2,209.8h0 M320.7,226.7h0 M261.6,225.4h0 M461.0,190.2h0 M300.3,227.3h0 M376.4,189.0h0 M334.2,193.4h0 M405.2,225.4h0 M330.9,188.7h0 M334.5,209.0h0 M236.1,196.9h0 M328.0,203.5h0 M483.5,230.6h0 M364.3,195.2h0 M373.0,188.1h0 M325.8,229.6h0 M407.3,223.0h0 M263.2,235.8h0 M398.1,187.3h0 M222.2,192.7h0 M289.9,197.1h0 M377.3,189.7h0 M407.8,200.9h0 M406.1,229.3h0 M438.5,208.2h0 M410.1,195.1h0 M235.7,220.9h0 M292.7,195.9h0 M341.6,223.9h0 M333.1,238.9h0 M409.7,190.2h0 M400.2,196.9h0 M399.1,208.1h0 M305.9,191.8h0 M394.5,236.0h0 M264.9,200.4h0 M369.3,217.3h0 M394.3,186.5h0 M368.9,196.6h0 M436.3,199.2h0 M331.9,237.1h0 M361.4,188.1h0 M372.6,230.5h0 M375.8,233.8h0 M324.3,186.0h0 M448.0,199.5h0 M264.8,213.0h0 M440.8,201.2h0 M410.6,186.5h0 M320.2,205.6h0 M474.7,220.8h0 M428.6,222.1h0 M435.9,231.2h0 M320.5,222.0h0 M437.4,187.2h0 M256.6,211.7h0 M464.7,198.0h0 M333.5,189.6h0 M342.0,190.7h0 M301.8,221.3h0 M336.4,227.3h0 M335.7,231.3h0 M417.6,224.9h0 M437.2,216.5h0 M365.0,228.0h0 M340.4,189.2h0 M339.2,194.8h0 M339.4,215.9h0 M475.9,196.7h0 M397.4,215.9h0 M392.8,210.5h0 M398.5,213.7h0 M344.1,210.5h0 M367.8,233.6h0 M341.2,199.1h0 M329.1,217.4h0 M368.4,237.4h0 M331.9,218.8h0 M405.0,213.6h0 M331.9,203.1h0 M296.6,186.4h0 M323.0,234.7h0 M403.5,222.5h0 M373.9,200.7h0 M334.5,194.0h0 M357.7,188.2h0 M330.7,192.4h0 M331.9,213.0h0 M398.3,236.0h0 M404.1,212.8h0 M345.6,221.7h0 M338.9,231.3h0 M334.2,185.4h0 M262.2,234.3h0 M231.4,196.2h0 M371.2,233.0h0 M331.5,234.5h0 M362.4,203.8h0 M402.7,187.1h0 M303.6,188.9h0 M410.7,209.6h0 M384.5,201.2h0 M378.0,185.7h0 M369.0,213.4h0 M406.0,186.8h0 M447.5,234.0h0 M335.8,205.6h0 M363.6,192.3h0 M346.3,236.8h0 M323.1,230.3h0 M158.1,196.5h0 M448.9,213.9h0 M363.1,219.7h0 M287.8,193.1h0 M429.6,189.3h0 M408.4,226.4h0 M431.3,207.2h0 M406.2,223.4h0 M508.2,204.2h0 M329.9,187.6h0 M403.7,223.3h0 M400.4,217.5h0 M329.3,233.0h0 M330.5,187.4h0 M297.2,186.8h0 M478.6,223.9h0 M440.1,188.2h0 M328.5,230.3h0 M362.1,209.0h0 M417.7,204.2h0 M373.7,186.1h0 M436.7,195.1h0 M372.5,212.3h0 M340.6,221.2h0 M371.5,203.0h0 M395.1,192.9h0 M255.3,196.5h0 M394.0,218.8h0 M400.6,214.3h0 M409.1,198.3h0 M229.0,233.3h0 M409.6,235.3h0 M363.3,236.2h0 M298.2,234.0h0 M299.6,209.4h0 M365.3,223.3h0 M336.6,202.5h0 M401.8,222.1h0 M472.3,236.2h0 M401.6,207.2h0 M326.2,204.1h0 M476.0,185.2h0 M430.7,193.8h0 M364.1,211.1h0 M373.8,225.9h0 M404.5,223.5h0 M297.9,222.8h0 M374.9,228.6h0 M373.2,189.3h0 M395.8,230.6h0 M345.6,214.8h0 M333.9,231.9h0 M392.1,234.5h0 M338.8,206.8h0 M362.6,214.6h0 M265.5,213.9h0 M336.4,186.4h0 M446.4,225.4h0 M297.7,198.6h0 M346.9,238.4h0 M410.1,235.4h0 M369.2,195.6h0 M432.6,214.9h0 M370.2,198.6h0 M256.7,212.5h0 M467.3,190.9h0 M347.4,225.0h0 M340.2,228.1h0 M381.5,185.9h0 M296.9,209.6h0 M479.6,207.0h0 M414.5,186.0h0 M306.0,224.7h0 M268.3,228.9h0 M437.2,207.6h0 M434.2,226.4h0 M337.0,195.1h0 M446.1,194.6h0 M339.2,206.5h0 M369.0,226.6h0 M443.0,214.8h0 M367.6,216.7h0 M430.3,191.8h0 M254.0,200.8h0 M372.3,205.2h0 M289.7,235.7h0 M434.9,187.0h0 M408.8,186.5h0 M308.3,206.7h0 M440.3,229.3h0 M410.7,204.4h0 M309.6,228.6h0 M373.8,236.5h0 M285.5,200.2h0 M511.3,196.9h0 M405.1,189.2h0 M342.3,227.7h0 M471.0,196.1h0 M306.8,214.6h0 M273.6,223.6h0 M314.2,200.0h0 M409.7,197.0h0 M335.5,191.9h0 M476.7,239.0h0 M437.9,214.8h0 M474.5,189.9h0 M408.2,196.2h0 M371.3,216.2h0 M410.0,226.5h0 M336.2,237.2h0 M408.2,234.3h0 M403.7,238.5h0 M434.4,225.2h0 M368.8,226.3h0 M379.3,208.3h0 M447.3,190.9h0 M410.1,222.5h0 M443.0,233.3h0 M436.1,191.3h0 M411.0,196.4h0 M299.9,233.9h0 M249.5,210.0h0 M329.7,236.2h0 M363.4,211.1h0 M296.1,226.1h0 M433.3,203.5h0 M366.1,194.8h0 M399.2,206.2h0 M324.4,235.8h0 M408.4,194.5h0 M296.5,222.1h0 M378.5,215.0h0 M327.5,218.9h0 M338.3,197.8h0 M439.4,236.2h0 M366.6,216.6h0 M327.5,220.9h0 M337.9,216.1h0 M381.5,194.4h0 M309.4,187.1h0 M239.5,237.4h0 M336.9,225.2h0 M296.3,208.0h0 M429.9,231.6h0 M332.0,207.5h0 M336.4,232.5h0 M367.6,207.3h0 M407.3,216.1h0 M398.7,221.9h0 M295.8,229.6h0 M471.0,217.6h0 M452.6,208.1h0 M408.8,207.3h0 M383.8,231.6h0 M400.7,209.6h0 M231.1,196.1h0 M370.7,194.6h0 M339.4,210.0h0 M367.4,225.5h0 M478.5,229.1h0 M335.4,196.3h0 M304.6,210.7h0 M325.6,204.0h0 M336.9,238.4h0 M359.4,195.9h0 M401.5,207.0h0 M334.0,218.8h0 M365.1,196.1h0 M429.5,208.1h0 M294.4,234.4h0 M475.4,189.5h0 M446.3,236.2h0 M471.7,201.8h0 M291.7,232.1h0 M377.3,226.2h0 M347.1,201.4h0 M380.9,211.5h0 M324.8,198.8h0 M419.6,226.7h0 M304.8,214.4h0 M449.2,202.1h0 M308.5,207.1h0 M309.3,207.8h0 M373.5,235.9h0 M374.3,238.5h0 M308.9,226.9h0 M479.5,199.3h0 M323.7,209.0h0 M411.8,228.9h0 M404.7,202.3h0 M299.5,191.2h0 M377.0,215.3h0 M440.7,193.8h0 M335.9,228.7h0 M380.2,199.9h0 M300.2,197.7h0 M416.8,218.6h0 M441.0,196.8h0 M335.1,209.3h0 M372.3,207.4h0 M400.0,204.6h0 M340.0,226.8h0 M308.4,193.8h0 M370.4,213.0h0 M383.6,238.1h0 M443.1,196.3h0 M439.2,238.4h0 M338.8,209.5h0 M407.3,225.5h0 M398.7,204.3h0 M428.0,208.3h0 M398.9,224.7h0 M454.0,204.7h0 M434.7,201.6h0 M284.9,207.6h0 M391.6,192.8h0 M405.0,237.3h0 M268.6,223.4h0 M402.9,210.1h0 M400.3,203.1h0 M419.4,231.0h0 M474.2,225.3h0 M454.5,215.7h0 M298.3,221.2h0 M302.2,234.3h0 M297.7,193.3h0 M467.0,221.6h0 M299.9,233.3h0 M369.7,221.1h0 M444.4,230.3h0 M469.8,197.3h0 M407.8,228.4h0 M358.7,220.1h0 M292.5,191.4h0 M433.0,224.0h0 M438.4,198.3h0 M328.1,227.1h0 M367.6,193.7h0 M365.8,215.0h0 M447.4,228.6h0 M409.8,196.2h0 M412.2,211.9h0 M160.6,189.1h0 M301.4,188.0h0 M331.3,231.4h0 M291.7,195.2h0 M253.8,215.0h0 M444.0,211.4h0 M328.7,210.8h0 M380.0,190.5h0 M378.5,186.3h0 M413.6,230.0h0 M440.4,225.4h0 M373.1,186.7h0 M436.1,225.9h0 M473.4,207.6h0 M470.1,220.1h0 M484.0,189.8h0 M400.7,204.7h0 M304.8,206.3h0 M371.3,203.6h0 M336.7,221.2h0 M329.4,189.2h0 M339.2,232.9h0 M395.9,209.1h0 M405.4,220.8h0 M433.5,226.7h0 M374.4,236.9h0 M338.4,219.7h0 M295.5,224.5h0 M356.9,227.2h0 M306.0,212.2h0 M471.6,195.7h0 M365.5,233.1h0 M371.6,224.0h0 M304.1,199.4h0 M326.9,185.6h0 M322.1,189.6h0 M291.8,190.9h0 M324.8,192.1h0 M399.8,205.2h0 M366.3,220.7h0 M363.0,193.6h0 M359.4,207.5h0 M300.2,223.8h0 M469.1,228.4h0 M336.1,216.7h0 M326.7,232.6h0 M266.0,220.9h0 M473.4,222.2h0 M336.1,234.8h0 M344.1,207.9h0 M336.1,202.8h0 M336.6,201.9h0 M416.6,199.0h0 M442.0,191.9h0 M379.2,208.0h0 M412.4,202.8h0 M365.1,208.1h0 M263.5,190.6h0 M332.4,233.8h0 M437.6,198.4h0 M268.5,202.0h0 M264.9,192.1h0 M297.7,234.1h0 M265.1,218.7h0 M412.2,194.1h0 M339.4,231.6h0 M445.0,185.3h0 M356.9,221.6h0 M365.4,200.1h0 M406.0,224.0h0 M371.0,212.5h0 M364.5,194.0h0 M405.3,203.6h0 M414.2,228.1h0 M400.3,204.0h0 M284.9,206.2h0 M479.2,224.2h0 M430.9,224.2h0 M435.7,214.9h0 M300.5,205.5h0 M263.6,210.9h0 M400.5,188.5h0 M264.0,233.4h0 M478.8,224.1h0 M401.8,199.8h0 M409.7,225.5h0 M440.8,205.5h0 M259.2,192.6h0 M335.0,235.5h0 M291.5,189.6h0 M393.3,211.4h0 M442.4,235.4h0 M422.4,191.7h0 M487.3,185.7h0 M378.9,214.5h0 M371.9,213.3h0 M417.2,204.6h0 M369.7,191.2h0 M445.5,192.8h0 M344.5,202.9h0 M301.8,200.8h0 M441.5,203.2h0 M304.3,230.9h0 M453.3,189.6h0 M373.6,214.4h0 M363.1,236.6h0 M333.8,236.4h0 M329.8,236.2h0 M288.4,229.5h0 M333.2,197.9h0 M434.4,205.3h0 M371.6,235.4h0 M252.5,222.3h0 M419.3,210.5h0 M373.3,191.4h0 M365.4,229.7h0 M336.7,206.8h0 M582.8,204.5h0 M323.6,205.4h0 M295.6,208.7h0 M432.4,233.7h0 M271.6,223.2h0 M334.2,229.4h0 M358.7,193.7h0 M414.3,217.5h0 M403.2,191.3h0 M430.0,199.8h0 M432.1,195.6h0 M370.9,196.2h0 M406.1,236.7h0 M362.3,233.6h0 M293.7,232.4h0 M381.5,198.9h0 M346.6,222.0h0 M430.2,223.8h0 M308.3,188.9h0 M406.3,195.9h0 M438.7,223.6h0 M449.5,212.7h0 M331.6,203.4h0 M346.2,219.5h0 M293.1,186.0h0 M345.6,186.7h0 M300.5,225.0h0 M404.4,235.6h0 M372.2,197.9h0 M322.5,212.2h0 M379.3,197.1h0 M340.4,199.1h0 M393.0,222.0h0 M447.4,189.3h0 M326.1,235.4h0 M368.1,215.8h0 M224.9,230.6h0 M400.2,221.9h0 M415.2,196.6h0 M269.7,203.5h0 M363.3,194.1h0 M447.2,221.9h0 M396.9,226.5h0 M331.0,202.0h0 M368.5,203.7h0 M436.9,208.9h0 M402.6,212.9h0 M420.5,195.6h0 M399.8,185.2h0 M343.4,192.9h0 M362.8,207.9h0 M338.1,196.1h0 M403.1,216.1h0 M477.1,197.3h0 M409.5,186.1h0 M410.5,229.2h0 M289.8,210.7h0 M339.4,205.5h0 M399.1,193.1h0 M366.7,209.0h0 M444.8,193.1h0 M375.4,185.4h0 M443.5,231.8h0 M473.8,229.0h0 M290.3,222.9h0 M372.5,214.3h0 M403.0,209.7h0 M342.9,218.6h0 M375.4,194.9h0 M361.2,194.1h0 M370.7,213.8h0 M336.6,233.2h0 M404.5,197.2h0 M472.7,219.6h0 M289.1,227.7h0 M296.8,204.3h0 M341.8,226.5h0 M294.8,217.8h0 M449.3,199.6h0 M253.2,238.9h0 M399.6,209.4h0 M302.5,211.9h0 M367.3,229.8h0 M229.6,192.2h0 M254.1,206.6h0 M408.7,212.8h0 M324.4,220.8h0 M339.4,203.5h0 M324.3,223.4h0 M329.9,199.1h0 M389.8,238.7h0 M398.0,226.8h0 M513.2,195.3h0 M300.6,211.4h0 M341.8,188.7h0 M406.0,221.4h0 M336.2,208.2h0 M362.2,226.3h0 M370.6,218.5h0 M444.9,205.1h0 M345.5,202.5h0 M479.4,202.4h0 M379.6,205.9h0 M400.7,191.4h0 M380.5,200.9h0 M399.3,201.8h0 M401.1,192.5h0 M363.2,208.4h0 M291.6,202.7h0 M306.5,231.0h0 M376.4,185.6h0 M375.5,226.0h0 M330.2,214.7h0 M410.3,220.6h0 M268.8,208.5h0 M439.2,199.2h0 M334.9,189.8h0 M374.8,204.9h0 M259.7,233.6h0 M482.4,211.1h0 M416.4,191.5h0 M308.0,237.9h0 M407.3,192.2h0 M485.1,205.3h0 M379.7,227.2h0 M406.9,199.5h0 M402.1,223.1h0 M438.5,187.8h0 M375.4,186.7h0 M331.0,198.8h0 M485.2,216.6h0 M442.7,199.3h0 M374.4,211.0h0 M377.2,236.3h0 M298.9,186.0h0 M364.7,198.1h0 M335.9,227.6h0 M294.7,204.1h0 M412.9,221.3h0 M302.3,200.9h0 M333.3,220.9h0 M374.4,225.1h0 M368.6,229.9h0 M374.3,197.4h0 M277.6,185.0h0 M309.5,204.4h0 M305.3,187.9h0 M335.6,197.0h0 M411.8,222.6h0 M473.8,228.8h0 M327.4,220.9h0 M404.8,219.5h0 M291.4,206.1h0 M380.8,185.6h0 M367.5,204.6h0 M305.5,210.1h0 M332.0,234.7h0 M435.1,224.1h0 M263.4,232.8h0 M440.2,229.5h0 M329.8,208.6h0 M448.1,193.1h0 M442.4,215.2h0 M436.0,195.4h0 M486.5,226.3h0 M429.7,225.8h0 M333.6,210.3h0 M415.8,235.1h0 M312.7,205.2h0 M441.2,207.7h0 M260.7,200.8h0 M367.6,207.1h0 M446.8,206.4h0 M291.0,189.3h0 M231.3,196.1h0 M376.2,193.2h0 M487.1,205.0h0 M331.9,190.4h0 M270.6,231.0h0 M269.8,193.9h0 M306.2,189.2h0 M408.8,190.6h0 M362.7,187.2h0 M335.1,205.9h0 M364.4,238.2h0 M374.5,235.2h0 M334.4,229.2h0 M445.4,232.2h0 M417.5,190.4h0 M373.1,193.3h0 M321.5,222.9h0 M300.0,198.2h0 M363.5,235.1h0 M440.8,206.9h0 M250.9,207.8h0 M412.5,199.7h0 M238.3,215.8h0 M271.5,212.6h0 M295.8,231.3h0 M327.3,206.1h0 M452.3,188.4h0 M401.2,236.2h0 M433.1,223.1h0 M296.1,197.3h0 M325.2,236.8h0 M236.1,213.6h0 M477.2,227.5h0 M335.3,219.1h0 M413.1,199.0h0 M483.4,219.8h0 M413.5,189.7h0 M308.6,210.0h0 M300.3,186.2h0 M447.2,188.4h0 M435.2,236.8h0 M330.1,189.8h0 M367.3,228.0h0 M407.0,216.5h0 M339.8,202.9h0 M474.3,218.6h0 M406.2,214.3h0 M305.7,234.0h0 M374.1,216.0h0 M363.4,238.3h0 M409.7,189.1h0 M372.1,191.3h0 M486.4,221.9h0 M365.2,200.0h0 M400.0,233.5h0 M406.5,202.4h0 M439.0,185.4h0 M373.4,232.3h0 M290.3,189.9h0 M440.2,190.5h0 M378.0,209.0h0 M368.7,206.4h0 M368.3,188.1h0 M479.8,201.4h0 M428.9,228.2h0 M372.1,227.3h0 M441.5,197.3h0 M440.6,199.8h0 M309.8,212.1h0 M303.5,229.5h0 M370.7,200.4h0 M401.6,189.3h0 M344.7,203.4h0 M291.0,227.1h0 M304.4,204.4h0 M336.4,189.4h0 M344.2,233.0h0 M377.3,226.4h0 M416.7,206.5h0 M302.9,231.0h0 M308.2,187.4h0 M371.4,205.1h0 M291.8,202.8h0 M406.4,228.2h0 M485.8,194.2h0 M455.5,215.4h0 M313.8,187.6h0 M330.7,225.3h0 M333.6,190.2h0 M473.9,189.8h0 M407.2,201.1h0 M466.7,204.9h0 M482.3,225.1h0 M323.9,231.4h0 M411.6,219.6h0 M264.8,232.6h0 M403.2,192.3h0 M324.5,197.3h0 M428.0,234.3h0 M403.0,218.6h0 M408.5,231.9h0 M305.5,224.1h0 M260.0,229.2h0 M328.1,227.4h0 M410.4,227.8h0 M379.5,199.8h0 M361.9,185.1h0 M439.6,234.0h0 M365.4,230.9h0 M479.3,228.7h0 M372.6,205.4h0 M335.2,210.5h0 M438.4,236.6h0 M382.3,209.0h0 M394.8,232.6h0 M324.4,225.4h0 M368.1,223.9h0 M330.4,208.1h0 M377.7,212.9h0 M286.6,199.3h0 M266.9,225.0h0 M365.9,211.5h0 M303.5,186.2h0 M440.1,195.7h0 M290.3,199.9h0 M433.2,210.8h0 M369.4,192.6h0 M332.2,196.6h0 M402.2,193.6h0 M359.8,196.9h0 M438.6,203.6h0 M403.7,203.6h0 M307.8,206.4h0 M439.7,221.6h0 M300.6,211.9h0 M268.5,228.3h0 M442.2,216.5h0 M304.8,199.4h0 M345.0,197.2h0 M331.4,206.4h0 M444.7,210.5h0 M439.6,196.3h0 M442.6,211.4h0 M431.3,203.2h0 M332.5,234.0h0 M330.5,198.6h0 M439.6,191.3h0 M369.9,219.6h0 M326.3,205.0h0 M416.1,193.8h0 M443.2,210.3h0 M339.5,200.0h0 M276.6,216.0h0 M373.8,191.7h0 M378.0,194.6h0 M373.9,208.6h0 M319.8,194.6h0 M411.3,209.1h0 M287.6,191.8h0 M472.6,212.0h0 M417.6,222.8h0 M368.8,226.8h0 M320.6,220.8h0 M395.9,200.8h0 M437.7,187.7h0 M341.5,197.7h0 M307.3,237.4h0 M288.1,196.1h0 M360.8,197.8h0 M402.8,189.3h0 M407.0,212.0h0 M409.7,211.5h0 M238.5,209.8h0 M346.9,188.8h0 M330.7,198.3h0 M298.4,220.2h0 M371.9,191.3h0 M373.3,221.8h0 M406.2,198.6h0 M301.8,236.9h0 M397.6,225.5h0 M365.9,190.5h0 M370.2,203.8h0 M337.4,229.2h0 M336.3,216.5h0 M433.8,206.2h0 M449.3,218.3h0 M355.7,226.1h0 M312.9,218.8h0 M331.4,224.6h0 M476.8,235.7h0 M391.7,231.0h0 M366.5,232.8h0 M269.8,238.9h0 M363.6,235.1h0 M439.4,226.0h0 M337.3,230.6h0 M324.4,220.4h0 M443.0,230.3h0 M339.9,197.9h0 M366.4,214.7h0 M302.3,222.0h0 M335.5,202.3h0 M342.0,233.6h0 M576.6,194.5h0 M364.8,202.0h0 M329.8,212.5h0 M399.6,226.8h0 M455.1,218.2h0 M372.5,217.1h0 M306.4,210.5h0 M439.9,234.1h0 M300.4,204.6h0 M327.9,202.4h0 M439.1,219.1h0 M396.9,199.6h0 M367.5,233.4h0 M376.7,225.3h0 M264.4,235.9h0 M434.2,207.0h0 M266.7,196.3h0 M375.5,213.7h0 M431.7,228.5h0 M444.0,222.9h0 M367.1,231.1h0 M360.7,235.3h0 M338.6,208.1h0 M304.4,211.5h0 M474.9,189.2h0 M448.8,237.1h0 M294.4,201.3h0 M370.7,235.4h0 M367.2,188.4h0 M407.7,224.4h0 M405.2,212.1h0 M270.2,196.3h0 M371.9,206.1h0 M288.6,227.5h0 M476.0,217.2h0 M260.9,214.9h0 M257.1,218.7h0 M358.8,199.3h0 M436.4,235.6h0 M346.8,224.0h0 M301.0,195.3h0 M331.9,215.7h0 M378.9,236.9h0 M396.2,236.6h0 M396.6,211.8h0 M398.6,187.4h0 M326.7,225.0h0 M378.3,195.9h0 M255.2,211.2h0 M472.5,186.3h0 M253.0,207.3h0 M462.2,199.5h0 M452.4,203.8h0 M364.5,227.4h0 M265.3,238.0h0 M296.4,201.5h0 M401.3,195.4h0 M293.8,234.9h0 M370.9,196.5h0 M262.8,195.5h0 M336.4,196.2h0 M378.7,188.2h0 M343.7,204.8h0 M375.0,234.0h0 M361.6,221.5h0 M404.4,201.1h0 M478.7,192.6h0 M383.3,204.6h0 M327.3,197.1h0 M364.7,196.9h0 M399.6,237.0h0 M311.4,234.2h0 M366.4,218.6h0 M364.3,189.5h0 M298.2,191.4h0 M369.7,209.7h0 M307.7,224.7h0 M334.1,214.2h0 M449.8,218.3h0 M372.5,188.3h0 M395.1,217.4h0 M263.4,208.5h0 M335.7,232.9h0 M157.1,235.4h0 M407.8,205.7h0 M363.6,186.0h0 M378.2,198.5h0 M408.9,205.7h0 M364.8,215.1h0 M580.0,237.0h0 M364.0,218.9h0 M474.6,214.9h0 M402.6,221.4h0 M305.1,226.1h0 M403.5,234.8h0 M360.4,236.9h0 M412.4,230.2h0 M360.3,186.2h0 M479.9,197.3h0 M333.6,211.8h0 M539.3,230.2h0 M405.2,233.7h0 M414.9,208.2h0 M343.7,234.4h0 M305.5,221.0h0 M294.5,191.9h0 M255.8,194.2h0 M297.4,219.1h0 M406.2,235.2h0 M379.5,231.6h0 M322.6,188.6h0 M258.8,199.0h0 M332.0,217.9h0 M484.6,220.0h0 M431.1,190.7h0 M364.8,226.9h0 M330.3,187.8h0 M331.3,214.3h0 M263.5,204.1h0 M361.2,212.4h0 M267.0,191.0h0 M357.0,205.4h0 M398.3,209.7h0 M377.3,220.9h0 M299.7,237.2h0 M356.9,235.5h0 M335.5,226.1h0 M253.5,229.4h0 M304.3,206.0h0 M329.0,191.2h0 M336.3,209.5h0 M407.4,231.6h0 M297.1,222.1h0 M435.1,201.6h0 M403.4,212.6h0 M452.2,235.6h0 M287.4,213.7h0 M444.4,214.6h0 M463.4,201.2h0 M400.8,214.4h0 M366.9,196.6h0 M405.5,229.0h0 M217.9,218.2h0 M428.0,219.7h0 M344.5,195.1h0 M441.7,190.6h0 M322.8,198.9h0 M433.0,212.4h0 M480.1,220.0h0 M323.4,219.4h0 M345.4,193.9h0 M412.3,234.3h0 M366.1,205.2h0 M322.9,185.5h0 M322.5,231.5h0 M406.3,188.3h0 M291.2,203.1h0 M429.6,189.5h0 M405.1,225.9h0 M404.0,203.6h0 M407.4,216.4h0 M372.9,193.7h0 M366.3,202.8h0 M444.2,234.0h0 M370.4,230.5h0 M440.9,230.0h0 M439.7,226.4h0 M378.8,233.2h0 M337.3,197.8h0 M378.2,226.1h0 M366.1,236.0h0 M268.8,198.8h0 M373.9,219.0h0 M333.6,212.0h0 M262.7,212.3h0 M394.7,216.8h0 M334.7,198.1h0 M373.8,220.1h0 M404.3,233.4h0 M406.2,187.3h0 M365.9,199.0h0 M333.3,208.6h0 M326.2,201.6h0 M486.6,202.5h0 M416.6,230.0h0 M333.1,192.1h0 M396.7,232.9h0 M294.7,204.5h0 M410.7,202.4h0 M327.1,196.4h0 M449.8,202.5h0 M295.4,192.1h0 M334.7,229.1h0 M356.1,227.6h0 M290.7,232.1h0 M301.1,213.5h0 M275.6,232.5h0 M362.5,190.6h0 M471.6,233.0h0 M446.6,237.4h0 M392.9,230.4h0 M342.8,220.3h0 M228.6,209.6h0 M409.6,238.6h0 M405.2,205.9h0 M409.9,231.9h0 M366.8,201.5h0 M432.3,199.5h0 M401.3,235.7h0 M332.1,233.3h0 M293.3,235.5h0 M442.1,218.3h0 M297.7,219.0h0 M436.8,231.6h0 M261.4,191.2h0 M410.1,202.2h0 M343.2,234.0h0 M357.3,202.7h0 M343.7,204.4h0 M293.9,202.3h0 M372.0,220.4h0 M472.7,193.5h0 M326.4,218.3h0 M285.5,205.2h0 M374.6,208.8h0 M381.3,220.8h0 M262.4,202.8h0 M309.8,222.0h0 M226.4,197.1h0 M327.9,238.2h0 M411.0,212.8h0 M405.9,188.3h0 M284.9,222.2h0 M441.7,195.0h0 M322.3,200.3h0 M478.3,236.7h0 M359.6,206.1h0 M435.4,189.4h0 M482.8,237.0h0 M363.0,233.9h0 M401.0,232.0h0 M338.0,201.1h0 M271.3,192.6h0 M303.8,226.2h0 M333.0,196.4h0 M261.6,187.4h0 M295.9,219.6h0 M368.8,208.9h0 M359.9,193.5h0 M407.5,213.2h0 M475.5,219.0h0 M371.8,207.4h0 M384.3,235.2h0 M300.3,192.0h0 M397.4,204.9h0 M341.4,228.8h0 M402.1,223.1h0 M335.9,219.5h0 M392.9,217.4h0 M428.2,217.2h0 M335.0,234.5h0 M335.4,194.2h0 M446.7,213.6h0 M397.0,228.4h0 M369.4,219.7h0 M368.0,227.3h0 M377.8,223.7h0 M400.9,186.0h0 M372.4,193.1h0 M415.3,185.3h0 M326.5,203.9h0 M445.5,208.4h0 M382.2,221.3h0 M360.7,226.8h0 M369.4,221.6h0 M302.6,215.5h0 M395.3,207.0h0 M442.3,214.7h0 M374.5,230.1h0 M368.2,189.4h0 M408.7,227.7h0 M406.7,206.3h0 M405.3,213.5h0 M303.9,200.1h0 M358.6,212.7h0 M294.9,228.1h0 M480.4,224.7h0 M366.8,229.5h0 M338.0,220.0h0 M483.1,195.2h0 M294.7,201.6h0 M365.7,214.8h0 M336.4,192.9h0 M330.8,212.8h0 M268.7,238.0h0 M298.1,204.8h0 M360.5,224.6h0 M369.5,190.6h0 M289.9,191.7h0 M359.3,212.2h0 M296.3,196.3h0 M444.5,230.6h0 M437.8,209.9h0 M296.9,232.2h0 M375.4,227.7h0 M309.1,213.9h0 M518.5,211.3h0 M368.1,205.9h0 M363.1,218.0h0 M330.9,234.1h0 M330.9,192.5h0 M429.7,231.1h0 M438.8,197.6h0 M365.5,232.3h0 M572.4,233.4h0 M402.5,226.7h0 M396.9,195.7h0 M309.3,198.7h0 M358.6,228.4h0 M290.7,207.8h0 M305.1,208.5h0 M310.3,231.1h0 M377.9,219.3h0 M367.9,202.2h0 M439.8,198.1h0 M266.9,228.6h0 M478.6,197.7h0 M450.7,220.6h0 M402.8,224.4h0 M362.0,203.3h0 M414.7,222.0h0 M378.2,195.2h0 M359.3,233.1h0 M331.7,193.8h0 M484.5,190.4h0 M374.8,190.3h0 M447.9,230.4h0 M267.5,188.4h0 M297.5,195.4h0 M330.0,223.0h0 M234.5,221.4h0 M450.9,203.6h0 M398.8,188.0h0 M479.0,193.1h0 M505.5,200.6h0 M437.9,191.3h0 M481.7,205.0h0 M343.4,228.7h0 M440.7,195.0h0 M512.4,209.3h0 M397.9,209.2h0 M344.9,186.9h0 M339.6,199.3h0 M473.8,190.9h0 M329.7,192.6h0 M341.2,204.7h0 M363.5,234.7h0 M333.4,185.6h0 M507.7,211.9h0 M330.2,217.7h0 M499.6,190.0h0 M369.0,216.5h0 M308.2,203.4h0 M370.1,237.1h0 M486.0,190.0h0 M373.6,188.7h0 M253.5,210.7h0 M331.0,193.7h0 M370.7,189.0h0 M508.4,208.6h0 M334.3,189.5h0 M330.7,227.8h0 M327.2,236.0h0 M407.9,201.0h0 M358.8,219.8h0 M404.4,201.7h0 M260.4,238.8h0 M285.5,227.1h0 M404.3,227.0h0 M298.8,212.9h0 M354.1,216.1h0 M298.1,185.1h0 M331.6,194.3h0 M370.0,222.8h0 M372.2,221.2h0 M414.2,209.2h0 M411.1,214.0h0 M519.8,199.9h0 M436.9,203.7h0 M471.1,207.3h0 M407.9,195.1h0 M321.9,208.6h0 M438.8,233.7h0 M374.6,224.6h0 M401.2,198.3h0 M438.5,192.0h0 M329.6,191.1h0 M373.5,197.7h0 M322.3,226.3h0 M435.7,211.2h0 M295.5,191.3h0 M452.5,207.1h0 M371.7,225.7h0 M443.9,188.3h0 M438.0,188.6h0 M345.2,226.6h0 M268.2,235.2h0 M406.8,210.9h0 M330.1,205.9h0 M347.7,206.9h0 M338.9,232.1h0 M306.0,230.7h0 M404.5,215.1h0 M437.8,189.0h0 M292.7,193.6h0 M311.5,223.0h0 M365.3,189.5h0 M464.1,198.6h0 M373.5,207.0h0 M296.1,205.0h0 M400.3,219.2h0 M328.4,207.9h0 M444.6,185.2h0 M404.3,189.2h0 M264.9,195.6h0 M342.0,199.7h0 M233.2,196.8h0 M337.9,201.0h0 M401.2,231.5h0 M339.7,189.0h0 M412.5,233.3h0 M260.4,217.7h0 M334.4,195.6h0 M362.1,198.7h0 M287.7,217.0h0 M225.0,232.8h0 M400.5,222.7h0 M322.2,221.2h0 M393.4,207.6h0 M447.8,234.1h0 M378.8,199.2h0 M361.8,222.0h0 M339.9,191.0h0 M372.0,196.9h0 M267.0,211.5h0 M411.7,237.5h0 M479.5,217.8h0 M367.6,221.2h0 M446.4,224.1h0 M405.4,187.5h0 M327.8,211.5h0 M265.8,218.5h0 M397.7,229.6h0 M505.4,223.6h0 M437.6,209.3h0 M395.1,217.3h0 M371.3,218.7h0 M249.7,188.5h0 M409.9,238.1h0 M471.5,201.9h0 M402.4,190.8h0 M342.2,233.1h0 M260.6,188.9h0 M337.4,187.4h0 M295.3,222.8h0 M302.9,226.1h0 M336.8,200.9h0 M277.2,228.0h0 M444.2,226.6h0 M372.2,216.2h0 M466.7,225.2h0 M449.3,232.4h0 M334.9,228.1h0 M333.9,223.2h0 M401.3,200.2h0 M397.4,204.9h0 M330.8,201.6h0 M369.2,228.7h0 M291.2,237.1h0 M385.6,214.8h0 M394.7,197.6h0 M383.7,205.1h0 M312.5,235.4h0 M372.3,185.7h0 M437.8,215.3h0 M402.2,222.9h0 M367.2,191.6h0 M501.3,238.5h0 M330.7,225.4h0 M435.4,213.3h0 M232.7,234.4h0 M412.5,196.6h0 M469.1,213.8h0 M303.1,216.8h0 M365.6,231.7h0 M380.3,206.3h0 M404.7,212.6h0 M402.4,185.6h0 M477.5,196.9h0 M369.5,208.3h0 M373.7,227.4h0 M344.1,220.9h0 M377.8,212.2h0 M446.2,218.0h0 M407.5,231.9h0 M358.5,233.7h0 M482.0,209.4h0 M375.3,202.6h0 M361.3,200.9h0 M440.5,230.2h0 M342.4,207.6h0 M340.5,195.0h0 M475.3,237.8h0 M363.0,229.0h0 M375.4,202.9h0 M396.3,205.7h0 M341.8,237.4h0 M263.3,202.9h0 M367.6,209.6h0 M331.5,191.5h0 M477.1,222.3h0 M437.0,219.5h0 M336.4,231.6h0 M401.1,237.5h0 M435.5,208.7h0 M334.9,202.0h0 M299.3,196.6h0 M446.6,196.5h0 M363.0,230.9h0 M334.0,228.6h0 M398.9,221.6h0 M467.6,191.9h0 M260.0,212.5h0 M401.4,235.2h0 M410.3,211.3h0 M367.2,212.5h0 M361.6,210.5h0 M332.1,228.4h0 M407.3,206.4h0 M373.2,188.4h0 M365.0,231.9h0 M481.3,225.3h0 M337.1,196.3h0 M397.1,194.2h0 M341.6,224.5h0 M377.3,199.3h0 M370.4,232.1h0 M366.8,201.1h0 M445.0,236.5h0 M333.2,204.8h0 M363.3,229.2h0 M434.4,226.8h0 M291.9,186.4h0 M333.4,188.0h0 M343.5,192.4h0 M364.4,236.0h0 M363.3,197.1h0 M500.1,195.1h0 M342.2,194.9h0 M326.4,235.8h0 M375.8,234.2h0 M407.8,228.2h0 M342.1,209.4h0 M341.4,224.5h0 M469.9,218.9h0 M343.5,237.0h0 M331.3,217.5h0 M410.8,208.6h0 M406.5,233.7h0 M504.0,202.6h0 M365.8,201.9h0 M337.5,228.7h0 M438.3,199.4h0 M327.5,198.5h0 M399.8,208.4h0 M326.5,200.8h0 M409.5,229.9h0 M444.2,193.0h0 M340.0,208.2h0 M402.8,217.1h0 M397.3,214.5h0 M253.4,202.8h0 M436.1,237.3h0 M299.4,192.0h0 M297.0,195.6h0 M367.4,228.7h0 M294.9,187.7h0 M403.3,230.8h0 M260.7,190.1h0 M265.0,215.5h0 M291.8,232.9h0 M370.5,188.0h0 M476.9,229.0h0 M323.7,193.1h0 M371.2,204.8h0 M308.5,194.9h0 M392.5,193.1h0 M331.6,218.9h0 M302.4,203.8h0 M479.0,222.9h0 M361.5,226.6h0 M406.8,194.0h0 M375.1,206.0h0 M441.3,237.7h0 M328.6,204.4h0 M371.7,212.7h0 M405.1,226.2h0 M377.3,211.7h0 M330.8,202.5h0 M269.1,233.2h0 M359.6,185.5h0 M410.8,205.0h0 M361.6,227.1h0 M300.7,231.3h0 M375.8,214.0h0 M517.2,188.6h0 M290.1,239.0h0 M440.6,237.6h0 M309.4,205.5h0 M293.2,206.2h0 M293.0,201.8h0 M444.3,203.2h0 M446.3,229.2h0 M294.9,185.1h0 M337.6,192.3h0 M406.6,219.9h0 M339.8,216.4h0 M373.4,206.1h0 M336.7,221.5h0 M337.4,195.0h0 M364.0,214.7h0 M309.9,226.2h0 M474.9,221.9h0 M441.2,234.2h0 M365.7,234.0h0 M370.8,232.5h0 M371.4,203.5h0 M437.7,212.8h0 M360.5,199.7h0 M296.0,197.8h0 M287.2,236.5h0 M297.3,188.8h0 M341.6,195.5h0 M411.0,213.0h0 M369.5,228.1h0 M504.9,185.9h0 M472.1,200.0h0 M225.7,212.5h0 M340.9,214.7h0 M336.7,233.8h0 M404.2,234.4h0 M444.1,219.9h0 M403.4,186.7h0 M367.8,226.6h0 M341.8,233.2h0 M403.1,204.8h0 M436.8,232.0h0 M403.9,231.4h0 M292.5,221.8h0 M337.0,206.2h0 M373.7,216.9h0 M375.1,232.5h0 M340.6,190.7h0 M405.9,228.8h0 M431.8,216.3h0 M336.1,238.9h0 M371.8,229.5h0 M368.1,194.9h0 M372.7,238.3h0 M375.4,187.3h0 M436.1,217.2h0 M356.6,194.4h0 M292.2,232.0h0 M357.7,222.3h0 M365.9,212.9h0 M410.5,198.4h0 M326.2,185.6h0 M337.2,186.2h0 M479.1,209.6h0 M374.5,215.9h0 M305.6,211.4h0 M325.3,211.9h0 M445.6,229.8h0 M359.4,224.2h0 M372.2,221.1h0 M307.9,226.0h0 M337.6,207.4h0 M275.5,232.8h0 M363.6,235.7h0 M338.8,197.6h0 M403.9,238.9h0 M447.8,198.4h0 M415.3,238.2h0 M437.6,196.0h0 M454.5,233.1h0 M441.0,207.1h0 M404.0,227.8h0 M331.8,224.0h0 M300.1,197.2h0 M438.1,214.2h0 M410.9,227.1h0 M365.2,210.4h0 M379.4,197.0h0 M435.5,227.8h0 M392.0,232.0h0 M333.6,213.8h0 M408.2,209.1h0 M287.0,202.3h0 M408.6,225.9h0 M443.0,191.7h0 M407.9,194.1h0 M410.4,201.0h0 M377.6,210.3h0 M222.5,224.8h0 M293.2,196.3h0 M368.9,187.1h0 M365.3,216.4h0 M403.6,199.5h0 M414.7,201.8h0 M369.4,231.5h0 M156.8,217.4h0 M409.8,206.3h0 M328.7,209.5h0 M364.6,218.1h0 M368.9,201.7h0 M477.6,229.9h0 M410.3,190.8h0 M447.6,205.7h0 M409.3,186.3h0 M289.5,192.0h0 M273.4,195.9h0 M364.9,191.0h0 M292.3,205.0h0 M399.4,185.4h0 M261.7,236.2h0 M370.0,220.0h0 M330.5,210.4h0 M416.5,228.3h0 M407.5,192.9h0 M331.2,215.9h0 M449.2,223.0h0 M368.0,202.7h0 M235.5,185.4h0 M365.3,209.3h0 M332.0,194.9h0 M410.4,192.7h0 M349.3,212.5h0 M326.2,228.3h0 M301.3,188.4h0 M397.6,185.2h0 M441.7,210.6h0 M328.1,235.5h0 M471.4,206.3h0 M365.8,190.7h0 M295.9,212.7h0 M376.5,228.4h0 M286.6,190.3h0 M299.5,216.7h0 M370.2,236.9h0 M405.4,201.9h0 M409.3,188.0h0 M364.2,228.9h0 M297.5,200.8h0 M522.7,226.0h0 M333.6,212.1h0 M333.6,202.2h0 M333.1,226.6h0 M375.7,217.6h0 M379.1,186.9h0 M372.8,220.4h0 M379.9,194.6h0 M335.7,203.7h0 M325.8,222.2h0 M337.4,205.5h0 M404.0,223.8h0 M463.3,216.4h0 M364.9,202.1h0 M379.5,227.9h0 M331.2,186.1h0 M479.0,219.8h0 M432.4,215.6h0 M357.0,205.6h0 M360.8,207.9h0 M449.4,191.6h0 M400.2,191.9h0 M402.8,215.4h0 M414.7,222.4h0 M340.3,190.9h0 M322.2,230.1h0 M340.9,195.6h0 M399.6,199.3h0 M324.3,218.8h0 M413.1,224.0h0 M328.7,203.2h0 M409.3,224.1h0 M306.9,194.4h0 M516.7,221.9h0 M403.2,194.4h0 M445.0,205.2h0 M332.1,216.3h0 M432.1,192.3h0 M301.1,202.6h0 M374.3,185.4h0 M443.4,225.8h0 M400.3,197.4h0 M370.7,208.5h0 M302.8,206.2h0 M333.6,199.8h0 M293.2,193.4h0 M366.6,208.8h0 M403.7,216.9h0 M432.7,200.6h0 M296.4,192.1h0 M309.0,212.6h0 M368.4,219.3h0 M322.5,223.3h0 M504.6,185.3h0 M404.9,198.2h0 M344.5,222.1h0 M341.6,238.7h0 M434.8,225.0h0 M377.1,193.4h0 M453.0,185.2h0 M368.3,226.0h0 M341.8,233.2h0 M472.4,233.6h0 M401.7,188.3h0 M399.1,201.5h0 M369.6,199.3h0 M302.3,209.1h0 M233.2,232.2h0 M299.7,207.0h0 M407.5,238.7h0 M305.0,234.2h0 M368.3,228.5h0 M375.1,205.9h0 M330.6,225.4h0 M338.8,210.2h0 M408.5,218.2h0 M367.3,217.9h0 M374.4,238.8h0 M441.5,202.0h0 M413.0,221.8h0 M408.0,191.8h0 M304.1,199.0h0 M370.7,195.6h0 M306.7,230.9h0 M377.4,231.7h0 M296.5,235.4h0 M378.0,201.0h0 M409.3,204.3h0 M256.9,210.2h0 M361.9,199.7h0 M371.1,204.4h0 M308.9,224.5h0 M431.9,229.2h0 M281.7,192.3h0 M329.6,210.9h0 M305.9,223.6h0 M437.6,216.8h0 M364.5,188.0h0 M399.2,197.3h0 M400.0,209.7h0 M408.8,224.0h0 M296.7,214.2h0 M467.5,193.7h0 M390.4,203.7h0 M256.0,202.6h0 M328.8,228.9h0 M363.0,199.2h0 M324.8,219.5h0 M326.4,204.5h0 M361.1,196.9h0 M369.4,236.3h0 M371.0,194.6h0 M409.9,210.6h0 M361.8,218.4h0 M409.7,216.7h0 M358.7,207.6h0 M412.7,191.3h0 M306.5,206.6h0 M270.5,194.3h0 M257.5,193.0h0 M411.8,219.5h0 M336.0,200.0h0 M371.5,238.2h0 M471.8,216.3h0 M397.4,238.5h0 M368.2,188.5h0 M301.0,199.6h0 M364.8,186.4h0 M469.2,226.5h0 M432.1,221.8h0 M372.9,221.1h0 M323.5,206.4h0 M400.9,236.5h0 M372.1,227.6h0 M332.0,210.0h0 M394.9,225.4h0 M328.0,223.6h0 M266.1,225.0h0 M371.6,232.6h0 M373.3,219.2h0 M420.0,226.0h0 M411.4,221.0h0 M404.6,217.2h0 M330.0,235.5h0 M426.4,225.4h0 M436.2,197.0h0 M402.6,205.2h0 M451.3,185.1h0 M297.4,208.0h0 M403.7,198.4h0 M361.4,207.5h0 M410.5,196.0h0 M327.9,238.6h0 M336.1,189.9h0 M363.6,229.8h0 M375.0,232.7h0 M305.5,229.8h0 M397.8,216.3h0 M371.6,234.5h0 M305.6,217.6h0 M375.0,232.1h0 M399.6,187.6h0 M409.0,192.6h0 M371.9,194.4h0 M407.4,228.3h0 M370.4,189.9h0 M300.1,191.3h0 M362.8,222.2h0 M266.3,218.2h0 M471.6,197.7h0 M364.3,221.0h0 M297.1,218.5h0 M338.5,212.4h0 M401.8,231.5h0 M398.5,236.9h0 M407.3,227.0h0 M370.2,210.2h0 M374.0,193.3h0 M269.2,193.7h0 M397.3,211.6h0 M263.7,218.0h0 M411.9,194.1h0 M432.8,230.2h0 M286.1,229.2h0 M159.4,204.4h0 M333.6,208.3h0 M441.5,212.1h0 M429.9,210.3h0 M413.5,214.8h0 M376.8,219.5h0 M293.5,213.4h0 M338.8,210.8h0 M409.2,194.6h0 M265.4,186.3h0 M309.0,233.5h0 M340.2,234.7h0 M374.3,231.6h0 M295.8,195.6h0 M346.0,193.2h0 M375.6,206.5h0 M343.0,194.1h0 M295.7,200.6h0 M307.2,211.7h0 M405.2,203.9h0 M327.6,199.6h0 M395.6,190.7h0 M363.2,185.6h0 M274.6,197.4h0 M334.5,206.7h0 M334.9,185.4h0 M469.4,193.4h0 M403.0,232.2h0 M403.5,185.5h0 M297.2,227.0h0 M339.4,198.7h0 M294.8,207.0h0 M298.3,225.1h0 M378.8,199.7h0 M404.1,192.4h0 M404.0,202.9h0 M443.2,224.9h0 M221.9,212.6h0 M405.7,201.5h0 M446.7,212.9h0 M395.0,238.5h0 M292.2,198.7h0 M397.2,188.5h0 M371.5,214.0h0 M405.1,188.6h0 M396.5,207.1h0 M414.6,191.0h0 M404.3,199.2h0 M518.8,230.2h0 M365.7,229.4h0 M326.9,197.1h0 M326.6,194.4h0 M447.4,216.2h0 M401.5,191.9h0 M438.0,189.6h0 M366.4,197.4h0 M372.2,198.6h0 M311.9,200.9h0 M300.3,210.4h0 M366.6,196.3h0 M286.8,225.5h0 M409.0,187.5h0 M407.4,185.5h0 M447.4,187.6h0 M435.2,219.7h0 M333.6,187.0h0 M441.0,219.4h0 M364.1,227.7h0 M301.8,189.4h0 M304.6,187.5h0 M432.1,216.2h0 M447.1,230.4h0 M238.9,219.7h0 M397.1,235.3h0 M415.0,198.4h0 M397.9,190.7h0 M335.9,192.3h0 M332.8,214.0h0 M343.5,187.9h0 M410.9,209.8h0 M370.7,188.3h0 M441.3,213.8h0 M433.2,212.6h0 M433.6,213.5h0 M333.5,208.1h0 M232.1,229.7h0 M468.8,214.7h0 M434.7,199.8h0 M441.7,219.1h0 M407.9,214.6h0 M434.5,219.4h0 M516.9,220.9h0 M432.2,236.4h0 M367.8,230.8h0 M302.5,203.9h0 M365.3,213.9h0 M334.3,210.5h0 M342.3,220.9h0 M399.8,201.3h0 M331.7,205.5h0 M369.9,229.7h0 M300.8,236.3h0 M415.8,214.7h0 M360.2,215.3h0 M450.2,224.1h0 M366.0,200.7h0 M338.2,185.4h0 M358.1,234.2h0 M446.7,234.1h0 M344.8,205.4h0 M321.1,185.8h0 M366.6,232.9h0 M344.9,188.4h0 M293.5,223.6h0 M334.6,204.6h0 M394.1,191.8h0 M411.8,213.3h0 M447.8,220.6h0 M266.0,218.1h0 M397.5,207.4h0 M305.6,199.4h0 M405.0,217.1h0 M337.9,225.7h0 M331.9,200.5h0 M484.7,219.5h0 M417.3,237.2h0 M372.0,195.3h0 M293.3,197.6h0 M486.0,206.4h0 M377.2,213.6h0 M333.8,200.1h0 M294.8,229.6h0 M476.8,206.9h0 M332.3,230.0h0 M420.2,202.7h0 M360.3,238.2h0 M340.9,226.9h0 M339.5,229.7h0 M374.9,190.4h0 M379.5,197.1h0 M435.5,228.3h0 M374.3,239.0h0 M396.1,207.0h0 M340.3,214.6h0 M332.3,212.8h0 M330.4,207.1h0 M300.1,236.4h0 M336.2,205.8h0 M314.5,186.1h0 M255.2,210.8h0 M304.1,214.0h0 M372.4,231.6h0 M372.8,224.1h0 M400.7,237.8h0 M372.8,224.2h0 M430.2,191.1h0 M411.3,209.1h0 M372.9,224.5h0 M325.2,211.3h0 M487.1,188.6h0 M238.2,232.6h0 M369.6,223.6h0 M395.0,189.6h0 M288.9,235.1h0 M335.8,186.7h0 M307.7,193.8h0 M479.2,225.0h0 M399.6,202.4h0 M379.7,193.0h0 M334.3,217.5h0 M444.4,204.2h0 M334.0,197.2h0 M446.5,225.5h0 M267.0,230.5h0 M291.9,213.4h0 M335.1,229.2h0 M238.1,228.0h0 M431.9,205.1h0 M329.2,195.6h0 M508.1,237.6h0 M446.0,198.5h0 M341.3,202.1h0 M356.2,226.5h0 M328.2,205.3h0 M373.0,224.7h0 M406.3,211.1h0 M418.4,187.4h0 M338.6,194.1h0 M265.6,222.7h0 M369.0,196.6h0 M373.7,214.9h0 M399.9,210.1h0 M303.8,195.9h0 M366.2,238.3h0 M231.4,185.9h0 M441.5,195.6h0 M314.7,197.3h0 M338.4,226.4h0 M437.2,195.2h0 M261.1,223.2h0 M270.4,209.2h0 M413.1,216.5h0 M339.5,215.9h0 M372.2,214.2h0 M310.2,226.3h0 M356.4,210.3h0 M440.6,219.5h0 M271.6,228.5h0 M364.5,231.3h0 M516.0,185.7h0 M513.7,207.9h0 M292.7,197.2h0 M451.0,210.6h0 M477.3,229.5h0 M374.2,187.6h0 M341.2,213.1h0 M360.9,219.9h0 M335.5,214.9h0 M433.3,195.3h0 M429.9,234.6h0 M335.2,217.7h0 M300.6,191.1h0 M381.2,236.2h0 M340.8,196.9h0 M474.2,236.1h0 M479.0,228.7h0 M395.1,203.3h0 M441.8,232.6h0 M371.5,187.9h0 M371.2,222.1h0 M294.0,203.0h0 M300.3,237.4h0 M371.4,193.4h0 M364.5,230.8h0 M411.4,225.9h0 M434.4,204.3h0 M431.9,231.6h0 M409.3,233.6h0 M432.1,225.8h0 M380.3,215.9h0 M472.4,190.4h0 M432.2,210.3h0 M378.0,192.6h0 M374.5,228.4h0 M371.1,215.4h0 M297.9,229.5h0 M337.5,213.1h0 M343.3,232.2h0 M330.8,214.3h0 M407.2,227.2h0 M343.5,217.3h0 M469.1,226.5h0 M361.0,237.6h0 M336.3,237.8h0 M411.3,228.3h0 M452.6,191.9h0 M396.1,214.6h0 M470.4,238.5h0 M298.2,233.0h0 M409.7,232.6h0 M443.8,199.7h0 M448.5,233.1h0 M474.1,192.7h0 M373.9,238.8h0 M438.4,225.5h0 M326.5,217.8h0 M293.4,203.0h0 M338.5,225.4h0 M300.3,222.9h0 M410.9,203.6h0 M363.8,204.1h0 M326.2,222.5h0 M481.3,228.0h0 M373.3,225.1h0 M432.9,190.8h0 M219.4,223.7h0 M368.1,217.3h0 M399.4,204.1h0 M379.0,187.5h0 M401.3,191.6h0 M397.8,203.0h0 M482.5,204.0h0 M440.3,192.2h0 M256.1,238.2h0 M369.8,190.7h0 M399.6,227.4h0 M372.4,222.4h0 M473.6,225.9h0 M292.5,218.1h0 M449.4,225.1h0 M360.6,207.4h0 M267.0,195.5h0 M299.6,192.1h0 M328.0,204.6h0 M411.2,200.5h0 M442.3,215.2h0 M403.5,204.6h0 M443.5,199.7h0 M469.8,185.6h0 M331.9,228.8h0 M293.3,206.8h0 M335.1,209.6h0 M446.6,230.5h0 M582.0,228.9h0 M340.1,199.0h0 M359.9,228.1h0 M369.7,200.7h0 M375.3,222.0h0 M263.8,197.5h0 M436.4,216.7h0 M336.7,190.9h0 M333.3,185.4h0 M399.1,221.3h0 M482.7,237.8h0 M379.2,204.2h0 M361.6,214.7h0 M441.0,232.9h0 M395.1,212.4h0 M303.8,197.4h0 M413.4,197.0h0 M407.2,215.3h0 M402.5,230.4h0 M264.2,224.8h0 M432.7,206.9h0 M482.7,217.4h0 M332.4,185.6h0 M434.1,192.0h0 M400.0,236.5h0 M275.7,220.6h0 M433.6,203.4h0 M332.0,212.3h0 M380.2,206.3h0 M409.6,231.0h0 M415.6,209.3h0 M375.3,238.7h0 M480.5,191.8h0 M323.2,201.1h0 M365.6,218.0h0 M438.3,225.3h0 M375.5,221.6h0 M438.5,209.3h0 M308.8,229.1h0 M468.6,211.0h0 M378.6,207.0h0 M297.3,187.9h0 M368.9,191.4h0 M403.7,205.1h0 M403.2,205.3h0 M369.9,192.0h0 M377.2,227.8h0 M508.2,219.5h0 M343.6,213.8h0 M334.4,230.2h0 M302.4,192.3h0 M406.0,196.6h0 M381.8,197.4h0 M328.1,228.0h0 M350.1,191.5h0 M308.1,224.5h0 M345.8,216.1h0 M402.2,233.2h0 M305.3,193.5h0 M338.6,214.3h0 M271.2,229.7h0 M264.7,210.3h0 M232.4,189.3h0 M260.4,202.2h0 M366.2,231.2h0 M410.9,207.3h0 M310.9,205.2h0 M331.6,213.9h0 M478.6,190.9h0 M341.0,233.2h0 M368.1,232.8h0 M344.3,222.2h0 M336.2,222.7h0 M333.9,221.1h0 M469.7,193.1h0 M397.2,215.2h0 M367.1,215.9h0 M371.7,234.4h0 M290.8,227.2h0 M411.6,186.7h0 M415.6,211.9h0 M332.2,189.5h0 M396.9,205.5h0 M366.6,216.8h0 M449.9,196.7h0 M363.1,200.3h0 M363.1,185.2h0 M308.0,193.5h0 M370.1,228.2h0 M369.5,215.9h0 M267.4,235.0h0 M269.6,216.9h0 M276.3,230.1h0 M398.9,215.2h0 M443.6,199.3h0 M289.8,193.7h0 M305.9,213.8h0 M483.4,233.0h0 M335.4,218.8h0 M406.6,197.8h0 M335.1,216.6h0 M379.9,210.7h0 M339.8,235.2h0 M296.6,207.9h0 M323.1,224.0h0 M363.4,218.6h0 M266.0,223.9h0 M477.4,228.6h0 M262.4,216.2h0 M513.4,188.6h0 M274.9,231.2h0 M433.1,212.4h0 M408.0,220.2h0 M336.9,231.6h0 M303.6,235.7h0 M347.4,205.7h0 M329.9,210.7h0 M325.2,189.8h0 M359.7,221.5h0 M394.1,220.6h0 M379.8,220.8h0 M408.4,190.1h0 M403.5,189.4h0 M335.7,192.1h0 M435.8,209.9h0 M433.1,227.6h0 M435.6,237.3h0 M474.5,192.4h0 M332.8,204.5h0 M401.0,236.2h0 M361.1,192.6h0 M340.0,213.3h0 M337.6,236.8h0 M368.5,185.5h0 M444.2,198.0h0 M416.7,233.6h0 M441.3,223.6h0 M298.1,224.2h0 M445.0,236.1h0 M330.2,231.8h0 M433.1,234.5h0 M404.1,219.3h0 M259.8,203.5h0 M370.5,197.1h0 M298.2,231.2h0 M335.0,200.8h0 M341.4,234.0h0 M376.8,194.7h0 M358.5,206.4h0 M412.6,227.6h0 M304.5,214.7h0 M406.3,215.2h0 M478.6,220.7h0 M404.7,201.8h0 M362.2,217.7h0 M406.1,226.0h0 M347.1,218.8h0 M471.8,210.2h0 M400.8,209.0h0 M373.5,196.9h0 M304.9,235.4h0 M378.2,213.7h0 M327.9,236.3h0 M228.6,228.4h0 M306.5,218.0h0 M339.8,229.5h0 M287.1,232.6h0 M406.3,209.9h0 M285.5,188.9h0 M577.4,214.7h0 M374.8,198.6h0 M375.1,218.0h0 M367.3,214.5h0 M368.1,193.1h0 M266.5,194.7h0 M376.9,213.0h0 M438.9,210.9h0 M339.1,221.6h0 M403.9,194.5h0 M368.3,215.5h0 M432.4,190.9h0 M430.7,208.7h0 M361.8,232.2h0 M476.1,219.7h0 M339.6,188.7h0 M337.4,228.9h0 M407.8,238.2h0 M442.5,193.7h0 M437.8,187.0h0 M336.8,207.9h0 M340.9,231.4h0 M335.9,234.5h0 M302.9,204.5h0 M369.3,225.7h0 M343.2,190.8h0 M306.6,222.9h0 M402.4,236.8h0 M378.8,202.0h0 M436.7,211.6h0 M371.6,219.9h0 M332.5,193.3h0 M366.1,197.1h0 M337.3,218.4h0 M369.3,222.1h0 M361.9,233.6h0 M415.9,211.5h0 M341.3,205.5h0 M436.0,230.8h0 M394.1,196.6h0 M407.4,222.7h0 M443.4,199.9h0 M327.7,220.2h0 M404.3,229.1h0 M444.9,225.4h0 M537.1,229.8h0 M330.8,192.9h0 M294.0,219.5h0 M400.7,227.0h0 M364.7,204.9h0 M412.4,238.4h0 M336.7,194.3h0 M333.9,198.2h0 M374.0,227.9h0 M274.2,208.5h0 M448.2,195.3h0 M371.2,237.7h0 M377.1,213.7h0 M411.2,213.6h0 M260.5,203.6h0 M363.1,233.3h0 M432.8,196.0h0 M325.7,235.9h0 M327.9,186.4h0 M329.8,185.6h0 M260.7,234.2h0 M438.4,227.8h0 M203.0,197.1h0 M475.6,237.4h0 M372.5,237.9h0 M258.1,204.3h0 M322.2,190.0h0 M466.7,200.7h0 M413.1,208.0h0 M266.7,193.9h0 M398.9,203.4h0 M335.9,186.5h0 M323.7,217.1h0 M437.0,189.6h0 M369.6,238.1h0 M344.9,206.1h0 M469.3,200.0h0 M320.4,213.1h0 M329.0,232.8h0 M446.6,232.8h0 M238.0,188.7h0 M365.5,189.8h0 M361.7,217.4h0 M453.1,219.4h0 M362.4,230.8h0 M373.7,236.7h0 M380.7,230.6h0 M403.2,232.7h0 M288.7,191.4h0 M333.4,213.2h0 M370.6,218.6h0 M238.1,197.0h0 M403.1,186.7h0 M400.0,206.0h0 M271.4,233.5h0 M447.4,224.8h0 M158.2,190.1h0 M302.5,238.5h0 M322.2,205.5h0 M482.5,236.1h0 M369.2,186.9h0 M374.0,188.9h0 M365.3,222.7h0 M403.5,201.6h0 M441.5,197.3h0 M326.1,211.3h0 M415.0,218.3h0 M270.3,206.9h0 M269.5,224.4h0 M394.6,213.2h0 M332.3,227.3h0 M302.6,230.1h0 M324.8,189.1h0 M406.5,221.8h0 M370.2,232.2h0 M338.0,228.5h0 M509.4,192.7h0 M373.1,192.6h0 M330.9,213.2h0 M511.8,201.8h0 M353.5,223.4h0 M365.6,189.9h0 M465.3,193.9h0 M399.5,203.5h0 M283.6,205.6h0 M377.7,193.5h0 M410.6,237.4h0 M338.9,218.2h0 M298.3,227.4h0 M384.4,189.9h0 M436.2,230.8h0 M448.5,233.5h0 M371.3,236.5h0 M441.1,204.7h0 M436.4,190.2h0 M366.6,237.3h0 M342.2,216.2h0 M374.1,225.2h0 M339.5,197.5h0 M308.7,238.0h0 M336.7,190.7h0 M370.1,196.0h0 M366.9,234.4h0 M396.7,209.8h0 M326.9,225.5h0 M401.9,185.7h0 M331.9,231.2h0 M336.2,208.0h0 M404.6,187.0h0 M337.5,187.1h0 M397.2,220.8h0 M335.6,193.9h0 M255.9,216.3h0 M360.4,214.1h0 M445.1,189.4h0 M336.4,202.6h0 M272.1,212.1h0 M374.0,192.1h0 M342.9,194.5h0 M324.7,231.8h0 M433.7,236.9h0 M413.2,204.0h0 M436.9,221.9h0 M446.3,203.2h0 M404.8,204.6h0 M365.6,215.2h0 M381.9,227.7h0 M370.6,218.9h0 M301.0,208.4h0 M375.4,215.5h0 M403.5,230.2h0 M284.2,233.1h0 M338.0,187.9h0 M365.9,205.0h0 M447.4,206.2h0 M370.3,220.3h0 M433.7,187.0h0 M405.6,227.4h0 M404.9,234.4h0 M323.9,206.9h0 M256.6,220.4h0 M336.7,229.7h0 M365.3,237.6h0 M402.3,211.9h0 M377.8,199.8h0 M407.0,192.8h0 M477.6,224.7h0 M415.4,224.9h0 M402.1,224.0h0 M380.8,199.9h0 M379.0,201.2h0 M454.0,207.7h0 M367.5,186.7h0 M325.7,222.3h0 M300.1,191.1h0 M302.4,217.6h0 M368.8,232.3h0 M343.7,220.9h0 M373.4,204.2h0 M374.1,213.9h0 M323.3,201.7h0 M398.8,222.0h0 M410.7,221.4h0 M302.2,227.1h0 M327.6,216.9h0 M367.3,207.3h0 M413.1,214.0h0 M375.1,212.7h0 M330.7,236.5h0 M435.6,209.0h0 M378.6,213.0h0 M331.4,235.9h0 M475.3,187.6h0 M341.7,213.1h0 M301.5,187.5h0 M407.7,192.0h0 M343.2,210.7h0 M247.6,193.2h0 M371.1,228.1h0 M439.7,222.9h0 M369.5,212.0h0 M228.3,215.7h0 M429.2,207.6h0 M369.2,211.9h0 M403.0,185.4h0 M303.0,217.0h0 M411.4,204.5h0 M294.9,199.9h0 M442.0,216.3h0 M443.5,192.9h0 M330.5,185.1h0 M442.9,211.8h0 M298.5,214.5h0 M380.7,228.0h0 M254.6,210.5h0 M399.1,232.7h0 M294.6,222.1h0 M462.1,233.3h0 M328.9,216.2h0 M347.6,226.6h0 M295.3,202.0h0 M415.4,192.3h0 M356.8,212.3h0 M359.5,222.9h0 M297.0,221.1h0 M370.2,185.5h0 M414.8,220.4h0 M406.1,192.1h0 M341.6,233.8h0 M378.1,232.6h0 M259.6,234.4h0 M270.9,208.2h0 M255.9,227.5h0 M368.1,238.1h0 M439.7,228.0h0 M436.2,187.6h0 M372.7,234.7h0 M368.7,213.1h0 M331.6,227.3h0 M164.2,235.8h0 M346.4,196.0h0 M337.1,190.3h0 M296.4,201.8h0 M271.2,222.6h0 M401.1,237.6h0 M274.9,204.4h0 M226.8,197.2h0 M344.8,208.9h0 M368.6,187.3h0 M289.7,228.6h0 M367.9,204.9h0 M368.2,193.3h0 M449.9,185.9h0 M403.2,216.5h0 M337.1,230.8h0 M290.5,201.0h0 M337.5,193.1h0 M510.6,194.8h0 M430.4,200.4h0 M403.7,198.6h0 M411.9,228.6h0 M392.7,207.4h0 M441.2,210.5h0 M290.4,187.9h0 M407.1,207.7h0 M414.3,219.3h0 M436.6,231.4h0 M339.2,208.7h0 M434.5,215.4h0 M406.7,205.2h0 M436.3,209.5h0 M435.4,201.4h0 M265.1,200.3h0 M298.8,230.3h0 M346.4,222.3h0 M366.6,206.3h0 M330.3,202.0h0 M289.8,189.9h0 M393.4,205.0h0 M430.8,200.0h0 M369.6,225.2h0 M477.0,195.2h0 M366.3,187.3h0 M254.5,221.7h0 M339.5,231.9h0 M258.9,193.8h0 M474.7,228.0h0 M464.0,202.7h0 M403.5,233.7h0 M377.7,188.2h0 M301.0,232.8h0 M444.0,190.1h0 M407.7,236.8h0 M402.5,207.2h0 M505.9,194.5h0 M236.2,205.0h0 M368.3,218.6h0 M413.1,238.0h0 M332.5,195.5h0 M408.9,201.0h0 M397.8,207.8h0 M262.3,221.7h0 M289.8,189.1h0 M378.8,233.1h0 M266.7,219.6h0 M411.9,231.2h0 M305.2,186.6h0 M368.6,229.7h0 M343.1,194.5h0 M374.9,215.5h0 M408.2,229.0h0 M304.9,206.7h0 M372.3,214.4h0 M382.5,200.7h0 M448.2,190.9h0 M371.5,185.2h0 M411.9,214.2h0 M302.9,221.7h0 M374.6,194.8h0 M415.5,215.9h0 M407.2,229.7h0 M560.9,209.2h0 M338.1,201.7h0 M325.2,201.9h0 M308.4,198.1h0 M375.0,235.9h0 M412.7,217.9h0 M367.6,234.4h0 M343.2,193.5h0 M331.2,211.0h0 M370.9,223.2h0 M474.5,195.5h0 M478.6,218.7h0 M231.4,212.5h0 M302.9,211.9h0 M438.9,196.0h0 M302.2,193.9h0 M346.5,198.2h0 M370.5,199.0h0 M371.4,197.7h0 M369.6,233.8h0 M440.5,205.2h0 M405.3,212.4h0 M343.8,193.1h0 M401.0,222.4h0 M436.0,193.5h0 M294.7,233.2h0 M333.8,200.0h0 M336.8,223.7h0 M339.3,203.5h0 M359.1,208.6h0 M400.5,232.5h0 M412.1,202.2h0 M451.3,227.5h0 M336.0,189.7h0 M404.2,200.3h0 M306.3,238.1h0 M291.2,193.0h0 M327.1,209.9h0 M402.6,225.4h0 M369.6,217.6h0 M276.8,214.6h0 M320.3,217.3h0 M347.9,186.7h0 M331.8,191.0h0 M472.6,218.4h0 M337.1,220.9h0 M345.3,216.4h0 M262.5,211.4h0 M417.6,221.7h0 M332.9,187.6h0 M410.4,194.6h0 M439.4,236.1h0 M332.4,226.3h0 M298.3,195.7h0 M362.2,226.0h0 M443.1,234.5h0 M405.1,237.5h0 M444.4,216.8h0 M398.2,188.9h0 M338.8,232.9h0 M443.8,196.0h0 M331.2,213.3h0 M307.2,225.4h0 M373.5,204.3h0 M364.1,200.7h0 M258.5,239.0h0 M382.6,229.2h0 M408.6,185.3h0 M344.1,220.6h0 M406.5,193.3h0 M400.4,186.5h0 M289.9,208.7h0 M362.4,197.3h0 M401.1,192.7h0 M447.5,201.3h0 M445.6,229.9h0 M375.2,223.5h0 M401.0,230.3h0 M303.0,205.5h0 M343.1,229.0h0 M329.5,207.2h0 M261.8,207.7h0 M406.5,226.1h0 M430.3,209.2h0 M486.1,227.7h0 M293.5,226.1h0 M333.4,191.2h0 M322.5,203.0h0 M357.4,227.8h0 M307.6,216.6h0 M368.8,216.7h0 M308.8,193.3h0 M404.1,233.1h0 M299.8,190.1h0 M398.3,222.8h0 M375.6,220.8h0 M367.2,194.0h0 M368.4,236.2h0 M376.1,200.4h0 M332.1,204.2h0 M365.1,217.5h0 M438.9,211.0h0 M409.4,201.7h0 M477.0,192.4h0 M439.4,221.0h0 M435.5,213.4h0 M354.3,190.5h0 M373.0,224.7h0 M437.2,225.0h0 M374.9,196.2h0 M429.7,220.5h0 M288.3,228.6h0 M404.6,204.9h0 M337.0,215.5h0 M290.6,188.7h0 M376.1,219.2h0 M337.2,216.4h0 M370.5,220.5h0 M291.6,229.3h0 M404.0,215.9h0 M300.9,234.2h0 M470.3,189.6h0 M375.3,194.1h0 M260.4,236.3h0 M410.3,194.5h0 M296.1,202.7h0 M328.5,214.2h0 M326.2,193.3h0 M371.7,238.7h0 M401.7,213.4h0 M375.6,190.0h0 M403.0,236.0h0 M345.3,186.6h0 M364.8,200.6h0 M339.2,193.7h0 M410.0,194.4h0 M333.3,224.8h0 M396.7,239.0h0 M363.2,237.9h0 M255.1,223.9h0 M402.0,198.9h0 M257.1,204.3h0 M301.8,238.1h0 M399.9,214.5h0 M400.9,236.2h0 M264.8,215.3h0 M370.4,228.9h0 M405.5,225.9h0 M443.5,200.0h0 M464.5,214.8h0 M333.5,185.0h0 M411.4,195.6h0 M336.7,206.7h0 M446.5,219.1h0 M373.3,236.2h0 M344.7,225.2h0 M336.9,203.0h0 M437.2,191.2h0 M407.0,187.3h0 M256.5,204.7h0 M291.5,200.7h0 M291.3,211.1h0 M374.4,195.7h0 M433.2,196.0h0 M368.6,215.7h0 M299.2,233.1h0 M348.4,213.0h0 M450.9,224.6h0 M411.4,192.6h0 M475.8,188.9h0 M376.5,231.5h0 M256.0,224.1h0 M272.5,226.8h0 M440.9,222.6h0 M236.0,200.1h0 M325.7,198.6h0 M360.7,192.3h0 M288.2,219.4h0 M300.5,209.3h0 M397.5,194.4h0 M368.4,222.0h0 M338.3,231.9h0 M372.0,188.5h0 M326.7,218.3h0 M266.4,194.7h0 M411.0,203.5h0 M473.6,227.4h0 M342.5,193.3h0 M325.0,208.1h0 M305.0,233.7h0 M375.2,225.0h0 M402.7,213.5h0 M456.0,192.3h0 M431.0,187.9h0 M381.6,234.6h0 M408.8,195.9h0 M399.2,237.5h0 M470.5,222.5h0 M333.3,234.6h0 M475.3,202.6h0 M380.1,215.1h0 M291.4,215.9h0 M345.2,214.4h0 M446.3,236.6h0 M294.1,207.7h0 M348.5,212.5h0 M254.2,195.7h0 M488.0,185.7h0 M344.6,198.5h0 M378.0,238.5h0 M442.7,216.8h0 M376.0,217.2h0 M254.3,210.9h0 M414.2,227.1h0 M508.0,209.3h0 M440.3,233.6h0 M407.1,215.7h0 M324.2,213.6h0 M274.7,236.1h0 M442.2,200.8h0 M399.6,221.3h0 M367.7,220.8h0 M264.9,208.5h0 M373.7,218.8h0 M332.5,237.6h0 M344.8,205.5h0 M310.0,212.9h0 M441.3,231.5h0 M377.4,209.1h0 M341.5,218.7h0 M440.0,233.5h0 M304.0,224.5h0 M436.0,235.6h0 M415.0,221.1h0 M332.2,197.6h0 M307.5,187.9h0 M305.7,221.5h0 M297.9,207.3h0 M445.8,226.9h0 M342.3,224.4h0 M395.6,186.0h0 M363.9,209.8h0 M375.6,224.3h0 M293.4,216.9h0 M379.4,219.7h0 M371.4,210.6h0 M397.6,189.9h0 M418.1,236.7h0 M371.8,231.6h0 M373.3,210.4h0 M405.4,210.6h0 M401.3,195.3h0 M366.4,230.4h0 M404.9,219.6h0 M267.0,216.5h0 M360.8,207.3h0 M447.8,211.3h0 M477.5,192.3h0 M372.4,226.4h0 M365.2,237.5h0 M412.3,231.5h0 M447.9,194.4h0 M446.4,201.5h0 M324.6,191.6h0 M437.8,224.0h0 M302.9,213.3h0 M446.4,232.7h0 M399.1,221.5h0 M366.7,222.6h0 M435.7,185.5h0 M272.2,206.0h0 M267.8,192.3h0 M448.2,226.3h0 M432.0,229.0h0 M303.8,229.6h0 M411.3,238.5h0 M356.6,186.2h0 M276.9,188.3h0 M329.0,236.3h0 M368.3,198.4h0 M254.4,196.4h0 M437.3,201.8h0 M324.6,218.4h0 M403.6,205.8h0 M475.1,194.3h0 M357.2,186.4h0 M327.5,194.7h0 M372.6,201.8h0 M293.0,204.5h0 M416.0,229.6h0 M374.4,235.8h0 M378.5,237.0h0 M157.9,205.2h0 M400.2,228.5h0 M432.0,224.8h0 M331.7,234.5h0 M292.7,190.3h0 M278.1,213.8h0 M386.8,233.8h0 M406.3,215.8h0 M370.3,215.5h0 M328.8,186.4h0 M343.1,223.9h0 M301.1,212.2h0 M367.9,208.4h0 M335.3,207.6h0 M297.1,227.1h0 M438.8,223.3h0 M447.0,205.5h0 M429.5,216.7h0 M392.3,221.4h0 M472.2,186.8h0 M292.8,230.7h0 M330.4,206.4h0 M267.9,209.5h0 M328.2,221.6h0 M399.3,236.6h0 M300.2,186.8h0 M365.7,213.3h0 M435.3,197.6h0 M347.7,194.6h0 M406.5,195.3h0 M371.7,192.2h0 M236.3,232.9h0 M472.0,223.2h0 M356.7,191.7h0 M512.7,230.8h0 M301.4,206.4h0 M307.1,223.8h0 M301.3,216.5h0 M411.7,191.8h0 M402.9,208.2h0 M505.3,202.9h0 M333.4,193.6h0 M398.5,186.2h0 M264.2,216.6h0 M373.8,209.3h0 M405.7,203.9h0 M344.4,207.0h0 M325.1,219.5h0 M409.1,208.0h0 M341.9,237.9h0 M368.8,237.1h0 M329.2,225.6h0 M430.6,190.8h0 M515.6,219.8h0 M376.5,236.4h0 M443.2,192.2h0 M370.8,225.3h0 M403.7,238.0h0 M296.0,221.8h0 M440.2,205.0h0 M324.0,200.1h0 M466.7,215.9h0 M369.4,191.6h0 M416.0,233.9h0 M339.7,208.1h0 M295.4,221.0h0 M472.1,236.7h0 M379.1,192.2h0 M302.8,185.8h0 M483.8,201.1h0 M333.2,232.2h0 M297.2,226.3h0 M369.5,189.6h0 M400.9,204.7h0 M376.1,203.9h0 M338.1,195.5h0 M397.0,194.4h0 M438.6,198.1h0 M364.3,218.5h0 M339.9,217.7h0 M334.5,212.9h0 M477.9,185.3h0 M334.3,186.0h0 M384.5,233.0h0 M334.5,205.8h0 M472.9,238.2h0 M300.3,191.6h0 M339.9,227.7h0 M291.6,198.7h0 M259.8,205.4h0 M437.2,200.1h0 M441.7,194.1h0 M297.7,223.3h0 M479.3,215.6h0 M270.0,202.6h0 M340.3,222.6h0 M371.8,189.5h0 M340.0,224.0h0 M337.8,234.4h0 M235.3,199.8h0 M342.8,210.6h0 M362.0,208.5h0 M367.2,185.9h0 M257.2,224.8h0 M331.3,219.4h0 M405.0,187.6h0 M433.2,189.6h0 M437.1,192.4h0 M225.0,203.1h0 M416.9,238.6h0 M361.8,218.8h0 M303.1,234.2h0 M331.2,207.6h0 M373.8,186.9h0 M297.6,203.5h0 M470.4,238.3h0 M301.5,229.6h0 M412.4,205.0h0 M344.3,212.4h0 M369.7,237.4h0 M471.1,227.9h0 M363.0,196.2h0 M412.5,212.5h0 M327.6,223.9h0 M337.7,186.3h0 M412.7,191.0h0 M371.1,200.8h0 M262.4,220.1h0 M485.3,221.8h0 M239.1,230.7h0 M394.4,210.7h0 M371.5,233.4h0 M342.9,219.7h0 M347.9,212.2h0 M362.9,214.5h0 M331.7,207.4h0 M373.5,231.3h0 M402.0,201.9h0 M367.1,207.4h0 M299.6,211.5h0 M381.4,200.9h0 M398.9,199.0h0 M413.1,237.8h0 M376.0,215.5h0 M363.8,238.3h0 M330.4,235.2h0 M334.4,193.9h0 M371.2,227.4h0 M365.8,227.2h0 M375.3,224.1h0 M376.7,199.4h0 M333.3,227.7h0 M367.6,222.1h0 M330.5,195.5h0 M400.7,187.2h0 M335.2,212.7h0 M446.2,217.0h0 M441.6,232.7h0 M409.0,195.7h0 M402.2,206.3h0 M331.8,234.7h0 M332.3,218.6h0 M402.7,229.4h0 M339.0,223.9h0 M333.5,189.6h0 M336.0,222.4h0 M259.9,190.6h0 M376.2,215.3h0 M294.6,219.3h0 M440.8,225.9h0 M294.3,215.6h0 M367.7,230.8h0 M336.1,234.7h0 M428.9,199.6h0 M372.3,196.8h0 M441.6,185.7h0 M304.2,192.8h0 M483.4,225.4h0 M332.2,232.0h0 M345.0,187.3h0 M326.5,233.5h0 M301.0,231.9h0 M303.1,217.2h0 M267.4,191.6h0 M430.1,188.0h0 M410.7,202.8h0 M445.0,213.2h0 M473.7,200.8h0 M340.9,191.9h0 M266.6,200.5h0 M433.3,230.4h0 M405.1,219.8h0 M370.3,199.5h0 M364.4,197.6h0 M365.6,209.4h0 M468.9,210.6h0 M288.5,195.6h0 M296.9,203.2h0 M376.0,234.2h0 M297.5,236.9h0 M293.2,217.9h0 M325.6,193.0h0 M379.7,220.3h0 M406.9,213.9h0 M220.0,188.2h0 M363.2,208.9h0 M259.9,199.2h0 M406.1,200.2h0 M431.6,218.9h0 M360.2,204.8h0 M477.7,186.6h0 M400.1,191.9h0 M270.4,203.1h0 M363.0,212.1h0 M392.3,195.2h0 M366.9,225.1h0 M334.7,192.8h0 M512.1,211.2h0 M482.5,205.9h0 M401.6,186.9h0 M233.5,216.1h0 M407.3,199.9h0 M444.8,218.1h0 M436.8,188.6h0 M308.5,205.9h0 M300.4,198.6h0 M451.8,197.6h0 M265.6,226.8h0 M331.3,190.3h0 M300.7,200.5h0 M363.3,222.9h0 M295.2,219.4h0 M382.1,208.6h0 M341.7,192.3h0 M340.2,187.6h0 M302.2,236.5h0 M256.7,194.1h0 M400.9,220.5h0 M262.0,191.8h0 M344.7,231.3h0 M368.6,195.4h0 M436.8,224.2h0 M336.4,188.8h0 M468.5,231.9h0 M369.0,228.2h0 M405.0,196.7h0 M301.0,191.7h0 M364.0,195.1h0 M368.7,190.0h0 M472.4,220.2h0 M379.7,236.3h0 M402.1,194.0h0 M294.7,219.5h0 M355.6,193.1h0 M249.2,237.0h0 M368.0,230.6h0 M296.2,200.9h0 M310.3,194.6h0 M330.7,210.2h0 M323.0,193.4h0 M295.4,213.5h0 M307.2,209.6h0 M412.0,230.2h0 M407.9,230.3h0 M418.7,213.8h0 M449.0,203.0h0 M434.0,191.8h0 M367.4,204.3h0 M342.4,227.8h0 M378.5,219.1h0 M436.8,232.1h0 M520.2,195.7h0 M262.7,194.9h0 M339.9,217.9h0 M327.7,234.8h0 M359.4,196.6h0 M336.4,205.2h0 M438.5,220.1h0 M361.0,214.4h0 M362.8,197.0h0 M376.0,227.3h0 M338.5,208.4h0 M362.1,185.2h0 M366.3,204.5h0 M376.7,209.2h0 M265.5,187.8h0 M340.1,213.8h0 M322.4,186.3h0 M303.7,216.7h0 M398.1,234.0h0 M416.6,230.9h0 M325.2,217.7h0 M406.5,196.3h0 M267.5,225.4h0 M300.3,235.5h0 M447.1,235.0h0 M272.8,193.6h0 M311.5,211.4h0 M340.4,227.6h0 M363.0,188.5h0 M265.0,224.9h0 M275.2,203.9h0 M303.6,219.6h0 M410.2,190.0h0 M365.9,223.8h0 M299.1,196.6h0 M332.1,232.7h0 M511.5,234.4h0 M331.6,209.5h0 M374.9,188.9h0 M402.9,218.9h0 M259.3,227.2h0 M337.2,231.4h0 M525.3,220.1h0 M442.8,222.1h0 M397.5,192.4h0 M366.6,185.6h0 M367.7,198.4h0 M301.3,195.8h0 M371.4,213.7h0 M470.8,229.4h0 M452.1,198.8h0 M447.5,188.2h0 M332.5,226.9h0 M373.7,225.7h0 M483.1,209.5h0 M441.2,198.1h0 M500.8,213.7h0 M373.8,208.8h0 M331.2,188.3h0 M398.1,198.3h0 M418.0,232.8h0 M484.1,188.6h0 M328.7,208.9h0 M298.3,200.9h0 M357.5,189.0h0 M337.6,231.6h0 M340.8,201.2h0 M439.1,221.0h0 M348.5,213.8h0 M336.0,219.5h0 M329.1,196.0h0 M476.3,212.1h0 M382.4,207.4h0 M302.1,201.1h0 M442.6,203.5h0 M255.0,222.3h0 M415.7,231.2h0 M327.9,188.5h0 M442.9,200.0h0 M446.1,230.2h0 M413.5,188.5h0 M449.5,210.1h0 M262.2,236.5h0 M472.9,189.9h0 M331.0,225.9h0 M450.2,226.4h0 M413.9,201.7h0 M299.0,220.7h0 M327.6,229.4h0 M449.5,214.6h0 M367.8,193.3h0 M474.0,211.1h0 M511.5,197.2h0 M413.3,185.9h0 M266.2,187.2h0 M409.4,187.7h0 M402.3,215.5h0 M363.6,201.2h0 M222.3,187.6h0 M266.6,186.1h0 M397.8,236.9h0 M308.1,193.3h0 M256.1,196.1h0 M393.4,221.1h0 M330.5,226.4h0 M471.7,193.4h0 M430.1,198.4h0 M378.4,207.4h0 M227.3,236.3h0 M448.9,221.2h0 M414.4,212.6h0 M338.0,189.4h0 M393.4,186.3h0 M402.2,204.0h0 M398.4,235.4h0 M300.7,225.8h0 M329.0,214.6h0 M441.1,205.7h0 M265.6,209.3h0 M438.6,234.2h0 M255.8,214.1h0 M373.3,234.9h0 M365.3,236.1h0 M328.6,213.4h0 M339.7,190.7h0 M404.0,230.5h0 M324.3,209.3h0 M260.5,221.4h0 M465.2,206.6h0 M412.2,189.0h0 M365.1,207.6h0 M367.8,203.1h0 M342.5,186.3h0 M326.0,199.0h0 M372.9,192.4h0 M339.0,233.4h0 M339.0,218.8h0 M345.9,231.0h0 M331.1,193.7h0 M453.1,196.7h0 M371.3,215.5h0 M341.0,213.6h0 M473.1,202.6h0 M361.3,237.8h0 M366.4,233.4h0 M375.5,198.9h0 M368.9,203.7h0 M406.3,214.1h0 M290.3,189.6h0 M325.5,186.8h0 M372.1,209.8h0 M410.9,236.8h0 M400.4,232.4h0 M223.5,197.9h0 M426.9,208.2h0 M345.6,231.8h0 M341.0,200.4h0 M295.6,207.4h0 M363.7,238.8h0 M337.0,235.8h0 M358.5,188.4h0 M375.7,236.0h0 M296.4,190.4h0 M292.0,190.5h0 M339.7,233.5h0 M326.4,199.3h0 M450.2,218.0h0 M330.9,214.7h0 M360.4,214.1h0 M378.2,224.5h0 M291.4,213.9h0 M406.6,192.2h0 M333.4,191.9h0 M437.5,233.1h0 M297.2,212.3h0 M410.8,235.0h0 M307.5,208.3h0 M311.8,213.7h0 M402.4,227.1h0 M336.4,211.6h0 M436.1,217.8h0 M438.0,226.3h0 M415.9,238.7h0 M363.6,235.6h0 M464.8,231.7h0 M325.6,187.0h0 M341.5,225.9h0 M294.8,238.5h0 M379.1,205.8h0 M273.1,200.5h0 M368.1,196.3h0 M300.0,193.6h0 M299.6,192.6h0 M376.8,234.7h0 M255.7,206.6h0 M410.3,237.9h0 M333.5,219.4h0 M367.3,194.5h0 M366.4,235.8h0 M336.1,223.5h0 M409.6,212.9h0 M372.9,188.6h0 M410.3,215.0h0 M293.6,201.3h0 M256.1,208.3h0 M381.5,189.3h0 M362.5,211.2h0 M337.3,211.9h0 M338.0,212.8h0 M292.2,190.5h0 M365.7,234.0h0 M462.2,202.2h0 M333.1,226.9h0 M390.8,227.8h0 M327.6,215.2h0 M329.9,202.4h0 M345.2,195.1h0 M428.8,231.3h0 M332.9,210.5h0 M374.0,195.8h0 M334.9,215.1h0 M341.6,211.3h0 M272.1,204.6h0 M250.6,191.0h0 M400.7,236.1h0 M300.5,235.6h0 M261.7,215.0h0 M435.3,218.5h0 M379.4,225.4h0 M300.2,233.0h0 M398.0,205.2h0 M367.9,223.1h0 M343.9,232.7h0 M327.2,216.3h0 M216.0,195.0h0 M392.2,203.6h0 M360.5,219.8h0 M304.7,205.7h0 M326.7,190.7h0 M475.9,216.2h0 M336.8,207.0h0 M231.2,213.6h0 M432.8,234.1h0 M399.4,235.4h0 M438.0,189.7h0 M479.5,225.2h0 M329.1,236.9h0 M363.8,202.7h0 M375.7,233.8h0 M343.7,229.4h0 M371.1,200.3h0 M470.2,228.2h0 M301.1,227.5h0 M433.1,203.1h0 M375.6,217.3h0 M403.7,188.8h0 M266.9,218.0h0 M335.9,207.6h0 M362.9,219.2h0 M397.6,193.8h0 M516.7,195.2h0 M335.5,196.0h0 M347.1,199.0h0 M450.0,197.4h0 M264.9,236.4h0 M377.8,201.0h0 M338.6,235.8h0 M292.5,208.8h0 M419.7,190.5h0 M342.2,211.5h0 M398.9,191.0h0 M410.7,202.7h0 M341.0,188.0h0 M323.4,192.9h0 M357.7,187.5h0 M437.8,231.8h0 M438.1,208.0h0 M265.8,204.7h0 M261.4,208.8h0 M523.5,235.8h0 M261.1,202.0h0 M419.4,215.9h0 M320.7,190.8h0 M386.3,188.3h0 M310.3,187.6h0 M370.8,209.0h0 M403.6,233.5h0 M433.2,185.9h0 M406.7,185.4h0 M411.9,205.6h0 M412.8,196.9h0 M308.3,192.5h0 M297.4,187.7h0 M374.3,212.4h0 M330.5,232.3h0 M340.1,229.8h0 M365.2,222.7h0 M373.5,191.0h0 M333.1,210.4h0 M477.1,220.4h0 M364.9,217.6h0 M455.2,228.2h0 M465.9,214.5h0 M337.2,225.4h0 M438.2,235.8h0 M374.3,188.4h0 M363.7,225.4h0 M360.2,233.7h0 M439.3,212.8h0 M378.6,213.8h0 M405.8,206.9h0 M325.6,192.3h0 M274.6,238.0h0 M392.7,238.8h0 M363.4,205.2h0 M263.9,185.8h0 M375.9,191.4h0 M372.0,196.6h0 M342.5,198.3h0 M294.0,207.3h0 M412.7,201.8h0 M268.4,206.0h0 M370.5,201.2h0 M486.3,208.0h0 M324.9,188.6h0 M465.9,197.9h0 M407.0,196.8h0 M374.9,225.3h0 M403.0,223.7h0 M303.3,209.0h0 M322.5,190.4h0 M288.3,220.0h0 M395.3,237.9h0 M305.8,233.3h0 M334.6,199.8h0 M296.9,191.3h0 M446.5,201.4h0 M406.2,213.9h0 M403.9,202.2h0 M357.6,221.9h0 M309.1,221.6h0 M479.3,215.4h0 M329.2,198.1h0 M376.1,197.3h0 M400.1,188.5h0 M339.9,190.3h0 M334.7,233.5h0 M507.4,202.0h0 M359.0,235.4h0 M472.6,227.3h0 M337.8,213.5h0 M338.2,231.9h0 M447.1,203.3h0 M433.3,192.8h0 M436.0,191.1h0 M451.1,222.0h0 M251.4,207.8h0 M426.2,199.6h0 M372.4,234.9h0 M344.3,232.5h0 M465.9,212.3h0 M347.3,234.8h0 M295.8,198.9h0 M429.9,230.8h0 M381.5,207.0h0 M300.7,217.2h0 M293.3,201.3h0 M416.2,229.9h0 M325.9,198.0h0 M485.6,230.1h0 M395.8,192.4h0 M376.8,223.8h0 M400.4,217.0h0 M375.9,206.8h0 M372.5,198.9h0 M441.1,208.6h0 M329.7,211.1h0 M416.0,190.3h0 M411.4,193.6h0 M336.0,229.6h0 M447.9,191.7h0 M302.4,236.8h0 M432.7,201.1h0 M417.7,222.9h0 M402.9,185.9h0 M301.9,231.0h0 M409.2,189.8h0 M260.9,235.8h0 M329.8,231.3h0 M290.7,197.6h0 M285.0,189.0h0 M417.1,223.3h0 M449.7,236.0h0 M396.6,193.4h0 M369.4,219.5h0 M302.7,222.9h0 M429.0,214.0h0 M396.9,193.6h0 M449.1,205.1h0 M395.1,205.8h0 M378.1,210.8h0 M337.4,209.4h0 M363.6,214.9h0 M341.4,226.9h0 M270.0,211.1h0 M474.7,213.4h0 M409.2,220.3h0 M288.1,223.8h0 M398.8,234.2h0 M342.7,194.8h0 M473.9,198.4h0 M411.3,235.7h0 M369.4,218.1h0 M396.4,205.5h0 M364.1,201.7h0 M341.5,206.6h0 M342.4,227.4h0 M472.3,222.1h0 M327.9,235.0h0 M381.3,214.4h0 M327.4,206.6h0 M300.6,189.8h0 M404.2,226.0h0 M369.9,201.2h0 M359.0,235.9h0 M290.2,236.7h0 M338.9,230.8h0 M407.7,198.9h0 M365.3,233.6h0 M347.4,222.4h0 M339.6,189.2h0 M479.9,208.0h0 M373.1,202.8h0 M408.2,216.7h0 M326.9,189.9h0 M270.2,223.7h0 M449.8,228.4h0 M344.2,185.1h0 M406.0,228.7h0 M400.7,200.2h0 M436.6,191.9h0 M333.1,191.3h0 M487.8,213.8h0 M433.3,220.4h0 M412.6,232.1h0 M285.6,200.5h0 M300.7,197.5h0 M441.4,226.7h0 M331.1,214.2h0 M453.3,196.1h0 M301.4,186.2h0 M414.5,233.8h0 M405.1,198.0h0 M365.2,192.6h0 M438.2,228.8h0 M408.7,223.1h0 M404.2,209.1h0 M333.1,229.8h0 M378.1,227.2h0 M377.7,197.7h0 M262.3,215.9h0 M224.2,218.5h0 M341.6,212.1h0 M359.7,200.8h0 M379.5,217.1h0 M322.1,215.2h0 M420.8,206.0h0 M486.4,203.4h0 M262.6,227.1h0 M450.0,198.9h0 M309.9,220.6h0 M441.4,190.2h0 M368.2,210.5h0 M447.0,234.8h0 M483.8,201.2h0 M417.1,218.3h0 M266.5,194.6h0 M404.6,203.1h0 M295.9,198.3h0 M334.3,219.1h0 M400.8,206.8h0 M583.2,194.2h0 M406.3,227.2h0 M322.6,192.7h0 M268.5,231.1h0 M461.8,200.3h0 M371.9,214.2h0 M404.3,199.8h0 M381.4,192.8h0 M375.2,238.4h0 M269.3,217.5h0 M414.7,206.3h0 M235.0,231.1h0 M400.1,209.0h0 M330.1,231.2h0 M469.7,232.9h0 M337.7,213.3h0 M379.5,199.3h0 M339.8,194.6h0 M277.8,216.3h0 M295.4,230.0h0 M362.5,209.1h0 M259.3,229.5h0 M438.2,198.9h0 M409.2,220.0h0 M228.8,192.4h0 M448.2,228.7h0 M293.0,210.1h0 M405.8,230.4h0 M470.0,234.7h0 M417.1,209.7h0 M395.6,199.3h0 M392.1,230.9h0 M299.9,227.3h0 M436.9,207.8h0 M407.9,232.5h0 M299.2,234.7h0 M440.4,208.9h0 M406.5,187.2h0 M376.1,210.2h0 M515.0,206.8h0 M342.2,194.4h0 M404.8,186.2h0 M325.4,186.1h0 M381.2,200.7h0 M339.2,215.7h0 M382.8,203.4h0 M375.0,188.7h0 M436.2,237.4h0 M438.4,225.0h0 M440.3,237.4h0 M310.2,204.6h0 M326.8,192.3h0 M361.5,215.3h0 M400.8,192.1h0 M371.7,208.2h0 M292.5,222.7h0 M428.0,210.8h0 M377.0,196.5h0 M367.5,192.3h0 M400.6,205.1h0 M502.6,189.1h0 M367.3,232.4h0 M338.2,194.8h0 M410.4,237.4h0 M331.5,226.6h0 M435.3,201.6h0 M445.1,224.9h0 M363.0,218.3h0 M378.3,193.6h0 M340.2,200.6h0 M329.7,224.7h0 M291.9,208.1h0 M410.5,209.2h0 M368.0,208.1h0 M378.0,233.5h0 M444.8,198.1h0 M406.5,216.1h0 M432.6,226.9h0 M399.8,196.0h0 M386.0,187.5h0 M440.9,231.2h0 M431.9,203.9h0 M447.5,223.4h0 M334.7,233.9h0 M294.1,216.7h0 M340.4,207.9h0 M436.9,208.9h0 M443.1,186.6h0 M336.1,192.2h0 M408.9,234.9h0 M305.9,189.4h0 M299.0,191.7h0 M334.1,203.4h0 M439.6,193.1h0 M405.7,198.0h0 M377.9,237.4h0 M368.7,211.9h0 M344.4,217.8h0 M445.1,201.1h0 M357.9,214.4h0 M340.8,189.8h0 M369.0,192.5h0 M400.5,228.1h0 M398.0,206.6h0 M339.4,185.6h0 M400.5,196.9h0 M367.2,222.0h0 M378.3,229.6h0 M357.6,199.0h0 M369.9,195.5h0 M437.0,189.1h0 M376.9,207.1h0 M274.3,238.0h0 M405.8,236.8h0 M399.9,212.5h0 M429.6,231.3h0 M440.8,222.8h0 M330.1,212.4h0 M267.6,206.1h0 M371.2,197.8h0 M290.9,230.8h0 M373.2,196.8h0 M406.1,196.5h0 M440.6,197.5h0 M443.7,210.8h0 M399.0,196.0h0 M266.2,232.8h0 M443.9,208.5h0 M436.9,194.5h0 M366.5,224.6h0 M347.6,199.0h0 M439.2,215.8h0 M447.1,185.4h0 M335.6,207.5h0 M346.0,214.6h0 M336.0,230.7h0 M290.6,216.8h0 M437.3,201.1h0 M294.3,216.9h0 M381.7,206.2h0 M232.9,226.2h0 M295.4,218.9h0 M269.1,196.2h0 M442.1,237.3h0 M361.2,201.4h0 M300.6,226.6h0 M581.4,219.7h0 M396.6,212.5h0 M294.9,224.0h0 M379.2,192.4h0 M401.4,218.5h0 M306.6,205.8h0 M437.3,195.1h0 M478.7,216.0h0 M412.4,232.1h0 M343.5,199.9h0 M412.1,193.1h0 M379.0,199.3h0 M442.0,217.3h0 M403.4,189.5h0 M345.7,230.7h0 M307.5,231.8h0 M400.6,221.3h0 M415.4,194.0h0 M477.4,198.9h0 M374.0,191.8h0 M370.3,230.5h0 M332.6,193.0h0 M305.6,185.1h0 M300.8,187.4h0 M468.6,191.5h0 M302.4,216.1h0 M445.9,196.8h0 M405.6,209.8h0 M380.7,191.4h0 M517.4,226.4h0 M349.7,207.1h0 M296.1,206.4h0 M357.0,234.6h0 M303.4,190.5h0 M395.0,194.5h0 M303.5,197.2h0 M263.2,220.4h0 M400.5,236.1h0 M489.1,191.0h0 M455.2,233.7h0 M288.1,213.9h0 M345.3,189.6h0 M398.3,219.4h0 M339.8,223.2h0 M404.9,214.4h0 M291.0,191.8h0 M259.5,194.9h0 M409.2,214.3h0 M335.8,228.8h0 M451.9,188.0h0 M357.2,223.2h0 M443.1,213.0h0 M301.1,210.9h0 M375.4,220.8h0 M434.9,234.9h0 M430.8,224.5h0 M474.2,214.8h0 M506.3,233.1h0 M304.6,189.0h0 M448.7,222.2h0 M158.3,194.1h0 M257.1,193.0h0 M438.6,225.6h0 M341.9,189.9h0 M374.9,220.6h0 M393.2,229.0h0 M442.1,196.1h0 M393.9,209.3h0 M410.3,215.2h0 M376.5,193.2h0 M371.5,188.8h0 M483.8,210.3h0 M302.8,236.3h0 M369.8,205.1h0 M375.3,212.9h0 M438.5,214.0h0 M439.0,231.8h0 M289.5,234.0h0 M294.9,195.2h0 M322.9,189.1h0 M376.0,195.0h0 M335.8,236.9h0 M414.6,215.6h0 M304.7,186.4h0 M480.0,213.5h0 M372.2,209.5h0 M410.5,219.0h0 M359.7,221.6h0 M439.2,227.6h0 M335.9,231.5h0 M335.7,212.6h0 M291.4,216.4h0 M445.6,218.1h0 M332.4,236.4h0 M397.4,211.0h0 M402.1,209.0h0 M370.2,228.0h0 M334.9,237.2h0 M372.9,188.8h0 M368.8,225.7h0 M373.4,210.3h0 M355.3,237.2h0 M336.4,199.8h0 M400.4,193.3h0 M333.5,201.5h0 M371.1,222.5h0 M340.5,237.3h0 M450.2,196.3h0 M335.0,206.2h0 M308.6,237.2h0 M339.6,233.5h0 M360.8,193.1h0 M449.2,220.2h0 M437.7,196.7h0 M339.0,229.4h0 M469.2,227.4h0 M443.1,195.0h0 M363.6,202.3h0 M302.9,197.2h0 M289.6,196.7h0 M342.9,232.1h0 M268.1,201.5h0 M448.0,191.6h0 M451.0,213.2h0 M370.2,215.9h0 M361.4,205.9h0 M342.1,195.4h0 M415.6,185.3h0 M299.8,203.9h0 M406.8,193.1h0 M343.3,231.1h0 M363.9,231.7h0 M411.6,198.8h0 M290.5,216.7h0 M367.3,195.5h0 M445.6,202.2h0 M404.2,216.9h0 M360.9,207.6h0 M466.7,229.1h0 M339.5,212.9h0 M394.9,202.7h0 M258.3,229.7h0 M451.1,203.3h0 M379.3,202.2h0 M328.9,190.7h0 M311.5,204.6h0 M372.9,220.9h0 M323.9,232.1h0 M297.9,185.5h0 M265.1,229.7h0 M451.9,204.8h0 M406.0,220.9h0 M336.0,232.8h0 M336.9,217.2h0 M267.9,214.7h0 M295.0,218.3h0 M404.9,230.9h0 M326.0,215.0h0 M401.5,230.0h0 M267.2,191.5h0 M337.8,227.4h0 M311.2,203.2h0 M254.9,217.3h0 M372.5,202.2h0 M306.2,237.7h0 M345.8,208.9h0 M292.2,234.4h0 M441.1,223.0h0 M334.0,224.7h0 M336.2,238.5h0 M470.1,209.6h0 M329.8,239.0h0 M403.4,192.4h0 M298.1,215.3h0 M362.9,226.2h0 M362.8,231.6h0 M435.6,234.3h0 M263.2,218.1h0 M440.8,194.3h0 M332.0,194.5h0 M434.3,193.4h0 M370.2,218.5h0" stroke="#c92a2a" stroke-width="2.6" stroke-linecap="round" fill="none"/>
+  <foreignObject x="59" y="197.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$N = 5000$</div></foreignObject>
+  <line x1="156" y1="352" x2="584" y2="352" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <polyline points="156,350 157,350 158,350 158.5,350.5 159.5,350.5 160.5,350.5 161.5,351 162,351 163,351 164,351 165,351.5 166,351.5 166.5,351.5 167.5,351.5 168.5,352 169.5,352 170.5,352 171,352 172,352 173,352 174,352 174.5,352 175.5,352 176.5,352 177.5,352 178.5,352 179,352 180,352 181,352 182,352 183,352 183.5,352 184.5,352 185.5,352 186.5,352 187,352 188,352 189,352 190,352 191,352 191.5,352 192.5,352 193.5,352 194.5,352 195,352 196,352 197,352 198,352 199,352 199.5,352 200.5,352 201.5,352 202.5,352 203.5,352 204,352 205,352 206,352 207,352 207.5,352 208.5,352 209.5,352 210.5,352 211.5,352 212,352 213,352 214,352 215,351.5 215.5,351.5 216.5,351.5 217.5,351 218.5,351 219.5,350.5 220,350 221,350 222,349.5 223,349 224,349 224.5,348.5 225.5,348 226.5,348 227.5,347.5 228,347.5 229,347 230,347 231,347 232,347 232.5,347 233.5,347.5 234.5,347.5 235.5,348 236,348.5 237,348.5 238,349 239,349.5 240,350 240.5,350.5 241.5,351 242.5,351.5 243.5,351.5 244.5,352 245,352 246,352 247,351.5 248,351.5 248.5,351 249.5,350 250.5,349 251.5,348 252.5,347 253,345.5 254,344 255,342.5 256,341 257,339.5 257.5,338 258.5,336.5 259.5,335 260.5,334 261,332.5 262,332 263,331 264,330.5 265,330.5 265.5,330.5 266.5,331 267.5,331.5 268.5,332.5 269,334 270,335.5 271,337 272,338.5 273,340.5 273.5,342.5 274.5,344 275.5,346 276.5,347.5 277.5,349 278,350.5 279,351 280,352 281,352 281.5,352 282.5,351 283.5,350 284.5,348.5 285.5,346.5 286,344.5 287,341.5 288,338.5 289,335.5 290,332 290.5,328.5 291.5,325 292.5,321.5 293.5,318 294,315 295,312 296,309.5 297,307.5 298,306 298.5,305 299.5,304.5 300.5,305 301.5,305.5 302,307 303,309 304,311.5 305,314.5 306,317.5 306.5,321.5 307.5,325 308.5,329 309.5,333 310.5,337 311,340.5 312,343.5 313,346.5 314,349 314.5,350.5 315.5,351.5 316.5,352 317.5,351.5 318.5,350.5 319,348.5 320,346 321,342.5 322,339 322.5,334.5 323.5,329.5 324.5,324 325.5,319 326.5,313 327,308 328,302.5 329,297.5 330,293 331,289 331.5,285.5 332.5,283 333.5,281 334.5,280 335,280 336,281 337,283 338,285.5 339,289 339.5,293 340.5,297.5 341.5,302.5 342.5,308 343,314 344,319.5 345,325.5 346,331 347,336 347.5,340.5 348.5,344.5 349.5,347.5 350.5,350 351.5,351.5 352,352 353,351.5 354,350 355,347.5 355.5,344.5 356.5,340 357.5,335.5 358.5,330 359.5,324 360,318 361,311.5 362,305 363,298.5 364,292.5 364.5,287 365.5,282 366.5,278 367.5,274.5 368,272 369,270.5 370,270 371,270.5 372,272 372.5,274.5 373.5,278 374.5,282 375.5,287 376,292.5 377,298.5 378,305 379,311.5 380,318 380.5,324 381.5,330 382.5,335.5 383.5,340 384.5,344.5 385,347.5 386,350 387,351.5 388,352 388.5,351.5 389.5,350 390.5,347.5 391.5,344.5 392.5,340.5 393,336 394,331 395,325.5 396,319.5 397,314 397.5,308 398.5,302.5 399.5,297.5 400.5,293 401,289 402,285.5 403,283 404,281 405,280 405.5,280 406.5,281 407.5,283 408.5,285.5 409,289 410,293 411,297.5 412,302.5 413,308 413.5,313 414.5,319 415.5,324 416.5,329.5 417.5,334.5 418,339 419,342.5 420,346 421,348.5 421.5,350.5 422.5,351.5 423.5,352 424.5,351.5 425.5,350.5 426,349 427,346.5 428,343.5 429,340.5 429.5,337 430.5,333 431.5,329 432.5,325 433.5,321.5 434,317.5 435,314.5 436,311.5 437,309 438,307 438.5,305.5 439.5,305 440.5,304.5 441.5,305 442,306 443,307.5 444,309.5 445,312 446,315 446.5,318 447.5,321.5 448.5,325 449.5,328.5 450,332 451,335.5 452,338.5 453,341.5 454,344.5 454.5,346.5 455.5,348.5 456.5,350 457.5,351 458.5,352 459,352 460,352 461,351 462,350.5 462.5,349 463.5,347.5 464.5,346 465.5,344 466.5,342.5 467,340.5 468,338.5 469,337 470,335.5 471,334 471.5,332.5 472.5,331.5 473.5,331 474.5,330.5 475,330.5 476,330.5 477,331 478,332 479,332.5 479.5,334 480.5,335 481.5,336.5 482.5,338 483,339.5 484,341 485,342.5 486,344 487,345.5 487.5,347 488.5,348 489.5,349 490.5,350 491.5,351 492,351.5 493,351.5 494,352 495,352 495.5,352 496.5,351.5 497.5,351.5 498.5,351 499.5,350.5 500,350 501,349.5 502,349 503,348.5 504,348.5 504.5,348 505.5,347.5 506.5,347.5 507.5,347 508,347 509,347 510,347 511,347 512,347.5 512.5,347.5 513.5,348 514.5,348 515.5,348.5 516,349 517,349 518,349.5 519,350 520,350 520.5,350.5 521.5,351 522.5,351 523.5,351.5 524.5,351.5 525,351.5 526,352 527,352 528,352 528.5,352 529.5,352 530.5,352 531.5,352 532.5,352 533,352 534,352 535,352 536,352 536.5,352 537.5,352 538.5,352 539.5,352 540.5,352 541,352 542,352 543,352 544,352 545,352 545.5,352 546.5,352 547.5,352 548.5,352 549,352 550,352 551,352 552,352 553,352 553.5,352 554.5,352 555.5,352 556.5,352 557,352 558,352 559,352 560,352 561,352 561.5,352 562.5,352 563.5,352 564.5,352 565.5,352 566,352 567,352 568,352 569,352 569.5,352 570.5,352 571.5,352 572.5,351.5 573.5,351.5 574,351.5 575,351.5 576,351 577,351 578,351 578.5,351 579.5,350.5 580.5,350.5 581.5,350.5 582,350 583,350 584,350" fill="none" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
+  <foreignObject x="84" y="300.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{wave}$</div></foreignObject>
+  <line x1="298.5" y1="16" x2="298.5" y2="352" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 5"/>
+  <line x1="334.5" y1="16" x2="334.5" y2="352" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 5"/>
+  <line x1="370" y1="16" x2="370" y2="352" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 5"/>
+  <line x1="405.5" y1="16" x2="405.5" y2="352" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 5"/>
+  <line x1="441.5" y1="16" x2="441.5" y2="352" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 5"/>
+</svg>
+
+### The wave gives the probability
+The wave model does not tell where a single photon or electron will hit. It tells the probability with which the quantum is detected at each place: where the intensity of the wave is large, many hits arrive, and in the dark fringes hardly any. When only one slit is open, the fringes of the two slits disappear. When both slits are open, fewer hits arrive in the dark fringes than with one slit, so opening the second slit reduces the hits at these places. This cannot be explained by each quantum passing through only one slit like a small bullet. If the experiment measures through which slit each quantum passes, the fringe pattern disappears and the distribution is the sum of two one-slit patterns.
+
+<svg data-fig="patterns" viewBox="0 0 600 340" role="img" aria-label="Schematic figure of three hit distributions on the same screen. On the left only one slit is open: a single wide peak without fringes. In the middle both slits are open: a fringe pattern with hardly any hits in its dark places, although in the one-slit pattern there are many hits there. On the right both slits are open, but the path is measured: the fringes disappear, and the distribution is the sum of two one-slit patterns. The vertical axes are the number of hits with the same total number of hits, with no numerical values." style="max-width:100%;font-size:24px">
+  <foreignObject x="16" y="21.5" width="180" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{one slit}$</div></foreignObject>
+  <rect x="20" y="80" width="172" height="170" fill="#eef5f9"/>
+  <polyline points="20,248 20.5,248 21,248 21.5,248.5 21.5,248.5 22,248.5 22.5,248.5 23,248.5 23.5,248.5 24,249 24.5,249 24.5,249 25,249 25.5,249 26,249 26.5,249 27,249.5 27.5,249.5 27.5,249.5 28,249.5 28.5,249.5 29,249.5 29.5,249.5 30,249.5 30.5,250 31,250 31,250 31.5,250 32,250 32.5,250 33,250 33.5,250 34,250 34,250 34.5,250 35,250 35.5,250 36,250 36.5,250 37,250 37,250 37.5,250 38,250 38.5,249.5 39,249.5 39.5,249.5 40,249.5 40,249.5 40.5,249.5 41,249 41.5,249 42,249 42.5,249 43,248.5 43,248.5 43.5,248.5 44,248 44.5,248 45,248 45.5,247.5 46,247.5 46,247 46.5,247 47,246.5 47.5,246.5 48,246 48.5,246 49,245.5 49,245 49.5,245 50,244.5 50.5,244.5 51,244 51.5,243.5 52,243 52,243 52.5,242.5 53,242 53.5,241.5 54,241 54.5,240.5 55,240.5 55.5,240 55.5,239.5 56,239 56.5,238.5 57,238 57.5,237.5 58,237 58.5,236.5 58.5,235.5 59,235 59.5,234.5 60,234 60.5,233.5 61,233 61.5,232 61.5,231.5 62,231 62.5,230.5 63,229.5 63.5,229 64,228.5 64.5,227.5 64.5,227 65,226 65.5,225.5 66,225 66.5,224 67,223.5 67.5,222.5 67.5,222 68,221 68.5,220.5 69,219.5 69.5,219 70,218 70.5,217.5 70.5,216.5 71,215.5 71.5,215 72,214 72.5,213.5 73,212.5 73.5,212 74,211 74,210 74.5,209.5 75,208.5 75.5,207.5 76,207 76.5,206 77,205.5 77,204.5 77.5,203.5 78,203 78.5,202 79,201 79.5,200.5 80,199.5 80,199 80.5,198 81,197 81.5,196.5 82,195.5 82.5,195 83,194 83,193.5 83.5,192.5 84,192 84.5,191 85,190.5 85.5,189.5 86,189 86,188 86.5,187.5 87,186.5 87.5,186 88,185.5 88.5,184.5 89,184 89,183.5 89.5,183 90,182 90.5,181.5 91,181 91.5,180.5 92,180 92,179 92.5,178.5 93,178 93.5,177.5 94,177 94.5,176.5 95,176 95,175.5 95.5,175.5 96,175 96.5,174.5 97,174 97.5,173.5 98,173.5 98.5,173 98.5,172.5 99,172.5 99.5,172 100,172 100.5,171.5 101,171.5 101.5,171 101.5,171 102,171 102.5,170.5 103,170.5 103.5,170.5 104,170 104.5,170 104.5,170 105,170 105.5,170 106,170 106.5,170 107,170 107.5,170 107.5,170 108,170 108.5,170.5 109,170.5 109.5,170.5 110,171 110.5,171 110.5,171 111,171.5 111.5,171.5 112,172 112.5,172 113,172.5 113.5,172.5 113.5,173 114,173.5 114.5,173.5 115,174 115.5,174.5 116,175 116.5,175.5 117,175.5 117,176 117.5,176.5 118,177 118.5,177.5 119,178 119.5,178.5 120,179 120,180 120.5,180.5 121,181 121.5,181.5 122,182 122.5,183 123,183.5 123,184 123.5,184.5 124,185.5 124.5,186 125,186.5 125.5,187.5 126,188 126,189 126.5,189.5 127,190.5 127.5,191 128,192 128.5,192.5 129,193.5 129,194 129.5,195 130,195.5 130.5,196.5 131,197 131.5,198 132,199 132,199.5 132.5,200.5 133,201 133.5,202 134,203 134.5,203.5 135,204.5 135,205.5 135.5,206 136,207 136.5,207.5 137,208.5 137.5,209.5 138,210 138,211 138.5,212 139,212.5 139.5,213.5 140,214 140.5,215 141,215.5 141.5,216.5 141.5,217.5 142,218 142.5,219 143,219.5 143.5,220.5 144,221 144.5,222 144.5,222.5 145,223.5 145.5,224 146,225 146.5,225.5 147,226 147.5,227 147.5,227.5 148,228.5 148.5,229 149,229.5 149.5,230.5 150,231 150.5,231.5 150.5,232 151,233 151.5,233.5 152,234 152.5,234.5 153,235 153.5,235.5 153.5,236.5 154,237 154.5,237.5 155,238 155.5,238.5 156,239 156.5,239.5 156.5,240 157,240.5 157.5,240.5 158,241 158.5,241.5 159,242 159.5,242.5 160,243 160,243 160.5,243.5 161,244 161.5,244.5 162,244.5 162.5,245 163,245 163,245.5 163.5,246 164,246 164.5,246.5 165,246.5 165.5,247 166,247 166,247.5 166.5,247.5 167,248 167.5,248 168,248 168.5,248.5 169,248.5 169,248.5 169.5,249 170,249 170.5,249 171,249 171.5,249.5 172,249.5 172,249.5 172.5,249.5 173,249.5 173.5,249.5 174,250 174.5,250 175,250 175,250 175.5,250 176,250 176.5,250 177,250 177.5,250 178,250 178,250 178.5,250 179,250 179.5,250 180,250 180.5,250 181,250 181,250 181.5,250 182,249.5 182.5,249.5 183,249.5 183.5,249.5 184,249.5 184.5,249.5 184.5,249.5 185,249.5 185.5,249 186,249 186.5,249 187,249 187.5,249 187.5,249 188,249 188.5,248.5 189,248.5 189.5,248.5 190,248.5 190.5,248.5 190.5,248.5 191,248 191.5,248 192,248" fill="none" stroke="#c92a2a" stroke-width="3" stroke-linejoin="round"/>
+  <line x1="20" y1="250" x2="181" y2="250" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M192,250 L180,255.5 L180,244.5 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="113" y1="80" x2="113" y2="250" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt" stroke-dasharray="5 4"/>
+  <foreignObject x="117" y="257.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#2b8a3e">$x_0$</div></foreignObject>
+  <foreignObject x="168" y="257.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$x$</div></foreignObject>
+  <foreignObject x="210" y="21.5" width="180" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{two slits}$</div></foreignObject>
+  <rect x="214" y="80" width="172" height="170" fill="#eef5f9"/>
+  <polyline points="214,246 214.5,246.5 215,246.5 215.5,247 215.5,247 216,247.5 216.5,248 217,248.5 217.5,248.5 218,249 218.5,249 218.5,249.5 219,249.5 219.5,250 220,250 220.5,250 221,250 221.5,250 221.5,250 222,250 222.5,250 223,250 223.5,250 224,250 224.5,250 225,250 225,250 225.5,250 226,250 226.5,250 227,250 227.5,250 228,250 228,250 228.5,250 229,250 229.5,250 230,250 230.5,250 231,250 231,250 231.5,250 232,250 232.5,250 233,250 233.5,250 234,250 234,250 234.5,250 235,250 235.5,250 236,250 236.5,250 237,250 237,249.5 237.5,249.5 238,249 238.5,248.5 239,248 239.5,247 240,246.5 240,245.5 240.5,245 241,244 241.5,243 242,242.5 242.5,241.5 243,241 243,240.5 243.5,240.5 244,240 244.5,240.5 245,240.5 245.5,241 246,242 246,243 246.5,244 247,245 247.5,246 248,247 248.5,248 249,249 249.5,249.5 249.5,250 250,250 250.5,249.5 251,248.5 251.5,247 252,245 252.5,243 252.5,240 253,237 253.5,233.5 254,230 254.5,226.5 255,222.5 255.5,219 255.5,216 256,213 256.5,211 257,209.5 257.5,208.5 258,208 258.5,208.5 258.5,210 259,212.5 259.5,215 260,218.5 260.5,222.5 261,226.5 261.5,231 261.5,235.5 262,239.5 262.5,243 263,246 263.5,248.5 264,249.5 264.5,250 264.5,249 265,246.5 265.5,243.5 266,238.5 266.5,233 267,226.5 267.5,219 268,211 268,202.5 268.5,194.5 269,186.5 269.5,179 270,172 270.5,166.5 271,162 271,159 271.5,157.5 272,158 272.5,160 273,163.5 273.5,169 274,175.5 274,183 274.5,191.5 275,200.5 275.5,209.5 276,219 276.5,227.5 277,235 277,241 277.5,246 278,249 278.5,250 279,249 279.5,246 280,240.5 280,233 280.5,224 281,213.5 281.5,202 282,189.5 282.5,176.5 283,163.5 283,151.5 283.5,140 284,130 284.5,121.5 285,115.5 285.5,111.5 286,109.5 286,110.5 286.5,114 287,120 287.5,128 288,138 288.5,149.5 289,162.5 289,175.5 289.5,189.5 290,202.5 290.5,215 291,226 291.5,235.5 292,242.5 292.5,247.5 292.5,250 293,249.5 293.5,246 294,240.5 294.5,232 295,221.5 295.5,209 295.5,195.5 296,180.5 296.5,165.5 297,150.5 297.5,136.5 298,123.5 298.5,112 298.5,102.5 299,95.5 299.5,91.5 300,90 300.5,91.5 301,95.5 301.5,102.5 301.5,112 302,123.5 302.5,136.5 303,150.5 303.5,165.5 304,180.5 304.5,195.5 304.5,209 305,221.5 305.5,232 306,240.5 306.5,246 307,249.5 307.5,250 307.5,247.5 308,242.5 308.5,235.5 309,226 309.5,215 310,202.5 310.5,189.5 311,175.5 311,162.5 311.5,149.5 312,138 312.5,128 313,120 313.5,114 314,110.5 314,109.5 314.5,111.5 315,115.5 315.5,121.5 316,130 316.5,140 317,151.5 317,163.5 317.5,176.5 318,189.5 318.5,202 319,213.5 319.5,224 320,233 320,240.5 320.5,246 321,249 321.5,250 322,249 322.5,246 323,241 323,235 323.5,227.5 324,219 324.5,209.5 325,200.5 325.5,191.5 326,183 326,175.5 326.5,169 327,163.5 327.5,160 328,158 328.5,157.5 329,159 329,162 329.5,166.5 330,172 330.5,179 331,186.5 331.5,194.5 332,202.5 332,211 332.5,219 333,226.5 333.5,233 334,238.5 334.5,243.5 335,246.5 335.5,249 335.5,250 336,249.5 336.5,248.5 337,246 337.5,243 338,239.5 338.5,235.5 338.5,231 339,226.5 339.5,222.5 340,218.5 340.5,215 341,212.5 341.5,210 341.5,208.5 342,208 342.5,208.5 343,209.5 343.5,211 344,213 344.5,216 344.5,219 345,222.5 345.5,226.5 346,230 346.5,233.5 347,237 347.5,240 347.5,243 348,245 348.5,247 349,248.5 349.5,249.5 350,250 350.5,250 350.5,249.5 351,249 351.5,248 352,247 352.5,246 353,245 353.5,244 354,243 354,242 354.5,241 355,240.5 355.5,240.5 356,240 356.5,240.5 357,240.5 357,241 357.5,241.5 358,242.5 358.5,243 359,244 359.5,245 360,245.5 360,246.5 360.5,247 361,248 361.5,248.5 362,249 362.5,249.5 363,249.5 363,250 363.5,250 364,250 364.5,250 365,250 365.5,250 366,250 366,250 366.5,250 367,250 367.5,250 368,250 368.5,250 369,250 369,250 369.5,250 370,250 370.5,250 371,250 371.5,250 372,250 372,250 372.5,250 373,250 373.5,250 374,250 374.5,250 375,250 375,250 375.5,250 376,250 376.5,250 377,250 377.5,250 378,250 378.5,250 378.5,250 379,250 379.5,250 380,250 380.5,250 381,249.5 381.5,249.5 381.5,249 382,249 382.5,248.5 383,248.5 383.5,248 384,247.5 384.5,247 384.5,247 385,246.5 385.5,246.5 386,246" fill="none" stroke="#c92a2a" stroke-width="3" stroke-linejoin="round"/>
+  <line x1="214" y1="250" x2="375" y2="250" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M386,250 L374,255.5 L374,244.5 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="307" y1="80" x2="307" y2="250" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt" stroke-dasharray="5 4"/>
+  <foreignObject x="311" y="257.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#2b8a3e">$x_0$</div></foreignObject>
+  <foreignObject x="362" y="257.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$x$</div></foreignObject>
+  <line x1="206" y1="64" x2="206" y2="300" stroke="#c9c2b2" stroke-width="2" stroke-linecap="butt" stroke-dasharray="6 6"/>
+  <foreignObject x="404" y="21.5" width="180" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{path measured}$</div></foreignObject>
+  <rect x="408" y="80" width="172" height="170" fill="#eef5f9"/>
+  <polyline points="408,248 408.5,248 409,248 409.5,248.5 409.5,248.5 410,248.5 410.5,248.5 411,248.5 411.5,248.5 412,249 412.5,249 412.5,249 413,249 413.5,249 414,249 414.5,249 415,249.5 415.5,249.5 415.5,249.5 416,249.5 416.5,249.5 417,249.5 417.5,249.5 418,249.5 418.5,250 419,250 419,250 419.5,250 420,250 420.5,250 421,250 421.5,250 422,250 422,250 422.5,250 423,250 423.5,250 424,250 424.5,250 425,250 425,250 425.5,250 426,250 426.5,249.5 427,249.5 427.5,249.5 428,249.5 428,249.5 428.5,249.5 429,249 429.5,249 430,249 430.5,249 431,248.5 431,248.5 431.5,248.5 432,248 432.5,248 433,248 433.5,247.5 434,247.5 434,247 434.5,247 435,246.5 435.5,246.5 436,246 436.5,246 437,245.5 437,245 437.5,245 438,244.5 438.5,244.5 439,244 439.5,243.5 440,243 440,243 440.5,242.5 441,242 441.5,241.5 442,241 442.5,240.5 443,240.5 443.5,240 443.5,239.5 444,239 444.5,238.5 445,238 445.5,237.5 446,237 446.5,236.5 446.5,235.5 447,235 447.5,234.5 448,234 448.5,233.5 449,233 449.5,232 449.5,231.5 450,231 450.5,230.5 451,229.5 451.5,229 452,228.5 452.5,227.5 452.5,227 453,226 453.5,225.5 454,225 454.5,224 455,223.5 455.5,222.5 455.5,222 456,221 456.5,220.5 457,219.5 457.5,219 458,218 458.5,217.5 458.5,216.5 459,215.5 459.5,215 460,214 460.5,213.5 461,212.5 461.5,212 462,211 462,210 462.5,209.5 463,208.5 463.5,207.5 464,207 464.5,206 465,205.5 465,204.5 465.5,203.5 466,203 466.5,202 467,201 467.5,200.5 468,199.5 468,199 468.5,198 469,197 469.5,196.5 470,195.5 470.5,195 471,194 471,193.5 471.5,192.5 472,192 472.5,191 473,190.5 473.5,189.5 474,189 474,188 474.5,187.5 475,186.5 475.5,186 476,185.5 476.5,184.5 477,184 477,183.5 477.5,183 478,182 478.5,181.5 479,181 479.5,180.5 480,180 480,179 480.5,178.5 481,178 481.5,177.5 482,177 482.5,176.5 483,176 483,175.5 483.5,175.5 484,175 484.5,174.5 485,174 485.5,173.5 486,173.5 486.5,173 486.5,172.5 487,172.5 487.5,172 488,172 488.5,171.5 489,171.5 489.5,171 489.5,171 490,171 490.5,170.5 491,170.5 491.5,170.5 492,170 492.5,170 492.5,170 493,170 493.5,170 494,170 494.5,170 495,170 495.5,170 495.5,170 496,170 496.5,170.5 497,170.5 497.5,170.5 498,171 498.5,171 498.5,171 499,171.5 499.5,171.5 500,172 500.5,172 501,172.5 501.5,172.5 501.5,173 502,173.5 502.5,173.5 503,174 503.5,174.5 504,175 504.5,175.5 505,175.5 505,176 505.5,176.5 506,177 506.5,177.5 507,178 507.5,178.5 508,179 508,180 508.5,180.5 509,181 509.5,181.5 510,182 510.5,183 511,183.5 511,184 511.5,184.5 512,185.5 512.5,186 513,186.5 513.5,187.5 514,188 514,189 514.5,189.5 515,190.5 515.5,191 516,192 516.5,192.5 517,193.5 517,194 517.5,195 518,195.5 518.5,196.5 519,197 519.5,198 520,199 520,199.5 520.5,200.5 521,201 521.5,202 522,203 522.5,203.5 523,204.5 523,205.5 523.5,206 524,207 524.5,207.5 525,208.5 525.5,209.5 526,210 526,211 526.5,212 527,212.5 527.5,213.5 528,214 528.5,215 529,215.5 529.5,216.5 529.5,217.5 530,218 530.5,219 531,219.5 531.5,220.5 532,221 532.5,222 532.5,222.5 533,223.5 533.5,224 534,225 534.5,225.5 535,226 535.5,227 535.5,227.5 536,228.5 536.5,229 537,229.5 537.5,230.5 538,231 538.5,231.5 538.5,232 539,233 539.5,233.5 540,234 540.5,234.5 541,235 541.5,235.5 541.5,236.5 542,237 542.5,237.5 543,238 543.5,238.5 544,239 544.5,239.5 544.5,240 545,240.5 545.5,240.5 546,241 546.5,241.5 547,242 547.5,242.5 548,243 548,243 548.5,243.5 549,244 549.5,244.5 550,244.5 550.5,245 551,245 551,245.5 551.5,246 552,246 552.5,246.5 553,246.5 553.5,247 554,247 554,247.5 554.5,247.5 555,248 555.5,248 556,248 556.5,248.5 557,248.5 557,248.5 557.5,249 558,249 558.5,249 559,249 559.5,249.5 560,249.5 560,249.5 560.5,249.5 561,249.5 561.5,249.5 562,250 562.5,250 563,250 563,250 563.5,250 564,250 564.5,250 565,250 565.5,250 566,250 566,250 566.5,250 567,250 567.5,250 568,250 568.5,250 569,250 569,250 569.5,250 570,249.5 570.5,249.5 571,249.5 571.5,249.5 572,249.5 572.5,249.5 572.5,249.5 573,249.5 573.5,249 574,249 574.5,249 575,249 575.5,249 575.5,249 576,249 576.5,248.5 577,248.5 577.5,248.5 578,248.5 578.5,248.5 578.5,248.5 579,248 579.5,248 580,248" fill="none" stroke="#c92a2a" stroke-width="3" stroke-linejoin="round"/>
+  <line x1="408" y1="250" x2="569" y2="250" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M580,250 L568,255.5 L568,244.5 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="501" y1="80" x2="501" y2="250" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt" stroke-dasharray="5 4"/>
+  <foreignObject x="505" y="257.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#2b8a3e">$x_0$</div></foreignObject>
+  <foreignObject x="556" y="257.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$x$</div></foreignObject>
+  <line x1="400" y1="64" x2="400" y2="300" stroke="#c9c2b2" stroke-width="2" stroke-linecap="butt" stroke-dasharray="6 6"/>
+  <foreignObject x="120" y="303.5" width="360" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{same total number of hits}$</div></foreignObject>
+</svg>
+
+The phenomenon in which the same object has both wave and particle properties is called **wave-particle duality**. It does not mean that a photon or an electron changes its form. Neither classical model, wave or bullet, describes a quantum object alone, and the experimental arrangement decides which property shows. While travelling, a quantum object behaves like a wave, and when it is detected, it is registered at one place like a particle.
+
+### Four models of the photon
+The photon is described in physics with several models. Each works in its own range of phenomena, and none of them alone is the whole picture.
+
+- **State of the field:** light is an oscillation of the electric and magnetic field that propagates as a wave. The model explains interference and diffraction.
+- **Quantum of the field:** the energy of the radiation field changes only in whole quanta $hf$. The model explains the photoelectric effect and spectral lines.
+- **Quantum particle:** the photon is detected at one place, and it carries energy and momentum. The model explains single hits and the Compton effect.
+- **Mediator of an interaction:** the electromagnetic interaction between electric charges is mediated by photons. The model belongs to the Standard Model of particle physics.
+
+A photon has no rest mass, and in a vacuum it always travels at the speed of light $c$. So it is not a small bullet that could be at rest.
+
+## Formula: Photon momentum
+Although a photon has no mass, it has a momentum that depends on its energy:
+```latex
+p = \frac{E}{c} = \frac{h}{\lambda}
+```
+where $p$ is the momentum of the photon ($\text{kg}\cdot\text{m/s}$), $E = hf = \tfrac{hc}{\lambda}$ the energy of the photon ($\text{J}$), $c = 2.998 \cdot 10^8\,\text{m/s}$ the speed of light, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$ the Planck constant and $\lambda$ the wavelength ($\text{m}$). The unit works out: $\tfrac{\text{J}\,\text{s}}{\text{m}} = \tfrac{\text{kg}\cdot\text{m}^2/\text{s}^2 \cdot \text{s}}{\text{m}} = \text{kg}\cdot\text{m/s}$. The momentum of a photon of visible light is small: at the wavelength $500\,\text{nm}$ it is ${1.3 \cdot 10^{-27}\,\text{kg}\cdot\text{m/s}}$. The momentum of an X-ray photon of wavelength $0.0711\,\text{nm}$ is about $7000$ times as large, ${9.3 \cdot 10^{-24}\,\text{kg}\cdot\text{m/s}}$. A short wavelength thus means a large energy and a large momentum.
+
+### The Compton effect
+In 1923 Arthur Compton directed X-rays at graphite and measured the wavelength of the scattered radiation. The wavelength of the scattered radiation was longer than that of the incident radiation, and the difference grew as the scattering angle grew. This is called the **Compton effect**. The wave model does not explain it: electrons oscillating in time with the wave would radiate at the same frequency as the incident radiation. In the photon model the phenomenon is a collision. The photon gives part of its energy and momentum to an almost free electron, which starts to move. Energy is conserved:
+```latex
+hf = hf' + E_\text{k}
+```
+where $hf$ is the energy of the incident photon, $hf'$ the energy of the scattered photon and $E_\text{k}$ the kinetic energy received by the electron. Because $hf' < hf$, the frequency of the scattered photon is lower and its wavelength $\lambda'$ longer than those of the incident one. Momentum is also conserved as a vector quantity: $\overline{p} = \overline{p}' + \overline{p}_e$, where $\overline{p}_e$ is the momentum of the electron.
+
+<svg data-fig="compton" viewBox="0 0 600 380" role="img" aria-label="The Compton effect as a schematic figure, not to scale. Before: an X-ray photon of energy hf comes from the left towards an electron at rest. After: the photon scatters obliquely upwards, and its wavelength is longer and its energy hf&#x27; smaller; the electron starts to move obliquely downwards, and its velocity is shown by the blue arrow. Below, the violet momentum arrows: the momentum of the incident photon is the vector sum of the momenta of the scattered photon and the electron." style="max-width:100%;font-size:24px">
+  <foreignObject x="108.5" y="7.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{before}$</div></foreignObject>
+  <foreignObject x="415" y="7.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{after}$</div></foreignObject>
+  <line x1="300" y1="12" x2="300" y2="222" stroke="#c9c2b2" stroke-width="2" stroke-linecap="butt" stroke-dasharray="6 6"/>
+  <path d="M24,128 L25,128.5 L26,130 L27,132 L28,134 L29,135 L30,134.5 L31,131.5 L32,128 L33,124.5 L34,121.5 L35,119.5 L36,119 L37,119.5 L38,121.5 L39,124.5 L40,128 L41,131.5 L42,134.5 L43,136.5 L44,137 L45,136.5 L46,134.5 L47,131.5 L48,128 L49,124.5 L50,121.5 L51,119.5 L52,119 L53,119.5 L54,121.5 L55,124.5 L56,128 L57,131.5 L58,134.5 L59,136.5 L60,137 L61,136.5 L62,134.5 L63,131.5 L64,128 L65,124.5 L66,121.5 L67,119.5 L68,119 L69,119.5 L70,121.5 L71,124.5 L72,128 L73,131.5 L74,134.5 L75,136.5 L76,137 L77,136.5 L78,134.5 L79,131.5 L80,128 L81,124.5 L82,121.5 L83,119.5 L84,119 L85,119.5 L86,121.5 L87,124.5 L88,128 L89,131.5 L90,134.5 L91,136.5 L92,137 L93,136.5 L94,134.5 L95,131.5 L96,128 L97,124.5 L98,121.5 L99,119.5 L100,119 L101,119.5 L102,121.5 L103,124.5 L104,128 L105,131.5 L106,134.5 L107,136.5 L108,137 L109,136.5 L110,134.5 L111,131.5 L112,128 L113,124.5 L114,121.5 L115,119.5 L116,119 L117,119.5 L118,121.5 L119,124.5 L120,128 L121,131.5 L122,134.5 L123,136.5 L124,137 L125,136.5 L126,134.5 L127,131.5 L128,128 L129,124.5 L130,121.5 L131,119.5 L132,119 L133,119.5 L134,121.5 L135,124.5 L136,128 L137,131.5 L138,134.5 L139,136.5 L140,137 L141,136.5 L142,134.5 L143,131.5 L144,128 L145,124.5 L146,121.5 L147,119.5 L148,119 L149,119.5 L150,121.5 L151,124.5 L152,128 L153,131.5 L154,134.5 L155,136.5 L156,137 L157,136.5 L158,134.5 L159,131.5 L160,128 L161,124.5 L162,121.5 L163,119.5 L164,119 L165,119.5 L166,121.5 L167,124.5 L168,128 L169,131.5 L170,134.5 L171,136.5 L172,137 L173,136.5 L174,134.5 L175,131.5 L176,128 L177,124.5 L178,121.5 L179,119.5 L180,119 L181,119.5 L182,121.5 L183,124.5 L184,128 L185,131.5 L186,134.5 L187,136.5 L188,137 L189,136.5 L190,134.5 L191,131 L192,128 L193,126.5 L194,126 L195,126.5 L196,128" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M212,128 L196,135 L196,121 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <foreignObject x="93.5" y="81.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$hf$</div></foreignObject>
+  <circle cx="238" cy="128" r="11" fill="#1971c2" stroke="#1f2933" stroke-width="2"/>
+  <foreignObject x="221.5" y="147.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2">$e^-$</div></foreignObject>
+  <foreignObject x="196.5" y="181.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{at rest}$</div></foreignObject>
+  <path d="M352,122 L353,122 L354.5,122.5 L355.5,123.5 L357.5,125 L359,126.5 L360.5,128 L361.5,128 L362.5,127.5 L363.5,127 L364,126 L364.5,124.5 L365,123 L365.5,121 L366,119 L366,117 L366.5,115 L366.5,112.5 L367,111 L367.5,109 L368,108 L369,107 L369.5,106 L370.5,105.5 L371.5,105.5 L373,106 L374,107 L375.5,108 L377,109 L378.5,110.5 L380,111.5 L382,113 L383.5,114.5 L385,115.5 L386,116.5 L387.5,117.5 L389,117.5 L390,117.5 L391,117.5 L391.5,116.5 L392,115.5 L393,114 L393.5,112.5 L393.5,110.5 L394,108.5 L394.5,106.5 L394.5,104.5 L395,102.5 L395.5,100.5 L395.5,99 L396.5,97.5 L397,96.5 L398,95.5 L398.5,95.5 L400,95.5 L401,96 L402.5,96.5 L403.5,97.5 L405,98.5 L407,100 L408.5,101.5 L410,103 L411.5,104 L413,105.5 L414.5,106.5 L415.5,107 L417,107.5 L418,107.5 L419,107 L419.5,106.5 L420.5,105.5 L421,104 L421.5,102.5 L422,100.5 L422,98.5 L422.5,96.5 L422.5,94 L423,92 L423.5,90.5 L424,88.5 L424.5,87 L425,86 L426,85.5 L427,85 L428,85 L429,85.5 L430.5,86 L432,87 L433.5,88.5 L435,89.5 L436.5,91 L438,92.5 L439.5,94 L441,95 L442.5,96 L444,96.5 L445,97 L446,97 L447,97 L448,96 L448.5,95 L449,93.5 L449.5,92 L450,90 L450.5,88 L450.5,86 L451,84 L451,82 L451.5,80 L452,78.5 L452.5,77 L453.5,76 L454,75 L455,75 L456,75 L457.5,75 L458.5,76 L460,77 L461.5,78 L463,79.5 L464.5,81 L466.5,82 L468,83.5 L469.5,85 L471,85.5 L472,86.5 L473.5,87 L474.5,87 L475.5,86.5 L476,86 L477,84.5 L477.5,83.5 L478,81.5 L478,80 L478.5,78 L479,75.5 L479,73.5 L479.5,71.5 L480,69.5 L480.5,68 L481,66.5 L481.5,65.5 L482.5,65 L483,64.5 L484.5,64.5 L485.5,65 L487,65.5 L488.5,66.5 L490,68 L491.5,69 L493,70.5 L494.5,72 L496,73.5 L497.5,74.5 L499,75.5 L500.5,76 L501.5,76.5 L502.5,76.5 L503.5,76 L504.5,75.5 L505,74.5 L505.5,73 L506,71.5 L506.5,69.5 L506.5,67.5 L507,65.5 L507.5,63.5 L507.5,61 L508,59.5 L508.5,57.5 L509,56.5 L509.5,55.5 L510.5,54.5 L511.5,54 L512.5,54 L513.5,54.5 L515,55.5 L516.5,56.5 L518,57.5 L519.5,59 L521,60 L522.5,61.5 L524,63 L525.5,64 L527,65 L528.5,66 L529.5,66 L530.5,66 L531.5,66 L532.5,65 L533,64 L533.5,62.5 L534,61 L534.5,59 L535,57 L535,55 L535.5,53 L536,51 L536,49 L536.5,47.5 L537.5,46.5 L538.5,47 L540,48 L541.5,49 L543,50 L544.5,51" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M560,46 L547.5,58.5 L542.5,44.5 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <foreignObject x="492" y="89.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$hf'$</div></foreignObject>
+  <circle cx="448" cy="174" r="11" fill="#1971c2" stroke="#1f2933" stroke-width="2"/>
+  <line x1="462.5" y1="181" x2="528.5" y2="211.5" stroke="#1971c2" stroke-width="3" stroke-linecap="butt"/>
+  <path d="M540.5,217 L525,216.5 L530.5,205.5 Z" fill="#1971c2" stroke-linejoin="round"/>
+  <foreignObject x="546.5" y="188.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$\overline{v}$</div></foreignObject>
+  <foreignObject x="401" y="189.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#1971c2">$e^-$</div></foreignObject>
+  <circle cx="348" cy="128" r="4" fill="#6b7480"/>
+  <line x1="348" y1="128" x2="437" y2="169" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="4 4"/>
+  <line x1="12" y1="240" x2="588" y2="240" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="150" y1="312" x2="435" y2="312" stroke="#7048e8" stroke-width="3.5" stroke-linecap="butt"/>
+  <path d="M450,312 L434,319 L434,305 Z" fill="#7048e8" stroke-linejoin="round"/>
+  <foreignObject x="245" y="309" width="110" height="58" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#7048e8">$\overline{p} = \dfrac{h}{\lambda}$</div></foreignObject>
+  <line x1="150" y1="312" x2="307.5" y2="256.5" stroke="#7048e8" stroke-width="3" stroke-linecap="butt"/>
+  <path d="M320,252 L309,262.5 L304.5,250.5 Z" fill="#7048e8" stroke-linejoin="round"/>
+  <foreignObject x="169" y="247.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#7048e8">$\overline{p}'$</div></foreignObject>
+  <line x1="320" y1="252" x2="438" y2="306.5" stroke="#7048e8" stroke-width="3" stroke-linecap="butt"/>
+  <path d="M450,312 L434.5,312 L440,300.5 Z" fill="#7048e8" stroke-linejoin="round"/>
+  <foreignObject x="408" y="251.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#7048e8">$\overline{p}_e$</div></foreignObject>
+  <foreignObject x="20" y="279.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$\text{momenta}$</div></foreignObject>
+</svg>
+
+### Photon flow
+The power $P$ of light tells how much energy the light carries per second. Because each photon brings the energy $hf$, the number of photons passing per second is
+```latex
+\frac{N}{t} = \frac{P}{hf}
+```
+where $N$ is the number of photons, $t$ the time ($\text{s}$), $P$ the power ($\text{W}$) and $hf$ the energy of one photon ($\text{J}$). In ordinary light there are so many photons that the light looks like a continuous stream. Only in very weak light do single photons stand out.
+
+## Worked example
+In a double-slit experiment, red laser light of wavelength $633\,\text{nm}$ is used. The light is dimmed with filters so that the power of the light arriving at the slits is $1.0 \cdot 10^{-13}\,\text{W}$. How many photons arrive at the slits per second, and how long is the distance between successive photons on average? Is there usually more than one photon at a time in an apparatus of length $1.2\,\text{m}$?
+
+<!-- vaihe -->
+
+**Given and asked.** ${\lambda = 633\,\text{nm}}$, ${P = 1.0 \cdot 10^{-13}\,\text{W}}$, ${h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}}$ and ${c = 2.998 \cdot 10^8\,\text{m/s}}$. We are asked for the number of photons per second $\tfrac{N}{t}$ and the average distance $d$ between successive photons.
+
+<!-- vaihe -->
+
+**Principle.** The energy of light travels as photons, so the power is the total energy of the photons arriving per second: $P = \tfrac{N}{t} \cdot hf$. The photons travel at the speed $c$. In one second the light advances the distance $c$, and $\tfrac{N}{t}$ photons fit in this distance, so the average gap is the distance divided by the number of photons.
+
+<!-- vaihe -->
+
+**Formula solved.**
+```latex
+\begin{aligned}
+&\frac{N}{t} = \frac{P}{hf}, \quad hf = \frac{hc}{\lambda} \\
+&d = \frac{c}{N/t}
+\end{aligned}
+```
+
+<!-- vaihe -->
+
+**Unit conversions.** The wavelength in metres: $633\,\text{nm} = 633 \cdot 10^{-9}\,\text{m}$. The power is already in watts, that is, joules per second.
+
+<!-- vaihe -->
+
+**Substitution.** First we calculate the energy of one photon, then the number of photons per second and finally the gap between them:
+```latex
+\begin{aligned}
+&hf = \frac{hc}{\lambda} \\
+&= \frac{6.626 \cdot 10^{-34}\,\text{J}\,\text{s}}{633 \cdot 10^{-9}\,\text{m}} \\
+&\quad \cdot 2.998 \cdot 10^{8}\,\tfrac{\text{m}}{\text{s}} \\
+&= 3.138 \cdot 10^{-19}\,\text{J} \\[6pt]
+&\frac{N}{t} = \frac{P}{hf} \\
+&= \frac{1.0 \cdot 10^{-13}\,\text{W}}{3.138 \cdot 10^{-19}\,\text{J}} \\
+&= 3.187 \cdot 10^{5}\,\tfrac{1}{\text{s}} \\[6pt]
+&d = \frac{c}{N/t} \\
+&= \frac{2.998 \cdot 10^{8}\,\text{m/s}}{3.187 \cdot 10^{5}\,\tfrac{1}{\text{s}}} \\
+&= 940.8\,\text{m}
+\end{aligned}
+```
+
+<!-- vaihe -->
+
+**Answer.** About $3.2 \cdot 10^5$ photons arrive at the slits per second, and the gap between successive photons is on average about $9.4 \cdot 10^2\,\text{m}$. Two significant figures, because the power $1.0 \cdot 10^{-13}\,\text{W}$ is known to two figures. The length of the apparatus, $1.2\,\text{m}$, is only about a thousandth ($0.13\,\%$) of the gap between the photons, so there is usually at most one photon in the apparatus at a time.
+
+<!-- vaihe -->
+
+**Reasonableness.** On average there are $1.2\,\text{m} : 940.8\,\text{m} \approx 0.0013$ photons in the apparatus, so most of the time there is no photon at all and two at once is rare. An ordinary $1\,\text{mW}$ laser pointer emits about $3 \cdot 10^{15}$ photons per second, so the light has been dimmed by a factor of about $10^{10}$, which dark filters can do. The fringe pattern therefore cannot arise from interaction between the photons.
+
+## Common misconception
+Many people think that the fringe pattern of the double-slit experiment arises when photons or electrons collide with each other, or that each quantum passes through just one of the slits like a small bullet. In the weak light of the example the photons arrive one at a time, and the pattern still arises. When the same total number of hits is counted, in the bullet model the share $n : N$ of hits at a given place would stay the same as with one slit, because the second slit would only add hits (if the source emits the same number of quanta per second for the same time). In reality the share of hits in the dark fringes is clearly smaller than with one slit.
+
+Another mistake is to think that a photon has no momentum because it has no mass. In the Compton effect the photon gives the electron both energy and momentum, and light that is reflected from a mirror or absorbed by a surface pushes on it. The momentum of a photon is $p = \tfrac{h}{\lambda}$.
+
+A third mistake is to think that wave-particle duality means that the object is sometimes a wave and sometimes a particle. A quantum object is the same all the time: the wave model gives the probability of detection, and when it is detected, the quantum is registered at one place.
+
+## Summary
+- In the double-slit experiment, single photons and electrons hit the screen one at a time at random places, but thousands of hits form the fringe pattern of the wave model.
+- The wave gives the probability: where the intensity of the wave is large, many hits arrive. If it is measured through which slit the quantum passes, the fringes disappear.
+- Wave-particle duality: photons and electrons have both wave and particle properties, and the experimental arrangement decides which shows.
+- The photon is described by four models: state of the field, quantum of the field, quantum particle and mediator of an interaction.
+- The momentum of a photon is $p = \tfrac{E}{c} = \tfrac{h}{\lambda}$. In the Compton effect the photon gives the electron energy and momentum, so the wavelength of the scattered photon is longer: $hf = hf' + E_\text{k}$.
+- The number of photons per second is $\tfrac{N}{t} = \tfrac{P}{hf}$.

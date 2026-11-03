@@ -156,6 +156,8 @@ When the trolley is pulled to the right, the spring stretches and pulls the trol
   <foreignObject x="72" y="293.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#c92a2a">$\overline{F}$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy5/spring-rider-suomenlinna.webp" alt="A small child sits on a yellow lion-shaped rider fixed to the ground by a thick coil spring."><figcaption>A spring rider in Suomenlinna, Helsinki. When the rider tilts to one side, the spring pulls it back towards the equilibrium position, and the rider rocks back and forth.</figcaption></figure>
+
 ### Harmonic force
 When a spring is neither stretched nor compressed too much, the magnitude of the spring force is directly proportional to the displacement: double the displacement gives double the force. A force whose magnitude is directly proportional to the displacement of an object from the equilibrium position and which always points towards the equilibrium position is called a **harmonic force**. The force of a spring is its most common example. The restoring force of a pendulum is also approximately harmonic for small swings. In the chapter *The mass–spring oscillator and the pendulum* we see what kind of motion a harmonic force produces.
 

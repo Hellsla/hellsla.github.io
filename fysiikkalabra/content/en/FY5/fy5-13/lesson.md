@@ -323,6 +323,8 @@ where $f_n$ is the $n$th natural frequency (Hz), $v$ the speed of the wave in th
   <foreignObject x="252" y="359.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$L$</span></div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy5/guitar-playing.webp" alt="A close-up of an acoustic guitar. One hand plucks the strings at the sound hole, and the fingers of the other hand press the strings against the fingerboard."><figcaption>Playing the guitar. When the player presses a string against the fingerboard, the vibrating part of the string becomes shorter and the fundamental frequency increases.</figcaption></figure>
+
 ### An instrument and its pitch
 The formula tells how the pitch of a string instrument is changed. When the player presses the string against the fingerboard, the vibrating part $L$ becomes shorter and the fundamental frequency increases. When the string is tightened with the tuning peg, the speed $v$ of the wave in the string increases and the fundamental frequency rises. At the same tension a thick, heavy string carries a wave more slowly than a thin one, which is why bass strings sound low. The vibrating string makes the body of the instrument and the air vibrate at the same frequency, so the frequency of the sound we hear is the frequency of the string's vibration.
 

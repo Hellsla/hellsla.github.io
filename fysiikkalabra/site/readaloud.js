@@ -441,6 +441,8 @@
   }
   const NEURAL_LANGS = ['ar', 'bg', 'cs', 'da', 'de', 'el', 'en', 'es', 'et', 'fi', 'fr', 'hi', 'hr', 'hu', 'id', 'it', 'ja', 'ko', 'lt', 'lv', 'nl', 'pl', 'pt', 'ro', 'ru', 'sk', 'sl', 'sv', 'tr', 'uk', 'vi'];
   const VOICE_ID = { female: 0, male: 5 };       // voice.bin holds F1..F5, then M1..M5
+  const VOICE_LANG = { fi: { female: 1, male: 8 } };   // teacher 2026-11-03: Finnish F2 and M4; English F1 and M1
+  const voiceId = (l2) => { const o = VOICE_LANG[l2]; return o && o[voiceChoice] != null ? o[voiceChoice] : VOICE_ID[voiceChoice]; };
   const BASE = new URL('.', (SCRIPT && SCRIPT.src) || location.href).href;
   const neural = {
     ok: canNeural, failed: false, ready: null, ep: null, pool: [], ctx: null, src: null, cache: new Map(), seq: 0, progress: 0, queue: [], keepFrom: 0,
@@ -589,16 +591,24 @@
   const langOf = (el) => { const host = el.closest('[lang]'); return ((host && host.getAttribute('lang')) || pageLang).toLowerCase(); };
   const neuralSpeed = () => Math.min(2, Math.max(0.7, 1.05 * rate));
   const useNeural = (lang) => neural.ok && !neural.failed && NEURAL_LANGS.includes(lang.slice(0, 2));
-  function peekNext(count) {                      // the sentences after this one, to synthesise while this one plays
+  // The neural voice reads up to three short sentences of one block at a time (at most 280 characters, as Supertonic's
+  // own reader joins text): fewer joins, so the voice changes less often. A fresh start reads one sentence, to begin soon.
+  function chunkEnd(blk, k, fresh) {
+    let j = k + 1;
+    if (!fresh) while (j < blk.sents.length && j - k < 3 && blk.sents[j][1] - blk.sents[k][0] <= 280) j++;
+    return j;
+  }
+  function peekNext(count, end) {                 // the chunks after this one, to synthesise while this one plays
     const out = []; if (!cur) return out;
-    let blk = cur, k = si + 1;
+    let blk = cur, k = end;
     while (out.length < count) {
       if (k >= blk.sents.length) { blk = nextBlock(blk.el, 1); k = 0; if (!blk) break; }
-      const [a, b] = blk.sents[k++]; out.push({ text: blk.text.slice(a, b), el: blk.el });
+      const j = chunkEnd(blk, k, false);
+      out.push({ text: blk.text.slice(blk.sents[k][0], blk.sents[j - 1][1]), el: blk.el }); k = j;
     }
     return out;
   }
-  function speakSentence() {
+  function speakSentence(chained) {
     if (!cur) return finish();
     if (si >= cur.sents.length) { const n = nextBlock(cur.el, 1); if (!n) return finish(); cur = n; si = 0; mark(cur.el); }
     if (si < 0) { const n = nextBlock(cur.el, -1); if (!n) { si = 0; } else { cur = n; si = n.sents.length - 1; mark(cur.el); } }
@@ -607,20 +617,26 @@
     const my = ++token;
     const lang = langOf(cur.el);
     paint(null);
-    if (useNeural(lang)) return speakNeural(text, lang.slice(0, 2), my);
+    if (useNeural(lang)) {
+      const j = chunkEnd(cur, si, !chained), marks = [], a0 = cur.sents[si][0], all = cur.sents[j - 1][1] - a0;
+      for (let k = si + 1; k < j; k++) marks.push([k, (cur.sents[k][0] - a0) / all]);   // where each sentence starts, as a share of the chunk
+      return speakNeural(cur.text.slice(a0, cur.sents[j - 1][1]), lang.slice(0, 2), my, j, marks);
+    }
     if (!synth) { si++; return speakSentence(); }
     speakBrowser(text, lang, a, my);
   }
-  function speakNeural(text, l2, my) {
+  function speakNeural(text, l2, my, end, marks) {
     neural.start();
     loadNote();
-    const job = neural.synth(text, l2, VOICE_ID[voiceChoice], neuralSpeed());
+    const job = neural.synth(text, l2, voiceId(l2), neuralSpeed());
     // the next sentences queue up behind this one, so a free worker starts them while this one is still being made
-    peekNext(3).forEach((n) => { if (useNeural(langOf(n.el))) neural.synth(n.text, langOf(n.el).slice(0, 2), VOICE_ID[voiceChoice], neuralSpeed()).catch(() => {}); });
+    peekNext(3, end).forEach((n) => { if (useNeural(langOf(n.el))) neural.synth(n.text, langOf(n.el).slice(0, 2), voiceId(langOf(n.el).slice(0, 2)), neuralSpeed()).catch(() => {}); });
     job.then((d) => {
       if (my !== token || !playing) return;
       if (!ui.note.dataset.keep) showNote(null);
-      neural.play(d, () => { if (my !== token || !playing) return; si++; speakSentence(); });
+      neural.play(d, () => { if (my !== token || !playing) return; si = end; speakSentence(true); });
+      const len = d.pcm.length / d.sr * 1000;
+      marks.forEach(([k, at]) => setTimeout(() => { if (my === token && playing) { si = k; paint(null); } }, at * len));
     }, (err) => {
       if (my !== token) return;
       if (neural.failed) {                         // the model did not load: the device's own voice reads on
@@ -628,7 +644,7 @@
         if (!haveVoice()) { stop(); offer(); showNote(msg('ra_no_lang_voice')); return; }
         showNote(msg('ra_fallback')); ui.note.dataset.keep = '1';
         if (playing) speakSentence();
-      } else if (playing && String(err && err.message) !== 'skipped') { si++; speakSentence(); }
+      } else if (playing && String(err && err.message) !== 'skipped') { si = end; speakSentence(true); }
     });
   }
   function speakBrowser(text, lang, a, my) {

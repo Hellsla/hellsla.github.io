@@ -196,6 +196,8 @@ Kun harmonisen värähtelijän paikka piirretään ajan funktiona, saadaan sinia
   <line x1="380" y1="96" x2="380" y2="96" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy5/foucault-pendulum.webp" alt="Kiiltävä metallipallo riippuu ohuen vaijerin varassa värikkään pyöreän alustan yllä. Alustan reunalla on numeroituja pieniä nappuloita."><figcaption>Foucault'n heiluri Saitaman nuorisotiedemuseossa Japanissa. Kun heilahdukset ovat pieniä, heilurin jaksonaika ei riipu amplitudista vaan vain heilurin pituudesta ja putoamiskiihtyvyydestä.</figcaption></figure>
+
 ### Miksi amplitudi ei muuta jaksonaikaa
 Harmonisella värähtelijällä on erikoinen ominaisuus. Jos amplitudi kaksinkertaistetaan, kappaleen matka yhden jakson aikana kaksinkertaistuu. Samalla myös voima jokaisessa vastaavassa kohdassa kaksinkertaistuu, koska $F$ on verrannollinen poikkeamaan. Kaksinkertainen voima antaa kaksinkertaisen kiihtyvyyden, ja samassa ajassa kaksinkertainen kiihtyvyys kasvattaa nopeutta kaksinkertaisesti. Pidempi matka kuljetaan siis suuremmalla nopeudella, ja aikaa kuluu yhtä paljon. Harmonisen värähtelijän jaksonaika ei riipu amplitudista. Se riippuu vain siitä, kuinka suuri massa on liikkeessä ja kuinka jäykkä jousi sitä palauttaa.
 
