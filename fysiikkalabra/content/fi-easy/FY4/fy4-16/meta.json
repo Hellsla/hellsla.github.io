@@ -24,7 +24,7 @@
     },
     {
       "term": "rajanopeus",
-      "explain": "Nopeus, jolla ilmanvastus on yhtä suuri kuin paino. Silloin nopeus ei enää kasva."
+      "explain": "Nopeus, jolla ilmanvastus on yhtä suuri kuin paino. Silloin nopeus ei enää muutu."
     },
     {
       "term": "liikekitka",

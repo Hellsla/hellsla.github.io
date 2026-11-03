@@ -30,7 +30,7 @@
     },
     {
       "term": "lepokitka",
-      "explain": "Kitka, joka pitää kappaleen paikallaan. Se voi kasvaa vain tiettyyn ylärajaan asti."
+      "explain": "Kitka, joka pitää kappaleen paikallaan pinnan suhteen. Se voi kasvaa vain tiettyyn ylärajaan asti."
     },
     {
       "term": "liikekitka",

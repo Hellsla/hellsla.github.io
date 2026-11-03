@@ -26,7 +26,7 @@
     },
     {
       "term": "mittausepävarmuus",
-      "explain": "Kertoo, kuinka paljon mittaustulos voi erota oikeasta arvosta."
+      "explain": "Arvio siitä, kuinka paljon mittaustulos voi erota oikeasta arvosta. Se ei ole varma raja."
     }
   ],
   "sim": false,

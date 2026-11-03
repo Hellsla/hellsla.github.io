@@ -1,13 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 1154302d46e52d67
+CONTENT-HASH: 1a1982245e71552e
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- meta.json "paine": "kohdistuu tietylle pinta-alalle" should say "pinta-alaa kohti" (as fy3-3 does); "tiheys": "tilavuusyksikköä kohti".
+- meta.json "ilmanpaine": "Ilman aiheuttama paine" says little; "Ilmakehän paine, merenpinnalla noin 101 kPa".
 
 ## Checked
-- Translation reviewed against the reviewed Finnish after the typesetting round: every inline-math segment of lesson.md, inquiry.json, exit-ticket.json, figures.json compared with the Finnish (same numbers, units, symbols, decimal comma); no bare number+unit left outside LaTeX; sentences remain short and plain; JSON valid; check_i18n 0 errors for fi-easy.
-- Physics: numbers, answers and formulas identical to the Finnish; no new claim introduced.
-- Translation-only review (teacher's procedure 2026-10-28); no translation edits were needed.
+- batch delta review: key_concepts, reworded sentences, photo captions, objective-form and level-policy edits, chapter-reference titles judged against the guardrails and the lesson text; restyled figure lines are styling only.

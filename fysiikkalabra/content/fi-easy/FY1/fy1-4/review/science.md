@@ -1,17 +1,11 @@
-VERDICT: PASS
-CONTENT-HASH: 30aca255a313f16c
+VERDICT: FAIL
+CONTENT-HASH: 72564dd0d713b3ac
 
 ## Blocking
-(none left; list what you fixed under Fixed)
-
-## Fixed
-- lesson.md:36 — "Jos haluat $x$:n ja $y$ tunnetaan" (unclear which is known) → "Joskus $y$ tunnetaan ja halutaan $x$. Silloin ratkaise…"
-- lesson.md:109 — "Vakiotermi ei aina ole nolla. Silloin suureet eivät ole suoraan verrannolliset" (condition lost) → "Jos vakiotermi ei ole nolla, suureet eivät ole suoraan verrannolliset."
+- A. lesson.md, Ydinajatus (lineaarinen malli): "Mittaukset osoittavat, että malli pätee eli toimii vain mitatulla alueella." The rewording changes the meaning: it now says the model works only inside the measured range, which contradicts the next sentences (the line may be extended as an estimate). Write: "Mittaukset osoittavat, että malli pätee eli toimii mitatulla alueella. Sen ulkopuolelta mittaukset eivät kerro mitään."
 
 ## Polish
-- (none)
+- none
 
 ## Checked
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): lesson.md, inquiry.json, exit-ticket.json, figures.json against content/fi: same physics, numbers, decimal commas, formulas; conditions (jos/kun), proportionality and sign statements.
-- Update 2026-10-28 14:00 fields (intro, source_note, names, word units, string answers): intro texts, column names, word units: simplified correctly; fixed activities[6]/[7].intro "Yhden niistä pitää olla pienin … poikkeama" → "Yhdessä niistä pitää olla pienin … poikkeama".
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked lesson, inquiry (new drawing-the-line check, trimmed exit ticket, calculation task) against the new Finnish.
+- batch delta review: key_concepts, reworded sentences, photo captions, objective-form and level-policy edits, chapter-reference titles judged against the guardrails and the lesson text; restyled figure lines are styling only.

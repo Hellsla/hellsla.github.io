@@ -22,7 +22,7 @@
   "key_concepts": [
     {
       "term": "paine",
-      "explain": "Kertoo, kuinka suuri voima kohdistuu tietylle pinta-alalle."
+      "explain": "Kertoo, kuinka suuri voima kohdistuu pintaan pinta-alaa kohti."
     },
     {
       "term": "pinta-ala",
@@ -30,7 +30,7 @@
     },
     {
       "term": "tiheys",
-      "explain": "Kertoo, kuinka paljon massaa on tietyssä tilavuudessa."
+      "explain": "Kertoo, kuinka paljon massaa on tilavuusyksikköä kohti."
     },
     {
       "term": "hydrostaattinen paine",

@@ -1,12 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 75e2819e801b33eb
+CONTENT-HASH: eaa34a08b7580191
 
 ## Blocking
+(none)
 
 ## Polish
-- Many short inquiry texts (hints, answer options, task titles) are identical to the Finnish because they are already plain. Left as is.
+- meta.json "lepokitka": "pitää kappaleen paikallaan" should read "paikallaan pinnan suhteen"; the belt task has static friction on a moving bag.
 
 ## Checked
-Compared lesson.md, inquiry.json, exit-ticket, meta, figure texts and sims labels with the Finnish: all steps, hints, feedback and solutions kept, every number matches, decimal comma {,} used.
-Sentences are shorter than the Finnish (long paragraphs split, 'komponentti', 'tukivoima', 'jännitysvoima' explained in a clause); lesson.md and inquiry.json differ from the Finnish throughout.
-check_i18n, check_latex, figures.py --check --lang fi-easy and check_layout at 360 and 1280 px are clean. No edits were needed.
+- batch delta review: key_concepts, reworded sentences, photo captions, objective-form and level-policy edits, chapter-reference titles judged against the guardrails and the lesson text; restyled figure lines are styling only; force-diagram blocks recomputed (19,62/17,56/8,754 N at 26,5°; 78,48/75,81/20,31 N at 15°; 9,81/9,381/2,868 at 17°, mass cancels).

@@ -1,8 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 9aee59eec243934c
+CONTENT-HASH: a04c67c29aa83902
+
 ## Blocking
+(none)
 
 ## Polish
+- meta.json "nopeus": "kuinka pitkän matkan ... yhdessä sekunnissa" fits uniform motion only; acceptable in this chapter.
 
 ## Checked
-Translation review against the reviewed Finnish source (selkeä suomi): lesson.md, inquiry.json, exit-ticket.json, figures.json. Same physics, formulas, numbers and answers; correct options, feedback numbers and the Voyager 2 example identical (JSON structure and number sets compared by script, no differences).
+- batch delta review: key_concepts, reworded sentences, photo captions, objective-form and level-policy edits, chapter-reference titles judged against the guardrails and the lesson text; restyled figure lines are styling only.

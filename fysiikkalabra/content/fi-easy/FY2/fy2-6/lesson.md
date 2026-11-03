@@ -291,7 +291,7 @@ Suomessa tuotettiin vuonna 2024 sähköä yhteensä noin $80\,\text{TWh}$ (Tilas
   <foreignObject x="140" y="273.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$0$</div></foreignObject>
 </svg>
 
-<figure class="unit-photo"><img src="pics/fy2/olkiluoto.webp" alt="Punavalkoisia voimalaitoksen rakennuksia veden takana."><figcaption>Olkiluodon ydinvoimalaitos Eurajoella vuonna 2015. Vasemmalla on kolmas yksikkö. Se alkoi tuottaa sähköä vuonna 2023.</figcaption></figure>
+<figure class="unit-photo"><img src="pics/fy2/olkiluoto.webp" alt="Punavalkoisia voimalaitoksen rakennuksia veden takana."><figcaption>Olkiluodon ydinvoimalaitos Eurajoella vuonna 2015. Vasemmalla on kolmas yksikkö. Se aloitti säännöllisen sähköntuotannon vuonna 2023.</figcaption></figure>
 
 ## Kaava: Voimalan energia
 Teho kertoo, kuinka nopeasti voimala tuottaa energiaa. Kun teho on vakio, tuotettu energia on teho kerrottuna ajalla:

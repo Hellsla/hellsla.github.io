@@ -26,7 +26,7 @@
     },
     {
       "term": "maanjäristysaalto",
-      "explain": "Aalto, joka etenee maankuoressa maanjäristyksen jälkeen."
+      "explain": "Aalto, joka lähtee maanjäristyksen murtumakohdasta ja etenee maankuoressa ja Maan sisäosissa."
     }
   ],
   "sim": false,

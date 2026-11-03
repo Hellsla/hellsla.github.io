@@ -1,12 +1,11 @@
-VERDICT: PASS
-CONTENT-HASH: 8ac41027cacb6e6c
+VERDICT: FAIL
+CONTENT-HASH: e404917936e8a05a
+
 ## Blocking
-(none)
+- B. meta.json key_concepts "mittausepävarmuus": "Kertoo, kuinka paljon mittaustulos voi erota oikeasta arvosta." reads as a guaranteed limit; the guardrail and the lesson ("Väli on arvio, ei taattu raja") say it is an estimate. Write: "Arvio siitä, kuinka paljon mittaustulos voi erota oikeasta arvosta. Se ei ole varma raja."
+
 ## Polish
-(none)
+- none
+
 ## Checked
-- Translation reviewed against the reviewed Finnish source (fy3-13, fi-easy): every number, unit, symbol and formula agrees (script comparison of all numbers after decimal-mark normalisation: lesson.md, inquiry.json, exit-ticket.json; only SVG label coordinates differ, as expected).
-- inquiry.json and exit-ticket.json have the same structure as the Finnish: same correct options, numeric answers, hint and option counts.
-- Inline-LaTeX typesetting round applied: signs now inside the maths ($+15\,{}^\circ\text{C}$), values with units and symbols as in the Finnish.
-- Physics, model conditions and worked-example reasoning identical to the Finnish; no content added or dropped.
-- Selkeä suomi: short clear sentences, glossary terms and Finnish number format as in the source; case after number+unit correct (esim. -18 °C:n, +15 °C:een).
+- batch delta review: key_concepts, reworded sentences, photo captions, objective-form and level-policy edits, chapter-reference titles judged against the guardrails and the lesson text; restyled figure lines are styling only.

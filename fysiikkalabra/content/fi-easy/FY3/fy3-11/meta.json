@@ -42,7 +42,7 @@
     },
     {
       "term": "yhteistuotanto",
-      "explain": "Voimalaitos tuottaa samalla sekä sähköä että kaukolämpöä. Silloin hukkalämpö käytetään lämmitykseen."
+      "explain": "Voimalaitos tuottaa samalla sekä sähköä että kaukolämpöä. Lauhduttimen lämpö, joka muuten menisi hukkaan, käytetään lämmitykseen."
     }
   ],
   "sim": true,

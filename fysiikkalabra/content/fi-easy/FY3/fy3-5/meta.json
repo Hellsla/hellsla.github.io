@@ -32,7 +32,7 @@
     },
     {
       "term": "termodynamiikan ensimmäinen pääsääntö",
-      "explain": "Sisäenergia muuttuu yhtä paljon kuin systeemiin tulee energiaa lämpönä ja työnä yhteensä. Energia säilyy."
+      "explain": "Kun systeemin liike- ja potentiaalienergia eivät muutu, sisäenergia muuttuu yhtä paljon kuin systeemiin tulee energiaa lämpönä ja työnä yhteensä."
     }
   ],
   "sim": true,

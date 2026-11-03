@@ -24,7 +24,7 @@
     },
     {
       "term": "sulamislämpö",
-      "explain": "Energia, joka tarvitaan kiinteän aineen sulattamiseen. Sulamisen aikana lämpötila pysyy samana."
+      "explain": "Energia, joka tarvitaan kiinteän aineen sulattamiseen. Kun puhdas aine sulaa vakiopaineessa, sen lämpötila pysyy samana."
     },
     {
       "term": "hukkalämpö",

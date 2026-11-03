@@ -1,13 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 4dc1f2caef0dbf5b
+CONTENT-HASH: 5e5f87bb3ed7c215
 
 ## Blocking
+(none)
 
 ## Polish
-
+- meta.json "rajanopeus": matches the lesson's vertical-fall definition; on the slope task the resistances balance the weight component, and after the canopy opens the speed decreases, so "nopeus ei enää muutu" is safer than "ei enää kasva".
 
 ## Checked
-Compared the lesson, inquiry, exit ticket, meta, figures and sims labels with the Finnish: all numbers, model values, feedback and model answers kept; physics unchanged.
-fi-easy is plainer: shorter sentences, 'väliaine' explained, no semicolon chains; decimal comma {,} and \overline{F} everywhere, chapter names not ids.
-Fixed one slip: the snowboard feedback said 'hyppääjä' where the Finnish says a falling body ('kappale').
-check_latex, figures --check, check_i18n, check_layout clean.
+- batch delta review: key_concepts, reworded sentences, photo captions, objective-form and level-policy edits, chapter-reference titles judged against the guardrails and the lesson text; restyled figure lines are styling only; force-diagram blocks recomputed (735,75/637,2 N, F_v 303,875 N up-slope at 150°; parachute 627,84 N both).

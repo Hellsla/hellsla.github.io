@@ -1,12 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: ec38db9d87b5fd39
+CONTENT-HASH: 3dd6e9291d4de422
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] exercises solutions use "1/s" with Hz, as the Finnish.
+- none
 
 ## Checked
-- Numbers, formulas, units, decimal commas compared with the Finnish by script: no differences in lesson, inquiry, exit ticket, meta.
-- Terms explained once in plain Finnish (tangentti, normaali, kokonaisvoima); keskipakoisvoima only as a misconception; keskeisvoima as the sum of real forces; nothing dropped.
+- batch delta review: key_concepts, reworded sentences, photo captions, objective-form and level-policy edits, chapter-reference titles judged against the guardrails and the lesson text; restyled figure lines are styling only.

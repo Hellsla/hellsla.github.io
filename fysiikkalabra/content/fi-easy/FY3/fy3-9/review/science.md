@@ -1,12 +1,11 @@
-VERDICT: PASS
-CONTENT-HASH: 0b2d8154f98ba8a6
+VERDICT: FAIL
+CONTENT-HASH: 57fa9bf4b1a71794
 
 ## Blocking
-(none)
+- B. meta.json key_concepts "Boylen laki": "Kun lämpötila pysyy samana, paine kaksinkertaistuu, kun tilavuus puolittuu." The amount of gas must also stay the same (lesson line 120). Write: "Kun kaasun määrä ja lämpötila pysyvät samoina, paine kaksinkertaistuu, kun tilavuus puolittuu. Paineen ja tilavuuden tulo pysyy samana."
 
 ## Polish
-- None.
+- none
 
 ## Checked
-- Delta review 2026-11-01 (commit 79af52c4 and learn list): the new `values` maps for the experiment panels and the learn-list wording, compared with the reviewed Finnish source.
-- inquiry.json: experiment `values` map (keys unchanged, plain Finnish values) gives the right terms; physics, numbers, answers and feedback unchanged and equal to the Finnish.
+- batch delta review: key_concepts, reworded sentences, photo captions, objective-form and level-policy edits, chapter-reference titles judged against the guardrails and the lesson text; restyled figure lines are styling only.

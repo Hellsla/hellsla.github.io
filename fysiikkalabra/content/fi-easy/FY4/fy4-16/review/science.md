@@ -1,12 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: eab560f3fca037d0
+CONTENT-HASH: 6d60f7ad908449be
 
 ## Blocking
+(none)
 
 ## Polish
+- meta.json "rajanopeus": see fy4-14 (sled slope; "ei enää muutu").
 
 ## Checked
-- Compared all lesson files with the Finnish: every step, formula, number and justification kept (numbers match per string and per line); all symbols LaTeX, decimal comma {,}.
-- Made fi-easy genuinely plainer: rewrote about 85 inquiry strings that were identical to the Finnish (feedback, hints, mistakes, criteria, prompts) and the three exit-ticket questions in short sentences; split long paragraphs in the lesson summary and checklist.
-- Physics terms unchanged and correct; figures regenerated and checked, check_i18n and check_latex clean for this lesson.
-- Page built and check_layout passed at 360 and 1280 px.
+- batch delta review: key_concepts, reworded sentences, photo captions, objective-form and level-policy edits, chapter-reference titles judged against the guardrails and the lesson text; restyled figure lines are styling only; force-diagram blocks recomputed (588,6 vs 650 N up; 765,2 N both; 539,6 vs 473,6 N, a down).

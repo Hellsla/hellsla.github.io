@@ -1,14 +1,11 @@
-VERDICT: PASS
-CONTENT-HASH: 1a3f5ccfdb4def96
+VERDICT: FAIL
+CONTENT-HASH: 4c3dcfbe49ca4c28
 
 ## Blocking
-(none)
-
-## Fixed
-(none)
+- A. lesson.md, Olkiluoto photo caption: "Se alkoi tuottaa sähköä vuonna 2023." OL3 fed electricity to the grid in test production from March 2022; regular production began in April 2023 (the fi version says this correctly). Write: "Se aloitti säännöllisen sähköntuotannon vuonna 2023."
 
 ## Polish
-(none)
+- meta.json "vesivoima": "putoavan veden liike-energiasta" matches the lesson; the source is the water's potential energy.
 
 ## Checked
-Translation delta review against the reviewed Finnish: new choice checks 'Rated power and production' and 'Properties do not exclude each other' (one correct option each, feedback per option faithful and not revealing), the rebalanced option texts of the find-the-mistake and concept checks (correct option no longer longest, feedback updated), exit ticket reduced to one question, check numbering 4./5., lesson wording (peat, properties not categories, nuclear output can be reduced). Physics, numbers, units and LaTeX preserved; learn goals untouched. Selkeä suomi keeps short sentences, same physics terms and the same cognitive demand. Science: statements about nuclear modulation, hydropower and rated versus average power are correct.
+- batch delta review: key_concepts, reworded sentences, photo captions, objective-form and level-policy edits, chapter-reference titles judged against the guardrails and the lesson text; restyled figure lines are styling only.

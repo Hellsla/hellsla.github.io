@@ -37,7 +37,7 @@
     },
     {
       "term": "Boylen laki",
-      "explain": "Kun lämpötila pysyy samana, paine kaksinkertaistuu, kun tilavuus puolittuu. Paineen ja tilavuuden tulo pysyy samana."
+      "explain": "Kun kaasun määrä ja lämpötila pysyvät samoina, paine kaksinkertaistuu, kun tilavuus puolittuu. Paineen ja tilavuuden tulo pysyy samana."
     }
   ],
   "sim": true,
