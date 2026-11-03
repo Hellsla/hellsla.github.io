@@ -1,18 +1,18 @@
-VERDICT: PASS
-CONTENT-HASH: f0b8a4565206a2d8
+VERDICT: FAIL
+CONTENT-HASH: a2b962dd2aa22135
 
 ## Blocking
-(none)
+- inquiry.json ennuste-2 / valmiustila-vaihtoehdon palaute — uusi lause "vaikka se vaikuttaa ympäri vuoden ($8760\,\text{h}$), joten säästö on noin $23\,\text{kWh}$" on laskullisesti väärä: $3\,\text{W} \cdot 8760\,\text{h} \approx 26\,\text{kWh}$. Luku 23 kWh syntyy ajasta $365 \cdot 21\,\text{h} = 7665\,\text{h}$, jonka taulukko ja ratkaisu käyttävät. Opiskelija, joka tarkistaa palautteen laskemalla, saa ristiriidan. Korjaus: "vaikka se vaikuttaa lähes koko vuoden (noin $21\,\text{h}$ vuorokaudessa, $7665\,\text{h}$ vuodessa), joten säästö on noin $23\,\text{kWh}$".
 
 ## Polish
-- inquiry.json ennuste-2 / saastot — uusi vaihtoehto "vedenkeitin 10 min vähemmän" (≈120 kWh) ei ole Säästökeinojen vertailu -taulukossa, joka sisältää yhä "laturi irti" -rivin; opiskelija ei voi kumota tätä vaihtoehtoa aineistosta, vain palautteesta. Vaihda taulukon laturi-rivi riviin "keitin lyhyemmin | $2{,}0\,\text{kW}$ | $365 \cdot \tfrac{1}{6}\,\text{h}$" (ja päivitä johtopäätös ja ratkaisun Järkevyys).
-- inquiry.json siirto solution Vastaus — "$49{,}86\,\text{€} \approx 50\,\text{€}$; rahasumma annetaan sentin tarkkuudella" on ristiriidassa itsensä kanssa (pyöristys kahteen numeroon vs. sentit); kirjoita "$49{,}86\,\text{€}$, rahasumma sentin tarkkuudella."
-- Aiemmat Polish-kohdat (tehtävien tarkistusten kattavuus, työmäärä) ovat ennallaan eivätkä estä.
+- ennuste-2 keitin-palaute: "$\approx 120\,\text{kWh}$" mutta taulukko, ratkaisu ja johtopäätös sanovat $122\,\text{kWh}$; käytä samaa lukua ($\approx 122\,\text{kWh}$).
+- Sama palaute: "lähes yhtä paljon" (61 h vs 78 h) on löyhä; "noin kolme neljäsosaa" olisi tarkempi.
+- "kolminkertainen keittimen $2{,}0\,\text{kW}$:n verrattuna" on kömpelö; kirjoita "kolminkertainen keittimen $2{,}0\,\text{kW}$:n tehoon verrattuna".
 
 ## Checked
-- Hook: "ei yleensä lue yhtään wattia" tarkentaa väitteen oikein; kysymys ei paljasta vastausta.
-- Ennuste-2: kolme virhevaihtoehtoa ovat uskottavia, palaute korjaa virhekäsityksen laskulla (3 W → 23 kWh; keitin 2,0 kW · 1/6 h · 365 ≈ 120 kWh; sauna 468 kWh); luvut tarkistettu.
-- Valmiustilan "yhteensä noin 3 W" yhtyy taulukkoon (3,0 W) ja palautteeseen.
-- Siirto: mittarilukemat, 49,86 € ja tolerance 0,02 yhtenevät; ratkaisu seurattavissa.
-- Tarkistus-3: lisäkysymys (mihin energia päätyy) on mallivastauksessa ja uudessa kriteerissä; tavoite (sisäenergia, lämpö) havaittavissa.
-- Teoria: "pääosin energiasta" ja "lämmittävän laitteen virta" tarkentavat oikein, eivät muuta oppimispolkua.
+- Hash alussa ja lopussa.
+- Taulukon keitin-rivi korvaa laturin: ennusteen vaihtoehto on nyt kumottavissa aineistosta (edellisen kierroksen Polish korjattu).
+- Ratkaisun Järkevyys: 122 kWh ja järjestys (sauna, lamput, keitin, valmiustila) täsmäävät; johtopäätöksen mallivastaus yhtenevä.
+- Keittimen 61 h (3650 min) ja sauna 78 h oikein; kiuas 3 x keitin oikein.
+- Siirron Vastaus-rivi korjattu, ristiriita poistunut.
+- Teoriatiivistelmän luoteloitu rivi (virta I = P : U) selkeä, ei muuta oppimispolkua.

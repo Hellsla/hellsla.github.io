@@ -86,11 +86,11 @@
       "choices": [
         {
           "text": "Television ja digiboksin yhteensä noin $3\\,\\text{W}$:n valmiustila katkaistaan virtakytkimellä öiksi ja päiviksi.",
-          "feedback": "Valmiustilan teho on vain noin $3\\,\\text{W}$, vaikka se vaikuttaa ympäri vuoden ($8760\\,\\text{h}$), joten säästö on vuodessa noin $23\\,\\text{kWh}$. Se on pieni verrattuna saunaan: yksi saunomiskerta viikossa vähemmän säästää $468\\,\\text{kWh}$, koska kiukaan teho on kaksituhatkertainen."
+          "feedback": "Valmiustilan teho on vain noin $3\\,\\text{W}$, vaikka se vaikuttaa lähes ympäri vuoden ($365 \\cdot 21\\,\\text{h} = 7665\\,\\text{h}$), joten säästö on vuodessa noin $23\\,\\text{kWh}$. Se on pieni verrattuna saunaan: yksi saunomiskerta viikossa vähemmän säästää $468\\,\\text{kWh}$, koska kiukaan teho on kaksituhatkertainen."
         },
         {
           "text": "Vedenkeitintä, jonka teho on $2000\\,\\text{W}$, käytetään joka päivä kymmenen minuuttia vähemmän.",
-          "feedback": "Ajan lyhennys ei ole pieni: vuodessa keitin on päällä $365 \\cdot 10\\,\\text{min} \\approx 61\\,\\text{h}$ vähemmän, lähes yhtä paljon kuin saunomisen vähentäminen, $52 \\cdot 1{,}5\\,\\text{h} = 78\\,\\text{h}$. Energiaero ($\\approx 120\\,\\text{kWh}$ ja $468\\,\\text{kWh}$) johtuu pääosin tehosta: kiukaan $6{,}0\\,\\text{kW}$ on kolminkertainen keittimen $2{,}0\\,\\text{kW}$:n verrattuna."
+          "feedback": "Ajan lyhennys ei ole pieni: vuodessa keitin on päällä $365 \\cdot 10\\,\\text{min} \\approx 61\\,\\text{h}$ vähemmän, lähes yhtä paljon kuin saunomisen vähentäminen, $52 \\cdot 1{,}5\\,\\text{h} = 78\\,\\text{h}$. Energiaero ($\\approx 120\\,\\text{kWh}$ ja $468\\,\\text{kWh}$) johtuu pääosin tehosta: kiukaan teho $6{,}0\\,\\text{kW}$ on kolme kertaa keittimen teho $2{,}0\\,\\text{kW}$."
         },
         {
           "text": "Viisi $40\\,\\text{W}$:n halogeenilamppua vaihdetaan $5\\,\\text{W}$:n LED-lamppuihin.",

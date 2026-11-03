@@ -1,19 +1,19 @@
 VERDICT: FAIL
-CONTENT-HASH: f0b8a4565206a2d8
+CONTENT-HASH: a2b962dd2aa22135
 
 ## Blocking
-- inquiry.json:93 (ennuste-2, new kettle option's feedback) — A (causality/assessment): "Keittimen teho on suuri, mutta ajan lyhennys on pieni … koska sauna kestää tunteja eikä minuutteja" gives the wrong reason. Over a year the time cut is 365 · 10 min ≈ 61 h, almost as much as the sauna's 52 · 1,5 h = 78 h; the factor ≈ 3,8 (122 vs 468 kWh) comes mainly from the power, 6,0 kW against 2,0 kW. Comparing one sauna session with one day's minutes is the per-occasion trap this lesson is meant to repair. — Fix: "Vuodessa käyttöaika lyhenee $365 \cdot \tfrac{1}{6}\,\text{h} \approx 61\,\text{h}$, ja säästö on $2{,}0\,\text{kW} \cdot 61\,\text{h} \approx 120\,\text{kWh}$. Saunassa aikaa säästyy lähes saman verran, $78\,\text{h}$, mutta kiukaan teho on kolminkertainen, joten säästö on $468\,\text{kWh}$."
+- inquiry.json:89 (ennuste-2, standby option's feedback, changed in the round-2 fix) — A (quantitative, internal consistency): "vaikka se vaikuttaa ympäri vuoden ($8760\,\text{h}$), joten säästö on vuodessa noin $23\,\text{kWh}$" does not add up, because $3\,\text{W} \cdot 8760\,\text{h} \approx 26\,\text{kWh}$. The 23 kWh comes from the `saastot` table's $365 \cdot 21\,\text{h} = 7665\,\text{h}$, and the option itself cuts the standby only "öiksi ja päiviksi". — Fix: "…vaikka se vaikuttaa lähes ympäri vuoden ($365 \cdot 21\,\text{h} = 7665\,\text{h}$), joten säästö on vuodessa noin $23\,\text{kWh}$."
 
 ## Polish
-- inquiry.json:83 (ennuste-2 `pending`) and `saastot` table — the prediction now offers the kettle option, which the table does not contain, while the table still lists "laturi irti", which the prediction no longer offers. Add a kettle row (2,0 kW, 365 · 1/6 h) to the table, or accept that the feedback alone carries that number.
-- inquiry.json:89 (ennuste-2, standby feedback) — "koska kiukaan teho on kaksituhatkertainen" names only the power; the standby time is about 100 times longer. "Teho on kaksituhatkertainen, mutta aika vain noin sadasosa" would show both factors (C as written).
+- lessons/FY6/fy6-7/lesson-answers.py:35, 39 — still computes the removed charger saving and has no kettle saving ($2{,}0 \cdot 365 \cdot \tfrac{1}{6} = 121{,}7\,\text{kWh}$), which ennuste-2, the `saastot` solution and the johtopäätös model now quote. Replace the charger line with the kettle line.
+- inquiry.json:93 (kettle feedback) — "kolminkertainen keittimen 2,0 kW:n verrattuna" mixes two constructions; this is language only.
 
 ## Checked
-- Round-1 Blocking 1 fixed: glossary "sähköenergia" now reads "…laitteen sisäenergiaksi, joka siirtyy lämpönä ympäristöön". No "lämmöksi" anywhere in lesson, inquiry, exit ticket.
-- Round-1 Blocking 2 fixed: tarkistus-3 prompt now asks where the energy ends up; criterion 3 matches it and the model answer.
-- Round-1 Polish taken: summary "lämmittävän laitteen virta", "pääosin energiasta", "yleensä", 49,86 € ≈ 50 € with the reason, answers.py comment `fy6-7/washer`.
-- ennuste-2: exactly one correct option (sauna 468 kWh > LED 191,6 > kettle 121,7 > standby 23,0 kWh); numbers in every feedback recomputed and right.
-- All lesson and inquiry numbers recomputed in one script: 0,40; 191,6; 49,86; 9,0 (mistake 5,4); 468; 23; 150 kWh/27 €; exit 7,2 MJ and 1,0 kWh.
-- Exercise answers (incl. the iron 1200 W : 230 V = 5,2 A) agree with my own formulas.
-- E = Pt with its constant-power condition; P = UI with the 230 V effective value limited to heating devices in theory and summary.
-- Power–time figure to scale, both areas 0,20 kWh.
+- Round-2 Blocking fixed: 365 · 10 min ≈ 61 h against 52 · 1,5 h = 78 h, so the difference is mainly the power (6,0 kW vs 2,0 kW). The ratio is 3,85 = 3 (power) × 1,28 (time), so "pääosin tehosta" is right.
+- Round-2 Polish taken: the `saastot` intro and table have the kettle row (2,0 kW, 365 · 10 min) and no charger. The table matches the four ennuste-2 options.
+- `saastot` solution order: sauna 468 > LED 191,6 > kettle 121,7 > standby 23,0 kWh, so "toiseksi … kolmanneksi" is right. The johtopäätös model agrees.
+- ennuste-2 has exactly one correct option (sauna). Every distractor is really smaller.
+- Recomputed in one script: 0,40/0,80 kWh; 191,6 (mistakes 38,3 and 219); 49,86 (40,86 and 36,24); 9,0 (5,4 and 9000); 150 kWh/27 €, 0,90 € a day; 60 W/885 Ω; 8,7 A; 8,76 kWh; 9,0 kWh = TV 90 h; 0,50 kWh; exit 7,2 MJ, 1,0 kWh.
+- E = Pt keeps its constant-power condition. P = UI with the 230 V effective value is limited to heating devices.
+- Electrical energy becomes internal energy that transfers as heat, the same in the glossary, the theory and tarkistus-3.
+- The power–time figure is to scale; both areas are 0,20 kWh.

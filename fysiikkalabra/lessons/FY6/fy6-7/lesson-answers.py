@@ -32,12 +32,12 @@ a["laitteet"] = a["day-kettle-kWh"]                           # the table's nume
 
 # --- prediction 2 and the saving table (one year) ---
 a["save-standby-kWh"] = 0.0030 * 21 * 365                     # TV and set-top box 3,0 W, 21 h a day: 23,0 kWh
-a["save-charger-kWh"] = 0.00010 * 24 * 365                    # charger alone 0,10 W all year: 0,876 kWh
+a["save-kettle-kWh"] = 2.0 * 10 / 60 * 365                     # kettle 2,0 kW, 10 min less a day: 121,7 kWh
 a["save-led-kWh"] = 5 * (0.040 - 0.0050) * 3.0 * 365          # five 40 W -> 5,0 W, 3,0 h a day: 191,6 kWh
 a["save-sauna-kWh"] = 6.0 * 1.5 * 52                          # one sauna fewer a week, 6,0 kW 1,5 h: 468 kWh
 a["saastot"] = a["save-led-kWh"]                              # the table's numeric question: 190 kWh
-for k in ("standby", "charger", "led", "sauna"):
-    a[f"save-{k}-EUR"] = 0.18 * a[f"save-{k}-kWh"]            # at 18 snt/kWh: 4,1 / 0,16 / 34 / 84 EUR
+for k in ("standby", "kettle", "led", "sauna"):
+    a[f"save-{k}-EUR"] = 0.18 * a[f"save-{k}-kWh"]            # at 18 snt/kWh: 4,1 / 22 / 34 / 84 EUR
 
 # --- error spotting: 2000 W · 15 min taken as kWh ---
 a["virhe-wrong"] = 2000 * 15                                  # 30 000 (W · min, not kWh)
