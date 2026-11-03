@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: cea47d949c373264
+CONTENT-HASH: e4cde2b05daf8db2
 
 ## Blocking
 (none)
@@ -14,3 +14,4 @@ CONTENT-HASH: cea47d949c373264
 - Subscripts: bolt, d, cm, b, pers, kb match between figures.json, figure descriptions, text and solutions.
 - Terms match fy5-1: lever arm, point of application, anticlockwise, reference point, free-body diagram.
 - Fixed: experiment table headings left Finnish (`laatikko`, `ei`/`kaatuu`, `kaatuuko`) are now box / no / topples / topples?.
+- Delta (drawn force diagrams in solutions of siirto and tarkistus-2): figures.json en has no Finnish left (seesaw, diving board, subscripts l->c, p->bolt, h->d); diagram labels F_bolt, F_d, F_c, F, G, N match the symbols in the en solutions (F_c = mg in the text); arrows and distances 1.50 m / 1.20 m match the Finnish figure and the calculation (294 N).

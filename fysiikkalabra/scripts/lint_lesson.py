@@ -406,9 +406,11 @@ CHAPTER_REF = re.compile(r"\b[Ff][Yy]\d-\d+\b(?![-\w])|\b[Oo]ppitunni(?:lla|n|st
 def check_chapter_refs(L, name, text):
     """A student sees chapter names, never lesson ids (teacher's rule 2026-10-26): 'luvussa Paine ja hydrostaattinen
     paine', not 'oppitunnilla fy3-4' or '(fy3-4)' or 'edellisellä oppitunnilla'. Exercise ids ("id": "fy3-4-L1-01")
-    and solution headings are not shown as text and are skipped, and so is a figure id ("figure": "fy3-4/pressure-depth")."""
+    and solution headings are not shown as text and are skipped, and so is a figure id ("figure": "fy3-4/pressure-depth",
+    or embedded in a solution step as `<svg data-fig="fy5-2/lauta-voimat"></svg>`, figcat.embed)."""
     for i, ln in enumerate(text.splitlines(), 1):
         if re.match(r"\s*(\"id\"|\"(?:model_)?figure\"|## fy)", ln): continue
+        ln = re.sub(r'<svg data-fig=\\?"[^"\\]*\\?"></svg>', "", ln)
         for m in CHAPTER_REF.finditer(ln):
             L.page(name, i, f"\"{m.group(0)}\": name the chapter, not the lesson id or 'the previous lesson' (teacher's rule 2026-10-26)")
 

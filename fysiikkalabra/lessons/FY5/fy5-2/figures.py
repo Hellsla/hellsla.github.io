@@ -256,6 +256,36 @@ def board_fbd():
     return f.svg()
 
 
+# --- Tarkista osaamisesi 2: the seesaw (model force diagram of the solution) ----------------------------------------
+def seesaw_fbd():
+    f = Fig("fy52-keinu-voimat", 400, "Mallivoimakuvio: keinulauta suorakulmiona, tukipiste laudan keskellä. Lapsen voima Fl "
+            "painaa laudan vasemman pään yläpintaa alas 1,50 m:n päässä tukipisteestä. Aikuisen voima F painaa laudan "
+            "yläpintaa alas tukipisteen oikealla puolella 1,20 m:n päässä siitä. Laudan paino G lähtee laudan keskeltä alas, "
+            "ja tuen voima N osoittaa ylös ja päättyy laudan alapintaan tukipisteessä; G ja N on piirretty vierekkäin, jotta "
+            "ne erottuvat. Positiivinen kiertosuunta on myötäpäivään. Nuolten pituudet ovat mittakaavassa: F on 1,25 kertaa "
+            "Fl:n pituinen, ja N on yhtä pitkä kuin muut kolme yhteensä. Laudan massaa ei ole annettu, joten G:n pituus on "
+            "valittu.")
+    X = lambda x: 300 + 130 * x                                  # x in metres from the pivot
+    cy, hh = 130, 9
+    Fl = 24.0 * g; F = Fl * 1.50 / 1.20; G = 15.0 * g            # the board's mass is not given: G is drawn at 15 kg
+    d = FBD(f, 0.26, body=(300, cy, 390, 2 * hh), a_dir=(0, 0))
+    d.force("F_l", (0, -Fl), (X(-1.5) + 8, cy - hh), kind="normal", surface=0, outward=(0, -1), push=True,
+            tex=r"\overline{F}_\text{l}", lab=(30, 0))
+    d.force("F", (0, -F), (X(1.2), cy - hh), kind="normal", surface=0, outward=(0, -1), push=True, lab=(-24, 0))
+    d.force("G", (0, -G), (300, cy), kind="gravity", lab=(-24, 4))
+    d.force("N", (0, G + Fl + F), (X(0) + 16, cy + hh), kind="normal", surface=0, push=True, lab=(24, 6))
+    d.draw()
+    cmark(f, 300, cy)
+    for x in (X(-1.5) + 8, X(1.2)): f.line(x, cy + hh + 4, x, 337, MUTED, 1.5, "4 4")
+    f.line(300, cy + hh + 60, 300, 337, MUTED, 1.5, "4 4")
+    dim(f, X(-1.5) + 8, 300, 345, r"1{,}50\,\text{m}", above=False)
+    dim(f, 300, X(1.2), 345, r"1{,}20\,\text{m}", above=False)
+    f.tex(300, 50, r"\text{keinulauta}", "middle")
+    turn_arrow(f, 545, 240, 22, 200, -60)
+    f.tex(577, 240, "+", "start")
+    return f.svg()
+
+
 # --- Momenttipisteen valinta: a force along and across a rod ----------------------------------------------------------
 from fbd import FORCE, dashed_arrow
 
@@ -358,7 +388,8 @@ def sign():
     return f.svg()
 
 FIGURES = {"hero": hero, "pari": couple, "kaatuu": tipping, "lankku": kaava_plank, "komponentit": components, "hirsi": log_fbd,
-           "virhe": error_plank, "lauta": board_scene, "lauta-voimat": board_fbd, "hylly": shelf, "kyltti": sign}
+           "virhe": error_plank, "lauta": board_scene, "lauta-voimat": board_fbd, "keinu-voimat": seesaw_fbd,
+           "hylly": shelf, "kyltti": sign}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
     "pari": "reveals: a couple turns a body although the forces cancel",
@@ -368,6 +399,7 @@ REUSE = {
     "virhe": "safe: a deliberately wrong diagram (equal support forces), for an error-spotting task",
     "lauta": "safe: situation picture of a diving board, data only",
     "lauta-voimat": "reveals: the model force diagram of the diving board",
+    "keinu-voimat": "reveals: the model force diagram of the seesaw (the solution of its check)",
     "komponentit": "reveals: only the component across the rod gives a moment about the hinge",
     "hylly": "safe: geometry of the tilted shelf at the limit, symbols d, h and alpha only",
     "kyltti": "safe: situation picture of the sign, rod and wire with the angle and length, no forces",

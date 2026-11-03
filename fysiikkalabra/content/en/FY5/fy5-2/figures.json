@@ -24,5 +24,8 @@
  "tanko ": "rod ",
  "vaijeri": "cable",
  "p": "bolt",
- "h": "d"
+ "h": "d",
+ "Mallivoimakuvio: keinulauta suorakulmiona, tukipiste laudan keskellä. Lapsen voima Fl painaa laudan vasemman pään yläpintaa alas 1,50 m:n päässä tukipisteestä. Aikuisen voima F painaa laudan yläpintaa alas tukipisteen oikealla puolella 1,20 m:n päässä siitä. Laudan paino G lähtee laudan keskeltä alas, ja tuen voima N osoittaa ylös ja päättyy laudan alapintaan tukipisteessä; G ja N on piirretty vierekkäin, jotta ne erottuvat. Positiivinen kiertosuunta on myötäpäivään. Nuolten pituudet ovat mittakaavassa: F on 1,25 kertaa Fl:n pituinen, ja N on yhtä pitkä kuin muut kolme yhteensä. Laudan massaa ei ole annettu, joten G:n pituus on valittu.": "Model free-body diagram: the seesaw as a rectangle, with the pivot in the middle of the board. The force of the child F_c presses the upper surface of the left end of the board down 1.50 m from the pivot. The force of the adult F presses the upper surface of the board down on the right of the pivot, 1.20 m from it. The weight of the board G starts from the middle of the board, downwards, and the force of the support N points up and ends at the lower surface of the board at the pivot; G and N are drawn side by side so that both can be seen. The positive direction of rotation is clockwise. The lengths of the arrows are to scale: F is 1.25 times as long as F_c, and N is as long as the other three together. The mass of the board is not given, so the length of G is chosen.",
+ "keinulauta": "seesaw",
+ "l": "c"
 }

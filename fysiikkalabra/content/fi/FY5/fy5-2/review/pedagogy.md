@@ -1,20 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 7e0631f886a7e47c
+CONTENT-HASH: a2c4fdc9e0e64166
 
 ## Blocking
 (none)
 
 ## Polish
-1. inquiry.json `ennuste-2`, the new third option ("Kun laatikon paino on suurempi kuin lankun paino") — the box is always 40 kg in this prediction, so the option is true or false for every position, not a position. Its feedback is good, but the distractor is easy to dismiss. Rephrase it as a position claim, for example "Kun laatikon paino on suurempi kuin lankun paino ja laatikko on tuen 2 ohi".
-2. inquiry.json `ennuste-2`, first option — "sen painopiste on silloin tukien ulkopuolella" now reads as the box's own centre of mass versus the correct option's "yhteinen painopiste". That is a good contrast, but the feedback still says "sen paino"; align the wording with the option.
-3. lesson.md figure `komponentit` — the force F is drawn at about 35° while α is unspecified, and the figure sits only in the "Momenttipisteen valinta" text. Add a label for the value of α, or add "esimerkiksi $\alpha = 30^\circ$", so that it matches L3-02.
-4. Workload — `piirra` is now optional, which fixes the hour; consider saying in the exercises text which of the 14 exercises are the core (one per level).
+1. figures.py `board_fbd` (solution of `siirto`) — the seesaw diagram shows the arms (1,50 m, 1,20 m) with dashed lines, the board diagram shows none. The solution then computes arms 0,50 m, 1,50 m and 2,50 m that the diagram does not show. Add the three arms from the support, as in `keinu-voimat`.
+2. figures.py `seesaw_fbd` — G is drawn at an invented 15 kg (the task gives no mass; the alt text says so). Add half a sentence to the Voimakuvio paragraph of `tarkistus-2`: "$\overline{G}$:n pituus on valittu; se ei vaikuta tulokseen, koska sen varsi on nolla."
+3. The `siirto` diagram repeats the model figure `lauta-voimat` of `piirra` exactly. This is harmless, because `siirto` is optional and its solution points back to the figure, but a student who drew the diagram has nothing new to compare there. The solution may say "vertaa piirrokseesi".
 
 ## Checked
-- Round-1 fixes confirmed in the diff: hook no longer discloses that the plank holds past the support ("Lopulta ... kaatuu"); ennuste-2 now has a misconception distractor and no clearly refuted option; `tarkistus-1` is now an application question with new distractors and fixed Finnish; the component task has a figure and its own step in the theory; `piirra` is optional; the crane picture is removed.
-- Path and goals: tasapaino and momenttiehto, tukivoimat, painopiste and tipping, and the täsmennys (components) are all covered; no extra content.
-- Predictions can be refuted by the model values (3:1 ratio, N1 = 0 at 3,5 m, x_pp = 3,0 m). The feedback repairs misconceptions and the model is called a model.
-- The theory text about the components is correct: the component along the rod passes through the hinge and gives no moment; only F sin α counts.
-- The worked example stages, the error-spotting item and `siirto` (1079 N → 1080 N) are unchanged and correct.
-- Exit ticket tests the core idea; Finnish (case after number+unit, glossary terms) is consistent.
-- Not re-opened: the 390 and 1280 px captures; the layout checks pass in the packet.
+- Premature disclosure: `lauta-voimat` appears only as `model_figure` (shown after the draw task) and inside the `siirto` solution; `keinu-voimat` only inside the `tarkistus-2` solution. Prompts, hints and mistake feedback have no diagram.
+- Both diagrams come directly after the Voimakuvio paragraph and before the equation, as docs/force-diagrams.md requires. They help: the student sees the directions (the bolt pulls down, N is the longest arrow) before the moment equation.
+- Arrow lengths are consistent with the numbers (board: N = Fp + G + Fh; seesaw: F = 1,25 Fl, N = sum of the others). The positive turning arrow matches the text (board counterclockwise, seesaw the adult's direction).
+- Alt texts give a reader who cannot see the figure the same data without giving away anything the task asks.
+- Labels in my own render appeared as raw LaTeX because I rendered without KaTeX. Geometry, spacing and overlaps are only partly checkable that way: the F label sits close to the title "keinulauta" at 390 px. The packet had no capture of these solutions, so the visual reviewer should confirm.
+- The rest of the lesson is unchanged since the last PASS: path, predictions that can be refuted, inquiry sequence, example stages, exit ticket and Finnish are in order. The hash is the same at the start and the end.
