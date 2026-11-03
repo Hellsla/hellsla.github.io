@@ -1,0 +1,434 @@
+{
+  "version": 1,
+  "contribution": "The photon has momentum $p = \\tfrac{h}{\\lambda}$ and four models; the double-slit experiment with single photons and electrons shows wave-particle duality and the probability interpretation, and the Compton effect shows that the photon has momentum.",
+  "learn": [
+    "explain how the fringe pattern of the double-slit experiment arises from the hits of single photons and electrons.",
+    "describe the photon with different models and explain the Compton effect using the energy and momentum of the photon.",
+    "calculate the momentum of a photon and the number of photons of light per second."
+  ],
+  "prior": [
+    "Two waves strengthen or weaken each other depending on the path difference between them (chapter *Interference of waves*)",
+    "The energy of a photon is $E = hf = \\tfrac{hc}{\\lambda}$, and one photon can release at most one electron from a metal (chapter *Photoelectric effect and the photon*)",
+    "When an atom moves to a lower energy level, it emits a photon whose energy is the difference between the levels (chapter *Energy levels of the hydrogen atom and the Bohr model*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "In 1989 a Japanese research group sent electrons one at a time towards a device equivalent to a double slit and filmed the screen. The first electrons appeared as single points of light that flashed up at seemingly random places. When tens of thousands of points had accumulated, regular fringes could be seen on the screen. The same experiment can be done with light so weak that there is usually only one photon in the apparatus at a time.",
+      "question": "Does each electron or photon pass through only one of the slits, and if it does, where do the fringes come from?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Review: the photoelectric effect",
+      "prompt": "A metal plate is illuminated with light that releases electrons from it. The wavelength is kept the same, but the intensity of the light is doubled. What happens?",
+      "choices": [
+        {
+          "text": "The maximum kinetic energy of the released electrons doubles, because the plate receives more energy.",
+          "feedback": "The maximum kinetic energy depends on the energy $hf$ of one photon, not on the amount of light (chapter *Photoelectric effect and the photon*). The same wavelength means the same photon energy, so each electron receives as much energy as before."
+        },
+        {
+          "text": "About twice as many electrons are released per second, but their maximum kinetic energy stays the same.",
+          "correct": true,
+          "feedback": "Correct. Double the intensity means double the number of photons per second, and one photon releases at most one electron. The photon energy $hf$ does not change (chapter *Photoelectric effect and the photon*). In this lesson, we look at how photons behave when there are very few of them."
+        },
+        {
+          "text": "The energy of each photon doubles, so the electrons are released faster.",
+          "feedback": "The energy of a photon is $hf$, and it depends only on the frequency. Increasing the intensity increases the number of photons, not the energy of a single photon."
+        },
+        {
+          "text": "Nothing changes, because the intensity has no effect on the photoelectric effect at all.",
+          "feedback": "The intensity does have an effect: it tells how many photons hit the plate per second. That is why more electrons are released, although the maximum kinetic energy of each stays the same."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: the second slit open",
+      "prompt": "In a double-slit experiment, photons are sent one at a time. The hits on the screen are counted in a narrow interval at $x_0 = 1.0\\,\\text{mm}$. At this point, the path difference of the waves from the two slits is half a wavelength. First only the left slit is open. Then the right slit is opened too, and the same number of photons is sent. What happens to the share $n : N$ of hits in the counting interval, when the total number of hits is the same? Think about what the particle (bullet) model and what the wave model predict.",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "The share increases, because the photons now have two routes to the same point.",
+          "feedback": "The values of the model refute this: with one slit, $43$ photons out of $1000$ ($4.3\\,\\%$) hit the counting interval, with two slits only $3$ ($0.3\\,\\%$). Even the bullet model would not give an increase: when the same number of photons is sent, the distribution would be the sum of two one-slit patterns, and the share would stay the same as with one slit. At $x_0 = 1.0\\,\\text{mm}$ the waves from the two slits weaken each other."
+        },
+        {
+          "text": "The share stays the same, because each photon passes through only one slit.",
+          "feedback": "The values of the model refute this: the share fell from $4.3\\,\\%$ to $0.3\\,\\%$ when the second slit was opened. So for every photon it matters that both slits are open: its wave passes through both slits and weakens at this point."
+        },
+        {
+          "text": "The share decreases to almost zero, because the waves from the two slits weaken each other.",
+          "correct": true,
+          "feedback": "The values of the model support this: with one slit, $43$ photons out of $1000$ ($4.3\\,\\%$) hit the counting interval, with two slits $3$ ($0.3\\,\\%$). The point $x_0 = 1.0\\,\\text{mm}$ is a dark fringe: the path difference of the slits there is half a wavelength. Opening the second slit reduces the hits, which the bullet model does not explain."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: measuring the path",
+      "prompt": "Electrons are sent one at a time, both slits are open, and a fringe pattern has built up on the screen. Detectors are added next to the slits to tell through which slit each electron passes. What happens to the pattern on the screen?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-2",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "The fringes stay as they were, because the detector only observes the electron.",
+          "feedback": "The values of the model refute this: when the path was measured, $43$ electrons out of $1000$ hit the counting interval $x_0 = 1.0\\,\\text{mm}$, whereas without the measurement $3$ did. The dark fringe disappeared. When the path is known, the waves from the two slits no longer interfere."
+        },
+        {
+          "text": "The fringes disappear, and the hits are distributed like the sum of two one-slit patterns.",
+          "correct": true,
+          "feedback": "The values of the model support this: when the path was measured, $43$ electrons out of $1000$ ($4.3\\,\\%$) hit the counting interval, as with one slit, and without the measurement $3$ ($0.3\\,\\%$). When it is known through which slit the electron passed, there is no interference."
+        },
+        {
+          "text": "The hits pile up in two narrow lines at the positions of the slits on the screen.",
+          "feedback": "The values of the model refute this: the distribution is a single wide peak, as in the one-slit pattern, and $43$ electrons out of $1000$ hit the counting interval $x_0 = 1.0\\,\\text{mm}$. A narrow slit spreads the wave over a wide area, so sharp shadows of the slits do not form."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Send photons or electrons one at a time through two slits and see how a pattern arises from single hits.",
+      "howto": "*Start* sends quanta one at a time: a faint wave spreads from the source through the slits, and the quantum is detected on the screen as a single point. *+1000 hits* adds a thousand hits at once. *Clear* empties the screen. Choose the *Particles*, the *Slits* (only left, both or only right) and the *Path measurement*. When the measurement is on, the lamp next to the slits lights up for the slit the quantum passed through. At the top is the apparatus seen from above, in the middle the screen seen from the front, and at the bottom a bar chart of the hits in $0.5\\,\\text{mm}$ intervals. The slider moves the green counting interval $x_0 \\pm 0.2\\,\\text{mm}$. When you change the particles, the slits or the measurement, the screen is cleared. *Speed* changes only the pace of the animation.",
+      "model": "The hit positions are drawn from the probability distribution of the model, so the numbers are values of the model, not measurements. The drawing starts from the same point after every clearing, so the same experiment always gives the same numbers. The patterns of photons and electrons are drawn to the same scale to make comparison easier; in real experiments the fringe spacing is quite different. The width and the distance of the slits are drawn enlarged. The path measurement is ideal: it always tells the right slit. There is only one quantum in the apparatus at a time, and no quanta are lost on the way. The faint wave illustrates the probability wave and is not a measurable quantity.",
+      "calc": "When both slits are open and the path is not measured, the probability of hits at the point $x$ is proportional to the intensity of the wave model\n\n$$I(x) \\propto \\cos^2\\!\\left(\\frac{\\pi x}{s}\\right) \\cdot \\left(\\frac{\\sin(\\pi x / a)}{\\pi x / a}\\right)^2$$\n\nwhere the fringe spacing is $s = 2.0\\,\\text{mm}$ and the first zero of the one-slit pattern is at $a = 10\\,\\text{mm}$. With one slit or a measured path the first factor is missing, so there are no fringes. A dark fringe is where the $\\cos^2$ factor is zero: $x = \\pm 1.0\\,\\text{mm}, \\pm 3.0\\,\\text{mm}, \\ldots$. The share is $n : N$, where $n$ is the number of hits in the counting interval and $N$ the total number of hits. The dashed line is the expected number of hits: $N$ times the probability of the interval."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 1: one slit or two",
+      "intro": "Test prediction 1. The photons, no path measurement and the counting interval $x_0 = 1.0\\,\\text{mm}$ stay constant; change only the slits. First follow a few single photons with the *Start* button. Then press *+1000 hits* and record the measurement. Open both slits, press *+1000 hits* again and record.",
+      "initial": {
+        "hiukkanen": "fotoni",
+        "raot": "vasen",
+        "reitti": "ei",
+        "x0": 1
+      },
+      "locked": [
+        "hiukkanen",
+        "reitti",
+        "x0"
+      ],
+      "vary": "raot",
+      "names": {
+        "hiukkanen": "particles",
+        "raot": "slits",
+        "reitti": "path measurement",
+        "x0": "counting interval"
+      },
+      "values": {
+        "hiukkanen": {
+          "fotoni": "photons",
+          "elektroni": "electrons"
+        },
+        "raot": {
+          "vasen": "only left",
+          "molemmat": "both",
+          "oikea": "only right"
+        },
+        "reitti": {
+          "ei": "not measured",
+          "kylla": "measured"
+        }
+      },
+      "units": {
+        "x0": "mm"
+      },
+      "measure": [
+        {
+          "key": "N",
+          "label": "N"
+        },
+        {
+          "key": "n",
+          "label": "n"
+        },
+        {
+          "key": "osuus",
+          "label": "n : N (%)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 2: through which slit?",
+      "intro": "Test prediction 2. Now electrons are sent, and both slits are open. The counting interval is in the dark fringe $x_0 = 1.0\\,\\text{mm}$. Press *+1000 hits* without the path measurement and record. Then switch the measurement on, press *+1000 hits* and record. Compare the patterns on the screen.",
+      "initial": {
+        "hiukkanen": "elektroni",
+        "raot": "molemmat",
+        "reitti": "ei",
+        "x0": 1
+      },
+      "locked": [
+        "hiukkanen",
+        "raot",
+        "x0"
+      ],
+      "vary": "reitti",
+      "names": {
+        "hiukkanen": "particles",
+        "raot": "slits",
+        "reitti": "path measurement",
+        "x0": "counting interval"
+      },
+      "values": {
+        "hiukkanen": {
+          "fotoni": "photons",
+          "elektroni": "electrons"
+        },
+        "raot": {
+          "vasen": "only left",
+          "molemmat": "both",
+          "oikea": "only right"
+        },
+        "reitti": {
+          "ei": "not measured",
+          "kylla": "measured"
+        }
+      },
+      "units": {
+        "x0": "mm"
+      },
+      "measure": [
+        {
+          "key": "N",
+          "label": "N"
+        },
+        {
+          "key": "n",
+          "label": "n"
+        },
+        {
+          "key": "osuus",
+          "label": "n : N (%)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion: bullet or wave?",
+      "after": [
+        "koe-1",
+        "koe-2"
+      ],
+      "prompt": "Write, based on your tables: how did the share in the counting interval change when the second slit was opened, and when the path was measured? Why can the result not be explained by each quantum passing through one slit like a bullet? What is the connection between the wave and a single hit?",
+      "model": "With one slit, $43$ photons out of $1000$ hit the counting interval $x_0 = 1.0\\,\\text{mm}$, but when both slits were open, only $3$. If the photons passed through one of the slits as bullets, the distribution would be the sum of two one-slit patterns, and the share would stay the same as with one slit. Both slits affect every quantum: its wave passes through both slits, and at this point the waves weaken each other. The electrons behaved in the same way. When the path was measured, the dark fringe disappeared ($43$ hits), because information about the path removes the interference. A single hit is a random point, but the intensity of the wave tells the probability of a hit at each place. The numbers are values of the model.",
+      "criteria": [
+        "I compared the shares with one and two slits and noticed that the second slit reduced the hits in the dark fringe.",
+        "I justified why the bullet model does not explain this: in it the share would stay the same as with one slit.",
+        "I said that the path measurement removed the fringes.",
+        "I said that the wave gives the probability of hits, although a single hit is random."
+      ]
+    },
+    {
+      "id": "compton-data",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Compton's scattering experiment",
+      "source": "model",
+      "text": "In 1923 Arthur Compton directed X-rays at graphite and measured the wavelength $\\lambda'$ of the radiation scattered in different directions. The wavelength of the incident radiation was $\\lambda = 0.0711\\,\\text{nm}$. The values in the table have been calculated from Compton's model, and Compton's measurements followed them.\n\n| Scattering angle | $\\lambda'$ ($\\text{nm}$) |\n| --- | --- |\n| $0^\\circ$ | $0.0711$ |\n| $45^\\circ$ | $0.0718$ |\n| $90^\\circ$ | $0.0735$ |\n| $135^\\circ$ | $0.0752$ |\n| $180^\\circ$ | $0.0760$ |",
+      "question": {
+        "type": "choice",
+        "layout": "models",
+        "prompt": "Which explanation fits the table?",
+        "choices": [
+          {
+            "text": "Wave model: the radiation makes the electrons oscillate at its own rhythm, and they radiate again at the same frequency.",
+            "feedback": "This model predicts that the wavelength of the scattered radiation is $0.0711\\,\\text{nm}$ in all directions. In the table it grows with the scattering angle up to $0.0760\\,\\text{nm}$, so the wave model alone is not enough."
+          },
+          {
+            "text": "Photon model: the photon collides with the electron and gives it part of its energy, the more the sharper it rebounds.",
+            "correct": true,
+            "feedback": "Correct. The energy $hf' = \\tfrac{hc}{\\lambda'}$ of the scattered photon is smaller than that of the incident one, so the wavelength is longer. A photon rebounding straight backwards gives up the most energy and momentum, so its $\\lambda'$ is the greatest. This is the Compton effect."
+          },
+          {
+            "text": "Slowing-down model: the radiation slows down in graphite, and a slower wave has a longer wavelength.",
+            "feedback": "The scattered radiation is measured outside the graphite, where it again travels at the speed $c$. Slowing down would not explain either why the wavelength depends on the scattering angle."
+          }
+        ]
+      }
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Return to your predictions",
+      "optional": true,
+      "prompt": "Compare your predictions with the values of the model in the experiments. Then return to the question at the beginning: does each electron pass through only one slit, and where do the fringes come from?",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2"
+      ]
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the error",
+      "prompt": "A student calculates the momentum of a photon of green light when the wavelength is $520\\,\\text{nm}$:\n\n$$\\begin{aligned} p &= \\frac{h}{\\lambda} \\\\ &= \\frac{6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}}{520} \\\\ &= 1.27 \\cdot 10^{-36}\\,\\text{kg}\\cdot\\text{m/s} \\end{aligned}$$\n\nWhere is the error?",
+      "choices": [
+        {
+          "text": "A photon has no mass, so its momentum is zero.",
+          "feedback": "A photon has no mass, but it has the momentum $p = \\tfrac{h}{\\lambda}$. The transfer of momentum can be seen, for example, in the Compton effect. The formula is correct; the error is in the substitution."
+        },
+        {
+          "text": "The wavelength is substituted in nanometres and not in metres.",
+          "correct": true,
+          "feedback": "Correct. In SI units $\\lambda = 520 \\cdot 10^{-9}\\,\\text{m}$, so $p = \\dfrac{6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}}{520 \\cdot 10^{-9}\\,\\text{m}} = 1.27 \\cdot 10^{-27}\\,\\text{kg}\\cdot\\text{m/s}$. The student's result is a billion times too small, and the unit would have revealed the error: $\\tfrac{\\text{J}\\,\\text{s}}{\\text{nm}}$ is not $\\text{kg}\\cdot\\text{m/s}$."
+        },
+        {
+          "text": "The formula should also contain the speed of light: $p = \\tfrac{hc}{\\lambda}$.",
+          "feedback": "$\\tfrac{hc}{\\lambda}$ is the energy $E$ of the photon, whose unit is the joule. The momentum is $p = \\tfrac{E}{c} = \\tfrac{h}{\\lambda}$, so the speed of light cancels out."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply to a new situation",
+      "prompt": "A solar sail is a thin, mirror-like film that sunlight pushes in space. At the Earth's distance from the Sun, the intensity of sunlight, that is the power per area, is $1361\\,\\tfrac{\\text{W}}{\\text{m}^2}$. The area of the sail is $32\\,\\text{m}^2$, and it is perpendicular to the light. Assume that all the light is reflected straight back. How large a force does the light exert on the sail? Give the answer in micronewtons ($\\mu\\text{N}$).",
+      "answer": 290.5,
+      "unit": "µN",
+      "tolerance": 0.02,
+      "hints": [
+        "What is the connection between force and momentum? How much does the momentum of one photon change when it is reflected straight back?",
+        "Per second, the energy $P = IA$ arrives at the sail. The total momentum of all these photons is $\\tfrac{P}{c}$, because for each photon $p = \\tfrac{E}{c}$.",
+        "In reflection the momentum changes twice as much: $F = \\dfrac{2IA}{c} = \\dfrac{2 \\cdot 1361 \\cdot 32}{2.998 \\cdot 10^8}\\,\\text{N}$."
+      ],
+      "mistakes": [
+        {
+          "value": 145.3,
+          "feedback": "This would be the force if the sail absorbed the light. In reflection the momentum of the photon reverses, so the change of momentum and the force are twice as large."
+        },
+        {
+          "value": 9.08,
+          "feedback": "The area is missing. The energy arriving at the sail per second is $IA$, not just $I$: multiply also by the area $32\\,\\text{m}^2$."
+        },
+        {
+          "value": 0.0002905,
+          "feedback": "Your calculation is correct, but the answer is in newtons. Convert to micronewtons: $1\\,\\text{N} = 10^6\\,\\mu\\text{N}$."
+        }
+      ],
+      "solution": "**Given:** the intensity of sunlight $I = 1361\\,\\tfrac{\\text{W}}{\\text{m}^2}$, the area of the sail $A = 32\\,\\text{m}^2$, the light is reflected straight back; $c = 2.998 \\cdot 10^8\\,\\text{m/s}$\n\n**Asked:** the force $F$ exerted by the light on the sail in micronewtons\n\n**Principle:** Force is the change of momentum per unit time. The momentum of each photon is $p = \\tfrac{E}{c}$. When a photon is reflected straight back, its momentum changes from $p$ to $-p$, so the sail receives the momentum $2p$. Per second, the energy $P = IA$ arrives at the sail, so the momentum of the photons arriving per second is $\\tfrac{P}{c}$.\n\n**Formula:** $F = \\dfrac{\\Delta p}{\\Delta t} = 2 \\cdot \\dfrac{P}{c}$, where $P = IA$, so $F = \\dfrac{2IA}{c}$\n\n**Conversions:** $\\tfrac{\\text{W}}{\\text{m}^2} \\cdot \\text{m}^2 = \\text{W} = \\tfrac{\\text{J}}{\\text{s}}$ and $\\tfrac{\\text{J/s}}{\\text{m/s}} = \\tfrac{\\text{J}}{\\text{m}} = \\text{N}$. Finally $1\\,\\text{N} = 10^6\\,\\mu\\text{N}$.\n\n**Substitution:** $F = \\dfrac{2 \\cdot 1361\\,\\tfrac{\\text{W}}{\\text{m}^2} \\cdot 32\\,\\text{m}^2}{2.998 \\cdot 10^8\\,\\text{m/s}} = \\dfrac{87\\,104\\,\\text{W}}{2.998 \\cdot 10^8\\,\\text{m/s}} = 2.905 \\cdot 10^{-4}\\,\\text{N} = 290.5\\,\\mu\\text{N}$\n\n**Answer:** $2.9 \\cdot 10^2\\,\\mu\\text{N}$, two significant figures as in the area $32\\,\\text{m}^2$.\n\n**Reasonableness:** The force is about $0.3\\,\\text{mN}$, roughly the weight of an object of $30\\,\\text{mg}$, for example a grain of rice. It is small, but in a vacuum it acts continuously, so a light probe accelerates to a high speed over months. If the sail absorbed the light, the force would be half, $145\\,\\mu\\text{N}$."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise on three levels. Level 1 tasks use one formula, level 2 tasks need a conversion or two steps, and level 3 tasks combine the momentum of a photon with new situations."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept",
+      "prompt": "In a double-slit experiment, electrons are sent one at a time, and the screen records each hit. Which statement about the experiment is correct?",
+      "choices": [
+        {
+          "text": "The hit position of a single electron cannot be predicted, but a fringe pattern arises from many hits.",
+          "correct": true,
+          "feedback": "Correct. The wave model gives the probability with which the electron is detected at each point. A single hit is random, but the distribution of thousands of hits follows the intensity of the wave."
+        },
+        {
+          "text": "The fringes arise only when there are many electrons in the apparatus at the same time affecting each other.",
+          "feedback": "The fringes arise even though the electrons arrive one at a time, like the photons in the weak light of the example. So the pattern does not arise from interaction between the particles."
+        },
+        {
+          "text": "Each electron spreads over the screen as a faint fringe pattern, and the patterns add up.",
+          "feedback": "Each electron is detected at one place as a single point. The fringe pattern is the distribution of many points, not the trace of a single electron."
+        },
+        {
+          "text": "Each electron passes through one slit, and the fringes are the sharp shadows of the slits.",
+          "feedback": "There would be two shadows of the slits, but there are many fringes. In addition, opening the second slit reduces the hits in the dark fringes, which bullets passing through one slit do not explain."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Compton effect",
+      "prompt": "An X-ray photon of wavelength $0.0600\\,\\text{nm}$ scatters from an almost free electron. The wavelength of the scattered photon is $0.0624\\,\\text{nm}$. How much kinetic energy does the electron receive? Give the answer in electronvolts.",
+      "answer": 794.9,
+      "unit": "eV",
+      "tolerance": 0.02,
+      "hints": [
+        "Where does the energy lost by the photon go?",
+        "$E_\\text{k} = \\dfrac{hc}{\\lambda} - \\dfrac{hc}{\\lambda'}$, when the wavelengths are in metres.",
+        "The energy of the incident photon is $3.3108 \\cdot 10^{-15}\\,\\text{J}$ and that of the scattered one $3.1835 \\cdot 10^{-15}\\,\\text{J}$. Divide the difference by $1.602 \\cdot 10^{-19}\\,\\text{J}$."
+      ],
+      "mistakes": [
+        {
+          "value": 1.273e-16,
+          "feedback": "Your calculation is correct, but the answer is in joules. Convert to electronvolts: divide by $1.602 \\cdot 10^{-19}\\,\\text{J}$, because $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$."
+        },
+        {
+          "value": 516700,
+          "feedback": "You calculated $\\tfrac{hc}{\\lambda' - \\lambda}$, but the difference of the wavelengths is not the wavelength of any photon. Calculate the energy of each photon separately and subtract them: $E_\\text{k} = \\tfrac{hc}{\\lambda} - \\tfrac{hc}{\\lambda'}$."
+        }
+      ],
+      "solution": "**Given:** the wavelength of the incident X-ray photon $\\lambda = 0.0600\\,\\text{nm}$, of the scattered one $\\lambda' = 0.0624\\,\\text{nm}$; $h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^8\\,\\text{m/s}$, $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$\n\n**Asked:** the kinetic energy $E_\\text{k}$ received by the electron in electronvolts\n\n**Principle:** In the Compton effect, the photon collides with an almost free electron. Energy is conserved, so the electron receives the energy that the photon loses: $hf = hf' + E_\\text{k}$. The energy of each photon is obtained from its wavelength.\n\n**Formula:** $\\dfrac{hc}{\\lambda} = \\dfrac{hc}{\\lambda'} + E_\\text{k}$, from which $E_\\text{k} = \\dfrac{hc}{\\lambda} - \\dfrac{hc}{\\lambda'}$\n\n**Conversions:** $0.0600\\,\\text{nm} = 0.0600 \\cdot 10^{-9}\\,\\text{m}$ and $0.0624\\,\\text{nm} = 0.0624 \\cdot 10^{-9}\\,\\text{m}$. Finally joules to electronvolts: $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$.\n\n**Substitution:** $hc = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s} \\cdot 2.998 \\cdot 10^8\\,\\text{m/s} = 1.9865 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m}$. $E_\\text{k} = \\dfrac{1.9865 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m}}{0.0600 \\cdot 10^{-9}\\,\\text{m}} - \\dfrac{1.9865 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m}}{0.0624 \\cdot 10^{-9}\\,\\text{m}} = 3.3108 \\cdot 10^{-15}\\,\\text{J} - 3.1835 \\cdot 10^{-15}\\,\\text{J} = 1.273 \\cdot 10^{-16}\\,\\text{J}$. In electronvolts: $E_\\text{k} = \\dfrac{1.273 \\cdot 10^{-16}\\,\\text{J}}{1.602 \\cdot 10^{-19}\\,\\text{J}} \\cdot 1\\,\\text{eV} = 794.9\\,\\text{eV}$\n\n**Answer:** $7.9 \\cdot 10^2\\,\\text{eV}$, two significant figures, because the difference of the wavelengths $0.0024\\,\\text{nm}$ is known only to two figures.\n\n**Reasonableness:** The energy of the incident photon is $\\tfrac{3.31 \\cdot 10^{-15}\\,\\text{J}}{1.602 \\cdot 10^{-19}\\,\\text{J}} \\cdot 1\\,\\text{eV} \\approx 20.7\\,\\text{keV}$, and the wavelength grows by $4\\,\\%$, so about $4\\,\\%$ of the energy, about $0.8\\,\\text{keV}$, is transferred to the electron. The electron gains energy and the photon loses it, so $E_\\text{k}$ is positive."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Evaluate the claim",
+      "optional": true,
+      "prompt": "Your friend claims: “Light is really a wave. The photon is just a calculation aid needed in the photoelectric effect.” Evaluate the claim using the double-slit experiment and the Compton effect.",
+      "model": "The claim is only partly correct. The wave model explains the fringe pattern of the double-slit experiment, but in an experiment with weak light the light is detected as single photons that hit the screen one at a time at one place. In the Compton effect, the wavelength of the scattered X-rays grows with the scattering angle, which the wave model does not explain. In the photon model the photon gives the electron part of its energy and its momentum $p = \\tfrac{h}{\\lambda}$, as in a collision. So the photon is not merely a calculation aid. Light is neither only a wave nor only bullets: the wave gives the probability, and the photon is a quantum that is detected at one place. This is wave-particle duality.",
+      "criteria": [
+        "I state that the wave model explains the fringe pattern.",
+        "I say that in weak light the photons are detected as single hits.",
+        "I explain the Compton effect as the photon giving up energy and momentum and state that the wave model does not explain the growth of the wavelength.",
+        "I conclude that both properties are needed: the wave gives the probability and the photon is detected as a quantum."
+      ]
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, two quick questions. Answer them yourself first and open the answer only then."
+    }
+  ]
+}

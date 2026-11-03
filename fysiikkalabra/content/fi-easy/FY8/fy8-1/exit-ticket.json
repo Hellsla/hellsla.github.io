@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Säteilyn taajuus on $1{,}0 \\cdot 10^{15}\\,\\text{Hz}$. Kuinka suuri on yhden fotonin energia?",
+    "a": "$E = hf = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s} \\cdot 1{,}0 \\cdot 10^{15}\\,\\tfrac{1}{\\text{s}} = 6{,}6 \\cdot 10^{-19}\\,\\text{J}$ eli noin $4{,}1\\,\\text{eV}$."
+  },
+  {
+    "q": "Natriumlevyn irrotustyö on $W = 2{,}28\\,\\text{eV}$. Levyä valaistaan keltaisella valolla, $\\lambda = 590\\,\\text{nm}$, eikä elektroneja irtoa. Kumpi auttaa: keltaisen valon kirkastaminen vai vaihtaminen siniseen valoon, $\\lambda = 470\\,\\text{nm}$? Miksi?",
+    "a": "Sininen valo. Yksi elektroni saa yhden fotonin energian. Keltaisen valon fotonin energia $2{,}10\\,\\text{eV}$ on pienempi kuin irrotustyö. Kirkastaminen tuo siis vain lisää fotoneja, joiden energia on liian pieni. Sinisen valon fotonin energia $2{,}64\\,\\text{eV}$ on suurempi kuin $2{,}28\\,\\text{eV}$, joten elektroneja irtoaa. Taajuus ratkaisee, irtoaako elektroneja. Saman värin kirkastaminen lisää vain irtoavien elektronien määrää, kun elektroneja irtoaa."
+  }
+]

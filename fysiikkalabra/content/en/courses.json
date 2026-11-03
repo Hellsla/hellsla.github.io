@@ -181,6 +181,13 @@
   },
   "FY8": {
     "title": "Matter, radiation and quantisation",
+    "themes": [
+      "Quantisation and the atom",
+      "Quantum technology",
+      "The nucleus and nuclear energy",
+      "Radiation and people",
+      "Particles and the universe"
+    ],
     "tavoitteet": [
       "knows the effects of ionising radiation and becomes familiar with the safe use of radiation",
       "becomes familiar with the worldview based on quantum physics, from elementary particle physics to cosmology",
@@ -188,21 +195,21 @@
     ],
     "lessons": {
       "fy8-1": "The photoelectric effect and the photon",
-      "fy8-2": "Atomic spectra and the quantisation of energy",
-      "fy8-3": "Bohr model and the wave-mechanical model of the atom",
-      "fy8-13": "Wave nature of particles and the de Broglie wavelength",
-      "fy8-4": "Laser and quantum structures",
-      "fy8-14": "LED, laser diode and Planck constant",
-      "fy8-5": "Structure of the atomic nucleus and radioactive decay",
-      "fy8-6": "Law of decay and half-life",
-      "fy8-7": "Mass–energy equivalence and nuclear binding energy",
-      "fy8-8": "Fission, fusion and nuclear power",
-      "fy8-9": "Ionising radiation: types, penetration and biological effects",
-      "fy8-15": "Radiation safety and radiation dose",
-      "fy8-10": "Applications of radiation in medicine and technology",
-      "fy8-11": "The Standard Model of particle physics",
-      "fy8-12": "Evolution of the universe",
-      "fy8-16": "Climate change and the greenhouse effect from the point of view of radiation"
+      "fy8-2": "Spectra reveal the energy levels of atoms",
+      "fy8-3": "Energy levels of the hydrogen atom and the Bohr model",
+      "fy8-4": "Light and electrons as waves and particles",
+      "fy8-5": "The wave-mechanical model of the atom and orbitals",
+      "fy8-6": "Light from an LED and measuring the Planck constant",
+      "fy8-7": "Lasers and quantum structures",
+      "fy8-8": "The atomic nucleus and radioactive decay",
+      "fy8-9": "The decay law and half-life",
+      "fy8-10": "Mass defect and nuclear binding energy",
+      "fy8-11": "Fission, fusion and nuclear power",
+      "fy8-12": "Ionising radiation and the body",
+      "fy8-13": "Radiation dose and radiation safety in Finland",
+      "fy8-14": "Radiation in medicine and technology",
+      "fy8-15": "The Standard Model: elementary particles and interactions",
+      "fy8-16": "The evolution of the universe"
     }
   }
 }
