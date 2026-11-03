@@ -67,8 +67,8 @@ Lamppu palaa vain, kun se on osa suljettua **virtapiiriä**: jännitelähteestä
   <foreignObject x="560" y="121.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#7048e8">$I$</div></foreignObject>
   <line x1="462" y1="106" x2="414" y2="106" stroke="#7048e8" stroke-width="3" stroke-linecap="butt"/>
   <path d="M400,106 L415,99 L415,113 Z" fill="#7048e8" stroke-linejoin="round"/>
-  <line x1="90" y1="152" x2="90" y2="208" stroke="#7048e8" stroke-width="3" stroke-linecap="butt"/>
-  <path d="M90,222 L83,207 L97,207 Z" fill="#7048e8" stroke-linejoin="round"/>
+  <line x1="30" y1="152" x2="30" y2="208" stroke="#7048e8" stroke-width="3" stroke-linecap="butt"/>
+  <path d="M30,222 L23,207 L37,207 Z" fill="#7048e8" stroke-linejoin="round"/>
   <line x1="316" y1="300" x2="332" y2="300" stroke="#7048e8" stroke-width="3" stroke-linecap="butt"/>
   <path d="M346,300 L331,307 L331,293 Z" fill="#7048e8" stroke-linejoin="round"/>
   <foreignObject x="176.5" y="295.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{paristo}$</div></foreignObject>
@@ -359,7 +359,9 @@ missä $U$ on jännite ($\text{V}$), $E$ siirtynyt energia ($\text{J}$) ja $Q$ v
   <rect x="92" y="70" width="80" height="120" rx="8" fill="url(#fy61-jannite-cell)" stroke="#1f2933" stroke-width="2.5"/>
   <rect x="92" y="70" width="80" height="36" rx="8" fill="#f1dfb5" stroke="#1f2933" stroke-width="2.5"/>
   <rect x="118" y="56" width="28" height="14" rx="3" fill="#8a96a3" stroke="#1f2933" stroke-width="2"/>
-  <foreignObject x="64" y="211.5" width="136" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$U = 1{,}5\,\text{V}$</span></div></foreignObject>
+  <foreignObject x="12" y="211.5" width="106" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$U = 1{,}5\,\text{V}$</div></foreignObject>
+  <foreignObject x="155" y="21.5" width="22" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$+$</div></foreignObject>
+  <foreignObject x="155" y="181.5" width="22" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$-$</div></foreignObject>
   <path d="M196,131 L360,131 L360,143 L392,120 L360,97 L360,109 L196,109 Z" fill="#e8590c" stroke-linejoin="round"/>
   <foreignObject x="219" y="59.5" width="150" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$1{,}5\,\text{J}\ \text{/}\ 1\,\text{C}$</div></foreignObject>
   <foreignObject x="246.5" y="151.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#e8590c">$\text{energia}$</div></foreignObject>

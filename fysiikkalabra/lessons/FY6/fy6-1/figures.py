@@ -131,7 +131,7 @@ def piiri():
     # current arrows: up the right side, left along the top, down the left side, right along the bottom
     i_arrow(f, R + 30, 236, R + 30, 166, r"I", R + 30, 136 + 0, "middle")
     i_arrow(f, 462, T - 22, 400, T - 22)
-    i_arrow(f, L - 30 + 60, 152, L - 30 + 60, 222)
+    i_arrow(f, L - 30, 152, L - 30, 222)
     i_arrow(f, 316, B + 32, 346, B + 32)
     f.tex(224, 310, r"\text{paristo}", "middle", MUTED)
     f.tex(404, 310, r"\text{kytkin}", "middle", MUTED)
@@ -254,7 +254,9 @@ def jannite():
     f.rect(92, 70, 80, 120, grad(f, "fy61-jannite-cell", ALUMINIUM, METAL_EDGE, horizontal=True), INK, 2.5, rx=8)
     f.rect(92, 70, 80, 36, SAND_LIGHT, INK, 2.5, rx=8)
     f.rect(118, 56, 28, 14, METAL_EDGE, INK, 2, rx=3)
-    f.tex(132, 226, r"U = 1{,}5\,\text{V}", "middle", w=136, bg=True)
+    f.tex(118, 226, r"U = 1{,}5\,\text{V}", "end", w=106)
+    f.tex(166, 36, "+", "middle", INK, w=22)
+    f.tex(166, 196, "-", "middle", INK, w=22)
     # energy flow
     f.block_arrow(196, 120, 392, 120, HEAT, shaft=22, head=46, headlen=32)
     f.tex(294, 74, r"1{,}5\,\text{J}\ \text{/}\ 1\,\text{C}", "middle", w=150)
