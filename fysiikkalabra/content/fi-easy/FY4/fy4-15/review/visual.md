@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 416f3e3f208ee89b
+CONTENT-HASH: bc7d35f0cb0c30c0
 
 ## Blocking
+- none
 
 ## Polish
-
+- none
 
 ## Checked
-batch delta review: scratchpad kc/fy4-15-390.png and kc/fy4-15-1280.png (the new section cut from the built page, preview/fi-easy/fy4-15.html): stacked at 390 px, two columns at 1280 px, no raw maths, no overflow, no clipping; the diff text read for wording (the packet's own captures show no figure change, so only sheets of the new section were opened).
+- batch delta review: opened fy4-15-360-0 and fy4-15-1280-0 captures: photo loads, floats right beside the text at 1280 px or sits in the column (no clipping, no horizontal overflow), at 360 px full column width; caption and alt text natural plain Finnish and consistent with the picture, no unit-bearing numbers needing LaTeX, credit line present under the caption.

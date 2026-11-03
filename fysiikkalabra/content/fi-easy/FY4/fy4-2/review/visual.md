@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 9eda2879ea71e124
+CONTENT-HASH: c1c26803665d1cca
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] key concept `$(t,v)$-kuvaaja` — same as fy4-1: maths in the bold term is lighter than the bold word next to it.
+- [Minor] fy4-2 kuva: kuva päätyy 1280 px:n leveydellä "Yleinen virhekäsitys" -kappaleen viereen, ei kiihtyvyyden kaavan viereen; kuvateksti kelpaa, mutta lause "Lokki kiihdyttää veden pinnalta ilmaan." sitoisi kuvan aiheeseen.
 
 ## Checked
-batch delta review: scratchpad kc/fy4-2-390.png and kc/fy4-2-1280.png (the new section cut from the built page, preview/fi-easy/fy4-2.html): stacked at 390 px, two columns at 1280 px, no raw maths, no overflow, no clipping; the diff text read for wording (the packet's own captures show no figure change, so only sheets of the new section were opened).
+- batch delta review: opened fy4-2-360-0 and fy4-2-1280-0 captures: photo loads, floats right beside the text at 1280 px or sits in the column (no clipping, no horizontal overflow), at 360 px full column width; caption and alt text natural plain Finnish and consistent with the picture, no unit-bearing numbers needing LaTeX, credit line present under the caption.

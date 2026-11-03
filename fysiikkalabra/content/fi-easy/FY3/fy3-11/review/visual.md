@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: ece51be74ef11ee8
+CONTENT-HASH: 23b651cf2d1cab7f
 
 ## Blocking
+- none
 
 ## Polish
-
+- none
 
 ## Checked
-batch delta review: scratchpad kc/fy3-11-390.png and kc/fy3-11-1280.png (the new section cut from the built page, preview/fi-easy/fy3-11.html): stacked at 390 px, two columns at 1280 px, no raw maths, no overflow, no clipping; the diff text read for wording (the packet's own captures show no figure change, so only sheets of the new section were opened).
+- batch delta review: opened fy-easy captures fy3-11-1280 and fy3-11-360 (photo, caption, credit line, alt text read against picture and neighbouring paragraph; no clipping or horizontal overflow; no plain-text quantity in new caption/alt).

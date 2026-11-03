@@ -95,6 +95,8 @@
 
 Energiaa on monessa muodossa. Jokaista muotoa sanotaan **energialajiksi**. Energialaji kertoo, mihin energia on sitoutunut eli varastoitunut tai miten se näkyy. Esimerkiksi liikkuvan pallon energia näkyy liikkeenä, ja pariston energia on varastoitunut sen aineisiin.
 
+<figure class="unit-photo"><img src="pics/fy2/hydropower-plant-aerial.webp" alt="Vesivoimalaitoksen alue ylhäältä. Vasemmalla on joki ja alhaalla sähkölaitteita."><figcaption>Vesivoimalaitos ylhäältä. Veden potentiaalienergia muuttuu turbiinissa liike-energiaksi. Generaattori muuttaa sen sähköenergiaksi.</figcaption></figure>
+
 ### Seitsemän energialajia
 - **Potentiaalienergia** $E_\text{p}$ on energiaa, joka riippuu kappaleen paikasta. Tässä se on painovoiman potentiaalienergiaa. Mitä korkeammalla kappale on ja mitä suurempi sen massa on, sitä enemmän sillä on potentiaalienergiaa. Hyllyn reunalla oleva pallo voi pudotessaan saada vauhtia.
 - **Liike-energia** $E_\text{k}$ on liikkuvan kappaleen energiaa. Mitä nopeammin kappale liikkuu ja mitä suurempi sen massa on, sitä enemmän sillä on liike-energiaa. Levossa olevalla kappaleella sitä ei ole.

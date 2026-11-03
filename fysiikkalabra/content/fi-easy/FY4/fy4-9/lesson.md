@@ -386,6 +386,8 @@ Joskus kappale ei vain pysähdy vaan kimpoaa takaisin. Silloin sen liikemäärä
 ### Vastaus alun kysymykseen
 Hyppääjä osuu alustaan samalla nopeudella, olipa alusta kova tai pehmeä. Kummassakin tapauksessa hän pysähtyy. Hänen liikemääränsä muutos on siis sama. Siksi myös häneen vaikuttavan kokonaisvoiman impulssi on sama. Alustan voima on painon verran suurempi kuin kokonaisvoima. Sekin pienenee, kun pysähtymisaika pitenee. Paksu patja painuu kasaan kymmenien senttimetrien matkalta. Pysähtyminen kestää siksi monta kertaa kauemmin kuin kovalla maalla, jossa keho pysähtyy muutamassa senttimetrissä. Impulssi on voima kertaa aika. Pidempi pysähtymisaika tarkoittaa siis pienempää keskimääräistä kokonaisvoimaa. Silloin myös alustan keskimääräinen voima on pienempi. Pienempi voima rasittaa kehoa vähemmän. Siksi loukkaantumisen riski pienenee. Samasta syystä alastulossa koukistetaan polvia. Siksi myös nyrkkeilyhanskat ovat pehmustettuja, ja pyöräilykypärän sisällä on kasaan painuvaa vaahtomuovia.
 
+<figure class="unit-photo"><img src="pics/fy4/punching-bag.webp" alt="Nyrkkeilijä lyö keltamustaa nyrkkeilysäkkiä."><figcaption>Nyrkkeilijä lyö raskasta säkkiä.</figcaption></figure>
+
 ## Kaava: Impulssiperiaate
 
 ### Liikemäärä ja impulssi

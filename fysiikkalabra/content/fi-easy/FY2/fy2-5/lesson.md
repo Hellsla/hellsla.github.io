@@ -137,6 +137,8 @@ Tässä luvussa polttoaine tarkoittaa kemiallista polttoainetta. Se on aine, jon
 
 Eri polttoaineet sisältävät eri määrän kemiallista energiaa samaa massaa kohti. Suure, joka kertoo tämän, on lämpöarvo $H$. Lämpöarvo on energia, joka vapautuu, kun palaa yksi kilogramma polttoainetta. Sen yksikkö on esimerkiksi $\text{MJ/kg}$. Bensiinin lämpöarvo on noin $43\,\text{MJ/kg}$. Yhdestä kilogrammasta vapautuu siis noin $43\,\text{MJ}$ (noin $43 \cdot 10^{6}\,\text{J}$). Ilmakuivan polttopuun (kosteus $20\text{–}25\,\%$) lämpöarvo on vain noin $15\,\text{MJ/kg}$. Saman energian saamiseksi puuta tarvitaan siis lähes kolminkertainen massa.
 
+<figure class="unit-photo"><img src="pics/fy2/fireplace-wood-burning.webp" alt="Takassa palaa puita kirkkain liekein."><figcaption>Kun puu palaa, sen kemiallinen energia vapautuu lämpönä ja valona.</figcaption></figure>
+
 Lämpöarvo on energia massayksikköä kohti. Siksi vapautuva energia on suoraan verrannollinen palaneen polttoaineen massaan: kaksi kertaa enemmän polttoainetta vapauttaa kaksi kertaa enemmän energiaa. Tästä saadaan laki, jolla vapautuva energia lasketaan.
 
 <figure class="unit-photo"><img src="pics/fy2/garzweiler-excavator.webp" alt="Valtava kaivinkone isossa hiekkaisessa kaivoksessa."><figcaption>Kaivinkone Garzweilerin kaivoksessa Saksassa. Kaivoksesta kaivetaan ruskohiiltä. Se on kosteaa, ja sen lämpöarvo on pieni.</figcaption></figure>

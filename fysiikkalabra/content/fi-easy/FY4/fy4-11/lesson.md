@@ -285,6 +285,8 @@ Jos este on lähempänä kuin pysähtymismatka, auto törmää. Nokkakolarissa a
 
 Ilman turvavyötä matkustaja jatkaa liikettään lähes samalla nopeudella, kun auto hidastuu hänen ympärillään. Newtonin ensimmäisen lain mukaan mikään voima ei vielä hidasta häntä. Hän osuu ohjauspyörään, kojelautaan tai tuulilasiin ja pysähtyy sekunnin sadasosissa. **Turvavyö** kiinnittää matkustajan autoon, joten hän hidastuu auton rypistyvän keulan mukana. Vyö myös venyy hieman. Se jakaa voiman lantion, rintakehän ja olkapään vahvoille luille. Turvatyyny täyttyy sekunnin sadasosissa ja ottaa vastaan pään ja ylävartalon. Se pidentää pysähtymisaikaa ja jakaa voiman suurelle alalle, joten paine kehoon on pienempi. Turvatyyny on tehty toimimaan yhdessä turvavyön kanssa, ei sen sijasta.
 
+<figure class="unit-photo"><img src="pics/fy4/side-impact-crash-test.webp" alt="Keltainen auto testihallissa. Auton kylki on painunut sisään."><figcaption>Auto törmäystestin jälkeen Yhdysvalloissa. Auton kylki on painunut sisään.</figcaption></figure>
+
 Tämä on vastaus alun kysymyksen toiseen osaan. Ero näkyy myös onnettomuustilastoissa. Onnettomuustietoinstituutti on koonnut tiedot kuolemaan johtaneista onnettomuuksista vuosina 2017–2021. Tutkijalautakunnat tutkivat nämä onnettomuudet. Henkilö- ja pakettiautoissa kuoli 278 ihmistä, joilla oli turvavyö, ja 198 ihmistä ilman turvavyötä. Lautakuntien arvion mukaan 114 vyötöntä olisi voinut selvitä, jos vyö olisi ollut kiinni. Liikenneturvan seurannan mukaan lähes kaikki etupenkillä istuvat käyttävät vyötä.
 
 ## Kaava: Pysähtymismatka ja törmäyksen voima

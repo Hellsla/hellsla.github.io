@@ -236,6 +236,8 @@ missä $\eta$ (eta) on hyötysuhde, joka ilmoitetaan desimaalilukuna tai prosent
 ### Tuulen liike-energia
 Tuulivoimalassa energian lähde on liikkuvan ilman liike-energia $E_\text{k} = \tfrac{1}{2}mv^2$. Tuuli painaa roottorin lapoja ja pyörittää roottoria, ja ilma hidastuu ohittaessaan roottorin. Roottori ei voi pysäyttää ilmaa kokonaan, koska ilman on päästävä virtaamaan pois roottorin takaa. Siksi edes ihanteellinen roottori ei saa talteen kuin noin $59\,\%$ läpi virtaavan tuulen tehosta, ja todellisen tuulivoimalan osuus on alle puolet. Ilma on kevyttä: kuutiometrin massa on vain noin $1{,}25\,\text{kg}$. Siksi tuulivoimalan roottorin on oltava suuri, jotta sen läpi virtaisi sekunnissa paljon ilmaa.
 
+<figure class="unit-photo"><img src="pics/fy4/middelgrunden-wind-farm.webp" alt="Valkoisia tuulivoimaloita aallonmurtajan takana sinistä taivasta vasten. Edustalla on avointa merta ja muutama vene."><figcaption>Middelgrundenin merituulipuisto Kööpenhaminan edustalla Tanskassa veneestä kuvattuna.</figcaption></figure>
+
 ## Kaava: Vesi- ja tuulivoimalan teho
 
 ### Vesivoimala

@@ -87,6 +87,8 @@ You can change the internal energy of a system in two ways. The first is work: w
 
 Energy is conserved. When energy is transferred into a system as heat or work and the kinetic or potential energy of the system does not change, its internal energy increases by exactly the amount of energy transferred, and when energy is transferred out, the internal energy decreases by the same amount. This is the first law of thermodynamics: the law of conservation of energy written for heat and work. An isolated system is a closed system into which, and out of which, no energy is transferred either as heat or as work. Its total energy stays constant, even if energy changes form inside it.
 
+<figure class="unit-photo"><img src="pics/fy3/glowing-metal-furnace.webp" alt="A piece of metal glowing orange seen through the opening of an industrial furnace."><figcaption>Heated metal glows in a furnace. When the metal is heated, its internal energy increases.</figcaption></figure>
+
 ## Formula: First law of thermodynamics
 The change in internal energy is the sum of the quantity of heat transferred into the system and the work done on the system:
 ```latex

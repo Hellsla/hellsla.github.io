@@ -87,6 +87,8 @@ Systeemin sisäenergiaa voi muuttaa kahdella tavalla. Ensimmäinen on työ: kun 
 
 Energia säilyy. Kun systeemiin siirtyy energiaa lämpönä tai työnä eikä systeemin liike- tai potentiaalienergia muutu, sen sisäenergia kasvaa täsmälleen siirtyneen energian verran, ja kun energiaa siirtyy pois, sisäenergia pienenee yhtä paljon. Tämä on termodynamiikan ensimmäinen pääsääntö: energian säilymisen laki kirjoitettuna lämmölle ja työlle. Eristetty systeemi on suljettu systeemi, johon tai josta ei myöskään siirry energiaa lämpönä eikä työnä. Sen kokonaisenergia pysyy vakiona, vaikka energia sen sisällä vaihtaisi muotoa.
 
+<figure class="unit-photo"><img src="pics/fy3/glowing-metal-furnace.webp" alt="Teollisuusuunin aukosta näkyy oranssina hehkuva metallikappale."><figcaption>Kuumennettu metalli hehkuu uunissa. Kun metallia kuumennetaan, sen sisäenergia kasvaa.</figcaption></figure>
+
 ## Kaava: Termodynamiikan ensimmäinen pääsääntö
 Sisäenergian muutos on systeemiin tuodun lämpömäärän ja systeemiin tehdyn työn summa:
 ```latex

@@ -598,6 +598,8 @@ a = 2A
 ```
 missä $A$ on sovitetun polynomin $t^2$-termin kerroin ($\text{m/s}^2$). Kerroin $B$ on alkunopeus ja kerroin $C$ on alkupaikka.
 
+<figure class="unit-photo"><img src="pics/fy4/gull-takeoff-multiple-exposure.webp" alt="Sama lokki kolme kertaa samassa kuvassa, kun se lähtee lentoon veden pinnalta."><figcaption>Lokki lähtee lentoon. Sama lintu on kuvattu samaan kuvaan kolme kertaa peräkkäin.</figcaption></figure>
+
 ## Esimerkki
 Pyöräilijä tulee mäen alkuun nopeudella $4{,}0\,\text{m/s}$ ja lopettaa polkemisen. Alamäessä hänen kiihtyvyytensä on $0{,}50\,\text{m/s}^2$. Mäkeä on $60\,\text{m}$. Kuinka kauan alamäen laskeminen kestää? Mikä on nopeus mäen alla?
 

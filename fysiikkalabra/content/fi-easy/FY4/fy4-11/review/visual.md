@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: a935be65a072cbc5
+CONTENT-HASH: 6447f37516b35ac9
 
 ## Blocking
+- none
 
 ## Polish
-
+- [Minor] fy4-11 kuvateksti: kuvasta ei voi varmistaa, että juuri kylki on "painunut sisään"; varmempi: "Auto törmäystestin jälkeen Yhdysvalloissa. Auton kylki on vaurioitunut."
 
 ## Checked
-batch delta review: scratchpad kc/fy4-11-390.png and kc/fy4-11-1280.png (the new section cut from the built page, preview/fi-easy/fy4-11.html): stacked at 390 px, two columns at 1280 px, no raw maths, no overflow, no clipping; the diff text read for wording (the packet's own captures show no figure change, so only sheets of the new section were opened).
+- batch delta review: opened fy4-11-360-0 and fy4-11-1280-0 captures: photo loads, floats right beside the text at 1280 px or sits in the column (no clipping, no horizontal overflow), at 360 px full column width; caption and alt text natural plain Finnish and consistent with the picture, no unit-bearing numbers needing LaTeX, credit line present under the caption.

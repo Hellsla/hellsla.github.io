@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 24877c9d0f0edc3a
+CONTENT-HASH: 3b1d65f1f5470788
 
 ## Blocking
-(none)
+
 
 ## Polish
-(none)
+
 
 ## Checked
-batch delta review: built page opened in Chromium at 360, 768 and 1280 px, photo (traffic light trails) captured with its surrounding text and caption; image loads (WebP), no horizontal overflow, floats right beside text at 1280 and stands in the column at 360/768, caption short and factual, credit under the caption, credits list at page end, alt text describes the picture; fig-1 captures and the unchanged figures not affected.
+- batch delta review: opened fy1-5-1280-0, fy1-5-360-0; photo loads, no clipping or horizontal overflow, credit line under the caption, alt text and caption natural English and consistent with the picture and the paragraph, no number with a unit in the new text.

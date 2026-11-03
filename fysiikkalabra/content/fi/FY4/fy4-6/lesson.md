@@ -381,6 +381,8 @@ missä $G_x$ on rinteen suuntainen komponentti (N) ja $G_y$ pintaa vastaan kohti
 
 Jos pintaa vastaan kohtisuorassa vaikuttavat vain paino ja tukivoima eikä kappale kiihdy siinä suunnassa, tukivoima on yhtä suuri kuin $G_y$: $N = mg\cos\alpha$, painoa pienempi. (Pintaa vasten tai siitä poispäin suuntautuva vetävä tai työntävä voima muuttaisi tukivoimaa.) Levossa olevaan kappaleeseen vaikuttava lepokitka on yhtä suuri kuin $G_x$. Kappale pysyy paikallaan niin kauan kuin $mg\sin\alpha \le \mu_0\,mg\cos\alpha$ eli $\tan\alpha \le \mu_0$. Massa supistuu, joten tämän mallin mukaan raskas ja kevyt laatikko lähtevät samalta pinnalta liukumaan samalla kulmalla.
 
+<figure class="unit-photo"><img src="pics/fy4/snow-sledding.webp" alt="Lapsi oranssissa takissa laskee keltaisella liukurilla lumista rinnettä alas."><figcaption>Lapsi laskee muovisella liukurilla lumista rinnettä alas.</figcaption></figure>
+
 ### Kitkakertoimen määrittäminen
 Kuvioissa ja simulaatiossa levossa olevaan kappaleeseen vaikuttavaa lepokitkaa merkitään $\overline{F}_\mu$; sen suuruus on $F_{\mu 0} \le \mu_0 N$, ja liukuessa $F_\mu = \mu N$.
 

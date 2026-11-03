@@ -162,7 +162,7 @@ def fig_side(text_html, svg):
     return 0.6 <= text_height(text_html) / fig_h <= 1.5
 
 
-PHOTO = re.compile(r'<figure class="unit-photo"><img src="((?:pics/[a-z0-9]+|shared/pics)/[^"]+)"([^>]*)>(?:<figcaption>(.*?)</figcaption>)?</figure>', re.S)
+PHOTO = re.compile(r'<figure class="unit-photo( wide)?"><img src="((?:pics/[a-z0-9]+|shared/pics)/[^"]+)"([^>]*)>(?:<figcaption>(.*?)</figcaption>)?</figure>', re.S)
 
 
 def photo_credits(ref):
@@ -178,13 +178,14 @@ def photo_credits(ref):
 
 def photos(html):
     """(html, credits section) of a lesson's photographs: each `<figure class="unit-photo"><img src alt><figcaption>`
+    (class "unit-photo wide": a data map or chart that needs the column's width, 2026-11-03 FY2 temperature map)
     written in the text gets its size, lazy loading and a short credit under the caption from photos.json, and the
     page ends with the full credits (the FY14 units' form, scripts/units.py tail_html)."""
     used = []
     def one(m):
-        ref, attrs, cap = m.group(1), m.group(2), m.group(3) or ""
+        wide, ref, attrs, cap = m.group(1) or "", m.group(2), m.group(3), m.group(4) or ""
         c = photo_credits(ref); used.append(c)
-        return (f'<figure class="unit-photo"><img src="{ref}"{attrs} width="{c["width"]}" height="{c["height"]}" loading="lazy" decoding="async">'
+        return (f'<figure class="unit-photo{wide}"><img src="{ref}"{attrs} width="{c["width"]}" height="{c["height"]}" loading="lazy" decoding="async">'
                 f'<figcaption>{cap} <span class="photo-credit">{T("lesson.photo_by")}: {esc(c["creator"])}, {esc(c["licence"])}</span></figcaption></figure>')
     html = PHOTO.sub(one, html)
     if not used: return html, ""
@@ -579,6 +580,7 @@ def build_language(lang):
             for q in exit_q) + "</ol>"
         lesson_md = (folder / "lesson.md").read_text()
         lesson_html = staged_example(fig_rows(named_sections(nbsp_units(render_md(example_md(lesson_md))))))
+        lesson_raw = lesson_html                          # the inquiry layout credits the photographs of the whole page (theory and tasks)
         lesson_html, photo_tail = photos(lesson_html)
         inq = inquiry.load(folder)
         if inq is not None:
@@ -617,7 +619,7 @@ def build_language(lang):
                     f'<section id="exit"><h2>{inquiry.exit_title()}</h2>{exit_items}</section>\n'
                     f'<section id="exercises"><h2>{inquiry.exercises_title()}</h2>{howto if ex else ""}{ex_html}</section>{photo_tail}')
         else:                                             # inquiry layout: the same parts placed by inquiry.json (scripts/inquiry.py)
-            lesson_html = lesson_html.replace("<!-- sim -->", "")
+            lesson_html = lesson_raw.replace("<!-- sim -->", "")
             pieces = re.split(r"(?=<h2[ >])", lesson_html)
             intro = pieces[0] if not pieces[0].startswith("<h2") else ""
             sections = {}
@@ -629,6 +631,7 @@ def build_language(lang):
                      "concepts": inquiry.key_concepts_html(meta["id"], meta.get("key_concepts"), lambda t: nbsp_units(render_md(t))),   # Selkeä suomi only (NOTES.md §12)
                      "exit": f'<div id="exit"><h3>{inquiry.exit_title()}</h3>{exit_items}</div>'}
             body, toc = inquiry.render(folder, inq, parts, lambda t: nbsp_units(render_md(t)))
+            body, photo_tail = photos(body)               # a photograph may also open a task (FY4 2026-11-03: Pohdinta)
             main = f'<article id="teoria" class="inquiry">{body}{photo_tail}</article>'
         skey = (meta["id"] if where[0] == "lesson" else where[1].name) if where else None   # the sim's block of lang "sims"
         html = (texts(tpl).replace("<title>{{title}}", "<title>" + esc(plain_tex(meta["title"]))).replace('og:title" content="{{title}}', 'og:title" content="' + esc(plain_tex(meta["title"])))

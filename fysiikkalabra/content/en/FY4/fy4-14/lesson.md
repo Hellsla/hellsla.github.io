@@ -76,6 +76,8 @@
 ### Air resists motion
 When an object moves through air or water, it has to push the medium out of its way. The medium pushes back on the object: the object experiences **resistance of the medium**, in air **air resistance** (also called **drag**), which this book writes as $\overline{F}_\text{v}$. It points against the velocity of the object when the air is still. In the chapter *Weight, friction and the inclined plane*, friction resisted sliding along a surface. Air resistance is a similar resistive force, but it is caused by the surrounding air, and the object does not need to touch any solid surface. A bicycle and a car also have **rolling resistance** $\overline{F}_\text{r}$, the resistance caused by the tyres and the road, which is a different force from air resistance.
 
+<figure class="unit-photo"><img src="pics/fy4/epic-parachute-test.webp" alt="A white round parachute in a blue sky, with a small metal test body hanging at the end of a long line."><figcaption>NASA's EPIC test in California in June 2025: a drone dropped a parachute fitted with instruments and its payload. There is no person in the photo, only a test body.</figcaption></figure>
+
 Air resistance differs from sliding friction in that it depends on speed. Air resistance does not act at all on an object that is at rest relative to the air, and it grows quickly when the speed of the object relative to the air grows. At the same speed, air resistance is greater the larger the cross-sectional area of the object and the worse the air can flow past it. At the same speed, the resistance in water is much greater than in air, because water is denser.
 
 ### The three stages of a fall

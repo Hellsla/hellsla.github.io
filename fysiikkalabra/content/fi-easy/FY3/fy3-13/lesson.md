@@ -139,6 +139,8 @@ Suljettu jäykkä astia ei muuta muotoaan. Siksi kaasun tilavuus ja ainemäärä
 
 Piirrä mittaustulokset kuvaajaan. Pisteet asettuvat lähes suoralle: paine kasvaa lähes yhtä paljon jokaista celsiusastetta kohti. Oikeissa mittauksissa pisteet eivät yleensä ole täsmälleen samalla suoralla, koska mittauksissa on epävarmuutta. Mittausepävarmuus kertoo, kuinka epävarma mittaustulos on. Se ei yleensä tarkoita ehdotonta suurinta mahdollista poikkeamaa oikeasta arvosta. Tässä paineen lukeman epävarmuudeksi on arvioitu $\pm 1\,\text{kPa}$. Valmistajan ilmoittama virheraja mittarille on eri asia. Se on laitteen ominaisuus. Mittauksen epävarmuuteen vaikuttavat lisäksi esimerkiksi lukeminen ja hauteen lämpötilan tasaantuminen. Piirrä suora siksi pisteiden joukon keskeltä. Suoran pitää kulkea epävarmuusvälien kautta. Sen ei tarvitse kulkea jokaisen pisteen kautta.
 
+<figure class="unit-photo"><img src="pics/fy3/liquid-nitrogen-dish.webp" alt="Käsi pitelee lasimaljaa, jossa on nestemäistä typpeä. Maljasta valuu valkoista sumua."><figcaption>Nestemäistä typpeä lasimaljassa tiedefestivaalilla vuonna 2025. Valkoinen sumu on pieniä vesipisaroita.</figcaption></figure>
+
 Jatka suoraa mittausalueen ulkopuolelle kohti kylmempää, kunnes paine on nolla. Tätä sanotaan ekstrapoloinniksi (suoran jatkamiseksi): tulos saadaan alueelta, jolla ei ole mitattu mitään. Mikromallin mukaan paine syntyy hiukkasten törmäyksistä seinään. Ideaalikaasun mallissa paine olisi nolla siinä lämpötilassa, jossa hiukkasten keskimääräinen liike-energia on pienimmillään. Lämpötila, jossa suora osuu nollapaineeseen, on kokeen antama arvio absoluuttiselle nollapisteelle. Se on vain arvio. Todellinen kaasu nesteytyy jo ennen sitä, ja jatke on malli.
 
 ## Kaava: Nollapaineen lämpötila

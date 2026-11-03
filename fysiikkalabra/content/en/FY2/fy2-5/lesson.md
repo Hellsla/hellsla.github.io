@@ -137,6 +137,8 @@ In this chapter a fuel means a chemical fuel: a substance whose chemical energy 
 
 Different fuels contain different amounts of chemical energy for their mass. The quantity that tells you this is the heat of combustion $H$. It is the energy released when one kilogram of fuel burns, and its unit is, for example, $\text{MJ/kg}$. The heat of combustion of petrol is about $43\,\text{MJ/kg}$, so about $43\,\text{MJ}$ is released from one kilogram (about $43 \cdot 10^{6}\,\text{J}$). The heat of combustion of air-dried firewood (moisture $20\text{–}25\,\%$) is only about $15\,\text{MJ/kg}$, so to get the same energy you need almost three times the mass of wood.
 
+<figure class="unit-photo"><img src="pics/fy2/fireplace-wood-burning.webp" alt="Logs burning with bright flames in a fireplace, with glowing embers below them."><figcaption>When wood burns, its chemical energy is released as heat and light.</figcaption></figure>
+
 Because the heat of combustion is energy per unit of mass, the energy released is directly proportional to the mass of fuel burnt: twice as much fuel releases twice as much energy. This gives the law used to calculate the energy released.
 
 <figure class="unit-photo"><img src="pics/fy2/garzweiler-excavator.webp" alt="A huge steel-lattice excavator in a wide sand-coloured open-pit mine on a cloudy day."><figcaption>A bucket-wheel excavator in the Garzweiler open-pit mine in Germany. The mine produces lignite, a moist coal with a low heating value.</figcaption></figure>

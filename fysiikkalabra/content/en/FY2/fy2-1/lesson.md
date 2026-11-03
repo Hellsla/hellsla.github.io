@@ -95,6 +95,8 @@
 
 Energy comes in many forms, and each form is called a **form of energy**. The form of energy tells you where the energy is stored or how it shows itself.
 
+<figure class="unit-photo"><img src="pics/fy2/hydropower-plant-aerial.webp" alt="A hydroelectric power plant seen from above: a river flows on the left, a car park is in the middle and transformers and power line towers are at the bottom."><figcaption>The site of a hydroelectric power plant seen from above. In a hydroelectric plant the potential energy of water turns into kinetic energy in the turbine and into electrical energy in the generator.</figcaption></figure>
+
 ### Seven forms of energy
 - **Potential energy** $E_\text{p}$ is energy that depends on the position of an object, here gravitational potential energy. The higher an object is and the greater its mass, the more potential energy it has. A ball at the edge of a shelf can pick up speed as it falls.
 - **Kinetic energy** $E_\text{k}$ is the energy of a moving object. The faster an object moves and the greater its mass, the more kinetic energy it has. An object at rest has none.

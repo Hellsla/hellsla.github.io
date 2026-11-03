@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 20db12035d795360
+CONTENT-HASH: 09e505c3a0405998
 
 ## Blocking
+- none
 
 ## Polish
-
+- [Minor] fy3-10-1280-0 — the balloon photo sits beside the paragraph on the combined gas law, which does not mention balloons; the caption itself is correct — move it next to the paragraph where pressure and open containers are discussed, if one exists.
 
 ## Checked
-batch delta review: scratchpad kc/fy3-10-390.png and kc/fy3-10-1280.png (the new section cut from the built page, preview/fi-easy/fy3-10.html): stacked at 390 px, two columns at 1280 px, no raw maths, no overflow, no clipping; the diff text read for wording (the packet's own captures show no figure change, so only sheets of the new section were opened).
+- batch delta review: opened fy-easy captures fy3-10-1280 and fy3-10-360 (photo, caption, credit line, alt text read against picture and neighbouring paragraph; no clipping or horizontal overflow; no plain-text quantity in new caption/alt).

@@ -1,10 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 439993a1b66dbd2f
+CONTENT-HASH: 564e09b67392f68d
 
 ## Blocking
+- none
 
 ## Polish
-
+- [Minor] fy4-3 köydenveto: kuvateksti ei yhdistä kuvaa Newtonin ensimmäisen lain kappaleeseen; ehdotus: "Köydenvetäjät nojaavat taaksepäin ja painavat jalkansa maata vasten. Maan kitka pitää heidät paikallaan."
+- [Minor] fy4-3 köydenveto 1280 px: kuva ei kellu oikealle (CSS jättää sen tarkoituksella pois, koska lähellä on leveä kuvio), joten sen viereen jää tyhjä tila; ei haittaa käyttöä.
 
 ## Checked
-Round 2 delta: scratchpad kc/r2-fy4-3-390.png and kc/r2-fy4-3-1280.png (section cut from rebuilt preview/fi-easy/fy4-3.html; sheets r2sheet390.png, r2sheet1280.png). Changed text read in the diff f83714cd..b8a6e1bb and seen in the capture: fluent, plain, physics unchanged. Stacked at 390 px, two columns at 1280 px, no overflow, no KaTeX errors, nothing clipped.
+- batch delta review: opened fy4-3-360-0 and fy4-3-1280-0 and -1 variants captures (kaksi kuvaa): photo loads, floats right beside the text at 1280 px or sits in the column (no clipping, no horizontal overflow), at 360 px full column width; caption and alt text natural plain Finnish and consistent with the picture, no unit-bearing numbers needing LaTeX, credit line present under the caption.

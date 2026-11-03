@@ -401,6 +401,8 @@ Oletetaan, että pintaa vastaan kohtisuorassa vaikuttavat vain paino ja tukivoim
 
 Levossa olevaan kappaleeseen vaikuttava lepokitka on yhtä suuri kuin $G_x$. Kappale pysyy paikallaan niin kauan kuin $mg\sin\alpha \le \mu_0\,mg\cos\alpha$ eli $\tan\alpha \le \mu_0$. Massa supistuu. Tämän mallin mukaan raskas ja kevyt laatikko lähtevät samalta pinnalta liukumaan samalla kulmalla.
 
+<figure class="unit-photo"><img src="pics/fy4/snow-sledding.webp" alt="Lapsi laskee keltaisella liukurilla lumista mäkeä alas."><figcaption>Lapsi laskee mäkeä alas muovisella liukurilla.</figcaption></figure>
+
 ### Kitkakertoimen määrittäminen
 Kuvioissa ja simulaatiossa levossa olevaan kappaleeseen vaikuttavaa lepokitkaa merkitään $\overline{F}_\mu$. Sen suuruus on $F_{\mu 0} \le \mu_0 N$. Liukuessa $F_\mu = \mu N$.
 

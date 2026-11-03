@@ -403,6 +403,8 @@ Metrin pitää olla sama kaikkialla maailmassa. Siksi tiedeyhteisö on sopinut y
 
 Tällä kurssilla tarvitset eniten kolmea ensimmäistä. Muut perussuureet tulevat vastaan myöhemmillä kursseilla.
 
+<figure class="unit-photo"><img src="pics/fy1/nist-4-kibble-balance.webp" alt="Monimutkainen metallinen laite tummaa taustaa vasten."><figcaption>NIST-4-Kibble-vaaka Yhdysvalloissa. Kilogramma määritellään nykyään luonnonvakion avulla. Tällaisella vaa'alla massa voidaan mitata tämän määritelmän mukaan.</figcaption></figure>
+
 ### Etuliitteet ja kymmenpotenssit
 Metri sopii huoneen mittaamiseen. Se ei sovi atomille eikä Neptunukselle. Siksi yksikön eteen liitetään **etuliite**. Etuliite on kymmenpotenssin lyhenne: $1\,\text{km} = 10^{3}\,\text{m}$ ja $1\,\text{mm} = 10^{-3}\,\text{m}$. Yleisimmät etuliitteet etenevät tuhannen kertoimen portain. Poikkeuksia ovat esimerkiksi senti $10^{-2}$ ja desi $10^{-1}$. Suuret ja pienet luvut kirjoitetaan kymmenpotenssimuodossa $a\cdot10^{n}$. Siinä $1 \le a < 10$ ja $n$ on kokonaisluku. Esimerkiksi Maan ja Auringon etäisyys on $1{,}5\cdot10^{11}\,\text{m} = 1{,}5\cdot10^{8}\,\text{km}$.
 

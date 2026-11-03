@@ -488,7 +488,7 @@ def _line(fname, body, lid):
     return "numbers" if SUBSTANTIVE.search(body) else "wording"
 
 
-PHOTO_LINE = re.compile(r'<figure class="unit-photo"><img src="(?:pics/[a-z0-9]+|shared/pics)/[^"]+"[^>]*>(?:<figcaption>.*?</figcaption>)?</figure>\s*$')
+PHOTO_LINE = re.compile(r'<figure class="unit-photo(?: wide)?"><img src="(?:pics/[a-z0-9]+|shared/pics)/[^"]+"[^>]*>(?:<figcaption>.*?</figcaption>)?</figure>\s*$')
 
 
 def _is_photo(path):

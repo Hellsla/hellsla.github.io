@@ -386,6 +386,8 @@ If an object does not just stop but bounces back, its momentum changes more. Whe
 ### The answer to the opening question
 The jumper hits the surface at the same velocity whether it is hard or soft, and stops in both cases. So the change in the jumper's momentum is the same, and so is the impulse of the net force on the jumper. The force of the surface is larger than this net force by the weight, but it too becomes smaller when the stopping time grows. A thick mat is compressed over tens of centimetres, so stopping takes many times longer than on hard ground, where the body stops within a few centimetres. Since impulse is force times time, a longer stopping time means a smaller average net force, and so a smaller average force from the surface too. A smaller force puts less strain on the body, so the risk of injury is lower. This is also why we bend our knees when landing, boxing gloves are padded and a cycling helmet has compressible foam inside.
 
+<figure class="unit-photo"><img src="pics/fy4/punching-bag.webp" alt="A boxer punching a yellow and black punching bag with a glove in a gym."><figcaption>A boxer punches a heavy punching bag.</figcaption></figure>
+
 ## Formula: the impulse–momentum principle
 
 ### Momentum and impulse

@@ -1,8 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 97f8ddaf87a21e22
+CONTENT-HASH: 7ab121a011b07a5f
+
 ## Blocking
-(none)
+- none
+
 ## Polish
-- Valoviirut sopivat radan käsitteeseen; kuvateksti lyhyt ja tosi. Lisenssirivin 'CC0 1.0' rivitys katkeaa kapeassa palstassa (kovan välilyönnin voisi harkita).
+- none
+
 ## Checked
-batch delta review: the added photo in the built preview at 360/768/1280 px (loads, no horizontal overflow, 320 px figure, credit under the caption), alt text vs image, Finnish and factual accuracy of the caption, placement in the page rhythm.
+- batch delta review: opened fy1-5-1280-0.png and fy1-5-360-0.png (photo floated or inline in the column, no clipping or horizontal overflow, credit line present); alt text and caption read against the picture and the neighbouring paragraph; no number with a unit in the new caption or alt text.
