@@ -1,14 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: cba23ec607e17a7b
+CONTENT-HASH: 9cb596630b684518
 
 ## Blocking
 - none
 
 ## Polish
-- "interferoivat" jää selittämättä, mutta viittaus lukuun *Aaltojen interferenssi* riittää.
+- inquiry.json learn[0] — "avulla ... avulla" toistuu, mutta tavoite on kieliopillisesti oikea ja täydentää otsikon "Tällä tunnilla opit"; ei muutosta.
 
 ## Checked
-- Lyhyet virkkeet, yksi asia kerrallaan; mitään syy-seuraussuhdetta tai vaihetta ei ole pudotettu (rakenne verrattu avain kerrallaan, ei pituuseroja).
-- Tavoitteet täydentävät lauseen "Tällä tunnilla opit"; esitiedot päättyvät luvun nimeen; ei lesson-id:tä.
-- Kaappaukset: contact-1 (top-390, sim-390, kuvat 1–5, esimerkki, Pohdinta, Ennusta).
-- Esimerkki seitsemässä vaiheessa; kokeiden alkutilat ja lukitut muuttujat ennallaan.
+- Muutos on vain yksi tavoite: finiittiverbi "tiedät" poistunut, symbolit ja luvut ennallaan, sisältö (teho/pinta-ala tai etäisyys) sama.
+- Tavoite täydentää otsikon lauseen; sama tavoite kuin kokeiden ja esimerkin sisältö, ei uutta oppisisältöä.
+- Muu oppitunti ennallaan hyväksytyn version mukaan; tuore tiiviste vastaa pakettia.
