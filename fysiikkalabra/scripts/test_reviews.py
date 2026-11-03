@@ -417,6 +417,10 @@ md = "> **Miksi** x?\n\n" + hero + "\n\n## Ydinajatus\nText.\n"
 expect("an opening illustration without labels drops out of the classified text", rv.strip_hero(md) == "> **Miksi** x?\n\n## Ydinajatus\nText.\n")
 labelled = md.replace("</svg>", '<foreignObject x="0" y="0" width="9" height="9"><div>$Q$</div></foreignObject>\n</svg>')
 expect("an opening illustration with a label stays a figure", rv.strip_hero(labelled) == labelled)
+rv.chapter_titles.cache_clear()
+tex = next(t for t in rv.chapter_titles() if "\\" in t)            # a current title with LaTeX, e.g. "Teho: $P = \\Delta E/\\Delta t$"
+expect("a JSON line's escaped LaTeX title counts as a current chapter reference",
+       rv._chapter_refs_renamed('"feedback": "Ks. (luku *Vanha nimi*)."', '"feedback": "Ks. (luku *' + tex.replace("\\", "\\\\") + '*)."'))
 expect("real project untouched", snapshot() == REAL)
 print("\n" + ("all review tests passed" if not failures else f"{len(failures)} FAILED: " + ", ".join(failures)))
 sys.exit(1 if failures else 0)
