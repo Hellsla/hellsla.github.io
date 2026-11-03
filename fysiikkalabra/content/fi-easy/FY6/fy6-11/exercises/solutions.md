@@ -47,7 +47,7 @@
 **Muunnokset:** $120\,\mu\text{N} = 120 \cdot 10^{-6}\,\text{N}$ ja $4{,}0\,\text{nC} = 4{,}0 \cdot 10^{-9}\,\text{C}$.
 **Sijoitus:** $E = \dfrac{120 \cdot 10^{-6}\,\text{N}}{4{,}0 \cdot 10^{-9}\,\text{C}} = 3{,}0 \cdot 10^{4}\,\text{N/C}$
 **Vastaus:** $3{,}0 \cdot 10^{4}\,\text{N/C}$, kaksi merkitsevää numeroa, koska kuvaajasta luetaan ruudukon risteys, jossa voima on $120\,\mu\text{N}$ kahden merkitsevän numeron tarkkuudella.
-**Järkevyys:** Mittauspiste $(3{,}0\,\text{nC};\ 91\,\mu\text{N})$ antaa lähes saman arvon: $91\,\mu\text{N} : 3{,}0\,\text{nC} \approx 3{,}0 \cdot 10^{4}\,\text{N/C}$. Koska suora kulkee origon kautta, varaukseton pallo ei tuntisi voimaa, vaikka kenttä on olemassa.
+**Järkevyys:** Mittauspiste $(3{,}0\,\text{nC};\ 91\,\mu\text{N})$ antaa lähes saman arvon: $91\,\mu\text{N} : 3{,}0\,\text{nC} \approx 3{,}0 \cdot 10^{4}\,\text{N/C}$. Suora sovitettiin origon kautta. Mallin $F = qE$ mukaan varaukseton pallo ei tunne homogeenisessa kentässä sähköistä voimaa, vaikka kenttä on olemassa.
 
 ## fy6-11-L2-01
 **Annettu:** levyjen välinen jännite $U = 4{,}5\,\text{kV}$, levyjen etäisyys $d = 9{,}0\,\text{mm}$, pallon varaus $q = 4{,}0\,\text{nC}$

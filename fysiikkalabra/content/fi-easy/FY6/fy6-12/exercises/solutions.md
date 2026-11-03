@@ -46,7 +46,7 @@
 **Kaava:** $\Delta E_\text{k} = -\Delta E_\text{p} = e(V_1 - V_2)$, missä $V_1 = V(4{,}0\,\text{cm})$ ja $V_2 = V(1{,}0\,\text{cm})$
 **Muunnokset:** Ei tarvita: kun varaus on $e$ ja potentiaaliero voltteina, energia saadaan suoraan elektronivoltteina.
 **Sijoitus:** $\Delta E_\text{k} = e \cdot (200\,\text{V} - 50\,\text{V}) = 150\,\text{eV}$
-**Vastaus:** $150\,\text{eV}$. Arvot luettiin $50\,\text{V}$:n ruudukkoviivoilta, joten tulos on tarkka.
+**Vastaus:** $150\,\text{eV}$. Tuloksessa on kaksi merkitsevää numeroa. Potentiaalit luetaan $50\,\text{V}$:n ruudukkoviivoilta, ja paikat on annettu kahden merkitsevän numeron tarkkuudella.
 **Järkevyys:** Kuvaajan kulmakerroin on $50\,\text{V}$ senttimetriä kohti, ja $3{,}0\,\text{cm}$:n matkalla potentiaali muuttuu $150\,\text{V}$. Protoni liikkuu kohti negatiivista levyä eli kentän suuntaan, joten sen liike-energia kasvaa, kuten positiiviselle varaukselle kuuluu.
 
 ## fy6-12-L2-01

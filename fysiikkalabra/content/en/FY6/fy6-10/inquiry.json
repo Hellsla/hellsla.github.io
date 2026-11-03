@@ -386,7 +386,7 @@
       "unit": "nC",
       "tolerance": 0.03,
       "hints": [
-        "Choose a point on the graph whose values you can read exactly from the grid.",
+        "Choose a point on the graph whose values you can read accurately from the grid.",
         "At the point $r = 3.0\\,\\text{cm}$ the force is $9.0\\,\\text{mN}$. When the charges are equal, Coulomb's law is $F = k\\,\\tfrac{q^2}{r^2}$.",
         "Solve $q = r\\sqrt{\\tfrac{F}{k}}$ and substitute $r = 0.030\\,\\text{m}$ and $F = 9.0 \\cdot 10^{-3}\\,\\text{N}$."
       ],

@@ -46,7 +46,7 @@
 **Formula:** $\Delta E_\text{k} = -\Delta E_\text{p} = e(V_1 - V_2)$, where $V_1 = V(4.0\,\text{cm})$ and $V_2 = V(1.0\,\text{cm})$
 **Conversions:** Not needed: when the charge is $e$ and the potential difference is in volts, the energy is obtained directly in electronvolts.
 **Substitution:** $\Delta E_\text{k} = e \cdot (200\,\text{V} - 50\,\text{V}) = 150\,\text{eV}$
-**Answer:** $150\,\text{eV}$, read from the grid lines of $50\,\text{V}$, so the result is exact.
+**Answer:** $150\,\text{eV}$, two significant figures, because the potentials are read from the $50\,\text{V}$ grid lines and the positions are given to two significant figures.
 **Reasonableness:** The slope of the graph is $50\,\text{V}$ per centimetre, and over a distance of $3.0\,\text{cm}$ the potential changes by $150\,\text{V}$. The proton moves toward the negative plate, that is, in the direction of the field, so its kinetic energy increases, as it should for a positive charge.
 
 ## fy6-12-L2-01

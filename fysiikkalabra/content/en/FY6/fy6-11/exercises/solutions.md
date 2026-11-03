@@ -47,7 +47,7 @@
 **Conversions:** $120\,\mu\text{N} = 120 \cdot 10^{-6}\,\text{N}$ and $4.0\,\text{nC} = 4.0 \cdot 10^{-9}\,\text{C}$.
 **Substitution:** $E = \dfrac{120 \cdot 10^{-6}\,\text{N}}{4.0 \cdot 10^{-9}\,\text{C}} = 3.0 \cdot 10^{4}\,\text{N/C}$
 **Answer:** $3.0 \cdot 10^{4}\,\text{N/C}$, two significant figures, because a crossing of the grid is read from the graph, where the force is $120\,\mu\text{N}$ with two significant figures.
-**Reasonableness:** The measurement point $(3.0\,\text{nC};\ 91\,\mu\text{N})$ gives almost the same value: $91\,\mu\text{N} : 3.0\,\text{nC} \approx 3.0 \cdot 10^{4}\,\text{N/C}$. Because the line goes through the origin, an uncharged ball would feel no force, although the field exists.
+**Reasonableness:** The measurement point $(3.0\,\text{nC};\ 91\,\mu\text{N})$ gives almost the same value: $91\,\mu\text{N} : 3.0\,\text{nC} \approx 3.0 \cdot 10^{4}\,\text{N/C}$. The line was fitted through the origin because, by the model $F = qE$, an uncharged ball feels no electric force in a uniform field, although the field exists.
 
 ## fy6-11-L2-01
 **Given:** voltage between the plates $U = 4.5\,\text{kV}$, plate distance $d = 9.0\,\text{mm}$, charge of the ball $q = 4.0\,\text{nC}$
