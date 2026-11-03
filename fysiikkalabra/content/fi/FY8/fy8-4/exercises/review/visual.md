@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 7bec19c890316243
+CONTENT-HASH: 7280c9ba0189f66a
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] open-exercises L1-1280-4 (L1-03 Vastaus) — inline value breaks after the dot ("$3{,}60 \cdot$ / $10^{-27}\,\text{kg}\cdot\text{m/s}$") — acceptable build wrapping; reword the justification to put the value first if cheap.
-- [Minor] exercises L1–L2 answer fields — the unit beside the input is plain text ("10⁻²⁷ kg·m/s", "10¹⁵ 1/s"), while the task text sets the same unit in LaTeX — UI label from `unit`; consider rendering it as maths project-wide (not a lesson change).
+- [Minor] L1-04 Järkevyys (open-exercises-1280-4) — the sentence "joten fotoni kuuluu lähi-ultraviolettiin…" continues after a display chain with a lowercase "joten"; it reads acceptably, but "Siis fotoni kuuluu…" or a full stop before the chain would avoid the dangling start.
+- [Minor] L1 answer fields — the unit beside the input is plain text ("10⁻¹⁹ J", "nm"), unchanged from round 1 and a project-wide UI label, not a lesson matter.
 
 ## Checked
-- Exercise level 1, 2, 3 captures via contact sheets 5–6 (every solution open), L3-1280-1 at full size; solution blocks: Annettu/Kysytty/Periaate/Kaava/Sijoitus/Vastaus/Järkevyys all in order, `aligned` chains readable, answer boxes and Järkevyys sub-blocks inside their cards.
-- Task texts: situation first, question last; every quantity with its unit in LaTeX; colon used for written division; `\cdot` throughout.
-- No exercise figures.
+- open-exercises-1280-3 (L1-03 full solution) and open-exercises-1280-4 (L1-04: new Järkevyys with the electronvolt chain and the wavelength chain, both as aligned rows, inside the Järkevyys block, nothing clipped).
+- Quantities: $331\,\text{nm}$, $400\,\text{nm}$, $500\,\text{nm}$:n all LaTeX with correct case ending; `\cdot` and decimal comma throughout.
+- Other levels unchanged; layout survived (answer box, Vastaus, Järkevyys in order).
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 4 · accessibility 4

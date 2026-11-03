@@ -1,23 +1,24 @@
 VERDICT: FAIL
-CONTENT-HASH: b4cca44759d1deba
+CONTENT-HASH: 67ba387cc1473fac
 
 ## Blocking
-- inquiry.json, ennuste-1 prompt — the prediction cannot be argued before the evidence: the student is not told that  = 1{,}0\,\text{mm}$ is a dark fringe ("hieman sivussa keskikohdasta" suggests a bright region), and the interference chapter gives no way to place it. The right option needs this hidden fact, and an aalto-minded student who guesses a bright fringe picks "Osuus kasvaa", so the experiment refutes the geometry guess, not the kuula reasoning. Fix: state in the prompt that $ is a place where the waves from the two slits arrive half a wavelength apart (a dark fringe of the wave model), then ask whether the kuula model and the wave model predict an increase or a decrease and which the data will support.
+- lesson.md, Esimerkki, vaihe "Tulos" — "Laitteen pituus 1,2 m on alle tuhannesosa fotonien välistä" is false: 1,2 : 940,8 = 0,0013 (the next stage says so) — write "noin tuhannesosa" or "vain noin 0,1 % fotonien välistä".
+- lesson.md, Yleinen virhekäsitys, ensimmäinen kappale — "Kuulamallissa toisen raon avaaminen lisäisi osumia kaikkialla" contradicts ennuste-1's feedback ("Kuulamallissakaan osuus ei kasvaisi ... pysyisi samana"), so the student gets two opposite statements about what the bullet model predicts — rewrite: "Kuulamallissa toisen raon avaaminen ei vähentäisi osumia missään kohdassa; todellisuudessa tummiin raitoihin tulee osumia vähemmän kuin yhden raon kanssa", and state in both places whether the comparison is the count n or the share n : N.
 
 ## Polish
-- inquiry.json, siirto solution "Järkevyys" — "suunnilleen hyttysen paino" is wrong by about a factor of ten: 0,3 mN is the weight of about 30 mg (a mosquito weighs about 25 µN). Fix: "suunnilleen kolmenkymmenen milligramman painon, esim. useamman hyttysen".
-- lesson.md, Comptonin ilmiö — "säteilisivät samaa taajuutta, jota ne saavat" is clumsy Finnish. Fix: "säteilisivät samalla taajuudella kuin tuleva säteily".
-- inquiry.json, johtopaatos prompt — "Mitä aallon ja yksittäisen osuman välillä on?" is not idiomatic. Fix: "Mikä on aallon ja yksittäisen osuman yhteys?"
-- inquiry.json, ennuste-2 feedback (option 1) — "vaatii vuorovaikutuksen elektronin kanssa" presents the loss of fringes as a disturbance only; the lesson's own claim is that the which-path information removes the interference. Fix: "kun reitti tiedetään, kahden raon aallot eivät enää interferoi".
-- Workload: hook, retrieval, two predictions, sim, two experiments, explain, Compton data, a long theory part (four models, Compton, flux), example, error item, transfer, 12 exercises, three checks and exit ticket is well over an hour. Fix: make the siirto task optional and let the student choose 2 to 3 exercises per level.
+- inquiry.json ennuste-1 prompt — it says that x0 is a dark fringe "aaltomallin mukaan" and asks "mieti, mitä kuulamalli ja aaltomalli ennustaa", which nearly hands over the answer. Fix: let the student say whether x0 is dark or bright from the matkaero, or drop the "tumma raita" sentence until after the choice.
+- inquiry.json compton-data — a "tutki" item before the theory section; the "Hidastumismalli" distractor is not a real student model. Fix: replace it with "fotonin energia ei muutu, mutta suunta muuttuu" or move the item after the theory.
+- The four photon models appear only as a list, and no activity asks the student to match a phenomenon (interferenssi, valosähköinen ilmiö, Compton) to a model. Fix: make tarkistus-3 non-optional or add a one-line matching item.
+- inquiry.json siirto — the doubling of the momentum change on reflection is not taught before the task and appears only in hint 3. Fix: add one sentence on mirror reflection to Yleinen virhekäsitys.
+- Workload is at the upper edge of one lesson (2 predictions, 2 experiments, Compton data, siirto, 12 exercises). The optional items are marked correctly, so no change is needed unless a trial hour overruns.
 
 ## Checked
-- Opening question is answered by the conclusion and the dualism paragraph; de Broglie is correctly left out.
-- Prediction options have misconception-repairing feedback; ennuste-2 is arguable and refutable (koe-2 changes only the path measurement).
-- Koe-1 and koe-2 lock the right variables, vary one, and are called model values in the text and the model answer.
-- Compton table matches the Compton shift (0,00243 nm times 1 - cos of the angle); distractors are real misconceptions.
-- Worked example: one step per stage, numbers re-computed and correct; sanity check ties to the lesson's example.
-- Figures buildup, patterns and compton are legible at 390 px; colour is not the only carrier; x0 marker in the patterns figure comes after the experiments.
-- Phone captures of the sim and the experiment show no clipping; readout is understandable.
-- Solar-sail force 290,5 µN, hints and mistake values are correct.
-- Exit ticket tests the core idea (models, p = h/lambda).
+- Opening question is answered by koe-1/koe-2 and the conclusion; the predictions are refutable and the options' feedback repairs the misconception.
+- Experiments lock hiukkanen/raot/x0 and vary one thing; the model values are named as model values.
+- Compton table (0,0711 to 0,0760 nm) matches Δλ = 0,00243·(1−cos θ).
+- Example: hf = 3,138e-19 J, N/t = 3,19e5 1/s, d = 941 m; one step per stage, plausibility check present.
+- Tarkistus-2 answer 794,9 eV, distractors 1,273e-16 and 516 700 are real slips; siirto answer 290,5 µN; the Etsi virhe item is sound.
+- Figures buildup, patterns and compton are legible at 390 px and do not show the answer before the predictions.
+- Simulation at 390 and 1280 px is readable; controls are not clipped.
+- Finnish and glossary terms (aalto-hiukkasdualismi, Comptonin ilmiö, kaksoisrakokoe) are consistent.
+- Exit ticket tests the dualism idea and p = h/λ.

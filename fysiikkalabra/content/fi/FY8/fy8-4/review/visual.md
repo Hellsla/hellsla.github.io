@@ -1,21 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: b4cca44759d1deba
+CONTENT-HASH: 67ba387cc1473fac
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] sim-390 / exp-koe-1-390 (simulation canvas) — at 390 px the top edge of the `fotonilähde` box is cut off by the canvas edge (at 1280 it is whole), and the `osumia` label touches the y-axis arrowhead — give the source a few px more top margin and move the label left.
-- [Minor] sim readout at 390 px — inline maths breaks after "=": "$n =$ / $0$" — shorten the line ("Laskentavälillä: $n = 0$") or keep the value with the sign.
-- [Minor] lesson Kaava (theory-1280-2) — the inline value "$1{,}3 \cdot$ / $10^{-27}\,\text{kg}\cdot\text{m/s}$" breaks after the dot, as does "$h =$ / $6{,}626 \cdot 10^{-34}$" in Tunnetut ja kysytty at 390 px; wrap happens in the build's inline-maths wrapping, so only reword/reorder where cheap (e.g. put the value earlier in the sentence).
-- [Minor] fig `buildup` — random dots lie on the frame edge of the N = 10 and N = 200 strips (left and right border), which reads as stray marks in print; clip the sampling to 4 px inside the frame.
-- [Minor] lesson Ydinajatus "Aalto vai hiukkanen?" — the long sentence about constructive/destructive path difference lists three cases ("puolikas…, puolitoista…, tai muu pariton monikerta"); "tai muu puolikkaan aallonpituuden pariton monikerta" alone says it.
+- [Minor] lesson Kaava (theory-1280-2) — the inline maths in "Fotonin liikemäärä" is now grouped as one formula and no longer breaks after the dot; the Comptonin ilmiö figure's electron and dashed line moved correctly (all earlier round-1 items except the buildup edge dots were addressed or are cosmetic). The `buildup` dots on the strip frame edge remain from round 1 — clip sampling 4 px inside the frame.
+- [Minor] sim-390 — the `osumia` label now clears the axis arrowhead and the source box is whole; nothing further. Readout lines no longer split after "=".
+- [Minor] inquiry Ennuste 1 (open-ennusta-1280-1) — the prompt is now five sentences before the question; fine, but "Mieti, mitä kuulamalli ja mitä aaltomalli ennustaa." could stand as a hint rather than bold question text.
 
 ## Checked
-- Contact sheets 1–6; hero (top-390, intro-1280), fig-2 hero, fig-5 buildup, fig-7 patterns, fig-9 compton at 390, fig-row and theory-1280-1/2/3.
-- Worked example 390 (both parts), sim-390, sim-1280, lab-1280-1, exp-koe-1-390-1, stage-tutki-390-3 (Compton data table, models choices).
-- open-ennusta-1280-1, open-tarkista-1280-1/2, exit ticket and exercise levels via contact sheets 5–6 plus L3-1280-1 at full size.
-- Figure `fig-1/3/4/6/8/10` captures are 28–30 px UI icons (audio, fullscreen), not figures.
+- sim-390 and sim-1280: source box whole, `osumia` label clear of the arrowhead, readout "$N = 0$ / $n = 0$ / $n : N = 0{,}0\,\%$" on single lines, no plain-text units.
+- fig-9-390 (Compton): electron, velocity arrow, `$e^-$`, `$\overline{v}$` and dashed scattering line consistent, blue velocity kept apart from violet momentum, nothing clipped.
+- theory-1280-2: Fotonin liikemäärä values and Compton paragraph, display formulas, no red KaTeX.
+- open-ennusta-1280-1: reworded Ennuste 1 prompt (situation, then bold question), options and layout intact.
+- exercises-L1 3 and 4 (open-exercises-1280-3/4) and sovella-390-3 (the siirto task, solution closed there).
+- Not opened as a capture: the changed siirto solution text and inquiry feedback strings (read from the diff; "$30\,\text{mg}$:n" correct case, quantities in LaTeX).
 
 ## Scores
 illustrations 4 · typography 4 · Finnish 4 · accessibility 4
