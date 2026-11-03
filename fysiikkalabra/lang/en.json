@@ -1814,6 +1814,41 @@
       "kaasu_kylma": "cold hydrogen gas",
       "lamppu": "lamp",
       "nakyva": "visible light"
+    },
+    "fy6-12": {
+      "paasta": "Release",
+      "alkuun": "Reset",
+      "jannite": "Voltage $U = {{U}}\\,\\text{V}$",
+      "vali": "Plate separation $d = {{d}}\\,\\text{cm}$",
+      "hiukkanen": "Particle",
+      "protoni": "proton",
+      "elektroni": "electron",
+      "alfa": "alpha particle",
+      "nopeus": "Speed",
+      "hidas": "slow",
+      "normaali": "normal",
+      "nopea": "fast",
+      "selite": "Red: force. Blue: velocity. Green: electric field. Grey dashed line: equipotential surface. Orange: kinetic energy.",
+      "lukemat": "Field $E = {{E}}\\,\\text{V/m}$, force $F = {{F}}\\,\\text{N}$<br>Time $t = {{t}}\\,\\text{ns}$, speed $v = {{v}}\\,\\text{km/s}$<br><strong>$E_\\text{k} = {{Ek}}\\,\\text{eV} = {{EkJ}}\\,\\text{J}$</strong><br>$E_\\text{p} = {{Ep}}\\,\\text{eV}$, $E_\\text{k} + E_\\text{p} = {{sum}}\\,\\text{eV}$"
+    },
+    "fy6-13": {
+      "etaisyys": "Distance of the plates $d = {{d}}\\,\\text{mm}$",
+      "ala": "Area of the plate $A = {{A}}\\,\\text{cm}^2$",
+      "jannite": "Voltage of the source $U_0 = {{U}}\\,\\text{kV}$",
+      "eriste": "Dielectric",
+      "lahde": "Source",
+      "ilma": "air",
+      "teflon": "Teflon",
+      "paperi": "paper",
+      "lasi": "glass",
+      "kytketty": "connected",
+      "irrotettu": "disconnected",
+      "selite": "Red: positive charge. Blue: negative charge. Green: electric field. Orange: energy.",
+      "lukemat": "Capacitance $C = {{C}}\\,\\text{pF}$, charge $Q = {{Q}}\\,\\text{nC}$<br>Voltage $U = {{U}}\\,\\text{kV}$, field $E = {{E}}\\,\\text{MV/m}$, dielectric strength $E_\\text{max} = {{Emax}}\\,\\text{MV/m}$<br><strong>Energy $W = {{W}}\\,\\mu\\text{J}$</strong>",
+      "lapilyonti": "$\\text{breakdown}$",
+      "purkautui": "$\\text{discharged}$",
+      "lapilyonti-teksti": "Breakdown: the field exceeds the dielectric strength, the dielectric starts to conduct and a spark discharges between the plates.",
+      "purkautui-teksti": "The capacitor discharged in the breakdown. Connect the source again to charge it."
     }
   },
   "practice": {

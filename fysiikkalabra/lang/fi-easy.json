@@ -1814,6 +1814,41 @@
       "kaasu_kylma": "kylmä vetykaasu",
       "lamppu": "lamppu",
       "nakyva": "näkyvä valo"
+    },
+    "fy6-12": {
+      "paasta": "Päästä irti",
+      "alkuun": "Alkuun",
+      "jannite": "Jännite $U = {{U}}\\,\\text{V}$",
+      "vali": "Levyjen väli $d = {{d}}\\,\\text{cm}$",
+      "hiukkanen": "Hiukkanen",
+      "protoni": "protoni",
+      "elektroni": "elektroni",
+      "alfa": "alfahiukkanen",
+      "nopeus": "Nopeus",
+      "hidas": "hidas",
+      "normaali": "normaali",
+      "nopea": "nopea",
+      "selite": "Punainen: voima. Sininen: nopeus. Vihreä: sähkökenttä. Harmaa katkoviiva: tasapotentiaalipinta (sama potentiaali). Oranssi: liike-energia.",
+      "lukemat": "Kenttä $E = {{E}}\\,\\text{V/m}$, voima $F = {{F}}\\,\\text{N}$<br>Aika $t = {{t}}\\,\\text{ns}$, nopeus $v = {{v}}\\,\\text{km/s}$<br><strong>$E_\\text{k} = {{Ek}}\\,\\text{eV} = {{EkJ}}\\,\\text{J}$</strong><br>$E_\\text{p} = {{Ep}}\\,\\text{eV}$, $E_\\text{k} + E_\\text{p} = {{sum}}\\,\\text{eV}$"
+    },
+    "fy6-13": {
+      "etaisyys": "Levyjen etäisyys $d = {{d}}\\,\\text{mm}$",
+      "ala": "Levyn pinta-ala $A = {{A}}\\,\\text{cm}^2$",
+      "jannite": "Lähteen jännite $U_0 = {{U}}\\,\\text{kV}$",
+      "eriste": "Eriste",
+      "lahde": "Lähde",
+      "ilma": "ilma",
+      "teflon": "teflon",
+      "paperi": "paperi",
+      "lasi": "lasi",
+      "kytketty": "kytketty",
+      "irrotettu": "irrotettu",
+      "selite": "Punainen: positiivinen varaus. Sininen: negatiivinen varaus. Vihreä: sähkökenttä. Oranssi: energia.",
+      "lukemat": "Kapasitanssi $C = {{C}}\\,\\text{pF}$, varaus $Q = {{Q}}\\,\\text{nC}$<br>Jännite $U = {{U}}\\,\\text{kV}$, kenttä $E = {{E}}\\,\\text{MV/m}$, läpilyöntilujuus $E_\\text{max} = {{Emax}}\\,\\text{MV/m}$<br><strong>Energia $W = {{W}}\\,\\mu\\text{J}$</strong>",
+      "lapilyonti": "$\\text{läpilyönti}$",
+      "purkautui": "$\\text{purkautui}$",
+      "lapilyonti-teksti": "Läpilyönti: kenttä on liian voimakas, eriste alkaa johtaa ja levyjen välillä purkautuu kipinä.",
+      "purkautui-teksti": "Kondensaattori purkautui läpilyönnissä. Kytke lähde uudelleen, niin se latautuu."
     }
   },
   "practice": {
