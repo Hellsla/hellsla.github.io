@@ -423,7 +423,7 @@
   const VOICE_ID = { female: 0, male: 5 };       // voice.bin holds F1..F5, then M1..M5
   const BASE = new URL('.', (SCRIPT && SCRIPT.src) || location.href).href;
   const neural = {
-    ok: canNeural, failed: false, ready: null, ep: null, pool: [], ctx: null, src: null, cache: new Map(), seq: 0, progress: 0,
+    ok: canNeural, failed: false, ready: null, ep: null, pool: [], ctx: null, src: null, cache: new Map(), seq: 0, progress: 0, queue: [], keepFrom: 0,
     spawn(primary) {                          // one worker: loads the model (from Cache Storage after the first time)
       const w = { worker: null, jobs: new Map(), busy: 0 };
       w.ready = new Promise((res, rej) => {
@@ -435,7 +435,7 @@
           const d = e.data;
           if (d.type === 'progress') { if (primary) { this.progress = d.loaded / d.total; loadNote(); } }
           else if (d.type === 'ready') res(d.ep);
-          else if (d.id) { const j = w.jobs.get(d.id); if (j) { w.jobs.delete(d.id); w.busy--; if (d.type === 'audio') j.res(d); else j.rej(new Error(d.message)); } }
+          else if (d.id) { const j = w.jobs.get(d.id); if (j) { w.jobs.delete(d.id); w.busy--; if (d.type === 'audio') j.res(d); else j.rej(new Error(d.message)); this.pump(); } }
           else if (d.type === 'error') rej(new Error(d.message));
         };
         w.worker.onerror = (e) => rej(new Error(e.message || 'worker'));
@@ -454,7 +454,7 @@
         // at the same time (each worker is single-threaded, as GitHub Pages cannot enable threads).
         if (ep === 'wasm' && (navigator.hardwareConcurrency || 2) >= 4 && window.flTtsWorkers !== 1) {
           const second = this.spawn(false);
-          second.ready.then(() => this.pool.push(second), () => {});
+          second.ready.then(() => { this.pool.push(second); this.pump(); }, () => {});
         }
         return ep;
       });
@@ -466,16 +466,30 @@
       if (this.cache.has(key)) return this.cache.get(key);
       const id = ++this.seq;
       const p = this.ready.then(() => new Promise((res, rej) => {
-        const w = this.pool.reduce((x, y) => (y.busy < x.busy ? y : x));
-        w.jobs.set(id, { res, rej }); w.busy++;
-        w.worker.postMessage({ type: 'synth', id, stale: id, text, lang, voice, speed, steps: this.ep === 'webgpu' ? 5 : 4 });
+        this.queue.push({ id, res, rej, msg: { type: 'synth', id, stale: id, text, lang, voice, speed, steps: this.ep === 'webgpu' ? 8 : 6 } });
+        this.pump();
       }));
       this.cache.set(key, p);
       if (this.cache.size > 12) this.cache.delete(this.cache.keys().next().value);
       p.catch(() => this.cache.delete(key));
       return p;
     },
-    keep() { this.pool.forEach((w) => w.worker.postMessage({ type: 'keep', from: this.seq + 1 })); },   // drop queued sentences that were skipped
+    // Sentences wait here and go to a worker only when it is free, so a worker that becomes ready later takes the next
+    // one at once. Fewer than 6 steps (8 on the GPU) and the voice's timbre drifts audibly from sentence to sentence.
+    pump() {
+      for (const w of this.pool) {
+        while (!w.busy && this.queue.length) {
+          const j = this.queue.shift();
+          if (j.id < this.keepFrom) { j.rej(new Error('skipped')); continue; }
+          w.jobs.set(j.id, j); w.busy++; w.worker.postMessage(j.msg);
+        }
+      }
+    },
+    keep() {                                  // drop sentences that were skipped
+      this.keepFrom = this.seq + 1;
+      this.queue.splice(0).forEach((j) => j.rej(new Error('skipped')));
+      this.pool.forEach((w) => w.worker.postMessage({ type: 'keep', from: this.keepFrom }));
+    },
     play(d, onend) {
       this.stopAudio();
       const buf = this.ctx.createBuffer(1, d.pcm.length, d.sr);
@@ -572,11 +586,13 @@
   function speakNeural(text, l2, my) {
     neural.start();
     loadNote();
-    neural.synth(text, l2, VOICE_ID[voiceChoice], neuralSpeed()).then((d) => {
+    const job = neural.synth(text, l2, VOICE_ID[voiceChoice], neuralSpeed());
+    // the next sentences queue up behind this one, so a free worker starts them while this one is still being made
+    peekNext(3).forEach((n) => { if (useNeural(langOf(n.el))) neural.synth(n.text, langOf(n.el).slice(0, 2), VOICE_ID[voiceChoice], neuralSpeed()).catch(() => {}); });
+    job.then((d) => {
       if (my !== token || !playing) return;
       if (!ui.note.dataset.keep) ui.note.hidden = true;
       neural.play(d, () => { if (my !== token || !playing) return; si++; speakSentence(); });
-      peekNext(2).forEach((n) => { if (useNeural(langOf(n.el))) neural.synth(n.text, langOf(n.el).slice(0, 2), VOICE_ID[voiceChoice], neuralSpeed()).catch(() => {}); });
     }, (err) => {
       if (my !== token) return;
       if (neural.failed) {                         // the model did not load: the device's own voice reads on
