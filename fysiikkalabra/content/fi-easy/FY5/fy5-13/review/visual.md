@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 97126565ba9120e6
+CONTENT-HASH: 6c99d7402fb681bc
 
 ## Blocking
+(none)
 
 ## Polish
+- (none)
 
 ## Checked
-batch delta review: renamed title and chapter cross-references only (no numbers, symbols or figures changed); fy5-7 and fy5-14 top-390 captures opened, long new titles wrap cleanly at 390 px; references read as natural Finnish and match the new titles.
+batch delta review: photo ok at both widths, caption consistent with the instrument/pitch paragraph. Kitarakuva latautuu, asettuu oikealle ja palstalle; krediitti on.

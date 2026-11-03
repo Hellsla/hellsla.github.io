@@ -190,6 +190,8 @@ Gravitaatio on vuorovaikutus, joten siihen p채tee Newtonin kolmas laki. Maa vet�
   <foreignObject x="265" y="9.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$F_1 = F_2$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy5/artemis2-earthset.webp" alt="Kuun pinta kuvan alaosassa. Sen takana n채kyy sininen Maa."><figcaption>Maa laskee Kuun taakse. Artemis II -astronautit ottivat kuvan Orion-aluksesta vuonna 2026. Maa ja Kuu vet채v채t toisiaan yht채 suurella voimalla.</figcaption></figure>
+
 Ero on kiihtyvyyksiss채. Newtonin toisen lain mukaan kappaleen kiihtyvyys on $a = \tfrac{F}{m}$. Omenan massa on $0{,}20\,\text{kg}$, ja siihen vaikuttaa noin $1{,}96\,\text{N}$:n voima. Silloin omenan kiihtyvyys on noin $9{,}8\,\text{m/s}^2$. Sama voima antaa Maalle kiihtyvyyden noin $3 \cdot 10^{-25}\,\text{m/s}^2$. Maan massa on $5{,}97 \cdot 10^{24}\,\text{kg}$. Maa todella liikahtaa omenaa kohti, mutta niin v채h채n, ettei sit채 voi mitata.
 
 ## Kaava: Newtonin gravitaatiolaki

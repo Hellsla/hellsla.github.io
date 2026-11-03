@@ -127,28 +127,29 @@
   },
   "FY6": {
     "title": "Electricity",
+    "themes": ["Direct-current circuits", "Electrical energy and sources", "Electric charge and field", "Components and safety"],
     "tavoitteet": [
       "can investigate electrical phenomena experimentally and make basic electrical measurements",
       "can use the concepts of field and potential to describe the electric field",
       "knows safety aspects related to electrical devices and the transmission of electrical energy"
     ],
     "lessons": {
-      "fy6-1": "Electric charge, current and voltage",
-      "fy6-2": "Resistance and Ohm's law",
-      "fy6-12": "Measurements in an electric circuit",
-      "fy6-3": "Electric power and Joule's law",
-      "fy6-13": "Electrical appliances at home: power, energy and cost",
+      "fy6-1": "Electric circuit, current and voltage",
+      "fy6-2": "Measurements in an electric circuit",
+      "fy6-3": "Resistance and Ohm's law",
       "fy6-4": "Resistors in series and in parallel",
-      "fy6-5": "Kirchhoff's laws",
-      "fy6-14": "Potential and voltages in an electric circuit",
-      "fy6-6": "Batteries, electromotive force and internal resistance",
-      "fy6-7": "Coulomb's law",
-      "fy6-8": "Uniform electric field, potential and potential energy",
-      "fy6-9": "Capacitor and the energy of a capacitor",
-      "fy6-15": "Charging and discharging a capacitor",
-      "fy6-10": "Semiconductors, the diode and the LED",
-      "fy6-11": "Electrical safety",
-      "fy6-16": "Applied lesson: the electric car and the home electrical system"
+      "fy6-5": "Kirchhoff's laws and potential in a circuit",
+      "fy6-6": "Electric power and the heating of a resistor",
+      "fy6-7": "Electrical energy at home",
+      "fy6-8": "Electromotive force and internal resistance",
+      "fy6-9": "Batteries and the charging circuit",
+      "fy6-10": "Electric charge and Coulomb's law",
+      "fy6-11": "Uniform electric field",
+      "fy6-12": "Potential energy and potential in an electric field",
+      "fy6-13": "The capacitor and its energy",
+      "fy6-14": "Semiconductors, the diode, the LED and the solar cell",
+      "fy6-15": "Electrical safety at home and at work",
+      "fy6-16": "Applied chapter: the electric car and the home electrical system"
     }
   },
   "FY7": {

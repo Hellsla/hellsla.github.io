@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 3505267d41514d2b
+CONTENT-HASH: ee7ccfd72db4a44a
 
 ## Blocking
+(none)
 
 ## Polish
+- Kuva on tumma ja matalakontrastinen; vahvistus- ja heikennyssuuntia ei erota, vaikka kuvateksti mainitsee ne. Ei estä.
 
 ## Checked
-batch delta review: renamed title and chapter cross-references only (no numbers, symbols or figures changed); fy5-7 and fy5-14 top-390 captures opened, long new titles wrap cleanly at 390 px; references read as natural Finnish and match the new titles.
+batch delta review: photo ok at both widths, caption and alt consistent with picture. Kahden lähteen aaltoallaskuva latautuu, asettuu oikealle (pysty) ja palstalle; krediitti on.

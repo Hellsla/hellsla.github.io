@@ -323,6 +323,8 @@ Tässä $f_n$ on $n$:s ominaistaajuus (Hz), $v$ on aallon nopeus kielessä (m/s)
   <foreignObject x="252" y="359.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$L$</span></div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy5/guitar-playing.webp" alt="Lähikuva kitarasta. Toinen käsi soittaa kieliä. Toisen käden sormet painavat kieliä."><figcaption>Kitaransoittoa. Kun soittaja painaa kieltä, kielen värähtelevä osa lyhenee. Silloin perustaajuus kasvaa ja ääni on korkeampi.</figcaption></figure>
+
 ### Soitin ja sävelkorkeus
 Kaava kertoo, miten kielisoittimen sävelkorkeutta muutetaan. Kun soittaja painaa kielen otelautaa vasten, kielen värähtelevä osa $L$ lyhenee. Silloin perustaajuus kasvaa. Kun kieltä kiristetään virityskoneistolla, aallon nopeus $v$ kielessä kasvaa. Silloin perustaajuus nousee. Paksussa ja raskaassa kielessä aalto etenee hitaammin kuin ohuessa, kun kireys on sama. Siksi bassokielet soivat matalalta. Kielen värähtely saa kaikukopan ja ilman värähtelemään samalla taajuudella. Kuuluvan äänen taajuus on siis sama kuin kielen värähtelyn taajuus.
 

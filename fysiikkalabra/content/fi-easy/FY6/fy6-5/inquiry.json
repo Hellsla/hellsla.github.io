@@ -1,0 +1,482 @@
+{
+  "version": 1,
+  "contribution": "Haarautuvissa tasavirtapiireissä on kaksi lakia. Virtalaki kertoo, että varaus säilyy. Jännitelaki käyttää potentiaalia. Potentiaali, nollakohta ja potentiaalikuvaaja näyttävät, miten jännite jakautuu.",
+  "learn": [
+    "laskemaan haarautuvan piirin virrat Kirchhoffin virtalain ja Ohmin lain avulla.",
+    "määrittämään piirin kohtien potentiaalit ja lukemaan potentiaalikuvaajaa.",
+    "selittämään jännitelailla, miksi lähteen jännite jakautuu silmukan vastuksille."
+  ],
+  "prior": [
+    "Rinnankytkennän haarojen yli on sama jännite. Sarjaankytkennässä sama virta kulkee kaikkien osien läpi (luku *Vastusten sarja- ja rinnankytkennät*)",
+    "Vastuksen jännite on $U = RI$ (luku *Resistanssi ja Ohmin laki*)",
+    "Jännite kertoo, kuinka paljon energiaa varausyksikköä kohti muuttuu muodosta toiseen (luku *Virtapiiri, sähkövirta ja jännite*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Suurjännitelinjan johdolla istuu rivissä pikkulintuja. Johdossa kulkee satojen ampeerien virta. Johdon jännite maahan nähden on kymmeniä tai satoja kilovoltteja. Silti linnut istuvat rauhassa, siistivät höyheniään ja lentävät pois vahingoittumatta. Johto on paljasta metallia, ja lintujen jalat ovat suoraan sitä vasten.",
+      "question": "Mikä ratkaisee, kulkeeko virtaa sellaisen kappaleen läpi, joka koskettaa virtapiiriä kahdesta kohdasta?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Kertaa: rinnankytkentä",
+      "optional": true,
+      "prompt": "Kaksi erilaista lamppua on kytketty rinnan samaan paristoon. Mikä seuraavista pitää aina paikkansa?",
+      "choices": [
+        {
+          "text": "Kummankin lampun yli on sama jännite.",
+          "correct": true,
+          "feedback": "Oikein. Rinnankytkennässä jokainen haara on kytketty samoihin kahteen kohtaan. Siksi jokaisen haaran yli on sama jännite (luku *Vastusten sarja- ja rinnankytkennät*). Tänään nähdään, miksi näin on ja miten virta jakautuu haaroihin."
+        },
+        {
+          "text": "Kummankin lampun läpi kulkee sama virta.",
+          "feedback": "Sama virta kulkee sarjaan kytkettyjen osien läpi. Rinnankytkennässä virta jakautuu haaroihin. Erilaisten lamppujen virrat ovat erisuuret. Yhteistä on jännite (luku *Vastusten sarja- ja rinnankytkennät*)."
+        },
+        {
+          "text": "Pariston jännite jakautuu lamppujen kesken puoliksi.",
+          "feedback": "Jännite jakautuu osien kesken sarjaankytkennässä. Rinnan kytketyt lamput ovat kumpikin suoraan pariston napojen välissä. Siksi kummankin yli on koko pariston jännite (luku *Vastusten sarja- ja rinnankytkennät*)."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 1: miten virta jakautuu?",
+      "figure": "fy6-5/junction-q",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 2
+      },
+      "prompt": "Haarautumispisteeseen tulee virta $0{,}30\\,\\text{A}$. Haarautumispiste on kohta, jossa johdin jakautuu kahtia. Pisteestä lähtee kaksi rinnakkaista haaraa. Haaroissa on vastukset $30\\,\\Omega$ ja $60\\,\\Omega$. Miten virta jakautuu haaroihin?",
+      "choices": [
+        {
+          "text": "Kumpaankin haaraan kulkee $0{,}30\\,\\text{A}$, koska lähteen virta riittää kumpaankin haaraan.",
+          "feedback": "Mallin arvot osoittavat tämän vääräksi. Haarojen virrat ovat $0{,}20\\,\\text{A}$ ja $0{,}10\\,\\text{A}$, yhteensä $0{,}30\\,\\text{A}$. Haarautumispisteessä ei synny varausta. Siksi haaroihin ei voi lähteä enempää virtaa kuin pisteeseen tulee."
+        },
+        {
+          "text": "Kumpaankin haaraan kulkee $0{,}15\\,\\text{A}$, koska virta jakautuu tasan.",
+          "feedback": "Malli laskee toisenlaisen jaon. Haaraan $30\\,\\Omega$ kulkee $0{,}20\\,\\text{A}$ ja haaraan $60\\,\\Omega$ kulkee $0{,}10\\,\\text{A}$. Virrat ovat yhteensä $0{,}30\\,\\text{A}$. Ne jakautuvat tasan vain silloin, kun haarojen resistanssit ovat yhtä suuret."
+        },
+        {
+          "text": "Haarojen virrat ovat yhteensä $0{,}30\\,\\text{A}$. Pienemmän resistanssin haaraan kulkee suurempi virta.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä. Haarassa $30\\,\\Omega$ kulkee $0{,}20\\,\\text{A}$ ja haarassa $60\\,\\Omega$ kulkee $0{,}10\\,\\text{A}$, yhteensä $0{,}30\\,\\text{A}$. Haarojen yli on sama jännite $6{,}0\\,\\text{V}$. Siksi Ohmin lain mukaan puolet pienempi resistanssi saa kaksinkertaisen virran."
+        },
+        {
+          "text": "Haarojen virrat ovat yhteensä $0{,}30\\,\\text{A}$. Suuremman resistanssin haaraan kulkee suurempi virta.",
+          "feedback": "Mallissa käy päinvastoin. Haaraan $60\\,\\Omega$ kulkee vain $0{,}10\\,\\text{A}$. Suuri resistanssi vastustaa virtaa. Kun haarojen yli on sama jännite, virta $I = U : R$ on sitä pienempi, mitä suurempi resistanssi on."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 2: potentiaali piirin eri kohdissa",
+      "justify": true,
+      "reveal": {
+        "after": "koe-2",
+        "min": 3
+      },
+      "prompt": "Piirissä on jännitelähde $9{,}0\\,\\text{V}$ ja vastus $R_1 = 10\\,\\Omega$. Sen jälkeen rinnan ovat vastukset $R_2 = 30\\,\\Omega$ ja $R_3 = 60\\,\\Omega$. Johtimiin on merkitty kohdat $A$–$F$. Kohta $A$ on heti plusnavan jälkeen. Kohdat $B$ ja $C$ ovat vastuksen $R_1$ jälkeen. Kohta $F$ on miinusnavan johtimessa. Jännitemittarin musta johto on kiinni miinusnavan johtimessa. Punaisella johdolla kosketaan vuorotellen kohtia $A$–$F$. Miten lukema muuttuu kohdasta toiseen?",
+      "choices": [
+        {
+          "text": "Lukema pienenee tasaisesti, mitä pidemmälle johdinta pitkin kuljetaan plusnavasta.",
+          "feedback": "Mallin lukemat eivät tue tätä. Saman johtimen kaikissa kohdissa lukema on sama, esimerkiksi kohdissa $B$ ja $C$ $6{,}0\\,\\text{V}$. Johtimen resistanssi on niin pieni, että potentiaali ei muutu siinä. Potentiaali laskee vain vastuksissa."
+        },
+        {
+          "text": "Lukema muuttuu vain vastusten kohdalla. Saman johtimen kaikissa kohdissa se on sama.",
+          "correct": true,
+          "feedback": "Mallin lukemat vahvistavat tämän. Lukema on plusnavan jälkeen ($A$) $9{,}0\\,\\text{V}$. Kohdissa $B$ ja $C$ se on $6{,}0\\,\\text{V}$ ja kohdissa $D$, $E$ ja $F$ $0\\,\\text{V}$. Potentiaali laskee vastuksessa $R_1$ $3{,}0\\,\\text{V}$ ja haaran vastuksessa $6{,}0\\,\\text{V}$. Yhteensä lasku on yhtä suuri kuin lähteen jännite."
+        },
+        {
+          "text": "Lukema on joka kohdassa $9{,}0\\,\\text{V}$, koska lähteen jännite vaikuttaa koko piirissä.",
+          "feedback": "Mallin lukemat poikkeavat tästä. Vain plusnavan jälkeen ($A$) lukema on $9{,}0\\,\\text{V}$. Kohdissa $B$ ja $C$ se on $6{,}0\\,\\text{V}$ ja miinusnavan johtimessa $0\\,\\text{V}$. Lähteen jännite on napojen välinen potentiaaliero, ja se jakautuu silmukan vastuksille."
+        },
+        {
+          "text": "Lukema on nolla kaikkialla paitsi lähteen plusnavassa, koska jännite on vain lähteessä.",
+          "feedback": "Mallin arvot osoittavat tämän vääräksi. Kohdissa $B$ ja $C$ lukema on $6{,}0\\,\\text{V}$. Mittari näyttää mittauskohdan potentiaalin nollakohtaan nähden. Potentiaali laskee vähitellen, yksi vastus kerrallaan."
+        }
+      ],
+      "figure": "fy6-5/circuit-q"
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Muuta lähteen jännitettä ja vastuksia. Siirrä mittarin punaista johtoa. Seuraa virtoja, potentiaaleja ja potentiaalikuvaajaa.",
+      "howto": "Liukusäätimillä asetetaan lähteen jännite $U$ ja vastukset $R_1$, $R_2$ ja $R_3$. *Mittauskohta* siirtää jännitemittarin punaisen johdon johtimen kohtaan $A$–$F$. *Nollakohta* valitsee, mihin mittarin musta johto ja maadoitusmerkki kiinnitetään. Kuvassa jokaisen kohdan potentiaali on sininen luku. Johtimen sininen sävy on sitä tummempi, mitä korkeampi potentiaali on. Violetit nuolet ovat virtoja sovitussa suunnassa plusnavalta miinusnavalle. Alla on silmukan $F$ → lähde → $A$ → $R_1$ → $B$ → $R_2$ → $E$ → $F$ potentiaalikuvaaja. Punainen katkoviiva on mittauskohdan potentiaali.",
+      "model": "Jännitelähde on ideaalinen. Sillä ei ole sisäistä resistanssia, joten sen napojen välinen jännite on aina $U$. Johtimilla ei ole resistanssia, ja vastusten resistanssit pysyvät vakioina. Jännitemittari ei ota virtaa. Luvut ovat mallin laskemia arvoja eivätkä mittauksia. Oikeassa piirissä johtimissa ja lähteessä on pieni resistanssi, joten lukemat poikkeavat hieman.",
+      "calc": "Rinnakkaisten vastusten kokonaisresistanssi on $R_{23}$, missä $\\tfrac{1}{R_{23}} = \\tfrac{1}{R_2} + \\tfrac{1}{R_3}$. Koko piirin virta on\n\n$$I_1 = \\frac{U}{R_1 + R_{23}}$$\n\nVastuksen $R_1$ jännite on $U_1 = R_1 I_1$. Jännitelain mukaan haarojen jännite on $U_2 = U_3 = U - U_1$. Haarojen virrat ovat $I_2 = U_2 : R_2$ ja $I_3 = U_3 : R_3$, ja niiden summa on $I_1$. Miinusnapaan nähden kohdan $A$ potentiaali on $U$. Kohtien $B$ ja $C$ potentiaali on $U - U_1$. Kohtien $D$, $E$ ja $F$ potentiaali on nolla. Kun nollakohdaksi valitaan $B$, kaikista potentiaaleista vähennetään $B$:n potentiaali."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 1: virrat haarautumispisteessä",
+      "intro": "Testaa ennuste 1. Lähteen jännite sekä vastukset $R_1$ ja $R_2$ pysyvät vakioina. Muuta vain vastusta $R_3$. Kirjaa virrat ainakin kahdella arvolla, esimerkiksi $30\\,\\Omega$, $60\\,\\Omega$ ja $120\\,\\Omega$. Laske joka rivillä $I_2 + I_3$ ja vertaa sitä virtaan $I_1$. Kumpaan haaraan kulkee suurempi virta?",
+      "initial": {
+        "U": 9,
+        "R1": 10,
+        "R2": 30,
+        "R3": 60,
+        "probe": "A",
+        "ground": "F"
+      },
+      "locked": [
+        "U",
+        "R1",
+        "R2"
+      ],
+      "vary": "R3",
+      "names": {
+        "U": "lähteen jännite U",
+        "R1": "vastus R₁",
+        "R2": "vastus R₂",
+        "R3": "vastus R₃",
+        "probe": "mittauskohta",
+        "ground": "nollakohta"
+      },
+      "units": {
+        "U": "V",
+        "R1": "Ω",
+        "R2": "Ω",
+        "R3": "Ω"
+      },
+      "values": {
+        "probe": {
+          "A": "kohta A",
+          "B": "kohta B",
+          "C": "kohta C",
+          "D": "kohta D",
+          "E": "kohta E",
+          "F": "kohta F"
+        },
+        "ground": {
+          "F": "lähteen miinusnapa",
+          "B": "haarautumispiste B"
+        }
+      },
+      "measure": [
+        {
+          "key": "I1",
+          "label": "I₁ (A)"
+        },
+        {
+          "key": "I2",
+          "label": "I₂ (A)"
+        },
+        {
+          "key": "I3",
+          "label": "I₃ (A)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 2: kierros potentiaalimittarin kanssa",
+      "intro": "Testaa ennuste 2. Nollakohta on lähteen miinusnapa. Piirin arvot pysyvät vakioina. Siirrä vain mittauskohtaa. Kirjaa potentiaali ainakin kolmessa kohdassa, mieluiten kaikissa kohdissa $A$–$F$. Missä kohdissa lukema on sama, ja missä se muuttuu?",
+      "initial": {
+        "U": 9,
+        "R1": 10,
+        "R2": 30,
+        "R3": 60,
+        "probe": "A",
+        "ground": "F"
+      },
+      "locked": [
+        "U",
+        "R1",
+        "R2",
+        "R3",
+        "ground"
+      ],
+      "vary": "probe",
+      "names": {
+        "U": "lähteen jännite U",
+        "R1": "vastus R₁",
+        "R2": "vastus R₂",
+        "R3": "vastus R₃",
+        "probe": "mittauskohta",
+        "ground": "nollakohta"
+      },
+      "units": {
+        "U": "V",
+        "R1": "Ω",
+        "R2": "Ω",
+        "R3": "Ω"
+      },
+      "values": {
+        "probe": {
+          "A": "kohta A",
+          "B": "kohta B",
+          "C": "kohta C",
+          "D": "kohta D",
+          "E": "kohta E",
+          "F": "kohta F"
+        },
+        "ground": {
+          "F": "lähteen miinusnapa",
+          "B": "haarautumispiste B"
+        }
+      },
+      "measure": [
+        {
+          "key": "Vp",
+          "label": "V (V)"
+        }
+      ],
+      "min": 3
+    },
+    {
+      "id": "koe-3",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 3: siirrä nollakohtaa",
+      "optional": true,
+      "intro": "Piirin arvot pysyvät vakioina. Vaihda vain nollakohtaa. Kirjaa kohtien $A$, $B$ ja $F$ potentiaalit sekä vastuksen $R_1$ jännite kummallakin nollakohdalla. Mikä muuttuu ja mikä ei?",
+      "initial": {
+        "U": 9,
+        "R1": 10,
+        "R2": 30,
+        "R3": 60,
+        "probe": "A",
+        "ground": "F"
+      },
+      "locked": [
+        "U",
+        "R1",
+        "R2",
+        "R3",
+        "probe"
+      ],
+      "vary": "ground",
+      "names": {
+        "U": "lähteen jännite U",
+        "R1": "vastus R₁",
+        "R2": "vastus R₂",
+        "R3": "vastus R₃",
+        "probe": "mittauskohta",
+        "ground": "nollakohta"
+      },
+      "units": {
+        "U": "V",
+        "R1": "Ω",
+        "R2": "Ω",
+        "R3": "Ω"
+      },
+      "values": {
+        "probe": {
+          "A": "kohta A",
+          "B": "kohta B",
+          "C": "kohta C",
+          "D": "kohta D",
+          "E": "kohta E",
+          "F": "kohta F"
+        },
+        "ground": {
+          "F": "lähteen miinusnapa",
+          "B": "haarautumispiste B"
+        }
+      },
+      "measure": [
+        {
+          "key": "VA",
+          "label": "V_A (V)"
+        },
+        {
+          "key": "VB",
+          "label": "V_B (V)"
+        },
+        {
+          "key": "VF",
+          "label": "V_F (V)"
+        },
+        {
+          "key": "U1",
+          "label": "U₁ (V)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös: virrat ja potentiaalit",
+      "after": [
+        "koe-1",
+        "koe-2"
+      ],
+      "prompt": "Kirjoita taulukoidesi perusteella: mikä yhteys virroilla $I_1$, $I_2$ ja $I_3$ on joka rivillä? Kumpaan haaraan kulkee suurempi virta? Missä kohdissa piiriä potentiaali muuttuu, ja kuinka suuria muutokset ovat yhteensä?",
+      "model": "Joka rivillä $I_2 + I_3 = I_1$. Esimerkiksi kun $R_3 = 60\\,\\Omega$, virrat ovat $0{,}20\\,\\text{A} + 0{,}10\\,\\text{A} = 0{,}30\\,\\text{A}$. Haarautumispisteeseen tuleva virta jakautuu haaroihin. Virtaa ei katoa eikä synny. Pienemmän resistanssin haaraan kulkee suurempi virta, koska haarojen yli on sama jännite. Potentiaali oli plusnavan jälkeen ($A$) $9{,}0\\,\\text{V}$, kohdissa $B$ ja $C$ $6{,}0\\,\\text{V}$ ja kohdissa $D$, $E$ ja $F$ $0\\,\\text{V}$. Se pysyi samana saman johtimen kohdissa ja muuttui vain lähteessä ja vastuksissa. Lähteessä potentiaali nousi $9{,}0\\,\\text{V}$. Vastuksissa se laski yhteensä saman verran, $3{,}0\\,\\text{V} + 6{,}0\\,\\text{V}$. Arvot ovat mallin laskemia. Mallissa johtimilla ja lähteellä ei ole resistanssia.",
+      "criteria": [
+        "Vastaus kertoo, että haarojen virtojen summa on joka rivillä pääjohtimen virta. Vastaus perustelee sen taulukon luvuilla.",
+        "Vastaus kertoo, että pienemmän resistanssin haaraan kulkee suurempi virta.",
+        "Vastaus kertoo, että potentiaali on saman johtimen kohdissa sama. Se muuttuu vain lähteessä ja vastuksissa.",
+        "Vastaus kertoo, että vastusten potentiaalin laskut ovat yhteensä yhtä suuret kuin lähteen nousu."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Palaa ennusteisiisi",
+      "optional": true,
+      "prompt": "Vertaa ennusteitasi kokeiden mallin arvoihin ja Kirchhoffin lakeihin. Palaa sitten alun kysymykseen: miksi johdolla istuvan linnun läpi ei kulje merkittävää virtaa, vaikka johdon potentiaali maahan nähden on suuri?",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2"
+      ]
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe",
+      "prompt": "Piirissä on lähde $9{,}0\\,\\text{V}$ ja vastus $R_1 = 10\\,\\Omega$. Sen jälkeen rinnan ovat vastukset $R_2 = 30\\,\\Omega$ ja $R_3 = 60\\,\\Omega$. Pääjohtimen virraksi on laskettu oikein $I_1 = 0{,}30\\,\\text{A}$. Opiskelija laskee haarojen virrat näin:\n\n$$\\begin{aligned} I_2 &= \\frac{9{,}0\\,\\text{V}}{30\\,\\Omega} = 0{,}30\\,\\text{A} \\\\ I_3 &= \\frac{9{,}0\\,\\text{V}}{60\\,\\Omega} = 0{,}15\\,\\text{A} \\end{aligned}$$\n\nMissä on virhe?",
+      "choices": [
+        {
+          "text": "Haarojen jännite ei ole lähteen jännite. Se on $9{,}0\\,\\text{V} - R_1 I_1 = 6{,}0\\,\\text{V}$, joten $I_2 = 0{,}20\\,\\text{A}$ ja $I_3 = 0{,}10\\,\\text{A}$.",
+          "correct": true,
+          "feedback": "Oikein. Jännitelain mukaan osa lähteen jännitteestä, $10\\,\\Omega \\cdot 0{,}30\\,\\text{A} = 3{,}0\\,\\text{V}$, jää vastukselle $R_1$. Virheen olisi voinut huomata virtalaista. Opiskelijan haaravirrat ovat yhteensä $0{,}45\\,\\text{A}$, ja se on enemmän kuin haarautumispisteeseen tulee."
+        },
+        {
+          "text": "Virrat on laskettu oikein, mutta pääjohtimen virta $I_1$ on väärä. Sen pitäisi olla $0{,}45\\,\\text{A}$.",
+          "feedback": "Pääjohtimen virta on oikein. Kokonaisresistanssi on $10\\,\\Omega + 20\\,\\Omega = 30\\,\\Omega$, ja $9{,}0\\,\\text{V} : 30\\,\\Omega = 0{,}30\\,\\text{A}$. Virhe on haaroissa. Niiden jännite ei ole koko lähteen jännite."
+        },
+        {
+          "text": "Rinnakkaisissa haaroissa virta on sama, joten kummankin haaran virta on $0{,}15\\,\\text{A}$.",
+          "feedback": "Rinnakkaisissa haaroissa sama on jännite, ei virta. Haarojen virrat ovat erisuuret, koska resistanssit ovat erisuuret. Haaraan $30\\,\\Omega$ kulkee kaksinkertainen virta haaraan $60\\,\\Omega$ verrattuna."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Sovella uuteen tilanteeseen",
+      "prompt": "Pikkulintu istuu suurjännitejohdolla. Sen jalkojen väli on $4{,}0\\,\\text{cm}$. Johdossa kulkee virta $400\\,\\text{A}$. Johtimen resistanssi on $0{,}12\\,\\Omega$ kilometriä kohti. Kuinka suuri on linnun jalkojen välinen jännite? Oleta, että lähes koko virta kulkee johdinta pitkin. Vastaa millivoltteina.",
+      "answer": 1.92,
+      "unit": "mV",
+      "tolerance": 0.02,
+      "hints": [
+        "Linnun jalkojen välinen jännite on sama kuin jalkojen välisen johtimen pätkän jännite. Kuinka pitkä pätkä on, ja mikä on sen resistanssi?",
+        "Pätkän resistanssi on $0{,}12\\,\\Omega$ jaettuna kilometrillä ja kerrottuna pätkän pituudella. Muunna sekä $1\\,\\text{km} = 1000\\,\\text{m}$ että $4{,}0\\,\\text{cm} = 0{,}040\\,\\text{m}$.",
+        "$R = \\dfrac{0{,}12\\,\\Omega}{1000\\,\\text{m}} \\cdot 0{,}040\\,\\text{m} = 4{,}8 \\cdot 10^{-6}\\,\\Omega$. Jännite on $U = RI$."
+      ],
+      "mistakes": [
+        {
+          "value": 192,
+          "feedback": "Käytit pituutena $4{,}0\\,\\text{m}$. Jalkojen väli on $4{,}0\\,\\text{cm} = 0{,}040\\,\\text{m}$. Siksi jännite on sata kertaa pienempi."
+        },
+        {
+          "value": 1920,
+          "feedback": "Käytit resistanssia $0{,}12\\,\\Omega$ metriä kohti. Resistanssi on ilmoitettu kilometriä kohti. Siksi metrin resistanssi on $0{,}12\\,\\Omega : 1000 = 0{,}000\\,12\\,\\Omega$."
+        }
+      ],
+      "solution": "**Annettu:** virta $I = 400\\,\\text{A}$, johtimen resistanssi $0{,}12\\,\\Omega$ kilometriä kohti, jalkojen väli $l = 4{,}0\\,\\text{cm}$\n\n**Kysytty:** jalkojen välinen jännite $U$ millivoltteina\n\n**Periaate:** Lintu ja jalkojen välinen johtimen pätkä ovat rinnakkaiset haarat samojen kahden kohdan välissä. Siksi niiden yli on sama jännite. Pätkän resistanssi on häviävän pieni linnun resistanssiin verrattuna. Ohmin lain mukaan linnun läpi kulkee silloin häviävän pieni virta. Virtalain mukaan lähes koko virta jatkaa pätkää pitkin. Ohmin laki antaa pätkän jännitteen.\n\n**Kaava:** pätkän resistanssi $R = \\dfrac{0{,}12\\,\\Omega}{1\\,\\text{km}} \\cdot l$ ja $U = RI$, joten $U = \\dfrac{0{,}12\\,\\Omega}{1\\,\\text{km}} \\cdot l \\cdot I$\n\n**Muunnokset:** $1\\,\\text{km} = 1000\\,\\text{m}$, $l = 4{,}0\\,\\text{cm} = 4{,}0 \\cdot 0{,}01\\,\\text{m} = 0{,}040\\,\\text{m}$ ja lopuksi $1\\,\\text{V} = 1000\\,\\text{mV}$.\n\n**Sijoitus:** $R = \\dfrac{0{,}12\\,\\Omega}{1000\\,\\text{m}} \\cdot 0{,}040\\,\\text{m} = 4{,}8 \\cdot 10^{-6}\\,\\Omega$ ja $U = 4{,}8 \\cdot 10^{-6}\\,\\Omega \\cdot 400\\,\\text{A} = 1{,}92 \\cdot 10^{-3}\\,\\text{V} = 1{,}92\\,\\text{mV}$\n\n**Vastaus:** $1{,}9\\,\\text{mV}$. Vastauksessa on kaksi merkitsevää numeroa, koska resistanssi $0{,}12\\,\\Omega$ ja jalkojen väli $4{,}0\\,\\text{cm}$ on annettu kahdella numerolla.\n\n**Järkevyys:** Kilometrin matkalla jännite olisi $0{,}12\\,\\Omega \\cdot 400\\,\\text{A} = 48\\,\\text{V}$. Matka $4\\,\\text{cm}$ on siitä $25\\,000$:s osa: $48\\,\\text{V} : 25\\,000 \\approx 2\\,\\text{mV}$. Näin pieni jännite ei aja linnun kehon läpi merkittävää virtaa. Johdon potentiaali maahan nähden on kuitenkin kymmeniä tai satoja kilovoltteja."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Harjoittele kolmella tasolla. Tason 1 tehtävissä käytetään yhtä lakia. Tason 2 tehtävissä yhdistetään Kirchhoffin lait ja Ohmin laki. Taso 3 vaatii päättelyä haarautuvissa piireissä ja nollakohdan valinnassa."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Käsite",
+      "prompt": "Lamppu ja vastus on kytketty sarjaan paristoon. Virtamittari pariston plusnavan ja lampun välissä näyttää $0{,}40\\,\\text{A}$. Mitä näyttää virtamittari, joka kytketään lampun ja vastuksen väliin?",
+      "choices": [
+        {
+          "text": "$0{,}40\\,\\text{A}$, koska sama varausmäärä kulkee sekunnissa jokaisen sarjaan kytketyn osan läpi.",
+          "correct": true,
+          "feedback": "Oikein. Varausta ei katoa lampussa, joten virta on sama kaikkialla sarjaankytkennässä. Lampussa sähköenergiaa muuttuu valoksi ja hehkulangan sisäenergiaksi, ja potentiaali laskee. Virta ei kuitenkaan kulu."
+        },
+        {
+          "text": "Alle $0{,}40\\,\\text{A}$, koska lamppu kuluttaa osan virrasta valoksi ja lämmöksi.",
+          "feedback": "Lamppu muuttaa sähköenergiaa valoksi ja hehkulangan sisäenergiaksi, mutta varaukset eivät katoa. Lampun jälkeen virta on sama $0{,}40\\,\\text{A}$. Lampussa pienenee potentiaali, ei virta."
+        },
+        {
+          "text": "Yli $0{,}40\\,\\text{A}$, koska lampun jälkeen virtaa vastustaa enää vain yksi osa.",
+          "feedback": "Virta ei riipu siitä, montako osaa mittarin jälkeen on jäljellä. Sarjaankytkennän virran määrää koko silmukan resistanssi, ja sama virta kulkee jokaisen osan läpi. Mittari näyttää $0{,}40\\,\\text{A}$."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Nollakohdan siirto",
+      "prompt": "Kohta $A$ on lähteen plusnavan johtimessa. Kohta $B$ on vastuksen $R_1$ jälkeen. Kun nollakohta on lähteen miinusnapa, kohdan $A$ potentiaali on $9{,}0\\,\\text{V}$ ja kohdan $B$ potentiaali $6{,}0\\,\\text{V}$. Sen jälkeen nollakohdaksi valitaan kohta $B$. Mikä on nyt kohdan $A$ potentiaali? Vastaa voltteina.",
+      "answer": 3.0,
+      "unit": "V",
+      "tolerance": 0.02,
+      "hints": [
+        "Muuttuuko kohtien $A$ ja $B$ välinen jännite, kun nollakohta siirtyy?",
+        "Uudessa valinnassa $V_B = 0$. Erotus $V_A - V_B$ on sama jännite kuin ennen.",
+        "$U_{AB} = 9{,}0\\,\\text{V} - 6{,}0\\,\\text{V}$, joten $V_A = 0 + U_{AB}$."
+      ],
+      "mistakes": [
+        {
+          "value": 15,
+          "feedback": "Laskit potentiaalit yhteen. Jännite on potentiaalien erotus: $U_{AB} = 9{,}0\\,\\text{V} - 6{,}0\\,\\text{V} = 3{,}0\\,\\text{V}$. Se ei muutu, kun nollakohta siirtyy."
+        },
+        {
+          "value": 9,
+          "feedback": "Potentiaali riippuu nollakohdasta. Kun kohdan $B$ potentiaaliksi sovitaan $0\\,\\text{V}$, kaikkien kohtien potentiaalit pienenevät $6{,}0\\,\\text{V}$. Siksi kohdan $A$ potentiaali on $3{,}0\\,\\text{V}$."
+        }
+      ],
+      "solution": "**Annettu:** miinusnapaan nähden $V_A = 9{,}0\\,\\text{V}$ ja $V_B = 6{,}0\\,\\text{V}$. Uusi nollakohta on $B$.\n\n**Kysytty:** kohdan $A$ potentiaali $V_A'$ voltteina, kun $V_B' = 0$\n\n**Periaate:** Jännite on kahden kohdan potentiaalien erotus. Se ei riipu nollakohdan valinnasta. Nollakohdan siirto muuttaa kaikkia potentiaaleja yhtä paljon.\n\n**Kaava:** $V_A' - V_B' = V_A - V_B$, josta $V_A' = V_B' + V_A - V_B$\n\n**Muunnokset:** Ei tarvita, koska potentiaalit ovat voltteina.\n\n**Sijoitus:** $V_A' = 0\\,\\text{V} + 9{,}0\\,\\text{V} - 6{,}0\\,\\text{V} = 3{,}0\\,\\text{V}$\n\n**Vastaus:** $3{,}0\\,\\text{V}$. Vastaus on annettu yhden desimaalin tarkkuudella kuten annetut potentiaalit.\n\n**Järkevyys:** Kaikista potentiaaleista vähennetään $B$:n vanha arvo $6{,}0\\,\\text{V}$. Silloin $B$ saa arvon $0$ ja $A$ arvon $3{,}0\\,\\text{V}$. Lähteen miinusnavan potentiaali on nyt $-6{,}0\\,\\text{V}$. Napojen välinen jännite on edelleen $3{,}0\\,\\text{V} - (-6{,}0\\,\\text{V}) = 9{,}0\\,\\text{V}$."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Selitä potentiaalikuvaaja",
+      "optional": true,
+      "prompt": "Selitä, mitä potentiaalikuvaajan nousu, lasku ja vaakasuora osa kertovat virtapiiristä. Miksi kuvaaja päättyy samaan arvoon, josta se alkoi, kun silmukka on kierretty kerran?",
+      "model": "Nousu on jännitelähteen kohdalla. Lähteessä potentiaali nousee miinusnavalta plusnavalle lähteen jännitteen verran, ja varaukset saavat energiaa. Lasku on vastuksen kohdalla. Virran suuntaan potentiaali laskee jännitteen $RI$ verran, ja sähköenergiaa muuttuu vastuksen sisäenergiaksi. Vaakasuora osa on johdin, jonka resistanssi jätetään huomiotta. Sen kaikissa kohdissa on sama potentiaali. Kun silmukka on kierretty, ollaan samassa kohdassa kuin alussa. Yhdellä kohdalla on vain yksi potentiaali. Siksi nousut ja laskut ovat yhteensä nolla. Tämä on Kirchhoffin jännitelaki.",
+      "criteria": [
+        "Vastaus kertoo, että nousu on lähteessä ja sen suuruus on lähteen jännite.",
+        "Vastaus kertoo, että lasku on vastuksessa ja sen suuruus on vastuksen jännite $RI$.",
+        "Vastaus kertoo, että vaakasuora osa on johdin, jonka kaikissa kohdissa potentiaali on sama.",
+        "Vastaus perustelee paluun samaan arvoon sillä, että samalla kohdalla on yksi potentiaali. Vastaus nimeää jännitelain."
+      ]
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Lopuksi kaksi nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "fy6-5",
+  "course": "FY6",
+  "title": "Kirchhoff's laws and potential in a circuit",
+  "goals": [
+    "LOPS FY6: connections of resistors and Kirchhoff's laws",
+    "Clarification: in connection with Kirchhoff's laws, branching circuits can also be examined, as long as the main emphasis is on understanding the physics",
+    "Clarification: potential at different points of a circuit, the potential graph and the sum of the voltages in a loop"
+  ],
+  "prerequisites": [
+    "fy6-4"
+  ],
+  "glossary": [
+    "Kirchhoffin virtalaki",
+    "Kirchhoffin jännitelaki",
+    "silmukka",
+    "haarautumispiste",
+    "potentiaali"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}
