@@ -145,7 +145,7 @@ def suunta():
 def kulma():
     """Kaava: r = d sin α. The right triangle of the axis O, the point of application and the foot of the arm."""
     f = Fig("fy51-kulma", 340, "Suorakulmainen kolmio, jonka kärjet ovat kiertoakseli O, voiman otekohta ja akselista vaikutussuoralle piirretyn "
-            "kohtisuoran kantapiste. Hypotenuusa on akselin ja otekohdan välinen etäisyys d. Kateetti akselista kantapisteeseen on voiman "
+            "kohtisuoran kantapiste. Hypotenuusa on akselin ja vaikutuskohdan välinen etäisyys d. Kateetti akselista kantapisteeseen on voiman "
             "varsi r. Vaikutuskohdan kulma on alfa, sama kulma kuin voiman ja varren jatkeen välillä. Siksi r on d kertaa sini alfa.")
     O, d, al = (92, 104), 330, 40
     Pp = (O[0] + d, O[1])

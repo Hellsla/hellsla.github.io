@@ -92,7 +92,7 @@
 ## fy5-1-L3-01
 **Annettu:** jalan voima $F = 500\,\text{N}$ suoraan alaspäin, polkimen etäisyys akselista $d = 0{,}175\,\text{m}$, kampi $45^\circ$ vaakatason alapuolella
 **Kysytty:** voiman momentti $M$ kammen akselin suhteen yksikössä $\text{Nm}$ sekä asennot, joissa momentti on suurin ja nolla
-**Periaate:** Kampi kiertyy akselinsa ympäri, joten jalan voiman vääntövaikutuksen kertoo sen momentti $M = Fr$. Voima on pystysuora, joten sen vaikutussuora on pystysuora suora polkimen kautta, ja varsi on polkimen vaakasuora etäisyys akselista. Se on suurin, kun kampi on vaakasuorassa ($r = d$), ja nolla, kun kampi on pystysuorassa, koska silloin vaikutussuora kulkee akselin kautta. Asennossa $45^\circ$ vaakasuora etäisyys on kulman viereinen kateetti.
+**Periaate:** Kampi kiertyy akselinsa ympäri, joten jalan voiman vääntövaikutuksen kertoo sen momentti $M = Fr$. Voima on pystysuora, joten sen vaikutussuora on polkimen kautta kulkeva pystysuora, ja varsi on polkimen vaakasuora etäisyys akselista. Se on suurin, kun kampi on vaakasuorassa ($r = d$), ja nolla, kun kampi on pystysuorassa, koska silloin vaikutussuora kulkee akselin kautta. Asennossa $45^\circ$ vaakasuora etäisyys on kulman viereinen kateetti.
 **Kaava:** $M = Fr$ ja $r = d\cos 45^\circ$, joten $M = Fd\cos 45^\circ$
 **Muunnokset:** Voima on newtoneina ja etäisyys metreinä, joten muunnoksia ei tarvita.
 **Sijoitus:** $M = 500\,\text{N}\cdot 0{,}175\,\text{m}\cdot\cos 45^\circ = 87{,}5\,\text{Nm}\cdot 0{,}7071 = 61{,}87\,\text{Nm}$

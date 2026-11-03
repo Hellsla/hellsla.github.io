@@ -7,7 +7,7 @@
     "laskemaan kokonaismomentin, kun kiertosuunnat merkitään etumerkeillä."
   ],
   "prior": [
-    "Voimalla on suuruus, suunta ja otekohta (luku *Vuorovaikutus ja voima: Newtonin ensimmäinen ja kolmas laki*)",
+    "Voimalla on suuruus, suunta ja vaikutuskohta (luku *Vuorovaikutus ja voima: Newtonin ensimmäinen ja kolmas laki*)",
     "Vinon voiman komponentit saadaan sinin ja kosinin avulla (luku *Voimakuvio ja voimien yhteisvaikutus*)"
   ],
   "activities": [
@@ -341,13 +341,13 @@
       "tolerance": 0.02,
       "hints": [
         "Paino osoittaa suoraan alas. Kuinka kaukana akselista kulkee pystysuora vaikutussuora?",
-        "Varsi on painon otekohdan vaakasuora etäisyys akselista: $r = 1{,}50\\,\\text{m}\\cdot\\cos 40^\\circ$.",
+        "Varsi on painon vaikutuskohdan vaakasuora etäisyys akselista: $r = 1{,}50\\,\\text{m}\\cdot\\cos 40^\\circ$.",
         "$M = mg\\cdot r = 12{,}0\\,\\text{kg}\\cdot 9{,}81\\,\\text{m/s}^2\\cdot 1{,}50\\,\\text{m}\\cdot\\cos 40^\\circ$."
       ],
       "mistakes": [
         {
           "value": 176.6,
-          "feedback": "Käytit varrena etäisyyttä $1{,}50\\,\\text{m}$. Paino on pystysuora, joten varsi on otekohdan vaakasuora etäisyys akselista, $1{,}50\\,\\text{m}\\cdot\\cos 40^\\circ$."
+          "feedback": "Käytit varrena etäisyyttä $1{,}50\\,\\text{m}$. Paino on pystysuora, joten varsi on vaikutuskohdan vaakasuora etäisyys akselista, $1{,}50\\,\\text{m}\\cdot\\cos 40^\\circ$."
         },
         {
           "value": 113.5,
@@ -358,7 +358,7 @@
           "feedback": "Paino vaikuttaa puomin keskikohdassa, $1{,}50\\,\\text{m}$:n päässä akselista, ei puomin päässä."
         }
       ],
-      "solution": "**Annettu:** puomin pituus $3{,}00\\,\\text{m}$, massa $m = 12{,}0\\,\\text{kg}$, paino vaikuttaa keskikohdassa $d = 1{,}50\\,\\text{m}$:n päässä akselista, puomin kulma vaakatasoon $40^\\circ$; $g = 9{,}81\\,\\text{m/s}^2$\n\n**Kysytty:** painon momentti $M$ akselin suhteen yksikössä $\\text{Nm}$\n\n**Periaate:** Puomi voi vain kääntyä akselinsa ympäri, joten painon vääntövaikutuksen kertoo sen momentti $M = Fr$. Paino osoittaa suoraan alas, joten sen varsi on akselin kohtisuora etäisyys pystysuorasta vaikutussuorasta eli otekohdan vaakasuora etäisyys akselista. Se on suorakulmaisessa kolmiossa kulman $40^\\circ$ viereinen kateetti.\n\n**Kaava:** $M = Gr$, missä $G = mg$ ja $r = d\\cos 40^\\circ$, joten $M = mgd\\cos 40^\\circ$\n\n**Muunnokset:** Massa on kilogrammoina ja pituus metreinä, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $M = 12{,}0\\,\\text{kg}\\cdot 9{,}81\\,\\text{m/s}^2\\cdot 1{,}50\\,\\text{m}\\cdot\\cos 40^\\circ = 117{,}72\\,\\text{N}\\cdot 1{,}149\\,\\text{m} = 135{,}3\\,\\text{Nm}$\n\n**Vastaus:** $135\\,\\text{Nm}$, kolme merkitsevää numeroa kuten massassa $12{,}0\\,\\text{kg}$ ja pituudessa $3{,}00\\,\\text{m}$.\n\n**Järkevyys:** Vaakasuoran puomin painon varsi olisi koko $1{,}50\\,\\text{m}$ ja momentti $177\\,\\text{Nm}$. Nostettuna varsi lyhenee, joten momentti pienenee, ja pystyssä se olisi nolla. Kulman voi tarkistaa myös kaavalla $r = d\\sin\\alpha$: painon ja puomin jatkeen välinen kulma on $90^\\circ + 40^\\circ = 130^\\circ$ ja $\\sin 130^\\circ = \\cos 40^\\circ$."
+      "solution": "**Annettu:** puomin pituus $3{,}00\\,\\text{m}$, massa $m = 12{,}0\\,\\text{kg}$, paino vaikuttaa keskikohdassa $d = 1{,}50\\,\\text{m}$:n päässä akselista, puomin kulma vaakatasoon $40^\\circ$; $g = 9{,}81\\,\\text{m/s}^2$\n\n**Kysytty:** painon momentti $M$ akselin suhteen yksikössä $\\text{Nm}$\n\n**Periaate:** Puomi voi vain kääntyä akselinsa ympäri, joten painon vääntövaikutuksen kertoo sen momentti $M = Fr$. Paino osoittaa suoraan alas, joten sen varsi on akselin kohtisuora etäisyys pystysuorasta vaikutussuorasta eli vaikutuskohdan vaakasuora etäisyys akselista. Se on suorakulmaisessa kolmiossa kulman $40^\\circ$ viereinen kateetti.\n\n**Kaava:** $M = Gr$, missä $G = mg$ ja $r = d\\cos 40^\\circ$, joten $M = mgd\\cos 40^\\circ$\n\n**Muunnokset:** Massa on kilogrammoina ja pituus metreinä, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $M = 12{,}0\\,\\text{kg}\\cdot 9{,}81\\,\\text{m/s}^2\\cdot 1{,}50\\,\\text{m}\\cdot\\cos 40^\\circ = 117{,}72\\,\\text{N}\\cdot 1{,}149\\,\\text{m} = 135{,}3\\,\\text{Nm}$\n\n**Vastaus:** $135\\,\\text{Nm}$, kolme merkitsevää numeroa kuten massassa $12{,}0\\,\\text{kg}$ ja pituudessa $3{,}00\\,\\text{m}$.\n\n**Järkevyys:** Vaakasuoran puomin painon varsi olisi koko $1{,}50\\,\\text{m}$ ja momentti $177\\,\\text{Nm}$. Nostettuna varsi lyhenee, joten momentti pienenee, ja pystyssä se olisi nolla. Kulman voi tarkistaa myös kaavalla $r = d\\sin\\alpha$: painon ja puomin jatkeen välinen kulma on $90^\\circ + 40^\\circ = 130^\\circ$ ja $\\sin 130^\\circ = \\cos 40^\\circ$."
     },
     {
       "id": "tehtavat",
