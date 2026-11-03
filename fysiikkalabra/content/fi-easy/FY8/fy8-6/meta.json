@@ -1,0 +1,40 @@
+{
+  "id": "fy8-6",
+  "course": "FY8",
+  "title": "LEDin valo ja Planckin vakion mittaaminen",
+  "goals": [
+    "LOPS FY8: fotoni sähkömagneettisen säteilykentän kvanttina",
+    "Kokeellisesti: mittaukset laser-diodeilla; spektrejä vertaileva mittaus laserdiodilla ja muilla valonlähteillä",
+    "Täsmennys: kynnysjännite ja aallonpituus, fotonin energia ja Planckin vakion määrittäminen mittausaineistosta"
+  ],
+  "prerequisites": [
+    "fy8-5"
+  ],
+  "glossary": [
+    "valodiodi",
+    "laserdiodi",
+    "kynnysjännite",
+    "energia-aukko"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false,
+  "key_concepts": [
+    {
+      "term": "valodiodi",
+      "explain": "Puolijohteesta tehty komponentti eli LED. Se säteilee valoa, kun sähkövirta kulkee sen läpi."
+    },
+    {
+      "term": "laserdiodi",
+      "explain": "LEDin kaltainen komponentti, jossa valo vahvistuu. Sen valon spektri on hyvin kapea viiva."
+    },
+    {
+      "term": "kynnysjännite",
+      "explain": "Jännite, jossa LEDin virta alkaa kasvaa jyrkästi ja LED alkaa säteillä."
+    },
+    {
+      "term": "energia-aukko",
+      "explain": "Puolijohteen energiaväli, jolla elektronilla ei ole tiloja. Se määrää LEDin fotonin energian."
+    }
+  ]
+}

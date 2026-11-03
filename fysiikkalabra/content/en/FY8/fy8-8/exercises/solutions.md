@@ -76,7 +76,7 @@
 **Conversions:** $\lambda = 550\,\text{nm} = 550 \cdot 10^{-9}\,\text{m}$ and $E_\gamma = 661.7\,\text{keV} = 661.7 \cdot 1000\,\text{eV} = 661\,700\,\text{eV}$; the energy of the green photon is converted to electronvolts by substituting $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$.
 **Substitution:** The product $hc = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2.998 \cdot 10^{8}\,\text{m/s} = 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}$. $E_\text{g} = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{550 \cdot 10^{-9}\,\text{m}} = 3.6118 \cdot 10^{-19}\,\text{J} = 2.2545\,\text{eV}$ and $661\,700\,\text{eV} : 2.2545\,\text{eV} = 293\,500$
 **Answer:** about $293\,000$, that is, $2.93 \cdot 10^{5}$ times greater, three significant figures like the wavelength $550\,\text{nm}$.
-**Reasonableness:** An estimate with round numbers: $660\,000\,\text{eV} : 2\,\text{eV} \approx 330\,000$, the same order of magnitude. For this $662\,\text{keV}$ line the difference between the levels of the nucleus is hundreds of thousands of times greater than the differences between the levels of the electrons of an atom, as the theory of the chapter says.
+**Reasonableness:** An estimate with round numbers: $660\,000\,\text{eV} : 2\,\text{eV} \approx 330\,000$, the same order of magnitude. For this gamma line the difference between the levels of the nucleus is hundreds of thousands of times greater than the differences between the levels of the electrons of an atom, as the theory of the chapter says.
 
 ## fy8-8-L2-04
 **Given:** the parent nucleus ${}^{232}_{90}\text{Th}$; alpha decay and after it two beta minus decays
