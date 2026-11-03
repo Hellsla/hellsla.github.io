@@ -17,6 +17,24 @@
     "yleismittari",
     "mittausalue"
   ],
+  "key_concepts": [
+    {
+      "term": "virtamittari",
+      "explain": "Mittari, joka mittaa sen läpi kulkevan sähkövirran. Se kytketään piiriin sarjaan."
+    },
+    {
+      "term": "jännitemittari",
+      "explain": "Mittari, joka mittaa jännitteen kahden pisteen välillä. Se kytketään mitattavan osan rinnalle."
+    },
+    {
+      "term": "yleismittari",
+      "explain": "Mittari, jolla voi mitata esimerkiksi virtaa, jännitettä ja resistanssia. Suure valitaan valitsimella."
+    },
+    {
+      "term": "mittausalue",
+      "explain": "Suurin arvo, jonka mittari näyttää valitulla asennolla."
+    }
+  ],
   "sim": true,
   "solutions": "all",
   "image": false
