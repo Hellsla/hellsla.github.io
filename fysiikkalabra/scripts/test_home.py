@@ -20,6 +20,10 @@ For every language, from the pages that are actually in site/ (so nothing here h
     local course among the national rows; its page names itself school-specific and says what is still planned,
     and links only chapters published in that language; a language without the course has the note
     #unavailable-<CODE> on its front page
+  - Käsitetakomo (teacher 2026-11-03, scripts/concept_cards.py): the front page links to the card app, every module
+    page whose course has cards links to its topic menu (?kurssi=), and exactly the chapters concept-cards.json names
+    link to their topics (?kurssi=&aihe=); every link reaches ../kasitetakomo.html; in a browser the app opens a deep
+    link's topics, a module link's menu without starting cards, and sends an unknown parameter to the course menu
 Then in a browser, at 360, 390, 768, 1440 and 1920 px: no horizontal scroll, the header on one row, module titles
 not cut, header and catalogue targets at least 44 px, and at 390 x 844 the module list starts in the first screen.
 Exit status 1 on any failure."""
@@ -59,7 +63,7 @@ for lang in i18n.languages():
         if done < len(slots):
             expect(f"{lang} {code}: the lessons still coming are said", T.count("site.lessons_coming", len(slots) - done) in r)
         mod = (out / f"{code}.html").read_text()
-        hrefs = re.findall(r'<li class="live[^"]*">.*?<a href="([^"]+)"', mod)
+        hrefs = [h for h in re.findall(r'<li class="live[^"]*">.*?<a href="([^"]+)"', mod) if "kasitetakomo.html" not in h]   # the card link: below
         expect(f"{lang} {code}: the module page links {done} lessons, each published (two clicks)",
                len([h for h in hrefs if not h.endswith("-sovella.html")]) == done and all((out / h).is_file() for h in hrefs), hrefs)
         expect(f"{lang} {code}: lessons before the goals, goals behind a disclosure",
@@ -167,12 +171,38 @@ for lang in i18n.languages():
                or 'href="lukuvinkit.html"' not in re.search(r'<footer class="bottom">.*?</footer>', p.read_text(), re.S).group(0)]
     expect(f"{lang}: every page links to {reading_tips.PAGE} in its header and footer", not no_link, no_link[:10])
 
+# Käsitetakomo (teacher 2026-11-03, scripts/concept_cards.py): links only, the card app stays in the repository root
+import concept_cards
+expect("concept-cards.json and the topic ids of kasitetakomo-data.js agree (concept_cards.py)", not concept_cards.errors(), concept_cards.errors())
+APP = (ROOT.parent / concept_cards.APP).resolve()
+def card_links(f):
+    return [_h.unescape(h) for h in re.findall(r'<a href="([^"]*kasitetakomo\.html[^"]*)"', f.read_text())]
+if concept_cards.cards():
+    for lang in i18n.languages():
+        out = SITE if lang == i18n.SOURCE else SITE / lang
+        links = card_links(out / "index.html")
+        expect(f"{lang}: the front page links once to Käsitetakomo's course menu", len(links) == 1 and (out / links[0]).resolve() == APP, links)
+        for code in curriculum:
+            c = concept_cards.cards().get(code, {}); want = [f"kasitetakomo.html?kurssi={code}"] if c.get("open") else []
+            got = [l.rsplit("/", 1)[-1] for l in card_links(out / f"{code}.html")]
+            expect(f"{lang} {code}.html: {'a link to its topic menu' if want else 'no card link (no cards or kesken)'}", got == want, got)
+        wrong = []
+        for code, m in curriculum.items():
+            for l in m["lessons"]:
+                f = out / f"{l['id']}.html"
+                if not f.is_file(): continue
+                topics = concept_cards.mapping().get("lessons", {}).get(code, {}).get(l["id"])
+                want = [f"kasitetakomo.html?kurssi={code}&aihe={','.join(topics)}"] if topics else []
+                got = card_links(f)
+                if [g.rsplit("/", 1)[-1] for g in got] != want or any((out / g.split("?")[0]).resolve() != APP for g in got): wrong.append(f"{l['id']}: {got}")
+        expect(f"{lang}: exactly the chapters in concept-cards.json link to their topics, and every link reaches the app", not wrong, wrong[:5])
+
 JS = """() => { const R = (e) => e.getBoundingClientRect(), out = [];
   if (document.scrollingElement.scrollWidth > innerWidth) out.push('horizontal scroll ' + document.scrollingElement.scrollWidth);
   const h = document.querySelector('header.top'), kids = [...h.children].map(R);
   if (Math.max(...kids.map((r) => r.top)) - Math.min(...kids.map((r) => r.top)) > 20) out.push('header wraps');
   for (const e of document.querySelectorAll('.mod-title, .up-title')) if (e.scrollWidth > e.clientWidth + 1) out.push('cut: ' + e.textContent);
-  for (const e of document.querySelectorAll('header.top a, header.top summary, .up-list a, details.more-tips > summary'))
+  for (const e of document.querySelectorAll('header.top a, header.top summary, .up-list a, details.more-tips > summary, ul.concept-cards a, p.concept-link a'))
     if (e.checkVisibility() && R(e).height < 43.5) out.push(`target ${Math.round(R(e).height)} px: ${e.textContent.trim().slice(0, 30)}`);
   for (const e of document.querySelectorAll('.mod-row')) if (R(e).height < 44) out.push('row under 44 px');
   return out; }"""
@@ -203,5 +233,19 @@ with sync_playwright() as pw:
                     top = pg.evaluate("document.querySelector('.mod-row').getBoundingClientRect().top")
                     expect(f"{lang}: at 390 x 844 the first module row starts in the first screen ({round(top)} px)", top < 844 - 60)
                 pg.close()
+    if concept_cards.cards() and APP.is_file():           # the card app reads its parameters (file:// keeps the query)
+        lessons = concept_cards.mapping().get("lessons", {}); code = next(iter(lessons)); lid, topics = next(iter(lessons[code].items()))
+        pg = b.new_page(viewport={"width": 360, "height": 780})
+        for q, screen, what in ((f"?kurssi={code}&aihe={','.join(topics)}", "screenKortti", f"a chapter link ({lid}) starts its topics' cards"),
+                                (f"?kurssi={code}", "screenAihe", "a module link opens the topic menu without starting cards"),
+                                ("?kurssi=FY99", "screenKurssi", "an unknown course goes to the course menu"),
+                                (f"?kurssi={code}&aihe=ei-ole", "screenKurssi", "an unknown topic goes to the course menu"),
+                                ("?aihe=%3Cscript%3E", "screenKurssi", "a malformed topic goes to the course menu")):
+            pg.goto(APP.as_uri() + q); pg.wait_for_timeout(100)
+            on = pg.evaluate("document.querySelector('.screen.on').id")
+            extra = pg.evaluate("document.querySelectorAll('#aiheList .row.valittu').length") if screen == "screenAihe" else 0
+            expect(f"Käsitetakomo: {what}", on == screen and not extra, (q, on, extra))
+        expect("Käsitetakomo: a link back to Ruukkilabra", pg.evaluate("!!document.querySelector('#paluu[href]')"))
+        pg.close()
     b.close()
 sys.exit(1 if fails else 0)

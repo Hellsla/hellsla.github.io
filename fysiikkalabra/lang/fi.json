@@ -1395,5 +1395,13 @@
     "checked": "tarkistettu {{date}}",
     "teacher": "Opettajalle",
     "notice_draft": "Tämä oppitunti on luonnos: sen tarkistukset ovat kesken, eikä sitä ole julkaistu."
+  },
+  "cards": {
+    "title": "Käsitetakomo",
+    "home_lead": "Kertaa fysiikan käsitteitä ja määritelmiä kortein. Valitse moduuli ja aihe; aiheita voi myös yhdistää.",
+    "home_link": "Käsitetakomo – kertaa fysiikan käsitteitä",
+    "module_lead": "Kertaa moduulin käsitteitä ja määritelmiä kortein Käsitetakomossa. Valitse sieltä aihe tai yhdistä useita.",
+    "module_link": "Kertaa tämän moduulin käsitteet",
+    "lesson_link": "Kertaa luvun käsitteet Käsitetakomossa"
   }
 }
