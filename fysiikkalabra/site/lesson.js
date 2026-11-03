@@ -2,7 +2,7 @@
    solutions in the solution editor are kept on this device (part 6, padstore.js).
    1. Answer check: compares the typed number with data-answer (±2 %, one unit in the last digit data-step, or the
       wider data-tol; 2–5 % away is "Lähellä") and tells other parts of the attempt (event fl:attempt).
-   2. Section nav: marks the section currently on screen.
+   2. Progress bar: the stage navigation marks the stage on screen and the stages whose answers are all given.
    3. Worked example in stages: reveals the solution one stage at a time.
    4. Print: opens every collapsed block and every hidden stage while printing.
    5. A link to something inside a closed box (the Ennusta box, a hint) opens the box, so the target shows.
@@ -58,30 +58,106 @@
     });
   });
 
+  /* 2. The progress bar (teacher 2026-11-03): the stage navigation sticks under the top edge at every width.
+     - The stage on screen is marked (aria-current), seen with an IntersectionObserver on a line at 35 % of the window;
+       a tap pins its target until the reader scrolls on, so a short last section can still be marked. While the page
+       is read aloud (readaloud.js, event fl:reading) the stage being read is marked instead.
+     - A stage is marked done once every required answer in it is given: each choice committed with Vastaa, each number
+       checked with Tarkista, each written explanation compared with the model answer. Optional tasks (details.opt) and
+       the exercises that are not core tasks do not count. A stage with no required answer (Pohdinta,
+       Teoriatiivistelmä) is done once the reader has scrolled to its end. The done stages are kept on this device in localStorage
+       (key ruukkilabra:<page>), every access wrapped, and the page works without it.
+     - On a narrow window the bar scrolls sideways inside itself and keeps the current stage in view.
+     Without JavaScript the bar is a plain list of links. */
   const toc = document.querySelector('nav.toc');
   if (toc) {
-    const links = [...toc.querySelectorAll('a')];
-    const targets = links.map((a) => document.querySelector(a.getAttribute('href'))).filter(Boolean);
-    let pinned = null;
-    const mark = (id) => links.forEach((a) => {
-      const on = a.getAttribute('href') === '#' + id;
-      a.toggleAttribute('aria-current', on);
-      if (on && toc.scrollWidth > toc.clientWidth) a.scrollIntoView({ inline: 'nearest', block: 'nearest' });
-    });
-    // the active section is the last one whose top has passed 35 % of the viewport; a tap pins its target
-    // until the reader scrolls on, so a short last section can still be marked
-    const update = () => {
-      if (pinned) { mark(pinned); return; }
-      const line = window.innerHeight * 0.35;
-      let current = targets[0];
-      targets.forEach((t) => { if (t.getBoundingClientRect().top <= line) current = t; });
-      if (current) mark(current.id);
+    const links = [...toc.querySelectorAll('a[href^="#"]')];
+    const pairs = links.map((a) => [a, document.getElementById(decodeURIComponent(a.getAttribute('href').slice(1)))]).filter((p) => p[1]);
+    const targets = pairs.map((p) => p[1]);
+    let pinned = null, reading = null, current = null;
+    const keepInView = (a) => {
+      if (toc.scrollWidth <= toc.clientWidth + 1 || getComputedStyle(toc).flexDirection === 'column') return;
+      const tools = toc.querySelector('.toc-tools'), right = toc.clientWidth - (tools ? tools.offsetWidth : 0);
+      const l = a.offsetLeft - toc.scrollLeft, r = l + a.offsetWidth;
+      if (l < 8) toc.scrollTo({ left: Math.max(0, a.offsetLeft - 16) });
+      else if (r > right - 8) toc.scrollTo({ left: a.offsetLeft + a.offsetWidth - right + 16 });
     };
+    const mark = (id) => {
+      if (!id || id === current) return;
+      current = id;
+      links.forEach((a) => {
+        const on = a.getAttribute('href') === '#' + id;
+        if (on) { a.setAttribute('aria-current', 'step'); keepInView(a); } else a.removeAttribute('aria-current');
+      });
+    };
+    const inView = new Set();
+    const update = () => {
+      if (reading) return mark(reading);
+      if (pinned) return mark(pinned);
+      let last = null;
+      if (inView.size) targets.forEach((t) => { if (inView.has(t)) last = t; });    // a sub-section (Exit ticket) wins over its stage
+      else {
+        const line = window.innerHeight * 0.35;
+        targets.forEach((t) => { if (t.getBoundingClientRect().top <= line) last = t; });
+        if (!last) last = targets[0];
+      }
+      if (last) mark(last.id);
+    };
+    if ('IntersectionObserver' in window) {
+      const io = new IntersectionObserver((es) => { es.forEach((e) => { if (e.isIntersecting) inView.add(e.target); else inView.delete(e.target); }); update(); },
+        { rootMargin: '-35% 0px -64% 0px' });
+      targets.forEach((t) => io.observe(t));
+    }
+    let ticking = false;     // the gaps between sections and old browsers: the last section whose top passed the line
+    window.addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(() => { ticking = false; if (!inView.size) update(); }); } }, { passive: true });
+    window.addEventListener('resize', () => { const a = links.find((x) => x.hasAttribute('aria-current')); if (a) keepInView(a); });
     links.forEach((a) => a.addEventListener('click', () => { pinned = a.getAttribute('href').slice(1); mark(pinned); setTimeout(() => { pinned = null; }, 900); }));
-    let ticking = false;
-    window.addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(() => { ticking = false; update(); }); } }, { passive: true });
-    window.addEventListener('resize', update);
+    document.addEventListener('fl:reading', (e) => { reading = (e.detail && e.detail.id) || null; if (reading) mark(reading); else update(); });
+    window.flStageOf = (el) => { let id = null; pairs.forEach(([, t]) => { if (t.contains(el)) id = t.id; }); return id; };
     update();
+
+    // done stages
+    const page = (location.pathname.match(/(?:^|\/)((?:en|fi-easy|fr|sv)\/)?([^/]+?)(?:\.html)?$/) || []).slice(1).join('').replace(/\/$/, '') || 'index';
+    const KEY = 'ruukkilabra:' + page;
+    let saved = { done: [], answered: [] };
+    try { const v = JSON.parse(localStorage.getItem(KEY)); if (v && Array.isArray(v.done)) saved = { done: v.done, answered: Array.isArray(v.answered) ? v.answered : [] }; } catch (e) { /* no storage */ }
+    const save = () => { try { localStorage.setItem(KEY, JSON.stringify(saved)); } catch (e) { /* private mode, blocked storage */ } };
+    const REQUIRED = 'fieldset.choice, form.check, .explain .show-model';
+    const required = (sec) => [...sec.querySelectorAll(REQUIRED)].filter((u) => !u.closest('details.opt, #exercises li:not(.core), [hidden]:not(.show-model)'));
+    const answered = (u) => (u.dataset.flTried ? true : u.matches('fieldset') ? !!u.dataset.committed
+      : u.matches('form') ? /^(ok|no|close)$/.test((u.querySelector('output') || {}).dataset?.state || '') : u.hidden);
+    const unitKey = (u) => { const host = u.closest('[id]'); const all = [...host.querySelectorAll(REQUIRED)]; return host.id + ':' + all.indexOf(u); };
+    const stages = pairs.filter(([, t]) => t.matches('section.stage')).map(([a, t]) => ({ a, t, units: required(t) }));
+    const DONE = msg('stage_done');
+    const show = (s) => {
+      if (s.a.classList.contains('is-done')) return;
+      s.a.classList.add('is-done');
+      const sr = document.createElement('span'); sr.className = 'visually-hidden'; sr.textContent = ' (' + DONE + ')'; s.a.append(sr);
+    };
+    const inside = (r) => r.height > 0 && r.bottom >= 0 && r.bottom <= window.innerHeight;   // its end is on screen
+    const check = (scrolled) => {
+      let changed = false;
+      stages.forEach((s) => {
+        s.units.forEach((u) => { const k = unitKey(u); if (answered(u) && !saved.answered.includes(k)) { saved.answered.push(k); changed = true; } });
+        const done = s.units.length ? s.units.every((u) => saved.answered.includes(unitKey(u)))
+          : scrolled === true && inside(s.t.getBoundingClientRect());
+        if (done && !saved.done.includes(s.t.id)) { saved.done.push(s.t.id); changed = true; }
+        if (saved.done.includes(s.t.id)) show(s);
+      });
+      if (changed) save();
+    };
+    if (stages.length) {
+      const later = () => setTimeout(check, 0);       // after the page's own handlers (inquiry.js) have run
+      document.addEventListener('click', later); document.addEventListener('submit', later);
+      document.addEventListener('fl:attempt', (e) => {   // a real attempt reported by the page's scripts ({id, kind, state})
+        const el = e.detail && e.detail.id ? document.getElementById(e.detail.id) : null;
+        if (el) (el.matches(REQUIRED) ? [el] : [...el.querySelectorAll(REQUIRED)]).forEach((u) => { u.dataset.flTried = '1'; });
+        later();
+      });
+      let read = 0;
+      window.addEventListener('scroll', () => { if (!read) read = setTimeout(() => { read = 0; check(true); }, 250); }, { passive: true });
+      if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', later); else later();
+    }
   }
 
   // Worked example in stages: stage 1 is shown, "Näytä seuraava vaihe" reveals one more, "Näytä kaikki" the rest.
