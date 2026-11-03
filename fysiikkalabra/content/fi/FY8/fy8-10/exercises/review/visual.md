@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 0b105e1e4693fd79
+CONTENT-HASH: 848b3b84e36daf0e
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] solutions.md L1-01 and L1-03, **Vastaus** — the reason is joined with a semicolon ("$0{,}09894\,\text{u}$; massat on annettu…"), and the page shows the answer box followed by a line starting with a stray "; " — use a comma like the other solutions ("$0{,}09894\,\text{u}$, massat on annettu…").
-- [Minor] solutions.md L1-03 **Kaava** — "sidosenergia jaetaan tasan $A$ nukleonin kesken, …, joten kysytty suure on …" is a long sentence in place of a formula line — give the formula $\dfrac{E_\text{B}}{A}$ first, then the words.
+- [Minor] solutions.md fy8-10-L3-01 **Annettu** — still lists "vertailuarvo $\tfrac{E_\text{B}}{A} = 7{,}07\,\text{MeV}$", which the task text no longer gives (the comparison was removed from the question) — drop it from Annettu or keep the comparison only under Vastaus/Järkevyys.
 
 ## Checked
-- open-exercises-1280-1 (L1 task 1, full solution), open-exercises-L2-1280-3 (L2 tasks 2-3), open-exercises-L3-1280-2 (L3 tasks 1-2); the task figure (fig-12, binding-energy graph) read in the lesson review. Source of all 12 tasks and solutions read.
-- Task texts: situation then question, units in LaTeX, case endings after maths correct; solutions chains aligned in rows, no overflow, boxes inside cards.
+- Delta: open-exercises-1280-1 (L1-01: Vastaus now "0,098940 u" with a comma sentence, no stray semicolon) and open-exercises-L3-1280-1 (L3-01: question is its own bold sentence, chains aligned, no overflow).
+- L1-03 Kaava now leads with the formula; text read in the diff, layout identical to the previous capture pattern.
+- Maths: units upright with thin space, decimal commas, `\tfrac{\text{MeV}}{c^2}` readable.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 4

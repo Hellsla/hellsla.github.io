@@ -1,20 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: c8f7f77d685ed452
+CONTENT-HASH: 4b839b87d3d53c27
 
 ## Blocking
 (none)
 
 ## Polish
-- exercises.json fy8-12-L3-03 — the question also asks "Miksi tehokaskaan mikroaaltosäteily ei siksi ole ionisoivaa?" but a numeric answer cannot check it; either drop the sentence (the solution already explains) or mark it as a thought for self-assessment.
-- solutions.md fy8-12-L2-04, Järkevyys — "betoniseinä on halvempi" is an unsupported claim for the student; delete it or write "betonia tarvitaan paksumpi kerros, mutta se on usein käytännöllisempi rakennusmateriaali".
-- fy8-12-L2-01 — only a background subtraction and a minute-to-second conversion; light for level 2. Acceptable, but adding a source-with-barrier step would match the "kaksi vaihetta" rubric better.
-- fy8-12-L3-01 — assumes uniform ionisation along the path, stated in the task, good; add in the solution one sentence that an alpha particle in reality ionises most densely at the end of its path, so the ratio is a lower estimate of the peak.
-- Level 1 has three attenuation tasks (L1-01, 03, 04) that are near copies; vary one into a read-from-table or inverse form (fraction given, find thickness) if a swap is cheap.
+- exercises.json fy8-12 Level 1 — L1-01, L1-03, L1-04 are still near-copies of one attenuation calculation (round-1 note); an inverse form (fraction given, find thickness) in one of them would vary the level. Not blocking.
+- fy8-12-L2-01 — still only background subtraction and a minute-to-second conversion; acceptable.
 
 ## Checked
-- Levels 5/4/3 as required; L1 one equation, L2 two steps or unit conversion, L3 reasoning (L3-02 two-stage logarithm, L3-01 comparison, L3-03 ionisation limit).
-- None repeats the example (lead to 5 %); contexts recognisable (smoke detector, spent-fuel pool, WLAN, radon-free lab).
-- Situation first, question last; data complete; no trap beyond the lesson (c, h, eV given in solutions).
-- Solutions: given, asked, principle, formula, conversions, substitution, answer with significant figures, sanity check; each step followable; answers re-computed (18,9; 1,6; 6,0; 7,7; 98,4; 6,6; 0,81; 5,34; 70,9; 482; 35; 1,24) agree.
-- Captures opened: open-exercises-1280-1 and -2, L2-1280-2, L3-1280-1 and -4.
-- Finnish: case after number+unit correct, glossary terms used.
+- Delta: L1-01 now states the photon energy (1,25 MeV) the half-value layer belongs to and the solution's Annettu repeats it; Co-60 / lead 10,4 mm is consistent (0,5^(25,0:10,4) = 18,9 %), and it teaches that d_{1/2} depends on energy as the lesson says.
+- L3-03: the unanswerable "Miksi ... ei ole ionisoivaa?" sentence removed; the numeric question (1,24·10^6) stands alone and the solution still explains.
+- L2-04 Järkevyys: unsupported "betoniseinä on halvempi" replaced by a hedged practical remark; 71 mm recomputed (10 : 5,5 · 39).
+- L2-01 Järkevyys: ratio grouping changed (typography only), values 7,0 and 0,40 1/s unchanged.
+- Opened open-exercises-1280-1 (L1-01 with the new Annettu) and L2-1280-1 (L2-01): readable, staged, boxed answers.

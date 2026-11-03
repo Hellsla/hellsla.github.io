@@ -1,19 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: abb80c1fb9ef4479
+CONTENT-HASH: e9829a16b1879c5a
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] Ydinajatus "Miksi massan muutosta ei huomaa arjessa" — the inline chain $1{,}00 \cdot 10^{-3}\,\text{kg} \cdot (2{,}998 \cdot 10^{8}\,\text{m/s})^2 \approx 9{,}0 \cdot 10^{13}\,\text{J}$ breaks at 1280 px inside the parenthesis ("(2,998 ·" / "10^8 m/s)^2") — hard to read — put the calculation as its own display line or aligned rows.
-- [Minor] Tiivistelmä, first bullet — "$1\,\text{u} = \tfrac{1}{12}$ hiili-12-atomin massasta $= 1{,}66054 \cdot 10^{-27}\,\text{kg}$" mixes words into an equality chain — write "…massasta, eli $1\,\text{u} = 1{,}66054 \cdot 10^{-27}\,\text{kg}$".
-- [Minor] sim-390 — axis title $E_\text{B}/A\ (\text{MeV})$ touches the scale's base at the top of the graph — move the graph down a few px.
-- [Minor] fig-4/fig-10 (broken-axis bars) — the axis-break mark is small; the description says the axis is truncated, so acceptable, but a slightly larger break would help.
+- [Minor] Ydinajatus, display block "Miksi massan muutosta ei huomaa arjessa" — closing full stop inside the display (`\approx 9{,}0 \cdot 10^{13}\,\text{J}.`) is fine but the first line lacks the word "grammaa" link to $1{,}00 \cdot 10^{-3}\,\text{kg}$; consider "$1{,}00\,\text{g} = $" as the lead for readers. Optional.
+- [Minor] Kaava "Atomimassayksikkö energiana" — the sentence listing three four-figure constants is long for a phone; split after "joten".
 
 ## Checked
-- top-390, intro-1280, sim-390, sim-1280, theory-1280-1..4, example-390-1, stage-ennusta-390-1, stage-tutki-390-1, open-tarkista-1280-1, contact-2.
-- Figures opened: fig-1 (hero), fig-4 (massat), fig-6 (energia), fig-8 (kayra), fig-10 (reaktio), fig-12 (task graph). All legible at 390 px, units on axes, truncation labelled in descriptions, palette consistent, no clipping.
-- Maths renders cleanly (no red source); chains broken at operators; decimal comma, \cdot, units upright.
+- Delta: opened theory-1280-1 and theory-1280-2 (new display block renders as three aligned rows, no mid-parenthesis break; the round-1 polish is fixed), sim-390 and sim-1280 (axis title $E_\text{B}/A\ (\text{MeV})$ now clear of the scale base), fig-12-390 (task graph), contact-1 (hero, fig 4, 6, 8, 10 unchanged and legible).
+- Tiivistelmä first bullet reads correctly; 4-figure constants sentence renders with units upright and decimal comma.
+- Maths: no red source, `\cdot`, units upright, comma decimals.
+- Not re-opened: figures whose source did not change beyond the alt description of kayra-points.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 4

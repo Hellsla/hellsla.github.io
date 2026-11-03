@@ -1,21 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 4c3e81cd3dc1c6cd
+CONTENT-HASH: 47e5964342e7a136
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fig gm (fig-10-390) — the label "lanka (+)" sits on the right edge of the tube wall and crosses it; move it inside or just outside the wall.
-- [Minor] sim readout (sim-390, sim-1280) — before a run it reads "N = − pulssia 10 s:ssa", where the minus looks like a minus sign; show "–" as text or write "ei vielä mittausta".
-- [Minor] lesson.md Esimerkki step 1 (example-390-1) — the inline "$I : I_0$" breaks across lines after the colon at 390 px ("I :" / "I₀ = …"); wrap the ratio in `\mathbin{:}` with a non-breaking group or put it in a display line. The same happens in solutions.md L2-01 Järkevyys ("72 :" / "180 s").
-- [Minor] fig tuntematon (fig-14-390) — 2 mm and 50-pulse grid is dense at 331 px; the d = 12 mm crossing has no tick label. Label every 4 mm or lighten the minor grid.
-- [Minor] fig hero — the alpha and beta tracks are very short and hard to tell apart at 390 px; harmless for a mood illustration.
+- [Minor] sim readout (sim-390) — before a run it still reads "Valmis mittaus: N = − pulssia 10 s:ssa", the dash looks like a minus sign; write "ei vielä mittausta" (round-1 note, unchanged).
+- [Minor] hero — alpha and beta tracks remain short and similar at 390 px; harmless for a mood illustration.
 
 ## Checked
-- top-390, intro-1280, sim-390, sim-1280, lab-1280-1, example-390-1, ennusta-390-1, tarkista-390-1, theory-1280-1 and -3, exit-1280.
-- Figures: hero, energia, jaljet, lapaisy, gm, vaimeneminen and tuntematon (fig-1, 4, 6, 8, 10, 12, 14 at 390 px): legible, no clipping, colours consistent (alpha violet, beta blue, gamma orange), colour never alone, all labels LaTeX, units on axes. Plotted values checked against the descriptions (60 keV, 662 keV, 12,6 eV, 5,5 mm halves, aluminium 0,6 at 25 mm).
-- Typography: KaTeX, decimal comma, upright units with thin space, colon division, "%:iin" cases correct.
-- Finnish: fluent, glossary terms consistent, no mechanical phrases.
+- Delta verified in captures: fig-10-390 (gm) — "lanka (+)" now sits outside the tube wall, no crossing; fig-14-390 (tuntematon) — d axis labelled every 4 mm, so the 12 mm half-value crossing can be read; example-390-1 — "$I : I_0$" and "$I_0 : I$" no longer break across lines; contact-1 (hero, energia, jaljet, lapaisy, gm), sim-390.
+- Text diffs (exit ticket "suurimmillaan", ennuste-2 prompt, misconception paragraph, 60 keV "suurin energia") read; maths with `\,\text`, comma decimals and colon division correct.
+- Not re-opened: theory 1280 captures unchanged by the diff.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

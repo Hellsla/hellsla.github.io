@@ -1,21 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: abb80c1fb9ef4479
+CONTENT-HASH: e9829a16b1879c5a
 
 ## Blocking
 (none)
 
 ## Polish
-- inquiry.json hook — "Mihin osa massasta katoaa" suggests mass vanishes, the very misconception the lesson later corrects ("Massavaje ei ole kadonnutta ainetta"); ask "Mihin helium-4:n puuttuva massa on mennyt?"
-- inquiry.json ennuste-1 — the prompt uses E_B/A before the theory has defined it; the one-line gloss helps, but add "(energia, joka tarvitaan yhden nukleonin irrottamiseen keskimäärin)" so the prediction can be argued on its own.
-- inquiry.json tarkistus-2 — the figure description should give the values at the masses the options use (A about 30, 60, 120, 240) without the answer, so a reader who cannot see the graph has the same data.
-- lesson.md "Atomimassayksikkö energiana" — the long derivation of 931,5 MeV/c² with six significant digits is heavy for a phone; it is correct and in its own sub-section, so fine, but a one-line lead ("tulos: 1 u vastaa 931,5 MeV") before the aligned block would help.
+- lesson.md "Massa ja energia" — "vahva vuorovaikutus vetää ne yhteen ja energiaa vapautuu" is fine, but the hook's "Mihin massa on mennyt" is only answered in the reflect item (optional) and the prose; make sure the reflect prompt stays in the core path or add a one-line answer in Tiivistelmä ("massa on poistunut sidosenergiana"). Today the Tiivistelmä states it indirectly only.
+- inquiry.json ennuste-2 — the helium-4 vs lithium-7 answer is a recalled fact the student cannot derive before koe-1; acceptable as a prediction, but the justify prompt could ask "mitä luulet naapureista?" to keep it an argument.
+- lesson.md "Atomimassayksikkö" — the table gives atomic masses with six decimals; one sentence on why electrons stay in ("Vetyatomi" remark) is there, good; consider placing the table after the first Massavaje paragraph for phone scrolling.
 
 ## Checked
-- Path: hook, optional retrieval, two predictions each refutable by koe-1 and koe-2 (reveal after min 3), student-built E_B/A graph, explain conclusion with observable criteria and model-value wording.
-- Slot goals (massavaje, E_B, E_B/A, Q from masses, mass-energy equivalence) all met; no scope creep; workload about one lesson.
-- Wrong options' feedback repairs the misconception with model values; Etsi virhe (c² counted twice) is a real error.
-- Siirto (Po-210, Q = 5,408 MeV) has three hints and three real mistakes; values recomputed.
-- Tarkista 1 concept and 2 graph reading test direction of energy and the fission/fusion side; distractors from real misconceptions.
-- Exit ticket tests per-nucleon comparison and the hydrogen-atom trick; answers correct.
-- Staged example (8 stages); figures 390 px legible, simulation at 390 px readable with its three named boxes.
-- Finnish and terms correct.
+- Read the full packet: hook, 2 predictions with misconception-repairing feedback, 2 experiments (min 3, ennuste revealed after), conclusion explain, staged 8-step example, Etsi virhe, transfer with 3 hints and mistakes, 3 checks, exit ticket.
+- Binding-energy values (E_B/A 7,074 He-4; 8,790 Fe-56; 7,570 U-238) and Po-210 Q = 5,408 MeV recomputed: consistent.
+- Slot goals (massavaje, sidosenergia, reaktioenergia, 1 u = 931,5 MeV/c²) covered, no more; workload one lesson.
+- Notation $E_\text{B}$ is used throughout (no E_s).
+- Opened contact-1 and sim-390: hero scale, mass-defect bar graph, energy-level diagram, curve and Q-graph legible; sim readout, graph and labels understandable at 390 px, tilt direction matches mass.
+- Finnish and glossary terms correct.

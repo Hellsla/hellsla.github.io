@@ -1,20 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: c8f7f77d685ed452
+CONTENT-HASH: 4b839b87d3d53c27
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] solutions.md L2-01 Järkevyys (open-exercises-L2-1280-2) — "72 :" and "180 s" are split over two lines at the colon; use a non-breaking ratio (`\mathbin{:}` in a group).
-- [Minor] exercises.json L1-02, L3-03 — answer unit "· 10⁵" and "· 10⁶" is plain Unicode; it renders acceptably beside the field, but a LaTeX unit would match the house rule.
-- [Minor] fig tuntematon (fig-14-390) — dense 2 mm grid, no tick at 12 mm; label every 4 mm or lighten the minor grid. Description matches the data (800 pulses/min, 0–48 mm) and does not give the answer.
-- [Minor] solutions.md L3-03 Sijoitus (open-exercises-L3-1280-4) — a long aligned chain, readable; the unit fraction $\tfrac{\text{J}}{\text{eV}}$ is small, consider writing the division on a separate line.
+- [Minor] solutions.md fy8-12-L2-01 — answer line "Kolme merkitsevää numeroa kuten mittausajassa" fine; no change needed (listed only to record that the ratio spacing fix `{1260 : 180}\,\text{s}` is in).
 
 ## Checked
-- open-exercises-1280-1 and -2, L2-1280-2, L3-1280-1 and -4, tarkista-390-1 with fig tuntematon, fig-14-390.
-- Typography: decimal comma, upright SI units with thin space, `\cdot`, case after number+unit ("25,0 mm:n", "5,0 %:iin") correct; subscripts d_{1/2,Pb} legible.
-- Solutions follow the order principle, formula, substitution, result, interpretation; blocks and answer box clear; no clipping at 1280 px.
-- Finnish: instructions clear, question last, glossary terms used.
+- Delta: opened open-exercises-1280-1 (L1-01: new energy clause in task and Annettu, chains aligned, answer box inside card) and open-exercises-L2-1280-1 (L2-01: staged chain, boxed 6,60 1/s, no overflow).
+- Read the diffs of L3-03 (question now a single sentence with "$10^{6}$"), L2-04 Järkevyys and the grouped ratios: LaTeX valid, units upright, decimal commas.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

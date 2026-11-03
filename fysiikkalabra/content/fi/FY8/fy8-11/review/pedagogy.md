@@ -1,22 +1,17 @@
-VERDICT: FAIL
-CONTENT-HASH: fc0964a3bca0df91
+VERDICT: PASS
+CONTENT-HASH: 8286157c5be4079d
 
 ## Blocking
-- lesson.md "Raskaat ytimet jakautuvat, kevyet yhtyvät" (also inquiry.json kertaus feedback, tarkistus-2 solution, exercises) — sidosenergia is written $E_\text{s}$ here, but the glossary and the previous lesson fy8-10 (its prerequisite) use $E_\text{B}$ for the same quantity; a student meets two symbols for one thing in consecutive lessons — change every $E_\text{s}$ to $E_\text{B}$ (including $E_\text{s,loppu}$, $E_\text{s,alku}$) and the figure axis label if it uses it.
+(none)
 
 ## Polish
-- lesson.md "Energia massojen erotuksesta" — "Massat lasketaan taulukon atomimassoista": this lesson has no table (it was in fy8-10); write "annetuista atomimassoista (taulukko luvussa Massavaje ja ytimen sidosenergia)".
-- inquiry.json — the investigation covers only the chain reaction; the opening question's first half ("mistä energia on peräisin") and fusion are met only by theory, the example and Tarkista 1-2. Acceptable, but the optional pohdi should stay prominent, or the hook should say that the answer comes in the theory.
-- inquiry.json keskustelu — model answer 2 names uranium mining and its environmental effects, which the lesson text never mentions; either add a sentence to "Ydinvoimakeskustelu" or drop it from the answer.
-- Workload — five theory sections including Suomi, Onkalo and safety, two predictions, two experiments, two explain tasks, the transfer task and exercises is close to two lessons; make keskustelu or siirto optional.
-- inquiry.json koe-1 — the table's k is read straight from the formula k = 1,2 − 0,008 s; say in the intro that k is set by the rods and N is the result that emerges.
+- lessons/FY8/fy8-11/lesson-answers.py:81 — round-1 blocker confirmed fixed everywhere a student sees: $E_\text{B}$ in lesson.md (Ydinajatus), figures 4 and 18 (axis label, captures), inquiry.json, exercises and solutions. One developer comment still reads "E_s/A" (not student-visible) — rename to E_B/A for consistency.
+- lesson.md / workload — the slot holds fission, chain reaction, reactor, fusion, Finnish plants, Onkalo, safety and the debate; with the sim, 2 predictions, example, keskustelu and siirto (both non-optional) it is a long hour. Consider marking "Ydinvoimakeskustelu" or the ITER transfer optional.
+- inquiry.json ennuste-2 — 1000·1,04^30 can be computed by the student alone; the sim then confirms arithmetic. The random series partly saves it; acceptable, but the justify prompt could ask the student to say why growth is not 40 per generation.
+- lesson.md Onkalo paragraph — dated claims (STUK August 2026, state licence October 2026, to end of 2070) are not checkable from the lesson; for science: confirm against Posiva/STUK sources.
 
 ## Checked
-- Hook question is answered in the theory, example and the optional reflection; no disclosure before commitment.
-- Both predictions are refutable by koe-1 and koe-2; feedback cites model values (recomputed: 1,04^30 = 3,24, 176 generations to a million, hint values).
-- Etsi virhe (forgotten neutron, -766 MeV) is a real misconception-based error; recomputed.
-- Example staged in 8 steps; Q = 173 MeV and the coal figure (3,4 t) recomputed.
-- Tarkista 1 distractors are real misconceptions; Tarkista 2 reads the graph (212 MeV), tolerance sensible; explain criteria observable.
-- Siirto ITER 1,77·10^20 1/s and mistakes recomputed.
-- Sim at 390 px readable, readout and the three boxes present; exit ticket tests moderator and fusion temperature.
-- Finnish and terms correct apart from the above.
+- Read the whole packet: hook (Olkiluoto 3, coal), retrieval, 2 predictions with feedback citing the sim's values, sim with seeded series, 2 experiments (g and s locked/varied), explain, 8-step example, Etsi virhe (missing neutron), keskustelu, ITER transfer, 3 checks, exit ticket.
+- Recomputed: 1 g U-235 = 82 GJ = 3,4 t coal; fuusio 3,5 and fissio 0,85 MeV per nucleon; Q = 173 MeV; 1,04^30 = 3,24; tarkistus-2 answer 0,9 · 236 ≈ 210 MeV.
+- Opened contact-1, fig-4, fig-18, theory-1280-1: fusion/fission arrows now run toward the peak; task graph has a break mark; figures legible at 390 px.
+- Finnish and glossary terms (fissio, fuusio, ketjureaktio, ydinreaktori, kasvukerroin) correct.
