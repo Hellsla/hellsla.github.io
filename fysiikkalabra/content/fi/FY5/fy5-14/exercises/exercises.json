@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy5-14-L1-01",
+      "level": 1,
+      "text": "Opiskelija seisoo $86{,}0\\,\\text{m}$:n päässä koulun seinästä ja lyö kaksi puukapulaa yhteen. Puhelimen ajanottosovellus mittaa, että kaiku palaa $0{,}505\\,\\text{s}$ iskun jälkeen. Mikä on mittauksen mukaan äänen nopeus?",
+      "answer": 341,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-14-L1-02",
+      "level": 1,
+      "text": "Lepakko lähettää kaikuluotaukseen ultraääntä, jonka taajuus on $45{,}0\\,\\text{kHz}$. Mikä on äänen aallonpituus ilmassa, kun äänen nopeus on $340\\,\\text{m/s}$? Anna vastaus millimetreinä.",
+      "answer": 7.56,
+      "unit": "mm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-14-L1-03",
+      "level": 1,
+      "text": "Sellon D-kielen perustaajuus on $147\\,\\text{Hz}$. Kieli värähtelee yhtä aikaa harmonisen sarjan taajuuksilla. Mikä on sarjan neljännen jäsenen eli kolmannen yläsävelen taajuus?",
+      "answer": 588,
+      "unit": "Hz",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-14-L1-04",
+      "level": 1,
+      "text": "Jäätelöauto ajaa suoraan poispäin kuulijasta nopeudella $15{,}0\\,\\text{m/s}$ ja soittaa melodiaa, jonka yksi sävel on $415\\,\\text{Hz}$. Minkä taajuuden paikallaan oleva kuulija kuulee tästä sävelestä? Ilma on tyyntä, ja äänen nopeus on $340\\,\\text{m/s}$.",
+      "answer": 397,
+      "unit": "Hz",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-14-L1-05",
+      "level": 1,
+      "text": "Luokittele äänet infraääneksi, ihmisen kuultavaksi ääneksi tai ultraääneksi: a) ukkosen jyrinän matalin osa $12\\,\\text{Hz}$, b) viritysääni $440\\,\\text{Hz}$, c) koiranpilli $35\\,\\text{kHz}$, d) ultraäänikuvauksen ääni $2{,}5\\,\\text{MHz}$. Perustele rajojen avulla.",
+      "answer": "a) infraääni; b) kuultava ääni; c) ultraääni; d) ultraääni",
+      "unit": "",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy5-14-L2-01",
+      "level": 2,
+      "text": "Pianonvirittäjä lyö äänirautaa, jonka taajuus on $262\\,\\text{Hz}$, ja soittaa samalla pianon kieltä, joka kuulostaa hieman ääniraudan ääntä matalammalta. Hän laskee $15$ huojahdusta $5{,}0$ sekunnissa. Mikä on kielen taajuus?",
+      "answer": 259,
+      "unit": "Hz",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-14-L2-02",
+      "level": 2,
+      "text": "Kaiutin lähettää ilmassa ääntä, jonka aallonpituus on $0{,}850\\,\\text{m}$. Ääni siirtyy järven pinnasta veteen. Mikä on äänen aallonpituus vedessä? Äänen nopeus ilmassa on $340\\,\\text{m/s}$ ja vedessä $1480\\,\\text{m/s}$.",
+      "answer": 3.7,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-14-L2-03",
+      "level": 2,
+      "text": "Autoilija ajaa nopeudella $90{,}0\\,\\text{km/h}$ suoraan kohti risteystä, jossa paikallaan oleva hälytyssireeni soi taajuudella $650\\,\\text{Hz}$. Minkä taajuuden autoilija kuulee? Ilma on tyyntä, ja äänen nopeus on $340\\,\\text{m/s}$.",
+      "answer": 698,
+      "unit": "Hz",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-14-L2-04",
+      "level": 2,
+      "text": "Kilpa-auton moottori soi varikolla paikallaan taajuudella $425\\,\\text{Hz}$. Kun auto ajaa samalla kierrosluvulla suoraan poispäin katsojasta, joka seisoo radan suoran jatkeella, katsoja kuulee taajuuden $398\\,\\text{Hz}$. Kuinka suuri on auton nopeus? Ilma on tyyntä, ja äänen nopeus on $340\\,\\text{m/s}$.",
+      "answer": 23,
+      "unit": "m/s",
+      "tolerance": 0.03
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy5-14-L3-01",
+      "level": 3,
+      "text": "Kuulija seisoo aivan suoran tien vieressä ja mittaa puhelimen sovelluksella ohi ajavan ambulanssin sireenin taajuuden: auton lähestyessä $476\\,\\text{Hz}$ ja sen loitotessa $404\\,\\text{Hz}$. Ambulanssin nopeus on vakio, mutta sireenin omaa taajuutta ei tiedetä. Kuinka suuri on ambulanssin nopeus? Ilma on tyyntä, ja äänen nopeus on $340\\,\\text{m/s}$.",
+      "answer": 28,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-14-L3-02",
+      "level": 3,
+      "text": "Kitaristi soittaa A-kieltä yhtä aikaa $440\\,\\text{Hz}$:n viritysäänen kanssa ja kuulee $4$ huojahdusta sekunnissa. Kun hän kiristää kieltä hieman, huojunta nopeutuu $6$ huojahdukseen sekunnissa. Mikä oli kielen taajuus ennen kiristämistä? Perustele, miksi vastaus on yksikäsitteinen.",
+      "answer": 444,
+      "unit": "Hz",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-14-L3-03",
+      "level": 3,
+      "text": "Opiskelija mittaa klarinetin matalan sävelen FFT-spektrin. Spektrissä on selvät piikit taajuuksilla $147\\,\\text{Hz}$, $441\\,\\text{Hz}$, $735\\,\\text{Hz}$ ja $1029\\,\\text{Hz}$, ja niiden välissä ei juuri mitään. Mikä on sävelen perustaajuus, mitä harmonisen sarjan jäseniä spektristä puuttuu, ja mitä tämä kertoo klarinetin ilmapatsaan seisovasta aallosta?",
+      "answer": "Perustaajuus $147\\,\\text{Hz}$; parilliset monikerrat ($294\\,\\text{Hz}$, $588\\,\\text{Hz}$, $882\\,\\text{Hz}$) puuttuvat, joten ilmapatsas värähtelee kuin toisesta päästä suljettu putki.",
+      "unit": "",
+      "tolerance": 0.02
+    }
+  ]
+}
