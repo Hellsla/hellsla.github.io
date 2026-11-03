@@ -1,4 +1,4 @@
-# Aineen lämpeneminen ja jäähtyminen: Q = cmΔT
+# Aineen lämpeneminen ja jäähtyminen: $Q = cm\Delta T$
 
 > **Miksi** uimarannan hiekka polttaa jalkapohjia jo aamupäivällä, kun vesi on vielä viileää? Aurinko on kuitenkin paistanut molempiin yhtä kauan.
 

@@ -8,7 +8,7 @@
   ],
   "prior": [
     "Efficiency $\\eta = W/Q_1$ and the energy balance of a heat engine $Q_1 = W + Q_2$ (chapter Work done by a gas and the heat engine)",
-    "Quantity of heat $Q = cm\\,\\Delta T$ and specific heat capacity (chapter Heating and cooling of a substance: Q = cmΔT)",
+    "Quantity of heat $Q = cm\\,\\Delta T$ and specific heat capacity (chapter Heating and cooling of a substance: $Q = cm\\Delta T$)",
     "Power is energy per unit time, and energy is conserved (chapter Work and energy)"
   ],
   "activities": [

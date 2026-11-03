@@ -1,4 +1,4 @@
-# Tiheys: m = ρV
+# Tiheys: $m = \rho V$
 
 > **Miksi** kaksi samankokoista metallikuutiota voi tuntua kädessä aivan eri painoisilta, ja miten tuntemattoman kappaleen aineen voi päätellä pelkästä vaa'asta ja mittalasista?
 

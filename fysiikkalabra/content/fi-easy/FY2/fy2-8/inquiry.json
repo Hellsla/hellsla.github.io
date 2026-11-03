@@ -7,7 +7,7 @@
     "perustelemaan valinnan useiden vertailuperusteiden avulla."
   ],
   "prior": [
-    "Polttoaineen palaessa kemiallinen energia vapautuu, ja energia mitataan jouleina ja kilowattitunteina (luku *Polttoaineet ja lämpöarvo E = Hm*)",
+    "Polttoaineen palaessa kemiallinen energia vapautuu, ja energia mitataan jouleina ja kilowattitunteina (luku *Polttoaineet ja lämpöarvo $E = Hm$*)",
     "Energiantuotantotavat eroavat toisistaan teholtaan, saatavuudeltaan ja ympäristövaikutuksiltaan (luku *Energiantuotantotavat ja niiden vertailu*)"
   ],
   "activities": [
@@ -29,7 +29,7 @@
         {
           "text": "Kemiallinen energia muuttuu liike-energiaksi ja lämmöksi, ja bensiinin hiili poistuu hiilidioksidina pakokaasuissa.",
           "correct": true,
-          "feedback": "Oikein. Palaessa kemiallinen energia vapautuu (luku *Polttoaineet ja lämpöarvo E = Hm*). Polttoaineen hiiliatomit yhtyvät happeen: $\\text{C} + \\text{O}_2 \\rightarrow \\text{CO}_2$. Siksi jokainen hiilipitoisesta polttoaineesta polttamalla otettu energiamäärä tuo mukanaan hiilidioksidia."
+          "feedback": "Oikein. Palaessa kemiallinen energia vapautuu (luku *Polttoaineet ja lämpöarvo $E = Hm$*). Polttoaineen hiiliatomit yhtyvät happeen: $\\text{C} + \\text{O}_2 \\rightarrow \\text{CO}_2$. Siksi jokainen hiilipitoisesta polttoaineesta polttamalla otettu energiamäärä tuo mukanaan hiilidioksidia."
         },
         {
           "text": "Bensiini muuttuu palaessaan kokonaan energiaksi, joten pakokaasuihin ei jää lainkaan hiiltä tai muuta ainetta.",
@@ -37,7 +37,7 @@
         },
         {
           "text": "Palaessaan bensiini tuottaa energiaa tyhjästä, joten moottori saa enemmän energiaa kuin polttoaineessa oli alun perin.",
-          "feedback": "Energiaa ei synny tyhjästä. Moottorin saama energia on peräisin polttoaineen kemiallisesta energiasta. Osa siitä muuttuu hukkalämmöksi (luku *Polttoaineet ja lämpöarvo E = Hm*)."
+          "feedback": "Energiaa ei synny tyhjästä. Moottorin saama energia on peräisin polttoaineen kemiallisesta energiasta. Osa siitä muuttuu hukkalämmöksi (luku *Polttoaineet ja lämpöarvo $E = Hm$*)."
         },
         {
           "text": "Bensiinin hiili palaa loppuun ja katoaa, joten pakokaasuissa on vain vesihöyryä ja lämmintä ilmaa.",

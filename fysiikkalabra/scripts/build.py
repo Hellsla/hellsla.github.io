@@ -209,7 +209,12 @@ def page(title, body, crumbs, name, description, main_class="reading", full_titl
     """A front or module page. Its <title> is "<title> — Ruukkilabra"; the front page passes full_title instead, so
     the site's name is not said twice."""
     head = full_title or f"{title} — {T('site.name')}"
-    return rebase(texts(page_tpl).replace("{{head_title}}", esc(head)).replace("{{title}}", esc(title)).replace("{{body}}", body).replace("{{crumbs}}", crumbs)
+    tpl_ = page_tpl
+    if re.search(r"\$[^$\s][^$]*\$", body):   # a chapter title with a formula (curriculum.json "$pV = nRT$"): the lesson pages' KaTeX
+        tpl_ = (tpl_.replace('<link rel="stylesheet" href="site.css">', '<link rel="stylesheet" href="vendor/katex/katex.min.css">\n<link rel="stylesheet" href="site.css">', 1)
+                .replace("</body>", '<script src="vendor/katex/katex.min.js"></script><script src="vendor/katex/contrib/auto-render.min.js" '
+                         'onload="renderMathInElement(document.querySelector(\'main\'),{delimiters:[{left:\'$\',right:\'$\',display:false}],throwOnError:false})"></script>\n</body>', 1))
+    return rebase(texts(tpl_).replace("{{head_title}}", esc(head)).replace("{{title}}", esc(title)).replace("{{body}}", body).replace("{{crumbs}}", crumbs)
             .replace("{{main_class}}", main_class).replace("{{home}}", HOME).replace("{{languages}}", languages_nav(name))
             .replace("{{description}}", esc(description)).replace("{{url}}", URL + name))
 
@@ -360,6 +365,51 @@ def link_languages():
             f.write_text(re.sub(r"<!--fl-languages:([\w.-]+)-->", control, f.read_text()))
 
 
+HERO = re.compile(r'<svg\b[^>]*data-fig="hero".*?</svg>', re.S)
+
+
+def chapter_card(html):
+    """What a chapter's card on its module page shows (teacher 2026-11-03, "Ruukkikortit"): the chapter's own opening
+    illustration and its Miksi question, taken from the built page, so nothing is written twice. The picture is
+    decorative on the card (the title and the question say what it shows), so its role and description go."""
+    m = HERO.search(html)
+    svg = ""
+    if m:
+        svg = re.sub(r'\s(?:role|aria-label|aria-labelledby|class|style)="[^"]*"', "", m.group(0).split(">", 1)[0], flags=0) + ">" + m.group(0).split(">", 1)[1]
+        svg = svg.replace("<svg", '<svg aria-hidden="true" focusable="false" preserveAspectRatio="xMidYMid slice"', 1)
+        svg = re.sub(r"<title\b.*?</title>|<desc\b.*?</desc>", "", svg, flags=re.S)
+    q = re.search(r'<div class="intro-head">.*?<blockquote>\s*<p>(.*?)</p>', html, re.S)
+    why = re.sub(r"</?strong>", "", q.group(1)).strip() if q else ""
+    return svg, why
+
+
+def chapter_cards(code, mod, slots, built_ids, legacy_ids, cards):
+    """The module page's chapters as cards, under the module's themes (curriculum.json "themes": [{title, first}],
+    titles translated in content/<lang>/courses.json "themes"); a chapter still coming is a plain row without a link."""
+    themes = {th["first"]: th["title"] for th in mod.get("themes", [])}
+    if themes and slots[0]["id"] not in themes: sys.exit(f"{code}: the first theme must start at the first chapter {slots[0]['id']}")
+    bad = set(themes) - {l["id"] for l in slots}
+    if bad: sys.exit(f"{code}: themes start at unknown chapters {sorted(bad)} (curriculum.json)")
+    out = ""; group = ""
+    def close():
+        return f'<ol class="lessons ch-cards">{group}</ol>' if group else ""
+    for i, l in enumerate(slots, 1):
+        if l["id"] in themes:
+            out += close(); group = ""
+            out += f'<h3 class="ch-theme">{esc(themes[l["id"]])}</h3>'
+        num = f'<span class="l-num">{T("site.chapter_n", n=i)}</span>'
+        title = esc(l["title"])
+        if l["id"] in built_ids:
+            svg, why = cards.get(l["id"], ("", ""))
+            tags = f'<span class="tag">{T("site.lesson_prototype")}</span>' if l["id"] in legacy_ids else ""
+            group += (f'<li class="live ch-card">{num}<a href="{l["id"]}.html">{title}</a>'
+                      + (f'<p class="ch-why">{why}</p>' if why else "") + (f'<p class="ch-tags">{tags}</p>' if tags else "")
+                      + (f'<div class="ch-img">{svg}</div>' if svg else "") + "</li>")
+        else:
+            group += f'<li class="soon ch-card">{num}<span class="ch-title">{title}</span><p class="ch-tags"><span class="tag">{T("site.lesson_coming")}</span></p></li>'
+    return out + close()
+
+
 def course_text(code, mod):
     """A module's title, goals and lesson titles in the language being built: curriculum.json is the Finnish source,
     content/<lang>/courses.json holds the translations ({"FY3": {"title", "tavoitteet", "lessons": {id: title}}})."""
@@ -367,6 +417,7 @@ def course_text(code, mod):
     tr = COURSES.get(code, {})
     out = dict(mod, title=tr.get("title", mod["title"]), tavoitteet=tr.get("tavoitteet", mod.get("tavoitteet", [])))
     out["lessons"] = [dict(l, title=tr.get("lessons", {}).get(l["id"], l["title"])) for l in mod.get("lessons", [])]
+    if mod.get("themes"): out["themes"] = [dict(th, title=t) for th, t in zip(mod["themes"], tr.get("themes", [th["title"] for th in mod["themes"]]))]
     return out
 
 
@@ -475,6 +526,7 @@ def build_language(lang):
     f = ROOT / "content" / lang / "courses.json"
     COURSES = json.loads(f.read_text()) if lang != i18n.SOURCE and f.is_file() else {}
     built = {}   # course -> [meta, ...]
+    cards = {}   # lesson id -> (opening illustration, Miksi question): the module page's chapter cards
     states = {}  # lesson id -> review state of every lesson seen, also the ones left out
     for folder in courses.lessons(lang=lang):
         meta = json.loads((folder / "meta.json").read_text())
@@ -573,6 +625,7 @@ def build_language(lang):
                 .replace("{{home}}", HOME).replace("{{languages}}", languages_nav(name)))
         (out / name).write_text(rebase(html))
         built.setdefault(meta["course"], []).append(meta)
+        cards[meta["id"]] = chapter_card(html)
         print("built", meta["id"], f"({meta['state']})")
 
     fbdspec.SYMBOLS = {}                                                           # the pages after the lessons: specs as written
@@ -635,15 +688,7 @@ def build_language(lang):
             upcoming += (f'<li><a href="{code}.html">{module_icons.img(code, 36, "up-icon")}<span class="mod-code">{code}</span> <span class="up-title">{esc(mod["title"])}</span></a>'
                          f'<span class="up-meta">{main_label}</span></li>')
 
-        items = ""
-        for i, l in enumerate(slots, 1):
-            num = f'<span class="l-num">{i}</span>'
-            if l["id"] in legacy_ids:
-                items += f'<li class="live legacy">{num}<a href="{l["id"]}.html">{esc(l["title"])}</a> <span class="tag">{T("site.lesson_prototype")}</span></li>'
-            elif l["id"] in built_ids:
-                items += f'<li class="live">{num}<a href="{l["id"]}.html">{esc(l["title"])}</a></li>'
-            else:
-                items += f'<li class="soon">{num}<span>{esc(l["title"])}</span> <span class="tag">{T("site.lesson_coming")}</span></li>'
+        items = chapter_cards(code, mod, slots, built_ids, legacy_ids, cards)
         # a language link from a page this language lacks lands here (link_languages): the note at its #unavailable-<id> says so
         missing = [(l["id"], l["title"]) for l in slots if l["id"] not in built_ids]
         if code not in practice_built: missing.append((f"{code}-sovella", T("practice.title")))
@@ -653,15 +698,15 @@ def build_language(lang):
         body = (notes + f'<div class="mod-head">{module_icons.img(code, 56, "mod-head-icon")}<div><span class="eyebrow">{code} · {credits}</span><h1>{esc(mod["title"])}</h1></div></div>'
                 f'<p class="lead">{esc(T("site.module_question." + code))}</p>'
                 f'<p class="mod-status">{main_label}{(" · " + extra_label) if extra_label else ""}</p>'
-                + f'<h2>{T("site.course_lessons")}</h2><ol class="lessons">{items}</ol>'
-                + (f'<h2>{T("practice.title")}</h2><p>{T("practice.course_lead")}</p><ul class="lessons practice-link"><li class="live">'
-                   f'<a href="{practice.page_name(code)}">{T("practice.title")}</a> <span class="count">{practice_built[code]}</span></li></ul>' if code in practice_built else "")
-                + concept_cards.module_link(code, T, UP)   # Käsitetakomo, the course's topic menu (teacher 2026-11-03)
-                + (f'<h2>{T("site.course_goals")}</h2><details class="goals"><summary>{T.count("site.course_goals_show", len(mod.get("tavoitteet", [])))}</summary>'
-                   f'<p>{T("site.course_goals_lead")}</p><ul>{goals}</ul></details>' if goals else ""))
+                + f'<h2>{T("site.course_lessons")}</h2>{items}<div class="mod-more">'
+                + (f'<section><h2>{T("practice.title")}</h2><p>{T("practice.course_lead")}</p><ul class="lessons practice-link"><li class="live">'
+                   f'<a href="{practice.page_name(code)}">{T("practice.title")}</a> <span class="count">{practice_built[code]}</span></li></ul></section>' if code in practice_built else "")
+                + (f'<section>{cc}</section>' if (cc := concept_cards.module_link(code, T, UP)) else "")   # Käsitetakomo, the course's topic menu (teacher 2026-11-03)
+                + (f'<section><h2>{T("site.course_goals")}</h2><details class="goals"><summary>{T.count("site.course_goals_show", len(mod.get("tavoitteet", [])))}</summary>'
+                   f'<p>{T("site.course_goals_lead")}</p><ul>{goals}</ul></details></section>' if goals else "") + "</div>")
         desc = T("site.course_description", code=code, title=mod["title"], done=done, n=len(slots))
         (out / f"{code}.html").write_text(page(T("site.course_title", code=code, title=mod["title"]), body,
-                                                f'<a href="index.html">{T("site.name")}</a> › {code}', f"{code}.html", desc))
+                                                f'<a href="index.html">{T("site.name")}</a> › {code}', f"{code}.html", desc, main_class="reading module-page"))
 
     chapter_nav(out, modules, built_ids, practice_built)
 

@@ -1,2 +1,5 @@
 date	reviewer	from	to	base	categories
 2026-10-29	science	5e44018001a8358c	13b569591e35e9f7	aff0bfefdeb1	objective-form
+2026-11-03	science	5e44018001a8358c	d7ec84beb0fc24ff	aff0bfefdeb1	chapter-ref,objective-form
+2026-11-03	pedagogy	13b569591e35e9f7	d7ec84beb0fc24ff	c2afe4b8103b	chapter-ref
+2026-11-03	visual	13b569591e35e9f7	d7ec84beb0fc24ff	c2afe4b8103b	chapter-ref

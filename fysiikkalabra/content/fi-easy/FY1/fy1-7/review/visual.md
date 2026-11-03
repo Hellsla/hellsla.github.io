@@ -1,9 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 53dc75d498a8067a
+CONTENT-HASH: 61d3e4d01db1ce25
 
 ## Blocking
 
 ## Polish
+- none
 
 ## Checked
-batch delta review: Playwright captures of the built page at 360 and 1280 px (iceberg; caption factual); photo sits after a paragraph, 320 px wide, caption and credit under it, no horizontal overflow, float beside text at 1280, full-width flow at 360; alt text matches the image; caption plain Finnish and factual.
+batch delta review: intro-1280 (title with the formula as KaTeX, wraps cleanly, chapter references resolve), fig-row-1280; figures unchanged by the diff.

@@ -1,17 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 73a72fe302bfea2a
+CONTENT-HASH: 2eeb1ed8bb20a9c8
 
 ## Blocking
 
 ## Polish
-- [Minor] H1 "Q = cmΔT" is plain text, not LaTeX (top-390); ignore if titles are exempt.
-- [Minor] Ydinajatus/Kaava prose gives some units in plain text ("J/(kg·K)") while Tiivistelmä and the example use maths; tfrac vs `J/(kg·K)` varies between Tulos and Järkevyys.
-- [Minor] Task heading "Taso 2 · soveltava harjoitus 4 tehtävää" wraps the count onto two lines at 390 px (contact-3 #27).
-- [Minor] Sim at 390 px: the Upota button sits beside the first slider's label (sim-390).
+- [Minor] top-390/top-1280 — the title formula is set in KaTeX serif at a slightly larger optical size than the heading font; reads clearly and is a consequence of the project-wide all-LaTeX rule, so nothing to change.
+- [Minor] top-390 breadcrumb — the title formula wraps to its own line (or the crumb wraps) in the breadcrumb on a phone — harmless, optional: none needed.
 
 ## Checked
-- Round 2. Round-1 Blocking (inline \tfrac): selita-390-4/5 show the colon form `T = (3,0 kg · 20 °C + 1,0 kg · 80 °C) : 4,0 kg = 35 °C` set inline, breaking at "+", legible; resolved.
-- selita-390-4 (table, bar figure, misconception display chain), contact-3 (tarkista, exit, tasks, experiments, sim) layout intact.
-
-## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+batch delta review: opened fy3-6-top-390 (and top-1280 for fy2-5, fy3-6); the title formula renders as KaTeX (no red source), on one block with the heading, nothing clipped, no overflow, breadcrumb legible; the rest of the lesson is unchanged by the diff.
