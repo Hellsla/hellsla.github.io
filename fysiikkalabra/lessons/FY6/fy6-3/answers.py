@@ -23,7 +23,7 @@ a["fy6-3-L3-01"] = 0.80 * 2 * 2                        # wire drawn to twice its
 ls = [0.40, 0.80, 1.20, 1.60]                          # nichrome wire, A = 0,20 mm², U = 2,00 V
 Is = [0.91, 0.46, 0.30, 0.23]                          # measured currents (A)
 Rs = [2.00 / I for I in Is]                            # R = U / I: 2,198; 4,348; 6,667; 8,696 Ω
-k = sum(l * R for l, R in zip(ls, Rs)) / sum(l * l for l in ls)   # least-squares slope through the origin, R / l = 5,47 Ω/m
-a["fy6-3-L3-02"] = k * 0.20e-6 * 1e6                   # ρ = (R / l) · A = 5,47 Ω/m · 0,20·10⁻⁶ m² = 1,09·10⁻⁶ Ω·m -> 1,1 µΩ·m
+k = sum(l * R for l, R in zip(ls, Rs)) / sum(l * l for l in ls)   # least-squares slope through the origin, R / l = 5,45 Ω/m
+a["fy6-3-L3-02"] = k * 0.20e-6 * 1e6                   # ρ = (R / l) · A = 5,45 Ω/m · 0,20·10⁻⁶ m² = 1,09·10⁻⁶ Ω·m -> 1,1 µΩ·m
 a["fy6-3-L3-03"] = 3.0 / 1.0                           # lamp switched on cold: I = U / R_cold = 3,0 V / 1,0 Ω = 3,0 A (12 times the running 0,25 A)
 print(json.dumps({k_: round(v, 6) for k_, v in a.items()}))

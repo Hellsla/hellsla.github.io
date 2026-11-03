@@ -199,15 +199,13 @@ Virran suunnaksi on sovittu suunta, johon positiivinen varaus liikkuisi: ulkoise
   <foreignObject x="482" y="31.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#7048e8">$I$</div></foreignObject>
   <foreignObject x="40" y="31.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$\text{eriste}$</div></foreignObject>
   <foreignObject x="40" y="275.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$\text{kupari}$</div></foreignObject>
-  <line x1="64" y1="276" x2="64" y2="230" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <circle cx="64" cy="230" r="4" fill="#6b7480"/>
 </svg>
 
 ### Kytkentäkaavio
 Virtapiiri piirretään **kytkentäkaaviona**, jossa jokaisella komponentilla on oma piirrosmerkkinsä. Paristossa pitkä ohut viiva on plusnapa ja lyhyt paksu viiva miinusnapa. Lamppu on ympyrä, jonka sisällä on risti, ja vastus on suorakulmio. Mittarit piirretään ympyröinä, joiden sisällä on mittarin kirjain: ampeerimittari $\text{A}$ ja volttimittari $\text{V}$. Johtimet piirretään suorina vaakasuorina ja pystysuorina viivoina. Kahden johtimen liitoskohta merkitään pisteellä.
 
-<svg data-fig="symbolit" viewBox="0 0 600 390" role="img" aria-label="Kytkentäkaavion piirrosmerkit kahdessa sarakkeessa. Vasemmalla ylhäältä alas: paristo, jossa pitkä ohut viiva on plusnapa ja lyhyt paksu viiva miinusnapa; lamppu, ympyrä jonka sisällä on risti; vastus, suorakulmio; ampeerimittari, ympyrä jonka sisällä on A. Oikealla: avoin kytkin, jonka vipu on nostettu irti, suljettu kytkin, jonka vipu on kosketuksissa, johdin, liitoskohta pisteenä ja volttimittari, ympyrä jonka sisällä on V." style="max-width:100%;font-size:24px">
-  <line x1="306" y1="22" x2="306" y2="368" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 6"/>
+<svg data-fig="symbolit" viewBox="0 0 600 360" role="img" aria-label="Kytkentäkaavion piirrosmerkit kahdessa sarakkeessa. Vasemmalla ylhäältä alas: paristo, jossa pitkä ohut viiva on plusnapa ja lyhyt paksu viiva miinusnapa; lamppu, ympyrä jonka sisällä on risti; vastus, suorakulmio; ampeerimittari, ympyrä jonka sisällä on A. Oikealla: avoin kytkin, johdin, liitoskohta pisteenä ja volttimittari, ympyrä jonka sisällä on V." style="max-width:100%;font-size:24px">
+  <line x1="306" y1="22" x2="306" y2="338" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 6"/>
   <polyline points="20,62 108,62" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="miter" stroke-linecap="square"/>
   <rect x="56" y="32" width="16" height="60" fill="#ffffff"/>
   <line x1="58" y1="38" x2="58" y2="86" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
@@ -232,28 +230,22 @@ Virtapiiri piirretään **kytkentäkaaviona**, jossa jokaisella komponentilla on
   <line x1="336" y1="62" x2="382" y2="37.5" stroke="#1f2933" stroke-width="3" stroke-linecap="round"/>
   <circle cx="336" cy="62" r="4.5" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
   <circle cx="388" cy="62" r="4.5" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
-  <foreignObject x="416" y="47.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{avoin kytkin}$</div></foreignObject>
+  <foreignObject x="416" y="47.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{kytkin}$</div></foreignObject>
   <polyline points="318,140 406,140" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="miter" stroke-linecap="square"/>
-  <rect x="337" y="134" width="50" height="12" fill="#ffffff"/>
-  <line x1="336" y1="140" x2="388" y2="140" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <circle cx="336" cy="140" r="4.5" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
-  <circle cx="388" cy="140" r="4.5" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
-  <foreignObject x="416" y="125.5" width="183" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{suljettu kytkin}$</div></foreignObject>
+  <foreignObject x="416" y="125.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{johdin}$</div></foreignObject>
   <polyline points="318,218 406,218" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="miter" stroke-linecap="square"/>
-  <foreignObject x="416" y="203.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{johdin}$</div></foreignObject>
+  <polyline points="362,218 362,252" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="miter" stroke-linecap="square"/>
+  <circle cx="362" cy="218" r="6" fill="#1f2933"/>
+  <foreignObject x="416" y="203.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{liitoskohta}$</div></foreignObject>
   <polyline points="318,296 406,296" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="miter" stroke-linecap="square"/>
-  <polyline points="362,296 362,330" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="miter" stroke-linecap="square"/>
-  <circle cx="362" cy="296" r="6" fill="#1f2933"/>
-  <foreignObject x="416" y="281.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{liitoskohta}$</div></foreignObject>
-  <polyline points="318,344 406,344" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="miter" stroke-linecap="square"/>
-  <circle cx="362" cy="344" r="21" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
-  <foreignObject x="347" y="329.5" width="30" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{V}$</div></foreignObject>
-  <foreignObject x="416" y="329.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{volttimittari}$</div></foreignObject>
+  <circle cx="362" cy="296" r="21" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
+  <foreignObject x="347" y="281.5" width="30" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{V}$</div></foreignObject>
+  <foreignObject x="416" y="281.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{volttimittari}$</div></foreignObject>
 </svg>
 
 Kaavio näyttää, mitkä komponentit on kytketty toisiinsa, ei sitä, miltä laitteet näyttävät tai kuinka pitkiä johdot ovat. Samasta virtapiiristä voi siksi piirtää monta oikean näköistä kaaviota. Tärkeää on, että virta kulkee kaaviossa samojen komponenttien kautta samassa järjestyksessä kuin todellisessa piirissä. Virran suunta merkitään johtimen viereen nuolella plusnavasta miinusnapaan.
 
-<svg data-fig="kaavio" viewBox="0 0 600 320" role="img" aria-label="Kuvan 2 virtapiiri kytkentäkaaviona. Suorakulmion muotoinen silmukka. Alareunassa vasemmalla kaksi paristokennoa peräkkäin, pitkä viiva eli plusnapa oikealla. Alareunassa oikealla suljettu kytkin, yläreunan keskellä lamppu, ympyrä jossa on risti. Violetti nuoli oikean reunan vieressä osoittaa ylöspäin ja on merkitty I: virta kulkee plusnavasta kytkimen ja lampun kautta miinusnapaan." style="max-width:100%;font-size:24px">
+<svg data-fig="kaavio" viewBox="0 0 600 320" role="img" aria-label="Edellisen kuvan virtapiiri kytkentäkaaviona. Suorakulmion muotoinen silmukka. Alareunassa vasemmalla kaksi paristokennoa peräkkäin, pitkä viiva eli plusnapa oikealla. Alareunassa oikealla suljettu kytkin, yläreunan keskellä lamppu, ympyrä jossa on risti. Violetti nuoli oikean reunan vieressä osoittaa ylöspäin ja on merkitty I: virta kulkee plusnavasta kytkimen ja lampun kautta miinusnapaan." style="max-width:100%;font-size:24px">
   <polyline points="90,70 500,70 500,250 90,250 90,70" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="miter" stroke-linecap="square"/>
   <rect x="178" y="220" width="16" height="60" fill="#ffffff"/>
   <line x1="192" y1="226" x2="192" y2="274" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
@@ -348,7 +340,7 @@ Paristo ei anna piiriin varausta, sillä varaus kiertää piirissä ja palaa par
 ```latex
 U = \frac{E}{Q}
 ```
-missä $U$ on jännite ($\text{V}$), $E$ siirtynyt energia ($\text{J}$) ja $Q$ varaus ($\text{C}$). Jännitteen yksikkö on voltti $\text{V}$, ja $1\,\text{V} = 1\,\text{J/C}$. AA-pariston jännite $1{,}5\,\text{V}$ tarkoittaa, että jokainen paristosta lamppuun kulkeva coulombi tuo lamppuun $1{,}5\,\text{J}$ energiaa, kun johtojen ja pariston oma vastus jätetään huomiotta. Mitä suurempi jännite, sitä enemmän energiaa sama varaus siirtää.
+missä $U$ on jännite ($\text{V}$), $E$ siirtynyt energia ($\text{J}$) ja $Q$ varaus ($\text{C}$). Jännitteen yksikkö on voltti $\text{V}$, ja $1\,\text{V} = 1\,\text{J/C}$. AA-pariston jännite $1{,}5\,\text{V}$ tarkoittaa, että jokainen paristosta lamppuun kulkeva coulombi tuo lamppuun $1{,}5\,\text{J}$ energiaa. Mitä suurempi jännite, sitä enemmän energiaa sama varaus siirtää.
 
 <svg data-fig="jannite" viewBox="0 0 600 350" role="img" aria-label="Paristo vasemmalla ja lamppu oikealla, välissä oranssi energiavirran nuoli paristosta lamppuun. Paristoon on merkitty jännite U yhtä suuri kuin 1,5 volttia, nuoleen energia 1,5 joulea jokaista coulombia kohti. Lamppu säteilee valoa ja lämpöä. Ylhäällä johto kulkee pariston plusnavasta lampun kylkeen, alhaalla johto palaa lampun kannasta pariston pohjaan, ja violetti nuoli näyttää, että sama varaus kiertää takaisin paristoon. Kaavakuva." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy61-jannite-cell" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#c4ccd4"/><stop offset="1" stop-color="#8a96a3"/></linearGradient><linearGradient id="fy61-jannite-glow" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#f1dfb5"/></linearGradient></defs>
@@ -359,7 +351,7 @@ missä $U$ on jännite ($\text{V}$), $E$ siirtynyt energia ($\text{J}$) ja $Q$ v
   <rect x="92" y="70" width="80" height="120" rx="8" fill="url(#fy61-jannite-cell)" stroke="#1f2933" stroke-width="2.5"/>
   <rect x="92" y="70" width="80" height="36" rx="8" fill="#f1dfb5" stroke="#1f2933" stroke-width="2.5"/>
   <rect x="118" y="56" width="28" height="14" rx="3" fill="#8a96a3" stroke="#1f2933" stroke-width="2"/>
-  <foreignObject x="64" y="211.5" width="136" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$U = 1{,}5\,\text{V}$</span></div></foreignObject>
+  <foreignObject x="64" y="201.5" width="136" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$U = 1{,}5\,\text{V}$</span></div></foreignObject>
   <path d="M196,131 L360,131 L360,143 L392,120 L360,97 L360,109 L196,109 Z" fill="#e8590c" stroke-linejoin="round"/>
   <foreignObject x="219" y="59.5" width="150" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$1{,}5\,\text{J}\ \text{/}\ 1\,\text{C}$</div></foreignObject>
   <foreignObject x="246.5" y="151.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#e8590c">$\text{energia}$</div></foreignObject>
@@ -439,8 +431,8 @@ Moni ajattelee, että lamppu kuluttaa sähkövirtaa, joten lampun jälkeen johdo
 
 ## Tiivistelmä
 - Sähkövirta on varauksen liikettä. Metallijohtimessa liikkuvat vapaat elektronit; eristeessä varaukset eivät pääse liikkumaan.
-- Virta kulkee vain suljetussa virtapiirissä. Sama virta kulkee lampun läpi ja palaa paristoon: virta ei kulu. Paristosta kuluu energiaa, ei varausta.
+- Virta kulkee vain suljetussa virtapiirissä. Sama virta kulkee lampun läpi ja palaa paristoon: virta ei kulu.
 - Sähkövirta on $I = \tfrac{Q}{t}$, yksikkö ampeeri, $1\,\text{A} = 1\,\text{C/s}$. Varaus on $Q = Ne$, missä $e = 1{,}602 \cdot 10^{-19}\,\text{C}$.
 - Jännite on siirtynyt energia varausyksikköä kohti, $U = \tfrac{E}{Q}$, yksikkö voltti, $1\,\text{V} = 1\,\text{J/C}$.
 - Sovittu virran suunta on ulkoisessa piirissä plusnavasta miinusnapaan; elektronit liikkuvat vastakkaiseen suuntaan.
-- Kytkentäkaaviossa komponentit piirretään piirrosmerkeillä ja johtimet suorina viivoina. Kytkin piirretään avoimena (vipu irti) tai suljettuna (vipu kosketuksissa).
+- Kytkentäkaaviossa komponentit piirretään piirrosmerkeillä ja johtimet suorina viivoina.

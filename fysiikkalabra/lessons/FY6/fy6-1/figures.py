@@ -167,18 +167,17 @@ def johdin():
     f.tex(482, 46, "I", "start", CURRENT)
     f.tex(40, 46, r"\text{eriste}", "start", MUTED)
     f.tex(40, 290, r"\text{kupari}", "start", MUTED)
-    f.line(64, 276, 64, 230, MUTED, 1.5); f.circle(64, 230, 4, MUTED)
     return f.svg()
 
 
 def symbolit():
     """Ydinajatus, Kytkentäkaavio: the IEC symbols of the chapter, each with its name."""
-    f = Fig("fy61-symbolit", 390, "Kytkentäkaavion piirrosmerkit kahdessa sarakkeessa. Vasemmalla ylhäältä alas: paristo, jossa pitkä ohut "
+    f = Fig("fy61-symbolit", 360, "Kytkentäkaavion piirrosmerkit kahdessa sarakkeessa. Vasemmalla ylhäältä alas: paristo, jossa pitkä ohut "
             "viiva on plusnapa ja lyhyt paksu viiva miinusnapa; lamppu, ympyrä jonka sisällä on risti; vastus, suorakulmio; "
-            "ampeerimittari, ympyrä jonka sisällä on A. Oikealla: avoin kytkin, jonka vipu on nostettu irti, suljettu kytkin, jonka vipu on kosketuksissa, johdin, liitoskohta pisteenä ja volttimittari, ympyrä "
+            "ampeerimittari, ympyrä jonka sisällä on A. Oikealla: avoin kytkin, johdin, liitoskohta pisteenä ja volttimittari, ympyrä "
             "jonka sisällä on V.")
-    f.line(306, 22, 306, 368, RULE, 1.5, "6 6")
-    rows = [62, 140, 218, 296, 344]
+    f.line(306, 22, 306, 338, RULE, 1.5, "6 6")
+    rows = [62, 140, 218, 296]
     c1, c2 = 64, 362
     # column 1
     y = rows[0]; wire(f, [(c1 - 44, y), (c1 + 44, y)]); cell(f, c1, y, vertical=False, plus_first=True)
@@ -188,17 +187,16 @@ def symbolit():
     y = rows[2]; wire(f, [(c1 - 44, y), (c1 + 44, y)]); resistor(f, c1, y); f.tex(120, y, r"\text{vastus}", "start")
     y = rows[3]; wire(f, [(c1 - 44, y), (c1 + 44, y)]); meter(f, c1, y, r"\text{A}"); f.tex(120, y, r"\text{ampeerimittari}", "start")
     # column 2
-    y = rows[0]; wire(f, [(c2 - 44, y), (c2 + 44, y)]); switch(f, c2 - 26, c2 + 26, y); f.tex(416, y, r"\text{avoin kytkin}", "start")
-    y = rows[1]; wire(f, [(c2 - 44, y), (c2 + 44, y)]); switch(f, c2 - 26, c2 + 26, y, closed=True); f.tex(416, y, r"\text{suljettu kytkin}", "start")
-    y = rows[2]; wire(f, [(c2 - 44, y), (c2 + 44, y)]); f.tex(416, y, r"\text{johdin}", "start")
-    y = rows[3]; wire(f, [(c2 - 44, y), (c2 + 44, y)]); wire(f, [(c2, y), (c2, y + 34)]); node(f, c2, y); f.tex(416, y, r"\text{liitoskohta}", "start")
-    y = rows[4]; wire(f, [(c2 - 44, y), (c2 + 44, y)]); meter(f, c2, y, r"\text{V}"); f.tex(416, y, r"\text{volttimittari}", "start")
+    y = rows[0]; wire(f, [(c2 - 44, y), (c2 + 44, y)]); switch(f, c2 - 26, c2 + 26, y); f.tex(416, y, r"\text{kytkin}", "start")
+    y = rows[1]; wire(f, [(c2 - 44, y), (c2 + 44, y)]); f.tex(416, y, r"\text{johdin}", "start")
+    y = rows[2]; wire(f, [(c2 - 44, y), (c2 + 44, y)]); wire(f, [(c2, y), (c2, y + 34)]); node(f, c2, y); f.tex(416, y, r"\text{liitoskohta}", "start")
+    y = rows[3]; wire(f, [(c2 - 44, y), (c2 + 44, y)]); meter(f, c2, y, r"\text{V}"); f.tex(416, y, r"\text{volttimittari}", "start")
     return f.svg()
 
 
 def kaavio():
     """Ydinajatus, Kytkentäkaavio: the circuit of the figure piiri as a diagram."""
-    f = Fig("fy61-kaavio", 320, "Kuvan 2 virtapiiri kytkentäkaaviona. Suorakulmion muotoinen silmukka. Alareunassa vasemmalla kaksi "
+    f = Fig("fy61-kaavio", 320, "Edellisen kuvan virtapiiri kytkentäkaaviona. Suorakulmion muotoinen silmukka. Alareunassa vasemmalla kaksi "
             "paristokennoa peräkkäin, pitkä viiva eli plusnapa oikealla. Alareunassa oikealla suljettu kytkin, "
             "yläreunan keskellä lamppu, ympyrä jossa on risti. Violetti nuoli oikean reunan vieressä osoittaa ylöspäin ja on merkitty I: "
             "virta kulkee plusnavasta kytkimen ja lampun kautta miinusnapaan.")
@@ -254,7 +252,7 @@ def jannite():
     f.rect(92, 70, 80, 120, grad(f, "fy61-jannite-cell", ALUMINIUM, METAL_EDGE, horizontal=True), INK, 2.5, rx=8)
     f.rect(92, 70, 80, 36, SAND_LIGHT, INK, 2.5, rx=8)
     f.rect(118, 56, 28, 14, METAL_EDGE, INK, 2, rx=3)
-    f.tex(132, 226, r"U = 1{,}5\,\text{V}", "middle", w=136, bg=True)
+    f.tex(132, 216, r"U = 1{,}5\,\text{V}", "middle", w=136, bg=True)
     # energy flow
     f.block_arrow(196, 120, 392, 120, HEAT, shaft=22, head=46, headlen=32)
     f.tex(294, 74, r"1{,}5\,\text{J}\ \text{/}\ 1\,\text{C}", "middle", w=150)
@@ -291,7 +289,7 @@ def kaavio_malli():
     L, R, T, B = 110, 480, 80, 270
     wire(f, [(L, T), (R, T), (R, B), (L, B), (L, T)])
     cell(f, L, 140, vertical=True, plus_first=True); cell(f, L, 200, vertical=True, plus_first=True)
-    switch(f, 190, 250, T, closed=True)
+    switch(f, 190, 250, T)
     lamp(f, 360, T)
     meter(f, R, 175, r"\text{A}")
     f.tex(L - 44, 134, "+", "middle", w=22); f.tex(L - 44, 212, "-", "middle", w=22)
@@ -305,7 +303,7 @@ def virhe_kaavio():
     """Etsi virhe: a student's diagram in which both leads of the lamp end at the + terminal, so the loop does not pass
     through the cell (the − terminal is left unconnected)."""
     f = Fig("fy61-virhe", 320, "Opiskelijan piirtämä kytkentäkaavio. Vasemmalla pystyssä paristo, plusnapa ylhäällä. Plusnavasta johto nousee "
-            "ja kulkee yläreunaa oikealle suljetun kytkimen ja lampun kautta, laskeutuu oikeaa reunaa ja palaa alareunaa vasemmalle. Alareunan "
+            "ja kulkee yläreunaa oikealle kytkimen ja lampun kautta, laskeutuu oikeaa reunaa ja palaa alareunaa vasemmalle. Alareunan "
             "johto kääntyy ylös ja liittyy pisteessä yläreunan johtoon pariston plusnavan yläpuolella. Pariston miinusnavasta lähtee "
             "lyhyt johto alas, ja se päättyy tyhjään.")
     L, R, T, B = 120, 490, 70, 260
@@ -315,28 +313,28 @@ def virhe_kaavio():
     cell(f, L, 180, vertical=True, plus_first=True)
     wire(f, [(L, 210), (L, 236)])
     f.circle(L, 238, 4.5, WHITE, INK, 2.5)
-    switch(f, 260, 320, T, closed=True)
+    switch(f, 260, 320, T)
     lamp(f, 410, T)
     f.tex(L - 44, 164, "+", "middle", w=22); f.tex(L - 44, 200, "-", "middle", w=22)
     return f.svg()
 
 
 def _choice(fid, label, kind):
-    f = Fig(fid, 250, label, width=490)           # a tight frame, so that the figure reads larger on a phone
-    L, R, T, B = 44, 454, 48, 196
+    f = Fig(fid, 300, label)
+    L, R, T, B = 80, 520, 70, 240
     if kind == "branch":                       # the switch on a dead-end branch, outside the loop
         wire(f, [(L, T), (R, T), (R, B), (L, B), (L, T)])
-        wire(f, [(264, B), (264, 224), (294, 224)])
-        node(f, 264, B)
-        switch(f, 294, 344, 224)
+        wire(f, [(300, B), (300, 270), (330, 270)])
+        node(f, 300, B)
+        switch(f, 330, 380, 270)
     else:
         wire(f, [(L, T), (R, T), (R, B), (L, B), (L, T)])
-        switch(f, 234, 294, B)
-    cell(f, L, 122, vertical=True, plus_first=True)
+        switch(f, 270, 330, B)
+    cell(f, L, 155, vertical=True, plus_first=True)
     if kind == "resistors":
-        resistor(f, 194, T); resistor(f, 334, T)
+        resistor(f, 230, T); resistor(f, 370, T)
     else:
-        lamp(f, 194, T); lamp(f, 334, T)
+        lamp(f, 230, T); lamp(f, 370, T)
     return f.svg()
 
 

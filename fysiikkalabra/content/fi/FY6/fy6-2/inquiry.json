@@ -16,7 +16,7 @@
       "id": "hook",
       "stage": "herata",
       "type": "hook",
-      "text": "Fysiikan työpöydällä on piiri, jossa paristo, lamppu ja vastus ovat peräkkäin, sekä yleismittari kahden mittajohdon kanssa. Tehtävä kuulostaa helpolta: mittaa lampun virta ja jännite. Mittajohtojen paikka ja valitsimen asento kuitenkin ratkaisevat, mitä näyttö kertoo: väärin kytketty mittari voi muuttaa piirin toimintaa.",
+      "text": "Fysiikan työpöydällä on piiri, jossa paristo, lamppu ja vastus ovat peräkkäin, sekä yleismittari kahden mittajohdon kanssa. Tehtävä kuulostaa helpolta: mittaa lampun virta ja jännite. Mittajohtojen paikka ja valitsimen asento kuitenkin ratkaisevat, mitä näyttö kertoo: väärin kytketty mittari voi sammuttaa lampun tai polttaa oman sulakkeensa.",
       "question": "Miten virtamittari ja jännitemittari kytketään piiriin, ja miksi juuri niin?"
     },
     {
@@ -87,7 +87,7 @@
         "after": "koe-2",
         "min": 2
       },
-      "prompt": "Lampun jännite halutaan mitata, mutta jännitemittari kytketään vahingossa sarjaan: piiri avataan pariston ja lampun välistä ja mittari asetetaan aukkoon. Paristojen jännite on $4{,}5\\,\\text{V}$. Resistanssi kuvaa, kuinka voimakkaasti mittari vastustaa virtaa: jännitemittarin resistanssi on hyvin suuri, esimerkiksi $10\\,\\text{M}\\Omega$, ja virtamittarin hyvin pieni. Mitä tapahtuu?",
+      "prompt": "Lampun jännite halutaan mitata, mutta jännitemittari kytketään vahingossa sarjaan: piiri avataan pariston ja lampun välistä ja mittari asetetaan aukkoon. Paristojen jännite on $4{,}5\\,\\text{V}$. Mitä tapahtuu?",
       "choices": [
         {
           "text": "Lamppu palaa kuten ennenkin, ja mittari näyttää lampun jännitteen.",
@@ -122,7 +122,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 1: virtamittarin paikka",
-      "intro": "Testaa ennuste 1. Valitsin on alueella $200\\,\\text{mA}$ ja paristoja on kolme. Muuta vain mittarin kytkentää: kirjaa lukema ainakin paikoissa *sarjaan ennen lamppua* ja *sarjaan lampun ja vastuksen väliin*. Kokeile lopuksi myös *lampun rinnalle*: mitä lampulle tapahtuu, mitä mittari näyttää ja mitä mittarille tapahtuu?",
+      "intro": "Testaa ennuste 1. Valitsin on alueella $200\\,\\text{mA}$ ja paristoja on kolme. Muuta vain mittarin kytkentää: kirjaa lukema ainakin paikoissa *sarjaan ennen lamppua* ja *sarjaan lampun ja vastuksen väliin*. Kokeile lopuksi myös *lampun rinnalle*: mitä lampulle tapahtuu, ja kenen virtaa mittari silloin näyttää?",
       "initial": {
         "kytkenta": "sarja1",
         "alue": "mA200",
@@ -264,6 +264,7 @@
         "N": "3"
       },
       "locked": [
+        "kytkenta",
         "N"
       ],
       "vary": "alue",
@@ -388,7 +389,7 @@
         },
         {
           "text": "Laskussa ei ole virhettä: alueella $20\\,\\text{V}$ mittari on epätarkka, joten suuri virheraja on oikein.",
-          "feedback": "Tällä lukemalla virheraja on alle prosentti lukemasta ($0{,}050\\,\\text{V} : 6{,}00\\,\\text{V} \\approx 0{,}8\\,\\%$). Laskussa yksi numero on tulkittu yhdeksi voltiksi, vaikka se on alueen resoluutio $0{,}01\\,\\text{V}$."
+          "feedback": "Hyvän mittarin virheraja on alueella $20\\,\\text{V}$ alle prosentti lukemasta. Laskussa yksi numero on tulkittu yhdeksi voltiksi, vaikka se on alueen resoluutio $0{,}01\\,\\text{V}$."
         }
       ]
     },
@@ -416,7 +417,7 @@
           "feedback": "Käytit numeron askeleena $0{,}001\\,\\text{A}$. Alueella $10\\,\\text{A}$ näytössä on kaksi desimaalia, joten yksi numero on $0{,}01\\,\\text{A}$."
         }
       ],
-      "solution": "**Annettu:** lukema $I = 0{,}02\\,\\text{A}$ alueella $10\\,\\text{A}$, resoluutio $r = 0{,}01\\,\\text{A}$, virheraja $\\pm(2{,}0\\,\\% + 3\\ \\text{numeroa})$\n\n**Kysytty:** suhteellinen virheraja $\\tfrac{\\Delta I}{I}$ prosentteina\n\n**Periaate:** Valmistajan virheraja on prosenttiosuus lukemasta lisättynä kolmella viimeisen numeron askeleella. Kun lukema on hyvin pieni alueeseen verrattuna, numeroiden osuus ei pienene lukeman mukana, joten se hallitsee virherajaa.\n\n**Kaava:** $\\Delta I = p \\cdot I + n \\cdot r$, joten\n\n$$\\frac{\\Delta I}{I} = \\frac{p \\cdot I + n \\cdot r}{I}$$\n\n**Muunnokset:** $p = 2{,}0\\,\\% = 0{,}020$; virrat ovat ampeereina.\n\n**Sijoitus:** $\\Delta I = 0{,}020 \\cdot 0{,}02\\,\\text{A} + 3 \\cdot 0{,}01\\,\\text{A} = 0{,}0004\\,\\text{A} + 0{,}03\\,\\text{A} = 0{,}0304\\,\\text{A}$, joten $\\dfrac{\\Delta I}{I} = \\dfrac{0{,}0304\\,\\text{A}}{0{,}02\\,\\text{A}} = 1{,}52 = 152\\,\\%$\n\n**Vastaus:** noin $150\\,\\%$; lukema $0{,}02\\,\\text{A}$ on annettu yhdellä merkitsevällä numerolla, joten tulos on vain suuruusluokka.\n\n**Järkevyys:** Jo kolme askelta, $0{,}03\\,\\text{A}$, on suurempi kuin koko lukema, joten virherajan on oltava yli $100\\,\\%$. Lukema ei siis kerro virrasta juuri mitään. Alueella $200\\,\\text{mA}$ sama virta voisi näkyä esimerkiksi muodossa $18{,}6\\,\\text{mA}$, ja virheraja olisi $0{,}186\\,\\text{mA} + 0{,}2\\,\\text{mA} = 0{,}386\\,\\text{mA}$ eli noin $2\\,\\%$: kun suuruusluokka on selvillä, siirrytään pienimmälle sopivalle alueelle."
+      "solution": "**Annettu:** lukema $I = 0{,}02\\,\\text{A}$ alueella $10\\,\\text{A}$, resoluutio $r = 0{,}01\\,\\text{A}$, virheraja $\\pm(2{,}0\\,\\% + 3\\ \\text{numeroa})$\n\n**Kysytty:** suhteellinen virheraja $\\tfrac{\\Delta I}{I}$ prosentteina\n\n**Periaate:** Valmistajan virheraja on prosenttiosuus lukemasta lisättynä kolmella viimeisen numeron askeleella. Kun lukema on hyvin pieni alueeseen verrattuna, numeroiden osuus ei pienene lukeman mukana, joten se hallitsee virherajaa.\n\n**Kaava:** $\\Delta I = p \\cdot I + n \\cdot r$, joten\n\n$$\\frac{\\Delta I}{I} = \\frac{p \\cdot I + n \\cdot r}{I}$$\n\n**Muunnokset:** $p = 2{,}0\\,\\% = 0{,}020$; virrat ovat ampeereina.\n\n**Sijoitus:** $\\Delta I = 0{,}020 \\cdot 0{,}02\\,\\text{A} + 3 \\cdot 0{,}01\\,\\text{A} = 0{,}0004\\,\\text{A} + 0{,}03\\,\\text{A} = 0{,}0304\\,\\text{A}$, joten $\\dfrac{\\Delta I}{I} = \\dfrac{0{,}0304\\,\\text{A}}{0{,}02\\,\\text{A}} = 1{,}52 = 152\\,\\%$\n\n**Vastaus:** noin $150\\,\\%$; lukema $0{,}02\\,\\text{A}$ on annettu yhdellä merkitsevällä numerolla, joten tulos on vain suuruusluokka.\n\n**Järkevyys:** Jo kolme askelta, $0{,}03\\,\\text{A}$, on suurempi kuin koko lukema, joten virherajan on oltava yli $100\\,\\%$. Lukema ei siis kerro virrasta juuri mitään. Alueella $200\\,\\text{mA}$ sama virta näkyisi muodossa $18{,}6\\,\\text{mA}$, ja virheraja olisi $0{,}186\\,\\text{mA} + 0{,}2\\,\\text{mA} = 0{,}386\\,\\text{mA}$ eli noin $2\\,\\%$: kun suuruusluokka on selvillä, siirrytään pienimmälle sopivalle alueelle."
     },
     {
       "id": "harjoitukset",

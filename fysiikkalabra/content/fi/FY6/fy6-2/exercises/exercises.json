@@ -79,7 +79,7 @@
     {
       "id": "fy6-2-L3-01",
       "level": 3,
-      "text": "Yleismittarin käyttöohjeessa kerrotaan, että alueella $200\\,\\text{mA}$ mittarin yli jää jännite $1{,}0\\,\\text{mV}$ jokaista mittarin läpi kulkevaa milliampeeria kohti. Mittari on sarjassa lampun ja vastuksen kanssa piirissä, jonka paristojen jännite on $4{,}5\\,\\text{V}$, ja se näyttää $97{,}8\\,\\text{mA}$. Kuinka monta prosenttia pariston jännitteestä jää virtamittarin yli? Oletetaan, että paristo on ihanteellinen.",
+      "text": "Yleismittarin käyttöohjeessa kerrotaan, että alueella $200\\,\\text{mA}$ mittarin yli jää jännite $1{,}0\\,\\text{mV}$ jokaista mittarin läpi kulkevaa milliampeeria kohti. Mittari on sarjassa lampun kanssa piirissä, jonka paristojen jännite on $4{,}5\\,\\text{V}$, ja se näyttää $97{,}8\\,\\text{mA}$. Kuinka monta prosenttia pariston jännitteestä jää virtamittarin yli? Oletetaan, että paristo on ihanteellinen.",
       "answer": 2.17,
       "unit": "%",
       "tolerance": 0.03
@@ -95,8 +95,8 @@
     {
       "id": "fy6-2-L3-03",
       "level": 3,
-      "text": "Opiskelija haluaa mitata lampun läpi kulkevan virran. Hän kääntää yleismittarin valitsimen virta-alueelle $200\\,\\text{mA}$ ja painaa mittajohdot lampun kumpaankin napaan, samaan tapaan kuin jännitettä mitattaessa. Piirissä on vain paristo ja lamppu. Lamppu sammuu hetkeksi ja syttyy sitten uudelleen, ja mittarin näyttö jää nollaan. Selitä, mitä piirissä tapahtui ja miksi lamppu sammui vain hetkeksi, ja kerro, miten virta olisi pitänyt mitata.",
-      "answer": "Virtamittari kytkettiin lampun rinnalle. Sen resistanssi on hyvin pieni, joten virta kulki lampun ohi mittarin kautta ja kasvoi suureksi: lamppu sammui, kunnes mittarin sulake paloi. Palanut sulake katkaisi virran mittarin kautta, joten mittari jäi pois piiristä: lamppu syttyi uudelleen ja näyttö jäi nollaan. Virtamittari kytketään sarjaan: piiri avataan ja mittari asetetaan aukkoon.",
+      "text": "Opiskelija haluaa mitata lampun läpi kulkevan virran. Hän kääntää yleismittarin valitsimen virta-alueelle $200\\,\\text{mA}$ ja painaa mittajohdot lampun kumpaankin napaan, samaan tapaan kuin jännitettä mitattaessa. Piirissä on vain paristo ja lamppu. Lamppu sammuu, ja mittarin näyttö jää nollaan. Selitä, mitä piirissä tapahtui ja miksi, ja kerro, miten virta olisi pitänyt mitata.",
+      "answer": "Virtamittari kytkettiin lampun rinnalle. Sen resistanssi on hyvin pieni, joten virta kulki lampun ohi mittarin kautta ja kasvoi suureksi: lamppu sammui ja mittarin sulake paloi, minkä vuoksi näyttö jäi nollaan. Virtamittari kytketään sarjaan: piiri avataan ja mittari asetetaan aukkoon.",
       "unit": "",
       "tolerance": 0.02
     }
