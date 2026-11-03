@@ -45,7 +45,7 @@
     {
       "id": "fy8-2-L2-01",
       "level": 2,
-      "text": "Vetyatomi siirtyy tilasta $n = 4$, jonka energia on $-0{,}85\\,\\text{eV}$, tilaan $n = 2$, jonka energia on $-3{,}40\\,\\text{eV}$. Mikä on syntyvän fotonin aallonpituus nanometreinä, ja minkä värisenä viiva näkyy?",
+      "text": "Vetyatomi siirtyy tilasta $n = 4$, jonka energia on $-0{,}85\\,\\text{eV}$, tilaan $n = 2$, jonka energia on $-3{,}40\\,\\text{eV}$. Mikä on syntyvän fotonin aallonpituus? Anna vastaus nanometreinä.",
       "answer": 486,
       "unit": "nm",
       "tolerance": 0.02

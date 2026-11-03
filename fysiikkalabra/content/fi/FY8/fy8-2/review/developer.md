@@ -1,9 +1,12 @@
 VERDICT: DONE
 
-Round 1, draft. `check_lesson.py fy8-2` all ok. The figure-palette warnings are for the spectral colours, which the FY8 conventions ask for.
+Round 1: every Blocking finding and the listed Polish items.
 
-- `lesson.md`: Ydinajatus (continuous, emission and absorption spectra; energy states; measuring a spectrum; fluorescence), `## Kaava: Energiatasojen erotus ja fotonin energia` with the hydrogen level table as data, the 640 nm neon example in seven stages, the misconception (the photoelectric threshold transferred to absorption), the optional `## Kasvihuonekaasut ja infrapuna` and the summary. Figures: hero, spectra, fluorescence, levels and greenhouse.
-- `inquiry.json`: hook, retrieval from chapter 1, two predictions, the sim, koe-1 (emission to n = 2), koe-2 (cold gas absorbs from n = 1, UV only), a conclusion, an interpret task (identify mercury from its lines, task figure `lamp-spectrum`), the theory, an optional reflection and climate box, the example, Etsi virhe, the transfer task (highlighter fluorescence), the exercises, three checks (the third optional) and the exit ticket.
-- `exercises/`: 5/4/3 exercises with complete solutions. `answers.py` and `lesson-answers.py` compute every number.
-- Sim `assets/sims/fy8/fy8-2/sim.js` (new), with its texts in `lang/fi.json` under `sims.fy8-2`, its 39 assertions in `tests/sims/fy8-2.json` and its spec in `sim-spec.md`.
-- `glossary.json`: emissiospektri, absorptiospektri, viivaspektri, energiatila and fluoresenssi.
+- figures.py: hero prism now apex down in a holder, so the fan bends toward the base with violet on top. spectra: absorption row labelled "(kuuma kaasu)". lamp-spectrum: lines 4 px wide, 405 nm lightened. Regenerated.
+- lesson.md: example has hc on its own first. CO₂/H₂O gaps are now 0,08–0,5 eV. The Energiatilat sentence is reworded, and a sentence says why the Sun's 656 nm line is dark. Kaava constants are grouped; the eV sentence no longer ends in a formula. Faint 7 → 2 line at 397 nm.
+- inquiry.json: ennuste-1 defines energiatila/perustila; giveaway dropped. ennuste-2 feedback fixed. howto says n_a = 1 is cold gas, larger is hot. tunnista: rule allows mixtures, feedback leads with 656/546, Finnish case fixed. siirto is now 405 → 530 nm (0,722 eV). tarkistus-2 is now Hg 546 nm (2,27 eV).
+- sim.js / lang: cell label is cold or hot by n_a, mode is "absorptio", and n_y ≤ n_a is disabled. 3 new tests.
+- exit-ticket Q2: fluorescence direction.
+- answers.py comment 486,27 nm; L2-01 no longer asks colour.
+- lesson-answers.py: new numbers first.
+- Greenhouse figure stays in the optional box.

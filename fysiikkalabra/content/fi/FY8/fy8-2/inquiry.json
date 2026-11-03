@@ -49,7 +49,7 @@
       "stage": "ennusta",
       "type": "choice",
       "title": "Ennuste 1: viivat tasolle 2",
-      "prompt": "Kuumassa vetykaasussa atomit siirtyvät tasolle $n = 2$ ylemmiltä tasoilta $n = 3$, $4$, $5$ ja $6$. Ylemmät tasot ovat yhä lähempänä toisiaan. Miten syntyvien fotonien aallonpituudet muuttuvat, kun lähtötaso on yhä ylempänä?",
+      "prompt": "Atomin elektroniverhon energia voi olla vain tietyillä arvoilla. Näitä tiloja sanotaan energiatiloiksi eli energiatasoiksi, ja alin niistä on perustila. Kuumassa vetykaasussa atomit siirtyvät tasolle $n = 2$ ylemmiltä tasoilta $n = 3$, $4$, $5$ ja $6$, ja jokainen siirtymä lähettää fotonin. Miten syntyvien fotonien aallonpituudet muuttuvat, kun lähtötaso on yhä ylempänä?",
       "justify": true,
       "reveal": {
         "after": "koe-1",
@@ -102,7 +102,7 @@
         },
         {
           "text": "Kaikkialla spektrissä, koska kylmä kaasu absorboi enemmän kuin kuuma.",
-          "feedback": "Mallin arvot kumoavat tämän: kylmä kaasu absorboi vain perustilasta lähtevien siirtymien aallonpituudet, jotka ovat kaikki ultraviolettia ($94$–$122\\,\\text{nm}$). Absorptio ei riipu siitä, kuinka kylmä kaasu on, vaan siitä, mitkä energiaerot sen atomien tiloilla on."
+          "feedback": "Mallin arvot kumoavat tämän: kylmä kaasu absorboi vain perustilasta lähtevien siirtymien aallonpituudet, jotka ovat kaikki ultraviolettia ($94$–$122\\,\\text{nm}$). Kylmyys ei lisää absorptiota: kaasu absorboi vain siirtymiä, jotka lähtevät tiloista, joissa sen atomeja on, ja kylmässä vedyssä atomit ovat perustilassa."
         }
       ]
     },
@@ -111,7 +111,7 @@
       "stage": "tutki",
       "type": "sim",
       "text": "Valitse vetyatomin kaksi energiatasoa ja tila. Seuraa, millainen fotoni syntyy tai absorboituu ja mihin sen viiva tulee spektrissä.",
-      "howto": "Valitse *Tila*: *emissio* tarkoittaa kuumaa vetykaasua, jossa atomi siirtyy ylemmältä tasolta alemmalle ja lähettää fotonin spektroskooppiin; *absorptio* tarkoittaa lampun valkoista valoa kylmän vetykaasun läpi, jolloin atomi absorboi fotonin ja siirtyy alemmalta tasolta ylemmälle. Valitse *Ylempi taso* $n_\\text{y}$ ja *Alempi taso* $n_\\text{a}$. Energiatasokaaviossa nuoli näyttää siirtymän ja sininen piste elektroniverhon tilan. Alla olevaan spektriin jää viiva jokaisesta siirtymästä, jota kokeilet samassa tilassa: emissiossa kirkas viiva tummalla pohjalla, absorptiossa tumma viiva jatkuvassa spektrissä. Kolmio viivan alla merkitsee valittua siirtymää. Ultravioletti- ja infrapunaviivat on piirretty harmaina, koska silmä ei näe niitä. *Tyhjennä spektri* poistaa viivat. *Nopeus* muuttaa vain animaation tahtia.",
+      "howto": "Valitse *Tila*: *emissio* tarkoittaa kuumaa vetykaasua, jossa atomi siirtyy ylemmältä tasolta alemmalle ja lähettää fotonin spektroskooppiin; *absorptio* tarkoittaa lampun valkoista valoa vetykaasun läpi, jolloin atomi absorboi fotonin ja siirtyy alemmalta tasolta ylemmälle. Alempi taso $n_\\text{a} = 1$ vastaa kylmää kaasua; suurempi $n_\\text{a}$ vastaa kuumaa kaasua, kuten tähden kaasukehää. Valitse *Ylempi taso* $n_\\text{y}$ ja *Alempi taso* $n_\\text{a}$. Energiatasokaaviossa nuoli näyttää siirtymän ja sininen piste elektroniverhon tilan. Alla olevaan spektriin jää viiva jokaisesta siirtymästä, jota kokeilet samassa tilassa: emissiossa kirkas viiva tummalla pohjalla, absorptiossa tumma viiva jatkuvassa spektrissä. Kolmio viivan alla merkitsee valittua siirtymää. Ultravioletti- ja infrapunaviivat on piirretty harmaina, koska silmä ei näe niitä. *Tyhjennä spektri* poistaa viivat. *Nopeus* muuttaa vain animaation tahtia.",
       "model": "Vetyatomin energiatasot ovat $E_n = -\\tfrac{13{,}6\\,\\text{eV}}{n^2}$, missä $n = 1, 2, \\ldots, 6$; ne ovat mitattuja arvoja, ja niiden alkuperä käsitellään luvussa *Vetyatomin energiatasot ja Bohrin malli*. Malli näyttää yhden atomin yhden siirtymän kerrallaan; todellisessa kaasussa miljardit atomit tekevät kaikkia mahdollisia siirtymiä yhtä aikaa, ja viivojen kirkkaus riippuu siitä, kuinka usein kukin siirtymä tapahtuu. Kirkkautta malli ei kuvaa. Kylmässä kaasussa atomit ovat käytännössä kaikki perustilassa $n = 1$; mallissa voit silti valita absorptiolle muunkin alemman tason, mikä vastaa kuumaa kaasua, kuten tähden kaasukehää. Aallonpituudet ovat mallin laskemia arvoja.",
       "calc": "Fotonin energia on tasojen erotus $\\Delta E = E_\\text{y} - E_\\text{a}$. Aallonpituus on $\\lambda = \\tfrac{hc}{\\Delta E}$, missä $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^8\\,\\text{m/s}$ ja $\\Delta E$ muutetaan jouleiksi kertoimella $1{,}602 \\cdot 10^{-19}\\,\\tfrac{\\text{J}}{\\text{eV}}$. Spektrin asteikko on $80$–$900\\,\\text{nm}$; näkyvä valo on katkoviivojen välissä $380$–$750\\,\\text{nm}$. Infrapunaviiva, joka on yli $900\\,\\text{nm}$, näkyy nuolena asteikon oikeassa reunassa."
     },
@@ -225,15 +225,15 @@
           {
             "text": "Elohopeaa, koska kaikki spektrin viivat ovat elohopean aallonpituuksilla.",
             "correct": true,
-            "feedback": "Oikein. Viivat ovat noin $405\\,\\text{nm}$, $436\\,\\text{nm}$, $546\\,\\text{nm}$ ja kaksi lähekkäistä $577\\,\\text{nm}$:n ja $579\\,\\text{nm}$:n kohdalla, täsmälleen elohopean viivat. Alkuaine tunnistetaan siitä, että *kaikki* sen viivat löytyvät spektristä ja spektrissä ei ole muita viivoja. Vihreä $546\\,\\text{nm}$:n viiva on elohopean tuntomerkki, jota vedyllä ei ole."
+            "feedback": "Oikein. Vihreä $546\\,\\text{nm}$:n viiva on elohopean tuntomerkki, ja keltainen viiva noin $577$–$579\\,\\text{nm}$:n kohdalla on elohopean kaksi lähekkäistä viivaa. Violetti ja sininen viiva ovat elohopean $405\\,\\text{nm}$ ja $436\\,\\text{nm}$. Alkuaine on lampussa, jos *kaikki* sen voimakkaat viivat löytyvät spektristä; jos jokin viiva jää selittämättä, lampussa on lisäksi jokin muu alkuaine. Tässä elohopea selittää kaikki viivat."
           },
           {
             "text": "Vetyä, koska spektrissä on violetti viiva noin $410\\,\\text{nm}$:n kohdalla ja sininen noin $434\\,\\text{nm}$:n kohdalla.",
-            "feedback": "Kaksi viivaa on lähellä vedyn viivoja, mutta ei täsmälleen niiden kohdalla ($405$ ja $436\\,\\text{nm}$). Lisäksi vedyn voimakas punainen viiva $656\\,\\text{nm}$ puuttuu, ja spektrissä on vihreä viiva $546\\,\\text{nm}$, jota vedyllä ei ole. Alkuaineen kaikkien viivojen on täsmättävä."
+            "feedback": "Vedyn voimakas punainen viiva $656\\,\\text{nm}$ puuttuu, ja spektrissä on vihreä viiva $546\\,\\text{nm}$, jota vedyllä ei ole. Violetti ja sininen viiva ovat lähellä vedyn viivoja, mutta tarkalla asteikolla ne ovat elohopean $405$ ja $436\\,\\text{nm}$. Alkuaineen kaikkien viivojen on täsmättävä."
           },
           {
-            "text": "Natriumia, koska spektrissä on keltaisia viivoja lähellä $589\\,\\text{nm}$:ä.",
-            "feedback": "Keltaiset viivat ovat noin $577$ ja $579\\,\\text{nm}$:n kohdalla, eivät natriumin $589\\,\\text{nm}$:n kohdalla. Natriumin spektrissä ei myöskään ole violetteja, sinisiä tai vihreitä viivoja, joita tässä spektrissä on."
+            "text": "Natriumia, koska spektrissä on keltaisia viivoja $589\\,\\text{nm}$:n lähellä.",
+            "feedback": "Spektrissä on violetti, sininen ja vihreä viiva, joita natriumilla ei ole. Lisäksi keltainen viiva on noin $577$–$579\\,\\text{nm}$:n kohdalla, ei natriumin $589\\,\\text{nm}$:n kohdalla."
           },
           {
             "text": "Kaikkia neljää, koska jokaisen alkuaineen jokin viiva on lähellä jotakin spektrin viivaa.",
@@ -312,34 +312,34 @@
       "stage": "sovella",
       "type": "numeric",
       "title": "Sovella uuteen tilanteeseen",
-      "prompt": "Korostuskynän muste absorboi UV-lampun valoa, jonka aallonpituus on $365\\,\\text{nm}$, ja lähettää fluoresenssina vihreää valoa, jonka aallonpituus on $520\\,\\text{nm}$. Oletetaan, että jokainen absorboitu fotoni tuottaa yhden lähetetyn fotonin. Kuinka paljon energiaa jää musteeseen lämmöksi jokaista absorboitua fotonia kohti? Vastaa elektronivoltteina.",
-      "answer": 1.01,
+      "prompt": "Fluoresoivaa väriainetta valaistaan violetilla taskulampulla, jonka valon aallonpituus on $405\\,\\text{nm}$. Väriaine lähettää fluoresenssina vihreää valoa, jonka aallonpituus on $530\\,\\text{nm}$. Oletetaan, että jokainen absorboitu fotoni tuottaa yhden lähetetyn fotonin. Kuinka paljon energiaa jää väriaineeseen lämmöksi jokaista absorboitua fotonia kohti? Vastaa elektronivoltteina.",
+      "answer": 0.722,
       "unit": "eV",
       "tolerance": 0.02,
       "hints": [
         "Energia säilyy: absorboidun fotonin energia jakautuu lähetetyn fotonin energiaan ja lämpöön. Laske ensin kummankin fotonin energia.",
         "Fotonin energia on $E = \\tfrac{hc}{\\lambda}$. Muuta aallonpituudet metreiksi ja tulos elektronivolteiksi sijoittamalla $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$.",
-        "$E_\\text{UV} = 3{,}397\\,\\text{eV}$ ja $E_\\text{vihreä} = 2{,}385\\,\\text{eV}$. Lämmöksi jää niiden erotus."
+        "Violetin fotonin energia on $3{,}062\\,\\text{eV}$ ja vihreän $2{,}340\\,\\text{eV}$. Lämmöksi jää niiden erotus."
       ],
       "mistakes": [
         {
-          "value": 8.0,
-          "feedback": "Vähensit ensin aallonpituudet ($520\\,\\text{nm} - 365\\,\\text{nm} = 155\\,\\text{nm}$) ja laskit sen jälkeen energian. Aallonpituuksien erotus ei ole minkään fotonin aallonpituus: laske kummankin fotonin energia erikseen ja vähennä energiat."
+          "value": 9.92,
+          "feedback": "Vähensit ensin aallonpituudet ($530\\,\\text{nm} - 405\\,\\text{nm} = 125\\,\\text{nm}$) ja laskit sen jälkeen energian. Aallonpituuksien erotus ei ole minkään fotonin aallonpituus: laske kummankin fotonin energia erikseen ja vähennä energiat."
         },
         {
-          "value": 3.4,
-          "feedback": "Tämä on absorboidun UV-fotonin koko energia. Siitä osa lähtee vihreänä fotonina; lämmöksi jää vain erotus $E_\\text{UV} - E_\\text{vihreä}$."
+          "value": 3.06,
+          "feedback": "Tämä on absorboidun violetin fotonin koko energia. Siitä osa lähtee vihreänä fotonina; lämmöksi jää vain erotus $E_1 - E_2$."
         },
         {
-          "value": 2.38,
+          "value": 2.34,
           "feedback": "Tämä on lähetetyn vihreän fotonin energia. Kysytty lämpö on absorboidun ja lähetetyn fotonin energioiden erotus."
         },
         {
-          "value": -1.01,
-          "feedback": "Laskit erotuksen väärin päin. Absorboidun UV-fotonin energia on suurempi, joten lämmöksi jäävä energia $E_\\text{UV} - E_\\text{vihreä}$ on positiivinen."
+          "value": -0.722,
+          "feedback": "Laskit erotuksen väärin päin. Absorboidun violetin fotonin energia on suurempi, joten lämmöksi jäävä energia $E_1 - E_2$ on positiivinen."
         }
       ],
-      "solution": "**Annettu:** absorboidun fotonin aallonpituus $\\lambda_\\text{UV} = 365\\,\\text{nm}$, lähetetyn fotonin aallonpituus $\\lambda_\\text{v} = 520\\,\\text{nm}$, $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$\n\n**Kysytty:** lämmöksi jäävä energia $E_\\text{lämpö}$ yhtä fotonia kohti elektronivoltteina\n\n**Periaate:** Fluoresenssissa molekyyli absorboi UV-fotonin ja virittyy, luovuttaa osan energiasta lämpönä ja palaa perustilaan lähettäen vihreän fotonin. Energia säilyy, joten absorboidun fotonin energia on lähetetyn fotonin energian ja lämmön summa. Kummankin fotonin energia saadaan aallonpituudesta.\n\n**Kaava:** $E_\\text{UV} = E_\\text{v} + E_\\text{lämpö}$ ja $E = \\dfrac{hc}{\\lambda}$, joten $E_\\text{lämpö} = \\dfrac{hc}{\\lambda_\\text{UV}} - \\dfrac{hc}{\\lambda_\\text{v}}$\n\n**Muunnokset:** $365\\,\\text{nm} = 365 \\cdot 10^{-9}\\,\\text{m}$ ja $520\\,\\text{nm} = 520 \\cdot 10^{-9}\\,\\text{m}$. Joulet muutetaan elektronivolteiksi jakamalla luvulla $1{,}602 \\cdot 10^{-19}\\,\\tfrac{\\text{J}}{\\text{eV}}$.\n\n**Sijoitus:** $hc = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s} \\cdot 2{,}998 \\cdot 10^{8}\\,\\text{m/s} = 1{,}9865 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m}$ ja $E_\\text{UV} = \\dfrac{1{,}9865 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m}}{365 \\cdot 10^{-9}\\,\\text{m}} = 5{,}4424 \\cdot 10^{-19}\\,\\text{J} = 3{,}3972\\,\\text{eV}$, $E_\\text{v} = \\dfrac{1{,}9865 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m}}{520 \\cdot 10^{-9}\\,\\text{m}} = 3{,}8201 \\cdot 10^{-19}\\,\\text{J} = 2{,}3846\\,\\text{eV}$ ja $E_\\text{lämpö} = 3{,}3972\\,\\text{eV} - 2{,}3846\\,\\text{eV} = 1{,}0126\\,\\text{eV}$\n\n**Vastaus:** $1{,}01\\,\\text{eV}$, kolme merkitsevää numeroa kuten aallonpituuksissa $365\\,\\text{nm}$ ja $520\\,\\text{nm}$.\n\n**Järkevyys:** Arviolla $hc \\approx 1240\\,\\text{eV}\\,\\text{nm}$ saadaan $\\tfrac{1240}{365}\\,\\text{eV} \\approx 3{,}4\\,\\text{eV}$ ja $\\tfrac{1240}{520}\\,\\text{eV} \\approx 2{,}4\\,\\text{eV}$, erotus noin $1{,}0\\,\\text{eV}$. Tulos on positiivinen, kuten pitää: lähetetyn fotonin aallonpituus on pidempi, joten sen energia on pienempi. Noin kolmasosa UV-fotonin energiasta lämmittää mustetta."
+      "solution": "**Annettu:** absorboidun fotonin aallonpituus $\\lambda_1 = 405\\,\\text{nm}$, lähetetyn fotonin aallonpituus $\\lambda_2 = 530\\,\\text{nm}$, $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$\n\n**Kysytty:** lämmöksi jäävä energia $E_\\text{lämpö}$ yhtä fotonia kohti elektronivoltteina\n\n**Periaate:** Fluoresenssissa molekyyli absorboi violetin fotonin ja virittyy, luovuttaa osan energiasta lämpönä ja palaa perustilaan lähettäen vihreän fotonin. Energia säilyy, joten absorboidun fotonin energia on lähetetyn fotonin energian ja lämmön summa. Kummankin fotonin energia saadaan aallonpituudesta.\n\n**Kaava:** $E_1 = E_2 + E_\\text{lämpö}$ ja $E = \\dfrac{hc}{\\lambda}$, joten $E_\\text{lämpö} = \\dfrac{hc}{\\lambda_1} - \\dfrac{hc}{\\lambda_2}$\n\n**Muunnokset:** $405\\,\\text{nm} = 405 \\cdot 10^{-9}\\,\\text{m}$ ja $530\\,\\text{nm} = 530 \\cdot 10^{-9}\\,\\text{m}$. Joulet muutetaan elektronivolteiksi jakamalla luvulla $1{,}602 \\cdot 10^{-19}\\,\\tfrac{\\text{J}}{\\text{eV}}$.\n\n**Sijoitus:** $hc = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s} \\cdot 2{,}998 \\cdot 10^{8}\\,\\text{m/s} = 1{,}9865 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m}$ ja $E_1 = \\dfrac{1{,}9865 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m}}{405 \\cdot 10^{-9}\\,\\text{m}} = 4{,}9049 \\cdot 10^{-19}\\,\\text{J} = 3{,}0617\\,\\text{eV}$, $E_2 = \\dfrac{1{,}9865 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m}}{530 \\cdot 10^{-9}\\,\\text{m}} = 3{,}7481 \\cdot 10^{-19}\\,\\text{J} = 2{,}3396\\,\\text{eV}$ ja $E_\\text{lämpö} = 3{,}0617\\,\\text{eV} - 2{,}3396\\,\\text{eV} = 0{,}7221\\,\\text{eV}$\n\n**Vastaus:** $0{,}722\\,\\text{eV}$, kolme merkitsevää numeroa kuten aallonpituuksissa $405\\,\\text{nm}$ ja $530\\,\\text{nm}$.\n\n**Järkevyys:** Arviolla $hc \\approx 1240\\,\\text{eV}\\,\\text{nm}$ saadaan $\\tfrac{1240}{405}\\,\\text{eV} \\approx 3{,}1\\,\\text{eV}$ ja $\\tfrac{1240}{530}\\,\\text{eV} \\approx 2{,}3\\,\\text{eV}$, erotus noin $0{,}7\\,\\text{eV}$. Tulos on positiivinen, kuten pitää: lähetetyn fotonin aallonpituus on pidempi, joten sen energia on pienempi. Noin neljäsosa violetin fotonin energiasta lämmittää väriainetta."
     },
     {
       "id": "harjoitukset",
@@ -378,26 +378,26 @@
       "stage": "tarkista",
       "type": "numeric",
       "title": "2. Laske energiaero",
-      "prompt": "Vanhoissa katuvaloissa käytettiin natriumlamppuja, joiden keltainen valo on lähes kokonaan aallonpituudella $589\\,\\text{nm}$. Kuinka suuri on niiden natriumatomin energiatilojen erotus, joiden välinen siirtymä tuottaa tämän valon? Vastaa elektronivoltteina.",
-      "answer": 2.11,
+      "prompt": "Loisteputkessa on elohopeahöyryä, jonka spektrissä on kirkas vihreä viiva aallonpituudella $546\\,\\text{nm}$. Kuinka suuri on niiden elohopea-atomin energiatilojen erotus, joiden välinen siirtymä tuottaa tämän valon? Vastaa elektronivoltteina.",
+      "answer": 2.27,
       "unit": "eV",
       "tolerance": 0.02,
       "hints": [
         "Fotonin energia on tilojen energioiden erotus.",
         "$\\Delta E = \\tfrac{hc}{\\lambda}$, kun $\\lambda$ on metreinä.",
-        "Tulos jouleina on $3{,}373 \\cdot 10^{-19}\\,\\text{J}$; muuta se elektronivolteiksi."
+        "Tulos jouleina on $3{,}638 \\cdot 10^{-19}\\,\\text{J}$; muuta se elektronivolteiksi."
       ],
       "mistakes": [
         {
-          "value": 3.37,
+          "value": 3.64,
           "feedback": "Tämä on energia yksikössä $10^{-19}\\,\\text{J}$. Muuta se elektronivolteiksi: $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$."
         },
         {
-          "value": 0.475,
+          "value": 0.44,
           "feedback": "Laskit $\\tfrac{\\lambda}{hc}$ tai jaoit väärin päin. Energia on $\\Delta E = \\tfrac{hc}{\\lambda}$: lyhyt aallonpituus antaa suuren energian."
         }
       ],
-      "solution": "**Annettu:** natriumin viivan aallonpituus $\\lambda = 589\\,\\text{nm}$, $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$\n\n**Kysytty:** energiatilojen erotus $\\Delta E = E_\\text{y} - E_\\text{a}$ elektronivoltteina\n\n**Periaate:** Natriumatomi lähettää fotonin siirtyessään ylemmästä energiatilasta alempaan. Energia säilyy, joten fotonin energia on tilojen erotus, ja fotonin energia saadaan aallonpituudesta.\n\n**Kaava:** $\\Delta E = hf$ ja $f = \\tfrac{c}{\\lambda}$, joten $\\Delta E = \\dfrac{hc}{\\lambda}$\n\n**Muunnokset:** $589\\,\\text{nm} = 589 \\cdot 10^{-9}\\,\\text{m}$. Tulos jouleina muutetaan elektronivolteiksi jakamalla luvulla $1{,}602 \\cdot 10^{-19}\\,\\tfrac{\\text{J}}{\\text{eV}}$.\n\n**Sijoitus:** $hc = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s} \\cdot 2{,}998 \\cdot 10^{8}\\,\\text{m/s} = 1{,}9865 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m}$ ja $\\Delta E = \\dfrac{1{,}9865 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m}}{589 \\cdot 10^{-9}\\,\\text{m}} = 3{,}3726 \\cdot 10^{-19}\\,\\text{J} = \\dfrac{3{,}3726 \\cdot 10^{-19}}{1{,}602 \\cdot 10^{-19}}\\,\\text{eV} = 2{,}1053\\,\\text{eV}$\n\n**Vastaus:** $2{,}11\\,\\text{eV}$, kolme merkitsevää numeroa kuten aallonpituudessa $589\\,\\text{nm}$.\n\n**Järkevyys:** Arviolla $hc \\approx 1240\\,\\text{eV}\\,\\text{nm}$ saadaan $\\tfrac{1240}{589}\\,\\text{eV} \\approx 2{,}1\\,\\text{eV}$. Keltainen valo on näkyvän alueen keskellä, ja $2{,}1\\,\\text{eV}$ on punaisen $1{,}9\\,\\text{eV}$:n ja violetin $3{,}0\\,\\text{eV}$:n välissä."
+      "solution": "**Annettu:** elohopean viivan aallonpituus $\\lambda = 546\\,\\text{nm}$, $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$\n\n**Kysytty:** energiatilojen erotus $\\Delta E = E_\\text{y} - E_\\text{a}$ elektronivoltteina\n\n**Periaate:** Elohopea-atomi lähettää fotonin siirtyessään ylemmästä energiatilasta alempaan. Energia säilyy, joten fotonin energia on tilojen erotus, ja fotonin energia saadaan aallonpituudesta.\n\n**Kaava:** $\\Delta E = hf$ ja $f = \\tfrac{c}{\\lambda}$, joten $\\Delta E = \\dfrac{hc}{\\lambda}$\n\n**Muunnokset:** $546\\,\\text{nm} = 546 \\cdot 10^{-9}\\,\\text{m}$. Tulos jouleina muutetaan elektronivolteiksi jakamalla luvulla $1{,}602 \\cdot 10^{-19}\\,\\tfrac{\\text{J}}{\\text{eV}}$.\n\n**Sijoitus:** $hc = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s} \\cdot 2{,}998 \\cdot 10^{8}\\,\\text{m/s} = 1{,}9865 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m}$ ja $\\Delta E = \\dfrac{1{,}9865 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m}}{546 \\cdot 10^{-9}\\,\\text{m}} = 3{,}6383 \\cdot 10^{-19}\\,\\text{J} = \\dfrac{3{,}6383 \\cdot 10^{-19}}{1{,}602 \\cdot 10^{-19}}\\,\\text{eV} = 2{,}2711\\,\\text{eV}$\n\n**Vastaus:** $2{,}27\\,\\text{eV}$, kolme merkitsevää numeroa kuten aallonpituudessa $546\\,\\text{nm}$.\n\n**Järkevyys:** Arviolla $hc \\approx 1240\\,\\text{eV}\\,\\text{nm}$ saadaan $\\tfrac{1240}{546}\\,\\text{eV} \\approx 2{,}3\\,\\text{eV}$. Vihreä valo on näkyvän alueen keskellä, ja $2{,}3\\,\\text{eV}$ on punaisen $1{,}9\\,\\text{eV}$:n ja violetin $3{,}0\\,\\text{eV}$:n välissä."
     },
     {
       "id": "tarkistus-3",

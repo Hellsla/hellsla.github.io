@@ -45,7 +45,7 @@ def wavy(f, x1, y1, x2, y2, color, w=3, waves=3.5, amp=7, head=14):
 
 
 def spectra():
-    f = Fig("fy82-spectra", 372, "Kaavakuva kolmesta vedyn spektristä samalla aallonpituusasteikolla 380–720 nanometriä. Ylimpänä "
+    f = Fig("fy82-spectra", 396, "Kaavakuva kolmesta vedyn spektristä samalla aallonpituusasteikolla 380–720 nanometriä. Ylimpänä "
             "hehkulampun jatkuva spektri: kaikki värit violetista punaiseen yhtenäisenä kaistana. Keskellä kuuman, "
             "ohuen vetykaasun emissiospektri: mustalla pohjalla neljä kirkasta viivaa aallonpituuksilla 410, 434, 486 ja "
             "656 nanometriä. Alimpana absorptiospektri, kun jatkuva valo kulkee kuuman vetykaasun läpi, kuten tähden kaasukehässä: jatkuvassa "
@@ -56,7 +56,7 @@ def spectra():
     X = lambda l: x0 + (l - lo) / (hi - lo) * (x1 - x0)
     tops = (24, 118, 212)
     for y, title, kind in zip(tops, (r"\text{jatkuva spektri}", r"\text{emissiospektri}", r"\text{absorptiospektri}"), ("cont", "em", "abs")):
-        f.tex(116, y + 62, title, "middle", w=210)
+        f.tex(116, y + (56 if kind == "abs" else 62), title, "middle", w=210)
         if kind == "em":
             f.rect(x0, y + 4, x1 - x0, 44, INK)
             for l in BALMER: f.rect(X(l) - 2.5, y + 4, 5, 44, wl_hex(l))
@@ -77,9 +77,10 @@ def spectra():
     f.circle(cx - 46, 228, 14, HEAT_LIGHT, INK, 2.5)   # bulb behind a cell of gas
     f.rect(cx - 22, 210, 72, 36, GLASS, INK, 2, 8)
     for dx, dy in ((-10, 220), (6, 236), (20, 222), (34, 238), (-4, 232), (28, 228)):
-        f.circle(cx + dx, dy, 3, COLD)
+        f.circle(cx + dx, dy, 3, HOT)                # hot gas, as in a star's atmosphere
+    f.tex(cx, 298, r"\text{(kuuma kaasu)}", "middle", MUTED, w=210)
     # wavelength axis
-    yA = 284
+    yA = 308
     f.line(x0, yA, x1, yA, INK, 2)
     for l in range(400, 701, 20):
         f.line(X(l), yA, X(l), yA + (8 if l % 100 == 0 else 5), INK, 2 if l % 100 == 0 else 1.5)
@@ -192,7 +193,7 @@ def lamp_spectrum():
     x0, x1, lo, hi = 40, 560, 380, 720
     X = lambda l: x0 + (l - lo) / (hi - lo) * (x1 - x0)
     f.rect(x0, 30, x1 - x0, 70, INK)
-    for l in MERCURY: f.rect(X(l) - 1.5, 30, 3, 70, wl_hex(l))
+    for l in MERCURY: f.rect(X(l) - 2, 30, 4, 70, wl_hex(l) if l >= 420 else "#a46bff")   # 405 nm lightened to read on black
     f.rect(x0, 30, x1 - x0, 70, stroke=INK, sw=2)
     yA = 110
     f.line(x0, yA, x1, yA, INK, 2)
@@ -225,14 +226,16 @@ def hero():
     f.rect(500, 400, 200, 22, SAND_DARK, INK, 3, 4)
     f.rect(520, 422, 14, 48, SAND, INK, 3); f.rect(666, 422, 14, 48, SAND, INK, 3)
     # the fan of colours from the prism to the screen
-    f.path("M624,330 L636,346 L960,420 L960,170 Z", "url(#fy82h-rb)", extra='fill-opacity="0.85"')
-    f.path("M540,400 L660,400 L600,276 Z", GLASS, INK, 4, extra='fill-opacity="0.85"')
-    f.path("M570,388 L600,326", stroke=WHITE, w=4, extra='stroke-linecap="round" stroke-opacity="0.9"')
+    # apex down: glass bends light toward the base (up here), violet the most, so violet lands on top
+    f.path("M633,330 L625,346 L960,360 L960,170 Z", "url(#fy82h-rb)", extra='fill-opacity="0.85"')
+    f.path("M540,280 L660,280 L600,392 Z", GLASS, INK, 4, extra='fill-opacity="0.85"')
+    f.path("M556,292 L592,360", stroke=WHITE, w=4, extra='stroke-linecap="round" stroke-opacity="0.9"')
+    f.path("M578,400 L590,376 L610,376 L622,400 Z", SAND_DARK, INK, 3)   # the holder the apex rests in
     # the screen with the spectrum and its dark lines
     f.rect(940, 120, 210, 360, WHITE, INK, 4, 6)
-    f.rect(964, 170, 162, 250, "url(#fy82h-rb)")
-    for y in (204, 236, 292, 318, 372, 398): f.line(964, y, 1126, y, INK, 3)
-    f.rect(964, 170, 162, 250, stroke=INK, sw=2)
+    f.rect(964, 170, 162, 190, "url(#fy82h-rb)")
+    for y in (196, 220, 263, 283, 324, 344): f.line(964, y, 1126, y, INK, 3)
+    f.rect(964, 170, 162, 190, stroke=INK, sw=2)
     f.rect(1020, 480, 50, 10, IRON, INK, 3, 2)
     f.line(1045, 470, 1045, 480, INK, 3)
     return f.svg()

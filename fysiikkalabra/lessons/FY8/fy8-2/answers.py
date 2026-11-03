@@ -13,7 +13,7 @@ a["fy8-2-L1-03"] = c / 656e-9 / 1e14               # hydrogen red line 656 nm: f
 a["fy8-2-L1-04"] = -1.51 - (-3.40)                 # hydrogen levels E3 = -1,51 eV, E2 = -3,40 eV: photon 1,89 eV
 a["fy8-2-L1-05"] = h * c / 3.03e-19 * 1e9          # levels 3,03e-19 J apart: λ = hc/ΔE = 6,556e-7 m -> 656 nm
 # Level 2: two steps, a conversion or a rearrangement
-a["fy8-2-L2-01"] = h * c / ((-0.85 - (-3.40)) * e) * 1e9   # E4 = -0,85 eV -> E2 = -3,40 eV: ΔE = 2,55 eV, λ = 486,2 nm -> 486 nm
+a["fy8-2-L2-01"] = h * c / ((-0.85 - (-3.40)) * e) * 1e9   # E4 = -0,85 eV -> E2 = -3,40 eV: ΔE = 2,55 eV, λ = 486,27 nm -> 486 nm
 a["fy8-2-L2-02"] = h * c / ((1.85 - 0) * e) * 1e9  # model atom 0; 1,85; 4,00 eV: smallest ΔE = min(1,85; 2,15; 4,00) = 1,85 eV -> 670 nm
 a["fy8-2-L2-03"] = h * c / ((-3.40 - (-13.6)) * e) * 1e9   # cold hydrogen n = 1 -> 2: ΔE = 10,2 eV, λ = 121,6 nm -> 122 nm (UV)
 a["fy8-2-L2-04"] = h * 5.09e14 / e                 # sodium line f = 5,09e14 Hz: ΔE = hf = 3,3726e-19 J = 2,105 eV -> 2,11 eV

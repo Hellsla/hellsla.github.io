@@ -34,18 +34,19 @@
   <rect x="500" y="400" width="200" height="22" rx="4" fill="#e9c98a" stroke="#1f2933" stroke-width="3"/>
   <rect x="520" y="422" width="14" height="48" fill="#d9b26a" stroke="#1f2933" stroke-width="3"/>
   <rect x="666" y="422" width="14" height="48" fill="#d9b26a" stroke="#1f2933" stroke-width="3"/>
-  <path d="M624,330 L636,346 L960,420 L960,170 Z" fill="url(#fy82h-rb)" stroke-linejoin="round" fill-opacity="0.85"/>
-  <path d="M540,400 L660,400 L600,276 Z" fill="#eef5f9" stroke="#1f2933" stroke-width="4" stroke-linejoin="round" fill-opacity="0.85"/>
-  <path d="M570,388 L600,326" fill="none" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.9"/>
+  <path d="M633,330 L625,346 L960,360 L960,170 Z" fill="url(#fy82h-rb)" stroke-linejoin="round" fill-opacity="0.85"/>
+  <path d="M540,280 L660,280 L600,392 Z" fill="#eef5f9" stroke="#1f2933" stroke-width="4" stroke-linejoin="round" fill-opacity="0.85"/>
+  <path d="M556,292 L592,360" fill="none" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.9"/>
+  <path d="M578,400 L590,376 L610,376 L622,400 Z" fill="#e9c98a" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
   <rect x="940" y="120" width="210" height="360" rx="6" fill="#ffffff" stroke="#1f2933" stroke-width="4"/>
-  <rect x="964" y="170" width="162" height="250" fill="url(#fy82h-rb)"/>
-  <line x1="964" y1="204" x2="1126" y2="204" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <line x1="964" y1="236" x2="1126" y2="236" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <line x1="964" y1="292" x2="1126" y2="292" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <line x1="964" y1="318" x2="1126" y2="318" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <line x1="964" y1="372" x2="1126" y2="372" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <line x1="964" y1="398" x2="1126" y2="398" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <rect x="964" y="170" width="162" height="250" fill="none" stroke="#1f2933" stroke-width="2"/>
+  <rect x="964" y="170" width="162" height="190" fill="url(#fy82h-rb)"/>
+  <line x1="964" y1="196" x2="1126" y2="196" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <line x1="964" y1="220" x2="1126" y2="220" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <line x1="964" y1="263" x2="1126" y2="263" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <line x1="964" y1="283" x2="1126" y2="283" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <line x1="964" y1="324" x2="1126" y2="324" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <line x1="964" y1="344" x2="1126" y2="344" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <rect x="964" y="170" width="162" height="190" fill="none" stroke="#1f2933" stroke-width="2"/>
   <rect x="1020" y="480" width="50" height="10" rx="2" fill="#6c757d" stroke="#1f2933" stroke-width="3"/>
   <line x1="1045" y1="470" x2="1045" y2="480" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
 </svg>
@@ -57,7 +58,7 @@ Spektri syntyy, kun valo hajotetaan aallonpituuksiksi hilalla tai prismalla. Kuu
 
 Kun jatkuvan spektrin valo kulkee kaasun läpi, spektriin jää tummia viivoja. Tämä on **absorptiospektri**. Jokainen tumma viiva on täsmälleen samalla aallonpituudella kuin jokin saman kaasun kirkas emissioviiva. Auringon tummat viivat syntyvät näin: Auringon pinnan jatkuva valo kulkee sen kaasukehän läpi, ja kaasukehän atomit absorboivat omat aallonpituutensa.
 
-<svg data-fig="spectra" viewBox="0 0 600 372" role="img" aria-label="Kaavakuva kolmesta vedyn spektristä samalla aallonpituusasteikolla 380–720 nanometriä. Ylimpänä hehkulampun jatkuva spektri: kaikki värit violetista punaiseen yhtenäisenä kaistana. Keskellä kuuman, ohuen vetykaasun emissiospektri: mustalla pohjalla neljä kirkasta viivaa aallonpituuksilla 410, 434, 486 ja 656 nanometriä. Alimpana absorptiospektri, kun jatkuva valo kulkee kuuman vetykaasun läpi, kuten tähden kaasukehässä: jatkuvassa värikaistassa on tummat viivat täsmälleen samoilla aallonpituuksilla, mitä korostavat katkoviivat. Aallonpituusasteikko on mittakaavassa." style="max-width:100%;font-size:24px">
+<svg data-fig="spectra" viewBox="0 0 600 396" role="img" aria-label="Kaavakuva kolmesta vedyn spektristä samalla aallonpituusasteikolla 380–720 nanometriä. Ylimpänä hehkulampun jatkuva spektri: kaikki värit violetista punaiseen yhtenäisenä kaistana. Keskellä kuuman, ohuen vetykaasun emissiospektri: mustalla pohjalla neljä kirkasta viivaa aallonpituuksilla 410, 434, 486 ja 656 nanometriä. Alimpana absorptiospektri, kun jatkuva valo kulkee kuuman vetykaasun läpi, kuten tähden kaasukehässä: jatkuvassa värikaistassa on tummat viivat täsmälleen samoilla aallonpituuksilla, mitä korostavat katkoviivat. Aallonpituusasteikko on mittakaavassa." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy82-rb" x1="0" y1="0" x2="1" y2="0"><stop offset="0.000" stop-color="#610061"/><stop offset="0.029" stop-color="#79008d"/><stop offset="0.059" stop-color="#8300b5"/><stop offset="0.088" stop-color="#7e00db"/><stop offset="0.118" stop-color="#6a00ff"/><stop offset="0.147" stop-color="#3d00ff"/><stop offset="0.176" stop-color="#0000ff"/><stop offset="0.206" stop-color="#0046ff"/><stop offset="0.235" stop-color="#007bff"/><stop offset="0.265" stop-color="#00a9ff"/><stop offset="0.294" stop-color="#00d5ff"/><stop offset="0.324" stop-color="#00ffff"/><stop offset="0.353" stop-color="#00ff92"/><stop offset="0.382" stop-color="#00ff00"/><stop offset="0.412" stop-color="#36ff00"/><stop offset="0.441" stop-color="#5eff00"/><stop offset="0.471" stop-color="#81ff00"/><stop offset="0.500" stop-color="#a3ff00"/><stop offset="0.529" stop-color="#c3ff00"/><stop offset="0.559" stop-color="#e1ff00"/><stop offset="0.588" stop-color="#ffff00"/><stop offset="0.618" stop-color="#ffdf00"/><stop offset="0.647" stop-color="#ffbe00"/><stop offset="0.676" stop-color="#ff9b00"/><stop offset="0.706" stop-color="#ff7700"/><stop offset="0.735" stop-color="#ff4f00"/><stop offset="0.765" stop-color="#ff2100"/><stop offset="0.794" stop-color="#ff0000"/><stop offset="0.824" stop-color="#ff0000"/><stop offset="0.853" stop-color="#ff0000"/><stop offset="0.882" stop-color="#ff0000"/><stop offset="0.912" stop-color="#ff0000"/><stop offset="0.941" stop-color="#ff0000"/><stop offset="0.971" stop-color="#e20000"/><stop offset="1.000" stop-color="#c40000"/></linearGradient></defs>
   <foreignObject x="11" y="71.5" width="210" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{jatkuva spektri}$</div></foreignObject>
   <rect x="232" y="28" width="340" height="44" fill="url(#fy82-rb)"/>
@@ -69,7 +70,7 @@ Kun jatkuvan spektrin valo kulkee kaasun läpi, spektriin jää tummia viivoja. 
   <rect x="283.5" y="122" width="5" height="44" fill="#2700ff"/>
   <rect x="260" y="122" width="5" height="44" fill="#7d00dc"/>
   <rect x="232" y="122" width="340" height="44" fill="none" stroke="#1f2933" stroke-width="2"/>
-  <foreignObject x="11" y="259.5" width="210" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{absorptiospektri}$</div></foreignObject>
+  <foreignObject x="11" y="253.5" width="210" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{absorptiospektri}$</div></foreignObject>
   <rect x="232" y="216" width="340" height="44" fill="url(#fy82-rb)"/>
   <rect x="506.5" y="216" width="4" height="44" fill="#1f2933"/>
   <rect x="336.5" y="216" width="4" height="44" fill="#1f2933"/>
@@ -88,42 +89,43 @@ Kun jatkuvan spektrin valo kulkee kaasun läpi, spektriin jää tummia viivoja. 
   <rect x="160" y="120" width="12" height="14" rx="2" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
   <circle cx="70" cy="228" r="14" fill="#ffc078" stroke="#1f2933" stroke-width="2.5"/>
   <rect x="94" y="210" width="72" height="36" rx="8" fill="#eef5f9" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="106" cy="220" r="3" fill="#1971c2"/>
-  <circle cx="122" cy="236" r="3" fill="#1971c2"/>
-  <circle cx="136" cy="222" r="3" fill="#1971c2"/>
-  <circle cx="150" cy="238" r="3" fill="#1971c2"/>
-  <circle cx="112" cy="232" r="3" fill="#1971c2"/>
-  <circle cx="144" cy="228" r="3" fill="#1971c2"/>
-  <line x1="232" y1="284" x2="572" y2="284" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="252" y1="284" x2="252" y2="292" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="272" y1="284" x2="272" y2="289" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="292" y1="284" x2="292" y2="289" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="312" y1="284" x2="312" y2="289" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="332" y1="284" x2="332" y2="289" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="352" y1="284" x2="352" y2="292" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="372" y1="284" x2="372" y2="289" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="392" y1="284" x2="392" y2="289" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="412" y1="284" x2="412" y2="289" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="432" y1="284" x2="432" y2="289" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="452" y1="284" x2="452" y2="292" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="472" y1="284" x2="472" y2="289" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="492" y1="284" x2="492" y2="289" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="512" y1="284" x2="512" y2="289" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="532" y1="284" x2="532" y2="289" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="552" y1="284" x2="552" y2="292" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <foreignObject x="229.5" y="295.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$400$</div></foreignObject>
-  <foreignObject x="329.5" y="295.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$500$</div></foreignObject>
-  <foreignObject x="429.5" y="295.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$600$</div></foreignObject>
-  <foreignObject x="529.5" y="295.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$700$</div></foreignObject>
-  <foreignObject x="144" y="295.5" width="74" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\lambda\ (\text{nm})$</div></foreignObject>
-  <foreignObject x="454" y="329.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{punainen}$</div></foreignObject>
-  <foreignObject x="223" y="329.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{violetti}$</div></foreignObject>
+  <circle cx="106" cy="220" r="3" fill="#c92a2a"/>
+  <circle cx="122" cy="236" r="3" fill="#c92a2a"/>
+  <circle cx="136" cy="222" r="3" fill="#c92a2a"/>
+  <circle cx="150" cy="238" r="3" fill="#c92a2a"/>
+  <circle cx="112" cy="232" r="3" fill="#c92a2a"/>
+  <circle cx="144" cy="228" r="3" fill="#c92a2a"/>
+  <foreignObject x="11" y="283.5" width="210" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{(kuuma kaasu)}$</div></foreignObject>
+  <line x1="232" y1="308" x2="572" y2="308" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="252" y1="308" x2="252" y2="316" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="272" y1="308" x2="272" y2="313" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="292" y1="308" x2="292" y2="313" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="312" y1="308" x2="312" y2="313" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="332" y1="308" x2="332" y2="313" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="352" y1="308" x2="352" y2="316" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="372" y1="308" x2="372" y2="313" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="392" y1="308" x2="392" y2="313" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="412" y1="308" x2="412" y2="313" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="432" y1="308" x2="432" y2="313" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="452" y1="308" x2="452" y2="316" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="472" y1="308" x2="472" y2="313" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="492" y1="308" x2="492" y2="313" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="512" y1="308" x2="512" y2="313" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="532" y1="308" x2="532" y2="313" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="552" y1="308" x2="552" y2="316" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="229.5" y="319.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$400$</div></foreignObject>
+  <foreignObject x="329.5" y="319.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$500$</div></foreignObject>
+  <foreignObject x="429.5" y="319.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$600$</div></foreignObject>
+  <foreignObject x="529.5" y="319.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$700$</div></foreignObject>
+  <foreignObject x="144" y="319.5" width="74" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\lambda\ (\text{nm})$</div></foreignObject>
+  <foreignObject x="454" y="353.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{punainen}$</div></foreignObject>
+  <foreignObject x="223" y="353.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{violetti}$</div></foreignObject>
 </svg>
 
 ### Energiatilat selittävät viivat
 Atomin elektroniverho voi olla vain tietyissä **energiatiloissa**. Alin niistä on perustila, ylemmät ovat viritystiloja. Energiat ilmoitetaan negatiivisina, koska nollaksi valitaan tilanne, jossa elektroni on irronnut atomista. Kun atomi siirtyy ylemmästä energiatilasta alempaan, se lähettää yhden fotonin. Energia säilyy, joten fotonin energia on tilojen energioiden erotus. Koska atomilla on vain tietyt energiatilat, erotuksia on vain tietty määrä, ja spektrissä on vain tiettyjä viivoja.
 
-Absorptio on käänteinen tapahtuma. Atomi absorboi fotonin vain, jos fotonin energia on täsmälleen jonkin kahden tilan erotus; muut fotonit kulkevat kaasun läpi. Virittynyt atomi palaa pian alempaan tilaan ja lähettää fotonin, mutta satunnaiseen suuntaan. Siksi alkuperäiseen suuntaan kulkevasta valosta puuttuu juuri nuo aallonpituudet, ja spektriin jää tumma viiva. Kaasu absorboi vain niistä tiloista, joissa sen atomeja on. Kylmässä kaasussa lähes kaikki atomit ovat perustilassa, joten absorptioviivoja on vähemmän kuin emissioviivoja. Elektronin energiatilat ovat kvantittuneet, ja spektrit ovat siitä suorin todiste.
+Absorptio on käänteinen tapahtuma. Atomi absorboi fotonin vain, jos fotonin energia on täsmälleen jonkin kahden tilan erotus; muut fotonit kulkevat kaasun läpi. Virittynyt atomi palaa pian alempaan tilaan ja lähettää fotonin, mutta satunnaiseen suuntaan. Siksi alkuperäiseen suuntaan kulkevasta valosta puuttuu juuri nuo aallonpituudet, ja spektriin jää tumma viiva. Kaasu absorboi vain siirtymiä, jotka lähtevät tiloista, joissa sen atomeja on. Kylmässä kaasussa lähes kaikki atomit ovat perustilassa, joten absorptioviivoja on vähemmän kuin emissioviivoja. Auringon kaasukehä on niin kuuma, että osa vetyatomeista on ensimmäisessä viritystilassa. Ne absorboivat näkyvän valon aallonpituuksia, ja siksi vedyn punainen viiva $656\,\text{nm}$ näkyy Auringon spektrissä tummana. Elektronin energiatilat ovat kvantittuneet, ja spektrit ovat siitä suorin todiste.
 
 Spektrin voi mitata itse. Spektroskoopissa valo kulkee kapean raon ja hilan läpi, ja viivojen aallonpituudet luetaan asteikolta. Puhelimen kameran eteen kiinnitetty hila tai valmis spektrometri toimii samoin: kaasupurkausputken, loisteputken tai LED-lampun valosta näkee heti, onko spektri jatkuva vai viivoista koostuva.
 
@@ -169,9 +171,9 @@ hf &= E_\text{y} - E_\text{a} \\
 \lambda &= \frac{hc}{E_\text{y} - E_\text{a}}
 \end{aligned}
 ```
-missä $E_\text{y}$ on ylemmän ja $E_\text{a}$ alemman energiatilan energia (J tai eV), $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$ Planckin vakio, $f$ fotonin taajuus (Hz), $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$ valon nopeus ja $\lambda$ fotonin aallonpituus (m). Alempi rivi saadaan, kun sijoitetaan $f = \tfrac{c}{\lambda}$ ja ratkaistaan $\lambda$. Sama erotus antaa emissioviivan ja absorptioviivan, joten ne ovat samalla aallonpituudella. Suuri energiaero antaa lyhyen aallonpituuden.
+missä $E_\text{y}$ on ylemmän ja $E_\text{a}$ alemman energiatilan energia (J tai eV), ${h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}}$ Planckin vakio, $f$ fotonin taajuus (Hz), ${c = 2{,}998 \cdot 10^{8}\,\text{m/s}}$ valon nopeus ja $\lambda$ fotonin aallonpituus (m). Alempi rivi saadaan, kun sijoitetaan $f = \tfrac{c}{\lambda}$ ja ratkaistaan $\lambda$. Sama erotus antaa emissioviivan ja absorptioviivan, joten ne ovat samalla aallonpituudella. Suuri energiaero antaa lyhyen aallonpituuden.
 
-Atomien energiat ilmoitetaan usein elektronivoltteina: $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$. Ennen sijoitusta yhtälöön, jossa on $h$ ja $c$, elektronivoltit muutetaan jouleiksi sijoittamalla tämä arvo.
+Atomien energiat ilmoitetaan usein elektronivoltteina. Ennen sijoitusta yhtälöön, jossa on $h$ ja $c$, elektronivoltit muutetaan jouleiksi: arvo ${1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}}$ sijoitetaan elektronivoltin paikalle.
 
 Vetyatomin energiatilat on mitattu sen spektristä. Luvussa *Vetyatomin energiatasot ja Bohrin malli* nähdään, mistä nämä arvot tulevat.
 
@@ -184,7 +186,7 @@ Vetyatomin energiatilat on mitattu sen spektristä. Luvussa *Vetyatomin energiat
 | 5 | $-0{,}54$ |
 | 6 | $-0{,}38$ |
 
-Näkyvän valon viivat syntyvät, kun vetyatomi siirtyy tasolta $3$, $4$, $5$ tai $6$ tasolle $2$. Siirtymät perustilaan $n = 1$ ovat paljon suurempia, ja niiden fotonit ovat ultraviolettia.
+Vedyn voimakkaimmat näkyvät viivat syntyvät, kun vetyatomi siirtyy tasolta $3$, $4$, $5$ tai $6$ tasolle $2$. Vielä ylemmiltä tasoilta tulee heikkoja viivoja violetin reunalle, esimerkiksi siirtymästä $7 \to 2$ aallonpituudelle $397\,\text{nm}$. Siirtymät perustilaan $n = 1$ ovat paljon suurempia, ja niiden fotonit ovat ultraviolettia.
 
 <svg data-fig="levels" viewBox="0 0 600 380" role="img" aria-label="Vetyatomin energiatasokaavio, energia-akseli mittakaavassa. Tasot n = 1, 2, 3, 4, 5, 6 ovat energioilla −13,6; −3,40; −1,51; −0,85; −0,54 ja −0,38 elektronivolttia, ja ylimpänä on energia nolla, jossa elektroni on irti atomista. Ylimmät tasot ovat hyvin lähellä toisiaan. Neljä alaspäin osoittavaa nuolta kuvaa emissiota tasoilta 3, 4, 5 ja 6 tasolle 2; niiden fotonien aallonpituudet 656, 486, 434 ja 410 nanometriä on merkitty nuolten alle, ja nuolet on väritetty valon värillä. Oikealla ylöspäin osoittava nuoli kuvaa absorptiota perustilasta tasolle 2: atomi absorboi aaltoviivana piirretyn ultraviolettifotonin, jonka aallonpituus on 122 nanometriä." style="max-width:100%;font-size:24px">
   <foreignObject x="20" y="3.5" width="74" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$E\ (\text{eV})$</div></foreignObject>
@@ -251,11 +253,11 @@ Neonvalomainoksen spektrissä on voimakas punaoranssi viiva aallonpituudella $64
 
 <!-- vaihe -->
 
-**Sijoitus.**
+**Sijoitus.** Lasketaan ensin tulo $hc = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8}\,\text{m/s} = 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}$ ja sitten energiaero:
 ```latex
 \begin{aligned}
 \Delta E &= \frac{hc}{\lambda} \\
-&= \frac{6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8}\,\tfrac{\text{m}}{\text{s}}}{640 \cdot 10^{-9}\,\text{m}} \\
+&= \frac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{640 \cdot 10^{-9}\,\text{m}} \\
 &= 3{,}1039 \cdot 10^{-19}\,\text{J} \\
 &= \frac{3{,}1039 \cdot 10^{-19}}{1{,}602 \cdot 10^{-19}}\,\text{eV} \\
 &= 1{,}9375\,\text{eV}
@@ -276,7 +278,7 @@ Valosähköisessä ilmiössä riittää, että fotonin energia on vähintään i
 Toinen virhe on luulla, että absorptiospektrin tumma viiva on täysin pimeä tai että absorboitunut energia katoaa. Atomit lähettävät absorboimansa energian uudelleen, mutta kaikkiin suuntiin, joten viiva on vain ympäristöään tummempi.
 
 ## Kasvihuonekaasut ja infrapuna
-Myös molekyyleillä on kvantittuneita energiatiloja: niiden atomit värähtelevät toistensa suhteen vain tietyillä energioilla. Hiilidioksidin ja vesihöyryn värähtelytilojen erotukset ovat noin $0{,}1\,\text{eV}$ tai pienempiä. Ne vastaavat infrapunasäteilyä: esimerkiksi hiilidioksidin voimakas absorptiovyö on aallonpituuden $15\,\mu\text{m}$ kohdalla, jossa fotonin energia on noin $0{,}083\,\text{eV}$. Näkyvän valon fotoneille tällaisia erotuksia ei ole, joten Auringon valo kulkee ilmakehän läpi maanpinnalle.
+Myös molekyyleillä on kvantittuneita energiatiloja: niiden atomit värähtelevät toistensa suhteen vain tietyillä energioilla. Hiilidioksidin ja vesihöyryn värähtelytilojen erotukset ovat noin $0{,}08$–$0{,}5\,\text{eV}$. Ne vastaavat infrapunasäteilyä: esimerkiksi hiilidioksidin voimakas absorptiovyö on aallonpituuden $15\,\mu\text{m}$ kohdalla, jossa fotonin energia on noin $0{,}083\,\text{eV}$. Näkyvän valon fotoneille tällaisia erotuksia ei ole, joten Auringon valo kulkee ilmakehän läpi maanpinnalle.
 
 Lämmennyt maanpinta säteilee infrapunaa. Hiilidioksidi- ja vesihöyrymolekyylit absorboivat osan siitä. Energia siirtyy törmäyksissä myös muulle ilmalle, ja ilmakehän kaasut säteilevät infrapunaa kaikkiin suuntiin, myös takaisin alas. Siksi maanpinta pysyy lämpimämpänä kuin ilman näitä kaasuja. Kun ilmakehän hiilidioksidipitoisuus kasvaa, absorptio voimistuu ja maapallon energiatase muuttuu: tämä on ilmastonmuutoksen fysikaalinen ydin.
 

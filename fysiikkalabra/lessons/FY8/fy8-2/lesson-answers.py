@@ -29,6 +29,7 @@ a["visible-max-eV"] = HC_EVNM / 380
 a["kertaus-650"] = HC_EVNM / 650      # 1,91 eV
 a["kertaus-410"] = HC_EVNM / 410                  # 3,02 eV
 # Worked example: neon line 640 nm. ΔE = hc/λ in J, then in eV
+a["ex-hc"] = h * c                                # 1,9865e-25 J m, the first row of the substitution
 a["ex-J"] = h * c / 640e-9                        # 3,1037e-19 J
 a["ex-eV"] = h * c / 640e-9 / e                   # 1,9374 eV -> 1,94 eV
 a["ex-check-eV"] = 1240 / 640                     # estimate with hc ≈ 1240 eV·nm: 1,94 eV
@@ -36,21 +37,26 @@ a["ex-check-eV"] = 1240 / 640                     # estimate with hc ≈ 1240 eV
 a["virhe-wrong"] = h * c / 1.89                   # 1,05e-25 "m"
 a["virhe-J"] = 1.89 * e                           # 3,028e-19 J, the conversion that was missing
 a["virhe-right-nm"] = h * c / (1.89 * e) * 1e9    # 656 nm
-# Transfer (siirto): highlighter absorbs 365 nm, emits 520 nm; energy left in the ink per photon
-a["siirto-in"] = h * c / (365e-9 * e)             # 3,397 eV
-a["siirto-out"] = h * c / (520e-9 * e)            # 2,385 eV
-a["siirto"] = a["siirto-in"] - a["siirto-out"]    # 1,0126 eV -> 1,01 eV
-a["siirto-mistake-nm"] = 520 - 365                # 155 (the wavelengths subtracted)
-a["siirto-mistake-lam"] = h * c / (155e-9 * e)    # 8,00 eV: hc/(λ2 − λ1) is not an energy difference
-# Check 2: sodium street lamp 589 nm -> ΔE = 2,105 eV
-a["check2"] = h * c / (589e-9 * e)                # 2,11 eV
-a["check2-J"] = h * c / 589e-9                    # 3,37e-19 J (mistake: answered in units 1e-19 J)
+# Transfer (siirto): a dye absorbs violet 405 nm, emits green 530 nm; energy left in the dye per photon
+a["siirto-in"] = h * c / (405e-9 * e)             # 3,062 eV
+a["siirto-out"] = h * c / (530e-9 * e)            # 2,340 eV
+a["siirto"] = a["siirto-in"] - a["siirto-out"]    # 0,7221 eV -> 0,722 eV
+a["siirto-mistake-nm"] = 530 - 405                # 125 (the wavelengths subtracted)
+a["siirto-mistake-lam"] = h * c / (125e-9 * e)    # 9,92 eV: hc/(λ2 − λ1) is not an energy difference
+# Check 2: the green mercury line 546 nm of a fluorescent tube -> ΔE = 2,271 eV
+a["check2"] = h * c / (546e-9 * e)                # 2,27 eV
+a["check2-J"] = h * c / 546e-9                    # 3,638e-19 J (mistake: answered in units 1e-19 J)
+a["check2-inverse"] = 546e-9 * e / (h * c)        # 0,440 (mistake: λ/hc)
 # Interpret: the lines of the lamp 405, 436, 546, 577, 579 nm (mercury) as photon energies
 a["lamp-546-eV"] = HC_EVNM / 546                  # 2,27 eV
 # Fluorescence figure: UV 365 nm in (3,40 eV), visible 520 nm out (2,38 eV)
 # Greenhouse box: CO2 absorbs about 15 µm: photon energy 0,083 eV, about 30 times smaller than at 500 nm
 a["co2-eV"] = HC_EVNM / 15000                     # 0,0827 eV
 a["co2-ratio"] = 15000 / 500                      # 30
+a["co2-4.3um-eV"] = HC_EVNM / 4300                # 0,288 eV, the CO2 stretch band
+a["h2o-2.7um-eV"] = HC_EVNM / 2700                # 0,459 eV: the vibration gaps run from about 0,08 to 0,5 eV
 # Exit ticket: levels 0, 2,0 and 3,0 eV give the photon energies 1,0, 2,0 and 3,0 eV
 a["exit-1"] = 3.0 - 2.0
+# Visible edge: 7 -> 2 at 397 nm, a faint line still inside 380–750 nm
+a["lam-7-2"] = lam(E(7) - E(2))                   # 397,1 nm
 print(json.dumps({k: round(v, 6) if abs(v) > 1e-3 else v for k, v in a.items()}))

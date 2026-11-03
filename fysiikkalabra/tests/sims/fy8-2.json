@@ -246,5 +246,26 @@
   "expected": 1,
   "tol": 0,
   "note": "the speed select changes only the pace; the values stay"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'emissio'); I(S[2],'2'); I(S[1],'3');",
+  "expr": "(() => { const o=[...document.querySelectorAll('#sim-root select')][1].options; return o[0].disabled && !o[1].disabled && !o[4].disabled ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "with n_a = 2 the upper level 2 cannot be picked, 3–6 can (koe 1 records no empty row)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'absorptio'); I(S[2],'1'); I(S[1],'2');",
+  "expr": "(window.simState.labels||[]).some(l=>/kylmä vetykaasu/.test(l.s)) ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "absorption from n_a = 1: the cell is labelled cold hydrogen"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'absorptio'); I(S[2],'2'); I(S[1],'3');",
+  "expr": "(() => { const L=window.simState.labels||[]; return L.some(l=>/kuuma vetykaasu/.test(l.s)) && !L.some(l=>/kylmä/.test(l.s)) ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "absorption from n_a = 2 needs hot gas: the cell is labelled hot hydrogen"
  }
 ]

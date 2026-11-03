@@ -50,13 +50,13 @@
 
 ## fy8-2-L2-01
 **Annettu:** vetyatomin tilojen energiat $E_4 = -0{,}85\,\text{eV}$ ja $E_2 = -3{,}40\,\text{eV}$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
-**Kysytty:** syntyvän fotonin aallonpituus $\lambda$ nanometreinä ja viivan väri
+**Kysytty:** syntyvän fotonin aallonpituus $\lambda$ nanometreinä
 **Periaate:** Atomin energia pienenee siirtymässä tilasta $4$ tilaan $2$. Energia säilyy, joten fotonin energia on tilojen erotus, ja aallonpituus saadaan fotonin energiasta.
 **Kaava:** $E_4 - E_2 = \dfrac{hc}{\lambda}$, josta $\lambda = \dfrac{hc}{E_4 - E_2}$
 **Muunnokset:** $E_4 - E_2 = -0{,}85\,\text{eV} - (-3{,}40\,\text{eV}) = 2{,}55\,\text{eV} = 2{,}55 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 4{,}0851 \cdot 10^{-19}\,\text{J}$. Lopuksi $1\,\text{m} = 10^{9}\,\text{nm}$.
 **Sijoitus:** $hc = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8}\,\text{m/s} = 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}$ ja $\lambda = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{4{,}0851 \cdot 10^{-19}\,\text{J}} = 4{,}8627 \cdot 10^{-7}\,\text{m} = 486{,}27\,\text{nm}$
-**Vastaus:** $486\,\text{nm}$, kolme merkitsevää numeroa kuten energiaerossa $2{,}55\,\text{eV}$. Viiva näkyy sinivihreänä eli syaanina.
-**Järkevyys:** Arviolla $\tfrac{1240}{2{,}55}\,\text{nm} \approx 490\,\text{nm}$. Siirtymä tasolta $4$ on suurempi kuin tasolta $3$ (punainen $656\,\text{nm}$), joten aallonpituus on lyhyempi.
+**Vastaus:** $486\,\text{nm}$, kolme merkitsevää numeroa kuten energiaerossa $2{,}55\,\text{eV}$.
+**Järkevyys:** Arviolla $\tfrac{1240}{2{,}55}\,\text{nm} \approx 490\,\text{nm}$, ja viiva näkyy sinivihreänä eli syaanina. Siirtymä tasolta $4$ on suurempi kuin tasolta $3$ (punainen $656\,\text{nm}$), joten aallonpituus on lyhyempi.
 
 ## fy8-2-L2-02
 **Annettu:** malliatomin energiatilat $E_1 = 0$, $E_2 = 1{,}85\,\text{eV}$ ja $E_3 = 4{,}00\,\text{eV}$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$

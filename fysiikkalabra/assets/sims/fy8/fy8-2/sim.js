@@ -1,7 +1,7 @@
 // fy8-2 Spektrit paljastavat atomin energiatasot: the hydrogen atom's energy levels E_n = -13,6 eV / n² (data, FY8
 // scope) and one transition between an upper level n_y and a lower level n_a. Emission: the atom drops from n_y to n_a
 // and a photon of energy ΔE = E_y - E_a leaves the glowing gas for the spectroscope. Absorption: white light passes
-// cold gas; a photon of exactly ΔE is absorbed and the atom rises from n_a to n_y. λ = hc/ΔE with h = 6,626e-34 J s,
+// hydrogen gas (cold when n_a = 1, hot when n_a > 1); a photon of exactly ΔE is absorbed and the atom rises from n_a to n_y. λ = hc/ΔE with h = 6,626e-34 J s,
 // c = 2,998e8 m/s, 1 eV = 1,602e-19 J (the lesson's constants). Every transition the student tries is kept as a line
 // on the spectrum strip (80–900 nm) of the current mode, so the spectrum builds up from single transitions. The pace
 // of the animation is only a picture; the speed select scales it and changes no value. Every canvas text goes through
@@ -26,6 +26,9 @@ new p5((p) => {
     const region = !valid ? '' : lam < 380 ? 'uv' : lam > 750 ? 'ir' : 'vis';
     return { mode, ny, na, Ey, Ea, valid, dE, lam, region };
   };
+  // an upper level must lie above the lower one: the levels n_y ≤ n_a cannot be picked (an experiment that locks n_a
+  // never records an empty transition)
+  const syncNy = () => { for (const o of selNy.elt.options) o.disabled = Number(o.value) <= Number(selNa.value()); };
   const note = () => { const S = state(); if (S.valid) seen[S.mode].set(S.ny + '-' + S.na, S.lam); };
 
   p.setup = () => {
@@ -40,6 +43,7 @@ new p5((p) => {
     const l2 = p.createElement('label').parent(controls); p.createSpan(__('alempi')).parent(l2); selNa = p.createSelect().parent(l2);
     for (let k = 1; k <= 4; k++) selNa.option(String(k), String(k));
     selNa.selected('2');
+    syncNy();
     const l3 = p.createElement('label').parent(controls); p.createSpan(__('nopeus')).parent(l3); selSpeed = p.createSelect().parent(l3);
     selSpeed.option(__('hidas'), '0.5'); selSpeed.option(__('normaali'), '1'); selSpeed.option(__('nopea'), '2'); selSpeed.selected('1');
     const bClear = p.createButton(__('tyhjenna')).parent(controls);
@@ -56,6 +60,7 @@ new p5((p) => {
 
   p.draw = () => {
     phase = (phase + Math.min(p.deltaTime, 100) / 3000 * Number(selSpeed.value())) % 1;   // one cycle in 3 s at normal pace
+    syncNy();
     note();   // the drawn transition joins the strip; settings made between two frames (an experiment's setup) never do
     const S = state();
     readout.html(S.valid
@@ -128,14 +133,14 @@ new p5((p) => {
       p.fill(...IRONC); p.rect(U(8), V(76), 14 * s, 18 * s, 2 * s); p.rect(U(138), V(76), 14 * s, 18 * s, 2 * s);
       lab('$\\text{' + __('kaasu_kuuma') + '}$', U(80), V(140), 'c');
     } else {
-      // a lamp, a white beam, a cell of cold gas
+      // a lamp, a white beam, a cell of gas: cold when the atoms start in the ground state, hot otherwise
       p.noStroke(); p.fill(255, 255, 255, 230); p.rect(U(40), V(78), 170 * s, 14 * s);
       p.fill(...HEATL); p.stroke(...INKC); p.strokeWeight(2 * sk); p.circle(U(30), V(85), 30 * s);
       p.fill(...GLASSC); p.stroke(...INKC); p.rect(U(90), V(58), 70 * s, 54 * s, 6 * s);
       p.noStroke(); p.fill(...COLDC);
       for (const [a, b] of [[102, 70], [120, 96], [138, 74], [148, 100], [110, 88], [132, 64]]) p.circle(U(a), V(b), 5 * s);
       lab('$\\text{' + __('lamppu') + '}$', U(30), V(140), 'c');
-      lab('$\\text{' + __('kaasu_kylma') + '}$', U(125), V(140) + (G === WIDE ? 0 : 1.5 * fh), 'c');   // a row lower on a phone
+      lab('$\\text{' + __(S.na === 1 ? 'kaasu_kylma' : 'kaasu_kuuma') + '}$', U(125), V(140) + (G === WIDE ? 0 : 1.5 * fh), 'c');   // a row lower on a phone
     }
     if (!S.valid) return;
     // the photon: a short wavy packet with an arrowhead; emission: after the jump, from the tube to the spectroscope;
