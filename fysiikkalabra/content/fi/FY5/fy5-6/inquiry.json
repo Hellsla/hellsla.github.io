@@ -8,7 +8,7 @@
   ],
   "prior": [
     "Tasaisessa ympyräliikkeessä kappaleella on normaalikiihtyvyys $a_\\text{n} = \\tfrac{v^2}{r}$ kohti keskipistettä, ja ratanopeus on $v = \\tfrac{2\\pi r}{T}$ (luku *Normaalikiihtyvyys ja ympyräliikkeen liikeyhtälö*)",
-    "Kahden kappaleen välinen gravitaatiovoima on $F = \\gamma \\tfrac{Mm}{r^2}$, ja putoamiskiihtyvyys etäisyydellä $r$ on $g = \\tfrac{\\gamma M}{r^2}$ (luku *Gravitaatiovuorovaikutus kappaleiden välillä*)"
+    "Kahden kappaleen välinen gravitaatiovoima on $F = \\gamma \\tfrac{Mm}{r^2}$, ja putoamiskiihtyvyys etäisyydellä $r$ on $g = \\tfrac{\\gamma M}{r^2}$ (luku *Kappaleiden välinen gravitaatiovoima*)"
   ],
   "activities": [
     {

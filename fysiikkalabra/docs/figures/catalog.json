@@ -64,7 +64,7 @@
   "fy5-2":{"course":"FY5","title":"Kappaleen tasapaino: voimat ja momentit","topics":["tasapaino","momenttiehto","painopiste","tukivoima"]},
   "fy5-3":{"course":"FY5","title":"Ympyrärata: jaksonaika ja ratanopeus","topics":["ympyräliike","ratanopeus","kierrosaika","pyörimistaajuus"]},
   "fy5-4":{"course":"FY5","title":"Normaalikiihtyvyys ja ympyräliikkeen liikeyhtälö","topics":["normaalikiihtyvyys","keskeisvoima","keskeiskiihtyvyys"]},
-  "fy5-5":{"course":"FY5","title":"Gravitaatiovuorovaikutus kappaleiden välillä","topics":["gravitaatiolaki","gravitaatiovakio","gravitaatiokenttä"]},
+  "fy5-5":{"course":"FY5","title":"Kappaleiden välinen gravitaatiovoima","topics":["gravitaatiolaki","gravitaatiovakio","gravitaatiokenttä"]},
   "fy5-6":{"course":"FY5","title":"Satelliitit ja planeetat ympyräradalla","topics":["kiertorata","satelliitti","painottomuus"]},
   "fy5-7":{"course":"FY5","title":"Värähtelyn suureet: jaksonaika, taajuus ja amplitudi","topics":["jaksollinen liike","värähtelyliike","tasapainoasema","jaksonaika","taajuus","amplitudi","vaihe","sinifunktion sovitus"]},
   "fy5-8":{"course":"FY5","title":"Jousivoima ja jousen energia","topics":["harmoninen voima","jousivakio","jousen potentiaalienergia"]},

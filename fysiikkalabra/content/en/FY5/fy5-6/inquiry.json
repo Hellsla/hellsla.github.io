@@ -8,7 +8,7 @@
   ],
   "prior": [
     "In uniform circular motion a body has a centripetal acceleration $a_\\text{n} = \\tfrac{v^2}{r}$ towards the centre, and the speed is $v = \\tfrac{2\\pi r}{T}$ (chapter *Centripetal acceleration and the equation of motion in a circle*)",
-    "The gravitational force between two bodies is $F = \\gamma \\tfrac{Mm}{r^2}$, and the acceleration of free fall at distance $r$ is $g = \\tfrac{\\gamma M}{r^2}$ (chapter *Gravitational interaction between bodies*)"
+    "The gravitational force between two bodies is $F = \\gamma \\tfrac{Mm}{r^2}$, and the acceleration of free fall at distance $r$ is $g = \\tfrac{\\gamma M}{r^2}$ (chapter *The gravitational force between bodies*)"
   ],
   "activities": [
     {

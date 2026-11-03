@@ -1,4 +1,4 @@
-# Gravitaatiovuorovaikutus kappaleiden välillä
+# Kappaleiden välinen gravitaatiovoima
 
 > **Miksi** pudonnut omena syöksyy Maata kohti, mutta Maa ei näytä liikahtavankaan omenaa kohti?
 

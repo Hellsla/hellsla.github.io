@@ -71,7 +71,7 @@
 ## fy5-6-L2-03
 **Given:** acceleration of free fall at the surface of the Moon $g = 1.62\,\text{m/s}^2$ and radius $R = 1737\,\text{km}$; no atmosphere
 **Find:** the speed $v$ of the circular orbit just above the surface of the Moon
-**Principle:** Only the gravitational force of the Moon acts on the probe, and it is the net force of the circular motion. At the surface the acceleration due to the gravitational force is $\tfrac{\gamma M}{R^2} = g$ (chapter *Gravitational interaction between bodies*), so the mass of the Moon is not needed: the centripetal acceleration must be $g$.
+**Principle:** Only the gravitational force of the Moon acts on the probe, and it is the net force of the circular motion. At the surface the acceleration due to the gravitational force is $\tfrac{\gamma M}{R^2} = g$ (chapter *The gravitational force between bodies*), so the mass of the Moon is not needed: the centripetal acceleration must be $g$.
 **Formula:** $m g = \dfrac{m v^2}{R}$, from which $v = \sqrt{g R}$
 **Conversions:** $R = 1737\,\text{km} = 1.737 \cdot 10^{6}\,\text{m}$; finally $1\,\text{km/s} = 1000\,\text{m/s}$.
 **Substitution:** $v = \sqrt{1.62\,\text{m/s}^2 \cdot 1.737 \cdot 10^{6}\,\text{m}} = 1677\,\text{m/s} = 1.677\,\text{km/s}$

@@ -71,7 +71,7 @@
 ## fy5-6-L2-03
 **Annettu:** Kuun pinnan putoamiskiihtyvyys $g = 1{,}62\,\text{m/s}^2$ ja säde $R = 1737\,\text{km}$; ei ilmakehää
 **Kysytty:** ympyräradan nopeus $v$ aivan Kuun pinnan yläpuolella
-**Periaate:** Luotaimeen vaikuttaa vain Kuun gravitaatiovoima, joka on ympyräliikkeen kokonaisvoima. Pinnan tasolla gravitaatiovoiman antama kiihtyvyys on $\tfrac{\gamma M}{R^2} = g$ (luku *Gravitaatiovuorovaikutus kappaleiden välillä*), joten Kuun massaa ei tarvita: normaalikiihtyvyyden on oltava $g$.
+**Periaate:** Luotaimeen vaikuttaa vain Kuun gravitaatiovoima, joka on ympyräliikkeen kokonaisvoima. Pinnan tasolla gravitaatiovoiman antama kiihtyvyys on $\tfrac{\gamma M}{R^2} = g$ (luku *Kappaleiden välinen gravitaatiovoima*), joten Kuun massaa ei tarvita: normaalikiihtyvyyden on oltava $g$.
 **Kaava:** $m g = \dfrac{m v^2}{R}$, josta $v = \sqrt{g R}$
 **Muunnokset:** $R = 1737\,\text{km} = 1{,}737 \cdot 10^{6}\,\text{m}$; lopuksi $1\,\text{km/s} = 1000\,\text{m/s}$.
 **Sijoitus:** $v = \sqrt{1{,}62\,\text{m/s}^2 \cdot 1{,}737 \cdot 10^{6}\,\text{m}} = 1677\,\text{m/s} = 1{,}677\,\text{km/s}$
