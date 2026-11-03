@@ -274,7 +274,7 @@ Resistanssi on komponentin jännitteen ja sen läpi kulkevan virran suhde:
 ```latex
 R = \frac{U}{I}
 ```
-missä $R$ on resistanssi (Ω), $U$ komponentin jännite (V) ja $I$ sen läpi kulkeva virta (A).
+missä $R$ on resistanssi ($\Omega$), $U$ komponentin jännite ($\text{V}$) ja $I$ sen läpi kulkeva virta ($\text{A}$).
 
 **Ohmin laki:** metallijohtimen läpi kulkeva virta on suoraan verrannollinen sen jännitteeseen, kun johtimen lämpötila pysyy samana. Silloin resistanssi on vakio, ja
 ```latex
@@ -341,7 +341,7 @@ Saman aineen tasapaksun johtimen resistanssi on suoraan verrannollinen johtimen 
 ```latex
 R = \rho \frac{l}{A}
 ```
-missä $R$ on johtimen resistanssi (Ω), $l$ pituus (m), $A$ poikkipinta-ala (m²) ja $\rho$ aineen **resistiivisyys** (Ω·m). Kaksi kertaa pidempi lanka on kuin kaksi lankaa peräkkäin, joten resistanssi kaksinkertaistuu. Lanka, jonka poikkipinta-ala on kaksinkertainen, on kuin kaksi lankaa rinnakkain, joten virta pääsee kulkemaan kahta reittiä ja resistanssi puolittuu. Poikkipinta-ala ilmoitetaan usein neliömillimetreinä, ja $1\,\text{mm}^2 = (10^{-3}\,\text{m})^2 = 10^{-6}\,\text{m}^2$.
+missä $R$ on johtimen resistanssi ($\Omega$), $l$ pituus ($\text{m}$), $A$ poikkipinta-ala ($\text{m}^2$) ja $\rho$ aineen **resistiivisyys** ($\Omega\cdot\text{m}$). Kaksi kertaa pidempi lanka on kuin kaksi lankaa peräkkäin, joten resistanssi kaksinkertaistuu. Lanka, jonka poikkipinta-ala on kaksinkertainen, on kuin kaksi lankaa rinnakkain, joten virta pääsee kulkemaan kahta reittiä ja resistanssi puolittuu. Poikkipinta-ala ilmoitetaan usein neliömillimetreinä, ja $1\,\text{mm}^2 = (10^{-3}\,\text{m})^2 = 10^{-6}\,\text{m}^2$.
 
 <svg data-fig="wire" viewBox="0 0 600 340" role="img" aria-label="Kaavakuva kolmesta saman aineen langasta, pituudet mittakaavassa. Ylimpänä lanka, jonka pituus on l ja poikkipinta-ala A, ja sen resistanssi on R. Keskellä kaksi kertaa pidempi lanka, jonka poikkipinta-ala on sama: resistanssi on 2R. Alimpana yhtä pitkä lanka, jonka poikkipinta-ala on kaksinkertainen: resistanssi on puolet eli R jaettuna kahdella. Poikkipinta on korostettu oranssilla langan vasemmassa päässä." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy63-cu" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffc078"/><stop offset="0.4" stop-color="#b8622d"/><stop offset="1" stop-color="#b8622d"/></linearGradient></defs>
@@ -389,7 +389,7 @@ missä $R$ on johtimen resistanssi (Ω), $l$ pituus (m), $A$ poikkipinta-ala (m�
   <foreignObject x="308" y="243" width="60" height="58" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\dfrac{R}{2}$</div></foreignObject>
 </svg>
 
-Resistiivisyys on aineen ominaisuus: se kertoo, kuinka huonosti aine johtaa sähköä. Metallien resistiivisyys kasvaa lämpötilan noustessa. Konstantaanin ja kromnikkelin resistiivisyys muuttuu lämpötilan mukana hyvin vähän, joten niistä tehdään vastuksia ja lämmityslankoja. Taulukon arvot ovat yksikössä $\Omega\cdot\text{m}$ huoneenlämmössä ($20\,{}^\circ\text{C}$).
+Resistiivisyys on aineen ominaisuus: se kertoo, kuinka huonosti aine johtaa sähköä. Metallien resistiivisyys kasvaa lämpötilan noustessa. Konstantaanin resistiivisyys muuttuu lämpötilan mukana hyvin vähän, minkä vuoksi siitä tehdään tarkkoja vastuksia. Lämmityslangat tehdään kromnikkelistä sen suuren resistiivisyyden vuoksi. Taulukon arvot ovat yksikössä $\Omega\cdot\text{m}$ huoneenlämmössä ($20\,{}^\circ\text{C}$).
 
 | aine | resistiivisyys $\rho$ |
 |---|---|

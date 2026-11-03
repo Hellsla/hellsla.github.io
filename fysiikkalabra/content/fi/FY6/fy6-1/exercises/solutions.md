@@ -6,7 +6,7 @@
 **Muunnokset:** Varaus on coulombeina ja aika sekunteina, joten virta saadaan suoraan ampeereina, koska $1\,\text{A} = 1\,\text{C/s}$.
 **Sijoitus:** $I = \dfrac{45\,\text{C}}{30\,\text{s}} = 1{,}5\,\text{A}$
 **Vastaus:** $1{,}5\,\text{A}$, kaksi merkitsevää numeroa kuten varauksessa $45\,\text{C}$ ja ajassa $30\,\text{s}$.
-**Järkevyys:** Varaus on puolitoista kertaa sekuntien lukumäärä, joten joka sekunti kulkee $1{,}5\,\text{C}$. Tarkistus kertomalla: $1{,}5\,\text{A}\cdot 30\,\text{s} = 45\,\text{C}$. Virta on suurempi kuin taskulampun lampussa mutta tavallinen esimerkiksi auton ajovalossa.
+**Järkevyys:** Varaus on puolitoista kertaa sekuntien lukumäärä, joten joka sekunti kulkee $1{,}5\,\text{C}$. Tarkistus kertomalla: $1{,}5\,\text{A}\cdot 30\,\text{s} = 45\,\text{C}$. Virta on suurempi kuin taskulampun lampussa ($0{,}3\,\text{A}$) ja samaa luokkaa kuin auton jarruvalon lampussa, jossa $21\,\text{W} : 12\,\text{V} = 1{,}75\,\text{A}$.
 
 ## fy6-1-L1-02
 **Annettu:** virta $I = 0{,}50\,\text{A}$, aika $t = 40\,\text{s}$
@@ -16,7 +16,7 @@
 **Muunnokset:** Virta on ampeereina ja aika sekunteina, joten varaus saadaan coulombeina, koska $1\,\text{A}\cdot\text{s} = 1\,\text{C}$.
 **Sijoitus:** $Q = 0{,}50\,\text{A}\cdot 40\,\text{s} = 20\,\text{C}$
 **Vastaus:** $20\,\text{C}$, kaksi merkitsevää numeroa kuten virrassa $0{,}50\,\text{A}$ ja ajassa $40\,\text{s}$.
-**Järkevyys:** Joka sekunti kulkee puoli coulombia, joten $40\,\text{s}$:ssa varausta kulkee puolet luvusta $40$ eli $20\,\text{C}$. Varaus vastaa noin $20 \cdot 6{,}2 \cdot 10^{18} \approx 1{,}2 \cdot 10^{20}$ elektronia, mikä on tavallinen suuruusluokka pienen moottorin virralle.
+**Järkevyys:** Joka sekunti kulkee puoli coulombia, joten $40\,\text{s}$:ssa varausta kulkee puolet luvusta $40$ eli $20\,\text{C}$. Varaus vastaa noin $20 \cdot 6{,}2 \cdot 10^{18} \approx 1{,}2 \cdot 10^{20}$ elektronia. Vertailun vuoksi virta $0{,}50\,\text{A}$ on tavallinen pienen moottorin virta, ja se on suurempi kuin taskulampun lampun $0{,}3\,\text{A}$.
 
 ## fy6-1-L1-03
 **Annettu:** siirtynyt energia $E = 54\,\text{J}$, varaus $Q = 6{,}0\,\text{C}$
@@ -65,7 +65,7 @@
 **Kaava:** $Q = It$ ja $Q = Ne$, joten $Ne = It$ ja $N = \dfrac{It}{e}$
 **Muunnokset:** Virta on ampeereina ja aika sekunteina, joten varaus saadaan coulombeina eikä muunnoksia tarvita.
 **Sijoitus:** $N = \dfrac{0{,}16\,\text{A}\cdot 1{,}0\,\text{s}}{1{,}602 \cdot 10^{-19}\,\text{C}} = \dfrac{0{,}16\,\text{C}}{1{,}602 \cdot 10^{-19}\,\text{C}} \approx 9{,}99 \cdot 10^{17}$
-**Vastaus:** noin $1{,}0 \cdot 10^{18}$ elektronia, kaksi merkitsevää numeroa kuten virrassa $0{,}16\,\text{A}$.
+**Vastaus:** pyöristetään kahteen merkitsevään numeroon: noin $1{,}0 \cdot 10^{18}$ elektronia, kuten virrassa $0{,}16\,\text{A}$.
 **Järkevyys:** Yhteen coulombiin tarvitaan noin $6{,}2 \cdot 10^{18}$ elektronia. Kuudesosa siitä on noin $1 \cdot 10^{18}$, ja $0{,}16\,\text{C}$ on juuri noin kuudesosa coulombista. Yksiköt supistuvat, joten tulos on pelkkä lukumäärä, kuten pitääkin.
 
 ## fy6-1-L2-03
@@ -74,7 +74,7 @@
 **Periaate:** Jännite kertoo, kuinka paljon energiaa jokainen coulombi siirtää, joten energia on jännitteen ja varauksen tulo. Varaus on annettu yksikössä $\text{mAh}$, joka on virta kertaa aika, joten se muutetaan ensin coulombeiksi.
 **Kaava:** $U = \dfrac{E}{Q}$, josta $E = UQ$
 **Muunnokset:** $3000\,\text{mAh} = 3000 \cdot 0{,}001\,\text{A}\cdot 3600\,\text{s} = 10\,800\,\text{C}$; vastaus muutetaan lopuksi kilojouleiksi, $1\,\text{kJ} = 1000\,\text{J}$.
-**Sijoitus:** $E = 3{,}7\,\text{V}\cdot 10\,800\,\text{C} = 39\,960\,\text{J} \approx 40{,}0\,\text{kJ}$
+**Sijoitus:** $E = 3{,}7\,\text{V}\cdot 10\,800\,\text{C} = 39\,960\,\text{J} = 39{,}96\,\text{kJ} \approx 40\,\text{kJ}$
 **Vastaus:** $40\,\text{kJ}$, kaksi merkitsevää numeroa kuten jännitteessä $3{,}7\,\text{V}$.
 **Järkevyys:** Arvio pyöreillä luvuilla: noin $4\,\text{J}$ jokaista coulombia kohti ja noin $10\,000\,\text{C}$ antaa noin $40\,000\,\text{J}$. Energia riittää puhelimelle päiväksi. Saman energian saisi nostamalla $40\,\text{kg}$:n kappaletta noin $100\,\text{m}$, mikä havainnollistaa, että akkuun mahtuu yllättävän paljon energiaa.
 
@@ -112,4 +112,4 @@
 ## fy6-1-L3-03
 **Kysytty:** pyörän valon kytkentäkaavio, jossa on kaksi paristoa peräkkäin, kytkin, lamppu ja ampeerimittari samassa silmukassa, sekä sovittu virran suunta
 **Periaate:** Kytkentäkaavio näyttää, mitkä komponentit on kytketty toisiinsa ja missä järjestyksessä virta kulkee niiden läpi. Paristo piirretään pitkällä ohuella viivalla (plusnapa) ja lyhyellä paksulla viivalla (miinusnapa), lamppu ympyränä, jossa on risti, ja ampeerimittari ympyränä, jossa on A. Ampeerimittari mittaa sen läpi kulkevaa virtaa, joten se kytketään samaan silmukkaan lampun kanssa. Virta kulkee ulkoisessa piirissä plusnavasta miinusnapaan.
-**Mallivastaus:** Piirsin yhden suorakulmion muotoisen silmukan. Sen vasempaan reunaan tulevat kaksi paristokennoa peräkkäin niin, että ylemmän kennon miinusnapa on kiinni alemman kennon plusnavassa ja ylemmän kennon plusnapa on ylöspäin. Yläreunaan piirsin kytkimen ja lampun, oikeaan reunaan ampeerimittarin. Johtimet ovat suoria vaaka- ja pystyviivoja, ja kaikki komponentit ovat samassa silmukassa, joten sama virta kulkee jokaisen läpi. Virran nuoli osoittaa plusnavasta yläreunaa pitkin kytkimen ja lampun kautta ampeerimittariin ja sieltä alareunaa pitkin miinusnapaan. Komponenttien järjestys silmukassa voi olla toinenkin, koska virta on sama silmukan joka kohdassa.
+**Mallivastaus:** Piirsin yhden suorakulmion muotoisen silmukan. Sen vasempaan reunaan tulevat kaksi paristokennoa peräkkäin niin, että ylemmän kennon miinusnapa on kiinni alemman kennon plusnavassa ja ylemmän kennon plusnapa on ylöspäin. Yläreunaan piirsin suljetun kytkimen (vipu kosketuksissa) ja lampun, oikeaan reunaan ampeerimittarin. Johtimet ovat suoria vaaka- ja pystyviivoja, ja kaikki komponentit ovat samassa silmukassa, joten sama virta kulkee jokaisen läpi. Virran nuoli osoittaa plusnavasta yläreunaa pitkin kytkimen ja lampun kautta ampeerimittariin ja sieltä alareunaa pitkin miinusnapaan. Komponenttien järjestys silmukassa voi olla toinenkin, koska virta on sama silmukan joka kohdassa.

@@ -87,7 +87,7 @@
 **Muunnokset:** $d = 0{,}40\,\text{mm} = 0{,}40 \cdot 10^{-3}\,\text{m}$, joten $r = 0{,}20 \cdot 10^{-3}\,\text{m}$.
 **Sijoitus:** $A = \pi \cdot (0{,}20 \cdot 10^{-3}\,\text{m})^2 = 1{,}257 \cdot 10^{-7}\,\text{m}^2$ ja $R = \dfrac{5{,}0 \cdot 10^{-7}\,\Omega\cdot\text{m} \cdot 2{,}0\,\text{m}}{1{,}257 \cdot 10^{-7}\,\text{m}^2} = 7{,}96\,\Omega$
 **Vastaus:** $8{,}0\,\Omega$, kaksi merkitsevää numeroa kuten halkaisijassa, pituudessa ja resistiivisyydessä.
-**Järkevyys:** Poikkipinta-ala on noin $0{,}13\,\text{mm}^2$, vähän alle simulaation ohuimman langan. Simulaatiossa $1{,}00\,\text{m}$ lankaa, jonka poikkipinta-ala on $0{,}10\,\text{mm}^2$, on $5{,}0\,\Omega$, joten $2{,}0\,\text{m}$ hieman paksumpaa lankaa on vähän alle $10\,\Omega$.
+**Järkevyys:** Poikkipinta-ala on noin $0{,}13\,\text{mm}^2$, vähän yli simulaation ohuimman langan ($0{,}10\,\text{mm}^2$). Simulaatiossa $1{,}00\,\text{m}$ lankaa, jonka poikkipinta-ala on $0{,}10\,\text{mm}^2$, on $5{,}0\,\Omega$, joten $2{,}0\,\text{m}$ hieman paksumpaa lankaa on vähän alle $10\,\Omega$.
 
 ## fy6-3-L3-01
 **Annettu:** alkuperäinen resistanssi $R_1 = 0{,}80\,\Omega$; pituus kaksinkertaistuu, $l_2 = 2 l_1$; tilavuus säilyy
@@ -101,7 +101,7 @@
 
 ## fy6-3-L3-02
 **Annettu:** kromnikkelilanka, $A = 0{,}20\,\text{mm}^2$, $U = 2{,}00\,\text{V}$; mittaukset $l$ ja $I$: $0{,}40\,\text{m}$ ja $0{,}91\,\text{A}$, $0{,}80\,\text{m}$ ja $0{,}46\,\text{A}$, $1{,}20\,\text{m}$ ja $0{,}30\,\text{A}$, $1{,}60\,\text{m}$ ja $0{,}23\,\text{A}$
-**Kysytty:** kromnikkelin resistiivisyys $\rho$ yksikössä µΩ·m
+**Kysytty:** kromnikkelin resistiivisyys $\rho$ yksikössä $\mu\Omega\cdot\text{m}$
 **Periaate:** Kunkin pituuden resistanssi on $R = U : I$. Tasapaksun langan resistanssi on $R = \rho l : A$, joten $R$ on suoraan verrannollinen pituuteen ja suhde $R : l$ on vakio $\rho : A$. Todellisissa mittaussarjoissa pisteet eivät yleensä ole täsmälleen samalla suoralla mittausepävarmuuden vuoksi, joten käytetään kaikkia mittauksia.
 **Kaava:** $R = \dfrac{U}{I}$ ja $R = \rho \dfrac{l}{A}$, josta $\rho = \dfrac{R}{l} \cdot A$
 **Muunnokset:** $A = 0{,}20\,\text{mm}^2 = 0{,}20 \cdot 10^{-6}\,\text{m}^2$. Lopuksi $10^{-6}\,\Omega\cdot\text{m} = 1\,\mu\Omega\cdot\text{m}$.
@@ -117,4 +117,4 @@
 **Muunnokset:** Ei tarvita: jännite on voltteina ja resistanssi ohmeina.
 **Sijoitus:** $I_\text{k} = \dfrac{3{,}0\,\text{V}}{1{,}0\,\Omega} = 3{,}0\,\text{A}$
 **Vastaus:** $3{,}0\,\text{A}$, kaksi merkitsevää numeroa kuten jännitteessä ja resistanssissa.
-**Järkevyys:** Palavan lampun resistanssi on $3{,}0\,\text{V} : 0{,}25\,\text{A} = 12\,\Omega$, eli 12-kertainen kylmään verrattuna, joten kytkentävirta on 12-kertainen käyttövirtaan $0{,}25\,\text{A}$ verrattuna. Tämä suuri virta kuumentaa ohutta lankaa hyvin nopeasti, ja langan ohuin kohta kuumenee eniten. Siksi lanka katkeaa useimmiten juuri päälle kytkettäessä.
+**Järkevyys:** Palavan lampun resistanssi on $3{,}0\,\text{V} : 0{,}25\,\text{A} = 12\,\Omega$, eli 12-kertainen kylmään verrattuna, joten kytkentävirta on 12-kertainen käyttövirtaan $0{,}25\,\text{A}$ verrattuna. Tämä suuri virta kuumentaa ohutta lankaa hyvin nopeasti, ja langan ohuin kohta kuumenee eniten, koska siinä resistanssi pituutta kohti on suurin. Siksi lanka katkeaa useimmiten juuri päälle kytkettäessä.

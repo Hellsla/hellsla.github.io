@@ -1,7 +1,7 @@
 ## fy6-2-L1-01
 **Annettu:** lukema $U = 12{,}46\,\text{V}$ alueella $20\,\text{V}$, resoluutio $r = 0{,}01\,\text{V}$, virheraja $\pm(0{,}5\,\% + 2\ \text{numeroa})$
 **Kysytty:** lukeman virheraja $\Delta U$ voltteina
-**Periaate:** Valmistajan ilmoittama virheraja koostuu kahdesta osasta: osuudesta lukemasta ja muutamasta viimeisen numeron askeleesta. Yksi "numero" tarkoittaa alueen resoluutiota eli pienintä askelta, jonka näyttö voi ottaa, tässä $0{,}01\,\text{V}$.
+**Periaate:** Valmistajan ilmoittama virheraja koostuu kahdesta osasta: osuudesta lukemasta ja muutamasta viimeisen numeron askeleesta. Yksi ”numero” tarkoittaa alueen resoluutiota eli pienintä askelta, jonka näyttö voi ottaa, tässä $0{,}01\,\text{V}$.
 **Kaava:** $\Delta U = p \cdot U + n \cdot r$
 **Muunnokset:** $p = 0{,}5\,\% = 0{,}005$; muita muunnoksia ei tarvita, koska lukema ja resoluutio ovat voltteina.
 **Sijoitus:** $\Delta U = 0{,}005 \cdot 12{,}46\,\text{V} + 2 \cdot 0{,}01\,\text{V} = 0{,}0623\,\text{V} + 0{,}02\,\text{V} = 0{,}0823\,\text{V}$
@@ -56,7 +56,7 @@
 **Muunnokset:** $p = 2{,}0\,\% = 0{,}020$; kaikki virrat ovat ampeereina.
 **Sijoitus:** $\Delta I = 0{,}020 \cdot 0{,}35\,\text{A} + 3 \cdot 0{,}01\,\text{A} = 0{,}007\,\text{A} + 0{,}03\,\text{A} = 0{,}037\,\text{A}$, joten $\dfrac{\Delta I}{I} = \dfrac{0{,}037\,\text{A}}{0{,}35\,\text{A}} = 0{,}106 = 10{,}6\,\%$
 **Vastaus:** noin $11\,\%$, kaksi merkitsevää numeroa kuten lukema $0{,}35\,\text{A}$.
-**Järkevyys:** Kolme askelta eli $0{,}03\,\text{A}$ on jo lähes kymmenesosa lukemasta $0{,}35\,\text{A}$, ja prosenttiosa lisää vähän. Virta on liian pieni alueelle $10\,\text{A}$: alueella $200\,\text{mA}$ sitä ei voisi mitata, mutta tarkempi mittari tai alue olisi paikallaan.
+**Järkevyys:** Kolme askelta eli $0{,}03\,\text{A}$ on jo lähes kymmenesosa lukemasta $0{,}35\,\text{A}$, ja prosenttiosa lisää vähän. Virta $0{,}35\,\text{A}$ ei mahdu alueelle $200\,\text{mA}$, joten $10\,\text{A}$ on tässä pienin sopiva alue; virheraja on silti lähes $11\,\%$, koska lukema on pieni alueeseen nähden, ja tarkempi suuren virran alue auttaisi.
 
 ## fy6-2-L2-02
 **Annettu:** lukema $I = 0{,}0875\,\text{A}$ alueella $200\,\text{mA}$, resoluutio $r = 0{,}1\,\text{mA}$, virheraja $\pm(1{,}0\,\% + 2\ \text{numeroa})$
@@ -81,7 +81,7 @@
 ## fy6-2-L2-04
 **Annettu:** pariston jännite $9{,}0\,\text{V}$; jännitemittari sarjassa lampun kanssa; mittarin resistanssi on hyvin suuri lampun resistanssiin verrattuna; lamppu sammuu
 **Kysytty:** jännitemittarin lukema $U_\text{m}$ voltteina
-**Periaate:** Jännitemittari päästää läpi vain hyvin pienen virran, joten sarjaan kytkettynä se pienentää koko piirin virran lähes nollaan. Silloin lampun yli ei juuri jää jännitettä, koska lamppu tarvitsee virtaa, ja pariston koko jännite jää mittarin napojen välille.
+**Periaate:** Jännitemittari päästää läpi vain hyvin pienen virran, joten sarjaan kytkettynä se pienentää koko piirin virran lähes nollaan. Silloin lampun yli ei juuri jää jännitettä, koska lampun jännite on sen resistanssi kertaa lähes nolla oleva virta, ja pariston koko jännite jää mittarin napojen välille.
 **Kaava:** $U_\text{m} + U_\text{lamppu} = U_\text{paristo}$ ja $U_\text{lamppu} \approx 0$, joten $U_\text{m} \approx U_\text{paristo}$
 **Muunnokset:** Ei tarvita: jännite on voltteina.
 **Sijoitus:** $U_\text{m} \approx 9{,}0\,\text{V}$
@@ -109,13 +109,13 @@
 **Järkevyys:** Halvemman mittarin virheraja on yli kaksinkertainen, kuten sen suurempi prosentti ja numeromäärä antavat odottaa. Ero $0{,}12\,\text{V}$ on noin $2\,\%$ lukemasta, mikä on samaa suuruusluokkaa kuin mittari B:n virheraja.
 
 ## fy6-2-L3-03
-**Kysytty:** mitä piirissä tapahtui, miksi lamppu sammui ja näyttö jäi nollaan, ja miten lampun virta olisi pitänyt mitata
+**Kysytty:** mitä piirissä tapahtui, miksi lamppu sammui vain hetkeksi ja näyttö jäi nollaan, ja miten lampun virta olisi pitänyt mitata
 **Periaate:** Virta-alueella yleismittarin resistanssi on hyvin pieni, jotta mittari ei muuttaisi sarjaan kytkettynä piirin virtaa. Mittarin sisällä on sulake, joka palaa ja katkaisee mittarin virtatien, kun mittarin läpi kulkee liian suuri virta.
-**Mallivastaus:** Opiskelija kytki virtamittarin lampun rinnalle, vaikka virtamittari kytketään sarjaan. Lampun napojen välille tuli rinnakkainen tie, jonka resistanssi on hyvin pieni, joten lähes koko virta kulki lampun ohi mittarin kautta. Lamppu sammui, koska sen läpi ei enää kulkenut virtaa. Koska tiellä paristosta mittarin kautta takaisin paristoon ei ollut juuri mitään virtaa rajoittavaa, virta kasvoi paljon suuremmaksi kuin mittausalue $200\,\text{mA}$, ja mittarin sulake paloi. Siksi näyttö jäi nollaan: palanut sulake katkaisee virran mittarin läpi, ja ennen kuin sulake vaihdetaan, mittari ei näytä virtaa. Oikein mitattuna piiri avataan esimerkiksi pariston ja lampun välistä ja virtamittari asetetaan aukkoon, jolloin sama virta kulkee pariston, mittarin ja lampun läpi. Jos virran suuruutta ei tiedetä, aloitetaan alueelta $10\,\text{A}$ ja punainen johto siirretään sille kuuluvaan liittimeen.
+**Mallivastaus:** Opiskelija kytki virtamittarin lampun rinnalle, vaikka virtamittari kytketään sarjaan. Lampun napojen välille tuli rinnakkainen tie, jonka resistanssi on hyvin pieni, joten lähes koko virta kulki lampun ohi mittarin kautta. Lamppu sammui, koska sen läpi ei enää kulkenut virtaa. Koska tiellä paristosta mittarin kautta takaisin paristoon ei ollut juuri mitään virtaa rajoittavaa, virta kasvoi paljon suuremmaksi kuin mittausalue $200\,\text{mA}$, ja mittarin sulake paloi. Palanut sulake katkaisi virran mittarin läpi, joten mittari jäi pois piiristä: paristo ja lamppu muodostivat taas pelkän suljetun piirin, ja lamppu syttyi uudelleen. Näyttö jäi nollaan, koska mittarin läpi ei enää kulje virtaa, ennen kuin sulake vaihdetaan. Oikein mitattuna piiri avataan esimerkiksi pariston ja lampun välistä ja virtamittari asetetaan aukkoon, jolloin sama virta kulkee pariston, mittarin ja lampun läpi. Jos virran suuruutta ei tiedetä, aloitetaan alueelta $10\,\text{A}$ ja punainen johto siirretään sille kuuluvaan liittimeen.
 
 **Itsearviointi:** Vastauksessani
 
 - sanon, että virtamittari kytkettiin lampun rinnalle, vaikka se kuuluu kytkeä sarjaan
 - selitän, että mittarin pieni resistanssi ohjasi virran lampun ohi, minkä vuoksi lamppu sammui
-- selitän, että virta kasvoi niin suureksi, että mittarin sulake paloi ja näyttö jäi nollaan
+- selitän, että virta kasvoi niin suureksi, että mittarin sulake paloi, minkä jälkeen mittari oli poissa piiristä, lamppu syttyi uudelleen ja näyttö jäi nollaan
 - kerron, että piiri avataan ja mittari asetetaan aukkoon, jotta sama virta kulkee mittarin ja lampun läpi.

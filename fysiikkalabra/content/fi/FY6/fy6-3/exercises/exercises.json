@@ -88,7 +88,7 @@
   {
    "id": "fy6-3-L3-02",
    "level": 3,
-   "text": "Opiskelija mittasi kromnikkelilangan virran eri pituuksilla, kun langan jännite oli koko ajan $2{,}00\\,\\text{V}$ ja poikkipinta-ala $0{,}20\\,\\text{mm}^2$. Pituuksilla $0{,}40\\,\\text{m}$, $0{,}80\\,\\text{m}$, $1{,}20\\,\\text{m}$ ja $1{,}60\\,\\text{m}$ virrat olivat $0{,}91\\,\\text{A}$, $0{,}46\\,\\text{A}$, $0{,}30\\,\\text{A}$ ja $0{,}23\\,\\text{A}$. Määritä mittausten perusteella kromnikkelin resistiivisyys. Vastaa yksikössä µΩ·m ($1\\,\\mu\\Omega\\cdot\\text{m} = 10^{-6}\\,\\Omega\\cdot\\text{m}$).",
+   "text": "Opiskelija mittasi kromnikkelilangan virran eri pituuksilla, kun langan jännite oli koko ajan $2{,}00\\,\\text{V}$ ja poikkipinta-ala $0{,}20\\,\\text{mm}^2$. Pituuksilla $0{,}40\\,\\text{m}$, $0{,}80\\,\\text{m}$, $1{,}20\\,\\text{m}$ ja $1{,}60\\,\\text{m}$ virrat olivat $0{,}91\\,\\text{A}$, $0{,}46\\,\\text{A}$, $0{,}30\\,\\text{A}$ ja $0{,}23\\,\\text{A}$. Määritä mittausten perusteella kromnikkelin resistiivisyys. Vastaa yksikössä $\\mu\\Omega\\cdot\\text{m}$ ($1\\,\\mu\\Omega\\cdot\\text{m} = 10^{-6}\\,\\Omega\\cdot\\text{m}$).",
    "answer": 1.1,
    "unit": "µΩ·m",
    "tolerance": 0.05
