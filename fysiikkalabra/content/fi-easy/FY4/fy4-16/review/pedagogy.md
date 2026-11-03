@@ -1,12 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: eab560f3fca037d0
+CONTENT-HASH: f9577732fa867a8e
 
 ## Blocking
+(none)
 
 ## Polish
+(none)
 
 ## Checked
-- Read the fi-easy page against the Finnish: the staging, predictions, hints and feedback are in the same places and gate nothing earlier.
-- The previously identical feedback texts are now short sentences with common words (one idea per sentence), and answer options say the same as the Finnish ones.
-- Chapter names used, no ids; the text is shorter per sentence but nothing is dropped.
-- Layout checked in the closed and opened states.
+batch delta review: key_concepts judged against NOTES.md §12 and the editorial standard (central concepts, plain 1–2 sentence explanations, natural Finnish, physics unchanged); lesson rewordings, photos and captions, experiment/prompt wording and solution diagrams in this diff read clearly and agree with the tasks they touch.

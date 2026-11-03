@@ -1,12 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 24d1a9be543a99e0
+CONTENT-HASH: 20ae2c5af22a932c
 
 ## Blocking
 (none)
 
 ## Polish
-- lesson.md "Vastaus alun kysymykseen" — "Sekin pienenee, kun pysähtymisaika pitenee." "Sekin" is unclear (kokonaisvoimako vai alustan voima?). Plainer: "Myös alustan voima pienenee, kun pysähtymisaika pitenee."
-- inquiry.json explain criterion (line 495) — "pienempää keskimääräistä voimaa" while the model answer and lesson now say "kokonaisvoima" and "alustan voima"; make the criterion name the same force: "pienempää keskimääräistä voimaa, myös alustan voimaa".
+(none)
 
 ## Checked
-- Batch delta review: the mat explanation (lower average forces, lower injury risk) is the same in lesson, Yleinen virhekäsitys and the explain model answer; the step "same impulse, longer time, smaller average force, less strain on the body, lower injury risk" is clear, short sentences, and the mat does not reduce the impulse. Removed level-policy sentences in the exercises text leave a clean instruction.
+batch delta review: key_concepts judged against NOTES.md §12 and the editorial standard (central concepts, plain 1–2 sentence explanations, natural Finnish, physics unchanged); lesson rewordings, photos and captions, experiment/prompt wording and solution diagrams in this diff read clearly and agree with the tasks they touch.

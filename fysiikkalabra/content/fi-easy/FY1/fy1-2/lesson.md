@@ -231,7 +231,7 @@
 ## Ydinajatus
 
 ### Suure, lukuarvo ja yksikkö
-Fysiikka kuvaa maailmaa ominaisuuksilla, joita voi mitata. Näitä ominaisuuksia sanotaan **suureiksi**. Pituus, massa, aika ja nopeus ovat suureita. Suureen arvon saa vertaamalla sitä sovittuun mittaan eli **yksikköön**. Arvo kirjoitetaan lukuarvon ja yksikön tulona, esimerkiksi kynän pituus $l = 12{,}0\,\text{cm}$. Lukuarvo ilman yksikköä ei kerro mitään. Luku 12 voisi tarkoittaa senttimetrejä, tunteja tai kilogrammoja. Suureen symboli kirjoitetaan kursiivilla ($l$, $m$, $t$). Yksikkö kirjoitetaan pystykirjaimilla ($\text{m}$, $\text{kg}$, $\text{s}$).
+Fysiikka kuvaa maailmaa ominaisuuksilla, joita voi mitata. Näitä ominaisuuksia sanotaan **suureiksi**. Pituus, massa, aika ja nopeus ovat suureita. Suureen arvon saa vertaamalla sitä sovittuun mittaan eli **yksikköön**. Arvo kirjoitetaan lukuarvon ja yksikön tulona eli lukuarvo kerrottuna yksiköllä, esimerkiksi kynän pituus $l = 12{,}0\,\text{cm}$. Lukuarvo ilman yksikköä ei kerro mitään. Luku 12 voisi tarkoittaa senttimetrejä, tunteja tai kilogrammoja. Suureen symboli kirjoitetaan kursiivilla ($l$, $m$, $t$). Yksikkö kirjoitetaan pystykirjaimilla ($\text{m}$, $\text{kg}$, $\text{s}$).
 
 <svg data-fig="quantity" viewBox="0 0 600 322" role="img" aria-label="Kaavakuva: suureen arvo on lukuarvo kertaa yksikkö. Viivaimella mitataan kynän pituus. Kynän kärki on nollakohdassa ja toinen pää 12,0 cm:n kohdalla, joten pituuden arvo on $l = 12{,}0\,\text{cm}$. Alla arvo on jaettu osiin: $l$ on suure, $12{,}0$ on lukuarvo ja $\text{cm}$ on yksikkö. Viivain ja kynä on piirretty mittakaavassa. Vaakasuunnassa 1 cm on 40 yksikköä." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy12-wood" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#f1dfb5"/><stop offset="1" stop-color="#d9b26a"/></linearGradient><linearGradient id="fy12-pencil" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></linearGradient></defs>
@@ -389,7 +389,7 @@ Fysiikka kuvaa maailmaa ominaisuuksilla, joita voi mitata. Näitä ominaisuuksia
 </svg>
 
 ### SI-järjestelmä
-Metrin pitää olla sama kaikkialla maailmassa. Siksi tiedeyhteisö on sopinut yhteisestä yksikköjärjestelmästä, **SI-järjestelmästä**. Siinä on seitsemän perussuuretta, ja jokaisella on oma perusyksikkönsä. Kaikki muut suureet johdetaan perussuureista. Nopeus on pituus jaettuna ajalla, joten nopeuden yksikkö on $\text{m/s}$. Pinta-alan yksikkö on $\text{m}^2$.
+Metrin pitää olla sama kaikkialla maailmassa. Siksi tiedeyhteisö on sopinut yhteisestä yksikköjärjestelmästä, **SI-järjestelmästä**. Siinä on seitsemän perussuuretta, ja jokaisella on oma perusyksikkönsä. Kaikki muut suureet johdetaan perussuureista eli saadaan niistä kertomalla ja jakamalla. Nopeus on pituus jaettuna ajalla, joten nopeuden yksikkö on $\text{m/s}$. Pinta-alan yksikkö on $\text{m}^2$.
 
 | Perussuure | Symboli | SI-yksikkö |
 |---|---|---|
@@ -503,7 +503,7 @@ Toiseen suuntaan $1\,\text{m} = 0{,}001\,\text{km}$, joten $350\,\text{m} = 350\
 
 Tähtitieteessä kilometri on liian pieni yksikkö. **Astronominen yksikkö** $\text{AU}$ on Maan ja Auringon keskimääräinen etäisyys: $1\,\text{AU} = 149\,597\,870{,}7\,\text{km} \approx 1{,}496\cdot10^{8}\,\text{km}$. Myös valovuosi on pituusyksikkö eikä aikayksikkö. Se on matka, jonka valo kulkee vuodessa, noin $9{,}46\cdot10^{12}\,\text{km}$.
 
-Etäisyyden voi ilmoittaa myös ajalla, jonka valo tarvitsee sen kulkemiseen. Valo etenee tyhjiössä tasaisella nopeudella $c$. Valon kulkema matka on siis nopeus kertaa aika, $s = ct$. Kulkuaika saadaan, kun ratkaiset tämän kaavan ajan suhteen:
+Etäisyyden voi ilmoittaa myös ajalla, jonka valo tarvitsee sen kulkemiseen. Valo etenee tyhjiössä tasaisella nopeudella $c$. Valon kulkema matka on siis nopeus kertaa aika, $s = ct$. Kulkuaika saadaan, kun ratkaiset tämän kaavan ajan suhteen eli kirjoitat kaavan niin, että aika on yksin yhtälön vasemmalla puolella:
 
 ```latex
 t = \frac{s}{c}

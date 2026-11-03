@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: b5b6b1720c70fb91
+CONTENT-HASH: b80b3e12cc983a8d
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- Kuva näyttää vain riippuvan pallon eikä heilahdusta, ja viereinen teksti käsittelee jousivärähtelijää; heiluri tulee vasta myöhemmin. Ei estä.
+- none
 
 ## Checked
-batch delta review: photo ok at both widths, small-swings caption factual and natural, alt matches picture. Foucault'n heiluri -kuva latautuu, asettuu oikealle ja palstalle; krediitti on. Uusi kuvateksti ("Kun heilahdus on pieni") on tosi ja selkeää suomea.
+- batch delta review: the new licensed photo (figure.unit-photo) captured in context from preview/fi-easy/fy5-9.html at 390 and 1280 px and opened (review/shots has no dedicated photo capture). The image loads at full resolution, scales inside the column on a phone and sits beside its paragraph at 1280 px. The caption is under the image with its credit line ("Kuva: …, licence"). Nothing is clipped and there is no horizontal overflow. The caption and alt text were read against the picture and the neighbouring paragraph: plain S2 Finnish, quantities in LaTeX.

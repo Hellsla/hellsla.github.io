@@ -4,6 +4,10 @@
     "laaja_alainen": "docs/lops2019/oph-laaja-alainen-osaaminen-fysiikassa.pdf",
     "note": "Moduulien tavoitteet ja keskeiset sisällöt on lainattu LOPS 2019 -perusteista MAOL:n tukimateriaalin mukaisesti. Sisältökuvaukset ovat minimivaatimuksia; moduulien ja oppituntien järjestystä saa muuttaa. Oppituntijako (lessons) on ehdotus, jonka opettaja järjestää ja nimeää."
   },
+  "_front_page": {
+    "coming": ["FY6", "FY7", "FY8"],
+    "note": "Etusivu (opettaja 3.11.2026): nämä moduulit näytetään himmennettyinä Tulossa-palstassa, vaikka niistä olisi jo julkaistuja lukuja. Poista moduuli listasta, kun se siirretään vasempaan palstaan."
+  },
   "FY1": {
     "title": "Fysiikka luonnontieteenä",
     "op": 1,

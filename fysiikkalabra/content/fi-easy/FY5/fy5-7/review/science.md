@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 114c73babb2c6e2b
+CONTENT-HASH: abcd5a13be987fc4
 
 ## Blocking
 (none)
@@ -8,4 +8,4 @@ CONTENT-HASH: 114c73babb2c6e2b
 (none)
 
 ## Checked
-batch delta review: heading/meta renamed; references to fy5-3 updated in prior, feedback (f = 1/4,0 s = 0,25 1/s correct) and theory. Every changed chapter reference names the renamed chapter that holds the cited content, and no old title remains.
+batch delta review: added meta.json key_concepts (Luvun tärkeät käsitteet) checked term by term against the lesson's own definitions, summary and the physics guardrails; no number, formula or choice changed. Terms: jaksollinen liike, tasapainoasema, jaksonaika (same place, same direction), taajuus (Hz) and amplitudi (measured from equilibrium) agree with the lesson.

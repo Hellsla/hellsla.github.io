@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 0006abed5e6a7cd2
+CONTENT-HASH: bbf844f09f395efa
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- ratanopeus: "Nopeus osoittaa radan suuntaan" could say "radan tangentin suuntaan", the lesson's own words.
 
 ## Checked
-batch delta review: heading/meta renamed; cross-references to fy5-4 updated in theory and the correct option's feedback; physics unchanged. Every changed chapter reference names the renamed chapter that holds the cited content, and no old title remains.
+batch delta review: added meta.json key_concepts (Luvun tärkeät käsitteet) checked term by term against the lesson's own definitions, summary and the physics guardrails; no number, formula or choice changed. Terms: ympyräliike, ratanopeus (matka/aika at constant speed), kierrosaika and pyörimistaajuus = 1/T agree with the lesson.

@@ -16,6 +16,24 @@
     "kulmakerroin",
     "suoran sovitus"
   ],
+  "key_concepts": [
+    {
+      "term": "kuvaaja",
+      "explain": "Piirros, joka näyttää, miten kaksi suuretta liittyvät toisiinsa. Jokainen mittaus on siinä yksi piste."
+    },
+    {
+      "term": "suoran sovitus",
+      "explain": "Mittauspisteisiin piirretään suora, joka kulkee pisteiden joukon keskeltä. Pisteitä ei yhdistetä toisiinsa."
+    },
+    {
+      "term": "kulmakerroin",
+      "explain": "Kertoo suoran jyrkkyyden: kuinka paljon pystyakselin suure muuttuu, kun vaaka-akselin suure kasvaa yhdellä yksiköllä."
+    },
+    {
+      "term": "lineaarinen malli",
+      "explain": "Malli, jossa kahden suureen yhteyttä kuvaa suora."
+    }
+  ],
   "sim": true,
   "solutions": "all",
   "image": false

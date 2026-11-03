@@ -15,6 +15,24 @@
     "ionisaatioenergia",
     "Bohrin malli"
   ],
+  "key_concepts": [
+    {
+      "term": "perustila",
+      "explain": "Atomin alin energiatila."
+    },
+    {
+      "term": "viritystila",
+      "explain": "Perustilaa ylempi energiatila. Viritystilassa atomilla on enemmän energiaa kuin perustilassa."
+    },
+    {
+      "term": "ionisaatioenergia",
+      "explain": "Energia, joka tarvitaan elektronin irrottamiseen atomista perustilasta."
+    },
+    {
+      "term": "Bohrin malli",
+      "explain": "Historiallinen vetyatomin malli, jossa elektroni kiertää ydintä vain sallituilla radoilla. Se antaa vedylle oikeat energiat, mutta ratoja ei ole."
+    }
+  ],
   "sim": true,
   "solutions": "all",
   "image": false

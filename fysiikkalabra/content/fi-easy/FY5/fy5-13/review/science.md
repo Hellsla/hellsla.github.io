@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 97126565ba9120e6
+CONTENT-HASH: f79a923c1c959a87
 
 ## Blocking
 (none)
@@ -8,4 +8,4 @@ CONTENT-HASH: 97126565ba9120e6
 (none)
 
 ## Checked
-batch delta review: references to fy5-10, fy5-11, fy5-12, fy5-14 updated; fixed-end reflection and standing-wave text unchanged. Every changed chapter reference names the renamed chapter that holds the cited content, and no old title remains.
+batch delta review: added meta.json key_concepts (Luvun tärkeät käsitteet) checked term by term against the lesson's own definitions, summary and the physics guardrails; no number, formula or choice changed. Terms: seisova aalto (wave and its reflection in opposite directions), solmu (no motion), kupu (largest vibration), perustaajuus (lowest) and resonanssi (driven at its own natural frequency) agree with the lesson.

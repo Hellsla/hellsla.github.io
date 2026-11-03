@@ -17,6 +17,24 @@
     "matka",
     "suoraan verrannollisuus"
   ],
+  "key_concepts": [
+    {
+      "term": "tasainen liike",
+      "explain": "Liike suoraa pitkin niin, että nopeus pysyy samana. Kappale kulkee yhtä pitkissä ajoissa yhtä pitkät matkat."
+    },
+    {
+      "term": "nopeus",
+      "explain": "Kertoo, kuinka pitkän matkan kappale kulkee yhdessä sekunnissa."
+    },
+    {
+      "term": "matka",
+      "explain": "Kappaleen kulkema pituus."
+    },
+    {
+      "term": "suoraan verrannollisuus",
+      "explain": "Kaksi suuretta muuttuvat samassa suhteessa: kun toinen kaksinkertaistuu, myös toinen kaksinkertaistuu."
+    }
+  ],
   "sim": true,
   "solutions": "all",
   "image": false

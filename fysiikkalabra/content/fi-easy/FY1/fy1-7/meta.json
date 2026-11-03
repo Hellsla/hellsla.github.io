@@ -14,6 +14,20 @@
     "massa",
     "tilavuus"
   ],
+  "key_concepts": [
+    {
+      "term": "tiheys",
+      "explain": "Kertoo, kuinka paljon massaa on tilavuusyksikköä kohti. Se on aineen ominaisuus eikä riipu kappaleen koosta."
+    },
+    {
+      "term": "massa",
+      "explain": "Kertoo, kuinka paljon ainetta kappaleessa on."
+    },
+    {
+      "term": "tilavuus",
+      "explain": "Kertoo, kuinka suuren tilan kappale vie."
+    }
+  ],
   "sim": false,
   "solutions": "all",
   "image": false
