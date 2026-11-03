@@ -26,7 +26,7 @@
 **Muunnokset:** Muunnos joulesta elektronivolteiksi on itse tehtävä; muita muunnoksia ei tarvita.
 **Sijoitus:** $E = \dfrac{3{,}2 \cdot 10^{-19}\,\text{J}}{1{,}602 \cdot 10^{-19}\,\text{J}} \cdot 1\,\text{eV} = 1{,}998\,\text{eV}$
 **Vastaus:** $2{,}0\,\text{eV}$, kaksi merkitsevää numeroa kuten energiassa $3{,}2 \cdot 10^{-19}\,\text{J}$.
-**Järkevyys:** $1{,}6 \cdot 10^{-19}\,\text{J}$ on yksi elektronivoltti, ja annettu energia on tämän kaksinkertainen, joten tuloksen on oltava noin $2\,\text{eV}$. Se on oranssin valon fotonin energia.
+**Järkevyys:** $1{,}6 \cdot 10^{-19}\,\text{J}$ on yksi elektronivoltti, ja annettu energia on tämän kaksinkertainen, joten tuloksen on oltava noin $2\,\text{eV}$. Se on suunnilleen oranssin ja punaisen valon rajalla olevan fotonin energia.
 
 ## fy8-1-L1-04
 **Annettu:** aallonpituus $\lambda = 254\,\text{nm}$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^8\,\text{m/s}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$

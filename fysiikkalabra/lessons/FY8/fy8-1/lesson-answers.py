@@ -14,6 +14,7 @@ Ek = lambda lam, m: max(0.0, E_eV(lam) - W[m])              # E_k,max in eV, 0 w
 a = {}
 
 # --- theory: the electronvolt and the photon energy of 500 nm light ---
+a["hc-Jm"] = h * c                                          # 1,986e-25 J m
 a["hc-over-e-nm"] = h * c / e * 1e9                         # hc/e = 1240 eV·nm: E (eV) = 1240 : λ (nm)
 a["teoria-500-J"] = E_J(500)                                # 3,973e-19 J
 a["teoria-500-eV"] = E_eV(500)                              # 2,480 eV
@@ -71,4 +72,6 @@ a["tarkistus-2-J"] = E_J(450)                               # 4,414e-19 J
 a["tarkistus-2-mis-J"] = E_J(450)                           # mistake: left in joules
 a["exit-1"] = h * 1.0e15                                    # f = 1,0e15 Hz: 6,6e-19 J
 a["exit-1-eV"] = h * 1.0e15 / e                             # 4,1 eV
+a["exit-2-yellow"] = E_eV(590)                              # 2,10 eV < 2,28 eV: brighter yellow frees none
+a["exit-2-blue"] = E_eV(470)                                # 2,64 eV > 2,28 eV: blue light frees electrons
 print(json.dumps({k: round(v, 6) if abs(v) >= 1e-3 else float(f"{v:.6g}") for k, v in a.items()}))

@@ -123,7 +123,7 @@ Valo on sähkömagneettista aaltoliikettä, ja aallon intensiteetti kertoo, kuin
 ### Fotoni: valon energiakvantti
 Albert Einstein selitti havainnot vuonna 1905. Valon energia ei jakaudu tasaisesti aaltoon, vaan se on pakkautunut erillisiksi annoksiksi eli **kvanteiksi**. Valon kvanttia sanotaan **fotoniksi**. Yhden fotonin energia on $E = hf$, missä $f$ on valon taajuus ja $h$ **Planckin vakio**. Fotoni luovuttaa koko energiansa yhdelle elektronille kerralla, eikä elektroni tavallisessa valossa ehdi kerätä energiaa useammalta fotonilta. Jos $hf < W$, elektroni ei irtoa, vaikka fotoneja tulisi kuinka paljon tahansa. Jos $hf > W$, elektroni irtoaa ja ylimääräinen energia jää sille liike-energiaksi.
 
-<svg data-fig="energia" viewBox="0 0 600 304" role="img" aria-label="Energiakaavio mittakaavassa natriumille: alempi vaakaviiva on elektronin energia metallissa, ylempi 2,28 elektronivolttia korkeammalla energia, jolla elektroni juuri pääsee irti. Ero on irrotustyö W. Kolme pystysuoraa fotoninuolta alkavat alemmalta viivalta, ja niiden pituus on fotonin energia hf. Punaisen valon fotoni, 650 nanometriä ja 1,91 elektronivolttia, jää viivan alle: hf on pienempi kuin W, eikä elektroni irtoa. Vihreän valon fotoni, 544 nanometriä, ulottuu juuri viivalle: hf on yhtä suuri kuin W. Violetin valon fotoni, 405 nanometriä ja 3,06 elektronivolttia, ulottuu viivan yli; ylimenevä osa, 0,78 elektronivolttia, on elektronin suurin liike-energia E k max, merkitty sinisellä hakasella." style="max-width:100%;font-size:24px">
+<svg data-fig="energia" viewBox="0 0 600 304" role="img" aria-label="Energiakaavio mittakaavassa natriumille: alempi vaakaviiva on metallin heikoimmin sidotun elektronin energia, ylempi 2,28 elektronivolttia korkeammalla energia, jolla elektroni juuri pääsee irti. Ero on irrotustyö W. Kolme pystysuoraa fotoninuolta alkavat alemmalta viivalta, ja niiden pituus on fotonin energia hf. Punaisen valon fotoni, 650 nanometriä ja 1,91 elektronivolttia, jää viivan alle: hf on pienempi kuin W, eikä elektroni irtoa. Vihreän valon fotoni, 544 nanometriä, ulottuu juuri viivalle: hf on yhtä suuri kuin W. Violetin valon fotoni, 405 nanometriä ja 3,06 elektronivolttia, ulottuu viivan yli; ylimenevä osa, 0,78 elektronivolttia, on elektronin suurin liike-energia E k max, merkitty sinisellä hakasella." style="max-width:100%;font-size:24px">
   <line x1="160" y1="222" x2="500" y2="222" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
   <line x1="160" y1="85" x2="500" y2="85" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt" stroke-dasharray="8 6"/>
   <foreignObject x="92" y="70.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{irti}$</div></foreignObject>
@@ -157,14 +157,14 @@ Albert Einstein selitti havainnot vuonna 1905. Valon energia ei jakaudu tasaises
   <foreignObject x="478" y="41" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$E_\text{k,max}$</div></foreignObject>
 </svg>
 
-Tällä mallilla jokainen havainto selittyy. Valon intensiteetti kertoo, kuinka monta fotonia pinnalle osuu sekunnissa: kirkkaampi valo irrottaa siksi enemmän elektroneja, mutta yksittäinen elektroni saa silti vain yhden fotonin energian. Taajuus määrää yhden fotonin energian ja siksi elektronin suurimman liike-energian. Viivettä ei ole, koska jo ensimmäinen riittävän energinen fotoni voi irrottaa elektronin. Tässä mallissa energia on **kvantittunut**: säteily ja aine vaihtavat energiaa vain kokonaisina fotonin energioina.
+Tällä mallilla jokainen havainto selittyy. Samanvärisellä valolla intensiteetti kertoo, kuinka monta fotonia pinnalle osuu sekunnissa: kirkkaampi valo irrottaa siksi enemmän elektroneja, mutta yksittäinen elektroni saa silti vain yhden fotonin energian. Taajuus määrää yhden fotonin energian ja siksi elektronin suurimman liike-energian. Viivettä ei ole, koska jo ensimmäinen riittävän energinen fotoni voi irrottaa elektronin. Tässä mallissa energia on **kvantittunut**: säteily ja aine vaihtavat energiaa vain kokonaisina fotonin energioina.
 
 ### Elektronivoltti
 Fotonin ja elektronin energiat ovat jouleina hyvin pieniä lukuja, joten niille käytetään usein yksikköä **elektronivoltti** ($\text{eV}$). Yksi elektronivoltti on energia, jonka elektroni saa, kun se kiihtyy sähkökentässä $1\,\text{V}$:n jännitteen läpi. Koska elektronin varauksen suuruus on $e = 1{,}602 \cdot 10^{-19}\,\text{C}$, on $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 1\,\text{V} = 1{,}602 \cdot 10^{-19}\,\text{J}$. Muunnos tehdään sijoittamalla: esimerkiksi $3{,}20 \cdot 10^{-19}\,\text{J} = \tfrac{3{,}20 \cdot 10^{-19}}{1{,}602 \cdot 10^{-19}}\,\text{eV} \approx 2{,}00\,\text{eV}$.
 
 ## Kaava: Fotonin energia
 
-### Fotonin energia
+### Taajuus ja aallonpituus
 Taajuudeltaan $f$ olevan säteilyn fotonin energia on
 ```latex
 E = hf
@@ -173,14 +173,14 @@ missä $E$ on fotonin energia ($\text{J}$), $h = 6{,}626 \cdot 10^{-34}\,\text{J
 ```latex
 E = \frac{hc}{\lambda}
 ```
-missä $\lambda$ on säteilyn aallonpituus tyhjiössä ($\text{m}$). Mitä lyhyempi aallonpituus, sitä suurempi fotonin energia. Esimerkiksi vihreän valon, $\lambda = 500\,\text{nm}$, fotonin energia on $E = \tfrac{6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^8\,\text{m/s}}{500 \cdot 10^{-9}\,\text{m}} = 3{,}97 \cdot 10^{-19}\,\text{J}$ eli $2{,}48\,\text{eV}$.
+missä $\lambda$ on säteilyn aallonpituus tyhjiössä ($\text{m}$). Mitä lyhyempi aallonpituus, sitä suurempi fotonin energia. Esimerkiksi vihreän valon, $\lambda = 500\,\text{nm}$, fotonin energia on $E = \tfrac{6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^8\,\text{m/s}}{500 \cdot 10^{-9}\,\text{m}} = 3{,}97 \cdot 10^{-19}\,\text{J}$ eli $2{,}48\,\text{eV}$. Arvioita varten tulo $hc$ kannattaa muuntaa kerran elektronivolteiksi ja nanometreiksi: $hc = 1{,}986 \cdot 10^{-25}\,\text{J}\,\text{m} = \tfrac{1{,}986 \cdot 10^{-25}}{1{,}602 \cdot 10^{-19}}\,\text{eV}\,\text{m} \approx 1{,}240 \cdot 10^{-6}\,\text{eV}\,\text{m} = 1240\,\text{eV}\,\text{nm}$. Sillä saa nopean arvion: $500\,\text{nm}$:n fotonin energia on noin $1240\,\text{eV}\,\text{nm} : 500\,\text{nm} \approx 2{,}5\,\text{eV}$.
 
 ### Valosähköinen yhtälö
 Kun fotoni irrottaa elektronin, sen energia kuluu irrotustyöhön, ja loppu jää elektronin liike-energiaksi. Energian säilymisestä saadaan Einsteinin valosähköinen yhtälö
 ```latex
 hf = W + E_\text{k,max}
 ```
-missä $hf$ on fotonin energia, $W$ metallin irrotustyö ja $E_\text{k,max}$ irtoavan elektronin suurin mahdollinen liike-energia. Liike-energia on *suurin*, koska syvemmältä metallista irtoava elektroni menettää osan energiastaan jo matkalla pintaan, ja sen liike-energia jää pienemmäksi. Elektroneja irtoaa vain, jos $hf \geq W$. Pienin irrottava taajuus on **rajataajuus** $f_0 = \tfrac{W}{h}$, ja sitä vastaa pisin irrottava aallonpituus $\lambda_0 = \tfrac{hc}{W}$. Natriumilla $\lambda_0 \approx 544\,\text{nm}$, joten punainen ja keltainen valo eivät irrota siitä elektroneja, mutta vihreä, sininen ja violetti irrottavat.
+missä $hf$ on fotonin energia, $W$ metallin irrotustyö ja $E_\text{k,max}$ irtoavan elektronin suurin mahdollinen liike-energia. Liike-energia on *suurin*, koska syvemmältä metallista irtoava elektroni menettää osan energiastaan jo matkalla pintaan, ja sen liike-energia jää pienemmäksi. Elektroneja irtoaa vain, jos $hf \geq W$. Pienin irrottava taajuus on **rajataajuus** $f_0 = \tfrac{W}{h}$, ja sitä vastaa pisin irrottava aallonpituus $\lambda_0 = \tfrac{hc}{W}$. Natriumilla $\lambda_0 \approx 544\,\text{nm}$, joka on vihreän valon keskivaiheilla. Punainen, keltainen ja kellertävän vihreä valo eivät siis irrota natriumista elektroneja, mutta sinivihreä, sininen ja violetti irrottavat.
 
 <svg data-fig="kuvaaja" viewBox="0 0 600 400" role="img" aria-label="Kuvaaja mittakaavassa: irtoavien elektronien suurin liike-energia elektronivoltteina valon taajuuden funktiona, taajuusakseli nollasta 16 kertaa 10 potenssiin 14 hertsiin. Natriumin suora alkaa vaaka-akselilta rajataajuudelta 5,5 kertaa 10 potenssiin 14 hertsiä ja nousee arvoon 4,3 elektronivolttia. Sinkin suora alkaa rajataajuudelta 10,4 kertaa 10 potenssiin 14 hertsiä ja on natriumin suoran suuntainen. Rajataajuuden alapuolella elektroneja ei irtoa. Natriumin suoralle on piirretty katkoviivoin kulmakerrointa kuvaava kolmio, ja merkintä kertoo, että kulmakerroin on Planckin vakio h." style="max-width:100%;font-size:24px">
   <line x1="136.5" y1="340" x2="136.5" y2="56" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -292,7 +292,7 @@ E_\text{k,max} = \frac{hc}{\lambda} - W
 ## Yleinen virhekäsitys
 Moni ajattelee, että kirkkaampi valo antaa elektroneille enemmän energiaa, koska kirkas valo tuo pinnalle enemmän energiaa. Kirkkaampi valo tuo kuitenkin enemmän *fotoneja*, ei energisempiä fotoneja. Yksi elektroni saa aina yhden fotonin energian, joten kirkkaampi valo kasvattaa irtoavien elektronien määrää mutta ei niiden suurinta liike-energiaa. Siksi kirkaskaan punainen valo ei irrota elektroneja sinkistä: jokaisen punaisen fotonin energia jää irrotustyötä pienemmäksi.
 
-Toinen virhe on luulla, että fotoni on pieni valon "pallo", jolla on tietty paikka ja koko, ja että valo on siksi joko aalto tai hiukkasjoukko. Valosähköisessä ilmiössä valon energian siirtyminen näkyy kvantteina, mutta esimerkiksi valon interferenssi selittyy aaltomallilla. Valon kaksoisluonteeseen palataan luvussa *Valo ja elektroni aaltoina ja hiukkasina*.
+Toinen virhe on luulla, että fotoni on pieni valon ”pallo”, jolla on tietty paikka ja koko, ja että valo on siksi joko aalto tai hiukkasjoukko. Valosähköisessä ilmiössä valon energian siirtyminen näkyy kvantteina, mutta esimerkiksi valon interferenssi selittyy aaltomallilla. Valon kaksoisluonteeseen palataan luvussa *Valo ja elektroni aaltoina ja hiukkasina*.
 
 ## Tiivistelmä
 - Valosähköisessä ilmiössä valo irrottaa elektroneja metallin pinnasta. Pienin irrottamiseen tarvittava energia on metallin irrotustyö $W$.

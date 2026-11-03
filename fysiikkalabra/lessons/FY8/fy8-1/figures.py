@@ -78,7 +78,7 @@ def energia():
     """Ydinajatus: energy to scale (60 units per eV) for sodium: one photon gives its energy hf to one electron."""
     k, yb = 60, 222
     ytop = yb - W_NA * k
-    f = Fig("fy81-energia", 304, "Energiakaavio mittakaavassa natriumille: alempi vaakaviiva on elektronin energia metallissa, "
+    f = Fig("fy81-energia", 304, "Energiakaavio mittakaavassa natriumille: alempi vaakaviiva on metallin heikoimmin sidotun elektronin energia, "
             "ylempi 2,28 elektronivolttia korkeammalla energia, jolla elektroni juuri pääsee irti. Ero on irrotustyö W. Kolme "
             "pystysuoraa fotoninuolta alkavat alemmalta viivalta, ja niiden pituus on fotonin energia hf. Punaisen valon "
             "fotoni, 650 nanometriä ja 1,91 elektronivolttia, jää viivan alle: hf on pienempi kuin W, eikä elektroni irtoa. "

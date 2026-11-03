@@ -105,8 +105,8 @@
       "stage": "tutki",
       "type": "sim",
       "text": "Valaise metallilevyä eri aallonpituuksilla ja intensiteeteillä. Seuraa, irtoaako elektroneja, kuinka monta ja kuinka suurella energialla.",
-      "howto": "Säädä valon aallonpituutta $\\lambda$ ja intensiteettiä sekä valitse metalli. Lamppu lähettää fotoneja aaltoviivoina, joiden väri on valon väri; ultravioletti, jota silmä ei näe, on piirretty violettina. Siniset pisteet ovat irronneita elektroneja. Oikealla (puhelimessa alla) energiat ovat mittakaavassa: vasen pylväs on yhden fotonin energia $hf$, oikea elektronin irrotustyö $W$ ja sen päällä suurin liike-energia $E_\\text{k,max}$. Lukemissa näkyvät taajuus, fotonin energia, irrotustyö, suurin liike-energia ja kuvassa irtoavien elektronien määrä sekunnissa. *Nopeus* muuttaa vain kuvan liikkeen tahtia, ei lukemia.",
-      "model": "Valo saapuu fotoneina, joiden energia on $E = hf$. Yksi fotoni luovuttaa koko energiansa yhdelle elektronille; elektroni ei kerää energiaa useammalta fotonilta. Mallissa jokainen riittävän energinen fotoni irrottaa elektronin, mutta todellisuudessa vain pieni osa fotoneista irrottaa elektronin, ja elektroneja irtoaa miljardeja kertoja enemmän kuin kuvassa. Irtoavien elektronien liike-energiat vaihtelevat, koska osa menettää energiaa matkalla metallin pintaan; lukema kertoo suurimman. Irrotustyöt ovat tyypillisiä taulukkoarvoja: todellisen pinnan puhtaus muuttaa niitä. Lukemat ovat mallin laskemia arvoja. Mallin tulokset vastaavat sitä, mitä 1900-luvun alun kokeissa mitattiin.",
+      "howto": "Energiat ovat elektronivoltteina ($\\text{eV}$). Se on fotonien ja elektronien pienille energioille kätevä energian yksikkö: $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$. Säädä valon aallonpituutta $\\lambda$ ja intensiteettiä sekä valitse metalli. Lamppu lähettää fotoneja aaltoviivoina, joiden väri on valon väri; ultravioletti, jota silmä ei näe, on piirretty violettina. Siniset pisteet ovat irronneita elektroneja. Oikealla (puhelimessa alla) energiat ovat mittakaavassa: vasen pylväs on yhden fotonin energia $hf$, oikea elektronin irrotustyö $W$ ja sen päällä suurin liike-energia $E_\\text{k,max}$. Lukemissa näkyvät taajuus, fotonin energia, irrotustyö, suurin liike-energia ja kuvassa irtoavien elektronien määrä sekunnissa. *Nopeus* muuttaa vain kuvan liikkeen tahtia, ei lukemia.",
+      "model": "Valo saapuu fotoneina, joiden energia on $E = hf$. Yksi fotoni luovuttaa koko energiansa yhdelle elektronille; elektroni ei kerää energiaa useammalta fotonilta. Mallissa jokainen riittävän energinen fotoni irrottaa elektronin, mutta todellisuudessa vain pieni osa fotoneista irrottaa elektronin, ja elektroneja irtoaa miljardeja kertoja enemmän kuin kuvassa. Irtoavien elektronien liike-energiat vaihtelevat, koska osa menettää energiaa matkalla metallin pintaan; lukema kertoo suurimman. Irrotustyöt ovat tyypillisiä taulukkoarvoja: todellisen pinnan puhtaus muuttaa niitä. Mallin intensiteetti on fotonien määrä sekunnissa; todellisessa valossa saman tehon lyhytaaltoisessa valossa on vähemmän fotoneja, koska jokainen fotoni kantaa enemmän energiaa. Lukemat ovat mallin laskemia arvoja. Mallin tulokset vastaavat sitä, mitä 1900-luvun alun kokeissa mitattiin.",
       "calc": "Fotonin taajuus on $f = \\tfrac{c}{\\lambda}$ ja energia $E = hf = \\tfrac{hc}{\\lambda}$, missä $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$ ja $c = 2{,}998 \\cdot 10^8\\,\\text{m/s}$. Energia elektronivoltteina saadaan jakamalla luvulla $1{,}602 \\cdot 10^{-19}\\,\\tfrac{\\text{J}}{\\text{eV}}$. Jos $E \\geq W$, suurin liike-energia on $E_\\text{k,max} = E - W$, muuten elektroneja ei irtoa. Kuvassa fotoneja tulee $0{,}4$ sekunnissa intensiteetin prosenttiyksikköä kohti, eli intensiteetillä $50\\,\\%$ niitä tulee $20$ sekunnissa."
     },
     {
@@ -210,7 +210,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 3: vain aallonpituus muuttuu",
-      "intro": "Intensiteetti on nyt $50\\,\\%$; muuta vain aallonpituutta. Kirjaa lukemat ainakin aallonpituuksilla $300\\,\\text{nm}$, $400\\,\\text{nm}$ ja $500\\,\\text{nm}$. Etsi sitten aallonpituus, jolla elektronien irtoaminen loppuu, ja kirjaa lukemat sen molemmin puolin. Vertaa, kuinka paljon fotonin energia ja suurin liike-energia muuttuvat mittausten välillä.",
+      "intro": "Arvaa ensin: kasvaako vai pieneneekö suurin liike-energia, kun aallonpituus lyhenee eli taajuus kasvaa? Intensiteetti on nyt $50\\,\\%$, joten mallissa fotoneja tulee sekunnissa yhtä monta joka aallonpituudella; muuta vain aallonpituutta. Kirjaa lukemat ainakin aallonpituuksilla $300\\,\\text{nm}$, $400\\,\\text{nm}$ ja $500\\,\\text{nm}$. Etsi sitten aallonpituus, jolla elektronien irtoaminen loppuu, ja kirjaa lukemat sen molemmin puolin. Vertaa, kuinka paljon fotonin energia ja suurin liike-energia muuttuvat mittausten välillä.",
       "initial": {
         "lambda": 300,
         "I": 50,
@@ -393,7 +393,7 @@
         },
         {
           "text": "Vain punainen lamppu, koska sen teho on sata kertaa suurempi.",
-          "feedback": "Teho kertoo, kuinka monta fotonia lamppu lähettää sekunnissa, ei yhden fotonin energiaa. Yksi elektroni saa yhden fotonin energian, ja punaisen valon $1{,}91\\,\\text{eV}$ jää irrotustyötä $4{,}31\\,\\text{eV}$ pienemmäksi."
+          "feedback": "Teho kertoo, kuinka paljon energiaa lamppu lähettää sekunnissa. Punaisia fotoneja tulee paljon, mutta yksikään ei riitä: yksi elektroni saa yhden fotonin energian, ja punaisen valon $1{,}91\\,\\text{eV}$ jää irrotustyötä $4{,}31\\,\\text{eV}$ pienemmäksi."
         },
         {
           "text": "Molemmat, mutta punainen lamppu irrottaa elektroneja enemmän, koska sen teho on suurempi.",
