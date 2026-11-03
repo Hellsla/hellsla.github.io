@@ -34,7 +34,7 @@
 **Periaate:** Kaikki laserin fotonit ovat samanlaisia. Siksi pulssin energia on fotonien määrä kerrottuna yhden fotonin energialla $\tfrac{hc}{\lambda}$.
 **Kaava:** $E = N \cdot \dfrac{hc}{\lambda}$, josta $N = \dfrac{E\lambda}{hc}$
 **Muunnokset:** $E = 3{,}0\,\text{mJ} = 3{,}0 \cdot 10^{-3}\,\text{J}$ ja $\lambda = 1064\,\text{nm} = 1064 \cdot 10^{-9}\,\text{m}$.
-**Sijoitus:** $N = (3{,}0 \cdot 10^{-3}\,\text{J} \cdot 1064 \cdot 10^{-9}\,\text{m}) : (6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8}\,\text{m/s}) = \dfrac{3{,}192 \cdot 10^{-12}\,\text{J}\,\text{m}}{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}} = 1{,}6069 \cdot 10^{16}$
+**Sijoitus:** $N = (3{,}0 \cdot 10^{-3}\,\text{J} \cdot 1064 \cdot 10^{-9}\,\text{m}) : (6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8}\,\text{m/s}) = \dfrac{3{,}192 \cdot 10^{-9}\,\text{J}\,\text{m}}{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}} = 1{,}6069 \cdot 10^{16}$
 **Vastaus:** $1{,}6 \cdot 10^{16}$ fotonia. Vastauksessa on kaksi merkitsevää numeroa, kuten pulssin energiassa $3{,}0\,\text{mJ}$.
 **Järkevyys:** Yhden fotonin energia on $\tfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{1064 \cdot 10^{-9}\,\text{m}} \approx 1{,}9 \cdot 10^{-19}\,\text{J}$. Lasketaan vielä $1{,}6 \cdot 10^{16} \cdot 1{,}9 \cdot 10^{-19}\,\text{J} \approx 3 \cdot 10^{-3}\,\text{J}$, kuten pitääkin. Yksikkö kumoutuu, joten tulos on pelkkä luku.
 

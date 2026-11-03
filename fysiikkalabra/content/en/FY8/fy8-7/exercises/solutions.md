@@ -34,7 +34,7 @@
 **Principle:** All the photons of a laser are identical, so the energy of the pulse is the number of photons multiplied by the energy of one photon $\tfrac{hc}{\lambda}$.
 **Formula:** $E = N \cdot \dfrac{hc}{\lambda}$, from which $N = \dfrac{E\lambda}{hc}$
 **Conversions:** $E = 3.0\,\text{mJ} = 3.0 \cdot 10^{-3}\,\text{J}$ and $\lambda = 1064\,\text{nm} = 1064 \cdot 10^{-9}\,\text{m}$.
-**Substitution:** $N = (3.0 \cdot 10^{-3}\,\text{J} \cdot 1064 \cdot 10^{-9}\,\text{m}) : (6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2.998 \cdot 10^{8}\,\text{m/s}) = \dfrac{3.192 \cdot 10^{-12}\,\text{J}\,\text{m}}{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}} = 1.6069 \cdot 10^{16}$
+**Substitution:** $N = (3.0 \cdot 10^{-3}\,\text{J} \cdot 1064 \cdot 10^{-9}\,\text{m}) : (6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2.998 \cdot 10^{8}\,\text{m/s}) = \dfrac{3.192 \cdot 10^{-9}\,\text{J}\,\text{m}}{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}} = 1.6069 \cdot 10^{16}$
 **Answer:** $1.6 \cdot 10^{16}$ photons, two significant figures like the energy of the pulse $3.0\,\text{mJ}$.
 **Reasonableness:** The energy of one photon is $\tfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{1064 \cdot 10^{-9}\,\text{m}} \approx 1.9 \cdot 10^{-19}\,\text{J}$, and $1.6 \cdot 10^{16} \cdot 1.9 \cdot 10^{-19}\,\text{J} \approx 3 \cdot 10^{-3}\,\text{J}$, as it should be. The unit cancels, so the result is a pure number.
 
