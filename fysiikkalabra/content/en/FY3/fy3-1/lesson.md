@@ -1,4 +1,4 @@
-# Force as a measure of interaction and weight G = mg
+# Force as a measure of interaction and weight $G = mg$
 
 > **Why** does an astronaut weigh only one sixth as much on the Moon as on Earth, even though no part of the astronaut has gone missing?
 

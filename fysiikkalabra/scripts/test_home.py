@@ -66,6 +66,12 @@ for lang in i18n.languages():
         hrefs = [h for h in re.findall(r'<li class="live[^"]*">.*?<a href="([^"]+)"', mod) if "kasitetakomo.html" not in h]   # the card link: below
         expect(f"{lang} {code}: the module page links {done} lessons, each published (two clicks)",
                len([h for h in hrefs if not h.endswith("-sovella.html")]) == done and all((out / h).is_file() for h in hrefs), hrefs)
+        cards = re.findall(r'<li class="live ch-card">(.*?)</li>', mod, re.S)   # chapter cards (teacher 2026-11-03, "Ruukkikortit")
+        expect(f"{lang} {code}: every published chapter is a card with one link, its opening illustration and its Miksi question",
+               len(cards) == done and all(len(re.findall(r"<a ", c)) == 1 and 'class="ch-img"><svg aria-hidden="true"' in c and 'class="ch-why"' in c for c in cards),
+               [re.findall(r'href="([^"]+)"', c)[:1] for c in cards if 'class="ch-why"' not in c or "ch-img" not in c][:3])
+        themes = [t["first"] for t in curriculum[code].get("themes", [])]
+        expect(f"{lang} {code}: the chapters are under the module's {len(themes)} themes", mod.count('class="ch-theme"') == len(themes))
         expect(f"{lang} {code}: lessons before the goals, goals behind a disclosure",
                mod.find('class="lessons"') < mod.find('class="goals"') or 'class="goals"' not in mod)
     for bad in ('class="bar"', 'class="card', "1 oppituntia", "1 lessons", "1 tehtävää", "1 pistettä"):

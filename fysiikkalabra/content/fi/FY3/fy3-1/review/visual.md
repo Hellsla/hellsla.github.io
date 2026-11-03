@@ -1,8 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 9f2ccba6a0648bf1
+CONTENT-HASH: 0f30648522a98be5
+
 ## Blocking
-(none)
+
 ## Polish
-- Kuvateksti on pitkähkö mutta selittää painottomuuden oikein (putoaminen yhdessä Maan ympäri).
+- [Minor] top-390/top-1280 — the title formula is set in KaTeX serif at a slightly larger optical size than the heading font; reads clearly and is a consequence of the project-wide all-LaTeX rule, so nothing to change.
+- [Minor] top-390 breadcrumb — the title formula wraps to its own line (or the crumb wraps) in the breadcrumb on a phone — harmless, optional: none needed.
+
 ## Checked
-batch delta review: the added photo in the built preview at 360/768/1280 px (loads, no horizontal overflow, 320 px figure, credit under the caption), alt text vs image, Finnish and factual accuracy of the caption, placement in the page rhythm.
+batch delta review: opened fy3-1-top-390 (and top-1280 for fy2-5, fy3-6); the title formula renders as KaTeX (no red source), on one block with the heading, nothing clipped, no overflow, breadcrumb legible; the rest of the lesson is unchanged by the diff.

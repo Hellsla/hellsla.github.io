@@ -1,4 +1,4 @@
-# Power: P = ΔE/Δt
+# Power: $P = \Delta E/\Delta t$
 
 > **Why** can you not work out an electricity bill from the power of a device alone?
 

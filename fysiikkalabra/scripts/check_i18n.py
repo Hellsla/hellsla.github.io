@@ -56,7 +56,11 @@ def same_data(a, b, path, errs, key=None, parent=None):
 
 
 def formulas(text):
-    """The LaTeX of a text, \\text{} words set aside: what must stay exactly as it is in every language."""
+    """The LaTeX of a text, \\text{} words set aside: what must stay exactly as it is in every language. A chapter
+    reference's title ("(chapter *Power: $P = \\Delta E/\\Delta t$*)") is a name, not a formula of the text: the
+    Finnish source may cite the same chapter by a shorter name ("(luku *Teho*)")."""
+    text = re.sub(r"\b((?:luku|luvussa|luvusta|luvun|luvuissa|chapter|chapters)\s+)\*[^*]+\*", r"\1", str(text), flags=re.I)
+    text = re.sub(r"\((?:luku|chapter)\s[^()*]*\)", "()", text, flags=re.I)   # without the asterisks: "(chapter Heating and cooling …: $Q = cm\\Delta T$)"
     text = re.sub(r"```latex\n(.*?)```", lambda m: "$$" + m.group(1) + "$$", str(text), flags=re.S)
     found = re.findall(r"\$\$(.*?)\$\$", text, re.S) + re.findall(r"(?<!\$)\$([^$\n]+?)\$(?!\$)", re.sub(r"\$\$.*?\$\$", "", text, flags=re.S))
     return sorted(re.sub(r"\s+", "", re.sub(r"\\(text|mathrm)\{[^{}]*\}", r"\\\1{}", f)).replace("{,}", ".") for f in found)   # 4{,}2 = 4.2

@@ -1,4 +1,4 @@
-# Density: m = ρV
+# Density: $m = \rho V$
 
 > **Why** can two metal cubes of the same size feel completely different in weight in your hand, and how can you work out what an unknown object is made of using only a balance and a measuring cylinder?
 

@@ -1,4 +1,4 @@
-# Ideal gas law pV = nRT
+# Ideal gas law $pV = nRT$
 
 > **Why** is a helium balloon much lighter than an air balloon of the same size? Does it contain less gas?
 

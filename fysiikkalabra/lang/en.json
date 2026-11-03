@@ -38,6 +38,7 @@
     },
     "lesson_prototype": "prototype",
     "lesson_coming": "coming soon",
+    "chapter_n": "Chapter {{n}}",
     "course_goals": "Module goals",
     "course_goals_lead": "The student",
     "course_lessons": "Lessons",
