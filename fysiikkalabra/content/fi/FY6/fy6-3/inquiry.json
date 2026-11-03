@@ -1,0 +1,487 @@
+{
+  "version": 1,
+  "contribution": "Resistanssi määritellään mitatun jännitteen ja virran suhteena $R = U : I$; mittaamalla erotetaan Ohmin lakia noudattava vastus (suora ominaiskäyrä) hehkulampusta (kaareva käyrä, kun lanka kuumenee), ja langan resistanssi $R = \\rho l : A$ kytketään aineen resistiivisyyteen ja johtimen mittoihin.",
+  "learn": [
+    "määrittämään komponentin resistanssin sen jännitteestä ja virrasta.",
+    "tulkitsemaan ominaiskäyrää ja selittämään, milloin Ohmin laki pätee.",
+    "laskemaan johtimen resistanssin sen resistiivisyydestä, pituudesta ja poikkipinta-alasta."
+  ],
+  "prior": [
+    "Virta mitataan virtamittarilla, joka kytketään sarjaan komponentin kanssa, ja jännite jännitemittarilla, joka kytketään rinnan sen kanssa (luku *Mittaukset virtapiirissä*)",
+    "Sähkövirran suunta on sovittu plusnavasta miinusnapaan, ja metallissa virta on vapaiden elektronien liikettä (luku *Virtapiiri, sähkövirta ja jännite*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Kun leivänpaahdin on päällä, sama sähkövirta kulkee jatkojohdon kuparijohtimissa ja paahtimen lämmityslangassa. Jatkojohto pysyy kädessä viileänä, mutta paahtimen ohut lanka hehkuu oranssina. Jatkojohdon johtimet ovat paksua kuparia, paahtimen lanka ohutta kromnikkeliä.",
+      "question": "Mikä komponentin ominaisuus ratkaisee, kuinka suuren virran tietty jännite saa siinä aikaan, ja mistä tämä ominaisuus riippuu?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Kertaa: mittarien kytkentä",
+      "prompt": "Haluat mitata yhtä aikaa lampun jännitteen ja lampun läpi kulkevan virran. Miten mittarit kytketään?",
+      "choices": [
+        {
+          "text": "Virtamittari sarjaan lampun kanssa ja jännitemittari rinnan lampun kanssa.",
+          "correct": true,
+          "feedback": "Oikein. Virtamittarin läpi on kuljettava sama virta kuin lampun läpi, joten se on samassa virtapiirin haarassa lampun kanssa. Jännitemittari mittaa kahden pisteen välistä jännitettä, joten se kytketään lampun napoihin (luku *Mittaukset virtapiirissä*)."
+        },
+        {
+          "text": "Molemmat mittarit sarjaan lampun kanssa, jotta virta kulkee kaikkien läpi.",
+          "feedback": "Jännitemittarin resistanssi on hyvin suuri, joten sarjaan kytkettynä se lähes katkaisee virran ja lamppu sammuu. Jännitemittari kytketään rinnan sen komponentin kanssa, jonka jännite mitataan (luku *Mittaukset virtapiirissä*)."
+        },
+        {
+          "text": "Virtamittari rinnan lampun kanssa ja jännitemittari sarjaan lampun kanssa.",
+          "feedback": "Mittarit ovat vaihtaneet paikkaa. Virtamittarin resistanssi on hyvin pieni, joten rinnan kytkettynä lähes kaikki virta kulkisi mittarin kautta lampun ohi. Virtamittari kuuluu sarjaan, jännitemittari rinnan."
+        },
+        {
+          "text": "Molemmat mittarit rinnan lampun kanssa, koska ne mittaavat lamppua.",
+          "feedback": "Rinnan kytketty virtamittari ohittaisi lampun, koska sen resistanssi on hyvin pieni. Virran mittaamiseksi virran on kuljettava mittarin läpi, joten virtamittari kytketään sarjaan."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 1: hehkulampun virta",
+      "prompt": "Hehkulampun jännite nostetaan $1{,}5\\,\\text{V}$:sta $3{,}0\\,\\text{V}$:iin eli kaksinkertaiseksi. Miten lampun läpi kulkeva virta muuttuu?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-2",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "Virta kaksinkertaistuu, koska virta on suoraan verrannollinen jännitteeseen.",
+          "feedback": "Mallin arvot kumoavat tämän: virta kasvaa $0{,}182\\,\\text{A}$:sta vain $0{,}250\\,\\text{A}$:iin, noin 1,4-kertaiseksi. Suora verrannollisuus pätee vain, jos resistanssi pysyy samana. Lampun lanka kuumenee jännitteen kasvaessa, ja kuuman langan resistanssi on suurempi: $U : I$ kasvaa $8{,}3\\,\\Omega$:sta $12{,}0\\,\\Omega$:iin."
+        },
+        {
+          "text": "Virta kasvaa, mutta alle kaksinkertaiseksi.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä: virta kasvaa $0{,}182\\,\\text{A}$:sta $0{,}250\\,\\text{A}$:iin eli noin 1,4-kertaiseksi. Suhde $U : I$ kasvaa $8{,}3\\,\\Omega$:sta $12{,}0\\,\\Omega$:iin, koska lanka kuumenee ja kuuman metallin resistanssi on suurempi."
+        },
+        {
+          "text": "Virta kasvaa yli kaksinkertaiseksi, koska lamppu alkaa johtaa kunnolla vasta kuumana.",
+          "feedback": "Mallin arvot näyttävät päinvastaista: virta kasvaa vain noin 1,4-kertaiseksi, $0{,}182\\,\\text{A}$:sta $0{,}250\\,\\text{A}$:iin. Kuuma metalli johtaa sähköä huonommin kuin kylmä, koska ionit värähtelevät voimakkaammin ja elektronit törmäävät niihin useammin."
+        },
+        {
+          "text": "Virta pysyy samana, koska lamppu kuluttaa virran joka tapauksessa.",
+          "feedback": "Virta ei kulu lampussa: lampun jälkeen virta on yhtä suuri kuin ennen sitä. Suurempi jännite saa aikaan suuremman virran, mallissa $0{,}182\\,\\text{A}$:n sijaan $0{,}250\\,\\text{A}$. Lampussa muuttuu sähköenergiaa valoksi ja lämmöksi, ei virtaa."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 2: langan pituus",
+      "prompt": "Konstantaanilangan pituus kaksinkertaistetaan. Langan paksuus pysyy samana, ja sen päiden välille kytketään sama jännite. Miten langan resistanssi muuttuu?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-3",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "Resistanssi pysyy samana, koska lanka on samaa ainetta.",
+          "feedback": "Mallin arvot kumoavat tämän: $1{,}00\\,\\text{m}$:n langan resistanssi on $2{,}50\\,\\Omega$ ja $2{,}00\\,\\text{m}$:n langan $5{,}00\\,\\Omega$. Aine määrää resistiivisyyden, mutta resistanssi riippuu myös langan mitoista: pitkässä langassa elektronit törmäilevät ioneihin pidemmän matkan."
+        },
+        {
+          "text": "Resistanssi kaksinkertaistuu.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä: $1{,}00\\,\\text{m}$:n langassa virta on $0{,}600\\,\\text{A}$ ja $U : I = 2{,}50\\,\\Omega$, $2{,}00\\,\\text{m}$:n langassa $0{,}300\\,\\text{A}$ ja $5{,}00\\,\\Omega$. Kaksi kertaa pidempi lanka on kuin kaksi lyhyttä lankaa peräkkäin."
+        },
+        {
+          "text": "Resistanssi puolittuu, koska pidemmässä langassa on enemmän elektroneja kuljettamassa virtaa.",
+          "feedback": "Mallin arvot näyttävät päinvastaista: resistanssi kasvaa $2{,}50\\,\\Omega$:sta $5{,}00\\,\\Omega$:iin, ja virta puolittuu. Elektronien määrä kasvaa langan suunnassa, mutta ne kulkevat peräkkäin, eivät rinnakkain. Rinnakkaisia kulkureittejä tulee lisää vain, kun langan poikkipinta-ala kasvaa."
+        },
+        {
+          "text": "Resistanssi nelinkertaistuu, koska sekä matka että törmäykset kaksinkertaistuvat.",
+          "feedback": "Mallin arvot kumoavat tämän: resistanssi on $2{,}50\\,\\Omega$ ja $5{,}00\\,\\Omega$, siis kaksinkertainen. Törmäysten määrä kasvaa samassa suhteessa kuin matka; ne eivät ole kaksi erillistä tekijää."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Valitse komponentti, säädä jännitettä ja lue mittarit. Merkitse lukemia kuvaajaan ja katso, millainen komponentin ominaiskäyrästä tulee.",
+      "howto": "Valitse *Komponentti*: vastus, hehkulamppu tai konstantaanilanka. Säädä jännitelähteen jännitettä $U$. Jännitemittari näyttää komponentin jännitteen ja virtamittari sen läpi kulkevan virran. *Merkitse piste* lisää lukemat $(I, U)$-kuvaajaan; kuvaaja näyttää valitun komponentin pisteet, ja *Tyhjennä kuvaaja* poistaa ne. Langan pituus ja poikkipinta-ala vaikuttavat vain konstantaanilankaan, ja lanka on piirretty mittakaavassa. Violetit pisteet näyttävät sovitun virran suunnan plusnavasta miinusnapaan; ne liikkuvat sitä nopeammin, mitä suurempi virta on. *Nopeus* muuttaa vain niiden tahtia.",
+      "model": "Mittarit ovat ihanteellisia: virtamittarin resistanssi on nolla ja jännitemittarin läpi ei kulje virtaa, joten mittarit eivät muuta piiriä. Vastuksen ja konstantaanilangan lämpötila pysyy samana, joten niiden resistanssi ei muutu jännitteen mukana; konstantaanin resistiivisyys muuttuu lämpötilan mukana hyvin vähän. Hehkulampun malli jäljittelee tavallisen $3\\,\\text{V}$:n lampun käyttäytymistä: lanka kuumenee jännitteen kasvaessa, ja sen resistanssi kasvaa kylmän lampun arvosta $1{,}0\\,\\Omega$ arvoon $12{,}0\\,\\Omega$. Lukemat ovat mallin arvoja, eivät mittauksia.",
+      "calc": "Mittarit näyttävät jännitteen $U$ ja virran $I = U : R$. Vastuksen resistanssi on $R = 10\\,\\Omega$. Langan resistanssi on $R = \\rho l : A$, missä konstantaanin resistiivisyys on $\\rho = 5{,}0 \\cdot 10^{-7}\\,\\Omega\\cdot\\text{m}$ ja $A$ muutetaan neliömetreiksi, $1\\,\\text{mm}^2 = 10^{-6}\\,\\text{m}^2$. Lampun resistanssi riippuu jännitteestä:\n\n$$R = R_\\text{k} + (R_\\text{n} - R_\\text{k}) \\left(\\frac{U}{U_\\text{n}}\\right)^{0{,}6}$$\n\nmissä $R_\\text{k} = 1{,}0\\,\\Omega$, $R_\\text{n} = 12{,}0\\,\\Omega$ ja $U_\\text{n} = 3{,}0\\,\\text{V}$. Kaava on kokeellisiin mittauksiin sovitettu malli, ei fysiikan laki. Haalea käyrä on laskettu samoista kaavoista jännitteillä 0–$3{,}0\\,\\text{V}$."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 1: vastuksen ominaiskäyrä",
+      "intro": "Komponentti on vastus. Muuta vain jännitettä ja kirjaa virta ainakin kolmella jännitteellä, esimerkiksi $0{,}5\\,\\text{V}$, $1{,}5\\,\\text{V}$ ja $3{,}0\\,\\text{V}$. Merkitse samat lukemat kuvaajaan *Merkitse piste* -painikkeella. Laske jokaiselle riville $U : I$.",
+      "initial": {
+        "comp": "vastus",
+        "U": 0.5
+      },
+      "locked": [
+        "comp"
+      ],
+      "vary": "U",
+      "names": {
+        "comp": "komponentti",
+        "U": "jännite",
+        "L": "langan pituus",
+        "A": "langan poikkipinta-ala"
+      },
+      "units": {
+        "U": "V",
+        "L": "m",
+        "A": "mm²"
+      },
+      "values": {
+        "comp": {
+          "vastus": "vastus",
+          "lamppu": "hehkulamppu",
+          "lanka": "konstantaanilanka"
+        }
+      },
+      "measure": [
+        {
+          "key": "I",
+          "label": "I (A)"
+        }
+      ],
+      "min": 3,
+      "question": {
+        "type": "numeric",
+        "prompt": "Laske vastuksen resistanssi $R = U : I$ yhdeltä taulukkosi riviltä. Vastaa ohmeina.",
+        "answer": 10,
+        "unit": "Ω",
+        "tolerance": 0.02,
+        "hints": [
+          "Valitse rivi, jolla jännite ja virta eivät ole nollia, esimerkiksi $U = 1{,}5\\,\\text{V}$.",
+          "Resistanssi on jännite jaettuna virralla, ei virta jaettuna jännitteellä.",
+          "$R = 1{,}50\\,\\text{V} : 0{,}150\\,\\text{A}$."
+        ],
+        "mistakes": [
+          {
+            "value": 0.1,
+            "feedback": "Jaoit virran jännitteellä. Resistanssi on $R = U : I$: jännite jaetaan virralla, ja yksikkö on $\\text{V/A} = \\Omega$."
+          }
+        ],
+        "solution": "**Annettu:** taulukosta esimerkiksi $U = 1{,}50\\,\\text{V}$ ja $I = 0{,}150\\,\\text{A}$ (mallin arvoja)\n\n**Kysytty:** vastuksen resistanssi $R$ ohmeina\n\n**Periaate:** Resistanssi on komponentin jännitteen ja sen läpi kulkevan virran suhde. Virtamittari on sarjassa vastuksen kanssa ja jännitemittari rinnan, joten lukemat koskevat juuri vastusta.\n\n**Kaava:** $R = \\dfrac{U}{I}$\n\n**Muunnokset:** Ei tarvita: jännite on voltteina ja virta ampeereina, ja $1\\,\\text{V/A} = 1\\,\\Omega$.\n\n**Sijoitus:** $R = \\dfrac{1{,}50\\,\\text{V}}{0{,}150\\,\\text{A}} = 10{,}0\\,\\Omega$\n\n**Vastaus:** $10{,}0\\,\\Omega$, kolme merkitsevää numeroa kuten mittarien lukemissa.\n\n**Järkevyys:** Sama tulos saadaan jokaiselta riviltä: $0{,}5\\,\\text{V} : 0{,}050\\,\\text{A} = 10\\,\\Omega$ ja $3{,}0\\,\\text{V} : 0{,}300\\,\\text{A} = 10\\,\\Omega$. Vakio suhde tarkoittaa, että virta on suoraan verrannollinen jännitteeseen, kuten Ohmin laki sanoo."
+      }
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 2: hehkulampun ominaiskäyrä",
+      "intro": "Testaa ennuste 1. Komponentti on nyt hehkulamppu. Muuta vain jännitettä ja kirjaa virta ainakin jännitteillä $1{,}5\\,\\text{V}$ ja $3{,}0\\,\\text{V}$, halutessasi myös pienemmillä. Merkitse lukemat kuvaajaan ja vertaa käyrää vastuksen suoraan. Laske joka riville $U : I$.",
+      "initial": {
+        "comp": "lamppu",
+        "U": 1.5
+      },
+      "locked": [
+        "comp"
+      ],
+      "vary": "U",
+      "names": {
+        "comp": "komponentti",
+        "U": "jännite",
+        "L": "langan pituus",
+        "A": "langan poikkipinta-ala"
+      },
+      "units": {
+        "U": "V",
+        "L": "m",
+        "A": "mm²"
+      },
+      "values": {
+        "comp": {
+          "vastus": "vastus",
+          "lamppu": "hehkulamppu",
+          "lanka": "konstantaanilanka"
+        }
+      },
+      "measure": [
+        {
+          "key": "I",
+          "label": "I (A)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "koe-3",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 3: langan pituus",
+      "intro": "Testaa ennuste 2. Komponentti on konstantaanilanka, jännite on $1{,}5\\,\\text{V}$ ja poikkipinta-ala $0{,}20\\,\\text{mm}^2$. Muuta vain langan pituutta ja kirjaa virta ainakin pituuksilla $1{,}00\\,\\text{m}$ ja $2{,}00\\,\\text{m}$. Laske joka riville resistanssi $U : I$.",
+      "initial": {
+        "comp": "lanka",
+        "U": 1.5,
+        "L": 0.5,
+        "A": 0.2
+      },
+      "locked": [
+        "comp",
+        "U",
+        "A"
+      ],
+      "vary": "L",
+      "names": {
+        "comp": "komponentti",
+        "U": "jännite",
+        "L": "langan pituus",
+        "A": "langan poikkipinta-ala"
+      },
+      "units": {
+        "U": "V",
+        "L": "m",
+        "A": "mm²"
+      },
+      "values": {
+        "comp": {
+          "vastus": "vastus",
+          "lamppu": "hehkulamppu",
+          "lanka": "konstantaanilanka"
+        }
+      },
+      "measure": [
+        {
+          "key": "I",
+          "label": "I (A)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "koe-4",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 4: langan paksuus",
+      "intro": "Langan pituus on nyt $1{,}00\\,\\text{m}$ ja jännite $1{,}5\\,\\text{V}$. Muuta vain poikkipinta-alaa ja kirjaa virta ainakin arvoilla $0{,}10\\,\\text{mm}^2$, $0{,}20\\,\\text{mm}^2$ ja $0{,}40\\,\\text{mm}^2$. Miten resistanssi $U : I$ muuttuu, kun poikkipinta-ala kaksinkertaistuu?",
+      "initial": {
+        "comp": "lanka",
+        "U": 1.5,
+        "L": 1,
+        "A": 0.1
+      },
+      "locked": [
+        "comp",
+        "U",
+        "L"
+      ],
+      "vary": "A",
+      "names": {
+        "comp": "komponentti",
+        "U": "jännite",
+        "L": "langan pituus",
+        "A": "langan poikkipinta-ala"
+      },
+      "units": {
+        "U": "V",
+        "L": "m",
+        "A": "mm²"
+      },
+      "values": {
+        "comp": {
+          "vastus": "vastus",
+          "lamppu": "hehkulamppu",
+          "lanka": "konstantaanilanka"
+        }
+      },
+      "measure": [
+        {
+          "key": "I",
+          "label": "I (A)"
+        }
+      ],
+      "min": 2,
+      "optional": true
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös: milloin $U : I$ pysyy vakiona?",
+      "after": [
+        "koe-1",
+        "koe-2",
+        "koe-3"
+      ],
+      "prompt": "Kirjoita taulukoidesi perusteella: millä komponentilla suhde $U : I$ pysyi samana jännitteestä riippumatta ja millä se muuttui? Miksi lampun suhde muuttui? Miten langan resistanssi riippui sen pituudesta?",
+      "model": "Vastuksella $U : I$ oli joka jännitteellä $10\\,\\Omega$, esimerkiksi $1{,}50\\,\\text{V} : 0{,}150\\,\\text{A} = 10{,}0\\,\\Omega$. Virta on siis suoraan verrannollinen jännitteeseen, ja vastus noudattaa Ohmin lakia; sen ominaiskäyrä on origon kautta kulkeva suora. Lampulla suhde kasvoi jännitteen mukana: $1{,}5\\,\\text{V}$:lla $8{,}3\\,\\Omega$ ja $3{,}0\\,\\text{V}$:lla $12{,}0\\,\\Omega$, ja ominaiskäyrä kaartuu. Mitä suurempi jännite, sitä kuumemmaksi lanka kuumenee, ja kuuman metallin resistanssi on suurempi. Konstantaanilangan resistanssi kaksinkertaistui, kun pituus kaksinkertaistui: $1{,}00\\,\\text{m}$:llä $2{,}50\\,\\Omega$ ja $2{,}00\\,\\text{m}$:llä $5{,}00\\,\\Omega$. Arvot ovat mallin arvoja: mallissa mittarit ovat ihanteellisia ja vastuksen ja langan lämpötila pysyy samana.",
+      "criteria": [
+        "Laskin suhteen $U : I$ ja totesin sen vakioksi vastuksella.",
+        "Totesin lampun suhteen kasvavan jännitteen mukana ja selitin sen langan kuumenemisella.",
+        "Totesin langan resistanssin kaksinkertaistuvan pituuden kaksinkertaistuessa ja tuin sen luvuilla.",
+        "Sanoin, että luvut ovat mallin arvoja eivätkä mittauksia."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Palaa ennusteisiisi",
+      "prompt": "Vertaa ennusteitasi kokeiden mallin arvoihin. Palaa sitten alun kysymykseen: miksi leivänpaahtimen lanka tehdään ohuesta kromnikkelistä ja jatkojohdon johtimet paksusta kuparista? Käytä sanoja resistanssi ja resistiivisyys.",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2"
+      ],
+      "optional": true
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe",
+      "prompt": "Opiskelija haluaa määrittää hehkulampun resistanssin jännitteellä $3{,}0\\,\\text{V}$, jolloin virta on $0{,}25\\,\\text{A}$. Hän piirtää lampun $(I, U)$-kuvaajaan tangentin pisteeseen $(0{,}25\\,\\text{A};\\ 3{,}0\\,\\text{V})$, lukee sen kulmakertoimen ja kirjoittaa: lampun resistanssi on $27\\,\\Omega$. Missä on virhe?",
+      "choices": [
+        {
+          "text": "Resistanssi on suhde $U : I$ eli origosta piirretyn suoran kulmakerroin, ei tangentin: $12\\,\\Omega$.",
+          "correct": true,
+          "feedback": "Oikein: $3{,}0\\,\\text{V} : 0{,}25\\,\\text{A} = 12\\,\\Omega$. Resistanssi määritellään jännitteen ja virran suhteena samassa toimintapisteessä. Tangentti kertoo, kuinka paljon jännite muuttuu, kun virta muuttuu vähän, ja kaarevalla käyrällä se on eri asia. Vain suoralla ominaiskäyrällä tangentti ja origosta piirretty suora yhtyvät."
+        },
+        {
+          "text": "Tangentti on oikea tapa, mutta kulmakerroin olisi pitänyt laskea virta jaettuna jännitteellä.",
+          "feedback": "Tangentin kulmakerroin ei ole lampun resistanssi kummin päin tahansa laskettuna. Lisäksi $(I, U)$-kuvaajan kulmakertoimen yksikkö on $\\text{V/A} = \\Omega$, joten jännite jaetaan virralla. Resistanssi on $U : I = 12\\,\\Omega$."
+        },
+        {
+          "text": "Hehkulampulle ei voi laskea resistanssia, koska se ei noudata Ohmin lakia.",
+          "feedback": "Resistanssi $R = U : I$ on määritelty jokaisessa toimintapisteessä myös komponentille, joka ei noudata Ohmin lakia. Lampun resistanssi vain muuttuu jännitteen mukana: jännitteellä $3{,}0\\,\\text{V}$ se on $12\\,\\Omega$."
+        },
+        {
+          "text": "Laskussa ei ole virhettä; lampun resistanssi on suurempi kuin $12\\,\\Omega$, koska lanka on kuuma.",
+          "feedback": "Langan kuumuus on jo mukana mitatussa virrassa $0{,}25\\,\\text{A}$: juuri kuuman langan vuoksi virta on näin pieni. Resistanssi tässä pisteessä on $3{,}0\\,\\text{V} : 0{,}25\\,\\text{A} = 12\\,\\Omega$."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Sovella uuteen tilanteeseen",
+      "prompt": "Pistorasia on $18\\,\\text{m}$:n päässä sähkökeskuksesta. Virta kulkee keskukselta pistorasialle yhtä kuparijohdinta pitkin ja palaa toista pitkin, joten johdinta on virran matkalla yhteensä $36\\,\\text{m}$. Johtimen poikkipinta-ala on $1{,}5\\,\\text{mm}^2$ ja kuparin resistiivisyys $1{,}7 \\cdot 10^{-8}\\,\\Omega\\cdot\\text{m}$. Mikä on tämän $36\\,\\text{m}$:n johdinmatkan resistanssi? Vastaa ohmeina.",
+      "answer": 0.408,
+      "unit": "Ω",
+      "tolerance": 0.02,
+      "hints": [
+        "Mikä kaava antaa johtimen resistanssin sen aineesta ja mitoista? Mikä pituus kaavaan sijoitetaan?",
+        "$R = \\rho l : A$, missä $l = 36\\,\\text{m}$. Poikkipinta-ala on muutettava neliömetreiksi.",
+        "$1{,}5\\,\\text{mm}^2 = 1{,}5 \\cdot (10^{-3}\\,\\text{m})^2 = 1{,}5 \\cdot 10^{-6}\\,\\text{m}^2$, joten $R = \\dfrac{1{,}7 \\cdot 10^{-8}\\,\\Omega\\cdot\\text{m} \\cdot 36\\,\\text{m}}{1{,}5 \\cdot 10^{-6}\\,\\text{m}^2}$."
+      ],
+      "mistakes": [
+        {
+          "value": 0.204,
+          "feedback": "Laskit vain toisen johtimen. Virta kulkee keskukselta pistorasialle ja takaisin, joten johdinmatka on $2 \\cdot 18\\,\\text{m} = 36\\,\\text{m}$."
+        },
+        {
+          "value": 0.000408,
+          "feedback": "Muunsit neliömillimetrit kertoimella $10^{-3}$. Neliömillimetri on millimetri kertaa millimetri: $1\\,\\text{mm}^2 = (10^{-3}\\,\\text{m})^2 = 10^{-6}\\,\\text{m}^2$."
+        }
+      ],
+      "solution": "**Annettu:** kupari $\\rho = 1{,}7 \\cdot 10^{-8}\\,\\Omega\\cdot\\text{m}$; johdinmatka $l = 2 \\cdot 18\\,\\text{m} = 36\\,\\text{m}$; poikkipinta-ala $A = 1{,}5\\,\\text{mm}^2$\n\n**Kysytty:** johdinmatkan resistanssi $R$ ohmeina\n\n**Periaate:** Johdin on tasapaksua kuparia, joten sen resistanssi on verrannollinen pituuteen ja kääntäen verrannollinen poikkipinta-alaan. Virta kulkee menojohtimen ja paluujohtimen läpi peräkkäin, joten pituudeksi otetaan molempien pituus yhteensä.\n\n**Kaava:** $R = \\rho \\dfrac{l}{A}$\n\n**Muunnokset:** $A = 1{,}5\\,\\text{mm}^2 = 1{,}5 \\cdot (10^{-3}\\,\\text{m})^2 = 1{,}5 \\cdot 10^{-6}\\,\\text{m}^2$\n\n**Sijoitus:** $R = \\dfrac{1{,}7 \\cdot 10^{-8}\\,\\Omega\\cdot\\text{m} \\cdot 36\\,\\text{m}}{1{,}5 \\cdot 10^{-6}\\,\\text{m}^2} = 0{,}408\\,\\Omega$\n\n**Vastaus:** $0{,}41\\,\\Omega$, kaksi merkitsevää numeroa kuten resistiivisyydessä ja poikkipinta-alassa.\n\n**Järkevyys:** Yksi metri tätä johdinta on noin $0{,}011\\,\\Omega$, joten $36\\,\\text{m}$ on vajaa puoli ohmia. Resistanssi on pieni, kuten johtimelta odotetaan: $10\\,\\text{A}$:n virralla johtimiin jää jännitettä vain $10\\,\\text{A} \\cdot 0{,}408\\,\\Omega \\approx 4\\,\\text{V}$ verkon $230\\,\\text{V}$:sta.",
+      "optional": true
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Harjoittele kolmella tasolla. Tason 1 tehtävissä käytetään yhtä kaavaa, tason 2 tehtävissä muunnetaan yksiköitä, ratkaistaan kaava tai luetaan kuvaajaa, ja taso 3 vaatii päättelyä."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Käsite",
+      "prompt": "Vastuksen jännite kaksinkertaistetaan, ja vastuksen lämpötila pysyy samana. Mitä vastuksen resistanssille tapahtuu?",
+      "choices": [
+        {
+          "text": "Resistanssi kaksinkertaistuu, koska $R = U : I$ ja jännite kaksinkertaistuu.",
+          "feedback": "Kaava $R = U : I$ ei tarkoita, että resistanssi riippuisi jännitteestä. Kun jännite kaksinkertaistuu, myös virta kaksinkertaistuu, ja suhde pysyy samana. Resistanssi riippuu aineesta, mitoista ja lämpötilasta."
+        },
+        {
+          "text": "Resistanssi pysyy samana, ja virta kaksinkertaistuu.",
+          "correct": true,
+          "feedback": "Oikein. Vakiolämpötilassa vastus noudattaa Ohmin lakia: virta on suoraan verrannollinen jännitteeseen, joten suhde $U : I$ ei muutu. Esimerkiksi $10\\,\\Omega$:n vastuksessa $1{,}5\\,\\text{V}$ antaa $0{,}15\\,\\text{A}$ ja $3{,}0\\,\\text{V}$ antaa $0{,}30\\,\\text{A}$."
+        },
+        {
+          "text": "Resistanssi puolittuu, koska suurempi jännite työntää virran helpommin läpi.",
+          "feedback": "Suurempi jännite saa aikaan suuremman virran, mutta se ei muuta vastuksen ominaisuuksia. Suhde $U : I$ pysyy samana, kun lämpötila ei muutu."
+        },
+        {
+          "text": "Resistanssi pysyy samana, mutta virta pysyy myös samana.",
+          "feedback": "Jos resistanssi pysyy samana, kaksinkertainen jännite saa aikaan kaksinkertaisen virran, koska $I = U : R$. Virta ei siis pysy samana."
+        }
+      ],
+      "practice": "Harjoittele tason 1 tehtävillä, joissa lasketaan resistanssi, jännite tai virta."
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Ominaiskäyrä mittauspisteistä",
+      "figure": "fy6-3/resistor-points",
+      "prompt": "Kuvaajassa ovat vastuksen mittauspisteet, kun jännitettä muutettiin ja virta mitattiin. Sovita pisteisiin origon kautta kulkeva suora ja määritä vastuksen resistanssi suoran kulmakertoimesta. Vastaa ohmeina.",
+      "answer": 22,
+      "unit": "Ω",
+      "tolerance": 0.05,
+      "hints": [
+        "Miksi suora kulkee origon kautta? Mikä suure on $(I, U)$-kuvaajan kulmakerroin?",
+        "Lue kulmakerroin kahdesta sovitetun suoran pisteestä, ei kahdesta vierekkäisestä mittauspisteestä. Origo on toinen piste.",
+        "Sovitettu suora kulkee virralla $0{,}100\\,\\text{A}$ jännitteen $2{,}2\\,\\text{V}$ kohdalta: $R = 2{,}2\\,\\text{V} : 0{,}100\\,\\text{A}$."
+      ],
+      "mistakes": [
+        {
+          "value": 0.045,
+          "feedback": "Laskit virran jaettuna jännitteellä. $(I, U)$-kuvaajan kulmakerroin on pystyakselin muutos jaettuna vaaka-akselin muutoksella eli $\\Delta U : \\Delta I$, ja sen yksikkö on $\\text{V/A} = \\Omega$."
+        }
+      ],
+      "solution": "**Annettu:** viisi mittauspistettä $(I, U)$-kuvaajassa; virta $0{,}020$–$0{,}100\\,\\text{A}$, jännite $0{,}47$–$2{,}21\\,\\text{V}$\n\n**Kysytty:** vastuksen resistanssi $R$ ohmeina\n\n**Periaate:** Vastus noudattaa Ohmin lakia, joten $U = RI$: ominaiskäyrä on suora, jonka kulmakerroin on $R$. Suora kulkee origon kautta, koska ilman jännitettä virtaa ei kulje. Todellisissa mittaussarjoissa mittauspisteet eivät yleensä sijaitse täsmälleen samalla suoralla mittausepävarmuuden vuoksi, joten suora sovitetaan kaikkiin pisteisiin.\n\n**Kuvaajan lukeminen:** Origon kautta piirretty suora kulkee pisteiden lomasta, osa pisteistä jää sen yläpuolelle ja osa alapuolelle. Suoralta luetaan kaukana origosta oleva piste: virralla $0{,}100\\,\\text{A}$ suoran jännite on $2{,}2\\,\\text{V}$. Toinen piste on origo $(0;\\ 0)$.\n\n**Kaava:** $R = \\dfrac{\\Delta U}{\\Delta I}$\n\n**Muunnokset:** Ei tarvita: jännite on voltteina ja virta ampeereina.\n\n**Sijoitus:** $R = \\dfrac{2{,}2\\,\\text{V} - 0\\,\\text{V}}{0{,}100\\,\\text{A} - 0\\,\\text{A}} = 22\\,\\Omega$\n\n**Vastaus:** $22\\,\\Omega$, kaksi merkitsevää numeroa, koska jännite luetaan sovitetulta suoralta noin $0{,}05\\,\\text{V}$:n tarkkuudella.\n\n**Järkevyys:** Yksittäiset pisteet antavat lähes saman arvon: $0{,}86\\,\\text{V} : 0{,}040\\,\\text{A} \\approx 22\\,\\Omega$ ja $1{,}74\\,\\text{V} : 0{,}080\\,\\text{A} \\approx 22\\,\\Omega$. Arvo on tavallisen vastuksen suuruusluokkaa."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Selitä ja siirrä",
+      "prompt": "Pitkässä jatkojohdossa käytetään paksumpia kuparijohtimia kuin lyhyessä, vaikka laitteet olisivat samat. Selitä miksi käyttämällä käsitteitä resistanssi ja resistiivisyys.",
+      "criteria": [
+        "Totean, että johtimen resistanssi on $R = \\rho l : A$ ja kasvaa pituuden mukana.",
+        "Totean, että suurempi poikkipinta-ala pienentää resistanssia ja korvaa pituuden vaikutuksen.",
+        "Perustelen, miksi johtimen resistanssin pitää olla pieni: johdin ei saa lämmetä eikä viedä laitteelta jännitettä.",
+        "Mainitsen, että kuparin resistiivisyys on pieni, joten se on hyvä johdinaine."
+      ],
+      "model": "Johtimen resistanssi on $R = \\rho l : A$. Pitkässä jatkojohdossa johdinta on enemmän, joten saman paksuisen johtimen resistanssi olisi suurempi: kaksi kertaa pidempi johdin, kaksinkertainen resistanssi. Johtimen resistanssin pitää olla pieni, jotta johdin ei lämpene vaarallisesti ja jotta jännitettä jää laitteelle eikä johtoon. Kun poikkipinta-alaa kasvatetaan samassa suhteessa kuin pituutta, resistanssi pysyy ennallaan. Johtimet tehdään kuparista, koska sen resistiivisyys $1{,}7 \\cdot 10^{-8}\\,\\Omega\\cdot\\text{m}$ on metallien pienimpiä.",
+      "optional": true
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Lopuksi kaksi nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+    }
+  ]
+}
