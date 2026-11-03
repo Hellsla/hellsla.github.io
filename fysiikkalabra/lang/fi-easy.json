@@ -44,10 +44,13 @@
     "course_lessons": "Oppitunnit",
     "course_title": "{{code}} · {{title}}",
     "course_description": "{{code}} {{title}}: lukion fysiikan moduulin oppitunnit, simulaatiot ja tehtävät. {{done}} / {{n}} oppituntia on valmiina.",
-    "home_lead": "Tee ennuste, tutki ilmiötä simulaatiolla ja rakenna selitys itse.",
     "home_description": "Lukion fysiikkaa tutkimalla ja kokeilemalla: ennusteet, simulaatiot, selitykset ja tehtävät, LOPS 2019:n moduulit FY1–FY8.",
     "credits": "{{n}} op",
-    "home_tagline": "Tutki. Oivalla. Sovella.",
+    "home_h1": "Tutki. Ymmärrä. Käytä.",
+    "home_sub": "Lukion fysiikka, LOPS 2019. Ennusta, tutki simulaatiolla tai aineistolla, selitä itse.",
+    "study": "Näin opiskelet",
+    "about": "Tietoa sivustosta",
+    "about_lead": "Ruukkilabra on lukion fysiikan oppimateriaali. Se on kaikkien käytettävissä (LOPS 2019).",
     "home_path": "Näin opiskelet Ruukkilabrassa",
     "home_start_lead": "Valitse moduuli. Aloita sen ensimmäisestä luvusta tai luvusta, jota opiskelette tunnilla. Jokainen luku etenee samalla tavalla.",
     "home_path_herata": "ilmiö ja kysymys, johon luku vastaa",
@@ -68,10 +71,7 @@
     "lang_unavailable": "sivua ei vielä ole, vie moduulin sivulle",
     "unavailable_note": "Sivua <strong>{{title}}</strong> ei vielä ole tällä kielellä. Alla näet moduulin oppitunnit. Näet myös, mitkä niistä voit jo avata.",
     "home_title": "Lukion fysiikkaa tutkimalla.",
-    "modules_lead": "Lukion fysiikan moduulit (LOPS 2019). Luku kertoo, montako oppituntia on julkaistu. Se ei kerro omaa edistymistäsi.",
     "upcoming": "Tulossa",
-    "upcoming_lead": "Näistä moduuleista ei ole vielä oppitunteja. Moduulin sivulla näet, mitä oppitunteja on tulossa.",
-    "open_module": "Avaa moduuli →",
     "lessons_all": {
       "one": "{{n}} oppitunti",
       "other": "{{n}} oppituntia"
@@ -99,16 +99,8 @@
       "FY7": "Miten sähkö ja magnetismi liittyvät toisiinsa?",
       "FY8": "Mistä säteily syntyy, ja mitä atomissa tapahtuu?"
     },
-    "local_courses": "Lukiokohtaiset opintojaksot",
-    "local_courses_lead": "Nämä ovat Kiviruukin lukion omia opintojaksoja. Ne eivät ole valtakunnallisia moduuleja. Kaikki voivat silti käyttää niiden materiaaleja.",
     "local_course_kind": "Lukiokohtainen opintojakso",
     "local_status_planning": "Suunnitteilla",
-    "local_status_home_planning": "Opintojakson suunnitelma on vielä kesken",
-    "local_investigations": {
-      "one": "{{n}} tutkimus käytettävissä",
-      "other": "{{n}} tutkimusta käytettävissä"
-    },
-    "open_course": "Avaa opintojakso →",
     "local_distinct": "Tämä on lukion oma opintojakso ({{school}}). Sen tavoitteet ja sisällöt tulevat lukion omasta suunnitelmasta. Ne eivät tule valtakunnallisista moduuleista FY1–FY8.",
     "local_status_note_planning": "Tällä sivulla on opintojakson suunnitelma. Tutkimuksia tulee sivulle sitä mukaa kuin ne valmistuvat. Laajuutta ja arviointia ei ole vielä päätetty.",
     "local_goals": "Opintojaksolla opit",
@@ -124,7 +116,6 @@
     "local_unavailable_note": "Sivua <strong>{{title}}</strong> ei vielä ole selkosuomeksi. Se on vain tavallisella suomella.",
     "lang_unavailable_home": "sivua ei vielä ole, vie etusivulle",
     "local_status_building": "Tekeillä",
-    "local_status_home_building": "Opintojakso on tekeillä",
     "local_status_note_building": "Oppitunteja tulee sivulle sitä mukaa kuin ne valmistuvat. Laajuutta ja arviointia ei ole vielä päätetty.",
     "local_status_ready": "Valmis"
   },
@@ -1930,12 +1921,6 @@
     "velocity": "nopeus {{dir}};"
   },
   "units": {
-    "home_sessions": "noin {{n}} oppituntia",
-    "home_count": {
-      "one": "{{n}} oppitunti valmiina",
-      "other": "{{n}} oppituntia valmiina"
-    },
-    "taught_in_en": "englanniksi",
     "language_note_en": "Tämä opintojakso on englanniksi. Oppitunnit ovat sivuston englanninkielisessä osassa.",
     "authors": "Tekijät",
     "and": "ja",
@@ -1952,8 +1937,6 @@
   },
   "cards": {
     "title": "Käsitetakomo",
-    "home_lead": "Kertaa fysiikan sanoja ja niiden merkityksiä korttien avulla. Valitse moduuli ja aihe.",
-    "home_link": "Käsitetakomo – kertaa fysiikan käsitteitä",
     "module_lead": "Kertaa moduulin tärkeitä sanoja korttien avulla. Valitse aihe Käsitetakomossa.",
     "module_link": "Kertaa tämän moduulin käsitteet",
     "lesson_link": "Kertaa luvun käsitteet Käsitetakomossa"

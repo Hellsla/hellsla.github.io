@@ -77,7 +77,7 @@ header.top nav>a,.lang-menu>summary{display:inline-flex;align-items:center;min-h
 header.top nav>a:hover,.lang-menu>summary:hover{color:var(--ink);background:var(--bg-tint)}
 header.top nav>a:active,.lang-menu>summary:active{background:var(--line)}
 @media (max-width:29.99rem){header.top nav>a.nav-modules{display:none}.brand-name small{letter-spacing:.06em}.lang-menu>summary{padding:0 10px}}
-@media (max-width:39.99rem){header.top nav>a.nav-reading{display:none}}   /* Lukuvinkit gives way first on a phone; the footer of every page links to it */
+@media (max-width:39.99rem){header.top nav>a.nav-reading,header.top nav>a.nav-study{display:none}}   /* Lukuvinkit gives way first on a phone; the footer of every page links to it */
 .visually-hidden{position:absolute!important;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
 /* the language control: the current language on a quiet button, the others in a small panel (a <details>, no script) */
 .lang-menu{position:relative;margin:0}
@@ -128,65 +128,56 @@ main.home section{margin:0}
 main.home,main.reading:not(.lesson){hyphens:auto;overflow-wrap:break-word}   /* long Finnish compounds wrap with enlarged text instead of running off a phone */
 main.home h2{font:600 clamp(1.5rem,1.3rem + .6vw,1.75rem)/1.2 var(--serif);letter-spacing:-.01em;margin:0 0 .4rem}
 .section-lead{font-size:var(--fs-ui);color:var(--ink-2);max-width:40rem;margin:0 0 1rem}
-.home-intro{padding:clamp(1.4rem,4vw,3.2rem) 0 clamp(1.6rem,4vw,2.6rem);max-width:44rem}
-.motto{display:flex;align-items:center;gap:.7rem;margin:0 0 .7rem;font:600 var(--fs-small)/1.3 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--copper-ink)}
-.motto::before{content:"";width:28px;height:2px;background:var(--copper);flex:none}
-.home-intro h1{font:500 clamp(2.1rem,1.5rem + 3vw,3.5rem)/1.06 var(--serif);letter-spacing:-.025em;margin:0 0 .8rem;color:var(--ink)}
-.home-intro .lead{font:400 clamp(1.125rem,1.05rem + .3vw,1.3rem)/1.5 var(--sans);color:var(--ink-2);max-width:36rem;margin:0}
-.catalogue{padding-top:.4rem}
-.mod-list,.up-list{list-style:none;margin:0;padding:0}
-.mod-row{position:relative;display:grid;grid-template-columns:minmax(0,1fr);column-gap:.9rem;row-gap:.3rem;margin:0;padding:1.15rem .5rem 1.2rem;border-top:1px solid var(--line)}
-.mod-row:last-child{border-bottom:1px solid var(--line)}
-.mod-row:hover{background:color-mix(in srgb,var(--bg-tint) 60%,transparent)}
-.mod-row:active{background:var(--bg-tint)}
+/* compacted 2026-11-03 ("tiivistä etusivu"): the heading, one line under it and the module list in two columns from
+   700 px fit one desktop screen with the footer. A row is one link: icon, code, title and the Miksi question in the
+   secondary colour (cut to one line in two columns, whole in its title); hover and focus tint the row and show the
+   arrow. On the right, Tulossa is dimmed (--text-muted, a faded icon, no hover tint) and the school's own courses
+   follow under the school's name; the group headings are small and low, so they never match a row's height. */
+:root{--text-muted:#5f6370}
+main.home{max-width:none}
+main.home+footer.bottom{margin-top:1.75rem}
+.home-intro{padding:clamp(.6rem,2vw,1.6rem) 0 clamp(1rem,2.2vw,1.6rem)}
+.home-intro h1{font:500 clamp(2rem,1.55rem + 1.9vw,3rem)/1.08 var(--serif);letter-spacing:-.025em;margin:0 0 .45rem;color:var(--ink)}
+.home-intro .lead{font:400 clamp(1.0625rem,1rem + .25vw,1.1875rem)/1.45 var(--sans);color:var(--ink-2);max-width:none;margin:0;hyphens:manual}
+@media (min-width:64rem){.home-intro .lead{white-space:nowrap}}
+.mod-cols{display:grid;grid-template-columns:minmax(0,1fr);gap:1.4rem 2.5rem;align-items:start}
+@media (min-width:700px){.mod-cols{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:clamp(1.25rem,3vw,2.5rem)}}
+.mod-list{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.mod-list>li{margin:0;border-bottom:1px solid var(--line)}
+.mod-group{font:700 .75rem/1.2 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--ink-2);margin:0 0 .35rem}
+.mod-group~.mod-group{margin-top:1rem}
+.mod-row{display:flex;align-items:center;gap:.8rem;min-height:56px;padding:.45rem .6rem;color:var(--ink);text-decoration:none;border-radius:8px}
+.mod-icon{display:block;width:40px;height:40px;flex:none}
+.mod-text{display:flex;flex-direction:column;flex:1;min-width:0}
+.mod-name{font:600 1.0625rem/1.3 var(--sans);color:var(--ink)}
 .mod-code{font:700 var(--fs-small)/1.5 var(--sans);letter-spacing:.06em;color:var(--accent-deep)}
-.mod-main{min-width:0}
-.mod-title{font:500 clamp(1.3rem,1.2rem + .4vw,1.5rem)/1.2 var(--serif);margin:0 0 .25rem;letter-spacing:-.01em}
-.mod-link{color:var(--ink);text-decoration:none}
-.mod-link::after{content:"";position:absolute;inset:0;z-index:1}   /* the whole row is the link's target */
-.mod-row:hover .mod-link{color:var(--accent-deep);text-decoration:underline;text-decoration-thickness:1px}
-.mod-q{margin:0;font-size:1rem;line-height:1.5;color:var(--ink-2);max-width:34rem}
-.mod-meta{display:flex;flex-wrap:wrap;gap:.1rem .9rem;margin:.15rem 0 0;font-size:var(--fs-small);line-height:1.45;color:var(--ink-2)}
-.mod-avail{font-weight:700;color:var(--ink)}
-.mod-go{justify-self:start;font:700 var(--fs-ui)/1.4 var(--sans);color:var(--accent-deep);margin-top:.15rem}
-.mod-row:hover .mod-go{text-decoration:underline}
-@supports selector(:has(*)){.mod-link:focus-visible{outline:none}.mod-row:has(.mod-link:focus-visible){outline:3px solid var(--accent);outline-offset:2px;border-radius:6px}}
-/* the module icon (teacher 2026-10-31, scripts/module_icons.py): decorative, in its own column at the row's left edge,
-   beside the code and the title on a phone; the name stays the row's main element and the row keeps one link */
-.mod-row:has(> .mod-icon){grid-template-columns:2.75rem minmax(0,1fr);column-gap:.85rem}
-.mod-icon{display:block;width:2.75rem;height:2.75rem;grid-row:1 / span 2;align-self:start;margin-top:.1rem}
-.mod-row:has(> .mod-icon)>:not(.mod-icon){grid-column:2}
-@media (min-width:64rem){
-  .mod-row{grid-template-columns:4rem minmax(0,1fr) 15rem 9.5rem;align-items:baseline;padding:1.3rem .75rem}
-  .mod-meta{grid-column:3;flex-direction:column;margin:0}
-  .mod-go{grid-column:4;justify-self:end;margin:0}
-  .mod-row:has(> .mod-icon){grid-template-columns:3rem 4rem minmax(0,1fr) 15rem 9.5rem;column-gap:.9rem}
-  .mod-icon{width:3rem;height:3rem;grid-row:1;align-self:start;margin:-.2rem 0 0}
-  .mod-row:has(> .mod-icon)>.mod-code{grid-column:2}.mod-row:has(> .mod-icon)>.mod-main{grid-column:3}
-  .mod-row:has(> .mod-icon)>.mod-meta{grid-column:4}.mod-row:has(> .mod-icon)>.mod-go{grid-column:5}
+.mod-name .mod-code{margin-right:.35rem}
+.mod-q{font-size:var(--fs-small);line-height:1.4;color:var(--ink-2)}
+.mod-go{flex:none;width:1.25rem;font:700 1.125rem/1 var(--sans);color:var(--accent-deep);text-align:right;opacity:0}
+.mod-row:hover,.mod-row:focus-visible{background:var(--bg-tint)}
+.mod-row:hover .mod-go,.mod-row:focus-visible .mod-go{opacity:1}
+.mod-row:hover .mod-title{color:var(--accent-deep)}
+.mod-row:focus-visible{outline-offset:0}
+.mod-row.coming .mod-code,.mod-row.coming .mod-title,.mod-row.coming .mod-q{color:var(--text-muted)}
+.mod-row.coming .mod-name{font-weight:500}
+.mod-row.coming .mod-icon{filter:grayscale(1);opacity:.55}
+.mod-row.coming:hover{background:none}.mod-row.coming:hover .mod-go{opacity:0}.mod-row.coming:hover .mod-title{color:var(--text-muted)}
+@media (min-width:700px){   /* two columns: at most 64 px a row; a long title may take two lines in the narrow range, never cut */
+  .mod-row{min-height:60px;padding-block:.2rem}
+  .mod-q{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 }
-.upcoming{margin-top:2.8rem!important}
-.upcoming h2{font-size:1.375rem!important}
-.up-list{display:grid;grid-template-columns:minmax(0,1fr);border-top:1px solid var(--line)}
-@media (min-width:64rem){.up-list{grid-template-columns:1fr 1fr;column-gap:2rem}}
-.up-list li{margin:0;display:flex;flex-direction:column;border-bottom:1px solid var(--line);padding:.15rem .25rem .55rem}
-@media (min-width:40rem){.up-list li{flex-direction:row;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:0 .8rem;padding:.2rem .25rem}}
-.up-list a{display:flex;align-items:baseline;gap:.6rem;max-width:100%;min-height:44px;padding:.55rem 0 .2rem;color:var(--ink);text-decoration:none;font-size:1rem}
-.up-list a .mod-code{line-height:1.5;flex:none}.up-list .up-title{min-width:0}
-.up-list a:has(.up-icon){align-items:center}@media (min-width:40rem){.up-list li:has(.up-icon){align-items:center}}.up-icon{display:block;width:2.25rem;height:2.25rem;flex:none}   /* Tulossa keeps its compact rows: a smaller icon, the row no taller */
-.up-list a:hover .up-title{text-decoration:underline;color:var(--accent-deep)}
-.up-meta{font-size:var(--fs-small);color:var(--ink-2)}
-/* the learning model: the six stage names the lessons use, a compact numbered sequence on thin rules */
-.path{margin-top:3.2rem!important}
+@media (min-width:700px) and (max-width:63.99rem){.mod-name{font-size:.9375rem;line-height:1.25}.mod-q{font-size:.8125rem;line-height:1.3}.mod-row{gap:.6rem;padding-inline:.4rem}}
+/* the learning model (moved to the top of Lukuvinkit 2026-11-03): the six stage names the lessons use, a compact
+   numbered sequence on thin rules, two columns in the reading column, more tips behind a disclosure */
+.path{margin:0 0 2.6rem}
+.path h2{margin-top:.6rem}
 .path .section-lead{margin-bottom:.4rem}
-.path-steps{list-style:none;counter-reset:step;padding:0;margin:1rem 0 0;display:grid;grid-template-columns:1fr;border-top:1px solid var(--line)}
+.path-steps{list-style:none;counter-reset:step;padding:0;margin:1rem 0 0;display:grid;grid-template-columns:1fr;column-gap:1.6rem;border-top:1px solid var(--line)}
 .path-steps li{counter-increment:step;margin:0;display:grid;align-content:start;grid-template-columns:2rem minmax(0,1fr);column-gap:.4rem;padding:.6rem 0;border-bottom:1px solid var(--line-2);font-size:var(--fs-ui);line-height:1.45;color:var(--ink-2)}
 .path-steps li::before{content:counter(step);grid-row:span 2;font:600 1.25rem/1.2 var(--serif);color:var(--copper-ink)}
 .path-steps strong{font:700 1rem/1.35 var(--sans);color:var(--ink)}
-@media (min-width:48rem){.path-steps{grid-template-columns:repeat(3,1fr);column-gap:1.6rem}}
-@media (min-width:72rem){.path-steps{grid-template-columns:repeat(6,1fr);column-gap:1.2rem;border-top:0}.path-steps li{display:flex;flex-direction:column;gap:.15rem;border-bottom:0;border-top:2px solid var(--line);padding:.7rem 0 0}.path-steps li::before{margin-bottom:.1rem}}
-details.more-tips{margin:1rem 0 0;max-width:44rem}
-@media (max-width:71.99rem){details.more-tips{margin-top:.4rem}}
+@container content (min-width:34rem){.path-steps{grid-template-columns:repeat(2,1fr)}}
+details.more-tips{margin:.6rem 0 0}
 details.more-tips>summary{min-height:44px;font:600 var(--fs-ui) var(--sans);color:var(--accent-deep)}
 details.more-tips ul{margin:.3rem 0 0;padding-left:1.3rem;font-size:1rem;line-height:1.55;color:var(--ink-2)}
 details.more-tips li{margin:.35rem 0}
@@ -247,7 +238,6 @@ ol.lessons li.ch-card.live:hover>a{text-decoration:underline}
    the national modules, rows as the catalogue's; the course page reuses the module page's parts (eyebrow, notes,
    the numbered list with "suunnitteilla" tags) and adds plain lists for goals, ways of working, the report sections
    and the chapters to prepare with. No cards, the one reading column. */
-.local-courses{margin-top:2.8rem!important}
 .notice.local-status{border-left-color:var(--copper);margin-bottom:1.2rem}
 .local-desc{max-width:38rem}
 .local-goals,.local-report{max-width:38rem;padding-left:1.3rem}
@@ -676,7 +666,7 @@ nav.chapter-nav a:focus-visible{outline:3px solid var(--accent);outline-offset:2
 nav.chapter-nav a.prev .dir::before{content:"← "}nav.chapter-nav a.next .dir::after{content:" →"}
 /* Käsitetakomo (teacher 2026-11-03, scripts/concept_cards.py): the chapter's small link above the chapter navigation, the front page's section */
 p.concept-link{max-width:var(--measure);margin:3rem 0 0;font-size:var(--fs-ui)}p.concept-link a,ul.concept-cards a{display:inline-flex;align-items:center;min-height:44px;font-weight:700;color:var(--accent-deep);text-decoration:none;overflow-wrap:anywhere}p.concept-link a:hover,ul.concept-cards a:hover{text-decoration:underline}p.concept-link a::after{content:"→";margin-left:.5em;flex:none}
-p.concept-link+nav.chapter-nav{margin-top:1rem}.concept-home{margin-top:2.8rem!important}ul.concept-cards a::after{content:"→";margin-left:.5em;flex:none}
+p.concept-link+nav.chapter-nav{margin-top:1rem}
 /* after a wrong answer in Tarkista osaamisesi: where to practise, as a suggestion (inquiry.py, teacher 2026-10-29) */
 .practice-hint{display:none;margin:.6rem 0 0;padding:.55rem .8rem;border-radius:var(--inner-radius);background:var(--bg-tint);font-size:var(--fs-inner);line-height:1.5}
 fieldset.choice[data-state="no"] .practice-hint,.numeric:has(output[data-state="no"]) .practice-hint{display:block}
