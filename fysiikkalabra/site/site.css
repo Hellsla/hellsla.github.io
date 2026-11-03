@@ -808,7 +808,7 @@ dialog.zoom-dlg::backdrop{background:rgba(14,17,22,.78)}
    bottom while reading, and where the reading is: the block tinted, the sentence and the word highlighted (CSS Custom
    Highlight API, the page itself is not changed). Outline and shadow only, so the layout never moves. */
 .ra-bar{margin:.25rem 0 1rem}
-.ra-ui svg{width:22px;height:22px;max-width:none;flex:none}
+.ra-ui svg{width:22px;height:22px;max-width:none;flex:none;background:none;border:0;border-radius:0;padding:0}   /* not the figure frame of article svg */
 .ra-start,.ra-btn{display:inline-flex;align-items:center;justify-content:center;gap:.45rem;min-height:44px;min-width:44px;font:600 var(--fs-ui) var(--sans);border:1px solid var(--accent-deep);border-radius:999px;background:var(--surface);color:var(--accent-deep);cursor:pointer}
 .ra-start{padding:0 1.1rem 0 .9rem}
 .ra-start[aria-pressed="true"],.ra-btn.ra-main{background:var(--accent-deep);color:#fff}
@@ -828,3 +828,7 @@ html.ra-reading body{padding-bottom:6rem}
 ::highlight(ra-word){background-color:#fcc419;color:var(--ink);text-decoration:underline;text-decoration-thickness:2px}
 @media (max-width:400px){.ra-row{gap:.25rem}.ra-speed{padding:0 .25rem}}
 @media print{.ra-ui{display:none!important}.ra-on{background:none;box-shadow:none}}
+.ra-voice{display:flex;align-items:center;gap:.5rem;margin:.45rem .2rem 0;font:500 var(--fs-small) var(--sans);color:var(--ink-2)}
+.ra-voice[hidden]{display:none}
+.ra-voice select{flex:1;min-width:0;max-width:17rem;min-height:44px;padding:0 .4rem;font:500 var(--fs-ui) var(--sans);color:var(--ink);border:1px solid var(--line);border-radius:10px;background:var(--surface)}
+.ra-voice select:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
