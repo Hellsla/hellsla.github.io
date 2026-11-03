@@ -1,17 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 0d7a828662213851
+CONTENT-HASH: a9e318659ceaa6df
 
 ## Blocking
 (none)
 
 ## Polish
-- inquiry.json koe-2 — N = floor(5/T) and f = 1/T only evaluate the predicted formula; ask the student also to record d at the wrong periods so the sim's emergent quantity (marker drifting out of step) carries the test.
-- Workload: 2 predictions, 3 experiments, explain, example, siirto, 12 exercises, 3 checks and exit ticket is the top of one lesson; keep kertaus, virhe, vaihe, pohdi and tarkistus-3 optional, consider koe-3 optional.
+- lesson.md (hero) — Polish: the pale arc under the swing is rather faint at 390 px and can be read as a hammock; a slightly darker or dashed stroke would make it read as a path.
 
 ## Checked
-- Round 1 polish applied: "poikkeama mallista" is now "sovitusvirhe" everywhere (no leftovers in lesson.md or inquiry.json), no collision with displacement x.
-- ennuste-1 now gives only the 12 cm extreme gap and the midpoint; the answer still has to be worked out and is refutable by d.
-- Opening question answered by Ydinajatus, graph reading, sine model and fit; goals covered, no more.
-- Predictions refutable in the sim; option feedback repairs 2A vs A and T vs 1/T.
-- Example staged, arithmetic verified; virhe/siirto/tarkistus distractors misconception-based.
-- Finnish: no errors found; glossary terms as defined; exit ticket tests the core idea.
+- Delta only: the hero illustration and its alt text; the rest of the lesson is as previously approved.
+- The swing at its extreme position, a pale arc of the seat's path and an adult with a stopwatch map directly to amplitude, period and the opening question. Geometry is consistent (rope length equals the arc radius, seat at the arc's end, arc concave up). No numbers or axes disclose the answer.
+- The Finnish alt text matches the picture element by element and is in correct language; the opening question's wording is unchanged.
+- Hero is legible at 390 px and 1280 px (top captures) and carries no text.

@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 3ca89352c3f28244
+CONTENT-HASH: ecbf431cd67a132d
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] the sim's chart title 'Attempts' and 'point of application d' wrap at 1280 px next to the sliders; harmless, same as Finnish.
-- [Minor] 'Assumptions of the model and explanation' appears as a fourth fold box in some English sims (shared template string sim_note), not specific to this chapter.
+- [Minor] hero (fig-1, top-390, intro-1280): the breaker bar is only slightly longer than the short spanner on the asphalt, so "long vs short" is weak at 390 px; lengthening the bar a little would sharpen the chapter's contrast (optional).
 
 ## Checked
-- Captures: contact-1, contact-2, fig-row-1280 (door figure, labels wall/hinge/handle/seen from above fit), fig-3-390 (line of action), fig-4-390 (anticlockwise/clockwise, widths adjusted and clear), fig-5-390, sim-390, sim-1280, exp-exp-1-390-1/-2, exp-exp-2-390-2, open-exercises-1280-1/-2/-4 (grid figure, language-neutral), open-exercises-L3-1280-1.
-- No Finnish left in figure words, subscripts, sim labels, table headers or status lines after the fixes; decimal point and British spelling throughout; formulas typeset as in the Finnish.
-- Layout at 390 and 1280 px matches the Finnish page; check_layout at 345 px OK.
+- Delta (illustration only). Opened fy5-1-top-390 (fi), fy5-1-intro-1280 (fi), fy5-1-fig-1-390 in fi, en and fi-easy (same picture in all three, only rendering noise differs).
+- Hero is a flat vector scene in the figure palette on the paper tone, no text in the picture, subject in the middle third, readable at 366 px width, nothing clipped except the intended close-up crop; 16:9-ish column width, layout around it intact.
+- Alt text (en) read against the picture: it describes what is drawn, with no contradiction; language natural and consistent with the chapter's opening question.
 
 ## Scores
-illustrations 4 · typography 5 · English 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

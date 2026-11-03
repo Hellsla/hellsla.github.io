@@ -1,7 +1,7 @@
 """Figures of this lesson (scripts/figlib.py, scripts/fbd.py); `python scripts/figures.py fy5-9` writes them into lesson.md."""
 import math
 from figlib import (Fig, Axes, fi, INK, MUTED, WHITE, RULE, RULE_LIGHT, GLASS, SAND, SAND_LIGHT, SAND_DARK, GRAIN, ALUMINIUM,
-                    METAL_EDGE, IRON, GOOD, GOOD_LIGHT, COLD, COLD_LIGHT, HOT, HEAT, HEAT_LIGHT, ICE, n)
+                    METAL_EDGE, IRON, COPPER, GOOD, GOOD_LIGHT, COLD, COLD_LIGHT, HOT, HOT_LIGHT, HEAT, HEAT_LIGHT, ICE, PAPER, n)
 from fbd import FBD, FORCE, VELOCITY, ACCEL, open_head
 import herolib as H
 
@@ -197,47 +197,107 @@ def graph_task():
 
 
 def hero():
-    """The chapter's opening illustration: a playground swing set; one swing at the end of its swing, one hanging still."""
-    f = H.hero("fy59-hero", "Kuvitus: leikkipuiston keinuteline nurmikolla puiden edessä. Kahdesta samanpituisesta keinusta "
-               "toisessa istuu lapsi keinun ollessa heilahduksensa ääriasennossa, toinen keinu riippuu tyhjänä paikallaan. "
-               "Katkoviivainen kaari näyttää keinun radan.")
-    H.sky(f, "fy59h")
-    H.cloud(f, 860, 110, 1.0); H.cloud(f, 300, 80, 0.7)
-    H.forest(f, 400, 70, 30, "#2b8a3e", seed=2)
-    f.rect(0, 420, 1200, 180, GOOD_LIGHT)
-    for k in range(40):
-        x = H.rnd(k, 7) * 1200; y = 440 + H.rnd(k + 50, 7) * 150
-        f.path(f"M{n(x)},{n(y)} l4,-12 M{n(x + 6)},{n(y)} l-2,-10", stroke="#2b8a3e", w=2)
-    # sandy patch under the swings
-    f.add(f'<ellipse cx="600" cy="520" rx="330" ry="46" fill="{SAND_LIGHT}"/>')
-    # the frame: two A-legs and a top bar
-    top, foot = 120, 530
-    for cx in (330, 870):
-        f.path(f"M{cx - 70},{foot} L{cx},{top} L{cx + 70},{foot}", stroke=METAL_EDGE, w=16, extra='stroke-linecap="round"')
-    f.line(320, top, 880, top, METAL_EDGE, 20, cap="round")
-    # the empty swing hanging still on the right
-    for x in (720, 780):
-        f.line(x, top + 8, x, 438, METAL_EDGE, 4)
-    f.rect(706, 436, 88, 14, SAND, INK, 2.5, 4)
-    # the child's swing at its extreme position on the left (pivot at y = top, angle 30°)
-    a = math.radians(26); L = 330
-    for x in (520, 580):
-        ex, ey = x - L * math.sin(a), top + L * math.cos(a)
-        f.line(x, top + 8, ex, ey, METAL_EDGE, 4)
-    cx, cy = 550 - L * math.sin(a), top + L * math.cos(a)
-    f.path(f"M{n(550 - 352 * math.sin(math.radians(32)))},{n(top + 352 * math.cos(math.radians(32)))} A352,352 0 0 0 {n(550 + 352 * math.sin(math.radians(32)))},{n(top + 352 * math.cos(math.radians(32)))}",
-           stroke=MUTED, w=3, extra='stroke-dasharray="10 9"')
-    f.add(f'<g transform="rotate(26 {n(cx)} {n(cy)})">')
-    f.rect(cx - 44, cy - 7, 88, 14, SAND, INK, 2.5, 4)
-    # the child sitting: trousers (thighs forward, shins down), body, arms to the ropes, head
-    f.path(f"M{n(cx - 20)},{n(cy - 8)} H{n(cx + 46)} V{n(cy + 52)} H{n(cx + 30)} V{n(cy + 10)} H{n(cx - 20)} Z", INK)
-    f.path(f"M{n(cx - 26)},{n(cy - 6)} Q{n(cx - 30)},{n(cy - 92)} {n(cx - 4)},{n(cy - 96)} Q{n(cx + 22)},{n(cy - 92)} {n(cx + 18)},{n(cy - 6)} Z", HEAT)
-    f.path(f"M{n(cx + 8)},{n(cy - 74)} L{n(cx + 30)},{n(cy - 104)}", stroke=HEAT, w=14, extra='stroke-linecap="round"')
-    f.circle(cx + 30, cy - 106, 8, SAND_LIGHT)
-    f.circle(cx - 4, cy - 118, 24, SAND_LIGHT)
-    f.path(f"M{n(cx - 28)},{n(cy - 120)} Q{n(cx - 26)},{n(cy - 148)} {n(cx - 2)},{n(cy - 146)} Q{n(cx + 24)},{n(cy - 146)} {n(cx + 22)},{n(cy - 122)} Q{n(cx)},{n(cy - 132)} {n(cx - 28)},{n(cy - 120)} Z", INK)
+    """Two oscillators of one home, each at its own pace: a pendulum clock (the long pendulum swings slowly behind the
+    glass of its door) and a baby bouncing in a door bouncer hanging from a coil spring clamped to the door frame. One
+    scale (about 2,1 px per cm): the clock and the door are 2 m tall. No swing: that is fy5-7's picture."""
+    f = H.hero("fy59-hero", "Kuvitus: olohuone, jossa on kaksi värähtelijää. Vasemmalla seisoo kaappikello, jonka lasioven "
+               "takana pitkä heiluri on heilahtanut sivuun. Oikealla oviaukon yläkarmiin on kiinnitetty kierrejousi, jonka "
+               "varassa vauva istuu hyppykiikussa varpaat lattiaa vasten. Taustalla on ikkuna, huonekasvi ja taulu, edessä "
+               "oikealla nojatuoli.")
+    floor = 506
+    # the wall with faint stripes, the skirting board and the wooden floor
+    f.rect(0, 0, 1200, floor, H.grad(f, "fy59h-wall", PAPER, SAND_LIGHT, y1=0, y2=floor))
+    for x in range(30, 1200, 60):
+        f.rect(x, 0, 24, floor, SAND_LIGHT, extra='fill-opacity="0.35"')
+    f.rect(0, floor, 1200, 94, H.grad(f, "fy59h-floor", SAND, GRAIN, y1=floor, y2=600))
+    for k, y in enumerate((532, 562, 592)):
+        f.line(0, y, 1200, y, GRAIN, 1.5)
+        for j in range(5):
+            x = 80 + j * 260 + (k % 2) * 130
+            f.line(x, y - (26 if k else 26), x, y, GRAIN, 1.5)
+    f.rect(0, floor - 16, 1200, 16, WHITE, INK, 2)
+    # the window on the left and a plant under it
+    H.window(f, 64, 120, 190, 220, "fy59h-win")
+    f.rect(52, 106, 214, 16, RULE, INK, 2.5, 3)
+    f.path(f"M150,{floor - 16} L132,{floor - 96} H208 L190,{floor - 16} Z", COPPER, INK, 2.5)
+    for k, (dx, h, s) in enumerate(((-34, 120, -1), (-8, 160, -1), (14, 150, 1), (38, 110, 1))):
+        f.path(f"M170,{floor - 96} Q{170 + dx * 0.4},{floor - 96 - h * 0.6} {170 + dx + s * 18},{floor - 96 - h} "
+               f"Q{170 + dx * 1.3},{floor - 96 - h * 0.5} 170,{floor - 96} Z", GOOD, INK, 2)
+    f.add(f'<ellipse cx="560" cy="{floor + 50}" rx="250" ry="24" fill="{HOT_LIGHT}" fill-opacity="0.55"/>')   # a rug
+
+    # the pendulum clock: plinth, trunk with a glass door, hood with the dial, a pediment on top
+    cx, w = 420, 124
+    wood_ = H.grad(f, "fy59h-wood", COPPER, GRAIN, horizontal=True)
+    f.rect(cx - w / 2 - 10, floor - 64, w + 20, 64, wood_, INK, 3, 3)
+    f.rect(cx - w / 2, 220, w, floor - 64 - 220, wood_, INK, 3)
+    f.rect(cx - w / 2 - 12, 92, w + 24, 128, wood_, INK, 3, 4)
+    f.path(f"M{cx - w / 2 - 16},92 L{cx},50 L{cx + w / 2 + 16},92 Z", wood_, INK, 3)
+    f.circle(cx, 72, 7, HEAT_LIGHT, INK, 2)
+    # the dial: white face, twelve marks, two hands
+    dy = 156
+    f.circle(cx, dy, 48, SAND_LIGHT, INK, 2.5)
+    f.circle(cx, dy, 40, WHITE, INK, 2)
+    for k in range(12):
+        a = k * math.pi / 6
+        f.line(cx + 32 * math.sin(a), dy - 32 * math.cos(a), cx + 38 * math.sin(a), dy - 38 * math.cos(a), INK, 2.5 if k % 3 == 0 else 1.5)
+    f.line(cx, dy, cx + 16, dy - 12, INK, 4, cap="round"); f.line(cx, dy, cx - 6, dy - 30, INK, 3, cap="round")
+    f.circle(cx, dy, 4, INK)
+    # behind the door's glass: the pendulum swung out to one side, two driving weights on chains
+    gx0, gx1, gy0, gy1 = cx - w / 2 + 14, cx + w / 2 - 14, 236, floor - 82
+    f.rect(gx0, gy0, gx1 - gx0, gy1 - gy0, IRON)
+    f.defs_add(f'<clipPath id="fy59h-glass"><rect x="{n(gx0)}" y="{gy0}" width="{n(gx1 - gx0)}" height="{gy1 - gy0}"/></clipPath>')
+    f.add('<g clip-path="url(#fy59h-glass)">')
+    for x, wy in ((cx - 28, 300), (cx + 28, 270)):
+        f.line(x, gy0, x, wy, METAL_EDGE, 2)
+        f.rect(x - 9, wy, 18, 58, H.grad(f, f"fy59h-wt{x}", HEAT_LIGHT, GRAIN, horizontal=True), INK, 2, 3)
+    piv, Lp, th = (cx, 228), 168, math.radians(7)
+    bx, by = piv[0] + Lp * math.sin(th), piv[1] + Lp * math.cos(th)
+    f.line(piv[0], piv[1], bx, by, HEAT_LIGHT, 4)
+    f.circle(bx, by, 24, H.grad(f, "fy59h-bob", HEAT_LIGHT, GRAIN), INK, 2.5)
+    f.circle(bx - 6, by - 6, 7, WHITE, None, 0)
     f.add('</g>')
+    f.add(f'<rect x="{n(gx0)}" y="{gy0}" width="{n(gx1 - gx0)}" height="{gy1 - gy0}" fill="{GLASS}" fill-opacity="0.25" stroke="{INK}" stroke-width="2.5"/>')
+    f.add(f'<path d="M{n(gx0 + 10)},{gy1} L{n(gx0 + 40)},{gy0} H{n(gx0 + 58)} L{n(gx0 + 28)},{gy1} Z" fill="{WHITE}" fill-opacity="0.25"/>')
+
+    # a framed picture and, in the foreground on the right, an armchair
+    f.rect(970, 140, 150, 110, WHITE, INK, 3, 2)
+    f.rect(984, 154, 122, 82, H.grad(f, "fy59h-pic", ICE, GLASS), INK, 2)
+    f.path("M984,236 L1030,190 L1060,214 L1080,198 L1106,224 V236 Z", GOOD, INK, 2)
+    f.circle(1080, 176, 10, HEAT_LIGHT)
+    f.path(f"M1000,{floor + 40} V330 Q1000,300 1040,300 H1200 V{floor + 40} Z", GOOD, INK, 3)               # back
+    f.path(f"M972,{floor + 40} V420 Q972,396 1000,396 Q1028,396 1028,420 V{floor + 40} Z", GOOD, INK, 3)  # arm
+    f.rect(1028, 430, 180, 60, GOOD_LIGHT, INK, 3, 10)                                                     # cushion
+    for x in (990, 1180): f.rect(x - 7, floor + 40, 14, 16, GRAIN, INK, 2)
+    # the doorway: the next room beyond it, the frame round it
+    d0, d1, dtop = 680, 880, 86
+    f.rect(d0, dtop, d1 - d0, floor - dtop, H.grad(f, "fy59h-next", COLD_LIGHT, GLASS, y1=dtop, y2=floor))
+    f.rect(d0, floor - 40, d1 - d0, 40, SAND_DARK)
+    f.path(f"M{d0 - 18},{floor} V{dtop - 18} H{d1 + 18} V{floor} H{d1} V{dtop} H{d0} V{floor} Z", WHITE, INK, 2.5)
+    # the door bouncer: a clamp on the top frame, the coil spring, a ring, four straps and the seat
+    mx = (d0 + d1) / 2
+    f.rect(mx - 22, dtop - 4, 44, 18, IRON, INK, 2, 3)
+    f.line(mx, dtop + 14, mx, dtop + 26, INK, 3)
+    top_s, bot_s = dtop + 26, 210
+    coils = 14
+    pts = [(mx + (-12 if i % 2 else 12), top_s + 8 + (bot_s - top_s - 16) * i / (coils - 1)) for i in range(coils)]
+    f.path(f"M{mx},{top_s} L" + " L".join(f"{n(x)},{n(y)}" for x, y in pts) + f" L{mx},{bot_s}", stroke=IRON, w=3.5, extra='stroke-linejoin="round"')
+    f.circle(mx, bot_s + 8, 8, "none", INK, 3)
+    seat_y = 408
+    for dx in (-46, 46):
+        f.line(mx, bot_s + 14, mx + dx, seat_y - 46, COLD, 5)
+    # the baby: legs down to the floor, the seat round the body, arms, head
+    for dx, c in ((-12, SAND_LIGHT), (14, SAND_LIGHT)):
+        f.path(f"M{mx + dx},{seat_y} L{mx + dx * 1.6},{floor - 30} L{mx + dx * 1.4 + 6},{floor - 6}", stroke=c, w=16, extra='stroke-linecap="round" stroke-linejoin="round"')
+    f.path(f"M{mx - 30},{seat_y - 56} Q{mx - 36},{seat_y - 104} {mx - 12},{seat_y - 110} H{mx + 12} Q{mx + 36},{seat_y - 104} {mx + 30},{seat_y - 56} Z", GOOD_LIGHT, INK, 2.5)  # body in a vest
+    f.path(f"M{mx - 52},{seat_y - 52} Q{mx},{seat_y - 36} {mx + 52},{seat_y - 52} L{mx + 40},{seat_y + 6} Q{mx},{seat_y + 18} {mx - 40},{seat_y + 6} Z", COLD, INK, 2.5)  # the seat
+    f.path(f"M{mx - 52},{seat_y - 52} Q{mx},{seat_y - 36} {mx + 52},{seat_y - 52}", stroke=COLD_LIGHT, w=3)
+    for s in (-1, 1):
+        f.path(f"M{mx + s * 28},{seat_y - 96} Q{mx + s * 52},{seat_y - 80} {mx + s * 46},{seat_y - 56}", stroke=GOOD_LIGHT, w=14, extra='stroke-linecap="round"')
+        f.circle(mx + s * 46, seat_y - 54, 8, SAND_LIGHT)
+    f.circle(mx, seat_y - 134, 30, SAND_LIGHT)
+    f.path(f"M{mx - 18},{seat_y - 158} Q{mx - 4},{seat_y - 172} {mx + 12},{seat_y - 160} Q{mx + 2},{seat_y - 156} {mx - 2},{seat_y - 150} Z", GRAIN)
     return f.svg()
+
 
 
 FIGURES = {"hero": hero, "jousi": spring, "xt": xt, "heiluri": pendulum, "energia": energy_graph, "vaimeneva": damped,

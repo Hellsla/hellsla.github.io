@@ -1,15 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 597b8d6223da9b0e
+CONTENT-HASH: 0e718a50224ca1ac
 
 ## Blocking
+(none)
 
 ## Polish
+- [Minor] hero — the baby's face and arms are small and simple at 390 px; the bouncer and spring still read clearly. No change needed.
 
 ## Checked
-- contact-1: top-390, sim-390, avauskuvitus, jousikuva, x(t)-kuvaaja, heilurin voimakuvio, energiakuvaaja, vaimennuskuvaaja: suomenkieliset tunnisteet, desimaalipilkku, ei leikkautumista.
-- fy5-9-sim-1280: simulaation tekstit (Värähtelijä, jousi ja kappale, lukemat-rivi, selite) mahtuvat yhdelle riville.
-- contact-5 (#49–#60): teoria 390 px, Ennusta, Tarkista osaamisesi, exit ticket ja avatut ratkaisut 1280 px: KaTeX toimii, ketjut tasattu, vastaukset kehystetty.
-- Kieli: selkeä, luonteva yleiskieli; korjattu verbi "poikkesi" → "vei heilurin sivuun".
+- Delta review, category illustration: only the hero (`data-fig="hero"`) and its aria-label changed.
+- fy5-9-top-390.png and fy5-9-intro-1280.png (hero at 390 px and 1280 px, fi-easy page): a living room with a grandfather clock (pendulum swung aside) and a baby in a spring-hung door bouncer. Layout survived: the picture sits in the 16:8 frame, nothing clipped, no horizontal overflow, the first screen is unchanged around it.
+- Hero SVG source is identical in fi, en and fi-easy (checked by comparing the SVG body); the screenshots are the same picture. No text in the picture; flat vector style and palette match the other FY5 openings.
+- Alt text compared with the picture item by item and read in its own language: it matches what is drawn, nothing is claimed that is missing, and it does not give away the chapter's answer.
+- The picture fits the opening question in the Pohdinta; nothing physically misleading seen (science review carried over).
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 5b136494da94ac67
+CONTENT-HASH: bab63e285c7c5f09
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] figures.json is empty: figure descriptions are the Finnish ones, which is right for fi-easy.
+- [Minor] hero: the sun with rays is the most decorative element and draws the eye away from the swing; optional to tone down.
 
 ## Checked
-- Captures opened: contact-1 (top, sim, all figures), contact-2 (Tutki experiments, theory 390, example).
-- Figures identical to Finnish, decimal comma, labels LaTeX; sim canvas "malli" correct in Finnish.
-- Text in short sentences, paragraphs no longer than the Finnish; worked example staged 1/7–7/7; no overflow at 390 or 1280 px.
+- Delta (illustration only). Opened fy5-7-top-390 (fi), fy5-7-intro-1280 (fi), fy5-7-fig-1-390 in fi, en and fi-easy (same picture in all three, only rendering noise differs).
+- Hero is a flat vector scene in the figure palette on the paper tone, no text in the picture, subject in the middle third, readable at 366 px width, nothing clipped except the intended close-up crop; 16:9-ish column width, layout around it intact.
+- Alt text (fi-easy) read against the picture: it describes what is drawn, with no contradiction; language natural and consistent with the chapter's opening question.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+illustrations 4 · typography 5 · Finnish 4 · accessibility 5

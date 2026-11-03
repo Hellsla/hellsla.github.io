@@ -2,7 +2,7 @@
 Colours: the wave's propagation (a velocity) is blue COLD as in FY4/FY5; a displacement is ink, never force red."""
 import math
 from figlib import (Fig, Axes, fi, n, INK, MUTED, WHITE, RULE, RULE_LIGHT, COLD, COLD_LIGHT, GLASS, ICE, SAND, SAND_LIGHT,
-                    SAND_DARK, GRAIN, METAL_EDGE, IRON, ALUMINIUM, COPPER, HEAT, HEAT_LIGHT, HOT, GOOD, GOOD_LIGHT)
+                    SAND_DARK, GRAIN, METAL_EDGE, IRON, ALUMINIUM, COPPER, HEAT, HEAT_LIGHT, HOT, GOOD, GOOD_LIGHT, WATER, WATER_LIGHT)
 import herolib as H
 
 ROPE = GRAIN            # a rope is drawn in the brown of sand grains, 5 px
@@ -166,33 +166,57 @@ def history():
 
 
 def hero():
-    """Opening illustration: a person in a yard sends one hump along a long rope towards a post with a bell."""
-    f = H.hero("fy510-hero", "Kuvitus: pihalla ihminen pitelee pitkän narun päätä. Narun toinen pää on sidottu puutolppaan, jossa "
-               "roikkuu pieni kello. Narun keskivaiheilla on yksi kumpu, joka on matkalla kohti tolppaa. Taustalla on "
-               "punainen talo ja koivu.")
-    H.sky(f, "fy510h")
-    H.cloud(f, 820, 96, 1.0)
-    H.cloud(f, 300, 70, 0.7)
-    H.red_house(f, 980, 420, 220, 170)
-    H.birch(f, 130, 430, 260)
-    f.rect(0, 410, 1200, 190, H.grad(f, "fy510h-grass", GOOD_LIGHT, GOOD_LIGHT))
-    f.path("M0,520 C300,500 700,540 1200,512 V600 H0 Z", SAND_LIGHT)
-    # the post and its bell
-    f.rect(912, 300, 36, 230, SAND_DARK, INK, 3, 4)
-    f.rect(900, 290, 60, 16, SAND, INK, 3, 3)
-    f.line(930, 306, 930, 324, INK, 3)
-    f.path("M906,370 Q906,326 930,324 Q954,326 954,370 L962,382 H898 Z", HEAT_LIGHT, INK, 3)
-    f.circle(930, 388, 7, IRON, INK, 2)
-    # the person and the rope with one hump
-    H.person(f, 270, 540, shirt=COLD, sc=1.0)
-    hand_x, hand_y = 310, 408
-    def ry(x):                                                          # a smooth hump on a slightly sagging rope
-        sag = 10 * math.sin(math.pi * (x - hand_x) / (912 - hand_x))
-        bump = 37 * (1 - math.cos(2 * math.pi * (x - 530) / 200)) if 530 <= x <= 730 else 0
-        return hand_y + sag - bump
-    pts = " L".join(f"{n(x)},{n(ry(x))}" for x in range(hand_x, 913, 4))
-    f.path("M" + pts, stroke=ROPE, w=11, extra='stroke-linecap="round"')
-    f.circle(hand_x, hand_y, 12, SAND_LIGHT)
+    """Opening illustration: at a summer cottage a girl has flicked the end of a long rope once; the single hump runs
+    along the taut rope towards a post with a bell hanging from its arm. One scale for the yard (about 100 px/m: the
+    girl 1,6 m, the rope 6,3 m, the post 2 m); the cottage, sauna and shore trees stand farther back and are smaller."""
+    f = H.hero("fy510-hero", "Kuvitus: kesämökin piha järven rannalla. Vasemmalla tyttö pitelee pitkän narun päätä. Hän on "
+               "juuri heilauttanut narua kerran. Narun toinen pää on sidottu puutolppaan, jonka "
+               "varresta roikkuu messinkinen kello. Kireän narun keskivaiheilla on yksi kumpu matkalla kohti tolppaa. "
+               "Taustalla ovat järvi, metsäinen ranta, punainen mökki, sauna ja koivuja.")
+    H.sky(f, "fy510h", 330)
+    H.cloud(f, 250, 80, 0.75); H.cloud(f, 760, 56, 0.5); H.cloud(f, 1080, 120, 0.6)
+    # far shore and the lake
+    H.forest(f, 268, 40, 24, METAL_EDGE, seed=5, depth=12)
+    H.forest(f, 282, 30, 20, GOOD, seed=2, depth=10)
+    f.rect(0, 290, 1200, 60, H.grad(f, "fy510h-lake", WATER_LIGHT, WATER, y1=290, y2=350))
+    for k, (x, y, L) in enumerate(((120, 306, 90), (420, 318, 70), (700, 304, 110), (980, 322, 80), (560, 334, 60))):
+        f.line(x, y, x + L, y, WHITE, 3, cap="round")
+    # the yard: lawn rising from the shore, a sand path
+    f.path("M0,352 Q300,336 620,346 T1200,340 V600 H0 Z", H.grad(f, "fy510h-grass", GOOD_LIGHT, GOOD, y1=340, y2=600))
+    f.path("M0,600 Q240,520 520,500 T1200,470 V510 Q820,520 560,546 T120,600 Z", SAND_LIGHT)
+    # farther back (about 40 px/m): the red cottage, the sauna by the shore, birches and spruces
+    H.red_house(f, 760, 382, 220, 88)
+    H.red_house(f, 330, 368, 110, 56)
+    H.spruce(f, 690, 388, 120); H.spruce(f, 1170, 376, 120); H.spruce(f, 470, 372, 90)
+    H.birch(f, 1110, 384, 150); H.birch(f, 70, 430, 250)
+    # the post (2 m) with an arm, the bell hanging from it
+    px, py = 1000, 548
+    f.add(f'<ellipse cx="{px}" cy="{py + 4}" rx="34" ry="7" fill="{INK}" fill-opacity="0.18"/>')
+    f.rect(px - 13, py - 224, 26, 224, H.grad(f, "fy510h-post", SAND_DARK, SAND, horizontal=True), INK, 3, 3)
+    f.rect(px - 13, py - 230, 90, 18, SAND_DARK, INK, 3, 3)                     # arm
+    f.path(f"M{px + 13},{py - 182} L{px + 46},{py - 212}", stroke=GRAIN, w=7, extra='stroke-linecap="round"')   # brace
+    bx, by = px + 58, py - 212                                                   # the bell's hanger
+    f.line(bx, by, bx, by + 10, INK, 3)
+    f.path(f"M{bx - 17},{by + 48} Q{bx - 18},{by + 12} {bx},{by + 10} Q{bx + 18},{by + 12} {bx + 17},{by + 48} L{bx + 24},{by + 58} H{bx - 24} Z",
+           H.grad(f, "fy510h-bell", HEAT_LIGHT, COPPER), INK, 3)
+    f.circle(bx, by + 64, 6, IRON, INK, 2)
+    # the girl (about 110 px/m, 1,6 m), her hand back at rest after the single flick
+    gx, gy = 200, 562
+    f.add(f'<ellipse cx="{gx}" cy="{gy + 2}" rx="50" ry="9" fill="{INK}" fill-opacity="0.18"/>')
+    hand = (292, 446)
+    H.walker(f, gx, gy, HEAT, COLD, 0.46, lean=4, hand=hand, stride=0.5)
+    # the rope: tied to the post at 1 m, taut and nearly level, one hump on its way (a smooth pulse about 1,5 m long)
+    tie = (px - 13, py - 110)
+    def ry(x):
+        t = (x - hand[0]) / (tie[0] - hand[0])
+        base = hand[1] + (tie[1] - hand[1]) * t + 5 * math.sin(math.pi * t)
+        bump = 74 * math.exp(-((x - 630) / 58) ** 2)
+        return base - bump
+    pts = " L".join(f"{n(x)},{n(ry(x))}" for x in range(hand[0], int(tie[0]) + 1, 4))
+    f.path("M" + pts, stroke=INK, w=10, extra='stroke-linecap="round"')
+    f.path("M" + pts, stroke=COPPER, w=6, extra='stroke-linecap="round"')
+    f.path(f"M{tie[0] - 2},{tie[1] - 9} h30 M{tie[0] - 2},{tie[1] + 9} h30", stroke=COPPER, w=5)     # the knot round the post
+    f.circle(hand[0], hand[1], 11, SAND_LIGHT, INK, 2)
     return f.svg()
 
 

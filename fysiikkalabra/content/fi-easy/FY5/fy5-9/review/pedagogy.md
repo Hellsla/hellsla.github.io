@@ -1,12 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 597b8d6223da9b0e
-
+CONTENT-HASH: 0e718a50224ca1ac
 ## Blocking
-
+(none)
 ## Polish
-
+- hero — Question names a swing, but the hero shows a clock pendulum and a door bouncer; a swing would tie it to the opening question more directly (taste).
 ## Checked
-- Oppimispolku sama kuin suomenkielisessä: Pohdinta → Ennusta → Tutki (koe-1…5, johtopäätös) → Teoriatiivistelmä → Sovella (porrastettu esimerkki 7 vaihetta) → Tarkista osaamisesi → Exit ticket → Tehtävät.
-- Selkokieli: lyhyet virkkeet, yksi asia kerrallaan, kysymykset jaettu erillisiksi kysymyksiksi (tarkistus-3, hook, exit ticket); termit (tasapainoasema, jousivakio) avattu; mitään ei ole jätetty pois.
-- `learn`-tavoitteet täydentävät lauseen "Tällä tunnilla opit" (-maan/-mään); `prior` päättyy "(luku *…*)".
-- Kaappaukset: contact-1 (alku, sim-390, kuvat), fy5-9-sim-1280, contact-5 (teoria, Ennusta, Tarkista, exit ticket, taso 1).
+- Delta review: only the hero illustration and its alt text changed; the rest stays as previously approved.
+- Hero shows two oscillators, one displaced pendulum and one spring-hung baby at rest, matching the question's pendulum and spring; no wrong physics (pendulum hangs below its pivot, spring fixed to the door frame, toes on the floor); alt matches the picture (clock, glass door, coil spring, baby, window, plant, picture, armchair).
+- Alt text is in short plain-Finnish sentences, matching the easy-language version; no text inside the picture; the 390 px capture shows the picture intact.

@@ -1,17 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 59746f905b5818b2
+CONTENT-HASH: e549ff46a056d756
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] sim selite — "Ylhäällä on aalto yhtenä hetkenä" ; tekstissä käytetään muotoa "yhdellä hetkellä", yhtenäisyyden vuoksi sama muoto olisi parempi.
+- [Minor] hero — the person holding the rope is drawn small and neutral; the alt text calls her a girl, which the picture neither shows nor contradicts. Optional: say "henkilö" / "person" or leave as is.
 
 ## Checked
-- contact-1 (#1–#12): avaus, sim 390 px, kaikki kuvat (#3–#8: poikittainen/pitkittäinen aalto, neljä hetkeä, valokuva ja yhden kohdan kuvaaja, katsomo, tarkistustehtävän valokuva), esimerkin vaiheet 6–7.
-- contact-3 (#25–#36): Tarkista, exit ticket, Tehtävät, kokeet 1–3 390 px ja 1280 px, simulaation lukemat-taulukot.
-- contact-5 (#49–#60): tasojen 1–3 tehtävät ja avatut ratkaisut, L2-01:n (t, y)-kuvaaja.
-- test_sims.py: fi-easy 360/390/1280 px, nimikkeet ja KaTeX-nimikkeet tarkistettu, PASS.
-- Desimaalipilkku, ohuet välit, `\cdot`, tasatut sijoitusrivit; kuvien LaTeX-nimikkeet samat kuin suomenkielisessä.
+- Delta review, category illustration: only the hero (`data-fig="hero"`) and its aria-label changed.
+- fy5-10-top-390.png and fy5-10-intro-1280.png (hero at 390 px and 1280 px, fi-easy page): a lake-side yard with a rope held by a person, a single hump travelling towards a bell post. Layout survived: the picture sits in the 16:8 frame, nothing clipped, no horizontal overflow, the first screen is unchanged around it.
+- Hero SVG source is identical in fi, en and fi-easy (checked by comparing the SVG body); the screenshots are the same picture. No text in the picture; flat vector style and palette match the other FY5 openings.
+- Alt text compared with the picture item by item and read in its own language: it matches what is drawn, nothing is claimed that is missing, and it does not give away the chapter's answer.
+- The picture fits the opening question in the Pohdinta; nothing physically misleading seen (science review carried over).
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 5
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

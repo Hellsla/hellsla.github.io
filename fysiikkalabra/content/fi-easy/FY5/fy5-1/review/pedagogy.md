@@ -1,12 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 78f1ba70cd46bee2
+CONTENT-HASH: 5862117eb0ece721
 
 ## Blocking
 (none)
 
 ## Polish
-- Open doubt about the English 'Turn' button does not apply here: 'Väännä' is the same word as in the Finnish page and pairs naturally with vääntövaikutus.
+- lesson.md (hero) — Polish: the bar is only about 1.4 times the length of the short spanner lying in front, and reaches about one wheel radius from the hub. The picture's own contrast (long vs short) is weak and 'reaches far to the left' in the alt text overstates it; lengthen the bar to about two wheel diameters, or soften the alt wording. Also the socket sits at the hub centre, whereas lug nuts lie on a bolt circle; a student could read the wheel axle as the axis of rotation. Move the socket to a rim nut if easy.
 
 ## Checked
-- Sentences are split and terms glossed, every step, hint, feedback, model answer and seven-stage solution present (activities and criteria counts equal to the Finnish); questions put last; example staged in seven steps.
-- Captures opened: contact sheets 1-2, sim-1280, exp-exp-1-390-2; check_layout fy5-1 --lang fi-easy --width 345 OK. check_i18n reports nothing for fy5-1 in fi-easy.
+- Delta only: the hero illustration and its alt text; the rest of the lesson is as previously approved.
+- Pohdinta (long vs short spanner) and the picture agree: a bar with a socket on the nut, a short spanner on the ground. Nothing in the picture gives the answer away. Physics shown is sound: the man pushes down at the bar end, force perpendicular to the bar.
+- The easy-Finnish alt text (short sentences) matches the picture element by element and is in correct language; the opening question's wording is unchanged.
+- Hero is legible at 390 px and 1280 px (top captures) and carries no text.

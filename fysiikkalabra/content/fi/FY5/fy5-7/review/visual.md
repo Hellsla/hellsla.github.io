@@ -1,13 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 0d7a828662213851
+CONTENT-HASH: a9e318659ceaa6df
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] figure `ympyra` — the angle label "2π t/T" and "A" sit close together inside the circle but do not touch anything; acceptable, a little more air would help at 390 px.
+- [Minor] hero: the sun with rays is the most decorative element and draws the eye away from the swing; optional to tone down.
 
 ## Checked
-- Round 2 (full): fig-3-390, fig-4-390, theory-1280-2 (fig-3/fig-4 beside text), sim-1280 (controls now in reading order), plus round-1 captures of the rest, unchanged. The ympyra labels no longer touch the outline; x is by the vertical segment, A by the radius; the dot on the circle matches the dot on the graph. Fig-3's A label and curve end are clean.
+- Delta (illustration only). Opened fy5-7-top-390 (fi), fy5-7-intro-1280 (fi), fy5-7-fig-1-390 in fi, en and fi-easy (same picture in all three, only rendering noise differs).
+- Hero is a flat vector scene in the figure palette on the paper tone, no text in the picture, subject in the middle third, readable at 366 px width, nothing clipped except the intended close-up crop; 16:9-ish column width, layout around it intact.
+- Alt text (fi) read against the picture: it describes what is drawn, with no contradiction; language natural and consistent with the chapter's opening question.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations 4 · typography 5 · Finnish 4 · accessibility 5

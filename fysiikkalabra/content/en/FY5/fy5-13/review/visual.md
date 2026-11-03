@@ -1,20 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 19fd05af9f6a8264
+CONTENT-HASH: 912a65b7da3bb660
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] sim-390 — antinode label A and the graph's A (mm) share a letter; the legend line separates them, nothing to change unless the team revisits the letter choice.
-- [Minor] exp-koe-2-390-1 — the initial-state box shows "length of the tube = 0.85 m" as plain text; this comes from the shared experiment template, not the chapter.
+- [Minor] hero — the light blue motion envelope is slim at 390 px; it is still visible and the string, capo and bridge read clearly.
 
 ## Checked
-- Rebuilt (build.py fy5-13 --lang en) and re-shot after figures.py --lang en rewrote the figures with N/A; contact-1 and contact-5 opened for triage.
-- fig-1-390 (music room), fig-2-390 (incident/reflected/sum, N under the nodes), fig-3-390 (N and A labels, λ/2, λ/4), fig-4-390 (string modes), fig-5-390 (open at both ends / closed at one end): English words, LaTeX labels, nothing clipped.
-- sim-390 and sim-1280: labels N and A on the canvas, legend "N node, A antinode", long English control labels wrap cleanly.
-- exp-koe-2-390-1/-2: English initial state and table headings (frequency, A (mm), nodes, antinodes).
-- example (contact-1 #8–#9): decimal points, thin-space units, staged steps.
-- No Finnish left in en text, figures or alt text (grep for solmu, kupu, Finnish, S/K labels).
+- Delta review, category illustration: only the hero (`data-fig="hero"`) and its aria-label changed.
+- fy5-13-top-390.png and fy5-13-intro-1280.png (hero at 390 px and 1280 px, en page): a guitar in its open case from above, capo, plucked string with a light blue motion envelope, pick. Layout survived: the picture sits in the 16:8 frame, nothing clipped, no horizontal overflow, the first screen is unchanged around it.
+- Hero SVG source is identical in fi, en and fi-easy (checked by comparing the SVG body); the screenshots are the same picture. No text in the picture; flat vector style and palette match the other FY5 openings.
+- Alt text compared with the picture item by item and read in its own language: it matches what is drawn, nothing is claimed that is missing, and it does not give away the chapter's answer.
+- The picture fits the opening question in the Pohdinta; nothing physically misleading seen (science review carried over).
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

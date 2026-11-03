@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: bc6253babd6345ca
+CONTENT-HASH: a2c26ebd45d9e7dd
 
 ## Blocking
 (none)
 
 ## Polish
-- The bullet list "Milloin ympyrämalli pätee" and the Tiivistelmä are kept word for word; they are already short items, acceptable.
-- Some solution strings in inquiry.json (e.g. the GPS and Hubble solutions) keep the Finnish two-clause sentences; they are readable, no term left unexplained.
+- lesson.md (hero) — Polish: nothing in the picture hints at the sideways motion that the lesson turns on; fine for an opening picture, but a faint motion cue (not an arrow) could be considered.
 
 ## Checked
-- Plain Finnish: long sentences split (Ydinajatus, Kaava, Painottomuus, Esimerkki stages), terms still named and explained (satelliitti, kiertorata, kokonaisvoima, normaalikiihtyvyys, painottomuus); nothing dropped (every step, hint, feedback, criterion and model answer present).
-- Learning path, predictions, experiments, Tarkista and exit ticket identical in structure and answers to the Finnish.
-- Fixed here: pronoun "He" for the station and astronaut -> "Ne"; simpler wording in four inquiry strings that had been left as in Finnish (Mars solution, Koe 1 hint 3, Etsi virhe feedback).
-- Captures opened: contact-1 (top, sim-390, figures), open-exercises-1280-5.
+- Delta only: the hero illustration and its alt text; the rest of the lesson is as previously approved.
+- The ISS against black space with the curved Earth below fits the question (why it does not fall, why astronauts float). No arrows or labels disclose the answer. Station depicted correctly: truss, four pairs of golden solar wings, modules, white radiators.
+- The easy-Finnish alt text (short sentences) matches the picture element by element and is in correct language; the opening question's wording is unchanged.
+- Hero is legible at 390 px and 1280 px (top captures) and carries no text.

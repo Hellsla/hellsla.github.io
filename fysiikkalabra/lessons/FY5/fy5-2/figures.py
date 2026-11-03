@@ -39,40 +39,95 @@ def turn_arrow(f, cx, cy, r, a0, a1, color=INK, w=2.5):
     f.path(f"M{n(tx)},{n(ty)} L{n(hx - uy * 6)},{n(hy + ux * 6)} L{n(hx + uy * 6)},{n(hy - ux * 6)} Z", color)
 
 
-# --- the opening illustration: a painter's plank on two trestles, a paint tin on the overhang --------------------------
+# --- the opening illustration: a painter on a plank over two trestles, a paint tin out on the overhang --------------
+def _trestle(f, x, ytop, yg, gid):
+    """A painter's trestle seen end-on: the beam's end under the plank and two legs splayed into an A, with a brace."""
+    for dx in (-1, 1):
+        f.path(f"M{n(x + dx * 8)},{n(ytop + 10)} L{n(x + dx * 58)},{n(yg)}", stroke=INK, w=17, extra='stroke-linecap="round"')
+        f.path(f"M{n(x + dx * 8)},{n(ytop + 10)} L{n(x + dx * 58)},{n(yg)}", stroke=WOOD, w=12, extra='stroke-linecap="round"')
+    f.rect(x - 38, ytop + 74, 76, 12, WOOD, WOOD_EDGE, 2, 3)            # the brace between the legs
+    f.rect(x - 16, ytop, 32, 22, H.grad(f, gid, SAND_DARK, GRAIN), INK, 2.5, 3)   # the beam end the plank rests on
+
+
+def _painter(f, x, yf, brush):
+    """A painter in white overalls seen from behind, facing the wall: feet at (x, yf), the right hand up at brush."""
+    s = 333 / 420                                                     # 1,75 m at 190 units per metre
+    for dx in (-1, 1):                                                # legs
+        f.path(f"M{n(x + dx * 8 * s)},{n(yf - 190 * s)} L{n(x + dx * 24 * s)},{n(yf - 14 * s)}", stroke=INK, w=40 * s, extra='stroke-linecap="round"')
+        f.path(f"M{n(x + dx * 8 * s)},{n(yf - 190 * s)} L{n(x + dx * 24 * s)},{n(yf - 14 * s)}", stroke=WHITE, w=34 * s, extra='stroke-linecap="round"')
+        f.path(f"M{n(x + dx * 24 * s - 16 * s)},{n(yf - 6 * s)} h{n(32 * s)}", stroke=INK, w=16 * s, extra='stroke-linecap="round"')
+    sh = (x, yf - 330 * s)
+    f.path(f"M{n(sh[0] - 42 * s)},{n(sh[1] + 16 * s)} L{n(x - 48 * s)},{n(yf - 196 * s)}", stroke=INK, w=27 * s, extra='stroke-linecap="round"')   # left arm down
+    f.path(f"M{n(sh[0] - 42 * s)},{n(sh[1] + 16 * s)} L{n(x - 48 * s)},{n(yf - 196 * s)}", stroke=WHITE, w=21 * s, extra='stroke-linecap="round"')
+    f.circle(x - 49 * s, yf - 186 * s, 11 * s, SAND_LIGHT)
+    f.path(f"M{n(x - 46 * s)},{n(yf - 312 * s)} Q{n(x - 50 * s)},{n(yf - 342 * s)} {n(x)},{n(yf - 344 * s)} Q{n(x + 50 * s)},{n(yf - 342 * s)} {n(x + 46 * s)},{n(yf - 312 * s)} "
+           f"L{n(x + 40 * s)},{n(yf - 176 * s)} H{n(x - 40 * s)} Z", WHITE, INK, 3)                      # the overalls' back
+    f.path(f"M{n(x - 22 * s)},{n(yf - 340 * s)} L{n(x - 26 * s)},{n(yf - 230 * s)} M{n(x + 22 * s)},{n(yf - 340 * s)} L{n(x + 26 * s)},{n(yf - 230 * s)}", stroke=RULE, w=4)
+    f.rect(x - 30 * s, yf - 228 * s, 60 * s, 34 * s, RULE_LIGHT, INK, 2, 4)                            # the back pocket
+    f.path(f"M{n(x + 40 * s)},{n(sh[1] + 14 * s)} L{n(brush[0] - 6)},{n(brush[1] + 14)}", stroke=INK, w=27 * s, extra='stroke-linecap="round"')   # right arm up
+    f.path(f"M{n(x + 40 * s)},{n(sh[1] + 14 * s)} L{n(brush[0] - 6)},{n(brush[1] + 14)}", stroke=WHITE, w=21 * s, extra='stroke-linecap="round"')
+    f.circle(brush[0] - 4, brush[1] + 10, 11 * s, SAND_LIGHT)
+    f.rect(x - 10 * s, yf - 368 * s, 20 * s, 28 * s, SAND_LIGHT)                                        # neck
+    hc = (x, yf - 394 * s)
+    f.circle(hc[0], hc[1], 32 * s, GRAIN)                                                                # hair, from behind
+    f.path(f"M{n(hc[0] - 34 * s)},{n(hc[1] - 4 * s)} Q{n(hc[0] - 32 * s)},{n(hc[1] - 40 * s)} {n(hc[0])},{n(hc[1] - 40 * s)} Q{n(hc[0] + 32 * s)},{n(hc[1] - 40 * s)} "
+           f"{n(hc[0] + 34 * s)},{n(hc[1] - 4 * s)} Z", WHITE, INK, 2.5)                                 # painter's cap
+    f.rect(hc[0] - 36 * s, hc[1] - 10 * s, 72 * s, 10 * s, WHITE, INK, 2, 3)
+
+
 def hero():
-    f = H.hero("fy52-hero", "Kuvitus: talon seinän edessä on kaksi maalauspukkia ja niiden päällä pitkä lankku. Lankun oikea pää "
-               "ulottuu reilusti oikeanpuoleisen pukin yli, ja ulokkeen päällä on maalipurkki ja sivellin. Maalari seisoo "
-               "maassa lankun vieressä. Kuvasta herää kysymys, kuinka kauas ulokkeelle kuormaa voi viedä ennen kuin lankku kaatuu.")
-    H.sky(f, "fy52h", 470)
-    H.cloud(f, 230, 110, 0.9); H.cloud(f, 1010, 80, 0.7)
-    # the house wall: yellow boards with a window, under construction
-    f.rect(120, 120, 960, 350, SAND_LIGHT)
-    for x in range(120, 1080, 32): f.line(x, 120, x, 470, SAND, 2)
-    f.path("M100,128 L600,40 L1100,128 Z", HOT)
-    f.rect(470, 190, 170, 150, GLASS, INK, 3); f.line(555, 190, 555, 340, INK, 3); f.line(470, 265, 640, 265, INK, 3)
-    f.rect(458, 340, 194, 14, WHITE, INK, 2)
-    # the half-painted part of the wall
-    f.rect(120, 120, 300, 350, HOT_LIGHT, extra='fill-opacity="0.55"')
-    # grass
-    f.rect(0, 470, 1200, 130, H.grad(f, "fy52h-grass", GOOD_LIGHT, GOOD))
-    for k in range(40): f.line(20 + k * 30, 480 + 40 * H.rnd(k), 26 + k * 30, 470 + 40 * H.rnd(k), GOOD, 2)
-    # two trestles (A-frames) and the plank
-    yt = 392
-    for cx in (440, 780):
-        for dx in (-46, 46): f.path(f"M{cx},{yt} L{cx + dx},{530}", stroke=WOOD_EDGE, w=12, extra='stroke-linecap="round"')
-        f.rect(cx - 40, yt - 4, 80, 14, WOOD, WOOD_EDGE, 2.5, 3)
-        f.line(cx - 30, 470, cx + 30, 470, WOOD_EDGE, 6)
-    f.rect(320, yt - 22, 680, 18, H.grad(f, "fy52h-plank", SAND_DARK, SAND), WOOD_EDGE, 2.5, 3)
-    for x in range(350, 980, 70): f.line(x, yt - 13, x + 34, yt - 13, WOOD_EDGE, 1.5)
-    # paint tin and brush on the overhang
-    f.rect(918, yt - 84, 56, 62, ALUMINIUM, METAL_EDGE, 3, 4)
-    f.rect(918, yt - 66, 56, 22, COLD); f.rect(912, yt - 90, 68, 10, METAL_EDGE, INK, 2, 3)
-    f.path(f"M926,{yt - 90} Q946,{yt - 136} 966,{yt - 90}", stroke=INK, w=3)
-    f.path(f"M860,{yt - 30} L900,{yt - 26}", stroke=WOOD_EDGE, w=8, extra='stroke-linecap="round"')
-    f.rect(838, yt - 34, 26, 12, COLD, INK, 1.5, 2)
-    # the painter on the ground beside the plank
-    H.person(f, 230, 560, shirt=COLD, trousers=INK, sc=1.05)
+    f = H.hero("fy52-hero", "Kuvitus: maalari maalaa talon seinää punaiseksi. Seinän edessä on kaksi maalauspukkia ja niiden päällä "
+               "pitkä lankku. Maalari seisoo lankulla pukkien välissä ja ulottuu siveltimellä räystään alle. Lankun oikea pää "
+               "ulottuu pitkälle oikeanpuoleisen pukin yli, ja tämän ulokkeen päällä on iso maalipurkki. Ulokkeen alla on tyhjää, "
+               "joten herää kysymys, kuinka kauas ulokkeelle purkin voi viedä ennen kuin lankku kaatuu.")
+    s = 190                                                            # figure units per metre: trestles, plank, bucket and painter to one scale
+    yg = 560                                                           # the trestles' feet on the lawn
+    ytop = yg - round(0.8 * s)                                         # the trestles' tops, 0,8 m
+    # beyond the house corner: sky, a far forest and a birch
+    H.sky(f, "fy52h", 480)
+    H.cloud(f, 1110, 120, 0.6)
+    H.forest(f, 430, 60, 28, GOOD, seed=2, x0=1000, depth=80)
+    # the house wall: vertical boards, the left part freshly painted red, the right part still old and faded
+    xc = 1010                                                          # the house corner
+    f.rect(-10, 40, xc + 10, 452, HOT_LIGHT)
+    f.path("M-10,40 H600 L594,96 L606,150 L590,214 L604,290 L592,360 L604,430 L596,492 H-10 Z", HOT)
+    for x in range(14, xc, 34):
+        f.line(x, 44, x, 490, INK, 1.5)
+        f.add(f'<line x1="{x}" y1="44" x2="{x}" y2="490" stroke="{WHITE}" stroke-width="3" stroke-opacity="0.18" transform="translate(3 0)"/>')
+    for k in range(14):                                                # flakes of old paint on the unpainted part
+        px, py = 630 + 360 * H.rnd(k, 8), 70 + 400 * H.rnd(k, 9)
+        f.add(f'<path d="M{n(px)},{n(py)} l14,-3 l6,9 l-10,8 l-12,-4 Z" fill="{SAND_LIGHT}" fill-opacity="0.8"/>')
+    for wx, wy in ((90, 96), (720, 96)):                             # two windows with white frames
+        f.rect(wx, wy, 150, 170, WHITE, INK, 3, 2)
+        f.rect(wx + 14, wy + 14, 122, 142, H.grad(f, f"fy52h-win{wx}", GLASS, ICE), INK, 2)
+        f.line(wx + 75, wy + 14, wx + 75, wy + 156, WHITE, 8); f.line(wx + 14, wy + 85, wx + 136, wy + 85, WHITE, 8)
+        f.rect(wx - 10, wy + 170, 170, 14, WHITE, INK, 2, 2)
+    f.rect(xc - 16, 40, 22, 452, WHITE, INK, 2)                        # the white corner board
+    f.rect(-10, 22, xc + 40, 22, WHITE, INK, 2.5)                      # the fascia under the eaves
+    f.path(f"M-10,0 H{xc + 50} L{xc + 34},24 H-10 Z", IRON, INK, 2.5)  # the roof's edge
+    f.rect(-10, 488, xc + 10, 20, IRON, INK, 2)                        # the plinth
+    # the lawn in front of the wall, the shadow of the plank on it
+    f.rect(0, 506, 1200, 94, H.grad(f, "fy52h-grass", GOOD_LIGHT, GOOD, y1=506, y2=600))
+    for k in range(46): f.line(10 + k * 26, 590 - 60 * H.rnd(k, 2), 16 + k * 26, 578 - 60 * H.rnd(k, 2), GOOD, 2)
+    f.add(f'<ellipse cx="560" cy="{yg + 2}" rx="430" ry="10" fill="{INK}" fill-opacity="0.18"/>')
+    # the plank, 4 m, on trestles 2 m apart: 0,6 m over the left one, 1,4 m out over the right one
+    x1, x2, xa, xb = 170, 170 + 4 * s, 290, 290 + 2 * s
+    for x, k in ((xa, 1), (xb, 2)): _trestle(f, x, ytop, yg, f"fy52h-beam{k}")
+    f.rect(x1, ytop - 18, x2 - x1, 18, H.grad(f, "fy52h-plank", SAND_DARK, GRAIN), INK, 2.5, 2)
+    for gx in range(x1 + 30, x2 - 40, 90): f.path(f"M{gx},{ytop - 9} q30,-3 60,0", stroke=SAND_LIGHT, w=1.5)
+    # the painter between the trestles, reaching up to the eaves with the brush where the red ends
+    brush = (574, 58)
+    _painter(f, 476, ytop - 18, brush)
+    f.path(f"M{brush[0] - 10},{brush[1] + 18} L{brush[0] + 2},{brush[1] - 2}", stroke=GRAIN, w=7, extra='stroke-linecap="round"')
+    f.rect(brush[0] - 2, brush[1] - 26, 16, 26, INK, extra=f'transform="rotate(28 {brush[0]} {brush[1]})"')
+    f.rect(brush[0] + 1, brush[1] - 40, 10, 16, HOT, extra=f'transform="rotate(28 {brush[0]} {brush[1]})"')
+    # the paint tin (a 10-litre bucket) out on the overhang, 0,9 m beyond the right trestle
+    bx, bw, bh = xb + round(0.9 * s), 52, 58
+    f.path(f"M{bx - bw / 2},{ytop - 18 - bh} L{bx - bw / 2 + 4},{ytop - 18} H{bx + bw / 2 - 4} L{bx + bw / 2},{ytop - 18 - bh} Z", WHITE, INK, 2.5)
+    f.rect(bx - bw / 2 + 3, ytop - 18 - bh * 0.62, bw - 6, bh * 0.34, HOT)
+    f.rect(bx - bw / 2 - 3, ytop - 22 - bh, bw + 6, 9, RULE, INK, 2, 3)
+    f.path(f"M{bx - bw / 2 + 2},{ytop - 18 - bh + 4} Q{bx},{ytop - 18 - bh - 44} {bx + bw / 2 - 2},{ytop - 18 - bh + 4}", stroke=INK, w=2.5)
+    f.add(f'<path d="M{bx - 6},{ytop - 18 - bh - 4} q6,10 12,0" fill="{HOT}"/>')
     return f.svg()
 
 

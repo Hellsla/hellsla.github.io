@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 78f1ba70cd46bee2
+CONTENT-HASH: 5862117eb0ece721
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] figure 4 aria-label 'voiman otekohta' (inherited from the Finnish source).
+- [Minor] hero (fig-1, top-390, intro-1280): the breaker bar is only slightly longer than the short spanner on the asphalt, so "long vs short" is weak at 390 px; lengthening the bar a little would sharpen the chapter's contrast (optional).
 
 ## Checked
-- Captures: contact-1, contact-2, sim-1280, exp-exp-1-390-2 (status line, legend and table header in Finnish, fit at 390 px), open-exercises-1280-4; figure label widths follow the Finnish; no English left.
-- Layout at 390 and 1280 px equals the Finnish page; longer easy-language text produces no overflow.
+- Delta (illustration only). Opened fy5-1-top-390 (fi), fy5-1-intro-1280 (fi), fy5-1-fig-1-390 in fi, en and fi-easy (same picture in all three, only rendering noise differs).
+- Hero is a flat vector scene in the figure palette on the paper tone, no text in the picture, subject in the middle third, readable at 366 px width, nothing clipped except the intended close-up crop; 16:9-ish column width, layout around it intact.
+- Alt text (fi-easy) read against the picture: it describes what is drawn, with no contradiction; language natural and consistent with the chapter's opening question.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4
