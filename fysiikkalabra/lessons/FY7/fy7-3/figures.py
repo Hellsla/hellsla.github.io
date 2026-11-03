@@ -143,7 +143,7 @@ def electromagnet():
         f.rect(bx - 7, 122, 14, 6, INK)
         if on:
             f.line(cx + 34, 96, cx + 62, 96, INK, 3)                  # closed switch: the blade touches both contacts
-            f.arrow(cx + 62, 210, cx + 40, 210, CURRENT, 2.5, 11)
+            f.arrow(cx + 40, 210, cx + 62, 210, CURRENT, 2.5, 11)   # from the battery's + (nub, top) round to its − (bottom)
             f.tex(cx + 51, 236, "I", "middle", CURRENT)
             for k in range(4):               # a chain of nails stuck to the core's lower end
                 y = 246 + k * 17

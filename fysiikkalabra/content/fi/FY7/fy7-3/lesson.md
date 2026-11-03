@@ -213,8 +213,8 @@ Kun käämin sisään työnnetään rautasydän, kenttä voimistuu moninkertaise
   <rect x="208" y="128" width="32" height="54" rx="4" fill="#ffc078" stroke="#1f2933" stroke-width="2"/>
   <rect x="217" y="122" width="14" height="6" fill="#1f2933"/>
   <line x1="184" y1="96" x2="212" y2="96" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <line x1="212" y1="210" x2="200" y2="210" stroke="#7048e8" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M190,210 L201,205 L201,215 Z" fill="#7048e8" stroke-linejoin="round"/>
+  <line x1="190" y1="210" x2="202" y2="210" stroke="#7048e8" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M212,210 L201,215 L201,205 Z" fill="#7048e8" stroke-linejoin="round"/>
   <foreignObject x="191" y="221.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#7048e8">$I$</div></foreignObject>
   <rect x="147" y="246" width="6" height="16" rx="1" fill="#8a96a3" stroke="#1f2933" stroke-width="1.5"/>
   <rect x="143" y="246" width="14" height="3" fill="#8a96a3"/>
