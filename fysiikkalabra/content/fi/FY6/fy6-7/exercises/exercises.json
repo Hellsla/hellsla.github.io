@@ -19,8 +19,8 @@
     {
       "id": "fy6-7-L1-03",
       "level": 1,
-      "text": "Hiustenkuivaajan nimellisteho on $1800\\,\\text{W}$, ja se kytketään $230\\,\\text{V}$:n pistorasiaan. Kuinka suuren virran hiustenkuivaaja ottaa?",
-      "answer": 7.826087,
+      "text": "Silitysraudan nimellisteho on $1200\\,\\text{W}$, ja se kytketään $230\\,\\text{V}$:n pistorasiaan. Kuinka suuren virran silitysrauta ottaa?",
+      "answer": 5.217391,
       "unit": "A",
       "tolerance": 0.02
     },

@@ -15,7 +15,7 @@
       "id": "hook",
       "stage": "herata",
       "type": "hook",
-      "text": "Talvi-iltana kotona on paljon laitteita päällä yhtä aikaa: saunan kiuas lämpenee, keittiössä kiehuu vedenkeitin, jääkaappi hurisee, televisio on auki ja puhelin latautuu. Kuukauden päästä tulee sähkölasku. Siinä ei lue yhtään wattia, vaan kulutus kilowattitunteina ja sen hinta.",
+      "text": "Talvi-iltana kotona on paljon laitteita päällä yhtä aikaa: saunan kiuas lämpenee, keittiössä kiehuu vedenkeitin, jääkaappi hurisee, televisio on auki ja puhelin latautuu. Kuukauden päästä tulee sähkölasku. Siinä ei yleensä lue yhtään wattia, vaan kulutus kilowattitunteina ja sen hinta.",
       "question": "Mistä riippuu, kuinka paljon jokin laite kasvattaa sähkölaskua?"
     },
     {
@@ -85,12 +85,12 @@
       "prompt": "Perhe haluaa pienentää sähkölaskuaan. Mikä seuraavista säästää vuodessa eniten sähköenergiaa?",
       "choices": [
         {
-          "text": "Television ja digiboksin valmiustila katkaistaan virtakytkimellä öiksi ja päiviksi.",
+          "text": "Television ja digiboksin yhteensä noin $3\\,\\text{W}$:n valmiustila katkaistaan virtakytkimellä öiksi ja päiviksi.",
           "feedback": "Valmiustilan teho on vain noin $3\\,\\text{W}$, joten säästö on vuodessa noin $23\\,\\text{kWh}$. Se on pieni verrattuna saunaan: yksi saunomiskerta viikossa vähemmän säästää $468\\,\\text{kWh}$, koska kiukaan teho on kaksituhatkertainen."
         },
         {
-          "text": "Puhelimen laturi irrotetaan pistorasiasta aina, kun puhelin ei lataudu.",
-          "feedback": "Tyhjän laturin teho on noin $0{,}1\\,\\text{W}$, joten koko vuoden säästö on alle $1\\,\\text{kWh}$. Pieni teho pysyy pienenä, vaikka aika on pitkä. Saunominen kerran viikossa harvemmin säästää yli viisisataa kertaa enemmän."
+          "text": "Vedenkeitintä, jonka teho on $2000\\,\\text{W}$, käytetään joka päivä kymmenen minuuttia vähemmän.",
+          "feedback": "Keittimen teho on suuri, mutta ajan lyhennys on pieni: $2{,}0\\,\\text{kW} \\cdot \\tfrac{1}{6}\\,\\text{h} \\cdot 365 \\approx 120\\,\\text{kWh}$ vuodessa. Se on silti selvästi vähemmän kuin saunomisen vähentäminen, $468\\,\\text{kWh}$, koska sauna kestää tunteja eikä minuutteja."
         },
         {
           "text": "Viisi $40\\,\\text{W}$:n halogeenilamppua vaihdetaan $5\\,\\text{W}$:n LED-lamppuihin.",
@@ -256,7 +256,7 @@
           "feedback": "Käytit vain energian hintaa. Myös siirto maksetaan jokaiselta kilowattitunnilta, joten hinta on $12{,}0\\,\\text{snt/kWh} + 6{,}0\\,\\text{snt/kWh} = 18{,}0\\,\\text{snt/kWh}$."
         }
       ],
-      "solution": "**Annettu:** mittarin lukemat $15\\,362\\,\\text{kWh}$ ja $15\\,589\\,\\text{kWh}$, energian hinta $12{,}0\\,\\text{snt/kWh}$, siirron hinta $6{,}0\\,\\text{snt/kWh}$, perusmaksut $K_\\text{perus} = 9{,}00\\,\\text{€}$\n\n**Kysytty:** kuukauden laskun summa $K$ euroina\n\n**Periaate:** Mittari laskee yhteen kaiken asunnossa käytetyn sähköenergian, joten kuukauden energia on lukemien erotus. Energiasta ja siirrosta maksetaan kilowattituntia kohti, ja perusmaksut lisätään kulutuksesta riippumatta.\n\n**Kaava:** $E = E_\\text{loppu} - E_\\text{alku}$ ja $K = aE + K_\\text{perus}$, joten $K = a(E_\\text{loppu} - E_\\text{alku}) + K_\\text{perus}$\n\n**Muunnokset:** $a = 12{,}0\\,\\text{snt/kWh} + 6{,}0\\,\\text{snt/kWh} = 18{,}0\\,\\text{snt/kWh} = 0{,}180\\,\\text{€/kWh}$\n\n**Sijoitus:** $E = 15\\,589\\,\\text{kWh} - 15\\,362\\,\\text{kWh} = 227\\,\\text{kWh}$ ja $K = 0{,}180\\,\\tfrac{\\text{€}}{\\text{kWh}} \\cdot 227\\,\\text{kWh} + 9{,}00\\,\\text{€} = 40{,}86\\,\\text{€} + 9{,}00\\,\\text{€} = 49{,}86\\,\\text{€}$\n\n**Vastaus:** $49{,}9\\,\\text{€}$, kolme merkitsevää numeroa kuten energian hinnassa $12{,}0\\,\\text{snt/kWh}$.\n\n**Järkevyys:** Arvio: $230\\,\\text{kWh} \\cdot 0{,}2\\,\\text{€/kWh} \\approx 46\\,\\text{€}$ ja perusmaksut päälle, noin $55\\,\\text{€}$; tarkka tulos on vähän pienempi, koska hinta on alle $0{,}2\\,\\text{€/kWh}$. Kulutus $227\\,\\text{kWh}$ kuukaudessa eli noin $7{,}6\\,\\text{kWh}$ vuorokaudessa sopii kerrostaloasuntoon, jossa ei ole sähkölämmitystä."
+      "solution": "**Annettu:** mittarin lukemat $15\\,362\\,\\text{kWh}$ ja $15\\,589\\,\\text{kWh}$, energian hinta $12{,}0\\,\\text{snt/kWh}$, siirron hinta $6{,}0\\,\\text{snt/kWh}$, perusmaksut $K_\\text{perus} = 9{,}00\\,\\text{€}$\n\n**Kysytty:** kuukauden laskun summa $K$ euroina\n\n**Periaate:** Mittari laskee yhteen kaiken asunnossa käytetyn sähköenergian, joten kuukauden energia on lukemien erotus. Energiasta ja siirrosta maksetaan kilowattituntia kohti, ja perusmaksut lisätään kulutuksesta riippumatta.\n\n**Kaava:** $E = E_\\text{loppu} - E_\\text{alku}$ ja $K = aE + K_\\text{perus}$, joten $K = a(E_\\text{loppu} - E_\\text{alku}) + K_\\text{perus}$\n\n**Muunnokset:** $a = 12{,}0\\,\\text{snt/kWh} + 6{,}0\\,\\text{snt/kWh} = 18{,}0\\,\\text{snt/kWh} = 0{,}180\\,\\text{€/kWh}$\n\n**Sijoitus:** $E = 15\\,589\\,\\text{kWh} - 15\\,362\\,\\text{kWh} = 227\\,\\text{kWh}$ ja $K = 0{,}180\\,\\tfrac{\\text{€}}{\\text{kWh}} \\cdot 227\\,\\text{kWh} + 9{,}00\\,\\text{€} = 40{,}86\\,\\text{€} + 9{,}00\\,\\text{€} = 49{,}86\\,\\text{€}$\n\n**Vastaus:** $49{,}86\\,\\text{€} \\approx 50\\,\\text{€}$; rahasumma annetaan sentin tarkkuudella, ja tiedot ovat kolmen merkitsevän numeron tarkkuudella kuten energian hinnassa $12{,}0\\,\\text{snt/kWh}$.\n\n**Järkevyys:** Arvio: $230\\,\\text{kWh} \\cdot 0{,}2\\,\\text{€/kWh} \\approx 46\\,\\text{€}$ ja perusmaksut päälle, noin $55\\,\\text{€}$; tarkka tulos on vähän pienempi, koska hinta on alle $0{,}2\\,\\text{€/kWh}$. Kulutus $227\\,\\text{kWh}$ kuukaudessa eli noin $7{,}6\\,\\text{kWh}$ vuorokaudessa sopii kerrostaloasuntoon, jossa ei ole sähkölämmitystä."
     },
     {
       "id": "harjoitukset",
@@ -318,7 +318,7 @@
       "type": "explain",
       "title": "3. Selitä kulutus",
       "optional": true,
-      "prompt": "Omakotitalossa on sähkölämmitys, lämminvesivaraaja ja sähkökiuas. Selitä, miksi juuri nämä laitteet ratkaisevat talon sähkölaskun suuruuden, vaikka talossa on kymmeniä muitakin sähkölaitteita.",
+      "prompt": "Omakotitalossa on sähkölämmitys, lämminvesivaraaja ja sähkökiuas. Selitä, miksi juuri nämä laitteet ratkaisevat talon sähkölaskun suuruuden, vaikka talossa on kymmeniä muitakin sähkölaitteita. Kerro myös, mihin sähköenergia lämmittävissä laitteissa päätyy.",
       "model": "Laitteen energia on teho kertaa käyttöaika. Lämmityksen, lämminvesivaraajan ja kiukaan teho on kilowatteja, ja lämmitys ja varaaja toimivat tuntikausia joka päivä, joten niiden energia on suuri. Esimerkiksi $2\\,\\text{kW}$:n varaaja käyttää kolmessa tunnissa $6\\,\\text{kWh}$, kun taas $100\\,\\text{W}$:n televisio kolmessa tunnissa vain $0{,}3\\,\\text{kWh}$. Muiden laitteiden teho on pieni tai käyttöaika lyhyt, joten niiden yhteenlaskettu energia jää pienemmäksi. Lämmittävissä laitteissa sähköenergia muuttuu vastuksen sisäenergiaksi, joka siirtyy lämpönä huoneilmaan, veteen tai kiviin. Siksi säästökeinot kannattaa kohdistaa näihin laitteisiin.",
       "criteria": [
         "Vastaus perustelee energian suuruuden sekä teholla että käyttöajalla.",

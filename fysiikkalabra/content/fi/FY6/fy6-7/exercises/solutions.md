@@ -19,14 +19,14 @@
 **Järkevyys:** Kilowattitunti on $3{,}6\,\text{MJ}$, joten vajaa viidesosa siitä on vähän yli puoli megajoulea. Jouleina luku on suurempi kuin kilowattitunteina, koska joule on paljon pienempi yksikkö.
 
 ## fy6-7-L1-03
-**Annettu:** nimellisteho $P = 1800\,\text{W}$, jännite $U = 230\,\text{V}$
+**Annettu:** nimellisteho $P = 1200\,\text{W}$, jännite $U = 230\,\text{V}$
 **Kysytty:** virta $I$ ampeereina
 **Periaate:** Sähköteho on jännite kertaa virta. Verkkojännite $230\,\text{V}$ on vaihtojännitteen tehollinen arvo, joten lämmittävän laitteen teho lasketaan sillä kuten tasajännitteellä.
 **Kaava:** $P = UI$, josta $I = \dfrac{P}{U}$
 **Muunnokset:** Ei tarvita: $1\,\text{W} : 1\,\text{V} = 1\,\text{A}$.
-**Sijoitus:** $I = \dfrac{1800\,\text{W}}{230\,\text{V}} = 7{,}826\,\text{A}$
-**Vastaus:** $7{,}8\,\text{A}$, kaksi merkitsevää numeroa kuten jännitteessä $230\,\text{V}$.
-**Järkevyys:** Arvio $1800\,\text{W} : 200\,\text{V} = 9\,\text{A}$ on hieman suurempi, koska jakaja on pienempi. Virta on alle $10\,\text{A}$:n, joten kuivaaja mahtuu tavalliseen kodin virtapiiriin, kun muita suuritehoisia laitteita ei ole samaan aikaan päällä.
+**Sijoitus:** $I = \dfrac{1200\,\text{W}}{230\,\text{V}} = 5{,}217\,\text{A}$
+**Vastaus:** $5{,}2\,\text{A}$, kaksi merkitsevää numeroa kuten jännitteessä $230\,\text{V}$.
+**Järkevyys:** Arvio $1200\,\text{W} : 200\,\text{V} = 6\,\text{A}$ on hieman suurempi, koska jakaja on pienempi. Virta on alle $10\,\text{A}$, joten silitysrauta sopii $10\,\text{A}$:n tai $16\,\text{A}$:n sulakkeella suojattuun virtapiiriin, kun muita suuritehoisia laitteita ei ole samaan aikaan päällä.
 
 ## fy6-7-L1-04
 **Annettu:** energia $E = 350\,\text{kWh}$, hinta $a = 15{,}0\,\text{snt/kWh}$
@@ -46,7 +46,7 @@
 **Muunnokset:** $P = 6{,}0\,\text{W} = 0{,}0060\,\text{kW}$; paloaika vuodessa $t = 365 \cdot 5{,}0\,\text{h} = 1825\,\text{h}$
 **Sijoitus:** $E = 0{,}0060\,\text{kW} \cdot 1825\,\text{h} = 10{,}95\,\text{kWh}$
 **Vastaus:** $11\,\text{kWh}$, kaksi merkitsevää numeroa kuten tehossa $6{,}0\,\text{W}$ ja ajassa $5{,}0\,\text{h}$.
-**Järkevyys:** Päivässä lamppu käyttää $6\,\text{W} \cdot 5\,\text{h} = 30\,\text{Wh}$, ja $365 \cdot 30\,\text{Wh} \approx 11\,000\,\text{Wh} = 11\,\text{kWh}$. Koko vuoden valaistus yhdellä LED-lampulla käyttää vähemmän energiaa kuin yksi puolentoista tunnin saunomiskerta $6\,\text{kW}$:n kiukaalla.
+**Järkevyys:** Päivässä lamppu käyttää $6\,\text{W} \cdot 5\,\text{h} = 30\,\text{Wh}$, ja $365 \cdot 30\,\text{Wh} \approx 11\,000\,\text{Wh} = 11\,\text{kWh}$. Koko vuoden valaistus yhdellä LED-lampulla käyttää suunnilleen saman verran (hieman enemmän) energiaa kuin yksi puolentoista tunnin saunomiskerta $6\,\text{kW}$:n kiukaalla ($9{,}0\,\text{kWh}$).
 
 ## fy6-7-L2-01
 **Annettu:** kuvaajan $(t, P)$ tehot ja ajat pesuohjelman kolmessa vaiheessa
@@ -57,7 +57,7 @@
 **Muunnokset:** Ei tarvita: tehot luetaan kilowatteina ja ajat tunteina, joten energia saadaan kilowattitunteina.
 **Sijoitus:** $E = 2{,}0\,\text{kW} \cdot 0{,}25\,\text{h} + 0{,}2\,\text{kW} \cdot 1{,}0\,\text{h} + 0{,}4\,\text{kW} \cdot 0{,}25\,\text{h} = 0{,}80\,\text{kWh}$
 **Vastaus:** $0{,}80\,\text{kWh}$, kaksi merkitsevää numeroa, koska arvot luetaan $0{,}2\,\text{kW}$:n ja $0{,}25\,\text{h}$:n ruudukkoviivoilta.
-**Järkevyys:** Lämmitys on lyhyt mutta tuottaa yli puolet energiasta, $0{,}50\,\text{kWh}$, koska sen teho on kymmenkertainen pesuun verrattuna. Puolentoista tunnin ohjelma keskimäärin noin $0{,}5\,\text{kW}$:n teholla antaisi $0{,}8\,\text{kWh}$.
+**Järkevyys:** Lämmitys on lyhyt mutta käyttää yli puolet energiasta, $0{,}50\,\text{kWh}$, koska sen teho on kymmenkertainen pesuun verrattuna. Puolentoista tunnin ohjelma keskimäärin noin $0{,}5\,\text{kW}$:n teholla antaisi $0{,}8\,\text{kWh}$.
 
 ## fy6-7-L2-02
 **Annettu:** jännite $U = 230\,\text{V}$, virta $I = 8{,}7\,\text{A}$, aika $t = 4{,}0\,\text{min}$

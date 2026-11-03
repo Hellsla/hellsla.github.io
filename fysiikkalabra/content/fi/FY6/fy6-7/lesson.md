@@ -116,7 +116,7 @@
 ## Ydinajatus
 
 ### Teho kertoo tahdin, energia määrän
-Jokaisen sähkölaitteen arvokilvessä on sen **nimellisteho**, esimerkiksi vedenkeittimessä $2000\,\text{W}$ ja televisiossa $100\,\text{W}$. Teho kertoo, kuinka nopeasti laite ottaa sähköenergiaa verkosta (luku *Sähköteho ja vastuksen lämpeneminen*). Se, kuinka paljon energiaa laite kaikkiaan käyttää, riippuu tehon lisäksi käyttöajasta: kun teho pysyy vakiona, **energia on teho kertaa aika**. Sähkölaskussa maksetaan energiasta, ei tehosta.
+Jokaisen sähkölaitteen arvokilvessä on sen **nimellisteho**, esimerkiksi vedenkeittimessä $2000\,\text{W}$ ja televisiossa $100\,\text{W}$. Teho kertoo, kuinka nopeasti laite ottaa sähköenergiaa verkosta (luku *Sähköteho ja vastuksen lämpeneminen*). Se, kuinka paljon energiaa laite kaikkiaan käyttää, riippuu tehon lisäksi käyttöajasta: kun teho pysyy vakiona, **energia on teho kertaa aika**. Sähkölaskussa maksetaan pääosin energiasta, ei tehosta.
 
 Siksi suuri teho ei yksin tarkoita suurta kulutusta. Vedenkeitin, jonka teho on $2{,}0\,\text{kW}$, käyttää kuudessa minuutissa yhtä paljon energiaa kuin $0{,}10\,\text{kW}$:n televisio kahdessa tunnissa. Ajan ja tehon kuvaajassa energia on kuvaajan ja aika-akselin väliin jäävä pinta-ala: kapea ja korkea suorakulmio voi olla yhtä suuri kuin leveä ja matala.
 
@@ -303,6 +303,6 @@ Toinen yleinen virhe on lukea kilowattitunti "kilowattia tunnissa". Kilowattitun
 ## Tiivistelmä
 - Vakioteholla toimivan laitteen käyttämä sähköenergia on $E = Pt = UIt$. Teho kertoo, kuinka nopeasti energiaa käytetään, energia kuinka paljon.
 - Kilowattitunti on energian yksikkö: $1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3{,}6\,\text{MJ}$. Kilowateilla ja tunneilla laskettu energia saadaan suoraan kilowattitunteina.
-- Kodin $230\,\text{V}$:n verkossa laitteen virta on $I = P : U$; suuritehoinen laite ottaa suuren virran.
+- Kodin $230\,\text{V}$:n verkossa lämmittävän laitteen virta on $I = P : U$; suuritehoinen laite ottaa suuren virran.
 - Sähkölasku on energian ja siirron hinta kertaa kulutettu energia lisättynä perusmaksuilla. Energia on mittarin lukemien erotus.
 - Eniten säästää pienentämällä niiden laitteiden tehoa tai käyttöaikaa, joiden energia on suurin: lämmitys, lämmin vesi ja sauna.

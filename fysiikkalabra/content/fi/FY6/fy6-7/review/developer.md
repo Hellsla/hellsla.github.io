@@ -1,10 +1,8 @@
 VERDICT: DONE
 
-Draft of *Sähköenergia kotona* (no simulation: the evidence is two invented-data tables, `source: example`).
-
-- `lesson.md`: Ydinajatus (power as rate, energy E = Pt; kWh; device current I = P : U at 230 V, the effective AC value; where household energy goes, saving), Kaava: Sähköenergia (E = Pt, E = UIt, bill K = aE + K_perus, 1 kWh = 3,6 MJ by substituting units), staged example (floor heating 150 kWh, 27 €), misconceptions (power ≠ consumption, "kilowattia tunnissa", W · min), summary.
-- `figures.py`: hero (cut-away home on a winter evening), (t, P) graph with equal 0,20 kWh areas, 1 kW · 1 h = 1 kWh illustration, task graph `washer` (safe).
-- `inquiry.json`: hook, optional P = UI retrieval, two predictions (kettle vs fridge; which saving measure wins) revealed after the theory, two interpret tables with numeric questions, conclusion, reflect, error spotting (W · min as kWh), transfer (bill from meter readings, 49,86 €), three checks, exit.
-- `exercises/`: 5/4/3 with complete solutions; `answers.py`, `lesson-answers.py` compute every number.
-- `exit-ticket.json`: 2 questions not asked by the checks.
-- glossary: `sähköteho` was already added by the previous chapter's draft; nothing changed.
+Lesson (fix):
+- inquiry.json tarkistus-3: prompt now also asks where the electrical energy ends up in heating devices (criterion 3 now answerable).
+- inquiry.json: hook "ei yleensä lue yhtään wattia"; siirto solution answer "49,86 € ≈ 50 €" with rounding justified; ennuste-2: charger option replaced by a 2000 W kettle used 10 min less per day (kW-class distractor, about 120 kWh), standby option states about 3 W.
+- lesson.md: "pääosin energiasta"; summary "lämmittävän laitteen virta".
+- glossary untouched (already fixed).
+Checks: build, check_lesson all ok (inquiry 41 passed), check_layout 345 ok.

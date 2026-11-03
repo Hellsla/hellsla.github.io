@@ -8,11 +8,11 @@ a = {}
 # Level 1: one formula, values given
 a["fy6-7-L1-01"] = 0.045 * 4.0                            # laptop 45 W = 0,045 kW for 4,0 h: 0,18 kWh
 a["fy6-7-L1-02"] = 0.15 * 3.6                             # 0,15 kWh = 0,15 · 3,6 MJ = 0,54 MJ
-a["fy6-7-L1-03"] = 1800 / 230                             # hair dryer 1800 W on 230 V: I = P : U = 7,83 A
+a["fy6-7-L1-03"] = 1200 / 230                             # iron 1200 W on 230 V: I = P : U = 5,22 A
 a["fy6-7-L1-04"] = 350 * 0.150                            # 350 kWh at 15,0 snt/kWh = 0,150 EUR/kWh: 52,5 EUR
 a["fy6-7-L1-05"] = 0.0060 * 5.0 * 365                     # LED 6,0 W, 5,0 h a day, 365 days: 10,95 kWh
 # Level 2: two steps, a conversion or a figure
-# figure fy6-7/pesukone: 2,0 kW for 0,25 h, 0,20 kW for 1,0 h, 0,40 kW for 0,25 h
+# figure fy6-7/washer: 2,0 kW for 0,25 h, 0,20 kW for 1,0 h, 0,40 kW for 0,25 h
 a["fy6-7-L2-01"] = 2.0 * 0.25 + 0.20 * 1.0 + 0.40 * 0.25  # areas: 0,50 + 0,20 + 0,10 = 0,80 kWh
 a["fy6-7-L2-02"] = 230 * 8.7 * 4.0 * 60 / 1000            # kettle 230 V, 8,7 A, 4,0 min = 240 s: E = U I t = 480 kJ
 a["fy6-7-L2-03"] = 0.0045 * 24 * 365 * 0.17               # standby 4,5 W all year (8760 h) = 39,42 kWh at 17 snt: 6,70 EUR
