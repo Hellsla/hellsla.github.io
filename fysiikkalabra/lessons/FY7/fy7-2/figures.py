@@ -99,7 +99,7 @@ def circle_path():
 def r_graph():
     f = Fig("fy72-rv", 340, "Kuvaaja mittakaavassa: ympyräradan säde r senttimetreinä hiukkasen vauhdin v funktiona, kun magneettikenttä "
             "on 0,20 teslaa. Protonin suora nousee origosta arvoon 10,4 cm vauhdilla 2,0 miljoonaa metriä sekunnissa, deuteronin "
-            "suora kaksi kertaa jyrkemmin arvoon 20,9 cm. Säde on suoraan verrannollinen vauhtiin ja massaan.")
+            "suora kaksi kertaa jyrkemmin arvoon 20,9 cm. Säde on suoraan verrannollinen vauhtiin ja massaan. Kuvaaja näyttää säteen r, ei halkaisijaa 2r.")
     ax = Axes(f, (96, 286), (424, 52), x=(0, 2.0), y=(0, 22), xticks=[0.5, 1.0, 1.5, 2.0], yticks=[5, 10, 15, 20],
               xlabel=r"v\ (10^6\,\text{m/s})", ylabel=r"r\ (\text{cm})", xfmt=lambda v: fi(v, 1))
     rp = lambda v: mp * v * 1e6 / (e * 0.20) * 100
@@ -108,14 +108,14 @@ def r_graph():
     ax.line([(0, 0), (2.0, rd(2.0))], WATER, 3)
     for v in (1.0, 2.0):
         ax.point(v, rp(v), INK); ax.point(v, rd(v), WATER)
-    f.tex(ax.X(2.0) - 12, ax.Y(rp(2.0)) + 24, r"\text{protoni}", "end", INK, w=110)
+    f.tex(ax.X(1.5), ax.Y(rp(1.5)) + 48, r"\text{protoni}", "middle", INK, w=110)
     f.tex(ax.X(2.0) - 16, ax.Y(rd(2.0)) - 2, r"\text{deuteroni}", "end", WATER, w=130)
     f.tex(ax.X(0.08), 40, r"B = 0{,}20\,\text{T}", "start", w=130)
     return f.svg()
 
 
 def spectrometer():
-    f = Fig("fy72-ms", 390, "Periaatekuva, ei mittakaavassa: massaspektrometri. Vasemmalla ionilähde. Ionit kulkevat ensin "
+    f = Fig("fy72-ms", 410, "Periaatekuva, ei mittakaavassa: massaspektrometri. Vasemmalla ionilähde. Ionit kulkevat ensin "
             "nopeusvalitsimen läpi: levyjen välillä sähkökenttä osoittaa ylöspäin ja magneettikenttä paperista ulos, ja "
             "suoraan kulkevaan ioniin vaikuttavat yhtä suuret vastakkaiset voimat, sähköinen ylös ja magneettinen alas. Raon "
             "jälkeen ionit kaartuvat toisessa magneettikentässä puoliympyrän ja osuvat ilmaisimeen. Raskaampien ionien "
@@ -135,7 +135,7 @@ def spectrometer():
     f.tex(179, 16, r"\text{nopeusvalitsin}", "middle", w=200)
     # the deflection chamber: B2 out of the page, two semicircles back to the detector on its left wall
     wall = 330
-    r1, r2 = 110, 121                              # Ne-20 and Ne-22: radii in the ratio 20 : 22
+    r1, r2 = 106, 126                              # a lighter and a heavier ion; schematic, not to scale (the ratio is exaggerated)
     f.rect(wall, yb - 30, 250, 2 * r2 + 70, GLASS, None)
     f.rect(wall, yb - 30, 250, 2 * r2 + 70, "none", INK, 2.5, 6)
     for i in range(3):
@@ -149,13 +149,14 @@ def spectrometer():
     # detector on the left wall below the slit
     f.rect(wall - 10, yb + 20, 10, 2 * r2 + 14, INK)
     for r in (r1, r2): f.circle(wall - 5, yb + 2 * r, 5, HEAT_LIGHT, INK, 1.5)
-    f.tex(wall - 18, yb + 2 * r2 + 34, r"\text{ilmaisin}", "end", w=110)
-    f.tex(wall + r2 + 20, yb + r2 + 6, r"\text{raskaampi}", "start", BEAM, w=130, bg=True)
+    f.tex(wall - 18, yb + 2 * r2 + 50, r"\text{ilmaisin}", "end", w=110)
+    f.tex(wall - 56, yb + 2 * r1, r"\text{kevyempi}", "end", BEAM, w=130)
+    f.tex(wall - 22, yb + 2 * r2 + 2, r"\text{raskaampi}", "end", BEAM, w=130)
     # 2r of the lighter ion
     xd = wall - 34
     f.line(xd, yb, xd, yb + 2 * r1, INK, 1.5)
     for y in (yb, yb + 2 * r1): f.line(xd - 6, y, xd + 6, y, INK, 1.5)
-    f.tex(xd - 10, yb + r1, "2r", "end")
+    f.tex(xd - 10, yb + r1 + 16, "2r", "end")
     # forces on an ion in the selector, drawn on its own row under the plates
     ix = 160
     f.arrow(ix, yb, ix, yb - 28, FORCE, 3, 11)
@@ -175,11 +176,15 @@ def track_sign():
             "ei ole merkitty.")
     f.rect(40, 30, 520, 270, GLASS, None)
     f.rect(40, 30, 520, 270, "none", INK, 2.5, 6)
+    R = 190
+    ang = math.radians(62); px, py = 40 + R * math.sin(ang), 100 + R - R * math.cos(ang)
     for i in range(7):
         for j in range(4):
             x, y = 80 + 74 * i, 62 + 70 * j
+            th = math.atan2(x - 40, 100 + R - y)           # a cross keeps clear of the dashed track and the particle
+            d_track = abs(math.hypot(x - 40, y - 100 - R) - R) if 0 <= th <= ang else 1e9
+            if d_track < 22 or math.hypot(x - px, y - py) < 36: continue
             in_mark(f, x, y)
-    R = 190
     f.line(14, 100, 40, 100, INK, 2.5, "6 4")
     f.path(f"M40,100 A{R},{R} 0 0 1 {n(40 + R * math.sin(math.radians(62)))},{n(100 + R - R * math.cos(math.radians(62)))}", stroke=INK, w=2.5, extra='stroke-dasharray="6 4"')
     a = math.radians(62); x, y = 40 + R * math.sin(a), 100 + R - R * math.cos(a)

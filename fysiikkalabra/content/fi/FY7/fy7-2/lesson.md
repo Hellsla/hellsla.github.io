@@ -264,9 +264,9 @@ q v B &= \frac{m v^2}{r} \\
 r &= \frac{m v}{q B}
 \end{aligned}
 ```
-missä $r$ on ympyräradan säde (m) ja $m$ hiukkasen massa (kg). Säde on suoraan verrannollinen hiukkasen massaan ja vauhtiin ja kääntäen verrannollinen varaukseen ja kenttään. Raskas tai nopea hiukkanen kaartuu loivasti, voimakas kenttä taivuttaa radan tiukalle. Kaava pätee, kun vauhti on pieni valon nopeuteen verrattuna.
+missä $r$ on ympyräradan säde (m) ja $m$ hiukkasen massa (kg). Säde on suoraan verrannollinen hiukkasen massaan ja vauhtiin ja kääntäen verrannollinen varaukseen ja kenttään. Raskas tai nopea hiukkanen kaartuu loivasti, voimakas kenttä taivuttaa radan tiukalle. Kaava pätee, kun vauhti on pieni valon nopeuteen verrattuna. Alla oleva kuvaaja näyttää säteen $r$; simulaation ilmaisimella osumakohdan etäisyys raosta on halkaisija $d = 2r$.
 
-<svg data-fig="r-graph" viewBox="0 0 600 340" role="img" aria-label="Kuvaaja mittakaavassa: ympyräradan säde r senttimetreinä hiukkasen vauhdin v funktiona, kun magneettikenttä on 0,20 teslaa. Protonin suora nousee origosta arvoon 10,4 cm vauhdilla 2,0 miljoonaa metriä sekunnissa, deuteronin suora kaksi kertaa jyrkemmin arvoon 20,9 cm. Säde on suoraan verrannollinen vauhtiin ja massaan." style="max-width:100%;font-size:24px">
+<svg data-fig="r-graph" viewBox="0 0 600 340" role="img" aria-label="Kuvaaja mittakaavassa: ympyräradan säde r senttimetreinä hiukkasen vauhdin v funktiona, kun magneettikenttä on 0,20 teslaa. Protonin suora nousee origosta arvoon 10,4 cm vauhdilla 2,0 miljoonaa metriä sekunnissa, deuteronin suora kaksi kertaa jyrkemmin arvoon 20,9 cm. Säde on suoraan verrannollinen vauhtiin ja massaan. Kuvaaja näyttää säteen r, ei halkaisijaa 2r." style="max-width:100%;font-size:24px">
   <line x1="178" y1="286" x2="178" y2="52" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="260" y1="286" x2="260" y2="52" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="342" y1="286" x2="342" y2="52" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -304,7 +304,7 @@ missä $r$ on ympyräradan säde (m) ja $m$ hiukkasen massa (kg). Säde on suora
   <circle cx="260" cy="175" r="6.5" fill="#2f74b5" stroke="#ffffff" stroke-width="2"/>
   <circle cx="424" cy="175" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
   <circle cx="424" cy="64" r="6.5" fill="#2f74b5" stroke="#ffffff" stroke-width="2"/>
-  <foreignObject x="302" y="184.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{protoni}$</div></foreignObject>
+  <foreignObject x="287" y="236" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{protoni}$</div></foreignObject>
   <foreignObject x="278" y="47.5" width="130" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#2f74b5">$\text{deuteroni}$</div></foreignObject>
   <foreignObject x="109" y="25.5" width="130" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$B = 0{,}20\,\text{T}$</div></foreignObject>
 </svg>
@@ -328,7 +328,7 @@ m = \frac{q B_2 r}{v}
 ```
 Samalla vauhdilla ja varauksella radan säde on suoraan verrannollinen massaan, joten raskaammat ionit osuvat kauemmas. Näin erotetaan saman alkuaineen isotoopit, jotka eroavat toisistaan vain massaltaan: radiohiiliajoituksessa hiili-14-ionit erotetaan ja lasketaan erikseen hiili-12-ioneista. Massaspektrometrillä tunnistetaan myös esimerkiksi dopingaineita ja ympäristömyrkkyjä.
 
-<svg data-fig="spectrometer" viewBox="0 0 600 390" role="img" aria-label="Periaatekuva, ei mittakaavassa: massaspektrometri. Vasemmalla ionilähde. Ionit kulkevat ensin nopeusvalitsimen läpi: levyjen välillä sähkökenttä osoittaa ylöspäin ja magneettikenttä paperista ulos, ja suoraan kulkevaan ioniin vaikuttavat yhtä suuret vastakkaiset voimat, sähköinen ylös ja magneettinen alas. Raon jälkeen ionit kaartuvat toisessa magneettikentässä puoliympyrän ja osuvat ilmaisimeen. Raskaampien ionien puoliympyrä on suurempi, joten ne osuvat kauemmas raosta. Osumakohdan etäisyys raosta on radan halkaisija 2r." style="max-width:100%;font-size:24px">
+<svg data-fig="spectrometer" viewBox="0 0 600 410" role="img" aria-label="Periaatekuva, ei mittakaavassa: massaspektrometri. Vasemmalla ionilähde. Ionit kulkevat ensin nopeusvalitsimen läpi: levyjen välillä sähkökenttä osoittaa ylöspäin ja magneettikenttä paperista ulos, ja suoraan kulkevaan ioniin vaikuttavat yhtä suuret vastakkaiset voimat, sähköinen ylös ja magneettinen alas. Raon jälkeen ionit kaartuvat toisessa magneettikentässä puoliympyrän ja osuvat ilmaisimeen. Raskaampien ionien puoliympyrä on suurempi, joten ne osuvat kauemmas raosta. Osumakohdan etäisyys raosta on radan halkaisija 2r." style="max-width:100%;font-size:24px">
   <rect x="14" y="60" width="46" height="36" rx="5" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
   <foreignObject x="-3" y="105.5" width="80" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{lähde}$</div></foreignObject>
   <rect x="84" y="32" width="190" height="10" rx="2" fill="#8a96a3" stroke="#1f2933" stroke-width="1.5"/>
@@ -346,8 +346,8 @@ Samalla vauhdilla ja varauksella radan säde on suoraan verrannollinen massaan, 
   <circle cx="232" cy="98" r="7" fill="none" stroke="#2b8a3e" stroke-width="2"/>
   <circle cx="232" cy="98" r="2.6" fill="#2b8a3e"/>
   <foreignObject x="79" y="1.5" width="200" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{nopeusvalitsin}$</div></foreignObject>
-  <rect x="330" y="48" width="250" height="312" fill="#eef5f9"/>
-  <rect x="330" y="48" width="250" height="312" rx="6" fill="none" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="330" y="48" width="250" height="322" fill="#eef5f9"/>
+  <rect x="330" y="48" width="250" height="322" rx="6" fill="none" stroke="#1f2933" stroke-width="2.5"/>
   <circle cx="400" cy="108" r="7" fill="none" stroke="#2b8a3e" stroke-width="2"/>
   <circle cx="400" cy="108" r="2.6" fill="#2b8a3e"/>
   <circle cx="400" cy="170" r="7" fill="none" stroke="#2b8a3e" stroke-width="2"/>
@@ -374,17 +374,18 @@ Samalla vauhdilla ja varauksella radan säde on suoraan verrannollinen massaan, 
   <circle cx="532" cy="294" r="2.6" fill="#2b8a3e"/>
   <foreignObject x="529" y="51.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#2b8a3e">$\overline{B}_2$</div></foreignObject>
   <line x1="60" y1="78" x2="330" y2="78" stroke="#7048e8" stroke-width="3" stroke-linecap="butt"/>
-  <path d="M330,78 A110,110 0 0 1 330,298" fill="none" stroke="#7048e8" stroke-width="3" stroke-linejoin="round"/>
-  <path d="M330,78 A121,121 0 0 1 330,320" fill="none" stroke="#7048e8" stroke-width="3" stroke-linejoin="round"/>
-  <rect x="320" y="98" width="10" height="256" fill="#1f2933"/>
-  <circle cx="325" cy="298" r="5" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="325" cy="320" r="5" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
-  <foreignObject x="202" y="339.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{ilmaisin}$</div></foreignObject>
-  <foreignObject x="471" y="190.5" width="130" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#7048e8"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{raskaampi}$</span></div></foreignObject>
-  <line x1="296" y1="78" x2="296" y2="298" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <path d="M330,78 A106,106 0 0 1 330,290" fill="none" stroke="#7048e8" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M330,78 A126,126 0 0 1 330,330" fill="none" stroke="#7048e8" stroke-width="3" stroke-linejoin="round"/>
+  <rect x="320" y="98" width="10" height="266" fill="#1f2933"/>
+  <circle cx="325" cy="290" r="5" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
+  <circle cx="325" cy="330" r="5" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
+  <foreignObject x="202" y="365.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{ilmaisin}$</div></foreignObject>
+  <foreignObject x="144" y="275.5" width="130" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#7048e8">$\text{kevyempi}$</div></foreignObject>
+  <foreignObject x="178" y="317.5" width="130" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#7048e8">$\text{raskaampi}$</div></foreignObject>
+  <line x1="296" y1="78" x2="296" y2="290" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="290" y1="78" x2="302" y2="78" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="290" y1="298" x2="302" y2="298" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <foreignObject x="253" y="173.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$2r$</div></foreignObject>
+  <line x1="290" y1="290" x2="302" y2="290" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="253" y="185.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$2r$</div></foreignObject>
   <line x1="160" y1="78" x2="160" y2="60" stroke="#c92a2a" stroke-width="3" stroke-linecap="butt"/>
   <path d="M160,50 L165,61 L155,61 Z" fill="#c92a2a" stroke-linejoin="round"/>
   <line x1="160" y1="78" x2="160" y2="96" stroke="#c92a2a" stroke-width="3" stroke-linecap="butt"/>
@@ -451,7 +452,7 @@ Atomimassayksikköinä $m = 3{,}324 \cdot 10^{-26}\,\text{kg} : (1{,}661 \cdot 1
 
 <!-- vaihe -->
 
-**Järkevyys.** Neon-20-atomin massa on taulukon mukaan $19{,}99\,\text{u}$, joten ionit ovat neon-20:tä; protonin massaan verrattuna ioni on noin $20$ kertaa raskaampi, kuten pitääkin. Neonissa on myös isotooppia neon-22: sen ionit osuisivat $27{,}4\,\text{cm}$:n päähän eli noin $2{,}5\,\text{cm}$ kauemmas, sillä samalla vauhdilla säde kasvaa massan mukana. Vauhti $3{,}00 \cdot 10^{5}\,\text{m/s}$ on alle $0{,}1\,\%$ valon nopeudesta, joten kaava $r = mv : (qB)$ pätee hyvin.
+**Järkevyys.** Neon-20-atomin massa on taulukon mukaan $19{,}99\,\text{u}$, joten ionit ovat neon-20:tä; protonin massaan verrattuna ioni on noin $20$ kertaa raskaampi, kuten pitääkin. Neonissa on myös isotooppia neon-22: sen ionit osuisivat $27{,}4\,\text{cm}$:n päähän eli noin $2{,}5\,\text{cm}$ kauemmas, sillä samalla vauhdilla säde kasvaa massan mukana. Vauhti $3{,}00 \cdot 10^{5}\,\text{m/s}$ on noin $0{,}1\,\%$ valon nopeudesta, joten kaava $r = mv : (qB)$ pätee hyvin.
 
 ## Yleinen virhekäsitys
 Moni ajattelee, että magneettikenttä vetää varattua hiukkasta kentän suuntaan tai napaa kohti, kuten magneetti vetää rautanaulaa, ja että kenttä kiihdyttää hiukkasta. Magneettinen voima on kuitenkin aina kohtisuorassa sekä nopeutta että kenttää vastaan. Siksi se ei tee työtä eikä muuta hiukkasen vauhtia: se vain kääntää liikkeen suuntaa. Hiukkasen vauhtia voi kasvattaa vain sähkökenttä, ja siksi kiihdyttimissä on sekä sähkökenttiä että magneetteja.

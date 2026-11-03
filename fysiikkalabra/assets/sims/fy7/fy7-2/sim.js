@@ -21,7 +21,7 @@ new p5((p) => {
   const INK = [31, 41, 51], MUTED = [107, 116, 128], RED = [201, 42, 42], BLUE = [25, 113, 194], GREEN = [43, 138, 62];
   const BROWN = [138, 95, 34], RULEC = [201, 194, 178];
   let btn, selP, slV, slB, selDir, slE, selSpeed, readout, lV, lB, lE;
-  let labels = [], sig = '', path = null, tShow = 0, running = false, done = false;
+  let labels = [], marks = [], sig = '', path = null, tShow = 0, running = false, done = false;
 
   const model = () => {
     const key = selP.value(), P = PART[key] || PART.protoni, v = Number(slV.value()), B = Number(slB.value());
@@ -92,7 +92,7 @@ new p5((p) => {
     p.createP(__('selite')).parent('sim-root').class('note');
     p.textFont('Arial');
     if (window.defineSimAdapter) window.defineSimAdapter({
-      params: { hiukkanen: { input: selP.elt, unit: '' }, v: { input: slV.elt, unit: '· 10⁶ m/s' }, B: { input: slB.elt, unit: 'T' },
+      params: { hiukkanen: { input: selP.elt, unit: '' }, v: { input: slV.elt, unit: 'Mm/s' }, B: { input: slB.elt, unit: 'T' },
                 suunta: { input: selDir.elt, unit: '' }, E: { input: slE.elt, unit: 'kV/m' } },
       reset: () => { selP.selected('protoni'); slV.value(1.0); slB.value(0.20); selDir.selected('ulos'); slE.value(0); sig = ''; restart(); },
       step: () => p.redraw(), pause: () => p.noLoop(), resume: () => p.loop(),
@@ -121,7 +121,7 @@ new p5((p) => {
     chamber(m, fh, U, k);
     particle(m, cur, fh, U);
     window.simState = { hiukkanen: m.key, q: m.P.q, m: m.P.m, v: m.v, vMs: m.vMs, B: m.B, suunta: m.dir > 0 ? 'ulos' : 'sisaan', E: m.E,
-      Fm: m.Fm, Fs: m.Fs, Fm14: round(m.Fm * 1e14, 3), Fs14: round(m.Fs * 1e14, 3), r: m.r,
+      Fm: m.Fm, Fs: m.Fs, Fm14: round(m.Fm * 1e14, 3), Fs14: round(m.Fs * 1e14, 3), Fm15: round(m.Fm * 1e15, 2), Fs15: round(m.Fs * 1e15, 2), r: m.r,
       tulos: path.tulos, d: path.d === null ? null : round(path.d, 2), poikkeama: path.y === null ? null : round(path.y, 2), puoli: path.puoli,
       vLoppu: round(path.vEnd / 1e6, 3), vNyt: vNow, x: cur[0], y: cur[1], running, valmis: done, labels };
   };
@@ -137,6 +137,7 @@ new p5((p) => {
   const SX = (x) => X0 + x * S, SY = (y) => MID - y * S;
 
   function chamber(m, fh, U, k) {
+    marks = [];
     // glass chamber with the 5 cm grid
     grect(X0, Y0, X1 - X0, Y1 - Y0, [[245, 249, 252], [226, 236, 243]], 6);
     p.stroke(214, 226, 234); p.strokeWeight(1);
@@ -159,6 +160,7 @@ new p5((p) => {
       p.stroke(...GREEN); p.strokeWeight(1.8 * U);
       for (let x = X0 + CELL / 2; x < X1 - 8; x += CELL) for (let j = 0; j < 4; j++) for (const sg of [-1, 1]) {
         const y = MID + sg * (j + 0.5) * CELL, a = 5 * U;
+        marks.push([x, y, 8 * U]);
         if (m.dir < 0) { p.line(x - a, y - a, x + a, y + a); p.line(x - a, y + a, x + a, y - a); }
         else { p.noFill(); p.circle(x, y, 13 * U); p.noStroke(); p.fill(...GREEN); p.circle(x, y, 4.5 * U); p.stroke(...GREEN); }
       }
@@ -217,12 +219,14 @@ new p5((p) => {
     p.textSize(fh); const w = p.textWidth(s), g = 5 + fh * 0.3, n = [-d[1], d[0]];
     const ext = (u) => g + Math.abs(u[0]) * w / 2 + Math.abs(u[1]) * fh * 0.55;
     const cand = [];
-    for (const k of [1, 1.8]) for (const u of [d, [-n[0], -n[1]], n, [-d[0], -d[1]]])
+    for (const k of [1, 1.8, 2.6]) for (const u of [d, [-n[0], -n[1]], n, [-d[0], -d[1]]])
       cand.push([tip[0] + u[0] * k * ext(u), tip[1] + u[1] * k * ext(u)]);
-    for (const [cx, cy] of cand) {
+    for (const strict of [true, false]) for (const [cx, cy] of cand) {
       const bx0 = cx - w / 2 - 2, bx1 = cx + w / 2 + 2, by0 = cy - fh * 0.8, by1 = cy + fh * 0.6;
       if (bx0 < X0 + 2 || bx1 > X1 - 2 || by0 < Y0 + 2 || by1 > Y1 - 2) continue;
       if (labels.some((b) => bx0 < b.x1 && b.x0 < bx1 && by0 < b.y1 && b.y0 < by1)) continue;
+      if (strict && marks.some(([mx, my, mr]) => bx0 < mx + mr && mx - mr < bx1 && by0 < my + mr && my - mr < by1)) continue;
+      p.noStroke(); p.fill(250, 250, 250, 225); p.rect(bx0, by0 + 1, bx1 - bx0, by1 - by0 - 2, 3);   // a plate keeps the label legible over the field marks
       lab(s, cx, cy + fh * 0.36, 'c', fh, col); return;
     }
   }

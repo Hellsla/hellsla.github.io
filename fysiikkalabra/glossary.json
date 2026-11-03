@@ -3582,7 +3582,7 @@
   },
   {
     "term": "massaspektrometri",
-    "definition": "Laite, joka erottaa ionit niiden massan mukaan. Tunnetulla vauhdilla liikkuvat ionit kaartuvat magneettikentässä ympyräradalle, jonka säde on verrannollinen massaan, ja osuvat ilmaisimeen eri kohtiin. Sillä erotetaan esimerkiksi isotoopit.",
+    "definition": "Laite, joka erottaa ionit niiden massan mukaan. Tunnetulla vauhdilla liikkuvat ionit kaartuvat magneettikentässä ympyräradalle, jonka säde on samalla varauksella verrannollinen massaan, ja osuvat ilmaisimeen eri kohtiin. Sillä erotetaan esimerkiksi isotoopit.",
     "lessons": [
       "fy7-2"
     ],

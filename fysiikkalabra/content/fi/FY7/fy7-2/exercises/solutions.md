@@ -6,7 +6,7 @@
 **Muunnokset:** Ei tarvita: kaikki suureet ovat SI-yksiköissä, ja $1\,\text{C} \cdot 1\,\tfrac{\text{m}}{\text{s}} \cdot 1\,\text{T} = 1\,\text{N}$.
 **Sijoitus:** $F_\text{m} = 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 3{,}0 \cdot 10^{5}\,\tfrac{\text{m}}{\text{s}} \cdot 0{,}25\,\text{T} = 1{,}2015 \cdot 10^{-14}\,\text{N}$
 **Vastaus:** $1{,}2 \cdot 10^{-14}\,\text{N}$, kaksi merkitsevää numeroa kuten vauhdissa $3{,}0 \cdot 10^{5}\,\text{m/s}$ ja kentässä $0{,}25\,\text{T}$.
-**Järkevyys:** Voima on hyvin pieni, mutta protonin massa on vain $1{,}7 \cdot 10^{-27}\,\text{kg}$, joten kiihtyvyys on noin $10^{13}\,\text{m/s}^2$: suihku kaartuu selvästi jo muutaman senttimetrin matkalla. Pyöristetyillä luvuilla $1{,}6 \cdot 10^{-19} \cdot 3 \cdot 10^{5} \cdot 0{,}25 \approx 1{,}2 \cdot 10^{-14}$, sama tulos.
+**Järkevyys:** Voima on hyvin pieni, mutta protonin massa on vain $1{,}7 \cdot 10^{-27}\,\text{kg}$, joten kiihtyvyys on noin $10^{13}\,\text{m/s}^2$: suihku kaartuu selvästi jo muutaman senttimetrin matkalla. Pyöristetyillä luvuilla $1{,}6 \cdot 10^{-19}\,\text{C} \cdot 3 \cdot 10^{5}\,\text{m/s} \cdot 0{,}25\,\text{T} \approx 1{,}2 \cdot 10^{-14}\,\text{N}$, sama tulos.
 
 ## fy7-2-L1-02
 **Annettu:** elektroni, $m = 9{,}109 \cdot 10^{-31}\,\text{kg}$, $q = 1{,}602 \cdot 10^{-19}\,\text{C}$, $v = 2{,}0 \cdot 10^{6}\,\text{m/s}$ kohtisuorassa kenttää vastaan, $B = 1{,}5\,\text{mT}$
@@ -55,7 +55,7 @@
 **Kaava:** $qU = \tfrac{1}{2}mv^2$, josta $v = \sqrt{\dfrac{2qU}{m}}$; $qvB = \dfrac{mv^2}{r}$, josta $r = \dfrac{mv}{qB}$
 **Muunnokset:** Ei tarvita: suureet ovat SI-yksiköissä. Lopuksi $1\,\text{m} = 100\,\text{cm}$.
 **Sijoitus:** $v = \sqrt{\dfrac{2 \cdot 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 500\,\text{V}}{1{,}673 \cdot 10^{-27}\,\text{kg}}} = 3{,}0945 \cdot 10^{5}\,\text{m/s}$ ja $r = \dfrac{1{,}673 \cdot 10^{-27}\,\text{kg} \cdot 3{,}0945 \cdot 10^{5}\,\text{m/s}}{1{,}602 \cdot 10^{-19}\,\text{C} \cdot 0{,}050\,\text{T}} = 0{,}06463\,\text{m} = 6{,}463\,\text{cm}$
-**Vastaus:** $6{,}5\,\text{cm}$, kaksi merkitsevää numeroa kuten kentässä $0{,}050\,\text{T}$.
+**Vastaus:** $6{,}5\,\text{cm}$, kaksi merkitsevää numeroa kuten kentässä $0{,}050\,\text{T}$; jännite $500\,\text{V}$ tulkitaan vähintään kaksinumeroiseksi.
 **Järkevyys:** Vauhti $3 \cdot 10^{5}\,\text{m/s}$ on noin $0{,}1\,\%$ valon nopeudesta, joten klassinen mekaniikka pätee. Säde on laboratoriolaitteen kokoluokkaa. Jos kiihdytysjännite nelinkertaistettaisiin, vauhti ja säde kaksinkertaistuisivat.
 
 ## fy7-2-L2-02

@@ -78,7 +78,7 @@
       "stage": "ennusta",
       "type": "choice",
       "title": "Ennuste 2: kaksinkertainen vauhti",
-      "prompt": "Samaan magneettikenttään lähetetään protoni kaksinkertaisella vauhdilla. Miten käy protonin ympyräradan säteelle?",
+      "prompt": "Samaan magneettikenttään lähetetään protoni kaksinkertaisella vauhdilla. Miten käy protonin ympyräradan säteelle $r$? Simulaatiossa osumakohdan etäisyys raosta on radan halkaisija $d = 2r$.",
       "justify": true,
       "reveal": {
         "after": "koe-1",
@@ -145,7 +145,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 1: vain vauhti muuttuu",
-      "intro": "Testaa ennusteet 1 ja 2. Hiukkasena on protoni, magneettikenttä $0{,}20\\,\\text{T}$ osoittaa paperista ulos, eikä sähkökenttää ole. Muuta vain vauhtia. Paina *Laukaise*, seuraa rataa ja kirjaa osumakohta $d$ ja vauhti lopussa ainakin vauhdeilla $1{,}0 \\cdot 10^{6}\\,\\text{m/s}$ ja $2{,}0 \\cdot 10^{6}\\,\\text{m/s}$, halutessasi myös muilla. Radan säde on puolet osumakohdan etäisyydestä.",
+      "intro": "Testaa ennusteet 1 ja 2. Hiukkasena on protoni, magneettikenttä $0{,}20\\,\\text{T}$ osoittaa paperista ulos, eikä sähkökenttää ole. Muuta vain vauhtia. Paina *Laukaise*, seuraa rataa ja kirjaa osumakohta $d$ ja vauhti lopussa ainakin vauhdeilla $1{,}0 \\cdot 10^{6}\\,\\text{m/s}$ ja $2{,}0 \\cdot 10^{6}\\,\\text{m/s}$, halutessasi myös muilla. Taulukossa vauhti on yksikössä $\\text{Mm/s}$, $1\\,\\text{Mm/s} = 10^{6}\\,\\text{m/s}$. Radan säde on puolet osumakohdan etäisyydestä.",
       "initial": {
         "hiukkanen": "protoni",
         "v": 1,
@@ -168,11 +168,14 @@
         "E": "sähkökenttä E"
       },
       "units": {
-        "v": "10⁶ m/s",
+        "v": "Mm/s",
         "B": "T",
         "E": "kV/m"
       },
       "values": {
+        "B": {
+          "0.2": "$0{,}20\\,\\text{T}$"
+        },
         "hiukkanen": {
           "protoni": "protoni",
           "deuteroni": "deuteroni",
@@ -191,7 +194,7 @@
         },
         {
           "key": "vLoppu",
-          "label": "v lopussa (10⁶ m/s)"
+          "label": "v lopussa (Mm/s)"
         }
       ],
       "min": 2
@@ -201,7 +204,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 2: nopeusvalitsin",
-      "intro": "Testaa ennuste 3. Kammiossa on nyt sähkökenttä $150\\,\\text{kV/m}$ ja magneettikenttä $0{,}15\\,\\text{T}$ paperista ulos, ja vauhti on $1{,}0 \\cdot 10^{6}\\,\\text{m/s}$. Vaihda vain hiukkasta. Paina *Laukaise* ja kirjaa poikkeama ja voimat ainakin protonilla ja alfahiukkasella.",
+      "intro": "Testaa ennuste 3. Kammiossa on nyt sähkökenttä $150\\,\\text{kV/m}$ ja magneettikenttä $0{,}15\\,\\text{T}$ paperista ulos, ja vauhti on $1{,}0 \\cdot 10^{6}\\,\\text{m/s}$. Vaihda vain hiukkasta. Paina *Laukaise* ja kirjaa poikkeama ja voimat ainakin protonilla ja alfahiukkasella. Voimat ovat femtonewtoneina, $1\\,\\text{fN} = 10^{-15}\\,\\text{N}$.",
       "initial": {
         "hiukkanen": "protoni",
         "v": 1,
@@ -224,7 +227,7 @@
         "E": "sähkökenttä E"
       },
       "units": {
-        "v": "10⁶ m/s",
+        "v": "Mm/s",
         "B": "T",
         "E": "kV/m"
       },
@@ -246,12 +249,12 @@
           "label": "y (cm)"
         },
         {
-          "key": "Fm14",
-          "label": "F_m (10⁻¹⁴ N)"
+          "key": "Fm15",
+          "label": "F_m (fN)"
         },
         {
-          "key": "Fs14",
-          "label": "F_s (10⁻¹⁴ N)"
+          "key": "Fs15",
+          "label": "F_s (fN)"
         }
       ],
       "min": 2
@@ -266,7 +269,7 @@
         "koe-2"
       ],
       "prompt": "Kirjoita taulukoidesi perusteella: muuttiko magneettikenttä protonin vauhtia? Miten osumakohta ja radan säde riippuivat vauhdista? Miksi nopeusvalitsimen läpi kulkivat suoraan kaikki hiukkaset, vaikka niiden massat ja varaukset olivat erilaiset?",
-      "model": "Vauhti oli lopussa sama kuin alussa, esimerkiksi $1{,}00 \\cdot 10^{6}\\,\\text{m/s}$, vaikka protonin liike kääntyi vastakkaiseen suuntaan: magneettinen voima on kohtisuorassa nopeutta vastaan eikä tee työtä. Kun vauhti kaksinkertaistui $1{,}0 \\cdot 10^{6}\\,\\text{m/s}$:sta $2{,}0 \\cdot 10^{6}\\,\\text{m/s}$:iin, osumakohta siirtyi $10{,}4\\,\\text{cm}$:stä $20{,}9\\,\\text{cm}$:iin, joten myös säde $r = d : 2$ kaksinkertaistui: säde on suoraan verrannollinen vauhtiin. Nopeusvalitsimessa poikkeama oli $0\\,\\text{cm}$ kaikilla hiukkasilla. Alfahiukkaseen vaikutti sekä sähköinen että magneettinen voima $4{,}8 \\cdot 10^{-14}\\,\\text{N}$, kaksinkertainen protonin $2{,}4 \\cdot 10^{-14}\\,\\text{N}$:iin verrattuna, mutta voimat olivat yhä yhtä suuret ja vastakkaiset, joten kokonaisvoima oli nolla. Ehdosta $qE = qvB$ varaus supistuu, ja suoraan kulkee vauhti $v = E : B = 1{,}0 \\cdot 10^{6}\\,\\text{m/s}$. Luvut ovat mallin arvoja.",
+      "model": "Vauhti oli lopussa sama kuin alussa, esimerkiksi $1{,}00 \\cdot 10^{6}\\,\\text{m/s}$, vaikka protonin liike kääntyi vastakkaiseen suuntaan: magneettinen voima on kohtisuorassa nopeutta vastaan eikä tee työtä. Kun vauhti kaksinkertaistui $1{,}0 \\cdot 10^{6}\\,\\text{m/s}$:sta $2{,}0 \\cdot 10^{6}\\,\\text{m/s}$:iin, osumakohta siirtyi $10{,}4\\,\\text{cm}$:stä $20{,}9\\,\\text{cm}$:iin, joten myös säde $r = d : 2$ kaksinkertaistui: säde on suoraan verrannollinen vauhtiin. Nopeusvalitsimessa poikkeama oli $0\\,\\text{cm}$ kaikilla hiukkasilla. Alfahiukkaseen vaikutti sekä sähköinen että magneettinen voima $48\\,\\text{fN}$, kaksinkertainen protonin $24\\,\\text{fN}$:iin verrattuna, mutta voimat olivat yhä yhtä suuret ja vastakkaiset, joten kokonaisvoima oli nolla. Ehdosta $qE = qvB$ varaus supistuu, ja suoraan kulkee vauhti $v = E : B = 1{,}0 \\cdot 10^{6}\\,\\text{m/s}$. Luvut ovat mallin arvoja.",
       "criteria": [
         "Totesin taulukon perusteella, että vauhti pysyi samana, ja perustelin sen sillä, että voima on kohtisuorassa nopeutta vastaan.",
         "Vertasin osumakohtia ja päättelin, että säde kaksinkertaistui, kun vauhti kaksinkertaistui.",
@@ -291,7 +294,7 @@
       "type": "reflect",
       "title": "Palaa ennusteisiisi",
       "optional": true,
-      "prompt": "Vertaa ennusteitasi kokeiden mallin arvoihin ja yhtälöön $r = mv : (qB)$. Palaa sitten alun kysymykseen: miksi hiili-14-ionit osuvat ilmaisimeen eri kohtaan kuin hiili-12-ionit, kun niillä on sama varaus ja sama vauhti?",
+      "prompt": "Vertaa ennusteitasi kokeiden mallin arvoihin ja yhtälöön $r = mv : (qB)$. Palaa sitten alun kysymykseen: miksi hiili-14-ionit osuvat ilmaisimeen eri kohtaan kuin hiili-12-ionit, kun niillä on sama varaus ja ne tulevat magneettikenttään samalla vauhdilla (nopeusvalitsimen jälkeen)?",
       "predictions": [
         "ennuste-1",
         "ennuste-2",
@@ -447,7 +450,7 @@
         "Sanon, että magneettinen voima on kohtisuorassa nopeutta vastaan eikä siksi tee työtä tai muuta vauhtia.",
         "Sanon, että sähkökenttä kasvattaa energiaa, koska se tekee protoniin työn $qU$.",
         "Käytän säteen kaavaa $r = mv : (qB)$: suurempi vauhti vaatii voimakkaamman kentän tai suuremman säteen.",
-        "Erotan magneettien tehtävän, radan taivuttamisen, sähkökenttien tehtävästä, kiihdyttämisestä."
+        "Erotan magneettien tehtävän (radan taivutus) sähkökenttien tehtävästä (kiihdytys)."
       ]
     },
     {
