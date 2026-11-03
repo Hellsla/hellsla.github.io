@@ -105,6 +105,8 @@ Alin taso $n = 1$ on **perustila**. Sen energia on $-13{,}6\,\text{eV}$. Ylemmä
   <foreignObject x="392" y="223.5" width="183" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{Balmer (näkyvä)}$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy8/hydrogen-discharge-tube.webp" alt="Pitkä lasiputki mustalla pohjalla. Putken keskiosa hehkuu vaaleanpunaisena."><figcaption>Lasiputkessa on vetyä. Sähkövirta virittää vetyatomeja. Kun atomit siirtyvät alemmille energiatasoille, ne lähettävät vedyn spektriviivojen valoa.</figcaption></figure>
+
 ### Siirtymässä syntyy tai katoaa fotoni
 Kun elektroni siirtyy ylemmältä tasolta alemmalle, atomin energia pienenee. Energian erotus lähtee atomista yhtenä fotonina. Energia säilyy, joten fotonin energia on tasojen erotus. Tasoja on vain tietyt, joten myös erotuksia on vain tietyt. Siksi vety lähettää vain tiettyjä aallonpituuksia. Sen spektri on viivaspektri eli siinä on erillisiä viivoja.
 
@@ -179,6 +181,8 @@ Tanskalainen Niels Bohr esitti vuonna 1913 mallin. Mallin mukaan elektroni kiert
 </svg>
 
 Malli oli suuri edistysaskel. Siitä saadut vedyn energiatasot ovat samat kuin spektriviivoista mitatut. Malli selitti myös vetyatomin koon ja ionisaatioenergian. Mallilla on kuitenkin rajansa. Se toimii vain atomeille ja ioneille, joissa on yksi elektroni. Se ei myöskään kerro, miksi jotkin spektriviivat ovat kirkkaampia kuin toiset. Elektronilla ei todellisuudessa ole rataa. Luvussa *Aaltomekaaninen atomimalli ja orbitaalit* elektronin paikkaa kuvataan todennäköisyyksillä. Energiatasot säilyvät uudessakin mallissa, mutta kiertoradat jäävät pois.
+
+<figure class="unit-photo"><img src="pics/fy8/orion-nebula.webp" alt="Kaasusumu avaruudessa. Punertavien pilvien keskellä on kirkkaita tähtiä."><figcaption>Orionin sumu Hubble-avaruusteleskoopin kuvassa. Osa sumun valosta on vedyn punaista $656\,\text{nm}$:n valoa. Sitä syntyy, kun elektroni siirtyy tasolta $n = 3$ tasolle $n = 2$.</figcaption></figure>
 
 ## Kaava: Vetyatomin energiatasot ja siirtymän fotoni
 Vetyatomin energiatasot ovat

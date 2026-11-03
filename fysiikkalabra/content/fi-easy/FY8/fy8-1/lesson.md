@@ -159,6 +159,8 @@ Albert Einstein selitti havainnot vuonna 1905. Valon energia ei jakaudu tasaises
 
 Tällä mallilla jokainen havainto selittyy. Samanvärisellä valolla intensiteetti kertoo, kuinka monta fotonia osuu pintaan sekunnissa. Kirkkaampi valo irrottaa siksi enemmän elektroneja. Yksittäinen elektroni saa silti vain yhden fotonin energian. Taajuus määrää yhden fotonin energian ja siksi elektronin suurimman liike-energian. Viivettä ei ole, koska jo ensimmäinen riittävän energinen fotoni voi irrottaa elektronin. Tässä mallissa energia on **kvantittunut**. Se tarkoittaa, että säteily ja aine vaihtavat energiaa vain kokonaisina fotonin energioina.
 
+<figure class="unit-photo"><img src="pics/fy8/photomultiplier-tube.webp" alt="Suuri pyöreä lasikupu museon vitriinissä. Kuvun sisäpinta on kuin peili."><figcaption>Valomonistinputki museossa Tokiossa. Fotoni osuu kuvun sisäpintaan ja irrottaa elektronin. Tämä on valosähköinen ilmiö. Putki vahvistaa elektronin mitattavaksi sähköpulssiksi.</figcaption></figure>
+
 ### Elektronivoltti
 Fotonin ja elektronin energiat ovat jouleina hyvin pieniä lukuja. Siksi niille käytetään usein yksikköä **elektronivoltti** ($\text{eV}$). Yksi elektronivoltti on se energia, jonka elektroni saa, kun se kiihtyy sähkökentässä $1\,\text{V}$:n jännitteen läpi. Elektronin varauksen suuruus on $e = 1{,}602 \cdot 10^{-19}\,\text{C}$. Siksi $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 1\,\text{V} = 1{,}602 \cdot 10^{-19}\,\text{J}$. Muunnos tehdään sijoittamalla. Esimerkiksi $3{,}20 \cdot 10^{-19}\,\text{J} = \tfrac{3{,}20 \cdot 10^{-19}}{1{,}602 \cdot 10^{-19}}\,\text{eV} \approx 2{,}00\,\text{eV}$.
 

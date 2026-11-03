@@ -170,6 +170,8 @@ Rinnankytkennässä vastukset ovat eri haaroissa samojen kahden haarautumispiste
 
 Uusi rinnakkainen haara ei muuta muiden haarojen virtoja, koska niiden jännite pysyy samana. Se tuo piiriin lisää kulkureittejä, joten paristosta lähtevä virta kasvaa. Kotien valaisimet ja pistorasiat on kytketty rinnan: jokainen laite saa saman verkkojännitteen, ja yhden laitteen sammuttaminen katkaisee vain sen oman haaran.
 
+<figure class="unit-photo"><img src="pics/fy6/christmas-lights.webp" alt="Omakotitalo illalla. Räystäällä, puussa ja pihalla palaa satoja pieniä valoja."><figcaption>Jouluvaloja omakotitalon pihalla. Pitkässä valosarjassa on kymmeniä lamppuja, ja kytkentätapa ratkaisee, mitä tapahtuu, kun yksi niistä rikkoutuu.</figcaption></figure>
+
 ### Kokonaisresistanssi
 Vastusten kytkentä voidaan korvata yhdellä vastuksella, josta paristo antaa saman virran. Tämän vastuksen resistanssi on kytkennän kokonaisresistanssi $R$: sille pätee $U = RI$, missä $I$ on paristosta lähtevä virta. Sarjaankytkennässä varaukset kulkevat jokaisen vastuksen läpi, joten kokonaisresistanssi on suurempi kuin yksikään vastuksista. Rinnankytkennässä jokainen haara on uusi kulkureitti, joten kokonaisresistanssi on pienempi kuin pienin haarojen resistansseista.
 
