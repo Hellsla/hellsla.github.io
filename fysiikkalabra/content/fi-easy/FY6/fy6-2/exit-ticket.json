@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Mittaat vastuksen jännitettä alueella $2\\,\\text{V}$, ja näyttöön tulee OL. Mitä lukema tarkoittaa? Mitä teet?",
+    "a": "OL tarkoittaa, että jännite on suurempi kuin alueen suurin arvo $1{,}999\\,\\text{V}$. Käännä valitsin seuraavaksi suuremmalle alueelle $20\\,\\text{V}$ ja lue lukema sieltä."
+  },
+  {
+    "q": "Yleismittari näyttää alueella $20\\,\\text{V}$ lukeman $3{,}00\\,\\text{V}$. Virheraja on $\\pm(0{,}5\\,\\% + 2\\ \\text{numeroa})$ ja resoluutio $0{,}01\\,\\text{V}$. Kuinka suuri on virheraja?",
+    "a": "$\\Delta U = 0{,}005 \\cdot 3{,}00\\,\\text{V} + 2 \\cdot 0{,}01\\,\\text{V} = 0{,}015\\,\\text{V} + 0{,}02\\,\\text{V} = 0{,}035\\,\\text{V}$."
+  }
+]

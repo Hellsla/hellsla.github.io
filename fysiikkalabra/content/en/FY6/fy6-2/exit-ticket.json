@@ -1,0 +1,10 @@
+[
+  {
+    "q": "You measure the voltage of a resistor on the range $2\\,\\text{V}$, and OL appears on the display. What does the reading mean, and what do you do?",
+    "a": "OL means that the voltage is larger than the largest value of the range, $1.999\\,\\text{V}$. Next turn the selector to the larger range $20\\,\\text{V}$ and read the reading there."
+  },
+  {
+    "q": "A multimeter shows the reading $3.00\\,\\text{V}$ on the range $20\\,\\text{V}$. The error limit is $\\pm(0.5\\,\\% + 2\\ \\text{digits})$ and the resolution $0.01\\,\\text{V}$. How large is the error limit?",
+    "a": "$\\Delta U = 0.005 \\cdot 3.00\\,\\text{V} + 2 \\cdot 0.01\\,\\text{V} = 0.015\\,\\text{V} + 0.02\\,\\text{V} = 0.035\\,\\text{V}$."
+  }
+]

@@ -1,0 +1,18 @@
+{
+ "Kuvitus: koulun laboratorion työpöytä. Pöydällä on kytkentälevy, jossa paristokotelo ja lampunpidike ovat johdoilla samassa piirissä, ja lamppu palaa. Vieressä on harmaa digitaalinen yleismittari, jonka punainen ja musta mittajohto koskettavat lampunpidikkeen kahta napaa.": "Kuva: koulun laboratorion työpöytä. Pöydällä on kytkentälevy, jossa paristokotelo ja lampunpidike ovat johdoilla samassa piirissä, ja lamppu palaa. Vieressä on harmaa digitaalinen yleismittari, jonka punainen ja musta mittajohto koskettavat lampunpidikkeen kahta napaa.",
+ "Kaksi kytkentäkaaviota. Vasemmalla paristo, lamppu ja virtamittari A ovat samassa silmukassa peräkkäin: virtamittari on sarjassa lampun kanssa, ja sama virta I kulkee pariston, mittarin ja lampun läpi. Oikealla paristo ja lamppu muodostavat silmukan, ja jännitemittari V on kytketty lampun napojen väliin lampun rinnalle. Violetit nuolet näyttävät virran suunnan pariston plusnavasta miinusnapaan.": "Kaksi piirikaaviota. Vasemmalla paristo, lamppu ja virtamittari A ovat samassa silmukassa peräkkäin: virtamittari on sarjassa lampun kanssa, ja sama virta I kulkee pariston, mittarin ja lampun läpi. Oikealla paristo ja lamppu muodostavat silmukan, ja jännitemittari V on kytketty lampun napojen väliin lampun rinnalle. Violetit nuolet näyttävät virran suunnan pariston plusnavasta miinusnapaan.",
+ "virtamittari": "virtamittari",
+ "sarjaan": "sarjaan",
+ "jännitemittari": "jännitemittari",
+ "rinnalle": "rinnalle",
+ "Piirros digitaalisesta yleismittarista. Ylhäällä näyttö, jossa on lukema 1,500 V. Keskellä valitsin, jonka ympärillä ovat mittausalueet 2 V, 20 V, 200 mA ja 10 A; osoitin on alueella 2 V. Alhaalla kolme liitintä: COM, V mA ja 10 A. Mustan johdon paikka on COM ja punaisen V mA tai 10 A. Oikealla selitteet näyttö, valitsin ja liittimet.": "Kuva digitaalisesta yleismittarista. Ylhäällä näyttö, jossa on lukema 1,500 V. Keskellä valitsin, jonka ympärillä ovat mittausalueet 2 V, 20 V, 200 mA ja 10 A. osoitin on alueella 2 V. Alhaalla kolme liitintä: COM, V mA ja 10 A. Mustan johdon paikka on COM ja punaisen V mA tai 10 A. Oikealla selitteet näyttö, valitsin ja liittimet.",
+ "mA": "mA",
+ "COM": "COM",
+ "näyttö": "näyttö",
+ "valitsin": "valitsin",
+ "liittimet": "liittimet",
+ "Kaksi väärää kytkentää. Vasemmalla virtamittari A on kytketty lampun rinnalle. Virta kulkee lähes kokonaan pienen resistanssin virtamittarin kautta, mitä kuvaa paksu violetti nuoli: lamppu ei pala, ja virta on suuri. Oikealla jännitemittari V on sarjassa lampun kanssa. Mittarin suuri resistanssi pienentää virran lähes nollaan, joten lamppu ei pala eikä virtanuolia ole.": "Kaksi väärää kytkentää kuvana. Vasemmalla virtamittari A on kytketty lampun rinnalle. Virta kulkee lähes kokonaan pienen resistanssin virtamittarin kautta, mitä kuvaa paksu violetti nuoli: lamppu ei pala, ja virta on suuri. Oikealla jännitemittari V on sarjassa lampun kanssa. Mittarin suuri resistanssi pienentää virran lähes nollaan, joten lamppu ei pala eikä virtanuolia ole.",
+ "suuri ": "suuri ",
+ "Kuva mittakaavassa: jännitteen akseli välillä 1,46 V–1,54 V. Ylempi jana näyttää alueella 20 V saadun lukeman 1,50 V ja sen virherajan ±0,028 V eli välin 1,472 V–1,528 V. Alempi jana näyttää alueella 2 V saadun lukeman 1,500 V ja sen virherajan ±0,0095 V eli välin 1,4905 V–1,5095 V. Alemman alueen jana on noin kolmasosa ylemmän pituudesta.": "Kuva on mittakaavassa: jännitteen akseli välillä 1,46 V–1,54 V. Ylempi jana näyttää alueella 20 V saadun lukeman 1,50 V ja sen virherajan ±0,028 V, eli väli on 1,472 V–1,528 V. Alempi jana näyttää alueella 2 V saadun lukeman 1,500 V ja sen virherajan ±0,0095 V, eli väli on 1,4905 V–1,5095 V. Alemman alueen jana on noin kolmasosa ylemmän pituudesta.",
+ "alue ": "alue "
+}

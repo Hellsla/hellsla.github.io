@@ -1,0 +1,23 @@
+{
+  "id": "fy6-2",
+  "course": "FY6",
+  "title": "Measurements in an electric circuit",
+  "goals": [
+    "LOPS FY6: voltage and electric current in direct-current circuits",
+    "LOPS FY6: can investigate electrical phenomena experimentally and make basic electrical measurements",
+    "Experimental: measurements of how components work in an electric circuit",
+    "Clarification: connecting an ammeter and a voltmeter, the multimeter, measuring range and the effect of the meter on the circuit"
+  ],
+  "prerequisites": [
+    "fy6-1"
+  ],
+  "glossary": [
+    "jännitemittari",
+    "virtamittari",
+    "yleismittari",
+    "mittausalue"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}
