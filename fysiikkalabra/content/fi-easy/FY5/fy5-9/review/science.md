@@ -1,11 +1,11 @@
-VERDICT: PASS
-CONTENT-HASH: 7b94cec5125b53a5
+VERDICT: FAIL
+CONTENT-HASH: 79d768bb9a8e1a00
 
 ## Blocking
-(none)
+- **A** (vaimeneminen): "kitka tai ilmanvastus muuttaa sen energiaa lämmöksi" contradicts the guardrail (heat is energy in transfer; friction turns mechanical energy into internal energy) and the lesson's own text ("muuttavat osan mekaanisesta energiasta sisäenergiaksi"). FY5 comes after FY3, so the FY2 allowance does not apply. Fix: "...muuttaa osan sen energiasta sisäenergiaksi."
 
 ## Polish
-- The bouncer caption says the baby's toes touch the floor; that is the realistic use, but it means the spring is not oscillating freely. Harmless as a hook.
+- värähtelyn energia: "Ilman kitkaa" could say "Ilman kitkaa ja ilmanvastusta", as the summary does.
 
 ## Checked
-batch delta review: opening illustration now shows a pendulum clock and a spring-hung baby bouncer, both oscillators the lesson treats; references to fy5-7/fy5-8 updated; feedback kx = 40 N/m x 0,050 m = 2,0 N correct. Every changed chapter reference names the renamed chapter that holds the cited content, and no old title remains.
+batch delta review: added meta.json key_concepts (Luvun tärkeät käsitteet) checked term by term against the lesson's own definitions, summary and the physics guardrails; no number, formula or choice changed. Terms: harmoninen värähtely (period independent of amplitude), heiluri (claims no harmonicity) and värähtelyn energia checked against the lesson.

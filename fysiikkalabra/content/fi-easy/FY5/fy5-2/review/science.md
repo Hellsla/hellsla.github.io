@@ -1,11 +1,11 @@
-VERDICT: PASS
-CONTENT-HASH: 0391b8113be17541
+VERDICT: FAIL
+CONTENT-HASH: 945351131a3135c6
 
 ## Blocking
-(none)
+- **B** (painopiste): "Symmetrisen kappaleen painopiste on sen keskellä" drops the condition the lesson states in its theory and summary ("Tasa-aineisen ja symmetrisen kappaleen"). A geometrically symmetric body of uneven material does not have its centre of gravity at the middle. Fix: "Tasa-aineisen ja symmetrisen kappaleen painopiste on sen keskellä."
 
 ## Polish
 (none)
 
 ## Checked
-batch delta review: new opening illustration description (painter on the plank between trestles, paint can on the unsupported overhang) still poses the tipping question correctly; cross-references to fy5-1 renamed; momentti feedback numbers (20 N x 0,80 m = 16 Nm) unchanged and correct. Every changed chapter reference names the renamed chapter that holds the cited content, and no old title remains.
+batch delta review: added meta.json key_concepts (Luvun tärkeät käsitteet) checked term by term against the lesson's own definitions, summary and the physics guardrails; no number, formula or choice changed. Terms: tasapaino, momenttiehto (any point, at rest) and tukivoima agree with the lesson.
