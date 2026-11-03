@@ -1,0 +1,468 @@
+{
+  "version": 1,
+  "contribution": "Aalto kohtaa rajan: heijastuslaki kulmat normaalista mitattuina, köyden pulssin heijastuminen kiinteästä ja vapaasta päästä sekä Huygensin periaate, joka selittää heijastumisen ja diffraktion raossa ja esteen takana.",
+  "learn": [
+    "soveltamaan heijastuslakia, kun tulo- ja heijastuskulma mitataan pinnan normaalista.",
+    "kuvaamaan, miten pulssi heijastuu köyden kiinteästä ja vapaasta päästä.",
+    "selittämään Huygensin periaatteella aallon heijastumisen ja diffraktion raossa ja esteen takana."
+  ],
+  "prior": [
+    "Aallonpituus $\\lambda$ on kahden peräkkäisen aallonharjan etäisyys (luku *Mekaaninen aaltoliike*)",
+    "Aallon nopeus, taajuus ja aallonpituus liittyvät toisiinsa: $v = f\\lambda$ (luku *Mekaaninen aaltoliike*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Myrskyisenä päivänä aallot vyöryvät avomereltä suorina riveinä kohti satamaa. Aallonmurtajassa on vain kapea aukko laivoja varten, ja sataman allas on aukon takana leveämpi kuin aukko. Silti aallot keinuttavat myös veneitä, jotka ovat laiturissa altaan nurkassa kaukana aukon sivulla. Aallonmurtajan seinästä aallot taas kimpoavat takaisin merelle.",
+      "question": "Miten aalto käyttäytyy, kun se kohtaa seinän tai kapean aukon?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Kertaa: aallonpituus ja taajuus",
+      "prompt": "Aaltoaltaan aaltokone tekee aaltoja taajuudella $10\\,\\text{Hz}$, ja aallot etenevät nopeudella $0{,}20\\,\\text{m/s}$. Aaltokoneen taajuus kaksinkertaistetaan, ja aaltojen nopeus pysyy samana. Mitä aallonpituudelle tapahtuu?",
+      "choices": [
+        {
+          "text": "Aallonpituus puolittuu.",
+          "correct": true,
+          "feedback": "Oikein. Kun $v = f\\lambda$ ja nopeus pysyy samana, $\\lambda = \\tfrac{v}{f}$ puolittuu, kun $f$ kaksinkertaistuu: $2{,}0\\,\\text{cm}$:stä $1{,}0\\,\\text{cm}$:iin (luku *Mekaaninen aaltoliike*). Aallonpituutta tarvitaan tänään, kun aallon kokoa verrataan raon leveyteen."
+        },
+        {
+          "text": "Aallonpituus kaksinkertaistuu.",
+          "feedback": "Taajuus kertoo, kuinka monta harjaa lähtee sekunnissa. Kun harjoja lähtee kaksi kertaa tiheämmin samalla nopeudella, ne ovat lähempänä toisiaan: $\\lambda = \\tfrac{v}{f}$ pienenee $2{,}0\\,\\text{cm}$:stä $1{,}0\\,\\text{cm}$:iin (luku *Mekaaninen aaltoliike*)."
+        },
+        {
+          "text": "Aallonpituus pysyy samana, koska aallon nopeus ei muutu.",
+          "feedback": "Nopeus ei muutu, mutta yhtälössä $v = f\\lambda$ on kaksi muuta suuretta. Jos $f$ kaksinkertaistuu ja $v$ pysyy, $\\lambda$:n on puolituttava: $\\lambda = \\tfrac{0{,}20\\,\\text{m/s}}{20\\,\\text{Hz}} = 1{,}0\\,\\text{cm}$."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 1: kulma seinästä",
+      "prompt": "Aallot etenevät suoraa seinää kohti niin, että tulevan säteen ja seinän pinnan välinen kulma on $30^\\circ$. Mihin suuntaan heijastuneet aallot etenevät, kun kulma ilmoitetaan normaalista eli pintaa vastaan kohtisuorasta suorasta mitattuna?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "Heijastuskulma on $30^\\circ$ normaalista.",
+          "feedback": "Mallin arvot kumoavat tämän. Kun tulokulmaksi asetetaan $\\alpha = 60^\\circ$ normaalista, säteen ja pinnan välinen kulma on $30^\\circ$, ja simulaatio näyttää heijastuskulmaksi $\\beta = 60^\\circ$. Annettu $30^\\circ$ oli mitattu pinnasta. Normaalista mitattu kulma on $90^\\circ - 30^\\circ = 60^\\circ$."
+        },
+        {
+          "text": "Heijastuskulma on $60^\\circ$ normaalista.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä. Tulokulma normaalista on $90^\\circ - 30^\\circ = 60^\\circ$, ja kun simulaatiossa asetetaan $\\alpha = 60^\\circ$, heijastuskulma on $\\beta = 60^\\circ$. Myös heijastunut säde muodostaa seinän pinnan kanssa $30^\\circ$:n kulman."
+        },
+        {
+          "text": "Heijastuskulma on $120^\\circ$, koska aalto kääntyy takaisin.",
+          "feedback": "Mallin arvot kumoavat tämän: kun $\\alpha = 60^\\circ$, heijastuskulma on $\\beta = 60^\\circ$. Heijastuskulma mitataan normaalista heijastuneeseen säteeseen, joten se on aina $0^\\circ$:n ja $90^\\circ$:n välillä. Aallon kääntyminen näkyy siinä, että heijastunut säde on normaalin toisella puolella."
+        },
+        {
+          "text": "Heijastuskulma riippuu aallonpituudesta.",
+          "feedback": "Mallin arvot kumoavat tämän: simulaatiossa heijastuskulma on $\\beta = 60^\\circ$, kun $\\alpha = 60^\\circ$, millä tahansa aallonpituudella. Aallonpituus muuttaa harjojen väliä mutta ei etenemissuuntaa, kun seinä on suora ja aallon nopeus sama."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 2: köyden kiinteä pää",
+      "prompt": "Köyden toinen pää on sidottu tiukasti seinään. Heilautat köyden toista päätä nopeasti ylös ja takaisin, jolloin köyteen syntyy ylöspäin suuntautuva pulssi. Millainen pulssi palaa seinältä?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-2",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "Ylöspäin suuntautuva pulssi, samanlainen kuin lähtenyt.",
+          "feedback": "Mallin arvot kumoavat tämän kiinteälle päälle: heijastuneen pulssin poikkeama on $y_\\text{h} = -3{,}0\\,\\text{cm}$, alaspäin. Ylöspäin suuntautuvana pulssi palaa vain vapaasta päästä ($+3{,}0\\,\\text{cm}$). Kiinteä pää ei liiku, ja seinä vetää köyttä alaspäin, kun pulssi vetää sitä ylös."
+        },
+        {
+          "text": "Alaspäin suuntautuva pulssi.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä: kiinteästä päästä heijastuneen pulssin poikkeama on $y_\\text{h} = -3{,}0\\,\\text{cm}$, vapaasta päästä $+3{,}0\\,\\text{cm}$. Kiinteä pää pysyy paikallaan, ja seinä vetää köyttä alaspäin yhtä suurella voimalla kuin pulssi vetää kiinnitystä ylöspäin. Siksi pulssi kääntyy."
+        },
+        {
+          "text": "Pulssia ei palaa, koska seinä vaimentaa sen.",
+          "feedback": "Mallin arvot kumoavat tämän: kiinteästä päästä palaa yhtä suuri pulssi, $y_\\text{h} = -3{,}0\\,\\text{cm}$, mutta kääntyneenä. Jäykkä seinä ei ota pulssin energiaa vastaan, koska pää ei liiku eikä seinään siksi tehdä työtä."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-3",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 3: kapeampi rako",
+      "prompt": "Tasoaalto, jonka aallonpituus on $2{,}0\\,\\text{cm}$, kulkee esteessä olevan raon läpi. Rakoa kavennetaan $8{,}0\\,\\text{cm}$:stä $1{,}0\\,\\text{cm}$:iin. Miten raon takana etenevä aalto muuttuu?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-3",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "Aalto etenee yhä kapeampana suorana kaistana, koska rako rajaa sen.",
+          "feedback": "Mallin arvot kumoavat tämän: leviämiskulma kasvaa $8{,}7^\\circ$:sta, kun $b = 8{,}0\\,\\text{cm}$, arvoon $90^\\circ$, kun $b = 1{,}0\\,\\text{cm}$. Rako ei rajaa aaltoa kuin valokeilaa: raon kohdan alkeisaallot leviävät sivuille, ja mitä kapeampi rako on, sitä enemmän aalto leviää."
+        },
+        {
+          "text": "Aalto leviää raon takana yhä laajemmalle alueelle.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä: leviämiskulma on $8{,}7^\\circ$, kun $b = 8{,}0\\,\\text{cm}$, $17{,}6^\\circ$, kun $b = 4{,}0\\,\\text{cm}$, ja $90^\\circ$ eli koko alue raon takana, kun $b = 1{,}0\\,\\text{cm}$. Kun rako on selvästi aallonpituutta kapeampi ($b < \\lambda$), raon pisteet ovat kuin yksi alkeisaallon lähde. Jo kun $b \\approx \\lambda$, leviäminen on suuri."
+        },
+        {
+          "text": "Rako ei vaikuta aallon etenemissuuntaan, vain sen läpi pääsevän aallon määrään.",
+          "feedback": "Mallin arvot kumoavat tämän: leviämiskulma muuttuu $8{,}7^\\circ$:sta $90^\\circ$:een, kun rakoa kavennetaan. Kapeasta raosta pääsee läpi vähemmän energiaa, mutta myös suunnat muuttuvat: aalto taipuu raon reunojen taakse."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Valitse tilanne: köyden pulssi, aallot ja seinä, aallot ja rako tai aallot ja este. Altaan tilanteissa katsot vettä ylhäältä.",
+      "howto": "Valitse *Tilanne*. Köyden tilanteissa *Käynnistä* lähettää pulssin, joka kulkee köyden päähän ja takaisin; lukemissa on heijastuneen pulssin poikkeama $y_\\text{h}$, kun pulssi on irronnut päästä. Altaan tilanteissa aallot liikkuvat koko ajan, ja *Pysäytä* pysäyttää kuvan. Seinätilanteessa säädä tulokulmaa $\\alpha$: sinisillä viivoilla on piirretty tulevan aallon harjat ja vihreillä heijastuneen. Rako- ja estetilanteissa säädä aallonpituutta $\\lambda$ ja raon tai esteen leveyttä $b$. Vaaleat kohdat ovat aallonharjoja, tummat aallonpohjia. *Näytä alkeisaallot* piirtää seinän tai raon pisteistä lähtevät Huygensin alkeisaallot. Liukusäädin vaikuttaa vain niissä tilanteissa, joissa sen suure on mukana. *Nopeus* muuttaa vain animaation tahtia.",
+      "model": "Köysi on $5{,}0\\,\\text{m}$ pitkä, pulssi etenee nopeudella $2{,}0\\,\\text{m/s}$ vaimenematta, ja pulssin poikkeama $3{,}0\\,\\text{cm}$ on piirretty suurennettuna. Kiinteä pää ei liiku lainkaan, ja vapaan pään rengas liukuu kitkatta. Allas on $30\\,\\text{cm} \\cdot 20\\,\\text{cm}$ ja vesi joka kohdassa yhtä syvää, joten aallon nopeus ei muutu. Seinä heijastaa aallon kokonaan. Raon ja esteen tilanteissa esteestä takaisin heijastuvaa aaltoa ei piirretä. Animaation tahti on hidastettu, ja luvut ovat mallin laskemia arvoja.",
+      "calc": "Köysi: pään vaikutus lasketaan kuvitellulla peilipulssilla, joka tulee pään takaa vastaan. Kiinteässä päässä peilipulssi on vastakkaismerkkinen, jolloin pään poikkeama on aina nolla. Vapaassa päässä se on samanmerkkinen, jolloin pää heilahtaa hetkeksi kaksinkertaiseen poikkeamaan.\\n\\nSeinä: tuleva rintama saavuttaa kaksi seinän pistettä, joiden etäisyys on $d$, eri hetkinä. Kun rintama saavuttaa jälkimmäisen, edellisestä lähteneen alkeisaallon säde on $r = d \\sin\\alpha$. Heijastunut rintama sivuaa alkeisaaltoa, joten $\\sin\\beta = \\tfrac{r}{d}$.\\n\\nRako ja este: raon kohdalle sijoitetaan alkeisaaltojen lähteitä enintään $\\tfrac{\\lambda}{8}$:n välein, ja veden pinnan korkeus joka kohdassa on niiden alkeisaaltojen summa. Leviämiskulma $\\theta$ on kulma suoraan eteenpäin etenevästä suunnasta siihen suuntaan, jossa aallon amplitudi kaukana raosta on pudonnut puoleen. Jos amplitudi ei putoa puoleen missään suunnassa, $\\theta = 90^\\circ$. Este lasketaan tasoaallon ja esteen levyisen raon aallon erotuksena, ja piste $P$ on $8{,}0\\,\\text{cm}$ esteen takana."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 1: tulokulma ja heijastuskulma",
+      "intro": "Testaa ennuste 1. Tilanne on aallot ja seinä. Muuta tulokulmaa $\\alpha$ ja kirjaa heijastuskulma ja heijastuneen säteen ja pinnan välinen kulma ainakin kahdella tulokulmalla. Kokeile myös tulokulmaa, jolla säde muodostaa pinnan kanssa $30^\\circ$:n kulman. Laita *Näytä alkeisaallot* päälle ja katso, mihin alkeisaaltojen sivuaja osuu.",
+      "initial": {
+        "tila": "seina",
+        "lam": 2,
+        "alpha": 30
+      },
+      "locked": [
+        "tila",
+        "lam"
+      ],
+      "vary": "alpha",
+      "names": {
+        "tila": "tilanne",
+        "lam": "aallonpituus λ",
+        "alpha": "tulokulma α"
+      },
+      "values": {
+        "tila": {
+          "seina": "aallot ja seinä"
+        }
+      },
+      "units": {
+        "lam": "cm",
+        "alpha": "°"
+      },
+      "measure": [
+        {
+          "key": "beta",
+          "label": "β (°)"
+        },
+        {
+          "key": "pinta",
+          "label": "kulma pinnasta (°)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 2: kiinteä ja vapaa pää",
+      "intro": "Testaa ennuste 2. Paina *Käynnistä* ja odota, että pulssi palaa. Kirjaa heijastuneen pulssin poikkeama, kun pää on kiinteä. Vaihda sitten tilanteeksi vapaa pää, paina taas *Käynnistä* ja kirjaa uudelleen. Katso myös, mitä köyden pää tekee pulssin kääntyessä.",
+      "initial": {
+        "tila": "kiintea"
+      },
+      "locked": [],
+      "vary": "tila",
+      "names": {
+        "tila": "tilanne"
+      },
+      "values": {
+        "tila": {
+          "kiintea": "köysi, kiinteä pää",
+          "vapaa": "köysi, vapaa pää"
+        }
+      },
+      "measure": [
+        {
+          "key": "yh",
+          "label": "y_h (cm)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "koe-3",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 3: raon leveys",
+      "intro": "Testaa ennuste 3. Tilanne on aallot ja rako, ja aallonpituus pysyy arvossa $2{,}0\\,\\text{cm}$. Kavenna rakoa ja kirjaa leviämiskulma ainakin kahdella leveydellä, esimerkiksi $8{,}0\\,\\text{cm}$, $4{,}0\\,\\text{cm}$, $2{,}0\\,\\text{cm}$ ja $1{,}0\\,\\text{cm}$. Katkoviivat näyttävät kulman $\\theta$, jonka sisällä aalto on voimakas.",
+      "initial": {
+        "tila": "rako",
+        "lam": 2,
+        "b": 8
+      },
+      "locked": [
+        "tila",
+        "lam"
+      ],
+      "vary": "b",
+      "names": {
+        "tila": "tilanne",
+        "lam": "aallonpituus λ",
+        "b": "raon leveys b"
+      },
+      "values": {
+        "tila": {
+          "rako": "aallot ja rako"
+        }
+      },
+      "units": {
+        "lam": "cm",
+        "b": "cm"
+      },
+      "measure": [
+        {
+          "key": "suhde",
+          "label": "b/λ"
+        },
+        {
+          "key": "theta",
+          "label": "θ (°)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "koe-4",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 4: aallonpituus samassa raossa",
+      "optional": true,
+      "intro": "Raon leveys pysyy arvossa $3{,}0\\,\\text{cm}$. Muuta aallonpituutta ja kirjaa leviämiskulma ainakin kahdella aallonpituudella. Vertaa kokeen 3 tuloksiin: millä raon leveydellä ja aallonpituudella saat saman kulman?",
+      "initial": {
+        "tila": "rako",
+        "lam": 1,
+        "b": 3
+      },
+      "locked": [
+        "tila",
+        "b"
+      ],
+      "vary": "lam",
+      "names": {
+        "tila": "tilanne",
+        "lam": "aallonpituus λ",
+        "b": "raon leveys b"
+      },
+      "values": {
+        "tila": {
+          "rako": "aallot ja rako"
+        }
+      },
+      "units": {
+        "lam": "cm",
+        "b": "cm"
+      },
+      "measure": [
+        {
+          "key": "suhde",
+          "label": "b/λ"
+        },
+        {
+          "key": "theta",
+          "label": "θ (°)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös: heijastuminen ja taipuminen",
+      "after": [
+        "koe-1",
+        "koe-2",
+        "koe-3"
+      ],
+      "prompt": "Kirjoita taulukoidesi perusteella: miten heijastuskulma riippuu tulokulmasta, kun molemmat mitataan normaalista? Miten pulssi heijastuu kiinteästä ja vapaasta päästä? Miten aallon leviäminen raon takana riippuu raon leveydestä?",
+      "model": "Heijastuskulma oli joka kerta yhtä suuri kuin tulokulma, esimerkiksi $\\alpha = 30^\\circ$ ja $\\beta = 30^\\circ$ sekä $\\alpha = 60^\\circ$ ja $\\beta = 60^\\circ$. Pinnasta mitattu kulma oli $90^\\circ - \\beta$, joten pinnasta mitattua kulmaa ei voi käyttää tulokulmana. Kiinteästä päästä pulssi palasi kääntyneenä, $y_\\text{h} = -3{,}0\\,\\text{cm}$, ja vapaasta päästä kääntymättä, $+3{,}0\\,\\text{cm}$. Kun aallonpituus oli $2{,}0\\,\\text{cm}$, leviämiskulma kasvoi $8{,}7^\\circ$:sta $90^\\circ$:een, kun rako kapeni $8{,}0\\,\\text{cm}$:stä $1{,}0\\,\\text{cm}$:iin: kun rako on selvästi aallonpituutta kapeampi ($b < \\lambda$), aalto leviää koko alueelle raon taakse, ja jo kun $b \\approx \\lambda$, leviäminen on suuri. Arvot ovat mallin laskemia.",
+      "criteria": [
+        "Totesin lukujen perusteella, että heijastuskulma on yhtä suuri kuin tulokulma, kun kulmat mitataan normaalista.",
+        "Erotin kiinteän ja vapaan pään: kiinteästä pulssi palaa kääntyneenä, vapaasta kääntymättä.",
+        "Kerroin leviämiskulman kasvavan raon kaventuessa ja vertasin raon leveyttä aallonpituuteen.",
+        "Mainitsin, että luvut ovat mallin arvoja."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Palaa ennusteisiisi",
+      "optional": true,
+      "prompt": "Vertaa ennusteitasi simulaation arvoihin ja Huygensin periaatteeseen. Palaa sitten alun kysymykseen: miksi aallot ylettyvät aallonmurtajan aukosta sataman nurkkiin? Mitä aallonpituudesta ja aukon leveydestä pitäisi tietää, jotta voisi ennustaa, kuinka paljon aallot leviävät?",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2",
+        "ennuste-3"
+      ]
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe",
+      "prompt": "Opiskelija perustelee: ”Aaltoaltaan aallonpituus on $2{,}0\\,\\text{cm}$. Kun raon leveys on $10\\,\\text{cm}$, aalto taipuu raon takana voimakkaasti, koska leveästä raosta pääsee läpi paljon aaltoa. Jos rako kavennetaan $1{,}0\\,\\text{cm}$:iin, läpi pääsee vähän aaltoa, joten se ei juuri taivu.” Mikä perustelussa on väärin?",
+      "choices": [
+        {
+          "text": "Taipuminen riippuu suhteesta $b/\\lambda$: $10\\,\\text{cm}$:n raossa aalto taipuu vain vähän, kapeassa raossa eniten.",
+          "correct": true,
+          "feedback": "Oikein. Opiskelija sekoitti kaksi asiaa: läpi pääsevän aallon määrän ja sen, kuinka paljon aalto leviää. Kun $b = 1{,}0\\,\\text{cm}$ ja $\\lambda = 2{,}0\\,\\text{cm}$, eli $b < \\lambda$, raon pisteet toimivat kuin yksi alkeisaallon lähde, ja aalto leviää koko alueelle raon taakse, vaikka sen amplitudi on pienempi."
+        },
+        {
+          "text": "Virhe on aallonpituudessa: veden aallot ovat aina rakoa pidempiä, joten ne taipuvat jokaisessa raossa yhtä paljon.",
+          "feedback": "Veden aaltojen aallonpituus voi olla millimetreistä kymmeniin metreihin, ja aaltoaltaassa $2{,}0\\,\\text{cm}$ on tavallinen arvo. Taipumisen ratkaisee juuri suhde $b/\\lambda$, joka muuttuu, kun rakoa kavennetaan."
+        },
+        {
+          "text": "Perustelu on oikein: leveämpi rako päästää läpi enemmän aaltoa, joten aalto myös taipuu sen takana enemmän.",
+          "feedback": "Läpi pääsevän aallon määrä ja taipuminen ovat eri asioita. Leveän raon kohdalla rintama jatkaa lähes suorana ja kaartuu vain reunoiltaan, kapean raon takana se leviää puoliympyränä. Kokeessa 3 leviämiskulma kasvoi raon kaventuessa."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Sovella uuteen tilanteeseen",
+      "prompt": "Sataman nurkassa kaksi suoraa betonimuuria kohtaa toisensa suorassa kulmassa. Aalto osuu ensin muuriin 1 tulokulmassa $35^\\circ$, heijastuu ja osuu sitten muuriin 2. Mikä on tulokulma muurilla 2? Vastaa asteina.",
+      "answer": 55,
+      "unit": "°",
+      "tolerance": 0.02,
+      "hints": [
+        "Piirrä kumpaankin osumakohtaan oma normaali. Kumman muurin suuntainen on muurin 1 normaali?",
+        "Muurin 1 normaali on muurin 2 suuntainen, koska muurit ovat kohtisuorassa. Heijastunut säde muodostaa muurin 1 normaalin kanssa kulman $\\beta_1 = 35^\\circ$, siis myös muurin 2 pinnan kanssa $35^\\circ$.",
+        "Muurin 2 tulokulma mitataan muurin 2 normaalista: $\\alpha_2 = 90^\\circ - 35^\\circ$."
+      ],
+      "mistakes": [
+        {
+          "value": 35,
+          "feedback": "$35^\\circ$ on heijastuneen säteen ja muurin 2 *pinnan* välinen kulma. Tulokulma mitataan normaalista, joten $\\alpha_2 = 90^\\circ - 35^\\circ$."
+        },
+        {
+          "value": 145,
+          "feedback": "Tulokulma on normaalin ja säteen välinen terävä kulma, aina $0^\\circ$:n ja $90^\\circ$:n välillä. Vähennä pinnan ja säteen välinen kulma $90^\\circ$:sta, ei $180^\\circ$:sta."
+        }
+      ],
+      "solution": "**Annettu:** muurit kohtisuorassa toisiaan vastaan, tulokulma muurilla 1 $\\alpha_1 = 35^\\circ$\n\n**Kysytty:** tulokulma muurilla 2, $\\alpha_2$ asteina\n\n**Periaate:** Heijastuslain mukaan $\\beta_1 = \\alpha_1$, kun kulmat mitataan normaalista. Koska muurit ovat kohtisuorassa, muurin 1 normaali on muurin 2 suuntainen. Siksi heijastuneen säteen ja muurin 2 pinnan välinen kulma on $\\beta_1$, ja muurin 2 tulokulma on sen komplementtikulma.\n\n**Kaava:** $\\beta_1 = \\alpha_1$ ja $\\alpha_2 = 90^\\circ - \\beta_1$, joten $\\alpha_2 = 90^\\circ - \\alpha_1$\n\n**Muunnokset:** Ei tarvita: kulmat ovat asteina.\n\n**Sijoitus:** $\\alpha_2 = 90^\\circ - 35^\\circ = 55^\\circ$\n\n**Vastaus:** $55^\\circ$, kokonaisina asteina kuten lähtötieto $35^\\circ$.\n\n**Järkevyys:** Kulmat $\\alpha_1$ ja $\\alpha_2$ ovat yhteensä $90^\\circ$. Muurilta 2 aalto heijastuu kulmassa $55^\\circ$, ja kukin heijastus kääntää sädettä kulman $180^\\circ - 2\\alpha$, joten koko käännös on $(180^\\circ - 2 \\cdot 35^\\circ) + (180^\\circ - 2 \\cdot 55^\\circ) = 110^\\circ + 70^\\circ = 180^\\circ$: aalto palaa nurkasta tulosuuntaansa vastaan, kuten nurkkaheijastimessa kuuluu."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Harjoittele kolmella tasolla. Tason 1 tehtävissä käytetään heijastuslakia tai yhtä yhtälöä, tason 2 tehtävissä yhdistetään kaksi vaihetta, ja tason 3 tehtävät vaativat päättelyä."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Käsite",
+      "prompt": "Sataman aallonmurtajan aukko on $20\\,\\text{m}$ leveä, ja meren aaltojen aallonpituus on $15\\,\\text{m}$. Mikä muutos saisi aallot leviämään aukon takana laajemmalle alueelle?",
+      "choices": [
+        {
+          "text": "Aukon kaventaminen",
+          "correct": true,
+          "feedback": "Oikein. Diffraktio voimistuu, kun aukon leveys pienenee aallonpituuteen nähden. Kun aukko on selvästi aallonpituutta kapeampi ($b < \\lambda$), aalto leviää koko altaaseen, ja jo kun $b \\approx \\lambda$, leviäminen on suuri."
+        },
+        {
+          "text": "Aukon leventäminen",
+          "feedback": "Leveämmästä aukosta pääsee läpi enemmän aaltoa, mutta rintama jatkaa aukon kohdalla suorempana. Leviäminen riippuu suhteesta $b/\\lambda$, joka kasvaa, kun aukkoa levennetään, ja leviäminen heikkenee."
+        },
+        {
+          "text": "Aaltojen korkeuden kasvaminen",
+          "feedback": "Amplitudi ei muuta aallon etenemissuuntia. Leviämisen ratkaisee aukon leveys verrattuna aallonpituuteen, ei aallon korkeus."
+        },
+        {
+          "text": "Aallonpituuden lyheneminen",
+          "feedback": "Lyhyempi aalto taipuu vähemmän: suhde $b/\\lambda$ kasvaa, ja aalto jatkaa aukosta suorempana. Taipuminen voimistuisi, jos aallonpituus kasvaisi."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Rako ja aallonpituus",
+      "prompt": "Aaltoaltaan aaltokoneen taajuus on $6{,}0\\,\\text{Hz}$, ja aallot etenevät nopeudella $0{,}18\\,\\text{m/s}$. Altaassa on este, jossa on $4{,}5\\,\\text{cm}$:n levyinen rako. Kuinka monta aallonpituutta raon leveys on? Anna vastaukseksi suhde $b/\\lambda$.",
+      "answer": 1.5,
+      "unit": "",
+      "tolerance": 0.02,
+      "hints": [
+        "Mikä yhtälö yhdistää nopeuden, taajuuden ja aallonpituuden?",
+        "$\\lambda = \\tfrac{v}{f}$. Muuta sen jälkeen raon leveys ja aallonpituus samaan yksikköön.",
+        "$\\lambda = \\tfrac{0{,}18\\,\\text{m/s}}{6{,}0\\,\\text{Hz}} = 0{,}030\\,\\text{m} = 3{,}0\\,\\text{cm}$."
+      ],
+      "mistakes": [
+        {
+          "value": 150,
+          "feedback": "Raon leveys on senttimetreinä ja aallonpituus metreinä. Muuta ne samaan yksikköön: $\\lambda = 0{,}030\\,\\text{m} = 3{,}0\\,\\text{cm}$."
+        },
+        {
+          "value": 0.00135,
+          "feedback": "Laskit aallonpituudeksi $\\tfrac{f}{v}$. Yhtälöstä $v = f\\lambda$ saadaan $\\lambda = \\tfrac{v}{f}$."
+        }
+      ],
+      "solution": "**Annettu:** $f = 6{,}0\\,\\text{Hz}$, $v = 0{,}18\\,\\text{m/s}$, raon leveys $b = 4{,}5\\,\\text{cm}$\n\n**Kysytty:** suhde $b/\\lambda$ eli raon leveys aallonpituuksina, ilman yksikköä\n\n**Periaate:** Aallon nopeus, taajuus ja aallonpituus liittyvät toisiinsa yhtälöllä $v = f\\lambda$ (luku *Mekaaninen aaltoliike*). Kun aallonpituus tunnetaan, raon leveyttä verrataan siihen, koska diffraktion voimakkuus riippuu suhteesta $b/\\lambda$.\n\n**Kaava:** $v = f\\lambda$, josta $\\lambda = \\dfrac{v}{f}$ ja $\\dfrac{b}{\\lambda} = \\dfrac{b f}{v}$\n\n**Muunnokset:** $b = 4{,}5\\,\\text{cm} = 0{,}045\\,\\text{m}$, jotta yksiköt supistuvat.\n\n**Sijoitus:** $\\lambda = \\dfrac{0{,}18\\,\\text{m/s}}{6{,}0\\,\\text{Hz}} = 0{,}030\\,\\text{m}$ ja $\\dfrac{b}{\\lambda} = \\dfrac{0{,}045\\,\\text{m}}{0{,}030\\,\\text{m}} = 1{,}5$\n\n**Vastaus:** $1{,}5$, kaksi merkitsevää numeroa kuten taajuudessa $6{,}0\\,\\text{Hz}$ ja raon leveydessä $4{,}5\\,\\text{cm}$.\n\n**Järkevyys:** Aallonpituus $3{,}0\\,\\text{cm}$ on aaltoaltaalle tavallinen, ja rako on vain puolitoista aallonpituutta leveä. Siksi aalto leviää raon takana selvästi: simulaation mallissa leviämiskulma on silloin noin $24^\\circ$."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Selitä Huygensin periaatteella",
+      "optional": true,
+      "prompt": "Selitä Huygensin periaatteen avulla, miksi tasoaalto leviää kapean raon takana puoliympyränä, mutta leveän raon kohdalla se jatkaa lähes suorana.",
+      "model": "Huygensin periaatteen mukaan aaltorintaman jokainen piste on alkeisaallon lähde, ja uusi rintama sivuaa alkeisaaltoja. Leveän raon kohdalla on monta lähdettä rinnakkain, ja niiden alkeisaaltojen sivuaja on suora, joten rintama jatkaa suorana. Vain reunimmaisten lähteiden alkeisaallot leviävät sivuille, joten rintama kaartuu reunoilta. Kun rako on selvästi aallonpituutta kapeampi, lähteitä on kuin vain yksi, ja sen alkeisaalto leviää puoliympyränä koko alueelle raon taakse. Jo kun rako on suunnilleen aallonpituuden levyinen, leviäminen on suuri.",
+      "criteria": [
+        "Kerroin, että Huygensin periaatteessa rintaman jokainen piste on alkeisaallon lähde ja uusi rintama sivuaa alkeisaaltoja.",
+        "Selitin, miksi leveän raon kohdalla sivuaja on suora ja vain reunat kaartuvat.",
+        "Vertasin raon leveyttä aallonpituuteen: kun rako on selvästi aallonpituutta kapeampi ($b < \\lambda$), se toimii kuin yksi lähde."
+      ]
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Lopuksi kaksi nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+    }
+  ]
+}

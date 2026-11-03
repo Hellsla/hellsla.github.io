@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Kirjoita vahvistavan ja heikentävän interferenssin ehdot kahdelle samassa vaiheessa olevalle saman taajuuden lähteelle. Mitä symbolit tarkoittavat?",
+    "a": "Vahvistava: $\\Delta s = n\\lambda$, heikentävä: $\\Delta s = \\left(n + \\tfrac{1}{2}\\right)\\lambda$, missä $n = 0, 1, 2, \\ldots$ Matkaero $\\Delta s = |s_1 - s_2|$ on lähteiden etäisyyksien erotus tarkastelupisteestä ja $\\lambda$ aallonpituus."
+  },
+  {
+    "q": "Kaksi kaiutinta soittaa samaa ääntä samassa vaiheessa. Miksi kaiuttimien keskinormaalilla, joka on yhtä kaukana molemmista kaiuttimista, ääni on voimakas kaikilla taajuuksilla?",
+    "a": "Keskinormaalin jokainen piste on yhtä kaukana molemmista kaiuttimista, joten matkaero on $\\Delta s = 0 = 0 \\cdot \\lambda$. Aallot saapuvat aina samassa vaiheessa, ja ehto $\\Delta s = n\\lambda$ täyttyy luvulla $n = 0$ aallonpituudesta riippumatta."
+  }
+]

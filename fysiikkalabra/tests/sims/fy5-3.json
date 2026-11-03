@@ -1,0 +1,154 @@
+[
+ {
+  "expr": "(() => { const S=window.simState; return S.r===2 && S.T===4 && S.running===false && S.phase==='ympyra' && S.released===false && S.t===0 && S.alpha===null && S.vIrti===null && S.trail===true ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "on load: r = 2,0 m, T = 4 s, at rest at the start, string intact, places shown (must run before any setup)"
+ },
+ {
+  "expr": "window.simState.v",
+  "expected": 3.14159,
+  "tol": 0.01,
+  "note": "on load: v = 2π · 2,0 m / 4 s = 3,14 m/s"
+ },
+ {
+  "expr": "window.simState.dv",
+  "expected": 1.62621,
+  "tol": 0.01,
+  "note": "on load: |Δv̄| over T/12 = 2 v sin(π/12) = 1,63 m/s"
+ },
+ {
+  "expr": "(() => { const R=document.querySelectorAll('#sim-root input[type=range]'); return R.length===2 && R[0].min==='0.5' && R[0].max==='3' && R[0].step==='0.5' && R[1].min==='2' && R[1].max==='10' && R[1].step==='1' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "two sliders: r 0,5–3,0 m in steps of 0,5; T 2–10 s in steps of 1"
+ },
+ {
+  "expr": "(() => { const L=[...document.querySelectorAll('#sim-root select')].map(s=>[...s.options].map(o=>o.value).join(',')); const C=document.querySelectorAll('#sim-root input[type=checkbox]'); return L.length===1 && L[0]==='0.5,1,2' && C.length===1 && C[0].checked ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "one select (speed hidas/normaali/nopea) and one checkbox (earlier velocities, on)"
+ },
+ {
+  "expr": "(() => { const b=[...document.querySelectorAll('#sim-root button')].map(x=>x.textContent); const k=[...document.getElementById('sim-root').children].map(e=>e.tagName==='CANVAS'?'canvas':e.className); return b.length===2 && b[0]==='Käynnistä' && b[1]==='Alusta' && k.indexOf('canvas')<k.indexOf('controls') && k.indexOf('controls')<k.indexOf('readout') ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "main button first (Käynnistä, then Katkaise naru), Alusta; DOM order canvas, controls, readout"
+ },
+ {
+  "expr": "(() => { const n=document.querySelectorAll('#sim-root p.note'); return !document.querySelector('#sim-root details') && n.length===1 && n[0].textContent.trim().split(/\\s+/).length<=15 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "no Lisätietoja box; one legend line of at most 15 words"
+ },
+ {
+  "expr": "(() => { const P=window.simAdapter && window.simAdapter.params; return P && Object.keys(P).sort().join(',')==='T,r' && P.r.unit==='m' && P.T.unit==='s' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "adapter declares r (m) and T (s)"
+ },
+ {
+  "expr": "(() => { const c=document.querySelector('#sim-root canvas'); const w=document.getElementById('sim-root').clientWidth; return c.width===600 && c.height===(w<500?960:400) ? 1 : 0; })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "canvas is 600x400 on a wide screen, 600x960 (stacked panels) when #sim-root is under 500 px"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],3); I(R[1],2);",
+  "expr": "window.simState.v",
+  "expected": 9.42478,
+  "tol": 0.01,
+  "note": "r = 3,0 m, T = 2 s: v = 2π · 3,0 m / 2 s = 9,42 m/s"
+ },
+ {
+  "expr": "window.simState.f",
+  "expected": 0.5,
+  "tol": 0.01,
+  "note": "T = 2 s: f = 1/T = 0,50 1/s"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],1); I(R[1],4);",
+  "expr": "window.simState.v",
+  "expected": 1.5708,
+  "tol": 0.01,
+  "note": "r = 1,0 m, T = 4 s: v = 1,57 m/s (half of the 2,0 m value: v ∝ r)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],2); I(R[1],8);",
+  "expr": "window.simState.f",
+  "expected": 0.125,
+  "tol": 0.01,
+  "note": "T = 8 s: f = 0,125 1/s"
+ },
+ {
+  "expr": "window.simState.dvRatio",
+  "expected": 0.517638,
+  "tol": 0.01,
+  "note": "|Δv̄| / v = 2 sin(π/12) whatever r and T"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],2); I(R[1],2); I(L[0],'2'); document.querySelector('#sim-root button').click();",
+  "expr": "new Promise((r) => { const t0 = Date.now(); const f = () => { const S = window.simState; if (S.t > 2.5 || Date.now() - t0 > 9000) r(S.N); else setTimeout(f, 50); }; f(); })",
+  "expected": 1,
+  "tol": 0,
+  "note": "running at the fast pace, T = 2 s: after t > 2,5 s one full lap is counted"
+ },
+ {
+  "expr": "window.simState.s / window.simState.t",
+  "expected": 6.28319,
+  "tol": 0.01,
+  "note": "path over time equals the speed 2π · 2,0 m / 2 s = 6,28 m/s"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],2); document.querySelector('#sim-root button').click();",
+  "expr": "(() => { const B=document.querySelectorAll('#sim-root button'); return B[0].textContent==='Katkaise naru' && window.simState.running===true && window.simState.released===false ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "while the puck circles, the main button reads Katkaise naru"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],2); I(R[1],4); I(L[0],'2'); const B=document.querySelectorAll('#sim-root button'); B[0].click(); setTimeout(() => B[0].click(), 700);",
+  "expr": "new Promise((r) => { const t0 = Date.now(); const f = () => { const S = window.simState; if (S.phase === 'loppu' || Date.now() - t0 > 9000) r(S.alpha); else setTimeout(f, 50); }; f(); })",
+  "expected": 90,
+  "tol": 0.01,
+  "note": "string cut: the puck's path makes 90° with the string at the release (straight along the tangent)"
+ },
+ {
+  "expr": "window.simState.vIrti",
+  "expected": 3.14159,
+  "tol": 0.01,
+  "note": "after the release the speed is unchanged, 3,14 m/s"
+ },
+ {
+  "expr": "window.simState.dv",
+  "expected": 0,
+  "tol": 0.01,
+  "note": "after the release and a twelfth of a lap, Δv̄ = 0 (straight uniform motion)"
+ },
+ {
+  "expr": "Math.hypot(window.simState.x, window.simState.y)",
+  "expected": 3.8,
+  "tol": 0.01,
+  "note": "the run ends at the boards, 3,8 m from the stake"
+ },
+ {
+  "expr": "(() => { const B=document.querySelectorAll('#sim-root button'); return B[0].textContent==='Käynnistä' && !B[0].disabled && window.simState.running===false && window.simState.phase==='loppu' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "at the boards the run has ended and the main button offers a new run"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],1.5);",
+  "expr": "window.simState.released===false && window.simState.phase==='ympyra' && window.simState.t===0 && window.simState.alpha===null ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "changing the radius resets the run and ties the string again"
+ },
+ {
+  "setup": "const C=document.querySelector('#sim-root input[type=checkbox]'); C.checked=false; C.dispatchEvent(new Event('input',{bubbles:true})); C.dispatchEvent(new Event('change',{bubbles:true}));",
+  "expr": "window.simState.trail===false ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "the checkbox hides the earlier places and velocities"
+ }
+]

@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy5-9-L1-01",
+      "level": 1,
+      "text": "A body of mass $0.80\\,\\text{kg}$ oscillates on a spring on a frictionless horizontal surface. The spring constant of the spring is $50\\,\\text{N/m}$. What is the period of the oscillation?",
+      "answer": 0.794767,
+      "unit": "s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-9-L1-02",
+      "level": 1,
+      "text": "A pendulum of length $0.600\\,\\text{m}$ hangs in the corner of a bookcase as a decoration. The bob of the pendulum swings with small swings, and air resistance is neglected. What is the period of the pendulum?",
+      "answer": 1.553893,
+      "unit": "s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-9-L1-03",
+      "level": 1,
+      "text": "In a toy a figure of mass $0.20\\,\\text{kg}$ oscillates on a spring. The spring constant of the spring is $80\\,\\text{N/m}$. What is the frequency of the oscillation?",
+      "answer": 3.183099,
+      "unit": "Hz",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-9-L1-04",
+      "level": 1,
+      "text": "In a school oscillation experiment the spring constant of a spring is $120\\,\\text{N/m}$. The body at the end of the spring oscillates without friction on a horizontal track, and the amplitude of the oscillation is $0.050\\,\\text{m}$. What is the energy of the oscillation?",
+      "answer": 0.15,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-9-L1-05",
+      "level": 1,
+      "text": "The amplitude of a body oscillating on a spring without friction is $3.0\\,\\text{cm}$. How far, in metres, does the body travel during one cycle?",
+      "answer": 0.12,
+      "unit": "m",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy5-9-L2-01",
+      "level": 2,
+      "text": "A pendulum in a science centre is to make one full swing, that is, one cycle, in exactly $1.50\\,\\text{s}$. The swings are small, and air resistance is neglected. How long must the pendulum be?",
+      "answer": 0.559103,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-9-L2-02",
+      "level": 2,
+      "text": "A weight of mass $0.30\\,\\text{kg}$ oscillates on a spring. The period is to be doubled with the same spring by adding mass to the weight. How much mass must be added?",
+      "answer": 0.9,
+      "unit": "kg",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-9-L2-03",
+      "level": 2,
+      "text": "A cart of mass $0.40\\,\\text{kg}$ on a frictionless air track is attached to a spring with a spring constant of $25\\,\\text{N/m}$. The cart is pulled $8.0\\,\\text{cm}$ from the equilibrium position and released from rest. What is the greatest speed of the cart?",
+      "answer": 0.632456,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-9-L2-04",
+      "level": 2,
+      "text": "At the surface of the Earth the period of a pendulum is $2.00\\,\\text{s}$. The same pendulum is taken to Mars, where the acceleration of free fall is $3.71\\,\\text{m/s}^2$. The swings are small. What is the period of the pendulum on Mars?",
+      "answer": 3.252202,
+      "unit": "s",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy5-9-L3-01",
+      "level": 3,
+      "text": "A body of mass $0.50\\,\\text{kg}$ oscillates without friction on a spring. The spring constant of the spring is $200\\,\\text{N/m}$ and the amplitude of the oscillation is $0.100\\,\\text{m}$. What is the speed of the body when it is $0.0500\\,\\text{m}$ from the equilibrium position?",
+      "answer": 1.732051,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-9-L3-02",
+      "level": 3,
+      "text": "When a passenger of mass $80\\,\\text{kg}$ sits in a car of mass $1200\\,\\text{kg}$, the body of the car sinks $3.0\\,\\text{cm}$ lower on its suspension. Model the whole car with the passenger as one body on one spring and neglect the shock absorbers. What is the period of the vertical oscillation of the car body when the car drives into a pothole with the passenger on board?",
+      "answer": 1.389844,
+      "unit": "s",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy5-9-L3-03",
+      "level": 3,
+      "text": "The pendulum of a pendulum clock is $0.994\\,\\text{m}$ long, and in spring the clock runs exactly right. In the heat of summer the rod of the pendulum lengthens by $0.50\\,\\text{mm}$ because of thermal expansion. The clock counts swings and assumes that every cycle is as long as in spring. The swings are small. By how many seconds per day does the clock run slow?",
+      "answer": 21.722188,
+      "unit": "s",
+      "tolerance": 0.03
+    }
+  ]
+}

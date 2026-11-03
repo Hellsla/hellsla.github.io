@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Ylöspäin suuntautuva pulssi heijastuu köyden päästä, joka on sidottu tiukasti seinään. Mihin suuntaan heijastuneen pulssin poikkeama osoittaa?",
+    "a": "Alaspäin: kiinteästä päästä pulssi heijastuu kääntyneenä. Pää ei liiku, ja seinä vetää köyttä alaspäin."
+  },
+  {
+    "q": "Mistä suorasta tulokulma ja heijastuskulma mitataan? Mikä on heijastuskulma, kun säde muodostaa seinän pinnan kanssa $25^\\circ$:n kulman?",
+    "a": "Molemmat mitataan pinnan normaalista. Tulokulma on $90^\\circ - 25^\\circ = 65^\\circ$, joten heijastuskulmakin on $65^\\circ$."
+  }
+]

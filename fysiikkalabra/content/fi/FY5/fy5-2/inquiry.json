@@ -1,0 +1,422 @@
+{
+ "version": 1,
+ "contribution": "Voiman momentista tasapainoon: kappale on levossa vain, kun sekä voimien summa että momenttien summa ovat nolla; momenttiehdosta lasketaan tukivoimat, ja painopiste ratkaisee, milloin tuettu kappale kaatuu. Luku käyttää FY4:n voimakuviotaitoja jäykälle kappaleelle (virheen etsintä, oma piirros, yhtälöt).",
+ "learn": [
+  "kirjoittamaan kappaleen tasapainoehdot etenemisen ja pyörimisen suhteen.",
+  "laskemaan tukivoimia voimakuvion ja momenttiehdon avulla.",
+  "selittämään, miten painopisteen paikka ratkaisee, pysyykö tuettu kappale paikallaan vai kaatuuko se."
+ ],
+ "prior": [
+  "Voiman momentti on $M = Fr$, missä $r$ on voiman varsi, ja momentin etumerkki kertoo kiertosuunnan (luku *Voiman momentti ja kappaleen kiertyminen*)",
+  "Voimakuvioon piirretään vain kappaleeseen vaikuttavat voimat, ja levossa olevaan kappaleeseen vaikuttavien voimien summa on nolla (luku *Voimakuvio ja voimien yhteisvaikutus*)"
+ ],
+ "activities": [
+  {
+   "id": "hook",
+   "stage": "herata",
+   "type": "hook",
+   "text": "Maalari on nostanut pitkän lankun kahden maalauspukin päälle niin, että lankun toinen pää ulottuu reilusti pukin yli. Hän nostaa lankulle raskaan maalipurkin ja työntää sitä kohti ulokkeen päätä. Lopulta lankun toinen pää nousee irti pukista ja lankku kaatuu.",
+   "question": "Mikä ratkaisee, kuinka kauas ulokkeelle purkin voi viedä, ja kuinka suuren osan kuormasta kumpikin pukki kantaa?"
+  },
+  {
+   "id": "kertaus",
+   "stage": "herata",
+   "type": "choice",
+   "title": "Kertaa: voiman momentti",
+   "optional": true,
+   "prompt": "Ovea työnnetään kahvasta voimalla $20\\,\\text{N}$ kohtisuoraan ovea vastaan. Kahva on $0{,}80\\,\\text{m}$:n päässä saranoista. Kuinka suuri on voiman momentti saranoiden suhteen?",
+   "choices": [
+    {
+     "text": "$16\\,\\text{Nm}$, koska momentti on voima kertaa voiman varsi.",
+     "correct": true,
+     "feedback": "Oikein. $M = Fr = 20\\,\\text{N} \\cdot 0{,}80\\,\\text{m} = 16\\,\\text{Nm}$, koska voima on kohtisuorassa ovea vastaan ja varsi on etäisyys saranoista (luku *Voiman momentti ja kappaleen kiertyminen*). Tänään momentteja lasketaan kappaleelle, joka ei kierry lainkaan."
+    },
+    {
+     "text": "$25\\,\\text{Nm}$, koska voima jaetaan etäisyydellä saranoista.",
+     "feedback": "Momentti on voiman ja varren tulo, ei osamäärä: $M = Fr$. Kauempana saranoista sama voima kiertää ovea enemmän, joten momentti kasvaa etäisyyden kasvaessa. Oikea arvo on $16\\,\\text{Nm}$."
+    },
+    {
+     "text": "$20\\,\\text{Nm}$, koska momentti on yhtä suuri kuin voima.",
+     "feedback": "Momentti riippuu myös siitä, kuinka kaukana kiertoakselista voima vaikuttaa. Sama $20\\,\\text{N}$:n voima aivan saranan vieressä ei juuri kierrä ovea. Momentti on $M = Fr = 16\\,\\text{Nm}$ (luku *Voiman momentti ja kappaleen kiertyminen*)."
+    }
+   ]
+  },
+  {
+   "id": "ennuste-1",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Ennuste 1: kumpi tuki kantaa enemmän",
+   "justify": true,
+   "reveal": {
+    "after": "koe-1",
+    "min": 2
+   },
+   "prompt": "Tasa-aineinen $20\\,\\text{kg}$:n lankku lepää kahden tuen varassa. Aluksi tuet ovat yhtä kaukana lankun keskikohdasta. Tukea 2 siirretään lähemmäs lankun keskikohtaa, ja tuki 1 pysyy paikallaan. Miten tukivoimat muuttuvat?",
+   "choices": [
+    {
+     "text": "Kumpikin tuki kantaa yhä puolet painosta, koska lankku on tasa-aineinen.",
+     "feedback": "Mallin arvot kumoavat tämän: kun tuki 2 siirtyy kohdasta $3{,}5\\,\\text{m}$ kohtaan $2{,}5\\,\\text{m}$, tukivoima $N_2$ kasvaa $98\\,\\text{N}$:sta $147\\,\\text{N}$:iin ja $N_1$ pienenee $49\\,\\text{N}$:iin. Puolet painosta kumpikin tuki kantaa vain, kun tuet ovat yhtä kaukana painopisteestä."
+    },
+    {
+     "text": "Siirretty tuki kantaa enemmän ja toinen vähemmän, ja niiden summa pysyy samana.",
+     "correct": true,
+     "feedback": "Mallin arvot tukevat tätä: kun tuki 2 on kohdassa $2{,}5\\,\\text{m}$, $N_2 = 147\\,\\text{N}$ ja $N_1 = 49\\,\\text{N}$. Summa on koko ajan lankun paino $196\\,\\text{N}$. Tuki 2 on silloin $0{,}5\\,\\text{m}$:n ja tuki 1 $1{,}5\\,\\text{m}$:n päässä painopisteestä, ja tukivoimien suhde $3 : 1$ on etäisyyksien käänteinen suhde."
+    },
+    {
+     "text": "Kauempana keskikohdasta oleva tuki kantaa enemmän, koska sen varsi on pidempi.",
+     "feedback": "Mallin arvot näyttävät päinvastaista: kauempana oleva tuki 1 kantaa vain $49\\,\\text{N}$, lähempänä oleva tuki 2 $147\\,\\text{N}$. Pitkä varsi tarkoittaa, että *pienempi* voima riittää kumoamaan toisen tuen momentin painopisteen suhteen: $N_1 r_1 = N_2 r_2$."
+    },
+    {
+     "text": "Kumpikin tukivoima kasvaa, koska tuet ovat nyt lähempänä toisiaan.",
+     "feedback": "Mallin arvot kumoavat tämän: $N_1$ pienenee $98\\,\\text{N}$:sta $49\\,\\text{N}$:iin. Lankku on levossa, joten tukivoimien summa on aina lankun paino $196\\,\\text{N}$; tukien siirtäminen vain jakaa sen uudelleen."
+    }
+   ]
+  },
+  {
+   "id": "ennuste-2",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Ennuste 2: milloin lankku kaatuu",
+   "justify": true,
+   "reveal": {
+    "after": "koe-2",
+    "min": 2
+   },
+   "prompt": "Lankun ($20\\,\\text{kg}$) tuet ovat $0{,}5\\,\\text{m}$:n ja $3{,}0\\,\\text{m}$:n päässä lankun vasemmasta päästä, ja lankun painopiste on $2{,}0\\,\\text{m}$:n päässä. Lankulle nostetaan $40\\,\\text{kg}$:n laatikko, jota siirretään oikealle tuen 2 ohi kohti lankun päätä. Milloin lankku kaatuu?",
+   "choices": [
+    {
+     "text": "Heti kun laatikko on tuen 2 ohi, koska sen painopiste on silloin tukien ulkopuolella.",
+     "feedback": "Mallin arvot kumoavat tämän: kun laatikko on kohdassa $3{,}2\\,\\text{m}$, se on tuen 2 ohi, mutta lankku pysyy paikallaan ja $N_1 = 47\\,\\text{N}$. Lankun oma paino tukien välissä kiertää lankkua toiseen suuntaan ja kumoaa laatikon momentin tuen 2 suhteen."
+    },
+    {
+     "text": "Kun lankun ja laatikon yhteinen painopiste siirtyy tuen 2 ohi.",
+     "correct": true,
+     "feedback": "Mallin arvot tukevat tätä: $N_1$ pienenee laatikon siirtyessä ja on nolla, kun laatikko on kohdassa $3{,}5\\,\\text{m}$. Silloin yhteinen painopiste on tuen 2 kohdalla, $x_\\text{pp} = 3{,}0\\,\\text{m}$. Siitä eteenpäin painojen momentit tuen 2 suhteen kiertävät lankkua yhteen suuntaan, ja lankku kaatuu."
+    },
+    {
+     "text": "Vasta kun laatikko on lankun päässä, koska vain reunalla oleva painopiste kaataa.",
+     "feedback": "Mallin arvot kumoavat tämän: lankku kaatuu jo, kun laatikko ohittaa kohdan $3{,}5\\,\\text{m}$, vaikka lankun pää on vasta kohdassa $4{,}0\\,\\text{m}$. Ratkaisevaa on yhteisen painopisteen paikka, ei kuorman etäisyys reunasta."
+    },
+    {
+     "text": "Kun laatikon paino on suurempi kuin lankun paino, koska raskas kuorma kaataa lankun.",
+     "feedback": "Mallin arvot kumoavat tämän: $40\\,\\text{kg}$:n laatikko on koko ajan lankkua raskaampi ($20\\,\\text{kg}$), mutta lankku pysyy paikallaan vielä kohdassa $3{,}2\\,\\text{m}$, jossa $N_1 = 47\\,\\text{N}$. Ratkaisevaa ei ole, kumpi on raskaampi, vaan missä kohdassa painot yhdessä vaikuttavat."
+    }
+   ]
+  },
+  {
+   "id": "simulaatio",
+   "stage": "tutki",
+   "type": "sim",
+   "text": "Siirrä tukia ja laatikkoa. Seuraa voimakuviosta, miten tukivoimat muuttuvat, ja tilannekuvasta, missä lankun ja laatikon yhteinen painopiste on.",
+   "howto": "Liukusäätimet siirtävät tukia 1 ja 2 sekä laatikkoa; paikat mitataan lankun vasemmasta päästä. Valitse laatikon massa tai *ei laatikkoa*. Tilannekuvan katkoviiva kulkee lankun ja laatikon yhteisen painopisteen kautta lattian metriasteikolle; sen alapään pallo on vihreä, kun painopiste on tukien välissä, ja punainen, kun ei ole. Alla on lankun voimakuvio samassa vaakamittakaavassa: $\\overline{G}$ on lankun paino, $\\overline{F}_\\text{k}$ laatikon lankkuun kohdistama voima ja $\\overline{N}_1$, $\\overline{N}_2$ tukivoimat. Saman laatikon massan kaikilla asetuksilla nuolet ovat samassa mittakaavassa; raskaampi laatikko pienentää mittakaavaa, jotta suurinkin tukivoima mahtuu kuvaan. *Alusta* palauttaa alkuasetukset. Simulaatiossa ei ole animaatiota, joten nopeudensäädintä ei tarvita.",
+   "model": "Lankku on tasa-aineinen ja jäykkä: pituus $4{,}0\\,\\text{m}$, massa $20\\,\\text{kg}$, painopiste keskellä kohdassa $2{,}0\\,\\text{m}$. Tuet ovat pisteitä, jotka voivat vain työntää lankkua ylöspäin. Laatikko on levossa lankun päällä, joten sen lankkuun kohdistama voima on yhtä suuri kuin laatikon paino. Kun tasapaino ei ole mahdollinen, lankku piirretään kaatuneena, ja negatiivinen tukivoima taulukossa kertoo, että tuen pitäisi vetää lankkua alas, mihin tuki ei pysty. Arvot ovat mallin laskemia, eivät mittauksia.",
+   "calc": "Paino on $G = m_\\text{L} g$ ja laatikon voima $F_\\text{k} = m_\\text{k} g$, $g = 9{,}81\\,\\text{m/s}^2$. Momenttiehto tuen 1 suhteen, kun vastapäivään on positiivinen:\n\n$$\\begin{aligned} &N_2 (x_2 - x_1) \\\\ &\\quad - G (2{,}0\\,\\text{m} - x_1) \\\\ &\\quad - F_\\text{k} (x_\\text{k} - x_1) = 0 \\end{aligned}$$\n\njosta ratkaistaan $N_2$. Sitten voimien summasta $N_1 = G + F_\\text{k} - N_2$. Lukemissa näkyvät momentit tuen 1 suhteen, ja niiden summa on nolla. Yhteinen painopiste on $x_\\text{pp} = \\dfrac{m_\\text{L} \\cdot 2{,}0\\,\\text{m} + m_\\text{k} x_\\text{k}}{m_\\text{L} + m_\\text{k}}$."
+  },
+  {
+   "id": "koe-1",
+   "stage": "tutki",
+   "type": "experiment",
+   "title": "Koe 1: tuki lähemmäs painopistettä",
+   "intro": "Testaa ennuste 1. Laatikkoa ei ole, ja tuki 1 on kohdassa $0{,}5\\,\\text{m}$. Aloita tuesta 2 kohdassa $3{,}5\\,\\text{m}$ ja siirrä sitä kohti lankun keskikohtaa. Kirjaa tukivoimat ainakin kolmella tuen 2 paikalla, esimerkiksi $3{,}5\\,\\text{m}$, $3{,}0\\,\\text{m}$ ja $2{,}5\\,\\text{m}$. Laske jokaisella rivillä myös $N_1 + N_2$.",
+   "initial": {
+    "x1": 0.5,
+    "x2": 3.5,
+    "xk": 1,
+    "mk": "0"
+   },
+   "locked": [
+    "x1",
+    "xk",
+    "mk"
+   ],
+   "vary": "x2",
+   "names": {
+    "x1": "tuki 1",
+    "x2": "tuki 2",
+    "xk": "laatikko",
+    "mk": "laatikon massa"
+   },
+   "values": {
+    "mk": {
+     "0": "ei laatikkoa"
+    }
+   },
+   "measure": [
+    {
+     "key": "N1",
+     "label": "N_1 (N)"
+    },
+    {
+     "key": "N2",
+     "label": "N_2 (N)"
+    }
+   ],
+   "min": 2
+  },
+  {
+   "id": "koe-2",
+   "stage": "tutki",
+   "type": "experiment",
+   "title": "Koe 2: laatikko ulokkeelle",
+   "intro": "Testaa ennuste 2. Tuet ovat kohdissa $0{,}5\\,\\text{m}$ ja $3{,}0\\,\\text{m}$, ja lankulla on $40\\,\\text{kg}$:n laatikko. Siirrä laatikkoa oikealle ja kirjaa tukivoimat ja yhteinen painopiste $x_\\text{pp}$ esimerkiksi kohdissa $3{,}0\\,\\text{m}$, $3{,}2\\,\\text{m}$, $3{,}4\\,\\text{m}$, $3{,}5\\,\\text{m}$ ja $3{,}6\\,\\text{m}$. Missä kohdassa $N_1$ on nolla, ja missä $x_\\text{pp}$ on silloin?",
+   "initial": {
+    "x1": 0.5,
+    "x2": 3,
+    "xk": 2,
+    "mk": "40"
+   },
+   "locked": [
+    "x1",
+    "x2",
+    "mk"
+   ],
+   "vary": "xk",
+   "names": {
+    "x1": "tuki 1",
+    "x2": "tuki 2",
+    "xk": "laatikko",
+    "mk": "laatikon massa"
+   },
+   "values": {
+    "kaatuu": {
+     "0": "ei",
+     "1": "kaatuu"
+    }
+   },
+   "measure": [
+    {
+     "key": "N1",
+     "label": "N_1 (N)"
+    },
+    {
+     "key": "N2",
+     "label": "N_2 (N)"
+    },
+    {
+     "key": "xpp",
+     "label": "x_pp (m)"
+    },
+    {
+     "key": "kaatuu",
+     "label": "kaatuuko"
+    }
+   ],
+   "min": 2
+  },
+  {
+   "id": "johtopaatos",
+   "stage": "tutki",
+   "type": "explain",
+   "title": "Johtopäätös: tukivoimat ja kaatuminen",
+   "after": [
+    "koe-1",
+    "koe-2"
+   ],
+   "prompt": "Kirjoita taulukoidesi perusteella: kumpi tuki kantoi enemmän, ja miten tukivoimien suhde riippui tukien etäisyyksistä lankun painopisteestä? Mikä pysyi samana, kun siirsit tukea? Missä laatikko oli, kun lankku alkoi kaatua, ja missä yhteinen painopiste oli silloin?",
+   "model": "Kokeessa 1 painopistettä lähempänä oleva tuki kantoi enemmän. Kun tuki 2 oli kohdassa $2{,}5\\,\\text{m}$ eli $0{,}5\\,\\text{m}$:n päässä painopisteestä ja tuki 1 $1{,}5\\,\\text{m}$:n päässä, tukivoimat olivat $N_2 = 147\\,\\text{N}$ ja $N_1 = 49\\,\\text{N}$. Suhde $3 : 1$ on etäisyyksien käänteinen suhde, kuten momenttiehto painopisteen suhteen $N_1 r_1 = N_2 r_2$ vaatii. Tukivoimien summa pysyi lankun painona $196\\,\\text{N}$, koska voimien summa on nolla. Kokeessa 2 lankku pysyi tukien varassa vielä, kun laatikko oli tuen 2 ohi kohdassa $3{,}2\\,\\text{m}$. $N_1$ pieneni ja oli nolla, kun laatikko oli kohdassa $3{,}5\\,\\text{m}$; silloin yhteinen painopiste oli tuen 2 kohdalla, $x_\\text{pp} = 3{,}0\\,\\text{m}$. Kauempana lankku kaatui, koska tuki 1 ei voi vetää lankkua alas. Arvot ovat mallin laskemia: lankku on jäykkä ja tuet ovat pisteitä.",
+   "criteria": [
+    "Sanoin, että painopistettä lähempänä oleva tuki kantaa enemmän, ja perustelin sen luvuilla.",
+    "Kytkin tukivoimien suhteen etäisyyksiin momenttiehdolla $N_1 r_1 = N_2 r_2$.",
+    "Totesin, että tukivoimien summa pysyy yhtä suurena kuin kuorman ja lankun paino.",
+    "Kerroin, että lankku kaatuu, kun yhteinen painopiste ohittaa tuen, eikä heti, kun laatikko ohittaa sen."
+   ]
+  },
+  {
+   "id": "teoria-osa",
+   "stage": "selita",
+   "type": "theory",
+   "sections": [
+    "Ydinajatus",
+    "Kaava"
+   ]
+  },
+  {
+   "id": "pohdi",
+   "stage": "selita",
+   "type": "reflect",
+   "title": "Palaa ennusteisiisi",
+   "optional": true,
+   "prompt": "Vertaa ennusteitasi kokeiden mallin arvoihin ja tasapainoehtoihin. Palaa sitten alun kysymykseen: miksi maalari voi työntää purkin pukin ohi ulokkeelle, ja mikä ratkaisee, missä kohdassa lankku kaatuu?",
+   "predictions": [
+    "ennuste-1",
+    "ennuste-2"
+   ]
+  },
+  {
+   "id": "esimerkki",
+   "stage": "sovella",
+   "type": "theory",
+   "sections": [
+    "Esimerkki"
+   ]
+  },
+  {
+   "id": "virhe",
+   "stage": "sovella",
+   "type": "choice",
+   "title": "Etsi virhe voimakuviosta",
+   "fbd": "error",
+   "figure": "fy5-2/virhe",
+   "prompt": "Tasa-aineinen $20\\,\\text{kg}$:n lankku on kahden tuen varassa. Tuki 1 on $1{,}5\\,\\text{m}$:n ja tuki 2 $1{,}0\\,\\text{m}$:n päässä lankun keskikohdasta. Opiskelija on piirtänyt lankun voimakuvion. Mikä siinä on väärin?",
+   "choices": [
+    {
+     "text": "Tukivoimat ovat yhtä pitkät, vaikka $\\overline{N}_2$:n pitäisi olla pidempi kuin $\\overline{N}_1$.",
+     "correct": true,
+     "feedback": "Oikein. Momenttiehto painopisteen suhteen antaa $N_1 \\cdot 1{,}5\\,\\text{m} = N_2 \\cdot 1{,}0\\,\\text{m}$. Kun lisäksi $N_1 + N_2 = 196{,}2\\,\\text{N}$, saadaan $N_1 = 78{,}5\\,\\text{N}$ ja $N_2 = 117{,}7\\,\\text{N}$. Yhtä pitkät nuolet täyttävät vain voimien summan ehdon, eivät momenttiehtoa."
+    },
+    {
+     "text": "Paino $\\overline{G}$ pitäisi piirtää lähtemään lankun siitä päästä, joka on lähempänä tukea.",
+     "feedback": "Tasa-aineisen lankun painopiste on sen keskellä, joten $\\overline{G}$ lähtee oikein keskeltä. Virhe on tukivoimissa: painopistettä lähempänä oleva tuki 2 kantaa enemmän, $N_2 = 117{,}7\\,\\text{N}$ ja $N_1 = 78{,}5\\,\\text{N}$."
+    },
+    {
+     "text": "Tukivoimien $\\overline{N}_1$ ja $\\overline{N}_2$ pitäisi osoittaa alaspäin, koska lankku painaa tukia.",
+     "feedback": "Lankku painaa tukia alaspäin, mutta se voima vaikuttaa tukiin, ei lankkuun. Lankun voimakuvioon piirretään tukien voimat lankkuun, ja ne työntävät lankkua ylöspäin. Virhe on nuolten pituuksissa."
+    },
+    {
+     "text": "Voimakuviossa ei ole virhettä, koska voimien summa on siinä nolla.",
+     "feedback": "Voimien summa on nolla, mutta se on vain toinen tasapainoehto. Painopisteen suhteen $\\overline{N}_2$:n momentti $98{,}1\\,\\text{N} \\cdot 1{,}0\\,\\text{m}$ ei kumoa $\\overline{N}_1$:n momenttia $98{,}1\\,\\text{N} \\cdot 1{,}5\\,\\text{m}$, joten tällainen lankku alkaisi kiertyä."
+    }
+   ]
+  },
+  {
+   "id": "piirra",
+   "stage": "sovella",
+   "type": "explain",
+   "title": "Piirrä voimakuvio itse",
+   "fbd": "draw",
+   "draw": true,
+   "figure": "fy5-2/lauta",
+   "model_figure": "fy5-2/lauta-voimat",
+   "prompt": "Kuvassa on uima-altaan hyppylauta. Laudan takapää on kiinnitetty pultilla altaan reunaan, ja lauta lepää tukipalkin päällä $1{,}50\\,\\text{m}$:n päässä takapäästä. Hyppääjä seisoo laudan etupäässä. Piirrä paperille *laudan* voimakuvio: lauta suorakulmiona ja jokainen siihen vaikuttava voima omasta vaikutuspisteestään, nimettynä ja suunnilleen oikean pituisena. Mihin suuntaan pultti vetää lautaa?",
+   "model": "Kappale on lauta. Siihen vaikuttavat neljä voimaa. Laudan paino $\\overline{G}$ lähtee laudan keskeltä alas. Hyppääjä painaa laudan etupäätä alas voimalla $\\overline{F}_\\text{h}$; se on hyppääjän ja laudan välinen voima, ei hyppääjän paino, joka vaikuttaa hyppääjään. Tukipalkki työntää lautaa ylös voimalla $\\overline{N}$. Pultti vetää laudan takapäätä **alas** voimalla $\\overline{F}_\\text{p}$. Sen suunnan näkee momenttiehdosta tuen suhteen: $\\overline{G}$ ja $\\overline{F}_\\text{h}$ kiertävät lautaa myötäpäivään, joten takapään voiman on kierrettävä vastapäivään, ja tuen vasemmalla puolella se onnistuu vain alaspäin osoittavalla voimalla. $\\overline{N}$ on kuvan pisin nuoli, koska ylöspäin osoittavan tukivoiman on kumottava kaikki kolme alaspäin osoittavaa voimaa.",
+   "criteria": [
+    {
+     "key": "fbd_object",
+     "detail": "Piirsin vain laudan ja siihen vaikuttavat voimat, en tukipalkkiin tai pulttiin vaikuttavia voimia."
+    },
+    {
+     "key": "fbd_forces",
+     "detail": "Mukana ovat $\\overline{G}$, $\\overline{F}_\\text{h}$, $\\overline{N}$ ja $\\overline{F}_\\text{p}$, eikä mitään ylimääräistä."
+    },
+    {
+     "key": "fbd_directions",
+     "detail": "Pultin voima osoittaa alas ja tukipalkin voima ylös."
+    },
+    {
+     "key": "fbd_representation",
+     "detail": "Paino lähtee laudan keskeltä, hyppääjän voima laudan etupäästä ja pultin voima takapäästä."
+    },
+    {
+     "key": "fbd_magnitudes",
+     "detail": "$\\overline{N}$ on pisin, ja ylöspäin osoittava nuoli on yhtä pitkä kuin alaspäin osoittavat yhteensä."
+    }
+   ]
+  },
+  {
+   "id": "siirto",
+   "stage": "sovella",
+   "type": "numeric",
+   "title": "Sovella: pultin voima",
+   "fbd": "equations",
+   "prompt": "Edellisen tehtävän hyppylauta on tasa-aineinen ja vaakasuora. Sen pituus on $4{,}00\\,\\text{m}$ ja massa $30{,}0\\,\\text{kg}$. Pultti on laudan takapäässä ja tukipalkki $1{,}50\\,\\text{m}$:n päässä takapäästä. Hyppääjä, jonka massa on $60{,}0\\,\\text{kg}$, seisoo paikallaan laudan etupäässä. Kuinka suurella voimalla pultti vetää lautaa? Vastaa newtoneina.",
+   "answer": 1080,
+   "unit": "N",
+   "tolerance": 0.02,
+   "hints": [
+    "Piirrä ensin laudan voimakuvio. Mikä voima jää pois momenttiehdosta, jos momenttipisteeksi valitaan tukipalkki? Entä jos valitaan pultti?",
+    "Momenttiehto tukipalkin suhteen: pultin voiman varsi on $1{,}50\\,\\text{m}$, laudan painon $2{,}00\\,\\text{m} - 1{,}50\\,\\text{m} = 0{,}50\\,\\text{m}$ ja hyppääjän voiman $4{,}00\\,\\text{m} - 1{,}50\\,\\text{m} = 2{,}50\\,\\text{m}$.",
+    "$F_\\text{p} \\cdot 1{,}50\\,\\text{m} = m_\\text{h} g \\cdot 2{,}50\\,\\text{m} + m_\\text{L} g \\cdot 0{,}50\\,\\text{m}$. Laske ensin oikean puolen momentit ja jaa niiden summa pultin varrella $1{,}50\\,\\text{m}$."
+   ],
+   "mistakes": [
+    {
+     "value": 1962,
+     "feedback": "Tämä on tukipalkin voima $N$, ei pultin voima. Pultin voima saadaan, kun $N$:stä vähennetään laudan ja hyppääjän painot, tai suoraan momenttiehdosta tuen suhteen."
+    },
+    {
+     "value": 981,
+     "feedback": "Laudan oma paino puuttuu. Lauta on tasa-aineinen, joten sen paino vaikuttaa keskeltä, $0{,}50\\,\\text{m}$:n päässä tuesta, ja sekin kiertää lautaa samaan suuntaan kuin hyppääjä."
+    },
+    {
+     "value": 883,
+     "feedback": "Laudan painon momentti tuen suhteen on saanut väärän etumerkin, tai olet laskenut vain painot yhteen. Laudan painopiste on tuen ja etupään välissä, joten sen paino kiertää lautaa samaan suuntaan kuin hyppääjän voima."
+    }
+   ],
+   "solution": "**Annettu:** lauta $L = 4{,}00\\,\\text{m}$, $m_\\text{L} = 30{,}0\\,\\text{kg}$ (painopiste $2{,}00\\,\\text{m}$:n päässä takapäästä); tuki $1{,}50\\,\\text{m}$:n päässä takapäästä; hyppääjä $m_\\text{h} = 60{,}0\\,\\text{kg}$ etupäässä; $g = 9{,}81\\,\\text{m/s}^2$\n\n**Kysytty:** pultin voima $F_\\text{p}$ newtoneina\n\n**Periaate:** Lauta on levossa, joten se on tasapainossa sekä etenemisen että pyörimisen suhteen, ja momenttien summa minkä tahansa pisteen suhteen on nolla. Momenttipisteeksi valitaan tuki, jolloin tuntematon tukivoima $N$ ei esiinny momenttiehdossa ja pultin voima saadaan yhdestä yhtälöstä.\n\n**Voimakuvio:** Kappale on lauta. Siihen vaikuttavat laudan paino $\\overline{G}$ keskeltä alas (Maa), hyppääjän voima $\\overline{F}_\\text{h}$ etupäästä alas (hyppääjä on levossa, joten $F_\\text{h} = m_\\text{h} g$), tuen voima $\\overline{N}$ ylös ja pultin voima $\\overline{F}_\\text{p}$ takapäästä alas. Vastapäivään kiertävä momentti on positiivinen: pultin voima tuen vasemmalla puolella kiertää vastapäivään, laudan paino ja hyppääjän voima tuen oikealla puolella myötäpäivään.\n\n<svg data-fig=\"fy5-2/lauta-voimat\"></svg>\n\n**Kaava:** $F_\\text{p} r_\\text{p} - m_\\text{L} g\\, r_\\text{L} - m_\\text{h} g\\, r_\\text{h} = 0$, josta $F_\\text{p} = \\dfrac{(m_\\text{L} r_\\text{L} + m_\\text{h} r_\\text{h})\\, g}{r_\\text{p}}$\n\n**Muunnokset:** Ei tarvita, mutta voiman varret lasketaan tuesta: $r_\\text{p} = 1{,}50\\,\\text{m}$, $r_\\text{L} = 2{,}00\\,\\text{m} - 1{,}50\\,\\text{m} = 0{,}50\\,\\text{m}$ ja $r_\\text{h} = 4{,}00\\,\\text{m} - 1{,}50\\,\\text{m} = 2{,}50\\,\\text{m}$.\n\n**Sijoitus:** Momentit tuen suhteen ovat $m_\\text{L} g\\, r_\\text{L} = 30{,}0\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 \\cdot 0{,}50\\,\\text{m} = 147{,}15\\,\\text{Nm}$ ja $m_\\text{h} g\\, r_\\text{h} = 60{,}0\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 \\cdot 2{,}50\\,\\text{m} = 1471{,}5\\,\\text{Nm}$, yhteensä $1618{,}65\\,\\text{Nm}$. Siis $F_\\text{p} = \\dfrac{1618{,}65\\,\\text{Nm}}{1{,}50\\,\\text{m}} = 1079{,}1\\,\\text{N}$\n\n**Vastaus:** $1080\\,\\text{N}$ eli noin $1{,}08\\,\\text{kN}$, kolme merkitsevää numeroa kuten massoissa ja pituuksissa.\n\n**Järkevyys:** Tarkistus toisesta momenttipisteestä: pultin suhteen laudan paino antaa momentin $294{,}3\\,\\text{N} \\cdot 2{,}00\\,\\text{m} = 588{,}6\\,\\text{Nm}$ ja hyppääjä $588{,}6\\,\\text{N} \\cdot 4{,}00\\,\\text{m} = 2354{,}4\\,\\text{Nm}$, yhteensä $2943\\,\\text{Nm}$, joten $N = \\dfrac{2943\\,\\text{Nm}}{1{,}50\\,\\text{m}} = 1962\\,\\text{N}$. Voimien summasta $F_\\text{p} = N - G - F_\\text{h} = 1962\\,\\text{N} - 294{,}3\\,\\text{N} - 588{,}6\\,\\text{N} = 1079{,}1\\,\\text{N}$, sama pultin voima. Se on lähes kaksi kertaa hyppääjän paino, koska hyppääjän varsi $2{,}50\\,\\text{m}$ on yli puolitoistakertainen pultin varteen verrattuna.",
+   "optional": true
+  },
+  {
+   "id": "harjoitukset",
+   "stage": "sovella",
+   "type": "exercises",
+   "text": "Harjoittele kolmella tasolla. Tason 1 tehtävissä riittää yksi momenttiehto, tason 2 tehtävissä tarvitaan kaksi ehtoa tai useampi momentti, ja taso 3 vaatii päättelyä, kaatumisen rajan tai voiman komponentin."
+  },
+  {
+   "id": "tarkistus-1",
+   "stage": "tarkista",
+   "type": "choice",
+   "title": "1. Painopiste ja kaatuminen",
+   "prompt": "Kirjahylly kallistuu, kun sitä vedetään yläreunasta. Milloin hylly kaatuu itsestään, jos siitä päästetään irti?",
+   "choices": [
+    {
+     "text": "Kun painopisteen kautta kulkeva pystysuora osuu hyllyn pohjan ulkopuolelle.",
+     "correct": true,
+     "feedback": "Oikein. Silloin painon momentti alemman reunan suhteen kiertää hyllyä reunan yli. Niin kauan kuin pystysuora osuu pohjan kohdalle, painon momentti kääntää hyllyn takaisin pohjansa varaan."
+    },
+    {
+     "text": "Kun hyllyn yläreunan etureuna on siirtynyt pohjan etureunan ulkopuolelle.",
+     "feedback": "Yläreunan paikka ei ratkaise. Hyllyn yläosa voi olla pohjan ulkopuolella, mutta hylly pysyy pystyssä, kunnes painopisteen kautta kulkeva pystysuora ohittaa pohjan reunan."
+    },
+    {
+     "text": "Heti kun hyllyä kallistetaan, jos sen painopiste on korkealla, koska korkea painopiste on epävakaa.",
+     "feedback": "Painopisteen korkeus yksin ei ratkaise. Korkea painopiste pienentää kaatumiskulmaa, mutta hylly kaatuu vasta, kun painopisteen kautta kulkeva pystysuora ohittaa pohjan reunan; muuten sen paino kääntää hyllyn takaisin pohjansa varaan."
+    }
+   ]
+  },
+  {
+   "id": "tarkistus-2",
+   "stage": "tarkista",
+   "type": "numeric",
+   "title": "2. Keinulauta",
+   "fbd": "equations",
+   "prompt": "Keinulauta on tuettu keskikohdastaan, joten sen oma paino ei kierrä sitä. Laudan toisessa päässä istuu $24{,}0\\,\\text{kg}$:n lapsi $1{,}50\\,\\text{m}$:n päässä tukipisteestä. Aikuinen pitää laudan vaakasuorassa painamalla toista puolta kädellä pystysuoraan alas $1{,}20\\,\\text{m}$:n päässä tukipisteestä. Kuinka suurella voimalla aikuinen painaa? Vastaa newtoneina.",
+   "answer": 294,
+   "unit": "N",
+   "tolerance": 0.02,
+   "hints": [
+    "Valitse momenttipisteeksi laudan tukipiste. Mitkä voimat silloin jäävät pois momenttiehdosta?",
+    "Lapsen voima kiertää lautaa yhteen suuntaan ja aikuisen voima toiseen: $F \\cdot 1{,}20\\,\\text{m} = m g \\cdot 1{,}50\\,\\text{m}$."
+   ],
+   "mistakes": [
+    {
+     "value": 188,
+     "feedback": "Varret ovat vaihtaneet paikkaa. Lapsi on kauempana tukipisteestä ($1{,}50\\,\\text{m}$), joten aikuisen on painettava lähempänä ($1{,}20\\,\\text{m}$) *suuremmalla* voimalla kuin lapsen paino."
+    },
+    {
+     "value": 235,
+     "feedback": "Tämä on lapsen paino $mg$. Aikuinen painaa lähempänä tukipistettä, joten momenttien kumoutuminen vaatii suuremman voiman: $F = \\dfrac{mg \\cdot 1{,}50\\,\\text{m}}{1{,}20\\,\\text{m}}$."
+    }
+   ],
+   "solution": "**Annettu:** lapsi $m = 24{,}0\\,\\text{kg}$, varsi $r_1 = 1{,}50\\,\\text{m}$; aikuisen voiman varsi $r_2 = 1{,}20\\,\\text{m}$; lauta tuettu keskeltä; $g = 9{,}81\\,\\text{m/s}^2$\n\n**Kysytty:** aikuisen painamisvoima $F$ newtoneina\n\n**Periaate:** Lauta pysyy vaakasuorassa levossa, joten momenttien summa tukipisteen suhteen on nolla. Tukipiste on hyvä momenttipiste, koska tuen voiman ja laudan painon varsi on silloin nolla.\n\n**Voimakuvio:** Kappale on lauta. Siihen vaikuttavat lapsen voima $\\overline{F}_\\text{l}$ toisessa päässä alas (lapsi istuu levossa, joten voiman suuruus on $F_\\text{l} = mg$), aikuisen voima $\\overline{F}$ toisella puolella alas, laudan paino $\\overline{G}$ keskeltä alas ja tuen voima $\\overline{N}$ ylös. $\\overline{G}$ ja $\\overline{N}$ vaikuttavat tukipisteessä. Lapsen voima kiertää lautaa yhteen suuntaan ja aikuisen voima toiseen; valitaan aikuisen voiman kiertosuunta positiiviseksi.\n\n<svg data-fig=\"fy5-2/keinu-voimat\"></svg>\n\n**Kaava:** $F r_2 - m g r_1 = 0$, josta $F = \\dfrac{m g r_1}{r_2}$\n\n**Muunnokset:** Ei tarvita: massa on kilogrammoina ja varret metreinä.\n\n**Sijoitus:** $F = \\dfrac{24{,}0\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 \\cdot 1{,}50\\,\\text{m}}{1{,}20\\,\\text{m}} = \\dfrac{353{,}16\\,\\text{Nm}}{1{,}20\\,\\text{m}} = 294{,}3\\,\\text{N}$\n\n**Vastaus:** $294\\,\\text{N}$, kolme merkitsevää numeroa kuten massassa ja varsissa.\n\n**Järkevyys:** Lapsen paino on $235\\,\\text{N}$. Aikuinen painaa lähempänä tukipistettä, joten hänen voimansa on suurempi, $1{,}50 : 1{,}20 = 1{,}25$-kertainen: $1{,}25 \\cdot 235\\,\\text{N} \\approx 294\\,\\text{N}$."
+  },
+  {
+   "id": "tarkistus-3",
+   "stage": "tarkista",
+   "type": "explain",
+   "title": "3. Selitä: miksi lähempi tuki kantaa enemmän",
+   "optional": true,
+   "prompt": "Tasa-aineinen lankku on kahden tuen varassa, ja toinen tuki on lähempänä lankun keskikohtaa kuin toinen. Selitä tasapainoehtojen avulla, miksi lähempi tuki kantaa suuremman osan lankun painosta.",
+   "model": "Lankku on levossa, joten voimien summa on nolla, $N_1 + N_2 = G$, ja momenttien summa minkä tahansa pisteen suhteen on nolla. Lasketaan momentit painopisteen suhteen: painon varsi on nolla, ja tukivoimat kiertävät lankkua vastakkaisiin suuntiin. Ne kumoavat toisensa, kun $N_1 r_1 = N_2 r_2$, missä $r_1$ ja $r_2$ ovat tukien etäisyydet painopisteestä. Kun $r_2 < r_1$, on oltava $N_2 > N_1$: lähemmän tuen voimalla on lyhyempi varsi, joten sen on oltava suurempi, jotta sen momentti on yhtä suuri kuin kauemman tuen.",
+   "criteria": [
+    "Kirjoitin molemmat tasapainoehdot: voimien summa ja momenttien summa ovat nolla.",
+    "Valitsin momenttipisteeksi painopisteen ja totesin, että painon momentti on silloin nolla.",
+    "Johdin ehdon $N_1 r_1 = N_2 r_2$ ja päättelin siitä, että lyhyemmän varren voima on suurempi."
+   ]
+  },
+  {
+   "id": "lahtolippu",
+   "stage": "tarkista",
+   "type": "exit",
+   "text": "Lopuksi kaksi nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+  }
+ ]
+}

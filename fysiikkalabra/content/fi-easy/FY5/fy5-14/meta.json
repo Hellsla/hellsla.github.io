@@ -1,0 +1,28 @@
+{
+  "id": "fy5-14",
+  "course": "FY5",
+  "title": "Äänen ominaisuudet",
+  "goals": [
+    "LOPS FY5: ääni aaltoliikkeenä sekä äänen ominaisuudet ja eteneminen",
+    "Kokeellisesti: äänen nopeuden määrittäminen ja äänen taajuusanalyysi",
+    "Täsmennys: äänenkorkeus, harmoninen sarja (se muodostaa äänen sointivärin), infra- ja ultraääni, huojunta ja Dopplerin ilmiö",
+    "Taidot: FFT-kuvaajan tekeminen"
+  ],
+  "prerequisites": [
+    "fy5-13"
+  ],
+  "glossary": [
+    "ääni",
+    "äänen nopeus",
+    "äänenkorkeus",
+    "sointiväri",
+    "harmoninen sarja",
+    "infraääni",
+    "huojunta",
+    "Doppler-ilmiö",
+    "ultraääni"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

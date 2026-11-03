@@ -1,0 +1,214 @@
+[
+ {
+  "expr": "(() => { const S=window.simState; return S.P===50 && S.N===1 && S.r===2 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "on load: one speaker, P = 50 mW, r = 2,0 m (must run before any setup)"
+ },
+ {
+  "expr": "window.simState.I",
+  "expected": 0.000994718,
+  "tol": 0.01,
+  "note": "on load: I = 0,050 W / (4π · 4,0 m²) = 9,95e-4 W/m² (lesson-answers sim-load-I)"
+ },
+ {
+  "expr": "window.simState.L",
+  "expected": 89.977001,
+  "tol": 0.01,
+  "note": "on load: L = 90,0 dB (lesson-answers sim-load-L)"
+ },
+ {
+  "expr": "window.simState.A",
+  "expected": 50.265482,
+  "tol": 0.01,
+  "note": "on load: sphere area 4πr² = 50,3 m²"
+ },
+ {
+  "expr": "(() => { const R=document.querySelectorAll('#sim-root input[type=range]'); return R.length===2 && R[0].min==='1' && R[0].max==='100' && R[0].step==='1' && R[1].min==='1' && R[1].max==='20' && R[1].step==='0.5' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "two sliders: P 1–100 mW in steps of 1; r 1,0–20,0 m in steps of 0,5"
+ },
+ {
+  "expr": "(() => { const L=[...document.querySelectorAll('#sim-root select')].map(s=>[...s.options].map(o=>o.value).join(',')); return L.length===2 && L[0]==='1,2,4,10' && L[1]==='0.5,1,2' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "two selects: number of speakers 1, 2, 4, 10 and speed hidas/normaali/nopea"
+ },
+ {
+  "expr": "(() => { const k=[...document.getElementById('sim-root').children].map(e=>e.tagName==='CANVAS'?'canvas':e.className); return k.indexOf('canvas')<k.indexOf('controls') && k.indexOf('controls')<k.indexOf('readout') ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "DOM order canvas, controls, readout"
+ },
+ {
+  "expr": "(() => { const n=document.querySelectorAll('#sim-root p.note'); return !document.querySelector('#sim-root details') && n.length===1 && n[0].textContent.trim().split(/\\s+/).length<=15 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "no Lisätietoja box; one legend line of at most 15 words"
+ },
+ {
+  "expr": "(() => { const P=window.simAdapter && window.simAdapter.params; return P && Object.keys(P).sort().join(',')==='N,P,r' && P.P.unit==='mW' && P.r.unit==='m' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "adapter declares P (mW), N and r (m)"
+ },
+ {
+  "expr": "(() => { const c=document.querySelector('#sim-root canvas'); const w=document.getElementById('sim-root').clientWidth; return c.width===600 && c.height===(w<500?720:400) ? 1 : 0; })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "canvas 600x400 on a wide screen, 600x720 (stacked, larger labels) under 500 px"
+ },
+ {
+  "expr": "(() => { const t=document.querySelector('#sim-root .readout').textContent; return /dB/.test(t) && /W\\/m/.test(t) ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "the readout shows I in W/m² and L in dB"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'1'); I(R[0],50); I(R[1],1);",
+  "expr": "window.simState.ImW",
+  "expected": 3.978874,
+  "tol": 0.01,
+  "note": "koe 1: P = 50 mW, one speaker, r = 1 m: I in mW/m² (lesson-answers koe1-r1-ImW)"
+ },
+ {
+  "expr": "window.simState.L",
+  "expected": 95.997601,
+  "tol": 0.001,
+  "note": "koe 1 and prediction 1: r = 1 m gives L = 96.0 dB"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'1'); I(R[0],50); I(R[1],2);",
+  "expr": "window.simState.ImW",
+  "expected": 0.994718,
+  "tol": 0.01,
+  "note": "koe 1: P = 50 mW, one speaker, r = 2 m: I in mW/m² (lesson-answers koe1-r2-ImW)"
+ },
+ {
+  "expr": "window.simState.L",
+  "expected": 89.977001,
+  "tol": 0.001,
+  "note": "koe 1 and prediction 1: r = 2 m gives L = 90.0 dB"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'1'); I(R[0],50); I(R[1],4);",
+  "expr": "window.simState.ImW",
+  "expected": 0.24868,
+  "tol": 0.01,
+  "note": "koe 1: P = 50 mW, one speaker, r = 4 m: I in mW/m² (lesson-answers koe1-r4-ImW)"
+ },
+ {
+  "expr": "window.simState.L",
+  "expected": 83.956402,
+  "tol": 0.001,
+  "note": "koe 1 and prediction 1: r = 4 m gives L = 84.0 dB"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'1'); I(R[0],50); I(R[1],8);",
+  "expr": "window.simState.ImW",
+  "expected": 0.06217,
+  "tol": 0.01,
+  "note": "koe 1: P = 50 mW, one speaker, r = 8 m: I in mW/m² (lesson-answers koe1-r8-ImW)"
+ },
+ {
+  "expr": "window.simState.L",
+  "expected": 77.935802,
+  "tol": 0.001,
+  "note": "koe 1 and prediction 1: r = 8 m gives L = 77.9 dB"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'1'); I(R[0],50); I(R[1],2);",
+  "expr": "(() => { const a=window.simState.L; return a; })()",
+  "expected": 89.977001,
+  "tol": 0.001,
+  "note": "back at 2,0 m: 90,0 dB"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'1'); I(R[0],50); I(R[1],4);",
+  "expr": "90 - window.simState.L",
+  "expected": 6.043598,
+  "tol": 0.01,
+  "note": "prediction 1: doubling r from 2 m to 4 m lowers L by about 6 dB (from 89,98 dB)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],50); I(R[1],2); I(S[0],'1');",
+  "expr": "window.simState.L",
+  "expected": 89.977001,
+  "tol": 0.001,
+  "note": "koe 2 and prediction 2: 1 speaker(s) at 2,0 m give L = 90.0 dB"
+ },
+ {
+  "expr": "window.simState.Ptot",
+  "expected": 0.05,
+  "tol": 0.001,
+  "note": "koe 2: total power N P = 50 mW"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],50); I(R[1],2); I(S[0],'2');",
+  "expr": "window.simState.L",
+  "expected": 92.987301,
+  "tol": 0.001,
+  "note": "koe 2 and prediction 2: 2 speaker(s) at 2,0 m give L = 93.0 dB"
+ },
+ {
+  "expr": "window.simState.Ptot",
+  "expected": 0.1,
+  "tol": 0.001,
+  "note": "koe 2: total power N P = 100 mW"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],50); I(R[1],2); I(S[0],'4');",
+  "expr": "window.simState.L",
+  "expected": 95.997601,
+  "tol": 0.001,
+  "note": "koe 2 and prediction 2: 4 speaker(s) at 2,0 m give L = 96.0 dB"
+ },
+ {
+  "expr": "window.simState.Ptot",
+  "expected": 0.2,
+  "tol": 0.001,
+  "note": "koe 2: total power N P = 200 mW"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],50); I(R[1],2); I(S[0],'10');",
+  "expr": "window.simState.L",
+  "expected": 99.977001,
+  "tol": 0.001,
+  "note": "koe 2 and prediction 2: 10 speaker(s) at 2,0 m give L = 100.0 dB"
+ },
+ {
+  "expr": "window.simState.Ptot",
+  "expected": 0.5,
+  "tol": 0.001,
+  "note": "koe 2: total power N P = 500 mW"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'1'); I(R[1],2); I(R[0],100);",
+  "expr": "window.simState.L",
+  "expected": 92.987301,
+  "tol": 0.001,
+  "note": "doubling P to 100 mW at 2,0 m: L = 93,0 dB, the same as two 50 mW speakers"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'1'); I(R[1],20); I(R[0],1);",
+  "expr": "window.simState.L",
+  "expected": 52.987301,
+  "tol": 0.001,
+  "note": "weakest setting: 1 mW at 20 m gives 53,0 dB"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'10'); I(R[1],1); I(R[0],100);",
+  "expr": "window.simState.L",
+  "expected": 109.007901,
+  "tol": 0.001,
+  "note": "strongest setting: ten 100 mW speakers at 1,0 m give 109,0 dB"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; const s1=window.simState.phase; I(S[1],'2');",
+  "expr": "(() => { const S=[...document.querySelectorAll('#sim-root select')]; return S[1].value==='2' && window.simState.L>0 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "the speed select changes only the arcs' pace; the readings stay"
+ }
+]

@@ -1,0 +1,109 @@
+{
+  "level1": [
+    {
+      "id": "fy5-4-L1-01",
+      "level": 1,
+      "text": "A car drives round the bend of a motorway slip road at a steady speed of $20\\,\\text{m/s}$. The radius of the bend is $80\\,\\text{m}$. How large is the centripetal acceleration of the car?",
+      "answer": 5.0,
+      "unit": "m/s²",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-4-L1-02",
+      "level": 1,
+      "text": "A runner runs round a bend of a running track whose radius is $36.5\\,\\text{m}$. Her speed stays the same in the bend, $8.00\\,\\text{m/s}$. How large is the centripetal acceleration of the runner?",
+      "answer": 1.7534,
+      "unit": "m/s²",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-4-L1-03",
+      "level": 1,
+      "text": "A stone of mass $0.50\\,\\text{kg}$ whirls on the end of a string along a horizontal circular path. The radius of the path is $1.2\\,\\text{m}$ and the tangential speed of the stone $4.0\\,\\text{m/s}$. How large is the net force on the stone?",
+      "answer": 6.6667,
+      "unit": "N",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-4-L1-04",
+      "level": 1,
+      "text": "A car drives in a roundabout whose radius is $25\\,\\text{m}$. An acceleration sensor shows that the centripetal acceleration of the car is $2.5\\,\\text{m/s}^2$. How large is the tangential speed of the car?",
+      "answer": 7.9057,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-4-L1-05",
+      "level": 1,
+      "text": "The radius of the drum of a washing machine is $0.25\\,\\text{m}$. During the spin cycle the tangential speed of a garment at the rim of the drum is $15\\,\\text{m/s}$. How large is the centripetal acceleration of the garment?",
+      "answer": 900.0,
+      "unit": "m/s²",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy5-4-L2-01",
+      "level": 2,
+      "text": "A cyclist rides through the bottom of a dip in an underpass at a steady speed of $8.0\\,\\text{m/s}$. The combined mass of the cyclist and the bicycle is $80\\,\\text{kg}$, and at the bottom of the dip the radius of the arc of the road is $16\\,\\text{m}$. Air resistance and rolling resistance are neglected. How large is the support force of the road on the bicycle at the bottom of the dip? Give the answer in kilonewtons.",
+      "answer": 1.1048,
+      "unit": "kN",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy5-4-L2-02",
+      "level": 2,
+      "text": "A playground roundabout turns steadily so that one revolution lasts $5.0\\,\\text{s}$. A child sits at the edge of the roundabout, $3.0\\,\\text{m}$ from the centre. How large is the centripetal acceleration of the child?",
+      "answer": 4.7374,
+      "unit": "m/s²",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-4-L2-03",
+      "level": 2,
+      "text": "A car of mass $1200\\,\\text{kg}$ drives over a hill at a steady speed of $12\\,\\text{m/s}$. At the top of the hill the radius of the arc of the road is $30\\,\\text{m}$. Air resistance and rolling resistance are neglected. How large is the support force of the road on the car at the top? Give the answer in kilonewtons.",
+      "answer": 6.012,
+      "unit": "kN",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy5-4-L2-04",
+      "level": 2,
+      "text": "A hammer thrower whirls a hammer of mass $7.26\\,\\text{kg}$ before the throw. Assume that the hammer goes round a horizontal circle of radius $1.8\\,\\text{m}$ and one revolution lasts $0.50\\,\\text{s}$. How large is the net force on the hammer? Give the answer in kilonewtons.",
+      "answer": 2.0636,
+      "unit": "kN",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy5-4-L3-01",
+      "level": 3,
+      "text": "An icy road bends horizontally, and the radius of the bend is $60\\,\\text{m}$. The coefficient of static friction between the tyres and the ice is $0.10$. Air resistance and rolling resistance are neglected. What is the greatest speed at which a car can go through the bend without sliding? Give the answer in $\\text{km/h}$.",
+      "answer": 27.6193,
+      "unit": "km/h",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy5-4-L3-02",
+      "level": 3,
+      "text": "A puck of mass $0.40\\,\\text{kg}$ is tied with a string to a peg fixed to a table, and it slides on the smooth table along a horizontal circle of radius $0.80\\,\\text{m}$. The string breaks if its tension exceeds $25\\,\\text{N}$. Friction is neglected. What is the greatest rotation frequency the puck can have?",
+      "answer": 1.4067,
+      "unit": "Hz",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy5-4-L3-03",
+      "level": 3,
+      "text": "A road designer dimensions a horizontal bend for a speed of $80\\,\\text{km/h}$. For safety, the friction of the road should not have to give the car a sideways force greater than $0.25$ times the weight of the car, so that the grip is enough also on a wet road. Air resistance and rolling resistance are neglected. How large must the radius of the bend be at least?",
+      "answer": 201.3566,
+      "unit": "m",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    }
+  ]
+}

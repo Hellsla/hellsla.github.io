@@ -63,11 +63,13 @@ if local_courses.validate(curriculum): sys.exit("\n".join(local_courses.validate
 
 
 def render_md(text, **kw):
-    """Markdown -> HTML, with LaTeX kept out of markdown's reach and force-diagram specs drawn (scripts/fbdspec.py).
+    """Markdown -> HTML, with LaTeX kept out of markdown's reach, force-diagram specs drawn (scripts/fbdspec.py) and
+    figures embedded by id (`<svg data-fig="fy5-2/lauta-voimat"></svg>`, figcat.embed) drawn in the page's language.
     ```latex fences become $$...$$; every $$...$$ and $...$ is swapped for a token first,
     so underscores, backslashes and asterisks inside maths are not read as markdown."""
     text = re.sub(r"```latex\n(.*?)```", lambda m: "\n$$" + m.group(1).strip() + "$$\n", text, flags=re.S)
     text, fbds = fbdspec.render(text)                                              # ```voimakuvio specs -> drawn diagrams
+    text, figrefs = figcat.embed(text)                                             # a model figure by id inside a solution step
     maths = []
     def stash(m):
         x = m.group(0)
@@ -76,7 +78,8 @@ def render_md(text, **kw):
         maths.append(x); return f"MATHTOKEN{len(maths) - 1}X"
     text = re.sub(r"\$\$.*?\$\$|\$[^$\n]+?\$", stash, text, flags=re.S)
     html = markdown.markdown(text, extensions=["fenced_code", "tables"] + kw.get("extensions", []))
-    return fbdspec.restore(re.sub(r"MATHTOKEN(\d+)X", lambda m: maths[int(m.group(1))], html), fbds)
+    html = fbdspec.restore(re.sub(r"MATHTOKEN(\d+)X", lambda m: maths[int(m.group(1))], html), fbds)
+    return figcat.restore(html, figrefs, T.lang) if figrefs else html
 
 
 UNIT = r"(?:N/kg|m/s²|m/s|km/h|kPa|MPa|Pa|°C|K|kN|N|kg|g|km|cm²|cm|mm|m³|m|s|min|h|kJ|J|kW|W|dm³|l|Hz|%)"
@@ -199,6 +202,16 @@ def fi(x):
 
 
 def esc(s): return _h.escape(str(s), quote=True)
+
+
+def plain_tex(s):
+    """A title with LaTeX ("Teho: $P = \\Delta E/\\Delta t$") as plain text for the browser tab and link previews,
+    which cannot render maths: "Teho: P = ΔE/Δt"."""
+    def one(m):
+        f = re.sub(r"\\frac\{([^{}]*)\}\{([^{}]*)\}", r"\1/\2", m.group(1))
+        for tex, uni in (("\\Delta", "Δ"), ("\\rho", "ρ"), ("\\mu", "µ"), ("\\cdot", "·")): f = f.replace(tex + " ", uni).replace(tex, uni)
+        return f.replace("\\", "")
+    return re.sub(r"\$([^$]+)\$", one, s)
 
 
 def texts(html):
@@ -620,7 +633,8 @@ def build_language(lang):
             body, photo_tail = photos(body)               # a photograph may also open a task (FY4 2026-11-03: Pohdinta)
             main = f'<article id="teoria" class="inquiry">{body}{photo_tail}</article>'
         skey = (meta["id"] if where[0] == "lesson" else where[1].name) if where else None   # the sim's block of lang "sims"
-        html = (texts(tpl).replace("{{title}}", esc(meta["title"])).replace("{{course}}", meta["course"]).replace("{{notice}}", notice(meta["state"]))
+        html = (texts(tpl).replace("<title>{{title}}", "<title>" + esc(plain_tex(meta["title"]))).replace('og:title" content="{{title}}', 'og:title" content="' + esc(plain_tex(meta["title"])))
+                .replace("{{title}}", esc(meta["title"])).replace("{{course}}", meta["course"]).replace("{{notice}}", notice(meta["state"]))
                 .replace("{{strings}}", strings_block(skey)).replace("{{back_to_course}}", esc(T("site.back_to_course", course=meta["course"])))
                 .replace("{{toc}}", toc).replace("{{main}}", main + concept_cards.lesson_link(meta["course"], meta["id"], T, UP) + f"<!--fl-chapter-nav:{meta['id']}-->")
                 .replace("{{scripts}}", '<script src="inquiry.js"></script>' if inq else "")

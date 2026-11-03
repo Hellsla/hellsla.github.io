@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Jousen ja kappaleen jousi vaihdetaan jouseen, jonka jousivakio on nelinkertainen. Massa pysyy samana. Miten jaksonaika muuttuu?",
+    "a": "Jaksonaika puolittuu. Kaavassa $T = 2\\pi\\sqrt{\\tfrac{m}{k}}$ jousivakio on nimittäjässä neliöjuuren alla, ja $\\sqrt{4} = 2$. Jäykempi jousi vetää kappaletta suuremmalla voimalla, joten kappale värähtelee nopeammin."
+  },
+  {
+    "q": "Missä kohdassa harmonisesti värähtelevän kappaleen kiihtyvyys on suurin? Missä kohdassa nopeus on suurin?",
+    "a": "Kiihtyvyys on suurin ääriasennoissa. Siellä poikkeama on suurin, ja siksi myös harmoninen voima $F = -kx$ on suurin. Nopeus on suurin tasapainoasemassa. Siellä voima ja kiihtyvyys ovat nolla, ja kaikki energia on liike-energiaa."
+  }
+]

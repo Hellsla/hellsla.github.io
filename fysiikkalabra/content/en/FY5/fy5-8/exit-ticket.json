@@ -1,0 +1,14 @@
+[
+  {
+    "q": "Spring A is stiffer than spring B. Which spring has the steeper $(x, F_\\text{v})$ graph, and why?",
+    "a": "Spring A's. The gradient of the graph is the spring constant $k$, and stretching a stiffer spring the same distance needs a larger force, so its line rises more steeply."
+  },
+  {
+    "q": "A spring whose spring constant is $200\\,\\text{N/m}$ is first compressed $0.10\\,\\text{m}$ and then stretched $0.10\\,\\text{m}$. In which situation is more elastic potential energy stored in it?",
+    "a": "The energy is the same, $E_\\text{p} = \\tfrac{1}{2}\\cdot 200\\,\\tfrac{\\text{N}}{\\text{m}}\\cdot(0.10\\,\\text{m})^2 = 1.0\\,\\text{J}$ in both, because the displacement is squared and its sign does not matter. The direction of the force, on the other hand, is opposite."
+  },
+  {
+    "q": "A hand stretches a spring. Which two forces form a Newton's third law pair here, and which objects do they act on?",
+    "a": "The force of the hand on the spring, that is the force stretching the spring $\\overline{F}_\\text{v}$, acts on the spring, and the force of the spring on the hand $\\overline{F}$ acts on the hand. They are equal in magnitude and opposite in direction, but because they act on different objects, they do not cancel each other."
+  }
+]

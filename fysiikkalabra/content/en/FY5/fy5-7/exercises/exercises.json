@@ -1,0 +1,106 @@
+{
+  "level1": [
+    {
+      "id": "fy5-7-L1-01",
+      "level": 1,
+      "text": "The period of a weight oscillating on a spring is $0.40\\,\\text{s}$. What is the frequency of the oscillation?",
+      "answer": 2.5,
+      "unit": "Hz",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-7-L1-02",
+      "level": 1,
+      "text": "A guitar string vibrates at the frequency $196\\,\\text{Hz}$. What is the period of the vibration of the string? Give the answer in milliseconds.",
+      "answer": 5.1,
+      "unit": "ms",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-7-L1-03",
+      "level": 1,
+      "text": "The graph shows the displacement of a weight oscillating on a spring as a function of time. What is the amplitude of the oscillation?",
+      "figure": "fy5-7/l1-kuvaaja",
+      "answer": 2.5,
+      "unit": "cm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-7-L1-04",
+      "level": 1,
+      "text": "The pendulum of a pendulum clock makes $20$ full swings in $36\\,\\text{s}$. What is the period of the pendulum?",
+      "answer": 1.8,
+      "unit": "s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-7-L1-05",
+      "level": 1,
+      "text": "A weight oscillates on a spring, and the amplitude of the oscillation is $4.0\\,\\text{cm}$. How far does the weight travel during one period?",
+      "answer": 16,
+      "unit": "cm",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy5-7-L2-01",
+      "level": 2,
+      "text": "A cart on an air track is attached between two springs and oscillates along the track. The graph shows the displacement of the cart from the equilibrium position as a function of time according to the sine model. What is the displacement of the cart from the equilibrium position at the time $0.10\\,\\text{s}$?",
+      "figure": "fy5-7/l2-kuvaaja",
+      "answer": 2.9,
+      "unit": "cm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-7-L2-02",
+      "level": 2,
+      "text": "The sine fit $y = A \\sin(Bt + C) + D$ of Graphical Analysis Pro gave the coefficient $B = 12.6\\,\\tfrac{1}{\\text{s}}$ for the measurement of an oscillating weight. What is the frequency of the oscillation?",
+      "answer": 2.01,
+      "unit": "Hz",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-7-L2-03",
+      "level": 2,
+      "text": "The needle of a sewing machine moves up and down $900$ times a minute. What is the period of the motion of the needle? Give the answer in milliseconds.",
+      "answer": 67,
+      "unit": "ms",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-7-L2-04",
+      "level": 2,
+      "text": "A motion sensor measures the distance to a weight oscillating on a spring. The smallest measured distance is $32.0\\,\\text{cm}$ and the greatest $47.0\\,\\text{cm}$. What is the amplitude of the oscillation?",
+      "answer": 7.5,
+      "unit": "cm",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy5-7-L3-01",
+      "level": 3,
+      "text": "A weight oscillates sinusoidally with the period $1.2\\,\\text{s}$, and timing starts when it passes the equilibrium position going up. How long does it take before the weight is for the first time at half the amplitude above the equilibrium position?",
+      "answer": 0.1,
+      "unit": "s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-7-L3-02",
+      "level": 3,
+      "text": "A button is fixed to a disc rotating in a vertical plane at $15\\,\\text{cm}$ from the axis, and the disc rotates uniformly at $45$ revolutions per minute. The disc is lit from the side by horizontal, parallel light coming from far away, so the shadow of the button moves up and down on the wall beside it. How far from the middle of its motion is the shadow $0.20\\,\\text{s}$ after it passed the middle going up?",
+      "answer": 12,
+      "unit": "cm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-7-L3-03",
+      "level": 3,
+      "text": "Two weights oscillate side by side on different springs. The period of the first is $0.60\\,\\text{s}$ and that of the second $0.90\\,\\text{s}$. Both pass the equilibrium position going up at the same moment. How soon after that do they next pass the equilibrium position going up at the same time? The oscillation does not die out.",
+      "answer": 1.8,
+      "unit": "s",
+      "tolerance": 0.02
+    }
+  ]
+}

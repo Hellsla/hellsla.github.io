@@ -1063,7 +1063,8 @@
     "definition": "Kappaleen paino G on voima, joka kertoo Maan (tai muun taivaankappaleen) ja kappaleen välisen vuorovaikutuksen voimakkuuden. Paino lasketaan kaavalla G = mg ja mitataan newtoneina.",
     "lessons": [
       "fy3-1",
-      "fy4-6"
+      "fy4-6",
+      "fy5-5"
     ],
     "see_also": [
       "massa",
@@ -1114,7 +1115,8 @@
     "lessons": [
       "fy3-1",
       "fy1-6",
-      "fy4-2"
+      "fy4-2",
+      "fy5-5"
     ],
     "see_also": [
       "paino",
@@ -1873,7 +1875,8 @@
     "term": "gravitaatio",
     "definition": "Perusvuorovaikutus kaikkien massallisten kappaleiden välillä, aina vetävä. Pitää planeetat radoillaan ja kokoaa tähtiä ja galakseja; hallitsee suurissa mittakaavoissa.",
     "lessons": [
-      "fy1-1"
+      "fy1-1",
+      "fy5-5"
     ],
     "see_also": [
       "perusvuorovaikutus",
@@ -2480,6 +2483,914 @@
     ],
     "see_also": [
       "turvavyö"
+    ],
+    "locked": false
+  },
+  {
+    "term": "tasapaino",
+    "definition": "Kappale on tasapainossa, kun se pysyy levossa: siihen vaikuttavien voimien summa on nolla (tasapaino etenemisen suhteen) ja voimien momenttien summa minkä tahansa pisteen suhteen on nolla (tasapaino pyörimisen suhteen).",
+    "lessons": [
+      "fy5-2"
+    ],
+    "see_also": [
+      "momenttiehto",
+      "painopiste"
+    ],
+    "locked": false
+  },
+  {
+    "term": "momenttiehto",
+    "definition": "Tasapainoehto pyörimisen suhteen: levossa olevaan kappaleeseen vaikuttavien voimien momenttien summa on nolla, $\\Sigma M = 0$, mitä tahansa pistettä kohti laskettuna. Momenttipiste kannattaa valita tuntemattoman voiman vaikutuspisteeseen, jolloin sen momentti on nolla.",
+    "lessons": [
+      "fy5-2"
+    ],
+    "see_also": [
+      "tasapaino"
+    ],
+    "locked": false
+  },
+  {
+    "term": "painopiste",
+    "definition": "Piste, jossa kappaleen paino voidaan ajatella vaikuttavan, kun lasketaan painon momenttia. Tasa-aineisen ja symmetrisen kappaleen painopiste on sen keskipisteessä. Tuettu kappale pysyy pystyssä, kun painopisteen kautta kulkeva pystysuora kulkee tukipinnan kautta.",
+    "lessons": [
+      "fy5-2"
+    ],
+    "see_also": [
+      "tasapaino"
+    ],
+    "locked": false
+  },
+  {
+    "term": "momentti",
+    "definition": "Voiman vääntövaikutuksen suuruus kiertoakselin suhteen: voiman suuruuden ja voiman varren tulo, $M = Fr$. Yksikkö on newtonmetri ($\\text{Nm}$). Vastapäivään kiertävä momentti on positiivinen ja myötäpäivään kiertävä negatiivinen.",
+    "lessons": [
+      "fy5-1"
+    ],
+    "see_also": [
+      "vääntövaikutus",
+      "voiman varsi",
+      "kiertoakseli"
+    ],
+    "locked": false
+  },
+  {
+    "term": "vääntövaikutus",
+    "definition": "Voiman kyky kiertää kappaletta kiertoakselin ympäri. Se riippuu voiman suuruudesta, suunnasta ja vaikutuskohdasta, ja sen suuruutta mitataan momentilla.",
+    "lessons": [
+      "fy5-1"
+    ],
+    "see_also": [
+      "momentti"
+    ],
+    "locked": false
+  },
+  {
+    "term": "voiman varsi",
+    "definition": "Kiertoakselin kohtisuora etäisyys voiman vaikutussuorasta. Jos vaikutussuora kulkee akselin kautta, varsi on nolla eikä voima kierrä kappaletta.",
+    "lessons": [
+      "fy5-1"
+    ],
+    "see_also": [
+      "momentti",
+      "kiertoakseli"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kiertoakseli",
+    "definition": "Suora, jonka ympäri kappale kiertyy, esimerkiksi oven saranoiden kautta kulkeva suora tai mutterin pultti. Momentit lasketaan aina jonkin kiertoakselin suhteen.",
+    "lessons": [
+      "fy5-1"
+    ],
+    "see_also": [
+      "momentti",
+      "voiman varsi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "ympyräliike",
+    "definition": "Liike, jonka rata on ympyrä: kappale pysyy koko ajan samalla etäisyydellä, radan säteen päässä, keskipisteestä. Tasaisessa ympyräliikkeessä vauhti pysyy samana, mutta nopeuden suunta muuttuu koko ajan.",
+    "lessons": [
+      "fy5-3"
+    ],
+    "see_also": [
+      "ratanopeus",
+      "kierrosaika"
+    ],
+    "locked": false
+  },
+  {
+    "term": "ratanopeus",
+    "definition": "Nopeuden suuruus ympyräradalla: kuljettu matka jaettuna ajalla. Tasaisessa ympyräliikkeessä v = 2πr/T, missä r on radan säde ja T kierrosaika. Nopeus on radan tangentin suuntainen.",
+    "lessons": [
+      "fy5-3"
+    ],
+    "see_also": [
+      "ympyräliike",
+      "kierrosaika",
+      "pyörimistaajuus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kierrosaika",
+    "definition": "Aika, jossa ympyräliikkeessä oleva kappale kiertää radan kerran. Tunnus T, yksikkö sekunti.",
+    "lessons": [
+      "fy5-3"
+    ],
+    "see_also": [
+      "pyörimistaajuus",
+      "ratanopeus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "pyörimistaajuus",
+    "definition": "Kierrosten määrä aikayksikössä, kierrosajan käänteisluku f = 1/T. Yksikkö 1/s; käytännössä myös kierroksina minuutissa.",
+    "lessons": [
+      "fy5-3"
+    ],
+    "see_also": [
+      "kierrosaika",
+      "ratanopeus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "normaalikiihtyvyys",
+    "definition": "Tasaisessa ympyräliikkeessä olevan kappaleen kiihtyvyys $\\overline{a}_\\text{n}$, joka osoittaa kohti radan keskipistettä ja on kohtisuorassa nopeutta vastaan. Sen suuruus on $a_\\text{n} = \\tfrac{v^2}{r}$. Se muuttaa nopeuden suuntaa mutta ei vauhtia.",
+    "lessons": [
+      "fy5-4"
+    ],
+    "see_also": [
+      "keskeiskiihtyvyys",
+      "keskeisvoima",
+      "ympyräliike"
+    ],
+    "locked": false
+  },
+  {
+    "term": "keskeiskiihtyvyys",
+    "definition": "Toinen nimi normaalikiihtyvyydelle: tasaisessa ympyräliikkeessä kohti radan keskipistettä osoittava kiihtyvyys, suuruudeltaan $\\tfrac{v^2}{r}$.",
+    "lessons": [
+      "fy5-4"
+    ],
+    "see_also": [
+      "normaalikiihtyvyys",
+      "keskeisvoima"
+    ],
+    "locked": false
+  },
+  {
+    "term": "keskeisvoima",
+    "definition": "Ympyräliikkeessä olevaan kappaleeseen vaikuttavien voimien summa, joka osoittaa kohti radan keskipistettä; tasaisessa ympyräliikkeessä sen suuruus on $m\\tfrac{v^2}{r}$. Se ei ole oma voiman lajinsa, vaan todellisten voimien, kuten kitkan, jännitysvoiman tai painon, summa. Ulospäin osoittavaa keskipakoisvoimaa ei ole.",
+    "lessons": [
+      "fy5-4"
+    ],
+    "see_also": [
+      "normaalikiihtyvyys",
+      "keskeiskiihtyvyys"
+    ],
+    "locked": false
+  },
+  {
+    "term": "jaksollinen liike",
+    "definition": "Liike, joka toistuu samanlaisena yhtä pitkin väliajoin, esimerkiksi tasainen ympyräliike tai heilurin heilahtelu.",
+    "lessons": [
+      "fy5-7"
+    ],
+    "see_also": [
+      "värähtelyliike",
+      "jaksonaika"
+    ],
+    "locked": false
+  },
+  {
+    "term": "värähtelyliike",
+    "definition": "Jaksollinen liike, jossa kappale liikkuu edestakaisin tasapainoasemansa molemmin puolin, kuten jousen varassa värähtelevä punnus tai heiluri.",
+    "lessons": [
+      "fy5-7"
+    ],
+    "see_also": [
+      "jaksollinen liike",
+      "tasapainoasema",
+      "amplitudi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "tasapainoasema",
+    "definition": "Värähtelijän asema, jossa se pysyisi levossa; poikkeama mitataan siitä, ja siinä poikkeama on nolla.",
+    "lessons": [
+      "fy5-7"
+    ],
+    "see_also": [
+      "värähtelyliike",
+      "amplitudi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "jaksonaika",
+    "definition": "Yhden täyden värähdyksen tai kierroksen kesto: aika, jonka kuluttua kappale on taas samassa paikassa ja liikkuu samaan suuntaan. Tunnus T, yksikkö sekunti (s).",
+    "lessons": [
+      "fy5-7"
+    ],
+    "see_also": [
+      "taajuus",
+      "kierrosaika"
+    ],
+    "locked": false
+  },
+  {
+    "term": "taajuus",
+    "definition": "Täysien värähdysten määrä aikayksikössä, jaksonajan käänteisluku f = 1/T. Yksikkö hertsi, 1 Hz = 1 1/s.",
+    "lessons": [
+      "fy5-7"
+    ],
+    "see_also": [
+      "jaksonaika",
+      "pyörimistaajuus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "amplitudi",
+    "definition": "Värähtelijän suurin poikkeama tasapainoasemasta. Ääriasemien välinen etäisyys on kaksi kertaa amplitudi. Tunnus A.",
+    "lessons": [
+      "fy5-7"
+    ],
+    "see_also": [
+      "tasapainoasema",
+      "värähtelyliike"
+    ],
+    "locked": false
+  },
+  {
+    "term": "vaihe",
+    "definition": "Kohta, jossa värähdystä värähtelijä on tietyllä hetkellä. Sovitusmallissa A sin(Bt + C) + D vakio C kertoo vaiheen hetkellä t = 0; C on nolla, kun ajanotto alkaa tasapainoaseman ohituksesta positiiviseen suuntaan.",
+    "lessons": [
+      "fy5-7"
+    ],
+    "see_also": [
+      "jaksonaika"
+    ],
+    "locked": false
+  },
+  {
+    "term": "sinifunktion sovitus",
+    "definition": "Sinikäyrän x = A sin(2πt/T) valitseminen niin, että se kulkee mittauspisteiden joukon keskeltä; sovituksesta saadaan värähtelyn amplitudi ja jaksonaika.",
+    "lessons": [
+      "fy5-7"
+    ],
+    "see_also": [
+      "amplitudi",
+      "jaksonaika",
+      "suoran sovitus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kiertorata",
+    "definition": "Rata, jota pitkin kappale kiertää toista kappaletta gravitaation varassa, esimerkiksi satelliitin rata Maan ympäri tai Maan rata Auringon ympäri. Monet kiertoradat ovat lähes ympyröitä.",
+    "lessons": [
+      "fy5-6"
+    ],
+    "see_also": [
+      "satelliitti",
+      "gravitaatio"
+    ],
+    "locked": false
+  },
+  {
+    "term": "satelliitti",
+    "definition": "Kappale, joka kiertää toista, paljon massiivisempaa kappaletta gravitaation varassa. Kuu on Maan luonnollinen satelliitti; ihmisen rakentamia satelliitteja ovat esimerkiksi sää- ja GPS-satelliitit ja avaruusasema ISS.",
+    "lessons": [
+      "fy5-6"
+    ],
+    "see_also": [
+      "kiertorata"
+    ],
+    "locked": false
+  },
+  {
+    "term": "painottomuus",
+    "definition": "Tila, jossa kappaleeseen vaikuttaa vain gravitaatio ja se putoaa vapaasti, joten tukivoima on nolla. Paino eli gravitaatiovoima vaikuttaa painottomuudessakin; esimerkiksi avaruusaseman astronautit ovat painottomia, koska he ja asema putoavat samalla kiihtyvyydellä.",
+    "lessons": [
+      "fy5-6"
+    ],
+    "see_also": [
+      "vapaa pudotus",
+      "gravitaatio"
+    ],
+    "locked": false
+  },
+  {
+    "term": "gravitaatiolaki",
+    "definition": "Newtonin gravitaatiolaki: kaksi kappaletta vetävät toisiaan voimalla $F = \\gamma \\tfrac{m_1 m_2}{r^2}$, joka on suoraan verrannollinen kumpaankin massaan ja kääntäen verrannollinen keskipisteiden välisen etäisyyden neliöön. Voimat ovat yhtä suuret ja vastakkaissuuntaiset.",
+    "lessons": [
+      "fy5-5"
+    ],
+    "see_also": [
+      "gravitaatio",
+      "gravitaatiovakio",
+      "gravitaatiokenttä"
+    ],
+    "locked": false
+  },
+  {
+    "term": "gravitaatiovakio",
+    "definition": "Gravitaatiolain verrannollisuuskerroin $\\gamma = 6{,}674 \\cdot 10^{-11}\\,\\tfrac{\\text{N}\\cdot\\text{m}^2}{\\text{kg}^2}$ (englanniksi G). Se on kahden $1\\,\\text{kg}$:n kappaleen välisen voiman suuruus newtoneina, kun niiden etäisyys on $1\\,\\text{m}$.",
+    "lessons": [
+      "fy5-5"
+    ],
+    "see_also": [
+      "gravitaatiolaki"
+    ],
+    "locked": false
+  },
+  {
+    "term": "gravitaatiokenttä",
+    "definition": "Kappaleen ympärillä oleva kenttä, jossa jokaiseen kappaleeseen vaikuttaa gravitaatiovoima $\\overline{F} = m\\overline{g}$. Kentän voimakkuus $g = \\gamma \\tfrac{M}{r^2}$ osoittaa kohti kentän synnyttävän kappaleen keskipistettä, ja se on vapaasti putoavan kappaleen kiihtyvyys; yksikkö $\\text{m/s}^2$.",
+    "lessons": [
+      "fy5-5"
+    ],
+    "see_also": [
+      "gravitaatiolaki",
+      "putoamiskiihtyvyys",
+      "paino"
+    ],
+    "locked": false
+  },
+  {
+    "term": "harmoninen värähtely",
+    "definition": "Värähtely, jonka aiheuttaa harmoninen voima F = −kx: palauttava voima on suoraan verrannollinen poikkeamaan tasapainoasemasta ja osoittaa kohti sitä. Paikka ajan funktiona on siniaallon muotoinen käyrä, ja jaksonaika ei riipu amplitudista. Jousen ja kappaleen jaksonaika on T = 2π√(m/k).",
+    "lessons": [
+      "fy5-9"
+    ],
+    "see_also": [
+      "harmoninen voima",
+      "jaksonaika",
+      "amplitudi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "heiluri",
+    "definition": "Kiinnityskohdan alapuolella riippuva kappale, joka heilahtelee painovoiman vaikutuksesta tasapainoasemansa molemmin puolin. Matemaattisessa heilurissa pistemäinen kappale riippuu massattoman langan varassa; pienillä heilahduksilla sen jaksonaika on T = 2π√(l/g), eikä se riipu kappaleen massasta.",
+    "lessons": [
+      "fy5-9"
+    ],
+    "see_also": [
+      "harmoninen värähtely",
+      "jaksonaika"
+    ],
+    "locked": false
+  },
+  {
+    "term": "värähtelyn energia",
+    "definition": "Värähtelijän mekaaninen energia, liike-energian ja potentiaalienergian summa. Ilman kitkaa ja ilmanvastusta se säilyy; jousen ja kappaleen värähtelyssä se on E = ½kA², missä A on amplitudi. Ääriasennoissa energia on potentiaalienergiaa, tasapainoasemassa liike-energiaa.",
+    "lessons": [
+      "fy5-9"
+    ],
+    "see_also": [
+      "jousen potentiaalienergia",
+      "harmoninen värähtely"
+    ],
+    "locked": false
+  },
+  {
+    "term": "vaimeneminen",
+    "definition": "Värähtelyn amplitudin pieneneminen, kun kitka tai ilmanvastus muuttaa värähtelijän mekaanista energiaa sisäenergiaksi. Pienessä vaimenemisessa jaksonaika pysyy lähes samana.",
+    "lessons": [
+      "fy5-9"
+    ],
+    "see_also": [
+      "värähtelyn energia",
+      "amplitudi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "harmoninen voima",
+    "definition": "Voima, jonka suuruus on suoraan verrannollinen kappaleen poikkeamaan tasapainoasemasta ja joka osoittaa aina kohti tasapainoasemaa: $F = -kx$. Miinusmerkki kertoo, että voima on poikkeamaa vastakkaissuuntainen. Esimerkiksi jousen voima on harmoninen, kun jousta ei venytetä liikaa.",
+    "lessons": [
+      "fy5-8"
+    ],
+    "see_also": [
+      "jousivakio",
+      "tasapainoasema",
+      "harmoninen värähtely"
+    ],
+    "locked": false
+  },
+  {
+    "term": "jousivakio",
+    "definition": "Jousen jäykkyyttä kuvaava vakio $k$ lausekkeissa $F = -kx$ ja $F_\\text{v} = kx$: voima venymän metriä kohti, yksikkö $\\text{N/m}$. Se määritetään mittaamalla jousta venyttävän voiman ja venymän $(x, F_\\text{v})$-kuvaajan kulmakertoimena.",
+    "lessons": [
+      "fy5-8"
+    ],
+    "see_also": [
+      "harmoninen voima",
+      "jousen potentiaalienergia"
+    ],
+    "locked": false
+  },
+  {
+    "term": "jousen potentiaalienergia",
+    "definition": "Venytettyyn tai puristettuun jouseen varastoitunut energia $E_\\text{p} = \\tfrac{1}{2}kx^2$, missä $k$ on jousivakio ja $x$ venymä tai puristuma lepopituudesta. Se on venyttävän voiman tekemä työ eli $(x, F_\\text{v})$-kuvaajan alle jäävän kolmion pinta-ala.",
+    "lessons": [
+      "fy5-8"
+    ],
+    "see_also": [
+      "jousivakio",
+      "potentiaalienergia"
+    ],
+    "locked": false
+  },
+  {
+    "term": "superpositio",
+    "definition": "Aaltojen yhteisvaikutus: kun kaksi tai useampi aalto on samassa kohdassa samaan aikaan, väliaineen poikkeama on aaltojen poikkeamien summa, $y = y_1 + y_2$. Aallot jatkavat kohtaamisen jälkeen muuttumattomina.",
+    "lessons": [
+      "fy5-12"
+    ],
+    "see_also": [
+      "interferenssi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "interferenssi",
+    "definition": "Kahden tai useamman aallon yhteisvaikutus samassa kohdassa superpositioperiaatteen mukaan. Kahden samassa vaiheessa värähtelevän saman taajuuden lähteen aallot muodostavat pysyvän kuvion, jossa vahvistavan ja heikentävän interferenssin kohdat vuorottelevat.",
+    "lessons": [
+      "fy5-12"
+    ],
+    "see_also": [
+      "superpositio",
+      "vahvistava interferenssi",
+      "heikentävä interferenssi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "vahvistava interferenssi",
+    "definition": "Interferenssi, jossa aallot saapuvat samassa vaiheessa, harja harjan kanssa, ja summa-aallon amplitudi on aaltojen amplitudien summa. Kahden samassa vaiheessa olevan lähteen aalloilla se tapahtuu, kun matkaero on aallonpituuden monikerta, $\\Delta s = n\\lambda$.",
+    "lessons": [
+      "fy5-12"
+    ],
+    "see_also": [
+      "heikentävä interferenssi",
+      "matkaero"
+    ],
+    "locked": false
+  },
+  {
+    "term": "heikentävä interferenssi",
+    "definition": "Interferenssi, jossa aallot saapuvat vastakkaisessa vaiheessa, harja pohjan kanssa, ja summa-aallon amplitudi on amplitudien erotus, yhtä suurilla amplitudeilla nolla. Kahden samassa vaiheessa olevan lähteen aalloilla se tapahtuu, kun $\\Delta s = (n + \\tfrac{1}{2})\\lambda$.",
+    "lessons": [
+      "fy5-12"
+    ],
+    "see_also": [
+      "vahvistava interferenssi",
+      "solmuviiva"
+    ],
+    "locked": false
+  },
+  {
+    "term": "matkaero",
+    "definition": "Kahden aallon lähteistä samaan pisteeseen kulkemien matkojen erotus $\\Delta s = |s_1 - s_2|$. Matkaeron ja aallonpituuden suhde ratkaisee, vahvistavatko vai heikentävätkö aallot toisiaan.",
+    "lessons": [
+      "fy5-12"
+    ],
+    "see_also": [
+      "interferenssi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "solmuviiva",
+    "definition": "Kahden samassa vaiheessa olevan aaltolähteen interferenssikuviossa viiva, jonka jokaisessa pisteessä interferenssi on heikentävä eli $\\Delta s = (n + \\tfrac{1}{2})\\lambda$. Yhtä suurten amplitudien aalloilla väliaine pysyy solmuviivalla lähes levossa.",
+    "lessons": [
+      "fy5-12"
+    ],
+    "see_also": [
+      "heikentävä interferenssi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "Fourier-muunnos",
+    "definition": "Menetelmä, joka jakaa signaalin siniaaltoihin ja kertoo, mitkä taajuudet signaalissa on ja kuinka suurilla amplitudeilla. Tulos esitetään spektrinä; laskimet ja ohjelmat käyttävät nopeaa Fourier-muunnosta (FFT).",
+    "lessons": [
+      "fy5-12"
+    ],
+    "see_also": [
+      "superpositio"
+    ],
+    "locked": false
+  },
+  {
+    "term": "aaltoliike",
+    "definition": "Häiriön eli poikkeaman tasapainoasemasta eteneminen väliaineessa. Väliaineen hiukkaset värähtelevät tasapainoasemansa ympärillä, ja aalto kuljettaa energiaa mutta ei ainetta.",
+    "lessons": [
+      "fy5-10"
+    ],
+    "see_also": [
+      "poikittainen aalto",
+      "pitkittäinen aalto",
+      "aallon nopeus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "aallonpituus",
+    "definition": "Kahden peräkkäisen aallonharjan tai tihentymän välinen etäisyys eli lyhin etäisyys kahden samalla tavalla liikkuvan väliaineen kohdan välillä. Tunnus λ, yksikkö metri. Yhden jaksonajan aikana aalto etenee yhden aallonpituuden.",
+    "lessons": [
+      "fy5-10"
+    ],
+    "see_also": [
+      "aallon nopeus",
+      "jaksonaika"
+    ],
+    "locked": false
+  },
+  {
+    "term": "aallon nopeus",
+    "definition": "Nopeus, jolla aalto etenee väliaineessa. Se riippuu väliaineesta, ja aaltoliikkeen perusyhtälön mukaan v = fλ, missä f on taajuus ja λ aallonpituus.",
+    "lessons": [
+      "fy5-10"
+    ],
+    "see_also": [
+      "aallonpituus",
+      "taajuus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "poikittainen aalto",
+    "definition": "Aalto, jossa väliaineen hiukkaset värähtelevät kohtisuoraan aallon etenemissuuntaa vastaan, kuten aalto narussa.",
+    "lessons": [
+      "fy5-10"
+    ],
+    "see_also": [
+      "pitkittäinen aalto",
+      "aaltoliike"
+    ],
+    "locked": false
+  },
+  {
+    "term": "pitkittäinen aalto",
+    "definition": "Aalto, jossa väliaineen hiukkaset värähtelevät aallon etenemissuunnan suuntaisesti, jolloin väliaineeseen syntyy eteneviä tihentymiä ja harvennuksia. Esimerkiksi ääni ilmassa on pitkittäinen aalto.",
+    "lessons": [
+      "fy5-10"
+    ],
+    "see_also": [
+      "poikittainen aalto",
+      "aaltoliike"
+    ],
+    "locked": false
+  },
+  {
+    "term": "seisova aalto",
+    "definition": "Aaltoliike, joka syntyy, kun kaksi samanlaista aaltoa etenee vastakkaisiin suuntiin, esimerkiksi aalto ja sen heijastus, ja ne summautuvat. Solmukohdat pysyvät paikallaan ja kuvut värähtelevät suurimmalla amplitudilla; aaltohuippu ei etene.",
+    "lessons": [
+      "fy5-13"
+    ],
+    "see_also": [
+      "solmu",
+      "kupu",
+      "ominaistaajuus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "solmu",
+    "definition": "Seisovan aallon kohta, jossa poikkeama on joka hetki nolla. Vierekkäisten solmujen etäisyys on puoli aallonpituutta.",
+    "lessons": [
+      "fy5-13"
+    ],
+    "see_also": [
+      "kupu",
+      "seisova aalto"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kupu",
+    "definition": "Seisovan aallon kohta kahden solmun puolivälissä, jossa värähtelyn amplitudi on suurin. Solmusta viereiseen kupuun on neljännes aallonpituutta.",
+    "lessons": [
+      "fy5-13"
+    ],
+    "see_also": [
+      "solmu",
+      "seisova aalto"
+    ],
+    "locked": false
+  },
+  {
+    "term": "ominaistaajuus",
+    "definition": "Taajuus, jolla kappaleeseen, kuten kieleen tai putken ilmapatsaaseen, voi syntyä seisova aalto. Kahdesta päästä kiinnitetyn kielen ominaistaajuudet ovat f_n = n·v/(2L).",
+    "lessons": [
+      "fy5-13"
+    ],
+    "see_also": [
+      "perustaajuus",
+      "resonanssi",
+      "yläsävel"
+    ],
+    "locked": false
+  },
+  {
+    "term": "perustaajuus",
+    "definition": "Kappaleen alin ominaistaajuus. Soittimen sävelkorkeus määräytyy perustaajuudesta.",
+    "lessons": [
+      "fy5-13"
+    ],
+    "see_also": [
+      "ominaistaajuus",
+      "yläsävel"
+    ],
+    "locked": false
+  },
+  {
+    "term": "resonanssi",
+    "definition": "Ilmiö, jossa värähtelijää herätetään sen ominaistaajuudella, jolloin jokainen jakso vahvistaa liikettä ja värähtelyn amplitudi kasvaa suureksi.",
+    "lessons": [
+      "fy5-13"
+    ],
+    "see_also": [
+      "ominaistaajuus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "yläsävel",
+    "definition": "Perustaajuutta suurempi ominaistaajuus. Kielen yläsävelet ovat perustaajuuden monikertoja, suljetun putken vain sen parittomia kertoja.",
+    "lessons": [
+      "fy5-13"
+    ],
+    "see_also": [
+      "perustaajuus",
+      "ominaistaajuus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "heijastuminen",
+    "definition": "Aallon palaaminen takaisin, kun se kohtaa väliaineen rajan tai esteen, kuten seinän tai köyden pään. Köyden kiinteästä päästä pulssi heijastuu kääntyneenä, vapaasta päästä kääntymättä.",
+    "lessons": [
+      "fy5-11"
+    ],
+    "see_also": [
+      "heijastuslaki"
+    ],
+    "locked": false
+  },
+  {
+    "term": "heijastuslaki",
+    "definition": "Heijastuskulma on yhtä suuri kuin tulokulma, β = α, kun molemmat mitataan pinnan normaalista. Tuleva säde, heijastunut säde ja normaali ovat samassa tasossa.",
+    "lessons": [
+      "fy5-11"
+    ],
+    "see_also": [
+      "heijastuminen",
+      "Huygensin periaate"
+    ],
+    "locked": false
+  },
+  {
+    "term": "Huygensin periaate",
+    "definition": "Aaltorintaman jokainen piste toimii uuden alkeisaallon lähteenä, ja hetken kuluttua uusi aaltorintama sivuaa kaikkia alkeisaaltoja. Periaate selittää aallon heijastumisen ja diffraktion.",
+    "lessons": [
+      "fy5-11"
+    ],
+    "see_also": [
+      "diffraktio",
+      "heijastuslaki"
+    ],
+    "locked": false
+  },
+  {
+    "term": "diffraktio",
+    "definition": "Aallon taipuminen raon tai esteen taakse, alueelle, jonne suoraan etenevä aalto ei osuisi. Diffraktio on voimakasta, kun raon tai esteen leveys on aallonpituuden suuruusluokkaa tai pienempi.",
+    "lessons": [
+      "fy5-11"
+    ],
+    "see_also": [
+      "Huygensin periaate"
+    ],
+    "locked": false
+  },
+  {
+    "term": "intensiteetti",
+    "definition": "Pinnan läpi kulkeva aallon teho jaettuna pinnan pinta-alalla, I = P/A, kun pinta on kohtisuorassa aallon etenemissuuntaan. Yksikkö W/m². Pistemäisen lähteen intensiteetti pienenee etäisyyden neliön mukaan.",
+    "lessons": [
+      "fy5-15"
+    ],
+    "see_also": [
+      "intensiteettitaso",
+      "kuulokynnys"
+    ],
+    "locked": false
+  },
+  {
+    "term": "intensiteettitaso",
+    "definition": "Äänen voimakkuuden logaritminen mitta L = 10 dB · lg(I/I₀), joka vertaa intensiteettiä I kuulokynnykseen I₀. Kymmenkertainen intensiteetti lisää tasoa 10 dB ja kaksinkertainen noin 3 dB.",
+    "lessons": [
+      "fy5-15"
+    ],
+    "see_also": [
+      "desibeli",
+      "intensiteetti",
+      "kuulokynnys"
+    ],
+    "locked": false
+  },
+  {
+    "term": "desibeli",
+    "definition": "Intensiteettitason yksikkö dB. Kuulokynnyksen taso on 0 dB ja kipukynnyksen noin 120 dB. Usean riippumattoman äänilähteen desibelejä ei lasketa yhteen, vaan yhteistaso lasketaan intensiteettien summasta.",
+    "lessons": [
+      "fy5-15"
+    ],
+    "see_also": [
+      "intensiteettitaso"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kuulokynnys",
+    "definition": "Heikoimman äänen intensiteetti, jonka normaalikuuloinen ihminen erottaa noin 1000 Hz:n taajuudella, I₀ = 1,0 · 10⁻¹² W/m². Se on intensiteettitason vertailuarvo, jota vastaa taso 0 dB. Kuulokynnys ei tarkoita hiljaisuutta.",
+    "lessons": [
+      "fy5-15"
+    ],
+    "see_also": [
+      "intensiteettitaso",
+      "desibeli"
+    ],
+    "locked": false
+  },
+  {
+    "term": "ultraääni",
+    "definition": "Ääni, jonka taajuus on yli 20 kHz eli liian suuri ihmisen kuultavaksi. Lääketieteellisessä kuvauksessa käytetään taajuuksia noin 2–15 MHz: kudosten rajapinnoilta heijastuneiden kaikujen kulkuajasta saadaan rajapintojen syvyys.",
+    "lessons": [
+      "fy5-17",
+      "fy5-14"
+    ],
+    "see_also": [
+      "pitkittäinen aalto"
+    ],
+    "locked": false
+  },
+  {
+    "term": "maanjäristysaalto",
+    "definition": "Maanjäristyksessä syntyvä mekaaninen aalto. Maan sisäosien läpi etenevät pitkittäinen P-aalto, joka on nopein, ja poikittainen S-aalto, joka ei etene nesteessä; pintaa pitkin etenevät hitaammat pinta-aallot.",
+    "lessons": [
+      "fy5-17"
+    ],
+    "see_also": [
+      "pitkittäinen aalto",
+      "poikittainen aalto"
+    ],
+    "locked": false
+  },
+  {
+    "term": "melu",
+    "definition": "Ääni, jota ei haluta kuulla tai joka on haitallista. Kuulolle haitallisuus riippuu äänen tasosta ja altistuksen kestosta: jokainen $3\\,\\text{dB}$:n nousu puolittaa ajan, jossa sama annos kertyy.",
+    "lessons": [
+      "fy5-16"
+    ],
+    "see_also": [
+      "jälkikaiunta"
+    ],
+    "locked": false
+  },
+  {
+    "term": "jälkikaiunta",
+    "definition": "Tilassa heijastuvan äänen hiipuminen sen jälkeen, kun äänilähde on vaiennut. Jälkikaiunta-aika on aika, jossa äänitaso laskee $60\\,\\text{dB}$; ääntä vaimentavat pinnat lyhentävät sitä.",
+    "lessons": [
+      "fy5-16"
+    ],
+    "see_also": [
+      "heijastuminen",
+      "melu"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kaiutin",
+    "definition": "Laite, joka muuttaa sähköisen signaalin ääneksi: vaihtovirta kulkee magneetin navan ympärillä olevassa kelassa, ja kelaan kiinnitetty kartio värähtelee ja synnyttää ääniaallon. Suurin osa sähköenergiasta muuttuu sisäenergiaksi.",
+    "lessons": [
+      "fy5-16"
+    ],
+    "see_also": [
+      "mikrofoni"
+    ],
+    "locked": false
+  },
+  {
+    "term": "mikrofoni",
+    "definition": "Laite, joka muuttaa äänen sähköiseksi signaaliksi: äänen paineenvaihtelut liikuttavat kalvoa, ja kalvon liike muutetaan jännitteeksi, joka vaihtelee samassa tahdissa kuin ääni.",
+    "lessons": [
+      "fy5-16"
+    ],
+    "see_also": [
+      "kaiutin"
+    ],
+    "locked": false
+  },
+  {
+    "term": "ääni",
+    "definition": "Väliaineessa etenevä mekaaninen aalto, kaasussa ja nesteessä pitkittäinen paineaalto, jossa tihentymät ja harvennukset etenevät. Ääni tarvitsee väliaineen; tyhjiössä se ei etene.",
+    "lessons": [
+      "fy5-14"
+    ],
+    "see_also": [
+      "pitkittäinen aalto",
+      "äänen nopeus",
+      "äänenkorkeus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "äänen nopeus",
+    "definition": "Nopeus, jolla ääni etenee väliaineessa. Se riippuu väliaineesta ja kaasussa lämpötilasta: ilmassa noin 340 m/s (noin 15 °C), vedessä noin 1480 m/s. Määritetään mittaamalla äänen kulkuaika tunnetulla matkalla.",
+    "lessons": [
+      "fy5-14"
+    ],
+    "see_also": [
+      "ääni"
+    ],
+    "locked": false
+  },
+  {
+    "term": "äänenkorkeus",
+    "definition": "Äänen kuultu korkeus, joka määräytyy taajuudesta, soittimen äänessä perustaajuudesta: suurempi taajuus, korkeampi ääni. Taajuuden kaksinkertaistuminen nostaa ääntä oktaavin.",
+    "lessons": [
+      "fy5-14"
+    ],
+    "see_also": [
+      "perustaajuus",
+      "sointiväri"
+    ],
+    "locked": false
+  },
+  {
+    "term": "sointiväri",
+    "definition": "Äänen laatu, joka erottaa kaksi samankorkuista ääntä toisistaan. Se riippuu siitä, kuinka voimakkaita yläsävelet ovat perustaajuuteen verrattuna, ja näkyy äänen FFT-spektrissä.",
+    "lessons": [
+      "fy5-14"
+    ],
+    "see_also": [
+      "yläsävel",
+      "harmoninen sarja"
+    ],
+    "locked": false
+  },
+  {
+    "term": "harmoninen sarja",
+    "definition": "Taajuudet f_n = n·f_1 (n = 1, 2, 3, …) eli perustaajuus ja sen kokonaislukukerrat. Kielen ja molemmista päistä avoimen putken ominaistaajuudet muodostavat harmonisen sarjan.",
+    "lessons": [
+      "fy5-14"
+    ],
+    "see_also": [
+      "perustaajuus",
+      "yläsävel",
+      "sointiväri"
+    ],
+    "locked": false
+  },
+  {
+    "term": "infraääni",
+    "definition": "Ääni, jonka taajuus on alle noin 20 Hz eli alle ihmisen kuuloalueen. Sitä syntyy esimerkiksi maanjäristyksissä ja ukkosessa.",
+    "lessons": [
+      "fy5-14"
+    ],
+    "see_also": [
+      "ultraääni",
+      "ääni"
+    ],
+    "locked": false
+  },
+  {
+    "term": "huojunta",
+    "definition": "Kahden lähes samantaajuisen äänen summan voimakkuuden jaksollinen vaihtelu. Huojuntataajuus on f_h = |f_1 − f_2|.",
+    "lessons": [
+      "fy5-14"
+    ],
+    "see_also": [
+      "interferenssi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "Doppler-ilmiö",
+    "definition": "Kuullun taajuuden muutos, kun äänilähde tai kuulija liikkuu väliaineen suhteen: lähestyminen nostaa ja loittoneminen laskee taajuutta. Liikkuvalle lähteelle f = f_0·v/(v ∓ v_s), liikkuvalle kuulijalle f = f_0·(v ± v_h)/v.",
+    "lessons": [
+      "fy5-14"
+    ],
+    "see_also": [
+      "ääni"
     ],
     "locked": false
   }

@@ -1,0 +1,24 @@
+{
+  "id": "fy5-16",
+  "course": "FY5",
+  "title": "Ääni ympäristössämme",
+  "goals": [
+    "LOPS FY5: ääni aaltoliikkeenä, äänen intensiteettitaso, äänen ominaisuudet ja eteneminen",
+    "Temaattinen tarkastelu: melun haittavaikutukset ja kuulon suojaaminen",
+    "Temaattinen tarkastelu: akustiikka ja äänentoisto",
+    "Täsmennys: melun haitat ja vähennyskeinot, heijastuminen ja jälkikaiunta tiloissa, kaiuttimen ja mikrofonin periaate",
+    "Laaja-alainen: hyvinvointiosaaminen"
+  ],
+  "prerequisites": [
+    "fy5-15"
+  ],
+  "glossary": [
+    "melu",
+    "jälkikaiunta",
+    "kaiutin",
+    "mikrofoni"
+  ],
+  "sim": false,
+  "solutions": "all",
+  "image": false
+}

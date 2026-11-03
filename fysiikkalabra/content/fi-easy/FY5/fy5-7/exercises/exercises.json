@@ -1,0 +1,106 @@
+{
+  "level1": [
+    {
+      "id": "fy5-7-L1-01",
+      "level": 1,
+      "text": "Jousen varassa värähtelevän punnuksen jaksonaika on $0{,}40\\,\\text{s}$. Mikä on värähtelyn taajuus?",
+      "answer": 2.5,
+      "unit": "Hz",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-7-L1-02",
+      "level": 1,
+      "text": "Kitaran kieli värähtelee taajuudella $196\\,\\text{Hz}$. Mikä on kielen värähtelyn jaksonaika? Anna vastaus millisekunteina.",
+      "answer": 5.1,
+      "unit": "ms",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-7-L1-03",
+      "level": 1,
+      "text": "Kuvaaja esittää jousen varassa värähtelevän punnuksen poikkeamaa ajan funktiona. Mikä on värähtelyn amplitudi?",
+      "figure": "fy5-7/l1-kuvaaja",
+      "answer": 2.5,
+      "unit": "cm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-7-L1-04",
+      "level": 1,
+      "text": "Heilurikellon heiluri tekee $20$ täyttä heilahdusta $36\\,\\text{s}$:ssa. Mikä on heilurin jaksonaika?",
+      "answer": 1.8,
+      "unit": "s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-7-L1-05",
+      "level": 1,
+      "text": "Punnus värähtelee jousen varassa, ja värähtelyn amplitudi on $4{,}0\\,\\text{cm}$. Kuinka pitkän matkan punnus kulkee yhden jaksonajan aikana?",
+      "answer": 16,
+      "unit": "cm",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy5-7-L2-01",
+      "level": 2,
+      "text": "Ilmatyynyradalla oleva vaunu on kiinnitetty kahden jousen väliin, ja se värähtelee radan suunnassa. Kuvaaja esittää vaunun poikkeamaa tasapainoasemasta ajan funktiona sinimallin mukaan. Mikä on vaunun poikkeama tasapainoasemasta hetkellä $0{,}10\\,\\text{s}$?",
+      "figure": "fy5-7/l2-kuvaaja",
+      "answer": 2.9,
+      "unit": "cm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-7-L2-02",
+      "level": 2,
+      "text": "Graphical Analysis Pron sinisovitus $y = A \\sin(Bt + C) + D$ antoi värähtelevän punnuksen mittaukselle kertoimen $B = 12{,}6\\,\\tfrac{1}{\\text{s}}$. Mikä on värähtelyn taajuus?",
+      "answer": 2.01,
+      "unit": "Hz",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-7-L2-03",
+      "level": 2,
+      "text": "Ompelukoneen neula liikkuu ylös ja alas $900$ kertaa minuutissa. Mikä on neulan liikkeen jaksonaika? Anna vastaus millisekunteina.",
+      "answer": 67,
+      "unit": "ms",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-7-L2-04",
+      "level": 2,
+      "text": "Liiketunnistin mittaa etäisyyden jousen varassa värähtelevään punnukseen. Pienin mitattu etäisyys on $32{,}0\\,\\text{cm}$ ja suurin $47{,}0\\,\\text{cm}$. Mikä on värähtelyn amplitudi?",
+      "answer": 7.5,
+      "unit": "cm",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy5-7-L3-01",
+      "level": 3,
+      "text": "Punnus värähtelee sinimuotoisesti jaksonajalla $1{,}2\\,\\text{s}$. Ajanotto alkaa, kun punnus ohittaa tasapainoaseman ylöspäin. Kuinka kauan kestää, ennen kuin punnus on ensimmäisen kerran puolen amplitudin korkeudella tasapainoaseman yläpuolella?",
+      "answer": 0.1,
+      "unit": "s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-7-L3-02",
+      "level": 3,
+      "text": "Pystysuorassa tasossa pyörivään kiekkoon on kiinnitetty nappi $15\\,\\text{cm}$:n päähän akselista. Kiekko pyörii tasaisesti $45$ kierrosta minuutissa. Kiekkoa valaistaan sivulta kaukaa tulevalla vaakasuoralla, yhdensuuntaisella valolla. Napin varjo liikkuu siksi viereisellä seinällä ylös ja alas. Kuinka kaukana varjo on liikkeensä keskikohdasta $0{,}20\\,\\text{s}$ sen jälkeen, kun se ohitti keskikohdan ylöspäin?",
+      "answer": 12,
+      "unit": "cm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-7-L3-03",
+      "level": 3,
+      "text": "Kaksi punnusta värähtelee vierekkäin eri jousissa. Ensimmäisen jaksonaika on $0{,}60\\,\\text{s}$ ja toisen $0{,}90\\,\\text{s}$. Molemmat ohittavat tasapainoaseman ylöspäin samalla hetkellä. Kuinka pian ne seuraavan kerran ohittavat tasapainoaseman ylöspäin yhtä aikaa? Värähtely ei vaimene.",
+      "answer": 1.8,
+      "unit": "s",
+      "tolerance": 0.02
+    }
+  ]
+}

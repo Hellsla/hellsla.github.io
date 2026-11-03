@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Mitä aalto kuljettaa lähteestä kauemmas, ja mitä se ei kuljeta?",
+    "a": "Aalto kuljettaa energiaa mutta ei ainetta. Väliaineen hiukkaset värähtelevät tasapainoasemansa ympärillä. Eteenpäin siirtyy vain häiriö eli värähtelyn vaihe."
+  },
+  {
+    "q": "Samaa narua heilutetaan kolme kertaa tiheämmin kuin äsken, eikä narun jännitys muutu. Miten aallonpituus muuttuu?",
+    "a": "Aallonpituus on kolmasosa entisestä. Nopeus $v = f\\lambda$ riippuu narusta, joten se ei muutu. Kun $f$ kolminkertaistuu, $\\lambda = \\tfrac{v}{f}$ pienenee kolmasosaan."
+  }
+]

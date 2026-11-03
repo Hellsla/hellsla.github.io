@@ -1,0 +1,21 @@
+{
+  "id": "fy5-17",
+  "course": "FY5",
+  "title": "Soveltava luku: ultraäänikuvaus ja aallot luonnossa",
+  "goals": [
+    "LOPS FY5: mekaanisten aaltojen synty, eteneminen ja heijastuminen",
+    "Temaattinen tarkastelu: ultraäänikuvaus",
+    "Täsmennys: soveltava luku, ei kertausta: ultraäänen heijastuminen kudosten rajapinnoilta ja syvyys kulkuajasta; maanjäristysaallot ja muut aallot luonnossa"
+  ],
+  "prerequisites": [
+    "fy5-10",
+    "fy5-14"
+  ],
+  "glossary": [
+    "ultraääni",
+    "maanjäristysaalto"
+  ],
+  "sim": false,
+  "solutions": "all",
+  "image": false
+}

@@ -1,0 +1,10 @@
+[
+  {
+    "q": "On a space station an astronaut floats, although their weight is almost as large as at the surface of the Earth. Why does the astronaut float?",
+    "a": "The astronaut and the station are in free fall: only gravity acts on each, and each gets the same acceleration towards the Earth. The floor therefore does not press on the astronaut, and the support force is zero. This is weightlessness; gravity acts all the time."
+  },
+  {
+    "q": "Name one situation in which the model of uniform circular motion does not suit the description of the orbit of a body, and give a reason.",
+    "a": "For example Halley's comet: its distance from the Sun varies from about $88\\,\\text{million km}$ to about $5250\\,\\text{million km}$, so the orbit is very elongated and not a circle. The model does not suit either if the speed of a satellite is not the circular-orbit speed of its orbit or if air resistance clearly brakes it."
+  }
+]

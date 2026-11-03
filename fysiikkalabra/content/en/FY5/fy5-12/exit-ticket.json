@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Write the conditions for constructive and destructive interference for two sources of the same frequency and in phase. What do the symbols mean?",
+    "a": "Constructive: $\\Delta s = n\\lambda$, destructive: $\\Delta s = \\left(n + \\tfrac{1}{2}\\right)\\lambda$, where $n = 0, 1, 2, \\ldots$ The path difference $\\Delta s = |s_1 - s_2|$ is the difference of the sources' distances from the point considered and $\\lambda$ is the wavelength."
+  },
+  {
+    "q": "Two loudspeakers play the same sound in phase. Why is the sound loud at all frequencies on the perpendicular bisector of the loudspeakers, which is equally far from both?",
+    "a": "Every point of the perpendicular bisector is equally far from both loudspeakers, so the path difference is $\\Delta s = 0 = 0 \\cdot \\lambda$. The waves always arrive in phase, and the condition $\\Delta s = n\\lambda$ is met with $n = 0$ whatever the wavelength."
+  }
+]

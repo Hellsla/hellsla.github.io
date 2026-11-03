@@ -131,7 +131,9 @@
     const act = activeExp.ex.closest('.activity'); act.classList.add('is-active');
     if (simContext) {
       const sum = act.parentElement.closest('details')?.querySelector(':scope > summary');   // an optional experiment's title is its box's summary
-      const title = act.querySelector('h3')?.textContent.trim() || (sum ? [...sum.childNodes].filter((n) => !n.classList?.contains('opt-tag')).map((n) => n.textContent).join('').trim() : '');
+      const shown = (n) => { if (n.nodeType !== 1) return n.textContent; const c = n.cloneNode(true); c.querySelectorAll('.katex-mathml').forEach((m) => m.remove()); return c.textContent; };   // visible text only: KaTeX also carries hidden MathML
+      const h3 = act.querySelector('h3');
+      const title = (h3 ? shown(h3).trim() : '') || (sum ? [...sum.childNodes].filter((n) => !n.classList?.contains('opt-tag')).map(shown).join('').trim() : '');
       simContext.innerHTML = msg('sim_in_use'); const a = simContext.querySelector('a'); a.href = '#' + activeExp.id; a.textContent = title;
     }
   };

@@ -1,0 +1,412 @@
+{
+  "version": 1,
+  "contribution": "Ympyräliikkeessä nopeuden suunta muuttuu koko ajan, vaikka vauhti pysyy samana, ja kappale jatkaa tangentin suuntaan, kun sitä radalla pitävä voima lakkaa. Ratanopeus lasketaan säteestä ja kierrosajasta kaavalla $v = \\tfrac{2\\pi r}{T}$.",
+  "learn": [
+    "selittämään, miksi nopeus muuttuu ympyräliikkeessä, vaikka vauhti pysyy samana.",
+    "päättelemään, mihin suuntaan kappale jatkaa, kun sitä ympyräradalla pitävä voima lakkaa.",
+    "laskemaan ratanopeuden säteestä ja kierrosajasta tai pyörimistaajuudesta."
+  ],
+  "prior": [
+    "Nopeus on vektori, jolla on suuruus ja suunta, ja tasaisessa liikkeessä kappale kulkee yhtä pitkän matkan jokaisessa yhtä pitkässä ajassa (luku *Paikka, nopeus ja tasainen liike kuvaajina*)",
+    "Jos kappaleeseen vaikuttavien voimien summa on nolla, kappale on levossa tai tasaisessa suoraviivaisessa liikkeessä (luku *Vuorovaikutus ja voima: Newtonin ensimmäinen ja kolmas laki*)",
+    "Kiihtyvyys kertoo, kuinka nopeasti kappaleen nopeus muuttuu (luku *Kiihtyvyys ja tasaisesti kiihtyvä liike*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Leikkikentän karuselli pyörii tasaisesti. Aino seisoo aivan reunalla, Eetu keskitangon vieressä. Kumpikin tekee kierroksen samassa ajassa, mutta Aino tuntee tuulen kasvoillaan ja joutuu pitämään kaiteesta kaksin käsin kiinni, kun Eetu seisoo melkein rennosti. Kun Ainon ote lipsahtaa, hän putoaa hiekalle.",
+      "question": "Jos karusellin kaikki kohdat tekevät kierroksen yhtä nopeasti, miksi reunalla liikutaan lujempaa, ja mihin suuntaan otteensa menettänyt lähtee?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Kertaa: liike ilman kokonaisvoimaa",
+      "prompt": "Jääkiekko liukuu jäällä, kun maila ei enää kosketa sitä. Kitka ja ilmanvastus oletetaan merkityksettömän pieniksi. Miten kiekko liikkuu?",
+      "choices": [
+        {
+          "text": "Suoraan ja tasaisella vauhdilla, koska siihen vaikuttavien voimien summa on nolla.",
+          "correct": true,
+          "feedback": "Oikein. Paino ja jään tukivoima kumoavat toisensa, eikä vaakasuunnassa vaikuta voimaa, joten Newtonin ensimmäisen lain mukaan kiekon nopeus ei muutu: ei suuruus eikä suunta (luku *Vuorovaikutus ja voima: Newtonin ensimmäinen ja kolmas laki*). Tänään tarkastellaan, mitä tarvitaan, jotta suunta muuttuu."
+        },
+        {
+          "text": "Se hidastuu vähitellen, koska mailan antama voima kuluu kiekosta loppuun.",
+          "feedback": "Kiekkoon ei jää mailan voimaa, joka kuluisi. Voima on vuorovaikutus, ja se loppuu, kun maila ei enää kosketa kiekkoa (luku *Vuorovaikutus ja voima: Newtonin ensimmäinen ja kolmas laki*). Kun voimien summa on nolla, nopeus pysyy samana."
+        },
+        {
+          "text": "Se kaartaa vähitellen siihen suuntaan, johon mailaa viimeksi käännettiin.",
+          "feedback": "Kaartaminen tarkoittaa, että nopeuden suunta muuttuu, ja siihen tarvitaan kokonaisvoima. Kun mikään ei vaikuta kiekkoon vaakasuunnassa, se liikkuu suoraan."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 1: naru katkeaa",
+      "layout": "figures",
+      "prompt": "Kiekko on sidottu naruun, jonka toinen pää on kiinni jäähän lyödyssä tapissa. Kiekko kiertää tappia tasaisesti vastapäivään, ja kuvissa harmaa kaari näyttää sen liikkeen suunnan. Naru katkeaa juuri, kun kiekko on ympyröidyssä kohdassa. Jään kitka oletetaan pieneksi. Mitä reittiä kiekko kulkee katkeamisen jälkeen?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "Suoraan radan tangentin suuntaan.",
+          "figure": "fy5-3/opt-tangent",
+          "feedback": "Mallin arvot tukevat tätä: kiekon reitti katkeamisen jälkeen muodostaa narun suunnan kanssa kulman $90{,}0^\\circ$, ja vauhti katkeamisen jälkeen on sama kuin ratanopeus ennen sitä, esimerkiksi $3{,}14\\,\\text{m/s}$. Kun naru ei enää vedä, kiekkoon ei vaikuta vaakasuunnassa voimaa, joten se jatkaa katkeamishetken nopeudella, ja se nopeus oli tangentin suuntainen.",
+          "correct": true
+        },
+        {
+          "text": "Suoraan poispäin tapista narun suuntaan.",
+          "figure": "fy5-3/opt-radial",
+          "feedback": "Mallin arvot kumoavat tämän: reitti muodostaa narun suunnan kanssa kulman $90{,}0^\\circ$, ei $0^\\circ$. Mikään voima ei työnnä kiekkoa ulospäin. Ennen katkeamista kiekon nopeus osoitti radan tangentin suuntaan, ja ilman voimaa nopeus pysyy sellaisena."
+        },
+        {
+          "text": "Vielä jonkin matkaa samaa ympyrärataa.",
+          "figure": "fy5-3/opt-curve",
+          "feedback": "Mallin arvot kumoavat tämän: kiekko lähtee heti suoraan, kulmassa $90{,}0^\\circ$ narun suuntaan nähden. Kaartaminen vaatisi, että nopeuden suunta muuttuu, ja siihen tarvitaan voima. Kiekko ei muista rataansa; kun naru katkeaa, suunnan muuttuminen loppuu samalla hetkellä."
+        },
+        {
+          "text": "Vinosti tangentin ja narun suunnan välistä.",
+          "figure": "fy5-3/opt-between",
+          "feedback": "Mallin arvot kumoavat tämän: kulma narun suuntaan on $90{,}0^\\circ$, ei noin $45^\\circ$. Ulospäin suuntautuvaa liikettä ei synny, koska mikään ei työnnä kiekkoa poispäin tapista. Kiekko jatkaa juuri sillä nopeudella, joka sillä oli, ja se oli tangentin suuntainen."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 2: reunalla vai keskellä",
+      "prompt": "Karuselli tekee yhden kierroksen $4{,}0\\,\\text{s}$:ssa. Eetu seisoo $1{,}0\\,\\text{m}$:n päässä keskipisteestä ja Aino $2{,}0\\,\\text{m}$:n päässä. Miten Ainon ratanopeus suhtautuu Eetun ratanopeuteen?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-2",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "Yhtä suuri kuin Eetun, koska molemmat kiertävät kierroksen samassa ajassa.",
+          "feedback": "Mallin arvot kumoavat tämän: säteellä $1{,}0\\,\\text{m}$ ratanopeus on $1{,}57\\,\\text{m/s}$, säteellä $2{,}0\\,\\text{m}$ $3{,}14\\,\\text{m/s}$. Sama kierrosaika tarkoittaa, että kierroksia tulee yhtä monta, mutta reunalla yksi kierros on pidempi matka."
+        },
+        {
+          "text": "Kaksinkertainen, koska Aino kulkee samassa ajassa kaksinkertaisen matkan.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä: $1{,}57\\,\\text{m/s}$ ja $3{,}14\\,\\text{m/s}$, suhde $2{,}0$. Kehän pituus $2\\pi r$ kasvaa samassa suhteessa kuin säde, ja aika on sama."
+        },
+        {
+          "text": "Nelinkertainen, koska ympyrän koko kasvaa säteen neliön mukaan.",
+          "feedback": "Mallin arvot kumoavat tämän: suhde on $3{,}14 : 1{,}57 = 2{,}0$. Ympyrän *pinta-ala* kasvaa säteen neliönä, mutta kuljettu matka on kehän pituus $2\\pi r$, joka kasvaa suoraan säteen mukana."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Pyöritä naruun sidottua kiekkoa jäällä, katkaise naru ja vertaa nopeusvektoreita. Oikea tai alempi paneeli näyttää, miten nopeus muuttuu.",
+      "howto": "Säädä radan säde $r$ ja kierrosaika $T$ ja paina *Käynnistä*. Sininen nuoli kiekon kohdalla on nopeus $\\overline{v}$. Valinta *Näytä aiemmat nopeudet* jättää kuvaan kiekon paikat ja nopeudet kahdentoista yhtä pitkän aikavälin päästä viimeisen kierroksen ajalta. Kun kiekko kiertää, sama painike muuttuu muotoon *Katkaise naru*, joka päästää kiekon irti; kiekko pysähtyy kaukalon laitaan, ja lukemiin tulevat kulma $\\alpha$ reitin ja narun suunnan välillä sekä vauhti $v_\\text{irti}$ katkeamisen jälkeen. Paneeli *Nopeuden muutos* piirtää nopeuden $\\overline{v}_1$ kahdestoistaosakierroksen takaa ja nykyisen nopeuden $\\overline{v}_2$ samasta pisteestä; musta nuoli on nopeuden muutos $\\Delta\\overline{v}$. Kun muutat säädintä, kiekko palaa alkuun. *Nopeus* muuttaa vain animaation tahtia, ei mitään lukemaa; hidas tahti auttaa valitsemaan katkaisukohdan.",
+      "model": "Kiekko liukuu vaakasuoralla jäällä ilman kitkaa ja ilmanvastusta. Naru pitää kiekon ympyräradalla, ja vauhti pysyy samana: liike on tasaista ympyräliikettä. Kun naru katkeaa, kiekkoon ei vaikuta vaakasuunnassa voimaa, joten se jatkaa suoraan tasaisella nopeudella. Pystysuorat voimat, paino ja jään tukivoima, kumoavat toisensa, eikä niitä piirretä. Paneelin *Nopeuden muutos* nuolilla on oma mittakaavansa: nopeusvektori piirretään aina yhtä pitkänä, joten paneeli näyttää suunnan muutoksen suhteessa vauhtiin. Kaikki luvut ovat mallin arvoja.",
+      "calc": "Pyörimistaajuus on $f = \\tfrac{1}{T}$ ja ratanopeus $v = \\tfrac{2\\pi r}{T}$. Kiekon paikka lasketaan joka hetki ympyrältä, jonka säde on $r$, niin että yksi kierros kestää ajan $T$. Kuljettu matka on $s = v t$, ja $N$ on täysien kierrosten määrä ennen katkeamista. Katkeamisen jälkeen paikka on katkeamiskohta plus $\\overline{v}\\,\\Delta t$. Kulma $\\alpha$ lasketaan kiekon todellisesta siirtymästä katkeamisen jälkeen ja narun suunnasta katkeamishetkellä, ja $v_\\text{irti}$ on siirtymän pituus jaettuna kuluneella ajalla. Paneelin $|\\Delta\\overline{v}|$ on vektorin $\\overline{v}_2 - \\overline{v}_1$ pituus, kun nopeuksien väli on $\\Delta t = \\tfrac{T}{12}$."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 1: naru katkeaa",
+      "intro": "Testaa ennuste 1. Kierrosaika pysyy vakiona. Valitse säde, paina *Käynnistä* ja sitten haluamassasi kohdassa samaa painiketta, jossa lukee nyt *Katkaise naru*. Katkaise naru selvästi eri kohdissa rataa, esimerkiksi kun kiekko on radan ylä- ja vasemmassa reunassa, ja tarkkaile, mihin suuntaan kiekko lähtee kussakin kohdassa. Kun kiekko on pysähtynyt laitaan, kirjaa mittaus: taulukkoon tulevat kulma $\\alpha$ reitin ja narun suunnan välillä, ratanopeus $v$ ennen katkeamista ja vauhti $v_\\text{irti}$ sen jälkeen. Tee mittaus eri katkaisukohdissa ainakin kahdella eri säteellä, jotta näet, riippuuko lähtösuunta katkaisukohdasta vai säteestä; säteen muuttaminen palauttaa kiekon alkuun.",
+      "initial": {
+        "r": 2,
+        "T": 4
+      },
+      "locked": [
+        "T"
+      ],
+      "vary": "r",
+      "names": {
+        "r": "radan säde r",
+        "T": "kierrosaika T"
+      },
+      "units": {
+        "r": "m",
+        "T": "s"
+      },
+      "measure": [
+        {
+          "key": "alpha",
+          "label": "α (°)"
+        },
+        {
+          "key": "v",
+          "label": "v (m/s)"
+        },
+        {
+          "key": "vIrti",
+          "label": "$v_\\text{irti}$ (m/s)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 2: säde muuttuu",
+      "intro": "Testaa ennuste 2. Kierrosaika on $4{,}0\\,\\text{s}$ ja pysyy vakiona. Muuta vain sädettä ja kirjaa ratanopeus ainakin säteillä $1{,}0\\,\\text{m}$ ja $2{,}0\\,\\text{m}$, halutessasi myös $3{,}0\\,\\text{m}$. Käynnistä välillä ja vertaa sinisen nuolen pituutta.",
+      "initial": {
+        "r": 1,
+        "T": 4
+      },
+      "locked": [
+        "T"
+      ],
+      "vary": "r",
+      "names": {
+        "r": "radan säde r",
+        "T": "kierrosaika T"
+      },
+      "units": {
+        "r": "m",
+        "T": "s"
+      },
+      "measure": [
+        {
+          "key": "v",
+          "label": "v (m/s)"
+        },
+        {
+          "key": "s",
+          "label": "s (m)"
+        },
+        {
+          "key": "t",
+          "label": "t (s)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "koe-3",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 3: kierrosaika muuttuu",
+      "intro": "Pidä säde $2{,}0\\,\\text{m}$ vakiona ja muuta kierrosaikaa. Kirjaa pyörimistaajuus ja ratanopeus esimerkiksi kierrosajoilla $2\\,\\text{s}$, $4\\,\\text{s}$ ja $8\\,\\text{s}$. Miten ratanopeus muuttuu, kun kierrosaika kaksinkertaistuu?",
+      "initial": {
+        "r": 2,
+        "T": 2
+      },
+      "locked": [
+        "r"
+      ],
+      "vary": "T",
+      "names": {
+        "r": "radan säde r",
+        "T": "kierrosaika T"
+      },
+      "units": {
+        "r": "m",
+        "T": "s"
+      },
+      "measure": [
+        {
+          "key": "f",
+          "label": "f (1/s)"
+        },
+        {
+          "key": "v",
+          "label": "v (m/s)"
+        }
+      ],
+      "min": 2,
+      "optional": true
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös: suunta ja ratanopeus",
+      "after": [
+        "koe-1",
+        "koe-2"
+      ],
+      "prompt": "Kirjoita taulukoidesi perusteella: mihin suuntaan kiekko lähti, kun naru katkesi, ja muuttuiko sen vauhti? Miten ratanopeus riippui säteestä, kun kierrosaika pysyi samana? Miksi kiekon nopeus muuttuu ympyräradalla, vaikka vauhti on vakio?",
+      "model": "Missä kohdassa tahansa naru katkesi, kiekon reitti muodosti narun suunnan kanssa kulman $90{,}0^\\circ$: kiekko lähti radan tangentin suuntaan, ja sen vauhti pysyi samana kuin ratanopeus ennen katkeamista, esimerkiksi säteellä $2{,}0\\,\\text{m}$ $3{,}14\\,\\text{m/s}$. Kun kierrosaika oli $4{,}0\\,\\text{s}$, ratanopeus oli säteellä $1{,}0\\,\\text{m}$ $1{,}57\\,\\text{m/s}$ ja säteellä $2{,}0\\,\\text{m}$ $3{,}14\\,\\text{m/s}$: kaksinkertainen säde antoi kaksinkertaisen ratanopeuden, koska kehän pituus $2\\pi r$ kaksinkertaistuu ja aika on sama. Ympyräradalla nopeuden suunta kääntyy koko ajan, joten nopeus muuttuu ($|\\Delta\\overline{v}|$ ei ole nolla), vaikka vauhti on vakio; katkeamisen jälkeen $\\Delta\\overline{v}$ oli nolla. Luvut ovat mallin arvoja, ja mallissa jäällä ei ole kitkaa.",
+      "criteria": [
+        "Kerroin, että kiekko lähti radan tangentin suuntaan eli kohtisuoraan narua vastaan, ja perustelin sen kulmalla $\\alpha$.",
+        "Totesin, että vauhti katkeamisen jälkeen oli sama kuin ratanopeus ennen sitä.",
+        "Vertasin ratanopeuksia ja totesin kaksinkertaisen säteen antavan kaksinkertaisen ratanopeuden samalla kierrosajalla.",
+        "Selitin, että nopeus muuttuu, koska sen suunta muuttuu, ja mainitsin, että luvut ovat mallin arvoja."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Palaa ennusteisiisi",
+      "prompt": "Vertaa ennusteitasi mallin arvoihin ja kaavaan $v = \\tfrac{2\\pi r}{T}$. Palaa sitten alun kysymykseen: miksi Aino liikkuu karusellin reunalla lujempaa kuin Eetu, ja mihin suuntaan hän lähtee, kun hänen otteensa lipsahtaa?",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2"
+      ],
+      "optional": true
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe",
+      "prompt": "Polkupyörä on nostettu telineeseen, ja sen etupyörä pyörii $3{,}0$ kierrosta sekunnissa. Pyörän halkaisija on $0{,}70\\,\\text{m}$. Opiskelija laskee renkaan ulkoreunan ratanopeuden akselin ympäri:\n\n$$\\begin{aligned} v &= 2\\pi r f \\\\ &= 2\\pi \\cdot 0{,}70\\,\\text{m} \\cdot 3{,}0\\,\\tfrac{1}{\\text{s}} \\\\ &\\approx 13\\,\\text{m/s} \\end{aligned}$$\n\nMissä on virhe?",
+      "choices": [
+        {
+          "text": "Hän sijoitti halkaisijan säteen paikalle. Säde on $0{,}35\\,\\text{m}$, joten $v \\approx 6{,}6\\,\\text{m/s}$.",
+          "correct": true,
+          "feedback": "Oikein. Kaavassa $v = 2\\pi r f$ on säde $r = \\tfrac{d}{2} = 0{,}35\\,\\text{m}$, joten $v = 2\\pi \\cdot 0{,}35\\,\\text{m} \\cdot 3{,}0\\,\\tfrac{1}{\\text{s}} = 6{,}6\\,\\text{m/s}$. Halkaisijalla voi laskea suoraan muodossa $v = \\pi d f$."
+        },
+        {
+          "text": "Pyörimistaajuus olisi pitänyt ensin muuttaa kierrosajaksi, koska kaava $v = 2\\pi r f$ ei kelpaa.",
+          "feedback": "Kaava $v = 2\\pi r f$ on sama kuin $v = \\tfrac{2\\pi r}{T}$, koska $f = \\tfrac{1}{T}$. Kierrosajan kautta laskeminen antaa saman tuloksen. Virhe on säteessä."
+        },
+        {
+          "text": "Kaavasta puuttuu vielä kerroin $2$, joten oikea tulos on noin $26\\,\\text{m/s}$.",
+          "feedback": "Kerroin $2\\pi$ on jo mukana, sillä kehän pituus on $2\\pi r$. Virhe on päinvastainen: halkaisija on sijoitettu säteen paikalle, joten tulos on kaksi kertaa liian suuri."
+        },
+        {
+          "text": "Laskussa ei ole virhettä.",
+          "feedback": "Tulos on kaksi kertaa liian suuri, koska $0{,}70\\,\\text{m}$ on halkaisija. Säde on puolet siitä, $0{,}35\\,\\text{m}$."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Sovella uuteen tilanteeseen",
+      "prompt": "Maa kiertää Aurinkoa lähes ympyrärataa, jonka säde on $1{,}50 \\cdot 10^{11}\\,\\text{m}$. Yksi kierros kestää $365$ vuorokautta. Kuinka suuri on Maan ratanopeus? Vastaa yksikössä km/s.",
+      "answer": 29.9,
+      "unit": "km/s",
+      "tolerance": 0.02,
+      "hints": [
+        "Kuinka pitkän matkan Maa kulkee yhdellä kierroksella, ja kuinka monta sekuntia on $365$ vuorokautta?",
+        "$v = \\dfrac{2\\pi r}{T}$, missä $T = 365 \\cdot 24 \\cdot 3600\\,\\text{s}$.",
+        "$T = 3{,}1536 \\cdot 10^{7}\\,\\text{s}$, joten $v = \\dfrac{2\\pi \\cdot 1{,}50 \\cdot 10^{11}\\,\\text{m}}{3{,}1536 \\cdot 10^{7}\\,\\text{s}}$. Muunna lopuksi metrit kilometreiksi."
+      ],
+      "mistakes": [
+        {
+          "value": 4.76,
+          "feedback": "Jaoit säteen ajalla. Yhdellä kierroksella Maa kulkee koko ratansa kehän $2\\pi r$, ei säteen $r$ pituista matkaa."
+        },
+        {
+          "value": 107589,
+          "feedback": "Käytit kierrosaikana tunteja: $365 \\cdot 24 = 8760$. Aika on muunnettava sekunneiksi, $T = 365 \\cdot 24 \\cdot 3600\\,\\text{s}$."
+        },
+        {
+          "value": 29886,
+          "feedback": "Laskit oikein, mutta vastasit yksikössä $\\text{m/s}$. Muunna kilometreiksi sekunnissa: $1\\,\\text{m} = 0{,}001\\,\\text{km}$."
+        }
+      ],
+      "solution": "**Annettu:** radan säde $r = 1{,}50 \\cdot 10^{11}\\,\\text{m}$, kierrosaika $T = 365\\,\\text{vrk}$\n\n**Kysytty:** Maan ratanopeus $v$ yksikössä $\\text{km/s}$\n\n**Periaate:** Maa kiertää Aurinkoa lähes ympyrärataa lähes tasaisella vauhdilla, joten sitä voidaan mallintaa tasaisena ympyräliikkeenä. Yhdellä kierroksella se kulkee radan kehän $2\\pi r$ ajassa $T$.\n\n**Kaava:**\n\n$$v = \\frac{2\\pi r}{T}$$\n\n**Muunnokset:** $T = 365\\,\\text{vrk} = 365 \\cdot 24 \\cdot 3600\\,\\text{s} = 3{,}1536 \\cdot 10^{7}\\,\\text{s}$. Lopuksi $1\\,\\text{m} = 0{,}001\\,\\text{km}$.\n\n**Sijoitus:** $v = \\dfrac{2\\pi \\cdot 1{,}50 \\cdot 10^{11}\\,\\text{m}}{3{,}1536 \\cdot 10^{7}\\,\\text{s}} = \\dfrac{9{,}425 \\cdot 10^{11}\\,\\text{m}}{3{,}1536 \\cdot 10^{7}\\,\\text{s}} = 29\\,886\\,\\text{m/s} = 29{,}886\\,\\text{km/s}$\n\n**Vastaus:** $29{,}9\\,\\text{km/s}$, kolme merkitsevää numeroa kuten radan säteessä $1{,}50 \\cdot 10^{11}\\,\\text{m}$.\n\n**Järkevyys:** Radan kehä on noin $9{,}4 \\cdot 10^{8}\\,\\text{km}$, ja vuodessa on noin $3{,}2 \\cdot 10^{7}\\,\\text{s}$, joten vauhti on noin $30\\,\\text{km}$ sekunnissa eli yli $100\\,000\\,\\text{km/h}$. Maa kulkee siis noin sata kertaa nopeammin kuin matkustajalentokone, mikä sopii planeetan rataan.",
+      "optional": true
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Harjoittele kolmella tasolla. Tason 1 tehtävissä käytetään kaavaa $v = \\tfrac{2\\pi r}{T}$ tai $f = \\tfrac{1}{T}$ suoraan, tason 2 tehtävissä muunnetaan yksiköitä tai ratkaistaan kaavasta muu suure, ja taso 3 vaatii päättelyä."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Käsite",
+      "prompt": "Auto ajaa liikenneympyrässä tasaisella vauhdilla $30\\,\\text{km/h}$. Mikä väite on oikein?",
+      "choices": [
+        {
+          "text": "Auton nopeus muuttuu, koska sen suunta muuttuu, joten auto on kiihtyvässä liikkeessä.",
+          "correct": true,
+          "feedback": "Oikein. Nopeus on vektori. Vaikka vauhti pysyy arvossa $30\\,\\text{km/h}$, nopeuden suunta kääntyy koko ajan, joten nopeuden muutos $\\Delta\\overline{v}$ ei ole nolla ja auto kiihtyy. Kiihtyvyyden suuruus lasketaan luvussa *Tasainen ympyräliike ja normaalikiihtyvyys*."
+        },
+        {
+          "text": "Auton nopeus ei muutu, koska nopeusmittari näyttää koko ajan samaa lukemaa.",
+          "feedback": "Mittari näyttää vain nopeuden suuruuden eli vauhdin. Nopeuden suunta muuttuu liikenneympyrässä koko ajan, joten nopeusvektori muuttuu."
+        },
+        {
+          "text": "Auto ei kiihdy, koska kiihtyvyys tarkoittaa aina vauhdin kasvamista.",
+          "feedback": "Kiihtyvyys tarkoittaa nopeuden muutosta, ja nopeus muuttuu myös silloin, kun vain sen suunta muuttuu. Vauhdin kasvu on vain yksi tapa muuttaa nopeutta."
+        },
+        {
+          "text": "Auton nopeus osoittaa koko ajan kohti liikenneympyrän keskipistettä.",
+          "feedback": "Nopeus osoittaa siihen suuntaan, johon auto juuri liikkuu, eli radan tangentin suuntaan, kohtisuoraan sädettä vastaan."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Ratanopeus",
+      "prompt": "Kulmahiomakoneen laikan halkaisija on $125\\,\\text{mm}$, ja laikka pyörii $11\\,000$ kierrosta minuutissa. Kuinka suuri on laikan reunan ratanopeus? Vastaa yksikössä m/s.",
+      "answer": 72.0,
+      "unit": "m/s",
+      "tolerance": 0.02,
+      "hints": [
+        "Mikä on laikan säde metreinä, ja kuinka monta kierrosta laikka pyörii sekunnissa?",
+        "$v = 2\\pi r f$, missä $r = \\tfrac{d}{2}$, eli $v = \\pi d f$.",
+        "$d = 125 \\cdot 0{,}001\\,\\text{m} = 0{,}125\\,\\text{m}$ ja $f = \\tfrac{11\\,000}{60\\,\\text{s}} = 183{,}3\\,\\tfrac{1}{\\text{s}}$."
+      ],
+      "mistakes": [
+        {
+          "value": 144,
+          "feedback": "Sijoitit halkaisijan säteen paikalle kaavaan $v = 2\\pi r f$. Säde on puolet halkaisijasta, $0{,}0625\\,\\text{m}$."
+        },
+        {
+          "value": 4320,
+          "feedback": "Käytit pyörimistaajuutena kierroksia minuutissa. Muunna ensin sekunteihin: $f = \\tfrac{11\\,000}{60\\,\\text{s}}$."
+        }
+      ],
+      "solution": "**Annettu:** laikan halkaisija $d = 125\\,\\text{mm}$, pyörimistaajuus $f = 11\\,000\\,\\tfrac{1}{\\text{min}}$\n\n**Kysytty:** laikan reunan ratanopeus $v$ yksikössä $\\text{m/s}$\n\n**Periaate:** Laikan reuna on tasaisessa ympyräliikkeessä, jonka säde on puolet halkaisijasta. Joka kierroksella reuna kulkee kehän pituisen matkan $2\\pi r = \\pi d$, ja kierroksia on $f$ aikayksikössä.\n\n**Kaava:** $v = 2\\pi r f$ ja $r = \\tfrac{d}{2}$, josta\n\n$$v = \\pi d f$$\n\n**Muunnokset:** $d = 125\\,\\text{mm} = 125 \\cdot 0{,}001\\,\\text{m} = 0{,}125\\,\\text{m}$ ja $f = 11\\,000\\,\\tfrac{1}{\\text{min}} = \\dfrac{11\\,000}{60\\,\\text{s}} = 183{,}33\\,\\tfrac{1}{\\text{s}}$\n\n**Sijoitus:** $v = \\pi \\cdot 0{,}125\\,\\text{m} \\cdot 183{,}33\\,\\tfrac{1}{\\text{s}} = 0{,}3927\\,\\text{m} \\cdot 183{,}33\\,\\tfrac{1}{\\text{s}} = 71{,}99\\,\\text{m/s}$\n\n**Vastaus:** $72{,}0\\,\\text{m/s}$, kolme merkitsevää numeroa kuten halkaisijassa $125\\,\\text{mm}$.\n\n**Järkevyys:** Kehä on noin $0{,}4\\,\\text{m}$, ja laikka pyörii noin $180$ kierrosta sekunnissa, joten reuna kulkee noin $0{,}4\\,\\text{m} \\cdot 180 \\approx 72\\,\\text{m}$ sekunnissa eli noin $260\\,\\text{km/h}$. Hiomalaikoissa on merkintä suurimmasta sallitusta ratanopeudesta, tyypillisesti $80\\,\\text{m/s}$, joten tulos on uskottava."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Selitä ja siirrä",
+      "prompt": "Moukarinheittäjä pyörittää moukaria kahvasta ja päästää siitä irti. Ylhäältä katsottuna moukari kiertää ennen irrotusta lähes ympyrärataa. Mihin suuntaan moukari lähtee irrotushetkellä, ja miksi heittäjän on osattava ajoittaa irrotus oikein, jotta moukari lentää sektoriin?",
+      "criteria": [
+        "Sanon, että moukari lähtee irrotushetkellä radan tangentin suuntaan eli kohtisuoraan vaijeria vastaan, ei suoraan ulospäin.",
+        "Perustelen sen sillä, että irrotuksen jälkeen vaijeri ei enää vedä moukaria, joten vaakasuunnassa ei vaikuta voimaa ja moukari jatkaa irrotushetken nopeudella.",
+        "Selitän, että nopeuden suunta kääntyy ympyräradalla koko ajan, joten lähtösuunta riippuu siitä, missä kohdassa rataa irrotus tapahtuu."
+      ],
+      "model": "Moukarin nopeus on joka hetki radan tangentin suuntainen. Kun heittäjä päästää irti, vaijeri lakkaa vetämästä moukaria kohti keskipistettä, eikä vaakasuunnassa vaikuta enää voimaa (ilmanvastus on pieni). Newtonin ensimmäisen lain mukaan moukari jatkaa vaakasuunnassa irrotushetken nopeudella eli tangentin suuntaan, ei suoraan poispäin heittäjästä. Koska tangentin suunta kääntyy kierroksen aikana koko ajan, moukari lentää sektoriin vain, jos irrotus tapahtuu siinä kohdassa rataa, jossa tangentti osoittaa sektoriin.",
+      "optional": true
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Lopuksi kaksi nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+[
+ {
+  "expr": "(() => { const S=window.simState; return S.d===6 && S.lam===2 && S.x===0 && S.running===true && S.nodal===false ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "on load: d = 6,0 cm, λ = 2,0 cm, P at x = 0, animation running, nodal lines hidden (must run before any setup)"
+ },
+ {
+  "expr": "window.simState.s1",
+  "expected": 8.544004,
+  "tol": 0.01,
+  "note": "on load: s1 = s2 = √(3² + 8²) cm = 8,54 cm (lesson-answers load-s)"
+ },
+ {
+  "expr": "window.simState.AP",
+  "expected": 2.0,
+  "tol": 0.01,
+  "note": "on load: Δs = 0, the two waves add to 2,0 mm"
+ },
+ {
+  "expr": "window.simState.f",
+  "expected": 10.0,
+  "tol": 0.01,
+  "note": "f = v/λ = 20 cm/s : 2,0 cm = 10 Hz"
+ },
+ {
+  "expr": "(() => { const R=document.querySelectorAll('#sim-root input[type=range]'); return R.length===3 && R[0].min==='2' && R[0].max==='10' && R[0].step==='0.5' && R[1].min==='1' && R[1].max==='4' && R[1].step==='0.5' && R[2].min==='-11' && R[2].max==='11' && R[2].step==='0.1' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "three sliders: d 2–10 cm (0,5), λ 1–4 cm (0,5), x −11…11 cm (0,1)"
+ },
+ {
+  "expr": "(() => { const L=[...document.querySelectorAll('#sim-root select')].map(s=>[...s.options].map(o=>o.value).join(',')); return L.length===1 && L[0]==='0.05,0.1,0.25' && document.querySelectorAll('#sim-root input[type=checkbox]').length===1 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "one speed select hidas/normaali/nopea and one checkbox Näytä solmuviivat"
+ },
+ {
+  "expr": "(() => { const b=[...document.querySelectorAll('#sim-root button')].map(x=>x.textContent); const k=[...document.getElementById('sim-root').children].map(e=>e.tagName==='CANVAS'?'canvas':e.className); return b.length===1 && b[0]==='Pysäytä' && k.indexOf('canvas')<k.indexOf('controls') && k.indexOf('controls')<k.indexOf('readout') ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "one main button (Pysäytä while running); DOM order canvas, controls, readout"
+ },
+ {
+  "expr": "(() => { const n=document.querySelectorAll('#sim-root p.note'); return !document.querySelector('#sim-root details') && n.length===1 && n[0].textContent.trim().split(/\\s+/).length<=15 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "no Lisätietoja box; one legend line of at most 15 words"
+ },
+ {
+  "expr": "(() => { const P=window.simAdapter && window.simAdapter.params; return P && Object.keys(P).sort().join(',')==='d,lam,x' && P.d.unit==='cm' && P.lam.unit==='cm' && P.x.unit==='cm' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "adapter declares d, lam and x, all in cm"
+ },
+ {
+  "expr": "(() => { const c=document.querySelector('#sim-root canvas'); const w=document.getElementById('sim-root').clientWidth; return c.width===600 && c.height===(w<500?790:400) ? 1 : 0; })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "canvas is 600x400 on a wide screen, 600x790 (stacked panels) when #sim-root is under 500 px"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],6); I(R[1],2); I(R[2],1.4);",
+  "expr": "window.simState.ds",
+  "expected": 0.971739,
+  "tol": 0.01,
+  "note": "koe 1: x = 1,4 cm gives Δs = 0,97 cm (about λ/2)"
+ },
+ {
+  "expr": "window.simState.AP < 0.15 ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "koe 1 / ennuste 2: near λ/2 the amplitude is about 0,09 mm, nearly zero (lesson-answers koe1-x1.4-AP)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],6); I(R[1],2); I(R[2],3);",
+  "expr": "window.simState.s1",
+  "expected": 10.0,
+  "tol": 0.01,
+  "note": "x = 3,0 cm: P in front of S2, s1 = 10,0 cm"
+ },
+ {
+  "expr": "window.simState.s2",
+  "expected": 8.0,
+  "tol": 0.01,
+  "note": "x = 3,0 cm: s2 = 8,0 cm"
+ },
+ {
+  "expr": "window.simState.AP",
+  "expected": 2.0,
+  "tol": 0.01,
+  "note": "koe 1: Δs = 2,0 cm = λ gives 2,0 mm"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],6); I(R[1],2); I(R[2],4.9);",
+  "expr": "window.simState.ratio",
+  "expected": 1.510345,
+  "tol": 0.01,
+  "note": "koe 1: x = 4,9 cm, Δs/λ = 1,51"
+ },
+ {
+  "expr": "window.simState.AP < 0.15 ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "koe 1: near 1,5λ the amplitude is nearly zero (0,065 mm)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],6); I(R[1],2); I(R[2],7.4);",
+  "expr": "window.simState.AP",
+  "expected": 1.999743,
+  "tol": 0.01,
+  "note": "koe 1: x = 7,4 cm, Δs ≈ 2λ, amplitude 2,0 mm"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],6); I(R[1],1); I(R[2],3);",
+  "expr": "window.simState.AP",
+  "expected": 2.0,
+  "tol": 0.01,
+  "note": "koe 2: Δs = 2,0 cm, λ = 1,0 cm (ratio 2) gives 2,0 mm"
+ },
+ {
+  "expr": "window.simState.f",
+  "expected": 20.0,
+  "tol": 0.01,
+  "note": "koe 2: λ = 1,0 cm, f = 20 Hz"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],6); I(R[1],1.5); I(R[2],3);",
+  "expr": "window.simState.AP",
+  "expected": 1.0,
+  "tol": 0.01,
+  "note": "koe 2: λ = 1,5 cm, ratio 1,33, amplitude 1,0 mm"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],6); I(R[1],4); I(R[2],3);",
+  "expr": "window.simState.ratio",
+  "expected": 0.5,
+  "tol": 0.01,
+  "note": "koe 2: λ = 4,0 cm, Δs/λ = 0,5"
+ },
+ {
+  "expr": "window.simState.AP < 0.01 ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "koe 2: λ = 4,0 cm makes the same point still (0 mm)"
+ },
+ {
+  "expr": "window.simState.f",
+  "expected": 5.0,
+  "tol": 0.01,
+  "note": "λ = 4,0 cm: f = 5,0 Hz"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],10); I(R[1],2.5); I(R[2],-2);",
+  "expr": "(() => { const S=window.simState; const s1=Math.hypot(-2+5,8), s2=Math.hypot(-2-5,8); return Math.abs(S.s1-s1)<1e-9 && Math.abs(S.s2-s2)<1e-9 && Math.abs(S.ds-Math.abs(s1-s2))<1e-9 && S.d===10 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "the distances follow the geometry for any d and x"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; const c=document.querySelector('#sim-root input[type=checkbox]'); c.click();",
+  "expr": "window.simState.nodal ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "Näytä solmuviivat turns the nodal lines on"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; document.querySelector('#sim-root button').click();",
+  "expr": "(() => { const b=document.querySelector('#sim-root button'); return b.textContent==='Käynnistä' && window.simState.running===false ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "Pysäytä stops the animation, the button then offers Käynnistä"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; document.querySelector('#sim-root button').click(); const L=document.querySelector('#sim-root select'); I(L,'0.25');",
+  "expr": "new Promise((r) => { const t0 = window.simState.t, s = Date.now(); const f = () => { const S = window.simState; if (S.t > t0 + 0.05 || Date.now() - s > 9000) r(S.running && S.t > t0 ? 1 : 0); else setTimeout(f, 50); }; f(); })",
+  "expected": 1,
+  "tol": 0,
+  "note": "Käynnistä resumes: simulated time advances"
+ }
+]

@@ -1,0 +1,21 @@
+{
+  "id": "fy5-6",
+  "course": "FY5",
+  "title": "Gravitaation alainen ympyräliike",
+  "goals": [
+    "LOPS FY5: gravitaatiolaki ja planetaarinen liike",
+    "LOPS FY5: osaa mallintaa planetaarista liikettä ympyräliikkeenä",
+    "Täsmennys: planeettojen, kuiden ja satelliittien liike ympyräratamallina, painottomuus, milloin tasaisen ympyräliikkeen malli pätee; Keplerin lait ja gravitaatiokentän potentiaalienergia eivät kuulu keskeisiin sisältöihin"
+  ],
+  "prerequisites": [
+    "fy5-5"
+  ],
+  "glossary": [
+    "kiertorata",
+    "satelliitti",
+    "painottomuus"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

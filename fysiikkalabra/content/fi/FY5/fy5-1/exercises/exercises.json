@@ -1,0 +1,105 @@
+{
+ "level1": [
+  {
+   "id": "fy5-1-L1-01",
+   "level": 1,
+   "text": "Mutteria kiristetään kiintoavaimella. Käsi vaikuttaa varteen $0{,}25\\,\\text{m}$:n etäisyydellä mutterin keskeltä $150\\,\\text{N}$:n voimalla, joka on kohtisuorassa vartta vastaan. Kuinka suuri on voiman momentti mutterin akselin suhteen?",
+   "answer": 37.5,
+   "unit": "Nm",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy5-1-L1-02",
+   "level": 1,
+   "text": "Ovea avataan työntämällä kahvasta $12\\,\\text{N}$:n voimalla kohtisuoraan ovea vastaan. Kahva on $0{,}80\\,\\text{m}$:n päässä saranoista. Kuinka suuri on voiman momentti saranoiden suhteen?",
+   "answer": 9.6,
+   "unit": "Nm",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy5-1-L1-03",
+   "level": 1,
+   "text": "Polkupyörän akselimutteri on kiristettävä $45\\,\\text{Nm}$:n momenttiin. Avaimen otekohta on $0{,}30\\,\\text{m}$:n päässä mutterin keskeltä, ja voima on kohtisuorassa vartta vastaan. Kuinka suuri voima tarvitaan?",
+   "answer": 150,
+   "unit": "N",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy5-1-L1-04",
+   "level": 1,
+   "text": "Kuvassa kiertoakselin $O$ ympäri kääntyvään sauvaan vaikuttaa kohdassa $P$ vaakasuora $40\\,\\text{N}$:n voima. Ruudukon yksi ruutu vastaa $0{,}10\\,\\text{m}$:ä. Lue kuvasta voiman varsi. Kuinka suuri on voiman momentti akselin $O$ suhteen?",
+   "answer": 12,
+   "unit": "Nm",
+   "tolerance": 0.02,
+   "figure": "fy5-1/ruutu"
+  },
+  {
+   "id": "fy5-1-L1-05",
+   "level": 1,
+   "text": "Voiman suuruus on $60\\,\\text{N}$, ja sen momentti kiertoakselin suhteen on $18\\,\\text{Nm}$. Kuinka suuri on voiman varsi?",
+   "answer": 0.3,
+   "unit": "m",
+   "tolerance": 0.02
+  }
+ ],
+ "level2": [
+  {
+   "id": "fy5-1-L2-01",
+   "level": 2,
+   "text": "Ovi avataan vetämällä kahvaan sidottua narua. Kahva on $0{,}75\\,\\text{m}$:n päässä saranoista, ja narun jännitysvoima on $40\\,\\text{N}$. Naru on $35^\\circ$:n kulmassa oven tasoon nähden. Kuinka suuri on narun voiman momentti saranoiden suhteen?",
+   "answer": 17.2,
+   "unit": "Nm",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy5-1-L2-02",
+   "level": 2,
+   "text": "Pyöränmutteria avataan $85\\,\\text{N}$:n voimalla, joka on kohtisuorassa avaimen vartta vastaan. Otekohta on $35\\,\\text{cm}$:n päässä mutterin keskeltä. Kuinka suuri on voiman momentti mutterin akselin suhteen?",
+   "answer": 29.75,
+   "unit": "Nm",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy5-1-L2-03",
+   "level": 2,
+   "text": "Vaakasuora lauta kääntyy vasemmassa päässään olevan akselin ympäri. Laudan oikeaan päähän, $0{,}50\\,\\text{m}$:n päähän akselista, vaikuttaa $30\\,\\text{N}$:n voima suoraan ylöspäin. Lisäksi $0{,}20\\,\\text{m}$:n päähän akselista vaikuttaa $40\\,\\text{N}$:n voima suoraan alaspäin. Kuinka suuri on voimien kokonaismomentti akselin suhteen, kun vastapäivään kiertävä momentti on positiivinen?",
+   "answer": 7.0,
+   "unit": "Nm",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy5-1-L2-04",
+   "level": 2,
+   "text": "Vesijohdon sulkuventtiilin vipu on $0{,}25\\,\\text{m}$ pitkä, ja venttiili kääntyy vasta $50\\,\\text{Nm}$:n momentilla. Vipua vedetään sen päästä niin, että voima on $60^\\circ$:n kulmassa vivun jatkeeseen nähden. Kuinka suuri voima tarvitaan?",
+   "answer": 231,
+   "unit": "N",
+   "tolerance": 0.02
+  }
+ ],
+ "level3": [
+  {
+   "id": "fy5-1-L3-01",
+   "level": 3,
+   "text": "Pyöräilijän jalka painaa poljinta suoraan alaspäin $500\\,\\text{N}$:n voimalla. Polkimen etäisyys kammen akselista on $0{,}175\\,\\text{m}$. Kampi osoittaa eteenpäin ja $45^\\circ$ vaakatason alapuolelle. Missä kammen asennossa sama voima antaisi suurimman momentin ja missä nollan? Kuinka suuri on jalan voiman momentti kammen akselin suhteen kammen ollessa tässä $45^\\circ$:n asennossa?",
+   "answer": 61.9,
+   "unit": "Nm",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy5-1-L3-02",
+   "level": 3,
+   "text": "Aikuinen työntää puutarhaporttia kahvasta, $0{,}40\\,\\text{m}$:n päästä saranoista, $50\\,\\text{N}$:n voimalla kohtisuoraan porttia vastaan. Lapsi jaksaa työntää vain $20\\,\\text{N}$:n voimalla. Lapsikin työntää kohtisuoraan porttia vastaan. Kuinka kaukana saranoista lapsen on työnnettävä, jotta hänen voimansa vääntövaikutus olisi yhtä suuri kuin aikuisen?",
+   "answer": 1.0,
+   "unit": "m",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy5-1-L3-03",
+   "level": 3,
+   "text": "Ristiavaimen varret ulottuvat $0{,}20\\,\\text{m}$:n päähän mutterin keskeltä kummallekin puolelle. Asentaja painaa vasemman varren päätä $120\\,\\text{N}$:n voimalla suoraan alaspäin ja vetää oikean varren päätä $120\\,\\text{N}$:n voimalla suoraan ylöspäin. Varret ovat vaakasuorassa. Mikä on käsien voimien summa? Kuinka suuri on käsien voimien kokonaismomentti mutterin akselin suhteen?",
+   "answer": 48,
+   "unit": "Nm",
+   "tolerance": 0.02
+  }
+ ]
+}

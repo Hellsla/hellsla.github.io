@@ -1,0 +1,422 @@
+{
+  "version": 1,
+  "contribution": "From the moment of a force to equilibrium: a body is at rest only when both the sum of the forces and the sum of the moments are zero; the support forces are calculated from the moment condition, and the centre of mass decides when a supported body topples. The chapter uses the free-body-diagram skills of FY4 for a rigid body (finding an error, drawing one's own diagram, equations).",
+  "learn": [
+    "write the equilibrium conditions of a body for translation and for rotation.",
+    "calculate support forces using a free-body diagram and the moment condition.",
+    "explain how the position of the centre of mass decides whether a supported body stays in place or topples."
+  ],
+  "prior": [
+    "The moment of a force is $M = Fr$, where $r$ is the lever arm of the force, and the sign of the moment tells the direction of rotation (chapter *Moment of a force and rotation of a body*)",
+    "Only the forces acting on the body are drawn in a free-body diagram, and for a body at rest the sum of the forces acting on it is zero (chapter *Free-body diagrams and the combined effect of forces*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "A painter has laid a long plank across two trestles so that one end of the plank reaches well beyond a trestle. He lifts a heavy paint can onto the plank and pushes it towards the end of the overhang. At last the other end of the plank lifts off its trestle and the plank topples.",
+      "question": "What decides how far along the overhang the can can be moved, and how large a share of the load does each trestle carry?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Recall: the moment of a force",
+      "optional": true,
+      "prompt": "A door is pushed at the handle with a force of $20\\,\\text{N}$ perpendicular to the door. The handle is $0.80\\,\\text{m}$ from the hinges. What is the moment of the force about the hinges?",
+      "choices": [
+        {
+          "text": "$16\\,\\text{Nm}$, because the moment is the force times the lever arm.",
+          "correct": true,
+          "feedback": "Correct. $M = Fr = 20\\,\\text{N} \\cdot 0.80\\,\\text{m} = 16\\,\\text{Nm}$, because the force is perpendicular to the door and the lever arm is the distance from the hinges (chapter *Moment of a force and rotation of a body*). Today we calculate moments for a body that does not rotate at all."
+        },
+        {
+          "text": "$25\\,\\text{Nm}$, because the force is divided by the distance from the hinges.",
+          "feedback": "The moment is the product of the force and the lever arm, not a quotient: $M = Fr$. Farther from the hinges the same force turns the door more, so the moment grows as the distance grows. The correct value is $16\\,\\text{Nm}$."
+        },
+        {
+          "text": "$20\\,\\text{Nm}$, because the moment is equal to the force.",
+          "feedback": "The moment also depends on how far from the axis of rotation the force acts. The same $20\\,\\text{N}$ force right next to the hinge hardly turns the door at all. The moment is $M = Fr = 16\\,\\text{Nm}$ (chapter *Moment of a force and rotation of a body*)."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: which support carries more",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 2
+      },
+      "prompt": "A uniform $20\\,\\text{kg}$ plank rests on two supports. At first the supports are at equal distances from the middle of the plank. Support 2 is moved closer to the middle of the plank, and support 1 stays where it is. How do the support forces change?",
+      "choices": [
+        {
+          "text": "Each support still carries half of the weight, because the plank is uniform.",
+          "feedback": "The values of the model refute this: when support 2 moves from $3.5\\,\\text{m}$ to $2.5\\,\\text{m}$, the support force $N_2$ grows from $98\\,\\text{N}$ to $147\\,\\text{N}$ and $N_1$ drops to $49\\,\\text{N}$. Each support carries half of the weight only when the supports are at equal distances from the centre of mass."
+        },
+        {
+          "text": "The moved support carries more and the other less, and their sum stays the same.",
+          "correct": true,
+          "feedback": "The values of the model support this: when support 2 is at $2.5\\,\\text{m}$, $N_2 = 147\\,\\text{N}$ and $N_1 = 49\\,\\text{N}$. The sum is always the weight of the plank, $196\\,\\text{N}$. Support 2 is then $0.5\\,\\text{m}$ and support 1 $1.5\\,\\text{m}$ from the centre of mass, and the ratio of the support forces, $3 : 1$, is the inverse ratio of the distances."
+        },
+        {
+          "text": "The support farther from the middle carries more, because its lever arm is longer.",
+          "feedback": "The values of the model show the opposite: the farther support 1 carries only $49\\,\\text{N}$, the nearer support 2 $147\\,\\text{N}$. A long lever arm means that a *smaller* force is enough to cancel the moment of the other support about the centre of mass: $N_1 r_1 = N_2 r_2$."
+        },
+        {
+          "text": "Both support forces grow, because the supports are now closer to each other.",
+          "feedback": "The values of the model refute this: $N_1$ drops from $98\\,\\text{N}$ to $49\\,\\text{N}$. The plank is at rest, so the sum of the support forces is always the weight of the plank, $196\\,\\text{N}$; moving the supports only redistributes it."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: when the plank topples",
+      "justify": true,
+      "reveal": {
+        "after": "koe-2",
+        "min": 2
+      },
+      "prompt": "The supports of a plank ($20\\,\\text{kg}$) are $0.5\\,\\text{m}$ and $3.0\\,\\text{m}$ from the left end of the plank, and the centre of mass of the plank is $2.0\\,\\text{m}$ from it. A $40\\,\\text{kg}$ box is placed on the plank and moved to the right, past support 2, towards the end of the plank. When does the plank topple?",
+      "choices": [
+        {
+          "text": "As soon as the box is past support 2, because its centre of mass is then outside the supports.",
+          "feedback": "The values of the model refute this: when the box is at $3.2\\,\\text{m}$, it is past support 2, but the plank stays in place and $N_1 = 47\\,\\text{N}$. The weight of the plank itself between the supports rotates the plank in the other direction and cancels the moment of the box about support 2."
+        },
+        {
+          "text": "When the common centre of mass of the plank and the box moves past support 2.",
+          "correct": true,
+          "feedback": "The values of the model support this: $N_1$ decreases as the box moves and is zero when the box is at $3.5\\,\\text{m}$. The common centre of mass is then at support 2, $x_\\text{cm} = 3.0\\,\\text{m}$. Beyond that the moments of the weights about support 2 rotate the plank in one direction, and the plank topples."
+        },
+        {
+          "text": "Only when the box is at the end of the plank, because only a centre of mass at the edge topples it.",
+          "feedback": "The values of the model refute this: the plank topples as soon as the box passes $3.5\\,\\text{m}$, although the end of the plank is only at $4.0\\,\\text{m}$. What decides is the position of the common centre of mass, not the distance of the load from the edge."
+        },
+        {
+          "text": "When the weight of the box is greater than the weight of the plank, because a heavy load topples the plank.",
+          "feedback": "The values of the model refute this: the $40\\,\\text{kg}$ box is always heavier than the plank ($20\\,\\text{kg}$), but the plank still stays in place at $3.2\\,\\text{m}$, where $N_1 = 47\\,\\text{N}$. What matters is not which is heavier but where the weights act together."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Move the supports and the box. Follow the free-body diagram to see how the support forces change, and the situation picture to see where the common centre of mass of the plank and the box is.",
+      "howto": "The sliders move supports 1 and 2 and the box; the positions are measured from the left end of the plank. Choose the mass of the box or *no box*. The dashed line of the situation picture passes through the common centre of mass of the plank and the box down to the metre scale on the floor; the ball at its lower end is green when the centre of mass is between the supports and red when it is not. Below is the free-body diagram of the plank on the same horizontal scale: $\\overline{G}$ is the weight of the plank, $\\overline{F}_\\text{b}$ the force of the box on the plank, and $\\overline{N}_1$, $\\overline{N}_2$ the support forces. For a given mass of the box the arrows have the same scale at all settings; a heavier box makes the scale smaller so that even the largest support force fits in the picture. *Reset* restores the initial settings. The simulation has no animation, so no speed control is needed.",
+      "model": "The plank is uniform and rigid: length $4.0\\,\\text{m}$, mass $20\\,\\text{kg}$, centre of mass in the middle at $2.0\\,\\text{m}$. The supports are points that can only push the plank upwards. The box is at rest on the plank, so the force it exerts on the plank is equal to the weight of the box. When equilibrium is not possible, the plank is drawn toppled, and a negative support force in the table means that the support would have to pull the plank down, which a support cannot do. The values are calculated by the model, not measured.",
+      "calc": "The weight is $G = m_\\text{p} g$ and the force of the box $F_\\text{b} = m_\\text{b} g$, $g = 9.81\\,\\text{m/s}^2$. The moment condition about support 1, with anticlockwise positive:\n\n$$\\begin{aligned} &N_2 (x_2 - x_1) \\\\ &\\quad - G (2.0\\,\\text{m} - x_1) \\\\ &\\quad - F_\\text{b} (x_\\text{b} - x_1) = 0 \\end{aligned}$$\n\nfrom which $N_2$ is solved. Then from the sum of the forces $N_1 = G + F_\\text{b} - N_2$. The readout shows the moments about support 1, and their sum is zero. The common centre of mass is $x_\\text{cm} = \\dfrac{m_\\text{p} \\cdot 2.0\\,\\text{m} + m_\\text{b} x_\\text{b}}{m_\\text{p} + m_\\text{b}}$."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 1: a support closer to the centre of mass",
+      "intro": "Test prediction 1. There is no box, and support 1 is at $0.5\\,\\text{m}$. Start with support 2 at $3.5\\,\\text{m}$ and move it towards the middle of the plank. Record the support forces at no fewer than three positions of support 2, for example $3.5\\,\\text{m}$, $3.0\\,\\text{m}$ and $2.5\\,\\text{m}$. Also calculate $N_1 + N_2$ on each row.",
+      "initial": {
+        "x1": 0.5,
+        "x2": 3.5,
+        "xk": 1,
+        "mk": "0"
+      },
+      "locked": [
+        "x1",
+        "xk",
+        "mk"
+      ],
+      "vary": "x2",
+      "names": {
+        "x1": "support 1",
+        "x2": "support 2",
+        "xk": "box",
+        "mk": "mass of the box"
+      },
+      "values": {
+        "mk": {
+          "0": "no box"
+        }
+      },
+      "measure": [
+        {
+          "key": "N1",
+          "label": "N_1 (N)"
+        },
+        {
+          "key": "N2",
+          "label": "N_2 (N)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 2: the box onto the overhang",
+      "intro": "Test prediction 2. The supports are at $0.5\\,\\text{m}$ and $3.0\\,\\text{m}$, and the plank carries a $40\\,\\text{kg}$ box. Move the box to the right and record the support forces and the common centre of mass $x_\\text{cm}$ at, for example, $3.0\\,\\text{m}$, $3.2\\,\\text{m}$, $3.4\\,\\text{m}$, $3.5\\,\\text{m}$ and $3.6\\,\\text{m}$. At which position is $N_1$ zero, and where is $x_\\text{cm}$ then?",
+      "initial": {
+        "x1": 0.5,
+        "x2": 3,
+        "xk": 2,
+        "mk": "40"
+      },
+      "locked": [
+        "x1",
+        "x2",
+        "mk"
+      ],
+      "vary": "xk",
+      "names": {
+        "x1": "support 1",
+        "x2": "support 2",
+        "xk": "box",
+        "mk": "mass of the box"
+      },
+      "values": {
+        "kaatuu": {
+          "0": "no",
+          "1": "topples"
+        }
+      },
+      "measure": [
+        {
+          "key": "N1",
+          "label": "N_1 (N)"
+        },
+        {
+          "key": "N2",
+          "label": "N_2 (N)"
+        },
+        {
+          "key": "xpp",
+          "label": "x_cm (m)"
+        },
+        {
+          "key": "kaatuu",
+          "label": "topples?"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion: support forces and toppling",
+      "after": [
+        "koe-1",
+        "koe-2"
+      ],
+      "prompt": "On the basis of your tables, write: which support carried more, and how did the ratio of the support forces depend on the distances of the supports from the centre of mass of the plank? What stayed the same when you moved a support? Where was the box when the plank started to topple, and where was the common centre of mass then?",
+      "model": "In experiment 1 the support nearer the centre of mass carried more. When support 2 was at $2.5\\,\\text{m}$, that is $0.5\\,\\text{m}$ from the centre of mass, and support 1 $1.5\\,\\text{m}$ from it, the support forces were $N_2 = 147\\,\\text{N}$ and $N_1 = 49\\,\\text{N}$. The ratio $3 : 1$ is the inverse ratio of the distances, as the moment condition about the centre of mass, $N_1 r_1 = N_2 r_2$, requires. The sum of the support forces stayed equal to the weight of the plank, $196\\,\\text{N}$, because the sum of the forces is zero. In experiment 2 the plank still rested on the supports when the box was past support 2 at $3.2\\,\\text{m}$. $N_1$ decreased and was zero when the box was at $3.5\\,\\text{m}$; the common centre of mass was then at support 2, $x_\\text{cm} = 3.0\\,\\text{m}$. Farther on, the plank toppled, because support 1 cannot pull the plank down. The values are calculated by the model: the plank is rigid and the supports are points.",
+      "criteria": [
+        "I said that the support nearer the centre of mass carries more, and justified it with numbers.",
+        "I connected the ratio of the support forces to the distances with the moment condition $N_1 r_1 = N_2 r_2$.",
+        "I noted that the sum of the support forces stays equal to the weight of the load and the plank.",
+        "I explained that the plank topples when the common centre of mass passes the support, not as soon as the box passes it."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Return to your predictions",
+      "optional": true,
+      "prompt": "Compare your predictions with the values of the model in the experiments and with the equilibrium conditions. Then return to the opening question: why can the painter push the can past the trestle onto the overhang, and what decides where the plank topples?",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2"
+      ]
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the error in the free-body diagram",
+      "fbd": "error",
+      "figure": "fy5-2/virhe",
+      "prompt": "A uniform $20\\,\\text{kg}$ plank rests on two supports. Support 1 is $1.5\\,\\text{m}$ and support 2 $1.0\\,\\text{m}$ from the middle of the plank. A student has drawn the free-body diagram of the plank. What is wrong in it?",
+      "choices": [
+        {
+          "text": "The support forces are equally long, although $\\overline{N}_2$ should be longer than $\\overline{N}_1$.",
+          "correct": true,
+          "feedback": "Correct. The moment condition about the centre of mass gives $N_1 \\cdot 1.5\\,\\text{m} = N_2 \\cdot 1.0\\,\\text{m}$. When in addition $N_1 + N_2 = 196.2\\,\\text{N}$, we get $N_1 = 78.5\\,\\text{N}$ and $N_2 = 117.7\\,\\text{N}$. Equally long arrows satisfy only the condition on the sum of the forces, not the moment condition."
+        },
+        {
+          "text": "The weight $\\overline{G}$ should be drawn from the end of the plank that is nearer a support.",
+          "feedback": "The centre of mass of a uniform plank is in its middle, so $\\overline{G}$ correctly starts from the middle. The error is in the support forces: support 2, nearer the centre of mass, carries more, $N_2 = 117.7\\,\\text{N}$ and $N_1 = 78.5\\,\\text{N}$."
+        },
+        {
+          "text": "The support forces $\\overline{N}_1$ and $\\overline{N}_2$ should point downwards, because the plank presses on the supports.",
+          "feedback": "The plank does press the supports downwards, but that force acts on the supports, not on the plank. The free-body diagram of the plank shows the forces of the supports on the plank, and they push the plank upwards. The error is in the lengths of the arrows."
+        },
+        {
+          "text": "There is no error in the diagram, because the sum of the forces in it is zero.",
+          "feedback": "The sum of the forces is zero, but that is only one of the equilibrium conditions. About the centre of mass, the moment of $\\overline{N}_2$, $98.1\\,\\text{N} \\cdot 1.0\\,\\text{m}$, does not cancel the moment of $\\overline{N}_1$, $98.1\\,\\text{N} \\cdot 1.5\\,\\text{m}$, so a plank like this would start to rotate."
+        }
+      ]
+    },
+    {
+      "id": "piirra",
+      "stage": "sovella",
+      "type": "explain",
+      "title": "Draw the free-body diagram yourself",
+      "fbd": "draw",
+      "draw": true,
+      "figure": "fy5-2/lauta",
+      "model_figure": "fy5-2/lauta-voimat",
+      "prompt": "The picture shows a diving board at a swimming pool. The back end of the board is fastened to the edge of the pool with a bolt, and the board rests on a support beam $1.50\\,\\text{m}$ from the back end. A diver stands at the front end of the board. On paper, draw the free-body diagram of the *board*: the board as a rectangle and every force acting on it from its own point of application, labelled and roughly the right length. In which direction does the bolt pull the board?",
+      "model": "The body is the board. Four forces act on it. The weight of the board $\\overline{G}$ starts from the middle of the board, downwards. The diver presses the front end of the board down with the force $\\overline{F}_\\text{d}$; it is the force between the diver and the board, not the weight of the diver, which acts on the diver. The support beam pushes the board up with the force $\\overline{N}$. The bolt pulls the back end of the board **down** with the force $\\overline{F}_\\text{bolt}$. Its direction can be seen from the moment condition about the support: $\\overline{G}$ and $\\overline{F}_\\text{d}$ rotate the board clockwise, so the force at the back end must rotate it anticlockwise, and on the left of the support that is possible only with a force pointing downwards. $\\overline{N}$ is the longest arrow in the picture, because the support force pointing upwards must cancel all three forces pointing downwards.",
+      "criteria": [
+        {
+          "key": "fbd_object",
+          "detail": "I drew only the board and the forces acting on it, not forces acting on the support beam or the bolt."
+        },
+        {
+          "key": "fbd_forces",
+          "detail": "$\\overline{G}$, $\\overline{F}_\\text{d}$, $\\overline{N}$ and $\\overline{F}_\\text{bolt}$ are included, and nothing extra."
+        },
+        {
+          "key": "fbd_directions",
+          "detail": "The force of the bolt points down and the force of the support beam up."
+        },
+        {
+          "key": "fbd_representation",
+          "detail": "The weight starts from the middle of the board, the force of the diver from the front end and the force of the bolt from the back end."
+        },
+        {
+          "key": "fbd_magnitudes",
+          "detail": "$\\overline{N}$ is the longest, and the arrow pointing up is as long as the arrows pointing down together."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply: the force of the bolt",
+      "fbd": "equations",
+      "prompt": "The diving board of the previous task is uniform and horizontal. Its length is $4.00\\,\\text{m}$ and its mass $30.0\\,\\text{kg}$. The bolt is at the back end of the board and the support beam $1.50\\,\\text{m}$ from the back end. A diver of mass $60.0\\,\\text{kg}$ stands still at the front end of the board. With what force does the bolt pull the board? Answer in newtons.",
+      "answer": 1080,
+      "unit": "N",
+      "tolerance": 0.02,
+      "hints": [
+        "First draw the free-body diagram of the board. Which force drops out of the moment condition if the support beam is chosen as the reference point? What if the bolt is chosen?",
+        "The moment condition about the support beam: the lever arm of the force of the bolt is $1.50\\,\\text{m}$, that of the weight of the board $2.00\\,\\text{m} - 1.50\\,\\text{m} = 0.50\\,\\text{m}$ and that of the force of the diver $4.00\\,\\text{m} - 1.50\\,\\text{m} = 2.50\\,\\text{m}$.",
+        "$F_\\text{bolt} \\cdot 1.50\\,\\text{m} = m_\\text{d} g \\cdot 2.50\\,\\text{m} + m_\\text{p} g \\cdot 0.50\\,\\text{m}$. First calculate the moments on the right-hand side and divide their sum by the lever arm of the bolt, $1.50\\,\\text{m}$."
+      ],
+      "mistakes": [
+        {
+          "value": 1962,
+          "feedback": "This is the force of the support beam $N$, not the force of the bolt. The force of the bolt is obtained by subtracting the weights of the board and the diver from $N$, or directly from the moment condition about the support."
+        },
+        {
+          "value": 981,
+          "feedback": "The weight of the board itself is missing. The board is uniform, so its weight acts at the middle, $0.50\\,\\text{m}$ from the support, and it too rotates the board in the same direction as the diver."
+        },
+        {
+          "value": 883,
+          "feedback": "The moment of the weight of the board about the support has got the wrong sign, or you have only added the weights together. The centre of mass of the board is between the support and the front end, so its weight rotates the board in the same direction as the force of the diver."
+        }
+      ],
+      "solution": "**Given:** board $L = 4.00\\,\\text{m}$, $m_\\text{p} = 30.0\\,\\text{kg}$ (centre of mass $2.00\\,\\text{m}$ from the back end); support $1.50\\,\\text{m}$ from the back end; diver $m_\\text{d} = 60.0\\,\\text{kg}$ at the front end; $g = 9.81\\,\\text{m/s}^2$\n\n**Find:** the force of the bolt $F_\\text{bolt}$ in newtons\n\n**Principle:** The board is at rest, so it is in equilibrium for both translation and rotation, and the sum of the moments about any point is zero. The support is chosen as the reference point, so the unknown support force $N$ does not appear in the moment condition and the force of the bolt is obtained from a single equation.\n\n**Free-body diagram:** The body is the board. The forces acting on it are the weight of the board $\\overline{G}$ downwards from the middle (the Earth), the force of the diver $\\overline{F}_\\text{d}$ downwards from the front end (the diver is at rest, so $F_\\text{d} = m_\\text{d} g$), the force of the support $\\overline{N}$ upwards and the force of the bolt $\\overline{F}_\\text{bolt}$ downwards from the back end. Anticlockwise moments are positive: the force of the bolt, on the left of the support, rotates anticlockwise; the weight of the board and the force of the diver, on the right of the support, rotate clockwise.\n\n<svg data-fig=\"fy5-2/lauta-voimat\"></svg>\n\n**Formula:** $F_\\text{bolt} r_\\text{bolt} - m_\\text{p} g\\, r_\\text{p} - m_\\text{d} g\\, r_\\text{d} = 0$, from which $F_\\text{bolt} = \\dfrac{(m_\\text{p} r_\\text{p} + m_\\text{d} r_\\text{d})\\, g}{r_\\text{bolt}}$\n\n**Conversions:** None needed, but the lever arms are measured from the support: $r_\\text{bolt} = 1.50\\,\\text{m}$, $r_\\text{p} = 2.00\\,\\text{m} - 1.50\\,\\text{m} = 0.50\\,\\text{m}$ and $r_\\text{d} = 4.00\\,\\text{m} - 1.50\\,\\text{m} = 2.50\\,\\text{m}$.\n\n**Substitution:** The moments about the support are $m_\\text{p} g\\, r_\\text{p} = 30.0\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 \\cdot 0.50\\,\\text{m} = 147.15\\,\\text{Nm}$ and $m_\\text{d} g\\, r_\\text{d} = 60.0\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 \\cdot 2.50\\,\\text{m} = 1471.5\\,\\text{Nm}$, together $1618.65\\,\\text{Nm}$. So $F_\\text{bolt} = \\dfrac{1618.65\\,\\text{Nm}}{1.50\\,\\text{m}} = 1079.1\\,\\text{N}$\n\n**Answer:** $1080\\,\\text{N}$, that is about $1.08\\,\\text{kN}$, three significant figures like the masses and lengths.\n\n**Reasonableness:** A check from another reference point: about the bolt, the weight of the board gives the moment $294.3\\,\\text{N} \\cdot 2.00\\,\\text{m} = 588.6\\,\\text{Nm}$ and the diver $588.6\\,\\text{N} \\cdot 4.00\\,\\text{m} = 2354.4\\,\\text{Nm}$, together $2943\\,\\text{Nm}$, so $N = \\dfrac{2943\\,\\text{Nm}}{1.50\\,\\text{m}} = 1962\\,\\text{N}$. From the sum of the forces $F_\\text{bolt} = N - G - F_\\text{d} = 1962\\,\\text{N} - 294.3\\,\\text{N} - 588.6\\,\\text{N} = 1079.1\\,\\text{N}$, the same force of the bolt. It is almost twice the weight of the diver, because the lever arm of the diver, $2.50\\,\\text{m}$, is more than one and a half times the lever arm of the bolt.",
+      "optional": true
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise at three levels. At level 1 a single moment condition is enough, at level 2 you need two conditions or several moments, and level 3 requires reasoning, the limit of toppling or the component of a force."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Centre of mass and toppling",
+      "prompt": "A bookshelf tilts when it is pulled by its upper edge. When does the shelf topple by itself if it is let go?",
+      "choices": [
+        {
+          "text": "When the vertical line through the centre of mass falls outside the base of the shelf.",
+          "correct": true,
+          "feedback": "Correct. The moment of the weight about the lower edge then rotates the shelf over the edge. As long as the vertical line falls within the base, the moment of the weight turns the shelf back onto its base."
+        },
+        {
+          "text": "When the front edge of the top of the shelf has moved beyond the front edge of the base.",
+          "feedback": "The position of the top edge does not decide. The upper part of the shelf can be outside the base, but the shelf stays upright until the vertical line through the centre of mass passes the edge of the base."
+        },
+        {
+          "text": "As soon as the shelf is tilted, if its centre of mass is high, because a high centre of mass is unstable.",
+          "feedback": "The height of the centre of mass alone does not decide. A high centre of mass makes the angle of toppling smaller, but the shelf topples only when the vertical line through the centre of mass passes the edge of the base; otherwise its weight turns the shelf back onto its base."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. A seesaw",
+      "fbd": "equations",
+      "prompt": "A seesaw is supported at its middle, so its own weight does not rotate it. A child of mass $24.0\\,\\text{kg}$ sits at one end of the board, $1.50\\,\\text{m}$ from the pivot. An adult keeps the board horizontal by pressing the other side down with a hand, vertically, $1.20\\,\\text{m}$ from the pivot. With what force does the adult press? Answer in newtons.",
+      "answer": 294,
+      "unit": "N",
+      "tolerance": 0.02,
+      "hints": [
+        "Choose the pivot of the board as the reference point. Which forces then drop out of the moment condition?",
+        "The force of the child rotates the board in one direction and the force of the adult in the other: $F \\cdot 1.20\\,\\text{m} = m g \\cdot 1.50\\,\\text{m}$."
+      ],
+      "mistakes": [
+        {
+          "value": 188,
+          "feedback": "The lever arms have changed places. The child is farther from the pivot ($1.50\\,\\text{m}$), so the adult, pressing nearer ($1.20\\,\\text{m}$), must press with a *greater* force than the weight of the child."
+        },
+        {
+          "value": 235,
+          "feedback": "This is the weight of the child, $mg$. The adult presses nearer the pivot, so cancelling the moments requires a greater force: $F = \\dfrac{mg \\cdot 1.50\\,\\text{m}}{1.20\\,\\text{m}}$."
+        }
+      ],
+      "solution": "**Given:** child $m = 24.0\\,\\text{kg}$, lever arm $r_1 = 1.50\\,\\text{m}$; lever arm of the force of the adult $r_2 = 1.20\\,\\text{m}$; board supported at the middle; $g = 9.81\\,\\text{m/s}^2$\n\n**Find:** the pressing force of the adult $F$ in newtons\n\n**Principle:** The board stays horizontal at rest, so the sum of the moments about the pivot is zero. The pivot is a good reference point, because the lever arm of the support force and of the weight of the board is then zero.\n\n**Free-body diagram:** The body is the board. The forces acting on it are the force of the child $\\overline{F}_\\text{c}$ downwards at one end (the child sits at rest, so the magnitude of the force is $F_\\text{c} = mg$), the force of the adult $\\overline{F}$ downwards on the other side, the weight of the board $\\overline{G}$ downwards from the middle and the force of the support $\\overline{N}$ upwards. $\\overline{G}$ and $\\overline{N}$ act at the pivot. The force of the child rotates the board in one direction and the force of the adult in the other; the direction of rotation of the force of the adult is chosen as positive.\n\n<svg data-fig=\"fy5-2/keinu-voimat\"></svg>\n\n**Formula:** $F r_2 - m g r_1 = 0$, from which $F = \\dfrac{m g r_1}{r_2}$\n\n**Conversions:** None needed: the mass is in kilograms and the lever arms in metres.\n\n**Substitution:** $F = \\dfrac{24.0\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 \\cdot 1.50\\,\\text{m}}{1.20\\,\\text{m}} = \\dfrac{353.16\\,\\text{Nm}}{1.20\\,\\text{m}} = 294.3\\,\\text{N}$\n\n**Answer:** $294\\,\\text{N}$, three significant figures like the mass and the lever arms.\n\n**Reasonableness:** The weight of the child is $235\\,\\text{N}$. The adult presses nearer the pivot, so the force is greater, $1.50 : 1.20 = 1.25$ times as large: $1.25 \\cdot 235\\,\\text{N} \\approx 294\\,\\text{N}$."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Explain: why the nearer support carries more",
+      "optional": true,
+      "prompt": "A uniform plank rests on two supports, and one support is nearer the middle of the plank than the other. Using the equilibrium conditions, explain why the nearer support carries the larger share of the weight of the plank.",
+      "model": "The plank is at rest, so the sum of the forces is zero, $N_1 + N_2 = G$, and the sum of the moments about any point is zero. Take the moments about the centre of mass: the lever arm of the weight is zero, and the support forces rotate the plank in opposite directions. They cancel each other when $N_1 r_1 = N_2 r_2$, where $r_1$ and $r_2$ are the distances of the supports from the centre of mass. When $r_2 < r_1$, we must have $N_2 > N_1$: the force of the nearer support has the shorter lever arm, so it must be greater for its moment to be equal to that of the farther support.",
+      "criteria": [
+        "I wrote both equilibrium conditions: the sum of the forces and the sum of the moments are zero.",
+        "I chose the centre of mass as the reference point and noted that the moment of the weight is then zero.",
+        "I derived the condition $N_1 r_1 = N_2 r_2$ and concluded from it that the force with the shorter lever arm is greater."
+      ]
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, two quick questions. Answer first on your own and open the answer only afterwards."
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy5-5-L1-01",
+      "level": 1,
+      "text": "Kaksi opiskelijaa istuu vierekkäin penkillä. Heidän massansa ovat $70\\,\\text{kg}$ ja $55\\,\\text{kg}$. Heidän painopisteidensä etäisyys on $0{,}80\\,\\text{m}$. Kuinka suuri gravitaatiovoima heidän välillään on? Käsittele opiskelijoita pistemäisinä kappaleina, eli ajattele, että koko massa on yhdessä pisteessä. Anna vastaus mikronewtoneina ($1\\,\\mu\\text{N} = 10^{-6}\\,\\text{N}$).",
+      "answer": 0.4,
+      "unit": "µN",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-5-L1-02",
+      "level": 1,
+      "text": "Satamassa on vierekkäin kaksi risteilyalusta. Niiden massat ovat $5{,}0 \\cdot 10^{7}\\,\\text{kg}$ ja $3{,}0 \\cdot 10^{7}\\,\\text{kg}$. Alusten painopisteiden etäisyys on $200\\,\\text{m}$. Kuinka suurella gravitaatiovoimalla alukset vetävät toisiaan? Käsittele aluksia pistemäisinä kappaleina.",
+      "answer": 2.5,
+      "unit": "N",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-5-L1-03",
+      "level": 1,
+      "text": "Merkurius-planeetan massa on $3{,}30 \\cdot 10^{23}\\,\\text{kg}$ ja säde $2{,}44 \\cdot 10^{6}\\,\\text{m}$. Kuinka suuri on gravitaatiokentän voimakkuus Merkuriuksen pinnalla?",
+      "answer": 3.7,
+      "unit": "m/s²",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-5-L1-04",
+      "level": 1,
+      "text": "Marsiin laskeutuneen mönkijän massa on $1025\\,\\text{kg}$. Marsin massa on $6{,}42 \\cdot 10^{23}\\,\\text{kg}$ ja säde $3{,}40 \\cdot 10^{6}\\,\\text{m}$. Kuinka suurella gravitaatiovoimalla Mars vetää pinnallaan olevaa mönkijää? Anna vastaus kilonewtoneina.",
+      "answer": 3.8,
+      "unit": "kN",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-5-L1-05",
+      "level": 1,
+      "text": "Kahden avaruusaluksen välinen gravitaatiovoima on $36\\,\\mu\\text{N}$. Alukset loittonevat toisistaan. Niiden keskipisteiden etäisyys kolminkertaistuu. Kuinka suuri gravitaatiovoima on nyt? Anna vastaus mikronewtoneina.",
+      "answer": 4.0,
+      "unit": "µN",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy5-5-L2-01",
+      "level": 2,
+      "text": "Laboratoriossa mitataan kahden samanmassaisen lyijypallon välistä gravitaatiovoimaa. Pallojen keskipisteiden etäisyys on $0{,}40\\,\\text{m}$, ja voima on $0{,}60\\,\\mu\\text{N}$. Kuinka suuri on kummankin pallon massa?",
+      "answer": 38,
+      "unit": "kg",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-5-L2-02",
+      "level": 2,
+      "text": "Venuksen pinnalla gravitaatiokentän voimakkuus on $8{,}87\\,\\text{m/s}^2$. Venuksen säde on $6052\\,\\text{km}$. Kuinka moninkertainen Venuksen massa on Maan massaan $5{,}97 \\cdot 10^{24}\\,\\text{kg}$ verrattuna?",
+      "answer": 0.815,
+      "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-5-L2-03",
+      "level": 2,
+      "text": "Avaruusluotain, jonka massa on $1200\\,\\text{kg}$, lähtee Maasta kohti Marsia. Millä korkeudella Maan pinnan yläpuolella Maan luotaimeen kohdistama gravitaatiovoima on $1{,}00\\,\\text{kN}$? Maan massa on $5{,}97 \\cdot 10^{24}\\,\\text{kg}$ ja säde $6378\\,\\text{km}$. Anna vastaus kilometreinä.",
+      "answer": 15500,
+      "unit": "km",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-5-L2-04",
+      "level": 2,
+      "text": "Matkustajakone lentää $11{,}0\\,\\text{km}$:n korkeudella. Kuinka monta prosenttia pienempi Maan gravitaatiokentän voimakkuus on siellä kuin Maan pinnalla? Maan säde on $6378\\,\\text{km}$.",
+      "answer": 0.344,
+      "unit": "%",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy5-5-L3-01",
+      "level": 3,
+      "text": "Avaruusluotain lentää Maasta suoraan kohti Kuuta. Missä kohdassa Maan ja Kuun luotaimeen kohdistamat gravitaatiovoimat ovat yhtä suuret? Maan massa on $5{,}97 \\cdot 10^{24}\\,\\text{kg}$ ja Kuun massa $7{,}35 \\cdot 10^{22}\\,\\text{kg}$. Niiden keskipisteiden etäisyys on $3{,}84 \\cdot 10^{5}\\,\\text{km}$. Anna kohdan etäisyys Maan keskipisteestä kilometreinä.",
+      "answer": 346000,
+      "unit": "km",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-5-L3-02",
+      "level": 3,
+      "text": "Kaukaisen eksoplaneetan keskimääräinen tiheys on sama kuin Maan, mutta sen säde on kaksi kertaa Maan säde. Kuinka suuri on gravitaatiokentän voimakkuus planeetan pinnalla? Maan pinnalla se on $9{,}81\\,\\text{m/s}^2$. Oleta molemmat planeetat pallosymmetrisiksi.",
+      "answer": 19.6,
+      "unit": "m/s²",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-5-L3-03",
+      "level": 3,
+      "text": "Kumpi vetää Maata voimakkaammin, Aurinko vai Kuu, ja kuinka moninkertaisesti? Auringon massa on $1{,}99 \\cdot 10^{30}\\,\\text{kg}$. Sen keskipisteen etäisyys Maan keskipisteestä on $1{,}50 \\cdot 10^{8}\\,\\text{km}$. Kuun massa on $7{,}35 \\cdot 10^{22}\\,\\text{kg}$ ja etäisyys $3{,}84 \\cdot 10^{5}\\,\\text{km}$. Anna Auringon Maahan kohdistaman voiman suhde Kuun Maahan kohdistamaan voimaan.",
+      "answer": 177,
+      "unit": "",
+      "tolerance": 0.02
+    }
+  ]
+}
