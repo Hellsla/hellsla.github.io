@@ -1,0 +1,25 @@
+{
+  "id": "fy5-12",
+  "course": "FY5",
+  "title": "Interference of waves",
+  "goals": [
+    "LOPS FY5: diffraction and interference of mechanical waves",
+    "Clarification: the principle of superposition, constructive and destructive interference with two wave sources of the same frequency and in phase; the usefulness of the Fourier transform as an optional topic",
+    "Skills: calculating the path difference and deciding the type of interference"
+  ],
+  "prerequisites": [
+    "fy5-11"
+  ],
+  "glossary": [
+    "superpositio",
+    "interferenssi",
+    "vahvistava interferenssi",
+    "heikentävä interferenssi",
+    "matkaero",
+    "solmuviiva",
+    "Fourier-muunnos"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy5-12-L1-01",
+      "level": 1,
+      "text": "Narussa kulkee kaksi pulssia toisiaan kohti. Kumpikin nostaa narun ylös. Toinen nostaa sen enimmillään $2{,}5\\,\\text{cm}$ ja toinen $1{,}5\\,\\text{cm}$. Kuinka suuri on narun suurin poikkeama sillä hetkellä, kun pulssien huiput ovat kohdakkain?",
+      "answer": 4.0,
+      "unit": "cm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-12-L1-02",
+      "level": 1,
+      "text": "Narussa kohtaa kaksi pulssia. Toinen nostaa narun enimmillään $3{,}0\\,\\text{cm}$ ylöspäin. Toinen painaa sen $1{,}2\\,\\text{cm}$ alaspäin. Mikä on narun poikkeama siinä kohdassa, jossa pulssien keskikohdat ovat päällekkäin? Ylöspäin on positiivinen suunta. Anna vastaus etumerkkeineen senttimetreinä.",
+      "answer": 1.8,
+      "unit": "cm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-12-L1-03",
+      "level": 1,
+      "text": "Kaksi kaiutinta on samassa vaiheessa. Ne soittavat ääntä, jonka aallonpituus on $0{,}60\\,\\text{m}$. Neljässä kuuntelupisteessä matkaero on a) $0{,}60\\,\\text{m}$, b) $0{,}90\\,\\text{m}$, c) $1{,}20\\,\\text{m}$ ja d) $1{,}50\\,\\text{m}$. Onko interferenssi kussakin pisteessä vahvistava vai heikentävä? Perustele.",
+      "answer": "a) vahvistava; b) heikentävä; c) vahvistava; d) heikentävä",
+      "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-12-L1-04",
+      "level": 1,
+      "text": "Kaksi kaiutinta on samassa vaiheessa. Ne soittavat ääntä, jonka aallonpituus on $0{,}68\\,\\text{m}$. Mikä on pienin matkaero, jolla ääni on kuuntelupisteessä heikko? Anna vastaus metreinä.",
+      "answer": 0.34,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-12-L1-05",
+      "level": 1,
+      "text": "Aaltoaltaan kaksi lähdettä värähtelee samassa vaiheessa. Aallonpituus on $1{,}5\\,\\text{cm}$. Keskinormaalilla on vahvistavan interferenssin viiva $n = 0$. Sen kummallakin puolella seuraavat viivat ovat $n = 1$ ja $n = 2$. Kuinka suuri on matkaero viivalla $n = 2$? Anna vastaus senttimetreinä.",
+      "answer": 3.0,
+      "unit": "cm",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy5-12-L2-01",
+      "level": 2,
+      "text": "Kaksi samassa vaiheessa olevaa kaiutinta A ja B on $1{,}20\\,\\text{m}$:n päässä toisistaan. Kuulija seisoo $1{,}60\\,\\text{m}$:n päässä kaiuttimesta B suoraan sen edessä. Kuulijan ja kaiuttimen B välinen suora on kohtisuorassa kaiuttimien väliseen suoraan nähden. Mikä on suurin aallonpituus, jolla kuulijan kohdalla on hiljaista? Anna vastaus metreinä.",
+      "answer": 0.8,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-12-L2-02",
+      "level": 2,
+      "text": "Aaltoaltaan kaksi lähdettä värähtelee samassa vaiheessa taajuudella $15\\,\\text{Hz}$. Aallot etenevät nopeudella $0{,}30\\,\\text{m/s}$. Piste Q on keskinormaalia lähimmällä solmuviivalla. Se on $9{,}0\\,\\text{cm}$:n päässä lähteestä $S_2$, joka on lähempänä. Kuinka kaukana piste Q on lähteestä $S_1$? Anna vastaus senttimetreinä.",
+      "answer": 10.0,
+      "unit": "cm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-12-L2-03",
+      "level": 2,
+      "text": "Aaltoaltaan kaksi lähdettä värähtelee samassa vaiheessa. Aallonpituus on $2{,}0\\,\\text{cm}$. Pisteeseen R on lähteestä $S_1$ matkaa $14{,}0\\,\\text{cm}$ ja lähteestä $S_2$ matkaa $9{,}0\\,\\text{cm}$. Lähde $S_1$ värähtelee voimakkaammin. Sen aallon amplitudi pisteessä R on $3{,}0\\,\\text{mm}$, ja lähteen $S_2$ aallon amplitudi on $2{,}0\\,\\text{mm}$. Mikä on veden värähtelyn amplitudi pisteessä R? Anna vastaus millimetreinä.",
+      "answer": 1.0,
+      "unit": "mm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-12-L2-04",
+      "level": 2,
+      "text": "Pitkässä jännitetyssä narussa kulkee kaksi pulssia toisiaan kohti. Pulssit ovat yhtä suuret ja samanmuotoiset. Toinen on narun yläpuolella ja toinen alapuolella. Pulssien keskikohtien välinen etäisyys on aluksi $1{,}20\\,\\text{m}$. Kumpikin pulssi etenee nopeudella $0{,}40\\,\\text{m/s}$. Kuinka kauan kestää, ennen kuin naru on hetken kokonaan suora? Anna vastaus sekunteina.",
+      "answer": 1.5,
+      "unit": "s",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy5-12-L3-01",
+      "level": 3,
+      "text": "Urheilukentällä kaksi kaiutinta on samassa vaiheessa $3{,}0\\,\\text{m}$:n päässä toisistaan. Ne soittavat ääntä, jonka taajuus on $340\\,\\text{Hz}$. Äänen nopeus on $340\\,\\text{m/s}$. Kuulija kävelee pitkää suoraa polkua kaukaa vasemmalta kauas oikealle. Polku kulkee kaiuttimien edessä kaiuttimien välisen suoran suuntaisesti. Kuinka monen hiljaisen kohdan ohi kuulija kulkee? Perustele, miksi hiljaisia kohtia on vain rajallinen määrä. Oleta, ettei ääni heijastu mistään.",
+      "answer": 6,
+      "unit": "kpl",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-12-L3-02",
+      "level": 3,
+      "text": "Aaltoaltaan kahden samassa vaiheessa olevan lähteen taajuutta voi säätää. Aallon nopeus altaassa on $24\\,\\text{cm/s}$. Altaassa on merkitty piste T. Kun taajuus on $10\\,\\text{Hz}$, vesi pysyy pisteessä T levossa. Kun taajuutta nostetaan, vesi on pisteessä T seuraavan kerran levossa taajuudella $14\\,\\text{Hz}$. Kuinka suuri on matkaero pisteessä T? Anna vastaus senttimetreinä.",
+      "answer": 6.0,
+      "unit": "cm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-12-L3-03",
+      "level": 3,
+      "text": "Sataman aallonmurtajassa on kaksi kapeaa aukkoa. Niiden välinen etäisyys on $16{,}0\\,\\text{m}$. Merellä aallot tulevat suoraan kohti aallonmurtajaa, joten aallonharjat ovat sen suuntaisia. Aukkojen läpi tulevat aallot leviävät satamaan. Vene on ankkuroitu $30{,}0\\,\\text{m}$:n päähän toisesta aukosta, suoraan sen eteen kohtisuoraan aallonmurtajaa vastaan. Vene on aukkojen keskinormaalia lähimmällä solmuviivalla, jolla vesi on lähes tyyntä. Perustele, miksi aukot toimivat kuin kaksi samassa vaiheessa olevaa lähdettä. Laske aaltojen aallonpituus. Anna vastaus metreinä.",
+      "answer": 8.0,
+      "unit": "m",
+      "tolerance": 0.02
+    }
+  ]
+}

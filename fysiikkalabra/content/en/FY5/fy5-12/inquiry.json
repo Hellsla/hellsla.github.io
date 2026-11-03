@@ -1,0 +1,439 @@
+{
+  "version": 1,
+  "contribution": "The principle of superposition is introduced with pulses on a string, and the interference of two sources of the same frequency and in phase is investigated with a ripple tank simulation: the student measures the path difference and the amplitude and infers the conditions $\\Delta s = n\\lambda$ and $\\Delta s = \\left(n + \\tfrac{1}{2}\\right)\\lambda$, and that the ratio $\\tfrac{\\Delta s}{\\lambda}$ decides. The use of the Fourier transform in analysing sound is an optional box.",
+  "learn": [
+    "explain with the principle of superposition what happens when two waves meet.",
+    "calculate the path difference and decide from it whether the interference is constructive or destructive.",
+    "describe what the Fourier transform is used for in analysing sound."
+  ],
+  "prior": [
+    "The speed, frequency and wavelength of a wave are related by the equation $v = f\\lambda$ (chapter *Mechanical waves*)",
+    "After a gap or a small obstacle a wave spreads out in curved wavefronts, that is, it diffracts (chapter *Reflection and diffraction of waves*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Two loudspeakers have been set up side by side in the school yard, about two metres apart. Both are connected to the same signal generator, which plays a steady, high-pitched tone. As you walk slowly past the loudspeakers across the yard, the sound seems to get louder and then fade almost to nothing, again and again. When you stop at a quiet spot and cover one of the loudspeakers, the sound gets louder.",
+      "question": "How can the sound of two loudspeakers be quieter than the sound of one, and why are the quiet spots in particular places?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Review: wavelength",
+      "prompt": "A loudspeaker plays a sound of frequency $500\\,\\text{Hz}$, and the speed of sound in air is $340\\,\\text{m/s}$. What is the wavelength of the sound wave?",
+      "choices": [
+        {
+          "text": "$0.68\\,\\text{m}$, because $\\lambda = \\tfrac{v}{f}$.",
+          "correct": true,
+          "feedback": "Correct. From $v = f\\lambda$ we get $\\lambda = \\tfrac{v}{f} = \\tfrac{340\\,\\text{m/s}}{500\\,\\text{Hz}} = 0.68\\,\\text{m}$ (chapter *Mechanical waves*). Today you need the wavelength to compare it with the difference between the loudspeakers' distances."
+        },
+        {
+          "text": "$1.5\\,\\text{m}$, because $\\lambda = \\tfrac{f}{v}$.",
+          "feedback": "The division is the wrong way round. In one period the wave travels one wavelength, so $v = f\\lambda$ and $\\lambda = \\tfrac{v}{f} = \\tfrac{340\\,\\text{m/s}}{500\\,\\text{Hz}} = 0.68\\,\\text{m}$. Check the units: $\\tfrac{\\text{Hz}}{\\text{m/s}}$ is not a metre."
+        },
+        {
+          "text": "$170\\,000\\,\\text{m}$, because $\\lambda = v \\cdot f$.",
+          "feedback": "The product $v \\cdot f$ has the unit $\\tfrac{\\text{m}}{\\text{s}^2}$, not a metre. The wavelength is the speed divided by the frequency: $\\lambda = \\tfrac{v}{f} = 0.68\\,\\text{m}$. In the audible range the wavelength of sound is from centimetres to tens of metres."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: two pulses meet",
+      "prompt": "One pulse is sent from each end of a long string at the same moment, towards each other. The pulses are equally tall and have the same shape, but one displaces the string up and the other down. What happens when the pulses have met?",
+      "justify": true,
+      "reveal": {
+        "after": "teoria-osa",
+        "pending": "Feedback opens when you read the section The principle of superposition in the Theory summary."
+      },
+      "choices": [
+        {
+          "text": "The string is straight for a moment, and then the pulses continue with their original shapes, each in its own direction.",
+          "correct": true,
+          "feedback": "Theory supports this. By the principle of superposition the displacement of the string is the sum of the pulses' displacements, $y = y_1 + y_2$. Pulses that are on top of each other, one up and one down, cancel each other, so the string is straight for a moment. The string is still moving, though, and the pulses pass through each other unchanged, because each travels as if the other were not there."
+        },
+        {
+          "text": "The pulses cancel each other permanently, and the string stays straight.",
+          "feedback": "At the moment of meeting the string is straight, because the displacements $+y$ and $-y$ add up to zero. The string is still not at rest: its parts are moving, and the pulses reappear at once and carry on. Waves do not destroy each other; their displacements are added only for as long as they overlap."
+        },
+        {
+          "text": "The pulses collide and bounce back towards the ends they came from.",
+          "feedback": "Waves are not objects that collide. By the principle of superposition the displacements are just added, and each pulse continues in the same direction as before. Bouncing back happens only at the end of the string, as with reflection in the chapter *Reflection and diffraction of waves*."
+        },
+        {
+          "text": "The pulses merge into one wider pulse, which slowly moves on from the middle of the string.",
+          "feedback": "Two pulses do not turn into one. While they meet, only their sum is visible, and afterwards each pulse continues in its own direction at the same speed and with the same shape, because the speed of a wave is set by the medium and not by another wave."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: a path difference of half a wavelength",
+      "prompt": "Two sources in a ripple tank vibrate in phase at the same frequency, and the amplitude of each wave is $1.0\\,\\text{mm}$. The wavelength is $2.0\\,\\text{cm}$. The path from source $S_1$ to point P is about $1.0\\,\\text{cm}$ longer than the path from source $S_2$. What is the amplitude of the vibration of the water at point P?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "Almost $0\\,\\text{mm}$: the water at point P stays almost at rest.",
+          "correct": true,
+          "feedback": "The model's values support this: at $x = 1.4\\,\\text{cm}$ the path difference is $0.97\\,\\text{cm}$ and the amplitude only $0.1\\,\\text{mm}$, and at $x = 0$ the path difference is $0$ and the amplitude $2.0\\,\\text{mm}$. With a path difference of half a wavelength the wave from farther away lags by half a period, so a crest meets a trough and the waves cancel."
+        },
+        {
+          "text": "$2.0\\,\\text{mm}$: two waves together make a vibration twice as large.",
+          "feedback": "The model's values rule this out: an amplitude of $2.0\\,\\text{mm}$ arises only where the path difference is $0$ or a whole wavelength, for example at $x = 0$. Where the path difference is about $1.0\\,\\text{cm}$, half a wavelength, the amplitude is only $0.1\\,\\text{mm}$, because a crest of one wave arrives at the same time as a trough of the other."
+        },
+        {
+          "text": "$1.0\\,\\text{mm}$: the nearer wave arrives first, and only it has an effect.",
+          "feedback": "The model's values rule this out: with a path difference of $0.97\\,\\text{cm}$ the amplitude is $0.1\\,\\text{mm}$, not $1.0\\,\\text{mm}$. When the sources vibrate continuously, the waves of both are at point P all the time, and their displacements are added. The path difference decides only in what phase they arrive."
+        },
+        {
+          "text": "It varies with time between zero and $2.0\\,\\text{mm}$.",
+          "feedback": "The model's values rule this out: the amplitude at point P is the same all the time, about $0.1\\,\\text{mm}$, when the path difference is about half a wavelength. The path difference and the wavelength stay the same, so the phase difference of the waves does not change, and the interference pattern stays in place."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Two sources in a ripple tank vibrate in step. Move point P along the dashed line and see where the water vibrates strongly and where it is almost at rest.",
+      "howto": "The picture shows the ripple tank from above: a light spot is a wave crest and a dark one a trough. Adjust the *Source separation* $d$, the *Wavelength* $\\lambda$ and the position of point P (*Point P at* $x$) on the dashed line, which is $L = 8.0\\,\\text{cm}$ from the sources. On the right (below on a phone) you see the displacement of each wave at point P, the blue $y_1$ from source $S_1$ and the purple $y_2$ from source $S_2$, and their sum in black. The readout gives the distances $s_1$ and $s_2$, the path difference $\\Delta s$, the ratio $\\tfrac{\\Delta s}{\\lambda}$ and the amplitude $A_\\text{P}$ at point P. *Show nodal lines* draws the lines on which the water stays at rest. *Speed* changes only the pace of the animation; the motion is slowed down.",
+      "model": "The sources are point-like and vibrate in phase at the same frequency. Each sends out a circular sine wave with an amplitude of $1.0\\,\\text{mm}$. The decrease of the amplitude with distance is ignored, and so are reflections from the edges of the tank and damping. The speed of the wave is $20\\,\\text{cm/s}$. All numbers are model values, not measured ones.",
+      "calc": "The sources are at $(-\\tfrac{d}{2}, 0)$ and $(\\tfrac{d}{2}, 0)$ and point P at $(x, L)$, so $s_1 = \\sqrt{(x + \\tfrac{d}{2})^2 + L^2}$ and $s_2 = \\sqrt{(x - \\tfrac{d}{2})^2 + L^2}$. The frequency is $f = \\tfrac{v}{\\lambda}$. The displacement of each wave is $y_i = A \\sin\\left(2\\pi\\left(f t - \\tfrac{s_i}{\\lambda}\\right)\\right)$, and the displacement of the water is the superposition $y = y_1 + y_2$. The amplitude $A_\\text{P}$ is the largest value of the sum $|y_1 + y_2|$ over one period, calculated from $360$ moments. The colours of the picture are calculated from the same sum at every point of the tank."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 1: walk along the measuring line",
+      "intro": "Test prediction 2. The distance between the sources is $6.0\\,\\text{cm}$ and the wavelength $2.0\\,\\text{cm}$, and they stay fixed. Move point P from the middle to the right and record a measurement at least at $x = 0$, $1.4\\,\\text{cm}$, $3.0\\,\\text{cm}$, $4.9\\,\\text{cm}$ and $7.4\\,\\text{cm}$. At which path differences is the amplitude largest, and at which is it almost zero?",
+      "initial": {
+        "d": 6,
+        "lam": 2,
+        "x": 0
+      },
+      "locked": [
+        "d",
+        "lam"
+      ],
+      "vary": "x",
+      "names": {
+        "d": "source separation d",
+        "lam": "wavelength λ",
+        "x": "position of point P x"
+      },
+      "units": {
+        "d": "cm",
+        "lam": "cm",
+        "x": "cm"
+      },
+      "measure": [
+        {
+          "key": "ds",
+          "label": "Δs (cm)"
+        },
+        {
+          "key": "ratio",
+          "label": "Δs/λ"
+        },
+        {
+          "key": "AP",
+          "label": "A_P (mm)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 2: the same point, a different wavelength",
+      "intro": "Point P is now at $x = 3.0\\,\\text{cm}$ directly in front of source $S_2$, so $s_1 = 10.0\\,\\text{cm}$, $s_2 = 8.0\\,\\text{cm}$ and the path difference $2.0\\,\\text{cm}$ stays constant. Change only the wavelength and record a measurement at least with the values $1.0\\,\\text{cm}$, $2.0\\,\\text{cm}$ and $4.0\\,\\text{cm}$. The frequency of the sources changes at the same time, because $f = \\tfrac{v}{\\lambda}$.",
+      "initial": {
+        "d": 6,
+        "lam": 2,
+        "x": 3
+      },
+      "locked": [
+        "d",
+        "x"
+      ],
+      "vary": "lam",
+      "names": {
+        "d": "source separation d",
+        "lam": "wavelength λ",
+        "x": "position of point P x"
+      },
+      "units": {
+        "d": "cm",
+        "lam": "cm",
+        "x": "cm"
+      },
+      "measure": [
+        {
+          "key": "ratio",
+          "label": "Δs/λ"
+        },
+        {
+          "key": "AP",
+          "label": "A_P (mm)"
+        },
+        {
+          "key": "f",
+          "label": "f (Hz)"
+        }
+      ],
+      "min": 2,
+      "question": {
+        "type": "choice",
+        "prompt": "According to your table, what decides whether point P is a point of constructive or destructive interference?",
+        "choices": [
+          {
+            "text": "The ratio of the path difference to the wavelength, $\\tfrac{\\Delta s}{\\lambda}$.",
+            "correct": true,
+            "feedback": "Correct. The path difference stayed $2.0\\,\\text{cm}$ all the time, but the amplitude was $2.0\\,\\text{mm}$ when $\\tfrac{\\Delta s}{\\lambda}$ was $2$ or $1$, and $0\\,\\text{mm}$ when it was $0.5$. A whole number means constructive and a half means destructive interference."
+          },
+          {
+            "text": "The path difference alone: when it stays the same, the interference stays the same.",
+            "feedback": "The path difference stayed constant at $2.0\\,\\text{cm}$ in the experiment, but the amplitude changed from $2.0\\,\\text{mm}$ to $0\\,\\text{mm}$ when the wavelength grew from $2.0\\,\\text{cm}$ to $4.0\\,\\text{cm}$. The path difference has to be compared with the wavelength: $2.0\\,\\text{cm}$ is one wavelength but only half a wavelength when $\\lambda = 4.0\\,\\text{cm}$."
+          },
+          {
+            "text": "The wavelength alone: long waves strengthen and short waves weaken each other.",
+            "feedback": "In the table both the short wavelength $1.0\\,\\text{cm}$ and the longer $2.0\\,\\text{cm}$ gave an amplitude of $2.0\\,\\text{mm}$, but the longest, $4.0\\,\\text{cm}$, gave zero. The wavelength alone does not decide; what matters is how many wavelengths fit into the path difference."
+          },
+          {
+            "text": "The distance of point P from the sources: near the sources it strengthens, far away it weakens.",
+            "feedback": "Point P stayed in the same place in the experiment, so the distances $s_1 = 10.0\\,\\text{cm}$ and $s_2 = 8.0\\,\\text{cm}$ did not change. Still, the amplitude varied between $0\\,\\text{mm}$ and $2.0\\,\\text{mm}$ with the wavelength. What matters is the difference of the distances relative to the wavelength."
+          }
+        ]
+      }
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion: when do waves strengthen each other",
+      "after": [
+        "koe-1",
+        "koe-2"
+      ],
+      "prompt": "Write, on the basis of your tables: for which values of the ratio $\\tfrac{\\Delta s}{\\lambda}$ was the amplitude at point P largest, and for which almost zero? Explain why exactly these path differences strengthen or weaken, and why the same point can be quiet at another wavelength.",
+      "model": "In experiment 1 the amplitude was largest, $2.0\\,\\text{mm}$, when the path difference was $0$, $2.0\\,\\text{cm}$ or $4.0\\,\\text{cm}$, that is, when $\\tfrac{\\Delta s}{\\lambda}$ was $0$, $1$ or $2$. It was almost zero, about $0.1\\,\\text{mm}$, at the path differences $0.97\\,\\text{cm}$ and $3.02\\,\\text{cm}$, where the ratio is about $0.5$ and $1.5$. The sources send out a crest at the same moment, so a path that is a whole wavelength longer brings the wave to the point in the same phase: crest meets crest. An extra path of half a wavelength brings it half a period late, so a crest meets a trough and the displacements cancel. In experiment 2 the path difference was $2.0\\,\\text{cm}$ all the time, but at the wavelength $4.0\\,\\text{cm}$ the ratio was $0.5$ and the amplitude $0\\,\\text{mm}$, whereas at the wavelengths $1.0\\,\\text{cm}$ and $2.0\\,\\text{cm}$ the amplitude was $2.0\\,\\text{mm}$. The numbers are values from the simulation.",
+      "criteria": [
+        "On the basis of the table I stated that the amplitude is largest when $\\tfrac{\\Delta s}{\\lambda}$ is a whole number and almost zero when it is a half, and I used at least two rows of the table.",
+        "I explained it with phase: a whole extra wavelength puts crest on crest, a half puts crest on trough.",
+        "I explained with experiment 2 that the same path difference can be constructive at one wavelength and destructive at another.",
+        "I mentioned that the numbers are values from the simulation."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Return to your predictions",
+      "prompt": "Compare your predictions with the theory and your tables. Then return to the opening question: why are there quiet spots in front of two loudspeakers, and why does covering one loudspeaker make the sound louder?",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2"
+      ],
+      "optional": true
+    },
+    {
+      "id": "fourier",
+      "stage": "selita",
+      "type": "theory",
+      "title": "Optional: a signal as a sum of sine waves",
+      "sections": [
+        "Fourier-analyysi"
+      ],
+      "optional": true
+    },
+    {
+      "id": "fourier-kysymys",
+      "stage": "selita",
+      "type": "choice",
+      "title": "Optional: read the spectrum",
+      "optional": true,
+      "prompt": "A spectrum is calculated with the Fourier transform from the sound of a guitar string. It has tall peaks at the frequencies $110\\,\\text{Hz}$, $220\\,\\text{Hz}$ and $330\\,\\text{Hz}$ and lower peaks above them. What does the spectrum tell about the sound?",
+      "choices": [
+        {
+          "text": "The sound is a sum of many sine waves, and its fundamental frequency is $110\\,\\text{Hz}$.",
+          "correct": true,
+          "feedback": "Correct. The spectrum tells which sine waves the sound is made of: the fundamental frequency $110\\,\\text{Hz}$ and its multiples $220\\,\\text{Hz}$ and $330\\,\\text{Hz}$. The heights of the peaks are the amplitudes with which the sine waves must be added to get the shape of the guitar's sound."
+        },
+        {
+          "text": "The guitar plays three notes in a row, first $110\\,\\text{Hz}$ and finally $330\\,\\text{Hz}$.",
+          "feedback": "The horizontal axis of the spectrum is frequency, not time, so it does not tell the order. All the peaks are in the same sound at the same time: the sound of one string is a sum of many sine waves."
+        },
+        {
+          "text": "The frequency of the sound is the mean of the peaks, $220\\,\\text{Hz}$.",
+          "feedback": "Frequencies are not averaged. The sound is a superposition in which every sine wave keeps its own frequency. The pitch is set by the fundamental frequency $110\\,\\text{Hz}$, and the multiples give the sound its timbre."
+        },
+        {
+          "text": "The spectrum shows how far the sound can be heard at each frequency.",
+          "feedback": "The vertical axis of the spectrum is the amplitude of each frequency in this sound, not a distance. It tells how strongly each sine wave is present in the sum."
+        }
+      ]
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the error",
+      "optional": true,
+      "prompt": "Two loudspeakers playing in phase play a sound with a wavelength of $0.80\\,\\text{m}$. A listener is $3.20\\,\\text{m}$ from one loudspeaker and $2.40\\,\\text{m}$ from the other. A student writes: \\\"The path difference is $3.20\\,\\text{m} - 2.40\\,\\text{m} = 0.80\\,\\text{m}$. The sound from farther away has travelled a whole wavelength farther, so it is late and cancels the sound from the nearer loudspeaker. The listener hears a weak sound.\\\" Where is the error?",
+      "choices": [
+        {
+          "text": "With a path difference of one wavelength the waves are in phase, so the sound is loud.",
+          "correct": true,
+          "feedback": "Correct. The path difference has been calculated correctly, $0.80\\,\\text{m} = 1 \\cdot \\lambda$. The wave from farther away lags by exactly one period, so a crest arrives together with a crest and the sound is loud. Destructive interference would need a path difference of $0.40\\,\\text{m}$ or $1.20\\,\\text{m}$."
+        },
+        {
+          "text": "The path difference is calculated as a sum, $3.20\\,\\text{m} + 2.40\\,\\text{m} = 5.60\\,\\text{m}$.",
+          "feedback": "The path difference is the difference of the distances, because it tells how much farther the other wave travels. The student's difference $0.80\\,\\text{m}$ is correct; the error is in the conclusion."
+        },
+        {
+          "text": "Destructive interference is impossible, because the loudspeakers play in phase.",
+          "feedback": "Waves sent out in phase can arrive at a point in opposite phase if the path difference is half a wavelength or $\\tfrac{3}{2}\\lambda$ and so on. Here, however, the path difference is a whole wavelength."
+        },
+        {
+          "text": "There is no error in the calculation: the sound from farther away is late and cancels the other.",
+          "feedback": "The path difference $0.80\\,\\text{m}$ is exactly one wavelength. Being late by one period does not change the phase, so the waves strengthen and do not cancel each other."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply to a new situation",
+      "prompt": "Two loudspeakers in phase play the same sound. A microphone is moved sideways from the perpendicular bisector of the loudspeakers, and the first quiet spot is found when the microphone is $5.17\\,\\text{m}$ from one loudspeaker and $5.00\\,\\text{m}$ from the other. The speed of sound is $340\\,\\text{m/s}$. What is the frequency of the sound? Give the answer in hertz.",
+      "answer": 1000,
+      "unit": "Hz",
+      "tolerance": 0.02,
+      "hints": [
+        "On the perpendicular bisector the path difference is zero and the sound is loud. What path difference does the first quiet spot next to it correspond to?",
+        "The first destructive spot is $n = 0$: $\\Delta s = \\tfrac{1}{2}\\lambda$, so $\\lambda = 2\\Delta s$. The frequency then comes from $v = f\\lambda$.",
+        "$\\Delta s = 5.17\\,\\text{m} - 5.00\\,\\text{m} = 0.17\\,\\text{m}$ and $\\lambda = 0.34\\,\\text{m}$."
+      ],
+      "mistakes": [
+        {
+          "value": 2000,
+          "feedback": "You used the path difference as the wavelength. With a path difference $\\Delta s = \\lambda$ the sound would be loud; at the first quiet spot the path difference is half a wavelength, so $\\lambda = 2 \\cdot 0.17\\,\\text{m} = 0.34\\,\\text{m}$."
+        },
+        {
+          "value": 32.9,
+          "feedback": "You used the distance $5.17\\,\\text{m}$ instead of the path difference. The interference is decided by the difference of the distances, $\\Delta s = 0.17\\,\\text{m}$, not by either distance alone."
+        }
+      ],
+      "solution": "**Given:** distances from the loudspeakers $s_1 = 5.17\\,\\text{m}$ and $s_2 = 5.00\\,\\text{m}$, speed of sound $v = 340\\,\\text{m/s}$; the spot is the first quiet spot next to the perpendicular bisector\n\n**Find:** the frequency $f$ of the sound in hertz\n\n**Principle:** The loudspeakers are in phase and play the same frequency. On the perpendicular bisector the path difference is zero and the interference is constructive, so the first quiet spot next to it is destructive interference with $n = 0$: the path difference is half a wavelength. The frequency follows from the wavelength by $v = f\\lambda$.\n\n**Formula:** $\\Delta s = s_1 - s_2 = \\tfrac{1}{2}\\lambda$, so $\\lambda = 2(s_1 - s_2)$, and $v = f\\lambda$, so\n\n$$f = \\frac{v}{2(s_1 - s_2)}$$\n\n**Conversions:** None needed: the distances are in metres and the speed in $\\text{m/s}$, so the frequency comes out in $\\tfrac{1}{\\text{s}} = \\text{Hz}$.\n\n**Substitution:** $f = \\dfrac{340\\,\\text{m/s}}{2 \\cdot (5.17\\,\\text{m} - 5.00\\,\\text{m})} = \\dfrac{340\\,\\text{m/s}}{0.34\\,\\text{m}} = 1000\\,\\text{Hz}$\n\n**Answer:** $1000\\,\\text{Hz}$ or $1.0\\,\\text{kHz}$, two significant figures, because the path difference $0.17\\,\\text{m}$ is given to two figures.\n\n**Reasonableness:** Check the other way: at $1000\\,\\text{Hz}$ the wavelength is $\\tfrac{340\\,\\text{m/s}}{1000\\,\\text{Hz}} = 0.34\\,\\text{m}$, and half of it is $0.17\\,\\text{m}$, as in the measured path difference. A kilohertz sound is an ordinary, clearly audible sound, so the order of magnitude fits."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise on three levels. Level 1 tasks use one principle, level 2 tasks need two steps or a unit conversion, and level 3 requires reasoning."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept",
+      "prompt": "Two sources in a ripple tank vibrate in phase at the same frequency, and the waves are equally large. Which statement about a point on a nodal line is true?",
+      "choices": [
+        {
+          "text": "The waves of both arrive, but a crest always meets a trough, so the water is almost at rest.",
+          "correct": true,
+          "feedback": "Correct. On a nodal line the path difference is $\\left(n + \\tfrac{1}{2}\\right)\\lambda$, so the waves always arrive in opposite phase. The displacements are equal and of opposite sign, and their sum is zero."
+        },
+        {
+          "text": "The waves do not reach the nodal line at all, because they cancel each other before it.",
+          "feedback": "The waves pass through the nodal line and continue behind it; they do not stop. At a point on the nodal line the displacements of both waves exist, but their sum is zero, because a crest and a trough arrive at the same time."
+        },
+        {
+          "text": "The water is on a wave crest on the nodal line all the time, because the crests of the two waves are on top of each other.",
+          "feedback": "Two waves overlapping does not always mean higher water. The displacements are added with their signs, and on a nodal line the $+y$ of one wave and the $-y$ of the other cancel all the time. Tall crests and deep troughs alternate on the lines of constructive interference."
+        },
+        {
+          "text": "The water is sometimes at rest and sometimes vibrates strongly, because the waves travel.",
+          "feedback": "The waves travel, but the path difference and the wavelength stay the same, so the phase difference at the point does not change. That is why the interference pattern stays in place and the water on a nodal line is almost at rest all the time."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Amplitude at a point",
+      "prompt": "Two sources in phase in a ripple tank have a frequency of $10\\,\\text{Hz}$, and the speed of the wave is $20\\,\\text{cm/s}$. Point Q is $13.0\\,\\text{cm}$ from source $S_1$ and $9.0\\,\\text{cm}$ from source $S_2$. The amplitude of each wave at point Q is $2.0\\,\\text{mm}$. What is the amplitude of the vibration of the water at point Q? Give the answer in millimetres.",
+      "answer": 4.0,
+      "unit": "mm",
+      "tolerance": 0.02,
+      "hints": [
+        "First calculate the wavelength from $v = f\\lambda$.",
+        "Compare the path difference $\\Delta s = s_1 - s_2$ with the wavelength: is the ratio a whole number or a half?",
+        "$\\lambda = 2.0\\,\\text{cm}$ and $\\Delta s = 4.0\\,\\text{cm} = 2\\lambda$."
+      ],
+      "mistakes": [
+        {
+          "value": 0,
+          "feedback": "The path difference $4.0\\,\\text{cm}$ is two whole wavelengths, not a half. The waves arrive in phase, so the amplitudes are added."
+        },
+        {
+          "value": 2.0,
+          "feedback": "This is the amplitude of one wave. At point Q there are the waves of both sources, and by the principle of superposition their displacements are added."
+        }
+      ],
+      "solution": "**Given:** frequency $f = 10\\,\\text{Hz}$, wave speed $v = 20\\,\\text{cm/s}$, distances $s_1 = 13.0\\,\\text{cm}$ and $s_2 = 9.0\\,\\text{cm}$, amplitude of each wave $A = 2.0\\,\\text{mm}$\n\n**Find:** the amplitude $A_\\text{Q}$ of the vibration of the water at point Q in millimetres\n\n**Principle:** The sources are in phase and have the same frequency, so the type of interference is decided by the ratio of the path difference to the wavelength. If the ratio is a whole number, the waves arrive in phase and by the principle of superposition the amplitudes are added.\n\n**Formula:** $\\lambda = \\dfrac{v}{f}$ and $\\Delta s = s_1 - s_2$; when $\\tfrac{\\Delta s}{\\lambda}$ is a whole number,\n\n$$A_\\text{Q} = A + A = 2A$$\n\n**Conversions:** None needed: the speed and the distances are in centimetres, so the wavelength comes out in centimetres, and the amplitude stays in millimetres.\n\n**Substitution:** $\\lambda = \\dfrac{20\\,\\text{cm/s}}{10\\,\\text{Hz}} = 2.0\\,\\text{cm}$, $\\Delta s = 13.0\\,\\text{cm} - 9.0\\,\\text{cm} = 4.0\\,\\text{cm}$, $\\dfrac{\\Delta s}{\\lambda} = \\dfrac{4.0\\,\\text{cm}}{2.0\\,\\text{cm}} = 2$, so the interference is constructive and $A_\\text{Q} = 2 \\cdot 2.0\\,\\text{mm} = 4.0\\,\\text{mm}$\n\n**Answer:** $4.0\\,\\text{mm}$, two significant figures like the amplitude $2.0\\,\\text{mm}$.\n\n**Reasonableness:** The amplitude cannot be larger than the sum of the amplitudes of the waves, $4.0\\,\\text{mm}$, and in constructive interference it is exactly that. If the path difference had been $3.0\\,\\text{cm}$, that is, $1.5\\lambda$, the amplitude would have been zero."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Explain the quiet spots of the loudspeakers",
+      "optional": true,
+      "prompt": "Return to the loudspeakers in the school yard. Explain with the principle of superposition and the path difference why the sound is sometimes loud and sometimes weak as you walk, why at a quiet spot the sound gets louder when one loudspeaker is covered, and what happens to the quiet spots if the frequency of the sound is raised.",
+      "model": "Both loudspeakers send out the same sound in phase, and at the listener the air pressure variation is the sum of two sound waves. When the difference of the distances is a whole number of wavelengths, $\\Delta s = n\\lambda$, the waves arrive in phase and strengthen each other. When the difference is $\\left(n + \\tfrac{1}{2}\\right)\\lambda$, a compression of one wave arrives at the same time as a rarefaction of the other, and the waves weaken each other: the sound is quiet. As the listener walks, the path difference changes, so these spots alternate. When one loudspeaker is covered, there is no wave to cancel, and the listener hears the sound of one loudspeaker, which is louder than the almost cancelled sum of two. When the frequency is raised, the wavelength $\\lambda = \\tfrac{v}{f}$ gets smaller, so the conditions are met at smaller path differences and the quiet spots move closer together.",
+      "criteria": [
+        "I say that at the listener the sound is the sum of two waves (superposition).",
+        "I give the conditions: a path difference of $n\\lambda$ gives a loud and $\\left(n + \\tfrac{1}{2}\\right)\\lambda$ a weak sound, and the path difference changes as the listener walks.",
+        "I explain that covering one loudspeaker removes the wave that cancelled the other.",
+        "I explain that a higher frequency makes the wavelength smaller and the quiet spots closer together."
+      ]
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, two quick questions. Answer first on your own and only then open the answer."
+    }
+  ]
+}
