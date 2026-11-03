@@ -27,7 +27,7 @@
     {
       "id": "fy6-4-L1-04",
       "level": 1,
-      "text": "Taskulampussa kaksi pientä lamppua on kytketty sarjaan $4{,}5\\,\\text{V}$:n paristoon. Jännitemittari näyttää toisen lampun yli $1{,}8\\,\\text{V}$. Kuinka suuri jännite on toisen lampun yli?",
+      "text": "Taskulampussa kaksi pientä lamppua on kytketty sarjaan $4{,}5\\,\\text{V}$:n paristoon. Jännitemittari näyttää ensimmäisen lampun yli $1{,}8\\,\\text{V}$. Kuinka suuri jännite on toisen lampun yli?",
       "answer": 2.7,
       "unit": "V",
       "tolerance": 0.02

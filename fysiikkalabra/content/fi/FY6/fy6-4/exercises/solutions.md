@@ -92,7 +92,7 @@
 **Annettu:** kuvasta pariston jännite $U = 12\,\text{V}$, vastus $R_1 = 40\,\Omega$ sarjassa rinnakkaisten vastusten $R_2 = 60\,\Omega$ ja $R_3 = 120\,\Omega$ kanssa
 **Kysytty:** vastuksen $R_3$ virta $I_3$ milliampeereina
 **Periaate:** Rinnakkaiset vastukset $R_2$ ja $R_3$ korvataan yhdellä vastuksella $R_{23}$, joka on sarjassa $R_1$:n kanssa. Paristosta lähtevä virta kulkee $R_1$:n ja koko rinnakkaisosan läpi. Rinnakkaisosan jännite on sama kummankin haaran yli, joten $R_3$:n virta saadaan siitä Ohmin laista.
-**Kuvaajan lukeminen:** Kuvasta luetaan arvot $12\,\text{V}$, $R_1 = 40\,\Omega$, $R_2 = 60\,\Omega$ ja $R_3 = 120\,\Omega$. Vastukset $R_2$ ja $R_3$ ovat samojen kahden haarautumispisteen välissä eli rinnan, ja $R_1$ on niiden kanssa samassa silmukassa eli sarjassa.
+**Kuvan lukeminen:** Kuvasta luetaan arvot $12\,\text{V}$, $R_1 = 40\,\Omega$, $R_2 = 60\,\Omega$ ja $R_3 = 120\,\Omega$. Vastukset $R_2$ ja $R_3$ ovat samojen kahden haarautumispisteen välissä eli rinnan, ja koko paristosta lähtevä virta kulkee $R_1$:n läpi ja sitten rinnakkaisosaan, joten $R_1$ ja rinnakkaisosa ovat peräkkäin eli sarjassa.
 **Kaava:** $R_{23} = \dfrac{R_2 R_3}{R_2 + R_3}$, $I = \dfrac{U}{R_1 + R_{23}}$, $U_{23} = R_{23} I$, josta $I_3 = \dfrac{U_{23}}{R_3}$
 **Muunnokset:** Ei tarvita laskun aikana. Lopuksi $1\,\text{A} = 1000\,\text{mA}$.
 **Sijoitus:** $R_{23} = \dfrac{60\,\Omega \cdot 120\,\Omega}{180\,\Omega} = 40\,\Omega$, $I = \dfrac{12\,\text{V}}{40\,\Omega + 40\,\Omega} = 0{,}15\,\text{A}$, $U_{23} = 40\,\Omega \cdot 0{,}15\,\text{A} = 6{,}0\,\text{V}$ ja $I_3 = \dfrac{6{,}0\,\text{V}}{120\,\Omega} = 0{,}050\,\text{A} = 50\,\text{mA}$
@@ -113,8 +113,8 @@
 **Annettu:** sarjaankytkennän kokonaisresistanssi $R_\text{s} = 250\,\Omega$, rinnankytkennän $R_\text{r} = 60\,\Omega$
 **Kysytty:** suuremman vastuksen resistanssi
 **Periaate:** Sarjaankytkennässä resistanssit summautuvat, ja rinnankytkennän kokonaisresistanssi on resistanssien tulo jaettuna niiden summalla. Kahdesta yhtälöstä saadaan vastusten summa ja tulo, ja ne määräävät vastukset.
-**Kaava:** $R_1 + R_2 = R_\text{s}$ ja $\dfrac{R_1 R_2}{R_1 + R_2} = R_\text{r}$, joten $R_1 R_2 = R_\text{r} R_\text{s}$. Kun $R_2 = R_\text{s} - R_1$, saadaan $R_1^2 - R_\text{s} R_1 + R_\text{r} R_\text{s} = 0$, josta $R_1 = \dfrac{R_\text{s} \pm \sqrt{R_\text{s}^2 - 4 R_\text{r} R_\text{s}}}{2}$
+**Kaava:** $R_1 + R_2 = R_\text{s}$ ja $R_1 R_2 = R_\text{r} R_\text{s}$ (rinnankytkennän kaavasta). Sijoitetaan $R_2 = R_\text{s} - R_1$, jolloin $R_1^2 - R_\text{s} R_1 + R_\text{r} R_\text{s} = 0$, josta $R_1 = \dfrac{R_\text{s} \pm \sqrt{R_\text{s}^2 - 4 R_\text{r} R_\text{s}}}{2}$
 **Muunnokset:** Ei tarvita, molemmat resistanssit ovat ohmeina.
 **Sijoitus:** $R_\text{r} R_\text{s} = 60\,\Omega \cdot 250\,\Omega = 15\,000\,\Omega^2$ ja $R_\text{s}^2 - 4 R_\text{r} R_\text{s} = 62\,500\,\Omega^2 - 60\,000\,\Omega^2 = 2500\,\Omega^2$, jonka neliöjuuri on $50\,\Omega$. Siis $R_1 = \dfrac{250\,\Omega \pm 50\,\Omega}{2}$, joten $R_1 = 150\,\Omega$ tai $R_1 = 100\,\Omega$
-**Vastaus:** $150\,\Omega$; toinen vastus on $100\,\Omega$. Kaksi merkitsevää numeroa kuten rinnankytkennän arvossa $60\,\Omega$.
+**Vastaus:** $150\,\Omega$; toinen vastus on $100\,\Omega$. Kaksi merkitsevää numeroa kuten arvossa $60\,\Omega$; data otetaan tarkkoina, sillä juuren alla oleva ero $62\,500 - 60\,000$ on pieni ja tulos herkkä datan viimeiselle numerolle.
 **Järkevyys:** Tarkistus: $150\,\Omega + 100\,\Omega = 250\,\Omega$ ja $\dfrac{150\,\Omega \cdot 100\,\Omega}{250\,\Omega} = 60\,\Omega$. Rinnankytkennän tulos on pienempi kuin pienempi vastus $100\,\Omega$, kuten pitää.

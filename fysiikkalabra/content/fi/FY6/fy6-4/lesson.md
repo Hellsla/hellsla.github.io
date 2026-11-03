@@ -99,7 +99,7 @@
 Virtapiirissä on usein useampi kuin yksi vastus tai lamppu. Kaksi vastusta voidaan kytkeä paristoon kahdella tavalla: peräkkäin samaan silmukkaan eli sarjaan tai eri haaroihin samojen kahden pisteen väliin eli rinnan. Kytkentätapa ratkaisee, miten virta ja jännite jakautuvat vastusten kesken ja kuinka suuri virta paristosta lähtee. Tässä luvussa paristo on ihanteellinen eli sen napojen välinen jännite ei riipu virrasta, ja johtimien resistanssi jätetään huomiotta.
 
 ### Sarjaankytkentä
-Sarjaankytkennässä vastukset ovat peräkkäin, ja varauksilla on vain yksi kulkureitti. Siksi sama virta $I$ kulkee jokaisen vastuksen läpi. Virta ei kulu vastuksessa: varausta ei katoa eikä kasaannu mihinkään piirin kohtaan. Vastuksessa varausten sähköistä energiaa muuttuu lämmöksi, ja siksi vastuksen napojen välillä on jännite. Pariston jännite jakautuu vastusten kesken, $U = U_1 + U_2$. Ohmin lain mukaan $U_1 = R_1 I$ ja $U_2 = R_2 I$, joten suuremman resistanssin yli on suurempi jännite.
+Sarjaankytkennässä vastukset ovat peräkkäin, ja varauksilla on vain yksi kulkureitti. Siksi sama virta $I$ kulkee jokaisen vastuksen läpi. Virta ei kulu vastuksessa: varausta ei katoa eikä kasaannu mihinkään piirin kohtaan. Vastuksen jännite kertoo, kuinka paljon kunkin varauksen sähköistä energiaa muuttuu siinä lämmöksi. Pariston jännite jakautuu vastusten kesken, $U = U_1 + U_2$. Ohmin lain mukaan $U_1 = R_1 I$ ja $U_2 = R_2 I$, joten suuremman resistanssin yli on suurempi jännite.
 
 <svg data-fig="series" viewBox="0 0 600 344" role="img" aria-label="Kytkentäkaavio, ei mittakaavassa: paristo ja kaksi vastusta R1 ja R2 sarjassa samassa silmukassa. Violetit virtanuolet kulkevat pariston plusnavasta R1:n ja R2:n kautta takaisin miinusnapaan, ja jokaisen nuolen merkintä on sama I. Sinisillä hakasilla merkityt jännitteet U1 ja U2 ovat vastusten yli, ja pariston jännite on U." style="max-width:100%;font-size:24px">
   <path d="M86,166 L86,92 L526,92 L526,262 L86,262 L86,194" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
@@ -147,8 +147,6 @@ Rinnankytkennässä vastukset ovat eri haaroissa samojen kahden haarautumispiste
   <foreignObject x="30" y="203.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$-$</div></foreignObject>
   <foreignObject x="126" y="181.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$U$</div></foreignObject>
   <circle cx="236" cy="86" r="5.5" fill="#1f2933"/>
-  <circle cx="236" cy="196" r="5.5" fill="#1f2933"/>
-  <circle cx="476" cy="86" r="5.5" fill="#1f2933"/>
   <circle cx="476" cy="196" r="5.5" fill="#1f2933"/>
   <rect x="318" y="72" width="76" height="28" rx="2" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
   <foreignObject x="339.5" y="33.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$R_1$</div></foreignObject>
@@ -160,9 +158,9 @@ Rinnankytkennässä vastukset ovat eri haaroissa samojen kahden haarautumispiste
   <line x1="408" y1="70" x2="439" y2="70" stroke="#7048e8" stroke-width="3" stroke-linecap="butt"/>
   <path d="M452,70 L438,76.5 L438,63.5 Z" fill="#7048e8" stroke-linejoin="round"/>
   <foreignObject x="413.5" y="31.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#7048e8">$I_1$</div></foreignObject>
-  <line x1="408" y1="214" x2="439" y2="214" stroke="#7048e8" stroke-width="3" stroke-linecap="butt"/>
-  <path d="M452,214 L438,220.5 L438,207.5 Z" fill="#7048e8" stroke-linejoin="round"/>
-  <foreignObject x="413.5" y="223.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#7048e8">$I_2$</div></foreignObject>
+  <line x1="408" y1="180" x2="439" y2="180" stroke="#7048e8" stroke-width="3" stroke-linecap="butt"/>
+  <path d="M452,180 L438,186.5 L438,173.5 Z" fill="#7048e8" stroke-linejoin="round"/>
+  <foreignObject x="413.5" y="141.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#7048e8">$I_2$</div></foreignObject>
   <line x1="330" y1="324" x2="295" y2="324" stroke="#7048e8" stroke-width="3" stroke-linecap="butt"/>
   <path d="M282,324 L296,317.5 L296,330.5 Z" fill="#7048e8" stroke-linejoin="round"/>
   <foreignObject x="296" y="333.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#7048e8">$I$</div></foreignObject>
@@ -243,7 +241,13 @@ Kuvaajassa vastus $R_1 = 100\,\Omega$ pysyy samana ja $R_2$ muuttuu. Sarjaankytk
 </svg>
 
 ### Sekakytkentä
-Monessa piirissä on sekä sarjaan että rinnan kytkettyjä vastuksia. Kokonaisresistanssi lasketaan vaiheittain. Ensin rinnakkaiset vastukset $R_2$ ja $R_3$ korvataan yhdellä vastuksella $R_{23}$, joka lasketaan rinnankytkennän kaavalla. Vastus $R_1$ on sarjassa sen kanssa, joten $R = R_1 + R_{23}$. Sen jälkeen paristosta lähtevä virta on $I = U : R$, ja kunkin osan jännite ja virta saadaan Ohmin laista.
+Monessa piirissä on sekä sarjaan että rinnan kytkettyjä vastuksia. Ratkaisu etenee vaiheittain, sisältä ulospäin:
+
+1. Korvaa rinnakkaiset vastukset $R_2$ ja $R_3$ yhdellä vastuksella $R_{23}$ rinnankytkennän kaavalla.
+2. Vastus $R_1$ on sarjassa sen kanssa, joten kokonaisresistanssi on $R = R_1 + R_{23}$.
+3. Paristosta lähtevä virta on $I = U : R$. Se kulkee sekä $R_1$:n että rinnakkaisosan läpi.
+4. Sarjaosien jännitteet saadaan Ohmin laista: $U_1 = R_1 I$ ja $U_{23} = R_{23} I$. Ne summautuvat pariston jännitteeksi.
+5. Jännite $U_{23}$ on sama kummankin rinnakkaisen vastuksen yli, joten haaravirrat ovat $I_2 = U_{23} : R_2$ ja $I_3 = U_{23} : R_3$. Ne summautuvat virraksi $I$.
 
 <svg data-fig="mixed" viewBox="0 0 600 340" role="img" aria-label="Kaksi kytkentäkaaviota vierekkäin, ei mittakaavassa. Vasemmalla paristoon on kytketty vastus R1 ja sen kanssa sarjaan kahden rinnakkaisen vastuksen R2 ja R3 ryhmä. Oikealla sama kytkentä, jossa rinnakkaiset vastukset on korvattu yhdellä vastuksella R23, joka on sarjassa R1:n kanssa." style="max-width:100%;font-size:24px">
   <path d="M72,171 L72,84 L278,84 L278,286 L72,286 L72,199" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>

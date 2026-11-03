@@ -11,7 +11,7 @@ new p5((p) => {
         HEATC = [232, 89, 12], PAPERC = [246, 241, 230], IRONC = [108, 117, 125];
   // geometry: wide 600 x 400; narrow (sim-root < 500 px) 600 x 600 with larger labels
   const WIDE = { H: 400, L: 72, T: 112, B: 340, Rx: 548, cy: 226, xa: 236, M: 230, am: 156, gap: 42 };
-  const NARROW = { H: 600, L: 72, T: 160, B: 540, Rx: 548, cy: 350, xa: 236, M: 350, am: 130, gap: 56 };
+  const NARROW = { H: 600, L: 72, T: 160, B: 540, Rx: 548, cy: 350, xa: 290, M: 350, am: 130, gap: 56 };
   let G = WIDE, sk = 1, fh = 13, labels = [];
   let selMode, slU, slR1, slR2, selSpeed, lU, lR1, lR2, readout;
   const offs = {};                     // each wire path's dot offset along it (px)
@@ -84,11 +84,12 @@ new p5((p) => {
     // wires
     p.noFill(); p.stroke(...INKC); p.strokeWeight(3 * sk); p.strokeJoin(p.ROUND);
     for (const w of P) { p.beginShape(); for (const [x, y] of w.pts) p.vertex(x, y); p.endShape(); }
-    // current dots: equal spacing, pace proportional to the wire's current (60 px/s per 100 mA, at most 360 px/s)
-    const space = 30 * sk;
+    // current dots: equal spacing, pace proportional to the wire's current (60 px/s per 100 mA); above 0.6 A in the main wire all wires are
+    // scaled by the same factor, so the dots of the two branches still add up to those of the main wire
+    const space = 30 * sk, kk = Math.min(1, 0.6 / Math.max(C.I, 1e-9));
     p.noStroke(); p.fill(...CUR);
     for (const w of P) {
-      const v = Math.min(360, 600 * w.I) * sk;
+      const v = 600 * w.I * kk * sk;
       offs[w.id] = ((offs[w.id] || 0) + v * dt) % space;
       const segs = [], tot = w.pts.slice(1).reduce((s, q, i) => { const d = Math.hypot(q[0] - w.pts[i][0], q[1] - w.pts[i][1]); segs.push(d); return s + d; }, 0);
       for (let s = offs[w.id]; s < tot; s += space) {
@@ -100,7 +101,7 @@ new p5((p) => {
     battery(L, cy, S.U);
     ammeter(am, T, C.I);
     if (S.mode === 'sarja') {
-      const x1 = G.H > 400 ? 296 : 312, x2 = G.H > 400 ? 470 : 456, drop = G.H > 400 ? 1.3 * fh : 0;
+      const x1 = G.H > 400 ? 296 : 312, x2 = G.H > 400 ? 450 : 456, drop = G.H > 400 ? 1.3 * fh : 0;
       resistor(x1, T, C.U1 * C.I1); resistor(x2, T, C.U2 * C.I2);
       lab('$R_1 = ' + S.R1 + '\\,\\Omega$', x1, T - gap, 'c', INKC);
       lab('$R_2 = ' + S.R2 + '\\,\\Omega$', x2, T - gap, 'c', INKC);
@@ -109,7 +110,8 @@ new p5((p) => {
       lab('$\\text{sama virta}$', Rx - 24 * sk, (T + B) / 2 + 0.3 * fh, 'r', CUR);
     } else if (S.mode === 'rinnan') {
       const xr = (xa + Rx) / 2;
-      for (const [x, y] of [[xa, T], [xa, M], [Rx, T], [Rx, M]]) { p.noStroke(); p.fill(...INKC); p.circle(x, y, 11 * sk); }
+      // dots only where the wire branches or joins, not at the plain corners
+      for (const [x, y] of [[xa, T], [Rx, M]]) { p.noStroke(); p.fill(...INKC); p.circle(x, y, 11 * sk); }
       resistor(xr, T, C.U1 * C.I1); resistor(xr, M, C.U2 * C.I2);
       lab('$R_1 = ' + S.R1 + '\\,\\Omega$', xr, T - gap, 'c', INKC);
       lab('$I_1 = ' + sig(C.I1 * 1000) + '\\,\\text{mA}$', xr, T + gap + 0.4 * fh, 'c', CUR);

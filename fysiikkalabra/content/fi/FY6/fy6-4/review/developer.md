@@ -1,9 +1,7 @@
 VERDICT: DONE
-
-Draft, round 1 (check_lesson.py: every line ok; check_layout also ok at 345 px).
-
-- `lesson.md`: Miksi (old series string of lights vs home lamps), Ydinajatus (sarjaan-, rinnankytkentä, kokonaisresistanssi), `## Kaava: Vastusten kokonaisresistanssi` with both laws derived from Ohm's law, two-resistor form, graph, `### Sekakytkentä`; seven-stage example (120 Ω ∥ 60 Ω on 9,0 V); two misconceptions; summary.
-- `figures.py`: IEC circuit helpers; hero, series, parallel, graph, mixed (lesson) and task figures task-mixed, siirto-mixed. Current arrows violet #7048e8, voltage blue #1971c2 (choice for FY6, not yet a course convention).
-- `inquiry.json`: hook, Ohm retrieval, two refutable predictions, sim, koe-1 (series) and koe-2 (parallel), conclusion, theory, reflect, example, Etsi virhe (forgotten reciprocal), mixed-circuit transfer, three checks, exit.
-- New sim `assets/sims/fy6/fy6-4/sim.js` (one/series/parallel, U, R1, R2, speed; current dots, glowing resistors; narrow 600×600), texts in `lang/fi.json` sims.fy6-4, `tests/sims/fy6-4.json` (44 assertions), `sim-spec.md`.
-- Exercises 5/4/3 with `answers.py` and full solutions; `lesson-answers.py`; exit ticket; three glossary terms.
+Round 1 (fix).
+- assets/sims/fy6/fy6-4/sim.js: dot speed v = 600·I·k with one shared k = min(1, 0.6/I_main), so branch dots always add up to the main wire; node dots only at the two real junctions; narrow parallel layout moves the branch start (xa 236 to 290) so "U = …" clears the wire; narrow series R2 and U2 moved left off the right wire. Tests unchanged, all pass; 390 px captures checked (koe-2, sim).
+- lessons/FY6/fy6-4/sim-spec.md: dropped the 360 px/s cap remark.
+- lessons/FY6/fy6-4/figures.py (+ regenerated lesson.md figures): parallel figure has nodes only at the junctions, I2 arrow above its wire like I1.
+- lesson.md: causal order in Sarjaankytkentä; Sekakytkentä is now a five-step list (R23, R, I, U1 and U23, branch currents).
+- inquiry.json: siirto mandatory, "Kuvan lukeminen", 0,6 A feedback covers both causes (only the parallel part, or 1/R not inverted); ennuste-2 "ihanteelliseen" and the correct option a plain claim; koe-2 starts at R2 = 100 Ω with intro adjusted; koe-1/koe-2 `values` make the Alkutila line and table R1, R2 maths; johtopaatos prompt asks for model values and assumptions.
