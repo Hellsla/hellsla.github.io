@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 2114363472e26314
+CONTENT-HASH: 5e46e6d0339ca7fb
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fy5-1-L3-01 text — "Kuinka suuri on jalan voiman momentti kammen akselin suhteen tässä asennossa?" follows a question about the maximum and zero positions, so "tässä" can be read as the maximum position ($87{,}5\,\text{Nm}$) instead of the given $45^\circ$ — "…kammen ollessa tässä $45^\circ$:n asennossa?"
-- [Minor] fy5-1-L3-01 solution, Periaate — "vaikutussuora on pystysuora suora polkimen kautta" is clumsy — "vaikutussuora on polkimen kautta kulkeva pystysuora".
+- [Minor] fy5-1-L3-01 solution, Periaate — "vaikutussuora on pystysuora suora polkimen kautta" is still clumsy — "vaikutussuora on polkimen kautta kulkeva pystysuora".
 
 ## Checked
-- open-exercises-1280 L1 parts 1, 2, 4 (the ruutu grid figure: grid, scale bar, dashed line of action, $\overline{F}$ and $P$ labels all readable, $r=3$ squares matches), L2 parts 1, 3, L3 parts 1, 3; solution cards, answer boxes, aligned Sijoitus rows, unit inputs.
-- Figure description and values of fy5-1/ruutu consistent; solution reads the arm without giving the answer in the task.
+- Delta, round 2. Opened open-exercises-L3-1280-1: the task text now ends "kammen ollessa tässä $45^\circ$:n asennossa", unambiguous, case ending after the maths correct, layout intact.
+- Solution text edits (kevyt lauta, $231\,\text{N} \approx 2{,}3\cdot 10^{2}\,\text{N}$, "ajosuuntaan osoittaessaan") and the otekohta wording in exercise hints are plain-text-free and fluent; no layout change expected beyond line length.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 4 · accessibility 4
