@@ -120,7 +120,13 @@
     "local_status_building": "Under construction",
     "local_status_home_building": "Course under construction",
     "local_status_note_building": "Units are published as they are completed and checked. The scope and assessment have not been confirmed.",
-    "local_status_ready": "Ready"
+    "local_status_ready": "Ready",
+    "path_heading": "Start here",
+    "path_lead": "An experimental investigation proceeds through these eight steps. Each step has a skill you practise, a recommended investigation and the guides you need. Go in order or return to a step when you need it.",
+    "path_investigation": "Recommended investigation:",
+    "path_guides": "ICT guides:",
+    "path_hubs": "All investigations and guides",
+    "local_background": "About the course"
   },
   "lesson": {
     "steps_nav": "Steps of the lesson",
@@ -1333,7 +1339,14 @@
     "mode_short_O": "guided",
     "mode_short_OO": "partly guided",
     "mode_short_I": "independent",
-    "builds_on": "Builds on:"
+    "builds_on": "Builds on:",
+    "bank_title": "Investigation bank",
+    "bank_hub": {
+      "one": "{{n}} investigation. Search by name or equipment and filter by topic and level.",
+      "other": "{{n}} investigations. Search by name or equipment and filter by topic and level."
+    },
+    "bank_lead": "All experimental investigations in one place. Filter the list by topic, physics level and experiment level.",
+    "bank_description": "Bank of experimental physics investigations by topic and level."
   },
   "guides": {
     "used_by": "You need this in the investigations:",
@@ -1343,7 +1356,16 @@
     "course_heading": "ICT guides",
     "course_lead": "Short guides to the skills the investigations need. Each investigation says which guide you need and when.",
     "prereq_guides": "guide:",
-    "notice_draft": "This guide is a draft that has not been reviewed yet."
+    "notice_draft": "This guide is a draft that has not been reviewed yet.",
+    "index_title": "ICT skills",
+    "index_eyebrow": "Guides for experimental physics",
+    "index_lead": "Guides to handling measurement data, graphs and graphical analysis in Graphical Analysis Pro, from measuring to reporting. Study them in order or open one when an investigation needs it.",
+    "index_hub": {
+      "one": "{{n}} guide to measuring, graphs, fitting, uncertainty and reporting.",
+      "other": "{{n}} guides to measuring, graphs, fitting, uncertainty and reporting."
+    },
+    "index_description": "ICT skills: guides to measurement data and graphical analysis in Graphical Analysis Pro.",
+    "back_to_index": "Back to ICT skills"
   },
   "fbd": {
     "lead": "Force diagram, arrows to scale:",

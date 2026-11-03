@@ -16,15 +16,15 @@
       "tekemään mittausaineistoon perustuvia johtopäätöksiä",
       "kirjoittamaan selkeän ja toistettavan työselostuksen"
     ],
-    "themes": [
-      "Tieteellinen tutkimus ja tutkimuskysymykset",
-      "Hypoteesit, teoreettiset mallit ja ennusteet",
-      "Kokeen suunnittelu, muuttujat ja vakioidut suureet",
-      "Mittausmenetelmät ja järjestelmällinen mittaaminen",
-      "Graafinen analyysi ja matemaattinen mallintaminen",
-      "Mittausepävarmuus ja luotettavuus",
-      "Tieteellinen raportointi ja mittauksiin perustuvat johtopäätökset",
-      "Itsenäinen kokeellinen tutkimus"
+    "path": [
+      {"title": "Tutkimuskysymys", "text": "Muotoilet kysymyksen, johon voi vastata mittaamalla: mitä suuretta muutat, mitä mittaat ja mitkä suureet pidät samoina.", "investigation": "fy10-pomppukorkeus", "guides": ["tvt-taulukkolaskenta", "tvt-kuvaaja"]},
+      {"title": "Hypoteesi ja teoreettinen malli", "text": "Ennustat fysiikan mallin avulla, miten suureet riippuvat toisistaan, ja päätät ennen mittausta, millainen kuvaaja tukisi mallia.", "investigation": "fy10-leikkiauto", "guides": ["tvt-kuvaaja", "tvt-nopeus-datasta"]},
+      {"title": "Kokeen suunnittelu ja muuttujat", "text": "Valitset muutettavan ja mitattavan suureen, päätät, mitkä suureet pidät vakioina, ja suunnittelet mittausalueen ja mittausten määrän.", "investigation": "fy10-heiluri", "guides": ["tvt-taulukkolaskenta", "tvt-kuvaaja"]},
+      {"title": "Mittaaminen", "text": "Mittaat järjestelmällisesti, toistat mittaukset ja kirjaat mittaustarkkuuden. Anturin tai videon datan siirrät Graphical Analysis Prohon.", "investigation": "fy10-jousivakio", "guides": ["tvt-mittausohjelma", "tvt-videoanalyysi", "tvt-taulukkolaskenta"]},
+      {"title": "Graafinen analyysi", "text": "Teet mittauspisteistä kuvaajan Graphical Analysis Prolla, sovitat siihen fysiikan mallin mukaisen funktion ja tulkitset sovituksen parametrit fysikaalisesti.", "investigation": "fy10-uppokuumennin", "guides": ["tvt-kuvaaja", "tvt-suoran-sovitus", "tvt-kulmakerroin"]},
+      {"title": "Mittausepävarmuus ja luotettavuus", "text": "Arvioit, kuinka tarkka tuloksesi on, ja vertaat kahdella menetelmällä saatuja tuloksia epävarmuuksineen.", "investigation": "fy10-hyppy", "guides": ["tvt-epavarmuus", "tvt-nopeus-datasta"]},
+      {"title": "Tulosten raportointi", "text": "Kirjoitat työselostuksen, jonka perusteella toinen voi toistaa kokeen: kuvaajat, tulos epävarmuuksineen ja mittauksiin perustuvat johtopäätökset.", "investigation": "fy10-jaahtyminen", "guides": ["tvt-tyoselostus", "tvt-epavarmuus"]},
+      {"title": "Itsenäinen tutkimus", "text": "Valitset tutkimuksen tutkimuspankista, suunnittelet sen itse, teet mittaukset ja raportoit tuloksesi itsenäisen työtavan mukaan.", "investigation": "fy10-hissi", "guides": ["tvt-mittausohjelma", "tvt-nopeus-datasta", "tvt-tyoselostus"]}
     ],
     "modes": [
       {"title": "Ohjattu tutkimus", "text": "Menetelmä ja analyysin tärkeimmät vaiheet on tuettu. Ennustat, selität ja pohdit silti itse."},

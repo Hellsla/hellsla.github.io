@@ -1,5 +1,5 @@
 /* The investigation bank of a course page (scripts/investigations.py bank, teacher 2026-10-31): a search field and
-   four selects narrow the list in place, without reloading. Without scripts the form stays hidden and every
+   three selects narrow the list in place, without reloading. Without scripts the form stays hidden and every
    investigation shows; "Näytä kaikki" (the form's reset) shows them all again. The count is announced politely. */
 (function () {
   const form = document.getElementById('bank-filter');
@@ -11,7 +11,7 @@
   const norm = (s) => s.toLowerCase().normalize('NFC').trim();
   function apply() {
     const q = norm(form.q.value);
-    const want = { topic: form.topic.value, f: form.f.value, e: form.e.value, mode: form.mode.value };
+    const want = { topic: form.topic.value, f: form.f.value, e: form.e.value, mode: form.mode ? form.mode.value : '' };
     let shown = 0;
     for (const li of items) {
       const ok = (!q || q.split(/\s+/).every((w) => li.dataset.words.includes(w)))

@@ -141,8 +141,9 @@ def span(ls): return ls[0] if len(ls) == 1 else f"{ls[0]}–{ls[-1]}"
 
 def bank(T, items):
     """The course page's investigation bank (teacher 2026-10-31): every investigation listed, its name and question
-    first, then its topic, F and E levels, working modes and the modules it builds on; above it a small filter form
-    (search by name, question or equipment; topic; physics level; experiment level; working mode) that narrows the
+    first, then its topic, F and E levels and the modules it builds on; above it a small filter form
+    (search by name, question or equipment; topic; physics level; experiment level; the working mode is chosen on
+    the investigation's own page, teacher 2026-11-03) that narrows the
     list in place (templates/invfilter.js). Without scripts the form stays hidden and the whole list shows.
     items: [(id, investigation dict)] in the course's order."""
     def opt(name, label, values):
@@ -155,7 +156,6 @@ def bank(T, items):
             + opt("topic", T("investigation.filter_topic"), [(t, T("investigation.topic_" + t)) for t in TOPICS])
             + opt("f", T("investigation.filter_physics"), [(f"F{k}", f"F{k}") for k in (1, 2, 3)])
             + opt("e", T("investigation.filter_experiment"), [(f"E{k}", f"E{k}") for k in (1, 2, 3)])
-            + opt("mode", T("investigation.filter_mode"), [(m, T("investigation.mode_" + m)) for m in MODES])
             + f'<button type="reset" class="bank-reset">{T("investigation.filter_reset")}</button>'
             f'<p class="bank-count" id="bank-count" aria-live="polite" data-template="{esc(T("investigation.filter_count"))}"></p></form>')
     rows = ""
@@ -165,7 +165,6 @@ def bank(T, items):
         meta = (f'<span class="bank-topic">{T("investigation.topic_" + d["topic"])}</span>'
                 f'<span class="bank-level" title="{T("investigation.level_physics")}">{span(fl)}</span>'
                 f'<span class="bank-level" title="{T("investigation.level_experiment")}">{span(el)}</span>'
-                f'<span class="bank-modes">{", ".join(T("investigation.mode_short_" + m) for m in d["modes"])}</span>'
                 f'<span class="bank-mods">{T("investigation.builds_on")} {", ".join(d.get("modules", []))}</span>')
         rows += (f'<li class="live bank-item" data-topic="{d["topic"]}" data-f="{" ".join(fl)}" data-e="{" ".join(el)}" '
                  f'data-mode="{" ".join(d["modes"])}" data-words="{esc(words)}"><a href="{i}.html">{esc(d["title"])}</a>'

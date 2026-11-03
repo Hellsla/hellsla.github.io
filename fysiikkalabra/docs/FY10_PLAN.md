@@ -42,7 +42,17 @@ printed twice; two lack titles; six lack equipment lists; four need safety value
 pendulum card names Espoon yhteislyseo (check authorship before adapting wording); the template's second way of
 estimating the slope's uncertainty is missing.
 
-## Proposed pathway (phase B, for the teacher's review)
+## Aloita tästä (teacher's brief 2026-11-03)
+The course page opens with the eight-step path (`local-courses.json` FY10 `path`): Tutkimuskysymys · Hypoteesi ja
+teoreettinen malli · Kokeen suunnittelu ja muuttujat · Mittaaminen · Graafinen analyysi · Mittausepävarmuus ja
+luotettavuus · Tulosten raportointi · Itsenäinen tutkimus. Each step: the skill in one or two sentences, one
+recommended investigation (pomppukorkeus, leikkiauto, heiluri, jousivakio, uppokuumennin, hyppy, jäähtyminen, hissi;
+the core column below, with Hyppy for step 6 and Jäähtyminen for step 7 so no investigation is recommended twice) and
+the TVT-ohjeet it needs. Then two cards: the bank `tutkimukset.html` and the TVT index `tvt.html`; goals, working modes,
+the report template and the chapters to prepare come last under *Opintojakson taustaa*. No lesson count, credits or
+assessment. All graphs and graphical analysis in Graphical Analysis Pro, no alternative graphing programs.
+
+## Proposed pathway (phase B, approved 2026-10-30)
 Each theme gets one or two investigations from the library. The early ones need only FY1–FY4, whose chapters are
 published, so a student without FY5–FY8 can follow the whole core path; FY5–FY8 investigations are options.
 

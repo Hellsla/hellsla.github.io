@@ -10,6 +10,11 @@ A course's fields (all texts in the language of the file):
   title, subtitle, school, status        required; status "planning" = the teacher's working version, shown as such
   description                            required, one paragraph
   goals, themes                          lists of one line each (goals complete "Opintojaksolla opit …")
+  path                                   optional: [{title, text, investigation, guides}], the course's learning path
+                                         (FY10 "Aloita tästä", teacher 2026-11-03): each step a skill in one or two
+                                         sentences, one recommended investigation and the TVT-ohjeet the step needs.
+                                         Shown first on the course page; a course with a path lists its investigations
+                                         on the bank page (tutkimukset.html) and its guides on the TVT index (tvt.html)
   modes                                  [{title, text}]: how much guidance the investigations give
   report                                 [{title, text}]: the sections of the course's report template
   prepare                                [{id, why}]: published Ruukkilabra chapters to study first, by lesson id;
@@ -72,6 +77,12 @@ def validate(curriculum):
                 elif u["id"] in seen: errs.append(f"{REGISTRY} {code}: unit {u['id']} is listed twice")
                 seen.add(u.get("id"))
         if c.get("chapters") and not lang: errs.append(f"{REGISTRY} {code}: a course with chapters of units names their language")
+        import investigations, guides
+        inv_ids, guide_ids = set(investigations.ids()), set(guides.ids())
+        for i, st in enumerate(c.get("path", []), 1):
+            if not (st.get("title") and st.get("text")): errs.append(f"{REGISTRY} {code}: path step {i} needs title and text")
+            if st.get("investigation") not in inv_ids: errs.append(f"{REGISTRY} {code}: path step {i}: investigation {st.get('investigation')!r} does not exist")
+            errs += [f"{REGISTRY} {code}: path step {i}: guide {g!r} does not exist" for g in st.get("guides", []) if g not in guide_ids]
         for f in ("modes", "report"):
             errs += [f"{REGISTRY} {code}: {f}[{i}] needs title and text" for i, x in enumerate(c.get(f, [])) if not (x.get("title") and x.get("text"))]
     return errs
@@ -98,7 +109,32 @@ def home_row(code, c, T, investigations=0, n_units=0):
             f'<span class="mod-go" aria-hidden="true">{T("site.open_course")}</span></li>')
 
 
-def page_body(code, c, T, chapters, published, investigations=(), guides_html="", course_units=()):
+BANK_PAGE = "tutkimukset.html"           # the investigation bank of a course with a path (teacher 2026-11-03)
+TVT_PAGE = "tvt.html"                    # the TVT index, shared by every course (scripts/guides.py index_body)
+
+
+def inv_title(iid, lang):
+    import investigations
+    return investigations.load(iid, lang)["title"]
+
+
+def bank_section(c, T, investigations, heading=True):
+    """The investigation bank in the course's pathway order (teacher 2026-10-31)."""
+    import investigations as inv
+    order = {i: n for n, i in enumerate(c.get("pathway", []))}
+    items = sorted(investigations, key=lambda x: (order.get(x[0], len(order)), x[1]["title"]))
+    head = (f'<h2 id="tutkimukset">{T("investigation.course_heading")}</h2>' if heading else "")
+    return (head + f'<p class="section-lead">{T.count("investigation.course_lead_n", len(items))} '
+            f'{T("investigation.bank_note")}</p>' + inv.bank(T, items))
+
+
+def bank_page(code, c, T, investigations):
+    """tutkimukset.html: the course's investigation bank with its search and filters (topic, F, E)."""
+    return (f'<span class="eyebrow">{code} · {esc(c["title"])}</span><h1>{T("investigation.bank_title")}</h1>'
+            f'<p class="lead">{T("investigation.bank_lead")}</p>' + bank_section(c, T, investigations, heading=False))
+
+
+def page_body(code, c, T, chapters, published, investigations=(), guide_pages=(), course_units=()):
     """The course landing page. chapters: lesson id -> (module code, title) in this language; published: the page
     names this language built. Planned parts say so, and a chapter not published here is named without a link."""
     status = c["status"]
@@ -127,25 +163,47 @@ def page_body(code, c, T, chapters, published, investigations=(), guides_html=""
             out += (f'<li class="unit-chapter"><h3><span class="l-num">{i}</span><span{lang_attr}>{esc(ch["title"])}</span></h3>'
                     f'<p class="local-why"{lang_attr}>{esc(ch["question"])}</p><ol class="lessons">{items}</ol></li>')
         out += "</ol>"
-    if investigations:                   # the course's published investigations: canonical pages it refers to, never copies
-        import investigations as inv     # the bank with its filter (teacher 2026-10-31)
-        order = {i: n for n, i in enumerate(c.get("pathway", []))}
-        investigations = sorted(investigations, key=lambda x: (order.get(x[0], len(order)), x[1]["title"]))
-        out += (f'<h2 id="tutkimukset">{T("investigation.course_heading")}</h2><p class="section-lead">{T.count("investigation.course_lead_n", len(investigations))} '
-                f'{T("investigation.bank_note")}</p>' + inv.bank(T, investigations))
-    out += guides_html                   # the TVT-ohjeet the investigations link to (scripts/guides.py), right after them
+    hx = "h2"
+    if c.get("path"):                    # FY10 (teacher 2026-11-03): start here, then the bank and the TVT index, background last
+        import guides
+        inv_titles = {i: d["title"] for i, d in investigations}
+        steps = ""
+        for n, st in enumerate(c["path"], 1):
+            iid = st["investigation"]
+            inv = (f'<a href="{iid}.html">{esc(inv_titles[iid])}</a>' if iid in inv_titles
+                   else f'<span>{esc(inv_title(iid, T.lang))}</span> <span class="tag">{T("site.lesson_coming")}</span>')
+            tvt = "".join(f"<li>{guides.link(g, guides.load(g, T.lang)['title'], guide_pages, T.lang)}</li>" for g in st.get("guides", []))
+            steps += (f'<li class="path-step"><span class="l-num" aria-hidden="true">{n}</span><div class="path-body">'
+                      f'<h3><span class="visually-hidden">{n}. </span>{esc(st["title"])}</h3><p>{esc(st["text"])}</p>'
+                      f'<p class="path-inv"><span class="path-label">{T("site.path_investigation")}</span> {inv}</p>'
+                      + (f'<div class="path-tvt"><span class="path-label">{T("site.path_guides")}</span><ul>{tvt}</ul></div>' if tvt else "")
+                      + "</div></li>")
+        out += (f'<h2 id="aloita">{T("site.path_heading")}</h2><p class="section-lead">{T("site.path_lead")}</p>'
+                f'<ol class="course-path">{steps}</ol>')
+        hubs = ""
+        if investigations:
+            hubs += (f'<li><a href="{BANK_PAGE}"><strong>{T("investigation.bank_title")}</strong>'
+                     f'<span>{T.count("investigation.bank_hub", len(investigations))}</span></a></li>')
+        if guide_pages:
+            hubs += (f'<li><a href="{TVT_PAGE}"><strong>{T("guides.index_title")}</strong>'
+                     f'<span>{T.count("guides.index_hub", len(guide_pages))}</span></a></li>')
+        if hubs: out += f'<h2 id="pankki">{T("site.path_hubs")}</h2><ul class="course-hubs">{hubs}</ul>'
+        out += f'<h2 id="taustaa">{T("site.local_background")}</h2>'
+        hx = "h3"
+    elif investigations:                 # the course's published investigations: canonical pages it refers to, never copies
+        out += bank_section(c, T, investigations)
     if c.get("goals"):
-        out += (f'<h2 id="tavoitteet">{T("site.local_goals")}</h2><p class="section-lead">{T("site.local_goals_note")}</p>'
+        out += (f'<{hx} id="tavoitteet">{T("site.local_goals")}</{hx}><p class="section-lead">{T("site.local_goals_note")}</p>'
                 '<ul class="local-goals">' + "".join(f"<li>{esc(g)}</li>" for g in c["goals"]) + "</ul>")
     if c.get("themes"):
-        out += (f'<h2 id="eteneminen">{T("site.local_themes")}</h2><p class="section-lead">{T("site.local_themes_lead")}</p><ol class="lessons">'
+        out += (f'<{hx} id="eteneminen">{T("site.local_themes")}</{hx}><p class="section-lead">{T("site.local_themes_lead")}</p><ol class="lessons">'
                 + "".join(f'<li class="soon"><span class="l-num">{i}</span><span>{esc(t)}</span></li>'
                           for i, t in enumerate(c["themes"], 1)) + "</ol>")
     if c.get("modes"):
-        out += (f'<h2 id="tyotavat">{T("site.local_modes")}</h2><p class="section-lead">{T("site.local_modes_lead")}</p><dl class="local-modes">'
+        out += (f'<{hx} id="tyotavat">{T("site.local_modes")}</{hx}><p class="section-lead">{T("site.local_modes_lead")}</p><dl class="local-modes">'
                 + "".join(f'<dt>{esc(m["title"])}</dt><dd>{esc(m["text"])}</dd>' for m in c["modes"]) + "</dl>")
     if c.get("report"):
-        out += (f'<h2 id="tyoselostus">{T("site.local_report")}</h2><p class="section-lead">{T("site.local_report_lead")}</p><ol class="local-report">'
+        out += (f'<{hx} id="tyoselostus">{T("site.local_report")}</{hx}><p class="section-lead">{T("site.local_report_lead")}</p><ol class="local-report">'
                 + "".join(f'<li><strong>{esc(r["title"])}</strong>: {esc(r["text"])}</li>' for r in c["report"]) + "</ol>")
     if c.get("prepare"):
         items = ""
@@ -154,7 +212,7 @@ def page_body(code, c, T, chapters, published, investigations=(), guides_html=""
             name = (f'<a href="{p["id"]}.html">{esc(title)}</a>' if f'{p["id"]}.html' in published
                     else f'<span>{esc(title)}</span> <span class="tag">{T("site.lesson_coming")}</span>')
             items += f'<li><span class="mod-code">{mod}</span> {name}<span class="local-why">{esc(p["why"])}</span></li>'
-        out += f'<h2 id="valmistaudu">{T("site.local_prepare")}</h2><p class="section-lead">{T("site.local_prepare_lead")}</p><ul class="local-prepare">{items}</ul>'
+        out += f'<{hx} id="valmistaudu">{T("site.local_prepare")}</{hx}><p class="section-lead">{T("site.local_prepare_lead")}</p><ul class="local-prepare">{items}</ul>'
     return out
 
 

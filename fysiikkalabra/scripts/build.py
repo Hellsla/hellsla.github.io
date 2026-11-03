@@ -311,7 +311,7 @@ def link_languages():
                         if (OUTS[other] / module).is_file(): target = f"{module}#unavailable-{name[:-5]}"
                         else:                    # a local course (or its investigation) this language lacks: the course's front page note
                             home = (OUTS[other] / "index.html").read_text()
-                            guide = (tuple(local_courses.load()) if name.startswith("tvt-") else ())   # a TVT-ohje: its course's note
+                            guide = (tuple(local_courses.load()) if name.startswith("tvt") or name == local_courses.BANK_PAGE else ())   # a TVT-ohje, the TVT index or the bank: the course's note
                             ids = [i for i in (name[:-5], module[:-5]) + guide if f'id="unavailable-{i}"' in home]
                             target = "index.html" + (f"#unavailable-{ids[0]}" if ids else "")
                             key = "site.lang_unavailable_home"
@@ -655,8 +655,10 @@ def build_language(lang):
         for ref in guides.pic_refs(gid, lang):            # screenshots, at the same relative path as a lesson's pictures
             if not courses.pic_source(ref).is_file(): sys.exit(f"{gid}: picture {ref} not found (expected assets/{ref})")
             (SITE / ref).parent.mkdir(parents=True, exist_ok=True); shutil.copy(courses.pic_source(ref), SITE / ref); assets.append(ref)
-        html = (texts(tpl).replace("{{title}}", esc(d["title"])).replace("{{course}}", "FY10").replace("{{notice}}", "" if st["state"] == "reviewed" else f'<p class="notice" role="note">{T("guides.notice_draft")}</p>')
-                .replace("{{strings}}", strings_block(None)).replace("{{back_to_course}}", esc(T("site.back_to_course", course="FY10")))
+        # a guide belongs to no single course (teacher 2026-11-03): its crumb and its back link go to the TVT index
+        html = (texts(tpl).replace('<a href="{{course}}.html">{{course}}</a>', f'<a href="{local_courses.TVT_PAGE}">{esc(T("guides.index_title"))}</a>')
+                .replace('<a href="{{course}}.html">', f'<a href="{local_courses.TVT_PAGE}">').replace("{{title}}", esc(d["title"])).replace("{{course}}", esc(T("guides.index_title"))).replace("{{notice}}", "" if st["state"] == "reviewed" else f'<p class="notice" role="note">{T("guides.notice_draft")}</p>')
+                .replace("{{strings}}", strings_block(None)).replace("{{back_to_course}}", esc(T("guides.back_to_index")))
                 .replace("{{toc}}", gtoc).replace("{{main}}", body).replace("{{scripts}}", "")
                 .replace("{{description}}", esc(d["description"])).replace("{{url}}", URL + f"{gid}.html")
                 .replace("{{home}}", HOME).replace("{{languages}}", languages_nav(f"{gid}.html")))
@@ -689,11 +691,20 @@ def build_language(lang):
     for code, c in local.items():
         cu = [(u, units.load(u, ul), os.path.relpath(OUTS[ul] / f"{u}.html", out).replace(os.sep, "/")) for u, ul in unit_pub.items() if units.load(u, ul)["course"] == code]
         local_rows += local_courses.home_row(code, c, T, sum(code in d["courses"] for d in inv_built.values()), len(cu))
+        course_inv = [(i, d) for i, d in inv_built.items() if code in d["courses"]]
+        has_path = bool(c.get("path"))
         (out / f"{code}.html").write_text(page(f"{code} {c['title']}", local_courses.page_body(code, c, T, chapters, {f"{i}.html" for i in built_ids},
-                                                                                                  [(i, d) for i, d in inv_built.items() if code in d["courses"]],
-                                                                                                  guides.course_section(T, published, lang) if code == "FY10" else "", cu)
-                                                + '<script src="invfilter.js"></script>',
+                                                                                                  course_inv, {f"{g}.html" for g in guide_built} if has_path else (), cu)
+                                                + ("" if has_path else '<script src="invfilter.js"></script>'),
                                                 f'<a href="index.html">{T("site.name")}</a> › {code}', f"{code}.html", c["description"]))
+        if has_path and course_inv:      # the bank on a page of its own (teacher 2026-11-03), found from the course page
+            (out / local_courses.BANK_PAGE).write_text(page(T("investigation.bank_title"), local_courses.bank_page(code, c, T, course_inv) + '<script src="invfilter.js"></script>',
+                                                            f'<a href="index.html">{T("site.name")}</a> › <a href="{code}.html">{code}</a> › {T("investigation.bank_title")}',
+                                                            local_courses.BANK_PAGE, T("investigation.bank_description")))
+    if guide_built:                      # the TVT index (teacher 2026-11-03): every published guide in a learning order, for any course
+        (out / local_courses.TVT_PAGE).write_text(page(T("guides.index_title"), guides.index_body(T, {f"{g}.html" for g in guide_built}, lang),
+                                                       f'<a href="index.html">{T("site.name")}</a> › {T("guides.index_title")}',
+                                                       local_courses.TVT_PAGE, T("guides.index_description")))
     local_notes = "".join(f'<p class="unavailable" id="unavailable-{code}" role="note" tabindex="-1">'
                           f'{T("site.local_unavailable_note", title=esc(code + " " + c["title"]))}</p>'
                           for code, c in local_courses.load().items() if code not in local)
