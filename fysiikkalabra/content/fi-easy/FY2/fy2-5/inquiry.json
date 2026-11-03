@@ -10,7 +10,7 @@
     "Energia ei synny eikä häviä, vaan muuntuu muodosta toiseen (luku *Energialajit ja energian säilyminen*)",
     "Energian yksikkö on joule, ja $1\\,\\text{kWh} = 3{,}6\\,\\text{MJ}$ (luku *Energian muuntuminen ja yksikkö joule*)",
     "Hyötysuhde kertoo, kuinka suuri osa otetusta energiasta on hyötyä (luku *Hyötysuhde*)",
-    "Teho on energia aikayksikköä kohti (luku *Teho P = ΔE/Δt*)"
+    "Teho on energia aikayksikköä kohti (luku *Teho: $P = \\Delta E/\\Delta t$*)"
   ],
   "activities": [
     {
@@ -321,7 +321,7 @@
         },
         {
           "text": "Kuinka nopeasti polttoaine palaa ja vapauttaa energiaansa.",
-          "feedback": "Palamisnopeus liittyy tehoon (luku *Teho P = ΔE/Δt*), ei lämpöarvoon. Lämpöarvo kertoo, kuinka paljon energiaa vapautuu. Se ei kerro, kuinka nopeasti."
+          "feedback": "Palamisnopeus liittyy tehoon (luku *Teho: $P = \\Delta E/\\Delta t$*), ei lämpöarvoon. Lämpöarvo kertoo, kuinka paljon energiaa vapautuu. Se ei kerro, kuinka nopeasti."
         }
       ]
     },
