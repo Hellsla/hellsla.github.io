@@ -767,6 +767,41 @@ main .book-text{margin:0 0 .7rem}
 .book-facts>div{display:flex;gap:.35rem}.book-facts dt{font-weight:700;color:var(--ink)}.book-facts dt::after{content:":"}.book-facts dd{margin:0}
 @media (max-width:29.99rem){ol.books>li.book{padding-left:2.6rem}ol.books>li.book::before{width:1.9rem;height:1.9rem}}
 
+/* enlarge (teacher 2026-11-03, "kuvat aukeaa klikkaamalla isoksi, ei kuitenkaan liian isoksi; simulaatiot saa klikattua
+   isoksi"): lesson.js part 7 opens a figure or a photo in a dialog, sim-embed.js shows the simulation card full screen. */
+.zoom-host{position:relative}
+svg.zoomable,img.zoomable{cursor:zoom-in}
+.zoom-btn{position:absolute;top:.4rem;right:.4rem;z-index:2;display:grid;place-items:center;width:40px;height:40px;padding:0;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.94);color:var(--accent-deep);cursor:zoom-in;opacity:0;transition:opacity .15s;box-shadow:0 2px 8px rgba(20,23,30,.12)}
+.zoom-host:hover>.zoom-btn,.zoom-btn:focus-visible{opacity:1}
+article .zoom-btn svg,article .sim-expand svg,.sim-expand svg{flex:none;width:20px;height:20px;max-width:none;padding:0;border:0;border-radius:0;background:none}
+.zoom-btn:focus-visible,.zoom-close:focus-visible,.sim-expand:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+@media (hover:none){.zoom-btn{opacity:0;pointer-events:none}}   /* a phone: the figure itself is the target, no icon over its labels */
+html.zoom-open,html.sim-open{overflow:hidden}
+dialog.zoom-dlg{box-sizing:border-box;width:fit-content;max-width:min(96vw,1240px);max-height:96vh;margin:auto;padding:.6rem .8rem .8rem;border:0;border-radius:14px;background:var(--surface);color:var(--ink);box-shadow:0 18px 60px rgba(0,0,0,.35);display:flex;flex-direction:column;overflow:hidden}
+dialog.zoom-dlg:not([open]){display:none}
+dialog.zoom-dlg::backdrop{background:rgba(14,17,22,.78)}
+.zoom-close{align-self:flex-end;display:inline-flex;align-items:center;gap:.35rem;min-height:40px;padding:0 1rem;margin:0 0 .4rem;font:600 var(--fs-ui) var(--sans);color:var(--accent-deep);background:var(--surface);border:1px solid var(--accent-deep);border-radius:999px;cursor:pointer}
+.zoom-close span{font-size:1.4em;line-height:1}
+.zoom-stage{max-width:min(92vw,1200px);display:flex;justify-content:center;align-items:flex-start;overflow:hidden;cursor:zoom-out}
+.zoom-stage.zoom-pan{overflow:auto;justify-content:flex-start;max-height:calc(96vh - 7rem);-webkit-overflow-scrolling:touch;overscroll-behavior:contain}
+.zoom-stage>svg,.zoom-stage>img{display:block;flex:none;background:#fff;border-radius:6px}
+.zoom-cap{max-width:44rem;margin:.6rem auto 0;font-size:var(--fs-small);line-height:1.45;color:var(--ink-2)}.zoom-cap:empty{display:none}
+.zoom-cap .photo-credit{display:block;margin-top:.2rem}
+#sim{position:relative}#sim>h2,#sim>h3{padding-right:8.5rem}
+.sim-expand{position:absolute;top:.45rem;right:.6rem;z-index:3;display:inline-flex;align-items:center;gap:.4rem;min-height:40px;padding:0 .9rem;font:600 var(--fs-ui) var(--sans);color:var(--accent-deep);background:var(--surface);border:1px solid var(--accent-deep);border-radius:999px;cursor:pointer}
+.sim-expand:hover{background:var(--accent-soft)}
+#sim.sim-expanded{position:fixed;inset:0;z-index:1000;margin:0!important;max-width:none;width:auto;height:auto;border:0;border-radius:0;padding:.4rem 1.2rem 1.2rem;overflow:auto;overscroll-behavior:contain;background:var(--surface)}
+#sim.sim-expanded:fullscreen{width:100%;height:100%;box-sizing:border-box}
+#sim.sim-expanded::backdrop{background:var(--surface)}
+#sim.sim-expanded>h2,#sim.sim-expanded>h3{padding-right:9rem}
+#sim.sim-expanded .sim-canvas{max-width:calc((100vh - 9rem) * var(--sim-ar-x,1.5));min-width:min(100%,20rem)}
+@media (min-width:64rem) and (min-aspect-ratio:4/3){   /* a laptop or a wide screen: the picture on the left, the controls and the values beside it */
+  #sim.sim-expanded #sim-root:has(>.sim-canvas){display:grid;grid-template-columns:minmax(0,1fr) minmax(18rem,24rem);column-gap:1.5rem;align-items:start}
+  #sim.sim-expanded #sim-root>.sim-canvas{grid-column:1;grid-row:1/span 40;margin:0 auto;width:100%;max-width:min(1200px,calc((100vh - 5.5rem) * var(--sim-ar-x,1.5)))}
+  #sim.sim-expanded #sim-root>:not(.sim-canvas){grid-column:2}
+  #sim.sim-expanded #sim-root .controls>label{flex-basis:100%}
+}
+@media print{.zoom-btn,.sim-expand,dialog.zoom-dlg{display:none!important}}
 /* Read aloud (readaloud.js, teacher 2026-11-03): the Kuuntele button under the title, the control bar fixed at the
    bottom while reading, and where the reading is: the block tinted, the sentence and the word highlighted (CSS Custom
    Highlight API, the page itself is not changed). Outline and shadow only, so the layout never moves. */
