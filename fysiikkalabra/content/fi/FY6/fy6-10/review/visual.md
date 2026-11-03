@@ -1,18 +1,19 @@
-VERDICT: FAIL
-CONTENT-HASH: 3f97158885e32b31
+VERDICT: PASS
+CONTENT-HASH: 5c03f04960bafc0e
 
 ## Blocking
-- [Major] Esimerkki Vaihe 5/7 Sijoitus (example-390-2) — after k changed to 8,988 the middle row of the aligned substitution is wider and at 390 px the fraction's numerator "9,6 · 10^-17 C^2" runs to the box edge and is clipped (the box border is missing on that row; it was fully inside in round 1) — a number of the central calculation is cut off on a phone — break the row: put the fraction on its own line, e.g. `&= 8{,}988 \cdot 10^{9}\,\tfrac{...}{...} \\ &\quad \cdot \frac{9{,}6 \cdot 10^{-17}\,\text{C}^2}{(0{,}060\,\text{m})^2} \\ &= 2{,}397 \cdot 10^{-4}\,\text{N}`.
+(none)
 
 ## Polish
-- [Minor] Esimerkki Vaihe 6/7 at 390 px — "2,4 ·" / "10^-4 N" still splits across lines (carried from round 1); keep the number unbroken.
-- [Minor] sim-1280 control grid alignment (carried, shared template).
-- [Minor] kuvaaja (fig-12-390) — curve still starts above the 4,0 mN point and is not marked as model-computed in view (carried).
+- [Minor] Esimerkki Vaihe 6/7 at 390 px — "2,4 ·" / "10^-4 N" still splits across lines; keep the number unbroken.
+- [Minor] sim-1280 — control grid wraps unevenly (q1 slider beside the buttons); shared simulation template, for developer.
+- [Minor] kuvaaja (fig-12-390) — curve starts above the 4,0 mN point and the model-computed origin is only in the aria-label.
+- [Minor] hankaus — blue "elektroneja" arrow uses the velocity blue for a transfer.
 
 ## Checked
-- Delta: k = 8,988 across lesson, example, glossary and regenerated figures; "testivaraus" wording change in the kenttä paragraph and its figure aria-label.
-- Captures opened: example-390-2, fig-8-390 (kentta, regenerated), fig-12-390 (kuvaaja, regenerated), sim-390. Figures keep colours (force red, field green, negative blue disc with white minus); labels and arrows unchanged and legible; surrounding layout survived except the clipped Sijoitus row.
-- Hash at start and end: 3f97158885e32b31.
+- Round 3 fix: example-390-1/2 opened; the Sijoitus now has the fraction on its own row (`\cdot` row), nothing clipped, box border intact, aligned `=` rows read in order principle, substitution, result.
+- Full-review scope: the commit changes only these lines in lesson.md; everything else is as judged in rounds 1 and 2 (hero, hankaus, influenssi, kentta, coulomb, kuvaaja, check-graph figures, theory, sim, stages, tarkista, exit ticket all opened earlier, colours consistent: force red, field green, negative charge blue disc with white minus).
+- Hash at start and end: 5c03f04960bafc0e.
 
 ## Scores
-illustrations 4 · typography 3 · Finnish 5 · accessibility 4
+illustrations 4 · typography 4 · Finnish 5 · accessibility 4
