@@ -1,19 +1,21 @@
-VERDICT: FAIL
-CONTENT-HASH: 6ca670ceb5628576
+VERDICT: PASS
+CONTENT-HASH: 73ab16bc8998b4dc
 
 ## Blocking
-- [Major] Tutki experiments exp-1..exp-3, "Initial state" box and the "Initial state set. Kept constant: …" line (captures exp-1-390-1/-2, exp-3-390-2, lab-1280-1) — the variable name "at the start" is typeset as math, so "at" renders as italic $at$ ("Initial state: at the start: at rest … Kept constant: at the start, string pulls"). It reads as a product a·t, an English word is set as a symbol, and Finnish pages show plain "alussa" — the experiment's own label is mistyped in every experiment box — fix: make the variable name `alku` display as plain text ("at start" / "initial motion") in the English inquiry.json `names`, or stop the renderer italicising a first word; re-capture.
+(none) Round 1 item resolved: the experiment boxes now read "Initial state: initial state: at rest, string pulls: to the right, …" and "Kept constant: initial state, string pulls, mass m"; "at" is plain text in every experiment (exp-1-390-2, exp-3-390-2, lab-1280-1), no italic "at" product left.
 
 ## Polish
-- [Minor] fig-example-390 (worked example) — T, G, a, y and the two captions are about 6 px at 390 px; the step text names the forces, so the information is not lost — enlarge labels in the SVG for narrow screens.
-- [Minor] exp-3-390-2 — the readings table header "string pulls" wraps to two lines and sits level with the unit row; "Initial state set." text is flush with the panel border (no padding) at 390 px — pad it.
-- [Minor] Tarkista solution, trolley diagram (1280) — friction arrow F_μ lies on the hatched ground line so its shaft is hard to see; N and ā labels crowd each other — lift the friction arrow slightly off the ground line.
+- [Minor] Experiment boxes (lab-1280-1) — "Initial state: initial state: at rest" stutters because the variable's name repeats the box heading; name the variable "cart" or "motion at start" (then "Kept constant: cart at start, string pulls, mass m").
+- [Minor] example-390-2, step 8 — the template's no-break glue does not catch the longer chunk: "0.1 ·" ends a line and "9.81 m/s²" starts the next; "5200 N :" likewise leaves the colon at line end before "480 kg". Keep these two short expressions together (non-breaking).
+- [Minor] exp-3-390-2 — "Initial state set." text sits flush against the panel border at 390 px (exp-1 has padding); the "string pulls" header wraps to two lines. Pad the text.
+- [Minor] Worked-example figure (example-390-1) and the Tarkista trolley diagram — T, G, a labels about 6 px at 390 px; F_μ lies on the hatched ground line. Larger labels / lift the arrow slightly.
+- [Minor] Fig "a against ΣF" (theory-1280-1) — points lie exactly on the lines; say in the caption that the data are idealised, per the graph convention.
 
 ## Checked
-- Contact sheets 1–6; top-390, intro-1280, theory-1280-1/2, fig-2-390, fig-4-390 (crane), fig-6..9 via contact sheet (option diagrams: arrows have shafts, T/G length order correct, red F distractor labelled by its arrow), fig-3 graph, example-390-1/2.
-- exp-1-390-1, exp-3-390-2, lab-1280-1, sim via contact sheet, open-tarkista-1280-2, open-exit via contact sheet.
-- Exercises: open-exercises-1280-3/-4/-5, L2-5, L3-1, L3-3, other parts via contact sheets 5–6.
-- Searched the rendered en page for Finnish words: only the language name "Selkeä suomi" in the switcher; all aria-labels English.
+- contact sheets 1, 2, 4; top, sim, lab-1280-1, exp-1-390-2, exp-3-390-2, example-390-2, theory-1280-1 at full size.
+- Force diagrams (box on floor, pulled box), a-ΣF graph, crane example and option diagrams via contact sheets: force red, velocity blue, acceleration orange, overlined vectors, arrows with shafts.
+- Maths: units with thin space, aligned equation chains, decimal point; "(fixed)" absent from sim controls; sim readout decimal point.
+- English language reads as a textbook, no Finnish words on the page; layout of Predict, Tarkista and exit ticket unchanged and clean.
 
 ## Scores
-illustrations 4 · typography 3 · Finnish n/a (English: 4) · accessibility 4
+illustrations 4 · typography 4 · Finnish (English language quality) 5 · accessibility 4

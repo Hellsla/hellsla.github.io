@@ -1,17 +1,19 @@
-VERDICT: FAIL
-CONTENT-HASH: 2d61de3841964d97
+VERDICT: PASS
+CONTENT-HASH: afa0393f3ec7eb40
 
 ## Blocking
-- [Major] exercises/solutions.md, every solution force diagram (captures open-exercises-1280-5, L2-1280-3/4/5, L3-1280-3/4) — the English page shows Finnish-derived labels that contradict the English text: air resistance is F_i (L1-04) or F_v (L2-02, L2-03) while the text says F_a / F_d; swimmer's push is F_VU (text F_WS); skater's force F_KL (text F_SB); apple/scale diagram G_v and F_o (text G_s, F_a); lift diagram G_k, G_m (text G_c, G_p); balloon F_v/F_n (text F_d/F_b); magnets F_m. A student cannot match arrows to the formulas beside them, and the labels read as Finnish words on an English page — rename the labels in the `voimakuvio` blocks of the en solutions.md to the symbols the English text uses (the DSL keywords ylös/vasen/oikea/työntö are not displayed, so only the label names need changing).
+(none) Round 1 item resolved: every solution force diagram now uses the English symbols of the text: F_d, F_r (L1-04), F_BS (L1-03), F_WS, F_d, F_b (L2-02), F_d (L2-03), G_c, G_p (L2-04), F_a, G_s (L3-03), F_m (magnets, matching "force of the upper magnet F_m"). No Finnish-derived label remains.
 
 ## Polish
-- [Minor] force-diagram labels in solutions — the subscripts are about 7 px at 390 px and hard to read; larger label type would help.
-- [Minor] L1-04 solution diagram — two backward arrows (air and rolling resistance) are crowded beside the box and F_i / F_r labels nearly touch.
+- [Minor] force-diagram labels in solutions are about 7 px at 390 px; larger label type would help.
+- [Minor] L1-04 solution diagram — the two backward arrows (F_d, F_r) are close beside the box; labels are separate but tight.
+- [Minor] L3-03 scale diagram — G_s sits right against the long F_a arrow; shift the label away from the shaft.
 
 ## Checked
-- contact sheets 4 and 5 (all exercise captures); open-exercises-1280-5, L2-1280-3, L2-1280-4, L2-1280-5, L3-1280-3, L3-1280-4 at full size.
-- Layout of questions, answer boxes, Check buttons, opened solutions: clean, no clipping; maths (units with thin space, middle dot, decimal point, significant figures) typeset correctly; language natural and consistent with glossary.
-- Task figures: lamp model figure (L1-01) opened in the contact sheet; anturit graph opened in the lesson (fig-2-390).
+- open-exercises-1280-3, -5; L2-1280-3, -4, -5; L3-1280-3, -4 at full size; contact sheets for the rest.
+- Layout of questions, answer boxes, Check buttons, opened solutions: clean, no clipping; thin-space units, middle dot, significant figures correct.
+- Diagram notes ("horizontal and vertical forces to different scales") present where scales differ; colours follow the force-red / velocity-blue / acceleration-orange convention (v and a arrows seen in L1-03, L2-03).
+- English language natural and consistent with the glossary.
 
 ## Scores
-illustrations 3 · typography 5 · Finnish (English language quality) 5 · accessibility 4
+illustrations 4 · typography 5 · Finnish (English language quality) 5 · accessibility 4

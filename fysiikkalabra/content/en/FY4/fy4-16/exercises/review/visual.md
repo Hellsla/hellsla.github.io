@@ -1,18 +1,19 @@
-VERDICT: FAIL
-CONTENT-HASH: a0b82e094abeb7aa
+VERDICT: PASS
+CONTENT-HASH: 6f4b253ccc360c87
 
 ## Blocking
-- [Major] Level 1 ex. 2, Level 2 ex. 3, Level 3 ex. 3 (skydiver free-body diagrams) — the air-resistance arrow is labelled $\overline{F}_\text{v}$, while the solution text beside it and the question use $F_\text{d}$ — wrong symbol and a Finnish remnant on an English page; the diagram contradicts the formula $\Sigma F = F_\text{d} - mg$ — fix: label $\overline{F}_\text{d}$ in the EN diagrams (`F_v` in the `voimakuvio` fences of solutions.md).
-- [Major] Level 3 ex. 1 solution (both free-body diagrams, slope and flat) — the kinetic-friction arrow $\overline{F}_\mu$ has no visible shaft, only an arrowhead triangle; a force the solution depends on reads as a mark, not a vector — fix: draw the arrow with a shaft at least as long as the head (give friction a minimum visible length in the diagram).
+(none) Round 2: both previous items are resolved. (1) The skydiver diagrams now show F̄_d (L1-02 in contact-4/#44-45; built page has no F_v, aria-labels read "air resistance Fd"). (2) L3-01 slope and flat diagrams (L3-1280-1/2, enlarged): F̄_μ now has a visible shaft and head on both, pointing up the slope and backward on the flat; it is short but reads as a vector.
 
 ## Polish
-- [Minor] Level 3 ex. 1 FORMULA line — the inline equation $mgh - \mu mg(x_\text{a} + x_\text{b} + x_\text{c}) = 0$ breaks across lines at the plus sign; put it in its own display row.
-- [Minor] Level 1 ex. 2 CONVERSIONS — the sentence "the result is changed back into kilonewtons at the end." starts in lower case after the equation block.
+- [Minor] L3-01 FORMULA line — the inline equation $mgh - \mu mg(x_\text{a}+x_\text{b}+x_\text{c}) = 0$ breaks at the plus sign (still present); give it its own display row.
+- [Minor] L1-02 CONVERSIONS — "the result is changed back into kilonewtons at the end." starts in lower case after the equation block.
 - [Minor] Exercise start page at 390 px — "Level 2 · applied practice" wraps and "4 exercises" splits onto two lines.
+- [Minor] L3-01 diagram — F̄_μ label on the flat sits close to the arrow and the friction shaft is only about 1.5 head-lengths; a little longer would help.
 
 ## Checked
-- contact-4/5; open-exercises-1280 parts 1, 2, 3, 4, 5, 7; L2 parts 2, 3, 4; L3 parts 1, 2, 3, 5; stage-exercises-390; enlarged crops of the slope and flat friction diagrams.
-- Graph of ex. L3-2 (axes, units, ticks) good; solutions set in aligned rows; no Finnish prose; plain-quantity scan clean.
+- contact-4 and contact-5 sheets (L1, L2, L3 all open), L3-1280-1 and -2 with enlarged crop of both friction diagrams.
+- Skydiver solution figures L1-02 (F_d), graph of L3-02 present and readable; colours force red, velocity blue, acceleration orange.
+- Exercise captures are 1280 only; same SVGs at 390.
 
 ## Scores
-illustrations 3 · typography 4 · Finnish (English prose) 5 · accessibility 4
+illustrations 4 · typography 4 · Finnish 5 · accessibility 4

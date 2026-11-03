@@ -1,17 +1,19 @@
-VERDICT: FAIL
-CONTENT-HASH: b1d2831e6ab7c4c3
+VERDICT: PASS
+CONTENT-HASH: ad73db2be2880481
 
 ## Blocking
-- [Major] inquiry.json "Apply" trailer task, solution force diagram — the `voimakuvio` block uses labels F_AP, F_i, F_r, but the English solution text and answer use F_TC, F_d, F_r. Finnish-derived subscripts on an English page that contradict the formula beside them (the same defect is confirmed in the rendered exercise-set diagrams, e.g. F_i for air resistance). This solution was not open in any capture, so the finding rests on the source plus the identical renderer path seen in the exercises — rename the labels to F_TC, F_d, F_r. Delta-check: after the fix, open the Apply solution at 390 px.
+(none) Round 1 item resolved: the Apply task's solution force diagram now carries F_CT, F_d, F_r (figures.json symbol map; rendered page and the diagram aria-label read "force FCT … Fd … Fr"), matching the solution text. No Finnish subscripts remain in the rendered English page.
 
 ## Polish
-- [Minor] fig-5 aircraft (example-390-1) — F_lift, F_1, F_2 labels are about 6–7 px at 390 px; consider larger label type or a larger figure.
+- [Minor] fig-5 aircraft (example-390-1) and the car figure F_lift, F_1, F_2, F_d labels are about 6-7 px at 390 px; larger label type would help.
+- [Minor] fig-5 car (fig-5-390) — the driving force is a bare F beside F_d; the text calls it the force of the road on the tyres, so F_road or a short caption would pair label and text.
+- [Minor] The Apply solution was not open in any capture; it was verified from the built page (labels and aria-label), not by eye.
 
 ## Checked
-- contact sheets 1–4 (5 not needed beyond exercises); at full size fig-2, fig-3, fig-4, fig-5, example-390-1, sim-390, exp-exp-1-390-2, stage-ennusta-390-1, theory-1280-1.
-- Figures: curling, skaters, car and aircraft show force red, velocity blue, vectors with overline, shafts visible, F_BA/F_AB beside own arrows; the cart-force graph has quantities and units on the axes and is labelled "made-up example data".
-- No Finnish words found on the rendered English lesson, simulation, controls, predict/investigate/check stages or exit ticket (the experiment button "Set the initial state" is English).
-- Maths typography correct: decimal point, thin-space units, middle dot, aligned equations.
+- contact sheet 1; at full size fig-4 (skaters), fig-5 (car), example-390-1 (aircraft, all steps), stage-sovella-390-1/2/3, theory-1280-2.
+- Figures: force red, velocity blue, overlined vectors, F_BA/F_AB beside their own arrows, English labels (F_d, F_lift, G); fy4-3-fig-2 graph and curling figure seen in contact sheet, unchanged from round 1.
+- Maths: thin-space units, middle dot, aligned equations, no break after \cdot; decimal point; no "(fixed)" problems.
+- English reads as a textbook: consistent terms (net force, reaction force, air resistance), one voice, no Finnish words.
 
 ## Scores
 illustrations 4 · typography 5 · Finnish (English language quality) 5 · accessibility 4
