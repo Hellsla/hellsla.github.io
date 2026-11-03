@@ -4,7 +4,7 @@
   "learn": [
     "tunnistamaan tasaisen ympyräliikkeen ja määrittämään normaalikiihtyvyyden suunnan ja suuruuden.",
     "piirtämään ympyräradalla liikkuvan kappaleen voimakuvion ja soveltamaan siihen Newtonin toista lakia.",
-    "selittämään, miksi kaarteessa ei tarvita keskipakoisvoimaa."
+    "selittämään, mikä voima kääntää auton kaarteessa ja mistä ulospäin painautumisen tunne tulee."
   ],
   "prior": [
     "Ratanopeus $v = \\tfrac{2\\pi r}{T}$ ja nopeuden suunnan muuttuminen ympyräliikkeessä (luku *Ympyräliike ja ratanopeus*)",
@@ -16,7 +16,7 @@
       "id": "hook",
       "stage": "herata",
       "type": "hook",
-      "text": "Liukkaana talvipäivänä auto tulee kaarteeseen vähän liian lujaa. Kuljettaja kääntää rattia, mutta auto ei käänny niin jyrkästi kuin tie, ja se ajautuu ulkokaarteen puolelle lumipenkkaan. Matkustajasta tuntui kaarteessa siltä, että jokin painoi häntä ulospäin ovea vasten.",
+      "text": "Liukkaana talvipäivänä auto tulee kaarteeseen vähän liian lujaa. Kuljettaja kääntää rattia, mutta auto päätyy lumipenkkaan. Matkustajasta tuntui kaarteessa siltä, että jokin painoi häntä ulospäin ovea vasten.",
       "question": "Mikä voima pitää auton kaarteessa, ja onko ulospäin painava voima todellinen?"
     },
     {
@@ -61,7 +61,7 @@
         },
         {
           "text": "Kaksi kertaa niin suuren kuin ennen.",
-          "feedback": "Kitkan tarve kasvaa nopeampaa kuin nopeus. Nopeammin ajava auto ehtii samassa ajassa kääntyä pidemmän matkan, ja nopeuden muutos on joka kääntymiskohdassa suurempi. Mallin arvoissa tarvittava kitka kasvaa $3{,}0\\,\\text{kN}$:sta $12\\,\\text{kN}$:iin eli nelinkertaiseksi, kun nopeus kasvaa $10\\,\\text{m/s}$:sta $20\\,\\text{m/s}$:iin."
+          "feedback": "Kitkan tarve kasvaa nopeammin kuin nopeus. Nopeammalla autolla nopeusnuoli on pidempi, joten saman suunnanmuutoksen nopeuden muutos on suurempi. Lisäksi nopeampi auto kääntyy saman kulman lyhyemmässä ajassa, joten sen nopeuden suunta muuttuu nopeammin. Mallin arvoissa tarvittava kitka kasvaa $3{,}0\\,\\text{kN}$:sta $12\\,\\text{kN}$:iin eli nelinkertaiseksi, kun nopeus kasvaa $10\\,\\text{m/s}$:sta $20\\,\\text{m/s}$:iin."
         },
         {
           "text": "Yhtä suuren, koska rata on sama.",
@@ -84,15 +84,15 @@
         {
           "text": "Auto kaartaa yhä, mutta loivemmin kuin rata, ja ajautuu radan ulkoreunan yli.",
           "correct": true,
-          "feedback": "Oikein. Kitka osoittaa yhä kohti keskipistettä mutta ei riitä kääntämään autoa radan tahtiin, joten auto kaartaa loivemmin kuin rata. Simulaatiossa auto jatkaa lähes radan tangentin suuntaan ja ajautuu ulkoreunan yli. Mikään voima ei työnnä sitä ulospäin."
+          "feedback": "Oikein. Kitka osoittaa yhä kohti keskipistettä mutta ei riitä kääntämään autoa radan tahtiin. Simulaatiossa auto kaartaa loivemmin kuin rata, ja sitä suoremmin mitä suurempi nopeus, ja ajautuu ulkoreunan yli. Mikään voima ei työnnä sitä ulospäin."
         },
         {
           "text": "Auto liukuu suoraan poispäin keskipisteestä, säteen suuntaisesti.",
-          "feedback": "Silloin autoon pitäisi vaikuttaa ulospäin osoittava voima, mutta sellaista ei ole: mikään kappale ei työnnä autoa ulos. Simulaatiossa auto jatkaa lähes radan tangentin suuntaan. Se kaartaa loivemmin kuin rata, koska kitka ei riitä."
+          "feedback": "Silloin autoon pitäisi vaikuttaa ulospäin osoittava voima, mutta sellaista ei ole: mikään kappale ei työnnä autoa ulos. Simulaatiossa auto kaartaa loivemmin kuin rata, ja sitä suoremmin mitä suurempi nopeus, koska kitka ei riitä kääntämään sitä radan tahtiin."
         },
         {
           "text": "Auto pysyy radalla, mutta sen vauhti hidastuu.",
-          "feedback": "Kaarteessa kitka osoittaa kohti keskipistettä eli kohtisuoraan nopeutta vastaan, joten se ei hidasta autoa vaan kääntää sitä. Kun kitka ei riitä, auto kääntyy liian vähän: simulaatiossa se jatkaa lähes radan tangentin suuntaan ja ajautuu radan ulkoreunan yli."
+          "feedback": "Kaarteessa kitka osoittaa kohti keskipistettä eli kohtisuoraan nopeutta vastaan, joten se ei hidasta autoa vaan kääntää sitä. Kun kitka ei riitä, auto kääntyy liian vähän: simulaatiossa se kaartaa loivemmin kuin rata, ja sitä suoremmin mitä suurempi nopeus, ja ajautuu radan ulkoreunan yli."
         }
       ]
     },
@@ -138,7 +138,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 1: nopeus kasvaa",
-      "intro": "Testaa ennusteet 1 ja 2. Alkutila valitsee säteen $50\\,\\text{m}$, massan $1500\\,\\text{kg}$ ja kuivan asfaltin. Muuta vain ratanopeutta $v$. Kirjaa mittaus nopeuksilla $5$, $10$, $15$ ja $20\\,\\text{m/s}$. Paina nopeudella $20\\,\\text{m/s}$ *Käynnistä* ja katso, miten auto liikkuu.",
+      "intro": "Testaa ennusteet 1 ja 2. Alkutila valitsee säteen $50\\,\\text{m}$, massan $1500\\,\\text{kg}$ ja kuivan asfaltin. Muuta vain ratanopeutta $v$. Kirjaa mittaus nopeuksilla $5$, $10$, $15$ ja $20\\,\\text{m/s}$. Aseta lopuksi nopeudeksi $25\\,\\text{m/s}$ ja sitten $30\\,\\text{m/s}$, paina kummallakin *Käynnistä* ja vertaa, miten auto liikkuu.",
       "initial": {
         "r": 50,
         "m": "1500",
@@ -148,7 +148,7 @@
       "names": {
         "v": "ratanopeus $v$",
         "r": "säde $r$",
-        "m": "massa m",
+        "m": "massa $m$",
         "pinta": "pinta"
       },
       "units": {
@@ -208,7 +208,7 @@
             "feedback": "Tämä on $v^2$. Ota vielä neliöjuuri: $v = \\sqrt{\\mu_0 g r}$."
           }
         ],
-        "solution": "**Annettu:** säde $r = 50\\,\\text{m}$, massa $m = 1500\\,\\text{kg}$, kuivan asfaltin lepokitkakerroin $\\mu_0 = 0{,}80$ (mallin arvo); $g = 9{,}81\\,\\text{m/s}^2$\n\n**Kysytty:** suurin ratanopeus $v$ yksikössä $\\text{m/s}$\n\n**Periaate:** Auto on tasaisessa ympyräliikkeessä, joten Newtonin toisen lain mukaan kokonaisvoima on $m\\tfrac{v^2}{r}$ kohti keskipistettä. Ainoa vaakasuora voima on tien lepokitka, joka voi olla enintään $\\mu_0 N$. Rajanopeudella kitka on suurimmillaan.\n\n**Voimakuvio:** Auto takaa katsottuna suorakulmiona, $x$ kohti keskipistettä ja $y$ ylös. Paino $\\overline{G}$ keskipisteestä alas, tukivoima $\\overline{N}$ alapinnasta ylös yhtä pitkänä ja suurin lepokitka $\\overline{F}_\\mu$ alapinnan kulmasta kohti keskipistettä. Kiihtyvyys erikseen kohti keskipistettä.\n```voimakuvio\npinta 0\nG 14715\nN 14715\nF_mu 11772 vasen\na vasen\nakselit 180\n```\n\n**Kaava:** $y$: $N - mg = 0$ ja $x$: $\\mu_0 N = m\\dfrac{v^2}{r}$, joten $\\mu_0 mg = m\\dfrac{v^2}{r}$ ja $v = \\sqrt{\\mu_0 g r}$\n\n**Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita, ja massa supistuu.\n\n**Sijoitus:** $v = \\sqrt{0{,}80\\cdot 9{,}81\\,\\text{m/s}^2\\cdot 50\\,\\text{m}} = \\sqrt{392{,}4\\,\\text{m}^2/\\text{s}^2} = 19{,}81\\,\\text{m/s}$\n\n**Vastaus:** $19{,}8\\,\\text{m/s}$ eli noin $71\\,\\text{km/h}$; kertoimen $0{,}80$ ja säteen $50\\,\\text{m}$ mukaan kaksi merkitsevää numeroa riittäisi ($20\\,\\text{m/s}$), mutta kolmas numero näyttää, että raja on juuri alle $20\\,\\text{m/s}$.\n\n**Järkevyys:** Tulos on taulukon kanssa sopusoinnussa: nopeudella $15\\,\\text{m/s}$ pito riittää ja nopeudella $20\\,\\text{m/s}$ ei. Tarkistus: nopeudella $19{,}8\\,\\text{m/s}$ tarvittava kitka on $1500\\,\\text{kg}\\cdot\\tfrac{(19{,}8\\,\\text{m/s})^2}{50\\,\\text{m}} \\approx 11{,}8\\,\\text{kN}$, sama kuin suurin lepokitka."
+        "solution": "**Annettu:** säde $r = 50\\,\\text{m}$, massa $m = 1500\\,\\text{kg}$, kuivan asfaltin lepokitkakerroin $\\mu_0 = 0{,}80$ (mallin arvo); $g = 9{,}81\\,\\text{m/s}^2$\n\n**Kysytty:** suurin ratanopeus $v$ yksikössä $\\text{m/s}$\n\n**Periaate:** Auto on tasaisessa ympyräliikkeessä, joten Newtonin toisen lain mukaan kokonaisvoima on $m\\tfrac{v^2}{r}$ kohti keskipistettä. Ainoa vaakasuora voima on tien lepokitka, joka voi olla enintään $\\mu_0 N$. Rajanopeudella kitka on suurimmillaan.\n\n**Voimakuvio:** Auto takaa katsottuna suorakulmiona, kaarteen keskipiste oikealla, $x$ kohti keskipistettä ja $y$ ylös. Paino $\\overline{G}$ keskipisteestä alas, tukivoima $\\overline{N}$ alapinnasta ylös yhtä pitkänä ja suurin lepokitka $\\overline{F}_\\mu$ alapinnan kulmasta kohti keskipistettä. Kiihtyvyys erikseen kohti keskipistettä.\n```voimakuvio\npinta 0\nG 14715\nN 14715\nF_mu 11772 oikea\na oikea\nakselit 0\n```\n\n**Kaava:** $y$: $N - mg = 0$ ja $x$: $\\mu_0 N = m\\dfrac{v^2}{r}$, joten $\\mu_0 mg = m\\dfrac{v^2}{r}$ ja $v = \\sqrt{\\mu_0 g r}$\n\n**Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita, ja massa supistuu.\n\n**Sijoitus:** $v = \\sqrt{0{,}80\\cdot 9{,}81\\,\\text{m/s}^2\\cdot 50\\,\\text{m}} = \\sqrt{392{,}4\\,\\text{m}^2/\\text{s}^2} = 19{,}81\\,\\text{m/s}$\n\n**Vastaus:** $19{,}8\\,\\text{m/s}$ eli noin $71\\,\\text{km/h}$. Kolmas numero on mukana, koska raja on juuri alle $20\\,\\text{m/s}$: taulukon nopeus $20\\,\\text{m/s}$ ylittää sen.\n\n**Järkevyys:** Tulos on taulukon kanssa sopusoinnussa: nopeudella $15\\,\\text{m/s}$ pito riittää ja nopeudella $20\\,\\text{m/s}$ ei. Tarkistus: nopeudella $19{,}8\\,\\text{m/s}$ tarvittava kitka on $1500\\,\\text{kg}\\cdot\\tfrac{(19{,}8\\,\\text{m/s})^2}{50\\,\\text{m}} \\approx 11{,}8\\,\\text{kN}$, sama kuin suurin lepokitka."
       }
     },
     {
@@ -227,7 +227,7 @@
       "names": {
         "v": "ratanopeus $v$",
         "r": "säde $r$",
-        "m": "massa m",
+        "m": "massa $m$",
         "pinta": "pinta"
       },
       "units": {
@@ -276,7 +276,7 @@
         "Vastaus kertoo, että auto pysyy radalla vain, kun tarvittava kitka on enintään suurin lepokitka $\\mu_0 mg$.",
         "Vastaus kertoo, että kitka osoittaa kohti keskipistettä ja että pidon pettäessä auto kaartaa liian vähän eikä mikään voima työnnä sitä ulos."
       ],
-      "model": "Taulukossa tarvittava kitka kasvaa nopeuden neliön mukana: nopeudella $10\\,\\text{m/s}$ se on $3{,}0\\,\\text{kN}$ ja nopeudella $20\\,\\text{m/s}$ $12\\,\\text{kN}$, eli kaksinkertainen nopeus vaatii nelinkertaisen kitkan. Kuivan asfaltin suurin lepokitka on mallin arvoissa $11{,}8\\,\\text{kN}$. Nopeudella $15\\,\\text{m/s}$ tarvitaan $6{,}75\\,\\text{kN}$ ja pito riittää, mutta nopeudella $20\\,\\text{m/s}$ tarvittava kitka on suurempi kuin tie voi antaa. Kitka osoittaa kohti keskipistettä ja kääntää autoa. Kun se ei riitä, auto kääntyy vähemmän kuin rata ja jatkaa lähes tangentin suuntaan radan ulkoreunan yli. Ulospäin työntävää voimaa ei tarvita selittämään liikettä."
+      "model": "Taulukossa tarvittava kitka kasvaa nopeuden neliön mukana: nopeudella $10\\,\\text{m/s}$ se on $3{,}0\\,\\text{kN}$ ja nopeudella $20\\,\\text{m/s}$ $12\\,\\text{kN}$, eli kaksinkertainen nopeus vaatii nelinkertaisen kitkan. Kuivan asfaltin suurin lepokitka on mallin arvoissa $11{,}8\\,\\text{kN}$. Nopeudella $15\\,\\text{m/s}$ tarvitaan $6{,}75\\,\\text{kN}$ ja pito riittää, mutta nopeudella $20\\,\\text{m/s}$ tarvittava kitka on suurempi kuin tie voi antaa. Kitka osoittaa kohti keskipistettä ja kääntää autoa. Kun se ei riitä, auto kaartaa loivemmin kuin rata, ja sitä suoremmin mitä suurempi nopeus, ja ajautuu radan ulkoreunan yli. Ulospäin työntävää voimaa ei tarvita selittämään liikettä."
     },
     {
       "id": "theory",

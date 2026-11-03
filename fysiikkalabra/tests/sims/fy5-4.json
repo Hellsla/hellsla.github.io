@@ -180,5 +180,19 @@
   "expected": 2.25,
   "tol": 0.01,
   "note": "doubling r halves a_n: 2,25 m/s²"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[1],'kuiva'); I(L[0],'1500'); I(R[1],50); I(R[0],30); I(L[2],'2'); document.querySelector('#sim-root button').click();",
+  "expr": "(async () => { for (let i = 0; i < 100 && !window.simState.done; i++) await new Promise(r => setTimeout(r, 100)); const S = window.simState, ok = S.done && S.liukuu === 1 && S.dmax > S.reuna ? 1 : 0; const L=[...document.querySelectorAll('#sim-root select')]; L[2].value='1'; L[2].dispatchEvent(new Event('change',{bubbles:true})); [...document.querySelectorAll('#sim-root button')][1].click(); return ok; })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "Koe 1's slide, 30 m/s on dry asphalt, r = 50 m: the car runs on until it is past the asphalt's outer edge (dmax > reuna) and stops off the track"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[1],'kuiva'); I(L[0],'1500'); I(R[1],50); I(R[0],25); I(L[2],'2'); document.querySelector('#sim-root button').click();",
+  "expr": "(async () => { for (let i = 0; i < 100 && !window.simState.done; i++) await new Promise(r => setTimeout(r, 100)); const S = window.simState, ok = S.done && S.liukuu === 1 && S.dmax > S.reuna ? 1 : 0; const L=[...document.querySelectorAll('#sim-root select')]; L[2].value='1'; L[2].dispatchEvent(new Event('change',{bubbles:true})); [...document.querySelectorAll('#sim-root button')][1].click(); return ok; })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "Koe 1's slide, 25 m/s on dry asphalt, r = 50 m: the car also leaves the asphalt"
  }
 ]

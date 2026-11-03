@@ -45,8 +45,8 @@
     {
       "id": "fy5-4-L2-01",
       "level": 2,
-      "text": "Auto, jonka massa on $1300\\,\\text{kg}$, ajaa vaakasuoran tien kaarteessa tasaisella nopeudella $72\\,\\text{km/h}$. Kaarteen säde on $120\\,\\text{m}$. Ilmanvastus ja vierimisvastus jätetään huomiotta. Kuinka suuri kitkavoima tien on kohdistettava autoon? Vastaa kilonewtoneina.",
-      "answer": 4.3333,
+      "text": "Pyöräilijä ajaa alikulkutunnelin notkon pohjan läpi tasaisella nopeudella $8{,}0\\,\\text{m/s}$. Pyöräilijän ja pyörän yhteinen massa on $80\\,\\text{kg}$, ja notkon pohjalla tien kaaren säde on $16\\,\\text{m}$. Ilmanvastus ja vierimisvastus jätetään huomiotta. Kuinka suuri on tien tukivoima pyörään notkon pohjalla? Vastaa kilonewtoneina.",
+      "answer": 1.1048,
       "unit": "kN",
       "tolerance": 0.02,
       "fbd": "equations"

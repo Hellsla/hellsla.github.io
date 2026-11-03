@@ -1,8 +1,8 @@
 # Tasainen ympyräliike ja normaalikiihtyvyys
 
-> **Miksi** auto suistuu liukkaassa kaarteessa tieltä ulkokaarteen puolelle, vaikka mikään ei työnnä sitä ulospäin?
+> **Miksi** auto suistuu liukkaassa kaarteessa ulos tieltä?
 
-<svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: talvinen maantie kaartaa metsän läpi oikealle ja katoaa kauas mäkien taakse. Kaarteen keskellä ajaa henkilöauto takaapäin nähtynä. Autosta lähtee harmaa katkoviiva suoraan eteenpäin, kaarteen ulkoreunan yli lumiselle pellolle: se on reitti, jota auto jatkaisi, jos renkaiden pito tiehen loppuisi. Tien reunoilla on lumipenkat ja kuusia." class="fig-hero" style="max-width:100%;font-size:24px">
+<svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: talvinen maantie kaartaa metsän läpi oikealle ja katoaa kauas mäkien taakse. Kaarteen keskellä ajaa henkilöauto takaapäin nähtynä. Tien reunoilla on lumipenkat ja kuusia." class="fig-hero" style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy54h-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#eef5f9"/></linearGradient><radialGradient id="fy54h-sun" cx="0.4" cy="0.4" r="0.7"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></radialGradient><linearGradient id="fy54h-snow" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#eef5f9"/></linearGradient><linearGradient id="fy54h-asf" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8a96a3"/><stop offset="1" stop-color="#c4ccd4"/></linearGradient></defs>
   <rect x="0" y="0" width="1200" height="330" fill="url(#fy54h-sky)"/>
   <circle cx="1060" cy="92" r="61" fill="#ffffff" fill-opacity="0.5"/>
@@ -77,7 +77,6 @@
   <path d="M870,302 L887,326 H870 Z" fill="#1f2933" fill-opacity="0.18"/>
   <path d="M858,312.5 L870,285 L882,312.5 Z" fill="#2b8a3e" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
   <path d="M870,285 L882,312.5 H870 Z" fill="#1f2933" fill-opacity="0.18"/>
-  <line x1="477.5" y1="441" x2="839" y2="187" stroke="#6b7480" stroke-width="4" stroke-linecap="round" stroke-dasharray="14 12"/>
   <rect x="449" y="386.5" width="99.5" height="47.5" rx="14" fill="#f1dfb5" stroke="#1f2933" stroke-width="3"/>
   <path d="M463,386.5 L471,361 H526.5 L534.5,386.5 Z" fill="#f1dfb5" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
   <path d="M472,384 L477,366.5 H520.5 L525.5,384 Z" fill="#eef5f9" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
@@ -93,7 +92,7 @@
 ### Nopeuden suunta muuttuu, joten kappale kiihtyy
 Luvussa *Ympyräliike ja ratanopeus* opit, että tasaisessa ympyräliikkeessä kappale kiertää ympyrärataa vakiovauhdilla. Nopeuden suuruus eli ratanopeus $v$ pysyy samana, mutta nopeuden suunta muuttuu koko ajan: nopeus $\overline{v}$ on aina radan tangentin suuntainen. Nopeus on vektori, joten suunnan muutoskin on nopeuden muutos. Kun nopeus muuttuu, kappaleella on kiihtyvyys. Tasaisessa ympyräliikkeessä kappale siis kiihtyy, vaikka sen vauhti ei muutu.
 
-<svg data-fig="muutos" viewBox="0 0 600 340" role="img" aria-label="Kaksi kuvaa. Vasemmalla kappale kiertää ympyrärataa vastapäivään tasaisella vauhdilla. Kahdessa kohdassa radan yläosassa sininen nopeusnuoli v 1 ja v 2 on radan tangentin suuntainen; nuolet ovat yhtä pitkiä mutta eri suuntiin. Radan ylimmässä kohdassa näiden välissä oranssi kiihtyvyysnuoli a n osoittaa suoraan alas radan keskipisteeseen. Oikealla samat nopeusnuolet on piirretty samasta pisteestä. Nuolten kärkien välinen nuoli, nopeuden muutos delta v, osoittaa suoraan alas eli samaan suuntaan kuin kiihtyvyys, kohti radan keskipistettä. Nuolet ovat mittakaavassa keskenään." style="max-width:100%;font-size:24px">
+<svg data-fig="muutos" viewBox="0 0 600 340" role="img" aria-label="Kaksi kuvaa. Vasemmalla kappale kiertää ympyrärataa vastapäivään tasaisella vauhdilla. Kahdessa kohdassa radan yläosassa sininen nopeusnuoli v 1 ja v 2 on radan tangentin suuntainen; nuolet ovat yhtä pitkiä mutta eri suuntiin. Radan ylimmässä kohdassa näiden välissä oranssi kiihtyvyysnuoli a n osoittaa suoraan alas radan keskipisteeseen. Oikealla samat nopeusnuolet on piirretty samasta pisteestä. Nuolten kärkien välinen nuoli, nopeuden muutos delta v, osoittaa suoraan alas eli samaan suuntaan kuin kiihtyvyys, kohti radan keskipistettä. Nopeusnuolet ovat molemmissa kuvissa yhtä pitkiä, samassa mittakaavassa." style="max-width:100%;font-size:24px">
   <foreignObject x="65" y="7.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{kappaleen rata}$</div></foreignObject>
   <circle cx="160" cy="200" r="105" fill="none" stroke="#c9c2b2" stroke-width="2.5"/>
   <circle cx="160" cy="200" r="5" fill="#1f2933"/>
@@ -115,17 +114,17 @@ Luvussa *Ympyräliike ja ratanopeus* opit, että tasaisessa ympyräliikkeessä k
   <foreignObject x="174" y="136.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#e8590c">$\overline{a}_\text{n}$</div></foreignObject>
   <line x1="318" y1="20" x2="318" y2="320" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 6"/>
   <foreignObject x="368.5" y="7.5" width="183" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{nopeuden muutos}$</div></foreignObject>
-  <line x1="540" y1="150" x2="492" y2="67" stroke="#1971c2" stroke-width="3" stroke-linecap="butt"/>
-  <line x1="491" y1="65" x2="491.5" y2="80" stroke="#1971c2" stroke-width="3" stroke-linecap="round"/>
-  <line x1="491" y1="65" x2="503.5" y2="73" stroke="#1971c2" stroke-width="3" stroke-linecap="round"/>
-  <line x1="540" y1="150" x2="492" y2="233" stroke="#1971c2" stroke-width="3" stroke-linecap="butt"/>
-  <line x1="491" y1="235" x2="503.5" y2="227" stroke="#1971c2" stroke-width="3" stroke-linecap="round"/>
-  <line x1="491" y1="235" x2="491.5" y2="220" stroke="#1971c2" stroke-width="3" stroke-linecap="round"/>
-  <foreignObject x="502.5" y="46.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2">$\overline{v}_1$</div></foreignObject>
-  <foreignObject x="502.5" y="228.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2">$\overline{v}_2$</div></foreignObject>
-  <line x1="491" y1="69" x2="491" y2="219" stroke="#1971c2" stroke-width="3" stroke-linecap="butt" stroke-dasharray="8 6"/>
-  <path d="M491,233 L484,219 L498,219 Z" fill="#1971c2" stroke-linejoin="round"/>
-  <foreignObject x="432" y="135.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#1971c2">$\Delta\overline{v}$</div></foreignObject>
+  <line x1="540" y1="150" x2="506" y2="91" stroke="#1971c2" stroke-width="3" stroke-linecap="butt"/>
+  <line x1="505" y1="89.5" x2="505.5" y2="104" stroke="#1971c2" stroke-width="3" stroke-linecap="round"/>
+  <line x1="505" y1="89.5" x2="517.5" y2="97" stroke="#1971c2" stroke-width="3" stroke-linecap="round"/>
+  <line x1="540" y1="150" x2="506" y2="209" stroke="#1971c2" stroke-width="3" stroke-linecap="butt"/>
+  <line x1="505" y1="210.5" x2="517.5" y2="203" stroke="#1971c2" stroke-width="3" stroke-linecap="round"/>
+  <line x1="505" y1="210.5" x2="505.5" y2="196" stroke="#1971c2" stroke-width="3" stroke-linecap="round"/>
+  <foreignObject x="516.5" y="71" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2">$\overline{v}_1$</div></foreignObject>
+  <foreignObject x="516.5" y="204" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2">$\overline{v}_2$</div></foreignObject>
+  <line x1="505" y1="93.5" x2="505" y2="194.5" stroke="#1971c2" stroke-width="3" stroke-linecap="butt" stroke-dasharray="8 6"/>
+  <path d="M505,208.5 L498,194.5 L512,194.5 Z" fill="#1971c2" stroke-linejoin="round"/>
+  <foreignObject x="446" y="135.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#1971c2">$\Delta\overline{v}$</div></foreignObject>
 </svg>
 
 Kuvassa kappaleen nopeus on ensin $\overline{v}_1$ ja hetken kuluttua $\overline{v}_2$. Kun nuolet piirretään samasta pisteestä, niiden kärkien välinen nuoli on nopeuden muutos $\Delta\overline{v}$. Se osoittaa kohti radan keskipistettä. Kiihtyvyys on nopeuden muutos aikayksikköä kohti, joten kiihtyvyyskin osoittaa keskipisteeseen.
@@ -136,7 +135,7 @@ Tasaisen ympyräliikkeen kiihtyvyys on kohtisuorassa nopeutta vastaan ja osoitta
 ### Kokonaisvoima osoittaa keskipisteeseen
 Newtonin toisen lain mukaan kokonaisvoima $\Sigma\overline{F}$ on samansuuntainen kuin kiihtyvyys. Tasaisessa ympyräliikkeessä kappaleeseen vaikuttavien voimien summa osoittaa siis kohti radan keskipistettä. Tätä keskipisteeseen osoittavaa kokonaisvoimaa kutsutaan **keskeisvoimaksi**. Ilman sitä kappale jatkaisi Newtonin ensimmäisen lain mukaisesti suoraan, radan tangentin suuntaan.
 
-Keskeisvoima ei ole uusi voiman laji, eikä sitä piirretä voimakuvioon omana nuolenaan. Se on todellisten voimien summa, ja tilanne kertoo, mitkä voimat sen muodostavat. Tasaisessa kaarteessa ajavaan autoon ainoa vaakasuora voima on tien kitka renkaisiin, joten kitka osoittaa kohti kaarteen keskipistettä. Narun päässä pyörivään kiveen sen tuottaa narun jännitysvoima, ja karusellissa istujaan istuimen ja tuen voimat.
+Keskeisvoima ei ole uusi voiman laji, eikä sitä piirretä voimakuvioon omana nuolenaan. Se on todellisten voimien summa, ja tilanne kertoo, mitkä voimat sen muodostavat. Kun auto ajaa kaarteessa vaakasuoralla tiellä ja ilmanvastus jätetään huomiotta, ainoa vaakasuora voima autoon on tien kitka renkaisiin, joten kitka osoittaa kohti kaarteen keskipistettä. Narun päässä pyörivään kiveen sen tuottaa narun jännitysvoima, ja karusellissa istujaan istuimen ja tuen voimat.
 
 <svg data-fig="kaarre" viewBox="0 0 600 380" role="img" aria-label="Kaksi kuvaa. Vasemmalla tilannekuva ylhäältä: tie kaartaa vasemmalle, ja auto on kaarteessa. Kaarteen keskipiste on vasemmalla, ja katkoviiva r yhdistää sen autoon. Auton vieressä sininen nopeusnuoli v osoittaa ylös tien suuntaisesti ja oranssi kiihtyvyysnuoli a n vasemmalle kohti keskipistettä. Oikealla auton voimakuvio takaa katsottuna, auto suorakulmiona tien päällä: paino G keskipisteestä alas, tien tukivoima N alapinnasta ylös yhtä pitkänä ja tien kitkavoima alapinnan vasemmasta kulmasta vasemmalle kohti kaarteen keskipistettä, noin puolet painon pituudesta. Erillään oranssi kiihtyvyysnuoli a n vasemmalle." style="max-width:100%;font-size:24px">
   <foreignObject x="27.5" y="7.5" width="245" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{tilannekuva ylhäältä}$</div></foreignObject>
@@ -211,6 +210,8 @@ a_\text{n} = \frac{v^2}{r}
 ```
 missä $a_\text{n}$ on normaalikiihtyvyys ($\text{m/s}^2$), $v$ ratanopeus ($\text{m/s}$) ja $r$ radan säde ($\text{m}$). Kiihtyvyys kasvaa nopeuden neliön mukana: kun nopeus kaksinkertaistuu, kiihtyvyys nelinkertaistuu. Samalla nopeudella tiukka kaarre eli pieni säde antaa suuren kiihtyvyyden. Jos tunnetaan kierrosaika $T$, ratanopeus saadaan ensin kaavasta $v = \tfrac{2\pi r}{T}$.
 
+Miksi juuri nopeuden neliö? Nopeus vaikuttaa kahdesti. Suuremmalla nopeudella nopeusnuoli on pidempi, joten sama suunnan kääntyminen merkitsee suurempaa nopeuden muutosta $\Delta\overline{v}$. Lisäksi kappale kiertää kaaren nopeammin, joten nopeus kääntyy saman kulman lyhyemmässä ajassa. Kumpikin tekijä kasvaa nopeuden mukana, joten kiihtyvyys kasvaa nopeuden neliön mukana. Samalla nopeudella pienemmän säteen kaarteessa nopeuden suunta kääntyy nopeammin, joten kiihtyvyys on suurempi.
+
 <svg data-fig="kuvaaja" viewBox="0 0 600 360" role="img" aria-label="Kuvaaja mittakaavassa: vaaka-akselilla ratanopeus v metreinä sekunnissa nollasta 30:een, pystyakselilla normaalikiihtyvyys a n metreinä sekunnissa toiseen nollasta 18:aan. Kaksi oranssia käyrää nousee origosta yhä jyrkemmin. Säteellä 50 metriä yhtenäinen käyrä: nopeudella 10 kiihtyvyys on 2, nopeudella 20 se on 8 ja nopeudella 30 se on 18. Säteellä 100 metriä katkoviivakäyrä on puolet alempana: nopeudella 20 kiihtyvyys on 4 ja nopeudella 30 se on 9. Pisteet nopeuksilla 10 ja 20 on merkitty yhtenäiselle käyrälle apuviivoin." style="max-width:100%;font-size:24px">
   <line x1="141.5" y1="300" x2="141.5" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="197.5" y1="300" x2="197.5" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -277,7 +278,7 @@ Newtonin toisen lain mukaan kappaleeseen vaikuttavien voimien summan suuruus on 
 missä $\Sigma F$ on keskipisteeseen osoittava kokonaisvoima ($\text{N}$) ja $m$ kappaleen massa ($\text{kg}$). Laskussa toimitaan kuten luvussa *Voimakuvio ja voimien yhteisvaikutus*: piirretään ensin voimakuvio ja valitaan yksi akseli osoittamaan kohti radan keskipistettä. Silloin keskipisteeseen osoittavat voimat ovat positiivisia, poispäin osoittavat negatiivisia, ja niiden summa on $m\tfrac{v^2}{r}$. Kohtisuoraan ratatasoa vastaan kappale ei kiihdy, joten siinä suunnassa voimien summa on nolla.
 
 ### Nyppylä ja notko
-Kun auto ajaa tasaisella vauhdilla nyppylän huipun yli, se on hetken ympyräradalla, jonka keskipiste on tien alapuolella. Kiihtyvyys osoittaa silloin alas, joten paino on suurempi kuin tien tukivoima: $G - N = m\tfrac{v^2}{r}$. Tukivoima on painoa pienempi, ja matkustaja tuntee itsensä kevyeksi. Mitä suurempi nopeus, sitä pienempi tukivoima. Jos $\tfrac{v^2}{r}$ kasvaa yhtä suureksi kuin $g$, tukivoima on nolla ja auto irtoaa hetkeksi tiestä.
+Kun auto ajaa tasaisella vauhdilla nyppylän huipun yli, se on hetken ympyräradalla, jonka keskipiste on tien alapuolella. Kiihtyvyys osoittaa silloin alas, joten paino on suurempi kuin tien tukivoima: $G - N = m\tfrac{v^2}{r}$. Tukivoima on painoa pienempi, ja matkustaja tuntee itsensä kevyeksi. Mitä suurempi nopeus, sitä pienempi tukivoima. Jos $\tfrac{v^2}{r}$ kasvaa yhtä suureksi kuin $g$, tukivoima on nolla. Jos se kasvaa suuremmaksi kuin $g$, auto irtoaa hetkeksi tiestä.
 
 <svg data-fig="nyppyla" viewBox="0 0 600 420" role="img" aria-label="Neljä kuvaa kahdessa sarakkeessa. Vasemmalla ylhäällä auto nyppylän huipulla, oikealla ylhäällä auto notkon pohjalla; kummassakin auto ajaa samalla nopeudella oikealle. Alla kummankin auton voimakuvio, auto suorakulmiona: paino G keskipisteestä alas ja tien tukivoima N alapinnasta ylös. Nyppylän huipulla tukivoima on lyhyempi kuin paino, noin kuusi kymmenesosaa siitä, ja oranssi kiihtyvyysnuoli a n osoittaa alas, kohti nyppylän kaaren keskipistettä. Notkon pohjalla tukivoima on pidempi kuin paino, noin 1,4-kertainen, ja kiihtyvyysnuoli osoittaa ylös, kohti notkon kaaren keskipistettä. Paino on molemmissa yhtä pitkä." style="max-width:100%;font-size:24px">
   <foreignObject x="58.5" y="7.5" width="183" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{nyppylän huippu}$</div></foreignObject>
@@ -319,10 +320,10 @@ Kun auto ajaa tasaisella vauhdilla nyppylän huipun yli, se on hetken ympyrärad
   <foreignObject x="111.5" y="371.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{G}$</div></foreignObject>
   <line x1="170" y1="308" x2="170" y2="265" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
   <path d="M170,248 L178,266 L162,266 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <foreignObject x="177.5" y="243.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{N}$</div></foreignObject>
-  <line x1="240" y1="270" x2="240" y2="320" stroke="#e8590c" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M233.5,309 L240,322 L246.5,309" fill="none" stroke="#e8590c" stroke-width="2.5" stroke-linejoin="round"/>
-  <foreignObject x="241.5" y="307.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#e8590c">$\overline{a}_\text{n}$</div></foreignObject>
+  <foreignObject x="185.5" y="243.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{N}$</div></foreignObject>
+  <line x1="240" y1="234" x2="240" y2="284" stroke="#e8590c" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M233.5,273 L240,286 L246.5,273" fill="none" stroke="#e8590c" stroke-width="2.5" stroke-linejoin="round"/>
+  <foreignObject x="241.5" y="271.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#e8590c">$\overline{a}_\text{n}$</div></foreignObject>
   <line x1="360" y1="308" x2="540" y2="308" stroke="#1f2933" stroke-width="3" stroke-linecap="round"/>
   <line x1="360" y1="308" x2="350" y2="320" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="376" y1="308" x2="366" y2="320" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
@@ -342,7 +343,7 @@ Kun auto ajaa tasaisella vauhdilla nyppylän huipun yli, se on hetken ympyrärad
   <foreignObject x="411.5" y="371.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{G}$</div></foreignObject>
   <line x1="470" y1="308" x2="470" y2="185" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
   <path d="M470,168 L478,186 L462,186 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <foreignObject x="477.5" y="163.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{N}$</div></foreignObject>
+  <foreignObject x="485.5" y="163.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{N}$</div></foreignObject>
   <line x1="540" y1="310" x2="540" y2="260" stroke="#e8590c" stroke-width="2.5" stroke-linecap="butt"/>
   <path d="M546.5,271 L540,258 L533.5,271" fill="none" stroke="#e8590c" stroke-width="2.5" stroke-linejoin="round"/>
   <foreignObject x="541.5" y="243.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#e8590c">$\overline{a}_\text{n}$</div></foreignObject>
@@ -359,10 +360,15 @@ Henkilöauto, jonka massa on $1200\,\text{kg}$, ajaa vaakasuoran tien kaarteessa
 
 <!-- vaihe -->
 
-**Periaate.** Valitaan kappaleeksi auto. Siihen vaikuttavat Maa (paino $\overline{G}$) ja tie (tukivoima $\overline{N}$ ja kitka $\overline{F}_\mu$). Auto on tasaisessa ympyräliikkeessä, joten Newtonin toisen lain mukaan kokonaisvoima osoittaa kohti kaarteen keskipistettä ja on suuruudeltaan $m\tfrac{v^2}{r}$. Ainoa vaakasuora voima on kitka, joten se osoittaa kohti keskipistettä. Renkaat eivät liu'u sivuttain, joten kitka on lepokitkaa, enintään $\mu_0 N$. Voimakuviossa auto on takaa katsottuna, $x$-akseli kohti keskipistettä ja $y$-akseli ylös.
+**Periaate.** Valitaan kappaleeksi auto. Siihen vaikuttavat Maa (paino $\overline{G}$) ja tie (tukivoima $\overline{N}$ ja kitka $\overline{F}_\mu$). Auto on tasaisessa ympyräliikkeessä, joten Newtonin toisen lain mukaan kokonaisvoima osoittaa kohti kaarteen keskipistettä ja on suuruudeltaan $m\tfrac{v^2}{r}$. Ainoa vaakasuora voima on kitka, joten se osoittaa kohti keskipistettä. Renkaat eivät liu'u sivuttain, joten kitka on lepokitkaa, enintään $\mu_0 N$. Voimakuviossa auto on takaa katsottuna ja kaarteen keskipiste oikealla, $x$-akseli kohti keskipistettä ja $y$-akseli ylös.
 
-<svg data-fig="esimerkki" viewBox="0 0 600 360" role="img" aria-label="Auton voimakuvio takaa katsottuna, auto suorakulmiona tien päällä. Kaarteen keskipiste on vasemmalla. Paino G keskipisteestä alas, tien tukivoima N alapinnasta ylös yhtä pitkänä ja tien kitkavoima alapinnan vasemmasta kulmasta vasemmalle kohti kaarteen keskipistettä, noin puolet painon pituudesta. Erillään oranssi kiihtyvyysnuoli a n vasemmalle. Nurkassa akselit: x vasemmalle kohti keskipistettä ja y ylös." style="max-width:100%;font-size:24px">
-  <line x1="160" y1="208" x2="520" y2="208" stroke="#1f2933" stroke-width="3" stroke-linecap="round"/>
+<svg data-fig="esimerkki" viewBox="0 0 600 360" role="img" aria-label="Auton voimakuvio takaa katsottuna, auto suorakulmiona tien päällä. Kaarteen keskipiste on oikealla. Paino G keskipisteestä alas, tien tukivoima N alapinnasta ylös yhtä pitkänä ja tien kitkavoima alapinnan oikeasta kulmasta oikealle kohti kaarteen keskipistettä, noin puolet painon pituudesta. Erillään oranssi kiihtyvyysnuoli a n oikealle. Nurkassa akselit: x oikealle kohti keskipistettä ja y ylös." style="max-width:100%;font-size:24px">
+  <line x1="80" y1="208" x2="440" y2="208" stroke="#1f2933" stroke-width="3" stroke-linecap="round"/>
+  <line x1="80" y1="208" x2="70" y2="220" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="96" y1="208" x2="86" y2="220" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="112" y1="208" x2="102" y2="220" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="128" y1="208" x2="118" y2="220" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="144" y1="208" x2="134" y2="220" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="160" y1="208" x2="150" y2="220" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="176" y1="208" x2="166" y2="220" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="192" y1="208" x2="182" y2="220" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
@@ -381,31 +387,26 @@ Henkilöauto, jonka massa on $1200\,\text{kg}$, ajaa vaakasuoran tien kaarteessa
   <line x1="400" y1="208" x2="390" y2="220" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="416" y1="208" x2="406" y2="220" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="432" y1="208" x2="422" y2="220" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="448" y1="208" x2="438" y2="220" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="464" y1="208" x2="454" y2="220" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="480" y1="208" x2="470" y2="220" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="496" y1="208" x2="486" y2="220" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="512" y1="208" x2="502" y2="220" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <rect x="255" y="132" width="150" height="76" fill="#f6f1e6" stroke="#1f2933" stroke-width="2.5"/>
-  <line x1="330" y1="170" x2="330" y2="283" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M330,300 L322,282 L338,282 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <foreignObject x="339.5" y="281.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{G}$</div></foreignObject>
-  <line x1="354" y1="208" x2="354" y2="95" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M354,78 L362,96 L346,96 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <foreignObject x="363.5" y="71.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{N}$</div></foreignObject>
-  <line x1="255" y1="208" x2="205.5" y2="208" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M188.5,208 L206.5,200 L206.5,216 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <foreignObject x="162" y="217.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{F}_{\mu}$</div></foreignObject>
-  <line x1="290" y1="90" x2="222" y2="90" stroke="#e8590c" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M233,83.5 L220,90 L233,96.5" fill="none" stroke="#e8590c" stroke-width="2.5" stroke-linejoin="round"/>
-  <foreignObject x="175.5" y="71.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#e8590c">$\overline{a}_\text{n}$</div></foreignObject>
-  <foreignObject x="20" y="25.5" width="233" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$\text{kohti keskipistettä}$</div></foreignObject>
-  <line x1="548" y1="318" x2="513" y2="318" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
-  <path d="M504,318 L514,313.5 L514,322.5 Z" fill="#6b7480" stroke-linejoin="round"/>
-  <line x1="548" y1="318" x2="548" y2="283" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
-  <path d="M548,274 L552.5,284 L543.5,284 Z" fill="#6b7480" stroke-linejoin="round"/>
-  <foreignObject x="480" y="303.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$x$</div></foreignObject>
-  <foreignObject x="538" y="245.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$y$</div></foreignObject>
+  <rect x="195" y="132" width="150" height="76" fill="#f6f1e6" stroke="#1f2933" stroke-width="2.5"/>
+  <line x1="270" y1="170" x2="270" y2="283" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M270,300 L262,282 L278,282 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="279.5" y="281.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{G}$</div></foreignObject>
+  <line x1="246" y1="208" x2="246" y2="95" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M246,78 L254,96 L238,96 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="203.5" y="71.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{N}$</div></foreignObject>
+  <line x1="345" y1="208" x2="394.5" y2="208" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M411.5,208 L393.5,216 L393.5,200 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="393" y="217.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{F}_{\mu}$</div></foreignObject>
+  <line x1="310" y1="90" x2="378" y2="90" stroke="#e8590c" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M367,96.5 L380,90 L367,83.5" fill="none" stroke="#e8590c" stroke-width="2.5" stroke-linejoin="round"/>
+  <foreignObject x="379.5" y="71.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#e8590c">$\overline{a}_\text{n}$</div></foreignObject>
+  <foreignObject x="347" y="25.5" width="233" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$\text{kohti keskipistettä}$</div></foreignObject>
+  <line x1="52" y1="318" x2="87" y2="318" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <path d="M96,318 L86,322.5 L86,313.5 Z" fill="#6b7480" stroke-linejoin="round"/>
+  <line x1="52" y1="318" x2="52" y2="283" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <path d="M52,274 L56.5,284 L47.5,284 Z" fill="#6b7480" stroke-linejoin="round"/>
+  <foreignObject x="100" y="303.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$x$</div></foreignObject>
+  <foreignObject x="42" y="245.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$y$</div></foreignObject>
 </svg>
 
 <!-- vaihe -->

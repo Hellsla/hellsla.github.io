@@ -54,11 +54,10 @@ def car_side(f, x, ybot, sc=1.0):
 
 # ---------------------------------------------------------------- the opening illustration
 def hero():
-    """The chapter's opening illustration: a car in a curve of a snowy country road; a dashed line shows the straight
-    path it would take without grip, leaving the road on the outside of the curve."""
+    """The chapter's opening illustration: a car in a curve of a snowy country road (no hint of where it would go
+    without grip: that is the chapter's prediction)."""
     f = H.hero("fy54-hero", "Kuvitus: talvinen maantie kaartaa metsän läpi oikealle ja katoaa kauas mäkien taakse. Kaarteen keskellä "
-               "ajaa henkilöauto takaapäin nähtynä. Autosta lähtee harmaa katkoviiva suoraan eteenpäin, kaarteen ulkoreunan yli lumiselle "
-               "pellolle: se on reitti, jota auto jatkaisi, jos renkaiden pito tiehen loppuisi. Tien reunoilla on lumipenkat ja kuusia.")
+               "ajaa henkilöauto takaapäin nähtynä. Tien reunoilla on lumipenkat ja kuusia.")
     H.sky(f, "fy54h", 330, ICE, GLASS)
     H.sun(f, "fy54h", 1060, 92, 38, rays=False)
     H.cloud(f, 250, 86, 1.0); H.cloud(f, 700, 60, 0.75)
@@ -85,10 +84,8 @@ def hero():
     # spruces beside the road, smaller far away
     for (sx, sy, sh) in [(90, 520, 210), (190, 420, 150), (40, 380, 120), (1120, 470, 190), (980, 400, 120), (760, 350, 70), (870, 345, 60)]:
         H.spruce(f, sx, sy, sh)
-    # the car seen from behind in the curve, and the straight path it would take without grip (to the outside)
-    t = 0.42; x, y = B(t); tx, ty = T(t); s = wid(t) / 330
-    sx, sy = x - 32 * s, y - 10 * s
-    f.line(sx, sy, sx + tx * 420, sy + ty * 420 - 40, MUTED, 4, "14 12", cap="round")
+    # the car seen from behind in the curve
+    t = 0.42; x, y = B(t); s = wid(t) / 330
     cw, ch = 150 * s, 92 * s
     f.rect(x - cw / 2, y - ch, cw, ch * 0.78, CAR, CAR_EDGE, 3, 14)
     f.path(f"M{n(x - cw * 0.36)},{n(y - ch)} L{n(x - cw * 0.28)},{n(y - ch * 1.42)} H{n(x + cw * 0.28)} L{n(x + cw * 0.36)},{n(y - ch)} Z", CAR, CAR_EDGE, 3)
@@ -107,7 +104,8 @@ def muutos():
             "radan yläosassa sininen nopeusnuoli v 1 ja v 2 on radan tangentin suuntainen; nuolet ovat yhtä pitkiä mutta eri suuntiin. "
             "Radan ylimmässä kohdassa näiden välissä oranssi kiihtyvyysnuoli a n osoittaa suoraan alas radan keskipisteeseen. "
             "Oikealla samat nopeusnuolet on piirretty samasta pisteestä. Nuolten kärkien välinen nuoli, nopeuden muutos delta v, "
-            "osoittaa suoraan alas eli samaan suuntaan kuin kiihtyvyys, kohti radan keskipistettä. Nuolet ovat mittakaavassa keskenään.")
+            "osoittaa suoraan alas eli samaan suuntaan kuin kiihtyvyys, kohti radan keskipistettä. Nopeusnuolet ovat molemmissa kuvissa "
+            "yhtä pitkiä, samassa mittakaavassa.")
     f.tex(150, 22, r"\text{kappaleen rata}", "middle", MUTED)
     cx, cy, R, L = 160, 200, 105, 70
     f.circle(cx, cy, R, "none", RULE, 2.5)
@@ -126,7 +124,7 @@ def muutos():
     f.tex(460, 22, r"\text{nopeuden muutos}", "middle", MUTED)
     qx, qy = 540, 150
     a1, a2 = math.radians(30), math.radians(150)
-    t1 = (qx - math.sin(a1) * L * 1.4, qy - math.cos(a1) * L * 1.4); t2 = (qx - math.sin(a2) * L * 1.4, qy - math.cos(a2) * L * 1.4)
+    t1 = (qx - math.sin(a1) * L, qy - math.cos(a1) * L); t2 = (qx - math.sin(a2) * L, qy - math.cos(a2) * L)   # the same length L as on the left
     thin_arrow(f, qx, qy, *t1, VELOCITY); thin_arrow(f, qx, qy, *t2, VELOCITY)
     f.tex(t1[0] + 34, t1[1] - 4, r"\overline{v}_1", "middle", VELOCITY)
     f.tex(t2[0] + 34, t2[1] + 8, r"\overline{v}_2", "middle", VELOCITY)
@@ -217,9 +215,9 @@ def nyppyla():
         ground(f, bx - 90, bx + 90, by + h / 2)
         d = FBD(f, s, body=(bx, by, w, h), m=m, a=(0, adir * an))
         d.force("G", (0, -G), (bx, by), "gravity", lab=(-22, -4))
-        d.force("N", (0, Nv), (bx + 20, by + h / 2), "normal", surface=0, lab=(24, 10))
+        d.force("N", (0, Nv), (bx + 20, by + h / 2), "normal", surface=0, lab=(32, 10))
         d.draw()
-        d.motion(r"\overline{a}_\text{n}", (0, adir), (bx + 90, by - 20 if adir < 0 else by + 20), 52, lab=(24, 0))
+        d.motion(r"\overline{a}_\text{n}", (0, adir), (bx + 90, by - 56 if adir < 0 else by + 20), 52, lab=(24, 0))
     return f.svg()
 
 
@@ -227,25 +225,26 @@ EX = dict(m=1200.0, r=45.0, v=54 / 3.6)     # the worked example's data (lesson-
 
 
 def esimerkki():
-    """The worked example's force diagram: a car in a level curve seen from behind, centre to the left; x towards the centre."""
+    """The worked example's force diagram: a car in a level curve seen from behind, centre to the right; x towards the
+    centre (right), y up, as in the exercise solutions."""
     m, r, v = EX["m"], EX["r"], EX["v"]
     an = v * v / r; G = m * g
-    f = Fig("fy54-esimerkki", 360, "Auton voimakuvio takaa katsottuna, auto suorakulmiona tien päällä. Kaarteen keskipiste on vasemmalla. "
-            "Paino G keskipisteestä alas, tien tukivoima N alapinnasta ylös yhtä pitkänä ja tien kitkavoima alapinnan vasemmasta "
-            "kulmasta vasemmalle kohti kaarteen keskipistettä, noin puolet painon pituudesta. Erillään oranssi kiihtyvyysnuoli a n "
-            "vasemmalle. Nurkassa akselit: x vasemmalle kohti keskipistettä ja y ylös.")
-    bx, by, w, h = 330, 170, 150, 76
-    ground(f, 160, 520, by + h / 2)
-    d = FBD(f, 130 / G, body=(bx, by, w, h), m=m, a=(-an, 0))
+    f = Fig("fy54-esimerkki", 360, "Auton voimakuvio takaa katsottuna, auto suorakulmiona tien päällä. Kaarteen keskipiste on oikealla. "
+            "Paino G keskipisteestä alas, tien tukivoima N alapinnasta ylös yhtä pitkänä ja tien kitkavoima alapinnan oikeasta "
+            "kulmasta oikealle kohti kaarteen keskipistettä, noin puolet painon pituudesta. Erillään oranssi kiihtyvyysnuoli a n "
+            "oikealle. Nurkassa akselit: x oikealle kohti keskipistettä ja y ylös.")
+    bx, by, w, h = 270, 170, 150, 76
+    ground(f, 80, 440, by + h / 2)
+    d = FBD(f, 130 / G, body=(bx, by, w, h), m=m, a=(an, 0))
     d.force("G", (0, -G), (bx, by), "gravity", lab=(26, -4))
-    d.force("N", (0, G), (bx + 24, by + h / 2), "normal", surface=0, lab=(26, 8))
-    d.force("F_mu", (-m * an, 0), (bx - w / 2, by + h / 2), "friction", surface=0, lab=(-4, 24))
+    d.force("N", (0, G), (bx - 24, by + h / 2), "normal", surface=0, lab=(-26, 8))
+    d.force("F_mu", (m * an, 0), (bx + w / 2, by + h / 2), "friction", surface=0, lab=(4, 24))
     d.draw()
-    d.motion(r"\overline{a}_\text{n}", (-1, 0), (bx - 40, by - 80), 70)
-    f.tex(20, 40, r"\text{kohti keskipistettä}", "start", MUTED)
-    ax, ay, L = 548, 318, 44
-    f.arrow(ax, ay, ax - L, ay, MUTED, 2, 10); f.arrow(ax, ay, ax, ay - L, MUTED, 2, 10)
-    f.tex(ax - L - 14, ay, "x", "middle", MUTED); f.tex(ax, ay - L - 14, "y", "middle", MUTED)
+    d.motion(r"\overline{a}_\text{n}", (1, 0), (bx + 40, by - 80), 70)
+    f.tex(580, 40, r"\text{kohti keskipistettä}", "end", MUTED)
+    ax, ay, L = 52, 318, 44
+    f.arrow(ax, ay, ax + L, ay, MUTED, 2, 10); f.arrow(ax, ay, ax, ay - L, MUTED, 2, 10)
+    f.tex(ax + L + 14, ay, "x", "middle", MUTED); f.tex(ax, ay - L - 14, "y", "middle", MUTED)
     return f.svg()
 
 
@@ -259,7 +258,7 @@ def virhe():
     ground(f, 160, 440, by + h / 2)
     d = FBD(f, 1.1, body=(bx, by, w, h), wrong="an invented upward 'centrifugal force' F_kp: nothing exerts it, and with it the forces sum to zero although the car accelerates down towards the centre")
     d.force("G", (0, -100), (bx, by), "gravity", lab=(-24, -4))
-    d.force("N", (0, 60), (bx + 30, by + h / 2), "normal", surface=0, lab=(26, 10))
+    d.force("N", (0, 60), (bx + 30, by + h / 2), "normal", surface=0, lab=(54, 8))
     d.force("F_kp", (0, 40), (bx - 20, by - h / 2), "other", tex=r"\overline{F}_\text{kp}", lab=(-34, 4))
     d.draw()
     return f.svg()
@@ -274,7 +273,7 @@ def _valitse(name, desc, Nv, wrong=None, extra=False):
     bx, by, w, h = 150, 170, 104, 30
     d = FBD(f, 1.1, body=(bx, by, w, h), a_dir=None if wrong else (0, 1), wrong=wrong)
     d.force("G", (0, -80), (bx, by), "gravity", lab=(22, -4))
-    d.force("N", (0, Nv), (bx + 22, by + h / 2), "normal", surface=0, lab=(26, 12))
+    d.force("N", (0, Nv), (bx + 22, by + h / 2), "normal", surface=0, lab=(48, 12))
     if extra: d.force("F_kp", (0, -40), (bx - 34, by + h / 2), "other", tex=r"\overline{F}_\text{kp}", lab=(-40, -6))
     ground(f, 40, 260, by + h / 2)
     d.draw()

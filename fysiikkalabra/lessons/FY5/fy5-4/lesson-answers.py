@@ -25,6 +25,8 @@ a["sim-Fmax-1500"] = mu0 * 1500 * g                     # 11 772 N
 a["exp1-vmax"] = math.sqrt(mu0 * g * 50)                # m v²/r = mu0 m g → v = sqrt(mu0 g r) = 19,81 m/s
 a["exp1-vmax-nomu"] = math.sqrt(g * 50)                 # mistake: without mu0, 22,1 m/s
 a["exp1-vmax-nosqrt"] = mu0 * g * 50                    # mistake: no square root, 392,4
+for vv in (25, 30):                                      # Koe 1, the slide: the car turns on a radius v²/(mu0 g), well over 50 m
+    a[f"exp1-slide-r-{vv}"] = vv ** 2 / (mu0 * g)       # 79,6 m and 114,7 m: gentler than the track, straighter at 30 m/s
 for mm in (1000, 1500, 2000):                            # Koe 2: v = 19 m/s, r = 50 m
     a[f"exp2-F-{mm}"] = mm * 19 ** 2 / 50               # 7220 · 10 830 · 14 440 N
     a[f"exp2-Fmax-{mm}"] = mu0 * mm * g                 # 7848 · 11 772 · 15 696 N

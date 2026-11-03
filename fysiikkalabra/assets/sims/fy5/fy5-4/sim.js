@@ -3,13 +3,16 @@
 // Model: a_n = v²/r towards the centre; vertically N = mg; the only horizontal force is the road's static friction,
 // which must be m v²/r towards the centre. The grip holds while m v²/r ≤ μ0 mg; then F_μ = m v²/r. Otherwise the road
 // gives at most μ0 mg, still perpendicular to the velocity (the speed stays v), so the car turns on a wider circle of
-// radius v²/(μ0 g) and runs off the outside edge of the track, nearly along the tangent. No air or rolling resistance.
+// radius v²/(μ0 g): it turns more gently than the track (the straighter, the larger the speed) and runs off the outside
+// edge of the asphalt when v²/(μ0 g) is clearly over r (e.g. 25 or 30 m/s on dry asphalt at r = 50 m; just over the limit
+// the slide circle is only slightly wider than the track and the car stays on the asphalt). No air or rolling resistance.
 // Left (wide) or top (phone): the track seen from above (not to scale: the track keeps its size in the picture, the car
 // is drawn larger), the velocity a thin blue arrow outside the car, the acceleration a thin orange arrow inside it, both
 // beside the car, never forces. Right or below: the force diagram of the car seen from behind, the car a plain
 // rectangle on the road, G from its centre, N from its bottom face, friction from its bottom corner towards the centre,
 // one scale per mass (G always the same length); under it a bar of the friction needed against the limit μ0 mg.
-// On a narrow screen (#sim-root under 500 px) the panels stack at the full 600 width. Every canvas text goes through
+// On a narrow screen (#sim-root under 500 px) the panels stack at the full 600 width. simState.dmax is the largest
+// distance of the sliding car from the centre (m) and simState.reuna the asphalt's outer edge (m) in the picture. Every canvas text goes through
 // lab(), which pushes its ink box to simState.labels. p5.js 1.9 instance mode.
 new p5((p) => {
   const g = 9.81;
@@ -21,7 +24,7 @@ new p5((p) => {
   const TV = { cx: 180, cy: 212, R: 130, w: 360, h: 400 };               // top view: track centre, radius (px), panel size
   const D = { x0: 360, w: 240, bx: 500, by: 150, bw: 96, bh: 52, L: 95, barY: 334, barX: 372, barW: 216 };   // diagram panel
   let btn, slV, lV, slR, lR, selM, selP, selSpeed, readout;
-  let mode = 'rata', running = false, done = false, th = 0, X = 0, Y = 0, psi = 0, trail = [], labels = [];
+  let mode = 'rata', running = false, done = false, th = 0, X = 0, Y = 0, psi = 0, dmax = 0, trail = [], labels = [];
 
   const model = () => {
     const v = Number(slV.value()), r = Number(slR.value()), m = Number(selM.value()), mu0 = SURF[selP.value()];
@@ -29,7 +32,8 @@ new p5((p) => {
     const Fmu = pito ? Ft : Fmax;
     return { v, r, m, mu0, an, Ft, G, N: G, Fmax, pito, Fmu, a: Fmu / m };
   };
-  const restart = () => { mode = 'rata'; running = false; done = false; th = 0; trail = []; };
+  const restart = () => { mode = 'rata'; running = false; done = false; th = 0; dmax = 0; trail = []; };
+  const halfW = () => (narrow ? 24 : 19) * U;                            // half the asphalt's width in the picture (px)
 
   p.setup = () => {
     p.createCanvas(600, 400).parent('sim-root');
@@ -49,6 +53,11 @@ new p5((p) => {
     selSpeed.option(__('hidas'), '0.5'); selSpeed.option(__('normaali'), '1'); selSpeed.option(__('nopea'), '2'); selSpeed.selected('1');
     for (const e of [slR.elt, selM.elt, selP.elt]) { e.addEventListener('input', restart); e.addEventListener('change', restart); }
     for (const e of [slV.elt]) { const f = () => { if (mode !== 'rata') restart(); }; e.addEventListener('input', f); e.addEventListener('change', f); }
+    // two rows of controls: the buttons and the speed slider, then the radius, mass, surface and pace side by side, so
+    // the card beside the experiments keeps its legend in view on a laptop screen
+    controls.style('column-gap', '0.75rem');
+    l1.style('flex', '1 1 14rem');
+    for (const l of [l2, lm, lp, ls]) l.style('flex', '1 1 7.5rem');
     p.createP(__('selite')).parent('sim-root').class('note');
     p.textFont('Arial');
     restart();
@@ -62,7 +71,8 @@ new p5((p) => {
   };
 
   const state = (M, labs) => ({ v: M.v, r: M.r, m: M.m, pinta: selP.value(), mu0: M.mu0, an: M.an, Ftarve: M.Ft, Fmax: M.Fmax,
-    Fmu: M.Fmu, G: M.G, N: M.N, a: M.a, pito: M.pito ? 1 : 0, liukuu: mode === 'rata' ? 0 : 1, running, done, labels: labs });
+    Fmu: M.Fmu, G: M.G, N: M.N, a: M.a, pito: M.pito ? 1 : 0, liukuu: mode === 'rata' ? 0 : 1, running, done,
+    dmax, reuna: M.r * (TV.R + halfW()) / TV.R, labels: labs });
 
   p.draw = () => {   // the speed select scales simulated time, so it changes only the pace
     const M = model();
@@ -95,7 +105,7 @@ new p5((p) => {
     const ppm = TV.R / M.r, w = M.mu0 * g / M.v;
     while (dt > 0) {
       const h = Math.min(dt, 0.02); dt -= h;
-      X += M.v * Math.cos(psi) * h; Y += M.v * Math.sin(psi) * h; psi += w * h;
+      X += M.v * Math.cos(psi) * h; Y += M.v * Math.sin(psi) * h; psi += w * h; dmax = Math.max(dmax, Math.hypot(X, Y));
       if (trail.length === 0 || Math.hypot(X - trail[trail.length - 1][0], Y - trail[trail.length - 1][1]) * ppm > 6) trail.push([X, Y]);
       const sx = TV.cx + X * ppm, sy = TV.cy - Y * ppm, out = Math.hypot(X, Y) * ppm;
       if (out > TV.R + 46 * U || sx < 16 || sx > TV.w - 16 || sy < 40 || sy > TV.h - 16) { running = false; done = true; mode = 'ulos'; break; }
@@ -120,7 +130,7 @@ new p5((p) => {
 
   // --- the track from above: grass, the asphalt ring, the centre marker, the car, its velocity and acceleration ---
   function topView(M, fh) {
-    const { cx, cy, R, w, h } = TV, half = (narrow ? 24 : 19) * U, ppm = R / M.r;
+    const { cx, cy, R, w, h } = TV, half = halfW(), ppm = R / M.r;
     grect(0, 0, w, h, [[226, 240, 214], [204, 228, 190]], 0);
     p.noFill(); p.stroke(160, 168, 176); p.strokeWeight(2 * half + 4 * U); p.circle(cx, cy, 2 * R);
     p.stroke(196, 204, 212); p.strokeWeight(2 * half); p.circle(cx, cy, 2 * R);
@@ -143,7 +153,7 @@ new p5((p) => {
     const La = Math.max(10, (narrow ? 10 : 8) * M.a * U * 0.8), a0 = 24 * U;  // acceleration: inside the car, towards the turn's centre
     const ax0 = sx + nin[0] * a0, ay0 = sy + nin[1] * a0, ax1 = ax0 + nin[0] * La, ay1 = ay0 + nin[1] * La;
     thin(ax0, ay0, ax1, ay1, ORANGE);
-    lab('$\\overline{a}$', ax1 + nin[0] * 12 * U + head[0] * 10 * U, ay1 + nin[1] * 12 * U + head[1] * 10 * U + fh * 0.35, 'c', fh, ORANGE);
+    lab('$\\overline{a}_\\text{n}$', ax1 + nin[0] * 12 * U + head[0] * 10 * U, ay1 + nin[1] * 12 * U + head[1] * 10 * U + fh * 0.35, 'c', fh, ORANGE);
     const ty = narrow ? fh + 6 : 20;
     lab(__('ylhaalta'), 8, ty, 'l', fh, INKC);
     lab(`$r = ${tx(M.r, 0)}\\,\\text{m}$`, w - 8, ty, 'r', fh, INKC);
@@ -182,7 +192,7 @@ new p5((p) => {
     lab('$\\overline{F}_\\mu$', left - Math.max(Lf, 20) / 2, bot + fh * 1.4, 'c', fh, RED);
     const ax = left - 8 * U, ay = D.by - D.bh * 0.2;                     // the acceleration beside the body, left of it
     thin(ax, ay, ax - 46 * U, ay, ORANGE);
-    lab('$\\overline{a}$', ax - 23 * U, ay - fh * 0.45, 'c', fh, ORANGE);
+    lab('$\\overline{a}_\\text{n}$', ax - 23 * U, ay - fh * 0.45, 'c', fh, ORANGE);
     // the bar: friction needed (m v²/r) against the limit μ0 mg; the bar's full width is the weight G
     const bw = D.barW, X0 = D.barX, y = D.barY, bh = (narrow ? 20 : 14) * U, sc = bw / M.G;
     lab(__('tarve'), X0, y - bh / 2 - fh * 0.5, 'l', fh, INKC);
