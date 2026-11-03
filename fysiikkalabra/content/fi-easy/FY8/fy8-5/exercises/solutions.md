@@ -25,7 +25,7 @@
 **Kaava:** $k_\text{ulko} = (1 - p)\,N$
 **Muunnokset:** $p = 90\,\% = 0{,}90$
 **Sijoitus:** $k_\text{ulko} = (1 - 0{,}90) \cdot 3000 = 0{,}10 \cdot 3000 = 300$
-**Vastaus:** noin $300$ mittausta. Luku on odotusarvo, ja todellinen määrä vaihtelee sarjasta toiseen.
+**Vastaus:** noin $300$ mittausta. Luku on odotusarvo (keskimääräinen luku monen sarjan jälkeen), ja todellinen määrä vaihtelee sarjasta toiseen.
 **Järkevyys:** Joka kymmenes mittaus osuu rajan ulkopuolelle, ja $3000$:n kymmenesosa on $300$. Jos raja olisi seinä, ulkopuolella ei olisi yhtään osumaa. Orbitaalin raja on kuitenkin vain sovittu todennäköisyysraja.
 
 ## fy8-5-L1-04
@@ -71,12 +71,12 @@
 ## fy8-5-L2-03
 **Annettu:** mittauksia $N = 2400$. Rajat ovat $50\,\%$:n raja $0{,}071\,\text{nm}$ ja $90\,\%$:n raja $0{,}14\,\text{nm}$.
 **Kysytty:** rajojen väliin osuvien mittausten odotettu määrä $k$
-**Periaate:** Rajan $90\,\%$ sisällä on raja $50\,\%$ kokonaan. Rajojen väliseen kuoreen jää siis todennäköisyys $0{,}90 - 0{,}50 = 0{,}40$. Monessa mittauksessa alueeseen osuvien osuus on likimain alueen todennäköisyys. Rajojen säteitä ei tarvita.
+**Periaate:** $50\,\%$:n raja on kokonaan $90\,\%$:n rajan sisällä. Rajojen väliseen kuoreen jää siis todennäköisyys $0{,}90 - 0{,}50 = 0{,}40$. Monessa mittauksessa alueeseen osuvien osuus on likimain alueen todennäköisyys. Rajojen säteitä ei tarvita.
 **Kaava:** $k = (p_{90} - p_{50})\,N$
 **Muunnokset:** $p_{90} = 90\,\% = 0{,}90$ ja $p_{50} = 50\,\% = 0{,}50$
 **Sijoitus:** $k = (0{,}90 - 0{,}50) \cdot 2400 = 0{,}40 \cdot 2400 = 960$
-**Vastaus:** noin $960$ mittausta. Luku on odotusarvo, ja todellinen määrä vaihtelee sarjasta toiseen.
-**Järkevyys:** Puolet eli $1200$ mittausta osuu $50\,\%$:n rajan sisään. Rajan $90\,\%$ sisään osuu $2160$ mittausta. Niiden erotus on $960$. Rajojen välissä on vähemmän osumia kuin sisemmän rajan sisällä, vaikka kuori on tilavuudeltaan suurempi. Syy on se, että pilvi harvenee ulospäin.
+**Vastaus:** noin $960$ mittausta. Luku on odotusarvo (keskimääräinen luku monen sarjan jälkeen), ja todellinen määrä vaihtelee sarjasta toiseen.
+**Järkevyys:** Puolet eli $1200$ mittausta osuu $50\,\%$:n rajan sisään. $90\,\%$:n rajan sisään osuu $2160$ mittausta. Niiden erotus on $960$. Rajojen välissä on vähemmän osumia kuin sisemmän rajan sisällä, vaikka kuori on tilavuudeltaan suurempi. Syy on se, että pilvi harvenee ulospäin.
 
 ## fy8-5-L2-04
 **Annettu:** elektroni kuorella $n = 2$. Lisäksi $E_n = -\tfrac{13{,}6\,\text{eV}}{n^2}$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$ ja $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$.
@@ -86,7 +86,7 @@
 **Muunnokset:** $-E_2 = \tfrac{13{,}6\,\text{eV}}{4} = 3{,}40\,\text{eV}$. Sijoitetaan $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$: $-E_2 = 3{,}40 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 5{,}4468 \cdot 10^{-19}\,\text{J}$. Lopuksi tarvitaan vielä $1\,\text{nm} = 10^{-9}\,\text{m}$.
 **Sijoitus:** Ensin $hc = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8}\,\text{m/s} = 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}$. Sitten $\lambda_\text{max} = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{5{,}4468 \cdot 10^{-19}\,\text{J}} = 3{,}6470 \cdot 10^{-7}\,\text{m} = 364{,}70\,\text{nm}$
 **Vastaus:** $365\,\text{nm}$. Vastauksessa on kolme merkitsevää numeroa, koska energiassa $13{,}6\,\text{eV}$ on kolme.
-**Järkevyys:** Energia $3{,}4\,\text{eV}$ on hieman yli violetin valon fotonin energian. Aallonpituus on siis juuri näkyvän alueen alapuolella, lähellä ultraviolettia. Tätä pidempiaaltoinen näkyvä valo ei irrota elektronia kuorelta $n = 2$.
+**Järkevyys:** Energia $3{,}4\,\text{eV}$ on hieman yli violetin valon fotonin energian. Aallonpituus on siis ultraviolettia, juuri näkyvän alueen ulkopuolella. Tätä pidempiaaltoinen näkyvä valo ei irrota elektronia kuorelta $n = 2$.
 
 ## fy8-5-L3-01
 **Annettu:** fotonin aallonpituus $\lambda = 97{,}3\,\text{nm}$. Atomi on perustilassa, $n = 1$. Lisäksi $E_n = -\tfrac{13{,}6\,\text{eV}}{n^2}$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$ ja $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$.

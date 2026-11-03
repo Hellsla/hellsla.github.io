@@ -1622,7 +1622,9 @@
       "mittauksia": "Measurements",
       "kynnys": "Threshold of the boundary $p = {{p}}\\,\\%$",
       "selite": "Blue dot: hit inside the boundary, grey: outside. Line: boundary of the orbital.",
-      "lukemat": "Measurements ${N = {{N}}}$<br>Inside the boundary ${k = {{k}}}$, outside ${N - k = {{out}}}$<br>Share inside the boundary ${k : N = {{f}}\\,\\%}$<br>Most common distance from the nucleus ${r \\approx {{rp}}\\,\\text{nm}}$<br><strong>Greatest distance of the boundary from the nucleus ${R = {{R}}\\,\\text{nm}}$</strong>"
+      "lukemat": "Measurements ${N = {{N}}}$<br>Inside the boundary ${k = {{k}}}$, outside ${N - k = {{out}}}$<br>Share inside the boundary ${k : N = {{f}}\\,\\%}$<br>Most common distance from the nucleus ${r \\approx {{rp}}\\,\\text{nm}}$<br><strong>Greatest distance of the boundary from the nucleus ${R = {{R}}\\,\\text{nm}}$</strong>",
+      "osumia": "$\\text{hits}$",
+      "orbSuffix": " orbital}$"
     }
   },
   "practice": {

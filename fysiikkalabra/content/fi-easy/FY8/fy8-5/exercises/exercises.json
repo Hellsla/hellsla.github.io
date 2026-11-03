@@ -87,7 +87,7 @@
     {
       "id": "fy8-5-L3-02",
       "level": 3,
-      "text": "Kevyissä atomeissa elektronit täyttävät perustilassa orbitaalit järjestyksessä $1\\text{s}$, $2\\text{s}$, $2\\text{p}$, $3\\text{s}$, $3\\text{p}$. Kullekin orbitaalille mahtuu enintään kaksi elektronia. Erään alkuaineen atomissa $3\\text{p}$-alikuori on täsmälleen puoliksi täynnä. Kuinka monta elektronia atomissa on?",
+      "text": "Kevyissä atomeissa elektronit täyttävät perustilassa orbitaalit järjestyksessä $1\\text{s}$, $2\\text{s}$, $2\\text{p}$, $3\\text{s}$, $3\\text{p}$. Kullekin orbitaalille mahtuu enintään kaksi elektronia. Erään alkuaineen atomissa $3\\text{p}$-alikuori (kuoren osa) on täsmälleen puoliksi täynnä. Kuinka monta elektronia atomissa on?",
       "answer": 15,
       "unit": "kpl",
       "tolerance": 0.02

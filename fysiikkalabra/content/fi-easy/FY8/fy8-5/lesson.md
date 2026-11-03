@@ -200,12 +200,12 @@
 ## Ydinajatus
 
 ### Radasta aaltoon
-Bohrin malli antoi vetyatomin energiatasot oikein (luku *Vetyatomin energiatasot ja Bohrin malli*). Sen kuva on kuitenkin yksinkertainen: pieni pallo kiertää ydintä ympyräradalla. Tämä kuva ei kestä tarkempaa tarkastelua. Malli ei kerro, miksi vain tietyt radat ovat sallittuja. Se ei myöskään toimi atomeille, joissa on monta elektronia.
+Bohrin malli antoi vetyatomin energiatasot oikein (luku *Vetyatomin energiatasot ja Bohrin malli*). Sen kuva on kuitenkin yksinkertainen: pieni pallo kiertää ydintä ympyräradalla. Tämä kuva ei kestä lähempää tarkastelua. Malli ei kerro, miksi vain tietyt radat ovat sallittuja. Se ei myöskään toimi atomeille, joissa on monta elektronia.
 
 Luvussa *Valo ja elektroni aaltoina ja hiukkasina* nähtiin lisäksi, että elektronit muodostavat kaksoisraon taakse interferenssikuvion, vaikka ne lähetetään yksi kerrallaan. Elektronin liikettä pitää siis kuvata aallolla. **Aaltomekaanisessa atomimallissa** elektronin tilaa atomissa kuvaa aalto, joka levittäytyy ytimen ympärille. Elektronilla ei ole rataa.
 
 ### Sallitut tilat ovat seisovia aaltoja
-Kitaran kieli on kiinni molemmista päistään. Siksi kieleen syntyy vain sellaisia seisovia aaltoja, joissa kielen päät ovat solmukohtia. Solmukohta on kohta, jossa aalto ei liiku. Värähtelytapoja on siksi vain tietyt: yksi kupu, kaksi kupua, kolme kupua ja niin edelleen. Kupu on aallon korkein kohta.
+Kitaran kieli on kiinni molemmista päistään. Siksi kieleen syntyy vain sellaisia seisovia aaltoja, joissa kielen päät ovat solmukohtia. Solmukohta on kohta, jossa kieli pysyy paikallaan. Värähtelytapoja on siksi vain tietyt: yksi kupu, kaksi kupua, kolme kupua ja niin edelleen. Kupukohta on kohta, jossa kieli värähtelee eniten.
 
 Ytimen sähköinen vetovoima sitoo elektronin. Elektronin aallon pitää samaan tapaan sopia ytimen ympärille. Pysyviä tiloja syntyy vain tietyillä aallon muodoilla, ja jokaisella muodolla on oma energiansa. Energian kvantittuminen ei siis ole erillinen oletus kuten Bohrin mallissa. Kvantittuminen tarkoittaa, että energia voi olla vain tietyissä arvoissa. Se seuraa siitä, että sidottu aalto voi olla vain seisova aalto. Kielessä lisäsolmu nostaa värähtelyn taajuutta. Vetyatomissa tilan energia on sitä suurempi, mitä enemmän aallossa on solmuja. Monen elektronin atomissa tämä pätee saman muotoisiin tiloihin (s, p, …).
 
@@ -240,9 +240,9 @@ Ytimen sähköinen vetovoima sitoo elektronin. Elektronin aallon pitää samaan 
 
 Atomissa aalto on kolmiulotteinen, joten sen solmut ovat pintoja. Solmupinnalla elektronia ei havaita. Alimman tilan, $1\text{s}$-tilan, aallossa ei ole solmua. Kuoren $n = 2$ tiloissa on yksi solmu. Kuori tarkoittaa tiloja, joilla on sama pääkvanttiluku. Tilassa $2\text{s}$ solmu on pallopinta ytimen ympärillä. Tilassa $2\text{p}$ solmu on taso, joka kulkee ytimen kautta.
 
-Tilan nimen numero on pääkvanttiluku $n$. Solmuja on yhteensä $n - 1$. Kirjain kertoo aallon muodon. Tila s on pallosymmetrinen eli samanlainen joka suunnasta. Tilassa p on kaksi lohkoa ytimen vastakkaisilla puolilla.
+Tilan nimen numero on pääkvanttiluku $n$. Solmuja on yhteensä $n - 1$. Kirjain kertoo aallon muodon. s-orbitaali on pallosymmetrinen eli samanlainen kaikkiin suuntiin. p-orbitaalissa on kaksi lohkoa ytimen vastakkaisilla puolilla.
 
-<svg data-fig="nodes" viewBox="0 0 600 360" role="img" aria-label="Periaatekuva, ei mittakaavassa: vetyatomin kolmen orbitaalin poikkileikkaukset ytimen kautta. Orbitaali 1s on pallo, jossa ei ole solmua. Orbitaali 2s on pallo, jonka sisällä on solmupallo. Solmupallon kohdalla elektronia ei havaita. Solmupallon sisä- ja ulkopuolella aalto värähtelee vastakkaisissa vaiheissa. Orbitaalissa 2p on kaksi lohkoa, yksi ytimen kummallakin puolella. Lohkojen välissä on solmutaso, joka kulkee ytimen kautta. Kuvassa on yksi kolmesta 2p-orbitaalista, ja sen lohkot ovat pystysuunnassa. Kaksi muuta osoittavat kahteen muuhun suuntaan. Ydin on punainen piste." style="max-width:100%;font-size:24px">
+<svg data-fig="nodes" viewBox="0 0 600 360" role="img" aria-label="Periaatekuva, ei mittakaavassa: vetyatomin kolmen orbitaalin poikkileikkaukset ytimen kautta. 1s-orbitaali on pallo, jossa ei ole solmua. 2s-orbitaali on pallo, jonka sisällä on solmupallo: sen kohdalla elektronia ei havaita, ja sen sisä- ja ulkopuolella aalto värähtelee vastakkaisissa vaiheissa. 2p-orbitaalissa on kaksi lohkoa, yksi ytimen kummallakin puolella, ja niiden välissä ytimen kautta kulkeva solmutaso. Kuvassa on yksi kolmesta 2p-orbitaalista, jonka lohkot ovat pystysuunnassa; kaksi muuta osoittavat kahteen muuhun suuntaan. Ydin on punainen piste." style="max-width:100%;font-size:24px">
   <defs><radialGradient id="fy85-cloud"><stop offset="0" stop-color="#1971c2" stop-opacity="0.95"/><stop offset="1" stop-color="#1971c2" stop-opacity="0.12"/></radialGradient><radialGradient id="fy85-ring" r="0.5"><stop offset="0.42" stop-color="#1971c2" stop-opacity="0"/><stop offset="0.5" stop-color="#1971c2" stop-opacity="0.12"/><stop offset="0.72" stop-color="#1971c2" stop-opacity="0.55"/><stop offset="1" stop-color="#1971c2" stop-opacity="0.08"/></radialGradient></defs>
   <line x1="200" y1="30" x2="200" y2="300" stroke="#c9c2b2" stroke-width="2" stroke-linecap="butt" stroke-dasharray="6 6"/>
   <line x1="400" y1="30" x2="400" y2="300" stroke="#c9c2b2" stroke-width="2" stroke-linecap="butt" stroke-dasharray="6 6"/>
@@ -268,7 +268,7 @@ Tilan nimen numero on pääkvanttiluku $n$. Solmuja on yhteensä $n - 1$. Kirjai
 </svg>
 
 ### Todennäköisyystulkinta
-Aalto ei kerro, missä elektroni on. Se kertoo, missä elektroni havaitaan todennäköisesti. Kun elektronin paikka mitataan, tulos on aina yksi piste. Yksittäistä tulosta ei voi ennustaa. Aallon amplitudin neliö kertoo, kuinka todennäköisesti elektroni havaitaan pienessä tilavuudessa kunkin kohdan ympärillä. Tämä on aaltomallin **todennäköisyystulkinta**.
+Aalto ei kerro, missä elektroni on. Se kertoo, missä elektroni havaitaan todennäköisesti. Kun elektronin paikka mitataan, tulos on aina yksi piste. Yksittäistä tulosta ei voi ennustaa. Amplitudi on aallon suurin poikkeama tasapainosta. Aallon amplitudin neliö kertoo, kuinka todennäköisesti elektroni havaitaan pienessä tilavuudessa kunkin kohdan ympärillä. Tämä on aaltomallin **todennäköisyystulkinta**.
 
 Jakauma tulee näkyviin vasta, kun mittaus toistetaan monessa samassa tilassa olevassa atomissa. Jos $N$ mittauksesta $k$ osuu johonkin alueeseen, todennäköisyys havaita elektroni siinä on likimain
 ```latex
@@ -1329,11 +1329,11 @@ Vetyatomissa tilan energia riippuu vain pääkvanttiluvusta $n$. Aaltomalli anta
 ```latex
 E_n = -\frac{13{,}6\,\text{eV}}{n^2}
 ```
-missä $E_n$ on elektronin energia (eV) kuorella $n = 1, 2, 3, \ldots$ Samaan pääkvanttilukuun kuuluvat tilat muodostavat elektronikuoren. Kuorella $n$ on $n$ alikuorta: s, p, d ja f. Niissä on $1$, $3$, $5$ ja $7$ orbitaalia. Kuoren orbitaalien määrä on siksi $n^2$.
+missä $E_n$ on elektronin energia (eV) kuorella $n = 1, 2, 3, \ldots$ Samaan pääkvanttilukuun kuuluvat tilat muodostavat elektronikuoren. Kuorella $n$ on $n$ alikuorta: s, p, d ja f. Alikuori on kuoren osa, jossa orbitaaleilla on sama muoto. Niissä on $1$, $3$, $5$ ja $7$ orbitaalia. Kuoren orbitaalien määrä on siksi $n^2$.
 
-Alikuoren orbitaalien määrä riippuu aallon muodosta. Orbitaali s on pallo, joten sitä voi olla vain yksi. Orbitaalin p lohkopari voi osoittaa kolmeen suuntaan, jotka ovat kohtisuorassa toisiaan vastaan ($x$, $y$ ja $z$). Siksi p-orbitaaleja on kolme. Tämän luvun kuvissa näkyy niistä yksi, jonka lohkot ovat pystysuunnassa. Alikuorilla d ja f on vastaavasti viisi ja seitsemän erilaista orbitaalia.
+Alikuoren orbitaalien määrä riippuu aallon muodosta. s-orbitaali on pallo, joten sitä voi olla vain yksi. p-orbitaalin lohkopari voi osoittaa kolmeen suuntaan, jotka ovat kohtisuorassa toisiaan vastaan ($x$, $y$ ja $z$). Siksi p-orbitaaleja on kolme. Tämän luvun kuvissa näkyy niistä yksi, jonka lohkot ovat pystysuunnassa. Alikuorilla d ja f on vastaavasti viisi ja seitsemän erilaista orbitaalia.
 
-Elektronilla on lisäksi spin. Spin on elektronin oma ominaisuus, jolla on vain kaksi mahdollista arvoa. Siksi kullakin orbitaalilla voi olla enintään kaksi elektronia, ja niillä on vastakkainen spin (Paulin kieltosääntö). Kuorelle mahtuu siksi enintään
+Elektronilla on lisäksi spin. Spin on elektronin oma ominaisuus, jolla on vain kaksi mahdollista arvoa. Siksi kullakin orbitaalilla voi olla enintään kaksi elektronia, ja niillä on vastakkainen spin (Paulin kieltosääntö eli sääntö, että kahdella elektronilla ei ole täsmälleen samaa tilaa). Kuorelle mahtuu siksi enintään
 ```latex
 N_\text{max} = 2n^2
 ```
@@ -1444,7 +1444,7 @@ Vetyatomin elektroni siirtyy $3\text{d}$-orbitaalilta $2\text{p}$-orbitaalille, 
 **Järkevyys.** Aallonpituus on näkyvän valon alueella. Aallonpituus $656\,\text{nm}$ on vedyn spektrin punainen viiva (luku *Spektrit paljastavat atomin energiatasot*). Fotonin energia $1{,}9\,\text{eV}$ on näkyvän valon fotonien energioiden $1{,}6$–$3{,}3\,\text{eV}$ välissä. Siirtymä $3\text{s} \to 2\text{p}$ antaisi saman viivan, koska alkutilan energia on sama.
 
 ## Yleinen virhekäsitys
-Moni ajattelee, että orbitaali on rata, jota pitkin elektroni kiertää. Moni ajattelee myös, että orbitaali on kuori, jonka sisällä elektroni pysyy. Aaltomallissa elektronilla ei ole rataa. Orbitaalin raja on sovittu todennäköisyysraja. Rajan $90\,\%$ ulkopuolelta elektroni havaitaan keskimäärin joka kymmenennellä mittauksella.
+Moni ajattelee, että orbitaali on rata, jota pitkin elektroni kiertää. Moni ajattelee myös, että orbitaali on kuori, jonka sisällä elektroni pysyy. Aaltomallissa elektronilla ei ole rataa. Orbitaalin raja on sovittu todennäköisyysraja. $90\,\%$:n rajan ulkopuolelta elektroni havaitaan keskimäärin joka kymmenennellä mittauksella.
 
 Toinen virhe on ajatella, että pilvi syntyy, koska elektroni kiitää niin nopeasti, että sen rata sumenee kuin pyörivän tuulettimen siivet. Pilvi kuvaa mittaustulosten jakaumaa. Yksittäinen mittaus antaa aina yhden pisteen. Elektronin paikkaa mittausten välillä ei voi kuvata reittinä.
 
@@ -1453,4 +1453,4 @@ Toinen virhe on ajatella, että pilvi syntyy, koska elektroni kiitää niin nope
 - Todennäköisyystulkinta: aalto kertoo, kuinka todennäköisesti elektroni havaitaan kussakin kohdassa. Yksi mittaus antaa yhden satunnaisen pisteen. Jakauma näkyy vasta monesta mittauksesta: $P \approx \tfrac{k}{N}$.
 - Orbitaali on alue, jonka sisällä elektroni havaitaan valitulla todennäköisyydellä, esimerkiksi $90\,\%$. Vetyatomin $1\text{s}$-orbitaalin $90\,\%$:n raja on pallo, jonka säde on $0{,}14\,\text{nm}$.
 - Kuorella $n$ on $n^2$ orbitaalia ja enintään $2n^2$ elektronia. Vetyatomin energiatasot ovat $E_n = -\tfrac{13{,}6\,\text{eV}}{n^2}$.
-- Orbitaalit täyttyvät alimmasta energiasta alkaen ($1\text{s}$, $2\text{s}$, $2\text{p}$, $3\text{s}$, $3\text{p}$). Tämä on kemian elektronikonfiguraatioiden ja jaksollisen järjestelmän perusta.
+- Orbitaalit täyttyvät alimmasta energiasta alkaen ($1\text{s}$, $2\text{s}$, $2\text{p}$, $3\text{s}$, $3\text{p}$). Tämä on kemian elektronikonfiguraatioiden (elektronien sijoitus orbitaaleille) ja jaksollisen järjestelmän perusta.

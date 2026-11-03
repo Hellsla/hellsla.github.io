@@ -1622,7 +1622,32 @@
       "mittauksia": "Mittauksia",
       "kynnys": "Rajan kynnys $p = {{p}}\\,\\%$",
       "selite": "Sininen piste: osuma rajan sisällä. Harmaa piste: osuma ulkopuolella. Viiva: orbitaalin raja.",
-      "lukemat": "Mittauksia ${N = {{N}}}$<br>Rajan sisällä ${k = {{k}}}$, ulkopuolella ${N - k = {{out}}}$<br>Osuus rajan sisällä ${k : N = {{f}}\\,\\%}$<br>Yleisin etäisyys ytimestä ${r \\approx {{rp}}\\,\\text{nm}}$<br><strong>Rajan suurin etäisyys ytimestä ${R = {{R}}\\,\\text{nm}}$</strong>"
+      "lukemat": "Mittauksia ${N = {{N}}}$<br>Rajan sisällä ${k = {{k}}}$, ulkopuolella ${N - k = {{out}}}$<br>Osuus rajan sisällä ${k : N = {{f}}\\,\\%}$<br>Yleisin etäisyys ytimestä ${r \\approx {{rp}}\\,\\text{nm}}$<br><strong>Rajan suurin etäisyys ytimestä ${R = {{R}}\\,\\text{nm}}$</strong>",
+      "osumia": "$\\text{osumia}$",
+      "orbSuffix": "-orbitaali}$"
+    },
+    "fy8-2": {
+      "tila": "Tila",
+      "emissio": "emissio (kuuma kaasu)",
+      "absorptio": "absorptio",
+      "ylempi": "Ylempi taso $n_\\text{y}$",
+      "alempi": "Alempi taso $n_\\text{a}$",
+      "nopeus": "Nopeus",
+      "hidas": "hidas",
+      "normaali": "normaali",
+      "nopea": "nopea",
+      "tyhjenna": "Tyhjennä spektri",
+      "selite": "Nuoli on siirtymä. Spektriin jäävät kaikki siirtymät, joita kokeilet tässä tilassa.",
+      "lukemat": "Ylempi taso $E_\\text{y} = {{Ey}}\\,\\text{eV}$<br>Alempi taso $E_\\text{a} = {{Ea}}\\,\\text{eV}$<br>Fotonin energia $\\Delta E = {{dE}}\\,\\text{eV}$<br><strong>Aallonpituus $\\lambda = {{lam}}\\,\\text{nm}$</strong> ({{alue}})",
+      "alue_uv": "ultravioletti",
+      "alue_vis": "näkyvä valo",
+      "alue_ir": "infrapuna",
+      "virhe": "Valitse ylemmäksi tasoksi suurempi $n$ kuin alemmaksi tasoksi.",
+      "spektroskooppi": "spektroskooppi",
+      "kaasu_kuuma": "kuuma vetykaasu",
+      "kaasu_kylma": "kylmä vetykaasu",
+      "lamppu": "lamppu",
+      "nakyva": "näkyvä valo"
     }
   },
   "practice": {

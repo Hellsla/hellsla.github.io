@@ -282,7 +282,7 @@
       "optional": true,
       "prompt": "The electron of a hydrogen atom has been excited to the $2\\text{p}$ state, whose two lobes are above and below the nucleus. Its position is measured $6000$ times, and the $90\\,\\%$ boundary of the $2\\text{p}$ orbital is drawn in the picture. How many hits do you expect to land inside the boundary in the upper lobe?",
       "answer": 2700,
-      "unit": "kpl",
+      "unit": "hits",
       "tolerance": 0.02,
       "hints": [
         "What fraction of all hits lands inside the boundary?",

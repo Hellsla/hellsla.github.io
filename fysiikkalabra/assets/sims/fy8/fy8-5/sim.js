@@ -192,7 +192,7 @@ new p5((p) => {
     // the nucleus
     p.stroke(255); p.strokeWeight(1.5 * sk); p.fill(...HOTC); p.circle(cx, cy, 9 * sk);
     p.noFill(); p.stroke(...INKC); p.strokeWeight(1.5 * sk); p.rect(cx - half, cy - half + 8, 2 * half, 2 * half - 16, 4);
-    lab('$\\text{' + S.orb + '-orbitaali}$', cx - half + 8 * sk, G.title + 10, 'l', INKC);
+    lab('$\\text{' + S.orb + __('orbSuffix'), cx - half + 8 * sk, G.title + 10, 'l', INKC);
     // scale bar 0,1 nm
     const x0 = cx - half + 14 * sk, y = G.scaleY - 4 * sk, L = 0.1 * sc;
     p.stroke(...INKC); p.strokeWeight(2.5 * sk); p.line(x0, y, x0 + L, y);
@@ -262,7 +262,7 @@ new p5((p) => {
       p.stroke(...INKC); p.strokeWeight(2 * sk); p.line(ox - 6 * sk, GY(j * ystep), ox, GY(j * ystep));
       if (sk < 1.5 || j % 2 === 0) lab('$' + fmtCount(j * ystep) + '$', ox - 10 * sk, GY(j * ystep) + 0.36 * fh, 'r', INKC);
     }
-    lab('$\\text{osumia}$', ox + 10 * sk, gy1 - 18 * sk, 'l', INKC);
+    lab(__('osumia'), ox + 10 * sk, gy1 - 18 * sk, 'l', INKC);
     lab('$r\\ (\\text{nm})$', (ox + gx1) / 2, G.xlab + 1.5 * fh, 'c', INKC);
   }
   // probability that a hit falls in bin b (radial distribution integrated with the midpoint rule)
