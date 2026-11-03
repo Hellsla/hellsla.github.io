@@ -3,7 +3,7 @@
   "contribution": "Branching direct-current circuits get two laws: the current law, from conservation of charge, and the voltage law, using potential; potential, the zero point and the potential graph make the sharing of voltage visible.",
   "learn": [
     "calculate the currents of a branching circuit with Kirchhoff's current law and Ohm's law.",
-    "determine the potentials at points of a circuit and to read a potential graph.",
+    "determine the potentials at points of a circuit and read a potential graph.",
     "explain with the voltage law why the voltage of a source is shared among the resistors of a loop."
   ],
   "prior": [
