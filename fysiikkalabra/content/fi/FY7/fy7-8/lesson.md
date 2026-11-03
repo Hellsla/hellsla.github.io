@@ -175,7 +175,7 @@ Voimajohdolla on resistanssi, ja johdossa kulkeva virta lämmittää sitä. Läm
   <circle cx="480" cy="150" r="15" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
   <circle cx="496" cy="150" r="15" fill="none" stroke="#1f2933" stroke-width="2.5"/>
   <rect x="460" y="120" width="56" height="56" rx="4" fill="none" stroke="#6b7480" stroke-width="1.5" stroke-dasharray="5 4"/>
-  <foreignObject x="421.5" y="183.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{sähköasema}$</div></foreignObject>
+  <foreignObject x="496" y="183.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{sähköasema}$</div></foreignObject>
   <path d="M488,176 V300 H420" fill="none" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
   <rect x="396" y="282" width="8" height="46" fill="#d9b26a" stroke="#1f2933" stroke-width="2"/>
   <line x1="382" y1="286" x2="418" y2="286" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>

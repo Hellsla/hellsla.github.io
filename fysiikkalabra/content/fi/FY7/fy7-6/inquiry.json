@@ -87,7 +87,7 @@
         {
           "text": "Se lyhenee paljon, koska rako katkaisee putken ympäri kiertävät virrat.",
           "correct": true,
-          "feedback": "Mallin arvot tukevat tätä: putoamisaika lyhenee $6{,}68\\,\\text{s}$:sta $0{,}82\\,\\text{s}$:iin, mikä on lähellä muoviputken $0{,}45\\,\\text{s}$:a. Pyörrevirta tarvitsee suljetun silmukan. Samasta syystä muuntajan rautasydän kootaan eristetyistä levyistä."
+          "feedback": "Mallin arvot tukevat tätä: putoamisaika lyhenee $6{,}68\\,\\text{s}$:sta $0{,}82\\,\\text{s}$:iin, mutta se on yhä noin kaksinkertainen muoviputken $0{,}45\\,\\text{s}$:iin verrattuna, koska pienemmät pyörrevirrat kiertävät yhä seinässä raon ympäri. Pyörrevirta tarvitsee suljetun silmukan. Samasta syystä muuntajan rautasydän kootaan eristetyistä levyistä."
         },
         {
           "text": "Se pitenee, koska raon reunoihin syntyy lisää virtoja, jotka jarruttavat magneettia.",
@@ -210,7 +210,7 @@
         "koe-2"
       ],
       "prompt": "Kirjoita taulukoidesi perusteella: miten putken materiaali ja rako vaikuttavat putoamisaikaan? Vertaa kupariputken sisäenergiaa $Q$ potentiaalienergian vähenemiseen $mgh = 196{,}2\\,\\text{mJ}$ ja selitä, mihin magneetin energia menee ja miksi magneetti putoaa kupariputkessa tasaisella vauhdilla.",
-      "model": "Muoviputkessa magneetti putoaa vapaasti $0{,}45\\,\\text{s}$:ssa ja on lopussa vauhdissa $4{,}43\\,\\text{m/s}$, eikä sisäenergiaa synny. Alumiiniputkessa putoaminen kestää $4{,}24\\,\\text{s}$ ja kupariputkessa $6{,}68\\,\\text{s}$; loppuvauhdit ovat vain $0{,}24\\,\\text{m/s}$ ja $0{,}15\\,\\text{m/s}$. Metalliseinään syntyvät pyörrevirrat jarruttavat magneettia, ja paremmin johtavassa kuparissa jarrutus on suurempi. Rakoputkessa aika lyhenee $0{,}82\\,\\text{s}$:iin, koska rako katkaisee putken ympäri kiertävät virrat. Kupariputkessa $Q = 196{,}0\\,\\text{mJ}$ eli lähes koko $196{,}2\\,\\text{mJ}$:n potentiaalienergian väheneminen on muuttunut pyörrevirtojen kautta putken sisäenergiaksi. Jarruttava voima kasvaa vauhdin mukana, kunnes se on yhtä suuri kuin paino; sen jälkeen kokonaisvoima on nolla ja vauhti pysyy samana. Arvot ovat mallin laskemia.",
+      "model": "Muoviputkessa magneetti putoaa vapaasti $0{,}45\\,\\text{s}$:ssa ja on lopussa vauhdissa $4{,}43\\,\\text{m/s}$, eikä sisäenergiaa synny. Alumiiniputkessa putoaminen kestää $4{,}24\\,\\text{s}$ ja kupariputkessa $6{,}68\\,\\text{s}$; loppuvauhdit ovat vain $0{,}24\\,\\text{m/s}$ ja $0{,}15\\,\\text{m/s}$. Metalliseinään syntyvät pyörrevirrat jarruttavat magneettia, ja paremmin johtavassa kuparissa jarrutus on suurempi. Rakoputkessa aika lyhenee $0{,}82\\,\\text{s}$:iin, koska rako katkaisee putken ympäri kiertävät virrat. Jarrutus ei silti katoa: rakoputkessakin $Q = 173{,}9\\,\\text{mJ}$, koska pienemmät pyörrevirrat kiertävät yhä seinässä. Kupariputkessa $Q = 196{,}0\\,\\text{mJ}$ eli lähes koko $196{,}2\\,\\text{mJ}$:n potentiaalienergian väheneminen on muuttunut pyörrevirtojen kautta putken sisäenergiaksi. Jarruttava voima kasvaa vauhdin mukana, kunnes se on yhtä suuri kuin paino; sen jälkeen kokonaisvoima on nolla ja vauhti pysyy samana. Arvot ovat mallin laskemia.",
       "criteria": [
         "Kerroin, että metalliputkissa putoaminen kestää kauemmin kuin muoviputkessa ja kupariputkessa kauimmin, ja annoin taulukosta putoamisajat.",
         "Selitin, että jarrutus johtuu putken seinään syntyvistä pyörrevirroista eikä siitä, että magneetti vetäisi metallia puoleensa.",

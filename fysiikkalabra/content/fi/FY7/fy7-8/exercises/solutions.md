@@ -36,7 +36,7 @@
 **Muunnokset:** Lopuksi $1\,\text{kW} = 1000\,\text{W}$.
 **Sijoitus:** $P_\text{h} = 2{,}5\,\Omega \cdot (120\,\text{A})^2 = 2{,}5\,\Omega \cdot 14\,400\,\text{A}^2 = 36\,000\,\text{W} = 36\,\text{kW}$
 **Vastaus:** $36\,\text{kW}$, kaksi merkitsevää numeroa kuten resistanssissa $2{,}5\,\Omega$.
-**Järkevyys:** Yksiköt: $\Omega \cdot \text{A}^2 = \tfrac{\text{V}}{\text{A}} \cdot \text{A}^2 = \text{V} \cdot \text{A} = \text{W}$. Häviö vastaa noin kymmenen sähkökiukaan tehoa; jakelujohdossa sellainen teho voi kulkea, kun virta on yli sata ampeeria.
+**Järkevyys:** Yksiköt: $\Omega \cdot \text{A}^2 = \tfrac{\text{V}}{\text{A}} \cdot \text{A}^2 = \text{V} \cdot \text{A} = \text{W}$. Häviö vastaa noin viiden sähkökiukaan tehoa; jakelujohdossa sellainen teho voi kulkea, kun virta on yli sata ampeeria.
 
 ## fy7-8-L1-05
 **Annettu:** siirtojännite $U = 400\,\text{kV}$, virta $I = 800\,\text{A}$

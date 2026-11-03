@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "contribution": "Magneettikenttä synnyttää jännitteen vain muuttuessaan: magneettivuo $\\Phi = BA$, induktiolaki $e = -N \\cdot \\Delta\\Phi : \\Delta t$ vuon kuvaajan kulmakertoimena ja liikkuvan tangon jännite $e = vBl$ johdettuna tangon elektroneihin kohdistuvasta magneettisesta voimasta; simulaatiossa käämi kulkee kenttäalueen läpi ja kuvaajat $\\Phi(t)$ ja $e(t)$ piirtyvät.",
+  "contribution": "Käämiin syntyy jännite vain, kun sen läpi kulkeva magneettivuo muuttuu: magneettivuo $\\Phi = BA$, induktiolaki $e = -N \\cdot \\Delta\\Phi : \\Delta t$ vuon kuvaajan kulmakertoimena ja liikkuvan tangon jännite $e = vBl$ johdettuna tangon elektroneihin kohdistuvasta magneettisesta voimasta; simulaatiossa käämi kulkee kenttäalueen läpi ja kuvaajat $\\Phi(t)$ ja $e(t)$ piirtyvät.",
   "learn": [
     "laskemaan magneettivuon ja käämiin syntyvän induktiojännitteen induktiolain avulla.",
     "päättelemään induktiojännitteen magneettivuon kuvaajan kulmakertoimesta.",

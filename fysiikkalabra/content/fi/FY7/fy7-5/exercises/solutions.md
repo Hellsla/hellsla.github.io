@@ -6,7 +6,7 @@
 **Muunnokset:** Lähtöarvot ovat SI-yksiköissä. Vastaus muunnetaan millivebereiksi: $1\,\text{Wb} = 1000\,\text{mWb}$.
 **Sijoitus:** $\Phi = 0{,}35\,\text{T} \cdot (0{,}12\,\text{m})^2 = 0{,}35\,\text{T} \cdot 0{,}0144\,\text{m}^2 = 0{,}00504\,\text{Wb} = 5{,}04\,\text{mWb}$
 **Vastaus:** $5{,}0\,\text{mWb}$, kaksi merkitsevää numeroa kuten lähtöarvoissa.
-**Järkevyys:** Silmukan pinta-ala on vähän alle $0{,}015\,\text{m}^2$ eli noin A5-arkin kokoinen, ja kenttä on kymmenesosien teslojen luokkaa, joten vuo on tuhannesosien vebereiden luokkaa. Kaksinkertainen sivu antaisi nelinkertaisen vuon.
+**Järkevyys:** Silmukan pinta-ala on vähän alle $0{,}015\,\text{m}^2$ eli noin A6-arkin (postikortin) kokoinen, ja kenttä on kymmenesosien teslojen luokkaa, joten vuo on tuhannesosien vebereiden luokkaa. Kaksinkertainen sivu antaisi nelinkertaisen vuon.
 
 ## fy7-5-L1-02
 **Annettu:** kierrosten lukumäärä $N = 400$, yhden kierroksen vuon muutos $\Delta\Phi = 1{,}5\,\text{mWb}$, aika $\Delta t = 0{,}20\,\text{s}$

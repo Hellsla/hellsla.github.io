@@ -3643,7 +3643,7 @@
   },
   {
     "term": "induktio",
-    "definition": "Sähkömagneettinen induktio: ilmiö, jossa johdinsilmukkaan tai käämiin syntyy jännite, kun sen läpi kulkeva magneettivuo muuttuu. Muuttumaton magneettikenttä ei synnytä jännitettä.",
+    "definition": "Sähkömagneettinen induktio: ilmiö, jossa johdinsilmukkaan tai käämiin syntyy jännite, kun sen läpi kulkeva magneettivuo muuttuu. Jos vuo ei muutu, jännitettä ei synny.",
     "lessons": [
       "fy7-5"
     ],

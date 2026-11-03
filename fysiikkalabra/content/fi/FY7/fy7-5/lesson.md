@@ -196,7 +196,7 @@ Luvussa *Virtajohtimen ja käämin magneettikenttä* sähkövirta synnytti magne
 </svg>
 
 ### Muutos synnyttää jännitteen
-Ilmiötä kutsutaan **sähkömagneettiseksi induktioksi**, ja käämin päiden välille syntyvää jännitettä **induktiojännitteeksi**. Kun käämin päät yhdistetään johtimella tai lampulla, piirissä kulkee induktiovirta. Kaikissa Faradayn kokeissa yhteistä on se, että käämin läpi kulkeva magneettikenttä **muuttuu**. Käämi voimakkaassa mutta muuttumattomassa kentässä ei saa jännitettä. Kentän muutos voi syntyä monella tavalla: magneetti tai käämi liikkuu, käämi kääntyy kentässä, silmukan pinta-ala muuttuu tai viereisen sähkömagneetin virta kytketään päälle tai pois. Polkupyörän napadynamossa magneetti pyörii käämien keskellä, kun pyörä pyörii. Kun pyörä seisoo, mikään ei muutu, eikä lamppu pala.
+Ilmiötä kutsutaan **sähkömagneettiseksi induktioksi**, ja käämin päiden välille syntyvää jännitettä **induktiojännitteeksi**. Kun käämin päät yhdistetään johtimella tai lampulla, piirissä kulkee induktiovirta. Kaikissa Faradayn kokeissa yhteistä on se, että käämin läpi kulkeva magneettikenttä **muuttuu**. Paikallaan oleva käämi voimakkaassa mutta muuttumattomassa kentässä ei saa jännitettä. Muutos voi syntyä monella tavalla: magneetti tai käämi liikkuu, käämi kääntyy kentässä, silmukan pinta-ala muuttuu tai viereisen sähkömagneetin virta kytketään päälle tai pois. Polkupyörän napadynamossa magneetti pyörii käämien keskellä, kun pyörä pyörii. Kun pyörä seisoo, mikään ei muutu, eikä lamppu pala.
 
 ### Magneettivuo
 Muutoksen suuruutta mitataan **magneettivuolla**. Se kertoo, kuinka paljon magneettikenttää kulkee silmukan läpi. Kun homogeeninen kenttä on kohtisuorassa silmukan tasoa vastaan, magneettivuo on
@@ -476,7 +476,7 @@ Käämissä on $250$ kierrosta, ja sen poikkipinta-ala on $4{,}0\,\text{cm}^2$. 
 Moni ajattelee, että magneettikenttä itse synnyttää jännitteen ja että voimakkaassa kentässä jännite on suuri. Induktiojännite syntyy kuitenkin vain **vuon muutoksesta**: paikallaan oleva käämi voimakkaan magneetin vieressä ei saa jännitettä, ja kentän sisällä tasaisesti liikkuvaan käämiin ei synny jännitettä, jos sen läpi kulkeva vuo ei muutu. Vuo ja sen muutosnopeus ovat eri asioita samaan tapaan kuin paikka ja nopeus: suuri vuo voi olla muuttumatta, ja nolla vuo voi muuttua nopeasti. Toinen yleinen virhe on unohtaa kierrosten lukumäärä $N$ tai muuntaa pinta-ala väärin: $1\,\text{cm}^2 = 10^{-4}\,\text{m}^2$, ei $10^{-2}\,\text{m}^2$.
 
 ## Tiivistelmä
-- Sähkömagneettisessa induktiossa käämiin syntyy induktiojännite, kun sen läpi kulkeva magneettivuo muuttuu. Muuttumaton kenttä ei synnytä jännitettä.
+- Sähkömagneettisessa induktiossa käämiin syntyy induktiojännite, kun sen läpi kulkeva magneettivuo muuttuu. Jos vuo ei muutu, jännitettä ei synny.
 - Magneettivuo on $\Phi = BA$, kun kenttä on kohtisuorassa silmukan tasoa vastaan; yksikkö on weber, $1\,\text{Wb} = 1\,\text{T}\cdot\text{m}^2$.
 - Induktiolaki: $e = -N \cdot \Delta\Phi : \Delta t$. Jännite on vuon kuvaajan kulmakerroin kerrottuna kierrosten lukumäärällä; miinusmerkki kertoo suunnan.
 - Kenttää vastaan kohtisuoraan liikkuvan tangon päiden välinen jännite on $e = vBl$, koska magneettinen voima siirtää tangon elektroneja toiseen päähän.

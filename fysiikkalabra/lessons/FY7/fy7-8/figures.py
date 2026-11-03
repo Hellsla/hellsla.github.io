@@ -93,7 +93,7 @@ def grid():
     f.tex(325, 196, r"\text{kantaverkko}", "middle")
     trafo_symbol(f, 488, 150)
     f.rect(460, 120, 56, 56, "none", MUTED, 1.5, 4, extra='stroke-dasharray="5 4"')
-    f.tex(488, 198, r"\text{sähköasema}", "middle")
+    f.tex(496, 198, r"\text{sähköasema}", "start")   # right of the line down to the bottom row (visual r1)
     # down to the bottom row: 20 kV distribution line to the transformer kiosk and a house
     f.path("M488,176 V300 H420", stroke=INK, w=2.5)
     for x in (400, 300):

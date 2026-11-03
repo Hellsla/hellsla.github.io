@@ -1663,7 +1663,7 @@
       "hidas": "hidas",
       "normaali": "normaali",
       "nopea": "nopea",
-      "selite": "Vihreä: kenttä ja vuo $\\Phi$. Violetti: jännite $e$ ja virta. Sininen: sivujen nopeus.",
+      "selite": "Vihreä: kenttä ja vuo $\\Phi$. Violetti: jännite $e$ ja suunta, johon se ajaisi virtaa. Sininen: sivujen nopeus.",
       "lukemat": "<strong>Huippujännite $e_0 = {{e0}}\\,\\text{V}$</strong>, tehollinen arvo $U = {{U}}\\,\\text{V}$, jaksonaika $T = {{T}}\\,\\text{s}$<br>Nyt: $\\theta = {{th}}^\\circ$, $\\Phi = {{phi}}\\,\\text{mWb}$, $e = {{e}}\\,\\text{V}$"
     },
     "fy7-8": {
