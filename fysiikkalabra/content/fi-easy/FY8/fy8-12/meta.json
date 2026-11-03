@@ -1,0 +1,44 @@
+{
+  "id": "fy8-12",
+  "course": "FY8",
+  "title": "Ionisoiva säteily ja elimistö",
+  "goals": [
+    "LOPS FY8: ionisoivan säteilyn lajit ja biologiset vaikutukset sekä soveltaminen lääketieteessä ja teknologiassa",
+    "Täsmennys: biologisia vaikutuksia tarkastellaan fysikaalisten vaikutusten (ionisaatio ja energian siirto) kautta; säteilylajien läpäisykyky ja havaitseminen"
+  ],
+  "prerequisites": [
+    "fy8-11"
+  ],
+  "glossary": [
+    "ionisoiva säteily",
+    "ionisaatio",
+    "läpäisykyky",
+    "puoliintumispaksuus",
+    "Geiger-Müller-putki"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false,
+  "key_concepts": [
+    {
+      "term": "ionisoiva säteily",
+      "explain": "Säteily, jonka hiukkanen tai fotoni pystyy irrottamaan elektronin atomista. Esimerkkejä ovat alfa-, beeta-, gamma- ja röntgensäteily."
+    },
+    {
+      "term": "ionisaatio",
+      "explain": "Tapahtuma, jossa atomista tai molekyylistä irtoaa elektroni. Samalla syntyy positiivinen ioni ja vapaa elektroni eli ionipari."
+    },
+    {
+      "term": "läpäisykyky",
+      "explain": "Kertoo, kuinka paksun ainekerroksen säteily läpäisee. Mitä tiheämmin säteily ionisoi, sitä huonompi sen läpäisykyky on."
+    },
+    {
+      "term": "puoliintumispaksuus",
+      "explain": "Ainekerroksen paksuus, joka päästää läpi puolet gammasäteilystä. Jokainen tällainen kerros puolittaa siihen saapuvan säteilyn."
+    },
+    {
+      "term": "Geiger-Müller-putki",
+      "explain": "Mittalaite, joka laskee ionisoivia tapahtumia. Jokainen tapahtuma aiheuttaa virtapulssin, jonka laskuri laskee."
+    }
+  ]
+}

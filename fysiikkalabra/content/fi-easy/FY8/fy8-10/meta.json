@@ -1,0 +1,39 @@
+{
+  "id": "fy8-10",
+  "course": "FY8",
+  "title": "Massavaje ja ytimen sidosenergia",
+  "goals": [
+    "LOPS FY8: ydinreaktiot, massan ja energian ekvivalenssi, ytimen sidosenergia",
+    "Täsmennys: massan ja energian ekvivalenssia tarkastellaan ydinreaktion yhteydessä ja sidosenergiaan liittyen; reaktioenergia massoista"
+  ],
+  "prerequisites": [
+    "fy8-9"
+  ],
+  "glossary": [
+    "massavaje",
+    "sidosenergia",
+    "ydinreaktio",
+    "atomimassayksikkö"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false,
+  "key_concepts": [
+    {
+      "term": "massavaje",
+      "explain": "Erillisten protonien ja neutronien yhteismassan ja ytimen massan erotus. Ydin on kevyempi kuin sen osat."
+    },
+    {
+      "term": "sidosenergia",
+      "explain": "Energia, joka tarvitaan ytimen hajottamiseen erillisiksi protoneiksi ja neutroneiksi. Sama energia vapautuu, kun ydin muodostuu."
+    },
+    {
+      "term": "ydinreaktio",
+      "explain": "Tapahtuma, jossa ytimet muuttuvat toisiksi ytimiksi. Massaluku ja varausluku säilyvät, mutta massa muuttuu."
+    },
+    {
+      "term": "atomimassayksikkö",
+      "explain": "Atomien ja ytimien massojen yksikkö. Määritelmän mukaan hiili-12-atomin massa on tasan kaksitoista yksikköä."
+    }
+  ]
+}
