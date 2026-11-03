@@ -1,10 +1,10 @@
 VERDICT: DONE
 
-Drafted from scratch; every line of check_lesson.py fy8-4 says ok.
+Fix round 1: every Blocking finding and the listed Polish items.
 
-- `lesson.md`: Ydinajatus covers the single-quantum double slit, the probability reading of the wave, which-path measurement, wave–particle duality and four photon models. `## Kaava: Fotonin liikemäärä` has p = E/c = h/λ, the Compton effect (hf = hf' + E_k, momentum vectors) and photon flow N/t = P/(hf). The worked example uses weak 633 nm light and has 7 stages. No de Broglie wavelength.
-- `figures.py`: a hero picture (weak-light double-slit lab) and three figures: hits building up, one slit vs two slits vs measured path, and the Compton collision with its momentum triangle.
-- `inquiry.json`: retrieval on chapter 1, two predictions, the simulation, koe-1 (one or two slits) and koe-2 (electrons, path measured), a conclusion, a Compton data table with competing models, an error-spotting task, a transfer task (solar sail), checks and the exit ticket.
-- New simulation `assets/sims/fy8/fy8-4/` (seeded hits, 600×600 layout on narrow screens), texts in `lang/fi.json` `sims.fy8-4`, 22 assertions in `tests/sims/fy8-4.json`.
-- Exercises 5/4/3 with complete solutions. `answers.py` computes the exercise answers; `lesson-answers.py` computes the lesson's numbers and replays the simulation's model.
-- `glossary.json`: aalto-hiukkasdualismi, Comptonin ilmiö, kaksoisrakokoe.
+- inquiry.json: ennuste-1 prompt now says that $x_0$ is where the waves from the two slits arrive half a wavelength apart (a dark fringe of the wave model) and asks what the ball model and the wave model predict. Option 1 feedback, johtopäätös model answer and its criterion now give the right ball-model prediction: with the same total the distribution is the sum of two single-slit patterns, so the fraction stays as with one slit. Johtopäätös prompt: "Mikä on aallon ja yksittäisen osuman yhteys?". Ennuste-2 option 1 feedback: "Kun reitti tiedetään, kahden raon aallot eivät enää interferoi." Siirto Järkevyys: weight of a 30 mg object (a grain of rice), not a mosquito.
+- lesson-answers.py: siirto-mass-mg = 29,6 mg.
+- figures.py (compton, regenerated): electron path, velocity arrow and $\overline{p}_e$ in one direction.
+- lesson.md: "kahden raon raidat katoavat"; "samalla taajuudella kuin tuleva säteily"; misconception adds "kun lähde lähettää yhtä monta kvanttia sekunnissa"; Kaava values and Tunnetut values grouped so they do not break after an operator.
+- sim.js: narrow source lower (box whole at 390 px), "osumia" label above the y-axis arrow. lang/fi.json readout shortened, values grouped.
+- solutions.md L1-04: 3,7 eV is λ ≈ 331 nm, near UV (check in answers.py comment); answers unchanged.

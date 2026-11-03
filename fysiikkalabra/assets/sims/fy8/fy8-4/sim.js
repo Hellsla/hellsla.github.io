@@ -18,7 +18,7 @@ new p5((p) => {
   const HOTC = [201, 42, 42], HOTL = [242, 166, 156], COLDC = [25, 113, 194], COLDL = [208, 230, 251];
   const GOODC = [43, 138, 62], GOODL = [178, 242, 187], LAMP = [255, 192, 120], STEEL = [196, 204, 212], STEEL2 = [138, 150, 163];
   const WIDE = { H: 400, gx0: 64, gx1: 560, ySrc: 30, yPlate: 98, yScreen: 168, s0: 182, s1: 258, h0: 280, h1: 346, tickY: 368, titleY: 390, slitDx: 34 };
-  const NARROW = { H: 600, gx0: 92, gx1: 560, ySrc: 40, yPlate: 132, yScreen: 228, s0: 248, s1: 344, h0: 392, h1: 494, tickY: 530, titleY: 572, slitDx: 40 };
+  const NARROW = { H: 600, gx0: 92, gx1: 560, ySrc: 50, yPlate: 132, yScreen: 228, s0: 248, s1: 344, h0: 392, h1: 494, tickY: 530, titleY: 572, slitDx: 40 };
   let G = WIDE, narrow = false, sk = 1, fh = 13, labels = [];
   let btn, btnAdd, btnClear, selP, selS, selR, selSpeed, slX, lX, readout, pg = null, pgKey = '';
   let seed = SEED, fine = new Array(NB).fill(0), hits = [], q = null, running = false, flash = null, dirty = true;
@@ -232,7 +232,7 @@ new p5((p) => {
     p.stroke(...INKC); p.strokeWeight(2 * sk);
     for (const v of [-10, -5, 0, 5, 10]) { p.line(X(v), h1, X(v), h1 + 6 * sk); lab('$' + (v < 0 ? '-' : '') + Math.abs(v) + '$', X(v), tickY, 'c', INKC); }
     if (N > 0) for (let v = step; v <= ymax + 1e-9; v += step) { p.stroke(...INKC); p.strokeWeight(2 * sk); p.line(gx0 - 6 * sk, Y(v), gx0, Y(v)); lab('$' + Math.round(v) + '$', gx0 - 9 * sk, Y(v) + fh * 0.36, 'r', INKC); }
-    lab(__('lbl_osumia'), 6, h0 - 16 * sk, 'l', INKC);
+    lab(__('lbl_osumia'), 2, h0 - (narrow ? 26 : 16) * sk, 'l', INKC);
     lab('$x\\,(\\text{mm})$', 594, titleY, 'r', INKC);
   }
   function nice(v) { const e = Math.pow(10, Math.floor(Math.log10(v))), m = v / e; return (m <= 2 ? 1 : m <= 5 ? 2 : 5) * e; }   // a gridline step: 1, 2 or 5 times a power of ten

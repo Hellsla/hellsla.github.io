@@ -118,12 +118,15 @@ def compton():
     ex, ey = 348, 128
     wavy(f, ex + 4, ey - 6, 560, 46, 30, 9, INK)
     f.tex(492, 104, r"hf'", "start")
-    electron(f, 446, 186)
-    f.arrow(458, 192, 540, 214, COLD, 3, 14)
-    f.tex(546, 196, r"\overline{v}", "start", COLD)
-    f.tex(430, 214, r"e^-", "end", COLD)
+    # the electron's path, its velocity and its momentum p_e all point along (130, 60), the p_e arrow of the triangle below
+    ux, uy = 130 / math.hypot(130, 60), 60 / math.hypot(130, 60)
+    P = lambda d: (ex + d * ux, ey + d * uy)
+    electron(f, *P(110))
+    f.arrow(*P(126), *P(212), COLD, 3, 14)
+    f.tex(P(212)[0] + 6, P(212)[1] - 14, r"\overline{v}", "start", COLD)
+    f.tex(P(110)[0] - 14, P(110)[1] + 30, r"e^-", "end", COLD)
     f.circle(ex, ey, 4, MUTED)
-    f.line(ex, ey, 440, 180, MUTED, 1.5, "4 4")
+    f.line(ex, ey, *P(98), MUTED, 1.5, "4 4")
     # momentum vectors: p = p' + p_e
     f.line(12, 240, 588, 240, RULE_LIGHT, 1.5)
     ox, oy = 150, 312

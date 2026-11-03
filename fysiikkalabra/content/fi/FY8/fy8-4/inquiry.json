@@ -50,7 +50,7 @@
       "stage": "ennusta",
       "type": "choice",
       "title": "Ennuste 1: toinen rako auki",
-      "prompt": "Kaksoisrakokokeessa fotonit lähetetään yksi kerrallaan. Varjostimelta lasketaan osumat kapealla välillä kohdassa $x_0 = 1{,}0\\,\\text{mm}$, hieman sivussa keskikohdasta. Ensin vain vasen rako on auki. Sitten myös oikea rako avataan, ja fotoneja lähetetään yhtä monta. Mitä laskentavälin osumien osuudelle tapahtuu?",
+      "prompt": "Kaksoisrakokokeessa fotonit lähetetään yksi kerrallaan. Varjostimelta lasketaan osumat kapealla välillä kohdassa $x_0 = 1{,}0\\,\\text{mm}$. Kahdesta raosta tulevien aaltojen matkaero on tässä kohdassa puolikas aallonpituus, joten aaltomallin mukaan kohta on tumma raita. Ensin vain vasen rako on auki. Sitten myös oikea rako avataan, ja fotoneja lähetetään yhtä monta. Mitä laskentavälin osumien osuudelle tapahtuu? Mieti, mitä kuulamalli ja mitä aaltomalli ennustaa.",
       "justify": true,
       "reveal": {
         "after": "koe-1",
@@ -59,7 +59,7 @@
       "choices": [
         {
           "text": "Osuus kasvaa, koska fotoneilla on nyt kaksi reittiä samaan kohtaan.",
-          "feedback": "Mallin arvot kumoavat tämän: yhden raon kanssa laskentaväliin osui $43$ fotonia $1000$:sta ($4{,}3\\,\\%$), kahden raon kanssa vain $3$ ($0{,}3\\,\\%$). Jos fotonit kulkisivat kuin kuulat jommankumman raon kautta, toinen rako lisäisi osumia kaikkialla. Kohdassa $x_0 = 1{,}0\\,\\text{mm}$ kahdesta raosta tulevat aallot heikentävät toisiaan."
+          "feedback": "Mallin arvot kumoavat tämän: yhden raon kanssa laskentaväliin osui $43$ fotonia $1000$:sta ($4{,}3\\,\\%$), kahden raon kanssa vain $3$ ($0{,}3\\,\\%$). Kuulamallissakaan osuus ei kasvaisi: kun fotoneja lähetetään yhtä monta, jakauma olisi kahden yhden raon kuvion summa, ja osuus pysyisi samana kuin yhden raon kanssa. Kohdassa $x_0 = 1{,}0\\,\\text{mm}$ kahdesta raosta tulevat aallot heikentävät toisiaan."
         },
         {
           "text": "Osuus pysyy samana, koska kukin fotoni kulkee vain yhden raon kautta.",
@@ -86,7 +86,7 @@
       "choices": [
         {
           "text": "Raidat säilyvät ennallaan, koska ilmaisin vain havaitsee elektronin.",
-          "feedback": "Mallin arvot kumoavat tämän: kun reitti mitattiin, laskentaväliin $x_0 = 1{,}0\\,\\text{mm}$ osui $43$ elektronia $1000$:sta, kun ilman mittausta osui $3$. Tumma raita katosi. Kulkureitin selvittäminen vaatii vuorovaikutuksen elektronin kanssa, ja silloin kahden raon aallot eivät enää interferoi."
+          "feedback": "Mallin arvot kumoavat tämän: kun reitti mitattiin, laskentaväliin $x_0 = 1{,}0\\,\\text{mm}$ osui $43$ elektronia $1000$:sta, kun ilman mittausta osui $3$. Tumma raita katosi. Kun reitti tiedetään, kahden raon aallot eivät enää interferoi."
         },
         {
           "text": "Raidat häviävät, ja osumat jakautuvat kuin kahden yhden raon kuvion summa.",
@@ -233,11 +233,11 @@
         "koe-1",
         "koe-2"
       ],
-      "prompt": "Kirjoita taulukoidesi perusteella: miten laskentavälin osuus muuttui, kun toinen rako avattiin, ja kun kulkureitti mitattiin? Miksi tulosta ei voi selittää sillä, että jokainen kvantti kulkee kuulan tavoin yhden raon kautta? Mitä aallon ja yksittäisen osuman välillä on?",
-      "model": "Yhden raon kanssa laskentaväliin $x_0 = 1{,}0\\,\\text{mm}$ osui $43$ fotonia $1000$:sta, mutta kun molemmat raot olivat auki, vain $3$. Jos fotonit kulkisivat kuulina jommankumman raon kautta, toisen raon avaaminen lisäisi osumia. Kumpikin rako vaikuttaa jokaiseen kvanttiin: sen aalto kulkee molempien rakojen kautta, ja tässä kohdassa aallot heikentävät toisiaan. Elektronit käyttäytyivät samoin. Kun reitti mitattiin, tumma raita katosi ($43$ osumaa), koska tieto reitistä poistaa interferenssin. Yksittäinen osuma on satunnainen piste, mutta aallon intensiteetti kertoo, millä todennäköisyydellä osuma tulee kuhunkin kohtaan. Luvut ovat mallin arvoja.",
+      "prompt": "Kirjoita taulukoidesi perusteella: miten laskentavälin osuus muuttui, kun toinen rako avattiin, ja kun kulkureitti mitattiin? Miksi tulosta ei voi selittää sillä, että jokainen kvantti kulkee kuulan tavoin yhden raon kautta? Mikä on aallon ja yksittäisen osuman yhteys?",
+      "model": "Yhden raon kanssa laskentaväliin $x_0 = 1{,}0\\,\\text{mm}$ osui $43$ fotonia $1000$:sta, mutta kun molemmat raot olivat auki, vain $3$. Jos fotonit kulkisivat kuulina jommankumman raon kautta, jakauma olisi kahden yhden raon kuvion summa, ja osuus pysyisi samana kuin yhden raon kanssa. Kumpikin rako vaikuttaa jokaiseen kvanttiin: sen aalto kulkee molempien rakojen kautta, ja tässä kohdassa aallot heikentävät toisiaan. Elektronit käyttäytyivät samoin. Kun reitti mitattiin, tumma raita katosi ($43$ osumaa), koska tieto reitistä poistaa interferenssin. Yksittäinen osuma on satunnainen piste, mutta aallon intensiteetti kertoo, millä todennäköisyydellä osuma tulee kuhunkin kohtaan. Luvut ovat mallin arvoja.",
       "criteria": [
         "Vertasin osuuksia yhden ja kahden raon kanssa ja huomasin, että toinen rako vähensi osumia tummassa raidassa.",
-        "Perustelin, miksi kuulamalli ei selitä tätä: siinä toinen rako lisäisi osumia.",
+        "Perustelin, miksi kuulamalli ei selitä tätä: siinä osuus pysyisi samana kuin yhden raon kanssa.",
         "Kerroin, että kulkureitin mittaus poisti raidat.",
         "Kerroin, että aalto antaa osumien todennäköisyyden, vaikka yksittäinen osuma on satunnainen."
       ]
@@ -349,7 +349,7 @@
           "feedback": "Laskusi on oikein, mutta vastaus on newtoneina. Muunna mikronewtoneiksi: $1\\,\\text{N} = 10^6\\,\\mu\\text{N}$."
         }
       ],
-      "solution": "**Annettu:** auringonvalon intensiteetti $I = 1361\\,\\tfrac{\\text{W}}{\\text{m}^2}$, purjeen pinta-ala $A = 32\\,\\text{m}^2$, valo heijastuu kohtisuoraan takaisin; $c = 2{,}998 \\cdot 10^8\\,\\text{m/s}$\n\n**Kysytty:** valon purjeeseen kohdistama voima $F$ mikronewtoneina\n\n**Periaate:** Voima on liikemäärän muutos aikayksikössä. Jokaisen fotonin liikemäärä on $p = \\tfrac{E}{c}$. Kun fotoni heijastuu suoraan takaisin, sen liikemäärä muuttuu arvosta $p$ arvoon $-p$, joten purje saa liikemäärän $2p$. Sekunnissa purjeeseen tulee energia $P = IA$, joten fotonien liikemäärää tulee sekunnissa $\\tfrac{P}{c}$.\n\n**Kaava:** $F = \\dfrac{\\Delta p}{\\Delta t} = 2 \\cdot \\dfrac{P}{c}$, missä $P = IA$, joten $F = \\dfrac{2IA}{c}$\n\n**Muunnokset:** $\\tfrac{\\text{W}}{\\text{m}^2} \\cdot \\text{m}^2 = \\text{W} = \\tfrac{\\text{J}}{\\text{s}}$ ja $\\tfrac{\\text{J/s}}{\\text{m/s}} = \\tfrac{\\text{J}}{\\text{m}} = \\text{N}$. Lopuksi $1\\,\\text{N} = 10^6\\,\\mu\\text{N}$.\n\n**Sijoitus:** $F = \\dfrac{2 \\cdot 1361\\,\\tfrac{\\text{W}}{\\text{m}^2} \\cdot 32\\,\\text{m}^2}{2{,}998 \\cdot 10^8\\,\\text{m/s}} = \\dfrac{87\\,104\\,\\text{W}}{2{,}998 \\cdot 10^8\\,\\text{m/s}} = 2{,}905 \\cdot 10^{-4}\\,\\text{N} = 290{,}5\\,\\mu\\text{N}$\n\n**Vastaus:** $2{,}9 \\cdot 10^2\\,\\mu\\text{N}$, kaksi merkitsevää numeroa kuten pinta-alassa $32\\,\\text{m}^2$.\n\n**Järkevyys:** Voima on noin $0{,}3\\,\\text{mN}$, suunnilleen hyttysen paino. Se on pieni, mutta tyhjiössä se vaikuttaa jatkuvasti, joten kevyt luotain kiihtyy kuukausien aikana suureen nopeuteen. Jos purje imisi valon, voima olisi puolet, $145\\,\\mu\\text{N}$."
+      "solution": "**Annettu:** auringonvalon intensiteetti $I = 1361\\,\\tfrac{\\text{W}}{\\text{m}^2}$, purjeen pinta-ala $A = 32\\,\\text{m}^2$, valo heijastuu kohtisuoraan takaisin; $c = 2{,}998 \\cdot 10^8\\,\\text{m/s}$\n\n**Kysytty:** valon purjeeseen kohdistama voima $F$ mikronewtoneina\n\n**Periaate:** Voima on liikemäärän muutos aikayksikössä. Jokaisen fotonin liikemäärä on $p = \\tfrac{E}{c}$. Kun fotoni heijastuu suoraan takaisin, sen liikemäärä muuttuu arvosta $p$ arvoon $-p$, joten purje saa liikemäärän $2p$. Sekunnissa purjeeseen tulee energia $P = IA$, joten fotonien liikemäärää tulee sekunnissa $\\tfrac{P}{c}$.\n\n**Kaava:** $F = \\dfrac{\\Delta p}{\\Delta t} = 2 \\cdot \\dfrac{P}{c}$, missä $P = IA$, joten $F = \\dfrac{2IA}{c}$\n\n**Muunnokset:** $\\tfrac{\\text{W}}{\\text{m}^2} \\cdot \\text{m}^2 = \\text{W} = \\tfrac{\\text{J}}{\\text{s}}$ ja $\\tfrac{\\text{J/s}}{\\text{m/s}} = \\tfrac{\\text{J}}{\\text{m}} = \\text{N}$. Lopuksi $1\\,\\text{N} = 10^6\\,\\mu\\text{N}$.\n\n**Sijoitus:** $F = \\dfrac{2 \\cdot 1361\\,\\tfrac{\\text{W}}{\\text{m}^2} \\cdot 32\\,\\text{m}^2}{2{,}998 \\cdot 10^8\\,\\text{m/s}} = \\dfrac{87\\,104\\,\\text{W}}{2{,}998 \\cdot 10^8\\,\\text{m/s}} = 2{,}905 \\cdot 10^{-4}\\,\\text{N} = 290{,}5\\,\\mu\\text{N}$\n\n**Vastaus:** $2{,}9 \\cdot 10^2\\,\\mu\\text{N}$, kaksi merkitsevää numeroa kuten pinta-alassa $32\\,\\text{m}^2$.\n\n**Järkevyys:** Voima on noin $0{,}3\\,\\text{mN}$, suunnilleen $30\\,\\text{mg}$:n kappaleen, esimerkiksi riisinjyvän, paino. Se on pieni, mutta tyhjiössä se vaikuttaa jatkuvasti, joten kevyt luotain kiihtyy kuukausien aikana suureen nopeuteen. Jos purje imisi valon, voima olisi puolet, $145\\,\\mu\\text{N}$."
     },
     {
       "id": "harjoitukset",

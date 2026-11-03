@@ -46,6 +46,7 @@ I, A = 1361, 32.0
 a["siirto"] = 2 * I * A / c * 1e6                   # micronewtons: 290,5 µN
 a["siirto-absorb"] = I * A / c * 1e6                # absorbed (no factor 2): 145 µN
 a["siirto-no-area"] = 2 * I / c * 1e6                # area forgotten: 9,08 µN
+a["siirto-mass-mg"] = a["siirto"] * 1e-6 / 9.81 * 1e6    # mass whose weight equals the force: 29,6 mg (a grain of rice)
 a["siirto-per-photon-check"] = (I * A) / (h * c / 550e-9)   # photons per second at 550 nm, for the check: 1,2e23
 
 # --- the simulation's model (tests/sims/fy8-4.json)

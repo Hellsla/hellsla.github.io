@@ -11,6 +11,7 @@ a["fy8-4-L1-01"] = h / 532e-9 / 1e-27              # green laser photon: p = h/�
 a["fy8-4-L1-02"] = h / 0.0711e-9 / 1e-24           # X-ray photon 0,0711 nm: p = 9,319e-24 kg m/s -> 9,32 (10⁻²⁴ kg·m/s)
 a["fy8-4-L1-03"] = h / 3.60e-27 / 1e-9             # λ = h/p = 6,626e-34 / 3,60e-27 m = 1,8406e-7 m -> 184 nm
 a["fy8-4-L1-04"] = 2.00e-27 * c / 1e-19            # E = p c = 2,00e-27 · 2,998e8 J = 5,996e-19 J -> 6,00 (10⁻¹⁹ J)
+# L1-04 check in solutions.md: λ = h/p = 6,626e-34 / 2,00e-27 m = 3,313e-7 m ≈ 331 nm, near ultraviolet (not visible)
 a["fy8-4-L1-05"] = 1.0e-3 / 3.14e-19 / 1e15        # N/t = P/E = 1,0e-3 W / 3,14e-19 J = 3,18e15 1/s -> 3,2 (10¹⁵ 1/s)
 # Level 2: two steps, one conversion or one rearrangement
 lam, lam2 = 0.0711e-9, 0.0735e-9                   # Compton: X-ray 0,0711 nm scattered to 0,0735 nm
