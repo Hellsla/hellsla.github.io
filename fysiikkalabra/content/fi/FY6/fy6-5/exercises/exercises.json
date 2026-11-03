@@ -1,0 +1,107 @@
+{
+  "level1": [
+    {
+      "id": "fy6-5-L1-01",
+      "level": 1,
+      "text": "Polkupyörän valojen johdotuksessa on haarautumispiste. Siihen tulee kaksi johdinta, joiden virrat ovat $2{,}4\\,\\text{A}$ ja $0{,}6\\,\\text{A}$. Pisteestä lähtee kaksi johdinta, ja toisessa niistä virta on $1{,}8\\,\\text{A}$. Kuinka suuri virta kulkee toisessa lähtevässä johtimessa?",
+      "answer": 1.2,
+      "unit": "A",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-5-L1-02",
+      "level": 1,
+      "text": "Sarjaan kytketyt kaksi vastusta on liitetty jännitelähteeseen, jonka jännite on $12{,}0\\,\\text{V}$. Ensimmäisen vastuksen jännite on $4{,}5\\,\\text{V}$. Kuinka suuri on toisen vastuksen jännite?",
+      "answer": 7.5,
+      "unit": "V",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-5-L1-03",
+      "level": 1,
+      "text": "Virtapiirin kohdan A potentiaali on $5{,}0\\,\\text{V}$ ja kohdan B potentiaali $-3{,}0\\,\\text{V}$ samaan nollakohtaan nähden. Kuinka suuri on jännite $U_{AB}$?",
+      "answer": 8.0,
+      "unit": "V",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-5-L1-04",
+      "level": 1,
+      "text": "Vastuksen resistanssi on $40\\,\\Omega$, ja sen läpi kulkee virta $0{,}15\\,\\text{A}$. Kuinka paljon potentiaali laskee vastuksessa virran suuntaan?",
+      "answer": 6.0,
+      "unit": "V",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-5-L1-05",
+      "level": 1,
+      "text": "Kuvaajassa on sarjaankytkennän potentiaali silmukan eri kohdissa, kun lähteen miinusnapa on nollakohta. Piirissä on lähde ja kolme vastusta. Kuinka suuri on vastuksen $R_2$ jännite? Lue tarvittavat arvot kuvaajasta.",
+      "figure": "fy6-5/ex-graph",
+      "answer": 4.0,
+      "unit": "V",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy6-5-L2-01",
+      "level": 2,
+      "text": "Vastuksen resistanssi on $220\\,\\Omega$, ja sen läpi kulkee virta $25\\,\\text{mA}$. Virta tulee vastukseen kohdasta A, jonka potentiaali on $9{,}0\\,\\text{V}$, ja lähtee siitä kohtaan B. Mikä on kohdan B potentiaali?",
+      "answer": 3.5,
+      "unit": "V",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-5-L2-02",
+      "level": 2,
+      "text": "Vastukset $200\\,\\Omega$ ja $400\\,\\Omega$ on kytketty sarjaan jännitelähteeseen, jonka jännite on $12{,}0\\,\\text{V}$. Lähteen plusnapa on kytketty $200\\,\\Omega$:n vastukseen ja miinusnapa, joka on nollakohta, $400\\,\\Omega$:n vastukseen. Mikä on vastusten välisen johtimen potentiaali?",
+      "answer": 8.0,
+      "unit": "V",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-5-L2-03",
+      "level": 2,
+      "text": "Kuvan kytkennässä kaksi vastusta on kytketty rinnan jännitelähteeseen. Mikä on pääjohtimen virtamittarin lukema? Lähteen ja johtimien resistanssit jätetään huomiotta.",
+      "figure": "fy6-5/ex-branch",
+      "answer": 0.5,
+      "unit": "A",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-5-L2-04",
+      "level": 2,
+      "text": "Sarjaankytkennässä on jännitelähde, jonka jännite on $9{,}0\\,\\text{V}$, sekä vastus $R_1 = 120\\,\\Omega$ ja tuntematon vastus $R_2$. Virtamittari näyttää $50\\,\\text{mA}$. Mikä on vastuksen $R_2$ resistanssi?",
+      "answer": 60,
+      "unit": "Ω",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy6-5-L3-01",
+      "level": 3,
+      "text": "Kolme vastusta, $R_1 = 30\\,\\Omega$, $R_2 = 50\\,\\Omega$ ja $R_3 = 40\\,\\Omega$, on kytketty tässä järjestyksessä sarjaan jännitelähteeseen, jonka jännite on $12\\,\\text{V}$: plusnapa on kytketty vastukseen $R_1$ ja miinusnapa vastukseen $R_3$. Nollakohdaksi valitaan vastusten $R_1$ ja $R_2$ välinen johdin. Mikä on lähteen miinusnavan potentiaali? Anna vastaus etumerkkeineen.",
+      "answer": -9.0,
+      "unit": "V",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-5-L3-02",
+      "level": 3,
+      "text": "Kuvan kytkennässä virtamittari näyttää $0{,}20\\,\\text{A}$. Vastuksen $R_3$ resistanssia ei tunneta. Mikä on vastuksen $R_3$ resistanssi?",
+      "figure": "fy6-5/ex-branch2",
+      "answer": 30,
+      "unit": "Ω",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-5-L3-03",
+      "level": 3,
+      "text": "Kahden samanlaisen lampun rinnankytkentä on kytketty sarjaan vastuksen $20\\,\\Omega$ kanssa jännitelähteeseen, jonka jännite on $12\\,\\text{V}$. Kummankin lampun resistanssi on $60\\,\\Omega$, ja sen oletetaan pysyvän vakiona. Lähteen miinusnapa on nollakohta. Toinen lampuista kierretään irti kannastaan. Kuinka paljon lamppujen yhteisen haarautumispisteen potentiaali muuttuu? Anna vastaus etumerkkeineen (positiivinen, jos potentiaali kasvaa).",
+      "answer": 1.8,
+      "unit": "V",
+      "tolerance": 0.02
+    }
+  ]
+}
