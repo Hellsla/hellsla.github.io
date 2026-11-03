@@ -101,22 +101,23 @@
       "osaa kuvata mekaanista värähtelyä ja ääntä jaksollisena liikkeenä"
     ],
     "lessons": {
-      "fy5-1": "Momentti ja vääntövaikutus",
+      "fy5-1": "Voiman momentti ja kappaleen kiertyminen",
       "fy5-2": "Tasapaino kiertymisen suhteen",
-      "fy5-3": "Tasainen ympyräliike: kulmanopeus ja ratanopeus",
-      "fy5-4": "Normaalikiihtyvyys ja keskeisvoima",
-      "fy5-5": "Gravitaatiolaki ja planetaarinen liike",
-      "fy5-6": "Jaksollinen liike: jaksonaika, taajuus ja amplitudi",
-      "fy5-7": "Harmoninen voima ja värähtelyliike",
-      "fy5-8": "Harmonisen voiman potentiaalienergia",
-      "fy5-9": "Mekaanisten aaltojen synty, eteneminen ja heijastuminen",
-      "fy5-10": "Diffraktio ja interferenssi",
-      "fy5-11": "Seisovat aallot",
-      "fy5-12": "Ääni aaltoliikkeenä: ominaisuudet ja eteneminen",
-      "fy5-14": "Akustiikka ja äänentoisto",
-      "fy5-15": "Ultraäänikuvaus",
-      "fy5-13": "Äänen intensiteettitaso ja kuulon suojaaminen",
-      "fy5-16": "Soveltava tunti: värähtelyt ja aallot rakenteissa ja luonnossa"
+      "fy5-3": "Ympyräliike ja ratanopeus",
+      "fy5-4": "Tasainen ympyräliike ja normaalikiihtyvyys",
+      "fy5-5": "Newtonin gravitaatiolaki",
+      "fy5-6": "Gravitaation alainen ympyräliike",
+      "fy5-7": "Jaksollinen liike",
+      "fy5-8": "Harmoninen voima ja jousen potentiaalienergia",
+      "fy5-9": "Harmoninen värähtely ja heiluri",
+      "fy5-10": "Mekaaninen aaltoliike",
+      "fy5-11": "Aaltojen heijastuminen ja diffraktio",
+      "fy5-12": "Aaltojen interferenssi",
+      "fy5-13": "Seisovat aallot",
+      "fy5-14": "Äänen ominaisuudet",
+      "fy5-15": "Äänen voimakkuus",
+      "fy5-16": "Ääni ympäristössämme",
+      "fy5-17": "Soveltava luku: ultraäänikuvaus ja aallot luonnossa"
     }
   },
   "FY6": {
