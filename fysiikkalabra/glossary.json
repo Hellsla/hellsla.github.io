@@ -2921,6 +2921,491 @@
     "locked": false
   },
   {
+    "term": "superpositio",
+    "definition": "Aaltojen yhteisvaikutus: kun kaksi tai useampi aalto on samassa kohdassa samaan aikaan, väliaineen poikkeama on aaltojen poikkeamien summa, $y = y_1 + y_2$. Aallot jatkavat kohtaamisen jälkeen muuttumattomina.",
+    "lessons": [
+      "fy5-12"
+    ],
+    "see_also": [
+      "interferenssi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "interferenssi",
+    "definition": "Kahden tai useamman aallon yhteisvaikutus samassa kohdassa superpositioperiaatteen mukaan. Kahden samassa vaiheessa värähtelevän saman taajuuden lähteen aallot muodostavat pysyvän kuvion, jossa vahvistavan ja heikentävän interferenssin kohdat vuorottelevat.",
+    "lessons": [
+      "fy5-12"
+    ],
+    "see_also": [
+      "superpositio",
+      "vahvistava interferenssi",
+      "heikentävä interferenssi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "vahvistava interferenssi",
+    "definition": "Interferenssi, jossa aallot saapuvat samassa vaiheessa, harja harjan kanssa, ja summa-aallon amplitudi on aaltojen amplitudien summa. Kahden samassa vaiheessa olevan lähteen aalloilla se tapahtuu, kun matkaero on aallonpituuden monikerta, $\\Delta s = n\\lambda$.",
+    "lessons": [
+      "fy5-12"
+    ],
+    "see_also": [
+      "heikentävä interferenssi",
+      "matkaero"
+    ],
+    "locked": false
+  },
+  {
+    "term": "heikentävä interferenssi",
+    "definition": "Interferenssi, jossa aallot saapuvat vastakkaisessa vaiheessa, harja pohjan kanssa, ja summa-aallon amplitudi on amplitudien erotus, yhtä suurilla amplitudeilla nolla. Kahden samassa vaiheessa olevan lähteen aalloilla se tapahtuu, kun $\\Delta s = (n + \\tfrac{1}{2})\\lambda$.",
+    "lessons": [
+      "fy5-12"
+    ],
+    "see_also": [
+      "vahvistava interferenssi",
+      "solmuviiva"
+    ],
+    "locked": false
+  },
+  {
+    "term": "matkaero",
+    "definition": "Kahden aallon lähteistä samaan pisteeseen kulkemien matkojen erotus $\\Delta s = |s_1 - s_2|$. Matkaeron ja aallonpituuden suhde ratkaisee, vahvistavatko vai heikentävätkö aallot toisiaan.",
+    "lessons": [
+      "fy5-12"
+    ],
+    "see_also": [
+      "interferenssi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "solmuviiva",
+    "definition": "Kahden samassa vaiheessa olevan aaltolähteen interferenssikuviossa viiva, jonka jokaisessa pisteessä interferenssi on heikentävä eli $\\Delta s = (n + \\tfrac{1}{2})\\lambda$. Yhtä suurten amplitudien aalloilla väliaine pysyy solmuviivalla lähes levossa.",
+    "lessons": [
+      "fy5-12"
+    ],
+    "see_also": [
+      "heikentävä interferenssi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "Fourier-muunnos",
+    "definition": "Menetelmä, joka jakaa signaalin siniaaltoihin ja kertoo, mitkä taajuudet signaalissa on ja kuinka suurilla amplitudeilla. Tulos esitetään spektrinä; laskimet ja ohjelmat käyttävät nopeaa Fourier-muunnosta (FFT).",
+    "lessons": [
+      "fy5-12"
+    ],
+    "see_also": [
+      "superpositio"
+    ],
+    "locked": false
+  },
+  {
+    "term": "aaltoliike",
+    "definition": "Häiriön eli poikkeaman tasapainoasemasta eteneminen väliaineessa. Väliaineen hiukkaset värähtelevät tasapainoasemansa ympärillä, ja aalto kuljettaa energiaa mutta ei ainetta.",
+    "lessons": [
+      "fy5-10"
+    ],
+    "see_also": [
+      "poikittainen aalto",
+      "pitkittäinen aalto",
+      "aallon nopeus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "aallonpituus",
+    "definition": "Kahden peräkkäisen aallonharjan tai tihentymän välinen etäisyys eli lyhin etäisyys kahden samalla tavalla liikkuvan väliaineen kohdan välillä. Tunnus λ, yksikkö metri. Yhden jaksonajan aikana aalto etenee yhden aallonpituuden.",
+    "lessons": [
+      "fy5-10"
+    ],
+    "see_also": [
+      "aallon nopeus",
+      "jaksonaika"
+    ],
+    "locked": false
+  },
+  {
+    "term": "aallon nopeus",
+    "definition": "Nopeus, jolla aalto etenee väliaineessa. Se riippuu väliaineesta, ja aaltoliikkeen perusyhtälön mukaan v = fλ, missä f on taajuus ja λ aallonpituus.",
+    "lessons": [
+      "fy5-10"
+    ],
+    "see_also": [
+      "aallonpituus",
+      "taajuus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "poikittainen aalto",
+    "definition": "Aalto, jossa väliaineen hiukkaset värähtelevät kohtisuoraan aallon etenemissuuntaa vastaan, kuten aalto narussa.",
+    "lessons": [
+      "fy5-10"
+    ],
+    "see_also": [
+      "pitkittäinen aalto",
+      "aaltoliike"
+    ],
+    "locked": false
+  },
+  {
+    "term": "pitkittäinen aalto",
+    "definition": "Aalto, jossa väliaineen hiukkaset värähtelevät aallon etenemissuunnan suuntaisesti, jolloin väliaineeseen syntyy eteneviä tihentymiä ja harvennuksia. Esimerkiksi ääni ilmassa on pitkittäinen aalto.",
+    "lessons": [
+      "fy5-10"
+    ],
+    "see_also": [
+      "poikittainen aalto",
+      "aaltoliike"
+    ],
+    "locked": false
+  },
+  {
+    "term": "seisova aalto",
+    "definition": "Aaltoliike, joka syntyy, kun kaksi samanlaista aaltoa etenee vastakkaisiin suuntiin, esimerkiksi aalto ja sen heijastus, ja ne summautuvat. Solmukohdat pysyvät paikallaan ja kuvut värähtelevät suurimmalla amplitudilla; aaltohuippu ei etene.",
+    "lessons": [
+      "fy5-13"
+    ],
+    "see_also": [
+      "solmu",
+      "kupu",
+      "ominaistaajuus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "solmu",
+    "definition": "Seisovan aallon kohta, jossa poikkeama on joka hetki nolla. Vierekkäisten solmujen etäisyys on puoli aallonpituutta.",
+    "lessons": [
+      "fy5-13"
+    ],
+    "see_also": [
+      "kupu",
+      "seisova aalto"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kupu",
+    "definition": "Seisovan aallon kohta kahden solmun puolivälissä, jossa värähtelyn amplitudi on suurin. Solmusta viereiseen kupuun on neljännes aallonpituutta.",
+    "lessons": [
+      "fy5-13"
+    ],
+    "see_also": [
+      "solmu",
+      "seisova aalto"
+    ],
+    "locked": false
+  },
+  {
+    "term": "ominaistaajuus",
+    "definition": "Taajuus, jolla kappaleeseen, kuten kieleen tai putken ilmapatsaaseen, voi syntyä seisova aalto. Kahdesta päästä kiinnitetyn kielen ominaistaajuudet ovat f_n = n·v/(2L).",
+    "lessons": [
+      "fy5-13"
+    ],
+    "see_also": [
+      "perustaajuus",
+      "resonanssi",
+      "yläsävel"
+    ],
+    "locked": false
+  },
+  {
+    "term": "perustaajuus",
+    "definition": "Kappaleen alin ominaistaajuus. Soittimen sävelkorkeus määräytyy perustaajuudesta.",
+    "lessons": [
+      "fy5-13"
+    ],
+    "see_also": [
+      "ominaistaajuus",
+      "yläsävel"
+    ],
+    "locked": false
+  },
+  {
+    "term": "resonanssi",
+    "definition": "Ilmiö, jossa värähtelijää herätetään sen ominaistaajuudella, jolloin jokainen jakso vahvistaa liikettä ja värähtelyn amplitudi kasvaa suureksi.",
+    "lessons": [
+      "fy5-13"
+    ],
+    "see_also": [
+      "ominaistaajuus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "yläsävel",
+    "definition": "Perustaajuutta suurempi ominaistaajuus. Kielen yläsävelet ovat perustaajuuden monikertoja, suljetun putken vain sen parittomia kertoja.",
+    "lessons": [
+      "fy5-13"
+    ],
+    "see_also": [
+      "perustaajuus",
+      "ominaistaajuus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "heijastuminen",
+    "definition": "Aallon palaaminen takaisin, kun se kohtaa väliaineen rajan tai esteen, kuten seinän tai köyden pään. Köyden kiinteästä päästä pulssi heijastuu kääntyneenä, vapaasta päästä kääntymättä.",
+    "lessons": [
+      "fy5-11"
+    ],
+    "see_also": [
+      "heijastuslaki"
+    ],
+    "locked": false
+  },
+  {
+    "term": "heijastuslaki",
+    "definition": "Heijastuskulma on yhtä suuri kuin tulokulma, β = α, kun molemmat mitataan pinnan normaalista. Tuleva säde, heijastunut säde ja normaali ovat samassa tasossa.",
+    "lessons": [
+      "fy5-11"
+    ],
+    "see_also": [
+      "heijastuminen",
+      "Huygensin periaate"
+    ],
+    "locked": false
+  },
+  {
+    "term": "Huygensin periaate",
+    "definition": "Aaltorintaman jokainen piste toimii uuden alkeisaallon lähteenä, ja hetken kuluttua uusi aaltorintama sivuaa kaikkia alkeisaaltoja. Periaate selittää aallon heijastumisen ja diffraktion.",
+    "lessons": [
+      "fy5-11"
+    ],
+    "see_also": [
+      "diffraktio",
+      "heijastuslaki"
+    ],
+    "locked": false
+  },
+  {
+    "term": "diffraktio",
+    "definition": "Aallon taipuminen raon tai esteen taakse, alueelle, jonne suoraan etenevä aalto ei osuisi. Diffraktio on voimakasta, kun raon tai esteen leveys on aallonpituuden suuruusluokkaa tai pienempi.",
+    "lessons": [
+      "fy5-11"
+    ],
+    "see_also": [
+      "Huygensin periaate"
+    ],
+    "locked": false
+  },
+  {
+    "term": "intensiteetti",
+    "definition": "Pinnan läpi kulkeva aallon teho jaettuna pinnan pinta-alalla, I = P/A, kun pinta on kohtisuorassa aallon etenemissuuntaan. Yksikkö W/m². Pistemäisen lähteen intensiteetti pienenee etäisyyden neliön mukaan.",
+    "lessons": [
+      "fy5-15"
+    ],
+    "see_also": [
+      "intensiteettitaso",
+      "kuulokynnys"
+    ],
+    "locked": false
+  },
+  {
+    "term": "intensiteettitaso",
+    "definition": "Äänen voimakkuuden logaritminen mitta L = 10 dB · lg(I/I₀), joka vertaa intensiteettiä I kuulokynnykseen I₀. Kymmenkertainen intensiteetti lisää tasoa 10 dB ja kaksinkertainen noin 3 dB.",
+    "lessons": [
+      "fy5-15"
+    ],
+    "see_also": [
+      "desibeli",
+      "intensiteetti",
+      "kuulokynnys"
+    ],
+    "locked": false
+  },
+  {
+    "term": "desibeli",
+    "definition": "Intensiteettitason yksikkö dB. Kuulokynnyksen taso on 0 dB ja kipukynnyksen noin 120 dB. Usean riippumattoman äänilähteen desibelejä ei lasketa yhteen, vaan yhteistaso lasketaan intensiteettien summasta.",
+    "lessons": [
+      "fy5-15"
+    ],
+    "see_also": [
+      "intensiteettitaso"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kuulokynnys",
+    "definition": "Heikoimman äänen intensiteetti, jonka normaalikuuloinen ihminen erottaa noin 1000 Hz:n taajuudella, I₀ = 1,0 · 10⁻¹² W/m². Se on intensiteettitason vertailuarvo, jota vastaa taso 0 dB. Kuulokynnys ei tarkoita hiljaisuutta.",
+    "lessons": [
+      "fy5-15"
+    ],
+    "see_also": [
+      "intensiteettitaso",
+      "desibeli"
+    ],
+    "locked": false
+  },
+  {
+    "term": "ultraääni",
+    "definition": "Ääni, jonka taajuus on yli 20 kHz eli liian suuri ihmisen kuultavaksi. Lääketieteellisessä kuvauksessa käytetään taajuuksia noin 2–15 MHz: kudosten rajapinnoilta heijastuneiden kaikujen kulkuajasta saadaan rajapintojen syvyys.",
+    "lessons": [
+      "fy5-17",
+      "fy5-14"
+    ],
+    "see_also": [
+      "pitkittäinen aalto"
+    ],
+    "locked": false
+  },
+  {
+    "term": "maanjäristysaalto",
+    "definition": "Maanjäristyksessä syntyvä mekaaninen aalto. Maan sisäosien läpi etenevät pitkittäinen P-aalto, joka on nopein, ja poikittainen S-aalto, joka ei etene nesteessä; pintaa pitkin etenevät hitaammat pinta-aallot.",
+    "lessons": [
+      "fy5-17"
+    ],
+    "see_also": [
+      "pitkittäinen aalto",
+      "poikittainen aalto"
+    ],
+    "locked": false
+  },
+  {
+    "term": "melu",
+    "definition": "Ääni, jota ei haluta kuulla tai joka on haitallista. Kuulolle haitallisuus riippuu äänen tasosta ja altistuksen kestosta: jokainen $3\\,\\text{dB}$:n nousu puolittaa ajan, jossa sama annos kertyy.",
+    "lessons": [
+      "fy5-16"
+    ],
+    "see_also": [
+      "jälkikaiunta"
+    ],
+    "locked": false
+  },
+  {
+    "term": "jälkikaiunta",
+    "definition": "Tilassa heijastuvan äänen hiipuminen sen jälkeen, kun äänilähde on vaiennut. Jälkikaiunta-aika on aika, jossa äänitaso laskee $60\\,\\text{dB}$; ääntä vaimentavat pinnat lyhentävät sitä.",
+    "lessons": [
+      "fy5-16"
+    ],
+    "see_also": [
+      "heijastuminen",
+      "melu"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kaiutin",
+    "definition": "Laite, joka muuttaa sähköisen signaalin ääneksi: vaihtovirta kulkee magneetin navan ympärillä olevassa kelassa, ja kelaan kiinnitetty kartio värähtelee ja synnyttää ääniaallon. Suurin osa sähköenergiasta muuttuu sisäenergiaksi.",
+    "lessons": [
+      "fy5-16"
+    ],
+    "see_also": [
+      "mikrofoni"
+    ],
+    "locked": false
+  },
+  {
+    "term": "mikrofoni",
+    "definition": "Laite, joka muuttaa äänen sähköiseksi signaaliksi: äänen paineenvaihtelut liikuttavat kalvoa, ja kalvon liike muutetaan jännitteeksi, joka vaihtelee samassa tahdissa kuin ääni.",
+    "lessons": [
+      "fy5-16"
+    ],
+    "see_also": [
+      "kaiutin"
+    ],
+    "locked": false
+  },
+  {
+    "term": "ääni",
+    "definition": "Väliaineessa etenevä mekaaninen aalto, kaasussa ja nesteessä pitkittäinen paineaalto, jossa tihentymät ja harvennukset etenevät. Ääni tarvitsee väliaineen; tyhjiössä se ei etene.",
+    "lessons": [
+      "fy5-14"
+    ],
+    "see_also": [
+      "pitkittäinen aalto",
+      "äänen nopeus",
+      "äänenkorkeus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "äänen nopeus",
+    "definition": "Nopeus, jolla ääni etenee väliaineessa. Se riippuu väliaineesta ja kaasussa lämpötilasta: ilmassa noin 340 m/s (noin 15 °C), vedessä noin 1480 m/s. Määritetään mittaamalla äänen kulkuaika tunnetulla matkalla.",
+    "lessons": [
+      "fy5-14"
+    ],
+    "see_also": [
+      "ääni"
+    ],
+    "locked": false
+  },
+  {
+    "term": "äänenkorkeus",
+    "definition": "Äänen kuultu korkeus, joka määräytyy taajuudesta, soittimen äänessä perustaajuudesta: suurempi taajuus, korkeampi ääni. Taajuuden kaksinkertaistuminen nostaa ääntä oktaavin.",
+    "lessons": [
+      "fy5-14"
+    ],
+    "see_also": [
+      "perustaajuus",
+      "sointiväri"
+    ],
+    "locked": false
+  },
+  {
+    "term": "sointiväri",
+    "definition": "Äänen laatu, joka erottaa kaksi samankorkuista ääntä toisistaan. Se riippuu siitä, kuinka voimakkaita yläsävelet ovat perustaajuuteen verrattuna, ja näkyy äänen FFT-spektrissä.",
+    "lessons": [
+      "fy5-14"
+    ],
+    "see_also": [
+      "yläsävel",
+      "harmoninen sarja"
+    ],
+    "locked": false
+  },
+  {
+    "term": "harmoninen sarja",
+    "definition": "Taajuudet f_n = n·f_1 (n = 1, 2, 3, …) eli perustaajuus ja sen kokonaislukukerrat. Kielen ja molemmista päistä avoimen putken ominaistaajuudet muodostavat harmonisen sarjan.",
+    "lessons": [
+      "fy5-14"
+    ],
+    "see_also": [
+      "perustaajuus",
+      "yläsävel",
+      "sointiväri"
+    ],
+    "locked": false
+  },
+  {
+    "term": "infraääni",
+    "definition": "Ääni, jonka taajuus on alle noin 20 Hz eli alle ihmisen kuuloalueen. Sitä syntyy esimerkiksi maanjäristyksissä ja ukkosessa.",
+    "lessons": [
+      "fy5-14"
+    ],
+    "see_also": [
+      "ultraääni",
+      "ääni"
+    ],
+    "locked": false
+  },
+  {
+    "term": "huojunta",
+    "definition": "Kahden lähes samantaajuisen äänen summan voimakkuuden jaksollinen vaihtelu. Huojuntataajuus on f_h = |f_1 − f_2|.",
+    "lessons": [
+      "fy5-14"
+    ],
+    "see_also": [
+      "interferenssi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "Doppler-ilmiö",
+    "definition": "Kuullun taajuuden muutos, kun äänilähde tai kuulija liikkuu väliaineen suhteen: lähestyminen nostaa ja loittoneminen laskee taajuutta. Liikkuvalle lähteelle f = f_0·v/(v ∓ v_s), liikkuvalle kuulijalle f = f_0·(v ± v_h)/v.",
+    "lessons": [
+      "fy5-14"
+    ],
+    "see_also": [
+      "ääni"
+    ],
+    "locked": false
+  },
+  {
     "term": "pinta-ala",
     "definition": "Pinnan koko. Pinta-alan SI-yksikkö on neliömetri, m². Paine on voima pinta-alaa kohti, joten sama voima pienelle pinta-alalle antaa suuren paineen.",
     "lessons": [

@@ -1,0 +1,10 @@
+[
+  {
+    "q": "A string fixed at both ends vibrates at its third natural frequency. How many nodes and how many antinodes does the string have, counting the ends?",
+    "a": "Three half wavelengths fit on the string, so it has three antinodes and four nodes: two at the ends and two between them."
+  },
+  {
+    "q": "A flute is a tube open at both ends and a clarinet roughly a tube closed at one end. The instruments are equally long. Which has the lower fundamental frequency, and how many times as great is the fundamental frequency of the other?",
+    "a": "The clarinet. The fundamental frequency of a closed tube is $\\tfrac{v}{4L}$ and that of an open tube $\\tfrac{v}{2L}$, so the fundamental frequency of a flute of the same length is twice as great, that is, an octave higher."
+  }
+]

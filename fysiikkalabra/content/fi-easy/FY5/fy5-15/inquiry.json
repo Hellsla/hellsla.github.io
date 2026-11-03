@@ -1,0 +1,390 @@
+{
+  "version": 1,
+  "contribution": "Äänen voimakkuudelle tulee suure ja asteikko. Suure on intensiteetti $I = \\tfrac{P}{A}$. Pistemäisestä lähteestä tulevalle äänelle pätee etäisyyden neliön käänteislaki. Lisäksi opitaan kuulokynnys $I_0$ ja intensiteettitaso desibeleinä logaritmin avulla. Opitaan myös laskemaan intensiteetti tasosta ja usean lähteen yhteistaso intensiteettien summana.",
+  "learn": [
+    "laskemaan äänen intensiteetin, kun tiedät tehon ja pinta-alan tai etäisyyden pistemäiseen lähteeseen.",
+    "laskemaan intensiteettitason desibeleinä ja laskemaan intensiteetin tunnetusta tasosta logaritmin avulla.",
+    "selittämään, mitä kuulokynnys tarkoittaa, ja laskemaan usean äänilähteen yhteistason."
+  ],
+  "prior": [
+    "Ääni on ilmassa etenevä pitkittäinen aalto. Aallon amplitudi kertoo, kuinka voimakas ääni on (luku *Äänen ominaisuudet*)",
+    "Aalto kuljettaa energiaa lähteestä ympäristöön. Väliaine ei siirry mukana (luku *Mekaaninen aaltoliike*)",
+    "Teho on energia aikayksikköä kohti, $P = \\tfrac{\\Delta E}{\\Delta t}$. Tehon yksikkö on watti (luku *Teho*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Ulkoilmakonsertissa musiikki tuntuu lavan edessä rintakehässä asti. Samaa musiikkia kuulee selvästi myös rinteeltä satojen metrien päästä. Korva erottaa sekä lehtien hiljaisen kahinan että konsertin jylinän. Silti niiden intensiteetit eroavat toisistaan noin miljardikertaisesti. Melumittari ilmoittaa molemmat samalla asteikolla, desibeleinä.",
+      "question": "Miten äänen voimakkuus muuttuu, kun kuulija siirtyy kauemmas tai kun äänilähteitä tulee lisää? Miksi voimakkuus ilmoitetaan desibeleinä?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Kertaa: äänen ominaisuudet",
+      "optional": true,
+      "prompt": "Kitaran kieli soi ensin hiljaa ja sitten kovaa samalla sävelellä. Mikä äänessä muuttuu?",
+      "choices": [
+        {
+          "text": "Ääniaallon amplitudi eli ilman painevaihtelun suuruus kasvaa.",
+          "correct": true,
+          "feedback": "Oikein. Sama sävel tarkoittaa samaa taajuutta. Voimakkaampi ääni tarkoittaa suurempaa amplitudia (luku *Äänen ominaisuudet*). Tässä luvussa voimakkuutta mitataan aallon kuljettamalla teholla pinta-alaa kohti."
+        },
+        {
+          "text": "Äänen taajuus kasvaa, koska kova ääni on korkeampi.",
+          "feedback": "Taajuus määrää sävelkorkeuden, ei voimakkuutta. Sama sävel voi soida hiljaa tai kovaa (luku *Äänen ominaisuudet*). Kovempi ääni on aalto, jolla on sama taajuus mutta suurempi amplitudi."
+        },
+        {
+          "text": "Ääni etenee ilmassa nopeammin, joten se ehtii korvaan voimakkaampana.",
+          "feedback": "Äänen nopeus riippuu väliaineesta ja sen lämpötilasta. Se ei riipu siitä, kuinka kovaa soitetaan. Hiljainen ja kova ääni etenevät ilmassa yhtä nopeasti."
+        },
+        {
+          "text": "Ääniaallon aallonpituus kasvaa, koska kova ääni ulottuu kauemmas.",
+          "feedback": "Aallonpituus on $\\lambda = \\tfrac{v}{f}$. Kun sävel ja äänen nopeus pysyvät samoina, myös aallonpituus pysyy samana. Kovempi ääni kuuluu kauemmas, koska sen amplitudi ja energia ovat suuremmat."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 1: kaksi kertaa kauempana",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 2
+      },
+      "prompt": "Desibelimittari on $2{,}0\\,\\text{m}$:n päässä kaiuttimesta ja näyttää $90\\,\\text{dB}$. Mittari siirretään $4{,}0\\,\\text{m}$:n päähän samasta kaiuttimesta. Kaiutin säteilee tasaisesti joka suuntaan. Ääni ei heijastu mistään. Mitä mittari näyttää nyt?",
+      "choices": [
+        {
+          "text": "Noin $45\\,\\text{dB}$, koska kaksinkertaisella etäisyydellä ääni on puolet heikompi.",
+          "feedback": "Mallin arvot näyttävät, että tämä on väärin: $4{,}0\\,\\text{m}$:ssä taso on $84{,}0\\,\\text{dB}$. Intensiteetti kyllä pienenee, jopa neljäsosaan ($0{,}995 \\to 0{,}249\\,\\text{mW/m}^2$). Desibeliasteikko on kuitenkin logaritminen. Kun intensiteetti muuttuu tietyllä kertoimella, taso muuttuu vain muutaman desibelin."
+        },
+        {
+          "text": "Noin $22\\,\\text{dB}$, koska sama teho jakautuu nelinkertaiselle alalle.",
+          "feedback": "Alan kasvu on oikea havainto. Mallin arvoissa intensiteetti putoaakin neljäsosaan, $0{,}995 \\to 0{,}249\\,\\text{mW/m}^2$. Tasoa ei kuitenkaan jaeta neljällä: se on $84{,}0\\,\\text{dB}$. Desibeleissä nelinkertainen intensiteettiero on vain noin $6\\,\\text{dB}$."
+        },
+        {
+          "text": "Noin $84\\,\\text{dB}$, koska nelinkertainen intensiteettiero näkyy tasossa vain muutamana desibelinä.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä: $4{,}0\\,\\text{m}$:ssä taso on $84{,}0\\,\\text{dB}$ ja $8{,}0\\,\\text{m}$:ssä $77{,}9\\,\\text{dB}$. Intensiteetti putoaa joka kerta neljäsosaan, mutta taso pienenee vain noin $6\\,\\text{dB}$. Asteikko on logaritminen."
+        },
+        {
+          "text": "Edelleen $90\\,\\text{dB}$, koska kaiuttimen teho ei muutu.",
+          "feedback": "Mallin arvot näyttävät, että tämä on väärin: taso laskee $84{,}0\\,\\text{dB}$:iin. Kaiuttimen teho pysyy samana. Kauempana se jakautuu kuitenkin suuremmalle pallopinnalle, joten mittarin pinnalle osuu vähemmän tehoa."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 2: toinen kaiutin viereen",
+      "justify": true,
+      "reveal": {
+        "after": "koe-2",
+        "min": 2
+      },
+      "prompt": "Yksi kaiutin tuottaa $2{,}0\\,\\text{m}$:n päähän tason $90\\,\\text{dB}$. Sen viereen asetetaan toinen samanlainen kaiutin. Se soittaa toista kappaletta yhtä kovaa. Mitä mittari näyttää, kun molemmat soivat?",
+      "choices": [
+        {
+          "text": "$180\\,\\text{dB}$, koska kaksi kaiutinta tuottaa kaksinkertaisen äänen.",
+          "feedback": "Mallin arvot näyttävät, että tämä on väärin: kahdella kaiuttimella taso on $93{,}0\\,\\text{dB}$. Teho ja siksi intensiteetti kaksinkertaistuu. Desibelilukema ei kaksinkertaistu. Taso $180\\,\\text{dB}$ tarkoittaisi intensiteettiä, joka on miljardi kertaa yhden kaiuttimen $90\\,\\text{dB}$:n intensiteetti. Se olisi myös tuhansia kertoja suurempi kuin suihkukoneen lähellä."
+        },
+        {
+          "text": "Noin $93\\,\\text{dB}$, koska kaksinkertainen intensiteetti lisää tasoa vain muutamalla desibelillä.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä: kahdella kaiuttimella taso on $93{,}0\\,\\text{dB}$, neljällä $96{,}0\\,\\text{dB}$ ja kymmenellä $100{,}0\\,\\text{dB}$. Intensiteetti kasvaa samassa suhteessa kuin kaiuttimien määrä. Jokainen kaksinkertaistus lisää tasoa noin $3\\,\\text{dB}$."
+        },
+        {
+          "text": "Edelleen $90\\,\\text{dB}$, koska kaiuttimet ovat yhtä voimakkaita.",
+          "feedback": "Mallin arvot näyttävät, että tämä on väärin: taso nousee $93{,}0\\,\\text{dB}$:iin. Kahden kaiuttimen tehot lasketaan yhteen. Mittarille tulee siis kaksinkertainen intensiteetti. Se näkyy tasossa pienenä mutta selvänä nousuna."
+        },
+        {
+          "text": "Noin $100\\,\\text{dB}$, koska jokainen lisäkaiutin lisää tasoa kymmenellä desibelillä.",
+          "feedback": "Mallin arvot näyttävät, että tämä on väärin: kahdella kaiuttimella taso on $93{,}0\\,\\text{dB}$. Tasoon $100{,}0\\,\\text{dB}$ tarvitaan kymmenen kaiutinta. Tason nosto $10\\,\\text{dB}$:llä vaatii kymmenkertaisen intensiteetin."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Siirrä desibelimittaria ja lisää kaiuttimia. Katso, miten intensiteetti ja intensiteettitaso muuttuvat.",
+      "howto": "Säädä yhden kaiuttimen äänitehoa $P$, kaiuttimien määrää ja mittarin etäisyyttä $r$ kaiuttimista. Mittarin yläpuolella on sen lukema eli intensiteettitaso $L$. Lukemissa näkyvät myös kokonaisteho, pallon pinta-ala $4\\pi r^2$ ja intensiteetti $I$. Kuvaaja näyttää tason etäisyyden funktiona nykyisillä kaiuttimilla. Rengas näyttää mittarin paikan. Kaarten kirkkaus kuvaa tasoa. *Nopeus* muuttaa vain kaarten liikkeen vauhtia, ei lukemia.",
+      "model": "Kaiuttimet ovat samassa paikassa. Ne säteilevät tasaisesti joka suuntaan kuin yksi pistemäinen lähde. Ääni ei heijastu maasta eikä mistään muualta. Ilma ei myöskään vaimenna ääntä. Siksi koko teho kulkee jokaisen pallopinnan läpi. Kaiuttimet soittavat toisistaan riippumattomia ääniä, joten niiden tehot lasketaan yhteen. Lukemat ovat mallin laskemia arvoja, eivät mittauksia. Kaarten liike on vain havainnollistus. Se ei ole äänen todellinen nopeus.",
+      "calc": "Kokonaisteho on $P_\\text{kok} = N P$, missä $N$ on kaiuttimien määrä. Intensiteetti etäisyydellä $r$ on\n\n$$I = \\frac{P_\\text{kok}}{4\\pi r^2}$$\n\nIntensiteettitaso on $L = 10\\,\\text{dB} \\cdot \\lg \\tfrac{I}{I_0}$, missä $I_0 = 1{,}0 \\cdot 10^{-12}\\,\\text{W/m}^2$. Kokeiden taulukoissa intensiteetti on yksikössä $\\text{mW/m}^2$. Siinä $1\\,\\text{mW/m}^2 = 10^{-3}\\,\\text{W/m}^2$. Kuvaajan pystyakseli alkaa tasosta $40\\,\\text{dB}$."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 1: vain etäisyys muuttuu",
+      "intro": "Testaa ennuste 1. Yksi kaiutin soi teholla $50\\,\\text{mW}$. Muuta vain mittarin etäisyyttä. Kirjaa lukemat ainakin etäisyyksillä $2{,}0\\,\\text{m}$ ja $4{,}0\\,\\text{m}$. Mieluiten kirjaa myös lukemat etäisyyksillä $1{,}0\\,\\text{m}$ ja $8{,}0\\,\\text{m}$. Vertaa: Kuinka moninkertaiseksi intensiteetti muuttuu, kun etäisyys kaksinkertaistuu? Kuinka monta desibeliä taso muuttuu?",
+      "initial": {
+        "P": 50,
+        "N": "1",
+        "r": 2
+      },
+      "locked": [
+        "P",
+        "N"
+      ],
+      "vary": "r",
+      "names": {
+        "P": "yhden kaiuttimen ääniteho",
+        "N": "kaiuttimien määrä",
+        "r": "etäisyys"
+      },
+      "units": {
+        "P": "mW",
+        "r": "m"
+      },
+      "values": {
+        "N": {
+          "1": "yksi kaiutin",
+          "2": "kaksi kaiutinta",
+          "4": "neljä kaiutinta",
+          "10": "kymmenen kaiutinta"
+        }
+      },
+      "measure": [
+        {
+          "key": "ImW",
+          "label": "I (mW/m²)"
+        },
+        {
+          "key": "L",
+          "label": "L (dB)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 2: vain kaiuttimien määrä muuttuu",
+      "intro": "Testaa ennuste 2. Mittari on $2{,}0\\,\\text{m}$:n päässä, ja jokaisen kaiuttimen teho on $50\\,\\text{mW}$. Muuta vain kaiuttimien määrää. Kirjaa lukemat ainakin yhdellä ja kahdella kaiuttimella. Mieluiten kirjaa myös lukemat neljällä ja kymmenellä kaiuttimella. Kuinka monta desibeliä taso nousee, kun kaiuttimien määrä kaksinkertaistuu? Entä kun se kymmenkertaistuu?",
+      "initial": {
+        "P": 50,
+        "N": "1",
+        "r": 2
+      },
+      "locked": [
+        "P",
+        "r"
+      ],
+      "vary": "N",
+      "names": {
+        "P": "yhden kaiuttimen ääniteho",
+        "N": "kaiuttimien määrä",
+        "r": "etäisyys"
+      },
+      "units": {
+        "P": "mW",
+        "r": "m"
+      },
+      "values": {
+        "N": {
+          "1": "yksi kaiutin",
+          "2": "kaksi kaiutinta",
+          "4": "neljä kaiutinta",
+          "10": "kymmenen kaiutinta"
+        }
+      },
+      "measure": [
+        {
+          "key": "ImW",
+          "label": "I (mW/m²)"
+        },
+        {
+          "key": "L",
+          "label": "L (dB)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös: intensiteetti ja desibelit",
+      "after": [
+        "koe-1",
+        "koe-2"
+      ],
+      "prompt": "Kirjoita taulukoidesi perusteella: Kuinka moninkertaiseksi intensiteetti muuttui ja kuinka monta desibeliä taso muuttui, kun etäisyys kaksinkertaistui? Entä kun kaiuttimien määrä kaksinkertaistui tai kymmenkertaistui? Miksi taso ei muutu samassa suhteessa kuin intensiteetti?",
+      "model": "Kun etäisyys kaksinkertaistui, intensiteetti putosi neljäsosaan. Esimerkiksi $0{,}995\\,\\text{mW/m}^2$ pieneni arvoon $0{,}249\\,\\text{mW/m}^2$, koska sama teho jakautui nelinkertaiselle pallopinnalle. Taso pieneni silti vain noin $6\\,\\text{dB}$, arvosta $90{,}0\\,\\text{dB}$ arvoon $84{,}0\\,\\text{dB}$. Kahdella kaiuttimella intensiteetti kaksinkertaistui ja taso nousi noin $3\\,\\text{dB}$, arvoon $93{,}0\\,\\text{dB}$. Kymmenellä kaiuttimella intensiteetti kymmenkertaistui ja taso nousi $10\\,\\text{dB}$, arvoon $100{,}0\\,\\text{dB}$. Desibeliasteikko on logaritminen: sama intensiteettien suhde muuttaa tasoa aina saman määrän desibelejä. Arvot ovat mallin laskemia. Mallissa ääni ei heijastu eikä vaimene.",
+      "criteria": [
+        "Kerroin intensiteettien suhteet: neljäsosa kaksinkertaisella etäisyydellä sekä kaksinkertainen ja kymmenkertainen, kun kaiuttimia lisättiin.",
+        "Kerroin tasojen muutokset desibeleinä: noin $-6\\,\\text{dB}$, $+3\\,\\text{dB}$ ja $+10\\,\\text{dB}$.",
+        "Selitin, että sama intensiteettien suhde muuttaa tasoa aina yhtä monta desibeliä, koska asteikko on logaritminen.",
+        "Mainitsin mallin oletuksen, että ääni ei heijastu eikä vaimene."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Palaa ennusteisiisi",
+      "optional": true,
+      "prompt": "Vertaa ennusteitasi kokeiden mallin arvoihin ja yhtälöön $L = 10\\,\\text{dB} \\cdot \\lg \\tfrac{I}{I_0}$. Palaa sitten alun kysymykseen: Miksi konsertin ääni kuuluu vielä rinteelle asti, vaikka intensiteetti on siellä vain pieni osa lavan edustan intensiteetistä?",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2"
+      ]
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe",
+      "optional": true,
+      "prompt": "Opiskelija laskee äänen intensiteetin, kun taso on $65\\,\\text{dB}$. Hän kirjoittaa\n\n$$\\begin{aligned} &\\lg \\frac{I}{I_0} = \\frac{65\\,\\text{dB}}{10\\,\\text{dB}} = 6{,}5 \\\\ &\\frac{I}{I_0} = 6{,}5 \\\\ &I = 6{,}5 \\cdot 10^{-12}\\,\\text{W/m}^2 \\end{aligned}$$\n\nMissä on virhe?",
+      "choices": [
+        {
+          "text": "Logaritmia ei ole purettu. Yhtälö $\\lg x = 6{,}5$ tarkoittaa, että $x = 10^{6{,}5}$. Siksi $I = 10^{6{,}5} \\cdot I_0 \\approx 3{,}2 \\cdot 10^{-6}\\,\\text{W/m}^2$.",
+          "correct": true,
+          "feedback": "Oikein. Toisella rivillä $\\lg$ on vain jätetty pois. Logaritmin purkamiseen tarvitaan potenssi $10^x$. Tuloksen olisi voinut huomata vääräksi ilman laskuakin: $6{,}5 \\cdot 10^{-12}\\,\\text{W/m}^2$ on vain noin kuusinkertainen kuulokynnys. Sen taso olisi noin $8\\,\\text{dB}$, ei $65\\,\\text{dB}$."
+        },
+        {
+          "text": "Jako $10\\,\\text{dB}$:llä on väärin. Oikea tulos on $\\lg \\tfrac{I}{I_0} = 650$.",
+          "feedback": "Jako on oikein: $L = 10\\,\\text{dB} \\cdot \\lg \\tfrac{I}{I_0}$, joten $\\lg \\tfrac{I}{I_0} = \\tfrac{L}{10\\,\\text{dB}} = 6{,}5$. Virhe on seuraavalla rivillä. Siinä logaritmi pitäisi purkaa potenssiksi $10^{6{,}5}$."
+        },
+        {
+          "text": "Kuulokynnys on väärä. Sen pitäisi olla $0\\,\\text{W/m}^2$, koska kuulokynnyksen taso on $0\\,\\text{dB}$.",
+          "feedback": "Taso $0\\,\\text{dB}$ tarkoittaa intensiteettiä $I_0 = 1{,}0 \\cdot 10^{-12}\\,\\text{W/m}^2$, koska $\\lg 1 = 0$. Jos $I_0$ olisi nolla, osamäärää $\\tfrac{I}{I_0}$ ei voisi laskea. Virhe on logaritmin purkamisessa."
+        },
+        {
+          "text": "Laskussa ei ole virhettä. Taso $65\\,\\text{dB}$ on hiljainen ääni, joten pieni intensiteetti on oikein.",
+          "feedback": "Taso $65\\,\\text{dB}$ on keskustelun tai vähän kovemman äänen taso. Sen intensiteetti on $3{,}2 \\cdot 10^{-6}\\,\\text{W/m}^2$, noin kolme miljoonaa kertaa kuulokynnys. Laskussa logaritmia ei ole purettu potenssiksi $10^{6{,}5}$."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Sovella uuteen tilanteeseen",
+      "prompt": "Juhlasalissa on kaksi samanlaista kaiutinta. Ne soittavat toisistaan riippumattomia ääniä yhtä suurella teholla. Kuulija on $2{,}0\\,\\text{m}$:n päässä yhdestä kaiuttimesta ja $4{,}0\\,\\text{m}$:n päässä toisesta. Lähempi kaiutin tuottaa yksinään kuulijan kohdalle $80\\,\\text{dB}$. Kuinka monta desibeliä yhteistaso on suurempi kuin lähemmän kaiuttimen taso yksinään? Oleta, että kumpikin kaiutin säteilee tasaisesti joka suuntaan ja ääni ei heijastu. Vastaa desibeleinä.",
+      "answer": 0.97,
+      "unit": "dB",
+      "tolerance": 0.03,
+      "hints": [
+        "Kumpi kaiutin tuottaa kuulijan kohdalle suuremman intensiteetin? Kuinka moninkertaisen? Kaukaisempi kaiutin on kaksi kertaa kauempana.",
+        "Laske lähemmän kaiuttimen intensiteetti $I_1 = I_0 \\cdot 10^{\\,L_1/(10\\,\\text{dB})}$. Kaukaisemman kaiuttimen intensiteetti on $I_2 = \\tfrac{I_1}{4}$, koska intensiteetti on kääntäen verrannollinen etäisyyden neliöön.",
+        "$L = 10\\,\\text{dB} \\cdot \\lg \\dfrac{I_1 + I_2}{I_0} = 10\\,\\text{dB} \\cdot \\lg \\dfrac{1{,}25\\, I_1}{I_0} = 80\\,\\text{dB} + 10\\,\\text{dB} \\cdot \\lg 1{,}25$."
+      ],
+      "mistakes": [
+        {
+          "value": 3.0,
+          "feedback": "Käsittelit kaiuttimia ikään kuin kumpikin tuottaisi kuulijalle $80\\,\\text{dB}$. Kaukaisempi kaiutin on kaksi kertaa kauempana. Siksi sen intensiteetti kuulijan kohdalla on vain neljäsosa lähemmän kaiuttimen intensiteetistä."
+        },
+        {
+          "value": 1.76,
+          "feedback": "Pienensit kaukaisemman kaiuttimen intensiteetin puoleen. Intensiteetti on kääntäen verrannollinen etäisyyden *neliöön*, koska teho jakautuu pallopinnalle $4\\pi r^2$. Kaksinkertainen etäisyys antaa neljäsosan."
+        }
+      ],
+      "solution": "**Annettu:** lähempi kaiutin $r_1 = 2{,}0\\,\\text{m}$, taso yksinään $L_1 = 80\\,\\text{dB}$. Samanlainen kaiutin on $r_2 = 4{,}0\\,\\text{m}$:n päässä. Kuulokynnys $I_0 = 1{,}0 \\cdot 10^{-12}\\,\\text{W/m}^2$. Ääni leviää tasaisesti eikä heijastu.\n\n**Kysytty:** yhteistason ja lähemmän kaiuttimen tason erotus $L - L_1$ desibeleinä\n\n**Periaate:** Kaiuttimet soittavat riippumattomia ääniä, joten intensiteetit lasketaan yhteen. Kumpikin kaiutin on pistemäinen lähde. Sen intensiteetti on kääntäen verrannollinen etäisyyden neliöön. Kaiuttimien tehot ovat samat.\n\n**Kaava:** $I_1 = I_0 \\cdot 10^{\\,L_1/(10\\,\\text{dB})}$ ja $I_2 = I_1 \\cdot \\dfrac{r_1^2}{r_2^2}$, joten\n\n$$L - L_1 = 10\\,\\text{dB} \\cdot \\lg \\frac{I_1 + I_2}{I_1}$$\n\n**Muunnokset:** Niitä ei tarvita. Etäisyydet ovat metreinä ja supistuvat suhteessa $\\tfrac{r_1^2}{r_2^2}$.\n\n**Sijoitus:** $I_1 = 10^{-12}\\,\\text{W/m}^2 \\cdot 10^{8} = 1{,}0 \\cdot 10^{-4}\\,\\text{W/m}^2$ ja $I_2 = 1{,}0 \\cdot 10^{-4}\\,\\text{W/m}^2 \\cdot \\dfrac{(2{,}0\\,\\text{m})^2}{(4{,}0\\,\\text{m})^2} = 2{,}5 \\cdot 10^{-5}\\,\\text{W/m}^2$, joten $L - L_1 = 10\\,\\text{dB} \\cdot \\lg \\dfrac{1{,}25 \\cdot 10^{-4}\\,\\text{W/m}^2}{1{,}0 \\cdot 10^{-4}\\,\\text{W/m}^2} = 10\\,\\text{dB} \\cdot \\lg 1{,}25 = 0{,}969\\,\\text{dB}$\n\n**Vastaus:** $0{,}97\\,\\text{dB}$. Vastauksessa on kaksi merkitsevää numeroa kuten etäisyyksissä. Yhteistaso on noin $81\\,\\text{dB}$.\n\n**Järkevyys:** Kaukaisempi kaiutin tuottaa yksinään $80\\,\\text{dB} - 6{,}0\\,\\text{dB} = 74\\,\\text{dB}$. Lisäyksen on oltava alle $3\\,\\text{dB}$. Niin paljon antaisi kaksi yhtä voimakasta lähdettä. Lisäyksen on myös oltava selvästi yli nollan. Alle $1\\,\\text{dB}$ sopii, koska heikompi lähde lisää intensiteettiin vain neljänneksen."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Harjoittele kolmella tasolla. Tason 1 tehtävissä käytetään yhtä kaavaa. Tason 2 tehtävissä yhdistetään kaksi vaihetta, esimerkiksi etäisyys ja taso tai kaksi lähdettä. Taso 3 vaatii päättelyä uudessa tilanteessa."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Kuulokynnys",
+      "prompt": "Kaiuttomassa huoneessa mittari näyttää tason $0\\,\\text{dB}$. Mitä lukema kertoo?",
+      "choices": [
+        {
+          "text": "Ääntä ei ole lainkaan: intensiteetti on nolla.",
+          "feedback": "Taso $0\\,\\text{dB}$ ei tarkoita nollaintensiteettiä. Koska $\\lg 1 = 0$, taso on $0\\,\\text{dB}$, kun $I = I_0 = 1{,}0 \\cdot 10^{-12}\\,\\text{W/m}^2$. Vielä heikommilla äänillä taso on negatiivinen."
+        },
+        {
+          "text": "Intensiteetti on kuulokynnyksen suuruinen, noin $1{,}0 \\cdot 10^{-12}\\,\\text{W/m}^2$. Ääni on siis juuri ja juuri kuultavissa.",
+          "correct": true,
+          "feedback": "Oikein. Kuulokynnys $I_0$ on intensiteettitason vertailuarvo. Kun $\\tfrac{I}{I_0} = 1$, taso on $0\\,\\text{dB}$. Kuulokynnys on heikoin ääni, jonka normaalikuuloinen ihminen erottaa noin $1000\\,\\text{Hz}$:n taajuudella."
+        },
+        {
+          "text": "Ääni on niin heikko, ettei mikään mittari pysty mittaamaan sitä tarkemmin.",
+          "feedback": "Taso $0\\,\\text{dB}$ on sovittu korvan kuulokynnyksen mukaan. Se ei perustu mittarin rajaan. Herkät mikrofonit mittaavat myös kuulokynnystä heikompia ääniä, joiden taso on negatiivinen."
+        },
+        {
+          "text": "Intensiteetti on $1\\,\\text{W/m}^2$, koska desibeliasteikko alkaa yhdestä watista neliömetrille.",
+          "feedback": "Intensiteetti $1\\,\\text{W/m}^2$ on suunnilleen kipukynnys, jonka taso on $120\\,\\text{dB}$. Asteikon nollakohta on kuulokynnys $1{,}0 \\cdot 10^{-12}\\,\\text{W/m}^2$. Se on biljoonasosa kipukynnyksestä."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Tasojen ero",
+      "prompt": "Hiljaisessa toimistossa taso on $50\\,\\text{dB}$ ja vilkkaan kadun varressa $70\\,\\text{dB}$. Kuinka moninkertainen äänen intensiteetti on kadun varressa toimistoon verrattuna? Vastaa paljaana lukuna.",
+      "answer": 100,
+      "unit": "",
+      "tolerance": 0.02,
+      "hints": [
+        "Tasojen erotus riippuu vain intensiteettien suhteesta.",
+        "$L_2 - L_1 = 10\\,\\text{dB} \\cdot \\lg \\tfrac{I_2}{I_1}$, joten $\\tfrac{I_2}{I_1} = 10^{\\,(L_2 - L_1)/(10\\,\\text{dB})}$.",
+        "$\\tfrac{I_2}{I_1} = 10^{\\,20\\,\\text{dB}/(10\\,\\text{dB})} = 10^2$."
+      ],
+      "mistakes": [
+        {
+          "value": 1.4,
+          "feedback": "Jaoit desibelit toisillaan, $70 : 50 = 1{,}4$. Desibelilukemat eivät ole intensiteettejä. Ne ovat logaritmeja intensiteetin suhteesta kuulokynnykseen. Käytä tasojen erotusta $20\\,\\text{dB}$."
+        },
+        {
+          "value": 20,
+          "feedback": "Luku $20\\,\\text{dB}$ on tasojen erotus, ei intensiteettien suhde. Jokainen $10\\,\\text{dB}$ tarkoittaa kymmenkertaista intensiteettiä. Siksi $20\\,\\text{dB}$ tarkoittaa kerrointa $10 \\cdot 10$."
+        }
+      ],
+      "solution": "**Annettu:** toimiston taso $L_1 = 50\\,\\text{dB}$, kadun taso $L_2 = 70\\,\\text{dB}$\n\n**Kysytty:** intensiteettien suhde $\\tfrac{I_2}{I_1}$ paljaana lukuna\n\n**Periaate:** Kahden äänen tasojen erotus riippuu vain niiden intensiteettien suhteesta, koska kuulokynnys $I_0$ supistuu pois. Suhde saadaan purkamalla logaritmi potenssiksi.\n\n**Kaava:** $L_2 - L_1 = 10\\,\\text{dB} \\cdot \\lg \\dfrac{I_2}{I_1}$, joten $\\lg \\dfrac{I_2}{I_1} = \\dfrac{L_2 - L_1}{10\\,\\text{dB}}$ ja\n\n$$\\frac{I_2}{I_1} = 10^{\\,(L_2 - L_1)/(10\\,\\text{dB})}$$\n\n**Muunnokset:** Niitä ei tarvita. Desibelit supistuvat osamäärässä.\n\n**Sijoitus:** $\\dfrac{I_2}{I_1} = 10^{\\,(70\\,\\text{dB} - 50\\,\\text{dB})/(10\\,\\text{dB})} = 10^{2} = 100$\n\n**Vastaus:** $100$. Tasojen erotus $20\\,\\text{dB}$ on kokonaisluku, ja suhde ilmoitetaan sen mukaan.\n\n**Järkevyys:** Toimiston intensiteetti on $10^{-7}\\,\\text{W/m}^2$ ja kadun $10^{-5}\\,\\text{W/m}^2$. Niiden suhde on $100$. Kadun ääni ei kuulosta sata kertaa voimakkaalta vaan noin nelinkertaiselta, koska korva aistii voimakkuuden suunnilleen logaritmisesti."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Selitä ja siirrä",
+      "optional": true,
+      "prompt": "Ulkoilmakonsertissa olet $5\\,\\text{m}$:n päässä kaiuttimesta, ja taso on liian kova. Kaveri sanoo: ”Jos siirrymme kaksi kertaa kauemmas, ääni on vain puolet nykyisestä.” Arvioi väite. Selitä, miten intensiteetti ja intensiteettitaso muuttuvat, kun etäisyys kaksinkertaistuu. Selitä myös, miksi ne muuttuvat niin.",
+      "criteria": [
+        "Sanon, että sama teho jakautuu pallopinnalle $4\\pi r^2$. Pallopinnan pinta-ala nelinkertaistuu, kun etäisyys kaksinkertaistuu.",
+        "Päättelen, että intensiteetti putoaa neljäsosaan, ei puoleen.",
+        "Lasken, että taso pienenee noin $10\\,\\text{dB} \\cdot \\lg 4 \\approx 6\\,\\text{dB}$. Desibelilukema ei siis puolitu.",
+        "Mainitsen oletuksen, että ääni ei heijastu eikä vaimene."
+      ],
+      "model": "Väite ei pidä paikkaansa. Oletetaan, että ääni leviää tasaisesti joka suuntaan eikä heijastu. Silloin kaiuttimen teho jakautuu pallopinnalle, jonka pinta-ala on $4\\pi r^2$. Kaksinkertaisella etäisyydellä pinta-ala on nelinkertainen. Siksi intensiteetti putoaa neljäsosaan eikä puoleen. Desibelilukema ei kuitenkaan puolitu eikä putoa neljäsosaan. Taso pienenee $10\\,\\text{dB} \\cdot \\lg 4 \\approx 6\\,\\text{dB}$, esimerkiksi $100\\,\\text{dB}$:sta noin $94\\,\\text{dB}$:iin. Korvalle tämä on selvä mutta ei suuri hiljeneminen. Sana \"puolet\" voi tarkoittaa myös koettua voimakkuutta. Noin $10\\,\\text{dB}$:n pudotus kuulostaa suunnilleen puolta hiljaisemmalta, vaikka intensiteetti silloin pienenee kymmenesosaan. Intensiteetti ja koettu voimakkuus eivät ole sama asia. Kumpikaan tulkinta ei täsmää kaverin väitteeseen: intensiteetti putoaa neljäsosaan, ja noin $6\\,\\text{dB}$:n pudotus kuulostaa vain noin kolmanneksen hiljaisemmalta, ei puolta. Todellisuudessa maa ja rakenteet heijastavat ääntä, joten taso pienenee usein vielä vähemmän."
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Lopuksi kaksi nopeaa kysymystä. Vastaa ensin itse. Avaa vastaus vasta sen jälkeen."
+    }
+  ]
+}

@@ -1,0 +1,448 @@
+{
+  "version": 1,
+  "contribution": "Aallon ja sen heijastuksen summasta syntyy seisova aalto. Solmut ja kuvut ovat $\\tfrac{\\lambda}{2}$:n välein. Reunaehdoista seuraavat kielen ja avoimen putken ominaistaajuudet $f_n = n \\cdot \\tfrac{v}{2L}$ sekä suljetun putken parittomat ominaistaajuudet $f_n = n \\cdot \\tfrac{v}{4L}$. Teemana ovat soittimet. Opiskelija löytää resonanssitaajuudet itse mallin avulla, joka näyttää aallon pysyvän tilan.",
+  "learn": [
+    "tunnistamaan seisovan aallon solmut ja kuvut ja selittämään, miten seisova aalto syntyy aallosta ja sen heijastuksesta.",
+    "laskemaan kielen ja putken ilmapatsaan ominaistaajuudet pituudesta ja aallon nopeudesta.",
+    "vertailemaan molemmista päistä avoimen ja toisesta päästä suljetun putken ominaistaajuuksia."
+  ],
+  "prior": [
+    "Aallon nopeus, taajuus ja aallonpituus liittyvät toisiinsa yhtälöllä $v = f\\lambda$ (luku *Mekaaninen aaltoliike*)",
+    "Aalto heijastuu narun kiinteästä päästä vastakkaisvaiheisena eli käänteisenä (luku *Aaltojen heijastuminen ja diffraktio*)",
+    "Kohtaavien aaltojen poikkeamat lasketaan yhteen, ja vastakkaisvaiheiset aallot kumoavat toisensa (luku *Aaltojen interferenssi*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Kaksi opiskelijaa kokeilee liikuntasalissa pitkällä hyppynarulla. Narun toinen pää on solmittu puolapuuhun. Toinen opiskelija heiluttaa vapaata päätä pienin liikkein ylös ja alas. Kun heilutus on hidasta ja epätasaista, naru kiemurtelee sotkuisesti. Kun heilutustahti osuu sopivaksi, naru asettuu yhdeksi rauhalliseksi kaareksi. Kaari heilahtelee suurella amplitudilla. Kun tahtia nopeutetaan, kaari hajoaa. Uudella, nopeammalla tahdilla narussa näkyy kaksi kaarta. Niiden välissä on kohta, joka ei liiku lainkaan.",
+      "question": "Miksi naru asettuu rauhalliseen kuvioon vain tietyillä heilutustahdeilla, ja mikä nuo tahdit määrää?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Kertaa: heijastus kiinteästä päästä",
+      "optional": true,
+      "prompt": "Narun oikea pää on kiinni seinässä. Narua pitkin kulkee seinää kohti yksittäinen aaltopulssi. Pulssi on narun lepoaseman yläpuolella. Millainen pulssi palaa seinästä?",
+      "choices": [
+        {
+          "text": "Samankokoinen pulssi, joka on nyt lepoaseman alapuolella.",
+          "correct": true,
+          "feedback": "Oikein. Kiinteästä päästä aalto heijastuu vastakkaisvaiheisena (luku *Aaltojen heijastuminen ja diffraktio*). Seinä vetää narua vastakkaiseen suuntaan kuin pulssi, joten pää pysyy paikallaan. Tänään tutkitaan, mitä tapahtuu, kun tuleva ja heijastunut aalto kulkevat narussa yhtä aikaa."
+        },
+        {
+          "text": "Samankokoinen pulssi, joka on yhä lepoaseman yläpuolella.",
+          "feedback": "Näin käy vapaassa päässä, koska se pääsee liikkumaan. Kiinnitetty pää ei liiku. Seinä vetää narua vastakkaiseen suuntaan, ja pulssi kääntyy lepoaseman alapuolelle."
+        },
+        {
+          "text": "Ei mitään, koska seinä pysäyttää pulssin ja sen energia häviää.",
+          "feedback": "Kiinteä pää ei pysty ottamaan energiaa vastaan, koska se ei liiku. Siksi lähes koko pulssi heijastuu takaisin. Samalla pulssi kääntyy lepoaseman alapuolelle."
+        },
+        {
+          "text": "Kaksi kertaa suurempi pulssi, koska tuleva ja heijastunut pulssi summautuvat.",
+          "feedback": "Tuleva ja heijastunut pulssi summautuvat vain sillä hetkellä, kun ne ovat päällekkäin seinän lähellä. Takaisin palaa yksi samankokoinen pulssi, joka on kääntynyt lepoaseman alapuolelle."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 1: kaksi silmukkaa",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 3
+      },
+      "prompt": "Kahdesta päästä kiinnitetty kieli on $0{,}60\\,\\text{m}$ pitkä. Kieli värähtelee voimakkaasti yhtenä silmukkana, kun täryttäjän taajuus on $100\\,\\text{Hz}$. Kielen kireys pysyy samana. Millä taajuudella kieleen syntyy seuraavaksi voimakas seisova aalto, jossa on kaksi silmukkaa?",
+      "choices": [
+        {
+          "text": "Taajuudella $200\\,\\text{Hz}$, joka on kaksinkertainen.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä. Suurin poikkeama oli $200\\,\\text{Hz}$:llä noin $16{,}7\\,\\text{mm}$, ja solmuja oli kolme. Taajuudella $150\\,\\text{Hz}$ poikkeama oli vain noin $1{,}0\\,\\text{mm}$. Kahteen silmukkaan tarvitaan puolet lyhyempi aallonpituus. Aallon nopeus on sama, joten taajuuden on oltava kaksinkertainen."
+        },
+        {
+          "text": "Taajuudella $50\\,\\text{Hz}$, koska kaksi silmukkaa vaatii pidemmän aallon.",
+          "feedback": "Mallin arvot kumoavat tämän. Taajuudella $50\\,\\text{Hz}$ poikkeama oli vain noin $1{,}0\\,\\text{mm}$. Kaksi silmukkaa tarkoittaa, että kieleen mahtuu kokonainen aallonpituus. Aallon on siis oltava *lyhyempi* kuin yhden silmukan tapauksessa. Lyhyempi aalto samalla nopeudella vaatii suuremman taajuuden. Yhtälön $v = f\\lambda$ mukaan taajuus on $200\\,\\text{Hz}$."
+        },
+        {
+          "text": "Taajuudella $150\\,\\text{Hz}$, joka on puolet suurempi.",
+          "feedback": "Mallin arvot kumoavat tämän. Taajuudella $150\\,\\text{Hz}$ poikkeama oli vain noin $1{,}0\\,\\text{mm}$, eikä kuvio ollut voimakas. Silmukoiden määrä kasvaa yhdellä kerrallaan, ja jokainen silmukka on puolikas aallonpituutta. Kahdella silmukalla aallonpituus puolittuu, joten taajuus kaksinkertaistuu $200\\,\\text{Hz}$:iin."
+        },
+        {
+          "text": "Millä tahansa taajuudella yli $100\\,\\text{Hz}$, kunhan heilutus on voimakkaampi.",
+          "feedback": "Mallin arvot kumoavat tämän. Kun taajuutta nostettiin, poikkeama pieneni ensin noin $1\\,\\text{mm}$:iin. Se kasvoi uudelleen noin $16{,}7\\,\\text{mm}$:iin vasta taajuudella $200\\,\\text{Hz}$. Seisova aalto voimistuu vain taajuuksilla, joilla kielen pituudelle mahtuu kokonainen määrä puolikkaita aallonpituuksia."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 2: toisesta päästä suljettu putki",
+      "justify": true,
+      "reveal": {
+        "after": "koe-2",
+        "min": 3
+      },
+      "prompt": "Putki on toisesta päästä suljettu ja toisesta avoin. Sen perustaajuus on $100\\,\\text{Hz}$. Mikä on putken seuraava ominaistaajuus? Se on seuraava taajuus, jolla putken ilmapatsas resonoi voimakkaasti.",
+      "choices": [
+        {
+          "text": "$200\\,\\text{Hz}$, kuten kielellä kaksinkertainen.",
+          "feedback": "Mallin arvot kumoavat tämän. Taajuudella $200\\,\\text{Hz}$ poikkeama jäi noin $1{,}0\\,\\text{mm}$:iin. Kielessä kummassakin päässä on solmu. Suljetussa putkessa solmu on vain suljetussa päässä, ja avoimessa päässä on kupu. Siksi putkeen mahtuu vain pariton määrä neljänneksiä aallonpituudesta."
+        },
+        {
+          "text": "$300\\,\\text{Hz}$, joka on kolminkertainen.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä. Poikkeama oli noin $16{,}7\\,\\text{mm}$ taajuuksilla $100\\,\\text{Hz}$, $300\\,\\text{Hz}$ ja $500\\,\\text{Hz}$. Taajuuksilla $200\\,\\text{Hz}$ ja $400\\,\\text{Hz}$ se oli vain noin $1{,}0\\,\\text{mm}$. Suljetussa päässä on solmu ja avoimessa kupu, joten putken pituus on $\\tfrac{\\lambda}{4}$, $\\tfrac{3\\lambda}{4}$ tai $\\tfrac{5\\lambda}{4}$."
+        },
+        {
+          "text": "$150\\,\\text{Hz}$, puolitoistakertainen.",
+          "feedback": "Mallin arvot kumoavat tämän. Taajuudella $150\\,\\text{Hz}$ poikkeama oli vain noin $1{,}4\\,\\text{mm}$. Putkeen on mahduttava pariton määrä aallonpituuden neljänneksiä. Siksi ominaistaajuudet ovat perustaajuuden parittomia kertoja, eivät puolitoistakertaisia."
+        },
+        {
+          "text": "$400\\,\\text{Hz}$, koska suljettu pää kaksinkertaistaa taajuuden.",
+          "feedback": "Mallin arvot kumoavat tämän. Taajuudella $400\\,\\text{Hz}$ poikkeama jäi noin $1{,}0\\,\\text{mm}$:iin. Suljettu pää ei kerro taajuutta millään vakiolla. Se pakottaa putken päähän solmun. Seuraava ominaistaajuus on se, jolla putkeen mahtuu kolme neljännestä aallonpituudesta."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Valitse kieli tai putki. Muuta herätteen taajuutta ja seuraa, millä taajuuksilla poikkeama kasvaa suureksi. Jokainen kokeilemasi taajuus jää pisteeksi kuvaajaan.",
+      "howto": "Valitse *Tilanne*: kieli, jonka kumpikin pää on kiinni, molemmista päistä avoin putki tai toisesta päästä suljettu putki. Kielen vasemmassa päässä on täryttäjä. Putken vasemmassa, avoimessa päässä on kaiutin. Säädä herätteen taajuutta $f$ liukusäätimellä. Nuolinäppäimet muuttavat sitä $5\\,\\text{Hz}$:n askelin. Kuvassa sininen viiva on poikkeama tällä hetkellä. Katkoviivat ovat ääriasennot, joiden välissä naru tai ilma liikkuu. Putkessa siniset pisterivit ovat ilmaa, joka liikkuu putken suunnassa. Putken alle on piirretty sama siirtymä kuvaajana. Solmut on merkitty kirjaimella S ja kuvut kirjaimella K, kun niille on tilaa. Alla olevaan kuvaajaan jää piste jokaisesta kokeilemastasi taajuudesta. Pisteet nollautuvat, kun vaihdat tilannetta, pituutta tai nopeutta. Kielen aallon nopeus $v$ kasvaa, kun kieltä kiristetään. Kuvassa kiristävä punnus kasvaa. *Nopeus* muuttaa vain liikkeen tahtia.",
+      "model": "Kuva näyttää pysyvän tilan, joka syntyy, kun heräte on jatkunut pitkään. Oikeaan päähän etenevä aalto ja sen heijastus ovat silloin summautuneet. Liike on piirretty voimakkaasti hidastettuna, koska todellinen taajuus on satoja hertsejä. Poikkeamat on suurennettu. Herätteen oma amplitudi on mallissa kielessä $1{,}0\\,\\text{mm}$. Pieni vaimennus rajoittaa suurimman poikkeaman noin $17\\,\\text{mm}$:iin. Todellisissa soittimissa suhde riippuu materiaaleista. Putken avoimessa päässä kupu on ominaistaajuuksilla mallissa täsmälleen putken suulla, koska pääkorjausta ei ole. Äänen nopeus ilmassa on $340\\,\\text{m/s}$. Kaikki luvut ovat mallin laskemia arvoja, eivät mittauksia.",
+      "calc": "Aallonpituus on $\\lambda = \\tfrac{v}{f}$. Olkoon $s = L - x$ etäisyys oikeasta päästä. Olkoon $k = \\tfrac{2\\pi f}{v} - i\\alpha$ aaltoluku pienellä vaimennuksella $\\alpha = \\tfrac{0{,}06}{L}$. Silloin poikkeaman amplitudi kohdassa $x$ on kielelle $U = a\\tfrac{\\sin ks}{\\sin kL}$, avoimelle putkelle $U = a\\tfrac{\\cos ks}{\\sin kL}$ ja suljetulle putkelle $U = a\\tfrac{\\sin ks}{\\cos kL}$. Tässä $a = 1{,}0\\,\\text{mm}$. Nämä täyttävät päiden ehdot: kiinteässä ja suljetussa päässä poikkeama on nolla, avoimessa päässä suurin. Suurin poikkeama $A$ on suurin arvo $|U|$:sta kielen tai putken matkalla. Solmuja ovat kohdat, joissa $|U|$ on pienimmillään ja alle $15\\,\\%$ $A$:sta. Kuvuja ovat kohdat, joissa se on suurimmillaan ja yli $85\\,\\%$ $A$:sta. Ominaistaajuuksia ei ole syötetty malliin. Poikkeama kasvaa suureksi itsestään, kun nimittäjä $\\sin kL$ tai $\\cos kL$ on lähes nolla."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 1: kielen ominaistaajuudet",
+      "intro": "Testaa ennuste 1. Kielen pituus on $0{,}60\\,\\text{m}$ ja aallon nopeus $120\\,\\text{m/s}$. Ne pysyvät vakioina. Nosta taajuutta $50\\,\\text{Hz}$:stä $320\\,\\text{Hz}$:iin ja seuraa kuvaajaa. Kirjaa ainakin ne taajuudet, joilla suurin poikkeama $A$ on huipussaan. Kirjaa myös yksi taajuus kahden huipun välistä. Laske solmut myös kuvasta.",
+      "initial": {
+        "tila": "kieli",
+        "L": 0.6,
+        "v": 120,
+        "f": 50
+      },
+      "locked": [
+        "tila",
+        "L",
+        "v"
+      ],
+      "vary": "f",
+      "names": {
+        "tila": "tilanne",
+        "L": "kielen pituus",
+        "v": "aallon nopeus",
+        "f": "taajuus"
+      },
+      "values": {
+        "tila": {
+          "kieli": "kieli, molemmat päät kiinni"
+        }
+      },
+      "units": {
+        "L": "m",
+        "v": "m/s",
+        "f": "Hz"
+      },
+      "measure": [
+        {
+          "key": "A",
+          "label": "A (mm)"
+        },
+        {
+          "key": "solmut",
+          "label": "solmuja"
+        },
+        {
+          "key": "lambda",
+          "label": "λ (m)"
+        }
+      ],
+      "min": 3
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 2: toisesta päästä suljettu putki",
+      "intro": "Testaa ennuste 2. Putki on $0{,}85\\,\\text{m}$ pitkä ja suljettu oikeasta päästä. Nosta taajuutta $50\\,\\text{Hz}$:stä $550\\,\\text{Hz}$:iin. Kirjaa ainakin ne taajuudet, joilla poikkeama on huipussaan. Kirjaa myös taajuudet $200\\,\\text{Hz}$ ja $400\\,\\text{Hz}$. Missä putken päässä on solmu ja missä kupu?",
+      "initial": {
+        "tila": "suljettu",
+        "L": 0.85,
+        "f": 50
+      },
+      "locked": [
+        "tila",
+        "L"
+      ],
+      "vary": "f",
+      "names": {
+        "tila": "tilanne",
+        "L": "putken pituus",
+        "f": "taajuus"
+      },
+      "values": {
+        "tila": {
+          "suljettu": "putki, toinen pää kiinni"
+        }
+      },
+      "units": {
+        "L": "m",
+        "f": "Hz"
+      },
+      "measure": [
+        {
+          "key": "A",
+          "label": "A (mm)"
+        },
+        {
+          "key": "solmut",
+          "label": "solmuja"
+        },
+        {
+          "key": "kuvut",
+          "label": "kupuja"
+        }
+      ],
+      "min": 3
+    },
+    {
+      "id": "koe-3",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 3: sama putki molemmista päistä avoimena",
+      "optional": true,
+      "intro": "Avaa putken suljettu pää. Valitse molemmista päistä avoin putki, jonka pituus on edelleen $0{,}85\\,\\text{m}$. Etsi kaksi alinta taajuutta, joilla poikkeama on huipussaan. Vertaa niitä kokeen 2 taajuuksiin.",
+      "initial": {
+        "tila": "avoin",
+        "L": 0.85,
+        "f": 50
+      },
+      "locked": [
+        "tila",
+        "L"
+      ],
+      "vary": "f",
+      "names": {
+        "tila": "tilanne",
+        "L": "putken pituus",
+        "f": "taajuus"
+      },
+      "values": {
+        "tila": {
+          "avoin": "putki, molemmat päät auki"
+        }
+      },
+      "units": {
+        "L": "m",
+        "f": "Hz"
+      },
+      "measure": [
+        {
+          "key": "A",
+          "label": "A (mm)"
+        },
+        {
+          "key": "solmut",
+          "label": "solmuja"
+        },
+        {
+          "key": "kuvut",
+          "label": "kupuja"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös: millä taajuuksilla seisova aalto syntyy?",
+      "after": [
+        "koe-1",
+        "koe-2"
+      ],
+      "prompt": "Kirjoita taulukoidesi perusteella, millä taajuuksilla kieleen ja suljettuun putkeen syntyi voimakas seisova aalto. Miten nämä taajuudet liittyvät alimpaan niistä? Miten kielen pituus ja aallonpituus liittyivät toisiinsa huippujen kohdalla? Miksi suljetun putken taajuudet ovat erilaiset kuin kielen?",
+      "model": "Kielessä ($L = 0{,}60\\,\\text{m}$, $v = 120\\,\\text{m/s}$) suurin poikkeama kasvoi noin $16{,}7\\,\\text{mm}$:iin vain taajuuksilla $100\\,\\text{Hz}$, $200\\,\\text{Hz}$ ja $300\\,\\text{Hz}$. Niiden välissä, esimerkiksi $150\\,\\text{Hz}$:llä, poikkeama oli vain noin $1{,}0\\,\\text{mm}$. Taajuudet ovat alimman taajuuden $100\\,\\text{Hz}$ kokonaislukukertoja. Huipuissa solmuja oli $2$, $3$ ja $4$. Aallonpituudet olivat $1{,}20\\,\\text{m}$, $0{,}60\\,\\text{m}$ ja $0{,}40\\,\\text{m}$. Kielelle mahtui siis yksi, kaksi tai kolme puolikasta aallonpituutta. Suljetussa putkessa ($L = 0{,}85\\,\\text{m}$) huiput olivat $100\\,\\text{Hz}$:llä, $300\\,\\text{Hz}$:llä ja $500\\,\\text{Hz}$:llä. Taajuuksilla $200\\,\\text{Hz}$ ja $400\\,\\text{Hz}$ poikkeama oli vain noin $1{,}0\\,\\text{mm}$. Suljetussa päässä oli aina solmu ja avoimessa päässä kupu. Putkeen mahtui siis vain pariton määrä aallonpituuden neljänneksiä. Arvot ovat mallin laskemia.",
+      "criteria": [
+        "Nimesin huipputaajuudet kummastakin kokeesta lukuina.",
+        "Totesin, että kielen huiput ovat alimman taajuuden kokonaislukukertoja ja suljetun putken huiput vain parittomia kertoja.",
+        "Kytkin huiput siihen, että kieleen mahtuu kokonainen määrä puolikkaita aallonpituuksia.",
+        "Selitin suljetun putken eron sillä, että suljetussa päässä on solmu ja avoimessa päässä kupu.",
+        "Kutsuin lukuja mallin arvoiksi."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Palaa ennusteisiisi",
+      "optional": true,
+      "prompt": "Vertaa ennusteitasi mallin arvoihin ja kaavoihin $f_n = n \\cdot \\tfrac{v}{2L}$ ja $f_n = n \\cdot \\tfrac{v}{4L}$. Palaa sitten hyppynaruun. Miksi naru asettui rauhalliseksi kaareksi vain tietyillä tahdeilla? Mitä tapahtuisi tahdeille, jos narua lyhennettäisiin?",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2"
+      ]
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe",
+      "optional": true,
+      "prompt": "Opiskelija laskee yläpäästään suljetun urkupillin perustaajuuden. Pillin pituus on $0{,}85\\,\\text{m}$ ja äänen nopeus $340\\,\\text{m/s}$:\n\n$$f_1 = \\frac{v}{2L} = \\frac{340\\,\\text{m/s}}{2 \\cdot 0{,}85\\,\\text{m}} = 200\\,\\text{Hz}$$\n\nMissä on virhe?",
+      "choices": [
+        {
+          "text": "Suljetussa päässä on solmu ja avoimessa kupu, joten $L = \\tfrac{\\lambda}{4}$ ja $f_1 = \\tfrac{v}{4L} = 100\\,\\text{Hz}$.",
+          "correct": true,
+          "feedback": "Oikein. Kaava $\\tfrac{v}{2L}$ pätee, kun kummassakin päässä on samanlainen ehto, solmu tai kupu. Suljetun pillin perustaajuudella pilliin mahtuu vain neljännes aallonpituutta. Siksi $\\lambda_1 = 4L = 3{,}4\\,\\text{m}$ ja $f_1 = 100\\,\\text{Hz}$."
+        },
+        {
+          "text": "Äänen nopeus pitää kertoa kahdella, koska ääni kulkee pillin edestakaisin, ja $f_1 = 400\\,\\text{Hz}$.",
+          "feedback": "Äänen nopeus ilmassa ei riipu siitä, mihin suuntaan ääni kulkee. Edestakainen kulku näkyy jo siinä, miten pituus ja aallonpituus liittyvät toisiinsa. Suljetussa pillissä se johtaa ehtoon $L = \\tfrac{\\lambda}{4}$, jolloin taajuus on pienempi, $100\\,\\text{Hz}$."
+        },
+        {
+          "text": "Laskussa ei ole virhettä, koska pillin suljettu pää ei vaikuta ominaistaajuuksiin.",
+          "feedback": "Pillin pää ratkaisee, missä on solmu ja missä kupu. Suljetussa päässä ilma ei pääse liikkumaan, joten siellä on solmu. Perustaajuudella pilliin mahtuu silloin vain neljännes aallonpituutta. Siksi $f_1 = \\tfrac{v}{4L} = 100\\,\\text{Hz}$."
+        },
+        {
+          "text": "Pillin pituus pitää ensin muuttaa senttimetreiksi, jolloin tulos on hertseinä oikein.",
+          "feedback": "Pituus metreinä ja nopeus metreinä sekunnissa antavat suoraan hertsit, joten muunnosta ei tarvita. Virhe on kaavassa. Suljetun pillin perustaajuus on $\\tfrac{v}{4L} = 100\\,\\text{Hz}$, koska suljetussa päässä on solmu ja avoimessa kupu."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Sovella uuteen tilanteeseen",
+      "prompt": "Didgeridoo on pitkä puuputki. Soittaja puhaltaa putkeen huulet putken suuta vasten. Huulet sulkevat putken tämän pään, joten soitin toimii suunnilleen toisesta päästä suljettuna putkena. Putken pituus on $1{,}50\\,\\text{m}$. Mikä on putken toiseksi matalin ominaistaajuus? Käytä äänen nopeutena ilmassa $340\\,\\text{m/s}$. Vastaa hertseinä.",
+      "answer": 170,
+      "unit": "Hz",
+      "tolerance": 0.02,
+      "hints": [
+        "Missä putken päässä on solmu ja missä kupu? Kuinka suuri osa aallonpituudesta mahtuu putkeen perustaajuudella?",
+        "Suljetun putken ominaistaajuudet ovat $f_n = n \\cdot \\tfrac{v}{4L}$. Luku $n$ voi olla vain pariton: $1, 3, 5, \\ldots$",
+        "Perustaajuus on $f_1 = \\tfrac{340\\,\\text{m/s}}{4 \\cdot 1{,}50\\,\\text{m}} = 56{,}7\\,\\text{Hz}$. Mikä on seuraava sallittu $n$?"
+      ],
+      "mistakes": [
+        {
+          "value": 113,
+          "feedback": "Laskit joko avoimen putken perustaajuuden $\\tfrac{v}{2L}$ tai kaksinkertaisen perustaajuuden $2f_1$. Suljetussa putkessa ei ole parillisia ominaistaajuuksia. Perustaajuuden $56{,}7\\,\\text{Hz}$ jälkeen seuraava on $3f_1$."
+        },
+        {
+          "value": 227,
+          "feedback": "Tämä on molemmista päistä avoimen putken toinen ominaistaajuus $2 \\cdot \\tfrac{v}{2L}$. Huulet sulkevat putken toisen pään. Siellä on silloin solmu, ja perustaajuus on $\\tfrac{v}{4L}$."
+        },
+        {
+          "value": 56.7,
+          "feedback": "Tämä on putken perustaajuus eli matalin ominaistaajuus. Tehtävässä kysytään toiseksi matalinta. Suljetulla putkella se on kolminkertainen perustaajuuteen verrattuna."
+        }
+      ],
+      "solution": "**Annettu:** toisesta päästä suljettu putki, jonka pituus on $L = 1{,}50\\,\\text{m}$. Äänen nopeus ilmassa on $v = 340\\,\\text{m/s}$.\n\n**Kysytty:** toiseksi matalin ominaistaajuus hertseinä\n\n**Periaate:** Huulet sulkevat putken pään, joten siellä ilma ei pääse liikkumaan. Siellä on siirtymän solmu. Avoimessa päässä on kupu. Putkeen mahtuu siksi vain pariton määrä aallonpituuden neljänneksiä. Ominaistaajuudet ovat perustaajuuden parittomia kertoja. Toiseksi matalin ominaistaajuus vastaa lukua $n = 3$.\n\n**Kaava:** $f_n = n \\cdot \\dfrac{v}{4L}$, kun $n = 1, 3, 5, \\ldots$ Luvulla $n = 3$ saadaan $f_3 = \\dfrac{3v}{4L}$.\n\n**Muunnokset:** Niitä ei tarvita. Pituus on metreinä ja nopeus metreinä sekunnissa.\n\n**Sijoitus:** $f_3 = \\dfrac{3 \\cdot 340\\,\\text{m/s}}{4 \\cdot 1{,}50\\,\\text{m}} = \\dfrac{1020\\,\\text{m/s}}{6{,}00\\,\\text{m}} = 170\\,\\text{Hz}$\n\n**Vastaus:** $170\\,\\text{Hz}$. Vastauksessa on kolme merkitsevää numeroa, koska putken pituudessa $1{,}50\\,\\text{m}$ ja äänen nopeudessa on kolme numeroa.\n\n**Järkevyys:** Perustaajuus on $\\tfrac{340\\,\\text{m/s}}{6{,}00\\,\\text{m}} = 56{,}7\\,\\text{Hz}$. Se sopii didgeridoon matalaan, huminamaiseen ääneen, ja $3 \\cdot 56{,}7\\,\\text{Hz} = 170\\,\\text{Hz}$. Tällä taajuudella putkeen mahtuu kolme neljännestä aallonpituudesta: $\\lambda = \\tfrac{340\\,\\text{m/s}}{170\\,\\text{Hz}} = 2{,}00\\,\\text{m}$ ja $\\tfrac{3}{4} \\cdot 2{,}00\\,\\text{m} = 1{,}50\\,\\text{m}$."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Harjoittele kolmella tasolla. Tason 1 tehtävissä käytetään yhtä kaavaa. Tason 2 tehtävissä yhdistetään kaksi vaihetta tai luetaan kuvaa. Taso 3 vaatii päättelyä ominaistaajuuksien säännöistä."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Käsite",
+      "prompt": "Kitaran kieli värähtelee perustaajuudellaan. Mikä kuvaus kielestä on oikea?",
+      "choices": [
+        {
+          "text": "Kielen pituus on puolet aallonpituudesta, ja kielen keskikohta on kupu.",
+          "correct": true,
+          "feedback": "Oikein. Kummassakin kiinnitetyssä päässä on solmu. Perustaajuudella niiden väliin mahtuu yksi kupu. Solmusta solmuun on $\\tfrac{\\lambda}{2}$, joten $\\lambda_1 = 2L$."
+        },
+        {
+          "text": "Kielen pituus on yksi aallonpituus, ja kielen keskikohta on solmu.",
+          "feedback": "Tämä kuvaa kielen toista ominaistaajuutta. Silloin kielessä on kaksi silmukkaa ja keskellä solmu. Perustaajuudella silmukoita on yksi, joten kielen pituus on vain puolet aallonpituudesta."
+        },
+        {
+          "text": "Kielen pituus on puolet aallonpituudesta, ja kielen päät ovat kuvut.",
+          "feedback": "Kiinnitetyt päät eivät pääse liikkumaan, joten niissä on aina solmu. Kupu on paikka, jossa liike on suurin. Perustaajuudella se on kielen keskellä."
+        },
+        {
+          "text": "Kielen pituus on neljännes aallonpituudesta, ja toinen pää on kupu.",
+          "feedback": "Neljännes aallonpituutta sopii toisesta päästä suljettuun putkeen, jonka avoimessa päässä on kupu. Kitaran kielen kumpikin pää on kiinni ja siis solmu. Kielen pituus on siksi puolikas aallonpituus."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Aallonpituus suljetussa putkessa",
+      "prompt": "Toisesta päästä suljetun putken pituus on $0{,}60\\,\\text{m}$. Putken ilmapatsas värähtelee ominaistaajuudella $f_3 = 3f_1$. Mikä on ääniaallon aallonpituus? Vastaa metreinä.",
+      "answer": 0.8,
+      "unit": "m",
+      "tolerance": 0.02,
+      "hints": [
+        "Missä putken päässä on solmu ja missä kupu? Kuinka monta neljännestä aallonpituutta mahtuu putkeen, kun $n = 3$?",
+        "Suljetussa putkessa $L = n \\cdot \\tfrac{\\lambda_n}{4}$, joten $\\lambda_3 = \\tfrac{4L}{3}$.",
+        "$\\lambda_3 = \\tfrac{4 \\cdot 0{,}60\\,\\text{m}}{3}$."
+      ],
+      "mistakes": [
+        {
+          "value": 0.4,
+          "feedback": "Käytit kielen ja avoimen putken sääntöä $\\lambda_n = \\tfrac{2L}{n}$. Suljetussa putkessa toisessa päässä on solmu ja toisessa kupu. Putkeen mahtuu siksi kolme *neljännestä* aallonpituudesta: $\\lambda_3 = \\tfrac{4L}{3}$."
+        },
+        {
+          "value": 2.4,
+          "feedback": "Pituus $4L = 2{,}4\\,\\text{m}$ on perustaajuuden aallonpituus. Taajuudella $3f_1$ aallonpituus on kolmasosa siitä, koska äänen nopeus on sama."
+        }
+      ],
+      "solution": "**Annettu:** toisesta päästä suljettu putki, $L = 0{,}60\\,\\text{m}$. Ominaistaajuus on $f_3 = 3f_1$ eli $n = 3$.\n\n**Kysytty:** aallonpituus $\\lambda_3$ metreinä\n\n**Periaate:** Suljetussa päässä ilma ei pääse liikkumaan, joten siellä on siirtymän solmu. Avoimessa päässä on kupu. Solmusta kupuun on neljännes aallonpituutta. Ominaistaajuudella $f_n$ putkeen mahtuu siis $n$ neljännestä, ja $n = 3$ tarkoittaa kolmea neljännestä.\n\n**Kaava:** $L = n \\cdot \\dfrac{\\lambda_n}{4}$, josta $\\lambda_n = \\dfrac{4L}{n}$. Luvulla $n = 3$ saadaan $\\lambda_3 = \\dfrac{4L}{3}$.\n\n**Muunnokset:** Niitä ei tarvita. Pituus on metreinä.\n\n**Sijoitus:** $\\lambda_3 = \\dfrac{4 \\cdot 0{,}60\\,\\text{m}}{3} = \\dfrac{2{,}40\\,\\text{m}}{3} = 0{,}80\\,\\text{m}$\n\n**Vastaus:** $0{,}80\\,\\text{m}$. Vastauksessa on kaksi merkitsevää numeroa, koska putken pituudessa $0{,}60\\,\\text{m}$ on kaksi numeroa.\n\n**Järkevyys:** Putkessa on solmu suljetussa päässä ja toinen solmu $\\tfrac{\\lambda}{2} = 0{,}40\\,\\text{m}$ päässä siitä. Siitä solmusta on vielä $\\tfrac{\\lambda}{4} = 0{,}20\\,\\text{m}$ kupuun avoimessa päässä: $0{,}40\\,\\text{m} + 0{,}20\\,\\text{m} = 0{,}60\\,\\text{m}$. Se on putken pituus. Perustaajuuden aallonpituus olisi $4L = 2{,}4\\,\\text{m}$, kolme kertaa pidempi."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Selitä: sävelkorkeus",
+      "optional": true,
+      "prompt": "Selitä seisovan aallon avulla, miksi kitaran sävel nousee, kun kieli painetaan otelautaa vasten. Selitä myös, miksi sävel nousee, kun kieltä kiristetään.",
+      "criteria": [
+        "Sanon, että kielen kiinnitetyt päät ovat solmuja ja että perustaajuudella kielen pituus on puoli aallonpituutta.",
+        "Selitän, että painettaessa värähtelevä osa lyhenee. Silloin aallonpituus lyhenee ja taajuus kasvaa, koska $v = f\\lambda$ pysyy samana.",
+        "Selitän, että kiristäminen kasvattaa aallon nopeutta $v$. Silloin samalla aallonpituudella taajuus kasvaa.",
+        "Käytän kaavaa $f_1 = \\tfrac{v}{2L}$ tai sanallista vastinetta perusteluna."
+      ],
+      "model": "Kitaran kielen kumpikin pää on kiinni, joten päät ovat solmuja. Perustaajuudella kielen värähtelevän osan pituus on puolet aallonpituudesta: $\\lambda_1 = 2L$. Kun kieli painetaan otelautaa vasten, värähtelevä osa lyhenee, joten myös aallonpituus lyhenee. Aallon nopeus kielessä ei muutu. Yhtälön $v = f\\lambda$ mukaan taajuus siis kasvaa: $f_1 = \\tfrac{v}{2L}$ on kääntäen verrannollinen pituuteen. Kun kieltä kiristetään, aallonpituus pysyy samana, mutta aalto etenee kireässä kielessä nopeammin. Suurempi $v$ samalla aallonpituudella tarkoittaa suurempaa taajuutta. Kuultava sävel nousee kummassakin tapauksessa, koska sävelkorkeus määräytyy perustaajuudesta."
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Lopuksi kaksi nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+    }
+  ]
+}

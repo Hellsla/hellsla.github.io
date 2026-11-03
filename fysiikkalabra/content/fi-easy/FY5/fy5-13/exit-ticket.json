@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Kahdesta päästä kiinnitetty kieli värähtelee kolmannella ominaistaajuudellaan. Montako solmua ja montako kupua kielessä on, kun päät lasketaan mukaan?",
+    "a": "Kielelle mahtuu kolme puolikasta aallonpituutta. Siinä on siis kolme kupua ja neljä solmua: kaksi päissä ja kaksi niiden välissä."
+  },
+  {
+    "q": "Huilu on molemmista päistä avoin putki. Klarinetti on suunnilleen toisesta päästä suljettu putki. Soittimet ovat yhtä pitkiä. Kumman perustaajuus on matalampi, ja kuinka moninkertainen on toisen perustaajuus?",
+    "a": "Klarinetin. Suljetun putken perustaajuus on $\\tfrac{v}{4L}$ ja avoimen putken $\\tfrac{v}{2L}$. Samanpituisen huilun perustaajuus on siis kaksinkertainen eli oktaavia korkeampi."
+  }
+]

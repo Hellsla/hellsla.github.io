@@ -1,0 +1,10 @@
+[
+  {
+    "q": "An upward pulse is reflected from the end of a rope that is tied firmly to a wall. In which direction does the displacement of the reflected pulse point?",
+    "a": "Downwards: from a fixed end the pulse is reflected inverted, because the end does not move and the wall pulls the rope down."
+  },
+  {
+    "q": "From which line are the angle of incidence and the angle of reflection measured, and what is the angle of reflection when the ray makes an angle of $25^\\circ$ with the surface of the wall?",
+    "a": "Both are measured from the normal of the surface. The angle of incidence is $90^\\circ - 25^\\circ = 65^\\circ$, so the angle of reflection is also $65^\\circ$."
+  }
+]

@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy5-14-L1-01",
+      "level": 1,
+      "text": "A student stands $86.0\\,\\text{m}$ from the wall of a school and claps two wooden blocks together. The timing app of a phone measures that the echo returns $0.505\\,\\text{s}$ after the clap. What is the speed of sound according to the measurement?",
+      "answer": 341,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-14-L1-02",
+      "level": 1,
+      "text": "A bat emits ultrasound for echolocation with a frequency of $45.0\\,\\text{kHz}$. What is the wavelength of the sound in air when the speed of sound is $340\\,\\text{m/s}$? Give the answer in millimetres.",
+      "answer": 7.56,
+      "unit": "mm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-14-L1-03",
+      "level": 1,
+      "text": "The fundamental frequency of the D string of a cello is $147\\,\\text{Hz}$. The string vibrates at the frequencies of the harmonic series at the same time. What is the frequency of the fourth member of the series, that is, the third overtone?",
+      "answer": 588,
+      "unit": "Hz",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-14-L1-04",
+      "level": 1,
+      "text": "An ice-cream van drives straight away from a listener at $15.0\\,\\text{m/s}$ and plays a melody, one note of which is $415\\,\\text{Hz}$. What frequency of this note does a listener at rest hear? The air is calm, and the speed of sound is $340\\,\\text{m/s}$.",
+      "answer": 397,
+      "unit": "Hz",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-14-L1-05",
+      "level": 1,
+      "text": "Classify the sounds as infrasound, audible sound or ultrasound: a) the lowest part of a thunder rumble, $12\\,\\text{Hz}$, b) a reference tuning note, $440\\,\\text{Hz}$, c) a dog whistle, $35\\,\\text{kHz}$, d) the sound of ultrasound imaging, $2.5\\,\\text{MHz}$. Justify using the limits.",
+      "answer": "a) infrasound; b) audible sound; c) ultrasound; d) ultrasound",
+      "unit": "",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy5-14-L2-01",
+      "level": 2,
+      "text": "A piano tuner strikes a tuning fork with a frequency of $262\\,\\text{Hz}$ and at the same time plays a piano string that sounds slightly lower than the tuning fork. He counts $15$ loud moments, that is, beats, in $5.0\\,\\text{s}$. What is the frequency of the string?",
+      "answer": 259,
+      "unit": "Hz",
+      "tolerance": 0.003
+    },
+    {
+      "id": "fy5-14-L2-02",
+      "level": 2,
+      "text": "A loudspeaker emits sound in air with a wavelength of $0.850\\,\\text{m}$. The sound passes from the surface of a lake into the water. What is the wavelength of the sound in water? The speed of sound in air is $340\\,\\text{m/s}$ and in water $1480\\,\\text{m/s}$.",
+      "answer": 3.7,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-14-L2-03",
+      "level": 2,
+      "text": "A driver drives at $90.0\\,\\text{km/h}$ straight towards a junction where a stationary warning siren sounds at $650\\,\\text{Hz}$. What frequency does the driver hear? The air is calm, and the speed of sound is $340\\,\\text{m/s}$.",
+      "answer": 698,
+      "unit": "Hz",
+      "tolerance": 0.003
+    },
+    {
+      "id": "fy5-14-L2-04",
+      "level": 2,
+      "text": "The engine of a racing car sounds at $425\\,\\text{Hz}$ in the pit at rest. When the car drives at the same engine speed straight away from a spectator standing on the extension of the straight, the spectator hears the frequency $398\\,\\text{Hz}$. How fast is the car moving? The air is calm, and the speed of sound is $340\\,\\text{m/s}$.",
+      "answer": 23,
+      "unit": "m/s",
+      "tolerance": 0.03
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy5-14-L3-01",
+      "level": 3,
+      "text": "A listener stands right next to a straight road and measures with a phone app the frequency of the siren of a passing ambulance: $476\\,\\text{Hz}$ as the car approaches and $404\\,\\text{Hz}$ as it moves away. The speed of the ambulance is constant, but the siren's own frequency is not known. How fast is the ambulance moving? The air is calm, and the speed of sound is $340\\,\\text{m/s}$.",
+      "answer": 28,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-14-L3-02",
+      "level": 3,
+      "text": "A guitarist plays the A string at the same time as a $440\\,\\text{Hz}$ reference note and hears a beat frequency of $4\\,\\text{Hz}$, that is, four loud moments every second. When she tightens the string slightly, the beat frequency grows to $6\\,\\text{Hz}$. What was the frequency of the string before tightening? Justify why the answer is unique.",
+      "answer": 444,
+      "unit": "Hz",
+      "tolerance": 0.002
+    },
+    {
+      "id": "fy5-14-L3-03",
+      "level": 3,
+      "text": "A student measures the FFT spectrum of a low note of a clarinet. The spectrum has clear peaks at the frequencies $147\\,\\text{Hz}$, $441\\,\\text{Hz}$, $735\\,\\text{Hz}$ and $1029\\,\\text{Hz}$, and almost nothing in between. a) What is the fundamental frequency of the note? b) Which members of the harmonic series are missing from the spectrum? c) What does this tell about the standing wave of the air column of the clarinet?",
+      "answer": "Fundamental frequency $147\\,\\text{Hz}$; the even multiples ($294\\,\\text{Hz}$, $588\\,\\text{Hz}$, $882\\,\\text{Hz}$) are missing, so the air column vibrates like a tube closed at one end.",
+      "unit": "",
+      "tolerance": 0.02
+    }
+  ]
+}

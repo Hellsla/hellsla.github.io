@@ -1,0 +1,105 @@
+{
+  "level1": [
+    {
+      "id": "fy5-10-L1-01",
+      "level": 1,
+      "text": "Pitkän kierrejousen päätä heilutetaan sivuttain, ja jousessa etenee poikittainen aalto, jonka taajuus on $4{,}0\\,\\text{Hz}$ ja aallonpituus $0{,}75\\,\\text{m}$. Kuinka suuri on aallon nopeus?",
+      "answer": 3.0,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-10-L1-02",
+      "level": 1,
+      "text": "Kaiutin soittaa sävelen, jonka taajuus on $440\\,\\text{Hz}$. Ääni etenee huoneen ilmassa nopeudella $343\\,\\text{m/s}$. Kuinka pitkä on äänen aallonpituus?",
+      "answer": 0.78,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-10-L1-03",
+      "level": 1,
+      "text": "Kireässä narussa aalto etenee nopeudella $6{,}0\\,\\text{m/s}$, ja aallon harjojen väli on $1{,}5\\,\\text{m}$. Millä taajuudella narun päätä heilutetaan?",
+      "answer": 4.0,
+      "unit": "Hz",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-10-L1-04",
+      "level": 1,
+      "text": "Uimahallin aaltoaltaan kone tekee aaltoja, joiden jaksonaika on $2{,}5\\,\\text{s}$ ja aallonpituus $4{,}0\\,\\text{m}$. Kuinka suurella nopeudella aallot etenevät?",
+      "answer": 1.6,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-10-L1-05",
+      "level": 1,
+      "text": "Narussa aalto etenee nopeudella $4{,}8\\,\\text{m/s}$, ja sen aallonpituus on $1{,}2\\,\\text{m}$. Kuinka suuri on aallon jaksonaika?",
+      "answer": 0.25,
+      "unit": "s",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy5-10-L2-01",
+      "level": 2,
+      "text": "Kuvaajassa on kireän narun yhden kohdan poikkeama ajan funktiona. Narun päätä heilutetaan tasaisesti. Narun valokuvasta on mitattu, että peräkkäisten harjojen väli on $1{,}0\\,\\text{m}$. Lue tarvittava arvo kuvaajasta. Kuinka suuri on aallon nopeus?",
+      "figure": "fy5-10/yt-kuvaaja",
+      "answer": 2.5,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-10-L2-02",
+      "level": 2,
+      "text": "Opiskelija heiluttaa pitkän hyppynarun päätä tasaisesti ja laskee, että käsi tekee $18$ täyttä heilahdusta $12{,}0$ sekunnissa. Narun harjojen väli on $1{,}40\\,\\text{m}$. Kuinka suuri on aallon nopeus narussa?",
+      "answer": 2.1,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-10-L2-03",
+      "level": 2,
+      "text": "Altaan reunalla olevan kaiuttimen ääni etenee ilmassa nopeudella $343\\,\\text{m/s}$, ja sen aallonpituus ilmassa on $0{,}750\\,\\text{m}$. Ääni jatkaa veteen, jossa se etenee nopeudella $1480\\,\\text{m/s}$. Kuinka pitkä on äänen aallonpituus vedessä?",
+      "answer": 3.236152,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-10-L2-04",
+      "level": 2,
+      "text": "Maanjäristyksen pitkittäinen aalto etenee kallioperässä. Seismometri mittaa aallon taajuudeksi $0{,}50\\,\\text{Hz}$, ja aallonpituus on $12\\,\\text{km}$. Kuinka suuri on aallon nopeus metreinä sekunnissa?",
+      "answer": 6000,
+      "unit": "m/s",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy5-10-L3-01",
+      "level": 3,
+      "text": "Narusta otetaan kaksi valokuvaa $0{,}15\\,\\text{s}$:n välein. Ensimmäisessä kuvassa eräs harja on kohdassa $x = 0{,}60\\,\\text{m}$. Toisessa kuvassa se on kohdassa $x = 1{,}05\\,\\text{m}$. Harja ei ole kuvien välillä ehtinyt kulkea yhtä aallonpituutta. Kummassakin kuvassa peräkkäisten harjojen väli on $1{,}20\\,\\text{m}$. Millä taajuudella narun päätä heilutetaan? Perustele myös, miksi harjan siirtymä ei ole narun aineen siirtymä.",
+      "answer": 2.5,
+      "unit": "Hz",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-10-L3-02",
+      "level": 3,
+      "text": "Pitkän rautatiekiskon toiseen päähän lyödään vasaralla. Kiskon toisessa päässä oleva kuulija kuulee kaksi pamausta. Ensin hän kuulee kiskoa pitkin tulleen äänen ja $0{,}50\\,\\text{s}$ myöhemmin ilman kautta tulleen äänen. Ääni etenee teräksessä nopeudella $5100\\,\\text{m/s}$ ja ilmassa nopeudella $340\\,\\text{m/s}$. Kuinka pitkä kisko on? Perustele, miksi sama vasaran isku synnyttää kaksi eri aikaan saapuvaa ääntä.",
+      "answer": 182.142857,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-10-L3-03",
+      "level": 3,
+      "text": "Stadionin katsomossa kiertää aalto. Jokainen katsoja nousee seisomaan $0{,}050\\,\\text{s}$ myöhemmin kuin hänen vieressään istuva. Sitten hän istuutuu takaisin. Vierekkäisten istuinten väli on $0{,}55\\,\\text{m}$, ja katsomon kiertävän rivin pituus on $440\\,\\text{m}$. Kuinka kauan kestää, että aalto kiertää katsomon kerran ympäri? Perustele, miksi aalto etenee, vaikka yksikään katsoja ei vaihda paikkaa.",
+      "answer": 40,
+      "unit": "s",
+      "tolerance": 0.02
+    }
+  ]
+}

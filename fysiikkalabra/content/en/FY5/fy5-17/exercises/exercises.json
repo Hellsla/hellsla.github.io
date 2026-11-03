@@ -1,0 +1,105 @@
+{
+  "level1": [
+    {
+      "id": "fy5-17-L1-01",
+      "level": 1,
+      "text": "In monitoring a pregnancy an ultrasound machine sends a pulse from the skin of the abdomen. The echo reflected from the surface of the fetus's head returns to the probe after $91.0\\,\\mu\\text{s}$. Sound travels in tissue at a speed of $1540\\,\\text{m/s}$. How deep below the surface of the skin is the head of the fetus? Give the answer in centimetres.",
+      "answer": 7.01,
+      "unit": "cm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-17-L1-02",
+      "level": 1,
+      "text": "The arteries of the neck are imaged with a probe whose frequency is $7.50\\,\\text{MHz}$. Sound travels in tissue at a speed of $1540\\,\\text{m/s}$. What is the wavelength of the ultrasound in tissue? Give the answer in millimetres.",
+      "answer": 0.205,
+      "unit": "mm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-17-L1-03",
+      "level": 1,
+      "text": "The echo sounder of a boat sends a sound pulse straight down into a lake. The echo from the bottom returns after $32.0\\,\\text{ms}$. Sound travels in lake water at a speed of $1480\\,\\text{m/s}$. How deep is the lake at this spot? Give the answer in metres.",
+      "answer": 23.7,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-17-L1-04",
+      "level": 1,
+      "text": "A bat detects a moth: the echo returns $15\\,\\text{ms}$ after the call. Sound travels in air at a speed of $343\\,\\text{m/s}$. How far away is the moth? Assume that the bat and the moth are stationary during this time. Give the answer in metres.",
+      "answer": 2.6,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-17-L1-05",
+      "level": 1,
+      "text": "A tsunami arrives at a continental shelf where the sea is $50\\,\\text{m}$ deep. The wavelength is much greater than the depth. What is the speed of the tsunami? Give the answer in metres per second.",
+      "answer": 22,
+      "unit": "m/s",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy5-17-L2-01",
+      "level": 2,
+      "text": "The graph shows the seismogram of a seismograph station from an earthquake. The time is counted from the start of the recording, not from the moment of the earthquake. The speed of the P wave is $7.0\\,\\text{km/s}$ and that of the S wave $4.0\\,\\text{km/s}$. How far from the station did the earthquake occur? Give the answer in kilometres.",
+      "answer": 168,
+      "unit": "km",
+      "tolerance": 0.02,
+      "figure": "fy5-17/seismogrammi-ex"
+    },
+    {
+      "id": "fy5-17-L2-02",
+      "level": 2,
+      "text": "In an image of the thyroid gland we want to distinguish structures that are $0.300\\,\\text{mm}$ apart. Assume that two boundaries can be distinguished when the distance between them is at least two wavelengths. Sound travels in tissue at a speed of $1540\\,\\text{m/s}$. What is the lowest frequency with which this succeeds? Give the answer in megahertz.",
+      "answer": 10.3,
+      "unit": "MHz",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-17-L2-03",
+      "level": 2,
+      "text": "An ultrasound machine sends a new pulse only when the echo of the previous pulse from the deepest point being imaged has returned. The abdomen is imaged to a depth of $20\\,\\text{cm}$, and sound travels in tissue at a speed of $1540\\,\\text{m/s}$. What is the highest rate at which pulses are sent? Give the answer in kilohertz.",
+      "answer": 3.9,
+      "unit": "kHz",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-17-L2-04",
+      "level": 2,
+      "text": "A seismograph station detects that the S wave arrives $14.0\\,\\text{s}$ after the P wave. The speed of the P wave is $6.0\\,\\text{km/s}$ and that of the S wave $3.5\\,\\text{km/s}$. How many seconds before the arrival of the P wave did the earthquake occur? Give the answer in seconds.",
+      "answer": 20,
+      "unit": "s",
+      "tolerance": 0.03
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy5-17-L3-01",
+      "level": 3,
+      "text": "A bat flies straight towards the wall of a barn at a speed of $10\\,\\text{m/s}$ and makes a call. It hears the echo from the wall $40\\,\\text{ms}$ later. Sound travels in air at a speed of $343\\,\\text{m/s}$. How far from the wall was the bat when it made the call? Give the answer in metres.",
+      "answer": 7.06,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-17-L3-02",
+      "level": 3,
+      "text": "Under the skin there is a layer of fat $4.0\\,\\text{cm}$ thick, in which sound travels at a speed of $1450\\,\\text{m/s}$, and under it muscle, in which sound travels at a speed of $1580\\,\\text{m/s}$. An echo returns from the lower surface of the muscle layer $80.0\\,\\mu\\text{s}$ after the pulse is sent. How deep below the surface of the skin is the boundary really? Give the answer in centimetres.",
+      "answer": 5.96,
+      "unit": "cm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-17-L3-03",
+      "level": 3,
+      "text": "In an ocean whose depth is $4000\\,\\text{m}$ the wavelength of a tsunami is $200\\,\\text{km}$. The tsunami travels to a coast where the depth of the water is $10\\,\\text{m}$. The period of the wave stays the same all the way. What is the wavelength of the tsunami in the shallow water at the coast? Give the answer in kilometres.",
+      "answer": 10,
+      "unit": "km",
+      "tolerance": 0.02
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "fy5-10",
+  "course": "FY5",
+  "title": "Mechanical waves",
+  "goals": [
+    "LOPS FY5: the origin, propagation and reflection of mechanical waves",
+    "Skills: modelling wave phenomena",
+    "Clarification: transverse and longitudinal waves, the fundamental equation of wave motion v = fλ; light is treated only in the module FY7"
+  ],
+  "prerequisites": [
+    "fy5-7"
+  ],
+  "glossary": [
+    "aaltoliike",
+    "aallonpituus",
+    "aallon nopeus",
+    "poikittainen aalto",
+    "pitkittäinen aalto"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

@@ -1,0 +1,468 @@
+{
+  "version": 1,
+  "contribution": "A wave meets a boundary: the law of reflection with angles measured from the normal, the reflection of a rope pulse from a fixed and a free end, and Huygens' principle, which explains reflection and diffraction at a slit and behind an obstacle.",
+  "learn": [
+    "apply the law of reflection, with angles measured from the normal of the surface.",
+    "describe how a pulse is reflected from the fixed and the free end of a rope.",
+    "use Huygens' principle to explain the reflection and the diffraction of a wave at a slit and behind an obstacle."
+  ],
+  "prior": [
+    "The wavelength $\\lambda$ is the distance between two successive wave crests (chapter *Mechanical wave motion*)",
+    "The speed, frequency and wavelength of a wave are related: $v = f\\lambda$ (chapter *Mechanical wave motion*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "On a stormy day waves roll in from the open sea towards a harbour in straight rows. The breakwater has only a narrow gap for ships, and the harbour basin behind the gap is wider than the gap. Still, the waves also rock boats that are moored at a quay in a corner of the basin, far to the side of the gap. The waves, on the other hand, bounce off the wall of the breakwater back out to sea.",
+      "question": "How does a wave behave when it meets a wall or a narrow gap?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Review: wavelength and frequency",
+      "prompt": "The wave maker of a ripple tank makes waves at a frequency of $10\\,\\text{Hz}$, and the waves travel at a speed of $0.20\\,\\text{m/s}$. The frequency of the wave maker is doubled, and the speed of the waves stays the same. What happens to the wavelength?",
+      "choices": [
+        {
+          "text": "The wavelength is halved.",
+          "correct": true,
+          "feedback": "Correct. When $v = f\\lambda$ and the speed stays the same, $\\lambda = \\tfrac{v}{f}$ is halved when $f$ doubles: from $2.0\\,\\text{cm}$ to $1.0\\,\\text{cm}$ (chapter *Mechanical wave motion*). You need the wavelength today, when the size of a wave is compared with the width of a slit."
+        },
+        {
+          "text": "The wavelength doubles.",
+          "feedback": "The frequency tells how many crests leave per second. When crests leave twice as often at the same speed, they are closer to each other: $\\lambda = \\tfrac{v}{f}$ decreases from $2.0\\,\\text{cm}$ to $1.0\\,\\text{cm}$ (chapter *Mechanical wave motion*)."
+        },
+        {
+          "text": "The wavelength stays the same, because the speed of the wave does not change.",
+          "feedback": "The speed does not change, but the equation $v = f\\lambda$ has two other quantities. If $f$ doubles and $v$ stays the same, $\\lambda$ must be halved: $\\lambda = \\tfrac{0.20\\,\\text{m/s}}{20\\,\\text{Hz}} = 1.0\\,\\text{cm}$."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: the angle from the wall",
+      "prompt": "Waves travel towards a straight wall so that the angle between the incoming ray and the surface of the wall is $30^\\circ$. In which direction do the reflected waves travel, when the angle is measured from the normal, the line perpendicular to the surface?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "The angle of reflection is $30^\\circ$ from the normal.",
+          "feedback": "The values of the model refute this. When the angle of incidence is set to $\\alpha = 60^\\circ$ from the normal, the angle between the ray and the surface is $30^\\circ$, and the simulation shows the angle of reflection $\\beta = 60^\\circ$. The given $30^\\circ$ was measured from the surface. The angle measured from the normal is $90^\\circ - 30^\\circ = 60^\\circ$."
+        },
+        {
+          "text": "The angle of reflection is $60^\\circ$ from the normal.",
+          "correct": true,
+          "feedback": "The values of the model support this. The angle of incidence from the normal is $90^\\circ - 30^\\circ = 60^\\circ$, and when $\\alpha = 60^\\circ$ is set in the simulation, the angle of reflection is $\\beta = 60^\\circ$. The reflected ray also makes an angle of $30^\\circ$ with the surface of the wall."
+        },
+        {
+          "text": "The angle of reflection is $120^\\circ$, because the wave turns back.",
+          "feedback": "The values of the model refute this: when $\\alpha = 60^\\circ$, the angle of reflection is $\\beta = 60^\\circ$. The angle of reflection is measured from the normal to the reflected ray, so it is always between $0^\\circ$ and $90^\\circ$. The turning back of the wave shows in that the reflected ray is on the other side of the normal."
+        },
+        {
+          "text": "The angle of reflection depends on the wavelength.",
+          "feedback": "The values of the model refute this: in the simulation the angle of reflection is $\\beta = 60^\\circ$ when $\\alpha = 60^\\circ$, at any wavelength. The wavelength changes the spacing of the crests but not the direction of travel, when the wall is straight and the speed of the wave is the same."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: the fixed end of a rope",
+      "prompt": "One end of a rope is tied firmly to a wall. You flick the other end of the rope quickly up and back, which makes an upward pulse in the rope. What kind of pulse returns from the wall?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-2",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "An upward pulse, like the one that left.",
+          "feedback": "The values of the model refute this for a fixed end: the displacement of the reflected pulse is $y_\\text{r} = -3.0\\,\\text{cm}$, downwards. An upward pulse returns only from a free end ($+3.0\\,\\text{cm}$). A fixed end does not move, and the wall pulls the rope down when the pulse pulls it up."
+        },
+        {
+          "text": "A downward pulse.",
+          "correct": true,
+          "feedback": "The values of the model support this: the displacement of a pulse reflected from a fixed end is $y_\\text{r} = -3.0\\,\\text{cm}$, from a free end $+3.0\\,\\text{cm}$. A fixed end stays in place, and the wall pulls the rope down with a force as great as the pulse pulls the fastening up. That is why the pulse is inverted."
+        },
+        {
+          "text": "No pulse returns, because the wall damps it.",
+          "feedback": "The values of the model refute this: an equally large pulse returns from a fixed end, $y_\\text{r} = -3.0\\,\\text{cm}$, but inverted. A rigid wall does not take up the energy of the pulse, because the end does not move and so no work is done on the wall."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-3",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 3: a narrower slit",
+      "prompt": "A plane wave with a wavelength of $2.0\\,\\text{cm}$ passes through a slit in an obstacle. The slit is narrowed from $8.0\\,\\text{cm}$ to $1.0\\,\\text{cm}$. How does the wave travelling behind the slit change?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-3",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "The wave still travels as a narrower straight band, because the slit limits it.",
+          "feedback": "The values of the model refute this: the spreading angle increases from $8.7^\\circ$ when $b = 8.0\\,\\text{cm}$ to $90^\\circ$ when $b = 1.0\\,\\text{cm}$. The slit does not limit the wave like a beam of light: the wavelets from the points at the slit spread sideways, and the narrower the slit, the more the wave spreads."
+        },
+        {
+          "text": "The wave spreads over a wider and wider area behind the slit.",
+          "correct": true,
+          "feedback": "The values of the model support this: the spreading angle is $8.7^\\circ$ when $b = 8.0\\,\\text{cm}$, $17.6^\\circ$ when $b = 4.0\\,\\text{cm}$, and $90^\\circ$, the whole area behind the slit, when $b = 1.0\\,\\text{cm}$. When the slit is clearly narrower than the wavelength ($b < \\lambda$), the points at the slit act like one source of wavelets. Already when $b \\approx \\lambda$, the spreading is large."
+        },
+        {
+          "text": "The slit does not affect the direction of the wave, only the amount of wave that gets through.",
+          "feedback": "The values of the model refute this: the spreading angle changes from $8.7^\\circ$ to $90^\\circ$ when the slit is narrowed. Less energy gets through a narrow slit, but the directions change too: the wave bends behind the edges of the slit."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Choose a situation: a rope pulse, waves and a wall, waves and a slit, or waves and an obstacle. In the basin situations you look at the water from above.",
+      "howto": "Choose *Situation*. In the rope situations *Start* sends a pulse that travels to the end of the rope and back; the readings show the displacement $y_\\text{r}$ of the reflected pulse once the pulse has left the end. In the basin situations the waves move all the time, and *Stop* freezes the picture. In the wall situation adjust the angle of incidence $\\alpha$: the crests of the incoming wave are drawn with blue lines and those of the reflected wave with green. In the slit and obstacle situations adjust the wavelength $\\lambda$ and the width $b$ of the slit or obstacle. Light areas are wave crests, dark ones troughs. *Show wavelets* draws the Huygens wavelets that start from the points of the wall or the slit. A slider affects only the situations in which its quantity is used. *Speed* changes only the pace of the animation.",
+      "model": "The rope is $5.0\\,\\text{m}$ long, the pulse travels at a speed of $2.0\\,\\text{m/s}$ without damping, and the pulse displacement $3.0\\,\\text{cm}$ is drawn enlarged. The fixed end does not move at all, and the ring at the free end slides without friction. The basin is $30\\,\\text{cm} \\cdot 20\\,\\text{cm}$ and the water is equally deep everywhere, so the speed of the wave does not change. The wall reflects the wave completely. In the slit and obstacle situations the wave reflected back from the obstacle is not drawn. The pace of the animation is slowed down, and the numbers are values calculated by the model.",
+      "calc": "Rope: the effect of the end is calculated with an imaginary mirror pulse that comes from behind the end towards the real one. At a fixed end the mirror pulse has the opposite sign, so the displacement of the end is always zero. At a free end it has the same sign, so the end swings for a moment to twice the displacement.\\n\\nWall: the incoming front reaches two points of the wall, a distance $d$ apart, at different moments. When the front reaches the latter, the radius of the wavelet that started from the former is $r = d \\sin\\alpha$. The reflected front touches the wavelet, so $\\sin\\beta = \\tfrac{r}{d}$.\\n\\nSlit and obstacle: wavelet sources are placed at the slit at intervals of at most $\\tfrac{\\lambda}{8}$, and the height of the water surface at each point is the sum of their wavelets. The spreading angle $\\theta$ is the angle from the straight-ahead direction to the direction in which the amplitude of the wave far from the slit has dropped to half. If the amplitude does not drop to half in any direction, $\\theta = 90^\\circ$. The obstacle is calculated as the difference between a plane wave and the wave of a slit as wide as the obstacle, and the point $P$ is $8.0\\,\\text{cm}$ behind the obstacle."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 1: angle of incidence and angle of reflection",
+      "intro": "Test prediction 1. The situation is waves and a wall. Change the angle of incidence $\\alpha$ and record the angle of reflection and the angle between the reflected ray and the surface at at least two angles of incidence. Also try the angle of incidence at which the ray makes an angle of $30^\\circ$ with the surface. Turn *Show wavelets* on and see where the envelope of the wavelets lies.",
+      "initial": {
+        "tila": "seina",
+        "lam": 2,
+        "alpha": 30
+      },
+      "locked": [
+        "tila",
+        "lam"
+      ],
+      "vary": "alpha",
+      "names": {
+        "tila": "situation",
+        "lam": "wavelength λ",
+        "alpha": "angle of incidence α"
+      },
+      "values": {
+        "tila": {
+          "seina": "waves and a wall"
+        }
+      },
+      "units": {
+        "lam": "cm",
+        "alpha": "°"
+      },
+      "measure": [
+        {
+          "key": "beta",
+          "label": "β (°)"
+        },
+        {
+          "key": "pinta",
+          "label": "angle from the surface (°)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 2: fixed and free end",
+      "intro": "Test prediction 2. Press *Start* and wait for the pulse to return. Record the displacement of the reflected pulse when the end is fixed. Then change the situation to the free end, press *Start* again and record again. Also watch what the end of the rope does as the pulse turns.",
+      "initial": {
+        "tila": "kiintea"
+      },
+      "locked": [],
+      "vary": "tila",
+      "names": {
+        "tila": "situation"
+      },
+      "values": {
+        "tila": {
+          "kiintea": "rope, fixed end",
+          "vapaa": "rope, free end"
+        }
+      },
+      "measure": [
+        {
+          "key": "yh",
+          "label": "y_r (cm)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "koe-3",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 3: width of the slit",
+      "intro": "Test prediction 3. The situation is waves and a slit, and the wavelength stays at $2.0\\,\\text{cm}$. Narrow the slit and record the spreading angle at at least two widths, for example $8.0\\,\\text{cm}$, $4.0\\,\\text{cm}$, $2.0\\,\\text{cm}$ and $1.0\\,\\text{cm}$. The dashed lines show the angle $\\theta$ within which the wave is strong.",
+      "initial": {
+        "tila": "rako",
+        "lam": 2,
+        "b": 8
+      },
+      "locked": [
+        "tila",
+        "lam"
+      ],
+      "vary": "b",
+      "names": {
+        "tila": "situation",
+        "lam": "wavelength λ",
+        "b": "slit width b"
+      },
+      "values": {
+        "tila": {
+          "rako": "waves and a slit"
+        }
+      },
+      "units": {
+        "lam": "cm",
+        "b": "cm"
+      },
+      "measure": [
+        {
+          "key": "suhde",
+          "label": "b/λ"
+        },
+        {
+          "key": "theta",
+          "label": "θ (°)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "koe-4",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 4: wavelength with the same slit",
+      "optional": true,
+      "intro": "The width of the slit stays at $3.0\\,\\text{cm}$. Change the wavelength and record the spreading angle at at least two wavelengths. Compare with the results of experiment 3: at which slit width and wavelength do you get the same angle?",
+      "initial": {
+        "tila": "rako",
+        "lam": 1,
+        "b": 3
+      },
+      "locked": [
+        "tila",
+        "b"
+      ],
+      "vary": "lam",
+      "names": {
+        "tila": "situation",
+        "lam": "wavelength λ",
+        "b": "slit width b"
+      },
+      "values": {
+        "tila": {
+          "rako": "waves and a slit"
+        }
+      },
+      "units": {
+        "lam": "cm",
+        "b": "cm"
+      },
+      "measure": [
+        {
+          "key": "suhde",
+          "label": "b/λ"
+        },
+        {
+          "key": "theta",
+          "label": "θ (°)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion: reflection and bending",
+      "after": [
+        "koe-1",
+        "koe-2",
+        "koe-3"
+      ],
+      "prompt": "Write on the basis of your tables: how does the angle of reflection depend on the angle of incidence when both are measured from the normal? How is a pulse reflected from a fixed and from a free end? How does the spreading of a wave behind a slit depend on the width of the slit?",
+      "model": "The angle of reflection was equal to the angle of incidence every time, for example $\\alpha = 30^\\circ$ and $\\beta = 30^\\circ$ as well as $\\alpha = 60^\\circ$ and $\\beta = 60^\\circ$. The angle measured from the surface was $90^\\circ - \\beta$, so the angle measured from the surface cannot be used as the angle of incidence. From the fixed end the pulse returned inverted, $y_\\text{r} = -3.0\\,\\text{cm}$, and from the free end not inverted, $+3.0\\,\\text{cm}$. When the wavelength was $2.0\\,\\text{cm}$, the spreading angle grew from $8.7^\\circ$ to $90^\\circ$ as the slit narrowed from $8.0\\,\\text{cm}$ to $1.0\\,\\text{cm}$: when the slit is clearly narrower than the wavelength ($b < \\lambda$), the wave spreads over the whole area behind the slit, and already when $b \\approx \\lambda$, the spreading is large. The values are calculated by the model.",
+      "criteria": [
+        "On the basis of the numbers I stated that the angle of reflection is equal to the angle of incidence when the angles are measured from the normal.",
+        "I distinguished the fixed and the free end: from a fixed end the pulse returns inverted, from a free end not inverted.",
+        "I stated that the spreading angle grows as the slit narrows, and I compared the width of the slit with the wavelength.",
+        "I mentioned that the numbers are values of the model."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Return to your predictions",
+      "optional": true,
+      "prompt": "Compare your predictions with the values of the simulation and with Huygens' principle. Then return to the opening question: why do the waves reach the corners of the harbour through the gap in the breakwater? What would you need to know about the wavelength and the width of the gap to predict how much the waves spread?",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2",
+        "ennuste-3"
+      ]
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the error",
+      "prompt": "A student argues: “The wavelength in a ripple tank is $2.0\\,\\text{cm}$. When the width of the slit is $10\\,\\text{cm}$, the wave bends strongly behind the slit, because a lot of wave gets through a wide slit. If the slit is narrowed to $1.0\\,\\text{cm}$, little wave gets through, so it hardly bends.” What is wrong in the argument?",
+      "choices": [
+        {
+          "text": "Bending depends on the ratio $b/\\lambda$: at a slit of $10\\,\\text{cm}$ the wave bends only a little, at a narrow slit the most.",
+          "correct": true,
+          "feedback": "Correct. The student mixed up two things: the amount of wave that gets through and how much the wave spreads. When $b = 1.0\\,\\text{cm}$ and $\\lambda = 2.0\\,\\text{cm}$, that is $b < \\lambda$, the points at the slit act like one source of wavelets, and the wave spreads over the whole area behind the slit, even though its amplitude is smaller."
+        },
+        {
+          "text": "The error is in the wavelength: water waves are always longer than the slit, so they bend equally much at every slit.",
+          "feedback": "The wavelength of water waves can range from millimetres to tens of metres, and in a ripple tank $2.0\\,\\text{cm}$ is a typical value. What decides the bending is exactly the ratio $b/\\lambda$, which changes when the slit is narrowed."
+        },
+        {
+          "text": "The argument is correct: a wider slit lets more wave through, so the wave also bends more behind it.",
+          "feedback": "The amount of wave that gets through and the bending are different things. At a wide slit the front continues almost straight and curves only at its edges, behind a narrow slit it spreads as a semicircle. In experiment 3 the spreading angle grew as the slit narrowed."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply to a new situation",
+      "prompt": "In a corner of a harbour two straight concrete walls meet at a right angle. A wave first hits wall 1 at an angle of incidence of $35^\\circ$, is reflected and then hits wall 2. What is the angle of incidence at wall 2? Answer in degrees.",
+      "answer": 55,
+      "unit": "°",
+      "tolerance": 0.02,
+      "hints": [
+        "Draw a normal of its own at each point of impact. Which wall is the normal of wall 1 parallel to?",
+        "The normal of wall 1 is parallel to wall 2, because the walls are perpendicular. The reflected ray makes an angle $\\beta_1 = 35^\\circ$ with the normal of wall 1, so also $35^\\circ$ with the surface of wall 2.",
+        "The angle of incidence at wall 2 is measured from the normal of wall 2: $\\alpha_2 = 90^\\circ - 35^\\circ$."
+      ],
+      "mistakes": [
+        {
+          "value": 35,
+          "feedback": "$35^\\circ$ is the angle between the reflected ray and the *surface* of wall 2. The angle of incidence is measured from the normal, so $\\alpha_2 = 90^\\circ - 35^\\circ$."
+        },
+        {
+          "value": 145,
+          "feedback": "The angle of incidence is the acute angle between the normal and the ray, always between $0^\\circ$ and $90^\\circ$. Subtract the angle between the surface and the ray from $90^\\circ$, not from $180^\\circ$."
+        }
+      ],
+      "solution": "**Given:** the walls are perpendicular to each other, angle of incidence at wall 1 $\\alpha_1 = 35^\\circ$\n\n**Find:** the angle of incidence at wall 2, $\\alpha_2$ in degrees\n\n**Principle:** By the law of reflection $\\beta_1 = \\alpha_1$ when the angles are measured from the normal. Because the walls are perpendicular, the normal of wall 1 is parallel to wall 2. So the angle between the reflected ray and the surface of wall 2 is $\\beta_1$, and the angle of incidence at wall 2 is its complementary angle.\n\n**Formula:** $\\beta_1 = \\alpha_1$ and $\\alpha_2 = 90^\\circ - \\beta_1$, so $\\alpha_2 = 90^\\circ - \\alpha_1$\n\n**Conversions:** Not needed: the angles are in degrees.\n\n**Substitution:** $\\alpha_2 = 90^\\circ - 35^\\circ = 55^\\circ$\n\n**Answer:** $55^\\circ$, in whole degrees like the given $35^\\circ$.\n\n**Reasonableness:** The angles $\\alpha_1$ and $\\alpha_2$ add up to $90^\\circ$. At wall 2 the wave is reflected at an angle of $55^\\circ$, and each reflection turns the ray through the angle $180^\\circ - 2\\alpha$, so the whole turn is $(180^\\circ - 2 \\cdot 35^\\circ) + (180^\\circ - 2 \\cdot 55^\\circ) = 110^\\circ + 70^\\circ = 180^\\circ$: the wave returns from the corner against its direction of arrival, as it should in a corner reflector."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise at three levels. The level 1 exercises use the law of reflection or one equation, the level 2 exercises combine two steps, and the level 3 exercises require reasoning."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept",
+      "prompt": "The gap in a harbour breakwater is $20\\,\\text{m}$ wide, and the wavelength of the sea waves is $15\\,\\text{m}$. What change would make the waves spread over a wider area behind the gap?",
+      "choices": [
+        {
+          "text": "Narrowing the gap",
+          "correct": true,
+          "feedback": "Correct. Diffraction becomes stronger when the width of the gap decreases relative to the wavelength. When the gap is clearly narrower than the wavelength ($b < \\lambda$), the wave spreads over the whole basin, and already when $b \\approx \\lambda$, the spreading is large."
+        },
+        {
+          "text": "Widening the gap",
+          "feedback": "More wave gets through a wider gap, but the front continues straighter at the gap. The spreading depends on the ratio $b/\\lambda$, which grows when the gap is widened, and the spreading weakens."
+        },
+        {
+          "text": "An increase in the height of the waves",
+          "feedback": "The amplitude does not change the directions in which a wave travels. The spreading is decided by the width of the gap compared with the wavelength, not by the height of the wave."
+        },
+        {
+          "text": "A decrease in the wavelength",
+          "feedback": "A shorter wave bends less: the ratio $b/\\lambda$ grows, and the wave continues straighter from the gap. The bending would become stronger if the wavelength increased."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Slit and wavelength",
+      "prompt": "The wave maker of a ripple tank has a frequency of $6.0\\,\\text{Hz}$, and the waves travel at a speed of $0.18\\,\\text{m/s}$. In the tank there is an obstacle with a slit $4.5\\,\\text{cm}$ wide. How many wavelengths wide is the slit? Give the ratio $b/\\lambda$ as the answer.",
+      "answer": 1.5,
+      "unit": "",
+      "tolerance": 0.02,
+      "hints": [
+        "Which equation connects speed, frequency and wavelength?",
+        "$\\lambda = \\tfrac{v}{f}$. After that, convert the width of the slit and the wavelength to the same unit.",
+        "$\\lambda = \\tfrac{0.18\\,\\text{m/s}}{6.0\\,\\text{Hz}} = 0.030\\,\\text{m} = 3.0\\,\\text{cm}$."
+      ],
+      "mistakes": [
+        {
+          "value": 150,
+          "feedback": "The width of the slit is in centimetres and the wavelength in metres. Convert them to the same unit: $\\lambda = 0.030\\,\\text{m} = 3.0\\,\\text{cm}$."
+        },
+        {
+          "value": 0.00135,
+          "feedback": "You calculated the wavelength as $\\tfrac{f}{v}$. From the equation $v = f\\lambda$ you get $\\lambda = \\tfrac{v}{f}$."
+        }
+      ],
+      "solution": "**Given:** $f = 6.0\\,\\text{Hz}$, $v = 0.18\\,\\text{m/s}$, width of the slit $b = 4.5\\,\\text{cm}$\n\n**Find:** the ratio $b/\\lambda$, that is, the width of the slit in wavelengths, without a unit\n\n**Principle:** The speed, frequency and wavelength of a wave are related by the equation $v = f\\lambda$ (chapter *Mechanical wave motion*). Once the wavelength is known, the width of the slit is compared with it, because the strength of diffraction depends on the ratio $b/\\lambda$.\n\n**Formula:** $v = f\\lambda$, so $\\lambda = \\dfrac{v}{f}$ and $\\dfrac{b}{\\lambda} = \\dfrac{b f}{v}$\n\n**Conversions:** $b = 4.5\\,\\text{cm} = 0.045\\,\\text{m}$, so that the units cancel.\n\n**Substitution:** $\\lambda = \\dfrac{0.18\\,\\text{m/s}}{6.0\\,\\text{Hz}} = 0.030\\,\\text{m}$ and $\\dfrac{b}{\\lambda} = \\dfrac{0.045\\,\\text{m}}{0.030\\,\\text{m}} = 1.5$\n\n**Answer:** $1.5$, two significant figures like the frequency $6.0\\,\\text{Hz}$ and the width of the slit $4.5\\,\\text{cm}$.\n\n**Reasonableness:** A wavelength of $3.0\\,\\text{cm}$ is typical for a ripple tank, and the slit is only one and a half wavelengths wide. So the wave clearly spreads behind the slit: in the model of the simulation the spreading angle is then about $24^\\circ$."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Explain with Huygens' principle",
+      "optional": true,
+      "prompt": "Use Huygens' principle to explain why a plane wave spreads as a semicircle behind a narrow slit but continues almost straight at a wide slit.",
+      "model": "By Huygens' principle every point of a wavefront is a source of wavelets, and the new front touches the wavelets. At a wide slit there are many sources side by side, and the envelope of their wavelets is a straight line, so the front continues straight. Only the wavelets of the outermost sources spread sideways, so the front curves at its edges. When the slit is clearly narrower than the wavelength, there is in effect only one source, and its wavelet spreads as a semicircle over the whole area behind the slit. Already when the slit is about one wavelength wide, the spreading is large.",
+      "criteria": [
+        "I stated that in Huygens' principle every point of the front is a source of wavelets and the new front touches the wavelets.",
+        "I explained why at a wide slit the envelope is straight and only the edges curve.",
+        "I compared the width of the slit with the wavelength: when the slit is clearly narrower than the wavelength ($b < \\lambda$), it acts like one source."
+      ]
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally two quick questions. Answer yourself first and only then open the answer."
+    }
+  ]
+}
