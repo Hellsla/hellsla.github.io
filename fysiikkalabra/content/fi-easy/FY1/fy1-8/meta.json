@@ -18,6 +18,28 @@
     "mittauspöytäkirja",
     "raportti"
   ],
+  "key_concepts": [
+    {
+      "term": "tutkimus",
+      "explain": "Järjestelmällinen tapa vastata kysymykseen mittaamalla."
+    },
+    {
+      "term": "hypoteesi",
+      "explain": "Perusteltu ennuste tutkimuskysymykseen. Sen pitää olla sellainen, että mittaus voi osoittaa sen vääräksi."
+    },
+    {
+      "term": "muuttuja",
+      "explain": "Suure, jonka arvo voi muuttua kokeessa. Yhtä muutetaan, toista mitataan ja muut pidetään samoina."
+    },
+    {
+      "term": "mittauspöytäkirja",
+      "explain": "Muistiinpanot, jotka kirjoitetaan kokeen aikana: lukemat yksiköineen ja havainnot."
+    },
+    {
+      "term": "raportti",
+      "explain": "Kirjallinen kuvaus tutkimuksesta niin, että toinen voi toistaa sen."
+    }
+  ],
   "sim": false,
   "solutions": "all",
   "image": false

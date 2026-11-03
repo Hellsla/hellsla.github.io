@@ -15,6 +15,28 @@
     "lämpöenergia",
     "kemiallinen energia"
   ],
+  "key_concepts": [
+    {
+      "term": "energiaketju",
+      "explain": "Peräkkäiset vaiheet, joissa energia muuttuu muodosta toiseen, esimerkiksi säteilystä ruoan kemialliseksi energiaksi ja siitä liikkeeksi."
+    },
+    {
+      "term": "kemiallinen energia",
+      "explain": "Aineeseen, esimerkiksi ruokaan tai polttoaineeseen, varastoitunut energia. Se vapautuu, kun aine palaa tai hajoaa elimistössä."
+    },
+    {
+      "term": "lämpöenergia",
+      "explain": "Aineen hiukkasten liikkeeseen liittyvä energia. Energiaketjun lopussa suuri osa energiasta on lämpöenergiaa ympäristössä."
+    },
+    {
+      "term": "joule",
+      "explain": "Energian yksikkö J. Yksi joule on pieni energia: suunnilleen sen verran tarvitaan, kun omena nostetaan metrin ylöspäin."
+    },
+    {
+      "term": "etuliite",
+      "explain": "Yksikön eteen lisätty osa, joka kertoo luvun koon. Esimerkiksi kilo tarkoittaa tuhatta: kilojoule on tuhat joulea."
+    }
+  ],
   "sim": true,
   "solutions": "all",
   "image": false

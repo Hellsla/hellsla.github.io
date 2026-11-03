@@ -121,7 +121,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 1: aineen portaat",
-      "intro": "Testaa ennuste 1. Alussa kooltaan lähin kohde on vesimolekyyli. Paina *Kirjaa mittaus*. Valitse sitten valikosta *Siirry kohteeseen* yksi kerrallaan vetyatomi, protoni ja kvarkki. Kirjaa rivi jokaisesta. Taulukon luku $n$ kertoo lähimmän kohteen suuruusluokan. Kohteen koko on noin $10^{n}\\,\\text{m}$. Kvarkin arvo on yläraja.",
+      "intro": "Testaa ennuste 1. Alussa kooltaan lähin kohde on vesimolekyyli. Paina ensin *Kirjaa mittaus*, niin taulukkoon tulee rivi. Valitse sitten valikosta *Siirry kohteeseen* yksi kerrallaan vetyatomi, protoni ja kvarkki. Kirjaa rivi jokaisesta. Taulukon luku $n$ kertoo lähimmän kohteen suuruusluokan. Kohteen koko on noin $10^{n}\\,\\text{m}$. Kvarkin arvo on yläraja.",
       "initial": {
         "L": -9
       },
@@ -215,7 +215,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Valinnainen koe: missä on kokojen puoliväli?",
-      "intro": "Alussa kooltaan lähin kohde on havaittava maailmankaikkeus. Kirjaa rivi. Valitse sitten valikosta *Siirry kohteeseen* Planckin pituus ja kirjaa toinen rivi. Laske kysymyksessä näiden kahden koon puoliväli. Zoomaa sitten mallin kohteeseen, jonka koko on lähinnä tätä puoliväliä. Kirjaa kolmas rivi. Simulaatio näyttää, mikä kohde on keskellä. Arvaa ensin: onko ihminen kokojen keskellä?",
+      "intro": "Alussa kooltaan lähin kohde on havaittava maailmankaikkeus. Kirjaa rivi. Valitse sitten valikosta *Siirry kohteeseen* Planckin pituus ja kirjaa toinen rivi. Laske seuraavaksi kysymyksessä näiden kahden koon puoliväli. Zoomaa lopuksi mallin kohteeseen, jonka koko on lähinnä tätä puoliväliä. Kirjaa kolmas rivi. Simulaatio näyttää, mikä kohde on keskellä. Arvaa ensin: onko ihminen kokojen keskellä?",
       "initial": {
         "L": 27.5
       },

@@ -146,7 +146,7 @@ Kappaleen massa $m$ kertoo, kuinka paljon ainetta kappaleessa on. Massan yksikk�
   <line x1="395" y1="56" x2="395" y2="366" stroke="#c9c2b2" stroke-width="2" stroke-linecap="butt" stroke-dasharray="6 6"/>
 </svg>
 
-Ero syntyy siitä, kuinka tiiviisti ainetta on tilavuuden sisällä. Tätä kuvaa **tiheys** $\rho$. Tiheys kertoo, kuinka paljon massaa aineessa on yhtä tilavuusyksikköä kohti. Rauta on noin kuusitoista kertaa niin tiheää kuin mänty. Sama tilavuus sisältää siis noin kuusitoista kertaa niin paljon ainetta.
+Ero syntyy siitä, kuinka tiiviisti ainetta on tilavuuden sisällä. Tätä kuvaa **tiheys** $\rho$. Tiheys kertoo, kuinka paljon massaa aineessa on yhtä tilavuusyksikköä kohti, esimerkiksi yhdessä kuutiosenttimetrissä. Rauta on noin kuusitoista kertaa niin tiheää kuin mänty. Sama tilavuus sisältää siis noin kuusitoista kertaa niin paljon ainetta.
 
 ### Massa on suoraan verrannollinen tilavuuteen
 
@@ -162,7 +162,7 @@ Jokaisella puhtaalla aineella on tietyssä olomuodossa ja lämpötilassa oma tih
 
 ## Kaava: Tiheys
 
-Aineen tiheys on massan ja tilavuuden suhde. Kaavasta voi ratkaista myös massan ja tilavuuden. Silloin saadaan kaksi muuta muotoa:
+Aineen tiheys on massan ja tilavuuden suhde. Kaavasta voi ratkaista myös massan ja tilavuuden eli kirjoittaa sen niin, että massa tai tilavuus on yksin yhtälön vasemmalla puolella. Silloin saadaan kaksi muuta muotoa:
 
 ```latex
 \begin{aligned}

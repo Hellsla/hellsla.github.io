@@ -37,9 +37,9 @@
 
 ### Fysiikka rakentaa malleja ja testaa ne
 
-**Fysiikka** on luonnontiede. Se etsii luonnosta säännönmukaisuuksia ja selittää ne malleilla. **Malli** on yksinkertaistettu kuvaus siitä, miten jokin ilmiö toimii. Mallista voi päätellä ennusteen. Mittaus voi kumota ennusteen. Fysiikka ei siis luota siihen, kuka asian sanoo. Se luottaa siihen, mitä kokeet ja mittaukset näyttävät.
+**Fysiikka** on luonnontiede. Se etsii luonnosta säännönmukaisuuksia ja selittää ne malleilla. **Malli** on yksinkertaistettu kuvaus siitä, miten jokin ilmiö toimii. Mallin avulla voi päätellä **ennusteen** eli arvion siitä, mitä kokeessa pitäisi tapahtua. Jos mittaus näyttää muuta, ennuste kumoutuu eli osoittautuu vääräksi. Fysiikka ei siis luota siihen, kuka asian sanoo. Se luottaa siihen, mitä kokeet ja mittaukset näyttävät.
 
-Tutkimus etenee kierroksina. Ensin havainto herättää kysymyksen. Sitten kysymykseen ehdotetaan mallia, ja mallista johdetaan ennuste. Ennuste testataan kokeella. Tulos joko tukee mallia tai pakottaa muuttamaan sitä. Mittaus antaa tuloksen lukuna ja yksikkönä. Pituuden SI-yksikkö on metri, $\text{m}$.
+Tutkimus etenee kierroksina. Ensin havainto herättää kysymyksen. Sitten kysymykseen ehdotetaan mallia, ja mallista päätellään ennuste. Ennuste testataan kokeella. Tulos joko tukee mallia tai pakottaa muuttamaan sitä. Mittaus antaa tuloksen lukuna ja yksikkönä. Pituuden SI-yksikkö on metri, $\text{m}$.
 
 ### Koot vaihtelevat kymmenpotenssien verran
 
@@ -91,7 +91,7 @@ Fysiikan kohteiden koot ovat valtavan erilaisia. Protoni on noin $1{,}7\cdot10^{
 
 ### Suuruusluokka kertoo karkean koon
 
-**Suuruusluokka** on se kymmenpotenssi, joka on kymmenpotenssien akselilla lähinnä lukua. Luvun $a\cdot10^{n}$ suuruusluokka on $10^{n}$, kun $a$ on alle noin 3. Jos $a$ on yli noin 3, suuruusluokka on $10^{n+1}$. Ihmisen pituus $1{,}7\,\text{m}$ on suuruusluokkaa $10^{0}\,\text{m}$. Mount Everestin korkeus $8{,}8\cdot10^{3}\,\text{m}$ on suuruusluokkaa $10^{4}\,\text{m}$.
+**Suuruusluokka** kertoo luvun koon suunnilleen. Se on kymmenpotenssi, joka on lähimpänä lukua. Esimerkiksi luvun 170 suuruusluokka on 100 eli $10^{2}$. Tarkemmin sanottuna luvun $a\cdot10^{n}$ suuruusluokka on $10^{n}$, kun $a$ on alle noin 3. Jos $a$ on yli noin 3, suuruusluokka on $10^{n+1}$. Ihmisen pituus $1{,}7\,\text{m}$ on suuruusluokkaa $10^{0}\,\text{m}$. Mount Everestin korkeus $8{,}8\cdot10^{3}\,\text{m}$ on suuruusluokkaa $10^{4}\,\text{m}$.
 
 Kohteiden koot ovat pyöristettyjä arvoja. Ihmiset, muurahaiset ja galaksit eivät ole kaikki samankokoisia. Siksi vertailuun riittää usein suuruusluokka. Luvuista kannattaa myös kysyä, kuinka tarkkoja ne ovat.
 
@@ -103,7 +103,7 @@ Joskus halutaan tietää, kuinka monta kertaa jokin on toista suurempi. Silloin 
 k = \frac{d_\text{suurempi}}{d_\text{pienempi}}
 ```
 
-Tässä $k$ on kokojen suhde. Se kertoo, kuinka monta kertaa suurempi kohde on. Kummankin koon on oltava samassa yksikössä. Silloin yksikkö supistuu pois, ja $k$ on pelkkä luku.
+Tässä $k$ on kokojen suhde. Se kertoo, kuinka monta kertaa suurempi kohde on. Kummankin koon on oltava samassa yksikössä. Silloin yksikkö supistuu pois eli häviää jakolaskussa, ja $k$ on pelkkä luku.
 
 Kymmenpotenssien avulla suhteen voi arvioida myös päässä. Jokainen askel kymmenpotenssista seuraavaan on kymmenkertainen koko. Vetyatomi on suuruusluokkaa $10^{-10}\,\text{m}$ ja protoni $10^{-15}\,\text{m}$. Niiden välissä on viisi askelta. Atomi on siis noin $10\cdot10\cdot10\cdot10\cdot10 = 10^{5}$ eli satatuhatta kertaa protonia suurempi. Askelten määrä on eksponenttien erotus: $-10-(-15) = 5$.
 
@@ -230,7 +230,7 @@ Atomin halkaisija on noin $10^{-10}\,\text{m}$. Ytimen halkaisija on vain $10^{-
 
 ### Maan osoite maailmankaikkeudessa
 
-Maa on **planeetta**. Se kiertää **tähteä** eli Aurinkoa, ja Kuu kiertää Maata. Tähti on kuuma kaasupallo. Se tuottaa itse valonsa ytimessään tapahtuvissa ydinreaktioissa. Planeetta ei tuota valoa. Se näkyy, koska se heijastaa tähtensä valoa. Aurinko, sen kahdeksan planeettaa kuineen sekä kääpiöplaneetat, asteroidit ja komeetat muodostavat **Aurinkokunnan**. Aurinkokunta on yksi **planeettakunta** monien joukossa. Muita tähtiä kiertäviä planeettoja tunnetaan jo tuhansia.
+Maa on **planeetta**. Se kiertää **tähteä** eli Aurinkoa, ja Kuu kiertää Maata. Tähti on kuuma kaasupallo. Se tuottaa itse valonsa ytimessään tapahtuvissa ydinreaktioissa. Planeetta ei tuota valoa. Se näkyy, koska se heijastaa tähtensä valoa. Aurinko ja kaikki sitä kiertävät kappaleet ovat yhdessä **Aurinkokunta**: kahdeksan planeettaa kuineen sekä kääpiöplaneetat, asteroidit ja komeetat. Aurinkokunta on yksi **planeettakunta** monien joukossa. Muita tähtiä kiertäviä planeettoja tunnetaan jo tuhansia.
 
 Aurinko on yksi Linnunradan sadoista miljardeista tähdistä. **Linnunrata** on **galaksi**. Galaksi on painovoiman koossa pitämä valtava joukko tähtiä, kaasua ja pölyä. Linnunradan halkaisija on noin $10^{5}$ valovuotta. Galakseja on havaittavassa maailmankaikkeudessa arviolta satoja miljardeja. Ne muodostavat **galaksiryhmiä** ja suurempia **galaksijoukkoja**. Linnunrata ja Andromedan galaksi kuuluvat Paikalliseen ryhmään. Ryhmät ja joukot muodostavat superjoukkoja. Suurimmassa mittakaavassa galaksit ovat verkon kaltaisissa säikeissä. Säikeiden välissä on lähes tyhjiä alueita.
 
@@ -404,7 +404,7 @@ Rakenteet pysyvät koossa ja muuttuvat **vuorovaikutusten** takia. Kaikki tunnet
 
 ### Mittakaava ratkaisee, mikä vuorovaikutus hallitsee
 
-Samat neljä vuorovaikutusta toimivat kaikkialla, ytimen sisältä galaksijoukkoihin. Mittakaava ratkaisee, mikä niistä hallitsee. Vahva ja heikko vuorovaikutus ulottuvat vain ytimen mittakaavaan. Hiukkasten välillä sähkömagneettinen vuorovaikutus on valtavasti gravitaatiota voimakkaampi. Suuret kappaleet ovat kuitenkin lähes neutraaleja: niiden positiiviset ja negatiiviset varaukset kumoavat toistensa vaikutuksen. Gravitaatio on hiukkasten välillä heikoin. Se on kuitenkin aina vetävä, ja se kasvaa massan mukana. Siksi planeettojen, tähtien ja galaksien mittakaavassa gravitaatio hallitsee.
+Samat neljä vuorovaikutusta toimivat kaikkialla, ytimen sisältä galaksijoukkoihin. Mittakaava ratkaisee, mikä niistä hallitsee. Vahva ja heikko vuorovaikutus ulottuvat vain ytimen mittakaavaan. Hiukkasten välillä sähkömagneettinen vuorovaikutus on valtavasti gravitaatiota voimakkaampi. Suuret kappaleet ovat kuitenkin lähes neutraaleja. Niissä on yhtä paljon positiivista ja negatiivista varausta, joten varausten vaikutukset kumoavat toisensa eli yhdessä ne ovat lähes nolla. Gravitaatio on hiukkasten välillä heikoin. Se on kuitenkin aina vetävä, ja se kasvaa massan mukana. Siksi planeettojen, tähtien ja galaksien mittakaavassa gravitaatio hallitsee.
 
 ## Esimerkki
 

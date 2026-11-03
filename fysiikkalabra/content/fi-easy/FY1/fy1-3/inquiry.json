@@ -240,7 +240,7 @@
       "type": "experiment",
       "optional": true,
       "title": "Koe 3: satunnaisvirheen suuruus",
-      "intro": "Selvitä, miten tulosten hajonta riippuu satunnaisvirheen suuruudesta. Alussa $n = 40$ ja systemaattinen virhe on nolla. Kirjaa mittaus, kun satunnaisvirhe on $0{,}05\\,\\text{s}$, $0{,}15\\,\\text{s}$ ja $0{,}30\\,\\text{s}$.",
+      "intro": "Selvitä, miten tulosten hajonta muuttuu, kun satunnaisvirhe kasvaa. Alussa $n = 40$ ja systemaattinen virhe on nolla. Kirjaa mittaus, kun satunnaisvirhe on $0{,}05\\,\\text{s}$, $0{,}15\\,\\text{s}$ ja $0{,}30\\,\\text{s}$.",
       "initial": {
         "n": 40,
         "sat": 0.05,
