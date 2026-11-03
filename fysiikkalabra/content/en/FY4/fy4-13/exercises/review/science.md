@@ -1,9 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 25c29f64156181ab
+CONTENT-HASH: 9042a4a4fafbdf5e
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-Rechecked the exercise set and solutions against the Finnish after the figure redraw and the level-policy change: no exercise figures, texts, numbers, data, steps or answers differ from the version already reviewed; the exercise files are unchanged. check_i18n clean.
+Full re-review after the malli-ketju label nudge (figures.py lab= of T_1 and upper T_2; nothing else changed since the last pass). Exercise texts and solutions judged against the reviewed Finnish source: every number in exercises.json (119) and solutions.md (620) equals the Finnish; L2-01 task, solution and voimakuvio blocks match the Finnish and the figure. Rendered malli-ketju in the opened L2-01 solution at 360 px: translated captions and labels readable and clear of each other, arrows to scale (T_1 88 px, G_1 49, T_2 33 in both diagrams, G_2 29,5 at S = 0,10), translated description matches the drawing. Answers recomputed: correct. check_i18n 0 errors.
