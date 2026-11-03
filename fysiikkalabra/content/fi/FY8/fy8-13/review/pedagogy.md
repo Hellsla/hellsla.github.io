@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: d9ad8d1ce3ec7242
+CONTENT-HASH: e9e47c77f1bab9da
 
 ## Blocking
 
 ## Polish
-- inquiry.json `kertaus` (optional, before the predictions) — "uraanin hajoamissarjan jäsenet" lets a strong student connect uranium in the ground to the hook's "maasta jalkojemme alta" and to the house-and-bedrock hero; not a disclosure, but a cue. — Say "monet luonnon radioaktiiviset aineet" only.
-- inquiry.json `ennuste-3` — only one option is about indoor air, so the correct answer is the odd one out and the house in the hero points to it; feedback stays gated, so not blocking. — Add an indoor-unrelated distractor of the same kind (e.g. "Juomavedestä ja ruoasta") or name the others by place too.
-- Hero (fig-1) — the cellar is a plain empty box; fine for not revealing, but it reads as unfinished at 390 px. — Optional: add a window or door line.
+- inquiry.json `tarkistus-2` solution, Järkevyys — the new last two sentences compare 5,0 cm with cesium-137's "noin 4 cm" and conclude the radiation is "hieman suurempienergistä". The lesson teaches neither energy dependence of d_1/2 nor this reference value, and a 1 cm gap does not support the conclusion (concrete varies). A learner cannot follow the inference. Fix: stop after the order-of-magnitude comparison ("Arvo on samaa suuruusluokkaa kuin cesium-137:n gammasäteilyn puoliintumispaksuus betonissa, noin 4 cm.") and drop the energy claim, or say "puoliintumispaksuus riippuu säteilyn energiasta" as an aside already in the glossary.
+- Same place — "Arvo" now refers to the graph reading; "Tämä arvo" would be clearer.
+- for science: check the cesium-137 half-value layer in concrete (commonly quoted near 4,8 cm for ordinary concrete).
 
 ## Checked
-- Round-1 blocker closed: scanned every activity up to and including ennuste-3's prompt and options, the lesson opening (title, "Miksi" box, learning goals, hero aria-label), hook and kertaus: the word radon appears only in ennuste-3's feedback (gated behind "teoria-osa"). The hook now lists sairaalat, avaruus, maa, "jostain muualta" without naming the answer.
-- Opened the redrawn hero (fig-1-390, intro-1280, top-390): no radon arrows, gas or text; house, granite, plane, distant reactor. Pedagogically neutral.
-- stage-herata-390, stage-ennusta-390-2 (three predictions, options unlabelled by letter, justification optional), sim-390, exp-koe-1-390-1, fig-12-390 (graph legible, task answerable).
-- Read the whole inquiry: predictions 1 and 2 are refutable by koe-1 and koe-2 (min 3), feedback repairs the misconception; siirto hints and mistakes fit; tarkistus-3 explain criteria observable.
-- Hash d9ad8d1ce3ec7242 at start and end.
+- Diff in context: the solution's steps (graph reading, formula, substitution, answer, sanity check 25 cm) are unchanged and still followable; the task, hints and graph are untouched.
+- Captures: fig-12-390 (graph legible, 80 and 40 µSv/h readable), open-tarkista-1280-2 and -3 (solution layout, Järkevyys block).
+- lesson-answers.py comment change: no learner-facing effect.
+- Hash e9e47c77f1bab9da at start and end.
