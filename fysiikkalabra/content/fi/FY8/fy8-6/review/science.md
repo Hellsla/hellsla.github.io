@@ -1,22 +1,19 @@
-VERDICT: FAIL
-CONTENT-HASH: e6b0231aeaa552c8
+VERDICT: PASS
+CONTENT-HASH: 8f61e76d68ecc7d3
 
 ## Blocking
-- lesson.md:251 — B: "Fotonin energia elektronivoltteina on sama luku kuin kynnysjännite voltteina" holds only if $eU_\text{k} = hf$ exactly; the sentence before it says the measured 1,88 V is below the 1,97 V of $hc/(e\lambda)$, so the text contradicts itself — write "on likimain sama luku" (or "elektronin saama energia elektronivoltteina on sama luku kuin jännite voltteina").
 
 ## Polish
-- lesson.md:202 (lessons/FY8/fy8-6/figures.py:87) — the spectrum figure draws and captions the laser diode line as about 2 nm wide; the text, glossary and exit-ticket.json:7 say about 1 nm — use one value (1–2 nm is fine, but say the same everywhere).
-- inquiry.json:337 (siirto, Järkevyys) — "pitäisi olla hieman lyhyempi, koska kynnysjännite on noin 0,1 V pienempi … tyypillisesti noin 940 nm": with a 0,1 V offset $\lambda \approx 1240 : 1{,}40 \approx 890$ nm; 940 nm corresponds to only 0,02 V — soften to "hieman lyhyempi" without tying 940 nm to the 0,1 V figure.
-- inquiry.json:59, :91 — "virtaa kulkee vasta, kun jännite riittää fotonin synnyttämiseen" makes photon creation the gate of conduction; the lesson's energy argument is fine (C), but "energian säilymisen vuoksi elektronin on saatava vähintään likimain fotonin energia" would avoid the reversed causal picture.
-- exit-ticket.json:3 — "vähintään kytkettävä" with a model answer saying the measured threshold is usually a little lower than 3,06 V; "Arvioi kynnysjännite" avoids the contradiction.
-- lessons/FY8/fy8-6/lesson-answers.py:56 — stale comment "0,02 / 0,24 / 1,37" for 1,70/1,80/1,90 V; the code gives 0,011 / 0,188 / 1,98 mA (the inquiry text uses the right 0,19 mA).
+- lessons/FY8/fy8-6/lesson-answers.py (tarkistus-2 comment) — "-> 6,68e-34 J s" while inquiry.json tarkistus-2 answers 6,7e-34 with two figures; align the comment.
 
 ## Checked
-- Six LEDs: f, hc/(eλ), offsets −0,06…−0,12 V; LSQ fit k = 4,054·10^-15 V s, b = −0,050 V, h = 6,49·10^-34 J s (−2,0 %): figure, table, interpret answer and mistakes 4,05e-15 and 1,22e-6 agree.
-- Sim model I = (s/R)ln(1+e^{(U−U_k)/s}): koe-1 currents 17,8/13,9/11,1/0,11/≈0/0 mA; koe-2 table and extrapolation 1,88 V (five-point fit 1,879 V); mistake 1,70 V.
-- Experiments isolate the varied parameter (U locked in koe-1, λ in koe-2); simState gives I.
-- Worked example h = 6,515·10^-34 J s, −1,7 %, symbolic first, 3 s.f. justified.
-- tarkistus-2: 6,675·10^-34 J s, +0,7 %; mistakes right; siirto 954 nm and mistakes.
-- Every prediction/choice has exactly one correct option; distractor feedback correct; tarkistus-1 and virhe options right.
-- Band picture, colour vs voltage, offset shifts line not slope; scope within FY8.
-- Exercise findings reported separately in exercises/review/science.md.
+- Round 1 blocking fixed: lesson.md Kaava now says "likimain sama luku", consistent with 1,88 V measured vs 1,97 V from hc/(eλ).
+- Round 1 polish fixed: laser diode line about 1 nm in text, figure (figures.py:87, alt text), glossary and exit ticket; siirto Järkevyys no longer ties 940 nm to the 0,1 V offset; ennuste-2 feedback states the energy condition, not photon creation as the gate; exit ticket "Arvioi kynnysjännite"; lesson-answers koe-2 comments 0,011 / 0,188 / 1,98 mA.
+- One-script recompute: hc/(eλ) 1,968–3,062 V; LSQ k = 4,054e-15 V s, b = −0,050 V, h = 6,494e-34 J s (−2,0 %); mistakes 4,05e-15 and 1,22e-6 distinct.
+- Sim model I = (s/R)ln(1+e^{(U−U_k)/s}) in sim.js matches calc text; koe-1 17,8/13,9/11,1/0,11/0/0 mA; koe-2 0,011…28,9 mA, extrapolation 1,879 V, slope 55,4 mA/V.
+- Experiments isolate the varied parameter (U locked in koe-1, λ locked in koe-2); simState gives I.
+- Worked example 6,515e-34 J s, −1,7 %, symbolic first, three figures justified by the differences.
+- siirto 953,8 nm; tarkistus-2 6,675e-34 J s from (4,6; 1,80) and (7,0; 2,80); exit ticket 3,06 V.
+- Every choice item has exactly one correct option; distractor feedback (offset shifts line not slope, λ-axis not linear, colour fixed by band gap) correct.
+- Band picture, eU_k ≈ hf ≈ E_g, extra energy to heat, offset reasons; scope within FY8.
+- Exercise findings in exercises/review/science.md.

@@ -1,19 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 0aa98697a3746896
+CONTENT-HASH: 4720559b0d9eefa0
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] lesson.md Esimerkki, Sijoitus — the exponent is written `20{,}0\,\text{d} / 8{,}02\,\text{d}` with a slash; house notation for a written division in a chain is a colon (`20{,}0\,\text{d} : 8{,}02\,\text{d}`); same in solutions.md of the exercises.
-- [Minor] lesson.md Yleinen virhekäsitys — straight quotes "vuorossa"; Finnish typography uses ”vuorossa”.
-- [Minor] fig-5 (ydin) — the caption "oranssi: hajoamaton, harmaa: hajonnut" is small at 390 px; the shape difference (filled disc vs ring) already carries the meaning, so only a slightly larger caption would help.
-- [Minor] sim canvas — the "T_{1/2}" tick label sits very close to the dashed guide at 390 px; acceptable, check on next edit.
+- [Minor] inquiry.json Tutki "Johtopäätös: sattuma ja laki" model answer — the fixed `$10^{15}$` is shown only after "Näytä mallivastaus", which no capture opens; judged from source (valid KaTeX, check_latex ok). Add a capture of the opened model answer when convenient.
+- [Minor] round-1 notes untouched and still Minor: slash division in the Esimerkki, straight quotes "vuorossa", small fig-5 caption.
 
 ## Checked
-- Opened: intro-1280, top-390, fig-5/7/9/11/13-390 (ydin grids, decay curve, fit graph, both task graphs), example-390-1, sim-390, sim-1280, lab-1280-1, koe-3-390-1, theory-1280-1/2/3/4, open-ennusta-1280-1, open-tarkista-1280-1, stage-sovella-390-1. Hero checked at 390 and 1280.
-- Not opened individually: contact sheets, remaining stage captures, exit ticket; exercise captures belong to the second report.
-- Graphs: axes carry quantity and unit, data markers (orange) are distinct from the fitted line (blue), simulated data is labelled, B baseline is shown.
+- Delta (one model-answer exponent `10^15` -> `10^{15}`): lab-1280-2 and stage-tutki-390-3 (the task card around it, layout intact); the model answer itself is not in any capture.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 4
