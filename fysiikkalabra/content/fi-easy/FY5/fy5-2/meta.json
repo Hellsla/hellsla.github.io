@@ -15,6 +15,24 @@
     "painopiste",
     "tukivoima"
   ],
+  "key_concepts": [
+    {
+      "term": "tasapaino",
+      "explain": "Kappale pysyy levossa. Voimien summa on nolla, eikä kappale ala kiertyä."
+    },
+    {
+      "term": "momenttiehto",
+      "explain": "Levossa olevaan kappaleeseen vaikuttavien voimien momenttien summa on nolla, mitä tahansa pistettä kohti laskettuna."
+    },
+    {
+      "term": "painopiste",
+      "explain": "Piste, jossa kappaleen paino voidaan ajatella vaikuttavan. Symmetrisen kappaleen painopiste on sen keskellä."
+    },
+    {
+      "term": "tukivoima",
+      "explain": "Voima, jolla alusta tai tuki työntää kappaletta."
+    }
+  ],
   "sim": true,
   "solutions": "all",
   "image": false

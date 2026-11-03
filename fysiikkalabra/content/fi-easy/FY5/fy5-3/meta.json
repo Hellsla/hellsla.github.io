@@ -13,6 +13,24 @@
     "kierrosaika",
     "pyörimistaajuus"
   ],
+  "key_concepts": [
+    {
+      "term": "ympyräliike",
+      "explain": "Liike, jonka rata on ympyrä. Kappale pysyy koko ajan yhtä kaukana keskipisteestä."
+    },
+    {
+      "term": "ratanopeus",
+      "explain": "Nopeuden suuruus ympyräradalla: kuljettu matka jaettuna ajalla. Nopeus osoittaa radan suuntaan."
+    },
+    {
+      "term": "kierrosaika",
+      "explain": "Aika, jossa kappale kiertää radan kerran."
+    },
+    {
+      "term": "pyörimistaajuus",
+      "explain": "Kertoo, montako kierrosta kappale tekee sekunnissa. Se on kierrosajan käänteisluku."
+    }
+  ],
   "sim": true,
   "solutions": "all",
   "image": false

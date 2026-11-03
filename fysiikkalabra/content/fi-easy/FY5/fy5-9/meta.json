@@ -17,6 +17,24 @@
     "värähtelyn energia",
     "vaimeneminen"
   ],
+  "key_concepts": [
+    {
+      "term": "harmoninen värähtely",
+      "explain": "Värähtely, jonka aiheuttaa harmoninen voima. Jaksonaika ei riipu siitä, kuinka suuri värähtely on."
+    },
+    {
+      "term": "heiluri",
+      "explain": "Langan varassa riippuva kappale, joka heilahtelee painovoiman vaikutuksesta tasapainoaseman molemmin puolin."
+    },
+    {
+      "term": "värähtelyn energia",
+      "explain": "Liike-energian ja potentiaalienergian summa. Ilman kitkaa se pysyy samana."
+    },
+    {
+      "term": "vaimeneminen",
+      "explain": "Värähtely pienenee, kun kitka tai ilmanvastus muuttaa sen energiaa lämmöksi."
+    }
+  ],
   "sim": true,
   "solutions": "all",
   "image": false
