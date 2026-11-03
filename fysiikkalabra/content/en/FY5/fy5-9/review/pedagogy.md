@@ -1,15 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: aa606e42223daeaa
-
+CONTENT-HASH: 4f7295d581040ae8
 ## Blocking
-
+(none)
 ## Polish
-- [Minor] sim at 1280 px — the long English label "Spring constant $k = 20\,\text{N/m}$" wraps, so the three slider labels sit at different heights.
-
+- hero — Question names a swing, but the hero shows a clock pendulum and a door bouncer; a swing would tie it to the opening question more directly (taste).
 ## Checked
-- English learning path matches the Finnish: Think about it → Predict (two predictions, gated) → Investigate (koe-1…5, conclusion) → Theory summary → Apply (staged worked example, measurement task, uncertainty choice, g from pendulum, find the error, space-station transfer) → Check your understanding → Exit ticket → Exercises.
-- `learn` goals complete "In this lesson, you will learn to" (recognise / calculate / determine); `prior` items end "(chapter *…*)" with chapter names, never ids.
-- Sim box texts (howto, model, calc) name the controls exactly as the English sim shows them (*Oscillator*, *Start*, *Speed*); lead under 30 words.
-- Experiment initial-state lines now read "oscillator: pendulum" (Finnish value fixed); captures exp-koe-1…5-390, lab-1280-1/2.
-- Feedback still repairs each misconception (mass vs inertia, cm vs m, period vs half-period, reaction-time uncertainty); hints and mistakes kept one-for-one.
-- Captures opened: top-390, sim-390, sim-1280, lab-1280-1/2/3, exp-koe-5-390-1, contact-1, contact-5.
+- Delta review: only the hero illustration and its alt text changed; the rest stays as previously approved.
+- Hero shows two oscillators, one displaced pendulum and one spring-hung baby at rest, matching the question's pendulum and spring; no wrong physics (pendulum hangs below its pivot, spring fixed to the door frame, toes on the floor); alt matches the picture (clock, glass door, coil spring, baby, window, plant, picture, armchair).
+- English alt text reads correctly; no text inside the picture; the 390 px capture shows the picture intact.

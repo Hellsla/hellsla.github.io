@@ -1,18 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: e4cde2b05daf8db2
+CONTENT-HASH: ced1564d1183b779
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] figure descriptions write subscripts as plain "F_bolt", "F_d" in the aria-label; acceptable in alt text.
+- [Minor] hero alt: the plank overhang is described as reaching "far" beyond the trestle, but in the picture it is moderate; the pink (still unpainted) part of the wall is not mentioned. Soften "far" and optionally add the two-tone wall.
 
 ## Checked
-- Captures opened: contact-1 (top, sim, figures 1-8, worked example), contact-3 (inquiry stages, experiment panels, sim), contact-5 and contact-6 (exercises, exit ticket), fy5-2-fig-8-390, fy5-2-sim-390 (before fix: legend folded), fy5-2-sim-1280 (after fix: legend visible), fy5-2-exp-koe-2-390-2, fy5-2-lab-1280-2.
-- Sim canvas labels now $x_\text{cm}$ and $\overline{F}_\text{b}$ (fy5-2-sim-1280 re-opened after the lang change), matching the readout.
-- Sim legend fixed to 12 words ("Red arrows: forces on the plank. Dashed line: common centre of mass."), so it no longer folds into a closed box.
-- Figure labels in English (hinge, plank, bolt, support, sign, cable, topples, stays upright); decimal point in all numbers; no Finnish left on the page; check_layout at 345 px OK.
-- Delta captures opened: fy5-2-open-tarkista-1280-1 and -2 (seesaw diagram renders in the solution: labels F_c, F, G, N, 'seesaw', 1.50 m and 1.20 m, positive-rotation arrow, no Finnish, nothing clipped) and contact-3 (#27, diving-board situation); the diving-board solution diagram is inside a collapsed optional step and not in a capture, so its en labels (F_bolt, F_d, 'diving board') were checked in the built preview/en/fy5-2.html. check_layout at 345 px OK. Scores unchanged.
+- Delta (illustration only). Opened fy5-2-top-390 (fi), fy5-2-intro-1280 (fi), fy5-2-fig-1-390 in fi, en and fi-easy (same picture in all three, only rendering noise differs).
+- Hero is a flat vector scene in the figure palette on the paper tone, no text in the picture, subject in the middle third, readable at 366 px width, nothing clipped except the intended close-up crop; 16:9-ish column width, layout around it intact.
+- Alt text (en) read against the picture: it describes what is drawn, with no contradiction; language natural and consistent with the chapter's opening question.
 
 ## Scores
-illustrations 5 · typography 5 · English 5 · accessibility 4
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

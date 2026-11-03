@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 2e717a4604ba3d9e
+CONTENT-HASH: e3ec5537e878bddb
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] Alkutila lines — koe 1 writes "lähtönopeus v: 7,00 km/s", koe 2 "lähtönopeus v = 7,67 km/s": separator differs (":" vs "="); unify in the generator.
-- [Minor] fig vr — "geostationaarinen" label now sits below the point, close to the x-axis; readable, a little detached.
-- [Minor] Markdown table needs sideways scroll at 390 px (by design).
+- [Minor] hero: the Earth's limb occupies the bottom strip only; the station is large and clear, no change needed. Optional: slightly more sky-black margin above the panels at 390 px.
 
 ## Checked
-- Round 2: lab-1280-1 and stage-tutki-390-2 (Alkutila lines: h, m, v all LaTeX with units, v as 7,00 km/s; fixed)
-- theory-1280-1 (orbit, cannon figure: trajectories now grey/ink/green, no clash with force/velocity colours), theory-1280-2 (vr graph label, bare units now maths)
-- Round 1 captures of hero, paino, radat, sim, example, exit unchanged and still judged fine
+- Delta (illustration only). Opened fy5-6-top-390 (fi), fy5-6-intro-1280 (fi), fy5-6-fig-1-390 in fi, en and fi-easy (same picture in all three, only rendering noise differs).
+- Hero is a flat vector scene in the figure palette on the paper tone, no text in the picture, subject in the middle third, readable at 366 px width, nothing clipped except the intended close-up crop; 16:9-ish column width, layout around it intact.
+- Alt text (fi) read against the picture: it describes what is drawn, with no contradiction; language natural and consistent with the chapter's opening question.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5

@@ -1,15 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: dc39a8f223100a24
+CONTENT-HASH: edafee1177569a4f
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] fig huygens — the unnamed midpoint dot and small dashed arc remain; labels small at 390 px — name or drop them.
-- [Minor] fig koysi — "ennen" still touches the v arrow tail.
-- [Minor] sim — checkbox "Näytä alkeisaallot" on its own line away from its label (shared template); Alkutila "30 °" known and out of scope.
+- [Minor] hero — the straight crest rows on the open sea are faint at 390 px; the half-circles in the basin carry the point well, so this is optional.
 
 ## Checked
-- Round 2 (full re-look): fig-4 (now b < λ), exp-koe-3-390, open-tarkista-1280-1, plus round-1 captures unchanged in layout; tarkistus-1 feedback source re-read and now unambiguous.
+- Delta review, category illustration: only the hero (`data-fig="hero"`) and its aria-label changed.
+- fy5-11-top-390.png and fy5-11-intro-1280.png (hero at 390 px and 1280 px, fi page): a harbour with a breakwater gap, circular wavefronts spreading into the basin and corners. Layout survived: the picture sits in the 16:8 frame, nothing clipped, no horizontal overflow, the first screen is unchanged around it.
+- Hero SVG source is identical in fi, en and fi-easy (checked by comparing the SVG body); the screenshots are the same picture. No text in the picture; flat vector style and palette match the other FY5 openings.
+- Alt text compared with the picture item by item and read in its own language: it matches what is drawn, nothing is claimed that is missing, and it does not give away the chapter's answer.
+- The picture fits the opening question in the Pohdinta; nothing physically misleading seen (science review carried over).
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

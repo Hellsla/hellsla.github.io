@@ -1,17 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 99f45aafd4b33d92
+CONTENT-HASH: 745f4abe4b764b81
 
 ## Blocking
 (none)
 
 ## Polish
-- lesson.md:185 (figure "kulma" aria-label) — mixes the terms: "voiman otekohta" in the first sentence, "vaikutuskohdan" later. Use "vaikutuskohta" throughout the label ("voiman vaikutuskohta").
-- Carried over: exp-1's numeric question names the d = 0,20 m row, which `min` 2 does not guarantee was recorded; ask about "any row of your table".
-- Carried over: goal 3 (signs, kokonaismomentti) has no worked case before check-2; canvas labels are small at 390 px.
+- lesson.md (hero) — Polish: the bar is only about 1.4 times the length of the short spanner lying in front, and reaches about one wheel radius from the hub. The picture's own contrast (long vs short) is weak and 'reaches far to the left' in the alt text overstates it; lengthen the bar to about two wheel diameters, or soften the alt wording. Also the socket sits at the hub centre, whereas lug nuts lie on a bolt circle; a student could read the wheel axle as the axis of rotation. Move the socket to a rim nut if easy.
 
 ## Checked
-- Terminology now consistent: "vaikutuskohta" is the physics term in headings, theory, formula legend, misconception text, inquiry prior and hints; "otekohta" appears only where a hand grips (sim, experiments) and is tied once at lesson.md:110 ("avaimessa käden otekohdan").
-- The tie sits in the paragraph that defines vaikutussuora and the arm, before d is used, so a student meets both words with their relation explained.
-- The experiments' "otekohta d" and the theory's "vaikutuskohdan etäisyys d" are the same quantity; the tie plus the sim's own readout make that clear.
-- Unchanged and still sound: learning path, predictions, experiments, example, Etsi virhe, checks, exit ticket (round 1 and 2 judgements).
-- Finnish in the changed sentences is correct.
+- Delta only: the hero illustration and its alt text; the rest of the lesson is as previously approved.
+- Pohdinta (long vs short spanner) and the picture agree: a bar with a socket on the nut, a short spanner on the ground. Nothing in the picture gives the answer away. Physics shown is sound: the man pushes down at the bar end, force perpendicular to the bar.
+- The Finnish alt text matches the picture element by element and is in correct language; the opening question's wording is unchanged.
+- Hero is legible at 390 px and 1280 px (top captures) and carries no text.

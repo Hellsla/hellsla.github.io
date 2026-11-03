@@ -1,18 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: aa606e42223daeaa
+CONTENT-HASH: 4f7295d581040ae8
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] fy5-9-sim-1280 — "Spring constant $k =$" wraps onto two lines in the slider row; label stays readable and the sliders align. Could only be fixed in the shared slider layout, not by the translation.
-- [Minor] sim legend — shortened to "Spring: the red arrow is the force, blue the velocity, orange the acceleration." (13 words) so that it stays visible under the canvas like the Finnish one, instead of being folded into an "Assumptions of the model and explanation" box (the template folds notes over 15 words).
+- [Minor] hero — the baby's face and arms are small and simple at 390 px; the bouncer and spring still read clearly. No change needed.
 
 ## Checked
-- fy5-9-top-390, fy5-9-sim-390, fy5-9-sim-1280 (after the legend fix): labels "Mass on a spring", "Oscillator", "mass on a spring", Start/Reset, readout line `lukemat` (Period, frequency, 10T; $E_\text{k}$, $E_\text{p}$, $E$) fit at 390 and 1280 px without clipping.
-- fy5-9-fig-row-1280 and contact-1 (#3–#10): all six figures; LaTeX labels unchanged and language-neutral, decimal points in the energy graph ticks ($0.04$, $0.08$, $0.12$), no Finnish text; figure descriptions in figures.json are English.
-- fy5-9-lab-1280-1/2/3, exp-koe-5-390-1: experiment cards, initial-state lines (Finnish "heiluri" fixed to "pendulum"), readings tables.
-- contact-5: theory 1280, Predict, Check your understanding, exit ticket, level-1 exercises with opened solutions.
-- Typography: British spelling (centre, metres, practise), units upright with thin space, `\cdot`, colon for division.
+- Delta review, category illustration: only the hero (`data-fig="hero"`) and its aria-label changed.
+- fy5-9-top-390.png and fy5-9-intro-1280.png (hero at 390 px and 1280 px, en page): a living room with a grandfather clock (pendulum swung aside) and a baby in a spring-hung door bouncer. Layout survived: the picture sits in the 16:8 frame, nothing clipped, no horizontal overflow, the first screen is unchanged around it.
+- Hero SVG source is identical in fi, en and fi-easy (checked by comparing the SVG body); the screenshots are the same picture. No text in the picture; flat vector style and palette match the other FY5 openings.
+- Alt text compared with the picture item by item and read in its own language: it matches what is drawn, nothing is claimed that is missing, and it does not give away the chapter's answer.
+- The picture fits the opening question in the Pohdinta; nothing physically misleading seen (science review carried over).
 
 ## Scores
-illustrations 4 · typography 4 · English 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

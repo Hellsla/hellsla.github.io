@@ -1,18 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: e0c6a4f464dbb877
+CONTENT-HASH: 8b93a2b3ddedb62e
 
 ## Blocking
 (none)
 
 ## Polish
-- Section-key braces ({Painottomuus}, {Milloin ympyrämalli pätee}) are anchors only and do not show on the page.
+- lesson.md (hero) — Polish: nothing in the picture hints at the sideways motion that the lesson turns on; fine for an opening picture, but a faint motion cue (not an arrow) could be considered.
 
 ## Checked
-- Delta (coordinator fix, hash 74bd28343cb1ef34 -> e0c6a4f464dbb877): the only change is inquiry.json reveal.pending (after teoria-paino), Finnish "Palaute avautuu, kun olet lukenut kohdan Painottomuus." -> "Feedback opens when you have read the section Weightlessness."; rebuilt preview/en/fy5-6.html shows it, and it matches the theory heading "Weightlessness" on the page. No other file changed.
-- Learning path as in the Finnish: Think about it, three predictions (speed too low, light vs heavy, why the astronaut floats), two experiments with locked variables, real-orbits data task, conclusion with four observable criteria, theory, find-the-error, apply (Hubble), three Tarkista levels, exit ticket.
-- Every feedback still repairs its misconception (falls straight down, smaller circle, hovering, heavier is faster, no gravity in space, centrifugal force); no answer disclosed before the student acts.
-- Worked example staged (Given and find, Principle, Formula solved, Conversions, Substitution, Answer with significant-figure reason, Reasonableness).
-- Clear standard English; chapter names, not ids (*Uniform circular motion and centripetal acceleration*, *Newton's law of gravitation*).
-- Fixed here: neutral pronouns for the astronaut and the student in the inquiry and exit ticket.
-- The sim graph axis now reads "angle (°)" (lang/en.json akseli_kulma).
-- Captures opened: sim-390, sim-1280 (retaken), theory-1280-1, open-tarkista-1280-2, fig-6/7/11/12-390.
+- Delta only: the hero illustration and its alt text; the rest of the lesson is as previously approved.
+- The ISS against black space with the curved Earth below fits the question (why it does not fall, why astronauts float). No arrows or labels disclose the answer. Station depicted correctly: truss, four pairs of golden solar wings, modules, white radiators.
+- The English alt text matches the picture element by element and is in correct language; the opening question's wording is unchanged.
+- Hero is legible at 390 px and 1280 px (top captures) and carries no text.

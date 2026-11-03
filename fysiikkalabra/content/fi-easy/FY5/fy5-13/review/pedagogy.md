@@ -1,14 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 85e8f706000c5d31
-
+CONTENT-HASH: 26ae307e1314dfa0
 ## Blocking
 (none)
-
 ## Polish
-(none)
-
+- hero — Light-blue envelope is a fundamental-mode idealisation; fine for the opening and consistent with the alt.
 ## Checked
-- Oppimispolku sama kuin suomessa: Pohdinta, kertaus, kaksi ennustetta, kolme koetta, johtopäätös, teoriatiivistelmä, esimerkki seitsemässä vaiheessa, etsi virhe, siirtotehtävä, kolme tarkistusta, exit ticket.
-- Selkokieli: lyhyet virkkeet, termit avattu (ilmapatsas, vastakkaisvaiheinen, oktaavi), mitään vaihetta, vihjettä tai palautetta ei pudotettu.
-- Korjasin: kokeiden alkutilan tilanne-arvot vastaavat nyt simulaation valikkoa (kieli, molemmat päät kiinni; putki, toinen pää kiinni; putki, molemmat päät auki).
-- Kaappaukset: contact-1, sim-390; check_layout OK 345 px:llä.
+- Delta review: only the hero illustration and its alt text changed; the rest stays as previously approved.
+- Capo sits just behind the third fret, the string envelope spans capo to bridge with maximum near the middle and nodes at both ends; supports both parts of the question (shorter string, pitch); alt matches.
+- Alt text is in short plain-Finnish sentences, matching the easy-language version; no text inside the picture; the 390 px capture shows the picture intact.

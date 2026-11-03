@@ -1,18 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 5286aa3e63035ec9
+CONTENT-HASH: ab5d1d0142fcc819
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] figures.json — descriptions began 'Formula figure' (Kaavakuva); changed to 'Diagram' and figures regenerated with scripts/figures.py --lang en.
+- [Minor] hero — the straight crest rows on the open sea are faint at 390 px; the half-circles in the basin carry the point well, so this is optional.
 
 ## Checked
-- Contact sheets contact-1, contact-3, contact-5; sim-1280 (long English labels 'Angle of incidence', 'Slit width', readout lines fit), exp-koe-4-390-1, exp-koe-2-390-2.
-- Figures 1-6 in contact-1: every label English (plane wave, circular wave, wavefront, ray, fixed end, free end, before, after, incoming ray, reflected ray, normal, wall, wavelet), nothing clipped.
-- Worked example at 390 and 1280 (contact-1 #9-#10): decimal point, degrees, staged 7 steps.
-- Exercises and solutions (contact-5): units with thin space, decimal point, no Finnish left.
-- check_layout fy5-11 --width 345: OK.
+- Delta review, category illustration: only the hero (`data-fig="hero"`) and its aria-label changed.
+- fy5-11-top-390.png and fy5-11-intro-1280.png (hero at 390 px and 1280 px, en page): a harbour with a breakwater gap, circular wavefronts spreading into the basin and corners. Layout survived: the picture sits in the 16:8 frame, nothing clipped, no horizontal overflow, the first screen is unchanged around it.
+- Hero SVG source is identical in fi, en and fi-easy (checked by comparing the SVG body); the screenshots are the same picture. No text in the picture; flat vector style and palette match the other FY5 openings.
+- Alt text compared with the picture item by item and read in its own language: it matches what is drawn, nothing is claimed that is missing, and it does not give away the chapter's answer.
+- The picture fits the opening question in the Pohdinta; nothing physically misleading seen (science review carried over).
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5

@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 3ca89352c3f28244
+CONTENT-HASH: ecbf431cd67a132d
 
 ## Blocking
 (none)
 
 ## Polish
-- Open doubt 'Turn' (the Väännä button) next to 'turning effect' (vääntövaikutus): not confusing, no change. The button is an imperative for one attempt, the term names a concept in the theory stage, and the Finnish pair Väännä/vääntövaikutus has the same echo. If the teacher prefers sharper wording, 'Pull' (the hand pulls the handle) would avoid the echo and fits the oblique-force story; it would need the lang/en.json label and the five 'press *Turn*' sentences in inquiry.json changed together. Optional.
-- For the developer, not a translation fault: scripts/check_i18n.py reports ERROR on activities[15].practice because 'practice' is not in its TEXT_KEYS although the page shows it after a wrong check. The English text 'Practise the net moment in the level 2 tasks.' is kept (Finnish left in the English page otherwise); adding 'practice' to TEXT_KEYS in check_i18n.py/translate_kit.py clears the error.
+- lesson.md (hero) — Polish: the bar is only about 1.4 times the length of the short spanner lying in front, and reaches about one wheel radius from the hub. The picture's own contrast (long vs short) is weak and 'reaches far to the left' in the alt text overstates it; lengthen the bar to about two wheel diameters, or soften the alt wording. Also the socket sits at the hub centre, whereas lug nuts lie on a bolt circle; a student could read the wheel axle as the axis of rotation. Move the socket to a rim nut if easy.
 
 ## Checked
-- All activities in inquiry.json against the Finnish: same ids, stages, options, correct flags, hints, mistakes, criteria, model answers, solutions (seven-step) and reveal rules; no step dropped.
-- Fixed here: the experiment table and status line showed Finnish ('mutteri: tiukassa', column 'mutteri', value 'aukesi') -> nut / tight / rusted / came loose in both experiments; the check-2 'practice' hint was Finnish -> English; 'long wrench' in the reflect prompt -> spanner.
-- Fixed in lang/en.json sims.fy5-1.selite: the 16-word legend was folded by the shared sim-embed rule (notes over 15 words) into the 'Assumptions of the model and explanation' box and so invisible; now 15 words and visible under the sim, like the Finnish.
-- Captures opened: contact sheets 1-2, sim-390, exp-1-390-1/-2, exp-2-390-2, open-exercises-1280-1; check_layout fy5-1 --lang en --width 345 OK.
+- Delta only: the hero illustration and its alt text; the rest of the lesson is as previously approved.
+- Pohdinta (long vs short spanner) and the picture agree: a bar with a socket on the nut, a short spanner on the ground. Nothing in the picture gives the answer away. Physics shown is sound: the man pushes down at the bar end, force perpendicular to the bar.
+- The English alt text matches the picture element by element and is in correct language; the opening question's wording is unchanged.
+- Hero is legible at 390 px and 1280 px (top captures) and carries no text.

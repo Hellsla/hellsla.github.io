@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 2e717a4604ba3d9e
+CONTENT-HASH: e3ec5537e878bddb
 
 ## Blocking
+(none)
 
 ## Polish
-- inquiry.json (data, tarkistus-2, siirto) — the $v = 2\pi r/T$ and $r^3 = \gamma M T^2/4\pi^2$ computations still recur across data, siirto, tarkistus-2 and the exercises; acceptable now that `kertaus` is optional, but trim one if the hour runs long.
-- inquiry.json ennuste-1 / koe-1 — the correct option is still the longest and hedged, and the koe-1 intro still lists the launch speeds; let the student pick the next speed.
+- lesson.md (hero) — Polish: nothing in the picture hints at the sideways motion that the lesson turns on; fine for an opening picture, but a faint motion cue (not an arrow) could be considered.
 
 ## Checked
-- Round-1 polish items verified fixed: kertaus optional, cannon figure no longer red/blue, geostationaarinen written out, example γM digits.
-- koe-1 answer 7,67 km/s with tolerance 0,001 matches "kahden desimaalin tarkkuudella"; mistakes (7,6; 30,8) still repair the misconception.
-- Predictions refutable by koe-1 and koe-2; ennuste-3 gated behind Painottomuus; feedback repairs misconceptions.
-- Worked example staged, one step per stage; figures legible and colour convention kept.
-- Finnish and glossary terms consistent; no Kepler, ω or potential energy.
+- Delta only: the hero illustration and its alt text; the rest of the lesson is as previously approved.
+- The ISS against black space with the curved Earth below fits the question (why it does not fall, why astronauts float). No arrows or labels disclose the answer. Station depicted correctly: truss, four pairs of golden solar wings, modules, white radiators.
+- The Finnish alt text matches the picture element by element and is in correct language; the opening question's wording is unchanged.
+- Hero is legible at 390 px and 1280 px (top captures) and carries no text.

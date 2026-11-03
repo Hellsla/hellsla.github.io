@@ -1,19 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 40102459c35f36e5
+CONTENT-HASH: a9a11cfed48489db
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] figures.json descriptions are the translator's own wording; they match the Finnish data (values, intervals, to-scale claims) — fine.
-- [Minor] exp initial-state line "data set: data set 1" — mirrors Finnish, acceptable.
+- [Minor] hero: the sun with rays is the most decorative element and draws the eye away from the swing; optional to tone down.
 
 ## Checked
-- Captures opened: contact-1, contact-2, contact-3, contact-5; after the sim.js fix (lbl_malli) fy5-7-sim-1280 and fy5-7-sim-390 re-opened: the canvas label beside the blue triangle now reads "model", fits at both widths.
-- All five lesson figures and three task figures: labels LaTeX, decimal points (0.4, 3T = 3.6 s, 0.9 …), no Finnish in SVG text or aria-labels (figures.json maps all 8 descriptions).
-- Sim controls/readout in English (Data set, Start, Speed, Model amplitude, Fit error d); long labels fit at 390 and 1280 px.
-- Locked-parameter status now "Kept constant: data set, period of the model T" after my fix.
-- Worked example staged 1/7–7/7, aligned chains, answer set apart; layout at 390 and 1280 px as in the Finnish.
+- Delta (illustration only). Opened fy5-7-top-390 (fi), fy5-7-intro-1280 (fi), fy5-7-fig-1-390 in fi, en and fi-easy (same picture in all three, only rendering noise differs).
+- Hero is a flat vector scene in the figure palette on the paper tone, no text in the picture, subject in the middle third, readable at 366 px width, nothing clipped except the intended close-up crop; 16:9-ish column width, layout around it intact.
+- Alt text (en) read against the picture: it describes what is drawn, with no contradiction; language natural and consistent with the chapter's opening question.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish (English) 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 4 · accessibility 5
