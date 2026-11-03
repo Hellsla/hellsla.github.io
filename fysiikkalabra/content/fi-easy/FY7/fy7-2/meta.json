@@ -35,7 +35,7 @@
     },
     {
       "term": "massaspektrometri",
-      "explain": "Laite, joka erottelee hiukkaset massan mukaan, koska raskaamman hiukkasen rata kaartuu loivemmin."
+      "explain": "Laite, joka erottelee hiukkaset massan mukaan. Kun vauhti ja varaus ovat samat, raskaamman hiukkasen rata kaartuu loivemmin."
     }
   ]
 }

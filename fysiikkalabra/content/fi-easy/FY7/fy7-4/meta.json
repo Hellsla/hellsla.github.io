@@ -24,11 +24,11 @@
     },
     {
       "term": "virtasilmukka",
-      "explain": "Suljettu johdinsilmukka, jossa kulkee virta. Kentässä sen vastakkaisiin sivuihin kohdistuu vastakkaiset voimat."
+      "explain": "Suljettu johdinsilmukka, jossa kulkee virta. Kentässä sen vastakkaisiin sivuihin kohdistuvat vastakkaiset voimat."
     },
     {
       "term": "kaiutin",
-      "explain": "Laite, jossa magneettikenttä liikuttaa kelaa ja kalvoa edestakaisin. Kalvon liike synnyttää äänen."
+      "explain": "Laite, jonka kelassa kulkee vaihtovirta. Magneettikenttä liikuttaa kelaa ja kartiota edestakaisin, ja kartion liike synnyttää äänen."
     },
     {
       "term": "magneettinen voima",

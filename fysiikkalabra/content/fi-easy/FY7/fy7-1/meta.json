@@ -40,7 +40,7 @@
     },
     {
       "term": "magneettivuon tiheys",
-      "explain": "Suure, joka kertoo magneettikentän voimakkuuden ja suunnan. Sen tunnus on B ja yksikkö tesla."
+      "explain": "Suure, joka kertoo magneettikentän voimakkuuden ja suunnan. Sen yksikkö on tesla."
     }
   ]
 }
