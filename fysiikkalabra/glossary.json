@@ -1925,7 +1925,8 @@
     "term": "beetahajoaminen",
     "definition": "Radioaktiivinen hajoaminen, jossa ytimen neutroni muuttuu protoniksi ja ytimestä lähtee elektroni ja antineutriino. Sen aiheuttaa heikko vuorovaikutus.",
     "lessons": [
-      "fy1-1"
+      "fy1-1",
+      "fy8-8"
     ],
     "see_also": [
       "heikko vuorovaikutus",
@@ -3643,6 +3644,217 @@
     "see_also": [
       "aaltomekaaninen atomimalli",
       "orbitaali"
+    ],
+    "locked": false
+  },
+  {
+    "term": "nukleoni",
+    "definition": "Atomiytimen rakenneosa eli protoni tai neutroni. Ytimen nukleonien määrä on sen massaluku $A$.",
+    "lessons": [
+      "fy8-8"
+    ],
+    "see_also": [
+      "atomiydin",
+      "isotooppi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "isotooppi",
+    "definition": "Saman alkuaineen ydinlaji, jonka ytimessä on yhtä monta protonia mutta eri määrä neutroneja kuin muissa saman alkuaineen isotoopeissa, esimerkiksi hiili-12 ja hiili-14.",
+    "lessons": [
+      "fy8-8"
+    ],
+    "see_also": [
+      "nukleoni",
+      "atomiydin"
+    ],
+    "locked": false
+  },
+  {
+    "term": "alfahajoaminen",
+    "definition": "Radioaktiivinen hajoaminen, jossa ytimestä lähtee alfahiukkanen eli heliumydin ${}^{4}_{2}\\text{He}$. Ytimen järjestysluku pienenee kahdella ja massaluku neljällä.",
+    "lessons": [
+      "fy8-8"
+    ],
+    "see_also": [
+      "beetahajoaminen",
+      "gammasäteily"
+    ],
+    "locked": false
+  },
+  {
+    "term": "gammasäteily",
+    "definition": "Sähkömagneettinen säteily, jonka fotonin viritystilassa oleva atomiydin lähettää siirtyessään alemmalle energiatasolle. Fotonin energia on ytimen tasojen erotus, tyypillisesti kiloelektronivoltteja tai megaelektronivoltteja; ytimen protoni- ja neutroniluku eivät muutu.",
+    "lessons": [
+      "fy8-8"
+    ],
+    "see_also": [
+      "alfahajoaminen",
+      "beetahajoaminen"
+    ],
+    "locked": false
+  },
+  {
+    "term": "laser",
+    "definition": "Valonlähde, jossa valo vahvistuu stimuloidun emission avulla. Pumppaus tuottaa laseraineeseen populaatioinversion, ja peilien välissä edestakaisin kulkeva valo monistuu. Laservalo on yksiväristä, suuntautunutta ja koherenttia. Nimi tulee sanoista light amplification by stimulated emission of radiation.",
+    "lessons": [
+      "fy8-7"
+    ],
+    "see_also": [
+      "stimuloitu emissio",
+      "populaatioinversio"
+    ],
+    "locked": false
+  },
+  {
+    "term": "stimuloitu emissio",
+    "definition": "Tapahtuma, jossa viritettyyn atomiin osuva fotoni, jonka energia on tasojen erotus $E_2 - E_1$, saa atomin putoamaan alemmalle tasolle. Saapuva fotoni ei absorboidu, ja atomista lähtee toinen fotoni, jolla on sama energia, suunta ja vaihe.",
+    "lessons": [
+      "fy8-7"
+    ],
+    "see_also": [
+      "laser",
+      "populaatioinversio"
+    ],
+    "locked": false
+  },
+  {
+    "term": "populaatioinversio",
+    "definition": "Tila, jossa ylemmällä energiatasolla on enemmän atomeja kuin alemmalla, $N_2 > N_1$. Vain silloin valo vahvistuu aineessa stimuloidun emission avulla. Inversio tehdään pumppaamalla aineeseen, jossa on ainakin kolme energiatasoa.",
+    "lessons": [
+      "fy8-7"
+    ],
+    "see_also": [
+      "laser",
+      "stimuloitu emissio"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kvanttirakenne",
+    "definition": "Puolijohteen nanometrien kokoinen rakenne, jossa elektronit on suljettu niin pieneen tilaan, että niiden sallitut energiat riippuvat rakenteen koosta. Esimerkkejä ovat ohut kerros eli kvanttikaivo ja kvanttipiste.",
+    "lessons": [
+      "fy8-7"
+    ],
+    "see_also": [
+      "kvanttipiste"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kvanttipiste",
+    "definition": "Muutaman nanometrin kokoinen puolijohdekide, jossa elektronien energiat ovat kvantittuneet koon mukaan. Mitä pienempi piste, sitä suurempi energiarako ja sitä lyhyempi lähetetyn valon aallonpituus.",
+    "lessons": [
+      "fy8-7"
+    ],
+    "see_also": [
+      "kvanttirakenne"
+    ],
+    "locked": false
+  },
+  {
+    "term": "tunneloituminen",
+    "definition": "Kvanttifysiikan ilmiö, jossa hiukkanen, esimerkiksi elektroni, voi löytyä ohuen esteen takaa, vaikka sen energia ei riitä esteen ylittämiseen. Todennäköisyys pienenee jyrkästi esteen paksuuntuessa, joten ilmiö on merkittävä vain nanometrien luokan esteillä.",
+    "lessons": [
+      "fy8-7"
+    ],
+    "see_also": [],
+    "locked": false
+  },
+  {
+    "term": "valodiodi",
+    "definition": "Puolijohteesta tehty diodi eli LED, joka säteilee valoa, kun sähkövirta kulkee sen läpi päästösuuntaan. Elektroni putoaa johtavuusvyöstä valenssivyön aukkoon ja synnyttää yhden fotonin, jonka energia on likimain puolijohteen energia-aukon suuruinen; siksi LEDin väri riippuu sen materiaalista. LEDin spektri on kapea, tyypillisesti 20–40 nm leveä kaista.",
+    "lessons": [
+      "fy8-6"
+    ],
+    "see_also": [
+      "kynnysjännite",
+      "laserdiodi",
+      "energia-aukko",
+      "fotoni"
+    ],
+    "locked": false
+  },
+  {
+    "term": "laserdiodi",
+    "definition": "LEDin kaltainen puolijohdediodi, jossa valo vahvistuu, joten se säteilee kapean säteen ja hyvin kapean spektriviivan, leveydeltään noin 1 nm. Laserdiodin säteeseen ei saa katsoa.",
+    "lessons": [
+      "fy8-6"
+    ],
+    "see_also": [
+      "valodiodi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kynnysjännite",
+    "definition": "LEDin jännite, jolla se alkaa johtaa virtaa ja säteillä. Kynnysjännitteellä elektronin jännitelähteeltä saama energia on likimain yhden fotonin energia, eU ≈ hf. Se määritetään jatkamalla virta-jännitekuvaajan suora osa jänniteakselille, jolla virta on nolla.",
+    "lessons": [
+      "fy8-6"
+    ],
+    "see_also": [
+      "valodiodi",
+      "Planckin vakio"
+    ],
+    "locked": false
+  },
+  {
+    "term": "energia-aukko",
+    "definition": "Puolijohteen valenssivyön ja johtavuusvyön välinen energiaväli, jolla elektronilla ei voi olla tilaa. Kun elektroni putoaa johtavuusvyöstä valenssivyön aukkoon, vapautuva energia on likimain energia-aukon suuruinen.",
+    "lessons": [
+      "fy8-6"
+    ],
+    "see_also": [
+      "valodiodi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "hajoamislaki",
+    "definition": "Laki, jonka mukaan radioaktiivisen näytteen hajoamattomien ytimien määrä pienenee eksponentiaalisesti: $N = N_0 \\left(\\tfrac{1}{2}\\right)^{t/T_{1/2}} = N_0 e^{-\\lambda t}$. Se kuvaa suuren ydinjoukon käyttäytymistä; yksittäisen ytimen hajoamishetki on satunnainen.",
+    "lessons": [
+      "fy8-9"
+    ],
+    "see_also": [
+      "puoliintumisaika",
+      "hajoamisvakio"
+    ],
+    "locked": false
+  },
+  {
+    "term": "puoliintumisaika",
+    "definition": "Aika $T_{1/2}$, jonka kuluessa puolet radioaktiivisen näytteen hajoamattomista ytimistä hajoaa. Se on isotoopin ominaisuus eikä riipu näytteen koosta.",
+    "lessons": [
+      "fy8-9"
+    ],
+    "see_also": [
+      "hajoamislaki",
+      "hajoamisvakio"
+    ],
+    "locked": false
+  },
+  {
+    "term": "aktiivisuus",
+    "definition": "Radioaktiivisessa näytteessä tapahtuvien hajoamisten määrä aikayksikössä, $A = \\lambda N$. Yksikkö on becquerel: $1\\,\\text{Bq}$ on yksi hajoaminen sekunnissa.",
+    "lessons": [
+      "fy8-9"
+    ],
+    "see_also": [
+      "hajoamisvakio",
+      "hajoamislaki"
+    ],
+    "locked": false
+  },
+  {
+    "term": "hajoamisvakio",
+    "definition": "Radioaktiivisen ytimen hajoamistodennäköisyys aikayksikköä kohti, $\\lambda = \\tfrac{\\ln 2}{T_{1/2}}$; yksikkö $\\tfrac{1}{\\text{s}}$. Se on saman isotoopin kaikille ytimille sama eikä riipu ytimen iästä.",
+    "lessons": [
+      "fy8-9"
+    ],
+    "see_also": [
+      "puoliintumisaika",
+      "aktiivisuus"
     ],
     "locked": false
   }

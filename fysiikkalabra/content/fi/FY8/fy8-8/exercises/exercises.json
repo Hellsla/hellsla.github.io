@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy8-8-L1-01",
+      "level": 1,
+      "text": "Ydinvoimalan polttoaineen uraani-235:n ydin on ${}^{235}_{92}\\text{U}$. Kuinka monta neutronia ytimessä on?",
+      "answer": 143,
+      "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-8-L1-02",
+      "level": 1,
+      "text": "Sisäilman radon-222 ${}^{222}_{86}\\text{Rn}$ hajoaa alfahajoamisella. Mikä on syntyvän tytärytimen massaluku?",
+      "answer": 218,
+      "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-8-L1-03",
+      "level": 1,
+      "text": "Hiili-14 ${}^{14}_{6}\\text{C}$ hajoaa beeta miinus -hajoamisella. Mikä on syntyvän tytärytimen järjestysluku?",
+      "answer": 7,
+      "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-8-L1-04",
+      "level": 1,
+      "text": "Savuilmaisimen americium-241 lähettää gammafotoneja, joiden energia on $59{,}54\\,\\text{keV}$ (NNDC NuDat 3). Laske fotonin aallonpituus pikometreinä ($1\\,\\text{pm} = 10^{-12}\\,\\text{m}$) ($h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{keV} = 1000\\,\\text{eV}$, $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$).",
+      "answer": 20.8,
+      "unit": "pm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-8-L1-05",
+      "level": 1,
+      "text": "PET-kuvauksessa käytetty fluori-18 ${}^{18}_{9}\\text{F}$ hajoaa beeta plus -hajoamisella. Kuinka monta neutronia tytärytimessä on?",
+      "answer": 10,
+      "unit": "",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy8-8-L2-01",
+      "level": 2,
+      "text": "Nikkeli-60-ytimen energiatasot ovat $2505{,}7\\,\\text{keV}$ ja $1332{,}5\\,\\text{keV}$ perustilan yläpuolella (NNDC NuDat 3). Ydin siirtyy ylemmältä tasolta alemmalle ja lähettää gammafotonin. Laske fotonin aallonpituus pikometreinä ($h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{keV} = 1000\\,\\text{eV}$, $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$).",
+      "answer": 1.06,
+      "unit": "pm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-8-L2-02",
+      "level": 2,
+      "text": "Uraanisarjan vismutti-214 ${}^{214}_{83}\\text{Bi}$ hajoaa beeta miinus -hajoamisella, ja syntyvä ydin hajoaa heti alfahajoamisella. Mikä on näiden kahden hajoamisen jälkeen syntyvän ytimen järjestysluku?",
+      "answer": 82,
+      "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-8-L2-03",
+      "level": 2,
+      "text": "Cesium-137:n hajoamisessa syntyvän gammafotonin energia on $661{,}7\\,\\text{keV}$. Vihreän valon aallonpituus on $550\\,\\text{nm}$. Kuinka monta kertaa suurempi gammafotonin energia on kuin vihreän valon fotonin energia ($h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{keV} = 1000\\,\\text{eV}$, $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$)?",
+      "answer": 293000,
+      "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-8-L2-04",
+      "level": 2,
+      "text": "Torium-232 ${}^{232}_{90}\\text{Th}$ hajoaa alfahajoamisella, ja syntyvä ydin hajoaa kaksi kertaa peräkkäin beeta miinus -hajoamisella. Kuinka monta neutronia on näiden kolmen hajoamisen jälkeen syntyvässä ytimessä?",
+      "answer": 138,
+      "unit": "",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy8-8-L3-01",
+      "level": 3,
+      "text": "Torium-232 ${}^{232}_{90}\\text{Th}$ hajoaa luonnossa sarjana, joka päättyy pysyvään lyijy-208:aan ${}^{208}_{82}\\text{Pb}$. Sarjassa on vain alfa- ja beeta miinus -hajoamisia. Kuinka monta beeta miinus -hajoamista sarjassa on?",
+      "answer": 4,
+      "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-8-L3-02",
+      "level": 3,
+      "text": "Kuvitteellisen ytimen energiatasot ovat $0$ (perustila), $0{,}40\\,\\text{MeV}$ ja $1{,}00\\,\\text{MeV}$. Ydin on aluksi ylimmällä tasolla, ja se voi palata perustilaan suoraan tai välitason kautta. Mikä on lyhin aallonpituus, joka ytimen gammaspektrissä voi näkyä? Vastaa pikometreinä ($1\\,\\text{MeV} = 10^{6}\\,\\text{eV}$, $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$).",
+      "answer": 1.24,
+      "unit": "pm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-8-L3-03",
+      "level": 3,
+      "text": "Tuntematon ydin X hajoaa ensin beeta miinus -hajoamisella ja syntyvä ydin sitten alfahajoamisella. Lopputulos on radon-222 ${}^{222}_{86}\\text{Rn}$. Mikä on ytimen X järjestysluku?",
+      "answer": 87,
+      "unit": "",
+      "tolerance": 0.02
+    }
+  ]
+}
