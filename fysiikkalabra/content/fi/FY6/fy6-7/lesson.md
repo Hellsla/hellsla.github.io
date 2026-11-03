@@ -303,6 +303,6 @@ Toinen yleinen virhe on lukea kilowattitunti "kilowattia tunnissa". Kilowattitun
 ## Tiivistelmä
 - Vakioteholla toimivan laitteen käyttämä sähköenergia on $E = Pt = UIt$. Teho kertoo, kuinka nopeasti energiaa käytetään, energia kuinka paljon.
 - Kilowattitunti on energian yksikkö: $1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3{,}6\,\text{MJ}$. Kilowateilla ja tunneilla laskettu energia saadaan suoraan kilowattitunteina.
-- Kodin $230\,\text{V}$:n verkossa lämmittävän laitteen virta on $I = P : U$; suuritehoinen laite ottaa suuren virran.
+- Lämmittävän laitteen virta $230\,\text{V}$:n verkossa on $I = P : U$; suuritehoinen laite ottaa suuren virran.
 - Sähkölasku on energian ja siirron hinta kertaa kulutettu energia lisättynä perusmaksuilla. Energia on mittarin lukemien erotus.
 - Eniten säästää pienentämällä niiden laitteiden tehoa tai käyttöaikaa, joiden energia on suurin: lämmitys, lämmin vesi ja sauna.
