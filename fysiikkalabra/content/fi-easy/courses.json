@@ -126,28 +126,29 @@
   },
   "FY6": {
     "title": "Sähkö",
+    "themes": ["Tasavirtapiirit", "Sähköenergia ja jännitelähteet", "Sähkövaraus ja sähkökenttä", "Komponentit ja turvallisuus"],
     "tavoitteet": [
       "osaa tutkia kokeilemalla sähköön liittyviä ilmiöitä ja tehdä sähköopin perusmittauksia",
       "osaa käyttää kentän ja potentiaalin käsitteitä, kun kuvaa sähkökenttää",
       "tuntee turvallisuusasioita, jotka liittyvät sähkölaitteisiin ja sähköenergian siirtoon"
     ],
     "lessons": {
-      "fy6-1": "Sähkövaraus, sähkövirta ja jännite",
-      "fy6-2": "Resistanssi ja Ohmin laki",
-      "fy6-12": "Mittaukset virtapiirissä",
-      "fy6-3": "Sähköteho ja Joulen laki",
-      "fy6-13": "Sähkölaitteet kotona: teho, energia ja kustannus",
+      "fy6-1": "Virtapiiri, sähkövirta ja jännite",
+      "fy6-2": "Mittaukset virtapiirissä",
+      "fy6-3": "Resistanssi ja Ohmin laki",
       "fy6-4": "Vastusten sarja- ja rinnankytkennät",
-      "fy6-5": "Kirchhoffin lait",
-      "fy6-14": "Potentiaali ja jännitteet virtapiirissä",
-      "fy6-6": "Akut, lähdejännite ja sisäinen resistanssi",
-      "fy6-7": "Coulombin laki",
-      "fy6-8": "Homogeeninen sähkökenttä, potentiaali ja potentiaalienergia",
-      "fy6-9": "Kondensaattori ja kondensaattorin energia",
-      "fy6-15": "Kondensaattorin varaaminen ja purkaminen",
-      "fy6-10": "Puolijohteet, diodi ja LED",
-      "fy6-11": "Sähköturvallisuus",
-      "fy6-16": "Soveltava tunti: sähköauto ja kodin sähköjärjestelmä"
+      "fy6-5": "Kirchhoffin lait ja potentiaali virtapiirissä",
+      "fy6-6": "Sähköteho ja vastuksen lämpeneminen",
+      "fy6-7": "Sähköenergia kotona",
+      "fy6-8": "Lähdejännite ja sisäinen resistanssi",
+      "fy6-9": "Akut ja latauspiiri",
+      "fy6-10": "Sähkövaraus ja Coulombin laki",
+      "fy6-11": "Homogeeninen sähkökenttä",
+      "fy6-12": "Potentiaalienergia ja potentiaali sähkökentässä",
+      "fy6-13": "Kondensaattori ja sen energia",
+      "fy6-14": "Puolijohteet, diodi, LED ja aurinkokenno",
+      "fy6-15": "Sähköturvallisuus kotona ja työssä",
+      "fy6-16": "Soveltava luku: sähköauto ja kodin sähköjärjestelmä"
     }
   },
   "FY7": {
