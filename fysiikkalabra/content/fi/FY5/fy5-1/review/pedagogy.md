@@ -1,19 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 73a8167482140fc3
+CONTENT-HASH: 99f45aafd4b33d92
 
 ## Blocking
 (none)
 
 ## Polish
-- lesson.md figure "kulma" aria-label — "Vaikutuskohdan kulma on alfa" still uses the old term; write "Otekohdan kulma on alfa".
-- Carried over, not fixed: exp-1's numeric question names the row d = 0,20 m, which `min` 2 does not guarantee the student recorded, and the table's M column hands over F·d. Ask about "any row of your table".
-- Carried over: goal 3 (signs, kokonaismomentti) has no worked case before check-2; the sim only turns anticlockwise. Acceptable for one lesson.
-- Carried over: canvas labels (d, F, α, r) are small at 390 px.
+- lesson.md:185 (figure "kulma" aria-label) — mixes the terms: "voiman otekohta" in the first sentence, "vaikutuskohdan" later. Use "vaikutuskohta" throughout the label ("voiman vaikutuskohta").
+- Carried over: exp-1's numeric question names the d = 0,20 m row, which `min` 2 does not guarantee was recorded; ask about "any row of your table".
+- Carried over: goal 3 (signs, kokonaismomentti) has no worked case before check-2; canvas labels are small at 390 px.
 
 ## Checked
-- Round 1 fixes confirmed: "otekohta" now used consistently (headings, theory, figure alt text, inquiry prior, distractor, hints, solutions) and defined once in the Voiman varsi paragraph ("kohdan, jossa voima vaikuttaa kappaleeseen").
-- Example Järkevyys now reads "Mutteri aukeaisi siis samalla voimalla, jos vedettäisiin kohtisuoraan" (correct Finnish).
-- Etsi virhe's cosine distractor feedback now names the component it would give, repairing the misconception without restating the answer.
-- Kokonaismomentti sentence now scoped to a body on a fixed axis, which prevents the false "any net torque means rotation" reading before the equilibrium chapter.
-- Figure labels moved (sarana, F1 in the door figure) to avoid overlap; the changes touch only positions, nothing the answer depends on.
-- Path, predictions, experiments, example, checks and exit ticket unchanged and still pass the round 1 judgement.
+- Terminology now consistent: "vaikutuskohta" is the physics term in headings, theory, formula legend, misconception text, inquiry prior and hints; "otekohta" appears only where a hand grips (sim, experiments) and is tied once at lesson.md:110 ("avaimessa käden otekohdan").
+- The tie sits in the paragraph that defines vaikutussuora and the arm, before d is used, so a student meets both words with their relation explained.
+- The experiments' "otekohta d" and the theory's "vaikutuskohdan etäisyys d" are the same quantity; the tie plus the sim's own readout make that clear.
+- Unchanged and still sound: learning path, predictions, experiments, example, Etsi virhe, checks, exit ticket (round 1 and 2 judgements).
+- Finnish in the changed sentences is correct.

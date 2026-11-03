@@ -1,9 +1,9 @@
 VERDICT: DONE
 
-Round 1 draft of *Ympyräliike ja ratanopeus* (no angular quantities; a_n left to the next chapter).
-
-- `lesson.md`: Ydinajatus (circular motion, velocity tangent, string breaks → tangent by Newton I, a change of direction is a change of velocity Δv̄ ≠ 0 so the body accelerates, with a pointer to *Tasainen ympyräliike ja normaalikiihtyvyys*), `## Kaava: Ratanopeus` (f = 1/T, v = 2πr/T = 2πrf, v ∝ r at equal T), staged washing-machine example, misconceptions, summary.
-- `figures.py`: carousel hero, tangent, release, Δv̄ construction, two radii, four prediction option figures.
-- `inquiry.json`: hook, optional Newton I retrieval, two predictions (string breaks, figure options; r doubled), sim, three experiments (third optional), conclusion, reflect, Etsi virhe, Earth-orbit transfer, three checks, exit.
-- Exercises 5/4/3 with complete solutions; `answers.py`, `lesson-answers.py`; exit ticket.
-- Sim `assets/sims/fy5/fy5-3/sim.js` (puck on a string on ice, one main button Käynnistä → Katkaise naru, α and v after release measured from the displacement, Δv̄ panel, stacked 600×960 on phones), 24 assertions in `tests/sims/fy5-3.json`; strings in `lang/fi.json` `sims.fy5-3`; four glossary terms.
+Round 1 fix.
+- sim.js: Δv̄ panel scaled up (longer arrows, labels 1,15-1,25 x larger, triangle centred in its panel, wide rink narrowed to 380 px for a wider panel); v̄1 now the same blue as v̄2 (labels tell them apart; dv figure in figures.py/lesson.md likewise); `before` clamped to release time so Δv̄ = 0 after release. Tests untouched, all pass.
+- inquiry.json: tarkistus-3 4th criterion and model sentence removed; koe-1 intro asks for cuts at clearly different places (radius kept as varied parameter); table label $v_\text{irti}$.
+- lesson.md: aria-label "samalla keskipisteestä lähtevällä suoralla"; net force points inward (l.216); "pyörimistaajuuden sijoittaminen kierroksina minuutissa ..."; Kaava paragraph "Esimerkiksi ... jolloin", one $\tfrac{1}{\text{s}}$ form.
+- exercises: L1-04 replaced by tangent-flight task (answers.py, exercises.json, solutions.md); L1-02 reasonableness is an independent route via T; L3-01 stagger/same-time wording; L3-03 rolling without slipping sentence.
+- exit-ticket answer 2: chain on its own line.
+Not done: Koe 3 side padding (shared template, not lesson markup).

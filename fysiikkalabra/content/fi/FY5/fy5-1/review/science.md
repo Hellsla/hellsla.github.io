@@ -1,15 +1,16 @@
-VERDICT: FAIL
-CONTENT-HASH: 73a8167482140fc3
+VERDICT: PASS
+CONTENT-HASH: 99f45aafd4b33d92
 
 ## Blocking
-- lesson.md:79, 110, 179, 183, 185 (kulma aria), 252, 256; inquiry.json:10, 344, 350, 361 — **A (definition, consistency).** The round-1 polish replaced the physics term *vaikutuskohta* with *otekohta* (a hand's grip point) everywhere and redefined it at lesson.md:110 as "kohta, jossa voima vaikuttaa kappaleeseen". This (1) applies "otekohta" to a weight, which nothing grips: siirto hint 2, mistake feedback and solution say "painon otekohdan vaakasuora etäisyys" (inquiry.json:344, 350, 361); (2) attributes the term to FY4 in the prior-knowledge line "Voimalla on suuruus, suunta ja otekohta (luku *Vuorovaikutus ja voima…*)" (inquiry.json:10), whereas FY4 uses *vaikutuskohta* (9 FY1/FY4 lesson files, *otekohta* in none); (3) contradicts the glossary's *vääntövaikutus* ("…suunnasta ja vaikutuskohdasta"), which FY5 later chapters will build on. — Fix: keep *vaikutuskohta* as the physics term in the theory, summary, misconception, kulma caption, prior line and siirto (weight: "painon vaikutuskohdan" or "puomin keskikohdan"); keep *otekohta* only where a hand grips (sim, experiments, wrench tasks), introduced once, e.g. lesson.md:110 "…vaikutuskohdan (avaimessa käden otekohdan) kautta…". This also settles the pedagogy note (one physics term, the grip word tied to it).
 
 ## Polish
-- inquiry.json:254 (exp-2 distractor "voiman otekohta on kauempana") — fine for a hand pull; leave, or write "vaikutuskohta" with the rest.
+- lessons/FY5/fy5-1/figures.py:147 (rendered lesson.md:185, kulma aria-label) — first sentence still says "voiman otekohta" while the same caption then says "vaikutuskohdan" twice; regenerate with "voiman vaikutuskohta".
 
 ## Checked
-- Diff 6d0c7fa..HEAD read in full; no number, formula, option correctness or sim code changed.
-- Round-1 polish taken: fixed-axis condition in Kaava text and Tiivistelmä; cosine feedback now "$Fd\cos\alpha$ … varren suuntaista komponenttia" (correct); conclusion "saman mutterin yritykset"; check-2 "käsien voimat kiertävät pyörää yhdessä vastapäivään".
-- Example Järkevyys rewording keeps 84 Nm ≥ 80 Nm logic.
-- figures.py changes are label positions only (ovi: "sarana", $\overline{F}_1$); geometry unchanged.
-- Round-1 recomputation of every lesson number stands (no data changed).
+- Diff ef6c583..HEAD read in full: round-2 blocking item (otekohta for vaikutuskohta) fixed.
+- lesson.md:110 now "vaikutuskohdan (avaimessa käden otekohdan)" — the physics term with the grip word tied to it once; correct.
+- Heading, Kaava, vinon voiman varsi, misconception and Tiivistelmä use *vaikutuskohta*; agrees with FY4 and the glossary's *vääntövaikutus*.
+- inquiry.json prior line now "suuruus, suunta ja vaikutuskohta" — matches FY4.
+- Siirto hint 2, mistake feedback and solution now "painon vaikutuskohdan" — correct for a weight.
+- Remaining *otekohta* in inquiry.json (sim, experiments, exp-2 distractor, exp-1 solution) all refer to the hand's grip — correct use.
+- No numbers, options, sim code or figure geometry changed; earlier recomputation of every lesson number stands.
