@@ -1,13 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 9cb596630b684518
+CONTENT-HASH: 19663d769f7d19b6
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- inquiry.json learn[0] — "avulla ... avulla" toistuu, mutta tavoite on kieliopillisesti oikea ja täydentää otsikon "Tällä tunnilla opit"; ei muutosta.
+- meta.json "intensiteetti" — dense for S2; add an anchor, e.g. "Mitä enemmän energiaa tulee korvaan, sitä voimakkaampi ääni on."
 
 ## Checked
-- Muutos on vain yksi tavoite: finiittiverbi "tiedät" poistunut, symbolit ja luvut ennallaan, sisältö (teho/pinta-ala tai etäisyys) sama.
-- Tavoite täydentää otsikon lauseen; sama tavoite kuin kokeiden ja esimerkin sisältö, ei uutta oppisisältöä.
-- Muu oppitunti ennallaan hyväksytyn version mukaan; tuore tiiviste vastaa pakettia.
+batch delta review: key_concepts only (3–5 central, glossary-based concepts, plain 1–2 sentence explanations, physics matches the lesson; NOTES.md §12.7); no lesson text changed.

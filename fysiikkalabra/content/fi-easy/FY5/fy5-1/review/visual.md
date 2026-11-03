@@ -1,16 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 5862117eb0ece721
+CONTENT-HASH: 6a17e72a37d3ae86
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] hero (fig-1, top-390, intro-1280): the breaker bar is only slightly longer than the short spanner on the asphalt, so "long vs short" is weak at 390 px; lengthening the bar a little would sharpen the chapter's contrast (optional).
 
 ## Checked
-- Delta (illustration only). Opened fy5-1-top-390 (fi), fy5-1-intro-1280 (fi), fy5-1-fig-1-390 in fi, en and fi-easy (same picture in all three, only rendering noise differs).
-- Hero is a flat vector scene in the figure palette on the paper tone, no text in the picture, subject in the middle third, readable at 366 px width, nothing clipped except the intended close-up crop; 16:9-ish column width, layout around it intact.
-- Alt text (fi-easy) read against the picture: it describes what is drawn, with no contradiction; language natural and consistent with the chapter's opening question.
-
-## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+batch delta review (only key_concepts changed): scratchpad kc/r3-fy5-1-390.png and kc/r3-fy5-1-1280.png (section cut from preview/fi-easy/fy5-1.html; sheets r3sheet390.png, r3sheet1280.png). Bold term over plain explanation at 390 px, two columns at 1280 px, no overflow, no KaTeX errors, nothing clipped; explanations plain and fluent, physics unchanged.

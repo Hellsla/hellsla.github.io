@@ -1,16 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: bab63e285c7c5f09
+CONTENT-HASH: b9da60a25afc59db
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] hero: the sun with rays is the most decorative element and draws the eye away from the swing; optional to tone down.
 
 ## Checked
-- Delta (illustration only). Opened fy5-7-top-390 (fi), fy5-7-intro-1280 (fi), fy5-7-fig-1-390 in fi, en and fi-easy (same picture in all three, only rendering noise differs).
-- Hero is a flat vector scene in the figure palette on the paper tone, no text in the picture, subject in the middle third, readable at 366 px width, nothing clipped except the intended close-up crop; 16:9-ish column width, layout around it intact.
-- Alt text (fi-easy) read against the picture: it describes what is drawn, with no contradiction; language natural and consistent with the chapter's opening question.
-
-## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 5
+batch delta review (only key_concepts changed): scratchpad kc/r3-fy5-7-390.png and kc/r3-fy5-7-1280.png (section cut from preview/fi-easy/fy5-7.html; sheets r3sheet390.png, r3sheet1280.png). Bold term over plain explanation at 390 px, two columns at 1280 px, no overflow, no KaTeX errors, nothing clipped; explanations plain and fluent, physics unchanged.

@@ -1,16 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 9cb596630b684518
+CONTENT-HASH: 19663d769f7d19b6
 
 ## Blocking
-- none
 
 ## Polish
-- none
 
 ## Checked
-- fy5-15-intro-1280: uusi tavoite rivittyy kolmeen riviin laatikossa, ei leikkaannu; kuva ja Pohjatiedot ennallaan.
-- Teksti on selkokielistä, grammaattisesti oikea; ei LaTeX-muutoksia.
-- Muut kaappaukset ennallaan (muutos vain inquiry.json learn-rivi).
-
-## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+batch delta review (only key_concepts changed): scratchpad kc/r3-fy5-15-390.png and kc/r3-fy5-15-1280.png (section cut from preview/fi-easy/fy5-15.html; sheets r3sheet390.png, r3sheet1280.png). Bold term over plain explanation at 390 px, two columns at 1280 px, no overflow, no KaTeX errors, nothing clipped; explanations plain and fluent, physics unchanged.

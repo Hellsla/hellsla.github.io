@@ -1,14 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: d431b09626d1bc1c
+CONTENT-HASH: 43ae3340c1c46a8c
 
 ## Blocking
 (none)
 
 ## Polish
-- lesson.md (hero) — Polish: the closing sentence of the alt text ('this raises the question...') does a job the Pohdinta already does; the alt text may describe only what is seen.
+- meta.json "painopiste" — "Symmetrisen kappaleen painopiste on sen keskellä" holds only for uniform bodies — "Tasapaksun symmetrisen kappaleen painopiste on sen keskellä."
 
 ## Checked
-- Delta only: the hero illustration and its alt text; the rest of the lesson is as previously approved.
-- Plank on two trestles, painter between them, a can on the unsupported overhang: this is exactly the Pohdinta situation. Nothing is annotated, so the answer is not given. Statics is plausible (painter's weight between supports, can on the overhang, nothing beneath it).
-- The easy-Finnish alt text (short sentences) matches the picture element by element and is in correct language; the opening question's wording is unchanged.
-- Hero is legible at 390 px and 1280 px (top captures) and carries no text.
+batch delta review: key_concepts only (3–5 central, glossary-based concepts, plain 1–2 sentence explanations, physics matches the lesson; NOTES.md §12.7); no lesson text changed.

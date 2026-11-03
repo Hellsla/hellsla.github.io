@@ -1,14 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: a2c26ebd45d9e7dd
+CONTENT-HASH: 784e253175187697
 
 ## Blocking
 (none)
 
 ## Polish
-- lesson.md (hero) — Polish: nothing in the picture hints at the sideways motion that the lesson turns on; fine for an opening picture, but a faint motion cue (not an arrow) could be considered.
+(none)
 
 ## Checked
-- Delta only: the hero illustration and its alt text; the rest of the lesson is as previously approved.
-- The ISS against black space with the curved Earth below fits the question (why it does not fall, why astronauts float). No arrows or labels disclose the answer. Station depicted correctly: truss, four pairs of golden solar wings, modules, white radiators.
-- The easy-Finnish alt text (short sentences) matches the picture element by element and is in correct language; the opening question's wording is unchanged.
-- Hero is legible at 390 px and 1280 px (top captures) and carries no text.
+batch delta review: key_concepts only (3–5 central, glossary-based concepts, plain 1–2 sentence explanations, physics matches the lesson; NOTES.md §12.7); no lesson text changed.
