@@ -46,7 +46,7 @@
 **Conversions:** $P = 6.0\,\text{W} = 0.0060\,\text{kW}$; burning time in a year $t = 365 \cdot 5.0\,\text{h} = 1825\,\text{h}$
 **Substitution:** $E = 0.0060\,\text{kW} \cdot 1825\,\text{h} = 10.95\,\text{kWh}$
 **Answer:** $11\,\text{kWh}$, two significant figures like the power $6.0\,\text{W}$ and the time $5.0\,\text{h}$.
-**Reasonableness:** In a day the lamp uses $6\,\text{W} \cdot 5\,\text{h} = 30\,\text{Wh}$, and $365 \cdot 30\,\text{Wh} \approx 11\,000\,\text{Wh} = 11\,\text{kWh}$. The lighting of a whole year with one LED lamp uses roughly the same amount of energy (slightly more) as one sauna session of an hour and a half with a $6\,\text{kW}$ stove ($9.0\,\text{kWh}$).
+**Reasonableness:** In a day the lamp uses $6\,\text{W} \cdot 5\,\text{h} = 30\,\text{Wh}$, and $365 \cdot 30\,\text{Wh} \approx 11\,000\,\text{Wh} = 11\,\text{kWh}$. The lighting of a whole year with one LED lamp uses roughly the same energy as one sauna session of an hour and a half with a $6\,\text{kW}$ stove ($9.0\,\text{kWh}$); the lamp's energy is slightly larger.
 
 ## fy6-7-L2-01
 **Given:** the powers and times of the three phases of the wash program from the graph $(t, P)$
