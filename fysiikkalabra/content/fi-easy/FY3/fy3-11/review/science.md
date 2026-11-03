@@ -1,14 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: f2b6f9c335faa267
+CONTENT-HASH: ece51be74ef11ee8
 
 ## Blocking
 (none)
 
-## Fixed
-- none needed
-
 ## Polish
-- None. (W_k, E_s, Q_ulko, Q_sisälle are the Finnish symbols, as in the Finnish source; the stale mark came from the English-only relabelling.)
+- none
 
 ## Checked
-Translation review of lesson.md, inquiry.json, exit-ticket.json, figures.json and meta.json against the reviewed Finnish. Script comparison of every number and inline formula: no difference. Same physics and sign convention (dU = Q - W_k, W = -W_k), worked example 38,0 % / 310 MW and 88,0 % / 60 MW, COP can exceed 1, no work without volume change. Symbols as in the Finnish in text, figures and the sim label (lang/fi-easy.json wk = W_k). check_i18n 0 errors.
+- batch delta review, round 2 (diff cc7b2aeb..debc61a4): yhteistuotanto key concept now says the condenser heat is recovered, consistent with the hukkalämpö entry and the 60 MW worked example; no other content changed.

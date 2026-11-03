@@ -633,6 +633,8 @@ The station and the astronaut are in free fall: only gravity acts on each, and e
   <foreignObject x="427.5" y="341.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$N = 0$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy5/iss-from-soyuz.webp" alt="The International Space Station with its solar panels against black space. The cloudy surface of the Earth is visible below."><figcaption>The International Space Station photographed from a Soyuz spacecraft in October 2018. The station is always in free fall towards the Earth, but its orbital speed is so high that it never hits the Earth.</figcaption></figure>
+
 The same state can be experienced for a moment on the Earth too: during a jump, in a freely falling lift, or in an aeroplane whose engines are adjusted so that it flies along the path of a projectile. Weightlessness is not explained by any "centrifugal force" cancelling gravity. If some force cancelled gravity, the net force would be zero, and the station would continue straight ahead and would not orbit the Earth.
 
 ## When the circular model holds {Milloin ympyrämalli pätee}

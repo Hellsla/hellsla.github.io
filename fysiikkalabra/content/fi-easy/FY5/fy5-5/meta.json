@@ -14,6 +14,20 @@
     "gravitaatiovakio",
     "gravitaatiokenttä"
   ],
+  "key_concepts": [
+    {
+      "term": "gravitaatiolaki",
+      "explain": "Kaksi kappaletta vetää toisiaan. Voima kasvaa, kun massat kasvavat, ja pienenee nopeasti, kun etäisyys kasvaa."
+    },
+    {
+      "term": "gravitaatiovakio",
+      "explain": "Gravitaatiolain kerroin. Se on sama kaikkialla maailmankaikkeudessa ja hyvin pieni luku."
+    },
+    {
+      "term": "gravitaatiokenttä",
+      "explain": "Kappaleen ympärillä oleva alue, jossa jokaiseen kappaleeseen vaikuttaa gravitaatiovoima."
+    }
+  ],
   "sim": true,
   "solutions": "all",
   "image": false

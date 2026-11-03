@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 3aac895d6334731d
+CONTENT-HASH: 2ce88826c9341888
 
 ## Blocking
 (none)
@@ -8,4 +8,4 @@ CONTENT-HASH: 3aac895d6334731d
 (none)
 
 ## Checked
-batch delta review: chapter title renamed in heading/meta and the cross-reference to fy5-2 updated to its new title; physics text unchanged; restyled figure lines not judged beyond the capture list. Every changed chapter reference names the renamed chapter that holds the cited content, and no old title remains.
+batch delta review: added meta.json key_concepts (Luvun tärkeät käsitteet) checked term by term against the lesson's own definitions, summary and the physics guardrails; no number, formula or choice changed. Terms: vääntövaikutus, kiertoakseli, voiman varsi (kohtisuora etäisyys vaikutussuorasta) and momentti = voima kertaa varsi, newtonmetri, all as in the theory.

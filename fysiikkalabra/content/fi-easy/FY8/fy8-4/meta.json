@@ -1,0 +1,34 @@
+{
+  "id": "fy8-4",
+  "course": "FY8",
+  "title": "Valo ja elektroni aaltoina ja hiukkasina",
+  "goals": [
+    "LOPS FY8: fotoni sähkömagneettisen säteilykentän kvanttina",
+    "Täsmennys: fotonia kuvataan usealla mallilla (kentän tila, kentän kvantti, kvanttihiukkanen, vuorovaikutuksen välittäjä); Comptonin ilmiö; kaksoisrakokoe yksittäisillä fotoneilla ja elektroneilla. De Broglien aallonpituutta ei käsitellä (opettajan päätös 2026-11-03)"
+  ],
+  "prerequisites": [
+    "fy8-3"
+  ],
+  "glossary": [
+    "aalto-hiukkasdualismi",
+    "Comptonin ilmiö",
+    "kaksoisrakokoe"
+  ],
+  "key_concepts": [
+    {
+      "term": "kaksoisrakokoe",
+      "explain": "Koe, jossa valo tai elektronit kulkevat kahden kapean raon läpi. Varjostimelle syntyy kirkkaita ja tummia raitoja."
+    },
+    {
+      "term": "Comptonin ilmiö",
+      "explain": "Röntgensäteily siroaa aineesta, ja sironneen säteilyn aallonpituus on pidempi kuin tulevan säteilyn."
+    },
+    {
+      "term": "aalto-hiukkasdualismi",
+      "explain": "Samalla kohteella, esimerkiksi fotonilla tai elektronilla, on sekä aalto- että hiukkasominaisuuksia."
+    }
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

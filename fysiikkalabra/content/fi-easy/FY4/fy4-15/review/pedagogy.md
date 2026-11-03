@@ -1,12 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 8790c66c1442ce43
+CONTENT-HASH: 416f3e3f208ee89b
 
 ## Blocking
+(none)
 
 ## Polish
-
+(none)
 
 ## Checked
-Compared the stage structure and wording of the inquiry (hook, review, two predictions, two data tasks, conclusion, reflect, find-the-error, transfer, three checks, exit ticket) with the Finnish: same activities, hints and feedback gating, criteria and model answers.
-Sentences clearly shorter than the Finnish (long sentences split, same content); chapter names in Finnish, learn goals complete the lead-in; never identical to fi.
-Rendered page built with build.py fy4-15 and checked with check_layout.py fy4-15 (no overflow in fi-easy); figures fit.
+batch delta review: key_concepts judged against NOTES.md §12 and the editorial standard (central concepts, plain 1–2 sentence explanations, natural Finnish, physics unchanged); lesson rewordings, photos and captions, experiment/prompt wording and solution diagrams in this diff read clearly and agree with the tasks they touch.

@@ -17,6 +17,28 @@
     "resistiivisyys",
     "ominaiskäyrä"
   ],
+  "key_concepts": [
+    {
+      "term": "resistanssi",
+      "explain": "Kertoo, kuinka voimakkaasti komponentti vastustaa sähkövirtaa. Se on jännitteen ja virran suhde."
+    },
+    {
+      "term": "Ohmin laki",
+      "explain": "Metallijohtimen virta on suoraan verrannollinen jännitteeseen, kun johtimen lämpötila pysyy samana."
+    },
+    {
+      "term": "vastus",
+      "explain": "Virtapiirin osa, jolla on tietty resistanssi. Piirrosmerkki on suorakulmio."
+    },
+    {
+      "term": "resistiivisyys",
+      "explain": "Aineen ominaisuus. Se kertoo, kuinka huonosti aine johtaa sähköä."
+    },
+    {
+      "term": "ominaiskäyrä",
+      "explain": "Kuvaaja, joka näyttää, miten komponentin jännite ja virta riippuvat toisistaan."
+    }
+  ],
   "sim": true,
   "solutions": "all",
   "image": false

@@ -1,0 +1,46 @@
+{
+  "id": "fy8-2",
+  "course": "FY8",
+  "title": "Spektrit paljastavat atomin energiatasot",
+  "goals": [
+    "LOPS FY8: energian kvantittuminen aineen ja säteilyn vuorovaikutuksessa",
+    "Kokeellisesti: spektrin mittaaminen; spektrin muutoksen tarkastelu fluoresenssi-ilmiössä",
+    "Täsmennys: energiatilat ymmärretään elektroniverhon kvantittuneiksi tiloiksi emissio- ja absorptiospektreistä",
+    "Temaattinen yhteys (valinnainen laatikko): kasvihuonekaasujen absorptio ja ilmastonmuutos"
+  ],
+  "prerequisites": [
+    "fy8-1"
+  ],
+  "glossary": [
+    "emissiospektri",
+    "absorptiospektri",
+    "viivaspektri",
+    "energiatila",
+    "fluoresenssi"
+  ],
+  "key_concepts": [
+    {
+      "term": "viivaspektri",
+      "explain": "Spektri, jossa on vain tiettyjä aallonpituuksia. Kuuma ohut kaasu antaa viivaspektrin."
+    },
+    {
+      "term": "emissiospektri",
+      "explain": "Kirkkaat värilliset viivat, jotka kaasu lähettää. Jokaisella alkuaineella on omat viivansa."
+    },
+    {
+      "term": "absorptiospektri",
+      "explain": "Tummat viivat jatkuvassa spektrissä, kun valo kulkee kaasun läpi ja kaasu imee tietyt aallonpituudet."
+    },
+    {
+      "term": "energiatila",
+      "explain": "Atomin sallittu energia. Atomilla voi olla vain tiettyjä energioita."
+    },
+    {
+      "term": "fluoresenssi",
+      "explain": "Aine absorboi lyhytaaltoista valoa, yleensä ultraviolettia, ja lähettää heti pidempiaaltoista näkyvää valoa."
+    }
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

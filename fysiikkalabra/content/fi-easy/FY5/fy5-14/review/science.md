@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 56cfec165120dd17
+CONTENT-HASH: ef5aa0e95b1398de
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- Doppler-ilmiö names only a moving source; the lesson also treats a moving listener.
 
 ## Checked
-batch delta review: references to fy5-3, fy5-10, fy5-12, fy5-13, fy5-15 updated in prior, feedback, hint and theory; physics and numbers unchanged. Every changed chapter reference names the renamed chapter that holds the cited content, and no old title remains.
+batch delta review: added meta.json key_concepts (Luvun tärkeät käsitteet) checked term by term against the lesson's own definitions, summary and the physics guardrails; no number, formula or choice changed. Terms: äänenkorkeus (frequency), sointiväri, huojunta (two nearly equal frequencies), Doppler direction and ultraääni agree with the lesson.

@@ -1,12 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: a09a92f43c1ee5bb
-
+CONTENT-HASH: 1a73dd0ab284e663
 ## Blocking
-(none)
 
 ## Polish
-(none)
 
 ## Checked
-- Same structure as the Finnish, nothing dropped; sentences are short and key terms are explained in place, so it is a real plain-language version, not a copy.
-- Re-review: the changed sentence 'hehkulangan sisäenergiaksi' is short and keeps the plain style; 'sisäenergia' is used the same way as in the lesson text.
+batch delta review: added meta.json key_concepts ("Luvun tärkeät käsitteet") read against lesson.md, inquiry.json and exit-ticket.json: each term is one the lesson bolds and uses; I checked that each explanation is clear S2 Finnish and consistent with the lesson's definition.

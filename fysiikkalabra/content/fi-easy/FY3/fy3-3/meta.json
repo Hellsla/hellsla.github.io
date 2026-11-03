@@ -16,6 +16,28 @@
     "kelvin",
     "absoluuttinen nollapiste"
   ],
+  "key_concepts": [
+    {
+      "term": "systeemi",
+      "explain": "Se kappale tai aine, jota tutkitaan. Kaikki muu on ympäristöä."
+    },
+    {
+      "term": "tilanmuuttuja",
+      "explain": "Suure, joka kuvaa systeemin tilaa, esimerkiksi paine, tilavuus tai lämpötila."
+    },
+    {
+      "term": "paine",
+      "explain": "Kertoo, kuinka suuri voima kohdistuu eli osuu pinnalle pinta-alaa kohti. Kaasun paine syntyy hiukkasten törmäyksistä."
+    },
+    {
+      "term": "lämpötila",
+      "explain": "Kertoo, kuinka voimakkaasti aineen hiukkaset liikkuvat. Lämpötila ei ole sama asia kuin aineen energia."
+    },
+    {
+      "term": "absoluuttinen nollapiste",
+      "explain": "Alin mahdollinen lämpötila. Se on kelvinasteikon nollakohta."
+    }
+  ],
   "sim": true,
   "image": false
 }

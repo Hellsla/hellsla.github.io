@@ -16,6 +16,20 @@
     "sulamislämpö",
     "lämpötasapaino"
   ],
+  "key_concepts": [
+    {
+      "term": "lämpötasapaino",
+      "explain": "Tila, jossa lämpötilat ovat samat, joten lämpöä ei enää siirry."
+    },
+    {
+      "term": "sulamislämpö",
+      "explain": "Energia, joka tarvitaan kiinteän aineen sulattamiseen. Kun puhdas aine sulaa vakiopaineessa, sen lämpötila pysyy samana."
+    },
+    {
+      "term": "ominaissulamislämpö",
+      "explain": "Kertoo, kuinka paljon energiaa tarvitaan yhden kilogramman sulattamiseen."
+    }
+  ],
   "sim": true,
   "solutions": "all",
   "image": false

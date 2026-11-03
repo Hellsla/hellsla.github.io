@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Kirjoita typpiatomin (seitsemän elektronia) elektronikonfiguraatio perustilassa.",
+    "a": "$1\\text{s}^2\\,2\\text{s}^2\\,2\\text{p}^3$: kaksi elektronia $1\\text{s}$-orbitaalilla, kaksi $2\\text{s}$-orbitaalilla ja kolme $2\\text{p}$-alikuorella, yhteensä seitsemän."
+  },
+  {
+    "q": "Miksi kitaran kieli voi värähdellä vain tietyillä tavoilla, ja mitä sama ajatus tarkoittaa atomin elektronille?",
+    "a": "Kielen päät pysyvät paikallaan, joten seisovan aallon solmujen on osuttava päihin, ja vain tietyt aallon muodot sopivat kieleen. Ytimen sitoman elektronin aalto voi samoin olla vain tietyissä seisovissa muodoissa, ja kullakin muodolla on oma energiansa, joten elektronin energia on kvantittunut."
+  }
+]

@@ -18,6 +18,28 @@
     "satunnaisvirhe",
     "toistettavuus"
   ],
+  "key_concepts": [
+    {
+      "term": "mittausvirhe",
+      "explain": "Mittaustuloksen ja oikean arvon ero. Sitä ei yleensä tiedetä, koska oikeaa arvoa ei tiedetä."
+    },
+    {
+      "term": "karkea virhe",
+      "explain": "Selvä erehdys, esimerkiksi väärin luettu lukema tai väärä yksikkö."
+    },
+    {
+      "term": "satunnaisvirhe",
+      "explain": "Virhe, joka vaihtelee mittauksesta toiseen. Tulos on välillä liian suuri ja välillä liian pieni."
+    },
+    {
+      "term": "systemaattinen virhe",
+      "explain": "Virhe, joka on joka mittauksessa lähes samanlainen, esimerkiksi mittarin väärä nollakohta. Toistaminen ei poista sitä."
+    },
+    {
+      "term": "mittausepävarmuus",
+      "explain": "Arvio siitä, kuinka paljon mittaustulos voi poiketa oikeasta arvosta."
+    }
+  ],
   "sim": true,
   "solutions": "all",
   "image": false

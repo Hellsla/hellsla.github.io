@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 7598b5f8e14f77df
+CONTENT-HASH: 291341ab171a800c
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- heijastuslaki: the lesson measures both angles from the normal; "normaaliin nähden" would match it. The sentence is not wrong as written.
 
 ## Checked
-batch delta review: references to fy5-10 updated in prior, feedbacks and one solution (lambda = 0,030 m, b/lambda = 1,5 recomputed); heading/meta renamed. Every changed chapter reference names the renamed chapter that holds the cited content, and no old title remains.
+batch delta review: added meta.json key_concepts (Luvun tärkeät käsitteet) checked term by term against the lesson's own definitions, summary and the physics guardrails; no number, formula or choice changed. Terms: heijastuminen, heijastuslaki, Huygensin periaate and diffraktio agree with the lesson.

@@ -1,8 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 45e4384ef05ae3bc
+CONTENT-HASH: bf5fa376fbf61f32
+
 ## Blocking
+(none)
 
 ## Polish
+(none)
 
 ## Checked
-batch delta review: hero illustration aria-label (fi-easy) compared with the Finnish description and the rendered picture; faithful, natural, complete, no Finnish left.
+Round 2 delta (b8a6e1bb): päästökerroin now explains the hard word in plain terms.
