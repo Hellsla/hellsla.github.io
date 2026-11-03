@@ -1,13 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: e43accd7c2b6f421
+CONTENT-HASH: 53a6c9035667e48c
 
 ## Blocking
 
 ## Polish
 
-
 ## Checked
-Compared lesson.md, inquiry.json (all activities: hints, feedback, solutions, model answers, criteria, experiment table labels), exit-ticket.json, meta.json, figures.json and the simulation labels with the Finnish: every number, formula, step and justification kept, nothing added, decimal point everywhere, chapter names in English.
-Physics terms (weight, normal force, tension, net force, action-reaction pair, free-body diagram) correct; tension never equated with weight; figure descriptions and experiment table labels have no Finnish left.
-Fixed: the Why question said "a weight hanging" where the Finnish has a hanging mass; now "a mass hanging". Restored "free-body diagram:" in the figure labels (shortened by the translator to "forces on ..."), using "light"/"heavy" for the two hanging bodies so they do not overflow.
-Figures with translated labels: figures.py --check ok; check_layout ok at 360, 768 and 1280 px; check_latex ok; check_i18n clean.
+Delta review: experiment names for the situation selector now "situation" instead of Finnish "tilanne" (two experiments). The simulation's two-body free-body diagram captions come from lang/en.json sims.fy4-13.vk1_kaksi / vk2_kaksi: "Free-body diagram: m_1" / "m_2", same content as Finnish "Voimakuvio: m_1" / "m_2", same form as vk1/vk2. check_i18n 0 errors.

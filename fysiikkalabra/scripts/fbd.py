@@ -252,7 +252,7 @@ class FBD:
                         extra=f'transform="rotate({n(-ang)} {n(cx)} {n(cy)})"' if ang else "")
         for x in self.forces: self._arrow(x, solid=True, size=label_size)
         for c in self.comps:
-            c = dict(c); c["at"] = c["at"] or next(x for x in self.forces if x["sym"] == c["of"])["at"]
+            c = dict(c); c["at"] = c["at"] or self._ends(next(x for x in self.forces if x["sym"] == c["of"]))[0]   # from the force's tail, a push's too (Lauri 2026-11-02)
             self._arrow(c, solid=False, size=label_size)
         return self
 
@@ -303,7 +303,8 @@ class FBD:
 def _bold(sym):
     """\\overline{G}, \\overline{F}_\\mu, \\overline{T}_1 from "G", "F_mu", "T_1"."""
     base, _, sub = sym.partition("_")
-    sub = {"mu": r"\mu"}.get(sub, sub)
+    parts = [{"mu": r"\mu"}.get(x, x) for x in sub.split("_")] if sub else []
+    sub = (parts[0] + "".join((" " if p.startswith("\\") else "") + x for p, x in zip(parts, parts[1:]))) if parts else ""   # T_1_y -> T_{1y}, no nested subscript (visual audit 2026-11-01)
     return rf"\overline{{{base}}}" + (f"_{{{sub}}}" if sub else "")
 
 

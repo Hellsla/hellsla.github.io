@@ -1,13 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: e95e5bdb3da21812
+CONTENT-HASH: 5f6408d1178c112c
 
 ## Blocking
 
 ## Polish
 
-
 ## Checked
-Checked that the exercise texts and solutions are plainer than the Finnish (sentences split, common words) without dropping any step, justification or check; the files are not identical to the Finnish.
-Each of the 12 solutions has all parts (annettu to järkevyys) and a justified number of significant figures.
-Question last, situation first; the diagram instruction kept where the Finnish has it.
-Rechecked the later change to task fy4-13-L2-04: the Substitution (Sijoitus) line now factors the units, matches the Finnish change exactly with decimal comma {,}, nothing else changed; check_i18n clean.
+Full re-review after the malli-ketju label nudge (figures.py lab= of T_1 and upper T_2; nothing else changed since the last pass). Exercise texts and solutions judged against the reviewed Finnish source: every number in exercises.json (119) and solutions.md (620) equals the Finnish; L2-01 task, solution and voimakuvio blocks match the Finnish and the figure. Rendered malli-ketju in the opened L2-01 solution at 360 px: translated captions and labels readable and clear of each other, arrows to scale (T_1 88 px, G_1 49, T_2 33 in both diagrams, G_2 29,5 at S = 0,10), translated description matches the drawing. Answers recomputed: correct. check_i18n 0 errors.

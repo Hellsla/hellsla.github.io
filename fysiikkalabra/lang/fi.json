@@ -21,6 +21,11 @@
     "logo": "ruukkilabra-logo-fi.svg",
     "main_menu": "Päävalikko",
     "modules": "Moduulit",
+    "reading_tips": "Lukuvinkit",
+    "reading_loan": "Lainattavissa Laurilta",
+    "reading_language": "Kieli",
+    "reading_level": "Vaativuus",
+    "reading_courses": "Sopii erityisesti",
     "breadcrumb": "Polku",
     "footer": "Ruukkilabra · lukion fysiikka, LOPS 2019",
     "back_to_course": "← {{course}}-moduuli",
@@ -1077,6 +1082,8 @@
       "tilannekuva": "$\\text{Tilannekuva}$",
       "vk1": "$\\text{Voimakuvio: kärry}$",
       "vk2": "$\\text{Voimakuvio: punnus}$",
+      "vk1_kaksi": "$\\text{Voimakuvio: }m_1$",
+      "vk2_kaksi": "$\\text{Voimakuvio: }m_2$",
       "lukemat1": "$G_1 = {{G1}}\\,\\text{N}$, $G_2 = {{G2}}\\,\\text{N}$, $T = {{T}}\\,\\text{N}$<br>$\\Sigma F_1 = {{s1}}\\,\\text{N}$, $\\Sigma F_2 = {{s2}}\\,\\text{N}$<br><strong>$a = {{a}}\\,\\text{m/s}^2$</strong>, $v = {{v}}\\,\\text{m/s}$, $t = {{t}}\\,\\text{s}$",
       "lukemat2": "$G_1 = {{G1}}\\,\\text{N}$, $G_2 = {{G2}}\\,\\text{N}$, $T = {{T}}\\,\\text{N}$<br>$\\Sigma F_1 = {{s1}}\\,\\text{N}$, $\\Sigma F_2 = {{s2}}\\,\\text{N}$<br><strong>$a = {{a}}\\,\\text{m/s}^2$</strong>, $v = {{v}}\\,\\text{m/s}$, $t = {{t}}\\,\\text{s}$"
     },
@@ -1115,7 +1122,11 @@
       "normaali": "normaali",
       "nopea": "nopea",
       "selite": "Sininen nuoli on vaunun nopeus. Palkit näyttävät energiat samassa mittakaavassa.",
-      "lukemat": "<strong>$v_\\text{pohja} = {{vp}}\\,\\text{m/s}$, $h_2 = {{h2}}\\,\\text{m}$</strong><br>$h = {{h}}\\,\\text{m}$, $v = {{v}}\\,\\text{m/s}$, $s = {{s}}\\,\\text{m}$<br>$E_\\text{p} = {{Ep}}\\,\\text{kJ}$, $E_\\text{k} = {{Ek}}\\,\\text{kJ}$, $E_\\text{mek} = {{Em}}\\,\\text{kJ}$<br>$W_\\text{muut} = {{W}}\\,\\text{kJ}$, $\\Delta E_\\text{mek} = {{dE}}\\,\\text{kJ}$"
+      "lukemat": "<strong>$v_\\text{pohja} = {{vp}}\\,\\text{m/s}$, $h_2 = {{h2}}\\,\\text{m}$</strong><br>$h = {{h}}\\,\\text{m}$, $v = {{v}}\\,\\text{m/s}$, $s = {{s}}\\,\\text{m}$<br>$E_\\text{p} = {{Ep}}\\,\\text{kJ}$, $E_\\text{k} = {{Ek}}\\,\\text{kJ}$, $E_\\text{mek} = {{Em}}\\,\\text{kJ}$<br>$W_\\text{muut} = {{W}}\\,\\text{kJ}$, $\\Delta E_\\text{mek} = {{dE}}\\,\\text{kJ}$",
+      "energia": "$\\text{Energia}$",
+      "emek1": "$E_{\\text{mek},1}$",
+      "emek": "$E_\\text{mek}$",
+      "wmuut": "$W_\\text{muut}$"
     },
     "fy4-6": {
       "kaynnista": "Käynnistä",

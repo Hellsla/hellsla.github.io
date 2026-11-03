@@ -130,7 +130,8 @@
     if (!activeExp) { if (simContext) simContext.textContent = ''; return; }
     const act = activeExp.ex.closest('.activity'); act.classList.add('is-active');
     if (simContext) {
-      const title = act.querySelector('h3')?.textContent.trim() || '';
+      const sum = act.parentElement.closest('details')?.querySelector(':scope > summary');   // an optional experiment's title is its box's summary
+      const title = act.querySelector('h3')?.textContent.trim() || (sum ? [...sum.childNodes].filter((n) => !n.classList?.contains('opt-tag')).map((n) => n.textContent).join('').trim() : '');
       simContext.innerHTML = msg('sim_in_use'); const a = simContext.querySelector('a'); a.href = '#' + activeExp.id; a.textContent = title;
     }
   };

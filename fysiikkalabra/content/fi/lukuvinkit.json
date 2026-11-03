@@ -1,0 +1,41 @@
+{
+  "title": "Lukuvinkit",
+  "subtitle": "Fysiikkaa oppikirjan ulkopuolelta",
+  "description": "Neljätoista kirjaa fysiikasta oppikirjan ulkopuolelta: fysiikan historiaa, arkisia ilmiöitä, ajatuskokeita ja erikoisempiakin kysymyksiä.",
+  "intro": [
+    "Fysiikka ei ole vain kaavoja ja laskutehtäviä. Se on myös tarinoita, yllättäviä kysymyksiä, kokeiluja ja yrityksiä ymmärtää maailmaa.",
+    "Näistä kirjoista voit löytää uusia näkökulmia tuttuihin ilmiöihin tai tutustua fysiikkaan, jota ei ehditä käsitellä oppitunneilla. Kaikkia kirjoja ei tarvitse lukea alusta loppuun. Voit aloittaa yhdestä kiinnostavasta luvusta."
+  ],
+  "list_lead": "Jos fysiikka kiinnostaa, kannattaa tutustua myös näihin kirjoihin. Mukana on fysiikan historiaa, arkisia ilmiöitä, ajatuskokeita ja vähän erikoisempiakin kysymyksiä.",
+  "loan_note": "Listan yhdeksän ensimmäistä kirjaa löytyvät omasta hyllystäni, joten niitä saa ja kannattaa kysyä lainaan!",
+  "books": [
+    {"title": "Herra Tompkins fysiikan ihmemaassa", "url": "https://www.finna.fi/Record/kirkes.214299", "author": "George Gamow", "language": "suomi", "level": "helppo–keskitaso", "loan": true,
+     "text": "Mitä tapahtuisi, jos valonnopeus olisi yhtä pieni kuin autojen nopeus? Mielikuvitukselliset seikkailut tekevät suhteellisuusteorian ja kvanttifysiikan erikoisista ilmiöistä ymmärrettäviä.", "courses": "FY1, FY4, FY8"},
+    {"title": "Kuolleiden kanssa kassajonossa – Tieteellistä aikamatkailua", "url": "https://www.finna.fi/Record/piki.380141", "author": "Leena Tähtinen", "language": "suomi", "level": "keskitaso", "loan": true,
+     "text": "Voisiko menneisyyteen matkustaa? Entä tulevaisuuteen? Kirja tutkii aikaa ja aikamatkailun mahdollisuuksia fysiikan näkökulmasta.", "courses": "FY1, FY8"},
+    {"title": "Entäs jos… / What If?", "url": "https://www.finna.fi/Record/helmet.2230488", "author": "Randall Munroe", "language": "suomi / englanti", "level": "helppo", "loan": true,
+     "text": "Mitä tapahtuisi, jos kaikki maailman ihmiset hyppäisivät yhtä aikaa? Hullunkurisista kysymyksistä syntyy yllättävän vakavaa fysiikkaa ja hauskoja laskelmia.", "courses": "FY1–FY4"},
+    {"title": "What If? 2: Additional Serious Scientific Answers to Absurd Hypothetical Questions", "url": "https://www.hachette.co.uk/titles/randall-munroe/what-if2/9781473680623/", "author": "Randall Munroe", "language": "englanti", "level": "helppo", "loan": true,
+     "text": "Lisää mielikuvituksellisia kysymyksiä ja tieteellisiä vastauksia. Voisiko maapallon ilmakehää viilentää avaamalla kaikki pakastimet yhtä aikaa? Kirja osoittaa, miten fysiikan avulla voidaan tutkia lähes mitä tahansa kysymystä.", "courses": "FY1–FY4"},
+    {"title": "Seitsemän lyhyttä luentoa fysiikasta", "url": "https://www.finna.fi/Record/eepos.1335662", "author": "Carlo Rovelli", "language": "suomi", "level": "helppo–keskitaso", "loan": true,
+     "text": "Lyhyt ja ajatuksia herättävä kirja modernin fysiikan suurista ideoista: suhteellisuusteoriasta, kvanttifysiikasta ja maailmankaikkeudesta.", "courses": "FY1, FY8"},
+    {"title": "The Physics of Superheroes", "url": "https://kakalios.com/books/the-physics-of-superheroes/", "author": "James Kakalios", "language": "englanti", "level": "helppo–keskitaso", "loan": true,
+     "text": "Voisiko Hämähäkkimies todella heilua seittinsä varassa? Kuinka nopeasti Flash voisi juosta? Entä miten Teräsmiehen voimat suhtautuvat Newtonin lakeihin? Kirja tarkastelee supersankarien kykyjä oikean fysiikan avulla.", "courses": "FY2–FY5, FY7"},
+    {"title": "Ajan lyhyt historia", "url": "https://www.finna.fi/Record/vaari.2641475", "author": "Stephen Hawking", "language": "suomi", "level": "keskitaso–vaativa", "loan": true,
+     "text": "Mistä maailmankaikkeus tuli? Mitä mustat aukot ovat? Onko ajalla alku tai loppu? Modernin kosmologian tunnettu klassikko.", "courses": "FY1, FY8"},
+    {"title": "Pimeän aineen arvoitus", "url": "https://kansalliskirjasto.finna.fi/Record/vaari.2126029", "author": "Tommi Tenkanen", "language": "suomi", "level": "keskitaso", "loan": true,
+     "text": "Suurin osa maailmankaikkeuden aineesta on näkymätöntä. Mistä tiedämme sen olevan olemassa, ja mitä se voisi olla?", "courses": "FY1, FY8"},
+    {"title": "Thirty Years That Shook Physics: The Story of Quantum Theory", "url": "https://search.worldcat.org/title/Thirty-years-that-shook-physics-the-story-of-quantum-theory/oclc/594695859", "author": "George Gamow", "language": "englanti", "level": "vaativa", "loan": true,
+     "text": "Kvanttifysiikan vallankumous 1900-luvun ensimmäisinä vuosikymmeninä yhden aikakauden fyysikon kertomana. Mukana ovat Planck, Bohr, Heisenberg, Schrödinger ja muut teorian kehittäjät.", "courses": "FY8, FY14"},
+    {"title": "Storm in a Teacup: The Physics of Everyday Life", "url": "https://www.penguinrandomhouse.com/books/552014/storm-in-a-teacup-by-helen-czerski/", "author": "Helen Czerski", "language": "englanti", "level": "helppo–keskitaso", "loan": false,
+     "text": "Miksi popcorn poksahtaa? Miksi kahvi jättää kuivuessaan renkaan? Arkiset ilmiöt avaavat yhteyksiä fysiikan suuriin periaatteisiin.", "courses": "FY1–FY4"},
+    {"title": "Laskette varmaankin leikkiä, Mr Feynman!", "url": "https://www.finna.fi/Record/vaski.3360977", "author": "Richard P. Feynman", "language": "suomi", "level": "helppo", "loan": false,
+     "text": "Nobel-palkitun fyysikon humoristisia ja joskus hämmästyttäviä muisteluksia. Kirja kertoo ennen kaikkea uteliaisuudesta, kokeilemisesta ja tutkijan tavasta ajatella.", "courses": "FY1, FY10"},
+    {"title": "Fysiikan sankareita viideltä vuosisadalta", "url": "https://www.finna.fi/Record/eepos.3235878", "author": "Heikki Oja", "language": "suomi", "level": "helppo–keskitaso", "loan": false,
+     "text": "Tarinoita fysiikan kehitykseen vaikuttaneista ihmisistä Pascalista Higgsiin. Hyvä valinta, jos haluat tietää, miten fysiikan käsitykset ovat muuttuneet.", "courses": "FY1, FY8, FY14"},
+    {"title": "The Ten Most Beautiful Experiments", "url": "https://www.penguinrandomhouse.com/books/87792/the-ten-most-beautiful-experiments-by-george-johnson/", "author": "George Johnson", "language": "englanti", "level": "keskitaso", "loan": false,
+     "text": "Kymmenen tieteenhistorian merkittävää koetta. Kirja näyttää, miten yksinkertaisesta mutta oivaltavasti suunnitellusta kokeesta voi syntyä suuri tieteellinen löytö.", "courses": "FY1, FY10"},
+    {"title": "The Flying Circus of Physics", "url": "https://www.wiley-vch.de/en/areas-interest/natural-sciences/the-flying-circus-of-physics-978-0-471-76273-7", "author": "Jearl Walker", "language": "englanti", "level": "keskitaso", "loan": false,
+     "text": "Kokoelma erikoisia, hauskoja ja toisinaan vaarallisen näköisiä fysiikan ilmiöitä. Kirja houkuttelee esittämään kysymyksiä ja etsimään selityksiä.", "courses": "FY3–FY5, FY10"}
+  ]
+}

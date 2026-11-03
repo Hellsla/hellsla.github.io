@@ -127,7 +127,7 @@
         "m1": "0.5"
       },
       "names": {
-        "tapa": "tilanne",
+        "tapa": "situation",
         "m1": "mass of the cart m_1",
         "m2": "mass of the hanging mass m_2"
       },
@@ -200,7 +200,7 @@
         "m1": "0.3"
       },
       "names": {
-        "tapa": "tilanne",
+        "tapa": "situation",
         "m1": "mass m_1",
         "m2": "mass m_2"
       },

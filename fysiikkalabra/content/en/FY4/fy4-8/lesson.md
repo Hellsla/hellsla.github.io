@@ -323,7 +323,7 @@ In the chapter *Work and energy* you learned that a force does work when an obje
   <path d="M192,182 L177,189 L177,175 Z" fill="#c92a2a" stroke-linejoin="round"/>
   <foreignObject x="157.5" y="139.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{F}$</div></foreignObject>
   <foreignObject x="77.5" y="247.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$W > 0$</div></foreignObject>
-  <foreignObject x="10" y="281.5" width="180" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{in the direction of motion}$</div></foreignObject>
+  <foreignObject x="10" y="281.5" width="180" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{with the motion}$</div></foreignObject>
   <line x1="200" y1="20" x2="200" y2="310" stroke="#c9c2b2" stroke-width="2" stroke-linecap="butt" stroke-dasharray="6 6"/>
   <rect x="214" y="210" width="172" height="10" fill="#f1dfb5"/>
   <line x1="214" y1="210" x2="386" y2="210" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>

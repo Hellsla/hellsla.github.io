@@ -12,7 +12,7 @@ It also runs the lesson's `answers.py` when present (`python -I answers.py` prin
 {exercise id: numeric answer}) and compares every value with exercises/exercises.json within its tolerance, and
 checks that `lesson-answers.py` (the numbers of the lesson text and inquiry.json, when there are any) runs.
 """
-import json, pathlib, re, subprocess, sys
+import json, math, pathlib, re, subprocess, sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent)); from reviews import status as review_status
 import courses, i18n
@@ -352,12 +352,16 @@ def check_solutions(L, folder, answers):
             L.warn("solutions.md", line, f"{eid}: numbers with units in the Kaava step; keep Kaava symbolic and put the numbers in Sijoitus (human rule 2)")
         words = len(body.split())
         if words > 260: L.warn("solutions.md", line, f"{eid}: {words} words; a complete solution is about 100–220 words, put long reasoning in Periaate and Järkevyys, not in Sijoitus")
-        m = re.search(r"\*\*Vastaus:?\*\*:?\s*([−-]?\d[\d\s]*(?:,\d+)?)", latex_plain(body))
+        m = re.search(r"\*\*Vastaus:?\*\*:?\s*([−-]?\d[\d\s]*(?:,\d+)?)(?:\s*(?:\\cdot|·|\\times|×)\s*10\^\{?([−-]?\d+)\}?)?", latex_plain(body))
         if m and eid in answers:
             ans, tol = answers[eid]
             try: got = fi_float(m.group(1).replace(" ", ""))
             except ValueError: continue
-            if abs(got - ans) > max(tol, 0.005) * max(1, abs(ans)):
+            sci = False
+            if m.group(2):                                  # "−2,6 · 10²": the answer rounded to the mantissa's significant figures (audit 2026-11-03)
+                full = got * 10 ** int(m.group(2).replace("−", "-")); digits = len(re.sub(r"\D", "", m.group(1)).lstrip("0")) or 1
+                sci = ans != 0 and math.isclose(full, float(f"{ans:.{digits}g}"), rel_tol=1e-9)   # else the answer box takes the mantissa (fy3-10)
+            if not sci and abs(got - ans) > max(tol, 0.005) * max(1, abs(ans)):
                 L.err("solutions.md", line, f"{eid}: Vastaus {m.group(1).strip()} does not match exercises.json answer {ans:g}")
 
 
