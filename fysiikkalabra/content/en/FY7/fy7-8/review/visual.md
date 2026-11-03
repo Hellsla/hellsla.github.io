@@ -1,18 +1,19 @@
-VERDICT: FAIL
-CONTENT-HASH: 725adfdc8c3bfd9f
+VERDICT: PASS
+CONTENT-HASH: 5da4632bb8b3a2c1
 
 ## Blocking
-- [Major] simulation canvas (assets/sims/fy7/fy7-8/sim.js:134, seen in sim-390, sim-1280, lab-1280, koe-1 captures) — the green bar legend is drawn as $P_\text{perille}$, a Finnish word visible to English students, while the readout below says $P_\text{arriving}$ — breaks the "no Finnish visible in en" rule and makes the legend and readout look like two different quantities — pass the subscript through the sim's translation function (en "arriving"), as the readout already does.
-- [Major] figure "grid" (fig-7-390, theory-1280-2) — the English label "local substation" (fi "muuntamo") is much longer than the Finnish word and runs under the roof of the house, hiding the "l" and touching the roof line — an overlapping label in a translated figure — shorten or break the label in figures.json (e.g. two lines, or "substation" with a different word for the upper one), or move the label box in figures.py for every language.
+(none) Round-1 blockers verified fixed: the sim legend now reads $P_\text{arriving}$ (sim-390, lab-1280), and the grid figure (fig-7, theory-1280-2) labels the house-side unit "transformer" with nothing under the roof; no Finnish visible in the sim, figures or tables.
 
 ## Polish
-- [Minor] inquiry.json ennuste-dc "pending" — "read the part Core idea of the Theory summary", but the page heading is "Key idea" — use "Key idea".
-- [Minor] inquiry.json kertaus-induktio feedback — "Today the transformer is based on this." is a literal rendering of the Finnish — "The transformer in this chapter is based on this."
-- [Minor] koe-1 table headers — "transmission voltage" has no symbol or unit while the other columns do (same in fi) — "$U$ (kV)".
+- [Minor] figures.json grid description — still says "a local substation, which lowers it to 230 V" while the figure now labels it "transformer"; align the wording (the text also says "local substation").
+- [Minor] inquiry.json ennuste-dc "pending" — refers to the part "Core idea", but the page heading is "Key idea" — use "Key idea".
+- [Minor] inquiry.json kertaus-induktio feedback — "Today the transformer is based on this." is a literal rendering — "The transformer in this chapter is based on this."
+- [Minor] koe-1 table header "transmission voltage" lacks a symbol/unit while the other columns have one — "$U$ (kV)".
+- [Minor] sim "Assumptions of the model and explanation" and "Assumptions of the model" are two adjacent disclosures with near-identical titles (sim-390).
 
 ## Checked
-- contact-1,2,3,5,6; sim-390; lab-1280; theory-1280-1 and -2; fig-7 (grid) and fig-9 (loss graph) at 390; transformer figure and worked example (390 and contact-2); prediction/check/exit captures via contact-2/3/5; exercise captures contact-5/6.
-- Transformer figure, loss graph (axes, units, labelled points, decimal point), maths chains and the hero/charger illustrations are fine.
+- contact-5, contact-6; sim-390; lab-1280; fig-7 (grid) 390; theory-1280-1 and -2 (transformer figure, grid figure, formulas, loss-graph start); exercise captures via contact-5/6.
+- Transformer figure labels, maths chains, units and decimal point are fine; the Finnish source title "Yhteisillä linjoilla" in a citation is a reference, not a label.
 
 ## Scores
-illustrations 3 · typography 5 · Finnish 4 (English) · accessibility 4
+illustrations 4 · typography 5 · Finnish 4 (English) · accessibility 4

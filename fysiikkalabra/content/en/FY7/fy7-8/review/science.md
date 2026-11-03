@@ -1,20 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 725adfdc8c3bfd9f
+CONTENT-HASH: 5da4632bb8b3a2c1
 
 ## Blocking
 
 ## Polish
-- assets/sims/fy7/fy7-8/sim.js:134 — the bar label `$P_\text{perille}$` is hard-coded Finnish and shows on the en page (readout below says P_arriving) — route it through __() like the readout. (Owner rule: no Finnish visible in en.)
-- content/en/FY7/fy7-8/inquiry.json:53 — pending text names "the part Core idea", but the en section is "Key idea" (lang/en.json) — say "Key idea".
-- scripts/review_packet.py:68 (tooling) — exercise brief empty for en; see the exercise report.
 
 ## Checked
-- Every number in lesson.md, inquiry.json and exit-ticket.json matches the reviewed Finnish; the only differences are SVG label coordinates moved for longer English labels.
-- Transformer mechanism (shared changing flux, equal voltage per turn, DC gives zero after switching), power conservation, rms values, laminated core for eddy currents: correct in English.
-- P_h = R I² = R P²/U², and the warning that the transmission voltage is not across the line resistance (drop RI) kept intact.
-- Worked example recomputed: N1 = 1980, I1 = 81.82 A → 82 A, power check 9.0 MW.
-- Predictions: one correct option each; model values 2000/1000/500 A and 24/6.0/1.5 MW at 100/200/400 kV with R = 0.040 Ω/km · 150 km = 6.0 Ω recomputed; sim screenshot (1.50 MW, 0.75 %, 198.5 MW, N2:N1 = 20) agrees.
-- koe-1 locks P and l and varies U only.
-- virhe: 2.7·10¹⁰ W, 27 kW distractor, RI = 3.0 kV recomputed; siirto 720 kW with mistakes 1 512 500 / 2.4 / 0.72 recomputed; tarkistus-2 0.2609 A, mistakes 5.0 / 95.83 A.
-- Model answers and exit ticket (11.5 V; a third of the current → a ninth of the loss) match the theory.
+- Round 2: the diff since round 1 (930a3e02) is the sim bar label, the "Key idea" pending text, the grid figure label, and the en units in the exercise set.
+- sim.js:134 — the bar label now goes through __('palkki_perille'); en.json gives $P_\text{arriving}$, fi/fi-easy keep $P_\text{perille}$. The 1280 px sim screenshot shows "P_arriving" on the bar and in the readout (1.50 MW, 0.75 %, 198.5 MW, N2:N1 = 20, unchanged and correct). No physics in the sim changed.
+- lesson.md grid figure — the local distribution substation is now labelled "transformer": it is drawn as a transformer symbol between the 20 kV distribution line and the 230 V house, so the label is physically correct; the aria-label and the text ("the local substation … lowers it to the 230 V of homes") agree with it.
+- inquiry.json:53 — pending text names "Key idea"; no physics change.
+- No numbers changed; the round-1 recomputations (worked example N1 = 1980, I1 ≈ 82 A; predictions 2000/1000/500 A and 24/6.0/1.5 MW; virhe, siirto, tarkistus-2, exit ticket) still stand.
 - Hash identical at start and end.
