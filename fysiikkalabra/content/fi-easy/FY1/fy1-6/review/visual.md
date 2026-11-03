@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 4b5a54f583806ba3
+CONTENT-HASH: c88c434845ed42a6
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] Caption: "Pomppiva pallo on kuvattu yhtä pitkin väliajoin" fine; the intervals shrink on the way up, so "Kun pallo putoaa" is correct but name the falling part is left to the reader (optional).
+(none)
 
 ## Checked
-batch delta review: Playwright captures of the built page at 360 and 1280 px (strobe ball); photo sits after a paragraph, 320 px wide, caption and credit under it, no horizontal overflow, float beside text at 1280, full-width flow at 360; alt text matches the image; caption plain Finnish and factual.
+batch delta review: preview/fi-easy/fy1-6.html opened in Chromium (Playwright) at 360, 768 and 1280 px; moved bouncing-ball strobe photo captured with its surroundings. New spot after the (t,v)-graph paragraph; at 1280 it floats beside "Yleinen virhekäsitys"/Tiivistelmä and clears the Esimerkki card. No overlap with any figure, table, formula box or example (measured), stays in the column at 360/768, no horizontal overflow at any width, image loads, caption and credit unchanged; placement reads naturally (the strobe spacing illustrates the acceleration the preceding paragraph explains).
