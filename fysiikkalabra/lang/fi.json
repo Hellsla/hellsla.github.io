@@ -334,23 +334,17 @@
     "zoom_dialog": "Suurennettu kuva",
     "sim_expand_aria": "Suurenna simulaatio",
     "sim_shrink_aria": "Pienennä simulaatio takaisin sivulle",
+    "stage_done": "tehty",
+    "ra_settings": "Kuuntelun asetukset",
+    "ra_no_lang_voice": "Laitteessa ei ole suomenkielistä puheääntä.",
     "ra_listen": "Kuuntele",
     "ra_pause": "Tauko",
-    "ra_resume": "Jatka",
-    "ra_stop": "Lopeta kuuntelu",
-    "ra_prev": "Edellinen lause",
-    "ra_next": "Seuraava lause",
     "ra_speed": "Puheen nopeus",
-    "ra_slow": "hidas",
-    "ra_normal": "normaali",
-    "ra_fast": "nopea",
     "ra_voice": "Ääni",
     "ra_female": "Nainen",
     "ra_male": "Mies",
     "ra_loading": "Ladataan puheääntä: {{p}} %. Lataus tehdään vain ensimmäisellä kerralla.",
-    "ra_fallback": "Puheääntä ei voitu ladata, joten selain lukee laitteen omalla äänellä.",
-    "ra_bar": "Ääneenluku",
-    "ra_no_voice": "Laitteessasi ei ole suomenkielistä puheääntä, joten selain lukee toisella äänellä. Suomen puheäänen voi lisätä laitteen kieliasetuksista, tai voit käyttää Edge-selainta."
+    "ra_fallback": "Puheääntä ei voitu ladata, joten selain lukee laitteen omalla äänellä."
   },
   "sims": {
     "fy2-2": {

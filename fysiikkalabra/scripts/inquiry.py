@@ -554,7 +554,7 @@ def task_text(html, cls="task", pid=None):
 
 def toc_link(sid, n, title):
     """A stage in the navigation: its number (as on the stage heading) and its name. The chip bar shows the short name
-    (NAV); the side column on a wide screen shows the rest of the title too ("Tarkista osaamisesi", .toc-rest)."""
+    (NAV); a wide window shows the rest of the title too ("Tarkista osaamisesi", .toc-rest)."""
     short = nav().get(sid, title)
     rest = title[len(short):] if title.startswith(short) else ""
     return (f'<a href="#{sid}"><span class="toc-no" aria-hidden="true">{n}</span><span class="toc-label">{short}'
