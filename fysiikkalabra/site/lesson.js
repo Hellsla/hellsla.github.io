@@ -93,7 +93,10 @@
     }
     let ticking = false;     // the gaps between sections and old browsers: the last section whose top passed the line
     window.addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(() => { ticking = false; if (!inView.size) update(); }); } }, { passive: true });
-    window.addEventListener('resize', () => { const a = links.find((x) => x.hasAttribute('aria-current')); if (a) keepInView(a); });
+    const reView = () => { const a = links.find((x) => x.hasAttribute('aria-current')); if (a) keepInView(a); };
+    window.addEventListener('resize', reView);
+    // the Kuuntele tools (readaloud.js) appear in the bar only once a voice is found, after the stage may be marked
+    if ('MutationObserver' in window) new MutationObserver(reView).observe(toc, { childList: true, subtree: true, attributes: true, attributeFilter: ['hidden'] });
     links.forEach((a) => a.addEventListener('click', () => { pinned = a.getAttribute('href').slice(1); mark(pinned); setTimeout(() => { pinned = null; }, 900); }));
     document.addEventListener('fl:reading', (e) => { reading = (e.detail && e.detail.id) || null; if (reading) mark(reading); else update(); });
     window.flStageOf = (el) => { let id = null; pairs.forEach(([, t]) => { if (t.contains(el)) id = t.id; }); return id; };
