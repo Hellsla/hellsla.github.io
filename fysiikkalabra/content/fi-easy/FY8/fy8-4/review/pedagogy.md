@@ -1,22 +1,22 @@
-VERDICT: FAIL
-CONTENT-HASH: 64e2007f57d1e0d5
+VERDICT: PASS
+CONTENT-HASH: a39da44d46850279
 
 ## Blocking
-1. inquiry.json, activity `kertaus` (prompt) — "Intensiteetti kertoo, kuinka paljon valon energiaa osuu pinnalle sekunnissa" määrittelee intensiteetin tehoksi, ja se on väärä termi: tehtävässä `siirto` intensiteetti on oikein "teho pinta-alaa kohti". Selkeyttävä lisäys on lisätty, mutta se ristiriitaistaa tunnin. Korjaus: "Intensiteetti kertoo, kuinka paljon valon energiaa osuu sekunnissa yhtä pinta-alayksikköä kohti." (tai: "Intensiteetti on teho pinta-alaa kohti.")
 
 ## Polish
-1. lesson.md, "Aalto vai hiukkanen?" — avauskappale on yhdeksän virkkeen seinä, ja matkaeron virke on S2:lle pitkä. Jaa kahtia kohtaan "Valosähköisessä ilmiössä valo taas luovuttaa..." ja pilko "Aallot heikentävät toisiaan siellä, missä matkaero on puolikas aallonpituus tai muu puolikkaan aallonpituuden pariton monikerta."
-2. lesson.md, "Yleinen virhekäsitys", 1. kappale — "Lasketaan yhtä monta osumaa yhteensä." ja sulkulause "(jos lähde lähettää yhtä monta kvanttia sekunnissa yhtä kauan)" ovat hankalia. Parempi: "Kuulat antaisivat kahden yhden raon kuvion summan, joten osumien osuus $n : N$ tässä kohdassa pysyisi samana kuin yhden raon kanssa."
-3. inquiry.json `compton-data`, 2. vaihtoehto — "Mitä jyrkemmin fotoni kimpoaa" on epäselvä. Parempi: "Mitä suurempi sirontakulma on, sitä enemmän energiaa fotoni luovuttaa."
-4. inquiry.json `ennuste-1` — "matkaero on tässä kohdassa puolikas aallonpituus" antaa aaltomallin vastauksen valmiiksi; harkitse pelkkää kohtaa $x_0$ ja anna opiskelijan päätellä, onko se tumma vai kirkas (sama huomautus kuin englanninkielisessä).
-5. koe-2, intro — mainitse, että mittauksen kytkeminen tyhjentää varjostimen, jotta opiskelija ei odota ensimmäisen kuvion säilyvän vertailua varten.
+1. lesson.md:1129 (Yleinen virhekäsitys, 1. kappale) — "Lasketaan yhtä monta osumaa yhteensä." jää irralliseksi käskyksi. Parempi: "Verrataan tilanteita, joissa osumia on yhteensä yhtä monta. Kuulamallissa osumien osuus $n : N$ tietyssä kohdassa pysyisi samana kuin yhden raon kanssa, koska kuulat antaisivat kahden yhden raon kuvion summan."
+2. inquiry.json `ennuste-1` (prompt) — "matkaero on tässä kohdassa puolikas aallonpituus" vihjaa aaltomallin vastauksen; harkitse pelkkää kohtaa $x_0$ (sama huomio kuin lähdeversiossa, ei käännöksen vika).
+3. inquiry.json `koe-2` (intro) — kerro, että mittauksen kytkeminen tyhjentää varjostimen: "Kytke sitten mittaus päälle (varjostin tyhjenee), paina *+1000 osumaa* ja kirjaa."
+4. inquiry.json `simulaatio` (model) — "Haalea aalto näyttää todennäköisyysaallon" kuulostaa siltä, että kuva olisi itse aalto; "Haalea aalto havainnollistaa todennäköisyysaaltoa." on yhtä selkeä.
 
 ## Checked
-- Selkeämpi suomi säilyttää kaikki askeleet: kaikki lauseet, kolme virhekäsitystä, neljä mallia, Compton, fotonivirta ja esimerkin seitsemän vaihetta ovat mukana. Lisäykset (matkaero, diffraktio, lepomassa, sironnut säteily, kvanttiolio) selittävät eivätkä muuta sisältöä.
-- Termit johdonmukaisia sanastoon nähden (aalto-hiukkasdualismi, Comptonin ilmiö, kaksoisrakokoe); desimaalipilkku ja taivutukset ($520\,\text{nm}$:n, $1000$:sta, $4{,}3\,\%$:sta, $1\,\text{mW}$:n) oikein.
-- Polku: koukku, kertaus, kaksi ennustetta, simulaatio, kaksi koetta lukituin muuttujin, Comptonin data, teoria, esimerkki, virheenetsintä, aurinkopurje, kolme tarkistusta, lähtölippu. Yhden oppitunnin työmäärä; tavoitteet täyttyvät, de Broglietä ei käsitellä.
-- Ennusteet voi kumota (43 vs 3 osumaa tuhannesta; reitin mittaus palauttaa 43); väärien vaihtoehtojen palaute korjaa virhekäsityksen.
-- Esimerkin luvut tarkistettu: 3,138·10^-19 J, 3,2·10^5 1/s, 9,4·10^2 m; aurinkopurje 290,5 µN ja Tarkista 2 (794,9 eV) oikein.
-- Kuvat (#5, #7, #9): suomennetut otsikot ja tekstit luettavia 390 px:ssä, väri ei yksin kanna merkitystä; alt-tekstit antavat saman tiedon ilman vastausta.
-- Simulaatio 390 px: Suomenkielinen käyttöliittymä, ohje, oletukset ja selitys erillään; lisäselite katkoviivasta ja vihreästä kaistasta auttaa.
-- Lähtölipun kysymykset testaavat ydinideaa; selitystehtävien kriteerit ovat havaittavia.
+- Kierroksen 1 esto korjattu: `kertaus` määrittelee intensiteetin "teho pinta-alaa kohti … energiaa sekunnissa yhtä pinta-alayksikköä kohti", sama kuin `siirto`-tehtävässä; tunti ei enää ole ristiriidassa itsensä kanssa.
+- Kierroksen 1 hiomisehdotukset tehty: avauskappale jaettu kahtia ja "puolitoista aallonpituutta" poistettu; Compton-vaihtoehto "Mitä suurempi sirontakulma on, sitä enemmän se luovuttaa" on selkeä ja vastaa taulukkoa.
+- Polku 17-vuotiaalle: koukku (Tonomura 1989), kertaus, kaksi ennustetta, simulaatio, kaksi lukittua koetta, johtopäätös, Compton-data, teoria, pohdinta, esimerkki, virheenetsintä, aurinkopurje, harjoitukset, kolme tarkistusta, lähtölippu. Yhden tunnin työmäärä, alun kysymykseen vastataan, de Broglie rajattu pois.
+- Ennusteet voi kumota: 43 → 3 osumaa tuhannesta, reitin mittaus palauttaa 43; väärien vaihtoehtojen palaute korjaa virhekäsityksen eikä vain toista vastausta.
+- Selkeä suomi: lyhyet virkkeet, lisäselitykset (matkaero, kvanttiolio, diffraktio, lepomassa, sironnut säteily, intensiteetti) oikeissa kohdissa; sanaston termit ja taivutukset ($520\,\text{nm}$:n, $1000$:sta, $4{,}3\,\%$:sta, $1\,\text{mW}$:n) oikein.
+- Esimerkki porrastettu seitsemään vaiheeseen (#13–#14), yksi askel kerrallaan, kaavat 390 px:ssä luettavia.
+- Kuvat #4, #7, #9, #11 luettavia 390 px:ssä; väri ei kanna merkitystä yksin; alt-tekstit (luvut sanoina) antavat saman tiedon paljastamatta ennusteiden vastauksia.
+- Simulaatio 390 ja 1280 px (#2, #40, #41): ohjaimet ja lukemat ymmärrettäviä, ohje/oletukset/selitys nimetyissä laatikoissa; kokeiden alkutila, vakiot ja muuttuja näkyvät (#37–#38).
+- Lähtölippu testaa ydinideaa (aalto- vs. hiukkasilmiö; $p = \tfrac{h}{\lambda}$); `tarkistus-3`:n kriteerit ovat havaittavia.
+- 1280 px: teoria ja kuvat vierekkäin (#43, #45–#47), ei tekstiseinää.

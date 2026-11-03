@@ -1,13 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 64dab3c1b9c296fc
+CONTENT-HASH: 3368be04849a1804
 
 ## Blocking
 
 ## Polish
+- solutions.md:89 (L2-04 Järkevyys, unchanged sentence on the edited line, inherited from content/fi) — "Tällainen valo on silmälle näkymättömän heikkoa" holds only for a light-adapted eye or light spread over a large area: 2,4·10⁴ photons/s ≈ 8,7·10⁻¹⁵ W is roughly 20 times the ≈10³ photons/s that a dark-adapted eye detects from the faintest naked-eye stars — "Tällainen valo on niin heikkoa, että tavallisessa valaistuksessa sitä ei näe" (or drop the sentence); fix the source the same way.
 
 ## Checked
-- exercises.json: all 12 answers, units, tolerances and task data identical to content/fi; split task texts keep every condition (lähes vapaa elektroni, kaikki fotonit suoraan vastaan, uudelleen lähetetyt fotonit jätetään huomiotta, levossa oleva atomi, rekyyli yhtä suuri ja vastakkaissuuntainen).
-- Recomputed all answers in one script: L1 1.2455e-27, 9.3193e-24, 184.06 nm, 5.996e-19 J, 3.185e15 1/s; L2 569.5 eV, 3.537e-22, 8.550e-28, 8.668e-15 W; L3 1.0187e4, 0.05210 nm, 0.6044 m/s — all match answers.py and solutions.md.
-- solutions.md: only Periaate/Järkevyys/Annettu/Muunnokset lines reworded; formulas, substitutions, answers and rounding reasons unchanged.
-- Reworded reasoning checked for physics: L1-04 "lähi-ultravioletti, 331 nm", L2-03 Δp = 2p and heavy mirror gets hardly any energy, L3-01 Δv = h/(λm) ≈ 0.029 m/s, L3-03 atom's kinetic energy negligible, 656 nm.
-- Exercise brief (Kaava, Comptonin ilmiö, Fotonivirta, Esimerkki) consistent with the tasks' notation.
+- Diff (L2-04 Järkevyys): "yli satatuhatta kertaa pienempi kuin yksi miljardisosa wattia" is correct — 1·10⁻⁹ W / 8,668·10⁻¹⁵ W = 1,15·10⁵; replaces the old compound word without changing any number or formula.
+- Same line: back-check 8,668·10⁻¹⁵ W / 3,6118·10⁻¹⁹ J = 2,40·10⁴ 1/s recomputed; P = (N/t)·hc/λ = 8,668·10⁻¹⁵ W recomputed, matches the answer and the three-significant-figure reason.
+- No other file in the exercise set changed since the passed version (hash 3368be04849a1804 at start and end).
