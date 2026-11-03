@@ -26,7 +26,7 @@
     },
     {
       "term": "painopiste",
-      "explain": "Piste, jossa kappaleen paino voidaan ajatella vaikuttavan. Symmetrisen kappaleen painopiste on sen keskellä."
+      "explain": "Piste, jossa kappaleen paino voidaan ajatella vaikuttavan. Tasa-aineisen ja symmetrisen kappaleen painopiste on sen keskellä."
     },
     {
       "term": "tukivoima",

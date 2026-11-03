@@ -32,7 +32,7 @@
     },
     {
       "term": "vaimeneminen",
-      "explain": "Värähtely pienenee, kun kitka tai ilmanvastus muuttaa sen energiaa lämmöksi."
+      "explain": "Värähtely pienenee, kun kitka tai ilmanvastus muuttaa osan sen energiasta sisäenergiaksi."
     }
   ],
   "sim": true,
