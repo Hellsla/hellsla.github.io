@@ -1,12 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 78f1ba70cd46bee2
+CONTENT-HASH: f22e780536107141
 
 ## Blocking
 (none)
 
 ## Polish
-- Open doubt about the English 'Turn' button does not apply here: 'Väännä' is the same word as in the Finnish page and pairs naturally with vääntövaikutus.
+- meta.json key_concepts "voiman varsi" — "vaikutussuora" unexplained — "Kiertoakselin lyhin etäisyys siitä suorasta, jota pitkin voima vaikuttaa."
 
 ## Checked
-- Sentences are split and terms glossed, every step, hint, feedback, model answer and seven-stage solution present (activities and criteria counts equal to the Finnish); questions put last; example staged in seven steps.
-- Captures opened: contact sheets 1-2, sim-1280, exp-exp-1-390-2; check_layout fy5-1 --lang fi-easy --width 345 OK. check_i18n reports nothing for fy5-1 in fi-easy.
+batch delta review: key_concepts judged against NOTES.md §12 and the editorial standard (central concepts, plain 1–2 sentence explanations, natural Finnish, physics unchanged); lesson rewordings, photos and captions, experiment/prompt wording and solution diagrams in this diff read clearly and agree with the tasks they touch.

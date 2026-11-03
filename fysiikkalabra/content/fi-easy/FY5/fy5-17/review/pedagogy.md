@@ -1,15 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: bdbcd77899735b5d
+CONTENT-HASH: 9cdcab48d0e8e5b4
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] figures.json — the figure descriptions are the standard Finnish ones; long but read by a screen reader only; could be split into shorter sentences later.
-- [Minor] Some titles, prior items and short prompts are the Finnish text unchanged; they are already plain, so acceptable.
+(none)
 
 ## Checked
-- Same learning path and activities as the Finnish; goals complete "Tällä tunnilla opit" with -maan/-mään verbs; prior items end with chapter names.
-- Plain-language work: long sentences split, subordinate chains turned into two sentences, terms explained (vaimeneminen, kulmaetäisyys), "syrjäyttää" → "työntää pois".
-- Fixed: "(extra)" (an English word) in two lisätieto headings → "(lisätieto)"; eye task now explains verkkokalvo (silmän takaosan pinta) and sarveiskalvo (silmän läpinäkyvä etupinta); the A-scan solution's "tarvitsee kulkeakseen" sentence simplified.
-- Translator's choice to leave short formula-only or already-plain strings (incl. exit-ticket 0.q) as Finnish: acceptable for Selkeä suomi; 0.q is two short sentences with everyday words.
-- Captures: intro-1280, theory-1280-2, contact-1, open-exercises-L2-1280-4.
+batch delta review: key_concepts judged against NOTES.md §12 and the editorial standard (central concepts, plain 1–2 sentence explanations, natural Finnish, physics unchanged); lesson rewordings, photos and captions, experiment/prompt wording and solution diagrams in this diff read clearly and agree with the tasks they touch.

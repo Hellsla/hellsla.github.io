@@ -1,14 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 85e8f706000c5d31
+CONTENT-HASH: bccd1bee9fe6ed4c
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- meta.json key_concepts "resonanssi" — "ominaistaajuus" unexplained — "…kun sitä heilutetaan taajuudella, jolla se värähtelee luonnostaan."
 
 ## Checked
-- Oppimispolku sama kuin suomessa: Pohdinta, kertaus, kaksi ennustetta, kolme koetta, johtopäätös, teoriatiivistelmä, esimerkki seitsemässä vaiheessa, etsi virhe, siirtotehtävä, kolme tarkistusta, exit ticket.
-- Selkokieli: lyhyet virkkeet, termit avattu (ilmapatsas, vastakkaisvaiheinen, oktaavi), mitään vaihetta, vihjettä tai palautetta ei pudotettu.
-- Korjasin: kokeiden alkutilan tilanne-arvot vastaavat nyt simulaation valikkoa (kieli, molemmat päät kiinni; putki, toinen pää kiinni; putki, molemmat päät auki).
-- Kaappaukset: contact-1, sim-390; check_layout OK 345 px:llä.
+batch delta review: key_concepts judged against NOTES.md §12 and the editorial standard (central concepts, plain 1–2 sentence explanations, natural Finnish, physics unchanged); lesson rewordings, photos and captions, experiment/prompt wording and solution diagrams in this diff read clearly and agree with the tasks they touch.

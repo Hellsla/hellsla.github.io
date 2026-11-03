@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: f754ddef14a4deee
+CONTENT-HASH: c665aaeaf308581a
 
 ## Blocking
 (none)
 
-## Fixed
-- content/fi-easy/FY1/fy1-1/lesson.md:263 — added sentence "Oortin pilvi on tuhansia kertoja kauempana kuin heliopaussi" was wrong (2000–100 000 AU against 120 AU is about 17 to 830 times) → "kymmeniä tai jopa satoja kertoja kauempana".
-
 ## Polish
-(none)
+- lesson.md:233 — "Aurinko ja kaikki sitä kiertävät kappaleet ovat yhdessä **Aurinkokunta**: …" is stiff — "Aurinko ja kaikki sitä kiertävät kappaleet muodostavat yhdessä **Aurinkokunnan**: kahdeksan planeettaa kuineen sekä kääpiöplaneetat, asteroidit ja komeetat." ("muodostaa" is the natural verb; if avoided for S2, keep but add "yhdessä ne ovat").
+- meta.json key_concepts — five concepts are sound, but the chapter is about scale: "alkeishiukkanen" is less central than "atomiydin", "galaksi" or "havaittava maailmankaikkeus" (all in the glossary). Consider swapping "alkeishiukkanen" for "havaittava maailmankaikkeus" ("Se osa maailmankaikkeudesta, josta valo on ehtinyt tulla meille.").
 
 ## Checked
-- Delta against the Finnish source: AU explained (1 AU about 150 million km, correct) in short plain sentences; heliopause 120 AU and Oort cloud 2000–100 000 AU as in fi; $\overline{F}$ as in fi; learn goals complete "Tällä tunnilla opit" with -maan/-mään verbs; exercise-level sentence shortened as in fi. check_i18n fi-easy: 0 errors.
+- key_concepts (malli, kymmenpotenssi, suuruusluokka, alkeishiukkanen, perusvuorovaikutus): short plain explanations with one correct example (0^{3} = 1000$), physics matches the lesson and glossary.
+- Rewordings: "ennuste ... kumoutuu eli osoittautuu vääräksi", suuruusluokka with 170 = 10² example (as NOTES §12.4), "supistuu pois eli häviää jakolaskussa", "kumoavat toisensa eli ... lähes nolla" all explain the hard word in the sentence; no step dropped.
+- Webb deep-field photo: placed under the observable universe, caption and alt text accurate and plain.
+- Experiment instruction order (record first row, then jump) and "Laske seuraavaksi ... Zoomaa lopuksi" make the steps sequential.

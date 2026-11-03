@@ -1,14 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 87b0781f936cb0e9
+CONTENT-HASH: a2c1019861b79fb7
 
 ## Blocking
 (none)
 
 ## Polish
-- About 100 inquiry strings equal the Finnish: titles, short choices, criteria, hints and task prompts already in short plain sentences; rewriting them would change wording, not difficulty. Kept.
+(none)
 
 ## Checked
-- Lesson text in short sentences, one idea each, terms (tihentymä, harvennus, perustaajuus, yläsävel, huojunta) explained where they first appear; no step or reason dropped.
-- Simplified: the transfer task (buzzer) split into short sentences; the "2000 Hz" mistake feedback explains "poikittain"; the FFT question separates the question from the definition of perustaajuus.
-- Learning path, predictions, experiments, checks and exit ticket as in Finnish; chapter names, not ids.
-- Captures top-390, sim-390, stage-*-390, example-390, exp-koe-1-390, open-tarkista-1280 (contact-1, -3): readable, nothing cut; check_layout 345/360 px OK.
+batch delta review: key_concepts judged against NOTES.md §12 and the editorial standard (central concepts, plain 1–2 sentence explanations, natural Finnish, physics unchanged); lesson rewordings, photos and captions, experiment/prompt wording and solution diagrams in this diff read clearly and agree with the tasks they touch.

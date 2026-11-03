@@ -1,12 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: e8e8246b7986df8e
+CONTENT-HASH: 7977e6418ed1e741
 
 ## Blocking
 (none)
 
 ## Polish
-- "tasa-aineinen" and "pallosymmetrinen" are not opened in the lesson text (pistemäinen is); a short gloss would help an S2 reader. Optional.
+- meta.json key_concepts "gravitaatiovakio" — "hyvin pieni luku" — "Gravitaatiolain kerroin. Sen arvo on sama kaikkialla ja hyvin pieni."
 
 ## Checked
-- Sentences split, one idea each; no step, feedback, hint, criterion or model answer dropped; learn goals and prior items as in the Finnish.
-- Captures opened: contact-1, theory-1280-2, sim at 390 in contact-1; layout matches the Finnish; check_layout fy5-5 --lang fi-easy --width 345: OK.
+batch delta review: key_concepts judged against NOTES.md §12 and the editorial standard (central concepts, plain 1–2 sentence explanations, natural Finnish, physics unchanged); lesson rewordings, photos and captions, experiment/prompt wording and solution diagrams in this diff read clearly and agree with the tasks they touch.

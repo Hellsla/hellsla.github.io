@@ -1,13 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 5b136494da94ac67
+CONTENT-HASH: 4c435db8dcdd0fc8
 
 ## Blocking
 (none)
 
 ## Polish
-- Sim labels (lang/fi-easy.json sims.fy5-7) identical to Finnish: they are short control words (Aineisto, Nopeus, Mallin amplitudi, Sovitusvirhe) — fine for selkeä suomi.
+(none)
 
 ## Checked
-- Long sentences split, subordinate clauses opened, no step, hint, mistake or criterion dropped (51 strings rewritten, rest identical and plain).
-- Terms explained: added "Sinin argumentti eli luku, josta sini lasketaan"; poikkeama, amplitudi, jaksonaika, taajuus, vaihe already defined in place.
-- Captures: contact-1, contact-2 (stages, experiments, theory, example at 390).
+batch delta review: key_concepts judged against NOTES.md §12 and the editorial standard (central concepts, plain 1–2 sentence explanations, natural Finnish, physics unchanged); lesson rewordings, photos and captions, experiment/prompt wording and solution diagrams in this diff read clearly and agree with the tasks they touch.

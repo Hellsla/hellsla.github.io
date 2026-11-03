@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: bace334ccb09b0df
+CONTENT-HASH: 97a5c2284af41234
 
 ## Blocking
+(none)
 
 ## Polish
+- meta.json key_concepts "inertia" — ungrammatical and "liiketila" hard — "Kappaleen ominaisuus, jonka takia sen nopeutta tai suuntaa on vaikea muuttaa. Mitä suurempi massa, sitä suurempi inertia." (fix before publishing)
 
 ## Checked
-Re-review after the skaters figure was redrawn in all languages. Compared lesson.md (incl. the redrawn "luistelijat" SVG: A/B labels, geometry identical to Finnish, aria-label text matching the Finnish description), figures.json, inquiry.json, exit-ticket.json and meta.json with the reviewed Finnish source: same physics, numbers, units, symbols, answers and teaching sequence; nothing added or dropped.
-plain Finnish (short clear sentences) reads naturally; no Finnish left in text, units or experiment names (only data-fig ids). check_i18n at 0 errors.
-Teaching sequence preserved: friction/stone, first law, third law with skaters, then formulas and examples; level and sentence length suitable.
+batch delta review: key_concepts judged against NOTES.md §12 and the editorial standard (central concepts, plain 1–2 sentence explanations, natural Finnish, physics unchanged); lesson rewordings, photos and captions, experiment/prompt wording and solution diagrams in this diff read clearly and agree with the tasks they touch.

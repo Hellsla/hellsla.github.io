@@ -1,12 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: ec38db9d87b5fd39
+CONTENT-HASH: 3dd6e9291d4de422
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] Many short items are intentionally identical to the Finnish (choices, hints); acceptable.
+(none)
 
 ## Checked
-- Every stage, prediction, hint, feedback, criterion and model answer present. Simplified in this review: learn goal, two prerequisites, the hard criterion sentences, the exit-ticket question 3 and the long solution lines (hint wording kept).
-- Short sentences, one idea each, terms explained.
+batch delta review: key_concepts judged against NOTES.md §12 and the editorial standard (central concepts, plain 1–2 sentence explanations, natural Finnish, physics unchanged); lesson rewordings, photos and captions, experiment/prompt wording and solution diagrams in this diff read clearly and agree with the tasks they touch.

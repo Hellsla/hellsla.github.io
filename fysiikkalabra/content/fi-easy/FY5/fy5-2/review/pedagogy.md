@@ -1,14 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 3656c1e180151112
+CONTENT-HASH: c7973b6a6f221339
 
 ## Blocking
 (none)
 
 ## Polish
-- Sim labels stay identical to the Finnish: short and plain already.
+- meta.json key_concepts "painopiste" — "Symmetrisen kappaleen painopiste on sen keskellä" is true only for uniform bodies — "Tasapaksun symmetrisen kappaleen painopiste on sen keskellä."
 
 ## Checked
-- The lesson text was already in short sentences with explained terms. 54 inquiry and exit-ticket strings were still identical to the Finnish; the hard ones are now simplified: prior knowledge, option feedback (split into short sentences, "kumoavat tämän" to "osoittavat tämän vääräksi"), the draw-task model answer, hints, mistakes, the diving-board solution, the final summary prompt, the exit ticket.
-- All steps, hints, feedbacks and model answers kept; nothing dropped.
-- Captures: contact-1, contact-4.
-- Delta: the new force diagrams after the Voimakuvio paragraph of siirto and tarkistus-2 appear only inside the opened solution, so nothing is given away early; they support the force-diagram step and match the text.
+batch delta review: key_concepts judged against NOTES.md §12 and the editorial standard (central concepts, plain 1–2 sentence explanations, natural Finnish, physics unchanged); lesson rewordings, photos and captions, experiment/prompt wording and solution diagrams in this diff read clearly and agree with the tasks they touch.

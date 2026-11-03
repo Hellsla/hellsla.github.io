@@ -1,7 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 0d0977902ae05c84
+CONTENT-HASH: 4f03db83ad5f480a
+
 ## Blocking
+(none)
+
 ## Polish
-- At 360 px the pointer and scale arc are tiny; they carry no information the text needs, so this is acceptable.
+- meta.json key_concepts "tiheys" — "Se on aineen ominaisuus, ei kappaleen koon." is ungrammatical (genitive left hanging) — "Se on aineen ominaisuus eikä riipu kappaleen koosta." (fix before publishing, one phrase)
+
 ## Checked
-batch delta review: hero captures 1200 and 360 px; the pointer is now fixed to the beam and turns with it (tip swings opposite the iron-side drop, physically right), drawn in iron grey; the tilt towards the iron cube, the equal cubes and the measuring cylinder still match the Miksi question and the unchanged aria-label.
+batch delta review: key_concepts judged against NOTES.md §12 and the editorial standard (central concepts, plain 1–2 sentence explanations, natural Finnish, physics unchanged); lesson rewordings, photos and captions, experiment/prompt wording and solution diagrams in this diff read clearly and agree with the tasks they touch.
