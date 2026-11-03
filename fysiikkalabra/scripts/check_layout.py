@@ -128,7 +128,7 @@ JS = """() => {
     if (fs < 16.5) { out.push({what: 'small', over: Math.round(17 - fs), text: `${fs} px text: "${t.textContent.trim().slice(0, 40)}"`}); break; }
   }
   for (const c of document.querySelectorAll('main button, main summary, ul.choices label, nav.toc a, form.check input')) {
-    if (!V(c) || c.closest('#sim-root')) continue;
+    if (!V(c) || c.closest('#sim-root') || c.matches('.kc-term-btn')) continue;   // a concept term inside a sentence is an inline target (WCAG 2.5.8 exception)
     if (R(c).height < 39.5) { out.push({what: 'small', over: Math.round(40 - R(c).height), text: `control ${Math.round(R(c).height)} px tall: "${c.textContent.trim().slice(0, 40)}"`}); break; }
   }
   return out;

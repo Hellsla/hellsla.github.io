@@ -86,8 +86,11 @@ def page_form(pg, b, url, acts, page):
     for sid, t in inquiry.STAGES:
         here = [a for a in acts if a["stage"] == sid and a["type"] != "exercises"]
         if here: want += [inquiry.NAV.get(sid, t)] + ([inquiry.EXIT_TITLE] if any(a["type"] == "exit" for a in here) else [])
+    if pg.evaluate("!!document.getElementById('kasitteet')"):   # the chapter's concept cards come after the exit ticket (teacher 2026-11-03)
+        lang = "en" if pg.evaluate("document.documentElement.lang") == "en" else "fi"
+        want.append(json.loads((ROOT / f"lang/{lang}.json").read_text())["cards"]["nav"])
     want.append(inquiry.EXERCISES_TITLE)
-    check("nav names the stages, the exit ticket and the exercises", toc == want, f"{toc} != {want}")
+    check("nav names the stages, the exit ticket, the concept cards and the exercises", toc == want, f"{toc} != {want}")
     order = pg.evaluate("[...document.querySelectorAll('article > section, article > .intro')].map((e) => e.id || e.className)")
     order = [o for o in order if o != "credits"]          # the photo credits (build.photo_credits) follow as the page's colophon
     check("the exercises close the page, after the exit ticket", order[-1:] == ["exercises"] and pg.evaluate("(() => { const x = document.getElementById('exit'), e = document.getElementById('exercises'); return !x || !!(x.compareDocumentPosition(e) & 4); })()"), str(order))
@@ -146,7 +149,7 @@ def generic(lid):
     toc = re.search(r'<nav class="toc"[^>]*>(.*?)</nav>', page, re.S)
     links = re.findall(r'href="#([^"]+)"', toc.group(1)) if toc else []
     shown = [s for s, _ in inquiry.STAGES if any(a["stage"] == s and a["type"] != "exercises" for a in acts)]
-    shown = [x for s in shown for x in ([s, "exit"] if any(a["type"] == "exit" and a["stage"] == s for a in acts) else [s])] + ["exercises"]
+    shown = [x for s in shown for x in ([s, "exit"] if any(a["type"] == "exit" and a["stage"] == s for a in acts) else [s])] + (["kasitteet"] if 'id="kasitteet"' in page else []) + ["exercises"]
     check("navigation lists every stage in order and each link has a target", links == shown and all(f'id="{x}"' in page for x in links), f"nav {links}, stages {shown}")
     for aid, seed, spec in choice_items(acts):
         want = inquiry.choice_order(spec["choices"], lid, seed)
@@ -328,7 +331,7 @@ order = [page_html.index(f'id="{sid}"') for sid, _ in inquiry.STAGES]; check("st
 check("theory sections placed once", page_html.count('class="theory-h">Ydinajatus') == 1 and page_html.count('class="theory-h">Esimerkki') == 1)
 check("unplaced sections land in Teoriatiivistelmä", page_html.index('class="theory-h">Tiivistelmä') < page_html.index('id="sovella"'))
 check("the exercises come last, after the exit ticket", page_html.index('id="exit"') < page_html.index('<section class="stage stage-practice" id="exercises"') and page_html.count('id="exercises"') == 1
-      and re.search(r'<a href="#exit"[^>]*>(?:(?!</a>).)*Exit ticket(?:(?!</a>).)*</a><a href="#exercises"[^>]*>(?:(?!</a>).)*Tehtävät(?:(?!</a>).)*</a></nav>', page_html) is not None)
+      and re.search(r'<a href="#exit"[^>]*>(?:(?!</a>).)*Exit ticket(?:(?!</a>).)*</a>(?:<a href="#kasitteet"[^>]*>(?:(?!</a>).)*</a>)?<a href="#exercises"[^>]*>(?:(?!</a>).)*Tehtävät(?:(?!</a>).)*</a></nav>', page_html) is not None)
 check("Ennusta is a closed box", re.search(r'<section class="stage" id="ennusta"[^>]*><h2>.*?</h2><details class="fold" data-fold="ennusta">', page_html) is not None)
 check("no old names on the page", not any(x in page_html for x in ("Herätä kiinnostus", "Lähtölippu", ">Selitä<")))
 check("exercises and exit ticket kept (5/4/3, 1 item)", page_html.count('class="level"') == 3 and page_html.count("<li>$(s, F)$-kuvaajassa") == 1 and '<span class="count">5 tehtävää' in page_html and '<span class="count">3 tehtävää' in page_html)

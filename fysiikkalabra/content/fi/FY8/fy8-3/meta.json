@@ -1,0 +1,21 @@
+{
+  "id": "fy8-3",
+  "course": "FY8",
+  "title": "Vetyatomin energiatasot ja Bohrin malli",
+  "goals": [
+    "LOPS FY8: atomin rakenne, atomin elektronien kvanttitilat ja aaltomekaanisen atomimallin periaate",
+    "Täsmennys: vetyatomin energiatasot ytimen kentässä, siirtymät ja spektriviivat; Bohrin malli historiallisena välivaiheena"
+  ],
+  "prerequisites": [
+    "fy8-2"
+  ],
+  "glossary": [
+    "perustila",
+    "viritystila",
+    "ionisaatioenergia",
+    "Bohrin malli"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

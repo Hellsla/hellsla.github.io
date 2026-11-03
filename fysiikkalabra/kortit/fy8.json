@@ -71,7 +71,7 @@
   {
    "id": "fy8-kvantti",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-1",
    "aihe": "fy8-sateilyn-kvantittuminen",
    "kasite": "Kvantti",
    "maaritelma": "Pienin määrä, jossa tietty fysikaalinen suure voi siirtyä vuorovaikutuksessa."
@@ -79,7 +79,7 @@
   {
    "id": "fy8-kvantittuminen",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-1",
    "aihe": "fy8-sateilyn-kvantittuminen",
    "kasite": "Kvantittuminen",
    "maaritelma": "Energia voi tietyissä ilmiöissä saada tai siirtyä vain määrättyinä erinä."
@@ -87,7 +87,7 @@
   {
    "id": "fy8-fotoni",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-1",
    "aihe": "fy8-sateilyn-kvantittuminen",
    "kasite": "Fotoni",
    "maaritelma": "Sähkömagneettisen säteilykentän energiakvantti, jolla ei ole lepomassaa."
@@ -95,7 +95,7 @@
   {
    "id": "fy8-planckin-vakio",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-1",
    "aihe": "fy8-sateilyn-kvantittuminen",
    "kasite": "Planckin vakio",
    "maaritelma": "Kvanttifysiikan perusvakio, joka yhdistää fotonin energian säteilyn taajuuteen."
@@ -103,7 +103,7 @@
   {
    "id": "fy8-fotonin-energia",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-1",
    "aihe": "fy8-sateilyn-kvantittuminen",
    "kasite": "Fotonin energia",
    "maaritelma": "Kasvaa säteilyn taajuuden kasvaessa ja aallonpituuden pienentyessä.",
@@ -113,7 +113,7 @@
   {
    "id": "fy8-elektronivoltti",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-1",
    "aihe": "fy8-sateilyn-kvantittuminen",
    "kasite": "Elektronivoltti",
    "maaritelma": "Energia, jonka alkeisvaraus saa yhden voltin jännitteessä.",
@@ -131,7 +131,7 @@
   {
    "id": "fy8-jatkuva-spektri",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-2",
    "aihe": "fy8-sateilyn-kvantittuminen",
    "kasite": "Jatkuva spektri",
    "maaritelma": "Sisältää yhtenäisen aallonpituusalueen ilman erillisiä spektriviivoja."
@@ -139,7 +139,7 @@
   {
    "id": "fy8-valosahkoilmio",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-1",
    "aihe": "fy8-valosahkoilmio",
    "kasite": "Valosähköilmiö",
    "maaritelma": "Riittävän suuritaajuinen sähkömagneettinen säteily voi irrottaa elektroneja aineen pinnasta."
@@ -147,7 +147,7 @@
   {
    "id": "fy8-irrotustyo",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-1",
    "aihe": "fy8-valosahkoilmio",
    "kasite": "Irrotustyö",
    "maaritelma": "Pienin energia, joka tarvitaan elektronin irrottamiseen tietyn aineen pinnasta."
@@ -155,7 +155,7 @@
   {
    "id": "fy8-rajataajuus",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-1",
    "aihe": "fy8-valosahkoilmio",
    "kasite": "Rajataajuus",
    "maaritelma": "Pienin säteilyn taajuus, jolla elektroneja voi irrota tietystä aineesta."
@@ -171,7 +171,7 @@
   {
    "id": "fy8-maksimiliike-energia",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-1",
    "aihe": "fy8-valosahkoilmio",
    "kasite": "Maksimiliike-energia",
    "maaritelma": "Nopeimman irronneen elektronin energia saadaan energian säilymisestä.",
@@ -181,7 +181,7 @@
   {
    "id": "fy8-valosahkoilmion-energiayhtalo",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-1",
    "aihe": "fy8-valosahkoilmio",
    "kasite": "Valosähköilmiön energiayhtälö",
    "maaritelma": "Fotonin energia kuluu irrotustyöhön ja elektronin liike-energiaksi.",
@@ -199,7 +199,7 @@
   {
    "id": "fy8-aaltohiukkasdualismi",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-4",
    "aihe": "fy8-aaltohiukkasdualismi",
    "kasite": "Aaltohiukkasdualismi",
    "maaritelma": "Säteilyllä ja ainehiukkasilla voi olla sekä aaltomaisia että hiukkasmaisia ominaisuuksia."
@@ -207,7 +207,7 @@
   {
    "id": "fy8-fotonin-liikemaara",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-4",
    "aihe": "fy8-aaltohiukkasdualismi",
    "kasite": "Fotonin liikemäärä",
    "maaritelma": "Massattomalla säteilykvantilla on liikemäärä.",
@@ -217,7 +217,7 @@
   {
    "id": "fy8-comptonin-sironta",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-4",
    "aihe": "fy8-aaltohiukkasdualismi",
    "kasite": "Comptonin sironta",
    "maaritelma": "Fotonin törmäys elektroniin muuttaa fotonin energiaa ja aallonpituutta."
@@ -225,7 +225,7 @@
   {
    "id": "fy8-kaksoisrakokoe",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-4",
    "aihe": "fy8-aaltohiukkasdualismi",
    "kasite": "Kaksoisrakokoe",
    "maaritelma": "Yksittäiset hiukkaset muodostavat vähitellen aaltoliikkeelle ominaisen interferenssikuvion."
@@ -251,7 +251,7 @@
   {
    "id": "fy8-interferenssi",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-4",
    "aihe": "fy8-aaltohiukkasdualismi",
    "kasite": "Interferenssi",
    "maaritelma": "Aaltojen yhdistyminen vahvistaa tai heikentää havaittua vaikutusta eri kohdissa."
@@ -267,7 +267,7 @@
   {
    "id": "fy8-energiataso",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-3",
    "aihe": "fy8-atomin-energiatasot",
    "kasite": "Energiataso",
    "maaritelma": "Elektronilla voi atomissa olla vain tiettyjä sallittuja energioita."
@@ -275,7 +275,7 @@
   {
    "id": "fy8-perustila",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-3",
    "aihe": "fy8-atomin-energiatasot",
    "kasite": "Perustila",
    "maaritelma": "Atomin matalin mahdollinen energiatila."
@@ -283,7 +283,7 @@
   {
    "id": "fy8-viritystila",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-3",
    "aihe": "fy8-atomin-energiatasot",
    "kasite": "Viritystila",
    "maaritelma": "Atomin tila, jossa elektronisysteemillä on enemmän energiaa kuin perustilassa."
@@ -291,7 +291,7 @@
   {
    "id": "fy8-virittyminen",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-3",
    "aihe": "fy8-atomin-energiatasot",
    "kasite": "Virittyminen",
    "maaritelma": "Atomi vastaanottaa energiaa ja siirtyy korkeammalle energiatasolle."
@@ -299,7 +299,7 @@
   {
    "id": "fy8-emissio",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-2",
    "aihe": "fy8-atomin-energiatasot",
    "kasite": "Emissio",
    "maaritelma": "Atomi luovuttaa energiaa fotonina siirtyessään alemmalle energiatasolle."
@@ -307,7 +307,7 @@
   {
    "id": "fy8-absorptio",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-2",
    "aihe": "fy8-atomin-energiatasot",
    "kasite": "Absorptio",
    "maaritelma": "Atomi vastaanottaa sopivan energisen fotonin ja siirtyy korkeammalle energiatasolle."
@@ -315,7 +315,7 @@
   {
    "id": "fy8-emissiospektri",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-2",
    "aihe": "fy8-atomin-energiatasot",
    "kasite": "Emissiospektri",
    "maaritelma": "Sisältää aallonpituudet, joita virittynyt aine lähettää energiatilojen purkautuessa."
@@ -323,7 +323,7 @@
   {
    "id": "fy8-absorptiospektri",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-2",
    "aihe": "fy8-atomin-energiatasot",
    "kasite": "Absorptiospektri",
    "maaritelma": "Sisältää puuttuvia aallonpituuksia, jotka aine on absorboinut jatkuvasta spektristä."
@@ -331,7 +331,7 @@
   {
    "id": "fy8-viivaspektri",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-2",
    "aihe": "fy8-atomin-energiatasot",
    "kasite": "Viivaspektri",
    "maaritelma": "Koostuu erillisistä aallonpituuksista ja kertoo aineen kvantittuneista energiatiloista."
@@ -339,7 +339,7 @@
   {
    "id": "fy8-energiatasokaavio",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-2",
    "aihe": "fy8-atomin-energiatasot",
    "kasite": "Energiatasokaavio",
    "maaritelma": "Kuvaa järjestelmän sallitut energiat sekä niiden väliset siirtymät."
@@ -347,7 +347,7 @@
   {
    "id": "fy8-ionisaatioenergia",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-3",
    "aihe": "fy8-atomin-energiatasot",
    "kasite": "Ionisaatioenergia",
    "maaritelma": "Pienin energia, jolla elektroni voidaan irrottaa atomista kokonaan."
@@ -355,7 +355,7 @@
   {
    "id": "fy8-vetyatomin-energia",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-3",
    "aihe": "fy8-atomin-energiatasot",
    "kasite": "Vetyatomin energia",
    "maaritelma": "Elektronin sallittu energia riippuu pääkvanttiluvusta.",
@@ -381,7 +381,7 @@
   {
    "id": "fy8-todennakoisyysjakauma",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-5",
    "aihe": "fy8-kvanttimekaaninen-atomimalli",
    "kasite": "Todennäköisyysjakauma",
    "maaritelma": "Kuvaa, kuinka todennäköisesti hiukkanen havaitaan eri alueilla."
@@ -389,7 +389,7 @@
   {
    "id": "fy8-orbitaali",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-5",
    "aihe": "fy8-kvanttimekaaninen-atomimalli",
    "kasite": "Orbitaali",
    "maaritelma": "Alue, jolla tiettyyn kvanttitilaan kuuluva elektroni havaitaan suurella todennäköisyydellä."
@@ -397,7 +397,7 @@
   {
    "id": "fy8-kvanttiluku",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-5",
    "aihe": "fy8-kvanttimekaaninen-atomimalli",
    "kasite": "Kvanttiluku",
    "maaritelma": "Luku, jolla kuvataan elektronin kvanttitilan ominaisuuksia atomissa."
@@ -437,7 +437,7 @@
   {
    "id": "fy8-seisova-aalto",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-5",
    "aihe": "fy8-kvanttimekaaninen-atomimalli",
    "kasite": "Seisova aalto",
    "maaritelma": "Aaltomuoto, joka pysyy paikallaan ja mahdollistaa vain tietyt elektronin kvanttitilat."
@@ -493,7 +493,7 @@
   {
    "id": "fy8-fluoresenssi",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-2",
    "aihe": "fy8-kvantti-ilmioiden-sovellukset",
    "kasite": "Fluoresenssi",
    "maaritelma": "Absorboidun energian jälkeen valo syntyy nopeasti viritystilan purkautuessa."

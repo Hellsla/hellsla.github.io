@@ -909,7 +909,7 @@ strong.kc-ready{font-weight:inherit}
 .kc-button{display:inline-flex;align-items:center;border:1px solid var(--accent-deep);background:var(--accent-deep);color:#fff;text-decoration:none}
 .kc-button:hover{background:var(--accent)}
 .kc-practice{margin:2rem 0 1rem;padding:1.1rem 1.25rem 1rem;border:1px solid #e9cdb6;border-radius:var(--card-radius);background:#fffaf4}
-.kc-practice h2{margin-top:0}
+.kc-practice h2{margin-top:0}.kc-practice .kc-lead,.kc-section .kc-lead,.kc-deck p{max-width:var(--measure)}
 .kc-app-head h1{margin-bottom:.3rem}
 .kc-app h2{font-size:var(--fs-h2);margin:1.2rem 0 .8rem}
 .kc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(10.5rem,1fr));gap:.7rem}

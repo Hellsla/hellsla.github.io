@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Write the electron configuration of a nitrogen atom (seven electrons) in the ground state.",
+    "a": "$1\\text{s}^2\\,2\\text{s}^2\\,2\\text{p}^3$: two electrons in the $1\\text{s}$ orbital, two in the $2\\text{s}$ orbital and three in the $2\\text{p}$ subshell, seven altogether."
+  },
+  {
+    "q": "Why can a guitar string vibrate only in certain ways, and what does the same idea mean for the electron of an atom?",
+    "a": "The ends of the string stay in place, so the nodes of a standing wave must fall on the ends, and only certain wave shapes fit the string. The wave of an electron bound by the nucleus can likewise be only in certain standing shapes, and each shape has its own energy, so the energy of the electron is quantised."
+  }
+]

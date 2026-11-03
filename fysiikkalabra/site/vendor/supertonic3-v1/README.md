@@ -1,6 +1,6 @@
 # Supertonic 3 voice (read aloud)
 
-Teacher 2026-11-03: the read-aloud voice of Ruukkilabra ("Nainen" = voice 0 = F1, "Mies" = voice 5 = M1), run in the
+Teacher 2026-11-03: the read-aloud voice of Ruukkilabra ("Nainen" = voice 0 = F1, "Mies" = voice 5 = M1; in Finnish "Nainen" = voice 1 = F2 and "Mies" = voice 8 = M4, teacher 2026-11-03), run in the
 student's browser by `templates/readaloud.js` with onnxruntime-web (vendor/ort). 31 languages, Finnish and English
 included.
 
