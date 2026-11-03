@@ -5,6 +5,6 @@
   },
   {
     "q": "A multimeter shows the reading $3.00\\,\\text{V}$ on the range $20\\,\\text{V}$. The error limit is $\\pm(0.5\\,\\% + 2\\ \\text{digits})$ and the resolution $0.01\\,\\text{V}$. How large is the error limit?",
-    "a": "$\\Delta U = 0.005 \\cdot 3.00\\,\\text{V} + 2 \\cdot 0.01\\,\\text{V} = 0.015\\,\\text{V} + 0.02\\,\\text{V} = 0.035\\,\\text{V}$."
+    "a": "$\\Delta U = 0.005 \\cdot 3.00\\,\\text{V} + 2 \\cdot 0.01\\,\\text{V} = 0.015\\,\\text{V} + 0.02\\,\\text{V} = 0.035\\,\\text{V} \\approx 0.04\\,\\text{V}$."
   }
 ]

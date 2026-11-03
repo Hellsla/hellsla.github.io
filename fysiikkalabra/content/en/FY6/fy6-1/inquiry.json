@@ -26,17 +26,17 @@
       "prompt": "The lamp of a torch is lit. Where does the energy transferred from the battery to the lamp end up?",
       "choices": [
         {
-          "text": "In the lamp it changes into light and heat, which are transferred to the surroundings.",
+          "text": "In the lamp it becomes light and internal energy, which leaves as heat.",
           "correct": true,
-          "feedback": "Correct. Energy is conserved, but its form changes: in the filament electrical energy changes into light and heat. In this chapter we see that charge does not change or get used up, but carries the energy from the battery to the lamp."
+          "feedback": "Correct. Energy is conserved, but its form changes: in the filament electrical energy changes into light and internal energy of the wire, which is transferred to the surroundings as heat. In this chapter we see that charge does not change or get used up, but carries the energy from the battery to the lamp."
         },
         {
           "text": "It disappears in the lamp, because the lamp uses the energy up.",
-          "feedback": "Energy does not disappear. The lamp changes electrical energy into light and heat, and they are transferred to the surroundings. In physics, the everyday word “use up” means changing into another form."
+          "feedback": "Energy does not disappear. The lamp changes electrical energy into light and internal energy of the filament, and the energy is transferred to the surroundings as light and heat. In physics, the everyday word “use up” means changing into another form."
         },
         {
           "text": "It returns along the wires to the battery and recharges it.",
-          "feedback": "If the energy returned to the battery, the battery would never run down. In the lamp the energy changes into light and heat, which are transferred to the surroundings. What returns to the battery is charge, not energy."
+          "feedback": "If the energy returned to the battery, the battery would never run down. In the lamp the energy changes into light and internal energy of the filament, and it is transferred to the surroundings as light and heat. What returns to the battery is charge, not energy."
         }
       ]
     },
@@ -55,7 +55,7 @@
         {
           "text": "The same charge passes through both cross-sections.",
           "correct": true,
-          "feedback": "Correct. In the model's values with one lamp $Q_A = Q_B$: $1.00\\,\\text{C}$ with one battery, $2.00\\,\\text{C}$ with two and $3.00\\,\\text{C}$ with three. Charge is not used up in the lamp, but the same charge returns to the battery. The lamp only changes the energy it brings into light and heat."
+          "feedback": "Correct. In the model's values with one lamp $Q_A = Q_B$: $1.00\\,\\text{C}$ with one battery, $2.00\\,\\text{C}$ with two and $3.00\\,\\text{C}$ with three. Charge is not used up in the lamp, but the same charge returns to the battery. The lamp only changes the energy it brings into light and internal energy of the filament."
         },
         {
           "text": "More passes through $A$, because the lamp uses up part of the current.",
@@ -241,11 +241,11 @@
       "prompt": "Use your measurements to explain whether electric current is used up in a lamp. Use the words charge, electric current and energy, and tell what affected the size of the current.",
       "criteria": [
         "The answer says that an equal charge passed through points $A$ and $B$ in every measurement, so the current is the same on both sides of the lamp.",
-        "The answer says that the lamp does not use up charge but changes electrical energy into light and heat.",
+        "The answer says that the lamp does not use up charge but changes electrical energy into light and internal energy of the filament.",
         "The answer calculates or mentions the current $I = \\tfrac{Q}{t}$ from some measurement.",
         "The answer says that adding batteries increased the current and a second lamp decreased it in the whole loop."
       ],
-      "model": "In experiment 1 the same charge passed through points $A$ and $B$ in every row in the model's values: $1.00\\,\\text{C}$ with one battery, $2.00\\,\\text{C}$ with two and $3.00\\,\\text{C}$ with three in the time $10.0\\,\\text{s}$. The current $I = \\tfrac{Q}{t}$ was therefore, for example, $0.200\\,\\text{A}$ with two batteries on both sides of the lamp. Electric current is not used up in the lamp: every electron that enters the lamp leaves it and returns to the battery. In the lamp the form of energy changes, when the electrical energy brought by the charge changes into light and heat. A higher voltage gave a larger current. In experiment 2 a second lamp in the same loop decreased the charge to $1.00\\,\\text{C}$ both at $A$ and at $B$, so the current decreased by the same amount in the whole loop."
+      "model": "In experiment 1 the same charge passed through points $A$ and $B$ in every row in the model's values: $1.00\\,\\text{C}$ with one battery, $2.00\\,\\text{C}$ with two and $3.00\\,\\text{C}$ with three in the time $10.0\\,\\text{s}$. The current $I = \\tfrac{Q}{t}$ was therefore, for example, $0.200\\,\\text{A}$ with two batteries on both sides of the lamp. Electric current is not used up in the lamp: every electron that enters the lamp leaves it and returns to the battery. In the lamp the form of energy changes, when the electrical energy brought by the charge changes into light and internal energy of the filament, which is transferred to the surroundings as heat. A higher voltage gave a larger current. In experiment 2 a second lamp in the same loop decreased the charge to $1.00\\,\\text{C}$ both at $A$ and at $B$, so the current decreased by the same amount in the whole loop."
     },
     {
       "id": "theory",

@@ -19,10 +19,10 @@
     {
       "id": "fy6-2-L1-03",
       "level": 1,
-      "text": "The voltage of a power adapter is measured to be $8.00\\,\\text{V}$, and the error limit of the reading is $0.060\\,\\text{V}$. How large is the relative error limit? Give the answer as a percentage.",
+      "text": "The voltage of a power adapter is measured to be $8.00\\,\\text{V}$, and the error limit of the reading is $0.06\\,\\text{V}$. How large is the relative error limit? Give the answer as a percentage.",
       "answer": 0.75,
       "unit": "%",
-      "tolerance": 0.02
+      "tolerance": 0.07
     },
     {
       "id": "fy6-2-L1-04",
@@ -48,7 +48,7 @@
       "text": "The current of a small motor is measured on the range $10\\,\\text{A}$ of a multimeter, and the display shows $0.35\\,\\text{A}$. On this range the resolution is $0.01\\,\\text{A}$ and the error limit $\\pm(2.0\\,\\% + 3\\ \\text{digits})$. What percentage of the reading is the error limit?",
       "answer": 10.57,
       "unit": "%",
-      "tolerance": 0.05
+      "tolerance": 0.08
     },
     {
       "id": "fy6-2-L2-02",

@@ -152,8 +152,8 @@ def wrong():
 def error_bands():
     """The same lamp voltage read on the 20 V and the 2 V range, each reading with its error limit, to scale."""
     f = Fig("fy62-bands", 312, "Kuva mittakaavassa: jännitteen akseli välillä 1,46 V–1,54 V. Ylempi jana näyttää alueella 20 V "
-            "saadun lukeman 1,50 V ja sen virherajan ±0,028 V eli välin 1,472 V–1,528 V. Alempi jana näyttää alueella 2 V "
-            "saadun lukeman 1,500 V ja sen virherajan ±0,0095 V eli välin 1,4905 V–1,5095 V. Alemman alueen jana on noin "
+            "saadun lukeman 1,50 V ja sen virherajan ±0,03 V eli välin 1,47 V–1,53 V. Alempi jana näyttää alueella 2 V "
+            "saadun lukeman 1,500 V ja sen virherajan ±0,010 V eli välin 1,490 V–1,510 V. Alemman alueen jana on noin "
             "kolmasosa ylemmän pituudesta.")
     x0, x1, lo, hi = 60, 540, 1.46, 1.54
     X = lambda u: x0 + (u - lo) / (hi - lo) * (x1 - x0)
@@ -165,8 +165,8 @@ def error_bands():
         f.line(X(u), ya, X(u), ya + 7, INK, 2)
         if k % 2 == 0: f.tex(X(u), ya + 26, fi(round(u, 2), 2), "middle")
     f.tex(x1 + 10, ya - 26, r"U\ (\text{V})", "end")
-    rows = [(78, 1.50, 0.0275, r"\text{alue } 20\,\text{V}", r"\pm 0{,}028\,\text{V}"),
-            (176, 1.500, 0.0095, r"\text{alue } 2\,\text{V}", r"\pm 0{,}0095\,\text{V}")]
+    rows = [(78, 1.50, 0.03, r"\text{alue } 20\,\text{V}", r"\pm 0{,}03\,\text{V}"),       # the rounded error limits of the Tulos
+            (176, 1.500, 0.010, r"\text{alue } 2\,\text{V}", r"\pm 0{,}010\,\text{V}")]
     for y, u, d, name, pm in rows:
         f.tex(x0, y - 36, name, "start")
         f.rect(X(u - d), y - 12, X(u + d) - X(u - d), 24, GLASS, INK, 2, 4)
@@ -238,5 +238,5 @@ REUSE = {
     "connections": "safe: how an ammeter (series) and a voltmeter (across the lamp) are connected",
     "multimeter": "safe: a multimeter's display, selector ranges 2 V, 20 V, 200 mA, 10 A and jacks COM, V mA, 10 A",
     "wrong": "reveals: an ammeter across the lamp short-circuits it and a voltmeter in series stops the current",
-    "error-bands": "reveals: the error limits ±0,028 V (20 V range) and ±0,0095 V (2 V range) of a 1,50 V reading",
+    "error-bands": "reveals: the error limits ±0,03 V (20 V range) and ±0,010 V (2 V range) of a 1,50 V reading",
 }

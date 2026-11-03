@@ -31,7 +31,7 @@
 ## fy6-4-L1-04
 **Annettu:** sarjaan kytketyt lamput, pariston jännite $U = 4{,}5\,\text{V}$, ensimmäisen lampun jännite $U_1 = 1{,}8\,\text{V}$
 **Kysytty:** toisen lampun jännite $U_2$
-**Periaate:** Sarjaankytkennässä pariston jännite jakautuu komponenttien kesken: jokainen varaus kulkee molempien lamppujen läpi, ja sen energia muuttuu lampuissa lämmöksi ja valoksi. Lamppujen jännitteiden summa on pariston jännite.
+**Periaate:** Sarjaankytkennässä pariston jännite jakautuu komponenttien kesken: jokainen varaus kulkee molempien lamppujen läpi, ja sen energia muuttuu lampuissa valoksi ja hehkulankojen sisäenergiaksi. Lamppujen jännitteiden summa on pariston jännite.
 **Kaava:** $U = U_1 + U_2$, josta $U_2 = U - U_1$
 **Muunnokset:** Ei tarvita, jännitteet ovat voltteina.
 **Sijoitus:** $U_2 = 4{,}5\,\text{V} - 1{,}8\,\text{V} = 2{,}7\,\text{V}$

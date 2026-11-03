@@ -66,7 +66,7 @@
 ## Ydinajatus
 
 ### Virtamittari kytketään sarjaan
-**Virtamittari** mittaa, kuinka suuri sähkövirta kulkee sen läpi. Siksi mitattavan virran on kuljettava mittarin kautta: piiri avataan siitä kohdasta, jonka virta halutaan tietää, ja mittari asetetaan aukkoon. Tällöin mittari on **sarjassa** muiden komponenttien kanssa. Haarattomassa piirissä virta on joka kohdassa sama, koska varausta ei katoa eikä kerry minnekään. Lamppu muuttaa sähköenergiaa valoksi ja lämmöksi, mutta se ei kuluta virtaa. Virtamittari voidaan siis kytkeä mihin tahansa kohtaan haaratonta piiriä, ja se näyttää aina saman lukeman.
+**Virtamittari** mittaa, kuinka suuri sähkövirta kulkee sen läpi. Siksi mitattavan virran on kuljettava mittarin kautta: piiri avataan siitä kohdasta, jonka virta halutaan tietää, ja mittari asetetaan aukkoon. Tällöin mittari on **sarjassa** muiden komponenttien kanssa. Haarattomassa piirissä virta on joka kohdassa sama, koska varausta ei katoa eikä kerry minnekään. Lamppu muuttaa sähköenergiaa valoksi ja hehkulangan sisäenergiaksi, mutta se ei kuluta virtaa. Virtamittari voidaan siis kytkeä mihin tahansa kohtaan haaratonta piiriä, ja se näyttää aina saman lukeman.
 
 ### Jännitemittari kytketään rinnalle
 Jännite on kahden pisteen välinen suure (luku *Virtapiiri, sähkövirta ja jännite*). **Jännitemittari** mittaa jännitteen niiden kahden pisteen välillä, joihin sen johdot kosketetaan. Lampun jännite mitataan koskettamalla lampun kumpaakin napaa: piiriä ei avata, vaan mittari tulee lampun **rinnalle**. Mittarin punainen johto kosketetaan siihen napaan, joka on lähempänä pariston plusnapaa, jolloin lukema on positiivinen.
@@ -221,7 +221,7 @@ Lukeman $x$ virheraja on
 ```latex
 \Delta x = p \cdot x + n \cdot r
 ```
-missä $\Delta x$ on virheraja, $x$ lukema, $p$ valmistajan ilmoittama prosenttiosuus desimaalilukuna ($0{,}5\,\% = 0{,}005$), $n$ numeroiden määrä ja $r$ alueen resoluutio. Tulos kirjataan muodossa $x \pm \Delta x$, esimerkiksi $U = 4{,}50\,\text{V} \pm 0{,}04\,\text{V}$. Eri mittausten tarkkuutta verrataan **suhteellisella virherajalla**
+missä $\Delta x$ on virheraja, $x$ lukema, $p$ valmistajan ilmoittama prosenttiosuus desimaalilukuna ($0{,}5\,\% = 0{,}005$), $n$ numeroiden määrä ja $r$ alueen resoluutio. Tulos kirjataan muodossa $x \pm \Delta x$, esimerkiksi $U = 4{,}50\,\text{V} \pm 0{,}04\,\text{V}$. Merkintä on sama kuin virhe-arviossa, mutta tässä $\Delta x$ on mittarin oma virheraja, ei koko mittauksen epävarmuus. Eri mittausten tarkkuutta verrataan **suhteellisella virherajalla**
 ```latex
 \frac{\Delta x}{x}
 ```
@@ -230,7 +230,7 @@ joka on paljas luku ja ilmoitetaan yleensä prosentteina.
 ### Miksi pienin sopiva alue
 Prosenttiosa $p \cdot x$ on sama kaikilla saman suureen alueilla, mutta numeroiden osuus $n \cdot r$ pienenee kymmenesosaan, kun siirrytään kymmenen kertaa pienemmälle alueelle. Kun lukema on pieni verrattuna alueeseen, numeroiden osuus hallitsee: $0{,}02\,\text{A}$:n virta alueella $10\,\text{A}$ on lähes arvaus, koska jo kolme viimeisen numeron askelta on $0{,}03\,\text{A}$.
 
-<svg data-fig="error-bands" viewBox="0 0 600 312" role="img" aria-label="Kuva mittakaavassa: jännitteen akseli välillä 1,46 V–1,54 V. Ylempi jana näyttää alueella 20 V saadun lukeman 1,50 V ja sen virherajan ±0,028 V eli välin 1,472 V–1,528 V. Alempi jana näyttää alueella 2 V saadun lukeman 1,500 V ja sen virherajan ±0,0095 V eli välin 1,4905 V–1,5095 V. Alemman alueen jana on noin kolmasosa ylemmän pituudesta." style="max-width:100%;font-size:24px">
+<svg data-fig="error-bands" viewBox="0 0 600 312" role="img" aria-label="Kuva mittakaavassa: jännitteen akseli välillä 1,46 V–1,54 V. Ylempi jana näyttää alueella 20 V saadun lukeman 1,50 V ja sen virherajan ±0,03 V eli välin 1,47 V–1,53 V. Alempi jana näyttää alueella 2 V saadun lukeman 1,500 V ja sen virherajan ±0,010 V eli välin 1,490 V–1,510 V. Alemman alueen jana on noin kolmasosa ylemmän pituudesta." style="max-width:100%;font-size:24px">
   <line x1="120" y1="40" x2="120" y2="252" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="180" y1="40" x2="180" y2="252" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="240" y1="40" x2="240" y2="252" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -256,17 +256,17 @@ Prosenttiosa $p \cdot x$ on sama kaikilla saman suureen alueilla, mutta numeroid
   <foreignObject x="511" y="263.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$1{,}54$</div></foreignObject>
   <foreignObject x="488" y="211.5" width="62" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$U\ (\text{V})$</div></foreignObject>
   <foreignObject x="60" y="27.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{alue } 20\,\text{V}$</div></foreignObject>
-  <rect x="135" y="66" width="330" height="24" rx="4" fill="#eef5f9" stroke="#1f2933" stroke-width="2"/>
-  <line x1="135" y1="58" x2="135" y2="98" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <line x1="465" y1="58" x2="465" y2="98" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <rect x="120" y="66" width="360" height="24" rx="4" fill="#eef5f9" stroke="#1f2933" stroke-width="2"/>
+  <line x1="120" y1="58" x2="120" y2="98" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <line x1="480" y1="58" x2="480" y2="98" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
   <circle cx="300" cy="78" r="7" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <foreignObject x="477" y="63.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\pm 0{,}028\,\text{V}$</div></foreignObject>
+  <foreignObject x="492" y="63.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\pm 0{,}03\,\text{V}$</div></foreignObject>
   <foreignObject x="60" y="125.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{alue } 2\,\text{V}$</div></foreignObject>
-  <rect x="243" y="164" width="114" height="24" rx="4" fill="#eef5f9" stroke="#1f2933" stroke-width="2"/>
-  <line x1="243" y1="156" x2="243" y2="196" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <line x1="357" y1="156" x2="357" y2="196" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <rect x="240" y="164" width="120" height="24" rx="4" fill="#eef5f9" stroke="#1f2933" stroke-width="2"/>
+  <line x1="240" y1="156" x2="240" y2="196" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <line x1="360" y1="156" x2="360" y2="196" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
   <circle cx="300" cy="176" r="7" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <foreignObject x="369" y="161.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\pm 0{,}0095\,\text{V}$</div></foreignObject>
+  <foreignObject x="372" y="161.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\pm 0{,}010\,\text{V}$</div></foreignObject>
 </svg>
 
 ## Esimerkki
@@ -310,7 +310,7 @@ Lampun jännite mitataan yleismittarilla kahdesti. Alueella $20\,\text{V}$ näyt
 
 <!-- vaihe -->
 
-**Tulos.** Alueella $20\,\text{V}$ jännite on $1{,}50\,\text{V} \pm 0{,}028\,\text{V}$ ja alueella $2\,\text{V}$ $1{,}500\,\text{V} \pm 0{,}0095\,\text{V}$. Suhteelliset virherajat ovat $1{,}8\,\%$ ja $0{,}63\,\%$. Virherajat ilmoitetaan kahdella merkitsevällä numerolla, koska ne ovat arvioita. Alue $2\,\text{V}$ kannattaa valita: sen virheraja on noin kolmasosa.
+**Tulos.** Alueella $20\,\text{V}$ jännite on $1{,}50\,\text{V} \pm 0{,}03\,\text{V}$ ja alueella $2\,\text{V}$ $1{,}500\,\text{V} \pm 0{,}010\,\text{V}$. Suhteelliset virherajat ovat $2\,\%$ ja $0{,}67\,\%$. Virheraja pyöristetään kuten virhe-arvio yhteen merkitsevään numeroon, tai kahteen, jos ensimmäinen numero on 1. Alue $2\,\text{V}$ kannattaa valita: sen virheraja on noin kolmasosa.
 
 <!-- vaihe -->
 

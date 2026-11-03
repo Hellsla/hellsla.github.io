@@ -5,7 +5,7 @@
 **Kaava:** $\Delta U = p \cdot U + n \cdot r$
 **Muunnokset:** $p = 0{,}5\,\% = 0{,}005$. Muita muunnoksia ei tarvita, koska lukema ja resoluutio ovat voltteina.
 **Sijoitus:** $\Delta U = 0{,}005 \cdot 12{,}46\,\text{V} + 2 \cdot 0{,}01\,\text{V} = 0{,}0623\,\text{V} + 0{,}02\,\text{V} = 0{,}0823\,\text{V}$
-**Vastaus:** $0{,}082\,\text{V}$. Vastaus on annettu kahdella merkitsevällä numerolla, koska virheraja on itsekin arvio. Sitä ei kannata ilmoittaa tarkemmin.
+**Vastaus:** $0{,}08\,\text{V}$. Vastauksessa on yksi merkitsevä numero, koska virheraja pyöristetään kuten virhe-arvio. Laskimen arvo on $0{,}0823\,\text{V}$.
 **Järkevyys:** Prosenttiosa on noin puolet sadasosasta $12\,\text{V}$:sta eli noin $0{,}06\,\text{V}$. Kaksi askelta lisää $0{,}02\,\text{V}$. Yhteensä tulee noin $0{,}08\,\text{V}$. Virheraja on alle prosentti lukemasta. Se sopii hyvään mittariin.
 
 ## fy6-2-L1-02
@@ -15,23 +15,23 @@
 **Kaava:** $\Delta I = p \cdot I + n \cdot r$
 **Muunnokset:** $p = 1{,}0\,\% = 0{,}010$. Lukema ja resoluutio ovat jo milliampeereina.
 **Sijoitus:** $\Delta I = 0{,}010 \cdot 146{,}3\,\text{mA} + 2 \cdot 0{,}1\,\text{mA} = 1{,}463\,\text{mA} + 0{,}2\,\text{mA} = 1{,}663\,\text{mA}$
-**Vastaus:** $1{,}7\,\text{mA}$. Vastaus on annettu kahdella merkitsevällä numerolla, koska virheraja on arvio.
+**Vastaus:** $1{,}7\,\text{mA}$. Vastauksessa on kaksi merkitsevää numeroa, koska virherajan ensimmäinen numero on 1.
 **Järkevyys:** Prosentti $146\,\text{mA}$:sta on noin $1{,}5\,\text{mA}$. Numeroiden osuus $0{,}2\,\text{mA}$ on sitä pienempi, koska lukema on lähellä alueen ylärajaa. Tulos on vähän yli prosentin lukemasta.
 
 ## fy6-2-L1-03
-**Annettu:** lukema $U = 8{,}00\,\text{V}$, virheraja $\Delta U = 0{,}060\,\text{V}$
+**Annettu:** lukema $U = 8{,}00\,\text{V}$, virheraja $\Delta U = 0{,}06\,\text{V}$
 **Kysytty:** suhteellinen virheraja $s$ prosentteina
 **Periaate:** Suhteellinen virheraja kertoo, kuinka suuri osa lukemasta virheraja on. Sen avulla voi verrata eri suuruisten mittausten tarkkuutta.
 **Kaava:** $s = \dfrac{\Delta U}{U}$
 **Muunnokset:** Muunnoksia ei tarvita. Molemmat ovat voltteina, ja yksikkö supistuu. Tulos kerrotaan sadalla, jotta se saadaan prosentteina.
-**Sijoitus:** $s = \dfrac{0{,}060\,\text{V}}{8{,}00\,\text{V}} = 0{,}0075 = 0{,}75\,\%$
-**Vastaus:** $0{,}75\,\%$. Vastauksessa on kaksi merkitsevää numeroa, kuten virherajassa $0{,}060\,\text{V}$.
-**Järkevyys:** Prosentti $8\,\text{V}$:sta olisi $0{,}08\,\text{V}$. Virheraja $0{,}06\,\text{V}$ on vähän pienempi. Tuloksen pitää siis olla vähän alle $1\,\%$, ja $0{,}75\,\%$ on.
+**Sijoitus:** $s = \dfrac{0{,}06\,\text{V}}{8{,}00\,\text{V}} = 0{,}0075 = 0{,}75\,\%$
+**Vastaus:** $0{,}8\,\%$. Vastauksessa on yksi merkitsevä numero, kuten virherajassa $0{,}06\,\text{V}$.
+**Järkevyys:** Prosentti $8\,\text{V}$:sta olisi $0{,}08\,\text{V}$. Virheraja $0{,}06\,\text{V}$ on vähän pienempi. Tuloksen pitää siis olla vähän alle $1\,\%$, ja $0{,}8\,\%$ on.
 
 ## fy6-2-L1-04
 **Annettu:** haaraton piiri, jossa paristo, lamppu ja vastus ovat peräkkäin. Virta pariston ja lampun välissä on $I = 0{,}180\,\text{A}$.
 **Kysytty:** virtamittarin lukema lampun ja vastuksen välissä ampeereina
-**Periaate:** Haarattomassa piirissä virta on joka kohdassa sama. Varausta ei katoa eikä kerry mihinkään. Siksi jokaisen poikkileikkauksen läpi kulkee sekunnissa yhtä paljon varausta. Lamppu muuttaa sähköenergiaa valoksi ja lämmöksi. Lamppu ei kuitenkaan kuluta virtaa.
+**Periaate:** Haarattomassa piirissä virta on joka kohdassa sama. Varausta ei katoa eikä kerry mihinkään. Siksi jokaisen poikkileikkauksen läpi kulkee sekunnissa yhtä paljon varausta. Lamppu muuttaa sähköenergiaa valoksi ja hehkulangan sisäenergiaksi. Lamppu ei kuitenkaan kuluta virtaa.
 **Kaava:** $I_\text{jälkeen} = I_\text{ennen}$
 **Muunnokset:** Muunnoksia ei tarvita, koska virta on ampeereina.
 **Sijoitus:** $I_\text{jälkeen} = 0{,}180\,\text{A}$
@@ -45,7 +45,7 @@
 **Kaava:** $\Delta U = p \cdot U + n \cdot r$
 **Muunnokset:** $p = 0{,}5\,\% = 0{,}005$. Lukema ja resoluutio ovat voltteina.
 **Sijoitus:** $\Delta U = 0{,}005 \cdot 1{,}587\,\text{V} + 2 \cdot 0{,}001\,\text{V} = 0{,}007935\,\text{V} + 0{,}002\,\text{V} = 0{,}009935\,\text{V}$
-**Vastaus:** $0{,}0099\,\text{V}$ eli noin $10\,\text{mV}$. Vastaus on annettu kahdella merkitsevällä numerolla, koska virheraja on arvio.
+**Vastaus:** $0{,}010\,\text{V}$ eli $10\,\text{mV}$. Laskimen arvo $0{,}009935\,\text{V}$ pyöristyy yhteen merkitsevään numeroon $0{,}01\,\text{V}$. Sen ensimmäinen numero on 1, joten virheraja ilmoitetaan kahdella numerolla.
 **Järkevyys:** Puoli prosenttia $1{,}6\,\text{V}$:sta on noin $8\,\text{mV}$. Kaksi askelta lisää $2\,\text{mV}$. Yhteensä tulee noin $10\,\text{mV}$. Alueella $20\,\text{V}$ pelkkä numeroiden osuus olisi $20\,\text{mV}$. Pieni alue on tässä selvästi tarkempi.
 
 ## fy6-2-L2-01
@@ -55,7 +55,7 @@
 **Kaava:** $\Delta I = p \cdot I + n \cdot r$, joten $\dfrac{\Delta I}{I} = \dfrac{p \cdot I + n \cdot r}{I}$
 **Muunnokset:** $p = 2{,}0\,\% = 0{,}020$. Kaikki virrat ovat ampeereina.
 **Sijoitus:** $\Delta I = 0{,}020 \cdot 0{,}35\,\text{A} + 3 \cdot 0{,}01\,\text{A} = 0{,}007\,\text{A} + 0{,}03\,\text{A} = 0{,}037\,\text{A}$, joten $\dfrac{\Delta I}{I} = \dfrac{0{,}037\,\text{A}}{0{,}35\,\text{A}} = 0{,}106 = 10{,}6\,\%$
-**Vastaus:** noin $11\,\%$. Vastauksessa on kaksi merkitsevää numeroa, kuten lukemassa $0{,}35\,\text{A}$.
+**Vastaus:** noin $10\,\%$. Vastauksessa on yksi merkitsevä numero, koska virheraja $0{,}037\,\text{A} \approx 0{,}04\,\text{A}$ ilmoitetaan yhdellä numerolla.
 **Järkevyys:** Kolme askelta eli $0{,}03\,\text{A}$ on jo lähes kymmenesosa lukemasta $0{,}35\,\text{A}$. Prosenttiosa lisää siihen vähän. Virta $0{,}35\,\text{A}$ ei mahdu alueelle $200\,\text{mA}$. Alue $10\,\text{A}$ on siis tässä pienin sopiva alue. Virheraja on silti lähes $11\,\%$, koska lukema on pieni alueeseen nähden. Suurille virroille tarkempi alue auttaisi.
 
 ## fy6-2-L2-02
@@ -65,7 +65,7 @@
 **Kaava:** $\Delta I = p \cdot I + n \cdot r$
 **Muunnokset:** $p = 1{,}0\,\% = 0{,}010$ ja $r = 0{,}1\,\text{mA} = 0{,}1 \cdot 0{,}001\,\text{A} = 0{,}0001\,\text{A}$
 **Sijoitus:** $\Delta I = 0{,}010 \cdot 0{,}0875\,\text{A} + 2 \cdot 0{,}0001\,\text{A} = 0{,}000875\,\text{A} + 0{,}0002\,\text{A} = 0{,}001075\,\text{A}$
-**Vastaus:** $0{,}0011\,\text{A}$ eli noin $1{,}1\,\text{mA}$. Vastaus on annettu kahdella merkitsevällä numerolla, koska virheraja on arvio.
+**Vastaus:** $0{,}0011\,\text{A}$ eli noin $1{,}1\,\text{mA}$. Vastauksessa on kaksi merkitsevää numeroa, koska virherajan ensimmäinen numero on 1.
 **Järkevyys:** Näyttö näyttää $87{,}5\,\text{mA}$. Prosentti siitä on noin $0{,}9\,\text{mA}$ ja kaksi askelta on $0{,}2\,\text{mA}$. Yhteensä tulee noin $1{,}1\,\text{mA}$. Jos resoluutiota ei muuntaisi ampeereiksi, tulos olisi järjetön $0{,}2\,\text{A}$. Se on suurempi kuin itse virta.
 
 ## fy6-2-L2-03
@@ -75,7 +75,7 @@
 **Kaava:** $\Delta U = p \cdot U + n \cdot r$, joten $\dfrac{\Delta U_{20}}{\Delta U_2} = \dfrac{p \cdot U_{20} + n \cdot r_{20}}{p \cdot U_2 + n \cdot r_2}$
 **Muunnokset:** $p = 0{,}5\,\% = 0{,}005$. Jännitteet ovat voltteina.
 **Sijoitus:** $\Delta U_2 = 0{,}005 \cdot 1{,}234\,\text{V} + 2 \cdot 0{,}001\,\text{V} = 0{,}00817\,\text{V}$ ja $\Delta U_{20} = 0{,}005 \cdot 1{,}23\,\text{V} + 2 \cdot 0{,}01\,\text{V} = 0{,}02615\,\text{V}$, joten $\dfrac{\Delta U_{20}}{\Delta U_2} = \dfrac{0{,}02615\,\text{V}}{0{,}00817\,\text{V}} = 3{,}20$
-**Vastaus:** $3{,}2$. Vastaus on annettu kahdella merkitsevällä numerolla, koska virherajat ovat arvioita.
+**Vastaus:** $3{,}2$. Suhde lasketaan pyöristämättömistä virherajoista. Ne ovat arvioita, joten kaksi numeroa riittää. Alueen $20\,\text{V}$ virheraja on noin kolminkertainen.
 **Järkevyys:** Jos virheraja olisi pelkkiä numeroita, suhde olisi $10$. Jos se olisi pelkkä prosenttiosa, suhde olisi $1$. Tulos on näiden välissä ja lähempänä pientä päätä. Syy on se, että alueella $2\,\text{V}$ prosenttiosa $0{,}006\,\text{V}$ on suurempi kuin numeroiden osuus $0{,}002\,\text{V}$.
 
 ## fy6-2-L2-04
@@ -105,7 +105,7 @@
 **Kaava:** $\Delta U = p \cdot U + n \cdot r$, joten $\Delta U_\text{A} + \Delta U_\text{B} = p_\text{A} \cdot U_\text{A} + n_\text{A} \cdot r + p_\text{B} \cdot U_\text{B} + n_\text{B} \cdot r$
 **Muunnokset:** $p_\text{A} = 0{,}5\,\% = 0{,}005$ ja $p_\text{B} = 1{,}5\,\% = 0{,}015$. Jännitteet ovat voltteina.
 **Sijoitus:** $\Delta U_\text{A} = 0{,}005 \cdot 5{,}02\,\text{V} + 2 \cdot 0{,}01\,\text{V} = 0{,}0451\,\text{V}$ ja $\Delta U_\text{B} = 0{,}015 \cdot 5{,}14\,\text{V} + 3 \cdot 0{,}01\,\text{V} = 0{,}1071\,\text{V}$, joten $\Delta U_\text{A} + \Delta U_\text{B} = 0{,}0451\,\text{V} + 0{,}1071\,\text{V} = 0{,}1522\,\text{V}$
-**Vastaus:** $0{,}15\,\text{V}$. Vastaus on annettu kahdella merkitsevällä numerolla, koska virherajat ovat arvioita. Lukemien ero $0{,}12\,\text{V}$ on pienempi kuin $0{,}15\,\text{V}$. Välit $4{,}97$–$5{,}07\,\text{V}$ ja $5{,}03$–$5{,}25\,\text{V}$ menevät siis päällekkäin. Eron perusteella kumpaakaan mittaria ei voi sanoa vialliseksi. Se ei silti todista, että mittarit näyttäisivät aina saman.
+**Vastaus:** $0{,}15\,\text{V}$. Vastauksessa on kaksi merkitsevää numeroa, koska virherajojen summan ensimmäinen numero on 1. Lukemien ero $0{,}12\,\text{V}$ on pienempi kuin $0{,}15\,\text{V}$. Välit $4{,}97$–$5{,}07\,\text{V}$ ja $5{,}03$–$5{,}25\,\text{V}$ menevät siis päällekkäin. Eron perusteella kumpaakaan mittaria ei voi sanoa vialliseksi. Se ei silti todista, että mittarit näyttäisivät aina saman.
 **Järkevyys:** Halvemman mittarin virheraja on yli kaksinkertainen. Sitä sen suurempi prosentti ja numeromäärä antavat odottaa. Ero $0{,}12\,\text{V}$ on noin $2\,\%$ lukemasta. Se on samaa suuruusluokkaa kuin mittari B:n virheraja.
 
 ## fy6-2-L3-03

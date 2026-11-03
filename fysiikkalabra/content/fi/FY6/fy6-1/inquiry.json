@@ -26,17 +26,17 @@
       "prompt": "Taskulampun lamppu palaa. Mihin paristosta lamppuun siirtyvä energia päätyy?",
       "choices": [
         {
-          "text": "Se muuttuu lampussa valoksi ja lämmöksi, jotka siirtyvät ympäristöön.",
+          "text": "Se muuttuu lampussa valoksi ja sisäenergiaksi, joka siirtyy lämpönä pois.",
           "correct": true,
-          "feedback": "Oikein. Energia säilyy, mutta sen muoto muuttuu: sähköinen energia muuttuu hehkulangassa valoksi ja lämmöksi. Tässä luvussa nähdään, että varaus ei muutu eikä kulu, vaan se kuljettaa energian paristosta lamppuun."
+          "feedback": "Oikein. Energia säilyy, mutta sen muoto muuttuu: sähköinen energia muuttuu hehkulangassa valoksi ja langan sisäenergiaksi, joka siirtyy lämpönä ympäristöön. Tässä luvussa nähdään, että varaus ei muutu eikä kulu, vaan se kuljettaa energian paristosta lamppuun."
         },
         {
           "text": "Se häviää lampussa, koska lamppu kuluttaa energian loppuun.",
-          "feedback": "Energia ei häviä. Lamppu muuttaa sähköisen energian valoksi ja lämmöksi, ja ne siirtyvät ympäristöön. Arkikielen kuluttaa tarkoittaa fysiikassa muuttamista toiseen muotoon."
+          "feedback": "Energia ei häviä. Lamppu muuttaa sähköisen energian valoksi ja hehkulangan sisäenergiaksi, ja energia siirtyy valona ja lämpönä ympäristöön. Arkikielen kuluttaa tarkoittaa fysiikassa muuttamista toiseen muotoon."
         },
         {
           "text": "Se palaa johtoja pitkin takaisin paristoon ja lataa sen uudelleen.",
-          "feedback": "Jos energia palaisi paristoon, paristo ei koskaan tyhjenisi. Lampussa energia muuttuu valoksi ja lämmöksi, jotka siirtyvät ympäristöön. Paristoon palaa varaus, ei energia."
+          "feedback": "Jos energia palaisi paristoon, paristo ei koskaan tyhjenisi. Lampussa energia muuttuu valoksi ja hehkulangan sisäenergiaksi, ja se siirtyy valona ja lämpönä ympäristöön. Paristoon palaa varaus, ei energia."
         }
       ]
     },
@@ -55,7 +55,7 @@
         {
           "text": "Kummankin poikkileikkauksen läpi kulkee yhtä suuri varaus.",
           "correct": true,
-          "feedback": "Oikein. Mallin arvoissa yhdellä lampulla $Q_A = Q_B$: yhdellä paristolla $1{,}00\\,\\text{C}$, kahdella $2{,}00\\,\\text{C}$ ja kolmella $3{,}00\\,\\text{C}$. Varaus ei kulu lampussa, vaan sama varaus palaa paristoon. Lamppu muuttaa vain sen tuomaa energiaa valoksi ja lämmöksi."
+          "feedback": "Oikein. Mallin arvoissa yhdellä lampulla $Q_A = Q_B$: yhdellä paristolla $1{,}00\\,\\text{C}$, kahdella $2{,}00\\,\\text{C}$ ja kolmella $3{,}00\\,\\text{C}$. Varaus ei kulu lampussa, vaan sama varaus palaa paristoon. Lamppu muuttaa vain sen tuomaa energiaa valoksi ja hehkulangan sisäenergiaksi."
         },
         {
           "text": "Kohdan $A$ läpi kulkee enemmän, koska lamppu kuluttaa osan virrasta.",
@@ -241,11 +241,11 @@
       "prompt": "Selitä mittaustesi avulla, kuluuko sähkövirta lampussa. Käytä sanoja varaus, sähkövirta ja energia, ja kerro, mikä virran suuruuteen vaikutti.",
       "criteria": [
         "Vastaus kertoo, että kohtien $A$ ja $B$ läpi kulki joka mittauksessa yhtä suuri varaus, joten virta on sama lampun molemmin puolin.",
-        "Vastaus kertoo, että lamppu ei kuluta varausta vaan muuttaa sähköisen energian valoksi ja lämmöksi.",
+        "Vastaus kertoo, että lamppu ei kuluta varausta vaan muuttaa sähköisen energian valoksi ja hehkulangan sisäenergiaksi.",
         "Vastaus laskee tai mainitsee virran $I = \\tfrac{Q}{t}$ jostakin mittauksesta.",
         "Vastaus kertoo, että paristojen lisääminen suurensi virtaa ja toinen lamppu pienensi sitä koko silmukassa."
       ],
-      "model": "Kokeessa 1 kohtien $A$ ja $B$ läpi kulki mallin arvoissa joka rivillä sama varaus: yhdellä paristolla $1{,}00\\,\\text{C}$, kahdella $2{,}00\\,\\text{C}$ ja kolmella $3{,}00\\,\\text{C}$ ajassa $10{,}0\\,\\text{s}$. Virta $I = \\tfrac{Q}{t}$ oli siis esimerkiksi kahdella paristolla $0{,}200\\,\\text{A}$ lampun molemmin puolin. Sähkövirta ei kulu lampussa: jokainen lamppuun tuleva elektroni lähtee siitä ja palaa paristoon. Lampussa muuttuu energian muoto, kun varauksen tuoma sähköinen energia muuttuu valoksi ja lämmöksi. Suurempi jännite antoi suuremman virran. Kokeessa 2 toinen lamppu samassa silmukassa pienensi varauksen $1{,}00\\,\\text{C}$:iin sekä kohdassa $A$ että kohdassa $B$, joten virta pieneni koko silmukassa yhtä paljon."
+      "model": "Kokeessa 1 kohtien $A$ ja $B$ läpi kulki mallin arvoissa joka rivillä sama varaus: yhdellä paristolla $1{,}00\\,\\text{C}$, kahdella $2{,}00\\,\\text{C}$ ja kolmella $3{,}00\\,\\text{C}$ ajassa $10{,}0\\,\\text{s}$. Virta $I = \\tfrac{Q}{t}$ oli siis esimerkiksi kahdella paristolla $0{,}200\\,\\text{A}$ lampun molemmin puolin. Sähkövirta ei kulu lampussa: jokainen lamppuun tuleva elektroni lähtee siitä ja palaa paristoon. Lampussa muuttuu energian muoto, kun varauksen tuoma sähköinen energia muuttuu valoksi ja hehkulangan sisäenergiaksi, joka siirtyy lämpönä ympäristöön. Suurempi jännite antoi suuremman virran. Kokeessa 2 toinen lamppu samassa silmukassa pienensi varauksen $1{,}00\\,\\text{C}$:iin sekä kohdassa $A$ että kohdassa $B$, joten virta pieneni koko silmukassa yhtä paljon."
     },
     {
       "id": "theory",

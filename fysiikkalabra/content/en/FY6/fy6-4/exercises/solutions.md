@@ -31,7 +31,7 @@
 ## fy6-4-L1-04
 **Given:** lamps in series, battery voltage $U = 4.5\,\text{V}$, voltage of the first lamp $U_1 = 1.8\,\text{V}$
 **Find:** the voltage $U_2$ of the second lamp
-**Principle:** In a series connection the battery voltage is shared between the components: each charge passes through both lamps, and its energy is transformed into heat and light in the lamps. The sum of the voltages of the lamps is the battery voltage.
+**Principle:** In a series connection the battery voltage is shared between the components: each charge passes through both lamps, and its energy is transformed into light and internal energy of the filaments in the lamps. The sum of the voltages of the lamps is the battery voltage.
 **Formula:** $U = U_1 + U_2$, so $U_2 = U - U_1$
 **Conversions:** Not needed, the voltages are in volts.
 **Substitution:** $U_2 = 4.5\,\text{V} - 1.8\,\text{V} = 2.7\,\text{V}$

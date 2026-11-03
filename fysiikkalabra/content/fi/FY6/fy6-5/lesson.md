@@ -104,7 +104,7 @@
 ## Ydinajatus
 
 ### Virta ei kulu: Kirchhoffin virtalaki
-Sähkövirta on varausten liikettä. Varausta ei synny eikä häviä, eikä sitä kerry johtimiin, kun virrat pysyvät vakioina. Siksi kaikki varaus, joka tulee **haarautumispisteeseen** eli kohtaan, jossa johdin jakautuu haaroiksi, myös lähtee siitä. **Haarautumispisteeseen tulevien virtojen summa on yhtä suuri kuin siitä lähtevien virtojen summa.** Tämä on Kirchhoffin virtalaki. Samasta syystä virta on yhtä suuri vastuksen kummallakin puolella: vastuksessa sähköenergiaa muuttuu lämmöksi, mutta virta ei kulu siinä.
+Sähkövirta on varausten liikettä. Varausta ei synny eikä häviä, eikä sitä kerry johtimiin, kun virrat pysyvät vakioina. Siksi kaikki varaus, joka tulee **haarautumispisteeseen** eli kohtaan, jossa johdin jakautuu haaroiksi, myös lähtee siitä. **Haarautumispisteeseen tulevien virtojen summa on yhtä suuri kuin siitä lähtevien virtojen summa.** Tämä on Kirchhoffin virtalaki. Samasta syystä virta on yhtä suuri vastuksen kummallakin puolella: vastuksessa sähköenergiaa muuttuu vastuksen sisäenergiaksi, joka siirtyy lämpönä ympäristöön, mutta virta ei kulu siinä.
 
 Rinnakkaisten haarojen yli on sama jännite (luku *Vastusten sarja- ja rinnankytkennät*), joten Ohmin lain mukaan pienemmän resistanssin haaraan kulkee suurempi virta. Kuvassa $30\,\Omega$:n haaran virta on kaksinkertainen $60\,\Omega$:n haaraan verrattuna, ja haarojen virrat $0{,}20\,\text{A}$ ja $0{,}10\,\text{A}$ ovat yhteensä yhtä suuret kuin tuleva virta $0{,}30\,\text{A}$.
 
@@ -296,7 +296,7 @@ Jännitelähteen jännite on $12\,\text{V}$. Lähteen plusnavasta virta kulkee v
 **Järkevyys.** Vastuksen $R_2$ kautta kulkee $6{,}0\,\text{V} : 60\,\Omega = 0{,}10\,\text{A}$, ja haarojen virrat ovat yhteensä $0{,}30\,\text{A}$ kuten virtalaki vaatii. Silmukassa $12\,\text{V} - 6{,}0\,\text{V} - 6{,}0\,\text{V} = 0$, kuten jännitelaki vaatii. Pienemmän resistanssin haaraan kulkee suurempi virta, kuten pitääkin.
 
 ## Yleinen virhekäsitys
-Moni ajattelee, että vastus kuluttaa virtaa, joten virta olisi vastuksen jälkeen pienempi kuin ennen sitä. Vastus muuttaa sähköenergiaa lämmöksi, mutta varauksia ei katoa: virtamittari näyttää vastuksen kummallakin puolella saman lukeman. Vastuksessa pienenee potentiaali, ei virta.
+Moni ajattelee, että vastus kuluttaa virtaa, joten virta olisi vastuksen jälkeen pienempi kuin ennen sitä. Vastus muuttaa sähköenergiaa sisäenergiakseen, mutta varauksia ei katoa: virtamittari näyttää vastuksen kummallakin puolella saman lukeman. Vastuksessa pienenee potentiaali, ei virta.
 
 Toinen yleinen virhe on käyttää haaran virran laskemisessa lähteen jännitettä. Jos edellä esimerkissä laskettaisiin $I_3 = 12\,\text{V} : 30\,\Omega = 0{,}40\,\text{A}$, haaroihin lähtisi yhteensä enemmän virtaa kuin haarautumispisteeseen tulee. Haaran jännite on lähteen jännite miinus sarjaan kytkettyjen vastusten jännitteet, tässä $6{,}0\,\text{V}$. Kolmas virhe on ajatella, että jännite on jonkin kohdan ominaisuus: jännite on aina kahden kohdan välinen potentiaaliero.
 

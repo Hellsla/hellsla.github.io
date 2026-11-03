@@ -104,7 +104,7 @@
 ## Key idea
 
 ### Current is not used up: Kirchhoff's current law
-Electric current is the motion of charges. Charge is neither created nor destroyed, and it does not collect in the wires when the currents stay constant. Therefore all the charge that arrives at a **junction**, a point where a wire divides into branches, also leaves it. **The sum of the currents arriving at a junction is equal to the sum of the currents leaving it.** This is Kirchhoff's current law. For the same reason the current is equal on both sides of a resistor: in a resistor electrical energy changes into heat, but the current is not used up in it.
+Electric current is the motion of charges. Charge is neither created nor destroyed, and it does not collect in the wires when the currents stay constant. Therefore all the charge that arrives at a **junction**, a point where a wire divides into branches, also leaves it. **The sum of the currents arriving at a junction is equal to the sum of the currents leaving it.** This is Kirchhoff's current law. For the same reason the current is equal on both sides of a resistor: in a resistor electrical energy changes into internal energy of the resistor, which is transferred to the surroundings as heat, but the current is not used up in it.
 
 The voltage across parallel branches is the same (chapter *Resistors in series and in parallel*), so by Ohm's law the branch with the smaller resistance carries the larger current. In the figure the current in the $30\,\Omega$ branch is twice the current in the $60\,\Omega$ branch, and the branch currents $0.20\,\text{A}$ and $0.10\,\text{A}$ are together equal to the arriving current $0.30\,\text{A}$.
 
@@ -296,7 +296,7 @@ The voltage of a voltage source is $12\,\text{V}$. From the positive terminal of
 **Reasonableness.** A current of $6.0\,\text{V} : 60\,\Omega = 0.10\,\text{A}$ flows through the resistor $R_2$, and the branch currents are together $0.30\,\text{A}$, as the current law requires. In the loop $12\,\text{V} - 6.0\,\text{V} - 6.0\,\text{V} = 0$, as the voltage law requires. The branch with the smaller resistance carries the larger current, as it should.
 
 ## Common misconception
-Many think that a resistor uses up current, so that the current after the resistor would be smaller than before it. A resistor changes electrical energy into heat, but no charges disappear: an ammeter shows the same reading on both sides of a resistor. In a resistor the potential decreases, not the current.
+Many think that a resistor uses up current, so that the current after the resistor would be smaller than before it. A resistor changes electrical energy into its internal energy, but no charges disappear: an ammeter shows the same reading on both sides of a resistor. In a resistor the potential decreases, not the current.
 
 Another common mistake is to use the voltage of the source when calculating the current of a branch. If in the example above one calculated $I_3 = 12\,\text{V} : 30\,\Omega = 0.40\,\text{A}$, more current would leave into the branches in total than arrives at the junction. The voltage of a branch is the voltage of the source minus the voltages of the resistors connected in series with it, here $6.0\,\text{V}$. A third mistake is to think that voltage is a property of a single point: voltage is always the potential difference between two points.
 

@@ -419,11 +419,11 @@
         {
           "text": "$0{,}40\\,\\text{A}$, koska sama varausmäärä kulkee sekunnissa jokaisen sarjaan kytketyn osan läpi.",
           "correct": true,
-          "feedback": "Oikein. Varausta ei katoa lampussa, joten virta on sama kaikkialla sarjaankytkennässä. Lampussa sähköenergiaa muuttuu valoksi ja lämmöksi, ja potentiaali laskee, mutta virta ei kulu."
+          "feedback": "Oikein. Varausta ei katoa lampussa, joten virta on sama kaikkialla sarjaankytkennässä. Lampussa sähköenergiaa muuttuu valoksi ja hehkulangan sisäenergiaksi, ja potentiaali laskee, mutta virta ei kulu."
         },
         {
           "text": "Alle $0{,}40\\,\\text{A}$, koska lamppu kuluttaa osan virrasta valoksi ja lämmöksi.",
-          "feedback": "Lamppu muuttaa sähköenergiaa valoksi ja lämmöksi, mutta varaukset eivät katoa. Lampun jälkeen virta on sama $0{,}40\\,\\text{A}$; lampussa pienenee potentiaali, ei virta."
+          "feedback": "Lamppu muuttaa sähköenergiaa valoksi ja hehkulangan sisäenergiaksi, mutta varaukset eivät katoa. Lampun jälkeen virta on sama $0{,}40\\,\\text{A}$; lampussa pienenee potentiaali, ei virta."
         },
         {
           "text": "Yli $0{,}40\\,\\text{A}$, koska lampun jälkeen virtaa vastustaa enää vain yksi komponentti.",
@@ -464,7 +464,7 @@
       "title": "3. Selitä potentiaalikuvaaja",
       "optional": true,
       "prompt": "Selitä, mitä potentiaalikuvaajan nousu, lasku ja vaakasuora osa kertovat virtapiiristä. Miksi kuvaaja päättyy samaan arvoon, josta se alkoi, kun silmukka on kierretty kerran?",
-      "model": "Nousu on jännitelähteen kohdalla: lähteessä potentiaali nousee miinusnavalta plusnavalle lähteen jännitteen verran, ja varaukset saavat energiaa. Lasku on vastuksen kohdalla: virran suuntaan potentiaali laskee jännitteen $RI$ verran, ja sähköenergiaa muuttuu lämmöksi. Vaakasuora osa on johdin, jonka resistanssi jätetään huomiotta, joten sen kaikissa kohdissa on sama potentiaali. Kun silmukka on kierretty, ollaan samassa kohdassa kuin alussa, ja yhdellä kohdalla on vain yksi potentiaali. Siksi nousut ja laskut ovat yhteensä nolla: tämä on Kirchhoffin jännitelaki.",
+      "model": "Nousu on jännitelähteen kohdalla: lähteessä potentiaali nousee miinusnavalta plusnavalle lähteen jännitteen verran, ja varaukset saavat energiaa. Lasku on vastuksen kohdalla: virran suuntaan potentiaali laskee jännitteen $RI$ verran, ja sähköenergiaa muuttuu vastuksen sisäenergiaksi. Vaakasuora osa on johdin, jonka resistanssi jätetään huomiotta, joten sen kaikissa kohdissa on sama potentiaali. Kun silmukka on kierretty, ollaan samassa kohdassa kuin alussa, ja yhdellä kohdalla on vain yksi potentiaali. Siksi nousut ja laskut ovat yhteensä nolla: tämä on Kirchhoffin jännitelaki.",
       "criteria": [
         "Vastaus kertoo, että nousu on lähteessä ja sen suuruus on lähteen jännite.",
         "Vastaus kertoo, että lasku on vastuksessa ja sen suuruus on vastuksen jännite $RI$.",

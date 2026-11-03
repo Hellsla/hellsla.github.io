@@ -66,7 +66,7 @@
 ## Key idea
 
 ### An ammeter is connected in series
-An **ammeter** measures how large an electric current passes through it. That is why the current to be measured has to pass through the meter: the circuit is opened at the point whose current we want to know, and the meter is placed in the gap. The meter is then **in series** with the other components. In a circuit without branches the current is the same at every point, because charge neither disappears nor accumulates anywhere. A lamp changes electrical energy into light and heat, but it does not use up current. An ammeter can therefore be connected at any point of a circuit without branches, and it always shows the same reading.
+An **ammeter** measures how large an electric current passes through it. That is why the current to be measured has to pass through the meter: the circuit is opened at the point whose current we want to know, and the meter is placed in the gap. The meter is then **in series** with the other components. In a circuit without branches the current is the same at every point, because charge neither disappears nor accumulates anywhere. A lamp changes electrical energy into light and internal energy of the filament, but it does not use up current. An ammeter can therefore be connected at any point of a circuit without branches, and it always shows the same reading.
 
 ### A voltmeter is connected in parallel
 Voltage is a quantity between two points (chapter *Electric circuit, current and voltage*). A **voltmeter** measures the voltage between the two points that its leads are touched to. The voltage of a lamp is measured by touching both terminals of the lamp: the circuit is not opened, but the meter comes **in parallel** with the lamp. The red lead of the meter is touched to the terminal that is closer to the positive terminal of the battery, so the reading is positive.
@@ -221,7 +221,7 @@ The error limit of a reading $x$ is
 ```latex
 \Delta x = p \cdot x + n \cdot r
 ```
-where $\Delta x$ is the error limit, $x$ the reading, $p$ the percentage given by the manufacturer as a decimal number ($0.5\,\% = 0.005$), $n$ the number of digits and $r$ the resolution of the range. The result is written in the form $x \pm \Delta x$, for example $U = 4.50\,\text{V} \pm 0.04\,\text{V}$. The accuracy of different measurements is compared with the **relative error limit**
+where $\Delta x$ is the error limit, $x$ the reading, $p$ the percentage given by the manufacturer as a decimal number ($0.5\,\% = 0.005$), $n$ the number of digits and $r$ the resolution of the range. The result is written in the form $x \pm \Delta x$, for example $U = 4.50\,\text{V} \pm 0.04\,\text{V}$. The notation is the same as for an error estimate, but here $\Delta x$ is the meter's own error limit, not the uncertainty of the whole measurement. The accuracy of different measurements is compared with the **relative error limit**
 ```latex
 \frac{\Delta x}{x}
 ```
@@ -230,7 +230,7 @@ which is a pure number and is usually given as a percentage.
 ### Why the smallest suitable range
 The percentage part $p \cdot x$ is the same on all ranges of the same quantity, but the share of the digits $n \cdot r$ decreases to a tenth when we move to a range ten times smaller. When the reading is small compared with the range, the share of the digits dominates: a current of $0.02\,\text{A}$ on the range $10\,\text{A}$ is almost a guess, because three steps of the last digit are already $0.03\,\text{A}$.
 
-<svg data-fig="error-bands" viewBox="0 0 600 312" role="img" aria-label="Picture to scale: the voltage axis from 1.46 V to 1.54 V. The upper segment shows the reading 1.50 V obtained on the range 20 V and its error limit ±0.028 V, that is the interval 1.472 V–1.528 V. The lower segment shows the reading 1.500 V obtained on the range 2 V and its error limit ±0.0095 V, that is the interval 1.4905 V–1.5095 V. The segment of the lower range is about a third of the length of the upper one." style="max-width:100%;font-size:24px">
+<svg data-fig="error-bands" viewBox="0 0 600 312" role="img" aria-label="Picture to scale: the voltage axis from 1.46 V to 1.54 V. The upper segment shows the reading 1.50 V obtained on the range 20 V and its error limit ±0.03 V, that is the interval 1.47 V–1.53 V. The lower segment shows the reading 1.500 V obtained on the range 2 V and its error limit ±0.010 V, that is the interval 1.490 V–1.510 V. The segment of the lower range is about a third of the length of the upper one." style="max-width:100%;font-size:24px">
   <line x1="120" y1="40" x2="120" y2="252" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="180" y1="40" x2="180" y2="252" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="240" y1="40" x2="240" y2="252" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -256,17 +256,17 @@ The percentage part $p \cdot x$ is the same on all ranges of the same quantity, 
   <foreignObject x="511" y="263.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$1.54$</div></foreignObject>
   <foreignObject x="488" y="211.5" width="62" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$U\ (\text{V})$</div></foreignObject>
   <foreignObject x="60" y="27.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{range } 20\,\text{V}$</div></foreignObject>
-  <rect x="135" y="66" width="330" height="24" rx="4" fill="#eef5f9" stroke="#1f2933" stroke-width="2"/>
-  <line x1="135" y1="58" x2="135" y2="98" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <line x1="465" y1="58" x2="465" y2="98" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <rect x="120" y="66" width="360" height="24" rx="4" fill="#eef5f9" stroke="#1f2933" stroke-width="2"/>
+  <line x1="120" y1="58" x2="120" y2="98" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <line x1="480" y1="58" x2="480" y2="98" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
   <circle cx="300" cy="78" r="7" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <foreignObject x="477" y="63.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\pm 0.028\,\text{V}$</div></foreignObject>
+  <foreignObject x="492" y="63.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\pm 0.03\,\text{V}$</div></foreignObject>
   <foreignObject x="60" y="125.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{range } 2\,\text{V}$</div></foreignObject>
-  <rect x="243" y="164" width="114" height="24" rx="4" fill="#eef5f9" stroke="#1f2933" stroke-width="2"/>
-  <line x1="243" y1="156" x2="243" y2="196" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <line x1="357" y1="156" x2="357" y2="196" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <rect x="240" y="164" width="120" height="24" rx="4" fill="#eef5f9" stroke="#1f2933" stroke-width="2"/>
+  <line x1="240" y1="156" x2="240" y2="196" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <line x1="360" y1="156" x2="360" y2="196" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
   <circle cx="300" cy="176" r="7" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <foreignObject x="369" y="161.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\pm 0.0095\,\text{V}$</div></foreignObject>
+  <foreignObject x="372" y="161.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\pm 0.010\,\text{V}$</div></foreignObject>
 </svg>
 
 ## Worked example
@@ -310,7 +310,7 @@ The voltage of a lamp is measured twice with a multimeter. On the range $20\,\te
 
 <!-- vaihe -->
 
-**Result.** On the range $20\,\text{V}$ the voltage is $1.50\,\text{V} \pm 0.028\,\text{V}$ and on the range $2\,\text{V}$ $1.500\,\text{V} \pm 0.0095\,\text{V}$. The relative error limits are $1.8\,\%$ and $0.63\,\%$. The error limits are given with two significant figures, because they are estimates. The range $2\,\text{V}$ should be chosen: its error limit is about a third.
+**Result.** On the range $20\,\text{V}$ the voltage is $1.50\,\text{V} \pm 0.03\,\text{V}$ and on the range $2\,\text{V}$ $1.500\,\text{V} \pm 0.010\,\text{V}$. The relative error limits are $2\,\%$ and $0.67\,\%$. Like an error estimate, an error limit is rounded to one significant figure, or to two if the first figure is 1. The range $2\,\text{V}$ should be chosen: its error limit is about a third.
 
 <!-- vaihe -->
 

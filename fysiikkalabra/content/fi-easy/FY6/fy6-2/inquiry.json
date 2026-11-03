@@ -60,7 +60,7 @@
       "choices": [
         {
           "text": "Lampun jälkeen lukema on pienempi, koska lamppu käyttää osan virrasta valoksi.",
-          "feedback": "Mallin lukemat kumoavat tämän: kumpikin paikka antaa $97{,}8\\,\\text{mA}$. Lamppu muuttaa sähköenergiaa valoksi ja lämmöksi. Varausta ei kuitenkaan katoa. Lampusta tulee ulos yhtä paljon varausta kuin sinne menee."
+          "feedback": "Mallin lukemat kumoavat tämän: kumpikin paikka antaa $97{,}8\\,\\text{mA}$. Lamppu muuttaa sähköenergiaa valoksi ja hehkulangan sisäenergiaksi. Varausta ei kuitenkaan katoa. Lampusta tulee ulos yhtä paljon varausta kuin sinne menee."
         },
         {
           "text": "Lukemat ovat samat, koska haarattomassa piirissä sama varaus kulkee kaikkien osien läpi.",
@@ -69,7 +69,7 @@
         },
         {
           "text": "Lampun jälkeen lukema on suurempi, koska lamppu kiihdyttää varausta.",
-          "feedback": "Mallin lukemat kumoavat tämän: molemmat lukemat ovat $97{,}8\\,\\text{mA}$. Lamppu ei lisää varausta eikä virtaa. Se muuttaa sähköenergiaa valoksi ja lämmöksi."
+          "feedback": "Mallin lukemat kumoavat tämän: molemmat lukemat ovat $97{,}8\\,\\text{mA}$. Lamppu ei lisää varausta eikä virtaa. Se muuttaa sähköenergiaa valoksi ja hehkulangan sisäenergiaksi."
         },
         {
           "text": "Lampun ja vastuksen välissä virta on nolla, koska lamppu on käyttänyt sen kokonaan.",
@@ -458,7 +458,7 @@
       "prompt": "Lampun jännite mitataan alueella $2\\,\\text{V}$, ja näyttö näyttää $0{,}846\\,\\text{V}$. Alueen resoluutio on $0{,}001\\,\\text{V}$ ja virheraja $\\pm(0{,}5\\,\\% + 2\\ \\text{numeroa})$. Kuinka suuri on lukeman virheraja? Anna vastaus millivoltteina.",
       "answer": 6.23,
       "unit": "mV",
-      "tolerance": 0.03,
+      "tolerance": 0.05,
       "hints": [
         "Virheraja on prosenttiosa lukemasta ja siihen lisätty kaksi viimeisen numeron askelta.",
         "Prosenttiosa on $0{,}005 \\cdot 0{,}846\\,\\text{V}$. Numeroiden osuus on $2 \\cdot 0{,}001\\,\\text{V}$.",
@@ -474,7 +474,7 @@
           "feedback": "Käytit alueen $20\\,\\text{V}$ resoluutiota $0{,}01\\,\\text{V}$. Alueella $2\\,\\text{V}$ näytössä on kolme desimaalia. Yksi numero on siis $0{,}001\\,\\text{V}$."
         }
       ],
-      "solution": "**Annettu:** lukema $U = 0{,}846\\,\\text{V}$ alueella $2\\,\\text{V}$, resoluutio $r = 0{,}001\\,\\text{V}$, virheraja $\\pm(0{,}5\\,\\% + 2\\ \\text{numeroa})$\n\n**Kysytty:** virheraja $\\Delta U$ millivoltteina\n\n**Periaate:** Valmistajan virheraja on osuus lukemasta ja siihen lisätty kaksi viimeisen numeron askelta. Yksi numero on alueen resoluutio, tässä $0{,}001\\,\\text{V}$.\n\n**Kaava:** $\\Delta U = p \\cdot U + n \\cdot r$\n\n**Muunnokset:** $p = 0{,}5\\,\\% = 0{,}005$. Lopuksi $1\\,\\text{V} = 1000\\,\\text{mV}$.\n\n**Sijoitus:** $\\Delta U = 0{,}005 \\cdot 0{,}846\\,\\text{V} + 2 \\cdot 0{,}001\\,\\text{V} = 0{,}00423\\,\\text{V} + 0{,}002\\,\\text{V} = 0{,}00623\\,\\text{V} = 0{,}00623 \\cdot 1000\\,\\text{mV} = 6{,}23\\,\\text{mV}$\n\n**Vastaus:** $6{,}2\\,\\text{mV}$. Vastaus on annettu kahdella merkitsevällä numerolla, koska virheraja on arvio.\n\n**Järkevyys:** Puoli prosenttia vajaasta voltista on vähän yli $4\\,\\text{mV}$. Kaksi askelta lisää $2\\,\\text{mV}$. Suhteellinen virheraja on alle prosentti, kuten pienimmällä sopivalla alueella kuuluukin."
+      "solution": "**Annettu:** lukema $U = 0{,}846\\,\\text{V}$ alueella $2\\,\\text{V}$, resoluutio $r = 0{,}001\\,\\text{V}$, virheraja $\\pm(0{,}5\\,\\% + 2\\ \\text{numeroa})$\n\n**Kysytty:** virheraja $\\Delta U$ millivoltteina\n\n**Periaate:** Valmistajan virheraja on osuus lukemasta ja siihen lisätty kaksi viimeisen numeron askelta. Yksi numero on alueen resoluutio, tässä $0{,}001\\,\\text{V}$.\n\n**Kaava:** $\\Delta U = p \\cdot U + n \\cdot r$\n\n**Muunnokset:** $p = 0{,}5\\,\\% = 0{,}005$. Lopuksi $1\\,\\text{V} = 1000\\,\\text{mV}$.\n\n**Sijoitus:** $\\Delta U = 0{,}005 \\cdot 0{,}846\\,\\text{V} + 2 \\cdot 0{,}001\\,\\text{V} = 0{,}00423\\,\\text{V} + 0{,}002\\,\\text{V} = 0{,}00623\\,\\text{V} = 0{,}00623 \\cdot 1000\\,\\text{mV} = 6{,}23\\,\\text{mV}$\n\n**Vastaus:** $6\\,\\text{mV}$. Vastauksessa on yksi merkitsevä numero, koska virheraja pyöristetään kuten virhe-arvio. Laskimen arvo on $6{,}23\\,\\text{mV}$.\n\n**Järkevyys:** Puoli prosenttia vajaasta voltista on vähän yli $4\\,\\text{mV}$. Kaksi askelta lisää $2\\,\\text{mV}$. Suhteellinen virheraja on alle prosentti, kuten pienimmällä sopivalla alueella kuuluukin."
     },
     {
       "id": "tarkistus-3",

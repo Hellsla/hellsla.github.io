@@ -419,11 +419,11 @@
         {
           "text": "$0.40\\,\\text{A}$, because the same amount of charge passes through every part of a series connection each second.",
           "correct": true,
-          "feedback": "Correct. No charge disappears in the bulb, so the current is the same everywhere in a series connection. In the bulb electrical energy changes into light and heat, and the potential drops, but the current is not used up."
+          "feedback": "Correct. No charge disappears in the bulb, so the current is the same everywhere in a series connection. In the bulb electrical energy changes into light and internal energy of the filament, and the potential drops, but the current is not used up."
         },
         {
           "text": "Less than $0.40\\,\\text{A}$, because the bulb uses up part of the current as light and heat.",
-          "feedback": "The bulb changes electrical energy into light and heat, but the charges do not disappear. After the bulb the current is the same $0.40\\,\\text{A}$; in the bulb the potential decreases, not the current."
+          "feedback": "The bulb changes electrical energy into light and internal energy of the filament, but the charges do not disappear. After the bulb the current is the same $0.40\\,\\text{A}$; in the bulb the potential decreases, not the current."
         },
         {
           "text": "More than $0.40\\,\\text{A}$, because after the bulb only one component opposes the current.",
@@ -464,7 +464,7 @@
       "title": "3. Explain the potential graph",
       "optional": true,
       "prompt": "Explain what the rise, the drop and the horizontal part of a potential graph tell about a circuit. Why does the graph end at the same value from which it started, when the loop has been traversed once?",
-      "model": "The rise is at the voltage source: in the source the potential rises from the negative terminal to the positive terminal by the voltage of the source, and the charges gain energy. The drop is at a resistor: in the direction of the current the potential drops by the voltage $RI$, and electrical energy changes into heat. The horizontal part is a wire whose resistance is neglected, so all its points have the same potential. When the loop has been traversed, we are at the same point as at the start, and one point has only one potential. Therefore the rises and drops are together zero: this is Kirchhoff's voltage law.",
+      "model": "The rise is at the voltage source: in the source the potential rises from the negative terminal to the positive terminal by the voltage of the source, and the charges gain energy. The drop is at a resistor: in the direction of the current the potential drops by the voltage $RI$, and electrical energy changes into internal energy of the resistor. The horizontal part is a wire whose resistance is neglected, so all its points have the same potential. When the loop has been traversed, we are at the same point as at the start, and one point has only one potential. Therefore the rises and drops are together zero: this is Kirchhoff's voltage law.",
       "criteria": [
         "The answer says that the rise is in the source and its size is the voltage of the source.",
         "The answer says that the drop is in a resistor and its size is the voltage $RI$ of the resistor.",

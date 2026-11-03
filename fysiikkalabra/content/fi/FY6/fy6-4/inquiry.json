@@ -65,7 +65,7 @@
         },
         {
           "text": "Vastuksen $R_1$ läpi kulkee suurempi virta, koska se on ensimmäisenä ja kuluttaa osan virrasta.",
-          "feedback": "Mallin arvot kumoavat tämän: kummankin vastuksen läpi kulkee sama $40{,}0\\,\\text{mA}$. Virta ei kulu vastuksessa, koska varausta ei katoa mihinkään. Vastuksessa muuttuu lämmöksi varausten energiaa, ja se näkyy jännitteenä $U_1 = 4{,}00\\,\\text{V}$."
+          "feedback": "Mallin arvot kumoavat tämän: kummankin vastuksen läpi kulkee sama $40{,}0\\,\\text{mA}$. Virta ei kulu vastuksessa, koska varausta ei katoa mihinkään. Vastuksessa muuttuu varausten energiaa vastuksen sisäenergiaksi, ja se näkyy jännitteenä $U_1 = 4{,}00\\,\\text{V}$."
         },
         {
           "text": "Kummankin läpi kulkee sama virta, ja pariston jännite jakautuu tasan: kummankin yli on $3{,}0\\,\\text{V}$.",
@@ -109,7 +109,7 @@
       "stage": "tutki",
       "type": "sim",
       "text": "Kytke vastukset sarjaan tai rinnan ja seuraa, miten virta ja jännitteet jakautuvat ja kuinka suuri virta paristosta lähtee.",
-      "howto": "Valitse *Kytkentä*: yksi vastus, kaksi vastusta sarjaan tai kaksi vastusta rinnan. Säädä pariston jännitettä $U$ sekä vastuksia $R_1$ ja $R_2$. Virtamittari $\\text{A}$ näyttää paristosta lähtevän virran $I$. Vastusten vieressä näkyvät niiden jännitteet ja rinnankytkennässä haaravirrat. Violettien pisteiden nopeus kuvaa virran suuruutta kussakin johtimen osassa. Mitä suurempi teho vastuksessa muuttuu lämmöksi, sitä oranssimpana se hehkuu. *Nopeus* muuttaa vain pisteiden liikkeen tahtia, ei lukemia.",
+      "howto": "Valitse *Kytkentä*: yksi vastus, kaksi vastusta sarjaan tai kaksi vastusta rinnan. Säädä pariston jännitettä $U$ sekä vastuksia $R_1$ ja $R_2$. Virtamittari $\\text{A}$ näyttää paristosta lähtevän virran $I$. Vastusten vieressä näkyvät niiden jännitteet ja rinnankytkennässä haaravirrat. Violettien pisteiden nopeus kuvaa virran suuruutta kussakin johtimen osassa. Mitä suurempi teho vastuksessa muuttuu sisäenergiaksi, sitä oranssimpana se hehkuu. *Nopeus* muuttaa vain pisteiden liikkeen tahtia, ei lukemia.",
       "model": "Paristo on ihanteellinen: sen napojen välinen jännite $U$ pysyy samana virrasta riippumatta. Johtimien ja virtamittarin resistanssi on nolla, ja vastusten resistanssit eivät muutu lämmetessä. Kaikki lukemat ovat mallin laskemia arvoja, eivät mittauksia. Pisteet kuvaavat sovittua virran suuntaa plusnavasta miinusnapaan; metallijohtimessa elektronit liikkuvat vastakkaiseen suuntaan. Pisteiden nopeus on vain havainnollistus: elektronien todellinen keskimääräinen liike johtimessa on hyvin hidasta.",
       "calc": "Sarjaankytkennässä $R = R_1 + R_2$ ja koko piirissä kulkee sama virta $I = U : R$. Vastusten jännitteet ovat $U_1 = R_1 I$ ja $U_2 = R_2 I$.\n\nRinnankytkennässä kummankin vastuksen yli on pariston jännite $U$, joten haaravirrat ovat $I_1 = U : R_1$ ja $I_2 = U : R_2$. Paristosta lähtevä virta on $I = I_1 + I_2$ ja kokonaisresistanssi $R = U : I$, mikä on sama kuin\n\n$$R = \\frac{R_1 R_2}{R_1 + R_2}$$\n\nVastuksen hehku seuraa tehoa $P = UI$, jota käsitellään luvussa *Sähköteho ja vastuksen lämpeneminen*."
     },

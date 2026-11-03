@@ -28,11 +28,15 @@ a["sim-bat-short-A"] = U0 / RA_mA                         # ammeter 200 mA acros
 a["sim-PL-nom"] = (U0 / (RL + RR)) ** 2 * RL              # the lamp's power without a meter: 0,150 W
 
 # --- Kaava: the same lamp voltage on two ranges (worked example and the figure error-bands) ---
-a["ex-d20"] = limit(1.50, 0.5, 2, 0.01)                   # 20 V range, 1,50 V: 0,0075 + 0,02 = 0,0275 V -> 0,028 V
-a["ex-d2"] = limit(1.500, 0.5, 2, 0.001)                  # 2 V range, 1,500 V: 0,0075 + 0,002 = 0,0095 V
-a["ex-rel20"] = a["ex-d20"] / 1.50 * 100                  # 1,83 %
-a["ex-rel2"] = a["ex-d2"] / 1.500 * 100                   # 0,633 %
+a["ex-d20"] = limit(1.50, 0.5, 2, 0.01)                   # 20 V range, 1,50 V: 0,0075 + 0,02 = 0,0275 V -> 0,03 V (1 sf, FY1 rule)
+a["ex-d2"] = limit(1.500, 0.5, 2, 0.001)                  # 2 V range, 1,500 V: 0,0075 + 0,002 = 0,0095 V -> 0,010 V (first digit 1: 2 sf)
+a["ex-rel20"] = a["ex-d20"] / 1.50 * 100                  # 1,83 %; from the rounded 0,03 V: 2 %
+a["ex-rel2"] = a["ex-d2"] / 1.500 * 100                   # 0,633 %; from the rounded 0,010 V: 0,67 %
 a["ex-ratio"] = a["ex-d20"] / a["ex-d2"]                  # 2,9: the smaller range is about three times as exact
+a["ex-d20-r"] = 0.03                                     # the rounded error limits of the Tulos
+a["ex-d2-r"] = 0.010
+a["ex-rel20-r"] = a["ex-d20-r"] / 1.50 * 100              # 2,0 %
+a["ex-rel2-r"] = a["ex-d2-r"] / 1.500 * 100               # 0,667 %
 a["ex-check"] = 0.005 * 1.5                               # the percentage part alone 0,0075 V on both ranges
 
 # --- inquiry ---
@@ -42,10 +46,10 @@ a["siirto-m-pct"] = 2.0                                   # mistake: the percent
 a["siirto-m-digit"] = limit(0.02, 2.0, 3, 0.001) / 0.02 * 100   # mistake: digit 0,001 A: 17 %
 a["siirto-mA200-d"] = limit(18.6, 1.0, 2, 0.1)            # the same LED on 200 mA: 0,186 + 0,2 = 0,386 mA
 a["siirto-mA200-rel"] = a["siirto-mA200-d"] / 18.6 * 100  # 2,1 %
-a["tark2"] = limit(0.846, 0.5, 2, 0.001) * 1000           # 2 V range 0,846 V: 4,23 mV + 2 mV = 6,23 mV
+a["tark2"] = limit(0.846, 0.5, 2, 0.001) * 1000           # 2 V range 0,846 V: 4,23 mV + 2 mV = 6,23 mV -> 6 mV (1 sf)
 a["tark2-m-pct"] = 0.005 * 0.846 * 1000                   # mistake: the percentage part only, 4,23 mV
 a["tark2-m-20V"] = limit(0.846, 0.5, 2, 0.01) * 1000      # mistake: the 20 V range's digit, 24,2 mV
 a["virhe-wrong"] = 0.005 * 6.00 + 2                       # error spotting: 2 V instead of 2 digits: 2,03 V
 a["virhe-right"] = limit(6.00, 0.5, 2, 0.01)              # 0,03 + 0,02 = 0,050 V
-a["exit-d"] = limit(3.00, 0.5, 2, 0.01)                   # exit ticket: 3,00 V on 20 V: 0,035 V
+a["exit-d"] = limit(3.00, 0.5, 2, 0.01)                   # exit ticket: 3,00 V on 20 V: 0,035 V ≈ 0,04 V
 print(json.dumps({k: round(v, 8) for k, v in a.items()}))

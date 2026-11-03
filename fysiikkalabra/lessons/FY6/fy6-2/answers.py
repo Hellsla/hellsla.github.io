@@ -7,13 +7,13 @@ import json
 limit = lambda x, pct, digits, res: pct / 100 * x + digits * res
 a = {}
 # Level 1: one formula, values given
-a["fy6-2-L1-01"] = limit(12.46, 0.5, 2, 0.01)            # car battery 12,46 V on 20 V: 0,0623 + 0,02 = 0,0823 V -> 0,082 V
-a["fy6-2-L1-02"] = limit(146.3, 1.0, 2, 0.1)             # LED strip 146,3 mA on 200 mA: 1,463 + 0,2 = 1,663 mA -> 1,7 mA
-a["fy6-2-L1-03"] = 0.060 / 8.00 * 100                    # adapter 8,00 V, ΔU = 0,060 V: 0,75 %
+a["fy6-2-L1-01"] = limit(12.46, 0.5, 2, 0.01)            # car battery 12,46 V on 20 V: 0,0623 + 0,02 = 0,0823 V -> 0,08 V (1 sf, FY1 rule)
+a["fy6-2-L1-02"] = limit(146.3, 1.0, 2, 0.1)             # LED strip 146,3 mA on 200 mA: 1,463 + 0,2 = 1,663 mA -> 1,7 mA (first digit 1: 2 sf)
+a["fy6-2-L1-03"] = 0.06 / 8.00 * 100                     # adapter 8,00 V, ΔU = 0,06 V: 0,75 % -> 0,8 % (1 sf like ΔU)
 a["fy6-2-L1-04"] = 0.180                                 # the same current after the lamp: 0,180 A
-a["fy6-2-L1-05"] = limit(1.587, 0.5, 2, 0.001)           # AA cell 1,587 V on 2 V: 0,007935 + 0,002 = 0,009935 V -> 0,0099 V
+a["fy6-2-L1-05"] = limit(1.587, 0.5, 2, 0.001)           # AA cell 1,587 V on 2 V: 0,007935 + 0,002 = 0,009935 V -> 0,01 -> 0,010 V (first digit 1: 2 sf)
 # Level 2: two steps, a conversion or a comparison
-a["fy6-2-L2-01"] = limit(0.35, 2.0, 3, 0.01) / 0.35 * 100   # 0,35 A on 10 A: 0,037 A, 10,6 % of the reading
+a["fy6-2-L2-01"] = limit(0.35, 2.0, 3, 0.01) / 0.35 * 100   # 0,35 A on 10 A: 0,037 A ≈ 0,04 A, 10,6 % -> 10 % (1 sf like ΔI)
 a["fy6-2-L2-02"] = limit(0.0875, 1.0, 2, 0.0001)         # 0,0875 A on 200 mA, digit 0,1 mA = 0,0001 A: 0,000875 + 0,0002 = 0,001075 A
 a["fy6-2-L2-03"] = limit(1.23, 0.5, 2, 0.01) / limit(1.234, 0.5, 2, 0.001)   # 0,02615 V : 0,00817 V = 3,2
 a["fy6-2-L2-04"] = 9.0                                   # voltmeter in series with a lamp on a 9,0 V battery: about 9,0 V

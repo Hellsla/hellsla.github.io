@@ -72,7 +72,7 @@
         },
         {
           "text": "Virta pysyy samana, koska lamppu kuluttaa virran joka tapauksessa.",
-          "feedback": "Virta ei kulu lampussa. Lampun jälkeen virta on yhtä suuri kuin ennen lamppua. Suurempi jännite saa aikaan suuremman virran. Mallissa virta on $0{,}250\\,\\text{A}$ eikä $0{,}182\\,\\text{A}$. Lampussa sähköenergiaa muuttuu valoksi ja lämmöksi. Virta ei muutu miksikään."
+          "feedback": "Virta ei kulu lampussa. Lampun jälkeen virta on yhtä suuri kuin ennen lamppua. Suurempi jännite saa aikaan suuremman virran. Mallissa virta on $0{,}250\\,\\text{A}$ eikä $0{,}182\\,\\text{A}$. Lampussa sähköenergiaa muuttuu valoksi ja hehkulangan sisäenergiaksi. Virta ei muutu miksikään."
         }
       ]
     },
