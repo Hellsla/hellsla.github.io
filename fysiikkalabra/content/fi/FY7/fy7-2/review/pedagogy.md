@@ -1,22 +1,23 @@
 VERDICT: PASS
-CONTENT-HASH: f775c61f5a128688
+CONTENT-HASH: 5154640e532cb66e
 
 ## Blocking
 (none)
 
 ## Polish
-- inquiry.json koe-1 and koe-2 "units": "v": "10⁶ m/s" — the Alkutila box (capture #41, #43) prints "vauhti v = 110⁶ m/s", which reads as 110 to the power 6 — fix: print the value as "1,0 · 10⁶ m/s" (or units "m/s" with value "1,0 · 10⁶").
-- inquiry.json hook / koe-1 / johtopaatos — the opening question (sorting by mass) is only answered by the theory text and the optional "pohdi"; no experiment varies the particle alone at the same v and B (koe-1 locks "hiukkanen"; koe-2 holds v at E : B so a student never sees a wrong speed deflect) — fix: add an optional step (proton vs deuteron at the same v and B; one speed off E : B in koe-2) and one sentence on mass dependence in the johtopaatos model answer.
-- inquiry.json tarkistus-2 + lesson.md "force-dir" — the check repeats the theory figure's geometry (B into the page, v to the right, negative charge goes down), so the answer can be read off the figure — fix: change the geometry (B out of the page, v to the left, curve upward).
-- lesson.md r-graph / ennuste-2 — the graph shows r (10,4 cm at 2,0 · 10⁶ m/s) while the simulation and feedback show d = 2r (10,4 cm at 1,0 · 10⁶ m/s); the same number means two things, and ennuste-2 asks about r but the feedback quotes d — fix: say "d = 2r" in the prompt of ennuste-2 and in the graph caption.
-- tarkistus-4 criterion 4 and sim control "Nopeus" — "Erotan magneettien tehtävän, radan taivuttamisen, sähkökenttien tehtävästä, kiihdyttämisestä." is hard to parse; "Nopeus" (animation pace) stands next to "Vauhti v" — fix: "Erotan magneettien tehtävän (radan taivutus) sähkökenttien tehtävästä (kiihdytys)."; rename the control "Animaation nopeus".
+- lesson.md "Massaspektrometri" — "Massaspektrometrissä nopeusvalitsimesta tulevat ionit" has the wrong vowel harmony — fix: "Massaspektrometrissa nopeusvalitsimesta tulevat ionit".
+- inquiry.json (ennuste-3, ennuste-2) — Ennusta comes before the magnetic force is taught, and ennuste-3 presupposes that a magnetic force cancels the electric one and depends on q; the student can argue only about qE — fix: one sentence in the prompt such as "magneettinen voima vaikuttaa vastakkaiseen suuntaan kuin sähköinen" (not its dependence on q), so the prediction stays refutable. The first ennuste-2 distractor ("säde puolittuu, koska voima kasvaa") is weak; "säde ei riipu vauhdista" would be a more common misconception.
+- inquiry.json (workload) — 3 predictions, 2 experiments, a conclusion, "Etsi virhe", "Sovella uuteen tilanteeseen", 3 checks, 12 exercises and the exit ticket exceed an hour even though kertaus, pohdi and tarkistus-4 are optional — fix: merge ennuste-1 and ennuste-2 (both are tested by koe-1) or mark "virhe" optional.
+- sim at 390 px (fy7-2-sim-390.png) — the chamber is small, the d scale is tiny and the F_m label overlaps the slit and the arrow; at 1280 px it reads well — fix: enlarge the F_m label offset at the slit or put the label above the arrow.
+- "Hiukkaskiihdytin" — the thematic goal is two paragraphs of text and an optional explain item; nothing for the student to act on — fix: make tarkistus-4 non-optional or add one short question about the ring radius staying constant.
 
 ## Checked
-- Path: prior knowledge (qE, qU, uniform circular motion) to F = qvB, circle, r = mv : (qB), selector, spectrometer, accelerator; one lesson's workload
-- Predictions 1–3 refutable; wrong-option feedback repairs the misconception and quotes model values; reveal after the experiments
-- Simulation at 390 and 1280 px: chamber to scale, d fits for the course's values, readout legible
-- Worked example: seven stages, units stage, sanity check; numbers verified (m = 3,32 · 10⁻²⁶ kg, 20,0 u)
-- Etsi virhe, siirto (0,225 T) and tarkistus-3 (6,2 cm) recomputed; mistake values match real slips
-- Figures legible at 390 px; descriptions give the data without the answer; "track-sign" needed to answer
-- Finnish: terms agree with the glossary; cases after number+unit correct
-- Exit ticket and explain criteria observable; model answers mark values as model values
+- Path: FY6 recall (qU), then force, circle, selector and spectrometer; the opening question about C-14 is answered in the example and the reflect item
+- Predictions are made before the evidence; each wrong option's feedback cites model values and repairs its misconception; no answer disclosed before commitment
+- Experiments lock the controlled quantities and vary one (v; particle); the numbers (d 10,4/20,9 cm; 24/48 fN; deflection 0) come from the integrated orbit, not from the formula, and can refute the predictions
+- Figures: force-dir, circle-path, r-graph and spectrometer are legible at 390 px; field symbols, colours (force red, velocity blue) and the direction of the force are correct for the sign and field; r versus d is stated beside the graph
+- Worked example staged one step per stage with unit conversion and sanity check (neon-22 at 27,4 cm); I recomputed the numbers
+- Etsi virhe, the transfer task (0,225 T), tarkistus-3 (6,2 cm) and their mistake values are correct; hints progress; 360 px layout was tested
+- tarkistus-2 uses the figure, which is needed for the answer; the description gives the data without the answer
+- Exit ticket tests the selector and sign/radius; the core idea (speed unchanged) is in tarkistus-1
+- Finnish otherwise correct; glossary terms match; model values separated from measurements

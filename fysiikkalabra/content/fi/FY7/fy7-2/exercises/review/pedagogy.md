@@ -1,20 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 589ff3dddc428f9b
+CONTENT-HASH: 17fbd6419d57bd14
 
 ## Blocking
 (none)
 
 ## Polish
-- exercises.json (whole set) — the lesson's third goal "massa massaspektrometrissä" ( = qB_2r : v$) and the right-hand rule are practised nowhere in the set (L3-01 gives only a ratio); the example is the only mass calculation — fix: replace L1-04 (pure  = qU$, FY6 recall) with a level-2 task that gives d, B₂ and v (or E, B₁) and asks for the ion's mass or isotope.
-- fy7-2-L2-02 — a single formula rearranged ( = qBr : m$), which is level 1 in kind — fix: combine it with the selector or acceleration step, or move it to level 1.
-- fy7-2-L3-01 and L3-03 — both derive  \propto \sqrt{m : q}$ from  = \tfrac12 mv^2$ and  = mv : (qB)$; the second adds little — fix: make L3-03 a different reasoning task, e.g. a selector with a changed E or B, or a direction task with a sign.
-- exit-ticket.json question 1 — near copy of L1-03 and tests substitution, not the lesson's core idea (the magnetic force turns but does not speed up) — fix: ask what happens to a proton's speed and path when the field is switched on, keeping question 2.
-- exercises.json — no task asks the force direction or has a figure; the draw-by-hand skill of the lesson is only in tarkistus-2 — fix: add a level-1 direction task with a figure.
+- solutions.md fy7-2-L1-02 "Vastaus" — "jännite 500 V tulkitaan vähintään kaksinumeroiseksi" is vague for a 17-year-old — fix: "jännite 500 V tulkitaan kahden merkitsevän numeron tarkkuudella".
+- Unchanged from round 1 and still open (the diff did not touch them): exercises.json has no task that gives d, B2 and v and asks for the ion's mass (the lesson's goal "massa massaspektrometrissä" is practised only in the example); L2-02 is a single rearrangement; L3-03 repeats the reasoning of L3-01; the exit-ticket question 1 repeats L1-03; no task asks the force direction with a figure.
 
 ## Checked
-- Levels: L1 one formula, L2 two steps, L3 reasoning (cyclotron period, isotope separation)
-- Answers recomputed for all 12 tasks; tolerances fit the given significant figures
-- Solutions: given, asked, principle, formula, conversions, substitution, answer, sanity check; principle explained, nothing skipped
-- Sanity checks are real (1840-fold radius, √2 ratio, 0,2 % of c)
-- No task repeats the example; L3-02 explains the cyclotron in its own text
-- Finnish: cases after number+unit correct; units in answers match the prompt
+- L1-01 sanity check: units added after each factor, 1,6·10⁻¹⁹ C · 3·10⁵ m/s · 0,25 T ≈ 1,2·10⁻¹⁴ N; the product is correct and the step is now followable
+- L1-02: the rounding note matches the answer 6,5 cm (6,463 cm, 2 s.f.); 500 V is a plain number that suggests a loose precision, and the note settles it
+- Both changes are in the solutions only; no task text, answer or level changed, so the levels and answer recomputation of round 1 stand
+- Finnish of the changed lines is correct; units match the prompt
