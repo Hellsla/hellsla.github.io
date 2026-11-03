@@ -128,6 +128,8 @@
     "local_status_ready": "Ready"
   },
   "lesson": {
+    "photos": "Photographs",
+    "photo_by": "Photo",
     "steps_nav": "Steps of the lesson",
     "theory": "Theory",
     "simulation": "Simulation",

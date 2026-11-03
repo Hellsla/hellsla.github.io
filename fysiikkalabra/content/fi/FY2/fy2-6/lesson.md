@@ -230,6 +230,8 @@ Voimalaitos ei tuota energiaa tyhjästä, vaan muuttaa luonnonvaran energian sä
 ### Uusiutuva ja uusiutumaton energia
 Vesi, tuuli ja auringonsäteily ovat uusiutuvia: ne eivät lopu käytettäessä. Bioperäiset polttoaineet, kuten puu, ovat uusiutuvia, kun uusi metsä kasvaa tilalle. Kivihiili, öljy ja maakaasu ovat fossiilisia, ja uraanikin on uusiutumaton luonnonvara. Turve kasvaa suolla niin hitaasti, tuhansien vuosien aikana, että se rinnastetaan päästöjen laskennassa fossiilisiin polttoaineisiin; tilastoissa se on usein omana ryhmänään. Voimaloiden päästöt ja ilmastovaikutukset käsitellään luvussa *Energiantuotanto, ympäristö ja ilmastonmuutos*.
 
+<figure class="unit-photo"><img src="pics/fy2/summa-wind-turbines.webp" alt="Valkoisia tuulivoimaloita meren rannalla sinistä taivasta vasten."><figcaption>Summan tuulivoimapuiston voimaloita Haminassa. Tuulivoimala muuttaa tuulen liike-energiaa sähköksi.</figcaption></figure>
+
 ### Kolme ominaisuutta: miten voimala toimii verkossa
 Sähköä ei voi varastoida suuria määriä suoraan verkkoon, joten tuotannon on vastattava kulutusta joka hetki. Siksi voimaloita kuvataan sen mukaan, kuinka niiden tehoon voi vaikuttaa. Ryhmät ovat hyödyllisiä ominaisuuksia, eivät toisensa poissulkevia luokkia: vesivoima on hyvin säädettävää mutta riippuu myös sateista.
 
@@ -288,6 +290,8 @@ Suomessa tuotettiin vuonna 2024 sähköä yhteensä noin $80\,\text{TWh}$ (Tilas
   <foreignObject x="468.5" y="273.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$30$</div></foreignObject>
   <foreignObject x="140" y="273.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$0$</div></foreignObject>
 </svg>
+
+<figure class="unit-photo"><img src="pics/fy2/olkiluoto.webp" alt="Punavalkoisia voimalaitosrakennuksia ja korkeita piippuja meren takana kesäpäivänä. Vasemmalla on kupolikattoinen rakennus."><figcaption>Olkiluodon ydinvoimalaitos Eurajoella vuonna 2015. Vasemmalla oleva kolmas yksikkö aloitti säännöllisen sähköntuotannon vuonna 2023.</figcaption></figure>
 
 ## Kaava: Voimalan energia
 Teho kertoo, kuinka nopeasti voimala tuottaa energiaa. Kun teho on vakio, tuotettu energia on teho kerrottuna ajalla:

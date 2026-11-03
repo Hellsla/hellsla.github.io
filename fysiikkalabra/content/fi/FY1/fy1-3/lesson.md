@@ -366,6 +366,8 @@ Virheet jaetaan kolmeen lajiin: karkeaan virheeseen, satunnaisvirheeseen ja syst
 ### Toistettavuus ja oikeellisuus
 Mittauksen luotettavuutta kuvataan kahdella asialla. **Toistettavuus** kertoo, kuinka lähelle toisiaan toistetut mittaukset osuvat, ja sitä heikentää satunnaisvirhe. **Oikeellisuus** kertoo, kuinka lähellä keskiarvo on oikeaa arvoa, ja sitä heikentää systemaattinen virhe. Mittaus voi olla toistettava mutta ei oikea, kuten kuvan alempi sarja. Luotettavassa mittauksessa on molemmat.
 
+<figure class="unit-photo"><img src="pics/fy1/ligo-hanford.webp" alt="Aavikkomaisema, jonka keskellä pitkä betoniputki johtaa suurelle sinivalkoiselle rakennukselle. Oikealla toinen pitkä matala putki jatkuu horisonttiin."><figcaption>LIGO-gravitaatioaaltoilmaisin Hanfordissa Yhdysvalloissa. Sen kilometrien pituiset mittausvarret havaitsevat pituuden muutoksia, jotka ovat paljon atomiytimen kokoa pienempiä.</figcaption></figure>
+
 ## Kaava: Keskiarvo ja virhe-arvio
 Toistetun mittauksen paras arvio on tulosten keskiarvo:
 ```latex

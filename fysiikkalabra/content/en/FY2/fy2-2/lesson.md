@@ -427,6 +427,8 @@ The cyclist's chain begins with the Sun. Radiation energy is stored in a plant a
   <path d="M518,232 L518,274 L510,274 L525,296 L540,274 L532,274 L532,232 Z" fill="#e8590c" stroke-linejoin="round"/>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy2/artemis-i-launch.webp" alt="A rocket lifts off from its launch pad at night above a bright flame and a huge cloud of smoke."><figcaption>Launch of the Artemis I rocket in Florida in November 2022. The chemical energy of the fuel turns into the rocket's kinetic energy, heat, light and sound.</figcaption></figure>
+
 At every step, part of the energy turns into thermal energy, which is transferred as heat to the surroundings and spreads out. Even so, no energy disappears: as stated in chapter *Forms of energy and conservation of energy*, there is the same amount of energy at the start and at the end of the chain. In the example in the figure, the $800\,\text{kJ}$ of the porridge is divided into motion and thermal energy, and the parts add up to the same amount as at the start. Thermal energy spreads so widely that it is no longer easy to put to use, and this is why energy seems to "run out".
 
 <svg data-fig="sailyminen" viewBox="0 0 600 350" role="img" aria-label="Scale diagram (example): of the 800 kJ of chemical energy in the cyclist&#x27;s morning porridge, the muscles turn 200 kJ into motion and 600 kJ into thermal energy. The width of the arrows is proportional to the energy, and the combined width of the branches equals the width of the original arrow." style="max-width:100%;font-size:24px">

@@ -354,6 +354,8 @@ Saman tehon voi siirtää kahdella tavalla: pienellä jännitteellä ja suurella
 
 Muuntaja nostaa jännitteen voimalaitoksella ja laskee sen takaisin käyttäjän lähellä. Hyvässä muuntajassa häviö on hyvin pieni.
 
+<figure class="unit-photo"><img src="pics/fy2/muurame-transformer.webp" alt="Suuri vihreänharmaa muuntaja eristimineen ja tuulettimineen aidatulla sähköasemalla koivujen keskellä."><figcaption>Sähköaseman muuntaja Muuramessa. Sähköasemalla muuntaja laskee voimajohdon korkean jännitteen jakeluverkon jännitteeksi.</figcaption></figure>
+
 ### Kaukolämpö
 
 **Kaukolämpö** siirtää energian kuumana vetenä. Lämpölaitoksessa lämmitetty vesi virtaa menoputkessa rakennuksiin ja luovuttaa lämpöä rakennuksen lämmitysjärjestelmälle. Jäähtynyt vesi palaa paluuputkessa takaisin lämmitettäväksi. Putket ovat maan alla paksussa eristeessä, jotta lämpöä menisi ympäröivään maahan mahdollisimman vähän.

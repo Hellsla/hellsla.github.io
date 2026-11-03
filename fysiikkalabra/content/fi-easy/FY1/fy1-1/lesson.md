@@ -327,6 +327,8 @@ Kaikki tähtitieteelliset kohteet eivät ole portaita samassa sisäkkäisyydess�
 
 **Havaittava maailmankaikkeus** on se osa maailmankaikkeutta, josta valo on ehtinyt tulla meille. Maailmankaikkeus on noin 13,8 miljardia vuotta vanha, ja valolla on ollut sen verran aikaa. Havaittavan maailmankaikkeuden halkaisija on noin $8{,}8\cdot10^{26}\,\text{m}$ eli noin 93 miljardia valovuotta. Luku on suurempi kuin kaksi kertaa 13,8 miljardia valovuotta, koska avaruus on laajentunut valon matkan aikana. Havaittavan maailmankaikkeuden raja ei ole maailmankaikkeuden reuna. Se on vain näköpiirimme raja. Toisessa galaksissa olevan havaitsijan havaittava maailmankaikkeus on pallo hänen ympärillään. Koko maailmankaikkeuden kokoa ei tiedetä, ja se voi olla ääretön.
 
+<figure class="unit-photo"><img src="pics/fy1/webb-first-deep-field.webp" alt="Musta taivas, jossa on paljon pieniä valopisteitä. Ne ovat punaisia ja valkoisia galakseja."><figcaption>James Webb -avaruusteleskoopin kuva vuodelta 2022. Melkein jokainen valopiste on kaukainen galaksi.</figcaption></figure>
+
 ## Perusvuorovaikutukset
 
 ### Neljä perusvuorovaikutusta

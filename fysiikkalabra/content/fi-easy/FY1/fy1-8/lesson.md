@@ -214,6 +214,8 @@
 ## Ydinajatus
 Fysiikka on kokeellinen tiede. Väite pätee vasta, kun sitä on testattu mittauksilla. Kuka tahansa voi toistaa nämä mittaukset. **Tutkimus** on järjestelmällinen tapa vastata kysymykseen mittaamalla. Tutkimus alkaa kysymyksestä. Se päättyy johtopäätökseen, jonka mittaustulokset perustelevat. Hyvä tutkimus ei ole sellainen, jossa oletus osoittautuu oikeaksi. Hyvässä tutkimuksessa mittaus voisi näyttää oletuksen vääräksi.
 
+<figure class="unit-photo"><img src="pics/fy1/ligo-scientists-laser-room.webp" alt="Kaksi suojapukuista tutkijaa katsoo laitetta valkoisessa huoneessa."><figcaption>Tutkijat tutkivat LIGO-laitoksen laserlaitetta puhtaassa huoneessa Yhdysvalloissa vuonna 2019.</figcaption></figure>
+
 ### Tutkimuskysymys ja hypoteesi
 Tutkimuskysymys on kysymys, johon mittaus voi vastata. Esimerkki on "Miten leluauton kulkema matka riippuu ajasta?" Kysymys "Mikä auto on paras?" ei kelpaa, koska sitä ei voi mitata.
 

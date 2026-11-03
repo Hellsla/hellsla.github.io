@@ -214,6 +214,8 @@
 ## Key idea
 Physics is an experimental science: a claim holds only once it has been tested with measurements that anyone can repeat. An **investigation** is a systematic way of answering a question by measuring. It begins with a question and ends with a conclusion that the measurement results support. A good investigation is not one where the assumption turns out to be right, but one where the measurement could have shown the assumption to be wrong.
 
+<figure class="unit-photo"><img src="pics/fy1/ligo-scientists-laser-room.webp" alt="Two researchers in protective suits stand in a white clean room by a laser setup and look at it thoughtfully."><figcaption>Researchers examine the laser setup of the LIGO gravitational-wave detector in a clean room at Hanford, USA, in 2019.</figcaption></figure>
+
 ### Research question and hypothesis
 A research question is a question that a measurement can answer: "How does the distance travelled by a toy car depend on time?" The question "Which car is best?" is no good, because it cannot be measured.
 

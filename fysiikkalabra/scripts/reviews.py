@@ -103,10 +103,11 @@ RULES = {                       # category: (science, pedagogy, visual)
     "experiment":     ("full",  "full", "delta"),    # inquiry correct option, initial/locked/vary/measure, numeric answer, mistakes
     "simulation":     ("full",  "full", "delta"),    # simulation code or images (the lesson's or a shared folder it uses)
     "figure":         ("full",  "full", "delta"),    # figure geometry or text; a picture file
+    "photo":          ("none",  "none", "delta"),    # a licensed photograph beside the text (figure.unit-photo, assets/pics/<course>/photos.json): illustration only, never a task (teacher 2026-11-01 FY14, 2026-11-03 FY1–FY3)
     "illustration":   ("none",  "delta", "delta"),   # an illustration (data-fig="hero" or "scene"): no text, no physics claim (teacher 2026-10-26)
     "split":          ("none",  "none", "none"),    # passed as one lesson before the split; this part's files moved, unchanged (answers.py: line for line)
 }
-WHY = {"typography": "formulas re-set (spacing, fraction style, decimal comma) or a symbol set as maths, or blank lines, without a change of meaning", "tests": "simulation tests added or tightened", "comments": "comments only", "style": "figure or sim styling only",
+WHY = {"photo": "a licensed illustration photograph added, moved or recaptioned", "typography": "formulas re-set (spacing, fraction style, decimal comma) or a symbol set as maths, or blank lines, without a change of meaning", "tests": "simulation tests added or tightened", "comments": "comments only", "style": "figure or sim styling only",
        "label-position": "a figure label nudged, text unchanged", "wording": "wording without numbers or symbols",
        "relocated": "the sim's text moved word for word into its lead and boxes",
        "chapter-ref": "a chapter reference follows that chapter's new title",
@@ -479,9 +480,22 @@ def _line(fname, body, lid):
         if s.startswith(('"image"', '"solutions"')): return "structure"
         if s.strip() in ("{", "}", "[", "]", "],", ""): return "comments"
         return "objectives"
+    if fname.endswith(".md") and PHOTO_LINE.match(s): return "photo"       # a photograph with its alt text and caption
     if fname.endswith(".md") and s.startswith("# "): return "wording"      # the page title, the same as meta.json "title"
     if fname.endswith(".md") and (s.startswith("## ") or "<!-- vaihe -->" in body or s.startswith("```")): return "structure"
     return "numbers" if SUBSTANTIVE.search(body) else "wording"
+
+
+PHOTO_LINE = re.compile(r'<figure class="unit-photo"><img src="(?:pics/[a-z0-9]+|shared/pics)/[^"]+"[^>]*>(?:<figcaption>.*?</figcaption>)?</figure>\s*$')
+
+
+def _is_photo(path):
+    """A picture file that its folder's photos.json lists as a photograph (assets/pics/<course>/photos.json)."""
+    rel = path.split("/", 1)[1] if path.startswith(("a/", "b/")) else path
+    rel = rel if rel.startswith("pics/") or rel.startswith("shared/") else rel.split("assets/", 1)[-1]
+    f = ROOT / "assets" / rel
+    try: return f.name in json.loads((f.parent / "photos.json").read_text())
+    except (OSError, json.JSONDecodeError): return False
 
 
 HERO = re.compile(r'\n*<svg\b[^>]*data-fig="(?:hero|scene)".*?</svg>\n*', re.S)
@@ -567,6 +581,7 @@ def classify(path, diff_lines, lid):
     py, code = name.endswith(".py"), name.endswith(".js")
     binary = name.lower().endswith(courses.BINARY)
     in_sim = "/sims/" in f"/{path}" and not path.startswith("tests/")
+    if binary and not in_sim and _is_photo(path): return {"photo"}
     if binary: return {"simulation" if in_sim else "figure"}
     if in_sim and name.endswith(".css"): return {"style"}
     cats, block = set(), []
@@ -737,7 +752,7 @@ def changes(folder, base, part="lesson", split=False):
         a, b = _view(ra, rel, binary), _view(rb, rel, binary)
         if a == b: continue
         if rel.startswith("tests/sims/"): cats.add(test_change(rel, base)); diff.append(f"--- {rel}: simulation assertions changed"); continue
-        if binary: cats.add("simulation" if "/sims/" in f"/{rel}" else "figure"); diff.append(f"--- {rel}: binary file {'added' if a is None else 'removed' if b is None else 'changed'}"); continue
+        if binary: cats.add("simulation" if "/sims/" in f"/{rel}" else "photo" if _is_photo(rel) else "figure"); diff.append(f"--- {rel}: binary file {'added' if a is None else 'removed' if b is None else 'changed'}"); continue
         lines = list(difflib.unified_diff((a or "").splitlines(), (b or "").splitlines(), f"a/{rel}", f"b/{rel}", lineterm="", n=2))
         if not binary and rb and FBD_SPEC.search(rb):         # drawn force diagrams: the science reviewer checks each spec
             ra2, rb2 = FBD_SPEC.sub("", ra or ""), FBD_SPEC.sub("", rb)

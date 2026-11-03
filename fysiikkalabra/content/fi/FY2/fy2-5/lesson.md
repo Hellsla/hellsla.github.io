@@ -208,6 +208,8 @@ Lähteet: polttopuu ($13\text{–}15\,\text{GJ/t}$, kosteus $20\text{–}25\,\%$
 ### Kosteus ja polttoaineen laatu
 Märkä puu antaa kilogrammaa kohti vähemmän energiaa kuin kuiva, koska osa sen massasta on vettä, joka ei pala, ja lisäksi osa vapautuvasta energiasta kuluu tämän veden höyrystämiseen. Siksi taulukon polttopuu on ilmakuivaa (kosteus $20\text{–}25\,\%$) ja turve jyrsinturvetta, jonka kosteus on $40\text{–}50\,\%$. Täysin kuivan puun lämpöarvo olisi noin $19\,\text{MJ/kg}$.
 
+<figure class="unit-photo"><img src="pics/fy2/garzweiler-excavator.webp" alt="Valtava teräsristikkoinen kaivinkone laajalla, hiekanvärisellä avolouhoksella pilvisenä päivänä."><figcaption>Kauhapyöräkaivinkone Garzweilerin avolouhoksella Saksassa. Kaivoksesta louhitaan ruskohiiltä, joka on kosteaa ja jonka lämpöarvo on pieni.</figcaption></figure>
+
 ### Ruoan energiasisältö ja lämpöarvo
 Ravintoarvomerkinnässä energia ilmoitetaan sadalle grammalle, esimerkiksi $2200\,\text{kJ}$ per $100\,\text{g}$. Kun energia muutetaan megajouleiksi ja massa kilogrammoiksi, saadaan ruoan energiasisältö massayksikköä kohti, tässä $e = 22\,\text{MJ/kg}$. Sekä ruoan energiasisältö että polttoaineen lämpöarvo voidaan ilmoittaa yksikössä $\text{MJ/kg}$. Ruoan ravintoarvomerkintä kuvaa elimistön hyödynnettävissä olevaa energiaa, kun taas polttoaineen lämpöarvo kuvaa palamisessa vapautuvaa energiaa. Ne eivät siis ole sama suure: elimistö ei saa ruoasta kaikkea energiaa, joka vapautuisi sen palaessa, koska esimerkiksi osa ruoasta ei imeydy suolistosta. Laskutapa on silti sama kuin lämpöarvolla: ruoan energia on $E = em$.
 

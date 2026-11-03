@@ -188,6 +188,8 @@ A fossil fuel, such as coal, oil or natural gas, is chemical energy from ancient
 
 The carbon of a fossil fuel has been underground for millions of years, so burning it adds carbon dioxide to the atmosphere. The carbon of biomass, for example wood, was bound into plants only during the last few decades. Even so, burning biomass is not emission-free: the carbon dioxide from burning stays in the atmosphere until new growth binds it back over decades, and growing, harvesting and transport cause their own emissions.
 
+<figure class="unit-photo"><img src="pics/fy2/europe-at-night.webp" alt="Europe at night from above: dense orange points of light on dark land and bright patches of large cities."><figcaption>North-western Europe at night, photographed from the International Space Station in 2011. The lights of the cities can be seen from space.</figcaption></figure>
+
 ### Ways of producing energy are compared by life-cycle emissions
 Emissions come from more than just burning. A power plant must be built from steel, concrete and copper, the fuel must be mined or collected and transported, and in the end the plant is dismantled. That is why ways of producing energy are compared by **life-cycle emissions**: the emissions of all stages are added together and divided by the energy produced over the whole life cycle.
 

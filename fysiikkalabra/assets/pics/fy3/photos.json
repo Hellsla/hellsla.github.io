@@ -1,0 +1,57 @@
+{
+  "iss-cupola.webp": {
+    "title": "Jessica Watkins in the cupola (iss067e033745)",
+    "creator": "NASA",
+    "source": "https://images.nasa.gov/details/iss067e033745",
+    "licence": "public domain",
+    "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+    "edit": "Rajattu ylhäältä ja alhaalta, pienennetty, WebP",
+    "checked": "2026-11-03",
+    "width": 1600,
+    "height": 1584
+  },
+  "barrel-balloon.webp": {
+    "title": "Ballooning in the constant sun of the South Pole summer (BARREL)",
+    "creator": "NASA/Goddard/BARREL/Nicky Knox",
+    "source": "https://images.nasa.gov/details/GSFC_20171208_Archive_e001147",
+    "licence": "public domain",
+    "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+    "edit": "Pienennetty, WebP",
+    "checked": "2026-11-03",
+    "width": 1600,
+    "height": 1200
+  },
+  "la-palma-eruption.webp": {
+    "title": "LUN 8401 (La Palma 2021)",
+    "creator": "Eduardo Robaina",
+    "source": "https://commons.wikimedia.org/wiki/File:LUN_8401.jpg",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "edit": "Pienennetty, WebP",
+    "checked": "2026-11-03",
+    "width": 1600,
+    "height": 1067
+  },
+  "nesjavellir.webp": {
+    "title": "Nesjavallavirkjun, taken from the hiking trail Reykjavegur, Iceland 03",
+    "creator": "Michal Klajban",
+    "source": "https://commons.wikimedia.org/wiki/File:Nesjavallavirkjun,_taken_from_the_hiking_trail_Reykjavegur,_Iceland_03.jpg",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "edit": "Pienennetty, WebP",
+    "checked": "2026-11-03",
+    "width": 1600,
+    "height": 1067
+  },
+  "liquid-nitrogen.webp": {
+    "title": "Liquid nitrogen ŚFN 2025 (2)",
+    "creator": "Adrian Tync",
+    "source": "https://commons.wikimedia.org/wiki/File:Liquid_nitrogen_ŚFN_2025_(2).jpg",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "edit": "Pienennetty, WebP",
+    "checked": "2026-11-03",
+    "width": 1600,
+    "height": 1066
+  }
+}
