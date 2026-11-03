@@ -1,24 +1,21 @@
-VERDICT: FAIL
-CONTENT-HASH: 67ba387cc1473fac
+VERDICT: PASS
+CONTENT-HASH: dd6218aea5581d8e
 
 ## Blocking
-- lesson.md, Esimerkki, vaihe "Tulos" — "Laitteen pituus 1,2 m on alle tuhannesosa fotonien välistä" is false: 1,2 : 940,8 = 0,0013 (the next stage says so) — write "noin tuhannesosa" or "vain noin 0,1 % fotonien välistä".
-- lesson.md, Yleinen virhekäsitys, ensimmäinen kappale — "Kuulamallissa toisen raon avaaminen lisäisi osumia kaikkialla" contradicts ennuste-1's feedback ("Kuulamallissakaan osuus ei kasvaisi ... pysyisi samana"), so the student gets two opposite statements about what the bullet model predicts — rewrite: "Kuulamallissa toisen raon avaaminen ei vähentäisi osumia missään kohdassa; todellisuudessa tummiin raitoihin tulee osumia vähemmän kuin yhden raon kanssa", and state in both places whether the comparison is the count n or the share n : N.
 
 ## Polish
-- inquiry.json ennuste-1 prompt — it says that x0 is a dark fringe "aaltomallin mukaan" and asks "mieti, mitä kuulamalli ja aaltomalli ennustaa", which nearly hands over the answer. Fix: let the student say whether x0 is dark or bright from the matkaero, or drop the "tumma raita" sentence until after the choice.
-- inquiry.json compton-data — a "tutki" item before the theory section; the "Hidastumismalli" distractor is not a real student model. Fix: replace it with "fotonin energia ei muutu, mutta suunta muuttuu" or move the item after the theory.
-- The four photon models appear only as a list, and no activity asks the student to match a phenomenon (interferenssi, valosähköinen ilmiö, Compton) to a model. Fix: make tarkistus-3 non-optional or add a one-line matching item.
-- inquiry.json siirto — the doubling of the momentum change on reflection is not taught before the task and appears only in hint 3. Fix: add one sentence on mirror reflection to Yleinen virhekäsitys.
-- Workload is at the upper edge of one lesson (2 predictions, 2 experiments, Compton data, siirto, 12 exercises). The optional items are marked correctly, so no change is needed unless a trial hour overruns.
+- inquiry.json ennuste-1 prompt — "matkaero on tässä kohdassa puolikas aallonpituus" tells the student that the point is dark, so the prediction reduces to recalling the prerequisite rule and the "aaltomalli" option is nearly given. Leave the matkaero out of the prompt (it is in the feedback and the simulation's calc) or ask which point to count in.
+- inquiry.json compton-data (stage tutki) comes before the theory section that teaches Compton scattering; the correct option is the only one using the fy8-3 photon idea, so elimination solves it. Acceptable as a phenomenon item, but consider marking it `optional` or moving it after the theory to shorten the Tutki stage.
+- lesson.md "Yleinen virhekäsitys" first paragraph — "Kun osumia lasketaan yhtä monta yhteensä, kuulamallissa..." is a heavy sentence with a nested parenthesis; split it: "Verrataan osuutta $n : N$ samalla osumien kokonaismäärällä. Kuulamallissa osuus pysyisi samana kuin yhden raon kanssa, koska toinen rako vain lisäisi osumia."
+- Workload is near the upper edge for one lesson (2 predictions, 2 experiments, Compton table, explain, example, 12 exercises, checks); the optional flags on pohdi and tarkistus-3 are right, and retrieval `kertaus` could also be optional.
 
 ## Checked
-- Opening question is answered by koe-1/koe-2 and the conclusion; the predictions are refutable and the options' feedback repairs the misconception.
-- Experiments lock hiukkanen/raot/x0 and vary one thing; the model values are named as model values.
-- Compton table (0,0711 to 0,0760 nm) matches Δλ = 0,00243·(1−cos θ).
-- Example: hf = 3,138e-19 J, N/t = 3,19e5 1/s, d = 941 m; one step per stage, plausibility check present.
-- Tarkistus-2 answer 794,9 eV, distractors 1,273e-16 and 516 700 are real slips; siirto answer 290,5 µN; the Etsi virhe item is sound.
-- Figures buildup, patterns and compton are legible at 390 px and do not show the answer before the predictions.
-- Simulation at 390 and 1280 px is readable; controls are not clipped.
-- Finnish and glossary terms (aalto-hiukkasdualismi, Comptonin ilmiö, kaksoisrakokoe) are consistent.
-- Exit ticket tests the dualism idea and p = h/λ.
+- Path: hook, retrieval of the photoelectric effect, two predictions, simulation, two experiments with locked and varied parameters, explain, theory, example, check, exit ticket; the opening question is answered by the conclusion and the theory.
+- The slot's goals are covered: four photon models, Compton effect, double slit with single photons and electrons; no de Broglie wavelength.
+- The experiments can refute the predictions: model values 43 vs 3 of 1000 are in the feedback, and the reveal needs two recorded rows.
+- Worked example: six stages, one step each, numbers verified (3,138e-19 J; 3,2e5 1/s; 941 m), units and significant figures shown.
+- Compton table is consistent with lambda' = lambda + 2,43 pm (1 - cos theta); tarkistus-2 (795 eV) and the sail task (290,5 µN) verified.
+- Misconception feedback repairs the misconception and names the evidence; the error-spotting item is a real mistake (nm not converted).
+- Figures (buildup, patterns, compton) are legible at 390 px, the descriptions give the data without the answer; the 1280 px lab layout puts the sim beside the experiments.
+- Finnish is correct and the terms match the glossary; model values are called model values, not measurements.
+- Exit ticket tests the core idea (wave and particle behaviour; p = h/lambda).
