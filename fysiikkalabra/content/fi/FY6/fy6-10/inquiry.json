@@ -59,20 +59,20 @@
       "choices": [
         {
           "text": "Voima puolittuu, koska etäisyys kaksinkertaistuu.",
-          "feedback": "Mallin lukemat kumoavat tämän: etäisyydellä $3{,}0\\,\\text{cm}$ voima on $4{,}00\\,\\text{mN}$ ja etäisyydellä $6{,}0\\,\\text{cm}$ vain $0{,}999\\,\\text{mN}$, siis noin neljäsosa eikä puolet. Voima on kääntäen verrannollinen etäisyyden neliöön, joten kaksinkertainen etäisyys jakaa voiman neljällä."
+          "feedback": "Mallin lukemat kumoavat tämän: etäisyydellä $3{,}0\\,\\text{cm}$ voima on $3{,}99\\,\\text{mN}$ ja etäisyydellä $6{,}0\\,\\text{cm}$ vain $0{,}999\\,\\text{mN}$, siis noin neljäsosa eikä puolet. Voima on kääntäen verrannollinen etäisyyden neliöön, joten kaksinkertainen etäisyys jakaa voiman neljällä."
         },
         {
           "text": "Voima pienenee neljäsosaan.",
           "correct": true,
-          "feedback": "Mallin lukemat tukevat tätä: voima pienenee $4{,}00\\,\\text{mN}$:sta $0{,}999\\,\\text{mN}$:iin, ja etäisyydellä $12\\,\\text{cm}$ se on enää $0{,}250\\,\\text{mN}$ eli kuudestoistaosa. Voima on kääntäen verrannollinen etäisyyden neliöön."
+          "feedback": "Mallin lukemat tukevat tätä: voima pienenee $3{,}99\\,\\text{mN}$:sta $0{,}999\\,\\text{mN}$:iin, ja etäisyydellä $12\\,\\text{cm}$ se on enää $0{,}250\\,\\text{mN}$ eli kuudestoistaosa. Voima on kääntäen verrannollinen etäisyyden neliöön."
         },
         {
           "text": "Voima pysyy samana, koska pallojen varaukset eivät muutu.",
-          "feedback": "Varaukset pysyvät samoina, mutta voima riippuu myös etäisyydestä. Mallissa voima pienenee $4{,}00\\,\\text{mN}$:sta $0{,}999\\,\\text{mN}$:iin, kun etäisyys kaksinkertaistuu."
+          "feedback": "Varaukset pysyvät samoina, mutta voima riippuu myös etäisyydestä. Mallissa voima pienenee $3{,}99\\,\\text{mN}$:sta $0{,}999\\,\\text{mN}$:iin, kun etäisyys kaksinkertaistuu."
         },
         {
           "text": "Voima pienenee vain vähän, koska muutaman senttimetrin siirto on pieni.",
-          "feedback": "Lyhyilläkin etäisyyksillä suhteellinen muutos ratkaisee. Kun etäisyys kaksinkertaistuu, voima pienenee mallissa $4{,}00\\,\\text{mN}$:sta $0{,}999\\,\\text{mN}$:iin eli neljäsosaan."
+          "feedback": "Lyhyilläkin etäisyyksillä suhteellinen muutos ratkaisee. Kun etäisyys kaksinkertaistuu, voima pienenee mallissa $3{,}99\\,\\text{mN}$:sta $0{,}999\\,\\text{mN}$:iin eli neljäsosaan."
         }
       ]
     },
@@ -90,20 +90,20 @@
       "choices": [
         {
           "text": "Vain palloon 2 vaikuttava voima kasvaa, koska sen varaus kasvoi.",
-          "feedback": "Mallin lukemat kumoavat tämän: kumpaankin palloon vaikuttava voima kasvaa $0{,}999\\,\\text{mN}$:sta $1{,}998\\,\\text{mN}$:iin. Pallot vaikuttavat toisiinsa voimalla ja vastavoimalla, jotka ovat aina yhtä suuret."
+          "feedback": "Mallin lukemat kumoavat tämän: kumpaankin palloon vaikuttava voima kasvaa $0{,}999\\,\\text{mN}$:sta $2{,}00\\,\\text{mN}$:iin. Pallot vaikuttavat toisiinsa voimalla ja vastavoimalla, jotka ovat aina yhtä suuret."
         },
         {
           "text": "Vain palloon 1 vaikuttava voima kasvaa, koska suurempi varaus vaikuttaa siihen voimakkaammin.",
-          "feedback": "Suurempi varaus kyllä kasvattaa voimaa, mutta se kasvattaa molempia voimia yhtä paljon: mallissa kumpikin kasvaa $0{,}999\\,\\text{mN}$:sta $1{,}998\\,\\text{mN}$:iin. Voima ja vastavoima ovat yhtä suuret."
+          "feedback": "Suurempi varaus kyllä kasvattaa voimaa, mutta se kasvattaa molempia voimia yhtä paljon: mallissa kumpikin kasvaa $0{,}999\\,\\text{mN}$:sta $2{,}00\\,\\text{mN}$:iin. Voima ja vastavoima ovat yhtä suuret."
         },
         {
           "text": "Molemmat voimat kaksinkertaistuvat ja pysyvät keskenään yhtä suurina.",
           "correct": true,
-          "feedback": "Mallin lukemat tukevat tätä: kumpaankin palloon vaikuttava voima kasvaa $0{,}999\\,\\text{mN}$:sta $1{,}998\\,\\text{mN}$:iin. Voima on suoraan verrannollinen varausten tuloon, ja voima ja vastavoima ovat aina yhtä suuret, vaikka varaukset ovat eri suuret."
+          "feedback": "Mallin lukemat tukevat tätä: kumpaankin palloon vaikuttava voima kasvaa $0{,}999\\,\\text{mN}$:sta $2{,}00\\,\\text{mN}$:iin. Voima on suoraan verrannollinen varausten tuloon, ja voima ja vastavoima ovat aina yhtä suuret, vaikka varaukset ovat eri suuret."
         },
         {
           "text": "Molemmat voimat nelinkertaistuvat, koska kaavassa on neliö.",
-          "feedback": "Kaavassa neliö on etäisyydessä, ei varauksessa. Kun toinen varaus kaksinkertaistuu, varausten tulo ja voima kaksinkertaistuvat: mallissa $0{,}999\\,\\text{mN}$:sta $1{,}998\\,\\text{mN}$:iin."
+          "feedback": "Kaavassa neliö on etäisyydessä, ei varauksessa. Kun toinen varaus kaksinkertaistuu, varausten tulo ja voima kaksinkertaistuvat: mallissa $0{,}999\\,\\text{mN}$:sta $2{,}00\\,\\text{mN}$:iin."
         }
       ]
     },
@@ -146,7 +146,7 @@
       "text": "Säädä pallojen varauksia ja etäisyyttä ja katso, miten voimanuolet ja lukemat muuttuvat. Merkitse pisteitä kuvaajaan: miten voima riippuu etäisyydestä?",
       "howto": "Liukusäätimet asettavat pallojen varaukset $q_1$ ja $q_2$ välillä $-40$–$+40\\,\\text{nC}$ ja pallojen keskipisteiden etäisyyden $r$ välillä $3{,}0$–$12\\,\\text{cm}$. Punainen nuoli $\\overline{F}_{21}$ on voima, jolla pallo 2 vaikuttaa palloon 1, ja $\\overline{F}_{12}$ voima, jolla pallo 1 vaikuttaa palloon 2. Nuolet on piirretty pallojen yläpuolelle, ja niiden pituus on verrannollinen voiman suuruuteen; hyvin pitkä nuoli on katkaistu. *Merkitse piste* lisää nykyisen voiman ja etäisyyden kuvaajaan, joka näyttää samoilla varauksilla merkityt pisteet. *Vaaka-akseli* vaihtaa kuvaajan vaaka-akseliksi etäisyyden $r$ tai etäisyyden neliön käänteisluvun $\\tfrac{1}{r^2}$. *Kenttäviivat* näyttää pallojen yhteisen sähkökentän kenttäviivat.",
       "model": "Pallot ovat pieniä verrattuna niiden etäisyyteen, joten mallissa ne ovat pistevarauksia ilmassa, ja niiden varaukset pysyvät paikallaan. Todellisissa palloissa varaus siirtyy lähellä toisiaan hieman pallojen pinnalla influenssin vuoksi, joten aivan lähekkäin voima poikkeaa mallin arvosta. Mallissa ei myöskään ole influenssia: kun toisen pallon varaus on nolla, voimaa ei ole, vaikka todellinen varaukseton metallipallo vetäytyisi varattua palloa kohti. Luvut ovat mallin laskemia arvoja, eivät mittauksia.",
-      "calc": "Voiman suuruus lasketaan Coulombin lailla\n\n$$F = k\\,\\frac{\\lvert q_1 q_2 \\rvert}{r^2}$$\n\nmissä $k = 8{,}99 \\cdot 10^{9}\\,\\tfrac{\\text{N} \\cdot \\text{m}^2}{\\text{C}^2}$, varaukset muunnetaan coulombeiksi ($1\\,\\text{nC} = 10^{-9}\\,\\text{C}$) ja etäisyys metreiksi, ja tulos näytetään millinewtoneina. Molempiin palloihin vaikuttaa sama $F$ vastakkaisiin suuntiin: samanmerkkisillä varauksilla poispäin toisesta pallosta ja erimerkkisillä toista palloa kohti. Kenttäviivat piirretään kahden pistevarauksen yhteisen kentän suuntaan pienin askelin."
+      "calc": "Voiman suuruus lasketaan Coulombin lailla\n\n$$F = k\\,\\frac{\\lvert q_1 q_2 \\rvert}{r^2}$$\n\nmissä $k = 8{,}988 \\cdot 10^{9}\\,\\tfrac{\\text{N} \\cdot \\text{m}^2}{\\text{C}^2}$, varaukset muunnetaan coulombeiksi ($1\\,\\text{nC} = 10^{-9}\\,\\text{C}$) ja etäisyys metreiksi, ja tulos näytetään millinewtoneina. Molempiin palloihin vaikuttaa sama $F$ vastakkaisiin suuntiin: samanmerkkisillä varauksilla poispäin toisesta pallosta ja erimerkkisillä toista palloa kohti. Kenttäviivat piirretään kahden pistevarauksen yhteisen kentän suuntaan pienin askelin."
     },
     {
       "id": "koe-1",
@@ -190,7 +190,7 @@
         "hints": [
           "Etsi taulukosta voimat etäisyyksillä $3{,}0\\,\\text{cm}$ ja $12\\,\\text{cm}$.",
           "Jaa lyhyemmän etäisyyden voima pidemmän etäisyyden voimalla.",
-          "Mallin arvoilla $4{,}00\\,\\text{mN} : 0{,}250\\,\\text{mN}$. Etäisyys on nelinkertainen, joten mitä tulos kertoo voiman riippuvuudesta?"
+          "Mallin arvoilla $3{,}99\\,\\text{mN} : 0{,}250\\,\\text{mN}$. Etäisyys on nelinkertainen, joten mitä tulos kertoo voiman riippuvuudesta?"
         ],
         "mistakes": [
           {
@@ -199,10 +199,10 @@
           },
           {
             "value": 0.0625,
-            "feedback": "Jaoit pienemmän voiman suuremmalla. Kysytään, kuinka monta kertaa suurempi voima on lyhyemmällä etäisyydellä, joten jaa $4{,}00\\,\\text{mN}$ luvulla $0{,}250\\,\\text{mN}$."
+            "feedback": "Jaoit pienemmän voiman suuremmalla. Kysytään, kuinka monta kertaa suurempi voima on lyhyemmällä etäisyydellä, joten jaa $3{,}99\\,\\text{mN}$ luvulla $0{,}250\\,\\text{mN}$."
           }
         ],
-        "solution": "**Annettu:** mallin lukemat, kun $q_1 = q_2 = +20\\,\\text{nC}$: etäisyydellä $r_1 = 3{,}0\\,\\text{cm}$ voima $F_1 = 4{,}00\\,\\text{mN}$ ja etäisyydellä $r_2 = 12\\,\\text{cm}$ voima $F_2 = 0{,}250\\,\\text{mN}$\n\n**Kysytty:** voimien suhde $F_1 : F_2$\n\n**Periaate:** Varaukset pysyvät samoina, joten vain etäisyys muuttaa voimaa. Suhde kertoo, kuinka monta kertaa suurempi voima on lyhyemmällä etäisyydellä, ja sitä voi verrata etäisyyksien suhteeseen.\n\n**Kaava:** suhde on $\\dfrac{F_1}{F_2}$\n\n**Muunnokset:** Ei tarvita: kumpikin voima on millinewtoneina, ja yksikkö supistuu.\n\n**Sijoitus:** $\\dfrac{F_1}{F_2} = \\dfrac{4{,}00\\,\\text{mN}}{0{,}250\\,\\text{mN}} = 16$\n\n**Vastaus:** $16$; mallin lukemat ovat kolmen merkitsevän numeron tarkkuudella.\n\n**Järkevyys:** Etäisyys on nelinkertainen, ja $4^2 = 16$. Voima on siis kääntäen verrannollinen etäisyyden neliöön, kuten Coulombin laki sanoo. Jos voima olisi kääntäen verrannollinen pelkkään etäisyyteen, suhde olisi vain $4$."
+        "solution": "**Annettu:** mallin lukemat, kun $q_1 = q_2 = +20\\,\\text{nC}$: etäisyydellä $r_1 = 3{,}0\\,\\text{cm}$ voima $F_1 = 3{,}99\\,\\text{mN}$ ja etäisyydellä $r_2 = 12\\,\\text{cm}$ voima $F_2 = 0{,}250\\,\\text{mN}$\n\n**Kysytty:** voimien suhde $F_1 : F_2$\n\n**Periaate:** Varaukset pysyvät samoina, joten vain etäisyys muuttaa voimaa. Suhde kertoo, kuinka monta kertaa suurempi voima on lyhyemmällä etäisyydellä, ja sitä voi verrata etäisyyksien suhteeseen.\n\n**Kaava:** suhde on $\\dfrac{F_1}{F_2}$\n\n**Muunnokset:** Ei tarvita: kumpikin voima on millinewtoneina, ja yksikkö supistuu.\n\n**Sijoitus:** $\\dfrac{F_1}{F_2} = \\dfrac{3{,}99\\,\\text{mN}}{0{,}250\\,\\text{mN}} \\approx 16{,}0$\n\n**Vastaus:** $16$; mallin lukemat ovat kolmen merkitsevän numeron tarkkuudella.\n\n**Järkevyys:** Etäisyys on nelinkertainen, ja $4^2 = 16$. Voima on siis kääntäen verrannollinen etäisyyden neliöön, kuten Coulombin laki sanoo. Jos voima olisi kääntäen verrannollinen pelkkään etäisyyteen, suhde olisi vain $4$."
       }
     },
     {
@@ -253,7 +253,7 @@
         "koe-2"
       ],
       "prompt": "Kirjoita taulukoidesi perusteella: miten voima riippuu pallojen etäisyydestä ja pallon 2 varauksesta? Kumpaan palloon vaikuttaa suurempi voima, ja mitä varauksen merkin vaihtaminen muutti?",
-      "model": "Kun etäisyys kaksinkertaistui $3{,}0\\,\\text{cm}$:stä $6{,}0\\,\\text{cm}$:iin, voima pieneni $4{,}00\\,\\text{mN}$:sta $0{,}999\\,\\text{mN}$:iin eli neljäsosaan, ja nelinkertaisella etäisyydellä $12\\,\\text{cm}$ se oli kuudestoistaosa, $0{,}250\\,\\text{mN}$. Voima on siis kääntäen verrannollinen etäisyyden neliöön: kun vaaka-akselina on $\\tfrac{1}{r^2}$, pisteet ovat origon kautta kulkevalla suoralla. Kun pallon 2 varaus kaksinkertaistui $+20\\,\\text{nC}$:sta $+40\\,\\text{nC}$:iin, voima kaksinkertaistui $0{,}999\\,\\text{mN}$:sta $1{,}998\\,\\text{mN}$:iin, joten voima on suoraan verrannollinen varaukseen. Molempiin palloihin vaikutti aina yhtä suuri voima, myös silloin, kun varaukset olivat eri suuret. Kun $q_2$ muutettiin negatiiviseksi, voiman suuruus pysyi samana, mutta pallot alkoivat vetää toisiaan puoleensa. Arvot ovat mallin laskemia.",
+      "model": "Kun etäisyys kaksinkertaistui $3{,}0\\,\\text{cm}$:stä $6{,}0\\,\\text{cm}$:iin, voima pieneni $3{,}99\\,\\text{mN}$:sta $0{,}999\\,\\text{mN}$:iin eli neljäsosaan, ja nelinkertaisella etäisyydellä $12\\,\\text{cm}$ se oli kuudestoistaosa, $0{,}250\\,\\text{mN}$. Voima on siis kääntäen verrannollinen etäisyyden neliöön: kun vaaka-akselina on $\\tfrac{1}{r^2}$, pisteet ovat origon kautta kulkevalla suoralla. Kun pallon 2 varaus kaksinkertaistui $+20\\,\\text{nC}$:sta $+40\\,\\text{nC}$:iin, voima kaksinkertaistui $0{,}999\\,\\text{mN}$:sta $2{,}00\\,\\text{mN}$:iin, joten voima on suoraan verrannollinen varaukseen. Molempiin palloihin vaikutti aina yhtä suuri voima, myös silloin, kun varaukset olivat eri suuret. Kun $q_2$ muutettiin negatiiviseksi, voiman suuruus pysyi samana, mutta pallot alkoivat vetää toisiaan puoleensa. Arvot ovat mallin laskemia.",
       "criteria": [
         "Vastaus kertoo, että kaksinkertainen etäisyys antaa neljäsosan voimasta, ja perustelee sen taulukon luvuilla.",
         "Vastaus kertoo, että voima kaksinkertaistuu, kun toinen varaus kaksinkertaistuu.",
@@ -296,7 +296,7 @@
       "stage": "sovella",
       "type": "choice",
       "title": "Etsi virhe",
-      "prompt": "Kahden pienen pallon varaukset ovat $5{,}0\\,\\text{nC}$, ja pallojen keskipisteiden etäisyys on $2{,}0\\,\\text{cm}$. Opiskelija laskee pallojen välisen voiman näin:\n\n$$\\begin{aligned} &F = k\\,\\frac{q^2}{r^2} \\\\ &= 8{,}99 \\cdot 10^{9}\\,\\tfrac{\\text{N} \\cdot \\text{m}^2}{\\text{C}^2} \\\\ &\\quad \\cdot \\frac{(5{,}0 \\cdot 10^{-9}\\,\\text{C})^2}{2{,}0^2} \\\\ &= 5{,}6 \\cdot 10^{-8}\\,\\text{N} \\end{aligned}$$\n\nMissä on virhe?",
+      "prompt": "Kahden pienen pallon varaukset ovat $5{,}0\\,\\text{nC}$, ja pallojen keskipisteiden etäisyys on $2{,}0\\,\\text{cm}$. Opiskelija laskee pallojen välisen voiman näin:\n\n$$\\begin{aligned} &F = k\\,\\frac{q^2}{r^2} \\\\ &= 8{,}988 \\cdot 10^{9}\\,\\tfrac{\\text{N} \\cdot \\text{m}^2}{\\text{C}^2} \\\\ &\\quad \\cdot \\frac{(5{,}0 \\cdot 10^{-9}\\,\\text{C})^2}{2{,}0^2} \\\\ &= 5{,}6 \\cdot 10^{-8}\\,\\text{N} \\end{aligned}$$\n\nMissä on virhe?",
       "choices": [
         {
           "text": "Etäisyys on sijoitettu senttimetreinä; oikein $F = 5{,}6 \\cdot 10^{-4}\\,\\text{N}$.",
@@ -341,7 +341,7 @@
           "feedback": "Sijoitit etäisyyden senttimetreinä. Vakion $k$ yksikössä on metrit, joten $r = 5{,}0\\,\\text{cm} = 0{,}050\\,\\text{m}$."
         }
       ],
-      "solution": "**Annettu:** kumpaankin palloon siirretty elektronien määrä $n = 1{,}0 \\cdot 10^{11}$, etäisyys $r = 5{,}0\\,\\text{cm}$; alkeisvaraus $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$ ja Coulombin lain vakio $k = 8{,}99 \\cdot 10^{9}\\,\\tfrac{\\text{N} \\cdot \\text{m}^2}{\\text{C}^2}$\n\n**Kysytty:** pallojen välisen voiman suuruus $F$ millinewtoneina\n\n**Periaate:** Varaus koostuu alkeisvarauksista, joten kummankin pallon varaus on $Q = ne$, ja pallot ovat negatiivisia. Pallot ovat pieniä verrattuna etäisyyteen, joten niitä voi käsitellä pistevarauksina, ja voiman suuruus saadaan Coulombin laista. Samanmerkkisinä pallot hylkivät toisiaan.\n\n**Kaava:** $Q = ne$ ja $F = k\\,\\dfrac{\\lvert q_1 q_2 \\rvert}{r^2}$, joten yhtä suurilla varauksilla $F = \\dfrac{k (ne)^2}{r^2}$\n\n**Muunnokset:** $r = 5{,}0\\,\\text{cm} = 5{,}0 \\cdot 0{,}01\\,\\text{m} = 0{,}050\\,\\text{m}$; vastaus muunnetaan millinewtoneiksi, $1\\,\\text{N} = 1000\\,\\text{mN}$.\n\n**Sijoitus:** $ne = 1{,}0 \\cdot 10^{11} \\cdot 1{,}602 \\cdot 10^{-19}\\,\\text{C} = 1{,}602 \\cdot 10^{-8}\\,\\text{C}$ ja $F = 8{,}99 \\cdot 10^{9}\\,\\tfrac{\\text{N} \\cdot \\text{m}^2}{\\text{C}^2} \\cdot \\dfrac{(1{,}602 \\cdot 10^{-8}\\,\\text{C})^2}{(0{,}050\\,\\text{m})^2} = 9{,}229 \\cdot 10^{-4}\\,\\text{N} = 0{,}9229\\,\\text{mN}$\n\n**Vastaus:** $0{,}92\\,\\text{mN}$, kaksi merkitsevää numeroa kuten elektronien määrässä ja etäisyydessä.\n\n**Järkevyys:** Kummankin pallon varaus on noin $16\\,\\text{nC}$, vähän alle simulaation $20\\,\\text{nC}$. Simulaatiossa $20\\,\\text{nC}$:n pallot $6{,}0\\,\\text{cm}$:n päässä toisistaan hylkivät toisiaan voimalla $1{,}0\\,\\text{mN}$, joten pienemmillä varauksilla ja vähän lyhyemmällä etäisyydellä alle millinewtonin voima on uskottava."
+      "solution": "**Annettu:** kumpaankin palloon siirretty elektronien määrä $n = 1{,}0 \\cdot 10^{11}$, etäisyys $r = 5{,}0\\,\\text{cm}$; alkeisvaraus $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$ ja Coulombin lain vakio $k = 8{,}988 \\cdot 10^{9}\\,\\tfrac{\\text{N} \\cdot \\text{m}^2}{\\text{C}^2}$\n\n**Kysytty:** pallojen välisen voiman suuruus $F$ millinewtoneina\n\n**Periaate:** Varaus koostuu alkeisvarauksista, joten kummankin pallon varaus on $Q = ne$, ja pallot ovat negatiivisia. Pallot ovat pieniä verrattuna etäisyyteen, joten niitä voi käsitellä pistevarauksina, ja voiman suuruus saadaan Coulombin laista. Samanmerkkisinä pallot hylkivät toisiaan.\n\n**Kaava:** $Q = ne$ ja $F = k\\,\\dfrac{\\lvert q_1 q_2 \\rvert}{r^2}$, joten yhtä suurilla varauksilla $F = \\dfrac{k (ne)^2}{r^2}$\n\n**Muunnokset:** $r = 5{,}0\\,\\text{cm} = 5{,}0 \\cdot 0{,}01\\,\\text{m} = 0{,}050\\,\\text{m}$; vastaus muunnetaan millinewtoneiksi, $1\\,\\text{N} = 1000\\,\\text{mN}$.\n\n**Sijoitus:** $ne = 1{,}0 \\cdot 10^{11} \\cdot 1{,}602 \\cdot 10^{-19}\\,\\text{C} = 1{,}602 \\cdot 10^{-8}\\,\\text{C}$ ja $F = 8{,}988 \\cdot 10^{9}\\,\\tfrac{\\text{N} \\cdot \\text{m}^2}{\\text{C}^2} \\cdot \\dfrac{(1{,}602 \\cdot 10^{-8}\\,\\text{C})^2}{(0{,}050\\,\\text{m})^2} = 9{,}227 \\cdot 10^{-4}\\,\\text{N} = 0{,}9227\\,\\text{mN}$\n\n**Vastaus:** $0{,}92\\,\\text{mN}$, kaksi merkitsevää numeroa kuten elektronien määrässä ja etäisyydessä.\n\n**Järkevyys:** Kummankin pallon varaus on noin $16\\,\\text{nC}$, vähän alle simulaation $20\\,\\text{nC}$. Simulaatiossa $20\\,\\text{nC}$:n pallot $6{,}0\\,\\text{cm}$:n päässä toisistaan hylkivät toisiaan voimalla $1{,}0\\,\\text{mN}$, joten pienemmillä varauksilla ja vähän lyhyemmällä etäisyydellä alle millinewtonin voima on uskottava."
     },
     {
       "id": "harjoitukset",
@@ -400,7 +400,7 @@
           "feedback": "Sijoitit etäisyyden senttimetreinä. Vakion $k$ yksikössä on metrit, joten $r = 3{,}0\\,\\text{cm} = 0{,}030\\,\\text{m}$."
         }
       ],
-      "solution": "**Annettu:** kuvaajan pisteet; pallot ovat samanlaiset ja yhtä suuresti varatut, $q_1 = q_2 = q$; $k = 8{,}99 \\cdot 10^{9}\\,\\tfrac{\\text{N} \\cdot \\text{m}^2}{\\text{C}^2}$\n\n**Kysytty:** pallojen varaus $q$ nanocoulombeina\n\n**Periaate:** Pallot ovat pieniä verrattuna etäisyyteen, joten niiden välinen voima saadaan Coulombin laista. Kun varaukset ovat yhtä suuret, varausten tulo on $q^2$, ja yhden kuvaajasta luetun pisteen $r$ ja $F$ riittävät varauksen ratkaisemiseen.\n\n**Kuvaajan lukeminen:** Piste $r = 3{,}0\\,\\text{cm}$ on ruudukon pystyviivalla, ja voima on siinä $9{,}0\\,\\text{mN}$:n vaakaviivalla. Suurin voima on valittu, koska sen suhteellinen lukemisepävarmuus on pienin.\n\n**Kaava:** $F = k\\,\\dfrac{q^2}{r^2}$, josta $q = r\\sqrt{\\dfrac{F}{k}}$\n\n**Muunnokset:** $r = 3{,}0\\,\\text{cm} = 3{,}0 \\cdot 0{,}01\\,\\text{m} = 0{,}030\\,\\text{m}$ ja $F = 9{,}0\\,\\text{mN} = 9{,}0 \\cdot 10^{-3}\\,\\text{N}$; lopuksi $1\\,\\text{C} = 10^{9}\\,\\text{nC}$.\n\n**Sijoitus:** $\\dfrac{F}{k} = \\dfrac{9{,}0 \\cdot 10^{-3}\\,\\text{N}}{8{,}99 \\cdot 10^{9}\\,\\tfrac{\\text{N} \\cdot \\text{m}^2}{\\text{C}^2}} = 1{,}001 \\cdot 10^{-12}\\,\\tfrac{\\text{C}^2}{\\text{m}^2}$ ja $q = 0{,}030\\,\\text{m} \\cdot \\sqrt{1{,}001 \\cdot 10^{-12}\\,\\tfrac{\\text{C}^2}{\\text{m}^2}} = 3{,}00 \\cdot 10^{-8}\\,\\text{C} = 30{,}0\\,\\text{nC}$\n\n**Vastaus:** $30\\,\\text{nC}$, kaksi merkitsevää numeroa, koska kuvaajasta luetaan voima $9{,}0\\,\\text{mN}$ kahden merkitsevän numeron tarkkuudella.\n\n**Järkevyys:** Toisesta pisteestä tarkistettuna $k\\,\\tfrac{q^2}{r^2}$ antaa etäisyydellä $9{,}0\\,\\text{cm}$ voiman $8{,}99 \\cdot 10^{9} \\cdot (3{,}0 \\cdot 10^{-8})^2 : 0{,}090^2\\,\\text{N} = 1{,}0\\,\\text{mN}$, kuten kuvaajassa. Kolminkertaisella etäisyydellä voima on yhdeksäsosa."
+      "solution": "**Annettu:** kuvaajan pisteet; pallot ovat samanlaiset ja yhtä suuresti varatut, $q_1 = q_2 = q$; $k = 8{,}988 \\cdot 10^{9}\\,\\tfrac{\\text{N} \\cdot \\text{m}^2}{\\text{C}^2}$\n\n**Kysytty:** pallojen varaus $q$ nanocoulombeina\n\n**Periaate:** Pallot ovat pieniä verrattuna etäisyyteen, joten niiden välinen voima saadaan Coulombin laista. Kun varaukset ovat yhtä suuret, varausten tulo on $q^2$, ja yhden kuvaajasta luetun pisteen $r$ ja $F$ riittävät varauksen ratkaisemiseen.\n\n**Kuvaajan lukeminen:** Piste $r = 3{,}0\\,\\text{cm}$ on ruudukon pystyviivalla, ja voima on siinä $9{,}0\\,\\text{mN}$:n vaakaviivalla. Suurin voima on valittu, koska sen suhteellinen lukemisepävarmuus on pienin.\n\n**Kaava:** $F = k\\,\\dfrac{q^2}{r^2}$, josta $q = r\\sqrt{\\dfrac{F}{k}}$\n\n**Muunnokset:** $r = 3{,}0\\,\\text{cm} = 3{,}0 \\cdot 0{,}01\\,\\text{m} = 0{,}030\\,\\text{m}$ ja $F = 9{,}0\\,\\text{mN} = 9{,}0 \\cdot 10^{-3}\\,\\text{N}$; lopuksi $1\\,\\text{C} = 10^{9}\\,\\text{nC}$.\n\n**Sijoitus:** $\\dfrac{F}{k} = \\dfrac{9{,}0 \\cdot 10^{-3}\\,\\text{N}}{8{,}988 \\cdot 10^{9}\\,\\tfrac{\\text{N} \\cdot \\text{m}^2}{\\text{C}^2}} = 1{,}001 \\cdot 10^{-12}\\,\\tfrac{\\text{C}^2}{\\text{m}^2}$ ja $q = 0{,}030\\,\\text{m} \\cdot \\sqrt{1{,}001 \\cdot 10^{-12}\\,\\tfrac{\\text{C}^2}{\\text{m}^2}} = 3{,}00 \\cdot 10^{-8}\\,\\text{C} = 30{,}0\\,\\text{nC}$\n\n**Vastaus:** $30\\,\\text{nC}$, kaksi merkitsevää numeroa, koska kuvaajasta luetaan voima $9{,}0\\,\\text{mN}$ kahden merkitsevän numeron tarkkuudella.\n\n**Järkevyys:** Toisesta pisteestä tarkistettuna $k\\,\\tfrac{q^2}{r^2}$ antaa etäisyydellä $9{,}0\\,\\text{cm}$ voiman $8{,}988 \\cdot 10^{9} \\cdot (3{,}0 \\cdot 10^{-8})^2 : 0{,}090^2\\,\\text{N} = 1{,}0\\,\\text{mN}$, kuten kuvaajassa. Kolminkertaisella etäisyydellä voima on yhdeksäsosa."
     },
     {
       "id": "tarkistus-3",

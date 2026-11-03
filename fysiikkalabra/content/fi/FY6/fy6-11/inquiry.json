@@ -92,7 +92,7 @@
         {
           "text": "Voima puolittuu, koska sama jännite jakautuu kaksi kertaa pidemmälle matkalle.",
           "correct": true,
-          "feedback": "Mallin lukemat tukevat tätä: jännitteellä $2{,}0\\,\\text{kV}$ voima on $200\\,\\mu\\text{N}$, kun etäisyys on $2{,}0\\,\\text{cm}$, ja $100\\,\\mu\\text{N}$, kun etäisyys on $4{,}0\\,\\text{cm}$. Kentän voimakkuus on $E = U : d$, joten kaksinkertainen etäisyys puolittaa kentän ja voiman."
+          "feedback": "Mallin lukemat tukevat tätä: jännitteellä $2{,}0\\,\\text{kV}$ voima on $200\\,\\mu\\text{N}$, kun etäisyys on $2{,}0\\,\\text{cm}$, ja $100\\,\\mu\\text{N}$, kun etäisyys on $4{,}0\\,\\text{cm}$. Sähkökentän voimakkuus on $E = U : d$, joten kaksinkertainen etäisyys puolittaa kentän ja voiman."
         },
         {
           "text": "Voima pienenee neljäsosaan, koska sähköinen voima on kääntäen verrannollinen etäisyyden neliöön.",
@@ -104,7 +104,7 @@
         },
         {
           "text": "Voima kaksinkertaistuu, koska levyjen välissä on enemmän tilaa kentälle.",
-          "feedback": "Mallissa käy päinvastoin: voima pienenee $200\\,\\mu\\text{N}$:sta $100\\,\\mu\\text{N}$:iin. Sama jännite jakautuu pidemmälle matkalle, joten kenttä $E = U : d$ heikkenee."
+          "feedback": "Mallissa käy päinvastoin: voima pienenee $200\\,\\mu\\text{N}$:sta $100\\,\\mu\\text{N}$:iin. Sama jännite jakautuu pidemmälle matkalle, joten sähkökentän voimakkuus $E = U : d$ heikkenee."
         }
       ]
     },
@@ -113,9 +113,9 @@
       "stage": "tutki",
       "type": "sim",
       "text": "Säädä levyjen jännitettä ja etäisyyttä, pallon varausta ja paikkaa. Lue voima-anturin lukema. Missä kohdissa voima on sama, ja mikä sen suuruuden määrää?",
-      "howto": "Liukusäätimet asettavat levyjen välisen jännitteen $U$, levyjen etäisyyden $d$, pallon varauksen $q$ sekä pallon paikan: vaakasuoran paikan $x$ levyjen keskikohdasta ja korkeuden $h$ alalevystä. Levyt ovat $20\\,\\text{cm}$ pitkiä, joten niiden päät ovat kohdissa $x = -10\\,\\text{cm}$ ja $x = 10\\,\\text{cm}$. Ylempi levy on kytketty jännitelähteen plusnapaan. Pallo on kiinni voima-anturissa, joka näyttää palloon kohdistuvan sähköisen voiman $F$ ja sen suunnan. Punainen nuoli on sama voima, ja sen pituus kasvaa voiman mukana. *Kenttä* näyttää vihreät kenttäviivat, kenttävektorit tai ei kumpaakaan. Kenttäviivojen määrä kasvaa kentän voimakkuuden mukana, ja kenttävektorin pituus kertoo kentän voimakkuuden kyseisessä kohdassa. Levyjen merkit kuvaavat niiden varausta.",
+      "howto": "Liukusäätimet asettavat levyjen välisen jännitteen $U$, levyjen etäisyyden $d$, pallon varauksen $q$ sekä pallon paikan: vaakasuoran paikan $x$ levyjen keskikohdasta ja korkeuden $h$ alalevystä. Levyt ovat $20\\,\\text{cm}$ pitkiä, joten niiden päät ovat kohdissa $x = -10\\,\\text{cm}$ ja $x = 10\\,\\text{cm}$. Ylempi levy on kytketty jännitelähteen plusnapaan. Pallo on kiinni voima-anturissa, joka näyttää palloon kohdistuvan sähköisen voiman $F$ ja sen suunnan. Punainen nuoli on sama voima, ja sen pituus kasvaa voiman mukana. *Kenttä* näyttää vihreät kenttäviivat, kenttävektorit tai ei kumpaakaan. Kenttäviivojen määrä kasvaa sähkökentän voimakkuuden mukana, ja kenttävektorin pituus kertoo sähkökentän voimakkuuden kyseisessä kohdassa. Levyjen merkit kuvaavat niiden varausta.",
       "model": "Levyt ovat ohuita johteita, joiden varaus asettuu niin, että kumpikin levy on kauttaaltaan samassa potentiaalissa. Levyjen ympärillä on tyhjiö tai ilma, eikä pallon oma varaus muuta levyjen varauksia. Malli on kaksiulotteinen: levyt jatkuvat kuvan tasoa vastaan kohtisuorassa suunnassa hyvin pitkälle. Voima-anturi mittaa vain sähköisen voiman, joten pallon painoa ei näytetä. Luvut ovat mallin laskemia arvoja, eivät mittauksia.",
-      "calc": "Kenttää ei aseteta yhtälöllä $E = U : d$. Kumpikin levy jaetaan $40$ kaistaleeseen, ja kaistaleiden varaukset ratkaistaan yhtälöryhmästä niin, että ylälevyn potentiaali on $+U : 2$ ja alalevyn $-U : 2$. Kenttä missä tahansa kohdassa on kaikkien kaistaleiden kenttien vektorisumma. Pallon kohdalla lasketusta kentästä $\\overline{E}$ saadaan anturin voima\n\n$$\\overline{F} = q\\overline{E}$$\n\nKenttäviivat piirretään kulkemalla pienin askelin aina kentän suuntaan positiivisen levyn pinnasta alkaen."
+      "calc": "Kenttää ei aseteta yhtälöllä $E = U : d$. Kumpikin levy jaetaan $40$ kaistaleeseen, ja kaistaleiden varaukset ratkaistaan yhtälöryhmästä niin, että ylälevyn potentiaali on $+U : 2$ ja alalevyn $-U : 2$. Kenttä missä tahansa kohdassa on kaikkien kaistaleiden kenttien vektorisumma. Pallon kohdalla lasketusta sähkökentän voimakkuudesta $\\overline{E}$ saadaan anturin voima\n\n$$\\overline{F} = q\\overline{E}$$\n\nKenttäviivat piirretään kulkemalla pienin askelin aina kentän suuntaan positiivisen levyn pinnasta alkaen."
     },
     {
       "id": "koe-1",
@@ -294,7 +294,7 @@
       "min": 3,
       "question": {
         "type": "numeric",
-        "prompt": "Laske taulukkosi riveiltä kentän voimakkuus $E = F : q$ ja kerro se levyjen etäisyydellä $d$ metreinä. Kuinka suuri tulo $Ed$ on? Vastaa voltteina.",
+        "prompt": "Laske taulukkosi riveiltä sähkökentän voimakkuus $E = F : q$ ja kerro se levyjen etäisyydellä $d$ metreinä. Kuinka suuri tulo $Ed$ on? Vastaa voltteina.",
         "answer": 2000.0,
         "unit": "V",
         "tolerance": 0.02,
@@ -313,7 +313,7 @@
             "feedback": "Tämä on jännite kilovoltteina. Vastaa voltteina: $2{,}0\\,\\text{kV} = 2000\\,\\text{V}$."
           }
         ],
-        "solution": "**Annettu:** mallin lukemat jännitteellä $U = 2{,}0\\,\\text{kV}$ ja varauksella $q = 2{,}0\\,\\text{nC}$: etäisyydellä $d = 2{,}0\\,\\text{cm}$ voima $F = 200\\,\\mu\\text{N}$ ja etäisyydellä $d = 6{,}0\\,\\text{cm}$ voima $F = 66{,}7\\,\\mu\\text{N}$\n\n**Kysytty:** tulo $Ed$ voltteina\n\n**Periaate:** Kentän voimakkuus saadaan kullakin etäisyydellä voimasta ja varauksesta, $E = F : q$. Jos kenttä on $E = U : d$, tulo $Ed$ on sama kaikilla riveillä ja yhtä suuri kuin levyjen jännite.\n\n**Kaava:** $E = \\dfrac{F}{q}$, joten $Ed = \\dfrac{Fd}{q}$\n\n**Muunnokset:** $F = 200 \\cdot 10^{-6}\\,\\text{N}$, $q = 2{,}0 \\cdot 10^{-9}\\,\\text{C}$ ja $d = 2{,}0\\,\\text{cm} = 0{,}020\\,\\text{m}$.\n\n**Sijoitus:** $E = \\dfrac{200 \\cdot 10^{-6}\\,\\text{N}}{2{,}0 \\cdot 10^{-9}\\,\\text{C}} = 1{,}0 \\cdot 10^{5}\\,\\text{N/C}$ ja $Ed = 1{,}0 \\cdot 10^{5}\\,\\text{N/C} \\cdot 0{,}020\\,\\text{m} = 2000\\,\\text{V}$\n\n**Vastaus:** $2{,}0 \\cdot 10^{3}\\,\\text{V}$ eli $2000\\,\\text{V}$, kaksi merkitsevää numeroa kuten varauksessa ja etäisyydessä.\n\n**Järkevyys:** Rivi $d = 6{,}0\\,\\text{cm}$ antaa saman: $66{,}7 \\cdot 10^{-6}\\,\\text{N} \\cdot 0{,}060\\,\\text{m} : (2{,}0 \\cdot 10^{-9}\\,\\text{C}) = 2000\\,\\text{V}$. Tulo on levyjen jännite $2{,}0\\,\\text{kV}$, joten $E = U : d$. Yksiköt: $\\text{N} \\cdot \\text{m} : \\text{C} = \\text{J/C} = \\text{V}$."
+        "solution": "**Annettu:** mallin lukemat jännitteellä $U = 2{,}0\\,\\text{kV}$ ja varauksella $q = 2{,}0\\,\\text{nC}$: etäisyydellä $d = 2{,}0\\,\\text{cm}$ voima $F = 200\\,\\mu\\text{N}$ ja etäisyydellä $d = 6{,}0\\,\\text{cm}$ voima $F = 66{,}7\\,\\mu\\text{N}$\n\n**Kysytty:** tulo $Ed$ voltteina\n\n**Periaate:** Sähkökentän voimakkuus saadaan kullakin etäisyydellä voimasta ja varauksesta, $E = F : q$. Jos sähkökentän voimakkuus on $E = U : d$, tulo $Ed$ on sama kaikilla riveillä ja yhtä suuri kuin levyjen jännite.\n\n**Kaava:** $E = \\dfrac{F}{q}$, joten $Ed = \\dfrac{Fd}{q}$\n\n**Muunnokset:** $F = 200 \\cdot 10^{-6}\\,\\text{N}$, $q = 2{,}0 \\cdot 10^{-9}\\,\\text{C}$ ja $d = 2{,}0\\,\\text{cm} = 0{,}020\\,\\text{m}$.\n\n**Sijoitus:** $E = \\dfrac{200 \\cdot 10^{-6}\\,\\text{N}}{2{,}0 \\cdot 10^{-9}\\,\\text{C}} = 1{,}0 \\cdot 10^{5}\\,\\text{N/C}$ ja $Ed = 1{,}0 \\cdot 10^{5}\\,\\text{N/C} \\cdot 0{,}020\\,\\text{m} = 2000\\,\\text{V}$\n\n**Vastaus:** $2{,}0 \\cdot 10^{3}\\,\\text{V}$ eli $2000\\,\\text{V}$, kaksi merkitsevää numeroa kuten varauksessa ja etäisyydessä.\n\n**Järkevyys:** Rivi $d = 6{,}0\\,\\text{cm}$ antaa saman: $66{,}7 \\cdot 10^{-6}\\,\\text{N} \\cdot 0{,}060\\,\\text{m} : (2{,}0 \\cdot 10^{-9}\\,\\text{C}) = 2000\\,\\text{V}$. Tulo on levyjen jännite $2{,}0\\,\\text{kV}$, joten $E = U : d$. Yksiköt: $\\text{N} \\cdot \\text{m} : \\text{C} = \\text{J/C} = \\text{V}$."
       }
     },
     {
@@ -384,7 +384,7 @@
         "Vastaus kertoo, että voima on sama kaikilla korkeuksilla levyjen välissä, ja perustelee sen taulukon luvuilla.",
         "Vastaus kertoo, että voima on verrannollinen varaukseen ja että osamäärä $F : q$ eli sähkökentän voimakkuus on sama kaikilla varauksilla.",
         "Vastaus kertoo, että negatiiviseen varaukseen voima osoittaa vastakkaiseen suuntaan kuin positiiviseen.",
-        "Vastaus kertoo, että kentän voimakkuus on kääntäen verrannollinen levyjen etäisyyteen ja että $Ed$ on levyjen jännite."
+        "Vastaus kertoo, että sähkökentän voimakkuus on kääntäen verrannollinen levyjen etäisyyteen ja että $Ed$ on levyjen jännite."
       ]
     },
     {
@@ -429,8 +429,8 @@
           "feedback": "Oikein. Yksikössä $\\text{V/m}$ etäisyys on metreinä: $d = 3{,}0\\,\\text{cm} = 0{,}030\\,\\text{m}$, joten $E = 1200\\,\\text{V} : 0{,}030\\,\\text{m} = 4{,}0 \\cdot 10^{4}\\,\\text{V/m}$. Virheen huomaa yksiköistä: opiskelijan jakajassa ei ole yksikköä lainkaan, joten tulos ei voi olla $\\text{V/m}$."
         },
         {
-          "text": "Kenttä lasketaan kertomalla: $E = Ud = 36\\,\\text{V} \\cdot \\text{m}$.",
-          "feedback": "Kentän voimakkuus on jännite matkan pituutta kohti, joten jännite jaetaan etäisyydellä. Tulon yksikkö $\\text{V} \\cdot \\text{m}$ ei ole kentän yksikkö $\\text{V/m}$. Virhe on muunnoksessa: $d = 0{,}030\\,\\text{m}$."
+          "text": "Sähkökentän voimakkuus lasketaan kertomalla: $E = Ud = 36\\,\\text{V} \\cdot \\text{m}$.",
+          "feedback": "Sähkökentän voimakkuus on jännite matkan pituutta kohti, joten jännite jaetaan etäisyydellä. Tulon yksikkö $\\text{V} \\cdot \\text{m}$ ei ole kentän yksikkö $\\text{V/m}$. Virhe on muunnoksessa: $d = 0{,}030\\,\\text{m}$."
         },
         {
           "text": "Jännitettä ei olisi pitänyt muuntaa volteiksi, vaan laskea $1{,}2 : 3{,}0 = 0{,}40\\,\\text{V/m}$.",
@@ -453,7 +453,7 @@
       "tolerance": 0.02,
       "hints": [
         "Mikä voima kiihdyttää pisaraa kohti levyä, ja miten se riippuu levyjen kentästä?",
-        "Levyjen välinen kenttä on $E = U : d$, voima $F = qE$ ja Newtonin toisen lain mukaan $a = F : m$.",
+        "Levyjen välinen sähkökentän voimakkuus on $E = U : d$, voima $F = qE$ ja Newtonin toisen lain mukaan $a = F : m$.",
         "Kenttä on $1600\\,\\text{V} : 0{,}0020\\,\\text{m} = 8{,}0 \\cdot 10^{5}\\,\\text{V/m}$."
       ],
       "mistakes": [
@@ -463,7 +463,7 @@
         },
         {
           "value": 2.666667,
-          "feedback": "Käytit jännitettä kentän voimakkuuden paikalla. Kenttä on jännite jaettuna levyjen etäisyydellä: $E = U : d$."
+          "feedback": "Käytit jännitettä sähkökentän voimakkuuden paikalla. Sähkökentän voimakkuus on jännite jaettuna levyjen etäisyydellä: $E = U : d$."
         }
       ],
       "solution": "**Annettu:** pisaran massa $m = 1{,}2 \\cdot 10^{-10}\\,\\text{kg}$, varauksen suuruus $q = 2{,}0 \\cdot 10^{-13}\\,\\text{C}$, jännite $U = 1{,}6\\,\\text{kV}$, levyjen etäisyys $d = 2{,}0\\,\\text{mm}$; ilmanvastus ja paino jätetään huomiotta\n\n**Kysytty:** pisaran kiihtyvyys $a$ yksikössä $\\text{m/s}^2$\n\n**Periaate:** Levyjen välissä kenttä on homogeeninen, joten pisaraan kohdistuu levyjä vastaan kohtisuorassa suunnassa vakiovoima $qE$. Kun muut voimat jätetään huomiotta, Newtonin toisen lain mukaan tämä voima määrää kiihtyvyyden, ja se on sama koko levyjen välisen matkan.\n\n**Kaava:** $E = \\dfrac{U}{d}$, $F = qE$ ja $F = ma$, joten $a = \\dfrac{qU}{md}$\n\n**Muunnokset:** $U = 1{,}6\\,\\text{kV} = 1{,}6 \\cdot 1000\\,\\text{V} = 1600\\,\\text{V}$ ja $d = 2{,}0\\,\\text{mm} = 2{,}0 \\cdot 10^{-3}\\,\\text{m}$.\n\n**Sijoitus:** $E = \\dfrac{1600\\,\\text{V}}{2{,}0 \\cdot 10^{-3}\\,\\text{m}} = 8{,}0 \\cdot 10^{5}\\,\\text{V/m}$, $F = 2{,}0 \\cdot 10^{-13}\\,\\text{C} \\cdot 8{,}0 \\cdot 10^{5}\\,\\text{V/m} = 1{,}6 \\cdot 10^{-7}\\,\\text{N}$ ja $a = \\dfrac{1{,}6 \\cdot 10^{-7}\\,\\text{N}}{1{,}2 \\cdot 10^{-10}\\,\\text{kg}} = 1333\\,\\text{m/s}^2$\n\n**Vastaus:** $1{,}3 \\cdot 10^{3}\\,\\text{m/s}^2$, kaksi merkitsevää numeroa kuten lähtötiedoissa.\n\n**Järkevyys:** Pisaran paino on vain $1{,}2 \\cdot 10^{-10}\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 \\approx 1{,}2 \\cdot 10^{-9}\\,\\text{N}$, alle prosentti sähköisestä voimasta, joten painon jättäminen huomiotta on perusteltua. Kiihtyvyys on noin $140$-kertainen putoamiskiihtyvyyteen verrattuna, joten pisaran rata taipuu selvästi lyhyelläkin matkalla."
@@ -472,7 +472,7 @@
       "id": "harjoitukset",
       "stage": "sovella",
       "type": "exercises",
-      "text": "Harjoittele kolmella tasolla. Tason 1 tehtävissä käytetään yhtä yhtälöä, tason 2 tehtävissä yhdistetään kentän voimakkuus, jännite ja voima tai muunnetaan yksiköitä, ja taso 3 vaatii päättelyä varattujen kappaleiden tasapainosta ja liikkeestä."
+      "text": "Harjoittele kolmella tasolla. Tason 1 tehtävissä käytetään yhtä yhtälöä, tason 2 tehtävissä yhdistetään sähkökentän voimakkuus, jännite ja voima tai muunnetaan yksiköitä, ja taso 3 vaatii päättelyä varattujen kappaleiden tasapainosta ja liikkeestä."
     },
     {
       "id": "tarkistus-1",
@@ -523,7 +523,7 @@
         },
         {
           "text": "Kohdassa $C$ voima on suurin, koska kenttäviivat kaartuvat siellä jyrkimmin.",
-          "feedback": "Kentän voimakkuuden kertoo viivojen tiheys, ei niiden kaarevuus. Kohdassa $C$ viivat ovat harvassa, joten kenttä on heikompi kuin levyjen välissä. Kohdissa $A$ ja $B$ voima on yhtä suuri."
+          "feedback": "Sähkökentän voimakkuuden kertoo viivojen tiheys, ei niiden kaarevuus. Kohdassa $C$ viivat ovat harvassa, joten kenttä on heikompi kuin levyjen välissä. Kohdissa $A$ ja $B$ voima on yhtä suuri."
         }
       ]
     },
@@ -534,7 +534,7 @@
       "title": "3. Selitä ilmanpuhdistin",
       "optional": true,
       "prompt": "Selitä sähkökentän avulla, miksi ilmanpuhdistimen varatut pölyhiukkaset päätyvät levyjen pintaan, vaikka ilma virtaa levyjen ohi. Miksi puhdistimen levyt ovat lähellä toisiaan?",
-      "model": "Levyjen välillä on jännite, joten toinen levy on positiivinen ja toinen negatiivinen, ja niiden välissä on homogeeninen sähkökenttä. Varattuun pölyhiukkaseen kohdistuu voima $\\overline{F} = q\\overline{E}$, joka on levyjä vastaan kohtisuora ja yhtä suuri kaikkialla levyjen välissä. Ilma kuljettaa hiukkasta levyjen suuntaisesti, mutta sähköinen voima kiihdyttää sitä koko matkan kohti toista levyä, positiivista hiukkasta negatiivista levyä kohti ja negatiivista positiivista kohti. Hiukkanen ehtii ajautua levyn pintaan ennen kuin ilma kuljettaa sen levyjen ohi, ja se jää kiinni levyyn. Levyt ovat lähellä toisiaan, koska kentän voimakkuus on $E = U : d$: pieni etäisyys antaa samalla jännitteellä voimakkaan kentän, ja hiukkasen matka levylle on lyhyt.",
+      "model": "Levyjen välillä on jännite, joten toinen levy on positiivinen ja toinen negatiivinen, ja niiden välissä on homogeeninen sähkökenttä. Varattuun pölyhiukkaseen kohdistuu voima $\\overline{F} = q\\overline{E}$, joka on levyjä vastaan kohtisuora ja yhtä suuri kaikkialla levyjen välissä. Ilma kuljettaa hiukkasta levyjen suuntaisesti, mutta sähköinen voima työntää sitä koko matkan kohti toista levyä, positiivista hiukkasta negatiivista levyä kohti ja negatiivista positiivista kohti. Hiukkanen ehtii ajautua levyn pintaan ennen kuin ilma kuljettaa sen levyjen ohi, ja se jää kiinni levyyn. Levyt ovat lähellä toisiaan, koska sähkökentän voimakkuus on $E = U : d$: pieni etäisyys antaa samalla jännitteellä voimakkaan kentän, ja hiukkasen matka levylle on lyhyt.",
       "criteria": [
         "Vastaus kertoo, että levyjen välillä on jännitteen takia sähkökenttä, joka on homogeeninen.",
         "Vastaus kertoo, että varattuun hiukkaseen kohdistuu levyjä kohti sähköinen voima $qE$, jonka suunta riippuu varauksen merkistä.",

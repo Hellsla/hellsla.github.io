@@ -36,7 +36,7 @@
       "id": "fy6-10-L1-05",
       "level": 1,
       "text": "Kaksi pistevarausta, $+2{,}0\\,\\mu\\text{C}$ ja $-4{,}0\\,\\mu\\text{C}$, ovat $0{,}50\\,\\text{m}$:n etäisyydellä toisistaan. Kuinka suuri on niiden välinen sähköinen voima?",
-      "answer": 0.2877,
+      "answer": 0.2876,
       "unit": "N",
       "tolerance": 0.02
     }
@@ -62,7 +62,7 @@
       "id": "fy6-10-L2-03",
       "level": 2,
       "text": "Kahden samanlaisen metallipallon varaukset ovat $+18\\,\\text{nC}$ ja $-6{,}0\\,\\text{nC}$. Pallot kosketetaan toisiinsa ja erotetaan niin, että niiden keskipisteiden etäisyys on $4{,}0\\,\\text{cm}$. Kuinka suuri on pallojen välinen voima nyt? Vastaa millinewtoneina.",
-      "answer": 0.2023,
+      "answer": 0.2022,
       "unit": "mN",
       "tolerance": 0.02
     },
@@ -70,7 +70,7 @@
       "id": "fy6-10-L2-04",
       "level": 2,
       "text": "Kahden samanlaisen pienen pallon massa on kummankin $0{,}50\\,\\text{g}$, ja niillä on yhtä suuret varaukset. Pallojen keskipisteiden etäisyys on $5{,}0\\,\\text{cm}$. Kuinka suuri varaus palloissa on, kun niiden välinen sähköinen voima on yhtä suuri kuin pallon paino? Vastaa nanocoulombeina.",
-      "answer": 36.93,
+      "answer": 36.94,
       "unit": "nC",
       "tolerance": 0.02
     }
@@ -80,7 +80,7 @@
       "id": "fy6-10-L3-01",
       "level": 3,
       "text": "Pistevaraus $q_1 = +20\\,\\text{nC}$ on kohdassa $x = 0$ ja pistevaraus $q_2 = -20\\,\\text{nC}$ kohdassa $x = 10\\,\\text{cm}$. Niiden puoliväliin, kohtaan $x = 5{,}0\\,\\text{cm}$, tuodaan pistevaraus $q_3 = +5{,}0\\,\\text{nC}$. Kuinka suuri on varaukseen $q_3$ vaikuttava kokonaisvoima? Vastaa millinewtoneina.",
-      "answer": 0.7192,
+      "answer": 0.7190,
       "unit": "mN",
       "tolerance": 0.02
     },

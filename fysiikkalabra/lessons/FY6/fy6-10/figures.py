@@ -9,7 +9,7 @@ from figlib import Fig, Axes, fi, INK, MUTED, WHITE, RULE, RULE_LIGHT, HEAT, HEA
 import herolib as H
 
 FORCE = HOT          # forces red (FY4 convention)
-K, nC, cm = 8.99e9, 1e-9, 1e-2
+K, nC, cm = 8.988e9, 1e-9, 1e-2
 
 
 def F_mN(q1, q2, r):
@@ -154,7 +154,7 @@ def kentta():
     f = new("fy610-kentta", 340, "Kaavakuva, ei mittakaavassa, kaksi paneelia. Vasemmalla positiivinen pistevaraus, "
             "jonka ympärillä on kahdeksan säteittäistä kenttäviivaa, nuolet varauksesta poispäin. Oikealla negatiivinen "
             "pistevaraus, jonka kenttäviivojen nuolet osoittavat varausta kohti. Kummankin oikealla puolella on pieni "
-            "positiivinen koevaraus, ja punainen voimanuoli osoittaa kenttäviivan suuntaan: positiivisesta varauksesta "
+            "positiivinen testivaraus, ja punainen voimanuoli osoittaa kenttäviivan suuntaan: positiivisesta varauksesta "
             "poispäin ja negatiivista varausta kohti. Kenttäviivat ovat vihreitä, voimanuoli punainen. Viivat ovat lähellä varausta tiheässä ja harvenevat kauempana.")
     f.line(300, 14, 300, 326, RULE, 1.5, "6 6")
     for x0, sign in ((0, 1), (300, -1)):

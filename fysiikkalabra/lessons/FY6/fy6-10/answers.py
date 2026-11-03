@@ -1,11 +1,11 @@
 """Every answer in exercises.json for fy6-10, computed from the task data (python -I answers.py).
 Charge as a whole number of elementary charges, Q = n e (e = 1,602 · 10^-19 C); current I = Q / t; conservation of
 charge (identical metal spheres that touch share their total charge equally); Coulomb's law between point charges
-F = k |q1 q2| / r^2, k = 8,99 · 10^9 N m^2 / C^2; forces on one charge add as vectors.
+F = k |q1 q2| / r^2, k = 8,988 · 10^9 N m^2 / C^2; forces on one charge add as vectors.
 Prints {exercise id: number} as JSON on the last line; the lint and the gate compare it with exercises.json."""
 import json
 
-K, E, G, ME, MP, g = 8.99e9, 1.602e-19, 6.674e-11, 9.109e-31, 1.673e-27, 9.81
+K, E, G, ME, MP, g = 8.988e9, 1.602e-19, 6.674e-11, 9.109e-31, 1.673e-27, 9.81
 nC, uC, cm = 1e-9, 1e-6, 1e-2
 
 
@@ -16,15 +16,15 @@ def F(q1, q2, r):
 a = {}
 # Level 1: one formula, values given
 a["fy6-10-L1-01"] = 6.4 * nC / E                          # n = Q : e = 6,4 · 10^-9 C : 1,602 · 10^-19 C = 4,0 · 10^10
-a["fy6-10-L1-02"] = F(15 * nC, 25 * nC, 4.0 * cm) * 1000  # 8,99e9 · 375e-18 C^2 : 0,0016 m^2 = 2,11 mN
+a["fy6-10-L1-02"] = F(15 * nC, 25 * nC, 4.0 * cm) * 1000  # 8,988e9 · 375e-18 C^2 : 0,0016 m^2 = 2,11 mN
 a["fy6-10-L1-03"] = 5.0 / 0.20e-3 / 1000                  # I = Q : t = 5,0 C : 0,20 ms = 25 kA
 a["fy6-10-L1-04"] = (12 + (-4.0)) / 2                     # touching identical spheres: (12 nC - 4,0 nC) : 2 = 4,0 nC each
-a["fy6-10-L1-05"] = F(2.0 * uC, 4.0 * uC, 0.50)           # 8,99e9 · 8,0e-12 C^2 : 0,25 m^2 = 0,288 N
+a["fy6-10-L1-05"] = F(2.0 * uC, 4.0 * uC, 0.50)           # 8,988e9 · 8,0e-12 C^2 : 0,25 m^2 = 0,288 N
 # Level 2: two steps, a conversion or a rearrangement
 a["fy6-10-L2-01"] = (K * (30 * nC) ** 2 / 2.0e-3) ** 0.5 / cm   # r = sqrt(k q1 q2 / F) = 6,36 cm
 a["fy6-10-L2-02"] = 3.6 * (4.0 / 10) ** 2                 # F2 = F1 (r1 / r2)^2 = 3,6 mN · 0,16 = 0,576 mN
 q_23 = (18 + (-6.0)) / 2 * nC                             # after touching: +6,0 nC each
-a["fy6-10-L2-03"] = F(q_23, q_23, 4.0 * cm) * 1000        # 8,99e9 · 36e-18 C^2 : 0,0016 m^2 = 0,202 mN
+a["fy6-10-L2-03"] = F(q_23, q_23, 4.0 * cm) * 1000        # 8,988e9 · 36e-18 C^2 : 0,0016 m^2 = 0,202 mN
 W_24 = 0.50e-3 * g                                        # the weight of 0,50 g: 4,905 mN
 a["fy6-10-L2-04"] = 5.0 * cm * (W_24 / K) ** 0.5 / nC     # q = r sqrt(F / k) = 36,9 nC
 # Level 3: reasoning, two ideas

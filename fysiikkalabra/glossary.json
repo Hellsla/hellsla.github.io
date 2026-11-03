@@ -3854,7 +3854,7 @@
   },
   {
     "term": "Coulombin laki",
-    "definition": "Kahden pistevarauksen välisen sähköisen voiman suuruus $F = k\\,\\tfrac{\\lvert q_1 q_2 \\rvert}{r^2}$, missä $k = 8{,}99 \\cdot 10^{9}\\,\\tfrac{\\text{N} \\cdot \\text{m}^2}{\\text{C}^2}$. Voimat ovat varausten välisellä suoralla, yhtä suuret ja vastakkaissuuntaiset; samanmerkkiset varaukset hylkivät ja erimerkkiset vetävät toisiaan.",
+    "definition": "Kahden pistevarauksen välisen sähköisen voiman suuruus $F = k\\,\\tfrac{\\lvert q_1 q_2 \\rvert}{r^2}$, missä $k = 8{,}988 \\cdot 10^{9}\\,\\tfrac{\\text{N} \\cdot \\text{m}^2}{\\text{C}^2}$. Voimat ovat varausten välisellä suoralla, yhtä suuret ja vastakkaissuuntaiset; samanmerkkiset varaukset hylkivät ja erimerkkiset vetävät toisiaan.",
     "lessons": [
       "fy6-10"
     ],

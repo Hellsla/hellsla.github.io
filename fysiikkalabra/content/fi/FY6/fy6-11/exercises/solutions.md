@@ -11,7 +11,7 @@
 ## fy6-11-L1-02
 **Annettu:** sähkökentän voimakkuus $E = 2{,}0 \cdot 10^{4}\,\text{N/C}$, pallon varaus $q = 5{,}0\,\text{nC}$
 **Kysytty:** palloon kohdistuva sähköinen voima $F$ mikronewtoneina
-**Periaate:** Sähkökentän voimakkuus kertoo voiman coulombia kohti, joten varaukseen kohdistuva voima on varaus kertaa kentän voimakkuus. Kenttä on homogeeninen, joten voima on sama kaikkialla kentässä.
+**Periaate:** Sähkökentän voimakkuus kertoo voiman coulombia kohti, joten varaukseen kohdistuva voima on varaus kertaa sähkökentän voimakkuus. Kenttä on homogeeninen, joten voima on sama kaikkialla kentässä.
 **Kaava:** $F = qE$
 **Muunnokset:** $q = 5{,}0\,\text{nC} = 5{,}0 \cdot 10^{-9}\,\text{C}$; lopuksi $1\,\text{N} = 10^{6}\,\mu\text{N}$.
 **Sijoitus:** $F = 5{,}0 \cdot 10^{-9}\,\text{C} \cdot 2{,}0 \cdot 10^{4}\,\text{N/C} = 1{,}0 \cdot 10^{-4}\,\text{N} = 100\,\mu\text{N}$
@@ -21,7 +21,7 @@
 ## fy6-11-L1-03
 **Annettu:** levyjen välinen jännite $U = 600\,\text{V}$, levyjen etäisyys $d = 0{,}040\,\text{m}$
 **Kysytty:** sähkökentän voimakkuus $E$ yksikössä $\text{V/m}$
-**Periaate:** Yhdensuuntaisten levyjen välissä kenttä on homogeeninen. Kun varaus kulkee levyltä toiselle, kenttä tekee työn $qEd$, ja jännitteen mukaan sama työ on $qU$, joten kentän voimakkuus on jännite jaettuna levyjen etäisyydellä.
+**Periaate:** Yhdensuuntaisten levyjen välissä kenttä on homogeeninen. Kun varaus kulkee levyltä toiselle, kenttä tekee työn $qEd$, ja jännitteen mukaan sama työ on $qU$, joten sähkökentän voimakkuus on jännite jaettuna levyjen etäisyydellä.
 **Kaava:** $qEd = qU$, josta $E = \dfrac{U}{d}$
 **Muunnokset:** Ei tarvita: etäisyys on metreinä.
 **Sijoitus:** $E = \dfrac{600\,\text{V}}{0{,}040\,\text{m}} = 15\,000\,\text{V/m}$
@@ -31,7 +31,7 @@
 ## fy6-11-L1-04
 **Annettu:** sähkökentän voimakkuus $E = 1{,}0 \cdot 10^{7}\,\text{V/m}$, kalvon paksuus $d = 7{,}0 \cdot 10^{-9}\,\text{m}$
 **Kysytty:** kalvon yli oleva jännite $U$ millivoltteina
-**Periaate:** Kalvon pinnoilla on vastakkaismerkkiset varaukset kuin levyillä, ja kalvon sisällä kenttä on likimain homogeeninen. Silloin kentän voimakkuuden ja jännitteen yhteys $E = U : d$ pätee, ja jännite saadaan ratkaisemalla se.
+**Periaate:** Kalvon pinnoilla on vastakkaismerkkiset varaukset kuin levyillä, ja kalvon sisällä kenttä on likimain homogeeninen. Silloin sähkökentän voimakkuuden ja jännitteen yhteys $E = U : d$ pätee, ja jännite saadaan ratkaisemalla se.
 **Kaava:** $E = \dfrac{U}{d}$, josta $U = Ed$
 **Muunnokset:** Lopuksi $1\,\text{V} = 1000\,\text{mV}$.
 **Sijoitus:** $U = 1{,}0 \cdot 10^{7}\,\text{V/m} \cdot 7{,}0 \cdot 10^{-9}\,\text{m} = 0{,}070\,\text{V} = 70\,\text{mV}$
@@ -41,18 +41,18 @@
 ## fy6-11-L1-05
 **Annettu:** kuvaajan mittauspisteet ja niihin sovitettu origon kautta kulkeva suora; pallo on joka mittauksessa samassa kohdassa
 **Kysytty:** sähkökentän voimakkuus $E$ yksikössä $\text{N/C}$
-**Periaate:** Samassa kohdassa kenttä on sama, joten voima on verrannollinen varaukseen, $F = qE$. $(q, F)$-kuvaaja on origon kautta kulkeva suora, jonka kulmakerroin on kentän voimakkuus. Kulmakerroin luetaan sovitetulta suoralta, ei yksittäisestä mittauspisteestä.
-**Kuvaajan lukeminen:** Suora kulkee origosta ruudukkoviivojen risteykseen $(4{,}5\,\text{nC};\ 135\,\mu\text{N})$, sillä $135\,\mu\text{N}$ on puolivälissä viivojen $130\,\mu\text{N}$ ja $140\,\mu\text{N}$ välissä. Varaus kasvaa siis $4{,}5\,\text{nC}$ ja voima $135\,\mu\text{N}$.
+**Periaate:** Samassa kohdassa kenttä on sama, joten voima on verrannollinen varaukseen, $F = qE$. $(q, F)$-kuvaaja on origon kautta kulkeva suora, jonka kulmakerroin on sähkökentän voimakkuus. Kulmakerroin luetaan sovitetulta suoralta, ei yksittäisestä mittauspisteestä.
+**Kuvaajan lukeminen:** Suora kulkee origosta ruudukkoviivojen risteykseen $(4{,}0\,\text{nC};\ 120\,\mu\text{N})$. Varaus kasvaa siis $4{,}0\,\text{nC}$ ja voima $120\,\mu\text{N}$.
 **Kaava:** $E = \dfrac{\Delta F}{\Delta q}$
-**Muunnokset:** $135\,\mu\text{N} = 135 \cdot 10^{-6}\,\text{N}$ ja $4{,}5\,\text{nC} = 4{,}5 \cdot 10^{-9}\,\text{C}$.
-**Sijoitus:** $E = \dfrac{135 \cdot 10^{-6}\,\text{N}}{4{,}5 \cdot 10^{-9}\,\text{C}} = 3{,}0 \cdot 10^{4}\,\text{N/C}$
-**Vastaus:** $3{,}0 \cdot 10^{4}\,\text{N/C}$, kaksi merkitsevää numeroa, koska kuvaajasta luetaan noin $1\,\mu\text{N}$:n tarkkuudella.
-**Järkevyys:** Mittauspiste $(4{,}0\,\text{nC};\ 119\,\mu\text{N})$ antaa lähes saman arvon: $119\,\mu\text{N} : 4{,}0\,\text{nC} \approx 3{,}0 \cdot 10^{4}\,\text{N/C}$. Koska suora kulkee origon kautta, varaukseton pallo ei tuntisi voimaa, vaikka kenttä on olemassa.
+**Muunnokset:** $120\,\mu\text{N} = 120 \cdot 10^{-6}\,\text{N}$ ja $4{,}0\,\text{nC} = 4{,}0 \cdot 10^{-9}\,\text{C}$.
+**Sijoitus:** $E = \dfrac{120 \cdot 10^{-6}\,\text{N}}{4{,}0 \cdot 10^{-9}\,\text{C}} = 3{,}0 \cdot 10^{4}\,\text{N/C}$
+**Vastaus:** $3{,}0 \cdot 10^{4}\,\text{N/C}$, kaksi merkitsevää numeroa, koska kuvaajasta luetaan ruudukon risteys, jossa voima on $120\,\mu\text{N}$ kahden merkitsevän numeron tarkkuudella.
+**Järkevyys:** Mittauspiste $(3{,}0\,\text{nC};\ 91\,\mu\text{N})$ antaa lähes saman arvon: $91\,\mu\text{N} : 3{,}0\,\text{nC} \approx 3{,}0 \cdot 10^{4}\,\text{N/C}$. Koska suora kulkee origon kautta, varaukseton pallo ei tuntisi voimaa, vaikka kenttä on olemassa.
 
 ## fy6-11-L2-01
 **Annettu:** levyjen välinen jännite $U = 4{,}5\,\text{kV}$, levyjen etäisyys $d = 9{,}0\,\text{mm}$, pallon varaus $q = 4{,}0\,\text{nC}$
 **Kysytty:** palloon kohdistuva sähköinen voima $F$ millinewtoneina
-**Periaate:** Levyjen välissä kenttä on homogeeninen, joten sen voimakkuus saadaan jännitteestä ja etäisyydestä. Varaukseen kohdistuva voima on varaus kertaa kentän voimakkuus, eikä se riipu siitä, missä kohtaa levyjen väliä pallo on.
+**Periaate:** Levyjen välissä kenttä on homogeeninen, joten sen voimakkuus saadaan jännitteestä ja etäisyydestä. Varaukseen kohdistuva voima on varaus kertaa sähkökentän voimakkuus, eikä se riipu siitä, missä kohtaa levyjen väliä pallo on.
 **Kaava:** $E = \dfrac{U}{d}$ ja $F = qE$, joten $F = \dfrac{qU}{d}$
 **Muunnokset:** $U = 4{,}5\,\text{kV} = 4{,}5 \cdot 1000\,\text{V} = 4500\,\text{V}$, $d = 9{,}0\,\text{mm} = 9{,}0 \cdot 10^{-3}\,\text{m}$, $q = 4{,}0 \cdot 10^{-9}\,\text{C}$; lopuksi $1\,\text{N} = 1000\,\text{mN}$.
 **Sijoitus:** $E = \dfrac{4500\,\text{V}}{9{,}0 \cdot 10^{-3}\,\text{m}} = 5{,}0 \cdot 10^{5}\,\text{V/m}$ ja $F = 4{,}0 \cdot 10^{-9}\,\text{C} \cdot 5{,}0 \cdot 10^{5}\,\text{V/m} = 2{,}0 \cdot 10^{-3}\,\text{N} = 2{,}0\,\text{mN}$
@@ -62,7 +62,7 @@
 ## fy6-11-L2-02
 **Annettu:** levyjen etäisyys $d = 5{,}0\,\text{cm}$, pallon varaus $q = 8{,}0\,\text{nC}$, sähköinen voima $F = 2{,}4\,\text{mN}$
 **Kysytty:** levyjen välinen jännite $U$ kilovoltteina
-**Periaate:** Voimasta ja varauksesta saadaan kentän voimakkuus, ja levyjen välisessä homogeenisessa kentässä jännite on kentän voimakkuus kertaa levyjen etäisyys.
+**Periaate:** Voimasta ja varauksesta saadaan sähkökentän voimakkuus, ja levyjen välisessä homogeenisessa kentässä jännite on sähkökentän voimakkuus kertaa levyjen etäisyys.
 **Kaava:** $E = \dfrac{F}{q}$ ja $E = \dfrac{U}{d}$, joten $U = \dfrac{Fd}{q}$
 **Muunnokset:** $F = 2{,}4\,\text{mN} = 2{,}4 \cdot 10^{-3}\,\text{N}$, $d = 5{,}0\,\text{cm} = 0{,}050\,\text{m}$, $q = 8{,}0 \cdot 10^{-9}\,\text{C}$; lopuksi $1\,\text{kV} = 1000\,\text{V}$.
 **Sijoitus:** $E = \dfrac{2{,}4 \cdot 10^{-3}\,\text{N}}{8{,}0 \cdot 10^{-9}\,\text{C}} = 3{,}0 \cdot 10^{5}\,\text{N/C}$ ja $U = Ed = 3{,}0 \cdot 10^{5}\,\text{N/C} \cdot 0{,}050\,\text{m} = 15\,000\,\text{V} = 15\,\text{kV}$
@@ -96,13 +96,13 @@
 **Kaava:** $\dfrac{q_1 U_1}{d} = mg = \dfrac{q_2 U_2}{d}$, josta $U_2 = U_1 \cdot \dfrac{q_1}{q_2}$
 **Muunnokset:** Ei tarvita: alkeisvaraus $e$ supistuu.
 **Sijoitus:** $U_2 = 450\,\text{V} \cdot \dfrac{3e}{4e} = 450\,\text{V} \cdot 0{,}75 = 337{,}5\,\text{V}$
-**Vastaus:** noin $340\,\text{V}$ (tarkemmin $338\,\text{V}$), jännitteen $450\,\text{V}$ tarkkuudella; alkeisvarausten lukumäärät ovat tarkkoja.
+**Vastaus:** $3{,}4 \cdot 10^{2}\,\text{V}$ ($337{,}5\,\text{V}$), pyöristettynä kahteen merkitsevään numeroon jännitteen $450\,\text{V}$ tarkkuuden mukaan; alkeisvarausten lukumäärät ovat tarkkoja.
 **Järkevyys:** Varaus kasvaa kolmanneksella, joten sama sähköinen voima saadaan heikommalla kentällä, ja jännite pienenee neljäsosalla. Jos jännite pidettäisiin $450\,\text{V}$:ssa, sähköinen voima olisi $\tfrac{4}{3}$ painosta, ja pisara lähtisi nousemaan kohti positiivista levyä.
 
 ## fy6-11-L3-02
 **Annettu:** jännite $U = 50\,\text{V}$, levyjen etäisyys $d = 1{,}0\,\text{cm}$, elektronin massa $m = 9{,}109 \cdot 10^{-31}\,\text{kg}$ ja varaus $e = 1{,}602 \cdot 10^{-19}\,\text{C}$; alkunopeus $v_0 = 0$
 **Kysytty:** elektronin nopeus $v$ positiivisella levyllä kilometreinä sekunnissa
-**Periaate:** Homogeenisessa kentässä elektroniin kohdistuu vakiovoima $eE$ kohti positiivista levyä, ja sen paino on häviävän pieni. Newtonin toisen lain mukaan kiihtyvyys $a = eE : m$ on vakio, joten liike on tasaisesti kiihtyvää, ja levosta matkan $d$ kulkeneen kappaleen nopeudelle pätee $v^2 = 2ad$.
+**Periaate:** Homogeenisessa kentässä elektroniin kohdistuu vakiovoima $eE$ kohti positiivista levyä, ja levyt ovat tyhjiössä, joten muita voimia ei ole (paino on häviävän pieni). Newtonin toisen lain mukaan kiihtyvyys $a = eE : m$ on vakio, joten liike on tasaisesti kiihtyvää, ja levosta matkan $d$ kulkeneen kappaleen nopeudelle pätee $v^2 = 2ad$.
 **Kaava:** $a = \dfrac{eE}{m} = \dfrac{eU}{md}$ ja $v^2 = 2ad$, joten $v = \sqrt{2ad} = \sqrt{\dfrac{2eU}{m}}$
 **Muunnokset:** $d = 1{,}0\,\text{cm} = 0{,}010\,\text{m}$; lopuksi $1\,\text{km/s} = 1000\,\text{m/s}$.
 **Sijoitus:** $E = \dfrac{50\,\text{V}}{0{,}010\,\text{m}} = 5000\,\text{V/m}$, $a = \dfrac{1{,}602 \cdot 10^{-19}\,\text{C} \cdot 5000\,\text{V/m}}{9{,}109 \cdot 10^{-31}\,\text{kg}} = 8{,}794 \cdot 10^{14}\,\text{m/s}^2$ ja $v = \sqrt{2 \cdot 8{,}794 \cdot 10^{14}\,\text{m/s}^2 \cdot 0{,}010\,\text{m}} = 4{,}19 \cdot 10^{6}\,\text{m/s}$
@@ -110,11 +110,11 @@
 **Järkevyys:** Nopeus on noin $1{,}4\,\%$ valon nopeudesta, joten klassinen mekaniikka riittää. Lopputulos $\sqrt{2eU : m}$ ei riipu levyjen etäisyydestä: lyhyempi matka kompensoituu voimakkaammalla kentällä.
 
 ## fy6-11-L3-03
-**Annettu:** pallon massa $m = 2{,}0\,\text{g}$, kentän voimakkuus $E = 1{,}5 \cdot 10^{5}\,\text{N/C}$ vaakasuoraan, langan kulma pystysuorasta $\alpha = 10^\circ$, $g = 9{,}81\,\text{m/s}^2$
+**Annettu:** pallon massa $m = 2{,}0\,\text{g}$, sähkökentän voimakkuus $E = 1{,}5 \cdot 10^{5}\,\text{N/C}$ vaakasuoraan, langan kulma pystysuorasta $\alpha = 10^\circ$, $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** pallon varaus $q$ nanocoulombeina
 **Periaate:** Palloon vaikuttavat paino $mg$ alas, sähköinen voima $qE$ vaakasuoraan ja langan jännitysvoima langan suuntaan. Pallo on levossa, joten voimien summa on nolla. Pystysuunnassa jännitysvoiman pystykomponentti $T\cos\alpha$ kumoaa painon ja vaakasuunnassa sen vaakakomponentti $T\sin\alpha$ kumoaa sähköisen voiman.
 **Kaava:** $T\sin\alpha = qE$ ja $T\cos\alpha = mg$; jakamalla $\tan\alpha = \dfrac{qE}{mg}$, josta $q = \dfrac{mg\tan\alpha}{E}$
 **Muunnokset:** $m = 2{,}0\,\text{g} = 2{,}0 \cdot 10^{-3}\,\text{kg}$; lopuksi $1\,\text{C} = 10^{9}\,\text{nC}$.
 **Sijoitus:** $mg\tan\alpha = 2{,}0 \cdot 10^{-3}\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot \tan 10^\circ = 3{,}459 \cdot 10^{-3}\,\text{N}$ ja $q = \dfrac{3{,}459 \cdot 10^{-3}\,\text{N}}{1{,}5 \cdot 10^{5}\,\text{N/C}} = 2{,}306 \cdot 10^{-8}\,\text{C} = 23\,\text{nC}$
-**Vastaus:** $23\,\text{nC}$, kaksi merkitsevää numeroa kuten massassa ja kentän voimakkuudessa.
+**Vastaus:** $23\,\text{nC}$, kaksi merkitsevää numeroa kuten massassa ja sähkökentän voimakkuudessa.
 **Järkevyys:** Sähköinen voima on $mg\tan 10^\circ \approx 0{,}18 \cdot 0{,}020\,\text{N} = 3{,}5\,\text{mN}$, noin viidesosa painosta, mikä sopii pieneen poikkeamaan. Kymmenien nanocoulombien varaus on tavallinen hangatulle muovipallolle.

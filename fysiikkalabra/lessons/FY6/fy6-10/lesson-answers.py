@@ -1,11 +1,11 @@
 """Numbers of the lesson text and inquiry.json for fy6-10, computed from their data (python -I lesson-answers.py); the
 exercises' answers are in answers.py. Charge Q = n e (e = 1,602 · 10^-19 C); Coulomb's law F = k |q1 q2| / r^2 with
-k = 8,99 · 10^9 N m^2 / C^2 between point charges; current I = Q / t. The simulation: two small spheres treated as
+k = 8,988 · 10^9 N m^2 / C^2 between point charges; current I = Q / t. The simulation: two small spheres treated as
 point charges q1 and q2 (nC) at the distance r (cm) between their centres; F in mN.
 Prints {id: number} as JSON."""
 import json
 
-K, E = 8.99e9, 1.602e-19
+K, E = 8.988e9, 1.602e-19
 G, ME, MP = 6.674e-11, 9.109e-31, 1.673e-27
 nC, cm = 1e-9, 1e-2
 
@@ -47,7 +47,7 @@ for q in (10, 20, 40, -20):
 # --- virhe (Etsi virhe): q1 = q2 = 5,0 nC, r = 2,0 cm ---
 a["virhe-oikein"] = F(5.0 * nC, 5.0 * nC, 0.020)              # 5,6 · 10^-4 N
 a["virhe-cm"] = F(5.0 * nC, 5.0 * nC, 2.0)                    # with r = 2,0 "m": 5,6 · 10^-8 N
-a["virhe-ilman-nelio"] = K * (5.0 * nC) ** 2 / 0.020          # r not squared: 1,1 · 10^-5 N
+a["virhe-ilman-nelio"] = K * (5.0 * nC) ** 2 / 2.0            # r in cm and not squared, as the student wrote: 1,1 · 10^-7 N
 # --- siirto: 1,0 · 10^11 electrons moved onto each of two spheres, r = 5,0 cm ---
 q_s = 1.0e11 * E                                              # 1,602 · 10^-8 C = 16 nC
 a["siirto-q-nC"] = q_s / nC

@@ -88,7 +88,7 @@
     {
       "id": "fy6-11-L3-02",
       "level": 3,
-      "text": "Elektroni lähtee levosta negatiivisen levyn luota ja kiihtyy homogeenisessa kentässä positiiviselle levylle. Levyjen välinen jännite on $50\\,\\text{V}$, ja levyjen etäisyys on $1{,}0\\,\\text{cm}$. Elektronin massa on $9{,}109 \\cdot 10^{-31}\\,\\text{kg}$ ja varauksen suuruus $1{,}602 \\cdot 10^{-19}\\,\\text{C}$. Kuinka suuri on elektronin nopeus, kun se saapuu positiiviselle levylle? Vastaa kilometreinä sekunnissa.",
+      "text": "Elektroni lähtee levosta negatiivisen levyn luota ja kiihtyy homogeenisessa kentässä positiiviselle levylle. Levyt ovat tyhjiössä. Levyjen välinen jännite on $50\\,\\text{V}$, ja levyjen etäisyys on $1{,}0\\,\\text{cm}$. Elektronin massa on $9{,}109 \\cdot 10^{-31}\\,\\text{kg}$ ja varauksen suuruus $1{,}602 \\cdot 10^{-19}\\,\\text{C}$. Kuinka suuri on elektronin nopeus, kun se saapuu positiiviselle levylle? Vastaa kilometreinä sekunnissa.",
       "answer": 4193.685952,
       "unit": "km/s",
       "tolerance": 0.02

@@ -1,6 +1,6 @@
 // fy6-10 Sähkövaraus ja Coulombin laki: two small charged metal spheres on insulating stands on a bench. Sliders set
 // the charges q1 and q2 (−40 … +40 nC) and the distance r between the centres (3,0 … 12 cm). Model
-// (lessons/FY6/fy6-10/lesson-answers.py): point charges, F = k |q1 q2| / r², k = 8,99 · 10⁹ N m²/C², in mN; the force on
+// (lessons/FY6/fy6-10/lesson-answers.py): point charges, F = k |q1 q2| / r², k = 8,988 · 10⁹ N m²/C², in mN; the force on
 // sphere 1 (F21) and on sphere 2 (F12) are equal and opposite: repulsion for like signs, attraction for unlike, none
 // when either charge is zero (the model has no induction). Red force arrows are to scale (30 px per mN, cut at 130 px
 // with a break mark); sphere 1's arrow is drawn above the spheres and sphere 2's above that, so that they never cover
@@ -8,7 +8,7 @@
 // for the present charges, and the present reading. "Kenttäviivat" draws the field lines of the two point charges,
 // traced numerically. Every canvas text goes through lab(), which pushes its box to simState.labels. p5.js 1.9 instance mode.
 new p5((p) => {
-  const K = 8.99e9, SCALE = 30, CAP = 130, PX = 30;           // px per mN, longest arrow, px per cm
+  const K = 8.988e9, SCALE = 30, CAP = 130, PX = 30;           // px per mN, longest arrow, px per cm
   const INKC = [31, 41, 51], MUTEDC = [107, 116, 128], GRID = [227, 220, 203], FORCE = [201, 42, 42], FIELDC = [43, 138, 62];
   const POSL = [242, 166, 156], NEGL = [208, 230, 251], NEG = [25, 113, 194], GLASSC = [238, 245, 249];
   const SAND = [217, 178, 106], SANDL = [241, 223, 181], GRAIN = [169, 122, 53], CURVE = [25, 113, 194];
