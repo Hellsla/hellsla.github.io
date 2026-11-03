@@ -1549,7 +1549,7 @@
       "mittauksia": "Mittauksia",
       "kynnys": "Rajan kynnys $p = {{p}}\\,\\%$",
       "selite": "Sininen piste: osuma rajan sisällä, harmaa: ulkopuolella. Viiva: orbitaalin raja.",
-      "lukemat": "Mittauksia $N = {{N}}$<br>Rajan sisällä $k = {{k}}$, ulkopuolella $N - k = {{out}}$<br>Osuus rajan sisällä $k : N = {{f}}\\,\\%$<br>Yleisin etäisyys ytimestä $r \\approx {{rp}}\\,\\text{nm}$<br><strong>Rajan suurin etäisyys ytimestä $R = {{R}}\\,\\text{nm}$</strong>"
+      "lukemat": "Mittauksia ${N = {{N}}}$<br>Rajan sisällä ${k = {{k}}}$, ulkopuolella ${N - k = {{out}}}$<br>Osuus rajan sisällä ${k : N = {{f}}\\,\\%}$<br>Yleisin etäisyys ytimestä ${r \\approx {{rp}}\\,\\text{nm}}$<br><strong>Rajan suurin etäisyys ytimestä ${R = {{R}}\\,\\text{nm}}$</strong>"
     },
     "fy8-4": {
       "kaynnista": "Käynnistä",
@@ -1582,7 +1582,7 @@
     "fy8-2": {
       "tila": "Tila",
       "emissio": "emissio (kuuma kaasu)",
-      "absorptio": "absorptio (kylmä kaasu)",
+      "absorptio": "absorptio",
       "ylempi": "Ylempi taso $n_\\text{y}$",
       "alempi": "Alempi taso $n_\\text{a}$",
       "nopeus": "Nopeus",

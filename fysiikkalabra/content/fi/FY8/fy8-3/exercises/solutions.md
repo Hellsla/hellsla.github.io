@@ -92,7 +92,7 @@
 ## fy8-3-L3-01
 **Annettu:** törmäävien elektronien liike-energia $12{,}5\,\text{eV}$, atomit perustilassa $n = 1$, $E_n = -\tfrac{13{,}6\,\text{eV}}{n^2}$
 **Kysytty:** niiden eri aallonpituuksien lukumäärä, joita virittyneet atomit voivat lähettää
-**Periaate:** Atomi voi ottaa törmäyksessä vain energian, joka vie sen jollekin ylemmälle tasolle, joten selvitetään, mitkä tasot ovat enintään $12{,}5\,\text{eV}$:n päässä perustilasta. Viritystilasta atomi voi palata suoraan tai välitasojen kautta, ja jokainen eri tasopari antaa oman aallonpituutensa.
+**Periaate:** Atomi voi ottaa törmäyksessä vain energian, joka vie sen jollekin ylemmälle tasolle, joten selvitetään, mitkä tasot ovat enintään $12{,}5\,\text{eV}$:n päässä perustilasta. Oletetaan, että kukin atomi saa energiaa yhdestä törmäyksestä ollessaan perustilassa; jo virittynyttä atomia uudelleen osuva elektroni voisi nostaa sen korkeammalle, mutta sitä ei tässä huomioida. Viritystilasta atomi voi palata suoraan tai välitasojen kautta, ja jokainen eri tasopari antaa oman aallonpituutensa.
 **Kaava:** viritysenergia $E_n - E_1 = 13{,}6\,\text{eV} - \dfrac{13{,}6\,\text{eV}}{n^2}$; taso on saavutettavissa, jos $E_n - E_1 \leq 12{,}5\,\text{eV}$
 **Muunnokset:** Ei tarvita, koska kaikki energiat ovat elektronivoltteina.
 **Sijoitus:** $E_2 - E_1 = 13{,}6\,\text{eV} - 3{,}40\,\text{eV} = 10{,}2\,\text{eV}$, $E_3 - E_1 = 13{,}6\,\text{eV} - 1{,}511\,\text{eV} = 12{,}09\,\text{eV}$ ja $E_4 - E_1 = 13{,}6\,\text{eV} - 0{,}850\,\text{eV} = 12{,}75\,\text{eV}$. Tasot $2$ ja $3$ ovat saavutettavissa, taso $4$ ei, koska $12{,}75\,\text{eV} > 12{,}5\,\text{eV}$. Mahdolliset siirtymät ovat $3 \to 1$, $3 \to 2$ ja $2 \to 1$.

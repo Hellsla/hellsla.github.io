@@ -70,7 +70,7 @@
     {
       "id": "fy8-3-L2-04",
       "level": 2,
-      "text": "Perustilassa olevaan vetyatomiin osuu ultraviolettifotoni, jonka aallonpituus on $80{,}0\\,\\text{nm}$. Fotoni irrottaa elektronin, jonka ionisaatioenergia on $13{,}6\\,\\text{eV}$. Kuinka suuri on irronneen elektronin liike-energia elektronivoltteina ($h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$)?",
+      "text": "Perustilassa olevaan vetyatomiin osuu ultraviolettifotoni, jonka aallonpituus on $80{,}0\\,\\text{nm}$. Fotoni ionisoi atomin; vedyn ionisaatioenergia perustilasta on $13{,}6\\,\\text{eV}$. Kuinka suuri on irronneen elektronin liike-energia elektronivoltteina ($h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$)?",
       "answer": 1.9,
       "unit": "eV",
       "tolerance": 0.03
@@ -80,7 +80,7 @@
     {
       "id": "fy8-3-L3-01",
       "level": 3,
-      "text": "Vetyatomin energiatasot ovat $E_n = -\\tfrac{13{,}6\\,\\text{eV}}{n^2}$. Purkausputkessa elektronit, joiden liike-energia on $12{,}5\\,\\text{eV}$, törmäävät perustilassa oleviin vetyatomeihin. Törmäyksessä atomi voi ottaa elektronilta vain sen energiaosuuden, joka vastaa jotakin sen tasoparin erotusta. Kuinka monta eri aallonpituutta virittyneet atomit voivat lähettää palatessaan perustilaan, kun mukaan lasketaan myös välitasojen kautta kulkevat siirtymät?",
+      "text": "Vetyatomin energiatasot ovat $E_n = -\\tfrac{13{,}6\\,\\text{eV}}{n^2}$. Purkausputkessa elektronit, joiden liike-energia on $12{,}5\\,\\text{eV}$, törmäävät perustilassa oleviin vetyatomeihin. Törmäyksessä atomi voi ottaa elektronilta vain sen energiaosuuden, joka vastaa jotakin sen tasoparin erotusta. Kuinka monta eri aallonpituutta virittyneet atomit voivat lähettää palatessaan perustilaan, kun mukaan lasketaan myös välitasojen kautta kulkevat siirtymät? Laske eri tasoparit, joiden välillä siirtymä on mahdollinen: jokainen tasopari antaa yhden aallonpituuden.",
       "answer": 3,
       "unit": "",
       "tolerance": 0.02

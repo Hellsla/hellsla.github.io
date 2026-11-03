@@ -1,6 +1,6 @@
 # Vetyatomin energiatasot ja Bohrin malli
 
-> **Miksi** vetyä sisältävän lampun valo hajoaa hilassa vain neljäksi värilliseksi viivaksi, ja miksi juuri aallonpituuksille $656\,\text{nm}$, $486\,\text{nm}$, $434\,\text{nm}$ ja $410\,\text{nm}$?
+> **Miksi** vetyä sisältävän lampun valo hajoaa hilassa vain neljäksi selvästi näkyväksi värilliseksi viivaksi, ja miksi juuri aallonpituuksille $656\,\text{nm}$, $486\,\text{nm}$, $434\,\text{nm}$ ja $410\,\text{nm}$?
 
 <svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: pimennetyssä luokassa pöydällä on vetyä sisältävä purkausputki jännitelähteen telineessä. Putki hehkuu vaaleanpunaisen violettina. Sen edessä on telineessä hila, ja hilan takana valkoisella varjostimella näkyy tummaa taustaa vasten neljä erillistä värillistä viivaa: punainen, syaani, sininen ja violetti." class="fig-hero" style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy83h-wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6b7480"/><stop offset="1" stop-color="#1f2933"/></linearGradient><linearGradient id="fy83h-desk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d9b26a"/><stop offset="1" stop-color="#a97a35"/></linearGradient><radialGradient id="fy83h-glow" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#f2a69c" stop-opacity="0.9"/><stop offset="1" stop-color="#f2a69c" stop-opacity="0"/></radialGradient><linearGradient id="fy83h-tube" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#f2a69c"/><stop offset="0.5" stop-color="#ffffff"/><stop offset="1" stop-color="#b197fc"/></linearGradient><linearGradient id="fy83h-beam" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#f2a69c" stop-opacity="0.55"/><stop offset="1" stop-color="#f2a69c" stop-opacity="0.08"/></linearGradient></defs>
@@ -102,54 +102,54 @@ Alin taso $n = 1$ on **perustila**, jonka energia on $-13{,}6\,\text{eV}$. Ylemm
   <path d="M342,300 L335,285 L349,285 Z" fill="#4263eb" stroke-linejoin="round"/>
   <line x1="382" y1="95.5" x2="382" y2="286" stroke="#7048e8" stroke-width="3.5" stroke-linecap="butt"/>
   <path d="M382,300 L375,285 L389,285 Z" fill="#7048e8" stroke-linejoin="round"/>
-  <foreignObject x="362" y="318.5" width="183" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{Balmer (näkyvä)}$</div></foreignObject>
+  <foreignObject x="392" y="223.5" width="183" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{Balmer (näkyvä)}$</div></foreignObject>
 </svg>
 
 ### Siirtymässä syntyy tai katoaa fotoni
 Kun elektroni siirtyy ylemmältä tasolta alemmalle, atomin energia pienenee ja erotus lähtee yhtenä fotonina. Energia säilyy, joten fotonin energia on tasojen erotus. Koska tasoja on vain tiettyjä, myös erotuksia on vain tiettyjä: vety lähettää vain tiettyjä aallonpituuksia, ja sen spektri on viivaspektri.
 
-Siirtymät samalle alemmalle tasolle muodostavat sarjan. Tasolle $n = 1$ päättyvät siirtymät (Lymanin sarja) ovat suuria energiaharppauksia, ja niiden fotonit ovat ultraviolettia. Tasolle $n = 2$ päättyvät siirtymät (Balmerin sarja) tuottavat vedyn neljä näkyvää viivaa. Tasolle $n = 3$ päättyvät (Paschenin sarja) ovat infrapunaa.
+Siirtymät samalle alemmalle tasolle muodostavat sarjan. Tasolle $n = 1$ päättyvät siirtymät (Lymanin sarja) ovat suuria energiaharppauksia, ja niiden fotonit ovat ultraviolettia. Tasolle $n = 2$ päättyvät siirtymät (Balmerin sarja) tuottavat vedyn neljä kirkasta näkyvää viivaa; seuraavat viivat ($397\,\text{nm}$, $389\,\text{nm}$, …) ovat himmeitä ja näkyvän valon violetilla reunalla, jossa silmä on epäherkkä. Tasolle $n = 3$ päättyvät (Paschenin sarja) ovat infrapunaa.
 
 Absorptio on käänteinen tapahtuma. Atomi absorboi fotonin vain, jos fotonin energia on täsmälleen jonkin tasoparin erotus: elektroni siirtyy silloin ylemmälle tasolle. Muun energian fotoni menee atomin ohi absorboitumatta. Poikkeus on ionisaatio: fotoni, jonka energia on vähintään ionisaatioenergia, voi irrottaa elektronin, ja ylimääräinen energia jää vapaan elektronin liike-energiaksi.
 
 <svg data-fig="absorption" viewBox="0 0 600 400" role="img" aria-label="Kolme tilannetta vierekkäin, energia-asteikko mittakaavassa. Kussakin on vetyatomin tasot n = 1, 2 ja 3 sekä katkoviivana energia nolla, ja elektroni on aluksi perustilassa n = 1. Vasemmalla tulee fotoni, jonka energia on 10,2 eV, täsmälleen tasojen 1 ja 2 erotus: fotoni absorboituu ja elektroni siirtyy tasolle 2. Keskellä fotonin energia on 11,0 eV, joka ei ole minkään tasoparin erotus: fotoni menee läpi, ja elektroni jää tasolle 1. Oikealla fotonin energia on 14,0 eV, enemmän kuin ionisaatioenergia 13,6 eV: elektroni irtoaa atomista." style="max-width:100%;font-size:24px">
   <line x1="200" y1="14" x2="200" y2="386" stroke="#c9c2b2" stroke-width="2" stroke-linecap="butt" stroke-dasharray="6 6"/>
   <line x1="400" y1="14" x2="400" y2="386" stroke="#c9c2b2" stroke-width="2" stroke-linecap="butt" stroke-dasharray="6 6"/>
-  <line x1="60" y1="46" x2="182" y2="46" stroke="#1f2933" stroke-width="2" stroke-linecap="butt" stroke-dasharray="7 5"/>
-  <line x1="60" y1="277" x2="182" y2="277" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <line x1="60" y1="104" x2="182" y2="104" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <line x1="60" y1="71.5" x2="182" y2="71.5" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <foreignObject x="32" y="262.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$1$</div></foreignObject>
-  <foreignObject x="32" y="89.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$2$</div></foreignObject>
-  <foreignObject x="32" y="57" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$3$</div></foreignObject>
-  <foreignObject x="32" y="25.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$0$</div></foreignObject>
-  <path d="M14,304 L14.5,304 L15.5,304.5 L16.5,305 L17,305.5 L18,306.5 L19,307.5 L19.5,308.5 L20.5,309.5 L21.5,310 L22,310 L23,309.5 L23.5,309.5 L24,309 L25,308 L25.5,307.5 L26,306.5 L26.5,305.5 L27,304 L27.5,303 L28,302 L28.5,300.5 L29.5,299.5 L30,298.5 L30.5,297.5 L31,296.5 L31.5,295.5 L32,295 L33,294.5 L33.5,294 L34.5,294 L35,294 L35.5,294 L36.5,294.5 L37.5,295 L38,295.5 L39,296 L40,297 L40.5,298 L41.5,299 L42.5,300 L43.5,301 L44,301.5 L45,302.5 L46,303.5 L46.5,304 L47.5,305 L48.5,305 L49,305.5 L50,305.5 L50.5,305.5 L51,305.5 L52,305 L52.5,304.5 L53,304 L54,303 L54.5,302 L55,301 L55.5,300 L56,299 L56.5,297.5 L57,296.5 L57.5,295.5 L58,294 L59,293 L59.5,292.5 L60,291.5 L60.5,291 L61.5,290.5 L62,290 L62.5,289.5 L63.5,289.5 L64,290 L65,290 L65.5,290.5 L66.5,291 L67.5,292 L68,293 L69,293.5 L70,294.5 L71,295.5 L71.5,296.5 L72.5,297.5 L73.5,298.5 L74,299 L75,300 L76,300.5 L76.5,301 L77.5,301.5 L78,301.5 L79,301.5 L79.5,301.5 L80.5,301 L81,300.5 L81.5,299.5 L82,299 L82.5,298 L83.5,297 L84,296 L84.5,294.5 L85,293.5 L85.5,292.5 L86,291 L86.5,290 L87,289 L88,288 L88.5,287.5 L89,286.5 L89.5,286 L90.5,285.5 L91,285.5 L92,285.5 L92.5,286 L93.5,287 L94.5,288 L95,289 L96,290 L97,290.5 L97.5,291 L98.5,291.5 L99,291.5" fill="none" stroke="#e8590c" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M114,289 L100.5,299 L98,284 Z" fill="#e8590c" stroke-linejoin="round"/>
-  <circle cx="132" cy="277" r="8" fill="#ffffff" stroke="#1971c2" stroke-width="2"/>
-  <line x1="132" y1="266" x2="132" y2="126" stroke="#1971c2" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M132,115 L137.5,127 L126.5,127 Z" fill="#1971c2" stroke-linejoin="round"/>
-  <circle cx="132" cy="104" r="8" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <line x1="60" y1="60" x2="182" y2="60" stroke="#1f2933" stroke-width="2" stroke-linecap="butt" stroke-dasharray="7 5"/>
+  <line x1="60" y1="277.5" x2="182" y2="277.5" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <line x1="60" y1="114.5" x2="182" y2="114.5" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <line x1="60" y1="84" x2="182" y2="84" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <foreignObject x="32" y="263" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$1$</div></foreignObject>
+  <foreignObject x="32" y="100" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$2$</div></foreignObject>
+  <foreignObject x="32" y="69.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$3$</div></foreignObject>
+  <foreignObject x="32" y="39.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$0$</div></foreignObject>
+  <path d="M14,304 L14.5,304 L15.5,304.5 L16.5,305 L17,305.5 L18,306.5 L19,307.5 L19.5,308.5 L20.5,309.5 L21.5,310 L22,310 L23,309.5 L23.5,309.5 L24,309 L24.5,308 L25.5,307.5 L26,306.5 L26.5,305.5 L27,304.5 L27.5,303 L28,302 L28.5,301 L29.5,299.5 L30,298.5 L30.5,297.5 L31,296.5 L31.5,295.5 L32.5,295 L33,294.5 L33.5,294 L34.5,294 L35,294 L36,294 L36.5,294.5 L37.5,295 L38,295.5 L39,296 L40,297 L40.5,298 L41.5,299 L42.5,300 L43.5,301 L44,302 L45,303 L46,303.5 L46.5,304.5 L47.5,305 L48,305.5 L49,305.5 L50,306 L50.5,306 L51,305.5 L52,305.5 L52.5,305 L53,304 L53.5,303.5 L54.5,302.5 L55,301.5 L55.5,300 L56,299 L56.5,298 L57,296.5 L57.5,295.5 L58.5,294.5 L59,293.5 L59.5,292.5 L60,291.5 L60.5,291 L61.5,290.5 L62,290 L62.5,290 L63.5,290 L64,290 L65,290.5 L65.5,291 L66.5,291.5 L67.5,292 L68,293 L69,294 L70,295 L71,296 L71.5,297 L72.5,298 L73.5,298.5 L74,299.5 L75,300 L76,301 L76.5,301.5 L77.5,301.5 L78,301.5 L79,301.5 L79.5,301.5 L80,301 L81,300.5 L81.5,300 L82,299 L82.5,298.5 L83.5,297 L84,296 L84.5,295 L85,294 L85.5,292.5 L86,291.5 L86.5,290.5 L87,289.5 L88,288.5 L88.5,287.5 L89,287 L89.5,286.5 L90.5,286 L91,286 L92,286 L92.5,286.5 L93.5,287.5 L94.5,288.5 L95,289.5 L96,290 L97,291 L97.5,291.5 L98.5,291.5 L99,291.5" fill="none" stroke="#e8590c" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M114,289.5 L100,299 L98,284.5 Z" fill="#e8590c" stroke-linejoin="round"/>
+  <circle cx="132" cy="277.5" r="8" fill="#ffffff" stroke="#1971c2" stroke-width="2"/>
+  <line x1="132" y1="266.5" x2="132" y2="136.5" stroke="#1971c2" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M132,125.5 L137.5,137.5 L126.5,137.5 Z" fill="#1971c2" stroke-linejoin="round"/>
+  <circle cx="132" cy="114.5" r="8" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
   <foreignObject x="33.5" y="321.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#e8590c">$hf = 10{,}2\,\text{eV}$</div></foreignObject>
   <foreignObject x="27.5" y="357.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{absorboituu}$</div></foreignObject>
-  <line x1="260" y1="46" x2="382" y2="46" stroke="#1f2933" stroke-width="2" stroke-linecap="butt" stroke-dasharray="7 5"/>
-  <line x1="260" y1="277" x2="382" y2="277" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <line x1="260" y1="104" x2="382" y2="104" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <line x1="260" y1="71.5" x2="382" y2="71.5" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <line x1="260" y1="60" x2="382" y2="60" stroke="#1f2933" stroke-width="2" stroke-linecap="butt" stroke-dasharray="7 5"/>
+  <line x1="260" y1="277.5" x2="382" y2="277.5" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <line x1="260" y1="114.5" x2="382" y2="114.5" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <line x1="260" y1="84" x2="382" y2="84" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
   <path d="M214,304 L215.5,304.5 L216.5,306 L218,308 L219.5,310 L220.5,311 L222,310.5 L223.5,309.5 L224.5,308 L226,306 L227,304 L228.5,302 L230,300 L231,298.5 L232.5,297.5 L234,297 L235,297.5 L236.5,298.5 L238,300 L239,302 L240.5,304 L242,306 L243,308 L244.5,309.5 L246,310.5 L247,311 L248.5,310.5 L250,309.5 L251,308 L252.5,306 L254,304 L255,302 L256.5,300 L257.5,298.5 L259,297.5 L260.5,297 L261.5,297.5 L263,298.5 L264.5,300 L265.5,302 L267,304 L268.5,306 L269.5,308 L271,309.5 L272.5,310.5 L273.5,311 L275,310.5 L276.5,309.5 L277.5,308 L279,306 L280,304 L281.5,302 L283,300 L284,298.5 L285.5,297.5 L287,297 L288,297.5 L289.5,298.5 L291,300 L292,302 L293.5,304 L295,306 L296,308 L297.5,309.5 L299,310.5 L300,311 L301.5,310.5 L303,309.5 L304,308 L305.5,306 L307,304 L308,302 L309.5,300 L310.5,298.5 L312,297.5 L313.5,297 L314.5,297.5 L316,298.5 L317.5,300 L318.5,302 L320,304 L321.5,306 L322.5,308 L324,309.5 L325.5,310.5 L326.5,311 L328,310.5 L329.5,309.5 L330.5,308 L332,306 L333,304 L334.5,302 L336,300 L337,298.5 L338.5,297.5 L340,297 L341,297.5 L342.5,298.5 L344,300 L345,302 L346.5,304 L348,306 L349,308 L350.5,309.5 L352,310.5 L353,311 L354.5,310.5 L356,309.5 L357,308 L358.5,306 L360,304 L361,302 L362.5,300 L363.5,298.5 L365,297.5 L366.5,297 L367.5,298 L369,300 L370.5,302 L371.5,303.5 L373,304" fill="none" stroke="#e8590c" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
   <path d="M388,304 L373,311.5 L373,296.5 Z" fill="#e8590c" stroke-linejoin="round"/>
-  <circle cx="332" cy="277" r="8" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="332" cy="277.5" r="8" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
   <foreignObject x="233.5" y="321.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#e8590c">$hf = 11{,}0\,\text{eV}$</div></foreignObject>
   <foreignObject x="240" y="357.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{menee läpi}$</div></foreignObject>
-  <line x1="460" y1="46" x2="582" y2="46" stroke="#1f2933" stroke-width="2" stroke-linecap="butt" stroke-dasharray="7 5"/>
-  <line x1="460" y1="277" x2="582" y2="277" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <line x1="460" y1="104" x2="582" y2="104" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <line x1="460" y1="71.5" x2="582" y2="71.5" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M414,304 L414.5,304 L415.5,304.5 L416.5,305 L417,305.5 L418,306.5 L419,307.5 L419.5,308.5 L420.5,309.5 L421.5,310 L422,310 L423,309.5 L423.5,309.5 L424,309 L425,308 L425.5,307.5 L426,306.5 L426.5,305.5 L427,304 L427.5,303 L428,302 L428.5,300.5 L429.5,299.5 L430,298.5 L430.5,297.5 L431,296.5 L431.5,295.5 L432,295 L433,294.5 L433.5,294 L434.5,294 L435,294 L435.5,294 L436.5,294.5 L437.5,295 L438,295.5 L439,296 L440,297 L440.5,298 L441.5,299 L442.5,300 L443.5,301 L444,301.5 L445,302.5 L446,303.5 L446.5,304 L447.5,305 L448.5,305 L449,305.5 L450,305.5 L450.5,305.5 L451,305.5 L452,305 L452.5,304.5 L453,304 L454,303 L454.5,302 L455,301 L455.5,300 L456,299 L456.5,297.5 L457,296.5 L457.5,295.5 L458,294 L459,293 L459.5,292.5 L460,291.5 L460.5,291 L461.5,290.5 L462,290 L462.5,289.5 L463.5,289.5 L464,290 L465,290 L465.5,290.5 L466.5,291 L467.5,292 L468,293 L469,293.5 L470,294.5 L471,295.5 L471.5,296.5 L472.5,297.5 L473.5,298.5 L474,299 L475,300 L476,300.5 L476.5,301 L477.5,301.5 L478,301.5 L479,301.5 L479.5,301.5 L480.5,301 L481,300.5 L481.5,299.5 L482,299 L482.5,298 L483.5,297 L484,296 L484.5,294.5 L485,293.5 L485.5,292.5 L486,291 L486.5,290 L487,289 L488,288 L488.5,287.5 L489,286.5 L489.5,286 L490.5,285.5 L491,285.5 L492,285.5 L492.5,286 L493.5,287 L494.5,288 L495,289 L496,290 L497,290.5 L497.5,291 L498.5,291.5 L499,291.5" fill="none" stroke="#e8590c" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M514,289 L500.5,299 L498,284 Z" fill="#e8590c" stroke-linejoin="round"/>
-  <circle cx="532" cy="277" r="8" fill="#ffffff" stroke="#1971c2" stroke-width="2"/>
-  <line x1="532" y1="266" x2="532" y2="44" stroke="#1971c2" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M532,33 L537.5,45 L526.5,45 Z" fill="#1971c2" stroke-linejoin="round"/>
-  <circle cx="532" cy="22" r="8" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <line x1="460" y1="60" x2="582" y2="60" stroke="#1f2933" stroke-width="2" stroke-linecap="butt" stroke-dasharray="7 5"/>
+  <line x1="460" y1="277.5" x2="582" y2="277.5" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <line x1="460" y1="114.5" x2="582" y2="114.5" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <line x1="460" y1="84" x2="582" y2="84" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M414,304 L414.5,304 L415.5,304.5 L416.5,305 L417,305.5 L418,306.5 L419,307.5 L419.5,308.5 L420.5,309.5 L421.5,310 L422,310 L423,309.5 L423.5,309.5 L424,309 L424.5,308 L425.5,307.5 L426,306.5 L426.5,305.5 L427,304.5 L427.5,303 L428,302 L428.5,301 L429.5,299.5 L430,298.5 L430.5,297.5 L431,296.5 L431.5,295.5 L432.5,295 L433,294.5 L433.5,294 L434.5,294 L435,294 L436,294 L436.5,294.5 L437.5,295 L438,295.5 L439,296 L440,297 L440.5,298 L441.5,299 L442.5,300 L443.5,301 L444,302 L445,303 L446,303.5 L446.5,304.5 L447.5,305 L448,305.5 L449,305.5 L450,306 L450.5,306 L451,305.5 L452,305.5 L452.5,305 L453,304 L453.5,303.5 L454.5,302.5 L455,301.5 L455.5,300 L456,299 L456.5,298 L457,296.5 L457.5,295.5 L458.5,294.5 L459,293.5 L459.5,292.5 L460,291.5 L460.5,291 L461.5,290.5 L462,290 L462.5,290 L463.5,290 L464,290 L465,290.5 L465.5,291 L466.5,291.5 L467.5,292 L468,293 L469,294 L470,295 L471,296 L471.5,297 L472.5,298 L473.5,298.5 L474,299.5 L475,300 L476,301 L476.5,301.5 L477.5,301.5 L478,301.5 L479,301.5 L479.5,301.5 L480,301 L481,300.5 L481.5,300 L482,299 L482.5,298.5 L483.5,297 L484,296 L484.5,295 L485,294 L485.5,292.5 L486,291.5 L486.5,290.5 L487,289.5 L488,288.5 L488.5,287.5 L489,287 L489.5,286.5 L490.5,286 L491,286 L492,286 L492.5,286.5 L493.5,287.5 L494.5,288.5 L495,289.5 L496,290 L497,291 L497.5,291.5 L498.5,291.5 L499,291.5" fill="none" stroke="#e8590c" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M514,289.5 L500,299 L498,284.5 Z" fill="#e8590c" stroke-linejoin="round"/>
+  <circle cx="532" cy="277.5" r="8" fill="#ffffff" stroke="#1971c2" stroke-width="2"/>
+  <line x1="532" y1="266.5" x2="532" y2="75.5" stroke="#1971c2" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M532,64.5 L537.5,76.5 L526.5,76.5 Z" fill="#1971c2" stroke-linejoin="round"/>
+  <circle cx="532" cy="53.5" r="8" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
   <foreignObject x="433.5" y="321.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#e8590c">$hf = 14{,}0\,\text{eV}$</div></foreignObject>
   <foreignObject x="452.5" y="357.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{ionisoi}$</div></foreignObject>
 </svg>
@@ -175,10 +175,10 @@ Tanskalainen Niels Bohr esitti vuonna 1913 mallin, jossa elektroni kiertää pro
   <foreignObject x="163.5" y="281.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$n = 3$</div></foreignObject>
   <line x1="174" y1="169" x2="74" y2="58" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
   <foreignObject x="16" y="25.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$n = 1$</div></foreignObject>
-  <foreignObject x="200" y="169.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#c92a2a">$p^+$</div></foreignObject>
+  <foreignObject x="207" y="169.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#c92a2a">$p^+$</div></foreignObject>
 </svg>
 
-Malli oli suuri edistysaskel. Siitä saadut vedyn energiatasot ovat samat, jotka spektriviivoista mitataan, ja se selitti vedyn koko ja ionisaatioenergian. Mallilla on kuitenkin rajansa. Se toimii vain atomeille ja ioneille, joissa on yksi elektroni, eikä se kerro, miksi jotkin spektriviivat ovat kirkkaampia kuin toiset. Elektronilla ei myöskään ole todellisuudessa rataa: luvussa *Aaltomekaaninen atomimalli ja orbitaalit* elektronin paikkaa kuvataan todennäköisyyksillä. Energiatasot säilyvät uudessakin mallissa, mutta kiertoradat jäävät pois.
+Malli oli suuri edistysaskel. Siitä saadut vedyn energiatasot ovat samat, jotka spektriviivoista mitataan, ja se selitti vetyatomin koon ja ionisaatioenergian. Mallilla on kuitenkin rajansa. Se toimii vain atomeille ja ioneille, joissa on yksi elektroni, eikä se kerro, miksi jotkin spektriviivat ovat kirkkaampia kuin toiset. Elektronilla ei myöskään ole todellisuudessa rataa: luvussa *Aaltomekaaninen atomimalli ja orbitaalit* elektronin paikkaa kuvataan todennäköisyyksillä. Energiatasot säilyvät uudessakin mallissa, mutta kiertoradat jäävät pois.
 
 ## Kaava: Vetyatomin energiatasot ja siirtymän fotoni
 Vetyatomin energiatasot ovat
@@ -204,7 +204,7 @@ missä $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$ on Planckin vakio, $f$ f
 
 Kunkin sarjan pisin aallonpituus tulee siirtymästä lähimmältä ylemmältä tasolta ja lyhin eli sarjan raja siirtymästä, joka alkaa vapaasta elektronista. Koska tasot tihenevät ylöspäin, sarjan viivat tihenevät rajaa kohti.
 
-<svg data-fig="spectrum" viewBox="0 0 600 316" role="img" aria-label="Vedyn näkyvä emissiospektri mittakaavassa aallonpituusakselilla 350–700 nm: tummalla pohjalla neljä viivaa, 410 nm violetti (siirtymä 6 → 2), 434 nm sininen (5 → 2), 486 nm syaani (4 → 2) ja 656 nm punainen (3 → 2). Katkoviiva kohdassa 365 nm on sarjan raja, siirtymä äärettömyydestä tasolle 2. Viivat tihenevät lyhyitä aallonpituuksia kohti." style="max-width:100%;font-size:24px">
+<svg data-fig="spectrum" viewBox="0 0 600 300" role="img" aria-label="Vedyn näkyvä emissiospektri mittakaavassa aallonpituusakselilla 350–700 nm: tummalla pohjalla neljä viivaa, 410 nm violetti (siirtymä 6 → 2), 434 nm sininen (5 → 2), 486 nm syaani (4 → 2) ja 656 nm punainen (3 → 2). Katkoviiva kohdassa 365 nm on sarjan raja, siirtymä äärettömyydestä tasolle 2. Viivat tihenevät lyhyitä aallonpituuksia kohti." style="max-width:100%;font-size:24px">
   <rect x="40" y="80" width="430" height="66" rx="3" fill="#1f2933"/>
   <line x1="58" y1="84" x2="58" y2="142" stroke="#6b7480" stroke-width="2" stroke-linecap="butt" stroke-dasharray="5 4"/>
   <rect x="413.5" y="82" width="6" height="62" fill="#c92a2a"/>
@@ -232,11 +232,16 @@ Kunkin sarjan pisin aallonpituus tulee siirtymästä lähimmältä ylemmältä t
   <line x1="470" y1="160" x2="470" y2="167" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <foreignObject x="447.5" y="171.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$700$</div></foreignObject>
   <foreignObject x="498" y="145.5" width="74" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\lambda\ (\text{nm})$</div></foreignObject>
-  <foreignObject x="91.5" y="273.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$6 \to 2$</div></foreignObject>
-  <foreignObject x="121" y="239.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$5 \to 2$</div></foreignObject>
-  <foreignObject x="185" y="205.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$4 \to 2$</div></foreignObject>
-  <foreignObject x="394" y="205.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$3 \to 2$</div></foreignObject>
-  <foreignObject x="35.5" y="205.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\infty \to 2$</div></foreignObject>
+  <line x1="114" y1="202" x2="128" y2="238" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="105.5" y="239.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$6 \to 2$</div></foreignObject>
+  <line x1="143.5" y1="202" x2="204" y2="238" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="181.5" y="239.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$5 \to 2$</div></foreignObject>
+  <line x1="207.5" y1="202" x2="280" y2="238" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="257.5" y="239.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$4 \to 2$</div></foreignObject>
+  <line x1="416.5" y1="202" x2="416.5" y2="238" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="394" y="239.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$3 \to 2$</div></foreignObject>
+  <line x1="58" y1="202" x2="52" y2="238" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="29.5" y="239.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\infty \to 2$</div></foreignObject>
 </svg>
 
 ## Esimerkki
@@ -275,7 +280,7 @@ Vetylampun punainen viiva syntyy, kun vetyatomin elektroni siirtyy tasolta $n = 
 &= 1{,}8889 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} \\
 &= 3{,}0260 \cdot 10^{-19}\,\text{J} \\[6pt]
 &hc = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
-&\quad \cdot 2{,}998 \cdot 10^{8}\,\tfrac{\text{m}}{\text{s}} \\
+&\quad \cdot 2{,}998 \cdot 10^{8}\,\text{m/s} \\
 &= 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m} \\[6pt]
 &\lambda = \frac{hc}{E_3 - E_2} \\
 &= \frac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{3{,}0260 \cdot 10^{-19}\,\text{J}} \\

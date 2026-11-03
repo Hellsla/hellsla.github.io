@@ -71,7 +71,7 @@ def levels():
     # Balmer: m -> 2 in the line's colour
     for x, m in ((262, 3), (302, 4), (342, 5), (382, 6)):
         f.arrow(x, Y(En(m)), x, Y(En(2)) - 1, LINE[m], 3.5, 15)
-    f.tex(362, 333, r"\text{Balmer (näkyvä)}", "start")
+    f.tex(392, 238, r"\text{Balmer (näkyvä)}", "start")
     return f.svg()
 
 
@@ -82,7 +82,7 @@ def absorption():
             "energia on 10,2 eV, täsmälleen tasojen 1 ja 2 erotus: fotoni absorboituu ja elektroni siirtyy tasolle 2. "
             "Keskellä fotonin energia on 11,0 eV, joka ei ole minkään tasoparin erotus: fotoni menee läpi, ja elektroni jää "
             "tasolle 1. Oikealla fotonin energia on 14,0 eV, enemmän kuin ionisaatioenergia 13,6 eV: elektroni irtoaa atomista.")
-    top, k = 46, 17                                 # y of E = 0, px per eV
+    top, k = 60, 16                                 # y of E = 0, px per eV
     Y = lambda e: top - k * e
     f.line(200, 14, 200, 386, RULE, 2, "6 6")
     f.line(400, 14, 400, 386, RULE, 2, "6 6")
@@ -103,7 +103,7 @@ def absorption():
         else:
             photon(f, x0 + 14, 304, ex - 18, Y(En(1)) + 12, HEAT, 3)
             f.circle(ex, Y(En(1)), 8, WHITE, ELECTRON, 2)            # where the electron was
-            yt = Y(En(2)) if i == 0 else 22
+            yt = Y(En(2)) if i == 0 else Y(14.0 - E1)    # freed: E_k = 14,0 eV - 13,6 eV = 0,4 eV, to scale
             f.arrow(ex, Y(En(1)) - 11, ex, yt + 11, ELECTRON, 2.5, 12)
             electron(f, ex, yt)
         f.tex(x0 + 100, 336, r"hf = " + e + r"\,\text{eV}", "middle", HEAT)
@@ -135,13 +135,13 @@ def bohr():
     f.tex(cx, 296, r"n = 3", "middle")
     f.line(cx - 12, cy - 11, 74, 58, MUTED, 1.5)
     f.tex(16, 40, r"n = 1", "start")
-    f.tex(cx + 14, cy + 4, r"p^+", "start", HOT)
+    f.tex(cx + 21, cy + 4, r"p^+", "start", HOT)
     return f.svg()
 
 
 def spectrum():
     """Kaava: the visible Balmer lines on a wavelength scale, with the transition below each line."""
-    f = Fig("fy83-sp", 316, "Vedyn näkyvä emissiospektri mittakaavassa aallonpituusakselilla 350–700 nm: tummalla pohjalla neljä "
+    f = Fig("fy83-sp", 300, "Vedyn näkyvä emissiospektri mittakaavassa aallonpituusakselilla 350–700 nm: tummalla pohjalla neljä "
             "viivaa, 410 nm violetti (siirtymä 6 → 2), 434 nm sininen (5 → 2), 486 nm syaani (4 → 2) ja 656 nm punainen "
             "(3 → 2). Katkoviiva kohdassa 365 nm on sarjan raja, siirtymä äärettömyydestä tasolle 2. Viivat tihenevät "
             "lyhyitä aallonpituuksia kohti.")
@@ -163,9 +163,11 @@ def spectrum():
         f.line(X(t), 160, X(t), 167, INK, 2)
         f.tex(X(t), 186, str(t), "middle", MUTED)
     f.tex(x1 + 28, 160, r"\lambda\ (\text{nm})", "start")
-    for m, row in ((6, 288), (5, 254), (4, 220), (3, 220)):
-        f.tex(X(lam(m, 2)), row, f"{m} \\to 2", "middle")
-    f.tex(X(lim), 220, r"\infty \to 2", "middle", MUTED)
+    for m, xl in ((6, 128), (5, 204), (4, 280), (3, X(lam(3, 2)))):
+        f.line(X(lam(m, 2)), 202, xl, 238, MUTED, 1.5)
+        f.tex(xl, 254, f"{m} \\to 2", "middle")
+    f.line(X(lim), 202, 52, 238, MUTED, 1.5)
+    f.tex(52, 254, r"\infty \to 2", "middle", MUTED)
     return f.svg()
 
 

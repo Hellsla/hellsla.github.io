@@ -80,6 +80,7 @@
       "id": "ennuste-2",
       "stage": "ennusta",
       "type": "choice",
+      "optional": true,
       "title": "Ennuste 2: perustilaan",
       "justify": true,
       "reveal": {
@@ -115,13 +116,13 @@
       "justify": true,
       "reveal": {
         "after": "koe-3",
-        "min": 3
+        "min": 4
       },
-      "prompt": "Perustilassa olevaan vetyatomiin osuu fotoni, jonka energia on $11{,}0\\,\\text{eV}$. Tason $n = 2$ saavuttamiseen tarvitaan $10{,}2\\,\\text{eV}$ ja tason $n = 3$ saavuttamiseen $12{,}1\\,\\text{eV}$. Mitä tapahtuu?",
+      "prompt": "Perustilassa olevaan vetyatomiin osuu fotoni, jonka energia on $11{,}0\\,\\text{eV}$. Tason $n = 2$ saavuttamiseen tarvitaan $10{,}2\\,\\text{eV}$ ja tason $n = 3$ saavuttamiseen $12{,}1\\,\\text{eV}$. Vedyn ionisaatioenergia perustilasta on $13{,}6\\,\\text{eV}$. Mitä tapahtuu?",
       "choices": [
         {
           "text": "Fotoni absorboituu, elektroni siirtyy tasolle $n = 2$ ja ylimääräinen $0{,}8\\,\\text{eV}$ jää atomille liike-energiaksi.",
-          "feedback": "Mallin arvot kumoavat tämän: fotoni $11{,}00\\,\\text{eV}$ menee läpi, ja vain $10{,}20\\,\\text{eV}$ absorboituu. Atomi voi ottaa fotonin vain kokonaan, ja fotonin energian täytyy olla täsmälleen tasojen erotus; ylimäärää ei voi jättää sidotulle elektronille."
+          "feedback": "Mallin arvot kumoavat tämän: fotoni $11{,}00\\,\\text{eV}$ menee läpi, ja $10{,}20\\,\\text{eV}$:n ja $12{,}10\\,\\text{eV}$:n fotonit absorboituvat. Atomi voi ottaa fotonin vain kokonaan, ja fotonin energian täytyy olla täsmälleen tasojen erotus; ylimäärää ei voi jättää sidotulle elektronille."
         },
         {
           "text": "Fotoni ei absorboidu vaan menee atomin ohi, koska sen energia ei ole minkään tasoparin erotus.",
@@ -144,7 +145,7 @@
       "type": "sim",
       "text": "Valitse emissio tai absorptio, aseta tasot ja paina painiketta. Seuraa elektronia Bohrin kuvassa ja energiatasokaaviossa ja katso, mihin viiva syntyy spektriin.",
       "howto": "*Tilanne* valitsee emission tai absorption. **Emissiossa** valitset ylemmän tason $n_\\text{y}$ ($2$–$6$) ja alemman tason $n_\\text{a}$ ($1$–$3$) ja painat *Siirtymä*: elektroni putoaa, fotoni lähtee, ja sen viiva jää spektrinauhaan. **Absorptiossa** valitset atomin tilan $n_\\text{a}$ ja saapuvan fotonin energian $hf$ ja painat *Lähetä fotoni*. Lukemissa näkyvät tasojen energiat, fotonin energia ja aallonpituus sekä absorption tulos. Spektrinauhassa on kolme osaa, joilla kullakin on oma aallonpituusasteikkonsa: ultravioletti, näkyvä valo ja infrapuna. Oranssi kolmio näyttää nykyisen fotonin paikan. *Tyhjennä spektri* poistaa kerätyt viivat. *Nopeus* muuttaa vain animaation tahtia.",
-      "model": "Tasojen energiat ovat annettu tieto $E_n = -\\tfrac{13{,}6\\,\\text{eV}}{n^2}$, ja energian nollakohta on vapaa, levossa oleva elektroni. Bohrin kuvan ratojen säteet ovat kaavamaisia: todellisuudessa säde kasvaa kuten $n^2$. Energiatasokaavio on mittakaavassa tasosta $n = 2$ ylöspäin; tasojen $1$ ja $2$ väliä on lyhennetty. Absorptiossa fotonin energian on oltava tasojen erotus $0{,}03\\,\\text{eV}$:n tarkkuudella; malli laskee tasot $n = 30$ asti, vaikka kuvissa näkyy kuusi. Jokainen fotoni osuu atomiin, joka on tilassa $n_\\text{a}$. Arvot ovat mallin laskemia, eivät mittauksia.",
+      "model": "Tasojen energiat ovat annettu tieto $E_n = -\\tfrac{13{,}6\\,\\text{eV}}{n^2}$, ja energian nollakohta on vapaa, levossa oleva elektroni. Bohrin kuvan ratojen säteet ovat kaavamaisia: Bohrin mallissa säde kasvaa kuten $n^2$. Energiatasokaavio on mittakaavassa tasosta $n = 2$ ylöspäin; tasojen $1$ ja $2$ väliä on lyhennetty. Absorptiossa fotonin energian on oltava tasojen erotus $0{,}03\\,\\text{eV}$:n tarkkuudella; malli laskee tasot $n = 30$ asti, vaikka kuvissa näkyy kuusi. Lähellä arvoa $13{,}6\\,\\text{eV}$ ylemmät tasot ovat niin tiheässä, että perustilasta jokainen liukusäätimen arvo välillä $13{,}20$–$13{,}55\\,\\text{eV}$ osuu jonkin tason erotukseen ja absorboituu. Jokainen fotoni osuu atomiin, joka on tilassa $n_\\text{a}$. Arvot ovat mallin laskemia, eivät mittauksia.",
       "calc": "Emissiossa fotonin energia ja aallonpituus ovat\n\n$$hf = E_\\text{y} - E_\\text{a}, \\qquad \\lambda = \\frac{hc}{E_\\text{y} - E_\\text{a}},$$\n\nmissä energiaero muunnetaan jouleiksi kertomalla luvulla $1{,}602 \\cdot 10^{-19}\\,\\tfrac{\\text{J}}{\\text{eV}}$. Absorptiossa malli etsii tason $m > n_\\text{a}$, jolle $E_m - E_\\text{a} = hf$. Jos $hf \\geq -E_\\text{a}$, elektroni irtoaa, ja sen liike-energia on $E_\\text{k} = hf + E_\\text{a}$."
     },
     {
@@ -189,6 +190,7 @@
       "id": "koe-2",
       "stage": "tutki",
       "type": "experiment",
+      "optional": true,
       "title": "Koe 2: siirtymät perustilaan",
       "intro": "Testaa ennuste 2. Alempi taso on nyt perustila $n_\\text{a} = 1$; muuta ylempää tasoa ja kirjaa ainakin siirtymät $2 \\to 1$ ja $3 \\to 1$. Mihin spektrinauhan osaan viivat osuvat?",
       "initial": {
@@ -265,7 +267,7 @@
           "label": "$E_\\text{k}$ (eV)"
         }
       ],
-      "min": 3
+      "min": 4
     },
     {
       "id": "johtopaatos",
@@ -274,15 +276,13 @@
       "title": "Johtopäätös: mikä määrää viivat?",
       "after": [
         "koe-1",
-        "koe-2",
         "koe-3"
       ],
-      "prompt": "Kirjoita taulukoidesi perusteella: miksi Balmerin sarjan aallonpituudet lyhenevät ja tihenevät, kun lähtötaso nousee? Miksi perustilaan päättyvät siirtymät eivät näy silmälle? Mitkä fotonit perustilassa oleva atomi absorboi?",
-      "model": "Fotonin energia on tasojen erotus $E_\\text{y} - E_\\text{a}$. Kun lähtötaso nousee, erotus kasvaa ($1{,}89\\,\\text{eV}$, $2{,}55\\,\\text{eV}$, $2{,}86\\,\\text{eV}$, $3{,}02\\,\\text{eV}$) ja aallonpituus lyhenee ($656\\,\\text{nm}$, $486\\,\\text{nm}$, $434\\,\\text{nm}$, $410\\,\\text{nm}$). Erot pienenevät, koska ylemmät tasot ovat lähellä toisiaan. Perustilaan päättyvien siirtymien energiat ovat yli $10\\,\\text{eV}$ ja aallonpituudet alle $122\\,\\text{nm}$, joten ne ovat ultraviolettia. Perustilan atomi absorboi vain fotonit, joiden energia on tasojen erotus ($10{,}20\\,\\text{eV}$, $12{,}10\\,\\text{eV}$), ei fotonia $11{,}00\\,\\text{eV}$. Vähintään $13{,}6\\,\\text{eV}$:n fotoni ionisoi, ja ylimäärä jää elektronin liike-energiaksi. Arvot ovat mallin laskemia tasoista $E_n = -\\tfrac{13{,}6\\,\\text{eV}}{n^2}$.",
+      "prompt": "Kirjoita taulukoidesi perusteella: miksi Balmerin sarjan aallonpituudet lyhenevät ja tihenevät, kun lähtötaso nousee? Mitkä fotonit perustilassa oleva atomi absorboi?",
+      "model": "Fotonin energia on tasojen erotus $E_\\text{y} - E_\\text{a}$. Kun lähtötaso nousee, erotus kasvaa ($1{,}89\\,\\text{eV}$, $2{,}55\\,\\text{eV}$, $2{,}86\\,\\text{eV}$, $3{,}02\\,\\text{eV}$) ja aallonpituus lyhenee ($656\\,\\text{nm}$, $486\\,\\text{nm}$, $434\\,\\text{nm}$, $410\\,\\text{nm}$). Erot pienenevät, koska ylemmät tasot ovat lähellä toisiaan. Valinnaisen kokeen 2 arvot näyttävät lisäksi, että perustilaan päättyvien siirtymien energiat ovat yli $10\\,\\text{eV}$ ja aallonpituudet alle $122\\,\\text{nm}$, joten ne ovat ultraviolettia. Perustilan atomi absorboi vain fotonit, joiden energia on tasojen erotus ($10{,}20\\,\\text{eV}$, $12{,}10\\,\\text{eV}$), ei fotonia $11{,}00\\,\\text{eV}$. Vähintään $13{,}6\\,\\text{eV}$:n fotoni ionisoi, ja ylimäärä jää elektronin liike-energiaksi. Arvot ovat mallin laskemia tasoista $E_n = -\\tfrac{13{,}6\\,\\text{eV}}{n^2}$.",
       "criteria": [
         "Selitin aallonpituuden muutoksen tasojen energiaerolla ja kaavalla $\\lambda = \\tfrac{hc}{E_\\text{y} - E_\\text{a}}$.",
         "Perustelin viivojen tihenemisen sillä, että ylemmät tasot ovat lähellä toisiaan.",
-        "Totesin taulukon arvoilla, että perustilaan päättyvät siirtymät ovat ultraviolettia.",
         "Kerroin, että vain tasojen erotuksen suuruinen fotoni absorboituu ja että ionisaatio vaatii vähintään $13{,}6\\,\\text{eV}$."
       ]
     },
@@ -301,7 +301,7 @@
       "type": "reflect",
       "title": "Palaa ennusteisiisi",
       "optional": true,
-      "prompt": "Vertaa ennusteitasi mallin arvoihin. Palaa sitten alun kysymykseen: miksi vetylampun valosta näkyy juuri neljä viivaa? Mitä tapahtuu siirtymille, jotka päättyvät tasoille $n = 1$ ja $n = 3$?",
+      "prompt": "Vertaa ennusteitasi mallin arvoihin. Palaa sitten alun kysymykseen: miksi vetylampun valosta näkyy selvästi juuri neljä viivaa? Mitä tapahtuu siirtymille, jotka päättyvät tasoille $n = 1$ ja $n = 3$?",
       "predictions": [
         "ennuste-1",
         "ennuste-2",
@@ -348,26 +348,26 @@
       "stage": "sovella",
       "type": "numeric",
       "title": "Sovella uuteen tilanteeseen",
-      "prompt": "Kuuman tähden kaasukehässä osa vetyatomeista on viritystilassa $n = 2$. Mikä on pisin aallonpituus, jolla tähden oma valo voi ionisoida tällaisen atomin? Käytä arvoja $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$ ja $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$. Vastaa nanometreinä.",
-      "answer": 365,
-      "unit": "nm",
+      "prompt": "Kuuman tähden kaasukehässä osa vetyatomeista on viritystilassa $n = 4$. Tällaiseen atomiin osuu tähden punaista valoa, jonka aallonpituus on $656\\,\\text{nm}$. Fotoni ionisoi atomin. Kuinka suuri on irronneen elektronin liike-energia? Käytä arvoja $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$ ja $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$. Vastaa elektronivoltteina.",
+      "answer": 1.04,
+      "unit": "eV",
       "tolerance": 0.02,
       "hints": [
-        "Mikä energia tarvitaan, jotta elektroni nousee tasolta $n = 2$ energiaan nolla? Pisin aallonpituus vastaa pienintä riittävää fotonin energiaa.",
-        "Ionisaatioon tilasta $n = 2$ tarvitaan $0 - E_2 = \\tfrac{13{,}6\\,\\text{eV}}{4}$. Fotonille $\\tfrac{hc}{\\lambda} = 0 - E_2$.",
-        "$\\lambda = \\dfrac{hc}{0 - E_2} = \\dfrac{1{,}9865 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m}}{3{,}40 \\cdot 1{,}602 \\cdot 10^{-19}\\,\\text{J}}$."
+        "Laske ensin fotonin energia elektronivoltteina ja tason $n = 4$ energia. Kuinka paljon energiaa elektronin irrottaminen tästä tilasta vaatii?",
+        "Elektroni nousee tasolta $E_4 = -\\tfrac{13{,}6\\,\\text{eV}}{16}$ energiaan nolla, ja fotonin loppuenergia jää liike-energiaksi: $E_\\text{k} = hf + E_4$.",
+        "$hf = \\dfrac{hc}{\\lambda} = \\dfrac{1{,}9865 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m}}{656 \\cdot 10^{-9}\\,\\text{m}} = 3{,}0282 \\cdot 10^{-19}\\,\\text{J}$; muunna tämä elektronivolteiksi ja lisää $E_4 = -0{,}850\\,\\text{eV}$."
       ],
       "mistakes": [
         {
-          "value": 91.2,
-          "feedback": "Käytit ionisaatioenergiaa perustilasta, $13{,}6\\,\\text{eV}$. Atomi on nyt tilassa $n = 2$, josta elektronin irrottamiseen riittää $\\tfrac{13{,}6\\,\\text{eV}}{4} = 3{,}40\\,\\text{eV}$."
+          "value": 1.89,
+          "feedback": "Tämä on fotonin koko energia. Osa siitä kuluu elektronin irrottamiseen tilasta $n = 4$: $E_\\text{k} = hf + E_4 = 1{,}89\\,\\text{eV} - 0{,}850\\,\\text{eV}$."
         },
         {
-          "value": 656,
-          "feedback": "Laskit siirtymän $3 \\to 2$ aallonpituuden. Ionisaatiossa elektroni nousee tasolta $n = 2$ aina energiaan nolla asti, joten energiaero on $3{,}40\\,\\text{eV}$, ei $1{,}89\\,\\text{eV}$."
+          "value": 2.74,
+          "feedback": "Lisäsit irrotusenergian fotonin energiaan. Elektronin irrottaminen kuluttaa energiaa: $E_\\text{k} = hf - 0{,}850\\,\\text{eV}$, koska $E_4 = -0{,}850\\,\\text{eV}$."
         }
       ],
-      "solution": "**Annettu:** atomi tilassa $n = 2$, $E_n = -\\tfrac{13{,}6\\,\\text{eV}}{n^2}$, $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$ ja $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$\n\n**Kysytty:** pisin ionisoiva aallonpituus $\\lambda_\\text{max}$ nanometreinä\n\n**Periaate:** Ionisaatiossa elektroni nousee tasolta $E_2$ energiaan nolla, joten fotonin energian on oltava vähintään $0 - E_2$. Fotonin energia pienenee aallonpituuden kasvaessa, joten pisin kelpaava aallonpituus vastaa juuri tätä energiaa.\n\n**Kaava:** $\\dfrac{hc}{\\lambda_\\text{max}} = 0 - E_2$, josta\n\n$$\\lambda_\\text{max} = \\frac{hc}{0 - E_2}$$\n\n**Muunnokset:** $0 - E_2 = \\tfrac{13{,}6\\,\\text{eV}}{4} = 3{,}40\\,\\text{eV} = 3{,}40 \\cdot 1{,}602 \\cdot 10^{-19}\\,\\text{J} = 5{,}4468 \\cdot 10^{-19}\\,\\text{J}$; lopuksi $1\\,\\text{m} = 10^{9}\\,\\text{nm}$.\n\n**Sijoitus:** Tulo $hc = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s} \\cdot 2{,}998 \\cdot 10^{8}\\,\\text{m/s} = 1{,}9865 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m}$. $\\lambda_\\text{max} = \\dfrac{1{,}9865 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m}}{5{,}4468 \\cdot 10^{-19}\\,\\text{J}} = 3{,}6470 \\cdot 10^{-7}\\,\\text{m} = 364{,}70\\,\\text{nm}$\n\n**Vastaus:** $365\\,\\text{nm}$, kolme merkitsevää numeroa kuten arvossa $13{,}6\\,\\text{eV}$.\n\n**Järkevyys:** Aallonpituus on Balmerin sarjan raja: lyhyempi kuin sarjan lyhin näkyvä viiva $410\\,\\text{nm}$, koska ionisaatio vaatii enemmän energiaa kuin mikään siirtymä tasolle $2$. Perustilasta ionisointiin tarvittaisiin neljä kertaa suurempi energia ja neljäsosa aallonpituudesta, $91{,}2\\,\\text{nm}$."
+      "solution": "**Annettu:** atomi tilassa $n = 4$, $E_n = -\\tfrac{13{,}6\\,\\text{eV}}{n^2}$, valon aallonpituus $\\lambda = 656\\,\\text{nm}$, $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$ ja $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$\n\n**Kysytty:** irronneen elektronin liike-energia $E_\\text{k}$ elektronivoltteina\n\n**Periaate:** Ionisaatiossa elektroni nousee tasolta $E_4$ energiaan nolla, ja koska vapaalla elektronilla ei ole tasoja, fotonin energian ei tarvitse olla tasojen erotus, vaan ylimäärä jää liike-energiaksi. Energia säilyy, joten $hf + E_4 = E_\\text{k}$.\n\n**Kaava:** $hf + E_4 = E_\\text{k}$ ja $hf = \\dfrac{hc}{\\lambda}$, joten\n\n$$E_\\text{k} = \\frac{hc}{\\lambda} + E_4$$\n\n**Muunnokset:** $\\lambda = 656\\,\\text{nm} = 656 \\cdot 10^{-9}\\,\\text{m}$; fotonin energia jouleista elektronivolteiksi sijoittamalla $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$.\n\n**Sijoitus:** $hf = \\dfrac{6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s} \\cdot 2{,}998 \\cdot 10^{8}\\,\\text{m/s}}{656 \\cdot 10^{-9}\\,\\text{m}} = 3{,}0282 \\cdot 10^{-19}\\,\\text{J} = \\dfrac{3{,}0282 \\cdot 10^{-19}}{1{,}602 \\cdot 10^{-19}}\\,\\text{eV} = 1{,}8902\\,\\text{eV}$. $E_4 = -\\dfrac{13{,}6\\,\\text{eV}}{16} = -0{,}850\\,\\text{eV}$. $E_\\text{k} = 1{,}8902\\,\\text{eV} - 0{,}850\\,\\text{eV} = 1{,}0402\\,\\text{eV}$\n\n**Vastaus:** $1{,}04\\,\\text{eV}$, kolme merkitsevää numeroa kuten aallonpituudessa $656\\,\\text{nm}$ ja arvossa $13{,}6\\,\\text{eV}$.\n\n**Järkevyys:** Liike-energia on positiivinen ja pienempi kuin fotonin energia $1{,}89\\,\\text{eV}$, kuten pitää. Perustilasta sama punainen fotoni ei ionisoisi, koska siihen tarvitaan $13{,}6\\,\\text{eV}$: korkealla viritystilassa elektroni on niin heikosti sidottu, että näkyvä valo riittää."
     },
     {
       "id": "harjoitukset",

@@ -17,6 +17,8 @@ a["mis-wrong-nm"] = lam_nm(-En(4))                          # |E_4| = 0,85 eV us
 a["bal-4"] = lam_nm(En(4) - En(2))                          # 486,3 nm
 a["bal-5"] = lam_nm(En(5) - En(2))                          # 434,2 nm
 a["bal-6"] = lam_nm(En(6) - En(2))                          # 410,3 nm
+a["bal-7"] = lam_nm(En(7) - En(2))                          # 397,1 nm: faint, at the violet edge
+a["bal-8"] = lam_nm(En(8) - En(2))                          # 389,0 nm
 a["lyman-limit"] = lam_nm(E1)                               # 91,18 nm
 a["lyman-2"] = lam_nm(En(2) - En(1))                        # 121,6 nm
 a["balmer-limit"] = lam_nm(E1 / 4)                          # 364,7 nm
@@ -35,13 +37,16 @@ a["kert-410"] = h * c / 410e-9 / e                          # 3,02 eV
 for m in (3, 4, 5, 6): a[f"koe1-{m}"] = lam_nm(En(m) - En(2))
 # koe-2: n_a = 1, n_y = 2..6
 for m in (2, 3, 4, 5, 6): a[f"koe2-{m}"] = lam_nm(En(m) - En(1))
-# koe-3: atom at n = 1, photon 10,20 / 11,00 / 12,09 / 14,00 eV
-a["koe3-1209"] = En(3) - En(1)                              # 12,089 eV: the slider value 12,09 eV hits it within 0,02 eV
+# koe-3: atom at n = 1, photon 10,20 / 11,00 / 12,10 / 14,00 eV
+a["koe3-1209"] = En(3) - En(1)                              # 12,089 eV: the slider value 12,10 eV (step 0,05 eV) hits it within 0,03 eV
 a["koe3-14-Ek"] = 14.0 - E1                                 # 0,40 eV
-# siirto: longest wavelength that ionises an atom at n = 2: lambda = hc / 3,40 eV = 364,7 nm -> 365 nm
-a["siirto"] = lam_nm(-En(2))
-a["siirto-m-13-6"] = lam_nm(E1)                             # mistake: used 13,6 eV, 91,2 nm
-a["siirto-m-3-2"] = lam_nm(En(3) - En(2))                   # mistake: the red line 656 nm
+# sim model box: from n = 1 every slider value 13,20 ... 13,55 eV (step 0,05) is within 0,03 eV of some E_m - E_1, m <= 30
+a["crowd-all-hit"] = all(any(abs(En(m) - En(1) - f / 100) <= 0.03 for m in range(2, 31)) for f in range(1320, 1356, 5))
+# siirto: a 656 nm photon ionises an atom at n = 4: hf = 1,8902 eV, E_k = hf + E_4 = 1,8902 eV - 0,850 eV = 1,04 eV
+a["siirto-hf"] = h * c / 656e-9 / e                         # 1,8902 eV
+a["siirto"] = h * c / 656e-9 / e + En(4)                    # 1,0402 eV -> 1,04 eV
+a["siirto-m-hf"] = h * c / 656e-9 / e                       # mistake: the whole photon energy, 1,89 eV
+a["siirto-m-plus"] = h * c / 656e-9 / e - En(4)             # mistake: 0,850 eV added, 2,74 eV
 # virhe: 4 -> 2 with |E_4| = 0,85 eV gives 1459 nm; right 486 nm
 a["virhe-wrong"] = lam_nm(-En(4))
 a["virhe-right"] = lam_nm(En(4) - En(2))

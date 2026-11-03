@@ -17,7 +17,7 @@ a["fy8-3-L1-04"] = 0 - En(3)                              # ionisation from n = 
 a["fy8-3-L1-05"] = 1.89 * e / h / 1e12                    # f = E / h = 1,89 · 1,602e-19 J / 6,626e-34 J s = 4,57e14 Hz = 457 THz
 # Level 2: two steps, a conversion or a rearrangement
 a["fy8-3-L2-01"] = lam_nm(En(5) - En(2))                  # 5 -> 2: dE = 2,856 eV, lambda = 434,2 nm -> 434 nm
-dE_410 = h * c / 410e-9 / e                               # 410 nm line ends at n = 2: dE = 3,0237 eV
+dE_410 = h * c / 410e-9 / e                               # 410 nm line ends at n = 2: dE = 3,0244 eV
 a["fy8-3-L2-02"] = (E1 / (E1 / 4 - dE_410)) ** 0.5        # E_y = -3,40 eV + 3,024 eV = -0,376 eV; n² = 13,6 / 0,376 = 36,2 -> n = 6,02 -> 6
 a["fy8-3-L2-03"] = lam_nm(-3.0 - (-5.0))                  # figure fy8-3/levels-task: E_3 = -3,0 eV -> E_2 = -5,0 eV, dE = 2,0 eV, lambda = 620 nm
 a["fy8-3-L2-04"] = h * c / 80.0e-9 / e - E1               # 80,0 nm photon: E = 15,50 eV; E_k = 15,50 eV - 13,6 eV = 1,90 eV

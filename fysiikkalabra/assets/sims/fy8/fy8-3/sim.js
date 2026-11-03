@@ -132,7 +132,13 @@ new p5((p) => {
     for (let n = 1; n <= 6; n++) {
       p.noFill(); p.stroke(...(n === S.na ? INKC : RULEC)); p.strokeWeight((n === S.na ? 2.5 : 1.8) * sk);
       p.circle(bx, by, 2 * R(n));
-      lab('$' + n + '$', bx, by + R(n) - 3 * sk, 'c', MUTEDC);
+    }
+    // each ring's number sits on the ring's lowest point over a patch of the panel's background (clear of the nucleus)
+    for (let n = 1; n <= 6; n++) {
+      const yc = by + R(n), u = Math.min(1, Math.max(0, yc / G.panel[3]));
+      p.textSize(fh); const w = p.textWidth('$' + n + '$') + 6 * sk;
+      p.noStroke(); p.fill(...PAPERC.map((v) => v + (255 - v) * u)); p.rect(bx - w / 2, yc - 0.45 * fh, w, 0.9 * fh, 3 * sk);
+      lab('$' + n + '$', bx, yc + 0.33 * fh, 'c', MUTEDC);
     }
     p.fill(...NUC); p.stroke(...INKC); p.strokeWeight(1.5 * sk); p.circle(bx, by, 11 * sk);
     const L = electronLevel(S);

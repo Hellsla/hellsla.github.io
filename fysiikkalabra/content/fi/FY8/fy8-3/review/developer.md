@@ -1,11 +1,10 @@
 VERDICT: DONE
 
-Round 1, draft. `check_lesson.py fy8-3`: every line ok (lint 0 errors; 3 warnings for the spectral line colours, which the FY8 brief asks for).
+Fix round 1 (all Blocking + the listed Polish).
 
-- `meta.json`: unchanged (sim true, four glossary terms).
-- `lesson.md`: hero (discharge tube, grating, four lines); Ydinajatus in three parts (quantised levels, emission/absorption/ionisation, Bohr's model as a historical step and its limits) with figures `levels` (to scale, shortened gap below n = 2), `absorption`, `bohr` (radii 1 : 4 : 9); `## Kaava: Vetyatomin energiatasot ja siirtymän fotoni` with a series table and the `spectrum` figure; worked example 3 → 2 = 656 nm in seven stages; two misconceptions; summary.
-- `inquiry.json`: hook, retrieval, three predictions (Balmer spacing, 2 → 1 is UV, an 11,0 eV photon passes), sim with three guided experiments, a conclusion, theory, reflection, worked example, Etsi virhe, transfer (365 nm), three checks, exit.
-- `exit-ticket.json`: 2 questions. `exercises/`: 5/4/3 with complete solutions, one figure task (`fy8-3/levels-task`).
-- `lessons/FY8/fy8-3/`: `answers.py`, `lesson-answers.py`, `figures.py`, `sim-spec.md`.
-- `assets/sims/fy8/fy8-3/sim.js` (new: emission and absorption modes, Bohr picture, level diagram, spectrum strip, stacked on a phone) + `tests/sims/fy8-3.json` (34 assertions).
-- `lang/fi.json` `sims.fy8-3`; `glossary.json`: four new terms.
+- inquiry.json: sim `model` "Bohrin mallissa säde kasvaa kuten $n^2$" + note that near $13{,}6\,\text{eV}$ every slider value $13{,}20$–$13{,}55\,\text{eV}$ is absorbed (levels crowd); ennuste-3 distractor feedback names both absorbed photons; ennuste-3 prompt gives the $13{,}6\,\text{eV}$ ionisation energy; koe-3 and its reveal `min` 4; ennuste-2 and koe-2 optional (johtopäätös `after` koe-1, koe-3; its UV question and criterion dropped, model sentence marked as from koe 2); pohdi "näkyy selvästi juuri neljä viivaa"; siirto rewritten: $656\,\text{nm}$ photon ionises an atom at $n = 4$, $E_\text{k} = 1{,}04\,\text{eV}$ (hints, mistakes 1,89 / 2,74, full solution).
+- lesson.md: Balmer sentence "neljä kirkasta … seuraavat ($397$, $389\,\text{nm}$) himmeitä violetilla reunalla"; Miksi line "selvästi näkyväksi"; "vetyatomin koon"; example $\text{m/s}$.
+- figures.py (regenerated): levels Balmer label beside its arrows; absorption E = 0 lower, freed electron at $E_\text{k} = 0{,}4\,\text{eV}$ to scale; bohr p⁺ off orbit; spectrum transition labels in one row with leader lines.
+- sim.js: ring numbers on each ring's lowest point over a background patch, "1" clear of the nucleus.
+- lesson-answers.py: siirto, Balmer 7/8, crowding check, 12,10 eV comment. answers.py: L2-02 comment 3,0244 eV.
+- exercises.json: L2-04 wording, L3-01 per-level-pair counting; solutions.md L3-01 single-collision assumption. Answers unchanged.
