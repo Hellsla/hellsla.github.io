@@ -1,14 +1,16 @@
-VERDICT: FAIL
-CONTENT-HASH: 9c3c372f58e1bbd9
+VERDICT: PASS
+CONTENT-HASH: 5b563d37c08fe2f9
 
 ## Blocking
-- **B** meta.json:27 — "virtasilmukka": "Kentässä sen vastakkaisiin sivuihin kohdistuvat vastakkaiset voimat" holds only in a homogeneous field; the same lesson (lesson.md:132, §Kaiutin) shows the counterexample: in the speaker's radial field every part of the closed coil is pushed the same way, and the lesson says the forces are opposite only "Homogeenisessa ... kentässä". The key_concepts block lists kaiutin right after, so the two contradict each other. I rated this C last round; on rereading against §Kaiutin it is an unstated condition. Fix: "Homogeenisessa kentässä sen vastakkaisiin sivuihin kohdistuvat vastakkaiset voimat."
 
 ## Polish
+- glossary.json "virtasilmukka" — "Magneettikentässä silmukan vastakkaisiin sivuihin kohdistuu vastakkaissuuntaiset voimat" carries the same unstated condition just fixed in meta.json (false in the speaker's radial field, lesson.md:132). The glossary is shared and outside this lesson's hash, so it does not block here — add "Homogeenisessa" there too when the glossary is next edited.
 
 ## Checked
-- Lesson body, inquiry.json and sim unchanged since the passed version (git diff: only meta.json); key_concepts judged in full.
-- meta.json:31 "kaiutin": alternating current in the coil now stated as the cause, "kartio" matches the lesson; last round's B finding resolved.
-- meta.json:23 "sähkömoottori": field turns the current loop, electrical → kinetic energy: correct (losses to internal energy omitted, C).
-- meta.json:35 "magneettinen voima" on a current-carrying wire: correct and consistent with fy7-2's moving-charge wording.
-- lesson.md:86 motor: opposite forces on the two sides in the pole-gap field, commutator: consistent with the key concept once qualified.
+- git diff since the passed body (2bf948f7..HEAD): only meta.json:27 changed; hash identical at start and end.
+- meta.json:27 "virtasilmukka": "Homogeenisessa kentässä ... vastakkaiset voimat" — last round's B finding resolved, now consistent with lesson.md:132 (radial field, all forces along the axis) and lesson.md:86 (pole-gap motor field).
+- meta.json:23 "sähkömoottori": field turns the current loop, electrical → kinetic energy; losses omitted (C).
+- meta.json:31 "kaiutin": alternating current in the coil as the cause, coil and cone driven back and forth, cone makes the sound; matches lesson.md:132.
+- meta.json:35 "magneettinen voima": force of a field on a current-carrying wire; consistent with lesson.md:174 and fy7-2.
+- Key concepts agree with each other and with the Tiivistelmä (lesson.md:314).
+- Spot recompute with own formulas: worked example F = 6,98 N ≈ 7,0 N; sim Δm(6,0 A) = 2,45 g; jumper cables 0,60 N; check-2 0,40 / 0,20 N; virhe 0,15 N; exit ticket 0,30 N — all agree with lesson-answers.py.
