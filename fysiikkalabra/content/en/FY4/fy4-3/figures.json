@@ -11,5 +11,15 @@
  "kärry A": "cart A",
  "kärry B": "cart B",
  "Mallikuvio. Vasemmalla tilannekuva: lamppu roikkuu paikallaan katosta pystysuoran johdon varassa. Oikealla lampun voimakuvio, lamppu suorakulmiona: paino G keskipisteestä alas ja johdon jännitysvoima T yläpinnasta ylös, yhtä pitkinä. Muita voimia ei ole.": "Model diagram. On the left the situation picture: a lamp hangs at rest from the ceiling on a vertical cord. On the right the force diagram of the lamp, the lamp as a rectangle: the weight G down from the centre and the tension T of the cord up from the top surface, equally long. There are no other forces.",
- "v": "d"
+ "v": "d",
+ "F_v": "F_d",
+ "F_i": "F_d",
+ "F_KL": "F_BS",
+ "F_AP": "F_CT",
+ "F_VU": "F_WS",
+ "G_k": "G_c",
+ "F_n": "F_b",
+ "G_v": "G_s",
+ "F_o": "F_a",
+ "G_m": "G_p"
 }

@@ -1,13 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: afc0e706719cc159
+CONTENT-HASH: 9042a4a4fafbdf5e
 
 ## Blocking
 
 ## Polish
-- The solutions write division as " : " (e.g. $a = T : m_1$, $a = 20\,\text{N} : 5.0\,\text{kg}$), a Finnish convention. English usually writes "/" or a fraction, but check_i18n requires the formulas to match the Finnish exactly; change the Finnish source first if the teacher wants it.
 
 ## Checked
-Read each exercise and solution as a student: situation first, question last, the draw-the-diagram instruction kept where the Finnish has it, level 1/2/3 order unchanged.
-Every solution is complete (12 solutions, 108 labelled parts, same as the Finnish), with a justified significant-figure statement and a reasonableness check.
-Nothing was added or dropped; wording is plain and close to the Finnish.
-Rechecked the later change to task fy4-13-L2-04: the Substitution line now factors the units, matches the Finnish change exactly, and nothing else changed; check_i18n clean.
+Full re-review after the malli-ketju label nudge (figures.py lab= of T_1 and upper T_2; nothing else changed since the last pass). Exercise texts and solutions judged against the reviewed Finnish source: every number in exercises.json (119) and solutions.md (620) equals the Finnish; L2-01 task, solution and voimakuvio blocks match the Finnish and the figure. Rendered malli-ketju in the opened L2-01 solution at 360 px: translated captions and labels readable and clear of each other, arrows to scale (T_1 88 px, G_1 49, T_2 33 in both diagrams, G_2 29,5 at S = 0,10), translated description matches the drawing. Answers recomputed: correct. check_i18n 0 errors.

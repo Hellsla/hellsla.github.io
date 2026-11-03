@@ -444,6 +444,8 @@ At every step, part of the energy turns into thermal energy, which is transferre
 ### Joule
 The symbol of energy is $E$ and its unit is the joule, whose symbol is J. One joule is a small amount of energy: it is roughly what is needed to lift an apple of about $0.1\,\text{kg}$ by one metre. In this chapter you learn the size of the joule through examples.
 
+<figure class="unit-photo"><img src="pics/fy2/artemis-i-launch.webp" alt="A rocket lifts off from its launch pad at night above a bright flame and a huge cloud of smoke."><figcaption>Launch of the Artemis I rocket in Florida in November 2022. The chemical energy of the fuel turns into the rocket's kinetic energy, heat, light and sound.</figcaption></figure>
+
 ## Formula: Unit of energy and its multiples
 Everyday energies are large numbers when given in joules, so we use prefixes (chapter *Quantities, units and the SI system*): kilo (k), mega (M), giga (G) and tera (T). Each of them is a thousand times the previous one:
 ```latex

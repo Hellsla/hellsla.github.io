@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 43de509f8395fe82
+CONTENT-HASH: 0b734e8e58dc2fe2
 
 ## Blocking
 
@@ -14,3 +14,5 @@ check_latex, figures --check --lang en and check_layout (360 px) pass; figure la
 
 ## Follow-up (orchestrator, 2026-10-30)
 - The simulation canvas label for braking distance now comes from lang (`sims.fy4-11.lab_sj`): en shows $s_\text{b}$, matching the en readouts and lesson (the Polish item above). The Finnish and fi-easy resolved code is unchanged.
+
+Delta review: leftover Finnish words in en names/labels/sim bar labels/figure caption are now English and match the Finnish meaning; no blocking issue.

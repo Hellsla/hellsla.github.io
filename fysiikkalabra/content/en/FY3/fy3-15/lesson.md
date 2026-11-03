@@ -142,6 +142,8 @@ In combined heat and power production the heat of the condenser is led into the 
 
 The overall efficiency rises in combined production to as much as 85–$90\,\%$, but electricity and heat are not equally valuable. Electricity can be used for anything, and it can be transmitted hundreds of kilometres. District heating is good only for heating, and its network reaches only a town. That is why the ratio of electricity to heat in a combined heat and power plant is chosen according to the need for heat: in summer little heat is needed and the plant produces almost only electricity, in winter in frosty weather a lot of heat is needed.
 
+<figure class="unit-photo"><img src="pics/fy3/nesjavellir.webp" alt="White power plant buildings in a green valley among mountains, with a tall white cloud rising from one of them."><figcaption>The Nesjavellir geothermal power plant in Iceland produces electricity and district heat. The cloud rising from the plant is condensed water vapour that carries waste heat to the surroundings.</figcaption></figure>
+
 ## Formula: Efficiency of a power plant
 The efficiency of one step or of the whole plant is the ratio of the useful power to the power brought in, and the power of waste heat is the part that is not put to use:
 ```latex

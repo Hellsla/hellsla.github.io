@@ -444,6 +444,8 @@ Joka vaiheessa osa energiasta muuttuu lämpöenergiaksi. Lämpöenergia siirtyy 
 ### Joule
 Energian symboli on $E$. Energian yksikkö on joule, ja sen merkki on J. Yksi joule on pieni energia. Sen verran energiaa tarvitaan suunnilleen siihen, että nostat omenan metrin verran ylöspäin. Omena painaa noin $0{,}1\,\text{kg}$. Tässä luvussa opit joulen suuruuden esimerkkien avulla.
 
+<figure class="unit-photo"><img src="pics/fy2/artemis-i-launch.webp" alt="Raketti nousee yöllä. Sen alla on kirkas liekki ja iso savupilvi."><figcaption>Artemis I -raketti lähti Floridasta marraskuussa 2022. Polttoaineen kemiallinen energia muuttuu liike-energiaksi, lämmöksi, valoksi ja ääneksi.</figcaption></figure>
+
 ## Kaava: Energian yksikkö ja kerrannaisyksiköt
 Arjen energiat ovat jouleina isoja lukuja. Siksi käytetään etuliitteitä (luku *Suureet, yksiköt ja SI-järjestelmä*): kilo (k), mega (M), giga (G) ja tera (T). Jokainen etuliite on tuhatkertainen edelliseen verrattuna:
 ```latex

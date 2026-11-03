@@ -146,7 +146,7 @@
         "m2": "0.4"
       },
       "names": {
-        "tyyppi": "tilanne",
+        "tyyppi": "situation",
         "m1": "mass m_1",
         "m2": "mass m_2",
         "v1": "initial velocity v_1",
@@ -227,7 +227,7 @@
         "m2": "0.4"
       },
       "names": {
-        "tyyppi": "tilanne",
+        "tyyppi": "situation",
         "m1": "mass m_1",
         "m2": "mass m_2",
         "v1": "initial velocity v_1",
@@ -311,7 +311,7 @@
         "m2": "0.2"
       },
       "names": {
-        "tyyppi": "tilanne",
+        "tyyppi": "situation",
         "m1": "mass m_1",
         "m2": "mass m_2"
       },

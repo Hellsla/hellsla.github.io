@@ -26,9 +26,9 @@ it), and the pictures the text refers to (pics/<course>/<file>, shared/pics/<fil
 output folder, so every reference is relative and works on GitHub Pages under any base path. FY3's simulations
 stay in their lesson folders and keep their <id>-sim.js URLs.
 """
-import json, os, sys, re, shutil, pathlib, atexit, html as _h, markdown
+import hashlib, json, os, sys, re, shutil, pathlib, atexit, html as _h, markdown
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent)); from reviews import status as review_status, published_exercises, WorkTree
-import answers_shown, courses, fbdspec, figcat, guides, i18n, inquiry, investigations, local_courses, mathlayout, module_icons, practice, reading_tips, svgids, units
+import answers_shown, concept_cards, courses, fbdspec, figcat, guides, i18n, inquiry, investigations, local_courses, mathlayout, module_icons, practice, reading_tips, svgids, units
 from i18n import t as T
 
 ROOT = pathlib.Path(os.environ.get("FYSIIKKALABRA_ROOT") or pathlib.Path(__file__).resolve().parents[1])   # tests build a copy
@@ -101,8 +101,8 @@ def staged_example(lesson_html):
     """Worked example in stages. In lesson.md the solution of `## Esimerkki` is split by lines `<!-- vaihe -->`:
     the part before the first marker is the problem, each later part one stage of the solution. The page shows
     the problem and stage 1, and a button reveals the next stage (lesson.js). Without JavaScript, and in print,
-    every stage is visible. The problem sits in its own framed box (.example-task); on a wide screen it stays in view
-    beside the steps (site.css .example)."""
+    every stage is visible. The problem sits in its own framed box (.example-task), the steps under it in the reading
+    column at every width (site.css .example, teacher 2026-11-03)."""
     m = re.search(rf"(<h2[^>]*>{re.escape(T('sections.Esimerkki'))}</h2>)(.*?)(?=<h2|<section|\Z)", lesson_html, flags=re.S)
     if not m or STEP not in m.group(2): return lesson_html
     parts = [p.strip() for p in m.group(2).split(STEP)]
@@ -159,6 +159,39 @@ def fig_side(text_html, svg):
     return 0.6 <= text_height(text_html) / fig_h <= 1.5
 
 
+PHOTO = re.compile(r'<figure class="unit-photo"><img src="((?:pics/[a-z0-9]+|shared/pics)/[^"]+)"([^>]*)>(?:<figcaption>(.*?)</figcaption>)?</figure>', re.S)
+
+
+def photo_credits(ref):
+    """The credit of a photograph pics/<course>/<file> from that folder's photos.json (teacher 2026-11-03: FY1–FY3
+    photos as in FY14): {file: {title, creator, source, licence, licence_url?, width, height, edit, checked}}; edit (crop, resize) and
+    checked (the date the licence was checked) are the record, not shown."""
+    f = courses.pic_source(ref).parent / "photos.json"
+    data = json.loads(f.read_text()) if f.is_file() else {}
+    c = data.get(ref.rsplit("/", 1)[1])
+    if not c: sys.exit(f"{ref}: a photograph needs its credit in {f.relative_to(ROOT)} (title, creator, source, licence, width, height)")
+    return c
+
+
+def photos(html):
+    """(html, credits section) of a lesson's photographs: each `<figure class="unit-photo"><img src alt><figcaption>`
+    written in the text gets its size, lazy loading and a short credit under the caption from photos.json, and the
+    page ends with the full credits (the FY14 units' form, scripts/units.py tail_html)."""
+    used = []
+    def one(m):
+        ref, attrs, cap = m.group(1), m.group(2), m.group(3) or ""
+        c = photo_credits(ref); used.append(c)
+        return (f'<figure class="unit-photo"><img src="{ref}"{attrs} width="{c["width"]}" height="{c["height"]}" loading="lazy" decoding="async">'
+                f'<figcaption>{cap} <span class="photo-credit">{T("lesson.photo_by")}: {esc(c["creator"])}, {esc(c["licence"])}</span></figcaption></figure>')
+    html = PHOTO.sub(one, html)
+    if not used: return html, ""
+    items = "".join(f'<li><strong>{esc(c["title"])}</strong>. {esc(c["creator"])}. '
+                    + f'<a href="{esc(c["source"])}">{T("units.credit_source")}</a>, '
+                    + (f'<a href="{esc(c["licence_url"])}">{esc(c["licence"])}</a>' if c.get("licence_url") else esc(c["licence"]))
+                    + "</li>" for c in used)
+    return html, f'<section class="unit-credits" id="credits"><h2>{T("lesson.photos")}</h2><ul>{items}</ul></section>'
+
+
 def fi(x):
     """Numbers with a decimal comma in page text (JSON keeps the point)."""
     return str(x).replace(".", T("format.decimal")).replace("-", "−") if isinstance(x, (int, float)) else str(x)   # true minus sign
@@ -205,7 +238,8 @@ def example_md(lesson_md):
     def stage(part):
         h = re.match(r"\s*\*\*([^*\n]+?)[:.]\*\*", part)
         if not h or h.group(1).strip() not in T("lesson.solution_display_steps"): return part
-        return part[:h.end()] + " " + mathlayout.display_chains(part[h.end():]) + "\n\n"
+        body = mathlayout.display_chains(part[h.end():])
+        return part[:h.end()] + ("\n\n" if body.startswith("<div") else " ") + body + "\n\n"   # a block is not set inside the label's paragraph
     return lesson_md[:m.start(1)] + STEP.join(stage(p) for p in m.group(1).split(STEP)) + lesson_md[m.end(1):]
 
 
@@ -448,6 +482,8 @@ def build_language(lang):
         try: rs = review_status(folder)
         except ValueError as e: sys.exit(str(e))
         meta["state"] = rs["state"]; states[meta["id"]] = rs
+        tr = folder / "figures.json"                                               # force-diagram symbols in this language
+        fbdspec.SYMBOLS = {k: v for k, v in json.loads(tr.read_text()).items() if re.fullmatch(r"[A-Z]_\w+", k)} if tr.exists() else {}
         if rs["state"] == "draft" and not (only or build_all): continue   # publish only lessons whose reviews are current
         missing = [f for f in ("lesson.md", "exit-ticket.json") if not (folder / f).exists()]
         if (only or build_all): missing += [f"exercises/{f}" for f in courses.EXERCISE_FILES if not courses.lesson_file(folder, f).exists()]
@@ -478,6 +514,7 @@ def build_language(lang):
             for q in exit_q) + "</ol>"
         lesson_md = (folder / "lesson.md").read_text()
         lesson_html = staged_example(fig_rows(named_sections(nbsp_units(render_md(example_md(lesson_md))))))
+        lesson_html, photo_tail = photos(lesson_html)
         inq = inquiry.load(folder)
         if inq is not None:
             errs = inquiry.validate(folder, inq, lesson_md)
@@ -513,7 +550,7 @@ def build_language(lang):
                    + f'<a href="#exit">{inquiry.exit_title()}</a><a href="#exercises">{inquiry.exercises_title()}</a>')
             main = (f'<article id="teoria">{lesson_html}</article>\n'
                     f'<section id="exit"><h2>{inquiry.exit_title()}</h2>{exit_items}</section>\n'
-                    f'<section id="exercises"><h2>{inquiry.exercises_title()}</h2>{howto if ex else ""}{ex_html}</section>')
+                    f'<section id="exercises"><h2>{inquiry.exercises_title()}</h2>{howto if ex else ""}{ex_html}</section>{photo_tail}')
         else:                                             # inquiry layout: the same parts placed by inquiry.json (scripts/inquiry.py)
             lesson_html = lesson_html.replace("<!-- sim -->", "")
             pieces = re.split(r"(?=<h2[ >])", lesson_html)
@@ -526,11 +563,11 @@ def build_language(lang):
             parts = {"intro": intro, "sections": sections, "sim": sim, "exercises": f'{howto if ex else ""}{ex_html}',
                      "exit": f'<div id="exit"><h3>{inquiry.exit_title()}</h3>{exit_items}</div>'}
             body, toc = inquiry.render(folder, inq, parts, lambda t: nbsp_units(render_md(t)))
-            main = f'<article id="teoria" class="inquiry">{body}</article>'
+            main = f'<article id="teoria" class="inquiry">{body}{photo_tail}</article>'
         skey = (meta["id"] if where[0] == "lesson" else where[1].name) if where else None   # the sim's block of lang "sims"
         html = (texts(tpl).replace("{{title}}", esc(meta["title"])).replace("{{course}}", meta["course"]).replace("{{notice}}", notice(meta["state"]))
                 .replace("{{strings}}", strings_block(skey)).replace("{{back_to_course}}", esc(T("site.back_to_course", course=meta["course"])))
-                .replace("{{toc}}", toc).replace("{{main}}", main + f"<!--fl-chapter-nav:{meta['id']}-->")
+                .replace("{{toc}}", toc).replace("{{main}}", main + concept_cards.lesson_link(meta["course"], meta["id"], T, UP) + f"<!--fl-chapter-nav:{meta['id']}-->")
                 .replace("{{scripts}}", '<script src="inquiry.js"></script>' if inq else "")
                 .replace("{{description}}", esc(description_of(meta, lesson_md))).replace("{{url}}", URL + name)
                 .replace("{{home}}", HOME).replace("{{languages}}", languages_nav(name)))
@@ -538,6 +575,7 @@ def build_language(lang):
         built.setdefault(meta["course"], []).append(meta)
         print("built", meta["id"], f"({meta['state']})")
 
+    fbdspec.SYMBOLS = {}                                                           # the pages after the lessons: specs as written
     # Sovella itsenäisesti: one page per course with module-end tasks (scripts/practice.py, teacher 2026-10-28), published
     # like a lesson only when both its reviews pass; a preview builds it with `build.py <COURSE>-sovella` or --all.
     practice_built = {}
@@ -618,6 +656,7 @@ def build_language(lang):
                 + f'<h2>{T("site.course_lessons")}</h2><ol class="lessons">{items}</ol>'
                 + (f'<h2>{T("practice.title")}</h2><p>{T("practice.course_lead")}</p><ul class="lessons practice-link"><li class="live">'
                    f'<a href="{practice.page_name(code)}">{T("practice.title")}</a> <span class="count">{practice_built[code]}</span></li></ul>' if code in practice_built else "")
+                + concept_cards.module_link(code, T, UP)   # Käsitetakomo, the course's topic menu (teacher 2026-11-03)
                 + (f'<h2>{T("site.course_goals")}</h2><details class="goals"><summary>{T.count("site.course_goals_show", len(mod.get("tavoitteet", [])))}</summary>'
                    f'<p>{T("site.course_goals_lead")}</p><ul>{goals}</ul></details>' if goals else ""))
         desc = T("site.course_description", code=code, title=mod["title"], done=done, n=len(slots))
@@ -721,6 +760,7 @@ def build_language(lang):
         f'<p class="section-lead">{T("site.modules_lead")}</p><ul class="mod-list">{catalogue}</ul></section>'
         + (f'<section class="local-courses" aria-labelledby="h-local"><h2 id="h-local">{T("site.local_courses")}</h2>'
            f'<p class="section-lead">{T("site.local_courses_lead")}</p><ul class="mod-list">{local_rows}</ul></section>' if local_rows else "")
+        + concept_cards.home_section(T, UP)   # Käsitetakomo, the concept cards beside the site (teacher 2026-11-03, scripts/concept_cards.py)
         + (f'<section class="upcoming" aria-labelledby="h-upcoming"><h2 id="h-upcoming">{T("site.upcoming")}</h2>'
            f'<p class="section-lead">{T("site.upcoming_lead")}</p><ul class="up-list">{upcoming}</ul></section>' if upcoming else "")
         # one study guide: the stages with the names the lessons use (lang inquiry.stage_*), where to start, more tips behind a disclosure
@@ -754,11 +794,21 @@ def build_language(lang):
           f"{sum(m['state'] == 'draft' for ms in built.values() for m in ms)} draft" + (f", {len(removed)} removed: {', '.join(removed)}" if removed else "") + ")")
 
 
+if concept_cards.errors(): sys.exit("\n".join(["ERROR: Käsitetakomo links (scripts/concept_cards.py):"] + concept_cards.errors()))
 LANGS = i18n.languages()                          # fi at site/, every other language at site/<lang>/
 OUTS = {lang: SITE if lang == i18n.SOURCE else SITE / lang for lang in LANGS}
 for lang in LANGS: build_language(lang)
 link_languages()
 i18n.set_lang(i18n.SOURCE)
+# Cache busting (teacher 2026-11-03: a page fetched just after a deploy showed new HTML with yesterday's cached site.css):
+# every link to a shared stylesheet or script carries ?v=<first 8 hex of its SHA-256>, so a changed file is a new URL.
+SHARED = ("site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js", "investigation.js", "invfilter.js", "padstore.js")
+_ver = {f: hashlib.sha256((SITE / f).read_bytes()).hexdigest()[:8] for f in SHARED if (SITE / f).is_file()}
+_ref = re.compile(r'((?:href|src)="(?:\.\./)*)(' + "|".join(re.escape(f) for f in _ver) + r')(?:\?v=[0-9a-f]*)?"')
+for _page in SITE.rglob("*.html"):
+    if "vendor" in _page.relative_to(SITE).parts: continue
+    _old = _page.read_text(); _new = _ref.sub(lambda m: f'{m[1]}{m[2]}?v={_ver[m[2]]}"', _old)
+    if _new != _old: _page.write_text(_new)
 if SITE.name == "site.tmp":                      # check the render, then swap it in; the old site comes back if the swap fails
     expected += ["site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js", "investigation.js", "invfilter.js", "padstore.js"] + assets
     broken = [n for n in expected if not (SITE / n).is_file() or (SITE / n).stat().st_size == 0]

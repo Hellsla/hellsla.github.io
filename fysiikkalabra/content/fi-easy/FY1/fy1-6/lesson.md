@@ -286,6 +286,8 @@ missä $v$ on nopeus alaspäin ($\text{m/s}$), $g = 9{,}81\,\text{m/s}^2$ on put
 
 Putoavan kappaleen $(t, v)$-kuvaaja on siis origon kautta kulkeva nouseva suora. Suoran kulmakerroin $\tfrac{\Delta v}{\Delta t}$ on putoamiskiihtyvyys. Voit siis lukea $g$:n kuvaajasta kahdesta pisteestä, jotka ovat kaukana toisistaan. Kiihtyvyys on vakio, joten mille tahansa aikavälille pätee $\Delta v = g\,\Delta t$. Nopeus kasvaa sekunnissa $9{,}81\,\text{m/s}$ myös silloin, kun kappale ei lähtenyt levosta.
 
+<figure class="unit-photo"><img src="pics/fy1/bouncing-ball-strobe.webp" alt="Keltaisen pallon kuvia kahtena kaarena mustalla taustalla."><figcaption>Pomppiva pallo on kuvattu yhtä pitkin väliajoin. Kun pallo putoaa, sen nopeus kasvaa. Siksi kuvien välit kasvavat.</figcaption></figure>
+
 ## Esimerkki
 Kivi pudotetaan levosta sillalta. Se osuu veteen $1{,}5\,\text{s}$ myöhemmin. Mikä on kiven nopeus, kun se osuu veteen? Anna nopeus yksiköissä $\text{m/s}$ ja $\text{km/h}$. Ilmanvastus jätetään huomiotta.
 

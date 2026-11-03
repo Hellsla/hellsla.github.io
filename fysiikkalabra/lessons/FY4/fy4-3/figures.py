@@ -43,7 +43,7 @@ def skater(f, x, yf, s, facing, coat, trousers=INK, hand=None):
         f.path(f"M{n(hip[0])},{n(hip[1])} L{n(foot[0])},{n(foot[1])}", stroke=trousers, w=20 * s, extra='stroke-linecap="round"')
         f.path(f"M{n(foot[0] - d * 8 * s)},{n(yf - 6 * s)} h{n(d * 26 * s)}", stroke=INK, w=10 * s, extra='stroke-linecap="round"')
         f.line(foot[0] - d * 14 * s, yf, foot[0] + d * 24 * s, yf, METAL_EDGE, max(2, 3 * s), cap="round")
-    f.path(f"M{n(hip[0] - 22 * s)},{n(hip[1] + 6 * s)} Q{n(x - d * 4 * s)},{n(yf - 190 * s)} {n(sh[0] + d * 16 * s)},{n(sh[1])} "
+    f.path(f"M{n(hip[0] - d * 22 * s)},{n(hip[1] + 6 * s)} Q{n(x - d * 4 * s)},{n(yf - 190 * s)} {n(sh[0] + d * 16 * s)},{n(sh[1])} "
            f"L{n(hip[0] + d * 24 * s)},{n(hip[1] + 6 * s)} Z", coat, INK, 2.5)
     hand = hand or (x + d * 74 * s, yf - 150 * s)
     f.path(f"M{n(sh[0])},{n(sh[1] + 6 * s)} L{n(hand[0])},{n(hand[1])}", stroke=coat, w=16 * s, extra='stroke-linecap="round"')
@@ -179,8 +179,8 @@ def luistelijat():
             "F B A ja F A B ovat yhtä pitkät. Kitka jätetään huomiotta.")
     f.rect(16, 172, 568, 26, grad(f, "fy43s-ice", GLASS, COLD_LIGHT), None)
     f.line(16, 172, 584, 172, ICE_EDGE, 2.5, cap="round")
-    skater(f, 232, 172, 0.74, 1, COLD, hand=(292, 84))
-    skater(f, 352, 172, 0.56, -1, HOT, hand=(306, 84))
+    skater(f, 236, 172, 0.66, 1, COLD, hand=(292, 93))       # the cap inside the picture (visual audit 2026-11-01)
+    skater(f, 348, 172, 0.5, -1, HOT, hand=(306, 93))
     f.tex(176, 40, r"\text{A}", "middle"); f.tex(400, 70, r"\text{B}", "middle")
     f.line(16, 214, 584, 214, RULE, 1.5, "6 6")
     s = 1.2

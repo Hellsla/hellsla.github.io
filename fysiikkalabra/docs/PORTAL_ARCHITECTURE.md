@@ -18,8 +18,12 @@ student-facing content is Finnish first, without new translations until the teac
 | C. Ahjo Makerspace | open maker resources and, apart from them, Ahjo-specific local information | planned (phase G) |
 | D. Opettajalle | public teacher guidance; nothing confidential in the public repo or site | planned |
 
-Simulations stay inside the lessons that use them; Käsitetakomo (`../kasitetakomo.html`) is linked contextually,
-not rebuilt. It reads no URL parameters today, so a topic deep link needs a small filter by `?aihe=` (phase H).
+Simulations stay inside the lessons that use them; Käsitetakomo (`../kasitetakomo.html`, cards in
+`../kasitetakomo-data.js`) is linked contextually, not rebuilt (implemented 2026-11-03, `scripts/concept_cards.py`):
+the front page links to it, a module page with cards to `?kurssi=<COURSE>` (its topic menu), and a chapter listed in
+`concept-cards.json` to `?kurssi=<COURSE>&aihe=<id>[,<id>]` (starts those topics). Topic ids are the permanent `id`
+fields in the card data; an unknown parameter returns to the course menu; the app links back to the page it was
+opened from. No login, progress tracking or stored student data.
 
 ## National vs school-specific courses (implemented)
 - `curriculum.json` holds only the national modules, their LOPS goals and lesson slots; `/new-course` validates

@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 222bf8240799daec
+CONTENT-HASH: 0fa18964780034d5
 
 Pedagogy re-review of fy14-inside-iter (2026-11-01) after the "Fixes after review" in review/developer.md (commit c6532e4f). Rebuilt, served over HTTP and tested in Playwright at 390 and 1280 px.
 
@@ -22,3 +22,5 @@ Pedagogy re-review of fy14-inside-iter (2026-11-01) after the "Fixes after revie
 
 ## Re-check 2026-11-01: photographs
 Poloidal field coil photo ends the parts list it illustrates; its caption matches the text ("shape the plasma and hold it in place") and adds no answer to the vocabulary match. No lesson ids, no ×, British spelling.
+
+Hash updated 2026-11-03 for a photo-only change; per the teacher, photo changes get a visual review only.

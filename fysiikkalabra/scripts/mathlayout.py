@@ -136,9 +136,20 @@ def chain_html(rows, gap_before=()):
     return f'<div class="eq-chain{" lead" if lead else ""}">' + "".join(out) + "</div>"
 
 
+JOIN = r"\s*(?:ja|sekä|and|,)?\s*"
+
+
+def _short_chain(p):
+    """The rows of an inline formula `$a = b$` that has a left side, else None."""
+    if not (p.startswith("$") and p.endswith("$")) or p.startswith("$$"): return None
+    rows = chain_rows(p[1:-1])
+    return rows if rows and rows[0][0] else None
+
+
 def display_chains(text):
     """Every long inline formula of a step's text on lines of its own, as the rows of a calculation (chain_html); the
-    text before and after it stays a sentence. Two calculations joined only by "ja" form one block. Display maths
+    text before and after it stays a sentence. Two calculations joined only by "ja" form one block, also when the
+    first of them is short (it would otherwise end the sentence in a dangling "ja"). Display maths
     already written as $$…$$ is left alone."""
     parts = re.split(r"(\$\$.*?\$\$|\$[^$\n]+?\$)", text, flags=re.S)
     out, pending, gaps = [], [], []
@@ -147,9 +158,13 @@ def display_chains(text):
     for p in parts:
         rows = chain_rows(p[1:-1]) if p.startswith("$") and not p.startswith("$$") and is_long(p[1:-1]) else None
         if rows:   # a formula with no left side ("= 5 J" after "ja") stays inline (2026-10-28, fy2-5, fy2-6)
+            if not pending and len(out) >= 2 and re.fullmatch(JOIN, out[-1]) and (short := _short_chain(out[-2])):
+                # "$a = b$ ja $c = d = e$": the short calculation joins the block instead of a sentence ending in "ja"
+                # (teacher 2026-11-03, fy2-6 Yksikkömuunnokset)
+                out[-2:] = []; pending.extend(short)
             if pending: gaps.append(len(pending))
             pending.extend(rows)
-        elif pending and re.fullmatch(r"\s*(?:ja|sekä|,)?\s*", p): continue   # "… ja …" between two calculations
+        elif pending and re.fullmatch(JOIN, p): continue                  # "… ja …" between two calculations
         else: flush(); out.append(p)
     flush()
     s = "".join(out)
@@ -203,4 +218,6 @@ if __name__ == "__main__":                                          # quick self
     assert _top_relations(r"a \leq b") == [] and _top_relations(r"a \le b")
     assert align_equals("\\begin{aligned}\n&Q = c m \\\\\n&= 4 \\\\[6pt]\n&\\quad + 1\n\\end{aligned}") == "\\begin{aligned}\nQ &= c m \\\\\n&= 4 \\\\[6pt]\n&\\quad + 1\n\\end{aligned}"
     assert split_list(r"p = 203;\ 159;\ 66\,\text{kPa}") == r"$p = 203$; $159$; $66\,\text{kPa}$" and split_list(r"\{a;b\}") is None
+    b = display_chains(r" $14\,\text{GWh} = {14 \cdot 10^{6}}\,\text{kWh}$ ja $5{,}0\,\text{MW} = 5{,}0 \cdot 1000\,\text{kW} = 5000\,\text{kW}$.")
+    assert b.startswith('<div class="eq-chain') and "ja" not in b and b.count("eq-row") == 3 and "eq-row gap" in b, b
     print("ok")

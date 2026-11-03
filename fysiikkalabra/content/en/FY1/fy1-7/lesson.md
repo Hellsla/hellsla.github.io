@@ -158,6 +158,8 @@ If the measurement results are plotted in a coordinate system with volume on the
 
 Every pure substance has its own density in a given state of matter and at a given temperature, so density is like a fingerprint of the substance: once the mass and volume of an object have been measured, the calculated density can be compared with table values. The conclusion is not certain. Measurements always contain error (chapter *Measuring and the reliability of a measurement*), and some substances have almost the same density, so the result only tells you which substances the object may be made of.
 
+<figure class="unit-photo"><img src="pics/fy1/blue-iceberg.webp" alt="A pale blue iceberg with an odd shape floats on grey water under a cloudy sky."><figcaption>An iceberg in a glacier lagoon in Iceland. Ice floats in water because its density is smaller than that of water.</figcaption></figure>
+
 ## Formula: Density
 
 The density of a substance is the ratio of mass to volume. Solving this ratio for mass and for volume gives two other forms:

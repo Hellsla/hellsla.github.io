@@ -1,0 +1,68 @@
+{
+  "artemis-i-launch.webp": {
+    "title": "Artemis I Launch",
+    "creator": "NASA/Joel Kowsky",
+    "source": "https://images.nasa.gov/details/NHQ202211160030",
+    "licence": "public domain",
+    "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+    "edit": "Rajattu ylhäältä ja alhaalta, pienennetty, WebP",
+    "checked": "2026-11-03",
+    "width": 1600,
+    "height": 1440
+  },
+  "europe-at-night.webp": {
+    "title": "Earth Observations Taken by the Expedition 28 Crew (ISS028-E-024360)",
+    "creator": "NASA, Expedition 28 crew (Mike Fossum)",
+    "source": "https://images.nasa.gov/details/iss028e024360",
+    "licence": "public domain",
+    "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+    "edit": "Pienennetty, WebP",
+    "checked": "2026-11-03",
+    "width": 1600,
+    "height": 1064
+  },
+  "garzweiler-excavator.webp": {
+    "title": "Garzweiler Tagebau 2008 – Schaufelradbagger 258",
+    "creator": "© Raimond Spekking",
+    "source": "https://commons.wikimedia.org/wiki/File:Garzweiler_Tagebau_2008_-_Schaufelradbagger_258.jpg",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "edit": "Sivuilta rajattu 8 %, pienennetty, WebP",
+    "checked": "2026-11-03",
+    "width": 1600,
+    "height": 610
+  },
+  "olkiluoto.webp": {
+    "title": "Olkiluoto Nuclear Power Plant 2015-07-21 001",
+    "creator": "Hannu Huovila / TVO",
+    "source": "https://commons.wikimedia.org/wiki/File:Olkiluoto_Nuclear_Power_Plant_2015-07-21_001.jpg",
+    "licence": "CC BY 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by/3.0/",
+    "edit": "Ylä- ja alareunasta rajattu, pienennetty, WebP",
+    "checked": "2026-11-03",
+    "width": 1600,
+    "height": 812
+  },
+  "summa-wind-turbines.webp": {
+    "title": "Summan tuulivoimapuisto",
+    "creator": "IA (Wikimedia Commons)",
+    "source": "https://commons.wikimedia.org/wiki/File:Summan_tuulivoimapuisto.jpg",
+    "licence": "CC0 1.0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "edit": "Yläreunasta rajattu 8 %, pienennetty, WebP",
+    "checked": "2026-11-03",
+    "width": 1600,
+    "height": 1104
+  },
+  "muurame-transformer.webp": {
+    "title": "Muurame electrical substation transformer",
+    "creator": "Antti Leppänen",
+    "source": "https://commons.wikimedia.org/wiki/File:Muurame_electrical_substation_transformer.jpg",
+    "licence": "CC BY 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+    "edit": "Yläreunasta rajattu 6 %, pienennetty, WebP",
+    "checked": "2026-11-03",
+    "width": 1600,
+    "height": 1003
+  }
+}

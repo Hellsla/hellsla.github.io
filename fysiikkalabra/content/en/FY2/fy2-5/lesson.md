@@ -139,6 +139,8 @@ Different fuels contain different amounts of chemical energy for their mass. The
 
 Because the heat of combustion is energy per unit of mass, the energy released is directly proportional to the mass of fuel burnt: twice as much fuel releases twice as much energy. This gives the law used to calculate the energy released.
 
+<figure class="unit-photo"><img src="pics/fy2/garzweiler-excavator.webp" alt="A huge steel-lattice excavator in a wide sand-coloured open-pit mine on a cloudy day."><figcaption>A bucket-wheel excavator in the Garzweiler open-pit mine in Germany. The mine produces lignite, a moist coal with a low heating value.</figcaption></figure>
+
 ## Formula: Heat of combustion and released energy
 The energy released when a fuel burns is
 ```latex

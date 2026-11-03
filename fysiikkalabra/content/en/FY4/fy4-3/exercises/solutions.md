@@ -49,10 +49,10 @@ a oikea
 **Reasonableness:** The skater starts to glide away from the board, so a force away from the board has acted on the skater. Its cause is the board. The board does not move, because it is fixed to the ice and the structures of the rink, which act on it with their own forces.
 
 ## fy4-3-L1-04
-**Given:** force of the road on the tyres forwards $F = 620\,\text{N}$, air resistance $F_\text{a} = 380\,\text{N}$, the velocity is constant and the road is straight
+**Given:** force of the road on the tyres forwards $F = 620\,\text{N}$, air resistance $F_\text{d} = 380\,\text{N}$, the velocity is constant and the road is straight
 **Find:** the rolling resistance $F_\text{r}$ in $\text{N}$
 **Principle:** The car moves in a straight line at constant velocity, so by Newton's first law the net force is zero also in the direction of motion: the forces acting forwards and backwards are equally large.
-**Force diagram:** The car as a rectangle, positive direction forwards. In the horizontal direction the force of the road $\overline{F}$ forwards, and the air resistance $\overline{F}_\text{a}$ and rolling resistance $\overline{F}_\text{r}$ backwards. In the vertical direction the weight and the normal force of the road cancel each other.
+**Force diagram:** The car as a rectangle, positive direction forwards. In the horizontal direction the force of the road $\overline{F}$ forwards, and the air resistance $\overline{F}_\text{d}$ and rolling resistance $\overline{F}_\text{r}$ backwards. In the vertical direction the weight and the normal force of the road cancel each other.
 ```voimakuvio
 pinta 0
 erikseen
@@ -63,7 +63,7 @@ F_i 380 vasen
 F_r 240 vasen
 a 0
 ```
-**Formula:** $F - F_\text{a} - F_\text{r} = 0$, so $F_\text{r} = F - F_\text{a}$
+**Formula:** $F - F_\text{d} - F_\text{r} = 0$, so $F_\text{r} = F - F_\text{d}$
 **Conversions:** The forces are in newtons, so no conversions are needed.
 **Substitution:** $F_\text{r} = 620\,\text{N} - 380\,\text{N} = 240\,\text{N}$
 **Answer:** $240\,\text{N}$, to the nearest ten newtons like the given forces, so two significant figures.

@@ -148,7 +148,7 @@
       "names": {
         "F": "force F",
         "m": "mass m",
-        "alku": "at the start",
+        "alku": "initial state",
         "suunta": "string pulls"
       },
       "units": {
@@ -199,7 +199,7 @@
       "names": {
         "F": "force F",
         "m": "mass m",
-        "alku": "at the start",
+        "alku": "initial state",
         "suunta": "string pulls"
       },
       "units": {
@@ -251,7 +251,7 @@
       "names": {
         "F": "force F",
         "m": "mass m",
-        "alku": "at the start",
+        "alku": "initial state",
         "suunta": "string pulls"
       },
       "units": {

@@ -54,8 +54,10 @@ ok(L["F_mu"] < L["G_x"] and abs(L["N"] - L["G_y"]) < 0.1, "one scale for forces 
 fbdspec.draw("pinta 0\nG 900\nN 900\nF 620 oikea\nF_i 380 vasen\nF_r 240 vasen\na 0\n", "t")
 ok(abs(L["F"] - L["F_i"] - L["F_r"]) < 1e-6, "a sum of forces is drawn as a sum")
 svg = fbdspec.draw("pinta 0\nerikseen\nG 12000\nN 12000\nF 620 oikea\nF_i 380 vasen\nF_r 240 vasen\na 0\n", "t")
-ok(abs(L["F"] - L["F_i"] - L["F_r"]) < 1e-6 and abs(L["F"] / L["G"] - fbdspec.SPLIT) < 1e-6 and "eri mittakaavassa" in svg,
-   "`erikseen`: the horizontal forces on their own scale, still a sum, and the text alternative says so")
+ok(abs(L["F"] - L["F_i"] - L["F_r"]) < 1e-6 and fbdspec.SPLIT - 1e-6 <= L["F"] / L["G"] <= 1 + 1e-6 and "eri mittakaavassa" in svg,
+   "`erikseen`: the horizontal forces on their own scale (SPLIT of the vertical, more when the smallest needs a shaft), still a sum, and the text alternative says so")
+fbdspec.draw("pinta 0\nerikseen\nG 12000\nN 12000\nF 620 oikea\nF_i 600 vasen\nF_r 20 vasen\na 0\n", "t")
+ok(L["F_r"] / L["F"] > 0.15 - 1e-6, "`erikseen`: the smallest horizontal force is not drawn as a bare head")
 svg = fbdspec.draw("pinta 0\nG 784,8\nN 784,8\nF 24 oikea kitka\nF_v 18 vasen\nF_r 6,0 vasen\na 0\n", "t")
 ok("kitka" in svg and abs(L["F"] - L["F_v"] - L["F_r"]) < 1e-6, "`kitka` makes another symbol a friction force (from the surface), the sum still drawn")
 fbdspec.draw("pinta 0\nG_1 9,81\nN 9,81\nT_1 2,803 oikea\na oikea\n---\nG_2 3,924\nT_2 2,803 ylös\na alas\n", "t")

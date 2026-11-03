@@ -139,6 +139,8 @@ Eri polttoaineet sisältävät eri määrän kemiallista energiaa samaa massaa k
 
 Lämpöarvo on energia massayksikköä kohti. Siksi vapautuva energia on suoraan verrannollinen palaneen polttoaineen massaan: kaksi kertaa enemmän polttoainetta vapauttaa kaksi kertaa enemmän energiaa. Tästä saadaan laki, jolla vapautuva energia lasketaan.
 
+<figure class="unit-photo"><img src="pics/fy2/garzweiler-excavator.webp" alt="Valtava kaivinkone isossa hiekkaisessa kaivoksessa."><figcaption>Kaivinkone Garzweilerin kaivoksessa Saksassa. Kaivoksesta kaivetaan ruskohiiltä. Se on kosteaa, ja sen lämpöarvo on pieni.</figcaption></figure>
+
 ## Kaava: Lämpöarvo ja vapautuva energia
 Kun polttoaine palaa, vapautuva energia on
 ```latex

@@ -59,6 +59,8 @@ ITER is a **tokamak**. Its plasma, about $830\ \text{m}^3$ of deuterium and trit
 
 <figure class="unit-photo"><img src="units/fy14/pics/iter-magnet-coil.jpg" alt="Colour photograph of a very large ring-shaped magnet coil in a factory hall." width="1600" height="1067" loading="lazy"><figcaption>A poloidal field coil being built in the coil factory on the ITER site. These giant rings shape and position the plasma. <span class="photo-credit">Photo: Johannes Reimer, CC BY 4.0, via Wikimedia Commons</span></figcaption></figure>
 
+<figure class="unit-photo"><img src="units/fy14/pics/iter-vacuum-vessel-hellsten.jpg" alt="Colour photograph looking up in the ITER assembly hall: a huge curved steel vacuum-vessel sector hangs in a grey tooling frame next to pink-wrapped D-shaped magnet coils, with yellow cranes overhead and workers on scaffolding." width="1200" height="1600" loading="lazy"><figcaption>A sector of the ITER vacuum vessel in its assembly tooling, 26 March 2024, next to D-shaped toroidal field coils wrapped in pink protective film. The workers on the scaffolding show the scale: one sector is about as tall as a four-storey building. <span class="photo-credit">Photo: Lauri Hellsten</span></figcaption></figure>
+
 ## Key idea
 
 A fusion plasma loses energy all the time: hot particles escape across the magnetic field and the plasma radiates. To keep it hot, we heat it from outside. The **fusion gain** $Q$ compares the fusion power produced in the plasma with this heating power.

@@ -139,6 +139,8 @@ Matter exists in three states: solid, liquid and gas. In the micro model, the pa
   <foreignObject x="482.5" y="259.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{gas}$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy3/la-palma-eruption.webp" alt="A volcanic eruption at night: a glowing fountain of lava and lava flows running down the slope under red smoke. Village lights show below."><figcaption>The eruption on La Palma in 2021. Lava that flowed onto the surface cools and solidifies.</figcaption></figure>
+
 ### Where does the energy go?
 Melting and vaporisation need energy but do not raise the temperature. When ice is heated, its temperature rises up to $0\,{}^\circ\text{C}$. Then the temperature stays constant until all the ice has melted, even though energy keeps being transferred. During melting and vaporisation, the energy transferred to the substance changes the interactions between the particles and increases the interaction energy between them. When a pure substance changes state at constant pressure, its temperature stays constant, so the average kinetic energy of the particles does not increase.
 

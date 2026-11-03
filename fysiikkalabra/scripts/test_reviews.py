@@ -25,6 +25,7 @@ def project():
     shutil.copytree(SRC / "scripts", tmp / "scripts", ignore=shutil.ignore_patterns("__pycache__"))
     shutil.copytree(SRC / "templates", tmp / "templates")
     shutil.copytree(SRC / "lang", tmp / "lang")
+    shutil.copytree(SRC / "assets/pics/fy3", tmp / "assets/pics/fy3")  # the lesson's photographs and their credits (photos.json)
     return tmp
 
 

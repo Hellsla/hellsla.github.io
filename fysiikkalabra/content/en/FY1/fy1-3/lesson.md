@@ -366,6 +366,8 @@ A **systematic error** is almost the same in direction and size in every measure
 ### Repeatability and accuracy
 The reliability of a measurement is described by two things. **Repeatability** tells how close to each other repeated measurements land, and it is weakened by random error. **Accuracy** tells how close the mean is to the true value, and it is weakened by systematic error. A measurement can be repeatable but not accurate, like the lower series in the figure. A reliable measurement has both.
 
+<figure class="unit-photo"><img src="pics/fy1/ligo-hanford.webp" alt="A desert landscape where a long concrete tube leads to a large blue and white building. On the right another long low tube runs to the horizon."><figcaption>The LIGO gravitational-wave detector at Hanford, USA. Its arms, kilometres long, detect changes in length far smaller than an atomic nucleus.</figcaption></figure>
+
 ## Formula: Mean and error estimate
 The best estimate of a repeated measurement is the mean of the results:
 ```latex

@@ -23,6 +23,7 @@
   {"title": "NIST: Atomic Weights and Isotopic Compositions (relative atomic masses of H-2, H-3, He-4, Li-6)", "url": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl", "checked": "2026-11-01", "note": "D–T: $17.59\\ \\text{MeV}$, of which $3.54\\ \\text{MeV}$ to helium and $14.05\\ \\text{MeV}$ to the neutron; $^{6}\\text{Li} + \\text{n}$: $4.78\\ \\text{MeV}$, computed from the atomic masses."}
  ],
  "media": [
-  {"file": "units/fy14/pics/iter-magnet-coil.jpg", "title": "ITER poloidal field coil factory", "creator": "Johannes Reimer", "source": "https://commons.wikimedia.org/wiki/File:ITER_Polodial_Field_Coils_Construction_%2811%29.jpg", "licence": "CC BY 4.0", "licence_url": "https://creativecommons.org/licenses/by/4.0"}
+  {"file": "units/fy14/pics/iter-magnet-coil.jpg", "title": "ITER poloidal field coil factory", "creator": "Johannes Reimer", "source": "https://commons.wikimedia.org/wiki/File:ITER_Polodial_Field_Coils_Construction_%2811%29.jpg", "licence": "CC BY 4.0", "licence_url": "https://creativecommons.org/licenses/by/4.0"},
+  {"file": "units/fy14/pics/iter-vacuum-vessel-hellsten.jpg", "title": "An ITER vacuum-vessel sector in the assembly hall, March 2024", "creator": "Lauri Hellsten", "source": "Photograph supplied by the author (2026-11-03)", "licence": "© Lauri Hellsten, all rights reserved; used with the author's permission"}
  ]
 }

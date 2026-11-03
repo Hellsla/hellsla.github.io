@@ -1,15 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 720c6ae0861c5f45
+CONTENT-HASH: 9e60540cd71fe93c
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] fig-4 tikapuut — guide line of the 1 kJ point still crosses its label (carried from round 0); "jokainen väli on 10-kertainen" -> "pieni väli on 10-kertainen".
-- [Minor] fig-2 ketju — "kasvi" label sits apart from its icon; move it directly above the plant.
-- [Minor] fig-3 sailyminen (390) — labels small and far from their arrows.
+(none)
 
 ## Checked
-- Delta (simulation Kohde select, values map): sim-390, sim-1280, lab-1280-1. Select shows Finnish labels, canvas, readout and buttons render as before; nothing clipped.
-
-## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+batch delta review: preview/fi-easy/fy2-2.html opened in Chromium (Playwright) at 360, 768 and 1280 px; moved Artemis I launch photo captured with its surroundings. New spot after the Joule paragraph; at 1280 it floats beside the "Energian yksikkö ja kerrannaisyksiköt" heading, text and the kJ–TJ formula box without touching it. No overlap with any figure, table, formula box or example (measured), stays in the column at 360/768, no horizontal overflow at any width, image loads, caption and credit unchanged; placement reads naturally (a large-energy example next to the unit multiples).

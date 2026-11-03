@@ -238,6 +238,8 @@ Kun kaasua lämmitetään, sen hiukkaset liikkuvat nopeammin. Jos mäntä pääs
   <foreignObject x="440" y="303.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$Q$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy3/barrel-balloon.webp" alt="Tutkijat täyttävät suurta läpinäkyvää kaasupalloa lumisella tasangolla aurinkoisena päivänä."><figcaption>NASAn BARREL-tutkimuspallon täyttö Etelämantereella. Heliumia laitetaan vain pallon yläosaan, koska kaasu laajenee, kun ulkoilman paine pienenee pallon noustessa.</figcaption></figure>
+
 ## Kaava: Boylen laki ja kaasun tilanmuutokset
 Isotermisessä tilanmuutoksessa eli Boylen lain mukaan
 ```latex

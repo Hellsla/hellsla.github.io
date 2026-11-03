@@ -1,0 +1,68 @@
+{
+  "webb-first-deep-field.webp": {
+    "title": "Webb's First Deep Field (SMACS 0723)",
+    "creator": "NASA, ESA, CSA, STScI",
+    "source": "https://images.nasa.gov/details/webb_first_deep_field",
+    "licence": "public domain",
+    "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+    "edit": "Pienennetty, WebP",
+    "checked": "2026-11-03",
+    "width": 1568,
+    "height": 1600
+  },
+  "ligo-hanford.webp": {
+    "title": "LIGO at Hanford, Washington (LIGO Pano 02-CC)",
+    "creator": "NOIRLab/LIGO/NSF/AURA/T. Matsopoulos",
+    "source": "https://commons.wikimedia.org/wiki/File:LIGO_at_Hanford,_Washington_(LIGO_Pano_02-CC).jpg",
+    "licence": "CC BY 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+    "edit": "Pienennetty, WebP",
+    "checked": "2026-11-03",
+    "width": 1600,
+    "height": 742
+  },
+  "night-traffic-light-trails.webp": {
+    "title": "The Night Bus (Unsplash)",
+    "creator": "Paul Smith (wizz-bang photography)",
+    "source": "https://commons.wikimedia.org/wiki/File:The_Night_Bus_(Unsplash).jpg",
+    "licence": "CC0 1.0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "edit": "Alareunasta rajattu 4 %, pienennetty, WebP",
+    "checked": "2026-11-03",
+    "width": 1600,
+    "height": 1024
+  },
+  "blue-iceberg.webp": {
+    "title": "Very Blue Iceberg With Anvil Top",
+    "creator": "Eric Kilby",
+    "source": "https://commons.wikimedia.org/wiki/File:Very_Blue_Iceberg_With_Anvil_Top.jpg",
+    "licence": "CC BY-SA 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "edit": "Pienennetty, WebP",
+    "checked": "2026-11-03",
+    "width": 1600,
+    "height": 1067
+  },
+  "bouncing-ball-strobe.webp": {
+    "title": "Bouncing ball strobe edit",
+    "creator": "MichaelMaggs, Richard Bartz",
+    "source": "https://commons.wikimedia.org/wiki/File:Bouncing_ball_strobe_edit.jpg",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "edit": "Pienennetty, WebP",
+    "checked": "2026-11-03",
+    "width": 1600,
+    "height": 1030
+  },
+  "ligo-scientists-laser-room.webp": {
+    "title": "Baffled LIGO Scientists",
+    "creator": "Nutsinee Kijbunchoo",
+    "source": "https://commons.wikimedia.org/wiki/File:Baffled_LIGO_Scientists.jpg",
+    "licence": "CC BY 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+    "edit": "Pienennetty, WebP",
+    "checked": "2026-11-03",
+    "width": 1600,
+    "height": 1067
+  }
+}

@@ -52,13 +52,23 @@ KIND = [(r"^G(_|$)", "gravity"), (r"^N(_|$)", "normal"), (r"^F_(\\?mu|μ)", "fri
 W, H = 120, 70                     # the body rectangle (figure units)
 
 
+def _body_size():
+    """The body rectangle back at its usual size (draw makes it smaller for one body whose weight is short)."""
+    global W, H
+    W, H = 120, 70
+
+
 def kind_of(sym):
     return next((k for pat, k in KIND if re.search(pat, sym)), "applied")
 
 
+SYMBOLS = {}                       # a chapter's own symbols in the page's language, {spec symbol: shown symbol} ("F_v": "F_d"),
+                                   # from the "F_v" keys of its figures.json (build.py): the spec stays the Finnish one
+
+
 def tex_of(sym):
     """G -> \\overline{G}, F_mu -> \\overline{F}_{\\mu}, T_1 -> \\overline{T}_{1}, F_AP -> \\overline{F}_{\\text{AP}}."""
-    base, _, sub = sym.partition("_")
+    base, _, sub = SYMBOLS.get(sym, sym).partition("_")
     sub = r"\mu" if sub in ("mu", "μ") else rf"\text{{{sub}}}" if sub.isalpha() else sub       # F_AP, F_i: names, upright
     return rf"\overline{{{base}}}" + (f"_{{{sub}}}" if sub else "")
 
@@ -164,6 +174,19 @@ def _surface(f, p, q, solid):
         k += 16
 
 
+def _meet(p, q, a, b, pad):
+    """Whether segment p-q comes within pad of segment a-b (both in figure coords)."""
+    def d(pt, u, v):
+        L2 = (v[0] - u[0]) ** 2 + (v[1] - u[1]) ** 2
+        t = 0 if not L2 else max(0, min(1, ((pt[0] - u[0]) * (v[0] - u[0]) + (pt[1] - u[1]) * (v[1] - u[1])) / L2))
+        return math.hypot(pt[0] - u[0] - t * (v[0] - u[0]), pt[1] - u[1] - t * (v[1] - u[1]))
+    def cr(p1, p2, p3, p4):
+        o = lambda a_, b_, c_: (b_[0] - a_[0]) * (c_[1] - a_[1]) - (b_[1] - a_[1]) * (c_[0] - a_[0])
+        return o(p1, p2, p3) * o(p1, p2, p4) < 0 and o(p3, p4, p1) * o(p3, p4, p2) < 0
+    if cr(p, q, a, b): return True
+    return min(d(p, a, b), d(q, a, b), d(a, p, q), d(b, p, q)) < pad
+
+
 def _forces(b, cx, cy, ang, shown, scale):
     """(sym, vec, at, kind, extra, description direction) of each force of a body; shown(size) is the drawn size."""
     out, faces = [], set()
@@ -209,7 +232,10 @@ def _forces(b, cx, cy, ang, shown, scale):
                         dict(surface=math.degrees(math.atan2(tan[1], tan[0])), outward=nrm)))
             continue
         u = _unit(direction(word))
-        if face: fo = _face(face); at = _local(cx, cy, ang, fo[0] * W / 2, fo[1] * H / 2)       # from the middle of that face
+        if face:                                                                   # on that face: a slanted push on the top or
+            fo = _face(face); u_loc = _rot(-ang, u[0], u[1])                       # bottom at its rear part, clear of the weight's line
+            off = -0.3 * W * math.copysign(1, u_loc[0]) if push and fo[1] and abs(u_loc[0]) > 0.2 else 0.0
+            at = _local(cx, cy, ang, fo[0] * W / 2 + off, fo[1] * H / 2)           # (visual audit 2026-11-01), else its middle
         else: at = (cx, cy) if k == "buoyancy" else _outline(cx, cy, ang, (-u[0], -u[1]) if push else u)   # a push ends on the outline
         extra = {"rope": u} if k == "tension" else {"v_rel": (-u[0], -u[1])} if k == "drag" else {}
         if push: extra["push"] = True
@@ -240,10 +266,48 @@ def _apart(out, scale):
                 p0 = u[0] * dx + u[1] * dy; p1 = p0 + (u[0] * u2[0] + u[1] * u2[1]) * math.hypot(*L2) * scale * (-1 if ex2.get("push") else 1)
                 gap = -26 if u[0] * u2[0] + u[1] * u2[1] > 0 else 4                 # same way: their labels need room too
                 if min(a1, max(p0, p1)) - max(a0, min(p0, p1)) > gap: hit = True; break   # along a common stretch
+                if math.hypot(dx, dy) < 2 and not extra.get("push") and not ex2.get("push"): hit = True; break   # two tails on one point read as one double arrow (visual audit 2026-11-01)
             if not hit: break
             at = (at[0] + (-u[1]) * 18 * (1 if weights < 3 else -1), at[1] - u[0] * 18)
         res.append((sym, vec, L, at, k, extra))
     return res
+
+
+def _exit(cx, cy, ang, at, d):
+    """How far a ray from the point at (figure coords) in direction d (y up) runs inside the body rectangle (0 unless at is
+    inside it: a normal force from the contact surface runs through the body by design)."""
+    c, s = math.cos(math.radians(ang)), math.sin(math.radians(ang))
+    px, py = at[0] - cx, cy - at[1]
+    lu, lv = px * c + py * s, -px * s + py * c
+    if abs(lu) > W / 2 - 1 or abs(lv) > H / 2 - 1: return 0.0
+    u, v = d[0] * c + d[1] * s, -d[0] * s + d[1] * c
+    t = [((W / 2 if u > 0 else -W / 2) - lu) / u] if abs(u) > 1e-9 else []
+    t += [((H / 2 if v > 0 else -H / 2) - lv) / v] if abs(v) > 1e-9 else []
+    return max(0.0, min(t)) if t else 0.0
+
+
+LEAST, CAP = 44.0, 300.0           # one body: the smallest force or component drawn at least LEAST, the largest at most CAP (visual audit 2026-11-01)
+EXIT = 24                          # a force drawn from inside the body reaches at least this far past its outline (visual audit 2026-11-01)
+
+
+def _short_inside(forces, cx, cy, ang, scale):
+    """The drawn length of the shortest force that starts inside the body and would not reach EXIT past its outline, else 0."""
+    out = [math.hypot(*L) * scale for _, _, L, at, _, extra in forces if math.hypot(*L) and not extra.get("push")
+           and (e := _exit(cx, cy, ang, at, (L[0] / math.hypot(*L), L[1] / math.hypot(*L))) ) > 1 and math.hypot(*L) * scale < e + EXIT]
+    return min(out) if out else 0.0
+
+
+def _out_of_body(forces, cx, cy, ang, scale):
+    """A small force from the centre (a light body's weight beside a heavy load) would end inside the rectangle, its label
+    then naming the wrong arrow: it is drawn long enough to leave the body. Returns the forces and whether one was lengthened."""
+    res, longer = [], False
+    for sym, vec, L, at, k, extra in forces:
+        n = math.hypot(*L)
+        if n and not extra.get("push"):
+            e = _exit(cx, cy, ang, at, (L[0] / n, L[1] / n)); need = (e + EXIT) / scale
+            if e > 1 and n < need: L = (L[0] / n * need, L[1] / n * need); longer = True   # starts inside, would end too near the outline
+        res.append((sym, vec, L, at, k, extra))
+    return res, longer
 
 
 def _box(cx, cy, tex, size=24):
@@ -333,10 +397,17 @@ def draw(spec, fid, _frame=None):
     """The SVG of one spec (one or two bodies side by side). The physics checks of fbd.FBD run on the true sizes; a
     force much smaller than the largest is drawn at MIN_SHOWN of it (the text alternative then says so). The figure is
     drawn once on a tall canvas, then again cut to what it holds."""
+    global W, H
     bodies = parse(spec)
     two = len(bodies) > 1
     big = max(f[1] for b in bodies for f in b["forces"])
     scale = (70 if two else 100) / big
+    small = min([f[1] for b in bodies for f in b["forces"] if f[1] > 0] or [big])
+    if two: scale = min(130.0, max(70.0, 26 * big / small)) / big           # two bodies: the same, within their half of the figure
+    if two and small * scale < 24: scale = min(CAP, LEAST * big / small) / big   # a small force would be a bare head: taller (visual audit 2026-11-01)
+    centre = [f[1] for b in bodies for f in b["forces"] if kind_of(f[0]) in ("gravity", "buoyancy") and f[1] > 0]
+    if not two and centre and min(centre) * scale < 40: scale = min(160.0, 40 * big / min(centre)) / big   # a light body's weight beside a heavy
+                                                                            # load: the figure on a larger scale, still one scale (visual audit 2026-11-01)
     floor = lambda x: math.copysign(max(abs(x), MIN_SHOWN * big), x) if x else 0.0   # one linear scale, tiny ones visible
     Hfig, shift, xr = _frame or (460, 0, None)
     f = Fig(fid, Hfig, "")
@@ -353,14 +424,47 @@ def draw(spec, fid, _frame=None):
                                                                                    # bodies: a rope turning over a pulley
             hz[mh < mv] = SPLIT * max(mv, mh) / weak
     split = hz[True] != hz[False]
+    if split and not two:                                                          # the weak axis' smallest force keeps a shaft too:
+        hw = mh < mv; sw = [x for x, h in probe if h == hw and x > 0]              # its scale up to the other axis' (largest as long
+        hz[hw] = max(hz[hw], min(LEAST / (min(sw) * scale), max(mv, mh) / max(sw)))   # as the other's), then the whole figure
+        drawn = min(sw) * hz[hw] * scale                                           # (visual audit 2026-11-01)
+        if drawn < LEAST: scale *= max(1.0, min(LEAST / drawn, CAP / (max(max(mv, mh), max(sw) * hz[hw]) * scale)))
+    small_body = False
+    if not two and not split:                                                      # a small force or component keeps a shaft behind its
+        parts = []                                                                 # head: the whole figure on a larger scale, still one
+        for b in bodies:                                                           # scale (visual audit 2026-11-01)
+            for sym, size, deg, *_ in b["forces"]:
+                parts.append(size)
+                if sym in b["comps"] and b["axes"] is not None:
+                    k = kind_of(sym)
+                    ang_ = 270.0 if k == "gravity" else (b["surface"] or 0) + 90.0 if k == "normal" and deg is None else direction(deg) if deg is not None else None
+                    if ang_ is not None:
+                        d = math.radians(ang_ - b["axes"]); parts += [abs(size * math.cos(d)), abs(size * math.sin(d))]
+        least = min([x for x in parts if x > 1e-9 * big] or [big])
+        scale = max(scale, min(CAP, LEAST * big / least) / big)
+        if least * scale < LEAST - 1: small_body = True                                    # and a smaller rectangle, so the arrows outgrow it
     shown = lambda size, horiz=False: floor(size * hz[horiz])
     for i, b in enumerate(bodies):
+        _body_size()
+        if small_body: W, H = W * 0.7, H * 0.7
         cx = (150 + 300 * i) if two else 300; cy = 230 - shift
         surf = b["surface"]; ang = surf if surf is not None else 0.0
         a_dir = None
         if b["a"] is not None:
             a_dir = (0, 0) if b["a"] in ("0", "nolla", "none") else _unit(along(b["a"], surf))
         forces, faces = _restore_sums(_forces(b, cx, cy, ang, shown, scale), hz, big)
+        short = _short_inside(forces, cx, cy, ang, scale)
+        if short and not two and not split and short < 70:                         # one body: first the whole figure on a larger
+            grow = min(70 / short, CAP / (big * scale))                          # scale, so the short arrow keeps a shaft outside
+            if grow > 1:
+                scale *= grow
+                forces, faces = _restore_sums(_forces(b, cx, cy, ang, shown, scale), hz, big)
+                short = _short_inside(forces, cx, cy, ang, scale)
+        if short:                                                                  # a force from the centre that would end inside the
+            # body: a smaller rectangle, the arrows kept to scale
+            k = max(0.35, min(1.0, (short - (12 if two else 26)) / (H / 2)));   # one body: the head and a bit of shaft outside
+            W, H = W * k, H * k
+            forces, faces = _restore_sums(_forces(b, cx, cy, ang, shown, scale), hz, big)
         approx = approx or any(0 < size * hz[h] < MIN_SHOWN * big for size, h in _probe(b, cx, cy, ang, scale))   # one drawn at the floor
         true = fbd.FBD(f, scale, body=(cx, cy, W, H, ang), a_dir=a_dir)              # the physics, on the true sizes
         for sym, vec, _, at, k, extra in forces: true.force(sym, vec, at, "gravity" if k == "gravity2" else k, tex=tex_of(sym), **extra)
@@ -373,6 +477,12 @@ def draw(spec, fid, _frame=None):
         solid = []                                                                 # points a label must not cover
         for gx in range(-10, 11):
             for gy in range(-5, 6): solid.append(_local(cx, cy, ang, gx * W / 20, gy * H / 10))
+        arrows = []                                                                # (tail, tip, tex, labelled at the tail)
+        LENGTHS.update({x[0]: math.hypot(*x[2]) for x in forces})
+        for sym, _, vec, (px, py), k, extra in forces:
+            tip = (px + vec[0] * scale, py - vec[1] * scale)
+            arrows.append(((px - vec[0] * scale, py + vec[1] * scale), (px, py), tex_of(sym), True) if extra.get("push")
+                          else ((px, py), tip, tex_of(sym), False))
         for face in sorted(faces):                                                 # the surfaces it touches
             fo = _face(face); sol = _rot(ang, fo[0], fo[1])
             al = (1, 0) if fo[1] else (0, 1); e = W * 0.95 if fo[1] else H * 1.4
@@ -381,16 +491,11 @@ def draw(spec, fid, _frame=None):
             _surface(f, p1, p2, sol)
             solid += [(p1[0] + (p2[0] - p1[0]) * t / 30 + sol[0] * 6, p1[1] + (p2[1] - p1[1]) * t / 30 - sol[1] * 6) for t in range(31)]
             ys += [p1[1], p2[1]]; xs += [p1[0], p2[0]]
-        arrows = []                                                                # (tail, tip, tex, labelled at the tail)
-        LENGTHS.update({x[0]: math.hypot(*x[2]) for x in forces})
-        for sym, _, vec, (px, py), k, extra in forces:
-            tip = (px + vec[0] * scale, py - vec[1] * scale)
-            arrows.append(((px - vec[0] * scale, py + vec[1] * scale), (px, py), tex_of(sym), True) if extra.get("push")
-                          else ((px, py), tip, tex_of(sym), False))
         comps = []
         if axes:
             for sym in b["comps"]:
-                sym_, vec, at = next((x[0], x[2], x[3]) for x in forces if x[0] == sym)
+                sym_, vec, at, push = next((x[0], x[2], x[3], x[5].get("push")) for x in forces if x[0] == sym)
+                if push: at = (at[0] - vec[0] * scale, at[1] + vec[1] * scale)        # a push's components start at its tail
                 for ax, c in zip(axes, "xy"):
                     approx = approx or 0 < abs(vec[0] * ax[0] + vec[1] * ax[1]) < MIN_SHOWN * big - 1e-9   # a component at the floor
                     kk = _keep_order(floor(vec[0] * ax[0] + vec[1] * ax[1]), next(x[1] for x in forces if x[0] == sym), ax, forces, sym, big)
@@ -403,7 +508,15 @@ def draw(spec, fid, _frame=None):
             nx, ny = -dir_[1], dir_[0]
             if ny < 0 or (ny == 0 and nx < 0): nx, ny = -nx, -ny                  # on the body's upper side
             R += math.hypot(W, H) / 2
-            st = (cx + nx * R - dir_[0] * 28, cy - ny * R + dir_[1] * 28)
+            def crosses(st):                                                       # over a force's shaft (visual audit 2026-11-01)
+                tip = (st[0] + dir_[0] * 56, st[1] - dir_[1] * 56)
+                return any(_meet(st, tip, a_, b_, 10) for a_, b_, *_ in arrows) or any(   # or beside a push's label at its tail
+                    _meet(st, tip, a_, a_, 40) for a_, b_, _, at_tail in arrows if at_tail) or (b["axes"] is not None and any(
+                    _meet(st, tip, (ax_, ay_), (ax_ + ex_, ay_ - ey_), 18) for ax_, ay_ in [(cx + (W * 0.75 if two else W * 1.5), cy - H * 1.5)]
+                    for ex_, ey_ in ((50, 0), (0, 50))))                           # or over the axes
+            cands = [(cx + nx * (R + dr) - dir_[0] * (28 - sh), cy - ny * (R + dr) + dir_[1] * (28 - sh))
+                     for dr in (0, 24) for sh in (0, 48, -48, 96, -96)]
+            st = next((c for c in cands if not crosses(c)), cands[0])
             motion.append((sym_, dir_, st)); arrows.append((st, (st[0] + dir_[0] * 56, st[1] - dir_[1] * 56), sym_, False))
         offs, boxes = _place(arrows, solid, 600, 2 - shift, 458 - shift)          # the same in both passes
         ys += [y for bx in boxes for y in (bx[1], bx[3])] + [y for t, q, *_ in arrows for y in (t[1], q[1])] + [p[1] for p in solid]
@@ -424,6 +537,7 @@ def draw(spec, fid, _frame=None):
         nx = (min(xs) + max(xs)) / 2; ny = max(ys) + 22
         note = r"\text{" + i18n.t("fbd.split_note") + "}"; half = (figlib.visible_len(note) * 18 * 0.52 + 8) / 2 + 4
         f.tex(nx, ny, note, "middle", MUTED, size=18); ys += [ny + 14]; xs += [nx - half, nx + half]
+    _body_size()
     f.label = describe(words, two, approx, split)
     if _frame is None:                                                             # again, cut to what it holds
         y0, y1 = min(ys) - 8, max(ys) + 8
@@ -435,7 +549,7 @@ def draw(spec, fid, _frame=None):
 
 def _plain(sym):
     """F_mu -> Fμ, T_1 -> T1: a symbol for a screen reader."""
-    base, _, sub = sym.partition("_")
+    base, _, sub = SYMBOLS.get(sym, sym).partition("_")
     return base + {"mu": "μ"}.get(sub, sub)
 
 
@@ -464,7 +578,15 @@ def render(text):
     return FENCE.sub(sub, text), figs
 
 
+def sized(svg):
+    """A drawn diagram at its natural size: 0,7 px per viewBox unit (24-unit labels read at about 17 px), never wider than
+    its column. Stretched to the column width a tall one-body diagram grew to 900 px with 60 px labels (FY4 visual audit 2026-11-01)."""
+    m = re.search(r'viewBox="[-\d.]+ [-\d.]+ ([\d.]+) [\d.]+"', svg)
+    return svg.replace('style="max-width:100%', f'style="width:{float(m.group(1)) * 0.7:.0f}px;max-width:100%', 1) if m else svg
+
+
 def restore(html_text, figs):
+    figs = {tok: sized(svg) for tok, svg in figs.items()}
     for tok, svg in figs.items():
         html_text = re.sub(rf"(?:<p>)?{tok}(?:</p>|<br\s*/?>)?", lambda m, svg=svg: f'<div class="fig fbd">{svg}</div>', html_text)
     return html_text

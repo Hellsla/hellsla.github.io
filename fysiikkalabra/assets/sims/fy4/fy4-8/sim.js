@@ -155,17 +155,17 @@ new p5((p) => {
   function energy(M, Ep, Ek, Em, Em0, W, fh) {
     p.noStroke(); p.fill(255); p.rect(0, 0, EN.w, EN.h);
     p.stroke(220); p.strokeWeight(1); if (narrow) p.line(0, 0, EN.w, 0); else p.line(0, 0, 0, EN.h);
-    lab('$\\text{Energia}$', 10, narrow ? fh + 6 : fh + 8, 'l', fh, INKC);
+    lab(__('energia'), 10, narrow ? fh + 6 : fh + 8, 'l', fh, INKC);
     const k = (EN.zero - EN.top) / Em0, bw = narrow ? 70 : 30, xs = [0.14, 0.38, 0.62, 0.86].map((f) => EN.w * f);
     p.stroke(...INKC); p.strokeWeight(1.5 * U); p.line(8, EN.zero, EN.w - 8, EN.zero);
     dashed(8, EN.top, EN.w - 8, EN.top, MUTEDC);
-    lab('$E_{\\text{mek},1}$', EN.w - 8, EN.top - 7 * U, 'r', fh, MUTEDC);
+    lab(__('emek1'), EN.w - 8, EN.top - 7 * U, 'r', fh, MUTEDC);
     p.noStroke();
     p.fill(...GREEN); p.rect(xs[0] - bw / 2, EN.zero - Ep * k, bw, Ep * k);
     p.fill(...BLUE); p.rect(xs[1] - bw / 2, EN.zero - Ek * k, bw, Ek * k);
     p.fill(...PURPLE); p.rect(xs[2] - bw / 2, EN.zero - Em * k, bw, Em * k);
     p.fill(...HEATC); p.rect(xs[3] - bw / 2, EN.zero, bw, Math.min(-W * k, EN.bot - EN.zero));
-    const names = ['$E_\\text{p}$', '$E_\\text{k}$', '$E_\\text{mek}$', '$W_\\text{muut}$'];
+    const names = ['$E_\\text{p}$', '$E_\\text{k}$', __('emek'), __('wmuut')];
     names.forEach((s, i) => lab(s, xs[i], EN.name, 'c', fh, i === 0 ? GREEN : i === 1 ? BLUE : i === 3 ? HEATC : PURPLE));
   }
 

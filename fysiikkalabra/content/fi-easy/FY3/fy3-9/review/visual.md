@@ -1,14 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 0b2d8154f98ba8a6
+CONTENT-HASH: ac9ba7813edf7861
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] exp-1 intro — "50 ml, 25 ml ja 100 ml" and "(100 kPa = 100 000 Pa)" are plain text beside inline-maths quantities in the same paragraph, and "25 ml" still breaks across lines; set in maths with a thin space (carried).
-- [Minor] exp-1/exp-2 Alkutila box — "θ = 20 °C", "V = 50 ml" are plain text while the readout below uses maths; optional unification.
+(none)
 
 ## Checked
-- exp-1-390-1 and exp-2-390-1 (new "tilanmuutos: isoterminen / isobaarinen" Alkutila lines, selector, readout, graphs); example-390-2 (inline "0,80 l", "78 kPa", fraction rows spaced). Layout survived; only inquiry.json changed.
-
-## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+batch delta review: preview/fi-easy/fy3-9.html opened in Chromium (Playwright) at 360, 768 and 1280 px; moved BARREL balloon photo captured with its surroundings. New spot after the last Ydinajatus figure row (which ends above it); at 1280 it floats beside the Boyle formula section (p1V1 = p2V2, p = vakio·1/V) without touching the formula boxes. No overlap with any figure, table, formula box or example (measured), stays in the column at 360/768, no horizontal overflow at any width, image loads, caption and credit unchanged; placement reads naturally (gas expanding as outside pressure falls, next to Boyle's law).

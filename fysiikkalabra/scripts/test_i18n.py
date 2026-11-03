@@ -39,6 +39,7 @@ expect("one language: nothing to compare", code == 0 and "fi only" in out, out)
 code, out = run("build.py")
 fi_page = (T / "site" / f"{LESSON}.html").read_text()
 site_page = re.sub(r'<details class="lang-menu">.*?</details>', "", (SRC / "site" / f"{LESSON}.html").read_text())  # the real site has languages
+site_page = re.sub(r'<p class="concept-link">.*?</p>', "", site_page)   # and the Käsitetakomo link: the copy has no ../kasitetakomo-data.js
 expect("one language: the build is the committed site, without language links", code == 0 and fi_page == site_page and 'class="lang"' not in fi_page, out[-400:])
 
 # a second language: lang/en.json and content/en/, nothing else
@@ -90,7 +91,7 @@ code, out = run("build.py")
 page = (T / "site/en" / f"{LESSON}.html").read_text() if (T / "site/en" / f"{LESSON}.html").exists() else ""
 expect("a reviewed translation is published at site/en/", code == 0 and page, out[-600:])
 expect("the English page is in English", '<html lang="en"' in page and "Physics Lab" in page and ">Check<" in page, page[:400])
-expect("its assets are the shared ones in site/", 'href="../site.css"' in page and 'src="../vendor/katex/katex.min.js"' in page and 'href="../../../index.html"' in page
+expect("its assets are the shared ones in site/", 'href="../site.css?v=' in page and 'src="../vendor/katex/katex.min.js"' in page and 'href="../../../index.html"' in page
        and not re.search(r'(?:src|href)="(?!\.\./|https?:|#|[\w.-]+\.html)', page), re.findall(r'(?:src|href)="[^"]*"', page)[:20])
 expect("its lesson links stay in English", 'href="FY3.html"' in page and 'href="index.html"' in page)
 expect("the numbers in the English page use a decimal point", re.search(r'data-answer="[\d.]+"', page) is not None and "{,}" not in "".join(re.findall(r"<svg\b.*?</svg>", page, re.S)))

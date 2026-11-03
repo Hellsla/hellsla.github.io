@@ -238,6 +238,8 @@ When a gas is heated, its particles move faster. If the piston can move so that 
   <foreignObject x="440" y="303.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$Q$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy3/barrel-balloon.webp" alt="Researchers fill a large transparent gas balloon on a snowy plain on a sunny day."><figcaption>Filling a NASA BARREL research balloon in Antarctica. Helium fills only the top of the balloon, because the gas expands as the outside pressure falls while the balloon rises.</figcaption></figure>
+
 ## Formula: Boyle's law and changes of state of a gas
 In an isothermal change, that is, according to Boyle's law,
 ```latex

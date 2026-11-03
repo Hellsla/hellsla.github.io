@@ -9,9 +9,9 @@
 // its point of application on it (a push ends there, at the handle); no point-particle diagram (Finnish upper secondary).
 // Every canvas text goes through lab(), which pushes its ink box to simState.labels. p5.js 1.9 instance mode.
 new p5((p) => {
-  const g = 9.81, S = 0.32;                                              // m/s², px per newton in the force diagram
+  const g = 9.81, S = 0.34;                                              // m/s², px per newton in the force diagram
   const GROUND = 262, SLED = { x: 150, w: 92, h: 30 };                   // situation: ice level, sled position and size
-  const D = { x: 468, y: 196, w: 74, h: 30 };                            // force diagram: the sled's rectangle (centre, size)
+  const D = { x: 468, y: 228, w: 90, h: 34 };                            // force diagram: the sled's rectangle (centre, size)
   const RED = [201, 42, 42], BLUE = [25, 113, 194], INKC = [31, 41, 51];
   let btn, slF, slA, lF, lA, selTapa, selM, cbKomp, selSpeed, readout;
   let v = 0, scroll = 0, running = false, labels = [];
@@ -63,7 +63,7 @@ new p5((p) => {
     window.simState = { F: f.F, alpha: f.al * 180 / Math.PI, m: f.m, tapa: selTapa.value(), komponentit: cbKomp.checked(),
                         G: f.G, N: f.N, Fx: f.Fx, Fy: f.Fy, sumFx: f.sumFx, sumFy: f.N + f.Fy - f.G, a: f.a, v, running, labels: null };
     const k = Math.max(1, 600 / (document.getElementById('sim-root').clientWidth || 600));
-    const fh = Math.round(11 * k);
+    const fh = Math.round((k > 1.2 ? 14 : 12) * k);                         // 14 CSS px on a phone, 12 on a wide screen (visual audit 2026-11-01)
     labels = [];
     p.background(250);
     situation(f, fh);

@@ -414,6 +414,8 @@ def experiment_html(a, md, lid):
         if str(v) in words.get(k, {}): return f'<span class="nobr">{tn(k)}: {esc(words[k][str(v)])}</span>'
         if isinstance(v, str) and str(sim_words.get(v, v)) != v: v = sim_words[v]   # a sim value named in the page's language (lang sims.<id>.values), the Finnish page unchanged
         u = units.get(k, "")
+        if isinstance(v, str) and re.fullmatch(r"-?\d+(?:\.\d+)?", v) and (not u or UNIT.fullmatch(u)):   # a select's number ("0.5"):
+            return f'<span class="nobr">{tn(k)} = ${esc(v.replace(".", "{" + T("format.decimal") + "}"))}' + (("\\," + unit_tex(u)) if u else "") + "$</span>"   # maths as written (FY4 audit 2026-11-01)
         if isinstance(v, (int, float)) and (not u or UNIT.fullmatch(u)):
             num = fi(v).replace(T("format.decimal"), "{" + T("format.decimal") + "}")
             if isinstance(v, int) and abs(v) >= 10000: num = f"{v:,}".replace(",", "\\,")   # 20\,000

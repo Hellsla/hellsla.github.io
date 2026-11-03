@@ -142,6 +142,8 @@ Sähkön ja lämmön yhteistuotannossa lauhduttimen lämpö johdetaan kaukolämp
 
 Kokonaishyötysuhde nousee yhteistuotannossa jopa 85–$90\,\%$:iin, mutta sähkö ja lämpö eivät ole yhtä arvokkaita. Sähköä voi käyttää mihin tahansa, ja sitä voi siirtää satojen kilometrien päähän. Kaukolämpö kelpaa vain lämmitykseen, ja sen verkko ulottuu vain kaupunkiin. Siksi yhteistuotantolaitoksen sähkön ja lämmön suhde valitaan lämmön tarpeen mukaan: kesällä lämpöä tarvitaan vähän ja laitos tuottaa lähes pelkkää sähköä, talvella pakkasella lämpöä tarvitaan paljon.
 
+<figure class="unit-photo"><img src="pics/fy3/nesjavellir.webp" alt="Vihreässä laaksossa vuorten keskellä on valkoisia voimalaitosrakennuksia, ja yhdestä nousee korkea valkoinen pilvi."><figcaption>Nesjavellirin geoterminen voimalaitos Islannissa tuottaa sähköä ja kaukolämpöä. Voimalaitokselta nouseva pilvi on tiivistynyttä vesihöyryä, joka vie hukkalämpöä ympäristöön.</figcaption></figure>
+
 ## Kaava: Voimalaitoksen hyötysuhde
 Yhden vaiheen tai koko laitoksen hyötysuhde on hyödyksi saadun tehon suhde sisään tuotuun tehoon, ja hukkalämmön teho on se osa, joka ei tule hyödyksi:
 ```latex

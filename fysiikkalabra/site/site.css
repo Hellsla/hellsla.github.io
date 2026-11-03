@@ -13,8 +13,8 @@
      38rem for text and tasks, at every width. Tasks are never side by side: a card grows when its feedback, hints or
      solution opens, and must not leave an empty column beside it. Width is used only where two things belong together
      and are about as tall: the chapter illustration beside the lesson's goals, a figure beside the paragraph it explains
-     (build.py fig_rows decides), the simulation beside the experiments (sticky), the worked example's problem beside
-     its steps (sticky). After such a unit the text runs on in the reading column.
+     (build.py fig_rows decides), the simulation beside the experiments (sticky). The worked example reads down the
+     column, its steps under the problem (teacher 2026-11-03). After such a unit the text runs on in the reading column.
    - The simulations keep their own type (17 px on a 1.65 line, set on body and #sim): p5 measures its labels in a span
      on the body, so the reading text can change without moving a label in a sim.
    - From 85rem of window the stage navigation moves from the sticky chip bar to a sticky side column. Nothing breaks
@@ -301,7 +301,7 @@ details.answer .answer-body p{display:block;margin:0 0 .4rem;padding:0;backgroun
 .eq-lead{grid-column:1/-1}.eq-chain.lead .eq-r{padding-left:1.4em}
 .eq-l{text-align:right;min-width:0}.eq-r{min-width:0}
 .eq-chain .katex{font-size:1.1em}
-.eq-chain>.eq-row>span:has(.mfrac),.eq-chain>.eq-row:has(.mfrac)+.eq-row>span{padding-top:.3em}   /* a \dfrac row's denominator no longer jams into the next row (visual audit 2026-11-01) */
+.eq-chain{align-items:baseline}.eq-chain>.eq-row:has(.mfrac)>span,.eq-chain>.eq-row:has(.mfrac)+.eq-row>span{padding-top:.3em}   /* a \dfrac row's denominator no longer jams into the next row; both sides of a row on one baseline, so t and = sit level with the fraction bar (visual audits 2026-11-01) */
 /* a solution: every step a block with its label on a line of its own; long calculations in aligned rows (build.py
    solution_html, scripts/mathlayout.py); the answer set apart, the reasonableness check its own block */
 details.solution .steps{margin:.3rem 0 0;padding:.9rem 1.1rem;background:var(--bg);border:1px solid var(--line-2);border-radius:var(--inner-radius);font-size:var(--fs-inner);line-height:1.6}
@@ -328,11 +328,12 @@ p.sol-answer{display:inline-block;margin:.1rem 0 .5rem;padding:.35rem .9rem;back
 #sim-root .readout{font-size:var(--fs-ui);line-height:1.5;margin:.6rem 0;font-variant-numeric:tabular-nums}
 #sim-root .note{font-size:var(--fs-small);color:var(--ink-2);margin:.5rem 0 0}
 #sim-root .controls{display:flex;flex-wrap:wrap;align-items:flex-end;gap:.5rem 1.5rem;margin:.5rem 0}
-#sim-root label{display:flex;flex-direction:column;flex:1 1 11rem;font-size:var(--fs-ui)}
+#sim-root label{display:flex;flex-direction:column;flex:1 1 11rem;min-width:0;font-size:var(--fs-ui)}
+#sim-root label:has(select){flex:1 1 auto}   /* a drop-down at its longest option's width where the row has room: English options were cut off at 1280 (visual audit 2026-11-01) */
 #sim-root input[type=range]{width:100%;min-height:40px;margin:0;accent-color:var(--accent)}
 #sim-root button{font:600 var(--fs-ui) var(--sans);min-height:40px;padding:0 1.4rem;border:1px solid var(--accent-deep);border-radius:999px;background:var(--accent-deep);color:#fff;cursor:pointer}
 #sim-root button:hover{background:var(--accent)}
-#sim-root select{min-height:40px;font:inherit;font-size:var(--fs-ui);padding:0 .6rem;border:1px solid #767676;border-radius:.4rem;background:#fff;color:var(--ink)}
+#sim-root select{max-width:100%;min-height:40px;font:inherit;font-size:var(--fs-ui);padding:0 .6rem;border:1px solid #767676;border-radius:.4rem;background:#fff;color:var(--ink)}
 #sim-root label.locked{opacity:.6}#sim-root label.locked::after{content:" (vakio)";font-size:.85em}html[lang=en] #sim-root label.locked::after{content:" (fixed)"}   /* a locked control in an experiment, in the page's language (visual audit 2026-10-31) */
 .sim-info{margin:.6rem 0 0;border-top:1px solid var(--line-2)}
 details.sim-box,#sim-root details.note{margin:0;border-bottom:1px solid var(--line-2)}
@@ -424,7 +425,7 @@ li.ex-js>details.answer:not([open]),li.ex-js>details.solution:not([open]){margin
 @media (prefers-reduced-motion:reduce){.card{transition:none}html{scroll-behavior:auto}}
 
 /* worked example in stages (build.py staged_example, lesson.js): the problem in a framed box, the solution as numbered
-   steps on a rule beside it */
+   steps on a rule under it, in the reading column at every width (teacher 2026-11-03) */
 .example{margin:.8rem 0 1.2rem}
 .example-task{padding:1rem 1.2rem;background:var(--surface);border:1px solid var(--line);border-radius:var(--card-radius)}
 .example-task>:last-child{margin-bottom:0}
@@ -432,6 +433,7 @@ li.ex-js>details.answer:not([open]),li.ex-js>details.solution:not([open]){margin
 .worked{margin:.8rem 0 1rem}
 .worked .step{border-left:3px solid var(--accent-soft);padding:.1rem 0 .1rem 1rem;margin:.7rem 0}
 .worked .step:focus{outline:none}
+.worked .eq-chain{width:auto;margin:.5rem 0 .7rem}.worked .eq-chain:not(.lead){grid-template-columns:fit-content(min(55vw,24rem)) minmax(0,max-content);justify-content:center}   /* a calculation in rows as wide as the step's display formulas, centred like them (a long left side on its own line stays at the left) */
 .worked .step-label{margin:0 0 .2rem;font:700 var(--fs-small) var(--sans);letter-spacing:.06em;text-transform:uppercase;color:var(--accent-deep)}
 .worked .step-controls{display:flex;flex-wrap:wrap;gap:.5rem;margin:.8rem 0 0}
 .worked .step-controls button{background:var(--surface);color:var(--accent-deep)}
@@ -580,7 +582,7 @@ details.level>ol>li::marker{font-weight:700;color:var(--accent-deep)}
    inquiry.js reads --wide on .lab to know that the simulation sits beside the experiments. */
 @container content (min-width:60rem){
   /* text and tasks in one reading column, whatever the width */
-  .stage>*:not(.lab,.act-theory,.act-sim),.act-theory>*:not(.fig-row),.lab-main>*,article#teoria:not(.inquiry)>:not(.fig-row,#sim,.example){max-width:calc(var(--measure) + 3rem)}
+  .stage>*:not(.lab,.act-theory,.act-sim),.act-theory>*:not(.fig-row),.lab-main>*,article#teoria:not(.inquiry)>:not(.fig-row,#sim){max-width:calc(var(--measure) + 3rem)}
   .act-theory>p,.act-theory>ul,.act-theory>ol,.act-theory>h3,.act-theory>h4,.act-theory>blockquote{max-width:var(--measure)}
   .stage>.act-sim{max-width:40rem}
   /* the opening: the illustration (its size set by what it shows, not by the column) beside the key facts, from the same height */
@@ -603,14 +605,6 @@ details.level>ol>li::marker{font-weight:700;color:var(--accent-deep)}
   .fig-row.side{display:grid;grid-template-columns:minmax(0,var(--measure)) minmax(0,26rem);column-gap:var(--gap);align-items:center;max-width:none;margin:0 0 1.25rem}
   .fig-row.side>.fig{margin:0}
   .fig-row.side>.fig-text>:last-child{margin-bottom:0}
-}
-@container content (min-width:66rem){
-  /* Sovella: the problem beside its staged solution, the problem in view (sticky) while the steps open */
-  .act-theory .example{max-width:none}
-  .example{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,var(--measure));column-gap:var(--gap);align-items:start}
-  .example-task{position:sticky;top:var(--sticky-top)}
-  .example>.worked{margin-top:0}
-  .example>.worked .step:first-child{margin-top:0}
 }
 
 /* ---- the side column (window at least 85rem): the stage navigation leaves the top bar and stays beside the content */
@@ -679,6 +673,9 @@ nav.chapter-nav a:hover{border-color:var(--accent);background:var(--accent-soft)
 nav.chapter-nav a:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
 @media (max-width:40rem){nav.chapter-nav{grid-template-columns:1fr}nav.chapter-nav a.next{grid-column:1;text-align:left}}
 nav.chapter-nav a.prev .dir::before{content:"← "}nav.chapter-nav a.next .dir::after{content:" →"}
+/* Käsitetakomo (teacher 2026-11-03, scripts/concept_cards.py): the chapter's small link above the chapter navigation, the front page's section */
+p.concept-link{max-width:var(--measure);margin:3rem 0 0;font-size:var(--fs-ui)}p.concept-link a,ul.concept-cards a{display:inline-flex;align-items:center;min-height:44px;font-weight:700;color:var(--accent-deep);text-decoration:none;overflow-wrap:anywhere}p.concept-link a:hover,ul.concept-cards a:hover{text-decoration:underline}p.concept-link a::after{content:"→";margin-left:.5em;flex:none}
+p.concept-link+nav.chapter-nav{margin-top:1rem}.concept-home{margin-top:2.8rem!important}ul.concept-cards a::after{content:"→";margin-left:.5em;flex:none}
 /* after a wrong answer in Tarkista osaamisesi: where to practise, as a suggestion (inquiry.py, teacher 2026-10-29) */
 .practice-hint{display:none;margin:.6rem 0 0;padding:.55rem .8rem;border-radius:var(--inner-radius);background:var(--bg-tint);font-size:var(--fs-inner);line-height:1.5}
 fieldset.choice[data-state="no"] .practice-hint,.numeric:has(output[data-state="no"]) .practice-hint{display:block}
@@ -715,6 +712,24 @@ details.inv-teacher>summary{min-height:48px;display:flex;align-items:center;font
 .investigation table{border-collapse:collapse;max-width:100%;display:block;overflow-x:auto}
 .investigation th,.investigation td{border:1px solid var(--line);padding:.35rem .6rem;min-width:4.5rem}
 .inv-section{scroll-margin-top:var(--sticky-top)}
+/* a licensed photograph (FY14 units 2026-11-01; FY1–FY3 lessons 2026-11-03, assets/pics/<course>/photos.json): never wider than the reading column, at most 22rem tall so a portrait never
+   fills a phone screen, centred in its box (the box keeps the width and height attributes' ratio while it loads);
+   the caption under it, the credit on its own line */
+figure.unit-photo{display:table;width:min(100%,20rem);margin:1.25rem 0 1.5rem}
+figure.unit-photo img{display:block;width:auto;max-width:min(100%,24rem);height:auto;max-height:14rem}
+figure.unit-photo figcaption{display:table-caption;caption-side:bottom;margin-top:.5rem;font-size:var(--fs-small);line-height:1.45;color:var(--ink-2)}
+figure.unit-photo .photo-credit{display:block;margin-top:.2rem;font-size:var(--fs-small)}
+figure.unit-photo.logo img{width:100%;max-width:16rem;max-height:none}
+/* On a wide screen a photo in the running text sits beside the text column, in the empty space to its right
+   (teacher 2026-11-01); inside a box or on a narrower screen it stays in the column. */
+@media (min-width:80rem){
+  .act-theory>figure.unit-photo:not(:has(+ .fx-wide, + .fig-row.side, + .example, + .fx-map, + .fx-timeline, + * + .fx-wide, + * + .fig-row.side, + * + .example, + * + .fx-map, + * + .fx-timeline, + * + * + .fx-wide, + * + * + .fig-row.side, + * + * + .example, + * + * + .fx-map, + * + * + .fx-timeline)){float:right;clear:right;margin:.35rem calc(100% - var(--measure) - 4.5rem - 20rem) 1rem 0}
+  details .activity.act-theory>figure.unit-photo.unit-photo{float:none;margin:1.25rem 0 1.5rem}
+  .act-theory>.fx-wide,.act-theory>.fig-row.side,.act-theory>.example,.act-theory>.fx-map,.act-theory>.fx-timeline,.act-sim,section.stage,.unit-credits{clear:right}
+}
+/* the photographs' credits at the end of the page */
+.unit-credits{max-width:var(--measure);margin-top:var(--stage-space);border-top:1px solid var(--line);padding-top:1.25rem;font-size:var(--fs-inner)}
+.unit-credits ul{padding-left:1.2rem}
 
 /* Lukuvinkit (teacher 2026-11-03, scripts/reading_tips.py): one numbered list of books in the reading column, no
    subheadings inside it, no covers. Each book: its title as the link, the author, the small loan tag for the books the
