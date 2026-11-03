@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 79a84336df4ce949
+CONTENT-HASH: b348c811ebef4c35
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] exercises (open-exercises-1280 L1-1) — the Järkevyys block is a coloured card inside the solution while the English set shows it plain; check it is the house style, no action if so.
+- [Minor] solutions.md L1-03 and L2-03 — "odotusarvo (keskimääräinen luku monen sarjan jälkeen)" repeats in two answers; fine, but "odotusarvo" could be glossed once in the L1 task only.
 
 ## Checked
-- open-exercises-1280 L1 part 1, L2 part 1, L3 part 2: task text, answer field with "kpl"/"nm", every solution block, aligned rows, fractions and roots.
-- Plain-quantity scan of exercises.json and solutions.md: none found. No exercise figures exist.
+- Delta: open-exercises-1280-3 (L1-03 answer gloss), L2-1280-3 and -4 (L2-03 principle, answer, Järkevyys; L2-04 Järkevyys), L3-1280-2 (L3-02 "3p-alikuori (kuoren osa)").
+- Fractions, aligned rows, decimal comma, "50 %:n" forms and spacing render correctly; layout intact; no exercise figures exist.
+- The captures are in the lesson's review/shots (shared stamp, hash b348c811ebef4c35).
 
 ## Scores
 illustrations n/a (5) · typography 5 · Finnish 4 · accessibility 4

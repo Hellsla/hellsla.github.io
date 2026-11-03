@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: ade0d0acde13088d
+CONTENT-HASH: d9f63abcfb924693
 
 ## Blocking
 
 ## Polish
-- assets/sims/fy8/fy8-5/sim.js:195,200,265 — on the English page the canvas still draws Finnish labels and a Finnish decimal comma: "1s-orbitaali", the scale bar "0,1 nm" and the axis label "osumia" (seen in review/shots/fy8-5-sim-1280.png). The numbers are right, but the comma breaks the page's decimal convention. — Route these labels through `__()` (lang/en.json sims/fy8-5) and the scale bar through `tx()`.
+- assets/sims/fy8/fy8-5/sim.js:200 — the scale bar is still hard-coded as `$0{,}1\,\text{nm}$`, so the English canvas shows "0,1 nm" with a decimal comma (review/shots/fy8-5-sim-1280.png). The other labels (orbital title, "hits") now come from lang/en.json. — Build the label with `tx(0.1, 1)`.
 
 ## Checked
-- A script compared lesson.md and inquiry.json with content/fi/FY8/fy8-5 line by line and key by key. Every number, every $…$ formula, every `correct` flag, the numeric `answer`, `tolerance` and `mistakes` values, `initial`, `reveal.min` and the `optional` flags are identical; the only change is the decimal sign. The one figure-label change is solmu → node.
-- Read the prose against the source sentence by sentence. Every condition is kept: "in the hydrogen atom" on more nodes, higher energy (Key idea, Summary, check 2), "states of the same shape" for many-electron atoms, "approximately" in P ≈ k/N, "on average every tenth", "expected value", and "in a real experiment … not measured as directly".
-- Figure captions (figures.json, aria-labels) keep "not to scale" and "to scale" as in the source, along with "see-through projection", 0.14 nm, −13.6, −3.40 and −1.51 eV, and 656 nm.
-- lang/en.json sims/fy8-5 readout and legend are a faithful translation of lang/fi.json.
-- Recomputed in one script: 656.47 nm (3d→2p), 10.2 eV (2p→1s), 2700 hits, 1s R50 0.0707 nm and R90 0.1408 nm, matching the text.
-- Every choice item (review, predictions 1–2, Find the error, checks 1–2) has exactly one correct option, and the distractor feedback is correct physics in English. The exit ticket for N is 1s² 2s² 2p³.
-- Terminology is correct: antinode/node, nodal sphere and nodal plane, principal quantum number, subshell, Pauli exclusion principle, ground state, valence electrons.
+- A script compared lesson.md, inquiry.json, exit-ticket.json and the exercise files with content/fi/FY8/fy8-5. Every number is identical once the decimal sign is normalized. So are every non-string JSON value (`correct`, `answer`, `tolerance`, `mistakes`, `initial`, `reveal.min`, `optional`) and every id and key. The only math changes are translated `\text{}` labels and subscripts (ylä→upper).
+- The inquiry `unit` changed from kpl to hits, and the exercise units to electrons, hits and orbitals. All of these are correct for the quantities counted. No "kpl" is left in the English files.
+- lang/en.json sims/fy8-5 now holds `osumia` → "hits" and `orbSuffix` → " orbital". Both are faithful to lang/fi.json, and the canvas in the 1280 px shot shows "1s orbital" and "hits".
+- Recomputed in one script: 656.47 nm (3d→2p), 10.2 eV (2p→1s) and 2700 expected hits in the upper lobe. These match the text.
+- Every condition from the round-1 check is still there: "in the hydrogen atom", "states of the same shape", "approximately", "on average every tenth", "expected value" and "not measured as directly".
+- Every choice item still has exactly one correct option. The exit ticket for N is 1s² 2s² 2p³.

@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 81f9a81e1c08f026
+CONTENT-HASH: 774f10014b91374f
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] lesson.md "Radasta aaltoon" — "Sen kuva on kuitenkin yksinkertainen ... Tämä kuva ei kestä tarkempaa tarkastelua" repeats "kuva" and "tarkempaa tarkastelua"; e.g. "Tämä kuva ei kestä lähempää tarkastelua" is optional.
-- [Minor] lesson.md "Sallitut tilat..." — "samanlainen joka suunnasta" is colloquial next to the book-like register; "samanlainen kaikkiin suuntiin" is optional.
-- [Minor] fig 9 (cloud) — the label "läpivalaisu" (see-through) is unclear for translucent overlapping dots; "läpikuultavat pisteet" would say it.
+- [Minor] fig 9 (cloud) — the label "läpivalaisu" still stands alone in the figure; the model text now explains it, but "läpikuultavat pisteet" would be clearer at 390 px (carried from the earlier report).
+- [Minor] lesson.md "Todennäköisyystulkinta" — the amplitude gloss "Amplitudi on aallon suurin poikkeama tasapainosta" sits between two sentences about the same idea and splits them; place it after the "amplitudin neliö" sentence or in parentheses.
 
 ## Checked
-- contact-1; sim-1280 (all labels Finnish, decimal comma); fig-5 and fig-7 (string, nodes) in contact and theory-1280-1; fig-11 at 390; theory-1280-1, -3 and -4; example-390-1; open-tarkista-1280-1; exercise captures L1-1, L2-1, L3-2.
-- Plain-quantity scan of all student texts: none found; case endings after maths are right ("0,053 nm:n", "90 %:n").
+- Delta: theory-1280-1, -2, -3 (changed paragraphs: kupukohta, s-/p-orbitaali, amplitudi, alikuori, Paulin kieltosääntö, 90 %:n raja); fig-7 (nodes, new alt text) at 390; sim-1280 (howto/model text and labels); tarkista-1280-1 (changed prompt "solmupintaa (pintaa, jolla elektronia ei havaita)").
+- Layout survived; the new glosses fit the line width; no clipping.
+- New "90 %:n" and "s-orbitaali" forms are correct; no plain quantities found in changed lines.
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 4 · accessibility 4
