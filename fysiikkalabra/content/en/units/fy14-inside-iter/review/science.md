@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 222bf8240799daec
+CONTENT-HASH: 0fa18964780034d5
 
 Science re-review, 2026-11-01, of commit c6532e4f.
 
@@ -25,3 +25,5 @@ The earlier `iter.json` points are all fixed:
 
 ## Re-check 2026-11-01: photographs
 The text says the poloidal field coils shape the plasma and hold it in place, and the caption matches. The image shows a large ring coil on a winding platform in the on-site factory hall. CC BY 4.0; credit matches.
+
+Hash updated 2026-11-03 for a photo-only change; per the teacher, photo changes get a visual review only.
