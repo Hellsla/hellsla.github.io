@@ -28,7 +28,7 @@ stay in their lesson folders and keep their <id>-sim.js URLs.
 """
 import json, os, sys, re, shutil, pathlib, atexit, html as _h, markdown
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent)); from reviews import status as review_status, published_exercises, WorkTree
-import answers_shown, courses, fbdspec, figcat, guides, i18n, inquiry, investigations, local_courses, mathlayout, module_icons, practice, svgids, units
+import answers_shown, courses, fbdspec, figcat, guides, i18n, inquiry, investigations, local_courses, mathlayout, module_icons, practice, reading_tips, svgids, units
 from i18n import t as T
 
 ROOT = pathlib.Path(os.environ.get("FYSIIKKALABRA_ROOT") or pathlib.Path(__file__).resolve().parents[1])   # tests build a copy
@@ -719,6 +719,10 @@ def build_language(lang):
         + "".join(f"<li>{esc(x)}</li>" for x in T("site.home_start_items")) + '</ul></details></section>')
     (out / "index.html").write_text(page(T("site.home_title"), home, "", "index.html", T("site.home_description"), main_class="home",
                                          full_title=f'{T("site.name")} — {T("site.subtitle")}'))
+    # Lukuvinkit (teacher 2026-11-03, scripts/reading_tips.py): a reading list of physics books, linked from every header and footer
+    rt = reading_tips.load(lang) if reading_tips.SOURCE.is_file() else None
+    if rt: (out / reading_tips.PAGE).write_text(page(rt["title"], reading_tips.body(T, lang), f'<a href="index.html">{T("site.name")}</a> › {esc(rt["title"])}',
+                                              reading_tips.PAGE, rt["description"], main_class="reading reading-tips"))
     if SITE.name == "site.tmp":                  # a lesson leaves the live site only with a warning (an annotation on CI)
         live = LIVE / out.relative_to(SITE)
         for old_page in sorted(live.glob("*.html")):
@@ -728,7 +732,7 @@ def build_language(lang):
                 removed.append(lid if lang == i18n.SOURCE else f"{lang}/{lid}")
                 print(f"{'::warning::' if os.environ.get('GITHUB_ACTIONS') else 'WARNING:'} {old_page.relative_to(LIVE)} is on the live site but its reviews are not current ({why}); this build removes it")
     pre = out.relative_to(SITE).as_posix() + "/" if out != SITE else ""
-    expected.extend(pre + n for n in ["index.html"] + [f"{c}.html" for c, _ in modules] + [f"{c}.html" for c in local] + [f"{i}.html" for i in built_ids] + [f"{i}.html" for i in inv_built] + [f"{g}.html" for g in guide_built] + [practice.page_name(c) for c in practice_built]
+    expected.extend(pre + n for n in ["index.html"] + ([reading_tips.PAGE] if reading_tips.SOURCE.is_file() else []) + [f"{c}.html" for c, _ in modules] + [f"{c}.html" for c in local] + [f"{i}.html" for i in built_ids] + [f"{i}.html" for i in inv_built] + [f"{g}.html" for g in guide_built] + [practice.page_name(c) for c in practice_built]
                     + [f"{u}.html" for u, ul in unit_pub.items() if ul == lang and not only])
     if SITE.name == "site.tmp" and lang in units.languages():   # a unit that lost its reviews leaves the site only with a warning
         for u in units.ids(lang):

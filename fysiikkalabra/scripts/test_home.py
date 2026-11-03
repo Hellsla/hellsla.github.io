@@ -142,6 +142,31 @@ for lang in i18n.languages():
             elif not frag and t.name != f.name: bad_links.append(f"{f.name} -> {href} (another page without a note)")
     expect(f"{lang}: every language link resolves (a missing page to the module page's note)", not bad_links, bad_links[:5])
 
+
+# Lukuvinkit (teacher 2026-11-03, scripts/reading_tips.py): every book of content/fi/lukuvinkit.json in its order, the
+# loan tag on exactly the books marked "loan", no subheading inside the list, each title a link to its record, and the
+# page reachable from the header and footer of every page of every language.
+import reading_tips
+expect("content/<lang>/lukuvinkit.json are valid (reading_tips.py)", not reading_tips.check(), reading_tips.check())
+for lang in i18n.languages():
+    T = i18n.T(lang); out = SITE if lang == i18n.SOURCE else SITE / lang
+    rp = (out / reading_tips.PAGE).read_text() if (out / reading_tips.PAGE).is_file() else ""
+    want = reading_tips.load(lang)["books"]
+    lst = re.search(r'<ol class="books">(.*?)</ol>', rp, re.S)
+    items = re.findall(r'<li class="book">(.*?)</li>', lst.group(1), re.S) if lst else []
+    titles = [_h.unescape(re.search(r'<h2 class="book-title"><a href="([^"]*)"[^>]*>(.*?)</a></h2>', i).group(2)) if '<h2 class="book-title">' in i else None for i in items]
+    expect(f"{lang} {reading_tips.PAGE}: all {len(want)} books in the given order", titles == [b["title"] for b in want], titles)
+    hrefs = [_h.unescape(re.search(r'<a href="([^"]*)"', i).group(1)) if "<a " in i else None for i in items]
+    expect(f"{lang} {reading_tips.PAGE}: each title links to its record", hrefs == [b["url"] for b in want], hrefs)
+    loan = [T("site.reading_loan") in _h.unescape(i) for i in items]
+    expect(f"{lang} {reading_tips.PAGE}: the loan tag on exactly books {[n for n, b in enumerate(want, 1) if b['loan']]}", loan == [b["loan"] for b in want], loan)
+    expect(f"{lang} {reading_tips.PAGE}: no subheadings inside the list", lst and len(re.findall(r"<h[1-6]", lst.group(1))) == len(items))
+    expect(f"{lang} {reading_tips.PAGE}: author, language, level, description and courses for every book",
+           all(_h.escape(b["author"]) in i and _h.escape(b["language"]) in i and _h.escape(b["level"]) in i and _h.escape(b["text"]) in i and _h.escape(b["courses"]) in i for b, i in zip(want, items)))
+    no_link = [p.name for p in out.glob("*.html") if 'href="lukuvinkit.html"' not in re.search(r'<header class="top">.*?</header>', p.read_text(), re.S).group(0)
+               or 'href="lukuvinkit.html"' not in re.search(r'<footer class="bottom">.*?</footer>', p.read_text(), re.S).group(0)]
+    expect(f"{lang}: every page links to {reading_tips.PAGE} in its header and footer", not no_link, no_link[:10])
+
 JS = """() => { const R = (e) => e.getBoundingClientRect(), out = [];
   if (document.scrollingElement.scrollWidth > innerWidth) out.push('horizontal scroll ' + document.scrollingElement.scrollWidth);
   const h = document.querySelector('header.top'), kids = [...h.children].map(R);
@@ -161,7 +186,7 @@ with sync_playwright() as pw:
     for lang in i18n.languages():
         base = SITE if lang == i18n.SOURCE else SITE / lang
         for w, hgt in ((360, 780), (390, 844), (768, 1024), (1440, 900), (1920, 1080)):
-            for name in ("index.html", "FY4.html") + tuple(f"{c}.html" for c in local_courses.load(lang)):
+            for name in ("index.html", "FY4.html", "lukuvinkit.html") + tuple(f"{c}.html" for c in local_courses.load(lang)):
                 pg = b.new_page(viewport={"width": w, "height": hgt}); pg.goto((base / name).as_uri())
                 pg.evaluate("document.fonts.ready.then(() => true)"); pg.wait_for_timeout(150)
                 found = pg.evaluate(JS)
