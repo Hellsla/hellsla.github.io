@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: a5f83ab368fa4a88
+CONTENT-HASH: 4217f2ca7589da0d
 
 ## Blocking
 
 ## Polish
-- [Minor] lesson.md Kaiutin, last sentence — "muuttuu … sisäenergiaksi, eli ne lämpenevät" changes the subject mid-sentence (energy, then coil and magnet). It is clear and correct, so optional: "… sisäenergiaksi, joten kela ja magneetti lämpenevät."
+- [Minor] "virtasilmukka" — agreement error: "sen vastakkaisiin sivuihin kohdistuu vastakkaiset voimat" → "kohdistuvat vastakkaiset voimat".
+- [Minor] "kaiutin" — "kelaa ja kalvoa … Kalvon liike": the chapter says "puhekela" and "kartio"; use "puhekelaa ja kartiota … Kartion liike" so an S2 reader meets one word.
+- [Minor] for science: "kaiutin" does not say the coil carries alternating current, which causes the back-and-forth motion.
 
 ## Checked
-- Delta: the one changed sentence (Kaiutin, "eli ne lämpenevät") in fy7-4-theory-1280-2.png. It reads naturally, has no symbols or numbers, and the glossary term "sisäenergia" is used consistently.
-- fy7-4-theory-1280-2.png and -3.png: layout around the paragraph is intact. Speaker figure, formula boxes and the summary list are unchanged, with no clipping and LaTeX labels rendering.
-- fy7-4-fig-9-390.png (speaker figure): unchanged and legible at 390 px.
-- Hash run at the start and at the end: identical.
+batch delta review: stamp matches hash; captured section.kc from preview/fi-easy/fy7-4.html at 390 and 1280 px (/tmp/claude-0/-home-user-hellsla-github-io/ce2c3e11-97da-5c12-97c3-5c73d92e9898/scratchpad/kc/fy7-4-kc-390.png, -1280.png): four items legible, no overflow, no KaTeX errors.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 4 · accessibility 5

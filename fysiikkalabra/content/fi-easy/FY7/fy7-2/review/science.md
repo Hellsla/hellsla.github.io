@@ -1,9 +1,12 @@
-VERDICT: PASS
-CONTENT-HASH: 821efdb879252c5d
+VERDICT: FAIL
+CONTENT-HASH: 779c49d37f96baae
 
 ## Blocking
+- **B** key_concepts "massaspektrometri": "raskaamman hiukkasen rata kaartuu loivemmin" holds only for the same charge and speed ($r = mv/(qB)$); the lesson states this condition (§Massaspektrometri: "Samalla vauhdilla ja varauksella radan säde on suoraan verrannollinen massaan"). Add it, e.g. "... koska samalla vauhdilla ja varauksella raskaamman hiukkasen rata kaartuu loivemmin."
 
 ## Polish
+- The summary bullet (lesson.md line 480, "koska säde on verrannollinen massaan") lacks the same condition; aligning it would keep the claim identical everywhere.
+- "ympyrärata": could add "kun hiukkanen liikkuu kohtisuoraan homogeenista kenttää vastaan", the condition under which the force stays centre-pointing.
 
 ## Checked
-- batch delta review: lesson.md:474 and exit-ticket.json now say "radan säde" is about 1840 times smaller, not "rata". That is right. With equal |q|, v and B, r = mv : (qB) ∝ m, and m_p : m_e ≈ 1836 ≈ 1840. The radius is the quantity the ratio applies to (the path length of a full circle scales the same way, but "rata" alone was vague). Both places now say the same thing, and they agree with the formula stated next to them. The opposite curving directions are unchanged and correct. No options changed. The hash was the same at the start and the end.
+batch delta review: four key_concepts against lesson.md (magnetic force on moving charge, always ⊥ velocity: correct; circular path: correct; velocity selector passes only $v = E/B$ straight: correct; mass spectrometer: missing condition above). No choices changed.
