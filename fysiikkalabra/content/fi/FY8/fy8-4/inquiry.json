@@ -1,0 +1,434 @@
+{
+  "version": 1,
+  "contribution": "Fotoni saa liikemäärän $p = \\tfrac{h}{\\lambda}$ ja neljä mallia; kaksoisrakokoe yksittäisillä fotoneilla ja elektroneilla näyttää aalto-hiukkasdualismin ja todennäköisyystulkinnan, ja Comptonin ilmiö todistaa fotonin liikemäärän.",
+  "learn": [
+    "selittämään, miten kaksoisrakokokeen raitakuvio syntyy yksittäisten fotonien ja elektronien osumista.",
+    "kuvaamaan fotonia eri malleilla ja selittämään Comptonin ilmiön fotonin energian ja liikemäärän avulla.",
+    "laskemaan fotonin liikemäärän ja valon fotonien lukumäärän sekunnissa."
+  ],
+  "prior": [
+    "Kaksi aaltoa vahvistaa tai heikentää toisiaan sen mukaan, kuinka suuri niiden matkaero on (luku *Aaltojen interferenssi*)",
+    "Fotonin energia on $E = hf = \\tfrac{hc}{\\lambda}$, ja yksi fotoni voi irrottaa metallista enintään yhden elektronin (luku *Valosähköinen ilmiö ja fotoni*)",
+    "Kun atomi siirtyy alemmalle energiatasolle, se lähettää fotonin, jonka energia on tasojen erotus (luku *Vetyatomin energiatasot ja Bohrin malli*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Vuonna 1989 japanilainen tutkimusryhmä lähetti elektroneja yksi kerrallaan kohti kaksoisrakoa vastaavaa laitetta ja kuvasi varjostinta videolle. Ensimmäiset elektronit näkyivät yksittäisinä valopisteinä, jotka syttyivät näennäisesti satunnaisiin kohtiin. Kun pisteitä oli kertynyt kymmeniä tuhansia, varjostimella näkyi säännöllisiä raitoja. Sama koe voidaan tehdä niin heikolla valolla, että laitteessa on kerrallaan yleensä vain yksi fotoni.",
+      "question": "Kulkeeko jokainen elektroni tai fotoni vain toisen raon kautta, ja jos kulkee, mistä raidat tulevat?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Kertaa: valosähköinen ilmiö",
+      "prompt": "Metallilevyä valaistaan valolla, joka irrottaa siitä elektroneja. Aallonpituus pidetään samana, mutta valon intensiteetti kaksinkertaistetaan. Mitä tapahtuu?",
+      "choices": [
+        {
+          "text": "Irtoavien elektronien suurin liike-energia kaksinkertaistuu, koska levy saa enemmän energiaa.",
+          "feedback": "Suurin liike-energia riippuu yhden fotonin energiasta $hf$, ei valon määrästä (luku *Valosähköinen ilmiö ja fotoni*). Sama aallonpituus tarkoittaa samaa fotonin energiaa, joten jokainen elektroni saa yhtä paljon energiaa kuin ennenkin."
+        },
+        {
+          "text": "Elektroneja irtoaa sekunnissa noin kaksi kertaa enemmän, mutta niiden suurin liike-energia pysyy samana.",
+          "correct": true,
+          "feedback": "Oikein. Kaksinkertainen intensiteetti tarkoittaa kaksinkertaista fotonien määrää sekunnissa, ja yksi fotoni irrottaa enintään yhden elektronin. Fotonin energia $hf$ ei muutu (luku *Valosähköinen ilmiö ja fotoni*). Tällä tunnilla katsotaan, miten fotonit käyttäytyvät, kun niitä on hyvin vähän."
+        },
+        {
+          "text": "Jokaisen fotonin energia kaksinkertaistuu, joten elektronit irtoavat nopeammin.",
+          "feedback": "Fotonin energia on $hf$, ja se riippuu vain taajuudesta. Intensiteetin kasvattaminen lisää fotonien lukumäärää, ei yksittäisen fotonin energiaa."
+        },
+        {
+          "text": "Mikään ei muutu, koska intensiteetti ei vaikuta valosähköiseen ilmiöön lainkaan.",
+          "feedback": "Intensiteetti vaikuttaa: se kertoo, kuinka monta fotonia levyyn osuu sekunnissa. Siksi irtoavia elektroneja tulee enemmän, vaikka kunkin suurin liike-energia ei muutu."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 1: toinen rako auki",
+      "prompt": "Kaksoisrakokokeessa fotonit lähetetään yksi kerrallaan. Varjostimelta lasketaan osumat kapealla välillä kohdassa $x_0 = 1{,}0\\,\\text{mm}$, hieman sivussa keskikohdasta. Ensin vain vasen rako on auki. Sitten myös oikea rako avataan, ja fotoneja lähetetään yhtä monta. Mitä laskentavälin osumien osuudelle tapahtuu?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "Osuus kasvaa, koska fotoneilla on nyt kaksi reittiä samaan kohtaan.",
+          "feedback": "Mallin arvot kumoavat tämän: yhden raon kanssa laskentaväliin osui $43$ fotonia $1000$:sta ($4{,}3\\,\\%$), kahden raon kanssa vain $3$ ($0{,}3\\,\\%$). Jos fotonit kulkisivat kuin kuulat jommankumman raon kautta, toinen rako lisäisi osumia kaikkialla. Kohdassa $x_0 = 1{,}0\\,\\text{mm}$ kahdesta raosta tulevat aallot heikentävät toisiaan."
+        },
+        {
+          "text": "Osuus pysyy samana, koska kukin fotoni kulkee vain yhden raon kautta.",
+          "feedback": "Mallin arvot kumoavat tämän: osuus putosi $4{,}3\\,\\%$:sta $0{,}3\\,\\%$:iin, kun toinen rako avattiin. Jokaista fotonia koskee siis se, että molemmat raot ovat auki: sen aalto kulkee kummankin raon kautta ja heikkenee tässä kohdassa."
+        },
+        {
+          "text": "Osuus pienenee lähes nollaan, koska kahden raon aallot heikentävät toisiaan.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä: yhden raon kanssa laskentaväliin osui $43$ fotonia $1000$:sta ($4{,}3\\,\\%$), kahden raon kanssa $3$ ($0{,}3\\,\\%$). Kohta $x_0 = 1{,}0\\,\\text{mm}$ on tumma raita: rakojen matkaero on siinä puolikas aallonpituus. Toisen raon avaaminen vähentää osumia, mitä kuulamalli ei selitä."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 2: kulkureitin mittaus",
+      "prompt": "Elektronit lähetetään yksi kerrallaan, molemmat raot ovat auki, ja varjostimelle on kertynyt raitakuvio. Rakojen viereen lisätään ilmaisimet, jotka kertovat, kumman raon kautta kukin elektroni kulkee. Mitä varjostimen kuviolle tapahtuu?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-2",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "Raidat säilyvät ennallaan, koska ilmaisin vain havaitsee elektronin.",
+          "feedback": "Mallin arvot kumoavat tämän: kun reitti mitattiin, laskentaväliin $x_0 = 1{,}0\\,\\text{mm}$ osui $43$ elektronia $1000$:sta, kun ilman mittausta osui $3$. Tumma raita katosi. Kulkureitin selvittäminen vaatii vuorovaikutuksen elektronin kanssa, ja silloin kahden raon aallot eivät enää interferoi."
+        },
+        {
+          "text": "Raidat häviävät, ja osumat jakautuvat kuin kahden yhden raon kuvion summa.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä: kun reitti mitattiin, laskentaväliin osui $43$ elektronia $1000$:sta ($4{,}3\\,\\%$), samoin kuin yhden raon kanssa, ja ilman mittausta $3$ ($0{,}3\\,\\%$). Kun tiedetään, kumman raon kautta elektroni kulki, interferenssiä ei ole."
+        },
+        {
+          "text": "Osumat kasautuvat kahdeksi kapeaksi viivaksi rakojen kohdalle varjostimella.",
+          "feedback": "Mallin arvot kumoavat tämän: jakauma on leveä yksi huippu, kuten yhden raon kuviossa, ja laskentaväliin $x_0 = 1{,}0\\,\\text{mm}$ osui $43$ elektronia $1000$:sta. Kapea rako levittää aallon laajalle alueelle, joten rakojen terävät varjot eivät synny."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Lähetä fotoneja tai elektroneja yksi kerrallaan kahden raon läpi ja katso, miten yksittäisistä osumista syntyy kuvio.",
+      "howto": "*Käynnistä* lähettää kvantteja yksi kerrallaan: haalea aalto leviää lähteestä rakojen läpi, ja kvantti havaitaan varjostimella yhtenä pisteenä. *+1000 osumaa* lisää tuhat osumaa kerralla. *Tyhjennä* tyhjentää varjostimen. Valitse *Hiukkaset*, *Raot* (vain vasen, molemmat tai vain oikea) ja *Kulkureitin mittaus*. Kun mittaus on päällä, rakojen vieressä olevista lampuista syttyy se, jonka kautta kvantti kulki. Ylhäällä on laite ylhäältä katsottuna, keskellä varjostin edestä ja alhaalla osumien pylväskuvaaja $0{,}5\\,\\text{mm}$:n väleissä. Liukusäädin siirtää vihreää laskentaväliä $x_0 \\pm 0{,}2\\,\\text{mm}$. Kun vaihdat hiukkasia, rakoja tai mittausta, varjostin tyhjenee. *Nopeus* muuttaa vain animaation tahtia.",
+      "model": "Osumapaikat arvotaan mallin todennäköisyysjakaumasta, joten luvut ovat mallin arvoja eivätkä mittauksia. Arvonta alkaa jokaisen tyhjennyksen jälkeen samasta kohdasta, joten sama koe antaa aina samat luvut. Fotonien ja elektronien kuviot on piirretty samaan mittakaavaan vertailun helpottamiseksi; todellisissa kokeissa raitaväli on aivan erilainen. Rakojen leveys ja etäisyys on piirretty suurennettuina. Kulkureitin mittaus on ihanteellinen: se kertoo aina oikean raon. Laitteessa on kerrallaan vain yksi kvantti, eikä kvantteja katoa matkalla. Haalea aalto havainnollistaa todennäköisyysaaltoa eikä ole mitattava suure.",
+      "calc": "Kun molemmat raot ovat auki eikä reittiä mitata, osumien todennäköisyys kohdassa $x$ on verrannollinen aaltomallin intensiteettiin\n\n$$I(x) \\propto \\cos^2\\!\\left(\\frac{\\pi x}{s}\\right) \\cdot \\left(\\frac{\\sin(\\pi x / a)}{\\pi x / a}\\right)^2$$\n\nmissä raitojen väli on $s = 2{,}0\\,\\text{mm}$ ja yhden raon kuvion ensimmäinen nollakohta on $a = 10\\,\\text{mm}$. Yhdellä raolla tai mitatulla reitillä ensimmäinen tekijä puuttuu, joten raitoja ei ole. Tumma raita on siellä, missä $\\cos^2$-tekijä on nolla: $x = \\pm 1{,}0\\,\\text{mm}, \\pm 3{,}0\\,\\text{mm}, \\ldots$. Osuus on $n : N$, missä $n$ on laskentavälin osumat ja $N$ kaikki osumat. Katkoviiva on odotettu osumamäärä $N$ kertaa välin todennäköisyys."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 1: yksi rako vai kaksi",
+      "intro": "Testaa ennuste 1. Fotonit, kulkureitin mittaus pois ja laskentaväli $x_0 = 1{,}0\\,\\text{mm}$ pysyvät vakioina; vaihda vain rakoja. Seuraa ensin muutamaa yksittäistä fotonia *Käynnistä*-painikkeella. Paina sitten *+1000 osumaa* ja kirjaa mittaus. Avaa molemmat raot, paina taas *+1000 osumaa* ja kirjaa.",
+      "initial": {
+        "hiukkanen": "fotoni",
+        "raot": "vasen",
+        "reitti": "ei",
+        "x0": 1
+      },
+      "locked": [
+        "hiukkanen",
+        "reitti",
+        "x0"
+      ],
+      "vary": "raot",
+      "names": {
+        "hiukkanen": "hiukkaset",
+        "raot": "raot",
+        "reitti": "kulkureitin mittaus",
+        "x0": "laskentaväli"
+      },
+      "values": {
+        "hiukkanen": {
+          "fotoni": "fotonit",
+          "elektroni": "elektronit"
+        },
+        "raot": {
+          "vasen": "vain vasen",
+          "molemmat": "molemmat",
+          "oikea": "vain oikea"
+        },
+        "reitti": {
+          "ei": "ei mitata",
+          "kylla": "mitataan"
+        }
+      },
+      "units": {
+        "x0": "mm"
+      },
+      "measure": [
+        {
+          "key": "N",
+          "label": "N"
+        },
+        {
+          "key": "n",
+          "label": "n"
+        },
+        {
+          "key": "osuus",
+          "label": "n : N (%)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 2: kumman raon kautta?",
+      "intro": "Testaa ennuste 2. Nyt lähetetään elektroneja, ja molemmat raot ovat auki. Laskentaväli on tummassa raidassa $x_0 = 1{,}0\\,\\text{mm}$. Paina *+1000 osumaa* ilman kulkureitin mittausta ja kirjaa. Kytke sitten mittaus päälle, paina *+1000 osumaa* ja kirjaa. Vertaa varjostimen kuvioita.",
+      "initial": {
+        "hiukkanen": "elektroni",
+        "raot": "molemmat",
+        "reitti": "ei",
+        "x0": 1
+      },
+      "locked": [
+        "hiukkanen",
+        "raot",
+        "x0"
+      ],
+      "vary": "reitti",
+      "names": {
+        "hiukkanen": "hiukkaset",
+        "raot": "raot",
+        "reitti": "kulkureitin mittaus",
+        "x0": "laskentaväli"
+      },
+      "values": {
+        "hiukkanen": {
+          "fotoni": "fotonit",
+          "elektroni": "elektronit"
+        },
+        "raot": {
+          "vasen": "vain vasen",
+          "molemmat": "molemmat",
+          "oikea": "vain oikea"
+        },
+        "reitti": {
+          "ei": "ei mitata",
+          "kylla": "mitataan"
+        }
+      },
+      "units": {
+        "x0": "mm"
+      },
+      "measure": [
+        {
+          "key": "N",
+          "label": "N"
+        },
+        {
+          "key": "n",
+          "label": "n"
+        },
+        {
+          "key": "osuus",
+          "label": "n : N (%)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös: kuula vai aalto?",
+      "after": [
+        "koe-1",
+        "koe-2"
+      ],
+      "prompt": "Kirjoita taulukoidesi perusteella: miten laskentavälin osuus muuttui, kun toinen rako avattiin, ja kun kulkureitti mitattiin? Miksi tulosta ei voi selittää sillä, että jokainen kvantti kulkee kuulan tavoin yhden raon kautta? Mitä aallon ja yksittäisen osuman välillä on?",
+      "model": "Yhden raon kanssa laskentaväliin $x_0 = 1{,}0\\,\\text{mm}$ osui $43$ fotonia $1000$:sta, mutta kun molemmat raot olivat auki, vain $3$. Jos fotonit kulkisivat kuulina jommankumman raon kautta, toisen raon avaaminen lisäisi osumia. Kumpikin rako vaikuttaa jokaiseen kvanttiin: sen aalto kulkee molempien rakojen kautta, ja tässä kohdassa aallot heikentävät toisiaan. Elektronit käyttäytyivät samoin. Kun reitti mitattiin, tumma raita katosi ($43$ osumaa), koska tieto reitistä poistaa interferenssin. Yksittäinen osuma on satunnainen piste, mutta aallon intensiteetti kertoo, millä todennäköisyydellä osuma tulee kuhunkin kohtaan. Luvut ovat mallin arvoja.",
+      "criteria": [
+        "Vertasin osuuksia yhden ja kahden raon kanssa ja huomasin, että toinen rako vähensi osumia tummassa raidassa.",
+        "Perustelin, miksi kuulamalli ei selitä tätä: siinä toinen rako lisäisi osumia.",
+        "Kerroin, että kulkureitin mittaus poisti raidat.",
+        "Kerroin, että aalto antaa osumien todennäköisyyden, vaikka yksittäinen osuma on satunnainen."
+      ]
+    },
+    {
+      "id": "compton-data",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Comptonin sirontakoe",
+      "source": "model",
+      "text": "Arthur Compton suuntasi vuonna 1923 röntgensäteilyä grafiittiin ja mittasi, mikä on eri suuntiin siroavan säteilyn aallonpituus $\\lambda'$. Tulevan säteilyn aallonpituus oli $\\lambda = 0{,}0711\\,\\text{nm}$. Taulukon arvot on laskettu Comptonin mallista, ja Comptonin mittaukset noudattivat niitä.\n\n| Sirontakulma | $\\lambda'$ ($\\text{nm}$) |\n| --- | --- |\n| $0^\\circ$ | $0{,}0711$ |\n| $45^\\circ$ | $0{,}0718$ |\n| $90^\\circ$ | $0{,}0735$ |\n| $135^\\circ$ | $0{,}0752$ |\n| $180^\\circ$ | $0{,}0760$ |",
+      "question": {
+        "type": "choice",
+        "layout": "models",
+        "prompt": "Mikä selitys sopii taulukkoon?",
+        "choices": [
+          {
+            "text": "Aaltomalli: säteily saa elektronit värähtelemään omassa tahdissaan, ja ne säteilevät uudelleen samalla taajuudella.",
+            "feedback": "Tämä malli ennustaa, että sironneen säteilyn aallonpituus on kaikissa suunnissa $0{,}0711\\,\\text{nm}$. Taulukossa se kasvaa sirontakulman mukana arvoon $0{,}0760\\,\\text{nm}$ asti, joten pelkkä aaltomalli ei riitä."
+          },
+          {
+            "text": "Fotonimalli: fotoni törmää elektroniin ja luovuttaa sille osan energiastaan, sitä enemmän mitä jyrkemmin se kimpoaa.",
+            "correct": true,
+            "feedback": "Oikein. Sironneen fotonin energia $hf' = \\tfrac{hc}{\\lambda'}$ on pienempi kuin tulevan, joten aallonpituus on pidempi. Suoraan taaksepäin kimpoava fotoni luovuttaa eniten energiaa ja liikemäärää, joten sen $\\lambda'$ on suurin. Tämä on Comptonin ilmiö."
+          },
+          {
+            "text": "Hidastumismalli: säteily hidastuu grafiitissa, ja hitaamman aallon aallonpituus on pidempi.",
+            "feedback": "Sironnut säteily mitataan grafiitin ulkopuolella, jossa se etenee taas nopeudella $c$. Hidastuminen ei myöskään selittäisi, miksi aallonpituus riippuu sirontakulmasta."
+          }
+        ]
+      }
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Palaa ennusteisiisi",
+      "optional": true,
+      "prompt": "Vertaa ennusteitasi kokeiden mallin arvoihin. Palaa sitten alun kysymykseen: kulkeeko jokainen elektroni vain toisen raon kautta, ja mistä raidat tulevat?",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2"
+      ]
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe",
+      "prompt": "Opiskelija laskee vihreän valon fotonin liikemäärän, kun aallonpituus on $520\\,\\text{nm}$:\n\n$$\\begin{aligned} p &= \\frac{h}{\\lambda} \\\\ &= \\frac{6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}}{520} \\\\ &= 1{,}27 \\cdot 10^{-36}\\,\\text{kg}\\cdot\\text{m/s} \\end{aligned}$$\n\nMissä on virhe?",
+      "choices": [
+        {
+          "text": "Fotonilla ei ole massaa, joten sen liikemäärä on nolla.",
+          "feedback": "Fotonilla ei ole massaa, mutta sillä on liikemäärä $p = \\tfrac{h}{\\lambda}$. Liikemäärän siirtyminen näkyy esimerkiksi Comptonin ilmiössä. Kaava on oikea; virhe on sijoituksessa."
+        },
+        {
+          "text": "Aallonpituus on sijoitettu nanometreinä eikä metreinä.",
+          "correct": true,
+          "feedback": "Oikein. SI-yksiköissä $\\lambda = 520 \\cdot 10^{-9}\\,\\text{m}$, jolloin $p = \\dfrac{6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}}{520 \\cdot 10^{-9}\\,\\text{m}} = 1{,}27 \\cdot 10^{-27}\\,\\text{kg}\\cdot\\text{m/s}$. Opiskelijan tulos on miljardi kertaa liian pieni, ja yksikkö olisi paljastanut virheen: $\\tfrac{\\text{J}\\,\\text{s}}{\\text{nm}}$ ei ole $\\text{kg}\\cdot\\text{m/s}$."
+        },
+        {
+          "text": "Kaavassa pitää olla myös valon nopeus: $p = \\tfrac{hc}{\\lambda}$.",
+          "feedback": "$\\tfrac{hc}{\\lambda}$ on fotonin energia $E$, jonka yksikkö on joule. Liikemäärä on $p = \\tfrac{E}{c} = \\tfrac{h}{\\lambda}$, joten valon nopeus supistuu pois."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Sovella uuteen tilanteeseen",
+      "prompt": "Aurinkopurje on ohut, peilimäinen kalvo, jota auringonvalo työntää avaruudessa. Maan etäisyydellä Auringosta auringonvalon intensiteetti eli teho pinta-alaa kohti on $1361\\,\\tfrac{\\text{W}}{\\text{m}^2}$. Purjeen pinta-ala on $32\\,\\text{m}^2$, ja se on kohtisuorassa valoa vastaan. Oleta, että kaikki valo heijastuu suoraan takaisin. Kuinka suuren voiman valo kohdistaa purjeeseen? Vastaa mikronewtoneina ($\\mu\\text{N}$).",
+      "answer": 290.5,
+      "unit": "µN",
+      "tolerance": 0.02,
+      "hints": [
+        "Mikä on voiman ja liikemäärän yhteys? Kuinka paljon yhden fotonin liikemäärä muuttuu, kun se heijastuu suoraan takaisin?",
+        "Sekunnissa purjeeseen tulee energia $P = IA$. Kaikkien näiden fotonien liikemäärä yhteensä on $\\tfrac{P}{c}$, koska jokaisella fotonilla $p = \\tfrac{E}{c}$.",
+        "Heijastuksessa liikemäärä muuttuu kaksinkertaisesti: $F = \\dfrac{2IA}{c} = \\dfrac{2 \\cdot 1361 \\cdot 32}{2{,}998 \\cdot 10^8}\\,\\text{N}$."
+      ],
+      "mistakes": [
+        {
+          "value": 145.3,
+          "feedback": "Tämä olisi voima, jos purje imisi valon. Heijastuessa fotonin liikemäärä kääntyy vastakkaiseksi, joten liikemäärän muutos ja voima ovat kaksinkertaiset."
+        },
+        {
+          "value": 9.08,
+          "feedback": "Pinta-ala puuttuu. Purjeeseen tulee sekunnissa energia $IA$, ei pelkkä $I$: kerro vielä pinta-alalla $32\\,\\text{m}^2$."
+        },
+        {
+          "value": 0.0002905,
+          "feedback": "Laskusi on oikein, mutta vastaus on newtoneina. Muunna mikronewtoneiksi: $1\\,\\text{N} = 10^6\\,\\mu\\text{N}$."
+        }
+      ],
+      "solution": "**Annettu:** auringonvalon intensiteetti $I = 1361\\,\\tfrac{\\text{W}}{\\text{m}^2}$, purjeen pinta-ala $A = 32\\,\\text{m}^2$, valo heijastuu kohtisuoraan takaisin; $c = 2{,}998 \\cdot 10^8\\,\\text{m/s}$\n\n**Kysytty:** valon purjeeseen kohdistama voima $F$ mikronewtoneina\n\n**Periaate:** Voima on liikemäärän muutos aikayksikössä. Jokaisen fotonin liikemäärä on $p = \\tfrac{E}{c}$. Kun fotoni heijastuu suoraan takaisin, sen liikemäärä muuttuu arvosta $p$ arvoon $-p$, joten purje saa liikemäärän $2p$. Sekunnissa purjeeseen tulee energia $P = IA$, joten fotonien liikemäärää tulee sekunnissa $\\tfrac{P}{c}$.\n\n**Kaava:** $F = \\dfrac{\\Delta p}{\\Delta t} = 2 \\cdot \\dfrac{P}{c}$, missä $P = IA$, joten $F = \\dfrac{2IA}{c}$\n\n**Muunnokset:** $\\tfrac{\\text{W}}{\\text{m}^2} \\cdot \\text{m}^2 = \\text{W} = \\tfrac{\\text{J}}{\\text{s}}$ ja $\\tfrac{\\text{J/s}}{\\text{m/s}} = \\tfrac{\\text{J}}{\\text{m}} = \\text{N}$. Lopuksi $1\\,\\text{N} = 10^6\\,\\mu\\text{N}$.\n\n**Sijoitus:** $F = \\dfrac{2 \\cdot 1361\\,\\tfrac{\\text{W}}{\\text{m}^2} \\cdot 32\\,\\text{m}^2}{2{,}998 \\cdot 10^8\\,\\text{m/s}} = \\dfrac{87\\,104\\,\\text{W}}{2{,}998 \\cdot 10^8\\,\\text{m/s}} = 2{,}905 \\cdot 10^{-4}\\,\\text{N} = 290{,}5\\,\\mu\\text{N}$\n\n**Vastaus:** $2{,}9 \\cdot 10^2\\,\\mu\\text{N}$, kaksi merkitsevää numeroa kuten pinta-alassa $32\\,\\text{m}^2$.\n\n**Järkevyys:** Voima on noin $0{,}3\\,\\text{mN}$, suunnilleen hyttysen paino. Se on pieni, mutta tyhjiössä se vaikuttaa jatkuvasti, joten kevyt luotain kiihtyy kuukausien aikana suureen nopeuteen. Jos purje imisi valon, voima olisi puolet, $145\\,\\mu\\text{N}$."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Harjoittele kolmella tasolla. Tason 1 tehtävissä käytetään yhtä kaavaa, tason 2 tehtävissä tarvitaan muunnos tai kaksi vaihetta, ja tason 3 tehtävät yhdistävät fotonin liikemäärän uusiin tilanteisiin."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Käsite",
+      "prompt": "Kaksoisrakokokeessa elektronit lähetetään yksi kerrallaan, ja varjostin tallentaa jokaisen osuman. Mikä väite kokeesta on oikea?",
+      "choices": [
+        {
+          "text": "Yksittäisen elektronin osumapaikkaa ei voi ennustaa, mutta monista osumista syntyy raitakuvio.",
+          "correct": true,
+          "feedback": "Oikein. Aaltomalli antaa todennäköisyyden, jolla elektroni havaitaan kussakin kohdassa. Yksittäinen osuma on satunnainen, mutta tuhansien osumien jakauma noudattaa aallon intensiteettiä."
+        },
+        {
+          "text": "Raidat syntyvät vasta, kun laitteessa on monta elektronia yhtä aikaa vaikuttamassa toisiinsa.",
+          "feedback": "Raidat syntyvät, vaikka elektronit tulevat yksi kerrallaan, kuten esimerkin heikossa valossa fotonit. Kuvio ei siis synny hiukkasten keskinäisestä vuorovaikutuksesta."
+        },
+        {
+          "text": "Jokainen elektroni levittäytyy varjostimelle heikoksi raitakuvioksi, ja kuviot summautuvat.",
+          "feedback": "Jokainen elektroni havaitaan yhdessä kohdassa yhtenä pisteenä. Raitakuvio on monien pisteiden jakauma, ei yksittäisen elektronin jälki."
+        },
+        {
+          "text": "Kukin elektroni kulkee yhden raon kautta, ja raidat ovat rakojen terävät varjot.",
+          "feedback": "Rakojen varjoja olisi kaksi, mutta raitoja on monta. Lisäksi toisen raon avaaminen vähentää osumia tummissa raidoissa, mitä yhden raon kautta kulkevat kuulat eivät selitä."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Comptonin ilmiö",
+      "prompt": "Röntgenfotoni, jonka aallonpituus on $0{,}0600\\,\\text{nm}$, siroaa lähes vapaasta elektronista. Sironneen fotonin aallonpituus on $0{,}0624\\,\\text{nm}$. Kuinka suuren liike-energian elektroni saa? Vastaa elektronivoltteina.",
+      "answer": 794.9,
+      "unit": "eV",
+      "tolerance": 0.02,
+      "hints": [
+        "Mihin fotonin menettämä energia joutuu?",
+        "$E_\\text{k} = \\dfrac{hc}{\\lambda} - \\dfrac{hc}{\\lambda'}$, kun aallonpituudet ovat metreinä.",
+        "Tulevan fotonin energia on $3{,}3108 \\cdot 10^{-15}\\,\\text{J}$ ja sironneen $3{,}1835 \\cdot 10^{-15}\\,\\text{J}$. Jaa erotus luvulla $1{,}602 \\cdot 10^{-19}\\,\\text{J}$."
+      ],
+      "mistakes": [
+        {
+          "value": 1.273e-16,
+          "feedback": "Laskusi on oikein, mutta vastaus on jouleina. Muunna elektronivolteiksi: jaa luvulla $1{,}602 \\cdot 10^{-19}\\,\\text{J}$, koska $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$."
+        },
+        {
+          "value": 516700,
+          "feedback": "Laskit $\\tfrac{hc}{\\lambda' - \\lambda}$, mutta aallonpituuksien erotus ei ole minkään fotonin aallonpituus. Laske kummankin fotonin energia erikseen ja vähennä ne: $E_\\text{k} = \\tfrac{hc}{\\lambda} - \\tfrac{hc}{\\lambda'}$."
+        }
+      ],
+      "solution": "**Annettu:** tulevan röntgenfotonin aallonpituus $\\lambda = 0{,}0600\\,\\text{nm}$, sironneen $\\lambda' = 0{,}0624\\,\\text{nm}$; $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^8\\,\\text{m/s}$, $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$\n\n**Kysytty:** elektronin saama liike-energia $E_\\text{k}$ elektronivoltteina\n\n**Periaate:** Comptonin ilmiössä fotoni törmää lähes vapaaseen elektroniin. Energia säilyy, joten elektroni saa sen energian, jonka fotoni menettää: $hf = hf' + E_\\text{k}$. Kummankin fotonin energia saadaan aallonpituudesta.\n\n**Kaava:** $\\dfrac{hc}{\\lambda} = \\dfrac{hc}{\\lambda'} + E_\\text{k}$, josta $E_\\text{k} = \\dfrac{hc}{\\lambda} - \\dfrac{hc}{\\lambda'}$\n\n**Muunnokset:** $0{,}0600\\,\\text{nm} = 0{,}0600 \\cdot 10^{-9}\\,\\text{m}$ ja $0{,}0624\\,\\text{nm} = 0{,}0624 \\cdot 10^{-9}\\,\\text{m}$. Lopuksi joulet elektronivolteiksi: $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$.\n\n**Sijoitus:** $hc = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s} \\cdot 2{,}998 \\cdot 10^8\\,\\text{m/s} = 1{,}9865 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m}$. $E_\\text{k} = \\dfrac{1{,}9865 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m}}{0{,}0600 \\cdot 10^{-9}\\,\\text{m}} - \\dfrac{1{,}9865 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m}}{0{,}0624 \\cdot 10^{-9}\\,\\text{m}} = 3{,}3108 \\cdot 10^{-15}\\,\\text{J} - 3{,}1835 \\cdot 10^{-15}\\,\\text{J} = 1{,}273 \\cdot 10^{-16}\\,\\text{J}$. Elektronivolteiksi: $E_\\text{k} = \\dfrac{1{,}273 \\cdot 10^{-16}\\,\\text{J}}{1{,}602 \\cdot 10^{-19}\\,\\text{J}} \\cdot 1\\,\\text{eV} = 794{,}9\\,\\text{eV}$\n\n**Vastaus:** $7{,}9 \\cdot 10^2\\,\\text{eV}$, kaksi merkitsevää numeroa, koska aallonpituuksien ero $0{,}0024\\,\\text{nm}$ tunnetaan vain kahden numeron tarkkuudella.\n\n**Järkevyys:** Tulevan fotonin energia on $\\tfrac{3{,}31 \\cdot 10^{-15}\\,\\text{J}}{1{,}602 \\cdot 10^{-19}\\,\\text{J}} \\cdot 1\\,\\text{eV} \\approx 20{,}7\\,\\text{keV}$, ja aallonpituus kasvaa $4\\,\\%$, joten energiasta siirtyy elektronille noin $4\\,\\%$ eli noin $0{,}8\\,\\text{keV}$. Elektroni saa energiaa ja fotoni menettää, joten $E_\\text{k}$ on positiivinen."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Arvioi väite",
+      "optional": true,
+      "prompt": "Ystäväsi väittää: ”Valo on oikeasti aaltoa. Fotoni on vain laskuapu, jota tarvitaan valosähköisessä ilmiössä.” Arvioi väite kaksoisrakokokeen ja Comptonin ilmiön avulla.",
+      "model": "Väite on vain osittain oikea. Aaltomalli selittää kaksoisrakokokeen raitakuvion, mutta heikolla valolla tehdyssä kokeessa valo havaitaan yksittäisinä fotoneina, jotka osuvat varjostimeen yksi kerrallaan yhteen kohtaan. Comptonin ilmiössä sironneen röntgensäteilyn aallonpituus kasvaa sirontakulman mukana, mitä aaltomalli ei selitä. Fotonimallissa fotoni luovuttaa elektronille osan energiastaan ja liikemäärästään $p = \\tfrac{h}{\\lambda}$, kuten törmäyksessä. Fotoni ei siis ole pelkkä laskuapu. Valo ei ole pelkkää aaltoa eikä pelkkiä kuulia: aalto kertoo todennäköisyyden, ja fotoni on kvantti, joka havaitaan yhdessä kohdassa. Tämä on aalto-hiukkasdualismi.",
+      "criteria": [
+        "Totean, että aaltomalli selittää raitakuvion.",
+        "Kerron, että heikossa valossa fotonit havaitaan yksittäisinä osumina.",
+        "Selitän Comptonin ilmiön fotonin energian ja liikemäärän luovutuksena ja totean, ettei aaltomalli selitä aallonpituuden kasvua.",
+        "Päättelen, että tarvitaan molemmat ominaisuudet: aalto antaa todennäköisyyden ja fotoni havaitaan kvanttina."
+      ]
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Lopuksi kaksi nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+    }
+  ]
+}
