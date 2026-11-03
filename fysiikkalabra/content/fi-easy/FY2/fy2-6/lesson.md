@@ -228,12 +228,12 @@ Voimalaitos ei tee energiaa tyhjästä. Se muuttaa luonnonvaran energian sähkö
 </svg>
 
 ### Uusiutuva ja uusiutumaton energia
-Vesi, tuuli ja auringonsäteily ovat uusiutuvia. Ne eivät lopu, kun niitä käytetään. Bioperäiset polttoaineet, kuten puu, ovat myös uusiutuvia, kun uusi metsä kasvaa tilalle. Kivihiili, öljy ja maakaasu ovat fossiilisia. Turve kasvaa suolla hyvin hitaasti, tuhansien vuosien aikana. Siksi päästöjen laskennassa se rinnastetaan fossiilisiin polttoaineisiin. Tilastoissa turve on usein omana ryhmänään. Uraani on myös uusiutumaton luonnonvara. Voimaloiden päästöt ja ilmastovaikutukset käsitellään luvussa *Energiantuotanto, ympäristö ja ilmastonmuutos*.
+Vesi, tuuli ja auringonsäteily ovat uusiutuvia. Ne eivät lopu, kun niitä käytetään. Bioperäiset polttoaineet, kuten puu, ovat myös uusiutuvia, kun uusi metsä kasvaa tilalle. Kivihiili, öljy ja maakaasu ovat fossiilisia. Turve kasvaa suolla hyvin hitaasti, tuhansien vuosien aikana. Siksi päästöjä laskettaessa turve rinnastetaan fossiilisiin polttoaineisiin eli sitä käsitellään samalla tavalla kuin niitä. Tilastoissa turve on usein omana ryhmänään. Uraani on myös uusiutumaton luonnonvara. Voimaloiden päästöt ja ilmastovaikutukset käsitellään luvussa *Energiantuotanto, ympäristö ja ilmastonmuutos*.
 
 <figure class="unit-photo"><img src="pics/fy2/summa-wind-turbines.webp" alt="Valkoisia tuulivoimaloita meren rannalla."><figcaption>Tuulivoimaloita Haminassa. Tuulivoimala muuttaa tuulen liike-energiaa sähköksi.</figcaption></figure>
 
 ### Kolme ominaisuutta: miten voimala toimii verkossa
-Suuria määriä sähköä ei voi varastoida suoraan verkkoon. Siksi tuotannon on vastattava kulutusta joka hetki. Voimaloita kuvataan sen mukaan, miten niiden tehoa voi muuttaa. Ryhmät ovat hyödyllisiä ominaisuuksia. Ne eivät sulje toisiaan pois. Esimerkiksi vesivoimaa voi säätää hyvin, mutta se riippuu myös sateista.
+Suuria määriä sähköä ei voi varastoida suoraan verkkoon. Siksi tuotannon on vastattava kulutusta joka hetki. Voimaloita kuvataan sen mukaan, miten niiden tehoa voi muuttaa. Nämä ryhmät ovat ominaisuuksia, eivät tiukkoja luokkia. Sama voimala voi kuulua useaan ryhmään. Esimerkiksi vesivoimaa voi säätää hyvin, mutta se riippuu myös sateista.
 
 | Ominaisuus | Tyypillisiä voimaloita | Teho |
 |---|---|---|

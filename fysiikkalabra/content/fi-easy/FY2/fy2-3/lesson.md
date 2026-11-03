@@ -123,7 +123,7 @@ Sitä, kuinka nopeasti energiaa muuntuu tai siirtyy, kutsutaan **tehoksi**. Teho
   <line x1="30" y1="306" x2="570" y2="306" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
 </svg>
 
-Teho ei kerro, kuinka paljon energiaa laite yhteensä käyttää. Sen kertoo vasta teho yhdessä ajan kanssa. Pieni teho pitkään voi muuntaa saman energian kuin suuri teho lyhyen hetken. Siksi sähkölasku riippuu sekä laitteen tehosta että käyttöajasta.
+Teho ei kerro, kuinka paljon energiaa laite yhteensä käyttää. Sen kertoo vasta teho yhdessä ajan kanssa. Pieni teho pitkään voi muuntaa saman energian kuin suuri teho lyhyen hetken. Siksi sähkölaskun suuruuteen vaikuttavat sekä laitteen teho että käyttöaika.
 
 ## Kaava: Teho
 Teho on muuntuneen tai siirtyneen energian ja siihen kuluneen ajan osamäärä. Energia siis jaetaan ajalla:

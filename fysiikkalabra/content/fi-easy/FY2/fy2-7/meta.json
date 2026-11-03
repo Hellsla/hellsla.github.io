@@ -15,6 +15,20 @@
     "sähköverkko",
     "siirtohäviö"
   ],
+  "key_concepts": [
+    {
+      "term": "sähköverkko",
+      "explain": "Johtimien ja muuntajien verkko, joka vie sähköenergian voimalaitokselta käyttäjälle."
+    },
+    {
+      "term": "kaukolämpö",
+      "explain": "Lämmitystapa, jossa energia siirretään kuumana vetenä maan alla kulkevissa putkissa rakennuksiin."
+    },
+    {
+      "term": "siirtohäviö",
+      "explain": "Osa energiasta, joka muuttuu matkalla lämmöksi ympäristöön eikä tule perille."
+    }
+  ],
   "sim": false,
   "solutions": "all",
   "image": false

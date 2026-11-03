@@ -498,7 +498,7 @@ def intro_html(intro, inquiry, n_opt, md):
 KEY_CONCEPTS = (3, 5)    # how many "Luvun tärkeät käsitteet" a Selkeä suomi lesson shows (teacher 2026-11-03)
 
 
-def concept_slug(term): return re.sub(r"[^a-z0-9åäö]+", "-", term.lower()).strip("-")
+def concept_slug(term): return re.sub(r"[^a-z0-9åäö]+", "-", term.replace("$", "").lower()).strip("-")
 
 
 def key_concepts_html(lid, items, md):
@@ -511,8 +511,9 @@ def key_concepts_html(lid, items, md):
     if not items: return ""
     rows = []
     for i, k in enumerate(items, 1):
-        base, name = f"kc-{lid}-{i}", k["term"][:1].upper() + k["term"][1:]
-        rows.append(f'<li class="kc-item"><p class="kc-term" id="{base}-t"><strong>{esc(name)}</strong></p>'
+        base, term = f"kc-{lid}-{i}", k["term"][:1].upper() + k["term"][1:]   # a symbol in the term is LaTeX: "$(t,x)$-kuvaaja"
+        name = term.replace("$", "")
+        rows.append(f'<li class="kc-item"><p class="kc-term" id="{base}-t"><strong>{inline(md, term)}</strong></p>'
                     f'<p class="kc-explain" id="{base}-d">{inline(md, k["explain"])}</p>'
                     f'<label class="kc-label" for="{base}">{T("lesson.kc_note")}<span class="visually-hidden">: {esc(name)}</span></label>'
                     f'<textarea id="{base}" rows="1" lang="" aria-describedby="{base}-d" data-kc="kc:{lid}:{concept_slug(k["term"])}" data-term="{esc(name)}"></textarea></li>')

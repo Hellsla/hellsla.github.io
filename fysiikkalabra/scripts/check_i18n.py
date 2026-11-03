@@ -15,6 +15,7 @@ Finnish (fi) is the source. For every other language, lang/<lang>.json and conte
 A lesson not translated yet is listed, not an error: build.py publishes a language's lessons as they come, each
 after its own two reviews (reviews.py; the review files live in the language's folder). Exit 1 on any error."""
 import json, re, subprocess, sys, pathlib
+from collections import Counter
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import courses, i18n, inquiry
 
@@ -41,6 +42,17 @@ def value_words(key, parent):
 JSON_FILES = ("meta.json", "exercises.json", "exit-ticket.json", "inquiry.json")
 
 
+def lost(a, b, s2=False):
+    """Does the translation b lose (or, outside an S2 language, change) a formula of the Finnish text a? An S2 version
+    keeps every Finnish formula and may add one in a concrete example ("luvun 170 suuruusluokka on $10^{2}$"; teacher
+    2026-11-03, NOTES.md §12); a new number there puts the science reviewer in full review (reviews.py)."""
+    fa, fb = Counter(formulas(a)), Counter(formulas(b))
+    return bool(fa - fb) if s2 else fa != fb
+
+
+S2 = False   # set by check_lesson for an S2 language
+
+
 def same_data(a, b, path, errs, key=None, parent=None):
     """b is a translation of a: everything but the texts is identical."""
     if isinstance(a, dict):
@@ -51,7 +63,7 @@ def same_data(a, b, path, errs, key=None, parent=None):
         if not isinstance(b, list) or len(a) != len(b): errs.append(f"{path}: {len(a)} items in Finnish, {len(b) if isinstance(b, list) else 'not a list'} here"); return
         for i, (x, y) in enumerate(zip(a, b)): same_data(x, y, f"{path}[{i}]", errs, key, parent)
     elif is_text(key, a, parent):
-        if formulas(a) != formulas(b): errs.append(f"{path}: formulas differ from Finnish: {formula_diff(a, b)}")
+        if lost(a, b, S2): errs.append(f"{path}: formulas differ from Finnish: {formula_diff(a, b)}")
     elif a != b: errs.append(f"{path}: {b!r} differs from Finnish {a!r} (only texts are translated)")
 
 
@@ -64,7 +76,6 @@ def formulas(text):
 
 def formula_diff(a, b):
     """What a translation lost (-) and added (+) of the Finnish formulas."""
-    from collections import Counter
     fa, fb = Counter(formulas(a)), Counter(formulas(b))
     return " ".join([f"-${f}$" for f in (fa - fb).elements()] + [f"+${f}$" for f in (fb - fa).elements()])
 
@@ -84,7 +95,7 @@ def glossary_terms(): return {g["term"].lower() for g in json.loads((ROOT / "glo
 
 def key_concepts(fi_meta, kc, lang, where, errs):
     """meta.json "key_concepts" of a translation: required in an S2 language, 3–5 {"term", "explain"} with the term
-    as glossary.json or the Finnish lesson's glossary names it (one terminology, never a second glossary), a short
+    as glossary.json or the Finnish lesson's glossary names it (a symbol in it set as LaTeX, "$(t,x)$-kuvaaja") (one terminology, never a second glossary), a short
     explanation (at most 25 words) and no term twice; absent from every other language and from the Finnish source."""
     if "key_concepts" in fi_meta: errs.append(f"{where}: the Finnish lesson has key_concepts; they belong to its S2 version only (content/{S2_LANGS[0]}/)")
     if lang not in S2_LANGS:
@@ -98,14 +109,15 @@ def key_concepts(fi_meta, kc, lang, where, errs):
     for i, k in enumerate(kc):
         if not (isinstance(k, dict) and set(k) == {"term", "explain"} and all(isinstance(k[x], str) and k[x].strip() for x in k)):
             errs.append(f"{where}: key_concepts[{i}]: {{\"term\": …, \"explain\": …}}, both non-empty texts"); continue
-        if k["term"].lower() not in known: errs.append(f"{where}: key_concepts[{i}]: \"{k['term']}\" is not a glossary.json term (add it there, or use the glossary's form)")
-        if k["term"].lower() in seen: errs.append(f"{where}: key_concepts[{i}]: \"{k['term']}\" twice")
-        seen.add(k["term"].lower())
+        if k["term"].replace("$", "").lower() not in known: errs.append(f"{where}: key_concepts[{i}]: \"{k['term']}\" is not a glossary.json term (add it there, or use the glossary's form)")
+        if k["term"].replace("$", "").lower() in seen: errs.append(f"{where}: key_concepts[{i}]: \"{k['term']}\" twice")
+        seen.add(k["term"].replace("$", "").lower())
         if len(re.sub(r"\$[^$]*\$", "x", k["explain"]).split()) > 25: errs.append(f"{where}: key_concepts[{i}]: the explanation of \"{k['term']}\" is over 25 words; keep it short")
 
 
 def check_lesson(fi, tr, lang, errs):
-    rel = tr.relative_to(ROOT)
+    global S2
+    rel = tr.relative_to(ROOT); S2 = lang in S2_LANGS
     try: key_concepts(json.loads((fi / "meta.json").read_text()), json.loads((tr / "meta.json").read_text()).get("key_concepts"), lang, f"{rel}/meta.json", errs)
     except (OSError, json.JSONDecodeError) as e: errs.append(f"{rel}/meta.json: {e}")
     for n in courses.TEXT_FILES:
@@ -122,7 +134,9 @@ def check_lesson(fi, tr, lang, errs):
         else:
             sa, sb = md_shape(a.read_text()), md_shape(b.read_text())
             for k in sa:
-                if k == "formulas" and sa[k] != sb[k]: errs.append(f"{b.relative_to(ROOT)}: formulas differ from Finnish: {formula_diff(*(re.sub(r'<svg.*?</svg>', '', x.read_text(), flags=re.S) for x in (a, b)))}"[:600]); continue
+                if k == "formulas":
+                    if Counter(sa[k]) - Counter(sb[k]) if S2 else sa[k] != sb[k]: errs.append(f"{b.relative_to(ROOT)}: formulas differ from Finnish: {formula_diff(*(re.sub(r'<svg.*?</svg>', '', x.read_text(), flags=re.S) for x in (a, b)))}"[:600])
+                    continue
                 if sa[k] != sb[k]: errs.append(f"{rel}/{n}: {k} differ from Finnish ({sb[k]} vs {sa[k]})"[:400])
             if n == "lesson.md":
                 i18n.set_lang(lang); kb = [inquiry.heading(h)[0] for h in re.findall(r"^## (.+)$", b.read_text(), re.M)]

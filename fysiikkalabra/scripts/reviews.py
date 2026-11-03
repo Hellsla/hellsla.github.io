@@ -477,7 +477,8 @@ def _line(fname, body, lid):
     if fname == "meta.json":
         if s.startswith('"sim"'): return "simulation"
         if s.startswith(('"title"', '"glossary"')): return "wording"
-        if s.startswith(('"key_concepts"', '"term"', '"explain"')): return "numbers" if SUBSTANTIVE.search(body) else "wording"   # Selkeä suomi "Luvun tärkeät käsitteet" (NOTES.md §12): prose
+        if s.startswith(('"key_concepts"', '"term"')): return "wording"   # a glossary term (check_i18n.py), its symbols set as LaTeX
+        if s.startswith('"explain"'): return "numbers" if SUBSTANTIVE.search(body) else "wording"   # Selkeä suomi "Luvun tärkeät käsitteet" (NOTES.md §12): prose
         if s.startswith(('"image"', '"solutions"')): return "structure"
         if s.strip() in ("{", "}", "},", "[", "]", "],", ""): return "comments"
         return "objectives"
