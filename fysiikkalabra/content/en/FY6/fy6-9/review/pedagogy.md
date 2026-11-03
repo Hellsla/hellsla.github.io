@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: c932c0f64f57fc50
+CONTENT-HASH: 4c6106264ea2d9ae
 
 ## Blocking
 (none)
@@ -11,3 +11,4 @@ CONTENT-HASH: c932c0f64f57fc50
 - Same structure as the Finnish, nothing dropped (stages, predictions, feedback, steps, exit ticket).
 - Natural textbook English; learning goals all begin 'In this lesson, you will learn to' + verb.
 - No Finnish left in en names, units, values or labels of experiments (stage ids and glossary keys are intentionally Finnish).
+- Re-review after the lang-key change (sims.fy6-9.ulat_lab / ulat_eq): the sim canvas now shows U_ch (en); values and formulas unchanged.
