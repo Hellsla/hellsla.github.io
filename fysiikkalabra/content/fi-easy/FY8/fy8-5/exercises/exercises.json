@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy8-5-L1-01",
+      "level": 1,
+      "text": "Raskaissa alkuaineissa elektroneja on yhä kauempana olevilla kuorilla. Kuinka monta elektronia mahtuu enintään kuorelle $n = 5$?",
+      "answer": 50,
+      "unit": "kpl",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-5-L1-02",
+      "level": 1,
+      "text": "Tietokonesimulaatiossa vetyatomin $2\\text{s}$-elektronin paikka mitataan $8000$ kertaa. Mittauksista $421$ osuu $2\\text{s}$-orbitaalin solmupallon sisäpuolelle. Arvioi mittausten perusteella, millä todennäköisyydellä $2\\text{s}$-elektroni havaitaan solmupallon sisäpuolella. Anna vastaus prosentteina.",
+      "answer": 5.26,
+      "unit": "%",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-5-L1-03",
+      "level": 1,
+      "text": "Vetyatomin $1\\text{s}$-elektronin paikka mitataan $3000$ kertaa, ja kuvaan piirretään $1\\text{s}$-orbitaalin $90\\,\\%$:n raja. Kuinka monen mittauksen odotat osuvan rajan ulkopuolelle?",
+      "answer": 300,
+      "unit": "kpl",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-5-L1-04",
+      "level": 1,
+      "text": "Vetyatomin elektroni on $3\\text{p}$-tilassa. Kuinka paljon energiaa tarvitaan vähintään, jotta elektroni irtoaa atomista? Anna vastaus elektronivoltteina.",
+      "answer": 1.51,
+      "unit": "eV",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-5-L1-05",
+      "level": 1,
+      "text": "Vetyatomin elektroni on kuorella $n = 5$. Kuinka suuri on sen energia elektronivoltteina?",
+      "answer": -0.544,
+      "unit": "eV",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy8-5-L2-01",
+      "level": 2,
+      "text": "Vetyatomin elektroni siirtyy $3\\text{p}$-orbitaalilta $1\\text{s}$-orbitaalille, ja atomi lähettää fotonin. Mikä on fotonin aallonpituus? Anna vastaus nanometreinä.",
+      "answer": 103,
+      "unit": "nm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-5-L2-02",
+      "level": 2,
+      "text": "Argonatomissa on $18$ elektronia. Perustilassa ne täyttävät orbitaalit järjestyksessä $1\\text{s}$, $2\\text{s}$, $2\\text{p}$, $3\\text{s}$, $3\\text{p}$. Kuinka monta elektronia on argonin uloimmalla kuorella?",
+      "answer": 8,
+      "unit": "kpl",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-5-L2-03",
+      "level": 2,
+      "text": "Vetyatomin $1\\text{s}$-orbitaalista piirretään kaksi rajaa: $50\\,\\%$:n raja, jonka säde on $0{,}071\\,\\text{nm}$, ja $90\\,\\%$:n raja, jonka säde on $0{,}14\\,\\text{nm}$. Elektronin paikka mitataan $2400$ kertaa. Kuinka monen mittauksen odotat osuvan rajojen väliin?",
+      "answer": 960,
+      "unit": "kpl",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-5-L2-04",
+      "level": 2,
+      "text": "Vetyatomin elektroni on kuorella $n = 2$. Mikä on suurin aallonpituus, jolla fotoni voi vielä irrottaa elektronin atomista? Anna vastaus nanometreinä.",
+      "answer": 365,
+      "unit": "nm",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy8-5-L3-01",
+      "level": 3,
+      "text": "Perustilassa olevaan vetyatomiin osuu ultraviolettifotoni, jonka aallonpituus on $97{,}3\\,\\text{nm}$. Atomi absorboi eli ottaa vastaan fotonin. Kuinka monta orbitaalia on sillä kuorella, jolle elektroni siirtyy?",
+      "answer": 16,
+      "unit": "kpl",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-5-L3-02",
+      "level": 3,
+      "text": "Kevyissä atomeissa elektronit täyttävät perustilassa orbitaalit järjestyksessä $1\\text{s}$, $2\\text{s}$, $2\\text{p}$, $3\\text{s}$, $3\\text{p}$. Kullekin orbitaalille mahtuu enintään kaksi elektronia. Erään alkuaineen atomissa $3\\text{p}$-alikuori (kuoren osa) on täsmälleen puoliksi täynnä. Kuinka monta elektronia atomissa on?",
+      "answer": 15,
+      "unit": "kpl",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-5-L3-03",
+      "level": 3,
+      "text": "Vetyatomin elektroni on $2\\text{s}$-tilassa, ja sen paikka mitataan $5000$ kertaa. Kuvaan piirretään $2\\text{s}$-orbitaalin $90\\,\\%$:n raja. Solmupallon sisäpuolelle osuu keskimäärin $5{,}3\\,\\%$ mittauksista. Tämä sisäosa kuuluu käytännössä kokonaan orbitaalin alueeseen. Kuinka monen mittauksen odotat osuvan orbitaalin alueeseen solmupallon ulkopuolelle?",
+      "answer": 4240,
+      "unit": "kpl",
+      "tolerance": 0.02
+    }
+  ]
+}

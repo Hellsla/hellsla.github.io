@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 7c5649e4a4e5b252
+CONTENT-HASH: a7a4685d08eab151
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- Kuvateksti on vedetty hyvin tekstin ja kaavan kanssa yhteen; ei huomautettavaa.
+- none
 
 ## Checked
-batch delta review: photo loads, floated right at 1280, full column at 360, credit present, caption/alt plain and consistent with picture and the T/v paragraph. Karuselli-kuva latautuu, kelluu oikealla 1280 px:ssä ja on 360 px:ssä palstalla ilman leikkautumista; krediitti on kuvatekstin alla.
+- batch delta review: the new licensed photo (figure.unit-photo) captured in context from preview/fi-easy/fy5-3.html at 390 and 1280 px and opened (review/shots has no dedicated photo capture). The image loads at full resolution, scales inside the column on a phone and sits beside its paragraph at 1280 px. The caption is under the image with its credit line ("Kuva: …, licence"). Nothing is clipped and there is no horizontal overflow. The caption and alt text were read against the picture and the neighbouring paragraph: plain S2 Finnish, quantities in LaTeX.

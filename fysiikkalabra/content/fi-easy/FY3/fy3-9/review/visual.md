@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: ac9ba7813edf7861
+CONTENT-HASH: fe7f595d5dc5d197
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
+
 
 ## Checked
-batch delta review: preview/fi-easy/fy3-9.html opened in Chromium (Playwright) at 360, 768 and 1280 px; moved BARREL balloon photo captured with its surroundings. New spot after the last Ydinajatus figure row (which ends above it); at 1280 it floats beside the Boyle formula section (p1V1 = p2V2, p = vakio·1/V) without touching the formula boxes. No overlap with any figure, table, formula box or example (measured), stays in the column at 360/768, no horizontal overflow at any width, image loads, caption and credit unchanged; placement reads naturally (gas expanding as outside pressure falls, next to Boyle's law).
+batch delta review: scratchpad kc/fy3-9-390.png and kc/fy3-9-1280.png (the new section cut from the built page, preview/fi-easy/fy3-9.html): stacked at 390 px, two columns at 1280 px, no raw maths, no overflow, no clipping; the diff text read for wording (the packet's own captures show no figure change, so only sheets of the new section were opened).

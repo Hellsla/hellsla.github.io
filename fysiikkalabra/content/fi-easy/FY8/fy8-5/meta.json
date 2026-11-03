@@ -1,0 +1,34 @@
+{
+  "id": "fy8-5",
+  "course": "FY8",
+  "title": "Aaltomekaaninen atomimalli ja orbitaalit",
+  "goals": [
+    "LOPS FY8: atomin rakenne, atomin elektronien kvanttitilat ja aaltomekaanisen atomimallin periaate",
+    "Täsmennys: elektronin tilat seisovien aaltojen kautta ja todennäköisyystulkinta; orbitaali alueena, jossa todennäköisyys ylittää kynnysarvon; yhteys kemian orbitaaleihin"
+  ],
+  "prerequisites": [
+    "fy8-4"
+  ],
+  "glossary": [
+    "aaltomekaaninen atomimalli",
+    "orbitaali",
+    "todennäköisyystulkinta"
+  ],
+  "key_concepts": [
+    {
+      "term": "aaltomekaaninen atomimalli",
+      "explain": "Nykyinen atomimalli. Elektronin tilaa kuvaa aalto, joka levittäytyy ytimen ympärille. Elektronilla ei ole rataa."
+    },
+    {
+      "term": "orbitaali",
+      "explain": "Alue ytimen ympärillä, jonka sisällä elektroni havaitaan valitulla todennäköisyydellä."
+    },
+    {
+      "term": "todennäköisyystulkinta",
+      "explain": "Aalto ei kerro, missä elektroni on. Se kertoo, kuinka todennäköisesti elektroni havaitaan kussakin kohdassa."
+    }
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

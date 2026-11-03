@@ -1,10 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: b01652b661570193
+CONTENT-HASH: 101c822fbda07697
 
 ## Blocking
 
 ## Polish
-- [Minor] Alt text calls all points "punaisia ja valkoisia galakseja"; a few are foreground stars (spikes) - caption says "melkein", fine.
+
 
 ## Checked
-batch delta review: Playwright captures of the built page at 360 and 1280 px (Webb deep field, portrait crop 320 px wide); photo sits after a paragraph, 320 px wide, caption and credit under it, no horizontal overflow, float beside text at 1280, full-width flow at 360; alt text matches the image; caption plain Finnish and factual.
+Round 2 delta: scratchpad kc/r2-fy1-1-390.png and kc/r2-fy1-1-1280.png (section cut from rebuilt preview/fi-easy/fy1-1.html; sheets r2sheet390.png, r2sheet1280.png). Changed text read in the diff f83714cd..b8a6e1bb and seen in the capture: fluent, plain, physics unchanged. Stacked at 390 px, two columns at 1280 px, no overflow, no KaTeX errors, nothing clipped.

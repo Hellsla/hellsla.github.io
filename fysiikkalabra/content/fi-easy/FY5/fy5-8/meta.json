@@ -15,6 +15,20 @@
     "jousivakio",
     "jousen potentiaalienergia"
   ],
+  "key_concepts": [
+    {
+      "term": "harmoninen voima",
+      "explain": "Voima, joka osoittaa aina kohti tasapainoasemaa ja kasvaa samassa suhteessa kuin poikkeama."
+    },
+    {
+      "term": "jousivakio",
+      "explain": "Kertoo, kuinka jäykkä jousi on: kuinka suuri voima tarvitaan, kun jousta venytetään metrin verran."
+    },
+    {
+      "term": "jousen potentiaalienergia",
+      "explain": "Energia, joka on varastoitunut venytettyyn tai puristettuun jouseen."
+    }
+  ],
   "sim": true,
   "solutions": "all",
   "image": false

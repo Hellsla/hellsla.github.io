@@ -1,13 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 362a88b85a61f5f1
+CONTENT-HASH: 3966c49388305829
 
 ## Blocking
 (none)
 
 ## Polish
-- lesson.md Tiivistelmä, first bullet — "Virhettä ei yleensä tunneta." is short but "virhe" is now ambiguous after the new sentence about epävarmuus; "Mittausvirhettä ei yleensä tunneta." matches Ydinajatus and the Kaava text.
-- Earlier Polish items still stand (round 1): check-2 tolerance 0.08, the long paragraph after the Δx formula, resoluutio defined in its own sentence, "toistuvuus" in check-1 feedback.
+- meta.json key_concepts "mittausvirhe" — second sentence is circular — "Oikeaa arvoa ei yleensä tiedetä, joten virheen suuruuskin tiedetään vain arviona."
 
 ## Checked
-- Round 2 delta: the summary now states that every measurement result has uncertainty, then that the error is usually unknown and its possible size is estimated as measurement uncertainty. This is consistent with Ydinajatus, the Δx paragraph, the example and the exit ticket, and is plain Finnish in short sentences.
-- The change adds no new term and no new claim; the rest of the lesson is as approved in round 1.
+batch delta review: key_concepts judged against NOTES.md §12 and the editorial standard (central concepts, plain 1–2 sentence explanations, natural Finnish, physics unchanged); lesson rewordings, photos and captions, experiment/prompt wording and solution diagrams in this diff read clearly and agree with the tasks they touch.

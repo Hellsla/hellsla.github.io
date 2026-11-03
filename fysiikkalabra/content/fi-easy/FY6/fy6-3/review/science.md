@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: a09a92f43c1ee5bb
+CONTENT-HASH: 1a73dd0ab284e663
 
 ## Blocking
 (none)
@@ -8,6 +8,4 @@ CONTENT-HASH: a09a92f43c1ee5bb
 (none)
 
 ## Checked
-- Numbers, `$...$` units, formulas and the 7-step worked example agree with the Finnish; nothing changes the meaning.
-- Explanations added for terms (suoraan verrannollinen, jännitehäviö, hila) are correct.
-- Re-review after the concept fix: lesson and the inquiry feedback of the lamp prediction now say 'sähköenergiaa muuttuu ... hehkulangan sisäenergiaksi' / 'johtimen sisäenergiaksi', matching the Finnish; the numbers 0,250 A and 0,182 A are unchanged.
+batch delta review: added meta.json key_concepts (Luvun tärkeät käsitteet) checked term by term against the lesson's own definitions, summary and the physics guardrails; no number, formula or choice changed. Terms: resistanssi = U/I, Ohmin laki with its condition (metal conductor, constant temperature), vastus, resistiivisyys and ominaiskäyrä agree with the lesson.

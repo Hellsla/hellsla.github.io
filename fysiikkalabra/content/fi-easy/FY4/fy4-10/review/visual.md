@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 3e4e2c32b9983caa
+CONTENT-HASH: 1720ae48d5d04d50
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] fy4-10 kuvateksti: "Vasemmalta tuleva kuula" väittää liikesuunnan, jota still-kuvasta ei näe; varmempi: "Vasemmalla oleva kuula on liikkeessä ja näkyy kuvassa epäselvänä."
+- none
 
 ## Checked
-- batch delta review: opened fy4-10-360-0 and fy4-10-1280-0 captures: photo loads, floats right beside the text at 1280 px or sits in the column (no clipping, no horizontal overflow), at 360 px full column width; caption and alt text natural plain Finnish and consistent with the picture, no unit-bearing numbers needing LaTeX, credit line present under the caption.
+- batch delta review: "Luvun tärkeät käsitteet" panel captured from preview/fi-easy/fy4-10.html at 390 and 1280 px (the review/shots set has no capture of it) and opened — between the opening and stage 1, term bold over its explanation at 390 px, two-column at 1280 px, no clipping, no horizontal overflow, no KaTeX error; the edited lesson.md/inquiry.json sentences read in their diff (prose only, no new maths); top-390 opened in a montage (read-aloud "Kuuntele" button under the title, layout intact).

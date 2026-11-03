@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 46563ec5e04b9c5f
+CONTENT-HASH: 3d00ac774e6bbbc4
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- Kuva on kuvan alareunasta rajattu pyöreäksi luukuksi; alt-teksti kuvaa tämän oikein. Vuosiluku 1968 ei näy kuvasta, mutta se on kuvatekstissä tekijän lähteen mukaan.
+- none
 
 ## Checked
-batch delta review: photo loads, placement ok at both widths, reworded caption natural and consistent with the normal-acceleration section. Apollo 8 -kuva latautuu ja asettuu oikealle (1280 px) ja palstalle (360 px); krediitti näkyy.
+- batch delta review: the new licensed photo (figure.unit-photo) captured in context from preview/fi-easy/fy5-4.html at 390 and 1280 px and opened (review/shots has no dedicated photo capture). The image loads at full resolution, scales inside the column on a phone and sits beside its paragraph at 1280 px. The caption is under the image with its credit line ("Kuva: …, licence"). Nothing is clipped and there is no horizontal overflow. The caption and alt text were read against the picture and the neighbouring paragraph: plain S2 Finnish, quantities in LaTeX.

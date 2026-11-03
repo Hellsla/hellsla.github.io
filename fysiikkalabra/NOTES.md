@@ -398,3 +398,34 @@ Exam questions are studied for patterns only (§7); every task is original, with
   ("Vastaus kertoo, että …", never "Osaan …") → "Mitä vastauksestani puuttuu?" lists the unticked criteria → where to
   practise (the task's `practice`, markdown with a link, or the theory and the exercises). Criteria assess what the
   question asks. No runtime grading, nothing stored but in the student's own browser.
+
+## 12. Selkeä suomi for S2 students (teacher's brief 2026-11-03, "selkosuomi S2-opiskelijoille")
+`content/fi-easy/` is the version for students who study in Finnish as a second language. It is made at the
+translation stage (`translate_kit.py`, README "Languages") and reviewed by the same three reviewers; there is no
+separate S2 agent or review. Ten requirements, for every S2 text (theory, inquiry, tasks, hints, feedback, solutions):
+1. **Same physics.** Formulas, values, answers, points, criteria, simulations, objectives, solutions and difficulty
+   are the Finnish lesson's. S2 changes the language only and drops no step (§3 "Every language version").
+2. **Physics terms stay.** Use the glossary's term (vektorisuure, verrannollinen) and explain it; never replace it.
+3. **Explain a difficult word the first time**, inside the sentence, naturally: "kohdistuu eli osuu", "rinnastetaan
+   eli käsitellään samalla tavalla kuin". Typical words: kohdistua, riippua, johtaa ennuste, kumota, säilyä,
+   suuruusluokka, verrannollinen, vakiotermi, muodostua, vaikuttaa.
+4. **Concrete, correct examples** for an abstract idea: "Suuruusluokka kertoo luvun koon suunnilleen. Se on
+   kymmenpotenssi, joka on lähimpänä lukua. Esimerkiksi luvun 170 suuruusluokka on 100 eli $10^{2}$." An example may
+   add a formula of its own; it keeps every Finnish formula (`check_i18n.py` allows additions in S2, never a loss)
+   and a new number sends the science review to full (`reviews.py scope`).
+5. **Natural Finnish**: whole sentences that connect, not fragments, robotic repetition, a childish tone or padding.
+6. **Clear instructions**: the opening question, experiment and simulation steps, multi-step tasks, written answers and
+   feedback say exactly what to do and in which order; one action per sentence where it helps.
+7. **Luvun tärkeät käsitteet** in every S2 lesson: `meta.json` `"key_concepts": [{"term", "explain"}]`, 3–5 of the
+   chapter's central concepts, each term from `glossary.json` or the lesson's glossary (one terminology, never a second
+   glossary; a symbol in a term is LaTeX, `$(t,x)$-kuvaaja`), each explanation one or two plain sentences of at most
+   25 words. Only S2 languages (`check_i18n.S2_LANGS`) have them; `check_i18n.py` checks all of this.
+8. **The component** (`inquiry.key_concepts_html`) renders after the opening, before the first stage, only in an S2
+   language: the fixed lead "Tutustu luvun tärkeisiin käsitteisiin. Voit kirjoittaa niiden merkitykset sinulle
+   vahvimmalla kielellä tai useammalla kielellä.", then each term in bold with its explanation. Voluntary, never
+   assessed, never auto-translated, no question about the student's mother tongue.
+9. **No note fields on the page** (teacher 2026-11-03: "hän tekee muistiinpanot vihkoon"): the student writes the
+   meanings in a notebook. No account, database, cloud or translation service either.
+10. **Efficient production**: deterministic checks first (`check_i18n.py`, lint, `reviews.py scope`), then the existing
+   reviewers on what changed; keep an S2 reword to the sentence it improves (two adjacent edited paragraphs read as
+   one changed block). Never bypass a review gate.
