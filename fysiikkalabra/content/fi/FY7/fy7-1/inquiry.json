@@ -154,7 +154,7 @@
         },
         {
           "key": "Bm",
-          "label": "B_m (µT)"
+          "label": "magneetin kenttä B (µT)"
         }
       ],
       "min": 2,
@@ -225,7 +225,7 @@
         },
         {
           "key": "Bm",
-          "label": "B_m (µT)"
+          "label": "magneetin kenttä B (µT)"
         }
       ],
       "min": 2,

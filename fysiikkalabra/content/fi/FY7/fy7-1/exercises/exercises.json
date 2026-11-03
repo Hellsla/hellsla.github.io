@@ -35,7 +35,7 @@
   {
    "id": "fy7-1-L1-05",
    "level": 1,
-   "text": "Kompassi asetetaan pöydälle sauvamagneetin akselille magneetin pohjoisnavan $\\text{N}$ eteen. Mihin kompassin neulan pohjoispää osoittaa, ja miksi?",
+   "text": "Kompassi asetetaan pöydälle sauvamagneetin akselille magneetin pohjoisnavan $\\text{N}$ eteen. Maan kenttä jätetään huomiotta. Mihin kompassin neulan pohjoispää osoittaa, ja miksi?",
    "answer": "Poispäin magneetista: magneetin kenttä osoittaa pohjoisnavasta poispäin, ja neulan pohjoisnapa hylkii magneetin pohjoisnapaa.",
    "unit": "",
    "tolerance": 0.02
@@ -61,8 +61,8 @@
   {
    "id": "fy7-1-L2-03",
    "level": 2,
-   "text": "Rovaniemellä Maan magneettikentän pystykomponentti on noin $51\\,\\mu\\text{T}$, ja kenttä osoittaa $77^\\circ$ vaakatason alapuolelle. Kuinka suuri on kentän magneettivuon tiheys mikrotesloina?",
-   "answer": 52.3,
+   "text": "Rovaniemellä Maan magneettikentän pystykomponentti on noin $52\\,\\mu\\text{T}$, ja kenttä osoittaa $77^\\circ$ vaakatason alapuolelle. Kuinka suuri on kentän magneettivuon tiheys mikrotesloina?",
+   "answer": 53.4,
    "unit": "µT",
    "tolerance": 0.02
   },
@@ -79,15 +79,15 @@
   {
    "id": "fy7-1-L3-01",
    "level": 3,
-   "text": "Sauvamagneetti on pöydällä pohjois–eteläsuunnassa pohjoisnapa $\\text{N}$ pohjoiseen. Kompassi asetetaan magneetin itäpuolelle magneetin keskikohdan kohdalle, jossa magneetin kenttä on $25\\,\\mu\\text{T}$. Maan magneettikentän vaakakomponentti on $14\\,\\mu\\text{T}$ pohjoiseen. Kuinka suuri on vaakasuora kokonaiskenttä mikrotesloina, ja mihin kompassin neula osoittaa?",
-   "answer": 11,
+   "text": "Sauvamagneetti on pöydällä pohjois–eteläsuunnassa pohjoisnapa $\\text{N}$ pohjoiseen. Kompassi asetetaan magneetin itäpuolelle magneetin keskikohdan kohdalle, jossa magneetin kenttä on $25\\,\\mu\\text{T}$. Maan magneettikentän vaakakomponentti on $14\\,\\mu\\text{T}$ pohjoiseen. Laske vaakasuoran kokonaiskentän pohjoiskomponentti mikrotesloina, kun pohjoinen on positiivinen suunta ja etelä negatiivinen. Mihin suuntaan kompassin neulan pohjoispää osoittaa?",
+   "answer": -11,
    "unit": "µT",
    "tolerance": 0.02
   },
   {
    "id": "fy7-1-L3-02",
    "level": 3,
-   "text": "Teräksinen paperiliitin vedetään useita kertoja samaan suuntaan magneetin napaa pitkin, minkä jälkeen se nostaa pieniä nastoja. Kun liitin kuumennetaan liekissä punahehkuiseksi ja annetaan jäähtyä, se ei enää nosta nastoja. Selitä molemmat havainnot alkeisalueiden avulla.",
+   "text": "Teräksinen paperiliitin vedetään useita kertoja samaan suuntaan magneetin napaa pitkin, minkä jälkeen se nostaa pieniä nastoja. Kun liitin kuumennetaan liekissä riittävän kuumaksi ja annetaan jäähtyä, se ei enää nosta nastoja. Selitä molemmat havainnot alkeisalueiden avulla.",
    "answer": "Magneetin kenttä järjestää teräksen alkeisalueet samansuuntaisiksi, ja kovassa teräksessä ne jäävät järjestykseen, joten liitin on magneetti. Kuumennus riittävän korkeaan lämpötilaan sekoittaa alkeisalueiden järjestyksen, joten liitin ei enää ole magneetti.",
    "unit": "",
    "tolerance": 0.02
@@ -95,8 +95,8 @@
   {
    "id": "fy7-1-L3-03",
    "level": 3,
-   "text": "World Magnetic Model 2025 -mallin mukaan Maan magneettikenttä on Helsingissä noin $52\\,\\mu\\text{T}$ ja osoittaa $74^\\circ$ vaakatason alapuolelle. Huippuvuorten Longyearbyenissä kenttä on noin $55\\,\\mu\\text{T}$ ja osoittaa $82^\\circ$ vaakatason alapuolelle. Kuinka monta kertaa suurempi kentän vaakakomponentti on Helsingissä kuin Longyearbyenissä? Miksi kompassi toimii Longyearbyenissä huonommin, vaikka koko kenttä on siellä suurempi?",
-   "answer": 1.87,
+   "text": "Maan magneettikentän mallin (World Magnetic Model 2025) mukaan kenttä on Helsingissä noin $53\\,\\mu\\text{T}$ ja osoittaa noin $74^\\circ$ vaakatason alapuolelle. Huippuvuorten Longyearbyenissä kenttä on noin $55\\,\\mu\\text{T}$ ja osoittaa noin $82{,}5^\\circ$ vaakatason alapuolelle. Kuinka monta kertaa suurempi kentän vaakakomponentti on Helsingissä kuin Longyearbyenissä? Miksi kompassi toimii Longyearbyenissä huonommin, vaikka koko kenttä on siellä suurempi?",
+   "answer": 2.03,
    "unit": "",
    "tolerance": 0.02
   }

@@ -4,8 +4,8 @@
     "a": "Kompassi asetetaan pisteeseen, ja kentän suunta on se suunta, johon neulan pohjoispää osoittaa. Neula asettuu kenttäviivan suuntaiseksi."
   },
   {
-    "q": "Jääkaappimagneetin kenttä on jossakin kohdassa $0{,}050\\,\\text{mT}$. Kuinka monta mikroteslaa se on, ja kumpi on suurempi, tämä kenttä vai Maan kenttä Etelä-Suomessa?",
-    "a": "$0{,}050\\,\\text{mT} = 0{,}050 \\cdot 1000\\,\\mu\\text{T} = 50\\,\\mu\\text{T}$. Se on samaa suuruusluokkaa kuin Maan kenttä Etelä-Suomessa, noin $52\\,\\mu\\text{T}$, mutta hieman pienempi."
+    "q": "Jääkaappimagneetin kenttä on magneetin pinnalla noin $5\\,\\text{mT}$. Kuinka monta mikroteslaa se on, ja kuinka monta kertaa suurempi se on kuin Maan kenttä Etelä-Suomessa ($52\\,\\mu\\text{T}$)?",
+    "a": "$5\\,\\text{mT} = 5 \\cdot 1000\\,\\mu\\text{T} = 5000\\,\\mu\\text{T}$. Suhde on $5000\\,\\mu\\text{T} : 52\\,\\mu\\text{T} \\approx 96$, eli magneetin pinnalla kenttä on noin sata kertaa Maan kenttää suurempi."
   },
   {
     "q": "Miksi kaksi kenttäviivaa ei voi koskaan leikata toisiaan?",

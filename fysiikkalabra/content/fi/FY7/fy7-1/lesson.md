@@ -150,7 +150,9 @@ Kun sauvamagneetti katkaistaan kahtia, kummastakin palasta tulee kokonainen magn
 ### Ferromagnetismi ja alkeisalueet
 Magneetti vetää puoleensa rautaa, nikkeliä, kobolttia ja monia niiden seoksia, kuten terästä. Näitä aineita sanotaan **ferromagneettisiksi**. Jokainen niiden atomi on pieni magneettinen dipoli. Ferromagneettisessa aineessa vierekkäisten atomien dipolit asettuvat samansuuntaisiksi, ja aine jakautuu tyypillisesti mikrometrien kokoisiin **alkeisalueisiin**, joissa kaikki atomidipolit osoittavat samaan suuntaan. Magnetoimattomassa raudassa alkeisalueiden suunnat vaihtelevat, joten niiden vaikutukset kumoavat toisensa eikä kappale ole magneetti.
 
-Kun rautakappale tuodaan magneetin lähelle, magneetin kenttä kääntää alkeisalueiden suuntia ja kasvattaa niitä alkeisalueita, joiden suunta on kentän suuntainen. Rauta **magnetoituu**: siitä tulee magneetti, jonka magneetin puoleinen pää on vastakkaisnimisen navan kaltainen. Siksi magneetti vetää magnetoimatontakin rautanaulaa. Pehmeä rauta menettää magnetoitumansa lähes kokonaan, kun magneetti viedään pois, mutta kovassa teräksessä ja neodyymimagneetin seoksessa alkeisalueet jäävät järjestykseen. Niistä tehdään **kestomagneetteja**. Kuumennus riittävän korkeaan lämpötilaan, raudalla noin $770\,{}^\circ\text{C}$:seen, sekoittaa järjestyksen, ja ferromagnetismi katoaa.
+Kun rautakappale tuodaan magneetin lähelle, magneetin kenttä kääntää alkeisalueiden suuntia ja kasvattaa niitä alkeisalueita, joiden suunta on kentän suuntainen. Rauta **magnetoituu**: siitä tulee magneetti, jonka magneetin puoleinen pää on erinimisen navan kaltainen. Siksi magneetti vetää magnetoimatontakin rautanaulaa. Pehmeä rauta menettää magnetoitumansa lähes kokonaan, kun magneetti viedään pois, mutta kovassa teräksessä ja neodyymimagneetin seoksessa alkeisalueet jäävät järjestykseen. Niistä tehdään **kestomagneetteja**.
+
+Kuumennus riittävän korkeaan lämpötilaan, raudalla noin $770\,{}^\circ\text{C}$:n lämpötilaan, sekoittaa järjestyksen, ja ferromagnetismi katoaa.
 
 <svg data-fig="domains" viewBox="0 0 600 340" role="img" aria-label="Periaatekuva, ei mittakaavassa: rautakappaleen alkeisalueet. Vasemmalla magnetoimaton rauta, jonka alkeisalueiden magneettiset suunnat, valkoiset nuolet, osoittavat eri suuntiin, joten niiden vaikutukset kumoavat toisensa. Oikealla rautakappaleen viereen on tuotu magneetti pohjoisnapa N edellä. Magneetin kenttä kääntää alkeisalueet ja kasvattaa niitä, joilla on kentän suunta, joten lähes kaikki nuolet osoittavat magneetista poispäin. Rauta on magnetoitunut: sen magneetin puoleinen pää on etelänapa S, ja magneetti vetää sitä." style="max-width:100%;font-size:24px">
   <foreignObject x="20" y="11.5" width="260" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{magnetoimaton rauta}$</div></foreignObject>
@@ -279,7 +281,7 @@ Kenttää havainnollistetaan **kenttäviivoilla**. Kenttäviivan suunta kussakin
 ### Maan magneettikenttä
 Maapallolla on magneettikenttä, joka muistuttaa sauvamagneetin kenttää. Se syntyy Maan ulkoytimen sulan raudan liikkeistä ja niihin liittyvistä sähkövirroista. Kompassin neulan pohjoispää kääntyy kohti maantieteellistä pohjoista. Koska erinimiset navat vetävät toisiaan, maantieteellisen pohjoisnavan lähellä on Maan magneettinen **etelänapa** $\text{S}$, ja maantieteellisen etelänavan lähellä on magneettinen pohjoisnapa $\text{N}$.
 
-Magneettiset navat eivät ole täsmälleen maantieteellisten napojen kohdalla, ja ne vaeltavat hitaasti. Siksi kompassi poikkeaa todellisesta pohjoisesta: Suomessa nykyään kymmenkunta astetta itään. Suomessa kenttäviivat myös painuvat jyrkästi maata kohti, noin $74^\circ$–$78^\circ$ vaakatason alapuolelle. Tätä kulmaa sanotaan **inklinaatioksi**.
+Magneettiset navat eivät ole täsmälleen maantieteellisten napojen kohdalla, ja ne vaeltavat hitaasti. Siksi kompassi poikkeaa todellisesta pohjoisesta: Suomessa nykyään etelässä noin $10^\circ$ ja Lapissa noin $15^\circ$ itään. Suomessa kenttäviivat myös painuvat jyrkästi maata kohti, noin $73^\circ$–$79^\circ$ vaakatason alapuolelle. Tätä kulmaa sanotaan **inklinaatioksi**.
 
 <svg data-fig="earth-field" viewBox="0 0 600 380" role="img" aria-label="Periaatekuva, ei mittakaavassa: Maa ja sen magneettikenttä. Maan sisään on piirretty kuviteltu sauvamagneetti, joka on noin kymmenen astetta kallellaan pyörimisakseliin nähden. Sen etelänapa S on maantieteellisen pohjoisnavan lähellä ja pohjoisnapa N maantieteellisen etelänavan lähellä. Vihreät kenttäviivat lähtevät eteläiseltä pallonpuoliskolta ja kaartuvat avaruuden kautta pohjoiselle pallonpuoliskolle. Pohjoisella pallonpuoliskolla oleva kompassi osoittaa pohjoiseen ja viivat painuvat siellä jyrkästi maahan." style="max-width:100%;font-size:24px">
   <circle cx="300" cy="192" r="104" fill="#a9d1f0"/>
@@ -320,9 +322,9 @@ Magneettikentän voimakkuutta ja suuntaa kuvaa vektorisuure **magneettivuon tihe
 | jääkaappimagneetti | noin $5\,\text{mT}$ |
 | neodyymimagneetti | noin $0{,}5\,\text{T}$ |
 | magneettikuvaus | $1{,}5$–$3\,\text{T}$ |
-| jatkuva ennätys | $45\,\text{T}$ |
+| laboratoriomagneetti | yli $45\,\text{T}$ |
 
-Maan kentän arvo on World Magnetic Model 2025 -mallista (NOAA ja British Geological Survey), sairaaloiden magneettikuvauslaitteiden kentät ovat tavallisesti $1{,}5\,\text{T}$ tai $3\,\text{T}$, ja $45\,\text{T}$:n jatkuva kenttä on ollut käytössä vuodesta 2000 National High Magnetic Field Laboratoryssa Yhdysvalloissa. Magneettien arvot ovat suuruusluokkia magneetin pinnalla.
+Maan kentän arvo ($52$–$53\,\mu\text{T}$ Etelä-Suomessa) on World Magnetic Model 2025 -mallista (NOAA ja British Geological Survey), sairaaloiden magneettikuvauslaitteiden kentät ovat tavallisesti $1{,}5\,\text{T}$ tai $3\,\text{T}$, ja yli $45\,\text{T}$:n jatkuvia kenttiä tuotetaan tutkimuslaboratorioissa, esimerkiksi National High Magnetic Field Laboratoryn hybridimagneetilla Yhdysvalloissa. Magneettien arvot ovat suuruusluokkia magneetin pinnalla.
 
 Kun samaan pisteeseen vaikuttaa kaksi magneettikenttää, kokonaiskenttä on niiden vektorisumma:
 ```latex
@@ -368,14 +370,14 @@ Tätä käytetään kompassimittauksessa. Kompassin kohdalla Maan kentän vaakak
   <foreignObject x="456" y="19.5" width="130" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{pohjoinen}$</div></foreignObject>
 </svg>
 
-Maan kenttä osoittaa Suomessa vinosti maahan. Kompassin neula kääntyy vain vaakatasossa, joten siihen vaikuttaa vain kentän vaakakomponentti. Kun kentän suuruus on $B$ ja inklinaatio $I$, komponentit ovat
+Maan kenttä osoittaa Suomessa vinosti maahan. Kompassin neula kääntyy vain vaakatasossa, joten vain kentän vaakakomponentti kääntää sitä. Kun kentän suuruus on $B$ ja inklinaatio $I$, komponentit ovat
 ```latex
 \begin{aligned}
 B_\text{h} &= B\cos I \\
 B_\text{v} &= B\sin I
 \end{aligned}
 ```
-missä $B_\text{h}$ on vaakakomponentti ja $B_\text{v}$ pystykomponentti. Etelä-Suomessa $B \approx 52\,\mu\text{T}$ ja $I \approx 74^\circ$, joten vaakakomponentti on vain noin $14\,\mu\text{T}$ ja pystykomponentti noin $50\,\mu\text{T}$.
+missä $B_\text{h}$ on vaakakomponentti ja $B_\text{v}$ pystykomponentti. Etelä-Suomessa $B \approx 52\,\mu\text{T}$ ja $I \approx 74^\circ$, joten vaakakomponentti on vain noin $14\,\mu\text{T}$ ja pystykomponentti noin $50\,\mu\text{T}$. Nämä ovat kurssin pyöristetyt arvot: tarkempi malli antaa Helsingissä vaakakomponentiksi noin $15\,\mu\text{T}$.
 
 <svg data-fig="inclination" viewBox="0 0 600 340" role="img" aria-label="Kaavakuva mittakaavassa, sivulta nähtynä: Etelä-Suomessa Maan magneettikenttä B = 52 µT osoittaa pohjoiseen ja 74 astetta vaakatason alapuolelle. Kentän vaakakomponentti B_h on noin 14 µT ja pystykomponentti B_v noin 50 µT. Kompassi kääntyy vain vaakakomponentin mukaan." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy71-soil" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f1dfb5"/><stop offset="1" stop-color="#d9b26a"/></linearGradient></defs>
@@ -443,7 +445,7 @@ B_\text{m} &= B_\text{h}\tan\theta \\
 
 <!-- vaihe -->
 
-**Järkevyys.** Kulmalla $45^\circ$ magneetin kenttä olisi yhtä suuri kuin $B_\text{h}$. Kulma on yli $45^\circ$, joten $B_\text{m}$ on suurempi kuin $14\,\mu\text{T}$, kuten tulos. Kokonaiskenttä on $\sqrt{(14\,\mu\text{T})^2 + (17{,}9\,\mu\text{T})^2} \approx 22{,}7\,\mu\text{T}$, ja saman antaa $B_\text{h} : \cos 52^\circ$. Kenttä on Maan kentän suuruusluokkaa, mikä sopii magneetille, joka on joidenkin senttimetrien päässä.
+**Järkevyys.** Kulmalla $45^\circ$ magneetin kenttä olisi yhtä suuri kuin $B_\text{h}$. Kulma on yli $45^\circ$, joten $B_\text{m}$ on suurempi kuin $14\,\mu\text{T}$, kuten tulos. Kokonaiskenttä on $\sqrt{(14\,\mu\text{T})^2 + (17{,}9\,\mu\text{T})^2} \approx 22{,}7\,\mu\text{T}$, ja saman antaa $B_\text{h} : \cos 52^\circ$. Kenttä on Maan kentän suuruusluokkaa, mikä sopii magneetille, joka on noin kymmenen senttimetrin päässä.
 
 ## Yleinen virhekäsitys
 Moni ajattelee, että maantieteellisen pohjoisnavan lähellä on Maan magneettinen pohjoisnapa, koska kompassi osoittaa sinne. Kompassin neulan pohjoispää on kuitenkin magneetin pohjoisnapa, ja sitä vetää puoleensa eriniminen napa. Maantieteellisen pohjoisnavan lähellä on siis magneettinen etelänapa.

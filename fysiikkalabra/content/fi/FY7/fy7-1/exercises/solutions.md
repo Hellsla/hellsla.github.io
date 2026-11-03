@@ -59,14 +59,14 @@
 **Järkevyys:** Tulos on suurempi kuin suurin komponentti $48\,\mu\text{T}$ ja lähellä Suomen arvoa noin $52\,\mu\text{T}$. Suuri $z$-komponentti sopii siihen, että kenttä osoittaa Suomessa jyrkästi maahan, kun puhelin on vaakasuorassa.
 
 ## fy7-1-L2-03
-**Annettu:** Maan kentän pystykomponentti $B_\text{v} = 51\,\mu\text{T}$, inklinaatio $I = 77^\circ$ vaakatason alapuolelle
+**Annettu:** Maan kentän pystykomponentti $B_\text{v} = 52\,\mu\text{T}$, inklinaatio $I = 77^\circ$ vaakatason alapuolelle
 **Kysytty:** kentän magneettivuon tiheys $B$ mikrotesloina
 **Periaate:** Koko kenttä on suorakulmaisen kolmion hypotenuusa ja pystykomponentti kulman $I$ vastainen kateetti, joten $B_\text{v} = B\sin I$. Kaavasta ratkaistaan koko kenttä.
 **Kaava:** $B_\text{v} = B\sin I$, josta $B = \dfrac{B_\text{v}}{\sin I}$
 **Muunnokset:** Ei tarvita: tulos saadaan mikrotesloina kuten $B_\text{v}$.
-**Sijoitus:** $B = \dfrac{51\,\mu\text{T}}{\sin 77^\circ} = \dfrac{51\,\mu\text{T}}{0{,}9744} = 52{,}34\,\mu\text{T}$
-**Vastaus:** $52\,\mu\text{T}$, kaksi merkitsevää numeroa kuten pystykomponentissa $51\,\mu\text{T}$.
-**Järkevyys:** Hypotenuusa on pidempi kuin kateetti, joten $B$ on suurempi kuin $51\,\mu\text{T}$. Kenttä on lähes pystysuora, joten ero on pieni. Vaakakomponentiksi jää $52{,}3\,\mu\text{T} \cdot \cos 77^\circ \approx 12\,\mu\text{T}$, vähemmän kuin Etelä-Suomessa, kuten pohjoisempana pitää.
+**Sijoitus:** $B = \dfrac{52\,\mu\text{T}}{\sin 77^\circ} = \dfrac{52\,\mu\text{T}}{0{,}9744} = 53{,}4\,\mu\text{T}$
+**Vastaus:** $53\,\mu\text{T}$, kaksi merkitsevää numeroa kuten pystykomponentissa $52\,\mu\text{T}$.
+**Järkevyys:** Hypotenuusa on pidempi kuin kateetti, joten $B$ on suurempi kuin $52\,\mu\text{T}$. Kenttä on lähes pystysuora, joten ero on pieni. Vaakakomponentiksi jää $53{,}4\,\mu\text{T} \cdot \cos 77^\circ \approx 12\,\mu\text{T}$, vähemmän kuin Etelä-Suomessa, kuten pohjoisempana pitää.
 
 ## fy7-1-L2-04
 **Annettu:** etäisyydellä $10\,\text{cm}$ neulan kulma $\theta_1 = 60^\circ$, etäisyydellä $20\,\text{cm}$ kulma $\theta_2 = 10^\circ$; magneetin kenttä on kohtisuorassa Maan kentän vaakakomponenttia $B_\text{h}$ vastaan
@@ -80,25 +80,26 @@
 
 ## fy7-1-L3-01
 **Annettu:** magneetti pohjoisnapa pohjoiseen, kompassi magneetin itäpuolella keskikohdan kohdalla, magneetin kenttä siellä $B_\text{m} = 25\,\mu\text{T}$, Maan kentän vaakakomponentti $B_\text{h} = 14\,\mu\text{T}$ pohjoiseen
-**Kysytty:** vaakasuoran kokonaiskentän suuruus $B$ mikrotesloina ja neulan suunta
-**Periaate:** Magneetin ulkopuolella kenttäviivat kulkevat pohjoisnavasta etelänapaan, joten magneetin kyljessä keskikohdan kohdalla kenttä on magneetin suuntainen ja osoittaa pohjoisnavan puolelta etelänavan puolelle eli etelään. Se on vastakkaissuuntainen Maan kentälle, joten kentät lasketaan yhteen etumerkkeineen. Neula kääntyy kokonaiskentän suuntaan.
-**Kaava:** pohjoiseen positiivisena $B_y = B_\text{h} - B_\text{m}$, ja kokonaiskentän suuruus on $B = |B_\text{h} - B_\text{m}|$
+**Kysytty:** vaakasuoran kokonaiskentän pohjoiskomponentti $B_y$ mikrotesloina (pohjoinen positiivinen) ja neulan suunta
+**Periaate:** Magneetin ulkopuolella kenttäviivat kulkevat pohjoisnavasta etelänapaan, joten magneetin kyljessä keskikohdan kohdalla kenttä on magneetin suuntainen ja osoittaa pohjoisnavan puolelta etelänavan puolelle eli etelään. Se on vastakkaissuuntainen Maan kentälle, joten kentät lasketaan yhteen etumerkkeineen. Neula kääntyy kokonaiskentän suuntaan, joten komponentin etumerkki kertoo, osoittaako neula pohjoiseen vai etelään.
+**Kaava:** pohjoiseen positiivisena $B_y = B_\text{h} - B_\text{m}$
 **Muunnokset:** Ei tarvita: molemmat kentät ovat mikrotesloina.
-**Sijoitus:** $B_y = 14\,\mu\text{T} - 25\,\mu\text{T} = -11\,\mu\text{T}$, joten $B = 11\,\mu\text{T}$
-**Vastaus:** $11\,\mu\text{T}$ etelään, kaksi merkitsevää numeroa kuten kentissä. Neulan pohjoispää osoittaa etelään: neula on kääntynyt ympäri.
+**Sijoitus:** $B_y = 14\,\mu\text{T} - 25\,\mu\text{T} = -11\,\mu\text{T}$
+**Vastaus:** $-11\,\mu\text{T}$ eli $11\,\mu\text{T}$ etelään, kaksi merkitsevää numeroa kuten kentissä. Etumerkki on negatiivinen, joten neulan pohjoispää osoittaa etelään: neula on kääntynyt ympäri.
 **Järkevyys:** Magneetin kenttä on Maan kenttää suurempi, joten se voittaa ja kokonaiskenttä osoittaa magneetin kentän suuntaan. Jos magneetin kenttä olisi tarkalleen $14\,\mu\text{T}$, vaakasuora kokonaiskenttä olisi nolla eikä neula asettuisi mihinkään suuntaan.
 
 ## fy7-1-L3-02
 **Kysytty:** miksi magneetilla vedetty teräsliitin muuttuu magneetiksi ja miksi kuumennus poistaa magnetoitumisen
 **Periaate:** Teräs on ferromagneettinen. Sen atomidipolit muodostavat alkeisalueita, joiden suunnat vaihtelevat magnetoimattomassa kappaleessa. Ulkoinen kenttä järjestää alkeisalueet, ja kovassa teräksessä järjestys säilyy. Riittävän korkeassa lämpötilassa atomien lämpöliike rikkoo atomidipolien järjestyksen.
-**Mallivastaus:** Aluksi liittimen alkeisalueet osoittavat eri suuntiin, ja niiden vaikutukset kumoavat toisensa. Kun magneetin napaa vedetään liitintä pitkin aina samaan suuntaan, magneetin kenttä kääntää alkeisalueita ja kasvattaa niitä, joiden suunta on kentän suuntainen. Kovassa teräksessä alkeisalueet jäävät järjestykseen, kun magneetti viedään pois, joten liittimestä tulee kestomagneetti, jolla on oma pohjoisnapa ja etelänapa. Se magnetoi nastat ja vetää niitä. Punahehkuisessa teräksessä lämpötila on niin korkea, että atomien lämpöliike sekoittaa atomidipolien järjestyksen ja alkeisalueet katoavat; raudalla tämä tapahtuu noin $770\,{}^\circ\text{C}$:ssa. Jäähtyessä alkeisalueet syntyvät uudelleen mutta satunnaisiin suuntiin, joten liitin ei enää ole magneetti.
+**Mallivastaus:** Aluksi liittimen alkeisalueet osoittavat eri suuntiin, ja niiden vaikutukset kumoavat toisensa. Kun magneetin napaa vedetään liitintä pitkin aina samaan suuntaan, magneetin kenttä kääntää alkeisalueita ja kasvattaa niitä, joiden suunta on kentän suuntainen. Kovassa teräksessä alkeisalueet jäävät järjestykseen, kun magneetti viedään pois, joten liittimestä tulee kestomagneetti, jolla on oma pohjoisnapa ja etelänapa. Se magnetoi nastat ja vetää niitä. Kun liitin kuumennetaan riittävän kuumaksi (raudan Curie-lämpötila on noin $770\,{}^\circ\text{C}$), atomien lämpöliike sekoittaa atomidipolien järjestyksen ja alkeisalueet katoavat. Jäähtyessä alkeisalueet syntyvät uudelleen mutta satunnaisiin suuntiin, joten liitin ei enää ole magneetti.
 
 ## fy7-1-L3-03
-**Annettu:** Helsinki $B_1 = 52\,\mu\text{T}$ ja $I_1 = 74^\circ$, Longyearbyen $B_2 = 55\,\mu\text{T}$ ja $I_2 = 82^\circ$ vaakatason alapuolelle
+**Annettu:** Helsinki $B_1 = 53\,\mu\text{T}$ ja $I_1 = 74^\circ$, Longyearbyen $B_2 = 55\,\mu\text{T}$ ja $I_2 = 82{,}5^\circ$ vaakatason alapuolelle
 **Kysytty:** vaakakomponenttien suhde $k = B_\text{h1} : B_\text{h2}$, paljas luku, ja syy kompassin huonompaan toimintaan
 **Periaate:** Kompassin neula kääntyy vain vaakatasossa, joten sitä ohjaa ainoastaan kentän vaakakomponentti $B_\text{h} = B\cos I$. Mitä jyrkemmin kenttä osoittaa maahan, sitä pienempi osa siitä on vaakasuoraa.
 **Kaava:** $k = \dfrac{B_\text{h1}}{B_\text{h2}} = \dfrac{B_1\cos I_1}{B_2\cos I_2}$
 **Muunnokset:** Ei tarvita: molemmat kentät ovat mikrotesloina, ja yksikkö supistuu.
-**Sijoitus:** $k = \dfrac{52\,\mu\text{T} \cdot \cos 74^\circ}{55\,\mu\text{T} \cdot \cos 82^\circ} = \dfrac{14{,}33\,\mu\text{T}}{7{,}655\,\mu\text{T}} = 1{,}87$
-**Vastaus:** noin $1{,}9$ kertaa, kahdella merkitsevällä numerolla kuten annetut kentät ja kulmat. Longyearbyenissä kenttä on lähes pystysuora, joten sen vaakakomponentti on vain noin puolet Helsingin arvosta. Neulaa kääntävä kenttä on heikko, joten neula asettuu hitaasti ja pienetkin häiriöt, kuten lähellä oleva rautaesine, kääntävät sitä helposti.
-**Järkevyys:** Koko kenttä on Longyearbyenissä vähän suurempi, mutta $\cos 82^\circ \approx 0{,}14$ on paljon pienempi kuin $\cos 74^\circ \approx 0{,}28$, joten suhde on lähellä kahta. Magneettisella navalla kenttä olisi pystysuora, vaakakomponentti nolla eikä kompassi toimisi lainkaan.
+**Sijoitus:** $k = \dfrac{53\,\mu\text{T} \cdot \cos 74^\circ}{55\,\mu\text{T} \cdot \cos 82{,}5^\circ} = \dfrac{14{,}6\,\mu\text{T}}{7{,}18\,\mu\text{T}} = 2{,}03$
+**Vastaus:** noin $2{,}0$ kertaa, kaksi merkitsevää numeroa kuten kentissä $53\,\mu\text{T}$ ja $55\,\mu\text{T}$. Longyearbyenissä kenttä on lähes pystysuora, joten sen vaakakomponentti on vain noin puolet Helsingin arvosta.
+**Mallivastaus (miksi):** Neulaa kääntää vain vaakakomponentti. Longyearbyenissä se on vain noin puolet Helsingin vaakakomponentista, vaikka koko kenttä on suurempi, koska kenttä osoittaa melkein suoraan maahan. Neulaa kääntävä kenttä on heikko, joten neula asettuu hitaasti ja pienetkin häiriöt, kuten lähellä oleva rautaesine, kääntävät sitä helposti. Vastaus on oikein, jos siinä sanotaan, että kompassia ohjaa vaakakomponentti eikä koko kenttä.
+**Järkevyys:** Koko kenttä on Longyearbyenissä vähän suurempi, mutta $\cos 82{,}5^\circ \approx 0{,}13$ on paljon pienempi kuin $\cos 74^\circ \approx 0{,}28$, joten suhde on lähellä kahta. Magneettisella navalla kenttä olisi pystysuora, vaakakomponentti nolla eikä kompassi toimisi lainkaan.
