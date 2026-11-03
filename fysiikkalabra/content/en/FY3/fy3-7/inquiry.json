@@ -18,13 +18,6 @@
       "question": "Where does the energy from the hotplate go at the moments when the thermometer reading does not change?"
     },
     {
-      "id": "kuva",
-      "stage": "herata",
-      "type": "hook",
-      "title": "Look at the photo",
-      "text": "<figure class=\"unit-photo\"><img src=\"pics/fy3/melting-ice.webp\" alt=\"Translucent, partly melted pieces of ice photographed close up.\"><figcaption>Melting ice photographed close up.</figcaption></figure>"
-    },
-    {
       "id": "pr-lampo",
       "stage": "herata",
       "type": "choice",

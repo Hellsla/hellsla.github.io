@@ -19,14 +19,6 @@
       "question": "Mitä sanan työ pitäisi tarkoittaa fysiikassa, jotta työn määrän voisi mitata yksiselitteisesti? Yksiselitteinen tarkoittaa, että kaikki saavat saman tuloksen."
     },
     {
-      "id": "kuva",
-      "stage": "herata",
-      "type": "hook",
-      "title": "Katso kuvaa",
-      "text": "<figure class=\"unit-photo\"><img src=\"pics/fy3/crane-lifting-load.webp\" alt=\"Nosturi nostaa harmaata betoniastiaa. Kaksi työntekijää ohjaa sitä.\"><figcaption>Nosturi nostaa betoniastiaa työmaalla.</figcaption></figure>",
-      "question": "Miten kuorman nostamiseen tehty työ riippuu kuorman massasta? Entä nostokorkeudesta?"
-    },
-    {
       "id": "pr-paino",
       "stage": "herata",
       "type": "choice",

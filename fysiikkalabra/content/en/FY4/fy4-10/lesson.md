@@ -232,6 +232,8 @@ In an **explosion**, a system that is at rest or moving together breaks into par
 ### The answer to the opening question
 Billiard balls have equal masses, and their collision is almost elastic. When the velocity of the cue ball is $v$, conservation of momentum says that the sum of the velocities of the balls stays the same: $v_1' + v_2' = v$. Conservation of kinetic energy says that the sum of the squares of the velocities stays the same: $v_1'^2 + v_2'^2 = v^2$. Squaring the first condition and subtracting the second gives $2 v_1' v_2' = 0$, so one of the balls is at rest after the collision. The cue ball cannot pass through the other ball, so it stops, and the other ball moves on with velocity $v$. In reality the balls also spin and the collision is not perfectly elastic, so the cue ball may keep moving a little.
 
+<figure class="unit-photo"><img src="pics/fy4/newtons-cradle.webp" alt="Newton's cradle: a row of hanging steel balls; the leftmost one is moving and therefore blurred."><figcaption>In Newton's cradle, a ball swinging in from the left hits the balls at rest. The moving ball is blurred in the photo.</figcaption></figure>
+
 ## Formula: Conservation of momentum
 
 ### The conservation law with vectors and in one dimension

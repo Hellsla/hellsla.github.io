@@ -203,6 +203,8 @@ Jäljelle jäävän jään massa on $m_\text{j} - m_\text{s}$. Kuvaaja näyttä�
 
 Jos $Q_\text{v}$ ei riitä edes jään lämmittämiseen $0\,{}^\circ\text{C}$:seen, kylmä jää jäädyttää osan vedestä. Niin kauan kuin vettä jää, jäätä ja vettä on yhtä aikaa ja lämpötila on $0\,{}^\circ\text{C}$. Vasta jos kaikki vesi jäätyy, jäämassa jäähtyy alle $0\,{}^\circ\text{C}$:n; sen lämpötila ratkaistaan samasta energiataseesta tason 3 tehtävässä.
 
+<figure class="unit-photo"><img src="pics/fy3/ice-water-glass.webp" alt="Vesilasi ylhäältä kuvattuna. Lasissa on vettä ja paljon jääpaloja."><figcaption>Jääpaloja vesilasissa. Jää sulaa, kun siihen siirtyy lämpöä ympäröivästä vedestä.</figcaption></figure>
+
 ## Esimerkki
 Kalorimetrissä on $0{,}250\,\text{kg}$ vettä, jonka lämpötila on $24{,}0\,{}^\circ\text{C}$. Veteen pudotetaan $0{,}050\,\text{kg}$ jäätä, jonka lämpötila on $-8{,}0\,{}^\circ\text{C}$. Sulaako kaikki jää, ja mikä on kalorimetrin sisällön lämpötila lämpötasapainossa? Kalorimetrin oma lämpökapasiteetti ja lämpöhäviöt ympäristöön jätetään huomiotta.
 

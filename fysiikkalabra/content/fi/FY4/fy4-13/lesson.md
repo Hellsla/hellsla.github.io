@@ -201,6 +201,8 @@ Kytketyt kappaleet käsitellään yksi kerrallaan. Kummallekin piirretään oma 
 
 Lanka vetää kärryä voimalla $\overline{T}_1$ ja punnusta voimalla $\overline{T}_2$. Ne vaikuttavat eri kappaleisiin, joten ne ovat eri voimakuvioissa. Kevyt lanka ja kitkaton väkipyörä vain välittävät voiman ja kääntävät sen suunnan, joten voimien suuruudet ovat samat: $T_1 = T_2 = T$. Voimat $\overline{T}_1$ ja $\overline{T}_2$ eivät kuitenkaan ole voima ja vastavoima. Kun lanka vetää kärryä, kärry vetää lankaa takaisin yhtä suurella voimalla, ja se vaikuttaa lankaan eikä ole kärryn voimakuviossa.
 
+<figure class="unit-photo"><img src="pics/fy4/inclined-plane-apparatus.webp" alt="Vanha kaltevan tason koelaite: kaltevalla sauvalla oleva pieni rulla ja riippuva punnus on yhdistetty narulla väkipyörän yli."><figcaption>Kaltevan tason opetusväline 1900-luvun alusta Bremerhavenin koulumuseossa. Kaltevalla tasolla oleva rulla ja riippuva punnus on yhdistetty narulla, joka kulkee väkipyörän yli.</figcaption></figure>
+
 Kun punnus kiihtyy alaspäin, langan jännitysvoima on pienempi kuin punnuksen paino. Kiihtyvyys on alas, joten punnuksen kokonaisvoima osoittaa alas ja $G_2 > T$. Jos $T$ olisi yhtä suuri kuin $G_2$, punnukseen vaikuttava kokonaisvoima olisi nolla eikä punnus lähtisi liikkeelle. Punnus laskee siksi hitaammin kuin vapaasti putoava kappale: kiihtyvyys $a = \tfrac{m_2 g}{m_1 + m_2}$ on pienempi kuin $g$, koska punnuksen paino kiihdyttää myös kärryä.
 
 ## Kaava: Kytkettyjen kappaleiden liikeyhtälöt

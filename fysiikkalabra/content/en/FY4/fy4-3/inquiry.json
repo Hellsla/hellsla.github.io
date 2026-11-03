@@ -18,14 +18,6 @@
       "question": "Why does the stone keep moving although nothing pushes it any more, and what happens to each stone in the collision?"
     },
     {
-      "id": "kuva",
-      "stage": "herata",
-      "type": "hook",
-      "title": "Look at the photo",
-      "text": "<figure class=\"unit-photo\"><img src=\"pics/fy4/tug-of-war.webp\" alt=\"Three men pulling a thick rope, leaning back with their feet against the ground.\"><figcaption>Tug of war players lean back and press their feet against the ground.</figcaption></figure>",
-      "question": "The rope pulls each player forward. In which direction do the players push the ground with their feet, and which force can make the team move backwards?"
-    },
-    {
       "id": "kertaus",
       "stage": "herata",
       "type": "choice",

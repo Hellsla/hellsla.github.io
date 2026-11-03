@@ -381,6 +381,8 @@ where $G_x$ is the component along the slope (N) and $G_y$ the component perpend
 
 If only the weight and the normal force act perpendicular to the surface and the object does not accelerate in that direction, the normal force equals $G_y$: $N = mg\cos\alpha$, which is less than the weight. (A pulling or pushing force directed toward or away from the surface would change the normal force.) The static friction acting on an object at rest equals $G_x$. The object stays in place as long as $mg\sin\alpha \le \mu_0\,mg\cos\alpha$, that is $\tan\alpha \le \mu_0$. The mass cancels, so according to this model a heavy and a light box start to slide on the same surface at the same angle.
 
+<figure class="unit-photo"><img src="pics/fy4/snow-sledding.webp" alt="A child in an orange jacket sliding down a snowy slope on a yellow plastic sled."><figcaption>A child slides down a snowy slope on a plastic sled.</figcaption></figure>
+
 ### Determining the coefficient of friction
 In the diagrams and in the simulation, the static friction acting on an object at rest is denoted $\overline{F}_\mu$; its magnitude is $F_{\mu 0} \le \mu_0 N$, and while sliding $F_\mu = \mu N$.
 

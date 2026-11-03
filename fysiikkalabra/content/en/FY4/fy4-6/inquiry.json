@@ -19,14 +19,6 @@
       "question": "What holds the box in place on a gentle ramp, and why is it no longer enough on a steep ramp?"
     },
     {
-      "id": "kuva",
-      "stage": "herata",
-      "type": "hook",
-      "title": "Look at the photo",
-      "text": "<figure class=\"unit-photo\"><img src=\"pics/fy4/snow-sledding.webp\" alt=\"A child in an orange jacket sliding down a snowy slope on a yellow plastic sled.\"><figcaption>A child slides down a snowy slope on a plastic sled.</figcaption></figure>",
-      "question": "What makes the sled move down the slope? Which forces affect its motion?"
-    },
-    {
       "id": "kertaus",
       "stage": "herata",
       "type": "choice",

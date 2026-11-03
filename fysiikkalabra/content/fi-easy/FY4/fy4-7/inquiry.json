@@ -20,14 +20,6 @@
       "question": "Mikä lautailijan liikkeessä kasvaa niin paljon, että kaksinkertainen nopeus riittää nelinkertaiseen nousuun?"
     },
     {
-      "id": "kuva",
-      "stage": "herata",
-      "type": "hook",
-      "title": "Katso kuvaa",
-      "text": "<figure class=\"unit-photo\"><img src=\"pics/fy4/roller-coaster-loop.webp\" alt=\"Punainen vuoristoradan silmukka sinistä taivasta vasten. Ylhäällä vaunu on ylösalaisin.\"><figcaption>Vuoristoradan vaunu silmukan yläosassa aurinkoisena päivänä.</figcaption></figure>",
-      "question": "Miten vaunun liike-energia ja potentiaalienergia muuttuvat radan eri kohdissa?"
-    },
-    {
       "id": "pr-nousu",
       "stage": "herata",
       "type": "choice",

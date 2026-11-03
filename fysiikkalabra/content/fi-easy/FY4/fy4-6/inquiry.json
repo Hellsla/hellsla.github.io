@@ -19,14 +19,6 @@
       "question": "Mikä pitää laatikon paikallaan loivalla sillalla? Miksi se ei enää riitä jyrkällä sillalla?"
     },
     {
-      "id": "kuva",
-      "stage": "herata",
-      "type": "hook",
-      "title": "Katso kuvaa",
-      "text": "<figure class=\"unit-photo\"><img src=\"pics/fy4/snow-sledding.webp\" alt=\"Lapsi laskee keltaisella liukurilla lumista mäkeä alas.\"><figcaption>Lapsi laskee mäkeä alas muovisella liukurilla.</figcaption></figure>",
-      "question": "Mikä saa liukurin liikkumaan alas? Mitkä voimat vaikuttavat sen liikkeeseen?"
-    },
-    {
       "id": "kertaus",
       "stage": "herata",
       "type": "choice",

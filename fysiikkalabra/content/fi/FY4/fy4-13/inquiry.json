@@ -115,14 +115,6 @@
       "calc": "Kärry ja punnus: kärryn yhtälö $T = m_1 a$ ja punnuksen yhtälö $m_2 g - T = m_2 a$ antavat $a = \\dfrac{m_2}{m_1 + m_2}\\,g$ ja $T = m_1 a$. Kaksi riippuvaa kappaletta, $m_2 > m_1$: $T - m_1 g = m_1 a$ ja $m_2 g - T = m_2 a$ antavat $a = \\dfrac{m_2 - m_1}{m_1 + m_2}\\,g$ ja $T = \\dfrac{2 m_1 m_2}{m_1 + m_2}\\,g$. Lukemissa $\\Sigma F_1$ ja $\\Sigma F_2$ ovat kappaleiden kokonaisvoimat liikkeen suuntaan, ja $g = 9{,}81\\,\\text{m/s}^2$."
     },
     {
-      "id": "kuva",
-      "stage": "tutki",
-      "type": "hook",
-      "title": "Havainnoi kuvaa",
-      "text": "<figure class=\"unit-photo\"><img src=\"pics/fy4/inclined-plane-apparatus.webp\" alt=\"Vanha kaltevan tason koelaite: kaltevalla sauvalla oleva pieni rulla ja riippuva punnus on yhdistetty narulla väkipyörän yli.\"><figcaption>Kaltevan tason opetusväline 1900-luvun alusta Bremerhavenin koulumuseossa. Kaltevalla tasolla oleva rulla ja riippuva punnus on yhdistetty narulla, joka kulkee väkipyörän yli.</figcaption></figure>",
-      "question": "Miten narun yhdistämien kappaleiden liikkeet liittyvät toisiinsa? Piirrä kummankin kappaleen voimakuvio."
-    },
-    {
       "id": "exp-1",
       "stage": "tutki",
       "type": "experiment",

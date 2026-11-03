@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 94767b721acecba9
+CONTENT-HASH: f572af3b09775191
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] Photo stands at the end of the section just before "Mihin energia menee?"; lava solidifying matches the topic.
+- none
 
 ## Checked
-batch delta review: Playwright captures of the built page at 360 and 1280 px (La Palma lava); photo sits after a paragraph, 320 px wide, caption and credit under it, no horizontal overflow, float beside text at 1280, full-width flow at 360; alt text matches the image; caption plain Finnish and factual.
+- batch delta review: opened fy-easy captures fy3-7-1280 and fy3-7-360 (photo, caption, credit line, alt text read against picture and neighbouring paragraph; no clipping or horizontal overflow; no plain-text quantity in new caption/alt).

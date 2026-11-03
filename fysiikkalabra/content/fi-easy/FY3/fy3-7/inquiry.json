@@ -18,13 +18,6 @@
       "question": "Mihin levyltä tuleva energia menee niinä hetkinä, kun lämpömittarin lukema ei muutu?"
     },
     {
-      "id": "kuva",
-      "stage": "herata",
-      "type": "hook",
-      "title": "Katso kuvaa",
-      "text": "<figure class=\"unit-photo\"><img src=\"pics/fy3/melting-ice.webp\" alt=\"Läpikuultavia jääpaloja läheltä.\"><figcaption>Sulavaa jäätä läheltä.</figcaption></figure>"
-    },
-    {
       "id": "pr-lampo",
       "stage": "herata",
       "type": "choice",

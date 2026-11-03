@@ -20,14 +20,6 @@
       "question": "What changes in the stone's motion so that in every time interval of equal length it travels a longer distance than in the one before?"
     },
     {
-      "id": "kuva",
-      "stage": "herata",
-      "type": "hook",
-      "title": "Look at the photo",
-      "text": "<figure class=\"unit-photo\"><img src=\"pics/fy4/gull-takeoff-multiple-exposure.webp\" alt=\"The same gull in three successive images as it runs on the water and takes off.\"><figcaption>A gull taking off, shown as a multiple exposure: the same bird is photographed three times in a row in one picture.</figcaption></figure>",
-      "question": "How does the bird's motion change as it takes off? What does the photo tell about the motion, and what would you still need to measure to find the acceleration?"
-    },
-    {
       "id": "pr-nopeus",
       "stage": "herata",
       "type": "choice",

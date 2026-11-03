@@ -203,6 +203,8 @@ The mass of ice that is left is $m_\text{i} - m_\text{melt}$. The graph shows ho
 
 If $Q_\text{w}$ is not enough even to warm the ice to $0\,{}^\circ\text{C}$, the cold ice freezes some of the water. As long as some water is left, ice and water are present together and the temperature is $0\,{}^\circ\text{C}$. Only if all the water freezes does the mass of ice cool to below $0\,{}^\circ\text{C}$; its temperature is found from the same energy balance in the Level 3 exercise.
 
+<figure class="unit-photo"><img src="pics/fy3/ice-water-glass.webp" alt="A glass of water seen from above. The glass holds water and many ice cubes."><figcaption>Ice cubes in a glass of water. The ice melts as heat flows into it from the surrounding water.</figcaption></figure>
+
 ## Worked example
 A calorimeter contains $0.250\,\text{kg}$ of water at a temperature of $24.0\,{}^\circ\text{C}$. $0.050\,\text{kg}$ of ice at $-8.0\,{}^\circ\text{C}$ is dropped into the water. Does all the ice melt, and what is the temperature of the contents of the calorimeter at thermal equilibrium? The heat capacity of the calorimeter itself and heat losses to the surroundings are ignored.
 

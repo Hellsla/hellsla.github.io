@@ -19,13 +19,6 @@
       "question": "What makes rigid steel change its length, and what does the amount the joint has to give depend on?"
     },
     {
-      "id": "kuva",
-      "stage": "herata",
-      "type": "hook",
-      "title": "Look at the photo",
-      "text": "<figure class=\"unit-photo\"><img src=\"pics/fy3/bridge-expansion-joint.webp\" alt=\"A metal expansion joint runs across the deck of a bridge, with patterned steel plates and a yellow painted stripe. The bridge railing is in the background.\"><figcaption>An expansion joint of the Kruunuvuori bridge in Helsinki in August 2026, before renovation. The expansion joint gives the bridge structures room to move, for example when the temperature changes.</figcaption></figure>"
-    },
-    {
       "id": "kertaus",
       "stage": "herata",
       "type": "choice",

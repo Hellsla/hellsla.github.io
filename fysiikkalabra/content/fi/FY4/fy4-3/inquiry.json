@@ -18,14 +18,6 @@
       "question": "Miksi kivi jatkaa liikettä, vaikka mikään ei enää työnnä sitä, ja mitä törmäyksessä tapahtuu kummallekin kivelle?"
     },
     {
-      "id": "kuva",
-      "stage": "herata",
-      "type": "hook",
-      "title": "Havainnoi kuvaa",
-      "text": "<figure class=\"unit-photo\"><img src=\"pics/fy4/tug-of-war.webp\" alt=\"Kolme miestä vetää paksua köyttä nojaten taaksepäin ja jalat maata vasten.\"><figcaption>Köydenvetäjät nojaavat taaksepäin ja painavat jalkansa maata vasten.</figcaption></figure>",
-      "question": "Köysi vetää jokaista vetäjää eteenpäin. Mihin suuntaan vetäjät työntävät maata jaloillaan, ja mikä voima voi saada joukkueen liikkumaan taaksepäin?"
-    },
-    {
       "id": "kertaus",
       "stage": "herata",
       "type": "choice",

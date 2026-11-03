@@ -18,14 +18,6 @@
       "question": "Mistä pumpun ilma saa lisäenergiaa, vaikka sitä ei lämmitetä? Mihin tuo energia joutuu, kun pumppu jäähtyy?"
     },
     {
-      "id": "kuva",
-      "stage": "herata",
-      "type": "hook",
-      "title": "Katso kuvaa",
-      "text": "<figure class=\"unit-photo\"><img src=\"pics/fy3/glowing-metal-furnace.webp\" alt=\"Uunin aukosta näkyy oranssina hehkuva metallipala.\"><figcaption>Kuuma metalli hehkuu uunissa.</figcaption></figure>",
-      "question": "Mitä metallin sisäenergialle tapahtuu, kun sitä kuumennetaan? Miksi lämpötila ja sisäenergia eivät ole sama asia?"
-    },
-    {
       "id": "pr-mikromalli",
       "stage": "herata",
       "type": "choice",

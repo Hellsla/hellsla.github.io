@@ -20,14 +20,6 @@
       "question": "Miksi pysähtymismatka kasvaa niin paljon, kun nopeus kasvaa? Miten turvavyö voi ratkaista, selviääkö ihminen törmäyksestä?"
     },
     {
-      "id": "kuva",
-      "stage": "herata",
-      "type": "hook",
-      "title": "Katso kuvaa",
-      "text": "<figure class=\"unit-photo\"><img src=\"pics/fy4/side-impact-crash-test.webp\" alt=\"Keltainen auto testihallissa. Auton kylki on painunut sisään.\"><figcaption>Auto törmäystestin jälkeen Yhdysvalloissa. Auton kylki on painunut sisään.</figcaption></figure>",
-      "question": "Miten auton turvarakenteet voivat pienentää voimia, jotka kohdistuvat matkustajiin törmäyksessä?"
-    },
-    {
       "id": "kertaus",
       "stage": "herata",
       "type": "choice",

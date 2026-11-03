@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 17e8a45f35ab16f5
+CONTENT-HASH: 3824ba9c8072370f
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-batch delta review (alt/caption revision after reviewer findings): rebuilt page opened at 360 and 1280 px; photo(s) load, no horizontal overflow, float right at 1280 and in the column at 360, credit under caption, revised alt text and caption read naturally in fi and match the picture.
+- batch delta review: opened fy3-3-1280-0.png and fy3-3-360-0.png (photo floated or inline in the column, no clipping or horizontal overflow, credit line present); alt text and caption read against the picture and the neighbouring paragraph; no number with a unit in the new caption or alt text.

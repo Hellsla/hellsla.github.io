@@ -15,14 +15,6 @@
       "question": "Miltä tällainen kuvaaja näyttäisi, ja mitä siitä voisi lukea pyöräilijän nopeudesta ja kulkusuunnasta?"
     },
     {
-      "id": "kuva",
-      "stage": "herata",
-      "type": "hook",
-      "title": "Havainnoi kuvaa",
-      "text": "<figure class=\"unit-photo\"><img src=\"pics/fy4/highway-light-trails.webp\" alt=\"Kaartuva moottoritie yöllä: punaisia ja valkoisia valojuovia, katuvaloja ja lumiset pientareet.\"><figcaption>Pitkällä valotusajalla otetussa yökuvassa ajoneuvojen valot piirtävät juovia. Punaiset juovat ovat takavaloja, valkoiset ajovaloja.</figcaption></figure>",
-      "question": "Mitä autojen liikkeestä voidaan päätellä valojuovista? Mitä yhden valokuvan perusteella ei voida päätellä?"
-    },
-    {
       "id": "pr-nopeus",
       "stage": "herata",
       "type": "choice",

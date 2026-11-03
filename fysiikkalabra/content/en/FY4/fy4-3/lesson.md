@@ -402,6 +402,8 @@ A curler pushes the stone only for a moment. When the hand lets go, nothing push
 
 If there were no friction at all, the speed of the stone would not change, and it would slide in the same direction for ever. This is **Newton's first law**, also called the **law of inertia**: if the sum of the forces acting on an object is zero, the object stays at rest or moves in a straight line at constant velocity. A force is needed to *change* motion, not to keep it going. The tendency of an object to keep its state of motion is called **inertia**.
 
+<figure class="unit-photo"><img src="pics/fy4/tug-of-war.webp" alt="Three men pulling a thick rope, leaning back with their feet against the ground."><figcaption>Tug of war players lean back and press their feet against the ground.</figcaption></figure>
+
 Everyday experience seems to say otherwise, because on Earth friction and air resistance slow down almost everything that moves. A bicycle stops when you stop pedalling because the road and the air brake it, not because the "force of motion" has been used up. The smaller the friction, the longer the motion continues: further on ice than on asphalt, and in space almost without limit.
 
 ### Action and reaction

@@ -15,14 +15,6 @@
       "question": "Mitä sanan työ pitäisi fysiikassa tarkoittaa, jotta työn määrän voisi mitata yksikäsitteisesti?"
     },
     {
-      "id": "kuva",
-      "stage": "herata",
-      "type": "hook",
-      "title": "Havainnoi kuvaa",
-      "text": "<figure class=\"unit-photo\"><img src=\"pics/fy3/crane-lifting-load.webp\" alt=\"Nosturin koukussa roikkuu harmaa betoniastia rakenteilla olevan rakennuksen katon alla, ja kaksi työntekijää ohjaa sitä.\"><figcaption>Nosturi nostaa betoniastiaa rakennustyömaalla.</figcaption></figure>",
-      "question": "Miten kuorman nostamiseen tehty työ riippuu kuorman massasta ja nostokorkeudesta?"
-    },
-    {
       "id": "pr-paino",
       "stage": "herata",
       "type": "choice",

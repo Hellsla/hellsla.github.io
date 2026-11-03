@@ -16,13 +16,6 @@
       "question": "Missä energiaketjun vaiheessa polttoaineen energiasta menee eniten sähkön ulkopuolelle, ja voisiko sen käyttää hyödyksi?"
     },
     {
-      "id": "kuva",
-      "stage": "herata",
-      "type": "hook",
-      "title": "Havainnoi kuvaa",
-      "text": "<figure class=\"unit-photo\"><img src=\"pics/fy3/iru-turbine-generator.webp\" alt=\"Voimalaitoksen konesalissa betonitason päällä on sininen generaattori ja siihen liitetty turbiini putkineen. Tasolla seisoo työntekijä huomioliivissä.\"><figcaption>Irun voimalaitoksen jätteenpolttoyksikön turbiini ja generaattori Tallinnan lähellä Virossa. Turbiini muuttaa höyryn energiaa pyörimisen liike-energiaksi, ja generaattori muuttaa sen sähköenergiaksi.</figcaption></figure>"
-    },
-    {
       "id": "kertaus",
       "stage": "herata",
       "type": "choice",

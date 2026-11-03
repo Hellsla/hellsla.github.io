@@ -19,14 +19,6 @@
       "question": "Milloin ja missä auto saavuttaa pyöräilijän? Kumpi on silloin nopeampi?"
     },
     {
-      "id": "kuva",
-      "stage": "herata",
-      "type": "hook",
-      "title": "Katso kuvaa",
-      "text": "<figure class=\"unit-photo\"><img src=\"pics/fy4/helsinki-trams.webp\" alt=\"Kaksi valkoista raitiovaunua vierekkäin kadulla.\"><figcaption>Kaksi raitiovaunua Helsingissä kesällä 2026.</figcaption></figure>",
-      "question": "Kaksi raitiovaunua liikkuu eri suuntiin. Niiden nopeudet ovat erilaiset. Miten vaunujen välinen etäisyys muuttuu?"
-    },
-    {
       "id": "pr-paikka",
       "stage": "herata",
       "type": "choice",

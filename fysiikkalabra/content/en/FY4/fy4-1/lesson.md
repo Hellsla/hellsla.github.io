@@ -341,6 +341,8 @@ When an object moves from the position $x_1$ to the position $x_2$, its **displa
 
 **Velocity** tells how fast and in which direction the position changes. It is also a vector quantity, and its sign tells the direction. The absolute value of the velocity $|v|$ is the speed. In uniform motion the velocity stays constant: the position changes by the same amount in every time interval of equal length.
 
+<figure class="unit-photo"><img src="pics/fy4/highway-light-trails.webp" alt="A curving motorway at night: red and white streaks of light, street lamps and snowy verges."><figcaption>In a night photo with a long exposure time, vehicle lights draw streaks. The red streaks are rear lights, the white ones headlights.</figcaption></figure>
+
 Motion can be shown as a **$(t,x)$ graph**, with time on the horizontal axis and position on the vertical axis. The graph of uniform motion is a straight line. The steepness of the line, that is its slope, is the velocity: a steeper line means a greater velocity, a horizontal line means being at rest and a falling line means motion in the negative direction. The graph is not a picture of the path of the object: a rising line does not mean uphill, but that the position increases.
 
 ## Formula: Average velocity and the equation of uniform motion

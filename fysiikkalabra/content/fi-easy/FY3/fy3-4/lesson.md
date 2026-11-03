@@ -79,6 +79,8 @@ Tarkastellaan nestettä, joka on levossa. Pinnan alla on vaakasuora pinta, jonka
 
 Paine ei ole voima. Paine on voiman ja alan suhde. Levossa olevassa nesteessä paine vaikuttaa joka suuntaan yhtä suurena. Jos paine sivulle olisi pienempi kuin alaspäin, vesi valuisi sivuun. Silloin vesi ei pysyisi levossa. Tee pullon kylkeen reikiä usealle korkeudelle. Alimmasta reiästä vesi suihkuaa voimakkaimmin, koska paine kasvaa syvyyden mukana. Paineen aiheuttama voima on aina kohtisuorassa pintaa vastaan. Padon pystysuoraan seinään voima osoittaa vaakasuoraan. Sukeltajan kehoon voima vaikuttaa joka puolelta. Siksi voima voidaan tässä laskea pelkkänä suuruutena. Suunta tulee pinnasta.
 
+<figure class="unit-photo"><img src="pics/fy3/scuba-diver.webp" alt="Sukeltaja tummansinisessä vedessä. Ilmakuplat nousevat kohti pintaa."><figcaption>Sukeltaja syvällä veden alla. Ilmakuplat nousevat kohti pintaa.</figcaption></figure>
+
 ### Ilmanpaine ja ylipaine
 Veden pinnalla vaikuttaa jo ilmakehän paine eli ilmanpaine. Merenpinnan tasolla se on noin $101\,\text{kPa}$. Ilmanpaine on ilmapatsaan paino pinta-alaa kohti. Ilmanpaine vaikuttaa myös veden pintaan, ja vesi välittää sen syvyyteen. Veden alla kokonaispaine on siis ilmanpaineen ja hydrostaattisen paineen summa. Kymmenen metrin syvyydessä hydrostaattinen paine on jo suunnilleen yhden ilmanpaineen suuruinen.
 

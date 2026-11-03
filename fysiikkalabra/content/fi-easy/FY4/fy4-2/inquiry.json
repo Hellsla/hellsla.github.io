@@ -20,14 +20,6 @@
       "question": "Mikä kiven liikkeessä muuttuu niin, että se kulkee jokaisessa yhtä pitkässä aikavälissä pidemmän matkan kuin edellisessä?"
     },
     {
-      "id": "kuva",
-      "stage": "herata",
-      "type": "hook",
-      "title": "Katso kuvaa",
-      "text": "<figure class=\"unit-photo\"><img src=\"pics/fy4/gull-takeoff-multiple-exposure.webp\" alt=\"Sama lokki kolme kertaa samassa kuvassa, kun se lähtee lentoon veden pinnalta.\"><figcaption>Lokki lähtee lentoon. Sama lintu on kuvattu samaan kuvaan kolme kertaa peräkkäin.</figcaption></figure>",
-      "question": "Miten linnun liike muuttuu, kun se lähtee lentoon? Mitä kuva kertoo liikkeestä? Mitä pitäisi vielä mitata, jotta kiihtyvyyden voisi laskea?"
-    },
-    {
       "id": "pr-nopeus",
       "stage": "herata",
       "type": "choice",

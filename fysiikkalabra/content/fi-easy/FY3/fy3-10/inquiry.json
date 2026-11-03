@@ -19,14 +19,6 @@
       "question": "Miten voisi verrata kahden pallon kaasumääriä, kun tiedetään vain paine, tilavuus ja lämpötila?"
     },
     {
-      "id": "kuva",
-      "stage": "herata",
-      "type": "hook",
-      "title": "Katso kuvaa",
-      "text": "<figure class=\"unit-photo\"><img src=\"pics/fy3/hot-air-balloon-burner.webp\" alt=\"Kirkas liekki nousee kuumailmapallon punaisen kuvun sisään.\"><figcaption>Poltin lämmittää pallon sisällä olevaa ilmaa. Pallo on alhaalta auki. Siksi sisäilman paine on lähes sama kuin ulkoilman paine.</figcaption></figure>",
-      "question": "Miksi kuumailmapallo voi nousta, kun sen sisällä olevaa ilmaa lämmitetään?"
-    },
-    {
       "id": "kertaus",
       "stage": "herata",
       "type": "choice",

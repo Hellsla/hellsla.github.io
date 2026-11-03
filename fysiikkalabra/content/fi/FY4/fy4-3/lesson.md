@@ -402,6 +402,8 @@ Curlingin heittäjä työntää kiveä vain hetken. Kun käsi irtoaa, mikään e
 
 Jos kitkaa ei olisi lainkaan, kiven nopeus ei muuttuisi, ja se liukuisi samaan suuntaan loputtomiin. Tämä on **Newtonin ensimmäinen laki** eli **jatkavuuden laki**: jos kappaleeseen vaikuttavien voimien summa on nolla, kappale pysyy levossa tai liikkuu suoraviivaisesti tasaisella nopeudella. Voimaa tarvitaan liikkeen *muuttamiseen*, ei liikkeen ylläpitämiseen. Kappaleen taipumusta säilyttää liiketilansa sanotaan **inertiaksi** eli hitaudeksi.
 
+<figure class="unit-photo"><img src="pics/fy4/tug-of-war.webp" alt="Kolme miestä vetää paksua köyttä nojaten taaksepäin ja jalat maata vasten."><figcaption>Köydenvetäjät nojaavat taaksepäin ja painavat jalkansa maata vasten.</figcaption></figure>
+
 Arkikokemus näyttää toista, koska maan päällä kitka ja ilmanvastus hidastavat lähes kaikkea, mikä liikkuu. Pyörä pysähtyy, kun polkeminen loppuu, koska tie ja ilma jarruttavat sitä, eivät siksi, että "liikkeen voima" kuluisi loppuun. Mitä pienempi kitka, sitä kauemmin liike jatkuu: jäällä pidemmälle kuin asfaltilla ja avaruudessa lähes rajatta.
 
 ### Voima ja vastavoima

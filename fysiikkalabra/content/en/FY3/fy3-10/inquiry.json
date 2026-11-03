@@ -19,14 +19,6 @@
       "question": "How could you compare the amounts of gas in the two balloons when you know only the pressure, volume and temperature?"
     },
     {
-      "id": "kuva",
-      "stage": "herata",
-      "type": "hook",
-      "title": "Look at the photo",
-      "text": "<figure class=\"unit-photo\"><img src=\"pics/fy3/hot-air-balloon-burner.webp\" alt=\"A bright yellow flame points up into the red envelope of a hot air balloon. The basket's attachment chains and cables are in the foreground.\"><figcaption>The burner of a hot air balloon heats the air inside the balloon. The mouth of the balloon is open at the bottom, so the pressure of the air inside stays almost equal to the pressure outside.</figcaption></figure>",
-      "question": "Why can a hot air balloon rise when the air inside it is heated?"
-    },
-    {
       "id": "kertaus",
       "stage": "herata",
       "type": "choice",

@@ -19,14 +19,6 @@
       "question": "Miltä tällainen kuvaaja näyttäisi? Mitä siitä voisi lukea pyöräilijän nopeudesta ja kulkusuunnasta?"
     },
     {
-      "id": "kuva",
-      "stage": "herata",
-      "type": "hook",
-      "title": "Katso kuvaa",
-      "text": "<figure class=\"unit-photo\"><img src=\"pics/fy4/highway-light-trails.webp\" alt=\"Kaartuva moottoritie yöllä. Tiellä on punaisia ja valkoisia valoviivoja.\"><figcaption>Kuva on otettu yöllä pitkällä valotusajalla. Autojen valot näkyvät viivoina. Punaiset viivat ovat takavaloja ja valkoiset ajovaloja.</figcaption></figure>",
-      "question": "Mitä valoviivat kertovat autojen liikkeestä? Mitä yhdestä kuvasta ei voi päätellä?"
-    },
-    {
       "id": "pr-nopeus",
       "stage": "herata",
       "type": "choice",

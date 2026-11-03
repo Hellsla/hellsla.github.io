@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 5dadd1c274763019
+CONTENT-HASH: 336099c83054e616
 
 ## Blocking
+- none
 
 ## Polish
 - none
 
 ## Checked
-batch delta review: intro-1280 (title with the formula as KaTeX, wraps cleanly, chapter references resolve), fig-row-1280; figures unchanged by the diff.
+- batch delta review: opened fy-easy captures fy3-6-1280 and fy3-6-360 (photo, caption, credit line, alt text read against picture and neighbouring paragraph; no clipping or horizontal overflow; no plain-text quantity in new caption/alt).
