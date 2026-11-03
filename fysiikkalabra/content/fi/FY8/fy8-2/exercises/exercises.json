@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy8-2-L1-01",
+      "level": 1,
+      "text": "Heliumkaasuputken spektrissä on vihreä viiva aallonpituudella $502\\,\\text{nm}$. Kuinka suuri on niiden heliumatomin energiatilojen erotus, joiden välinen siirtymä tuottaa tämän viivan? Anna vastaus elektronivoltteina.",
+      "answer": 2.47,
+      "unit": "eV",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-2-L1-02",
+      "level": 1,
+      "text": "Kaasun atomin kahden energiatilan erotus on $2{,}86\\,\\text{eV}$. Mikä on sen fotonin aallonpituus, jonka atomi lähettää siirtyessään ylemmästä tilasta alempaan? Anna vastaus nanometreinä.",
+      "answer": 434,
+      "unit": "nm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-2-L1-03",
+      "level": 1,
+      "text": "Vedyn punaisen spektriviivan aallonpituus on $656\\,\\text{nm}$. Mikä on tämän valon taajuus? Anna vastaus yksikössä $10^{14}\\,\\text{Hz}$.",
+      "answer": 4.57,
+      "unit": "10¹⁴ Hz",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-2-L1-04",
+      "level": 1,
+      "text": "Vetyatomin energiatilojen energiat ovat $E_3 = -1{,}51\\,\\text{eV}$ ja $E_2 = -3{,}40\\,\\text{eV}$. Kuinka suuri on sen fotonin energia, jonka atomi lähettää siirtyessään tilasta $3$ tilaan $2$? Anna vastaus elektronivoltteina.",
+      "answer": 1.89,
+      "unit": "eV",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-2-L1-05",
+      "level": 1,
+      "text": "Atomin kahden energiatilan erotus on $3{,}03 \\cdot 10^{-19}\\,\\text{J}$. Mikä on siirtymässä syntyvän fotonin aallonpituus? Anna vastaus nanometreinä.",
+      "answer": 656,
+      "unit": "nm",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy8-2-L2-01",
+      "level": 2,
+      "text": "Vetyatomi siirtyy tilasta $n = 4$, jonka energia on $-0{,}85\\,\\text{eV}$, tilaan $n = 2$, jonka energia on $-3{,}40\\,\\text{eV}$. Mikä on syntyvän fotonin aallonpituus? Anna vastaus nanometreinä.",
+      "answer": 486,
+      "unit": "nm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-2-L2-02",
+      "level": 2,
+      "text": "Malliatomilla on kolme energiatilaa: perustila $0$ sekä viritystilat $1{,}85\\,\\text{eV}$ ja $4{,}00\\,\\text{eV}$. Kuuma kaasu, jossa on tällaisia atomeja, lähettää kolmea eri viivaa. Mikä on viivoista pisimmän aallonpituus? Anna vastaus nanometreinä.",
+      "answer": 670,
+      "unit": "nm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-2-L2-03",
+      "level": 2,
+      "text": "Huoneenlämpöisen vetykaasun atomit ovat perustilassa, jonka energia on $-13{,}6\\,\\text{eV}$. Seuraava energiatila on $-3{,}40\\,\\text{eV}$. Minkä aallonpituuden valoa kaasu absorboi, kun atomi siirtyy perustilasta tähän tilaan? Anna vastaus nanometreinä.",
+      "answer": 122,
+      "unit": "nm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-2-L2-04",
+      "level": 2,
+      "text": "Natriumhöyryn keltaisen valon taajuus on $5{,}09 \\cdot 10^{14}\\,\\text{Hz}$. Kuinka suuri on niiden natriumatomin energiatilojen erotus, joiden välinen siirtymä tuottaa tämän valon? Anna vastaus elektronivoltteina.",
+      "answer": 2.11,
+      "unit": "eV",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy8-2-L3-01",
+      "level": 3,
+      "text": "Vedyn näkyvät spektriviivat syntyvät, kun atomi siirtyy ylemmältä tasolta tasolle $n = 2$, jonka energia on $-3{,}40\\,\\text{eV}$. Mitä ylempää tasoa käytetään, sitä lyhyempi on viivan aallonpituus, mutta viivat eivät koskaan ylitä tiettyä rajaa. Hyvin ylhäällä olevien tasojen energia on lähes nolla. Mikä on tämän sarjan lyhin mahdollinen aallonpituus? Anna vastaus nanometreinä.",
+      "answer": 365,
+      "unit": "nm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-2-L3-02",
+      "level": 3,
+      "text": "Ilmakehän hiilidioksidi absorboi voimakkaasti infrapunasäteilyä, jonka aallonpituus on $15{,}0\\,\\mu\\text{m}$. Absorptio syntyy, kun molekyyli siirtyy värähtelytilasta toiseen. Kuinka suuri on näiden värähtelytilojen energiaero? Anna vastaus millielektronivoltteina ($1\\,\\text{meV} = 10^{-3}\\,\\text{eV}$).",
+      "answer": 82.7,
+      "unit": "meV",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-2-L3-03",
+      "level": 3,
+      "text": "Väriaineen molekyyli absorboi UV-fotonin, jonka aallonpituus on $365\\,\\text{nm}$. Molekyyli palaa perustilaan kahdessa vaiheessa: ensin se lähettää infrapunafotonin, jonka energia on $1{,}20\\,\\text{eV}$, ja sitten toisen fotonin, jolla se päätyy perustilaan. Oletetaan, ettei energiaa siirry lämmöksi. Mikä on toisen fotonin aallonpituus? Anna vastaus nanometreinä.",
+      "answer": 564,
+      "unit": "nm",
+      "tolerance": 0.02
+    }
+  ]
+}

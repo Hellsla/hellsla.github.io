@@ -1,0 +1,105 @@
+{
+  "level1": [
+    {
+      "id": "fy8-3-L1-01",
+      "level": 1,
+      "text": "Vetyatomin energiatasot ovat $E_n = -\\tfrac{13{,}6\\,\\text{eV}}{n^2}$. Mikä on vetyatomin energia, kun elektroni on tasolla $n = 4$? Anna vastaus etumerkkeineen elektronivoltteina.",
+      "answer": -0.85,
+      "unit": "eV",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-3-L1-02",
+      "level": 1,
+      "text": "Vetyatomin energiatasot ovat $E_n = -\\tfrac{13{,}6\\,\\text{eV}}{n^2}$. Vetyatomin elektroni siirtyy tasolta $n = 4$ perustilaan $n = 1$. Kuinka suuri on syntyvän fotonin energia elektronivoltteina?",
+      "answer": 12.8,
+      "unit": "eV",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-3-L1-03",
+      "level": 1,
+      "text": "Vedyn spektrissä on syaani viiva, jonka aallonpituus on $486\\,\\text{nm}$. Kuinka suuri on tämän valon fotonin energia? Anna vastaus elektronivoltteina ($h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$).",
+      "answer": 2.55,
+      "unit": "eV",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-3-L1-04",
+      "level": 1,
+      "text": "Vetyatomin energiatasot ovat $E_n = -\\tfrac{13{,}6\\,\\text{eV}}{n^2}$. Vetyatomi on viritystilassa $n = 3$. Kuinka paljon energiaa tarvitaan elektronin irrottamiseen atomista tästä tilasta? Anna vastaus elektronivoltteina.",
+      "answer": 1.51,
+      "unit": "eV",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-3-L1-05",
+      "level": 1,
+      "text": "Vetyatomin siirtymässä syntyvän fotonin energia on $1{,}89\\,\\text{eV}$. Mikä on fotonin taajuus? Anna vastaus terahertseinä ($1\\,\\text{THz} = 10^{12}\\,\\text{Hz}$; $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$).",
+      "answer": 457,
+      "unit": "THz",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy8-3-L2-01",
+      "level": 2,
+      "text": "Vetyatomin energiatasot ovat $E_n = -\\tfrac{13{,}6\\,\\text{eV}}{n^2}$. Vetyatomin elektroni siirtyy tasolta $n = 5$ tasolle $n = 2$. Laske syntyvän valon aallonpituus nanometreinä ($h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$).",
+      "answer": 434,
+      "unit": "nm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-3-L2-02",
+      "level": 2,
+      "text": "Vetyatomin energiatasot ovat $E_n = -\\tfrac{13{,}6\\,\\text{eV}}{n^2}$. Vedyn violetti spektriviiva, jonka aallonpituus on $410\\,\\text{nm}$, syntyy siirtymässä, joka päättyy tasolle $n = 2$. Miltä tasolta siirtymä alkaa? Anna vastaukseksi tason järjestysluku $n$.",
+      "answer": 6,
+      "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-3-L2-03",
+      "level": 2,
+      "text": "Kuvassa on kuvitteellisen atomin energiatasokaavio. Atomin elektroni siirtyy tasolta $E_3$ tasolle $E_2$. Laske syntyvän fotonin aallonpituus nanometreinä. Lue tasojen energiat kuvasta ($h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$).",
+      "figure": "fy8-3/levels-task",
+      "answer": 620,
+      "unit": "nm",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy8-3-L2-04",
+      "level": 2,
+      "text": "Perustilassa olevaan vetyatomiin osuu ultraviolettifotoni, jonka aallonpituus on $80{,}0\\,\\text{nm}$. Fotoni ionisoi atomin. Vedyn ionisaatioenergia perustilasta on $13{,}6\\,\\text{eV}$. Kuinka suuri on irronneen elektronin liike-energia elektronivoltteina ($h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$)?",
+      "answer": 1.9,
+      "unit": "eV",
+      "tolerance": 0.03
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy8-3-L3-01",
+      "level": 3,
+      "text": "Vetyatomin energiatasot ovat $E_n = -\\tfrac{13{,}6\\,\\text{eV}}{n^2}$. Purkausputkessa elektronit, joiden liike-energia on $12{,}5\\,\\text{eV}$, törmäävät perustilassa oleviin vetyatomeihin. Törmäyksessä atomi voi ottaa elektronilta vain sellaisen energian, joka on jonkin tasoparin erotus. Kuinka monta eri aallonpituutta virittyneet atomit voivat lähettää palatessaan perustilaan? Mukaan lasketaan myös siirtymät, jotka kulkevat välitasojen kautta. Laske eri tasoparit, joiden välillä siirtymä on mahdollinen. Jokainen tasopari antaa yhden aallonpituuden.",
+      "answer": 3,
+      "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-3-L3-02",
+      "level": 3,
+      "text": "Heliumionissa $\\text{He}^+$ on vain yksi elektroni, kuten vetyatomissa, mutta ytimessä on kaksi protonia. Ionin energiatasot ovat $E_n = -\\tfrac{54{,}4\\,\\text{eV}}{n^2}$. Tähden spektrissä havaitaan viiva, joka syntyy ionin siirtymässä tasolta $n = 4$ tasolle $n = 3$. Laske viivan aallonpituus nanometreinä ($h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$).",
+      "answer": 469,
+      "unit": "nm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-3-L3-03",
+      "level": 3,
+      "text": "Vetyatomin energiatasot ovat $E_n = -\\tfrac{13{,}6\\,\\text{eV}}{n^2}$. Kuumassa vetykaasussa yksi atomi palaa tasolta $n = 2$ perustilaan ja lähettää fotonin. Fotoni osuu toiseen vetyatomiin, joka on viritystilassa $n = 2$. Riittääkö fotonin energia ionisoimaan tämän atomin? Jos riittää, kuinka suuri on irronneen elektronin liike-energia elektronivoltteina?",
+      "answer": 6.8,
+      "unit": "eV",
+      "tolerance": 0.02
+    }
+  ]
+}

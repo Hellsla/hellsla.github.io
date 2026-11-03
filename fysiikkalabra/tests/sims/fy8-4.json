@@ -1,0 +1,143 @@
+[
+ {
+  "expr": "(() => { const S=window.simState; return S.hiukkanen==='fotoni' && S.raot==='molemmat' && S.reitti==='ei' && S.x0===1 && S.N===0 && S.n===0 && S.running===false ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "on load: photons, both slits, path not measured, counting interval at x0 = 1,0 mm, empty screen, at rest (must run before any setup)"
+ },
+ {
+  "expr": "window.simState.pw",
+  "expected": 0.270982,
+  "tol": 0.01,
+  "note": "on load: the model puts 0,27 % of the hits in the interval at 1,0 mm, a dark fringe (lesson-answers sim-pw-both-1)"
+ },
+ {
+  "expr": "(() => { const L=[...document.querySelectorAll('#sim-root select')].map(s=>[...s.options].map(o=>o.value).join(',')); return L.length===4 && L[0]==='fotoni,elektroni' && L[1]==='vasen,molemmat,oikea' && L[2]==='ei,kylla' && L[3]==='0.5,1,4' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "four selects: particles, slits, path measurement and speed hidas/normaali/nopea"
+ },
+ {
+  "expr": "(() => { const R=document.querySelectorAll('#sim-root input[type=range]'); return R.length===1 && R[0].min==='-10' && R[0].max==='10' && R[0].step==='0.5' && R[0].value==='1' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "one slider: the counting interval's centre x0 from -10 to 10 mm in steps of 0,5 mm, 1,0 mm on load"
+ },
+ {
+  "expr": "(() => { const b=[...document.querySelectorAll('#sim-root button')].map(x=>x.textContent); const k=[...document.getElementById('sim-root').children].map(e=>e.tagName==='CANVAS'?'canvas':e.className); return b.length===3 && b[0]==='Käynnistä' && b[1]==='+1000 osumaa' && b[2]==='Tyhjennä' && k.indexOf('canvas')<k.indexOf('controls') && k.indexOf('controls')<k.indexOf('readout') ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "three buttons, the main one first; DOM order canvas, controls, readout"
+ },
+ {
+  "expr": "(() => { const n=document.querySelectorAll('#sim-root p.note'); return !document.querySelector('#sim-root details') && n.length===1 && n[0].textContent.trim().split(/\\s+/).length<=15 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "no Lisätietoja box; one legend line of at most 15 words"
+ },
+ {
+  "expr": "(() => { const P=window.simAdapter && window.simAdapter.params; return P && Object.keys(P).sort().join(',')==='hiukkanen,raot,reitti,x0' && P.x0.unit==='mm' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "adapter declares hiukkanen, raot, reitti and x0 (mm)"
+ },
+ {
+  "expr": "(() => { const c=document.querySelector('#sim-root canvas'); const w=document.getElementById('sim-root').clientWidth; return c.width===600 && c.height===(w<500?600:400) ? 1 : 0; })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "canvas is 600x400 on a wide screen, 600x600 (larger labels) when #sim-root is under 500 px"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const L=[...document.querySelectorAll('#sim-root select')]; const R=document.querySelector('#sim-root input[type=range]'); const B=[...document.querySelectorAll('#sim-root button')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'fotoni'); I(L[1],'molemmat'); I(L[2],'ei'); I(R,1); B[2].click(); B[1].click(); ",
+  "expr": "window.simState.N",
+  "expected": 1000,
+  "tol": 0,
+  "note": "+1000 osumaa adds 1000 hits at once"
+ },
+ {
+  "expr": "window.simState.n",
+  "expected": 3.0,
+  "tol": 0,
+  "note": "koe 1: both slits, interval at the dark fringe 1,0 mm: 3 of 1000 hits (lesson-answers sim-n-both-1)"
+ },
+ {
+  "expr": "window.simState.osuus",
+  "expected": 0.3,
+  "tol": 0.01,
+  "note": "share n : N = 0,3 %"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const L=[...document.querySelectorAll('#sim-root select')]; const R=document.querySelector('#sim-root input[type=range]'); const B=[...document.querySelectorAll('#sim-root button')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'fotoni'); I(L[1],'vasen'); I(L[2],'ei'); I(R,1); B[2].click(); B[1].click(); ",
+  "expr": "window.simState.n",
+  "expected": 43.0,
+  "tol": 0,
+  "note": "koe 1: only the left slit: 43 of 1000 hits at 1,0 mm (sim-n-one-1)"
+ },
+ {
+  "expr": "window.simState.pw",
+  "expected": 4.26721,
+  "tol": 0.01,
+  "note": "one slit: the model expects 4,27 % at 1,0 mm (sim-pw-one-1)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const L=[...document.querySelectorAll('#sim-root select')]; const R=document.querySelector('#sim-root input[type=range]'); const B=[...document.querySelectorAll('#sim-root button')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'fotoni'); I(L[1],'oikea'); I(L[2],'ei'); I(R,1); B[2].click(); B[1].click(); ",
+  "expr": "window.simState.n",
+  "expected": 43.0,
+  "tol": 0,
+  "note": "only the right slit: the same 43 hits (same distribution, same seed)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const L=[...document.querySelectorAll('#sim-root select')]; const R=document.querySelector('#sim-root input[type=range]'); const B=[...document.querySelectorAll('#sim-root button')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'elektroni'); I(L[1],'molemmat'); I(L[2],'kylla'); I(R,1); B[2].click(); B[1].click(); ",
+  "expr": "window.simState.n",
+  "expected": 43.0,
+  "tol": 0,
+  "note": "koe 2: electrons, both slits, path measured: the fringes vanish, 43 hits at 1,0 mm as with one slit"
+ },
+ {
+  "expr": "window.simState.pw",
+  "expected": 4.26721,
+  "tol": 0.01,
+  "note": "path measured: the model is the one-slit pattern, 4,27 %"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const L=[...document.querySelectorAll('#sim-root select')]; const R=document.querySelector('#sim-root input[type=range]'); const B=[...document.querySelectorAll('#sim-root button')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'elektroni'); I(L[1],'molemmat'); I(L[2],'ei'); I(R,1); B[2].click(); B[1].click(); ",
+  "expr": "window.simState.n",
+  "expected": 3.0,
+  "tol": 0,
+  "note": "koe 2: electrons, path not measured: the dark fringe again, 3 hits (electrons and photons share the model)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const L=[...document.querySelectorAll('#sim-root select')]; const R=document.querySelector('#sim-root input[type=range]'); const B=[...document.querySelectorAll('#sim-root button')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R,0);",
+  "expr": "window.simState.n",
+  "expected": 91.0,
+  "tol": 0,
+  "note": "moving the interval to x0 = 0 keeps the hits and recounts: 91 at the central bright fringe"
+ },
+ {
+  "expr": "(() => { const S=window.simState; return S.N===1000 && S.x0===0 && Math.abs(S.pw-8.53708)<0.01 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "x0 = 0: still 1000 hits; the model expects 8,54 %"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const L=[...document.querySelectorAll('#sim-root select')]; const R=document.querySelector('#sim-root input[type=range]'); const B=[...document.querySelectorAll('#sim-root button')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; B[2].click();",
+  "expr": "(() => { const S=window.simState; return S.N===0 && S.n===0 && S.running===false ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "Tyhjennä clears the screen"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const L=[...document.querySelectorAll('#sim-root select')]; const R=document.querySelector('#sim-root input[type=range]'); const B=[...document.querySelectorAll('#sim-root button')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[3],'4'); B[0].click();",
+  "expr": "new Promise((r) => { const t0 = Date.now(); const f = () => { const S = window.simState; if (S.N >= 2 || Date.now() - t0 > 9000) r(S.running && S.N >= 2 && document.querySelector('#sim-root button').textContent==='Pysäytä' ? 1 : 0); else setTimeout(f, 50); }; f(); })",
+  "expected": 1,
+  "tol": 0,
+  "note": "Käynnistä sends one quantum at a time; hits arrive one by one while the button reads Pysäytä"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const L=[...document.querySelectorAll('#sim-root select')]; const R=document.querySelector('#sim-root input[type=range]'); const B=[...document.querySelectorAll('#sim-root button')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; B[0].click();",
+  "expr": "(() => { const S=window.simState; return S.running===false && document.querySelector('#sim-root button').textContent==='Käynnistä' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "Pysäytä stops the source"
+ }
+]
