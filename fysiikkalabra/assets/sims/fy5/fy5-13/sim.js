@@ -191,7 +191,7 @@ new p5((p) => {
     M.forEach((m, i) => {
       if (m.t === 'S') { p.fill(...INKC); p.stroke(255); p.strokeWeight(1.5 * sk); p.circle(xs[i], ya, 9 * sk); }
       if (gap >= 1.3 * fh + 2) {
-        lab(m.t === 'S' ? '$\\text{S}$' : '$\\text{K}$', xs[i], y, 'c', INKC);
+        lab(m.t === 'S' ? __('lbl_solmu') : __('lbl_kupu'), xs[i], y, 'c', INKC);
         p.stroke(...MUTEDC); p.strokeWeight(1.2 * sk); p.drawingContext.setLineDash([2 * sk, 4 * sk]);
         p.line(xs[i], y + 0.5 * fh, xs[i], ya - 10 * sk); p.drawingContext.setLineDash([]);
       }

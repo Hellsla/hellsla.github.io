@@ -1,0 +1,448 @@
+{
+  "version": 1,
+  "contribution": "A standing wave forms from the sum of a wave and its reflection: nodes and antinodes at intervals of $\\tfrac{\\lambda}{2}$, and the boundary conditions give the natural frequencies of a string and of an open tube, $f_n = n \\cdot \\tfrac{v}{2L}$, and the odd natural frequencies of a closed tube, $f_n = n \\cdot \\tfrac{v}{4L}$, in the theme of musical instruments; the student finds the resonance frequencies from a steady-state model.",
+  "learn": [
+    "recognise the nodes and antinodes of a standing wave and explain how a standing wave forms from a wave and its reflection.",
+    "calculate the natural frequencies of a string and of an air column from the length and the wave speed.",
+    "compare the natural frequencies of a tube open at both ends and a tube closed at one end."
+  ],
+  "prior": [
+    "The speed, the frequency and the wavelength of a wave are related by $v = f\\lambda$ (chapter *Mechanical waves*)",
+    "A wave is reflected from the fixed end of a rope in the opposite phase (chapter *Reflection and diffraction of waves*)",
+    "The displacements of waves that meet add up, and waves in opposite phase cancel each other (chapter *Interference of waves*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Two students experiment in the gym with a long skipping rope. One end of the rope is tied to a wall bar, and the other student shakes the free end up and down with small movements. With slow, uneven shaking the rope wriggles messily. When the shaking rate is just right, the rope settles into one calm arc that swings with a large amplitude. When the rate is increased, the arc breaks up, until at a new, faster rate the rope shows two arcs and, between them, a point that does not move at all.",
+      "question": "Why does the rope settle into a calm pattern only at certain shaking rates, and what determines those rates?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Recap: reflection from a fixed end",
+      "optional": true,
+      "prompt": "The right end of a rope is fixed to a wall. A single wave pulse above the rest position of the rope travels along the rope towards the wall. What kind of pulse returns from the wall?",
+      "choices": [
+        {
+          "text": "A pulse of the same size, now below the rest position.",
+          "correct": true,
+          "feedback": "Correct. At a fixed end the wave is reflected in the opposite phase (chapter *Reflection and diffraction of waves*): the wall pulls the rope in the direction opposite to the pulse, so the end stays in place. Today we investigate what happens when the incident and the reflected wave travel in the rope at the same time."
+        },
+        {
+          "text": "A pulse of the same size, still above the rest position.",
+          "feedback": "That is what happens at a free end, which is able to move. A fixed end does not move, so the wall pulls the rope in the opposite direction and the pulse is turned below the rest position."
+        },
+        {
+          "text": "Nothing, because the wall stops the pulse and its energy disappears.",
+          "feedback": "A fixed end cannot take in energy, because it does not move. Therefore almost the whole pulse is reflected back, and it is turned below the rest position at the same time."
+        },
+        {
+          "text": "A pulse twice as large, because the incident and the reflected pulse add up.",
+          "feedback": "The incident and the reflected pulse add up only at the moment when they overlap near the wall. One pulse of the same size returns, turned below the rest position."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: two loops",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 3
+      },
+      "prompt": "A string $0.60\\,\\text{m}$ long, fixed at both ends, vibrates strongly in one loop when the frequency of the vibrator is $100\\,\\text{Hz}$. The tension of the string stays the same. At what frequency does the next strong standing wave with two loops form in the string?",
+      "choices": [
+        {
+          "text": "At $200\\,\\text{Hz}$, which is twice as much.",
+          "correct": true,
+          "feedback": "The values of the model support this: the greatest displacement was about $16.7\\,\\text{mm}$ at $200\\,\\text{Hz}$ and there were three nodes, but at $150\\,\\text{Hz}$ only about $1.0\\,\\text{mm}$. Two loops need a wavelength half as long, and since the speed of the wave is the same, the frequency must be twice as high."
+        },
+        {
+          "text": "At $50\\,\\text{Hz}$, because two loops need a longer wave.",
+          "feedback": "The values of the model contradict this: at $50\\,\\text{Hz}$ the displacement was only about $1.0\\,\\text{mm}$. Two loops mean that a whole wavelength fits on the string, so the wave must be *shorter* than in the case of one loop. A shorter wave at the same speed needs a higher frequency, $200\\,\\text{Hz}$ according to the equation $v = f\\lambda$."
+        },
+        {
+          "text": "At $150\\,\\text{Hz}$, which is half as much again.",
+          "feedback": "The values of the model contradict this: at $150\\,\\text{Hz}$ the displacement was only about $1.0\\,\\text{mm}$, and the pattern was not strong. The number of loops increases by one at a time, and each loop is half a wavelength. With two loops the wavelength is halved, so the frequency doubles to $200\\,\\text{Hz}$."
+        },
+        {
+          "text": "At any frequency above $100\\,\\text{Hz}$, as long as the shaking is stronger.",
+          "feedback": "The values of the model contradict this: when the frequency was raised, the displacement first decreased to about $1\\,\\text{mm}$ and grew again to about $16.7\\,\\text{mm}$ only at $200\\,\\text{Hz}$. A standing wave grows strong only at frequencies at which a whole number of half wavelengths fits on the string."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: a tube closed at one end",
+      "justify": true,
+      "reveal": {
+        "after": "koe-2",
+        "min": 3
+      },
+      "prompt": "A tube is closed at one end and open at the other. Its fundamental frequency is $100\\,\\text{Hz}$. What is the next natural frequency of the tube, that is, the next frequency at which the air column of the tube resonates strongly?",
+      "choices": [
+        {
+          "text": "$200\\,\\text{Hz}$, twice as much, as for a string.",
+          "feedback": "The values of the model contradict this: at $200\\,\\text{Hz}$ the displacement remained at about $1.0\\,\\text{mm}$. A string has a node at each end, but a closed tube has one only at the closed end; at the open end there is an antinode. Therefore only an odd number of quarter wavelengths fits in the tube."
+        },
+        {
+          "text": "$300\\,\\text{Hz}$, three times as much.",
+          "correct": true,
+          "feedback": "The values of the model support this: the displacement was about $16.7\\,\\text{mm}$ at $100\\,\\text{Hz}$, $300\\,\\text{Hz}$ and $500\\,\\text{Hz}$, but only about $1.0\\,\\text{mm}$ at $200\\,\\text{Hz}$ and $400\\,\\text{Hz}$. There is a node at the closed end and an antinode at the open end, so the length of the tube is $\\tfrac{\\lambda}{4}$, $\\tfrac{3\\lambda}{4}$ or $\\tfrac{5\\lambda}{4}$."
+        },
+        {
+          "text": "$150\\,\\text{Hz}$, one and a half times as much.",
+          "feedback": "The values of the model contradict this: at $150\\,\\text{Hz}$ the displacement was only about $1.4\\,\\text{mm}$. An odd number of quarter wavelengths must fit in the tube, so the natural frequencies are only the odd multiples of the fundamental frequency, never one and a half times it."
+        },
+        {
+          "text": "$400\\,\\text{Hz}$, because the closed end doubles the frequency.",
+          "feedback": "The values of the model contradict this: at $400\\,\\text{Hz}$ the displacement remained at about $1.0\\,\\text{mm}$. The closed end does not multiply the frequency by any constant, but forces a node at the end of the tube. The next natural frequency is the one at which three quarters of a wavelength fit in the tube."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Choose a string or a tube, change the frequency of the driving source and watch at which frequencies the displacement grows large. Every frequency you try is left as a point on the graph.",
+      "howto": "Choose the *Situation*: a string with both ends fixed, a tube open at both ends or a tube closed at one end. At the left end of the string is a vibrator, and at the left, open end of the tube a loudspeaker. Adjust the frequency $f$ of the driving source with the slider; the arrow keys change it in steps of $5\\,\\text{Hz}$. In the picture the blue line is the displacement at the moment and the dashed lines are the extreme positions between which the rope or the air moves. In the tube the blue rows of dots are air moving along the tube, and under the tube the same displacement is drawn as a graph. Nodes are marked with the letter N and antinodes with the letter A when there is room for them. The graph below keeps a point for every frequency you have tried; the points are cleared when you change the situation, the length or the speed. The speed $v$ of the wave in the string increases when the string is tightened: in the picture the tightening weight grows. *Speed* changes only the pace of the motion.",
+      "model": "The picture shows the steady state that forms after the driving has gone on for a long time: the wave travelling towards the right end and its reflection have added up. The motion is drawn greatly slowed down, because the real frequency is hundreds of hertz, and the displacements are magnified. The amplitude of the driving source itself is $1.0\\,\\text{mm}$ in the model for the string, and a small damping limits the greatest displacement to about $17\\,\\text{mm}$; in real instruments the ratio depends on the materials. At the open end of the tube the antinode at the natural frequencies is in the model exactly at the mouth of the tube (there is no end correction), and the speed of sound in air is $340\\,\\text{m/s}$. All numbers are values calculated by the model, not measurements.",
+      "calc": "The wavelength is $\\lambda = \\tfrac{v}{f}$. When $s = L - x$ is the distance from the right end and $k = \\tfrac{2\\pi f}{v} - i\\alpha$ is the wave number with a small damping $\\alpha = \\tfrac{0.06}{L}$, the amplitude of the displacement at the point $x$ is $U = a\\tfrac{\\sin ks}{\\sin kL}$ for the string, $U = a\\tfrac{\\cos ks}{\\sin kL}$ for the open tube and $U = a\\tfrac{\\sin ks}{\\cos kL}$ for the closed tube, where $a = 1.0\\,\\text{mm}$. These satisfy the conditions at the ends: at a fixed and at a closed end the displacement is zero, and at an open end it is greatest. The greatest displacement $A$ is the greatest value of $|U|$ along the string or the tube. Nodes are points where $|U|$ is at its smallest and below $15\\,\\%$ of $A$, and antinodes points where it is at its greatest and above $85\\,\\%$ of $A$. The natural frequencies are not fed into the model: the displacement grows large by itself when the denominator $\\sin kL$ or $\\cos kL$ is almost zero."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 1: the natural frequencies of a string",
+      "intro": "Test prediction 1. The length of the string is $0.60\\,\\text{m}$ and the speed of the wave $120\\,\\text{m/s}$, and they stay constant. Raise the frequency from $50\\,\\text{Hz}$ to $320\\,\\text{Hz}$ and watch the graph. Record at least the frequencies at which the greatest displacement $A$ peaks, and one frequency between two peaks. Also count the nodes from the picture.",
+      "initial": {
+        "tila": "kieli",
+        "L": 0.6,
+        "v": 120,
+        "f": 50
+      },
+      "locked": [
+        "tila",
+        "L",
+        "v"
+      ],
+      "vary": "f",
+      "names": {
+        "tila": "situation",
+        "L": "length of the string",
+        "v": "speed of the wave",
+        "f": "frequency"
+      },
+      "values": {
+        "tila": {
+          "kieli": "string, both ends fixed"
+        }
+      },
+      "units": {
+        "L": "m",
+        "v": "m/s",
+        "f": "Hz"
+      },
+      "measure": [
+        {
+          "key": "A",
+          "label": "A (mm)"
+        },
+        {
+          "key": "solmut",
+          "label": "nodes"
+        },
+        {
+          "key": "lambda",
+          "label": "λ (m)"
+        }
+      ],
+      "min": 3
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 2: a tube closed at one end",
+      "intro": "Test prediction 2. The tube is $0.85\\,\\text{m}$ long and closed at its right end. Raise the frequency from $50\\,\\text{Hz}$ to $550\\,\\text{Hz}$ and record at least the frequencies at which the displacement peaks, and the frequencies $200\\,\\text{Hz}$ and $400\\,\\text{Hz}$. At which end of the tube is the node and at which the antinode?",
+      "initial": {
+        "tila": "suljettu",
+        "L": 0.85,
+        "f": 50
+      },
+      "locked": [
+        "tila",
+        "L"
+      ],
+      "vary": "f",
+      "names": {
+        "tila": "situation",
+        "L": "length of the tube",
+        "f": "frequency"
+      },
+      "values": {
+        "tila": {
+          "suljettu": "tube, one end closed"
+        }
+      },
+      "units": {
+        "L": "m",
+        "f": "Hz"
+      },
+      "measure": [
+        {
+          "key": "A",
+          "label": "A (mm)"
+        },
+        {
+          "key": "solmut",
+          "label": "nodes"
+        },
+        {
+          "key": "kuvut",
+          "label": "antinodes"
+        }
+      ],
+      "min": 3
+    },
+    {
+      "id": "koe-3",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 3: the same tube open at both ends",
+      "optional": true,
+      "intro": "Open the closed end of the tube: choose the tube open at both ends, whose length is still $0.85\\,\\text{m}$. Find the two lowest frequencies at which the displacement peaks and compare them with the frequencies of experiment 2.",
+      "initial": {
+        "tila": "avoin",
+        "L": 0.85,
+        "f": 50
+      },
+      "locked": [
+        "tila",
+        "L"
+      ],
+      "vary": "f",
+      "names": {
+        "tila": "situation",
+        "L": "length of the tube",
+        "f": "frequency"
+      },
+      "values": {
+        "tila": {
+          "avoin": "tube, both ends open"
+        }
+      },
+      "units": {
+        "L": "m",
+        "f": "Hz"
+      },
+      "measure": [
+        {
+          "key": "A",
+          "label": "A (mm)"
+        },
+        {
+          "key": "solmut",
+          "label": "nodes"
+        },
+        {
+          "key": "kuvut",
+          "label": "antinodes"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion: at which frequencies does a standing wave form?",
+      "after": [
+        "koe-1",
+        "koe-2"
+      ],
+      "prompt": "Write on the basis of your tables: at which frequencies did a strong standing wave form in the string and in the closed tube? How are these frequencies related to the lowest of them? How were the length of the string and the wavelength related at the peaks, and why are the frequencies of the closed tube different from those of the string?",
+      "model": "In the string ($L = 0.60\\,\\text{m}$, $v = 120\\,\\text{m/s}$) the greatest displacement grew to about $16.7\\,\\text{mm}$ only at the frequencies $100\\,\\text{Hz}$, $200\\,\\text{Hz}$ and $300\\,\\text{Hz}$; between them, for example at $150\\,\\text{Hz}$, it was only about $1.0\\,\\text{mm}$. The frequencies are whole-number multiples of the lowest frequency $100\\,\\text{Hz}$. At the peaks there were $2$, $3$ and $4$ nodes, and the wavelengths were $1.20\\,\\text{m}$, $0.60\\,\\text{m}$ and $0.40\\,\\text{m}$: one, two or three half wavelengths fitted on the string. In the closed tube ($L = 0.85\\,\\text{m}$) the peaks were at $100\\,\\text{Hz}$, $300\\,\\text{Hz}$ and $500\\,\\text{Hz}$, but at $200\\,\\text{Hz}$ and $400\\,\\text{Hz}$ the displacement was only about $1.0\\,\\text{mm}$. There was always a node at the closed end and an antinode at the open end, so only an odd number of quarter wavelengths fitted in the tube. The values are calculated by the model.",
+      "criteria": [
+        "I named the peak frequencies of both experiments as numbers.",
+        "I stated that the peaks of the string are whole-number multiples of the lowest frequency and those of the closed tube only odd multiples.",
+        "I linked the peaks to a whole number of half wavelengths fitting on the string.",
+        "I explained the difference of the closed tube by a node at the closed end and an antinode at the open end.",
+        "I called the numbers values of the model."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Return to your predictions",
+      "optional": true,
+      "prompt": "Compare your predictions with the values of the model and with the formulas $f_n = n \\cdot \\tfrac{v}{2L}$ and $f_n = n \\cdot \\tfrac{v}{4L}$. Then return to the skipping rope: why did the rope settle into a calm arc only at certain rates, and what would happen to the rates if the rope were made shorter?",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2"
+      ]
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the error",
+      "optional": true,
+      "prompt": "A student calculates the fundamental frequency of an organ pipe closed at its upper end when the length of the pipe is $0.85\\,\\text{m}$ and the speed of sound $340\\,\\text{m/s}$:\n\n$$f_1 = \\frac{v}{2L} = \\frac{340\\,\\text{m/s}}{2 \\cdot 0.85\\,\\text{m}} = 200\\,\\text{Hz}$$\n\nWhere is the error?",
+      "choices": [
+        {
+          "text": "There is a node at the closed end and an antinode at the open end, so $L = \\tfrac{\\lambda}{4}$ and $f_1 = \\tfrac{v}{4L} = 100\\,\\text{Hz}$.",
+          "correct": true,
+          "feedback": "Correct. The formula $\\tfrac{v}{2L}$ holds when the condition at both ends is the same, a node or an antinode. At the fundamental frequency of a closed pipe only a quarter of a wavelength fits in the pipe, so $\\lambda_1 = 4L = 3.4\\,\\text{m}$ and $f_1 = 100\\,\\text{Hz}$."
+        },
+        {
+          "text": "The speed of sound must be multiplied by two, because sound travels back and forth in the pipe, and $f_1 = 400\\,\\text{Hz}$.",
+          "feedback": "The speed of sound in air does not depend on the direction in which the sound travels. The travelling back and forth already shows in the relation between the length and the wavelength, and in a closed pipe it leads to the condition $L = \\tfrac{\\lambda}{4}$, which makes the frequency lower, $100\\,\\text{Hz}$."
+        },
+        {
+          "text": "There is no error in the calculation, because the closed end of the pipe does not affect the natural frequencies.",
+          "feedback": "The end of the pipe decides where the node is and where the antinode. At the closed end the air cannot move, so there is a node, and at the fundamental frequency only a quarter of a wavelength fits in the pipe. Therefore $f_1 = \\tfrac{v}{4L} = 100\\,\\text{Hz}$."
+        },
+        {
+          "text": "The length of the pipe must first be converted to centimetres, and then the result is correct in hertz.",
+          "feedback": "The length in metres and the speed in metres per second give hertz directly, so no conversion is needed. The error is in the formula: the fundamental frequency of a closed pipe is $\\tfrac{v}{4L} = 100\\,\\text{Hz}$, because there is a node at the closed end and an antinode at the open end."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply to a new situation",
+      "prompt": "A didgeridoo is a long wooden tube that the player blows into with the lips pressed against the mouth of the tube. The lips close this end of the tube, so the instrument works roughly as a tube closed at one end. The length of the tube is $1.50\\,\\text{m}$. What is the second lowest natural frequency of the tube? Use $340\\,\\text{m/s}$ as the speed of sound in air. Give the answer in hertz.",
+      "answer": 170,
+      "unit": "Hz",
+      "tolerance": 0.02,
+      "hints": [
+        "At which end of the tube is the node and at which the antinode? How large a part of a wavelength fits in the tube at the fundamental frequency?",
+        "The natural frequencies of a closed tube are $f_n = n \\cdot \\tfrac{v}{4L}$, and $n$ can only be odd: $1, 3, 5, \\ldots$",
+        "The fundamental frequency is $f_1 = \\tfrac{340\\,\\text{m/s}}{4 \\cdot 1.50\\,\\text{m}} = 56.7\\,\\text{Hz}$. What is the next allowed $n$?"
+      ],
+      "mistakes": [
+        {
+          "value": 113,
+          "feedback": "You calculated either the fundamental frequency of an open tube, $\\tfrac{v}{2L}$, or twice the fundamental frequency, $2f_1$. A closed tube has no even natural frequencies: the next one after the fundamental frequency $56.7\\,\\text{Hz}$ is $3f_1$."
+        },
+        {
+          "value": 227,
+          "feedback": "This is the second natural frequency of a tube open at both ends, $2 \\cdot \\tfrac{v}{2L}$. The lips close the other end of the tube, so there is a node there and the fundamental frequency is $\\tfrac{v}{4L}$."
+        },
+        {
+          "value": 56.7,
+          "feedback": "This is the fundamental frequency of the tube, that is, the lowest natural frequency. The question asks for the second lowest, which for a closed tube is three times the fundamental."
+        }
+      ],
+      "solution": "**Given:** tube closed at one end, length $L = 1.50\\,\\text{m}$; speed of sound in air $v = 340\\,\\text{m/s}$\n\n**Find:** the second lowest natural frequency in hertz\n\n**Principle:** The lips close the end of the tube, so the air cannot move there and there is a displacement node; at the open end there is an antinode. Therefore only an odd number of quarter wavelengths fits in the tube, and the natural frequencies are odd multiples of the fundamental frequency. The second lowest corresponds to $n = 3$.\n\n**Formula:** $f_n = n \\cdot \\dfrac{v}{4L}$, where $n = 1, 3, 5, \\ldots$, so for $n = 3$: $f_3 = \\dfrac{3v}{4L}$\n\n**Conversions:** None are needed: the length is in metres and the speed in metres per second.\n\n**Substitution:** $f_3 = \\dfrac{3 \\cdot 340\\,\\text{m/s}}{4 \\cdot 1.50\\,\\text{m}} = \\dfrac{1020\\,\\text{m/s}}{6.00\\,\\text{m}} = 170\\,\\text{Hz}$\n\n**Answer:** $170\\,\\text{Hz}$, three significant figures as in the length of the tube $1.50\\,\\text{m}$ and the speed of sound.\n\n**Reasonableness:** The fundamental frequency is $\\tfrac{340\\,\\text{m/s}}{6.00\\,\\text{m}} = 56.7\\,\\text{Hz}$, which suits the low, humming sound of a didgeridoo, and $3 \\cdot 56.7\\,\\text{Hz} = 170\\,\\text{Hz}$. At this frequency three quarters of a wavelength fit in the tube: $\\lambda = \\tfrac{340\\,\\text{m/s}}{170\\,\\text{Hz}} = 2.00\\,\\text{m}$ and $\\tfrac{3}{4} \\cdot 2.00\\,\\text{m} = 1.50\\,\\text{m}$."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise at three levels. The tasks of level 1 use one formula, those of level 2 combine two steps or read a figure, and level 3 needs reasoning about the rules of the natural frequencies."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept",
+      "prompt": "A guitar string vibrates at its fundamental frequency. Which description of the string is correct?",
+      "choices": [
+        {
+          "text": "The length of the string is half a wavelength, and the middle of the string is an antinode.",
+          "correct": true,
+          "feedback": "Correct. There is a node at each fixed end, and at the fundamental frequency there is one antinode between them. From node to node is $\\tfrac{\\lambda}{2}$, so $\\lambda_1 = 2L$."
+        },
+        {
+          "text": "The length of the string is one wavelength, and the middle of the string is a node.",
+          "feedback": "This describes the second natural frequency of the string, at which the string has two loops and a node in the middle. At the fundamental frequency there is one loop, so the length of the string is only half a wavelength."
+        },
+        {
+          "text": "The length of the string is half a wavelength, and the ends of the string are antinodes.",
+          "feedback": "The fixed ends cannot move, so there is always a node at them. The antinode, where the motion is greatest, is in the middle of the string at the fundamental frequency."
+        },
+        {
+          "text": "The length of the string is a quarter of a wavelength, and one end is an antinode.",
+          "feedback": "A quarter of a wavelength suits a tube closed at one end, which has an antinode at its open end. Both ends of a guitar string are fixed and so nodes, so the length of the string is half a wavelength."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Wavelength in a closed tube",
+      "prompt": "The length of a tube closed at one end is $0.60\\,\\text{m}$. The air column of the tube vibrates at the natural frequency $f_3 = 3f_1$. What is the wavelength of the sound wave? Give the answer in metres.",
+      "answer": 0.8,
+      "unit": "m",
+      "tolerance": 0.02,
+      "hints": [
+        "At which end of the tube is the node and at which the antinode? How many quarter wavelengths fit in the tube when $n = 3$?",
+        "In a closed tube $L = n \\cdot \\tfrac{\\lambda_n}{4}$, so $\\lambda_3 = \\tfrac{4L}{3}$.",
+        "$\\lambda_3 = \\tfrac{4 \\cdot 0.60\\,\\text{m}}{3}$."
+      ],
+      "mistakes": [
+        {
+          "value": 0.4,
+          "feedback": "You used the rule for a string and an open tube, $\\lambda_n = \\tfrac{2L}{n}$. In a closed tube there is a node at one end and an antinode at the other, so three *quarters* of a wavelength fit in the tube: $\\lambda_3 = \\tfrac{4L}{3}$."
+        },
+        {
+          "value": 2.4,
+          "feedback": "$4L = 2.4\\,\\text{m}$ is the wavelength of the fundamental frequency. At the frequency $3f_1$ the wavelength is a third of that, because the speed of sound is the same."
+        }
+      ],
+      "solution": "**Given:** tube closed at one end, $L = 0.60\\,\\text{m}$; natural frequency $f_3 = 3f_1$, that is, $n = 3$\n\n**Find:** the wavelength $\\lambda_3$ in metres\n\n**Principle:** At the closed end the air cannot move, so there is a displacement node, and at the open end there is an antinode. From a node to an antinode is a quarter of a wavelength, so at the natural frequency $f_n$ there are $n$ quarters in the tube, and $n = 3$ means three quarters.\n\n**Formula:** $L = n \\cdot \\dfrac{\\lambda_n}{4}$, so $\\lambda_n = \\dfrac{4L}{n}$ and for $n = 3$: $\\lambda_3 = \\dfrac{4L}{3}$\n\n**Conversions:** None are needed: the length is in metres.\n\n**Substitution:** $\\lambda_3 = \\dfrac{4 \\cdot 0.60\\,\\text{m}}{3} = \\dfrac{2.40\\,\\text{m}}{3} = 0.80\\,\\text{m}$\n\n**Answer:** $0.80\\,\\text{m}$, two significant figures as in the length of the tube $0.60\\,\\text{m}$.\n\n**Reasonableness:** In the tube there is a node at the closed end and another node $\\tfrac{\\lambda}{2} = 0.40\\,\\text{m}$ from it, and from that node an antinode $\\tfrac{\\lambda}{4} = 0.20\\,\\text{m}$ further on at the open end: $0.40\\,\\text{m} + 0.20\\,\\text{m} = 0.60\\,\\text{m}$, the length of the tube. The wavelength of the fundamental frequency would be $4L = 2.4\\,\\text{m}$, three times as long."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Explain: pitch",
+      "optional": true,
+      "prompt": "Using a standing wave, explain why the note of a guitar rises when the string is pressed against the fingerboard, and why it also rises when the string is tightened.",
+      "criteria": [
+        "I say that the fixed ends of the string are nodes and that at the fundamental frequency the length of the string is half a wavelength.",
+        "I explain that when the string is pressed, the vibrating part becomes shorter, so the wavelength becomes shorter and the frequency increases, because $v = f\\lambda$ stays the same.",
+        "I explain that tightening increases the speed $v$ of the wave, so at the same wavelength the frequency increases.",
+        "I use the formula $f_1 = \\tfrac{v}{2L}$ or its verbal equivalent as a reason."
+      ],
+      "model": "Both ends of a guitar string are fixed, so the ends are nodes, and at the fundamental frequency the length of the vibrating part of the string is half a wavelength: $\\lambda_1 = 2L$. When the string is pressed against the fingerboard, the vibrating part becomes shorter, so the wavelength also becomes shorter. The speed of the wave in the string does not change, so according to the equation $v = f\\lambda$ the frequency increases: $f_1 = \\tfrac{v}{2L}$ is inversely proportional to the length. When the string is tightened, the wavelength stays the same, but the wave travels faster in the tighter string. A greater $v$ at the same wavelength means a greater frequency. The note we hear rises in both cases, because the pitch is determined by the fundamental frequency."
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, two quick questions. Answer first yourself and open the answer only afterwards."
+    }
+  ]
+}
