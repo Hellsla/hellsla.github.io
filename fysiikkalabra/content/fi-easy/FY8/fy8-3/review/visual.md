@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: e65229901a3e00fa
+CONTENT-HASH: 9a75d81ecf795758
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+- [Minor] fy8-3-theory-1280-1/2: the discharge tube photo is a small dark strip, readable. The Orion photo has the caption formula $n = 3$ and $n = 2$ set as maths: good.
 
 ## Checked
-- batch delta review: the only change is meta.json key_concepts. I captured the "Luvun tärkeät käsitteet" panel from preview/fi-easy/fy8-3.html at 390 and 1280 px and opened it (review/shots has no capture of the panel). It sits between the opening and stage 1: term bold over its explanation at 390 px, two columns at 1280 px. Nothing is clipped, there is no horizontal overflow and no KaTeX error. The terms match the lesson's usage, and the explanations are plain, correct S2 Finnish.
+batch delta review: opened fy8-3-theory-1280 captures holding the new unit-photo (floats right, 20 rem wide, no clipping or overflow, figure beside it intact, credit line present, alt text and caption natural Finnish, any quantity in the caption set as LaTeX with its unit) plus the surrounding figures and formulas.
