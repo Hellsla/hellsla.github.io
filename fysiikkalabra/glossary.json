@@ -1935,7 +1935,7 @@
   },
   {
     "term": "sähköenergia",
-    "definition": "Sähkölaitteissa ja sähköverkossa siirtyvä ja muuttuva energia. Sähköenergia muutetaan voimalaitoksella muista energialajeista ja käytössä takaisin esimerkiksi lämmöksi, valoksi tai liikkeeksi; sen yksikkö on joule (J), arjessa kilowattitunti (kWh).",
+    "definition": "Sähkölaitteissa ja sähköverkossa siirtyvä ja muuttuva energia. Sähköenergia muutetaan voimalaitoksella muista energialajeista ja käytössä esimerkiksi valoksi, liike-energiaksi tai laitteen sisäenergiaksi, joka siirtyy lämpönä ympäristöön; sen yksikkö on joule (J), arjessa kilowattitunti (kWh).",
     "lessons": [
       "fy2-7",
       "fy6-6"
