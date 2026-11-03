@@ -20,5 +20,27 @@
   ],
   "sim": true,
   "solutions": "all",
-  "image": false
+  "image": false,
+  "key_concepts": [
+    {
+      "term": "magneetti",
+      "explain": "Kappale, jolla on pohjois- ja etelänapa. Erinimiset navat vetävät toisiaan puoleensa ja samannimiset hylkivät."
+    },
+    {
+      "term": "magneettinen dipoli",
+      "explain": "Kappale, jolla on aina kaksi napaa. Jos magneetin katkaisee, kumpaankin osaan syntyy taas kaksi napaa."
+    },
+    {
+      "term": "magneettikenttä",
+      "explain": "Magneetin ympärillä oleva alue, jossa toinen magneetti tai kompassineula kokee voiman."
+    },
+    {
+      "term": "kenttäviiva",
+      "explain": "Viiva, joka näyttää kentän suunnan. Tiheät viivat tarkoittavat voimakasta kenttää."
+    },
+    {
+      "term": "magneettivuon tiheys",
+      "explain": "Suure, joka kertoo magneettikentän voimakkuuden ja suunnan. Sen tunnus on B ja yksikkö tesla."
+    }
+  ]
 }

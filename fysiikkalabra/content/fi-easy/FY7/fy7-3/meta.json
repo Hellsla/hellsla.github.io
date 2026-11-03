@@ -18,5 +18,23 @@
   ],
   "sim": true,
   "solutions": "all",
-  "image": false
+  "image": false,
+  "key_concepts": [
+    {
+      "term": "virtajohdin",
+      "explain": "Johdin, jossa kulkee sähkövirta. Sen ympärille syntyy magneettikenttä."
+    },
+    {
+      "term": "käämi",
+      "explain": "Kierukaksi kierretty johdin. Käämin sisällä kenttä on lähes samanlainen joka kohdassa."
+    },
+    {
+      "term": "oikean käden sääntö",
+      "explain": "Muistisääntö, jolla päätellään kentän suunta: peukalo virran suuntaan, sormet kiertävät kentän suuntaan."
+    },
+    {
+      "term": "sähkömagneetti",
+      "explain": "Käämi, jonka sisällä on rautasydän. Se on magneetti vain silloin, kun käämissä kulkee virta."
+    }
+  ]
 }

@@ -16,5 +16,23 @@
   ],
   "sim": true,
   "solutions": "all",
-  "image": false
+  "image": false,
+  "key_concepts": [
+    {
+      "term": "sähkömoottori",
+      "explain": "Laite, jossa magneettikenttä kääntää virtasilmukkaa. Se muuttaa sähköenergiaa liike-energiaksi."
+    },
+    {
+      "term": "virtasilmukka",
+      "explain": "Suljettu johdinsilmukka, jossa kulkee virta. Kentässä sen vastakkaisiin sivuihin kohdistuu vastakkaiset voimat."
+    },
+    {
+      "term": "kaiutin",
+      "explain": "Laite, jossa magneettikenttä liikuttaa kelaa ja kalvoa edestakaisin. Kalvon liike synnyttää äänen."
+    },
+    {
+      "term": "magneettinen voima",
+      "explain": "Voima, jonka magneettikenttä kohdistaa johtimeen, jossa kulkee virta."
+    }
+  ]
 }

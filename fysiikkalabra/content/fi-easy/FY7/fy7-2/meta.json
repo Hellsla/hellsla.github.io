@@ -19,5 +19,23 @@
   ],
   "sim": true,
   "solutions": "all",
-  "image": false
+  "image": false,
+  "key_concepts": [
+    {
+      "term": "magneettinen voima",
+      "explain": "Voima, jonka magneettikenttä kohdistaa liikkuvaan varattuun hiukkaseen. Se on aina kohtisuorassa nopeutta vastaan."
+    },
+    {
+      "term": "ympyrärata",
+      "explain": "Rata, jolla hiukkanen kiertää, kun magneettinen voima osoittaa koko ajan kohti radan keskipistettä."
+    },
+    {
+      "term": "nopeusvalitsin",
+      "explain": "Laite, jonka läpi pääsevät suoraan vain ne hiukkaset, joiden nopeus on tietty."
+    },
+    {
+      "term": "massaspektrometri",
+      "explain": "Laite, joka erottelee hiukkaset massan mukaan, koska raskaamman hiukkasen rata kaartuu loivemmin."
+    }
+  ]
 }
