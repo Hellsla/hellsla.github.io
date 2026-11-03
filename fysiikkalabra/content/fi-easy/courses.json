@@ -153,6 +153,12 @@
   },
   "FY7": {
     "title": "Sähkömagnetismi ja valo",
+    "themes": [
+      "Magneettikenttä ja magneettinen voima",
+      "Induktio ja sähköenergia",
+      "Säteily ja valon eteneminen",
+      "Valon aaltoilmiöt"
+    ],
     "tavoitteet": [
       "ymmärtää, että induktio on sähkömagnetismin tärkeä ilmiö",
       "ymmärtää, miten sähköenergiaa tuotetaan ja siirretään, ja miksi se on tärkeää yhteiskunnalle",
@@ -160,22 +166,22 @@
       "ymmärtää, että valo on sähkömagneettinen ilmiö"
     ],
     "lessons": {
-      "fy7-1": "Magnetismi, magneettinen dipoli ja magneettikenttä",
+      "fy7-1": "Magneetit, magneettinen dipoli ja magneettikenttä",
       "fy7-2": "Varatun hiukkasen liike sähkö- ja magneettikentässä",
-      "fy7-3": "Virtajohtimen magneettikenttä ja johtimien välinen voima",
-      "fy7-13": "Sähkömoottori ja kaiutin",
-      "fy7-4": "Sähkömagneettinen induktio",
-      "fy7-5": "Lenzin laki ja pyörrevirrat",
-      "fy7-6": "Generaattori ja vaihtovirran synty",
-      "fy7-7": "Muuntaja ja sähköenergian siirto",
-      "fy7-8": "Sähkömagneettinen säteily, spektri ja mustan kappaleen säteily",
-      "fy7-9": "Valon heijastuminen ja taittuminen",
-      "fy7-14": "Valon dispersio ja sateenkaari",
-      "fy7-10": "Kokonaisheijastuminen ja valokuitu",
-      "fy7-11": "Valon interferenssi ja diffraktio",
-      "fy7-15": "Ohuen kalvon interferenssi",
-      "fy7-12": "Valon polarisaatio",
-      "fy7-16": "Soveltava tunti: induktio ja valo nykytekniikassa"
+      "fy7-3": "Virtajohtimen ja käämin magneettikenttä",
+      "fy7-4": "Voima virtajohtimeen: sähkömoottori ja kaiutin",
+      "fy7-5": "Sähkömagneettinen induktio",
+      "fy7-6": "Lenzin laki ja pyörrevirrat",
+      "fy7-7": "Generaattori ja vaihtovirta",
+      "fy7-8": "Muuntaja ja sähköenergian siirto",
+      "fy7-9": "Sähkömagneettinen säteily ja mustan kappaleen spektri",
+      "fy7-10": "Valon heijastuminen ja taittuminen",
+      "fy7-11": "Dispersio: prisma ja sateenkaari",
+      "fy7-12": "Kokonaisheijastuminen ja valokuitu",
+      "fy7-13": "Valon interferenssi ja diffraktio",
+      "fy7-14": "Ohuen kalvon interferenssi",
+      "fy7-15": "Valon polarisaatio",
+      "fy7-16": "Soveltava luku: langaton lataus, induktioliesi ja kuituyhteys"
     }
   },
   "FY8": {
