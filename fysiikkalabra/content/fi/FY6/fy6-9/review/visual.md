@@ -1,20 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 065e2c938d949599
+CONTENT-HASH: 6a20ede240385bd9
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] Latauspiiri paragraph (theory-1280-2) — the inline equation "U_lat − RI − R_sI − E = 0" breaks over two lines at an operator, against the "inline maths stays on one line" rule; likewise "1 V · / 1 Ah = 1 Wh = 3600 J" in "Varaus ei yksin kerro energiaa" (theory-1280-1) — set the equation as a display formula or reword so each fits one line.
-- [Minor] Formula legends (theory-1280-2) — "(Ah tai C)", "(A)", "(V)", "(Wh tai J)" are plain text, whereas fy6-8 writes units as $(\text{V})$ — put them in maths for consistency.
-- [Minor] Simulation at 1280 (sim-1280) — the slider label "Laturin ja johtojen resistanssi" wraps to two lines and lifts the third slider above the others; shorten or let the row align at the bottom.
-- [Minor] Experiment cards "Alkutila" (lab-1280-1, exp-koe-1-390-1) — "= 0 h" and "= 0,4 Ω" are plain text beside maths values; template-generated, fix in the build.
+- [Minor] inquiry.json koe-2 intro — "latauksen kesto $0$" ilman yksikköä, kun kortin Alkutila-laatikossa lukee $0\,\text{h}$; kirjoita "Pidä vakioina varaustaso alussa ($80\,\%$), latauksen kesto $0\,\text{h}$ ja resistanssi; muuta vain laturin jännitettä."
+- [Minor] inquiry.json virhe, vaihtoehto 3 — "noin $15\,\%$": $14/0{,}35 = 40\,\text{A}$ vs. $35\,\text{A}$ on noin $14\,\%$; kirjoita "noin $14\,\%$".
+- [Minor] Aiemmat Minor-kohdat (sim-1280:n liukusäätimen otsikon rivitys, "= 0 h" -alkutilan teksti ilman matematiikkaa, inline-yhtälön rivinvaihto) ovat ennallaan; koe-2:n Alkutila-laatikossa "= 0,4 Ω" on yhä tavallista tekstiä (mallipohjan asia).
 
 ## Checked
-- Contact sheet 1; fig-2 (hero), fig-5 (purku-lataus), fig-7 (kapasiteetti), fig-9 (latauspiiri), fig-11 (potentiaali), fig-13 (energia) at 390 px.
-- sim-390, sim-1280, lab-1280-1, exp-koe-1-390-1, stage-tutki-390-3; example-390-1/2; theory-1280-1/2/3.
-- open-tarkista-1280-1/2, open-exit-1280; exercises L1 1/3/4/5, L2 2/4, L3 2/3/4 open.
-- Text read in full: Finnish fluent, akku/paristo/latauspiiri/kapasiteetti used per glossary, W vs E explained, units in LaTeX, Sankey widths consistent with 9,0 = 7,6 + 1,1 + 0,3 Wh, current arrows and charger polarity correct in both circuits.
+- Hash alussa ja lopussa.
+- stage-herata-390: hook "noin puoleen" eheä.
+- exp-koe-2-390-1 ja lab-1280-1: uusi koe-2-intro renderöityy, sim ja Alkutila-laatikko ehjät, kuvaaja ja virran suunta luettavissa.
+- stage-sovella-390-2 (Etsi virhe, kolme vaihtoehtoa) ja -3 (siirto-tehtävä): asettelu ehjä; ratkaisun muutos ("lähes kolmannes") ei vaikuta asetteluun.
+- Mallikuvaus (sim "Mallin oletukset") luettu lähteestä: yksiköt LaTeXissa, sijamuodot ($3{,}40\,\text{V}$:n) oikein.
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 5 · accessibility 4

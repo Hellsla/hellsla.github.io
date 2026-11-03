@@ -1,22 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: cf58bdca542b734b
+CONTENT-HASH: f0b8a4565206a2d8
 
 ## Blocking
 (none)
 
 ## Polish
-- inquiry.json laitteet ja saastot — tehtävät pyytävät laskemaan viisi ja neljä arvoa, mutta automaattisesti tarkistetaan vain yksi (keitin, LED-vaihto); johtopäätös nojaa itse laskettuihin jääkaapin, valmiustilan ja laturin arvoihin. Lisää vihje "jääkaapin energia on 0,80 kWh, jos sait näin" tai toinen tarkistettu kysymys (esim. jääkaapin energia).
-- inquiry.json ennuste-2 — vain oikea vaihtoehto sisältää kilowattiluokan tehon (6 kW), joten sen voi arvata suurimmasta luvusta ilman päättelyä; anna myös muille vaihtoehdoille tehot tai käyttöajat, jolloin perustelu on mahdollinen.
-- lesson.md Laitteen virta verkossa — viittaus lukuun *Sähköturvallisuus kotona ja työssä* osoittaa myöhempään lukuun, jota opiskelija ei ole vielä lukenut; muotoile "myöhemmässä luvussa" tai poista.
-- inquiry.json laitteet — tehtävän teksti kertoo laskutavan (muunna kilowateiksi ja tunneiksi, kerro) ennen teoriaa; oikein kertaustehtävänä, mutta vihje 1 jo toistaa saman; vihje voisi kysyä vain "mihin yksiköihin"?
-- Työmäärä: yhdeksän laskettavaa arvoa, kaksi tarkistusta ja siirto; kestää helposti yli tunnin, jos kaikki tehdään. Harkitse saastot-taulukon puolittamista.
+- inquiry.json ennuste-2 / saastot — uusi vaihtoehto "vedenkeitin 10 min vähemmän" (≈120 kWh) ei ole Säästökeinojen vertailu -taulukossa, joka sisältää yhä "laturi irti" -rivin; opiskelija ei voi kumota tätä vaihtoehtoa aineistosta, vain palautteesta. Vaihda taulukon laturi-rivi riviin "keitin lyhyemmin | $2{,}0\,\text{kW}$ | $365 \cdot \tfrac{1}{6}\,\text{h}$" (ja päivitä johtopäätös ja ratkaisun Järkevyys).
+- inquiry.json siirto solution Vastaus — "$49{,}86\,\text{€} \approx 50\,\text{€}$; rahasumma annetaan sentin tarkkuudella" on ristiriidassa itsensä kanssa (pyöristys kahteen numeroon vs. sentit); kirjoita "$49{,}86\,\text{€}$, rahasumma sentin tarkkuudella."
+- Aiemmat Polish-kohdat (tehtävien tarkistusten kattavuus, työmäärä) ovat ennallaan eivätkä estä.
 
 ## Checked
-- Oppimispolku: alun kysymykseen (miksi kilowattitunti) vastataan teoriassa; tavoitteet (energia kWh, sähkölasku, säästökeinot) katetaan, ei enempää.
-- Ennusteet ennen aineistoa, palaute avautuu teoriatiivistelmän jälkeen; väärien vaihtoehtojen palaute korjaa virhekäsitykset (teho = kulutus, yksikkö ei muunnu, "ei voi verrata"); luvut tarkistettu (0,40 / 0,80 kWh, 468 kWh, 191,6 kWh).
-- Tutki-vaihe ilman simulaatiota: taulukkoaineisto on merkitty keksityksi, ja laskeminen voi kumota ennusteen.
-- Kuvat: teho-aika-kuvaaja (kaksi yhtä suurta pinta-alaa), kWh-kaavakuva, hero tunnistettavia ja kuvaukset antavat saman tiedon; teoriakuva ei paljasta ennusteen vastausta.
-- Esimerkki porrastettu seitsemään vaiheeseen, minuuttimuunnos erikseen; lasku 150 kWh ja 27 € oikein.
-- Etsi virhe (W·min kWh:ksi), siirto (mittarilukemat + perusmaksu, kolmen vihjeen ketju, todelliset virheet 40,86 ja 36,24) hyviä.
-- Tarkista: käsitetehtävä (energia/teho/virta), laskenta, selitys kriteereineen; lähtölippu testaa yksikkömuunnosta ja E = Pt.
-- Suomi: termit (nimellisteho, kilowattitunti) oikein; sijamuodot ($230\,\text{V}$:n) kunnossa; puhelinkaappaukset ehjät.
+- Hook: "ei yleensä lue yhtään wattia" tarkentaa väitteen oikein; kysymys ei paljasta vastausta.
+- Ennuste-2: kolme virhevaihtoehtoa ovat uskottavia, palaute korjaa virhekäsityksen laskulla (3 W → 23 kWh; keitin 2,0 kW · 1/6 h · 365 ≈ 120 kWh; sauna 468 kWh); luvut tarkistettu.
+- Valmiustilan "yhteensä noin 3 W" yhtyy taulukkoon (3,0 W) ja palautteeseen.
+- Siirto: mittarilukemat, 49,86 € ja tolerance 0,02 yhtenevät; ratkaisu seurattavissa.
+- Tarkistus-3: lisäkysymys (mihin energia päätyy) on mallivastauksessa ja uudessa kriteerissä; tavoite (sisäenergia, lämpö) havaittavissa.
+- Teoria: "pääosin energiasta" ja "lämmittävän laitteen virta" tarkentavat oikein, eivät muuta oppimispolkua.

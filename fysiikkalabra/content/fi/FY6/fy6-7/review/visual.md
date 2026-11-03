@@ -1,22 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: cf58bdca542b734b
+CONTENT-HASH: f0b8a4565206a2d8
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] Tutki data badges (stage-tutki-390-1/-2) — the badge repeats itself: "Keksitty esimerkkiaineisto · Keksitty esimerkkiaineisto: laitteiden tyypillisiä …", and wraps into a large rounded blob at 390 px — drop the duplicated prefix from the source note.
-- [Minor] fig kwh (fig-6-390, theory-1280-2) — the multiplication dot between radiator and clock is tiny and sits lower than the "=" — enlarge the dot and align it to the equals sign's height.
-- [Minor] Tutki tables at 390 px — the right-hand numbers ("12 min", "365 · 3,0 h") run close to the card edge — reduce cell padding.
-- [Minor] Hero illustration — saturated blue sky and red roof are more colourful than the restrained house style — accepted by the teacher's style choice; no change needed.
+- [Minor] inquiry.json siirto solution, Vastaus — "$49{,}86\,\text{€} \approx 50\,\text{€}$; rahasumma annetaan sentin tarkkuudella, ja tiedot ovat kolmen merkitsevän numeron tarkkuudella" sanoo kaksi asiaa (sentit vs. pyöristys 50 €) ja on raskas; kirjoita "$49{,}86\,\text{€}$; rahasumma annetaan sentin tarkkuudella."
+- [Minor] lesson.md Tiivistelmä (selita-390-4) — "Kodin $230\,\text{V}$:n verkossa lämmittävän laitteen virta" luetaan helposti "verkossa lämmittävän"; selkeämpi: "Lämmittävän laitteen virta kodin $230\,\text{V}$:n verkossa on $I = P : U$".
+- [Minor] Aiemmat Minor-kohdat (tutki-merkintä, kWh-kuvan kerrontapiste, taulukon reunat) ovat ennallaan eikä diff koske niitä.
 
 ## Checked
-- Hash at start and end. Contact sheets 2 and 3.
-- intro-1280 (hero house, objectives, prior knowledge).
-- Figures: fig-4-390 (power-time graph, rectangles with E labels, axes with units), fig-6-390 (kWh formula picture); fig-row-1280 via theory-1280-1 and -2.
-- Theory-1280-1/2, example-390-1/2 (all seven stages, chains aligned), stage-tutki-390-1/-2, open-tarkista-1280-1.
-- No simulation in this lesson (none expected).
-- Plain number+unit scan: none.
+- Hash alussa ja lopussa.
+- stage-herata-390 (hook "ei yleensä lue"): teksti ja kysymys eheät.
+- stage-ennusta-390-2 ja open-ennusta-1280-1/-2: ennuste 2:n uusi keitin-vaihtoehto ja "yhteensä noin 3 W:n" renderöityvät, yksiköt matematiikassa, taitto ehjä.
+- stage-selita-390-4 (Tiivistelmä, muutettu luoteloitu rivi), stage-sovella-390-3, open-tarkista-1280-3: asettelu säilyi.
+- Plain number+unit -tarkistus muutetuissa riveissä: ei paljaita lukuja.
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 5 · accessibility 4
