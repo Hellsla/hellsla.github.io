@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 6e1a3a1c07f6e7a5
+CONTENT-HASH: e6053fc2d84fff34
 
 ## Blocking
 (none)
@@ -15,3 +15,4 @@ CONTENT-HASH: 6e1a3a1c07f6e7a5
 - Prediction keys, correct options and numeric answers unchanged (keys and `answer` fields compared with the Finnish).
 - Fixed a leak of Finnish into the experiment cards ("paristo: new battery", "kytkin: kiinni"): `names` paristo/kytkin and `values.kytkin` now battery / switch / open / closed.
 - Figure descriptions in figures.json read correctly in English; no Finnish left in lesson.md (only glossary keys in meta.json, intentional).
+- Re-review after the concept-review commit: ex L1-05 points relabelled as model points (text, solution, figure description), napajännite explanation conditioned on current being drawn, matching the Finnish; no numbers changed; captures retaken.

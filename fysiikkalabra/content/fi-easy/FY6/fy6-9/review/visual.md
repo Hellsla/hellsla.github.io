@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 11b1423e1655bc86
+CONTENT-HASH: be69f72bfd449b19
 
 ## Blocking
 (none)
@@ -12,3 +12,4 @@ CONTENT-HASH: 11b1423e1655bc86
 
 ## Scores
 illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+- Re-review after the concept-review commit: howto wording (electrical energy transformed into internal energy), efficiency paragraph (often below 100 %, charging always, R and R_s), L3-03 sisäenergiaksi, matching the Finnish; no numbers changed; $ counts equal.

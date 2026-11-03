@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 7e113d16729be53a
+CONTENT-HASH: 1aa0d4b32789301b
 
 ## Blocking
 (none)
@@ -10,3 +10,4 @@ CONTENT-HASH: 7e113d16729be53a
 ## Checked
 - Lesson is genuinely simplified: mean sentence length about 10 words vs 15 in the Finnish, key terms explained, same structure, nothing dropped.
 - Goals and key concepts complete; paristo explained as single-use, akku as rechargeable.
+- Re-review after the concept-review commit: howto wording (electrical energy transformed into internal energy), efficiency paragraph (often below 100 %, charging always, R and R_s), L3-03 sisäenergiaksi, matching the Finnish; no numbers changed; $ counts equal.

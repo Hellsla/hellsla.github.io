@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: aedbedf74bc060fd
+CONTENT-HASH: 39146c60089b3711
 
 ## Blocking
 
@@ -13,3 +13,4 @@ CONTENT-HASH: aedbedf74bc060fd
 - Worked example, error task, kettle and cord solutions recomputed and complete.
 - meta.json key_concepts: 3 items, explanations 17-21 words, no digits, no $; correct (power per second, P = RI^2 quadruples with doubled current, electrical energy to internal energy).
 - sims.fy6-6 labels equal the Finnish ones.
+- Re-review after the concept-review commit: heat-transfer wording (energy transferred as heat to the surroundings), Joule-law condition (same resistor, resistance constant), points no longer called measured (ex-pi), all matching the Finnish; no numbers changed; figure descriptions regenerated and captures retaken.

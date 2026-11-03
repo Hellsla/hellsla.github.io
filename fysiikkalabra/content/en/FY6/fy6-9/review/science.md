@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 4c6106264ea2d9ae
+CONTENT-HASH: 1d62021e1bd5520a
 
 ## Blocking
 (none)
@@ -12,3 +12,4 @@ CONTENT-HASH: 4c6106264ea2d9ae
 - Every solution has all steps (Given, Find, Principle, Formula, Conversions, Substitution, Answer, Reasonableness) as in the Finnish: 97 labelled fields each.
 - Physics terms: source voltage (emf), terminal voltage, internal resistance, capacity in Ah, efficiency: correct.
 - Re-review after the lang-key change (sims.fy6-9.ulat_lab / ulat_eq): the sim canvas now shows U_ch (en); values and formulas unchanged.
+- Re-review after the concept-review commit: howto wording (electrical energy transformed into internal energy), efficiency paragraph (often below 100 %, charging always, R and R_s), L3-03 sisäenergiaksi, matching the Finnish; no numbers changed; $ counts equal.

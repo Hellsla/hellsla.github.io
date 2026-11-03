@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 8bc1971c293c16c7
+CONTENT-HASH: 65ae78ca19f3d63b
 
 ## Blocking
 (none)
@@ -13,3 +13,4 @@ CONTENT-HASH: 8bc1971c293c16c7
 - Inquiry: hook, review, two predictions, sim, three experiments, conclusion, find-the-error, transfer, three checks; feedback texts split into short sentences with the same logic; hints and mistakes intact.
 - Learning goals start with the verbs laskemaan, selvittämään, vertailemaan ja selittämään after the heading "Tällä tunnilla opit".
 - Exit ticket and worked example keep all steps.
+- Re-review after the concept-review commit: ex L1-05 points relabelled as model points (text, solution, figure description), napajännite explanation conditioned on current being drawn, matching the Finnish; no numbers changed; captures retaken.

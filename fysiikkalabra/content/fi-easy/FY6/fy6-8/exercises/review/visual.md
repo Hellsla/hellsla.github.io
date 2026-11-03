@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 0a3c3094ef4ec6e6
+CONTENT-HASH: 10cfa01652b51f18
 
 ## Blocking
 (none)
@@ -14,3 +14,4 @@ CONTENT-HASH: 0a3c3094ef4ec6e6
 
 ## Scores
 illustrations 4 · typography 4 · Finnish 5 · accessibility 4
+- Re-review after the concept-review commit: ex L1-05 points relabelled as model points (text, solution, figure description), napajännite explanation conditioned on current being drawn, matching the Finnish; no numbers changed; captures retaken.

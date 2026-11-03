@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 8bc1971c293c16c7
+CONTENT-HASH: 65ae78ca19f3d63b
 
 ## Blocking
 (none)
@@ -13,3 +13,4 @@ CONTENT-HASH: 8bc1971c293c16c7
 - Physics identical: model, formulas, graph slope, series/parallel, caveats, car starting, short circuit; terms lähdejännite, napajännite, sisäinen resistanssi, oikosulku used correctly and consistently.
 - Prediction keys, `answer` fields and criteria unchanged.
 - meta.json key_concepts: 4 items (within 3-5), every `explain` between 15 and 18 words (limit 25), no digits and no `$`, definitions correct (lähdejännite without current; napajännite with current and below E; sisäinen resistanssi in series with the source; oikosulku through a conductor, largest current, dangerous).
+- Re-review after the concept-review commit: ex L1-05 points relabelled as model points (text, solution, figure description), napajännite explanation conditioned on current being drawn, matching the Finnish; no numbers changed; captures retaken.
