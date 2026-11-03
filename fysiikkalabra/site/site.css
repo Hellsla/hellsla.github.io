@@ -787,17 +787,19 @@ dialog.zoom-dlg::backdrop{background:rgba(14,17,22,.78)}
 .zoom-stage>svg,.zoom-stage>img{display:block;flex:none;background:#fff;border-radius:6px}
 .zoom-cap{max-width:44rem;margin:.6rem auto 0;font-size:var(--fs-small);line-height:1.45;color:var(--ink-2)}.zoom-cap:empty{display:none}
 .zoom-cap .photo-credit{display:block;margin-top:.2rem}
-#sim{position:relative}#sim>h2,#sim>h3{padding-right:8.5rem}
-.sim-expand{position:absolute;top:.45rem;right:.6rem;z-index:3;display:inline-flex;align-items:center;gap:.4rem;min-height:40px;padding:0 .9rem;font:600 var(--fs-ui) var(--sans);color:var(--accent-deep);background:var(--surface);border:1px solid var(--accent-deep);border-radius:999px;cursor:pointer}
+#sim{position:relative}#sim>h2,#sim>h3{padding-right:3rem}
+.sim-expand{position:absolute;top:.45rem;right:.6rem;z-index:3;display:grid;place-items:center;width:40px;height:40px;min-height:40px;padding:0;font:600 var(--fs-ui) var(--sans);color:var(--accent-deep);background:var(--surface);border:1px solid var(--accent-deep);border-radius:999px;cursor:pointer}
 .sim-expand:hover{background:var(--accent-soft)}
 #sim.sim-expanded{position:fixed;inset:0;z-index:1000;margin:0!important;max-width:none;width:auto;height:auto;border:0;border-radius:0;padding:.4rem 1.2rem 1.2rem;overflow:auto;overscroll-behavior:contain;background:var(--surface)}
 #sim.sim-expanded:fullscreen{width:100%;height:100%;box-sizing:border-box}
 #sim.sim-expanded::backdrop{background:var(--surface)}
-#sim.sim-expanded>h2,#sim.sim-expanded>h3{padding-right:9rem}
-#sim.sim-expanded .sim-canvas{max-width:calc((100vh - 9rem) * var(--sim-ar-x,1.5));min-width:min(100%,20rem)}
+#sim.sim-expanded>h2,#sim.sim-expanded>h3{padding-right:3.5rem}
+#sim.sim-expanded .sim-canvas{max-width:calc((100vh - 5rem) * var(--sim-ar-x,1.5));min-width:min(100%,20rem)}
+#sim.sim-expanded>.sim-info,#sim.sim-expanded #sim-root details.note{display:none}   /* full screen is for the picture and the controls: Käyttöohje, Mallin oletukset and Laskennan selitys stay on the page (teacher 2026-11-03) */
+#sim.sim-expanded{--fs-ui:clamp(.9375rem,.45rem + .6vw,1.5rem);--fs-small:clamp(.875rem,.4rem + .55vw,1.35rem)}   /* a large screen or a projector: the controls and values grow with the picture */
 @media (min-width:64rem) and (min-aspect-ratio:4/3){   /* a laptop or a wide screen: the picture on the left, the controls and the values beside it */
-  #sim.sim-expanded #sim-root:has(>.sim-canvas){display:grid;grid-template-columns:minmax(0,1fr) minmax(18rem,24rem);column-gap:1.5rem;align-items:start}
-  #sim.sim-expanded #sim-root>.sim-canvas{grid-column:1;grid-row:1/span 40;margin:0 auto;width:100%;max-width:min(1200px,calc((100vh - 5.5rem) * var(--sim-ar-x,1.5)))}
+  #sim.sim-expanded #sim-root:has(>.sim-canvas){display:grid;grid-template-columns:minmax(0,1fr) clamp(18rem,20vw,34rem);column-gap:1.5rem;align-items:start}
+  #sim.sim-expanded #sim-root>.sim-canvas{grid-column:1;grid-row:1/span 40;margin:0 auto;width:100%;max-width:calc((100vh - 4rem) * var(--sim-ar-x,1.5))}
   #sim.sim-expanded #sim-root>:not(.sim-canvas){grid-column:2}
   #sim.sim-expanded #sim-root .controls>label{flex-basis:100%}
 }
