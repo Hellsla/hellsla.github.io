@@ -602,8 +602,6 @@ T = \frac{2\pi r}{v}
 ```
 missä $T$ on kiertoaika ($\text{s}$). Kaukana kiertävän satelliitin rata on pidempi ja sen vauhti pienempi, joten kiertoaika kasvaa nopeasti etäisyyden kasvaessa: ISS kiertää Maan noin puolessatoista tunnissa, Kuu noin $27\,\text{d}$:ssä. Kun satelliitin säde ja kiertoaika mitataan, samasta yhtälöstä voidaan ratkaista myös keskuskappaleen massa $M$. Näin on määritetty esimerkiksi Maan, Auringon ja Marsin massat.
 
-<figure class="unit-photo"><img src="pics/fy5/iss-from-soyuz.webp" alt="Kansainvälinen avaruusasema aurinkopaneeleineen mustaa avaruutta vasten. Alla näkyy Maan pilvinen pinta."><figcaption>Kansainvälinen avaruusasema ISS kuvattuna Sojuz-aluksesta lokakuussa 2018. Asema on koko ajan vapaassa pudotuksessa kohti Maata, mutta sen ratanopeus on niin suuri, että se ei osu Maahan.</figcaption></figure>
-
 ### Geostationaarinen rata
 Geostationaarinen satelliitti kiertää päiväntasaajan yläpuolella samaan suuntaan kuin Maa pyörii, ja sen kiertoaika on sama kuin Maan pyörähdysaika, $23\,\text{h}\;56\,\text{min}$. Siksi se näyttää pysyvän taivaalla paikallaan, ja lautasantennin voi suunnata siihen kerran. Koska kiertoaika määrää radan säteen, kaikki geostationaariset satelliitit kiertävät samalla korkeudella, noin $35\,800\,\text{km}$:n korkeudella.
 
@@ -634,6 +632,8 @@ Asema ja astronautti ovat vapaassa pudotuksessa: kumpaankin vaikuttaa vain gravi
   <foreignObject x="511.5" y="203.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#e8590c">$\overline{a}$</div></foreignObject>
   <foreignObject x="427.5" y="341.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$N = 0$</div></foreignObject>
 </svg>
+
+<figure class="unit-photo"><img src="pics/fy5/iss-from-soyuz.webp" alt="Kansainvälinen avaruusasema aurinkopaneeleineen mustaa avaruutta vasten. Alla näkyy Maan pilvinen pinta."><figcaption>Kansainvälinen avaruusasema ISS kuvattuna Sojuz-aluksesta lokakuussa 2018. Asema on koko ajan vapaassa pudotuksessa kohti Maata, mutta sen ratanopeus on niin suuri, että se ei osu Maahan.</figcaption></figure>
 
 Saman tilan voi kokea hetken maan päälläkin: hypyn aikana, vapaasti putoavassa hississä tai lentokoneessa, joka lentää moottorit säädettyinä heittoliikkeen rataa. Painottomuutta ei selitä mikään gravitaation kumoava "keskipakoisvoima". Jos jokin voima kumoaisi gravitaation, kokonaisvoima olisi nolla, ja asema jatkaisi suoraan eteenpäin eikä kiertäisi Maata.
 

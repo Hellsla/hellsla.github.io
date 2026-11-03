@@ -602,8 +602,6 @@ T = \frac{2\pi r}{v}
 ```
 where $T$ is the orbital period ($\text{s}$). The orbit of a faraway satellite is longer and its speed lower, so the orbital period grows quickly as the distance grows: the ISS goes round the Earth in about an hour and a half, the Moon in about $27\,\text{d}$. When the radius and the orbital period of a satellite are measured, the same equation can also be solved for the mass $M$ of the central body. This is how, for example, the masses of the Earth, the Sun and Mars have been determined.
 
-<figure class="unit-photo"><img src="pics/fy5/iss-from-soyuz.webp" alt="The International Space Station with its solar panels against black space. The cloudy surface of the Earth is visible below."><figcaption>The International Space Station photographed from a Soyuz spacecraft in October 2018. The station is always in free fall towards the Earth, but its orbital speed is so high that it never hits the Earth.</figcaption></figure>
-
 ### Geostationary orbit
 A geostationary satellite orbits above the equator in the same direction as the Earth rotates, and its orbital period is the same as the rotation period of the Earth, $23\,\text{h}\;56\,\text{min}$. It therefore seems to stay in place in the sky, and a satellite dish can be aimed at it once. Because the orbital period determines the orbital radius, all geostationary satellites orbit at the same altitude, about $35\,800\,\text{km}$.
 
@@ -634,6 +632,8 @@ The station and the astronaut are in free fall: only gravity acts on each, and e
   <foreignObject x="511.5" y="203.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#e8590c">$\overline{a}$</div></foreignObject>
   <foreignObject x="427.5" y="341.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$N = 0$</div></foreignObject>
 </svg>
+
+<figure class="unit-photo"><img src="pics/fy5/iss-from-soyuz.webp" alt="The International Space Station with its solar panels against black space. The cloudy surface of the Earth is visible below."><figcaption>The International Space Station photographed from a Soyuz spacecraft in October 2018. The station is always in free fall towards the Earth, but its orbital speed is so high that it never hits the Earth.</figcaption></figure>
 
 The same state can be experienced for a moment on the Earth too: during a jump, in a freely falling lift, or in an aeroplane whose engines are adjusted so that it flies along the path of a projectile. Weightlessness is not explained by any "centrifugal force" cancelling gravity. If some force cancelled gravity, the net force would be zero, and the station would continue straight ahead and would not orbit the Earth.
 
