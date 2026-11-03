@@ -242,20 +242,20 @@ The change of velocity $\Delta\overline{v}$ is seen when two successive velocity
   <foreignObject x="366" y="297.5" width="200" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\overline{v}_2 = \overline{v}_1 + \Delta\overline{v}$</div></foreignObject>
 </svg>
 
-## Formula: Tangential speed
+## Formula: Speed
 Uniform circular motion is described by the **period** $T$, which is the time in which the object goes round the path once. Its reciprocal is the **rotation frequency** $f$, which tells how many revolutions the object makes per unit of time:
 ```latex
 f = \frac{1}{T}
 ```
 where $f$ is the rotation frequency ($\tfrac{1}{\text{s}}$) and $T$ the period ($\text{s}$). When the period is $T = 0.50\,\text{s}$, the object makes $2.0$ revolutions per second, that is, $f = 2.0\,\tfrac{1}{\text{s}}$. The rotation frequency is also often given in revolutions per minute. For example, $45\,\tfrac{1}{\text{min}}$ is converted by substituting $1\,\text{min} = 60\,\text{s}$, which gives $45\,\tfrac{1}{\text{min}} = \tfrac{45}{60\,\text{s}} = 0.75\,\tfrac{1}{\text{s}}$.
 
-In one revolution the object travels a distance equal to the circumference $2\pi r$ of the circle, and this takes the period $T$. Because the speed is constant, the magnitude of the velocity on the circular path, the **tangential speed**, is the distance travelled divided by the time:
+In one revolution the object travels a distance equal to the circumference $2\pi r$ of the circle, and this takes the period $T$. Because the speed is constant, the magnitude of the velocity on the circular path, the **speed along the path**, is the distance travelled divided by the time:
 ```latex
 v = \frac{2\pi r}{T} = 2\pi r f
 ```
-where $v$ is the tangential speed ($\text{m/s}$), $r$ the radius of the path ($\text{m}$), $T$ the period ($\text{s}$) and $f$ the rotation frequency ($\tfrac{1}{\text{s}}$). The latter form is obtained by replacing $\tfrac{1}{T}$ with the rotation frequency $f$.
+where $v$ is the speed ($\text{m/s}$), $r$ the radius of the path ($\text{m}$), $T$ the period ($\text{s}$) and $f$ the rotation frequency ($\tfrac{1}{\text{s}}$). The latter form is obtained by replacing $\tfrac{1}{T}$ with the rotation frequency $f$.
 
-The formula answers the opening question. All parts of the roundabout complete a turn in the same time $T$, but the child at the edge goes round a bigger circle. The tangential speed is directly proportional to the radius when the period is the same: a child standing twice as far from the centre travels twice the distance in the same time, so the tangential speed is doubled. At the same radius, halving the period doubles the tangential speed.
+The formula answers the opening question. All parts of the roundabout complete a turn in the same time $T$, but the child at the edge goes round a bigger circle. The speed is directly proportional to the radius when the period is the same: a child standing twice as far from the centre travels twice the distance in the same time, so the speed is doubled. At the same radius, halving the period doubles the speed.
 
 <svg data-fig="two-radii" viewBox="0 0 600 380" role="img" aria-label="Formula figure from above: two points A and B are on the same radius of a rotating roundabout, A at the distance r and B at the distance 2r from the centre. In the same time each turns through the same fraction of a revolution, but the arc travelled by B is twice as long, and the blue velocity vector of B is twice as long as that of A. The proportions are to scale." style="max-width:100%;font-size:24px">
   <path d="M366,326 L366,315 L365,304 L364,293 L362.5,282 L360.5,271.5 L358.5,260.5 L355.5,250 L352.5,239.5 L348.5,229 L344.5,219 L340.5,209 L335.5,199 L330.5,189 L324.5,179.5 L319,170.5 L312.5,161.5 L306,152.5 L299,144 L291.5,136 L284,128 L276,120.5 L268,113 L259.5,106 L250.5,99.5 L241.5,93 L232.5,87.5 L223,81.5 L213,76.5 L203,71.5 L193,67.5 L183,63.5 L172.5,59.5 L162,56.5 L151.5,53.5 L140.5,51.5 L130,49.5 L119,48 L108,47 L97,46 L86,46" fill="none" stroke="#c9c2b2" stroke-width="2" stroke-linejoin="round" stroke-dasharray="7 6"/>
@@ -287,15 +287,15 @@ The formula answers the opening question. All parts of the roundabout complete a
 </svg>
 
 ## Worked example
-The diameter of the drum of a washing machine is $46\,\text{cm}$. In the spin cycle the drum turns $1200$ revolutions per minute. What is the tangential speed of a sock pressed against the wall of the drum?
+The diameter of the drum of a washing machine is $46\,\text{cm}$. In the spin cycle the drum turns $1200$ revolutions per minute. What is the speed of a sock pressed against the wall of the drum?
 
 <!-- vaihe -->
 
-**Given and find.** The diameter of the drum is $d = 46\,\text{cm}$ and the rotation frequency $f = 1200\,\tfrac{1}{\text{min}}$. We want the tangential speed $v$ of the sock.
+**Given and find.** The diameter of the drum is $d = 46\,\text{cm}$ and the rotation frequency $f = 1200\,\tfrac{1}{\text{min}}$. We want the speed $v$ of the sock.
 
 <!-- vaihe -->
 
-**Principle.** The sock turns with the drum on its wall, so it is in uniform circular motion whose radius is the radius of the drum, $r = \tfrac{d}{2}$. In one revolution the sock travels the circumference $2\pi r$, and there are $f$ revolutions per unit of time, so the tangential speed is $v = 2\pi r f$.
+**Principle.** The sock turns with the drum on its wall, so it is in uniform circular motion whose radius is the radius of the drum, $r = \tfrac{d}{2}$. In one revolution the sock travels the circumference $2\pi r$, and there are $f$ revolutions per unit of time, so the speed is $v = 2\pi r f$.
 
 <!-- vaihe -->
 
@@ -324,7 +324,7 @@ v &= \pi d f \\
 
 <!-- vaihe -->
 
-**Result.** The tangential speed of the sock is about $29\,\text{m/s}$. The result is given with two significant figures, because the diameter $46\,\text{cm}$ is given with two figures.
+**Result.** The speed of the sock is about $29\,\text{m/s}$. The result is given with two significant figures, because the diameter $46\,\text{cm}$ is given with two figures.
 
 <!-- vaihe -->
 
@@ -342,4 +342,4 @@ Common mistakes in calculations are substituting the diameter in place of the ra
 - The velocity $\overline{v}$ is at every moment along the tangent of the path. Its direction changes all the time, so the velocity changes and the object is accelerating, even though the speed is constant.
 - When no net force acts on the object any more, it continues in a straight line along the tangent of the path.
 - The period $T$ is the time of one revolution, and the rotation frequency $f = \tfrac{1}{T}$ is the number of revolutions per unit of time.
-- The tangential speed $v = \tfrac{2\pi r}{T} = 2\pi r f$ is directly proportional to the radius when the period is the same.
+- The speed $v = \tfrac{2\pi r}{T} = 2\pi r f$ is directly proportional to the radius when the period is the same.

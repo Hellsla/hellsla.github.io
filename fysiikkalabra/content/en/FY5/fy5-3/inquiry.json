@@ -1,10 +1,10 @@
 {
   "version": 1,
-  "contribution": "In circular motion the direction of the velocity changes all the time even though the speed stays the same, and an object continues in the direction of the tangent when the force that holds it on its path stops. The tangential speed is calculated from the radius and the period with the formula $v = \\tfrac{2\\pi r}{T}$.",
+  "contribution": "In circular motion the direction of the velocity changes all the time even though the speed stays the same, and an object continues in the direction of the tangent when the force that holds it on its path stops. The speed is calculated from the radius and the period with the formula $v = \\tfrac{2\\pi r}{T}$.",
   "learn": [
     "explain why the velocity changes in circular motion even though the speed stays the same.",
     "work out in which direction an object continues when the force that holds it on a circular path stops.",
-    "calculate the tangential speed from the radius and the period or the rotation frequency."
+    "calculate the speed from the radius and the period or the rotation frequency."
   ],
   "prior": [
     "Velocity is a vector with a magnitude and a direction, and in uniform motion an object travels the same distance in every equal time interval (chapter *Position, velocity and uniform motion as graphs*)",
@@ -58,7 +58,7 @@
         {
           "text": "Straight along the tangent of the path.",
           "figure": "fy5-3/opt-tangent",
-          "feedback": "The values of the model support this: the path of the puck after the break makes an angle of $90.0^\\circ$ with the direction of the string, and the speed after the break is the same as the tangential speed before it, for example $3.14\\,\\text{m/s}$. When the string no longer pulls, no force acts on the puck horizontally, so it continues with the velocity it had at the moment of the break, and that velocity was along the tangent.",
+          "feedback": "The values of the model support this: the path of the puck after the break makes an angle of $90.0^\\circ$ with the direction of the string, and the speed after the break is the same as the speed before it, for example $3.14\\,\\text{m/s}$. When the string no longer pulls, no force acts on the puck horizontally, so it continues with the velocity it had at the moment of the break, and that velocity was along the tangent.",
           "correct": true
         },
         {
@@ -83,7 +83,7 @@
       "stage": "ennusta",
       "type": "choice",
       "title": "Prediction 2: at the edge or in the middle",
-      "prompt": "The roundabout makes one turn in $4.0\\,\\text{s}$. Eetu stands $1.0\\,\\text{m}$ from the centre and Aino $2.0\\,\\text{m}$ from it. How does Aino's tangential speed compare with Eetu's?",
+      "prompt": "The roundabout makes one turn in $4.0\\,\\text{s}$. Eetu stands $1.0\\,\\text{m}$ from the centre and Aino $2.0\\,\\text{m}$ from it. How does Aino's speed compare with Eetu's?",
       "justify": true,
       "reveal": {
         "after": "koe-2",
@@ -92,7 +92,7 @@
       "choices": [
         {
           "text": "Equal to Eetu's, because both go round in the same time.",
-          "feedback": "The values of the model refute this: at the radius $1.0\\,\\text{m}$ the tangential speed is $1.57\\,\\text{m/s}$, at the radius $2.0\\,\\text{m}$ it is $3.14\\,\\text{m/s}$. The same period means that they make the same number of turns, but at the edge one turn is a longer distance."
+          "feedback": "The values of the model refute this: at the radius $1.0\\,\\text{m}$ the speed is $1.57\\,\\text{m/s}$, at the radius $2.0\\,\\text{m}$ it is $3.14\\,\\text{m/s}$. The same period means that they make the same number of turns, but at the edge one turn is a longer distance."
         },
         {
           "text": "Twice as great, because Aino travels twice the distance in the same time.",
@@ -110,16 +110,16 @@
       "stage": "tutki",
       "type": "sim",
       "text": "Spin a puck tied to a string on the ice, cut the string and compare the velocity vectors. The panel on the right or below shows how the velocity changes.",
-      "howto": "Adjust the radius $r$ of the path and the period $T$ and press *Start*. The blue arrow at the puck is the velocity $\\overline{v}$. The option *Show earlier velocities* leaves in the picture the positions and velocities of the puck at twelve equal time intervals over the last lap. While the puck circles, the same button changes into *Cut the string*, which releases the puck; the puck stops at the side of the rink, and the readout shows the angle $\\alpha$ between the path and the direction of the string and the speed $v_\\text{rel}$ after the break. The panel *Change of velocity* draws the velocity $\\overline{v}_1$ from one twelfth of a lap ago and the present velocity $\\overline{v}_2$ from the same point; the black arrow is the change of velocity $\\Delta\\overline{v}$. When you change a control, the puck returns to the start. *Speed* changes only the pace of the animation, not any reading; a slow pace helps in choosing the point of the cut.",
+      "howto": "Adjust the radius $r$ of the path and the period $T$ and press *Start*. The blue arrow at the puck is the velocity $\\overline{v}$. The option *Show earlier velocities* leaves in the picture the positions and velocities of the puck at twelve equal time intervals over the last lap. While the puck circles, the same button changes into *Cut the string*, which releases the puck; the puck stops at the side of the rink, and the readout shows the angle $\\alpha$ between the path and the direction of the string and the speed $v_\\text{cut}$ after the break. The panel *Change of velocity* draws the velocity $\\overline{v}_1$ from one twelfth of a lap ago and the present velocity $\\overline{v}_2$ from the same point; the black arrow is the change of velocity $\\Delta\\overline{v}$. When you change a control, the puck returns to the start. *Animation speed* changes only the pace of the animation, not any reading; a slow pace helps in choosing the point of the cut.",
       "model": "The puck slides on horizontal ice without friction and air resistance. The string keeps the puck on a circular path, and the speed stays the same: the motion is uniform circular motion. When the string breaks, no force acts on the puck horizontally, so it continues in a straight line at constant velocity. The vertical forces, the weight and the support force of the ice, cancel each other and are not drawn. The arrows in the panel *Change of velocity* have a scale of their own: the velocity vector is always drawn equally long, so the panel shows the change of direction relative to the speed. All numbers are values of the model.",
-      "calc": "The rotation frequency is $f = \\tfrac{1}{T}$ and the tangential speed $v = \\tfrac{2\\pi r}{T}$. At every moment the position of the puck is calculated on a circle of radius $r$ so that one turn takes the time $T$. The distance travelled is $s = v t$, and $N$ is the number of full turns before the break. After the break the position is the point of the break plus $\\overline{v}\\,\\Delta t$. The angle $\\alpha$ is calculated from the real displacement of the puck after the break and the direction of the string at the moment of the break, and $v_\\text{rel}$ is the length of the displacement divided by the elapsed time. In the panel, $|\\Delta\\overline{v}|$ is the length of the vector $\\overline{v}_2 - \\overline{v}_1$ when the velocities are $\\Delta t = \\tfrac{T}{12}$ apart."
+      "calc": "The rotation frequency is $f = \\tfrac{1}{T}$ and the speed $v = \\tfrac{2\\pi r}{T}$. At every moment the position of the puck is calculated on a circle of radius $r$ so that one turn takes the time $T$. The distance travelled is $s = v t$, and $N$ is the number of full turns before the break. After the break the position is the point of the break plus $\\overline{v}\\,\\Delta t$. The angle $\\alpha$ is calculated from the real displacement of the puck after the break and the direction of the string at the moment of the break, and $v_\\text{cut}$ is the length of the displacement divided by the elapsed time. In the panel, $|\\Delta\\overline{v}|$ is the length of the vector $\\overline{v}_2 - \\overline{v}_1$ when the velocities are $\\Delta t = \\tfrac{T}{12}$ apart."
     },
     {
       "id": "koe-1",
       "stage": "tutki",
       "type": "experiment",
       "title": "Experiment 1: the string breaks",
-      "intro": "Test prediction 1. The period stays constant. Choose a radius, press *Start* and then, at the point you want, press the same button, which now says *Cut the string*. Cut the string at clearly different points of the path, for example when the puck is at the top and at the left of the path, and observe in which direction the puck leaves at each point. When the puck has stopped at the side, record the measurement: the table gets the angle $\\alpha$ between the path and the direction of the string, the tangential speed $v$ before the break and the speed $v_\\text{rel}$ after it. Measure at different cutting points with at least two different radii to see whether the direction of departure depends on the cutting point or on the radius; changing the radius returns the puck to the start.",
+      "intro": "Test prediction 1. The period stays constant. Choose a radius, press *Start* and then, at the point you want, press the same button, which now says *Cut the string*. Cut the string at clearly different points of the path, for example when the puck is at the top and at the left of the path, and observe in which direction the puck leaves at each point. When the puck has stopped at the side, record the measurement: the table gets the angle $\\alpha$ between the path and the direction of the string, the speed $v$ before the break and the speed $v_\\text{cut}$ after it. Measure at different cutting points with at least two different radii to see whether the direction of departure depends on the cutting point or on the radius; changing the radius returns the puck to the start.",
       "initial": {
         "r": 2,
         "T": 4
@@ -147,7 +147,7 @@
         },
         {
           "key": "vIrti",
-          "label": "$v_\\text{rel}$ (m/s)"
+          "label": "$v_\\text{cut}$ (m/s)"
         }
       ],
       "min": 2
@@ -157,7 +157,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Experiment 2: the radius changes",
-      "intro": "Test prediction 2. The period is $4.0\\,\\text{s}$ and stays constant. Change only the radius and record the tangential speed at least at the radii $1.0\\,\\text{m}$ and $2.0\\,\\text{m}$, and if you like also at $3.0\\,\\text{m}$. Start now and then and compare the length of the blue arrow.",
+      "intro": "Test prediction 2. The period is $4.0\\,\\text{s}$ and stays constant. Change only the radius and record the speed at least at the radii $1.0\\,\\text{m}$ and $2.0\\,\\text{m}$, and if you like also at $3.0\\,\\text{m}$. Start now and then and compare the length of the blue arrow.",
       "initial": {
         "r": 1,
         "T": 4
@@ -195,7 +195,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Experiment 3: the period changes",
-      "intro": "Keep the radius $2.0\\,\\text{m}$ constant and change the period. Record the rotation frequency and the tangential speed, for example at the periods $2\\,\\text{s}$, $4\\,\\text{s}$ and $8\\,\\text{s}$. How does the tangential speed change when the period doubles?",
+      "intro": "Keep the radius $2.0\\,\\text{m}$ constant and change the period. Record the rotation frequency and the speed, for example at the periods $2\\,\\text{s}$, $4\\,\\text{s}$ and $8\\,\\text{s}$. How does the speed change when the period doubles?",
       "initial": {
         "r": 2,
         "T": 2
@@ -229,17 +229,17 @@
       "id": "johtopaatos",
       "stage": "tutki",
       "type": "explain",
-      "title": "Conclusion: direction and tangential speed",
+      "title": "Conclusion: direction and speed",
       "after": [
         "koe-1",
         "koe-2"
       ],
-      "prompt": "On the basis of your tables, write: in which direction did the puck leave when the string broke, and did its speed change? How did the tangential speed depend on the radius when the period stayed the same? Why does the velocity of the puck change on a circular path even though the speed is constant?",
-      "model": "Wherever the string broke, the path of the puck made an angle of $90.0^\\circ$ with the direction of the string: the puck left along the tangent of the path, and its speed stayed the same as the tangential speed before the break, for example $3.14\\,\\text{m/s}$ at the radius $2.0\\,\\text{m}$. When the period was $4.0\\,\\text{s}$, the tangential speed was $1.57\\,\\text{m/s}$ at the radius $1.0\\,\\text{m}$ and $3.14\\,\\text{m/s}$ at the radius $2.0\\,\\text{m}$: a doubled radius gave a doubled tangential speed, because the circumference $2\\pi r$ doubles and the time is the same. On a circular path the direction of the velocity turns all the time, so the velocity changes ($|\\Delta\\overline{v}|$ is not zero) even though the speed is constant; after the break $\\Delta\\overline{v}$ was zero. The numbers are values of the model, and in the model there is no friction on the ice.",
+      "prompt": "On the basis of your tables, write: in which direction did the puck leave when the string broke, and did its speed change? How did the speed depend on the radius when the period stayed the same? Why does the velocity of the puck change on a circular path even though the speed is constant?",
+      "model": "Wherever the string broke, the path of the puck made an angle of $90.0^\\circ$ with the direction of the string: the puck left along the tangent of the path, and its speed stayed the same as the speed before the break, for example $3.14\\,\\text{m/s}$ at the radius $2.0\\,\\text{m}$. When the period was $4.0\\,\\text{s}$, the speed was $1.57\\,\\text{m/s}$ at the radius $1.0\\,\\text{m}$ and $3.14\\,\\text{m/s}$ at the radius $2.0\\,\\text{m}$: a doubled radius gave a doubled speed, because the circumference $2\\pi r$ doubles and the time is the same. On a circular path the direction of the velocity turns all the time, so the velocity changes ($|\\Delta\\overline{v}|$ is not zero) even though the speed is constant; after the break $\\Delta\\overline{v}$ was zero. The numbers are values of the model, and in the model there is no friction on the ice.",
       "criteria": [
         "I said that the puck left along the tangent of the path, that is, perpendicular to the string, and I justified it with the angle $\\alpha$.",
-        "I stated that the speed after the break was the same as the tangential speed before it.",
-        "I compared the tangential speeds and stated that a doubled radius gives a doubled tangential speed with the same period.",
+        "I stated that the speed after the break was the same as the speed before it.",
+        "I compared the speeds and stated that a doubled radius gives a doubled speed with the same period.",
         "I explained that the velocity changes because its direction changes, and mentioned that the numbers are values of the model."
       ]
     },
@@ -277,7 +277,7 @@
       "stage": "sovella",
       "type": "choice",
       "title": "Find the error",
-      "prompt": "A bicycle has been lifted onto a stand, and its front wheel turns $3.0$ revolutions per second. The diameter of the wheel is $0.70\\,\\text{m}$. A student calculates the tangential speed of the outer edge of the tyre about the axle:\n\n$$\\begin{aligned} v &= 2\\pi r f \\\\ &= 2\\pi \\cdot 0.70\\,\\text{m} \\cdot 3.0\\,\\tfrac{1}{\\text{s}} \\\\ &\\approx 13\\,\\text{m/s} \\end{aligned}$$\n\nWhere is the error?",
+      "prompt": "A bicycle has been lifted onto a stand, and its front wheel turns $3.0$ revolutions per second. The diameter of the wheel is $0.70\\,\\text{m}$. A student calculates the speed of the outer edge of the tyre about the axle:\n\n$$\\begin{aligned} v &= 2\\pi r f \\\\ &= 2\\pi \\cdot 0.70\\,\\text{m} \\cdot 3.0\\,\\tfrac{1}{\\text{s}} \\\\ &\\approx 13\\,\\text{m/s} \\end{aligned}$$\n\nWhere is the error?",
       "choices": [
         {
           "text": "The student substituted the diameter in place of the radius. The radius is $0.35\\,\\text{m}$, so $v \\approx 6.6\\,\\text{m/s}$.",
@@ -304,7 +304,7 @@
       "stage": "sovella",
       "type": "numeric",
       "title": "Apply to a new situation",
-      "prompt": "The Earth orbits the Sun along an almost circular path whose radius is $1.50 \\cdot 10^{11}\\,\\text{m}$. One revolution takes $365$ days. What is the tangential speed of the Earth? Give the answer in km/s.",
+      "prompt": "The Earth orbits the Sun along an almost circular path whose radius is $1.50 \\cdot 10^{11}\\,\\text{m}$. One revolution takes $365$ days. What is the speed of the Earth? Give the answer in km/s.",
       "answer": 29.9,
       "unit": "km/s",
       "tolerance": 0.02,
@@ -327,7 +327,7 @@
           "feedback": "Your calculation was right, but you answered in the unit $\\text{m/s}$. Convert to kilometres per second: $1\\,\\text{m} = 0.001\\,\\text{km}$."
         }
       ],
-      "solution": "**Given:** radius of the path $r = 1.50 \\cdot 10^{11}\\,\\text{m}$, period $T = 365\\,\\text{d}$\n\n**Find:** the tangential speed $v$ of the Earth in $\\text{km/s}$\n\n**Principle:** The Earth orbits the Sun along an almost circular path at an almost constant speed, so it can be modelled as uniform circular motion. In one revolution it travels the circumference $2\\pi r$ of its path in the time $T$.\n\n**Formula:**\n\n$$v = \\frac{2\\pi r}{T}$$\n\n**Conversions:** $T = 365\\,\\text{d} = 365 \\cdot 24 \\cdot 3600\\,\\text{s} = 3.1536 \\cdot 10^{7}\\,\\text{s}$. Finally $1\\,\\text{m} = 0.001\\,\\text{km}$.\n\n**Substitution:** $v = \\dfrac{2\\pi \\cdot 1.50 \\cdot 10^{11}\\,\\text{m}}{3.1536 \\cdot 10^{7}\\,\\text{s}} = \\dfrac{9.425 \\cdot 10^{11}\\,\\text{m}}{3.1536 \\cdot 10^{7}\\,\\text{s}} = 29\\,886\\,\\text{m/s} = 29.886\\,\\text{km/s}$\n\n**Answer:** $29.9\\,\\text{km/s}$, three significant figures like the radius of the path $1.50 \\cdot 10^{11}\\,\\text{m}$.\n\n**Reasonableness:** The circumference of the path is about $9.4 \\cdot 10^{8}\\,\\text{km}$, and a year has about $3.2 \\cdot 10^{7}\\,\\text{s}$, so the speed is about $30\\,\\text{km}$ per second, or over $100\\,000\\,\\text{km/h}$. The Earth thus moves about a hundred times faster than a passenger aeroplane, which fits the orbit of a planet.",
+      "solution": "**Given:** radius of the path $r = 1.50 \\cdot 10^{11}\\,\\text{m}$, period $T = 365\\,\\text{d}$\n\n**Find:** the speed $v$ of the Earth in $\\text{km/s}$\n\n**Principle:** The Earth orbits the Sun along an almost circular path at an almost constant speed, so it can be modelled as uniform circular motion. In one revolution it travels the circumference $2\\pi r$ of its path in the time $T$.\n\n**Formula:**\n\n$$v = \\frac{2\\pi r}{T}$$\n\n**Conversions:** $T = 365\\,\\text{d} = 365 \\cdot 24 \\cdot 3600\\,\\text{s} = 3.1536 \\cdot 10^{7}\\,\\text{s}$. Finally $1\\,\\text{m} = 0.001\\,\\text{km}$.\n\n**Substitution:** $v = \\dfrac{2\\pi \\cdot 1.50 \\cdot 10^{11}\\,\\text{m}}{3.1536 \\cdot 10^{7}\\,\\text{s}} = \\dfrac{9.425 \\cdot 10^{11}\\,\\text{m}}{3.1536 \\cdot 10^{7}\\,\\text{s}} = 29\\,886\\,\\text{m/s} = 29.886\\,\\text{km/s}$\n\n**Answer:** $29.9\\,\\text{km/s}$, three significant figures like the radius of the path $1.50 \\cdot 10^{11}\\,\\text{m}$.\n\n**Reasonableness:** The circumference of the path is about $9.4 \\cdot 10^{8}\\,\\text{km}$, and a year has about $3.2 \\cdot 10^{7}\\,\\text{s}$, so the speed is about $30\\,\\text{km}$ per second, or over $100\\,000\\,\\text{km/h}$. The Earth thus moves about a hundred times faster than a passenger aeroplane, which fits the orbit of a planet.",
       "optional": true
     },
     {
@@ -366,8 +366,8 @@
       "id": "tarkistus-2",
       "stage": "tarkista",
       "type": "numeric",
-      "title": "2. Tangential speed",
-      "prompt": "The diameter of the disc of an angle grinder is $125\\,\\text{mm}$, and the disc turns $11\\,000$ revolutions per minute. What is the tangential speed of the edge of the disc? Give the answer in m/s.",
+      "title": "2. Speed",
+      "prompt": "The diameter of the disc of an angle grinder is $125\\,\\text{mm}$, and the disc turns $11\\,000$ revolutions per minute. What is the speed of the edge of the disc? Give the answer in m/s.",
       "answer": 72.0,
       "unit": "m/s",
       "tolerance": 0.02,
@@ -386,7 +386,7 @@
           "feedback": "You used revolutions per minute as the rotation frequency. First convert to seconds: $f = \\tfrac{11\\,000}{60\\,\\text{s}}$."
         }
       ],
-      "solution": "**Given:** diameter of the disc $d = 125\\,\\text{mm}$, rotation frequency $f = 11\\,000\\,\\tfrac{1}{\\text{min}}$\n\n**Find:** the tangential speed $v$ of the edge of the disc in $\\text{m/s}$\n\n**Principle:** The edge of the disc is in uniform circular motion whose radius is half of the diameter. In every revolution the edge travels a distance equal to the circumference $2\\pi r = \\pi d$, and there are $f$ revolutions per unit of time.\n\n**Formula:** $v = 2\\pi r f$ and $r = \\tfrac{d}{2}$, so\n\n$$v = \\pi d f$$\n\n**Conversions:** $d = 125\\,\\text{mm} = 125 \\cdot 0.001\\,\\text{m} = 0.125\\,\\text{m}$ and $f = 11\\,000\\,\\tfrac{1}{\\text{min}} = \\dfrac{11\\,000}{60\\,\\text{s}} = 183.33\\,\\tfrac{1}{\\text{s}}$\n\n**Substitution:** $v = \\pi \\cdot 0.125\\,\\text{m} \\cdot 183.33\\,\\tfrac{1}{\\text{s}} = 0.3927\\,\\text{m} \\cdot 183.33\\,\\tfrac{1}{\\text{s}} = 71.99\\,\\text{m/s}$\n\n**Answer:** $72.0\\,\\text{m/s}$, three significant figures like the diameter $125\\,\\text{mm}$.\n\n**Reasonableness:** The circumference is about $0.4\\,\\text{m}$, and the disc makes about $180$ revolutions per second, so the edge travels about $0.4\\,\\text{m} \\cdot 180 \\approx 72\\,\\text{m}$ per second, or about $260\\,\\text{km/h}$. Grinding discs are marked with the maximum permitted tangential speed, typically $80\\,\\text{m/s}$, so the result is plausible."
+      "solution": "**Given:** diameter of the disc $d = 125\\,\\text{mm}$, rotation frequency $f = 11\\,000\\,\\tfrac{1}{\\text{min}}$\n\n**Find:** the speed $v$ of the edge of the disc in $\\text{m/s}$\n\n**Principle:** The edge of the disc is in uniform circular motion whose radius is half of the diameter. In every revolution the edge travels a distance equal to the circumference $2\\pi r = \\pi d$, and there are $f$ revolutions per unit of time.\n\n**Formula:** $v = 2\\pi r f$ and $r = \\tfrac{d}{2}$, so\n\n$$v = \\pi d f$$\n\n**Conversions:** $d = 125\\,\\text{mm} = 125 \\cdot 0.001\\,\\text{m} = 0.125\\,\\text{m}$ and $f = 11\\,000\\,\\tfrac{1}{\\text{min}} = \\dfrac{11\\,000}{60\\,\\text{s}} = 183.33\\,\\tfrac{1}{\\text{s}}$\n\n**Substitution:** $v = \\pi \\cdot 0.125\\,\\text{m} \\cdot 183.33\\,\\tfrac{1}{\\text{s}} = 0.3927\\,\\text{m} \\cdot 183.33\\,\\tfrac{1}{\\text{s}} = 71.99\\,\\text{m/s}$\n\n**Answer:** $72.0\\,\\text{m/s}$, three significant figures like the diameter $125\\,\\text{mm}$.\n\n**Reasonableness:** The circumference is about $0.4\\,\\text{m}$, and the disc makes about $180$ revolutions per second, so the edge travels about $0.4\\,\\text{m} \\cdot 180 \\approx 72\\,\\text{m}$ per second, or about $260\\,\\text{km/h}$. Grinding discs are marked with the maximum permitted speed, typically $80\\,\\text{m/s}$, so the result is plausible."
     },
     {
       "id": "tarkistus-3",

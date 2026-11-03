@@ -4,7 +4,7 @@
     "a": "$f = 15\\,\\tfrac{1}{\\text{min}} = \\dfrac{15}{60\\,\\text{s}} = 0.25\\,\\tfrac{1}{\\text{s}}$ and $T = \\dfrac{1}{f} = \\dfrac{1}{0.25\\,\\tfrac{1}{\\text{s}}} = 4.0\\,\\text{s}$."
   },
   {
-    "q": "Point A of a rotating disc is $3.0\\,\\text{cm}$ from the axis and point B $9.0\\,\\text{cm}$ from it. How many times as great is the tangential speed of B as that of A?",
-    "a": "Three times as great. The points have the same period, and the tangential speed $v = \\tfrac{2\\pi r}{T}$ is then directly proportional to the radius. The ratio of the distances is thus the ratio of the tangential speeds:\n\n$\\dfrac{9.0\\,\\text{cm}}{3.0\\,\\text{cm}} = 3.0$."
+    "q": "Point A of a rotating disc is $3.0\\,\\text{cm}$ from the axis and point B $9.0\\,\\text{cm}$ from it. How many times as great is the speed of B as that of A?",
+    "a": "Three times as great. The points have the same period, and the speed $v = \\tfrac{2\\pi r}{T}$ is then directly proportional to the radius. The ratio of the distances is thus the ratio of the speeds:\n\n$\\dfrac{9.0\\,\\text{cm}}{3.0\\,\\text{cm}} = 3.0$."
   }
 ]

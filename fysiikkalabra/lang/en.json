@@ -1226,7 +1226,7 @@
       "sade": "Radius $r = {{r}}\\,\\text{m}$",
       "kierrosaika": "Period $T = {{T}}\\,\\text{s}$",
       "aiemmat": "Show earlier velocities",
-      "nopeus": "Speed",
+      "nopeus": "Animation speed",
       "hidas": "slow",
       "normaali": "normal",
       "nopea": "fast",
@@ -1234,7 +1234,7 @@
       "muutos": "$\\text{Change of velocity}$",
       "lukemat": "$f = {{f}}\\,\\tfrac{1}{\\text{s}}$, <strong>$v = {{v}}\\,\\text{m/s}$</strong><br>$t = {{t}}\\,\\text{s}$, $s = {{s}}\\,\\text{m}$, $\\text{full turns } N = {{N}}$<br>$|\\Delta\\overline{v}| = {{dv}}\\,\\text{m/s}$ in $\\Delta t = \\tfrac{T}{12}$",
       "ehja": "The string is intact.",
-      "irti": "The string broke: $\\alpha = {{a}}^\\circ$, $v_\\text{rel} = {{vi}}\\,\\text{m/s}$"
+      "irti": "The string broke: $\\alpha = {{a}}^\\circ$, $v_\\text{cut} = {{vi}}\\,\\text{m/s}$"
     },
     "fy5-1": {
       "vaanna": "Turn",
@@ -1256,6 +1256,30 @@
       "ei_liiku": "did not move",
       "lukemat": "$F = {{F}}\\,\\text{N}$, $d = {{d}}\\,\\text{m}$, $\\alpha = {{a}}^\\circ$<br>$r = {{r}}\\,\\text{m}$, <strong>$M = {{M}}\\,\\text{Nm}$</strong><br>Nut: {{tila}}",
       "yritykset": "$\\text{Attempts}$"
+    },
+    "fy5-4": {
+      "kaynnista": "Start",
+      "tauko": "Pause",
+      "alusta": "Reset",
+      "ratanopeus": "Tangential speed $v = {{v}}\\,\\text{m/s}$ (${{kmh}}\\,\\text{km/h}$)",
+      "sade": "Radius $r = {{r}}\\,\\text{m}$",
+      "massa": "Mass",
+      "pinta": "Surface",
+      "kuiva": "dry asphalt",
+      "marka": "wet asphalt",
+      "jaa": "ice",
+      "nopeus": "Speed",
+      "hidas": "slow",
+      "normaali": "normal",
+      "nopea": "fast",
+      "selite": "The red arrows are forces, the blue arrow is the velocity and the orange arrow the acceleration.",
+      "ylhaalta": "$\\text{Path from above}$",
+      "takaa": "$\\text{Free-body diagram from behind}$",
+      "tarve": "$\\text{Friction needed}$",
+      "lukemat": "$a_\\text{n} = {{an}}\\,\\text{m/s}^2$<br>friction needed ${{Ft}}\\,\\text{kN}$, maximum static friction ${{Fm}}\\,\\text{kN}$<br>friction of the road $F_\\mu = {{F}}\\,\\text{kN}$, {{tila}}",
+      "pitaa": "grip is enough",
+      "eipida": "grip is not enough",
+      "liukuu": "the car slides"
     }
   },
   "practice": {

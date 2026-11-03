@@ -1,7 +1,7 @@
 ## fy5-3-L1-01
 **Given:** radius of the path $r = 2.5\,\text{m}$, period $T = 6.0\,\text{s}$
-**Find:** the tangential speed $v$ of the child in $\text{m/s}$
-**Principle:** The roundabout turns steadily, so the child is in uniform circular motion. In one revolution the child travels the circumference $2\pi r$ in the time $T$, so the tangential speed is the distance divided by the time.
+**Find:** the speed $v$ of the child in $\text{m/s}$
+**Principle:** The roundabout turns steadily, so the child is in uniform circular motion. In one revolution the child travels the circumference $2\pi r$ in the time $T$, so the speed is the distance divided by the time.
 **Formula:** $v = \dfrac{2\pi r}{T}$
 **Conversions:** None needed: the radius is in metres and the time in seconds.
 **Substitution:** $v = \dfrac{2\pi \cdot 2.5\,\text{m}}{6.0\,\text{s}} = \dfrac{15.71\,\text{m}}{6.0\,\text{s}} = 2.618\,\text{m/s}$
@@ -10,7 +10,7 @@
 
 ## fy5-3-L1-02
 **Given:** distance of the tip from the axis $r = 0.20\,\text{m}$, rotation frequency $f = 15\,\tfrac{1}{\text{s}}$
-**Find:** the tangential speed $v$ of the tip of the blade in $\text{m/s}$
+**Find:** the speed $v$ of the tip of the blade in $\text{m/s}$
 **Principle:** The tip of the blade is in uniform circular motion whose radius is the distance of the tip from the axis. In every revolution the tip travels the distance $2\pi r$, and there are $f$ revolutions per second, so the distance travelled per second is $2\pi r f$.
 **Formula:** $v = 2\pi r f$
 **Conversions:** None needed: $\text{m} \cdot \tfrac{1}{\text{s}} = \text{m/s}$.
@@ -29,7 +29,7 @@
 **Reasonableness:** One revolution takes $4\,\text{s}$, so a quarter of a revolution is made in a second. In a minute the sails turn $0.25 \cdot 60 = 15$ revolutions, which is a usual pace for a windmill.
 
 ## fy5-3-L1-04
-**Given:** radius of the path $r = 1.5\,\text{m}$, tangential speed $v = 3.0\,\text{m/s}$, time after the break $t = 2.0\,\text{s}$
+**Given:** radius of the path $r = 1.5\,\text{m}$, speed $v = 3.0\,\text{m/s}$, time after the break $t = 2.0\,\text{s}$
 **Find:** the distance $d$ of the puck from the centre of the path in $\text{m}$
 **Principle:** When the string breaks, no force acts on the puck horizontally, so the puck continues straight with the velocity it had at the moment of the break. The velocity is along the tangent of the path, that is, perpendicular to the radius, so the puck moves along the tangent the distance $s = vt$. From the centre to the point of the break the distance is $r$, and from there onwards perpendicular to it the distance is $s$, so by the Pythagorean theorem $d^2 = r^2 + s^2$.
 **Formula:** $d = \sqrt{r^2 + (vt)^2}$
@@ -40,7 +40,7 @@
 
 ## fy5-3-L1-05
 **Given:** radius of the path $r = 6.78 \cdot 10^{6}\,\text{m}$, period $T = 5.55 \cdot 10^{3}\,\text{s}$
-**Find:** the tangential speed $v$ of the space station in $\text{m/s}$
+**Find:** the speed $v$ of the space station in $\text{m/s}$
 **Principle:** The station orbits the Earth along an almost circular path at a constant speed, so it is in uniform circular motion. In one revolution it travels the circumference $2\pi r$ of its path in the time $T$.
 **Formula:** $v = \dfrac{2\pi r}{T}$
 **Conversions:** None needed: the radius is in metres and the time in seconds.
@@ -50,7 +50,7 @@
 
 ## fy5-3-L2-01
 **Given:** rotation frequency $f = 45\,\tfrac{1}{\text{min}}$, distance of the edge from the centre $r = 8.5\,\text{cm}$
-**Find:** the tangential speed $v$ of the edge of the record in $\text{m/s}$
+**Find:** the speed $v$ of the edge of the record in $\text{m/s}$
 **Principle:** The edge of the record is in uniform circular motion whose radius is the distance of the edge from the centre. In every revolution the edge travels the distance $2\pi r$, and there are $f$ revolutions per unit of time.
 **Formula:** $v = 2\pi r f$
 **Conversions:** $r = 8.5\,\text{cm} = 8.5 \cdot 0.01\,\text{m} = 0.085\,\text{m}$ and $f = 45\,\tfrac{1}{\text{min}} = \dfrac{45}{60\,\text{s}} = 0.75\,\tfrac{1}{\text{s}}$
@@ -61,7 +61,7 @@
 ## fy5-3-L2-02
 **Given:** diameter $d = 40\,\text{m}$, speed of the gondola $v = 0.35\,\text{m/s}$
 **Find:** the period $T$ in minutes
-**Principle:** The gondola is in uniform circular motion whose radius is half of the diameter. The tangential speed is the distance $2\pi r$ of one revolution divided by the period, so the period is obtained by solving it from the formula of the tangential speed.
+**Principle:** The gondola is in uniform circular motion whose radius is half of the diameter. The speed is the distance $2\pi r$ of one revolution divided by the period, so the period is obtained by solving it from the formula of the speed.
 **Formula:** $v = \dfrac{2\pi r}{T}$, so $T = \dfrac{2\pi r}{v}$, where $r = \dfrac{d}{2}$
 **Conversions:** $r = \dfrac{40\,\text{m}}{2} = 20\,\text{m}$. Finally seconds are converted to minutes by substituting $1\,\text{s} = \tfrac{1}{60}\,\text{min}$.
 **Substitution:** $T = \dfrac{2\pi \cdot 20\,\text{m}}{0.35\,\text{m/s}} = \dfrac{125.66\,\text{m}}{0.35\,\text{m/s}} = 359.0\,\text{s} = 359.0 \cdot \tfrac{1}{60}\,\text{min} = 5.98\,\text{min}$
@@ -69,24 +69,24 @@
 **Reasonableness:** The circumference is about $126\,\text{m}$, and the gondola goes round it at about a third of a metre per second, so a revolution takes about $360\,\text{s}$. A revolution of a Ferris wheel usually takes a few minutes, so the result is plausible.
 
 ## fy5-3-L2-03
-**Given:** distance from the axis $r = 9.5\,\text{cm}$, tangential speed $v = 45\,\text{m/s}$
+**Given:** distance from the axis $r = 9.5\,\text{cm}$, speed $v = 45\,\text{m/s}$
 **Find:** the rotation frequency $f$ in $\tfrac{1}{\text{min}}$
 **Principle:** The bottom of the test tube is in uniform circular motion. In a second it travels the distance $v$, and one revolution is $2\pi r$, so the number of revolutions per second is the distance divided by the length of one revolution.
 **Formula:** $v = 2\pi r f$, so $f = \dfrac{v}{2\pi r}$
 **Conversions:** $r = 9.5\,\text{cm} = 9.5 \cdot 0.01\,\text{m} = 0.095\,\text{m}$. Finally $1\,\tfrac{1}{\text{s}} = \tfrac{1}{\frac{1}{60}\,\text{min}} = 60\,\tfrac{1}{\text{min}}$.
 **Substitution:** $f = \dfrac{45\,\text{m/s}}{2\pi \cdot 0.095\,\text{m}} = \dfrac{45\,\text{m/s}}{0.5969\,\text{m}} = 75.39\,\tfrac{1}{\text{s}} = 75.39 \cdot 60\,\tfrac{1}{\text{min}} = 4523\,\tfrac{1}{\text{min}}$
-**Answer:** about $4.5 \cdot 10^{3}\,\tfrac{1}{\text{min}}$, that is, $4500$ revolutions per minute, two significant figures like the tangential speed $45\,\text{m/s}$ and the radius $9.5\,\text{cm}$.
+**Answer:** about $4.5 \cdot 10^{3}\,\tfrac{1}{\text{min}}$, that is, $4500$ revolutions per minute, two significant figures like the speed $45\,\text{m/s}$ and the radius $9.5\,\text{cm}$.
 **Reasonableness:** The circumference is about $0.6\,\text{m}$, so $45\,\text{m}$ per second is about $75$ revolutions per second. Laboratory centrifuges typically turn thousands of revolutions per minute, so the result is plausible.
 
 ## fy5-3-L2-04
-**Given:** distance of the tip $r_1 = 52\,\text{m}$ and tangential speed $v_1 = 65\,\text{m/s}$, distance of the other point $r_2 = 20\,\text{m}$
-**Find:** the tangential speed $v_2$ of the point in $\text{m/s}$
-**Principle:** The blade is rigid, so all its points complete a revolution in the same time $T$. By the formula $v = \tfrac{2\pi r}{T}$ the tangential speed is then directly proportional to the distance from the axis.
+**Given:** distance of the tip $r_1 = 52\,\text{m}$ and speed $v_1 = 65\,\text{m/s}$, distance of the other point $r_2 = 20\,\text{m}$
+**Find:** the speed $v_2$ of the point in $\text{m/s}$
+**Principle:** The blade is rigid, so all its points complete a revolution in the same time $T$. By the formula $v = \tfrac{2\pi r}{T}$ the speed is then directly proportional to the distance from the axis.
 **Formula:** $T = \dfrac{2\pi r_1}{v_1} = \dfrac{2\pi r_2}{v_2}$, so $v_2 = \dfrac{r_2}{r_1}\, v_1$
 **Conversions:** None needed: the unit of the distances cancels, and the speed is already in $\text{m/s}$.
 **Substitution:** $v_2 = \dfrac{20\,\text{m}}{52\,\text{m}} \cdot 65\,\text{m/s} = 0.3846 \cdot 65\,\text{m/s} = 25.0\,\text{m/s}$
-**Answer:** $25\,\text{m/s}$, two significant figures like the distances and the tangential speed of the tip.
-**Reasonableness:** The point is at less than half the distance of the tip, so its tangential speed is less than half of the $65\,\text{m/s}$ of the tip. The period is $T = \tfrac{2\pi \cdot 52\,\text{m}}{65\,\text{m/s}} = 5.03\,\text{s}$, and $\tfrac{2\pi \cdot 20\,\text{m}}{5.03\,\text{s}} = 25\,\text{m/s}$ gives the same result.
+**Answer:** $25\,\text{m/s}$, two significant figures like the distances and the speed of the tip.
+**Reasonableness:** The point is at less than half the distance of the tip, so its speed is less than half of the $65\,\text{m/s}$ of the tip. The period is $T = \tfrac{2\pi \cdot 52\,\text{m}}{65\,\text{m/s}} = 5.03\,\text{s}$, and $\tfrac{2\pi \cdot 20\,\text{m}}{5.03\,\text{s}} = 25\,\text{m/s}$ gives the same result.
 
 ## fy5-3-L3-01
 **Given:** inner arc $r_1 = 36.5\,\text{m}$, speed of the inner runner $v_1 = 7.0\,\text{m/s}$, outer arc $r_2 = 40.2\,\text{m}$; the arcs are concentric semicircles
@@ -111,7 +111,7 @@
 ## fy5-3-L3-03
 **Given:** radius of the front sprocket $r_\text{f} = 10.0\,\text{cm}$, radius of the rear sprocket $r_\text{r} = 4.0\,\text{cm}$, radius of the rear wheel $R = 0.34\,\text{m}$, rotation frequency of the front sprocket $f_\text{f} = 1.0\,\tfrac{1}{\text{s}}$; the tyre does not slip
 **Find:** the speed $u$ of the bicycle in $\text{km/h}$
-**Principle:** The chain moves on the rim of both sprockets at the same tangential speed $v_\text{c}$, so $2\pi r_\text{f} f_\text{f} = 2\pi r_\text{r} f_\text{r}$. The rear wheel turns at the same frequency $f_\text{r}$ as the rear sprocket. When the tyre does not slip, the point of the tyre touching the ground is momentarily at rest relative to the ground, so in one revolution the bicycle advances the circumference $2\pi R$ of the tyre, and the speed is $u = 2\pi R f_\text{r}$.
+**Principle:** The chain moves on the rim of both sprockets at the same speed $v_\text{c}$, so $2\pi r_\text{f} f_\text{f} = 2\pi r_\text{r} f_\text{r}$. The rear wheel turns at the same frequency $f_\text{r}$ as the rear sprocket. When the tyre does not slip, the point of the tyre touching the ground is momentarily at rest relative to the ground, so in one revolution the bicycle advances the circumference $2\pi R$ of the tyre, and the speed is $u = 2\pi R f_\text{r}$.
 **Formula:** $f_\text{r} = \dfrac{r_\text{f}}{r_\text{r}}\, f_\text{f}$ and $u = 2\pi R f_\text{r}$, so $u = 2\pi R\, \dfrac{r_\text{f}}{r_\text{r}}\, f_\text{f}$
 **Conversions:** The unit of the radii of the sprockets cancels. Finally $1\,\text{m/s} = \dfrac{0.001\,\text{km}}{\frac{1}{3600}\,\text{h}} = 3.6\,\tfrac{\text{km}}{\text{h}}$.
 **Substitution:** $f_\text{r} = \dfrac{10.0\,\text{cm}}{4.0\,\text{cm}} \cdot 1.0\,\tfrac{1}{\text{s}} = 2.5\,\tfrac{1}{\text{s}}$, $u = 2\pi \cdot 0.34\,\text{m} \cdot 2.5\,\tfrac{1}{\text{s}} = 5.341\,\text{m/s} = 5.341 \cdot 3.6\,\tfrac{\text{km}}{\text{h}} = 19.23\,\tfrac{\text{km}}{\text{h}}$
