@@ -1625,6 +1625,29 @@
       "lukemat": "Measurements ${N = {{N}}}$<br>Inside the boundary ${k = {{k}}}$, outside ${N - k = {{out}}}$<br>Share inside the boundary ${k : N = {{f}}\\,\\%}$<br>Most common distance from the nucleus ${r \\approx {{rp}}\\,\\text{nm}}$<br><strong>Greatest distance of the boundary from the nucleus ${R = {{R}}\\,\\text{nm}}$</strong>",
       "osumia": "$\\text{hits}$",
       "orbSuffix": " orbital}$"
+    },
+    "fy8-2": {
+      "tila": "Mode",
+      "emissio": "emission (hot gas)",
+      "absorptio": "absorption",
+      "ylempi": "Upper level $n_\\text{u}$",
+      "alempi": "Lower level $n_\\text{l}$",
+      "nopeus": "Speed",
+      "hidas": "slow",
+      "normaali": "normal",
+      "nopea": "fast",
+      "tyhjenna": "Clear spectrum",
+      "selite": "The arrow is the transition. The spectrum keeps all the transitions you try in this mode.",
+      "lukemat": "Upper level $E_\\text{u} = {{Ey}}\\,\\text{eV}$<br>Lower level $E_\\text{l} = {{Ea}}\\,\\text{eV}$<br>Photon energy $\\Delta E = {{dE}}\\,\\text{eV}$<br><strong>Wavelength $\\lambda = {{lam}}\\,\\text{nm}$</strong> ({{alue}})",
+      "alue_uv": "ultraviolet",
+      "alue_vis": "visible light",
+      "alue_ir": "infrared",
+      "virhe": "Choose a greater $n$ for the upper level than for the lower level.",
+      "spektroskooppi": "spectroscope",
+      "kaasu_kuuma": "hot hydrogen gas",
+      "kaasu_kylma": "cold hydrogen gas",
+      "lamppu": "lamp",
+      "nakyva": "visible light"
     }
   },
   "practice": {
