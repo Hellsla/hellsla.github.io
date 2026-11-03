@@ -32,7 +32,7 @@
     "lessons": {
       "fy2-1": "Energialajit ja energian säilyminen",
       "fy2-2": "Energian muuntuminen ja yksikkö joule",
-      "fy2-3": "Teho: $P = \\frac{\\Delta E}{\\Delta t}$",
+      "fy2-3": "Teho: $P = \\Delta E/\\Delta t$",
       "fy2-4": "Hyötysuhde",
       "fy2-5": "Polttoaineet ja lämpöarvo $E = Hm$",
       "fy2-6": "Energiantuotantotavat ja niiden vertailu",

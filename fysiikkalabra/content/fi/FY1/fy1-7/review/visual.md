@@ -1,8 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: d3c72c9fb8629ad7
+CONTENT-HASH: 610e1dfc142402cf
+
 ## Blocking
-(none)
+
 ## Polish
-- Jäävuori-esimerkki on tosi ja sopii tiheyteen; vaihtoehtoteksti selkeä.
+- [Minor] top-390/top-1280 — the title formula is set in KaTeX serif at a slightly larger optical size than the heading font; reads clearly and is a consequence of the project-wide all-LaTeX rule, so nothing to change.
+
 ## Checked
-batch delta review: the added photo in the built preview at 360/768/1280 px (loads, no horizontal overflow, 320 px figure, credit under the caption), alt text vs image, Finnish and factual accuracy of the caption, placement in the page rhythm.
+batch delta review: opened fy1-7-top-390 (and top-1280 for fy2-5, fy3-6); the title formula renders as KaTeX (no red source), on one block with the heading, nothing clipped, no overflow, breadcrumb legible; the rest of the lesson is unchanged by the diff.

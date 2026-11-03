@@ -272,7 +272,7 @@
       },
       {
         "id": "fy2-3",
-        "title": "Teho: $P = \\frac{\\Delta E}{\\Delta t}$",
+        "title": "Teho: $P = \\Delta E/\\Delta t$",
         "goals": [
           "LOPS FY2: energian tuotanto, teho, hyötysuhde ja energian siirtäminen",
           "Täsmennys: teho esitellään suureena P = ΔE/Δt; työn käsitettä ei tässä moduulissa vielä käytetä"
