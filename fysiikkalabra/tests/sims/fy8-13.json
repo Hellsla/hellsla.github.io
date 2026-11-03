@@ -1,0 +1,162 @@
+[
+ {
+  "expr": "(() => { const S=window.simState; return S.r===1 && S.x===0 && S.t===0 && Math.abs(S.Hdot-40)<1e-9 && S.H===0 && S.running===0 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "on load: r = 1,0 m, no lead, t = 0, 40,0 µSv/h, no dose, not running (must run before any setup)"
+ },
+ {
+  "expr": "(() => { const R=[...document.querySelectorAll('#sim-root input[type=range]')]; return R.length===3 && R[0].min==='1' && R[0].max==='4' && R[0].step==='0.5' && R[1].min==='0' && R[1].max==='30' && R[1].step==='3' && R[2].min==='0' && R[2].max==='60' && R[2].step==='1' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "three sliders: distance 1–4 m by 0,5, lead 0–30 mm by 3, time 0–60 min by 1"
+ },
+ {
+  "expr": "(() => { const L=[...document.querySelectorAll('#sim-root select')].map(s=>[...s.options].map(o=>o.value).join(',')); return L.length===1 && L[0]==='1,3,10' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "one select: speed hidas 1 · normaali 3 · nopea 10 simulated min per s"
+ },
+ {
+  "expr": "(() => { const k=[...document.getElementById('sim-root').children].map(e=>e.tagName==='CANVAS'?'canvas':e.className); const c=document.querySelector('#sim-root .controls'); return k.indexOf('canvas')<k.indexOf('controls') && k.indexOf('controls')<k.indexOf('readout') && c.firstElementChild.tagName==='BUTTON' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "DOM order canvas, controls (main button first), readout"
+ },
+ {
+  "expr": "(() => { const n=document.querySelectorAll('#sim-root p.note'); return !document.querySelector('#sim-root details') && n.length===1 && n[0].textContent.trim().split(/\\s+/).length<=15 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "no Lisätietoja box; one legend line of at most 15 words"
+ },
+ {
+  "expr": "(() => { const P=window.simAdapter && window.simAdapter.params; return P && Object.keys(P).sort().join(',')==='r,t,x' && P.r.unit==='m' && P.x.unit==='mm' && P.t.unit==='min' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "adapter declares r (m), x (mm) and t (min)"
+ },
+ {
+  "expr": "(() => { const c=document.querySelector('#sim-root canvas'); return c.width===600 && c.height===400 ? 1 : 0; })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "canvas 600x400"
+ },
+ {
+  "expr": "(() => { const t=document.querySelector('#sim-root .readout').textContent; return /Sv\\/h/.test(t) && /min/.test(t) ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "the readout shows the dose rate in µSv/h and the time in min"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],1); I(R[1],0); I(R[2],0);",
+  "expr": "window.simState.Hdot",
+  "expected": 40.0,
+  "tol": 0.01,
+  "note": "koe 1: 1,0 m, no lead: 40,0 µSv/h"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],2); I(R[1],0); I(R[2],0);",
+  "expr": "window.simState.Hdot",
+  "expected": 10.0,
+  "tol": 0.01,
+  "note": "koe 1 and prediction 1: 2,0 m: a quarter, 10,0 µSv/h (lesson-answers koe1-r2)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],3); I(R[1],0); I(R[2],0);",
+  "expr": "window.simState.Hdot",
+  "expected": 4.444444,
+  "tol": 0.01,
+  "note": "koe 1: 3,0 m: a ninth, 4,44 µSv/h"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],4); I(R[1],0); I(R[2],0);",
+  "expr": "window.simState.Hdot",
+  "expected": 2.5,
+  "tol": 0.01,
+  "note": "koe 1: 4,0 m: a sixteenth, 2,50 µSv/h"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],1.5); I(R[1],0); I(R[2],0);",
+  "expr": "window.simState.Hdot",
+  "expected": 17.777778,
+  "tol": 0.01,
+  "note": "1,5 m: 17,8 µSv/h"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],1); I(R[1],6); I(R[2],0);",
+  "expr": "window.simState.Hdot",
+  "expected": 20.0,
+  "tol": 0.01,
+  "note": "koe 2: 6 mm lead: half, 20,0 µSv/h"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],1); I(R[1],12); I(R[2],0);",
+  "expr": "window.simState.Hdot",
+  "expected": 10.0,
+  "tol": 0.01,
+  "note": "koe 2 and prediction 2: 12 mm: a quarter, 10,0 µSv/h, not zero"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],1); I(R[1],18); I(R[2],0);",
+  "expr": "window.simState.Hdot",
+  "expected": 5.0,
+  "tol": 0.01,
+  "note": "koe 2: 18 mm: an eighth, 5,00 µSv/h"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],1); I(R[1],3); I(R[2],0);",
+  "expr": "window.simState.Hdot",
+  "expected": 28.284271,
+  "tol": 0.01,
+  "note": "3 mm, half a half-value layer: 28,3 µSv/h"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],1); I(R[1],30); I(R[2],0);",
+  "expr": "window.simState.Hdot",
+  "expected": 1.25,
+  "tol": 0.01,
+  "note": "30 mm: five half-value layers, 1,25 µSv/h"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],1); I(R[1],12); I(R[2],0);",
+  "expr": "window.simState.trans",
+  "expected": 0.25,
+  "tol": 0.01,
+  "note": "12 mm lets through a quarter"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],2); I(R[1],0); I(R[2],30);",
+  "expr": "window.simState.H",
+  "expected": 5.0,
+  "tol": 0.01,
+  "note": "dose H = Hdot t: 10,0 µSv/h for 30 min = 5,00 µSv"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],2); I(R[1],0); I(R[2],60);",
+  "expr": "window.simState.H",
+  "expected": 10.0,
+  "tol": 0.01,
+  "note": "twice the time, twice the dose: 10,0 µSv"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],4); I(R[1],6); I(R[2],0);",
+  "expr": "window.simState.Hdot",
+  "expected": 1.25,
+  "tol": 0.01,
+  "note": "distance and lead together: 40 · 1/16 · 1/2 = 1,25 µSv/h"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],1); I(R[1],0); I(R[2],0); document.querySelector('#sim-root .controls button').click();",
+  "expr": "(() => new Promise((ok) => setTimeout(() => { const S=window.simState; ok(S.running===1 && S.t>0 && S.t<60 && S.H>0 ? 1 : 0); }, 600)))()",
+  "expected": 1,
+  "tol": 0,
+  "note": "Käynnistä aika runs the stay time forward and the dose grows"
+ },
+ {
+  "setup": "document.querySelector('#sim-root .controls button').click();",
+  "expr": "(() => new Promise((ok) => setTimeout(() => { const S=window.simState; ok(S.running===0 ? 1 : 0); }, 200)))()",
+  "expected": 1,
+  "tol": 0,
+  "note": "Pysäytä stops it"
+ }
+]
