@@ -128,7 +128,7 @@
       "names": {
         "U": "voltage U",
         "d": "plate separation d",
-        "hiukkanen": "hiukkanen"
+        "hiukkanen": "particle"
       },
       "units": {
         "U": "V",
@@ -136,9 +136,9 @@
       },
       "values": {
         "hiukkanen": {
-          "p": "protoni",
-          "e": "elektroni",
-          "a": "alfahiukkanen"
+          "p": "proton",
+          "e": "electron",
+          "a": "alpha particle"
         }
       },
       "measure": [
@@ -176,7 +176,7 @@
       "names": {
         "U": "voltage U",
         "d": "plate separation d",
-        "hiukkanen": "hiukkanen"
+        "hiukkanen": "particle"
       },
       "units": {
         "U": "V",
@@ -184,9 +184,9 @@
       },
       "values": {
         "hiukkanen": {
-          "p": "protoni",
-          "e": "elektroni",
-          "a": "alfahiukkanen"
+          "p": "proton",
+          "e": "electron",
+          "a": "alpha particle"
         }
       },
       "measure": [

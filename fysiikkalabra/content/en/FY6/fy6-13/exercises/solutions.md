@@ -113,7 +113,7 @@
 ## fy6-13-L3-03
 **Given:** capacitance $C = 1.0\,\text{nF}$, voltage $U = 6.0\,\text{kV}$, for polystyrene $\varepsilon_\text{r} = 2.6$ and $E_\text{max} = 24\,\text{MV/m}$, the field at most $\tfrac{1}{2} E_\text{max}$, $\varepsilon_0 = 8.854 \cdot 10^{-12}\,\text{F/m}$
 **Find:** the area of the plate $A$ in square centimetres
-**Principle:** The field between the plates is $E = \tfrac{U}{d}$. The field may be at most half of the dielectric strength, so the dielectric must be at least thick enough for the field to be this limiting value. When the thickness is known, the area that gives the desired capacitance is solved from the formula of a parallel-plate capacitor.
+**Principle:** The field between the plates is $E = \tfrac{U}{d}$. The field may be at most half of the dielectric strength, so the dielectric must be at least thick enough that the field does not exceed this limit. When the thickness is known, the area that gives the desired capacitance is solved from the formula of a parallel-plate capacitor.
 **Formula:** $\tfrac{1}{2} E_\text{max} = \dfrac{U}{d}$, from which $d = \dfrac{2U}{E_\text{max}}$, and $C = \dfrac{\varepsilon_0 \varepsilon_\text{r} A}{d}$, from which $A = \dfrac{C d}{\varepsilon_0 \varepsilon_\text{r}}$
 **Conversions:** $U = 6.0\,\text{kV} = 6000\,\text{V}$, $E_\text{max} = 24 \cdot 10^{6}\,\text{V/m}$, $C = 1.0 \cdot 10^{-9}\,\text{F}$ and finally $1\,\text{m}^2 = 100\,\text{cm} \cdot 100\,\text{cm} = 10\,000\,\text{cm}^2$
 **Substitution:** $d = \dfrac{2 \cdot 6000\,\text{V}}{24 \cdot 10^{6}\,\text{V/m}} = 5.0 \cdot 10^{-4}\,\text{m}$ and $A = \dfrac{1.0 \cdot 10^{-9}\,\text{F} \cdot 5.0 \cdot 10^{-4}\,\text{m}}{8.854 \cdot 10^{-12}\,\text{F/m} \cdot 2.6} \approx 0.0217\,\text{m}^2 = 217\,\text{cm}^2$
