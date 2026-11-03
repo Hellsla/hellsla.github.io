@@ -51,7 +51,7 @@
 ## fy8-10-L2-01
 **Annettu:** rauta-56-atomin massa $m_\text{atomi} = 55{,}934936\,\text{u}$, $Z = 26$, $A = 56$, joten $N = 30$. Lisäksi $m_\text{H} = 1{,}007825\,\text{u}$, $m_\text{n} = 1{,}008665\,\text{u}$ ja $1\,\text{u} = 931{,}5\,\tfrac{\text{MeV}}{c^2}$.
 **Kysytty:** sidosenergia nukleonia kohti $\tfrac{E_\text{B}}{A}$ megaelektronivoltteina
-**Periaate:** Ytimen massavajetta vastaa sidosenergia $E_\text{B} = \Delta m\,c^2$. Vetyatomien massoja käytetään, jotta $26$ elektronin massat kumoutuvat rautaatomin elektronien kanssa. Lopuksi jaetaan nukleonien määrällä.
+**Periaate:** Ytimen massavajetta vastaa sidosenergia $E_\text{B} = \Delta m\,c^2$. Vetyatomien massoja käytetään, jotta $26$ elektronin massat kumoutuvat rauta-atomin elektronien kanssa. Lopuksi jaetaan nukleonien määrällä.
 **Kaava:** $\Delta m = Z\,m_\text{H} + N\,m_\text{n} - m_\text{atomi}$ ja $E_\text{B} = \Delta m\,c^2$, joten $\dfrac{E_\text{B}}{A} = \dfrac{(Z\,m_\text{H} + N\,m_\text{n} - m_\text{atomi})\,c^2}{A}$
 **Muunnokset:** Yksikön $\text{u}$ paikalle sijoitetaan $931{,}5\,\tfrac{\text{MeV}}{c^2}$, jolloin $c^2$ supistuu pois.
 **Sijoitus:** $\Delta m = 26 \cdot 1{,}007825\,\text{u} + 30 \cdot 1{,}008665\,\text{u} - 55{,}934936\,\text{u} = 26{,}203450\,\text{u} + 30{,}259950\,\text{u} - 55{,}934936\,\text{u} = 0{,}528464\,\text{u}$, joten $\dfrac{E_\text{B}}{A} = \dfrac{0{,}528464 \cdot 931{,}5\,\text{MeV}}{56} = \dfrac{492{,}264\,\text{MeV}}{56} = 8{,}7904\,\text{MeV}$
