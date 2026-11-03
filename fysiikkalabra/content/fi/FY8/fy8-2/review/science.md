@@ -1,21 +1,20 @@
-VERDICT: FAIL
-CONTENT-HASH: ad2b40581b17ae1a
+VERDICT: PASS
+CONTENT-HASH: 1c8e4b98816f56ec
 
 ## Blocking
-- lesson.md:5 (figures.py `hero()`, line 212 ff.) — **A**. The prism has its apex up, but the fan leaves the prism bending *up* toward the apex, with violet at the top and red at the bottom of the fan and the screen. A prism bends light toward its base, and violet is bent most, so with the apex up violet must be lowest. As drawn it shows the opposite dispersion. — Fix: turn the prism apex-down (then the current upward fan with violet on top is right), or keep the apex up, aim the fan downward from the incoming beam and reverse the gradient (red on top, violet at the bottom) on both the fan and the screen.
-- inquiry.json:105 (ennuste-2, option "Kaikkialla spektrissä…", feedback) — **A**. "Absorptio ei riipu siitä, kuinka kylmä kaasu on" contradicts the lesson (lesson.md:126, the sibling feedback at :97, the spectra caption): which lines are absorbed depends on temperature, because it decides which levels hold atoms. That is why hot stellar gas shows 656 nm dark. — Fix: "Kylmyys ei lisää absorptiota: kaasu absorboi vain niiden tilojen erotuksia, joissa sen atomeja on, ja kylmässä vedyssä ne ovat perustilassa."
-- assets/sims/fy8/fy8-2/sim.js:138, lang/fi.json:1601, the mode option "absorptio (kylmä kaasu)", inquiry.json:114 howto — **A** (the sim misleads). In absorption mode with n_a = 2–4 the sim labels the cell "kylmä vetykaasu" and draws it absorbing 656/486 nm. The reflection item then asks why cold hydrogen does *not* absorb visible light. The model box admits this, but the picture shows the wrong thing. — Fix: when n_a > 1, label the cell "kuuma vetykaasu" (or drop "kylmä" from the mode name and the label), and say in the howto that n_a = 1 is cold gas.
-- lesson.md:279 — **A**. "Hiilidioksidin ja vesihöyryn värähtelytilojen erotukset ovat noin 0,1 eV tai pienempiä" is wrong: CO₂ at 4,3 µm is 0,29 eV and H₂O at 6,3 µm is 0,20 eV (and 0,46 eV at 2,7 µm). — Fix: "noin 0,1–0,5 eV".
 
 ## Polish
-- inquiry.json:228 — "spektrissä ei ole muita viivoja" as an identification rule fails for a lamp that holds a mixture. Write "eikä spektrissä ole viivoja, joita lampun alkuaineella ei ole" or limit the rule to one element.
-- inquiry.json koe-1 — n_y = 2 can be chosen with n_a = 2 locked, which records dE = 0, lam = 0 in the table. Consider offering only n_y > n_a.
-- lesson.md:187 ("Näkyvän valon viivat … tasolta 3–6") — 7→2 (397 nm) lies inside the lesson's own visible range of 380–750 nm. "voimakkaimmat näkyvät viivat" would be exact.
+- lessons/FY8/fy8-2/sim-spec.md:1 — the absorption mode is still described as "lampun valkoinen valo kulkee kylmän vetykaasun läpi", although the sim now labels the cell cold only when n_a = 1 and hot otherwise. Write "vetykaasun läpi (kylmä, kun n_a = 1; kuuma, kun n_a > 1)" so that the spec matches sim.js:143 and the howto.
+- lesson.md (Energiatilat selittävät viivat) — "osa vetyatomeista on ensimmäisessä viritystilassa" is fair (C). The fraction is tiny (about 10⁻⁸ at 5800 K), so "pieni osa" would avoid suggesting a large share.
 
 ## Checked
-- Recomputed in one script: Balmer 656,5/486,3/434,2/410,3 nm, gaps 170/52/24 nm, Lyman 122–94 nm, retrieval 1,91/3,02 eV, example 1,9375 eV, Etsi virhe 1,05·10⁻²⁵ m and 656 nm, siirto 1,0126 eV (mistake 8,00 eV), check 2 2,105 eV (3,37 and 0,475 mistakes): all agree.
-- Spectra figure to scale (1 px/nm, lines at 410/434/486/656). Levels figure to scale (22 px/eV). Fluorescence figure to scale (55,9 px/eV for both photons).
-- Lamp figure and table: Hg 405/436/546/577/579, He, Na, H against NIST. The correct option is unique.
-- Predictions 1–2: exactly one correct option each. Experiments lock tila and n_a, vary n_y, and simState gives dE and lam.
-- sim.js: E_n, λ = hc/ΔE with the lesson's constants, region limits, IR arrow. Line colours intended.
-- Fluorescence mechanism, the absorption re-emission explanation, the misconception box, helium 1868, exit ticket.
+- Round 1 blocking items are fixed. Hero: the prism is apex-down and the fan bends toward the base, with violet (most deviated) on top on both the fan and the screen. ennuste-2 feedback now says absorption depends on which levels are occupied. The sim labels the cell "kylmä/kuuma vetykaasu" by n_a, and the howto and model say so. The greenhouse range is now 0,08–0,5 eV (CO₂ 15 µm 0,083, 4,3 µm 0,288; H₂O 6,3 µm 0,197, 2,7 µm 0,459 eV).
+- Round 1 polish is done: the lamp-ID feedback has a correct "all lines of the element / no unexplained line" rule; syncNy disables n_y ≤ n_a, so the experiments never record ΔE = 0; and "voimakkaimmat näkyvät viivat" with 7→2 at 397,1 nm.
+- I recomputed everything in one script, and it agrees with lesson-answers.py: Balmer 656,5/486,3/434,2/410,3 nm, gaps 170/52/24 nm, Lyman 121,6–93,8 nm (the sim's readout rounds them to 122/103/97/95/94), retrieval 1,91/3,02 eV, example 1,9375 eV, Etsi virhe 1,05·10⁻²⁵ "m" → 656 nm, siirto 0,7221 eV (mistakes 9,92/3,06/2,34/−0,722), check 2 2,2711 eV (3,64, 0,440).
+- Spectra figure: 1 px/nm, and its lines sit at 410,5/434/486,5/656,5 nm. Levels figure: 22 px/eV for every level. Fluorescence figure: 55,9 px/eV, with 365 nm = 3,40 eV and 520 nm = 2,38 eV.
+- Lamp figure: the lines are at Hg 405/436/546/577–579 nm. Exactly one option is correct, and every distractor's feedback is right.
+- Predictions 1–2: exactly one correct option each. The experiments lock tila and n_a and vary n_y, and simState gives dE and lam.
+- sim.js: E_n = −13,6/n², λ = hc/ΔE with the lesson's constants, and the region limits are 380/750 nm. Line colours are intended.
+- The misconception box (exact energy, the ionisation exception, re-emission in all directions), the greenhouse mechanism (collisions, emission downward) and the fluorescence mechanism are all correct.
+- Exit ticket: three lines of 1,0/2,0/3,0 eV, and 400 nm emission after 450 nm absorption is ruled out by energy. The helium 1868 model answer is correct.
+- The exercise set is identical to the one reviewed in exercises/review/science.md.
