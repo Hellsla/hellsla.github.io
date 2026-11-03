@@ -70,7 +70,7 @@ akselit 0
 ## fy5-4-L2-02
 **Annettu:** kierrosaika $T = 5{,}0\,\text{s}$, etäisyys keskipisteestä $r = 3{,}0\,\text{m}$
 **Kysytty:** lapsen normaalikiihtyvyys $a_\text{n}$ yksikössä $\text{m/s}^2$
-**Periaate:** Karuselli pyörii tasaisesti, joten lapsi on tasaisessa ympyräliikkeessä. Luvun *Ympyräliike ja ratanopeus* mukaan ratanopeus on kierroksen pituus jaettuna kierrosajalla. Normaalikiihtyvyys lasketaan sitten ratanopeudesta.
+**Periaate:** Karuselli pyörii tasaisesti, joten lapsi on tasaisessa ympyräliikkeessä. Luvun *Ympyrärata: jaksonaika ja ratanopeus* mukaan ratanopeus on kierroksen pituus jaettuna kierrosajalla. Normaalikiihtyvyys lasketaan sitten ratanopeudesta.
 **Kaava:** $v = \dfrac{2\pi r}{T}$ ja $a_\text{n} = \dfrac{v^2}{r}$
 **Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $v = \dfrac{2\pi\cdot 3{,}0\,\text{m}}{5{,}0\,\text{s}} = 3{,}770\,\text{m/s}$ ja $a_\text{n} = \dfrac{(3{,}770\,\text{m/s})^2}{3{,}0\,\text{m}} = 4{,}737\,\text{m/s}^2$

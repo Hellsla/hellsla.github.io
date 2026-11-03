@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 01f9a994d152d71a
+CONTENT-HASH: c8040b0ec5917f54
 
 ## Blocking
 (none)
@@ -8,8 +8,4 @@ CONTENT-HASH: 01f9a994d152d71a
 (none)
 
 ## Checked
-- Selkokielinen versio verrattu tarkistettuun suomenkieliseen lukuun: lesson.md, inquiry.json, exit-ticket.json, meta.json, figures.json ja lang/fi-easy.json sims.fy5-8. Kaikki fysiikan päättelyaskeleet, ehdot (laki pätee vain kohtuullisilla venymillä, kitkaton rata, massat huomiotta) ja palautteet ovat mukana.
-- check_i18n.py: ei fy5-8-virheitä; luvut, yksiköt, toleranssit, oikeat vaihtoehdot ja kaavat ovat samat.
-- Lasketut arvot tarkistettu samoin kuin englanninkielisessä: 392,4 N/m, 0,18 J, 3,35 m/s, +10 N, 80 N/m, 30 N/m, 0,15 m.
-- Korjattu: "poikkeama eli matka tasapainoasemasta" antoi kuvan aina positiivisesta suureesta; nyt "siirtymä", ja etumerkki sanotaan ääneen (B-tyypin tarkennus).
-- Korjattu: linkki tutkimukseen osoitti sivulle, jota ei ole site/fi-easy/-kansiossa; nyt ../fy10-jousivakio.html.
+batch delta review: new pinball close-up: pulling the plunger knob out compresses the coil spring between tip and front wall, consistent with the lesson's compressed-spring launch; references to fy5-7 and fy5-9 updated. Every changed chapter reference names the renamed chapter that holds the cited content, and no old title remains.

@@ -1,14 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: d431b09626d1bc1c
-
+CONTENT-HASH: 0391b8113be17541
 ## Blocking
-(none)
 
 ## Polish
-- lesson.md (hero) — Polish: the closing sentence of the alt text ('this raises the question...') does a job the Pohdinta already does; the alt text may describe only what is seen.
 
 ## Checked
-- Delta only: the hero illustration and its alt text; the rest of the lesson is as previously approved.
-- Plank on two trestles, painter between them, a can on the unsupported overhang: this is exactly the Pohdinta situation. Nothing is annotated, so the answer is not given. Statics is plausible (painter's weight between supports, can on the overhang, nothing beneath it).
-- The easy-Finnish alt text (short sentences) matches the picture element by element and is in correct language; the opening question's wording is unchanged.
-- Hero is legible at 390 px and 1280 px (top captures) and carries no text.
+batch delta review: new lesson title and renamed chapter cross-references (prior lists, feedback, theory text) read in context; the names match the new titles of the target lessons, wording and Finnish unchanged otherwise, no stale old titles left in the lesson files.

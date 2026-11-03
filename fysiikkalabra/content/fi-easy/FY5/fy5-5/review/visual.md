@@ -1,16 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: e8e8246b7986df8e
+CONTENT-HASH: 68ed6284989378b6
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
 
 ## Checked
-- Captures opened: contact-1 (top, sim, fig-1 to fig-7, example), theory-1280-2.
-- Figure labels identical to the Finnish; aria-labels split into short sentences with the same content; sim legend 12 words, visible.
-- Decimal comma, \cdot, upright units; plain sentences read naturally after the two fixes.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 4
+batch delta review: renamed title and chapter cross-references only (no numbers, symbols or figures changed); fy5-7 and fy5-14 top-390 captures opened, long new titles wrap cleanly at 390 px; references read as natural Finnish and match the new titles.

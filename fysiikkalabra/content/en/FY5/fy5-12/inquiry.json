@@ -7,8 +7,8 @@
     "describe what the Fourier transform is used for in analysing sound."
   ],
   "prior": [
-    "The speed, frequency and wavelength of a wave are related by the equation $v = f\\lambda$ (chapter *Mechanical waves*)",
-    "After a gap or a small obstacle a wave spreads out in curved wavefronts, that is, it diffracts (chapter *Reflection and diffraction of waves*)"
+    "The speed, frequency and wavelength of a wave are related by the equation $v = f\\lambda$ (chapter *How waves form and travel*)",
+    "After a gap or a small obstacle a wave spreads out in curved wavefronts, that is, it diffracts (chapter *A wave meets an obstacle or a gap*)"
   ],
   "activities": [
     {
@@ -28,7 +28,7 @@
         {
           "text": "$0.68\\,\\text{m}$, because $\\lambda = \\tfrac{v}{f}$.",
           "correct": true,
-          "feedback": "Correct. From $v = f\\lambda$ we get $\\lambda = \\tfrac{v}{f} = \\tfrac{340\\,\\text{m/s}}{500\\,\\text{Hz}} = 0.68\\,\\text{m}$ (chapter *Mechanical waves*). Today you need the wavelength to compare it with the difference between the loudspeakers' distances."
+          "feedback": "Correct. From $v = f\\lambda$ we get $\\lambda = \\tfrac{v}{f} = \\tfrac{340\\,\\text{m/s}}{500\\,\\text{Hz}} = 0.68\\,\\text{m}$ (chapter *How waves form and travel*). Today you need the wavelength to compare it with the difference between the loudspeakers' distances."
         },
         {
           "text": "$1.5\\,\\text{m}$, because $\\lambda = \\tfrac{f}{v}$.",
@@ -64,7 +64,7 @@
         },
         {
           "text": "The pulses collide and bounce back towards the ends they came from.",
-          "feedback": "Waves are not objects that collide. By the principle of superposition the displacements are just added, and each pulse continues in the same direction as before. Bouncing back happens only at the end of the string, as with reflection in the chapter *Reflection and diffraction of waves*."
+          "feedback": "Waves are not objects that collide. By the principle of superposition the displacements are just added, and each pulse continues in the same direction as before. Bouncing back happens only at the end of the string, as with reflection in the chapter *A wave meets an obstacle or a gap*."
         },
         {
           "text": "The pulses merge into one wider pulse, which slowly moves on from the middle of the string.",

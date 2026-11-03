@@ -1,14 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 597b8d6223da9b0e
+CONTENT-HASH: 7b94cec5125b53a5
 
 ## Blocking
+(none)
 
 ## Polish
+- The bouncer caption says the baby's toes touch the floor; that is the realistic use, but it means the spring is not oscillating freely. Harmless as a hook.
 
 ## Checked
-- Selkokielinen versio verrattuna suomenkieliseen lukuun (kolme PASS-arviota): lesson.md, inquiry.json (25 aktiviteettia, rakenne ja avaimet identtiset), exit-ticket.json, meta.json, figures.json ja lang/fi-easy.json sims.fy5-9.
-- Kaikki luvut ja kaavat tarkistettu skriptillä: identtiset (desimaalipilkku); yksikään vaihe, vihje, virhepalaute, kriteeri tai mallivastaus ei puutu. Pitkät virkkeet on pilkottu, syy-seuraussuhteet säilyvät (amplitudin riippumattomuus, massan supistuminen heilurissa, pienen kulman ehto, epävarmuuden jakautuminen kymmenelle jaksolle).
-- Lisätyt selitykset (tasapainoasema, jousivakio "kertoo, kuinka jäykkä jousi on") ovat oikein.
-- Avaruusaseman tehtävä ja ratkaisu vastaavat suomenkielistä sellaisenaan.
-- Simulaation 19 tekstiä on kopioitu suomenkielisestä sellaisenaan; ne ovat jo lyhyitä ja selkeitä.
-- Korjattu: koe-mittauksen tilanne "Hän poikkesi heiluria noin $5^\circ$" (väärä verbi) → "Hän vei heilurin sivuun noin $5^\circ$:n kulmaan."
+batch delta review: opening illustration now shows a pendulum clock and a spring-hung baby bouncer, both oscillators the lesson treats; references to fy5-7/fy5-8 updated; feedback kx = 40 N/m x 0,050 m = 2,0 N correct. Every changed chapter reference names the renamed chapter that holds the cited content, and no old title remains.

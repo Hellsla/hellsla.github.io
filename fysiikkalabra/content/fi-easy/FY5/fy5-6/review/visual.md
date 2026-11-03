@@ -1,16 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: a2c26ebd45d9e7dd
+CONTENT-HASH: 74820ada2f4709e9
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] hero: the Earth's limb occupies the bottom strip only; the station is large and clear, no change needed. Optional: slightly more sky-black margin above the panels at 390 px.
 
 ## Checked
-- Delta (illustration only). Opened fy5-6-top-390 (fi), fy5-6-intro-1280 (fi), fy5-6-fig-1-390 in fi, en and fi-easy (same picture in all three, only rendering noise differs).
-- Hero is a flat vector scene in the figure palette on the paper tone, no text in the picture, subject in the middle third, readable at 366 px width, nothing clipped except the intended close-up crop; 16:9-ish column width, layout around it intact.
-- Alt text (fi-easy) read against the picture: it describes what is drawn, with no contradiction; language natural and consistent with the chapter's opening question.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 5
+batch delta review: renamed title and chapter cross-references only (no numbers, symbols or figures changed); fy5-7 and fy5-14 top-390 captures opened, long new titles wrap cleanly at 390 px; references read as natural Finnish and match the new titles.

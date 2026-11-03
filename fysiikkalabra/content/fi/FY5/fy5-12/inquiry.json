@@ -7,8 +7,8 @@
   "kertomaan, mihin Fourier-muunnosta käytetään äänen analysoinnissa."
  ],
  "prior": [
-  "Aallon nopeus, taajuus ja aallonpituus liittyvät toisiinsa yhtälöllä $v = f\\lambda$ (luku *Mekaaninen aaltoliike*)",
-  "Raon tai pienen esteen jälkeen aalto leviää kaarevina aaltorintamina eli diffraktoituu (luku *Aaltojen heijastuminen ja diffraktio*)"
+  "Aallon nopeus, taajuus ja aallonpituus liittyvät toisiinsa yhtälöllä $v = f\\lambda$ (luku *Aaltojen synty ja eteneminen*)",
+  "Raon tai pienen esteen jälkeen aalto leviää kaarevina aaltorintamina eli diffraktoituu (luku *Aalto kohtaa esteen tai raon*)"
  ],
  "activities": [
   {
@@ -28,7 +28,7 @@
     {
      "text": "$0{,}68\\,\\text{m}$, koska $\\lambda = \\tfrac{v}{f}$.",
      "correct": true,
-     "feedback": "Oikein. Yhtälöstä $v = f\\lambda$ saadaan $\\lambda = \\tfrac{v}{f} = \\tfrac{340\\,\\text{m/s}}{500\\,\\text{Hz}} = 0{,}68\\,\\text{m}$ (luku *Mekaaninen aaltoliike*). Tänään tarvitset aallonpituutta, kun vertaat kaiuttimien etäisyyksien erotusta siihen."
+     "feedback": "Oikein. Yhtälöstä $v = f\\lambda$ saadaan $\\lambda = \\tfrac{v}{f} = \\tfrac{340\\,\\text{m/s}}{500\\,\\text{Hz}} = 0{,}68\\,\\text{m}$ (luku *Aaltojen synty ja eteneminen*). Tänään tarvitset aallonpituutta, kun vertaat kaiuttimien etäisyyksien erotusta siihen."
     },
     {
      "text": "$1{,}5\\,\\text{m}$, koska $\\lambda = \\tfrac{f}{v}$.",
@@ -64,7 +64,7 @@
     },
     {
      "text": "Pulssit törmäävät toisiinsa ja kimpoavat takaisin kohti lähtöpäitään.",
-     "feedback": "Aallot eivät ole kappaleita, jotka törmäävät. Superpositioperiaatteen mukaan poikkeamat vain lasketaan yhteen, ja kumpikin pulssi jatkaa samaan suuntaan kuin ennenkin. Takaisin kimpoaminen tapahtuu vasta narun päässä, kuten heijastuminen luvussa *Aaltojen heijastuminen ja diffraktio*."
+     "feedback": "Aallot eivät ole kappaleita, jotka törmäävät. Superpositioperiaatteen mukaan poikkeamat vain lasketaan yhteen, ja kumpikin pulssi jatkaa samaan suuntaan kuin ennenkin. Takaisin kimpoaminen tapahtuu vasta narun päässä, kuten heijastuminen luvussa *Aalto kohtaa esteen tai raon*."
     },
     {
      "text": "Pulssit sulautuvat yhdeksi leveämmäksi pulssiksi, joka jatkaa narun keskeltä hitaasti eteenpäin.",

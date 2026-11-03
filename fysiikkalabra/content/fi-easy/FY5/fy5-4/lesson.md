@@ -1,4 +1,4 @@
-# Tasainen ympyräliike ja normaalikiihtyvyys
+# Normaalikiihtyvyys ja ympyräliikkeen liikeyhtälö
 
 > **Miksi** auto suistuu liukkaassa kaarteessa ulos tieltä?
 
@@ -90,7 +90,7 @@
 ## Ydinajatus
 
 ### Nopeuden suunta muuttuu, joten kappale kiihtyy
-Luvussa *Ympyräliike ja ratanopeus* opit, että tasaisessa ympyräliikkeessä kappale kiertää ympyrärataa vakiovauhdilla. Nopeuden suuruus eli ratanopeus $v$ pysyy samana. Nopeuden suunta kuitenkin muuttuu koko ajan, sillä nopeus $\overline{v}$ osoittaa aina radan tangentin suuntaan. Tangentti on suora, joka koskettaa rataa yhdessä pisteessä. Nopeus on vektori, eli sillä on suuruus ja suunta. Siksi myös suunnan muutos on nopeuden muutos. Kun nopeus muuttuu, kappale kiihtyy. Tasaisessa ympyräliikkeessä kappale siis kiihtyy, vaikka sen vauhti ei muutu.
+Luvussa *Ympyrärata: jaksonaika ja ratanopeus* opit, että tasaisessa ympyräliikkeessä kappale kiertää ympyrärataa vakiovauhdilla. Nopeuden suuruus eli ratanopeus $v$ pysyy samana. Nopeuden suunta kuitenkin muuttuu koko ajan, sillä nopeus $\overline{v}$ osoittaa aina radan tangentin suuntaan. Tangentti on suora, joka koskettaa rataa yhdessä pisteessä. Nopeus on vektori, eli sillä on suuruus ja suunta. Siksi myös suunnan muutos on nopeuden muutos. Kun nopeus muuttuu, kappale kiihtyy. Tasaisessa ympyräliikkeessä kappale siis kiihtyy, vaikka sen vauhti ei muutu.
 
 <svg data-fig="muutos" viewBox="0 0 600 340" role="img" aria-label="Kaksi kuvaa. Vasemmalla kappale kiertää ympyrärataa tasaisella vauhdilla. Siniset nopeusnuolet v 1 ja v 2 ovat yhtä pitkät mutta osoittavat eri suuntiin. Oikealla samat nuolet on piirretty samasta pisteestä: niiden kärkien välinen nuoli, nopeuden muutos, osoittaa kohti radan keskipistettä." style="max-width:100%;font-size:24px">
   <foreignObject x="65" y="7.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{kappaleen rata}$</div></foreignObject>

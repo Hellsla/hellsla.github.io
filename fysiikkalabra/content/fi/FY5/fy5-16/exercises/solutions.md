@@ -11,7 +11,7 @@
 ## fy5-16-L1-02
 **Annettu:** yhden puhaltimen taso $L_1 = 70\,\text{dB}$; kaksi samanlaista puhallinta
 **Kysytty:** yhteinen taso $L$ desibeleinä
-**Periaate:** Kahden lähteen intensiteetit summautuvat, eivät tasot. Kaksi yhtä voimakasta lähdettä kaksinkertaistaa intensiteetin (luku *Äänen voimakkuus*).
+**Periaate:** Kahden lähteen intensiteetit summautuvat, eivät tasot. Kaksi yhtä voimakasta lähdettä kaksinkertaistaa intensiteetin (luku *Intensiteetti ja desibeliasteikko*).
 **Kaava:** $L = L_1 + 10\,\text{dB} \cdot \lg \dfrac{2 I_1}{I_1} = L_1 + 10\,\text{dB} \cdot \lg 2$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $L = 70\,\text{dB} + 10\,\text{dB} \cdot \lg 2 = 70\,\text{dB} + 3{,}01\,\text{dB} = 73{,}01\,\text{dB}$
@@ -21,7 +21,7 @@
 ## fy5-16-L1-03
 **Annettu:** $L_1 = 88\,\text{dB}$ etäisyydellä $r_1 = 4{,}0\,\text{m}$, uusi etäisyys $r_2 = 8{,}0\,\text{m}$; pistemäinen lähde avoimessa tilassa
 **Kysytty:** taso $L_2$ etäisyydellä $r_2$
-**Periaate:** Pistemäisen lähteen intensiteetti on kääntäen verrannollinen etäisyyden neliöön, joten kaksinkertainen etäisyys antaa neljäsosan intensiteetistä. Se laskee tasoa $10\,\text{dB} \cdot \lg 4 \approx 6\,\text{dB}$ (luku *Äänen voimakkuus*).
+**Periaate:** Pistemäisen lähteen intensiteetti on kääntäen verrannollinen etäisyyden neliöön, joten kaksinkertainen etäisyys antaa neljäsosan intensiteetistä. Se laskee tasoa $10\,\text{dB} \cdot \lg 4 \approx 6\,\text{dB}$ (luku *Intensiteetti ja desibeliasteikko*).
 **Kaava:** $L_2 = L_1 - 6\,\text{dB}$, kun $r_2 = 2 r_1$
 **Muunnokset:** Ei tarvita: $r_2 : r_1 = 8{,}0\,\text{m} : 4{,}0\,\text{m} = 2$.
 **Sijoitus:** $L_2 = 88\,\text{dB} - 6\,\text{dB} = 82\,\text{dB}$
@@ -66,7 +66,7 @@
 ## fy5-16-L2-03
 **Annettu:** $L_1 = 78\,\text{dB}$ etäisyydellä $r_1 = 2{,}0\,\text{m}$, toivottu taso $L_2 = 60\,\text{dB}$; pistemäinen lähde avoimessa tilassa
 **Kysytty:** etäisyys $r_2$ metreinä
-**Periaate:** Avoimessa tilassa jokainen etäisyyden kaksinkertaistuminen laskee tasoa $6\,\text{dB}$, koska intensiteetti pienenee neljäsosaan (luku *Äänen voimakkuus*). Lasketaan, montako kaksinkertaistumista tarvitaan.
+**Periaate:** Avoimessa tilassa jokainen etäisyyden kaksinkertaistuminen laskee tasoa $6\,\text{dB}$, koska intensiteetti pienenee neljäsosaan (luku *Intensiteetti ja desibeliasteikko*). Lasketaan, montako kaksinkertaistumista tarvitaan.
 **Kaava:** $k = \dfrac{L_1 - L_2}{6\,\text{dB}}$ ja $r_2 = 2^{\,k} \cdot r_1$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $k = \dfrac{78\,\text{dB} - 60\,\text{dB}}{6\,\text{dB}} = 3$, $r_2 = 2^3 \cdot 2{,}0\,\text{m} = 16\,\text{m}$
