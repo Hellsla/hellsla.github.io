@@ -1,23 +1,18 @@
-VERDICT: FAIL
-CONTENT-HASH: abb80c1fb9ef4479
+VERDICT: PASS
+CONTENT-HASH: e9829a16b1879c5a
 
 ## Blocking
-- content/fi/FY8/fy8-10/lesson.md:178 — A: "Neljän numeron vakioilla tulos olisi 931,6 MeV" is wrong as stated. With four-figure constants 1,661·10⁻²⁷ kg, 2,998·10⁸ m/s, 1,602·10⁻¹⁹ J the result is 931,9 MeV. The 931,6 in lesson-answers.py:61 uses 1,6605·10⁻²⁷ kg, which has five figures. — fix: write 931,9 MeV, or name the constants actually used.
-- content/fi/FY8/fy8-10/lesson.md:276 — B: "elektronien määrä on molemmin puolin sama … beeta miinus -hajoamisessa". This holds only if the emitted electron is not added on its own: the daughter atom (Z+1 electrons) already contains it. A student who adds m_e is off by 0,511 MeV. — fix: add "(beeta miinus -hajoamisessa syntyvän elektronin massaa ei lisätä erikseen)".
-- content/fi/FY8/fy8-10/inquiry.json:376 (tarkistus-3 criterion) — A: "ydinreaktiossa noin 10⁻³ tai enemmän". A reaction's relative mass change is 1,9·10⁻⁵ in the lesson's own U-238 alpha decay and about 10⁻³ in fission. The 0,8 % in the model answer (:373) is helium-4's mass defect (binding), not a reaction's mass change. — fix: "ydinreaktiossa noin 10⁻⁵–10⁻³, miljoonia kertoja enemmän". In the model answer, call the 0,8 % the binding mass defect, or cite the D+D → He-4 reaction (0,64 %).
 
 ## Polish
-- lessons/FY8/fy8-10/lesson-answers.py:1148 (NUCLIDES, same in sim.js) — From memory I cannot confirm W-184 183,950933 (I recall …931), Au-197 196,966570 (…569), U-235 235,043928 (…930) or U-238 238,050787 (…788). They may be off by up to 2 µu. The effect is ≤ 1·10⁻⁵ MeV per nucleon, so no displayed number changes. — check against the AME2020 file when online.
-- content/fi/FY8/fy8-10/lesson.md:178 — "pieni pyöristys näkyy jo neljännessä numerossa" will follow whatever fix is made above. Make the sentence say that four-figure constants shift the fourth digit.
+- lessons/FY8/fy8-10/lesson-answers.py (NUCLIDES, same in sim.js) — still carried from round 1: W-184, Au-197, U-235 and U-238 may be off by up to 2 µu from AME2020. The effect is ≤ 1·10⁻⁵ MeV per nucleon, so no displayed number changes. — check against the AME2020 file when online.
 
 ## Checked
-- All 37 atomic masses in lesson-answers.py match sim.js exactly. 33 of them agree with my AME2020 recollection to ≤ 0,5 µu (H-1, n, H-2, He-3/4, Fe-56, Ni-62, Th-234, Po-210, Pb-206 among them).
-- 1 u → MeV: 1,66054e-27 · (2,99792e8)² = 1,49241e-10 J; ÷ 1,602177e-19 = 931,49 MeV ≈ 931,5. Every step is right, and c² cancels correctly in the substitution.
-- Every E_B/A in the feedback, the model answer and sim-spec (1,112; 7,074; 5,607; 7,680; 7,976; 8,790; 8,795; 8,554; 7,868; 7,570) recomputes exactly. U-238 E_B is 1801,7 MeV and Fe-56 is 492,3 MeV.
-- U-238 alpha decay: 0,004583 u, 4,27 MeV (literature 4,270). Po-210 transfer task: 5,408 MeV, alpha share 5,30 MeV (measured 5,304). The mistake values 3734 and −5,408 are right.
-- Etsi virhe: 92,16 MeV, and the wrong result 8,3·10¹⁸ is right. The unit argument is right.
-- tarkistus-2: exactly one option releases energy. The curve values in the feedback are right.
-- Carbon burning: 4,4·10⁻¹² kg, ratio 1,0·10⁻¹⁰.
-- Exit ticket: Bi-209 7,85 MeV and Ca-40 8,55 MeV per nucleon. The table gives 1640,2 MeV and 342,06 MeV.
-- Electron binding: under 1 MeV total even for U, so under 10⁻³ of E_B (type C). The surface and Coulomb causes on the curve are type C.
-- sim.js computes Δm = Z m_H + N m_n − m, rounds to µu and uses ×931,5. simState carries dm, EB and EBA for both experiments. The limits are stated in the model box.
+- Round-1 blocker 1, lesson.md:186: four-figure constants 1,661e-27 · (2,998e8)² / 1,602e-19 give 931,90 MeV, now stated as 931,9. "neljättä numeroa" is right (931,5 vs 931,9). Six figures give 1,49241e-10 J, 9,3149e8 eV and 931,49 MeV.
+- Round-1 blocker 2, lesson.md:284: β⁻ with atomic masses now says the electron is not added separately, and the reason is right (the daughter atom has one more electron). β⁺ is not claimed.
+- Round-1 blocker 3, inquiry.json:373/376: U-238 alpha decay 0,004583/238,050787 = 1,93·10⁻⁵. U-235 fission 200 MeV / (236,05 u · 931,5) = 9,1·10⁻⁴. Against carbon burning 9,95·10⁻¹¹ these are 1,9·10⁵ and 9·10⁶ times larger, so "satojatuhansia tai miljoonia" is right. The model answer and the criterion agree. The 0,8 % at lesson.md Ydinajatus is now named a binding mass defect (He 0,76 %, U-238 0,81 %).
+- Δm(He-4) 0,030377 u, E_B 28,296 MeV, 7,074 MeV per nucleon. U-238 E_B 1801,7 MeV, Fe-56 492,26 MeV, Ni-62 8,795 MeV.
+- U-238 α Q 4,269 MeV. Po-210 Q 5,408 MeV, and the mistakes 3734 and −5,408 are right. Etsi virhe gives 92,16 MeV.
+- tarkistus-2: exactly one option is correct. A≈30 is about 8,5 MeV (Si-28 8,45), and A≈120 is 8,50 (Sn-120).
+- Exit ticket: 7,85 and 8,55 MeV per nucleon. The exit ticket and the summary agree with the theory.
+- lesson-answers.py adds u238-alpha-rel and fission-rel. Both are recomputed and right.
+- No new error found in the changed text.
