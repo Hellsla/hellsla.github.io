@@ -1,0 +1,23 @@
+{
+  "id": "fy8-7",
+  "course": "FY8",
+  "title": "Lasers and quantum structures",
+  "goals": [
+    "LOPS FY8: technology based on quantisation: the laser and quantum structures",
+    "Clarification: the operation of the laser (stimulated emission, population inversion); quantum structures as nanoscale structures through applications such as solar cells and quantum computers; tunnelling as optional"
+  ],
+  "prerequisites": [
+    "fy8-6"
+  ],
+  "glossary": [
+    "laser",
+    "stimulated emission",
+    "population inversion",
+    "quantum dot",
+    "quantum structure",
+    "tunnelling"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

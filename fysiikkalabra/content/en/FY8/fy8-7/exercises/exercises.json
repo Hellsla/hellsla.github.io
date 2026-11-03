@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy8-7-L1-01",
+      "level": 1,
+      "text": "The wavelength of the red light of a helium–neon laser is $633\\,\\text{nm}$. Calculate the energy of one laser photon in electronvolts ($h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$).",
+      "answer": 1.96,
+      "unit": "eV",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-7-L1-02",
+      "level": 1,
+      "text": "Optical fibre links use laser diodes whose light has the wavelength $1550\\,\\text{nm}$. Calculate the energy of one photon in electronvolts ($h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$).",
+      "answer": 0.8,
+      "unit": "eV",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-7-L1-03",
+      "level": 1,
+      "text": "The energy difference of the levels of the laser transition of a ruby laser is $1.79\\,\\text{eV}$. Calculate the wavelength of the laser light in nanometres ($h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$).",
+      "answer": 693,
+      "unit": "nm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-7-L1-04",
+      "level": 1,
+      "text": "The energy of one light pulse of a pulsed laser is $3.0\\,\\text{mJ}$, and the wavelength of the light is $1064\\,\\text{nm}$. How many photons are there in the pulse ($h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^{8}\\,\\text{m/s}$)?",
+      "answer": 1.6e+16,
+      "unit": "photons",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-7-L1-05",
+      "level": 1,
+      "text": "A laser emits $4.0 \\cdot 10^{15}$ photons per second, and the energy of each photon is $2.33\\,\\text{eV}$. Calculate the power of the laser in milliwatts ($1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$).",
+      "answer": 1.5,
+      "unit": "mW",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy8-7-L2-01",
+      "level": 2,
+      "text": "A neodymium laser is pumped with a laser diode whose light has the wavelength $808\\,\\text{nm}$, and the laser emits light with the wavelength $1064\\,\\text{nm}$. Each pump photon produces at most one laser photon. At most what percentage of the energy of a pump photon can end up as the energy of a laser photon?",
+      "answer": 75.9,
+      "unit": "%",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-7-L2-02",
+      "level": 2,
+      "text": "The wavelength of a red laser pointer is $650\\,\\text{nm}$ and that of a violet one $405\\,\\text{nm}$. The power of both is $5.0\\,\\text{mW}$. How many times more photons per second does the red laser pointer emit than the violet one?",
+      "answer": 1.6,
+      "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-7-L2-03",
+      "level": 2,
+      "text": "A quantum dot with a diameter of $6.0\\,\\text{nm}$ emits light with the wavelength $620\\,\\text{nm}$. The photon energy of a smaller quantum dot made of the same material is $0.35\\,\\text{eV}$ greater. Calculate the wavelength of the light of the smaller dot in nanometres ($h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$).",
+      "answer": 528,
+      "unit": "nm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-7-L2-04",
+      "level": 2,
+      "text": "One pulse of a pulsed laser has $2.7 \\cdot 10^{17}$ photons with the wavelength $1064\\,\\text{nm}$. The duration of the pulse is $10\\,\\text{ns}$. Calculate the average power of the pulse in megawatts ($h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^{8}\\,\\text{m/s}$).",
+      "answer": 5.0,
+      "unit": "MW",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy8-7-L3-01",
+      "level": 3,
+      "text": "The rod of a ruby laser has $1.0 \\cdot 10^{19}$ chromium ions, and the laser transition ends in the ground state. The wavelength of the green light of the pump lamp is $550\\,\\text{nm}$, and each absorbed pump photon lifts one ion to the upper laser level. Estimate how much energy of the pump light the ions must absorb at least for a population inversion to appear. Assume that the ions do not have time to decay during the pumping. Give the answer in joules ($h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^{8}\\,\\text{m/s}$).",
+      "answer": 1.8,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-7-L3-02",
+      "level": 3,
+      "text": "In a green laser pointer, the light of an infrared laser diode ($808\\,\\text{nm}$, power $1.0\\,\\text{W}$) pumps a crystal that emits laser light with the wavelength $1064\\,\\text{nm}$. A second crystal always combines two $1064\\,\\text{nm}$ photons into one $532\\,\\text{nm}$ photon. At most how many green photons per second can the laser pointer emit, when each pump photon produces at most one $1064\\,\\text{nm}$ photon ($h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^{8}\\,\\text{m/s}$)?",
+      "answer": 2.03e+18,
+      "unit": "photons",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-7-L3-03",
+      "level": 3,
+      "text": "The energy difference of the two states of a superconducting qubit corresponds to a photon with the frequency $5.0\\,\\text{GHz}$. How many times greater is the energy of a photon of red light ($650\\,\\text{nm}$) than the energy difference of the states of the qubit ($c = 2.998 \\cdot 10^{8}\\,\\text{m/s}$)?",
+      "answer": 92200.0,
+      "unit": "",
+      "tolerance": 0.02
+    }
+  ]
+}
