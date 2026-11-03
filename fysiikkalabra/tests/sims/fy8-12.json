@@ -1,0 +1,176 @@
+[
+ {
+  "expr": "(() => { const S=window.simState; return S.lahde==='gamma' && S.aine==='lyijy' && S.n===0 && S.pulssit===null && S.running===0 && S.laskuri===0 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "on load: gamma source, lead, no plates, no count yet, not running (must run before any setup)"
+ },
+ {
+  "expr": "(() => { const R=[...document.querySelectorAll('#sim-root input[type=range]')]; return R.length===1 && R[0].min==='0' && R[0].max==='20' && R[0].step==='1' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "one slider: plates n = 0–20 in steps of 1"
+ },
+ {
+  "expr": "(() => { const L=[...document.querySelectorAll('#sim-root select')].map(s=>[...s.options].map(o=>o.value).join(',')); return L.length===3 && L[0]==='tausta,alfa,beeta,gamma' && L[1]==='paperi,alumiini,lyijy' && L[2]==='0.5,1,5' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "three selects: source none/alpha/beta/gamma, absorber paper/aluminium/lead, speed hidas 0,5 · normaali 1 · nopea 5 simulated s per s"
+ },
+ {
+  "expr": "(() => { const k=[...document.getElementById('sim-root').children].map(e=>e.tagName==='CANVAS'?'canvas':e.className); const c=document.querySelector('#sim-root .controls'); return k.indexOf('canvas')<k.indexOf('controls') && k.indexOf('controls')<k.indexOf('readout') && c.firstElementChild.tagName==='BUTTON' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "DOM order canvas, controls (main button first), readout"
+ },
+ {
+  "expr": "(() => { const n=document.querySelectorAll('#sim-root p.note'); return !document.querySelector('#sim-root details') && n.length===1 && n[0].textContent.trim().split(/\\s+/).length<=15 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "no Lisätietoja box; one legend line of at most 15 words"
+ },
+ {
+  "expr": "(() => { const P=window.simAdapter && window.simAdapter.params; return P && Object.keys(P).sort().join(',')==='aine,lahde,n' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "adapter declares lahde, aine and n"
+ },
+ {
+  "expr": "(() => { const c=document.querySelector('#sim-root canvas'); return c.width===600 && c.height===400 ? 1 : 0; })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "canvas 600x400"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const S=[...document.querySelectorAll('#sim-root select')]; const R=document.querySelector('#sim-root input[type=range]'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'alfa'); I(S[1],'paperi'); I(R,0); I(S[2],'5');",
+  "expr": "window.simState.odotus",
+  "expected": 604,
+  "tol": 0.001,
+  "note": "no absorber: every source gives on average 600 + 4 background pulses in 10 s"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const S=[...document.querySelectorAll('#sim-root select')]; const R=document.querySelector('#sim-root input[type=range]'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'beeta'); I(S[1],'paperi'); I(R,20); I(S[2],'5');",
+  "expr": "window.simState.T",
+  "expected": 0.347844,
+  "tol": 0.001,
+  "note": "20 sheets (2 mm) of paper: beta T = e^(-6,6 · 0,16) = 0,348 (lesson-answers beta-paper-20)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const S=[...document.querySelectorAll('#sim-root select')]; const R=document.querySelector('#sim-root input[type=range]'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'beeta'); I(S[1],'alumiini'); I(R,1); I(S[2],'5');",
+  "expr": "(() => { const S=window.simState; return S.T*600 })()",
+  "expected": 100.980725,
+  "tol": 0.01,
+  "note": "beta through 1 mm aluminium: 600 · e^(-6,6 · 0,27) = 101 (lesson-answers beta-al-1)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const S=[...document.querySelectorAll('#sim-root select')]; const R=document.querySelector('#sim-root input[type=range]'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'gamma'); I(S[1],'lyijy'); I(R,11); I(S[2],'5');",
+  "expr": "window.simState.T",
+  "expected": 0.25,
+  "tol": 0.001,
+  "note": "gamma through 11 mm lead = 2 d½: T = 1/4 (lesson-answers two-layers)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const S=[...document.querySelectorAll('#sim-root select')]; const R=document.querySelector('#sim-root input[type=range]'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'gamma'); I(S[1],'alumiini'); I(R,5); I(S[2],'5');",
+  "expr": "(() => { const S=window.simState; return S.d===5 && Math.abs(S.T-Math.pow(0.5,5/34))<1e-12 && S.pulssit===null ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "thickness d = n mm for aluminium; changing a control clears the count"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const S=[...document.querySelectorAll('#sim-root select')]; const R=document.querySelector('#sim-root input[type=range]'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'alfa'); I(S[1],'paperi'); I(R,1); I(S[2],'5'); document.querySelector('#sim-root .controls button').click();",
+  "expr": "(() => new Promise((ok) => { const t0=Date.now(); const f=() => { const S=window.simState; if (S.pulssit!==null) ok(S.pulssit); else if (Date.now()-t0>8000) ok(-1); else setTimeout(f,100); }; f(); }))()",
+  "expected": 5,
+  "tol": 0,
+  "note": "koe 1: alpha behind one sheet of paper: 5 pulses, only background (lesson-answers koe1-alfa)"
+ },
+ {
+  "expr": "(() => { const S=window.simState; return S.d===0.1 && S.T===0 && S.running===0 && S.laskuri===S.pulssit && S.mittaus===1 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "one sheet is 0,1 mm; T = 0; the finished count equals the counter"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const S=[...document.querySelectorAll('#sim-root select')]; const R=document.querySelector('#sim-root input[type=range]'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'beeta'); I(S[1],'paperi'); I(R,1); I(S[2],'5'); document.querySelector('#sim-root .controls button').click();",
+  "expr": "(() => new Promise((ok) => { const t0=Date.now(); const f=() => { const S=window.simState; if (S.pulssit!==null) ok(S.pulssit); else if (Date.now()-t0>8000) ok(-1); else setTimeout(f,100); }; f(); }))()",
+  "expected": 550,
+  "tol": 0,
+  "note": "koe 1: beta behind paper: 550 (koe1-beeta)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const S=[...document.querySelectorAll('#sim-root select')]; const R=document.querySelector('#sim-root input[type=range]'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'gamma'); I(S[1],'paperi'); I(R,1); I(S[2],'5'); document.querySelector('#sim-root .controls button').click();",
+  "expr": "(() => new Promise((ok) => { const t0=Date.now(); const f=() => { const S=window.simState; if (S.pulssit!==null) ok(S.pulssit); else if (Date.now()-t0>8000) ok(-1); else setTimeout(f,100); }; f(); }))()",
+  "expected": 577,
+  "tol": 0,
+  "note": "koe 1: gamma behind paper: 577 (koe1-gamma)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const S=[...document.querySelectorAll('#sim-root select')]; const R=document.querySelector('#sim-root input[type=range]'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'beeta'); I(S[1],'alumiini'); I(R,5); I(S[2],'5'); document.querySelector('#sim-root .controls button').click();",
+  "expr": "(() => new Promise((ok) => { const t0=Date.now(); const f=() => { const S=window.simState; if (S.pulssit!==null) ok(S.pulssit); else if (Date.now()-t0>8000) ok(-1); else setTimeout(f,100); }; f(); }))()",
+  "expected": 4,
+  "tol": 0,
+  "note": "koe 2: beta behind 5 mm aluminium: 4, background only (koe2-beeta)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const S=[...document.querySelectorAll('#sim-root select')]; const R=document.querySelector('#sim-root input[type=range]'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'gamma'); I(S[1],'alumiini'); I(R,5); I(S[2],'5'); document.querySelector('#sim-root .controls button').click();",
+  "expr": "(() => new Promise((ok) => { const t0=Date.now(); const f=() => { const S=window.simState; if (S.pulssit!==null) ok(S.pulssit); else if (Date.now()-t0>8000) ok(-1); else setTimeout(f,100); }; f(); }))()",
+  "expected": 535,
+  "tol": 0,
+  "note": "koe 2: gamma behind 5 mm aluminium: 535 (koe2-gamma)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const S=[...document.querySelectorAll('#sim-root select')]; const R=document.querySelector('#sim-root input[type=range]'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'gamma'); I(S[1],'lyijy'); I(R,0); I(S[2],'5'); document.querySelector('#sim-root .controls button').click();",
+  "expr": "(() => new Promise((ok) => { const t0=Date.now(); const f=() => { const S=window.simState; if (S.pulssit!==null) ok(S.pulssit); else if (Date.now()-t0>8000) ok(-1); else setTimeout(f,100); }; f(); }))()",
+  "expected": 590,
+  "tol": 0,
+  "note": "koe 3: gamma, no lead: 590 (koe3-0)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const S=[...document.querySelectorAll('#sim-root select')]; const R=document.querySelector('#sim-root input[type=range]'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'gamma'); I(S[1],'lyijy'); I(R,5); I(S[2],'5'); document.querySelector('#sim-root .controls button').click();",
+  "expr": "(() => new Promise((ok) => { const t0=Date.now(); const f=() => { const S=window.simState; if (S.pulssit!==null) ok(S.pulssit); else if (Date.now()-t0>8000) ok(-1); else setTimeout(f,100); }; f(); }))()",
+  "expected": 332,
+  "tol": 0,
+  "note": "koe 3: gamma, 5 mm lead: 332 (koe3-5)"
+ },
+ {
+  "setup": "document.querySelector('#sim-root .controls button').click();",
+  "expr": "(() => new Promise((ok) => { const t0=Date.now(); const f=() => { const S=window.simState; if (S.pulssit!==null && S.mittaus===2) ok(S.pulssit); else if (Date.now()-t0>8000) ok(-1); else setTimeout(f,100); }; f(); }))()",
+  "expected": 344,
+  "tol": 0,
+  "note": "a second count at the same setting differs: 344 (koe3-5-k2)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const S=[...document.querySelectorAll('#sim-root select')]; const R=document.querySelector('#sim-root input[type=range]'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'gamma'); I(S[1],'lyijy'); I(R,10); I(S[2],'5'); document.querySelector('#sim-root .controls button').click();",
+  "expr": "(() => new Promise((ok) => { const t0=Date.now(); const f=() => { const S=window.simState; if (S.pulssit!==null) ok(S.pulssit); else if (Date.now()-t0>8000) ok(-1); else setTimeout(f,100); }; f(); }))()",
+  "expected": 175,
+  "tol": 0,
+  "note": "koe 3: gamma, 10 mm lead: 175 (koe3-10)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const S=[...document.querySelectorAll('#sim-root select')]; const R=document.querySelector('#sim-root input[type=range]'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'gamma'); I(S[1],'lyijy'); I(R,20); I(S[2],'5'); document.querySelector('#sim-root .controls button').click();",
+  "expr": "(() => new Promise((ok) => { const t0=Date.now(); const f=() => { const S=window.simState; if (S.pulssit!==null) ok(S.pulssit); else if (Date.now()-t0>8000) ok(-1); else setTimeout(f,100); }; f(); }))()",
+  "expected": 57,
+  "tol": 0,
+  "note": "koe 3: gamma, 20 mm lead: 57 (koe3-20)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const S=[...document.querySelectorAll('#sim-root select')]; const R=document.querySelector('#sim-root input[type=range]'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'tausta'); I(S[1],'lyijy'); I(R,0); I(S[2],'5'); document.querySelector('#sim-root .controls button').click();",
+  "expr": "(() => new Promise((ok) => { const t0=Date.now(); const f=() => { const S=window.simState; if (S.pulssit!==null) ok(S.pulssit); else if (Date.now()-t0>8000) ok(-1); else setTimeout(f,100); }; f(); }))()",
+  "expected": 3,
+  "tol": 0,
+  "note": "no source: background only, 3 pulses in this count (mean 4 in 10 s)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const S=[...document.querySelectorAll('#sim-root select')]; const R=document.querySelector('#sim-root input[type=range]'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'gamma'); I(S[1],'lyijy'); I(R,0); I(S[2],'1'); document.querySelector('#sim-root .controls button').click();",
+  "expr": "(() => new Promise((ok) => setTimeout(() => { const S=window.simState; ok(S.running===1 && S.t>0 && S.t<10 && S.pulssit===null ? 1 : 0); }, 600)))()",
+  "expected": 1,
+  "tol": 0,
+  "note": "Mittaa runs the 10 s count; the result appears only when it is finished"
+ },
+ {
+  "setup": "const R=document.querySelector('#sim-root input[type=range]'); R.value=3; R.dispatchEvent(new Event('input',{bubbles:true}));",
+  "expr": "(() => { const S=window.simState; return S.running===0 && S.pulssit===null && S.laskuri===0 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "changing a control during a count stops and clears it"
+ }
+]
