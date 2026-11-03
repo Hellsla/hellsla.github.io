@@ -4,7 +4,7 @@
   "learn": [
     "laskemaan kaiun kulkuajasta, kuinka syvällä rajapinta on, ja lukemaan ultraäänilaitteen kaikukäyrää.",
     "selittämään, miten ultraäänen taajuus vaikuttaa kuvan tarkkuuteen ja siihen, kuinka syvälle kuva ulottuu.",
-    "laskemaan, kuinka kaukana maanjäristys oli, kun tiedät P-aallon ja S-aallon saapumisaikojen eron."
+    "laskemaan maanjäristyksen etäisyyden P-aallon ja S-aallon saapumisaikojen erosta."
   ],
   "prior": [
     "Aallon nopeus, taajuus ja aallonpituus liittyvät toisiinsa yhtälöllä $v = f\\lambda$, ja aalto voi olla poikittainen tai pitkittäinen (luku *Mekaaninen aaltoliike*)",
