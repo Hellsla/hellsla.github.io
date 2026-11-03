@@ -12,10 +12,18 @@
    - Where the reading is (teacher 2026-11-03): the block being read is tinted and scrolled into view, the sentence is
      highlighted (CSS Custom Highlight API, so the page is not changed) and, where the voice reports word boundaries,
      the word too. A browser without the Highlight API shows the block only.
-   - Controls: a bar fixed at the bottom while reading (previous sentence, pause/continue, next sentence, stop, speed
-     hidas · normaali · nopea, remembered on this device), Esc stops. Pause is cancel-and-restart of the sentence: the
-     browsers' own pause/resume is unreliable on Android. A click on a paragraph while the bar is open reads from there.
-   - Start: from the top of the page, or, when the page has been scrolled, from the first block on the screen. */
+   - What a lesson reads (teacher 2026-11-03, the progress bar brief): on a lesson page only Pohdinta and
+     Teoriatiivistelmä; no task, hint, model answer or solution, even inside those stages. Other pages read <main>.
+   - A formula may carry its own spoken form: data-speech="sigma F on yhtä kuin m kertaa a" on the formula or an
+     element around it is read instead of the formula (texSpeech is used where there is none).
+   - Controls (teacher 2026-11-03): one Kuuntele / Tauko button (text and icon, aria-pressed) at the right end of the
+     stage bar (nav.toc), and beside it a menu for the speed (0,8 · 1 · 1,25, remembered on this device) and, for the
+     neural voice, Nainen / Mies. The button is shown only when a voice for the page's language is there. Esc stops.
+     Pause is cancel-and-restart of the sentence: the browsers' own pause/resume is unreliable on Android. A click on
+     a stage in the bar moves the reading there (to the next stage that is read, paused, when that one is not), a
+     click on a paragraph while reading reads from there, and the stage being read is marked in the bar (event
+     fl:reading to lesson.js).
+   - Start: from the top, or, when the page has been scrolled, from the first block that is read below the bar. */
 (() => {
   const synth = window.speechSynthesis && typeof SpeechSynthesisUtterance === 'function' ? window.speechSynthesis : null;
   const SCRIPT = document.currentScript;
@@ -219,7 +227,10 @@
   const BLOCK = 'h1,h2,h3,h4,h5,p,li,dt,dd,figcaption,caption,th,td,label,legend,output,.katex-display';
   const SKIP = 'svg,script,style,noscript,template,button,input,select,textarea,summary,nav,.ra-ui,#sim-root,.sim-wrap,.toc,.sr-only,.visually-hidden,[aria-hidden="true"]';
   const isBlock = (el) => el.nodeType === 1 && el.matches(BLOCK);
+  const SCOPE = main.querySelector('section.stage#herata, section.stage#selita') ? '#herata, #selita' : null;
+  const NOT_READ = '.activity:not(.act-hook):not(.act-theory), details.opt, details.answer, details.hint, .hints, .feedback, .sol-step, .example, form, fieldset, .photo-credit';
   function readable(el) {
+    if (SCOPE && (!el.closest(SCOPE) || el.closest(NOT_READ))) return false;
     if (el.closest(SKIP) && !el.matches('.katex-display')) return false;
     if (el.matches('.katex-display') && el.parentElement && el.parentElement.closest(SKIP)) return false;
     for (let d = el.closest('details:not([open])'); d; d = d.parentElement && d.parentElement.closest('details:not([open])')) {
@@ -242,6 +253,11 @@
       for (const ch of node.childNodes) {
         if (ch.nodeType === 3) { if (ch.data) { segs.push({ a: text.length, b: text.length + ch.data.length, node: ch }); text += ch.data.replace(/\s/g, ' '); } continue; }
         if (ch.nodeType !== 1) continue;
+        if (ch.hasAttribute('data-speech')) {
+          const w = ch.getAttribute('data-speech').trim();
+          if (w) { text += ' '; segs.push({ a: text.length, b: text.length + w.length, el: ch }); text += w + ' '; }
+          continue;
+        }
         if (ch.classList.contains('katex')) {
           const w = mathText(ch);
           if (w) { text += ' '; segs.push({ a: text.length, b: text.length + w.length, el: ch }); text += w + ' '; }
@@ -255,7 +271,11 @@
         if (apart) text += ' ';
       }
     };
-    if (el.matches('.katex-display')) { const k = el.querySelector('.katex'); if (k) { const w = mathText(k); segs.push({ a: 0, b: w.length, el: k }); text = w; } }
+    if (el.matches('.katex-display')) {
+      const ds = el.closest('[data-speech]') || el.querySelector('[data-speech]'), k = el.querySelector('.katex');
+      if (ds) { const w = ds.getAttribute('data-speech').trim(); segs.push({ a: 0, b: w.length, el: k || el }); text = w; }
+      else if (k) { const w = mathText(k); segs.push({ a: 0, b: w.length, el: k }); text = w; }
+    }
     else walk(el);
     return { text, segs };
   }
@@ -501,15 +521,14 @@
     stopAudio() { if (this.src) { const s = this.src; this.src = null; try { s.stop(); } catch (e) { /* already stopped */ } } },
   };
   function loadNote() {
-    if (neural.ep || neural.failed || !dockShown) return;
-    ui.note.textContent = msg('ra_loading').replace('{{p}}', String(Math.round(neural.progress * 100)));
-    ui.note.hidden = false;
+    if (neural.ep || neural.failed || !cur) return;
+    showNote(msg('ra_loading').replace('{{p}}', String(Math.round(neural.progress * 100))));
   }
   let voiceChoice = 'female';
   try { const v = localStorage.getItem('fl-ra-voice'); if (VOICE_ID[v] != null) voiceChoice = v; } catch (e) { /* no storage */ }
 
   /* ---------- state ---------- */
-  let cur = null, si = 0, playing = false, token = 0, utter = null, dockShown = false;
+  let cur = null, si = 0, playing = false, token = 0, utter = null;
   const RATES = [0.8, 1, 1.25];
   let rate = Number(S.rate) || 1;
   try { const r = Number(localStorage.getItem('fl-ra-rate')); if (RATES.includes(r)) rate = r; } catch (e) { /* no storage */ }
@@ -546,12 +565,21 @@
       const r = rangeOf(word[0], word[1]); if (r) CSS.highlights.set('ra-word', new Highlight(r));
     }
   }
-  function mark(el) {
+  const toc = document.querySelector('nav.toc');
+  let told = null;
+  function tellStage(el) {                         // lesson.js marks the stage being read in the bar
+    const id = el && window.flStageOf ? window.flStageOf(el) : null;
+    if (id === told) return;
+    told = id; document.dispatchEvent(new CustomEvent('fl:reading', { detail: { id } }));
+  }
+  function mark(el, noScroll) {
     document.querySelectorAll('.ra-on').forEach((x) => x.classList.remove('ra-on'));
     if (!el) return;
     el.classList.add('ra-on');
-    const r = el.getBoundingClientRect(), dock = ui.dock.getBoundingClientRect();
-    const bottom = (dockShown ? dock.top : window.innerHeight) - 16, top = 80;
+    if (playing) tellStage(el);
+    if (noScroll) return;
+    const r = el.getBoundingClientRect();
+    const bottom = window.innerHeight - 16, top = (toc && getComputedStyle(toc).position === 'sticky' ? toc.getBoundingClientRect().bottom : 0) + 8;
     if (r.top < top || r.bottom > bottom) {
       const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
       el.scrollIntoView({ block: r.height > bottom - top ? 'start' : 'center', behavior: reduce ? 'auto' : 'smooth' });
@@ -591,12 +619,14 @@
     peekNext(3).forEach((n) => { if (useNeural(langOf(n.el))) neural.synth(n.text, langOf(n.el).slice(0, 2), VOICE_ID[voiceChoice], neuralSpeed()).catch(() => {}); });
     job.then((d) => {
       if (my !== token || !playing) return;
-      if (!ui.note.dataset.keep) ui.note.hidden = true;
+      if (!ui.note.dataset.keep) showNote(null);
       neural.play(d, () => { if (my !== token || !playing) return; si++; speakSentence(); });
     }, (err) => {
       if (my !== token) return;
       if (neural.failed) {                         // the model did not load: the device's own voice reads on
-        ui.note.textContent = msg('ra_fallback'); ui.note.hidden = false; ui.note.dataset.keep = '1'; ui.voiceRow.hidden = true;
+        ui.voiceRow.hidden = true;
+        if (!haveVoice()) { stop(); offer(); showNote(msg('ra_no_lang_voice')); return; }
+        showNote(msg('ra_fallback')); ui.note.dataset.keep = '1';
         if (playing) speakSentence();
       } else if (playing && String(err && err.message) !== 'skipped') { si++; speakSentence(); }
     });
@@ -607,7 +637,6 @@
     u.rate = rate;
     const v = voiceFor(u.lang);
     if (v) u.voice = v;
-    if (!v && voices.length) { ui.note.textContent = msg('ra_no_voice'); ui.note.hidden = false; }
     u.onboundary = (e) => {
       if (my !== token || e.name && e.name !== 'word') return;
       const at = a + e.charIndex;
@@ -629,64 +658,73 @@
   function hush() { token++; if (synth) synth.cancel(); neural.stopAudio(); neural.keep(); }
   function play() {
     if (!cur) {
-      let from = null;
-      if (window.scrollY > 300) {
-        const all = candidates();
-        const vis = all.find((el) => { const r = el.getBoundingClientRect(); return r.top >= 60 && r.top < window.innerHeight - 80 && readable(el); });
-        if (vis) { const k = all.indexOf(vis); from = k > 0 ? all[k - 1] : null; cur = nextBlock(from, 1); }
+      if (window.scrollY > 300) {                   // scrolled: from the first block that is read below the bar
+        const all = candidates(), line = (toc ? toc.getBoundingClientRect().bottom : 0) + 4;
+        const vis = all.find((el) => el.getBoundingClientRect().top >= line && readable(el));
+        if (vis) { const k = all.indexOf(vis); cur = nextBlock(k > 0 ? all[k - 1] : null, 1); }
       }
       if (!cur) cur = nextBlock(null, 1);
       if (!cur) return;
       si = 0;
     }
     if (neural.ok && !neural.failed) neural.start();
-    playing = true; showDock(true); render(); mark(cur.el);
+    playing = true; render(); mark(cur.el);
     hush(); speakSentence();
   }
-  function pause() { playing = false; hush(); render(); }
+  function pause() { playing = false; hush(); render(); tellStage(null); }
   function stop() {
-    playing = false; hush(); cur = null; si = 0; mark(null); paint(null); showDock(false); render();
-    ui.start.focus({ preventScroll: true });
+    playing = false; hush(); cur = null; si = 0; mark(null); paint(null); showNote(null); render(); tellStage(null);
   }
-  function finish() { playing = false; hush(); cur = null; si = 0; mark(null); paint(null); showDock(false); render(); }
-  function step(d) {
-    if (!cur) return;
-    hush(); si += d;
-    if (si < 0) { const n = nextBlock(cur.el, -1); if (n) { cur = n; si = n.sents.length - 1; mark(cur.el); } else si = 0; }
-    else if (si >= cur.sents.length) { const n = nextBlock(cur.el, 1); if (!n) { si = cur.sents.length - 1; } else { cur = n; si = 0; mark(cur.el); } }
-    if (playing) speakSentence(); else paint(null);
+  function finish() { stop(); }
+  // a click on a stage in the bar moves the reading there; a stage that is not read moves it to the next one, paused
+  function jumpTo(t) {
+    if (!cur || !t) return;
+    const all = candidates();
+    const k = all.findIndex((el) => t.contains(el) || (t.compareDocumentPosition(el) & Node.DOCUMENT_POSITION_FOLLOWING));
+    if (k < 0) { stop(); return; }
+    const n = nextBlock(k > 0 ? all[k - 1] : null, 1);
+    if (!n) { stop(); return; }
+    hush(); cur = n; si = 0;
+    if (!t.contains(n.el)) { playing = false; render(); tellStage(null); mark(cur.el, true); return; }
+    mark(cur.el, true);
+    if (playing) { tellStage(cur.el); speakSentence(); } else paint(null);
   }
 
   /* ---------- controls ---------- */
   const ICON = {
     speaker: '<path d="M4 9v6h4l5 4V5L8 9H4z" fill="currentColor"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>',
-    play: '<path d="M8 5v14l11-7z" fill="currentColor"/>',
     pause: '<path d="M7 5h4v14H7zM13 5h4v14h-4z" fill="currentColor"/>',
-    stop: '<path d="M6 6h12v12H6z" fill="currentColor"/>',
-    prev: '<path d="M6 5h2v14H6zM20 5v14L9 12z" fill="currentColor"/>',
-    next: '<path d="M16 5h2v14h-2zM4 5v14l11-7z" fill="currentColor"/>',
+    more: '<path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>',
   };
   const svg = (k) => `<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false">${ICON[k]}</svg>`;
-  const btn = (cls, icon, label, text) => {
-    const b = document.createElement('button'); b.type = 'button'; b.className = cls;
-    b.innerHTML = svg(icon) + (text ? `<span>${text}</span>` : '');
-    if (!text) { b.setAttribute('aria-label', label); b.title = label; }
-    return b;
-  };
   const ui = {};
-  ui.bar = document.createElement('div'); ui.bar.className = 'ra-ui ra-bar';
-  ui.start = btn('ra-start', 'speaker', '', msg('ra_listen'));
+  ui.bar = document.createElement('div'); ui.bar.className = 'ra-ui ' + (toc ? 'toc-tools' : 'ra-bar'); ui.bar.hidden = true;
+  ui.start = document.createElement('button'); ui.start.type = 'button'; ui.start.className = 'ra-start';
+  ui.start.innerHTML = svg('speaker') + `<span>${msg('ra_listen')}</span>`;
   ui.start.setAttribute('aria-pressed', 'false');
-  ui.bar.append(ui.start);
-  ui.dock = document.createElement('div'); ui.dock.className = 'ra-ui ra-dock'; ui.dock.hidden = true;
-  ui.dock.setAttribute('role', 'region'); ui.dock.setAttribute('aria-label', msg('ra_bar'));
-  ui.prev = btn('ra-btn', 'prev', msg('ra_prev'));
-  ui.toggle = btn('ra-btn ra-main', 'pause', msg('ra_pause'));
-  ui.next = btn('ra-btn', 'next', msg('ra_next'));
-  ui.stop = btn('ra-btn', 'stop', msg('ra_stop'));
-  ui.speed = document.createElement('select'); ui.speed.className = 'ra-speed'; ui.speed.setAttribute('aria-label', msg('ra_speed'));
-  [['ra_slow', 0.8], ['ra_normal', 1], ['ra_fast', 1.25]].forEach(([k, r]) => { const o = document.createElement('option'); o.value = r; o.textContent = msg(k); ui.speed.append(o); });
-  ui.speed.value = String(RATES.reduce((p, r) => (Math.abs(r - rate) < Math.abs(p - rate) ? r : p)));
+  ui.more = document.createElement('button'); ui.more.type = 'button'; ui.more.className = 'ra-more';
+  ui.more.innerHTML = svg('more'); ui.more.setAttribute('aria-label', msg('ra_settings')); ui.more.title = msg('ra_settings');
+  ui.more.setAttribute('aria-expanded', 'false'); ui.more.setAttribute('aria-controls', 'ra-menu');
+  ui.bar.append(ui.start, ui.more);
+  // the menu and the note float under the bar (the bar scrolls sideways on a phone, so they cannot live inside it)
+  ui.menu = document.createElement('div'); ui.menu.className = 'ra-ui ra-menu'; ui.menu.id = 'ra-menu'; ui.menu.hidden = true;
+  ui.menu.setAttribute('role', 'group'); ui.menu.setAttribute('aria-label', msg('ra_settings'));
+  const speeds = document.createElement('fieldset'); speeds.className = 'ra-speeds';
+  speeds.innerHTML = `<legend>${msg('ra_speed')}</legend>`;
+  const dec = (L10N.format || {}).decimal || ',';
+  ui.rates = RATES.map((r) => {
+    const l = document.createElement('label'), i = document.createElement('input');
+    i.type = 'radio'; i.name = 'ra-rate'; i.value = String(r); i.checked = Math.abs(r - rate) < 0.01;
+    l.append(i, document.createTextNode(' ' + String(r).replace('.', dec) + '×'));
+    speeds.append(l);
+    i.addEventListener('change', () => {
+      rate = r;
+      try { localStorage.setItem('fl-ra-rate', String(rate)); } catch (e) { /* no storage */ }
+      if (playing) { hush(); speakSentence(); }
+    });
+    return i;
+  });
+  if (!ui.rates.some((i) => i.checked)) { ui.rates[1].checked = true; rate = 1; }
   ui.voiceRow = document.createElement('label'); ui.voiceRow.className = 'ra-voice'; ui.voiceRow.hidden = !canNeural;
   ui.voice = document.createElement('select');
   [['female', 'ra_female'], ['male', 'ra_male']].forEach(([v, k]) => { const o = document.createElement('option'); o.value = v; o.textContent = msg(k); ui.voice.append(o); });
@@ -697,35 +735,48 @@
     try { localStorage.setItem('fl-ra-voice', voiceChoice); } catch (e) { /* no storage */ }
     if (playing) { hush(); speakSentence(); }
   });
-  ui.note = document.createElement('p'); ui.note.className = 'ra-note'; ui.note.hidden = true; ui.note.setAttribute('role', 'status');
-  const row = document.createElement('div'); row.className = 'ra-row';
-  row.append(ui.prev, ui.toggle, ui.next, ui.stop, ui.speed);
-  ui.dock.append(row, ui.voiceRow, ui.note);
+  ui.menu.append(speeds, ui.voiceRow);
+  ui.note = document.createElement('p'); ui.note.className = 'ra-ui ra-note'; ui.note.hidden = true; ui.note.setAttribute('role', 'status');
+  function place(box) {                             // under the bar, right edge at the button's
+    const r = ui.bar.getBoundingClientRect();
+    box.style.top = Math.max(8, r.bottom + 6) + 'px';
+    box.style.right = Math.max(8, document.documentElement.clientWidth - r.right) + 'px';
+  }
+  function openMenu(on) {
+    ui.menu.hidden = !on; ui.more.setAttribute('aria-expanded', String(on));
+    if (on) { place(ui.menu); (ui.rates.find((i) => i.checked) || ui.rates[0]).focus(); }
+  }
+  function showNote(t) { ui.note.textContent = t || ''; ui.note.hidden = !t; if (t) place(ui.note); }
+  ui.note.addEventListener('click', () => { ui.note.hidden = true; });
+  ui.more.addEventListener('click', () => openMenu(ui.menu.hidden));
+  document.addEventListener('click', (e) => { if (!ui.menu.hidden && !ui.menu.contains(e.target) && !ui.more.contains(e.target)) openMenu(false); });
+  window.addEventListener('scroll', () => { if (!ui.menu.hidden) place(ui.menu); if (!ui.note.hidden) place(ui.note); }, { passive: true });
+  window.addEventListener('resize', () => { if (!ui.menu.hidden) place(ui.menu); if (!ui.note.hidden) place(ui.note); });
 
   function render() {
-    const active = !!cur;
     ui.start.setAttribute('aria-pressed', String(playing));
-    ui.start.querySelector('span').textContent = playing ? msg('ra_pause') : active ? msg('ra_resume') : msg('ra_listen');
-    ui.start.querySelector('svg').outerHTML = svg(playing ? 'pause' : active ? 'play' : 'speaker');
-    ui.toggle.innerHTML = svg(playing ? 'pause' : 'play');
-    const l = playing ? msg('ra_pause') : msg('ra_resume');
-    ui.toggle.setAttribute('aria-label', l); ui.toggle.title = l;
-    document.documentElement.classList.toggle('ra-reading', active);
+    ui.start.querySelector('span').textContent = playing ? msg('ra_pause') : msg('ra_listen');
+    ui.start.querySelector('svg').outerHTML = svg(playing ? 'pause' : 'speaker');
   }
-  function showDock(on) { dockShown = on; ui.dock.hidden = !on; if (!on) ui.note.hidden = true; }
-
+  // the button only where there is a voice for the page's language: the neural voice, or one of the device's
+  function haveVoice() {
+    if (neural.ok && !neural.failed && NEURAL_LANGS.includes(pageLang.slice(0, 2))) return true;
+    return !!voiceFor(LANG_TAG[pageLang.slice(0, 2)] || pageLang);
+  }
+  function offer() { const ok = haveVoice(); ui.bar.hidden = !ok; if (!ok && cur) stop(); }
   ui.start.addEventListener('click', () => (playing ? pause() : play()));
-  ui.toggle.addEventListener('click', () => (playing ? pause() : play()));
-  ui.stop.addEventListener('click', stop);
-  ui.prev.addEventListener('click', () => step(-1));
-  ui.next.addEventListener('click', () => step(1));
-  ui.speed.addEventListener('change', () => {
-    rate = Number(ui.speed.value);
-    try { localStorage.setItem('fl-ra-rate', String(rate)); } catch (e) { /* no storage */ }
-    if (playing) { hush(); speakSentence(); }
+  document.addEventListener('keydown', (e) => {
+    if (e.key !== 'Escape' || e.defaultPrevented || document.querySelector('dialog[open]')) return;
+    if (!ui.menu.hidden) { openMenu(false); ui.more.focus(); return; }
+    if (cur) stop();
   });
-  document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && cur && !e.defaultPrevented && !document.querySelector('dialog[open]')) stop(); });
-  main.addEventListener('click', (e) => {          // read from the clicked paragraph while the reader is open
+  if (toc) toc.addEventListener('click', (e) => {
+    const a = e.target.closest('a[href^="#"]');
+    if (!a || !cur) return;
+    const t = document.getElementById(decodeURIComponent(a.getAttribute('href').slice(1)));
+    setTimeout(() => jumpTo(t), 0);                // after the browser has followed the link
+  });
+  main.addEventListener('click', (e) => {          // read from the clicked paragraph while reading
     if (!cur || e.defaultPrevented || e.target.closest('a,button,input,select,textarea,label,summary,details>summary,[contenteditable],.ra-ui,svg,#sim-root')) return;
     const sel = window.getSelection && window.getSelection(); if (sel && !sel.isCollapsed) return;
     const el = e.target.closest(BLOCK);
@@ -734,15 +785,17 @@
     const n = nextBlock(k > 0 ? all[k - 1] : null, 1);
     if (!n) return;
     if (neural.ok && !neural.failed) neural.start();
-    hush(); cur = n; si = 0; mark(cur.el); playing = true; render(); speakSentence();
+    hush(); cur = n; si = 0; playing = true; render(); mark(cur.el); speakSentence();
   });
   window.addEventListener('pagehide', () => { if (synth) synth.cancel(); neural.stopAudio(); });
   if (synth) synth.cancel();                       // a voice left over from the previous page
 
-  const h1 = main.querySelector('h1');
-  if (h1) h1.insertAdjacentElement('afterend', ui.bar); else main.prepend(ui.bar);
-  document.body.append(ui.dock);
+  if (toc) toc.append(ui.bar);
+  else { const h1 = main.querySelector('h1'); if (h1) h1.insertAdjacentElement('afterend', ui.bar); else main.prepend(ui.bar); }
+  document.body.append(ui.menu, ui.note);
+  offer();
+  if (synth && synth.addEventListener) synth.addEventListener('voiceschanged', offer);
   window.flSpeech = { tex: texSpeech, unit: unitWords, blocks: () => { const out = []; let b = nextBlock(null, 1); while (b && out.length < 2000) { out.push(b.text.replace(/\s+/g, ' ').trim()); b = nextBlock(b.el, 1); } return out; },
-    state: () => ({ engine: neural.ok && !neural.failed ? 'neural' : 'browser', ep: neural.ep, workers: neural.pool.length, failed: neural.failed, playing, voice: voiceChoice, progress: neural.progress }),
+    state: () => ({ engine: neural.ok && !neural.failed ? 'neural' : 'browser', ep: neural.ep, workers: neural.pool.length, failed: neural.failed, playing, voice: voiceChoice, progress: neural.progress, rate }),
     elements: () => { const out = []; let b = nextBlock(null, 1); while (b && out.length < 2000) { out.push(b.el); b = nextBlock(b.el, 1); } return out; } };
 })();
