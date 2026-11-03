@@ -230,17 +230,17 @@ def malli_ketju():
     f.tex(150, 140, r"m_1", "middle", WHITE); f.tex(150, 232, r"m_2", "middle", WHITE)
     FBD(f, 1).motion(r"\overline{a}", (0, 1), (222, 190), 60, lab=(22, 0))
     f.line(300, 12, 300, 398, RULE, 1.5, "6 6")
-    f.line(310, 214, 590, 214, RULE, 1.5, "6 6")
+    f.line(310, 236, 590, 236, RULE, 1.5, "6 6")                # labels clear of the captions at 360 px (audit 2026-11-03)
     f.tex(312, 22, r"\text{voimakuvio: ylempi}", "start", MUTED)
-    f.tex(312, 230, r"\text{voimakuvio: alempi}", "start", MUTED)
+    f.tex(312, 252, r"\text{voimakuvio: alempi}", "start", MUTED)
     S = 0.10
-    cx, cy = 440, 150
+    cx, cy = 440, 164
     d = FBD(f, S, body=(cx, cy, 64, 40), m=m1, a=(0, a))
     d.force("T_1", (0, T1), (cx, cy - 20), "tension", rope=(0, 1), lab=(26, 2))
     d.force("G_1", (0, -m1 * g), (cx, cy), "gravity", lab=(-26, 2))
     d.force("T_2", (0, -T2), (cx + 18, cy + 20), "tension", rope=(0, -1), lab=(26, 2))
     d.draw()
-    cx, cy = 440, 316
+    cx, cy = 440, 334
     d = FBD(f, S, body=(cx, cy, 52, 26), m=m2, a=(0, a))
     d.force("T_2", (0, T2), (cx, cy - 13), "tension", rope=(0, 1), lab=(26, 2))
     d.force("G_2", (0, -m2 * g), (cx, cy), "gravity", lab=(26, 2))
