@@ -60,7 +60,7 @@
         {
           "text": "The moved support carries more and the other less, and their sum stays the same.",
           "correct": true,
-          "feedback": "The values of the model support this: when support 2 is at $2.5\\,\\text{m}$, $N_2 = 147\\,\\text{N}$ and $N_1 = 49\\,\\text{N}$. The sum is all the time the weight of the plank, $196\\,\\text{N}$. Support 2 is then $0.5\\,\\text{m}$ and support 1 $1.5\\,\\text{m}$ from the centre of mass, and the ratio of the support forces, $3 : 1$, is the inverse ratio of the distances."
+          "feedback": "The values of the model support this: when support 2 is at $2.5\\,\\text{m}$, $N_2 = 147\\,\\text{N}$ and $N_1 = 49\\,\\text{N}$. The sum is always the weight of the plank, $196\\,\\text{N}$. Support 2 is then $0.5\\,\\text{m}$ and support 1 $1.5\\,\\text{m}$ from the centre of mass, and the ratio of the support forces, $3 : 1$, is the inverse ratio of the distances."
         },
         {
           "text": "The support farther from the middle carries more, because its lever arm is longer.",
@@ -99,7 +99,7 @@
         },
         {
           "text": "When the weight of the box is greater than the weight of the plank, because a heavy load topples the plank.",
-          "feedback": "The values of the model refute this: the $40\\,\\text{kg}$ box is all the time heavier than the plank ($20\\,\\text{kg}$), but the plank stays in place still at $3.2\\,\\text{m}$, where $N_1 = 47\\,\\text{N}$. What matters is not which is heavier but where the weights act together."
+          "feedback": "The values of the model refute this: the $40\\,\\text{kg}$ box is always heavier than the plank ($20\\,\\text{kg}$), but the plank still stays in place at $3.2\\,\\text{m}$, where $N_1 = 47\\,\\text{N}$. What matters is not which is heavier but where the weights act together."
         }
       ]
     },
@@ -117,7 +117,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Experiment 1: a support closer to the centre of mass",
-      "intro": "Test prediction 1. There is no box, and support 1 is at $0.5\\,\\text{m}$. Start with support 2 at $3.5\\,\\text{m}$ and move it towards the middle of the plank. Record the support forces at at least three positions of support 2, for example $3.5\\,\\text{m}$, $3.0\\,\\text{m}$ and $2.5\\,\\text{m}$. Also calculate $N_1 + N_2$ on each row.",
+      "intro": "Test prediction 1. There is no box, and support 1 is at $0.5\\,\\text{m}$. Start with support 2 at $3.5\\,\\text{m}$ and move it towards the middle of the plank. Record the support forces at no fewer than three positions of support 2, for example $3.5\\,\\text{m}$, $3.0\\,\\text{m}$ and $2.5\\,\\text{m}$. Also calculate $N_1 + N_2$ on each row.",
       "initial": {
         "x1": 0.5,
         "x2": 3.5,
@@ -133,7 +133,7 @@
       "names": {
         "x1": "support 1",
         "x2": "support 2",
-        "xk": "laatikko",
+        "xk": "box",
         "mk": "mass of the box"
       },
       "values": {
@@ -174,13 +174,13 @@
       "names": {
         "x1": "support 1",
         "x2": "support 2",
-        "xk": "laatikko",
+        "xk": "box",
         "mk": "mass of the box"
       },
       "values": {
         "kaatuu": {
-          "0": "ei",
-          "1": "kaatuu"
+          "0": "no",
+          "1": "topples"
         }
       },
       "measure": [
@@ -198,7 +198,7 @@
         },
         {
           "key": "kaatuu",
-          "label": "kaatuuko"
+          "label": "topples?"
         }
       ],
       "min": 2

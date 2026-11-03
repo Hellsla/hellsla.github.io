@@ -1297,7 +1297,9 @@
       "kaatuu1": "lankku kaatuu tuen 1 yli",
       "kaatuu2": "lankku kaatuu tuen 2 yli",
       "lukemat": "$N_1 = {{N1}}\\,\\text{N}$, $N_2 = {{N2}}\\,\\text{N}$, $G = {{G}}\\,\\text{N}$, $F_\\text{k} = {{F}}\\,\\text{N}$<br>$x_\\text{pp} = {{x}}\\,\\text{m}$: {{tila}}<br>Momentit tuen 1 suhteen: $M_{N_2} = {{M2}}\\,\\text{Nm}$, $M_G = {{MG}}\\,\\text{Nm}$, $M_\\text{k} = {{Mk}}\\,\\text{Nm}$",
-      "lukemat_kaatuu": "$G = {{G}}\\,\\text{N}$, $F_\\text{k} = {{F}}\\,\\text{N}$<br>$x_\\text{pp} = {{x}}\\,\\text{m}$: <strong>{{tila}}</strong>"
+      "lukemat_kaatuu": "$G = {{G}}\\,\\text{N}$, $F_\\text{k} = {{F}}\\,\\text{N}$<br>$x_\\text{pp} = {{x}}\\,\\text{m}$: <strong>{{tila}}</strong>",
+      "lbl_xpp": "$x_\\text{pp}$",
+      "lbl_Fk": "$\\overline{F}_\\text{k}$"
     }
   },
   "practice": {

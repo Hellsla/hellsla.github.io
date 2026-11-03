@@ -125,7 +125,7 @@ new p5((p) => {
       const xp = X(M.xpp), top = narrow ? fh * 2.6 : fh * 2.2;
       p.stroke(...INKC); p.strokeWeight(1.5 * U); p.drawingContext.setLineDash([5 * U, 4 * U]); p.line(xp, top + fh * 0.5, xp, FLOOR); p.drawingContext.setLineDash([]);
       p.noStroke(); p.fill(...(M.xpp >= M.x1 && M.xpp <= M.x2 ? GOODC : HOTC)); p.circle(xp, FLOOR, 8 * U);
-      place('$x_\\text{pp}$', [[xp, top, 'c'], [xp + 6, top + fh * 1.3, 'l'], [xp - 6, top + fh * 1.3, 'r']], fh, INKC);
+      place(__('lbl_xpp'), [[xp, top, 'c'], [xp + 6, top + fh * 1.3, 'l'], [xp - 6, top + fh * 1.3, 'r']], fh, INKC);
     }
     lab(__('tilannekuva'), 8, narrow ? fh + 4 : 18, 'l', fh, INKC);
   }
@@ -156,7 +156,7 @@ new p5((p) => {
     const gy = cy + M.G * S, side = (M.x2 - xL) < (xL - M.x1) ? -1 : 1, al = (sd) => (sd < 0 ? 'r' : 'l');
     place('$\\overline{G}$', [[xG + side * 8, gy - 2, al(side)], [xG + side * 8, gy + fh * 0.9, al(side)], [xG, gy + fh * 1.1, 'c'],
                                [xG - side * 8, gy - 2, al(-side)], [xG + side * 8, cy + TH / 2 + fh, al(side)]], fh, RED);
-    if (M.Fk > 0) { const y = top - M.Fk * S; place('$\\overline{F}_\\text{k}$', [[X(M.xk), y - fh * 0.5, 'c'], [X(M.xk) + 8, y + fh * 0.5, 'l'], [X(M.xk) - 8, y + fh * 0.5, 'r'], [X(M.xk) + 8, top - fh * 0.5, 'l'], [X(M.xk) - 8, top - fh * 0.5, 'r']], fh, RED); }
+    if (M.Fk > 0) { const y = top - M.Fk * S; place(__('lbl_Fk'), [[X(M.xk), y - fh * 0.5, 'c'], [X(M.xk) + 8, y + fh * 0.5, 'l'], [X(M.xk) - 8, y + fh * 0.5, 'r'], [X(M.xk) + 8, top - fh * 0.5, 'l'], [X(M.xk) - 8, top - fh * 0.5, 'r']], fh, RED); }
   }
   function arrow(x1, y1, x2, y2) {
     const Ln = Math.hypot(x2 - x1, y2 - y1); if (Ln < 0.5) return;
