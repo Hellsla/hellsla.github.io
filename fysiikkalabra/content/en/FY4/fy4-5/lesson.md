@@ -218,11 +218,11 @@ A free-body diagram is always drawn with the same eight steps. They are worth go
 1. **Choose the object.** Decide whose forces you draw. Only forces that act **on this object** go into the diagram. Forces that the object itself exerts on others do not belong in it.
 2. **Find the interactions.** List everything that acts on the object: the Earth (weight), every surface the object touches (normal force and friction), every rope (tension), a push or a pull, and air or water (drag and buoyancy). Every force has a cause outside the object. Motion alone does not cause a force.
 3. **Draw the object and the forces.** Draw the object simplified to a rectangle. Draw one arrow for each force, starting at the point where the force acts. The arrow of a pushing force may also end at that point.
-   - The weight $\overline{G}$ points straight down.
-   - The normal force $\overline{N}$ is perpendicular to the contact surface and pushes the object away from the surface. It does not always point up: a ceiling pushes down and a wall pushes sideways.
-   - The friction force $\overline{F}_\mu$ is parallel to the contact surface. Its direction comes from the direction in which the object slides, or tends to slide, relative to the surface. It does not always oppose the velocity. The friction arrow starts at a corner of the contact surface, outside the object, or ends there. It is not drawn along a side of the object from the middle of the side.
-   - The tension $\overline{T}$ acts along the rope and pulls the object toward the rope.
-   - Air drag is drawn only when the situation and its assumptions call for it.
+    - The weight $\overline{G}$ points straight down.
+    - The normal force $\overline{N}$ is perpendicular to the contact surface and pushes the object away from the surface. It does not always point up: a ceiling pushes down and a wall pushes sideways.
+    - The friction force $\overline{F}_\mu$ is parallel to the contact surface. Its direction comes from the direction in which the object slides, or tends to slide, relative to the surface. It does not always oppose the velocity. The friction arrow starts at a corner of the contact surface, outside the object, or ends there. It is not drawn along a side of the object from the middle of the side.
+    - The tension $\overline{T}$ acts along the rope and pulls the object toward the rope.
+    - Air drag is drawn only when the situation and its assumptions call for it.
 4. **Name the forces.** Give each force its own symbol. Two similar forces are told apart with subscripts, for example $\overline{T}_1$ and $\overline{T}_2$.
 5. **Think about the magnitudes.** At rest and in uniform motion the net force is zero, so the arrows cancel each other. In accelerating motion the net force points in the direction of the acceleration, which is not always the direction of the velocity. Do not invent exact lengths if the data does not fix them.
 6. **Only forces.** Velocity, acceleration and displacement are not forces. If they are needed, they are drawn beside the object as thin arrows in different colours: in this course forces are red, velocity is blue and acceleration is orange. The net force is not one more force.

@@ -206,6 +206,8 @@ The scale is calibrated by hanging identical small objects on the spring, each w
 
 The weight of an object is a measure of the strength of the interaction between the Earth and the object. It is a force, and its unit is the newton. Mass is something quite different: it tells you how much matter an object contains, and its unit is the kilogram. Mass is the same everywhere, but weight depends on where the object is. The Moon is a much smaller celestial body than the Earth, and the interaction between the Moon and the astronaut is weaker than between the Earth and the astronaut, so the astronaut weighs less on the Moon.
 
+<figure class="unit-photo"><img src="pics/fy3/iss-cupola.webp" alt="An astronaut floats in the window dome of the space station. Earth and clouds can be seen through the windows."><figcaption>Astronaut Jessica Watkins floats in front of the Cupola window of the International Space Station, 2022. The Earth still pulls her there, but the station and the astronaut fall around the Earth together.</figcaption></figure>
+
 ## Formula: Weight
 Two identical objects stretch the spring of a force meter twice as much as one, so weight is directly proportional to mass:
 ```latex

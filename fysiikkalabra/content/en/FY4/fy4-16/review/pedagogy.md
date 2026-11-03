@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 7d21002e53999ae3
+CONTENT-HASH: 2a124c94003eb9c2
 
 ## Blocking
 
@@ -11,3 +11,4 @@ CONTENT-HASH: 7d21002e53999ae3
 - Plain, short English for 16-19 year olds; chapter names used instead of ids; learn goals complete 'In this lesson, you will learn to'.
 - Nothing added or dropped; the F_d subscript is used consistently in text, figures and solutions.
 - Layout checked in the closed and opened states.
+Delta: F_d now also in the diagram labels, the three new voimakuvio blocks sit under the Free-body diagram steps like the Finnish; the shortened practice sentence matches the Finnish. Fy4-14 note kept.

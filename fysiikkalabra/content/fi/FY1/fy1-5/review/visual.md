@@ -1,14 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 35583b6e7a209852
-
+CONTENT-HASH: 97f8ddaf87a21e22
 ## Blocking
 (none)
-
 ## Polish
-- [Minor] aiemmat Polish-kohdat (Järkevyys-lauseen toisto, "noin 26 AU" tekstinä, Alkutila-arvot, simulaation tick-numerot ja liukusäätimien järjestys) ennallaan; eivät kuulu tähän deltaan.
-
+- Valoviirut sopivat radan käsitteeseen; kuvateksti lyhyt ja tosi. Lisenssirivin 'CC0 1.0' rivitys katkeaa kapeassa palstassa (kovan välilyönnin voisi harkita).
 ## Checked
-- Delta (Lineaarinen malli -kappaleen yksi lause): theory-1280-1 (kappale "Malli on silti hyvä, kun nopeus muuttuu tarkasteltavana aikana vain vähän." — sujuva, kieliopillisesti oikea, merkitys ennallaan, kappaleen pituus ja asettelu ehjät), theory-1280-2 ja -3 (ympäröivä teoria, kuvaaja ja tiivistelmä säilyneet, ei punaista KaTeXia eikä leikkautumista).
-
-## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+batch delta review: the added photo in the built preview at 360/768/1280 px (loads, no horizontal overflow, 320 px figure, credit under the caption), alt text vs image, Finnish and factual accuracy of the caption, placement in the page rhythm.

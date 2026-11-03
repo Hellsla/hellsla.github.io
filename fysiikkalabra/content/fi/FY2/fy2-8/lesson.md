@@ -188,6 +188,8 @@ Fossiilinen polttoaine, kuten kivihiili, öljy tai maakaasu, on muinaisten eliö
 
 Fossiilisen polttoaineen hiili on ollut maan alla miljoonia vuosia, joten sen polttaminen lisää ilmakehän hiilidioksidia. Biomassan, esimerkiksi puun, hiili on sitoutunut kasveihin vasta vuosikymmenten aikana. Biomassan poltto ei silti ole päästötöntä: polton hiilidioksidi on ilmakehässä, kunnes uusi kasvu vuosikymmenten kuluessa sitoo sen takaisin, ja viljely, korjuu ja kuljetus aiheuttavat omia päästöjä.
 
+<figure class="unit-photo"><img src="pics/fy2/europe-at-night.webp" alt="Yöllinen Eurooppa ylhäältä: tummalla maalla on tiheästi oransseja valopisteitä ja suurten kaupunkien kirkkaita valoalueita."><figcaption>Luoteis-Eurooppa yöllä kansainväliseltä avaruusasemalta kuvattuna vuonna 2011. Kaupunkien valot näkyvät avaruuteen asti.</figcaption></figure>
+
 ### Tuotantotapoja verrataan elinkaaren päästöillä
 Päästöjä syntyy muustakin kuin polttamisesta. Voimala on rakennettava teräksestä, betonista ja kuparista, polttoaine on kaivettava tai kerättävä ja kuljetettava, ja lopuksi voimala puretaan. Siksi tuotantotapoja verrataan **elinkaaren päästöillä**: kaikkien vaiheiden päästöt lasketaan yhteen ja jaetaan koko elinkaarella tuotetulla energialla.
 

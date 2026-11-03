@@ -158,6 +158,8 @@ Piirrä mittaustulokset koordinaatistoon. Vaaka-akselilla on tilavuus ja pystyak
 
 Jokaisella puhtaalla aineella on tietyssä olomuodossa ja lämpötilassa oma tiheytensä. Tiheys on siis kuin aineen sormenjälki. Mittaa ensin kappaleen massa ja tilavuus. Sitten voit verrata laskettua tiheyttä taulukkoarvoihin. Päättely ei ole varma. Mittauksissa on aina virhettä (luku *Mittaaminen ja mittauksen luotettavuus*). Lisäksi joillakin aineilla on lähes sama tiheys. Tulos kertoo siis vain, mitä aineita kappale voi olla.
 
+<figure class="unit-photo"><img src="pics/fy1/blue-iceberg.webp" alt="Vaaleansininen jäävuori kelluu vedessä."><figcaption>Jäävuori järvellä Islannissa. Jää kelluu, koska sen tiheys on pienempi kuin veden tiheys.</figcaption></figure>
+
 ## Kaava: Tiheys
 
 Aineen tiheys on massan ja tilavuuden suhde. Kaavasta voi ratkaista myös massan ja tilavuuden. Silloin saadaan kaksi muuta muotoa:

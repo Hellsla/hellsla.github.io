@@ -427,6 +427,8 @@ Pyöräilijän ketju alkaa Auringosta. Säteilyenergia sitoutuu kasvissa kemiall
   <path d="M518,232 L518,274 L510,274 L525,296 L540,274 L532,274 L532,232 Z" fill="#e8590c" stroke-linejoin="round"/>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy2/artemis-i-launch.webp" alt="Raketti nousee yöllä laukaisualustalta kirkkaan liekin ja valtavan savupilven saattelemana."><figcaption>Artemis I -raketin laukaisu Floridassa marraskuussa 2022. Polttoaineen kemiallinen energia muuttuu raketin liike-energiaksi, lämmöksi, valoksi ja ääneksi.</figcaption></figure>
+
 Joka vaiheessa osa energiasta muuttuu lämpöenergiaksi, joka siirtyy lämpönä ympäristöön ja hajaantuu. Energiaa ei silti katoa: kuten luvussa *Energialajit ja energian säilyminen* todettiin, ketjun alussa ja lopussa sitä on yhtä paljon. Kuvan esimerkissä puuron $800\,\text{kJ}$ jakautuu liikkeeksi ja lämpöenergiaksi, ja osat ovat yhteensä yhtä paljon kuin alussa. Lämpöenergia hajaantuu niin laajalle, ettei sitä ole enää helppo käyttää hyödyksi, ja siksi energia tuntuu "kuluvan loppuun".
 
 <svg data-fig="sailyminen" viewBox="0 0 600 350" role="img" aria-label="Kaavakuva mittakaavassa (esimerkki): pyöräilijän aamupuuron kemiallisesta energiasta 800 kJ lihakset muuttavat liikkeeksi 200 kJ ja lämpöenergiaksi 600 kJ. Nuolten leveys on verrannollinen energiaan, ja haarojen yhteinen leveys on yhtä suuri kuin alkuperäisen nuolen leveys." style="max-width:100%;font-size:24px">

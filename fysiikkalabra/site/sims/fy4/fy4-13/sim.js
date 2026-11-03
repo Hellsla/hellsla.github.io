@@ -176,7 +176,7 @@ new p5((p) => {
       p.push(); p.translate(0, top);
       p.noStroke(); p.fill(255); p.rect(x0, 0, w, HD);
       p.stroke(220); p.strokeWeight(1); p.line(x0, 0, x0 + w, 0); if (!narrow) p.line(x0, 0, x0, HD);
-      const title = i === 1 ? (M.kaksi ? '$\\text{Voimakuvio: }m_1$' : __('vk1')) : (M.kaksi ? '$\\text{Voimakuvio: }m_2$' : __('vk2'));
+      const title = i === 1 ? (M.kaksi ? __('vk1_kaksi') : __('vk1')) : (M.kaksi ? __('vk2_kaksi') : __('vk2'));
       lab(title, x0 + 10, fh + 2, 'l', fh, INKC);
       if (i === 1 && !M.kaksi) cartDiagram(M, cx, tM + S * M.G1 - hc / 2, fh, hc);
       else { const T = M.T; hangDiagram(M, i, cx, tM + hh / 2 + S * T, fh, hh); }

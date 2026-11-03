@@ -1,14 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 0b2d8154f98ba8a6
+CONTENT-HASH: 55d41033d2673035
 
 ## Blocking
 
 ## Polish
-- [Minor] exp-1 intro — "50 ml, 25 ml ja 100 ml" and "(100 kPa = 100 000 Pa)" are plain text beside inline-maths quantities in the same paragraph, and "25 ml" still breaks across lines; set in maths with a thin space (carried).
-- [Minor] exp-1/exp-2 Alkutila box — "θ = 20 °C", "V = 50 ml" are plain text while the readout below uses maths; optional unification.
+- [Minor] Caption is three sentences; "ulkoilman paine pienenee" fine. Photo sits between two paragraphs of one argument, acceptable.
 
 ## Checked
-- exp-1-390-1 and exp-2-390-1 (new "tilanmuutos: isoterminen / isobaarinen" Alkutila lines, selector, readout, graphs); example-390-2 (inline "0,80 l", "78 kPa", fraction rows spaced). Layout survived; only inquiry.json changed.
-
-## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+batch delta review: Playwright captures of the built page at 360 and 1280 px (balloon filling); photo sits after a paragraph, 320 px wide, caption and credit under it, no horizontal overflow, float beside text at 1280, full-width flow at 360; alt text matches the image; caption plain Finnish and factual.

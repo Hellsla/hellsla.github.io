@@ -128,6 +128,8 @@
     "local_status_ready": "Valmis"
   },
   "lesson": {
+    "photos": "Valokuvat",
+    "photo_by": "Kuva",
     "steps_nav": "Oppitunnin vaiheet",
     "theory": "Teoria",
     "simulation": "Simulaatio",
@@ -1102,6 +1104,8 @@
       "tilannekuva": "$\\text{Tilanne}$",
       "vk1": "$\\text{Kärryn voimakuvio}$",
       "vk2": "$\\text{Punnuksen voimakuvio}$",
+      "vk1_kaksi": "$\\text{Kappaleen }m_1\\text{ voimakuvio}$",
+      "vk2_kaksi": "$\\text{Kappaleen }m_2\\text{ voimakuvio}$",
       "lukemat1": "$G_1 = {{G1}}\\,\\text{N}$, $G_2 = {{G2}}\\,\\text{N}$, $T = {{T}}\\,\\text{N}$<br>$\\Sigma F_1 = {{s1}}\\,\\text{N}$, $\\Sigma F_2 = {{s2}}\\,\\text{N}$<br><strong>$a = {{a}}\\,\\text{m/s}^2$</strong>, $v = {{v}}\\,\\text{m/s}$, $t = {{t}}\\,\\text{s}$",
       "lukemat2": "$G_1 = {{G1}}\\,\\text{N}$, $G_2 = {{G2}}\\,\\text{N}$, $T = {{T}}\\,\\text{N}$<br>$\\Sigma F_1 = {{s1}}\\,\\text{N}$, $\\Sigma F_2 = {{s2}}\\,\\text{N}$<br><strong>$a = {{a}}\\,\\text{m/s}^2$</strong>, $v = {{v}}\\,\\text{m/s}$, $t = {{t}}\\,\\text{s}$"
     },
@@ -1139,7 +1143,11 @@
       "normaali": "normaali",
       "nopea": "nopea",
       "selite": "Sininen nuoli näyttää vaunun nopeuden. Palkit näyttävät energiat samalla mittakaavalla.",
-      "lukemat": "<strong>$v_\\text{pohja} = {{vp}}\\,\\text{m/s}$, $h_2 = {{h2}}\\,\\text{m}$</strong><br>$h = {{h}}\\,\\text{m}$, $v = {{v}}\\,\\text{m/s}$, $s = {{s}}\\,\\text{m}$<br>$E_\\text{p} = {{Ep}}\\,\\text{kJ}$, $E_\\text{k} = {{Ek}}\\,\\text{kJ}$, $E_\\text{mek} = {{Em}}\\,\\text{kJ}$<br>$W_\\text{muut} = {{W}}\\,\\text{kJ}$, $\\Delta E_\\text{mek} = {{dE}}\\,\\text{kJ}$"
+      "lukemat": "<strong>$v_\\text{pohja} = {{vp}}\\,\\text{m/s}$, $h_2 = {{h2}}\\,\\text{m}$</strong><br>$h = {{h}}\\,\\text{m}$, $v = {{v}}\\,\\text{m/s}$, $s = {{s}}\\,\\text{m}$<br>$E_\\text{p} = {{Ep}}\\,\\text{kJ}$, $E_\\text{k} = {{Ek}}\\,\\text{kJ}$, $E_\\text{mek} = {{Em}}\\,\\text{kJ}$<br>$W_\\text{muut} = {{W}}\\,\\text{kJ}$, $\\Delta E_\\text{mek} = {{dE}}\\,\\text{kJ}$",
+      "energia": "$\\text{Energia}$",
+      "emek1": "$E_{\\text{mek},1}$",
+      "emek": "$E_\\text{mek}$",
+      "wmuut": "$W_\\text{muut}$"
     },
     "fy4-9": {
       "kaynnista": "Käynnistä",
@@ -1395,5 +1403,13 @@
     "checked": "tarkistettu {{date}}",
     "teacher": "Opettajalle",
     "notice_draft": "Tämä oppitunti on vielä kesken. Sitä ei ole julkaistu."
+  },
+  "cards": {
+    "title": "Käsitetakomo",
+    "home_lead": "Kertaa fysiikan sanoja ja niiden merkityksiä korttien avulla. Valitse moduuli ja aihe.",
+    "home_link": "Käsitetakomo – kertaa fysiikan käsitteitä",
+    "module_lead": "Kertaa moduulin tärkeitä sanoja korttien avulla. Valitse aihe Käsitetakomossa.",
+    "module_link": "Kertaa tämän moduulin käsitteet",
+    "lesson_link": "Kertaa luvun käsitteet Käsitetakomossa"
   }
 }

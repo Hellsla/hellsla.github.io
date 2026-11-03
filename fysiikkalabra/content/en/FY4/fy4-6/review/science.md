@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: e3c242439fb334e0
+CONTENT-HASH: 7389316f4c7535ae
 
 ## Blocking
 
@@ -10,3 +10,5 @@ CONTENT-HASH: e3c242439fb334e0
 Compared lesson.md (text, worked example's seven stages, formulas), inquiry.json (every hint, feedback, solution, model answer), exit-ticket, meta and the figure texts with the Finnish; every number matches (only SVG coordinates differ).
 Terms are weight, normal force, static/kinetic friction, tension, buoyancy, drag, net force, free-body diagram; no Finnish in text or figure labels; decimal point everywhere.
 check_i18n, check_latex (715 fragments), figures.py --check --lang en and check_layout at 360 and 1280 px are clean. No edits were needed.
+
+Delta review: leftover Finnish words in en names/labels/sim bar labels/figure caption are now English and match the Finnish meaning; no blocking issue.

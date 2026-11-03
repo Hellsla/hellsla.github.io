@@ -132,9 +132,9 @@ def _karry(fid, label, m1, m2, S):
     d.force("T_1", (T, 0), (cx + 40, cy - 6), "tension", rope=(1, 0), lab=(22, 2))
     d.draw()
     cx, cy = 440, 276
-    d = FBD(f, S, body=(cx, cy, 56, 44), m=m2, a=(0, -a))
+    d = FBD(f, S, body=(cx, cy, 40, 20), m=m2, a=(0, -a))      # a low box: the short G2 reaches well past it (visual audit 2026-11-01)
     d.force("G_2", (0, -m2 * g), (cx, cy), "gravity", lab=(22, 2))
-    d.force("T_2", (0, T), (cx, cy - 22), "tension", rope=(0, 1), lab=(22, 2))
+    d.force("T_2", (0, T), (cx, cy - 10), "tension", rope=(0, 1), lab=(22, 2))
     d.draw()
     return f.svg()
 
@@ -158,28 +158,28 @@ def esimerkki():
 def _atwood(fid, label, m1, m2, S):
     """Two bodies over a pulley (m1 < m2): the situation picture and the force diagram of each body."""
     a = (m2 - m1) * g / (m1 + m2); T = 2 * m1 * m2 * g / (m1 + m2)
-    f = Fig(fid, 380, label)
+    f = Fig(fid, 410, label)
     f.tex(150, 22, r"\text{tilannekuva}", "middle", MUTED)
     atwood_scene(f, 0, 30, m1h=26 + 18 * m1, m2h=26 + 18 * m2)
     FBD(f, 1).motion(r"\overline{a}", (0, 1), (60, 236), 44, lab=(-22, -4))
     FBD(f, 1).motion(r"\overline{a}", (0, -1), (212, 252), 44, lab=(22, 4))
     f.tex(108, 270, r"m_1", "middle"); f.tex(152, 316, r"m_2", "middle")
-    f.line(300, 12, 300, 368, RULE, 1.5, "6 6")
+    f.line(300, 12, 300, 398, RULE, 1.5, "6 6")
     f.line(310, 190, 590, 190, RULE, 1.5, "6 6")
     f.tex(312, 22, r"\text{voimakuvio: kevyempi}", "start", MUTED)
     f.tex(312, 206, r"\text{voimakuvio: raskaampi}", "start", MUTED)
     cx, cy = 440, 128
-    d = FBD(f, S, body=(cx, cy, 56, 36), m=m1, a=(0, a))
+    d = FBD(f, S, body=(cx, cy, 48, 22), m=m1, a=(0, a))      # low boxes: the weights reach well past them (visual audit 2026-11-01)
     d.force("G_1", (0, -m1 * g), (cx, cy), "gravity", lab=(22, 2))
-    d.force("T_1", (0, T), (cx, cy - 18), "tension", rope=(0, 1), lab=(22, 2))
+    d.force("T_1", (0, T), (cx, cy - 11), "tension", rope=(0, 1), lab=(22, 2))
     d.draw()
     d.motion(r"\overline{a}", (0, 1), (540, 150), 44, lab=(22, 0))
-    cx, cy = 440, 302
-    d = FBD(f, S, body=(cx, cy, 64, 48), m=m2, a=(0, -a))
+    cx, cy = 440, 312
+    d = FBD(f, S, body=(cx, cy, 60, 32), m=m2, a=(0, -a))
     d.force("G_2", (0, -m2 * g), (cx, cy), "gravity", lab=(22, 2))
-    d.force("T_2", (0, T), (cx, cy - 24), "tension", rope=(0, 1), lab=(22, 2))
+    d.force("T_2", (0, T), (cx, cy - 16), "tension", rope=(0, 1), lab=(22, 2))
     d.draw()
-    d.motion(r"\overline{a}", (0, -1), (540, 280), 44, lab=(22, 0))
+    d.motion(r"\overline{a}", (0, -1), (540, 290), 44, lab=(22, 0))
     return f.svg()
 
 
@@ -189,7 +189,7 @@ def atwood():
                    "päässä on kevyempi kappale ja oikeassa raskaampi. Kevyemmän vieressä on oranssi nuoli ylös ja raskaamman vieressä yhtä pitkä oranssi nuoli alas: "
                    "kiihtyvyyden suuruus on sama. Oikealla ylhäällä kevyemmän kappaleen voimakuvio, kappale suorakulmiona: langan jännitysvoima T1 yläpinnasta ylös ja "
                    "paino G1 keskipisteestä alas, ja T1 on pidempi kuin G1. Oikealla alhaalla raskaamman kappaleen voimakuvio: T2 yläpinnasta ylös ja G2 keskipisteestä alas, ja "
-                   "G2 on pidempi kuin T2. Nuolet T1 ja T2 ovat yhtä pitkät.", 0.30, 0.60, 9.0)
+                   "G2 on pidempi kuin T2. Nuolet T1 ja T2 ovat yhtä pitkät.", 0.30, 0.60, 14.0)
 
 
 # ---------------------------------------------------------------- task figures
@@ -213,7 +213,7 @@ def malli_atwood():
     """Model diagram for the drawing task of the checks: bodies of 0,40 kg and 0,80 kg over a pulley."""
     return _atwood("fy413-malli-atwood", "Mallikuvio: kaksi riippuvaa kappaletta, 0,40 kg ja 0,80 kg, langan päissä väkipyörän yli. Vasemmalla tilannekuva, jossa "
                    "kevyempi nousee ja raskaampi laskee, ja oranssit nuolet kertovat kiihtyvyydet. Oikealla ylhäällä kevyemmän kappaleen voimakuvio: jännitysvoima T1 ylös, "
-                   "pidempi kuin paino G1 alas. Oikealla alhaalla raskaamman kappaleen voimakuvio: jännitysvoima T2 ylös ja pidempi paino G2 alas. Nuolet T1 ja T2 ovat yhtä pitkät.", 0.40, 0.80, 7.0)
+                   "pidempi kuin paino G1 alas. Oikealla alhaalla raskaamman kappaleen voimakuvio: jännitysvoima T2 ylös ja pidempi paino G2 alas. Nuolet T1 ja T2 ovat yhtä pitkät.", 0.40, 0.80, 10.5)
 
 
 def malli_ketju():
@@ -225,24 +225,24 @@ def malli_ketju():
             "jännitysvoima T1 ylös, paino G1 keskipisteestä alas ja alemman köyden jännitysvoima T2 alapinnasta alas. Oikealla alhaalla alemman laatikon voimakuvio: köyden jännitysvoima T2 "
             "yläpinnasta ylös ja paino G2 alas. Nuoli T1 on pisin, ja T2 on yhtä pitkä molemmissa kuvioissa.")
     f.tex(150, 22, r"\text{tilannekuva}", "middle", MUTED)
-    ground(f, 90, 210, 40, below=False)
-    f.line(150, 40, 150, 120, COPPER, 2.5); block(f, 124, 120, 52, 40); f.line(150, 160, 150, 215, COPPER, 2.5); block(f, 132, 215, 36, 34)
+    ground(f, 90, 210, 50, below=False)                      # the ceiling's hatching clear of the caption (visual audit 2026-11-01)
+    f.line(150, 50, 150, 120, COPPER, 2.5); block(f, 124, 120, 52, 40); f.line(150, 160, 150, 215, COPPER, 2.5); block(f, 132, 215, 36, 34)
     f.tex(150, 140, r"m_1", "middle", WHITE); f.tex(150, 232, r"m_2", "middle", WHITE)
     FBD(f, 1).motion(r"\overline{a}", (0, 1), (222, 190), 60, lab=(22, 0))
-    f.line(300, 12, 300, 388, RULE, 1.5, "6 6")
+    f.line(300, 12, 300, 398, RULE, 1.5, "6 6")
     f.line(310, 214, 590, 214, RULE, 1.5, "6 6")
     f.tex(312, 22, r"\text{voimakuvio: ylempi}", "start", MUTED)
     f.tex(312, 230, r"\text{voimakuvio: alempi}", "start", MUTED)
-    S = 0.09
+    S = 0.10
     cx, cy = 440, 150
     d = FBD(f, S, body=(cx, cy, 64, 40), m=m1, a=(0, a))
-    d.force("T_1", (0, T1), (cx, cy - 20), "tension", rope=(0, 1), lab=(26, 2))
+    d.force("T_1", (0, T1), (cx, cy - 20), "tension", rope=(0, 1), lab=(26, 18))
     d.force("G_1", (0, -m1 * g), (cx, cy), "gravity", lab=(-26, 2))
-    d.force("T_2", (0, -T2), (cx + 18, cy + 20), "tension", rope=(0, -1), lab=(26, 2))
+    d.force("T_2", (0, -T2), (cx + 18, cy + 20), "tension", rope=(0, -1), lab=(26, -14))
     d.draw()
     cx, cy = 440, 316
-    d = FBD(f, S, body=(cx, cy, 52, 34), m=m2, a=(0, a))
-    d.force("T_2", (0, T2), (cx, cy - 17), "tension", rope=(0, 1), lab=(26, 2))
+    d = FBD(f, S, body=(cx, cy, 52, 26), m=m2, a=(0, a))
+    d.force("T_2", (0, T2), (cx, cy - 13), "tension", rope=(0, 1), lab=(26, 2))
     d.force("G_2", (0, -m2 * g), (cx, cy), "gravity", lab=(26, 2))
     d.draw()
     return f.svg()

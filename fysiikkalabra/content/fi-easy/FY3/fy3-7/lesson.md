@@ -139,6 +139,8 @@ Aine esiintyy kolmessa olomuodossa: kiinteänä, nesteenä ja kaasuna. Mikromall
   <foreignObject x="470" y="259.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{kaasu}$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy3/la-palma-eruption.webp" alt="Tulivuori purkautuu yöllä. Hehkuvaa laavaa valuu rinnettä alas."><figcaption>La Palman tulivuorenpurkaus vuonna 2021. Laava jäähtyy ja muuttuu kiinteäksi.</figcaption></figure>
+
 ### Mihin energia menee?
 Sulaminen ja höyrystyminen vaativat energiaa, mutta eivät nosta lämpötilaa. Kun jäätä lämmitetään, sen lämpötila nousee $0\,{}^\circ\text{C}$:seen asti. Sitten lämpötila pysyy vakiona, kunnes kaikki jää on sulanut. Näin käy, vaikka energiaa siirtyy koko ajan. Sulamisen ja höyrystymisen aikana aineeseen siirtyvä energia muuttaa hiukkasten keskinäisiä vuorovaikutuksia. Se kasvattaa hiukkasten välistä vuorovaikutusenergiaa. Kun puhtaan aineen olomuoto muuttuu vakiopaineessa, lämpötila pysyy vakiona. Silloin hiukkasten keskimääräinen liike-energia ei kasva.
 

@@ -327,6 +327,8 @@ A **black hole** is a region from which, because of gravity, nothing, not even l
 
 The **observable universe** is the part of the universe from which light has had time to reach us during the age of the universe, about 13.8 billion years. Its diameter is about $8.8\cdot10^{26}\,\text{m}$, or about 93 billion light-years. The number is greater than twice 13.8 billion light-years because space has expanded during the light's journey. The boundary of the observable universe is not the edge of the universe but the limit of our horizon: for an observer in another galaxy, the observable universe is a sphere around that observer. The size of the whole universe is not known, and it may be infinite.
 
+<figure class="unit-photo"><img src="pics/fy1/webb-first-deep-field.webp" alt="Dark sky full of small points of light: reddish and white galaxies, some stretched into arcs. A few bright stars have sharp spikes."><figcaption>The first deep field image of the James Webb Space Telescope, 2022. Almost every point of light is a distant galaxy.</figcaption></figure>
+
 ## Fundamental interactions {Perusvuorovaikutukset}
 
 ### Four fundamental interactions
