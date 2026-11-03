@@ -11,6 +11,9 @@ investigation and a course unit (or the pages named):
   - reading goes block by block in page order; the title is read first; a closed box, a hidden worked-example step,
     a figure and a simulation are not read; the block being read is marked and the sentence and the word are
     highlighted (CSS Custom Highlight API)
+  - the best voice of the language is used (neural, Google or enhanced before an old desktop voice; teacher
+    2026-11-03 "the quality in chrome seems really awful"), the voice menu lists the language's voices best first and
+    a voice chosen there is used
   - pause and continue, next and previous sentence, Esc stops and hides the bar
   - at 360, 768 and 1280 px the bar fits the window (no horizontal scroll), its controls are at least 40 px high
 Exit status 1 on any failure."""
@@ -48,9 +51,11 @@ MOCK = r"""(() => {
   const spoken = []; window.__spoken = spoken;
   class U { constructor(t) { this.text = t; this.lang = ''; this.rate = 1; } }
   const synth = { paused: false, q: null, t: 0,
-    getVoices() { return [{ name: 'Test fi', lang: 'fi-FI', default: true }, { name: 'Test en', lang: 'en-GB' }, { name: 'Test fr', lang: 'fr-FR' }]; },
+    getVoices() { return [{ name: 'Microsoft Heidi Desktop - Finnish', lang: 'fi-FI', default: true }, { name: 'Microsoft Noora Online (Natural) - Finnish (Finland)', lang: 'fi-FI' },
+      { name: 'Microsoft Hazel Desktop - English (Great Britain)', lang: 'en-GB' }, { name: 'Google UK English Female', lang: 'en-GB' }, { name: 'Google US English', lang: 'en-US' },
+      { name: 'Test fr', lang: 'fr-FR' }]; },
     addEventListener() {}, cancel() { this.q = null; clearTimeout(this.t); },
-    speak(u) { spoken.push(u.text); this.q = u; const words = [...u.text.matchAll(/\S+/g)]; let k = 0;
+    speak(u) { spoken.push(u.text); (window.__voice = window.__voice || []).push(u.voice && u.voice.name); this.q = u; const words = [...u.text.matchAll(/\S+/g)]; let k = 0;
       const tick = () => { if (this.q !== u) return;
         if (k < words.length) { u.onboundary && u.onboundary({ name: 'word', charIndex: words[k].index, charLength: words[k][0].length }); k++; this.t = setTimeout(tick, window.__wordMs || 5); }
         else { this.q = null; u.onend && u.onend({}); } };
@@ -129,11 +134,20 @@ with sync_playwright() as pw:
                  sent: CSS.highlights.has('ra-sentence'), word: CSS.highlights.has('ra-word'), n: window.__spoken.length,
                  sw: document.documentElement.scrollWidth, iw: window.innerWidth,
                  r: document.querySelector('.ra-dock').getBoundingClientRect().toJSON(),
-                 low: [...document.querySelectorAll('.ra-dock button, .ra-dock select')].filter(e => e.getBoundingClientRect().height < 40).length })""")
+                 low: [...document.querySelectorAll('.ra-dock button, .ra-dock select')].filter(e => e.offsetParent).filter(e => e.getBoundingClientRect().height < 40).length })""")
             expect(f"{tag}: reading starts, the bar shows, the block is marked and the sentence and word are highlighted",
                    st["dock"] and st["on"] and st["sent"] and st["word"] and st["n"] >= 1, st)
             expect(f"{tag}: the bar fits the window, controls at least 40 px", st["sw"] <= st["iw"] and st["r"]["left"] >= 0 and st["r"]["right"] <= st["iw"] and st["low"] == 0, st)
             if w == 1280:
+                best = "Google UK English Female" if lang == "en" else "Microsoft Noora Online (Natural) - Finnish (Finland)"
+                used = pg.evaluate("window.__voice.slice(-1)[0]")
+                expect(f"{tag}: the best voice is chosen, not the old desktop voice", used == best, used)
+                opts = pg.evaluate("[...document.querySelectorAll('.ra-voice select option')].map(o => o.value)")
+                expect(f"{tag}: the voice menu lists this language's voices, best first", len(opts) >= 3 and opts[0] == "" and opts[1] == best, opts)
+                other = opts[-1]
+                pg.select_option(".ra-voice select", other); pg.wait_for_timeout(80)
+                expect(f"{tag}: a voice chosen from the menu is used", pg.evaluate("window.__voice.slice(-1)[0]") == other, pg.evaluate("window.__voice.slice(-1)[0]"))
+                pg.select_option(".ra-voice select", ""); pg.wait_for_timeout(80)
                 n0 = pg.evaluate("window.__spoken.length")
                 pg.click(".ra-dock .ra-main"); pg.wait_for_timeout(150)
                 paused = pg.evaluate("[document.querySelector('.ra-start').getAttribute('aria-pressed'), window.__spoken.length]")
