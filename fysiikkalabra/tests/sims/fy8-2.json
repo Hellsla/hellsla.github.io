@@ -1,0 +1,250 @@
+[
+ {
+  "expr": "(() => { const S=window.simState; return S.mode==='emissio' && S.ny===3 && S.na===2 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "on load: emission, n_y = 3, n_a = 2 (must run before any setup)"
+ },
+ {
+  "expr": "window.simState.dE",
+  "expected": 1.888889,
+  "tol": 0.01,
+  "note": "on load: ΔE = 1,89 eV (lesson-answers koe1-dE-3)"
+ },
+ {
+  "expr": "window.simState.lam",
+  "expected": 656.46887,
+  "tol": 0.01,
+  "note": "on load: λ = 656 nm (lesson-answers koe1-lam-3)"
+ },
+ {
+  "expr": "(() => { const L=[...document.querySelectorAll('#sim-root select')].map(s=>[...s.options].map(o=>o.value).join(',')); return L.length===4 && L[0]==='emissio,absorptio' && L[1]==='2,3,4,5,6' && L[2]==='1,2,3,4' && L[3]==='0.5,1,2' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "four selects: mode, upper level 2–6, lower level 1–4, speed hidas/normaali/nopea"
+ },
+ {
+  "expr": "(() => { const k=[...document.getElementById('sim-root').children].map(e=>e.tagName==='CANVAS'?'canvas':e.className); return k.indexOf('canvas')<k.indexOf('controls') && k.indexOf('controls')<k.indexOf('readout') ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "DOM order canvas, controls, readout"
+ },
+ {
+  "expr": "(() => { const n=document.querySelectorAll('#sim-root p.note'); return !document.querySelector('#sim-root details') && n.length===1 && n[0].textContent.trim().split(/\\s+/).length<=15 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "no Lisätietoja box; one legend line of at most 15 words"
+ },
+ {
+  "expr": "(() => { const P=window.simAdapter && window.simAdapter.params; return P && Object.keys(P).sort().join(',')==='na,ny,tila' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "adapter declares tila, ny and na"
+ },
+ {
+  "expr": "(() => { const c=document.querySelector('#sim-root canvas'); const w=document.getElementById('sim-root').clientWidth; return c.width===600 && c.height===(w<500?860:400) ? 1 : 0; })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "canvas 600x400 on a wide screen, 600x860 (stacked, larger labels) under 500 px"
+ },
+ {
+  "expr": "(() => { const t=document.querySelector('#sim-root .readout').textContent; return /eV/.test(t) && /nm/.test(t) ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "the readout shows ΔE in eV and λ in nm"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'emissio'); I(S[2],'2'); I(S[1],'3');",
+  "expr": "window.simState.lam",
+  "expected": 656.46887,
+  "tol": 0.01,
+  "note": "koe 1: emission 3 -> 2 gives λ = 656.5 nm (lesson-answers koe1-lam-3)"
+ },
+ {
+  "expr": "window.simState.dE",
+  "expected": 1.888889,
+  "tol": 0.01,
+  "note": "koe 1: ΔE = 1.889 eV"
+ },
+ {
+  "expr": "window.simState.visible",
+  "expected": 1,
+  "tol": 0,
+  "note": "a Balmer line is visible light"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'emissio'); I(S[2],'2'); I(S[1],'4');",
+  "expr": "window.simState.lam",
+  "expected": 486.273237,
+  "tol": 0.01,
+  "note": "koe 1: emission 4 -> 2 gives λ = 486.3 nm (lesson-answers koe1-lam-4)"
+ },
+ {
+  "expr": "window.simState.dE",
+  "expected": 2.55,
+  "tol": 0.01,
+  "note": "koe 1: ΔE = 2.550 eV"
+ },
+ {
+  "expr": "window.simState.visible",
+  "expected": 1,
+  "tol": 0,
+  "note": "a Balmer line is visible light"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'emissio'); I(S[2],'2'); I(S[1],'5');",
+  "expr": "window.simState.lam",
+  "expected": 434.172533,
+  "tol": 0.01,
+  "note": "koe 1: emission 5 -> 2 gives λ = 434.2 nm (lesson-answers koe1-lam-5)"
+ },
+ {
+  "expr": "window.simState.dE",
+  "expected": 2.856,
+  "tol": 0.01,
+  "note": "koe 1: ΔE = 2.856 eV"
+ },
+ {
+  "expr": "window.simState.visible",
+  "expected": 1,
+  "tol": 0,
+  "note": "a Balmer line is visible light"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'emissio'); I(S[2],'2'); I(S[1],'6');",
+  "expr": "window.simState.lam",
+  "expected": 410.293044,
+  "tol": 0.01,
+  "note": "koe 1: emission 6 -> 2 gives λ = 410.3 nm (lesson-answers koe1-lam-6)"
+ },
+ {
+  "expr": "window.simState.dE",
+  "expected": 3.022222,
+  "tol": 0.01,
+  "note": "koe 1: ΔE = 3.022 eV"
+ },
+ {
+  "expr": "window.simState.visible",
+  "expected": 1,
+  "tol": 0,
+  "note": "a Balmer line is visible light"
+ },
+ {
+  "expr": "window.simState.lines",
+  "expected": 4,
+  "tol": 0,
+  "note": "the four Balmer lines are kept on the emission strip"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'absorptio'); I(S[2],'1'); I(S[1],'2');",
+  "expr": "window.simState.lam",
+  "expected": 121.568309,
+  "tol": 0.01,
+  "note": "koe 2: absorption 1 -> 2 needs λ = 121.6 nm (lesson-answers koe2-lam-2)"
+ },
+ {
+  "expr": "window.simState.region==='uv' ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "every absorption from the ground state is ultraviolet"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'absorptio'); I(S[2],'1'); I(S[1],'3');",
+  "expr": "window.simState.lam",
+  "expected": 102.573261,
+  "tol": 0.01,
+  "note": "koe 2: absorption 1 -> 3 needs λ = 102.6 nm (lesson-answers koe2-lam-3)"
+ },
+ {
+  "expr": "window.simState.region==='uv' ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "every absorption from the ground state is ultraviolet"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'absorptio'); I(S[2],'1'); I(S[1],'4');",
+  "expr": "window.simState.lam",
+  "expected": 97.254647,
+  "tol": 0.01,
+  "note": "koe 2: absorption 1 -> 4 needs λ = 97.3 nm (lesson-answers koe2-lam-4)"
+ },
+ {
+  "expr": "window.simState.region==='uv' ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "every absorption from the ground state is ultraviolet"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'absorptio'); I(S[2],'1'); I(S[1],'5');",
+  "expr": "window.simState.lam",
+  "expected": 94.975242,
+  "tol": 0.01,
+  "note": "koe 2: absorption 1 -> 5 needs λ = 95.0 nm (lesson-answers koe2-lam-5)"
+ },
+ {
+  "expr": "window.simState.region==='uv' ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "every absorption from the ground state is ultraviolet"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'absorptio'); I(S[2],'1'); I(S[1],'6');",
+  "expr": "window.simState.lam",
+  "expected": 93.781267,
+  "tol": 0.01,
+  "note": "koe 2: absorption 1 -> 6 needs λ = 93.8 nm (lesson-answers koe2-lam-6)"
+ },
+ {
+  "expr": "window.simState.region==='uv' ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "every absorption from the ground state is ultraviolet"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'absorptio'); I(S[2],'1'); I(S[1],'2');",
+  "expr": "window.simState.dE",
+  "expected": 10.2,
+  "tol": 0.01,
+  "note": "koe 2: ΔE = 10,2 eV from n = 1 to n = 2"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'emissio'); I(S[2],'3'); I(S[1],'5');",
+  "expr": "window.simState.lam",
+  "expected": 1282.165761,
+  "tol": 0.01,
+  "note": "emission 5 -> 3 is infrared, 1282 nm"
+ },
+ {
+  "expr": "window.simState.region==='ir' ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "a transition to n = 3 is infrared"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'emissio'); I(S[2],'3'); I(S[1],'2');",
+  "expr": "window.simState.valid",
+  "expected": 0,
+  "tol": 0,
+  "note": "upper level below the lower one: no transition, the readout asks for a larger n_y"
+ },
+ {
+  "expr": "/Valitse/.test(document.querySelector('#sim-root .readout').textContent) ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "the readout says what to change"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'emissio'); I(S[2],'2'); I(S[1],'3'); document.querySelector('#sim-root .controls button').click();",
+  "expr": "window.simState.lines",
+  "expected": 1,
+  "tol": 0,
+  "note": "Tyhjennä spektri clears the strip; the current transition stays"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[3],'2');",
+  "expr": "(() => { const S=[...document.querySelectorAll('#sim-root select')]; return S[3].value==='2' && Math.abs(window.simState.lam-656.47)<0.1 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "the speed select changes only the pace; the values stay"
+ }
+]

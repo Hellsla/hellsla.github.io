@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Kaasun atomilla on kolme energiatilaa: $0$, $2{,}0\\,\\text{eV}$ ja $3{,}0\\,\\text{eV}$. Kuinka monta eri spektriviivaa kuuma kaasu voi lähettää, ja mitkä ovat niiden fotonien energiat?",
+    "a": "Kolme viivaa, yksi jokaista tilaparia kohti. Fotonien energiat ovat tilojen erotukset: $3{,}0\\,\\text{eV} - 2{,}0\\,\\text{eV} = 1{,}0\\,\\text{eV}$, $2{,}0\\,\\text{eV} - 0 = 2{,}0\\,\\text{eV}$ ja $3{,}0\\,\\text{eV} - 0 = 3{,}0\\,\\text{eV}$."
+  },
+  {
+    "q": "Mitä eroa on saman kaasun emissiospektrillä ja absorptiospektrillä, ja mikä niissä on samaa?",
+    "a": "Emissiospektrissä kuuma kaasu lähettää kirkkaita viivoja tummalla pohjalla; absorptiospektrissä jatkuvassa spektrissä on tummia viivoja, kun valo on kulkenut kaasun läpi. Jokainen absorptioviiva on samalla aallonpituudella kuin jokin emissioviiva, koska molemmat vastaavat samaa energiatilojen erotusta. Kylmä kaasu absorboi vain niistä tiloista, joissa sen atomeja on, joten absorptioviivoja on yleensä vähemmän."
+  }
+]

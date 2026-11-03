@@ -1572,7 +1572,7 @@
       "nopea": "nopea",
       "vali": "Laskentaväli $x_0 = {{x}}\\,\\text{mm}$",
       "selite": "Pisteet ovat osumia, katkoviiva mallin odotusarvo, vihreä kaista laskentaväli.",
-      "lukemat": "Osumia yhteensä $N = {{N}}$<br>Laskentavälillä $x_0 \\pm 0{,}2\\,\\text{mm}$ ($x_0 = {{x}}\\,\\text{mm}$): $n = {{n}}$<br><strong>Osuus $n : N = {{o}}\\,\\%$</strong>",
+      "lukemat": "Osumia yhteensä ${N = {{N}}}$<br>Laskentavälillä $x_0 \\pm 0{,}2\\,\\text{mm}$: ${n = {{n}}}$<br><strong>Osuus ${n : N = {{o}}\\,\\%}$</strong>",
       "lbl_lahde_f": "$\\text{fotonilähde}$",
       "lbl_lahde_e": "$\\text{elektronilähde}$",
       "lbl_raot": "$\\text{raot}$",
