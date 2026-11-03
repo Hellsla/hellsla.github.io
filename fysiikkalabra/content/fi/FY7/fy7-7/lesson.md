@@ -444,7 +444,7 @@ Moni ajattelee, että jännite on suurin silloin, kun käämin läpi kulkee enit
 - Generaattorissa käämi pyörii magneettikentässä (tai magneetti käämin sisällä), ja käämin läpi kulkeva vuo $\Phi = BA\cos(2\pi f t)$ vaihtelee jatkuvasti.
 - Induktiojännite riippuu vuon muutosnopeudesta: se on nolla, kun vuo on suurin, ja suurin, kun käämin taso on kentän suuntainen ja vuo on nolla.
 - Syntyy sinimuotoinen vaihtojännite $e = e_0 \sin(2\pi f t)$, jonka huippuarvo on $e_0 = NBA \cdot 2\pi f$ ja taajuus sama kuin pyörimistaajuus.
-- Tehollinen arvo on $U = U_0 : \sqrt{2}$ ja $I = I_0 : \sqrt{2}$, ja keskimääräinen teho on $P = UI$. Verkkojännitteen $230\,\text{V}$ huippuarvo on noin $325\,\text{V}$ ja taajuus $50\,\text{Hz}$.
+- Sinimuotoisen vaihtojännitteen tehollinen arvo on $U = U_0 : \sqrt{2}$ ja $I = I_0 : \sqrt{2}$, ja keskimääräinen teho on $P = UI$. Verkkojännitteen $230\,\text{V}$ huippuarvo on noin $325\,\text{V}$ ja taajuus $50\,\text{Hz}$.
 - Tuulivoimalan roottori pyörittää generaattoria, ja taajuusmuuttaja sovittaa jännitteen verkon taajuuteen.
 
 <svg data-fig="scene" viewBox="0 0 600 360" role="img" aria-label="Kuvitus: pyöräilijä ajaa iltahämärässä. Etupyörän navassa on dynamo, joka tuottaa lampulle vaihtojännitteen, ja lampun valokeila valaisee tietä pyörän edessä." style="max-width:100%;font-size:24px">

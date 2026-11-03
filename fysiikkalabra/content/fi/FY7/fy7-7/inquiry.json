@@ -156,7 +156,7 @@
       "type": "experiment",
       "optional": true,
       "title": "Koe 2: vain magneettikenttä muuttuu",
-      "intro": "Käämissä on $500$ kierrosta ja pyörimistaajuus on $2{,}0\\,\\text{Hz}$; muuta vain magneettivuon tiheyttä. Kirjaa huippujännite ainakin kentillä $0{,}10\\,\\text{T}$, $0{,}20\\,\\text{T}$ ja $0{,}30\\,\\text{T}$. Kokeile lopuksi, mitä tapahtuu, kun kierrosten lukumäärä kaksinkertaistuu.",
+      "intro": "Käämissä on $500$ kierrosta ja pyörimistaajuus on $2{,}0\\,\\text{Hz}$; muuta vain magneettivuon tiheyttä. Kirjaa huippujännite ainakin kentillä $0{,}10\\,\\text{T}$, $0{,}20\\,\\text{T}$ ja $0{,}30\\,\\text{T}$. Päättele lopuksi kaavasta, mitä huippujännitteelle tapahtuisi, jos kierrosten lukumäärä kaksinkertaistettaisiin.",
       "initial": {
         "N": "500",
         "B": 0.1,
