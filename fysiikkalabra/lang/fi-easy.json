@@ -1622,6 +1622,22 @@
         "rinnan": "rinnankytkentä"
       },
       "samavirta": "$\\text{sama virta}$"
+    },
+    "fy6-5": {
+      "jannite": "Lähteen jännite $U = {{U}}\\,\\text{V}$",
+      "vastus": "Vastus $R_{{n}} = {{R}}\\,\\Omega$",
+      "mittauskohta": "Mittauskohta",
+      "kohtaA": "kohta A",
+      "kohtaB": "kohta B",
+      "kohtaC": "kohta C",
+      "kohtaD": "kohta D",
+      "kohtaE": "kohta E",
+      "kohtaF": "kohta F",
+      "nollakohta": "Nollakohta",
+      "nollaF": "lähteen miinusnapa",
+      "nollaB": "haarautumispiste B",
+      "selite": "Sininen: potentiaali, tummempi on korkeampi. Violetti: virta. Mittarin musta johto on nollakohdassa.",
+      "lukemat": "Virrat $I_1 = {{I1}}\\,\\text{A}$, $I_2 = {{I2}}\\,\\text{A}$, $I_3 = {{I3}}\\,\\text{A}$<br>Jännitteet $U_1 = {{U1}}\\,\\text{V}$, $U_2 = U_3 = {{U2}}\\,\\text{V}$<br>Silmukan summa $U - U_1 - U_2 = {{sum}}\\,\\text{V}$<br><strong>Mittari {{Vp}}</strong>"
     }
   },
   "practice": {

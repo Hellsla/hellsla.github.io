@@ -1622,6 +1622,22 @@
         "rinnan": "parallel connection"
       },
       "samavirta": "$\\text{same current}$"
+    },
+    "fy6-5": {
+      "jannite": "Source voltage $U = {{U}}\\,\\text{V}$",
+      "vastus": "Resistor $R_{{n}} = {{R}}\\,\\Omega$",
+      "mittauskohta": "Measuring point",
+      "nollakohta": "Zero point",
+      "nollaF": "source's negative terminal",
+      "nollaB": "junction B",
+      "selite": "Blue: potential, darker is higher. Purple: current. Black lead at the zero point.",
+      "lukemat": "Currents $I_1 = {{I1}}\\,\\text{A}$, $I_2 = {{I2}}\\,\\text{A}$, $I_3 = {{I3}}\\,\\text{A}$<br>Voltages $U_1 = {{U1}}\\,\\text{V}$, $U_2 = U_3 = {{U2}}\\,\\text{V}$<br>Loop $U - U_1 - U_2 = {{sum}}\\,\\text{V}$<br><strong>Meter {{Vp}}</strong>",
+      "kohtaA": "point A",
+      "kohtaB": "point B",
+      "kohtaC": "point C",
+      "kohtaD": "point D",
+      "kohtaE": "point E",
+      "kohtaF": "point F"
     }
   },
   "practice": {
