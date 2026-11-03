@@ -1,0 +1,105 @@
+{
+  "level1": [
+    {
+      "id": "fy6-11-L1-01",
+      "level": 1,
+      "text": "Pieneen palloon, jonka varaus on $3{,}0 \\cdot 10^{-9}\\,\\text{C}$, kohdistuu sähkökentässä voima $1{,}2 \\cdot 10^{-4}\\,\\text{N}$. Kuinka suuri on sähkökentän voimakkuus pallon kohdalla?",
+      "answer": 40000.0,
+      "unit": "N/C",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-11-L1-02",
+      "level": 1,
+      "text": "Homogeenisen sähkökentän voimakkuus on $2{,}0 \\cdot 10^{4}\\,\\text{N/C}$. Kenttään tuodaan pieni pallo, jonka varaus on $5{,}0\\,\\text{nC}$. Kuinka suuri sähköinen voima palloon kohdistuu? Vastaa mikronewtoneina.",
+      "answer": 100.0,
+      "unit": "µN",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-11-L1-03",
+      "level": 1,
+      "text": "Kahden yhdensuuntaisen metallilevyn välinen jännite on $600\\,\\text{V}$, ja levyjen etäisyys on $0{,}040\\,\\text{m}$. Kuinka suuri on sähkökentän voimakkuus levyjen välissä?",
+      "answer": 15000.0,
+      "unit": "V/m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-11-L1-04",
+      "level": 1,
+      "text": "Solukalvon sisä- ja ulkopinnalla on vastakkaismerkkiset varaukset, ja kalvon sisällä on likimain homogeeninen sähkökenttä, jonka voimakkuus on $1{,}0 \\cdot 10^{7}\\,\\text{V/m}$. Kalvon paksuus on $7{,}0 \\cdot 10^{-9}\\,\\text{m}$. Kuinka suuri jännite kalvon yli on? Vastaa millivoltteina.",
+      "answer": 70.0,
+      "unit": "mV",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-11-L1-05",
+      "level": 1,
+      "text": "Pieni pallo pidetään aina samassa kohdassa kahden levyn välissä, ja sen varausta muutetaan. Kuvaajassa on palloon kohdistuva sähköinen voima varauksen funktiona ja pisteisiin sovitettu suora. Kuinka suuri on sähkökentän voimakkuus pallon kohdalla? Määritä se kuvaajasta.",
+      "figure": "fy6-11/fq-graph",
+      "answer": 30000.0,
+      "unit": "N/C",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy6-11-L2-01",
+      "level": 2,
+      "text": "Kahden yhdensuuntaisen levyn välinen jännite on $4{,}5\\,\\text{kV}$, ja levyjen etäisyys on $9{,}0\\,\\text{mm}$. Levyjen väliin tuodaan pieni pallo, jonka varaus on $4{,}0\\,\\text{nC}$. Kuinka suuri sähköinen voima palloon kohdistuu? Vastaa millinewtoneina.",
+      "answer": 2.0,
+      "unit": "mN",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-11-L2-02",
+      "level": 2,
+      "text": "Kahden yhdensuuntaisen levyn etäisyys on $5{,}0\\,\\text{cm}$. Levyjen välissä olevaan pieneen palloon, jonka varaus on $8{,}0\\,\\text{nC}$, kohdistuu sähköinen voima $2{,}4\\,\\text{mN}$. Kuinka suuri on levyjen välinen jännite? Vastaa kilovoltteina.",
+      "answer": 15.0,
+      "unit": "kV",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-11-L2-03",
+      "level": 2,
+      "text": "Ilmanpuhdistimen levyjen välinen jännite on $3{,}0\\,\\text{kV}$, ja levyjen etäisyys on $6{,}0\\,\\text{mm}$. Levyjen väliin tulevan pölyhiukkasen varaus on $1{,}6 \\cdot 10^{-17}\\,\\text{C}$ ja massa $4{,}0 \\cdot 10^{-14}\\,\\text{kg}$. Kuinka monta kertaa suurempi hiukkaseen kohdistuva sähköinen voima on kuin sen paino?",
+      "answer": 20.38736,
+      "unit": "kertaa",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy6-11-L2-04",
+      "level": 2,
+      "text": "Kahden levyn välissä olevaan varattuun palloon kohdistuu sähköinen voima $0{,}15\\,\\text{mN}$, kun levyjen etäisyys on $6{,}0\\,\\text{cm}$. Levyjä siirretään lähemmäs toisiaan niin, että etäisyys on $2{,}0\\,\\text{cm}$, ja jännite pidetään samana. Pallo pysyy levyjen välissä kaukana levyjen päistä. Kuinka suuri voima palloon nyt kohdistuu? Vastaa millinewtoneina.",
+      "answer": 0.45,
+      "unit": "mN",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy6-11-L3-01",
+      "level": 3,
+      "text": "Negatiivinen öljypisara leijuu paikallaan kahden vaakasuoran levyn välissä, kun levyjen välinen jännite on $450\\,\\text{V}$ ja positiivinen levy on ylempänä. Pisaran varaus on kolme alkeisvarausta. Pisara saa yhden ylimääräisen elektronin lisää, jolloin sen varaus on neljä alkeisvarausta, mutta sen massa ei muutu. Kuinka suuri jännite tarvitaan, jotta pisara leijuu taas paikallaan?",
+      "answer": 337.5,
+      "unit": "V",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-11-L3-02",
+      "level": 3,
+      "text": "Elektroni lähtee levosta negatiivisen levyn luota ja kiihtyy homogeenisessa kentässä positiiviselle levylle. Levyjen välinen jännite on $50\\,\\text{V}$, ja levyjen etäisyys on $1{,}0\\,\\text{cm}$. Elektronin massa on $9{,}109 \\cdot 10^{-31}\\,\\text{kg}$ ja varauksen suuruus $1{,}602 \\cdot 10^{-19}\\,\\text{C}$. Kuinka suuri on elektronin nopeus, kun se saapuu positiiviselle levylle? Vastaa kilometreinä sekunnissa.",
+      "answer": 4193.685952,
+      "unit": "km/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-11-L3-03",
+      "level": 3,
+      "text": "Pieni varattu muovipallo, jonka massa on $2{,}0\\,\\text{g}$, riippuu eristelangan varassa vaakasuuntaisessa homogeenisessa sähkökentässä, jonka voimakkuus on $1{,}5 \\cdot 10^{5}\\,\\text{N/C}$. Pallo on levossa, ja lanka on kääntynyt $10^\\circ$:n kulmaan pystysuorasta. Kuinka suuri on pallon varaus? Vastaa nanocoulombeina.",
+      "answer": 23.063569,
+      "unit": "nC",
+      "tolerance": 0.02
+    }
+  ]
+}

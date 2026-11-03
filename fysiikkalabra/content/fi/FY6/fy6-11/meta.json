@@ -1,0 +1,22 @@
+{
+  "id": "fy6-11",
+  "course": "FY6",
+  "title": "Homogeeninen sähkökenttä",
+  "goals": [
+    "LOPS FY6: Coulombin laki ja homogeeninen sähkökenttä",
+    "LOPS FY6: osaa käyttää kentän ja potentiaalin käsitteitä sähkökentän kuvaamisessa"
+  ],
+  "prerequisites": [
+    "fy6-10"
+  ],
+  "glossary": [
+    "sähkökenttä",
+    "homogeeninen sähkökenttä",
+    "sähkökentän voimakkuus",
+    "kenttäviiva",
+    "testivaraus"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

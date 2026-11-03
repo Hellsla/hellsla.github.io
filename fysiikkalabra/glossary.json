@@ -1101,7 +1101,8 @@
     "definition": "Kappaleen asemaan sidottu energia. Painovoiman potentiaalienergia on E_p = m g h, missä h on korkeus valitusta nollatasosta.",
     "lessons": [
       "fy4-7",
-      "fy4-15"
+      "fy4-15",
+      "fy6-12"
     ],
     "see_also": [
       "energia",
@@ -3539,9 +3540,10 @@
   },
   {
     "term": "potentiaali",
-    "definition": "Virtapiirin kohdan jännite valittuun nollakohtaan nähden, yksikkö voltti (V). Kahden kohdan välinen jännite on niiden potentiaalien erotus, eikä se riipu nollakohdan valinnasta.",
+    "definition": "Sähkökentän tai virtapiirin kohdan jännite valittuun nollakohtaan nähden eli varauksen potentiaalienergia varausyksikköä kohti, yksikkö voltti (V = J/C). Kahden kohdan välinen jännite on niiden potentiaalien erotus, eikä se riipu nollakohdan valinnasta.",
     "lessons": [
-      "fy6-5"
+      "fy6-5",
+      "fy6-12"
     ],
     "see_also": [
       "Kirchhoffin jännitelaki"
@@ -3661,7 +3663,8 @@
     "term": "eriste",
     "definition": "Aine, jossa varaukset eivät pääse liikkumaan, esimerkiksi muovi, kumi, lasi ja kuiva puu. Sähköjohdon kuori on eristettä.",
     "lessons": [
-      "fy6-1"
+      "fy6-1",
+      "fy6-13"
     ],
     "see_also": [
       "johde"
@@ -3786,6 +3789,210 @@
     ],
     "see_also": [
       "akku"
+    ],
+    "locked": false
+  },
+  {
+    "term": "potentiaaliero",
+    "definition": "Kahden kohdan potentiaalien erotus eli niiden välinen jännite, yksikkö voltti (V). Kun varaus q siirtyy kohdasta A kohtaan B, sähkökenttä tekee työn q(V_A − V_B).",
+    "lessons": [
+      "fy6-12"
+    ],
+    "see_also": [
+      "potentiaali",
+      "jännite"
+    ],
+    "locked": false
+  },
+  {
+    "term": "elektronivoltti",
+    "definition": "Energian yksikkö eV: energia, jonka alkeisvarauksen suuruinen varaus saa kulkiessaan yhden voltin potentiaalieron läpi. 1 eV = 1,602 · 10⁻¹⁹ J.",
+    "lessons": [
+      "fy6-12"
+    ],
+    "see_also": [
+      "potentiaaliero"
+    ],
+    "locked": false
+  },
+  {
+    "term": "tasapotentiaalipinta",
+    "definition": "Pinta, jonka kaikissa kohdissa sähkökentän potentiaali on sama. Kenttäviivat ovat sitä vastaan kohtisuorassa, eikä kenttä tee työtä varaukseen, joka siirtyy pintaa pitkin.",
+    "lessons": [
+      "fy6-12"
+    ],
+    "see_also": [
+      "potentiaali"
+    ],
+    "locked": false
+  },
+  {
+    "term": "sähkövaraus",
+    "definition": "Hiukkasten ja kappaleiden ominaisuus, jonka vuoksi ne vaikuttavat toisiinsa sähköisellä vuorovaikutuksella. Varausta on kahta lajia: samanmerkkiset varaukset hylkivät ja erimerkkiset vetävät toisiaan puoleensa. Yksikkö on coulombi $\\text{C}$. Eristetyn systeemin kokonaisvaraus säilyy.",
+    "lessons": [
+      "fy6-10"
+    ],
+    "see_also": [
+      "alkeisvaraus",
+      "Coulombin laki",
+      "sähkövirta"
+    ],
+    "locked": false
+  },
+  {
+    "term": "alkeisvaraus",
+    "definition": "Pienin vapaana esiintyvä varaus, $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$. Protonin varaus on $+e$ ja elektronin $-e$, ja kappaleen varaus on aina alkeisvarauksen monikerta, $Q = ne$.",
+    "lessons": [
+      "fy6-10"
+    ],
+    "see_also": [
+      "sähkövaraus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "Coulombin laki",
+    "definition": "Kahden pistevarauksen välisen sähköisen voiman suuruus $F = k\\,\\tfrac{\\lvert q_1 q_2 \\rvert}{r^2}$, missä $k = 8{,}99 \\cdot 10^{9}\\,\\tfrac{\\text{N} \\cdot \\text{m}^2}{\\text{C}^2}$. Voimat ovat varausten välisellä suoralla, yhtä suuret ja vastakkaissuuntaiset; samanmerkkiset varaukset hylkivät ja erimerkkiset vetävät toisiaan.",
+    "lessons": [
+      "fy6-10"
+    ],
+    "see_also": [
+      "sähkövaraus",
+      "pistevaraus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "pistevaraus",
+    "definition": "Varattu kappale, jonka koko on pieni verrattuna tarkasteltaviin etäisyyksiin. Sen kenttäviivat ovat säteittäisiä: positiivisesta varauksesta ulospäin ja negatiiviseen sisäänpäin.",
+    "lessons": [
+      "fy6-10"
+    ],
+    "see_also": [
+      "Coulombin laki",
+      "sähkövaraus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "influenssi",
+    "definition": "Varauksen siirtyminen johteessa, kun varattu kappale tuodaan sen lähelle koskematta siihen: johteen lähipuolelle tulee vastakkaismerkkinen ja kaukaiselle puolelle samanmerkkinen varaus. Johteen kokonaisvaraus ei muutu, ja varattu kappale vetää johdetta puoleensa.",
+    "lessons": [
+      "fy6-10"
+    ],
+    "see_also": [
+      "sähkövaraus",
+      "johde"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kondensaattori",
+    "definition": "Virtapiirin komponentti, jossa on kaksi johdekappaletta, esimerkiksi metallilevyä, ja niiden välissä eriste. Ladattaessa levyjen varaukset ovat $+Q$ ja $-Q$, ja energia varastoituu levyjen väliseen sähkökenttään.",
+    "lessons": [
+      "fy6-13"
+    ],
+    "see_also": [
+      "kapasitanssi",
+      "eriste",
+      "kondensaattorin energia"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kapasitanssi",
+    "definition": "Kondensaattorin varauksen ja jännitteen suhde $C = \\tfrac{Q}{U}$, yksikkö faradi ($1\\,\\text{F} = 1\\,\\tfrac{\\text{C}}{\\text{V}}$). Se riippuu vain kondensaattorin rakenteesta; levykondensaattorille $C = \\tfrac{\\varepsilon_0 \\varepsilon_\\text{r} A}{d}$.",
+    "lessons": [
+      "fy6-13"
+    ],
+    "see_also": [
+      "kondensaattori"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kondensaattorin energia",
+    "definition": "Ladatun kondensaattorin sähkökenttään varastoitunut energia $W = \\tfrac{1}{2} Q U = \\tfrac{1}{2} C U^2$. Se on kondensaattorin $(Q, U)$-kuvaajan alle jäävän kolmion pinta-ala.",
+    "lessons": [
+      "fy6-13"
+    ],
+    "see_also": [
+      "kondensaattori",
+      "kapasitanssi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "läpilyöntilujuus",
+    "definition": "Suurin sähkökentän voimakkuus $E_\\text{max}$, jonka eriste kestää alkamatta johtaa. Kun kenttä ylittää sen, eristeen läpi purkautuu kipinä. Ilmalle se on noin $3\\,\\text{MV/m}$.",
+    "lessons": [
+      "fy6-13"
+    ],
+    "see_also": [
+      "eriste",
+      "kondensaattori"
+    ],
+    "locked": false
+  },
+  {
+    "term": "sähkökenttä",
+    "definition": "Varauksen ympärilleen aiheuttama tilan ominaisuus: jokaiseen kentässä olevaan varaukseen kohdistuu sähköinen voima. Kenttä on olemassa, vaikka kohdassa ei olisi varausta, johon se vaikuttaisi.",
+    "lessons": [
+      "fy6-11"
+    ],
+    "see_also": [
+      "sähkökentän voimakkuus",
+      "kenttäviiva",
+      "homogeeninen sähkökenttä"
+    ],
+    "locked": false
+  },
+  {
+    "term": "sähkökentän voimakkuus",
+    "definition": "Pieneen testivaraukseen kohdistuva sähköinen voima jaettuna varauksella, E = F : q. Vektorisuure, jonka suunta on positiiviseen varaukseen kohdistuvan voiman suunta; yksikkö N/C = V/m. Symboli E on sama kuin lähdejännitteellä, mutta suureet ovat eri.",
+    "lessons": [
+      "fy6-11"
+    ],
+    "see_also": [
+      "sähkökenttä",
+      "testivaraus",
+      "homogeeninen sähkökenttä"
+    ],
+    "locked": false
+  },
+  {
+    "term": "homogeeninen sähkökenttä",
+    "definition": "Sähkökenttä, jonka voimakkuus ja suunta ovat samat kaikkialla, esimerkiksi kahden laajan yhdensuuntaisen, vastakkaismerkkisesti varatun levyn välissä kaukana levyjen päistä. Sen voimakkuus on E = U : d.",
+    "lessons": [
+      "fy6-11"
+    ],
+    "see_also": [
+      "sähkökenttä",
+      "sähkökentän voimakkuus",
+      "kenttäviiva"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kenttäviiva",
+    "definition": "Sähkökenttää kuvaava viiva, jonka suunta kussakin kohdassa on kentän suunta. Kenttäviivat lähtevät positiivisista ja päättyvät negatiivisiin varauksiin, eivät leikkaa toisiaan, ja niiden tiheys kertoo kentän voimakkuuden. Kenttäviiva ei ole varauksen rata.",
+    "lessons": [
+      "fy6-11"
+    ],
+    "see_also": [
+      "sähkökenttä",
+      "homogeeninen sähkökenttä"
+    ],
+    "locked": false
+  },
+  {
+    "term": "testivaraus",
+    "definition": "Pieni positiivinen varaus, jolla sähkökenttää tutkitaan. Se on niin pieni, ettei se muuta kenttää aiheuttavien varausten paikkoja.",
+    "lessons": [
+      "fy6-11"
+    ],
+    "see_also": [
+      "sähkökentän voimakkuus"
     ],
     "locked": false
   }

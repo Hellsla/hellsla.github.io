@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy6-10-L1-01",
+      "level": 1,
+      "text": "Hiuksiin hierotun kamman varaus on $-6{,}4\\,\\text{nC}$. Kuinka monta ylimääräistä elektronia kammassa on? Alkeisvaraus on $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$.",
+      "answer": 39950000000.0,
+      "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-10-L1-02",
+      "level": 1,
+      "text": "Kahden pienen pallon varaukset ovat $+15\\,\\text{nC}$ ja $+25\\,\\text{nC}$, ja pallojen keskipisteiden etäisyys on $4{,}0\\,\\text{cm}$. Kuinka suuri on pallojen välinen sähköinen voima? Vastaa millinewtoneina.",
+      "answer": 2.107,
+      "unit": "mN",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-10-L1-03",
+      "level": 1,
+      "text": "Salamassa siirtyy ukkospilven ja maan välillä varaus $5{,}0\\,\\text{C}$ ajassa $0{,}20\\,\\text{ms}$. Kuinka suuri on keskimääräinen sähkövirta? Vastaa kiloampeereina.",
+      "answer": 25,
+      "unit": "kA",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-10-L1-04",
+      "level": 1,
+      "text": "Kahden samanlaisen metallipallon varaukset ovat $+12\\,\\text{nC}$ ja $-4{,}0\\,\\text{nC}$. Pallot kosketetaan toisiinsa ja erotetaan. Kuinka suuri on kummankin pallon varaus kosketuksen jälkeen? Vastaa nanocoulombeina.",
+      "answer": 4.0,
+      "unit": "nC",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-10-L1-05",
+      "level": 1,
+      "text": "Kaksi pistevarausta, $+2{,}0\\,\\mu\\text{C}$ ja $-4{,}0\\,\\mu\\text{C}$, ovat $0{,}50\\,\\text{m}$:n etäisyydellä toisistaan. Kuinka suuri on niiden välinen sähköinen voima?",
+      "answer": 0.2877,
+      "unit": "N",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy6-10-L2-01",
+      "level": 2,
+      "text": "Kaksi pientä palloa, joiden kummankin varaus on $+30\\,\\text{nC}$, hylkii toisiaan voimalla $2{,}0\\,\\text{mN}$. Kuinka kaukana pallojen keskipisteet ovat toisistaan? Vastaa senttimetreinä.",
+      "answer": 6.36,
+      "unit": "cm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-10-L2-02",
+      "level": 2,
+      "text": "Kun kahden varatun pallon keskipisteiden etäisyys on $4{,}0\\,\\text{cm}$, niiden välinen voima on $3{,}6\\,\\text{mN}$. Pallot siirretään $10\\,\\text{cm}$:n etäisyydelle toisistaan, ja niiden varaukset pysyvät samoina. Kuinka suuri voima on nyt? Vastaa millinewtoneina.",
+      "answer": 0.576,
+      "unit": "mN",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-10-L2-03",
+      "level": 2,
+      "text": "Kahden samanlaisen metallipallon varaukset ovat $+18\\,\\text{nC}$ ja $-6{,}0\\,\\text{nC}$. Pallot kosketetaan toisiinsa ja erotetaan niin, että niiden keskipisteiden etäisyys on $4{,}0\\,\\text{cm}$. Kuinka suuri on pallojen välinen voima nyt? Vastaa millinewtoneina.",
+      "answer": 0.2023,
+      "unit": "mN",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-10-L2-04",
+      "level": 2,
+      "text": "Kahden samanlaisen pienen pallon massa on kummankin $0{,}50\\,\\text{g}$, ja niillä on yhtä suuret varaukset. Pallojen keskipisteiden etäisyys on $5{,}0\\,\\text{cm}$. Kuinka suuri varaus palloissa on, kun niiden välinen sähköinen voima on yhtä suuri kuin pallon paino? Vastaa nanocoulombeina.",
+      "answer": 36.93,
+      "unit": "nC",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy6-10-L3-01",
+      "level": 3,
+      "text": "Pistevaraus $q_1 = +20\\,\\text{nC}$ on kohdassa $x = 0$ ja pistevaraus $q_2 = -20\\,\\text{nC}$ kohdassa $x = 10\\,\\text{cm}$. Niiden puoliväliin, kohtaan $x = 5{,}0\\,\\text{cm}$, tuodaan pistevaraus $q_3 = +5{,}0\\,\\text{nC}$. Kuinka suuri on varaukseen $q_3$ vaikuttava kokonaisvoima? Vastaa millinewtoneina.",
+      "answer": 0.7192,
+      "unit": "mN",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-10-L3-02",
+      "level": 3,
+      "text": "Vetyatomissa elektroni ja protoni vetävät toisiaan puoleensa sekä sähköisellä voimalla että gravitaatiovoimalla $F_\\text{g} = G\\,\\tfrac{m_\\text{e} m_\\text{p}}{r^2}$, missä $G = 6{,}674 \\cdot 10^{-11}\\,\\tfrac{\\text{N} \\cdot \\text{m}^2}{\\text{kg}^2}$. Elektronin massa on $m_\\text{e} = 9{,}109 \\cdot 10^{-31}\\,\\text{kg}$ ja protonin $m_\\text{p} = 1{,}673 \\cdot 10^{-27}\\,\\text{kg}$. Kuinka monta kertaa suurempi sähköinen voima on kuin gravitaatiovoima? Selitä myös, miksi vastaus ei riipu etäisyydestä.",
+      "answer": 2.268e+39,
+      "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-10-L3-03",
+      "level": 3,
+      "text": "Pistevaraus $+4{,}0\\,\\text{nC}$ on kohdassa $x = 0$ ja pistevaraus $+1{,}0\\,\\text{nC}$ kohdassa $x = 12\\,\\text{cm}$. Niiden välissä olevalle $x$-akselin kohdalle tuodaan kolmas pistevaraus. Missä kohdassa kolmanteen varaukseen ei vaikuta kokonaisvoimaa? Vastaa senttimetreinä kohdasta $x = 0$.",
+      "answer": 8.0,
+      "unit": "cm",
+      "tolerance": 0.02
+    }
+  ]
+}
