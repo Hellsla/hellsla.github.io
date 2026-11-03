@@ -763,3 +763,28 @@ main .book-text{margin:0 0 .7rem}
 .book-facts{display:flex;flex-wrap:wrap;gap:.2rem 1.4rem;margin:0;font-size:var(--fs-small);color:var(--ink-2)}
 .book-facts>div{display:flex;gap:.35rem}.book-facts dt{font-weight:700;color:var(--ink)}.book-facts dt::after{content:":"}.book-facts dd{margin:0}
 @media (max-width:29.99rem){ol.books>li.book{padding-left:2.6rem}ol.books>li.book::before{width:1.9rem;height:1.9rem}}
+
+/* Read aloud (readaloud.js, teacher 2026-11-03): the Kuuntele button under the title, the control bar fixed at the
+   bottom while reading, and where the reading is: the block tinted, the sentence and the word highlighted (CSS Custom
+   Highlight API, the page itself is not changed). Outline and shadow only, so the layout never moves. */
+.ra-bar{margin:.25rem 0 1rem}
+.ra-ui svg{width:22px;height:22px;max-width:none;flex:none}
+.ra-start,.ra-btn{display:inline-flex;align-items:center;justify-content:center;gap:.45rem;min-height:44px;min-width:44px;font:600 var(--fs-ui) var(--sans);border:1px solid var(--accent-deep);border-radius:999px;background:var(--surface);color:var(--accent-deep);cursor:pointer}
+.ra-start{padding:0 1.1rem 0 .9rem}
+.ra-start[aria-pressed="true"],.ra-btn.ra-main{background:var(--accent-deep);color:#fff}
+.ra-start:hover,.ra-btn:hover{background:var(--accent-soft);color:var(--accent-deep)}
+.ra-start[aria-pressed="true"]:hover,.ra-btn.ra-main:hover{background:var(--accent);color:#fff}
+.ra-start:focus-visible,.ra-btn:focus-visible,.ra-speed:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.ra-dock{position:fixed;left:50%;bottom:max(.75rem,env(safe-area-inset-bottom));transform:translateX(-50%);z-index:60;width:max-content;max-width:calc(100vw - 1.5rem);
+  padding:.5rem .6rem;border:1px solid var(--line);border-radius:18px;background:var(--surface);box-shadow:0 10px 30px rgba(20,23,30,.18)}
+.ra-dock[hidden]{display:none}
+.ra-row{display:flex;align-items:center;gap:.4rem}
+.ra-speed{min-height:44px;padding:0 .5rem;font:500 var(--fs-ui) var(--sans);color:var(--ink);border:1px solid var(--line);border-radius:10px;background:var(--surface)}
+.ra-note{margin:.4rem .2rem 0;max-width:22rem;font-size:var(--fs-small);line-height:1.45;color:var(--ink-2)}
+.ra-note[hidden]{display:none}
+html.ra-reading body{padding-bottom:6rem}
+.ra-on{background:#fff9db;box-shadow:0 0 0 .35rem #fff9db;border-radius:4px}
+::highlight(ra-sentence){background-color:#ffec99;color:var(--ink)}
+::highlight(ra-word){background-color:#fcc419;color:var(--ink);text-decoration:underline;text-decoration-thickness:2px}
+@media (max-width:400px){.ra-row{gap:.25rem}.ra-speed{padding:0 .25rem}}
+@media print{.ra-ui{display:none!important}.ra-on{background:none;box-shadow:none}}
