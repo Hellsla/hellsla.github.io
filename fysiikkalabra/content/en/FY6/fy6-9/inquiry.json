@@ -134,7 +134,7 @@
       "names": {
         "t": "duration of charging",
         "Ulat": "charger voltage",
-        "R": "charger and wires resistance",
+        "R": "resistance of charger and wires",
         "alku": "charge level at the start"
       },
       "units": {
@@ -180,7 +180,7 @@
       "names": {
         "t": "duration of charging",
         "Ulat": "charger voltage",
-        "R": "charger and wires resistance",
+        "R": "resistance of charger and wires",
         "alku": "charge level at the start"
       },
       "units": {
@@ -223,7 +223,7 @@
       "names": {
         "t": "duration of charging",
         "Ulat": "charger voltage",
-        "R": "charger and wires resistance",
+        "R": "resistance of charger and wires",
         "alku": "charge level at the start"
       },
       "units": {
@@ -281,7 +281,7 @@
       "type": "reflect",
       "title": "Return to your predictions",
       "optional": true,
-      "prompt": "Compare your predictions with the values of the model in the experiments and with the voltage law of the charging circuit. Then return to the question at the start: why do the last percents of a phone charge slowly, and why does the phone warm up while charging?",
+      "prompt": "Compare your predictions with the values of the model in the experiments and with the voltage law of the charging circuit. Then return to the question at the start: why do the last few percent of a phone charge slowly, and why does the phone warm up while charging?",
       "predictions": [
         "ennuste-1",
         "ennuste-2"

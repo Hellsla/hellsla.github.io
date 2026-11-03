@@ -27,7 +27,7 @@
     {
       "id": "fy6-9-L1-04",
       "level": 1,
-      "text": "The capacity of a flashlight battery is $2.4\\,\\text{Ah}$, and the lamp draws a current of $0.15\\,\\text{A}$ from the battery. How long does the lamp burn on a fully charged battery? Answer in hours.",
+      "text": "The capacity of a flashlight battery is $2.4\\,\\text{Ah}$, and the lamp draws a current of $0.15\\,\\text{A}$ from the battery. How long does the lamp stay on with a fully charged battery? Answer in hours.",
       "answer": 16,
       "unit": "h",
       "tolerance": 0.02

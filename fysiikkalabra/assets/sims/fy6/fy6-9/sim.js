@@ -113,13 +113,13 @@ new p5((p) => {
     if (d) { head((xc + xr) / 2 + 4, top, d > 0 ? 'r' : 'l'); head((xc + xb) / 2, bot, d > 0 ? 'l' : 'r'); head(xb, (yrs + ye) / 2 + 2 * sk, d > 0 ? 'd' : 'u'); }
     // labels
     if (narrow) {
-      lab('$U_\\text{lat}$', xc + 40 * sk, ym + 0.36 * fh, 'l');
+      lab(__('ulat_lab'), xc + 40 * sk, ym + 0.36 * fh, 'l');
       lab('$R$', xr, top - 16 * sk - 6, 'c');
       lab('$I$', xa, top - 18 * sk - 6, 'c', CURC);
       lab('$R_\\text{s}$', xb - 42 * sk, yrs + 0.36 * fh, 'r');
       lab('$E$', xb - 42 * sk, ye + 0.36 * fh, 'r');
     } else {
-      lab('$U_\\text{lat} = ' + tx(S.U, 1) + '\\,\\text{V}$', xc + 40, ym + 5, 'l');
+      lab(__('ulat_eq') + tx(S.U, 1) + '\\,\\text{V}$', xc + 40, ym + 5, 'l');
       lab('$R = ' + tx(S.R, 2) + '\\,\\Omega$', xr, top - 18, 'c');
       lab('$I = ' + tx(S.I, 2) + '\\,\\text{A}$', xa, top + 34, 'c', CURC, true);
       lab('$R_\\text{s} = ' + tx(RS, 2) + '\\,\\Omega$', xb - 42, yrs + 5, 'r');

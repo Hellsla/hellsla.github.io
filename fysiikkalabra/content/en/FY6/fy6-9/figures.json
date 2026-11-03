@@ -15,7 +15,7 @@
  "kohta": "point",
  "Energiavirtakaavio mittakaavassa: nuolten leveys on verrannollinen energiaan. Laturi antaa täydessä latauksessa tyhjästä täyteen 9,0 Wh energiaa, kun laturin jännite on 4,5 V ja akun kapasiteetti 2,0 Ah. Siitä 7,6 Wh varastoituu akkuun kemialliseksi energiaksi ja jatkaa nuolena oikealle. Alaspäin erkanee kaksi kapeaa nuolta: 1,1 Wh muuttuu laturin ja johtojen sisäenergiaksi ja 0,3 Wh akun sisäenergiaksi, ja ne siirtyvät lämpönä ympäristöön.": "Energy flow diagram to scale: the width of the arrows is proportional to the energy. In a full charge from empty to full the charger delivers 9.0 Wh of energy, when the voltage of the charger is 4.5 V and the capacity of the battery is 2.0 Ah. Of this, 7.6 Wh is stored in the battery as chemical energy and continues as an arrow to the right. Two narrow arrows branch downwards: 1.1 Wh becomes internal energy of the charger and wires and 0.3 Wh internal energy of the battery, and they are transferred to the surroundings as heat.",
  "laturista": "from the charger",
- "akkuun kemiallisena": "into the battery as chemical energy",
+ "akkuun kemiallisena": "stored in the battery",
  "laturi ja johdot": "charger and wires",
  "sisäenergiaksi:": "to internal energy:",
  "Kuvaaja mittakaavassa: akun latausvirta I ampeereina ajan t funktiona tunteina, ruudukon välit 0,5 h ja 0,5 A. Virta on 2,0 A ajan 0–1,5 h, sitten 1,0 A ajan 1,5–2,5 h ja sen jälkeen nolla.": "Graph to scale: the charging current I of a battery in amperes as a function of time t in hours, the grid spacing 0.5 h and 0.5 A. The current is 2.0 A from 0 to 1.5 h, then 1.0 A from 1.5 to 2.5 h, and zero after that."

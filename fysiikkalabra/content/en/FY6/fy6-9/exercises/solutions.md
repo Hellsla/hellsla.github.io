@@ -30,13 +30,13 @@
 
 ## fy6-9-L1-04
 **Given:** capacity $Q = 2.4\,\text{Ah}$, current $I = 0.15\,\text{A}$
-**Find:** the burning time $t$ in hours
+**Find:** the time $t$ in hours that the lamp stays on
 **Principle:** The lamp draws a constant current, so the charge passing through the battery is current times time. The battery is empty when the charge equals the capacity.
 **Formula:** $Q = It$, from which $t = \dfrac{Q}{I}$
 **Conversions:** Not needed: the quotient of ampere-hours and amperes is hours.
 **Substitution:** $t = \dfrac{2.4\,\text{Ah}}{0.15\,\text{A}} = 16\,\text{h}$
 **Answer:** $16\,\text{h}$, two significant figures like the capacity and the current.
-**Reasonableness:** With a current of $0.15\,\text{A}$, a charge of $1.5\,\text{Ah}$ passes in ten hours, and $2.4\,\text{Ah}$ is a little over one and a half times that. A burning time of sixteen hours suits a low-power LED flashlight.
+**Reasonableness:** With a current of $0.15\,\text{A}$, a charge of $1.5\,\text{Ah}$ passes in ten hours, and $2.4\,\text{Ah}$ is a little over one and a half times that. Sixteen hours of light suits a low-power LED flashlight.
 
 ## fy6-9-L1-05
 **Given:** the charging current as a function of time in the graph

@@ -1,6 +1,6 @@
 # Batteries and the charging circuit
 
-> **Why** does a phone battery charge quickly at the start, but the last percents take a long time?
+> **Why** does a phone battery charge quickly at the start, but the last few percent take a long time?
 
 <svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Illustration: a smartphone charging on a wooden table in the evening. A cable runs from the phone to a white charger in a wall socket. The phone screen shows a battery symbol that is almost full of green, and a lightning bolt beside it. There is also a coffee cup on the table, and a lamp lights the wall." class="fig-hero" style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy69h-wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eef5f9"/><stop offset="1" stop-color="#f6f1e6"/></linearGradient><radialGradient id="fy69h-glow"><stop offset="0" stop-color="#ffc078" stop-opacity="0.8"/><stop offset="1" stop-color="#ffc078" stop-opacity="0"/></radialGradient><linearGradient id="fy69h-table" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f1dfb5"/><stop offset="1" stop-color="#d9b26a"/></linearGradient></defs>
@@ -40,8 +40,8 @@
 
 ## Key idea
 
-### Primary battery and rechargeable battery
-In a primary battery and a rechargeable battery, a chemical reaction keeps a source voltage $E$ between the terminals (chapter *Electromotive force and internal resistance*), and when the circuit is closed, chemical energy becomes electrical energy. A **primary battery** is single-use: when its substances have reacted, the reaction cannot be safely reversed. A **rechargeable battery** can be charged: an external voltage source can drive its reaction backwards, and chemical energy is stored in the battery again. Phones, laptops and electric cars usually have a lithium-ion battery, and a car starter battery is a lead-acid battery.
+### Disposable and rechargeable batteries
+In both a disposable and a rechargeable battery, a chemical reaction keeps a source voltage $E$ between the terminals (chapter *Electromotive force and internal resistance*), and when the circuit is closed, chemical energy becomes electrical energy. A **disposable battery** (primary battery) is single-use: when its substances have reacted, the reaction cannot be safely reversed. A **rechargeable battery** can be charged: an external voltage source can drive its reaction backwards, and chemical energy is stored in the battery again. Phones, laptops and electric cars usually have a lithium-ion battery, and a car starter battery is a lead-acid battery.
 
 A battery does not store electric charge. It is electrically neutral both full and empty: when it discharges, it only moves charges around the circuit, and every charge that leaves the positive terminal returns to the negative terminal. In the external circuit the current passes from the positive terminal to the negative terminal, and inside the battery from the negative terminal to the positive terminal.
 
@@ -143,7 +143,7 @@ Voltage tells how much energy per unit of charge is changed from one form to ano
 A phone battery with a capacity of $5000\,\text{mAh}$ and a nominal voltage of $3.85\,\text{V}$ stores the energy $3.85\,\text{V} \cdot 5.0\,\text{Ah} \approx 19.3\,\text{Wh}$. Batteries with different voltages can be compared only by energy: with the same number of ampere-hours, a $12\,\text{V}$ battery holds more than three times as much energy as a $3.7\,\text{V}$ battery.
 
 ### Why charging slows down at the end
-The source voltage of a battery is not constant: it grows as the battery charges. The charging current is driven by the difference between the voltage of the charger and the source voltage of the battery, so when the source voltage grows, the current decreases. A phone charger keeps the voltage constant in the last phase of charging, and so the current becomes smaller and smaller as the battery fills. The last percents charge with a small current and take a long time, and finally the control circuit of the charger cuts off the current. The battery also warms up in charging, because the current passes through its internal resistance.
+The source voltage of a battery is not constant: it grows as the battery charges. The charging current is driven by the difference between the voltage of the charger and the source voltage of the battery, so when the source voltage grows, the current decreases. A phone charger keeps the voltage constant in the last phase of charging, and so the current becomes smaller and smaller as the battery fills. The last few percent charge with a small current and take a long time, and finally the control circuit of the charger cuts off the current. The battery also warms up in charging, because the current passes through its internal resistance.
 
 ## Formula: Battery capacity and charging current
 The capacity of a battery, that is, the charge that a constant current moves in the time $t$:
@@ -285,7 +285,7 @@ The efficiency is at most $100\,\%$. In real devices it stays below $100\,\%$, b
   <path d="M40,96 L520,96 L520,82 L566,134 L520,186 L520,172 L373,172 L373,266 L381,266 L371.5,290 L362,266 L370,266 L370,175 L261,175 L261,266 L270,266 L255.5,292 L241,266 L250,266 L250,186 L40,186 Z" fill="url(#fy69-flow)" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
   <foreignObject x="40" y="55.5" width="200" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$W_\text{ch} = 9.0\,\text{Wh}$</div></foreignObject>
   <foreignObject x="40" y="23.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{from the charger}$</div></foreignObject>
-  <foreignObject x="306" y="23.5" width="260" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{into the battery as chemical energy}$</div></foreignObject>
+  <foreignObject x="306" y="23.5" width="260" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{stored in the battery}$</div></foreignObject>
   <foreignObject x="466" y="55.5" width="100" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$7.6\,\text{Wh}$</div></foreignObject>
   <foreignObject x="133.5" y="299.5" width="100" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$1.1\,\text{Wh}$</div></foreignObject>
   <foreignObject x="33.5" y="267.5" width="200" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{charger and wires}$</div></foreignObject>
@@ -347,7 +347,7 @@ Many people think that electric charge is put into the battery in charging and t
 Another mistake is to compare batteries only by milliampere-hours. The ampere-hour is a unit of charge, not of energy. A power bank with $10\,000\,\text{mAh}$ at a voltage of $3.7\,\text{V}$ holds less energy than a laptop battery with $4000\,\text{mAh}$ at a voltage of $11.4\,\text{V}$: $37\,\text{Wh}$ and $45.6\,\text{Wh}$. A third mistake is to calculate the charging current from the voltage of the charger alone. The current is driven by the difference between the voltage of the charger and the source voltage of the battery.
 
 ## Summary
-- A primary battery is single-use and a rechargeable battery can be charged. Both change chemical energy into electrical energy; a rechargeable battery stores not charge but chemical energy.
+- A disposable battery is single-use and a rechargeable battery can be charged. Both change chemical energy into electrical energy; a rechargeable battery stores not charge but chemical energy.
 - The capacity of a battery is the charge $Q = It$, usually in ampere-hours: $1\,\text{Ah} = 3600\,\text{C}$. The energy of a battery is $W = UQ$ in watt-hours, $1\,\text{Wh} = 3600\,\text{J}$, and batteries are compared by energy.
 - In charging the current passes through the battery from the positive terminal to the negative terminal. The charging current is $I = \tfrac{U_\text{ch} - E}{R + R_\text{s}}$, so a battery charges only when the voltage of the charger is greater than the source voltage of the battery. The terminal voltage in charging is $U = E + R_\text{s} I$.
 - The source voltage grows as the battery charges, so with a constant-voltage charger the current decreases and charging slows down towards the end.

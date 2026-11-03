@@ -1714,7 +1714,9 @@
       "purkautuu": "$\\text{purkautuu}$",
       "taynna": "$\\text{täynnä}$",
       "tyhja": "$\\text{tyhjä}$",
-      "eivirtaa": "$\\text{ei virtaa}$"
+      "eivirtaa": "$\\text{ei virtaa}$",
+      "ulat_lab": "$U_\\text{lat}$",
+      "ulat_eq": "$U_\\text{lat} = "
     }
   },
   "practice": {
