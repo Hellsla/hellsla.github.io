@@ -444,4 +444,4 @@ Toinen virhe on laskea toisesta päästä suljetun putken ominaistaajuudet samoi
 - Vierekkäisten solmujen etäisyys on $\tfrac{\lambda}{2}$, ja solmusta kupuun on $\tfrac{\lambda}{4}$.
 - Kahdesta päästä kiinnitetyn kielen ja molemmista päistä avoimen putken ominaistaajuudet ovat $f_n = n \cdot \tfrac{v}{2L}$, kun $n = 1, 2, 3, \ldots$ Alin niistä on perustaajuus $f_1$.
 - Toisesta päästä suljetussa putkessa suljettu pää on solmu ja avoin pää kupu, ja ominaistaajuudet ovat $f_n = n \cdot \tfrac{v}{4L}$, kun $n = 1, 3, 5, \ldots$
-- Lyhyempi tai kireämpi kieli ja lyhyempi putki soivat korkeammalta. Luvussa *Äänen korkeus, sointiväri ja taajuusanalyysi* tutkitaan, miten perustaajuus ja yläsävelet näkyvät äänen taajuusanalyysissä.
+- Lyhyempi tai kireämpi kieli ja lyhyempi putki soivat korkeammalta. Luvussa *Ääni aaltona: korkeus, sointiväri ja Dopplerin ilmiö* tutkitaan, miten perustaajuus ja yläsävelet näkyvät äänen taajuusanalyysissä.

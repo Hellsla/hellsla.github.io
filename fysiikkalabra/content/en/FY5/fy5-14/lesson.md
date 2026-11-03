@@ -1,4 +1,4 @@
-# Pitch, timbre and frequency analysis
+# Sound as a wave: pitch, timbre and the Doppler effect
 
 > **Why** does the siren of a passing ambulance sound as if it drops in pitch just as it goes by, even though the siren itself keeps sounding exactly the same?
 

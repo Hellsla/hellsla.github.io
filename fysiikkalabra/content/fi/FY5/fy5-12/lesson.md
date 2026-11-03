@@ -242,7 +242,7 @@ Superpositioperiaate toimii myös toiseen suuntaan. Jokainen jaksollinen signaal
   <rect x="457.5" y="308.5" width="18" height="21.5" fill="#2b8a3e"/>
 </svg>
 
-Kuvan yläosassa on kolme siniaaltoa, joiden taajuudet ovat $220\,\text{Hz}$, $660\,\text{Hz}$ ja $1100\,\text{Hz}$, ja niiden summa on lähes kanttiaalto. Spektri näyttää vain nämä kolme taajuutta. Fourier-muunnoksesta on hyötyä äänen analysoinnissa: spektristä näkee, miksi samaa säveltä soittava piano ja viulu kuulostavat erilaisilta, ja melusta näkee, mitkä taajuudet sitä hallitsevat. Mittausohjelmat laskevat spektrin nopealla Fourier-muunnoksella (FFT), jota käytetään luvussa *Äänen korkeus, sointiväri ja taajuusanalyysi*.
+Kuvan yläosassa on kolme siniaaltoa, joiden taajuudet ovat $220\,\text{Hz}$, $660\,\text{Hz}$ ja $1100\,\text{Hz}$, ja niiden summa on lähes kanttiaalto. Spektri näyttää vain nämä kolme taajuutta. Fourier-muunnoksesta on hyötyä äänen analysoinnissa: spektristä näkee, miksi samaa säveltä soittava piano ja viulu kuulostavat erilaisilta, ja melusta näkee, mitkä taajuudet sitä hallitsevat. Mittausohjelmat laskevat spektrin nopealla Fourier-muunnoksella (FFT), jota käytetään luvussa *Ääni aaltona: korkeus, sointiväri ja Dopplerin ilmiö*.
 
 ## Esimerkki
 Kaksi kaiutinta on kytketty samaan äänigeneraattoriin, joten ne soittavat samassa vaiheessa samaa ääntä, jonka taajuus on $680\,\text{Hz}$. Äänen nopeus ilmassa on $340\,\text{m/s}$. Kuulija on $4{,}25\,\text{m}$:n päässä toisesta kaiuttimesta ja $3{,}00\,\text{m}$:n päässä toisesta. Kuuleeko hän voimakkaan vai heikon äänen?

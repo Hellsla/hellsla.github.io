@@ -1,4 +1,4 @@
-# Äänen korkeus, sointiväri ja taajuusanalyysi
+# Ääni aaltona: korkeus, sointiväri ja Dopplerin ilmiö
 
 > **Miksi** ohi ajavan ambulanssin sireeni kuulostaa madaltuvan juuri ohitushetkellä, vaikka sireeni itse soi koko ajan samalla tavalla?
 

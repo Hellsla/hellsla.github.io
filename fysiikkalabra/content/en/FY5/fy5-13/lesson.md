@@ -444,4 +444,4 @@ Another mistake is to calculate the natural frequencies of a tube closed at one 
 - The distance between adjacent nodes is $\tfrac{\lambda}{2}$, and from a node to an antinode it is $\tfrac{\lambda}{4}$.
 - The natural frequencies of a string fixed at both ends and of a tube open at both ends are $f_n = n \cdot \tfrac{v}{2L}$, where $n = 1, 2, 3, \ldots$ The lowest of them is the fundamental frequency $f_1$.
 - In a tube closed at one end the closed end is a node and the open end an antinode, and the natural frequencies are $f_n = n \cdot \tfrac{v}{4L}$, where $n = 1, 3, 5, \ldots$
-- A shorter or tighter string and a shorter tube sound higher. The chapter *Pitch, timbre and frequency analysis* examines how the fundamental frequency and the overtones show up in the frequency analysis of a sound.
+- A shorter or tighter string and a shorter tube sound higher. The chapter *Sound as a wave: pitch, timbre and the Doppler effect* examines how the fundamental frequency and the overtones show up in the frequency analysis of a sound.

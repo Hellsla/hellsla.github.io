@@ -242,7 +242,7 @@ The principle of superposition works in the other direction too. Every periodic 
   <rect x="457.5" y="308.5" width="18" height="21.5" fill="#2b8a3e"/>
 </svg>
 
-The upper part of the figure shows three sine waves with frequencies $220\,\text{Hz}$, $660\,\text{Hz}$ and $1100\,\text{Hz}$, and their sum is almost a square wave. The spectrum shows only these three frequencies. The Fourier transform is useful in analysing sound: from the spectrum you can see why a piano and a violin playing the same note sound different, and from noise you can see which frequencies dominate it. Measuring programs calculate the spectrum with the fast Fourier transform (FFT), which is used in the chapter *Pitch, timbre and frequency analysis*.
+The upper part of the figure shows three sine waves with frequencies $220\,\text{Hz}$, $660\,\text{Hz}$ and $1100\,\text{Hz}$, and their sum is almost a square wave. The spectrum shows only these three frequencies. The Fourier transform is useful in analysing sound: from the spectrum you can see why a piano and a violin playing the same note sound different, and from noise you can see which frequencies dominate it. Measuring programs calculate the spectrum with the fast Fourier transform (FFT), which is used in the chapter *Sound as a wave: pitch, timbre and the Doppler effect*.
 
 ## Worked example
 Two loudspeakers are connected to the same signal generator, so they play in phase the same sound, whose frequency is $680\,\text{Hz}$. The speed of sound in air is $340\,\text{m/s}$. A listener is $4.25\,\text{m}$ from one loudspeaker and $3.00\,\text{m}$ from the other. Does the listener hear a loud or a weak sound?

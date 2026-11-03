@@ -57,7 +57,7 @@
   "fy5-11":{"course":"FY5","title":"Aalto kohtaa esteen tai raon","topics":["heijastuminen","heijastuslaki","Huygensin periaate","diffraktio"]},
   "fy5-12":{"course":"FY5","title":"Aaltojen yhteisvaikutus: superpositio ja interferenssi","topics":["superpositio","interferenssi","vahvistava interferenssi","heikentävä interferenssi","matkaero","solmuviiva","Fourier-muunnos"]},
   "fy5-13":{"course":"FY5","title":"Seisova aalto: solmut, kuvut ja ominaistaajuudet","topics":["seisova aalto","solmu","kupu","ominaistaajuus","perustaajuus","resonanssi","yläsävel"]},
-  "fy5-14":{"course":"FY5","title":"Äänen korkeus, sointiväri ja taajuusanalyysi","topics":["ääni","äänen nopeus","äänenkorkeus","sointiväri","harmoninen sarja","infraääni","huojunta","Doppler-ilmiö","ultraääni"]},
+  "fy5-14":{"course":"FY5","title":"Ääni aaltona: korkeus, sointiväri ja Dopplerin ilmiö","topics":["ääni","äänen nopeus","äänenkorkeus","sointiväri","harmoninen sarja","infraääni","huojunta","Doppler-ilmiö","ultraääni"]},
   "fy5-15":{"course":"FY5","title":"Intensiteetti ja desibeliasteikko","topics":["intensiteetti","intensiteettitaso","desibeli","kuulokynnys"]},
   "fy5-16":{"course":"FY5","title":"Melu, akustiikka ja äänentoisto","topics":["melu","jälkikaiunta","kaiutin","mikrofoni"]},
   "fy5-17":{"course":"FY5","title":"Soveltava luku: ultraäänikuvaus ja maanjäristysaallot","topics":["ultraääni","maanjäristysaalto"]},

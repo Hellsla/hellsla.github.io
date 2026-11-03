@@ -9,7 +9,7 @@
   "prior": [
     "Aallon nopeus, taajuus ja aallonpituus liittyvät toisiinsa yhtälöllä $v = f\\lambda$, ja aalto voi olla poikittainen tai pitkittäinen (luku *Aaltojen synty ja eteneminen*)",
     "Aalto heijastuu osittain kahden aineen rajapinnalta, ja este taivuttaa aaltoa sitä enemmän, mitä suurempi aallonpituus on esteeseen verrattuna (luku *Aalto kohtaa esteen tai raon*)",
-    "Ääni on pitkittäistä aaltoliikettä, ja ihminen kuulee taajuudet noin $20\\,\\text{Hz}$:stä $20\\,\\text{kHz}$:iin (luku *Äänen korkeus, sointiväri ja taajuusanalyysi*)"
+    "Ääni on pitkittäistä aaltoliikettä, ja ihminen kuulee taajuudet noin $20\\,\\text{Hz}$:stä $20\\,\\text{kHz}$:iin (luku *Ääni aaltona: korkeus, sointiväri ja Dopplerin ilmiö*)"
   ],
   "activities": [
     {
