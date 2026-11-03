@@ -1,18 +1,18 @@
-VERDICT: PASS
-CONTENT-HASH: 7dd521aba303ad6a
+VERDICT: FAIL
+CONTENT-HASH: d390f27b68875a74
 
 ## Blocking
-(none)
+- [Major] exercises.json fy5-2-L1-01 (sorkkarauta; open-exercises-1280-1) — the task was rewritten to ask for a force in newtons (answer 960), but the entry still has `"unit": "m"`, so the answer box shows "m" next to a force; solutions.md and the shown answer say $960\,\text{N}$ — a student is told to enter a force in metres, and an answer typed with the right unit may be refused — set `"unit": "N"` for L1-01 (lessons/FY5/fy5-2/answers.py already computes 960 N).
 
 ## Polish
-- [Minor] L2-03, L2-04, L3-02 (exercises.json) — no figure for a tilted shelf, a forearm with the muscle or a rod with a wire at $30{,}0^\circ$; the angle and the directions are in words only. A small sketch for L3-02 would help most; the pedagogy reviewer decides whether it is needed.
-- [Minor] solutions.md L3-01 Järkevyys — the fraction $\dfrac{20{,}0 \cdot 2{,}00 + 60{,}0 \cdot 3{,}333}{80{,}0}\,\text{m}$ has the unit only outside; put $\text{kg}$ and $\text{m}$ in the terms, as the other solutions do.
-- [Minor] solutions.md L2-02 Vastaus — "$560\,\text{N}$ eli $5{,}6 \cdot 10^2\,\text{N}$" says the same twice; one form is enough.
+- [Minor] new figure `hylly` (L2-03, L2-1280-3) — geometry is right: the plumb line passes through P and the centre of mass, $\alpha$ is marked, and the $\tfrac{d}{2}$ and $\tfrac{h}{2}$ legs are dimensioned. But $\tfrac{d}{2}$ is dimensioned on the floor below P, while the leg it names runs along the tilted base; a short dashed leg along the base would be clearer.
+- [Minor] solutions.md L2-03 Kaava — one 100-word paragraph with four "koska/joten" steps is heavy to follow on a phone; split it into the construction and the tangent step.
+- [Minor] new figure `kyltti` (L3-02, L3-1280-2) — a clear figure: the wire attaches above the hinge, the $30{,}0^\circ$ arc is correct, and the sign hangs from the rod end. It could mark $\overline{T}$ with an arrow, but the exercise does not need it.
 
 ## Checked
-- open-exercises-1280 part 1 (L1-1 with the Annettu, Kaava, Sijoitus, Vastaus and Järkevyys blocks) and part 5 (L1-5), L2 part 1 (L2-1) and part 4 (L2-3, L2-4), L3 part 1 (L3-1) and part 3 (L3-2, L3-3). Solution rows align at "=", fractions read well, units are upright and in LaTeX, and the decimal comma is correct.
-- The text of exercises.json and solutions.md was read through, with the same plain-quantity grep as for the lesson: none found. The other captures (L1 parts 2–4/6, L2 parts 2/3/5, L3 parts 2/4) were skimmed only on the contact sheets.
-- Finnish: instructions are clear, the situation comes first and the question last, terms follow the glossary.
+- Delta round 2 (exercises hash d390f27b68875a74): L1-01 with the Annettu, Kaava, Sijoitus, Vastaus and Järkevyys blocks (open-exercises-1280-1), the new `hylly` figure with the L2-03 task (L2-1280-3), and the new `kyltti` figure with the L3-02 task (L3-1280-2).
+- Read from the diff: the L1-03 wording "vaakasuunnassa", the L2-04 joint-force sentence, the L3-01 Järkevyys rewritten with units, and the single Vastaus line in L2-02. No plain quantity appears outside maths.
+- Solution rows align at "=", fractions read well, and units are upright.
 
 ## Scores
-illustrations 3 · typography 4 · Finnish 5 · accessibility 4
+illustrations 4 · typography 4 · Finnish 4 · accessibility 3

@@ -1,24 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 3739f2bb63324abb
+CONTENT-HASH: 7e0631f886a7e47c
 
 ## Blocking
 (none)
 
 ## Polish
-1. inquiry.json `hook` + `ennuste-2` — the hook says the plank "pysyy paikallaan, vaikka purkki on jo pukin ohi" and then tips. That already refutes ennuste-2's first option (and "ei koskaan"), so the prediction is left to wording. The correct option is also the only one with a new concept ("yhteinen painopiste", taught only later). Fix: drop the "jonkin matkaa" sentence from the hook, or reword it ("lankku kaatuu lopulta"). Add a misconception distractor in the same register, e.g. "Kun laatikon paino on suurempi kuin lankun paino."
-2. inquiry.json `tarkistus-1` — it restates the paragraph "Milloin kappale kaatuu" (recall). The 45° distractor is weak, and the feedback "Ylähyllyt voivat olla pohjan ulkopuolella..." is clumsy Finnish. Fix: ask an application question (which of two shelves/boxes tips first at the same tilt). Reword the feedback: "Hyllyn yläosa voi olla pohjan ulkopuolella, mutta hylly pysyy pystyssä, kunnes painopisteen kautta kulkeva pystysuora ohittaa pohjan reunan."
-3. lesson.md "Momenttipisteen valinta" — the täsmennys (resolving a force into components) is one sentence with no figure or worked step before it is needed in L3-02. Add a small figure or a two-line example (slanted force, only the perpendicular component gives torque), or state that L3-02 is the place where it is first used.
-4. Workload — two predictions, two experiments (5 readings × 4 columns), example, error-spotting, draw, numeric, three checks and 14 exercises is more than an hour. Keep `piirra` and `siirto` and make one of them optional, or say that the exercises are homework.
-5. lesson.md "Tiivistelmä" — the tower-crane illustration (`scene`) is after the summary and decorative; the counterweight idea is not explained anywhere. Move it next to "Painopiste" with a caption sentence, or drop it.
+1. inquiry.json `ennuste-2`, the new third option ("Kun laatikon paino on suurempi kuin lankun paino") — the box is always 40 kg in this prediction, so the option is true or false for every position, not a position. Its feedback is good, but the distractor is easy to dismiss. Rephrase it as a position claim, for example "Kun laatikon paino on suurempi kuin lankun paino ja laatikko on tuen 2 ohi".
+2. inquiry.json `ennuste-2`, first option — "sen painopiste on silloin tukien ulkopuolella" now reads as the box's own centre of mass versus the correct option's "yhteinen painopiste". That is a good contrast, but the feedback still says "sen paino"; align the wording with the option.
+3. lesson.md figure `komponentit` — the force F is drawn at about 35° while α is unspecified, and the figure sits only in the "Momenttipisteen valinta" text. Add a label for the value of α, or add "esimerkiksi $\alpha = 30^\circ$", so that it matches L3-02.
+4. Workload — `piirra` is now optional, which fixes the hour; consider saying in the exercises text which of the 14 exercises are the core (one per level).
 
 ## Checked
-- Path: hook, retrieval (optional), ennuste, sim, experiments, conclusion, theory, example, error-spotting, own drawing, numeric transfer, checks, exit ticket. The prerequisites (M = Fr, force diagram) are enough.
-- Opening question: both parts (how far, and how much each trestle carries) are answered by koe-1, koe-2 and the conclusion.
-- Both predictions can be refuted by the model values: sums, ratios 3:1, N1 = 0 at 3,5 m and x_pp = 3,0 m recalculated and correct.
-- Wrong options' feedback repairs the misconception ("kauempi tuki kantaa enemmän", "heti tuen ohi"); the sim is described as a model, the numbers as model values.
-- Sim at 390 px: the readout and the two force diagrams are legible, the locked sliders are marked "(vakio)", and nothing is clipped.
-- Figures: the 390 px captures are legible; colours always carry labels (green/red with the words "pysyy"/"kaatuu"); alt texts give the data without the answer (the `virhe` description does not call the equal arrows wrong).
-- Worked example: seven stages, one step each; signs, the choice of moment point and the sanity check are right (196 N and 392 N).
-- `piirra`, `siirto`: the board's bolt force 1079 N (answer 1080 N) is right, and the mistake values (1962, 981, 883) match real slips. The diagram comes before the equations.
-- Exit ticket: tests the two conditions and the case ΣF = 0, ΣM ≠ 0, which is the core idea.
-- Finnish: case after number+unit and the terms (tasapaino, momenttiehto, painopiste, tukivoima) are consistent; there are no spelling errors apart from polish item 2.
+- Round-1 fixes confirmed in the diff: hook no longer discloses that the plank holds past the support ("Lopulta ... kaatuu"); ennuste-2 now has a misconception distractor and no clearly refuted option; `tarkistus-1` is now an application question with new distractors and fixed Finnish; the component task has a figure and its own step in the theory; `piirra` is optional; the crane picture is removed.
+- Path and goals: tasapaino and momenttiehto, tukivoimat, painopiste and tipping, and the täsmennys (components) are all covered; no extra content.
+- Predictions can be refuted by the model values (3:1 ratio, N1 = 0 at 3,5 m, x_pp = 3,0 m). The feedback repairs misconceptions and the model is called a model.
+- The theory text about the components is correct: the component along the rod passes through the hinge and gives no moment; only F sin α counts.
+- The worked example stages, the error-spotting item and `siirto` (1079 N → 1080 N) are unchanged and correct.
+- Exit ticket tests the core idea; Finnish (case after number+unit, glossary terms) is consistent.
+- Not re-opened: the 390 and 1280 px captures; the layout checks pass in the packet.

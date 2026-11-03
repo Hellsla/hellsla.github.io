@@ -1,18 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: a3316f786ce951c7
+CONTENT-HASH: 76600eaf8a734c4e
 
 ## Blocking
 
 ## Polish
-- exercises.json L2-01 (fy5-4-L2-01): sama tehtävä kuin lukuesimerkki (auto vaakakaarteessa, kysytään kitkaa, uudet luvut) ja L3-01 on esimerkin toinen puoli käänteisenä. "Ei toista esimerkkiä" ei täyty täysin. Vaihda L2-01 esim. narun jännitysvoimaan tai kiven kierrosaikaan ja kysy L2:ssa jotain, mitä esimerkki ei kysy.
-- Tehtävien tilannevalikoima on kapea: kuusi kymmenestä voimatehtävästä on auto tai kiekko tasaisella kaarteella. Notkon pohja puuttuu harjoituksista kokonaan (vain siirto-tehtävässä); lisää L2:een notko tai kuormitusluku (moninkertainen paino).
-- L1-01…05 ovat samaa sijoitusta v²/r viidesti (L1-04 käänteinen). Yksi voisi vaatia suuntaa/voimakuvion (mihin suuntaan kiihtyvyys osoittaa), jotta suuntatavoite harjoittuu myös L1:ssä.
-- L3-02: kysytään taajuutta, mutta tehtävässä ei ole ohjetta kierrosaika→taajuus; ratkaisussa sekoittuu symbolit T (jännitys) ja T_k (kierrosaika). Käytä jännitysvoimalle T ja kierrosajalle erillistä merkintää jo tehtävätekstissä.
-- L2-04: moukarin vaakasuora ympyrä on karkea malli; ratkaisun Järkevyys-kohta sen kyllä myöntää, mutta tehtävässä pitäisi mainita "paino jätetään huomiotta" tai kysyä vain vaakasuuntaista voimaa.
+- L1-01…05 ovat yhä saman sijoituksen v²/r toistoa; yksi voisi kysyä kiihtyvyyden suuntaa tai vaatia kuvion.
+- Lisäksi L2-01 (pyöräilijä notkossa) ja L2-03 (auto nyppylällä) ovat nyt pari; hyvä, mutta L2-tasolla ei ole yhtään vaakakaarretehtävää kitkalla, vain L3. Harkitse, että yksi L2-tehtävä vaatii kitkan ja kierrosajan yhdessä.
+- L2-01: "tien tukivoima pyörään" → "tien tukivoima pyörään ja pyöräilijään" (kappale on pyöräilijä ja pyörä yhdessä).
 
 ## Checked
-- Tasot: L1 yksi kaava, L2 kaksi vaihetta (kierrosaika, yksikkö, voima), L3 raja- ja mitoitustehtäviä; nousu sopii kurssille.
-- Vastaukset täsmäävät (L1-02 1,753; L2-03 6,012 kN; L3-01 27,6 km/h; L3-03 201 m) ja ratkaisut etenevät: annettu, periaate, voimakuvio ennen yhtälöitä, kaava, muunnos, sijoitus, järkevyys.
-- Voimakuviolohkot oikeassa mittakaavassa (G 12753, N 12753, F 4333) ja kiihtyvyys erillisenä nuolena.
-- Lähtölippu: kolme kysymystä (keskipakoisvoima, nopeuden neliö, nyppylä) testaavat ydinideaa; mallivastaukset selittävät, eivät vain nimeä.
-- Suomi: tarkka, ei kielivirheitä; tapaukset yksiköiden jälkeen oikein.
+- Edellisen kierroksen löydökset korjattu: L2-01 ei enää toista esimerkkiä (notkon pohja, tukivoima, ei kitkaa); L3-02:n T/T_k-sekaannus poistettu (v = 2πrf perusteltu, ei kierrosaikasymbolia).
+- L2-01: N = m(g + v²/r) = 80·13,81 = 1105 N, vastaus 1,1048 kN täsmää; voimakuvio (G 784,8, N 1104,8, a ylös) ja järkevyys (1,4-kertainen paino) seurattavissa.
+- L1-03 järkevyys korjattu: narun jännitysvoima 8,3 N otetaan huomioon kannattelun vuoksi, ratkaisu pysyy johdonmukaisena.
+- Voimakuviot käännetty (keskipiste oikealla) ratkaisuissa L3-01…03 yhdenmukaisesti kuvausten kanssa.
+- Tasot nousevat L1 yksi kaava → L2 kaksi vaihetta → L3 raja- ja mitoitustehtävät; lähtölippu ja ratkaisut kunnossa, suomi sujuvaa.

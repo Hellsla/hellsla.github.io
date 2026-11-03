@@ -1,18 +1,18 @@
 VERDICT: FAIL
-CONTENT-HASH: 7dd521aba303ad6a
+CONTENT-HASH: d390f27b68875a74
 
 ## Blocking
-1. exercises/solutions.md fy5-2-L2-03 "Kaava" — the central step is a single sentence: "Hyllyn omassa suunnassa janan osat ovat puolet syvyydestä ja puolet korkeudesta, joten puolikkaat supistuvat: tan α = d/h". A student who could not solve the task cannot see which angle α is (the tilt angle between the shelf's height direction and the vertical), why the vertical line through the front edge and the centre of mass gives that angle, or where the halves come from. The task has no figure either. Fix: add a figure (shelf tilted on its front edge, vertical dashed line through the centre of mass, α marked) and a step: "painopiste on d/2 reunasta hyllyn syvyyssuunnassa ja h/2 korkeussuunnassa; rajalla tämä jana on pystysuora, joten sen ja hyllyn korkeussuunnan välinen kulma on α ja tan α = (d/2)/(h/2)".
+1. exercises/exercises.json fy5-2-L1-01 — the new crowbar task has `"answer": 960, "unit": "m"`, but the answer is a force (the solution says $960\,\text{N}$). The student would be asked for a force and see (or have checked) a length unit. Fix: `"unit": "N"` (a leftover from the old keinulauta task, whose answer was in m).
 
 ## Polish
-1. fy5-2-L3-01 — the same geometry as koe-2 and ennuste-2 (supports 0,50 m and 3,00 m, 20 kg plank) with a different mass, so level 3 repeats the investigation. Change the geometry, or ask for the maximum load mass at a given position.
-2. fy5-2-L3-02 — the only task that needs components, and it has no figure. "Vaijeri seinään" does not say that the wire is above the rod. Add a figure, or state "vaijeri on kiinnitetty seinään sarana-kohdan yläpuolelle".
-3. Level overlap — L1-01 (keinulauta) and the check `tarkistus-2` are the same task; L2-01 and L2-02 use the same method (moment point at the far support). Replace one with a different situation (a leaning ladder or a door, where the wall's force is tangential).
-4. fy5-2-L2-04 — "Kyynärvarren ja käden paino 15 N" and the muscle "pystysuoraan ylös": add one sentence in the solution about the elbow joint force pointing down (it is not asked for, but it belongs in the force diagram the solution lists).
+1. fy5-2-L3-01 — unchanged: the same geometry as koe-2 and ennuste-2 (20 kg plank, supports 0,50 m and 3,00 m), only the load mass differs, so level 3 repeats the investigation. Change the supports or ask for the largest load mass at a given position. (The solution's Järkevyys check was reworded but the task is the same.)
+2. fy5-2-L2-01 and L2-02 use the same method (moment point at the far support) with the same plank; replace one with a different situation (a leaning ladder or a door), if a level-2 item with a tangential wall force is wanted.
+3. The `hylly` figure was not opened (no capture in the packet); its description (symbols d, h, α only) fits the solution, and the L2-03 task text still says "pystysuoraan nähden", which agrees with it.
 
 ## Checked
-- Levels: L1 needs one moment condition (L1-04 and L1-05 are easy), L2 two conditions or several moments, L3 reasoning (limit of tipping, component, the unknown position).
-- Numbers recalculated: all 14 answers and tolerances (2 %) are correct (e.g. 58,9; 98,1; 555,9→560; 12,5°; 448,65→450; 3,33; 196,2; 1,213). Significant figures are justified in the solutions.
-- Solutions follow the house format (Annettu ... Järkevyys) and name the moment point and why it was chosen; the checks from the other point or by sum of forces (L1-01, L2-01, L2-02, L3-03) are real.
-- The tasks are authentic (kottikärryt, hirsi, ojan lankku, biceps, kyltti) and not a copy of the worked example (hirsi).
-- Finnish: case after number+unit ($0{,}30\,\text{m}$:n päässä, $2{,}0\,\text{kg}$:n punnus) is correct. The exercise statements have no spelling errors.
+- Round-1 blocking fixed: the L2-03 solution now defines α from the figure, builds the right triangle with legs d/2 and h/2, and explains why the vertical is the hypotenuse and why tan α = d/h. A student who could not solve the task can follow it. 12,5° recomputed.
+- L1-01 (sorkkarauta): the principle, signs and sanity check (12 × 80 N = 960 N) are right and the task is authentic; only the unit is wrong (Blocking 1).
+- L3-02 now says the wire is attached above the hinge and has a figure; the component step is explained in the solution and in the lesson; T = 196 N recomputed.
+- L3-01 the solution's check is rephrased so that the weighted-mean position gives 3,00 m: correct. L1-03 now says "vaakasuunnassa" for the handles: the arm is unambiguous.
+- All other answers and tolerances unchanged and correct (58,9; 0,60; 98,1; 560; 450; 1,21; 0,75; 207).
+- Finnish: case after number+unit is correct in the new task text ($0{,}050\,\text{m}$:n päässä, $80\,\text{N}$:n voimalla).

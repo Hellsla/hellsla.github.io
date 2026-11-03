@@ -1,16 +1,17 @@
-VERDICT: PASS
-CONTENT-HASH: 7dd521aba303ad6a
+VERDICT: FAIL
+CONTENT-HASH: d390f27b68875a74
 
 ## Blocking
+- exercises/exercises.json:8 (fy5-2-L1-01) — A: the new crowbar task asks for a force and the answer is 960, but "unit" is still "m" (left over from the old seesaw task), so the page shows 960 m — set "unit": "N".
 
 ## Polish
-- exercises.json:22 (fy5-2-L1-03) — the CoM is given "vaakasuunnassa" from the axle but the handles only "1,20 m:n päässä"; the solution uses 1.20 m as the moment arm of a vertical force, which needs the horizontal distance — write "vaakasuunnassa 1,20 m:n päässä" for the handles too.
+- exercises.json (fy5-2-L1-01) — the moment arms 0,050 m and 0,60 m are used for vertical forces, so they must be horizontal distances; add "vaakasuunnassa" as was done for L1-03 (a tilted crowbar's distances along the bar are not the arms).
 
 ## Checked
-- Every answer recomputed independently (different moment points where possible): L1 1.2 m, 0.75 N, 207 N, 58.9 N, 0.60 m; L2 98.1 N, 556→560 N, 12.5°, 449→450 N; L3 3.33 m, 196 N, 1.21 m — all within 0.8 % of exercises.json and identical to answers.py.
-- answers.py uses the right physics for each task (ΣM = 0 about a well-chosen point, ΣF = 0, CoM of uniform bodies at the middle).
-- L2-03 tipping angle tan α = d/h correct for a uniform shelf on its front edge.
-- L3-02 cable: only T sin α gives a moment about the hinge; hinge carries the remaining 19.6 N vertically, as the check says.
-- L3-03: rear carrier 582.9 N, moments about the CoM balance (750 Nm each).
-- Solutions: symbolic first, units, significant figures justified by the data, reasonableness checks are real checks.
-- Scope within FY5 "tasapaino kiertymisen suhteen"; component use only in L3-02 as the slot's täsmennys allows.
+- L1-01 recomputed: F_n = 80 N · 0.60 m / 0.050 m = 960 N; answers.py matches; the force diagram in the solution (hand down, nail pulls the claw down on the other side, fulcrum up) is right.
+- L1-03 now gives the handles' horizontal distance (round 1 polish fixed); 207 N unchanged.
+- L2-04 added elbow joint force: 448.65 − 49.05 − 15 = 384.6 N downward (compression), correctly reasoned from ΣF = 0.
+- L2-03 new figure "hylly": to scale (edges 48 : 216 px = 0.400 : 1.80 m, front edge 12.5° from vertical, CoM directly above P, legs d/2 and h/2 drawn); the new solution geometry gives tan α = d/h correctly; 12.5° unchanged.
+- L3-02 now says the cable goes to the wall above the hinge; new figure "kyltti" to scale (cable slope 152.5/264 → 30.0°, sign at the outer end); T = 196 N unchanged.
+- L3-01 and L2-02 solution wording changes only; numbers unchanged (3.33 m, 560 N).
+- All other answers unchanged and recomputed in round 1; answers.py output agrees with exercises.json.

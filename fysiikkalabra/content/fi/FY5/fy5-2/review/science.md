@@ -1,20 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 3739f2bb63324abb
+CONTENT-HASH: 7e0631f886a7e47c
 
 ## Blocking
 
 ## Polish
-- lesson.md:264 — "momentin antaa kappaletta vastaan kohtisuora komponentti kerrottuna etäisyydellä momenttipisteestä" is true only for a rod-like body with the moment point on its line (as in every task here); for a general body the arm is the distance to the line of action — add "sauvamaiselle kappaleelle (lankku, tanko)" or similar (B-type, minor).
-- inquiry.json:365 (tarkistus-1, distractor "yläreuna on siirtynyt pohjan reunan ulkopuolelle") — for a uniform box the whole top edge passes the pivot exactly when the CoM does (diagonal vertical), so the option is only clearly wrong if read as the front top edge; write "yläreunan etureuna" so exactly one option is unambiguously right.
 
 ## Checked
-- Worked example (hirsi): N_B = 392 N, N_A = 196 N recomputed; figure arrows to scale (39 : 78.5 : 117.5 px), ccw arc correct.
-- Figure "lankku" (N1 : N2 = 1 : 1.5 vs r1 : r2 = 1.5 : 1, sum = G) and "kaatuu" (30° slope, 150 px/m boxes, plumb lines land inside / outside the base; tipping angles 45° and 20.6°) are to scale as claimed.
-- ennuste-1/koe-1: 98.1/98.1, 78.5/117.7, 49.1/147.2 N; ennuste-2/koe-2: N1 = 47.1 N at 3.2 m, 0 at 3.5 m, x_pp = 3.0 m; every option's feedback number correct, exactly one correct option each.
-- virhe: correct N1 = 78.5 N, N2 = 117.7 N; student figure has equal arrows summing to G as stated; distractor feedback correct.
-- piirra/siirto: F_p = 1079 N (both moment points), N = 1962 N; mistakes 1962, 981, 883 N reproduce the named errors; model figure lauta-voimat to scale (N = sum of the three downward arrows).
-- tarkistus-2: 294 N; mistakes 188 N, 235 N; kertaus 16 Nm.
-- sim.js: ΣM about support 1 and ΣF implemented correctly, tipping when a support force would be negative, tip direction right, one force scale per box mass; simState gives N1, N2, xpp, kaatuu at the experiments' settings; slider ranges cover all suggested values.
-- Scope: static equilibrium, no ω or rotational dynamics; force diagrams show only forces on the plank, box force (not box weight) on the plank.
-- lesson-answers.py matches my recomputation for every lesson/inquiry number.
-- Glossary, summary, exit ticket and model answers agree.
+- Round 1 polish fixed: lesson.md "Momenttipisteen valinta" now limits the component rule to a rod-like body with the moment point on its line; tarkistus-1 distractor now "yläreunan etureuna", which is unambiguously wrong (it passes the base edge at any forward tilt).
+- New figure "komponentit": F at 35° to the rod; dashed components 123 px (F cos α, along the rod toward the hinge) and 86 px (F sin α, perpendicular) close the parallelogram; arm r = whole rod; text and caption agree.
+- ennuste-2 new options: exactly one correct (combined CoM passes support 2); "laatikon paino suurempi kuin lankun" is wrong and its feedback number (N1 = 47 N at 3.2 m) recomputed; other distractors still wrong with correct feedback.
+- tarkistus-1 new distractor (high CoM tips at once) is wrong; feedback states the right criterion.
+- siirto now optional; its revised check (moments about the bolt 588.6 + 2354.4 = 2943 Nm, N = 1962 N, F_p = 1079 N) recomputed.
+- tarkistus-2 solution relabels the child's force F_l = mg (contact force, not weight): physics correct, numbers unchanged (294 N).
+- Hook no longer claims the plank stays put past the trestle; nothing in the lesson depends on that sentence.
+- Figure changes in hirsi (turn arrow moved) and the board scene (dimension label moved) do not change any number; scene figure removed.
+- Unchanged parts from round 1 (worked example, experiments, sim, other figures) untouched by the diff.

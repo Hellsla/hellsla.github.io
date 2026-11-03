@@ -1,21 +1,27 @@
-VERDICT: FAIL
-CONTENT-HASH: c64883a8ea9fcc46
+VERDICT: PASS
+CONTENT-HASH: 06bdeb9e2e13b206
 
 ## Blocking
-- inquiry.json:141, 87, 91, 95, 279 (also lessons/FY5/fy5-4/sim-spec.md) — **A**. The sim does not show what the feedback and model answer say it shows. In sim.js `advance()`, a sliding car turns on a radius of v²/(μ0 g). At the test point exp-1 names (20 m/s, r = 50 m, dry asphalt), that radius is 51.0 m. I ported `advance()` to Python with the desktop geometry: the car never leaves the track. It circles at most 52.0 m from the centre, inside the 7.3 m half-width of the drawn asphalt, and its heading keeps turning. The readout says "auto liukuu radalta". Even at 25 or 30 m/s on dry asphalt the heading turns 56° or 31° before the car leaves the track. "Jatkaa lähes radan tangentin suuntaan" holds only far above the limit (on ice at 20 m/s, 7°). So the student who presses Käynnistä at 20 m/s, as told, sees the opposite of the pred-2 feedback and the johtopäätös model answer. — Fix: in exp-1:141, test the slide at 30 m/s (or on märkä asfaltti or jää). Replace "jatkaa lähes (radan) tangentin suuntaan" with "kaartaa loivemmin kuin rata ja ajautuu ulkoreunan yli; mitä suurempi nopeus, sitä suoremmin". Make the same change in sim-spec.md and in the sim.js header comment.
 
 ## Polish
-- lesson.md:280 — "Jos v²/r kasvaa yhtä suureksi kuin g … auto irtoaa": when v²/r = g, N = 0 and the car is exactly at the limit. It leaves the road only when v²/r > g. Write "yhtä suureksi kuin g, tukivoima on nolla; jos suuremmaksi, auto irtoaa" (the guardrails' ≥/> boundary rule).
-- lesson.md:139 — "Tasaisessa kaarteessa ajavaan autoon ainoa vaakasuora voima on tien kitka": this holds only on a level road with air resistance neglected. Add "vaakasuoralla tiellä, kun ilmanvastusta ei oteta huomioon" (the example states the condition, the theory does not).
-- lesson.md:96 (figure muutos) — the caption says the arrows are to scale with each other. The v arrows are about 68 px long on the left and about 98 px on the right. Either drop the claim or give both panels one length.
-- exercises/solutions.md:29 (L1-03) — see the exercise report.
+- assets/sims/fy5/fy5-4/sim.js:`advance()` — in the phone layout, the stop test checks the panel's top edge (`sy < 40`, 185 px from the centre) almost exactly at the asphalt's outer edge (`reuna`, 185.4 px at 366 px width). If a slide starts at a track angle that heads for the top edge, the car may stop right on the asphalt edge rather than visibly past it. The new tests start the slide at θ = 0 and so do not cover this. Optional fix: stop only on `out > R + 46U`, or clamp to the panel instead of stopping.
 
 ## Checked
-- I recomputed in one script: the worked example (6000 N, μ0 ≥ 0.510, a_n = 5.0 m/s²), the kuvaaja points (2, 8, 4, 18, 9 m/s²; the SVG coordinates are to scale), exp-1 (750, 3000, 6750, 12 000 N; F_max = 11 772 N; v_max = 19.81; mistakes 22.15 and 392.4), exp-2 (ratio 0.920 at every mass), siirto (15.34; mistakes 18.79 and 10.85), check-2 (148.0; mistakes 47.12 and 294.3) and check-3 (T = 0.765 N, G = 1.67 N). All match.
-- muutos: v1 and v2 are tangent for counter-clockwise motion, and Δv and a_n point to the centre. kaarre: the road arc is centred on the drawn centre point, N = G, and friction points inward.
-- nyppylä figure: N = 0.6 G on the bump and 1.4 G in the dip, the same a_n in both. virhe: N < G, N + F_kp = G. In valitse, only a has N > G with nothing extra. No figure gives the answer away with an acceleration arrow.
-- Every prediction has exactly one correct option, and the distractor feedback is sound (apart from the tangent claim above).
-- exp-1 and exp-2 lock r, m, surface and v correctly. simState gives an, Ftarve, Fmax and pito. The initial values are inside the slider ranges and steps.
-- Sim: N = mg, F = min(mv²/r, μ0mg), and a = F/m is drawn toward the centre of the turn. The model box states its limits.
-- Exit ticket and summary: no centrifugal force, a ninefold a_n at three times the speed, N = m(g − v²/r).
-- Scope: no ω or rad/s, and v = 2πr/T is used.
+- Round 1 blocking item (the slide claim) is fixed. I ported `advance()` to Python again and ran the new settings:
+  - r = 50 m on dry asphalt in both the desktop layout and the phone layout (330–480 px).
+  - At 25 m/s the heading turns 51–56° before the car leaves the track, with dmax 65–68 m against reuna 57–63 m.
+  - At 30 m/s it turns 30–33°, with dmax 67–70 m.
+  - At 20 m/s the car still stays on the asphalt (dmax 52.0 m). The texts no longer send the student there, and sim-spec.md and the sim.js header now say this.
+  - pred-2 options, the johtopäätös model answer and sim-spec.md now say "loivemmin kuin rata, sitä suoremmin mitä suurempi nopeus", which matches the sim.
+- `simState.reuna = r(R + halfW)/R` is the outer edge of the drawn asphalt in metres, and `dmax` is updated every sim step. The two new tests in tests/sims/fy5-4.json check what experiment 1 now asks for (25 and 30 m/s).
+- The new explanation of why a_n grows with v² (a longer velocity arrow, and the same angle turned in less time) is correct at this level. The pred-1 feedback says the same.
+- lesson.md:139 now states its conditions (level road, no air resistance). lesson.md:280 now handles the boundary correctly: N = 0 when v²/r = g, and the car leaves the road only when v²/r > g.
+- muutos figure: the velocity arrows are now about 68 px long in both panels, as the caption says. The hero no longer shows the path the car would take when grip fails, so it does not give the prediction away.
+- esimerkki figure (centre on the right): friction comes from the right bottom corner toward the centre, N = G, and x points right. It matches the force diagrams in the solutions.
+- Unchanged numbers, recomputed again:
+  - worked example: 6000 N, μ0 ≥ 0.510
+  - experiment 1: v_max = 19.81, with the mistake values 22.15 and 392.4
+  - experiment 2: ratio 0.920
+  - siirto: 15.34, check-2: 148.0, check-3: 0.765 N
+  - graph points: unchanged
+- lesson-answers.py gives slide radii of 79.6 and 114.7 m. That is v²/(μ0 g), the same model as the sim.
