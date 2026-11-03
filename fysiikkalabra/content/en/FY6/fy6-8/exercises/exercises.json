@@ -1,0 +1,105 @@
+{
+  "level1": [
+    {
+      "id": "fy6-8-L1-01",
+      "level": 1,
+      "text": "The source voltage of a battery is $1.58\\,\\text{V}$ and its internal resistance $0.25\\,\\Omega$. A current of $0.80\\,\\text{A}$ is drawn from the battery. What is the terminal voltage of the battery?",
+      "answer": 1.38,
+      "unit": "V",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-8-L1-02",
+      "level": 1,
+      "text": "A rechargeable nickel-metal hydride cell has a source voltage of $1.30\\,\\text{V}$ and an internal resistance of $0.040\\,\\Omega$. What current would flow if the terminals of the cell were connected in a short circuit with a thick wire whose resistance is neglected?",
+      "answer": 32.5,
+      "unit": "A",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-8-L1-03",
+      "level": 1,
+      "text": "A remote control has four batteries in series. The source voltage of each battery is $1.55\\,\\text{V}$. What is the source voltage of the group of batteries?",
+      "answer": 6.2,
+      "unit": "V",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-8-L1-04",
+      "level": 1,
+      "text": "Three identical batteries are connected in parallel. The internal resistance of each battery is $0.45\\,\\Omega$. What is the internal resistance of the group of batteries?",
+      "answer": 0.15,
+      "unit": "Ω",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-8-L1-05",
+      "level": 1,
+      "text": "The graph shows the measured points of the terminal voltage of a battery as a function of the current and a straight line drawn through them and extended to the axes. What is the short-circuit current of the battery? Read the value from the graph.",
+      "figure": "fy6-8/ex-graph",
+      "answer": 3.0,
+      "unit": "A",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy6-8-L2-01",
+      "level": 2,
+      "text": "Two different load resistors are connected to a battery in turn. With the first resistor the current is $0.20\\,\\text{A}$ and the terminal voltage $4.30\\,\\text{V}$, with the second the current is $0.80\\,\\text{A}$ and the terminal voltage $3.70\\,\\text{V}$. What is the internal resistance of the battery?",
+      "answer": 1.0,
+      "unit": "Ω",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-8-L2-02",
+      "level": 2,
+      "text": "The source voltage of a voltage source is $6.0\\,\\text{V}$ and its internal resistance $0.50\\,\\Omega$. A resistor with a resistance of $5.5\\,\\Omega$ is connected to it. What is the terminal voltage of the source?",
+      "answer": 5.5,
+      "unit": "V",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-8-L2-03",
+      "level": 2,
+      "text": "A torch lamp with a resistance of $3.0\\,\\Omega$ is connected to a battery whose source voltage is $4.5\\,\\text{V}$ and internal resistance $1.5\\,\\Omega$. The resistance of the lamp is assumed constant. What is the power of the lamp?",
+      "answer": 3.0,
+      "unit": "W",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-8-L2-04",
+      "level": 2,
+      "text": "Two batteries are connected in series, and their load is a resistor of $2.4\\,\\Omega$. The source voltage of each battery is $1.5\\,\\text{V}$ and its internal resistance $0.30\\,\\Omega$. What current flows through the resistor?",
+      "answer": 1.0,
+      "unit": "A",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy6-8-L3-01",
+      "level": 3,
+      "text": "A camping lantern has two identical batteries in parallel so that the lantern works longer. The source voltage of each battery is $1.5\\,\\text{V}$ and its internal resistance $0.40\\,\\Omega$. The resistance of the lamp of the lantern is $0.80\\,\\Omega$, and it is assumed to stay constant. What current flows through each battery?",
+      "answer": 0.75,
+      "unit": "A",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-8-L3-02",
+      "level": 3,
+      "text": "Three batteries are put into a torch in series, but one of them is put in the wrong way round by mistake. The source voltage of each battery is $1.5\\,\\text{V}$ and its internal resistance $0.25\\,\\Omega$. The resistance of the lamp is $4.0\\,\\Omega$, and it is assumed to stay constant. What current flows through the lamp?",
+      "answer": 0.315789,
+      "unit": "A",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-8-L3-03",
+      "level": 3,
+      "text": "A resistor of $2.0\\,\\Omega$ is first connected to a battery, and the terminal voltage of the battery is $1.20\\,\\text{V}$; then a resistor of $6.0\\,\\Omega$ is connected, and the terminal voltage is $1.44\\,\\text{V}$. The source voltage and the internal resistance of the battery are assumed to be the same in both measurements. What is the source voltage of the battery?",
+      "answer": 1.6,
+      "unit": "V",
+      "tolerance": 0.02
+    }
+  ]
+}

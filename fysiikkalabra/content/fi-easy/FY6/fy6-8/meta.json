@@ -1,0 +1,40 @@
+{
+  "id": "fy6-8",
+  "course": "FY6",
+  "title": "Lähdejännite ja sisäinen resistanssi",
+  "goals": [
+    "LOPS FY6: akut ja akun latauspiiri",
+    "Kokeellisesti: pariston sisäisen resistanssin selvittäminen mittaamalla",
+    "Täsmennys: napajännite, oikosulkuvirta ja paristojen sarjaan- ja rinnankytkentä"
+  ],
+  "prerequisites": [
+    "fy6-5"
+  ],
+  "glossary": [
+    "lähdejännite",
+    "napajännite",
+    "sisäinen resistanssi",
+    "oikosulku"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false,
+  "key_concepts": [
+    {
+      "term": "lähdejännite",
+      "explain": "Pariston napojen välinen jännite silloin, kun paristosta ei oteta virtaa. Se kertoo, paljonko energiaa paristo antaa jokaiselle varaukselle."
+    },
+    {
+      "term": "napajännite",
+      "explain": "Pariston napojen välinen jännite silloin, kun paristosta otetaan virtaa. Se on aina pienempi kuin lähdejännite."
+    },
+    {
+      "term": "sisäinen resistanssi",
+      "explain": "Pariston oma resistanssi. Se toimii kuin vastus pariston sisällä ja pienentää napajännitettä, kun virta kulkee."
+    },
+    {
+      "term": "oikosulku",
+      "explain": "Tilanne, jossa pariston navat yhdistetään johtimella ilman kuormaa. Virta on silloin suurin mahdollinen ja vaarallinen."
+    }
+  ]
+}

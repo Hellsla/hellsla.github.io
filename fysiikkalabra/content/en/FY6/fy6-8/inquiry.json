@@ -1,0 +1,489 @@
+{
+  "version": 1,
+  "contribution": "The ideal source gets an internal resistance: the terminal voltage depends on the current, the source voltage and the internal resistance are found from the straight line of the measured (I, U) points, the short-circuit current is limited only by the internal resistance, and batteries in series and in parallel are explained by the same model.",
+  "learn": [
+    "calculate the terminal voltage and the current of a battery when the source voltage, the internal resistance and the load are known.",
+    "determine the source voltage and the internal resistance from the $(I, U)$ graph of measured points.",
+    "compare batteries in series and in parallel and explain why a short circuit is dangerous."
+  ],
+  "prior": [
+    "Kirchhoff's voltage law: the sum of the changes of potential around a loop is zero (chapter *Kirchhoff's laws and potential in a circuit*)",
+    "The voltage of a resistor is $U = RI$ (chapter *Resistance and Ohm's law*)",
+    "Electric power is $P = UI$ (chapter *Electric power and the heating of a resistor*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "It is a freezing morning, and the headlights of a car are already on. When the driver turns the key to the start position, the headlights dim clearly for a few seconds and brighten again once the engine has started. The battery is the same, and the headlights are connected to its terminals the whole time.",
+      "question": "Why do lamps connected to the terminals of the same battery dim when a large current is drawn from the battery at the same time by another device?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Review: the voltage law",
+      "optional": true,
+      "prompt": "An ideal voltage source of $9.0\\,\\text{V}$ and two resistors are connected in series. The voltage of the first resistor is $3.0\\,\\text{V}$. What is the voltage of the second resistor?",
+      "choices": [
+        {
+          "text": "$6.0\\,\\text{V}$",
+          "correct": true,
+          "feedback": "Correct. Going around the loop, the rise of potential in the source is equal to the drops in the resistors: $9.0\\,\\text{V} = 3.0\\,\\text{V} + 6.0\\,\\text{V}$ (chapter *Kirchhoff's laws and potential in a circuit*). Today one more resistor joins the same loop: the internal resistance of the battery itself."
+        },
+        {
+          "text": "$9.0\\,\\text{V}$",
+          "feedback": "The whole voltage of the source would be across the second resistor only if it were the only resistor in the loop. By the voltage law the $9.0\\,\\text{V}$ of the source is shared between the resistors, so $9.0\\,\\text{V} - 3.0\\,\\text{V} = 6.0\\,\\text{V}$ is left for the second."
+        },
+        {
+          "text": "$12\\,\\text{V}$",
+          "feedback": "The voltages of the resistors are not added to the voltage of the source. Together they are equal to the voltage of the source, so the voltage of the second resistor is $9.0\\,\\text{V} - 3.0\\,\\text{V} = 6.0\\,\\text{V}$."
+        },
+        {
+          "text": "$3.0\\,\\text{V}$",
+          "feedback": "In resistors in series the current is the same, not the voltage. By the voltage law the voltages of the resistors total $9.0\\,\\text{V}$, so the voltage of the second is $6.0\\,\\text{V}$."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: terminal voltage and current",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 3
+      },
+      "prompt": "A voltmeter and a load resistor are connected to the terminals of a new AA battery. The resistance is reduced step by step, so the current drawn from the battery grows. How does the terminal voltage shown by the voltmeter change as the current grows?",
+      "choices": [
+        {
+          "text": "The terminal voltage stays the same, because the voltage of a battery is always the voltage marked on it.",
+          "feedback": "The readings of the model refute this: the terminal voltage is $1.561\\,\\text{V}$ at a current of $0.195\\,\\text{A}$ but only $1.333\\,\\text{V}$ at $1.333\\,\\text{A}$. The marking on a battery gives the source voltage only approximately, and the larger the current, the more of it is left across the internal resistance of the battery itself."
+        },
+        {
+          "text": "The terminal voltage decreases, and the $(I, U)$ points lie on a descending straight line.",
+          "correct": true,
+          "feedback": "The readings of the model support this: when the current grows from $0.195\\,\\text{A}$ to $1.333\\,\\text{A}$, the terminal voltage decreases from $1.561\\,\\text{V}$ to $1.333\\,\\text{V}$, and the points lie on the same straight line. Every ampere reduces the terminal voltage by the same amount, because the voltage $R_\\text{s} I$ across the internal resistance of the battery is proportional to the current."
+        },
+        {
+          "text": "The terminal voltage increases, because a larger voltage is needed to produce a larger current.",
+          "feedback": "In the model the opposite happens: at the largest current $1.333\\,\\text{A}$ the terminal voltage is at its smallest, $1.333\\,\\text{V}$. A battery does not adjust its voltage to the current. Its source voltage stays the same, and the larger the current, the more of it is left inside the battery."
+        },
+        {
+          "text": "The terminal voltage decreases slowly at first and then ever more steeply, until the battery suddenly stops working.",
+          "feedback": "The points of the model lie on a straight line, not on a curve: for every ampere of current the terminal voltage decreases by the same amount, $0.20\\,\\text{V}$. The battery does not stop working. At the largest possible current, in a short circuit, the terminal voltage would be zero."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: two batteries in parallel",
+      "justify": true,
+      "reveal": {
+        "after": "koe-2",
+        "min": 3
+      },
+      "prompt": "A load resistor of $1.0\\,\\Omega$ is connected to a new AA battery. A second, identical new battery is connected alongside it, positive terminal to positive terminal and negative terminal to negative terminal. How does the voltage of the resistor, that is the terminal voltage, change compared with when there was one battery?",
+      "choices": [
+        {
+          "text": "The terminal voltage doubles, because there are two batteries.",
+          "feedback": "The readings of the model refute this: with one battery the terminal voltage is $1.333\\,\\text{V}$ and with two in parallel $1.455\\,\\text{V}$, not double. The rises of potential of batteries in parallel are not added, because the charge passes through only one battery. A series connection gives a doubled source voltage."
+        },
+        {
+          "text": "The terminal voltage stays exactly the same, because in a parallel connection the source voltage is the same as for one battery.",
+          "feedback": "The source voltage stays the same, but the terminal voltage changes: in the model it grows from $1.333\\,\\text{V}$ to $1.455\\,\\text{V}$. The current is shared between two batteries, so a smaller voltage is left across the internal resistance of each than with one battery."
+        },
+        {
+          "text": "The terminal voltage grows slightly, because the internal resistances of the two batteries are in parallel.",
+          "correct": true,
+          "feedback": "The readings of the model support this: the terminal voltage grows from $1.333\\,\\text{V}$ to $1.455\\,\\text{V}$. The source voltage is the same as for one battery, but the internal resistance is halved, so less voltage is left across the internal resistance. Connected in series, the same batteries would give a terminal voltage of $2.286\\,\\text{V}$."
+        },
+        {
+          "text": "The terminal voltage decreases, because the current is shared between two batteries and each gives less.",
+          "feedback": "In the model the terminal voltage grows from $1.333\\,\\text{V}$ to $1.455\\,\\text{V}$. The fact that each battery gives only part of the current is exactly the reason for the growth: a smaller voltage is left across the internal resistance of each battery."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Choose a battery and a connection, adjust the load resistance and mark the meter readings on the graph. Where on the graph can the source voltage and the internal resistance be found?",
+      "howto": "*Battery* chooses a new or a used battery and *Connection* one battery, two in series or two in parallel. Inside the dashed line the battery is drawn as its model: the source voltage $E$ and the internal resistance $R_\\text{s}$. *Switch* opens or closes the circuit, and the slider sets the load resistance $R$. The voltmeter is connected to the terminals of the battery, so it shows the terminal voltage $U$, and the ammeter shows the current $I$. *Mark point* adds the readings to the $(I, U)$ graph on the right (below on a phone). When there are at least two points for the same battery and connection, a blue dashed line fitted to the points is drawn on the graph and extended to the axes. The purple dots show the direction of the current, and the orange glow shows how much electrical energy is changed into internal energy of the battery.",
+      "model": "The battery is an ideal voltage source with a constant internal resistance in series. The wires and the ammeter have no resistance, and the voltmeter draws no current. The source voltage and the internal resistance of a real battery change slightly with the current, the temperature and use, and the meter readings have uncertainty, so real measured points do not lie exactly on a straight line. The numbers are values calculated by the model, not measurements.",
+      "calc": "When the switch is closed, Kirchhoff's voltage law gives for the loop $E - R_\\text{s} I - R I = 0$, so the current is\n\n$$I = \\frac{E}{R + R_\\text{s}}$$\n\nThe voltmeter shows the terminal voltage $U = E - R_\\text{s} I$, which is also the voltage $RI$ of the load resistor. When the switch is open, $I = 0$ and $U = E$. For two batteries in series the source voltage is $2E$ and the internal resistance $2R_\\text{s}$, and for two in parallel the source voltage is $E$ and the internal resistance $R_\\text{s} : 2$. The glow grows with the power $R_\\text{s} I^2$ changed in the internal resistance of the battery. The fitted line is the least-squares line through the marked points."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 1: terminal voltage as a function of the current",
+      "intro": "Test prediction 1. The new battery, one battery and a closed switch are kept constant; change only the load resistance $R$. Record the terminal voltage and the current with at least three resistances, for example $1.0\\,\\Omega$, $2.0\\,\\Omega$, $4.0\\,\\Omega$ and $8.0\\,\\Omega$, and mark each point on the graph too. How does the terminal voltage change as the current grows?",
+      "initial": {
+        "paristo": "uusi",
+        "kennot": "yksi",
+        "kytkin": "kiinni",
+        "R": 2
+      },
+      "locked": [
+        "paristo",
+        "kennot",
+        "kytkin"
+      ],
+      "vary": "R",
+      "names": {
+        "paristo": "paristo",
+        "kennot": "connection",
+        "kytkin": "kytkin",
+        "R": "load resistance R"
+      },
+      "units": {
+        "R": "Ω"
+      },
+      "values": {
+        "paristo": {
+          "uusi": "new battery",
+          "kaytetty": "used battery"
+        },
+        "kennot": {
+          "yksi": "one battery",
+          "sarja": "two in series",
+          "rinnan": "two in parallel"
+        },
+        "kytkin": {
+          "auki": "auki",
+          "kiinni": "kiinni"
+        }
+      },
+      "measure": [
+        {
+          "key": "I",
+          "label": "I (A)"
+        },
+        {
+          "key": "U",
+          "label": "U (V)"
+        }
+      ],
+      "min": 3,
+      "question": {
+        "type": "numeric",
+        "prompt": "From two rows of your table that are far apart, determine the internal resistance $R_\\text{s}$ of the battery. Give the answer in ohms.",
+        "answer": 0.2,
+        "unit": "Ω",
+        "tolerance": 0.03,
+        "hints": [
+          "The terminal voltage is $U = E - R_\\text{s} I$. By how much does the terminal voltage decrease when the current grows from one row to the other?",
+          "Choose, for example, the rows $R = 1.0\\,\\Omega$ and $R = 4.0\\,\\Omega$. Calculate the change $\\Delta U$ of the terminal voltage and the change $\\Delta I$ of the current.",
+          "With the values of the model $\\Delta U = 1.333\\,\\text{V} - 1.524\\,\\text{V} = -0.191\\,\\text{V}$ and $\\Delta I = 1.333\\,\\text{A} - 0.381\\,\\text{A} = 0.952\\,\\text{A}$, and $R_\\text{s} = -\\Delta U : \\Delta I$."
+        ],
+        "mistakes": [
+          {
+            "value": 1.0,
+            "feedback": "You calculated the ratio $U : I$ of one row. That is the resistance $R$ of the load resistor, because the voltmeter also measures the voltage of the resistor. The internal resistance comes from how much the terminal voltage decreases as the current grows: $R_\\text{s} = -\\Delta U : \\Delta I$."
+          },
+          {
+            "value": 1.2,
+            "feedback": "You calculated the ratio $E : I$ of the source voltage and the current in one row. That is the resistance $R + R_\\text{s}$ of the whole loop. The internal resistance is the change of the terminal voltage divided by the change of the current."
+          }
+        ],
+        "solution": "**Given:** the readings of the model for the new battery, for example in the row $R = 1.0\\,\\Omega$ the current $I_1 = 1.333\\,\\text{A}$ and the terminal voltage $U_1 = 1.333\\,\\text{V}$, and in the row $R = 4.0\\,\\Omega$ the current $I_2 = 0.381\\,\\text{A}$ and the terminal voltage $U_2 = 1.524\\,\\text{V}$\n\n**Find:** the internal resistance $R_\\text{s}$ in ohms\n\n**Principle:** The model is the same for all loads: the source voltage $E$ and the internal resistance $R_\\text{s}$ stay constant. Then the terminal voltage $U = E - R_\\text{s} I$ decreases by $R_\\text{s}$ for every ampere of current, so in the difference of two rows $E$ cancels and only $R_\\text{s}$ is left. Rows far apart give large differences, so the rounding of the readings has the smallest effect.\n\n**Formula:** $U_1 = E - R_\\text{s} I_1$ and $U_2 = E - R_\\text{s} I_2$, so by subtracting $U_2 - U_1 = R_\\text{s}(I_1 - I_2)$ and $R_\\text{s} = \\dfrac{U_2 - U_1}{I_1 - I_2}$\n\n**Conversions:** Not needed: $1\\,\\text{V} : 1\\,\\text{A} = 1\\,\\Omega$.\n\n**Substitution:** $R_\\text{s} = \\dfrac{1.524\\,\\text{V} - 1.333\\,\\text{V}}{1.333\\,\\text{A} - 0.381\\,\\text{A}} = \\dfrac{0.191\\,\\text{V}}{0.952\\,\\text{A}} = 0.2006\\,\\Omega$\n\n**Answer:** $0.20\\,\\Omega$, two significant figures like the difference of the voltages $0.19\\,\\text{V}$.\n\n**Reasonableness:** The source voltage is $E = U_1 + R_\\text{s} I_1 = 1.333\\,\\text{V} + 0.20\\,\\Omega \\cdot 1.333\\,\\text{A} = 1.60\\,\\text{V}$, and this is exactly the value where the fitted line of the graph meets the vertical axis. The internal resistance is small compared with the loads $1$–$8\\,\\Omega$, so the terminal voltage always stays close to the source voltage, as one expects of a new battery."
+      }
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 2: one battery, in series and in parallel",
+      "intro": "Test prediction 2. The new battery, a closed switch and a load resistance of $1.0\\,\\Omega$ are kept constant; change only the connection. Record the terminal voltage and the current for all three connections. Which connection gives the largest terminal voltage, and by how much does the parallel connection change it compared with one battery?",
+      "initial": {
+        "paristo": "uusi",
+        "kennot": "yksi",
+        "kytkin": "kiinni",
+        "R": 1
+      },
+      "locked": [
+        "paristo",
+        "kytkin",
+        "R"
+      ],
+      "vary": "kennot",
+      "names": {
+        "paristo": "paristo",
+        "kennot": "connection",
+        "kytkin": "kytkin",
+        "R": "load resistance R"
+      },
+      "units": {
+        "R": "Ω"
+      },
+      "values": {
+        "paristo": {
+          "uusi": "new battery",
+          "kaytetty": "used battery"
+        },
+        "kennot": {
+          "yksi": "one battery",
+          "sarja": "two in series",
+          "rinnan": "two in parallel"
+        },
+        "kytkin": {
+          "auki": "auki",
+          "kiinni": "kiinni"
+        }
+      },
+      "measure": [
+        {
+          "key": "I",
+          "label": "I (A)"
+        },
+        {
+          "key": "U",
+          "label": "U (V)"
+        }
+      ],
+      "min": 3
+    },
+    {
+      "id": "koe-3",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 3: the used battery",
+      "optional": true,
+      "intro": "The used battery, one battery and a closed switch are kept constant; change only the load resistance. Record the terminal voltage and the current with at least three resistances and mark the points on the graph. Finally open the switch and look at what the voltmeter shows. How does the line of the used battery differ from the line of the new battery?",
+      "initial": {
+        "paristo": "kaytetty",
+        "kennot": "yksi",
+        "kytkin": "kiinni",
+        "R": 2
+      },
+      "locked": [
+        "paristo",
+        "kennot"
+      ],
+      "vary": "R",
+      "names": {
+        "paristo": "paristo",
+        "kennot": "connection",
+        "kytkin": "kytkin",
+        "R": "load resistance R"
+      },
+      "units": {
+        "R": "Ω"
+      },
+      "values": {
+        "paristo": {
+          "uusi": "new battery",
+          "kaytetty": "used battery"
+        },
+        "kennot": {
+          "yksi": "one battery",
+          "sarja": "two in series",
+          "rinnan": "two in parallel"
+        },
+        "kytkin": {
+          "auki": "auki",
+          "kiinni": "kiinni"
+        }
+      },
+      "measure": [
+        {
+          "key": "I",
+          "label": "I (A)"
+        },
+        {
+          "key": "U",
+          "label": "U (V)"
+        }
+      ],
+      "min": 3
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion: the model of a battery",
+      "after": [
+        "koe-1",
+        "koe-2"
+      ],
+      "prompt": "On the basis of your tables, write: how does the terminal voltage depend on the current, and where on the graph can the source voltage and the internal resistance be found? What did the series and parallel connections do to the terminal voltage with a load of $1.0\\,\\Omega$?",
+      "model": "The terminal voltage of the new battery decreased steadily as the current grew: at a current of $0.195\\,\\text{A}$ it was $1.561\\,\\text{V}$ and at $1.333\\,\\text{A}$ only $1.333\\,\\text{V}$, and the points lay on a descending straight line. The line meets the vertical axis at the source voltage $1.60\\,\\text{V}$, because without a current the terminal voltage is the source voltage. The slope of the line gives the internal resistance: $0.191\\,\\text{V} : 0.952\\,\\text{A} \\approx 0.20\\,\\Omega$. With a load of $1.0\\,\\Omega$ the terminal voltage of one battery was $1.333\\,\\text{V}$, of two in series $2.286\\,\\text{V}$ and of two in parallel $1.455\\,\\text{V}$. The series connection doubles the source voltage, but also the internal resistance. The parallel connection keeps the source voltage the same and halves the internal resistance, so the terminal voltage grows only a little. The values are calculated by the model: in the model the source voltage and the internal resistance are constants.",
+      "criteria": [
+        "The answer says that the terminal voltage decreases as the current grows so that the $(I, U)$ points lie on a descending straight line, and justifies it with numbers from the table.",
+        "The answer says that the source voltage is where the line meets the vertical axis, that is the terminal voltage without a current.",
+        "The answer says that the internal resistance is obtained from the ratio of the change of the terminal voltage to the change of the current, that is from the slope of the line.",
+        "The answer compares the connections with numbers: the series connection gives the largest terminal voltage, and the parallel connection raises it only a little, because the internal resistance decreases but the source voltage does not change."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Return to your predictions",
+      "optional": true,
+      "prompt": "Compare your predictions with the values of the model in the experiments and with the model of a battery. Then return to the question at the beginning: why do the headlights of a car dim when the starter motor draws a large current from the battery?",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2"
+      ]
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the error",
+      "prompt": "The source voltage of a battery is $9.0\\,\\text{V}$ and its internal resistance $1.5\\,\\Omega$. A load resistor of $12\\,\\Omega$ is connected to it. A student calculates the current and the terminal voltage like this:\n\n$$\\begin{aligned} I &= \\frac{9.0\\,\\text{V}}{12\\,\\Omega} = 0.75\\,\\text{A} \\\\ U &= 12\\,\\Omega \\cdot 0.75\\,\\text{A} = 9.0\\,\\text{V} \\end{aligned}$$\n\nWhere is the error?",
+      "choices": [
+        {
+          "text": "The internal resistance is missing: in reality $I = 0.67\\,\\text{A}$ and $U = 8.0\\,\\text{V}$.",
+          "correct": true,
+          "feedback": "Correct. The internal resistance is in the same loop in series with the load, so the current is $I = E : (R + R_\\text{s}) = 9.0\\,\\text{V} : 13.5\\,\\Omega = 0.67\\,\\text{A}$, and the terminal voltage is $U = 12\\,\\Omega \\cdot 0.67\\,\\text{A} = 8.0\\,\\text{V}$. The error could have been noticed from the result: the terminal voltage of a battery under load cannot be equal to the source voltage, because part of it, $1.5\\,\\Omega \\cdot 0.67\\,\\text{A} = 1.0\\,\\text{V}$, is left inside the battery."
+        },
+        {
+          "text": "The calculations are correct, because the terminal voltage is always the same as the source voltage.",
+          "feedback": "The terminal voltage is the source voltage only when no current is drawn from the battery. When a current flows, the terminal voltage is $U = E - R_\\text{s} I$, so here it is about $1.0\\,\\text{V}$ smaller than the source voltage."
+        },
+        {
+          "text": "The current is calculated from the internal resistance: $I = 9.0\\,\\text{V} : 1.5\\,\\Omega = 6.0\\,\\text{A}$.",
+          "feedback": "This is the short-circuit current, which would flow only if the load resistor were replaced by a wire. When the load is connected, the current is limited by both the load and the internal resistance: $I = E : (R + R_\\text{s})$."
+        },
+        {
+          "text": "The terminal voltage is a sum: $U = 9.0\\,\\text{V} + 1.5\\,\\Omega \\cdot 0.75\\,\\text{A}$.",
+          "feedback": "In the internal resistance the potential drops and does not rise, so its voltage is subtracted from the source voltage: $U = E - R_\\text{s} I$. In addition the current has been calculated without the internal resistance."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply to a new situation",
+      "prompt": "The source voltage of a car battery is $12.6\\,\\text{V}$ and its internal resistance $0.012\\,\\Omega$. When starting, the starter motor draws a current of $180\\,\\text{A}$ from the battery. The headlights are connected to the terminals of the battery, and their own current is small compared with the starting current. What is the terminal voltage of the battery during starting? Give the answer in volts.",
+      "answer": 10.44,
+      "unit": "V",
+      "tolerance": 0.02,
+      "hints": [
+        "The voltage of the headlights is the terminal voltage of the battery. What determines how much smaller the terminal voltage is than the source voltage?",
+        "The terminal voltage is $U = E - R_\\text{s} I$, where $I$ is the current drawn from the battery.",
+        "The voltage across the internal resistance is $0.012\\,\\Omega \\cdot 180\\,\\text{A} = 2.16\\,\\text{V}$."
+      ],
+      "mistakes": [
+        {
+          "value": 2.16,
+          "feedback": "This is the voltage across the internal resistance of the battery, that is how much the terminal voltage drops. The terminal voltage is the source voltage minus this: $12.6\\,\\text{V} - 2.16\\,\\text{V}$."
+        },
+        {
+          "value": 14.76,
+          "feedback": "You added the voltage across the internal resistance to the source voltage. In the internal resistance the potential drops in the direction of the current, so the voltage is subtracted: $U = E - R_\\text{s} I$."
+        },
+        {
+          "value": 12.6,
+          "feedback": "This is the source voltage, that is the terminal voltage without a current. The starting current of $180\\,\\text{A}$ reduces the terminal voltage by the voltage across the internal resistance."
+        }
+      ],
+      "solution": "**Given:** source voltage $E = 12.6\\,\\text{V}$, internal resistance $R_\\text{s} = 0.012\\,\\Omega$, starting current $I = 180\\,\\text{A}$; the current of the headlights is neglected\n\n**Find:** the terminal voltage $U$ of the battery in volts\n\n**Principle:** The battery is described as an ideal source with an internal resistance in series. When a current is drawn from the battery, the potential drops by the voltage $R_\\text{s} I$ in the internal resistance, so a terminal voltage smaller than the source voltage is left between the terminals. The headlights are connected to the same terminals, so the terminal voltage is also their voltage.\n\n**Formula:** $U = E - R_\\text{s} I$\n\n**Conversions:** Not needed: $1\\,\\Omega \\cdot 1\\,\\text{A} = 1\\,\\text{V}$.\n\n**Substitution:** $U = 12.6\\,\\text{V} - 0.012\\,\\Omega \\cdot 180\\,\\text{A} = 12.6\\,\\text{V} - 2.16\\,\\text{V} = 10.44\\,\\text{V}$\n\n**Answer:** $10.4\\,\\text{V}$, to a tenth of a volt like the source voltage $12.6\\,\\text{V}$; the voltage across the internal resistance, $2.2\\,\\text{V}$, is known to two significant figures.\n\n**Reasonableness:** The terminal voltage drops by about $2\\,\\text{V}$, a sixth. The power of a headlight is proportional to the square of the voltage when its resistance stays about the same, so the power decreases to about $(10.44 : 12.6)^2 \\approx 0.69$ times, and the lights dim clearly. The short-circuit current of the battery would be $12.6\\,\\text{V} : 0.012\\,\\Omega = 1050\\,\\text{A}$, so $180\\,\\text{A}$ is less than a fifth of it, as it should be for a starter motor."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise on three levels. Level 1 tasks use one equation, level 2 tasks combine the model of a battery with Ohm's law or power, and level 3 requires reasoning about the connections of batteries and about measurement results."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept",
+      "prompt": "A voltmeter shows $1.45\\,\\text{V}$ across the terminals of a used battery taken from a torch when nothing else is connected to the battery. The reading for a new battery would be $1.60\\,\\text{V}$. Yet the used battery gives only a weak glow in the torch. What explains this?",
+      "choices": [
+        {
+          "text": "Its internal resistance has grown, so under load the terminal voltage drops a lot.",
+          "correct": true,
+          "feedback": "Correct. Without a current the voltmeter shows the source voltage, which is almost unchanged even for the used battery. When the lamp draws a current, a large part of the source voltage is left across the increased internal resistance of the used battery, and only a small terminal voltage is left for the lamp."
+        },
+        {
+          "text": "The battery has run out of charge, so there is no longer a current for the lamp.",
+          "feedback": "A battery is not a tank that charge runs out of: the current goes round the circuit. In a used battery the chemicals are partly consumed, and its internal resistance has grown. That is why the terminal voltage drops a lot when the lamp draws a current."
+        },
+        {
+          "text": "The voltmeter shows the wrong value, because it draws too large a current from the battery.",
+          "feedback": "A voltmeter draws only a vanishingly small current, so without a load it shows the source voltage correctly. The difference appears only when the lamp draws a current: then the large internal resistance of the used battery reduces the terminal voltage."
+        },
+        {
+          "text": "The source voltage of the used battery is smaller, and that is what makes the glow weak.",
+          "feedback": "The difference in the source voltage, from $1.60\\,\\text{V}$ to $1.45\\,\\text{V}$, is only about a tenth and does not explain the clearly weaker glow. The decisive thing is the increased internal resistance of the used battery, which reduces the terminal voltage when the lamp draws a current."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Read from the graph",
+      "figure": "fy6-8/check-graph",
+      "prompt": "The graph shows the measured points of a $9\\,\\text{V}$ battery and a straight line fitted to them. Determine the internal resistance of the battery from the graph. Give the answer in ohms.",
+      "answer": 2.0,
+      "unit": "Ω",
+      "tolerance": 0.05,
+      "hints": [
+        "The internal resistance is the absolute value of the slope of the line. Choose two points far apart on the line, not two measured points.",
+        "The line starts on the vertical axis at the voltage $9.0\\,\\text{V}$ and ends where the current is $1.5\\,\\text{A}$. Read the terminal voltage there.",
+        "When the current grows by $1.5\\,\\text{A}$, the terminal voltage decreases by $9.0\\,\\text{V} - 6.0\\,\\text{V} = 3.0\\,\\text{V}$."
+      ],
+      "mistakes": [
+        {
+          "value": 4.0,
+          "feedback": "You calculated the ratio of one point, $U : I = 6.0\\,\\text{V} : 1.5\\,\\text{A}$. That is the resistance of the load resistor that would give that current. The internal resistance is the change of the terminal voltage divided by the change of the current."
+        },
+        {
+          "value": 6.0,
+          "feedback": "You divided the source voltage by the current $1.5\\,\\text{A}$. The internal resistance comes from the change of the terminal voltage: when the current grows by $1.5\\,\\text{A}$, the terminal voltage decreases by $3.0\\,\\text{V}$."
+        }
+      ],
+      "solution": "**Given:** the measured points of the graph and the straight line fitted to them\n\n**Find:** the internal resistance $R_\\text{s}$ in ohms\n\n**Principle:** The terminal voltage is $U = E - R_\\text{s} I$, so the $(I, U)$ graph is a straight line with slope $-R_\\text{s}$. Because of measurement uncertainty the measured points are not exactly on the line, so the slope is read from the fitted line at two points far apart.\n\n**Reading the graph:** The line starts on the vertical axis at $(0\\,\\text{A};\\ 9.0\\,\\text{V})$ and ends at $(1.5\\,\\text{A};\\ 6.0\\,\\text{V})$, which is at a crossing of gridlines. Between these the current grows by $1.5\\,\\text{A}$ and the terminal voltage decreases by $3.0\\,\\text{V}$.\n\n**Formula:** $R_\\text{s} = -\\dfrac{\\Delta U}{\\Delta I} = \\dfrac{U_1 - U_2}{I_2 - I_1}$\n\n**Conversions:** Not needed: $1\\,\\text{V} : 1\\,\\text{A} = 1\\,\\Omega$.\n\n**Substitution:** $R_\\text{s} = \\dfrac{9.0\\,\\text{V} - 6.0\\,\\text{V}}{1.5\\,\\text{A} - 0\\,\\text{A}} = \\dfrac{3.0\\,\\text{V}}{1.5\\,\\text{A}} = 2.0\\,\\Omega$\n\n**Answer:** $2.0\\,\\Omega$, two significant figures, because the voltage is read from the graph to about $0.1\\,\\text{V}$ and the current to about $0.05\\,\\text{A}$.\n\n**Reasonableness:** The source voltage is the starting point of the line, $9.0\\,\\text{V}$, and the short-circuit current would be $9.0\\,\\text{V} : 2.0\\,\\Omega = 4.5\\,\\text{A}$. The measured point $(1.00\\,\\text{A};\\ 6.98\\,\\text{V})$ is close to the value of the line, $9.0\\,\\text{V} - 2.0\\,\\Omega \\cdot 1.00\\,\\text{A} = 7.0\\,\\text{V}$. An internal resistance of a few ohms is typical of a small $9\\,\\text{V}$ battery."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Explain the connections",
+      "optional": true,
+      "prompt": "Using the model of a battery, explain why two identical batteries give a doubled source voltage when connected in series but the same source voltage as one battery when connected in parallel. When is the parallel connection useful?",
+      "model": "In a series connection the charge passes through both batteries one after the other. In each ideal source the potential rises by $E$, so the rises are added and the source voltage is $2E$. At the same time both internal resistances are in the same loop one after the other, so the internal resistance is $2R_\\text{s}$. In a parallel connection the batteries are parallel branches between the same two points. Each charge passes through only one battery, so the potential rises by only $E$. The current is shared between two branches, so only half of the voltage is left across each internal resistance, and the internal resistance is $R_\\text{s} : 2$. The parallel connection is useful when a large current or a long operating time is needed at the same voltage: the terminal voltage drops less, and each battery gives only part of the current.",
+      "criteria": [
+        "The answer justifies the source voltage $2E$ of the series connection by the charge passing through both sources and the rises being added.",
+        "The answer justifies the source voltage $E$ of the parallel connection by each charge passing through only one battery.",
+        "The answer says that the internal resistance doubles in series and halves in parallel.",
+        "The answer names the benefit of the parallel connection: a larger current with a smaller drop of the terminal voltage, or a longer operating time."
+      ]
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally two quick questions. Answer first yourself and only then open the answer."
+    }
+  ]
+}
