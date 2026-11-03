@@ -38,6 +38,7 @@
     },
     "lesson_prototype": "prototyyppi",
     "lesson_coming": "tulossa",
+    "chapter_n": "Luku {{n}}",
     "course_goals": "Moduulin tavoitteet",
     "course_goals_lead": "Opiskelija",
     "course_lessons": "Oppitunnit",

@@ -1,6 +1,7 @@
 {
   "FY1": {
     "title": "Fysiikka luonnontieteenä",
+    "themes": ["Fysiikka ja mittaaminen", "Liike ja aine", "Oma tutkimus"],
     "tavoitteet": [
       "tutustuu fysiikkaan tieteenä, joka tutkii asioita järjestelmällisesti ja kokeilemalla",
       "tutustuu siihen, kuinka pieniä ja suuria asioita maailmankaikkeudessa on",
@@ -14,13 +15,14 @@
       "fy1-3": "Mittaaminen ja mittauksen luotettavuus",
       "fy1-4": "Graafinen esitys ja suoran sovittaminen",
       "fy1-5": "Tasainen liike – nopeus, paikka ja kuvaajat",
-      "fy1-6": "Putoamiskiihtyvyys: v = gt",
-      "fy1-7": "Tiheys: m = ρV",
+      "fy1-6": "Putoamiskiihtyvyys: $v = gt$",
+      "fy1-7": "Tiheys: $m = \\rho V$",
       "fy1-8": "Oma kokeellinen tutkimus: suunnittelu, toteutus ja raportointi"
     }
   },
   "FY2": {
     "title": "Fysiikka, ympäristö ja yhteiskunta",
+    "themes": ["Energia ja teho", "Energian tuotanto ja ympäristö"],
     "tavoitteet": [
       "tutustuu energiaan, joka on fysiikan tärkeä käsite",
       "tuntee erilaisia energialajeja ja tapoja tuottaa energiaa",
@@ -30,9 +32,9 @@
     "lessons": {
       "fy2-1": "Energialajit ja energian säilyminen",
       "fy2-2": "Energian muuntuminen ja yksikkö joule",
-      "fy2-3": "Teho: P = ΔE/Δt",
+      "fy2-3": "Teho: $P = \\frac{\\Delta E}{\\Delta t}$",
       "fy2-4": "Hyötysuhde",
-      "fy2-5": "Polttoaineet ja lämpöarvo E = Hm",
+      "fy2-5": "Polttoaineet ja lämpöarvo $E = Hm$",
       "fy2-6": "Energiantuotantotavat ja niiden vertailu",
       "fy2-7": "Energian siirtäminen: sähkö ja lämpö",
       "fy2-8": "Energiantuotanto, ympäristö ja ilmastonmuutos"
@@ -40,6 +42,7 @@
   },
   "FY3": {
     "title": "Energia ja lämpö",
+    "themes": ["Voima, työ ja lämpötila", "Paine, lämpö ja olomuodot", "Laajeneminen ja kaasut", "Energia ja ympäristö"],
     "tavoitteet": [
       "ymmärtää energian paremmin: energia on fysiikan tärkeä käsite",
       "osaa tutkia ilmiöitä, jotka liittyvät aineen termodynaamiseen tilaan ja olomuodon muutoksiin",
@@ -47,18 +50,18 @@
       "tunnistaa, miksi energiatasapaino ja lämmön siirtyminen ovat tärkeitä ilmastonmuutoksessa"
     ],
     "lessons": {
-      "fy3-1": "Voima vuorovaikutuksen mittana ja paino G = mg",
+      "fy3-1": "Voima vuorovaikutuksen mittana ja paino $G = mg$",
       "fy3-2": "Työ ja energia",
       "fy3-3": "Termodynaaminen systeemi, tilanmuuttujat ja lämpötila",
       "fy3-13": "Absoluuttisen nollapisteen määrittäminen",
       "fy3-4": "Paine ja hydrostaattinen paine",
       "fy3-5": "Sisäenergia, lämpömäärä ja energian säilyminen",
-      "fy3-6": "Aineen lämpeneminen ja jäähtyminen: Q = cmΔT",
+      "fy3-6": "Aineen lämpeneminen ja jäähtyminen: $Q = cm\\Delta T$",
       "fy3-7": "Olomuodon muutokset",
       "fy3-14": "Lämpötasapaino olomuodon muuttuessa",
       "fy3-8": "Lämpölaajeneminen",
       "fy3-9": "Kaasujen tilanmuutokset ja Boylen laki",
-      "fy3-10": "Ideaalikaasun tilanyhtälö pV = nRT",
+      "fy3-10": "Ideaalikaasun tilanyhtälö $pV = nRT$",
       "fy3-11": "Kaasun tekemä työ ja lämpövoimakone",
       "fy3-15": "Energiantuotanto ja voimalaitosten hyötysuhde",
       "fy3-12": "Lämmön siirtyminen, energiatasapaino ja ilmastonmuutos",
@@ -67,6 +70,7 @@
   },
   "FY4": {
     "title": "Voima ja liike",
+    "themes": ["Liikkeen kuvaaminen", "Newtonin lait ja voimat", "Mekaaninen energia", "Liikemäärä ja soveltaminen"],
     "tavoitteet": [
       "osaa tutkia kokeilemalla voimaan ja liikkeeseen liittyviä ilmiöitä",
       "osaa tehdä kuvaajia mittausaineistosta ja tulkita niitä",
