@@ -133,8 +133,8 @@
       "vary": "ny",
       "names": {
         "tila": "tila",
-        "na": "alempi taso n_a",
-        "ny": "ylempi taso n_y"
+        "na": "alempi taso $n_\\text{a}$",
+        "ny": "ylempi taso $n_\\text{y}$"
       },
       "values": {
         "tila": {
@@ -171,8 +171,8 @@
       "vary": "ny",
       "names": {
         "tila": "tila",
-        "na": "alempi taso n_a",
-        "ny": "ylempi taso n_y"
+        "na": "alempi taso $n_\\text{a}$",
+        "ny": "ylempi taso $n_\\text{y}$"
       },
       "values": {
         "tila": {
@@ -201,7 +201,7 @@
         "koe-2"
       ],
       "prompt": "Kirjoita taulukoidesi perusteella: mikä määrää, mihin kohtaan spektriä viiva tulee? Miksi viivat tasolle $2$ tihenevät lyhyitä aallonpituuksia kohti? Miksi kylmä vetykaasu ei tee tummia viivoja näkyvän valon alueelle?",
-      "model": "Viivan paikan määrää tasojen energiaero $\\Delta E = E_\\text{y} - E_\\text{a}$: fotonin energia on juuri tämä erotus, ja aallonpituus on $\\lambda = \\tfrac{hc}{\\Delta E}$, joten suurempi ero antaa lyhyemmän aallonpituuden. Kokeessa 1 siirtymät tasoilta $3$–$6$ tasolle $2$ antoivat mallin arvot $656\\,\\text{nm}$, $486\\,\\text{nm}$, $434\\,\\text{nm}$ ja $410\\,\\text{nm}$; ylimmät tasot ovat lähellä toisiaan, joten energiaero kasvaa yhä vähemmän ja viivat tihenevät. Kokeessa 2 perustilasta lähtevät siirtymät vaativat vähintään $10{,}2\\,\\text{eV}$:n fotonin, ja aallonpituudet olivat $94$–$122\\,\\text{nm}$ eli ultraviolettia. Näkyvän valon fotonien energia, noin $1{,}7$–$3{,}3\\,\\text{eV}$, ei vastaa mitään perustilasta lähtevää erotusta, joten kylmä vety päästää näkyvän valon läpi.",
+      "model": "Viivan paikan määrää tasojen energiaero $\\Delta E = E_\\text{y} - E_\\text{a}$: fotonin energia on juuri tämä erotus, ja aallonpituus on $\\lambda = \\tfrac{hc}{\\Delta E}$, joten suurempi ero antaa lyhyemmän aallonpituuden. Kokeessa 1 siirtymät tasoilta $3$–$6$ tasolle $2$ antoivat mallin arvot $656\\,\\text{nm}$, $486\\,\\text{nm}$, $434\\,\\text{nm}$ ja $410\\,\\text{nm}$; ylimmät tasot ovat lähellä toisiaan, joten energiaero kasvaa yhä vähemmän ja viivat tihenevät. Kokeessa 2 perustilasta lähtevät siirtymät vaativat vähintään $10{,}2\\,\\text{eV}$:n fotonin, ja aallonpituudet olivat $94$–$122\\,\\text{nm}$ eli ultraviolettia. Näkyvän valon fotonien energia, noin $1{,}7$–$3{,}3\\,\\text{eV}$, ei vastaa mitään perustilasta lähtevää erotusta, joten kylmä vety päästää näkyvän valon läpi. Tasojen välimatkat $E_n = -\\tfrac{13{,}6\\,\\text{eV}}{n^2}$ olivat annettua aineistoa, joten koe ei selvittänyt niitä vaan sen, mitä ne tarkoittavat viivojen paikoille.",
       "criteria": [
         "Sanon, että viivan paikan määrää kahden tason energiaero eikä kumpikaan taso yksinään.",
         "Käytän yhtälöä $\\lambda = \\tfrac{hc}{\\Delta E}$ ja kerron, että suurempi ero antaa lyhyemmän aallonpituuden.",
@@ -286,7 +286,7 @@
       "stage": "sovella",
       "type": "choice",
       "title": "Etsi virhe",
-      "prompt": "Opiskelija laskee vetyatomin siirtymässä $n = 3 \\to 2$ syntyvän fotonin aallonpituuden. Hän laskee energiaeron $\\Delta E = -1{,}51\\,\\text{eV} - (-3{,}40\\,\\text{eV}) = 1{,}89\\,\\text{eV}$ ja kirjoittaa sitten\\n\\n$$\\begin{aligned} \\lambda &= \\frac{hc}{\\Delta E} \\\\ &= \\frac{1{,}9865 \\cdot 10^{-25}}{1{,}89}\\,\\text{m} \\\\ &\\approx 1{,}05 \\cdot 10^{-25}\\,\\text{m} \\end{aligned}$$\\n\\nHän laski ensin $hc = 6{,}626 \\cdot 10^{-34} \\cdot 2{,}998 \\cdot 10^{8} = 1{,}9865 \\cdot 10^{-25}$ yksikössä $\\text{J}\\,\\text{m}$.\\n\\nMissä on virhe?",
+      "prompt": "Opiskelija laskee vetyatomin siirtymässä $n = 3 \\to 2$ syntyvän fotonin aallonpituuden. Hän laskee energiaeron $\\Delta E = -1{,}51\\,\\text{eV} - (-3{,}40\\,\\text{eV}) = 1{,}89\\,\\text{eV}$ ja kirjoittaa sitten\n\n$$\\begin{aligned} \\lambda &= \\frac{hc}{\\Delta E} \\\\ &= \\frac{1{,}9865 \\cdot 10^{-25}}{1{,}89}\\,\\text{m} \\\\ &\\approx 1{,}05 \\cdot 10^{-25}\\,\\text{m} \\end{aligned}$$\n\nHän laski ensin $hc = 6{,}626 \\cdot 10^{-34} \\cdot 2{,}998 \\cdot 10^{8} = 1{,}9865 \\cdot 10^{-25}$ yksikössä $\\text{J}\\,\\text{m}$.\n\nMissä on virhe?",
       "choices": [
         {
           "text": "Energiaeroa ei muutettu jouleiksi, vaikka $h$ on yksikössä $\\text{J}\\,\\text{s}$.",

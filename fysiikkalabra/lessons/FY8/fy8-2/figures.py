@@ -164,7 +164,7 @@ def greenhouse():
     f = Fig("fy82-gh", 340, "Periaatekuva kasvihuoneilmiöstä, ei mittakaavassa, yksinkertaistettu. Auringon näkyvä valo kulkee ilmakehän läpi "
             "maanpinnalle, koska ilmakehän kaasut eivät juuri absorboi näkyvää valoa. Lämmennyt maanpinta säteilee "
             "infrapunaa. Hiilidioksidimolekyyli absorboi infrapunafotonin ja lähettää sitten uuden infrapunafotonin "
-            "satunnaiseen suuntaan, tässä takaisin alaspäin kohti maanpintaa.")
+            "satunnaiseen suuntaan, tässä kaksi fotonia: toinen alaspäin kohti maanpintaa ja toinen ylös- ja oikealle avaruuteen päin.")
     f.defs_add(f'<linearGradient id="fy82-air" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="{COLD_LIGHT}"/><stop offset="1" stop-color="{GLASS}"/></linearGradient>')
     f.rect(12, 12, 576, 262, "url(#fy82-air)")
     f.rect(12, 274, 576, 54, GOOD_LIGHT, None)
