@@ -20,6 +20,28 @@
     "havaittava maailmankaikkeus",
     "perusvuorovaikutus"
   ],
+  "key_concepts": [
+    {
+      "term": "malli",
+      "explain": "Yksinkertaistettu kuvaus siitä, miten jokin ilmiö toimii. Mallin avulla voi tehdä ennusteita."
+    },
+    {
+      "term": "kymmenpotenssi",
+      "explain": "Luku, joka on kymmenen potenssi, esimerkiksi $10^{3} = 1000$. Sillä kirjoitetaan hyvin suuria ja pieniä lukuja lyhyesti."
+    },
+    {
+      "term": "suuruusluokka",
+      "explain": "Kertoo luvun koon suunnilleen: se on kymmenpotenssien akselilla lukua lähin kymmenpotenssi."
+    },
+    {
+      "term": "alkeishiukkanen",
+      "explain": "Hiukkanen, jolla ei tiettävästi ole pienempiä osia, esimerkiksi elektroni tai kvarkki."
+    },
+    {
+      "term": "perusvuorovaikutus",
+      "explain": "Yksi neljästä tavasta, joilla kappaleet ja hiukkaset vaikuttavat toisiinsa: gravitaatio, sähkömagneettinen, vahva ja heikko."
+    }
+  ],
   "sim": true,
   "solutions": "all",
   "image": false

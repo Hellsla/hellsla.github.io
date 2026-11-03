@@ -17,6 +17,28 @@
     "lämpenemiskäyrä",
     "faasikaavio"
   ],
+  "key_concepts": [
+    {
+      "term": "olomuoto",
+      "explain": "Aineen muoto: kiinteä, neste tai kaasu."
+    },
+    {
+      "term": "sulamislämpö",
+      "explain": "Energia, joka tarvitaan kiinteän aineen sulattamiseen. Kun puhdas aine sulaa vakiopaineessa, sen lämpötila ei nouse."
+    },
+    {
+      "term": "höyrystymislämpö",
+      "explain": "Energia, joka tarvitaan nesteen muuttamiseen kaasuksi. Kun puhdas aine kiehuu vakiopaineessa, sen lämpötila ei nouse."
+    },
+    {
+      "term": "lämpenemiskäyrä",
+      "explain": "Kuvaaja, joka näyttää aineen lämpötilan ajan funktiona, kun ainetta lämmitetään tasaisesti."
+    },
+    {
+      "term": "faasikaavio",
+      "explain": "Kuva, joka näyttää, missä olomuodossa aine on eri lämpötiloissa ja paineissa."
+    }
+  ],
   "sim": true,
   "image": false
 }

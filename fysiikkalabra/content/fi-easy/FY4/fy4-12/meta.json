@@ -16,6 +16,24 @@
     "kohtaaminen",
     "ohitus"
   ],
+  "key_concepts": [
+    {
+      "term": "paikka",
+      "explain": "Kertoo, missä kappale on valittuun nollakohtaan eli origoon nähden."
+    },
+    {
+      "term": "kiihtyvyys",
+      "explain": "Kertoo, kuinka nopeasti nopeus muuttuu."
+    },
+    {
+      "term": "kohtaaminen",
+      "explain": "Kaksi kappaletta ovat samassa paikassa samalla hetkellä. Kuvaajassa viivat leikkaavat."
+    },
+    {
+      "term": "ohitus",
+      "explain": "Takana oleva kappale saavuttaa edellä olevan ja menee sen ohi."
+    }
+  ],
   "sim": true,
   "solutions": "all",
   "image": false

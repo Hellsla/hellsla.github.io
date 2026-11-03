@@ -1,14 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: f2b6f9c335faa267
+CONTENT-HASH: ece51be74ef11ee8
 
 ## Blocking
 (none)
 
-## Fixed
-- none needed
-
 ## Polish
-- None.
+- meta.json key_concepts "yhteistuotanto" — "lauhdutin" is not explained — "Lauhduttimessa (laitteessa, jossa höyry jäähtyy vedeksi) syntyvä lämpö käytetään lämmitykseen."
 
 ## Checked
-Same structure, tasks, hints, feedback and teaching sequence as the Finnish; short clear sentences (long Finnish sentences split, e.g. in the Ydinajatus and the heat pump text); terms and symbols as in the Finnish; no content added or dropped. The sim's option values (sama paine, jäähdytys ensin) are Finnish, so fine here.
+batch delta review: key_concepts judged against NOTES.md §12 and the editorial standard (central concepts, plain 1–2 sentence explanations, natural Finnish, physics unchanged); lesson rewordings, photos and captions, experiment/prompt wording and solution diagrams in this diff read clearly and agree with the tasks they touch.

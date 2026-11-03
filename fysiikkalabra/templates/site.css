@@ -469,6 +469,17 @@ h2.intro-h{margin:0 0 .45rem;font:700 var(--fs-small)/1.3 var(--sans);letter-spa
 .prior{margin:0 0 .9rem}
 .prior-ref{display:block;font-size:var(--fs-small);color:var(--ink-2)}
 .path-note{max-width:var(--measure);margin:0;font-size:var(--fs-small);color:var(--ink-2);line-height:1.5}
+/* Luvun tärkeät käsitteet (Selkeä suomi, inquiry.py key_concepts_html; teacher 2026-11-03): one quiet panel in the
+   reading column between the opening and the first stage; each concept is its term, a short explanation and the
+   student's own note field, one under another on a phone, the note field beside its explanation from 40rem. */
+.kc{max-width:var(--measure);margin:2rem 0 0;padding:1rem 1.1rem 1.1rem;border:1px solid var(--line);border-radius:14px;background:var(--surface)}
+.kc-h{display:flex;flex-wrap:wrap;align-items:center;gap:.3rem .6rem;margin:0 0 .4rem}.kc-h .opt-tag{margin:0}
+.kc-lead{margin:0 0 .8rem;font-size:var(--fs-inner);line-height:1.55}
+.kc-list{margin:0;padding:0}
+.kc-term{margin:0;padding:.75rem 0 0;border-top:1px solid var(--line-2);font-size:var(--fs-inner);font-weight:700}
+.kc-explain{margin:.15rem 0 .75rem;font-size:var(--fs-inner);line-height:1.5}
+@media (min-width:40rem){.kc-list{display:grid;grid-template-columns:minmax(9rem,14rem) minmax(0,1fr);column-gap:1.2rem}
+  .kc-term,.kc-explain{border-top:1px solid var(--line-2);padding:.75rem 0;margin:0}}
 .path-count{white-space:nowrap}
 
 /* level 1: the stage. A numbered heading on a full-width rule, with clear room above, so the start of each stage

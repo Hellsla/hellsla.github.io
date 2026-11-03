@@ -19,6 +19,28 @@
     "tuulivoima",
     "aurinkoenergia"
   ],
+  "key_concepts": [
+    {
+      "term": "energiantuotanto",
+      "explain": "Luonnonvaran energian muuttaminen sähköksi tai lämmöksi voimalaitoksessa."
+    },
+    {
+      "term": "uusiutuva energia",
+      "explain": "Energiaa luonnonvarasta, joka ei lopu käytössä, esimerkiksi vesi, tuuli tai auringonsäteily."
+    },
+    {
+      "term": "ydinvoima",
+      "explain": "Sähkön tuottaminen uraanin ydinenergiasta. Ydinvoimala toimii yleensä tasaisesti lähes täydellä teholla."
+    },
+    {
+      "term": "vesivoima",
+      "explain": "Sähkön tuottaminen putoavan veden liike-energiasta. Vesivoimalan tehoa voi muuttaa nopeasti."
+    },
+    {
+      "term": "tuulivoima",
+      "explain": "Sähkön tuottaminen tuulen liike-energiasta. Tuotanto riippuu siitä, kuinka paljon tuulee."
+    }
+  ],
   "sim": false,
   "solutions": "all",
   "image": false

@@ -15,6 +15,20 @@
     "väliaineen vastus",
     "rajanopeus"
   ],
+  "key_concepts": [
+    {
+      "term": "väliaineen vastus",
+      "explain": "Voima, jolla ilma tai vesi vastustaa siinä liikkuvan kappaleen liikettä."
+    },
+    {
+      "term": "ilmanvastus",
+      "explain": "Väliaineen vastus ilmassa. Se kasvaa, kun nopeus kasvaa."
+    },
+    {
+      "term": "rajanopeus",
+      "explain": "Nopeus, jolla ilmanvastus on yhtä suuri kuin paino. Silloin nopeus ei enää muutu."
+    }
+  ],
   "sim": true,
   "solutions": "all",
   "image": false

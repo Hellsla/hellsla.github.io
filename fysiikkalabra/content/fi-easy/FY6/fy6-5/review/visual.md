@@ -1,14 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: fbf1913c75761886
+CONTENT-HASH: f2dc6b1a5f57b567
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-- Contact sheets 1 and 5, sim-1280 content via the contact sheet, figures at 390 px: no overflow, maths renders, labels fit.
-- Sim legend "Sininen: potentiaali, tummempi on korkeampi. Violetti: virta. Mittarin musta johto on nollakohdassa." is 13 words (limit 15).
-- The canvas axis label now comes from lang/fi-easy.json (kohta_akseli) and reads "kohta"; sim-390 recaptured and checked, no overflow.
-- Chapter names, experiment table columns, kept-constant names and select values are Finnish and simple.
+- batch delta review: the only change is meta.json key_concepts. I captured the "Luvun tärkeät käsitteet" panel from preview/fi-easy/fy6-5.html at 390 and 1280 px and opened it (the review/shots set has no capture of the panel). It sits between the opening and stage 1: term bold over its explanation at 390 px, two columns at 1280 px. Nothing is clipped, there is no horizontal overflow and no KaTeX error. The terms match the lesson's usage, and the explanations are plain, correct S2 Finnish.

@@ -169,7 +169,10 @@
     "notice_legacy": "Prototyyppiversio: tämä oppitunti on tehty ennen nykyistä tarkistustapaa. Se odottaa uudistusta. Sisältö voi vielä muuttua.",
     "notice_draft": "Luonnos: tätä oppituntia ei ole vielä tarkistettu.",
     "why_marker": "Miksi",
-    "goal_note": "Täsmennys"
+    "goal_note": "Täsmennys",
+    "kc_title": "Luvun tärkeät käsitteet",
+    "kc_optional": "Vapaaehtoinen",
+    "kc_lead": "Tutustu luvun tärkeisiin käsitteisiin. Voit kirjoittaa niiden merkitykset sinulle vahvimmalla kielellä tai useammalla kielellä."
   },
   "inquiry": {
     "stage_herata": "Pohdinta",

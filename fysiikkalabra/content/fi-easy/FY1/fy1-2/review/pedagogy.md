@@ -1,15 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 44dd52dbc618ce1a
+CONTENT-HASH: 934c0f16039888c9
 
 ## Blocking
 (none)
 
-## Fixed
-- none needed
-
 ## Polish
-- none
+- meta.json key_concepts "merkitsevä numero" — "Lukuarvon numero, joka kertoo, kuinka tarkasti suure tunnetaan" is vague — "Mittaustuloksen numero, johon voi luottaa. Merkitsevien numeroiden määrä kertoo tuloksen tarkkuuden."
 
 ## Checked
-- Delta review 2026-10-31 (fi-easy): hero aria-label and figure label read naturally, no Finnish left, learn items complete the prefix sentence, teaching sequence unchanged from the Finnish.
-- Delta review 2026-10-31 (prediction 2 title only): otsikko "Ennuste 2: kauempana oleva luotain" on sama kuin tarkistetussa suomenkielisessä lähteessä (Voyager 2 -luotain esiintyy tehtävässä); kehotteen luvut (10^7 km, 33 s, 10^9 km) ennallaan; lyhyt selkeä lause. check_i18n fi-easy: 0 errors.
+batch delta review: key_concepts judged against NOTES.md §12 and the editorial standard (central concepts, plain 1–2 sentence explanations, natural Finnish, physics unchanged); lesson rewordings, photos and captions, experiment/prompt wording and solution diagrams in this diff read clearly and agree with the tasks they touch.

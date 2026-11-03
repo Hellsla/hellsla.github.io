@@ -1,13 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: f885cf951601f6aa
+CONTENT-HASH: 7487e18f9be460a1
 
 ## Blocking
+(none)
 
 ## Polish
-- check-1 (inquiry.json): the Finnish says "pallo ammutaan" (a ball shot from a bow); this version says "nuoli", which is physically right. The Finnish wording is the odd one and should be fixed there; left as is.
+(none)
 
 ## Checked
-- Compared with the Finnish for plainness: short sentences, one step per sentence, common words, nollataso glossed, yet every step, hint and model answer kept; not identical to the Finnish.
-- Hero and the other figures at 360, 768 and 1280 px: legible, no page overflow.
-- Sim names used in the text now match the sim labels.
-- Fixed: removed an added sentence from the Ydinajatus ("Sisäenergia on pienten hiukkasten liike-energiaa ..."; not in the Finnish and imprecise); the sim howto named the option *Nopeus* while the label is *Animaation nopeus*, now matched; the sim label "vähän kitkaa" is now "pieni kitka", as in the Finnish and the experiment tables.
+batch delta review: key_concepts judged against NOTES.md §12 and the editorial standard (central concepts, plain 1–2 sentence explanations, natural Finnish, physics unchanged); lesson rewordings, photos and captions, experiment/prompt wording and solution diagrams in this diff read clearly and agree with the tasks they touch.

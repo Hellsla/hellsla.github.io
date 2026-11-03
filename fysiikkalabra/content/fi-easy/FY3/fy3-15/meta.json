@@ -19,6 +19,28 @@
     "energiaketju",
     "kokonaishyötysuhde"
   ],
+  "key_concepts": [
+    {
+      "term": "energiaketju",
+      "explain": "Vaiheet, joissa luonnonvaran energia muuttuu sähköksi voimalaitoksessa."
+    },
+    {
+      "term": "hyötysuhde",
+      "explain": "Kertoo, kuinka suuri osa vaiheeseen tulevasta energiasta saadaan ulos hyödyllisessä muodossa."
+    },
+    {
+      "term": "lauhdevoimalaitos",
+      "explain": "Voimalaitos, joka tuottaa vain sähköä. Sen hukkalämpö siirtyy lauhduttimen kautta esimerkiksi mereen."
+    },
+    {
+      "term": "yhteistuotanto",
+      "explain": "Voimalaitos tuottaa samalla sekä sähköä että kaukolämpöä."
+    },
+    {
+      "term": "kokonaishyötysuhde",
+      "explain": "Hyötysuhde, jossa hyödyksi lasketaan sekä sähkö että kaukolämpö."
+    }
+  ],
   "sim": false,
   "solutions": "all",
   "image": false
