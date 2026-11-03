@@ -1,0 +1,10 @@
+[
+  {
+    "q": "The voltage between two parallel plates is $9.0\\,\\text{kV}$, and the distance of the plates is $3.0\\,\\text{cm}$. How large is the electric field strength between the plates?",
+    "a": "The field between the plates is uniform, so $E = U : d = 9000\\,\\text{V} : 0.030\\,\\text{m} = 3.0 \\cdot 10^{5}\\,\\text{V/m}$. The same value holds everywhere between the plates when one is far from the ends of the plates."
+  },
+  {
+    "q": "Why can two field lines not cross each other?",
+    "a": "The direction of a field line at each point is the direction of the electric field. If two lines crossed, the field would have two different directions at the crossing point, and two forces in different directions would act at the same time on a charge brought there. But the field has only one direction at every point."
+  }
+]

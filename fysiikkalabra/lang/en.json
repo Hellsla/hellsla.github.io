@@ -1869,6 +1869,27 @@
       "dir_ei": "no force",
       "c_u": "$U = {{u}}\\,\\text{kV}$",
       "c_d": "$d = {{d}}\\,\\text{cm}$"
+    },
+    "fy6-10": {
+      "merkitse": "Mark point",
+      "tyhjenna": "Clear graph",
+      "akseli": "Horizontal axis",
+      "ax_r": "distance",
+      "ax_inv": "inverse of the square of the distance",
+      "kentta": "Field lines",
+      "piilossa": "hidden",
+      "nakyvissa": "shown",
+      "selite": "Red arrows are the forces on the spheres; the arrow length shows the magnitude of the force.",
+      "lbl_q1": "Charge $q_1 = {{q}}\\,\\text{nC}$",
+      "lbl_q2": "Charge $q_2 = {{q}}\\,\\text{nC}$",
+      "lbl_r": "Distance $r = {{r}}\\,\\text{cm}$",
+      "lbl_rc": "$r = {{r}}\\,\\text{cm}$",
+      "c_q1": "$q_1 = {{q}}\\,\\text{nC}$",
+      "c_q2": "$q_2 = {{q}}\\,\\text{nC}$",
+      "lukemat": "Force on sphere 1: $F_{21} = {{f1}}\\,\\text{mN}$<br>Force on sphere 2: $F_{12} = {{f2}}\\,\\text{mN}$",
+      "hylkivat": "The spheres repel each other.",
+      "vetavat": "The spheres attract each other.",
+      "ei_voimaa": "In the model there is no electric force on the spheres."
     }
   },
   "practice": {
