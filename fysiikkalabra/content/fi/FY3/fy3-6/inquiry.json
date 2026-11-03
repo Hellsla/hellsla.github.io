@@ -15,6 +15,14 @@
       "question": "Jos kahteen aineeseen siirtyy lämpönä energiaa, mikä ratkaisee, kuinka paljon kummankin lämpötila nousee?"
     },
     {
+      "id": "kuva",
+      "stage": "herata",
+      "type": "hook",
+      "title": "Havainnoi kuvaa",
+      "text": "<figure class=\"unit-photo\"><img src=\"pics/fy3/steaming-kettle.webp\" alt=\"Vedenkeittimestä kaadetaan kuumaa vettä lasikannuun tummaa taustaa vasten, ja vesi höyryää.\"><figcaption>Kuumaa vettä kaadetaan vedenkeittimestä. Näkyvä huuru on tiivistyneitä vesipisaroita.</figcaption></figure>",
+      "question": "Miksi suuremman vesimäärän lämmittämiseen tarvitaan enemmän energiaa?"
+    },
+    {
       "id": "kertaus",
       "stage": "herata",
       "type": "choice",

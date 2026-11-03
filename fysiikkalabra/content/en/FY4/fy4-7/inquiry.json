@@ -20,6 +20,14 @@
       "question": "What grows so much in the skateboarder's motion that doubling the speed is enough for four times the rise?"
     },
     {
+      "id": "kuva",
+      "stage": "herata",
+      "type": "hook",
+      "title": "Look at the photo",
+      "text": "<figure class=\"unit-photo\"><img src=\"pics/fy4/roller-coaster-loop.webp\" alt=\"A red roller coaster loop against a blue sky. At the top of the loop the car travels with the riders upside down.\"><figcaption>A roller coaster car at the top of a loop on a sunny day.</figcaption></figure>",
+      "question": "How do the car's kinetic energy and gravitational potential energy change at different points of the track?"
+    },
+    {
       "id": "pr-nousu",
       "stage": "herata",
       "type": "choice",

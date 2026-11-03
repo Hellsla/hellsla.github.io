@@ -20,6 +20,14 @@
       "question": "What do the powers of a hydro and a wind power plant depend on, and why does the wind speed affect the power so strongly?"
     },
     {
+      "id": "kuva",
+      "stage": "herata",
+      "type": "hook",
+      "title": "Look at the photo",
+      "text": "<figure class=\"unit-photo\"><img src=\"pics/fy4/middelgrunden-wind-farm.webp\" alt=\"White wind turbines behind a breakwater against a blue sky. Open sea and a few boats are in the foreground.\"><figcaption>The Middelgrunden offshore wind farm off Copenhagen, Denmark, photographed from a boat.</figcaption></figure>",
+      "question": "Where does the electrical energy produced by a wind turbine originally come from? Which factors affect the turbine's power?"
+    },
+    {
       "id": "kertaus",
       "stage": "herata",
       "type": "choice",

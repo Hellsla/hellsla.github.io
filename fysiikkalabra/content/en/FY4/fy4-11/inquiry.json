@@ -20,6 +20,14 @@
       "question": "Why does the stopping distance grow so steeply with speed, and how can a seat belt decide whether a person survives a collision?"
     },
     {
+      "id": "kuva",
+      "stage": "herata",
+      "type": "hook",
+      "title": "Look at the photo",
+      "text": "<figure class=\"unit-photo\"><img src=\"pics/fy4/side-impact-crash-test.webp\" alt=\"A yellow small car in a test hall, its side pushed in and its body covered in measurement markers.\"><figcaption>A 2014 Chevrolet Spark after a side impact test by the US National Highway Traffic Safety Administration (NHTSA). The side of the car has been pushed in.</figcaption></figure>",
+      "question": "In what ways can a car's safety structures reduce the forces on the occupants in a collision?"
+    },
+    {
       "id": "kertaus",
       "stage": "herata",
       "type": "choice",

@@ -20,6 +20,14 @@
       "question": "Miksi pysähtymismatka kasvaa nopeuden mukana niin jyrkästi, ja miten turvavyö voi ratkaista, selviääkö ihminen törmäyksestä?"
     },
     {
+      "id": "kuva",
+      "stage": "herata",
+      "type": "hook",
+      "title": "Havainnoi kuvaa",
+      "text": "<figure class=\"unit-photo\"><img src=\"pics/fy4/side-impact-crash-test.webp\" alt=\"Keltainen pikkuauto testihallissa, sen kylki painunut sisään ja korissa mittausmerkkejä.\"><figcaption>Vuoden 2014 Chevrolet Spark Yhdysvaltain liikenneturvallisuusviraston (NHTSA) sivutörmäystestin jälkeen. Auton kylki on painunut sisään.</figcaption></figure>",
+      "question": "Millä tavoin auton turvarakenteilla voidaan pienentää matkustajiin törmäyksessä kohdistuvia voimia?"
+    },
+    {
       "id": "kertaus",
       "stage": "herata",
       "type": "choice",

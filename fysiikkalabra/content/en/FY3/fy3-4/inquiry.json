@@ -19,6 +19,13 @@
       "question": "How does pressure change as you go deeper in a liquid, and what does it depend on?"
     },
     {
+      "id": "kuva",
+      "stage": "herata",
+      "type": "hook",
+      "title": "Look at the photo",
+      "text": "<figure class=\"unit-photo\"><img src=\"pics/fy3/scuba-diver.webp\" alt=\"A diver in dark blue water, with air bubbles rising above towards the bright surface.\"><figcaption>A diver deep under water. The bubbles of exhaled air rise towards the surface.</figcaption></figure>"
+    },
+    {
       "id": "pr-paino",
       "stage": "herata",
       "type": "choice",

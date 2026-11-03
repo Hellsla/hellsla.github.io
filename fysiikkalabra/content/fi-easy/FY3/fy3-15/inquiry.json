@@ -20,6 +20,13 @@
       "question": "Missä energiaketjun vaiheessa menee eniten polttoaineen energiaa muuhun kuin sähköön? Voisiko tämän energian käyttää hyödyksi?"
     },
     {
+      "id": "kuva",
+      "stage": "herata",
+      "type": "hook",
+      "title": "Katso kuvaa",
+      "text": "<figure class=\"unit-photo\"><img src=\"pics/fy3/iru-turbine-generator.webp\" alt=\"Voimalaitoksen konesalissa on sininen generaattori ja turbiini. Tasolla seisoo työntekijä.\"><figcaption>Irun voimalaitoksen turbiini ja generaattori Virossa. Turbiini muuttaa höyryn energiaa pyörimisen liike-energiaksi. Generaattori muuttaa sen sähköenergiaksi.</figcaption></figure>"
+    },
+    {
       "id": "kertaus",
       "stage": "herata",
       "type": "choice",

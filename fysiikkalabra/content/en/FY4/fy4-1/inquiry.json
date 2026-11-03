@@ -19,6 +19,14 @@
       "question": "What would such a graph look like, and what could be read from it about the cyclist's velocity and direction of travel?"
     },
     {
+      "id": "kuva",
+      "stage": "herata",
+      "type": "hook",
+      "title": "Look at the photo",
+      "text": "<figure class=\"unit-photo\"><img src=\"pics/fy4/highway-light-trails.webp\" alt=\"A curving motorway at night: red and white streaks of light, street lamps and snowy verges.\"><figcaption>In a night photo with a long exposure time, vehicle lights draw streaks. The red streaks are rear lights, the white ones headlights.</figcaption></figure>",
+      "question": "What can you conclude about the cars' motion from the light streaks? What can you not conclude from a single photo?"
+    },
+    {
       "id": "pr-nopeus",
       "stage": "herata",
       "type": "choice",

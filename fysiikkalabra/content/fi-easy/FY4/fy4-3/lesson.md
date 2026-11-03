@@ -460,6 +460,8 @@ Luistelija A työntää luistelijaa B. Silloin kumpikin lähtee liukumaan poisp�
   <foreignObject x="495" y="320.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$\text{B}$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy4/falcon9-crew9-launch.webp" alt="Valkoinen raketti nousee suoraan ylös. Raketin alla on kirkas liekki ja maassa isoja valkoisia pilviä."><figcaption>Falcon 9 -raketti lähtee Floridassa vuonna 2024. Raketti työntää kaasuja alaspäin. Kaasut työntävät rakettia ylöspäin yhtä suurella voimalla. Raketti ei tarvitse ilmaa eikä maata, jota vasten työntää.</figcaption></figure>
+
 Aikuinen ja lapsi saavat toisiltaan yhtä suuren voiman, vaikka aikuinen on paljon raskaampi. Lapsi lähtee silti liikkeelle suuremmalla nopeudella. Syy on se, että samasta voimasta pienemmän massan liike muuttuu enemmän. Tähän palataan luvussa *Newtonin toinen laki*. Tärkeintä on muistaa, että voima ja vastavoima vaikuttavat **eri kappaleisiin**. Siksi ne eivät koskaan kumoa toisiaan. Siksi niitä ei myöskään piirretä saman kappaleen voimakuvioon.
 
 ## Kaava: Newtonin ensimmäinen ja kolmas laki

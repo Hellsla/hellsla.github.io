@@ -20,6 +20,13 @@
       "question": "Why does ice at 0 °C cool a drink so much more effectively than water at 0 °C, and why does not all the ice always melt?"
     },
     {
+      "id": "kuva",
+      "stage": "herata",
+      "type": "hook",
+      "title": "Look at the photo",
+      "text": "<figure class=\"unit-photo\"><img src=\"pics/fy3/ice-water-glass.webp\" alt=\"A glass of water seen from above. The glass holds water and many ice cubes.\"><figcaption>Ice cubes in a glass of water.</figcaption></figure>"
+    },
+    {
       "id": "kertaus",
       "stage": "herata",
       "type": "choice",

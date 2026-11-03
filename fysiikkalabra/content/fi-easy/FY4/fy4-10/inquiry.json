@@ -19,6 +19,14 @@
       "question": "Mikä ratkaisee, miten liike jakautuu törmäävien kappaleiden kesken? Miksi lyöntipallo pysähtyy juuri silloin, kun se osuu samanlaiseen palloon?"
     },
     {
+      "id": "kuva",
+      "stage": "herata",
+      "type": "hook",
+      "title": "Katso kuvaa",
+      "text": "<figure class=\"unit-photo\"><img src=\"pics/fy4/newtons-cradle.webp\" alt=\"Newtonin kehto: rivi riippuvia teräskuulia.\"><figcaption>Newtonin kehto. Vasemmalta tuleva kuula osuu muihin kuuliin. Liikkuva kuula näkyy kuvassa epäselvänä.</figcaption></figure>",
+      "question": "Yksi kuula osuu muihin. Miksi rivin toisen pään kuula lähtee liikkeelle?"
+    },
+    {
       "id": "kertaus",
       "stage": "herata",
       "type": "choice",

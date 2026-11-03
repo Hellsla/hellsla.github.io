@@ -115,6 +115,14 @@
       "calc": "Cart and hanging mass: the equation of the cart $T = m_1 a$ and the equation of the hanging mass $m_2 g - T = m_2 a$ give $a = \\dfrac{m_2}{m_1 + m_2}\\,g$ and $T = m_1 a$. Two hanging bodies, $m_2 > m_1$: $T - m_1 g = m_1 a$ and $m_2 g - T = m_2 a$ give $a = \\dfrac{m_2 - m_1}{m_1 + m_2}\\,g$ and $T = \\dfrac{2 m_1 m_2}{m_1 + m_2}\\,g$. In the readings $\\Sigma F_1$ and $\\Sigma F_2$ are the net forces on the bodies along the motion, and $g = 9.81\\,\\text{m/s}^2$."
     },
     {
+      "id": "kuva",
+      "stage": "tutki",
+      "type": "hook",
+      "title": "Look at the photo",
+      "text": "<figure class=\"unit-photo\"><img src=\"pics/fy4/inclined-plane-apparatus.webp\" alt=\"An old inclined plane apparatus: a small roller on a sloping bar and a hanging weight are connected by a string over a pulley.\"><figcaption>An inclined plane teaching apparatus from the early 20th century in the school museum of Bremerhaven, Germany. A roller on the incline and a hanging weight are connected by a string that runs over a pulley.</figcaption></figure>",
+      "question": "How are the motions of the two bodies connected by the string related? Draw a force diagram for each body."
+    },
+    {
       "id": "exp-1",
       "stage": "tutki",
       "type": "experiment",

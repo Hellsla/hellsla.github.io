@@ -19,6 +19,14 @@
       "question": "If energy is transferred as heat to two substances, what decides how much the temperature of each rises?"
     },
     {
+      "id": "kuva",
+      "stage": "herata",
+      "type": "hook",
+      "title": "Look at the photo",
+      "text": "<figure class=\"unit-photo\"><img src=\"pics/fy3/steaming-kettle.webp\" alt=\"Hot water is poured from a kettle into a glass jug against a dark background, and the water is steaming.\"><figcaption>Hot water is poured from a kettle. The visible mist is condensed water droplets.</figcaption></figure>",
+      "question": "Why does it take more energy to heat a larger amount of water?"
+    },
+    {
       "id": "kertaus",
       "stage": "herata",
       "type": "choice",

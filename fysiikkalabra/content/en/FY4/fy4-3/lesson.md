@@ -460,6 +460,8 @@ When skater A pushes skater B, both start to glide away from each other. B does 
   <foreignObject x="495" y="320.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$\text{B}$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy4/falcon9-crew9-launch.webp" alt="A white rocket rises vertically on a bright flame and a trail of smoke. Around the launch pad there are large white clouds of steam and lattice towers."><figcaption>A Falcon 9 rocket lifts off in Florida in September 2024. The rocket pushes the exhaust gases downwards, and the gases push the rocket upwards with a force of equal magnitude. The rocket does not need air or ground to push against.</figcaption></figure>
+
 An adult and a child receive an equally large force from each other, although the adult is much heavier. The child still starts moving with a greater speed, because the same force changes the motion of the smaller mass more; we return to this in the chapter *Newton's second law*. The most important point is that a force and its reaction force act on **different objects**. That is why they never cancel each other, and why they are not drawn in the force diagram of the same object.
 
 ## Formula: Newton's first and third laws

@@ -15,6 +15,14 @@
       "question": "Miten kahden pallon kaasumääriä voisi verrata, kun tiedetään vain paine, tilavuus ja lämpötila?"
     },
     {
+      "id": "kuva",
+      "stage": "herata",
+      "type": "hook",
+      "title": "Havainnoi kuvaa",
+      "text": "<figure class=\"unit-photo\"><img src=\"pics/fy3/hot-air-balloon-burner.webp\" alt=\"Kuumailmapallon punaisen kuvun sisään suuntautuu kirkas keltainen liekki. Etualalla ovat korin kiinnitysketjut ja vaijerit.\"><figcaption>Kuumailmapallon poltin lämmittää pallon sisällä olevaa ilmaa. Pallon suu on alhaalta auki, joten sisäilman paine pysyy lähes ulkoilman paineena.</figcaption></figure>",
+      "question": "Miksi kuumailmapallo voi nousta, kun sen sisällä olevaa ilmaa lämmitetään?"
+    },
+    {
       "id": "kertaus",
       "stage": "herata",
       "type": "choice",

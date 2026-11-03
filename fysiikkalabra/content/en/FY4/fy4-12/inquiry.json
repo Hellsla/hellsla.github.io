@@ -19,6 +19,14 @@
       "question": "When and where does the car catch up with the cyclist, and which of them is faster then?"
     },
     {
+      "id": "kuva",
+      "stage": "herata",
+      "type": "hook",
+      "title": "Look at the photo",
+      "text": "<figure class=\"unit-photo\"><img src=\"pics/fy4/helsinki-trams.webp\" alt=\"Two white trams side by side on a street, with old stone buildings behind them.\"><figcaption>Two trams in Helsinki in July 2026.</figcaption></figure>",
+      "question": "How does the distance between two trams change if they move in opposite directions at different speeds?"
+    },
+    {
       "id": "pr-paikka",
       "stage": "herata",
       "type": "choice",

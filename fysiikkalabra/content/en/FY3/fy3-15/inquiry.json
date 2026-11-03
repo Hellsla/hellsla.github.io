@@ -20,6 +20,13 @@
       "question": "In which step of the energy chain does the most energy of the fuel end up as something other than electricity, and could it be put to use?"
     },
     {
+      "id": "kuva",
+      "stage": "herata",
+      "type": "hook",
+      "title": "Look at the photo",
+      "text": "<figure class=\"unit-photo\"><img src=\"pics/fy3/iru-turbine-generator.webp\" alt=\"In the machine hall of a power plant, a blue generator and the turbine connected to it, with pipes, stand on a concrete platform. A worker in a high-visibility vest stands on the platform.\"><figcaption>The turbine and generator of the waste-to-energy unit of the Iru power plant near Tallinn, Estonia. The turbine turns the energy of steam into the kinetic energy of rotation, and the generator turns that into electrical energy.</figcaption></figure>"
+    },
+    {
       "id": "kertaus",
       "stage": "herata",
       "type": "choice",

@@ -19,6 +19,14 @@
    "question": "Mikä patjassa suojaa hyppääjää, kun hänen nopeutensa muuttuu kummassakin tapauksessa yhtä paljon?"
   },
   {
+    "id": "kuva",
+    "stage": "herata",
+    "type": "hook",
+    "title": "Havainnoi kuvaa",
+    "text": "<figure class=\"unit-photo\"><img src=\"pics/fy4/punching-bag.webp\" alt=\"Nyrkkeilijä lyö hanskalla keltamustaa nyrkkeilysäkkiä salilla.\"><figcaption>Nyrkkeilijä lyö raskasta nyrkkeilysäkkiä.</figcaption></figure>",
+    "question": "Miten nyrkkeilysäkin liikemäärä muuttuu lyönnin aikana? Miten lyönnin kesto liittyy keskimääräiseen voimaan?"
+  },
+  {
    "id": "kertaus",
    "stage": "herata",
    "type": "choice",

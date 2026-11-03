@@ -19,6 +19,14 @@
       "question": "What should the word work mean in physics, so that the amount of work can be measured unambiguously?"
     },
     {
+      "id": "kuva",
+      "stage": "herata",
+      "type": "hook",
+      "title": "Look at the photo",
+      "text": "<figure class=\"unit-photo\"><img src=\"pics/fy3/crane-lifting-load.webp\" alt=\"A grey concrete bucket hangs from a crane hook under the roof of a building under construction, and two workers guide it.\"><figcaption>A crane lifts a concrete bucket on a building site.</figcaption></figure>",
+      "question": "How does the work done in lifting a load depend on the mass of the load and the lifting height?"
+    },
+    {
       "id": "pr-paino",
       "stage": "herata",
       "type": "choice",

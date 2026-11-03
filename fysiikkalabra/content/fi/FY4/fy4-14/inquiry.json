@@ -19,6 +19,14 @@
       "question": "Miksi nopeus lakkaa kasvamasta, vaikka paino vetää hyppääjää alas koko ajan, ja mitä voimille tapahtuu, kun varjo aukeaa?"
     },
     {
+      "id": "kuva",
+      "stage": "herata",
+      "type": "hook",
+      "title": "Havainnoi kuvaa",
+      "text": "<figure class=\"unit-photo\"><img src=\"pics/fy4/epic-parachute-test.webp\" alt=\"Valkoinen pyöreä laskuvarjo sinisellä taivaalla, ja pitkän narun päässä roikkuu pieni metallinen koekappale.\"><figcaption>NASAn EPIC-koe Kaliforniassa kesäkuussa 2025: drooni pudotti mittalaittein varustetun laskuvarjon ja sen kuorman. Kuvassa ei ole ihmistä, vaan koekappale.</figcaption></figure>",
+      "question": "Miksi laskuvarjon avautuminen muuttaa putoavan kappaleen liikettä?"
+    },
+    {
       "id": "kertaus",
       "stage": "herata",
       "type": "choice",

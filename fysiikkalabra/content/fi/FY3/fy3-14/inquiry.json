@@ -16,6 +16,13 @@
       "question": "Miksi 0-asteinen jää viilentää juomaa niin paljon tehokkaammin kuin 0-asteinen vesi, ja miksi kaikki jää ei aina sula?"
     },
     {
+      "id": "kuva",
+      "stage": "herata",
+      "type": "hook",
+      "title": "Havainnoi kuvaa",
+      "text": "<figure class=\"unit-photo\"><img src=\"pics/fy3/ice-water-glass.webp\" alt=\"Vesilasi ylhäältä kuvattuna. Lasissa on vettä ja paljon jääpaloja.\"><figcaption>Jääpaloja vesilasissa.</figcaption></figure>"
+    },
+    {
       "id": "kertaus",
       "stage": "herata",
       "type": "choice",

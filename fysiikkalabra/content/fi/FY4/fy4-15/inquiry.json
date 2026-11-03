@@ -20,6 +20,14 @@
       "question": "Mistä vesi- ja tuulivoimalan teho riippuu, ja miksi tuulen nopeus vaikuttaa tehoon niin voimakkaasti?"
     },
     {
+      "id": "kuva",
+      "stage": "herata",
+      "type": "hook",
+      "title": "Havainnoi kuvaa",
+      "text": "<figure class=\"unit-photo\"><img src=\"pics/fy4/middelgrunden-wind-farm.webp\" alt=\"Valkoisia tuulivoimaloita aallonmurtajan takana sinistä taivasta vasten. Edustalla on avointa merta ja muutama vene.\"><figcaption>Middelgrundenin merituulipuisto Kööpenhaminan edustalla Tanskassa veneestä kuvattuna.</figcaption></figure>",
+      "question": "Mistä tuulivoimalan tuottama sähköenergia on alun perin peräisin? Mitkä tekijät vaikuttavat voimalan tehoon?"
+    },
+    {
       "id": "kertaus",
       "stage": "herata",
       "type": "choice",

@@ -15,6 +15,13 @@
       "question": "Miten paine muuttuu, kun nesteessä mennään syvemmälle, ja mistä kaikesta se riippuu?"
     },
     {
+      "id": "kuva",
+      "stage": "herata",
+      "type": "hook",
+      "title": "Havainnoi kuvaa",
+      "text": "<figure class=\"unit-photo\"><img src=\"pics/fy3/scuba-diver.webp\" alt=\"Sukeltaja tummansinisessä vedessä, ja hänen yläpuolellaan nousee ilmakuplia kohti valoisaa pintaa.\"><figcaption>Sukeltaja syvällä veden alla. Uloshengitysilman kuplat nousevat kohti pintaa.</figcaption></figure>"
+    },
+    {
       "id": "pr-paino",
       "stage": "herata",
       "type": "choice",

@@ -19,6 +19,14 @@
       "question": "Why does the speed stop growing, although the weight pulls the skydiver down all the time, and what happens to the forces when the parachute opens?"
     },
     {
+      "id": "kuva",
+      "stage": "herata",
+      "type": "hook",
+      "title": "Look at the photo",
+      "text": "<figure class=\"unit-photo\"><img src=\"pics/fy4/epic-parachute-test.webp\" alt=\"A white round parachute in a blue sky, with a small metal test body hanging at the end of a long line.\"><figcaption>NASA's EPIC test in California in June 2025: a drone dropped a parachute fitted with instruments and its payload. There is no person in the photo, only a test body.</figcaption></figure>",
+      "question": "Why does the opening of the parachute change the motion of the falling body?"
+    },
+    {
       "id": "kertaus",
       "stage": "herata",
       "type": "choice",

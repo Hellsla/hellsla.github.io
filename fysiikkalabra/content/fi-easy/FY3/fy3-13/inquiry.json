@@ -19,6 +19,14 @@
       "question": "Miten alin mahdollinen lämpötila voidaan määrittää mittauksilla, jotka tehdään aivan tavallisissa lämpötiloissa?"
     },
     {
+      "id": "kuva",
+      "stage": "herata",
+      "type": "hook",
+      "title": "Katso kuvaa",
+      "text": "<figure class=\"unit-photo\"><img src=\"pics/fy3/liquid-nitrogen-dish.webp\" alt=\"Käsi pitelee lasimaljaa, jossa on nestemäistä typpeä. Maljasta valuu valkoista sumua.\"><figcaption>Nestemäistä typpeä lasimaljassa tiedefestivaalilla Puolassa vuonna 2025. Valkoinen sumu on pieniä vesipisaroita.</figcaption></figure>",
+      "question": "Nestemäinen typpi kiehuu noin $77\\,\\text{K}$:n lämpötilassa. Mitä tämä on celsiusasteina? Kuinka kaukana se on absoluuttisesta nollapisteestä?"
+    },
+    {
       "id": "kertaus",
       "stage": "herata",
       "type": "choice",

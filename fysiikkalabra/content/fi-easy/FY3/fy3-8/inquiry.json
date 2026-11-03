@@ -19,6 +19,13 @@
       "question": "Mikä saa jäykän teräksen muuttamaan pituuttaan? Mistä riippuu, kuinka paljon liitoksen on annettava periksi?"
     },
     {
+      "id": "kuva",
+      "stage": "herata",
+      "type": "hook",
+      "title": "Katso kuvaa",
+      "text": "<figure class=\"unit-photo\"><img src=\"pics/fy3/bridge-expansion-joint.webp\" alt=\"Sillan kannella on metallinen sauma. Taustalla on sillan kaide.\"><figcaption>Kruunuvuorensillan liikuntasauma Helsingissä vuonna 2026. Sauma antaa sillalle tilaa liikkua, esimerkiksi kun lämpötila muuttuu.</figcaption></figure>"
+    },
+    {
       "id": "kertaus",
       "stage": "herata",
       "type": "choice",

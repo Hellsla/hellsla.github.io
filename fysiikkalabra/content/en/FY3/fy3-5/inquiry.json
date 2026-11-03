@@ -18,6 +18,14 @@
       "question": "Where does the air in the pump get extra energy if it is not heated, and where does that energy go when the pump cools down?"
     },
     {
+      "id": "kuva",
+      "stage": "herata",
+      "type": "hook",
+      "title": "Look at the photo",
+      "text": "<figure class=\"unit-photo\"><img src=\"pics/fy3/glowing-metal-furnace.webp\" alt=\"A piece of metal glowing orange seen through the opening of an industrial furnace.\"><figcaption>Heated metal glows in a furnace.</figcaption></figure>",
+      "question": "What happens to the internal energy of the metal when it is heated? Why are the temperature and the internal energy of a body not the same thing?"
+    },
+    {
       "id": "pr-mikromalli",
       "stage": "herata",
       "type": "choice",

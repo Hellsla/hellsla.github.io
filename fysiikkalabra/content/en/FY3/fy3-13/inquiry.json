@@ -19,6 +19,14 @@
       "question": "How can the lowest possible temperature be determined from measurements made at quite ordinary temperatures?"
     },
     {
+      "id": "kuva",
+      "stage": "herata",
+      "type": "hook",
+      "title": "Look at the photo",
+      "text": "<figure class=\"unit-photo\"><img src=\"pics/fy3/liquid-nitrogen-dish.webp\" alt=\"A hand holds a glass dish containing liquid nitrogen. White mist flows from around the dish against a dark background.\"><figcaption>Liquid nitrogen poured into a glass dish at the Silesian Science Festival in Katowice, Poland, in December 2025. The white mist is water droplets condensed around the cold nitrogen vapour.</figcaption></figure>",
+      "question": "The normal boiling point of liquid nitrogen is about $77\\,\\text{K}$. What is this in degrees Celsius, and how far is it from absolute zero?"
+    },
+    {
       "id": "kertaus",
       "stage": "herata",
       "type": "choice",

@@ -19,6 +19,14 @@
       "question": "What determines how the motion is shared between colliding objects, and why does the cue ball stop exactly when it hits a similar ball?"
     },
     {
+      "id": "kuva",
+      "stage": "herata",
+      "type": "hook",
+      "title": "Look at the photo",
+      "text": "<figure class=\"unit-photo\"><img src=\"pics/fy4/newtons-cradle.webp\" alt=\"Newton&#x27;s cradle: a row of hanging steel balls; the leftmost one is moving and therefore blurred.\"><figcaption>In Newton's cradle, a ball swinging in from the left hits the balls at rest. The moving ball is blurred in the photo.</figcaption></figure>",
+      "question": "When one ball hits the others, why does the ball at the opposite end start moving?"
+    },
+    {
       "id": "kertaus",
       "stage": "herata",
       "type": "choice",

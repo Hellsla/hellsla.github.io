@@ -19,6 +19,14 @@
       "question": "What is it about the mat that protects the jumper, when the jumper's velocity changes by the same amount in both cases?"
     },
     {
+      "id": "kuva",
+      "stage": "herata",
+      "type": "hook",
+      "title": "Look at the photo",
+      "text": "<figure class=\"unit-photo\"><img src=\"pics/fy4/punching-bag.webp\" alt=\"A boxer punching a yellow and black punching bag with a glove in a gym.\"><figcaption>A boxer punches a heavy punching bag.</figcaption></figure>",
+      "question": "How does the momentum of the punching bag change during the punch? How is the duration of the punch related to the average force?"
+    },
+    {
       "id": "kertaus",
       "stage": "herata",
       "type": "choice",

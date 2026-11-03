@@ -183,6 +183,8 @@ Ongelma on ilmiön voimistuminen. Kun ihminen lisää ilmakehään hiilidioksidi
 
 Kasvihuoneilmiötä käsitellään laskemalla FY3-kurssilla luvussa *Lämmön siirtyminen, energiatasapaino ja ilmastonmuutos*. Tässä riittää ymmärtää, mitä kaasut tekevät säteilylle ja mistä lisäkaasut tulevat.
 
+<figure class="unit-photo wide"><img src="pics/fy2/gistemp-2025-anomaly-map.webp" alt="Maailmankartta, jonka värit vaihtelevat vaaleasta tummanpunaiseen. Tummin punainen on pohjoisilla alueilla. Kartan alla on väriasteikko sinisestä punaiseen."><figcaption>Vuoden 2025 keskilämpötila verrattuna vuosien 1951–1980 keskiarvoon NASAn GISTEMP-aineiston mukaan. Punainen tarkoittaa vertailujaksoa lämpimämpää ja sininen kylmempää. Harmaalta alueelta ei ole mittauksia. Kartta on mittausaineistosta tehty visualisointi, ei valokuva.</figcaption></figure>
+
 ### Polttoaineet yhdistävät energian ja ilmaston
 Fossiilinen polttoaine, kuten kivihiili, öljy tai maakaasu, on muinaisten eliöiden kemiallista energiaa: kivihiili on syntynyt enimmäkseen kasveista, öljy ja maakaasu meren planktonista. Kun tällainen hiiltä sisältävä polttoaine palaa täydellisesti, sen hiili yhtyy hapen kanssa: $\text{C} + \text{O}_2 \rightarrow \text{CO}_2$. Kemiallinen energia vapautuu lämpönä (luku *Polttoaineet ja lämpöarvo*), ja hiilidioksidi poistuu savukaasujen mukana ilmakehään. Mitä enemmän energiaa otetaan polttamalla hiilipitoisia polttoaineita, sitä enemmän hiilidioksidia vapautuu. Kaikissa polttoaineissa ei ole hiiltä: esimerkiksi vedyn palaessa syntyy vain vettä.
 
