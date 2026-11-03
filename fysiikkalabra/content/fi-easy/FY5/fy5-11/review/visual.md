@@ -1,18 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: e92a25f237bdd1db
+CONTENT-HASH: 95753aff31713122
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] hero — the straight crest rows on the open sea are faint at 390 px; the half-circles in the basin carry the point well, so this is optional.
+- [Minor] The ripple-tank photo is blurry and the slit itself is hardly visible; the alt text says so honestly, caption is acceptable. A sharper photo would teach better.
 
 ## Checked
-- Delta review, category illustration: only the hero (`data-fig="hero"`) and its aria-label changed.
-- fy5-11-top-390.png and fy5-11-intro-1280.png (hero at 390 px and 1280 px, fi-easy page): a harbour with a breakwater gap, circular wavefronts spreading into the basin and corners. Layout survived: the picture sits in the 16:8 frame, nothing clipped, no horizontal overflow, the first screen is unchanged around it.
-- Hero SVG source is identical in fi, en and fi-easy (checked by comparing the SVG body); the screenshots are the same picture. No text in the picture; flat vector style and palette match the other FY5 openings.
-- Alt text compared with the picture item by item and read in its own language: it matches what is drawn, nothing is claimed that is missing, and it does not give away the chapter's answer.
-- The picture fits the opening question in the Pohdinta; nothing physically misleading seen (science review carried over).
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+- batch delta review: opened fy5-11-1280-0.png and fy5-11-360-0.png (single-slit photo); photo loads, floats right at 1280, full column width at 360, no clipping or horizontal overflow, credit line under the caption, alt/caption in plain Finnish and consistent with the picture and the neighbouring paragraph.

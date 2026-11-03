@@ -1,16 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: e3ec5537e878bddb
+CONTENT-HASH: 265063d56d065a87
 
 ## Blocking
+
 (none)
 
 ## Polish
-- [Minor] hero: the Earth's limb occupies the bottom strip only; the station is large and clear, no change needed. Optional: slightly more sky-black margin above the panels at 390 px.
+
+- At 1280 the photo sits beside the geostationary paragraph while its caption belongs to the painottomuus paragraph just below; harmless.
 
 ## Checked
-- Delta (illustration only). Opened fy5-6-top-390 (fi), fy5-6-intro-1280 (fi), fy5-6-fig-1-390 in fi, en and fi-easy (same picture in all three, only rendering noise differs).
-- Hero is a flat vector scene in the figure palette on the paper tone, no text in the picture, subject in the middle third, readable at 366 px width, nothing clipped except the intended close-up crop; 16:9-ish column width, layout around it intact.
-- Alt text (fi) read against the picture: it describes what is drawn, with no contradiction; language natural and consistent with the chapter's opening question.
 
-## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 5
+batch delta review: ISS photo floats right at 1280, column at 360; credit present; caption consistent with the free-fall (painottomuus) text that follows; no overflow. Captures 360 and 1280 opened.

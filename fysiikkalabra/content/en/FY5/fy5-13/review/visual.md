@@ -1,18 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 912a65b7da3bb660
+CONTENT-HASH: 437fd2b5335b0f64
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] hero — the light blue motion envelope is slim at 390 px; it is still visible and the string, capo and bridge read clearly.
+- none
 
 ## Checked
-- Delta review, category illustration: only the hero (`data-fig="hero"`) and its aria-label changed.
-- fy5-13-top-390.png and fy5-13-intro-1280.png (hero at 390 px and 1280 px, en page): a guitar in its open case from above, capo, plucked string with a light blue motion envelope, pick. Layout survived: the picture sits in the 16:8 frame, nothing clipped, no horizontal overflow, the first screen is unchanged around it.
-- Hero SVG source is identical in fi, en and fi-easy (checked by comparing the SVG body); the screenshots are the same picture. No text in the picture; flat vector style and palette match the other FY5 openings.
-- Alt text compared with the picture item by item and read in its own language: it matches what is drawn, nothing is claimed that is missing, and it does not give away the chapter's answer.
-- The picture fits the opening question in the Pohdinta; nothing physically misleading seen (science review carried over).
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+- batch delta review: opened fy5-13-1280-0.png and fy5-13-360-0.png; photo loads, floats right beside the text at 1280 px and sits in the column at 360 px, no clipping or horizontal overflow; caption and alt natural English and consistent with the picture; credit line present under the caption.

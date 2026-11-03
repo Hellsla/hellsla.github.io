@@ -1,19 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: a198b8133952112c
+CONTENT-HASH: 4de96eddb77fc7c2
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] exp-exp-1-390-2 — the readings table header still hyphenates "max. static fric-tion" at 390 px; the Finnish table also wraps; harmless.
-- [Minor] exit-ticket heading "Exit ticket" is a shared UI string, not a translation matter.
+- none
 
 ## Checked
-- Delta after the sim label change to "Forces, rear view": sim-390 opened, the label sits clear of the N arrow, legend and slider label unchanged and fit.
-- Captures opened: sim-390, sim-1280, exp-exp-1-390-1, exp-exp-1-390-2, fig-row-1280, fig-9-390, contact-3; check_layout at 345 px OK.
-- Sim legend shortened to 7 words ("Red: forces. Blue: velocity. Orange: acceleration."), so it no longer folds; slider label "Speed v = 15 m/s (54 km/h)" now on one line at 1280 px.
-- Figure words (path of the object, centre, change of velocity, top of the hill, bottom of the dip, F_cf) and aria labels are English; no Finnish text on the captures.
-- Decimal point and a_n subscripts render correctly.
-
-## Scores
-illustrations 4 · typography 4 · English 4 · accessibility 4
+- batch delta review: opened fy5-4-1280-0.png and fy5-4-360-0.png; photo loads, floats right beside the text at 1280 px and sits in the column at 360 px, no clipping or horizontal overflow; caption and alt natural English and consistent with the picture; credit line present under the caption.

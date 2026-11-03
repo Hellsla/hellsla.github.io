@@ -1,16 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: ec38db9d87b5fd39
+CONTENT-HASH: 96cb63656d5d5f82
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] readings table header wraps on a phone, as in Finnish.
+- [Minor] fy5-4 caption, last sentence: "Normaalikiihtyvyys on samanlainen kuin laukaisussa." is vague (a launch is a straight-line acceleration). Suggested: "Sentrifugissa normaalikiihtyvyys voi olla yhtä suuri kuin laukaisussa."
 
 ## Checked
-- Captures opened: sim-1280, contact-3 (stages at 390 px), fig aria labels checked in figures.json; check_layout 345 px OK.
-- Fi-easy figure aria-labels shortened from 300-500 to 215-295 characters, plain digits and words, no LaTeX; lesson.md figures regenerated (figures.py --lang fi-easy).
-- Sim labels fit at 390 and 1280 px.
-
-## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+- batch delta review: opened fy5-4-1280-0.png and fy5-4-360-0.png (Apollo 8 centrifuge photo); photo loads, floats right at 1280, full column width at 360, no clipping or horizontal overflow, credit line under the caption, alt/caption in plain Finnish and consistent with the picture and the neighbouring paragraph.

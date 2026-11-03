@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 9cb596630b684518
+CONTENT-HASH: 67d1171fe91cba49
 
 ## Blocking
 - none
@@ -8,9 +8,4 @@ CONTENT-HASH: 9cb596630b684518
 - none
 
 ## Checked
-- fy5-15-intro-1280: uusi tavoite rivittyy kolmeen riviin laatikossa, ei leikkaannu; kuva ja Pohjatiedot ennallaan.
-- Teksti on selkokielistä, grammaattisesti oikea; ei LaTeX-muutoksia.
-- Muut kaappaukset ennallaan (muutos vain inquiry.json learn-rivi).
-
-## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+- batch delta review: opened fy5-15-1280-0.png and fy5-15-360-0.png (sound level meter photo; $62\,\text{dB}$ in LaTeX, matches the 60 dB conversation level in the text); photo loads, floats right at 1280, full column width at 360, no clipping or horizontal overflow, credit line under the caption, alt/caption in plain Finnish and consistent with the picture and the neighbouring paragraph.

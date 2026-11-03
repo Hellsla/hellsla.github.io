@@ -1,16 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: a9e318659ceaa6df
+CONTENT-HASH: aaf1dfe5badc4d28
 
 ## Blocking
+
 (none)
 
 ## Polish
-- [Minor] hero: the sun with rays is the most decorative element and draws the eye away from the swing; optional to tone down.
+
+(none)
 
 ## Checked
-- Delta (illustration only). Opened fy5-7-top-390 (fi), fy5-7-intro-1280 (fi), fy5-7-fig-1-390 in fi, en and fi-easy (same picture in all three, only rendering noise differs).
-- Hero is a flat vector scene in the figure palette on the paper tone, no text in the picture, subject in the middle third, readable at 366 px width, nothing clipped except the intended close-up crop; 16:9-ish column width, layout around it intact.
-- Alt text (fi) read against the picture: it describes what is drawn, with no contradiction; language natural and consistent with the chapter's opening question.
 
-## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 5
+batch delta review: Swing photo floats right at 1280 beside Jaksonaika ja taajuus, column at 360; credit present; alt and caption natural and consistent with the picture. Captures 360 and 1280 opened.

@@ -1,18 +1,11 @@
-VERDICT: PASS
-CONTENT-HASH: 0e718a50224ca1ac
+VERDICT: FAIL
+CONTENT-HASH: be289689f102ef01
 
 ## Blocking
-(none)
+- [Major] fy5-9 foucault-pendulum caption, 2nd sentence — "Heilurin jaksonaika riippuu vain heilurin pituudesta ja putoamiskiihtyvyydestä." sits right beside the paragraph that says the spring oscillator's period depends only on the mass and the spring ("riippuu vain siitä, kuinka suuri massa liikkuu ja kuinka jäykkä jousi palauttaa sitä"), before the pendulum has been introduced; the "vain" claim also holds only for small swings, and the photo shows a Foucault pendulum, not a simple one. It reads as a contradiction and is not supported by the picture — Fix: "Foucault'n heiluri tiedemuseossa Japanissa. Heiluri on pallo, joka riippuu langan varassa ja heiluu edestakaisin. Myös heilurilla jaksonaika ei riipu amplitudista, kun heilahdus on pieni."
 
 ## Polish
-- [Minor] hero — the baby's face and arms are small and simple at 390 px; the bouncer and spring still read clearly. No change needed.
+- none
 
 ## Checked
-- Delta review, category illustration: only the hero (`data-fig="hero"`) and its aria-label changed.
-- fy5-9-top-390.png and fy5-9-intro-1280.png (hero at 390 px and 1280 px, fi-easy page): a living room with a grandfather clock (pendulum swung aside) and a baby in a spring-hung door bouncer. Layout survived: the picture sits in the 16:8 frame, nothing clipped, no horizontal overflow, the first screen is unchanged around it.
-- Hero SVG source is identical in fi, en and fi-easy (checked by comparing the SVG body); the screenshots are the same picture. No text in the picture; flat vector style and palette match the other FY5 openings.
-- Alt text compared with the picture item by item and read in its own language: it matches what is drawn, nothing is claimed that is missing, and it does not give away the chapter's answer.
-- The picture fits the opening question in the Pohdinta; nothing physically misleading seen (science review carried over).
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+- batch delta review: opened fy5-9-1280-0.png and fy5-9-360-0.png (Foucault pendulum photo (wire is a hairline in the original, alt wording acceptable)); photo loads, floats right at 1280, full column width at 360, no clipping or horizontal overflow, credit line under the caption, alt/caption in plain Finnish and consistent with the picture and the neighbouring paragraph.

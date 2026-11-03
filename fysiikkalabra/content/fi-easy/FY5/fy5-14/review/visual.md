@@ -1,18 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 87b0781f936cb0e9
+CONTENT-HASH: 3bf156a009057f97
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] fig-8-390 — the $\overline{v}_\text{h}$ label touches a wavefront arc, as in the passed Finnish figure (shared figures.py).
+- none
 
 ## Checked
-- Re-shot after the fixes; contact-1 and contact-3 opened.
-- fig-1-390 (opening), fig-4-390 (taajuusasteikko), fig-5-390 (äänirauta/kitara), fig-7-390 (huojunta, $T_\text{h}$), fig-8-390 (lähde liikkuu / kuulija liikkuu): Finnish labels, decimal comma, nothing clipped.
-- sim-390: "Lähteen nopeus", readouts and legend wrap cleanly.
-- example-390 (stages 1–7), theory (contact-3 #25–#28), exp-koe-1-390, open-exit-1280, open-tarkista-1280.
-- Plain Finnish: short main clauses, consistent glossary terms, decimal comma, LaTeX numbers with units.
-
-## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+- batch delta review: opened fy5-14-1280-0.png and fy5-14-360-0.png (ambulance photo); photo loads, floats right at 1280, full column width at 360, no clipping or horizontal overflow, credit line under the caption, alt/caption in plain Finnish and consistent with the picture and the neighbouring paragraph.

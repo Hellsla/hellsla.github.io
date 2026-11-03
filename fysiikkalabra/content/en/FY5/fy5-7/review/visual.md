@@ -1,16 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: a9a11cfed48489db
+CONTENT-HASH: a4e9d133af2c370c
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] hero: the sun with rays is the most decorative element and draws the eye away from the swing; optional to tone down.
+- none
 
 ## Checked
-- Delta (illustration only). Opened fy5-7-top-390 (fi), fy5-7-intro-1280 (fi), fy5-7-fig-1-390 in fi, en and fi-easy (same picture in all three, only rendering noise differs).
-- Hero is a flat vector scene in the figure palette on the paper tone, no text in the picture, subject in the middle third, readable at 366 px width, nothing clipped except the intended close-up crop; 16:9-ish column width, layout around it intact.
-- Alt text (en) read against the picture: it describes what is drawn, with no contradiction; language natural and consistent with the chapter's opening question.
-
-## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 5
+- batch delta review: opened fy5-7-1280-0.png and fy5-7-360-0.png; photo loads, floats right beside the text at 1280 px and sits in the column at 360 px, no clipping or horizontal overflow; caption and alt natural English and consistent with the picture; credit line present under the caption.

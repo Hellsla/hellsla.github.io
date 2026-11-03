@@ -1,12 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 5ba8167a14fad42b
+CONTENT-HASH: ae0064f9fb6c252c
+
 ## Blocking
-(none)
+- none
+
 ## Polish
-- [Minor] lesson figures 6 and 7: labels fit after widening of the label boxes; nothing to fix.
+- [Minor] Alt text and caption are plain, factual and match the picture and the nearby text. Credit line present.
+
 ## Checked
-- Captures opened (fi-easy): fy5-3-sim-390, fy5-3-fig-7-390, fy5-3-lab-1280-1.
-- Sim labels fit at 390 and 1280 px; figure labels are in plain Finnish.
-- check_layout.py at 345 px: OK for preview/fi-easy/fy5-3. Maths, units and subscripts match the Finnish typography.
-## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+- batch delta review: opened fy5-3-1280-0.png and fy5-3-360-0.png (karuselli, 1280 and 360 captures); photo loads, floats right at 1280, full column width at 360, no clipping or horizontal overflow, credit line under the caption, alt/caption in plain Finnish and consistent with the picture and the neighbouring paragraph.
