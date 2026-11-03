@@ -1,19 +1,18 @@
-VERDICT: PASS
-CONTENT-HASH: 311b8a552540fc24
+VERDICT: FAIL
+CONTENT-HASH: d9ad8d1ce3ec7242
 
 ## Blocking
+- inquiry.json:364 (tarkistus-2 solution, Järkevyys) — B/6: "betonille tyypillinen noin $5\,\text{cm}$" contradicts lesson.md:523 ("cesium-137:n gammasäteilylle ... betonissa noin $4\,\text{cm}$") and fy8-12 ("betonia noin seitsemän kertaa paksumpi" than 5,5 mm Pb ≈ 3,9 cm). Narrow-beam Cs-137 value is ≈3,8 cm; 5–6 cm holds only for higher energies (Co-60), which the text does not say. — Fix: "samaa suuruusluokkaa kuin cesium-137:n gammasäteilyn puoliintumispaksuus betonissa, noin 4 cm" (or state the higher energy).
 
 ## Polish
-- lesson.md:326–338, 658; inquiry.json ennuste-3; lessons/FY8/fy8-13/answers.py docstring — the 5,9 mSv total is confirmed (STUK), but the breakdown and its year could not be verified here (stuk.fi not reachable from this session). Search results tie 5,9 mSv to STUK-A263 (2020, data from 2018), which gives radon "noin 4 mSv", medical use 0,76 mSv and other natural sources about 1,1 mSv; no source found for 4,1 / 0,6 / 0,5 / 0,4 / 0,3 or for "arvio vuodelta 2023" — check against STUK's current "Suomalaisten keskimääräinen säteilyannos" page and correct the year and health-care figure if they differ (0,76 would still be the second-largest source, so no option changes).
-- lesson.md:382 — 94 Bq/m³ is the widely quoted STUK average (older surveys 96 Bq/m³); keep, but cite the survey year next to it as for the dose table.
-- lesson.md:553 (Puoliarvokerros) — Cs-137 in lead is usually given as about 6,5 mm; "noin 6 mm" is acceptable (C), and concrete about 5 cm is right.
+- lessons/FY8/fy8-13/lesson-answers.py:36 — section comment still says "(STUK 2023)" while the docstring and lesson cite STUK-A263 (2020) — change to "(STUK-A263, 2020)".
 
 ## Checked
-- All numbers recomputed in one script: Esimerkki 1,67 mGy → 33 mSv → 4,0 mSv; Etsi virhe 1,2 mSv; siirto 12,5 µSv and mistakes 37,5 / 25 / 50 / 750; tarkistus-2 5,0 cm (figure read: 80 → 40 at 5 cm); 1 Gy → 0,00024 K; radon share 69 %, natural 90 %.
-- ICRP 103 w_T list complete, sum 1,00; w_R gamma/beta 1, alpha 20, neutrons 2,5–20 correct.
-- STM 1044/2018 reference levels 300/200 Bq/m³; Säteilylaki 859/2018 limits 20 mSv/a (worker) and 1 mSv/a (public, not natural or own medical exposure); background 0,05–0,30 µSv/h; ~300 lung cancers/a; Rn-222 3,82 d, Po-218/Po-214 alpha — all consistent with what I know/found.
-- Bar chart lahteet to scale (63,5 px/mSv) and matches the table.
-- sim.js: Hdot = 40·(1/r²)·(1/2)^(x/6); model limits (no air attenuation, no scatter build-up, no background) stated in the sim box and the theory.
-- Experiments isolate r and x; ennusteet have exactly one right option, every distractor's feedback correct.
-- Inverse-square law conditions (small source, little air attenuation) stated where used.
-- Exit ticket and tarkistus-3 model answer agree with the theory.
+- Dose breakdown: STUK-A263 (Siiskonen ym., 2020, tilanne 2018) gives 5,9 mSv total, radon ~4, other natural ~1,1, health care 0,76; table, bar figure (to scale), summary, ennuste-3 feedback all agree; 5,1/5,9 = 86 % ("noin 85 %"), 4/5,9 = 68 % ("kaksi kolmasosaa"), 4/0,8 = 5×.
+- Hook/hero neutral: no radon reveal before ennuste-3; exactly one correct option there, distractor feedback numbers right.
+- Term puoliintumispaksuus $d_{1/2}$ consistent with fy8-12 symbol and formula; Pb 5,5 mm for Cs-137 matches fy8-12 and μ/ρ data (≈5,4 mm); model's 6,0 mm stated as rounded.
+- Flight "noin 3 µSv/h" plausible for long-haul cruise; ilmakehä mechanism correct.
+- Recomputed: siirto 12,5 µSv and its mistakes 37,5/25/50/750; esimerkki 4,0 mSv; virhe 1,2 mSv; 1 Gy → 2,4·10⁻⁴ K; ΣwT = 1.
+- Sim/experiments: koe-1 and koe-2 isolate r and x; model values 40/10/4,44/2,50 and 40/20/10/5,00 match sim.js.
+- Tarkista 2 figure reads 80 → 40 µSv/h at 5,0 cm; answer 5,0 cm correct.
+- Exit ticket and summary agree with theory.
