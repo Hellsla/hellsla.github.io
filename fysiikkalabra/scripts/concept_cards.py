@@ -191,14 +191,6 @@ def app_page_body(T, lang, names, chapters):
             + data_block(T, lang, [], {"names": names, "chapters": chapters}, APP) + '<script src="kortit.js"></script>')
 
 
-def home_section(T, lang):
-    """The front page's link to Käsitetakomo, or "" when this language has no cards."""
-    if not modules(data_lang(lang)): return ""
-    return (f'<section class="concept-home" aria-labelledby="h-cards"><h2 id="h-cards">{T("cards.title")}</h2>'
-            f'<p class="section-lead">{T("cards.home_lead")}</p><ul class="lessons practice-link concept-cards"><li class="live">'
-            f'<a href="{APP}">{T("cards.home_link")}</a></li></ul></section>')
-
-
 def publish(site):
     """The data files into site/kortit/ (and their pictures), as the pages and Käsitetakomo read them."""
     out = site / "kortit"
@@ -243,6 +235,7 @@ def errors():
                 if c.get("kaava") and not c.get("kaava_puhe"): errs.append(f"{p}: kaava without kaava_puhe")
                 if c.get("kuva") and not (ROOT / c["kuva"].replace("kortit/", "kortit/", 1)).is_file(): errs.append(f"{p}: picture {c['kuva']} not found")
                 if "\\vec" in c.get("kaava", "") + c["maaritelma"] or "\\mathbf" in c.get("kaava", "") + c["maaritelma"]: errs.append(f"{p}: vectors are \\overline (teacher 2026-10-29)")
+                if re.search(r"\\[,;:!]\^", c.get("kaava", "") + c["maaritelma"]): errs.append(f"{p}: a superscript needs a base after a space, write \\,{{}}^\\circ (KaTeX cannot parse \\,^)")
     for f in sorted((SRC / "en").glob("*.json")) if (SRC / "en").is_dir() else []:
         fi = module(f.stem.upper(), "fi")
         en = json.loads(f.read_text(encoding="utf-8"))

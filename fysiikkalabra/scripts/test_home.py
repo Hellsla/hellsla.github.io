@@ -20,8 +20,8 @@ For every language, from the pages that are actually in site/ (so nothing here h
     local course among the national rows; its page names itself school-specific and says what is still planned,
     and links only chapters published in that language; a language without the course has the note
     #unavailable-<CODE> on its front page
-  - Käsitetakomo (teacher 2026-11-03, scripts/concept_cards.py): the card data is valid; the front page links to
-    kasitteet.html; a module page with cards has "Kertauspakkasi"; exactly the chapters with cards have "Kertaa luvun
+  - Käsitetakomo (teacher 2026-11-03, scripts/concept_cards.py): the card data is valid; the front page has no card
+    link (compact front page); a module page with cards has "Kertauspakkasi"; exactly the chapters with cards have "Kertaa luvun
     käsitteet" after the exit ticket (a definition list without JavaScript) and its "Käsitteet" stage; card terms are
     marked only in Teoriatiivistelmä; in a browser the card turns by keyboard, the marks go to localStorage
     ruukkilabra:kortit (three "Osasin" in a row leave the deck), the popover closes with Esc, the deck shows on the
@@ -186,7 +186,7 @@ for lang in i18n.languages():
     out = SITE if lang == i18n.SOURCE else SITE / lang
     has = bool(concept_cards.modules(concept_cards.data_lang(lang)))
     home = (out / "index.html").read_text()
-    expect(f"{lang}: the front page links to Käsitetakomo exactly when the language has cards", ('href="kasitteet.html"' in home) == has and (out / "kasitteet.html").is_file() == has)
+    expect(f"{lang}: kasitteet.html exists exactly when the language has cards, and the front page has no card link (teacher 2026-11-03, compact front page)", 'kasitteet.html' not in home and (out / "kasitteet.html").is_file() == has)
     for code in curriculum:
         f = out / f"{code}.html"
         if not f.is_file(): continue
@@ -216,7 +216,7 @@ JS = """() => { const R = (e) => e.getBoundingClientRect(), out = [];
   const h = document.querySelector('header.top'), kids = [...h.children].map(R);
   if (Math.max(...kids.map((r) => r.top)) - Math.min(...kids.map((r) => r.top)) > 20) out.push('header wraps');
   for (const e of document.querySelectorAll('.mod-title, .up-title')) if (e.scrollWidth > e.clientWidth + 1) out.push('cut: ' + e.textContent);
-  for (const e of document.querySelectorAll('header.top a, header.top summary, .up-list a, details.more-tips > summary, ul.concept-cards a'))
+  for (const e of document.querySelectorAll('header.top a, header.top summary, .up-list a, details.more-tips > summary'))
     if (e.checkVisibility() && R(e).height < 43.5) out.push(`target ${Math.round(R(e).height)} px: ${e.textContent.trim().slice(0, 30)}`);
   for (const e of document.querySelectorAll('.mod-row')) if (R(e).height < 44) out.push('row under 44 px');
   return out; }"""

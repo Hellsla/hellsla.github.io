@@ -66,7 +66,7 @@
    "luku": "fy3-3",
    "aihe": "fy3-lampotila-ja-systeemi",
    "kasite": "Absolute zero",
-   "maaritelma": "The lowest possible temperature, $0\\,\\text{K}$ or $-273.15\\,^{\\circ}\\text{C}$."
+   "maaritelma": "The lowest possible temperature, $0\\,\\text{K}$ or $-273.15\\,{}^{\\circ}\\text{C}$."
   },
   {
    "id": "fy3-lampoliike",

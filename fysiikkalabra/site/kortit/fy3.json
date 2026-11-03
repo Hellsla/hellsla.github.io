@@ -66,7 +66,7 @@
    "luku": "fy3-3",
    "aihe": "fy3-lampotila-ja-systeemi",
    "kasite": "Absoluuttinen nollapiste",
-   "maaritelma": "Alin mahdollinen lämpötila on $0\\,\\text{K}$ eli $-273{,}15\\,^{\\circ}\\text{C}$."
+   "maaritelma": "Alin mahdollinen lämpötila on $0\\,\\text{K}$ eli $-273{,}15\\,{}^{\\circ}\\text{C}$."
   },
   {
    "id": "fy3-lampoliike",

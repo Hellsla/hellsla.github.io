@@ -51,7 +51,7 @@ JS = """() => {
   for (const k of document.querySelectorAll('main .katex')) {
     if (!k.checkVisibility() || k.closest('.katex-display, table, svg, #sim-root')) continue;
     const box = k.closest('p, li, .steps, .stage') || k.parentElement;
-    const over = Math.round(k.getBoundingClientRect().right - Math.min(box.getBoundingClientRect().right, vw));
+    const over = Math.round(k.getBoundingClientRect().right - (k.closest('.kc-card') ? box.getBoundingClientRect().right : Math.min(box.getBoundingClientRect().right, vw)));   // a concept card may sit beyond the window in its scrolling row (.kc-row): its own box is the limit
     if (over > 1) { const ann = k.querySelector('annotation'); out.push({what: 'formula', over, text: 'inline, cannot wrap: ' + (ann ? ann.textContent.slice(0, 70) : '')}); }
   }
   for (const c of document.querySelectorAll('main .eq-chain')) {   // a calculation set as rows (mathlayout.py): its left side must neither spill into the right one
