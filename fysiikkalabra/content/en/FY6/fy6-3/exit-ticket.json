@@ -1,0 +1,10 @@
+[
+  {
+    "q": "The voltage across a component is $9.0\\,\\text{V}$, and a current of $0.060\\,\\text{A}$ flows through it. What is the resistance of the component?",
+    "a": "$R = U : I = 9.0\\,\\text{V} : 0.060\\,\\text{A} = 150\\,\\Omega$."
+  },
+  {
+    "q": "The length of a copper wire is halved and its cross-sectional area is doubled. How does the resistance of the wire change?",
+    "a": "The resistance falls to a quarter, because $R = \\rho l : A$: half the length halves the resistance and double the cross-sectional area halves it again."
+  }
+]

@@ -1,0 +1,105 @@
+{
+  "level1": [
+    {
+      "id": "fy6-3-L1-01",
+      "level": 1,
+      "text": "A kettle is connected to a voltage of $230\\,\\text{V}$, and a current of $8.7\\,\\text{A}$ flows through its heating element. What is the resistance of the heating element?",
+      "answer": 26,
+      "unit": "Ω",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-3-L1-02",
+      "level": 1,
+      "text": "The resistance of a resistor in an electronic circuit is $220\\,\\Omega$, and a current of $15\\,\\text{mA}$ flows through it. How large is the voltage across the resistor? Answer in volts.",
+      "answer": 3.3,
+      "unit": "V",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-3-L1-03",
+      "level": 1,
+      "text": "The total resistance of the heating wires of a car's rear window is $1.2\\,\\Omega$, and they are connected to the car's voltage of $12\\,\\text{V}$. How large a current flows through the wires?",
+      "answer": 10,
+      "unit": "A",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-3-L1-04",
+      "level": 1,
+      "text": "A conductor of a copper cable has a length of $25\\,\\text{m}$ and a cross-sectional area of $2.5\\,\\text{mm}^2$. The resistivity of copper is $1.7 \\cdot 10^{-8}\\,\\Omega\\cdot\\text{m}$. What is the resistance of the conductor? Answer in ohms.",
+      "answer": 0.17,
+      "unit": "Ω",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-3-L1-05",
+      "level": 1,
+      "text": "There is a voltage of $5.0\\,\\text{V}$ between the electrodes of a moisture sensor pushed into the soil of a flowerpot, and a current of $2.0\\,\\text{mA}$ flows through the soil. What is the resistance of the soil between the electrodes? Answer in kilohms.",
+      "answer": 2.5,
+      "unit": "kΩ",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy6-3-L2-01",
+      "level": 2,
+      "text": "The voltage across a resistor is $6.0\\,\\text{V}$ and a current of $0.25\\,\\text{A}$ flows through it. The voltage is raised to $9.0\\,\\text{V}$, and the temperature of the resistor stays the same. How large a current now flows through the resistor?",
+      "answer": 0.38,
+      "unit": "A",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-3-L2-02",
+      "level": 2,
+      "text": "The graph shows the characteristic curve of a filament lamp. What is the resistance of the lamp when the voltage across it is $1.0\\,\\text{V}$? Read the value you need from the graph.",
+      "figure": "fy6-3/lamp-curve",
+      "answer": 6.7,
+      "unit": "Ω",
+      "tolerance": 0.05
+    },
+    {
+      "id": "fy6-3-L2-03",
+      "level": 2,
+      "text": "A copper conductor $50\\,\\text{m}$ long is to be run to an outbuilding. The resistance of the conductor may be at most $0.50\\,\\Omega$. The resistivity of copper is $1.7 \\cdot 10^{-8}\\,\\Omega\\cdot\\text{m}$. What is the smallest cross-sectional area the conductor must have? Answer in square millimetres.",
+      "answer": 1.7,
+      "unit": "mm²",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-3-L2-04",
+      "level": 2,
+      "text": "A constantan wire has a diameter of $0.40\\,\\text{mm}$ and a length of $2.0\\,\\text{m}$. The resistivity of constantan is $5.0 \\cdot 10^{-7}\\,\\Omega\\cdot\\text{m}$. What is the resistance of the wire?",
+      "answer": 8.0,
+      "unit": "Ω",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy6-3-L3-01",
+      "level": 3,
+      "text": "The resistance of a copper wire is $0.80\\,\\Omega$. The wire is drawn on a drawing bench to twice its original length. The amount of copper, that is, the volume of the wire, does not change, and the wire stays uniform. What is the resistance of the stretched wire? Explain why the resistance changes by more than the length.",
+      "answer": 3.2,
+      "unit": "Ω",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-3-L3-02",
+      "level": 3,
+      "text": "A student measured the current through a nichrome wire at different lengths, when the voltage across the wire was $2.00\\,\\text{V}$ all the time and the cross-sectional area $0.20\\,\\text{mm}^2$. At the lengths $0.40\\,\\text{m}$, $0.80\\,\\text{m}$, $1.20\\,\\text{m}$ and $1.60\\,\\text{m}$ the currents were $0.91\\,\\text{A}$, $0.46\\,\\text{A}$, $0.30\\,\\text{A}$ and $0.23\\,\\text{A}$. Determine the resistivity of nichrome from the measurements. Answer in the unit $\\mu\\Omega\\cdot\\text{m}$ ($1\\,\\mu\\Omega\\cdot\\text{m} = 10^{-6}\\,\\Omega\\cdot\\text{m}$).",
+      "answer": 1.1,
+      "unit": "µΩ·m",
+      "tolerance": 0.05
+    },
+    {
+      "id": "fy6-3-L3-03",
+      "level": 3,
+      "text": "The resistance of the filament lamp of a torch is measured with a multimeter when the lamp is at room temperature: $1.0\\,\\Omega$. When the lamp is lit at a voltage of $3.0\\,\\text{V}$, a current of $0.25\\,\\text{A}$ flows through it. How large a current flows through the lamp at the moment of switching on, when the wire is still cold? Explain why a filament lamp most often burns out right when it is switched on.",
+      "answer": 3.0,
+      "unit": "A",
+      "tolerance": 0.02
+    }
+  ]
+}
