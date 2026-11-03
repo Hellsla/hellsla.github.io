@@ -18,6 +18,24 @@
     "tasapainolämpötila",
     "lämpömäärä"
   ],
+  "key_concepts": [
+    {
+      "term": "ominaislämpökapasiteetti",
+      "explain": "Kertoo, kuinka paljon energiaa tarvitaan, kun kilogramman lämpötilaa nostetaan yhdellä kelvinillä. Se riippuu aineesta."
+    },
+    {
+      "term": "lämpökapasiteetti",
+      "explain": "Kertoo, kuinka paljon energiaa tarvitaan, kun koko kappaleen lämpötilaa nostetaan yhdellä kelvinillä."
+    },
+    {
+      "term": "kalorimetri",
+      "explain": "Eristetty astia, jossa lämpömääriä mitataan lämpötilan muutoksista."
+    },
+    {
+      "term": "lämpötasapaino",
+      "explain": "Tila, jossa kappaleiden lämpötilat ovat samat, joten lämpöä ei enää siirry niiden välillä."
+    }
+  ],
   "sim": true,
   "image": false
 }

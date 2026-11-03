@@ -20,6 +20,28 @@
     "Avogadron vakio",
     "yhdistetty kaasulaki"
   ],
+  "key_concepts": [
+    {
+      "term": "ideaalikaasu",
+      "explain": "Kaasun malli, jossa hiukkaset ovat pistemäisiä ja vaikuttavat toisiinsa vain törmätessään."
+    },
+    {
+      "term": "ainemäärä",
+      "explain": "Kertoo, kuinka paljon hiukkasia aineessa on. Yksikkö on mooli."
+    },
+    {
+      "term": "mooli",
+      "explain": "Ainemäärän yksikkö. Yhdessä moolissa on Avogadron vakion verran hiukkasia."
+    },
+    {
+      "term": "moolimassa",
+      "explain": "Yhden moolin massa. Se riippuu siitä, mistä aineesta on kyse."
+    },
+    {
+      "term": "tilanyhtälö",
+      "explain": "Yhtälö, joka yhdistää kaasun paineen, tilavuuden, ainemäärän ja lämpötilan."
+    }
+  ],
   "sim": true,
   "image": false
 }

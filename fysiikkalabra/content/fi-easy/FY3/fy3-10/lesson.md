@@ -229,7 +229,7 @@ Tässä $N$ on hiukkasten lukumäärä, $m$ massa (g tai kg) ja $M$ moolimassa (
   <foreignObject x="20" y="281.5" width="560" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{kussakin astiassa }n = 1{,}00\,\text{mol},\ \text{sama }p, T$</div></foreignObject>
 </svg>
 
-Ideaalikaasu on mikromalli. Mallissa hiukkaset ovat pistemäisiä. Ne vaikuttavat toisiinsa ja astian seinämiin vain törmätessään. Siksi hiukkasten välisten vuorovaikutusten energia on mallissa merkityksetön. Kelvinlämpötila on suoraan verrannollinen hiukkasten keskimääräiseen liike-energiaan. Paine syntyy, kun hiukkaset osuvat seinämiin. Paine kasvaa kolmella tavalla:
+Ideaalikaasu on mikromalli. Mallissa hiukkaset ovat pistemäisiä. Ne vaikuttavat toisiinsa ja astian seinämiin vain törmätessään. Siksi mallissa ei tarvitse ottaa huomioon hiukkasten välisten vuorovaikutusten energiaa. Kelvinlämpötila on suoraan verrannollinen hiukkasten keskimääräiseen liike-energiaan. Paine syntyy, kun hiukkaset osuvat seinämiin. Paine kasvaa kolmella tavalla:
 
 - Hiukkasia on enemmän.
 - Hiukkaset liikkuvat nopeammin. Silloin lämpötila on korkeampi.

@@ -166,7 +166,7 @@ Arvioi epävarmuus piirtämällä kaksi ääriviivaa. Molempien pitää vielä k
 ```latex
 \Delta\theta_0 = \frac{\theta_{0,\text{max}} - \theta_{0,\text{min}}}{2}
 ```
-Tässä $\theta_{0,\text{max}}$ on suurempi (vähemmän negatiivinen) ja $\theta_{0,\text{min}}$ pienempi nollapaineen lämpötila. Tulos on muotoa $\theta_0 \pm \Delta\theta_0$. Väli on arvio, ei taattu raja. Se ottaa huomioon pisteiden epävarmuuden. Se ei ota huomioon sitä, pysyykö riippuvuus suorana mittausalueen ulkopuolella.
+Tässä $\theta_{0,\text{max}}$ on suurempi (vähemmän negatiivinen) ja $\theta_{0,\text{min}}$ pienempi nollapaineen lämpötila. Tulos on muotoa $\theta_0 \pm \Delta\theta_0$. Väli on arvio, ei taattu raja. Se ottaa huomioon pisteiden epävarmuuden. Se ei ota huomioon sitä, pysyykö paineen ja lämpötilan välinen yhteys suorana mittausalueen ulkopuolella.
 
 <svg viewBox="0 0 600 368" role="img" aria-label="Kaasun paine lämpötilan funktiona koko lämpötila-alueella −300 °C … 100 °C. Mittauspisteet ovat vain alueella 10–100 °C. Paras suora ja sen katkoviivajatke ekstrapoloivat nollapaineeseen. Se on lämpötilassa θ₀ ≈ −276 °C. Jyrkin ja loivin ääriviiva osuvat p = 0 -akselille lämpötiloissa noin −259 °C ja −295 °C. Siitä saadaan epävarmuusväli. Kuva on mittakaavassa. Virhejanat (±1 kPa) ovat pisteiden kokoisia." style="max-width:100%;font-size:24px">
 <line x1="78.0" y1="270.0" x2="78.0" y2="30.0" stroke="#e3dccb" stroke-width="1.5"/>

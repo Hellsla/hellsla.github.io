@@ -18,6 +18,28 @@
     "isokoorinen",
     "Boylen laki"
   ],
+  "key_concepts": [
+    {
+      "term": "tilanmuutos",
+      "explain": "Kaasun tila muuttuu, eli sen paine, tilavuus tai lämpötila muuttuu."
+    },
+    {
+      "term": "isoterminen",
+      "explain": "Tilanmuutos, jossa lämpötila pysyy samana."
+    },
+    {
+      "term": "isobaarinen",
+      "explain": "Tilanmuutos, jossa paine pysyy samana."
+    },
+    {
+      "term": "isokoorinen",
+      "explain": "Tilanmuutos, jossa tilavuus pysyy samana."
+    },
+    {
+      "term": "Boylen laki",
+      "explain": "Kun lämpötila pysyy samana, paine kaksinkertaistuu, kun tilavuus puolittuu. Paineen ja tilavuuden tulo pysyy samana."
+    }
+  ],
   "sim": true,
   "image": false
 }
