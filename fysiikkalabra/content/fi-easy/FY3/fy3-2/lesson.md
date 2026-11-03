@@ -179,6 +179,8 @@ Työ on tapa siirtää energiaa. Tämän osoitti James Prescott Joule 1840-luvul
 
 Kun teet kappaleeseen työtä, energiaa siirtyy. Nostetun kappaleen energia kasvaa. Jousi venyy ja tallentaa energiaa. Kitkaa vastaan tehty työ lämmittää pintoja. Energia ei katoa, vaan vaihtaa muotoa. Teho kertoo, kuinka nopeasti työ tehdään. Voit kävellä portaat ylös tai juosta ne. Teet saman työn, mutta juostessa teho on suurempi. Kiukaan teho on $6\,\text{kW}$. Se tarkoittaa, että kiuas muuttaa joka sekunti 6000 joulea sähköenergiaa sisäenergiaksi. Tämä energia siirtyy lämpönä kiviin ja ilmaan.
 
+<figure class="unit-photo"><img src="pics/fy3/crane-lifting-load.webp" alt="Nosturi nostaa harmaata betoniastiaa. Kaksi työntekijää ohjaa sitä."><figcaption>Nosturi nostaa betoniastiaa työmaalla. Kun kuorma nousee, nostovoima tekee työtä. Kuorman potentiaalienergia kasvaa.</figcaption></figure>
+
 ## Kaava: Työ ja teho
 Kun vakiovoima on liikkeen suuntainen, voiman tekemä työ on voiman ja matkan tulo:
 ```latex

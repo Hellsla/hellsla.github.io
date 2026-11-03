@@ -236,6 +236,8 @@ where $\eta$ (eta) is the efficiency, given as a decimal number or as a percenta
 ### The kinetic energy of the wind
 In a wind turbine the source of energy is the kinetic energy of moving air, $E_\text{k} = \tfrac{1}{2}mv^2$. The wind pushes on the rotor blades and makes the rotor turn, and the air slows down as it passes the rotor. The rotor cannot stop the air completely, because the air must be able to flow away behind the rotor. So even an ideal rotor can capture only about $59\,\%$ of the power of the wind flowing through it, and a real wind turbine captures less than half. Air is light: a cubic metre has a mass of only about $1.25\,\text{kg}$. This is why the rotor of a wind turbine has to be large, so that a lot of air flows through it every second.
 
+<figure class="unit-photo"><img src="pics/fy4/middelgrunden-wind-farm.webp" alt="White wind turbines behind a breakwater against a blue sky. Open sea and a few boats are in the foreground."><figcaption>The Middelgrunden offshore wind farm off Copenhagen, Denmark, photographed from a boat.</figcaption></figure>
+
 ## Formula: Hydro and wind power
 
 ### Hydropower

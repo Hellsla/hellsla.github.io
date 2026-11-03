@@ -95,6 +95,8 @@
 ## Key idea
 Almost all substances expand when they are heated and contract when they are cooled. This phenomenon is called **thermal expansion**.
 
+<figure class="unit-photo"><img src="pics/fy3/bridge-expansion-joint.webp" alt="A metal expansion joint runs across the deck of a bridge, with patterned steel plates and a yellow painted stripe. The bridge railing is in the background."><figcaption>An expansion joint of the Kruunuvuori bridge in Helsinki in August 2026, before renovation. The expansion joint gives the bridge structures room to move, for example when the temperature changes.</figcaption></figure>
+
 ### Why does a substance expand?
 The micro model explains thermal expansion. In a solid the particles vibrate around their equilibrium positions. When the temperature rises, the vibration gets stronger.
 

@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: d7805d999d4bb5fa
+CONTENT-HASH: 06e06c46c1cb3c38
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] top-390/top-1280 — the title formula is set in KaTeX serif at a slightly larger optical size than the heading font; reads clearly and is a consequence of the project-wide all-LaTeX rule, so nothing to change.
+- none
 
 ## Checked
-batch delta review: opened fy2-3-top-390 (and top-1280 for fy2-5, fy3-6); the title formula renders as KaTeX (no red source), on one block with the heading, nothing clipped, no overflow, breadcrumb legible; the rest of the lesson is unchanged by the diff.
+- batch delta review: opened fy2-3-1280-0.png and fy2-3-360-0.png (photo floated or inline in the column, no clipping or horizontal overflow, credit line present); alt text and caption read against the picture and the neighbouring paragraph; no number with a unit in the new caption or alt text.

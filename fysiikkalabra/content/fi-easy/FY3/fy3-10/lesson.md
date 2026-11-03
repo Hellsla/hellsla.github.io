@@ -417,6 +417,8 @@ Simulaatiossa paine näytetään suhteessa vertailutilaan ($p/p_\text{ref}$). Si
 
 <!-- sim -->
 
+<figure class="unit-photo"><img src="pics/fy3/hot-air-balloon-burner.webp" alt="Kirkas liekki nousee kuumailmapallon punaisen kuvun sisään."><figcaption>Poltin lämmittää pallon sisällä olevaa ilmaa. Pallo on alhaalta auki. Siksi sisäilman paine on lähes sama kuin ulkoilman paine.</figcaption></figure>
+
 Joskus kaasun määrä ei muutu. Silloin $nR$ on vakio, ja tilanyhtälöstä seuraa yhdistetty kaasulaki $p_1V_1/T_1 = p_2V_2/T_2$. Alaindeksit 1 ja 2 ovat alku- ja lopputila. Yhdistetystä kaasulaista saat jokaisen luvun *Kaasujen tilanmuutokset ja Boylen laki* kaasulain. Pidä yksi suure vakiona.
 
 ## Esimerkki

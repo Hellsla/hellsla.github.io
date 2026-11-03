@@ -67,6 +67,8 @@ Kun kaasu laajenee ja työntää mäntää, se tekee työtä. Kaasu painaa mänt
 ### Lämpövoimakone toistaa liikettään
 Lämpövoimakone muuttaa lämpöä jatkuvasti työksi. Siksi sen on toistettava liikettään. Mäntä on saatava takaisin alas. Jos mäntä painetaan alas samassa paineessa, palautus vie koko kaasun tekemän työn. Palautus vaatii vähemmän työtä, jos kaasu jäähdytetään ensin pienempään paineeseen. Silloin kaasu kuitenkin luovuttaa lämpöä kylmempään ympäristöön.
 
+<figure class="unit-photo"><img src="pics/fy3/steam-locomotive-wheel.webp" alt="Punaisen höyryveturin iso pyörä ja siihen kiinnitetty tanko läheltä."><figcaption>Höyryveturissa höyry laajenee ja työntää mäntää. Tanko muuttaa männän edestakaisen liikkeen pyörien pyörimiseksi.</figcaption></figure>
+
 Katso esimerkiksi höyryvoimalaitosta. Vesi kiehuu kattilassa. Kuuma höyry laajenee turbiinissa ja pyörittää generaattoria. Turbiinista tuleva höyry tiivistyy takaisin vedeksi lauhduttimessa. Merivesi jäähdyttää lauhdutinta. Työaine kiertää samaa rataa yhä uudelleen. Siksi sen sisäenergia on kierroksen lopussa sama kuin alussa. Energia säilyy: kuumasta lähteestä tullut lämpö $Q_1$ on yhtä suuri kuin koneen tekemä työ $W$ ja kylmempään ympäristöön luovutettu lämpö $Q_2$ yhteensä.
 
 Kokemus osoittaa, ettei lämpövoimakone voi muuttaa kaikkea saamaansa lämpöä työksi. Osa lämmöstä on aina luovutettava kylmempään ympäristöön. Tämä on termodynamiikan toisen pääsäännön sisältö. Verrataan kuuman lähteen ja kylmän ympäristön lämpötilaeroa kuuman lähteen lämpötilaan. Mitä suurempi ero on, sitä suuremman osan lämmöstä kone voi muuttaa työksi. Kiertoprosesseja ei tällä kurssilla lasketa. Simulaatio näyttää vain, miksi lämpöä $Q_2$ ei voi välttää.

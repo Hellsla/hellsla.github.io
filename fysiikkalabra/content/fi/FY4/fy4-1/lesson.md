@@ -341,6 +341,8 @@ Kun kappale siirtyy paikasta $x_1$ paikkaan $x_2$, sen **siirtymä** on paikan m
 
 **Nopeus** kertoo, kuinka nopeasti ja mihin suuntaan paikka muuttuu. Se on myös vektorisuure, ja sen etumerkki kertoo suunnan. Nopeuden itseisarvo $|v|$ on vauhti. Tasaisessa liikkeessä nopeus pysyy vakiona: paikka muuttuu yhtä paljon jokaisessa yhtä pitkässä aikavälissä.
 
+<figure class="unit-photo"><img src="pics/fy4/highway-light-trails.webp" alt="Kaartuva moottoritie yöllä: punaisia ja valkoisia valojuovia, katuvaloja ja lumiset pientareet."><figcaption>Pitkällä valotusajalla otetussa yökuvassa ajoneuvojen valot piirtävät juovia. Punaiset juovat ovat takavaloja, valkoiset ajovaloja.</figcaption></figure>
+
 Liike voidaan esittää **$(t,x)$-kuvaajana**, jossa vaaka-akselilla on aika ja pystyakselilla paikka. Tasaisen liikkeen kuvaaja on suora. Suoran jyrkkyys eli kulmakerroin on nopeus: jyrkempi suora tarkoittaa suurempaa nopeutta, vaakasuora suora paikallaan oloa ja laskeva suora liikettä negatiiviseen suuntaan. Kuvaaja ei ole kuva kappaleen radasta: nouseva viiva ei tarkoita ylämäkeä, vaan sitä, että paikka kasvaa.
 
 ## Kaava: Keskinopeus ja tasaisen liikkeen yhtälö

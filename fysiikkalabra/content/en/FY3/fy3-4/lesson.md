@@ -77,6 +77,8 @@ According to the micro model, the pressure of a gas comes from particles collidi
 
 Pressure is not a force but the ratio of force to area, and in a liquid at rest the pressure acts equally in every direction. If the pressure sideways were smaller than downwards, the water would flow sideways and would not stay at rest. If you make holes at several heights in the side of a bottle, the water squirts out hardest from the lowest hole, because the pressure grows with depth. The force caused by pressure is always perpendicular to the surface: on the vertical wall of a dam the force points horizontally, and on a diver's body it acts from all sides. That is why here we can treat the force as just a magnitude; the direction comes from the surface.
 
+<figure class="unit-photo"><img src="pics/fy3/scuba-diver.webp" alt="A diver in dark blue water, with air bubbles rising above towards the bright surface."><figcaption>A diver deep under water. The bubbles of exhaled air rise towards the surface.</figcaption></figure>
+
 ### Atmospheric pressure and gauge pressure
 Atmospheric pressure, the pressure of the atmosphere, already acts on the surface of the water. At sea level it is about $101\,\text{kPa}$. It is the weight of the column of air per unit area. Atmospheric pressure also acts on the surface of the water and is transmitted through the water to depth. Under water the total pressure is therefore the sum of atmospheric pressure and hydrostatic pressure. At a depth of ten metres the hydrostatic pressure is already about the same as one atmosphere.
 

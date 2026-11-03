@@ -76,6 +76,8 @@
 ### Ilma vastustaa liikettä
 Kun kappale liikkuu ilmassa tai vedessä, sen on työnnettävä väliainetta tieltään. Väliaine työntää kappaletta takaisin: kappaleeseen vaikuttaa **väliaineen vastus**, ilmassa **ilmanvastus** $\overline{F}_\text{v}$. Se osoittaa kappaleen nopeutta vastaan, kun ilma on tyyntä. Luvussa *Paino, kitka ja kalteva taso* kitka vastusti liukumista alustaa pitkin. Ilmanvastus on samanlainen vastusvoima, mutta sen aiheuttaja on ympäröivä ilma, eikä kappaleen tarvitse koskettaa mitään kiinteää pintaa. Pyörällä ja autolla on lisäksi **vierimisvastus** $\overline{F}_\text{r}$, renkaiden ja tien aiheuttama vastus, joka on eri voima kuin ilmanvastus.
 
+<figure class="unit-photo"><img src="pics/fy4/epic-parachute-test.webp" alt="Valkoinen pyöreä laskuvarjo sinisellä taivaalla, ja pitkän narun päässä roikkuu pieni metallinen koekappale."><figcaption>NASAn EPIC-koe Kaliforniassa kesäkuussa 2025: drooni pudotti mittalaittein varustetun laskuvarjon ja sen kuorman. Kuvassa ei ole ihmistä, vaan koekappale.</figcaption></figure>
+
 Liukukitkasta ilmanvastus eroaa siinä, että se riippuu nopeudesta. Ilman suhteen paikallaan olevaan kappaleeseen ilmanvastus ei vaikuta lainkaan, ja se kasvaa nopeasti, kun kappaleen nopeus ilman suhteen kasvaa. Samalla nopeudella ilmanvastus on sitä suurempi, mitä suurempi on kappaleen poikkipinta-ala ja mitä huonommin ilma pääsee virtaamaan sen ohi. Samalla nopeudella vastus on vedessä paljon suurempi kuin ilmassa, koska vesi on tiheämpää.
 
 ### Pudotuksen kolme vaihetta

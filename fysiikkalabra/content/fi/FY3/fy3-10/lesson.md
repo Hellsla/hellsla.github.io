@@ -399,6 +399,8 @@ Simulaatiossa voit tutkia tätä hiukkasten tasolla: muuta hiukkasten määrää
 
 <!-- sim -->
 
+<figure class="unit-photo"><img src="pics/fy3/hot-air-balloon-burner.webp" alt="Kuumailmapallon punaisen kuvun sisään suuntautuu kirkas keltainen liekki. Etualalla ovat korin kiinnitysketjut ja vaijerit."><figcaption>Kuumailmapallon poltin lämmittää pallon sisällä olevaa ilmaa. Pallon suu on alhaalta auki, joten sisäilman paine pysyy lähes ulkoilman paineena.</figcaption></figure>
+
 Kun kaasun määrä ei muutu, $nR$ on vakio, ja tilanyhtälöstä seuraa yhdistetty kaasulaki $p_1V_1/T_1 = p_2V_2/T_2$ (alaindeksit 1 ja 2 ovat alku- ja lopputila). Siitä saadaan jokainen luvun *Kaasujen tilanmuutokset ja Boylen laki* kaasulaki, kun yksi suure pidetään vakiona.
 
 ## Esimerkki

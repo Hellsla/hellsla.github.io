@@ -1,21 +1,23 @@
 VERDICT: PASS
-CONTENT-HASH: 94c81d5bb9ef34aa
+CONTENT-HASH: a473e8c9a0c56329
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] lab-1280-1, Koe 2 table — the 4-column results table is wider than the narrow experiment card at 1280 px, so the last header "E′k (J)" is cut off until the table is scrolled — let the table card scroll visibly or shorten the headers.
-- [Minor] exp tables 390/1280 — header units are mixed: "(m/s)" in serif maths, "(kg·m/s)" in bold sans plain text — set the unit in the same maths style (inquiry.json measure labels).
-- [Minor] exercises L3-1, Kaava row — the chain "½(m+M)v′² = (m+M)gh" breaks inside the bracket ("(m + / M)gh") — break after "=" or give the line more room.
-- [Minor] open-tarkista-1280-1, hint 2 — the closing full stop falls alone on a line below the display-like formula — keep the stop with the formula.
-- [Minor] fig-3 / fig-4 at 390 — the "½v̄" label and the "p_kok = 0" label are small and the carts overlap the spring in the explosion "before" row — enlarge the label or separate the carts slightly.
+- [Minor] lesson.md Newtonin kehto -kuva (unit-photo, theory-1280-2) — kuva on sijoitettu Vastaus alun kysymykseen -osan jälkeen, mutta 1280 px:n leveydellä se asettuu Kaava-osan ensimmäisen kappaleen viereen ja irti biljardiselityksestä; 390 px:llä kuva on kuitenkin oikeassa kohdassa. Siirrä kuva heti biljardikappaleen jälkeen tai lyhennä sitä edeltävää osaa, jos asettelu halutaan tiukemmaksi. Kuvateksti on nyt oikein: "epäterävänä".
+- [Minor] check-2 vihje 2 (open-tarkista-1280-1) — lopussa oleva piste putoaa omalle rivilleen kaavan jälkeen. Siirrä piste kaavan sisään tai poista rivinvaihto.
+- [Minor] Koe 2 -taulukko (lab-1280-1) — sarake "E'_k (J)" katkeaa kortin reunaan ja vaatii sivusuuntaista vierittämistä (suunniteltu käytös, mutta katkeaminen näkyy); lyhennä sarakeotsikoita.
+- [Minor] vuorovaikutus-kuva (fig-2-390) — $\Delta t$ leijuu vaunujen yllä ilman selkeää kohdetta; liitä se esim. hakasulkeella voimanuoliin.
+- [Minor] Exit ticket -otsikko (open-exit-1280) — englanninkielinen otsikko suomenkielisellä sivulla (pohjapohjan asia, "Lähtölippu").
 
 ## Checked
-- Contact sheet scan; fig-1..fig-4 at 390; fig-row, intro-1280, top; theory-1280-1/3/4; sim-390, sim-1280; example-390-1/2.
-- exp-1 (390-2), exp-2 (390-2), exp-3 (390-2); lab-1280-1/2; open-ennusta-1280-1; open-tarkista-1280-1; exercises L1-1 and L3-1.
-- Source read in full: Finnish prose, glossary terms (liikemäärän säilyminen, kimmoisa, kimmoton, räjähdys) and the plain-quantity rule: no plain quantities found in the text I read.
-- Velocity blue, momentum violet, force red are consistent in figures and sim; every figure label is LaTeX.
+- contact-1, contact-2, contact-3 (triage); hero fig-1-390, fig-2-390, fig-3-390, fig-4-390 (kaikki neljä kuvaa).
+- intro-1280, theory-1280-1…4 (kuvat, Newtonin kehto -valokuva ja kuvateksti, kaavat, tiivistelmä).
+- example-390-1, example-390-2 (esimerkin kaikki vaiheet, laskuketju riveinä).
+- sim-390, sim-1280, lab-1280-1 (simulaatio, lukemat, koe 1–2).
+- open-ennusta-1280-1, open-tarkista-1280-1, open-exit-1280, open-exercises-1280-1, open-exercises-L3-1280-2.
+- Ei avattu yksitellen: stage-*-390 ja loput harjoituskaappaukset (katsottu vain kontaktilehdillä).
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 5 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4
