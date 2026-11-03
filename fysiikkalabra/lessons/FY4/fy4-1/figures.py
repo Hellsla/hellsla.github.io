@@ -80,9 +80,9 @@ def displacement():
     f.line(24, 198, 576, 198, MUTED, 1.5, "8 6")
     # lower panel
     X = _numberline(f, 304, 70, 40, lab)
-    f.tex(X(5.5), 226, r"\Delta x = -5\,\text{m}", "middle", HEAT)
-    f.arrow(X(8), 262, X(3), 262, HEAT, 5, 20)
-    f.circle(X(8), 304, 9, HEAT, WHITE, 2); f.circle(X(3), 304, 9, HEAT, WHITE, 2)
+    f.tex(X(5.5), 226, r"\Delta x = -5\,\text{m}", "middle", INK)
+    f.arrow(X(8), 262, X(3), 262, INK, 5, 20)
+    f.circle(X(8), 304, 9, INK, WHITE, 2); f.circle(X(3), 304, 9, INK, WHITE, 2)
     f.tex(X(8), 362, "x_1", "middle"); f.tex(X(3), 362, "x_2", "middle")
     return f.svg()
 
@@ -106,8 +106,8 @@ def round_trip():
     # the trip
     f.arrow(X(0), 64, X(2), 64, COLD, 5, 20)
     f.tex(X(1), 30, r"\text{menomatka } 2\,\text{km}", "middle", COLD)
-    f.arrow(X(2), 184, X(0), 184, HEAT, 5, 20)
-    f.tex(X(1), 214, r"\text{paluumatka } 2\,\text{km}", "middle", HEAT)
+    f.arrow(X(2), 184, X(0), 184, INK, 5, 20)
+    f.tex(X(1), 214, r"\text{paluumatka } 2\,\text{km}", "middle", INK)
     f.line(24, 238, 576, 238, MUTED, 1.5, "8 6")
     f.tex(300, 266, r"s = 2\,\text{km} + 2\,\text{km} = 4\,\text{km}", "middle")
     f.tex(300, 300, r"\Delta x = x_2 - x_1 = 0", "middle")
@@ -130,7 +130,7 @@ def graph_slope():
     f.tex(a.x0 - 10, a.Y(2), "x_0", "end")
     f.tex(a.X(0.6), a.Y(8.4), r"v = \dfrac{\Delta x}{\Delta t}", "start")
     b = Axes(f, (340, 290), (490, 70), xlabel="t", ylabel="x", **kw)
-    for end, col, tx in ((8, COLD, "v > 0"), (5, MUTED, "v = 0"), (2, HEAT, "v < 0")):
+    for end, col, tx in ((8, COLD, "v > 0"), (5, MUTED, "v = 0"), (2, COLD, "v < 0")):
         b.line([(0, 5), (10, end)], col, 4)
         f.tex(b.X(10) + 10, b.Y(end), tx, "start", col)
     b.point(0, 5, INK)

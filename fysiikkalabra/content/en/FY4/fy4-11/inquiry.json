@@ -159,7 +159,7 @@
       "names": {
         "v0": "driving speed $v_0$",
         "tr": "reaction time $t_\\text{r}$",
-        "keli": "keli",
+        "keli": "road conditions",
         "este": "ahead"
       },
       "units": {
@@ -236,7 +236,7 @@
       "names": {
         "v0": "driving speed $v_0$",
         "tr": "reaction time $t_\\text{r}$",
-        "keli": "keli",
+        "keli": "road conditions",
         "este": "ahead"
       },
       "units": {
@@ -306,7 +306,7 @@
       "names": {
         "v0": "driving speed $v_0$",
         "tr": "reaction time $t_\\text{r}$",
-        "keli": "keli",
+        "keli": "road conditions",
         "este": "ahead"
       },
       "units": {

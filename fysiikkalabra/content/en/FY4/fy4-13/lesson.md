@@ -190,13 +190,13 @@ Connected bodies are treated one at a time. Each gets its own free-body diagram 
   <line x1="480" y1="102" x2="482.5" y2="102" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
   <path d="M499.5,102 L481.5,110 L481.5,94 Z" fill="#c92a2a" stroke-linejoin="round"/>
   <foreignObject x="499" y="89.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{T}_{1}$</div></foreignObject>
-  <rect x="412" y="254" width="56" height="44" fill="#f6f1e6" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="420" y="266" width="40" height="20" fill="#f6f1e6" stroke="#1f2933" stroke-width="2.5"/>
   <line x1="440" y1="276" x2="440" y2="288.5" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
   <path d="M440,305.5 L432,287.5 L448,287.5 Z" fill="#c92a2a" stroke-linejoin="round"/>
   <foreignObject x="439.5" y="293" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{G}_{2}$</div></foreignObject>
-  <line x1="440" y1="254" x2="440" y2="251.5" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M440,234.5 L448,252.5 L432,252.5 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <foreignObject x="439.5" y="222" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{T}_{2}$</div></foreignObject>
+  <line x1="440" y1="266" x2="440" y2="263.5" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M440,246.5 L448,264.5 L432,264.5 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="439.5" y="234" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{T}_{2}$</div></foreignObject>
 </svg>
 
 The string pulls the cart with the force $\overline{T}_1$ and the hanging mass with the force $\overline{T}_2$. They act on different bodies, so they appear in different free-body diagrams. A light string and a frictionless pulley only pass the force on and turn its direction, so the magnitudes are equal: $T_1 = T_2 = T$. The forces $\overline{T}_1$ and $\overline{T}_2$ are nevertheless not an action–reaction pair. When the string pulls the cart, the cart pulls the string back with an equally large force, and that force acts on the string and is not in the cart's free-body diagram.
@@ -238,7 +238,7 @@ T &= \frac{2 m_1 m_2}{m_1 + m_2}\,g
 ```
 where $m_2 > m_1$. The tension lies between the weights $m_1 g$ and $m_2 g$ of the bodies. If the masses are equal, $a = 0$ and $T = mg$.
 
-<svg data-fig="atwood" viewBox="0 0 600 380" role="img" aria-label="Two hanging bodies and their free-body diagrams. On the left, the situation: a string passes over a pulley hanging from the ceiling, with a lighter body on its left end and a heavier one on its right end. Beside the lighter body is an orange arrow up and beside the heavier one an equally long orange arrow down: the acceleration has the same magnitude. Top right, the free-body diagram of the lighter body, drawn as a rectangle: tension T1 up from the top surface and weight G1 down from the centre, with T1 longer than G1. Bottom right, the free-body diagram of the heavier body: T2 up from the top surface and G2 down from the centre, with G2 longer than T2. The arrows T1 and T2 are equally long." style="max-width:100%;font-size:24px">
+<svg data-fig="atwood" viewBox="0 0 600 410" role="img" aria-label="Two hanging bodies and their free-body diagrams. On the left, the situation: a string passes over a pulley hanging from the ceiling, with a lighter body on its left end and a heavier one on its right end. Beside the lighter body is an orange arrow up and beside the heavier one an equally long orange arrow down: the acceleration has the same magnitude. Top right, the free-body diagram of the lighter body, drawn as a rectangle: tension T1 up from the top surface and weight G1 down from the centre, with T1 longer than G1. Bottom right, the free-body diagram of the heavier body: T2 up from the top surface and G2 down from the centre, with G2 longer than T2. The arrows T1 and T2 are equally long." style="max-width:100%;font-size:24px">
   <foreignObject x="90" y="7.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{situation}$</div></foreignObject>
   <line x1="70" y1="56" x2="190" y2="56" stroke="#1f2933" stroke-width="3" stroke-linecap="round"/>
   <line x1="70" y1="56" x2="60" y2="44" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
@@ -265,30 +265,30 @@ where $m_2 > m_1$. The tension lies between the weights $m_1 g$ and $m_2 g$ of t
   <foreignObject x="217.5" y="285.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#e8590c">$\overline{a}$</div></foreignObject>
   <foreignObject x="91.5" y="255.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$m_1$</div></foreignObject>
   <foreignObject x="135.5" y="301.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$m_2$</div></foreignObject>
-  <line x1="300" y1="12" x2="300" y2="368" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 6"/>
+  <line x1="300" y1="12" x2="300" y2="398" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 6"/>
   <line x1="310" y1="190" x2="590" y2="190" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 6"/>
   <foreignObject x="312" y="7.5" width="283" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$\text{free-body diagram: light}$</div></foreignObject>
   <foreignObject x="312" y="191.5" width="283" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$\text{free-body diagram: heavy}$</div></foreignObject>
-  <rect x="412" y="110" width="56" height="36" fill="#f6f1e6" stroke="#1f2933" stroke-width="2.5"/>
-  <line x1="440" y1="128" x2="440" y2="137.5" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M440,154.5 L432,136.5 L448,136.5 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <foreignObject x="439.5" y="142" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{G}_{1}$</div></foreignObject>
-  <line x1="440" y1="110" x2="440" y2="91.5" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M440,74.5 L448,92.5 L432,92.5 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <foreignObject x="439.5" y="62" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{T}_{1}$</div></foreignObject>
+  <rect x="416" y="117" width="48" height="22" fill="#f6f1e6" stroke="#1f2933" stroke-width="2.5"/>
+  <line x1="440" y1="128" x2="440" y2="152" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M440,169 L432,151 L448,151 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="439.5" y="156.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{G}_{1}$</div></foreignObject>
+  <line x1="440" y1="117" x2="440" y2="79" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M440,62 L448,80 L432,80 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="439.5" y="49.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{T}_{1}$</div></foreignObject>
   <line x1="540" y1="150" x2="540" y2="108" stroke="#e8590c" stroke-width="2.5" stroke-linecap="butt"/>
   <path d="M546.5,119 L540,106 L533.5,119" fill="none" stroke="#e8590c" stroke-width="2.5" stroke-linejoin="round"/>
   <foreignObject x="545.5" y="91.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#e8590c">$\overline{a}$</div></foreignObject>
-  <rect x="408" y="278" width="64" height="48" fill="#f6f1e6" stroke="#1f2933" stroke-width="2.5"/>
-  <line x1="440" y1="302" x2="440" y2="338" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M440,355 L432,337 L448,337 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <foreignObject x="439.5" y="342.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{G}_{2}$</div></foreignObject>
-  <line x1="440" y1="278" x2="440" y2="259.5" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M440,242.5 L448,260.5 L432,260.5 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <foreignObject x="439.5" y="230" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{T}_{2}$</div></foreignObject>
-  <line x1="540" y1="280" x2="540" y2="322" stroke="#e8590c" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M533.5,311 L540,324 L546.5,311" fill="none" stroke="#e8590c" stroke-width="2.5" stroke-linejoin="round"/>
-  <foreignObject x="545.5" y="309.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#e8590c">$\overline{a}$</div></foreignObject>
+  <rect x="410" y="296" width="60" height="32" fill="#f6f1e6" stroke="#1f2933" stroke-width="2.5"/>
+  <line x1="440" y1="312" x2="440" y2="377.5" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M440,394.5 L432,376.5 L448,376.5 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="439.5" y="382" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{G}_{2}$</div></foreignObject>
+  <line x1="440" y1="296" x2="440" y2="258" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M440,241 L448,259 L432,259 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="439.5" y="228.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{T}_{2}$</div></foreignObject>
+  <line x1="540" y1="290" x2="540" y2="332" stroke="#e8590c" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M533.5,321 L540,334 L546.5,321" fill="none" stroke="#e8590c" stroke-width="2.5" stroke-linejoin="round"/>
+  <foreignObject x="545.5" y="319.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#e8590c">$\overline{a}$</div></foreignObject>
 </svg>
 
 ### Method for connected bodies
@@ -354,13 +354,13 @@ A cart of mass $1.5\,\text{kg}$ stands on a table. A string tied to it passes ov
   <line x1="480" y1="102" x2="482" y2="102" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
   <path d="M499,102 L481,110 L481,94 Z" fill="#c92a2a" stroke-linejoin="round"/>
   <foreignObject x="498.5" y="89.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{T}_{1}$</div></foreignObject>
-  <rect x="412" y="254" width="56" height="44" fill="#f6f1e6" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="420" y="266" width="40" height="20" fill="#f6f1e6" stroke="#1f2933" stroke-width="2.5"/>
   <line x1="440" y1="276" x2="440" y2="285.5" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
   <path d="M440,302.5 L432,284.5 L448,284.5 Z" fill="#c92a2a" stroke-linejoin="round"/>
   <foreignObject x="439.5" y="290" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{G}_{2}$</div></foreignObject>
-  <line x1="440" y1="254" x2="440" y2="252" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M440,235 L448,253 L432,253 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <foreignObject x="439.5" y="222.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{T}_{2}$</div></foreignObject>
+  <line x1="440" y1="266" x2="440" y2="264" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M440,247 L448,265 L432,265 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="439.5" y="234.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{T}_{2}$</div></foreignObject>
 </svg>
 
 <!-- vaihe -->

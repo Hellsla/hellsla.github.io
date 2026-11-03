@@ -411,28 +411,28 @@ When skater A pushes skater B, both start to glide away from each other. B does 
   <defs><linearGradient id="fy43s-ice" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eef5f9"/><stop offset="1" stop-color="#d0e6fb"/></linearGradient></defs>
   <rect x="16" y="172" width="568" height="26" fill="url(#fy43s-ice)"/>
   <line x1="16" y1="172" x2="584" y2="172" stroke="#4f8fbf" stroke-width="2.5" stroke-linecap="round"/>
-  <path d="M232,104 L221.5,166" fill="none" stroke="#1f2933" stroke-width="14.8" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M215.5,167.5 h19" fill="none" stroke="#1f2933" stroke-width="7.4" stroke-linejoin="round" stroke-linecap="round"/>
-  <line x1="211.5" y1="172" x2="239.5" y2="172" stroke="#8a96a3" stroke-width="2.22" stroke-linecap="round"/>
-  <path d="M232,104 L241,166" fill="none" stroke="#1f2933" stroke-width="14.8" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M235,167.5 h19" fill="none" stroke="#1f2933" stroke-width="7.4" stroke-linejoin="round" stroke-linecap="round"/>
-  <line x1="230.5" y1="172" x2="258.5" y2="172" stroke="#8a96a3" stroke-width="2.22" stroke-linecap="round"/>
-  <path d="M215.5,108.5 Q229,31.5 251,44.5 L250,108.5 Z" fill="#1971c2" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
-  <path d="M239.5,49 L292,84" fill="none" stroke="#1971c2" stroke-width="11.84" stroke-linejoin="round" stroke-linecap="round"/>
-  <circle cx="292" cy="84" r="6.66" fill="#f1dfb5" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="244" cy="15" r="17.76" fill="#f1dfb5" stroke="#1f2933" stroke-width="2"/>
-  <path d="M225.5,16.5 Q226,-7 244,-5.5 Q261.5,-7 262.5,16.5 Z" fill="#1971c2" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M352,120.5 L360,167.5" fill="none" stroke="#1f2933" stroke-width="11.2" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M364.5,168.5 h-14.5" fill="none" stroke="#1f2933" stroke-width="5.6" stroke-linejoin="round" stroke-linecap="round"/>
-  <line x1="367.5" y1="172" x2="346.5" y2="172" stroke="#8a96a3" stroke-width="2" stroke-linecap="round"/>
-  <path d="M352,120.5 L345.5,167.5" fill="none" stroke="#1f2933" stroke-width="11.2" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M350,168.5 h-14.5" fill="none" stroke="#1f2933" stroke-width="5.6" stroke-linejoin="round" stroke-linecap="round"/>
-  <line x1="353" y1="172" x2="332" y2="172" stroke="#8a96a3" stroke-width="2" stroke-linecap="round"/>
-  <path d="M339.5,124 Q354,65.5 337.5,75.5 L338.5,124 Z" fill="#c92a2a" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
-  <path d="M346.5,79 L306,84" fill="none" stroke="#c92a2a" stroke-width="8.96" stroke-linejoin="round" stroke-linecap="round"/>
-  <circle cx="306" cy="84" r="5.04" fill="#f1dfb5" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="343" cy="53.5" r="13.44" fill="#f1dfb5" stroke="#1f2933" stroke-width="2"/>
-  <path d="M329,54.5 Q329.5,36.5 343,37.5 Q356.5,36.5 357,54.5 Z" fill="#c92a2a" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M236,111.5 L227,166.5" fill="none" stroke="#1f2933" stroke-width="13.2" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M221.5,168 h17" fill="none" stroke="#1f2933" stroke-width="6.6" stroke-linejoin="round" stroke-linecap="round"/>
+  <line x1="217.5" y1="172" x2="242.5" y2="172" stroke="#8a96a3" stroke-width="2" stroke-linecap="round"/>
+  <path d="M236,111.5 L244,166.5" fill="none" stroke="#1f2933" stroke-width="13.2" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M238.5,168 h17" fill="none" stroke="#1f2933" stroke-width="6.6" stroke-linejoin="round" stroke-linecap="round"/>
+  <line x1="234.5" y1="172" x2="260" y2="172" stroke="#8a96a3" stroke-width="2" stroke-linecap="round"/>
+  <path d="M221.5,115 Q233.5,46.5 253,58.5 L252,115 Z" fill="#1971c2" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M242.5,62.5 L292,93" fill="none" stroke="#1971c2" stroke-width="10.56" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="292" cy="93" r="5.94" fill="#f1dfb5" stroke="#1f2933" stroke-width="1.5"/>
+  <circle cx="246.5" cy="32" r="15.84" fill="#f1dfb5" stroke="#1f2933" stroke-width="2"/>
+  <path d="M230,33.5 Q230.5,12.5 246.5,13.5 Q262.5,12.5 263,33.5 Z" fill="#1971c2" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M348,126 L355,168" fill="none" stroke="#1f2933" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M359,169 h-13" fill="none" stroke="#1f2933" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+  <line x1="362" y1="172" x2="343" y2="172" stroke="#8a96a3" stroke-width="2" stroke-linecap="round"/>
+  <path d="M348,126 L342,168" fill="none" stroke="#1f2933" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M346,169 h-13" fill="none" stroke="#1f2933" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+  <line x1="349" y1="172" x2="330" y2="172" stroke="#8a96a3" stroke-width="2" stroke-linecap="round"/>
+  <path d="M359,129 Q350,77 335,86 L336,129 Z" fill="#c92a2a" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M343,89 L306,93" fill="none" stroke="#c92a2a" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="306" cy="93" r="4.5" fill="#f1dfb5" stroke="#1f2933" stroke-width="1.5"/>
+  <circle cx="340" cy="66" r="12" fill="#f1dfb5" stroke="#1f2933" stroke-width="2"/>
+  <path d="M327.5,67 Q328,51 340,52 Q352,51 352.5,67 Z" fill="#c92a2a" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
   <foreignObject x="166" y="25.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{A}$</div></foreignObject>
   <foreignObject x="390" y="55.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{B}$</div></foreignObject>
   <line x1="16" y1="214" x2="584" y2="214" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 6"/>
