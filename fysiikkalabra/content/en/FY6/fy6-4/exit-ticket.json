@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Resistors $47\\,\\Omega$ and $68\\,\\Omega$ are connected in series. How large is their total resistance?",
+    "a": "In a series connection the resistances are added: $R = 47\\,\\Omega + 68\\,\\Omega = 115\\,\\Omega$."
+  },
+  {
+    "q": "Two identical $80\\,\\Omega$ resistors are connected in parallel. How large is the total resistance, and why is it smaller than the resistance of one resistor?",
+    "a": "$\\tfrac{1}{R} = \\tfrac{1}{80\\,\\Omega} + \\tfrac{1}{80\\,\\Omega} = \\tfrac{2}{80\\,\\Omega}$, so $R = 40\\,\\Omega$. A resistor connected in parallel is a new route: at the same voltage twice the current leaves the battery, so the total resistance is half."
+  }
+]

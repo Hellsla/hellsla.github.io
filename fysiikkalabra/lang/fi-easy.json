@@ -1598,6 +1598,29 @@
       "aloita": "paina Mittaa",
       "kaynnissa": "käynnissä",
       "valmis": "valmis"
+    },
+    "fy6-4": {
+      "kytkenta": "Kytkentä",
+      "yksi": "yksi vastus",
+      "sarja": "sarjaan",
+      "rinnan": "rinnan",
+      "jannite": "Pariston jännite $U = {{U}}\\,\\text{V}$",
+      "vastus1": "Vastus $R_1 = {{R}}\\,\\Omega$",
+      "vastus2": "Vastus $R_2 = {{R}}\\,\\Omega$",
+      "vastus2pois": "Vastus $R_2 = {{R}}\\,\\Omega$ (ei kytketty)",
+      "nopeus": "Nopeus",
+      "hidas": "hidas",
+      "normaali": "normaali",
+      "nopea": "nopea",
+      "selite": "Pisteiden nopeus näyttää virran suuruuden. Suunta on sovittu virran suunta plusnavasta miinusnapaan.",
+      "lukemat": "<strong>Kokonaisresistanssi $R = {{R}}\\,\\Omega$</strong><br>Paristosta lähtevä virta $I = {{I}}\\,\\text{mA}$<br>Vastus $R_1$: virta $I_1 = {{I1}}\\,\\text{mA}$, jännite $U_1 = {{U1}}\\,\\text{V}$",
+      "lukemat2": "<br>Vastus $R_2$: virta $I_2 = {{I2}}\\,\\text{mA}$, jännite $U_2 = {{U2}}\\,\\text{V}$",
+      "lukemat2pois": "<br>Vastus $R_2$ ei ole kytkettynä.",
+      "values": {
+        "yksi": "yksi vastus",
+        "sarja": "sarjaankytkentä",
+        "rinnan": "rinnankytkentä"
+      }
     }
   },
   "practice": {

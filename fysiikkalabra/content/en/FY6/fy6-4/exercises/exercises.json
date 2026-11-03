@@ -1,0 +1,105 @@
+{
+  "level1": [
+    {
+      "id": "fy6-4-L1-01",
+      "level": 1,
+      "text": "On the circuit board of an electronics kit there are three resistors in series: $120\\,\\Omega$, $220\\,\\Omega$ and $330\\,\\Omega$. How large is their total resistance?",
+      "answer": 670,
+      "unit": "Ω",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-4-L1-02",
+      "level": 1,
+      "text": "Resistors $40\\,\\Omega$ and $60\\,\\Omega$ are connected in parallel. How large is the total resistance of the connection?",
+      "answer": 24,
+      "unit": "Ω",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-4-L1-03",
+      "level": 1,
+      "text": "In the interior of a car there are three lamps connected in parallel to the battery. The currents of the lamps are $0.20\\,\\text{A}$, $0.45\\,\\text{A}$ and $0.85\\,\\text{A}$. How large a current leaves the battery when all three are on?",
+      "answer": 1.5,
+      "unit": "A",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-4-L1-04",
+      "level": 1,
+      "text": "In a flashlight two small bulbs are connected in series to a $4.5\\,\\text{V}$ battery. A voltmeter shows $1.8\\,\\text{V}$ across the first bulb. How large is the voltage across the second bulb?",
+      "answer": 2.7,
+      "unit": "V",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-4-L1-05",
+      "level": 1,
+      "text": "Three identical $330\\,\\Omega$ resistors are connected in parallel. How large is the total resistance of the connection?",
+      "answer": 110,
+      "unit": "Ω",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy6-4-L2-01",
+      "level": 2,
+      "text": "Resistors $1.2\\,\\text{k}\\Omega$ and $680\\,\\Omega$ are connected in series to a $9.0\\,\\text{V}$ battery. How large a current passes through the circuit? Give the answer in milliamperes.",
+      "answer": 4.8,
+      "unit": "mA",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-4-L2-02",
+      "level": 2,
+      "text": "A small indicator lamp works properly when its voltage is $2.5\\,\\text{V}$ and its current $0.10\\,\\text{A}$. It is to be connected to a $6.0\\,\\text{V}$ battery, so a resistor is connected in series with it. How large must the resistance of the resistor be?",
+      "answer": 35,
+      "unit": "Ω",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-4-L2-03",
+      "level": 2,
+      "text": "A $30\\,\\Omega$ resistor and an unknown resistor are connected in parallel to a $6.0\\,\\text{V}$ battery. The current leaving the battery is $0.50\\,\\text{A}$. How large is the resistance of the unknown resistor?",
+      "answer": 20,
+      "unit": "Ω",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-4-L2-04",
+      "level": 2,
+      "text": "Resistors $2.2\\,\\text{k}\\Omega$ and $3.3\\,\\text{k}\\Omega$ are connected in parallel. How large is the total resistance of the connection? Give the answer in kilohms.",
+      "answer": 1.3,
+      "unit": "kΩ",
+      "tolerance": 0.03
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy6-4-L3-01",
+      "level": 3,
+      "text": "In the circuit in the figure the battery is ideal and the resistance of the wires is ignored. How large a current passes through resistor $R_3$? Give the answer in milliamperes.",
+      "figure": "fy6-4/task-mixed",
+      "answer": 50,
+      "unit": "mA",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-4-L3-02",
+      "level": 3,
+      "text": "An electric heater has two identical $46\\,\\Omega$ heating resistors, and it is connected to a mains voltage of $230\\,\\text{V}$. At low power the resistors are connected in series, at high power in parallel. How many times as large is the current the heater draws in the parallel connection compared with the series connection? Assume that the resistances of the resistors do not change.",
+      "answer": 4,
+      "unit": "kertaa",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-4-L3-03",
+      "level": 3,
+      "text": "Two resistors give a total resistance of $250\\,\\Omega$ when connected in series and $60\\,\\Omega$ when connected in parallel. How large is the resistance of the larger of the resistors?",
+      "answer": 150,
+      "unit": "Ω",
+      "tolerance": 0.02
+    }
+  ]
+}

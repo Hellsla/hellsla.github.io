@@ -1,0 +1,105 @@
+{
+  "level1": [
+    {
+      "id": "fy6-4-L1-01",
+      "level": 1,
+      "text": "Elektroniikkasarjan piirilevyllä on kolme vastusta sarjassa: $120\\,\\Omega$, $220\\,\\Omega$ ja $330\\,\\Omega$. Kuinka suuri on niiden kokonaisresistanssi?",
+      "answer": 670,
+      "unit": "Ω",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-4-L1-02",
+      "level": 1,
+      "text": "Vastukset $40\\,\\Omega$ ja $60\\,\\Omega$ kytketään rinnan. Kuinka suuri on kytkennän kokonaisresistanssi?",
+      "answer": 24,
+      "unit": "Ω",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-4-L1-03",
+      "level": 1,
+      "text": "Auton sisätiloissa on kolme valaisinta. Ne on kytketty rinnan akkuun. Valaisimien virrat ovat $0{,}20\\,\\text{A}$, $0{,}45\\,\\text{A}$ ja $0{,}85\\,\\text{A}$. Kuinka suuri virta akusta lähtee, kun kaikki kolme palavat?",
+      "answer": 1.5,
+      "unit": "A",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-4-L1-04",
+      "level": 1,
+      "text": "Taskulampussa on kaksi pientä lamppua sarjassa $4{,}5\\,\\text{V}$:n paristoon kytkettynä. Jännitemittari näyttää ensimmäisen lampun yli $1{,}8\\,\\text{V}$. Kuinka suuri jännite on toisen lampun yli?",
+      "answer": 2.7,
+      "unit": "V",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-4-L1-05",
+      "level": 1,
+      "text": "Kolme samanlaista $330\\,\\Omega$:n vastusta kytketään rinnan. Kuinka suuri on kytkennän kokonaisresistanssi?",
+      "answer": 110,
+      "unit": "Ω",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy6-4-L2-01",
+      "level": 2,
+      "text": "Vastukset $1{,}2\\,\\text{k}\\Omega$ ja $680\\,\\Omega$ kytketään sarjaan $9{,}0\\,\\text{V}$:n paristoon. Kuinka suuri virta piirissä kulkee? Anna vastaus milliampeereina.",
+      "answer": 4.8,
+      "unit": "mA",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-4-L2-02",
+      "level": 2,
+      "text": "Pieni merkkilamppu toimii oikein, kun sen jännite on $2{,}5\\,\\text{V}$ ja virta $0{,}10\\,\\text{A}$. Lamppu halutaan kytkeä $6{,}0\\,\\text{V}$:n paristoon. Siksi sen kanssa kytketään sarjaan vastus. Kuinka suuri vastuksen resistanssin on oltava?",
+      "answer": 35,
+      "unit": "Ω",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-4-L2-03",
+      "level": 2,
+      "text": "Vastus $30\\,\\Omega$ ja tuntematon vastus on kytketty rinnan $6{,}0\\,\\text{V}$:n paristoon. Paristosta lähtevä virta on $0{,}50\\,\\text{A}$. Kuinka suuri on tuntemattoman vastuksen resistanssi?",
+      "answer": 20,
+      "unit": "Ω",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-4-L2-04",
+      "level": 2,
+      "text": "Vastukset $2{,}2\\,\\text{k}\\Omega$ ja $3{,}3\\,\\text{k}\\Omega$ kytketään rinnan. Kuinka suuri on kytkennän kokonaisresistanssi? Anna vastaus kilo-ohmeina.",
+      "answer": 1.3,
+      "unit": "kΩ",
+      "tolerance": 0.03
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy6-4-L3-01",
+      "level": 3,
+      "text": "Kuvan kytkennässä paristo on ihanteellinen. Johtimien resistanssi jätetään huomiotta. Kuinka suuri virta kulkee vastuksen $R_3$ läpi? Anna vastaus milliampeereina.",
+      "figure": "fy6-4/task-mixed",
+      "answer": 50,
+      "unit": "mA",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-4-L3-02",
+      "level": 3,
+      "text": "Sähkölämmittimessä on kaksi samanlaista $46\\,\\Omega$:n lämmitysvastusta. Se kytketään $230\\,\\text{V}$:n verkkojännitteeseen. Pienellä teholla vastukset on kytketty sarjaan, suurella teholla rinnan. Kuinka moninkertainen on lämmittimen ottama virta rinnankytkennässä sarjaankytkentään verrattuna? Oleta, että vastusten resistanssi ei muutu.",
+      "answer": 4,
+      "unit": "kertaa",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-4-L3-03",
+      "level": 3,
+      "text": "Kaksi vastusta antaa sarjaan kytkettyinä kokonaisresistanssin $250\\,\\Omega$ ja rinnan kytkettyinä $60\\,\\Omega$. Kuinka suuri on suuremman vastuksen resistanssi?",
+      "answer": 150,
+      "unit": "Ω",
+      "tolerance": 0.02
+    }
+  ]
+}

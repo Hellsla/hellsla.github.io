@@ -1,20 +1,24 @@
 VERDICT: PASS
-CONTENT-HASH: 2cf75b92f149d281
+CONTENT-HASH: 06e3cd81e22884a5
 
 ## Blocking
 
+(none)
+
 ## Polish
-- inquiry.json `tarkistus-1` (series, 0,40 A) tests fy6-4 content, not this lesson's new idea; a branching-point or zero-point item would fit better (only the concept check).
-- Feedback of every ennuste option opens "Mallin arvot kumoavat/tukevat tämän": repeated and stiff; vary, e.g. "Kokeen arvot eivät tue tätä".
-- No task asks the student to sketch a potential graph (L1-05 only reads one) although the slot names potentiaalikuvaaja; one level 2 task would close it.
-- Sim at 390 px: the red/grey meter leads cross the circuit and sit over R3's label; legible, but shorter leads would be tidier.
+
+- Simulation at 390 px (fig sim-390, exp-koe-2): the source-to-meter wire is a red rectangle around the whole circuit and passes over the label "C" and the upper right of the picture. It reads, but a student may take it for part of the circuit; the "Käyttöohje" text names the wire only in prose. Consider a short "V" lead-in near the red line or a thinner line.
+- Experiment 2 at 390 px: the readout block (Virrat / Jännitteet / Mittari) sits below all the controls, so the student scrolls past about a screen between moving "Mittauskohta" and seeing the reading. The graph and the circuit above do update, so the task still works; moving the "Mittauskohta" select above the sliders would shorten the scroll.
+- The locked sliders show "(vakio)" under each slider; the phrase would be clearer as "(vakio kokeessa)" for a reader who has not met the locking.
+- inquiry.json "kertaus", option 3: "Pariston jännite jakautuu lamppujen kesken puoliksi" is a weak distractor for two different lamps; "pariston jännite jakautuu lamppujen resistanssien suhteessa" would test the series/parallel confusion better.
+- The lesson still names the junction figure "ei mittakaavassa" while the arrow widths are proportional; the alt text says so, but the visible caption could say "nuolten leveys mittakaavassa".
 
 ## Checked
-- Round-1 blocker closed: ennuste-2 now shows circuit-q (A–F, voltmeter, 9,0 V, 10/30/60 Ω, no potentials); readable at 390 px and does not give the answer.
-- Opening question answered in "Lintu johdolla", reflection and the 1,92 mV Sovella task.
-- Ennuste 1 figure shows junction without the split; koe-1 can refute all four options; koe-2 varies only the probe.
-- Worked example: one step per stage, 0,30 A / 6,0 V / 0,20 A consistent, sanity check uses both laws.
-- Etsi virhe distractors repair real misconceptions (wrong branch voltage, equal currents).
-- Exit ticket tests both laws directly; workload fits one lesson (koe-3, reflection, check 3 optional).
-- Theory at 1280 px: formulas, one-column text, no wall of text; sim readout and controls usable at 390 px.
-- Finnish reads at the right level; terms match glossary.
+
+- Rewritten narrow layout, simulation at 390 px: circuit, potential graph, sliders (two columns for R3 and Mittauskohta, then Nollakohta full width), readout and the collapsed Käyttöohje / Mallin oletukset / Laskennan selitys are all visible, nothing clipped, text legible.
+- Sim inside Koe 2 at 390 px: locked parameters greyed and marked "(vakio)", varied parameter active, table buttons ("Aseta alkutila", "Kirjaa mittaus", "Nollaa") below, readout row labelled "Simulaation lukemat".
+- Colour carries meaning with a second cue: potential is a blue number plus a shade, current is purple arrows with I labels, the meter level is a dashed red line with a ringed marker on the graph.
+- Learning path unchanged from round 2: hook, retrieval, two predictions with figures, sim, experiments with min counts, conclusion, theory, reflection, example, error finding, transfer, checks, exit ticket; workload is one lesson.
+- Predictions can be refuted by the experiments (R3 varied with U, R1 and R2 locked; probe varied in Koe 2 with every circuit parameter and the ground locked).
+- Round 2 content (lesson.md, inquiry.json, exit ticket) is the same hash base as the PASS; I read the text again and found no new problem in Finnish or in the model's stated simplifications.
+- The hash was the same at the start and the end of the review.
