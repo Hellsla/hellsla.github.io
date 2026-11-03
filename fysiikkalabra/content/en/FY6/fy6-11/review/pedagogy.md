@@ -1,12 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 66629e592fbd5d66
+CONTENT-HASH: 252b61fc982113e9
 
 ## Blocking
+(none)
 
 ## Polish
-- Nothing blocking or to change.
+(none)
 
 ## Checked
-- Structure identical to the Finnish chapter (Key idea, Formula, 7-stage worked example, misconception, summary; 20 activities with 4 experiments); nothing dropped.
-- Goals complete: "In this lesson, you will learn to" + calculate / explain / determine; prior items end with the chapter name.
-- Natural textbook English; chapter titles match the English titles of fy6-8, fy6-10.
+- Delta: Principle "in every measurement" -> "in every row of the table". Ties the solution to the table the student filled; the following "in every row" sentence now matches.
+- Same change as the Finnish version; reasoning, numbers and formula unchanged.
+- Natural English; term "electric field strength" kept.

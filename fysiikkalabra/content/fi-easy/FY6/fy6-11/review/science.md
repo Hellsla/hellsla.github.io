@@ -1,13 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 983b8993b7ea5419
+CONTENT-HASH: 418cbb24e4577921
 
 ## Blocking
+(none)
 
 ## Polish
-- Nothing physical to change.
+(none)
 
 ## Checked
-- Every `$…$` of inquiry.json, exit-ticket.json and exercises matches the Finnish chapter (numbers, units, symbols; only the order differs in a few exercise texts); decimal comma and {,} kept.
-- Formulas E=F:q, E=U:d, W=qEd=qU, a=qE:m and the oil-droplet example (4.807e-19 C, n=3.0) unchanged; the "in vacuum when other forces are small" condition and the E-symbol disambiguation kept.
-- Experiment initial conditions, locked/vary keys, numeric answers (5e4 N/C, 2000 V, 1333 m/s2), mistakes and 7-step solutions identical to Finnish; sims.fy6-11 labels carry the same quantities and units.
-- Plain Finnish keeps the same terms (sähkökentän voimakkuus, testivaraus, kenttäviiva, homogeeninen) and explains them; no step or justification dropped.
+- Delta (inquiry.json, koe-3 model solution, Principle): "in every measurement" -> "in every row of the table" (jokaisella taulukon rivillä); the rows are model values, so the new wording is the correct one.
+- Physics unchanged: F = qE, E = F : q, 150 uN : 3.0 nC = 50 uN : 1.0 nC = 5.0e4 N/C; the quotient is the same on every row because the ball stays at one place.
+- No number, symbol, option or feedback changed; my earlier PASS stands for the rest.
+- Matches the Finnish reference.

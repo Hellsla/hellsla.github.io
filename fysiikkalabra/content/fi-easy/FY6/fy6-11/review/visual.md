@@ -1,11 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 983b8993b7ea5419
+CONTENT-HASH: 418cbb24e4577921
 
 ## Blocking
+(none)
 
 ## Polish
-- Nothing to change.
+(none)
 
 ## Checked
-- Contact sheets, figures at 390 px, the sim at 390 and 1280 px and the opened experiment states looked at in Selkeä suomi: no overflow, labels fit, maths renders.
-- Figure labels ("positiivinen q", "levyn pää", "+Q ja -Q"), sim labels and experiment cards are Selkeä suomi and fit.
+- Delta: koe-2 solution Periaate, 'jokaisella taulukon rivillä'. The solution is not captured open; read from the diff: plain, short sentences kept, maths untouched.
+- Opened fy6-11-open-exercises-1280-6 (fi-easy): the layout around the neighbouring solutions is intact.
+- Hash at start and end: 418cbb24e4577921. Captures re-made for this hash (screenshot.py --if-stale); no layout change around the edited sentence.
+
+## Scores
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

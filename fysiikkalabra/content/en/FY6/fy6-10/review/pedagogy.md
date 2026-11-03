@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 622344c3b9952893
+CONTENT-HASH: 13d90eca6d3c65f1
 
 ## Blocking
 (none)
@@ -8,5 +8,6 @@ CONTENT-HASH: 622344c3b9952893
 (none)
 
 ## Checked
-- Structure identical to Finnish: same headings, 7 stages, 6 figures, activities, 3 predictions, 2 experiments, 3 checks, no activity dropped.
-- Learning goals complete 'In this lesson, you will learn to' / 'Tällä tunnilla opit' with a verb (explain, calculate, describe).
+- Delta: transfer-task hint 1 "read exactly" -> "read accurately". Better: a value read from a grid is never exact, and the task has tolerance 0.03, so "accurately" matches what the student can do.
+- Hints 2 and 3 are unchanged and still give the point, the equal-charge form and the solved q; the progressive hint ladder is intact, the answer is not disclosed earlier.
+- No number, symbol, option or feedback logic changed.

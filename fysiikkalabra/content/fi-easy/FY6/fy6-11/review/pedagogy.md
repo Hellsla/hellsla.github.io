@@ -1,11 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 983b8993b7ea5419
+CONTENT-HASH: 418cbb24e4577921
 
 ## Blocking
+(none)
 
 ## Polish
-- Nothing blocking or to change.
+(none)
 
 ## Checked
-- Structure identical to the Finnish chapter; nothing dropped. A real simplification, not a copy: sentences shortened and split; vektori, homogeeninen, testivaraus, supistuu and kenttäviiva explained at first use; instructions explicit.
-- Goals complete (laskemaan, selittämään, määrittämään); key_concepts has 5 terms with plain explanations.
+- Delta: "joka mittauksessa" -> "jokaisella taulukon rivillä", same as the Finnish version. Plain Finnish, sentence length unchanged (the following "Siksi ..." sentences stay short).
+- Argument unchanged: same place, same field, force proportional to charge, so F : q is E.
+- No number or formula changed.

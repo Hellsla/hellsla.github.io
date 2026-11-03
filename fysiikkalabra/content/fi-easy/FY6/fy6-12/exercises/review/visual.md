@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 629d973f449c4414
+CONTENT-HASH: cca8005f5904026c
 
 ## Blocking
+(none)
 
 ## Polish
-- None.
+(none)
 
 ## Checked
-- fi-easy: exercises-section captures (contact sheets, open exercises at 1280 px) and the L1-05 graph figure: labels in the right language, no overflow at 390 px, maths renders.
-- No Finnish left in the English exercise texts or solutions; the unit µJ/mJ/eV/m/s show correctly.
+- Delta: L1-05 Vastaus now three short sentences. Opened fy6-12-open-exercises-1280-6 (fi-easy): the answer box and text render cleanly, units intact.
+- Short sentences suit Selkeä suomi; layout around the solution is intact.
+- Hash at start and end: cca8005f5904026c. Captures re-made for this hash (screenshot.py --if-stale); no layout change around the edited sentence.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5

@@ -1,12 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 629d973f449c4414
+CONTENT-HASH: cca8005f5904026c
 
 ## Blocking
+(none)
 
 ## Polish
-- solutions.md L1-05 Answer: "joten tulos on tarkka" overstates (a graph reading is not exact); identical to the Finnish polish item, left as in the reference.
+- solutions.md L1-05 Vastaus/Answer: 50 V and 200 V read off a grid have one significant figure formally, so "two significant figures" because the positions have two is a loose rationale; the value 150 eV is right and the sentence is harmless. Optional: "reading the line at grid crossings adds no extra uncertainty".
 
 ## Checked
-- exercises.json: 12 exercises (5/4/3); every answer, unit and tolerance equal to the Finnish; the number data and math in each text identical.
-- solutions.md: 12 solutions, 198 math expressions pairwise identical to the Finnish; each has all seven steps (given/find, principle, formula, conversions, substitution, answer with figures, reasonableness) and L1-05 the graph reading.
-- Recomputed: 3.845e-17 J, 0.36 uJ, 8.01e-16 J, 0.18 mJ, 150 eV, -75 eV, -120 eV, 4.39e5 m/s, 284 V, 6.80e6 m/s, 42.86, 4.34 mm: all agree.
+- Delta (solutions.md L1-05 Answer): the earlier "result is exact" is removed and replaced by a significant-figure statement; the overstatement is resolved.
+- All 12 answers recomputed in one script and equal answers.py: 3.845e-17 J; 0.36 uJ; 8.01e-16 J; 0.18 mJ; 150 eV; -75 eV; -120 eV; 4.392e5 m/s; 284.3 V; 6.80e6 m/s; 42.86; 4.34 mm.
+- 200 V - 50 V = 150 V from the figure (V = 50 V/cm * x, 250 V at 5.0 cm) is consistent; no physics or number changed.
+- Numbers, LaTeX and tolerances identical to the Finnish reference.

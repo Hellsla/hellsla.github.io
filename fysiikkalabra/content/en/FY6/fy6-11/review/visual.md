@@ -1,11 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 66629e592fbd5d66
+CONTENT-HASH: 252b61fc982113e9
 
 ## Blocking
+(none)
 
 ## Polish
-- Nothing to change.
+(none)
 
 ## Checked
-- Contact sheets, figures at 390 px, the sim at 390 and 1280 px and the opened experiment states looked at in English: no overflow, labels fit, maths renders.
-- No Finnish in figures, sim controls, readouts, experiment cards (Initial state / Kept constant / Varied, table columns, field select), headings or alt text. Re-captured after the edit.
+- Delta: koe-2 solution Principle, 'in every row of the table'. The solution is not captured open; read from the diff: clear, maths untouched.
+- Opened fy6-11-lab-1280-2 (experiment cards, sim, conclusion block) and fy6-11-open-exercises-1280-5: the layout survived; graph labels and units fit.
+- Hash at start and end: 252b61fc982113e9. Captures re-made for this hash (screenshot.py --if-stale); no layout change around the edited sentence.
+
+## Scores
+illustrations 4 · typography 5 · Finnish n/a · accessibility 4

@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: bcb0030d6d5d7294
+CONTENT-HASH: 6b6367e7cf4b6ce7
 
 ## Blocking
+(none)
 
 ## Polish
-- lessons/FY6/fy6-11/answers.py:15, :18 — comment and expression still read the line at (4,5 nC; 135 µN); the solution now reads (4,0 nC; 120 µN) — compute 120e-6 / 4.0e-9 so the script backs the shown reading (value unchanged).
+- solutions.md L1-05 (Annettu, Järkevyys/Reasonableness): the graph points are called measurement points though the task gives only a graph; fine for the exercise (data is a plain graph), optionally "datapiste" / "data point".
 
 ## Checked
-- Round 2 (diff HEAD~1..HEAD): L3-02 task adds "Levyt ovat tyhjiössä." and the Periaate states no other forces — round-1 B item resolved.
-- solutions.md L1-02, L1-03, L1-04, L1-05, L2-01, L2-02, L3-03 now name "sähkökentän voimakkuus" — round-1 A item resolved.
-- L1-05 reading: fitted line through the origin at slope 30 µN/nC passes the grid crossing (4,0 nC; 120 µN) → 3,0·10⁴ N/C; check point (3,0; 91) → 3,03·10⁴ N/C; the self-contradictory grid sentence is gone.
-- L3-01 answer 3,4·10² V (337,5 V) with its rounding reason — correct.
-- answers.py re-run: all 12 values agree with exercises.json; no other numbers changed.
+- Full check, focus on diff. All 12 answers recomputed in one script: 4.0e4 N/C; 100 uN; 1.5e4 V/m; 70 mV; 3.0e4 N/C; 2.0 mN; 15 kV; 20.39; 0.45 mN; 337.5 V; 4194 km/s; 23.06 nC. All equal answers.py and the solutions.
+- Diff L1-05: the line is now said to be fitted through the origin because F = qE gives no force on an uncharged ball in a uniform field. That is a physical reason (guardrail: origin fit needs one) and correct; the sentence the diff removed ("since the line goes through the origin ...") was backwards causality.
+- L1-05 slope read from the fitted line (4.0 nC; 120 uN), not a raw point; the raw point is only a reasonableness check (91 uN : 3.0 nC = 3.03e4). Figure's line 30 uN/nC agrees.
+- Conditions stated: homogeneous field, small test charge, plates far from edges (L2-04), vacuum for the electron (L3-02, v = 1.4 % of c).
+- L3-01 sign/direction (negative drop, positive plate above), L3-03 tan(alpha) = qE : mg correct.
