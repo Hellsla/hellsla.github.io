@@ -1,16 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 9e04d532454b24f2
+CONTENT-HASH: 8ae7e6ed7904aba9
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] Round-1 items untouched (plain units "(Wb)" in the Kaava list, clumsy "tasaisesti … jatkuvasti" sentence, phi-e tick labels, generated Alkutila line).
-- [Minor] inquiry.json howto/model — the explanation now says the crosses and dots show the direction of the induced voltage and that no current flows; consistent with the sim note. "Risti (paperiin päin) ja piste (paperista ulos) näyttävät, mihin suuntaan … ajaisi virtaa" is good; no change needed.
+- [Minor] Earlier minor items (plain "(Wb)" in the Kaava list, "tasaisesti ... jatkuvasti" sentence, phi-e tick labels) remain untouched and non-blocking.
 
 ## Checked
-- Delta (sim note text, howto and model text). Opened sim-390, sim-1280/lab-1280 and stage-tutki-390-1: the note now reads "Violetti: jännite e ja sen suunta" and wraps cleanly at 390, nothing clipped, the markers (violet circles with cross/dot) match the description and the violet voltage curve.
-- howto and model text sit in collapsed Käyttöohje and Mallin oletukset (not captured open); read from the diff: units LaTeX, decimal comma, wording clear, the earlier claim "induktiovirta kulkee" is gone, so no inconsistency with the no-load model.
+- Delta: koe-2 intro and the summary bullet. Opened exp-koe-2-390-1: new intro wraps cleanly at 390 px, LaTeX numbers and units correct, N shown locked ("vakio"), no clipping; Finnish is correct and natural.
+- Opened theory-1280-3: summary bullet "Sinimuotoisen vaihtojännitteen tehollinen arvo on U = U0 : √2 ja I = I0 : √2 ..." renders correctly, colon division, units with thin space, list and bicycle figure layout intact.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 4 · accessibility 4
