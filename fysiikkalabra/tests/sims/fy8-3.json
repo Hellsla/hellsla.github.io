@@ -1,0 +1,220 @@
+[
+ {
+  "expr": "(() => { const S=window.simState; return S.mode==='emis' && S.ny===3 && S.na===2 && Math.abs(S.Ef-10.2)<1e-9 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "on load: emission, n_y = 3, n_a = 2, hf slider 10,20 eV (must run before any setup)"
+ },
+ {
+  "expr": "window.simState.dE",
+  "expected": 1.888889,
+  "tol": 0.01,
+  "note": "on load: 3 -> 2 photon 1,889 eV (lesson-answers ex-dE-eV)"
+ },
+ {
+  "expr": "window.simState.lambda",
+  "expected": 656.46887,
+  "tol": 0.01,
+  "note": "on load: 3 -> 2 gives 656 nm (lesson-answers koe1-3, worked example)"
+ },
+ {
+  "expr": "window.simState.Ey",
+  "expected": -1.511111,
+  "tol": 0.01,
+  "note": "on load: E_3 = -1,511 eV"
+ },
+ {
+  "expr": "window.simState.Ea",
+  "expected": -3.4,
+  "tol": 0.01,
+  "note": "on load: E_2 = -3,40 eV"
+ },
+ {
+  "expr": "(() => { const R=document.querySelectorAll('#sim-root input[type=range]'); return R.length===3 && R[0].min==='2' && R[0].max==='6' && R[0].step==='1' && R[1].min==='1' && R[1].max==='3' && R[1].step==='1' && R[2].min==='0.5' && R[2].max==='14.5' && R[2].step==='0.05' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "three sliders: n_y 2–6, n_a 1–3, hf 0,50–14,50 eV in steps of 0,05"
+ },
+ {
+  "expr": "(() => { const L=[...document.querySelectorAll('#sim-root select')].map(s=>[...s.options].map(o=>o.value).join(',')); return L.length===2 && L[0]==='emis,abs' && L[1]==='0.5,1,2' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "two selects: mode emission/absorption and speed hidas/normaali/nopea"
+ },
+ {
+  "expr": "(() => { const k=[...document.getElementById('sim-root').children].map(e=>e.tagName==='CANVAS'?'canvas':e.className); return k.indexOf('canvas')<k.indexOf('controls') && k.indexOf('controls')<k.indexOf('readout') ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "DOM order canvas, controls, readout"
+ },
+ {
+  "expr": "(() => { const b=document.querySelector('#sim-root .controls button'); return b && b===document.querySelector('#sim-root .controls').firstElementChild ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "the main button comes first in the controls"
+ },
+ {
+  "expr": "(() => { const n=document.querySelectorAll('#sim-root p.note'); return !document.querySelector('#sim-root details') && n.length===1 && n[0].textContent.trim().split(/\\s+/).length<=15 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "no Lisätietoja box; one legend line of at most 15 words"
+ },
+ {
+  "expr": "(() => { const P=window.simAdapter && window.simAdapter.params; return P && Object.keys(P).sort().join(',')==='Ef,mode,na,ny' && P.Ef.unit==='eV' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "adapter declares mode, ny, na and Ef (eV)"
+ },
+ {
+  "expr": "(() => { const c=document.querySelector('#sim-root canvas'); const w=document.getElementById('sim-root').clientWidth; return c.width===600 && c.height===(w<500?1056:400) ? 1 : 0; })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "canvas 600x400 on a wide screen, 600x1056 (stacked, larger labels) under 500 px"
+ },
+ {
+  "expr": "(() => { const t=document.querySelector('#sim-root .readout').textContent; return /nm/.test(t) && /eV/.test(t) ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "the readout shows the photon energy in eV and the wavelength in nm"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'emis'); I(R[1],2); I(R[0],4);",
+  "expr": "window.simState.lambda",
+  "expected": 486.273237,
+  "tol": 0.01,
+  "note": "koe 1: 4 -> 2 (lesson-answers koe1-4)"
+ },
+ {
+  "expr": "window.simState.dE",
+  "expected": 2.55,
+  "tol": 0.01,
+  "note": "koe 1: 4 -> 2 photon energy in eV"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'emis'); I(R[1],2); I(R[0],5);",
+  "expr": "window.simState.lambda",
+  "expected": 434.172533,
+  "tol": 0.01,
+  "note": "koe 1: 5 -> 2 (lesson-answers koe1-5)"
+ },
+ {
+  "expr": "window.simState.dE",
+  "expected": 2.856,
+  "tol": 0.01,
+  "note": "koe 1: 5 -> 2 photon energy in eV"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'emis'); I(R[1],2); I(R[0],6);",
+  "expr": "window.simState.lambda",
+  "expected": 410.293044,
+  "tol": 0.01,
+  "note": "koe 1: 6 -> 2 (lesson-answers koe1-6)"
+ },
+ {
+  "expr": "window.simState.dE",
+  "expected": 3.022222,
+  "tol": 0.01,
+  "note": "koe 1: 6 -> 2 photon energy in eV"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'emis'); I(R[1],1); I(R[0],2);",
+  "expr": "window.simState.lambda",
+  "expected": 121.568309,
+  "tol": 0.01,
+  "note": "koe 2: 2 -> 1, ultraviolet (lesson-answers koe2-2)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'emis'); I(R[1],1); I(R[0],3);",
+  "expr": "window.simState.lambda",
+  "expected": 102.573261,
+  "tol": 0.01,
+  "note": "koe 2: 3 -> 1, ultraviolet (lesson-answers koe2-3)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'emis'); I(R[1],3); I(R[0],4);",
+  "expr": "window.simState.lambda",
+  "expected": 1875.625342,
+  "tol": 0.01,
+  "note": "Paschen 4 -> 3: 1876 nm, infrared"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'emis'); I(R[1],3); I(R[0],2);",
+  "expr": "(() => { const S=window.simState; return S.valid===0 && S.lambda===0 && S.dE===0 && document.querySelector('#sim-root .controls button').disabled ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "n_y <= n_a: no transition, zero values, the main button disabled"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'abs'); I(R[1],1); I(R[2],10.2);",
+  "expr": "window.simState.nEnd",
+  "expected": 2,
+  "tol": 0,
+  "note": "koe 3: 10,20 eV photon at n = 1 is absorbed, electron to n = 2 (lesson-answers abs-10-2)"
+ },
+ {
+  "expr": "window.simState.lambda",
+  "expected": 121.568309,
+  "tol": 0.01,
+  "note": "absorption: the photon's wavelength hc / hf = 121,6 nm"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'abs'); I(R[1],1); I(R[2],11);",
+  "expr": "window.simState.nEnd",
+  "expected": 1,
+  "tol": 0,
+  "note": "koe 3 and prediction 3: 11,00 eV passes, the atom stays at n = 1"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'abs'); I(R[1],1); I(R[2],12.1);",
+  "expr": "window.simState.nEnd",
+  "expected": 3,
+  "tol": 0,
+  "note": "koe 3: 12,10 eV within 0,03 eV of E_3 - E_1 = 12,089 eV, to n = 3 (lesson-answers koe3-1209)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'abs'); I(R[1],1); I(R[2],14);",
+  "expr": "window.simState.nEnd",
+  "expected": 0,
+  "tol": 0,
+  "note": "koe 3: 14,00 eV ionises (nEnd 0)"
+ },
+ {
+  "expr": "window.simState.Ek",
+  "expected": 0.4,
+  "tol": 0.01,
+  "note": "koe 3: free electron E_k = 14,00 eV - 13,6 eV = 0,40 eV (lesson-answers koe3-14-Ek)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'abs'); I(R[1],2); I(R[2],1.9);",
+  "expr": "window.simState.nEnd",
+  "expected": 3,
+  "tol": 0,
+  "note": "absorption from n = 2: 1,90 eV lifts the electron to n = 3 (the red line backwards)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'abs'); I(R[1],3); I(R[2],1.55);",
+  "expr": "window.simState.Ek",
+  "expected": 0.038889,
+  "tol": 0.01,
+  "note": "absorption from n = 3: 1,55 eV ionises, E_k = 1,55 - 1,511 = 0,039 eV"
+ },
+ {
+  "expr": "(() => { const t=document.querySelector('#sim-root .readout').textContent; return /ionisoi/.test(t) ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "the readout names the outcome (ionisation)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'abs'); I(R[1],1); I(R[2],10.2); I(S[1],'2');",
+  "expr": "(() => { const b=document.querySelector('#sim-root .controls button'); b.click(); return window.simAdapter.get().anim>=0 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "the main button starts the photon's run"
+ },
+ {
+  "expr": "(() => { const S=[...document.querySelectorAll('#sim-root select')]; return S[1].value==='2' && window.simState.nEnd===2 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "the speed select changes only the animation's pace; the outcome stays"
+ }
+]

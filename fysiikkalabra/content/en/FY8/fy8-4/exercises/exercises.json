@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy8-4-L1-01",
+      "level": 1,
+      "text": "A green laser pointer emits light of wavelength $532\\,\\text{nm}$. What is the momentum of one photon? Give the answer in units of $10^{-27}\\,\\text{kg}\\cdot\\text{m/s}$.",
+      "answer": 1.25,
+      "unit": "10⁻²⁷ kg·m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-4-L1-02",
+      "level": 1,
+      "text": "The molybdenum anode of an X-ray tube strongly emits X-rays of wavelength $0.0711\\,\\text{nm}$. What is the momentum of a photon of this radiation? Give the answer in units of $10^{-24}\\,\\text{kg}\\cdot\\text{m/s}$.",
+      "answer": 9.32,
+      "unit": "10⁻²⁴ kg·m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-4-L1-03",
+      "level": 1,
+      "text": "The momentum of a photon is $3.60 \\cdot 10^{-27}\\,\\text{kg}\\cdot\\text{m/s}$. What is the wavelength of the photon? Give the answer in nanometres.",
+      "answer": 184,
+      "unit": "nm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-4-L1-04",
+      "level": 1,
+      "text": "The momentum of a photon is $2.00 \\cdot 10^{-27}\\,\\text{kg}\\cdot\\text{m/s}$. What is the energy of the photon? Give the answer in units of $10^{-19}\\,\\text{J}$.",
+      "answer": 6.0,
+      "unit": "10⁻¹⁹ J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-4-L1-05",
+      "level": 1,
+      "text": "A laser of power $1.0\\,\\text{mW}$ emits photons, each of energy $3.14 \\cdot 10^{-19}\\,\\text{J}$. How many photons does the laser emit per second? Give the answer in units of $10^{15}\\,\\tfrac{1}{\\text{s}}$.",
+      "answer": 3.18,
+      "unit": "10¹⁵ 1/s",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy8-4-L2-01",
+      "level": 2,
+      "text": "An X-ray photon of wavelength $0.0711\\,\\text{nm}$ scatters from an almost free electron in graphite. The wavelength of the scattered photon is $0.0735\\,\\text{nm}$. How much kinetic energy does the electron receive? Give the answer in electronvolts.",
+      "answer": 569.5,
+      "unit": "eV",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-4-L2-02",
+      "level": 2,
+      "text": "The decay of caesium-137 produces a gamma photon of energy $662\\,\\text{keV}$. What is the momentum of the photon? Give the answer in units of $10^{-22}\\,\\text{kg}\\cdot\\text{m/s}$.",
+      "answer": 3.54,
+      "unit": "10⁻²² kg·m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-4-L2-03",
+      "level": 2,
+      "text": "The wavelength of infrared light travelling in an optical fibre is $1550\\,\\text{nm}$. A photon hits a mirror perpendicularly and is reflected straight back. How much momentum does the mirror receive from one photon? Give the answer in units of $10^{-28}\\,\\text{kg}\\cdot\\text{m/s}$.",
+      "answer": 8.55,
+      "unit": "10⁻²⁸ kg·m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-4-L2-04",
+      "level": 2,
+      "text": "A sensitive light detector counts $2.40 \\cdot 10^{4}$ photons per second. The wavelength of the light is $550\\,\\text{nm}$. What is the power of the light arriving at the detector? Give the answer in units of $10^{-15}\\,\\text{W}$.",
+      "answer": 8.67,
+      "unit": "10⁻¹⁵ W",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy8-4-L3-01",
+      "level": 3,
+      "text": "In laser cooling, laser light of wavelength $589\\,\\text{nm}$ is directed against a sodium atom. The atom absorbs one photon at a time, and each photon reduces the momentum of the atom by the momentum of the photon. The mass of the sodium atom is $3.82 \\cdot 10^{-26}\\,\\text{kg}$, and its initial speed is $3.00 \\cdot 10^{2}\\,\\text{m/s}$. How many photons must the atom absorb to stop? Assume that all the photons come straight against it, and ignore the effect of the photons re-emitted by the atom, because they leave in random directions. Give the answer in units of $10^{4}$.",
+      "answer": 1.02,
+      "unit": "10⁴",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-4-L3-02",
+      "level": 3,
+      "text": "An X-ray photon of wavelength $0.0500\\,\\text{nm}$ scatters from an almost free electron. The electron receives the kinetic energy $1.00\\,\\text{keV}$. What is the wavelength of the scattered photon? Give the answer in nanometres to four decimal places.",
+      "answer": 0.0521,
+      "unit": "nm",
+      "tolerance": 0.002
+    },
+    {
+      "id": "fy8-4-L3-03",
+      "level": 3,
+      "text": "A hydrogen atom at rest moves from the energy level $n = 3$ to the level $n = 2$ and emits a photon. The energy levels of hydrogen are $E_n = -\\tfrac{13.6\\,\\text{eV}}{n^2}$. The atom receives a momentum equal in magnitude to that of the photon and in the opposite direction, that is, a recoil. What is the speed of the atom after the photon has left? The mass of a hydrogen atom is $1.67 \\cdot 10^{-27}\\,\\text{kg}$. Give the answer in metres per second.",
+      "answer": 0.604,
+      "unit": "m/s",
+      "tolerance": 0.02
+    }
+  ]
+}

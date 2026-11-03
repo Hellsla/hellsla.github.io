@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Name one phenomenon in which light behaves like a wave, and one in which it behaves like a particle.",
+    "a": "Like a wave: the fringe pattern of the double-slit experiment, that is, interference (also diffraction). Like a particle: the photoelectric effect, the Compton effect or the single hits of weak light on a screen."
+  },
+  {
+    "q": "Which photon has the greater momentum: that of red light ($700\\,\\text{nm}$) or that of blue light ($450\\,\\text{nm}$)? Justify your answer.",
+    "a": "That of blue light. The momentum of a photon is $p = \\tfrac{h}{\\lambda}$, so a shorter wavelength gives a greater momentum: the momentum of the blue photon is $700 : 450 \\approx 1.6$ times as large."
+  }
+]

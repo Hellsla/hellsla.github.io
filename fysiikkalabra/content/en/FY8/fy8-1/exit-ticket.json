@@ -1,0 +1,10 @@
+[
+  {
+    "q": "The frequency of radiation is $1.0 \\cdot 10^{15}\\,\\text{Hz}$. What is the energy of one photon?",
+    "a": "$E = hf = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s} \\cdot 1.0 \\cdot 10^{15}\\,\\tfrac{1}{\\text{s}} = 6.6 \\cdot 10^{-19}\\,\\text{J}$, or about $4.1\\,\\text{eV}$."
+  },
+  {
+    "q": "A sodium plate ($W = 2.28\\,\\text{eV}$) is illuminated with yellow light, $\\lambda = 590\\,\\text{nm}$, and no electrons are released. Which helps: making the yellow light brighter or changing to blue light, $\\lambda = 470\\,\\text{nm}$? Why?",
+    "a": "Blue light. One electron receives the energy of one photon, and the photon energy of yellow light, $2.10\\,\\text{eV}$, is smaller than the work function, so making it brighter only brings more photons that are too weak. The photon energy of blue light, $2.64\\,\\text{eV}$, is greater than $2.28\\,\\text{eV}$, so electrons are released. The frequency decides whether electrons are released; making light of the same colour brighter only increases their number once they are released."
+  }
+]

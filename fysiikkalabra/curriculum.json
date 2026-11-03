@@ -2212,6 +2212,29 @@
       "Eettisyys ja ympäristöosaaminen",
       "Globaali- ja kulttuuriosaaminen"
     ],
+    "initialized": "2026-11-03",
+    "themes": [
+      {
+        "title": "Kvantittuminen ja atomi",
+        "first": "fy8-1"
+      },
+      {
+        "title": "Kvanttiteknologia",
+        "first": "fy8-6"
+      },
+      {
+        "title": "Atomiydin ja ydinenergia",
+        "first": "fy8-8"
+      },
+      {
+        "title": "Säteily ja ihminen",
+        "first": "fy8-12"
+      },
+      {
+        "title": "Hiukkaset ja maailmankaikkeus",
+        "first": "fy8-15"
+      }
+    ],
     "lessons": [
       {
         "id": "fy8-1",
@@ -2219,7 +2242,7 @@
         "goals": [
           "LOPS FY8: energian kvantittuminen aineen ja säteilyn vuorovaikutuksessa",
           "LOPS FY8: fotoni sähkömagneettisen säteilykentän kvanttina",
-          "Täsmennys: valosähköinen ilmiö esimerkkinä ilmiöstä, jonka selittäminen edellyttää kvantittumista"
+          "Täsmennys: valosähköinen ilmiö esimerkkinä ilmiöstä, jonka selittäminen edellyttää kvantittumista; fotonin energia E = hf"
         ],
         "prerequisites": [],
         "sim": true,
@@ -2233,11 +2256,12 @@
       },
       {
         "id": "fy8-2",
-        "title": "Atomien spektrit ja energian kvantittuminen",
+        "title": "Spektrit paljastavat atomin energiatasot",
         "goals": [
           "LOPS FY8: energian kvantittuminen aineen ja säteilyn vuorovaikutuksessa",
           "Kokeellisesti: spektrin mittaaminen; spektrin muutoksen tarkastelu fluoresenssi-ilmiössä",
-          "Täsmennys: energiatilat ymmärretään elektroniverhon kvantittuneiksi tiloiksi emissio- ja absorptiospektreistä"
+          "Täsmennys: energiatilat ymmärretään elektroniverhon kvantittuneiksi tiloiksi emissio- ja absorptiospektreistä",
+          "Temaattinen yhteys (valinnainen laatikko): kasvihuonekaasujen absorptio ja ilmastonmuutos"
         ],
         "prerequisites": [
           "fy8-1"
@@ -2253,271 +2277,264 @@
       },
       {
         "id": "fy8-3",
-        "title": "Bohrin malli ja aaltomekaaninen atomimalli",
+        "title": "Vetyatomin energiatasot ja Bohrin malli",
         "goals": [
           "LOPS FY8: atomin rakenne, atomin elektronien kvanttitilat ja aaltomekaanisen atomimallin periaate",
-          "Täsmennys: elektronin tilat seisovien aaltojen kautta ja todennäköisyystulkinta; orbitaali alueena, jossa todennäköisyys ylittää kynnysarvon; de Broglie -aaltoja ei tarvitse käsitellä"
+          "Täsmennys: vetyatomin energiatasot ytimen kentässä, siirtymät ja spektriviivat; Bohrin malli historiallisena välivaiheena"
         ],
         "prerequisites": [
           "fy8-2"
         ],
         "sim": true,
         "glossary": [
-          "Bohrin malli",
-          "kvanttitila",
-          "pääkvanttiluku",
-          "orbitaali",
-          "aaltomekaaninen atomimalli"
-        ]
-      },
-      {
-        "id": "fy8-13",
-        "title": "Hiukkasten aaltoluonne ja de Broglien aallonpituus",
-        "goals": [
-          "LOPS FY8: atomin rakenne, atomin elektronien kvanttitilat ja aaltomekaanisen atomimallin periaate",
-          "Täsmennys: elektronidiffraktio, de Broglien aallonpituus ja aaltomekaanisen mallin perusta"
-        ],
-        "prerequisites": [
-          "fy8-1",
-          "fy8-3"
-        ],
-        "sim": false,
-        "glossary": [
-          "de Broglien aallonpituus",
-          "elektronidiffraktio"
+          "perustila",
+          "viritystila",
+          "ionisaatioenergia",
+          "Bohrin malli"
         ]
       },
       {
         "id": "fy8-4",
-        "title": "Laser ja kvanttirakenteet",
+        "title": "Valo ja elektroni aaltoina ja hiukkasina",
         "goals": [
-          "LOPS FY8: kvantittumiseen perustuva teknologia: laser ja kvanttirakenteet",
-          "LOPS FY8: ymmärtää kvantittumiseen perustuvan teknologian merkityksen nyky-yhteiskunnassa",
-          "Täsmennys: nanomittakaavan rakenteet sovellusten, kuten aurinkokennojen ja kvanttitietokoneiden, kautta"
+          "LOPS FY8: fotoni sähkömagneettisen säteilykentän kvanttina",
+          "Täsmennys: fotonia käsitellään eri mallien kautta (kentän tila, kentän kvantti, kvanttihiukkanen, vuorovaikutuksen välittäjä); Comptonin ilmiö; kaksoisrakokoe yksittäisillä fotoneilla ja elektroneilla. De Broglien aallonpituutta ei käsitellä (opettajan päätös 2026-11-03)"
         ],
         "prerequisites": [
           "fy8-3"
         ],
-        "sim": false,
+        "sim": true,
         "glossary": [
-          "laser",
-          "stimuloitu emissio",
-          "kvanttirakenne",
-          "aurinkokenno",
-          "kvanttitietokone"
-        ]
-      },
-      {
-        "id": "fy8-14",
-        "title": "LED, laserdiodi ja Planckin vakio",
-        "goals": [
-          "LOPS FY8: kvantittumiseen perustuva teknologia: laser ja kvanttirakenteet",
-          "Kokeellisesti: mittaukset laser-diodeilla",
-          "Täsmennys: kynnysjännite ja aallonpituus, fotonin energia ja Planckin vakion määrittäminen mittausaineistosta"
-        ],
-        "prerequisites": [
-          "fy8-1",
-          "fy8-4"
-        ],
-        "sim": false,
-        "glossary": [
-          "fotoni",
-          "Planckin vakio",
-          "LED"
+          "aalto-hiukkasdualismi",
+          "Comptonin ilmiö",
+          "kaksoisrakokoe"
         ]
       },
       {
         "id": "fy8-5",
-        "title": "Atomiytimen rakenne ja radioaktiivinen hajoaminen",
+        "title": "Aaltomekaaninen atomimalli ja orbitaalit",
         "goals": [
-          "LOPS FY8: atomiytimen rakenne ja muutokset, radioaktiivinen hajoaminen",
-          "Täsmennys: ytimen kvantittuneet energiatilat tunnistetaan gammahajoamisen spektrin kautta"
+          "LOPS FY8: atomin rakenne, atomin elektronien kvanttitilat ja aaltomekaanisen atomimallin periaate",
+          "Täsmennys: elektronin tilat seisovien aaltojen kautta ja todennäköisyystulkinta; orbitaali alueena, jossa todennäköisyys ylittää kynnysarvon; yhteys kemian orbitaaleihin"
         ],
         "prerequisites": [
-          "fy8-2"
+          "fy8-4"
         ],
         "sim": true,
         "glossary": [
-          "ydin",
-          "nukleoni",
-          "isotooppi",
-          "alfahajoaminen",
-          "beetahajoaminen",
-          "gammahajoaminen"
+          "aaltomekaaninen atomimalli",
+          "orbitaali",
+          "todennäköisyystulkinta"
         ]
       },
       {
         "id": "fy8-6",
-        "title": "Hajoamislaki ja puoliintumisaika",
+        "title": "LEDin valo ja Planckin vakion mittaaminen",
         "goals": [
-          "LOPS FY8: hajoamislaki",
-          "Taidot: eksponenttifunktion sovittaminen"
+          "LOPS FY8: fotoni sähkömagneettisen säteilykentän kvanttina",
+          "Kokeellisesti: mittaukset laser-diodeilla; spektrejä vertaileva mittaus laserdiodilla ja muilla valonlähteillä",
+          "Täsmennys: kynnysjännite ja aallonpituus, fotonin energia ja Planckin vakion määrittäminen mittausaineistosta"
         ],
         "prerequisites": [
           "fy8-5"
+        ],
+        "sim": true,
+        "glossary": [
+          "valodiodi",
+          "laserdiodi",
+          "kynnysjännite"
+        ]
+      },
+      {
+        "id": "fy8-7",
+        "title": "Laser ja kvanttirakenteet",
+        "goals": [
+          "LOPS FY8: kvantittumiseen perustuva teknologia: laser ja kvanttirakenteet",
+          "Täsmennys: laserin toiminta (stimuloitu emissio, populaatioinversio); kvanttirakenteet nanomittakaavan rakenteina sovellusten, kuten aurinkokennojen ja kvanttitietokoneiden, kautta; tunneloituminen valinnaisena"
+        ],
+        "prerequisites": [
+          "fy8-6"
+        ],
+        "sim": true,
+        "glossary": [
+          "laser",
+          "stimuloitu emissio",
+          "kvanttipiste",
+          "kvanttirakenne"
+        ]
+      },
+      {
+        "id": "fy8-8",
+        "title": "Atomiydin ja radioaktiivinen hajoaminen",
+        "goals": [
+          "LOPS FY8: atomiytimen rakenne ja muutokset, radioaktiivinen hajoaminen",
+          "Täsmennys: ytimen kvantittuneet energiatilat tunnistetaan gammahajoamisen spektrin kautta analogisesti atomin energiatasojen kanssa; alfa-, beeta- ja gammahajoaminen ja hajoamisyhtälöt"
+        ],
+        "prerequisites": [
+          "fy8-7"
+        ],
+        "sim": true,
+        "glossary": [
+          "nukleoni",
+          "isotooppi",
+          "alfahajoaminen",
+          "beetahajoaminen",
+          "gammasäteily"
+        ]
+      },
+      {
+        "id": "fy8-9",
+        "title": "Hajoamislaki ja puoliintumisaika",
+        "goals": [
+          "LOPS FY8: hajoamislaki",
+          "TVT: eksponenttifunktion sovittaminen mittausaineistoon",
+          "Täsmennys: aktiivisuus, hajoamisvakio ja puoliintumisaika; hajoamisen satunnaisuus"
+        ],
+        "prerequisites": [
+          "fy8-8"
         ],
         "sim": true,
         "glossary": [
           "hajoamislaki",
           "puoliintumisaika",
           "aktiivisuus",
-          "hajoamisvakio",
-          "becquerel"
+          "hajoamisvakio"
         ]
       },
       {
-        "id": "fy8-7",
-        "title": "Massan ja energian ekvivalenssi ja ytimen sidosenergia",
+        "id": "fy8-10",
+        "title": "Massavaje ja ytimen sidosenergia",
         "goals": [
           "LOPS FY8: ydinreaktiot, massan ja energian ekvivalenssi, ytimen sidosenergia",
-          "Täsmennys: massan ja energian ekvivalenssia tarkastellaan ydinreaktion yhteydessä ja sidosenergiaan liittyen"
+          "Täsmennys: massan ja energian ekvivalenssia tarkastellaan ydinreaktion yhteydessä ja sidosenergiaan liittyen; reaktioenergia massoista"
         ],
         "prerequisites": [
-          "fy8-5"
+          "fy8-9"
         ],
         "sim": true,
         "glossary": [
           "massavaje",
           "sidosenergia",
           "ydinreaktio",
-          "atomimassayksikkö",
-          "E = mc²"
+          "atomimassayksikkö"
         ]
       },
       {
-        "id": "fy8-8",
+        "id": "fy8-11",
         "title": "Fissio, fuusio ja ydinvoima",
         "goals": [
           "LOPS FY8: ydinvoima, fissio ja fuusio",
-          "Laaja-alainen: yhteiskunnallinen keskustelu ydinvoimasta fysiikan näkökulmasta"
+          "Laaja-alainen: yhteiskunnallinen keskustelu ydinvoimasta fysiikan näkökulmasta; Suomen ydinvoimalat ja loppusijoitus"
         ],
         "prerequisites": [
-          "fy8-7"
+          "fy8-10"
         ],
         "sim": true,
         "glossary": [
           "fissio",
           "fuusio",
           "ketjureaktio",
-          "ydinreaktori",
-          "ydinpolttoaine"
-        ]
-      },
-      {
-        "id": "fy8-9",
-        "title": "Ionisoiva säteily: lajit, läpäisykyky ja biologiset vaikutukset",
-        "goals": [
-          "LOPS FY8: ionisoivan säteilyn lajit ja biologiset vaikutukset",
-          "LOPS FY8: tuntee ionisoivan säteilyn vaikutukset ja tutustuu säteilyn turvalliseen käyttöön",
-          "Täsmennys: biologisia vaikutuksia tarkastellaan fysikaalisten vaikutusten (ionisaatio ja energian siirto) kautta"
-        ],
-        "prerequisites": [
-          "fy8-5"
-        ],
-        "sim": true,
-        "glossary": [
-          "ionisoiva säteily",
-          "läpäisykyky",
-          "annos",
-          "sievert",
-          "säteilysuojelu"
-        ]
-      },
-      {
-        "id": "fy8-15",
-        "title": "Säteilyturvallisuus ja säteilyannos",
-        "goals": [
-          "LOPS FY8: ionisoivan säteilyn lajit ja biologiset vaikutukset sekä soveltaminen lääketieteessä ja teknologiassa",
-          "Temaattinen tarkastelu: säteilyturvallisuus",
-          "Täsmennys: annos ja efektiivinen annos, taustasäteily Suomessa, suojautuminen etäisyydellä, ajalla ja suojalla"
-        ],
-        "prerequisites": [
-          "fy8-9"
-        ],
-        "sim": false,
-        "glossary": [
-          "säteilyannos",
-          "taustasäteily",
-          "sievert"
-        ]
-      },
-      {
-        "id": "fy8-10",
-        "title": "Säteilyn sovellukset lääketieteessä ja teknologiassa",
-        "goals": [
-          "LOPS FY8: ionisoivan säteilyn soveltaminen lääketieteessä ja teknologiassa",
-          "Temaattinen tarkastelu: säteilyn käyttö lääketieteessä, diagnostiikka ja hoito; potilaan ja henkilökunnan turvallisuus",
-          "Laaja-alainen: hyvinvointiosaaminen"
-        ],
-        "prerequisites": [
-          "fy8-9"
-        ],
-        "sim": false,
-        "glossary": [
-          "röntgenkuvaus",
-          "sädehoito",
-          "isotooppikuvaus",
-          "merkkiaine"
-        ]
-      },
-      {
-        "id": "fy8-11",
-        "title": "Hiukkasfysiikan standardimalli",
-        "goals": [
-          "LOPS FY8: hiukkasfysiikan standardimalli",
-          "Täsmennys: perusvuorovaikutukset ja perushiukkaset"
-        ],
-        "prerequisites": [
-          "fy8-7"
-        ],
-        "sim": false,
-        "glossary": [
-          "standardimalli",
-          "kvarkki",
-          "leptoni",
-          "perusvuorovaikutus",
-          "välittäjähiukkanen"
+          "ydinreaktori"
         ]
       },
       {
         "id": "fy8-12",
-        "title": "Maailmankaikkeuden kehitys",
+        "title": "Ionisoiva säteily ja elimistö",
         "goals": [
-          "LOPS FY8: maailmankaikkeuden kehitys",
-          "LOPS FY8: tutustuu kvanttifysiikkaan perustuvaan maailmankuvaan alkeishiukkasfysiikasta kosmologiaan",
-          "Täsmennys: pääpiirteittäin kehityskulku alkuräjähdyksestä nykyhetkeen sekä pimeän aineen ja energian merkitys"
+          "LOPS FY8: ionisoivan säteilyn lajit ja biologiset vaikutukset sekä soveltaminen lääketieteessä ja teknologiassa",
+          "Täsmennys: biologisia vaikutuksia tarkastellaan fysikaalisten vaikutusten (ionisaatio ja energian siirto) kautta; säteilylajien läpäisykyky ja havaitseminen"
         ],
         "prerequisites": [
           "fy8-11"
         ],
         "sim": true,
         "glossary": [
-          "alkuräjähdys",
-          "kosminen taustasäteily",
-          "pimeä aine",
-          "pimeä energia",
-          "maailmankaikkeuden laajeneminen"
+          "ionisoiva säteily",
+          "läpäisykyky",
+          "ionisaatio",
+          "Geiger-Müller-putki"
+        ]
+      },
+      {
+        "id": "fy8-13",
+        "title": "Säteilyannos ja säteilyturvallisuus Suomessa",
+        "goals": [
+          "LOPS FY8: ionisoivan säteilyn lajit ja biologiset vaikutukset sekä soveltaminen lääketieteessä ja teknologiassa",
+          "Temaattinen tarkastelu: säteilyturvallisuus",
+          "Täsmennys: annos ja efektiivinen annos, taustasäteily ja radon Suomessa, suojautuminen etäisyydellä, ajalla ja suojalla"
+        ],
+        "prerequisites": [
+          "fy8-12"
+        ],
+        "sim": true,
+        "glossary": [
+          "absorboitunut annos",
+          "efektiivinen annos",
+          "taustasäteily",
+          "radon"
+        ]
+      },
+      {
+        "id": "fy8-14",
+        "title": "Säteily lääketieteessä ja teknologiassa",
+        "goals": [
+          "LOPS FY8: ionisoivan säteilyn lajit ja biologiset vaikutukset sekä soveltaminen lääketieteessä ja teknologiassa",
+          "Temaattinen tarkastelu: säteilyn käyttö lääketieteessä, diagnostiikka ja hoito; potilaan ja henkilökunnan turvallisuus",
+          "Laaja-alainen: hyvinvointiosaaminen"
+        ],
+        "prerequisites": [
+          "fy8-13"
+        ],
+        "sim": false,
+        "glossary": [
+          "röntgensäteily",
+          "merkkiaine",
+          "sädehoito"
+        ]
+      },
+      {
+        "id": "fy8-15",
+        "title": "Standardimalli: perushiukkaset ja vuorovaikutukset",
+        "goals": [
+          "LOPS FY8: hiukkasfysiikan standardimalli",
+          "Täsmennys: perusvuorovaikutukset ja perushiukkaset; fotoni sähkömagneettisen vuorovaikutuksen välittäjähiukkasena"
+        ],
+        "prerequisites": [
+          "fy8-14"
+        ],
+        "sim": false,
+        "glossary": [
+          "standardimalli",
+          "kvarkki",
+          "leptoni",
+          "välittäjähiukkanen",
+          "perusvuorovaikutus"
         ]
       },
       {
         "id": "fy8-16",
-        "title": "Ilmastonmuutos ja kasvihuoneilmiö säteilyn kannalta",
+        "title": "Maailmankaikkeuden kehitys",
         "goals": [
-          "LOPS FY8: energian kvantittuminen aineen ja säteilyn vuorovaikutuksessa",
-          "Temaattinen tarkastelu: ilmastonmuutos ja kasvihuoneilmiö",
-          "Täsmennys: kasvihuonekaasujen absorptiokaistat, Auringon ja Maan säteilyn spektrit, säteilytasapaino (jatkaa fy3-12:ta)"
+          "LOPS FY8: maailmankaikkeuden kehitys",
+          "Täsmennys: pääpiirteittäin kehityskulku alkuräjähdyksestä nykyhetkeen sekä pimeän aineen ja energian merkitys"
         ],
         "prerequisites": [
-          "fy8-2",
-          "fy3-12"
+          "fy8-15"
         ],
-        "sim": false,
+        "sim": true,
         "glossary": [
-          "kasvihuoneilmiö",
-          "absorptio",
-          "spektri"
+          "alkuräjähdys",
+          "kosminen taustasäteily",
+          "pimeä aine",
+          "pimeä energia"
         ]
       }
+    ],
+    "scope_notes": [
+      "Plan approved by the teacher 2026-11-03 (16 chapters from LOPS 2021 and the MAOL täsmennykset only; no commercial textbook or timetable structure). The climate-change link is an optional box in chapter 2 (absorption bands), not its own chapter; the de Broglie wavelength is not taught at all (teacher 2026-11-03).",
+      "Photon energy E = hf, h = 6,626·10^-34 Js; electronvolt allowed with conversion shown by substitution. Hydrogen levels E_n = -13,6 eV / n^2 given as data, not derived. No Schrödinger equation; the wave-mechanical model is qualitative (standing waves, probability, orbital as a threshold region).",
+      "Decay law N = N0 (1/2)^(t/T½) and N = N0 e^(-λt) with A = λN; exponential fitting done with Graphical Analysis-style data (TVT). Binding energy and reaction energy from atomic masses in u with c^2; 1 u = 931,5 MeV/c^2.",
+      "Doses: absorbed dose Gy, effective dose Sv; Finnish figures from STUK with source and year. Old FY08_*.html simulations in the site root (valosahkoinen, spektri, bohr, kaksoisrako, tunneloituminen, alfahajoaminen, beetahajoaminen, fissio, fuusio, geiger, lapaisykyky) are starting points for ideas only; new sims follow the house rules (LaTeX labels, speed control, assets/sims/fy8/)."
     ]
   }
 }

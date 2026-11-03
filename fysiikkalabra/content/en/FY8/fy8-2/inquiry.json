@@ -1,0 +1,423 @@
+{
+  "version": 1,
+  "contribution": "Spectra are explained by the quantised energy states of the atom: emission and absorption lines are at the same wavelengths, because both correspond to the same difference between states, $hf = E_\\text{u} - E_\\text{l}$; in addition fluorescence as conservation of energy and, as an option, the infrared absorption of greenhouse gases.",
+  "learn": [
+    "explain why the emission and absorption spectra of a gas have lines at the same wavelengths.",
+    "calculate the wavelength of a spectral line from the difference between energy states, and the difference from the wavelength of the line.",
+    "identify an element from its spectral lines and explain fluorescence with energy states."
+  ],
+  "prior": [
+    "The energy of a photon is $E = hf = \\tfrac{hc}{\\lambda}$, so a shorter wavelength means a greater energy (chapter *The photoelectric effect and the photon*)",
+    "The electronvolt is a unit of energy: $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$ (chapter *The photoelectric effect and the photon*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "When sunlight is directed through a narrow slit and a prism or a grating, it forms a band of rainbow colours. Looked at closely, hundreds of narrow dark lines cross the band. The same lines appear every day in the same places, and some of them are exactly where hot hydrogen gas or sodium vapour in the laboratory emits bright light.",
+      "question": "Why are certain wavelengths missing from the light of the Sun, and why exactly the wavelengths that a hot gas emits?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Review: the energy of a photon",
+      "prompt": "The wavelength of red light is $650\\,\\text{nm}$ and that of violet light $410\\,\\text{nm}$. Which statement about their photons is correct?",
+      "choices": [
+        {
+          "text": "The photon of violet light has the greater energy, because a shorter wavelength means a higher frequency.",
+          "correct": true,
+          "feedback": "Correct. The energy of a photon is $E = hf = \\tfrac{hc}{\\lambda}$ (chapter *The photoelectric effect and the photon*): the energy of a violet photon is about $3.02\\,\\text{eV}$ and that of a red photon about $1.91\\,\\text{eV}$. Today we will see that an atom emits only photons of certain energies."
+        },
+        {
+          "text": "The photon of red light has the greater energy, because its wavelength is longer.",
+          "feedback": "The energy is inversely proportional to the wavelength: $E = \\tfrac{hc}{\\lambda}$ (chapter *The photoelectric effect and the photon*). A longer wavelength means a lower frequency and a lower energy, so the energy of a red photon is only about $1.91\\,\\text{eV}$."
+        },
+        {
+          "text": "The photons have the same energy, because both are visible light and travel at the same speed.",
+          "feedback": "All photons travel in a vacuum at the speed of light, but the energy depends on the frequency: $E = hf$. The frequency of violet light is higher, so the energy of its photon is greater."
+        },
+        {
+          "text": "The energy depends on the intensity of the light, not on the colour, so the photons cannot be compared.",
+          "feedback": "Intensity tells the number of photons, not the energy of a single photon (chapter *The photoelectric effect and the photon*). The energy of one photon is $E = hf$, so the colour, that is the frequency, decides it."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: the lines to level 2",
+      "prompt": "The energy of the electron shell of an atom can have only certain values. These states are called energy states or energy levels, and the lowest of them is the ground state. In hot hydrogen gas the atoms move to level $n = 2$ from the higher levels $n = 3$, $4$, $5$ and $6$, and every transition emits a photon. How do the wavelengths of the photons change as the starting level is higher and higher?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 3
+      },
+      "choices": [
+        {
+          "text": "The wavelength gets shorter, and the gaps between successive lines get smaller.",
+          "correct": true,
+          "feedback": "The values of the model support this: $656\\,\\text{nm}$, $486\\,\\text{nm}$, $434\\,\\text{nm}$ and $410\\,\\text{nm}$. The gaps are $170\\,\\text{nm}$, $52\\,\\text{nm}$ and $24\\,\\text{nm}$. A higher starting level gives a greater energy difference and therefore a shorter wavelength, but because the highest levels are close together, the energy difference grows less and less, and the lines crowd together near the violet end."
+        },
+        {
+          "text": "The wavelength gets longer, because the electron falls a longer distance.",
+          "feedback": "The values of the model refute this: the wavelengths get shorter, $656\\,\\text{nm}$ → $486\\,\\text{nm}$ → $434\\,\\text{nm}$ → $410\\,\\text{nm}$. A greater energy difference $E_\\text{u} - E_\\text{l}$ means a greater photon energy $\\tfrac{hc}{\\lambda}$ and therefore a *shorter* wavelength."
+        },
+        {
+          "text": "The wavelength gets shorter in equal steps, because the starting level rises by one each time.",
+          "feedback": "The wavelength gets shorter, but the gaps are not equal: $170\\,\\text{nm}$, $52\\,\\text{nm}$ and $24\\,\\text{nm}$. The levels are not equally spaced; the highest ones are closer and closer together, so the energy difference grows less and less."
+        },
+        {
+          "text": "The wavelength stays the same, because all the transitions end at the same level.",
+          "feedback": "The values of the model refute this: there are four lines at different wavelengths. The energy of a photon is the difference between *two* levels, so the starting level affects it just as much as the final level."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: cold hydrogen gas",
+      "prompt": "In hydrogen gas at room temperature almost all atoms are in the ground state $n = 1$. White light that also contains ultraviolet is passed through such a gas. Where are the dark lines of the absorption spectrum?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-2",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "Only in the ultraviolet range; there are no dark lines in the visible range.",
+          "correct": true,
+          "feedback": "The values of the model support this: transitions from level $1$ to levels $2$–$6$ require photons of $122\\,\\text{nm}$, $103\\,\\text{nm}$, $97\\,\\text{nm}$, $95\\,\\text{nm}$ and $94\\,\\text{nm}$. The nearest level is $10.2\\,\\text{eV}$ above the ground state, but the energy of photons of visible light is only about $1.7$–$3.3\\,\\text{eV}$. Therefore cold hydrogen gas is transparent to visible light."
+        },
+        {
+          "text": "In the same places as the four visible bright lines of hot hydrogen gas.",
+          "feedback": "The values of the model refute this: the visible lines are formed in transitions to level $n = 2$, and the corresponding photons can be absorbed only by an atom that is already at level $2$. Absorptions starting from the ground state require ultraviolet, $94$–$122\\,\\text{nm}$. The dark visible lines of hydrogen are formed only in a gas so hot, such as the atmospheres of stars, that some of the atoms are at level $2$ already."
+        },
+        {
+          "text": "Nowhere, because the spectrum only dims evenly as the gas shades the light.",
+          "feedback": "The values of the model refute this: an atom absorbs only photons whose energy is exactly the difference between two levels, so dark lines appear in the spectrum at certain wavelengths ($122\\,\\text{nm}$, $103\\,\\text{nm}$ …). The other wavelengths pass through the gas without weakening."
+        },
+        {
+          "text": "Everywhere in the spectrum, because a cold gas absorbs more than a hot one.",
+          "feedback": "The values of the model refute this: a cold gas absorbs only the wavelengths of transitions starting from the ground state, which are all ultraviolet ($94$–$122\\,\\text{nm}$). Coldness does not increase absorption: a gas absorbs only transitions that start from states in which its atoms are, and in cold hydrogen the atoms are in the ground state."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Choose two energy levels of the hydrogen atom and the mode. Observe what kind of photon is emitted or absorbed and where its line appears in the spectrum.",
+      "howto": "Choose the *Mode*: *emission* means hot hydrogen gas in which an atom moves from a higher level to a lower one and emits a photon into the spectroscope; *absorption* means white light from a lamp passing through hydrogen gas, in which an atom absorbs a photon and moves from a lower level to a higher one. The lower level $n_\\text{l} = 1$ corresponds to a cold gas; a greater $n_\\text{l}$ corresponds to a hot gas, such as the atmosphere of a star. Choose the *Upper level* $n_\\text{u}$ and the *Lower level* $n_\\text{l}$. In the energy-level diagram an arrow shows the transition and a blue dot the state of the electron shell. In the spectrum below, a line remains from every transition you try in the same mode: in emission a bright line on a dark background, in absorption a dark line in a continuous spectrum. The triangle under a line marks the selected transition. Ultraviolet and infrared lines are drawn in grey, because the eye cannot see them. *Clear spectrum* removes the lines. *Speed* changes only the pace of the animation.",
+      "model": "The energy levels of the hydrogen atom are $E_n = -\\tfrac{13.6\\,\\text{eV}}{n^2}$, where $n = 1, 2, \\ldots, 6$; they are measured values, and their origin is discussed in the chapter *The energy levels of the hydrogen atom and the Bohr model*. The model shows one transition of one atom at a time; in a real gas billions of atoms make all possible transitions at the same time, and the brightness of the lines depends on how often each transition occurs. The model does not describe brightness. In a cold gas practically all atoms are in the ground state $n = 1$; in the model you can nevertheless choose another lower level for absorption, which corresponds to a hot gas, such as the atmosphere of a star. The wavelengths are values calculated by the model.",
+      "calc": "The energy of a photon is the difference between the levels, $\\Delta E = E_\\text{u} - E_\\text{l}$. The wavelength is $\\lambda = \\tfrac{hc}{\\Delta E}$, where $h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^8\\,\\text{m/s}$ and $\\Delta E$ is converted to joules with the factor $1.602 \\cdot 10^{-19}\\,\\tfrac{\\text{J}}{\\text{eV}}$. The scale of the spectrum is $80$–$900\\,\\text{nm}$; visible light is between the dashed lines, $380$–$750\\,\\text{nm}$. An infrared line above $900\\,\\text{nm}$ is shown as an arrow at the right edge of the scale."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 1: transitions to level 2",
+      "intro": "Test prediction 1. The mode is emission and the lower level is $n_\\text{l} = 2$. Change only the upper level and record the energy and the wavelength of the photon at the levels $n_\\text{u} = 3$, $4$, $5$ and $6$. At the same time, watch where in the spectrum the lines accumulate and how the gaps between them change.",
+      "initial": {
+        "tila": "emissio",
+        "na": "2",
+        "ny": "3"
+      },
+      "locked": [
+        "tila",
+        "na"
+      ],
+      "vary": "ny",
+      "names": {
+        "tila": "mode",
+        "na": "lower level $n_\\text{l}$",
+        "ny": "upper level $n_\\text{u}$"
+      },
+      "values": {
+        "tila": {
+          "emissio": "emission"
+        }
+      },
+      "measure": [
+        {
+          "key": "dE",
+          "label": "ΔE (eV)"
+        },
+        {
+          "key": "lam",
+          "label": "λ (nm)"
+        }
+      ],
+      "min": 3
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 2: absorption by a cold gas",
+      "intro": "Test prediction 2. The mode is absorption, and the atoms of the cold gas are in the ground state $n_\\text{l} = 1$. Change only the upper level and record the energy and the wavelength of the photon at least at the levels $n_\\text{u} = 2$ and $3$, and if you like also at higher ones. In which range do the dark lines appear?",
+      "initial": {
+        "tila": "absorptio",
+        "na": "1",
+        "ny": "2"
+      },
+      "locked": [
+        "tila",
+        "na"
+      ],
+      "vary": "ny",
+      "names": {
+        "tila": "mode",
+        "na": "lower level $n_\\text{l}$",
+        "ny": "upper level $n_\\text{u}$"
+      },
+      "values": {
+        "tila": {
+          "absorptio": "absorption"
+        }
+      },
+      "measure": [
+        {
+          "key": "dE",
+          "label": "ΔE (eV)"
+        },
+        {
+          "key": "lam",
+          "label": "λ (nm)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion: what decides the position of a line?",
+      "after": [
+        "koe-1",
+        "koe-2"
+      ],
+      "prompt": "Based on your tables, write: what decides where in the spectrum a line appears? Why do the lines to level $2$ crowd together towards short wavelengths? Why does cold hydrogen gas not make dark lines in the range of visible light?",
+      "model": "The position of a line is decided by the energy difference between the levels, $\\Delta E = E_\\text{u} - E_\\text{l}$: the energy of the photon is exactly this difference, and the wavelength is $\\lambda = \\tfrac{hc}{\\Delta E}$, so a greater difference gives a shorter wavelength. In experiment 1, the transitions from levels $3$–$6$ to level $2$ gave the model values $656\\,\\text{nm}$, $486\\,\\text{nm}$, $434\\,\\text{nm}$ and $410\\,\\text{nm}$; the highest levels are close together, so the energy difference grows less and less and the lines crowd together. In experiment 2, the transitions starting from the ground state required a photon of at least $10.2\\,\\text{eV}$, and the wavelengths were $94$–$122\\,\\text{nm}$, that is, ultraviolet. The energies of photons of visible light, about $1.7$–$3.3\\,\\text{eV}$, do not match any difference starting from the ground state, so cold hydrogen lets visible light through. The spacings of the levels $E_n = -\\tfrac{13.6\\,\\text{eV}}{n^2}$ were given data, so the experiment did not find them out but what they mean for the positions of the lines.",
+      "criteria": [
+        "I say that the position of a line is decided by the energy difference between two levels and not by either level alone.",
+        "I use the equation $\\lambda = \\tfrac{hc}{\\Delta E}$ and say that a greater difference gives a shorter wavelength.",
+        "I explain the crowding of the lines by the fact that the highest levels are close together.",
+        "I explain that transitions from the ground state require ultraviolet photons, because the nearest level is $10.2\\,\\text{eV}$ higher."
+      ]
+    },
+    {
+      "id": "tunnista",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Identify the gas from the spectrum",
+      "source": "statistics",
+      "source_note": "Wavelengths of the lines: NIST Atomic Spectra Database (2024), rounded to whole nanometres; only the strongest visible lines.",
+      "figure": "fy8-2/lamp-spectrum",
+      "text": "The figure shows the emission spectrum of an unknown lamp. The table gives the strongest visible lines of four elements.\n\n| Element | Lines (nm) |\n| --- | --- |\n| hydrogen | $410$, $434$, $486$, $656$ |\n| helium | $447$, $471$, $502$, $588$, $668$ |\n| sodium | $589$ |\n| mercury | $405$, $436$, $546$, $577$, $579$ |",
+      "question": {
+        "type": "choice",
+        "prompt": "Which element is in the lamp?",
+        "choices": [
+          {
+            "text": "Mercury, because all the lines of the spectrum are at wavelengths of mercury.",
+            "correct": true,
+            "feedback": "Correct. The green line at $546\\,\\text{nm}$ is a characteristic of mercury, and the yellow line at about $577$–$579\\,\\text{nm}$ is two close lines of mercury. The violet and blue lines are the $405\\,\\text{nm}$ and $436\\,\\text{nm}$ lines of mercury. An element is in the lamp if *all* its strong lines are found in the spectrum; if some line is left unexplained, there is also another element in the lamp. Here mercury explains all the lines."
+          },
+          {
+            "text": "Hydrogen, because the spectrum has a violet line at about $410\\,\\text{nm}$ and a blue one at about $434\\,\\text{nm}$.",
+            "feedback": "The strong red line $656\\,\\text{nm}$ of hydrogen is missing, and the spectrum has a green line $546\\,\\text{nm}$, which hydrogen does not have. The violet and blue lines are close to lines of hydrogen, but on a precise scale they are the $405$ and $436\\,\\text{nm}$ of mercury. All the lines of an element must match."
+          },
+          {
+            "text": "Sodium, because the spectrum has yellow lines near $589\\,\\text{nm}$.",
+            "feedback": "The spectrum has violet, blue and green lines, which sodium does not have. In addition, the yellow line is at about $577$–$579\\,\\text{nm}$, not at the $589\\,\\text{nm}$ of sodium."
+          },
+          {
+            "text": "All four, because for each element some line is near some line of the spectrum.",
+            "feedback": "Near is not enough: every element has its own exact wavelengths. If the lamp contained hydrogen, helium or sodium, their strong lines, such as $656\\,\\text{nm}$, $588\\,\\text{nm}$ or $589\\,\\text{nm}$, would be seen in the spectrum. They are missing."
+          }
+        ]
+      }
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Return to your predictions",
+      "optional": true,
+      "prompt": "Compare your predictions with the values of the model in the experiments. Then return to the question at the beginning: why exactly the wavelengths that the same gas emits when hot are missing from the light of the Sun? Why can the red line $656\\,\\text{nm}$ of hydrogen appear dark in the spectrum of the Sun, although cold hydrogen gas does not absorb visible light?",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2"
+      ]
+    },
+    {
+      "id": "kasvihuone",
+      "stage": "selita",
+      "type": "theory",
+      "title": "Greenhouse gases absorb infrared",
+      "optional": true,
+      "sections": [
+        "Kasvihuonekaasut ja infrapuna"
+      ]
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the mistake",
+      "prompt": "A student calculates the wavelength of the photon produced in the transition $n = 3 \\to 2$ of the hydrogen atom. She calculates the energy difference $\\Delta E = -1.51\\,\\text{eV} - (-3.40\\,\\text{eV}) = 1.89\\,\\text{eV}$ and then writes\n\n$$\\begin{aligned} \\lambda &= \\frac{hc}{\\Delta E} \\\\ &= \\frac{1.9865 \\cdot 10^{-25}}{1.89}\\,\\text{m} \\\\ &\\approx 1.05 \\cdot 10^{-25}\\,\\text{m} \\end{aligned}$$\n\nShe first calculated $hc = 6.626 \\cdot 10^{-34} \\cdot 2.998 \\cdot 10^{8} = 1.9865 \\cdot 10^{-25}$ in the unit $\\text{J}\\,\\text{m}$.\n\nWhere is the mistake?",
+      "choices": [
+        {
+          "text": "The energy difference was not converted to joules, although $h$ is in the unit $\\text{J}\\,\\text{s}$.",
+          "correct": true,
+          "feedback": "Correct. Substituting $\\Delta E = 1.89 \\cdot 1.602 \\cdot 10^{-19}\\,\\text{J} = 3.028 \\cdot 10^{-19}\\,\\text{J}$ gives $\\lambda \\approx 656\\,\\text{nm}$. The unit of the Planck constant is $\\text{J}\\,\\text{s}$, so the energy must be in joules for the units to cancel to metres. The result could have been seen to be wrong at once: $10^{-25}\\,\\text{m}$ is far smaller than an atomic nucleus, while the wavelength of visible light is hundreds of nanometres."
+        },
+        {
+          "text": "The energy difference is the wrong way round; it should be $-1.89\\,\\text{eV}$, because the atom loses energy.",
+          "feedback": "The energy difference $E_\\text{u} - E_\\text{l} = 1.89\\,\\text{eV}$ is correct and positive: the energy of the upper level, $-1.51\\,\\text{eV}$, is greater than that of the lower one, $-3.40\\,\\text{eV}$. The mistake is that the electronvolts were not converted to joules before substituting."
+        },
+        {
+          "text": "The formula is wrong; the correct formula is $\\lambda = \\tfrac{\\Delta E}{hc}$, because energy and wavelength increase together.",
+          "feedback": "The formula $\\lambda = \\tfrac{hc}{\\Delta E}$ is correct: a greater energy difference gives a shorter wavelength. The wrong formula would give the unit $\\tfrac{1}{\\text{m}}$. The mistake is in the unit: $\\Delta E$ was substituted in electronvolts, although $h$ is in the unit $\\text{J}\\,\\text{s}$."
+        },
+        {
+          "text": "The energies of the levels should have been added, because the photon gets energy from both levels.",
+          "feedback": "The energy of the photon is the *difference* of the levels, because energy is conserved: the energy of the atom decreases by as much as the photon takes away. The difference $1.89\\,\\text{eV}$ is correct; the mistake is that it was not converted to joules."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply to a new situation",
+      "prompt": "A fluorescent dye is illuminated with a violet flashlight whose light has a wavelength of $405\\,\\text{nm}$. The dye emits green light as fluorescence, with a wavelength of $530\\,\\text{nm}$. Assume that every absorbed photon produces one emitted photon. How much energy is left in the dye as heat for every absorbed photon? Answer in electronvolts.",
+      "answer": 0.722,
+      "unit": "eV",
+      "tolerance": 0.02,
+      "hints": [
+        "Energy is conserved: the energy of the absorbed photon is divided into the energy of the emitted photon and heat. First calculate the energy of each photon.",
+        "The energy of a photon is $E = \\tfrac{hc}{\\lambda}$. Convert the wavelengths to metres and the result to electronvolts by substituting $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$.",
+        "The energy of the violet photon is $3.062\\,\\text{eV}$ and that of the green one $2.340\\,\\text{eV}$. The heat is their difference."
+      ],
+      "mistakes": [
+        {
+          "value": 9.92,
+          "feedback": "You first subtracted the wavelengths ($530\\,\\text{nm} - 405\\,\\text{nm} = 125\\,\\text{nm}$) and only then calculated the energy. The difference of the wavelengths is not the wavelength of any photon: calculate the energy of each photon separately and subtract the energies."
+        },
+        {
+          "value": 3.06,
+          "feedback": "This is the whole energy of the absorbed violet photon. Part of it leaves as the green photon; only the difference $E_1 - E_2$ is left as heat."
+        },
+        {
+          "value": 2.34,
+          "feedback": "This is the energy of the emitted green photon. The heat asked for is the difference between the energies of the absorbed and the emitted photon."
+        },
+        {
+          "value": -0.722,
+          "feedback": "You calculated the difference the wrong way round. The energy of the absorbed violet photon is greater, so the energy left as heat, $E_1 - E_2$, is positive."
+        }
+      ],
+      "solution": "**Given:** wavelength of the absorbed photon $\\lambda_1 = 405\\,\\text{nm}$, wavelength of the emitted photon $\\lambda_2 = 530\\,\\text{nm}$, $h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$\n\n**Find:** the energy left as heat per photon, $E_\\text{heat}$, in electronvolts\n\n**Principle:** In fluorescence the molecule absorbs a violet photon and becomes excited, gives away part of the energy as heat and returns to the ground state by emitting a green photon. Energy is conserved, so the energy of the absorbed photon is the sum of the energy of the emitted photon and the heat. The energy of each photon is obtained from its wavelength.\n\n**Formula:** $E_1 = E_2 + E_\\text{heat}$ and $E = \\dfrac{hc}{\\lambda}$, so $E_\\text{heat} = \\dfrac{hc}{\\lambda_1} - \\dfrac{hc}{\\lambda_2}$\n\n**Conversions:** $405\\,\\text{nm} = 405 \\cdot 10^{-9}\\,\\text{m}$ and $530\\,\\text{nm} = 530 \\cdot 10^{-9}\\,\\text{m}$. Joules are converted to electronvolts by dividing by $1.602 \\cdot 10^{-19}\\,\\tfrac{\\text{J}}{\\text{eV}}$.\n\n**Substitution:** $hc = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s} \\cdot 2.998 \\cdot 10^{8}\\,\\text{m/s} = 1.9865 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m}$ and $E_1 = \\dfrac{1.9865 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m}}{405 \\cdot 10^{-9}\\,\\text{m}} = 4.9049 \\cdot 10^{-19}\\,\\text{J} = 3.0617\\,\\text{eV}$, $E_2 = \\dfrac{1.9865 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m}}{530 \\cdot 10^{-9}\\,\\text{m}} = 3.7481 \\cdot 10^{-19}\\,\\text{J} = 2.3396\\,\\text{eV}$ and $E_\\text{heat} = 3.0617\\,\\text{eV} - 2.3396\\,\\text{eV} = 0.7221\\,\\text{eV}$\n\n**Answer:** $0.722\\,\\text{eV}$, three significant figures like the wavelengths $405\\,\\text{nm}$ and $530\\,\\text{nm}$.\n\n**Reasonableness:** With the estimate $hc \\approx 1240\\,\\text{eV}\\,\\text{nm}$ we get $\\tfrac{1240}{405}\\,\\text{eV} \\approx 3.1\\,\\text{eV}$ and $\\tfrac{1240}{530}\\,\\text{eV} \\approx 2.3\\,\\text{eV}$, a difference of about $0.7\\,\\text{eV}$. The result is positive, as it should be: the wavelength of the emitted photon is longer, so its energy is smaller. About a quarter of the energy of the violet photon heats the dye."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise on three levels. In the tasks of level 1 the equation $hf = \\tfrac{hc}{\\lambda} = E_\\text{u} - E_\\text{l}$ is used directly, in the tasks of level 2 you first calculate the energy difference or convert units, and level 3 requires reasoning."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept",
+      "prompt": "Why does the spectrum of a hot, thin gas consist of separate lines and not of an unbroken band of colours like the spectrum of a filament?",
+      "choices": [
+        {
+          "text": "An atom has only certain energy states, so the energy of a photon can only be some difference between the states.",
+          "correct": true,
+          "feedback": "Correct. The energy of the photon produced in a transition is $hf = E_\\text{u} - E_\\text{l}$. Because there are only certain states, there are only certain differences, and each difference gives one line."
+        },
+        {
+          "text": "The gas filters most of the colours out of the light, and only a few colours get through the gas.",
+          "feedback": "In an emission spectrum the gas itself emits the light; it does not filter the light of any source. The lines are formed because an atom can emit only photons whose energy is the difference $E_\\text{u} - E_\\text{l}$ between two energy states."
+        },
+        {
+          "text": "There are so few atoms in a thin gas that they have time to emit only a few photons.",
+          "feedback": "The number of photons affects the brightness of the lines, not the place in the spectrum where they appear. Even if there were billions of atoms, all the atoms of the same element emit the same energies, because they have the same energy states."
+        },
+        {
+          "text": "The atoms of the gas move only at certain speeds, and each speed gives its own colour.",
+          "feedback": "The speeds of atoms in a gas are distributed continuously, and the colour of a line does not come from the motion of the atom. The colour is decided by the energy of the photon, which is the difference between two energy states of the electron shell."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Calculate the energy difference",
+      "prompt": "A fluorescent tube contains mercury vapour, whose spectrum has a bright green line at the wavelength $546\\,\\text{nm}$. What is the difference between the energies of the mercury atom's states in the transition that produces this light? Answer in electronvolts.",
+      "answer": 2.27,
+      "unit": "eV",
+      "tolerance": 0.02,
+      "hints": [
+        "The energy of the photon is the difference between the energies of the states.",
+        "$\\Delta E = \\tfrac{hc}{\\lambda}$, when $\\lambda$ is in metres.",
+        "The result in joules is $3.638 \\cdot 10^{-19}\\,\\text{J}$; convert it to electronvolts."
+      ],
+      "mistakes": [
+        {
+          "value": 3.64,
+          "feedback": "This is the energy in the unit $10^{-19}\\,\\text{J}$. Convert it to electronvolts: $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$."
+        },
+        {
+          "value": 0.44,
+          "feedback": "You calculated $\\tfrac{\\lambda}{hc}$ or divided the wrong way round. The energy is $\\Delta E = \\tfrac{hc}{\\lambda}$: a short wavelength gives a large energy."
+        }
+      ],
+      "solution": "**Given:** wavelength of the mercury line $\\lambda = 546\\,\\text{nm}$, $h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$\n\n**Find:** the energy difference $\\Delta E = E_\\text{u} - E_\\text{l}$ in electronvolts\n\n**Principle:** A mercury atom emits a photon when it moves from a higher energy state to a lower one. Energy is conserved, so the energy of the photon is the difference between the states, and the energy of the photon is obtained from the wavelength.\n\n**Formula:** $\\Delta E = hf$ and $f = \\tfrac{c}{\\lambda}$, so $\\Delta E = \\dfrac{hc}{\\lambda}$\n\n**Conversions:** $546\\,\\text{nm} = 546 \\cdot 10^{-9}\\,\\text{m}$. The result in joules is converted to electronvolts by dividing by $1.602 \\cdot 10^{-19}\\,\\tfrac{\\text{J}}{\\text{eV}}$.\n\n**Substitution:** $hc = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s} \\cdot 2.998 \\cdot 10^{8}\\,\\text{m/s} = 1.9865 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m}$ and $\\Delta E = \\dfrac{1.9865 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m}}{546 \\cdot 10^{-9}\\,\\text{m}} = 3.6383 \\cdot 10^{-19}\\,\\text{J} = \\dfrac{3.6383 \\cdot 10^{-19}}{1.602 \\cdot 10^{-19}}\\,\\text{eV} = 2.2711\\,\\text{eV}$\n\n**Answer:** $2.27\\,\\text{eV}$, three significant figures like the wavelength $546\\,\\text{nm}$.\n\n**Reasonableness:** With the estimate $hc \\approx 1240\\,\\text{eV}\\,\\text{nm}$ we get $\\tfrac{1240}{546}\\,\\text{eV} \\approx 2.3\\,\\text{eV}$. Green light is in the middle of the visible range, and $2.3\\,\\text{eV}$ is between the $1.9\\,\\text{eV}$ of red and the $3.0\\,\\text{eV}$ of violet."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Explain and transfer",
+      "optional": true,
+      "prompt": "Helium was discovered in 1868 in the spectrum of the Sun before it had been found on Earth: the spectrum had a yellow line at a wavelength that was not in the spectrum of any known element. Explain with energy states why this line was evidence of a new element.",
+      "model": "The atoms of every element have their own energy states, and the wavelength of a spectral line is decided by the difference between two states: $\\lambda = \\tfrac{hc}{E_\\text{u} - E_\\text{l}}$. All the atoms of the same element always produce the same lines, and the states, and therefore the lines, of different elements are different. When the spectrum of the Sun had a line that was not among the lines of any known element, it had to be produced by atoms whose energy states differ from all the known ones. Later helium gas was found also on Earth, and its spectrum had the same line.",
+      "criteria": [
+        "I say that the wavelength of a spectral line is decided by the difference between two energy states.",
+        "I say that every element has its own energy states and therefore its own lines.",
+        "I conclude that an unknown line requires an atom whose energy states differ from those of the known elements."
+      ]
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, two quick questions. Answer them yourself first and open the answer only then."
+    }
+  ]
+}
