@@ -1,18 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: f1b1e5d7059ef330
+CONTENT-HASH: 6fe85d743b5c7179
 
 ## Blocking
 
 ## Polish
-- solutions.md fy4-7-L3-02 — the angle 40° is given with two significant figures, so the stated reason for three figures (mass and length only) is incomplete. Either give the angle as 40,0° in the task or justify the rounding. 1,4 J stays inside the 2 % tolerance either way.
-- solutions.md fy4-7-L2-03 Järkevyys — "kirja on pöydän pinnasta matalammalla kuin lattiasta" is awkward. Suggested wording: "kirja on pöydän pinnan yläpuolella vähemmän kuin lattian yläpuolella".
+- solutions.md fy4-7-L1-05 — the stated answer −2,6 · 10² J is 1,9 % from −255 J, just inside the 2 % tolerance; fine now, but any data change would push a correctly rounded answer out — keep in mind (or widen tolerance to 0.03).
+- solutions.md fy4-7-L1-01 — "kaksi merkitsevää numeroa kuten massassa 1200 kg": 1200 is ambiguous and 20,0 m/s has three; "240 kJ" is fine either way — optionally say the mass limits to 2–3 figures.
+- solutions.md fy4-7-L3-03 — a roller skater's wheels also carry rotational energy; ignoring it is a fair simplification (C), no change needed.
 
 ## Checked
-- Recomputed all 12 answers with my own formulas, and all match answers.py and exercises.json: 240 kJ, 196 J, 295 J, 8,48 kJ, −255 J, 422 kJ, 53,6 m/s, 13,5 J, 14,9 m/s, 126 km/h, 1,38 J, 214 J.
-- Every solution has all seven stages and solves symbolically before substituting. The conversions are right (90 km/h = 25 m/s, 57 g, the tonne ratio needing no conversion in L3-01).
-- The sign convention below the zero level (L1-05) and the zero-level choice (L2-03) are correct.
-- The pendulum height h = L(1 − cos α) is correct.
-- L3-03: the energy lost is ½mv² − mgh, with the no-push condition stated in the task. The 16 % check is consistent.
-- The magnitudes in the reasonableness checks are realistic: a 190 km/h serve, a 54 km/h model plane, 741 kJ for both vehicles.
-- Rounding to the data's figures stays inside the tolerance (rounded_ok checks included).
-- The physics stays within FY4 scope (E_k, E_p, E_mek; no work–energy theorem needed).
+- All 12 answers recomputed independently (own formulas, km/h → m/s, g → kg, cos in degrees): every one agrees with exercises.json to < 1e-15 relative.
+- Shown rounded answers (8,5 kJ; −2,6·10² J; 4,2·10² kJ; 54 m/s) stay inside the 2 % tolerance; units in exercises.json match the questions.
+- Models: E_k = ½mv², E_p = mgh near Earth's surface with stated zero level, E_mek = E_k + E_p — the brief's notation and conditions; nothing beyond FY4 scope.
+- L1-05 negative E_p below the zero level, consistent with the lesson.
+- L2-03 / L1-04: only ΔE_p is zero-level independent; check 22,4 − 13,5 = 8,8 J = mg·0,75 m correct.
+- L3-01: v₁ = v₂√(m₂/m₁) solved symbolically; unit-ratio argument valid; 741 kJ cross-check correct.
+- L3-02: h = L(1 − cos α) = 0,281 m geometry correct; 90° limit check correct.
+- L3-03: no pushing stated in task; loss = ½mv² − mgh = 214 J; 16 % height/energy check consistent (both 15,9 %); friction → internal energy per guardrails.
+- Every solution symbolic before substitution, conversions right, reasonableness checks are real checks.
+- Hash identical at start and end.

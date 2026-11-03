@@ -45,7 +45,7 @@
 **Formula:** $E_\text{p} = m g h$. The formula is already solved for the quantity asked.
 **Conversions:** All quantities are in SI units, so no conversions are needed.
 **Substitution:** $E_\text{p} = 4.0\,\text{kg} \cdot 9.81\,\text{m/s}^2 \cdot (-6.5\,\text{m}) \approx -255\,\text{J}$
-**Answer:** $-255\,\text{J}$, that is, to two significant figures $-2.6 \cdot 10^{2}\,\text{J}$, like the mass $4.0\,\text{kg}$ and the depth $6.5\,\text{m}$.
+**Answer:** $-2.6 \cdot 10^{2}\,\text{J}$, to two significant figures, like the mass $4.0\,\text{kg}$ and the depth $6.5\,\text{m}$.
 **Reasonableness:** Lifting the bucket to ground level takes about $40\,\text{N} \cdot 6.5\,\text{m} = 260\,\text{J}$, and that is exactly how much lower the potential energy of the bucket is than its value zero at ground level. The sign is negative, as it should be below the zero level.
 
 ## fy4-7-L2-01
@@ -55,7 +55,7 @@
 **Formula:** $E_\text{k} = \tfrac{1}{2}\,mv^2$. The formula is already solved for the quantity asked.
 **Conversions:** $90\,\text{km/h} = \dfrac{90 \cdot 1000\,\text{m}}{3600\,\text{s}} = 25\,\text{m/s}$ and finally $1\,\text{kJ} = 1000\,\text{J}$.
 **Substitution:** $E_\text{k} = \tfrac{1}{2} \cdot 1350\,\text{kg} \cdot (25\,\text{m/s})^2 = 675\,\text{kg} \cdot 625\,\text{m}^2/\text{s}^2 = 421\,875\,\text{J} \approx 422\,\text{kJ}$
-**Answer:** $422\,\text{kJ}$, that is, to two significant figures $4.2 \cdot 10^{2}\,\text{kJ}$, like the speed $90\,\text{km/h}$.
+**Answer:** $4.2 \cdot 10^{2}\,\text{kJ}$, to two significant figures, like the speed $90\,\text{km/h}$.
 **Reasonableness:** With rounded numbers $\tfrac{1}{2} \cdot 1400\,\text{kg} \cdot 600\,\text{m}^2/\text{s}^2 = 420\,\text{kJ}$. If the speed were substituted in kilometres per hour, the result would be almost $13$ times too large, because $3.6^2 \approx 13$.
 
 ## fy4-7-L2-02

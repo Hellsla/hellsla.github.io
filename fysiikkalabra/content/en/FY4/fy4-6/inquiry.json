@@ -118,7 +118,7 @@
       "names": {
         "alpha": "angle $\\alpha$",
         "m": "mass m",
-        "pinta": "pinnat"
+        "pinta": "surfaces"
       },
       "units": {
         "alpha": "°",
@@ -192,7 +192,7 @@
       "names": {
         "alpha": "angle $\\alpha$",
         "m": "mass m",
-        "pinta": "pinnat"
+        "pinta": "surfaces"
       },
       "units": {
         "alpha": "°",
