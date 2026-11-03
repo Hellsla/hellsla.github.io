@@ -368,7 +368,7 @@
             {
               "key": "error_sources",
               "points": 1,
-              "detail": "The mass of the spring itself moves along, so the oscillating mass is larger than the mass of the weight. The extra mass shifts the line upwards but does not change the slope; the intercept gives about $14\\,\\text{g}$, or about a third of the mass of the spring."
+              "detail": "The mass of the spring itself moves along, so the oscillating mass is larger than the hanging mass alone. The extra mass shifts the line upwards but does not change the slope; the intercept gives about $14\\,\\text{g}$, or about a third of the mass of the spring."
             },
             {
               "text": "Compares with the measurement at rest: $k = \\dfrac{mg}{x} \\approx 20.0\\,\\text{N/m}$ differs from the result of part b by less than one percent, so the two different methods support each other.",
@@ -535,12 +535,12 @@
             {
               "key": "equation",
               "points": 1,
-              "detail": "$n = \\dfrac{L - 85\\,\\text{dB}}{3\\,\\text{dB}}$ and $t_\\text{sall} = \\dfrac{8\\,\\text{h}}{2^{\\,n}}$"
+              "detail": "$n = \\dfrac{L - 85\\,\\text{dB}}{3\\,\\text{dB}}$ and $t_\\text{perm} = \\dfrac{8\\,\\text{h}}{2^{\\,n}}$"
             },
             {
               "key": "units_precision",
               "points": 1,
-              "detail": "$t_\\text{sall} \\approx 1\\,\\text{h}$"
+              "detail": "$t_\\text{perm} \\approx 1\\,\\text{h}$"
             },
             {
               "key": "conclusion",
@@ -563,7 +563,7 @@
             {
               "key": "assumptions",
               "points": 1,
-              "detail": "The walls and vaults of the church reflect sound, so part of the level at $4.0\\,\\text{m}$ is reverberation, which does not get louder closer up; also, in practice the organ is seldom played at full power all the time. Both make the estimate probably too large."
+              "detail": "The walls and vaults of the church reflect sound, so part of the level at $4.0\\,\\text{m}$ is reverberation, which does not get louder closer up; also, during practice the organ is seldom played at full power all the time. Both make the estimate probably too large."
             },
             {
               "text": "Suggests a measurement: a sound level meter measures the A-weighted level at the organist's ear throughout the practice, and its average is compared with the action value.",

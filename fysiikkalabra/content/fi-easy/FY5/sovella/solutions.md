@@ -342,7 +342,7 @@ Vaaka-akselille valitaan $\tfrac{1}{r}$ ja pystyakselille $v^2$.
 - Kuvaajaksi piirretään $(m, T)$-kuvaaja, ja sen kaarevaan pisteistöön sovitetaan suora.
 - Jaksonajaksi otetaan kymmenen jakson aika jakamatta sitä kymmenellä.
 - Suora pakotetaan origon kautta, koska "mallin mukaan sen pitää kulkea origon kautta". Silloin jousivakio tulee liian pieneksi.
-- Kulmakertoimesta lasketaan suoraan $k$ ilman tekijää $4\pi^2$, tai kulmakerroin käännetään väärin päin.
+- Kulmakertoimesta lasketaan suoraan $k$ ilman tekijää $4\pi^2$, tai jousivakioksi otetaan kulmakertoimen käänteisarvo.
 - d-kohdassa amplitudi sijoitetaan senttimetreinä. Toinen virhe on lisätä energiaan painovoiman potentiaalienergia, vaikka poikkeama mitataan tasapainoasemasta.
 
 ## fy5-s4
@@ -409,4 +409,4 @@ Vaaka-akselille valitaan $\tfrac{1}{r}$ ja pystyakselille $v^2$.
 - b-kohdassa käytetään yhdestä päästä suljetun putken ehtoa $L = \tfrac{\lambda}{4}$, vaikka pilli on molemmista päistä avoin.
 - c-kohdassa oletetaan, että aallonpituus muuttuu ja taajuus pysyy samana. Toinen virhe on laskea taajuuden muutos samaksi kuin nopeuden muutos.
 - d-kohdassa oletetaan tason kaksinkertaistuvan, kun etäisyys puolittuu. Toinen virhe on olettaa, että intensiteetti riippuu etäisyydestä eikä sen neliöstä.
-- Sallittu aika lasketaan jakamalla $8\,\text{h}$ tasojen erotuksella. Aika pitää puolittaa jokaista $3\,\text{dB}$:n askelta kohti.
+- Sallittu aika lasketaan jakamalla $8\,\text{h}$ tasojen erotuksella. Oikein olisi puolittaa aika jokaista $3\,\text{dB}$:n askelta kohti.

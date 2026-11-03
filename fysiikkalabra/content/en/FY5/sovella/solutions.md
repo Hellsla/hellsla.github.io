@@ -237,7 +237,7 @@ $\tfrac{1}{r}$ is chosen for the horizontal axis and $v^2$ for the vertical axis
 | $0.300$ | $0.786$ | $0.618$ |
 | $0.350$ | $0.851$ | $0.724$ |
 
-<svg data-fig="fy5-s3-graph" viewBox="0 0 600 420" role="img" aria-label="Graph: the square of the period T as a function of the mass m of the weight. Six black points with masses 0.100–0.350 kg; T squared grows from 0.225 to 0.724 square seconds. A straight line has been fitted to the points so that it passes between them, and it has been extended with a dashed line to the vertical axis, which it meets at about 0.028 square seconds above the origin. The points (0.100 kg; 0.226 s²) and (0.350 kg; 0.722 s²) have been marked on the line." style="max-width:100%;font-size:24px">
+<svg data-fig="fy5-s3-graph" viewBox="0 0 600 420" role="img" aria-label="Graph: the square of the period T as a function of the hanging mass m. Six black points with masses 0.100–0.350 kg; T squared grows from 0.225 to 0.724 square seconds. A straight line has been fitted to the points so that it passes between them, and it has been extended with a dashed line to the vertical axis, which it meets at about 0.028 square seconds above the origin. The points (0.100 kg; 0.226 s²) and (0.350 kg; 0.722 s²) have been marked on the line." style="max-width:100%;font-size:24px">
   <line x1="144" y1="370" x2="144" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="192" y1="370" x2="192" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="240" y1="370" x2="240" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -315,9 +315,9 @@ $\tfrac{1}{r}$ is chosen for the horizontal axis and $v^2$ for the vertical axis
 ### c)
 **Find:** what the deviation of the line from the origin can be due to and how reliable the spring constant of part b is
 **Principle:** Random error scatters the points on both sides of the line. A systematic error or a deficiency of the model shifts the results in the same direction. The result is reliable when different methods give the same value within the uncertainties.
-**Model answer:** *Uncertainty.* In hand timing the uncertainty due to reaction time is about $0.2\,\text{s}$. Out of the time of ten periods it is only $0.02\,\text{s}$ in the period, which is the reason for measuring ten periods. The points deviate from the line by at most about $0.005\,\text{s}^2$, so the random variation is small and does not explain the intercept of $0.028\,\text{s}^2$ on the vertical axis.
+**Model answer:** *Uncertainty.* In hand timing the uncertainty due to reaction time is about $0.2\,\text{s}$. Spread over ten periods, it is only $0.02\,\text{s}$ in the period, which is the reason for measuring ten periods. The points deviate from the line by at most about $0.005\,\text{s}^2$, so the random variation is small and does not explain the intercept of $0.028\,\text{s}^2$ on the vertical axis.
 
-*The cause of the deviation.* In the model $T = 2\pi\sqrt{\tfrac{m}{k}}$ only the mass oscillates and the spring is massless. The mass of the spring itself, $45\,\text{g}$, however, moves along: its lower end moves with the mass and its upper end is at rest. The oscillating mass is therefore larger than the mass of the weight, which shifts the whole line upwards but does not change its slope. From the intercept the extra mass is $0.028\,\text{s}^2 : 1.984\,\text{s}^2/\text{kg} \approx 0.014\,\text{kg}$, about a third of the mass of the spring. The result makes sense, because the lower part of the spring moves almost as much as the mass and the upper part hardly at all.
+*The cause of the deviation.* In the model $T = 2\pi\sqrt{\tfrac{m}{k}}$ only the mass oscillates and the spring is massless. The mass of the spring itself, $45\,\text{g}$, however, moves along: its lower end moves with the mass and its upper end is at rest. The oscillating mass is therefore larger than the hanging mass alone, which shifts the whole line upwards but does not change its slope. From the intercept the extra mass is $0.028\,\text{s}^2 : 1.984\,\text{s}^2/\text{kg} \approx 0.014\,\text{kg}$, about a third of the mass of the spring. The result makes sense, because the lower part of the spring moves almost as much as the mass and the upper part hardly at all.
 
 *Comparison.* From the measurement at rest $k = \dfrac{mg}{x} = \dfrac{0.200\,\text{kg} \cdot 9.81\,\text{m/s}^2}{0.098\,\text{m}} \approx 20.0\,\text{N/m}$. It differs from the result of part b, $19.9\,\text{N/m}$, by less than one percent, so two independent methods support each other.
 
@@ -380,12 +380,12 @@ $\tfrac{1}{r}$ is chosen for the horizontal axis and $v^2$ for the vertical axis
 
 ### d)
 **Given:** the sound intensity level $L_1 = 88\,\text{dB}$ at a distance $r_1 = 4.0\,\text{m}$, the distance of the organist $r_2 = 2.0\,\text{m}$, practice time $3\,\text{h}$; upper action value $L_0 = 85\,\text{dB}$ and the corresponding time $t_0 = 8\,\text{h}$
-**Find:** the permitted daily exposure time $t_\text{sall}$ of the organist and whether it is enough
+**Find:** the permitted daily exposure time $t_\text{perm}$ of the organist and whether it is enough
 **Principle:** When a source radiates uniformly in all directions, the same power spreads over the surface of a sphere $4\pi r^2$, so the intensity is $I = \dfrac{P}{4\pi r^2}$. When the distance is halved, the intensity quadruples. The change in the intensity level is obtained from the ratio of the intensities. The permitted exposure time halves for every $3\,\text{dB}$ rise.
-**Formula:** $L_2 - L_1 = 10\,\text{dB} \cdot \lg \dfrac{I_2}{I_1}$, where $\dfrac{I_2}{I_1} = \left(\dfrac{r_1}{r_2}\right)^2$; $n = \dfrac{L_2 - L_0}{3\,\text{dB}}$ and $t_\text{sall} = \dfrac{t_0}{2^{\,n}}$
+**Formula:** $L_2 - L_1 = 10\,\text{dB} \cdot \lg \dfrac{I_2}{I_1}$, where $\dfrac{I_2}{I_1} = \left(\dfrac{r_1}{r_2}\right)^2$; $n = \dfrac{L_2 - L_0}{3\,\text{dB}}$ and $t_\text{perm} = \dfrac{t_0}{2^{\,n}}$
 **Conversions:** Not needed.
-**Substitution:** $\dfrac{I_2}{I_1} = \left(\dfrac{4.0\,\text{m}}{2.0\,\text{m}}\right)^2 = 4$, so $L_2 = 88\,\text{dB} + 10\,\text{dB} \cdot \lg 4 = 88\,\text{dB} + 6.0\,\text{dB} = 94\,\text{dB}$. $n = \dfrac{94\,\text{dB} - 85\,\text{dB}}{3\,\text{dB}} = 3.0$ and $t_\text{sall} = \dfrac{8\,\text{h}}{2^{3}} = 1.0\,\text{h}$
-**Answer:** $t_\text{sall} \approx 1\,\text{h}$. The time is not enough: three hours of practice is about three times the permitted time. The organist should use hearing protection or practise with quieter stops.
+**Substitution:** $\dfrac{I_2}{I_1} = \left(\dfrac{4.0\,\text{m}}{2.0\,\text{m}}\right)^2 = 4$, so $L_2 = 88\,\text{dB} + 10\,\text{dB} \cdot \lg 4 = 88\,\text{dB} + 6.0\,\text{dB} = 94\,\text{dB}$. $n = \dfrac{94\,\text{dB} - 85\,\text{dB}}{3\,\text{dB}} = 3.0$ and $t_\text{perm} = \dfrac{8\,\text{h}}{2^{3}} = 1.0\,\text{h}$
+**Answer:** $t_\text{perm} \approx 1\,\text{h}$. The time is not enough: three hours of practice is about three times the permitted time. The organist should use hearing protection or practise with quieter stops.
 **Reasonableness:** A level of $94\,\text{dB}$ is of the same order as the noise of a lawn mower at the ear of the user, when hearing protection is recommended. In the point-source model the sound power of the organ would be $P = I \cdot 4\pi r^2 \approx 0.13\,\text{W}$, which is plausible for an instrument.
 
 ### e)
@@ -395,7 +395,7 @@ $\tfrac{1}{r}$ is chosen for the horizontal axis and $v^2$ for the vertical axis
 
 *Reflections.* The walls, floor and vaults of the church reflect sound, and reverberation is heard throughout the hall. Part of the level measured at a distance of $4.0\,\text{m}$ is reverberation, which does not get louder closer up. This also makes the estimate too large.
 
-*Playing.* In practice the organ is seldom played at full power all the time, so the average level is lower. On the other hand, in some churches the position of the pipes and the console may direct sound straight at the organist.
+*Playing.* During practice the organ is seldom played at full power all the time, so the average level is lower. On the other hand, in some churches the position of the pipes and the console may direct sound straight at the organist.
 
 *A reliable way.* A sound level meter measures the A-weighted level at the organist's ear throughout a normal practice and its average is calculated and compared with the action value $85\,\text{dB}$. The exposure is probably smaller than the estimate of part d, but only a measurement tells whether hearing protection is needed.
 

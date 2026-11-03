@@ -563,7 +563,7 @@
             {
               "key": "assumptions",
               "points": 1,
-              "detail": "Kirkon seinät ja holvit heijastavat ääntä. Siksi osa $4{,}0\\,\\text{m}$:n tasosta on kaikua, joka ei voimistu lähemmäs mentäessä. Harjoituksessa ei myöskään soiteta koko ajan täysillä. Kumpikin tekee arviosta todennäköisesti liian suuren."
+              "detail": "Kirkon seinät ja holvit heijastavat ääntä. Siksi osa $4{,}0\\,\\text{m}$:n tasosta on kaikua, joka ei voimistu lähemmäs mentäessä. Harjoituksessa soitetaan myös harvoin koko ajan täysillä. Kumpikin tekee arviosta todennäköisesti liian suuren."
             },
             {
               "text": "Ehdottaa mittausta: melumittarilla mitataan A-painotettu taso urkurin korvan kohdalta koko harjoituksen ajalta. Tason keskiarvoa verrataan toiminta-arvoon.",
