@@ -1720,6 +1720,20 @@
       "lukemat": "Time $t = {{t}}\\,\\text{s}$, that is, $t : T_{1/2} = {{r}}$<br>Undecayed nuclei $N = {{N}}$, decayed $N_0 - N = {{D}}$<br><strong>Fraction left $N : N_0 = {{f}}$</strong>",
       "otsikko": "$\\text{nuclei at the start}\\ N_0 = {{N0}}$",
       "jaljella": "$\\text{undecayed}\\ N = {{N}}$"
+    },
+    "fy8-6": {
+      "led": "LED",
+      "punainen": "red",
+      "oranssi": "orange",
+      "keltainen": "yellow",
+      "vihrea": "green",
+      "sininen": "blue",
+      "violetti": "violet",
+      "jannite": "Voltage $U = {{U}}\\,\\text{V}$",
+      "tyhjenna": "Clear the graph",
+      "selite": "Points: the voltages you have tried, each in the colour of its own LED.",
+      "lukemat": "Voltage $U = {{U}}\\,\\text{V}$<br><strong>Current $I = {{I}}\\,\\text{mA}$</strong><br>Peak wavelength of the LED $\\lambda = {{l}}\\,\\text{nm}$",
+      "varoitus": "<strong>The current exceeds the greatest permitted current of the LED, $30\\,\\text{mA}$: a real LED would be damaged.</strong>"
     }
   },
   "practice": {
