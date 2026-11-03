@@ -7,9 +7,9 @@
     "explain how the meter and a wrong connection affect the electric circuit."
   ],
   "prior": [
-    "Electric current is a flow of charge through the cross-section of a conductor, and its unit is the ampere (chapter *Virtapiiri, sähkövirta ja jännite*)",
-    "Voltage is a quantity between two points, and its unit is the volt (chapter *Virtapiiri, sähkövirta ja jännite*)",
-    "A measurement result always has an uncertainty, and the resolution is the smallest step that the measuring instrument can show (chapter *Mittaaminen ja mittauksen luotettavuus*)"
+    "Electric current is a flow of charge through the cross-section of a conductor, and its unit is the ampere (chapter *Electric circuit, current and voltage*)",
+    "Voltage is a quantity between two points, and its unit is the volt (chapter *Electric circuit, current and voltage*)",
+    "A measurement result always has an uncertainty, and the resolution is the smallest step that the measuring instrument can show (chapter *Measuring and the reliability of a measurement*)"
   ],
   "activities": [
     {
@@ -30,7 +30,7 @@
         {
           "text": "Current is a flow of charge through the cross-section of a conductor, and voltage is a quantity between two points.",
           "correct": true,
-          "feedback": "Correct (chapter *Virtapiiri, sähkövirta ja jännite*). That is why current is measured at a point through which the charge passes, and voltage between two points. This difference decides how the meters are connected."
+          "feedback": "Correct (chapter *Electric circuit, current and voltage*). That is why current is measured at a point through which the charge passes, and voltage between two points. This difference decides how the meters are connected."
         },
         {
           "text": "Current and voltage are two names for the same thing: both tell how much electricity there is in a wire.",
@@ -115,7 +115,7 @@
       "text": "Choose the places of the test leads and the position of the selector. Follow the reading of the display and the lamp.",
       "howto": "*Meter connection* chooses where the test leads are touched: in series into either gap of the upper wire, or in parallel with the lamp, the resistor or the battery. *Selector* chooses the quantity and the measuring range like the rotary switch of a real multimeter; on the current range $10\\,\\text{A}$ the red lead moves to its own jack. *Batteries* changes the number of batteries. The display shows the reading with the resolution of the range, or OL when the value is over the range. The purple arrows show the direction of the current from the positive terminal of the battery to the negative terminal when current flows in the circuit.",
       "model": "The batteries are ideal: the voltage of each is $1.5\\,\\text{V}$ regardless of the current. The resistance of the lamp is constant $15\\,\\Omega$ in the model, although the resistance of a real filament lamp increases as it warms up, and the resistance of the resistor is $30\\,\\Omega$. The resistance of the meter itself is $10\\,\\text{M}\\Omega$ on the voltage ranges, $1.0\\,\\Omega$ on the range $200\\,\\text{mA}$ and $0.010\\,\\Omega$ on the range $10\\,\\text{A}$. When a larger current than the range can show passes through the meter, the fuse blows and the meter is disconnected from the circuit; in the model a new fuse is in place as soon as the connection or the selector is changed. The readings are values calculated by the model, not measurements.",
-      "calc": "The model solves the current and the voltages of the circuit by means of the resistances, as in the chapter *Resistanssi ja Ohmin laki*, and the meter is in the circuit as one component with its own resistance. That is why on the range $200\\,\\text{mA}$ the current is $97.8\\,\\text{mA}$ and not $100\\,\\text{mA}$: the resistance of the meter itself decreases the current slightly, whereas on the range $10\\,\\text{A}$ the difference does not show. The reading of the display is rounded to the resolution of the range: $0.001\\,\\text{V}$, $0.01\\,\\text{V}$, $0.1\\,\\text{mA}$ or $0.01\\,\\text{A}$. In the model the lamp is lit when its power is at least $4\\,\\text{mW}$."
+      "calc": "The model solves the current and the voltages of the circuit by means of the resistances, as in the chapter *Resistance and Ohm's law*, and the meter is in the circuit as one component with its own resistance. That is why on the range $200\\,\\text{mA}$ the current is $97.8\\,\\text{mA}$ and not $100\\,\\text{mA}$: the resistance of the meter itself decreases the current slightly, whereas on the range $10\\,\\text{A}$ the difference does not show. The reading of the display is rounded to the resolution of the range: $0.001\\,\\text{V}$, $0.01\\,\\text{V}$, $0.1\\,\\text{mA}$ or $0.01\\,\\text{A}$. In the model the lamp is lit when its power is at least $4\\,\\text{mW}$."
     },
     {
       "id": "koe-1",
@@ -135,8 +135,8 @@
       "vary": "kytkenta",
       "names": {
         "kytkenta": "connection",
-        "alue": "valitsin",
-        "N": "paristot"
+        "alue": "selector",
+        "N": "batteries"
       },
       "values": {
         "kytkenta": {
@@ -168,7 +168,7 @@
           "–": "–"
         },
         "lamppu": {
-          "palaa": "palaa",
+          "palaa": "lit",
           "ei": "not lit"
         }
       },
@@ -179,7 +179,7 @@
         },
         {
           "key": "lamppu",
-          "label": "lamppu"
+          "label": "lamp"
         }
       ],
       "min": 2
@@ -202,8 +202,8 @@
       "vary": "kytkenta",
       "names": {
         "kytkenta": "connection",
-        "alue": "valitsin",
-        "N": "paristot"
+        "alue": "selector",
+        "N": "batteries"
       },
       "values": {
         "kytkenta": {
@@ -235,7 +235,7 @@
           "–": "–"
         },
         "lamppu": {
-          "palaa": "palaa",
+          "palaa": "lit",
           "ei": "not lit"
         }
       },
@@ -246,7 +246,7 @@
         },
         {
           "key": "lamppu",
-          "label": "lamppu"
+          "label": "lamp"
         }
       ],
       "min": 2
@@ -269,8 +269,8 @@
       "vary": "alue",
       "names": {
         "kytkenta": "connection",
-        "alue": "valitsin",
-        "N": "paristot"
+        "alue": "selector",
+        "N": "batteries"
       },
       "values": {
         "kytkenta": {
@@ -302,7 +302,7 @@
           "–": "–"
         },
         "lamppu": {
-          "palaa": "palaa",
+          "palaa": "lit",
           "ei": "not lit"
         }
       },
@@ -313,7 +313,7 @@
         },
         {
           "key": "lamppu",
-          "label": "lamppu"
+          "label": "lamp"
         }
       ],
       "min": 2

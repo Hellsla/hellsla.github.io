@@ -1528,7 +1528,7 @@
       "vastus": "resistor",
       "lamppu": "filament lamp",
       "lanka": "constantan wire",
-      "jannite": "Jännite $U = {{u}}\\,\\text{V}$",
+      "jannite": "Voltage $U = {{u}}\\,\\text{V}$",
       "pituus": "Wire length $l = {{l}}\\,\\text{m}$",
       "ala": "Wire area $A = {{a}}\\,\\text{mm}^2$",
       "nopeus": "Speed",
@@ -1598,6 +1598,29 @@
       "aloita": "press Measure",
       "kaynnissa": "running",
       "valmis": "done"
+    },
+    "fy6-4": {
+      "kytkenta": "Connection",
+      "yksi": "one resistor",
+      "sarja": "in series",
+      "rinnan": "in parallel",
+      "jannite": "Battery voltage $U = {{U}}\\,\\text{V}$",
+      "vastus1": "Resistor $R_1 = {{R}}\\,\\Omega$",
+      "vastus2": "Resistor $R_2 = {{R}}\\,\\Omega$",
+      "vastus2pois": "Resistor $R_2 = {{R}}\\,\\Omega$ (not connected)",
+      "nopeus": "Speed",
+      "hidas": "slow",
+      "normaali": "normal",
+      "nopea": "fast",
+      "selite": "The speed of the dots shows the size of the current; the direction is the agreed direction of the current from the positive terminal to the negative terminal.",
+      "lukemat": "<strong>Total resistance $R = {{R}}\\,\\Omega$</strong><br>Current leaving the battery $I = {{I}}\\,\\text{mA}$<br>Resistor $R_1$: current $I_1 = {{I1}}\\,\\text{mA}$, voltage $U_1 = {{U1}}\\,\\text{V}$",
+      "lukemat2": "<br>Resistor $R_2$: current $I_2 = {{I2}}\\,\\text{mA}$, voltage $U_2 = {{U2}}\\,\\text{V}$",
+      "lukemat2pois": "<br>Resistor $R_2$ is not connected.",
+      "values": {
+        "yksi": "one resistor",
+        "sarja": "series connection",
+        "rinnan": "parallel connection"
+      }
     }
   },
   "practice": {
