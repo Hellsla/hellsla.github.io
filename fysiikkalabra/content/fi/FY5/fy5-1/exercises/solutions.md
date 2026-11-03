@@ -77,7 +77,7 @@
 **Muunnokset:** Voimat ovat newtoneina ja etäisyydet metreinä, joten muunnoksia ei tarvita.
 **Sijoitus:** $\Sigma M = 30\,\text{N}\cdot 0{,}50\,\text{m} - 40\,\text{N}\cdot 0{,}20\,\text{m} = 15\,\text{Nm} - 8{,}0\,\text{Nm} = 7{,}0\,\text{Nm}$
 **Vastaus:** $7{,}0\,\text{Nm}$ vastapäivään, kaksi merkitsevää numeroa kuten lähtötiedoissa.
-**Järkevyys:** Suurempi voima $40\,\text{N}$ ei ratkaise kiertosuuntaa, koska sen varsi on lyhyt. Pienemmän voiman momentti $15\,\text{Nm}$ on suurempi kuin $8{,}0\,\text{Nm}$, joten lauta alkaa kiertyä vastapäivään. Kokonaismomentti on positiivinen, kuten pitääkin.
+**Järkevyys:** Laudan oman painon momentti jätetään huomiotta: lauta oletetaan kevyeksi voimiin verrattuna. Suurempi voima $40\,\text{N}$ ei ratkaise kiertosuuntaa, koska sen varsi on lyhyt. Pienemmän voiman momentti $15\,\text{Nm}$ on suurempi kuin $8{,}0\,\text{Nm}$, joten lauta alkaa kiertyä vastapäivään. Kokonaismomentti on positiivinen, kuten pitääkin.
 
 ## fy5-1-L2-04
 **Annettu:** tarvittava momentti $M = 50\,\text{Nm}$, vivun pituus eli otekohdan etäisyys akselista $d = 0{,}25\,\text{m}$, voiman ja vivun jatkeen välinen kulma $\alpha = 60^\circ$
@@ -86,8 +86,8 @@
 **Kaava:** $M = Fd\sin\alpha$, josta $F = \dfrac{M}{d\sin\alpha}$
 **Muunnokset:** Momentti on newtonmetreinä ja etäisyys metreinä, joten muunnoksia ei tarvita.
 **Sijoitus:** $F = \dfrac{50\,\text{Nm}}{0{,}25\,\text{m}\cdot\sin 60^\circ} = \dfrac{50\,\text{Nm}}{0{,}2165\,\text{m}} = 230{,}9\,\text{N}$
-**Vastaus:** $230\,\text{N} = 2{,}3 \cdot 10^{2}\,\text{N}$, kaksi merkitsevää numeroa kuten momentissa $50\,\text{Nm}$ ja pituudessa $0{,}25\,\text{m}$.
-**Järkevyys:** Kohtisuoraan vetäen riittäisi $50\,\text{Nm} : 0{,}25\,\text{m} = 200\,\text{N}$. Vino veto vaatii enemmän, koska varsi on vain $\sin 60^\circ \approx 0{,}87$ kertaa vivun pituus: $200\,\text{N} : 0{,}87 \approx 230\,\text{N}$.
+**Vastaus:** $231\,\text{N} \approx 2{,}3 \cdot 10^{2}\,\text{N}$, kaksi merkitsevää numeroa kuten momentissa $50\,\text{Nm}$ ja pituudessa $0{,}25\,\text{m}$.
+**Järkevyys:** Kohtisuoraan vetäen riittäisi $50\,\text{Nm} : 0{,}25\,\text{m} = 200\,\text{N}$. Vino veto vaatii enemmän, koska varsi on vain $\sin 60^\circ \approx 0{,}87$ kertaa vivun pituus: $200\,\text{N} : 0{,}87 \approx 230\,\text{N}$, sama kuin $231\,\text{N}$ pyöristysten tarkkuudella.
 
 ## fy5-1-L3-01
 **Annettu:** jalan voima $F = 500\,\text{N}$ suoraan alaspäin, polkimen etäisyys akselista $d = 0{,}175\,\text{m}$, kampi $45^\circ$ vaakatason alapuolella
@@ -97,7 +97,7 @@
 **Muunnokset:** Voima on newtoneina ja etäisyys metreinä, joten muunnoksia ei tarvita.
 **Sijoitus:** $M = 500\,\text{N}\cdot 0{,}175\,\text{m}\cdot\cos 45^\circ = 87{,}5\,\text{Nm}\cdot 0{,}7071 = 61{,}87\,\text{Nm}$
 **Vastaus:** $61{,}9\,\text{Nm}$, kolme merkitsevää numeroa kuten etäisyydessä $0{,}175\,\text{m}$. Momentti on suurin, $87{,}5\,\text{Nm}$, kun kampi on vaakasuorassa eteenpäin, ja nolla, kun kampi osoittaa suoraan alas tai ylös.
-**Järkevyys:** Tulos on vaakasuoran kammen momentin $87{,}5\,\text{Nm}$ ja nollan välissä, kuten pitää. Kaavalla $r = d\sin\alpha$ saadaan sama: voiman ja kammen jatkeen välinen kulma on $45^\circ$, ja $\sin 45^\circ = \cos 45^\circ$. Siksi pyöräilijä painaa poljinta voimakkaimmin kammen ollessa edessä vaakasuorassa.
+**Järkevyys:** Tulos on vaakasuoran kammen momentin $87{,}5\,\text{Nm}$ ja nollan välissä, kuten pitää. Kaavalla $r = d\sin\alpha$ saadaan sama: voiman ja kammen jatkeen välinen kulma on $45^\circ$, ja $\sin 45^\circ = \cos 45^\circ$. Siksi pyöräilijä painaa poljinta voimakkaimmin kammen ollessa edessä vaakasuorassa eli ajosuuntaan osoittaessaan.
 
 ## fy5-1-L3-02
 **Annettu:** aikuisen voima $F_1 = 50\,\text{N}$ ja varsi $r_1 = 0{,}40\,\text{m}$, lapsen voima $F_2 = 20\,\text{N}$; molemmat työntävät kohtisuoraan porttia vastaan

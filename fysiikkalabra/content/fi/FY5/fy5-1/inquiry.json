@@ -7,7 +7,7 @@
     "laskemaan kokonaismomentin, kun kiertosuunnat merkitään etumerkeillä."
   ],
   "prior": [
-    "Voimalla on suuruus, suunta ja vaikutuskohta (luku *Vuorovaikutus ja voima: Newtonin ensimmäinen ja kolmas laki*)",
+    "Voimalla on suuruus, suunta ja otekohta (luku *Vuorovaikutus ja voima: Newtonin ensimmäinen ja kolmas laki*)",
     "Vinon voiman komponentit saadaan sinin ja kosinin avulla (luku *Voimakuvio ja voimien yhteisvaikutus*)"
   ],
   "activities": [
@@ -251,7 +251,7 @@
             "feedback": "Voima on molemmilla kulmilla $200\\,\\text{N}$. Muuttuu voiman varsi: mallin arvoissa se lyhenee $0{,}40\\,\\text{m}$:stä $0{,}20\\,\\text{m}$:iin."
           },
           {
-            "text": "Kulmalla $30^\\circ$ voiman vaikutuskohta on kauempana akselista.",
+            "text": "Kulmalla $30^\\circ$ voiman otekohta on kauempana akselista.",
             "feedback": "Vaikutuskohta on sama, $0{,}40\\,\\text{m}$:n päässä. Vaikutussuora kuitenkin kulkee lähempää akselia, joten varsi on vain $0{,}20\\,\\text{m}$."
           }
         ]
@@ -273,7 +273,7 @@
         "Vastaus kertoo, että vinon voiman varsi $r = d\\sin\\alpha$ on lyhyempi kuin $d$, joten momentti pienenee.",
         "Vastaus käyttää kokeen 2 tulosta, esimerkiksi momenttia kulmilla $90^\\circ$ ja $30^\\circ$."
       ],
-      "model": "Kokeessa 1 pienin avaava voima oli mallin arvoissa $300\\,\\text{N}$ otekohdasta $0{,}10\\,\\text{m}$, $150\\,\\text{N}$ otekohdasta $0{,}20\\,\\text{m}$ ja $100\\,\\text{N}$ otekohdasta $0{,}30\\,\\text{m}$. Voima ei siis ole sama, mutta voiman ja etäisyyden tulo on joka kerta $30\\,\\text{Nm}$: mutterin aukeamisen ratkaisee voiman momentti $M = Fr$. Kokeessa 2 voima ja otekohta pysyivät samoina, mutta kulman pienentyessä vaikutussuora siirtyi lähemmäs akselia. Voiman varsi $r = d\\sin\\alpha$ lyheni $0{,}40\\,\\text{m}$:stä $0{,}20\\,\\text{m}$:iin kulmalla $30^\\circ$, ja momentti putosi $80\\,\\text{Nm}$:stä $40\\,\\text{Nm}$:iin. Kulmalla $150^\\circ$ momentti oli sama kuin kulmalla $30^\\circ$, koska varsi on yhtä pitkä. Kuvaajassa kaikki yritykset jakautuvat samalla rajalla, koska aukeaminen riippuu vain tulosta $Fr$."
+      "model": "Kokeessa 1 pienin avaava voima oli mallin arvoissa $300\\,\\text{N}$ otekohdasta $0{,}10\\,\\text{m}$, $150\\,\\text{N}$ otekohdasta $0{,}20\\,\\text{m}$ ja $100\\,\\text{N}$ otekohdasta $0{,}30\\,\\text{m}$. Voima ei siis ole sama, mutta voiman ja etäisyyden tulo on joka kerta $30\\,\\text{Nm}$: mutterin aukeamisen ratkaisee voiman momentti $M = Fr$. Kokeessa 2 voima ja otekohta pysyivät samoina, mutta kulman pienentyessä vaikutussuora siirtyi lähemmäs akselia. Voiman varsi $r = d\\sin\\alpha$ lyheni $0{,}40\\,\\text{m}$:stä $0{,}20\\,\\text{m}$:iin kulmalla $30^\\circ$, ja momentti putosi $80\\,\\text{Nm}$:stä $40\\,\\text{Nm}$:iin. Kulmalla $150^\\circ$ momentti oli sama kuin kulmalla $30^\\circ$, koska varsi on yhtä pitkä. Kuvaajassa saman mutterin yritykset jakautuvat samalla rajalla, koska aukeaminen riippuu vain tulosta $Fr$."
     },
     {
       "id": "theory",
@@ -318,7 +318,7 @@
         },
         {
           "text": "Varsi lasketaan kosinilla, $d\\cos 30^\\circ \\approx 0{,}35\\,\\text{m}$, joten $M \\approx 17\\,\\text{Nm}$.",
-          "feedback": "Kulma on voiman ja varren jatkeen välinen, joten varsi on suorakulmaisessa kolmiossa kulman vastainen kateetti $d\\sin\\alpha$. Kosini antaa varren suuntaisen osan, joka ei kierrä mutteria. Oikea momentti on $10\\,\\text{Nm}$."
+          "feedback": "Kulma on voiman ja varren jatkeen välinen, joten varsi on suorakulmaisessa kolmiossa kulman vastainen kateetti $d\\sin\\alpha$. Lauseke $Fd\\cos\\alpha$ vastaisi voiman varren suuntaista komponenttia, joka ei kierrä mutteria. Oikea momentti on $10\\,\\text{Nm}$."
         },
         {
           "text": "Voima pitää jakaa etäisyydellä, joten $M = \\tfrac{F}{d} = 125\\,\\text{Nm}$.",
@@ -341,13 +341,13 @@
       "tolerance": 0.02,
       "hints": [
         "Paino osoittaa suoraan alas. Kuinka kaukana akselista kulkee pystysuora vaikutussuora?",
-        "Varsi on painon vaikutuskohdan vaakasuora etäisyys akselista: $r = 1{,}50\\,\\text{m}\\cdot\\cos 40^\\circ$.",
+        "Varsi on painon otekohdan vaakasuora etäisyys akselista: $r = 1{,}50\\,\\text{m}\\cdot\\cos 40^\\circ$.",
         "$M = mg\\cdot r = 12{,}0\\,\\text{kg}\\cdot 9{,}81\\,\\text{m/s}^2\\cdot 1{,}50\\,\\text{m}\\cdot\\cos 40^\\circ$."
       ],
       "mistakes": [
         {
           "value": 176.6,
-          "feedback": "Käytit varrena etäisyyttä $1{,}50\\,\\text{m}$. Paino on pystysuora, joten varsi on vaikutuskohdan vaakasuora etäisyys akselista, $1{,}50\\,\\text{m}\\cdot\\cos 40^\\circ$."
+          "feedback": "Käytit varrena etäisyyttä $1{,}50\\,\\text{m}$. Paino on pystysuora, joten varsi on otekohdan vaakasuora etäisyys akselista, $1{,}50\\,\\text{m}\\cdot\\cos 40^\\circ$."
         },
         {
           "value": 113.5,
@@ -358,7 +358,7 @@
           "feedback": "Paino vaikuttaa puomin keskikohdassa, $1{,}50\\,\\text{m}$:n päässä akselista, ei puomin päässä."
         }
       ],
-      "solution": "**Annettu:** puomin pituus $3{,}00\\,\\text{m}$, massa $m = 12{,}0\\,\\text{kg}$, paino vaikuttaa keskikohdassa $d = 1{,}50\\,\\text{m}$:n päässä akselista, puomin kulma vaakatasoon $40^\\circ$; $g = 9{,}81\\,\\text{m/s}^2$\n\n**Kysytty:** painon momentti $M$ akselin suhteen yksikössä $\\text{Nm}$\n\n**Periaate:** Puomi voi vain kääntyä akselinsa ympäri, joten painon vääntövaikutuksen kertoo sen momentti $M = Fr$. Paino osoittaa suoraan alas, joten sen varsi on akselin kohtisuora etäisyys pystysuorasta vaikutussuorasta eli vaikutuskohdan vaakasuora etäisyys akselista. Se on suorakulmaisessa kolmiossa kulman $40^\\circ$ viereinen kateetti.\n\n**Kaava:** $M = Gr$, missä $G = mg$ ja $r = d\\cos 40^\\circ$, joten $M = mgd\\cos 40^\\circ$\n\n**Muunnokset:** Massa on kilogrammoina ja pituus metreinä, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $M = 12{,}0\\,\\text{kg}\\cdot 9{,}81\\,\\text{m/s}^2\\cdot 1{,}50\\,\\text{m}\\cdot\\cos 40^\\circ = 117{,}72\\,\\text{N}\\cdot 1{,}149\\,\\text{m} = 135{,}3\\,\\text{Nm}$\n\n**Vastaus:** $135\\,\\text{Nm}$, kolme merkitsevää numeroa kuten massassa $12{,}0\\,\\text{kg}$ ja pituudessa $3{,}00\\,\\text{m}$.\n\n**Järkevyys:** Vaakasuoran puomin painon varsi olisi koko $1{,}50\\,\\text{m}$ ja momentti $177\\,\\text{Nm}$. Nostettuna varsi lyhenee, joten momentti pienenee, ja pystyssä se olisi nolla. Kulman voi tarkistaa myös kaavalla $r = d\\sin\\alpha$: painon ja puomin jatkeen välinen kulma on $90^\\circ + 40^\\circ = 130^\\circ$ ja $\\sin 130^\\circ = \\cos 40^\\circ$."
+      "solution": "**Annettu:** puomin pituus $3{,}00\\,\\text{m}$, massa $m = 12{,}0\\,\\text{kg}$, paino vaikuttaa keskikohdassa $d = 1{,}50\\,\\text{m}$:n päässä akselista, puomin kulma vaakatasoon $40^\\circ$; $g = 9{,}81\\,\\text{m/s}^2$\n\n**Kysytty:** painon momentti $M$ akselin suhteen yksikössä $\\text{Nm}$\n\n**Periaate:** Puomi voi vain kääntyä akselinsa ympäri, joten painon vääntövaikutuksen kertoo sen momentti $M = Fr$. Paino osoittaa suoraan alas, joten sen varsi on akselin kohtisuora etäisyys pystysuorasta vaikutussuorasta eli otekohdan vaakasuora etäisyys akselista. Se on suorakulmaisessa kolmiossa kulman $40^\\circ$ viereinen kateetti.\n\n**Kaava:** $M = Gr$, missä $G = mg$ ja $r = d\\cos 40^\\circ$, joten $M = mgd\\cos 40^\\circ$\n\n**Muunnokset:** Massa on kilogrammoina ja pituus metreinä, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $M = 12{,}0\\,\\text{kg}\\cdot 9{,}81\\,\\text{m/s}^2\\cdot 1{,}50\\,\\text{m}\\cdot\\cos 40^\\circ = 117{,}72\\,\\text{N}\\cdot 1{,}149\\,\\text{m} = 135{,}3\\,\\text{Nm}$\n\n**Vastaus:** $135\\,\\text{Nm}$, kolme merkitsevää numeroa kuten massassa $12{,}0\\,\\text{kg}$ ja pituudessa $3{,}00\\,\\text{m}$.\n\n**Järkevyys:** Vaakasuoran puomin painon varsi olisi koko $1{,}50\\,\\text{m}$ ja momentti $177\\,\\text{Nm}$. Nostettuna varsi lyhenee, joten momentti pienenee, ja pystyssä se olisi nolla. Kulman voi tarkistaa myös kaavalla $r = d\\sin\\alpha$: painon ja puomin jatkeen välinen kulma on $90^\\circ + 40^\\circ = 130^\\circ$ ja $\\sin 130^\\circ = \\cos 40^\\circ$."
     },
     {
       "id": "tehtavat",
@@ -417,7 +417,7 @@
         }
       ],
       "practice": "Harjoittele kokonaismomenttia tason 2 tehtävissä.",
-      "solution": "**Annettu:** ohjauspyörän säde $R = 0{,}19\\,\\text{m}$, vasemman käden voima $F_1 = 25\\,\\text{N}$ vastapäivään, oikean käden voima $F_2 = 15\\,\\text{N}$ myötäpäivään, molemmat kehän suuntaisia\n\n**Kysytty:** kokonaismomentti $\\Sigma M$ akselin suhteen yksikössä $\\text{Nm}$, vastapäivään positiivisena\n\n**Periaate:** Ohjauspyörä kiertyy akselinsa ympäri, joten kunkin voiman vääntövaikutuksen kertoo sen momentti. Kehän suuntainen voima on kohtisuorassa sädettä vastaan, joten sen varsi on säde. Kokonaismomentti on momenttien summa etumerkkeineen.\n\n**Kaava:** $M_1 = F_1 R$ ja $M_2 = -F_2 R$, joten $\\Sigma M = F_1 R - F_2 R$\n\n**Muunnokset:** Voimat ovat newtoneina ja säde metreinä, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $\\Sigma M = 25\\,\\text{N}\\cdot 0{,}19\\,\\text{m} - 15\\,\\text{N}\\cdot 0{,}19\\,\\text{m} = 4{,}75\\,\\text{Nm} - 2{,}85\\,\\text{Nm} = 1{,}9\\,\\text{Nm}$\n\n**Vastaus:** $1{,}9\\,\\text{Nm}$ vastapäivään, kaksi merkitsevää numeroa kuten säteessä $0{,}19\\,\\text{m}$ ja voimissa.\n\n**Järkevyys:** Molemmilla voimilla on sama varsi, joten kokonaismomentti on voimien erotuksen $10\\,\\text{N}$ ja säteen tulo: $10\\,\\text{N}\\cdot 0{,}19\\,\\text{m} = 1{,}9\\,\\text{Nm}$. Suurempi voima kiertää vastapäivään, joten etumerkki on positiivinen, ja pyörä alkaa kääntyä vastapäivään."
+      "solution": "**Annettu:** ohjauspyörän säde $R = 0{,}19\\,\\text{m}$, vasemman käden voima $F_1 = 25\\,\\text{N}$ vastapäivään, oikean käden voima $F_2 = 15\\,\\text{N}$ myötäpäivään, molemmat kehän suuntaisia\n\n**Kysytty:** kokonaismomentti $\\Sigma M$ akselin suhteen yksikössä $\\text{Nm}$, vastapäivään positiivisena\n\n**Periaate:** Ohjauspyörä kiertyy akselinsa ympäri, joten kunkin voiman vääntövaikutuksen kertoo sen momentti. Kehän suuntainen voima on kohtisuorassa sädettä vastaan, joten sen varsi on säde. Kokonaismomentti on momenttien summa etumerkkeineen.\n\n**Kaava:** $M_1 = F_1 R$ ja $M_2 = -F_2 R$, joten $\\Sigma M = F_1 R - F_2 R$\n\n**Muunnokset:** Voimat ovat newtoneina ja säde metreinä, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $\\Sigma M = 25\\,\\text{N}\\cdot 0{,}19\\,\\text{m} - 15\\,\\text{N}\\cdot 0{,}19\\,\\text{m} = 4{,}75\\,\\text{Nm} - 2{,}85\\,\\text{Nm} = 1{,}9\\,\\text{Nm}$\n\n**Vastaus:** $1{,}9\\,\\text{Nm}$ vastapäivään, kaksi merkitsevää numeroa kuten säteessä $0{,}19\\,\\text{m}$ ja voimissa.\n\n**Järkevyys:** Molemmilla voimilla on sama varsi, joten kokonaismomentti on voimien erotuksen $10\\,\\text{N}$ ja säteen tulo: $10\\,\\text{N}\\cdot 0{,}19\\,\\text{m} = 1{,}9\\,\\text{Nm}$. Suurempi voima kiertää vastapäivään, joten etumerkki on positiivinen: käsien voimat kiertävät pyörää yhdessä vastapäivään."
     },
     {
       "id": "check-3",

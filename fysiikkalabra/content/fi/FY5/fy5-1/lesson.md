@@ -76,7 +76,7 @@
 ## Ydinajatus
 Voima voi muuttaa kappaleen liikettä, mutta se voi myös kiertää kappaletta. Kun kappale on kiinni akselissa, kuten ovi saranoissaan, mutteri pultissa tai keinulauta tuessaan, se ei pääse siirtymään vaan voi vain kiertyä akselin ympäri. Tätä akselia kutsutaan **kiertoakseliksi**. Voiman kykyä kiertää kappaletta kiertoakselin ympäri kutsutaan **vääntövaikutukseksi**, ja sen suuruutta mitataan **momentilla** (voiman momentti). Vääntövaikutus ei riipu pelkästään voiman suuruudesta. Siihen vaikuttavat myös voiman suunta ja se, mihin kohtaan kappaletta voima vaikuttaa.
 
-### Ovi ja voiman vaikutuskohta
+### Ovi ja voiman otekohta
 Ovea on helppo avata työntämällä kahvasta, joka on kaukana saranoista. Jos samansuuruisella voimalla työnnetään läheltä saranaa, ovi kääntyy paljon vaikeammin. Jos taas työnnetään oven päästä oven suuntaisesti kohti saranaa, ovi ei käänny lainkaan, vaikka voima on yhtä suuri. Kuvan kolme voimaa $\overline{F}_1$, $\overline{F}_2$ ja $\overline{F}_3$ ovat siis yhtä suuria, mutta niiden vääntövaikutukset saranan suhteen ovat aivan erilaiset.
 
 <svg data-fig="ovi" viewBox="0 0 600 330" role="img" aria-label="Ovi ylhäältä katsottuna. Vasemmalla seinä ja sarana, josta ovi lähtee vaakasuorana lautana oikealle. Kolme yhtä pitkää punaista voimanuolta: F1 kahvan kohdalla kohtisuoraan ovea vastaan, F2 lähellä saranaa samoin kohtisuoraan ja F3 oven päässä oven suuntaisesti kohti saranaa. Katkoviivainen kaari näyttää, mihin suuntaan ovi aukeaa. Kaavakuva, ei mittakaavassa." style="max-width:100%;font-size:24px">
@@ -91,12 +91,12 @@ Ovea on helppo avata työntämällä kahvasta, joka on kaukana saranoista. Jos s
   <path d="M524,250 A440,440 0 0 0 486,71" fill="none" stroke="#6b7480" stroke-width="1.5" stroke-linejoin="round" stroke-dasharray="7 6"/>
   <rect x="84" y="242" width="440" height="16" rx="2" fill="url(#fy51-ovi-wood)" stroke="#a97a35" stroke-width="2.5"/>
   <circle cx="84" cy="250" r="11" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
-  <foreignObject x="48.5" y="273.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{sarana}$</div></foreignObject>
+  <foreignObject x="68.5" y="275.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{sarana}$</div></foreignObject>
   <rect x="452" y="258" width="26" height="12" rx="3" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
   <foreignObject x="430" y="275.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{kahva}$</div></foreignObject>
   <line x1="465" y1="242" x2="465" y2="167" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
   <path d="M465,150 L473,168 L457,168 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <foreignObject x="482" y="141.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#c92a2a">$\overline{F}_1$</div></foreignObject>
+  <foreignObject x="403" y="141.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#c92a2a">$\overline{F}_1$</div></foreignObject>
   <line x1="150" y1="242" x2="150" y2="167" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
   <path d="M150,150 L158,168 L142,168 Z" fill="#c92a2a" stroke-linejoin="round"/>
   <foreignObject x="167" y="141.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#c92a2a">$\overline{F}_2$</div></foreignObject>
@@ -107,7 +107,7 @@ Ovea on helppo avata työntämällä kahvasta, joka on kaukana saranoista. Jos s
 </svg>
 
 ### Voiman varsi
-Vääntövaikutuksen ratkaisee voiman **vaikutussuora** eli suora, joka kulkee voiman vaikutuskohdan kautta voiman suuntaan. **Voiman varsi** $r$ on kiertoakselin kohtisuora etäisyys voiman vaikutussuorasta. Kun voima on kohtisuorassa avaimen vartta vastaan, varsi on sama kuin vaikutuskohdan etäisyys $d$ akselista. Kun voima on vinossa, varsi on lyhyempi kuin $d$. Jos vaikutussuora kulkee kiertoakselin kautta, varsi on nolla, eikä voima kierrä kappaletta lainkaan. Siksi oven suuntainen voima $\overline{F}_3$ ei avaa ovea.
+Vääntövaikutuksen ratkaisee voiman **vaikutussuora** eli suora, joka kulkee voiman otekohdan (kohdan, jossa voima vaikuttaa kappaleeseen) kautta voiman suuntaan. **Voiman varsi** $r$ on kiertoakselin kohtisuora etäisyys voiman vaikutussuorasta. Kun voima on kohtisuorassa avaimen vartta vastaan, varsi on sama kuin otekohdan etäisyys $d$ akselista. Kun voima on vinossa, varsi on lyhyempi kuin $d$. Jos vaikutussuora kulkee kiertoakselin kautta, varsi on nolla, eikä voima kierrä kappaletta lainkaan. Siksi oven suuntainen voima $\overline{F}_3$ ei avaa ovea.
 
 <svg data-fig="varsi" viewBox="0 0 600 340" role="img" aria-label="Kiintoavain mutterin ympärillä. Mutterin keskellä on kiertoakseli O. Avaimen varsi osoittaa vaakasuoraan oikealle, ja käsi vetää sitä kohdassa, joka on etäisyyden d päässä akselista. Voima F osoittaa vinosti ylös oikealle, 60 asteen kulmassa varren jatkeeseen nähden. Voiman vaikutussuora on piirretty katkoviivalla molempiin suuntiin. Akselista vaikutussuoralle piirretty kohtisuora jana on voiman varsi r, ja se on lyhyempi kuin d. Kaavakuva." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy51-varsi-steel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c4ccd4"/><stop offset="1" stop-color="#8a96a3"/></linearGradient></defs>
@@ -148,7 +148,7 @@ Momentilla on suuruuden lisäksi kiertosuunta. Tässä kirjassa vastapäivään 
 ```latex
 \Sigma M = M_1 + M_2 + M_3 + \ldots
 ```
-missä $\Sigma M$ on kokonaismomentti ($\text{Nm}$) ja $M_1$, $M_2$, … yksittäisten voimien momentit saman valitun kiertoakselin suhteen ($\text{Nm}$). Jos levossa olevaan kappaleeseen vaikuttava kokonaismomentti ei ole nolla, kappale alkaa kiertyä kokonaismomentin suuntaan. Milloin kappale pysyy paikallaan, tutkitaan tarkemmin luvussa *Tasapaino kiertymisen suhteen*.
+missä $\Sigma M$ on kokonaismomentti ($\text{Nm}$) ja $M_1$, $M_2$, … yksittäisten voimien momentit saman valitun kiertoakselin suhteen ($\text{Nm}$). Jos kiinteän akselin ympäri kiertyvään, levossa olevaan kappaleeseen vaikuttava kokonaismomentti ei ole nolla, kappale alkaa kiertyä kokonaismomentin suuntaan. Milloin kappale pysyy paikallaan, tutkitaan tarkemmin luvussa *Tasapaino kiertymisen suhteen*.
 
 <svg data-fig="suunta" viewBox="0 0 600 320" role="img" aria-label="Kaksi tilannetta vierekkäin. Kummassakin vaakasuora sauva on kiinni akselissa O vasemmasta päästään. Vasemmalla voima F vaikuttaa sauvan oikeaan päähän ylöspäin, ja kaarinuoli akselin ympärillä kiertää vastapäivään: momentti on positiivinen. Oikealla voima vaikuttaa sauvan päähän alaspäin, ja kaarinuoli kiertää myötäpäivään: momentti on negatiivinen." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy51-suunta-44" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f1dfb5"/><stop offset="1" stop-color="#d9b26a"/></linearGradient><linearGradient id="fy51-suunta-344" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f1dfb5"/><stop offset="1" stop-color="#d9b26a"/></linearGradient></defs>
@@ -176,13 +176,13 @@ missä $\Sigma M$ on kokonaismomentti ($\text{Nm}$) ja $M_1$, $M_2$, … yksitt�
 </svg>
 
 ### Vinon voiman varsi
-Usein tiedetään vaikutuskohdan etäisyys $d$ kiertoakselista ja kulma $\alpha$, jonka voima muodostaa akselista vaikutuskohtaan kulkevan suoran (esimerkiksi avaimen varren jatkeen) kanssa. Akseli, vaikutuskohta ja varren kantapiste muodostavat suorakulmaisen kolmion, jonka hypotenuusa on $d$. Varsi on kulman $\alpha$ vastainen kateetti:
+Usein tiedetään otekohdan etäisyys $d$ kiertoakselista ja kulma $\alpha$, jonka voima muodostaa akselista otekohtaan kulkevan suoran (esimerkiksi avaimen varren jatkeen) kanssa. Akseli, otekohta ja varren kantapiste muodostavat suorakulmaisen kolmion, jonka hypotenuusa on $d$. Varsi on kulman $\alpha$ vastainen kateetti:
 ```latex
 r = d\sin\alpha
 ```
-missä $r$ on voiman varsi ($\text{m}$), $d$ vaikutuskohdan etäisyys kiertoakselista ($\text{m}$) ja $\alpha$ voiman ja varren jatkeen välinen kulma. Kun $\alpha = 90^\circ$, $r = d$ ja momentti on suurin. Kun $\alpha = 0^\circ$ tai $\alpha = 180^\circ$, $r = 0$.
+missä $r$ on voiman varsi ($\text{m}$), $d$ otekohdan etäisyys kiertoakselista ($\text{m}$) ja $\alpha$ voiman ja varren jatkeen välinen kulma. Kun $\alpha = 90^\circ$, $r = d$ ja momentti on suurin. Kun $\alpha = 0^\circ$ tai $\alpha = 180^\circ$, $r = 0$.
 
-<svg data-fig="kulma" viewBox="0 0 600 340" role="img" aria-label="Suorakulmainen kolmio, jonka kärjet ovat kiertoakseli O, voiman vaikutuskohta ja akselista vaikutussuoralle piirretyn kohtisuoran kantapiste. Hypotenuusa on akselin ja vaikutuskohdan välinen etäisyys d. Kateetti akselista kantapisteeseen on voiman varsi r. Vaikutuskohdan kulma on alfa, sama kulma kuin voiman ja varren jatkeen välillä. Siksi r on d kertaa sini alfa." style="max-width:100%;font-size:24px">
+<svg data-fig="kulma" viewBox="0 0 600 340" role="img" aria-label="Suorakulmainen kolmio, jonka kärjet ovat kiertoakseli O, voiman otekohta ja akselista vaikutussuoralle piirretyn kohtisuoran kantapiste. Hypotenuusa on akselin ja otekohdan välinen etäisyys d. Kateetti akselista kantapisteeseen on voiman varsi r. Vaikutuskohdan kulma on alfa, sama kulma kuin voiman ja varren jatkeen välillä. Siksi r on d kertaa sini alfa." style="max-width:100%;font-size:24px">
   <path d="M92,104 L422,104 L228.5,266.5 Z" fill="#eef5f9" stroke-linejoin="round"/>
   <line x1="201" y1="289.5" x2="514" y2="27" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="7 6"/>
   <line x1="422" y1="104" x2="486" y2="104" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="7 6"/>
@@ -246,14 +246,14 @@ M &= F d\sin\alpha \\
 
 <!-- vaihe -->
 
-**Järkevyys.** Jos sama voima vaikuttaisi kohtisuoraan vartta vastaan, varsi olisi koko $0{,}35\,\text{m}$ ja momentti $240\,\text{N}\cdot 0{,}35\,\text{m} = 84\,\text{Nm}$. Vino veto antaa vähemmän, koska $\sin 65^\circ \approx 0{,}91 < 1$. Mutteri siis aukeaisi samalla voimalla, kun vetäisi kohtisuoraan vartta vastaan.
+**Järkevyys.** Jos sama voima vaikuttaisi kohtisuoraan vartta vastaan, varsi olisi koko $0{,}35\,\text{m}$ ja momentti $240\,\text{N}\cdot 0{,}35\,\text{m} = 84\,\text{Nm}$. Vino veto antaa vähemmän, koska $\sin 65^\circ \approx 0{,}91 < 1$. Mutteri aukeaisi siis samalla voimalla, jos vedettäisiin kohtisuoraan vartta vastaan.
 
 ## Yleinen virhekäsitys
-Momenttia ei saada kertomalla voima etäisyydellä vaikutuskohtaan, vaan etäisyydellä vaikutussuoraan. Etäisyys $d$ ja varsi $r$ ovat yhtä suuret vain, kun voima on kohtisuorassa akselista vaikutuskohtaan kulkevaa suoraa vastaan. Toinen virhe on ajatella, että pitkä avain lisää voimaa. Käden voima on sama, mutta pitkällä avaimella sen varsi on pidempi, joten momentti on suurempi. Mutterin aukeaminen ei vaadi tiettyä voimaa vaan tietyn momentin.
+Momenttia ei saada kertomalla voima etäisyydellä otekohtaan, vaan etäisyydellä vaikutussuoraan. Etäisyys $d$ ja varsi $r$ ovat yhtä suuret vain, kun voima on kohtisuorassa akselista otekohtaan kulkevaa suoraa vastaan. Toinen virhe on ajatella, että pitkä avain lisää voimaa. Käden voima on sama, mutta pitkällä avaimella sen varsi on pidempi, joten momentti on suurempi. Mutterin aukeaminen ei vaadi tiettyä voimaa vaan tietyn momentin.
 
 ## Tiivistelmä
 - Voiman vääntövaikutusta kiertoakselin suhteen mitataan momentilla $M = Fr$, ja sen yksikkö on newtonmetri $\text{Nm}$.
-- Voiman varsi $r$ on kiertoakselin kohtisuora etäisyys voiman vaikutussuorasta, ei etäisyys vaikutuskohtaan.
+- Voiman varsi $r$ on kiertoakselin kohtisuora etäisyys voiman vaikutussuorasta, ei etäisyys otekohtaan.
 - Vinon voiman varsi on $r = d\sin\alpha$. Voima, jonka vaikutussuora kulkee akselin kautta, ei kierrä kappaletta.
 - Vastapäivään kiertävä momentti on positiivinen ja myötäpäivään kiertävä negatiivinen. Kokonaismomentti on momenttien summa etumerkkeineen.
-- Jos levossa olevaan kappaleeseen vaikuttava kokonaismomentti ei ole nolla, kappale alkaa kiertyä.
+- Jos akselin ympäri kiertyvään, levossa olevaan kappaleeseen vaikuttava kokonaismomentti ei ole nolla, kappale alkaa kiertyä.

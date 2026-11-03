@@ -74,11 +74,11 @@ def door_hinge_view():
            "none", MUTED, 1.5, 'stroke-dasharray="7 6"')
     f.rect(hinge[0], 242, 440, 16, grad(f, "fy51-ovi-wood", SAND_LIGHT, SAND), GRAIN, 2.5, rx=2)
     f.circle(hinge[0], hinge[1], 11, IRON, INK, 2.5)
-    f.tex(hinge[0] + 6, 288, r"\text{sarana}", "middle", MUTED)
+    f.tex(hinge[0] + 26, 290, r"\text{sarana}", "middle", MUTED)
     f.rect(452, 258, 26, 12, IRON, INK, 2, rx=3)
     f.tex(465, 290, r"\text{kahva}", "middle", MUTED)
     L = 92
-    force(f, (465, 242), (465, 242 - L)); f.tex(482, 156, r"\overline{F}_1", "start", FORCE)
+    force(f, (465, 242), (465, 242 - L)); f.tex(448, 156, r"\overline{F}_1", "end", FORCE)
     force(f, (150, 242), (150, 242 - L)); f.tex(167, 156, r"\overline{F}_2", "start", FORCE)
     force(f, (524 + 6 + L, 250), (530, 250)); f.tex(570, 222, r"\overline{F}_3", "middle", FORCE)
     f.tex(300, 30, r"\text{ylhäältä katsottuna}", "middle", MUTED)
@@ -144,8 +144,8 @@ def suunta():
 
 def kulma():
     """Kaava: r = d sin α. The right triangle of the axis O, the point of application and the foot of the arm."""
-    f = Fig("fy51-kulma", 340, "Suorakulmainen kolmio, jonka kärjet ovat kiertoakseli O, voiman vaikutuskohta ja akselista vaikutussuoralle piirretyn "
-            "kohtisuoran kantapiste. Hypotenuusa on akselin ja vaikutuskohdan välinen etäisyys d. Kateetti akselista kantapisteeseen on voiman "
+    f = Fig("fy51-kulma", 340, "Suorakulmainen kolmio, jonka kärjet ovat kiertoakseli O, voiman otekohta ja akselista vaikutussuoralle piirretyn "
+            "kohtisuoran kantapiste. Hypotenuusa on akselin ja otekohdan välinen etäisyys d. Kateetti akselista kantapisteeseen on voiman "
             "varsi r. Vaikutuskohdan kulma on alfa, sama kulma kuin voiman ja varren jatkeen välillä. Siksi r on d kertaa sini alfa.")
     O, d, al = (92, 104), 330, 40
     Pp = (O[0] + d, O[1])
