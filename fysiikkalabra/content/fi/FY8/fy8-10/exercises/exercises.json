@@ -79,7 +79,7 @@
     {
       "id": "fy8-10-L3-01",
       "level": 3,
-      "text": "Helium-4-ytimestä halutaan irrottaa yksi neutroni, jolloin jäljelle jää helium-3-ydin: ${}^{4}_{2}\\text{He} \\to {}^{3}_{2}\\text{He} + \\text{n}$. Atomimassat ovat $m({}^{4}\\text{He}) = 4{,}002603\\,\\text{u}$ ja $m({}^{3}\\text{He}) = 3{,}016029\\,\\text{u}$, ja neutronin massa on $m_\\text{n} = 1{,}008665\\,\\text{u}$. Kuinka paljon energiaa neutronin irrottaminen vaatii? Käytä $1\\,\\text{u} = 931{,}5\\,\\tfrac{\\text{MeV}}{c^2}$. Anna vastaus megaelektronivoltteina ja vertaa sitä helium-4:n sidosenergiaan nukleonia kohti, $7{,}07\\,\\text{MeV}$.",
+      "text": "Helium-4-ytimestä halutaan irrottaa yksi neutroni, jolloin jäljelle jää helium-3-ydin: ${}^{4}_{2}\\text{He} \\to {}^{3}_{2}\\text{He} + \\text{n}$. Atomimassat ovat $m({}^{4}\\text{He}) = 4{,}002603\\,\\text{u}$ ja $m({}^{3}\\text{He}) = 3{,}016029\\,\\text{u}$, ja neutronin massa on $m_\\text{n} = 1{,}008665\\,\\text{u}$. Kuinka paljon energiaa neutronin irrottaminen vaatii? Käytä $1\\,\\text{u} = 931{,}5\\,\\tfrac{\\text{MeV}}{c^2}$. Anna vastaus megaelektronivoltteina.",
       "answer": 20.58,
       "unit": "MeV",
       "tolerance": 0.02

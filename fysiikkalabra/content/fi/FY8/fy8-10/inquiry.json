@@ -16,7 +16,7 @@
       "stage": "herata",
       "type": "hook",
       "text": "Helium-4-atomissa on kaksi protonia, kaksi neutronia ja kaksi elektronia. Samat hiukkaset ovat kahdessa vetyatomissa ja kahdessa neutronissa, ja niiden yhteinen massa on $4{,}032980\\,\\text{u}$. Helium-4-atomin massa on kuitenkin vain $4{,}002603\\,\\text{u}$. Ero on alle prosentti, mutta massat tunnetaan miljoonasosan tarkkuudella, joten ero on todellinen.",
-      "question": "Mihin osa massasta katoaa, kun protonit ja neutronit liittyvät yhteen ytimeksi?"
+      "question": "Mihin helium-4:n puuttuva massa on mennyt, kun protonit ja neutronit liittyvät yhteen ytimeksi?"
     },
     {
       "id": "kertaus",
@@ -370,10 +370,10 @@
       "title": "3. Selitä ja vertaa",
       "optional": true,
       "prompt": "Kun hiili palaa, $\\text{C} + \\text{O}_2 \\to \\text{CO}_2$, jokaista $44{,}0\\,\\text{g}$:aa lähtöaineita kohti vapautuu $393{,}5\\,\\text{kJ}$ energiaa. Muuttuuko massa palamisessa? Miksi kemiassa sanotaan, että massa säilyy, kun taas ydinreaktioissa energia lasketaan massan muutoksesta?",
-      "model": "Massa muuttuu, koska massan ja energian ekvivalenssi koskee kaikkia energian muutoksia. Palamistuotteiden massa on pienempi määrällä $\\Delta m = \\tfrac{E}{c^2} = \\tfrac{393{,}5 \\cdot 10^{3}\\,\\text{J}}{(2{,}998 \\cdot 10^{8}\\,\\text{m/s})^2} \\approx 4{,}4 \\cdot 10^{-12}\\,\\text{kg}$, mikä on noin $10^{-10}$ eli kymmenesmiljardisosa lähtöaineiden massasta. Niin pientä muutosta ei voi punnita, joten kemiassa massa säilyy käytännössä. Ydinreaktioissa energiat ovat miljoonia kertoja suurempia: esimerkiksi helium-4-ytimen massavaje on noin $0{,}8\\,\\%$ atomin massasta. Siksi ydinreaktion energia lasketaan massojen erotuksesta.",
+      "model": "Massa muuttuu, koska massan ja energian ekvivalenssi koskee kaikkia energian muutoksia. Palamistuotteiden massa on pienempi määrällä $\\Delta m = \\tfrac{E}{c^2} = \\tfrac{393{,}5 \\cdot 10^{3}\\,\\text{J}}{(2{,}998 \\cdot 10^{8}\\,\\text{m/s})^2} \\approx 4{,}4 \\cdot 10^{-12}\\,\\text{kg}$, mikä on noin $10^{-10}$ eli kymmenesmiljardisosa lähtöaineiden massasta. Niin pientä muutosta ei voi punnita, joten kemiassa massa säilyy käytännössä. Ydinreaktioissa suhteellinen massan muutos on satojatuhansia tai miljoonia kertoja suurempi: uraani-238:n alfahajoamisessa noin $2 \\cdot 10^{-5}$ ja uraani-235:n fissiossa noin $10^{-3}$ lähtöaineiden massasta. Siksi ydinreaktion energia lasketaan massojen erotuksesta.",
       "criteria": [
         "Totean, että massa pienenee myös palamisessa määrällä $\\tfrac{E}{c^2}$, ja arvioin sen suuruusluokan.",
-        "Vertaan suhteellisia massan muutoksia: kemiallisessa reaktiossa noin $10^{-10}$, ydinreaktiossa noin $10^{-3}$ tai enemmän.",
+        "Vertaan suhteellisia massan muutoksia: kemiallisessa reaktiossa noin $10^{-10}$, ydinreaktiossa noin $10^{-5}$–$10^{-3}$, satojatuhansia tai miljoonia kertoja enemmän.",
         "Selitän, että kemiassa massan muutos on mittaamattoman pieni, joten massan säilymistä voi käyttää."
       ]
     },

@@ -155,7 +155,8 @@ def kayra_points():
     f = Fig("fy810-kayra-t", 350, "Kuvaaja mittakaavassa: sidosenergia nukleonia kohti megaelektronivoltteina massaluvun A "
             "funktiona, A nollasta 250:een, pystyakseli nollasta 10 megaelektronivolttiin. Pisteet ovat 32 ytimen arvoja "
             "atomimassoista laskettuina: arvo nousee jyrkästi kevyillä ytimillä, on suurin noin 8,8 MeV, kun A on noin 60, ja "
-            "pienenee loivasti arvoon 7,6 MeV, kun A on noin 240. Kuvaan ei ole merkitty ytimien nimiä eikä reaktioita.")
+            "pienenee loivasti arvoon 7,6 MeV, kun A on noin 240. Lukemia: kun A on noin 30, arvo on noin 8,5 MeV; "
+            "kun A on noin 60, noin 8,8 MeV; kun A on noin 120, noin 8,5 MeV; kun A on noin 240, noin 7,6 MeV. Kuvaan ei ole merkitty ytimien nimiä eikä reaktioita.")
     ax = _curve_axes(f)
     for s, _, Z, A, _ in LA.NUCLIDES:
         ax.point(A, a[f"{s}{A}-EBA"], HEAT, 5.5)

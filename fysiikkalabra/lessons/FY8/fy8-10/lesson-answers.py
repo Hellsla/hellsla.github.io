@@ -58,8 +58,8 @@ u_kg, c, e = 1.66054e-27, 2.99792e8, 1.602177e-19
 a["u-J"] = u_kg * c ** 2                                  # 1,49241e-10 J
 a["u-MeV"] = u_kg * c ** 2 / e / 1e6                      # 931,49 MeV -> 931,5 MeV
 a["u-c2"] = c ** 2                                        # 8,98752e16 m²/s²
-# the same with the course's four-figure constants: 931,6 MeV (why five figures are used here)
-a["u-MeV-4fig"] = 1.6605e-27 * 2.998e8 ** 2 / 1.602e-19 / 1e6
+# the same with four-figure constants 1,661e-27 kg, 2,998e8 m/s, 1,602e-19 J: 931,9 MeV (why six figures are used here)
+a["u-MeV-4fig"] = 1.661e-27 * 2.998e8 ** 2 / 1.602e-19 / 1e6
 # E = mc² for 1,00 g (Ydinajatus, scale): 8,99e13 J
 a["gram-J"] = 1.00e-3 * 2.998e8 ** 2
 
@@ -98,7 +98,9 @@ a["po-alpha-share"] = 206 / 210 * a["po-Q"]               # 5,30 MeV: the alpha'
 # ---------------------------------------------------------------- Tarkista 3: burning carbon, C + O2 -> CO2, 393,5 kJ per mol
 a["coal-dm"] = 393.5e3 / 2.998e8 ** 2                     # 4,38e-12 kg per 44,0 g of reactants
 a["coal-ratio"] = a["coal-dm"] / 44.0e-3                  # 9,95e-11, about 1e-10
-a["nuc-ratio"] = a["U238-ratio"] / 100                    # 0,0081 for comparison
+a["nuc-ratio"] = a["U238-ratio"] / 100                    # 0,0081: binding mass defect of U-238 (not a reaction)
+a["u238-alpha-rel"] = q_u238 / MASS["U238"]               # 1,93e-5: relative mass change in U-238 alpha decay
+a["fission-rel"] = 200 / ((MASS["U235"] + M_N) * U_MEV)   # 9,1e-4, about 1e-3: fission of U-235, about 200 MeV
 
 # ---------------------------------------------------------------- Tarkista 2: the curve, E_B/A at A ≈ 240, 120, 60, 30 (read off)
 a["chk-fission"] = 120 * 8.50 * 2 - 240 * 7.58            # about +220 MeV: splitting A 240 into 2 x 120 releases energy

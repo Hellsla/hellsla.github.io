@@ -8,7 +8,7 @@ import json
 M_H, M_N, U_MEV, U_KG, C = 1.007825, 1.008665, 931.5, 1.66054e-27, 2.998e8
 a = {}
 # Level 1: one formula, values given
-a["fy8-10-L1-01"] = 6 * M_H + 6 * M_N - 12.000000      # C-12 mass defect 0,098940 u -> 0,09894 u
+a["fy8-10-L1-01"] = 6 * M_H + 6 * M_N - 12.000000      # C-12 mass defect 0,098940 u (six decimals as the data)
 a["fy8-10-L1-02"] = 0.137005 * U_MEV                   # O-16, Δm = 0,137005 u: E_B = 127,62 MeV -> 127,6 MeV
 a["fy8-10-L1-03"] = 1801.7 / 238                       # U-238, E_B = 1801,7 MeV: 7,5702 MeV per nucleon -> 7,570 MeV
 a["fy8-10-L1-04"] = 1.00e-3 * C ** 2 / 1e13            # E = mc² for 1,00 g: 8,988e13 J -> 8,99 · 10¹³ J
@@ -19,7 +19,7 @@ a["fy8-10-L2-01"] = dm_fe * U_MEV / 56                 # E_B = 492,26 MeV, per n
 dm_ra = 226.025410 - 222.017578 - 4.002603             # Ra-226 -> Rn-222 + He-4: 0,005229 u
 a["fy8-10-L2-02"] = dm_ra * U_MEV                      # Q = 4,8708 MeV -> 4,871 MeV
 dm_kg = 0.137005 * U_KG                                # O-16: 2,27502e-28 kg
-a["fy8-10-L2-03"] = dm_kg * C ** 2 / 1e-11             # E_B = 2,04477e-11 J -> 2,045 · 10⁻¹¹ J
+a["fy8-10-L2-03"] = dm_kg * C ** 2 / 1e-11             # E_B = 2,04479e-11 J -> 2,045 · 10⁻¹¹ J
 a["fy8-10-L2-04"] = 3.83e26 * 24 * 3600 / C ** 2 / 1e14   # Sun 3,83e26 W for one day: Δm = 3,682e14 kg -> 3,68 · 10¹⁴ kg
 # Level 3: reasoning or an unfamiliar context
 a["fy8-10-L3-01"] = (3.016029 + M_N - 4.002603) * U_MEV   # He-4 -> He-3 + n: 0,022091 u, 20,577 MeV -> 20,58 MeV

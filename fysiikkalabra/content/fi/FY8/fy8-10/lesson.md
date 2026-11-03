@@ -147,7 +147,15 @@ Massavaje ei ole kadonnutta ainetta. Einsteinin suhteellisuusteorian mukaan mass
 </svg>
 
 ### Miksi massan muutosta ei huomaa arjessa
-Massan ja energian ekvivalenssi koskee kaikkia energian muutoksia, mutta $c^2$ on niin suuri, että tavallisissa ilmiöissä massan muutos on mittaamattoman pieni. Grammaa massaa vastaa energia $1{,}00 \cdot 10^{-3}\,\text{kg} \cdot (2{,}998 \cdot 10^{8}\,\text{m/s})^2 \approx 9{,}0 \cdot 10^{13}\,\text{J}$. Kun hiili palaa, massa pienenee vain noin kymmenesmiljardisosan. Ytimissä sidosenergia on niin suuri, että massavaje on noin $0{,}8\,\%$ atomin massasta niin helium-4:llä kuin uraani-238:llakin. Siksi ydinfysiikassa energia lasketaan suoraan massojen erotuksesta.
+Massan ja energian ekvivalenssi koskee kaikkia energian muutoksia, mutta $c^2$ on niin suuri, että tavallisissa ilmiöissä massan muutos on mittaamattoman pieni. Grammaa massaa vastaa energia
+```latex
+\begin{aligned}
+&E = 1{,}00 \cdot 10^{-3}\,\text{kg} \\
+&\quad \cdot (2{,}998 \cdot 10^{8}\,\text{m/s})^2 \\
+&\approx 9{,}0 \cdot 10^{13}\,\text{J}.
+\end{aligned}
+```
+Kun hiili palaa, massa pienenee vain noin kymmenesmiljardisosan. Ytimissä sidosenergia on niin suuri, että massavaje on noin $0{,}8\,\%$ atomin massasta niin helium-4:llä kuin uraani-238:llakin. Siksi ydinfysiikassa energia lasketaan suoraan massojen erotuksesta.
 
 ## Kaava: Sidosenergia
 
@@ -175,7 +183,7 @@ Ytimien energiat ilmoitetaan megaelektronivoltteina: $1\,\text{MeV} = 10^{6}\,\t
 &\approx 931{,}5\,\text{MeV}
 \end{aligned}
 ```
-Siis $1\,\text{u} = 931{,}5\,\tfrac{\text{MeV}}{c^2}$. Kun massavaje on atomimassayksikköinä, tämä sijoitetaan yksikön paikalle, ja $c^2$ supistuu: esimerkiksi $0{,}001000\,\text{u} \cdot c^2 = 0{,}001000 \cdot 931{,}5\,\tfrac{\text{MeV}}{c^2} \cdot c^2 = 0{,}9315\,\text{MeV}$. Neljän numeron vakioilla tulos olisi $931{,}6\,\text{MeV}$, joten pieni pyöristys näkyy jo neljännessä numerossa.
+Siis $1\,\text{u} = 931{,}5\,\tfrac{\text{MeV}}{c^2}$. Kun massavaje on atomimassayksikköinä, tämä sijoitetaan yksikön paikalle, ja $c^2$ supistuu: esimerkiksi $0{,}001000\,\text{u} \cdot c^2 = 0{,}001000 \cdot 931{,}5\,\tfrac{\text{MeV}}{c^2} \cdot c^2 = 0{,}9315\,\text{MeV}$. Neljän numeron vakioilla $1{,}661 \cdot 10^{-27}\,\text{kg}$, $2{,}998 \cdot 10^{8}\,\text{m/s}$ ja $1{,}602 \cdot 10^{-19}\,\text{J}$ tulos olisi $931{,}9\,\text{MeV}$, joten neljän numeron vakiot muuttavat jo neljättä numeroa.
 
 ### Sidosenergia nukleonia kohti
 Ytimien sidoksen lujuutta vertaillaan **sidosenergialla nukleonia kohti**
@@ -273,7 +281,7 @@ Kuvaajasta näkyy, milloin ydinreaktio vapauttaa energiaa: kun syntyvät ytimet 
 ```latex
 Q = (m_\text{alku} - m_\text{loppu})\,c^2
 ```
-missä $m_\text{alku}$ on lähtöaineiden ja $m_\text{loppu}$ syntyvien hiukkasten massojen summa. Kun $Q > 0$, energiaa vapautuu syntyvien hiukkasten liike-energiaksi ja gammasäteilyksi; kun $Q < 0$, reaktio tarvitsee energiaa. Atomimassoja voi käyttää, kun elektronien määrä on molemmin puolin sama, kuten alfahajoamisessa, beeta miinus -hajoamisessa ja useimmissa ydinreaktioissa. Esimerkiksi uraani-238:n alfahajoamisessa ${}^{238}_{92}\text{U} \to {}^{234}_{90}\text{Th} + {}^{4}_{2}\text{He}$ massa pienenee $0{,}004583\,\text{u}$, joten $Q = 0{,}004583 \cdot 931{,}5\,\text{MeV} \approx 4{,}27\,\text{MeV}$.
+missä $m_\text{alku}$ on lähtöaineiden ja $m_\text{loppu}$ syntyvien hiukkasten massojen summa. Kun $Q > 0$, energiaa vapautuu syntyvien hiukkasten liike-energiaksi ja gammasäteilyksi; kun $Q < 0$, reaktio tarvitsee energiaa. Atomimassoja voi käyttää, kun elektronien määrä on molemmin puolin sama, kuten alfahajoamisessa, beeta miinus -hajoamisessa ja useimmissa ydinreaktioissa. Beeta miinus -hajoamisessa syntyvän elektronin massaa ei lisätä erikseen, koska tytäratomin atomimassaan sisältyy jo yksi elektroni enemmän. Esimerkiksi uraani-238:n alfahajoamisessa ${}^{238}_{92}\text{U} \to {}^{234}_{90}\text{Th} + {}^{4}_{2}\text{He}$ massa pienenee $0{,}004583\,\text{u}$, joten $Q = 0{,}004583 \cdot 931{,}5\,\text{MeV} \approx 4{,}27\,\text{MeV}$.
 
 <svg data-fig="reaktio" viewBox="0 0 600 350" role="img" aria-label="Pylväskuva, pystyakseli mittakaavassa mutta katkaistu: se alkaa arvosta 238,040 u eikä nollasta. Vasen pylväs on uraani-238-atomin massa, 238,050787 u. Oikea pylväs on alfahajoamisessa syntyvien torium-234- ja helium-4-atomien yhteinen massa, 238,046204 u. Ero 0,004583 u on merkitty punaisella hakasulkeella, ja se vastaa reaktioenergiaa Q = 4,27 MeV." style="max-width:100%;font-size:24px">
   <line x1="130" y1="212" x2="560" y2="212" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -365,7 +373,7 @@ Moni ajattelee, että sidosenergia on ytimeen varastoitunutta energiaa, joka vap
 Toinen virhe on ajatella, että massa säilyy ydinreaktiossa kuten kemiassa. Ydinreaktiossa säilyvät massaluku eli nukleonien määrä ja varausluku, mutta massa muuttuu vapautuvan energian verran, $\Delta m = \tfrac{Q}{c^2}$.
 
 ## Tiivistelmä
-- Atomimassat ilmoitetaan atomimassayksikköinä: $1\,\text{u} = \tfrac{1}{12}$ hiili-12-atomin massasta $= 1{,}66054 \cdot 10^{-27}\,\text{kg}$.
+- Atomimassat ilmoitetaan atomimassayksikköinä: $1\,\text{u}$ on $\tfrac{1}{12}$ hiili-12-atomin massasta, eli $1\,\text{u} = 1{,}66054 \cdot 10^{-27}\,\text{kg}$.
 - Ydin on kevyempi kuin sen erilliset nukleonit. Massavaje on $\Delta m = Z\,m_\text{H} + N\,m_\text{n} - m_\text{atomi}$.
 - Sidosenergia $E_\text{B} = \Delta m\,c^2$ tarvitaan ytimen hajottamiseen nukleoneiksi, ja se vapautuu ytimen muodostuessa. Sijoitus $1\,\text{u} = 931{,}5\,\tfrac{\text{MeV}}{c^2}$ antaa energian megaelektronivoltteina.
 - Sidosenergia nukleonia kohti on suurin, noin $8{,}8\,\text{MeV}$, raudan ja nikkelin kohdalla; fuusio ja fissio vapauttavat energiaa, koska ne siirtävät nukleoneja tiiviimmin sidottuihin ytimiin.

@@ -5,7 +5,7 @@
 **Kaava:** $\Delta m = Z\,m_\text{H} + N\,m_\text{n} - m_\text{atomi}$
 **Muunnokset:** Ei tarvita: kaikki massat ovat atomimassayksikköinä.
 **Sijoitus:** $\Delta m = 6 \cdot 1{,}007825\,\text{u} + 6 \cdot 1{,}008665\,\text{u} - 12{,}000000\,\text{u} = 6{,}046950\,\text{u} + 6{,}051990\,\text{u} - 12{,}000000\,\text{u} = 0{,}098940\,\text{u}$
-**Vastaus:** $0{,}09894\,\text{u}$; massat on annettu kuuden desimaalin tarkkuudella, joten erotuksessa on myös kuusi desimaalia eli neljä merkitsevää numeroa.
+**Vastaus:** $0{,}098940\,\text{u}$, kuusi desimaalia kuten annetuissa massoissa.
 **Järkevyys:** Erillisten nukleonien massa on noin $12{,}10\,\text{u}$, joten massavaje on noin $0{,}8\,\%$ siitä, kuten ytimillä yleensä. Tulos on positiivinen, koska sitoutunut ydin on kevyempi kuin osansa.
 
 ## fy8-10-L1-02
@@ -22,10 +22,10 @@
 **Annettu:** uraani-238-ytimen sidosenergia $E_\text{B} = 1801{,}7\,\text{MeV}$, massaluku $A = 238$
 **Kysytty:** sidosenergia nukleonia kohti $\tfrac{E_\text{B}}{A}$ megaelektronivoltteina
 **Periaate:** Sidosenergia nukleonia kohti kertoo, kuinka paljon energiaa keskimäärin tarvitaan yhden nukleonin irrottamiseen. Se saadaan jakamalla koko sidosenergia nukleonien määrällä eli massaluvulla.
-**Kaava:** sidosenergia jaetaan tasan $A$ nukleonin kesken, $E_\text{B} = A \cdot \dfrac{E_\text{B}}{A}$, joten kysytty suure on $\dfrac{E_\text{B}}{A}$ eli koko sidosenergia jaettuna massaluvulla
+**Kaava:** $E_\text{B} = A \cdot \dfrac{E_\text{B}}{A}$, joten kysytty suure on $\dfrac{E_\text{B}}{A}$ eli sidosenergia jaettuna massaluvulla
 **Muunnokset:** Ei tarvita: energia on valmiiksi megaelektronivoltteina, ja massaluku on paljas luku.
 **Sijoitus:** $\dfrac{E_\text{B}}{A} = \dfrac{1801{,}7\,\text{MeV}}{238} = 7{,}5702\,\text{MeV}$
-**Vastaus:** $7{,}570\,\text{MeV}$, neljä merkitsevää numeroa; sidosenergiassa $1801{,}7\,\text{MeV}$ on viisi, ja massaluku on tarkka kokonaisluku.
+**Vastaus:** $7{,}570\,\text{MeV}$, neljä merkitsevää numeroa kuten muuntoluvussa $931{,}5\,\tfrac{\text{MeV}}{c^2}$, jolla sidosenergia $1801{,}7\,\text{MeV}$ on laskettu.
 **Järkevyys:** Sidosenergian kuvaajassa raskaimpien ytimien arvo on noin $7{,}6\,\text{MeV}$, vähemmän kuin raudan noin $8{,}8\,\text{MeV}$. Arvio $1800 : 240 = 7{,}5$ täsmää.
 
 ## fy8-10-L1-04
@@ -96,7 +96,7 @@
 **Muunnokset:** Yksikön $\text{u}$ paikalle sijoitetaan $931{,}5\,\tfrac{\text{MeV}}{c^2}$, jolloin $c^2$ supistuu.
 **Sijoitus:** $m_\text{loppu} - m_\text{alku} = 3{,}016029\,\text{u} + 1{,}008665\,\text{u} - 4{,}002603\,\text{u} = 0{,}022091\,\text{u}$, joten $E = 0{,}022091 \cdot 931{,}5\,\text{MeV} = 20{,}578\,\text{MeV}$
 **Vastaus:** $20{,}58\,\text{MeV}$, neljä merkitsevää numeroa kuten muuntoluvussa. Tämä on lähes kolme kertaa niin paljon kuin helium-4:n sidosenergia nukleonia kohti, $7{,}07\,\text{MeV}$.
-**Järkevyys:** Energian on oltava positiivinen, koska tiiviisti sidottua ydintä hajotetaan. Se on suurempi kuin keskiarvo $7{,}07\,\text{MeV}$, koska jäljelle jäävä helium-3 on paljon löyhemmin sidottu: sen sidosenergia on vain noin $7{,}7\,\text{MeV}$ koko ytimelle, joten neutronin irrotus vie suurimman osan helium-4:n sidosenergiasta $28{,}3\,\text{MeV}$. Siksi helium-4 on poikkeuksellisen pysyvä.
+**Järkevyys:** Energian on oltava positiivinen, koska tiiviisti sidottua ydintä hajotetaan. Se on suurempi kuin keskiarvo $7{,}07\,\text{MeV}$, koska jäljelle jäävä helium-3 on paljon löyhemmin sidottu: sen sidosenergia on vain noin $7{,}7\,\text{MeV}$ eli $2{,}6\,\text{MeV}$ nukleonia kohti, joten neutronin irrotus vie suurimman osan helium-4:n sidosenergiasta $28{,}3\,\text{MeV}$. Siksi helium-4 on poikkeuksellisen pysyvä.
 
 ## fy8-10-L3-02
 **Annettu:** deuteriumin $\tfrac{E_\text{B}}{A} = 1{,}112\,\text{MeV}$ ($A = 2$), helium-4:n $\tfrac{E_\text{B}}{A} = 7{,}074\,\text{MeV}$ ($A = 4$)

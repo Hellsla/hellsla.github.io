@@ -154,7 +154,7 @@ new p5((p) => {
     for (let v = 2; v <= 10; v += 2) { p.stroke(...INKC); p.line(G.gx0 - 5 * sk, GY(v), G.gx0, GY(v)); lab('$' + v + '$', G.gx0 - 8 * sk, GY(v) + 0.36 * fh, 'r', MUTEDC); }
     lab('$0$', G.gx0 - 8 * sk, G.gy0 + 6 * sk + fh, 'r', MUTEDC);
     lab('$A$', G.gx1 + 26 * sk, G.gy0 + 0.36 * fh, 'l', INKC);
-    lab(__('lab_akseli'), G.gx0 - 20 * sk, G.gy1 - 26 * sk, 'l', INKC);
+    lab(__('lab_akseli'), G.gx0 + 12 * sk, G.gy1 - 12 * sk, 'l', INKC);
     for (let i = 0; i < NUC.length; i++) {
       const T = calc(i), x = GX(T.A), y = GY(T.EBA);
       if (visited.has(i)) { p.fill(...HEATC); p.stroke(255); p.strokeWeight(1.5 * sk); p.circle(x, y, 9 * sk); }
