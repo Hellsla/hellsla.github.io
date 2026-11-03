@@ -334,6 +334,7 @@ def check_solutions(L, folder, answers):
     check_math(L, "solutions.md", text)
     blocks = re.split(r"^## ", text, flags=re.M)[1:]
     seen = {}
+    units = answer_units(folder)
     for b in blocks:
         head, _, body = b.partition("\n")
         eid = head.strip()
@@ -352,6 +353,8 @@ def check_solutions(L, folder, answers):
             L.warn("solutions.md", line, f"{eid}: numbers with units in the Kaava step; keep Kaava symbolic and put the numbers in Sijoitus (human rule 2)")
         words = len(body.split())
         if words > 260: L.warn("solutions.md", line, f"{eid}: {words} words; a complete solution is about 100–220 words, put long reasoning in Periaate and Järkevyys, not in Sijoitus")
+        bad_unit = answer_unit_mismatch(units.get(eid), seen[eid])
+        if bad_unit: L.err("solutions.md", line, f"{eid}: exercises.json unit '{units[eid]}' but the Vastaus gives {bad_unit} (2026-11-03, fy5-2)")
         m = re.search(r"\*\*Vastaus:?\*\*:?\s*([−-]?\d[\d\s]*(?:,\d+)?)(?:\s*(?:\\cdot|·|\\times|×)\s*10\^\{?([−-]?\d+)\}?)?", latex_plain(body))
         if m and eid in answers:
             ans, tol = answers[eid]
@@ -363,6 +366,27 @@ def check_solutions(L, folder, answers):
                 sci = ans != 0 and math.isclose(full, float(f"{ans:.{digits}g}"), rel_tol=1e-9)   # else the answer box takes the mantissa (fy3-10)
             if not sci and abs(got - ans) > max(tol, 0.005) * max(1, abs(ans)):
                 L.err("solutions.md", line, f"{eid}: Vastaus {m.group(1).strip()} does not match exercises.json answer {ans:g}")
+
+
+SI_UNITS = set("m s kg g N J W Pa K A V Hz Nm kN kJ kW kPa MJ MW GW GJ km cm mm h min t".split())
+
+
+def answer_units(folder):
+    """{exercise id: unit} of exercises.json."""
+    f = courses.lesson_file(folder, "exercises.json")
+    if not f.exists(): return {}
+    try: return {e["id"]: str(e.get("unit", "")).strip() for items in json.loads(f.read_text()).values() for e in items}
+    except (ValueError, KeyError, TypeError, AttributeError): return {}
+
+
+def answer_unit_mismatch(unit, body):
+    """The unit the solution's answer is written in, when it is a plain SI unit and not the exercise's own unit
+    (a task rewritten to ask for a force kept "unit": "m": fy5-2 L1-01, 2026-11-03); None when they agree or cannot be told."""
+    if unit not in SI_UNITS: return None
+    m = re.search(r"\*\*(?:Vastaus|Answer):?\*\*:?\s*(.*?)(?=\n\*\*|\Z)", body, re.S)
+    first = m and re.match(r"[^$]*\$([^$]*)\$", m.group(1))
+    k = first and re.search(r"\d(?:[\d\s]|\{,\}|\.)*\\,\\text\{([A-Za-z]+)\}", first.group(1))
+    return k.group(1) if k and k.group(1) in SI_UNITS and k.group(1) != unit else None
 
 
 def tex_plain(text):

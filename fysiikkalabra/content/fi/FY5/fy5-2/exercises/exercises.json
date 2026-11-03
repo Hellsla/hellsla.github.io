@@ -3,9 +3,9 @@
   {
    "id": "fy5-2-L1-01",
    "level": 1,
-   "text": "Sorkkarautaa käytetään vipuna naulan vetämiseen. Raudan tukipiste on $0{,}050\\,\\text{m}$:n päässä naulasta, ja käsi painaa rautaa pystysuoraan alas $80\\,\\text{N}$:n voimalla $0{,}60\\,\\text{m}$:n päässä tukipisteestä. Rauta on kevyt, joten sen paino voidaan jättää huomiotta. Kuinka suurella voimalla rauta vetää naulaa ylös, kun rauta on levossa?",
+   "text": "Sorkkarautaa käytetään vipuna naulan vetämiseen. Raudan tukipiste on vaakasuunnassa $0{,}050\\,\\text{m}$:n päässä naulasta, ja käsi painaa rautaa pystysuoraan alas $80\\,\\text{N}$:n voimalla vaakasuunnassa $0{,}60\\,\\text{m}$:n päässä tukipisteestä. Rauta on kevyt, joten sen paino voidaan jättää huomiotta. Kuinka suurella voimalla rauta vetää naulaa ylös, kun rauta on levossa?",
    "answer": 960,
-   "unit": "m",
+   "unit": "N",
    "tolerance": 0.02
   },
   {
