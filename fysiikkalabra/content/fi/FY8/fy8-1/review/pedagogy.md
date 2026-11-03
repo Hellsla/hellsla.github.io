@@ -1,21 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: 938cb46bc9a4e600
+CONTENT-HASH: a7773fffb83c1316
 
 ## Blocking
 
 ## Polish
-- inquiry.json:ennuste-1 — the hook already states that bright red light frees nothing, so the "right" option is nearly given before the student predicts. Fix: make prediction 1 about something the hook leaves open, e.g. natrium with 650 nm versus 500 nm, or ask what happens to the leaves if the red lamp is replaced by a dimmer UV lamp.
-- inquiry.json:koe-3 intro — the frequency role (Ek grows with f) gets a guess in the intro but not a committed, gated prediction like intensity does; "taajuus ratkaisee" is the less argued core idea. Fix: add a short third choice prediction before koe-3 (optional).
-- inquiry.json:tarkistus-1 distractor 4 feedback — "Elektroneja irtoaa siis UV-C-lampulla vähemmän kuin suuritehoisella UV-lampulla" brings in a lamp the student was never given. Fix: "…mutta niitä irtoaa: vähäinenkin UV-C-valo irrottaa elektroneja."
-- lesson.md "Yleinen virhekäsitys" — the second paragraph (photon is not a ball; interference needs the wave model) is a good guard but sits after the summary-level material; it will be skipped on a phone. Fix: keep, but shorten to two sentences.
+- inquiry.json simulaatio.calc — "Kuvassa fotoneja tulee $0{,}4$ sekunnissa intensiteetin prosenttiyksikköä kohti" reads as a time, not a rate — fix: "Kuvassa fotoneja tulee $0{,}4$ kappaletta sekunnissa jokaista intensiteetin prosenttiyksikköä kohti, eli intensiteetillä $50\,\%$ niitä tulee $20$ sekunnissa."
+- inquiry.json tarkistus-3 criteria 4 — "nopeampia elektroneja saadaan lyhyemmällä aallonpituudella" goes beyond the question (what intensity changes and does not) — fix: drop it from the criteria, or ask in the prompt what would speed the electrons up.
+- inquiry.json koe-3 intro — "Arvaa ensin" is not recorded or gated, so the prediction stays private and unrevisited in Palaa ennusteisiisi — fix: make it a third short prediction, or accept as optional thinking and say "mieti ensin".
+- inquiry.json koe-1 and koe-2 — two near-identical intensity experiments; fine for refuting two separate predictions, but koe-2 could be marked optional if the hour runs short.
 
 ## Checked
-- Round-1 polish done: eV defined in the sim howto, 1240 eV nm introduced in the Kaava section, the green-light claim corrected (544 nm is the limit), exit ticket now tests brightness versus colour.
-- Opening question (UV versus bright red) is committed to in the hook, predicted, investigated (koe-1, koe-3) and answered in johtopäätös and pohdi; nothing disclosed before the commit.
-- Predictions can be refuted: koe-1 gives n = 0 at every intensity at 650 nm; koe-2 shows n doubling with Ek,max fixed; each option's feedback repairs its misconception with evidence.
-- Model values recomputed (1,91; 3,06; 0,78; 0,20 -> 0,82 eV; lambda0 = 544 nm; 653 nm for 1,90 eV); calc and model answer call them model values.
-- Sim at 390 px (capture): legible, bars to scale and labelled with symbols, readout clear, help behind named boxes.
-- Figures (energia figure checked at 390 px) are recognisable, colour paired with labels and wavelengths; descriptions give the data without the answer.
-- Worked example staged one step per stage; conversion, rounding and reasonableness explained.
-- Core path is one lesson: kertaus, virhe, pohdi, tarkistus-3 are optional.
-- Finnish reads cleanly at upper-secondary level; case endings after number+unit correct.
+- Path: hook (zinc, UV vs red) → predictions (Na, red; Na, violet) → sim → three experiments → theory → example → transfer → checks; the opening question is answered in the conclusion and reflect.
+- Both predictions are refutable by the sim (n = 0 at 650 nm at any I; n doubles, Ek,max stays 0,78 eV); each wrong option's feedback repairs its misconception and is revealed only after min 2 records.
+- Koe-3 numeric (544 nm) fits the 5 nm table and its tolerance; the hints are progressive; the mistake value (f0) is real.
+- Conclusion model answer numbers check: 2,48→3,10 eV, Ek 0,20→0,82 eV, W = 2,28 eV constant.
+- Figures: energy diagram (fig 7) and Ek–f graph (fig 9) legible at 390 px, colour never alone (labels hf<W, hf=W, hf>W; metal names beside lines); alt texts carry the data without giving answers.
+- Sim at 390 px and 1280 px: controls, readout and energy bars understandable and uncluttered; the model-assumption box states the simplifications (every sufficient photon releases an electron, rate not realistic).
+- Worked example staged one step per stage, with unit conversion and sanity check; differs from the exercises in the brief.
+- Tarkista: concept check (lamps) with misconception distractors, calculation check, explain with observable criteria; exit ticket tests threshold and intensity versus frequency.
+- Finnish: glossary terms and case after number+unit correct; reading level suitable. Workload one lesson with the optional items.

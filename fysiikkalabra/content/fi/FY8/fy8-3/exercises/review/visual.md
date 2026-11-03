@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 5b16741581f0e401
+CONTENT-HASH: 9bd4d1bd382e5e6d
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fy8-3-L2-03 / fy8-3/levels-task — kuva toimii: akseli E (eV), ruudukko 1 eV, tasot E1–E4 luettavissa, kuvaus vastaa kuvaa eikä paljasta vastausta; E-tunnus ja asteikon "0" ovat lähellä toisiaan yläkulmassa — lisää väliä, jos kuva muuten muokataan.
+(none)
 
 ## Checked
-- open-exercises L1 osa 1, L2 osat 3–5 (kuva, ratkaisu, vastaus, järkevyys), tehtävätekstit ja solutions.md luettu; yksiköt ovat LaTeXissa, desimaalipilkku ja \cdot oikein.
+- Delta (hash 9bd4d1bd382e5e6d): open-exercises L2-4 (tehtävä 4, uusi muotoilu "Fotoni ionisoi atomin; vedyn ionisaatioenergia perustilasta on $13{,}6\,\text{eV}$", ratkaisu ja kaavat), L2-5 (tehtävä 3, kuvaajan lukeminen ja ratkaisu), L3-1 (lisätty ohjauslause, Periaate-kohdan oletus yhdestä törmäyksestä).
+- Yksiköt LaTeXissa, desimaalipilkku ja \cdot oikein, kappalerakenne selkeä, solutions.md:n lisäys sujuva eikä riko asettelua.
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 4 · accessibility 4

@@ -1,22 +1,22 @@
 VERDICT: PASS
-CONTENT-HASH: d9efd22fd0ba624e
+CONTENT-HASH: c06e4f191eafe729
 
 ## Blocking
 
 ## Polish
-- inquiry.json "siirto" (Sovella uuteen tilanteeseen) — vastaus 365 nm on jo lessonin Balmer-taulukossa ja spektrikuvan kuvauksessa ("sarjan raja 365 nm"), joten tehtävä voidaan ratkaista kopioimalla luku ilman päättelyä — vaihda tila $n = 4$ (vastaus noin 1460 nm, ei missään tekstissä) tai kysy Paschenin rajaa niin, ettei sitä ole taulukossa.
-- inquiry.json "koe-3" — `min: 3`, mutta ennusteen ratkaiseva mittaus on $11{,}0\,\text{eV}$ (menee läpi); kolme riviä ilman sitä ei voi kumota väärää vastausta "fotoni absorboituu ja ylimäärä jää liike-energiaksi" — aseta `min: 4`, jolloin intron neljä energiaa kirjataan.
-- Työmäärä — kolme ennustetta, kolme koetta, johtopäätös, esimerkki, siirto, 12 harjoitusta, kolme tarkistusta ja lähtölippu ovat enemmän kuin tunti; ytimen ydinpolku on ennuste 1 + koe 1 ja ennuste 3 + koe 3 — merkitse ennuste 2 ja koe 2 (perustilaan päättyvät, UV) `optional`, tai yhdistä ne kokeeseen 1.
-- lesson.md, Bohrin mallin kappale — "se selitti vedyn koko ja ionisaatioenergian" — "se selitti vetyatomin koon ja ionisaatioenergian".
-- Ennuste 3 -kehote — ei kerro ionisaatioenergiaa $13{,}6\,\text{eV}$, vaikka yksi vaihtoehto nojaa siihen ja teoria tulee vasta kokeen jälkeen — lisää kehotteeseen "Vedyn ionisaatioenergia perustilasta on $13{,}6\,\text{eV}$."
+- inquiry.json koe-3 intro — "Kirjaa ainakin energiat 10,20, 11,00, 12,10 ja 14,00 eV" antaa testattavat arvot valmiina, ja ennuste 3 antaa kynnykset 10,2 / 12,1 / 13,6 eV; koe vahvistaa melkein vain luvut — kysy ensin "valitse itse kolme energiaa, jotka mielestäsi absorboituvat, ja kolme, jotka eivät", ja anna vasta sitten vertailuarvot.
+- sim "Mallin oletukset" — että perustila absorboi kaikki fotonit välillä 13,20–13,55 eV (tiheät ylätasot) kerrotaan vain sim-laatikossa; opiskelija, joka kokeilee 13,4 eV:a, näkee sen vastaavan väitettä "vain tasojen erotus" ristiriidassa. Lisää yksi virke Teoria-osan absorptiokappaleeseen: "Lähellä ionisaatioenergiaa tasot ovat niin tiheässä, että lähes mikä tahansa energia osuu johonkin erotukseen."
+- fig "spectrum" — siirtymätekstit $6 \to 2$, $5 \to 2$, $4 \to 2$ ovat 390 px:ssä ahtaasti peräkkäin ja viivat ristikkäin; porrasta tekstit kahdelle riville tai kasvata väliä.
+- fig "levels" / sim — tasot $n = 5, 6$ on merkitty yhdessä, joten kuvasta ei näe kuutta erillistä tasoa, vaikka koe 1 käyttää tasoa 6; mainitse tekstissä, että niiden väli on pienempi kuin viivan paksuus.
+- lesson.md Bohr-kappale — viittaus lukuun *Aaltomekaaninen atomimalli ja orbitaalit* on eteenpäin; "myöhemmässä luvussa" riittäisi, jos luvun nimi muuttuu.
 
 ## Checked
-- Oppimispolku: koukku (neljä viivaa, voiko laskea) vastataan johtopäätöksessä, esimerkissä ja tiivistelmässä; sisältö pysyy aukon tavoitteissa.
-- Ennusteet voi kumota: koe 1 ja 2 (aallonpituudet), koe 3 (11,0 eV läpi); vastausvaihtoehtojen palautteet korjaavat virhekäsityksen (taso vs. erotus).
-- Simulaatio (390 px): Bohr-kuva, kaavio ja spektrinauha selvästi, lukemat ymmärrettävät, lyhennetty väli n=1–2 ja kaavamaiset radat kerrottu.
-- Kuvat: tasokaavio, absorptiokuva ja spektri luettavia, värit eivät ole ainoa tieto (nuolilla ja viivoilla nimet/luvut).
-- Esimerkki porrastettu yksi vaihe kerrallaan; ratkaisut yksikkömuunnoksineen seurattavissa.
-- Virhekäsitys-osio ja "Etsi virhe" -tehtävä vastaavat toisiaan hyvin; distraktorit perustuvat todellisiin virheisiin.
-- Tarkistus 1 (merkki) käsitetesti hyvillä distraktoreilla; selitystehtävän kriteerit havaittavia.
-- Lähtölippu testaa ydinideaa (erotus, absorptio, miksi näkyvä).
-- Suomen kieli: termit (perustila, viritystila, ionisaatioenergia) glossaarin mukaiset; muuten virheetön.
+- Polku: kertaus (valinnainen) → 3 ennustetta → sim → 3 koetta → selitys → esimerkki → tehtävät → tarkistus; edeltävä tieto (E = hf, viivaspektri) riittää; avauskysymys vastataan johtopäätöksessä ja pohdinnassa.
+- Avauksessa ei paljasteta aallonpituuksia (vain värit); nm-arvot näkyvät vasta ennusteen jälkeen palautteessa.
+- Ennusteet ovat kiistettävissä ja kokeet voivat kumota ne (koe 1: erot 170/52/24 nm; koe 3: 11,0 eV menee läpi); jokaisella väärällä vaihtoehdolla oma harhakäsitystä korjaava palaute.
+- Kokeissa muutetaan yhtä muuttujaa, muut lukittu; työmäärä noin yksi oppitunti, valinnaiset osat kevennyksenä.
+- Esimerkki porrastettu (tunnetut, periaate, kaava, muunnos, sijoitus, tulos, järkevyys); luvut tarkistettu (1,8889 eV, 3,0260e-19 J, 656 nm).
+- Etsi virhe -palautteet, siirtotehtävän kolme vihjettä ja virhearvot (1,89; 2,74) sekä Tarkista 2 (1282 nm; 2280, 821 virhearvoina) laskettu: oikein.
+- Kuvat 390 px:ssä luettavia, värit eivät ole ainoa tieto (nuolet nimetty), kuvaukset antavat saman tiedon paljastamatta vastauksia.
+- Suomi: termit (perustila, viritystila, ionisaatioenergia) ja luku+yksikkö-muodot oikein; ei korjattavaa.
+- Puhelin: sim ja kokeet mahtuvat 366 px:iin, lukemat ja liukusäätimet käytettävissä.

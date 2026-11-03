@@ -1,21 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 938cb46bc9a4e600
+CONTENT-HASH: a7773fffb83c1316
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] lesson.md "Taajuus ja aallonpituus", the new hc chain — "hc = … = … ≈ … = 1240 eV nm" is one long inline chain that wraps over three lines at 1280 px (breaks after "="); inline maths should stay on one line — move the hc conversion to its own display line or split it into two sentences.
-- [Minor] exit-ticket.json — the heading "Exit ticket" is still English on the Finnish page (open-exit-1280) — "Lähtölippu" if it is not a project-wide template string.
-- [Minor] sim canvas — the faint beam's lower corner ends at the plate's foot beside the e⁻ label (sim-1280); harmless, but the beam could end slightly higher on the face.
-- [Minor] lesson.md Kaava — the old duplicate heading is fixed (now "Taajuus ja aallonpituus"); the h2 "Kaava: Fotonin energia" and the h3 "Fotonin energia" under "Teoriatiivistelmä" (theory-1280-2) still repeat a title; optional.
+- [Minor] exit ticket heading (open-tarkista-1280-3) — "Exit ticket" is still English on the Finnish page — "Lopuksi" / "Lähtölippu" if it is not a project-wide template string.
+- [Minor] lesson.md Kaava — h2 "Kaava: Fotonin energia" and h3 "Fotonin energia" under Teoriatiivistelmä still repeat a title; optional.
 
 ## Checked
-- sim-390 and sim-1280: new faint light beam from lamp to the plate's lit face; the light now visibly ends at the plate, readable, no clipping, spectral purple is as intended.
-- fig-7-390 (energia diagram with the changed aria-label; figure itself unchanged and intact).
-- theory-1280-2 (new hc paragraph, renamed h3, the rajataajuus sentence, the curly quotes elsewhere), exp-koe-3-390-1 (new "Arvaa ensin" intro, readable on a phone).
-- open-exit-1280 (new question 2 and answer: units in LaTeX, case endings correct, layout intact).
-- Finnish: new sentences (kellertävän vihreä, sinivihreä, "Samanvärisellä valolla", feedback of the red lamp) are fluent and consistent with the glossary.
+- sim-1280 and sim-390: the faint beam now ends higher on the plate face (quad lower corner Y 250), clear of the e⁻ label; spectral purple as intended; no clipping.
+- theory-1280-2: hc conversion is now a display aligned block (three rows, = and ≈ in one column, fractions as tfrac, units upright with thin space); the earlier wrapped inline chain is fixed; the following sentence and the 1240 eV nm : 500 nm estimate read well.
+- open-tarkista-1280-2 and -3: solution cards and exit ticket intact.
+- Changed solution texts in inquiry.json read from the diff (punaisella valolla kokeessa 1; red starts at about 620 nm, deep red 700 nm): fluent Finnish, quantities in LaTeX, case endings correct.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4
