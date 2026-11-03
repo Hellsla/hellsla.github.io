@@ -1,0 +1,415 @@
+{
+  "version": 1,
+  "contribution": "Luku tuo fotonin energian mittaamisen sähköisesti: LEDin toiminta puolijohteen energia-aukon ja fotonin avulla, kynnysjännite ja yhtälö $eU_\\text{k} \\approx hf = \\tfrac{hc}{\\lambda}$, kynnysjännitteen määrittäminen $(U, I)$-kuvaajasta, Planckin vakio kuvaajan $(f, U_\\text{k})$ kulmakertoimesta Graphical Analysis Prolla sekä LEDin, laserdiodin ja hehkulampun spektrien vertailu.",
+  "learn": [
+    "selittämään, miksi LEDin kynnysjännite riippuu sen valon aallonpituudesta.",
+    "määrittämään LEDin kynnysjännitteen virta-jännitekuvaajasta.",
+    "määrittämään Planckin vakion kynnysjännitteisiin sovitetun suoran kulmakertoimesta."
+  ],
+  "prior": [
+    "Fotonin energia on $E = hf = \\tfrac{hc}{\\lambda}$, ja $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$ on energia, jonka elektroni saa $1\\,\\text{V}$:n jännitteessä (luku *Valosähköinen ilmiö ja fotoni*)",
+    "Kun elektroni siirtyy ylemmältä energiatasolta alemmalle, syntyy fotoni, jonka energia on tasojen energioiden erotus (luku *Spektrit paljastavat atomin energiatasot*)",
+    "Atomin elektronien tilat ja energiat ovat kvantittuneita (luku *Aaltomekaaninen atomimalli ja orbitaalit*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Punainen, vihreä ja sininen LED kytketään rinnan samaan säädettävään jännitelähteeseen, ja jännitettä nostetaan hitaasti nollasta. LEDit eivät syty yhtä aikaa, vaikka niiden jännite on joka hetki sama. Kun jokainen on syttynyt, jännitteen nostaminen kirkastaa niiden valoa, mutta värit eivät muutu.",
+      "question": "Mikä ratkaisee, millä jännitteellä LED syttyy, ja miten tästä voi mitata Planckin vakion?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Kertaa: fotonin energia",
+      "optional": true,
+      "prompt": "Punaisen valon aallonpituus on $630\\,\\text{nm}$ ja sinisen $470\\,\\text{nm}$. Kumman valon fotonilla on suurempi energia?",
+      "choices": [
+        {
+          "text": "Sinisen, koska lyhyempi aallonpituus antaa fotonille suuremman energian.",
+          "correct": true,
+          "feedback": "Oikein. Fotonin energia on $E = \\tfrac{hc}{\\lambda}$ (luku *Valosähköinen ilmiö ja fotoni*). Sinisen valon fotonin energia on noin $1240\\,\\text{eV}\\,\\text{nm} : 470\\,\\text{nm} \\approx 2{,}64\\,\\text{eV}$ ja punaisen noin $1240\\,\\text{eV}\\,\\text{nm} : 630\\,\\text{nm} \\approx 1{,}97\\,\\text{eV}$."
+        },
+        {
+          "text": "Punaisen, koska pidempi aalto kuljettaa mukanaan enemmän energiaa.",
+          "feedback": "Fotonin energia on $E = \\tfrac{hc}{\\lambda}$: se *pienenee*, kun aallonpituus kasvaa. Punaisen fotonin energia on noin $1{,}97\\,\\text{eV}$, sinisen noin $2{,}64\\,\\text{eV}$."
+        },
+        {
+          "text": "Yhtä suuri, koska molemmat fotonit etenevät samalla valon nopeudella.",
+          "feedback": "Sama nopeus ei tarkoita samaa energiaa. Fotonin energia riippuu taajuudesta, $E = hf$, ja lyhyempiaaltoisen sinisen valon taajuus on suurempi, joten sen fotonin energia on suurempi."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 1: sama jännite, eri värit",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 3
+      },
+      "prompt": "Kuusi eri väristä LEDiä, punaisesta violettiin, kytketään vuorotellen samaan jännitteeseen $2{,}20\\,\\text{V}$. Miten LEDien läpi kulkevat virrat eroavat toisistaan?",
+      "choices": [
+        {
+          "text": "Kaikkien läpi kulkee yhtä suuri virta, koska jännite on sama ja LEDit ovat samanlaisia komponentteja.",
+          "feedback": "Mallin arvot kumoavat tämän: punaisen LEDin läpi kulkee $17{,}8\\,\\text{mA}$, vihreän vain $0{,}11\\,\\text{mA}$, eikä sinisen ja violetin läpi kulje käytännössä lainkaan virtaa. LED ei ole vastus: sen läpi kulkee virtaa vasta, kun jännite riittää antamaan elektronille fotonin energian."
+        },
+        {
+          "text": "Punaisen virta on suurin, sinisen ja violetin lähes nolla, koska niiden fotonit vaativat enemmän energiaa.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä: punaisen LEDin virta on $17{,}8\\,\\text{mA}$, oranssin $13{,}9\\,\\text{mA}$, keltaisen $11{,}1\\,\\text{mA}$, vihreän $0{,}11\\,\\text{mA}$, ja sinisen ja violetin virta on käytännössä nolla. Jännite $2{,}20\\,\\text{V}$ antaa elektronille energian $2{,}20\\,\\text{eV}$, joka riittää punaisen fotonin, noin $2{,}0\\,\\text{eV}$, mutta ei sinisen, noin $2{,}6\\,\\text{eV}$, synnyttämiseen."
+        },
+        {
+          "text": "Sinisen ja violetin virta on suurin ja punaisen pienin, koska lyhytaaltoisen valon fotoneissa on eniten energiaa.",
+          "feedback": "Mallin arvot kumoavat tämän: sinisen ja violetin LEDin virta on käytännössä nolla ja punaisen $17{,}8\\,\\text{mA}$. Juuri koska sinisen fotonin energia on suuri, noin $2{,}6\\,\\text{eV}$, elektroni tarvitsee sen synnyttämiseen suuremman jännitteen kuin $2{,}20\\,\\text{V}$."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 2: virta jännitteen funktiona",
+      "justify": true,
+      "reveal": {
+        "after": "koe-2",
+        "min": 5
+      },
+      "prompt": "Punaisen LEDin jännitettä kasvatetaan vähitellen arvosta $1{,}50\\,\\text{V}$ arvoon $2{,}40\\,\\text{V}$. Miten LEDin läpi kulkeva virta muuttuu?",
+      "choices": [
+        {
+          "text": "Virta kasvaa tasaisesti ja suoraan verrannollisena jännitteeseen nollasta alkaen, kuten vastuksessa.",
+          "feedback": "Mallin arvot kumoavat tämän: jännitteellä $1{,}50\\,\\text{V}$ virta on käytännössä nolla ja vielä $1{,}80\\,\\text{V}$:ssä vain $0{,}19\\,\\text{mA}$. Vasta noin $1{,}9\\,\\text{V}$:n yläpuolella virta kasvaa, noin $5{,}6\\,\\text{mA}$ jokaista $0{,}10\\,\\text{V}$:a kohti. LED ei noudata Ohmin lakia."
+        },
+        {
+          "text": "Virta on lähes nolla tiettyyn jännitteeseen asti ja kasvaa sitten jyrkästi ja lähes suoraviivaisesti.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä: välillä $1{,}50$–$1{,}80\\,\\text{V}$ virta on alle $0{,}2\\,\\text{mA}$, mutta $2{,}00\\,\\text{V}$:ssä se on $6{,}7\\,\\text{mA}$ ja $2{,}40\\,\\text{V}$:ssä $28{,}9\\,\\text{mA}$. Elektronit pääsevät LEDin läpi vasta, kun jännite riittää fotonin synnyttämiseen."
+        },
+        {
+          "text": "Virta kasvaa, kunnes LED syttyy, ja pysyy sen jälkeen samana, vaikka jännitettä nostetaan edelleen.",
+          "feedback": "Mallin arvot kumoavat tämän: syttymisen jälkeen virta kasvaa edelleen, $6{,}7\\,\\text{mA}$:sta $2{,}00\\,\\text{V}$:ssä $28{,}9\\,\\text{mA}$:iin $2{,}40\\,\\text{V}$:ssä, ja LED kirkastuu. Jokainen elektroni synnyttää enintään yhden fotonin, joten suurempi virta tarkoittaa useampia fotoneja."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Valitse LED ja säädä sen jännitettä. Seuraa, millä jännitteellä virta alkaa kulkea ja LED syttyy. Jokaisesta kokeilemastasi jännitteestä jää kuvaajaan piste.",
+      "howto": "Valitse LED valikosta ja säädä liukusäätimellä LEDin napojen välistä jännitettä $U$. Virtamittari ($\\text{A}$) näyttää LEDin läpi kulkevan virran $I$ ja jännitemittari ($\\text{V}$) LEDin jännitteen. LED hohtaa omalla värillään sitä kirkkaammin, mitä suurempi virta on, ja aaltoviivat ovat sen lähettämiä fotoneja. Oikealla (puhelimessa alla) on kuvaaja $(U, I)$: jokainen kokeilemasi jännite jää siihen pisteenä LEDin värillä, ja suuri piste on nykyinen tila. *Tyhjennä kuvaaja* poistaa pisteet. Yli $30\\,\\text{mA}$:n virtoja kuvaaja ei näytä, ja lukemissa näkyy silloin varoitus.",
+      "model": "Säädettävä jännitelähde ja suojavastus asettavat LEDin jännitteen; liukusäädin näyttää suoraan jännitemittarin lukeman. Mallissa virta on käytännössä nolla, kun jännite on pienempi kuin LEDin kynnysjännite, ja kasvaa sen yläpuolella suoraviivaisesti. Kaikilla mallin LEDeillä virta kasvaa kynnysjännitteen yläpuolella yhtä jyrkästi, mikä vastaa $18\\,\\Omega$:n vastusta. Mallin kynnysjännitteet ovat hieman pienempiä kuin $\\tfrac{hc}{e\\lambda}$, kuten oikeissa LEDeissä. Todellisen LEDin käyrä on vähän kaareva myös kynnysjännitteen yläpuolella, ja sen kynnysjännite muuttuu hieman lämpötilan mukana. Lukemat ovat mallin laskemia arvoja.",
+      "calc": "Virta lasketaan yhtälöstä $I = \\tfrac{s}{R} \\ln\\!\\left(1 + \\exp\\tfrac{U - U_\\text{k}}{s}\\right)$, missä $s = 0{,}035\\,\\text{V}$, $R = 18\\,\\Omega$ ja $U_\\text{k}$ on LEDin kynnysjännite. Kun $U$ on selvästi suurempi kuin $U_\\text{k}$, yhtälö on likimain $I = \\tfrac{U - U_\\text{k}}{R}$: suora, joka leikkaa jänniteakselin kohdassa $U = U_\\text{k}$. Kun $U$ on selvästi pienempi kuin $U_\\text{k}$, virta on häviävän pieni."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 1: sama jännite, kuusi LEDiä",
+      "intro": "Testaa ennuste 1. Jännite on lukittu arvoon $2{,}20\\,\\text{V}$; vaihda vain LEDiä. Kirjaa virta jokaisella kuudella LEDillä, ainakin kolmella. Mitkä LEDit syttyvät, ja mikä on niiden järjestys?",
+      "initial": {
+        "lambda": 630,
+        "U": 2.2
+      },
+      "locked": [
+        "U"
+      ],
+      "vary": "lambda",
+      "names": {
+        "lambda": "LED (huippuaallonpituus)",
+        "U": "jännite"
+      },
+      "units": {
+        "lambda": "nm",
+        "U": "V"
+      },
+      "values": {
+        "lambda": {
+          "630": "punainen",
+          "605": "oranssi",
+          "590": "keltainen",
+          "525": "vihreä",
+          "470": "sininen",
+          "405": "violetti"
+        }
+      },
+      "measure": [
+        {
+          "key": "I",
+          "label": "$I$ (mA)"
+        }
+      ],
+      "min": 3
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 2: punaisen LEDin kynnysjännite",
+      "intro": "Testaa ennuste 2. Punainen LED on valittu; muuta vain jännitettä. Kirjaa virta ainakin jännitteillä $1{,}50$; $1{,}70$; $1{,}80$; $1{,}90$; $2{,}00$; $2{,}10$; $2{,}20$; $2{,}30$ ja $2{,}40\\,\\text{V}$. Millä jännitteellä virta alkaa kasvaa jyrkästi?",
+      "initial": {
+        "lambda": 630,
+        "U": 1.5
+      },
+      "locked": [
+        "lambda"
+      ],
+      "vary": "U",
+      "names": {
+        "lambda": "LED (huippuaallonpituus)",
+        "U": "jännite"
+      },
+      "units": {
+        "lambda": "nm",
+        "U": "V"
+      },
+      "values": {
+        "lambda": {
+          "630": "punainen",
+          "605": "oranssi",
+          "590": "keltainen",
+          "525": "vihreä",
+          "470": "sininen",
+          "405": "violetti"
+        }
+      },
+      "measure": [
+        {
+          "key": "I",
+          "label": "$I$ (mA)"
+        }
+      ],
+      "min": 5,
+      "question": {
+        "type": "numeric",
+        "prompt": "Piirrä mittauksistasi kuvaaja $(U, I)$ paperille tai Graphical Analysis Prohon. Sovita suora niihin pisteisiin, joissa virta kasvaa suoraviivaisesti (noin $2{,}0$–$2{,}4\\,\\text{V}$), ja jatka sitä jänniteakselille. Mikä on punaisen LEDin kynnysjännite? Vastaa voltteina.",
+        "answer": 1.88,
+        "unit": "V",
+        "tolerance": 0.03,
+        "hints": [
+          "Kynnysjännite on jännite, jossa kuvaajan suoran osan jatke leikkaa jänniteakselin eli kohdan $I = 0$.",
+          "Suoralla osalla virta kasvaa noin $5{,}6\\,\\text{mA}$ jokaista $0{,}10\\,\\text{V}$:n lisäystä kohti, eli kulmakerroin on noin $55\\,\\tfrac{\\text{mA}}{\\text{V}}$.",
+          "Jännitteellä $2{,}40\\,\\text{V}$ virta on $28{,}9\\,\\text{mA}$. Suoran mukaan virta laskee nollaan, kun jännitettä pienennetään $28{,}9\\,\\text{mA} : 55{,}5\\,\\tfrac{\\text{mA}}{\\text{V}}$."
+        ],
+        "mistakes": [
+          {
+            "value": 1.7,
+            "feedback": "Luit jännitteen, jolla virtaa alkaa ensimmäisen kerran näkyä. Se riippuu siitä, kuinka pieniä virtoja mittari erottaa. Kynnysjännite saadaan jatkamalla kuvaajan *suora osa* jänniteakselille."
+          }
+        ],
+        "solution": "**Annettu:** punaisen LEDin mallin lukemat taulukosta: $2{,}00\\,\\text{V}$: $6{,}73\\,\\text{mA}$; $2{,}10\\,\\text{V}$: $12{,}23\\,\\text{mA}$; $2{,}20\\,\\text{V}$: $17{,}78\\,\\text{mA}$; $2{,}30\\,\\text{V}$: $23{,}33\\,\\text{mA}$; $2{,}40\\,\\text{V}$: $28{,}89\\,\\text{mA}$; jännitteillä $1{,}90\\,\\text{V}$ ja sen alle virta on alle $2\\,\\text{mA}$\n\n**Kysytty:** kynnysjännite $U_\\text{k}$ voltteina\n\n**Periaate:** Kynnysjännitteen yläpuolella LEDin virta kasvaa lähes suoraviivaisesti. Kynnysjännite määritellään jännitteeksi, jossa tämän suoran osan jatke leikkaa jänniteakselin ($I = 0$). Kaarevan alkuosan pisteet eivät kuulu suoraan, joten ne jätetään sovituksesta pois.\n\n**Kuvaajan lukeminen:** Pisteet välillä $2{,}00$–$2{,}40\\,\\text{V}$ ovat suoralla, ja pisteet $1{,}90\\,\\text{V}$:n alapuolella kaartuvat kohti nollaa. Suoralta valitaan kaksi kaukana toisistaan olevaa pistettä, $(2{,}10\\,\\text{V};\\ 12{,}23\\,\\text{mA})$ ja $(2{,}40\\,\\text{V};\\ 28{,}89\\,\\text{mA})$.\n\n**Kaava:** kulmakerroin $k = \\dfrac{I_2 - I_1}{U_2 - U_1}$ ja suora $I = k\\,(U - U_\\text{k})$; kohdassa $I = I_2$ saadaan $U_\\text{k} = U_2 - \\dfrac{I_2}{k}$\n\n**Muunnokset:** Ei tarvita: milliampeerit supistuvat, kun virta jaetaan kulmakertoimella yksikössä $\\tfrac{\\text{mA}}{\\text{V}}$.\n\n**Sijoitus:** $k = \\dfrac{28{,}89\\,\\text{mA} - 12{,}23\\,\\text{mA}}{2{,}40\\,\\text{V} - 2{,}10\\,\\text{V}} = 55{,}53\\,\\tfrac{\\text{mA}}{\\text{V}}$, joten $U_\\text{k} = 2{,}40\\,\\text{V} - \\dfrac{28{,}89\\,\\text{mA}}{55{,}53\\,\\text{mA/V}} = 2{,}40\\,\\text{V} - 0{,}520\\,\\text{V} = 1{,}880\\,\\text{V}$\n\n**Vastaus:** $1{,}88\\,\\text{V}$, sadasosavoltin tarkkuudella kuten jännitteen lukemat.\n\n**Järkevyys:** Punaisen valon fotonin energia on $1240\\,\\text{eV}\\,\\text{nm} : 630\\,\\text{nm} \\approx 1{,}97\\,\\text{eV}$, joten kynnysjännitteen pitää olla lähellä $1{,}97\\,\\text{V}$. Saatu arvo on noin $0{,}1\\,\\text{V}$ pienempi, kuten oikeillakin LEDeillä. Taulukossa virta on myös lähes nolla juuri tämän jännitteen alapuolella."
+      }
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös: mikä ratkaisee syttymisen?",
+      "after": [
+        "koe-1",
+        "koe-2"
+      ],
+      "prompt": "Kirjoita taulukoidesi perusteella: missä järjestyksessä LEDit syttyivät samalla jännitteellä? Miten punaisen LEDin virta muuttui jännitteen kasvaessa? Selitä fotonin energian avulla, miksi lyhyemmän aallonpituuden LED tarvitsee suuremman jännitteen.",
+      "model": "Jännitteellä $2{,}20\\,\\text{V}$ punaisen LEDin virta oli $17{,}8\\,\\text{mA}$, oranssin $13{,}9\\,\\text{mA}$, keltaisen $11{,}1\\,\\text{mA}$ ja vihreän vain $0{,}11\\,\\text{mA}$; sininen ja violetti eivät johtaneet lainkaan. Mitä lyhyempi aallonpituus, sitä suurempi jännite tarvittiin. Punaisen LEDin virta oli lähes nolla noin $1{,}9\\,\\text{V}$:iin asti ja kasvoi sitten suoraviivaisesti, noin $5{,}6\\,\\text{mA}$ jokaista $0{,}10\\,\\text{V}$:a kohti. Suoran osan jatke leikkasi jänniteakselin noin $1{,}88\\,\\text{V}$:n kohdalla: se on punaisen LEDin kynnysjännite. Selitys: jännite $U$ antaa elektronille energian $eU$, ja elektroni synnyttää fotonin vasta, kun tämä energia on likimain fotonin energia $hf$. Lyhyemmän aallonpituuden fotonin energia on suurempi, joten kynnysjännitekin on suurempi. Arvot ovat mallin laskemia.",
+      "criteria": [
+        "Kerroin, että samalla jännitteellä punainen LED johti eniten ja sininen ja violetti eivät lainkaan, ja annoin taulukosta luvut.",
+        "Kerroin, että virta oli lähes nolla kynnysjännitteeseen asti ja kasvoi sitten lähes suoraviivaisesti.",
+        "Kerroin, miten kynnysjännite saadaan kuvaajan suoran osan jatkeesta.",
+        "Selitin, että elektronin energian $eU$ on oltava likimain fotonin energia $hf$, joka on suurempi lyhyellä aallonpituudella."
+      ]
+    },
+    {
+      "id": "aineisto",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Planckin vakio kuuden LEDin aineistosta",
+      "text": "Taulukossa ovat simulaation kuuden LEDin kynnysjännitteet. Ne on määritetty samalla tavalla kuin kokeessa 2: kunkin LEDin kuvaajan $(U, I)$ suora osa on jatkettu jänniteakselille. Jos koulussa on LED-sarja ja mittauslaitteet, voit mitata omat arvosi ja käyttää niitä.\n\n| LED | $\\lambda$ (nm) | $U_\\text{k}$ (V) |\n|---|---|---|\n| punainen | 630 | 1,88 |\n| oranssi | 605 | 1,95 |\n| keltainen | 590 | 2,00 |\n| vihreä | 525 | 2,30 |\n| sininen | 470 | 2,52 |\n| violetti | 405 | 2,95 |\n\nKäsittele aineisto Graphical Analysis Prossa:\n\n1. Valitse aloitusikkunasta **Manuaalinen syöttö** ja kirjoita taulukkoon sarakkeet $\\lambda$ ja $U_\\text{k}$ yksiköineen.\n2. Lisää taajuuden sarake valinnalla **Lisää laskettu sarake**. Kirjoita lauseke, joka jakaa valon nopeuden $2{,}998 \\cdot 10^8\\,\\text{m/s}$ aallonpituudella metreinä: muista, että $1\\,\\text{nm} = 10^{-9}\\,\\text{m}$.\n3. Valitse kuvaajan vaaka-akselille $f$ ja pystyakselille $U_\\text{k}$.\n4. Sovita suora kuvaajatyökaluista valinnoilla **Käyrän sovitus**, **Lineaarinen** ja **Ota käyttöön**. Tulosruudun $m$ on kulmakerroin $k$; ohjelma käyttää desimaalipistettä.",
+      "source": "simulated",
+      "source_note": "tämän luvun simulaation mallin kynnysjännitteet, eivät oikean mittauksen tuloksia",
+      "question": {
+        "type": "numeric",
+        "prompt": "Laske sovitetun suoran kulmakertoimesta Planckin vakio. Alkeisvaraus on $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$. Vastaa yksikössä $\\text{J}\\,\\text{s}$, esimerkiksi muodossa 6,5e-34.",
+        "answer": 6.49e-34,
+        "unit": "J s",
+        "tolerance": 0.02,
+        "hints": [
+          "Yhtälöstä $eU_\\text{k} = hf$ saadaan $U_\\text{k} = \\tfrac{h}{e}\\,f$. Mikä suure on kuvaajan $(f, U_\\text{k})$ kulmakerroin?",
+          "Kulmakerroin on $k = \\tfrac{h}{e}$, joten $h = ek$. Tarkista, että taajuudet ovat suuruusluokkaa $10^{14}\\,\\text{Hz}$.",
+          "Sovituksen kulmakerroin on noin $4{,}05 \\cdot 10^{-15}\\,\\text{V}\\,\\text{s}$. Kerro se alkeisvarauksella."
+        ],
+        "mistakes": [
+          {
+            "value": 4.05e-15,
+            "feedback": "Tämä on suoran kulmakerroin $k = \\tfrac{h}{e}$ yksikössä $\\text{V}\\,\\text{s}$. Planckin vakio saadaan kertomalla se alkeisvarauksella: $h = ek$."
+          },
+          {
+            "value": 1.22e-06,
+            "feedback": "Tämä on kuvaajan $(\\tfrac{1}{\\lambda}, U_\\text{k})$ kulmakerroin $\\tfrac{hc}{e}$ yksikössä $\\text{V}\\,\\text{m}$. Piirrä kuvaaja taajuuden $f = \\tfrac{c}{\\lambda}$ funktiona, tai jaa tämä kulmakerroin valon nopeudella ja kerro alkeisvarauksella."
+          }
+        ],
+        "solution": "**Annettu:** taulukosta kuuden LEDin huippuaallonpituudet $405$–$630\\,\\text{nm}$ ja kynnysjännitteet $1{,}88$–$2{,}95\\,\\text{V}$; $c = 2{,}998 \\cdot 10^8\\,\\text{m/s}$, $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$\n\n**Kysytty:** Planckin vakio $h$ yksikössä $\\text{J}\\,\\text{s}$\n\n**Periaate:** Kynnysjännitteellä elektronin saama energia on likimain fotonin energia, $eU_\\text{k} \\approx hf$, joten pisteet $(f, U_\\text{k})$ ovat likimain suoralla, jonka kulmakerroin on $\\tfrac{h}{e}$. Pisteet eivät ole täsmälleen samalla suoralla, joten suora sovitetaan kaikkiin kuuteen pisteeseen. Lähes sama poikkeama kaikilla LEDeillä siirtää suoraa mutta ei muuta kulmakerrointa.\n\n**Kuvaajan lukeminen:** Taajuudet ovat $4{,}76$; $4{,}96$; $5{,}08$; $5{,}71$; $6{,}38$ ja $7{,}40 \\cdot 10^{14}\\,\\text{Hz}$. Lineaarinen sovitus antaa kulmakertoimen $m = 4{,}054 \\cdot 10^{-15}\\,\\tfrac{\\text{V}}{\\text{Hz}}$ ja vakiotermin $b = -0{,}050\\,\\text{V}$.\n\n**Kaava:** $f = \\dfrac{c}{\\lambda}$ ja $k = \\dfrac{h}{e}$, joten $h = ek$\n\n**Muunnokset:** aallonpituudet metreiksi, esimerkiksi $630\\,\\text{nm} = 630 \\cdot 10^{-9}\\,\\text{m}$, jolloin $f = \\dfrac{2{,}998 \\cdot 10^8\\,\\text{m/s}}{630 \\cdot 10^{-9}\\,\\text{m}} = 4{,}759 \\cdot 10^{14}\\,\\text{Hz}$; kulmakertoimen yksikkö $\\tfrac{\\text{V}}{\\text{Hz}} = \\text{V}\\,\\text{s}$\n\n**Sijoitus:** $h = ek = 1{,}602 \\cdot 10^{-19}\\,\\text{C} \\cdot 4{,}054 \\cdot 10^{-15}\\,\\text{V}\\,\\text{s} = 6{,}494 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$\n\n**Vastaus:** $6{,}49 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, kolme merkitsevää numeroa kuten kynnysjännitteissä.\n\n**Järkevyys:** Tarkistus kauimmaisista pisteistä: $(2{,}95\\,\\text{V} - 1{,}88\\,\\text{V}) : (2{,}64 \\cdot 10^{14}\\,\\text{Hz}) \\approx 4{,}05 \\cdot 10^{-15}\\,\\text{V}\\,\\text{s}$, sama kuin sovituksessa. Tulos poikkeaa hyväksytystä arvosta $6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$ noin $-2{,}0\\,\\%$. Vakiotermi $-0{,}05\\,\\text{V}$ on pieni verrattuna kynnysjännitteisiin, joten suora kulkee lähes origon kautta, kuten yhtälö $eU_\\text{k} = hf$ ennustaa."
+      }
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Palaa ennusteisiisi",
+      "optional": true,
+      "prompt": "Vertaa ennusteitasi kokeiden mallin arvoihin ja yhtälöön $eU_\\text{k} \\approx hf$. Palaa sitten alun kysymykseen: miksi sininen LED tarvitsee syttyäkseen suuremman jännitteen kuin punainen?",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2"
+      ]
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe",
+      "optional": true,
+      "prompt": "Opiskelija kirjoittaa työselostukseensa: ”Sovitin suoran pisteisiin $(f, U_\\text{k})$. Suora leikkaa pystyakselin kohdassa $-0{,}05\\,\\text{V}$ eikä kulje origon kautta. Yhtälön $eU_\\text{k} = hf$ mukaan suoran pitäisi kulkea origon kautta, joten mittaus epäonnistui, enkä voi määrittää Planckin vakiota kulmakertoimesta.” Missä on virhe?",
+      "choices": [
+        {
+          "text": "Lähes sama poikkeama kaikilla LEDeillä siirtää suoraa mutta ei muuta kulmakerrointa, josta $h$ saadaan.",
+          "correct": true,
+          "feedback": "Oikein. Mitattu kynnysjännite on kaikilla LEDeillä hieman pienempi kuin $\\tfrac{hf}{e}$, noin $0{,}1\\,\\text{V}$. Tällainen lähes vakiosuuruinen ero näkyy vakiotermissä $b$, mutta kulmakerroin $\\tfrac{h}{e}$ pysyy. Siksi Planckin vakio määritetään juuri kulmakertoimesta eikä yhdestä LEDistä."
+        },
+        {
+          "text": "Suora pitää pakottaa kulkemaan origon kautta, jolloin sen kulmakerroin antaa oikean Planckin vakion.",
+          "feedback": "Origon kautta kulkeva suora tarvitsee fysikaalisen perusteen, ja tässä mitatut kynnysjännitteet eivät ole tarkalleen $\\tfrac{hf}{e}$. Jos suora pakotetaan origoon, se kääntyy pisteiden poikkeaman mukaan, ja kulmakerroin vääristyy. Vapaasti sovitetun suoran kulmakerroin on luotettavampi."
+        },
+        {
+          "text": "Päättely on oikein: jos suora ei kulje origon kautta, pisteissä on karkea virhe, ja mittaus on toistettava.",
+          "feedback": "Pieni vakiotermi ei kerro karkeasta virheestä. Kynnysjännite määritellään suoran jatkeena, ja elektronit saavat lisäenergiaa myös lämpöliikkeestä, joten mitattu arvo on kaikilla LEDeillä hieman pienempi kuin $\\tfrac{hf}{e}$. Tämä siirtää suoraa mutta ei muuta kulmakerrointa."
+        },
+        {
+          "text": "Kuvaaja on väärä: Planckin vakio saadaan vain kuvaajasta, jonka vaaka-akselilla on aallonpituus $\\lambda$.",
+          "feedback": "Kuvaajassa $(\\lambda, U_\\text{k})$ pisteet eivät ole suoralla, koska $U_\\text{k}$ on kääntäen verrannollinen aallonpituuteen. Suora saadaan, kun vaaka-akselilla on taajuus $f = \\tfrac{c}{\\lambda}$, kuten opiskelijalla on. Virhe on päätelmässä vakiotermistä."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Sovella uuteen tilanteeseen",
+      "prompt": "Television kaukosäätimessä on LED, jonka valoa silmä ei näe. Sen kynnysjännitteeksi mitataan $1{,}30\\,\\text{V}$. Käytä arvoja $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^8\\,\\text{m/s}$ ja $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$. Arvioi LEDin säteilyn aallonpituus. Vastaa nanometreinä.",
+      "answer": 954,
+      "unit": "nm",
+      "tolerance": 0.02,
+      "hints": [
+        "Kynnysjännitteellä elektronin jännitelähteeltä saama energia on likimain yhden fotonin energia.",
+        "Ratkaise yhtälöstä $eU_\\text{k} = \\tfrac{hc}{\\lambda}$ aallonpituus $\\lambda$.",
+        "$eU_\\text{k} = 1{,}602 \\cdot 10^{-19}\\,\\text{C} \\cdot 1{,}30\\,\\text{V} = 2{,}083 \\cdot 10^{-19}\\,\\text{J}$, joten $\\lambda = \\tfrac{hc}{eU_\\text{k}}$. Muunna lopuksi metrit nanometreiksi."
+      ],
+      "mistakes": [
+        {
+          "value": 9.54e-07,
+          "feedback": "Tämä on aallonpituus metreinä. Muunna se nanometreiksi: $1\\,\\text{m} = 10^{9}\\,\\text{nm}$."
+        },
+        {
+          "value": 1.53e-16,
+          "feedback": "Jätit alkeisvarauksen pois. Jännite antaa elektronille energian $eU_\\text{k}$ jouleina: $1{,}602 \\cdot 10^{-19}\\,\\text{C} \\cdot 1{,}30\\,\\text{V}$."
+        }
+      ],
+      "solution": "**Annettu:** kynnysjännite $U_\\text{k} = 1{,}30\\,\\text{V}$, $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^8\\,\\text{m/s}$, $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$\n\n**Kysytty:** LEDin säteilyn aallonpituus $\\lambda$ nanometreinä\n\n**Periaate:** LED alkaa säteillä, kun elektronin jännitelähteeltä saama energia $eU_\\text{k}$ on likimain yhden fotonin energia $\\tfrac{hc}{\\lambda}$. Sama periaate pätee näkymättömään infrapunaan kuin näkyvään valoon. Koska mitattu kynnysjännite on yleensä hieman pienempi kuin $\\tfrac{hf}{e}$, tulos on arvio.\n\n**Kaava:** $eU_\\text{k} = \\dfrac{hc}{\\lambda}$, joten $\\lambda = \\dfrac{hc}{eU_\\text{k}}$\n\n**Muunnokset:** $eU_\\text{k} = 1{,}602 \\cdot 10^{-19}\\,\\text{C} \\cdot 1{,}30\\,\\text{V} = 2{,}0826 \\cdot 10^{-19}\\,\\text{J}$, koska $1\\,\\text{C} \\cdot 1\\,\\text{V} = 1\\,\\text{J}$; tulos metreistä nanometreiksi $1\\,\\text{m} = 10^{9}\\,\\text{nm}$\n\n**Sijoitus:** $hc = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s} \\cdot 2{,}998 \\cdot 10^8\\,\\text{m/s} = 1{,}9865 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m}$, joten $\\lambda = \\dfrac{1{,}9865 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m}}{2{,}0826 \\cdot 10^{-19}\\,\\text{J}} = 9{,}538 \\cdot 10^{-7}\\,\\text{m} = 954\\,\\text{nm}$\n\n**Vastaus:** noin $954\\,\\text{nm}$, kolme merkitsevää numeroa kuten jännitteessä $1{,}30\\,\\text{V}$.\n\n**Järkevyys:** Pyöreillä luvuilla $1240\\,\\text{V}\\,\\text{nm} : 1{,}30\\,\\text{V} \\approx 950\\,\\text{nm}$. Aallonpituus on yli $700\\,\\text{nm}$, joten säteily on infrapunaa, jota silmä ei näe, kuten tehtävässä kerrotaan. Todellisen aallonpituuden pitäisi olla hieman lyhyempi, koska mitattu kynnysjännite on yleensä noin $0{,}1\\,\\text{V}$ pienempi kuin $\\tfrac{hf}{e}$: kaukosäätimien LEDit säteilevät tyypillisesti noin $940\\,\\text{nm}$:n aallonpituudella."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Harjoittele kolmella tasolla. Tason 1 tehtävissä käytetään yhtä kaavaa, tason 2 tehtävissä yhdistetään kaksi vaihetta, kuten fotonin energia ja kynnysjännite, ja taso 3 vaatii aineiston käsittelyä tai päättelyä uudessa tilanteessa."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Suurempi jännite",
+      "prompt": "Punainen LED loistaa jännitteellä $2{,}2\\,\\text{V}$. Mitä tapahtuu, kun sen jännite nostetaan arvoon $2{,}4\\,\\text{V}$?",
+      "choices": [
+        {
+          "text": "LED loistaa kirkkaammin, mutta sen valo pysyy punaisena.",
+          "correct": true,
+          "feedback": "Oikein. Suurempi jännite kasvattaa virtaa, joten LEDissä syntyy sekunnissa enemmän fotoneja. Jokaisen fotonin energian määrää kuitenkin puolijohteen energia-aukko, joten väri pysyy samana."
+        },
+        {
+          "text": "Valo muuttuu sinisemmäksi, koska elektronit saavat enemmän energiaa.",
+          "feedback": "Fotonin energia on likimain energia-aukon suuruinen, eikä energia-aukko muutu jännitteen mukana. Ylimääräinen energia muuttuu LEDissä lämmöksi, ja väri pysyy punaisena."
+        },
+        {
+          "text": "Mikään ei muutu, koska LED on jo syttynyt.",
+          "feedback": "Kynnysjännitteen yläpuolella virta kasvaa jyrkästi jännitteen mukana. Suurempi virta tarkoittaa useampia fotoneja sekunnissa, joten LED kirkastuu, vaikka väri ei muutu."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Kuvaajasta Planckin vakio",
+      "figure": "fy8-6/ryhma",
+      "prompt": "Kuvaajassa on toisen ryhmän mittaamat LEDien kynnysjännitteet taajuuden funktiona ja niihin sovitettu suora. Lue suoralta kaksi pistettä ja määritä Planckin vakio. Alkeisvaraus on $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$. Vastaa yksikössä $\\text{J}\\,\\text{s}$.",
+      "answer": 6.7e-34,
+      "unit": "J s",
+      "tolerance": 0.03,
+      "hints": [
+        "Valitse suoralta kaksi kaukana toisistaan olevaa pistettä, joissa suora kulkee ruutuviivojen risteyksen kautta.",
+        "Kulmakerroin on $k = \\tfrac{\\Delta U_\\text{k}}{\\Delta f}$, ja Planckin vakio on $h = ek$. Muista taajuusakselin kerroin $10^{14}$.",
+        "Suora kulkee pisteiden $(4{,}6 \\cdot 10^{14}\\,\\text{Hz};\\ 1{,}80\\,\\text{V})$ ja $(7{,}0 \\cdot 10^{14}\\,\\text{Hz};\\ 2{,}80\\,\\text{V})$ kautta."
+      ],
+      "mistakes": [
+        {
+          "value": 4.17e-15,
+          "feedback": "Tämä on suoran kulmakerroin $k = \\tfrac{h}{e}$. Kerro se alkeisvarauksella: $h = ek$."
+        },
+        {
+          "value": 6.7e-20,
+          "feedback": "Taajuusakselin luvut ovat yksikössä $10^{14}\\,\\text{Hz}$. Kirjoita taajuuksien erotus hertseinä: $2{,}4 \\cdot 10^{14}\\,\\text{Hz}$."
+        }
+      ],
+      "solution": "**Annettu:** kuvaajan sovitettu suora ja $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$\n\n**Kysytty:** Planckin vakio $h$ yksikössä $\\text{J}\\,\\text{s}$\n\n**Periaate:** Kynnysjännitteellä $eU_\\text{k} \\approx hf$, joten kuvaajan $(f, U_\\text{k})$ kulmakerroin on $\\tfrac{h}{e}$. Kulmakerroin luetaan sovitetulta suoralta kahdesta kaukana toisistaan olevasta pisteestä, ei mittauspisteistä.\n\n**Kuvaajan lukeminen:** Suora kulkee ruutuviivojen risteysten kautta kohdissa $(4{,}6 \\cdot 10^{14}\\,\\text{Hz};\\ 1{,}80\\,\\text{V})$ ja $(7{,}0 \\cdot 10^{14}\\,\\text{Hz};\\ 2{,}80\\,\\text{V})$. Pystyruudun väli on $0{,}2 \\cdot 10^{14}\\,\\text{Hz}$ ja vaakaruudun $0{,}1\\,\\text{V}$.\n\n**Kaava:** $k = \\dfrac{U_2 - U_1}{f_2 - f_1} = \\dfrac{h}{e}$, joten $h = \\dfrac{e\\,(U_2 - U_1)}{f_2 - f_1}$\n\n**Muunnokset:** Taajuusakselin lukemat hertseiksi: $4{,}6 \\cdot 10^{14}\\,\\text{Hz}$ ja $7{,}0 \\cdot 10^{14}\\,\\text{Hz}$; $\\text{C} \\cdot \\tfrac{\\text{V}}{\\text{Hz}} = \\text{J}\\,\\text{s}$\n\n**Sijoitus:** $U_2 - U_1 = 2{,}80\\,\\text{V} - 1{,}80\\,\\text{V} = 1{,}00\\,\\text{V}$ ja $f_2 - f_1 = 7{,}0 \\cdot 10^{14}\\,\\text{Hz} - 4{,}6 \\cdot 10^{14}\\,\\text{Hz} = 2{,}4 \\cdot 10^{14}\\,\\text{Hz}$, joten $h = \\dfrac{1{,}602 \\cdot 10^{-19}\\,\\text{C} \\cdot 1{,}00\\,\\text{V}}{2{,}4 \\cdot 10^{14}\\,\\text{Hz}} = 6{,}675 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$\n\n**Vastaus:** $6{,}7 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, kaksi merkitsevää numeroa, koska taajuuksien erotus $2{,}4 \\cdot 10^{14}\\,\\text{Hz}$ luetaan kahden numeron tarkkuudella.\n\n**Järkevyys:** Hyväksytty arvo on $6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, ja tulos poikkeaa siitä alle $1\\,\\%$. Hyväksytyllä arvolla suora nousisi $1\\,\\text{V}$ taajuusvälillä $\\tfrac{e \\cdot 1\\,\\text{V}}{h} = \\tfrac{1{,}602 \\cdot 10^{-19}\\,\\text{J}}{6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}} = 2{,}42 \\cdot 10^{14}\\,\\text{Hz}$, ja kuvaajassa väli on $2{,}4 \\cdot 10^{14}\\,\\text{Hz}$."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Selitä: sininen ja punainen LED",
+      "optional": true,
+      "prompt": "Selitä energian avulla, miksi sininen LED tarvitsee syttyäkseen suuremman jännitteen kuin punainen. Mainitse selityksessäsi elektroni, energia-aukko ja fotoni.",
+      "criteria": [
+        "Kerron, että jännite $U$ antaa jokaiselle elektronille energian $eU$.",
+        "Kerron, että elektroni synnyttää yhden fotonin pudotessaan energia-aukon yli, ja fotonin energia on likimain energia-aukon suuruinen.",
+        "Perustelen, että sinisen valon fotonin energia on suurempi kuin punaisen, koska sen aallonpituus on lyhyempi ($E = \\tfrac{hc}{\\lambda}$).",
+        "Päättelen, että LED syttyy, kun $eU_\\text{k} \\approx hf$, joten sinisen LEDin kynnysjännite on suurempi."
+      ],
+      "model": "LEDissä elektroni putoaa johtavuusvyöstä valenssivyön aukkoon ja synnyttää yhden fotonin, jonka energia on likimain puolijohteen energia-aukon $E_\\text{g}$ suuruinen. Jännite $U$ antaa jokaiselle LEDin läpi kulkevalle elektronille energian $eU$, joten fotoneja voi syntyä vasta, kun $eU$ on likimain fotonin energia $hf$. Sinisen valon aallonpituus on lyhyempi kuin punaisen, joten sen fotonin energia $\\tfrac{hc}{\\lambda}$ on suurempi: noin $2{,}6\\,\\text{eV}$ punaisen noin $2{,}0\\,\\text{eV}$:n sijaan. Sinisen LEDin puolijohteen energia-aukko on siksi suurempi, ja sen kynnysjännite on noin $2{,}5\\,\\text{V}$, kun punaisen on noin $1{,}9\\,\\text{V}$."
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit"
+    }
+  ]
+}

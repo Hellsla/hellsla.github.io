@@ -1,0 +1,200 @@
+[
+ {
+  "expr": "(() => { const S=window.simState; return S.lambda===630 && Math.abs(S.U-2.0)<1e-9 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "on load: the red LED (630 nm) at 2,00 V (must run before any setup)"
+ },
+ {
+  "expr": "window.simState.I",
+  "expected": 6.72873,
+  "tol": 0.01,
+  "note": "on load: I = 6,73 mA (lesson-answers sim-load-I)"
+ },
+ {
+  "expr": "window.simState.Uk",
+  "expected": 1.88,
+  "tol": 0.001,
+  "note": "on load: the red LED's model threshold 1,88 V"
+ },
+ {
+  "expr": "(() => { const R=document.querySelectorAll('#sim-root input[type=range]'); return R.length===1 && R[0].min==='0' && R[0].max==='3.5' && R[0].step==='0.01' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "one slider: U 0–3,50 V in steps of 0,01"
+ },
+ {
+  "expr": "(() => { const L=[...document.querySelectorAll('#sim-root select')].map(s=>[...s.options].map(o=>o.value).join(',')); return L.length===1 && L[0]==='630,605,590,525,470,405' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "one select: the six LEDs by peak wavelength"
+ },
+ {
+  "expr": "(() => { const k=[...document.getElementById('sim-root').children].map(e=>e.tagName==='CANVAS'?'canvas':e.className); return k.indexOf('canvas')<k.indexOf('controls') && k.indexOf('controls')<k.indexOf('readout') ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "DOM order canvas, controls, readout"
+ },
+ {
+  "expr": "(() => { const n=document.querySelectorAll('#sim-root p.note'); return !document.querySelector('#sim-root details') && n.length===1 && n[0].textContent.trim().split(/\\s+/).length<=15 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "no Lisätietoja box; one legend line of at most 15 words"
+ },
+ {
+  "expr": "(() => { const P=window.simAdapter && window.simAdapter.params; return P && Object.keys(P).sort().join(',')==='U,lambda' && P.lambda.unit==='nm' && P.U.unit==='V' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "adapter declares lambda (nm) and U (V)"
+ },
+ {
+  "expr": "(() => { const c=document.querySelector('#sim-root canvas'); const w=document.getElementById('sim-root').clientWidth; return c.width===600 && c.height===(w<500?960:400) ? 1 : 0; })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "canvas 600x400 on a wide screen, 600x960 (stacked, larger labels) under 500 px"
+ },
+ {
+  "expr": "(() => { const t=document.querySelector('#sim-root .readout').textContent; return /mA/.test(t) && /nm/.test(t) ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "the readout shows the current in mA and the wavelength in nm"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=document.querySelector('#sim-root input[type=range]'); const S=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S,'630'); I(R,2.2);",
+  "expr": "window.simState.I",
+  "expected": 17.777986,
+  "tol": 0.01,
+  "note": "koe 1 and prediction 1: 630 nm at 2,20 V (koe1-R)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=document.querySelector('#sim-root input[type=range]'); const S=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S,'605'); I(R,2.2);",
+  "expr": "window.simState.I",
+  "expected": 13.890425,
+  "tol": 0.01,
+  "note": "koe 1 and prediction 1: 605 nm at 2,20 V (koe1-O)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=document.querySelector('#sim-root input[type=range]'); const S=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S,'590'); I(R,2.2);",
+  "expr": "window.simState.I",
+  "expected": 11.117514,
+  "tol": 0.01,
+  "note": "koe 1 and prediction 1: 590 nm at 2,20 V (koe1-Y)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=document.querySelector('#sim-root input[type=range]'); const S=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S,'525'); I(R,2.2);",
+  "expr": "window.simState.I",
+  "expected": 0.108585,
+  "tol": 0.01,
+  "note": "koe 1 and prediction 1: 525 nm at 2,20 V (koe1-G)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=document.querySelector('#sim-root input[type=range]'); const S=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S,'470'); I(R,2.2);",
+  "expr": "window.simState.I",
+  "expected": 0.000208,
+  "tol": 0.001,
+  "note": "koe 1 and prediction 1: 470 nm at 2,20 V (koe1-B)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=document.querySelector('#sim-root input[type=range]'); const S=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S,'405'); I(R,2.2);",
+  "expr": "window.simState.I",
+  "expected": 0.0,
+  "tol": 0.001,
+  "note": "koe 1 and prediction 1: 405 nm at 2,20 V (koe1-V)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=document.querySelector('#sim-root input[type=range]'); const S=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S,'630'); I(R,1.50);",
+  "expr": "window.simState.I",
+  "expected": 3.7e-05,
+  "tol": 0.001,
+  "note": "koe 2 and prediction 2: the red LED at 1.50 V (koe2-1.50)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=document.querySelector('#sim-root input[type=range]'); const S=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S,'630'); I(R,1.80);",
+  "expr": "window.simState.I",
+  "expected": 0.188331,
+  "tol": 0.01,
+  "note": "koe 2 and prediction 2: the red LED at 1.80 V (koe2-1.80)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=document.querySelector('#sim-root input[type=range]'); const S=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S,'630'); I(R,1.90);",
+  "expr": "window.simState.I",
+  "expected": 1.98165,
+  "tol": 0.01,
+  "note": "koe 2 and prediction 2: the red LED at 1.90 V (koe2-1.90)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=document.querySelector('#sim-root input[type=range]'); const S=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S,'630'); I(R,2.00);",
+  "expr": "window.simState.I",
+  "expected": 6.72873,
+  "tol": 0.01,
+  "note": "koe 2 and prediction 2: the red LED at 2.00 V (koe2-2.00)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=document.querySelector('#sim-root input[type=range]'); const S=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S,'630'); I(R,2.10);",
+  "expr": "window.simState.I",
+  "expected": 12.225841,
+  "tol": 0.01,
+  "note": "koe 2 and prediction 2: the red LED at 2.10 V (koe2-2.10)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=document.querySelector('#sim-root input[type=range]'); const S=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S,'630'); I(R,2.20);",
+  "expr": "window.simState.I",
+  "expected": 17.777986,
+  "tol": 0.01,
+  "note": "koe 2 and prediction 2: the red LED at 2.20 V (koe2-2.20)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=document.querySelector('#sim-root input[type=range]'); const S=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S,'630'); I(R,2.30);",
+  "expr": "window.simState.I",
+  "expected": 23.333345,
+  "tol": 0.01,
+  "note": "koe 2 and prediction 2: the red LED at 2.30 V (koe2-2.30)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=document.querySelector('#sim-root input[type=range]'); const S=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S,'630'); I(R,2.40);",
+  "expr": "window.simState.I",
+  "expected": 28.88889,
+  "tol": 0.01,
+  "note": "koe 2 and prediction 2: the red LED at 2.40 V (koe2-2.40)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=document.querySelector('#sim-root input[type=range]'); const S=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S,'630'); I(R,3.5);",
+  "expr": "window.simState.over",
+  "expected": 1,
+  "tol": 0,
+  "note": "red at 3,50 V: 90 mA, over the 30 mA limit (sim-max): the warning shows"
+ },
+ {
+  "expr": "(() => /30/.test(document.querySelector('#sim-root .readout').textContent) ? 1 : 0)()",
+  "expected": 1,
+  "tol": 0,
+  "note": "the readout warns about the 30 mA limit"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=document.querySelector('#sim-root input[type=range]'); const S=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S,'405'); I(R,3.2);",
+  "expr": "window.simState.I",
+  "expected": 13.890425,
+  "tol": 0.01,
+  "note": "violet at 3,20 V: 13,9 mA (sim-V-320)"
+ },
+ {
+  "expr": "window.simState.over",
+  "expected": 0,
+  "tol": 0,
+  "note": "violet at 3,20 V stays under 30 mA"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=document.querySelector('#sim-root input[type=range]'); const S=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S,'630'); I(R,0);",
+  "expr": "window.simState.I",
+  "expected": 0,
+  "tol": 0.001,
+  "note": "0 V: no current"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=document.querySelector('#sim-root input[type=range]'); const S=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R,1.0); document.querySelector('#sim-root button').click(); I(R,2.0);",
+  "expr": "window.simState.points",
+  "expected": 2,
+  "tol": 0,
+  "note": "Tyhjennä kuvaaja clears the graph and keeps the present point (1,00 V); one more voltage gives two points"
+ }
+]
