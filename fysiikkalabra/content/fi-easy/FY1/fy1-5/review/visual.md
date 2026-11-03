@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 087dfcd5d0a54eec
+CONTENT-HASH: b2d7af3378ed7fb0
 
 ## Blocking
+- none
 
 ## Polish
+- none
 
 ## Checked
-batch delta review: Playwright captures of the built page at 360 and 1280 px (light trails; caption factual, plain); photo sits after a paragraph, 320 px wide, caption and credit under it, no horizontal overflow, float beside text at 1280, full-width flow at 360; alt text matches the image; caption plain Finnish and factual.
+- batch delta review: opened fy-easy captures fy1-5-1280 and fy1-5-360 (photo, caption, credit line, alt text read against picture and neighbouring paragraph; no clipping or horizontal overflow; no plain-text quantity in new caption/alt).

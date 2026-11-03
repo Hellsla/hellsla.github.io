@@ -64,5 +64,49 @@
     "checked": "2026-11-03",
     "width": 1600,
     "height": 1003
+  },
+  "hydropower-plant-aerial.webp": {
+    "title": "Aerial view of hydroelectric power facility",
+    "creator": "SHADY",
+    "source": "https://www.pexels.com/photo/aerial-view-of-hydroelectric-power-facility-31670404/",
+    "licence": "Pexels License",
+    "licence_url": "https://www.pexels.com/license/",
+    "edit": "Pienennetty, WebP",
+    "checked": "2026-11-03",
+    "width": 1600,
+    "height": 1067
+  },
+  "fireplace-wood-burning.webp": {
+    "title": "Wood burning in the fireplace",
+    "creator": "Tom Fisk",
+    "source": "https://www.pexels.com/photo/wood-burning-in-the-fireplace-11857437/",
+    "licence": "Pexels License",
+    "licence_url": "https://www.pexels.com/license/",
+    "edit": "Pienennetty, WebP",
+    "checked": "2026-11-03",
+    "width": 1600,
+    "height": 1067
+  },
+  "gistemp-2025-anomaly-map.webp": {
+    "title": "Global Temperature Anomalies from 1880 to 2025 (map frame 2025, no smoothing)",
+    "creator": "NASA Scientific Visualization Studio / NASA GISS (GISTEMP v4)",
+    "source": "https://svs.gsfc.nasa.gov/5603",
+    "licence": "public domain (NASA)",
+    "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+    "edit": "Pienennetty, WebP",
+    "checked": "2026-11-03",
+    "width": 1600,
+    "height": 900
+  },
+  "offshore-wind-sunset.webp": {
+    "title": "Wind turbines in the ocean at sunset",
+    "creator": "Low Angle",
+    "source": "https://unsplash.com/photos/wind-turbines-in-the-ocean-at-sunset-tQAOPzmAFfc",
+    "licence": "Unsplash License",
+    "licence_url": "https://unsplash.com/license",
+    "edit": "Pienennetty, WebP",
+    "checked": "2026-11-03",
+    "width": 1600,
+    "height": 1067
   }
 }

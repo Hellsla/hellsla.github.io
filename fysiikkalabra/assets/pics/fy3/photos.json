@@ -53,5 +53,137 @@
     "checked": "2026-11-03",
     "width": 1600,
     "height": 1066
+  },
+  "crane-lifting-load.webp": {
+    "title": "Men working in a building under construction",
+    "creator": "YIMING TANG",
+    "source": "https://www.pexels.com/photo/men-working-in-a-building-under-construction-12233662/",
+    "licence": "Pexels License",
+    "licence_url": "https://www.pexels.com/license/",
+    "edit": "Pienennetty, WebP",
+    "checked": "2026-11-03",
+    "width": 1201,
+    "height": 1600
+  },
+  "liquid-thermometer.webp": {
+    "title": "Yellow and white thermometer",
+    "creator": "Maksim Goncharenok",
+    "source": "https://www.pexels.com/photo/yellow-and-white-thermometer-5995225/",
+    "licence": "Pexels License",
+    "licence_url": "https://www.pexels.com/license/",
+    "edit": "Rajattu mittariin, pienennetty, WebP",
+    "checked": "2026-11-03",
+    "width": 1600,
+    "height": 1560
+  },
+  "scuba-diver.webp": {
+    "title": "Underwater scuba diving with bubbles",
+    "creator": "Mido Makasard",
+    "source": "https://www.pexels.com/photo/underwater-scuba-diving-with-bubbles-35175952/",
+    "licence": "Pexels License",
+    "licence_url": "https://www.pexels.com/license/",
+    "edit": "Pienennetty, WebP",
+    "checked": "2026-11-03",
+    "width": 1000,
+    "height": 1600
+  },
+  "glowing-metal-furnace.webp": {
+    "title": "Glowing metal in industrial furnace interior",
+    "creator": "Nino Rocha",
+    "source": "https://www.pexels.com/photo/glowing-metal-in-industrial-furnace-interior-38406567/",
+    "licence": "Pexels License",
+    "licence_url": "https://www.pexels.com/license/",
+    "edit": "Pienennetty, WebP",
+    "checked": "2026-11-03",
+    "width": 1600,
+    "height": 1067
+  },
+  "steaming-kettle.webp": {
+    "title": "Steaming kettle pouring water into glass jug",
+    "creator": "Jahra Tasfia Reza",
+    "source": "https://www.pexels.com/photo/steaming-kettle-pouring-water-into-glass-jug-36293120/",
+    "licence": "Pexels License",
+    "licence_url": "https://www.pexels.com/license/",
+    "edit": "Pienennetty, WebP",
+    "checked": "2026-11-03",
+    "width": 1067,
+    "height": 1600
+  },
+  "melting-ice.webp": {
+    "title": "Melting ice",
+    "creator": "Julia Sakelli",
+    "source": "https://www.pexels.com/photo/melting-ice-5477795/",
+    "licence": "Pexels License",
+    "licence_url": "https://www.pexels.com/license/",
+    "edit": "Pienennetty, WebP",
+    "checked": "2026-11-03",
+    "width": 1600,
+    "height": 1060
+  },
+  "steam-locomotive-wheel.webp": {
+    "title": "Close-up of red steam locomotive wheel",
+    "creator": "Masood Aslami",
+    "source": "https://www.pexels.com/photo/close-up-of-red-steam-locomotive-wheel-29831494/",
+    "licence": "Pexels License",
+    "licence_url": "https://www.pexels.com/license/",
+    "edit": "Pienennetty, WebP",
+    "checked": "2026-11-03",
+    "width": 1600,
+    "height": 1067
+  },
+  "ice-water-glass.webp": {
+    "title": "A close-up shot of a glass of water with ice",
+    "creator": "Srattha Nualsate",
+    "source": "https://www.pexels.com/photo/a-close-up-shot-of-a-glass-of-water-with-ice-12987480/",
+    "licence": "Pexels License",
+    "licence_url": "https://www.pexels.com/license/",
+    "edit": "Pienennetty, WebP",
+    "checked": "2026-11-03",
+    "width": 1600,
+    "height": 1068
+  },
+  "bridge-expansion-joint.webp": {
+    "title": "Kruunuvuorensilta bridge expansion joint before renovation (Helsinki, Finland) Aug 24, 2026",
+    "creator": "Lasse Keskinen",
+    "source": "https://commons.wikimedia.org/wiki/File:Kruunuvuorensilta_bridge_expansion_joint_before_renovation_(Helsinki,_Finland)_Aug_24,_2026.jpg",
+    "licence": "CC BY 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+    "edit": "Pienennetty, WebP",
+    "checked": "2026-11-03",
+    "width": 1600,
+    "height": 1200
+  },
+  "iru-turbine-generator.webp": {
+    "title": "Waste block turbine and generator in Iru Thermal Power Plant",
+    "creator": "Lauri Veerde",
+    "source": "https://commons.wikimedia.org/wiki/File:Waste_block_turbine_and_generator_in_Iru_Thermal_Power_Plant.jpg",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "edit": "Rajattu 360 asteen panoraaman keskeltä turbiiniin ja generaattoriin, pienennetty, WebP",
+    "checked": "2026-11-03",
+    "width": 1600,
+    "height": 725
+  },
+  "hot-air-balloon-burner.webp": {
+    "title": "Flames from burner in hot air balloon",
+    "creator": "Sunridin",
+    "source": "https://commons.wikimedia.org/wiki/File:Flames_from_burner_in_hot_air_balloon.JPG",
+    "licence": "CC BY 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by/3.0/",
+    "edit": "Pienennetty, WebP",
+    "checked": "2026-11-03",
+    "width": 1600,
+    "height": 1067
+  },
+  "liquid-nitrogen-dish.webp": {
+    "title": "Liquid nitrogen ŚFN 2025",
+    "creator": "Adrian Tync",
+    "source": "https://commons.wikimedia.org/wiki/File:Liquid_nitrogen_%C5%9AFN_2025.jpg",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "edit": "Pienennetty, WebP",
+    "checked": "2026-11-03",
+    "width": 1600,
+    "height": 1067
   }
 }

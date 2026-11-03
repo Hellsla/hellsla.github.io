@@ -285,6 +285,8 @@ If the obstacle is closer than the stopping distance, the car collides with it. 
 
 Without a seat belt the passenger keeps moving at almost the original speed while the car slows down around them: by Newton's first law no force is yet slowing them down. They hit the steering wheel, the dashboard or the windscreen and stop in hundredths of a second. The **seat belt** fastens the passenger to the car, so they slow down together with the crumpling front of the car. The belt also stretches a little and spreads the force over the strong bones of the pelvis, chest and shoulder.
 
+<figure class="unit-photo"><img src="pics/fy4/side-impact-crash-test.webp" alt="A yellow small car in a test hall, its side pushed in and its body covered in measurement markers."><figcaption>A 2014 Chevrolet Spark after a side impact test by the US National Highway Traffic Safety Administration (NHTSA). The side of the car has been pushed in.</figcaption></figure>
+
 The airbag inflates in hundredths of a second and catches the head and upper body. It lengthens the stopping time and spreads the force over a large area, so the pressure on the body is smaller. An airbag is designed to work together with the seat belt, not instead of it.
 
 This is the answer to the second part of the opening question. The difference also shows in accident statistics. According to the Finnish Crash Data Institute (OTI), in the fatal accidents investigated by the road accident investigation teams in 2017–2021, 278 people wearing a seat belt and 198 people not wearing one died in cars and vans. The investigation teams estimated that 114 of those without a belt could have survived if the belt had been fastened. In Liikenneturva's monitoring, almost everyone in the front seat wears a belt.

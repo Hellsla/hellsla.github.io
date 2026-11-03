@@ -232,6 +232,8 @@ Kuvassa samanmassaiset vaunut tarttuvat yhteen tarranauhalla. Kokonaisliikemää
 ### Vastaus alun kysymykseen
 Biljardipallot ovat yhtä raskaita, ja niiden törmäys on lähes kimmoisa. Lyöntipallon nopeus on $v$. Liikemäärän säilymisestä seuraa, että pallojen nopeuksien summa pysyy samana: $v_1' + v_2' = v$. Liike-energian säilymisestä seuraa, että nopeuksien neliöiden summa pysyy samana: $v_1'^2 + v_2'^2 = v^2$. Korotetaan ensimmäinen ehto toiseen potenssiin ja vähennetään siitä toinen ehto. Saadaan $2 v_1' v_2' = 0$, joten toinen palloista on törmäyksen jälkeen levossa. Lyöntipallo ei voi kulkea toisen pallon läpi, joten se pysähtyy. Toinen pallo jatkaa nopeudella $v$. Oikeassa pelissä pallot myös pyörivät, eikä törmäys ole täysin kimmoisa. Siksi lyöntipallo voi jäädä hiukan liikkeeseen.
 
+<figure class="unit-photo"><img src="pics/fy4/newtons-cradle.webp" alt="Newtonin kehto: rivi riippuvia teräskuulia."><figcaption>Newtonin kehto. Vasemmalta tuleva kuula osuu muihin kuuliin. Liikkuva kuula näkyy kuvassa epäselvänä.</figcaption></figure>
+
 ## Kaava: Liikemäärän säilymislaki
 
 ### Säilymislaki vektoreina ja yhdessä ulottuvuudessa
