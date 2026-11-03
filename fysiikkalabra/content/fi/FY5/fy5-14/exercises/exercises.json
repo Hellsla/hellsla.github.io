@@ -45,16 +45,16 @@
     {
       "id": "fy5-14-L2-01",
       "level": 2,
-      "text": "Pianonvirittäjä lyö äänirautaa, jonka taajuus on $262\\,\\text{Hz}$, ja soittaa samalla pianon kieltä, joka kuulostaa hieman ääniraudan ääntä matalammalta. Hän laskee $15$ huojahdusta $5{,}0$ sekunnissa. Mikä on kielen taajuus?",
+      "text": "Pianonvirittäjä lyö äänirautaa, jonka taajuus on $262\\,\\text{Hz}$, ja soittaa samalla pianon kieltä, joka kuulostaa hieman ääniraudan ääntä matalammalta. Hän laskee $15$ voimakasta hetkeä eli huojahdusta $5{,}0\\,\\text{s}$:ssa. Mikä on kielen taajuus?",
       "answer": 259,
       "unit": "Hz",
-      "tolerance": 0.02
+      "tolerance": 0.003
     },
     {
       "id": "fy5-14-L2-02",
       "level": 2,
       "text": "Kaiutin lähettää ilmassa ääntä, jonka aallonpituus on $0{,}850\\,\\text{m}$. Ääni siirtyy järven pinnasta veteen. Mikä on äänen aallonpituus vedessä? Äänen nopeus ilmassa on $340\\,\\text{m/s}$ ja vedessä $1480\\,\\text{m/s}$.",
-      "answer": 3.7,
+      "answer": 3.70,
       "unit": "m",
       "tolerance": 0.02
     },
@@ -64,7 +64,7 @@
       "text": "Autoilija ajaa nopeudella $90{,}0\\,\\text{km/h}$ suoraan kohti risteystä, jossa paikallaan oleva hälytyssireeni soi taajuudella $650\\,\\text{Hz}$. Minkä taajuuden autoilija kuulee? Ilma on tyyntä, ja äänen nopeus on $340\\,\\text{m/s}$.",
       "answer": 698,
       "unit": "Hz",
-      "tolerance": 0.02
+      "tolerance": 0.003
     },
     {
       "id": "fy5-14-L2-04",
@@ -87,15 +87,15 @@
     {
       "id": "fy5-14-L3-02",
       "level": 3,
-      "text": "Kitaristi soittaa A-kieltä yhtä aikaa $440\\,\\text{Hz}$:n viritysäänen kanssa ja kuulee $4$ huojahdusta sekunnissa. Kun hän kiristää kieltä hieman, huojunta nopeutuu $6$ huojahdukseen sekunnissa. Mikä oli kielen taajuus ennen kiristämistä? Perustele, miksi vastaus on yksikäsitteinen.",
+      "text": "Kitaristi soittaa A-kieltä yhtä aikaa $440\\,\\text{Hz}$:n viritysäänen kanssa ja kuulee huojuntataajuuden $4\\,\\text{Hz}$ eli neljä voimakasta hetkeä joka sekunti. Kun hän kiristää kieltä hieman, huojuntataajuus kasvaa arvoon $6\\,\\text{Hz}$. Mikä oli kielen taajuus ennen kiristämistä? Perustele, miksi vastaus on yksikäsitteinen.",
       "answer": 444,
       "unit": "Hz",
-      "tolerance": 0.02
+      "tolerance": 0.002
     },
     {
       "id": "fy5-14-L3-03",
       "level": 3,
-      "text": "Opiskelija mittaa klarinetin matalan sävelen FFT-spektrin. Spektrissä on selvät piikit taajuuksilla $147\\,\\text{Hz}$, $441\\,\\text{Hz}$, $735\\,\\text{Hz}$ ja $1029\\,\\text{Hz}$, ja niiden välissä ei juuri mitään. Mikä on sävelen perustaajuus, mitä harmonisen sarjan jäseniä spektristä puuttuu, ja mitä tämä kertoo klarinetin ilmapatsaan seisovasta aallosta?",
+      "text": "Opiskelija mittaa klarinetin matalan sävelen FFT-spektrin. Spektrissä on selvät piikit taajuuksilla $147\\,\\text{Hz}$, $441\\,\\text{Hz}$, $735\\,\\text{Hz}$ ja $1029\\,\\text{Hz}$, ja niiden välissä ei juuri mitään. a) Mikä on sävelen perustaajuus? b) Mitä harmonisen sarjan jäseniä spektristä puuttuu? c) Mitä tämä kertoo klarinetin ilmapatsaan seisovasta aallosta?",
       "answer": "Perustaajuus $147\\,\\text{Hz}$; parilliset monikerrat ($294\\,\\text{Hz}$, $588\\,\\text{Hz}$, $882\\,\\text{Hz}$) puuttuvat, joten ilmapatsas värähtelee kuin toisesta päästä suljettu putki.",
       "unit": "",
       "tolerance": 0.02

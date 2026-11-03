@@ -1,6 +1,6 @@
 ## fy5-14-L1-01
 **Annettu:** etäisyys seinään $d = 86{,}0\,\text{m}$, kaiun paluuaika $t = 0{,}505\,\text{s}$
-**Kysytty:** äänen nopeus $v$ yksikössä m/s
+**Kysytty:** äänen nopeus $v$ yksikössä $\text{m/s}$
 **Periaate:** Ääni kulkee seinään ja heijastuu takaisin, joten paluuaikana se kulkee matkan $2d$. Ilmassa ääni etenee tasaisella nopeudella, joten nopeus on kuljettu matka jaettuna ajalla.
 **Kaava:** $2d = v t$, josta $v = \dfrac{2d}{t}$
 **Muunnokset:** Ei tarvita: matka on metreinä ja aika sekunteina.
@@ -33,7 +33,7 @@
 **Kysytty:** kuultu taajuus $f$
 **Periaate:** Äänilähde liikkuu ja kuulija on paikallaan, joten käytetään liikkuvan lähteen Dopplerin kaavaa. Lähde loittonee, joten aaltorintamat harvenevat sen takana ja kuultu taajuus on pienempi kuin $f_0$: nimittäjään tulee plusmerkki.
 **Kaava:** $f = f_0 \cdot \dfrac{v}{v + v_\text{s}}$
-**Muunnokset:** Ei tarvita: nopeudet ovat yksikössä m/s ja taajuus hertseinä.
+**Muunnokset:** Ei tarvita: nopeudet ovat yksikössä $\text{m/s}$ ja taajuus hertseinä.
 **Sijoitus:** $f = 415\,\text{Hz} \cdot \dfrac{340\,\text{m/s}}{340\,\text{m/s} + 15{,}0\,\text{m/s}} = 415\,\text{Hz} \cdot \dfrac{340}{355} = 397{,}46\,\text{Hz}$
 **Vastaus:** $397\,\text{Hz}$, kolme merkitsevää numeroa kuten lähtötiedoissa.
 **Järkevyys:** Taajuus laskee, koska lähde loittonee. Auton nopeus on noin $4{,}4\,\%$ äänen nopeudesta, ja taajuus laskee noin $\tfrac{415 - 397}{415} \approx 4{,}2\,\%$, eli muutos on samaa kokoluokkaa kuin nopeuksien suhde.
@@ -44,21 +44,21 @@
 **Mallivastaus:** a) $12\,\text{Hz} < 20\,\text{Hz}$, joten ukkosen matalin osa on infraääntä. b) $440\,\text{Hz}$ on rajojen $20\,\text{Hz}$ ja $20\,\text{kHz}$ välissä, joten viritysääni on kuultavaa ääntä. c) $35\,\text{kHz} > 20\,\text{kHz}$, joten koiranpillin ääni on ultraääntä: koira kuulee sen, mutta ihminen ei. d) $2{,}5\,\text{MHz} = 2\,500\,000\,\text{Hz}$ on monta kertaluokkaa yli kuuloalueen, joten ultraäänikuvauksen ääni on ultraääntä.
 
 ## fy5-14-L2-01
-**Annettu:** ääniraudan taajuus $f_1 = 262\,\text{Hz}$, $N = 15$ huojahdusta ajassa $t = 5{,}0\,\text{s}$, kieli on ääniraudan ääntä matalampi
+**Annettu:** ääniraudan taajuus $f_1 = 262\,\text{Hz}$, $N = 15$ voimakasta hetkeä ajassa $t = 5{,}0\,\text{s}$, kieli on ääniraudan ääntä matalampi
 **Kysytty:** kielen taajuus $f_2$
-**Periaate:** Kaksi lähes samantaajuista ääntä huojuu, ja voimakkaita hetkiä on sekunnissa yhtä monta kuin taajuuksien erotus. Huojuntataajuus saadaan laskemalla huojahdukset aikayksikköä kohti. Koska kieli on matalampi, sen taajuus on huojuntataajuuden verran pienempi kuin ääniraudan.
+**Periaate:** Kaksi lähes samantaajuista ääntä huojuu, ja voimakkaita hetkiä on sekunnissa yhtä monta kuin taajuuksien erotus. Huojuntataajuus saadaan laskemalla voimakkaat hetket aikayksikköä kohti. Koska kieli on matalampi, sen taajuus on huojuntataajuuden verran pienempi kuin ääniraudan.
 **Kaava:** $f_\text{h} = \dfrac{N}{t}$ ja $f_\text{h} = |f_1 - f_2| = f_1 - f_2$, josta $f_2 = f_1 - \dfrac{N}{t}$
 **Muunnokset:** Ei tarvita: aika on sekunteina, joten $\tfrac{N}{t}$ tulee hertseinä.
 **Sijoitus:** $f_\text{h} = \dfrac{15}{5{,}0\,\text{s}} = 3{,}0\,\text{Hz}$ ja $f_2 = 262\,\text{Hz} - 3{,}0\,\text{Hz} = 259\,\text{Hz}$
 **Vastaus:** $259\,\text{Hz}$; erotus $3{,}0\,\text{Hz}$ tunnetaan kymmenesosahertsin tarkkuudella, joten tulos ilmoitetaan kokonaisina hertseinä kuten ääniraudan taajuus.
-**Järkevyys:** Kolme huojahdusta sekunnissa on helppo laskea korvalla, ja taajuusero on alle $10\,\text{Hz}$, joten huojunta erottuu selvästi. Kun virittäjä kiristää kieltä, taajuus nousee kohti $262\,\text{Hz}$:ä ja huojunta hidastuu.
+**Järkevyys:** Kolme voimakasta hetkeä sekunnissa on helppo laskea korvalla, ja taajuusero on alle $10\,\text{Hz}$, joten huojunta erottuu selvästi. Kun virittäjä kiristää kieltä, taajuus nousee kohti $262\,\text{Hz}$:ä ja huojunta hidastuu.
 
 ## fy5-14-L2-02
 **Annettu:** aallonpituus ilmassa $\lambda_\text{i} = 0{,}850\,\text{m}$, äänen nopeus ilmassa $v_\text{i} = 340\,\text{m/s}$ ja vedessä $v_\text{v} = 1480\,\text{m/s}$
 **Kysytty:** aallonpituus vedessä $\lambda_\text{v}$
 **Periaate:** Kun ääni siirtyy ilmasta veteen, taajuus pysyy samana, koska rajapinnan hiukkaset värähtelevät samaan tahtiin kuin tuleva aalto. Nopeus muuttuu, joten aallonpituus muuttuu. Kummassakin aineessa pätee $v = f\lambda$.
 **Kaava:** $f = \dfrac{v_\text{i}}{\lambda_\text{i}}$ ja $\lambda_\text{v} = \dfrac{v_\text{v}}{f}$
-**Muunnokset:** Ei tarvita: nopeudet ovat yksikössä m/s ja aallonpituus metreinä.
+**Muunnokset:** Ei tarvita: nopeudet ovat yksikössä $\text{m/s}$ ja aallonpituus metreinä.
 **Sijoitus:** $f = \dfrac{340\,\text{m/s}}{0{,}850\,\text{m}} = 400\,\text{Hz}$ ja $\lambda_\text{v} = \dfrac{1480\,\text{m/s}}{400\,\text{Hz}} = 3{,}70\,\text{m}$
 **Vastaus:** $3{,}70\,\text{m}$, kolme merkitsevää numeroa kuten lähtötiedoissa.
 **Järkevyys:** Ääni kulkee vedessä $\tfrac{1480}{340} \approx 4{,}4$ kertaa nopeammin kuin ilmassa, ja samalla taajuudella aallonpituus kasvaa samassa suhteessa: $0{,}850\,\text{m} \cdot 4{,}35 \approx 3{,}7\,\text{m}$.
@@ -87,8 +87,8 @@
 **Annettu:** kuultu taajuus lähestyttäessä $f_1 = 476\,\text{Hz}$ ja loitottaessa $f_2 = 404\,\text{Hz}$, äänen nopeus $v = 340\,\text{m/s}$; sireenin taajuus $f_0$ on tuntematon
 **Kysytty:** ambulanssin nopeus $v_\text{s}$
 **Periaate:** Kuulija on paikallaan ja lähde liikkuu suoraan häntä kohti ja hänestä poispäin samalla nopeudella, joten kummassakin vaiheessa pätee liikkuvan lähteen kaava, lähestyttäessä miinus- ja loitottaessa plusmerkillä. Tuntematon $f_0$ supistuu pois, kun taajuudet jaetaan keskenään.
-**Kaava:** $f_1 = f_0 \cdot \dfrac{v}{v - v_\text{s}}$ ja $f_2 = f_0 \cdot \dfrac{v}{v + v_\text{s}}$, joten $\dfrac{f_1}{f_2} = \dfrac{v + v_\text{s}}{v - v_\text{s}}$. Kertomalla ristiin $f_1 v - f_1 v_\text{s} = f_2 v + f_2 v_\text{s}$, josta $v_\text{s} = v \cdot \dfrac{f_1 - f_2}{f_1 + f_2}$
-**Muunnokset:** Ei tarvita: taajuuksien yksikkö supistuu, ja nopeus tulee yksikössä m/s.
+**Kaava:** $f_1 = f_0 \cdot \dfrac{v}{v - v_\text{s}}$ ja $f_2 = f_0 \cdot \dfrac{v}{v + v_\text{s}}$, joten $\dfrac{f_1}{f_2} = \dfrac{v + v_\text{s}}{v - v_\text{s}}$. Kertomalla ristiin $f_1 v - f_1 v_\text{s} = f_2 v + f_2 v_\text{s}$, joten $v_\text{s} (f_1 + f_2) = v (f_1 - f_2)$ ja $v_\text{s} = v \cdot \dfrac{f_1 - f_2}{f_1 + f_2}$
+**Muunnokset:** Ei tarvita: taajuuksien yksikkö supistuu, ja nopeus tulee yksikössä $\text{m/s}$.
 **Sijoitus:** $v_\text{s} = 340\,\text{m/s} \cdot \dfrac{476\,\text{Hz} - 404\,\text{Hz}}{476\,\text{Hz} + 404\,\text{Hz}} = 340\,\text{m/s} \cdot \dfrac{72}{880} = 27{,}818\,\text{m/s}$
 **Vastaus:** $28\,\text{m/s}$, kaksi merkitsevää numeroa, koska taajuuksien erotus $72\,\text{Hz}$ tunnetaan kahden numeron tarkkuudella.
 **Järkevyys:** $28\,\text{m/s}$ on noin $100\,\text{km/h}$, mikä sopii hälytysajoon. Sireenin oma taajuus on $f_0 = f_1 \cdot \tfrac{v - v_\text{s}}{v} \approx 437\,\text{Hz}$, ja se on kuultujen taajuuksien välissä, kuten pitää. Myös $f_2 = 437\,\text{Hz} \cdot \tfrac{340}{367{,}8} \approx 404\,\text{Hz}$ täsmää.

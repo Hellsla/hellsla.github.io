@@ -54,14 +54,14 @@
       "justify": true,
       "reveal": {
         "after": "koe-1",
-        "min": 2
+        "min": 3
       },
-      "prompt": "Ambulanssi lähestyy sinua suoraa tietä tasaisella nopeudella sireeni soiden. Miten kuulemasi taajuus muuttuu lähestymisen aikana, ennen kuin auto ohittaa sinut?",
+      "prompt": "Nyt tilanne on toinen kuin alun kadunvarressa: seisot itse tien linjalla, kuten simulaation kuulija A, et tien sivussa. Ambulanssi ajaa tasaisella nopeudella suoraan sinua kohti sireeni soiden. Miten kuulemasi taajuus muuttuu lähestymisen aikana, ennen kuin auto saavuttaa sinut?",
       "choices": [
         {
           "text": "Taajuus pysyy koko lähestymisen ajan samana ja on suurempi kuin sireenin oma taajuus.",
           "correct": true,
-          "feedback": "Mallin arvot tukevat tätä: kun lähde liikkuu nopeudella $34\\,\\text{m/s}$, kuulija A kuulee $444\\,\\text{Hz}$ koko ajan, vaikka lähde tulee kuvassa yhä lähemmäs. Taajuus riippuu lähteen nopeudesta, ei etäisyydestä: lähteen edessä aaltorintamat ovat tasaisesti tiheämmässä ($\\lambda_\\text{A} = 0{,}765\\,\\text{m}$ eikä $0{,}85\\,\\text{m}$)."
+          "feedback": "Mallin arvot tukevat tätä: kun lähde liikkuu nopeudella $34\\,\\text{m/s}$, kuulija A kuulee $444\\,\\text{Hz}$ koko ajan, vaikka lähde tulee kuvassa yhä lähemmäs. Taajuus riippuu lähteen nopeudesta, ei etäisyydestä: lähteen edessä aaltorintamat ovat tasaisesti tiheämmässä ($\\lambda_\\text{A} = 0{,}765\\,\\text{m}$ eikä $0{,}85\\,\\text{m}$). Tien sivussa seisova kuulija kuulisi taajuuden liukuvan alaspäin jo lähestymisen aikana, koska auton nopeus hänen suuntaansa pienenee auton kulkiessa ohi."
         },
         {
           "text": "Taajuus nousee koko ajan sitä mukaa kuin auto tulee lähemmäs.",
@@ -81,7 +81,7 @@
       "justify": true,
       "reveal": {
         "after": "koe-2",
-        "min": 2
+        "min": 3
       },
       "prompt": "Kaiutin soittaa ääntä, jonka taajuus on $400\\,\\text{Hz}$. Tilanteessa 1 kaiutin liikkuu nopeudella $102\\,\\text{m/s}$ kohti paikallaan olevaa kuulijaa. Tilanteessa 2 kaiutin on paikallaan, ja kuulija liikkuu samalla nopeudella kohti kaiutinta. Kumpi kuulija kuulee korkeamman taajuuden?",
       "choices": [
@@ -114,7 +114,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 1: lähde liikkuu",
-      "intro": "Testaa ennuste 1. Kaiuttimen taajuus on $400\\,\\text{Hz}$, ja kaiutin liikkuu kohti kuulijaa A ja poispäin kuulijasta B. Muuta vain lähteen nopeutta ja kirjaa ainakin nopeudet $0\\,\\text{m/s}$, $34\\,\\text{m/s}$ ja $102\\,\\text{m/s}$. Seuraa myös, muuttuuko $f_\\text{A}$, kun kaiutin kulkee kuvassa yhä lähemmäs kuulijaa A.",
+      "intro": "Testaa ennuste 1. Kaiuttimen taajuus on $400\\,\\text{Hz}$, ja kaiutin liikkuu kohti kuulijaa A ja poispäin kuulijasta B. Muuta vain lähteen nopeutta ja kirjaa nopeudet $0\\,\\text{m/s}$, $34\\,\\text{m/s}$ ja $102\\,\\text{m/s}$ (jokainen on pakollinen rivi, koska ennusteiden palaute käyttää niitä). Seuraa myös, muuttuuko $f_\\text{A}$, kun kaiutin kulkee kuvassa yhä lähemmäs kuulijaa A.",
       "initial": {
         "tila": "lahde",
         "f0": 400,
@@ -153,14 +153,14 @@
           "label": "λ_A (m)"
         }
       ],
-      "min": 2
+      "min": 3
     },
     {
       "id": "koe-2",
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 2: kuulijat liikkuvat",
-      "intro": "Testaa ennuste 2. Kaiutin on nyt paikallaan ja soittaa taas $400\\,\\text{Hz}$:n ääntä. Kuulija A liikkuu kohti kaiutinta ja kuulija B poispäin siitä. Muuta vain kuulijoiden nopeutta ja kirjaa samat nopeudet kuin kokeessa 1. Vertaa taulukkoa kokeen 1 taulukkoon: kumpi muuttaa taajuutta enemmän, lähteen vai kuulijan liike? Muuttuuko aallonpituus?",
+      "intro": "Testaa ennuste 2. Kaiutin on nyt paikallaan ja soittaa taas $400\\,\\text{Hz}$:n ääntä. Kuulija A liikkuu kohti kaiutinta ja kuulija B poispäin siitä. Muuta vain kuulijoiden nopeutta ja kirjaa samat nopeudet $0\\,\\text{m/s}$, $34\\,\\text{m/s}$ ja $102\\,\\text{m/s}$ kuin kokeessa 1 (jokainen on pakollinen rivi). Vertaa taulukkoa kokeen 1 taulukkoon: kumpi muuttaa taajuutta enemmän, lähteen vai kuulijan liike? Muuttuuko aallonpituus?",
       "initial": {
         "tila": "kuulija",
         "f0": 400,
@@ -199,7 +199,7 @@
           "label": "λ_A (m)"
         }
       ],
-      "min": 2
+      "min": 3
     },
     {
       "id": "johtopaatos",
@@ -226,7 +226,7 @@
       "title": "Lue FFT-spektri",
       "source": "example",
       "figure": "fy5-14/spektri-tehtava",
-      "text": "Opiskelija soitti nokkahuilulla yhden pitkän sävelen ja teki äänestä FFT-kuvaajan. Kuvaajassa on viisi kapeaa piikkiä.",
+      "text": "Opiskelija lauloi yhden pitkän vokaalin ja teki äänestä FFT-kuvaajan (keksitty esimerkkiaineisto). Kuvaajassa on viisi kapeaa piikkiä.",
       "question": {
         "type": "choice",
         "prompt": "Mikä on soitetun sävelen perustaajuus eli taajuus, jonka korva kuulee äänenkorkeutena?",
@@ -256,7 +256,7 @@
       "stage": "tutki",
       "type": "explain",
       "title": "Tee itse FFT-kuvaaja",
-      "prompt": "Tee äänestä FFT-kuvaaja koulun mittausohjelmalla (esimerkiksi Graphical Analysis) ja mikrofonilla tai äänianturilla. Työvaiheet ovat ohjelmasta riippumatta samat:\n\n1. Kytke mikrofoni ja tarkista, että ohjelma näyttää paineen tai äänisignaalin ajan funktiona.\n2. Valitse suuri mittaustaajuus, esimerkiksi $20\\,000$ näytettä sekunnissa, ja lyhyt mittausaika, esimerkiksi $0{,}1\\,\\text{s}$. Mittaustaajuuden on oltava vähintään kaksi kertaa niin suuri kuin suurin taajuus, jonka haluat nähdä.\n3. Soita ääni lähellä mikrofonia: lyö äänirautaa, soita soittimella pitkä sävel tai laula vokaali. Aloita mittaus, kun ääni soi tasaisesti.\n4. Tarkista aikakuvaaja: siinä pitää näkyä jaksollinen käyrä, joka ei leikkaudu ylä- tai alareunasta.\n5. Valitse kuvaajan tyypiksi FFT. Lue piikkien taajuudet esimerkiksi tutkimistyökalulla.\n\nMittaa ainakin kaksi ääntä, esimerkiksi äänirauta ja oma äänesi samalla sävelellä. Kirjaa kummastakin perustaajuus ja kolmen seuraavan piikin taajuudet. Ovatko ne perustaajuuden monikertoja? Miten spektrit eroavat, ja mitä ero kertoo sointiväristä?",
+      "prompt": "Tee äänestä FFT-kuvaaja koulun mittausohjelmalla (esimerkiksi Graphical Analysis) ja mikrofonilla tai äänianturilla. Työvaiheet ovat ohjelmasta riippumatta samat:\n\n1. Kytke mikrofoni ja tarkista, että ohjelma näyttää paineen tai äänisignaalin ajan funktiona.\n2. Valitse suuri mittaustaajuus, esimerkiksi $20\\,000$ näytettä sekunnissa, ja lyhyt mittausaika, esimerkiksi $0{,}1\\,\\text{s}$. Mittaustaajuuden on oltava vähintään kaksi kertaa niin suuri kuin suurin taajuus, jonka haluat nähdä.\n3. Soita ääni lähellä mikrofonia: lyö äänirautaa, soita soittimella pitkä sävel tai laula vokaali. Aloita mittaus, kun ääni soi tasaisesti.\n4. Tarkista aikakuvaaja: siinä pitää näkyä jaksollinen käyrä, joka ei leikkaudu ylä- tai alareunasta.\n5. Valitse kuvaajan tyypiksi FFT. Lue piikkien taajuudet esimerkiksi tutkimistyökalulla.\n\nJos sinulla ei ole mikrofonia, käytä tätä keksittyä esimerkkiaineistoa: $440\\,\\text{Hz}$:n äänirauta, yksi piikki $440\\,\\text{Hz}$; sama sävel laulettuna, piikit $440$, $880$, $1320$ ja $1760\\,\\text{Hz}$, joiden voimakkuudet ovat suhteessa $1{,}0 : 0{,}6 : 0{,}4 : 0{,}2$. Muuten mittaa ainakin kaksi ääntä, esimerkiksi äänirauta ja oma äänesi samalla sävelellä. Kirjaa kummastakin perustaajuus ja kolmen seuraavan piikin taajuudet. Ovatko ne perustaajuuden monikertoja? Miten spektrit eroavat, ja mitä ero kertoo sointiväristä?",
       "model": "Esimerkiksi $440\\,\\text{Hz}$:n ääniraudan spektrissä on yksi selvä piikki noin $440\\,\\text{Hz}$:n kohdalla. Kun laulaja laulaa vokaalia a samalla sävelellä, spektrissä on piikit noin $440\\,\\text{Hz}$:n, $880\\,\\text{Hz}$:n, $1320\\,\\text{Hz}$:n ja $1760\\,\\text{Hz}$:n kohdalla eli perustaajuuden kokonaislukukerroilla. Äänenkorkeus on sama, koska perustaajuus on sama. Sointiväri on erilainen, koska laulussa on voimakkaita yläsäveliä ja ääniraudassa niitä ei juuri ole. Mitatut taajuudet poikkeavat muutaman hertsin: mittausajan $0{,}1\\,\\text{s}$ spektri erottelee taajuudet vain noin $\\tfrac{1}{0{,}1\\,\\text{s}} = 10\\,\\text{Hz}$:n välein.",
       "criteria": [
         "Kirjasin kummastakin äänestä perustaajuuden ja ainakin kolmen muun piikin taajuudet.",
@@ -272,7 +272,7 @@
       "title": "Lue huojunta kuvaajasta",
       "source": "example",
       "figure": "fy5-14/huojunta-tehtava",
-      "text": "Kaksi äänirautaa soi yhtä aikaa, ja mikrofoni tallentaa niiden yhteisen äänen sekunnin ajan. Värähtely on niin tiheää, että kuvaajassa se näkyy täytettynä alueena; alueen leveys kertoo, kuinka voimakas ääni on kullakin hetkellä.",
+      "text": "Kaksi äänirautaa soi yhtä aikaa, ja mikrofoni tallentaa niiden yhteisen äänen sekunnin ajan. Huojuntataajuus on se, kuinka monta kertaa sekunnissa ääni voimistuu. Värähtely on niin tiheää, että kuvaajassa se näkyy täytettynä alueena; alueen leveys kertoo, kuinka voimakas ääni on kullakin hetkellä.",
       "question": {
         "type": "numeric",
         "prompt": "Kuinka suuri on huojuntataajuus $f_\\text{h}$? Lue tarvittava aika kuvaajasta ja anna vastaus hertseinä.",
@@ -312,7 +312,7 @@
       "type": "reflect",
       "title": "Palaa ennusteisiisi",
       "optional": true,
-      "prompt": "Vertaa ennusteitasi kokeiden mallin arvoihin ja Dopplerin kaavoihin. Palaa sitten alun kysymykseen: miksi sireeni kuulostaa madaltuvan juuri ohitushetkellä? Miksi kuljettajalle sireeni kuulostaa koko ajan samalta?",
+      "prompt": "Vertaa ennusteitasi kokeiden mallin arvoihin ja Dopplerin kaavoihin. Miten ennusteen 1 tilanne (seisot auton linjalla) eroaa alun kadunvarresta, jossa taajuus liukuu? Palaa sitten alun kysymykseen: miksi sireeni kuulostaa madaltuvan juuri ohitushetkellä? Miksi kuljettajalle sireeni kuulostaa koko ajan samalta?",
       "predictions": [
         "ennuste-1",
         "ennuste-2"

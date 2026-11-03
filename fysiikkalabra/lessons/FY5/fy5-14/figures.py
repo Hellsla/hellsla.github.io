@@ -208,8 +208,8 @@ def doppler():
             "Kuulija liikkuu vasemmalle kohti lähdettä, mitä esittää sininen nopeusnuoli; aallonpituus lambda on sama "
             "kaikkiin suuntiin.")
     vT, vsT = 46.0, 18.4
-    f.defs_add('<clipPath id="fy514-clip1"><rect x="12" y="34" width="576" height="166"/></clipPath>'
-               '<clipPath id="fy514-clip2"><rect x="12" y="236" width="576" height="160"/></clipPath>')
+    f.defs_add('<clipPath id="fy514-clip1"><rect x="26" y="34" width="548" height="140"/></clipPath>'
+               '<clipPath id="fy514-clip2"><rect x="26" y="236" width="548" height="144"/></clipPath>')
     # top: moving source
     xs, ys = 300, 120
     g = []
@@ -268,7 +268,7 @@ def beats_task():
             "että se näkyy täytettynä sinisenä alueena. Alueen leveys vaihtelee: se on suurimmillaan hetkillä 0, 0,25, 0,50, "
             "0,75 ja 1,00 sekuntia ja kapenee lähes nollaan näiden puolivälissä.")
     ax = Axes(f, (80, 262), (480, 64), x=(0, 1.0), y=(-1.2, 1.2), xticks=[0.1 * k for k in range(1, 11)], yticks=[],
-              xlabel=r"t\ (\text{s})", ylabel=r"p", origin_label=False,
+              xlabel=r"t\ (\text{s})", ylabel=r"p",
               xfmt=lambda v: ("0{,}" + str(round(v * 10)) if round(v * 10) < 10 else "1{,}0") if round(v * 10) % 2 == 0 else "")
     f.line(ax.x0, ax.Y(0), ax.x1, ax.Y(0), RULE, 1.5, "6 5")
     env = lambda t: abs(math.cos(math.pi * 4 * t))

@@ -1,11 +1,10 @@
 VERDICT: DONE
 
-Round 1 draft of *Äänen ominaisuudet*.
-
-- `lesson.md`: Ydinajatus (longitudinal pressure wave, speed of sound by medium and temperature with a table, measuring it by echo, two microphones and resonance tube, pitch and hearing range, infra- and ultrasound, timbre and the harmonic series $f_n = n f_1$, FFT spectrum); `## Kaava: Huojunta ja Dopplerin ilmiö` (beats, moving source, moving listener, sign rule and conditions); seven-stage example (train horn passing); misconception; summary. Forward references only to *Äänen voimakkuus* and later ultrasound imaging.
-- `figures.py`: hero (ambulance), six theory figures, two task figures (spectrum, beats envelope).
-- New sim `assets/sims/fy5/fy5-14/`: Doppler from wavefront geometry (arrival intervals, no formula), source or listeners moving, frequency line; `tests/sims/fy5-14.json` 36 assertions; `lang/fi.json` `sims.fy5-14`.
-- `inquiry.json`: two predictions, two experiments, conclusion, FFT spectrum reading, hands-on FFT task (generic Graphical Analysis steps), beats graph task, error spotting, transfer (whirled buzzer), three checks.
-- Exercises 5/4/3 with `answers.py` and full solutions; `lesson-answers.py`; exit ticket (2); nine glossary terms.
-
-Checks: `check_lesson.py` all ok; layout 345 px ok. Open: `lang/en.json` lacks `sims.fy5-14` (translation step).
+Fix round 1.
+- inquiry.json ennuste-1 (:59): geometry stated (listener on the road's line like A, not roadside); correct-choice feedback (:64) says a roadside listener hears a gliding frequency; reflection prompt (:315) contrasts it with the hook. Hook left as is (the contrast is explicit).
+- inquiry.json: koe-1/koe-2 intros name 0, 34, 102 m/s as required rows and min 3, so prediction feedback quotes only tabulated values; spectrum task now a sung vowel (labelled invented example data); "huojuntataajuus" defined in huojunta-kuvaaja; fft task has an example-data fallback without a microphone.
+- lesson.md: "kummallakin puolella noin 9 %" (Järkevyys); police radar dropped; aria-label "äänirautalla".
+- figures.py: Doppler figure arcs clipped inside the margins and above the brackets; huojunta-tehtava shows the origin 0. Regenerated with figures.py.
+- sim.js lab(): paper backing behind every canvas label.
+- "Dopplerin ilmiö" is used throughout the text (only the glossary key differs). "Exit ticket" heading is the shared template: left.
+Not changed: sim.js heard() polish (not in the list). Checks: figures.py, check_lesson.py (all ok), lint_lesson.py (0 errors), check_solutions.py ok.

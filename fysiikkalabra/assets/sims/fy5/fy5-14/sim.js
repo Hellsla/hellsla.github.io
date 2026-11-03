@@ -189,6 +189,7 @@ new p5((p) => {
     const w = p.textWidth(s), xa = align === 'r' ? x - w : align === 'c' ? x - w / 2 : x;
     const x0 = Math.min(Math.max(xa, 2), 600 - w - 2);
     y = Math.min(Math.max(y, 0.8 * fh), G.H - 0.3 * fh);
+    p.noStroke(); p.fill(250, 247, 240, 235); p.rect(x0 - 3, y - 0.85 * fh, w + 6, 1.2 * fh, 3);   // paper backing: arcs never cross a label
     p.noStroke(); p.fill(...(col || INKC)); p.text(s, x0, y);
     labels.push({ s, x0, y0: y - 0.75 * fh, x1: x0 + w, y1: y + 0.25 * fh });
   }
