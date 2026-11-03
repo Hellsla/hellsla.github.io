@@ -1,0 +1,20 @@
+{
+  "id": "fy5-5",
+  "course": "FY5",
+  "title": "Newtonin gravitaatiolaki",
+  "goals": [
+    "LOPS FY5: gravitaatiolaki ja planeettojen liike",
+    "Täsmennys: kaikki kappaleet vetävät toisiaan puoleensa. Gravitaatiovoima on F = γm₁m₂/r². Lisäksi opitaan painovoima ja gravitaatiokentän voimakkuus sekä se, miten gravitaatio synnyttää maailmankaikkeuden rakenteita."
+  ],
+  "prerequisites": [
+    "fy5-4"
+  ],
+  "glossary": [
+    "gravitaatiolaki",
+    "gravitaatiovakio",
+    "gravitaatiokenttä"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

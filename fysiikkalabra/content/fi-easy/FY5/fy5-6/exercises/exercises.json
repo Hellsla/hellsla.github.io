@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy5-6-L1-01",
+      "level": 1,
+      "text": "Sääsatelliitti NOAA-20 kiertää Maata lähes ympyrärataa, jonka säde on $7196\\,\\text{km}$. Maan massa on $5{,}97 \\cdot 10^{24}\\,\\text{kg}$. Laske satelliitin ratanopeus. Anna vastaus kilometreinä sekunnissa.",
+      "answer": 7.44,
+      "unit": "km/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-6-L1-02",
+      "level": 1,
+      "text": "GPS-satelliitti kiertää Maata ympyrärataa, jonka säde on $26\\,560\\,\\text{km}$, nopeudella $3{,}87\\,\\text{km/s}$. Kuinka pitkä on satelliitin kiertoaika? Anna vastaus tunteina.",
+      "answer": 12.0,
+      "unit": "h",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-6-L1-03",
+      "level": 1,
+      "text": "Geostationaarinen viestintäsatelliitti kiertää Maata ympyrärataa. Radan säde on $42\\,164\\,\\text{km}$. Maan massa on $5{,}97 \\cdot 10^{24}\\,\\text{kg}$. Laske satelliitin normaalikiihtyvyys.",
+      "answer": 0.224,
+      "unit": "m/s²",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-6-L1-04",
+      "level": 1,
+      "text": "Kuu kiertää Maata lähes ympyrärataa, jonka säde on $384\\,400\\,\\text{km}$, ja sen kiertoaika on $27{,}3\\,\\text{d}$. Laske Kuun ratanopeus. Anna vastaus kilometreinä sekunnissa.",
+      "answer": 1.02,
+      "unit": "km/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-6-L1-05",
+      "level": 1,
+      "text": "Kuuta kiertävä luotain kulkee ympyrärataa, jonka säde on $1847\\,\\text{km}$. Kuun massa on $7{,}35 \\cdot 10^{22}\\,\\text{kg}$. Laske luotaimen ratanopeus. Anna vastaus kilometreinä sekunnissa.",
+      "answer": 1.63,
+      "unit": "km/s",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy5-6-L2-01",
+      "level": 2,
+      "text": "Satelliitti kiertää Maata ympyrärataa nopeudella $5{,}00\\,\\text{km/s}$. Maan massa on $5{,}97 \\cdot 10^{24}\\,\\text{kg}$ ja säde $6371\\,\\text{km}$. Kuinka korkealla maanpinnasta satelliitti kiertää? Anna vastaus kilometreinä.",
+      "answer": 9570,
+      "unit": "km",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-6-L2-02",
+      "level": 2,
+      "text": "Marsia kiertävä luotain kulkee ympyrärataa $400\\,\\text{km}$:n korkeudella Marsin pinnasta. Marsin massa on $6{,}42 \\cdot 10^{23}\\,\\text{kg}$ ja säde $3390\\,\\text{km}$. Laske luotaimen ratanopeus. Anna vastaus kilometreinä sekunnissa.",
+      "answer": 3.36,
+      "unit": "km/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-6-L2-03",
+      "level": 2,
+      "text": "Kuun pinnalla putoamiskiihtyvyys on $1{,}62\\,\\text{m/s}^2$ ja Kuun säde on $1737\\,\\text{km}$. Kuinka suuri nopeus tarvitaan, jotta luotain kiertäisi Kuuta ympyrärataa aivan sen pinnan yläpuolella? Kuulla ei ole ilmakehää. Anna vastaus kilometreinä sekunnissa.",
+      "answer": 1.68,
+      "unit": "km/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-6-L2-04",
+      "level": 2,
+      "text": "Astronautti, jonka massa on $75\\,\\text{kg}$, työskentelee avaruusasemalla $410\\,\\text{km}$:n korkeudella. Maan massa on $5{,}97 \\cdot 10^{24}\\,\\text{kg}$ ja säde $6371\\,\\text{km}$. Kuinka suuri gravitaatiovoima astronauttiin vaikuttaa, vaikka hän on painoton?",
+      "answer": 650,
+      "unit": "N",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy5-6-L3-01",
+      "level": 3,
+      "text": "Mars pyörähtää akselinsa ympäri kerran $24\\,\\text{h}\\;37\\,\\text{min}$:ssa. Marsia kiertävän viestintäsatelliitin halutaan pysyvän koko ajan saman pinnan kohdan yläpuolella, kuten geostationaarinen satelliitti Maan yläpuolella. Marsin massa on $6{,}42 \\cdot 10^{23}\\,\\text{kg}$ ja säde $3390\\,\\text{km}$. Kuinka korkealla Marsin pinnasta satelliitin on kierrettävä? Anna vastaus kilometreinä.",
+      "answer": 17000,
+      "unit": "km",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-6-L3-02",
+      "level": 3,
+      "text": "Ohut ilma jarruttaa avaruusasemaa. Aseman lähes ympyrärata madaltuu viikkojen aikana $400\\,\\text{km}$:n korkeudelta $398\\,\\text{km}$:n korkeudelle. Maan massa on $5{,}97 \\cdot 10^{24}\\,\\text{kg}$ ja säde $6371\\,\\text{km}$. Kasvaako vai pieneneekö aseman ratanopeus, ja kuinka paljon? Anna ratanopeuden muutos metreinä sekunnissa (kasvu positiivisena). Älä pyöristä välituloksia ennen vähennystä.",
+      "answer": 1.13,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-6-L3-03",
+      "level": 3,
+      "text": "Maa pyörähtää akselinsa ympäri kerran vuorokaudessa. Kuinka lyhyt Maan pyörähdysajan pitäisi olla, jotta päiväntasaajalla seisova ihminen olisi painoton? Maan massa on $5{,}97 \\cdot 10^{24}\\,\\text{kg}$ ja säde $6371\\,\\text{km}$. Maan muoto oletetaan palloksi. Anna vastaus minuutteina.",
+      "answer": 84.4,
+      "unit": "min",
+      "tolerance": 0.02
+    }
+  ]
+}

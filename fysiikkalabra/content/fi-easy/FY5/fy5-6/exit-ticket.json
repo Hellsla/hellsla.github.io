@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Avaruusasemalla astronautti leijuu, vaikka hänen painonsa on lähes yhtä suuri kuin maanpinnalla. Miksi hän leijuu?",
+    "a": "Astronautti ja asema ovat vapaassa pudotuksessa. Kumpaankin vaikuttaa vain gravitaatio, ja kumpikin saa saman kiihtyvyyden kohti Maata. Siksi lattia ei paina astronauttia, ja tukivoima on nolla. Tämä on painottomuutta. Gravitaatio vaikuttaa koko ajan."
+  },
+  {
+    "q": "Mainitse yksi tilanne, jossa tasaisen ympyräliikkeen malli ei sovi kappaleen radan kuvaamiseen. Perustele.",
+    "a": "Esimerkiksi Halleyn komeetta. Sen etäisyys Auringosta vaihtelee noin $88\\,\\text{milj. km}$:stä noin $5250\\,\\text{milj. km}$:iin. Rata on hyvin pitkänomainen eikä ympyrä. Malli ei sovi myöskään, jos satelliitin nopeus ei ole sen radan ympyräradan nopeus. Se ei sovi myöskään, jos ilmanvastus jarruttaa satelliittia selvästi."
+  }
+]

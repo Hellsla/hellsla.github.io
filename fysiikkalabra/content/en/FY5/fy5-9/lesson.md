@@ -1,0 +1,325 @@
+# Simple harmonic motion and the pendulum
+
+> **Why** does every swing, pendulum and body bobbing on a spring oscillate at its own pace, and what determines that pace?
+
+<svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Illustration: a playground swing set on a lawn in front of trees. Of two swings of equal length, a child sits on one at the extreme position of its swing, and the other hangs empty and still. A dashed arc shows the path of the swing." class="fig-hero" style="max-width:100%;font-size:24px">
+  <defs><linearGradient id="fy59h-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#eef5f9"/></linearGradient></defs>
+  <rect x="0" y="0" width="1200" height="600" fill="url(#fy59h-sky)"/>
+  <path d="M770,130 Q768,96 808,100 Q824,64 864,76 Q900,56 920,94 Q956,98 952,130 Z" fill="#ffffff" stroke-linejoin="round"/>
+  <path d="M237,94 Q235.5,70 263.5,73 Q275,48 303,56 Q328,42 342,69 Q367,71.5 364.5,94 Z" fill="#ffffff" stroke-linejoin="round"/>
+  <path d="M0,400 L10.5,367.5 L21.5,400 L32.5,365.5 L44,400 L57.5,354.5 L71.5,400 L85,355.5 L98.5,400 L117.5,332.5 L136.5,400 L151.5,348 L167,400 L182.5,346.5 L198.5,400 L214,346.5 L229.5,400 L245,346.5 L261,400 L276.5,346.5 L292,400 L306,354 L320,400 L338.5,333 L357.5,400 L375,337 L393,400 L405,361 L417.5,400 L434.5,339.5 L452,400 L468.5,343 L485,400 L504,331.5 L523,400 L538,351 L552.5,400 L571,333 L590,400 L605,349 L620,400 L635.5,348.5 L650.5,400 L665.5,349.5 L680.5,400 L692,364.5 L703.5,400 L714.5,365 L726,400 L740,352.5 L754,400 L772.5,334.5 L791,400 L806.5,346.5 L822.5,400 L834,363 L846,400 L861.5,347.5 L877,400 L894.5,339 L911.5,400 L922.5,368 L933,400 L949,344 L965.5,400 L976,367 L987,400 L1001,353.5 L1015,400 L1027.5,361 L1039.5,400 L1056.5,340.5 L1073.5,400 L1090.5,340.5 L1107.5,400 L1125.5,337.5 L1143,400 L1158,350.5 L1172.5,400 L1187,351.5 L1201.5,400 V430 H0 Z" fill="#2b8a3e" stroke-linejoin="round"/>
+  <rect x="0" y="420" width="1200" height="180" fill="#b2f2bb"/>
+  <path d="M146.5,560 l4,-12 M152.5,560 l-2,-10" fill="none" stroke="#2b8a3e" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M129,558.5 l4,-12 M135,558.5 l-2,-10" fill="none" stroke="#2b8a3e" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M1085,558.5 l4,-12 M1091,558.5 l-2,-10" fill="none" stroke="#2b8a3e" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M650,448 l4,-12 M656,448 l-2,-10" fill="none" stroke="#2b8a3e" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M949,559.5 l4,-12 M955,559.5 l-2,-10" fill="none" stroke="#2b8a3e" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M454.5,580.5 l4,-12 M460.5,580.5 l-2,-10" fill="none" stroke="#2b8a3e" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M895.5,443.5 l4,-12 M901.5,443.5 l-2,-10" fill="none" stroke="#2b8a3e" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M68.5,552 l4,-12 M74.5,552 l-2,-10" fill="none" stroke="#2b8a3e" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M1007,539 l4,-12 M1013,539 l-2,-10" fill="none" stroke="#2b8a3e" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M1122,541.5 l4,-12 M1128,541.5 l-2,-10" fill="none" stroke="#2b8a3e" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M176.5,505 l4,-12 M182.5,505 l-2,-10" fill="none" stroke="#2b8a3e" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M1098,485.5 l4,-12 M1104,485.5 l-2,-10" fill="none" stroke="#2b8a3e" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M120,480 l4,-12 M126,480 l-2,-10" fill="none" stroke="#2b8a3e" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M634,553.5 l4,-12 M640,553.5 l-2,-10" fill="none" stroke="#2b8a3e" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M1088.5,446.5 l4,-12 M1094.5,446.5 l-2,-10" fill="none" stroke="#2b8a3e" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M679,468 l4,-12 M685,468 l-2,-10" fill="none" stroke="#2b8a3e" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M834.5,585 l4,-12 M840.5,585 l-2,-10" fill="none" stroke="#2b8a3e" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M994,500.5 l4,-12 M1000,500.5 l-2,-10" fill="none" stroke="#2b8a3e" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M867,466 l4,-12 M873,466 l-2,-10" fill="none" stroke="#2b8a3e" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M1179.5,586 l4,-12 M1185.5,586 l-2,-10" fill="none" stroke="#2b8a3e" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M260.5,534.5 l4,-12 M266.5,534.5 l-2,-10" fill="none" stroke="#2b8a3e" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M810,575.5 l4,-12 M816,575.5 l-2,-10" fill="none" stroke="#2b8a3e" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M202,517.5 l4,-12 M208,517.5 l-2,-10" fill="none" stroke="#2b8a3e" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M88.5,457.5 l4,-12 M94.5,457.5 l-2,-10" fill="none" stroke="#2b8a3e" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M750.5,567 l4,-12 M756.5,567 l-2,-10" fill="none" stroke="#2b8a3e" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M910.5,481.5 l4,-12 M916.5,481.5 l-2,-10" fill="none" stroke="#2b8a3e" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M957,477 l4,-12 M963,477 l-2,-10" fill="none" stroke="#2b8a3e" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M211,446.5 l4,-12 M217,446.5 l-2,-10" fill="none" stroke="#2b8a3e" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M380,460 l4,-12 M386,460 l-2,-10" fill="none" stroke="#2b8a3e" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M334.5,440 l4,-12 M340.5,440 l-2,-10" fill="none" stroke="#2b8a3e" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M31,514.5 l4,-12 M37,514.5 l-2,-10" fill="none" stroke="#2b8a3e" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M286.5,444.5 l4,-12 M292.5,444.5 l-2,-10" fill="none" stroke="#2b8a3e" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M614.5,535 l4,-12 M620.5,535 l-2,-10" fill="none" stroke="#2b8a3e" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M506.5,550 l4,-12 M512.5,550 l-2,-10" fill="none" stroke="#2b8a3e" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M603,512 l4,-12 M609,512 l-2,-10" fill="none" stroke="#2b8a3e" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M880.5,579.5 l4,-12 M886.5,579.5 l-2,-10" fill="none" stroke="#2b8a3e" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M333,485 l4,-12 M339,485 l-2,-10" fill="none" stroke="#2b8a3e" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M1119,451.5 l4,-12 M1125,451.5 l-2,-10" fill="none" stroke="#2b8a3e" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M113,586.5 l4,-12 M119,586.5 l-2,-10" fill="none" stroke="#2b8a3e" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M572.5,577 l4,-12 M578.5,577 l-2,-10" fill="none" stroke="#2b8a3e" stroke-width="2" stroke-linejoin="round"/>
+  <ellipse cx="600" cy="520" rx="330" ry="46" fill="#f1dfb5"/>
+  <path d="M260,530 L330,120 L400,530" fill="none" stroke="#8a96a3" stroke-width="16" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M800,530 L870,120 L940,530" fill="none" stroke="#8a96a3" stroke-width="16" stroke-linejoin="round" stroke-linecap="round"/>
+  <line x1="320" y1="120" x2="880" y2="120" stroke="#8a96a3" stroke-width="20" stroke-linecap="round"/>
+  <line x1="720" y1="128" x2="720" y2="438" stroke="#8a96a3" stroke-width="4" stroke-linecap="butt"/>
+  <line x1="780" y1="128" x2="780" y2="438" stroke="#8a96a3" stroke-width="4" stroke-linecap="butt"/>
+  <rect x="706" y="436" width="88" height="14" rx="4" fill="#d9b26a" stroke="#1f2933" stroke-width="2.5"/>
+  <line x1="520" y1="128" x2="375.5" y2="416.5" stroke="#8a96a3" stroke-width="4" stroke-linecap="butt"/>
+  <line x1="580" y1="128" x2="435.5" y2="416.5" stroke="#8a96a3" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M363.5,418.5 A352,352 0 0 0 736.5,418.5" fill="none" stroke="#6b7480" stroke-width="3" stroke-linejoin="round" stroke-dasharray="10 9"/>
+  <g transform="rotate(26 405.5 416.5)">
+  <rect x="361.5" y="409.5" width="88" height="14" rx="4" fill="#d9b26a" stroke="#1f2933" stroke-width="2.5"/>
+  <path d="M385.5,408.5 H451.5 V468.5 H435.5 V426.5 H385.5 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <path d="M379.5,410.5 Q375.5,324.5 401.5,320.5 Q427.5,324.5 423.5,410.5 Z" fill="#e8590c" stroke-linejoin="round"/>
+  <path d="M413.5,342.5 L435.5,312.5" fill="none" stroke="#e8590c" stroke-width="14" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="435.5" cy="310.5" r="8" fill="#f1dfb5"/>
+  <circle cx="401.5" cy="298.5" r="24" fill="#f1dfb5"/>
+  <path d="M377.5,296.5 Q379.5,268.5 403.5,270.5 Q429.5,270.5 427.5,294.5 Q405.5,284.5 377.5,296.5 Z" fill="#1f2933" stroke-linejoin="round"/>
+  </g>
+</svg>
+
+## Key idea
+In the chapter *Harmonic force and elastic potential energy* the force of a spring was $F = -kx$: it is directly proportional to the displacement $x$ from the equilibrium position and always points towards the equilibrium position. When a body is pulled aside and released, the force accelerates it towards the equilibrium position. At the equilibrium position the force is zero, but the body has speed, so it carries on to the other side. There the force slows it down, stops it at the extreme position and turns it back. The motion repeats itself in the same way: the body oscillates. When the oscillation is caused by a harmonic force, the motion is called **simple harmonic motion**.
+
+<svg data-fig="jousi" viewBox="0 0 600 400" role="img" aria-label="Diagram, not to scale: a body on a frictionless horizontal surface is attached to a wall with a spring. Three moments one below the other. At the top the body is at the extreme position x = A to the right of the equilibrium position: the spring force and the acceleration point left towards the equilibrium position, and the speed is zero. In the middle the body passes the equilibrium position x = 0 moving left: the force and the acceleration are zero and the speed is greatest. At the bottom the body is at the extreme position x = −A: the force and the acceleration point right, and the speed is zero." style="max-width:100%;font-size:24px">
+  <defs><linearGradient id="fy59-wood" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9c98a"/><stop offset="1" stop-color="#d9b26a"/></linearGradient></defs>
+  <line x1="300" y1="14" x2="300" y2="364" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
+  <foreignObject x="277.5" y="367.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$x = 0$</div></foreignObject>
+  <rect x="24" y="48" width="16" height="70" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+  <line x1="20" y1="118" x2="576" y2="118" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <rect x="40" y="118" width="536" height="6" fill="#c4ccd4"/>
+  <path d="M40,96 L48,96 L59.5,86 L83,106 L106.5,86 L130,106 L153.5,86 L177,106 L200.5,86 L223.5,106 L247,86 L270.5,106 L294,86 L317.5,106 L341,86 L364.5,106 L376,96 L384,96" fill="none" stroke="#6b7480" stroke-width="2.5" stroke-linejoin="round"/>
+  <rect x="384" y="74" width="52" height="44" rx="4" fill="url(#fy59-wood)" stroke="#1f2933" stroke-width="2.5"/>
+  <foreignObject x="387.5" y="129.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$x = A$</div></foreignObject>
+  <line x1="410" y1="60" x2="333" y2="60" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M318,60 L334,53 L334,67 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="277" y="45.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#c92a2a">$\overline{F}$</div></foreignObject>
+  <line x1="410" y1="30" x2="320" y2="30" stroke="#e8590c" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M331,23.5 L318,30 L331,36.5" fill="none" stroke="#e8590c" stroke-width="2.5" stroke-linejoin="round"/>
+  <foreignObject x="277" y="15.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#e8590c">$\overline{a}$</div></foreignObject>
+  <foreignObject x="444" y="81.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$v = 0$</div></foreignObject>
+  <rect x="24" y="164" width="16" height="70" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+  <line x1="20" y1="234" x2="576" y2="234" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <rect x="40" y="234" width="536" height="6" fill="#c4ccd4"/>
+  <path d="M40,212 L48,212 L56,202 L71.5,222 L87,202 L102.5,222 L118,202 L133.5,222 L149,202 L165,222 L180.5,202 L196,222 L211.5,202 L227,222 L242.5,202 L258,222 L266,212 L274,212" fill="none" stroke="#6b7480" stroke-width="2.5" stroke-linejoin="round"/>
+  <rect x="274" y="190" width="52" height="44" rx="4" fill="url(#fy59-wood)" stroke="#1f2933" stroke-width="2.5"/>
+  <line x1="300" y1="176" x2="192" y2="176" stroke="#1971c2" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M203,169.5 L190,176 L203,182.5" fill="none" stroke="#1971c2" stroke-width="2.5" stroke-linejoin="round"/>
+  <foreignObject x="149" y="161.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#1971c2">$\overline{v}$</div></foreignObject>
+  <foreignObject x="334" y="197.5" width="99" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$F = 0,\ a = 0$</div></foreignObject>
+  <rect x="24" y="280" width="16" height="70" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+  <line x1="20" y1="350" x2="576" y2="350" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <rect x="40" y="350" width="536" height="6" fill="#c4ccd4"/>
+  <path d="M40,328 L48,328 L52,318 L59.5,338 L67.5,318 L75,338 L82.5,318 L90.5,338 L98,318 L106,338 L113.5,318 L121.5,338 L129,318 L136.5,338 L144.5,318 L152,338 L156,328 L164,328" fill="none" stroke="#6b7480" stroke-width="2.5" stroke-linejoin="round"/>
+  <rect x="164" y="306" width="52" height="44" rx="4" fill="url(#fy59-wood)" stroke="#1f2933" stroke-width="2.5"/>
+  <foreignObject x="161" y="361.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$x = -A$</div></foreignObject>
+  <line x1="190" y1="292" x2="267" y2="292" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M282,292 L266,299 L266,285 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="290" y="277.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#c92a2a">$\overline{F}$</div></foreignObject>
+  <line x1="190" y1="262" x2="280" y2="262" stroke="#e8590c" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M269,268.5 L282,262 L269,255.5" fill="none" stroke="#e8590c" stroke-width="2.5" stroke-linejoin="round"/>
+  <foreignObject x="290" y="247.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#e8590c">$\overline{a}$</div></foreignObject>
+  <foreignObject x="105" y="277.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$v = 0$</div></foreignObject>
+</svg>
+
+The figure shows the rhythm of the motion. At the extreme positions $x = A$ and $x = -A$ the speed is zero, but the force and the acceleration are greatest. At the equilibrium position the situation is the opposite: the force and the acceleration are zero and the speed is greatest. The acceleration always points towards the equilibrium position, in the same direction as the force.
+
+### Position as a function of time
+When the position of a simple harmonic oscillator is plotted as a function of time, the result is a sine-shaped curve. The concepts of the chapter *Periodic motion* can be seen in it directly. The amplitude $A$ is the greatest displacement from the equilibrium position. The period $T$ is the time in which the body makes one complete oscillation back and forth and returns to the same point moving in the same direction, for example the interval between two successive peaks. The frequency $f = \tfrac{1}{T}$ tells us the number of oscillations per second.
+
+<svg data-fig="xt" viewBox="0 0 600 350" role="img" aria-label="Diagram: the position x of simple harmonic motion as a function of time t is a sine-shaped curve. The curve starts from the extreme position x = A, goes to the extreme position x = −A and returns to A. The amplitude A is marked from the equilibrium position x = 0 to the peak of the curve, and the period T between two successive peaks. The graph shows two and a half cycles." style="max-width:100%;font-size:24px">
+  <line x1="80" y1="310" x2="80" y2="191" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <line x1="79" y1="191" x2="484" y2="191" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M496,191 L483,197 L483,185 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="80" y1="192" x2="80" y2="58" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M80,46 L86,59 L74,59 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <foreignObject x="502" y="176.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$t$</div></foreignObject>
+  <foreignObject x="70" y="15.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$x$</div></foreignObject>
+  <line x1="80" y1="286" x2="470" y2="286" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="80" y1="96" x2="470" y2="96" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <polyline points="80,96 83,96.5 86,99 89.5,103 92.5,108.5 95.5,115.5 99,123.5 102,133 105,143.5 108,154.5 111,166.5 114.5,178.5 117.5,191 120.5,203.5 124,215.5 127,227.5 130,238.5 133,249 136,258.5 139.5,266.5 142.5,273.5 145.5,279 149,283 152,285.5 155,286 158,285.5 161,283 164.5,279 167.5,273.5 170.5,266.5 174,258.5 177,249 180,238.5 183,227.5 186,215.5 189.5,203.5 192.5,191 195.5,178.5 199,166.5 202,154.5 205,143.5 208,133 211,123.5 214.5,115.5 217.5,108.5 220.5,103 224,99 227,96.5 230,96 233,96.5 236,99 239.5,103 242.5,108.5 245.5,115.5 248.5,123.5 252,133 255,143.5 258,154.5 261,166.5 264.5,178.5 267.5,191 270.5,203.5 274,215.5 277,227.5 280,238.5 283,249 286,258.5 289.5,266.5 292.5,273.5 295.5,279 299,283 302,285.5 305,286 308,285.5 311,283 314.5,279 317.5,273.5 320.5,266.5 324,258.5 327,249 330,238.5 333,227.5 336,215.5 339.5,203.5 342.5,191 345.5,178.5 349,166.5 352,154.5 355,143.5 358,133 361,123.5 364.5,115.5 367.5,108.5 370.5,103 374,99 377,96.5 380,96 383,96.5 386,99 389.5,103 392.5,108.5 395.5,115.5 399,123.5 402,133 405,143.5 408,154.5 411,166.5 414.5,178.5 417.5,191 420.5,203.5 423.5,215.5 427,227.5 430,238.5 433,249 436,258.5 439.5,266.5 442.5,273.5 445.5,279 449,283 452,285.5 455,286" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <foreignObject x="52" y="81.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$A$</div></foreignObject>
+  <foreignObject x="39" y="271.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$-A$</div></foreignObject>
+  <line x1="380" y1="189" x2="380" y2="108" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <path d="M380,98 L385,109 L375,109 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <foreignObject x="392" y="129" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$A$</div></foreignObject>
+  <line x1="82" y1="78" x2="230" y2="78" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="82" y1="70" x2="82" y2="86" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="230" y1="70" x2="230" y2="86" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="145" y="45.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$T$</div></foreignObject>
+  <line x1="80" y1="96" x2="80" y2="96" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="230" y1="96" x2="230" y2="96" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="380" y1="96" x2="380" y2="96" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+</svg>
+
+### Why the amplitude does not change the period
+A simple harmonic oscillator has a remarkable property. If the amplitude is doubled, the distance travelled in one cycle doubles. At the same time the force at every corresponding point also doubles, because $F$ is proportional to the displacement. A doubled force gives a doubled acceleration, and in the same time a doubled acceleration makes the speed grow twice as much. So the longer distance is covered at a greater speed, and the time taken is the same. The period of a simple harmonic oscillator does not depend on the amplitude. It depends only on how large the mass in motion is and how stiff the spring that restores it is.
+
+## Formula: Period of a simple harmonic oscillator
+### Mass on a spring
+When a body oscillates on a spring and the only force along the motion is the harmonic force of the spring, the period is
+```latex
+T = 2\pi\sqrt{\frac{m}{k}}
+```
+where $T$ is the period ($\text{s}$), $m$ the mass of the oscillating body ($\text{kg}$) and $k$ the spring constant of the spring ($\text{N/m}$). A greater mass accelerates more slowly under the same force, so the period grows as the mass grows. A stiffer spring gives a greater force, so the period becomes shorter. The square root means that the mass must be quadrupled to double the period. The formula holds for a spring hanging vertically too: the weight only shifts the equilibrium position, and the displacement from it obeys the same law.
+
+The formula can be justified with circular motion. When a body moves uniformly around a circle of radius $A$, its shadow on a wall in the direction of a diameter moves back and forth. The acceleration of the shadow is a component of the centripetal acceleration $a_\text{n} = \tfrac{4\pi^2 A}{T^2}$, and it is $-\tfrac{4\pi^2}{T^2}x$, that is, proportional to the displacement. For a mass on a spring Newton's second law gives $a = -\tfrac{k}{m}x$. When the coefficients are set equal, $\tfrac{4\pi^2}{T^2} = \tfrac{k}{m}$, and the period can be solved from this.
+
+### Simple pendulum
+In a simple pendulum a point mass hangs on a light string and swings without air resistance. At the extreme position the speed is zero, and the tension $\overline{S}$ of the string cancels the component of the weight along the string. The symbol $S$ is used here for the tension, because $T$ is the period. The motion is driven by the component of the weight along the path, $G_\text{t} = mg\sin\alpha$, which points towards the equilibrium position.
+
+<svg data-fig="heiluri" viewBox="0 0 600 410" role="img" aria-label="Force diagram: the bob of a pendulum at its extreme position, when the string makes an angle α with the vertical and the speed is zero. The string runs from the point of suspension at the top, and the bob is drawn as a rectangle aligned with the string. The weight G points straight down from the centre. The tension S of the string acts from the upper surface of the bob along the string towards the point of suspension. Dashed lines show the components of the weight: G n along the string away from the point of suspension and G t along the tangent of the path towards the equilibrium position. The tension is equal to G n, so what remains is the restoring component G t, whose magnitude is G sin α." style="max-width:100%;font-size:24px">
+  <rect x="160" y="24" width="140" height="16" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+  <line x1="230" y1="40" x2="230" y2="320" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
+  <path d="M82,216 A230,230 0 0 0 378,216" fill="none" stroke="#6b7480" stroke-width="1.5" stroke-linejoin="round" stroke-dasharray="6 5"/>
+  <path d="M230,102 A62,62 0 0 0 265.5,91" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <foreignObject x="238" y="103.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\alpha$</div></foreignObject>
+  <line x1="230" y1="40" x2="349.5" y2="210.5" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <circle cx="230" cy="40" r="4" fill="#1f2933"/>
+  <foreignObject x="287" y="87" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$l$</div></foreignObject>
+  <rect x="342" y="206.5" width="40" height="44" fill="#f6f1e6" stroke="#1f2933" stroke-width="2.5" transform="rotate(-35 362 228.5)"/>
+  <line x1="362" y1="228.5" x2="362" y2="331.5" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M362,348.5 L354,330.5 L370,330.5 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="367.5" y="328" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{G}$</div></foreignObject>
+  <line x1="349.5" y1="210.5" x2="302.5" y2="144" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M293,130 L310,140 L296.5,149.5 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="302.5" y="117.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{S}$</div></foreignObject>
+  <line x1="362" y1="228.5" x2="307" y2="266.5" stroke="#c92a2a" stroke-width="2.5" stroke-linecap="butt" stroke-dasharray="7 5"/>
+  <path d="M312.5,255 L305.5,268 L320,266" fill="none" stroke="#c92a2a" stroke-width="2.5" stroke-linejoin="round"/>
+  <foreignObject x="255" y="261.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{G}_\text{t}$</div></foreignObject>
+  <line x1="362" y1="228.5" x2="417" y2="307.5" stroke="#c92a2a" stroke-width="2.5" stroke-linecap="butt" stroke-dasharray="7 5"/>
+  <path d="M405.5,302 L418.5,309 L416,294.5" fill="none" stroke="#c92a2a" stroke-width="2.5" stroke-linejoin="round"/>
+  <foreignObject x="424" y="298.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{G}_\text{n}$</div></foreignObject>
+  <foreignObject x="408.5" y="377.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$G_\text{t} = G \sin\alpha$</div></foreignObject>
+</svg>
+
+For small angles $\sin\alpha$ is approximately the angle in radians, and the arc length from the equilibrium position is $s = l\alpha$. The restoring force is then $\tfrac{mg}{l}s$, which is proportional to the displacement, and the pendulum is a simple harmonic oscillator with "spring constant" $\tfrac{mg}{l}$. When this is substituted into the formula for the spring, the mass cancels. For small swings the period of a simple pendulum is
+```latex
+T = 2\pi\sqrt{\frac{l}{g}}
+```
+where $T$ is the period ($\text{s}$), $l$ the length of the pendulum, that is, the distance from the point of suspension of the string to the centre of mass of the body ($\text{m}$), and $g$ the acceleration of free fall ($9.81\,\text{m/s}^2$). The period does not depend on the mass of the body, nor, for small swings, on the amplitude.
+
+The formula is an approximation that holds for small swing angles. As the starting angle grows, $\sin\alpha$ remains smaller than the angle in radians, the restoring force remains smaller than the harmonic one and the period increases slightly. The table gives the true period $T$ relative to the value $T_0$ given by the formula:
+
+| Starting angle | $T : T_0$ |
+| --- | --- |
+| $10^\circ$ | $1.002$ |
+| $20^\circ$ | $1.008$ |
+| $40^\circ$ | $1.031$ |
+| $60^\circ$ | $1.073$ |
+
+For swings of less than $10^\circ$ the difference is less than $0.2\,\%$, which is smaller than the uncertainty of timing by hand.
+
+### Energy in oscillation
+When friction and air resistance are neglected, the mechanical energy of the oscillator is conserved. The energy of a mass on a spring is the sum of the kinetic energy and the elastic potential energy of the spring. At the extreme position the speed is zero and all the energy is potential energy, so
+```latex
+\frac{1}{2}mv^2 + \frac{1}{2}kx^2 = \frac{1}{2}kA^2
+```
+where $m$ is the mass ($\text{kg}$), $v$ the speed ($\text{m/s}$), $k$ the spring constant ($\text{N/m}$), $x$ the displacement from the equilibrium position ($\text{m}$) and $A$ the amplitude ($\text{m}$). The right-hand side is the energy of the oscillation, $E = \tfrac{1}{2}kA^2$. At the equilibrium position $x = 0$, so all the energy is kinetic energy and the speed is greatest. In a pendulum the energy changes in the same way between gravitational potential energy and kinetic energy.
+
+<svg data-fig="energia" viewBox="0 0 600 360" role="img" aria-label="Graph to scale, for a spring constant of 20 N/m and an amplitude of 10 cm: the elastic potential energy of the spring E p is a parabola that is zero at the equilibrium position x = 0 and grows to 0.10 J at the extreme positions x = −10 cm and x = 10 cm. A horizontal line at the height 0.10 J is the total energy of the oscillation E. At x = 5 cm there is a vertical segment whose lower part from zero to 0.025 J is the potential energy and whose upper part from 0.025 J to 0.10 J is the kinetic energy E k." style="max-width:100%;font-size:24px">
+  <line x1="60" y1="260" x2="440" y2="260" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="60" y1="220" x2="440" y2="220" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="60" y1="180" x2="440" y2="180" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="60" y1="140" x2="440" y2="140" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="60" y1="100" x2="440" y2="100" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="60" y1="60" x2="440" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="60" y1="300" x2="60" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="155" y1="300" x2="155" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="345" y1="300" x2="345" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="440" y1="300" x2="440" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="59" y1="300" x2="454" y2="300" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M466,300 L453,306 L453,294 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="250" y1="301" x2="250" y2="46" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M250,34 L256,47 L244,47 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="60" y1="300" x2="60" y2="307" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="37.5" y="309.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$-10$</div></foreignObject>
+  <line x1="155" y1="300" x2="155" y2="307" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="138.5" y="309.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$-5$</div></foreignObject>
+  <line x1="345" y1="300" x2="345" y2="307" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="335" y="309.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$5$</div></foreignObject>
+  <line x1="440" y1="300" x2="440" y2="307" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="423.5" y="309.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$10$</div></foreignObject>
+  <foreignObject x="240" y="309.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$0$</div></foreignObject>
+  <line x1="243" y1="220" x2="250" y2="220" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="180" y="205.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$0.04$</span></div></foreignObject>
+  <line x1="243" y1="140" x2="250" y2="140" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="180" y="125.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$0.08$</span></div></foreignObject>
+  <line x1="243" y1="60" x2="250" y2="60" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="180" y="45.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$0.12$</span></div></foreignObject>
+  <foreignObject x="472" y="285.5" width="74" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$x\ (\text{cm})$</div></foreignObject>
+  <foreignObject x="262" y="13.5" width="62" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$E\ (\text{J})$</div></foreignObject>
+  <polyline points="60,100 63,106.5 66.5,113 69.5,119.5 72.5,126 76,132 79,138 82,144 85.5,150 88.5,155.5 91.5,161 95,166.5 98,172 101,177.5 104.5,182.5 107.5,187.5 110.5,192.5 114,197.5 117,202 120,206.5 123.5,211 126.5,215.5 129.5,220 133,224 136,228 139,232 142.5,236 145.5,239.5 148.5,243 152,246.5 155,250 158,253.5 161.5,256.5 164.5,259.5 167.5,262.5 171,265.5 174,268 177,270.5 180.5,273 183.5,275.5 186.5,278 190,280 193,282 196,284 199.5,286 202.5,287.5 205.5,289 209,290.5 212,292 215,293.5 218.5,294.5 221.5,295.5 224.5,296.5 228,297.5 231,298 234,298.5 237.5,299 240.5,299.5 243.5,300 247,300 250,300 253,300 256.5,300 259.5,299.5 262.5,299 266,298.5 269,298 272,297.5 275.5,296.5 278.5,295.5 281.5,294.5 285,293.5 288,292 291,290.5 294.5,289 297.5,287.5 300.5,286 304,284 307,282 310,280 313.5,278 316.5,275.5 319.5,273 323,270.5 326,268 329,265.5 332.5,262.5 335.5,259.5 338.5,256.5 342,253.5 345,250 348,246.5 351.5,243 354.5,239.5 357.5,236 361,232 364,228 367,224 370.5,220 373.5,215.5 376.5,211 380,206.5 383,202 386,197.5 389.5,192.5 392.5,187.5 395.5,182.5 399,177.5 402,172 405,166.5 408.5,161 411.5,155.5 414.5,150 418,144 421,138 424,132 427.5,126 430.5,119.5 433.5,113 437,106.5 440,100" fill="none" stroke="#7048e8" stroke-width="3" stroke-linejoin="round"/>
+  <line x1="60" y1="100" x2="440" y2="100" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <foreignObject x="32" y="85.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$E$</div></foreignObject>
+  <foreignObject x="138.5" y="161.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#7048e8">$E_\text{p}$</div></foreignObject>
+  <line x1="345" y1="300" x2="345" y2="250" stroke="#7048e8" stroke-width="6" stroke-linecap="butt"/>
+  <line x1="345" y1="250" x2="345" y2="100" stroke="#2b8a3e" stroke-width="6" stroke-linecap="butt"/>
+  <circle cx="345" cy="250" r="6.5" fill="#7048e8" stroke="#ffffff" stroke-width="2"/>
+  <foreignObject x="359" y="258.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#7048e8">$E_\text{p}$</div></foreignObject>
+  <foreignObject x="359" y="160.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#2b8a3e">$E_\text{k}$</div></foreignObject>
+</svg>
+
+## Worked example
+A body of mass $0.400\,\text{kg}$ is attached to a spring and oscillates on a frictionless horizontal surface. A student measures with a stopwatch that ten complete oscillations take $8.00\,\text{s}$. What is the spring constant of the spring?
+
+<!-- vaihe -->
+
+**Given and find.** Mass $m = 0.400\,\text{kg}$, time of ten cycles $t = 8.00\,\text{s}$. We want the spring constant $k$.
+
+<!-- vaihe -->
+
+**Principle.** The only force along the motion acting on the body is the harmonic force of the spring, so the motion is simple harmonic motion and the period is $T = 2\pi\sqrt{\tfrac{m}{k}}$. The period is obtained by dividing the time of ten cycles by ten.
+
+<!-- vaihe -->
+
+**Formula solved.** Square the formula for the period and solve $k$:
+```latex
+\begin{aligned}
+&T^2 = \frac{4\pi^2 m}{k} \\
+&k = \frac{4\pi^2 m}{T^2}
+\end{aligned}
+```
+
+<!-- vaihe -->
+
+**Unit conversions.** None are needed: the mass is in kilograms and the time in seconds, and $\tfrac{\text{kg}}{\text{s}^2} = \tfrac{\text{N}}{\text{m}}$.
+
+<!-- vaihe -->
+
+**Substitution.** The period is $T = 8.00\,\text{s} : 10 = 0.800\,\text{s}$, so
+```latex
+\begin{aligned}
+&k = \frac{4\pi^2 m}{T^2} \\
+&= \frac{4\pi^2 \cdot 0.400\,\text{kg}}{(0.800\,\text{s})^2} \\
+&= 24.67\,\text{N/m}
+\end{aligned}
+```
+
+<!-- vaihe -->
+
+**Answer.** The spring constant is about $24.7\,\text{N/m}$, to three significant figures as in the mass $0.400\,\text{kg}$ and the time $8.00\,\text{s}$.
+
+<!-- vaihe -->
+
+**Reasonableness.** Check the other way round: if the spring constant were exactly $25\,\text{N/m}$, the period would be $2\pi\sqrt{0.400\,\text{kg} : 25\,\text{N/m}} \approx 0.795\,\text{s}$, very close to the measured $0.800\,\text{s}$. A spring of about $25\,\text{N/m}$ stretches $1\,\text{cm}$ when pulled with a force of $0.25\,\text{N}$, which suits a light school spring. The frequency is $f = \tfrac{1}{T} = 1.25\,\text{Hz}$, so there is a little over one oscillation per second, and they are easy to count.
+
+## Common misconception
+Many people think that a heavy pendulum bob swings faster, because a greater weight acts on it. A greater force does act on a heavier bob, but it is also harder to accelerate: the acceleration $a = \tfrac{F}{m}$ stays the same, as in free fall. That is why the period of a pendulum does not depend on the mass. For a mass on a spring, however, the mass does matter, because the force of the spring does not grow with the mass.
+
+Another mistake is to think that a bigger swing takes longer. For a simple harmonic oscillator the longer distance is covered at a greater speed, so the period stays the same; for a pendulum this holds for small swings. A third mistake is to confuse the cycle with half a cycle: one cycle is a motion back and forth that ends at the same extreme position where it started.
+
+## Damping {Vaimeneminen}
+In real oscillators air resistance and friction change some of the mechanical energy into internal energy. The energy $E = \tfrac{1}{2}kA^2$ then decreases, and the amplitude decreases from cycle to cycle. This is called **damping**. When the damping is small, the period stays almost the same as without damping, so a pendulum clock that keeps time by the period does not run fast or slow as the amplitude changes. In a pendulum clock a weight or a spring supplies energy to replace the damping, so the amplitude stays almost constant. The shock absorbers of a car, on the other hand, are made to damp the oscillation quickly, so that the car does not keep rocking after every pothole.
+
+<svg data-fig="vaimeneva" viewBox="0 0 600 320" role="img" aria-label="Diagram: the position x of a damped oscillation as a function of time t. The curve oscillates on both sides of the equilibrium position, and its peaks decrease steadily. Dashed lines through the peaks show how the amplitude decreases. The interval between successive peaks, the period, stays almost the same." style="max-width:100%;font-size:24px">
+  <line x1="80" y1="290" x2="80" y2="181" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <line x1="79" y1="181" x2="484" y2="181" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M496,181 L483,187 L483,175 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="80" y1="182" x2="80" y2="58" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M80,46 L86,59 L74,59 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <foreignObject x="502" y="166.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$t$</div></foreignObject>
+  <foreignObject x="70" y="15.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$x$</div></foreignObject>
+  <polyline points="80,90 83,91.5 86,93 89.5,94 92.5,95.5 95.5,96.5 99,98 102,99 105,100 108,101.5 111,102.5 114.5,103.5 117.5,104.5 120.5,106 124,107 127,108 130,109 133,110 136,111 139.5,112 142.5,113 145.5,114 149,115 152,116 155,117 158,118 161,119 164.5,119.5 167.5,120.5 170.5,121.5 174,122.5 177,123 180,124 183,125 186,125.5 189.5,126.5 192.5,127.5 195.5,128 199,129 202,129.5 205,130.5 208,131 211,132 214.5,132.5 217.5,133 220.5,134 224,134.5 227,135 230,136 233,136.5 236,137 239.5,138 242.5,138.5 245.5,139 248.5,139.5 252,140.5 255,141 258,141.5 261,142 264.5,142.5 267.5,143 270.5,143.5 274,144 277,145 280,145.5 283,146 286,146.5 289.5,147 292.5,147.5 295.5,148 299,148.5 302,148.5 305,149 308,149.5 311,150 314.5,150.5 317.5,151 320.5,151.5 324,152 327,152.5 330,152.5 333,153 336,153.5 339.5,154 342.5,154.5 345.5,154.5 349,155 352,155.5 355,156 358,156 361,156.5 364.5,157 367.5,157.5 370.5,157.5 374,158 377,158.5 380,158.5 383,159 386,159 389.5,159.5 392.5,160 395.5,160 399,160.5 402,161 405,161 408,161.5 411,161.5 414.5,162 417.5,162 420.5,162.5 423.5,162.5 427,163 430,163.5 433,163.5 436,164 439.5,164 442.5,164.5 445.5,164.5 449,164.5 452,165 455,165" fill="none" stroke="#6b7480" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="6 5"/>
+  <polyline points="80,272 83,270.5 86,269 89.5,268 92.5,266.5 95.5,265.5 99,264 102,263 105,262 108,260.5 111,259.5 114.5,258.5 117.5,257.5 120.5,256 124,255 127,254 130,253 133,252 136,251 139.5,250 142.5,249 145.5,248 149,247 152,246 155,245 158,244 161,243 164.5,242.5 167.5,241.5 170.5,240.5 174,239.5 177,239 180,238 183,237 186,236.5 189.5,235.5 192.5,234.5 195.5,234 199,233 202,232.5 205,231.5 208,231 211,230 214.5,229.5 217.5,229 220.5,228 224,227.5 227,227 230,226 233,225.5 236,225 239.5,224 242.5,223.5 245.5,223 248.5,222.5 252,221.5 255,221 258,220.5 261,220 264.5,219.5 267.5,219 270.5,218.5 274,218 277,217 280,216.5 283,216 286,215.5 289.5,215 292.5,214.5 295.5,214 299,213.5 302,213.5 305,213 308,212.5 311,212 314.5,211.5 317.5,211 320.5,210.5 324,210 327,209.5 330,209.5 333,209 336,208.5 339.5,208 342.5,207.5 345.5,207.5 349,207 352,206.5 355,206 358,206 361,205.5 364.5,205 367.5,204.5 370.5,204.5 374,204 377,203.5 380,203.5 383,203 386,203 389.5,202.5 392.5,202 395.5,202 399,201.5 402,201 405,201 408,200.5 411,200.5 414.5,200 417.5,200 420.5,199.5 423.5,199.5 427,199 430,198.5 433,198.5 436,198 439.5,198 442.5,197.5 445.5,197.5 449,197.5 452,197 455,197" fill="none" stroke="#6b7480" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="6 5"/>
+  <polyline points="80,90 81.5,91.5 83,94.5 84.5,99 86,104.5 88,111.5 89.5,119.5 91,128.5 92.5,138 94,148.5 95.5,159 97,170 99,181 100.5,192 102,202 103.5,212 105,221.5 106.5,230 108,237.5 109.5,243.5 111,249 113,253 114.5,255.5 116,257 117.5,257.5 119,256 120.5,253.5 122,250 124,245 125.5,239.5 127,232.5 128.5,225 130,217 131.5,208.5 133,199.5 134.5,190 136,181 138,172 139.5,163 141,155 142.5,147 144,140 145.5,133.5 147,128.5 149,124 150.5,120.5 152,118.5 153.5,117 155,117 156.5,118 158,120 159.5,123 161,127 163,132 164.5,137.5 166,144 167.5,151 169,158 170.5,165.5 172,173.5 174,181 175.5,188.5 177,196 178.5,203 180,209.5 181.5,215.5 183,220.5 184.5,225 186,229 188,231.5 189.5,233.5 191,234.5 192.5,234.5 194,234 195.5,232 197,229.5 199,226 200.5,222 202,217.5 203.5,212 205,206.5 206.5,200.5 208,194 209.5,187.5 211,181 213,174.5 214.5,168.5 216,162.5 217.5,157 219,152 220.5,147.5 222,144 224,141 225.5,138.5 227,137 228.5,136 230,136 231.5,136.5 233,138 234.5,140 236,143 238,146.5 239.5,150.5 241,155 242.5,159.5 244,165 245.5,170 247,175.5 248.5,181 250.5,186.5 252,191.5 253.5,196.5 255,201 256.5,205.5 258,209 259.5,212 261,215 263,217 264.5,218 266,219 267.5,219 269,218.5 270.5,217 272,215 274,213 275.5,210 277,206.5 278.5,203 280,199 281.5,194.5 283,190 284.5,185.5 286,181 288,176.5 289.5,172 291,168 292.5,164 294,160.5 295.5,157.5 297,155 299,152.5 300.5,151 302,150 303.5,149.5 305,149 306.5,149.5 308,150.5 309.5,152.5 311,154.5 313,156.5 314.5,159.5 316,162.5 317.5,166 319,169.5 320.5,173.5 322,177 324,181 325.5,185 327,188.5 328.5,192 330,195 331.5,198 333,200.5 334.5,203 336,205 338,206 339.5,207 341,207.5 342.5,207.5 344,207.5 345.5,206.5 347,205 349,203.5 350.5,201.5 352,199 353.5,196.5 355,193.5 356.5,190.5 358,187.5 359.5,184 361,181 363,178 364.5,175 366,172 367.5,169 369,166.5 370.5,164.5 372,162.5 374,161 375.5,160 377,159 378.5,158.5 380,158.5 381.5,159 383,159.5 384.5,161 386,162 388,164 389.5,166 391,168 392.5,170.5 394,173 395.5,175.5 397,178.5 399,181 400.5,183.5 402,186 403.5,188.5 405,191 406.5,193 408,195 409.5,196.5 411,198 413,199 414.5,199.5 416,200 417.5,200 419,199.5 420.5,199 422,198 423.5,197 425.5,195.5 427,193.5 428.5,192 430,190 431.5,187.5 433,185.5 434.5,183.5 436,181 438,179 439.5,176.5 441,174.5 442.5,172.5 444,171 445.5,169.5 447,168 449,167 450.5,166 452,165.5 453.5,165 455,165" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+</svg>
+
+## Summary
+- A harmonic force $F = -kx$ makes a body perform simple harmonic motion: position as a function of time is a sine-shaped curve with amplitude $A$ and period $T$.
+- The period of a mass on a spring is $T = 2\pi\sqrt{\tfrac{m}{k}}$: it increases as the mass increases and decreases as the spring gets stiffer, but it does not depend on the amplitude.
+- The period of a simple pendulum with small swings is $T = 2\pi\sqrt{\tfrac{l}{g}}$: it depends on the length and the acceleration of free fall, not on the mass. At large angles the period is slightly longer.
+- The frequency is $f = \tfrac{1}{T}$. The period is measured from several cycles, so that the uncertainty of timing is divided among many cycles.
+- The energy of the oscillation $E = \tfrac{1}{2}kA^2$ is conserved when friction and air resistance are neglected. Damping reduces the energy and the amplitude.
