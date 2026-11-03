@@ -36,7 +36,7 @@
 **Muunnokset:** $r = 5{,}0 \cdot 0{,}001\,\text{m} = 0{,}0050\,\text{m}$; lopuksi $1\,\text{mT} = 10^{-3}\,\text{T}$.
 **Sijoitus:** $B = \dfrac{4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot 2{,}5\,\text{A}}{2\pi \cdot 0{,}0050\,\text{m}} = 1{,}0 \cdot 10^{-4}\,\text{T} = 0{,}10\,\text{mT}$
 **Vastaus:** $0{,}10\,\text{mT}$, kaksi merkitsevää numeroa kuten virta $2{,}5\,\text{A}$ ja etäisyys $5{,}0\,\text{mm}$.
-**Järkevyys:** Kenttä on noin kaksinkertainen Maan kenttään $50\,\mu\text{T}$ verrattuna, koska etäisyys on hyvin pieni. Todellisessa johdossa toisen johtimen vastakkaissuuntainen virta heikentää kenttää, joten johdon kenttä on vielä pienempi.
+**Järkevyys:** Kenttä on noin kaksinkertainen Maan kenttään $50\,\mu\text{T}$ verrattuna, koska etäisyys on hyvin pieni. Todellisessa johdossa toisen johtimen vastakkaissuuntainen virta heikentää kenttää useimmissa kohdissa ja varsinkin kauempana johdosta, joten johdon kenttä on silloin vielä pienempi.
 
 ## fy7-3-L1-05
 **Annettu:** käämi, $N = 300$, pituus $l = 15\,\text{cm}$, virta $I = 0{,}40\,\text{A}$; $\mu_0 = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$
@@ -61,12 +61,12 @@
 ## fy7-3-L2-02
 **Annettu:** pitkä suora johdin, virta $I = 6{,}0\,\text{A}$, kentän suuruus $B = 14\,\mu\text{T}$; $\mu_0 = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$
 **Kysytty:** etäisyys $r$ senttimetreinä
-**Periaate:** Pitkän suoran johtimen kenttä heikkenee kääntäen verrannollisesti etäisyyteen, joten on yksi etäisyys, jolla kenttä on juuri $14\,\mu\text{T}$. Se ratkaistaan suoran johtimen kaavasta.
+**Periaate:** Pitkän suoran johtimen kenttä heikkenee kääntäen verrannollisesti etäisyyteen, joten kenttä on juuri $14\,\mu\text{T}$ vain yhdellä etäisyydellä. Se ratkaistaan suoran johtimen kaavasta.
 **Kaava:** $B = \dfrac{\mu_0 I}{2\pi r}$, josta $r = \dfrac{\mu_0 I}{2\pi B}$
 **Muunnokset:** $B = 14\,\mu\text{T} = 14 \cdot 10^{-6}\,\text{T}$; lopuksi $1\,\text{m} = 100\,\text{cm}$.
 **Sijoitus:** $r = \dfrac{4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot 6{,}0\,\text{A}}{2\pi \cdot 14 \cdot 10^{-6}\,\text{T}} = 0{,}0857\,\text{m} = 8{,}57\,\text{cm}$
 **Vastaus:** $8{,}6\,\text{cm}$, kaksi merkitsevää numeroa kuten virta $6{,}0\,\text{A}$ ja kenttä $14\,\mu\text{T}$.
-**Järkevyys:** Tarkistus sijoittamalla takaisin: $2 \cdot 10^{-7} \cdot 6{,}0 : 0{,}0857\,\text{T} = 1{,}4 \cdot 10^{-5}\,\text{T}$. Lähempänä johdinta sen kenttä on Maan kenttää voimakkaampi, kauempana heikompi; siksi kompassin on oltava muutaman senttimetrin päässä, jotta Ørstedin koe näkyy selvästi.
+**Järkevyys:** Tarkistus sijoittamalla takaisin: $2 \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot 6{,}0\,\text{A} : 0{,}0857\,\text{m} = 1{,}4 \cdot 10^{-5}\,\text{T}$. Lähempänä johdinta sen kenttä on Maan kenttää voimakkaampi, kauempana heikompi; siksi kompassin on oltava muutaman senttimetrin päässä, jotta Ørstedin koe näkyy selvästi.
 
 ## fy7-3-L2-03
 **Annettu:** langan pituus $L = 25\,\text{m}$, putken halkaisija $d = 4{,}0\,\text{cm}$, käämin pituus $l = 0{,}20\,\text{m}$, virta $I = 2{,}0\,\text{A}$; $\mu_0 = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$
@@ -101,16 +101,16 @@
 ## fy7-3-L3-02
 **Annettu:** magneettikuvauslaitteen käämi, $B = 1{,}5\,\text{T}$, pituus $l = 1{,}6\,\text{m}$, kierroksen halkaisija $d = 1{,}0\,\text{m}$, virta $I = 400\,\text{A}$; $\mu_0 = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$
 **Kysytty:** langan kokonaispituus $L$ kilometreinä
-**Periaate:** Tehtävän mukaan käämiä käsitellään pitkänä käämänä, joten kierrosten määrä ratkaistaan kaavasta $B = \mu_0 \tfrac{N I}{l}$. Jokaiseen kierrokseen kuluu lankaa ympärysmitan $\pi d$ verran, joten langan pituus on kierrosten määrä kertaa ympärysmitta.
+**Periaate:** Tehtävässä käämi oletetaan pitkäksi, joten kierrosten määrä ratkaistaan kaavasta $B = \mu_0 \tfrac{N I}{l}$. Jokaiseen kierrokseen kuluu lankaa ympärysmitan $\pi d$ verran, joten langan pituus on kierrosten määrä kertaa ympärysmitta.
 **Kaava:** $N = \dfrac{B l}{\mu_0 I}$ ja $L = N \pi d$, josta $L = \dfrac{\pi d B l}{\mu_0 I}$
 **Muunnokset:** Ei tarvita ennen sijoitusta: kaikki suureet ovat SI-yksiköissä. Lopuksi $1\,\text{km} = 1000\,\text{m}$.
 **Sijoitus:** $N = \dfrac{1{,}5\,\text{T} \cdot 1{,}6\,\text{m}}{4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot 400\,\text{A}} = 4775$ ja $L = 4775 \cdot \pi \cdot 1{,}0\,\text{m} = 15\,000\,\text{m} = 15\,\text{km}$
 **Vastaus:** noin $15\,\text{km}$, kaksi merkitsevää numeroa kuten kenttä $1{,}5\,\text{T}$ ja halkaisija $1{,}0\,\text{m}$.
-**Järkevyys:** Kenttä on noin $30\,000$-kertainen Maan kenttään verrattuna, joten tarvitaan sekä suuri virta että tuhansia kierroksia: kierrostiheys on noin $3000$ kierrosta metrillä. Tavallinen kuparilanka kuumenisi tällaisella virralla liikaa, minkä vuoksi lanka on suprajohdetta. Arvio on karkea, koska todellinen käämi ei ole pitkä paksuuteensa verrattuna.
+**Järkevyys:** Kenttä on noin $30\,000$-kertainen Maan kenttään verrattuna, joten tarvitaan sekä suuri virta että tuhansia kierroksia: kierrostiheys on noin $3000$ kierrosta metrillä. Tavallinen kuparilanka kuumenisi tällaisella virralla liikaa, minkä vuoksi lanka on suprajohdetta. Arvio on karkea, koska todellinen käämi ei ole pitkä paksuuteensa verrattuna: kun pituus on vain $1{,}6$-kertainen halkaisijaan nähden, keskikohdan kenttä on noin $85\,\%$ pitkän käämin kaavan arvosta, joten todellinen käämi tarvitsee enemmän lankaa kuin $15\,\text{km}$.
 
 ## fy7-3-L3-03
 **Annettu:** kaksi pitkää yhdensuuntaista johdinta, etäisyys $d = 10\,\text{cm}$, samansuuntaiset virrat $I_1 = 4{,}0\,\text{A}$ ja $I_2 = 6{,}0\,\text{A}$
-**Kysytty:** kentän nollakohdan etäisyys $x$ johtimesta $1$ senttimetreinä
+**Kysytty:** kentän nollakohdan etäisyys $x$ johtimesta, jossa kulkee virta $I_1$, senttimetreinä
 **Periaate:** Oikean käden säännön mukaan samansuuntaisten virtojen kentät osoittavat johtimien välissä vastakkaisiin suuntiin, joten jossakin välin kohdassa ne kumoavat toisensa. Siellä kenttien suuruudet ovat yhtä suuret. Heikomman virran johdinta on oltava lähempänä, jotta sen kenttä on yhtä vahva.
 **Kaava:** $\dfrac{\mu_0 I_1}{2\pi x} = \dfrac{\mu_0 I_2}{2\pi (d - x)}$, josta $I_1 (d - x) = I_2 x$ ja $x = \dfrac{I_1 d}{I_1 + I_2}$
 **Muunnokset:** Ei tarvita: $\mu_0$ ja $2\pi$ supistuvat, ja kun $d$ sijoitetaan senttimetreinä, $x$ saadaan senttimetreinä.

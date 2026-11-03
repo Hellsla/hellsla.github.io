@@ -2,7 +2,7 @@
 
 > **Miksi** romuttamon nosturin magneetti nostaa tonnin painoisen autonromun ilmaan ja päästää sen irti napin painalluksella, vaikka jääkaappimagneetti ei päästä irti koskaan?
 
-<svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: romuttamon nosturi. Nosturin puomin päästä riippuu ketjuissa pyöreä, harmaa sähkömagneetti, joka nostaa ruosteisen autonromun irti romukasan päältä. Taustalla on romukasoja ja taivas." class="fig-hero" style="max-width:100%;font-size:24px">
+<svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: romuttamon nosturi. Nosturin puomin päästä riippuu ketjuissa pyöreä, harmaa sähkömagneetti, joka pitää ruosteista autonromua kiinni pohjassaan ja nostaa sen irti romukasan päältä. Taustalla on romukasoja ja taivas." class="fig-hero" style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy73h-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#eef5f9"/></linearGradient></defs>
   <rect x="0" y="0" width="1200" height="600" fill="url(#fy73h-sky)"/>
   <path d="M130,130 Q128,96 168,100 Q184,64 224,76 Q260,56 280,94 Q316,98 312,130 Z" fill="#ffffff" stroke-linejoin="round"/>
@@ -32,11 +32,7 @@
   <line x1="628" y1="152" x2="658" y2="144" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <line x1="566" y1="92" x2="540" y2="200" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
   <line x1="566" y1="92" x2="600" y2="200" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <ellipse cx="570" cy="206" rx="80" ry="16" fill="#8a96a3" stroke="#1f2933" stroke-width="3"/>
-  <rect x="490" y="206" width="160" height="38" fill="#6c757d" stroke="#1f2933" stroke-width="3"/>
-  <ellipse cx="570" cy="244" rx="80" ry="16" fill="#6c757d" stroke="#1f2933" stroke-width="3"/>
-  <path d="M566,92 C520,140 640,150 600,206" fill="none" stroke="#7048e8" stroke-width="3" stroke-linejoin="round"/>
-  <g transform="rotate(-6 570 320)">
+  <g transform="translate(0 -14)">
   <path d="M440,300 L480,262 L640,262 L690,300 L710,302 L710,348 L430,348 L430,302 Z" fill="#f2a69c" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
   <path d="M470,298 L494,272 L560,272 L560,298 Z" fill="#eef5f9" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
   <path d="M574,298 L574,272 L630,272 L660,298 Z" fill="#eef5f9" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
@@ -46,9 +42,10 @@
   <circle cx="650" cy="350" r="11" fill="#c4ccd4"/>
   <path d="M520,320 L540,330 L530,340" fill="none" stroke="#e8590c" stroke-width="3" stroke-linejoin="round"/>
   </g>
-  <path d="M520,262 q-8,10 0,20 t0,20" fill="none" stroke="#2b8a3e" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.7"/>
-  <path d="M570,262 q-8,10 0,20 t0,20" fill="none" stroke="#2b8a3e" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.7"/>
-  <path d="M620,262 q-8,10 0,20 t0,20" fill="none" stroke="#2b8a3e" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.7"/>
+  <ellipse cx="570" cy="206" rx="80" ry="16" fill="#8a96a3" stroke="#1f2933" stroke-width="3"/>
+  <rect x="490" y="206" width="160" height="38" fill="#6c757d" stroke="#1f2933" stroke-width="3"/>
+  <ellipse cx="570" cy="244" rx="80" ry="16" fill="#6c757d" stroke="#1f2933" stroke-width="3"/>
+  <path d="M566,92 C520,140 640,150 600,206" fill="none" stroke="#7048e8" stroke-width="3" stroke-linejoin="round"/>
 </svg>
 
 ## Ydinajatus
@@ -73,9 +70,9 @@ Suoran johtimen kenttäviivat ovat johtimen ympärillä samankeskisiä ympyröit
   <path d="M128,282 L114,288.5 L114,275.5 Z" fill="#2b8a3e" stroke-linejoin="round"/>
   <path d="M214,128 A64,15 0 0 1 86,128" fill="none" stroke="#2b8a3e" stroke-width="3" stroke-linejoin="round"/>
   <path d="M128,143 L114,149.5 L114,136.5 Z" fill="#2b8a3e" stroke-linejoin="round"/>
-  <line x1="176" y1="300" x2="176" y2="253" stroke="#7048e8" stroke-width="3" stroke-linecap="butt"/>
-  <path d="M176,240 L182.5,254 L169.5,254 Z" fill="#7048e8" stroke-linejoin="round"/>
-  <foreignObject x="186" y="267.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#7048e8">$I$</div></foreignObject>
+  <line x1="176" y1="338" x2="176" y2="301" stroke="#7048e8" stroke-width="3" stroke-linecap="butt"/>
+  <path d="M176,288 L182.5,302 L169.5,302 Z" fill="#7048e8" stroke-linejoin="round"/>
+  <foreignObject x="186" y="303.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#7048e8">$I$</div></foreignObject>
   <foreignObject x="250" y="145.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#2b8a3e">$\overline{B}$</div></foreignObject>
   <circle cx="450" cy="200" r="52" fill="none" stroke="#2b8a3e" stroke-width="2.5"/>
   <path d="M487,163 L500,168.5 L492,176.5 Z" fill="#2b8a3e" stroke-linejoin="round"/>
@@ -195,7 +192,7 @@ Kun käämin sisään työnnetään rautasydän, kenttä voimistuu moninkertaise
 <svg data-fig="electromagnet" viewBox="0 0 600 360" role="img" aria-label="Kaavakuva, ei mittakaavassa: sähkömagneetti. Pystysuoran harmaan rautasydämen ympärille on kierretty kuparinen käämi, jonka johtimet menevät paristoon ja kytkimeen. Kun kytkin on kiinni, rautasydämen alapää vetää puoleensa rautanauloja, jotka roikkuvat siinä ketjuna. Oikealla sama sähkömagneetti kytkin auki: naulat ovat pudonneet pöydälle." style="max-width:100%;font-size:24px">
   <line x1="300" y1="40" x2="300" y2="344" stroke="#c9c2b2" stroke-width="2" stroke-linecap="butt" stroke-dasharray="6 6"/>
   <foreignObject x="77.5" y="9.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{virta kulkee}$</div></foreignObject>
-  <foreignObject x="383.5" y="9.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{virta katki}$</div></foreignObject>
+  <foreignObject x="358.5" y="9.5" width="183" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{virta katkaistu}$</div></foreignObject>
   <line x1="12" y1="316" x2="588" y2="316" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
   <rect x="132" y="70" width="36" height="170" rx="3" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
   <path d="M124,92 Q150,102 176,96" fill="none" stroke="#b8622d" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
@@ -311,7 +308,7 @@ B = \mu_0 \frac{N I}{l}
 ```
 missä $N$ on käämin kierrosten lukumäärä, $I$ virta (A) ja $l$ käämin pituus (m). Kenttä riippuu kierrostiheydestä $N : l$ eli siitä, kuinka monta kierrosta on metrillä, eikä käämin paksuudesta. Kaava pätee, kun käämi on paljon pidempi kuin paksu ja sen sisällä on vain ilmaa. Käämin päissä kenttä on noin puolet keskikohdan arvosta, ja rautasydän voimistaa kenttää moninkertaiseksi.
 
-<svg data-fig="coil-dims" viewBox="0 0 600 330" role="img" aria-label="Kaavakuva, ei mittakaavassa: käämi sivulta. Käämissä on N kierrosta kuparijohdinta pituudella l. Johtimen päistä kulkee virta I, joka on merkitty violetilla nuolella. Käämin sisällä vihreä nuoli B osoittaa akselin suuntaan." style="max-width:100%;font-size:24px">
+<svg data-fig="coil-dims" viewBox="0 0 600 330" role="img" aria-label="Kaavakuva, ei mittakaavassa: käämi sivulta. Käämissä on N kierrosta kuparijohdinta pituudella l. Johtimen päistä kulkee virta I, joka on merkitty violetilla nuolella. Käämin sisällä vihreä nuoli osoittaa akselin suuntaan; nuolen vasemmalla puolella käämin ulkopuolella on merkintä B." style="max-width:100%;font-size:24px">
   <rect x="120" y="103.5" width="290" height="93" fill="#eef5f9" stroke="#8a96a3" stroke-width="1.5"/>
   <line x1="136.5" y1="92" x2="124" y2="208" stroke="#b8622d" stroke-width="2" stroke-opacity="0.45"/>
   <line x1="157.5" y1="92" x2="145" y2="208" stroke="#b8622d" stroke-width="2" stroke-opacity="0.45"/>
@@ -329,7 +326,7 @@ missä $N$ on käämin kierrosten lukumäärä, $I$ virta (A) ja $l$ käämin pi
   <line x1="406" y1="92" x2="393.5" y2="208" stroke="#b8622d" stroke-width="2" stroke-opacity="0.45"/>
   <line x1="150" y1="150" x2="363" y2="150" stroke="#2b8a3e" stroke-width="4" stroke-linecap="butt"/>
   <path d="M380,150 L362,158 L362,142 Z" fill="#2b8a3e" stroke-linejoin="round"/>
-  <foreignObject x="248.5" y="113.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#2b8a3e"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\overline{B}$</span></div></foreignObject>
+  <foreignObject x="71" y="135.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#2b8a3e">$\overline{B}$</div></foreignObject>
   <line x1="124" y1="92" x2="136.5" y2="208" stroke="#b8622d" stroke-width="4" stroke-linecap="round"/>
   <line x1="145" y1="92" x2="157.5" y2="208" stroke="#b8622d" stroke-width="4" stroke-linecap="round"/>
   <line x1="165.5" y1="92" x2="178" y2="208" stroke="#b8622d" stroke-width="4" stroke-linecap="round"/>
@@ -357,7 +354,7 @@ missä $N$ on käämin kierrosten lukumäärä, $I$ virta (A) ja $l$ käämin pi
 </svg>
 
 ### Magneettivuon tiheyden määrittäminen käämin sisällä
-Kenttää mitataan magneettikenttäanturilla, jonka kärki asetetaan käämin keskelle akselin suuntaiseksi. Virtaa muutetaan virtalähteellä, ja jokaisella virralla kirjataan virta ja anturin lukema $B$. Kun mittauspisteet piirretään $(I, B)$-koordinaatistoon esimerkiksi Vernier Graphical Analysis -ohjelmalla, niihin sovitetaan suora $B = A I + B_0$. Kaavan mukaan kulmakerroin on $A = \mu_0 \tfrac{N}{l}$, joten mittauksesta saadaan tyhjiön permeabiliteetille arvio $\mu_0 = A l : N$. Vakiotermi $B_0$ on yleensä pieni: siihen vaikuttavat anturin nollakohta ja Maan magneettikenttä.
+Kenttää mitataan magneettikenttäanturilla, jonka kärki asetetaan käämin keskelle akselin suuntaiseksi. Virtaa muutetaan virtalähteellä, ja jokaisella virralla kirjataan virta ja anturin lukema $B$. Kun mittauspisteet piirretään $(I, B)$-koordinaatistoon esimerkiksi Vernier Graphical Analysis -ohjelmalla, niihin sovitetaan suora $B = A I + B_0$. Kaavan mukaan kulmakerroin on $A = \mu_0 \tfrac{N}{l}$, joten mittauksesta saadaan tyhjiön permeabiliteetille arvio $\mu_0 = A l : N$. Kun kulmakertoimen epävarmuus on $\Delta A$ ja pituuden $\Delta l$, tuloksen suhteellinen epävarmuus arvioidaan laskemalla tekijöiden suhteelliset epävarmuudet yhteen: $\Delta \mu_0 : \mu_0 = \Delta A : A + \Delta l : l$. Vakiotermi $B_0$ on yleensä pieni: siihen vaikuttavat anturin nollakohta ja Maan magneettikenttä.
 
 ## Esimerkki
 Koulun käämissä on $600$ kierrosta, ja sen pituus on $15{,}0\,\text{cm}$. Käämissä kulkee virta $2{,}50\,\text{A}$. Kuinka suuri on magneettivuon tiheys käämin keskellä? Kuinka moninkertainen se on Maan magneettikenttään $50\,\mu\text{T}$ verrattuna? Käämi on pitkä paksuuteensa verrattuna, ja sen sisällä on ilmaa.
@@ -404,7 +401,7 @@ Koulun käämissä on $600$ kierrosta, ja sen pituus on $15{,}0\,\text{cm}$. Kä
 
 <!-- vaihe -->
 
-**Järkevyys.** Kierrostiheys on $600 : 0{,}150\,\text{m} = 4000$ kierrosta metrillä. Yksi ampeeri ja tuhat kierrosta metrillä antavat noin $1{,}3\,\text{mT}$, joten $2{,}5\,\text{A}$ ja nelinkertainen tiheys antavat noin $1{,}3\,\text{mT} \cdot 2{,}5 \cdot 4 = 13\,\text{mT}$. Tulos on samaa suuruusluokkaa kuin koulun magneettikenttäanturin mittausalue, ja se on selvästi pienempi kuin magneettikuvauslaitteen noin $1{,}5\,\text{T}$, joka tarvitsee suprajohtavan käämin ja satojen ampeerien virran.
+**Järkevyys.** Kierrostiheys on $600 : 0{,}150\,\text{m} = 4000$ kierrosta metrillä. Yksi ampeeri ja tuhat kierrosta metrillä antavat noin $1{,}3\,\text{mT}$, joten $2{,}5\,\text{A}$ ja nelinkertainen tiheys antavat noin $1{,}3\,\text{mT} \cdot 2{,}5 \cdot 4 = 13\,\text{mT}$. Tulos on noin $250$-kertainen Maan kenttään verrattuna, joten käämin kenttä on helppo mitata, ja se on selvästi pienempi kuin magneettikuvauslaitteen noin $1{,}5\,\text{T}$, joka tarvitsee suprajohtavan käämin ja satojen ampeerien virran.
 
 ## Yleinen virhekäsitys
 Moni ajattelee, että virtajohtimen magneettikenttä osoittaa johtimesta poispäin kuin sähkökenttä varatusta johtimesta. Kenttäviivat kuitenkin kiertävät johdinta suljettuina ympyröinä, eikä niillä ole alku- eikä loppupistettä. Kompassi johtimen vieressä kääntyy siksi poikittain johtimeen nähden, ei johdinta kohti.

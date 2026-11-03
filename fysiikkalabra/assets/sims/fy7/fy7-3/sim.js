@@ -14,9 +14,9 @@ new p5((p) => {
         CURR = [112, 72, 232], COPPER = [184, 98, 45], TUBE = [238, 245, 249], TUBEE = [138, 150, 163], ALU = [196, 204, 212],
         IRONC = [108, 117, 125], NPOLE = [242, 166, 156], SPOLE = [208, 230, 251], PAPER = [246, 241, 230];
   // wide 600 x 400 (picture above, graph below); narrow (sim-root < 500 px) 600 x 780, panels stacked, larger labels
-  const WIDE = { H: 400, yc: 112, rp: 34, probeLab: 22, dim: 196, dimLab: 216, picH: 232,
+  const WIDE = { H: 400, yc: 112, rp: 17, probeLab: 22, dim: 196, dimLab: 216, picH: 232,
                  ox: 70, oy: 372, gx1: 520, gy1: 262, xlab: 394, xstep: 10 };
-  const NARROW = { H: 780, yc: 190, rp: 52, probeLab: 40, dim: 318, dimLab: 352, picH: 390,
+  const NARROW = { H: 780, yc: 190, rp: 17, probeLab: 40, dim: 318, dimLab: 352, picH: 390,
                    ox: 104, oy: 700, gx1: 486, gy1: 470, xlab: 742, xstep: 20 };
   let G = WIDE, sk = 1, fh = 13, labels = [];
   let slI, selN, slL, slX, selDir, selSpeed, lI, lL, lX, readout, phase = 0;

@@ -22,7 +22,7 @@ a["sim-load-n"] = 200 / 0.20                              # turn density 1000 1/
 a["sim-load-long"] = coil(200, 1.0, 0.20) * 1e3           # long-coil value 1,257 mT (Laskennan selitys)
 # --- koe 1 (prediction 1): N = 200, I = 2,0 A, probe at the centre, l varied ---
 for l in (10, 20, 30, 40):
-    a[f"koe1-l{l}-B"] = axis(200, 2.0, l * 0.01, 0) * 1e3  # 4,87 / 2,46 / 1,66 / 1,25 mT
+    a[f"koe1-l{l}-B"] = axis(200, 2.0, l * 0.01, 0) * 1e3  # 4,67 / 2,46 / 1,66 / 1,25 mT
 a["koe1-ratio"] = a["koe1-l40-B"] / a["koe1-l20-B"]       # 0,507: stretching to twice the length about halves B
 # --- koe 2 (prediction 2): N = 200, I = 2,0 A, l = 20 cm, probe position varied ---
 for x in (0, 5, 8, 10, 12, 15, 20):

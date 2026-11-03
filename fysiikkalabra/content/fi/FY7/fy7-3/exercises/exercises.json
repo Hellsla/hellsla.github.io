@@ -87,7 +87,7 @@
     {
       "id": "fy7-3-L3-02",
       "level": 3,
-      "text": "Magneettikuvauslaitteen suprajohtava käämi tuottaa sisälleen magneettikentän $1{,}5\\,\\text{T}$. Käämin pituus on $1{,}6\\,\\text{m}$, sen halkaisija on $1{,}0\\,\\text{m}$, ja siinä kulkee virta $400\\,\\text{A}$. Arvioi, kuinka monta kilometriä suprajohtavaa lankaa käämiin tarvitaan. Käsittele käämiä pitkänä käämänä, ja oleta, että kaikkien kierrosten halkaisija on $1{,}0\\,\\text{m}$.",
+      "text": "Magneettikuvauslaitteen suprajohtava käämi tuottaa sisälleen magneettikentän $1{,}5\\,\\text{T}$. Käämin pituus on $1{,}6\\,\\text{m}$, sen halkaisija on $1{,}0\\,\\text{m}$, ja siinä kulkee virta $400\\,\\text{A}$. Arvioi, kuinka monta kilometriä suprajohtavaa lankaa käämiin tarvitaan. Oleta käämi pitkäksi ja oleta, että kaikkien kierrosten halkaisija on $1{,}0\\,\\text{m}$.",
       "answer": 15,
       "unit": "km",
       "tolerance": 0.03

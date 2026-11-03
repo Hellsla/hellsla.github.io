@@ -67,8 +67,8 @@ def wire_field():
     for y, rx, ry in ell:   # front halves with the arrow: counter-clockwise seen from above, so rightwards in front
         f.path(f"M{cx + rx},{y} A{rx},{ry} 0 0 1 {cx - rx},{y}", stroke=FIELD, w=3)
         head(f, cx - 22, y + ry, 0, FIELD, 14)
-    f.arrow(cx + 26, 300, cx + 26, 240, CURRENT, 3, 14)
-    f.tex(cx + 36, 282, "I", "start", CURRENT)
+    f.arrow(cx + 26, 338, cx + 26, 288, CURRENT, 3, 14)
+    f.tex(cx + 36, 318, "I", "start", CURRENT)
     f.tex(cx + 100, 160, r"\overline{B}", "start", FIELD)
     # right: the same from above, current out of the page
     cx, cy = 450, 200
@@ -125,7 +125,7 @@ def electromagnet():
             "pudonneet pöydälle.")
     f.line(300, 40, 300, 344, RULE, 2, "6 6")
     f.tex(150, 24, r"\text{virta kulkee}", "middle")
-    f.tex(450, 24, r"\text{virta katki}", "middle")
+    f.tex(450, 24, r"\text{virta katkaistu}", "middle")
     f.line(12, 316, 588, 316, INK, 2.5)
     for cx, on in ((150, True), (450, False)):
         f.rect(cx - 18, 70, 36, 170, IRON, INK, 2.5, 3)
@@ -169,8 +169,8 @@ def wire_graph():
 
 def coil_dims():
     f = Fig("fy73-dims", 330, "Kaavakuva, ei mittakaavassa: käämi sivulta. Käämissä on N kierrosta kuparijohdinta pituudella l. "
-            "Johtimen päistä kulkee virta I, joka on merkitty violetilla nuolella. Käämin sisällä vihreä nuoli B osoittaa "
-            "akselin suuntaan.")
+            "Johtimen päistä kulkee virta I, joka on merkitty violetilla nuolella. Käämin sisällä vihreä nuoli osoittaa "
+            "akselin suuntaan; nuolen vasemmalla puolella käämin ulkopuolella on merkintä B.")
     x0, x1, yc, rr = 120, 410, 150, 58
     xm = (x0 + x1) / 2
     f.rect(x0, yc - rr * 0.8, x1 - x0, rr * 1.6, GLASS, METAL_EDGE, 1.5)
@@ -180,7 +180,7 @@ def coil_dims():
         x = x0 + (i + 0.5) * st
         f.add(f'<line x1="{n(x + st * 0.3)}" y1="{yc - rr}" x2="{n(x - st * 0.3)}" y2="{yc + rr}" stroke="{COPPER}" stroke-width="2" stroke-opacity="0.45"/>')
     f.arrow(x0 + 30, yc, x1 - 30, yc, FIELD, 4, 18)
-    f.tex(xm, yc - 22, r"\overline{B}", "middle", FIELD, bg=True)
+    f.tex(x0 - 16, yc, r"\overline{B}", "end", FIELD)
     for i in range(turns):
         x = x0 + (i + 0.5) * st
         f.add(f'<line x1="{n(x - st * 0.3)}" y1="{yc - rr}" x2="{n(x + st * 0.3)}" y2="{yc + rr}" stroke="{COPPER}" stroke-width="4" stroke-linecap="round"/>')
@@ -221,7 +221,7 @@ def coil_fit():
 def hero():
     """The chapter's opening illustration: a scrapyard crane's electromagnet lifting a scrapped car."""
     f = H.hero("fy73-hero", "Kuvitus: romuttamon nosturi. Nosturin puomin päästä riippuu ketjuissa pyöreä, harmaa "
-               "sähkömagneetti, joka nostaa ruosteisen autonromun irti romukasan päältä. Taustalla on romukasoja ja "
+               "sähkömagneetti, joka pitää ruosteista autonromua kiinni pohjassaan ja nostaa sen irti romukasan päältä. Taustalla on romukasoja ja "
                "taivas.")
     f.rect(0, 0, 1200, 600, H.grad(f, "fy73h-sky", ICE, GLASS))
     H.cloud(f, 220, 110, 1.0)
@@ -245,12 +245,8 @@ def hero():
     # chains and the magnet
     f.line(566, 92, 540, 200, INK, 3)
     f.line(566, 92, 600, 200, INK, 3)
-    f.add(f'<ellipse cx="570" cy="206" rx="80" ry="16" fill="{METAL_EDGE}" stroke="{INK}" stroke-width="3"/>')
-    f.rect(490, 206, 160, 38, IRON, INK, 3)
-    f.add(f'<ellipse cx="570" cy="244" rx="80" ry="16" fill="{IRON}" stroke="{INK}" stroke-width="3"/>')
-    f.path("M566,92 C520,140 640,150 600,206", stroke=CURRENT, w=3)
-    # the scrapped car hanging under the magnet, a little tilted
-    f.add('<g transform="rotate(-6 570 320)">')
+    # the scrapped car clamped to the magnet's face (drawn first, so the magnet overlaps its roof)
+    f.add('<g transform="translate(0 -14)">')
     f.path("M440,300 L480,262 L640,262 L690,300 L710,302 L710,348 L430,348 L430,302 Z", HOT_LIGHT, INK, 3)
     f.path("M470,298 L494,272 L560,272 L560,298 Z", GLASS, INK, 2)
     f.path("M574,298 L574,272 L630,272 L660,298 Z", GLASS, INK, 2)
@@ -260,9 +256,10 @@ def hero():
     f.circle(650, 350, 11, ALUMINIUM)
     f.path("M520,320 L540,330 L530,340", stroke=HEAT, w=3)
     f.add('</g>')
-    # a pale band of the magnet's field between magnet and car (no text)
-    for x in (520, 570, 620):
-        f.path(f"M{x},262 q-8,10 0,20 t0,20", stroke=FIELD, w=3, extra='stroke-linecap="round" stroke-opacity="0.7"')
+    f.add(f'<ellipse cx="570" cy="206" rx="80" ry="16" fill="{METAL_EDGE}" stroke="{INK}" stroke-width="3"/>')
+    f.rect(490, 206, 160, 38, IRON, INK, 3)
+    f.add(f'<ellipse cx="570" cy="244" rx="80" ry="16" fill="{IRON}" stroke="{INK}" stroke-width="3"/>')
+    f.path("M566,92 C520,140 640,150 600,206", stroke=CURRENT, w=3)
     return f.svg()
 
 

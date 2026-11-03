@@ -1,9 +1,9 @@
 VERDICT: DONE
 
-Draft, round 1. Every check in `check_lesson.py fy7-3` passes.
-
-- `lesson.md`: Miksi (the scrapyard electromagnet) and the hero. Ydinajatus covers Ørsted, the field circles around a wire, the right-hand rule, the coil's field and the electromagnet, with 3 figures. Kaava: Suoran johtimen ja käämin magneettikenttä gives $B = \mu_0 I/(2\pi r)$ and $B = \mu_0 NI/l$ with their conditions, the B(r) graph, the coil sketch and the measurement method. Also a seven-stage Esimerkki, the misconceptions and the summary.
-- `inquiry.json`: two predictions (stretched coil, coil end). The simulation runs two experiments, then a conclusion. The LOPS measurement is an `interpret` on example data: a Graphical Analysis fit leads to μ0 and its relative uncertainty (systematic error from the coil's finite length). Then the transfer task (cancel Earth's field), error spotting, three checks and the exit ticket.
-- New sim `assets/sims/fy7/fy7-3/sim.js`: a finite coil on its axis, with I, N, l, probe x, current direction and speed. The B(x) graph is stacked on phones. Its texts are in `lang/fi.json` under `sims.fy7-3` and it has 32 assertions in `tests/sims/fy7-3.json`.
-- Exercises 5/4/3 with complete solutions. `answers.py`, `lesson-answers.py`, `figures.py` (7 figures) and `sim-spec.md`.
-- `glossary.json`: virtajohdin, käämi, oikean käden sääntö, sähkömagneetti.
+Round 1 fix, lesson.
+- inquiry.json: mittaus text states "Käämin halkaisija on 3,0 cm" (science Blocking); mittaus solution: slope read as (6,2 − 0,04) mT : 2,5 A ≈ 2,46 mT/A, and Järkevyys says the difference is slightly larger than the uncertainty, cause in the next task; epavarmuus prompt says to add the relative uncertainties; koe-1 name "käämin pituus (cm)" so the table header has its unit.
+- lesson.md: one sentence in "Magneettivuon tiheyden määrittäminen käämin sisällä" on adding relative uncertainties (slope rule A = μ0 N : l was already there); Järkevyys no longer claims the school sensor's range, compares with Earth's field instead; figures regenerated from figures.py.
+- lessons/FY7/fy7-3/figures.py: hero car now clamped to the magnet's face (no gap); coil-dims B label moved left of the coil, off the windings; wire-field I arrow and label moved below the table onto clear paper; "virta katkaistu".
+- lesson-answers.py: comment 4,67 mT.
+- assets/sims/fy7/fy7-3/sim.js: coil radius rp 17 px (2,0 cm at 8,4 px/cm) in both layouts. No test loosened.
+check_lesson.py fy7-3: all ok.
