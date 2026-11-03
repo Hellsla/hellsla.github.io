@@ -39,15 +39,15 @@
 **Järkevyys:** Rinnankytkennän resistanssi on pienempi kuin yhdenkään haaran resistanssi, ja $0{,}15\,\Omega < 0{,}45\,\Omega$. Tarkistetaan vielä vastusten rinnankytkennän yhtälöllä: $\tfrac{1}{R_\text{s}} = \tfrac{3}{0{,}45\,\Omega}$, joten $R_\text{s} = 0{,}15\,\Omega$.
 
 ## fy6-8-L1-05
-**Annettu:** kuvaajan mittauspisteet. Niiden kautta on piirretty suora, jota on jatkettu akseleille.
+**Annettu:** kuvaajan pisteet. Niiden kautta on piirretty suora, jota on jatkettu akseleille.
 **Kysytty:** oikosulkuvirta $I_\text{k}$ ampeereina
-**Periaate:** Oikosulussa napajännite on nolla. Pariston $(I, U)$-kuvaaja on suora $U = E - R_\text{s} I$. Oikosulkuvirta on siis se virta, jolla suora leikkaa vaaka-akselin. Oikosulkuvirtaa ei mitattu. Se saadaan jatkamalla mittauspisteiden suoraa.
+**Periaate:** Oikosulussa napajännite on nolla. Pariston $(I, U)$-kuvaaja on suora $U = E - R_\text{s} I$. Oikosulkuvirta on siis se virta, jolla suora leikkaa vaaka-akselin. Oikosulkuvirtaa ei mitattu. Se saadaan jatkamalla pisteiden kautta piirrettyä suoraa.
 **Kuvaajan lukeminen:** Katkoviivaksi jatkettu suora kohtaa vaaka-akselin, jossa $U = 0$, ruudukkoviivalla $3{,}0\,\text{A}$. Pystyakselin suora kohtaa kohdassa $4{,}5\,\text{V}$. Se on lähdejännite.
 **Kaava:** $U = E - R_\text{s} I_\text{k} = 0$, josta $I_\text{k} = \dfrac{E}{R_\text{s}}$. Arvo luetaan suoran ja vaaka-akselin leikkauskohdasta.
 **Muunnokset:** Ei tarvita: virta luetaan ampeereina.
 **Sijoitus:** Kuvaajasta $I_\text{k} = 3{,}0\,\text{A}$.
 **Vastaus:** $3{,}0\,\text{A}$. Vastauksessa on kaksi merkitsevää numeroa, koska arvo luetaan $0{,}5\,\text{A}$:n ruudukolta.
-**Järkevyys:** Mittauspisteistä $(0{,}40\,\text{A};\ 3{,}9\,\text{V})$ ja $(1{,}60\,\text{A};\ 2{,}1\,\text{V})$ saadaan $R_\text{s} = 1{,}8\,\text{V} : 1{,}20\,\text{A} = 1{,}5\,\Omega$. Siitä $I_\text{k} = E : R_\text{s} = 4{,}5\,\text{V} : 1{,}5\,\Omega = 3{,}0\,\text{A}$. Tulos pätee vain, jos sisäinen resistanssi pysyy samana myös mittausalueen ulkopuolella.
+**Järkevyys:** Suoran pisteistä $(0{,}40\,\text{A};\ 3{,}9\,\text{V})$ ja $(1{,}60\,\text{A};\ 2{,}1\,\text{V})$ saadaan $R_\text{s} = 1{,}8\,\text{V} : 1{,}20\,\text{A} = 1{,}5\,\Omega$. Siitä $I_\text{k} = E : R_\text{s} = 4{,}5\,\text{V} : 1{,}5\,\Omega = 3{,}0\,\text{A}$. Tulos pätee vain, jos sisäinen resistanssi pysyy samana myös mittausalueen ulkopuolella.
 
 ## fy6-8-L2-01
 **Annettu:** ensimmäinen kuorma: $I_1 = 0{,}20\,\text{A}$ ja $U_1 = 4{,}30\,\text{V}$. Toinen kuorma: $I_2 = 0{,}80\,\text{A}$ ja $U_2 = 3{,}70\,\text{V}$.

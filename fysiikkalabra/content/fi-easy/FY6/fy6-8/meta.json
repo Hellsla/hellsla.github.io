@@ -26,7 +26,7 @@
     },
     {
       "term": "napajännite",
-      "explain": "Pariston napojen välinen jännite silloin, kun paristosta otetaan virtaa. Se on aina pienempi kuin lähdejännite."
+      "explain": "Pariston napojen välinen jännite silloin, kun paristosta otetaan virtaa. Kun paristosta otetaan virtaa, se on pienempi kuin lähdejännite."
     },
     {
       "term": "sisäinen resistanssi",

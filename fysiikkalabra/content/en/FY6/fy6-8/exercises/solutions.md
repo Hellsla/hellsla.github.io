@@ -39,15 +39,15 @@
 **Reasonableness:** The resistance of a parallel connection is smaller than the resistance of any single branch, and $0.15\,\Omega < 0.45\,\Omega$. Check with the equation for resistors in parallel: $\tfrac{1}{R_\text{s}} = \tfrac{3}{0.45\,\Omega}$, so $R_\text{s} = 0.15\,\Omega$.
 
 ## fy6-8-L1-05
-**Given:** the measured points of the graph and the straight line drawn through them, extended to the axes
+**Given:** the points of the graph and the straight line drawn through them, extended to the axes
 **Find:** the short-circuit current $I_\text{k}$ in amperes
-**Principle:** In a short circuit the terminal voltage is zero. The $(I, U)$ graph of a battery is the straight line $U = E - R_\text{s} I$, so the short-circuit current is the current at which the line meets the horizontal axis. The short-circuit current was not measured but is obtained by extending the line through the measured points.
+**Principle:** In a short circuit the terminal voltage is zero. The $(I, U)$ graph of a battery is the straight line $U = E - R_\text{s} I$, so the short-circuit current is the current at which the line meets the horizontal axis. The short-circuit current was not measured but is obtained by extending the line drawn through the points.
 **Reading the graph:** The line, extended with a dashed line, meets the horizontal axis $U = 0$ at the gridline $3.0\,\text{A}$. It meets the vertical axis at $4.5\,\text{V}$, which is the source voltage.
 **Formula:** $U = E - R_\text{s} I_\text{k} = 0$, from which $I_\text{k} = \dfrac{E}{R_\text{s}}$; the value is read from where the line meets the horizontal axis.
 **Conversions:** Not needed: the current is read in amperes.
 **Substitution:** From the graph $I_\text{k} = 3.0\,\text{A}$.
 **Answer:** $3.0\,\text{A}$, to two significant figures, because the value is read from a grid of $0.5\,\text{A}$.
-**Reasonableness:** From the measured points $(0.40\,\text{A};\ 3.9\,\text{V})$ and $(1.60\,\text{A};\ 2.1\,\text{V})$ we get $R_\text{s} = 1.8\,\text{V} : 1.20\,\text{A} = 1.5\,\Omega$, and $I_\text{k} = E : R_\text{s} = 4.5\,\text{V} : 1.5\,\Omega = 3.0\,\text{A}$. The result depends on the internal resistance staying the same outside the range of measurement.
+**Reasonableness:** From the points on the line $(0.40\,\text{A};\ 3.9\,\text{V})$ and $(1.60\,\text{A};\ 2.1\,\text{V})$ we get $R_\text{s} = 1.8\,\text{V} : 1.20\,\text{A} = 1.5\,\Omega$, and $I_\text{k} = E : R_\text{s} = 4.5\,\text{V} : 1.5\,\Omega = 3.0\,\text{A}$. The result depends on the internal resistance staying the same outside the range of measurement.
 
 ## fy6-8-L2-01
 **Given:** first load: $I_1 = 0.20\,\text{A}$, $U_1 = 4.30\,\text{V}$; second load: $I_2 = 0.80\,\text{A}$, $U_2 = 3.70\,\text{V}$

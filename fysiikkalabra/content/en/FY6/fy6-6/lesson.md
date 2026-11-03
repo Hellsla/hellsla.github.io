@@ -123,7 +123,7 @@ In the resistor in the figure, $0.50\,\text{C}$ passes through every second, and
 ### Joule's law: why a resistor heats up
 In a resistor the electric field accelerates free electrons, but they keep colliding with the ions of the metal (chapter *Resistance and Ohm's law*). In the collisions the energy the electrons have gained is passed on to the vibrations of the ions: electrical energy is transformed into internal energy of the resistor, and the resistor warms up. From a warm resistor, energy is transferred as heat to the surroundings.
 
-When Ohm's law $U = RI$ is substituted into the formula for power, the power of the resistor becomes $P = RI \cdot I = RI^2$. This is **Joule's law**: the power transformed into internal energy in a resistor is proportional to the resistance and to the square of the current. When the current doubles, the heating power becomes four times larger.
+When Ohm's law $U = RI$ is substituted into the formula for power, the power of the resistor becomes $P = RI \cdot I = RI^2$. This is **Joule's law**: the power transformed into internal energy in a resistor is proportional to the resistance and to the square of the current. When the current through the same resistor doubles and its resistance stays the same, the heating power becomes four times larger.
 
 ### How power is shared in a circuit
 The same current flows through resistors in series (chapter *Resistors in series and in parallel*), so by Joule's law $P = RI^2$ a larger resistance gets a larger power. Resistors in parallel have the same voltage. Then it is best to calculate the power from the voltage: when $I = U : R$, the power is $P = U^2 : R$, and a smaller resistance gets a larger power.
@@ -314,6 +314,6 @@ Another common mistake is to calculate the power of a resistor in series with th
 
 ## Summary
 - The electric power $P = UI$ tells how many joules of electrical energy are transformed in a component per second. The unit is $1\,\text{W} = 1\,\text{V} \cdot 1\,\text{A}$.
-- Joule's law: the power transformed into internal energy in a resistor is $P = RI^2 = U^2 : R$. When the current doubles, the power becomes four times larger.
+- Joule's law: the power transformed into internal energy in a resistor is $P = RI^2 = U^2 : R$. When the current through the same resistor doubles and its resistance stays the same, the power becomes four times larger.
 - In a series connection a larger resistance gets a larger power, in a parallel connection a smaller one. The powers of the components add up to the power of the source.
 - The energy is $E = Pt$. A resistor warms up until heat is transferred from it to the surroundings as fast as electrical energy arrives.

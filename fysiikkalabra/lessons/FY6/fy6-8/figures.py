@@ -206,9 +206,9 @@ def connections():
 
 # --- task figures --------------------------------------------------------------------------------------------------
 def ex_graph():
-    """Task figure (L1-05): measured points of a 4,5 V battery and the line through them extended to both axes."""
+    """Task figure (L1-05): model points of a 4,5 V battery and the line through them extended to both axes."""
     f = new("fy68-exgraph", 360, "Kuvaaja mittakaavassa: pariston napajännite U voltteina virran I funktiona ampeereina, ruudukon "
-            "väli 0,5 A ja 0,5 V. Mittauspisteet ovat (0,40 A; 3,9 V), (0,80 A; 3,3 V), (1,20 A; 2,7 V) ja (1,60 A; 2,1 V). "
+            "väli 0,5 A ja 0,5 V. Pisteet ovat (0,40 A; 3,9 V), (0,80 A; 3,3 V), (1,20 A; 2,7 V) ja (1,60 A; 2,1 V). "
             "Pisteiden kautta on piirretty suora, jota on jatkettu katkoviivana molempiin akseleihin asti.")
     ax = Axes(f, (96, 290), (500, 66), x=(0, 3.5), y=(0, 5), xticks=[0.5 * k for k in range(1, 8)],
               yticks=[0.5 * k for k in range(1, 11)], xlabel=r"I\ (\text{A})", ylabel=r"U\ (\text{V})",
@@ -291,6 +291,6 @@ REUSE = {
     "potential": "reveals: the terminal voltage U is E minus the internal drop R_s I (schematic potential graph)",
     "ui-graph": "reveals: E = 1,50 V and I_k = 5,0 A as the intercepts, R_s = 0,30 ohm from the slope triangle",
     "connections": "reveals: two identical cells in series give 2E and 2R_s, in parallel E and R_s/2",
-    "ex-graph": "safe: four measured (I, U) points of a 4,5 V battery and their line extended to both axes, no intercepts written",
+    "ex-graph": "safe: four model (I, U) points of a 4,5 V battery and their line extended to both axes, no intercepts written",
     "check-graph": "safe: five (I, U) points of a 9 V battery with scatter and a fitted line, no slope or intercept written",
 }

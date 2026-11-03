@@ -35,7 +35,7 @@
     {
       "id": "fy6-8-L1-05",
       "level": 1,
-      "text": "Kuvaajassa on pariston napajännitteen mittauspisteet virran funktiona. Pisteiden kautta on piirretty suora, jota on jatkettu akseleille. Kuinka suuri on pariston oikosulkuvirta? Lue arvo kuvaajasta.",
+      "text": "Kuvaajassa on pariston napajännite virran funktiona neljällä kuorman arvolla. Pisteet on laskettu mallista. Pisteiden kautta on piirretty suora, jota on jatkettu akseleille. Kuinka suuri on pariston oikosulkuvirta? Lue arvo kuvaajasta.",
       "figure": "fy6-8/ex-graph",
       "answer": 3.0,
       "unit": "A",

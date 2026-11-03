@@ -29,7 +29,7 @@
     },
     {
       "term": "sähköenergia",
-      "explain": "Sähköenergia on energiaa, jonka laite ottaa sähköverkosta. Sen saa kertomalla laitteen tehon käyttöajalla. Lämmittävässä laitteessa se muuttuu lämmöksi."
+      "explain": "Sähköenergia on energiaa, jonka laite ottaa sähköverkosta. Sen saa kertomalla laitteen tehon käyttöajalla. Lämmittävässä laitteessa se muuttuu laitteen sisäenergiaksi, joka siirtyy lämpönä ympäristöön."
     }
   ]
 }

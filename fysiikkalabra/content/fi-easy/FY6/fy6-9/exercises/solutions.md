@@ -112,7 +112,7 @@
 
 ## fy6-9-L3-03
 **Annettu:** latausvirta $I = 2{,}0\,\text{A}$, aika $t = 1{,}5\,\text{h}$, sisäinen resistanssi $R_\text{s} = 0{,}15\,\Omega$
-**Kysytty:** sisäiseksi energiaksi muuttuva energia $W$ kilojouleina
+**Kysytty:** sisäenergiaksi muuttuva energia $W$ kilojouleina
 **Periaate:** Latausvirta kulkee akun sisäisen resistanssin läpi. Resistanssin jännite on Ohmin lain mukaan $R_\text{s} I$. Sähköteho on jännite kertaa virta (luku *Sähköteho ja vastuksen lämpeneminen*). Vakioteholla energia on teho kertaa aika. Tämä energia muuttuu akun sisäenergiaksi, joka siirtyy lämpönä ympäristöön.
 **Kaava:** $P = R_\text{s} I \cdot I = R_\text{s} I^2$ ja $W = Pt$, josta $W = R_\text{s} I^2 t$
 **Muunnokset:** $t = 1{,}5\,\text{h} = 1{,}5 \cdot 3600\,\text{s} = 5400\,\text{s}$ ja lopuksi $1\,\text{kJ} = 1000\,\text{J}$

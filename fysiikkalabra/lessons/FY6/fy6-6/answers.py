@@ -11,7 +11,7 @@ a["fy6-6-L1-01"] = 5.0 * 2.4                              # USB charger: P = U I
 a["fy6-6-L1-02"] = 47 * 0.20 ** 2                         # P = R I^2 = 47 ohm · (0,20 A)^2 = 1,88 W
 a["fy6-6-L1-03"] = 230 ** 2 / 26.5 / 1000                 # kettle: P = U^2 / R = 230^2 / 26,5 = 1996 W = 2,00 kW
 a["fy6-6-L1-04"] = 9.0 * 2.0 * 3600 / 1000                # E = P t = 9,0 W · 7200 s = 64 800 J = 64,8 kJ
-# figure fy6-6/ex-pi: measured points (0,50 A; 1,25 W), (1,0 A; 5,0 W), (1,5 A; 11,25 W), (2,0 A; 20 W)
+# figure fy6-6/ex-pi: points (0,50 A; 1,25 W), (1,0 A; 5,0 W), (1,5 A; 11,25 W), (2,0 A; 20 W)
 a["fy6-6-L1-05"] = 20 / 2.0 ** 2                          # R = P / I^2 = 20 W : (2,0 A)^2 = 5,0 ohm
 # Level 2: two steps, a conversion or a rearrangement
 a["fy6-6-L2-01"] = 1.8 * 1000 / 230                       # hair dryer: I = P / U = 1800 W : 230 V = 7,83 A

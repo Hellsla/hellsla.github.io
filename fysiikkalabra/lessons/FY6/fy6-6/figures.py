@@ -123,10 +123,10 @@ def graph():
     return f.svg()
 
 
-# --- task figure (L1-05): measured powers of a resistor, no curve, no resistance written -------------------------
+# --- task figure (L1-05): model powers of a resistor, no curve, no resistance written -------------------------
 def ex_pi():
     f = Fig("fy66-expi", 360, "Kuvaaja mittakaavassa: vastuksen teho P watteina virran I funktiona ampeereina. Neljä "
-            "mittauspistettä: (0,50 A; 1,25 W), (1,0 A; 5,0 W), (1,5 A; 11,25 W) ja (2,0 A; 20 W). Pystyakselin ruudukon väli "
+            "pistettä: (0,50 A; 1,25 W), (1,0 A; 5,0 W), (1,5 A; 11,25 W) ja (2,0 A; 20 W). Pystyakselin ruudukon väli "
             "on 5 W ja vaaka-akselin 0,5 A.")
     ax = Axes(f, (96, 304), (480, 66), x=(0, 2.5), y=(0, 25), xticks=[0.5, 1, 1.5, 2, 2.5], yticks=[5, 10, 15, 20, 25],
               xlabel=r"I\ (\text{A})", ylabel=r"P\ (\text{W})")
@@ -185,5 +185,5 @@ REUSE = {
     "jako": "reveals: the powers 4/8 W in series and 36/18 W in parallel of 4 and 8 ohm on 12 V",
     "lampo": "reveals: a resistor's temperature levels off where heat out equals electrical power in (schematic)",
     "graph": "reveals: P = R I^2 parabolas for 4 and 8 ohm, doubling I quadruples P",
-    "ex-pi": "safe: four measured (I, P) points of a resistor on 5 W and 0,5 A gridlines, no curve or resistance",
+    "ex-pi": "safe: four (I, P) points of a resistor on 5 W and 0,5 A gridlines, no curve or resistance",
 }

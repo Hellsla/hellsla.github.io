@@ -24,7 +24,7 @@
     },
     {
       "term": "Joulen laki",
-      "explain": "Joulen laki kertoo, miten vastuksen teho riippuu virrasta tai jännitteestä. Virran kaksinkertaistuessa vastus lämpenee nelinkertaisella teholla."
+      "explain": "Joulen laki kertoo, miten vastuksen teho riippuu virrasta tai jännitteestä. Kun virta samassa vastuksessa kaksinkertaistuu ja resistanssi pysyy samana, vastus lämpenee nelinkertaisella teholla."
     },
     {
       "term": "sähköenergia",

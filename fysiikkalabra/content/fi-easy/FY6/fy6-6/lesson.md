@@ -123,7 +123,7 @@ Kuvan vastuksen läpi kulkee $0{,}50\,\text{C}$ sekunnissa. Jokainen coulombi lu
 ### Joulen laki: miksi vastus lämpenee
 Vastuksessa sähkökenttä vauhdittaa vapaita elektroneja. Elektronit törmäilevät koko ajan metallin ioneihin (luku *Resistanssi ja Ohmin laki*). Törmäyksissä elektronien energia siirtyy ionien värähtelyyn. Sähköenergia muuttuu silloin vastuksen **sisäenergiaksi**, eli aineen hiukkasten energiaksi. Vastus lämpenee. Lämpimästä vastuksesta energiaa siirtyy lämpönä ympäristöön.
 
-Sijoita tehon kaavaan Ohmin laki $U = RI$. Vastuksen teho on silloin $P = RI \cdot I = RI^2$. Tämä on **Joulen laki**. Sen mukaan vastuksessa sisäenergiaksi muuttuva teho on verrannollinen resistanssiin ja virran neliöön. Kun virta kaksinkertaistuu, lämmitysteho nelinkertaistuu.
+Sijoita tehon kaavaan Ohmin laki $U = RI$. Vastuksen teho on silloin $P = RI \cdot I = RI^2$. Tämä on **Joulen laki**. Sen mukaan vastuksessa sisäenergiaksi muuttuva teho on verrannollinen resistanssiin ja virran neliöön. Kun virta samassa vastuksessa kaksinkertaistuu ja resistanssi pysyy samana, lämmitysteho nelinkertaistuu.
 
 ### Tehon jakautuminen virtapiirissä
 Sarjaan kytkettyjen vastusten läpi kulkee sama virta (luku *Vastusten sarja- ja rinnankytkennät*). Joulen lain $P = RI^2$ mukaan suurempi resistanssi saa silloin suuremman tehon. Rinnan kytkettyjen vastusten yli on sama jännite. Silloin teho kannattaa laskea jännitteestä. Kun $I = U : R$, teho on $P = U^2 : R$. Pienempi resistanssi saa silloin suuremman tehon.
@@ -314,6 +314,6 @@ Toinen yleinen virhe on laskea sarjaan kytketyn vastuksen teho lähteen jännitt
 
 ## Tiivistelmä
 - Sähköteho $P = UI$ kertoo, kuinka monta joulea sähköenergiaa muuttuu komponentissa sekunnissa. Yksikkö on $1\,\text{W} = 1\,\text{V} \cdot 1\,\text{A}$.
-- Joulen laki: vastuksessa sisäenergiaksi muuttuva teho on $P = RI^2 = U^2 : R$. Kun virta kaksinkertaistuu, teho on nelinkertainen.
+- Joulen laki: vastuksessa sisäenergiaksi muuttuva teho on $P = RI^2 = U^2 : R$. Kun virta samassa vastuksessa kaksinkertaistuu ja resistanssi pysyy samana, teho on nelinkertainen.
 - Sarjaankytkennässä suurempi resistanssi saa suuremman tehon. Rinnankytkennässä pienempi resistanssi saa suuremman tehon. Komponenttien tehot ovat yhteensä lähteen teho.
 - Energia on $E = Pt$. Vastus lämpenee, kunnes siitä siirtyy ympäristöön lämpöä yhtä nopeasti kuin siihen tulee sähköenergiaa.

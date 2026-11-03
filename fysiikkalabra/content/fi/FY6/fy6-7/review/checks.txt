@@ -6,4 +6,4 @@ ok   answer positions
 ok   layout 360 px
 ok   layout 768 px
 ok   layout 1280 px
-fy6-7: draft (science=stale, pedagogy=stale, visual=stale); exercises: reviewed (science=PASS, pedagogy=PASS, visual=PASS)
+fy6-7: reviewed (science=PASS, pedagogy=PASS, visual=PASS); exercises: reviewed (science=PASS, pedagogy=PASS, visual=PASS)
