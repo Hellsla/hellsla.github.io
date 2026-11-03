@@ -303,6 +303,7 @@ p.sol-answer{display:inline-block;margin:.1rem 0 .5rem;padding:.35rem .9rem;back
 #sim-root .note{font-size:var(--fs-small);color:var(--ink-2);margin:.5rem 0 0}
 #sim-root .controls{display:flex;flex-wrap:wrap;align-items:flex-end;gap:.5rem 1.5rem;margin:.5rem 0}
 #sim-root label{display:flex;flex-direction:column;flex:1 1 11rem;min-width:0;font-size:var(--fs-ui)}
+#sim-root label>span{white-space:normal!important}#sim-root label>span .katex{white-space:nowrap}   /* a slider label wraps between its words (over a sim.js nowrap), never inside its formula, so the value stays with its symbol (en fy3-6/fy3-14 overflowed the sim panel at 1280, 2026-11-03) */
 #sim-root label:has(select){flex:1 1 auto}   /* a drop-down at its longest option's width where the row has room: English options were cut off at 1280 (visual audit 2026-11-01) */
 #sim-root input[type=range]{width:100%;min-height:40px;margin:0;accent-color:var(--accent)}
 #sim-root button{font:600 var(--fs-ui) var(--sans);min-height:40px;padding:0 1.4rem;border:1px solid var(--accent-deep);border-radius:999px;background:var(--accent-deep);color:#fff;cursor:pointer}
