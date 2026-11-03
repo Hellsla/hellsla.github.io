@@ -2,7 +2,7 @@
   "version": 1,
   "contribution": "Äänen voimakkuudelle tulee suure ja asteikko. Suure on intensiteetti $I = \\tfrac{P}{A}$. Pistemäisestä lähteestä tulevalle äänelle pätee etäisyyden neliön käänteislaki. Lisäksi opitaan kuulokynnys $I_0$ ja intensiteettitaso desibeleinä logaritmin avulla. Opitaan myös laskemaan intensiteetti tasosta ja usean lähteen yhteistaso intensiteettien summana.",
   "learn": [
-    "laskemaan äänen intensiteetin, kun tiedät tehon ja pinta-alan tai etäisyyden pistemäiseen lähteeseen.",
+    "laskemaan äänen intensiteetin tehon ja pinta-alan avulla tai tehon ja pistemäisen lähteen etäisyyden avulla.",
     "laskemaan intensiteettitason desibeleinä ja laskemaan intensiteetin tunnetusta tasosta logaritmin avulla.",
     "selittämään, mitä kuulokynnys tarkoittaa, ja laskemaan usean äänilähteen yhteistason."
   ],
