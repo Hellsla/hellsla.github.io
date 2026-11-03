@@ -1,11 +1,11 @@
-VERDICT: FAIL
-CONTENT-HASH: 05ac2328062e3e59
+VERDICT: PASS
+CONTENT-HASH: ece51be74ef11ee8
 
 ## Blocking
-- A. meta.json key_concepts "yhteistuotanto": "Silloin hukkalämpö käytetään lämmitykseen." contradicts the entry "hukkalämpö" (heat lost unused) and the worked example, where 60 MW is still hukkalämpö in CHP. Only the condenser heat is recovered. Write: "Voimalaitos tuottaa samalla sekä sähköä että kaukolämpöä. Lauhduttimen lämpö, joka muuten menisi hukkaan, käytetään lämmitykseen."
+(none)
 
 ## Polish
-- meta.json "lämpövoimakone": a turbine alone is not a heat engine; "voimalaitoksen höyryturbiinikierto".
+- none
 
 ## Checked
-- batch delta review: key_concepts, reworded sentences, photo captions, objective-form and level-policy edits, chapter-reference titles judged against the guardrails and the lesson text; restyled figure lines are styling only.
+- batch delta review, round 2 (diff cc7b2aeb..debc61a4): yhteistuotanto key concept now says the condenser heat is recovered, consistent with the hukkalämpö entry and the 60 MW worked example; no other content changed.

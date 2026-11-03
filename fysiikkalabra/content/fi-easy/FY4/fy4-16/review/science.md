@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 6d60f7ad908449be
+CONTENT-HASH: f9577732fa867a8e
 
 ## Blocking
 (none)
 
 ## Polish
-- meta.json "rajanopeus": see fy4-14 (sled slope; "ei enää muutu").
+- none
 
 ## Checked
-- batch delta review: key_concepts, reworded sentences, photo captions, objective-form and level-policy edits, chapter-reference titles judged against the guardrails and the lesson text; restyled figure lines are styling only; force-diagram blocks recomputed (588,6 vs 650 N up; 765,2 N both; 539,6 vs 473,6 N, a down).
+- batch delta review, round 2 (diff cc7b2aeb..debc61a4): rajanopeus 'nopeus ei enää muutu', as in fy4-14; no other content changed.

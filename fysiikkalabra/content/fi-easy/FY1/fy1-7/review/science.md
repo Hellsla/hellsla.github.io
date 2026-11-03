@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: ae08be0bc29851ef
+CONTENT-HASH: 4f03db83ad5f480a
 
 ## Blocking
 (none)
 
 ## Polish
-- meta.json "tiheys": "tietyssä tilavuudessa" is loose for a ratio; "tilavuusyksikköä kohti, esimerkiksi yhdessä kuutiosenttimetrissä" matches the lesson text.
+- none
 
 ## Checked
-- batch delta review: key_concepts, reworded sentences, photo captions, objective-form and level-policy edits, chapter-reference titles judged against the guardrails and the lesson text; restyled figure lines are styling only.
+- batch delta review, round 2 (diff cc7b2aeb..debc61a4): tiheys key concept now mass per unit volume, matching the lesson text; no other content changed.

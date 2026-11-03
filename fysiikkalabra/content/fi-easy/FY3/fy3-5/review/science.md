@@ -1,11 +1,11 @@
-VERDICT: FAIL
-CONTENT-HASH: e0893c33d743ef6c
+VERDICT: PASS
+CONTENT-HASH: ee08d6fd321e1cf2
 
 ## Blocking
-- B. meta.json key_concepts "termodynamiikan ensimmäinen pääsääntö": "Sisäenergia muuttuu yhtä paljon kuin systeemiin tulee energiaa lämpönä ja työnä yhteensä." The condition the lesson states (line 94) and the guardrail requires is missing. Write: "Kun systeemin liike- ja potentiaalienergia eivät muutu, sisäenergia muuttuu yhtä paljon kuin systeemiin tulee energiaa lämpönä ja työnä yhteensä. Energia säilyy."
+(none)
 
 ## Polish
 - none
 
 ## Checked
-- batch delta review: key_concepts, reworded sentences, photo captions, objective-form and level-policy edits, chapter-reference titles judged against the guardrails and the lesson text; restyled figure lines are styling only.
+- batch delta review, round 2 (diff cc7b2aeb..debc61a4): first-law key concept now states the condition (system kinetic and potential energy unchanged), matching lesson line 94; no other content changed.

@@ -1,11 +1,11 @@
-VERDICT: FAIL
-CONTENT-HASH: e4a553c859c06171
+VERDICT: PASS
+CONTENT-HASH: 9cdcab48d0e8e5b4
 
 ## Blocking
-- A. meta.json key_concepts "maanjäristysaalto": "Aalto, joka etenee maankuoressa maanjäristyksen jälkeen." The lesson has P and S waves crossing the mantle and core (S-wave shadow zone from the liquid outer core), so the waves do not stay in the crust. Write: "Aalto, joka lähtee maanjäristyksen murtumakohdasta ja etenee maankuoressa ja Maan sisäosissa."
+(none)
 
 ## Polish
 - none
 
 ## Checked
-- batch delta review: key_concepts, reworded sentences, photo captions, objective-form and level-policy edits, chapter-reference titles judged against the guardrails and the lesson text; restyled figure lines are styling only.
+- batch delta review, round 2 (diff cc7b2aeb..debc61a4): maanjäristysaalto key concept now includes Earth's interior, consistent with the P/S-wave shadow-zone text; no other content changed.

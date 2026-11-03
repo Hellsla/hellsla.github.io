@@ -1,11 +1,11 @@
-VERDICT: FAIL
-CONTENT-HASH: a96dff988faa1ce4
+VERDICT: PASS
+CONTENT-HASH: 3bed236abcdd3c6b
 
 ## Blocking
-- B. meta.json key_concepts "sulamislämpö": "Sulamisen aikana lämpötila pysyy samana." holds only for a pure substance at constant pressure (guardrail, found in this chapter). Write: "Kun puhdas aine sulaa vakiopaineessa, sen lämpötila pysyy samana."
+(none)
 
 ## Polish
 - none
 
 ## Checked
-- batch delta review: key_concepts, reworded sentences, photo captions, objective-form and level-policy edits, chapter-reference titles judged against the guardrails and the lesson text; restyled figure lines are styling only.
+- batch delta review, round 2 (diff cc7b2aeb..debc61a4): sulamislämpö key concept now states pure substance at constant pressure; no other content changed.
