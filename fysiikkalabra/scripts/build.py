@@ -200,6 +200,16 @@ def fi(x):
 def esc(s): return _h.escape(str(s), quote=True)
 
 
+def plain_tex(s):
+    """A title with LaTeX ("Teho: $P = \\Delta E/\\Delta t$") as plain text for the browser tab and link previews,
+    which cannot render maths: "Teho: P = ΔE/Δt"."""
+    def one(m):
+        f = re.sub(r"\\frac\{([^{}]*)\}\{([^{}]*)\}", r"\1/\2", m.group(1))
+        for tex, uni in (("\\Delta", "Δ"), ("\\rho", "ρ"), ("\\mu", "µ"), ("\\cdot", "·")): f = f.replace(tex + " ", uni).replace(tex, uni)
+        return f.replace("\\", "")
+    return re.sub(r"\$([^$]+)\$", one, s)
+
+
 def texts(html):
     """{{t:site.footer}} in a template -> the text in the language being built (lang/<lang>.json)."""
     return re.sub(r"\{\{t:([\w.]+)\}\}", lambda m: esc(T(m.group(1))), html)
@@ -617,7 +627,8 @@ def build_language(lang):
             body, toc = inquiry.render(folder, inq, parts, lambda t: nbsp_units(render_md(t)))
             main = f'<article id="teoria" class="inquiry">{body}{photo_tail}</article>'
         skey = (meta["id"] if where[0] == "lesson" else where[1].name) if where else None   # the sim's block of lang "sims"
-        html = (texts(tpl).replace("{{title}}", esc(meta["title"])).replace("{{course}}", meta["course"]).replace("{{notice}}", notice(meta["state"]))
+        html = (texts(tpl).replace("<title>{{title}}", "<title>" + esc(plain_tex(meta["title"]))).replace('og:title" content="{{title}}', 'og:title" content="' + esc(plain_tex(meta["title"])))
+                .replace("{{title}}", esc(meta["title"])).replace("{{course}}", meta["course"]).replace("{{notice}}", notice(meta["state"]))
                 .replace("{{strings}}", strings_block(skey)).replace("{{back_to_course}}", esc(T("site.back_to_course", course=meta["course"])))
                 .replace("{{toc}}", toc).replace("{{main}}", main + concept_cards.lesson_link(meta["course"], meta["id"], T, UP) + f"<!--fl-chapter-nav:{meta['id']}-->")
                 .replace("{{scripts}}", '<script src="inquiry.js"></script>' if inq else "")
