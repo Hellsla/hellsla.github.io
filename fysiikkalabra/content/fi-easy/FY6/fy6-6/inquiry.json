@@ -356,7 +356,7 @@
       "stage": "tarkista",
       "type": "numeric",
       "title": "2. Jatkojohdon lämpeneminen",
-      "prompt": "Jatkojohdon kahden johtimen yhteinen resistanssi on $0{,}20\\,\\Omega$. Johdon kautta kulkee virta $8{,}0\\,\\text{A}$ lämpöpuhaltimeen. Kuinka suuri teho muuttuu johdossa sisäenergiaksi eli lämmöksi? Vastaa watteina.",
+      "prompt": "Jatkojohdon kahden johtimen yhteinen resistanssi on $0{,}20\\,\\Omega$. Johdon kautta kulkee virta $8{,}0\\,\\text{A}$ lämpöpuhaltimeen. Kuinka suuri teho muuttuu johdossa sisäenergiaksi? Vastaa watteina.",
       "answer": 12.8,
       "unit": "W",
       "tolerance": 0.02,
