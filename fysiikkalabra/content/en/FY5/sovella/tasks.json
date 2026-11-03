@@ -1,0 +1,586 @@
+{
+  "intro": "Four tasks bring the module together: rotation and equilibrium, circular motion and gravitation, oscillation, and waves and sound. In each one you decide which models fit the situation and justify your choice.",
+  "tasks": [
+    {
+      "id": "fy5-s1",
+      "title": "Tower crane",
+      "source": "example",
+      "source_note": "The dimensions and masses of the crane are made up, but they are of the same order of magnitude as in a small tower crane on a building site.",
+      "text": "The horizontal jib of a tower crane on a building site is at the top of the tower, and it can turn about the vertical axis of the tower. The load hangs on a cable from a trolley that can be driven along the jib. On the other side of the tower, the jib continues as a counter-jib with a concrete counterweight at its end.\n\nData of the crane:\n\n- the mass of the jib with its counter-jib is $4.0\\,\\text{t}$, with its centre of mass $12\\,\\text{m}$ from the axis of the tower on the side of the load\n- the mass of the counterweight is $9.0\\,\\text{t}$, with its centre of mass $10\\,\\text{m}$ from the axis of the tower on the other side\n- the greatest distance of the trolley from the axis of the tower is $40\\,\\text{m}$\n- according to the manufacturer, the total moment of the weights about the axis of the tower may be at most $600\\,\\text{kNm}$ in either direction.\n\nThe masses of the trolley and the cable can be ignored.",
+      "figure": "fy5-sovella/fy5-s1-crane",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 3,
+          "text": "The crane lifts a $2.0\\,\\text{t}$ concrete element. How far from the axis of the tower must the trolley be driven so that the total moment of the weights about the axis of the tower is zero?",
+          "answer": {
+            "value": 21,
+            "unit": "m",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "text": "Chooses the axis of the tower as the axis of rotation and takes all three weights into account: the load, the weight of the jib at its centre of mass and the counterweight, each moment in the correct direction of rotation.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$m_\\text{p} g r_\\text{p} + m g r - m_\\text{v} g r_\\text{v} = 0$, so $r = \\dfrac{m_\\text{v} r_\\text{v} - m_\\text{p} r_\\text{p}}{m}$; $g$ cancels."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$r \\approx 21\\,\\text{m}$"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 3,
+          "text": "How large a load may the crane lift when the trolley is at the tip of the jib?",
+          "answer": {
+            "value": 2580,
+            "unit": "kg",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "The total moment in the direction of the load is at most the limit: $m g r_\\text{max} + m_\\text{p} g r_\\text{p} - m_\\text{v} g r_\\text{v} = 600\\,\\text{kNm}$, solved for $m$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "The moment of the jib is $471\\,\\text{kNm}$ and that of the counterweight $883\\,\\text{kNm}$, so the moment of the load may be $1012\\,\\text{kNm}$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$m \\approx 2.6\\,\\text{t}$"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 4,
+          "text": "The site foreman suggests: \"Let's add a couple of tonnes to the counterweight so that heavier loads can be lifted from the tip of the jib.\" Evaluate the suggestion.",
+          "criteria": [
+            {
+              "text": "States that a larger counterweight increases the greatest load at the tip of the jib, because it reduces the total moment on the side of the load.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Notices that without a load the total moment points towards the counterweight and grows with the counterweight: now it is $412\\,\\text{kNm}$, and with an addition of two tonnes $608\\,\\text{kNm}$, which exceeds the limit.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Calculates that the counterweight can be increased by at most about $1.9\\,\\text{t}$, in which case the greatest load at the tip would be about $3.1\\,\\text{t}$.",
+              "tag": "math",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The suggestion does not work as it stands: the counterweight is dimensioned so that the limit is not exceeded with either the empty or the fully loaded crane."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 4,
+          "text": "The operator turns the jib with the load of part a steadily so that one revolution would take $90\\,\\text{s}$. The load hangs on a $15\\,\\text{m}$ cable, and the cable tilts slightly from the vertical so that the load is farther from the axis of the tower than the trolley. The operator explains: \"Centrifugal force throws the load outwards.\" Draw the free-body diagram of the load while the jib turns steadily and evaluate the operator's explanation.",
+          "criteria": [
+            {
+              "key": "fbd_forces",
+              "points": 1,
+              "detail": "Only the weight $\\overline{G}$ and the tension $\\overline{S}$ of the cable; no centrifugal force and no other force acting outwards."
+            },
+            {
+              "key": "fbd_directions",
+              "points": 1,
+              "detail": "The weight straight down from the centre; the tension from the upper surface along the cable upwards and slightly towards the axis of the tower."
+            },
+            {
+              "key": "fbd_magnitudes",
+              "points": 1,
+              "detail": "The net force points horizontally towards the axis of the tower; the centripetal acceleration is drawn separately and not as a force."
+            },
+            {
+              "text": "Evaluates the explanation: there is no outward force. Because of its inertia the load tends to continue straight ahead, so it stays farther out until the cable has tilted so much that the horizontal component of the tension keeps it on the circular path.",
+              "tag": "communication",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "e",
+          "kind": "calc",
+          "points": 4,
+          "text": "What angle does the cable make with the vertical? Does the tilt matter?",
+          "answer": {
+            "value": 0.6,
+            "unit": "°",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "fbd_equations",
+              "points": 1,
+              "detail": "Axis $x$ towards the axis of the tower and $y$ upwards: $S\\sin\\theta = m\\dfrac{v^2}{r}$ and $S\\cos\\theta - mg = 0$."
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\tan\\theta = \\dfrac{v^2}{rg}$, where $v = \\dfrac{2\\pi r}{T}$; the mass cancels."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$\\theta \\approx 0.60^\\circ$"
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "The load moves outwards by only about $15\\,\\text{m} \\cdot \\tan 0.60^\\circ \\approx 16\\,\\text{cm}$, so steady turning hardly changes the situation; a sudden start or stop, on the other hand, makes the load swing."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "transfer": "fy5-2",
+        "math": "fy5-2",
+        "concept": "fy5-4",
+        "communication": "fy5-4"
+      }
+    },
+    {
+      "id": "fy5-s2",
+      "title": "Moons of Jupiter",
+      "source": "statistics",
+      "source_note": "NASA JPL Solar System Dynamics, mean orbital radii and orbital periods of the moons (checked 2026), rounded.",
+      "text": "Galileo Galilei discovered the four large moons of Jupiter in 1610. The table gives the mean radii $r$ of their orbits, measured from the centre of Jupiter, and their orbital periods $T$, together with the small moon Amalthea, which orbits closer to Jupiter. The orbits of the moons are almost circles.\n\n| moon | $r\\ (10^3\\,\\text{km})$ | $T\\ (\\text{d})$ |\n|---|---|---|\n| Amalthea | $181.4$ | $0.4982$ |\n| Io | $421.8$ | $1.769$ |\n| Europa | $671.1$ | $3.551$ |\n| Ganymede | $1070$ | $7.155$ |\n| Callisto | $1883$ | $16.69$ |\n\nThe gravitational constant is $\\gamma = 6.674 \\cdot 10^{-11}\\,\\tfrac{\\text{N}\\cdot\\text{m}^2}{\\text{kg}^2}$.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "graph",
+          "points": 5,
+          "text": "Model the motion of the moons as uniform circular motion maintained by the gravity of Jupiter. Make a graph from the data so that, according to the model, a straight line through the origin fits its points.",
+          "criteria": [
+            {
+              "text": "Derives from the model the relationship $v^2 = \\dfrac{\\gamma M}{r}$ from the condition $\\gamma\\dfrac{Mm}{r^2} = m\\dfrac{v^2}{r}$ and chooses the quantities of the graph accordingly, for example $\\tfrac{1}{r}$ and $v^2$.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "The orbital speeds have been calculated from the equation $v = \\dfrac{2\\pi r}{T}$ in metres and seconds, for example for Io $v \\approx 17.3\\,\\text{km/s}$."
+            },
+            {
+              "key": "graph_axes",
+              "points": 1
+            },
+            {
+              "key": "graph_points",
+              "points": 1
+            },
+            {
+              "key": "graph_fit",
+              "points": 1,
+              "detail": "A straight line through the origin fits all five points."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 3,
+          "text": "Determine the mass of Jupiter from the graph.",
+          "answer": {
+            "value": 1.9e+27,
+            "unit": "kg",
+            "tolerance": 0.04
+          },
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "The slope of the line, $\\gamma M \\approx 1.27 \\cdot 10^{17}\\,\\text{m}^3/\\text{s}^2$, has been read from a point of the line far from the origin."
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$M = \\dfrac{k}{\\gamma}$, where $k$ is the slope."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$M \\approx 1.9 \\cdot 10^{27}\\,\\text{kg}$"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 3,
+          "text": "Jupiter rotates once about its axis in $9.93\\,\\text{h}$. A probe is to orbit above the equator so that it stays above the same cloud formation all the time. How far from the centre of Jupiter is the orbit of the probe?",
+          "answer": {
+            "value": 160000,
+            "unit": "km",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "text": "Justifies that the orbital period of the probe must equal the rotation period of Jupiter, and combines the equations $v = \\dfrac{2\\pi r}{T}$ and $v^2 = \\dfrac{\\gamma M}{r}$.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$r^3 = \\dfrac{\\gamma M T^2}{4\\pi^2}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$r \\approx 1.6 \\cdot 10^{8}\\,\\text{m} = 160\\,000\\,\\text{km}$"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 4,
+          "text": "A student claims: \"Ganymede is the most massive moon of Jupiter. If it were moved to the orbit of Io, it would orbit Jupiter faster than Io, because a larger gravitational force would act on it.\" Evaluate the claim. What assumptions does the result of part b require?",
+          "criteria": [
+            {
+              "text": "Explains that a larger mass gets a larger gravitational force but needs a correspondingly larger centripetal force: the mass of the moon cancels from the equation, so the orbital speed depends only on the mass of Jupiter and the radius of the orbit.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The claim is not correct: on the orbit of Io, Ganymede would orbit with the same speed and in the same time as Io."
+            },
+            {
+              "key": "assumptions",
+              "points": 1,
+              "detail": "The moon moves in a circular orbit around the centre of Jupiter; this requires that the mass of the moon is very small compared with the mass of Jupiter."
+            },
+            {
+              "key": "assumptions",
+              "points": 1,
+              "detail": "Only the gravity of Jupiter acts on the moon: the attraction of the other moons and the Sun is small in comparison."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "transfer": "fy5-6",
+        "math": "fy5-6",
+        "graph": "fy5-6",
+        "concept": "fy5-6",
+        "communication": "fy5-5"
+      }
+    },
+    {
+      "id": "fy5-s3",
+      "title": "A spring and masses",
+      "source": "simulated",
+      "source_note": "The data has been calculated from a model in which the spring constant of the spring is $20\\,\\text{N/m}$ and a third of the mass of the spring moves with the mass. A little random variation has been added to the timings, as in a measurement.",
+      "text": "A group of students studied the oscillation of a steel spring hanging vertically. A mass was hung from the lower end of the spring, pulled a few centimetres below its equilibrium position and released. The group measured the time $t_{10}$ of ten periods with a stopwatch. The mass of the spring itself is $45\\,\\text{g}$.\n\n| $m\\ (\\text{g})$ | $t_{10}\\ (\\text{s})$ |\n|---|---|\n| $100$ | $4.74$ |\n| $150$ | $5.73$ |\n| $200$ | $6.50$ |\n| $250$ | $7.25$ |\n| $300$ | $7.86$ |\n| $350$ | $8.51$ |\n\nIn addition, the group hung a $200\\,\\text{g}$ mass from the spring at rest and measured that the spring stretched $9.8\\,\\text{cm}$.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "graph",
+          "points": 4,
+          "text": "Draw a graph of the oscillation measurements so that a straight line fits its points, and fit the model to it.",
+          "criteria": [
+            {
+              "text": "Chooses the $(m, T^2)$ graph, because the equation of the period gives $T^2 = \\dfrac{4\\pi^2}{k}\\,m$, and calculates the periods $T = t_{10} : 10$.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "graph_axes",
+              "points": 1
+            },
+            {
+              "key": "graph_points",
+              "points": 1
+            },
+            {
+              "key": "graph_fit",
+              "points": 1,
+              "detail": "The line is fitted to the points without forcing it through the origin; it meets the vertical axis slightly above the origin."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 3,
+          "text": "Determine the spring constant of the spring from the graph.",
+          "answer": {
+            "value": 19.9,
+            "unit": "N/m",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "A slope of about $1.98\\,\\text{s}^2/\\text{kg}$ from two points of the line far apart from each other."
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "The slope is $\\dfrac{4\\pi^2}{k}$, so $k = \\dfrac{4\\pi^2}{\\text{slope}}$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$k \\approx 19.9\\,\\text{N/m}$"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 4,
+          "text": "The group thinks the result is contradictory, because the line does not pass through the origin although according to the model it should. Evaluate the measurement: what can the deviation be due to, and how reliable is the spring constant of part b?",
+          "criteria": [
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "An uncertainty of about $0.2\\,\\text{s}$ in hand timing is only $0.02\\,\\text{s}$ in the period when ten periods are timed, and the points deviate from the line by at most about $0.005\\,\\text{s}^2$, so random variation does not explain the intercept of $0.028\\,\\text{s}^2$ on the vertical axis."
+            },
+            {
+              "key": "error_sources",
+              "points": 1,
+              "detail": "The mass of the spring itself moves along, so the oscillating mass is larger than the mass of the weight. The extra mass shifts the line upwards but does not change the slope; the intercept gives about $14\\,\\text{g}$, or about a third of the mass of the spring."
+            },
+            {
+              "text": "Compares with the measurement at rest: $k = \\dfrac{mg}{x} \\approx 20.0\\,\\text{N/m}$ differs from the result of part b by less than one percent, so the two different methods support each other.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The spring constant is reliable because it is obtained from the slope; a line forced through the origin would give too small a value, about $18.9\\,\\text{N/m}$."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "calc",
+          "points": 3,
+          "text": "A $250\\,\\text{g}$ mass is hung from the spring and set oscillating with an amplitude of $5.0\\,\\text{cm}$. How large is the greatest speed of the mass?",
+          "answer": {
+            "value": 0.446,
+            "unit": "m/s",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "text": "Uses the energy of the oscillation: at an extreme position the energy $\\tfrac{1}{2}kA^2$ is entirely elastic potential energy of the spring, and at the equilibrium position entirely kinetic energy.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\tfrac{1}{2}mv_\\text{max}^2 = \\tfrac{1}{2}kA^2$, so $v_\\text{max} = A\\sqrt{\\dfrac{k}{m}}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$v_\\text{max} \\approx 0.45\\,\\text{m/s}$"
+            }
+          ]
+        }
+      ],
+      "links": {
+        "transfer": "fy5-9",
+        "graph": "fy5-9",
+        "math": "fy5-9",
+        "experiment": "fy5-8",
+        "communication": "fy5-9"
+      }
+    },
+    {
+      "id": "fy5-s4",
+      "title": "Organ pipe",
+      "source": "example",
+      "source_note": "The pipe, the signal and the measurement result are made-up examples.",
+      "text": "An organ builder is checking a new pipe of a church organ. The pipe is a tube open at both ends. A microphone converts the sound of the pipe into an electrical signal, whose graph is below.\n\nThe organ was tuned when the temperature of the church was $20.0\\,{}^\\circ\\text{C}$ and the speed of sound in air was $343\\,\\text{m/s}$. The speed of sound in air decreases by about $0.6\\,\\text{m/s}$ when the temperature falls by one degree.",
+      "figure": "fy5-sovella/fy5-s4-signal",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 3,
+          "text": "Determine the frequency of the sound of the pipe from the graph.",
+          "answer": {
+            "value": 250,
+            "unit": "Hz",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "text": "Identifies the period as the duration of the whole repeating waveform and not the distance between two adjacent peaks: during one period the signal has two peaks of different height.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "The duration of several periods is read: five periods in $20.0\\,\\text{ms}$, so $T = 4.0\\,\\text{ms}$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$f = 250\\,\\text{Hz}$"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 3,
+          "text": "How long is the pipe when the frequency of part a is its fundamental frequency?",
+          "answer": {
+            "value": 0.686,
+            "unit": "m",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "text": "Justifies using a standing wave: an open tube has an antinode at both ends, so in the fundamental mode the length of the tube is half the wavelength.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$L = \\dfrac{\\lambda}{2} = \\dfrac{v}{2f}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$L \\approx 0.686\\,\\text{m}$"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 4,
+          "text": "In winter the temperature of the church is only $8.0\\,{}^\\circ\\text{C}$. By how much does the fundamental frequency of the pipe change?",
+          "answer": {
+            "value": 5.2,
+            "unit": "Hz",
+            "tolerance": 0.05
+          },
+          "criteria": [
+            {
+              "text": "Justifies that the wavelength stays the same, because it is determined by the length of the pipe, but the speed of sound decreases, so the frequency decreases.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$f' = \\dfrac{v'}{2L}$ or $\\dfrac{f'}{f} = \\dfrac{v'}{v}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$v' = 343\\,\\text{m/s} - 12 \\cdot 0.6\\,\\text{m/s} = 335.8\\,\\text{m/s}$ and $f' \\approx 244.8\\,\\text{Hz}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "The frequency decreases by about $5\\,\\text{Hz}$."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "calc",
+          "points": 4,
+          "text": "In front of the pipes, at a distance of $4.0\\,\\text{m}$, the sound intensity level was measured as $88\\,\\text{dB}$ while the organ was playing at full power. The organist sits $2.0\\,\\text{m}$ from the pipes and practises three hours a day. Estimate the organist's permitted daily exposure time, assuming that the organ radiates sound uniformly in all directions from a single point and sounds equally loud throughout the practice. Is it enough?",
+          "answer": {
+            "value": 1.0,
+            "unit": "h",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "text": "Justifies the rise in level: halving the distance quadruples the intensity $I = \\dfrac{P}{4\\pi r^2}$, so the level rises by $10\\,\\text{dB} \\cdot \\lg 4 \\approx 6\\,\\text{dB}$ to $94\\,\\text{dB}$.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$n = \\dfrac{L - 85\\,\\text{dB}}{3\\,\\text{dB}}$ and $t_\\text{sall} = \\dfrac{8\\,\\text{h}}{2^{\\,n}}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$t_\\text{sall} \\approx 1\\,\\text{h}$"
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "It is not enough: three hours of practice is about three times the permitted time, so the organist should use hearing protection or practise more quietly."
+            }
+          ]
+        },
+        {
+          "id": "e",
+          "kind": "word",
+          "points": 3,
+          "text": "Evaluate the assumptions of the model of part d in a church. Is the organist's real exposure likely to be larger or smaller than the estimate, and how could it be found out reliably?",
+          "criteria": [
+            {
+              "key": "assumptions",
+              "points": 1,
+              "detail": "The organ is not a point source: the pipes are spread over an area several metres wide, so the level does not rise by $6\\,\\text{dB}$ when the distance to the pipes is halved."
+            },
+            {
+              "key": "assumptions",
+              "points": 1,
+              "detail": "The walls and vaults of the church reflect sound, so part of the level at $4.0\\,\\text{m}$ is reverberation, which does not get louder closer up; also, in practice the organ is seldom played at full power all the time. Both make the estimate probably too large."
+            },
+            {
+              "text": "Suggests a measurement: a sound level meter measures the A-weighted level at the organist's ear throughout the practice, and its average is compared with the action value.",
+              "tag": "experiment",
+              "points": 1
+            }
+          ]
+        }
+      ],
+      "links": {
+        "concept": "fy5-14",
+        "graph": "fy5-7",
+        "transfer": "fy5-13",
+        "math": "fy5-15",
+        "communication": "fy5-16",
+        "experiment": "fy5-16"
+      }
+    }
+  ]
+}

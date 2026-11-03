@@ -1,0 +1,586 @@
+{
+  "intro": "Neljä tehtävää kokoaa moduulin asiat yhteen: kiertyminen ja tasapaino, ympyräliike ja gravitaatio, värähtely sekä aallot ja ääni. Jokaisessa tehtävässä päätät itse, mitkä mallit sopivat tilanteeseen. Perustelet myös valintasi.",
+  "tasks": [
+    {
+      "id": "fy5-s1",
+      "title": "Torninosturi",
+      "source": "example",
+      "source_note": "Nosturin mitat ja massat on keksitty. Ne ovat kuitenkin samaa kokoluokkaa kuin pienessä rakennustyömaan torninosturissa.",
+      "text": "Rakennustyömaan torninosturin vaakasuora puomi on tornin huipulla. Puomi voi kääntyä tornin pystysuoran akselin ympäri. Kuorma roikkuu vaijerissa vaunusta, jota voi ajaa puomia pitkin. Tornin toisella puolella puomi jatkuu vastapuomina. Vastapuomin päässä on betoninen vastapaino.\n\nNosturin tiedot:\n\n- puomin massa vastapuomeineen on $4{,}0\\,\\text{t}$, ja sen painopiste on $12\\,\\text{m}$ tornin akselista kuorman puolella\n- vastapainon massa on $9{,}0\\,\\text{t}$, ja sen painopiste on $10\\,\\text{m}$ tornin akselista toisella puolella\n- vaunun suurin etäisyys tornin akselista on $40\\,\\text{m}$\n- valmistajan mukaan painojen kokonaismomentti tornin akselin suhteen saa olla kumpaan suuntaan tahansa enintään $600\\,\\text{kNm}$.\n\nVaunun ja vaijerin massoja ei tarvitse ottaa huomioon.",
+      "figure": "fy5-sovella/fy5-s1-crane",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 3,
+          "text": "Nosturilla nostetaan $2{,}0\\,\\text{t}$:n betonielementti. Kuinka kauas tornin akselista vaunu pitää ajaa, jotta painojen kokonaismomentti tornin akselin suhteen on nolla?",
+          "answer": {
+            "value": 21,
+            "unit": "m",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "text": "Valitsee kiertoakseliksi tornin akselin. Ottaa huomioon kaikki kolme painoa: kuorman, puomin painon sen painopisteessä ja vastapainon. Jokaisen momentti on oikeaan kiertosuuntaan.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$m_\\text{p} g r_\\text{p} + m g r - m_\\text{v} g r_\\text{v} = 0$, josta $r = \\dfrac{m_\\text{v} r_\\text{v} - m_\\text{p} r_\\text{p}}{m}$; $g$ supistuu."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$r \\approx 21\\,\\text{m}$"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 3,
+          "text": "Kuinka suuren kuorman nosturi saa nostaa, kun vaunu on puomin kärjessä?",
+          "answer": {
+            "value": 2580,
+            "unit": "kg",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Kokonaismomentti kuorman suuntaan on enintään raja: $m g r_\\text{max} + m_\\text{p} g r_\\text{p} - m_\\text{v} g r_\\text{v} = 600\\,\\text{kNm}$. Yhtälö ratkaistaan $m$:n suhteen."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "Puomin momentti on $471\\,\\text{kNm}$ ja vastapainon $883\\,\\text{kNm}$, joten kuorman momentti saa olla $1012\\,\\text{kNm}$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$m \\approx 2{,}6\\,\\text{t}$"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 4,
+          "text": "Työmaan mestari ehdottaa: ”Lisätään vastapainoon pari tonnia, niin puomin kärjestä voi nostaa raskaampia kuormia.” Arvioi ehdotusta.",
+          "criteria": [
+            {
+              "text": "Toteaa, että suurempi vastapaino kasvattaa puomin kärjen suurinta kuormaa. Se pienentää kuorman puolelle jäävää kokonaismomenttia.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Huomaa, että ilman kuormaa kokonaismomentti osoittaa vastapainon suuntaan. Se kasvaa vastapainon mukana: nyt se on $412\\,\\text{kNm}$, ja kahden tonnin lisäyksellä $608\\,\\text{kNm}$. Se ylittää rajan.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Laskee, että vastapainoa voi lisätä enintään noin $1{,}9\\,\\text{t}$. Silloin kärjen suurin kuorma olisi noin $3{,}1\\,\\text{t}$.",
+              "tag": "math",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Ehdotus ei käy sellaisenaan. Vastapaino mitoitetaan niin, ettei raja ylity tyhjällä eikä täysin kuormatulla nosturilla."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 4,
+          "text": "Kuljettaja kääntää puomia a-kohdan kuorman kanssa tasaisesti. Yksi kierros kestäisi $90\\,\\text{s}$. Kuorma roikkuu $15\\,\\text{m}$:n vaijerissa. Vaijeri kallistuu hieman pystysuorasta, ja kuorma on vaunua kauempana tornin akselista. Kuljettaja selittää: ”Keskipakoisvoima heittää kuorman ulospäin.” Piirrä kuorman voimakuvio puomin kääntyessä tasaisesti ja arvioi kuljettajan selitystä.",
+          "criteria": [
+            {
+              "key": "fbd_forces",
+              "points": 1,
+              "detail": "Kuvassa on vain paino $\\overline{G}$ ja vaijerin jännitysvoima $\\overline{S}$. Keskipakoisvoimaa ei ole, eikä mitään muutakaan ulospäin vaikuttavaa voimaa."
+            },
+            {
+              "key": "fbd_directions",
+              "points": 1,
+              "detail": "Paino osoittaa suoraan alas keskipisteestä. Jännitysvoima lähtee yläpinnasta vaijeria pitkin ylös ja hieman kohti tornin akselia."
+            },
+            {
+              "key": "fbd_magnitudes",
+              "points": 1,
+              "detail": "Voimien summa osoittaa vaakasuoraan kohti tornin akselia. Normaalikiihtyvyys on piirretty erikseen eikä voimana."
+            },
+            {
+              "text": "Arvioi selitystä: ulospäin vaikuttavaa voimaa ei ole. Kuorma pyrkii hitautensa vuoksi jatkamaan suoraan, joten se jää ulommas. Vaijeri kallistuu niin paljon, että jännitysvoiman vaakakomponentti pitää kuorman ympyräradalla.",
+              "tag": "communication",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "e",
+          "kind": "calc",
+          "points": 4,
+          "text": "Kuinka suuren kulman vaijeri muodostaa pystysuoran kanssa? Onko kallistumisella merkitystä?",
+          "answer": {
+            "value": 0.6,
+            "unit": "°",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "fbd_equations",
+              "points": 1,
+              "detail": "Akseli $x$ osoittaa kohti tornin akselia ja akseli $y$ ylös: $S\\sin\\theta = m\\dfrac{v^2}{r}$ ja $S\\cos\\theta - mg = 0$."
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\tan\\theta = \\dfrac{v^2}{rg}$, missä $v = \\dfrac{2\\pi r}{T}$; massa supistuu."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$\\theta \\approx 0{,}60^\\circ$"
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "Kuorma siirtyy ulospäin vain noin $15\\,\\text{m} \\cdot \\tan 0{,}60^\\circ \\approx 16\\,\\text{cm}$. Tasainen kääntäminen ei siis juuri muuta tilannetta. Äkillinen liikkeelle lähtö tai pysähdys sen sijaan heiluttaa kuormaa."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "transfer": "fy5-2",
+        "math": "fy5-2",
+        "concept": "fy5-4",
+        "communication": "fy5-4"
+      }
+    },
+    {
+      "id": "fy5-s2",
+      "title": "Jupiterin kuut",
+      "source": "statistics",
+      "source_note": "NASA JPL Solar System Dynamics: kuiden ratojen keskimääräiset säteet ja kiertoajat (tarkistettu 2026). Luvut on pyöristetty.",
+      "text": "Galileo Galilei löysi Jupiterin neljä suurta kuuta vuonna 1610. Taulukossa ovat näiden kuiden ja pienen Amalthea-kuun tiedot. Amalthea kiertää Jupiteria lähempää kuin muut. Taulukossa on kuiden ratojen keskimääräiset säteet $r$ Jupiterin keskipisteestä mitattuina ja kiertoajat $T$. Kuiden radat ovat lähes ympyröitä.\n\n| kuu | $r\\ (10^3\\,\\text{km})$ | $T\\ (\\text{d})$ |\n|---|---|---|\n| Amalthea | $181{,}4$ | $0{,}4982$ |\n| Io | $421{,}8$ | $1{,}769$ |\n| Europa | $671{,}1$ | $3{,}551$ |\n| Ganymedes | $1070$ | $7{,}155$ |\n| Kallisto | $1883$ | $16{,}69$ |\n\nGravitaatiovakio on $\\gamma = 6{,}674 \\cdot 10^{-11}\\,\\tfrac{\\text{N}\\cdot\\text{m}^2}{\\text{kg}^2}$.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "graph",
+          "points": 5,
+          "text": "Mallinna kuiden liikettä tasaisena ympyräliikkeenä, jota Jupiterin gravitaatio ylläpitää. Tee aineistosta kuvaaja. Mallin mukaan kuvaajan pisteisiin pitää sopia suora, joka kulkee origon kautta.",
+          "criteria": [
+            {
+              "text": "Johtaa mallista yhteyden $v^2 = \\dfrac{\\gamma M}{r}$ ehdosta $\\gamma\\dfrac{Mm}{r^2} = m\\dfrac{v^2}{r}$. Valitsee sen mukaan kuvaajan suureet, esimerkiksi $\\tfrac{1}{r}$ ja $v^2$.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "Ratanopeudet on laskettu yhtälöstä $v = \\dfrac{2\\pi r}{T}$ metreinä ja sekunteina, esimerkiksi Ion nopeus on $v \\approx 17{,}3\\,\\text{km/s}$."
+            },
+            {
+              "key": "graph_axes",
+              "points": 1
+            },
+            {
+              "key": "graph_points",
+              "points": 1
+            },
+            {
+              "key": "graph_fit",
+              "points": 1,
+              "detail": "Origon kautta kulkeva suora sopii kaikkiin viiteen pisteeseen."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 3,
+          "text": "Määritä kuvaajasta Jupiterin massa.",
+          "answer": {
+            "value": 1.9e+27,
+            "unit": "kg",
+            "tolerance": 0.04
+          },
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "Suoran kulmakerroin $\\gamma M \\approx 1{,}27 \\cdot 10^{17}\\,\\text{m}^3/\\text{s}^2$ on luettu suoran pisteestä, joka on kaukana origosta."
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$M = \\dfrac{k}{\\gamma}$, missä $k$ on kulmakerroin."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$M \\approx 1{,}9 \\cdot 10^{27}\\,\\text{kg}$"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 3,
+          "text": "Jupiter pyörähtää akselinsa ympäri kerran $9{,}93\\,\\text{h}$:ssa. Luotain halutaan kiertämään päiväntasaajan yläpuolella niin, että se pysyy koko ajan saman pilvimuodostelman yläpuolella. Kuinka kaukana Jupiterin keskipisteestä luotaimen rata on?",
+          "answer": {
+            "value": 160000,
+            "unit": "km",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "text": "Perustelee, että luotaimen kiertoajan pitää olla sama kuin Jupiterin pyörähdysaika. Yhdistää yhtälöt $v = \\dfrac{2\\pi r}{T}$ ja $v^2 = \\dfrac{\\gamma M}{r}$.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$r^3 = \\dfrac{\\gamma M T^2}{4\\pi^2}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$r \\approx 1{,}6 \\cdot 10^{8}\\,\\text{m} = 160\\,000\\,\\text{km}$"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 4,
+          "text": "Opiskelija väittää: ”Ganymedes on Jupiterin massiivisin kuu. Jos se siirrettäisiin Ion radalle, se kiertäisi Jupiterin Iota nopeammin, koska siihen kohdistuisi suurempi gravitaatiovoima.” Arvioi väitettä. Mitä oletuksia b-kohdan tulos vaatii?",
+          "criteria": [
+            {
+              "text": "Selittää, että suurempi massa saa suuremman gravitaatiovoiman, mutta se tarvitsee myös samassa suhteessa suuremman keskeisvoiman. Kuun massa supistuu yhtälöstä, joten ratanopeus riippuu vain Jupiterin massasta ja radan säteestä.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Väite ei pidä paikkaansa. Ion radalla Ganymedes kiertäisi samalla nopeudella ja samassa ajassa kuin Io."
+            },
+            {
+              "key": "assumptions",
+              "points": 1,
+              "detail": "Kuu kiertää ympyrärataa Jupiterin keskipisteen ympäri. Tämä vaatii, että kuun massa on hyvin pieni Jupiterin massaan verrattuna."
+            },
+            {
+              "key": "assumptions",
+              "points": 1,
+              "detail": "Kuuhun vaikuttaa vain Jupiterin gravitaatio. Muiden kuiden ja Auringon vetovoima on siihen verrattuna pieni."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "transfer": "fy5-6",
+        "math": "fy5-6",
+        "graph": "fy5-6",
+        "concept": "fy5-6",
+        "communication": "fy5-5"
+      }
+    },
+    {
+      "id": "fy5-s3",
+      "title": "Jousi ja punnukset",
+      "source": "simulated",
+      "source_note": "Aineisto on laskettu mallista. Mallissa jousen jousivakio on $20\\,\\text{N/m}$, ja kolmasosa jousen massasta liikkuu punnuksen mukana. Ajanottoon on lisätty pientä satunnaista vaihtelua, kuten oikeassa mittauksessa.",
+      "text": "Opiskelijaryhmä tutki pystysuoraan roikkuvan teräsjousen värähtelyä. Jousen alapäähän ripustettiin punnus. Punnus vedettiin muutama senttimetri tasapainoasemansa alapuolelle ja päästettiin irti. Ryhmä mittasi sekuntikellolla kymmenen jakson ajan $t_{10}$. Jousen oma massa on $45\\,\\text{g}$.\n\n| $m\\ (\\text{g})$ | $t_{10}\\ (\\text{s})$ |\n|---|---|\n| $100$ | $4{,}74$ |\n| $150$ | $5{,}73$ |\n| $200$ | $6{,}50$ |\n| $250$ | $7{,}25$ |\n| $300$ | $7{,}86$ |\n| $350$ | $8{,}51$ |\n\nLisäksi ryhmä ripusti jouseen levossa $200\\,\\text{g}$:n punnuksen. Jousi venyi $9{,}8\\,\\text{cm}$.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "graph",
+          "points": 4,
+          "text": "Piirrä värähtelymittauksista kuvaaja, jonka pisteisiin sopii suora. Sovita kuvaajaan malli.",
+          "criteria": [
+            {
+              "text": "Valitsee $(m, T^2)$-kuvaajan, koska jaksonajan yhtälöstä seuraa $T^2 = \\dfrac{4\\pi^2}{k}\\,m$. Laskee jaksonajat $T = t_{10} : 10$.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "graph_axes",
+              "points": 1
+            },
+            {
+              "key": "graph_points",
+              "points": 1
+            },
+            {
+              "key": "graph_fit",
+              "points": 1,
+              "detail": "Suora sovitetaan pisteisiin pakottamatta sitä origon kautta. Se leikkaa pystyakselin hieman origon yläpuolella."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 3,
+          "text": "Määritä kuvaajasta jousen jousivakio.",
+          "answer": {
+            "value": 19.9,
+            "unit": "N/m",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "Kulmakerroin on noin $1{,}98\\,\\text{s}^2/\\text{kg}$. Se on laskettu kahdesta suoran pisteestä, jotka ovat kaukana toisistaan."
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Kulmakerroin on $\\dfrac{4\\pi^2}{k}$, joten $k = \\dfrac{4\\pi^2}{\\text{kulmakerroin}}$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$k \\approx 19{,}9\\,\\text{N/m}$"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 4,
+          "text": "Ryhmän mielestä tulos on ristiriitainen. Suora ei kulje origon kautta, vaikka mallin mukaan sen pitäisi. Arvioi mittausta: mistä poikkeama voi johtua, ja kuinka luotettava b-kohdan jousivakio on?",
+          "criteria": [
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "Käsin otetun ajan epävarmuus on noin $0{,}2\\,\\text{s}$. Kun mitataan kymmenen jaksoa, jaksonajan epävarmuus on vain $0{,}02\\,\\text{s}$. Pisteet poikkeavat suorasta enintään noin $0{,}005\\,\\text{s}^2$. Satunnainen vaihtelu ei siis selitä pystyakselin leikkauskohtaa $0{,}028\\,\\text{s}^2$."
+            },
+            {
+              "key": "error_sources",
+              "points": 1,
+              "detail": "Jousen oma massa liikkuu mukana, joten värähtelevä massa on punnuksen massaa suurempi. Lisämassa siirtää suoraa ylöspäin mutta ei muuta kulmakerrointa. Leikkauskohdasta saadaan noin $14\\,\\text{g}$, eli noin kolmasosa jousen massasta."
+            },
+            {
+              "text": "Vertaa lepomittaukseen: $k = \\dfrac{mg}{x} \\approx 20{,}0\\,\\text{N/m}$. Tämä eroaa b-kohdan tuloksesta alle prosentin, joten kaksi eri menetelmää tukevat toisiaan.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Jousivakio on luotettava, koska se saadaan kulmakertoimesta. Origon kautta pakotettu suora antaisi liian pienen arvon, noin $18{,}9\\,\\text{N/m}$."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "calc",
+          "points": 3,
+          "text": "Jouseen ripustetaan $250\\,\\text{g}$:n punnus, ja se pannaan värähtelemään $5{,}0\\,\\text{cm}$:n amplitudilla. Kuinka suuri on punnuksen suurin nopeus?",
+          "answer": {
+            "value": 0.446,
+            "unit": "m/s",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "text": "Käyttää värähtelyn energiaa. Ääriasennossa energia $\\tfrac{1}{2}kA^2$ on kokonaan jousen potentiaalienergiaa. Tasapainoasemassa se on kokonaan liike-energiaa.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\tfrac{1}{2}mv_\\text{max}^2 = \\tfrac{1}{2}kA^2$, josta $v_\\text{max} = A\\sqrt{\\dfrac{k}{m}}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$v_\\text{max} \\approx 0{,}45\\,\\text{m/s}$"
+            }
+          ]
+        }
+      ],
+      "links": {
+        "transfer": "fy5-9",
+        "graph": "fy5-9",
+        "math": "fy5-9",
+        "experiment": "fy5-8",
+        "communication": "fy5-9"
+      }
+    },
+    {
+      "id": "fy5-s4",
+      "title": "Urkupilli",
+      "source": "example",
+      "source_note": "Pilli, signaali ja mittaustulos on keksitty esimerkiksi.",
+      "text": "Urkujen rakentaja tarkistaa kirkon urkujen uutta pilliä. Pilli on putki, joka on avoin molemmista päistä. Mikrofoni muuttaa pillin äänen sähköiseksi signaaliksi. Signaalin kuvaaja on alla.\n\nUrut viritettiin, kun kirkon lämpötila oli $20{,}0\\,{}^\\circ\\text{C}$ ja äänen nopeus ilmassa $343\\,\\text{m/s}$. Äänen nopeus ilmassa pienenee noin $0{,}6\\,\\text{m/s}$, kun lämpötila laskee yhden asteen.",
+      "figure": "fy5-sovella/fy5-s4-signal",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 3,
+          "text": "Määritä pillin äänen taajuus kuvaajasta.",
+          "answer": {
+            "value": 250,
+            "unit": "Hz",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "text": "Tunnistaa jaksonajaksi koko toistuvan aaltomuodon keston, ei kahden vierekkäisen huipun väliä. Yhden jakson aikana signaalissa on kaksi erikorkuista huippua.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "Luetaan usean jakson kesto: viisi jaksoa kestää $20{,}0\\,\\text{ms}$, joten $T = 4{,}0\\,\\text{ms}$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$f = 250\\,\\text{Hz}$"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 3,
+          "text": "Kuinka pitkä pilli on, kun a-kohdan taajuus on sen perustaajuus?",
+          "answer": {
+            "value": 0.686,
+            "unit": "m",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "text": "Perustelee seisovalla aallolla: avoimen putken molemmissa päissä on kupu. Siksi perusvärähtelyssä putken pituus on puolet aallonpituudesta.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$L = \\dfrac{\\lambda}{2} = \\dfrac{v}{2f}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$L \\approx 0{,}686\\,\\text{m}$"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 4,
+          "text": "Talvella kirkon lämpötila on vain $8{,}0\\,{}^\\circ\\text{C}$. Kuinka paljon pillin perustaajuus muuttuu?",
+          "answer": {
+            "value": 5.2,
+            "unit": "Hz",
+            "tolerance": 0.05
+          },
+          "criteria": [
+            {
+              "text": "Perustelee, että aallonpituus pysyy samana, koska sen määrää pillin pituus. Äänen nopeus kuitenkin pienenee, joten taajuus pienenee.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$f' = \\dfrac{v'}{2L}$ tai $\\dfrac{f'}{f} = \\dfrac{v'}{v}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$v' = 343\\,\\text{m/s} - 12 \\cdot 0{,}6\\,\\text{m/s} = 335{,}8\\,\\text{m/s}$ ja $f' \\approx 244{,}8\\,\\text{Hz}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "Taajuus pienenee noin $5\\,\\text{Hz}$."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "calc",
+          "points": 4,
+          "text": "Pillien edessä $4{,}0\\,\\text{m}$:n etäisyydellä mitattiin urkujen soidessa täysillä intensiteettitasoksi $88\\,\\text{dB}$. Urkuri istuu $2{,}0\\,\\text{m}$:n päässä pilleistä ja harjoittelee kolme tuntia päivässä. Arvioi urkurin sallittu päivittäinen altistusaika. Oleta, että urut säteilevät äänen tasaisesti joka suuntaan yhdestä pisteestä ja soivat koko harjoituksen ajan yhtä voimakkaasti. Riittääkö sallittu aika?",
+          "answer": {
+            "value": 1.0,
+            "unit": "h",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "text": "Perustelee tason kasvun: kun etäisyys puolittuu, intensiteetti $I = \\dfrac{P}{4\\pi r^2}$ nelinkertaistuu. Taso kasvaa siis $10\\,\\text{dB} \\cdot \\lg 4 \\approx 6\\,\\text{dB}$ arvoon $94\\,\\text{dB}$.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$n = \\dfrac{L - 85\\,\\text{dB}}{3\\,\\text{dB}}$ ja $t_\\text{sall} = \\dfrac{8\\,\\text{h}}{2^{\\,n}}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$t_\\text{sall} \\approx 1\\,\\text{h}$"
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Aika ei riitä. Kolmen tunnin harjoitus on noin kolminkertainen sallittuun aikaan nähden. Urkurin kannattaa käyttää kuulonsuojaimia tai harjoitella hiljaisemmin."
+            }
+          ]
+        },
+        {
+          "id": "e",
+          "kind": "word",
+          "points": 3,
+          "text": "Arvioi d-kohdan mallin oletuksia kirkossa. Onko urkurin todellinen altistus todennäköisesti arviota suurempi vai pienempi? Miten sen voisi selvittää luotettavasti?",
+          "criteria": [
+            {
+              "key": "assumptions",
+              "points": 1,
+              "detail": "Urut eivät ole pistelähde. Pillit ovat usean metrin levyisellä alueella, joten taso ei kasva $6\\,\\text{dB}$, kun etäisyys pilleihin puolittuu."
+            },
+            {
+              "key": "assumptions",
+              "points": 1,
+              "detail": "Kirkon seinät ja holvit heijastavat ääntä. Siksi osa $4{,}0\\,\\text{m}$:n tasosta on kaikua, joka ei voimistu lähemmäs mentäessä. Harjoituksessa ei myöskään soiteta koko ajan täysillä. Kumpikin tekee arviosta todennäköisesti liian suuren."
+            },
+            {
+              "text": "Ehdottaa mittausta: melumittarilla mitataan A-painotettu taso urkurin korvan kohdalta koko harjoituksen ajalta. Tason keskiarvoa verrataan toiminta-arvoon.",
+              "tag": "experiment",
+              "points": 1
+            }
+          ]
+        }
+      ],
+      "links": {
+        "concept": "fy5-14",
+        "graph": "fy5-7",
+        "transfer": "fy5-13",
+        "math": "fy5-15",
+        "communication": "fy5-16",
+        "experiment": "fy5-16"
+      }
+    }
+  ]
+}
