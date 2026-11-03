@@ -1,16 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: fa0fb23fca92af8d
+CONTENT-HASH: d4c8f674ac3e7db6
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] figure 4 "unit-power" — axis title "P (W)" sits top-left like a y-axis title although the axis is horizontal; move it to the arrow end. Names above dots are far from their dots.
-- [Minor] figure 3 "fi-bars" — tick "0" is offset left of the origin; label "fossil" omits "and peat" used in the table.
-- [Minor] figure 2 "plants" — the unlabelled orange heat arrows read as a flow between plants and only the last carries "heat"; label one per row or add a legend.
-- [Minor] ennusta-1 feedback says "the bars in the Investigate step", but that step shows a table; say "the table".
+- [Minor] Alt text of the wind photo says "Two white wind turbines"; a small third turbine shows at the left edge. Say "Wind turbines on the seashore" or "Two large white ... and a smaller one".
 
 ## Checked
-- Round 2. Round-1 Blocking verified: fig-2-390 and theory-1280-1 (the "electricity" label now runs vertically, wholly inside its box, clear of the arrowheads); stage-tutki-390-2 (unit now "turbines"). contact-1 for the rest; layout otherwise unchanged. No simulation in this chapter.
-
-## Scores
-illustrations 4 · typography 4 · Finnish (English prose) 4 · accessibility 4
+batch delta review: built page opened in Chromium at 360, 768 and 1280 px, photo (Summa wind turbines + Olkiluoto) captured with its surrounding text and caption; image loads (WebP), no horizontal overflow, floats right beside text at 1280 and stands in the column at 360/768, caption short and factual, credit under the caption, credits list at page end, alt text describes the picture; fig-1 captures and the unchanged figures not affected.

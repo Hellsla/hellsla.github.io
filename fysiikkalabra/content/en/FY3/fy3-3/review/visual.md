@@ -1,16 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: ee18ed0fb9e6bfd6
+CONTENT-HASH: 2075d323b2032075
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] worked-example table, example-390-1 — last column (137 kPa) is cut off at 390 px (scroll fade only) — let the table wrap or shrink, shared template.
-- [Minor] example text — "7–" / "8 kPa" breaks after the en dash, and ", and the measured value" starts a line with a comma after the inline fraction — use a non-breaking range and keep the comma with the fraction.
-- [Minor] fig-6 (graph) — x tick labels −270 and −200 sit close together — widen spacing.
+- [Minor] Caption: "the white mist is water vapour ... condensed" - the visible mist is tiny liquid droplets; "...is made of tiny water droplets condensed from the air" is more exact (for science).
 
 ## Checked
-- contact-1..5; fig-1..6 at 390 (fig-row-1280); example-390 1; sim-1280; stages and exercises via contact sheets.
-
-## Scores
-illustrations 4 · typography 4 · Finnish (English) 4 · accessibility 4
+batch delta review: built page opened in Chromium at 360, 768 and 1280 px, photo (liquid nitrogen) captured with its surrounding text and caption; image loads (WebP), no horizontal overflow, floats right beside text at 1280 and stands in the column at 360/768, caption short and factual, credit under the caption, credits list at page end, alt text describes the picture; fig-1 captures and the unchanged figures not affected.
