@@ -1,16 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: a5bd2fbf2d60a919
+CONTENT-HASH: 041806ccd347a404
 ## Blocking
 ## Polish
-- exercises.json L1-04, L2-01, L2-03, L3-02 — the constants in brackets come after the question, so the question is not last — put the data in a sentence before it and end with "Laske fotonin aallonpituus pikometreinä."
-- exercises.json set — four of twelve tasks compute $\lambda$ from $E$ and seven count $Z$, $N$, $A$; none asks to write a decay equation or name the daughter, and none tests that gamma decay leaves the element unchanged (the lesson's misconception) — turn L1-04 or L2-03 into "Kirjoita hajoamisyhtälö ja nimeä tytärydin", or add a gamma item on a Ba-137 excited state.
-- exercises.json L2-03 — reuses the example's cesium-137 photon and its sanity check (about $270\,000$ times visible light) as the task — use another nuclide, e.g. iodine-131 at $364\,\text{keV}$.
-- exercises.json L3-01 — alpha and beta counts from end nuclides are solved by one formula pair once the method is known, closer to level 2 — add a twist, such as asking for the number of neutrons lost.
-- solutions.md L2-03 Vastaus — "$293\,500$" in Sijoitus then "noin $293\,000$" looks inconsistent — write $2{,}935 \cdot 10^{5}$ and round once.
+- solutions.md L2-01 Sijoitus — "$1{,}8796$" in the denominator gives $1{,}9865/1{,}8796 = 1{,}0569$, but the line prints $1{,}0568$ — write $1{,}0569\,\text{pm}$ (and "$1{,}057\,\text{pm}$" stays correct).
+- solutions.md L2-01 Järkevyys — the recoil explanation for $1173{,}3$ vs $1173{,}2\,\text{keV}$ is a detour for a level 2 student — shorten to "Ero $0{,}1\,\text{keV}$ johtuu rekyylistä ja tasojen pyöristyksestä."
+- Earlier polish (question last in L1-04, L2-03, L3-02, no equation-writing or gamma task, L2-03 repeats the example's Cs-137 photon) was not part of this diff and still stands.
 ## Checked
-- Counts 5/4/3 and ids correct; all twelve answers recomputed and correct (143, 218, 7, 20,8 pm, 10, 1,06 pm, 82, 293 000, 138, 4, 1,24 pm, 87).
-- Contexts recognisable (smoke detector, radon, PET); the fictional nucleus in L3-02 is labelled as such.
-- Solutions: Annettu to Järkevyys in order, principle explained, no step skipped.
-- Level 3: backward reasoning (L3-03), shortest wavelength from three levels (L3-02).
-- Finnish: no case or glossary errors; units follow numbers correctly.
-- Captures at 1280 px: long solutions wrap, equations not clipped.
+- Diff only: L2-01 now uses levels 2505,8 and 1332,5 keV, matching the lesson's data; difference 1173,3 keV; answer 1,06 pm unchanged and correct (1,0568 pm exact).
+- answers.py comment and computation match the text and solution.
+- The five "Vastaus" rewordings ("Tulos on tarkka kokonaisluku") are grammatical Finnish and keep the values (143, 218, 7, 10, 82, 138, 4, 87).
+- Task text ends with the question and gives all constants; no trap added.

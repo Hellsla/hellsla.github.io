@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: a5bd2fbf2d60a919
+CONTENT-HASH: 041806ccd347a404
 
 ## Blocking
 
 ## Polish
-- [Minor] solutions.md, Vastaus of L1-02, L1-03, L1-05, L2-02, L2-04, L3-01, L3-03 — the value is lifted into the answer box and the rest begins with "; tarkka kokonaisluku…", so a stray semicolon opens the line (L1-02, L2-02 captures) — start the text with a word, e.g. "Tulos on tarkka kokonaisluku. …".
-- [Minor] solutions.md L2-02 Järkevyys — inline `+1 - 2 = -1` breaks across lines at the minus (L2-02 capture) — move it in the sentence so it stays whole, or write it as one chain.
-- [Minor] solutions.md L3-02 Järkevyys — inline `\tfrac{1,24}{0,60}\,pm` is cramped — write `1{,}24 : 0{,}60`; for science: "vetyatomin kolmesta tasosta" is loose, since hydrogen has infinitely many levels.
+- [Minor] solutions.md L2-01 Järkevyys — the sentence is long and the "ero 0,1 keV syntyy …" clause interrupts it — split in two sentences after "kaksi piikistä".
+- [Minor] solutions.md L2-02 Järkevyys — inline `+1 - 2 = -1` can break at the minus (as in the earlier report) — keep it in one chain.
 
 ## Checked
-- open-exercises-1280-1, -2, -4 (level 1); open-exercises-L2-1280-1, -3; open-exercises-L3-1280-3; contact-4…6 for the rest. No inline figures; the spectrum figure is judged in the lesson. Statements, answer boxes, input rows and chains of all 12 tasks read from source.
+- Delta: open-exercises-1280-1 (level 1; new Vastaus wording "Tulos on neutronien tarkka lukumäärä…" reads cleanly, no stray semicolon), open-exercises-L2-1280-1 and -2 (L2-01 task text 2505,8 keV, Muunnokset and Sijoitus chains, Vastaus 1,06 pm, Järkevyys; consistent 1173,3 keV / 1,0568 pm). Other changed Vastaus lines read from the diff.
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 4 · accessibility 5
