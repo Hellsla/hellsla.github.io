@@ -253,7 +253,8 @@ with sync_playwright() as pw:
     for lang in i18n.languages():
         base = SITE if lang == i18n.SOURCE else SITE / lang
         for w, hgt in ((360, 780), (390, 844), (768, 1024), (1440, 900), (1920, 1080)):
-            for name in ("index.html", "FY4.html", "lukuvinkit.html") + tuple(f"{c}.html" for c in local_courses.load(lang)):
+            mix = ("yo-sekoitin.html",) if any(c.get("mixer") for c in local_courses.load().values()) else ()
+            for name in ("index.html", "FY4.html", "lukuvinkit.html") + tuple(f"{c}.html" for c in local_courses.load(lang)) + mix:
                 pg = b.new_page(viewport={"width": w, "height": hgt}); pg.goto((base / name).as_uri())
                 pg.evaluate("document.fonts.ready.then(() => true)"); pg.wait_for_timeout(150)
                 found = pg.evaluate(JS)
@@ -266,6 +267,16 @@ with sync_playwright() as pw:
                     pg.click(".bank-reset"); pg.wait_for_timeout(30)
                     back = pg.evaluate("document.querySelectorAll('.bank-item:not([hidden])').length")
                     expect(f"{lang}/{name} at {w} px: the bank filters without reloading and 'show all' brings all {total} back", hidden and back == total, (hidden, back))
+                if name == "yo-sekoitin.html" and w == 390:     # the task mixer: filters in place, a random pick of three, reset
+                    total = pg.evaluate("document.querySelectorAll('.bank-item').length")
+                    pg.click("[data-random]"); pg.wait_for_timeout(30)
+                    pick = pg.evaluate("document.querySelectorAll('.bank-item:not([hidden])').length")
+                    pg.click("button[type=reset]"); pg.wait_for_timeout(30)
+                    back = pg.evaluate("document.querySelectorAll('.bank-item:not([hidden])').length")
+                    links = pg.evaluate("[...document.querySelectorAll('.bank-item a')].map(a => a.getAttribute('href'))")
+                    missing = [h for h in links if not (base / h.split("#")[0]).is_file()]
+                    expect(f"{lang}/yo-sekoitin at {w} px: {total} tasks, a random pick shows {min(3, total)}, 'show all' brings all back, every link reaches a page",
+                           total > 0 and pick == min(3, total) and back == total and not missing, (total, pick, back, missing[:3]))
                 if name == "index.html" and (w, hgt) in ((1440, 900), (1920, 1080)):
                     sh = pg.evaluate("document.scrollingElement.scrollHeight")
                     expect(f"{lang}: at {w} x {hgt} the whole front page fits without scrolling ({sh} px)", sh <= hgt)

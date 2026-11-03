@@ -2195,5 +2195,24 @@
       "h": "tunnissa",
       "min": "minuutissa"
     }
+  },
+  "mixer": {
+    "title": "YO-sekoitin",
+    "description": "Kaikki sivuston ylioppilaskokeen tyyliset tehtävät yhdessä: suodata moduulin, osaamisen tai tehtävätyypin mukaan tai arvo kolme tehtävää.",
+    "lead": "Tässä ovat kaikki sivuston ylioppilaskokeen tyyliset tehtävät moduulien Sovella itsenäisesti -osioista ja kertauskurssin tunneilta. Jokainen tehtävä kertoo, minkä lukujen taitoja se käyttää.",
+    "howto": "Valitse moduuli, osaaminen tai tehtävätyyppi, tai arvo kolme tehtävää kuin koetta varten. Ratkaise tehtävä ensin itse, ja avaa sitten sen sivulla mallivastaus ja pisteytys.",
+    "filter_label": "Suodata tehtäviä",
+    "search": "Hae tehtävää",
+    "module": "Moduuli",
+    "competency": "Osaaminen",
+    "kind": "Tehtävätyyppi",
+    "kind_calc": "laskutehtävä",
+    "kind_graph": "kuvaaja ja aineisto",
+    "kind_word": "selitys tai suunnitelma",
+    "random": "Arvo kolme tehtävää",
+    "count": "Näytetään {shown}/{total} tehtävää",
+    "none": "Yksikään tehtävä ei vastaa valintoja. Valitse Näytä kaikki.",
+    "course_heading": "YO-sekoitin",
+    "course_lead": "Kertaustuntien ja moduulien kaikki ylioppilaskokeen tyyliset tehtävät yhdellä sivulla, suodatettavina ja arvottavina."
   }
 }

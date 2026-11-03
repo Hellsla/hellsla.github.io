@@ -21,6 +21,7 @@ A changed file maps to pages, or to nothing, or forces "full". Conservative: any
   site/index.html, site/<COURSE>.html                          nothing (the course pages are not in the browser
                                                                steps; test_home.py checks them on every run)
   content/<lang>/lukuvinkit.json, site/<lang>/lukuvinkit.html  nothing (the reading list; test_home.py checks it)
+  site/<lang>/yo-sekoitin.html                                 nothing (the task mixer, scripts/mixer.py; test_home.py checks it)
   concept-cards.json                                           nothing of its own: the chapters whose Käsitetakomo link
                                                                changes are named by their site/ diff (../kasitetakomo*
                                                                lies outside this folder and is not in the diff)
@@ -40,7 +41,7 @@ from courses import ROOT
 
 LANG = r"[a-z]{2,3}(?:-[a-z]+)?"
 NOTHING = re.compile(rf"(?:docs/(?!visual-baseline\.tsv$).+|(?!content/)[^/]+\.md|(?!content/).+/README\.md|tests/models/.+|(?:news|newsletter|tips)/.+"
-                     rf"|site/(?:sims|pics)/.+|concept-cards\.json|content/{LANG}/(?:courses|lukuvinkit)\.json|site/(?:{LANG}/)?(?:index|FY\d+|lukuvinkit)\.html)")
+                     rf"|site/(?:sims|pics)/.+|concept-cards\.json|content/{LANG}/(?:courses|lukuvinkit)\.json|site/(?:{LANG}/)?(?:index|FY\d+|lukuvinkit|yo-sekoitin)\.html)")
 
 
 def git(*a):

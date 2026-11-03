@@ -267,6 +267,8 @@ ul.local-prepare a:hover{text-decoration:underline}
 .bank-reset:hover{background:var(--bg-tint)}
 .bank-count{margin:0;font-size:var(--fs-small);color:var(--ink-2)}
 @media (min-width:48rem){.bank-filter .bank-reset{grid-column:1}.bank-filter .bank-count{grid-column:2 / -1;align-self:center}}
+.bank-random{white-space:nowrap}
+@media (min-width:48rem){.bank-filter .bank-random{grid-column:1 / -1}}
 .bank-none{margin:.6rem 0;padding:.7rem 1rem;border-left:4px solid var(--copper);background:var(--surface);border-radius:0 10px 10px 0}
 ol.bank-list li.bank-item[hidden]{display:none}
 .bank-meta{display:flex;flex-wrap:wrap;align-items:center;gap:.2rem .7rem;flex-basis:100%;margin:.2rem 0 .45rem;font-size:var(--fs-small);line-height:1.45;color:var(--ink-2)}

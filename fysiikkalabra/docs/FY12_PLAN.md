@@ -50,7 +50,7 @@ heat engines) · 7 fy12-liike (fy1-5, FY4 kinematics) · 8 fy12-voimat (FY4 Newt
 
 ## Stages (one PR each)
 1. Frame and lessons 1–4. 2. Lessons 5–9. 3. Lessons 10–11. 4. Lessons 12–15, after the FY6–FY8 chapters they
-review are published. 5. Mock exam and the YO-sekoitin page, which mixes every long task of FY12 with the modules'
+review are published. 5. Mock exam. The YO-sekoitin page (`scripts/mixer.py`, built in stage 1) mixes every long task of FY12 with the modules'
 Sovella tasks and can be filtered by module, competency and task type. English and fi-easy are translated after
 review, as in the other courses. Units support one language per course today, so the translations need units.py to
 allow several languages for a course.
