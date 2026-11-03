@@ -1923,7 +1923,7 @@
   },
   {
     "term": "beetahajoaminen",
-    "definition": "Radioaktiivinen hajoaminen, jossa ytimen neutroni muuttuu protoniksi ja ytimestä lähtee elektroni ja antineutriino. Sen aiheuttaa heikko vuorovaikutus.",
+    "definition": "Radioaktiivinen hajoaminen, jossa ytimen neutroni muuttuu protoniksi ($\\beta^-$: ytimestä lähtee elektroni ja antineutriino) tai protoni neutroniksi ($\\beta^+$: ytimestä lähtee positroni ja neutriino). Sen aiheuttaa heikko vuorovaikutus.",
     "lessons": [
       "fy1-1",
       "fy8-8"

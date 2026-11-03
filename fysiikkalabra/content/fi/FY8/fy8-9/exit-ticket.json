@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Näytteen puoliintumisaika on $2{,}0\\,\\text{h}$. Kuinka suuri osa sen ytimistä on hajoamatta $6{,}0\\,\\text{h}$:n kuluttua?",
+    "a": "Aikaa kuluu kolme puoliintumisaikaa, ja jokainen puolittaa jäljellä olevien määrän: $\\left(\\tfrac{1}{2}\\right)^{3} = \\tfrac{1}{8}$ eli $12{,}5\\,\\%$ ytimistä."
+  },
+  {
+    "q": "Miksi pulssiaineistoon sovitettavassa funktiossa $y = A\\,e^{-Ct} + B$ on vakiotermi $B$?",
+    "a": "Säteilymittari laskee aina myös taustasäteilyä, joka ei pienene näytteen hajotessa. Vakiotermi $B$ kuvaa tätä taustaa. Ilman sitä sovitus yrittäisi selittää taustan pulssit hitaana hajoamisena, ja puoliintumisajasta tulisi liian pitkä."
+  }
+]
