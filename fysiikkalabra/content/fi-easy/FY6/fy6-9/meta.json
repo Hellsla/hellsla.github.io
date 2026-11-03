@@ -1,0 +1,40 @@
+{
+  "id": "fy6-9",
+  "course": "FY6",
+  "title": "Akut ja latauspiiri",
+  "goals": [
+    "LOPS FY6: akut ja akun latauspiiri",
+    "Aihe: sähköenergian varastoiminen",
+    "Tarkennus: akun kapasiteetti (Ah, Wh), akun lataaminen ja latauspiiri"
+  ],
+  "prerequisites": [
+    "fy6-8"
+  ],
+  "glossary": [
+    "akku",
+    "paristo",
+    "latauspiiri",
+    "akun kapasiteetti"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false,
+  "key_concepts": [
+    {
+      "term": "akku",
+      "explain": "Ladattava energian varasto. Siihen varastoituu kemiallista energiaa, ja se voi muuttaa sen sähköenergiaksi. Akku ei varastoi sähkövarausta."
+    },
+    {
+      "term": "paristo",
+      "explain": "Kertakäyttöinen energian varasto. Kun sen aineet ovat reagoineet, sitä ei voi turvallisesti ladata uudestaan."
+    },
+    {
+      "term": "akun kapasiteetti",
+      "explain": "Varaus, jonka täysi akku siirtää piirin läpi, ennen kuin se on tyhjä. Sen yksikkö on ampeeritunti."
+    },
+    {
+      "term": "latauspiiri",
+      "explain": "Virtapiiri, jossa laturi ajaa virran akun läpi. Virta kulkee akussa toiseen suuntaan kuin purkautuessa."
+    }
+  ]
+}
