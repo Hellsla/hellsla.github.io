@@ -1,12 +1,8 @@
 VERDICT: DONE
 
-Drafted fy8-13 from scratch; check_lesson.py all ok (one lint warning: a long table cell).
+Round-1 fixes; check_lesson.py all ok (one old lint warning: a long table cell).
 
-- `lesson.md`: Ydinajatus (absorbed dose, weighted doses, STUK 2023 source table 5,9 mSv/a, background, radon, protection by time/distance/shield, dose limits), `## Kaava: Absorboitunut ja efektiivinen annos` (D = E/m, H_T = w_R D_T, H_E = Σ w_T H_T with ICRP 103 tables, H = Ḣt, inverse-square law, half-value layer), staged example (radon in the lungs → 4,0 mSv), misconceptions, summary. Effective dose written H_E (stated why: E is energy).
-- `figures.py`: hero (house on granite, radon), lahteet, painotus, etaisyys, suoja, task figure vaimennus.
-- `inquiry.json`: hook, optional retrieval, 3 predictions, sim + koe-1 (distance), koe-2 (lead), conclusion, theory, reflect, example, Etsi virhe, siirto, 3 checks, exit.
-- New sim `assets/sims/fy8/fy8-13/` (+ `lang/fi.json` sims.fy8-13, `tests/sims/fy8-13.json`, sim-spec.md).
-- Exercises 5/4/3, solutions.md, answers.py, lesson-answers.py, exit-ticket.json.
-- glossary.json: 6 terms.
-
-Teacher should verify STUK/legal figures (listed in the orchestrator report). `figcat.py build` not run (writes docs/).
+- Blocking (radon revealed early): hook, Miksi question, kertaus prompt/feedback and learning goal no longer name radon; hero redrawn neutral (house on soil and bedrock, plane, distant nuclear plant, no radon). Ennuste-3 options now radon / terveydenhuolto / maaperän gamma / avaruus.
+- Term: puoliarvokerros → puoliintumispaksuus, thickness symbol x → d (lesson, inquiry, exercises, solutions, exit ticket, figures, sim label, lang/fi.json); glossary: puoliarvokerros merged into puoliintumispaksuus (+fy8-13). Cs-137 values aligned with Ionisoiva säteily ja elimistö (lead 5,5 mm, concrete 4 cm; sim model rounded 6,0 mm).
+- STUK figures: STUK-A263 (2020, data 2018): radon about 4, other natural about 1,1, health care about 0,8 (0,76), total 5,9 mSv; table, bar chart, ennuste-3, summary, L2-03, L3-02, answers.py, lesson-answers.py updated. Flight about 3 µSv/h (L1-03 → 15 µSv).
+- Polish: tarkistus-3 required; chart = table note; Esimerkki Järkevyys pointer; figure fixes (mSv/vuosi, w_R ink, "suhteellinen", vaimennus grid); LaTeX measure labels; L1-01 wording; L2-01 jodi-131; L3-01 signed difference; worker-limit comparisons removed.

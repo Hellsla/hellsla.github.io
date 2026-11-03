@@ -1862,14 +1862,14 @@
       "kaynnista": "Käynnistä aika",
       "pysayta": "Pysäytä",
       "etaisyys": "Etäisyys $r = {{r}}\\,\\text{m}$",
-      "lyijy": "Lyijyä $x = {{x}}\\,\\text{mm}$",
+      "lyijy": "Lyijyä $d = {{x}}\\,\\text{mm}$",
       "aika": "Oleskeluaika $t = {{t}}\\,\\text{min}$",
       "nopeus": "Nopeus",
       "hidas": "hidas",
       "normaali": "normaali",
       "nopea": "nopea",
       "selite": "Oranssi piste: gammafotoni. Välähdys lyijyssä: fotoni absorboitui.",
-      "lukemat": "Etäisyys $r = {{r}}\\,\\text{m}$, lyijyä $x = {{x}}\\,\\text{mm}$, läpi pääsee ${{f}}\\,\\%$<br><strong>Annosnopeus $\\dot{H} = {{Hd}}\\,\\mu\\text{Sv/h}$</strong><br>Oleskeluaika $t = {{t}}\\,\\text{min}$, annos $H = {{H}}\\,\\mu\\text{Sv}$"
+      "lukemat": "Etäisyys $r = {{r}}\\,\\text{m}$, lyijyä $d = {{x}}\\,\\text{mm}$, läpi pääsee ${{f}}\\,\\%$<br><strong>Annosnopeus $\\dot{H} = {{Hd}}\\,\\mu\\text{Sv/h}$</strong><br>Oleskeluaika $t = {{t}}\\,\\text{min}$, annos $H = {{H}}\\,\\mu\\text{Sv}$"
     },
     "fy8-12": {
       "mittaa": "Mittaa",

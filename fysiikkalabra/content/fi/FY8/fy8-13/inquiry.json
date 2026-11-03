@@ -1,9 +1,9 @@
 {
   "version": 1,
-  "contribution": "Säteilyannoksen suureet ja säteilyturvallisuus: absorboitunut annos $D = \\tfrac{E}{m}$ grayna, säteilyn ja kudosten painotuskertoimet ja efektiivinen annos sievertteinä, suomalaisen keskimääräinen annos ja radon STUKin luvuin sekä suojautuminen ajalla, etäisyydellä (neliölaki) ja suojalla (puoliarvokerros).",
+  "contribution": "Säteilyannoksen suureet ja säteilyturvallisuus: absorboitunut annos $D = \\tfrac{E}{m}$ grayna, säteilyn ja kudosten painotuskertoimet ja efektiivinen annos sievertteinä, suomalaisen keskimääräinen annos ja radon STUKin luvuin sekä suojautuminen ajalla, etäisyydellä (neliölaki) ja suojalla (puoliintumispaksuus).",
   "learn": [
     "laskemaan absorboituneen, ekvivalentti- ja efektiivisen annoksen painotuskertoimien avulla.",
-    "selittämään, mistä suomalaisen säteilyannos tulee ja miksi radon on suurin lähde.",
+    "selittämään, mistä suomalaisen säteilyannos tulee ja miksi sen suurin lähde antaa niin suuren annoksen.",
     "laskemaan, miten aika, etäisyys ja suoja pienentävät gammasäteilyn annosta."
   ],
   "prior": [
@@ -15,7 +15,7 @@
       "id": "hook",
       "stage": "herata",
       "type": "hook",
-      "text": "Suomalainen saa vuodessa keskimäärin noin $5{,}9\\,\\text{mSv}$ säteilyannoksen. Ydinvoimalaitosten osuus siitä on häviävän pieni, eikä röntgenkuvistakaan tule suurinta osaa. Suurin lähde on näkymätön ja hajuton kaasu, joka nousee kallioperästä kotien kellareihin ja alakertoihin. Toisaalta ydinvoimalan huoltotyöntekijä voi olla tunnin työvuoron säteilylähteen lähellä ja saada silti pienemmän annoksen kuin moni saa kotonaan kuukaudessa.",
+      "text": "Suomalainen saa vuodessa keskimäärin noin $5{,}9\\,\\text{mSv}$ säteilyannoksen. Ydinvoimalaitosten osuus siitä on häviävän pieni. Mistä loput tulevat: sairaaloiden tutkimuksista, avaruudesta, maasta jalkojemme alta vai jostain muualta? Toisaalta ydinvoimalan huoltotyöntekijä työskentelee säteilylähteiden lähellä, ja hänen annoksensa on silti pidettävä alle säädetyn rajan.",
       "question": "Mistä suomalaisen säteilyannos tulee, ja miten säteilylähteen lähellä työskentelevä voi pitää oman annoksensa pienenä?"
     },
     {
@@ -24,12 +24,12 @@
       "type": "choice",
       "optional": true,
       "title": "Kertaa: alfasäteilyn läpäisykyky",
-      "prompt": "Radonin hajoamistuotteet lähettävät alfasäteilyä. Miksi alfasäteilijä on vaarallinen lähinnä silloin, kun se on päässyt elimistön sisään?",
+      "prompt": "Monet luonnon radioaktiiviset aineet, kuten uraanin hajoamissarjan jäsenet, lähettävät alfasäteilyä. Miksi alfasäteilijä on vaarallinen lähinnä silloin, kun se on päässyt elimistön sisään?",
       "choices": [
         {
           "text": "Iho pysäyttää alfahiukkaset, mutta sisällä ne luovuttavat energiansa suoraan eläviin soluihin.",
           "correct": true,
-          "feedback": "Oikein. Alfahiukkasen kantama ilmassa on vain muutama senttimetri ja kudoksessa alle millimetrin. Ulkopuolinen alfasäteily ei ulotu eläviin soluihin, mutta hengitysteissä se ionisoi tiheästi juuri niitä soluja, joiden pinnalle hajoamistuotteet ovat tarttuneet."
+          "feedback": "Oikein. Alfahiukkasen kantama ilmassa on vain muutama senttimetri ja kudoksessa alle millimetrin. Ulkopuolinen alfasäteily ei ulotu eläviin soluihin, mutta hengitettynä tai nieltynä alfasäteilijä on suoraan elävien solujen vieressä, ja sen säteily ionisoi niitä tiheästi."
         },
         {
           "text": "Alfahiukkaset muuttuvat elimistössä gammasäteilyksi, joka läpäisee kudokset helpommin kuin alfasäteily.",
@@ -108,21 +108,21 @@
       },
       "choices": [
         {
-          "text": "Kodin ja muiden rakennusten sisäilman radonista.",
+          "text": "Kodin ja muiden rakennusten sisäilmasta.",
           "correct": true,
-          "feedback": "Oikein: STUKin arvion mukaan sisäilman radon antaa suomalaiselle keskimäärin noin $4{,}1\\,\\text{mSv}$ vuodessa, lähes $70\\,\\%$ koko annoksesta $5{,}9\\,\\text{mSv}$. Graniittinen kallioperä, läpäisevä maaperä ja talvinen alipaine tuovat radonia sisäilmaan."
+          "feedback": "Oikein: STUKin arvion mukaan sisäilman radon antaa suomalaiselle keskimäärin noin $4\\,\\text{mSv}$ vuodessa, noin kaksi kolmasosaa koko annoksesta $5{,}9\\,\\text{mSv}$. Radon on radioaktiivinen jalokaasu, joka nousee maaperästä ja kalliosta talojen sisäilmaan."
         },
         {
           "text": "Röntgenkuvauksista ja muista lääketieteellisistä tutkimuksista.",
-          "feedback": "Terveydenhuollon tutkimukset antavat keskimäärin noin $0{,}6\\,\\text{mSv}$ vuodessa, mikä on toiseksi suurin osuus. Sisäilman radon antaa kuitenkin noin $4{,}1\\,\\text{mSv}$ eli lähes seitsemän kertaa enemmän."
+          "feedback": "Terveydenhuollon tutkimukset antavat keskimäärin noin $0{,}8\\,\\text{mSv}$ vuodessa. Sisäilman radon antaa noin $4\\,\\text{mSv}$ eli noin viisinkertaisesti."
         },
         {
-          "text": "Ydinvoimalaitoksista sekä Tšernobylin onnettomuuden laskeumasta.",
-          "feedback": "Ydinvoiman, Tšernobylin laskeuman ja ydinasekokeiden yhteinen osuus on nykyään alle $0{,}1\\,\\text{mSv}$ vuodessa. Suurin lähde on luonnon radon, noin $4{,}1\\,\\text{mSv}$ vuodessa."
+          "text": "Maaperän ja kallion gammasäteilystä, joka tulee ulkoa kehoon.",
+          "feedback": "Maaperän ja rakennusmateriaalien gammasäteily on osa muuta luonnon säteilyä, joka avaruuden säteilyn ja kehon omien radioaktiivisten aineiden kanssa antaa yhteensä noin $1{,}1\\,\\text{mSv}$ vuodessa. Suurin yksittäinen lähde on sisäilman radon, noin $4\\,\\text{mSv}$ vuodessa."
         },
         {
           "text": "Avaruudesta tulevasta säteilystä, joka ulottuu maanpinnalle asti.",
-          "feedback": "Avaruudesta tuleva säteily antaa maanpinnalla keskimäärin noin $0{,}3\\,\\text{mSv}$ vuodessa, koska ilmakehä suojaa siltä. Suurin lähde on sisäilman radon, noin $4{,}1\\,\\text{mSv}$ vuodessa."
+          "feedback": "Ilmakehä suojaa maanpinnalla suurimmalta osalta avaruuden säteilyä. Se on osa muuta luonnon säteilyä, jonka yhteisosuus on noin $1{,}1\\,\\text{mSv}$ vuodessa. Suurin lähde on sisäilman radon, noin $4\\,\\text{mSv}$ vuodessa."
         }
       ]
     },
@@ -132,8 +132,8 @@
       "type": "sim",
       "text": "Gammasäteilylähde on lyijyastiassa. Siirrä säteilymittaria, lisää lyijyä lähteen ja mittarin väliin ja juoksuta oleskeluaikaa. Seuraa annosnopeutta $\\dot{H}$ ja kertyvää annosta $H$.",
       "howto": "*Etäisyys* siirtää mittaria $1{,}0$–$4{,}0\\,\\text{m}$:n päähän lähteestä $0{,}5\\,\\text{m}$:n välein, ja *Lyijyä* asettaa lyijylevyn paksuudeksi $0$–$30\\,\\text{mm}$. *Käynnistä aika* juoksuttaa oleskeluaikaa $0$–$60\\,\\text{min}$, ja *Pysäytä* pysäyttää sen; aikaa voi myös siirtää liukusäätimellä. Kuvassa lähteestä lentää fotoneja oransseina pisteinä. Lyijyyn absorboituva fotoni välähtää lyijyssä, ja mittarin ikkunaan osuva saa ikkunan välähtämään. Mittarin yläpuolella on sen näyttämä annosnopeus. *Nopeus* muuttaa vain ajan ja fotonien kulun tahtia.",
-      "model": "Lähde on pistemäinen cesium-137-mallilähde, jonka annosnopeus on $40{,}0\\,\\mu\\text{Sv/h}$ $1{,}0\\,\\text{m}$:n etäisyydellä ilman suojaa. Lyijyn puoliarvokerros on mallissa $6{,}0\\,\\text{mm}$. Malli olettaa, ettei ilma vaimenna säteilyä eikä lyijyssä sironneita fotoneja pääse läpi. Taustasäteily ei ole mukana. Kuvan fotonit havainnollistavat mallia, mutta lukemat on laskettu: ne ovat mallin arvoja eivätkä mittauksia.",
-      "calc": "Lähteestä fotonit lähtevät tasaisesti kaikkiin suuntiin. Etäisyydellä $r$ ne jakautuvat pallon pinnalle $4\\pi r^2$, joten mittarin ikkunaan osuu osuus $\\tfrac{A}{4\\pi r^2}$, missä $A$ on ikkunan ala. Siksi annosnopeus on $\\dot{H} = 40{,}0\\,\\mu\\text{Sv/h} \\cdot \\left(\\tfrac{1\\,\\text{m}}{r}\\right)^2$ ilman suojaa. Lyijy päästää läpi osuuden $\\left(\\tfrac{1}{2}\\right)^{x/6{,}0\\,\\text{mm}}$, joka näkyy lukemissa prosentteina. Annos on $H = \\dot{H} t$, kun aika muutetaan tunneiksi: $1\\,\\text{min} = \\tfrac{1}{60}\\,\\text{h}$."
+      "model": "Lähde on pistemäinen gammasäteilyn mallilähde, jonka annosnopeus on $40{,}0\\,\\mu\\text{Sv/h}$ $1{,}0\\,\\text{m}$:n etäisyydellä ilman suojaa. Lyijyn puoliintumispaksuus on mallissa $d_{1/2} = 6{,}0\\,\\text{mm}$. Malli olettaa, ettei ilma vaimenna säteilyä eikä lyijyssä sironneita fotoneja pääse läpi. Taustasäteily ei ole mukana. Kuvan fotonit havainnollistavat mallia, mutta lukemat on laskettu: ne ovat mallin arvoja eivätkä mittauksia.",
+      "calc": "Lähteestä fotonit lähtevät tasaisesti kaikkiin suuntiin. Etäisyydellä $r$ ne jakautuvat pallon pinnalle $4\\pi r^2$, joten mittarin ikkunaan osuu osuus $\\tfrac{A}{4\\pi r^2}$, missä $A$ on ikkunan ala. Siksi annosnopeus on $\\dot{H} = 40{,}0\\,\\mu\\text{Sv/h} \\cdot \\left(\\tfrac{1\\,\\text{m}}{r}\\right)^2$ ilman suojaa. Lyijy päästää läpi osuuden $\\left(\\tfrac{1}{2}\\right)^{d/6{,}0\\,\\text{mm}}$, joka näkyy lukemissa prosentteina. Annos on $H = \\dot{H} t$, kun aika muutetaan tunneiksi: $1\\,\\text{min} = \\tfrac{1}{60}\\,\\text{h}$."
     },
     {
       "id": "koe-1",
@@ -158,14 +158,14 @@
         "t": "min"
       },
       "names": {
-        "r": "etäisyys r",
-        "x": "lyijyä x",
-        "t": "oleskeluaika t"
+        "r": "etäisyys $r$",
+        "x": "lyijyä $d$",
+        "t": "oleskeluaika $t$"
       },
       "measure": [
         {
           "key": "Hdot",
-          "label": "annosnopeus (µSv/h)"
+          "label": "$\\dot{H}\\ (\\mu\\text{Sv/h})$"
         }
       ]
     },
@@ -192,14 +192,14 @@
         "t": "min"
       },
       "names": {
-        "r": "etäisyys r",
-        "x": "lyijyä x",
-        "t": "oleskeluaika t"
+        "r": "etäisyys $r$",
+        "x": "lyijyä $d$",
+        "t": "oleskeluaika $t$"
       },
       "measure": [
         {
           "key": "Hdot",
-          "label": "annosnopeus (µSv/h)"
+          "label": "$\\dot{H}\\ (\\mu\\text{Sv/h})$"
         }
       ]
     },
@@ -279,13 +279,13 @@
       "stage": "sovella",
       "type": "numeric",
       "title": "Sovella: aika, etäisyys ja suoja yhdessä",
-      "prompt": "Teollisuusradiografiassa hitsaussaumoja kuvataan gammalähteellä. Lähteen annosnopeus on $1{,}0\\,\\text{m}$:n etäisyydellä $1{,}80\\,\\text{mSv/h}$. Työntekijä tekee $15\\,\\text{min}$ kestävän työn $3{,}0\\,\\text{m}$:n päässä lähteestä $12\\,\\text{mm}$:n lyijysuojan takana. Lyijyn puoliarvokerros on tälle säteilylle $6{,}0\\,\\text{mm}$. Kuinka suuren annoksen työntekijä saa? Vastaa mikrosieverteinä.",
+      "prompt": "Teollisuusradiografiassa hitsaussaumoja kuvataan gammalähteellä. Lähteen annosnopeus on $1{,}0\\,\\text{m}$:n etäisyydellä $1{,}80\\,\\text{mSv/h}$. Työntekijä tekee $15\\,\\text{min}$ kestävän työn $3{,}0\\,\\text{m}$:n päässä lähteestä $12\\,\\text{mm}$:n lyijysuojan takana. Lyijyn puoliintumispaksuus on tälle säteilylle $6{,}0\\,\\text{mm}$. Kuinka suuren annoksen työntekijä saa? Vastaa mikrosieverteinä.",
       "answer": 12.5,
       "unit": "µSv",
       "tolerance": 0.02,
       "hints": [
         "Käsittele yksi suojautumiskeino kerrallaan: ensin etäisyys, sitten lyijy, lopuksi aika.",
-        "Etäisyys kolminkertaistuu, joten annosnopeus on $\\left(\\tfrac{1}{3}\\right)^2 = \\tfrac{1}{9}$ alkuperäisestä. $12\\,\\text{mm}$ on kaksi puoliarvokerrosta.",
+        "Etäisyys kolminkertaistuu, joten annosnopeus on $\\left(\\tfrac{1}{3}\\right)^2 = \\tfrac{1}{9}$ alkuperäisestä. $12\\,\\text{mm}$ on kaksi puoliintumispaksuutta.",
         "Lyijyn takana annosnopeus on $1800\\,\\mu\\text{Sv/h} \\cdot \\tfrac{1}{9} \\cdot \\tfrac{1}{4} = 50\\,\\mu\\text{Sv/h}$. Kerro se ajalla tunteina."
       ],
       "mistakes": [
@@ -295,7 +295,7 @@
         },
         {
           "value": 25,
-          "feedback": "Otit lyijystä huomioon vain yhden puolituksen. $12\\,\\text{mm}$ on kaksi puoliarvokerrosta, joten lyijy päästää läpi $\\left(\\tfrac{1}{2}\\right)^2 = \\tfrac{1}{4}$."
+          "feedback": "Otit lyijystä huomioon vain yhden puolituksen. $12\\,\\text{mm}$ on kaksi puoliintumispaksuutta, joten lyijy päästää läpi $\\left(\\tfrac{1}{2}\\right)^2 = \\tfrac{1}{4}$."
         },
         {
           "value": 50,
@@ -306,7 +306,7 @@
           "feedback": "Kerroit annosnopeuden yksikössä $\\mu\\text{Sv/h}$ minuuttimäärällä $15$. Muuta aika tunneiksi: $15\\,\\text{min} = 0{,}25\\,\\text{h}$."
         }
       ],
-      "solution": "**Annettu:** annosnopeus $\\dot{H}_1 = 1{,}80\\,\\text{mSv/h}$ etäisyydellä $r_1 = 1{,}0\\,\\text{m}$, työpisteen etäisyys $r_2 = 3{,}0\\,\\text{m}$, lyijyä $x = 12\\,\\text{mm}$, puoliarvokerros $d_{1/2} = 6{,}0\\,\\text{mm}$, työaika $t = 15\\,\\text{min}$\n\n**Kysytty:** työntekijän annos $H$ mikrosieverteinä\n\n**Periaate:** Lähde on pieni ja ilma vaimentaa gammasäteilyä vähän, joten annosnopeus pienenee etäisyyden neliön mukaan. Lyijy vaimentaa sen jälkeen osuuden, jonka puoliarvokerros määrää: jokainen $6{,}0\\,\\text{mm}$ puolittaa annosnopeuden. Annosnopeus pysyy työpisteessä vakiona, joten annos on annosnopeus kertaa aika.\n\n**Kaava:** $\\dot{H}_2 = \\dot{H}_1 \\left(\\tfrac{r_1}{r_2}\\right)^2$, suojan takana $\\dot{H} = \\dot{H}_2 \\left(\\tfrac{1}{2}\\right)^{x/d_{1/2}}$ ja $H = \\dot{H} t$, joten $H = \\dot{H}_1 \\left(\\tfrac{r_1}{r_2}\\right)^2 \\left(\\tfrac{1}{2}\\right)^{x/d_{1/2}} t$\n\n**Muunnokset:** $1{,}80\\,\\text{mSv/h} = 1{,}80 \\cdot 1000\\,\\mu\\text{Sv/h} = 1800\\,\\mu\\text{Sv/h}$ ja $t = 15\\,\\text{min} = 15 \\cdot \\tfrac{1}{60}\\,\\text{h} = 0{,}25\\,\\text{h}$\n\n**Sijoitus:** $H = 1800\\,\\mu\\text{Sv/h} \\cdot \\left(\\tfrac{1{,}0\\,\\text{m}}{3{,}0\\,\\text{m}}\\right)^2 \\cdot \\left(\\tfrac{1}{2}\\right)^{12\\,\\text{mm} / 6{,}0\\,\\text{mm}} \\cdot 0{,}25\\,\\text{h} = 1800\\,\\mu\\text{Sv/h} \\cdot \\tfrac{1}{9} \\cdot \\tfrac{1}{4} \\cdot 0{,}25\\,\\text{h} = 50{,}0\\,\\mu\\text{Sv/h} \\cdot 0{,}25\\,\\text{h} = 12{,}5\\,\\mu\\text{Sv}$\n\n**Vastaus:** $12{,}5\\,\\mu\\text{Sv}$, kolme merkitsevää numeroa kuten annosnopeudessa $1{,}80\\,\\text{mSv/h}$; etäisyyksien ja paksuuksien suhteet ovat tarkkoja lukuja $\\tfrac{1}{9}$ ja $\\tfrac{1}{4}$.\n\n**Järkevyys:** Etäisyys pienentää annosnopeuden yhdeksäsosaan ja lyijy vielä neljäsosaan, yhteensä $36$-osaan: $1800 : 36 = 50\\,\\mu\\text{Sv/h}$. Neljännestunnissa kertyy neljäsosa tästä. Annos on alle sadasosa säteilytyöntekijän vuosirajasta $20\\,\\text{mSv}$, mikä sopii suunniteltuun työhön."
+      "solution": "**Annettu:** annosnopeus $\\dot{H}_1 = 1{,}80\\,\\text{mSv/h}$ etäisyydellä $r_1 = 1{,}0\\,\\text{m}$, työpisteen etäisyys $r_2 = 3{,}0\\,\\text{m}$, lyijyä $d = 12\\,\\text{mm}$, puoliintumispaksuus $d_{1/2} = 6{,}0\\,\\text{mm}$, työaika $t = 15\\,\\text{min}$\n\n**Kysytty:** työntekijän annos $H$ mikrosieverteinä\n\n**Periaate:** Lähde on pieni ja ilma vaimentaa gammasäteilyä vähän, joten annosnopeus pienenee etäisyyden neliön mukaan. Lyijy vaimentaa sen jälkeen osuuden, jonka puoliintumispaksuus määrää: jokainen $6{,}0\\,\\text{mm}$ puolittaa annosnopeuden. Annosnopeus pysyy työpisteessä vakiona, joten annos on annosnopeus kertaa aika.\n\n**Kaava:** $\\dot{H}_2 = \\dot{H}_1 \\left(\\tfrac{r_1}{r_2}\\right)^2$, suojan takana $\\dot{H} = \\dot{H}_2 \\left(\\tfrac{1}{2}\\right)^{d/d_{1/2}}$ ja $H = \\dot{H} t$, joten $H = \\dot{H}_1 \\left(\\tfrac{r_1}{r_2}\\right)^2 \\left(\\tfrac{1}{2}\\right)^{d/d_{1/2}} t$\n\n**Muunnokset:** $1{,}80\\,\\text{mSv/h} = 1{,}80 \\cdot 1000\\,\\mu\\text{Sv/h} = 1800\\,\\mu\\text{Sv/h}$ ja $t = 15\\,\\text{min} = 15 \\cdot \\tfrac{1}{60}\\,\\text{h} = 0{,}25\\,\\text{h}$\n\n**Sijoitus:** $H = 1800\\,\\mu\\text{Sv/h} \\cdot \\left(\\tfrac{1{,}0\\,\\text{m}}{3{,}0\\,\\text{m}}\\right)^2 \\cdot \\left(\\tfrac{1}{2}\\right)^{12\\,\\text{mm} / 6{,}0\\,\\text{mm}} \\cdot 0{,}25\\,\\text{h} = 1800\\,\\mu\\text{Sv/h} \\cdot \\tfrac{1}{9} \\cdot \\tfrac{1}{4} \\cdot 0{,}25\\,\\text{h} = 50{,}0\\,\\mu\\text{Sv/h} \\cdot 0{,}25\\,\\text{h} = 12{,}5\\,\\mu\\text{Sv}$\n\n**Vastaus:** $12{,}5\\,\\mu\\text{Sv}$, kolme merkitsevää numeroa kuten annosnopeudessa $1{,}80\\,\\text{mSv/h}$; etäisyyksien ja paksuuksien suhteet ovat tarkkoja lukuja $\\tfrac{1}{9}$ ja $\\tfrac{1}{4}$.\n\n**Järkevyys:** Etäisyys pienentää annosnopeuden yhdeksäsosaan ja lyijy vielä neljäsosaan, yhteensä $36$-osaan: $1800 : 36 = 50\\,\\mu\\text{Sv/h}$. Neljännestunnissa kertyy neljäsosa tästä. Annos on alle sadasosa säteilytyöntekijän vuosirajasta $20\\,\\text{mSv}$, mikä sopii suunniteltuun työhön."
     },
     {
       "id": "harjoitukset",
@@ -340,35 +340,34 @@
       "id": "tarkistus-2",
       "stage": "tarkista",
       "type": "numeric",
-      "title": "2. Lue puoliarvokerros kuvaajasta",
+      "title": "2. Lue puoliintumispaksuus kuvaajasta",
       "figure": "fy8-13/vaimennus",
-      "prompt": "Kuvaajassa on gammasäteilyn annosnopeus betoniseinän takana seinän paksuuden funktiona. Lue kuvaajasta betonin puoliarvokerros tälle säteilylle. Vastaa senttimetreinä.",
+      "prompt": "Kuvaajassa on gammasäteilyn annosnopeus betoniseinän takana seinän paksuuden funktiona. Lue kuvaajasta betonin puoliintumispaksuus tälle säteilylle. Vastaa senttimetreinä.",
       "answer": 5.0,
       "unit": "cm",
       "tolerance": 0.06,
       "hints": [
-        "Mikä on annosnopeus ilman betonia eli kohdassa $x = 0$? Entä puolet siitä?",
+        "Mikä on annosnopeus ilman betonia eli kohdassa $d = 0$? Entä puolet siitä?",
         "Etsi kohta, jossa käyrä on puolessa alkuarvostaan, ja lue sen paksuus vaaka-akselilta.",
         "Alkuarvo on $80\\,\\mu\\text{Sv/h}$, joten etsi kohta, jossa $\\dot{H} = 40\\,\\mu\\text{Sv/h}$."
       ],
       "mistakes": [
         {
           "value": 10,
-          "feedback": "Luit paksuuden, jossa annosnopeus on neljäsosa alkuarvosta, $20\\,\\mu\\text{Sv/h}$. Se on kaksi puoliarvokerrosta. Puoliarvokerros on paksuus, joka puolittaa annosnopeuden."
+          "feedback": "Luit paksuuden, jossa annosnopeus on neljäsosa alkuarvosta, $20\\,\\mu\\text{Sv/h}$. Se on kaksi puoliintumispaksuutta. Puoliintumispaksuus on paksuus, joka puolittaa annosnopeuden."
         },
         {
           "value": 40,
           "feedback": "Tämä on puolet alkuarvosta mikrosieverteinä tunnissa. Kysytty on paksuus, jossa annosnopeus pienenee tähän arvoon: lue se vaaka-akselilta."
         }
       ],
-      "solution": "**Annettu:** kuvaajan annosnopeus $\\dot{H}$ betonin paksuuden $x$ funktiona, ruudukon väli $1\\,\\text{cm}$ ja $5\\,\\mu\\text{Sv/h}$\n\n**Kysytty:** betonin puoliarvokerros $d_{1/2}$ senttimetreinä\n\n**Periaate:** Jokainen samanpaksuinen kerros vaimentaa saman osuuden siihen tulevasta säteilystä, joten annosnopeus puolittuu aina, kun paksuus kasvaa yhdellä puoliarvokerroksella, mistä tahansa kohdasta lähtien.\n\n**Kuvaajan lukeminen:** Kohdassa $x = 0$ kuvaaja alkaa arvosta $\\dot{H}_0 = 80\\,\\mu\\text{Sv/h}$. Puolet siitä on $40\\,\\mu\\text{Sv/h}$, ja vaakaviiva tältä korkeudelta osuu käyrään kohdassa $x = 5{,}0\\,\\text{cm}$. Tarkistus: $20\\,\\mu\\text{Sv/h}$ saavutetaan kohdassa $10\\,\\text{cm}$.\n\n**Kaava:** $\\dot{H} = \\dot{H}_0 \\left(\\tfrac{1}{2}\\right)^{x/d_{1/2}}$; kun $\\dot{H} = \\tfrac{1}{2}\\dot{H}_0$, eksponentti on $\\tfrac{x}{d_{1/2}} = 1$, joten $d_{1/2} = x$\n\n**Muunnokset:** Ei tarvita: paksuus luetaan suoraan senttimetreinä.\n\n**Sijoitus:** $\\tfrac{1}{2}\\dot{H}_0 = \\tfrac{1}{2} \\cdot 80\\,\\mu\\text{Sv/h} = 40\\,\\mu\\text{Sv/h}$, joka saavutetaan kohdassa $x = 5{,}0\\,\\text{cm}$, joten $d_{1/2} = 5{,}0\\,\\text{cm}$\n\n**Vastaus:** $5{,}0\\,\\text{cm}$, kaksi merkitsevää numeroa, koska kuvaajasta voi lukea paksuuden noin $0{,}2\\,\\text{cm}$:n tarkkuudella.\n\n**Järkevyys:** Viiden puoliarvokerroksen eli $25\\,\\text{cm}$:n kohdalla annosnopeuden pitäisi olla $80\\,\\mu\\text{Sv/h} : 32 = 2{,}5\\,\\mu\\text{Sv/h}$, ja kuvaaja on siellä lähellä nollaa, kuten pitää. Puoliarvokerros on samaa suuruusluokkaa kuin betonille tyypillinen noin $5\\,\\text{cm}$."
+      "solution": "**Annettu:** kuvaajan annosnopeus $\\dot{H}$ betonin paksuuden $d$ funktiona, ruudukon väli $1\\,\\text{cm}$ ja $5\\,\\mu\\text{Sv/h}$\n\n**Kysytty:** betonin puoliintumispaksuus $d_{1/2}$ senttimetreinä\n\n**Periaate:** Jokainen samanpaksuinen kerros vaimentaa saman osuuden siihen tulevasta säteilystä, joten annosnopeus puolittuu aina, kun paksuus kasvaa yhdellä puoliintumispaksuudella, mistä tahansa kohdasta lähtien.\n\n**Kuvaajan lukeminen:** Kohdassa $d = 0$ kuvaaja alkaa arvosta $\\dot{H}_0 = 80\\,\\mu\\text{Sv/h}$. Puolet siitä on $40\\,\\mu\\text{Sv/h}$, ja vaakaviiva tältä korkeudelta osuu käyrään kohdassa $d = 5{,}0\\,\\text{cm}$. Tarkistus: $20\\,\\mu\\text{Sv/h}$ saavutetaan kohdassa $10\\,\\text{cm}$.\n\n**Kaava:** $\\dot{H} = \\dot{H}_0 \\left(\\tfrac{1}{2}\\right)^{d/d_{1/2}}$; kun $\\dot{H} = \\tfrac{1}{2}\\dot{H}_0$, eksponentti on $\\tfrac{d}{d_{1/2}} = 1$, joten $d_{1/2} = d$\n\n**Muunnokset:** Ei tarvita: paksuus luetaan suoraan senttimetreinä.\n\n**Sijoitus:** $\\tfrac{1}{2}\\dot{H}_0 = \\tfrac{1}{2} \\cdot 80\\,\\mu\\text{Sv/h} = 40\\,\\mu\\text{Sv/h}$, joka saavutetaan kohdassa $d = 5{,}0\\,\\text{cm}$, joten $d_{1/2} = 5{,}0\\,\\text{cm}$\n\n**Vastaus:** $5{,}0\\,\\text{cm}$, kaksi merkitsevää numeroa, koska kuvaajasta voi lukea paksuuden noin $0{,}2\\,\\text{cm}$:n tarkkuudella.\n\n**Järkevyys:** Viiden puoliintumispaksuuden eli $25\\,\\text{cm}$:n kohdalla annosnopeuden pitäisi olla $80\\,\\mu\\text{Sv/h} : 32 = 2{,}5\\,\\mu\\text{Sv/h}$, ja kuvaaja on siellä lähellä nollaa, kuten pitää. Puoliintumispaksuus on samaa suuruusluokkaa kuin betonille tyypillinen noin $5\\,\\text{cm}$."
     },
     {
       "id": "tarkistus-3",
       "stage": "tarkista",
       "type": "explain",
       "title": "3. Selitä ja siirrä",
-      "optional": true,
       "prompt": "Radon on jalokaasu, joka ei sitoudu elimistöön, ja suurin osa hengitetystä radonista hengitetään ulos. Selitä, miksi sisäilman radon on silti suomalaisten suurin säteilyannoksen lähde, ja miksi radonpitoisuus on Suomessa usein suurempi talvella kuin kesällä.",
       "model": "Radonin lyhytikäiset hajoamistuotteet, poloniumin, lyijyn ja vismutin isotoopit, ovat kiinteitä aineita, jotka tarttuvat pölyhiukkasiin ja jäävät hengitysteiden pinnalle. Siellä polonium-218 ja polonium-214 lähettävät alfasäteilyä, joka luovuttaa koko energiansa lyhyelle matkalle keuhkojen soluihin. Alfasäteilyn painotuskerroin on $20$, joten pienikin absorboitunut annos antaa suuren ekvivalenttiannoksen, ja keuhkot ovat herkkä kudos ($w_\\text{T} = 0{,}12$). Suomen graniittisessa kallioperässä on paljon uraania, josta radon syntyy, ja harjujen sora päästää maaperän ilmaa läpi. Talvella lämmin sisäilma nousee ylös ja karkaa ulos talon yläosasta, jolloin alaosaan syntyy alipaine, joka imee radonpitoista maaperän ilmaa sisään perustusten raoista. Siksi radonpitoisuus on talvella usein suurempi ja se mitataan lämmityskaudella.",
       "criteria": [

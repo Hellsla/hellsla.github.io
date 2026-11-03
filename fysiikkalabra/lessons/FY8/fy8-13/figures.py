@@ -11,29 +11,28 @@ LA = importlib.util.module_from_spec(_spec); _spec.loader.exec_module(LA)
 
 
 def lahteet():
-    """Ydinajatus: the Finnish average effective dose 5,9 mSv a year by source (STUK 2023), horizontal bars to scale."""
-    rows = [("sisäilman radon", LA.SOURCES["radon"]), ("terveydenhuolto", LA.SOURCES["terveydenhuolto"]),
-            ("maaperä ja rakennukset", LA.SOURCES["maaperä"]), ("aineet elimistössä", LA.SOURCES["elimistö"]),
-            ("avaruus", LA.SOURCES["avaruus"])]
+    """Ydinajatus: the Finnish average effective dose 5,9 mSv a year by source (STUK-A263, 2020, rounded), bars to scale."""
+    rows = [("sisäilman radon", LA.SOURCES["radon"], 0), ("muu luonnon säteily", LA.SOURCES["luonto"], 1),
+            ("terveydenhuolto", LA.SOURCES["terveydenhuolto"], 1)]
     f = Fig("fy813-lahteet", 360, "Vaakapylväskuvio mittakaavassa: suomalaisen keskimääräinen efektiivinen annos vuodessa "
-            "lähteittäin, STUKin arvio vuodelta 2023, yhteensä 5,9 millisievertiä. Sisäilman radon 4,1, terveydenhuolto 0,6, "
-            "maaperän ja rakennusten gammasäteily 0,5, elimistön omat radioaktiiviset aineet 0,4 ja avaruudesta tuleva "
-            "säteily 0,3 millisievertiä vuodessa. Radonin pylväs on selvästi pisin, lähes seitsemän kertaa niin pitkä "
-            "kuin seuraavaksi suurimman.")
+            "lähteittäin, STUKin arvio vuoden 2018 tilanteesta, yhteensä noin 5,9 millisievertiä. Sisäilman radon noin 4, "
+            "muu luonnon säteily eli maaperä, rakennukset, avaruus ja elimistön omat aineet yhteensä noin 1,1 ja "
+            "terveydenhuolto noin 0,8 millisievertiä vuodessa. Radonin pylväs on selvästi pisin, yli kolme kertaa niin "
+            "pitkä kuin seuraavan.")
     x0, x1, vmax = 262, 548, 4.5
     X = lambda v: x0 + v / vmax * (x1 - x0)
     for v in (1, 2, 3, 4):
         f.line(X(v), 34, X(v), 286, RULE_LIGHT, 1.5)
         f.line(X(v), 286, X(v), 293, INK, 2); f.tex(X(v), 310, fi(v), "middle")
     f.tex(x0 - 10, 310, "0", "end")
-    for k, (name, v) in enumerate(rows):
-        y = 58 + k * 50
-        f.rect(x0, y - 15, X(v) - x0, 30, HEAT if k == 0 else HEAT_LIGHT, INK, 2)
+    for k, (name, v, light) in enumerate(rows):
+        y = 74 + k * 76
+        f.rect(x0, y - 18, X(v) - x0, 36, HEAT_LIGHT if light else HEAT, INK, 2)
         f.tex(x0 - 12, y, r"\text{" + name + "}", "end")
         f.tex(X(v) + 10, y, fi(v, 1), "start", INK)
     f.arrow(x0, 287, x1 + 26, 287, INK, 2.5, 13)
     f.line(x0, 287, x0, 32, INK, 2.5)
-    f.tex(300, 340, r"H_\text{E}\ (\text{mSv/a})", "middle")
+    f.tex(300, 340, r"H_\text{E}\ (\text{mSv/vuosi})", "middle")
     return f.svg()
 
 
@@ -61,7 +60,7 @@ def painotus():
             f.line(x0 - 4, 124, x0 + 132, 124, HOT, 9, cap="round")
             for j in range(13): f.circle(x0 + 32 + j * 8, 124 + (7 if j % 2 else -7), 4, INK)
         f.tex(x0 + 115, 222, r"D = 1\,\text{mGy}", "middle")
-        f.tex(x0 + 115, 262, r"w_\text{R} = " + wr, "middle", MUTED)
+        f.tex(x0 + 115, 262, r"w_\text{R} = " + wr, "middle", INK)
         f.arrow(x0 + 115, 280, x0 + 115, 304, INK, 2.5, 11)
         f.tex(x0 + 115, 330, r"H_\text{T} = " + Hs + r"\,\text{mSv}", "middle", HOT if k else INK)
     f.line(300, 20, 300, 340, RULE, 2, "6 6")
@@ -74,7 +73,7 @@ def etaisyys():
             "säderajaa leviää oikealle. Etäisyydellä r säteet kulkevat yhden ruudun läpi, etäisyydellä 2 r saman "
             "säteilyn on jakauduttava 2 kertaa 2 eli neljälle samankokoiselle ruudulle ja etäisyydellä 3 r 3 kertaa 3 eli "
             "yhdeksälle ruudulle. Yhden ruudun läpi kulkee siis 2 r:n etäisyydellä neljäsosa ja 3 r:n etäisyydellä "
-            "yhdeksäsosa säteilystä, joten annosnopeus on näillä etäisyyksillä neljäsosa ja yhdeksäsosa.")
+            "yhdeksäsosa säteilystä, joten suhteellinen annosnopeus on näillä etäisyyksillä 1, neljäsosa ja yhdeksäsosa.")
     sx, sy, u = 42, 160, 130                       # source, px per r
     s = 22                                          # half side of one square at r, px (vertical; the depth is drawn skewed)
     for k in (1, 2, 3):
@@ -91,7 +90,8 @@ def etaisyys():
         f.line(x, 252, x, 268, MUTED, 2)
         f.tex(x, 286, lab, "middle")
         f.tex(x, 344, frac, "middle", HEAT)
-    f.tex(sx, 344, r"\dot{H}", "middle", HEAT)
+    f.tex(sx + 40, 332, r"\dot{H}", "middle", HEAT)
+    f.tex(sx + 40, 364, r"\text{suhteellinen}", "middle", HEAT)
     f.line(sx, 260, sx + 3 * u, 260, MUTED, 1.5)
     f.line(sx, 252, sx, 268, MUTED, 2)
     f.tex(sx, 286, "0", "middle")
@@ -100,13 +100,13 @@ def etaisyys():
 
 
 def suoja():
-    """Kaava, the half-value layer: the sim's dose rate behind 0–30 mm of lead, halving every 6,0 mm."""
+    """Kaava, the puoliintumispaksuus d½ (half-value layer): the sim's dose rate behind 0–30 mm of lead, halving every 6,0 mm."""
     f = Fig("fy813-suoja", 380, "Kuvaaja mittakaavassa: annosnopeus mikrosieverteinä tunnissa lyijylevyn paksuuden funktiona, "
             "paksuus nollasta 30 millimetriin. Ilman lyijyä annosnopeus on 40, ja jokainen 6 millimetrin kerros puolittaa "
             "sen: 6 millimetrin kohdalla 20, 12 millimetrin kohdalla 10, 18 millimetrin kohdalla 5. Käyrä laskee yhä "
-            "loivemmin eikä saavuta nollaa. Puoliarvokerros on merkitty vaakasuoralla hakasulkeella ensimmäisen kerroksen kohdalle.")
+            "loivemmin eikä saavuta nollaa. Puoliintumispaksuus on merkitty vaakasuoralla hakasulkeella ensimmäisen kerroksen kohdalle.")
     ax = Axes(f, (100, 312), (484, 58), x=(0, 30), y=(0, 44), xticks=[6, 12, 18, 24, 30], yticks=[10, 20, 30, 40],
-              xlabel=r"x\ (\text{mm})", ylabel=r"\dot{H}\ (\mu\text{Sv/h})")
+              xlabel=r"d\ (\text{mm})", ylabel=r"\dot{H}\ (\mu\text{Sv/h})")
     ax.curve(lambda x: LA.hdot(1.0, x), 0, 30, HEAT, 3)
     for x in (6, 12, 18):
         ax.guide(x, LA.hdot(1.0, x)); ax.point(x, LA.hdot(1.0, x), HEAT)
@@ -115,7 +115,7 @@ def suoja():
     f.line(ax.X(0), yb, ax.X(6), yb, INK, 2)
     f.line(ax.X(0), yb, ax.X(0), yb + 8, INK, 2); f.line(ax.X(6), yb, ax.X(6), yb + 8, INK, 2)
     f.tex(ax.X(6) + 12, yb, r"d_{1/2} = 6{,}0\,\text{mm}", "start", INK, bg=True)
-    f.tex(ax.X(14), ax.Y(24), r"\dot{H} = \dot{H}_0 \left(\tfrac{1}{2}\right)^{x/d_{1/2}}", "start", HEAT, bg=True)
+    f.tex(ax.X(14), ax.Y(24), r"\dot{H} = \dot{H}_0 \left(\tfrac{1}{2}\right)^{d/d_{1/2}}", "start", HEAT, bg=True)
     return f.svg()
 
 
@@ -123,26 +123,37 @@ def vaimennus():
     """Tarkista 2 (task figure): the dose rate behind 0–25 cm of concrete from 80 µSv/h; the half-value layer 5,0 cm is read off."""
     H0, D = LA.CHK_H0, LA.CHK_D
     f = Fig("fy813-vaimennus", 380, "Kuvaaja mittakaavassa: gammasäteilyn annosnopeus mikrosieverteinä tunnissa betoniseinän "
-            "paksuuden funktiona, paksuus nollasta 25 senttimetriin, ruudukon väli 1 senttimetri ja 5 mikrosievertiä tunnissa. "
+            "paksuuden funktiona, paksuus nollasta 25 senttimetriin, ruudukon väli 1 senttimetri ja 5 mikrosievertiä tunnissa, "
+            "joka viides pystyviiva ja joka toinen vaakaviiva tummempi; vaaka-akselilla numerot 5 senttimetrin ja pystyakselilla "
+            "10 mikrosievertin välein. "
             "Ilman betonia annosnopeus on 80, ja käyrä laskee yhä loivemmin.")
     ax = Axes(f, (100, 312), (484, 58), x=(0, 25), y=(0, 85), xticks=list(range(1, 26)), yticks=list(range(5, 86, 5)),
-              xlabel=r"x\ (\text{cm})", ylabel=r"\dot{H}\ (\mu\text{Sv/h})",
-              xfmt=lambda v: fi(v) if v % 5 == 0 else "", yfmt=lambda v: fi(v) if v % 20 == 0 else "")
+              xlabel=r"d\ (\text{cm})", ylabel=r"\dot{H}\ (\mu\text{Sv/h})",
+              xfmt=lambda v: fi(v) if v % 5 == 0 else "", yfmt=lambda v: fi(v) if v % 10 == 0 else "")
+    for v in range(5, 26, 5): f.line(ax.X(v), ax.Y(0), ax.X(v), ax.Y(85), RULE, 1.5)     # darker every 5 cm
+    for v in range(10, 86, 10): f.line(ax.X(0), ax.Y(v), ax.X(25), ax.Y(v), RULE, 1.5)   # and every 10 µSv/h
     ax.curve(lambda x: H0 * 0.5 ** (x / D), 0, 25, HEAT, 3)
     ax.point(0, H0, HEAT)
     return f.svg()
 
 
 def hero():
-    """Opening illustration: a Finnish red house in winter on granite bedrock; radon rises from the rock through the
-    soil and the cracks of the basement floor into the house; a radon measuring jar stands in the basement."""
-    f = H.hero("fy813-hero", "Kuvitus: talvinen omakotitalo poikkileikkauksena. Punaisen puutalon katolla on lunta ja "
-               "savupiipusta nousee savua. Talon alla on kellari, maan alla hiekkainen maakerros ja syvemmällä harmaa "
-               "graniittikallio. Kalliosta ja maaperästä nousee oransseja radonatomeja pitkin kaartuvia reittejä kohti "
-               "talon perustuksia, ja osa pääsee kellarin lattian halkeamista sisäilmaan. Kellarin lattialla on pieni musta "
-               "radonmittauspurkki. Lämmin sisäilma nousee ylös ja imee maaperän ilmaa kellariin.")
+    """Opening illustration, neutral until the prediction about the largest source: a Finnish red house in winter on soil
+    and granite bedrock, a passenger plane in the sky and a nuclear power plant far behind the forest; nothing marks a
+    source (no radon is drawn: ennuste 3 asks for it)."""
+    f = H.hero("fy813-hero", "Kuvitus: talvinen suomalainen maisema. Punainen omakotitalo on piirretty poikkileikkauksena: "
+               "katolla on lunta, savupiipusta nousee savua ja talon alla on kellari. Maan alla on hiekkainen maakerros ja "
+               "syvemmällä harmaa graniittikallio. Taivaalla lentää matkustajakone, ja kaukana metsän takana näkyy "
+               "ydinvoimalaitoksen reaktorirakennus.")
     H.sky(f, "fy813h", 330, ICE, GLASS)
     H.sun(f, "fy813h-sun", 1000, 78, 42, rays=False)
+    # a nuclear power plant far away: a boxy reactor building with a domed top and a turbine hall
+    f.rect(20, 290, 70, 40, RULE_LIGHT, INK, 2); f.rect(60, 262, 46, 68, WHITE, INK, 2)
+    f.path("M60,262 Q83,236 106,262 Z", WHITE, INK, 2); f.rect(112, 220, 8, 110, RULE_LIGHT, INK, 2)
+    # a passenger plane high in the sky
+    f.path("M300,96 L420,90 Q440,92 432,100 L300,104 Q292,100 300,96 Z", WHITE, INK, 2)
+    f.path("M360,98 L336,128 L352,128 L392,99 Z", RULE_LIGHT, INK, 2)
+    f.path("M304,97 L292,76 L304,76 L322,96 Z", RULE_LIGHT, INK, 2)
     # ground: snow, sandy soil, granite bedrock
     f.rect(0, 318, 1200, 20, WHITE)
     f.rect(0, 336, 1200, 124, H.grad(f, "fy813h-soil", SAND_LIGHT, SAND))
@@ -155,27 +166,12 @@ def hero():
     # basement in the soil
     f.rect(430, 330, 340, 110, RULE_LIGHT, INK, 3)
     f.rect(444, 344, 312, 82, WHITE, INK, 2)
-    f.path("M520,426 l14,-10 l10,8 l16,-6", "none", INK, 2)
-    f.path("M660,426 l10,-8 l12,6", "none", INK, 2)
-    f.rect(706, 400, 22, 26, INK, None, 0, 4); f.rect(702, 396, 30, 6, IRON, None, 0, 2)
     # the house
     H.red_house(f, 420, 330, 360, 170, snow=True)
     f.rect(690, 156, 34, 70, IRON, INK, 3)
     H.smoke(f, 707, 140, 0.8, MUTED, 0.45)
     # trees
     H.spruce(f, 170, 330, 200); H.spruce(f, 300, 330, 150); H.spruce(f, 960, 330, 180); H.birch(f, 1112, 330, 170, leaves=False)
-    # radon paths from the rock into the basement
-    for k, (x0, y0, x1) in enumerate(((330, 560, 520), (520, 590, 560), (760, 570, 670), (940, 540, 700), (150, 520, 470))):
-        d = f"M{x0},{y0} C{x0 + (x1 - x0) * 0.2},{y0 - 90} {x1 - 20},{470} {x1},{432}"
-        f.path(d, "none", HEAT, 3, 'stroke-dasharray="10 8"')
-        for j, tt in enumerate((0.15, 0.45, 0.75)):
-            bx = (1 - tt) ** 3 * x0 + 3 * (1 - tt) ** 2 * tt * (x0 + (x1 - x0) * 0.2) + 3 * (1 - tt) * tt ** 2 * (x1 - 20) + tt ** 3 * x1
-            by = (1 - tt) ** 3 * y0 + 3 * (1 - tt) ** 2 * tt * (y0 - 90) + 3 * (1 - tt) * tt ** 2 * 470 + tt ** 3 * 432
-            f.circle(bx, by, 9, HEAT, WHITE, 2)
-    for x, y in ((540, 400), (600, 372), (660, 396), (575, 300), (640, 268)):
-        f.circle(x, y, 8, HEAT, WHITE, 2)
-    # warm indoor air rising
-    f.block_arrow(500, 300, 500, 216, HEAT_LIGHT, 12, 28, 22)
     return f.svg()
 
 
@@ -183,9 +179,9 @@ FIGURES = {"hero": hero, "lahteet": lahteet, "painotus": painotus, "etaisyys": e
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
     "hero": "decorative",
-    "lahteet": "reveals: the Finnish average dose by source (STUK 2023): radon 4,1 of 5,9 mSv/a",
+    "lahteet": "reveals: the Finnish average dose by source (STUK-A263, 2020): radon about 4 of 5,9 mSv/a",
     "painotus": "reveals: the same 1 mGy gives 1 mSv from gamma and 20 mSv from alpha (w_R)",
     "etaisyys": "reveals: 1, 4 and 9 squares at r, 2r, 3r: the dose rate 1, 1/4, 1/9",
-    "suoja": "reveals: 40 µSv/h halving every 6,0 mm of lead: 20, 10, 5 at 6, 12, 18 mm",
+    "suoja": "reveals: 40 µSv/h halving every d½ = 6,0 mm of lead: 20, 10, 5 at 6, 12, 18 mm",
     "vaimennus": "safe: dose rate behind 0–25 cm of concrete from 80 µSv/h on a 1 cm grid; the half-value layer is to be read off",
 }

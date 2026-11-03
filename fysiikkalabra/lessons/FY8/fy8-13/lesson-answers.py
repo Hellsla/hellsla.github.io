@@ -1,10 +1,12 @@
 """Numbers of the lesson text and inquiry.json for fy8-13, computed from their data (python -I lesson-answers.py); the
 exercises' answers are in answers.py.
 Absorbed dose D = E / m (Gy = J/kg); equivalent dose H_T = w_R D_T; effective dose H_E = sum of w_T H_T (Sv);
-dose H = Hdot t; point source Hdot2 = Hdot1 (r1 / r2)^2; shield Hdot = Hdot0 (1/2)^(x / d½).
+dose H = Hdot t; point source Hdot2 = Hdot1 (r1 / r2)^2; shield Hdot = Hdot0 (1/2)^(d / d½) (puoliintumispaksuus d½,
+written d_{1/2} as in the chapter Ionisoiva säteily ja elimistö).
 Weighting factors ICRP 103 (2007): w_R photons and electrons 1, alpha 20; w_T lungs 0,12, thyroid 0,04.
-Finnish figures (STUK, estimate published 2023, rounded): average effective dose 5,9 mSv/a: radon 4,1, health care 0,6,
-ground and building materials 0,5, radioactive substances in the body 0,4, cosmic 0,3; other sources under 0,1.
+Finnish figures (STUK-A263, 2020: the situation in 2018, rounded): average effective dose 5,9 mSv/a: indoor radon about 4,
+other natural radiation (ground, buildings, cosmic, the body's own substances) about 1,1, medical use 0,76 -> about 0,8;
+artificial sources (nuclear power, Chernobyl fallout, weapons tests) under 0,1. STUK's average indoor radon 94 Bq/m³.
 The simulation's model (assets/sims/fy8/fy8-13/sim.js): a gamma point source with 40,0 µSv/h at 1,0 m, lead half-value
 layer 6,0 mm; the dosimeter's window catches the share A / (4 pi r^2) of the photons.
 Prints {id: number} as JSON on the last line."""
@@ -32,11 +34,12 @@ for x in (0, 3, 6, 12, 18, 24, 30):
 a["sim-dose-2m-30min"] = hdot(2.0, 0) * 30 / 60
 
 # ---------------------------------------------------------------- Ydinajatus: the Finnish average dose (STUK 2023)
-SOURCES = {"radon": 4.1, "terveydenhuolto": 0.6, "maaperä": 0.5, "elimistö": 0.4, "avaruus": 0.3}
+SOURCES = {"radon": 4.0, "luonto": 1.1, "terveydenhuolto": 0.8}
 a["total"] = sum(SOURCES.values())                         # 5,9 mSv
-a["radon-share-%"] = 100 * SOURCES["radon"] / a["total"]   # 69,5 % -> about 70 %, "yli kaksi kolmasosaa"
-a["natural"] = a["total"] - SOURCES["terveydenhuolto"]     # 5,3 mSv natural (other sources under 0,1 left out)
-a["natural-share-%"] = 100 * a["natural"] / a["total"]     # 89,8 % -> about 90 %
+a["radon-share-%"] = 100 * SOURCES["radon"] / a["total"]   # 67,8 % -> about two thirds
+a["natural"] = SOURCES["radon"] + SOURCES["luonto"]        # 5,1 mSv natural
+a["natural-share-%"] = 100 * a["natural"] / a["total"]     # 86,4 % -> about 85 %
+a["radon-vs-medical"] = SOURCES["radon"] / SOURCES["terveydenhuolto"]   # 5,0 -> about five times
 # 1 Gy in water: temperature rise ΔT = D / c = 1 J/kg / 4190 J/(kg K) = 0,000239 K
 a["1Gy-heating-K"] = 1 / 4190
 # sum of the tissue weighting factors of ICRP 103 is 1
@@ -79,5 +82,5 @@ a["chk-25cm"] = CHK_H0 * 0.5 ** (25 / CHK_D)               # 2,5 µSv/h at 25 cm
 a["chk"] = CHK_D
 
 # ---------------------------------------------------------------- Tarkista 3 and hook: radon
-a["radon-300"] = 4.1 * 300 / 94                            # 13,1 mSv at the reference level, if dose ∝ concentration
+a["radon-300"] = 4.0 * 300 / 94                            # 12,8 mSv at the reference level, if dose ∝ concentration
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

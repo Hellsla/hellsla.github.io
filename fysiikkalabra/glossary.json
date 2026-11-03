@@ -4249,17 +4249,6 @@
     "locked": false
   },
   {
-    "term": "puoliarvokerros",
-    "definition": "Suoja-aineen paksuus, joka puolittaa gammasäteilyn annosnopeuden. Jokainen uusi samanpaksuinen kerros puolittaa sen uudelleen, joten mikään kerros ei pysäytä gammasäteilyä kokonaan.",
-    "lessons": [
-      "fy8-13"
-    ],
-    "see_also": [
-      "annosnopeus"
-    ],
-    "locked": false
-  },
-  {
     "term": "annosnopeus",
     "definition": "Säteilyannos aikayksikössä, esimerkiksi mikrosievertiä tunnissa ($\\mu\\text{Sv/h}$). Vakioannosnopeudella ajassa $t$ kertyy annos $H = \\dot{H} t$.",
     "lessons": [
@@ -4267,7 +4256,7 @@
     ],
     "see_also": [
       "efektiivinen annos",
-      "puoliarvokerros"
+      "puoliintumispaksuus"
     ],
     "locked": false
   },
@@ -4359,7 +4348,8 @@
     "term": "puoliintumispaksuus",
     "definition": "Ainekerroksen paksuus $d_{1/2}$, joka päästää läpi puolet gamma- tai röntgensäteilystä: $I = I_0 \\left(\\tfrac{1}{2}\\right)^{d/d_{1/2}}$. Se riippuu aineesta ja säteilyn energiasta.",
     "lessons": [
-      "fy8-12"
+      "fy8-12",
+      "fy8-13"
     ],
     "see_also": [
       "läpäisykyky"

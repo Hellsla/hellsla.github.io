@@ -16,7 +16,7 @@
     "taustasäteily",
     "radon",
     "annosnopeus",
-    "puoliarvokerros"
+    "puoliintumispaksuus"
   ],
   "sim": true,
   "solutions": "all",

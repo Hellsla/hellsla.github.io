@@ -1,5 +1,5 @@
 // fy8-13 Säteilyannos ja säteilyturvallisuus Suomessa: protection from a gamma point source by distance, shielding
-// and time. A model source (a cesium-137 capsule in a lead pot open towards the dosimeter) gives the dose rate
+// and time. A model source (a gamma capsule in a lead pot open towards the dosimeter) gives the dose rate
 // 40,0 µSv/h at 1,0 m. The dosimeter's window (area A) catches the share A / (4 pi r^2) of the photons sent out in all
 // directions, so the dose rate falls as 1 / r^2; a lead plate of thickness x lets through the share (1/2)^(x / d½)
 // with the half-value layer d½ = 6,0 mm (narrow-beam model, no build-up, no absorption in air, no background).
@@ -107,7 +107,7 @@ new p5((p) => {
       p.stroke(...MUTEDC); p.strokeWeight(1.5); p.drawingContext.setLineDash([6, 5]);
       p.line(SLAB, FLOOR - 156, SLAB, FLOOR); p.drawingContext.setLineDash([]);
     }
-    lab('$x = ' + String(S.x) + '\\,\\text{mm}$', SLAB + w / 2, FLOOR + 3.2 * fh, 'c', INKC);
+    lab('$d = ' + String(S.x) + '\\,\\text{mm}$', SLAB + w / 2, FLOOR + 3.2 * fh, 'c', INKC);
   }
 
   // --- the dosimeter on a stand at r ---
