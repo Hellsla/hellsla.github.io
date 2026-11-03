@@ -16,7 +16,7 @@
       "id": "hook",
       "stage": "herata",
       "type": "hook",
-      "text": "Illalla puhelimen akussa on jäljellä $10\\,\\%$. Kun puhelin kytketään laturiin, varaustaso nousee puolessa tunnissa yli puolenvälin. Viimeiset kymmenen prosenttia vievät kuitenkin lähes yhtä kauan kuin koko alkuosa, ja puhelin tuntuu latauksen aikana lämpimältä. Laturi on koko ajan sama.",
+      "text": "Illalla puhelimen akussa on jäljellä $10\\,\\%$. Kun puhelin kytketään laturiin, varaustaso nousee puolessa tunnissa noin puoleen. Viimeiset kymmenen prosenttia vievät kuitenkin lähes yhtä kauan kuin koko alkuosa, ja puhelin tuntuu latauksen aikana lämpimältä. Laturi on koko ajan sama.",
       "question": "Mikä latauksen aikana muuttuu niin, että akkuun kulkeva virta pienenee, vaikka laturi pysyy samana?"
     },
     {
@@ -110,7 +110,7 @@
       "type": "sim",
       "text": "Siirrä latauksen kestoa ja muuta laturin jännitettä, resistanssia ja alkutilaa. Seuraa virtaa, jännitteitä, varaustasoa ja energiaa.",
       "howto": "*Latauksen kesto* $t$ näyttää tilanteen, kun laturi on ollut kytkettynä $t$ tuntia. Kuvaaja näyttää koko latauksen virran haaleana ja kuluneen osan vahvana, ja nykyhetki on rengastettu. *Laturin jännite* $U_\\text{lat}$ ja *laturin ja johtojen resistanssi* $R$ asetetaan liukusäätimillä. *Varaustaso alussa* kertoo, kuinka suuri osa kapasiteetista on käytettävissä latauksen alkaessa. Violetit nuolet näyttävät virran suunnan sovitusti plusnavalta miinusnavalle, vihreä täyttö kennon varaustason ja oranssi hehku kennon sisäisessä resistanssissa syntyvän sisäenergian. Negatiivinen virta tarkoittaa, että kenno purkautuu laturiin.",
-      "model": "Akkukennon kapasiteetti on $2{,}0\\,\\text{Ah}$ ja sisäinen resistanssi $R_\\text{s} = 0{,}10\\,\\Omega$. Kennon lähdejännite kasvaa tasaisesti varaustason mukana, $3{,}40\\,\\text{V}$:sta tyhjänä $4{,}20\\,\\text{V}$:iin täytenä; todellisen litiumioniakun lähdejännite muuttuu epätasaisemmin. Laturin jännite pysyy vakiona, ja kun kenno on täynnä, laturi katkaisee virran. Laturissa ei ole diodia, joten liian pieni laturin jännite purkaa kennoa, kunnes se on tyhjä. Todellinen puhelimen laturi lataa ensin vakiovirralla ja vasta loppuvaiheessa vakiojännitteellä. Luvut ovat mallin laskemia arvoja, eivät mittauksia.",
+      "model": "Akkukennon kapasiteetti on $2{,}0\\,\\text{Ah}$ ja sisäinen resistanssi $R_\\text{s} = 0{,}10\\,\\Omega$. Kennon lähdejännite kasvaa tasaisesti varaustason mukana, $3{,}40\\,\\text{V}$:sta tyhjänä $4{,}20\\,\\text{V}$:iin täytenä; todellisen litiumioniakun lähdejännite muuttuu epätasaisemmin. Laturin jännite pysyy vakiona, ja kun kenno on täynnä, laturi katkaisee virran. Laturissa ei ole diodia, joten liian pieni laturin jännite purkaa kennoa, kunnes kennon lähdejännite on laskenut laturin jännitteeseen; vasta alle $3{,}40\\,\\text{V}$:n laturi tyhjentää sen. Todellinen puhelimen laturi lataa ensin vakiovirralla ja vasta loppuvaiheessa vakiojännitteellä. Luvut ovat mallin laskemia arvoja, eivät mittauksia.",
       "calc": "Jännitelain mukaan $U_\\text{lat} - RI - R_\\text{s} I - E = 0$, joten\n\n$$I = \\frac{U_\\text{lat} - E}{R + R_\\text{s}}$$\n\nKun kennon läpi kulkee varaus, sen lähdejännite kasvaa $0{,}40\\,\\text{V}$ ampeerituntia kohti, ja virta pienenee sitä mukaa kuin kenno latautuu. Malli laskee virran ja lähdejännitteen yhdessä latauksen alusta hetkeen $t$. Napajännite on $U = E + R_\\text{s} I$. Laturi antaa energian $W_\\text{lat} = U_\\text{lat}\\,\\Delta Q$, kun kennon läpi on kulkenut varaus $\\Delta Q$. Kennoon varastoituu kemiallisena energiana lähdejännitteen osuus, ja erotus muuttuu resistanssien $R$ ja $R_\\text{s}$ sisäenergiaksi. Hyötysuhde on $\\eta = W_\\text{akku} : W_\\text{lat}$."
     },
     {
@@ -164,7 +164,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 2: liian pieni laturin jännite",
-      "intro": "Testaa ennuste 2. Varaustaso alussa on $80\\,\\%$, ja se, latauksen kesto $0$ ja resistanssi pysyvät vakioina; muuta vain laturin jännitettä. Kirjaa virta ja lähdejännite ainakin kahdella laturin jännitteellä, joista toinen on alle ja toinen yli $4{,}04\\,\\text{V}$, esimerkiksi $3{,}6\\,\\text{V}$, $4{,}0\\,\\text{V}$, $4{,}2\\,\\text{V}$ ja $4{,}6\\,\\text{V}$. Millä laturin jännitteellä virta vaihtaa suuntaa?",
+      "intro": "Testaa ennuste 2. Varaustaso alussa ($80\\,\\%$), latauksen kesto $0$ ja resistanssi pysyvät vakioina; muuta vain laturin jännitettä. Kirjaa virta ja lähdejännite ainakin kahdella laturin jännitteellä, joista toinen on alle ja toinen yli $4{,}04\\,\\text{V}$, esimerkiksi $3{,}6\\,\\text{V}$, $4{,}0\\,\\text{V}$, $4{,}2\\,\\text{V}$ ja $4{,}6\\,\\text{V}$. Millä laturin jännitteellä virta vaihtaa suuntaa?",
       "initial": {
         "t": 0,
         "Ulat": 3.6,
@@ -313,7 +313,7 @@
         },
         {
           "text": "Laskutapa on muuten oikea, mutta akun sisäinen resistanssi pitää jättää pois, koska se on akun sisällä.",
-          "feedback": "Sisäinen resistanssi kuuluu silmukkaan siinä missä laturin resistanssi, ja virta kulkee sen läpi. Sen pois jättäminen muuttaisi tulosta vähän; varsinainen virhe on, että akun lähdejännite $12{,}4\\,\\text{V}$ puuttuu laskusta."
+          "feedback": "Sisäinen resistanssi kuuluu silmukkaan siinä missä laturin resistanssi, ja virta kulkee sen läpi. Sen pois jättäminen muuttaisi tulosta noin $15\\,\\%$; varsinainen virhe on, että akun lähdejännite $12{,}4\\,\\text{V}$ puuttuu laskusta."
         }
       ]
     },
@@ -345,7 +345,7 @@
           "feedback": "Otit häviöt huomioon, mutta vertasit milliampeeritunteja. Akkujen jännitteet ovat erisuuret, joten vertaa energioita $W = UQ$."
         }
       ],
-      "solution": "**Annettu:** varavirtalähde $Q_1 = 10\\,000\\,\\text{mAh}$ ja $U_1 = 3{,}7\\,\\text{V}$, puhelimen akku $Q_2 = 4000\\,\\text{mAh}$ ja $U_2 = 3{,}85\\,\\text{V}$, häviöt $30\\,\\%$ eli puhelimeen päätyy osuus $0{,}70$\n\n**Kysytty:** latauskertojen määrä $N$\n\n**Periaate:** Akkujen jännitteet ovat erisuuret, joten niitä verrataan energian eikä varauksen perusteella. Akun energia on jännite kertaa varaus. Puhelimeen päätyy $70\\,\\%$ varavirtalähteen energiasta, koska loput muuttuvat sisäenergiaksi.\n\n**Kaava:** $W = UQ$ ja $N \\cdot U_2 Q_2 = 0{,}70 \\cdot U_1 Q_1$, josta $N = \\dfrac{0{,}70\\, U_1 Q_1}{U_2 Q_2}$\n\n**Muunnokset:** $Q_1 = 10\\,000\\,\\text{mAh} = 10\\,000 \\cdot 0{,}001\\,\\text{Ah} = 10\\,\\text{Ah}$ ja $Q_2 = 4000\\,\\text{mAh} = 4{,}0\\,\\text{Ah}$\n\n**Sijoitus:** $N = \\dfrac{0{,}70 \\cdot 3{,}7\\,\\text{V} \\cdot 10\\,\\text{Ah}}{3{,}85\\,\\text{V} \\cdot 4{,}0\\,\\text{Ah}} = \\dfrac{25{,}9\\,\\text{Wh}}{15{,}4\\,\\text{Wh}} \\approx 1{,}68$\n\n**Vastaus:** $1{,}7$ kertaa, kaksi merkitsevää numeroa kuten jännitteessä $3{,}7\\,\\text{V}$ ja häviöosuudessa $30\\,\\%$.\n\n**Järkevyys:** Milliampeeritunteja vertaamalla saisi $2{,}5$, mutta puhelimen akun jännite on hieman suurempi ja kolmannes energiasta menee hukkaan, joten kertoja on selvästi vähemmän. Yhden täyden latauksen jälkeen varavirtalähteessä on jäljellä energiaa noin kahteen kolmasosaan toisesta latauksesta."
+      "solution": "**Annettu:** varavirtalähde $Q_1 = 10\\,000\\,\\text{mAh}$ ja $U_1 = 3{,}7\\,\\text{V}$, puhelimen akku $Q_2 = 4000\\,\\text{mAh}$ ja $U_2 = 3{,}85\\,\\text{V}$, häviöt $30\\,\\%$ eli puhelimeen päätyy osuus $0{,}70$\n\n**Kysytty:** latauskertojen määrä $N$\n\n**Periaate:** Akkujen jännitteet ovat erisuuret, joten niitä verrataan energian eikä varauksen perusteella. Akun energia on jännite kertaa varaus. Puhelimeen päätyy $70\\,\\%$ varavirtalähteen energiasta, koska loput muuttuvat sisäenergiaksi.\n\n**Kaava:** $W = UQ$ ja $N \\cdot U_2 Q_2 = 0{,}70 \\cdot U_1 Q_1$, josta $N = \\dfrac{0{,}70\\, U_1 Q_1}{U_2 Q_2}$\n\n**Muunnokset:** $Q_1 = 10\\,000\\,\\text{mAh} = 10\\,000 \\cdot 0{,}001\\,\\text{Ah} = 10\\,\\text{Ah}$ ja $Q_2 = 4000\\,\\text{mAh} = 4{,}0\\,\\text{Ah}$\n\n**Sijoitus:** $N = \\dfrac{0{,}70 \\cdot 3{,}7\\,\\text{V} \\cdot 10\\,\\text{Ah}}{3{,}85\\,\\text{V} \\cdot 4{,}0\\,\\text{Ah}} = \\dfrac{25{,}9\\,\\text{Wh}}{15{,}4\\,\\text{Wh}} \\approx 1{,}68$\n\n**Vastaus:** $1{,}7$ kertaa, kaksi merkitsevää numeroa kuten jännitteessä $3{,}7\\,\\text{V}$ ja häviöosuudessa $30\\,\\%$.\n\n**Järkevyys:** Milliampeeritunteja vertaamalla saisi $2{,}5$, mutta puhelimen akun jännite on hieman suurempi ja lähes kolmannes energiasta menee hukkaan, joten kertoja on selvästi vähemmän. Yhden täyden latauksen jälkeen varavirtalähteessä on jäljellä energiaa noin kahteen kolmasosaan toisesta latauksesta."
     },
     {
       "id": "harjoitukset",
