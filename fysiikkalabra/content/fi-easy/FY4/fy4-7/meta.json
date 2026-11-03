@@ -15,6 +15,24 @@
     "mekaaninen energia",
     "konservatiivinen voima"
   ],
+  "key_concepts": [
+    {
+      "term": "liike-energia",
+      "explain": "Energiaa, joka kappaleella on liikkeen takia. Se kasvaa nopeasti, kun nopeus kasvaa."
+    },
+    {
+      "term": "potentiaalienergia",
+      "explain": "Energiaa, joka kappaleella on korkeuden takia. Sen arvo riippuu siitä, mihin nollataso valitaan."
+    },
+    {
+      "term": "mekaaninen energia",
+      "explain": "Liike-energian ja potentiaalienergian summa."
+    },
+    {
+      "term": "konservatiivinen voima",
+      "explain": "Voima, jonka työ riippuu vain alku- ja loppupaikasta. Paino on tällainen voima, kitka ei ole."
+    }
+  ],
   "sim": true,
   "solutions": "all",
   "image": false

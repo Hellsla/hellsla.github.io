@@ -1,14 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 37f0e60480e34b50
+CONTENT-HASH: 5b15e8259d81d9ea
 
 ## Blocking
 (none)
 
 ## Polish
-- none
+(none)
 
 ## Checked
-- Teaching sequence, levels, step order (given, principle, symbolic, substitution, answer, reasonableness) and activities identical to the reviewed Finnish; nothing added or removed in translation.
-- plain Finnish: short main-clause sentences kept, Finnish symbol subscripts kept.
-- Latest change: inquiry transfer-task solution substitution re-typeset (100·3 °C); matches the Finnish exactly.
-- Task wording keeps what the student must work out undisclosed; hints and feedback repair the same misconceptions as the Finnish.
+batch delta review: key_concepts judged against NOTES.md §12 and the editorial standard (central concepts, plain 1–2 sentence explanations, natural Finnish, physics unchanged); lesson rewordings, photos and captions, experiment/prompt wording and solution diagrams in this diff read clearly and agree with the tasks they touch.

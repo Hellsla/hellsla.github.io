@@ -15,6 +15,20 @@
     "ekstrapolointi",
     "mittausepävarmuus"
   ],
+  "key_concepts": [
+    {
+      "term": "absoluuttinen nollapiste",
+      "explain": "Alin mahdollinen lämpötila. Kaasun paine olisi mallin mukaan nolla tässä lämpötilassa."
+    },
+    {
+      "term": "ekstrapolointi",
+      "explain": "Mittauspisteiden suoraa jatketaan alueelle, jolla ei ole mitattu."
+    },
+    {
+      "term": "mittausepävarmuus",
+      "explain": "Arvio siitä, kuinka paljon mittaustulos voi erota oikeasta arvosta. Se ei ole varma raja."
+    }
+  ],
   "sim": false,
   "solutions": "all",
   "image": false

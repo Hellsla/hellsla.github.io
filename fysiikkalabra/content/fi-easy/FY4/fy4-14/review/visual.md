@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 98d5f7fde9d660fe
+CONTENT-HASH: 46894824552c9f59
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] fy4-14 1280 px: kuva ei kellu oikealle (leveä kuvio lähellä), vaan on sarakkeessa vasemmalla; ei leikkaudu eikä ylitä leveyttä, joten vain huomautus.
+- none
 
 ## Checked
-- batch delta review: opened fy4-14-360-0 and fy4-14-1280-0 captures: photo loads, floats right beside the text at 1280 px or sits in the column (no clipping, no horizontal overflow), at 360 px full column width; caption and alt text natural plain Finnish and consistent with the picture, no unit-bearing numbers needing LaTeX, credit line present under the caption.
+- batch delta review: "Luvun tärkeät käsitteet" panel captured from preview/fi-easy/fy4-14.html at 390 and 1280 px (the review/shots set has no capture of it) and opened — between the opening and stage 1, term bold over its explanation at 390 px, two-column at 1280 px, no clipping, no horizontal overflow, no KaTeX error; the edited lesson.md/inquiry.json sentences read in their diff (prose only, no new maths); top-390 opened in a montage (read-aloud "Kuuntele" button under the title, layout intact).

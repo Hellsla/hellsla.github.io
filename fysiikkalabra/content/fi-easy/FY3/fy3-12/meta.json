@@ -18,6 +18,28 @@
     "kasvihuoneilmiö",
     "U-arvo"
   ],
+  "key_concepts": [
+    {
+      "term": "johtuminen",
+      "explain": "Lämpö siirtyy aineen läpi hiukkasesta toiseen."
+    },
+    {
+      "term": "konvektio",
+      "explain": "Lämmin neste tai kaasu virtaa ja kuljettaa energiaa mukanaan."
+    },
+    {
+      "term": "lämpösäteily",
+      "explain": "Kappale lähettää säteilyä, joka kuljettaa energiaa myös tyhjän tilan läpi."
+    },
+    {
+      "term": "energiatasapaino",
+      "explain": "Kappaleeseen tulee yhtä paljon energiaa kuin siitä lähtee, joten sen lämpötila pysyy samana."
+    },
+    {
+      "term": "kasvihuoneilmiö",
+      "explain": "Ilmakehän kaasut hidastavat lämpösäteilyn pääsyä avaruuteen. Siksi maanpinta pysyy lämpimämpänä."
+    }
+  ],
   "sim": false,
   "image": false
 }

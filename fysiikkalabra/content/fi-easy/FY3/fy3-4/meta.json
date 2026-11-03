@@ -19,6 +19,28 @@
     "tiheys",
     "ylipaine"
   ],
+  "key_concepts": [
+    {
+      "term": "paine",
+      "explain": "Kertoo, kuinka suuri voima kohdistuu pintaan pinta-alaa kohti."
+    },
+    {
+      "term": "pinta-ala",
+      "explain": "Kertoo, kuinka suuri jokin pinta on."
+    },
+    {
+      "term": "tiheys",
+      "explain": "Kertoo, kuinka paljon massaa on tilavuusyksikköä kohti."
+    },
+    {
+      "term": "hydrostaattinen paine",
+      "explain": "Nesteen painosta syntyvä paine. Se kasvaa, kun mennään syvemmälle."
+    },
+    {
+      "term": "ilmanpaine",
+      "explain": "Ilmakehän ilman painosta syntyvä paine. Se vaikuttaa kaikkiin pintoihin ympärillämme."
+    }
+  ],
   "sim": true,
   "image": false
 }

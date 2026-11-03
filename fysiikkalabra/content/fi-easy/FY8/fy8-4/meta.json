@@ -14,6 +14,20 @@
     "Comptonin ilmiö",
     "kaksoisrakokoe"
   ],
+  "key_concepts": [
+    {
+      "term": "kaksoisrakokoe",
+      "explain": "Koe, jossa valo tai elektronit kulkevat kahden kapean raon läpi. Varjostimelle syntyy kirkkaita ja tummia raitoja."
+    },
+    {
+      "term": "Comptonin ilmiö",
+      "explain": "Röntgensäteily siroaa aineesta, ja sironneen säteilyn aallonpituus on pidempi kuin tulevan säteilyn."
+    },
+    {
+      "term": "aalto-hiukkasdualismi",
+      "explain": "Samalla kohteella, esimerkiksi fotonilla tai elektronilla, on sekä aalto- että hiukkasominaisuuksia."
+    }
+  ],
   "sim": true,
   "solutions": "all",
   "image": false
