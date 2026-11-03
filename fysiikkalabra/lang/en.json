@@ -325,7 +325,19 @@
     "rubric_total": "Self-assessed points: {{got}} / {{max}}",
     "rubric_partial": "Self-assessed points: {{got}} / {{max}} ({{left}} items not assessed)",
     "criteria_all": "Your answer contains all the key points of the model answer.",
-    "criteria_missing": "Add these points to your answer and compare again:"
+    "criteria_missing": "Add these points to your answer and compare again:",
+    "ra_listen": "Listen",
+    "ra_pause": "Pause",
+    "ra_resume": "Continue",
+    "ra_stop": "Stop listening",
+    "ra_prev": "Previous sentence",
+    "ra_next": "Next sentence",
+    "ra_speed": "Speech rate",
+    "ra_slow": "slow",
+    "ra_normal": "normal",
+    "ra_fast": "fast",
+    "ra_bar": "Read aloud",
+    "ra_no_voice": "Your device has no English voice, so the browser reads with another voice. You can add an English voice in your device's language settings."
   },
   "sims": {
     "fy2-2": {
@@ -1713,5 +1725,259 @@
     "module_lead": "Review this module's concepts and definitions with flashcards in Käsitetakomo (in Finnish). Choose a topic there or combine several.",
     "module_link": "Review this module's concepts (in Finnish)",
     "lesson_link": "Review this chapter's concepts in Käsitetakomo (in Finnish)"
+  },
+  "speech": {
+    "_about": "Read aloud (templates/readaloud.js, teacher 2026-11-03): how a formula is spoken. rate: default speech rate; joiner: how a product of units is joined (watt hours); units: [singular, plural]; per_unit: the only unit of a denominator as a whole phrase; area/volume go before a metre (square metres).",
+    "rate": 1,
+    "joiner": " ",
+    "words": {
+      "equals": "equals",
+      "plus": "plus",
+      "minus": "minus",
+      "times": "times",
+      "over": "over",
+      "divided": "divided by",
+      "per": "per",
+      "approx": "approximately",
+      "neq": "is not equal to",
+      "lt": "is less than",
+      "gt": "is greater than",
+      "le": "is less than or equal to",
+      "ge": "is greater than or equal to",
+      "pm": "plus or minus",
+      "to": "tends to",
+      "so": "so",
+      "propto": "is proportional to",
+      "infinity": "infinity",
+      "sum": "sum",
+      "integral": "integral",
+      "parallel": "is parallel to",
+      "perp": "is perpendicular to",
+      "sqrt": "square root of",
+      "vector": "vector",
+      "squared": "squared",
+      "cubed": "cubed",
+      "power": "to the power",
+      "degrees": "degrees",
+      "celsius": "degrees Celsius",
+      "percent": "percent",
+      "area": "square ",
+      "volume": "cubic ",
+      "formula": "formula"
+    },
+    "greek": {
+      "alpha": "alpha",
+      "beta": "beta",
+      "gamma": "gamma",
+      "delta": "delta",
+      "epsilon": "epsilon",
+      "zeta": "zeta",
+      "eta": "eta",
+      "theta": "theta",
+      "kappa": "kappa",
+      "lambda": "lambda",
+      "mu": "mu",
+      "nu": "nu",
+      "xi": "xi",
+      "pi": "pi",
+      "rho": "rho",
+      "sigma": "sigma",
+      "tau": "tau",
+      "phi": "phi",
+      "chi": "chi",
+      "psi": "psi",
+      "omega": "omega"
+    },
+    "functions": {
+      "sin": "sine",
+      "cos": "cosine",
+      "tan": "tangent",
+      "arcsin": "arc sine",
+      "arccos": "arc cosine",
+      "arctan": "arc tangent",
+      "log": "log",
+      "lg": "log",
+      "ln": "natural log",
+      "exp": "e to the power",
+      "lim": "limit",
+      "min": "minimum",
+      "max": "maximum"
+    },
+    "units": {
+      "m": [
+        "metre",
+        "metres"
+      ],
+      "s": [
+        "second",
+        "seconds"
+      ],
+      "g": [
+        "gram",
+        "grams"
+      ],
+      "N": [
+        "newton",
+        "newtons"
+      ],
+      "J": [
+        "joule",
+        "joules"
+      ],
+      "W": [
+        "watt",
+        "watts"
+      ],
+      "Pa": [
+        "pascal",
+        "pascals"
+      ],
+      "K": [
+        "kelvin",
+        "kelvins"
+      ],
+      "°C": [
+        "degree Celsius",
+        "degrees Celsius"
+      ],
+      "C": [
+        "coulomb",
+        "coulombs"
+      ],
+      "V": [
+        "volt",
+        "volts"
+      ],
+      "A": [
+        "ampere",
+        "amperes"
+      ],
+      "Ω": [
+        "ohm",
+        "ohms"
+      ],
+      "Hz": [
+        "hertz",
+        "hertz"
+      ],
+      "h": [
+        "hour",
+        "hours"
+      ],
+      "min": [
+        "minute",
+        "minutes"
+      ],
+      "l": [
+        "litre",
+        "litres"
+      ],
+      "L": [
+        "litre",
+        "litres"
+      ],
+      "mol": [
+        "mole",
+        "moles"
+      ],
+      "eV": [
+        "electronvolt",
+        "electronvolts"
+      ],
+      "Wh": [
+        "watt hour",
+        "watt hours"
+      ],
+      "T": [
+        "tesla",
+        "teslas"
+      ],
+      "F": [
+        "farad",
+        "farads"
+      ],
+      "H": [
+        "henry",
+        "henries"
+      ],
+      "Wb": [
+        "weber",
+        "webers"
+      ],
+      "rad": [
+        "radian",
+        "radians"
+      ],
+      "Bq": [
+        "becquerel",
+        "becquerels"
+      ],
+      "Sv": [
+        "sievert",
+        "sieverts"
+      ],
+      "Gy": [
+        "gray",
+        "grays"
+      ],
+      "u": [
+        "atomic mass unit",
+        "atomic mass units"
+      ],
+      "bar": [
+        "bar",
+        "bars"
+      ],
+      "atm": [
+        "atmosphere",
+        "atmospheres"
+      ],
+      "cal": [
+        "calorie",
+        "calories"
+      ],
+      "dB": [
+        "decibel",
+        "decibels"
+      ],
+      "%": [
+        "percent",
+        "percent"
+      ],
+      "°": [
+        "degree",
+        "degrees"
+      ],
+      "lx": [
+        "lux",
+        "lux"
+      ],
+      "lm": [
+        "lumen",
+        "lumens"
+      ],
+      "cd": [
+        "candela",
+        "candelas"
+      ]
+    },
+    "prefixes": {
+      "T": "tera",
+      "G": "giga",
+      "M": "mega",
+      "k": "kilo",
+      "h": "hecto",
+      "d": "deci",
+      "c": "centi",
+      "m": "milli",
+      "µ": "micro",
+      "n": "nano",
+      "p": "pico"
+    },
+    "per_unit": {
+      "s": "per second",
+      "h": "per hour",
+      "min": "per minute"
+    }
   }
 }
