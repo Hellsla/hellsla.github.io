@@ -1,0 +1,349 @@
+{
+  "version": 1,
+  "contribution": "Soveltava luku: aaltoliikkeen perusideat (heijastuminen rajapinnalta, $v = f\\lambda$, pitkittäinen ja poikittainen aalto) sovelletaan ultraäänikuvaukseen, kaikuluotaukseen, maanjäristysaaltoihin ja tsunamiin: syvyys kaiun kulkuajasta, A-kuvauksen lukeminen, taajuuden valinta, geelin tarve, järistyksen etäisyys S–P-aikaerosta ja nestemäinen ulkoydin.",
+  "learn": [
+    "laskemaan kaiun kulkuajasta rajapinnan syvyyden ja lukemaan ultraäänilaitteen kaikukäyrää.",
+    "selittämään, miten ultraäänen taajuus vaikuttaa kuvan tarkkuuteen ja kuvaussyvyyteen.",
+    "määrittämään maanjäristyksen etäisyyden P- ja S-aallon saapumisaikojen erosta."
+  ],
+  "prior": [
+    "Aallon nopeus, taajuus ja aallonpituus liittyvät toisiinsa yhtälöllä $v = f\\lambda$, ja aalto voi olla poikittainen tai pitkittäinen (luku *Mekaaninen aaltoliike*)",
+    "Aalto heijastuu osittain kahden aineen rajapinnalta, ja este taivuttaa aaltoa sitä enemmän, mitä suurempi aallonpituus on esteeseen verrattuna (luku *Aaltojen heijastuminen ja diffraktio*)",
+    "Ääni on pitkittäistä aaltoliikettä, ja ihminen kuulee taajuudet noin $20\\,\\text{Hz}$:stä $20\\,\\text{kHz}$:iin (luku *Äänen ominaisuudet*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Tutkimushuoneessa potilas makaa selällään. Hoitaja levittää vatsan iholle kylmää, läpikuultavaa geeliä ja painaa sen päälle kämmenen kokoisen anturin. Näytölle piirtyy harmaa viuhka, jossa erottuvat elimien reunat. Anturi ei lähetä valoa eikä röntgensäteilyä. Se lähettää ääntä, jota korva ei kuule, ja kuuntelee kaikuja.",
+      "question": "Miten pelkistä kaiuista voidaan päätellä, kuinka syvällä kehossa jokin rakenne on, ja mihin geeliä tarvitaan?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Kertaa: aallonpituus",
+      "prompt": "Lepakko lähettää äännähdyksen, jonka taajuus on $40\\,\\text{kHz}$. Ääni etenee ilmassa nopeudella $343\\,\\text{m/s}$. Mikä on äännähdyksen aallonpituus?",
+      "choices": [
+        {
+          "text": "noin $8{,}6\\,\\text{mm}$",
+          "correct": true,
+          "feedback": "Oikein. Yhtälöstä $v = f\\lambda$ saadaan $\\lambda = \\tfrac{v}{f} = \\tfrac{343\\,\\text{m/s}}{40\\,000\\,\\text{Hz}} \\approx 0{,}0086\\,\\text{m}$ (luku *Mekaaninen aaltoliike*). Aallonpituus on samaa suuruusluokkaa kuin hyönteinen, ja tämä selittää tänään, miksi lepakot käyttävät ultraääntä."
+        },
+        {
+          "text": "noin $1{,}4 \\cdot 10^{7}\\,\\text{m}$",
+          "feedback": "Kerroit nopeuden taajuudella. Yhtälössä $v = f\\lambda$ aallonpituus on nopeus jaettuna taajuudella, $\\lambda = \\tfrac{v}{f}$. Suuri taajuus tarkoittaa lyhyttä aallonpituutta, ei pitkää (luku *Mekaaninen aaltoliike*)."
+        },
+        {
+          "text": "noin $117\\,\\text{m}$",
+          "feedback": "Jaoit taajuuden nopeudella, ja tuloksen yksikkö on silloin $1/\\text{m}$, ei metri. Aallonpituus on $\\lambda = \\tfrac{v}{f}$: nopeus jaettuna taajuudella (luku *Mekaaninen aaltoliike*)."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 1: kuinka syvällä?",
+      "prompt": "Ultraäänilaite lähettää pulssin iholta kehoon hetkellä $t = 0$. Rajapinnalta heijastunut kaiku palaa anturiin $65\\,\\mu\\text{s}$:n kuluttua. Ääni etenee kudoksessa nopeudella $1540\\,\\text{m/s}$. Kuinka syvällä ihon pinnasta rajapinta on?",
+      "justify": true,
+      "reveal": {
+        "after": "teoria-osa",
+        "pending": "Palaute avautuu, kun olet tutkinut kaikukäyrän ja Teoriatiivistelmä on näkyvissä."
+      },
+      "choices": [
+        {
+          "text": "noin $10\\,\\text{cm}$",
+          "feedback": "Tulo $v t = 1540\\,\\text{m/s} \\cdot 65\\,\\mu\\text{s} \\approx 0{,}10\\,\\text{m}$ on koko matka, jonka pulssi kulki. Pulssi kulki kuitenkin rajapintaan ja takaisin, joten rajapinta on puolet tästä, noin $5{,}0\\,\\text{cm}$:n syvyydellä: $d = \\tfrac{vt}{2}$."
+        },
+        {
+          "text": "noin $5{,}0\\,\\text{cm}$",
+          "correct": true,
+          "feedback": "Oikein. Pulssi kulkee rajapintaan ja takaisin, joten se etenee kaiun kulkuaikana kaksi kertaa syvyyden: $d = \\tfrac{vt}{2} = \\tfrac{1540\\,\\text{m/s} \\cdot 65 \\cdot 10^{-6}\\,\\text{s}}{2} \\approx 0{,}050\\,\\text{m}$. Kaikukäyrässä jokainen piikki muutettiin syvyydeksi samalla tavalla."
+        },
+        {
+          "text": "noin $2{,}5\\,\\text{cm}$",
+          "feedback": "Jaoit matkan neljällä. Pulssi kulkee rajapintaan ja takaisin, eli matkan kahdesti, joten tulo $v t \\approx 10\\,\\text{cm}$ jaetaan vain kahdella: $d \\approx 5{,}0\\,\\text{cm}$."
+        },
+        {
+          "text": "Syvyyttä ei voi päätellä, ellei tiedetä myös ultraäänen taajuutta.",
+          "feedback": "Taajuus vaikuttaa aallonpituuteen ja kuvan tarkkuuteen, mutta ei pulssin nopeuteen. Kun nopeus ja kulkuaika tunnetaan, syvyys saadaan yhtälöstä $d = \\tfrac{vt}{2} \\approx 5{,}0\\,\\text{cm}$."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 2: miksi geeliä?",
+      "layout": "models",
+      "prompt": "Kolme opiskelijaa selittää, miksi anturin ja ihon väliin levitetään geeliä. Mikä selitys on mielestäsi oikea?",
+      "justify": true,
+      "reveal": {
+        "after": "teoria-osa",
+        "pending": "Palaute avautuu, kun olet tutkinut rajapintojen taulukon ja Teoriatiivistelmä on näkyvissä."
+      },
+      "choices": [
+        {
+          "text": "Geeli on liukaste: anturi liikkuu iholla kitkatta, ja kuva pysyy terävänä, kun anturia siirretään.",
+          "feedback": "Geeli kyllä vähentää kitkaa, mutta se ei selitä, miksi ilman geeliä kuvaa ei synny lainkaan, vaikka anturi pidettäisiin paikallaan. Taulukon mukaan ilman ja ihon rajapinnalta heijastuu noin $99{,}9\\,\\%$ pulssista: ilmakerros heijastaa lähes kaiken takaisin jo iholta."
+        },
+        {
+          "text": "Ilman ja ihon rajapinnalta lähes koko pulssi heijastuisi takaisin. Geeli syrjäyttää ilman, ja pulssi pääsee kehoon.",
+          "correct": true,
+          "feedback": "Oikein. Taulukon mukaan ilman ja ihon rajapinnalta heijastuu noin $99{,}9\\,\\%$, geelin ja ihon rajapinnalta vain noin $0{,}2\\,\\%$. Ilma ja kudos ovat äänen etenemisen kannalta hyvin erilaiset aineet, geeli ja kudos lähes samanlaiset."
+        },
+        {
+          "text": "Geeli johtaa anturin sähköä ihoon, ja sähkö kulkee kudoksessa ultraäänen mukana.",
+          "feedback": "Ultraääni on mekaaninen aalto, ei sähkövirta: anturi värähtelee ja panee väliaineen värähtelemään. Geeli tarvitaan, koska ilman ja ihon rajapinnalta heijastuisi noin $99{,}9\\,\\%$ pulssista takaisin."
+        }
+      ]
+    },
+    {
+      "id": "rajapinnat",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Tutki: kuinka paljon heijastuu?",
+      "source": "model",
+      "text": "Taulukossa on, kuinka suuri osa ultraäänipulssin energiasta heijastuu kohtisuoraan osuvana eri rajapinnoilta. Prosentit on laskettu aineiden tyypillisistä akustisista ominaisuuksista, ja ne ovat likiarvoja. Taulukossa on myös äänen nopeus aineissa.\n\n| Rajapinta | Heijastuu noin |\n| --- | --- |\n| geeli – iho | $0{,}2\\,\\%$ |\n| rasva – lihas | $1\\,\\%$ |\n| pehmytkudos – luu | $40\\,\\%$ |\n| ilma – iho | $99{,}9\\,\\%$ |\n\n| Aine | Äänen nopeus |\n| --- | --- |\n| ilma | $343\\,\\text{m/s}$ |\n| rasva | $1450\\,\\text{m/s}$ |\n| pehmytkudos keskimäärin | $1540\\,\\text{m/s}$ |\n| lihas | $1580\\,\\text{m/s}$ |\n| luu | noin $3500\\,\\text{m/s}$ |",
+      "question": {
+        "type": "choice",
+        "prompt": "Kaikukuvassa näkyy usein luun pinta kirkkaana viivana ja sen alla musta varjo, josta ei palaa kaikuja. Mikä taulukon tieto selittää tämän parhaiten?",
+        "choices": [
+          {
+            "text": "Luun ja pehmytkudoksen rajapinnalta heijastuu noin $40\\,\\%$, joten kaiku on voimakas ja luun taakse pääsee vain vähän ääntä.",
+            "correct": true,
+            "feedback": "Oikein. Suuri heijastus tekee luun pinnasta kirkkaan, ja kun lisäksi luu vaimentaa läpi pääsevää ääntä voimakkaasti, syvemmältä ei palaa kaikuja: kuvaan jää varjo. Pehmytkudosten rajapinnoilta heijastuu vain noin prosentti, joten pulssi jatkaa niiden läpi."
+          },
+          {
+            "text": "Ääni etenee luussa yli kaksi kertaa niin nopeasti kuin kudoksessa, joten luun takaa palaavat kaiut tulevat liian aikaisin ja jäävät näkymättä.",
+            "feedback": "Nopeampi eteneminen vain lyhentäisi kulkuaikaa, ja laite piirtäisi kaiut hieman väärään syvyyteen; se ei poista kaikuja. Varjo syntyy, koska noin $40\\,\\%$ heijastuu luun pinnalta ja luu vaimentaa loput voimakkaasti."
+          },
+          {
+            "text": "Luun pinnalta heijastuu yhtä vähän kuin rasvan ja lihaksen rajapinnalta, mutta luu on niin syvällä, että kaiku heikkenee matkalla.",
+            "feedback": "Taulukon mukaan luun pinnalta heijastuu noin $40\\,\\%$, rasvan ja lihaksen rajapinnalta vain noin $1\\,\\%$. Luun pinta näkyy kirkkaana juuri voimakkaan heijastuksen vuoksi."
+          }
+        ]
+      }
+    },
+    {
+      "id": "ascan",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Tutki: kaikukäyrän lukeminen",
+      "source": "example",
+      "figure": "fy5-17/a-scan",
+      "text": "Kuvaajassa on reiden A-kuvaus eli kaikukäyrä. Anturi on iholla, ja pulssi lähtee hetkellä $t = 0$. Kaikki kaiut ovat samassa suunnassa ihon alla. Kaiku A tulee rasvan ja lihaksen rajapinnalta, kaiku B kahden lihaksen välisestä kalvosta ja kaiku C reisiluun pinnalta. Laite olettaa, että ääni etenee kudoksessa nopeudella $1540\\,\\text{m/s}$.",
+      "question": {
+        "type": "numeric",
+        "prompt": "Lue kaikujen B ja C hetket kuvaajasta. Kuinka paksu on kudoskerros rajapintojen B ja C välissä? Vastaa senttimetreinä.",
+        "answer": 3.08,
+        "unit": "cm",
+        "tolerance": 0.03,
+        "hints": [
+          "Mitä matkaa kaikujen B ja C aikaero vastaa? Pulssi kulkee kerroksen läpi kahdesti.",
+          "Kaikujen aikaero on $\\Delta t = 90\\,\\mu\\text{s} - 50\\,\\mu\\text{s} = 40\\,\\mu\\text{s}$, ja kerroksen paksuus on $\\tfrac{v \\Delta t}{2}$.",
+          "$\\tfrac{1540\\,\\text{m/s} \\cdot 40 \\cdot 10^{-6}\\,\\text{s}}{2} = 0{,}0308\\,\\text{m}$"
+        ],
+        "mistakes": [
+          {
+            "value": 6.16,
+            "feedback": "Tämä on matka, jonka pulssi kulkee aikaerossa $40\\,\\mu\\text{s}$. Pulssi kulkee kerroksen läpi alas ja takaisin ylös, joten kerroksen paksuus on puolet tästä."
+          },
+          {
+            "value": 6.93,
+            "feedback": "Tämä on rajapinnan C syvyys ihon pinnasta. Kerroksen paksuus saadaan kaikujen B ja C aikaerosta, ei pelkästä C:n hetkestä."
+          }
+        ],
+        "solution": "**Annettu:** äänen nopeus kudoksessa $v = 1540\\,\\text{m/s}$; kuvaajasta kaiun B hetki ja kaiun C hetki\n\n**Kysytty:** rajapintojen B ja C välisen kerroksen paksuus $\\Delta d$ senttimetreinä\n\n**Periaate:** Kaiun kulkuaikana pulssi kulkee rajapintaan ja takaisin, joten syvyys on $d = \\tfrac{vt}{2}$. Kaikujen aikaero on aika, jonka pulssi tarvitsee kulkeakseen kerroksen läpi alas ja takaisin, kun nopeus on koko matkalla sama.\n\n**Kuvaajan lukeminen:** Kaiun B piikki on apuviivalla $50\\,\\mu\\text{s}$ ja kaiun C piikki apuviivalla $90\\,\\mu\\text{s}$. Aikaero on $\\Delta t = 90\\,\\mu\\text{s} - 50\\,\\mu\\text{s} = 40\\,\\mu\\text{s}$.\n\n**Kaava:** $d_\\text{C} - d_\\text{B} = \\dfrac{v t_\\text{C}}{2} - \\dfrac{v t_\\text{B}}{2}$, joten $\\Delta d = \\dfrac{v \\Delta t}{2}$\n\n**Muunnokset:** $40\\,\\mu\\text{s} = 40 \\cdot 10^{-6}\\,\\text{s}$; lopuksi $1\\,\\text{m} = 100\\,\\text{cm}$.\n\n**Sijoitus:** $\\Delta d = \\dfrac{1540\\,\\text{m/s} \\cdot 40 \\cdot 10^{-6}\\,\\text{s}}{2} = 0{,}0308\\,\\text{m} = 3{,}08\\,\\text{cm}$\n\n**Vastaus:** $3{,}1\\,\\text{cm}$, kaksi merkitsevää numeroa, koska kuvaajasta luettu aikaero $40\\,\\mu\\text{s}$ tunnetaan noin mikrosekunnin tarkkuudella.\n\n**Järkevyys:** Rajapinnat ovat syvyyksillä $d_\\text{B} = 3{,}85\\,\\text{cm}$ ja $d_\\text{C} = 6{,}93\\,\\text{cm}$, ja niiden erotus on sama $3{,}08\\,\\text{cm}$. Muutaman senttimetrin lihaskerros reisiluun päällä on aikuisella uskottava."
+      }
+    },
+    {
+      "id": "seismi",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Tutki: kolme seismografiasemaa",
+      "source": "model",
+      "figure": "fy5-17/seismogrammit",
+      "text": "Maanjäristyksestä lähtee kaksi Maan sisäosien läpi etenevää aaltoa: P-aalto ja S-aalto. Kuvaajassa on kolmen aseman seismogrammit samasta järistyksestä. Asemat ovat eri etäisyyksillä järistyksestä, ja aika on laskettu järistyksen hetkestä. Arvot on laskettu mallista, jossa aallot kulkevat suoraan ja tasaisilla nopeuksilla.",
+      "question": {
+        "type": "numeric",
+        "prompt": "Lue jokaiselta asemalta P- ja S-aallon saapumisaikojen ero $\\Delta t$. Miten se riippuu aseman etäisyydestä? Kuinka monta kilometriä etäisyyttä vastaa yksi sekunti aikaeroa? Vastaa yksikössä km/s.",
+        "answer": 8.4,
+        "unit": "km/s",
+        "tolerance": 0.03,
+        "hints": [
+          "Lue jokaiselta riviltä P:n ja S:n alkuhetki ja laske niiden erotus. Vertaa erotuksia etäisyyksiin.",
+          "Aikaerot ovat $10\\,\\text{s}$, $20\\,\\text{s}$ ja $30\\,\\text{s}$. Kun etäisyys kaksinkertaistuu, myös aikaero kaksinkertaistuu.",
+          "$\\tfrac{84\\,\\text{km}}{10\\,\\text{s}}$"
+        ],
+        "mistakes": [
+          {
+            "value": 6.0,
+            "feedback": "Jaoit etäisyyden P-aallon saapumisajalla, ja sait P-aallon nopeuden. Kysymys koskee saapumisaikojen eroa: jaa etäisyys S- ja P-aallon aikaerolla."
+          },
+          {
+            "value": 3.5,
+            "feedback": "Jaoit etäisyyden S-aallon saapumisajalla, ja sait S-aallon nopeuden. Kysymys koskee saapumisaikojen eroa: jaa etäisyys S- ja P-aallon aikaerolla."
+          }
+        ],
+        "solution": "**Annettu:** asemien etäisyydet $84\\,\\text{km}$, $168\\,\\text{km}$ ja $252\\,\\text{km}$; kuvaajasta P- ja S-aallon saapumisajat\n\n**Kysytty:** etäisyys yhtä sekuntia aikaeroa kohti, $\\tfrac{d}{\\Delta t}$, yksikössä km/s\n\n**Periaate:** Kumpikin aalto kulkee saman matkan tasaisella nopeudella, joten kummankin kulkuaika on suoraan verrannollinen matkaan. Silloin myös kulkuaikojen ero on suoraan verrannollinen matkaan, ja suhde $\\tfrac{d}{\\Delta t}$ on sama kaikilla asemilla.\n\n**Kuvaajan lukeminen:** Ylimmällä asemalla P alkaa hetkellä $14\\,\\text{s}$ ja S hetkellä $24\\,\\text{s}$, joten $\\Delta t = 10\\,\\text{s}$. Keskimmäisellä $28\\,\\text{s}$ ja $48\\,\\text{s}$, $\\Delta t = 20\\,\\text{s}$. Alimmalla $42\\,\\text{s}$ ja $72\\,\\text{s}$, $\\Delta t = 30\\,\\text{s}$. Aikaero kasvaa samassa suhteessa kuin etäisyys.\n\n**Kaava:** $d = k\\,\\Delta t$, josta $k = \\dfrac{d}{\\Delta t}$\n\n**Muunnokset:** Etäisyydet ovat kilometreinä ja ajat sekunteina, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $k = \\dfrac{84\\,\\text{km}}{10\\,\\text{s}} = \\dfrac{168\\,\\text{km}}{20\\,\\text{s}} = \\dfrac{252\\,\\text{km}}{30\\,\\text{s}} = 8{,}4\\,\\text{km/s}$\n\n**Vastaus:** $8{,}4\\,\\text{km/s}$, kaksi merkitsevää numeroa, koska saapumisajat luetaan kuvaajasta noin sekunnin tarkkuudella.\n\n**Järkevyys:** Luku ei ole kummankaan aallon nopeus: se on suurempi kuin P-aallon nopeus $\\tfrac{84\\,\\text{km}}{14\\,\\text{s}} = 6{,}0\\,\\text{km/s}$, koska aikaero on pienempi kuin kumpikaan kulkuaika. Kaikki kolme asemaa antavat saman suhteen, joten aikaero on suoraan verrannollinen etäisyyteen."
+      }
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Palaa ennusteisiisi",
+      "prompt": "Vertaa ennusteitasi kaikukäyrään, rajapintojen taulukkoon ja Teoriatiivistelmään. Palaa sitten alun kysymykseen: miten laite päättelee kaiusta syvyyden, ja mitä tapahtuisi ilman geeliä?",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2"
+      ]
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Sovella uuteen tilanteeseen",
+      "prompt": "Merenpohjan maanjäristys synnyttää tsunamin $2000\\,\\text{km}$:n päässä rannikosta. Valtameren syvyys aallon reitillä on keskimäärin $4{,}0\\,\\text{km}$. Kuinka monta tuntia rannikon asukkailla on aikaa evakuoitua, kun hälytys annetaan heti järistyksen jälkeen? Oletetaan, että tsunami kulkee koko matkan nopeudella $v = \\sqrt{gh}$. Vastaa tunteina.",
+      "answer": 2.8,
+      "unit": "h",
+      "tolerance": 0.03,
+      "hints": [
+        "Mikä määrää tsunamin nopeuden? Laske ensin nopeus ja sitten aika, jossa matka kuljetaan.",
+        "Muuta syvyys metreiksi: $h = 4000\\,\\text{m}$. Nopeus on $v = \\sqrt{gh}$ ja aika $t = \\tfrac{s}{v}$.",
+        "$v = \\sqrt{9{,}81\\,\\text{m/s}^2 \\cdot 4000\\,\\text{m}} \\approx 198\\,\\text{m/s}$; $t = \\tfrac{2\\,000\\,000\\,\\text{m}}{198\\,\\text{m/s}}$, ja jaa sekunnit luvulla $3600$."
+      ],
+      "mistakes": [
+        {
+          "value": 88.7,
+          "feedback": "Sijoitit syvyyden kilometreinä yhtälöön $v = \\sqrt{gh}$. Koska $g$ on yksikössä $\\text{m/s}^2$, syvyys on oltava metreinä: $h = 4000\\,\\text{m}$."
+        },
+        {
+          "value": 168,
+          "feedback": "Tämä on aika minuutteina. Jaa sekunnit luvulla $3600$, jotta saat tunnit."
+        },
+        {
+          "value": 10096,
+          "feedback": "Tämä on aika sekunteina. Kysymys pyytää tunteja: $1\\,\\text{h} = 3600\\,\\text{s}$."
+        }
+      ],
+      "solution": "**Annettu:** matka $s = 2000\\,\\text{km}$, syvyys $h = 4{,}0\\,\\text{km}$, $g = 9{,}81\\,\\text{m/s}^2$\n\n**Kysytty:** tsunamin kulkuaika $t$ tunteina\n\n**Periaate:** Tsunamin aallonpituus on paljon suurempi kuin valtameren syvyys, joten se etenee matalan veden aaltona nopeudella $v = \\sqrt{gh}$. Kun syvyys oletetaan samaksi koko matkalla, nopeus on vakio ja kulkuaika on matka jaettuna nopeudella.\n\n**Kaava:** $v = \\sqrt{gh}$ ja $s = vt$, joten $t = \\dfrac{s}{\\sqrt{gh}}$\n\n**Muunnokset:** $h = 4{,}0\\,\\text{km} = 4{,}0 \\cdot 1000\\,\\text{m} = 4000\\,\\text{m}$, $s = 2000 \\cdot 1000\\,\\text{m} = 2{,}0 \\cdot 10^{6}\\,\\text{m}$ ja lopuksi $1\\,\\text{h} = 3600\\,\\text{s}$.\n\n**Sijoitus:** $t = \\dfrac{2{,}0 \\cdot 10^{6}\\,\\text{m}}{\\sqrt{9{,}81\\,\\text{m/s}^2 \\cdot 4000\\,\\text{m}}} = \\dfrac{2{,}0 \\cdot 10^{6}\\,\\text{m}}{198{,}1\\,\\text{m/s}} = 10\\,096\\,\\text{s} = 2{,}80\\,\\text{h}$\n\n**Vastaus:** $2{,}8\\,\\text{h}$, kaksi merkitsevää numeroa kuten syvyydessä $4{,}0\\,\\text{km}$.\n\n**Järkevyys:** Nopeus $198\\,\\text{m/s}$ on noin $710\\,\\text{km/h}$, suihkukoneen luokkaa, ja $2000\\,\\text{km}$ tällä nopeudella kestää vajaat kolme tuntia: $\\tfrac{2000\\,\\text{km}}{710\\,\\text{km/h}} \\approx 2{,}8\\,\\text{h}$. Todellisuudessa aalto hidastuu rannikon matalassa vedessä, joten varoitusaika on hieman pidempi."
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe",
+      "prompt": "Seismografiasema mittaa P- ja S-aallon saapumisaikojen eroksi $20\\,\\text{s}$, kun $v_\\text{P} = 6{,}0\\,\\text{km/s}$ ja $v_\\text{S} = 3{,}5\\,\\text{km/s}$. Opiskelija päättelee: ”S-aalto jää P-aallosta jälkeen $2{,}5\\,\\text{km}$ joka sekunti, joten $d = (v_\\text{P} - v_\\text{S})\\,\\Delta t = 2{,}5\\,\\text{km/s} \\cdot 20\\,\\text{s} = 50\\,\\text{km}$.” Missä on virhe?",
+      "choices": [
+        {
+          "text": "Aikaero on kulkuaikojen erotus $\\Delta t = \\tfrac{d}{v_\\text{S}} - \\tfrac{d}{v_\\text{P}}$, joten oikea tulos on $d = 168\\,\\text{km}$.",
+          "correct": true,
+          "feedback": "Oikein. Opiskelijan tulo $(v_\\text{P} - v_\\text{S})\\,\\Delta t$ on aaltojen välimatka hetkellä, jolloin P-aalto on kulkenut $20\\,\\text{s}$, ei aseman etäisyys. Aikaero syntyy koko matkalta, ja kulkuajat ovat matka jaettuna nopeudella. Kun $d$ ratkaistaan yhtälöstä $\\Delta t = \\tfrac{d}{v_\\text{S}} - \\tfrac{d}{v_\\text{P}}$, saadaan $d = 8{,}4\\,\\tfrac{\\text{km}}{\\text{s}} \\cdot 20\\,\\text{s} = 168\\,\\text{km}$. Tarkistus: P-aalto kulkee sen $28\\,\\text{s}$:ssa ja S-aalto $48\\,\\text{s}$:ssa."
+        },
+        {
+          "text": "Nopeudet olisi pitänyt muuttaa metreiksi sekunnissa ennen kuin ne sijoitetaan yhtälöön.",
+          "feedback": "Yksiköt ovat johdonmukaiset: km/s kertaa s antaa kilometrejä. Muunnos ei muuttaisi tulosta. Virhe on itse yhtälössä: aikaero on kulkuaikojen erotus $\\tfrac{d}{v_\\text{S}} - \\tfrac{d}{v_\\text{P}}$."
+        },
+        {
+          "text": "Nopeuksien erotuksen sijasta olisi pitänyt käyttää niiden keskiarvoa, $d = \\tfrac{v_\\text{P} + v_\\text{S}}{2}\\,\\Delta t$.",
+          "feedback": "Keskiarvolla saataisiin $95\\,\\text{km}$, eikä sekään vastaa mittausta: P-aalto kulkisi sen $16\\,\\text{s}$:ssa ja S-aalto $27\\,\\text{s}$:ssa, ja ero olisi vain $11\\,\\text{s}$. Aikaero on kulkuaikojen erotus, $\\Delta t = \\tfrac{d}{v_\\text{S}} - \\tfrac{d}{v_\\text{P}}$."
+        }
+      ]
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Harjoittele kolmella tasolla. Tason 1 tehtävissä käytetään yhtä kaavaa, tason 2 tehtävissä luetaan kuvaajaa tai ratkaistaan kaksi vaihetta, ja taso 3 vaatii päättelyä uudessa tilanteessa."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Maan ydin",
+      "prompt": "Seismografiasemat, jotka ovat yli noin $103^\\circ$:n kulmaetäisyydellä järistyksestä, havaitsevat järistyksen P-aallot mutta eivät suoraan saapuvia S-aaltoja. Mikä tämän selittää?",
+      "choices": [
+        {
+          "text": "Maan ulkoydin on nestettä, eikä poikittainen S-aalto etene nesteessä.",
+          "correct": true,
+          "feedback": "Oikein. Poikittainen aalto tarvitsee väliaineen, joka vastustaa muodon muuttumista. Neste ei vastusta sitä, joten S-aalto pysähtyy ulkoytimen pintaan, mutta pitkittäinen P-aalto jatkaa sen läpi."
+        },
+        {
+          "text": "S-aalto on niin hidas, että se vaimenee kokonaan ennen kuin ehtii Maan toiselle puolelle.",
+          "feedback": "Hitaus vain pidentää kulkuaikaa; S-aalto havaitaan selvästi asemilla, jotka ovat alle $103^\\circ$:n päässä. Raja on jyrkkä, koska ulkoydin on nestettä eikä neste välitä poikittaista aaltoa."
+        },
+        {
+          "text": "S-aalto on pinta-aalto, joka kulkee vain maankuorta pitkin eikä sukella Maan sisään.",
+          "feedback": "S-aalto etenee Maan sisäosien läpi kuten P-aalto. Pinta-aallot ovat oma aaltotyyppinsä. S-aaltojen varjoalue syntyy, koska nestemäinen ulkoydin ei välitä poikittaista aaltoa."
+        },
+        {
+          "text": "Ytimen kiinteä rauta heijastaa S-aallot takaisin, mutta P-aallot pääsevät läpi.",
+          "feedback": "Ulkoydin ei ole kiinteää vaan nestettä, ja juuri siksi S-aalto ei etene sen läpi. Kiinteässä aineessa poikittainen aalto etenisi."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Silmän pituus",
+      "prompt": "Ennen kaihileikkausta silmän pituus mitataan A-kuvauksella. Kaiku verkkokalvolta palaa $31{,}0\\,\\mu\\text{s}$ myöhemmin kuin kaiku sarveiskalvon pinnalta. Ääni etenee silmässä keskimäärin nopeudella $1550\\,\\text{m/s}$. Kuinka pitkä silmä on sarveiskalvolta verkkokalvolle? Vastaa senttimetreinä.",
+      "answer": 2.4,
+      "unit": "cm",
+      "tolerance": 0.02,
+      "hints": [
+        "Pulssi kulkee silmän läpi verkkokalvolle ja takaisin.",
+        "$d = \\tfrac{v \\Delta t}{2}$, kun $\\Delta t = 31{,}0 \\cdot 10^{-6}\\,\\text{s}$.",
+        "$\\tfrac{1550\\,\\text{m/s} \\cdot 31{,}0 \\cdot 10^{-6}\\,\\text{s}}{2}$"
+      ],
+      "mistakes": [
+        {
+          "value": 4.81,
+          "feedback": "Tämä on koko matka, jonka pulssi kulkee. Pulssi kulkee silmän läpi kahdesti, joten silmän pituus on puolet tästä."
+        }
+      ],
+      "solution": "**Annettu:** kaikujen aikaero $\\Delta t = 31{,}0\\,\\mu\\text{s}$, äänen nopeus silmässä $v = 1550\\,\\text{m/s}$\n\n**Kysytty:** silmän pituus $d$ senttimetreinä\n\n**Periaate:** Kaikujen aikaerossa pulssi kulkee sarveiskalvolta verkkokalvolle ja takaisin, joten se kulkee silmän pituuden kahdesti. Nopeus oletetaan samaksi koko matkalla.\n\n**Kaava:** $2d = v \\Delta t$, joten $d = \\dfrac{v \\Delta t}{2}$\n\n**Muunnokset:** $31{,}0\\,\\mu\\text{s} = 31{,}0 \\cdot 10^{-6}\\,\\text{s}$; lopuksi $1\\,\\text{m} = 100\\,\\text{cm}$.\n\n**Sijoitus:** $d = \\dfrac{1550\\,\\text{m/s} \\cdot 31{,}0 \\cdot 10^{-6}\\,\\text{s}}{2} = 0{,}024\\,025\\,\\text{m} = 2{,}40\\,\\text{cm}$\n\n**Vastaus:** $2{,}40\\,\\text{cm}$, kolme merkitsevää numeroa kuten aikaerossa $31{,}0\\,\\mu\\text{s}$.\n\n**Järkevyys:** Aikuisen silmämuna on halkaisijaltaan noin $2{,}4\\,\\text{cm}$, joten tulos on uskottava. Jos olisi unohtanut paluumatkan, silmä olisi ollut lähes $5\\,\\text{cm}$ pitkä, mikä on selvästi liikaa."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Selitä taajuuden valinta",
+      "prompt": "Sydän kuvataan tavallisesti noin $3\\,\\text{MHz}$:n anturilla, mutta ranteen jänne noin $12\\,\\text{MHz}$:n anturilla. Selitä, miksi taajuudet valitaan näin. Käytä käsitteitä aallonpituus ja vaimeneminen.",
+      "model": "Aallonpituus on $\\lambda = \\tfrac{v}{f}$, joten $12\\,\\text{MHz}$:n ultraäänen aallonpituus kudoksessa on noin $0{,}13\\,\\text{mm}$ ja $3\\,\\text{MHz}$:n noin $0{,}5\\,\\text{mm}$. Pienimmät erottuvat yksityiskohdat ovat muutaman aallonpituuden kokoisia, joten suurempi taajuus antaa tarkemman kuvan. Vaimeneminen kasvaa kuitenkin likimain suoraan verrannollisesti taajuuteen, joten $12\\,\\text{MHz}$:n pulssi heikkenee nopeasti eikä sen kaiku palaa muutamaa senttimetriä syvemmältä. Jänne on aivan ihon alla, joten sen kuvaamiseen riittää pieni syvyys ja voidaan käyttää suurta taajuutta. Sydän on yli $10\\,\\text{cm}$:n syvyydellä, joten käytetään pientä taajuutta, joka ulottuu sinne asti, ja tarkkuudesta joudutaan tinkimään.",
+      "criteria": [
+        "Vastaus kertoo, että suurempi taajuus tarkoittaa lyhyempää aallonpituutta ($\\lambda = \\tfrac{v}{f}$) ja siksi tarkempaa kuvaa.",
+        "Vastaus kertoo, että vaimeneminen kasvaa taajuuden kasvaessa, joten suurtaajuinen ultraääni ei ulotu syvälle.",
+        "Vastaus kytkee valinnat kohteiden syvyyteen: jänne on pinnan lähellä, sydän syvällä.",
+        "Vastaus toteaa, että valinta on kompromissi tarkkuuden ja kuvaussyvyyden välillä."
+      ]
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Lopuksi kaksi nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+    }
+  ]
+}

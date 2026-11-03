@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Lepakko saalistaa hyttysiä, joiden koko on muutama millimetri. Miksi sen äännähdysten taajuus on kymmeniä kilohertsejä eikä esimerkiksi $1\\,\\text{kHz}$?",
+    "a": "Aalto heijastuu selvästi vain kappaleesta, joka on vähintään aallonpituuden kokoinen; pienemmän kappaleen ympäri aalto taipuu. Taajuudella $50\\,\\text{kHz}$ aallonpituus ilmassa on $\\tfrac{343\\,\\text{m/s}}{50\\,000\\,\\text{Hz}} \\approx 7\\,\\text{mm}$, mutta taajuudella $1\\,\\text{kHz}$ noin $34\\,\\text{cm}$, jolloin hyttysestä ei palaisi havaittavaa kaikua."
+  },
+  {
+    "q": "Miksi tsunami, joka on valtamerellä vain noin metrin korkuinen, voi nousta rannikolla monen metrin korkuiseksi?",
+    "a": "Tsunamin nopeus on $v = \\sqrt{gh}$, joten matalassa rantavedessä aalto hidastuu. Aallon takaosa saavuttaa etuosaa, aallonpituus lyhenee ja energia kasautuu pienempään vesimäärään, joten aallon korkeus kasvaa."
+  }
+]
