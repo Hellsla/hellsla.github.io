@@ -1,0 +1,45 @@
+{
+  "id": "fy6-5",
+  "course": "FY6",
+  "title": "Kirchhoffin lait ja potentiaali virtapiirissä",
+  "goals": [
+    "LOPS FY6: vastusten kytkennät ja Kirchhoffin lait",
+    "Täsmennys: Kirchhoffin lakien yhteydessä voidaan tarkastella myös haarautuvia virtapiirejä. Pääasia on fysiikan ymmärtäminen.",
+    "Täsmennys: potentiaali piirin eri kohdissa, potentiaalikuvaaja ja jännitteiden summa silmukassa"
+  ],
+  "prerequisites": [
+    "fy6-4"
+  ],
+  "glossary": [
+    "Kirchhoffin virtalaki",
+    "Kirchhoffin jännitelaki",
+    "silmukka",
+    "haarautumispiste",
+    "potentiaali"
+  ],
+  "key_concepts": [
+    {
+      "term": "haarautumispiste",
+      "explain": "Kohta, jossa johdin jakautuu haaroiksi. Siinä virta jakautuu."
+    },
+    {
+      "term": "Kirchhoffin virtalaki",
+      "explain": "Haarautumispisteeseen tulevien virtojen summa on yhtä suuri kuin siitä lähtevien virtojen summa."
+    },
+    {
+      "term": "silmukka",
+      "explain": "Virtapiirin suljettu reitti, joka palaa lähtökohtaansa."
+    },
+    {
+      "term": "Kirchhoffin jännitelaki",
+      "explain": "Potentiaalin nousujen ja laskujen summa silmukassa on nolla."
+    },
+    {
+      "term": "potentiaali",
+      "explain": "Kohdan jännite valittuun nollakohtaan nähden."
+    }
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

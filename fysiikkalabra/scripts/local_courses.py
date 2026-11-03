@@ -77,27 +77,6 @@ def validate(curriculum):
     return errs
 
 
-def home_row(code, c, T, investigations=0, n_units=0):
-    """The front page row: the same anatomy as a national module's row, one link stretched over it. What the course
-    already publishes (its investigations in this language) comes first; the plan's status is said apart from it
-    (teacher 2026-10-31: published investigations are not "planned", the course plan may still be)."""
-    avail = (T.count("site.local_investigations", investigations) if investigations
-             else T("units.home_sessions", n=c["sessions"]) if n_units and c.get("sessions")   # the lessons taught, not the units written
-             else T.count("units.home_count", n_units) if n_units
-             else T("site.local_status_" + c["status"]))
-    status = f'<span class="mod-coming">{T("site.local_status_home_" + c["status"])}</span>' if (investigations or n_units) and c["status"] != "ready" else ""
-    if c.get("language") and c["language"] != T.lang:
-        status += f'<span class="mod-coming">{T("units.taught_in_" + c["language"])}</span>'
-    import module_icons
-    return (f'<li class="mod-row local-row">{module_icons.img(code)}<span class="mod-code">{code}</span>'
-            f'<div class="mod-main"><h3 class="mod-title"><a class="mod-link" href="{code}.html">'
-            f'<span class="visually-hidden">{code} </span>{esc(c["title"])}</a></h3>'
-            f'<p class="mod-q">{esc(c["subtitle"])}</p></div>'
-            f'<p class="mod-meta"><span class="mod-avail">{avail}</span>{status}'
-            f'<span class="mod-credits">{esc(c["school"])}</span></p>'
-            f'<span class="mod-go" aria-hidden="true">{T("site.open_course")}</span></li>')
-
-
 def page_body(code, c, T, chapters, published, investigations=(), guides_html="", course_units=()):
     """The course landing page. chapters: lesson id -> (module code, title) in this language; published: the page
     names this language built. Planned parts say so, and a chapter not published here is named without a link."""

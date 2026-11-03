@@ -19,6 +19,28 @@
     "kitkakerroin",
     "kalteva taso"
   ],
+  "key_concepts": [
+    {
+      "term": "paino",
+      "explain": "Voima, jolla Maa vetää kappaletta. Paino riippuu paikasta, massa ei."
+    },
+    {
+      "term": "kitka",
+      "explain": "Voima, joka vastustaa kahden pinnan liukumista toisiaan vasten."
+    },
+    {
+      "term": "lepokitka",
+      "explain": "Kitka, joka pitää kappaleen paikallaan pinnan suhteen. Se voi kasvaa vain tiettyyn ylärajaan asti."
+    },
+    {
+      "term": "liikekitka",
+      "explain": "Kitka, joka vaikuttaa, kun kappale jo liukuu pintaa pitkin."
+    },
+    {
+      "term": "kitkakerroin",
+      "explain": "Luku, joka kertoo, kuinka suuri kitka on tukivoimaan verrattuna. Se riippuu pinnoista."
+    }
+  ],
   "sim": true,
   "solutions": "all",
   "image": false

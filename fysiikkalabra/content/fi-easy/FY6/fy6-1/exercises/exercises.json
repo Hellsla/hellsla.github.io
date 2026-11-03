@@ -1,0 +1,106 @@
+{
+  "level1": [
+    {
+      "id": "fy6-1-L1-01",
+      "level": 1,
+      "text": "Lampun hehkulangan läpi kulkee varaus $45\\,\\text{C}$ ajassa $30\\,\\text{s}$. Kuinka suuri sähkövirta lampun läpi kulkee?",
+      "answer": 1.5,
+      "unit": "A",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-1-L1-02",
+      "level": 1,
+      "text": "Sähkömoottorin läpi kulkee virta $0{,}50\\,\\text{A}$ ajan $40\\,\\text{s}$. Kuinka suuri varaus moottorin läpi kulkee tänä aikana?",
+      "answer": 20,
+      "unit": "C",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-1-L1-03",
+      "level": 1,
+      "text": "Paristo siirtää energian $54\\,\\text{J}$ varaukselle $6{,}0\\,\\text{C}$, joka kulkee sen läpi. Kuinka suuri on pariston jännite?",
+      "answer": 9.0,
+      "unit": "V",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-1-L1-04",
+      "level": 1,
+      "text": "Auton akun jännite on $12\\,\\text{V}$. Akusta kulkee käynnistysmoottorin läpi varaus $150\\,\\text{C}$. Kuinka paljon energiaa akku siirtää moottorille?",
+      "answer": 1800,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-1-L1-05",
+      "level": 1,
+      "text": "Merkkivalon läpi kulkee virta $0{,}080\\,\\text{A}$. Kuinka kauan kestää, että merkkivalon läpi on kulkenut varaus $2{,}4\\,\\text{C}$?",
+      "answer": 30,
+      "unit": "s",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy6-1-L2-01",
+      "level": 2,
+      "text": "Pyörän takavalon LED-merkkivalon läpi kulkee virta $20\\,\\text{mA}$, ja valo on päällä $1{,}5\\,\\text{h}$. Kuinka suuri varaus valon läpi kulkee? Vastaa coulombeina.",
+      "answer": 108,
+      "unit": "C",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-1-L2-02",
+      "level": 2,
+      "text": "Lampun läpi kulkee virta $0{,}16\\,\\text{A}$. Kuinka monta elektronia kulkee lampun läpi yhdessä sekunnissa? Alkeisvaraus on $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$.",
+      "answer": 9.99e+17,
+      "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-1-L2-03",
+      "level": 2,
+      "text": "Puhelimen akun jännite on $3{,}7\\,\\text{V}$. Täyteen ladattuna akku voi luovuttaa varauksen $3000\\,\\text{mAh}$. Yksikkö $\\text{mAh}$ tarkoittaa varausta, joka kulkee, kun virta $1\\,\\text{mA}$ kulkee yhden tunnin. Kuinka paljon energiaa täysi akku voi siirtää puhelimen piireille? Vastaa kilojouleina.",
+      "answer": 39.96,
+      "unit": "kJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-1-L2-04",
+      "level": 2,
+      "text": "Kuvaaja näyttää, miten sähkölaitteen läpi kulkeva virta muuttuu ajan kuluessa. Kuinka suuri varaus laitteen läpi kulkee ajanhetkien $0\\,\\text{s}$ ja $60\\,\\text{s}$ välillä?",
+      "answer": 11,
+      "unit": "C",
+      "tolerance": 0.02,
+      "figure": "fy6-1/virta-kuvaaja"
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy6-1-L3-01",
+      "level": 3,
+      "text": "AA-pariston kyljessä lukee $2{,}0\\,\\text{Ah}$. Yksikkö ampeeritunti $\\text{Ah}$ tarkoittaa varausta, joka kulkee, kun virta $1\\,\\text{A}$ kulkee yhden tunnin. Kuinka monta tuntia paristo jaksaa pitää taskulampun lamppua päällä, kun lampun virta on koko ajan $0{,}25\\,\\text{A}$?",
+      "answer": 8.0,
+      "unit": "h",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-1-L3-02",
+      "level": 3,
+      "text": "Pieni paristo, jonka jännite on $9{,}0\\,\\text{V}$, voi luovuttaa varauksen $0{,}50\\,\\text{Ah}$. AA-paristo, jonka jännite on $1{,}5\\,\\text{V}$, voi luovuttaa varauksen $2{,}5\\,\\text{Ah}$. AA-paristo luovuttaa siis viisinkertaisen varauksen. Kuinka monta kertaa enemmän energiaa $9{,}0\\,\\text{V}$:n paristo silti voi siirtää kuin AA-paristo?",
+      "answer": 1.2,
+      "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-1-L3-03",
+      "level": 3,
+      "text": "Pyörän valossa on kaksi paristoa peräkkäin, kummankin jännite on $1{,}5\\,\\text{V}$. Valossa on myös kytkin ja lamppu. Lisäksi lampun läpi kulkevaa virtaa halutaan mitata ampeerimittarilla, joka kytketään samaan silmukkaan. Piirrä paperille piirin kytkentäkaavio ja merkitse siihen sovittu virran suunta. Kerro, miten piirsit kaavion.",
+      "answer": "Yksi suljettu silmukka: kaksi paristokennoa peräkkäin (ensimmäisen plusnapa toisen miinusnapaan), kytkin, lamppu ja ampeerimittari samassa silmukassa. Virran nuoli osoittaa plusnavasta piirin kautta miinusnapaan.",
+      "unit": "",
+      "tolerance": 0.02,
+      "model_figure": "fy6-1/kaavio-malli"
+    }
+  ]
+}

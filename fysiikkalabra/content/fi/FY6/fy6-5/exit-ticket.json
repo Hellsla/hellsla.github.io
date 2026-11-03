@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Haarautumispisteeseen tulee virta $0{,}50\\,\\text{A}$. Pisteestä lähtee kaksi haaraa, ja toisessa virta on $0{,}35\\,\\text{A}$. Kuinka suuri virta kulkee toisessa haarassa?",
+    "a": "Virtalain mukaan lähtevien virtojen summa on $0{,}50\\,\\text{A}$, joten toisessa haarassa kulkee $0{,}50\\,\\text{A} - 0{,}35\\,\\text{A} = 0{,}15\\,\\text{A}$."
+  },
+  {
+    "q": "Sarjaankytkennässä on $9{,}0\\,\\text{V}$:n jännitelähde ja kolme vastusta. Kahden vastuksen jännitteet ovat $2{,}0\\,\\text{V}$ ja $3{,}5\\,\\text{V}$. Kuinka suuri on kolmannen vastuksen jännite?",
+    "a": "Jännitelain mukaan vastusten jännitteet ovat yhteensä lähteen jännite, joten kolmannen vastuksen jännite on $9{,}0\\,\\text{V} - 2{,}0\\,\\text{V} - 3{,}5\\,\\text{V} = 3{,}5\\,\\text{V}$."
+  }
+]

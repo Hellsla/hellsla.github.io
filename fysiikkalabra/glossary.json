@@ -3396,6 +3396,279 @@
     "locked": false
   },
   {
+    "term": "resistanssi",
+    "definition": "Suure, joka kertoo, kuinka voimakkaasti komponentti vastustaa sähkövirtaa: komponentin jännitteen ja sen läpi kulkevan virran suhde $R = U : I$. Yksikkö on ohmi, $1\\,\\Omega = 1\\,\\text{V/A}$.",
+    "lessons": [
+      "fy6-3"
+    ],
+    "see_also": [
+      "Ohmin laki",
+      "resistiivisyys",
+      "vastus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "Ohmin laki",
+    "definition": "Metallijohtimen läpi kulkeva virta on suoraan verrannollinen sen jännitteeseen, kun johtimen lämpötila pysyy samana: $U = RI$, missä resistanssi $R$ on vakio. Laki ei päde esimerkiksi hehkulampulle eikä diodille.",
+    "lessons": [
+      "fy6-3"
+    ],
+    "see_also": [
+      "resistanssi",
+      "ominaiskäyrä"
+    ],
+    "locked": false
+  },
+  {
+    "term": "vastus",
+    "definition": "Virtapiirin komponentti, joka on valmistettu tietyn suuruiseksi resistanssiksi. Piirrosmerkki on suorakulmio. Komponentin ominaisuutta kuvaava suure on resistanssi.",
+    "lessons": [
+      "fy6-3"
+    ],
+    "see_also": [
+      "resistanssi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "resistiivisyys",
+    "definition": "Johdinaineelle ominainen suure $\\rho$, joka kertoo, kuinka huonosti aine johtaa sähköä. Tasapaksun johtimen resistanssi on $R = \\rho l : A$, missä $l$ on pituus ja $A$ poikkipinta-ala. Yksikkö on $\\Omega\\cdot\\text{m}$; metalleilla resistiivisyys kasvaa lämpötilan noustessa.",
+    "lessons": [
+      "fy6-3"
+    ],
+    "see_also": [
+      "resistanssi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "ominaiskäyrä",
+    "definition": "Kuvaaja, joka näyttää komponentin jännitteen ja virran riippuvuuden. Ohmin lakia noudattavan vastuksen ominaiskäyrä on origon kautta kulkeva suora, hehkulampun ominaiskäyrä on kaareva.",
+    "lessons": [
+      "fy6-3"
+    ],
+    "see_also": [
+      "Ohmin laki",
+      "resistanssi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "sarjaankytkentä",
+    "definition": "Kytkentä, jossa komponentit ovat peräkkäin samassa silmukassa, joten varauksilla on vain yksi kulkureitti. Sama virta kulkee jokaisen komponentin läpi, ja jännitteet summautuvat.",
+    "lessons": [
+      "fy6-4"
+    ],
+    "see_also": [
+      "rinnankytkentä",
+      "kokonaisresistanssi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "rinnankytkentä",
+    "definition": "Kytkentä, jossa komponentit ovat eri haaroissa samojen kahden haarautumispisteen välissä. Jokaisen haaran yli on sama jännite, ja haaravirrat summautuvat.",
+    "lessons": [
+      "fy6-4"
+    ],
+    "see_also": [
+      "sarjaankytkentä",
+      "kokonaisresistanssi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kokonaisresistanssi",
+    "definition": "Sen yhden vastuksen resistanssi, joka voisi korvata vastusten kytkennän niin, että paristosta lähtevä virta pysyisi samana. Sarjaankytkennässä se on resistanssien summa, rinnankytkennässä pienempi kuin pienin haarojen resistansseista.",
+    "lessons": [
+      "fy6-4"
+    ],
+    "see_also": [
+      "sarjaankytkentä",
+      "rinnankytkentä"
+    ],
+    "locked": false
+  },
+  {
+    "term": "Kirchhoffin virtalaki",
+    "definition": "Haarautumispisteeseen tulevien sähkövirtojen summa on yhtä suuri kuin siitä lähtevien virtojen summa. Laki seuraa varauksen säilymisestä: varausta ei synny, häviä eikä kerry haarautumispisteeseen.",
+    "lessons": [
+      "fy6-5"
+    ],
+    "see_also": [
+      "haarautumispiste",
+      "Kirchhoffin jännitelaki"
+    ],
+    "locked": false
+  },
+  {
+    "term": "Kirchhoffin jännitelaki",
+    "definition": "Kun virtapiirin silmukka kierretään, potentiaalin muutosten summa on nolla. Siksi lähteen jännite on yhtä suuri kuin silmukan vastusten jännitteiden summa.",
+    "lessons": [
+      "fy6-5"
+    ],
+    "see_also": [
+      "silmukka",
+      "potentiaali",
+      "Kirchhoffin virtalaki"
+    ],
+    "locked": false
+  },
+  {
+    "term": "silmukka",
+    "definition": "Virtapiirin suljettu reitti, joka kulkee komponentista toiseen ja palaa lähtökohtaansa.",
+    "lessons": [
+      "fy6-5"
+    ],
+    "see_also": [
+      "Kirchhoffin jännitelaki"
+    ],
+    "locked": false
+  },
+  {
+    "term": "haarautumispiste",
+    "definition": "Virtapiirin kohta, jossa johdin jakautuu kahdeksi tai useammaksi haaraksi tai jossa haarat yhtyvät.",
+    "lessons": [
+      "fy6-5"
+    ],
+    "see_also": [
+      "Kirchhoffin virtalaki"
+    ],
+    "locked": false
+  },
+  {
+    "term": "potentiaali",
+    "definition": "Virtapiirin kohdan jännite valittuun nollakohtaan nähden, yksikkö voltti (V). Kahden kohdan välinen jännite on niiden potentiaalien erotus, eikä se riipu nollakohdan valinnasta.",
+    "lessons": [
+      "fy6-5"
+    ],
+    "see_also": [
+      "Kirchhoffin jännitelaki"
+    ],
+    "locked": false
+  },
+  {
+    "term": "jännitemittari",
+    "definition": "Mittari, joka mittaa kahden pisteen välisen jännitteen. Se kytketään rinnalle eli mitattavan komponentin napojen väliin, ja sen oma resistanssi on hyvin suuri, jotta sen kautta ei juuri kulje virtaa.",
+    "lessons": [
+      "fy6-2"
+    ],
+    "see_also": [
+      "virtamittari",
+      "yleismittari"
+    ],
+    "locked": false
+  },
+  {
+    "term": "virtamittari",
+    "definition": "Mittari, joka mittaa sen läpi kulkevan sähkövirran. Se kytketään sarjaan: piiri avataan ja mittari asetetaan aukkoon. Sen oma resistanssi on hyvin pieni, jotta se ei juuri pienennä mitattavaa virtaa.",
+    "lessons": [
+      "fy6-2"
+    ],
+    "see_also": [
+      "jännitemittari",
+      "yleismittari"
+    ],
+    "locked": false
+  },
+  {
+    "term": "yleismittari",
+    "definition": "Mittalaite, joka mittaa valitsimen asennosta riippuen esimerkiksi jännitettä, virtaa ja resistanssia. Valitsimella valitaan suure ja mittausalue; musta mittajohto kuuluu liittimeen COM.",
+    "lessons": [
+      "fy6-2"
+    ],
+    "see_also": [
+      "jännitemittari",
+      "virtamittari",
+      "mittausalue"
+    ],
+    "locked": false
+  },
+  {
+    "term": "mittausalue",
+    "definition": "Suurin arvo, jonka mittari valitsimen tietyllä asennolla näyttää, esimerkiksi 20 V. Suuremmalla arvolla digitaalinen mittari näyttää OL. Pienemmällä alueella resoluutio on pienempi, joten mitataan pienimmällä alueella, jolle lukema mahtuu.",
+    "lessons": [
+      "fy6-2"
+    ],
+    "see_also": [
+      "yleismittari",
+      "mittausepävarmuus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "sähkövirta",
+    "definition": "Varauksen liike johtimessa. Sähkövirran suuruus on poikkileikkauksen läpi aikayksikössä kulkeva varaus, $I = \\tfrac{Q}{t}$, ja sen yksikkö on ampeeri ($1\\,\\text{A} = 1\\,\\text{C/s}$). Sovittu virran suunta on ulkoisessa piirissä plusnavasta miinusnapaan.",
+    "lessons": [
+      "fy6-1"
+    ],
+    "see_also": [
+      "jännite",
+      "virtapiiri",
+      "johde"
+    ],
+    "locked": false
+  },
+  {
+    "term": "jännite",
+    "definition": "Siirtynyt energia varausyksikköä kohti, kun varaus kulkee kahden kohdan välillä: $U = \\tfrac{E}{Q}$. Yksikkö on voltti ($1\\,\\text{V} = 1\\,\\text{J/C}$).",
+    "lessons": [
+      "fy6-1"
+    ],
+    "see_also": [
+      "sähkövirta",
+      "virtapiiri"
+    ],
+    "locked": false
+  },
+  {
+    "term": "virtapiiri",
+    "definition": "Suljettu reitti, jossa varaus kiertää jännitelähteestä johtimia ja komponentteja pitkin takaisin jännitelähteeseen. Virta kulkee vain suljetussa piirissä, ja yhdessä silmukassa sama virta kulkee jokaisen komponentin läpi.",
+    "lessons": [
+      "fy6-1"
+    ],
+    "see_also": [
+      "sähkövirta",
+      "kytkentäkaavio"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kytkentäkaavio",
+    "definition": "Virtapiirin piirros, jossa komponentit esitetään sovituilla piirrosmerkeillä (esimerkiksi paristo, lamppu, vastus, kytkin, mittarit) ja johtimet suorina viivoina. Kaavio näyttää, mitkä komponentit on kytketty toisiinsa.",
+    "lessons": [
+      "fy6-1"
+    ],
+    "see_also": [
+      "virtapiiri"
+    ],
+    "locked": false
+  },
+  {
+    "term": "johde",
+    "definition": "Aine, jossa varaukset pääsevät liikkumaan. Metalleissa liikkuvat vapaat elektronit, joten esimerkiksi kupari ja alumiini johtavat hyvin sähköä.",
+    "lessons": [
+      "fy6-1"
+    ],
+    "see_also": [
+      "eriste",
+      "sähkövirta"
+    ],
+    "locked": false
+  },
+  {
+    "term": "eriste",
+    "definition": "Aine, jossa varaukset eivät pääse liikkumaan, esimerkiksi muovi, kumi, lasi ja kuiva puu. Sähköjohdon kuori on eristettä.",
+    "lessons": [
+      "fy6-1"
+    ],
+    "see_also": [
+      "johde"
+    ],
+    "locked": false
+  },
+  {
     "term": "emissiospektri",
     "definition": "Spektri, jonka kuuma ohut kaasu lähettää: tummalla pohjalla erillisiä kirkkaita viivoja niillä aallonpituuksilla, joilla kaasun atomit lähettävät fotoneja siirtyessään ylemmästä energiatilasta alempaan.",
     "lessons": [
@@ -3644,6 +3917,28 @@
     "see_also": [
       "aaltomekaaninen atomimalli",
       "orbitaali"
+    ],
+    "locked": false
+  },
+  {
+    "term": "ilmanvastus",
+    "definition": "Väliaineen vastus ilmassa: voima, jolla ilma vastustaa siinä liikkuvan kappaleen liikettä. Se kasvaa, kun nopeus kasvaa. Merkintä $\\overline{F}_\\text{v}$.",
+    "lessons": [
+      "fy4-14"
+    ],
+    "see_also": [
+      "väliaineen vastus",
+      "rajanopeus"
+    ]
+  },
+  {
+    "term": "pinta-ala",
+    "definition": "Pinnan koko. Pinta-alan SI-yksikkö on neliömetri, m². Paine on voima pinta-alaa kohti, joten sama voima pienelle pinta-alalle antaa suuren paineen.",
+    "lessons": [
+      "fy3-4"
+    ],
+    "see_also": [
+      "paine"
     ],
     "locked": false
   },

@@ -196,6 +196,8 @@ When the position of a simple harmonic oscillator is plotted as a function of ti
   <line x1="380" y1="96" x2="380" y2="96" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy5/foucault-pendulum.webp" alt="A shiny metal ball hangs on a thin wire above a colourful round base. Small numbered pegs stand at the edge of the base."><figcaption>A Foucault pendulum at the Saitama Municipal Youth Astronomical Museum in Japan. For small swings, the period of a pendulum does not depend on the amplitude but only on the length of the pendulum and on the acceleration due to gravity.</figcaption></figure>
+
 ### Why the amplitude does not change the period
 A simple harmonic oscillator has a remarkable property. If the amplitude is doubled, the distance travelled in one cycle doubles. At the same time the force at every corresponding point also doubles, because $F$ is proportional to the displacement. A doubled force gives a doubled acceleration, and in the same time a doubled acceleration makes the speed grow twice as much. So the longer distance is covered at a greater speed, and the time taken is the same. The period of a simple harmonic oscillator does not depend on the amplitude. It depends only on how large the mass in motion is and how stiff the spring that restores it is.
 

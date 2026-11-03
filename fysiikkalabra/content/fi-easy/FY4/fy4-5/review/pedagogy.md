@@ -1,12 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: cf3b2f3a499e1d00
+CONTENT-HASH: 93f7e9512203b03b
 
 ## Blocking
+(none)
 
 ## Polish
-- Layout check (`check_layout.py fy4-5 --lang fi-easy`, 360 and 1280 px) reports a figure-label overlap "N / F_y" that is identical in the Finnish preview (generated figure, not translation text).
+(none)
 
 ## Checked
-- Delta `git diff a6af45ae` of fi, en and fi-easy for fy4-5; every changed passage compared with the Finnish: reads naturally; same stages, hint order and exit ticket; the changed sentences keep the teaching order (ice-only model in the inquiry, pull and push as the compared cases, the extra T-vs-F remark placed in the model box). fi-easy: short sentences, one idea each (the T/F remark split into four sentences, "vuorotellen" explained by the same scene), terms as before.
-- All `voimakuvio` blocks in inquiry.json and lesson.md identical to the Finnish (check_i18n enforces); `check_i18n.py` 0 errors; `build.py fy4-5` builds; `figures.py fy4-5 --lang fi-easy --check` up to date.
-- Delta since the last PASS (commit 63d2f6f8, shared sim.js force diagram enlarged, nested list in step 3 re-indented): lesson text differs only in whitespace (`git diff -w` empty), so the earlier comparison with the Finnish stands; `check_i18n.py` 0 errors, figures up to date.
+batch delta review: key_concepts judged against NOTES.md §12 and the editorial standard (central concepts, plain 1–2 sentence explanations, natural Finnish, physics unchanged); lesson rewordings, photos and captions, experiment/prompt wording and solution diagrams in this diff read clearly and agree with the tasks they touch.

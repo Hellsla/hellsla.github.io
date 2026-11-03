@@ -225,7 +225,7 @@
       "type": "reflect",
       "title": "Muuttaisitko ennustettasi?",
       "optional": true,
-      "prompt": "Katso ennusteitasi ja aineistojen tuloksia.",
+      "prompt": "Katso ennusteitasi ja aineistojen tuloksia. Olivatko ennusteesi oikein? Mikä tulos yllätti sinut eniten, ja miksi?",
       "predictions": [
         "ennuste-1",
         "ennuste-2"

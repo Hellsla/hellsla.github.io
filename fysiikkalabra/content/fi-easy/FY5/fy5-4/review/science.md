@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 4ada06d66c310934
+CONTENT-HASH: 4aa09c757dcbf43d
 
 ## Blocking
 (none)
@@ -8,4 +8,4 @@ CONTENT-HASH: 4ada06d66c310934
 (none)
 
 ## Checked
-batch delta review: heading/meta renamed; references to fy5-3 updated in prior, prediction feedback and theory; physics unchanged. Every changed chapter reference names the renamed chapter that holds the cited content, and no old title remains.
+batch delta review: added meta.json key_concepts (Luvun tärkeät käsitteet) checked term by term against the lesson's own definitions, summary and the physics guardrails; no number, formula or choice changed. Terms: normaalikiihtyvyys (towards the centre, changes direction, not speed), keskeisvoima as the sum of real forces, not a new force, and ympyräliike agree with the lesson.

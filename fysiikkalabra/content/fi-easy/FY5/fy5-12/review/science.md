@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 3505267d41514d2b
+CONTENT-HASH: 080111f6bcbb3a32
 
 ## Blocking
 (none)
@@ -8,4 +8,4 @@ CONTENT-HASH: 3505267d41514d2b
 (none)
 
 ## Checked
-batch delta review: references to fy5-10, fy5-11, fy5-14 updated; lambda = 340/500 = 0,68 m correct; superposition text unchanged. Every changed chapter reference names the renamed chapter that holds the cited content, and no old title remains.
+batch delta review: added meta.json key_concepts (Luvun tärkeät käsitteet) checked term by term against the lesson's own definitions, summary and the physics guardrails; no number, formula or choice changed. Terms: superpositio (poikkeamat summed, waves go on unchanged), interferenssi, vahvistava/heikentävä (same/opposite phase) and matkaero agree with the lesson.
