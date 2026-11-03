@@ -1274,7 +1274,7 @@
       "nopea": "fast",
       "selite": "Red: forces. Blue: velocity. Orange: acceleration.",
       "ylhaalta": "$\\text{Path from above}$",
-      "takaa": "$\\text{Free-body diagram from behind}$",
+      "takaa": "$\\text{Forces, rear view}$",
       "tarve": "$\\text{Friction needed}$",
       "lukemat": "$a_\\text{n} = {{an}}\\,\\text{m/s}^2$<br>friction needed ${{Ft}}\\,\\text{kN}$, maximum static friction ${{Fm}}\\,\\text{kN}$<br>friction of the road $F_\\mu = {{F}}\\,\\text{kN}$, {{tila}}",
       "pitaa": "grip is enough",
