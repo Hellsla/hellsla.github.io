@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 01bd60776d1ffd6c
+CONTENT-HASH: 609bed2147522b6d
 
 ## Blocking
+(none)
 
 ## Polish
+(none)
 
 ## Checked
-batch delta review: Playwright captures of the built page at 360 and 1280 px (liquid nitrogen fog; caption accurate); photo sits after a paragraph, 320 px wide, caption and credit under it, no horizontal overflow, float beside text at 1280, full-width flow at 360; alt text matches the image; caption plain Finnish and factual.
+batch delta review (alt/caption revision after reviewer findings): rebuilt page opened at 360 and 1280 px; photo(s) load, no horizontal overflow, float right at 1280 and in the column at 360, credit under caption, revised alt text and caption read naturally in fi-easy and match the picture.

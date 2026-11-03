@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 2075d323b2032075
+CONTENT-HASH: 0ed69c8df71f7483
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] Caption: "the white mist is water vapour ... condensed" - the visible mist is tiny liquid droplets; "...is made of tiny water droplets condensed from the air" is more exact (for science).
+(none)
 
 ## Checked
-batch delta review: built page opened in Chromium at 360, 768 and 1280 px, photo (liquid nitrogen) captured with its surrounding text and caption; image loads (WebP), no horizontal overflow, floats right beside text at 1280 and stands in the column at 360/768, caption short and factual, credit under the caption, credits list at page end, alt text describes the picture; fig-1 captures and the unchanged figures not affected.
+batch delta review (alt/caption revision after reviewer findings): rebuilt page opened at 360 and 1280 px; photo(s) load, no horizontal overflow, float right at 1280 and in the column at 360, credit under caption, revised alt text and caption read naturally in en and match the picture.

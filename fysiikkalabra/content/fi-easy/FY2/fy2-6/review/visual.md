@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: b1396178f7b43a29
+CONTENT-HASH: 3d6bcf3b69586629
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] Olkiluoto caption "Vasemmalla on kolmas yksikkö" could not be verified from the picture alone; the editor should confirm against the source file page.
+(none)
 
 ## Checked
-batch delta review: Playwright captures of the built page at 360 and 1280 px (two photos (wind turbines, Olkiluoto)); photo sits after a paragraph, 320 px wide, caption and credit under it, no horizontal overflow, float beside text at 1280, full-width flow at 360; alt text matches the image; caption plain Finnish and factual.
+batch delta review (alt/caption revision after reviewer findings): rebuilt page opened at 360 and 1280 px; photo(s) load, no horizontal overflow, float right at 1280 and in the column at 360, credit under caption, revised alt text and caption read naturally in fi-easy and match the picture.

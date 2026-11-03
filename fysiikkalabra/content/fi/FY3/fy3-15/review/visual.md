@@ -1,8 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: c98f72864f73a2e6
+CONTENT-HASH: 1c0d2e1d914d6ab5
+
 ## Blocking
 (none)
+
 ## Polish
-- Kuvateksti väittää pilven nousevan jäähdytystornista; kuvassa ei näy selvää tornia vaan höyrypilvi voimalaitoksen luona (Minor: tarkista tai sano 'höyrypilvi').
+(none)
+
 ## Checked
-batch delta review: the added photo in the built preview at 360/768/1280 px (loads, no horizontal overflow, 320 px figure, credit under the caption), alt text vs image, Finnish and factual accuracy of the caption, placement in the page rhythm.
+batch delta review (alt/caption revision after reviewer findings): rebuilt page opened at 360 and 1280 px; photo(s) load, no horizontal overflow, float right at 1280 and in the column at 360, credit under caption, revised alt text and caption read naturally in fi and match the picture.
