@@ -161,7 +161,7 @@
       ],
       "vary": "v",
       "names": {
-        "hiukkanen": "hiukkanen",
+        "hiukkanen": "particle",
         "v": "speed v",
         "B": "magnetic field B",
         "suunta": "direction of the field",
@@ -177,9 +177,9 @@
           "0.2": "$0.20\\,\\text{T}$"
         },
         "hiukkanen": {
-          "protoni": "protoni",
-          "deuteroni": "deuteroni",
-          "alfa": "alfahiukkanen",
+          "protoni": "proton",
+          "deuteroni": "deuteron",
+          "alfa": "alpha particle",
           "vetyioni": "negative hydrogen ion"
         },
         "suunta": {
@@ -220,7 +220,7 @@
       ],
       "vary": "hiukkanen",
       "names": {
-        "hiukkanen": "hiukkanen",
+        "hiukkanen": "particle",
         "v": "speed v",
         "B": "magnetic field B",
         "suunta": "direction of the field",
@@ -233,9 +233,9 @@
       },
       "values": {
         "hiukkanen": {
-          "protoni": "protoni",
-          "deuteroni": "deuteroni",
-          "alfa": "alfahiukkanen",
+          "protoni": "proton",
+          "deuteroni": "deuteron",
+          "alfa": "alpha particle",
           "vetyioni": "negative hydrogen ion"
         },
         "suunta": {
@@ -447,7 +447,7 @@
       "prompt": "In the LHC accelerator at CERN, protons go round a ring $26.7\\,\\text{km}$ long. Explain why the energy of the protons is increased by electric fields and not by magnets, and why an accelerator of greater energy needs stronger magnets or a larger ring.",
       "model": "The magnetic force is always perpendicular to the velocity of the proton, so it does no work and cannot increase the kinetic energy of the proton. The energy is increased by an electric field: each time the proton travels across the voltage $U$ of an accelerating gap, the field does work $qU$ on it. The task of the magnets is to bend the path of the protons into a ring. The radius of the path is $r = mv : (qB)$, so a faster proton curves more gently. To keep it in the same ring, the field $B$ must be strengthened. When the field of the magnets can no longer be increased, a greater energy requires a greater radius, that is a larger ring. Close to the speed of light the formula changes according to the theory of relativity, but the principle is the same.",
       "criteria": [
-        "I say that the magnetic force is perpendicular to the velocity and therefore does no work or changes the speed.",
+        "I say that the magnetic force is perpendicular to the velocity and therefore does no work and does not change the speed.",
         "I say that the electric field increases the energy, because it does work $qU$ on the proton.",
         "I use the formula for the radius $r = mv : (qB)$: a greater speed requires a stronger field or a larger radius.",
         "I distinguish the task of the magnets (bending the path) from the task of the electric fields (acceleration)."

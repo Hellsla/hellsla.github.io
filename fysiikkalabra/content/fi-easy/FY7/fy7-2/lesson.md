@@ -471,7 +471,7 @@ Neonissa on myös isotooppi neon-22. Sen ionit osuisivat $27{,}4\,\text{cm}$:n p
 ## Yleinen virhekäsitys
 Moni ajattelee, että magneettikenttä vetää varattua hiukkasta kentän suuntaan tai napaa kohti, kuten magneetti vetää rautanaulaa. Moni ajattelee myös, että kenttä kiihdyttää hiukkasta. Näin ei ole. Magneettinen voima on aina kohtisuorassa sekä nopeutta että kenttää vastaan. Siksi se ei tee työtä eikä muuta hiukkasen vauhtia. Se vain kääntää liikkeen suuntaa. Hiukkasen vauhtia voi kasvattaa vain sähkökenttä. Siksi kiihdyttimissä on sekä sähkökenttiä että magneetteja.
 
-Toinen virhe on unohtaa varauksen merkki. Oikean käden sääntö antaa voiman suunnan positiiviselle varaukselle. Negatiiviseen varaukseen voima vaikuttaa vastakkaiseen suuntaan. Elektroni lentää samalla vauhdilla samaan kenttään kuin protoni. Se kaartuu vastakkaiseen suuntaan. Sen rata on noin $1840$ kertaa pienempi, koska sen massa on niin paljon pienempi.
+Toinen virhe on unohtaa varauksen merkki. Oikean käden sääntö antaa voiman suunnan positiiviselle varaukselle. Negatiiviseen varaukseen voima vaikuttaa vastakkaiseen suuntaan. Elektroni lentää samalla vauhdilla samaan kenttään kuin protoni. Se kaartuu vastakkaiseen suuntaan. Sen radan säde on noin $1840$ kertaa pienempi, koska sen massa on niin paljon pienempi.
 
 ## Tiivistelmä
 - Sähkökenttä kiihdyttää varattua hiukkasta. Voima on $F_\text{s} = qE$. Kun hiukkanen kulkee jännitteen $U$ yli, se saa liike-energiaa $qU$.

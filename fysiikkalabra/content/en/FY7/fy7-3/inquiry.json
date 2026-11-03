@@ -133,8 +133,8 @@
       ],
       "vary": "l",
       "names": {
-        "I": "virta",
-        "N": "kierroksia",
+        "I": "current",
+        "N": "number of turns",
         "l": "length of the coil (cm)",
         "x": "position of the sensor",
         "dir": "direction of the current"
@@ -188,8 +188,8 @@
       ],
       "vary": "x",
       "names": {
-        "I": "virta",
-        "N": "kierroksia",
+        "I": "current",
+        "N": "number of turns",
         "l": "length of the coil",
         "x": "position of the sensor",
         "dir": "direction of the current"

@@ -117,7 +117,7 @@ Suoran johtimen kenttäviivat ovat johtimen ympärillä samankeskisiä ympyröit
 Kentän kiertosuunnan saat **oikean käden säännöllä**. Osoita oikean käden peukalolla virran suuntaan. Silloin koukistetut sormet kiertävät kenttäviivojen suuntaan. Kuvassa virta kulkee ylöspäin, joten ylhäältä katsottuna kenttä kiertää vastapäivään. Kuvissa virta kohti katsojaa merkitään pisteellä $\odot$ ja virta poispäin katsojasta ristillä $\otimes$. Merkit muistuttavat nuolen kärkeä ja sulkia.
 
 ### Käämin kenttä
-Kun johdin kierretään kierukaksi, syntyy **käämi**. Jokaisen kierroksen kenttä osoittaa käämin sisällä samaan suuntaan, ja kentät vahvistavat toisiaan. Pitkän käämin sisällä kenttäviivat ovat lähes suoria ja tasavälisiä. Kenttä on silloin lähes homogeeninen, eli se on joka paikassa samanlainen. Se on käämin akselin suuntainen.
+Kun johdin kierretään kierukaksi, syntyy **käämi**. Jokaisen kierroksen kenttä osoittaa käämin sisällä samaan suuntaan, ja kentät vahvistavat toisiaan. Pitkän käämin sisällä kenttäviivat ovat lähes suoria ja tasavälisiä. Kenttä on silloin lähes homogeeninen, eli se on samanlainen joka kohdassa käämin sisällä. Se on käämin akselin suuntainen.
 
 Käämin päissä kenttäviivat levenevät. Käämin ulkopuolella kenttä on samanlainen kuin sauvamagneetin kenttä luvussa *Magneetit, magneettinen dipoli ja magneettikenttä*. Pää, josta kenttäviivat tulevat ulos, on pohjoisnapa N.
 

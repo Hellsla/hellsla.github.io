@@ -413,7 +413,7 @@ def experiment_html(a, md, lid):
     bare = lambda k: tex_name(re.sub(r"\s+\([^()]*\)$", "", names.get(k, k)))   # "wavelength λ (nm)" -> "wavelength λ" beside a value that has its unit
     def fmt(k, v):   # name, value and unit on one line; a number and its unit are maths (teacher 2026-10-28, "kaikki LaTeXilla")
         tn = bare
-        if str(v) in words.get(k, {}): return f'<span class="nobr">{tn(k)}: {esc(words[k][str(v)])}</span>'
+        if str(v) in words.get(k, {}): return f'<span>{tn(k)}: {esc(words[k][str(v)])}</span>'   # words may wrap at 360 px ("direction of the current: downwards at the front", FY7 2026-11-04)
         if isinstance(v, str) and str(sim_words.get(v, v)) != v: v = sim_words[v]   # a sim value named in the page's language (lang sims.<id>.values), the Finnish page unchanged
         u = units.get(k, "")
         if isinstance(v, str) and re.fullmatch(r"-?\d+(?:\.\d+)?", v) and (not u or UNIT.fullmatch(u)):   # a select's number ("0.5"):

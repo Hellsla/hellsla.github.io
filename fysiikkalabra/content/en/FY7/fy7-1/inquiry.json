@@ -126,7 +126,7 @@
       "names": {
         "r": "distance r",
         "phi": "direction φ",
-        "magneetti": "magneetti",
+        "magneetti": "magnet",
         "maa": "Earth's field"
       },
       "units": {
@@ -138,7 +138,7 @@
           "ita": "north pole towards the east"
         },
         "maa": {
-          "1": "mukana"
+          "1": "on"
         }
       },
       "locked": [
@@ -197,7 +197,7 @@
       "names": {
         "r": "distance r",
         "phi": "direction φ",
-        "magneetti": "magneetti",
+        "magneetti": "magnet",
         "maa": "Earth's field"
       },
       "units": {
@@ -209,7 +209,7 @@
           "ita": "north pole towards the east"
         },
         "maa": {
-          "0": "pois"
+          "0": "off"
         }
       },
       "locked": [

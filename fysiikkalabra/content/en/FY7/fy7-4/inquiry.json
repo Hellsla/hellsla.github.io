@@ -123,9 +123,9 @@
       ],
       "vary": "I",
       "names": {
-        "I": "virta",
-        "alpha": "kulma",
-        "magneetti": "magneetti",
+        "I": "current",
+        "alpha": "angle",
+        "magneetti": "magnet",
         "l": "wire in the field"
       },
       "units": {
@@ -171,9 +171,9 @@
       ],
       "vary": "alpha",
       "names": {
-        "I": "virta",
-        "alpha": "kulma",
-        "magneetti": "magneetti",
+        "I": "current",
+        "alpha": "angle",
+        "magneetti": "magnet",
         "l": "wire in the field"
       },
       "units": {
