@@ -427,8 +427,6 @@ Pyöräilijän ketju alkaa Auringosta. Kasvi sitoo säteilyenergian kemialliseks
   <path d="M518,232 L518,274 L510,274 L525,296 L540,274 L532,274 L532,232 Z" fill="#e8590c" stroke-linejoin="round"/>
 </svg>
 
-<figure class="unit-photo"><img src="pics/fy2/artemis-i-launch.webp" alt="Raketti nousee yöllä. Sen alla on kirkas liekki ja iso savupilvi."><figcaption>Artemis I -raketti lähti Floridasta marraskuussa 2022. Polttoaineen kemiallinen energia muuttuu liike-energiaksi, lämmöksi, valoksi ja ääneksi.</figcaption></figure>
-
 Joka vaiheessa osa energiasta muuttuu lämpöenergiaksi. Lämpöenergia siirtyy lämpönä ympäristöön ja hajaantuu. Energiaa ei silti katoa. Luvussa *Energialajit ja energian säilyminen* todettiin, että ketjun alussa ja lopussa energiaa on yhtä paljon. Kuvan esimerkissä puuron $800\,\text{kJ}$ jakautuu liikkeeksi ja lämpöenergiaksi. Osat ovat yhteensä yhtä paljon kuin alussa. Lämpöenergia hajaantuu niin laajalle, ettei sitä ole enää helppo käyttää hyödyksi. Siksi energia tuntuu "kuluvan loppuun".
 
 <svg data-fig="sailyminen" viewBox="0 0 600 350" role="img" aria-label="Kaavakuva mittakaavassa (esimerkki): pyöräilijän aamupuuron kemiallisesta energiasta on 800 kJ. Lihakset muuttavat siitä liikkeeksi 200 kJ ja lämpöenergiaksi 600 kJ. Nuolten leveys on verrannollinen energiaan. Haarojen yhteinen leveys on yhtä suuri kuin alkuperäisen nuolen leveys." style="max-width:100%;font-size:24px">
@@ -445,6 +443,8 @@ Joka vaiheessa osa energiasta muuttuu lämpöenergiaksi. Lämpöenergia siirtyy 
 
 ### Joule
 Energian symboli on $E$. Energian yksikkö on joule, ja sen merkki on J. Yksi joule on pieni energia. Sen verran energiaa tarvitaan suunnilleen siihen, että nostat omenan metrin verran ylöspäin. Omena painaa noin $0{,}1\,\text{kg}$. Tässä luvussa opit joulen suuruuden esimerkkien avulla.
+
+<figure class="unit-photo"><img src="pics/fy2/artemis-i-launch.webp" alt="Raketti nousee yöllä. Sen alla on kirkas liekki ja iso savupilvi."><figcaption>Artemis I -raketti lähti Floridasta marraskuussa 2022. Polttoaineen kemiallinen energia muuttuu liike-energiaksi, lämmöksi, valoksi ja ääneksi.</figcaption></figure>
 
 ## Kaava: Energian yksikkö ja kerrannaisyksiköt
 Arjen energiat ovat jouleina isoja lukuja. Siksi käytetään etuliitteitä (luku *Suureet, yksiköt ja SI-järjestelmä*): kilo (k), mega (M), giga (G) ja tera (T). Jokainen etuliite on tuhatkertainen edelliseen verrattuna:

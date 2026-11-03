@@ -192,8 +192,6 @@ When an object is released from rest, its speed increases. **Free fall** is fall
 
 The change in speed per unit of time is called **acceleration**. The acceleration of a freely falling object is the **acceleration of free fall** $g = 9.81\,\text{m/s}^2$. The unit $\text{m/s}^2$ is read "metres per second per second": speed is measured in $\text{m/s}$, and it changes by this amount every second. So the number $g$ is not a speed but the rate at which the speed increases.
 
-<figure class="unit-photo"><img src="pics/fy1/bouncing-ball-strobe.webp" alt="Images of a bouncing yellow ball in two arcs on a black background. Near the bottom of the arcs the images are further apart than at the top."><figcaption>A bouncing ball photographed at equal time intervals. As the ball falls it speeds up, so the gaps between successive images grow.</figcaption></figure>
-
 ### Mass does not affect falling
 When there is no air resistance, all objects fall with the same acceleration regardless of their mass. In a vacuum a hammer and a feather fall equally fast, and a ball with a mass of $5\,\text{kg}$ has at every moment the same speed as a ball with a mass of $1\,\text{kg}$. The reason is explained later in connection with forces. In this chapter it is taken as an experimental result that you investigate yourself.
 
@@ -287,6 +285,8 @@ where $v$ is the downward speed ($\text{m/s}$), $g = 9.81\,\text{m/s}^2$ is the 
 </svg>
 
 So the $(t, v)$ graph of a falling object is a rising straight line through the origin. Its slope $\tfrac{\Delta v}{\Delta t}$ is the acceleration of free fall, so $g$ can be found from the graph by reading two points far apart. Because the acceleration is constant, $\Delta v = g\,\Delta t$ holds for any time interval: the speed increases by $9.81\,\text{m/s}$ every second even when the object did not start from rest.
+
+<figure class="unit-photo"><img src="pics/fy1/bouncing-ball-strobe.webp" alt="Images of a bouncing yellow ball in two arcs on a black background. Near the bottom of the arcs the images are further apart than at the top."><figcaption>A bouncing ball photographed at equal time intervals. As the ball falls it speeds up, so the gaps between successive images grow.</figcaption></figure>
 
 ## Worked example
 A stone is dropped from rest from a bridge, and it hits the water $1.5\,\text{s}$ later. What is the speed of the stone when it hits the water, in $\text{m/s}$ and in $\text{km/h}$? Air resistance is ignored.

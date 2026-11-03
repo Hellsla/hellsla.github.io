@@ -139,6 +139,8 @@ Different fuels contain different amounts of chemical energy for their mass. The
 
 Because the heat of combustion is energy per unit of mass, the energy released is directly proportional to the mass of fuel burnt: twice as much fuel releases twice as much energy. This gives the law used to calculate the energy released.
 
+<figure class="unit-photo"><img src="pics/fy2/garzweiler-excavator.webp" alt="A huge steel-lattice excavator in a wide sand-coloured open-pit mine on a cloudy day."><figcaption>A bucket-wheel excavator in the Garzweiler open-pit mine in Germany. The mine produces lignite, a moist coal with a low heating value.</figcaption></figure>
+
 ## Formula: Heat of combustion and released energy
 The energy released when a fuel burns is
 ```latex
@@ -207,8 +209,6 @@ Sources: firewood ($13\text{–}15\,\text{GJ/t}$, moisture $20\text{–}25\,\%$)
 
 ### Moisture and fuel quality
 Wet wood gives less energy per kilogram than dry wood, because part of its mass is water, which does not burn, and in addition part of the released energy is used to vaporise this water. This is why the firewood in the table is air-dried (moisture $20\text{–}25\,\%$) and the peat is milled peat with a moisture of $40\text{–}50\,\%$. Completely dry wood would have a heat of combustion of about $19\,\text{MJ/kg}$.
-
-<figure class="unit-photo"><img src="pics/fy2/garzweiler-excavator.webp" alt="A huge steel-lattice excavator in a wide sand-coloured open-pit mine on a cloudy day."><figcaption>A bucket-wheel excavator in the Garzweiler open-pit mine in Germany. The mine produces lignite, a moist coal with a low heating value.</figcaption></figure>
 
 ### The energy content of food and the heat of combustion
 A nutrition label gives energy per hundred grams, for example $2200\,\text{kJ}$ per $100\,\text{g}$. When you convert the energy to megajoules and the mass to kilograms, you get the energy content of the food per unit of mass, here $e = 22\,\text{MJ/kg}$. Both the energy content of food and the heat of combustion of a fuel can be given in the unit $\text{MJ/kg}$. The nutrition label describes the energy the body can use, whereas the heat of combustion of a fuel describes the energy released in burning. So they are not the same quantity: your body does not get all the energy from food that would be released if it burned, because, for example, part of the food is not absorbed from the intestine. The calculation is still the same as with the heat of combustion: the energy of food is $E = em$.

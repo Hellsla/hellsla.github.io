@@ -91,7 +91,7 @@ code, out = run("build.py")
 page = (T / "site/en" / f"{LESSON}.html").read_text() if (T / "site/en" / f"{LESSON}.html").exists() else ""
 expect("a reviewed translation is published at site/en/", code == 0 and page, out[-600:])
 expect("the English page is in English", '<html lang="en"' in page and "Physics Lab" in page and ">Check<" in page, page[:400])
-expect("its assets are the shared ones in site/", 'href="../site.css"' in page and 'src="../vendor/katex/katex.min.js"' in page and 'href="../../../index.html"' in page
+expect("its assets are the shared ones in site/", 'href="../site.css?v=' in page and 'src="../vendor/katex/katex.min.js"' in page and 'href="../../../index.html"' in page
        and not re.search(r'(?:src|href)="(?!\.\./|https?:|#|[\w.-]+\.html)', page), re.findall(r'(?:src|href)="[^"]*"', page)[:20])
 expect("its lesson links stay in English", 'href="FY3.html"' in page and 'href="index.html"' in page)
 expect("the numbers in the English page use a decimal point", re.search(r'data-answer="[\d.]+"', page) is not None and "{,}" not in "".join(re.findall(r"<svg\b.*?</svg>", page, re.S)))
