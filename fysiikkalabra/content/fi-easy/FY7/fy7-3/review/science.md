@@ -1,12 +1,14 @@
-VERDICT: FAIL
-CONTENT-HASH: 9a9be560bc30075f
+VERDICT: PASS
+CONTENT-HASH: 1c8a05ab21bb5bf4
 
 ## Blocking
-- **B** key_concepts "käämi": "Käämin sisällä kenttä on lähes samanlainen joka kohdassa" holds only inside a long coil away from its ends; the lesson says "Pitkän käämin sisällä ..." and that at the ends the field is about half the centre value, so "joka kohdassa" contradicts it. Suggest: "Pitkän käämin sisällä, kaukana päistä, kenttä on lähes samanlainen joka kohdassa."
 
 ## Polish
-- "oikean käden sääntö": the given form (peukalo virran suuntaan, sormet kentän suuntaan) is the straight-wire form; the lesson gives the swapped form for a coil. Prefix "Suoran johtimen kentän suunta: ..." to avoid confusion with the coil form and with the force rule of fy7-2/fy7-4.
-- "sähkömagneetti": "vain silloin, kun käämissä kulkee virta" ignores remanence; a fair simplification for a soft-iron core (C), matches the lesson.
+- meta.json:33 — "oikean käden sääntö" gives the straight-wire form; prefix "Suoran johtimen kentän suunta: ..." to keep it apart from the lesson's coil form and the force rule of fy7-2/fy7-4.
+- meta.json:37 — "sähkömagneetti ... vain silloin, kun käämissä kulkee virta" ignores remanence; fair for a soft-iron core and matches the lesson (C).
 
 ## Checked
-batch delta review: four key_concepts against lesson.md §Oikean käden sääntö, §käämi, §sähkömagneetti, formula conditions and summary. No choices changed.
+- Lesson body, inquiry.json and sim unchanged since the passed version (git diff: only meta.json); key_concepts judged in full.
+- meta.json:29 "käämi": "Pitkän käämin sisällä, kaukana sen päistä" now matches lesson.md:120, 322, 328 (ends ≈ half the centre value) and :434, :439; last round's B finding resolved.
+- meta.json:25 current-carrying wire creates a magnetic field around it: correct.
+- Right-hand rule wording (thumb along current, fingers curl along field) is correct for the straight wire.

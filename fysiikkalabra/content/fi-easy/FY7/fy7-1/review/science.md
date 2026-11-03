@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: c806a2df6f4baa21
+CONTENT-HASH: 16eb1f679b402831
 
 ## Blocking
 
 ## Polish
-- "kenttäviiva": "näyttää kentän suunnan" could say "kentän suunta on viivan suuntainen kussakin kohdassa"; at this level the wording leaves no wrong picture (C).
+- meta.json:39 — "kenttäviiva": "näyttää kentän suunnan" could say "kentän suunta on viivan suuntainen kussakin kohdassa"; fair at this level (C).
 
 ## Checked
-batch delta review: five key_concepts (magneetti, magneettinen dipoli, magneettikenttä, kenttäviiva, magneettivuon tiheys) against lesson.md §Magneettinen dipoli, §magneettikenttä, tesla paragraph and summary; all physically correct and consistent (pole rules, poles always in pairs after cutting, field as region where a magnet/compass feels a force, line density = field strength, B as vector with unit T). No choices changed.
+- Delta: meta.json:43 "magneettivuon tiheys" drops "Sen tunnus on B"; the remaining "kertoo magneettikentän voimakkuuden ja suunnan ... yksikkö on tesla" is correct and agrees with the glossary and lesson (B a vector, unit T).
+- Other four key_concepts unchanged from the passed version. No choices changed.
