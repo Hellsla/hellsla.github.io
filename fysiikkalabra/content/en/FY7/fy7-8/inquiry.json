@@ -1,0 +1,328 @@
+{
+  "version": 1,
+  "contribution": "The transformer changes an alternating voltage by induction, $U_1 : U_2 = N_1 : N_2 = I_2 : I_1$, and works only with alternating current; the power loss of a transmission line, $P_\\text{h} = R I^2$, explains why electricity is transmitted at high voltage. With the simulation the student finds that the loss decreases with the square of the voltage.",
+  "learn": [
+    "explain how a transformer changes an alternating voltage and why it does not work with direct current.",
+    "calculate the voltages, currents and numbers of turns of a transformer.",
+    "calculate the power loss of a transmission line and justify why electricity is transmitted at high voltage."
+  ],
+  "prior": [
+    "A changing magnetic flux induces a voltage in a coil (chapter *Electromagnetic induction*)",
+    "A generator produces an alternating voltage, and the effective value of the mains voltage is $230\\,\\text{V}$ (chapter *The generator and alternating current*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "The generator of a power plant produces a voltage of about $20\\,\\text{kV}$, and the voltage at the sockets in homes is $230\\,\\text{V}$. In between, the electricity travels hundreds of kilometres along the lines of the transmission grid, where the voltage is as high as $400\\,\\text{kV}$. So the voltage is first raised enormously and then lowered step by step. This requires expensive transformers and tall pylons.",
+      "question": "Why is electricity not transmitted directly at the voltage of the generator, and how can a voltage be changed at all?"
+    },
+    {
+      "id": "kertaus-induktio",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Review: induction",
+      "prompt": "A magnetic flux passes through a coil. In which situation is a voltage induced in the coil?",
+      "choices": [
+        {
+          "text": "When the magnetic flux through the coil changes.",
+          "correct": true,
+          "feedback": "Correct. According to the law of induction, the voltage is proportional to the rate of change of the flux, $e = -N \\Delta\\Phi : \\Delta t$ (chapter *Electromagnetic induction*). Today the transformer is based on this."
+        },
+        {
+          "text": "Whenever a strong magnetic flux passes through the coil.",
+          "feedback": "Even a large constant flux does not induce a voltage. A voltage is produced only when the flux changes: $e = -N \\Delta\\Phi : \\Delta t$ (chapter *Electromagnetic induction*)."
+        },
+        {
+          "text": "Only when the coil is connected to a battery.",
+          "feedback": "In induction the coil does not need a voltage source: a voltage is produced when the magnetic flux through the coil changes (chapter *Electromagnetic induction*)."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "ennuste-dc",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: the transformer and a battery",
+      "prompt": "The secondary coil of a transformer has twice as many turns as the primary coil. The primary coil is connected to a $12\\,\\text{V}$ battery, and a voltmeter is connected to the secondary coil. What does the meter show when current has already been flowing in the primary coil for some time?",
+      "justify": true,
+      "reveal": {
+        "after": "teoria-osa",
+        "pending": "The feedback opens when you have read the part Core idea of the Theory summary."
+      },
+      "choices": [
+        {
+          "text": "$24\\,\\text{V}$, because the secondary coil has twice as many turns.",
+          "feedback": "The ratio of turns determines the voltage only when the flux changes. The direct current of the battery produces a constant magnetic flux, which does not induce a voltage, so the meter shows zero. A voltage pulse is seen only at the moment of switching on."
+        },
+        {
+          "text": "$12\\,\\text{V}$, because the voltage of the battery is transferred through the iron core to the secondary coil.",
+          "feedback": "The coils are not conductively connected, and the voltage does not pass along the iron. A voltage is produced in the secondary coil only by induction, when the magnetic flux changes. With direct current the flux is constant, so the voltage is zero."
+        },
+        {
+          "text": "$0\\,\\text{V}$, because the magnetic flux produced by direct current does not change.",
+          "correct": true,
+          "feedback": "Correct. A voltage is induced in the secondary coil only when the magnetic flux changes. The direct current of the battery produces a constant flux, so the voltage is zero; only at the moment of switching on does the flux change and the meter twitches. That is why the power grid uses alternating current."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-jannite",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: double the voltage",
+      "prompt": "A power plant transmits a power of $200\\,\\text{MW}$ along the same line to a city. The transmission voltage is raised from $200\\,\\text{kV}$ to $400\\,\\text{kV}$, and the transmitted power stays the same. How does the power loss, the power that becomes internal energy in the line, change?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 3
+      },
+      "choices": [
+        {
+          "text": "It halves, because the current halves.",
+          "feedback": "The current halves, but the values of the model show that this is not the whole story: at $200\\,\\text{kV}$ the loss is $6.0\\,\\text{MW}$ and at $400\\,\\text{kV}$ it is $1.5\\,\\text{MW}$, a quarter. The power loss is $P_\\text{h} = R I^2$, so it depends on the square of the current."
+        },
+        {
+          "text": "It falls to a quarter.",
+          "correct": true,
+          "feedback": "The values of the model support this: at $200\\,\\text{kV}$ the current is $1000\\,\\text{A}$ and the loss $6.0\\,\\text{MW}$, at $400\\,\\text{kV}$ the current is $500\\,\\text{A}$ and the loss $1.5\\,\\text{MW}$. The current halves, and the power loss $P_\\text{h} = R I^2$ falls to a quarter."
+        },
+        {
+          "text": "It becomes four times as large, because the power is $P = U^2 : R$.",
+          "feedback": "The values of the model contradict this: the loss decreases from $6.0\\,\\text{MW}$ to $1.5\\,\\text{MW}$. In the expression $U^2 : R$ the voltage is the voltage across the resistor, but the transmission voltage is not across the resistance of the line. The loss of the line depends on the current: $P_\\text{h} = R I^2$."
+        },
+        {
+          "text": "It stays the same, because the transmitted power is the same.",
+          "feedback": "The values of the model contradict this: the loss decreases from $6.0\\,\\text{MW}$ to $1.5\\,\\text{MW}$. The same power flows at a higher voltage with a smaller current, and it is the current that heats the line: $P_\\text{h} = R I^2$."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "A power plant sends power to a city along a power line. Choose the transmission voltage, the power and the length of the line, and watch how large a share of the power becomes internal energy in the line.",
+      "howto": "Adjust the transmission voltage $U$, the transmitted power $P$ and the length of the line $l$. On the left of the picture is the power plant with its step-up transformer, in the middle the power line, and on the right the step-down transformer and the city. The line turns the redder, the larger the share of the power that becomes internal energy in it. The *bars* under the picture show the power that arrives (green) and the power loss (orange) on the same scale. From the Readings row you see the current of the line, its resistance and the turns ratio of the step-up transformer.",
+      "model": "The model treats the transmission in a simplified way as transmission along two conductors: the power $P$ is sent by the power plant at the voltage $U$, and the total resistance of the conductors is $R = 0.040\\,\\tfrac{\\Omega}{\\text{km}} \\cdot l$. The real transmission grid is three-phase, but the dependence of the loss on the current is the same. The voltage of the generator is always $20\\,\\text{kV}$, and the transformers are assumed to be ideal. If the power loss would be greater than the power sent, the transmission is not possible, and the model says so. The readings are values calculated by the model, not measurements.",
+      "calc": "The current of the line is obtained from the power and the transmission voltage, $I = P : U$, and the power that becomes internal energy in the line is\n\n$$P_\\text{h} = R I^2$$\n\nThe power that arrives is $P_\\text{arriving} = P - P_\\text{h}$, and the share of the loss is $P_\\text{h} : P$. The turns ratio of the step-up transformer is $N_2 : N_1 = U : 20\\,\\text{kV}$."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 1: only the transmission voltage changes",
+      "intro": "Test prediction 2. The power is $200\\,\\text{MW}$ and the length of the line $150\\,\\text{km}$; change only the transmission voltage. Record at least the voltages $100\\,\\text{kV}$, $200\\,\\text{kV}$ and $400\\,\\text{kV}$, and if you wish also $50\\,\\text{kV}$. Compare how the current and the power loss change when the voltage doubles.",
+      "initial": {
+        "U": 100,
+        "P": 200,
+        "l": 150
+      },
+      "locked": [
+        "P",
+        "l"
+      ],
+      "vary": "U",
+      "names": {
+        "U": "transmission voltage",
+        "P": "power",
+        "l": "length of line"
+      },
+      "units": {
+        "U": "kV",
+        "P": "MW",
+        "l": "km"
+      },
+      "measure": [
+        {
+          "key": "I",
+          "label": "I (A)"
+        },
+        {
+          "key": "Ph",
+          "label": "P_h (MW)"
+        },
+        {
+          "key": "osuus",
+          "label": "share (%)"
+        }
+      ],
+      "min": 3
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion: loss and voltage",
+      "after": [
+        "koe-1"
+      ],
+      "prompt": "On the basis of your table, write: how do the current and the power loss of the line change when the transmission voltage doubles? What is the dependence between the power loss and the voltage? What does this mean for a power plant that wants to transmit electricity far?",
+      "model": "When the voltage doubles from $100\\,\\text{kV}$ to $200\\,\\text{kV}$, the current halves from $2000\\,\\text{A}$ to $1000\\,\\text{A}$ and the power loss falls from $24\\,\\text{MW}$ to $6.0\\,\\text{MW}$, to a quarter. Likewise at $400\\,\\text{kV}$ the current is $500\\,\\text{A}$ and the loss $1.5\\,\\text{MW}$, only $0.75\\,\\%$ of the power. The current is inversely proportional to the voltage, $I = P : U$, and the loss is proportional to the square of the current, $P_\\text{h} = R I^2$, so the loss is inversely proportional to the square of the voltage. That is why it pays to raise the voltage of the generator with a transformer to high voltage before the transmission and to lower it at the destination. The values are calculated by the model.",
+      "criteria": [
+        "I stated that the current halves when the voltage doubles, and justified it with the equation $P = U I$.",
+        "I stated that the power loss falls to a quarter, and linked it to the equation $P_\\text{h} = R I^2$.",
+        "I noted that the loss is inversely proportional to the square of the voltage.",
+        "I justified that this is why electricity is transmitted at high voltage and the voltage is changed with transformers."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Return to your predictions",
+      "prompt": "Compare your predictions with the theory and with the values of the model in the experiment. Then return to the opening question: why is electricity not transmitted at the generator voltage of $20\\,\\text{kV}$, and why does changing the voltage require alternating current?",
+      "predictions": [
+        "ennuste-dc",
+        "ennuste-jannite"
+      ],
+      "optional": true
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the error",
+      "prompt": "A power plant transmits a power of $200\\,\\text{MW}$ at a voltage of $400\\,\\text{kV}$ along a line whose resistance is $6.0\\,\\Omega$. A student calculates the power loss\n\n$$\\begin{aligned} P_\\text{h} &= \\frac{U^2}{R} \\\\ &= \\frac{(400\\,000\\,\\text{V})^2}{6.0\\,\\Omega} \\\\ &\\approx 2.7 \\cdot 10^{10}\\,\\text{W} \\end{aligned}$$\n\nWhere is the error?",
+      "choices": [
+        {
+          "text": "The transmission voltage is not across the resistance of the line: first $I = P : U$, then $P_\\text{h} = R I^2 = 1.5\\,\\text{MW}$.",
+          "correct": true,
+          "feedback": "Correct. The current is $I = 200\\,\\text{MW} : 400\\,\\text{kV} = 500\\,\\text{A}$, and the loss is $P_\\text{h} = 6.0\\,\\Omega \\cdot (500\\,\\text{A})^2 = 1.5\\,\\text{MW}$. The student's result $27\\,000\\,\\text{MW}$ is over a hundred times the transmitted power, which is impossible: the loss cannot be greater than the power sent."
+        },
+        {
+          "text": "The voltage should have been substituted in kilovolts, which gives a power loss of $27\\,\\text{kW}$.",
+          "feedback": "The units have been substituted correctly in SI units. The error is in the expression: $U^2 : R$ would give the power of a resistor only if $U$ were the voltage across the resistor. Across the line there is only the voltage drop $R I = 6.0\\,\\Omega \\cdot 500\\,\\text{A} = 3.0\\,\\text{kV}$."
+        },
+        {
+          "text": "The method is correct, but the result must still be divided by the transmitted power to get the power loss.",
+          "feedback": "Dividing would give a share, but $2.7 \\cdot 10^{10}\\,\\text{W}$ is impossible in itself, because it is over a hundred times the transmitted power. The loss of a line is calculated from the current: $I = P : U = 500\\,\\text{A}$ and $P_\\text{h} = R I^2 = 1.5\\,\\text{MW}$."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply to a new situation: the connection line of a wind farm",
+      "prompt": "A wind farm feeds a power of $33\\,\\text{MW}$ to a substation along a $110\\,\\text{kV}$ power line. The total resistance of the conductors is $8.0\\,\\Omega$. How large a power becomes internal energy in the line? Answer in kilowatts.",
+      "answer": 720,
+      "unit": "kW",
+      "tolerance": 0.02,
+      "hints": [
+        "The line is heated by the current. How is the current obtained when the power and the transmission voltage are known?",
+        "The current is $I = P : U$, and the power loss $P_\\text{h} = R I^2$.",
+        "$I = 33\\,000\\,000\\,\\text{W} : 110\\,000\\,\\text{V} = 300\\,\\text{A}$, so $P_\\text{h} = 8.0\\,\\Omega \\cdot (300\\,\\text{A})^2$."
+      ],
+      "mistakes": [
+        {
+          "value": 1512500,
+          "feedback": "You calculated $U^2 : R$. The transmission voltage is not across the resistance of the line, so the result is impossible, much greater than the whole transmitted power. First calculate the current $I = P : U$ and then $P_\\text{h} = R I^2$."
+        },
+        {
+          "value": 2.4,
+          "feedback": "You calculated $R I$, which is the voltage drop of the line in volts divided by a thousand. The power loss is $P_\\text{h} = R I^2$: the current must be raised to the second power."
+        },
+        {
+          "value": 0.72,
+          "feedback": "The result is correct in megawatts. Convert it to kilowatts: $1\\,\\text{MW} = 1000\\,\\text{kW}$."
+        }
+      ],
+      "solution": "**Given:** power $P = 33\\,\\text{MW}$, transmission voltage $U = 110\\,\\text{kV}$, total resistance of the conductors $R = 8.0\\,\\Omega$\n\n**Find:** the power $P_\\text{h}$ that becomes internal energy in the line, in kilowatts\n\n**Principle:** In the resistance of the line the current changes electrical energy into internal energy at the rate $P_\\text{h} = R I^2$. The current is obtained from the transmitted power and the transmission voltage, because $P = U I$. The transmission voltage is not across the resistance of the line, so the expression $U^2 : R$ cannot be used.\n\n**Formula:** $P = U I$, so $I = \\dfrac{P}{U}$, and $P_\\text{h} = R I^2$\n\n**Conversions:** $P = 33\\,\\text{MW} = 33 \\cdot 10^{6}\\,\\text{W}$ and $U = 110\\,\\text{kV} = 110 \\cdot 10^{3}\\,\\text{V}$. Finally $1\\,\\text{kW} = 1000\\,\\text{W}$.\n\n**Substitution:** $I = \\dfrac{33 \\cdot 10^{6}\\,\\text{W}}{110 \\cdot 10^{3}\\,\\text{V}} = 300\\,\\text{A}$ and $P_\\text{h} = 8.0\\,\\Omega \\cdot (300\\,\\text{A})^2 = 720\\,000\\,\\text{W} = 720\\,\\text{kW}$\n\n**Answer:** $720\\,\\text{kW}$ or $7.2 \\cdot 10^{2}\\,\\text{kW}$, two significant figures like the power $33\\,\\text{MW}$ and the resistance $8.0\\,\\Omega$.\n\n**Reasonableness:** The loss is $720\\,\\text{kW} : 33\\,000\\,\\text{kW} \\approx 2.2\\,\\%$ of the transmitted power, the same order of magnitude as the share of loss in the transmission grid reported by Fingrid, about $2\\,\\%$. The loss is a small part of the power, as it should be in a working grid."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise at three levels. Level 1 tasks use one formula, level 2 tasks combine two steps, such as the current and the power loss, and level 3 requires reasoning in a new situation."
+    },
+    {
+      "id": "check-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept: why high voltage",
+      "prompt": "Why is electrical energy transmitted over long distances at a high voltage?",
+      "choices": [
+        {
+          "text": "The same power flows with a smaller current, and the loss of the line depends on the square of the current.",
+          "correct": true,
+          "feedback": "Correct. When $P = U I$ stays the same, a higher voltage means a smaller current, and the power loss $P_\\text{h} = R I^2$ falls with the square of the current."
+        },
+        {
+          "text": "At a high voltage electricity travels faster, so it has less time to heat the line.",
+          "feedback": "Voltage does not make the transmission faster, and the loss does not depend on the travel time. The line is heated by the current: at a higher voltage the same power flows with a smaller current, and $P_\\text{h} = R I^2$ decreases."
+        },
+        {
+          "text": "The transformer increases the power when it raises the voltage, so more power arrives.",
+          "feedback": "A transformer does not increase power: in an ideal transformer $U_1 I_1 = U_2 I_2$. When the voltage increases, the current decreases, and it is precisely the smaller current that reduces the loss of the line $P_\\text{h} = R I^2$."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Calculate: a lamp transformer",
+      "prompt": "The ideal transformer of a low-voltage luminaire lowers the mains voltage $230\\,\\text{V}$ to a voltage of $12\\,\\text{V}$. The total power of the lamps connected to the secondary coil is $60\\,\\text{W}$. How large a current flows in the primary coil? Answer in amperes.",
+      "answer": 0.26087,
+      "unit": "A",
+      "tolerance": 0.02,
+      "hints": [
+        "An ideal transformer does not consume energy. So what is the power coming into the primary coil?",
+        "The primary power is $60\\,\\text{W}$, and $P = U_1 I_1$.",
+        "$I_1 = 60\\,\\text{W} : 230\\,\\text{V}$."
+      ],
+      "mistakes": [
+        {
+          "value": 5.0,
+          "feedback": "This is the secondary current $60\\,\\text{W} : 12\\,\\text{V}$. The voltage of the primary coil is $230\\,\\text{V}$, so the current for the same power is much smaller."
+        },
+        {
+          "value": 95.83,
+          "feedback": "You used the turns ratio the wrong way round. The currents are in inverse proportion to the voltages, $I_1 : I_2 = U_2 : U_1$, so the primary current of a step-down transformer is smaller than the secondary current."
+        }
+      ],
+      "solution": "**Given:** primary voltage $U_1 = 230\\,\\text{V}$, secondary voltage $U_2 = 12\\,\\text{V}$, power of the lamps $P = 60\\,\\text{W}$, ideal transformer\n\n**Find:** the primary current $I_1$ in amperes\n\n**Principle:** An ideal transformer does not consume energy, so the power coming into the primary coil is the same as the power leaving the secondary coil for the lamps, $U_1 I_1 = U_2 I_2 = P$.\n\n**Formula:** $P = U_1 I_1$, so $I_1 = \\dfrac{P}{U_1}$\n\n**Conversions:** None needed: the power is in watts and the voltage in volts, and $\\tfrac{\\text{W}}{\\text{V}} = \\text{A}$.\n\n**Substitution:** $I_1 = \\dfrac{60\\,\\text{W}}{230\\,\\text{V}} = 0.2609\\,\\text{A}$\n\n**Answer:** $0.26\\,\\text{A}$, two significant figures like the power $60\\,\\text{W}$.\n\n**Reasonableness:** The secondary current is $60\\,\\text{W} : 12\\,\\text{V} = 5.0\\,\\text{A}$. The primary current of a step-down transformer must be smaller, and the ratio $5.0\\,\\text{A} : 0.26\\,\\text{A} \\approx 19$ is the same as the ratio of the voltages $230\\,\\text{V} : 12\\,\\text{V} \\approx 19$."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Explain: the transformer in the power grid",
+      "prompt": "Explain how a transformer changes a voltage. Also explain why the power grid uses alternating current and not direct current, when the voltage has to be changed on the way from the power plant to the home.",
+      "model": "The alternating current in the primary coil produces in the iron core a magnetic flux that changes in time with the current. The iron core guides the flux through the secondary coil as well, and the changing flux induces an equal voltage in every turn of the secondary coil. Therefore the voltage of a coil is proportional to its number of turns, and in an ideal transformer $U_1 : U_2 = N_1 : N_2$. Power is conserved, so when the voltage increases, the current decreases. Direct current produces a constant flux, which does not induce a voltage, so a transformer does not work with direct current. An alternating voltage can be raised with transformers to high voltage for the transmission, when the current and the losses $P_\\text{h} = R I^2$ are small, and lowered at the destination to a safe $230\\,\\text{V}$.",
+      "criteria": [
+        "I say that the alternating current in the primary coil produces in the iron core a changing magnetic flux that passes through the secondary coil.",
+        "I explain that the changing flux induces in the secondary coil a voltage that is proportional to the number of turns.",
+        "I explain that the flux of direct current does not change, so no voltage is induced in the secondary coil with direct current.",
+        "I link changing the voltage to transmission losses: at high voltage the current and the losses are small."
+      ],
+      "optional": true
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, two quick questions. Answer first yourself and open the answer only then."
+    }
+  ]
+}

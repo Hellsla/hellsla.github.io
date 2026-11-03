@@ -1,0 +1,105 @@
+{
+  "level1": [
+    {
+      "id": "fy7-5-L1-01",
+      "level": 1,
+      "text": "A square wire loop of side $0.12\\,\\text{m}$ is perpendicular to a uniform magnetic field. The magnetic flux density of the field is $0.35\\,\\text{T}$. How large is the magnetic flux through the loop? Give the answer in milliwebers.",
+      "answer": 5.0,
+      "unit": "mWb",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-5-L1-02",
+      "level": 1,
+      "text": "A coil has $400$ turns. When a magnet is pushed into the coil, the magnetic flux through one turn grows steadily by $1.5\\,\\text{mWb}$ in $0.20\\,\\text{s}$. How large is the induced voltage in the coil?",
+      "answer": 3.0,
+      "unit": "V",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-5-L1-03",
+      "level": 1,
+      "text": "A metal rod of length $0.25\\,\\text{m}$ moves at a speed of $2.0\\,\\text{m/s}$ in a uniform magnetic field of $0.40\\,\\text{T}$. The rod, its velocity and the field are mutually perpendicular. How large is the induced voltage between the ends of the rod?",
+      "answer": 0.2,
+      "unit": "V",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-5-L1-04",
+      "level": 1,
+      "text": "A coil has $150$ turns. When a magnet is pulled away from the coil, an average induced voltage of $0.45\\,\\text{V}$ appears between the ends of the coil for $0.12\\,\\text{s}$. By how much did the magnetic flux through one turn change? Give the answer in milliwebers.",
+      "answer": 0.36,
+      "unit": "mWb",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-5-L1-05",
+      "level": 1,
+      "text": "An induced voltage of $12\\,\\text{mV}$ is measured between the ends of a metal rod sliding on two rails. The distance between the rails is $0.30\\,\\text{m}$, and the magnetic flux density of the field perpendicular to the plane of the rails is $0.080\\,\\text{T}$. The rod moves perpendicular to itself. How large is the speed of the rod?",
+      "answer": 0.5,
+      "unit": "m/s",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy7-5-L2-01",
+      "level": 2,
+      "text": "A flexible wire loop is perpendicular to a uniform magnetic field of $0.80\\,\\text{T}$. The loop is squeezed so that its area decreases steadily from $200\\,\\text{cm}^2$ to $50\\,\\text{cm}^2$ in $0.25\\,\\text{s}$. How large is the induced voltage in the loop? Give the answer in millivolts.",
+      "answer": 48,
+      "unit": "mV",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-5-L2-02",
+      "level": 2,
+      "text": "A coil has $50$ turns. The graph shows the magnetic flux $\\Phi$ through one turn as a function of time $t$. What is the greatest absolute value of the induced voltage of the coil in the interval $0$–$0.70\\,\\text{s}$? Read the necessary values from the graph.",
+      "figure": "fy7-5/flux-task",
+      "answer": 2.0,
+      "unit": "V",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-5-L2-03",
+      "level": 2,
+      "text": "Two horizontal metal rails are $0.40\\,\\text{m}$ apart, and their ends are joined by a $2.0\\,\\Omega$ resistor. A transverse metal rod slides on the rails at a speed of $3.0\\,\\text{m/s}$. The magnetic flux density of the vertical magnetic field is $0.50\\,\\text{T}$. The resistance of the rails and the rod is very small. How large is the current through the resistor?",
+      "answer": 0.3,
+      "unit": "A",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-5-L2-04",
+      "level": 2,
+      "text": "A square coil of side $5.0\\,\\text{cm}$ with $20$ turns is pulled at a steady speed of $0.25\\,\\text{m/s}$ into a region of uniform magnetic field. The field of $0.30\\,\\text{T}$ is perpendicular to the plane of the coil, and the leading side of the coil is parallel to the edge of the field. How large is the induced voltage in the coil during the time in which the coil is entering the field? Give the answer in millivolts.",
+      "answer": 75,
+      "unit": "mV",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy7-5-L3-01",
+      "level": 3,
+      "text": "A train travels at a speed of $200\\,\\text{km/h}$ on a horizontal track. The track gauge of the Finnish railways is $1524\\,\\text{mm}$ (Finnish Transport Infrastructure Agency), and the metal axle of a pair of wheels extends from rail to rail. The vertical component of the Earth's magnetic field in southern Finland is about $50\\,\\mu\\text{T}$ (WMM2025 model, NOAA/BGS). How large is the induced voltage between the ends of the axle at the rails? Give the answer in millivolts.",
+      "answer": 4.2,
+      "unit": "mV",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-5-L3-02",
+      "level": 3,
+      "text": "The Earth's magnetic field is measured with a flip coil. The coil has $100$ turns and an area of $0.020\\,\\text{m}^2$. The coil is at first in a position in which its plane is perpendicular to the Earth's magnetic field. The coil is turned through half a turn in $0.10\\,\\text{s}$, and an average induced voltage of $2.0\\,\\text{mV}$ appears in the coil during this time. How large is the magnetic flux density of the Earth's magnetic field? Give the answer in microteslas.",
+      "answer": 50,
+      "unit": "µT",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-5-L3-03",
+      "level": 3,
+      "text": "A bar magnet is dropped through a vertical coil of $300$ turns, and the voltage of the coil is measured with a data logger. When the magnet enters the coil, the measurement shows a voltage pulse that is roughly triangular: the voltage rises from zero to a peak value of $0.90\\,\\text{V}$ and falls back to zero, and the pulse lasts $40\\,\\text{ms}$ in all. Before the drop the magnet is far from the coil. How large is the magnetic flux through one turn on average when the pulse has ended and the magnet is in the middle of the coil? Give the answer in milliwebers.",
+      "answer": 0.06,
+      "unit": "mWb",
+      "tolerance": 0.02
+    }
+  ]
+}

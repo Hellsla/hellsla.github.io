@@ -1,0 +1,359 @@
+{
+  "version": 1,
+  "contribution": "Käämiin syntyy jännite vain, kun sen läpi kulkeva magneettivuo muuttuu. Luvussa on kolme asiaa. Magneettivuo on $\\Phi = BA$. Induktiolaki on $e = -N \\cdot \\Delta\\Phi : \\Delta t$, ja jännite on vuon kuvaajan kulmakerroin. Liikkuvan tangon jännite $e = vBl$ johdetaan tangon elektroneihin kohdistuvasta magneettisesta voimasta. Simulaatiossa käämi kulkee kenttäalueen läpi, ja kuvaajat $\\Phi(t)$ ja $e(t)$ piirtyvät.",
+  "learn": [
+    "laskemaan magneettivuon ja käämiin syntyvän induktiojännitteen induktiolain avulla.",
+    "päättelemään induktiojännitteen magneettivuon kuvaajan kulmakertoimesta.",
+    "selittämään liikkuvan tangon induktiojännitteen sillä, että magneettinen voima kohdistuu tangon elektroneihin."
+  ],
+  "prior": [
+    "Magneettikenttä kohdistaa liikkuvaan varattuun hiukkaseen voiman $F = qvB$, kun nopeus on kohtisuorassa kenttää vastaan (luku *Varattu hiukkanen sähkö- ja magneettikentässä*)",
+    "Virtajohdin ja käämi synnyttävät ympärilleen magneettikentän (luku *Virtajohtimen ja käämin magneettikenttä*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Polkupyörän napadynamossa ei ole paristoa eikä akkua. Kun pyörä seisoo, lamppu on pimeä. Heti kun pyörä alkaa pyöriä, lamppu syttyy. Mitä lujempaa ajat, sitä kirkkaammin lamppu palaa. Dynamon sisällä on kestomagneetti ja johdinkäämi. Vuonna 1831 Michael Faraday teki samanlaisen havainnon laboratoriossaan. Magneetti käämin vieressä ei tuottanut virtaa, mutta liikkuva magneetti tuotti.",
+      "question": "Mikä magneetin ja käämin tilanteessa ratkaisee, syntyykö käämiin jännite? Mistä jännitteen suuruus riippuu?"
+    },
+    {
+      "id": "kertaus-voima",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Kertaa: magneettinen voima varaukseen",
+      "prompt": "Elektroni on paikallaan homogeenisessa magneettikentässä. Kentän magneettivuon tiheys on $0{,}50\\,\\text{T}$. Millainen voima kenttä kohdistaa elektroniin?",
+      "choices": [
+        {
+          "text": "Ei mitään voimaa, koska magneettinen voima $F = qvB$ on nolla, kun nopeus on nolla.",
+          "correct": true,
+          "feedback": "Oikein. Magneettikenttä vaikuttaa vain liikkuvaan varaukseen (luku *Varattu hiukkanen sähkö- ja magneettikentässä*). Tästä seuraa tämän luvun asia. Kentässä liikkuvan metallitangon elektronit siirtyvät tangon päähän, mutta paikallaan olevan tangon elektronit eivät."
+        },
+        {
+          "text": "Kentän suuntaisen voiman, koska elektroni on kentässä kuin kompassin neula.",
+          "feedback": "Kompassin neula on magneettinen dipoli. Elektroniin kenttä vaikuttaa kuitenkin vain, kun elektroni liikkuu: $F = qvB$. Kun nopeus on nolla, voima on nolla (luku *Varattu hiukkanen sähkö- ja magneettikentässä*)."
+        },
+        {
+          "text": "Kenttää vastaan kohtisuoran voiman, jonka suuruus riippuu kentästä.",
+          "feedback": "Voima on kohtisuorassa kenttää vastaan vain silloin, kun varaus liikkuu. Sen suuruus on silloin $F = qvB$. Paikallaan olevaan elektroniin ei kohdistu voimaa lainkaan (luku *Varattu hiukkanen sähkö- ja magneettikentässä*)."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "ennuste-sisalla",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 1: käämi kokonaan kentässä",
+      "prompt": "Neliön muotoinen käämi kulkee tasaisella vauhdilla magneettikentän alueen läpi. Kentän alue on leveämpi kuin käämi. Käämin päät on kytketty jännitemittariin. Käämi on nyt kokonaan kentän sisällä ja liikkuu yhä samalla vauhdilla. Mitä mittari näyttää?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "Suurimman jännitteen, koska koko käämi on silloin magneettikentässä.",
+          "feedback": "Mallin arvot kumoavat tämän. Kun käämi on kokonaan kentän sisällä, jännite on $0\\,\\text{mV}$, vaikka vuo on silloin suurimmillaan, $2{,}0\\,\\text{mWb}$. Jännite ei synny kentästä vaan vuon muutoksesta. Kentän sisällä käämin läpi kulkeva vuo ei muutu."
+        },
+        {
+          "text": "Nollan, koska käämin läpi kulkeva magneettikenttä ei silloin muutu.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä. Kentän sisällä jännite on $0\\,\\text{mV}$, ja vuon kuvaaja on vaakasuora arvossa $2{,}0\\,\\text{mWb}$. Jännite on $-20\\,\\text{mV}$ vain sisääntulon aikana ja $+20\\,\\text{mV}$ ulostulon aikana. Silloin käämin läpi kulkeva vuo muuttuu."
+        },
+        {
+          "text": "Saman jännitteen kuin sisääntulossa, koska käämi liikkuu yhä samalla vauhdilla.",
+          "feedback": "Mallin arvot kumoavat tämän. Sisääntulossa jännite on $-20\\,\\text{mV}$, mutta kentän sisällä $0\\,\\text{mV}$. Pelkkä liike ei riitä. Jännite syntyy vain, kun käämin läpi kulkeva vuo muuttuu. Kentän sisällä käämin alueelle tulee yhtä paljon kenttää kuin sieltä lähtee."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-vauhti",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 2: kaksinkertainen vauhti",
+      "prompt": "Sama käämi ajetaan saman kentän läpi ensin vauhdilla $0{,}10\\,\\text{m/s}$ ja sitten vauhdilla $0{,}20\\,\\text{m/s}$. Miten jännite muuttuu sinä aikana, jona käämi on tulossa kenttään?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "Se pysyy samana, koska käämi ja kenttä ovat samat.",
+          "feedback": "Mallin arvot kumoavat tämän. Vauhdilla $0{,}10\\,\\text{m/s}$ jännite on $-20{,}0\\,\\text{mV}$ ja vauhdilla $0{,}20\\,\\text{m/s}$ se on $-40{,}0\\,\\text{mV}$. Vuon muutos on sama, $2{,}0\\,\\text{mWb}$. Se tapahtuu kuitenkin puolessa ajassa, joten muutosnopeus ja jännite kaksinkertaistuvat."
+        },
+        {
+          "text": "Se kaksinkertaistuu, mutta sisääntulo kestää puolet lyhyemmän ajan.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä. Jännite muuttuu arvosta $-20{,}0\\,\\text{mV}$ arvoon $-40{,}0\\,\\text{mV}$. Sisääntulon kesto lyhenee ajasta $1{,}00\\,\\text{s}$ aikaan $0{,}50\\,\\text{s}$. Sama vuon muutos tapahtuu puolessa ajassa, joten muutosnopeus on kaksinkertainen."
+        },
+        {
+          "text": "Se puolittuu, koska käämi on kentän reunalla lyhyemmän ajan.",
+          "feedback": "Mallin arvot kumoavat tämän. Jännite kasvaa arvosta $-20{,}0\\,\\text{mV}$ arvoon $-40{,}0\\,\\text{mV}$. Lyhyempi aika ei pienennä jännitettä vaan suurentaa sitä, koska sama vuon muutos $2{,}0\\,\\text{mWb}$ tapahtuu nopeammin. Vain jännitepulssin kesto on lyhyempi."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Neliön muotoinen käämi kulkee tasaisella vauhdilla magneettikentän alueen läpi. Käynnistä liike ja seuraa, miten magneettivuo ja induktiojännite muuttuvat ajan kuluessa.",
+      "howto": "Valitse käämin vauhti $v$, magneettivuon tiheys $B$ ja kierrosten lukumäärä $N$. Paina sitten *Käynnistä*. Käämi lähtee kentän vasemmalta puolelta ja kulkee alueen läpi. Vihreät ristit kuvaavat magneettikenttää, joka osoittaa paperiin päin. Sininen nuoli kuvaa käämin nopeutta. Kuvaajat piirtyvät liikkeen aikana. Ylempi kuvaaja on yhden kierroksen läpi kulkeva magneettivuo $\\Phi$. Alempi kuvaaja on käämin induktiojännite $e$. Kun käämi on kulkenut kentän läpi, lukemat-riville tulevat sisääntulon jännite, sen kesto ja jännite kentän sisällä. *Nopeus*-valikko muuttaa vain animaation tahtia, ei käämin vauhtia. Jos muutat säätimiä kesken liikkeen, käämi palaa alkuun.",
+      "model": "Käämi on neliö, jonka sivu on $l = 0{,}10\\,\\text{m}$. Kenttä on homogeeninen $0{,}20\\,\\text{m}$:n levyisellä alueella. Alueen ulkopuolella kenttä on nolla. Kentän reuna on terävä. Käämin pystysuorat sivut ovat koko ajan kentän alueen korkeudella. Käämi liikkuu tasaisella vauhdilla, eikä mikään jarruta sitä. Jännitemittari ei ota virtaa, joten käämissä ei kulje virtaa. Lukemat ovat mallin laskemia arvoja, eivät mittauksia.",
+      "calc": "Käämin etusivu on matkan $x$ kentän sisällä. Silloin yhden kierroksen läpi kulkeva vuo on $\\Phi = B \\cdot l \\cdot x$, kunnes koko käämi on kentässä. Sisääntulon aikana $x$ kasvaa tasaisesti, joten induktiojännite on\n\n$$e = -N\\frac{\\Delta\\Phi}{\\Delta t} = -NBlv$$\n\nKentän sisällä vuo on vakio $\\Phi = Bl^2$, joten $e = 0$. Ulostulon aikana vuo pienenee yhtä nopeasti kuin se kasvoi, joten $e = +NBlv$. Sisääntulo kestää ajan $\\Delta t = l : v$. Miinusmerkin merkitys selviää luvussa *Lenzin laki ja pyörrevirrat*."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 1: vain vauhti muuttuu",
+      "intro": "Testaa ennusteet. Magneettivuon tiheys $B = 0{,}20\\,\\text{T}$ ja kierrosten lukumäärä $N = 10$ pysyvät samoina. Muuta vain käämin vauhtia $v$. Aja käämi kentän läpi painamalla *Käynnistä*. Kirjaa tulos, kun käämi on kulkenut kentän läpi. Kirjaa ainakin vauhdit $0{,}10\\,\\text{m/s}$ ja $0{,}20\\,\\text{m/s}$. Voit kirjata myös vauhdit $0{,}05\\,\\text{m/s}$ ja $0{,}15\\,\\text{m/s}$. Laske jokaiselle riville jännitteen ja sisääntulon keston tulo $e \\cdot \\Delta t$.",
+      "initial": {
+        "v": 0.1,
+        "B": 0.2,
+        "N": 10
+      },
+      "locked": [
+        "B",
+        "N"
+      ],
+      "vary": "v",
+      "names": {
+        "v": "vauhti",
+        "B": "magneettivuon tiheys",
+        "N": "kierroksia"
+      },
+      "units": {
+        "v": "m/s",
+        "B": "T",
+        "N": ""
+      },
+      "measure": [
+        {
+          "key": "e_tulo",
+          "label": "e sisääntulossa (mV)"
+        },
+        {
+          "key": "t_tulo",
+          "label": "Δt (s)"
+        },
+        {
+          "key": "e_sisalla",
+          "label": "e kentän sisällä (mV)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 2: vain kierrosten lukumäärä muuttuu",
+      "intro": "Vauhti $v = 0{,}10\\,\\text{m/s}$ ja magneettivuon tiheys $B = 0{,}20\\,\\text{T}$ pysyvät samoina. Muuta vain kierrosten lukumäärää $N$. Aja käämi kentän läpi jokaisella valinnalla ja kirjaa sisääntulon jännite. Kirjaa ainakin kaksi kierrosmäärää, esimerkiksi $5$ ja $20$.",
+      "initial": {
+        "v": 0.1,
+        "B": 0.2,
+        "N": 10
+      },
+      "locked": [
+        "v",
+        "B"
+      ],
+      "vary": "N",
+      "names": {
+        "v": "vauhti",
+        "B": "magneettivuon tiheys",
+        "N": "kierroksia"
+      },
+      "units": {
+        "v": "m/s",
+        "B": "T",
+        "N": ""
+      },
+      "measure": [
+        {
+          "key": "e_tulo",
+          "label": "e sisääntulossa (mV)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös: mistä induktiojännite riippuu?",
+      "after": [
+        "koe-1",
+        "koe-2"
+      ],
+      "prompt": "Kirjoita taulukoidesi perusteella, miten sisääntulon jännite riippuu käämin vauhdista ja kierrosten lukumäärästä. Kirjoita myös, mitä jännite on, kun käämi on kokonaan kentän sisällä. Mitä huomaat tulosta $e \\cdot \\Delta t$ kokeessa 1? Vertaa sitä yhden kierroksen suurimpaan vuohon $2{,}0\\,\\text{mWb}$ ja kierrosten lukumäärään.",
+      "model": "Kokeessa 1 sisääntulon jännite oli vauhdilla $0{,}10\\,\\text{m/s}$ $-20{,}0\\,\\text{mV}$ ja vauhdilla $0{,}20\\,\\text{m/s}$ $-40{,}0\\,\\text{mV}$. Jännite on siis verrannollinen vauhtiin. Sisääntulo kesti vastaavasti $1{,}00\\,\\text{s}$ ja $0{,}50\\,\\text{s}$, joten tulo $e \\cdot \\Delta t = -20\\,\\text{mV}\\cdot\\text{s}$ pysyi samana. Se on $-N\\Delta\\Phi = -10 \\cdot 2{,}0\\,\\text{mWb} = -20\\,\\text{mWb}$, koska $1\\,\\text{mV}\\cdot\\text{s} = 1\\,\\text{mWb}$. Jännite on siis $e = -N \\cdot \\Delta\\Phi : \\Delta t$. Sama vuon muutos nopeammin antaa suuremman jännitteen. Kokeessa 2 jännite oli $5$ kierroksella $-10{,}0\\,\\text{mV}$ ja $20$ kierroksella $-40{,}0\\,\\text{mV}$. Jännite on siis verrannollinen kierrosten lukumäärään. Kun käämi oli kokonaan kentän sisällä, jännite oli nolla, koska vuo ei muuttunut. Arvot ovat mallin laskemia.",
+      "criteria": [
+        "Kerroin, että sisääntulon jännite kaksinkertaistuu, kun vauhti kaksinkertaistuu. Kerroin myös, että jännite kaksinkertaistuu, kun kierrosten lukumäärä kaksinkertaistuu.",
+        "Kerroin, että jännite on nolla, kun käämi on kokonaan kentän sisällä, koska vuo ei silloin muutu.",
+        "Laskin tulon $e \\cdot \\Delta t$ ja huomasin, että se on sama kaikilla vauhdeilla. Huomasin myös, että se on yhtä suuri kuin $N \\cdot \\Delta\\Phi = 20\\,\\text{mWb}$ (merkkiä lukuun ottamatta).",
+        "Päättelin, että jännite on verrannollinen vuon muutosnopeuteen $\\Delta\\Phi : \\Delta t$ ja kierrosten lukumäärään."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Palaa ennusteisiisi",
+      "prompt": "Vertaa ennusteitasi mallin arvoihin ja induktiolakiin $e = -N \\cdot \\Delta\\Phi : \\Delta t$. Palaa sitten alun kysymykseen. Miksi pyörän dynamo sytyttää lampun vain, kun pyörä pyörii? Miksi lamppu palaa sitä kirkkaammin, mitä lujempaa ajat?",
+      "predictions": [
+        "ennuste-sisalla",
+        "ennuste-vauhti"
+      ],
+      "optional": true
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe",
+      "prompt": "Käämissä on $200$ kierrosta, ja sen poikkipinta-ala on $6{,}0\\,\\text{cm}^2$. Käämin akselin suuntainen kenttä kasvaa tasaisesti nollasta arvoon $0{,}30\\,\\text{T}$ ajassa $0{,}050\\,\\text{s}$. Opiskelija laskee\n\n$$\\begin{aligned} &A = 6{,}0\\,\\text{cm}^2 = 0{,}060\\,\\text{m}^2 \\\\ &|e| = \\frac{N \\Delta B \\cdot A}{\\Delta t} \\\\ &= \\frac{200 \\cdot 0{,}30\\,\\text{T} \\cdot 0{,}060\\,\\text{m}^2}{0{,}050\\,\\text{s}} \\\\ &= 72\\,\\text{V} \\end{aligned}$$\n\nMissä on virhe?",
+      "choices": [
+        {
+          "text": "Pinta-alan muunnos on väärin: $1\\,\\text{cm}^2 = 10^{-4}\\,\\text{m}^2$, joten oikea tulos on $0{,}72\\,\\text{V}$.",
+          "correct": true,
+          "feedback": "Oikein. Neliösenttimetri on $(0{,}01\\,\\text{m})^2 = 10^{-4}\\,\\text{m}^2$. Siksi $A = 6{,}0 \\cdot 10^{-4}\\,\\text{m}^2$ ja $|e| = 200 \\cdot 0{,}30\\,\\text{T} \\cdot 6{,}0 \\cdot 10^{-4}\\,\\text{m}^2 : 0{,}050\\,\\text{s} = 0{,}72\\,\\text{V}$. Opiskelija kertoi senttimetrit luvulla $0{,}01$ vain kerran. Pinta-alassa senttimetri on kuitenkin toiseen potenssiin."
+        },
+        {
+          "text": "Kierrosten lukumäärällä ei pidä kertoa, koska kaikki kierrokset ovat samassa kentässä: $0{,}36\\,\\text{V}$.",
+          "feedback": "Kierrokset ovat sarjassa, ja jokaiseen syntyy sama jännite. Jännitteet summautuvat, joten $N$ kuuluu kaavaan. Kokeessa 2 jännite kaksinkertaistui, kun kierroksia oli kaksinkertainen määrä. Virhe on pinta-alan muunnoksessa: $6{,}0\\,\\text{cm}^2 = 6{,}0 \\cdot 10^{-4}\\,\\text{m}^2$."
+        },
+        {
+          "text": "Miinusmerkki puuttuu: tulos on $-72\\,\\text{V}$, ja muuten lasku on oikein.",
+          "feedback": "Miinusmerkki kertoo vain jännitteen suunnan. Tässä lasketaan suuruutta $|e|$, joten miinusmerkin puuttuminen ei ole virhe. Tulos $72\\,\\text{V}$ on kuitenkin sata kertaa liian suuri. Koska $6{,}0\\,\\text{cm}^2 = 6{,}0 \\cdot 10^{-4}\\,\\text{m}^2$, oikea tulos on $|e| = 0{,}72\\,\\text{V}$."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Sovella uuteen tilanteeseen: ravistelutaskulamppu",
+      "prompt": "Ravistelutaskulampussa ei ole paristoa. Kun lamppua ravistellaan, sen sisällä oleva magneetti liukuu $600$ kierroksen käämin läpi. Kun magneetti tulee käämiin, yhden kierroksen läpi kulkeva magneettivuo kasvaa $0{,}12\\,\\text{mWb}$ ajassa $15\\,\\text{ms}$. Kuinka suuri on käämiin syntyvä induktiojännite keskimäärin tämän ajan kuluessa? Vastaa voltteina.",
+      "answer": 4.8,
+      "unit": "V",
+      "tolerance": 0.02,
+      "hints": [
+        "Mikä käämin läpi kulkevassa vuossa muuttuu, ja kuinka nopeasti? Kuinka monta kierrosta on sarjassa?",
+        "Induktiojännitteen suuruus on $|e| = N \\cdot \\Delta\\Phi : \\Delta t$. Muunna ensin vuo vebereiksi ja aika sekunneiksi.",
+        "$\\Delta\\Phi = 0{,}12 \\cdot 10^{-3}\\,\\text{Wb}$ ja $\\Delta t = 15 \\cdot 10^{-3}\\,\\text{s}$, joten $|e| = 600 \\cdot 0{,}12 \\cdot 10^{-3}\\,\\text{Wb} : (15 \\cdot 10^{-3}\\,\\text{s})$."
+      ],
+      "mistakes": [
+        {
+          "value": 0.008,
+          "feedback": "Laskit yhden kierroksen jännitteen. Käämin $600$ kierrosta ovat sarjassa, ja jokaiseen syntyy sama jännite. Käämin jännite on siis $600$-kertainen."
+        },
+        {
+          "value": 0.0048,
+          "feedback": "Sijoitit ajan $15$ ikään kuin se olisi sekunteina. Aika on $15\\,\\text{ms} = 15 \\cdot 0{,}001\\,\\text{s} = 0{,}015\\,\\text{s}$, joten jännite on tuhat kertaa suurempi."
+        },
+        {
+          "value": 4800,
+          "feedback": "Sijoitit vuon $0{,}12$ ikään kuin se olisi vebereinä. Vuo on $0{,}12\\,\\text{mWb} = 0{,}12 \\cdot 10^{-3}\\,\\text{Wb}$, joten jännite on tuhannesosa tästä."
+        }
+      ],
+      "solution": "**Annettu:** kierrosten lukumäärä $N = 600$, yhden kierroksen vuon muutos $\\Delta\\Phi = 0{,}12\\,\\text{mWb}$, aika $\\Delta t = 15\\,\\text{ms}$\n\n**Kysytty:** induktiojännitteen keskimääräinen suuruus $|e|$ voltteina\n\n**Periaate:** Kun magneetti liukuu käämiin, käämin läpi kulkeva magneettivuo kasvaa. Siksi käämiin syntyy induktiojännite induktiolain mukaan. Vuo ei välttämättä kasva tasaisesti. Vuon kokonaismuutoksen ja ajan osamäärä antaa jännitteen keskiarvon tällä aikavälillä. Kierrokset ovat sarjassa, joten jännite on $N$-kertainen yhden kierroksen jännitteeseen verrattuna.\n\n**Kaava:** $|e| = N\\dfrac{\\Delta\\Phi}{\\Delta t}$\n\n**Muunnokset:** $\\Delta\\Phi = 0{,}12\\,\\text{mWb} = 0{,}12 \\cdot 10^{-3}\\,\\text{Wb}$ ja $\\Delta t = 15\\,\\text{ms} = 15 \\cdot 10^{-3}\\,\\text{s} = 0{,}015\\,\\text{s}$\n\n**Sijoitus:** $|e| = 600 \\cdot \\dfrac{0{,}12 \\cdot 10^{-3}\\,\\text{Wb}}{0{,}015\\,\\text{s}} = 600 \\cdot 8{,}0 \\cdot 10^{-3}\\,\\text{V} = 4{,}8\\,\\text{V}$\n\n**Vastaus:** $4{,}8\\,\\text{V}$. Vastauksessa on kaksi merkitsevää numeroa, koska vuon muutoksessa $0{,}12\\,\\text{mWb}$ ja ajassa $15\\,\\text{ms}$ on kaksi.\n\n**Järkevyys:** Yksi kierros antaisi vain $8{,}0\\,\\text{mV}$. Se ei riittäisi valodiodille. Valodiodi tarvitsee noin $2$–$3\\,\\text{V}$:n jännitteen, joten satojen kierrosten käämi ja nopea ravistus ovat välttämättömiä. Jos ravistat hitaammin, sama vuon muutos kestää kauemmin ja jännite jää pienemmäksi."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Harjoittele kolmella tasolla. Tason 1 tehtävissä käytetään yhtä kaavaa: $\\Phi = BA$, $e = -N \\cdot \\Delta\\Phi : \\Delta t$ tai $e = vBl$. Tason 2 tehtävissä yhdistetään kaksi vaihetta tai luetaan vuon kuvaajaa. Taso 3 vaatii päättelyä uudessa tilanteessa."
+    },
+    {
+      "id": "check-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Käsite: milloin jännite syntyy?",
+      "prompt": "Missä näistä tilanteista käämin päiden välille syntyy induktiojännite?",
+      "choices": [
+        {
+          "text": "Voimakas kestomagneetti on paikallaan käämin sisällä.",
+          "feedback": "Käämin läpi kulkee suuri vuo, mutta se ei muutu, joten jännitettä ei synny. Induktiojännite riippuu vuon muutosnopeudesta $\\Delta\\Phi : \\Delta t$, ei vuon suuruudesta."
+        },
+        {
+          "text": "Käämi liikkuu tasaisesti kokonaan homogeenisen kentän sisällä.",
+          "feedback": "Käämi on kokonaan homogeenisessa kentässä. Silloin sen läpi kulkeva vuo $\\Phi = BA$ pysyy samana, vaikka käämi liikkuu. Vuo ei muutu, joten jännite on nolla. Näin kävi myös simulaatiossa kentän sisällä."
+        },
+        {
+          "text": "Käämin vieressä olevan sähkömagneetin virta katkaistaan.",
+          "correct": true,
+          "feedback": "Oikein. Kun virta katkeaa, sähkömagneetin kenttä häviää nopeasti. Käämin läpi kulkeva vuo pienenee, ja käämiin syntyy induktiojännite. Mitään ei tarvitse liikuttaa. Riittää, että vuo muuttuu."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Laske: liikkuva tanko",
+      "prompt": "Metallitanko, jonka pituus on $50\\,\\text{cm}$, liikkuu vauhdilla $4{,}0\\,\\text{m/s}$ kohtisuoraan homogeenista magneettikenttää vastaan. Kentän magneettivuon tiheys on $0{,}25\\,\\text{T}$. Tanko on kohtisuorassa sekä kenttää että liikkeen suuntaa vastaan. Kuinka suuri induktiojännite tangon päiden välille syntyy? Vastaa voltteina.",
+      "answer": 0.5,
+      "unit": "V",
+      "tolerance": 0.02,
+      "hints": [
+        "Mikä kohdistuu tangon elektroneihin, kun tanko liikkuu kentässä? Mihin elektronit siirtyvät?",
+        "Tangon päiden välinen jännite on $e = vBl$, kun nopeus, tanko ja kenttä ovat keskenään kohtisuorassa.",
+        "$l = 50\\,\\text{cm} = 0{,}50\\,\\text{m}$, joten $e = 4{,}0\\,\\text{m/s} \\cdot 0{,}25\\,\\text{T} \\cdot 0{,}50\\,\\text{m}$."
+      ],
+      "mistakes": [
+        {
+          "value": 50,
+          "feedback": "Sijoitit pituuden senttimetreinä. Koska $\\text{T} = \\tfrac{\\text{V}\\cdot\\text{s}}{\\text{m}^2}$, tulos on voltteina vain, jos pituus on metreinä: $50\\,\\text{cm} = 50 \\cdot 0{,}01\\,\\text{m} = 0{,}50\\,\\text{m}$."
+        },
+        {
+          "value": 1.0,
+          "feedback": "Tangon pituus puuttuu. Jännite syntyy koko tangon matkalle. Sähkökenttä $E = vB$ tangon sisällä kerrotaan tangon pituudella: $e = vBl$."
+        }
+      ],
+      "solution": "**Annettu:** tangon pituus $l = 50\\,\\text{cm}$, vauhti $v = 4{,}0\\,\\text{m/s}$, magneettivuon tiheys $B = 0{,}25\\,\\text{T}$. Nopeus, tanko ja kenttä ovat keskenään kohtisuorassa.\n\n**Kysytty:** tangon päiden välinen induktiojännite $e$ voltteina\n\n**Periaate:** Tangon mukana liikkuviin elektroneihin kohdistuu magneettinen voima $evB$ tangon suuntaan. Siksi elektroneja kertyy tangon toiseen päähän. Syntyvä sähkökenttä kasvaa, kunnes sähköinen voima $eE$ kumoaa magneettisen voiman, eli $E = vB$. Kenttä on homogeeninen, joten päiden välinen jännite on $El$.\n\n**Kaava:** $e = vBl$\n\n**Muunnokset:** $l = 50\\,\\text{cm} = 50 \\cdot 0{,}01\\,\\text{m} = 0{,}50\\,\\text{m}$\n\n**Sijoitus:** $e = 4{,}0\\,\\text{m/s} \\cdot 0{,}25\\,\\text{T} \\cdot 0{,}50\\,\\text{m} = 0{,}50\\,\\text{V}$\n\n**Vastaus:** $0{,}50\\,\\text{V}$. Vastauksessa on kaksi merkitsevää numeroa, koska lähtöarvoissakin on kaksi.\n\n**Järkevyys:** Yksiköt sopivat: $\\tfrac{\\text{m}}{\\text{s}} \\cdot \\tfrac{\\text{V}\\cdot\\text{s}}{\\text{m}^2} \\cdot \\text{m} = \\text{V}$. Jännite on alle voltin. Se on odotettavaa laboratoriokokoisessa laitteessa. Saman jännitteen saisi induktiolaista. Tangon pyyhkäisemä pinta-ala kasvaa joka sekunti $0{,}50\\,\\text{m} \\cdot 4{,}0\\,\\text{m} = 2{,}0\\,\\text{m}^2$, ja $0{,}25\\,\\text{T} \\cdot 2{,}0\\,\\tfrac{\\text{m}^2}{\\text{s}} = 0{,}50\\,\\tfrac{\\text{Wb}}{\\text{s}}$."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Selitä: jännite liikkuvassa tangossa",
+      "prompt": "Metallitanko liikkuu kohtisuoraan magneettikenttää vastaan. Selitä, miksi tangon päiden välille syntyy jännite. Selitä myös, miksi jännite ei kasva rajatta vaan asettuu arvoon $e = vBl$.",
+      "model": "Tangon mukana liikkuvat myös sen johtavuuselektronit. Magneettikenttä kohdistaa liikkuvaan varaukseen voiman $F_\\text{m} = evB$. Voima on kohtisuorassa nopeutta ja kenttää vastaan eli tangon suuntainen. Elektronit siirtyvät tangon toiseen päähän, joka tulee negatiiviseksi. Toiseen päähän jää positiivinen varaus. Varausten väliin syntyy tangon sisälle sähkökenttä $E$. Se kohdistaa elektroneihin vastakkaissuuntaisen voiman $F_\\text{s} = eE$. Elektroneja siirtyy, kunnes voimat ovat yhtä suuret: $eE = evB$ eli $E = vB$. Homogeenisessa kentässä jännite on $El$, joten $e = vBl$. Suuremmalla nopeudella magneettinen voima on suurempi. Silloin tasapainoon tarvitaan suurempi sähkökenttä, ja jännite on suurempi. Paikallaan olevaan tankoon jännitettä ei synny, koska magneettinen voima on nolla.",
+      "criteria": [
+        "Kerron, että magneettikenttä kohdistaa tangon mukana liikkuviin elektroneihin voiman $evB$ tangon suuntaan.",
+        "Kerron, että elektronit kertyvät tangon toiseen päähän. Silloin päiden välille syntyy sähkökenttä ja jännite.",
+        "Selitän, että siirtyminen loppuu, kun sähköinen voima $eE$ on yhtä suuri kuin magneettinen voima. Silloin $E = vB$ ja $e = El = vBl$.",
+        "Mainitsen, että paikallaan olevaan tankoon jännitettä ei synny, koska magneettinen voima on silloin nolla."
+      ],
+      "optional": true
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Lopuksi kaksi nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+    }
+  ]
+}
