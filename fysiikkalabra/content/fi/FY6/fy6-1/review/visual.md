@@ -1,21 +1,21 @@
-VERDICT: FAIL
-CONTENT-HASH: a9b345687bfb82fb
+VERDICT: PASS
+CONTENT-HASH: eeb7638a0da72ed1
 
 ## Blocking
-- [Major] fig 7 `jannite` (Kaava: Sähkövirta / Jännite; fy6-1-fig-7-390, theory-1280-3) — the label $U = 1{,}5\,\text{V}$ sits on the vertical wire under the battery and its white pad cuts the wire in two, so the loop looks broken at the battery's lower terminal and "U = 1,5 V" reads with a gap in the middle — a label must never overlap a circuit line (print quality, no overlapping) — move the label left of the wire (or beside the battery body) so the wire runs unbroken.
+(none) Round 2's blocker is fixed: in figure 7 the label $U = 1{,}5\,\text{V}$ now stands to the left of the loop, clear of the wire at 390 px and 1280 px, with the battery's + and - marks inside the loop.
 
 ## Polish
-- [Minor] fig 7 — the battery has no + / − marks, while fig 2 and fig 5 show polarity; the energy arrow and the return arrow imply a direction without it — add the marks, or say in the description that polarity is not shown.
-- [Minor] fig 2 `piiri` — the left current arrow stands inside the loop and the right one outside; same placement on both sides reads calmer.
-- [Minor] Example, step 7/7 (example-390-2) — the chain $180\,\text{C} : (1{,}602 \cdot 10^{-19}\,\text{C}) \approx …$ breaks the sentence "Elektroneina varaus on … elektronia" into a block mid-sentence; end the sentence before the chain or accept the layout.
-- [Minor] Experiment tables (lab-1280) — headers $Q_\text{A}$ (upright subscript) differ from the readout $Q_A$ (italic) — use one form.
-- [Minor] Sim controls at 1280 (sim-1280, lab-1280) — Mittaa/Nollaa and three selects squeeze into one row and Nopeus spans the full width alone; the two-by-two grid of 390 px reads better. Also: fy6-1-open-tarkista-1280-3 choice cards with figures are about twice as tall as their figure (empty space) at 1280. For pedagogy: the prediction tasks name $A$ and $B$ without a figure beside them.
+- [Minor] fig-7 (jännite): the + and - marks sit close to the wire and are small and thin; slightly larger or bolder marks would read better on a phone.
+- [Minor] fig-5 / fig-2: the plain-text word labels (lamppu, kytkin) are muted grey and small at 390 px; still readable.
+- [Minor] sim-1280: the "Nopeus" select drops to its own row under the other three controls; harmless.
 
 ## Checked
-- Contact sheets 1, 2, 5, 6; fig-1…fig-8 at 390 (fig-9–11 via contact-1/tarkista-390-2), fig-5 and fig-7 enlarged for diagnosis
-- top-390 (contact-1), intro-1280, sim-390, sim-1280, lab-1280, exp-exp-1-390-1, stage-tutki-390-2
-- theory-1280-1…4, stage-selita-390-4, example-390-1/2, stage-sovella-390-1/2, stage-tarkista-390-2
-- open-ennusta-1280-1, open-tarkista-1280-2/3, open-exit-1280 (contact-5)
+- fy6-1-fig-7-390, fy6-1-theory-1280-3 (figure 7 beside Jännite text), fy6-1-fig-2-390 (direction arrows, battery + on the right, consistent with I), then fig-3, fig-4, fig-5, fig-6, fig-8, fig-9 at 390 px
+- contact-1 (hero, sim, figures 1-11), contact-5 (exercises, exit ticket)
+- fy6-1-theory-1280-1, -2, -4 (theory, figures beside text, summary, tables)
+- fy6-1-intro-1280, fy6-1-lab-1280, fy6-1-sim-390 (simulation, readout, controls)
+- fy6-1-example-390-1 (worked example rows aligned), fy6-1-stage-tarkista-390-2 (figure choices, exit ticket)
+- Maths set in KaTeX throughout, decimal comma and units as one inline formula; no red source seen. Not opened one by one: the L1-L3 exercise captures beyond the contact sheet, fig-1/10/11.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

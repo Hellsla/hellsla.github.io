@@ -1,22 +1,22 @@
 VERDICT: PASS
-CONTENT-HASH: a9b345687bfb82fb
+CONTENT-HASH: eeb7638a0da72ed1
 
 ## Blocking
+(none)
 
 ## Polish
-- inquiry.json pred-2 — the student has no basis for predicting that a second lamp lowers the current (resistance is not yet taught), so the prediction is a guess; this was raised in round 1 and not addressed — add to the prompt "Ajattele, että lamput vastustavat virran kulkua" or make the justification compulsory.
-- lesson.md "Kytkentäkaavio" — the text lists the symbols but never says that an ammeter belongs in the loop and a voltmeter does not (L3-03 depends on it) — add one sentence ("Ampeerimittari kytketään samaan silmukkaan, jonka virtaa mitataan").
-- inquiry.json exp-2 intro — "Katso myös, kuinka kirkkaasti lamput palavat" asks for an observation the table does not record — add "ja kirjoita havaintosi ylös" or drop the sentence.
-- lesson.md Tyypillisiä arvoja — the two tables have no lead-in naming the columns; a sentence connecting them to the example (taskulampun lamppu 0,3 A, example 0,25 A) would help.
+- inquiry.json (virhe, feedback of the "kytkin" option) — "Kytkimen paikalla silmukassa ei ole väliä" is true, but the capture shows the switch drawn in the upper wire; the option claims it "pitäisi olla lampun ja miinusnavan välissä", which is a fair distractor; no change needed beyond keeping it. Optional: add the word "sarjassa" to the sentence.
+- fig-8 (virhe-kaavio) — the open terminal of the battery is a small circle at the bottom; a student on a phone may miss it. The feedback names it, so this is only a legibility nicety (slightly larger terminal ring).
+- lesson.md "Kaava" — "Siksi elektroneja ei lasketa yksitellen, vaan virtaa mitataan ampeereina": "Siksi" follows loosely from the previous sentence; "Elektroneja ei käytännössä lasketa yksitellen" reads more naturally.
 
 ## Checked
-- Path: hook, 2 predictions, sim, 2 experiments that can refute (Q_A vs Q_B, I varies with batteries/lamps), conclusion, theory, example, one hour of work.
-- Opening question answered (check-1 explains the instant lamp; Tiivistelmä now says "Paristosta kuluu energiaa, ei varausta").
-- Round-1 items fixed: closed switch in symbols figure, figure 5 aria-label ("Kuvan 2"), check-3 options now one column at full width, differences legible at 390 px.
-- Etsi virhe: figure needed; the missing-minus fault is unambiguous, closed switch matches the symbols figure; every wrong option's feedback repairs its error.
-- Check-3 distractors (resistor for lamp, switch in a dead branch) each have one recognisable error.
-- Example: 7 single-step stages, unit conversion, sensible-result step; hero and theory figures beside their paragraphs.
-- Model values (1/2/3 C, 2 -> 1 C, 0,200 A) agree across predictions, experiments and model answer.
-- Finnish: case after number+unit correct (10 s:ssa, 0,25 A:n, 1,00 C:iin); terms match the glossary.
-- Exit ticket tests the core idea (conductor/insulator, U = E/Q, electron vs conventional direction).
-- Sim readable at 390 px; Mittaa/Kirjaa flow clear.
+- Hash unchanged at start and end (eeb7638a0da72ed1).
+- Changed figures: virhe-kaavio (#10) shows the error visibly (lamp's return wire joins the plus wire, minus terminal open) and the description matches; the feedback of every option repairs its own misconception.
+- check-3 figures (#11–13): a = lamps in series loop; b = same with resistor rectangles (symbol error); c = switch on a dead-end branch; each differs by one recognisable error, and the figure choices do not give away the answer in the prompt.
+- Figure 5 (kaavio) and figure 2 (piiri): current arrow direction, + on the right of the battery and arrow from + through switch to lamp are consistent; colour (violet) is backed by the label I.
+- Two reworded passages (virta direction, tiivistelmä wording) are consistent with glossary and with the exit ticket.
+- Learning path: hook question (what moves, what is used up) is answered only after pred-1/2 and the experiments; no disclosure before commitment.
+- Experiments can refute their predictions (Q_A = Q_B visible per row; lamp count changes current); controls locked and named.
+- Worked example is staged one step per stage, with unit conversion and sanity check; siirto is a new situation, hints progressive, mistakes real.
+- Exit ticket tests conductor/insulator, voltage meaning, current vs electron direction: the core ideas.
+- Finnish and case endings checked (`$10\,\text{s}$:ssa`, `$2{,}00\,\text{C}$:sta`); reading level fits 16–19.
