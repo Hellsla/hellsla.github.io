@@ -1,16 +1,15 @@
-VERDICT: PASS
-CONTENT-HASH: 7969ac477c96529e
+VERDICT: FAIL
+CONTENT-HASH: 8b90c363e2e77d09
 
 ## Blocking
+- [Major] solutions.md L2-03 Reasonableness (edited line) — "For this 662 keV line" is a plain-text quantity in newly edited text — breaks the standing rule that number and unit are one inline formula (teacher 2026-11-01) — write "$662\,\text{keV}$". Also "the difference ... is ... greater than the differences" mixes singular and plural; use "the differences between the levels of the nucleus are hundreds of thousands of times greater than those between the levels of the electrons of an atom".
 
 ## Polish
-- [Minor] solutions.md L3-02 Reasonableness — "as three levels of the hydrogen atom give three transitions" — a hydrogen atom has many levels, so the comparison confuses — write "as any three levels give three transitions".
-- [Minor] solutions.md L2-01 Reasonableness — "It is a little smaller than the 1332.5 keV of the other photon" — "It" could be the energy or the wavelength — write "Its energy is a little smaller than …".
-- [Minor] solutions.md L3-03 Formula (capture L3-1280-3) — the chain breaks as "… + 2 −" with the "1" alone on the next row — reduce the chain or break before the operator.
-- [Minor] exercises L1-04, L2-01, L2-03, L3-02 — two consecutive parenthetical blocks, "(1 pm = …) (h = …)", and the L3-03 "radon-" / "222" line break — merge into one parenthesis; use a non-breaking hyphen.
+- [Minor] solutions.md L3-03 Formula — the chain breaks as "... + 2 -" with the "1" alone on the next row (from the previous pass) — break before the operator.
+- [Minor] exercises L1-04, L2-01, L2-03, L3-02 — two consecutive parenthetical blocks, "(1 pm = ...) (h = ...)", and a "radon-" / "222" line break in L3-03 — merge into one parenthesis; use a non-breaking hyphen.
 
 ## Checked
-- contact-5; open-exercises-1280 (level 1, via contact sheet #57–#60); open-exercises-L2-1280-2; open-exercises-L3-1280-3; open-exit-1280; text of all 12 tasks and solutions. No inline figures in the exercise set.
+- Delta (3 edited Reasonableness lines: L2-01, L2-03, L3-04): the L2-01 edit is fixed ("Its energy is..."), and the L3-04 edit ("any three levels") is fixed. Opened open-exercises-L2-1280-2 (L2-01 solution renders as edited, no overflow); the L2-03 and L3-04 changes were read in source only (not captured).
 
 ## Scores
 illustrations 5 · typography 4 · Finnish (English prose) 4 · accessibility 4

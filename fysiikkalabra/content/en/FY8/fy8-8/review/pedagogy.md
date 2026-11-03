@@ -1,21 +1,19 @@
-VERDICT: FAIL
-CONTENT-HASH: 0e1654f7d66a7eee
-
+VERDICT: PASS
+CONTENT-HASH: 9babf4b3981254fa
 ## Blocking
-- inquiry.json `gammaspektri` (figure `fy8-8/spectrum`, capture fy8-8-fig-5-390.png) — the figure the task needs is not translated: the y-axis label reads "fotonien määrä" and the alt text is Finnish ("Kaavamainen gammaspektri koboltti-60-lähteestä ..."), so an English reader gets no usable description and no axis label — fix: English axis label "number of photons" and an English description (the two peaks at 1173.2 and 1332.5 keV, background falling towards higher energy) in the en figure catalogue entry.
-
+(none)
 ## Polish
-- inquiry.json `ennuste-1/2` `reveal.min` 6 — the series has 15 steps and the students need only steps 0-5 to see Z, N, A; fine, but the intro could say "at least steps 0-5, which include both alpha and beta" explicitly; as written a student who clicks only alpha steps cannot test prediction 2 (beta first appears at step 2).
-- inquiry.json `hook`/`pohdi` — the opening question (americium-241, and why gamma follows) is answered only in the optional reflection; the lesson never names the daughter (neptunium-237) or shows an americium level scheme. Add one line to the Key idea or make `pohdi` non-optional.
-- inquiry.json `gammaspektri` hint 3 — "Read the energy of each peak from the figure and add" gives the method away; the figure already prints both energies, so reading is trivial. Drop the printed values and let the student read the peak positions.
-- lesson.md "Energy levels of the nucleus" — "hundreds of thousands of times larger" is asserted before any ratio is shown; tie it to the L2-03 ratio or the example (500 nm photon vs 661.7 keV).
-- exit ticket Q2 repeats tarkistus-1 style recall (isotope definition); a gamma/alpha item would test the core idea better.
-
+- inquiry.json gammaspektri — answer 2505.7 keV (sum of peaks) versus lesson text and figure "levels" 2505.8 keV; the solution should say the 0.1 keV gap is recoil, so students who compare are not confused.
+- spectrum figure (fy8-8-fig-5, 390 px) — now in English and legible; the "1600" tick touches the E (keV) arrow, and the step in the background near 1000 keV is unexplained; add "schematic" note or move the label.
+- inquiry.json siirto mistakes[28] feedback — "28 : 4" colon division (Finnish habit); write 28/4.
+- Goal 3 (levels from spectrum) is practised by one task only; acceptable for one lesson, but a second question (which transition gives which peak) would anchor the analogy with atom spectra.
+- ennuste-1 and ennuste-2 are quickly deducible from the particle description, so the data table mostly confirms; fine for a nucleus chart, but note it as a low-risk prediction.
 ## Checked
-- Path: nucleons, Z/N/A, chart, decay types, levels, equations, example; one lesson's load; goals met without extras.
-- Predictions are refutable by the series data; each wrong option's feedback repairs its misconception.
-- Worked example is staged, one step per stage; the arithmetic checks (1.874 pm).
-- Figures legible at 390 px (isotopes, chart, levels); simulation readable on a phone, colour plus symbol.
-- Check 1 distractors are misconception-based; explain criteria are observable.
-- Find-the-mistake and transfer (U-235, 7 alpha) are correct, with graded hints.
-- check_lesson.py was not run (packet says so); not judged here.
+- Round 1 blocker resolved: the cobalt-60 spectrum figure is translated (axis, peak labels, caption and alt text in English); the figure is needed to answer and its description gives the same data without the sum.
+- Opening question answered after the investigation; predictions committed before evidence, wrong-option feedback repairs misconceptions (electron in nucleus, Z vs A).
+- Slot goals met: structure, alpha/beta/gamma, decay equations, gamma spectrum as evidence of nuclear levels.
+- Worked example (Cs-137) staged one step per stage; Ba-137, 1.874 pm correct.
+- Find-the-mistake and U-235 transfer task (7 alpha) correct with progressive hints.
+- Exit ticket tests equation writing and N = A - Z.
+- Workload one lesson; phone captures legible.
+- Hash identical at start and end.

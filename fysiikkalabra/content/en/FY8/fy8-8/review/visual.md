@@ -1,18 +1,18 @@
-VERDICT: FAIL
-CONTENT-HASH: 0e1654f7d66a7eee
+VERDICT: PASS
+CONTENT-HASH: 9babf4b3981254fa
 
 ## Blocking
-- [Major] Figure `fy8-8/spectrum` (fig-5 in the Tutki stage, repeated in the theory summary capture #28/#26) — the y-axis label is still Finnish ("fotonien määrä"), and its description/alt text is Finnish too ("Kaavamainen gammaspektri koboltti-60-lähteestä…", decimal commas 1173,2); `figures.json` has no entry for it — an English student gets Finnish in an essential graph, and the alt text is unusable for an English screen-reader user — translate the label to `\text{number of photons}` (in `lessons/FY8/fy8-8/figures.py` for en or via the language mechanism the other figures use) and add the English description to `figures.json` (peaks 1173.2 and 1332.5 keV, decimal points).
+(none) Round 1 Major fixed: the spectrum figure (fig-5-390) now has the y-axis "number of photons", E (keV) on the x-axis, and an English alt text with decimal points (1173.2 and 1332.5 keV); the built page contains no Finnish description. (The Finnish text in the packet's task-figure list is the catalogue source, not the rendered page.)
 
 ## Polish
-- [Minor] decays figure (fig-11) — the label "excited state *" is set larger than the other labels and sits on the dashed divider line — reduce to the label size and keep clear of the line.
-- [Minor] levels figure (fig-13) — the transition labels 1173.2 and 1332.5 have no unit — add `\,\text{keV}` like the level labels.
-- [Minor] lesson.md, "Energy levels…" — "Transitions of an atom are electronvolts" — write "are of the order of electronvolts".
-- [Minor] chart figure (fig-9) — the "N = Z" label touches the band's lower end — move it left/up.
-- [Minor] exit ticket answer 1 (capture open-exit-1280) — "conserved (" ends a line and the maths starts the next, leaving a dangling bracket — keep the bracket with the formula (non-breaking) or write the check as a separate sentence.
+- [Minor] decays figure (fig-11) — the label "excited state *" is set larger than the other labels and sits on the dashed divider — reduce to label size and keep clear.
+- [Minor] levels figure (fig-13) — the transition labels 1173.2 and 1332.5 have no unit while the levels have keV — add \,\text{keV}; same for the peak labels in fig-5.
+- [Minor] fig-13 — the "60/28 Ni" label sits very close to the bottom edge — add a few px of margin.
+- [Minor] chart figure (fig-9) — "N = Z" touches the lower end of the band — move it.
+- [Minor] lesson.md — "Transitions of an atom are electronvolts" — write "are of the order of electronvolts".
 
 ## Checked
-- contact-1 to contact-4; fig-5, fig-7, fig-9, fig-11, fig-13, fig-15 at 390 px; example-390-1 (steps 1–4); theory-1280-2; intro-1280; open-exit-1280; sim in contact sheets (#2, #24, #39, #42). Exercise captures are covered in the exercise-set report.
+- contact-1; fig-5, fig-13 at 390; example-390-1 (steps 1-4); preview text for the spectrum alt. Earlier checks carried by the unchanged figures: fig-7, 9, 11, 15, theory-1280-2, intro-1280, open-exit-1280.
 
 ## Scores
-illustrations 3 · typography 4 · Finnish (English prose) 4 · accessibility 3
+illustrations 4 · typography 4 · Finnish (English prose) 4 · accessibility 4

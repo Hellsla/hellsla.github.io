@@ -1,20 +1,19 @@
-VERDICT: FAIL
-CONTENT-HASH: 5b8a1236669b6700
+VERDICT: PASS
+CONTENT-HASH: fa56f18f38e944df
 
 ## Blocking
-- [Major] Simulation graph (sim-390, sim-1280) — the vertical axis reads "P_ulos (mW)", a Finnish subscript, while the readout says P_out — untranslated label on the canvas and inconsistent notation — change the axis label to $P_\text{out}$ (mW) in the English simulation text.
-- [Major] fig tunnel (Tunnelling section) — visual verification incomplete: the section is an optional collapsed card and no capture of the figure or its text exists (fig-1…14 end at the rate graph) — its geometry, labels and legibility at 390 px could not be judged — regenerate captures with the optional Tunnelling card opened, then review.
+(none) Round 1 Majors resolved: the simulation axis now reads P_out (mW) at 390 and 1280 px, matching the readout. The tunnelling figure was captured with the optional box opened (Playwright, preview/en/fy8-7.html, 390 and 1280 px): barrier, dashed E line, oscillating incoming wave, steep decay inside the barrier and a small transmitted wave are clear, labelled in English LaTeX, nothing clipped.
 
 ## Polish
-- [Minor] fig cavity (theory-1280-2) — "laser beam" label touches the right mirror at its left edge — shift the label right by about 10 px.
-- [Minor] fig qdots — the 570 nm value and its colour are black while the other wavelengths are coloured like their dots — colour it olive or make all values ink.
-- [Minor] experiment tables (#39, #43) — header "inver-sion" breaks mid-word in a narrow cell — shorten to "inv." or widen the column.
-- [Minor] heading source "Tunnelling {Tunneloituminen}" — Finnish alias in the English source; confirm it never renders (it does not in the stage list).
+- [Minor] fig tunnel at 390 px — labels are small (about 9 px rendered) — enlarge text slightly or the viewBox crop.
+- [Minor] fig cavity (theory-1280-2) — "laser beam" label touches the right mirror — shift right about 10 px.
+- [Minor] fig qdots — the 570 nm value is black while the others take their dot colour — make consistent.
+- [Minor] experiment tables — header "inver-sion" breaks mid-word in a narrow cell — shorten or widen.
+- [Minor] heading source "Tunnelling {Tunneloituminen}" — Finnish alias in the English source; it does not render, but remove it.
 
 ## Checked
-- contact-2/3/4; fig-2 (hero), 5 (processes), 7 (inversion), 9 (cavity), 11 (qdots), 13 (rate graph) at 390; theory-1280-2/3; sim-390, sim-1280; example-390-1; open-tarkista-1280-1; exercise captures L1-1, L2-1, L3-2.
-- Rate graph: axes, units, line through origin, labelled points; processes and inversion diagrams consistent and correct visually.
-- Not seen: tunnel figure.
+- Own captures: tunnel figure at 390 and 1280, tunnelling section text at 390, sim at 390 and 1280 (the sticky tab bar overlapping the 390 sim top is a capture artefact).
+- Earlier shots: contact-2/3/4, fig-5, 7, 9, 11, 13, theory-1280-2/3, example-390-1, exercises L1-1, L2-1, L3-2.
 
 ## Scores
 illustrations 4 · typography 4 · Finnish (English prose) 4 · accessibility 4

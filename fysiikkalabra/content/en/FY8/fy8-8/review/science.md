@@ -1,20 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 0e1654f7d66a7eee
+CONTENT-HASH: 9babf4b3981254fa
 
 ## Blocking
 
 ## Polish
-- lesson.md:"Energy levels of the nucleus" — "typically tens of kiloelectronvolts or more, hundreds of thousands of times larger" than eV: tens of keV is ~10^4 times an eV; the 10^5–10^6 factor holds for hundreds of keV–MeV (Co-60, Cs-137). Say "hundreds of kiloelectronvolts or more" or "ten thousand to a million times" (C, carried from the Finnish source).
-- inquiry.json:kertaus correct feedback — "Today the same principle is carried over" reads oddly; "In this chapter the same principle…".
-- figure fy8-8/spectrum (shot fig-5) — the vertical-axis label "fotonien määrä" and the aria-label are still Finnish; "number of photons".
+- lesson.md:397 (Summary) — "typically tens or hundreds of kiloelectronvolts or megaelectronvolts" while the theory (l. 249) now says "typically hundreds of kiloelectronvolts or more"; both are defensible (Am-241 59.5 keV), but the two sentences could use the same range (C).
 
 ## Checked
-- Recomputed in one script: worked example 1.0600e-13 J, λ = 1.874 pm, ratio to 500 nm ≈ 2.67e5; tarkistus-2 8.826 pm; kertaus 1.89 eV; siirto 7 alpha / 4 beta; gammaspektri 2505.7 keV.
-- U-238 chain in sim.js and lesson-answers.py: 15 nuclides, every step obeys α (Z−2, A−4) / β− (Z+1); 8 α, 6 β−; stable cells Tl-203…Bi-209 correct as [Z, N].
-- Co-60 levels 2505.8/1332.5 keV and gammas 1173.2/1332.5 keV match ENSDF; recoil explanation (≈0.03 keV total) correct; levels figure to scale.
-- Decay equations, shift figure (α: Z−2, N−2; β−: Z+1, N−1; β+: Z−1, N+1), chart-of-nuclides β−/β+ sides correct.
-- Beta-electron created in the decay, weak interaction, continuous beta spectrum vs discrete alpha/gamma: correct.
-- Every prediction and choice item: exactly one correct option, distractor feedback physically right.
-- Sim runtime labels translated (Decay, Speed, Reset, readout) consistent with the howto; model limits stated.
-- Exit ticket: Po-210 → Pb-206 + α; C-14 6 p, 8 n.
+- Round-1 polish items all resolved: theory now "of the order of electronvolts … hundreds of kiloelectronvolts or more, so hundreds of thousands of times larger" (300 keV / 1.89 eV ≈ 1.6e5, Co-60 lines ≈ 6–7e5: correct order).
+- kertaus correct feedback "In this chapter the same principle…": physics unchanged, 1.89 eV recomputed.
+- Spectrum figure (inquiry, shot fig-5): vertical axis "number of photons", aria-label translated ("number of detected photons in arbitrary units", "drawn schematically"); peaks read at ≈1173 and ≈1332 keV on the 0–1600 axis; NNDC source stated.
+- Co-60 sum 1173.2 + 1332.5 = 2505.7 keV vs level 2505.8 keV, recoil explanation unchanged and correct.
+- Diff 43dfb10e..HEAD touches only the lines above in lesson.md, inquiry.json, figures.json; no other physics changed since the round-1 PASS.
 - Translation introduces no change of physics versus the passed Finnish source.
