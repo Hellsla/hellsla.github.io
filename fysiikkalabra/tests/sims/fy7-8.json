@@ -1,0 +1,144 @@
+[
+ {
+  "expr": "(() => { const S=window.simState; return S.U===400 && S.P===200 && S.l===150 && Math.abs(S.Ph-1.5)<1e-9 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "on load: U = 400 kV, P = 200 MW, l = 150 km, P_h = 1,5 MW (must run before any setup)"
+ },
+ {
+  "expr": "(() => { const R=document.querySelectorAll('#sim-root input[type=range]'); return R.length===3 && R[0].min==='20' && R[0].max==='400' && R[0].step==='10' && R[1].min==='50' && R[1].max==='500' && R[1].step==='50' && R[2].min==='10' && R[2].max==='300' && R[2].step==='10' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "three sliders: U 20–400 kV by 10, P 50–500 MW by 50, l 10–300 km by 10"
+ },
+ {
+  "expr": "(() => { const k=[...document.getElementById('sim-root').children].map(e=>e.tagName==='CANVAS'?'canvas':e.className); const c=k.findIndex(x=>x==='canvas'||/sim-canvas/.test(x)); return c>=0 && c<k.indexOf('controls') && k.indexOf('controls')<k.indexOf('readout') ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "DOM order canvas, controls, readout"
+ },
+ {
+  "expr": "(() => { const n=document.querySelectorAll('#sim-root p.note'); return !document.querySelector('#sim-root details') && n.length===1 && n[0].textContent.trim().split(/\\s+/).length<=15 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "no Lisätietoja box; one legend line of at most 15 words"
+ },
+ {
+  "expr": "(() => { const P=window.simAdapter && window.simAdapter.params; return P && Object.keys(P).sort().join(',')==='P,U,l' && P.U.unit==='kV' && P.P.unit==='MW' && P.l.unit==='km' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "adapter declares U (kV), P (MW) and l (km)"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],400); I(R[1],200); I(R[2],150);",
+  "expr": "window.simState.R",
+  "expected": 6.0,
+  "tol": 0.01,
+  "note": "R = 0,040 Ω/km · 150 km = 6,0 Ω"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],400); I(R[1],200); I(R[2],150);",
+  "expr": "window.simState.I",
+  "expected": 500,
+  "tol": 0.01,
+  "note": "I = P / U = 200 MW / 400 kV = 500 A"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],400); I(R[1],200); I(R[2],150);",
+  "expr": "window.simState.Ph",
+  "expected": 1.5,
+  "tol": 0.01,
+  "note": "P_h = R I² = 6,0 Ω · (500 A)² = 1,5 MW"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],400); I(R[1],200); I(R[2],150);",
+  "expr": "window.simState.osuus",
+  "expected": 0.75,
+  "tol": 0.01,
+  "note": "loss share 0,75 %"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],400); I(R[1],200); I(R[2],150);",
+  "expr": "window.simState.perille",
+  "expected": 198.5,
+  "tol": 0.01,
+  "note": "delivered 198,5 MW"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],400); I(R[1],200); I(R[2],150);",
+  "expr": "window.simState.N21",
+  "expected": 20,
+  "tol": 0.01,
+  "note": "step-up ratio N2 : N1 = 400 kV : 20 kV = 20"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],200); I(R[1],200); I(R[2],150);",
+  "expr": "window.simState.Ph",
+  "expected": 6.0,
+  "tol": 0.01,
+  "note": "200 kV: P_h = 6,0 MW (four times 1,5 MW)"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],100); I(R[1],200); I(R[2],150);",
+  "expr": "window.simState.I",
+  "expected": 2000,
+  "tol": 0.01,
+  "note": "100 kV: I = 2000 A"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],100); I(R[1],200); I(R[2],150);",
+  "expr": "window.simState.osuus",
+  "expected": 12,
+  "tol": 0.01,
+  "note": "100 kV: share 12 %"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],400); I(R[1],400); I(R[2],150);",
+  "expr": "window.simState.Ph",
+  "expected": 6.0,
+  "tol": 0.01,
+  "note": "P slider: 400 MW at 400 kV gives I = 1000 A, P_h = 6,0 MW"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],400); I(R[1],200); I(R[2],300);",
+  "expr": "window.simState.Ph",
+  "expected": 3.0,
+  "tol": 0.01,
+  "note": "l slider: 300 km doubles R and P_h to 3,0 MW"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],20); I(R[1],200); I(R[2],150);",
+  "expr": "window.simState.mahdoton ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "20 kV, 200 MW, 150 km: R I = 60 kV > 20 kV, the transfer is impossible"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],20); I(R[1],200); I(R[2],150);",
+  "expr": "window.simState.perille",
+  "expected": 0,
+  "tol": 0,
+  "note": "impossible transfer delivers nothing"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],400); I(R[1],200); I(R[2],150);",
+  "expr": "window.simState.mahdoton ? 1 : 0",
+  "expected": 0,
+  "tol": 0,
+  "note": "400 kV transfer is possible"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],200); I(R[1],200); I(R[2],150);",
+  "expr": "(() => /6\\{?,\\}?00/.test(document.querySelector('#sim-root .readout').textContent + document.querySelector('#sim-root .readout').innerHTML) ? 1 : 0)()",
+  "expected": 1,
+  "tol": 0,
+  "note": "the readout shows the loss 6,00 MW"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],20); I(R[1],200); I(R[2],150);",
+  "expr": "(() => /Siirto ei onnistu/.test(document.querySelector('#sim-root .readout').textContent) ? 1 : 0)()",
+  "expected": 1,
+  "tol": 0,
+  "note": "the readout says when the transfer is impossible"
+ }
+]

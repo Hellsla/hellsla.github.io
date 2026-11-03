@@ -53,7 +53,8 @@
     "definition": "Sähköntuotanto, jossa tuuli pyörittää roottoria ja generaattoria. Teho riippuu säästä, joten tuulivoima on sääriippuvaista ja sen keskiteho on selvästi pienempi kuin nimellisteho.",
     "lessons": [
       "fy2-6",
-      "fy4-15"
+      "fy4-15",
+      "fy7-7"
     ],
     "see_also": [
       "energiantuotanto",
@@ -1949,7 +1950,8 @@
     "term": "sähköverkko",
     "definition": "Voimalinjojen, muuntajien ja sähköasemien muodostama verkko, joka siirtää sähköenergian voimalaitoksilta käyttäjille. Pitkät matkat siirretään kantaverkossa korkealla jännitteellä, ja jakeluverkko vie sähkön kuluttajille.",
     "lessons": [
-      "fy2-7"
+      "fy2-7",
+      "fy7-8"
     ],
     "see_also": [
       "siirtohäviö",
@@ -1961,7 +1963,8 @@
     "term": "siirtohäviö",
     "definition": "Energia, joka muuttuu energian siirrossa lämmöksi ympäristöön eikä tule käyttäjälle asti: E_häviö = E_lähtö − E_perille. Siirron hyötysuhde on perille tulevan energian osuus lähtevästä energiasta, η = E_perille : E_lähtö.",
     "lessons": [
-      "fy2-7"
+      "fy2-7",
+      "fy7-8"
     ],
     "see_also": [
       "hyötysuhde",
@@ -3600,6 +3603,189 @@
     ],
     "see_also": [
       "magneettinen voima"
+    ],
+    "locked": false
+  },
+  {
+    "term": "muuntaja",
+    "definition": "Laite, joka muuttaa vaihtojännitteen suuremmaksi tai pienemmäksi. Rautasydämen ympärillä on ensiö- ja toisiokäämi: ensiökäämin vaihtovirta synnyttää sydämeen muuttuvan magneettivuon, joka indusoi toisiokäämiin vaihtojännitteen. Ideaalisessa muuntajassa U₁ : U₂ = N₁ : N₂ = I₂ : I₁, ja teho säilyy. Tasavirralla muuntaja ei toimi.",
+    "lessons": [
+      "fy7-8"
+    ],
+    "see_also": [
+      "muuntosuhde",
+      "käämi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "muuntosuhde",
+    "definition": "Muuntajan ensiö- ja toisiokäämin kierrosten lukumäärien suhde N₁ : N₂. Ideaalisessa muuntajassa se on myös jännitteiden suhde U₁ : U₂ ja virtojen käänteinen suhde I₂ : I₁.",
+    "lessons": [
+      "fy7-8"
+    ],
+    "see_also": [
+      "muuntaja"
+    ],
+    "locked": false
+  },
+  {
+    "term": "suurjännite",
+    "definition": "Yli 1 kV:n vaihtojännite. Sähköenergiaa siirretään pitkiä matkoja suurjännitteellä, koska sama teho kulkee silloin pienellä virralla ja siirtohäviöt ovat pienet; Suomen kantaverkon jännitteet ovat 400, 220 ja 110 kV.",
+    "lessons": [
+      "fy7-8"
+    ],
+    "see_also": [
+      "siirtohäviö",
+      "sähköverkko"
+    ],
+    "locked": false
+  },
+  {
+    "term": "induktio",
+    "definition": "Sähkömagneettinen induktio: ilmiö, jossa johdinsilmukkaan tai käämiin syntyy jännite, kun sen läpi kulkeva magneettivuo muuttuu. Muuttumaton magneettikenttä ei synnytä jännitettä.",
+    "lessons": [
+      "fy7-5"
+    ],
+    "see_also": [
+      "magneettivuo",
+      "induktiojännite",
+      "induktiolaki"
+    ],
+    "locked": false
+  },
+  {
+    "term": "magneettivuo",
+    "definition": "Suure $\\Phi$, joka kuvaa, kuinka paljon magneettikenttää kulkee pinnan läpi. Kun homogeeninen kenttä on kohtisuorassa pintaa vastaan, $\\Phi = BA$. Yksikkö on weber, $1\\,\\text{Wb} = 1\\,\\text{T}\\cdot\\text{m}^2$.",
+    "lessons": [
+      "fy7-5"
+    ],
+    "see_also": [
+      "magneettivuon tiheys",
+      "induktiolaki"
+    ],
+    "locked": false
+  },
+  {
+    "term": "induktiojännite",
+    "definition": "Jännite, joka syntyy käämiin tai johdinsilmukkaan sen läpi kulkevan magneettivuon muuttuessa, tai magneettikentässä liikkuvan johtimen päiden välille, $e = vBl$. Suljetussa piirissä se synnyttää induktiovirran.",
+    "lessons": [
+      "fy7-5"
+    ],
+    "see_also": [
+      "induktio",
+      "induktiolaki"
+    ],
+    "locked": false
+  },
+  {
+    "term": "induktiolaki",
+    "definition": "Faradayn induktiolaki: käämiin syntyvä induktiojännite on $e = -N\\tfrac{\\Delta\\Phi}{\\Delta t}$, missä $N$ on kierrosten lukumäärä ja $\\Delta\\Phi : \\Delta t$ magneettivuon muutosnopeus. Miinusmerkki kertoo, että jännite vastustaa muutosta, joka sen synnyttää (Lenzin laki).",
+    "lessons": [
+      "fy7-5"
+    ],
+    "see_also": [
+      "induktio",
+      "magneettivuo"
+    ],
+    "locked": false
+  },
+  {
+    "term": "generaattori",
+    "definition": "Laite, joka muuttaa pyörimisliikkeen sähköenergiaksi sähkömagneettisen induktion avulla: käämi pyörii magneettikentässä tai magneetti käämin sisällä, jolloin käämin läpi kulkeva magneettivuo muuttuu ja käämiin syntyy jännite.",
+    "lessons": [
+      "fy7-7"
+    ],
+    "see_also": [
+      "vaihtojännite",
+      "tuulivoima"
+    ],
+    "locked": false
+  },
+  {
+    "term": "vaihtovirta",
+    "definition": "Sähkövirta, jonka suunta vaihtuu jaksollisesti. Sähköverkossa virta on sinimuotoinen ja sen taajuus on $50\\,\\text{Hz}$, joten suunta vaihtuu sata kertaa sekunnissa.",
+    "lessons": [
+      "fy7-7"
+    ],
+    "see_also": [
+      "vaihtojännite",
+      "tehollinen arvo"
+    ],
+    "locked": false
+  },
+  {
+    "term": "vaihtojännite",
+    "definition": "Jännite, jonka suunta vaihtuu jaksollisesti. Magneettikentässä tasaisesti pyörivän käämin jännite on sinimuotoinen, $e = e_0 \\sin(2\\pi f t)$.",
+    "lessons": [
+      "fy7-7"
+    ],
+    "see_also": [
+      "vaihtovirta",
+      "generaattori",
+      "huippuarvo"
+    ],
+    "locked": false
+  },
+  {
+    "term": "tehollinen arvo",
+    "definition": "Vaihtojännitteen tai -virran arvo, joka vastaa tasajännitettä tai tasavirtaa, joka tuottaisi vastukseen saman keskimääräisen tehon. Sinimuotoisella jännitteellä $U = U_0 : \\sqrt{2}$; verkkojännitteen $230\\,\\text{V}$ on tehollinen arvo.",
+    "lessons": [
+      "fy7-7"
+    ],
+    "see_also": [
+      "huippuarvo",
+      "vaihtojännite"
+    ],
+    "locked": false
+  },
+  {
+    "term": "huippuarvo",
+    "definition": "Jaksollisesti vaihtelevan jännitteen tai virran suurin arvo, esimerkiksi $U_0$ tai $e_0$. Verkkojännitteen huippuarvo on noin $325\\,\\text{V}$.",
+    "lessons": [
+      "fy7-7"
+    ],
+    "see_also": [
+      "tehollinen arvo",
+      "vaihtojännite"
+    ],
+    "locked": false
+  },
+  {
+    "term": "Lenzin laki",
+    "definition": "Induktiovirran suunta on aina sellainen, että sen oma magneettikenttä vastustaa sitä magneettivuon muutosta, joka induktiovirran synnyttää. Laki seuraa energian säilymisestä, ja se on induktiolain $e = -N \\Delta\\Phi : \\Delta t$ miinusmerkki.",
+    "lessons": [
+      "fy7-6"
+    ],
+    "see_also": [
+      "induktio",
+      "pyörrevirta",
+      "energian säilyminen"
+    ],
+    "locked": false
+  },
+  {
+    "term": "pyörrevirta",
+    "definition": "Induktiovirta, joka kiertää suljettuina silmukoina umpinaisessa sähköä johtavassa kappaleessa, kun kappaleen läpi kulkeva magneettivuo muuttuu. Pyörrevirrat vastustavat Lenzin lain mukaan muutosta ja muuttavat sähköenergiaa kappaleen sisäenergiaksi.",
+    "lessons": [
+      "fy7-6"
+    ],
+    "see_also": [
+      "Lenzin laki",
+      "induktiojarru",
+      "sisäenergia"
+    ],
+    "locked": false
+  },
+  {
+    "term": "induktiojarru",
+    "definition": "Jarru, jossa sähköä johtava levy tai kisko liikkuu magneettikentässä ja siihen syntyvät pyörrevirrat jarruttavat liikettä. Jarru ei kulu, ja sen voima kasvaa vauhdin mukana; liike-energia muuttuu johteen sisäenergiaksi. Kutsutaan myös pyörrevirtajarruksi.",
+    "lessons": [
+      "fy7-6"
+    ],
+    "see_also": [
+      "pyörrevirta",
+      "Lenzin laki"
     ],
     "locked": false
   }
