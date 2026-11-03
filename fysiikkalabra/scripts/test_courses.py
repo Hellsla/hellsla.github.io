@@ -67,7 +67,7 @@ c2 = json.loads((T / "curriculum.json").read_text()); del c2["FY4"]["tavoitteet"
 code, out = run("new_course.py", "FY4", "--check")
 expect("a course without its LOPS goals is reported missing, nothing invented", code == 1 and "'tavoitteet' is missing" in out, out)
 (T / "curriculum.json").write_text(json.dumps(cur, ensure_ascii=False, indent=2) + "\n")
-code, out = run("courses.py", "init-lesson", "fy5-1")
+code, out = run("courses.py", "init-lesson", "fy6-1")
 expect("a lesson of an uninitialized course is refused", code != 0 and "not initialized" in out, out)
 code, out = run("courses.py", "init-lesson", "fy4-99")
 expect("a lesson without a slot is refused", code != 0 and "not a lesson slot" in out, out)

@@ -1,0 +1,14 @@
+[
+  {
+    "q": "A car turns sharply to the left, and the passenger feels pressed against the door on the right. What force really acts on the passenger in the horizontal direction, and in which direction does it point?",
+    "a": "The door (and the seat) pushes the passenger to the left, towards the centre of the bend. The body of the passenger tends to continue straight on, so the door comes against him and gives him the centripetal force. There is no centrifugal force pushing outwards: the feeling comes from the body continuing straight on if the door did not turn it."
+  },
+  {
+    "q": "A car drives the same bend first at a speed of $40\\,\\text{km/h}$ and then at $120\\,\\text{km/h}$. How many times as large is the centripetal acceleration the second time?",
+    "a": "The speed triples, and $a_\\text{n} = \\tfrac{v^2}{r}$ grows with the square of the speed, so the acceleration is $3^2 = 9$ times as large. At the same time the friction of the road has to be nine times as large, and that is why a high speed easily takes the car out of the bend."
+  },
+  {
+    "q": "Why does the passenger of a car feel light when the car drives fast over the top of a hill?",
+    "a": "At the top the car and the passenger accelerate down towards the centre of the arc, so the support force of the seat must be smaller than the weight: $N = m\\left(g - \\tfrac{v^2}{r}\\right)$. The weight does not change, but the seat presses the passenger less, and this is felt as lightness."
+  }
+]

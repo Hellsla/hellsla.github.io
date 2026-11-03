@@ -1,0 +1,20 @@
+{
+  "level1": [
+    {"id": "fy5-9-L1-01", "level": 1, "text": "Kappale, jonka massa on $0{,}80\\,\\text{kg}$, värähtelee kitkattomalla vaakasuoralla alustalla jousen varassa. Jousen jousivakio on $50\\,\\text{N/m}$. Kuinka suuri on värähtelyn jaksonaika?", "answer": 0.794767, "unit": "s", "tolerance": 0.02},
+    {"id": "fy5-9-L1-02", "level": 1, "text": "Kirjahyllyn kulmaan on ripustettu koristeeksi heiluri, jonka pituus on $0{,}600\\,\\text{m}$. Heilurin kuula heilahtelee pienin heilahduksin, ja ilmanvastus jätetään huomiotta. Kuinka suuri on heilurin jaksonaika?", "answer": 1.553893, "unit": "s", "tolerance": 0.02},
+    {"id": "fy5-9-L1-03", "level": 1, "text": "Lelussa $0{,}20\\,\\text{kg}$:n hahmo värähtelee jousen varassa. Jousen jousivakio on $80\\,\\text{N/m}$. Kuinka suuri on värähtelyn taajuus?", "answer": 3.183099, "unit": "Hz", "tolerance": 0.02},
+    {"id": "fy5-9-L1-04", "level": 1, "text": "Koulun värähtelykokeessa jousen jousivakio on $120\\,\\text{N/m}$. Jousen päässä oleva kappale värähtelee kitkattomasti vaakasuoralla radalla, ja värähtelyn amplitudi on $0{,}050\\,\\text{m}$. Kuinka suuri on värähtelyn energia?", "answer": 0.15, "unit": "J", "tolerance": 0.02},
+    {"id": "fy5-9-L1-05", "level": 1, "text": "Jousen varassa kitkattomasti värähtelevän kappaleen amplitudi on $3{,}0\\,\\text{cm}$. Kuinka pitkän matkan, metreinä, kappale kulkee yhden jakson aikana?", "answer": 0.12, "unit": "m", "tolerance": 0.02}
+  ],
+  "level2": [
+    {"id": "fy5-9-L2-01", "level": 2, "text": "Tiedekeskuksen heilurin halutaan tekevän yhden täyden heilahduksen eli jakson tasan $1{,}50\\,\\text{s}$:ssa. Heilahdukset ovat pieniä, ja ilmanvastus jätetään huomiotta. Kuinka pitkä heilurin on oltava?", "answer": 0.559103, "unit": "m", "tolerance": 0.02},
+    {"id": "fy5-9-L2-02", "level": 2, "text": "Jousen varassa värähtelee $0{,}30\\,\\text{kg}$:n punnus. Jaksonaika halutaan kaksinkertaiseksi samalla jousella lisäämällä punnukseen massaa. Kuinka paljon massaa on lisättävä?", "answer": 0.9, "unit": "kg", "tolerance": 0.02},
+    {"id": "fy5-9-L2-03", "level": 2, "text": "Kitkattomalla ilmatyynyradalla oleva $0{,}40\\,\\text{kg}$:n vaunu on kiinnitetty jouseen, jonka jousivakio on $25\\,\\text{N/m}$. Vaunu vedetään $8{,}0\\,\\text{cm}$ tasapainoasemasta ja päästetään irti levosta. Kuinka suuri on vaunun suurin nopeus?", "answer": 0.632456, "unit": "m/s", "tolerance": 0.02},
+    {"id": "fy5-9-L2-04", "level": 2, "text": "Maan pinnalla heilurin jaksonaika on $2{,}00\\,\\text{s}$. Sama heiluri viedään Marsiin, jossa putoamiskiihtyvyys on $3{,}71\\,\\text{m/s}^2$. Heilahdukset ovat pieniä. Kuinka suuri on heilurin jaksonaika Marsissa?", "answer": 3.252202, "unit": "s", "tolerance": 0.02}
+  ],
+  "level3": [
+    {"id": "fy5-9-L3-01", "level": 3, "text": "Kappale, jonka massa on $0{,}50\\,\\text{kg}$, värähtelee kitkattomasti jousen varassa. Jousen jousivakio on $200\\,\\text{N/m}$ ja värähtelyn amplitudi $0{,}100\\,\\text{m}$. Kuinka suuri on kappaleen nopeus, kun se on $0{,}0500\\,\\text{m}$:n päässä tasapainoasemasta?", "answer": 1.732051, "unit": "m/s", "tolerance": 0.02},
+    {"id": "fy5-9-L3-02", "level": 3, "text": "Kun $80\\,\\text{kg}$:n matkustaja istuu $1200\\,\\text{kg}$:n autoon, auton kori painuu jousituksen varassa $3{,}0\\,\\text{cm}$ alemmas. Mallinnetaan koko auto matkustajineen yhtenä kappaleena yhden jousen varassa ja jätetään iskunvaimentimet huomiotta. Kuinka suuri on korin pystysuoran värähtelyn jaksonaika, kun auto ajaa kuoppaan matkustaja kyydissään?", "answer": 1.389844, "unit": "s", "tolerance": 0.03},
+    {"id": "fy5-9-L3-03", "level": 3, "text": "Heilurikellon heiluri on $0{,}994\\,\\text{m}$ pitkä, ja kello käy keväällä täsmälleen oikein. Kesän helteellä heilurin tanko pitenee lämpölaajenemisen vuoksi $0{,}50\\,\\text{mm}$. Kello laskee heilahduksia ja olettaa jokaisen jakson yhtä pitkäksi kuin keväällä. Heilahdukset ovat pieniä. Kuinka monta sekuntia kello jätättää vuorokaudessa?", "answer": 21.722188, "unit": "s", "tolerance": 0.03}
+  ]
+}

@@ -1,0 +1,177 @@
+[
+ {
+  "expr": "(() => { const S=window.simState; return S.v===7 && S.h===400 && S.m===1000 && S.running===false && S.hmin===null && S.T===null && S.tila==='valmis' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "on load: v = 7,00 km/s, h = 400 km, 1000 kg, ready, no measurements (must run before any setup)"
+ },
+ {
+  "expr": "(() => { const R=document.querySelectorAll('#sim-root input[type=range]'); return R.length===1 && R[0].min==='1' && R[0].max==='10' && R[0].step==='0.01' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "one slider: v 1-10 km/s, step 0,01"
+ },
+ {
+  "expr": "(() => { const L=[...document.querySelectorAll('#sim-root select')].map(s=>[...s.options].map(o=>o.value).join(',')); return L.length===3 && L[0]==='400,2000,20200,35786,378029' && L[1]==='1,1000,420000' && L[2]==='0.5,1,2' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "selects: height, mass, pace"
+ },
+ {
+  "expr": "(() => { const b=[...document.querySelectorAll('#sim-root button')].map(x=>x.textContent); const k=[...document.getElementById('sim-root').children].map(e=>e.tagName==='CANVAS'?'canvas':e.className); return b[0]==='Laukaise' && b[1]==='Alusta' && k.indexOf('canvas')<k.indexOf('controls') && k.indexOf('controls')<k.indexOf('readout') ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "main button first; DOM order canvas, controls, readout"
+ },
+ {
+  "expr": "(() => { const n=document.querySelectorAll('#sim-root p.note'); return !document.querySelector('#sim-root details') && n.length===1 && n[0].textContent.trim().split(/\\s+/).length<=15 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "no Lisätietoja box; one legend line of at most 15 words"
+ },
+ {
+  "expr": "(() => { const P=window.simAdapter && window.simAdapter.params; return P && Object.keys(P).sort().join(',')==='h,m,v' && P.v.unit==='km/s' && P.h.unit==='km' && P.m.unit==='kg' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "adapter declares v (km/s), h (km), m (kg)"
+ },
+ {
+  "expr": "(() => { const c=document.querySelector('#sim-root canvas'); return document.getElementById('sim-root').clientWidth < 500 || (c.width===600 && c.height===400) ? 1 : 0; })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "canvas is 600x400 in the wide layout"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'400'); I(L[1],'1000'); I(R[0],7.67);",
+  "expr": "window.simState.g",
+  "expected": 8.690703,
+  "tol": 0.01,
+  "note": "F/m = γM/r² at h = 400 km: 8,69 m/s²"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'400'); I(L[1],'1000'); I(R[0],7.67);",
+  "expr": "window.simState.F",
+  "expected": 8690.703,
+  "tol": 0.01,
+  "note": "F = γMm/r² for 1000 kg: 8691 N"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'400'); I(L[1],'420000'); I(R[0],7.67);",
+  "expr": "window.simState.F",
+  "expected": 3650095.2,
+  "tol": 0.01,
+  "note": "F for 420 000 kg: 3,65 MN"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'400'); I(L[1],'1'); I(R[0],7.67);",
+  "expr": "window.simState.F",
+  "expected": 8.690703,
+  "tol": 0.01,
+  "note": "F for 1 kg: 8,69 N"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'35786'); I(L[1],'1000'); I(R[0],3.07);",
+  "expr": "window.simState.g",
+  "expected": 0.2241925,
+  "tol": 0.01,
+  "note": "F/m at the geostationary height: 0,224 m/s²"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'378029'); I(L[1],'1000'); I(R[0],1.02);",
+  "expr": "window.simState.r",
+  "expected": 384400,
+  "tol": 0.01,
+  "note": "Moon option: r = 384 400 km"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'400'); I(L[1],'1000'); I(R[0],7.0); I(L[2],'2'); document.querySelector('#sim-root button').click();",
+  "expr": "(async () => { for (let i = 0; i < 200 && !(window.simState.kierros || window.simState.done); i++) await new Promise(r => setTimeout(r, 100)); const S = window.simState; return S.done && S.tila==='tormasi' && S.hmin===0 && S.T===null ? 1 : 0; })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "v = 7,00 km/s at 400 km: hits the Earth (hmin 0, no period)"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'400'); I(L[1],'1000'); I(R[0],7.6); I(L[2],'2'); document.querySelector('#sim-root button').click();",
+  "expr": "(async () => { for (let i = 0; i < 200 && !(window.simState.kierros || window.simState.done); i++) await new Promise(r => setTimeout(r, 100)); const S = window.simState; return S.kierros ? S.hmin : -1; })()",
+  "expected": 154.94,
+  "tol": 0.01,
+  "note": "v = 7,60 km/s: dips to 155 km and comes back (Python replica of the Verlet step)"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'400'); I(L[1],'1000'); I(R[0],7.6); I(L[2],'2'); document.querySelector('#sim-root button').click();",
+  "expr": "(async () => { for (let i = 0; i < 200 && !(window.simState.kierros || window.simState.done); i++) await new Promise(r => setTimeout(r, 100)); const S = window.simState; return S.kierros ? S.hmax : -1; })()",
+  "expected": 400,
+  "tol": 0.01,
+  "note": "v = 7,60 km/s: back up to the launch height 400 km"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'400'); I(L[1],'1000'); I(R[0],7.67); I(L[2],'2'); document.querySelector('#sim-root button').click();",
+  "expr": "(async () => { for (let i = 0; i < 200 && !(window.simState.kierros || window.simState.done); i++) await new Promise(r => setTimeout(r, 100)); const S = window.simState; return S.kierros ? S.T : -1; })()",
+  "expected": 92.3963,
+  "tol": 0.01,
+  "note": "v = 7,67 km/s: one revolution in 92,4 min"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'400'); I(L[1],'1000'); I(R[0],7.67); I(L[2],'2'); document.querySelector('#sim-root button').click();",
+  "expr": "(async () => { for (let i = 0; i < 200 && !(window.simState.kierros || window.simState.done); i++) await new Promise(r => setTimeout(r, 100)); const S = window.simState; return S.kierros ? S.hmin : -1; })()",
+  "expected": 396.41,
+  "tol": 0.01,
+  "note": "v = 7,67 km/s: nearly a circle, lowest 396 km"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'400'); I(L[1],'1000'); I(R[0],7.67); I(L[2],'2'); document.querySelector('#sim-root button').click();",
+  "expr": "(async () => { for (let i = 0; i < 200 && !(window.simState.kierros || window.simState.done); i++) await new Promise(r => setTimeout(r, 100)); const S = window.simState; return S.kierros ? Math.abs(S.hnyt - 400) < 0.5 ? 1 : 0 : -1; })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "the orbit closes: after one revolution the satellite is back at 400 km (Verlet)"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'400'); I(L[1],'420000'); I(R[0],7.67); I(L[2],'2'); document.querySelector('#sim-root button').click();",
+  "expr": "(async () => { for (let i = 0; i < 200 && !(window.simState.kierros || window.simState.done); i++) await new Promise(r => setTimeout(r, 100)); const S = window.simState; return S.kierros ? S.T : -1; })()",
+  "expected": 92.3963,
+  "tol": 0.01,
+  "note": "mass cancels: 420 000 kg also takes 92,4 min"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'400'); I(L[1],'1'); I(R[0],7.67); I(L[2],'2'); document.querySelector('#sim-root button').click();",
+  "expr": "(async () => { for (let i = 0; i < 200 && !(window.simState.kierros || window.simState.done); i++) await new Promise(r => setTimeout(r, 100)); const S = window.simState; return S.kierros ? S.hmin : -1; })()",
+  "expected": 396.41,
+  "tol": 0.01,
+  "note": "mass cancels: 1 kg follows the same path"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'400'); I(L[1],'1000'); I(R[0],7.68); I(L[2],'2'); document.querySelector('#sim-root button').click();",
+  "expr": "(async () => { for (let i = 0; i < 200 && !(window.simState.kierros || window.simState.done); i++) await new Promise(r => setTimeout(r, 100)); const S = window.simState; return S.kierros ? S.hmax : -1; })()",
+  "expected": 431.81,
+  "tol": 0.01,
+  "note": "v = 7,68 km/s: rises to 432 km"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'400'); I(L[1],'1000'); I(R[0],8.0); I(L[2],'2'); document.querySelector('#sim-root button').click();",
+  "expr": "(async () => { for (let i = 0; i < 200 && !(window.simState.kierros || window.simState.done); i++) await new Promise(r => setTimeout(r, 100)); const S = window.simState; return S.kierros ? S.hmax : -1; })()",
+  "expected": 1700.37,
+  "tol": 0.01,
+  "note": "v = 8,00 km/s: rises to 1700 km"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'400'); I(L[1],'1000'); I(R[0],10); I(L[2],'2'); document.querySelector('#sim-root button').click();",
+  "expr": "(async () => { for (let i = 0; i < 200 && !(window.simState.kierros || window.simState.done); i++) await new Promise(r => setTimeout(r, 100)); const S = window.simState; return S.kierros ? S.hmax : -1; })()",
+  "expected": 31906.3,
+  "tol": 0.01,
+  "note": "v = 10,00 km/s: a long orbit up to 31 900 km, still bound"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'35786'); I(L[1],'1000'); I(R[0],3.07); I(L[2],'2'); document.querySelector('#sim-root button').click();",
+  "expr": "(async () => { for (let i = 0; i < 200 && !(window.simState.kierros || window.simState.done); i++) await new Promise(r => setTimeout(r, 100)); const S = window.simState; return S.kierros ? S.T : -1; })()",
+  "expected": 1430.01,
+  "tol": 0.01,
+  "note": "geostationary height, v = 3,07 km/s: about one day"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'35786'); I(L[1],'1000'); I(R[0],10); I(L[2],'2'); document.querySelector('#sim-root button').click();",
+  "expr": "(async () => { for (let i = 0; i < 200 && !(window.simState.kierros || window.simState.done); i++) await new Promise(r => setTimeout(r, 100)); const S = window.simState; return S.done && S.tila==='pois' ? 1 : 0; })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "v = 10 km/s at the geostationary height: escapes, leaves the view"
+ }
+]

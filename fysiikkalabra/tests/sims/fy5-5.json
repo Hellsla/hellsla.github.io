@@ -1,0 +1,150 @@
+[
+ {
+  "expr": "(() => { const S=window.simState; return S.m1===10 && S.m2===2 && S.r===4 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "on load: m1 = 10 t, m2 = 2 t, r = 4,0 m (must run before any setup)"
+ },
+ {
+  "expr": "(() => { const R=document.querySelectorAll('#sim-root input[type=range]'); return R.length===3 && R[0].min==='1' && R[0].max==='10' && R[0].step==='1' && R[1].min==='1' && R[1].max==='10' && R[2].min==='2' && R[2].max==='10' && R[2].step==='0.5' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "three sliders: m1 and m2 1-10 t step 1, r 2-10 m step 0,5"
+ },
+ {
+  "expr": "(() => { const b=[...document.querySelectorAll('#sim-root button')].map(x=>x.textContent); const k=[...document.getElementById('sim-root').children].map(e=>e.tagName==='CANVAS'?'canvas':e.className); return b[0]==='Tyhjennä kuvaaja' && k.indexOf('canvas')<k.indexOf('controls') && k.indexOf('controls')<k.indexOf('readout') ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "main button first; DOM order canvas, controls, readout"
+ },
+ {
+  "expr": "(() => { const n=document.querySelectorAll('#sim-root p.note'); return !document.querySelector('#sim-root details') && n.length===1 && n[0].textContent.trim().split(/\\s+/).length<=15 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "no Lisätietoja box; one legend line of at most 15 words"
+ },
+ {
+  "expr": "(() => { const P=window.simAdapter && window.simAdapter.params; return P && Object.keys(P).sort().join(',')==='m1,m2,r' && P.m1.unit==='t' && P.m2.unit==='t' && P.r.unit==='m' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "adapter declares m1 (t), m2 (t) and r (m)"
+ },
+ {
+  "expr": "(() => { const c=document.querySelector('#sim-root canvas'); return document.getElementById('sim-root').clientWidth < 500 || (c.width===600 && c.height===400) ? 1 : 0; })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "canvas is 600x400 in the wide layout"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],10); I(R[1],2); I(R[2],4);",
+  "expr": "window.simState.F1",
+  "expected": 83.425,
+  "tol": 0.01,
+  "note": "prediction 1 setting: F = γ m1 m2/r² = 83,4 µN"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],10); I(R[1],2); I(R[2],4);",
+  "expr": "window.simState.F2 / window.simState.F1",
+  "expected": 1,
+  "tol": 0.001,
+  "note": "Newton III: F2 = F1 (the claim of ennuste-1)"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],10); I(R[1],2); I(R[2],4);",
+  "expr": "window.simState.a1",
+  "expected": 8.342499999999998,
+  "tol": 0.01,
+  "note": "a1 = F/m1 = γ m2/r² = 8,34 nm/s²"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],10); I(R[1],2); I(R[2],4);",
+  "expr": "window.simState.a2",
+  "expected": 41.7125,
+  "tol": 0.01,
+  "note": "a2 = F/m2 = 41,7 nm/s², five times a1"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],10); I(R[1],6); I(R[2],4);",
+  "expr": "window.simState.F2",
+  "expected": 250.275,
+  "tol": 0.01,
+  "note": "koe 1: m2 = 6 t gives 250 µN on body 2"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],10); I(R[1],6); I(R[2],4);",
+  "expr": "window.simState.a2",
+  "expected": 41.7125,
+  "tol": 0.01,
+  "note": "koe 1: a2 stays 41,7 nm/s² whatever m2 is"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],10); I(R[1],10); I(R[2],4);",
+  "expr": "window.simState.a1",
+  "expected": 41.7125,
+  "tol": 0.01,
+  "note": "koe 1: a1 grows with m2, 41,7 nm/s² at m2 = 10 t"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],10); I(R[1],10); I(R[2],3);",
+  "expr": "window.simState.F1",
+  "expected": 741.5555555555555,
+  "tol": 0.01,
+  "note": "prediction 2 setting: 742 µN at 3,0 m"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],10); I(R[1],10); I(R[2],6);",
+  "expr": "window.simState.F1",
+  "expected": 185.38888888888889,
+  "tol": 0.01,
+  "note": "koe 2: 185 µN at 6,0 m, a quarter"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],10); I(R[1],10); I(R[2],9);",
+  "expr": "window.simState.F1",
+  "expected": 82.39506172839506,
+  "tol": 0.01,
+  "note": "koe 2: 82,4 µN at 9,0 m, a ninth"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],10); I(R[1],10); I(R[2],10);",
+  "expr": "window.simState.F1",
+  "expected": 66.74,
+  "tol": 0.01,
+  "note": "66,7 µN at 10 m (ennuste-2 feedback)"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],3); I(R[1],7); I(R[2],5.5);",
+  "expr": "window.simState.Fr2",
+  "expected": 1401.54,
+  "tol": 0.01,
+  "note": "F r² = γ m1 m2 at every distance"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],1); I(R[1],1); I(R[2],10);",
+  "expr": "window.simState.uF",
+  "expected": 0.5,
+  "tol": 0.001,
+  "note": "force scale bar: 0,667 µN gets the 0,5 µN step (arrow 67 px)"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],10); I(R[1],10); I(R[2],2);",
+  "expr": "window.simState.uF",
+  "expected": 1000,
+  "tol": 0.001,
+  "note": "force scale bar: 1670 µN gets the 1000 µN step (arrow 83 px)"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],10); I(R[1],10); I(R[2],2); document.querySelector('#sim-root button').click(); I(R[2],5); I(R[2],8);",
+  "expr": "window.simState.npts",
+  "expected": 2,
+  "tol": 0,
+  "note": "graph keeps a point for each distance visited after clearing (5 m and 8 m)"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],10); I(R[1],10); I(R[2],5); I(R[2],7); I(R[0],4);",
+  "expr": "window.simState.npts",
+  "expected": 1,
+  "tol": 0,
+  "note": "changing a mass clears the graph's points"
+ }
+]

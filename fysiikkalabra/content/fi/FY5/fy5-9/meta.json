@@ -1,0 +1,23 @@
+{
+  "id": "fy5-9",
+  "course": "FY5",
+  "title": "Harmoninen värähtely ja heiluri",
+  "goals": [
+    "LOPS FY5: harmoninen voima ja värähtelyliike",
+    "Kokeellisesti: heilurin heilahdusajan määrittäminen",
+    "Temaattinen tarkastelu: heiluri",
+    "Täsmennys: jaksonajan riippuvuustekijät, T = 2π√(m/k) ja matemaattisen heilurin T = 2π√(l/g) pienillä heilahduksilla; energian säilyminen värähtelyssä, E = ½kA²; vaimeneminen valinnaisena"
+  ],
+  "prerequisites": [
+    "fy5-8"
+  ],
+  "glossary": [
+    "harmoninen värähtely",
+    "heiluri",
+    "värähtelyn energia",
+    "vaimeneminen"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

@@ -63,11 +63,13 @@ if local_courses.validate(curriculum): sys.exit("\n".join(local_courses.validate
 
 
 def render_md(text, **kw):
-    """Markdown -> HTML, with LaTeX kept out of markdown's reach and force-diagram specs drawn (scripts/fbdspec.py).
+    """Markdown -> HTML, with LaTeX kept out of markdown's reach, force-diagram specs drawn (scripts/fbdspec.py) and
+    figures embedded by id (`<svg data-fig="fy5-2/lauta-voimat"></svg>`, figcat.embed) drawn in the page's language.
     ```latex fences become $$...$$; every $$...$$ and $...$ is swapped for a token first,
     so underscores, backslashes and asterisks inside maths are not read as markdown."""
     text = re.sub(r"```latex\n(.*?)```", lambda m: "\n$$" + m.group(1).strip() + "$$\n", text, flags=re.S)
     text, fbds = fbdspec.render(text)                                              # ```voimakuvio specs -> drawn diagrams
+    text, figrefs = figcat.embed(text)                                             # a model figure by id inside a solution step
     maths = []
     def stash(m):
         x = m.group(0)
@@ -76,7 +78,8 @@ def render_md(text, **kw):
         maths.append(x); return f"MATHTOKEN{len(maths) - 1}X"
     text = re.sub(r"\$\$.*?\$\$|\$[^$\n]+?\$", stash, text, flags=re.S)
     html = markdown.markdown(text, extensions=["fenced_code", "tables"] + kw.get("extensions", []))
-    return fbdspec.restore(re.sub(r"MATHTOKEN(\d+)X", lambda m: maths[int(m.group(1))], html), fbds)
+    html = fbdspec.restore(re.sub(r"MATHTOKEN(\d+)X", lambda m: maths[int(m.group(1))], html), fbds)
+    return figcat.restore(html, figrefs, T.lang) if figrefs else html
 
 
 UNIT = r"(?:N/kg|m/s²|m/s|km/h|kPa|MPa|Pa|°C|K|kN|N|kg|g|km|cm²|cm|mm|m³|m|s|min|h|kJ|J|kW|W|dm³|l|Hz|%)"

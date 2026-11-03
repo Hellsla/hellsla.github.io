@@ -1,0 +1,21 @@
+{
+  "id": "fy5-2",
+  "course": "FY5",
+  "title": "Rotational equilibrium",
+  "goals": [
+    "LOPS FY5: equilibrium with respect to rotation in simple situations",
+    "Clarification: resolving forces into components may be necessary when the main emphasis is on understanding the physics rather than on mathematics"
+  ],
+  "prerequisites": [
+    "fy5-1"
+  ],
+  "glossary": [
+    "tasapaino",
+    "momenttiehto",
+    "painopiste",
+    "tukivoima"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

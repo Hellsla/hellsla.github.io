@@ -1,0 +1,412 @@
+{
+  "version": 1,
+  "contribution": "In circular motion the direction of the velocity changes all the time even though the speed stays the same, and an object continues in the direction of the tangent when the force that holds it on its path stops. The speed is calculated from the radius and the period with the formula $v = \\tfrac{2\\pi r}{T}$.",
+  "learn": [
+    "explain why the velocity changes in circular motion even though the speed stays the same.",
+    "work out in which direction an object continues when the force that holds it on a circular path stops.",
+    "calculate the speed from the radius and the period or the rotation frequency."
+  ],
+  "prior": [
+    "Velocity is a vector with a magnitude and a direction, and in uniform motion an object travels the same distance in every equal time interval (chapter *Position, velocity and uniform motion as graphs*)",
+    "If the sum of the forces acting on an object is zero, the object is at rest or in uniform motion in a straight line (chapter *Interaction and force: Newton's first and third laws*)",
+    "Acceleration tells how quickly the velocity of an object changes (chapter *Acceleration and uniformly accelerated motion*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "A playground roundabout turns steadily. Aino stands right at the edge, Eetu next to the centre pole. Both complete a turn in the same time, but Aino feels the wind on her face and has to hold the rail with both hands, while Eetu stands almost relaxed. When Aino's grip slips, she falls onto the sand.",
+      "question": "If every part of the roundabout completes a turn equally fast, why does the edge move faster, and in which direction does the one who loses their grip go?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Recall: motion without a net force",
+      "prompt": "An ice hockey puck slides on the ice after the stick no longer touches it. Friction and air resistance are assumed negligible. How does the puck move?",
+      "choices": [
+        {
+          "text": "In a straight line at constant speed, because the sum of the forces acting on it is zero.",
+          "correct": true,
+          "feedback": "Correct. The weight and the support force of the ice cancel each other, and no force acts horizontally, so by Newton's first law the velocity of the puck does not change: neither its magnitude nor its direction (chapter *Interaction and force: Newton's first and third laws*). Today we look at what is needed for the direction to change."
+        },
+        {
+          "text": "It slows down gradually, because the force given by the stick is used up in the puck.",
+          "feedback": "No force from the stick is left in the puck to be used up. A force is an interaction, and it ends when the stick no longer touches the puck (chapter *Interaction and force: Newton's first and third laws*). When the sum of the forces is zero, the velocity stays the same."
+        },
+        {
+          "text": "It curves gradually in the direction in which the stick was last turned.",
+          "feedback": "Curving means that the direction of the velocity changes, and that requires a net force. When nothing acts on the puck horizontally, it moves in a straight line."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: the string breaks",
+      "layout": "figures",
+      "prompt": "A puck is tied to a string whose other end is fixed to a peg driven into the ice. The puck circles the peg steadily anticlockwise, and in the pictures the grey arc shows its direction of motion. The string breaks just when the puck is at the circled point. The friction of the ice is assumed small. Which path does the puck follow after the string breaks?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "Straight along the tangent of the path.",
+          "figure": "fy5-3/opt-tangent",
+          "feedback": "The values of the model support this: the path of the puck after the break makes an angle of $90.0^\\circ$ with the direction of the string, and the speed after the break is the same as the speed before it, for example $3.14\\,\\text{m/s}$. When the string no longer pulls, no force acts on the puck horizontally, so it continues with the velocity it had at the moment of the break, and that velocity was along the tangent.",
+          "correct": true
+        },
+        {
+          "text": "Straight away from the peg, in the direction of the string.",
+          "figure": "fy5-3/opt-radial",
+          "feedback": "The values of the model refute this: the path makes an angle of $90.0^\\circ$ with the direction of the string, not $0^\\circ$. No force pushes the puck outwards. Before the break the velocity of the puck pointed along the tangent of the path, and without a force the velocity stays that way."
+        },
+        {
+          "text": "It still follows the same circular path for some distance.",
+          "figure": "fy5-3/opt-curve",
+          "feedback": "The values of the model refute this: the puck sets off straight away in a straight line, at an angle of $90.0^\\circ$ to the string. Curving would require the direction of the velocity to change, and that takes a force. The puck does not remember its path; when the string breaks, the change of direction ends at the same moment."
+        },
+        {
+          "text": "Diagonally, between the tangent and the direction of the string.",
+          "figure": "fy5-3/opt-between",
+          "feedback": "The values of the model refute this: the angle to the string is $90.0^\\circ$, not about $45^\\circ$. No outward motion arises, because nothing pushes the puck away from the peg. The puck continues with exactly the velocity it had, and that was along the tangent."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: at the edge or in the middle",
+      "prompt": "The roundabout makes one turn in $4.0\\,\\text{s}$. Eetu stands $1.0\\,\\text{m}$ from the centre and Aino $2.0\\,\\text{m}$ from it. How does Aino's speed compare with Eetu's?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-2",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "Equal to Eetu's, because both go round in the same time.",
+          "feedback": "The values of the model refute this: at the radius $1.0\\,\\text{m}$ the speed is $1.57\\,\\text{m/s}$, at the radius $2.0\\,\\text{m}$ it is $3.14\\,\\text{m/s}$. The same period means that they make the same number of turns, but at the edge one turn is a longer distance."
+        },
+        {
+          "text": "Twice as great, because Aino travels twice the distance in the same time.",
+          "correct": true,
+          "feedback": "The values of the model support this: $1.57\\,\\text{m/s}$ and $3.14\\,\\text{m/s}$, ratio $2.0$. The circumference $2\\pi r$ grows in the same ratio as the radius, and the time is the same."
+        },
+        {
+          "text": "Four times as great, because the size of a circle grows with the square of the radius.",
+          "feedback": "The values of the model refute this: the ratio is $3.14 : 1.57 = 2.0$. The *area* of a circle grows as the square of the radius, but the distance travelled is the circumference $2\\pi r$, which grows in direct proportion to the radius."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Spin a puck tied to a string on the ice, cut the string and compare the velocity vectors. The panel on the right or below shows how the velocity changes.",
+      "howto": "Adjust the radius $r$ of the path and the period $T$ and press *Start*. The blue arrow at the puck is the velocity $\\overline{v}$. The option *Show earlier velocities* leaves in the picture the positions and velocities of the puck at twelve equal time intervals over the last lap. While the puck circles, the same button changes into *Cut the string*, which releases the puck; the puck stops at the side of the rink, and the readout shows the angle $\\alpha$ between the path and the direction of the string and the speed $v_\\text{cut}$ after the break. The panel *Change of velocity* draws the velocity $\\overline{v}_1$ from one twelfth of a lap ago and the present velocity $\\overline{v}_2$ from the same point; the black arrow is the change of velocity $\\Delta\\overline{v}$. When you change a control, the puck returns to the start. *Animation speed* changes only the pace of the animation, not any reading; a slow pace helps in choosing the point of the cut.",
+      "model": "The puck slides on horizontal ice without friction and air resistance. The string keeps the puck on a circular path, and the speed stays the same: the motion is uniform circular motion. When the string breaks, no force acts on the puck horizontally, so it continues in a straight line at constant velocity. The vertical forces, the weight and the support force of the ice, cancel each other and are not drawn. The arrows in the panel *Change of velocity* have a scale of their own: the velocity vector is always drawn equally long, so the panel shows the change of direction relative to the speed. All numbers are values of the model.",
+      "calc": "The rotation frequency is $f = \\tfrac{1}{T}$ and the speed $v = \\tfrac{2\\pi r}{T}$. At every moment the position of the puck is calculated on a circle of radius $r$ so that one turn takes the time $T$. The distance travelled is $s = v t$, and $N$ is the number of full turns before the break. After the break the position is the point of the break plus $\\overline{v}\\,\\Delta t$. The angle $\\alpha$ is calculated from the real displacement of the puck after the break and the direction of the string at the moment of the break, and $v_\\text{cut}$ is the length of the displacement divided by the elapsed time. In the panel, $|\\Delta\\overline{v}|$ is the length of the vector $\\overline{v}_2 - \\overline{v}_1$ when the velocities are $\\Delta t = \\tfrac{T}{12}$ apart."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 1: the string breaks",
+      "intro": "Test prediction 1. The period stays constant. Choose a radius, press *Start* and then, at the point you want, press the same button, which now says *Cut the string*. Cut the string at clearly different points of the path, for example when the puck is at the top and at the left of the path, and observe in which direction the puck leaves at each point. When the puck has stopped at the side, record the measurement: the table gets the angle $\\alpha$ between the path and the direction of the string, the speed $v$ before the break and the speed $v_\\text{cut}$ after it. Measure at different cutting points with at least two different radii to see whether the direction of departure depends on the cutting point or on the radius; changing the radius returns the puck to the start.",
+      "initial": {
+        "r": 2,
+        "T": 4
+      },
+      "locked": [
+        "T"
+      ],
+      "vary": "r",
+      "names": {
+        "r": "radius of the path r",
+        "T": "period T"
+      },
+      "units": {
+        "r": "m",
+        "T": "s"
+      },
+      "measure": [
+        {
+          "key": "alpha",
+          "label": "α (°)"
+        },
+        {
+          "key": "v",
+          "label": "v (m/s)"
+        },
+        {
+          "key": "vIrti",
+          "label": "$v_\\text{cut}$ (m/s)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 2: the radius changes",
+      "intro": "Test prediction 2. The period is $4.0\\,\\text{s}$ and stays constant. Change only the radius and record the speed at least at the radii $1.0\\,\\text{m}$ and $2.0\\,\\text{m}$, and if you like also at $3.0\\,\\text{m}$. Start now and then and compare the length of the blue arrow.",
+      "initial": {
+        "r": 1,
+        "T": 4
+      },
+      "locked": [
+        "T"
+      ],
+      "vary": "r",
+      "names": {
+        "r": "radius of the path r",
+        "T": "period T"
+      },
+      "units": {
+        "r": "m",
+        "T": "s"
+      },
+      "measure": [
+        {
+          "key": "v",
+          "label": "v (m/s)"
+        },
+        {
+          "key": "s",
+          "label": "s (m)"
+        },
+        {
+          "key": "t",
+          "label": "t (s)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "koe-3",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 3: the period changes",
+      "intro": "Keep the radius $2.0\\,\\text{m}$ constant and change the period. Record the rotation frequency and the speed, for example at the periods $2\\,\\text{s}$, $4\\,\\text{s}$ and $8\\,\\text{s}$. How does the speed change when the period doubles?",
+      "initial": {
+        "r": 2,
+        "T": 2
+      },
+      "locked": [
+        "r"
+      ],
+      "vary": "T",
+      "names": {
+        "r": "radius of the path r",
+        "T": "period T"
+      },
+      "units": {
+        "r": "m",
+        "T": "s"
+      },
+      "measure": [
+        {
+          "key": "f",
+          "label": "f (1/s)"
+        },
+        {
+          "key": "v",
+          "label": "v (m/s)"
+        }
+      ],
+      "min": 2,
+      "optional": true
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion: direction and speed",
+      "after": [
+        "koe-1",
+        "koe-2"
+      ],
+      "prompt": "On the basis of your tables, write: in which direction did the puck leave when the string broke, and did its speed change? How did the speed depend on the radius when the period stayed the same? Why does the velocity of the puck change on a circular path even though the speed is constant?",
+      "model": "Wherever the string broke, the path of the puck made an angle of $90.0^\\circ$ with the direction of the string: the puck left along the tangent of the path, and its speed stayed the same as the speed before the break, for example $3.14\\,\\text{m/s}$ at the radius $2.0\\,\\text{m}$. When the period was $4.0\\,\\text{s}$, the speed was $1.57\\,\\text{m/s}$ at the radius $1.0\\,\\text{m}$ and $3.14\\,\\text{m/s}$ at the radius $2.0\\,\\text{m}$: a doubled radius gave a doubled speed, because the circumference $2\\pi r$ doubles and the time is the same. On a circular path the direction of the velocity turns all the time, so the velocity changes ($|\\Delta\\overline{v}|$ is not zero) even though the speed is constant; after the break $\\Delta\\overline{v}$ was zero. The numbers are values of the model, and in the model there is no friction on the ice.",
+      "criteria": [
+        "I said that the puck left along the tangent of the path, that is, perpendicular to the string, and I justified it with the angle $\\alpha$.",
+        "I stated that the speed after the break was the same as the speed before it.",
+        "I compared the speeds and stated that a doubled radius gives a doubled speed with the same period.",
+        "I explained that the velocity changes because its direction changes, and mentioned that the numbers are values of the model."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Return to your predictions",
+      "prompt": "Compare your predictions with the values of the model and the formula $v = \\tfrac{2\\pi r}{T}$. Then return to the opening question: why does Aino move faster than Eetu at the edge of the roundabout, and in which direction does she go when her grip slips?",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2"
+      ],
+      "optional": true
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the error",
+      "prompt": "A bicycle has been lifted onto a stand, and its front wheel turns $3.0$ revolutions per second. The diameter of the wheel is $0.70\\,\\text{m}$. A student calculates the speed of the outer edge of the tyre about the axle:\n\n$$\\begin{aligned} v &= 2\\pi r f \\\\ &= 2\\pi \\cdot 0.70\\,\\text{m} \\cdot 3.0\\,\\tfrac{1}{\\text{s}} \\\\ &\\approx 13\\,\\text{m/s} \\end{aligned}$$\n\nWhere is the error?",
+      "choices": [
+        {
+          "text": "The student substituted the diameter in place of the radius. The radius is $0.35\\,\\text{m}$, so $v \\approx 6.6\\,\\text{m/s}$.",
+          "correct": true,
+          "feedback": "Correct. In the formula $v = 2\\pi r f$ the radius is $r = \\tfrac{d}{2} = 0.35\\,\\text{m}$, so $v = 2\\pi \\cdot 0.35\\,\\text{m} \\cdot 3.0\\,\\tfrac{1}{\\text{s}} = 6.6\\,\\text{m/s}$. With the diameter you can calculate directly as $v = \\pi d f$."
+        },
+        {
+          "text": "The rotation frequency should first have been converted into a period, because the formula $v = 2\\pi r f$ does not apply.",
+          "feedback": "The formula $v = 2\\pi r f$ is the same as $v = \\tfrac{2\\pi r}{T}$, because $f = \\tfrac{1}{T}$. Calculating with the period gives the same result. The error is in the radius."
+        },
+        {
+          "text": "The formula is still missing the factor $2$, so the correct result is about $26\\,\\text{m/s}$.",
+          "feedback": "The factor $2\\pi$ is already included, because the circumference is $2\\pi r$. The error is the opposite: the diameter has been substituted in place of the radius, so the result is twice too large."
+        },
+        {
+          "text": "There is no error in the calculation.",
+          "feedback": "The result is twice too large, because $0.70\\,\\text{m}$ is the diameter. The radius is half of it, $0.35\\,\\text{m}$."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply to a new situation",
+      "prompt": "The Earth orbits the Sun along an almost circular path whose radius is $1.50 \\cdot 10^{11}\\,\\text{m}$. One revolution takes $365$ days. What is the speed of the Earth? Give the answer in km/s.",
+      "answer": 29.9,
+      "unit": "km/s",
+      "tolerance": 0.02,
+      "hints": [
+        "How long a distance does the Earth travel in one revolution, and how many seconds are there in $365$ days?",
+        "$v = \\dfrac{2\\pi r}{T}$, where $T = 365 \\cdot 24 \\cdot 3600\\,\\text{s}$.",
+        "$T = 3.1536 \\cdot 10^{7}\\,\\text{s}$, so $v = \\dfrac{2\\pi \\cdot 1.50 \\cdot 10^{11}\\,\\text{m}}{3.1536 \\cdot 10^{7}\\,\\text{s}}$. Finally convert metres to kilometres."
+      ],
+      "mistakes": [
+        {
+          "value": 4.76,
+          "feedback": "You divided the radius by the time. In one revolution the Earth travels the whole circumference $2\\pi r$ of its path, not a distance as long as the radius $r$."
+        },
+        {
+          "value": 107589,
+          "feedback": "You used hours as the period: $365 \\cdot 24 = 8760$. The time must be converted into seconds, $T = 365 \\cdot 24 \\cdot 3600\\,\\text{s}$."
+        },
+        {
+          "value": 29886,
+          "feedback": "Your calculation was right, but you answered in the unit $\\text{m/s}$. Convert to kilometres per second: $1\\,\\text{m} = 0.001\\,\\text{km}$."
+        }
+      ],
+      "solution": "**Given:** radius of the path $r = 1.50 \\cdot 10^{11}\\,\\text{m}$, period $T = 365\\,\\text{d}$\n\n**Find:** the speed $v$ of the Earth in $\\text{km/s}$\n\n**Principle:** The Earth orbits the Sun along an almost circular path at an almost constant speed, so it can be modelled as uniform circular motion. In one revolution it travels the circumference $2\\pi r$ of its path in the time $T$.\n\n**Formula:**\n\n$$v = \\frac{2\\pi r}{T}$$\n\n**Conversions:** $T = 365\\,\\text{d} = 365 \\cdot 24 \\cdot 3600\\,\\text{s} = 3.1536 \\cdot 10^{7}\\,\\text{s}$. Finally $1\\,\\text{m} = 0.001\\,\\text{km}$.\n\n**Substitution:** $v = \\dfrac{2\\pi \\cdot 1.50 \\cdot 10^{11}\\,\\text{m}}{3.1536 \\cdot 10^{7}\\,\\text{s}} = \\dfrac{9.425 \\cdot 10^{11}\\,\\text{m}}{3.1536 \\cdot 10^{7}\\,\\text{s}} = 29\\,886\\,\\text{m/s} = 29.886\\,\\text{km/s}$\n\n**Answer:** $29.9\\,\\text{km/s}$, three significant figures like the radius of the path $1.50 \\cdot 10^{11}\\,\\text{m}$.\n\n**Reasonableness:** The circumference of the path is about $9.4 \\cdot 10^{8}\\,\\text{km}$, and a year has about $3.2 \\cdot 10^{7}\\,\\text{s}$, so the speed is about $30\\,\\text{km}$ per second, or over $100\\,000\\,\\text{km/h}$. The Earth thus moves about a hundred times faster than a passenger aeroplane, which fits the orbit of a planet.",
+      "optional": true
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise at three levels. Level 1 tasks use the formula $v = \\tfrac{2\\pi r}{T}$ or $f = \\tfrac{1}{T}$ directly, level 2 tasks convert units or solve another quantity from the formula, and level 3 requires reasoning."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept",
+      "prompt": "A car drives round a roundabout at a constant speed of $30\\,\\text{km/h}$. Which statement is correct?",
+      "choices": [
+        {
+          "text": "The velocity of the car changes because its direction changes, so the car is accelerating.",
+          "correct": true,
+          "feedback": "Correct. Velocity is a vector. Even though the speed stays at $30\\,\\text{km/h}$, the direction of the velocity turns all the time, so the change of velocity $\\Delta\\overline{v}$ is not zero and the car accelerates. The magnitude of the acceleration is calculated in the chapter *Uniform circular motion and centripetal acceleration*."
+        },
+        {
+          "text": "The velocity of the car does not change, because the speedometer shows the same reading all the time.",
+          "feedback": "The speedometer shows only the magnitude of the velocity, that is, the speed. The direction of the velocity changes all the time in the roundabout, so the velocity vector changes."
+        },
+        {
+          "text": "The car does not accelerate, because acceleration always means an increase in speed.",
+          "feedback": "Acceleration means a change of velocity, and the velocity changes also when only its direction changes. An increase in speed is only one way of changing the velocity."
+        },
+        {
+          "text": "The velocity of the car points all the time towards the centre of the roundabout.",
+          "feedback": "The velocity points in the direction in which the car is moving at that moment, that is, along the tangent of the path, perpendicular to the radius."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Speed",
+      "prompt": "The diameter of the disc of an angle grinder is $125\\,\\text{mm}$, and the disc turns $11\\,000$ revolutions per minute. What is the speed of the edge of the disc? Give the answer in m/s.",
+      "answer": 72.0,
+      "unit": "m/s",
+      "tolerance": 0.02,
+      "hints": [
+        "What is the radius of the disc in metres, and how many revolutions per second does the disc make?",
+        "$v = 2\\pi r f$, where $r = \\tfrac{d}{2}$, so $v = \\pi d f$.",
+        "$d = 125 \\cdot 0.001\\,\\text{m} = 0.125\\,\\text{m}$ and $f = \\tfrac{11\\,000}{60\\,\\text{s}} = 183.3\\,\\tfrac{1}{\\text{s}}$."
+      ],
+      "mistakes": [
+        {
+          "value": 144,
+          "feedback": "You substituted the diameter in place of the radius in the formula $v = 2\\pi r f$. The radius is half of the diameter, $0.0625\\,\\text{m}$."
+        },
+        {
+          "value": 4320,
+          "feedback": "You used revolutions per minute as the rotation frequency. First convert to seconds: $f = \\tfrac{11\\,000}{60\\,\\text{s}}$."
+        }
+      ],
+      "solution": "**Given:** diameter of the disc $d = 125\\,\\text{mm}$, rotation frequency $f = 11\\,000\\,\\tfrac{1}{\\text{min}}$\n\n**Find:** the speed $v$ of the edge of the disc in $\\text{m/s}$\n\n**Principle:** The edge of the disc is in uniform circular motion whose radius is half of the diameter. In every revolution the edge travels a distance equal to the circumference $2\\pi r = \\pi d$, and there are $f$ revolutions per unit of time.\n\n**Formula:** $v = 2\\pi r f$ and $r = \\tfrac{d}{2}$, so\n\n$$v = \\pi d f$$\n\n**Conversions:** $d = 125\\,\\text{mm} = 125 \\cdot 0.001\\,\\text{m} = 0.125\\,\\text{m}$ and $f = 11\\,000\\,\\tfrac{1}{\\text{min}} = \\dfrac{11\\,000}{60\\,\\text{s}} = 183.33\\,\\tfrac{1}{\\text{s}}$\n\n**Substitution:** $v = \\pi \\cdot 0.125\\,\\text{m} \\cdot 183.33\\,\\tfrac{1}{\\text{s}} = 0.3927\\,\\text{m} \\cdot 183.33\\,\\tfrac{1}{\\text{s}} = 71.99\\,\\text{m/s}$\n\n**Answer:** $72.0\\,\\text{m/s}$, three significant figures like the diameter $125\\,\\text{mm}$.\n\n**Reasonableness:** The circumference is about $0.4\\,\\text{m}$, and the disc makes about $180$ revolutions per second, so the edge travels about $0.4\\,\\text{m} \\cdot 180 \\approx 72\\,\\text{m}$ per second, or about $260\\,\\text{km/h}$. Grinding discs are marked with the maximum permitted speed, typically $80\\,\\text{m/s}$, so the result is plausible."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Explain and transfer",
+      "prompt": "A hammer thrower swings the hammer by its handle and lets go. Seen from above, the hammer moves in an almost circular path before the release. In which direction does the hammer leave at the moment of release, and why must the thrower time the release correctly for the hammer to land in the sector?",
+      "criteria": [
+        "I say that at the moment of release the hammer leaves along the tangent of the path, that is, perpendicular to the wire, not straight outwards.",
+        "I justify it by saying that after the release the wire no longer pulls the hammer, so no force acts horizontally and the hammer continues with the velocity it had at the moment of release.",
+        "I explain that the direction of the velocity turns all the time on a circular path, so the direction of departure depends on where on the path the release takes place."
+      ],
+      "model": "The velocity of the hammer is at every moment along the tangent of the path. When the thrower lets go, the wire stops pulling the hammer towards the centre, and no force acts horizontally any more (air resistance is small). By Newton's first law the hammer continues horizontally with the velocity it had at the moment of release, that is, along the tangent, not straight away from the thrower. Because the direction of the tangent turns all the time during a revolution, the hammer flies into the sector only if the release takes place at the point of the path where the tangent points into the sector.",
+      "optional": true
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, two quick questions. Answer first by yourself and open the answer only afterwards."
+    }
+  ]
+}

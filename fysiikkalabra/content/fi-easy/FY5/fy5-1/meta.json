@@ -1,0 +1,18 @@
+{
+  "id": "fy5-1",
+  "course": "FY5",
+  "title": "Voiman momentti ja kappaleen kiertyminen",
+  "goals": [
+    "LOPS FY5: momentti ja kappaleen kiertyminen"
+  ],
+  "prerequisites": [],
+  "glossary": [
+    "momentti",
+    "vääntövaikutus",
+    "voiman varsi",
+    "kiertoakseli"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

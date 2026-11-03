@@ -1,0 +1,499 @@
+{
+  "version": 1,
+  "contribution": "Tasaisessa ympyräliikkeessä nopeuden suunta muuttuu, ja se tulkitaan kiihtyvyydeksi. Normaalikiihtyvyys $a_\\text{n} = \\tfrac{v^2}{r}$ osoittaa keskipisteeseen. Newtonin toinen laki antaa keskipisteeseen osoittavan kokonaisvoiman $m\\tfrac{v^2}{r}$. Se on todellisten voimien summa: kitka kaarteessa, jännitysvoima narussa sekä tukivoima nyppylällä ja notkossa. Keskipakoisvoima käsitellään virhekäsityksenä. Auton pidon raja tutkitaan simulaatiolla.",
+  "learn": [
+    "tunnistamaan tasaisen ympyräliikkeen ja selvittämään, mihin suuntaan normaalikiihtyvyys osoittaa ja kuinka suuri se on.",
+    "piirtämään ympyräradalla liikkuvan kappaleen voimakuvion ja käyttämään siihen Newtonin toista lakia.",
+    "selittämään, mikä voima kääntää auton kaarteessa ja mistä tunne ulospäin painautumisesta tulee."
+  ],
+  "prior": [
+    "Ratanopeus $v = \\tfrac{2\\pi r}{T}$ ja se, että nopeuden suunta muuttuu ympyräliikkeessä (luku *Ympyräliike ja ratanopeus*)",
+    "Voimakuvion piirtäminen ja liikeyhtälöiden kirjoittaminen: $\\Sigma F_x = m a_x$ ja $\\Sigma F_y = m a_y$ (luku *Voimakuvio ja voimien yhteisvaikutus*)",
+    "Lepokitka on enintään $\\mu_0 N$ (luku *Paino, kitka ja kalteva taso*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Liukkaana talvipäivänä auto tulee kaarteeseen vähän liian lujaa. Kuljettaja kääntää rattia, mutta auto päätyy lumipenkkaan. Matkustajasta tuntui kaarteessa siltä, että jokin painoi häntä ulospäin ovea vasten.",
+      "question": "Mikä voima pitää auton kaarteessa? Onko ulospäin painava voima todellinen?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Kertaa: nopeus ympyräliikkeessä",
+      "optional": true,
+      "prompt": "Kappale kiertää ympyrärataa niin, että sen ratanopeus pysyy koko ajan samana. Mikä väite kappaleen nopeudesta $\\overline{v}$ pitää paikkansa?",
+      "choices": [
+        {
+          "text": "Nopeuden suuruus pysyy samana, mutta sen suunta muuttuu.",
+          "correct": true,
+          "feedback": "Oikein. Kuten luvussa *Ympyräliike ja ratanopeus* opit, nopeus osoittaa aina radan tangentin suuntaan. Siksi sen suunta kääntyy, kun kappale kiertää rataa. Tässä luvussa selvitetään, mitä suunnan muutos tarkoittaa kiihtyvyydelle ja voimille."
+        },
+        {
+          "text": "Nopeus pysyy kokonaan samana, koska kappaleen vauhti ei muutu.",
+          "feedback": "Vauhti eli nopeuden suuruus pysyy samana. Nopeus on kuitenkin vektori, jolla on myös suunta. Ympyräradalla suunta on aina radan tangentin suuntainen, joten se muuttuu koko ajan."
+        },
+        {
+          "text": "Nopeus osoittaa koko ajan suoraan kohti radan keskipistettä.",
+          "feedback": "Nopeus on radan tangentin suuntainen eli kohtisuorassa sädettä vastaan. Jos nopeus osoittaisi keskipisteeseen, kappale liikkuisi kohti keskipistettä eikä ympyrää pitkin."
+        }
+      ]
+    },
+    {
+      "id": "pred-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 1: nopeus kaksinkertaistuu",
+      "justify": true,
+      "reveal": {
+        "after": "exp-1",
+        "min": 3
+      },
+      "prompt": "Auto ajaa vaakasuoralla ympyräradalla. Kuljettaja kasvattaa nopeuden kaksinkertaiseksi, mutta auto pysyy samalla radalla. Kuinka suuren kitkavoiman tien on nyt annettava autolle sivusuunnassa, jotta auto pysyy radalla?",
+      "choices": [
+        {
+          "text": "Neljä kertaa niin suuren kuin ennen.",
+          "correct": true,
+          "feedback": "Oikein. Kitkan on annettava autolle normaalikiihtyvyys. Se kasvaa nopeuden neliön mukana. Mallin arvoissa $1500\\,\\text{kg}$:n auto tarvitsee säteellä $50\\,\\text{m}$ nopeudella $10\\,\\text{m/s}$ kitkan $3{,}0\\,\\text{kN}$. Nopeudella $20\\,\\text{m/s}$ se tarvitsee kitkan $12\\,\\text{kN}$. Se on enemmän kuin kuiva asfaltti voi antaa, $11{,}8\\,\\text{kN}$, joten auto liukuu."
+        },
+        {
+          "text": "Kaksi kertaa niin suuren kuin ennen.",
+          "feedback": "Kitkan tarve kasvaa nopeammin kuin nopeus. Nopeammalla autolla nopeusnuoli on pidempi, joten saman suunnanmuutoksen nopeuden muutos on suurempi. Lisäksi nopeampi auto kääntyy saman kulman lyhyemmässä ajassa. Sen nopeuden suunta muuttuu siis nopeammin. Mallin arvoissa tarvittava kitka kasvaa $3{,}0\\,\\text{kN}$:sta $12\\,\\text{kN}$:iin eli nelinkertaiseksi, kun nopeus kasvaa $10\\,\\text{m/s}$:sta $20\\,\\text{m/s}$:iin."
+        },
+        {
+          "text": "Yhtä suuren, koska rata on sama.",
+          "feedback": "Rata on sama, mutta nopeampi auto kääntyy nopeammin. Sen nopeuden suunta muuttuu siis nopeammin, ja siihen tarvitaan suurempi voima. Mallin arvoissa tarvittava kitka kasvaa $3{,}0\\,\\text{kN}$:sta $12\\,\\text{kN}$:iin, kun nopeus kaksinkertaistuu."
+        }
+      ]
+    },
+    {
+      "id": "pred-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 2: kun pito pettää",
+      "justify": true,
+      "reveal": {
+        "after": "exp-1",
+        "min": 4
+      },
+      "prompt": "Auto ajaa ympyrärataa niin lujaa, että tien kitka ei enää riitä. Miten auto liikkuu sen jälkeen ylhäältä katsottuna?",
+      "choices": [
+        {
+          "text": "Auto kaartaa yhä, mutta loivemmin kuin rata, ja ajautuu radan ulkoreunan yli.",
+          "correct": true,
+          "feedback": "Oikein. Kitka osoittaa yhä kohti keskipistettä, mutta se ei riitä kääntämään autoa radan tahtiin. Simulaatiossa auto kaartaa loivemmin kuin rata. Se kulkee sitä suoremmin, mitä suurempi nopeus on, ja ajautuu ulkoreunan yli. Mikään voima ei työnnä autoa ulospäin."
+        },
+        {
+          "text": "Auto liukuu suoraan poispäin keskipisteestä, säteen suuntaisesti.",
+          "feedback": "Silloin autoon pitäisi vaikuttaa ulospäin osoittava voima, mutta sellaista ei ole. Mikään kappale ei työnnä autoa ulos. Simulaatiossa auto kaartaa loivemmin kuin rata ja kulkee sitä suoremmin, mitä suurempi nopeus on. Kitka ei riitä kääntämään autoa radan tahtiin."
+        },
+        {
+          "text": "Auto pysyy radalla, mutta sen vauhti hidastuu.",
+          "feedback": "Kaarteessa kitka osoittaa kohti keskipistettä eli kohtisuoraan nopeutta vastaan. Se ei hidasta autoa vaan kääntää sitä. Kun kitka ei riitä, auto kääntyy liian vähän. Simulaatiossa auto kaartaa loivemmin kuin rata, kulkee sitä suoremmin, mitä suurempi nopeus on, ja ajautuu radan ulkoreunan yli."
+        }
+      ]
+    },
+    {
+      "id": "pred-3",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 3: kevyt ja raskas auto",
+      "justify": true,
+      "optional": true,
+      "reveal": {
+        "after": "exp-2",
+        "min": 2
+      },
+      "prompt": "Kevyt ja raskas auto ajavat saman kaarteen samalla nopeudella. Renkaat ja tie ovat samanlaiset. Kumpi suistuu kaarteesta helpommin?",
+      "choices": [
+        {
+          "text": "Kumpikaan ei suistu helpommin: raja on sama.",
+          "correct": true,
+          "feedback": "Oikein. Raskas auto tarvitsee suuremman kitkan, $m\\tfrac{v^2}{r}$. Se painaa myös tietä enemmän, joten suurin lepokitka $\\mu_0 mg$ on samassa suhteessa suurempi. Mallin arvoissa nopeudella $19\\,\\text{m/s}$ tarvittava kitka on $0{,}92$ kertaa suurin lepokitka kaikilla kolmella massalla."
+        },
+        {
+          "text": "Raskas auto, koska se tarvitsee suuremman kitkan.",
+          "feedback": "Raskas auto tarvitsee suuremman kitkan. Se painaa tietä vasten myös suuremmalla voimalla, joten tie voi antaa sille suuremman kitkan. Mallin arvoissa tarvittavan ja suurimman kitkan suhde on $0{,}92$ massasta riippumatta."
+        },
+        {
+          "text": "Kevyt auto, koska se painaa tietä vähemmän.",
+          "feedback": "Kevyt auto saa pienemmän kitkan, mutta se myös tarvitsee pienemmän, koska sen massa on pienempi. Massa supistuu ehdosta $m\\tfrac{v^2}{r} \\le \\mu_0 mg$. Mallin arvoissa suhde on $0{,}92$ kaikilla massoilla."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Auto kiertää vaakasuoraa ympyrärataa. Vasemmalla on rata ylhäältä. Oikealla ovat auton voimakuvio takaa katsottuna ja tarvittavan kitkan vertailu suurimpaan lepokitkaan.",
+      "howto": "Valitse ratanopeus $v$ ja radan säde $r$ liukusäätimillä. Valitse myös auton *Massa* ja tien *Pinta*. Paina *Käynnistä*, niin auto lähtee kiertämään rataa. Jos tarvittava kitka on suurempi kuin suurin lepokitka, auto alkaa liukua. *Alusta* palauttaa auton radalle. Lukemat päivittyvät heti, myös auton ollessa pysähdyksissä. *Nopeus* hidastaa tai nopeuttaa animaatiota, mutta lukemat eivät muutu.",
+      "model": "Arvot ovat simulaation laskemia mallin arvoja. Tie on vaakasuora. Ilmanvastus ja vierimisvastus jätetään huomiotta. Renkaiden voimat lasketaan yhteen yhdeksi tukivoimaksi ja yhdeksi kitkavoimaksi. Lepokitkakertoimet ovat mallin arvoja: kuiva asfaltti $\\mu_0 = 0{,}80$, märkä asfaltti $0{,}50$ ja jää $0{,}10$. Kun pito pettää, tie antaa mallissa edelleen suurimman kitkansa $\\mu_0 mg$ kohtisuoraan auton nopeutta vastaan. Siksi auto kaartaa loivemmin kuin rata. Auto ja nuolet on piirretty selvyyden vuoksi suuremmiksi kuin mittakaavassa. Rata on aina samankokoinen kuvassa.",
+      "calc": "Normaalikiihtyvyys on $a_\\text{n} = \\tfrac{v^2}{r}$. Auto pysyy radalla, jos tien kitka antaa kokonaisvoiman $m\\tfrac{v^2}{r}$ kohti keskipistettä. Pystysuunnassa $N = mg$, ja $g = 9{,}81\\,\\text{m/s}^2$. Suurin lepokitka on $\\mu_0 N = \\mu_0 mg$. Jos $m\\tfrac{v^2}{r} \\le \\mu_0 mg$, kitka on $F_\\mu = m\\tfrac{v^2}{r}$. Muuten $F_\\mu = \\mu_0 mg$, ja auto liukuu radalta."
+    },
+    {
+      "id": "exp-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 1: nopeus kasvaa",
+      "intro": "Testaa ennusteet 1 ja 2. Alkutilassa säde on $50\\,\\text{m}$, massa $1500\\,\\text{kg}$ ja tie on kuivaa asfalttia. Muuta vain ratanopeutta $v$. Kirjaa mittaus nopeuksilla $5$, $10$, $15$ ja $20\\,\\text{m/s}$. Aseta lopuksi nopeudeksi $25\\,\\text{m/s}$ ja sitten $30\\,\\text{m/s}$. Paina kummallakin *Käynnistä* ja vertaa, miten auto liikkuu.",
+      "initial": {
+        "r": 50,
+        "m": "1500",
+        "pinta": "kuiva",
+        "v": 10
+      },
+      "names": {
+        "v": "ratanopeus $v$",
+        "r": "säde $r$",
+        "m": "massa $m$",
+        "pinta": "pinta"
+      },
+      "units": {
+        "v": "m/s",
+        "r": "m",
+        "m": "kg"
+      },
+      "values": {
+        "pinta": {
+          "kuiva": "kuiva asfaltti"
+        }
+      },
+      "locked": [
+        "r",
+        "m",
+        "pinta"
+      ],
+      "vary": "v",
+      "measure": [
+        {
+          "key": "an",
+          "label": "$a_\\text{n}$ (m/s²)"
+        },
+        {
+          "key": "Ftarve",
+          "label": "tarvittava kitka (N)"
+        },
+        {
+          "key": "Fmax",
+          "label": "suurin lepokitka (N)"
+        },
+        {
+          "key": "pito",
+          "label": "pito (1 = riittää)"
+        }
+      ],
+      "min": 4,
+      "question": {
+        "type": "numeric",
+        "fbd": "equations",
+        "prompt": "Taulukon mukaan pito riittää nopeudella $15\\,\\text{m/s}$ mutta ei nopeudella $20\\,\\text{m/s}$. Laske suurin ratanopeus, jolla auto vielä pysyy radalla kuivalla asfaltilla.",
+        "answer": 19.81,
+        "unit": "m/s",
+        "tolerance": 0.02,
+        "hints": [
+          "Rajanopeudella tarvittava kitka on juuri yhtä suuri kuin suurin lepokitka. Mitkä voimat vaikuttavat autoon vaakasuunnassa ja pystysuunnassa?",
+          "Pystysuunnassa $N = mg$. Vaakasuunnassa $\\mu_0 mg = m\\dfrac{v^2}{r}$.",
+          "Massa supistuu: $v = \\sqrt{\\mu_0 g r}$, missä $\\mu_0 = 0{,}80$ ja $r = 50\\,\\text{m}$."
+        ],
+        "mistakes": [
+          {
+            "value": 22.15,
+            "feedback": "Unohdit lepokitkakertoimen. Suurin lepokitka on $\\mu_0 mg$, ei $mg$. Siksi $v = \\sqrt{\\mu_0 g r}$."
+          },
+          {
+            "value": 392.4,
+            "feedback": "Tämä on $v^2$. Ota vielä neliöjuuri: $v = \\sqrt{\\mu_0 g r}$."
+          }
+        ],
+        "solution": "**Annettu:** säde $r = 50\\,\\text{m}$, massa $m = 1500\\,\\text{kg}$, kuivan asfaltin lepokitkakerroin $\\mu_0 = 0{,}80$ (mallin arvo); $g = 9{,}81\\,\\text{m/s}^2$\n\n**Kysytty:** suurin ratanopeus $v$ yksikössä $\\text{m/s}$\n\n**Periaate:** Auto on tasaisessa ympyräliikkeessä. Newtonin toisen lain mukaan kokonaisvoima on siis $m\\tfrac{v^2}{r}$ kohti keskipistettä. Ainoa vaakasuora voima on tien lepokitka, ja se on enintään $\\mu_0 N$. Rajanopeudella kitka on suurimmillaan.\n\n**Voimakuvio:** Auto piirretään takaa katsottuna suorakulmioksi. Kaarteen keskipiste on oikealla, $x$-akseli osoittaa kohti keskipistettä ja $y$-akseli ylös. Paino $\\overline{G}$ alkaa keskipisteestä ja osoittaa alas. Tukivoima $\\overline{N}$ alkaa alapinnasta ja osoittaa ylös. Se on yhtä pitkä kuin paino. Suurin lepokitka $\\overline{F}_\\mu$ alkaa alapinnan kulmasta ja osoittaa kohti keskipistettä. Kiihtyvyys piirretään erikseen kohti keskipistettä.\n```voimakuvio\npinta 0\nG 14715\nN 14715\nF_mu 11772 oikea\na oikea\nakselit 0\n```\n\n**Kaava:** $y$: $N - mg = 0$ ja $x$: $\\mu_0 N = m\\dfrac{v^2}{r}$, joten $\\mu_0 mg = m\\dfrac{v^2}{r}$ ja $v = \\sqrt{\\mu_0 g r}$\n\n**Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita. Massa supistuu.\n\n**Sijoitus:** $v = \\sqrt{0{,}80\\cdot 9{,}81\\,\\text{m/s}^2\\cdot 50\\,\\text{m}} = \\sqrt{392{,}4\\,\\text{m}^2/\\text{s}^2} = 19{,}81\\,\\text{m/s}$\n\n**Vastaus:** $19{,}8\\,\\text{m/s}$ eli noin $71\\,\\text{km/h}$. Kolmas numero on mukana, koska raja on juuri alle $20\\,\\text{m/s}$. Taulukon nopeus $20\\,\\text{m/s}$ ylittää rajan.\n\n**Järkevyys:** Tulos sopii taulukkoon: nopeudella $15\\,\\text{m/s}$ pito riittää, mutta nopeudella $20\\,\\text{m/s}$ ei. Tarkistus: nopeudella $19{,}8\\,\\text{m/s}$ tarvittava kitka on $1500\\,\\text{kg}\\cdot\\tfrac{(19{,}8\\,\\text{m/s})^2}{50\\,\\text{m}} \\approx 11{,}8\\,\\text{kN}$. Se on sama kuin suurin lepokitka."
+      }
+    },
+    {
+      "id": "exp-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 2: massa muuttuu",
+      "optional": true,
+      "intro": "Testaa ennuste 3. Alkutilassa säde on $50\\,\\text{m}$, tie on kuivaa asfalttia ja nopeus on $19\\,\\text{m/s}$, joka on lähellä rajaa. Muuta vain massaa. Kirjaa mittaus kaikilla kolmella massalla.",
+      "initial": {
+        "r": 50,
+        "pinta": "kuiva",
+        "v": 19,
+        "m": "1000"
+      },
+      "names": {
+        "v": "ratanopeus $v$",
+        "r": "säde $r$",
+        "m": "massa $m$",
+        "pinta": "pinta"
+      },
+      "units": {
+        "v": "m/s",
+        "r": "m",
+        "m": "kg"
+      },
+      "values": {
+        "pinta": {
+          "kuiva": "kuiva asfaltti"
+        }
+      },
+      "locked": [
+        "r",
+        "pinta",
+        "v"
+      ],
+      "vary": "m",
+      "measure": [
+        {
+          "key": "Ftarve",
+          "label": "tarvittava kitka (N)"
+        },
+        {
+          "key": "Fmax",
+          "label": "suurin lepokitka (N)"
+        },
+        {
+          "key": "pito",
+          "label": "pito (1 = riittää)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös",
+      "after": [
+        "exp-1"
+      ],
+      "prompt": "Selitä mittaustesi avulla, miten tarvittava kitka riippuu nopeudesta. Selitä myös, miksi auto ajautuu radan ulkoreunan yli, kun pito pettää.",
+      "criteria": [
+        "Vastaus kertoo, että kun nopeus kaksinkertaistuu, tarvittava kitka nelinkertaistuu, ja käyttää taulukon lukuja.",
+        "Vastaus kertoo, että auto pysyy radalla vain, jos tarvittava kitka on korkeintaan yhtä suuri kuin suurin lepokitka $\\mu_0 mg$.",
+        "Vastaus kertoo, että kitka osoittaa kohti keskipistettä. Vastaus kertoo myös, että pidon pettäessä auto kaartaa liian vähän eikä mikään voima työnnä sitä ulos."
+      ],
+      "model": "Taulukossa tarvittava kitka kasvaa nopeuden neliön mukana. Nopeudella $10\\,\\text{m/s}$ se on $3{,}0\\,\\text{kN}$ ja nopeudella $20\\,\\text{m/s}$ se on $12\\,\\text{kN}$. Kaksinkertainen nopeus vaatii siis nelinkertaisen kitkan. Kuivan asfaltin suurin lepokitka on mallin arvoissa $11{,}8\\,\\text{kN}$. Nopeudella $15\\,\\text{m/s}$ tarvitaan $6{,}75\\,\\text{kN}$, ja pito riittää. Nopeudella $20\\,\\text{m/s}$ tarvittava kitka on suurempi kuin tie voi antaa. Kitka osoittaa kohti keskipistettä ja kääntää autoa. Kun kitka ei riitä, auto kaartaa loivemmin kuin rata. Se kulkee sitä suoremmin, mitä suurempi nopeus on, ja ajautuu radan ulkoreunan yli. Ulospäin työntävää voimaa ei tarvita selittämään liikettä."
+    },
+    {
+      "id": "theory",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "reflect",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Palaa ennusteisiisi",
+      "optional": true,
+      "prompt": "Vertaa ennusteitasi mittauksiin ja teoriaan. Palaa myös alun matkustajaan. Mikä voima häneen kaarteessa todella vaikutti, ja mihin suuntaan se osoitti?",
+      "predictions": [
+        "pred-1",
+        "pred-2"
+      ]
+    },
+    {
+      "id": "example",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe",
+      "fbd": "error",
+      "figure": "fy5-4/virhe",
+      "prompt": "Auto ajaa tasaisella vauhdilla nyppylän huipun yli. Opiskelija piirsi autosta kuvan mukaisen voimakuvion. Hän nimesi yläpinnasta lähtevän voiman keskipakoisvoimaksi $\\overline{F}_\\text{kp}$. Mikä kuviossa on väärin?",
+      "choices": [
+        {
+          "text": "Voimaa $\\overline{F}_\\text{kp}$ ei ole. Ilman sitä voimien summa osoittaa alas.",
+          "correct": true,
+          "feedback": "Oikein. Mikään kappale ei vedä autoa ylöspäin, joten keskipakoisvoimaa ei piirretä. Huipulla auto kiihtyy alas kohti kaaren keskipistettä. Voimien summa ei siis voi olla nolla: paino on suurempi kuin tukivoima, $G - N = m\\tfrac{v^2}{r}$."
+        },
+        {
+          "text": "Tukivoiman pitäisi olla yhtä suuri kuin paino.",
+          "feedback": "Silloin voimien summa olisi nolla, mutta huipulla auto kiihtyy alas kohti kaaren keskipistettä. Tukivoima on oikein painoa pienempi. Virhe on voimassa $\\overline{F}_\\text{kp}$, jota mikään kappale ei aiheuta."
+        },
+        {
+          "text": "Kuviosta puuttuu alas osoittava keskeisvoima.",
+          "feedback": "Keskeisvoima ei ole oma voimansa vaan voimien summa. Tässä se on painon ja tukivoiman erotus, joten sitä ei piirretä erikseen. Virhe on voimassa $\\overline{F}_\\text{kp}$, jota mikään kappale ei aiheuta."
+        },
+        {
+          "text": "Painon pitäisi olla nyppylällä pienempi kuin tasaisella tiellä.",
+          "feedback": "Paino $mg$ on sama nyppylällä ja tasaisella tiellä, koska Maan vetovoima ei riipu tien muodosta. Tukivoima muuttuu. Virhe on voimassa $\\overline{F}_\\text{kp}$, jota mikään kappale ei aiheuta."
+        }
+      ]
+    },
+    {
+      "id": "valitse",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Valitse oikea voimakuvio",
+      "fbd": "select",
+      "layout": "figures",
+      "prompt": "Auto ajaa tasaisella vauhdilla notkon pohjan läpi. Missä kuviossa auton voimakuvio on oikein? Vertaa nuolia huolellisesti. Jokaisessa väärässä kuviossa on yksi virhe.",
+      "choices": [
+        {
+          "text": "",
+          "figure": "fy5-4/valitse-a",
+          "correct": true,
+          "feedback": "Oikein. Notkon pohjalla kaaren keskipiste on yläpuolella, joten auto kiihtyy ylös. Siksi tukivoima on painoa suurempi, $N - G = m\\tfrac{v^2}{r}$. Voimien summa osoittaa ylös kohti keskipistettä."
+        },
+        {
+          "text": "",
+          "figure": "fy5-4/valitse-b",
+          "feedback": "Tässä tukivoima ja paino ovat yhtä suuret, joten voimien summa on nolla. Notkon pohjalla auto kuitenkin kiihtyy ylös kohti kaaren keskipistettä. Tukivoiman on siis oltava painoa suurempi."
+        },
+        {
+          "text": "",
+          "figure": "fy5-4/valitse-c",
+          "feedback": "Tässä tukivoima on painoa pienempi, joten voimien summa osoittaa alas. Niin on nyppylän huipulla. Notkon pohjalla keskipiste on yläpuolella, joten tukivoiman on oltava painoa suurempi."
+        },
+        {
+          "text": "",
+          "figure": "fy5-4/valitse-d",
+          "feedback": "Tässä on lisäksi alas osoittava voima $\\overline{F}_\\text{kp}$, jota mikään kappale ei aiheuta. Ilman sitä kuvio olisi oikein. Keskipakoisvoimaa ei piirretä voimakuvioon."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Sovella uuteen tilanteeseen",
+      "fbd": "equations",
+      "prompt": "Vuoristoradan vaunu kulkee tasaisella vauhdilla notkon pohjan läpi. Pohjalla radan kaaren säde on $12{,}0\\,\\text{m}$. Istuin painaa matkustajaa pohjalla kolme kertaa niin suurella voimalla kuin on hänen painonsa. Kuinka suuri on vaunun nopeus notkon pohjalla?",
+      "answer": 15.34,
+      "unit": "m/s",
+      "tolerance": 0.02,
+      "hints": [
+        "Piirrä matkustajan voimakuvio. Mitkä voimat häneen vaikuttavat pystysuunnassa? Mihin suuntaan hän kiihtyy notkon pohjalla?",
+        "Istuimen tukivoima on $N = 3mg$. Valitse $y$ ylös kohti kaaren keskipistettä: $N - mg = m\\dfrac{v^2}{r}$.",
+        "$3mg - mg = m\\dfrac{v^2}{r}$, joten $v^2 = 2gr$."
+      ],
+      "mistakes": [
+        {
+          "value": 18.79,
+          "feedback": "Unohdit painon. Kokonaisvoima on tukivoiman ja painon erotus: $N - mg = 3mg - mg = 2mg$, ei $3mg$."
+        },
+        {
+          "value": 10.85,
+          "feedback": "Kokonaisvoima on $N - mg = 3mg - mg = 2mg$, ei $mg$. Silloin $v^2 = 2gr$."
+        }
+      ],
+      "solution": "**Annettu:** kaaren säde $r = 12{,}0\\,\\text{m}$, istuimen tukivoima $N = 3G = 3mg$, vauhti tasainen; $g = 9{,}81\\,\\text{m/s}^2$\n\n**Kysytty:** vaunun nopeus $v$ yksikössä $\\text{m/s}$\n\n**Periaate:** Notkon pohjalla matkustaja on hetken ympyräradalla, jonka keskipiste on yläpuolella. Newtonin toisen lain mukaan kokonaisvoima osoittaa ylös kohti keskipistettä, ja sen suuruus on $m\\tfrac{v^2}{r}$. Pystysuunnassa matkustajaan vaikuttavat paino ja istuimen tukivoima.\n\n**Voimakuvio:** Matkustaja piirretään suorakulmioksi istuimelle, ja $y$-akseli osoittaa ylös. Paino $\\overline{G}$ alkaa keskipisteestä ja osoittaa alas. Istuimen tukivoima $\\overline{N}$ alkaa alapinnasta ja osoittaa ylös. Se on kolme kertaa painon pituinen. Kiihtyvyys piirretään erikseen ohuena oranssina nuolena ylös kohti kaaren keskipistettä.\n```voimakuvio\npinta 0\nG 100\nN 300\na ylös\nv oikea\nakselit 0\n```\n\n**Kaava:** $y$: $N - mg = m\\dfrac{v^2}{r}$ ja $N = 3mg$, joten $2mg = m\\dfrac{v^2}{r}$ ja $v = \\sqrt{2gr}$\n\n**Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita. Massa supistuu.\n\n**Sijoitus:** $v = \\sqrt{2\\cdot 9{,}81\\,\\text{m/s}^2\\cdot 12{,}0\\,\\text{m}} = \\sqrt{235{,}44\\,\\text{m}^2/\\text{s}^2} = 15{,}34\\,\\text{m/s}$\n\n**Vastaus:** $15{,}3\\,\\text{m/s}$. Vastauksessa on kolme merkitsevää numeroa, kuten säteessä $12{,}0\\,\\text{m}$.\n\n**Järkevyys:** $15{,}3\\,\\text{m/s}$ on noin $55\\,\\text{km/h}$, tavallinen vuoristoradan nopeus. Normaalikiihtyvyys on $\\tfrac{(15{,}3\\,\\text{m/s})^2}{12{,}0\\,\\text{m}} \\approx 19{,}6\\,\\text{m/s}^2 = 2g$. Lisäksi istuimen on annettava painon verran voimaa. Yhteensä istuin antaa $3mg$, kuten tehtävässä."
+    },
+    {
+      "id": "tehtavat",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Harjoittele vielä kolmella tasolla. Piirrä voimatehtävissä ensin voimakuvio vihkoon ja valitse yksi akseli kohti radan keskipistettä."
+    },
+    {
+      "id": "check-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Käsite",
+      "prompt": "Lapsi istuu karusellissa, joka pyörii tasaisesti. Mihin suuntaan lapseen vaikuttavien voimien summa osoittaa?",
+      "choices": [
+        {
+          "text": "Kohti karusellin keskipistettä.",
+          "correct": true,
+          "feedback": "Oikein. Lapsi on tasaisessa ympyräliikkeessä, joten hänellä on normaalikiihtyvyys kohti keskipistettä. Newtonin toisen lain mukaan voimien summa osoittaa samaan suuntaan."
+        },
+        {
+          "text": "Lapsen nopeuden suuntaan, jotta liike jatkuu.",
+          "feedback": "Liike ei tarvitse voimaa nopeuden suuntaan jatkuakseen. Vauhti on vakio, joten nopeuden suuntaista kiihtyvyyttä ei ole. Nopeuden suunta muuttuu, ja siihen tarvitaan kohti keskipistettä osoittava voimien summa."
+        },
+        {
+          "text": "Poispäin keskipisteestä, koska lapsi painautuu ulospäin.",
+          "feedback": "Lapsen keho pyrkii jatkamaan suoraan, ja siksi tuntuu kuin häntä painettaisiin ulospäin. Istuin ja tuki kuitenkin työntävät häntä sisäänpäin. Voimien summa osoittaa kohti keskipistettä."
+        },
+        {
+          "text": "Summa on nolla, koska vauhti ei muutu.",
+          "feedback": "Vauhti ei muutu, mutta nopeuden suunta muuttuu. Lapsella on siis kiihtyvyys. Silloin voimien summa ei voi olla nolla: se osoittaa kohti keskipistettä."
+        }
+      ]
+    },
+    {
+      "id": "check-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Laskeminen",
+      "prompt": "Lapsi, jonka massa on $30\\,\\text{kg}$, istuu karusellissa $2{,}0\\,\\text{m}$:n päässä keskipisteestä. Karuselli tekee yhden kierroksen $4{,}0\\,\\text{s}$:ssa. Kuinka suuri on lapseen vaikuttavien voimien summa?",
+      "answer": 148.0,
+      "unit": "N",
+      "tolerance": 0.02,
+      "hints": [
+        "Laske ensin lapsen ratanopeus kierrosajasta.",
+        "$v = \\dfrac{2\\pi r}{T}$ ja $\\Sigma F = m\\dfrac{v^2}{r}$.",
+        "$v = \\dfrac{2\\pi\\cdot 2{,}0\\,\\text{m}}{4{,}0\\,\\text{s}} \\approx 3{,}14\\,\\text{m/s}$."
+      ],
+      "mistakes": [
+        {
+          "value": 47.12,
+          "feedback": "Unohdit korottaa nopeuden toiseen potenssiin. Normaalikiihtyvyys on $\\tfrac{v^2}{r}$, ei $\\tfrac{v}{r}$."
+        },
+        {
+          "value": 294.3,
+          "feedback": "Tämä on lapsen paino. Kysytty on voimien summa, joka osoittaa kohti keskipistettä: $m\\tfrac{v^2}{r}$."
+        }
+      ],
+      "solution": "**Annettu:** $m = 30\\,\\text{kg}$, $r = 2{,}0\\,\\text{m}$, kierrosaika $T = 4{,}0\\,\\text{s}$\n\n**Kysytty:** voimien summa $\\Sigma F$ yksikössä $\\text{N}$\n\n**Periaate:** Karuselli pyörii tasaisesti, joten lapsi on tasaisessa ympyräliikkeessä. Ratanopeus lasketaan kierrosajasta. Newtonin toisen lain mukaan voimien summa on $m\\tfrac{v^2}{r}$ kohti keskipistettä.\n\n**Kaava:** $v = \\dfrac{2\\pi r}{T}$ ja $\\Sigma F = m\\dfrac{v^2}{r}$\n\n**Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $v = \\dfrac{2\\pi\\cdot 2{,}0\\,\\text{m}}{4{,}0\\,\\text{s}} = 3{,}142\\,\\text{m/s}$ ja $\\Sigma F = 30\\,\\text{kg}\\cdot\\dfrac{(3{,}142\\,\\text{m/s})^2}{2{,}0\\,\\text{m}} = 148{,}0\\,\\text{N}$\n\n**Vastaus:** $150\\,\\text{N}$ eli $1{,}5 \\cdot 10^{2}\\,\\text{N}$ kohti keskipistettä. Vastauksessa on kaksi merkitsevää numeroa, kuten säteessä $2{,}0\\,\\text{m}$ ja kierrosajassa $4{,}0\\,\\text{s}$.\n\n**Järkevyys:** Voima on noin puolet lapsen painosta $294\\,\\text{N}$, koska normaalikiihtyvyys $4{,}9\\,\\text{m/s}^2$ on noin puolet putoamiskiihtyvyydestä. Istuin ja tuki pystyvät antamaan tämän voiman, mutta lapsen on pidettävä kiinni."
+    },
+    {
+      "id": "check-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Piirrä itse",
+      "fbd": "draw",
+      "draw": true,
+      "model_figure": "fy5-4/malli-kiekko",
+      "prompt": "Jääkiekko, jonka massa on $0{,}17\\,\\text{kg}$, on sidottu narulla jäähän kiinnitettyyn tappiin. Kiekko liukuu jäällä vaakasuoraa ympyrää, jonka säde on $0{,}50\\,\\text{m}$. Sen nopeus on tasainen $1{,}5\\,\\text{m/s}$. Kitka ja ilmanvastus jätetään huomiotta. Piirrä paperille kiekon voimakuvio sivulta katsottuna. Piirrä kiekko suorakulmioksi ja jokainen voima omasta vaikutuskohdastaan. Kirjoita liikeyhtälöt ja laske narun jännitysvoima.",
+      "criteria": [
+        {
+          "key": "fbd_object",
+          "detail": "Kuviossa on vain kiekko. Siinä ei ole narua, tappia eikä jäätä voimineen."
+        },
+        {
+          "key": "fbd_forces",
+          "detail": "Kuviossa on kolme voimaa: paino, jään tukivoima ja narun jännitysvoima. Siinä ei ole keskipakoisvoimaa, nopeuden suuntaista voimaa eikä erillistä keskeisvoimaa."
+        },
+        {
+          "key": "fbd_directions",
+          "detail": "Paino osoittaa alas ja tukivoima ylös. Jännitysvoima osoittaa vaakasuoraan narun suuntaan kohti tappia eli ympyrän keskipistettä."
+        },
+        {
+          "key": "fbd_representation",
+          "detail": "Paino lähtee keskipisteestä, tukivoima alapinnasta ja jännitysvoima kohdasta, johon naru on kiinnitetty. Jokaisella voimalla on oma tunnus."
+        },
+        {
+          "key": "fbd_magnitudes",
+          "detail": "Tukivoima on yhtä pitkä kuin paino. Jännitysvoima on vajaa puolet painon pituudesta. Kiihtyvyys piirretään, jos se piirretään, erikseen kiekon viereen."
+        },
+        {
+          "key": "fbd_equations",
+          "detail": "$y$: $N - mg = 0$ ja $x$ kohti keskipistettä: $T = m\\tfrac{v^2}{r} \\approx 0{,}77\\,\\text{N}$."
+        }
+      ],
+      "model": "Kiekkoon vaikuttavat Maa, jää ja naru. Paino $\\overline{G}$ osoittaa keskipisteestä alas, ja jään tukivoima $\\overline{N}$ alapinnasta ylös. Narun jännitysvoima $\\overline{T}$ osoittaa narun suuntaan kohti tappia eli ympyrän keskipistettä. Muita voimia ei ole. Keskipakoisvoimaa ei ole, eikä keskeisvoimaa piirretä erikseen, koska tässä se on itse jännitysvoima. Kiekko on tasaisessa ympyräliikkeessä, joten kokonaisvoima osoittaa keskipisteeseen. Kun $x$ osoittaa kohti keskipistettä ja $y$ ylös, saadaan $y$: $N - mg = 0$, joten $N = 0{,}17\\,\\text{kg}\\cdot 9{,}81\\,\\text{m/s}^2 \\approx 1{,}7\\,\\text{N}$. Suunnassa $x$ saadaan $T = m\\dfrac{v^2}{r} = 0{,}17\\,\\text{kg}\\cdot\\dfrac{(1{,}5\\,\\text{m/s})^2}{0{,}50\\,\\text{m}} \\approx 0{,}77\\,\\text{N}$. Jännitysvoima on vajaa puolet painosta."
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Lopuksi on kolme nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+    }
+  ]
+}
