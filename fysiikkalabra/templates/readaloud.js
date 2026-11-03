@@ -259,7 +259,7 @@
   function sentences(text) {      // [start, end) of each sentence, long ones cut at a comma
     const out = []; const re = /[.!?…]+["”’)]*\s+(?=[A-ZÅÄÖÜ0-9"“(])/g; let a = 0, m;
     const push = (x, y) => {
-      while (y - x > 260) { const cut = text.lastIndexOf(', ', x + 240); const c = cut > x + 40 ? cut + 2 : x + 240; out.push([x, c]); x = c; }
+      while (y - x > 200) { const cut = text.lastIndexOf(', ', x + 180); const c = cut > x + 40 ? cut + 2 : x + 180; out.push([x, c]); x = c; }   // Chrome's Google voices stop after about 15 s
       if (text.slice(x, y).trim()) out.push([x, y]);
     };
     while ((m = re.exec(text))) { push(a, m.index + m[0].length); a = m.index + m[0].length; }
@@ -288,12 +288,26 @@
   const loadVoices = () => { voices = synth.getVoices() || []; };
   loadVoices();
   if (synth.addEventListener) synth.addEventListener('voiceschanged', loadVoices);
+  /* the best voice first (2026-11-03: Chrome's old system voices sound poor): Edge's neural voices, Chrome's Google
+     voices and the enhanced voices of macOS/iOS before the old desktop voices and eSpeak */
+  function voiceScore(v, want) {
+    const n = v.name || '', l = (v.lang || '').toLowerCase().replace('_', '-');
+    return (/natural|neural|online/i.test(n) ? 8 : /^google/i.test(n) ? 7 : /premium|enhanced|siri/i.test(n) ? 6 : 0)
+      - (/desktop|espeak|compact|eloquence/i.test(n) ? 4 : 0) + (l === want ? 1 : 0) + (v.default ? 0.5 : 0);
+  }
+  function voicesFor(base) {
+    return voices.filter((v) => (v.lang || '').toLowerCase().replace('_', '-').slice(0, 2) === base)
+      .sort((x, y) => voiceScore(y, '') - voiceScore(x, '') || x.name.localeCompare(y.name));
+  }
   function voiceFor(lang) {
     const want = lang.toLowerCase().replace('_', '-'), base = want.slice(0, 2);
     const ok = voices.filter((v) => (v.lang || '').toLowerCase().replace('_', '-').slice(0, 2) === base);
     if (!ok.length) return null;
-    const score = (v) => (/(natural|neural|premium|enhanced|online)/i.test(v.name) ? 4 : 0) + ((v.lang || '').toLowerCase().replace('_', '-') === want ? 2 : 0) + (v.default ? 1 : 0);
-    return ok.sort((x, y) => score(y) - score(x))[0];
+    let chosen = null;
+    try { chosen = localStorage.getItem('fl-ra-voice-' + base); } catch (e) { /* no storage */ }
+    const picked = chosen && ok.find((v) => v.name === chosen);
+    if (picked) return picked;
+    return ok.slice().sort((x, y) => voiceScore(y, want) - voiceScore(x, want))[0];
   }
   const LANG_TAG = { fi: 'fi-FI', en: 'en-GB', fr: 'fr-FR', sv: 'sv-SE', de: 'de-DE' };
 
@@ -441,10 +455,30 @@
   ui.speed = document.createElement('select'); ui.speed.className = 'ra-speed'; ui.speed.setAttribute('aria-label', msg('ra_speed'));
   [['ra_slow', 0.8], ['ra_normal', 1], ['ra_fast', 1.25]].forEach(([k, r]) => { const o = document.createElement('option'); o.value = r; o.textContent = msg(k); ui.speed.append(o); });
   ui.speed.value = String(RATES.reduce((p, r) => (Math.abs(r - rate) < Math.abs(p - rate) ? r : p)));
+  const pageBase = (LANG_TAG[pageLang.slice(0, 2)] || pageLang).slice(0, 2).toLowerCase();
+  ui.voiceRow = document.createElement('label'); ui.voiceRow.className = 'ra-voice'; ui.voiceRow.hidden = true;
+  ui.voice = document.createElement('select');
+  ui.voiceRow.append(document.createTextNode(msg('ra_voice') + ' '), ui.voice);
+  function fillVoices() {               // the voices this device has for the page's language; the choice is remembered
+    const list = voicesFor(pageBase);
+    let chosen = '';
+    try { chosen = localStorage.getItem('fl-ra-voice-' + pageBase) || ''; } catch (e) { /* no storage */ }
+    ui.voice.textContent = '';
+    const auto = document.createElement('option'); auto.value = ''; auto.textContent = msg('ra_voice_auto'); ui.voice.append(auto);
+    list.forEach((v) => { const o = document.createElement('option'); o.value = v.name; o.textContent = v.name.replace(/^Microsoft\s+/, '').replace(/\s*-\s*.*$/, '') + (v.lang ? ' (' + v.lang + ')' : ''); ui.voice.append(o); });
+    ui.voice.value = list.some((v) => v.name === chosen) ? chosen : '';
+    ui.voiceRow.hidden = list.length < 2;
+  }
+  fillVoices();
+  if (synth.addEventListener) synth.addEventListener('voiceschanged', fillVoices);
+  ui.voice.addEventListener('change', () => {
+    try { if (ui.voice.value) localStorage.setItem('fl-ra-voice-' + pageBase, ui.voice.value); else localStorage.removeItem('fl-ra-voice-' + pageBase); } catch (e) { /* no storage */ }
+    if (playing) { hush(); speakSentence(); }
+  });
   ui.note = document.createElement('p'); ui.note.className = 'ra-note'; ui.note.hidden = true; ui.note.setAttribute('role', 'status');
   const row = document.createElement('div'); row.className = 'ra-row';
   row.append(ui.prev, ui.toggle, ui.next, ui.stop, ui.speed);
-  ui.dock.append(row, ui.note);
+  ui.dock.append(row, ui.voiceRow, ui.note);
 
   function render() {
     const active = !!cur;
