@@ -13,8 +13,8 @@
      38rem for text and tasks, at every width. Tasks are never side by side: a card grows when its feedback, hints or
      solution opens, and must not leave an empty column beside it. Width is used only where two things belong together
      and are about as tall: the chapter illustration beside the lesson's goals, a figure beside the paragraph it explains
-     (build.py fig_rows decides), the simulation beside the experiments (sticky), the worked example's problem beside
-     its steps (sticky). After such a unit the text runs on in the reading column.
+     (build.py fig_rows decides), the simulation beside the experiments (sticky). The worked example reads down the
+     column, its steps under the problem (teacher 2026-11-03). After such a unit the text runs on in the reading column.
    - The simulations keep their own type (17 px on a 1.65 line, set on body and #sim): p5 measures its labels in a span
      on the body, so the reading text can change without moving a label in a sim.
    - From 85rem of window the stage navigation moves from the sticky chip bar to a sticky side column. Nothing breaks
@@ -399,7 +399,7 @@ li.ex-js>details.answer:not([open]),li.ex-js>details.solution:not([open]){margin
 @media (prefers-reduced-motion:reduce){.card{transition:none}html{scroll-behavior:auto}}
 
 /* worked example in stages (build.py staged_example, lesson.js): the problem in a framed box, the solution as numbered
-   steps on a rule beside it */
+   steps on a rule under it, in the reading column at every width (teacher 2026-11-03) */
 .example{margin:.8rem 0 1.2rem}
 .example-task{padding:1rem 1.2rem;background:var(--surface);border:1px solid var(--line);border-radius:var(--card-radius)}
 .example-task>:last-child{margin-bottom:0}
@@ -407,6 +407,7 @@ li.ex-js>details.answer:not([open]),li.ex-js>details.solution:not([open]){margin
 .worked{margin:.8rem 0 1rem}
 .worked .step{border-left:3px solid var(--accent-soft);padding:.1rem 0 .1rem 1rem;margin:.7rem 0}
 .worked .step:focus{outline:none}
+.worked .eq-chain{width:auto;margin:.5rem 0 .7rem}.worked .eq-chain:not(.lead){grid-template-columns:fit-content(min(55vw,24rem)) minmax(0,max-content);justify-content:center}   /* a calculation in rows as wide as the step's display formulas, centred like them (a long left side on its own line stays at the left) */
 .worked .step-label{margin:0 0 .2rem;font:700 var(--fs-small) var(--sans);letter-spacing:.06em;text-transform:uppercase;color:var(--accent-deep)}
 .worked .step-controls{display:flex;flex-wrap:wrap;gap:.5rem;margin:.8rem 0 0}
 .worked .step-controls button{background:var(--surface);color:var(--accent-deep)}
@@ -555,7 +556,7 @@ details.level>ol>li::marker{font-weight:700;color:var(--accent-deep)}
    inquiry.js reads --wide on .lab to know that the simulation sits beside the experiments. */
 @container content (min-width:60rem){
   /* text and tasks in one reading column, whatever the width */
-  .stage>*:not(.lab,.act-theory,.act-sim),.act-theory>*:not(.fig-row),.lab-main>*,article#teoria:not(.inquiry)>:not(.fig-row,#sim,.example){max-width:calc(var(--measure) + 3rem)}
+  .stage>*:not(.lab,.act-theory,.act-sim),.act-theory>*:not(.fig-row),.lab-main>*,article#teoria:not(.inquiry)>:not(.fig-row,#sim){max-width:calc(var(--measure) + 3rem)}
   .act-theory>p,.act-theory>ul,.act-theory>ol,.act-theory>h3,.act-theory>h4,.act-theory>blockquote{max-width:var(--measure)}
   .stage>.act-sim{max-width:40rem}
   /* the opening: the illustration (its size set by what it shows, not by the column) beside the key facts, from the same height */
@@ -578,14 +579,6 @@ details.level>ol>li::marker{font-weight:700;color:var(--accent-deep)}
   .fig-row.side{display:grid;grid-template-columns:minmax(0,var(--measure)) minmax(0,26rem);column-gap:var(--gap);align-items:center;max-width:none;margin:0 0 1.25rem}
   .fig-row.side>.fig{margin:0}
   .fig-row.side>.fig-text>:last-child{margin-bottom:0}
-}
-@container content (min-width:66rem){
-  /* Sovella: the problem beside its staged solution, the problem in view (sticky) while the steps open */
-  .act-theory .example{max-width:none}
-  .example{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,var(--measure));column-gap:var(--gap);align-items:start}
-  .example-task{position:sticky;top:var(--sticky-top)}
-  .example>.worked{margin-top:0}
-  .example>.worked .step:first-child{margin-top:0}
 }
 
 /* ---- the side column (window at least 85rem): the stage navigation leaves the top bar and stays beside the content */
