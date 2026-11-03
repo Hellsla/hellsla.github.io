@@ -1,95 +1,81 @@
-# Käsitetakomo – miten teet omat kortit
+# Käsitekortit – miten teet omat kortit
 
-Sovellus: **kasitetakomo.html**
-Valmis sisältö: **kasitetakomo-data.js**
+Käsitekortit ovat osa Ruukkilabraa. Kortit näkyvät luvun Teoriatiivistelmässä
+(lihavoidut käsitteet ja käsitesirut), luvun lopussa ("Kertaa luvun käsitteet"),
+moduulisivun kertauspakassa, Sovella itsenäisesti -sivulla ja koko kokoelmana
+sivulla `fysiikkalabra/site/kasitteet.html`. Vanhat osoitteet `kasitetakomo.html`
+ja `kasitekortit.html` ohjaavat sinne parametreineen.
 
-Kortteja voi lisätä kahdella tavalla.
+## Missä kortit ovat
 
----
+| Tiedosto | Sisältö |
+|---|---|
+| `fysiikkalabra/kortit/fy4.json` | Moduulin suomenkieliset kortit (myös selkosuomen sivut käyttävät näitä) |
+| `fysiikkalabra/kortit/en/fy4.json` | Englanninkieliset kortit samoilla tunnisteilla |
+| `fysiikkalabra/kortit/kuvat/` | Korttien kuvat |
 
-## Tapa 1 – Tekstitiedosto sivustolle
+Kortit muokataan näihin tiedostoihin, minkä jälkeen ajetaan
+`python3 scripts/concept_cards.py check` ja `python3 scripts/build.py`. Build kopioi tiedostot
+sivustolle (`site/kortit/`). Komennot ajetaan kansiossa `fysiikkalabra/`;
+yhteenveto luvuittain: `python3 scripts/concept_cards.py stats`.
 
-1. Tee tekstitiedosto alla olevassa muodossa ja tallenna se samaan kansioon,
-   esim. `kortit-fy9.txt`.
-2. Lisää tiedoston nimi `kasitetakomo.html`-tiedoston alussa olevaan listaan:
+## Tiedoston muoto
 
-```js
-const LISATIEDOSTOT = [
-  "kortit-fy9.txt"
-];
+```json
+{
+ "moduuli": "FY4",
+ "nimi": "Voima ja liike",
+ "aiheet": [ { "id": "fy4-newtonin-lait", "nimi": "Newtonin lait" } ],
+ "kortit": [
+  {
+   "id": "fy4-newtonin-toinen-laki",
+   "moduuli": "FY4",
+   "luku": "fy4-4",
+   "aihe": "fy4-newtonin-lait",
+   "kasite": "Newtonin toinen laki",
+   "maaritelma": "Kokonaisvoima aiheuttaa kappaleelle kiihtyvyyden; dynamiikan peruslaki.",
+   "kaava": "\\Sigma\\overline{F} = m\\overline{a}",
+   "kaava_puhe": "voimien summa on m kertaa a"
+  }
+ ]
+}
 ```
 
-Sivusto lataa tiedoston automaattisesti ja kortit näkyvät kaikille. (Toimii
-verkossa, ei paikallisesti `file://`-osoitteesta avattuna.)
+| Kenttä | Pakollinen | Tarkoitus |
+|---|---|---|
+| `id` | kyllä | Pysyvä tunniste, alkaa moduulin koodilla (`fy4-…`). Opiskelijan kertauspakka tallentuu tällä tunnisteella, joten **älä muuta tai poista olemassa olevaa tunnistetta**. |
+| `luku` | ei | Luku, jonka Teoriatiivistelmään ja loppuun kortti kuuluu. `null` = kortti näkyy vain kokoelmassa. |
+| `aihe` | kyllä | Aiheen `id` tiedoston `aiheet`-listasta. Aiheita voi yhdistää kertauksessa. |
+| `kasite` | kyllä | Kortin etupuoli. Teoriatiivistelmän samanniminen lihavointi saa korttipopoverin. |
+| `maaritelma` | kyllä | Takapuoli, yksi lause. Matematiikka LaTeXina `$…$`, esim. `$k$`. |
+| `kaava` | ei | Kaava LaTeXina ilman `$`-merkkejä. Vektorit `\overline{F}`, kertomerkki `\cdot`, suomeksi desimaalipilkku `{,}`. |
+| `kaava_puhe` | jos `kaava` | Kaava luettavassa muodossa ruudunlukijalle. |
+| `kuva` | ei | Kuvan polku kansiosta `kortit/`, esim. `kuvat/fy4-kalteva-taso.svg`. |
 
-## Tapa 2 – Suoraan sisältötiedostoon
-
-Lisää kurssi `kasitetakomo-data.js`-tiedostoon samassa muodossa kuin FY1–FY8.
-Näin on tehty kaikki nykyiset kurssit.
-
-Jokaisella aiheella on pysyvä tunniste `id` (esim. `id:"fy4-newtonin-lait"`).
-Ruukkilabran oppitunnit ja moduulisivut linkittävät aiheisiin tunnisteella
-(`fysiikkalabra/concept-cards.json`), joten **älä muuta tai poista olemassa olevaa
-tunnistetta**. Aiheen nimen ja korttien muuttaminen on vapaata. Uudelle aiheelle
-keksi uusi tunniste: pienet kirjaimet, numerot ja yhdysmerkit, ei ääkkösiä.
+Moduuli, jonka tiedostossa on `"kesken": true`, ei näy vielä sivustolla.
+Englanninkielinen kortti saa saman `id`:n, `luku`:n ja `aihe`en kuin suomenkielinen;
+jos moduulilla ei ole englanninkielistä tiedostoa, englanninkieliset sivut jättävät
+käsiteosion pois.
 
 ## Suorat linkit
 
 | Osoite | Mitä avautuu |
 |---|---|
-| `kasitetakomo.html` | Kurssivalikko |
-| `kasitetakomo.html?kurssi=FY4` | FY4:n aihevalikko (kortteja ei käynnistetä) |
-| `kasitetakomo.html?kurssi=FY4&aihe=fy4-newtonin-lait` | Aiheen kertaus alkaa heti |
-| `kasitetakomo.html?kurssi=FY4&aihe=fy4-newtonin-lait,fy4-kiihtyva-liike` | Kahden aiheen yhdistetty kertaus |
+| `kasitteet.html` | Moduulivalikko |
+| `kasitteet.html?moduuli=FY4` | FY4:n aihevalikko |
+| `kasitteet.html?moduuli=FY4&aihe=fy4-newtonin-lait` | Aiheen kertaus alkaa heti |
+| `kasitteet.html?moduuli=FY4&aihe=fy4-newtonin-lait,fy4-kiihtyva-liike` | Kahden aiheen yhdistetty kertaus |
+| `kasitteet.html?moduuli=FY4&luku=fy4-4` | Yhden luvun kortit |
+| `kasitteet.html?moduuli=FY4&pakka=oma` | Opiskelijan oma kertauspakka |
 
-Tuntematon kurssi tai aihe palauttaa kurssivalikkoon. Vanha osoite
-`kasitekortit.html` ohjaa edelleen tänne parametreineen.
+Tuntematon moduuli tai aihe palauttaa valikkoon.
 
----
+## Kertauspakka
 
-## Tekstimuoto (tämä kannattaa pyytää ChatGPT:ltä)
-
-```
-# FY9 | Kurssin nimi
-## Aiheen nimi
-Käsite :: Määritelmä yhdellä lauseella.
-Toinen käsite :: Toinen määritelmä.
-
-## Toinen aihe
-Kolmas käsite :: Kolmas määritelmä.
-```
-
-Säännöt:
-
-| Merkintä | Tarkoitus |
-|---|---|
-| `# KOODI \| Nimi` | Kurssi. Koodi näkyy isolla ruudukossa, nimi pienellä. |
-| `## Nimi` | Aihe. Yksi kurssi voi sisältää monta aihetta. |
-| `Käsite :: Määritelmä` | Yksi kortti. Erottimena `::` |
-| tyhjä rivi / `// kommentti` | Ohitetaan. |
-
-Erottimena käy myös sarkain, `|` tai `;`, jos `::` puuttuu – näin taulukosta
-kopioitu sisältö toimii sellaisenaan. Tiedostomuoto: `.txt`, `.md`, `.csv`, `.tsv`
-tai `.json`. Tallenna **UTF-8**-muodossa, jotta ä ja ö näkyvät oikein.
-
-### JSON-muoto (vaihtoehto)
-
-```json
-[
-  {
-    "id": "FY9",
-    "nimi": "Kurssin nimi",
-    "aiheet": [
-      {
-        "nimi": "Aiheen nimi",
-        "kortit": [
-          ["Käsite", "Määritelmä"]
-        ]
-      }
-    ]
-  }
-]
-```
+Kortin kääntämisen jälkeen opiskelija valitsee "Osasin" tai "Kertaa myöhemmin".
+Tila tallentuu selaimen localStorageen avaimeen `ruukkilabra:kortit`
+(`{ id: { tila, osasinPutki, muokattu } }`). "Kertaa myöhemmin" lisää kortin
+pakkaan, ja kolme peräkkäistä "Osasin" poistaa sen. Mitään ei lähetetä palvelimelle.
 
 ---
 
@@ -97,30 +83,23 @@ tai `.json`. Tallenna **UTF-8**-muodossa, jotta ä ja ö näkyvät oikein.
 
 Kopioi tämä ChatGPT:lle ja vaihda hakasulkeiden sisällöt:
 
-> Tee minulle kertauskortteja lukion kurssista **[FY9 – kurssin nimi]**, aiheista
-> **[aihe 1, aihe 2, aihe 3]**. Tee **[20]** korttia.
+> Tee minulle kertauskortteja lukion fysiikan moduulista **[FY9 – moduulin nimi]**,
+> aiheista **[aihe 1, aihe 2, aihe 3]**. Tee **[20]** korttia.
 >
-> Palauta pelkkä tekstitiedoston sisältö täsmälleen tässä muodossa, ilman muuta selitystä:
->
-> ```
-> # [FY9] | [Kurssin nimi]
-> ## [Aiheen nimi]
-> Käsite :: Määritelmä
-> ```
+> Palauta pelkkä JSON-lista, ilman muuta selitystä, jossa jokainen kortti on muotoa
+> `{"kasite": "…", "maaritelma": "…", "aihe": "[aiheen nimi]", "kaava": "…"}`.
 >
 > Säännöt:
-> - Yksi kortti per rivi, erottimena `::`.
 > - Käsite on 1–3 sanaa, ei lauseita, ei kysymysmuotoa.
 > - Määritelmä on **yksi lause, enintään noin 20 sanaa**, ja se on ymmärrettävä
 >   ilman että käsitettä toistetaan sanasta sanaan.
-> - Kaavan saa mainita määritelmän lopussa, esim. `Q = cmΔT`.
-> - Käytä kirjoitettuja yksikköjä ja Unicode-merkkejä (·, ², ⁻, Δ, λ, °C), ei LaTeXia.
-> - Ryhmittele kortit aiheiden alle `##`-otsikoilla, 5–12 korttia per aihe.
-> - Kirjoita suomeksi lukiotasolla, älä käytä lihavointia tai luettelomerkkejä.
-> - Ei kaksoiskappaleita.
+> - Kaava vain jos käsitteellä on kaava, LaTeXina ilman dollareita; vektorit
+>   `\overline{F}`, kertomerkki `\cdot`, desimaalipilkku `{,}`.
+> - Suureet määritelmässä LaTeXina `$…$`.
+> - 5–12 korttia per aihe, suomeksi lukiotasolla, ei kaksoiskappaleita.
 
-Tallenna vastaus tiedostoksi `kortit-[kurssi].txt` (UTF-8) ja lisää se yllä
-kuvatulla tavalla.
+Lisää kortit tiedostoon ja täydennä `id`, `moduuli`, `luku`, `aihe`-tunniste ja
+`kaava_puhe`. Tarkistus (`concept_cards.py check`) kertoo, jos jotain puuttuu.
 
 ---
 
@@ -139,19 +118,13 @@ Kuva on kortin **valinnainen kolmas kenttä**. Se näkyy vastauspuolella,
 määritelmän yläpuolella. Kortti ilman kuvaa toimii kuten ennenkin, ja jos
 kuvatiedosto puuttuu, kortti näyttää pelkän tekstin — mikään ei hajoa.
 
-Sisältötiedostossa:
+Kortin kentässä `kuva`:
 
-```js
-["Kalteva taso","Tilanne helpottuu valitsemalla koordinaatisto tason suuntaiseksi ja jakamalla voimat komponentteihin.","kuvat/fy4-kalteva-taso.svg"]
+```json
+"kuva": "kuvat/fy4-kalteva-taso.svg"
 ```
 
-Tekstitiedostossa kolmas kenttä samalla erottimella:
-
-```
-Kalteva taso :: Tilanne helpottuu valitsemalla koordinaatisto tason suuntaiseksi. :: kuvat/fy4-kalteva-taso.svg
-```
-
-Kuvat tallennetaan kansioon `kuvat/`. Tiedostonimi ilman ääkkösiä ja
+Kuvat tallennetaan kansioon `fysiikkalabra/kortit/kuvat/`. Tiedostonimi ilman ääkkösiä ja
 välilyöntejä, kurssitunnus alkuun: `fy4-kalteva-taso.svg`, `fy3-faasikaavio.svg`.
 
 ### Kaksi kuvatyyppiä – valitse tilanteen mukaan
@@ -161,7 +134,7 @@ Tämä on tärkein neuvo. Kuvageneraattori kirjoittaa kaavioihin sekaisia
 kirjaimia, keksii nuolia ja vääriä merkintöjä — juuri se osa, jonka pitäisi olla
 täsmällinen, menee pieleen. SVG tulee tekstinä, jolloin näet mitä siinä lukee,
 voit korjata yhden luvun editorissa, tiedosto on muutaman kilotavun kokoinen ja
-pysyy terävänä joka näytöllä. Näin on tehty `kuvat/fy4-kalteva-taso.svg`.
+pysyy terävänä joka näytöllä. Näin on tehty `kortit/kuvat/fy4-kalteva-taso.svg`.
 
 **2. Havainnollistavat kuvat → kuvageneraattori käy.**
 Tuulivoimala, revontulet, höyryturbiini, hehkulanka. Näissä ei ole merkintöjä,
@@ -195,7 +168,7 @@ joiden pitäisi olla oikein. Vaadi silti: **ei tekstiä kuvaan**.
 > - Kulma merkitään kaarella ja kreikkalaisella kirjaimella.
 > - Kuvaajissa akselit merkitään suureen tunnuksella ja yksiköllä, esim. *p* (kPa).
 
-Tallenna vastaus tiedostoksi `kuvat/[kurssi]-[käsite].svg` ja **katso se läpi** —
+Tallenna vastaus tiedostoksi `fysiikkalabra/kortit/kuvat/[kurssi]-[käsite].svg` ja **katso se läpi** —
 avaa selaimessa ja tarkista nuolten suunnat, vaikutuspisteet ja tunnusten kursivointi.
 Kielimalli piirtää sujuvasti myös väärin päin olevan kitkavoiman.
 

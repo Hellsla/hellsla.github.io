@@ -29,7 +29,7 @@ KEEP = sys.argv[sys.argv.index("--keep") + 1] if "--keep" in sys.argv else None
 T = pathlib.Path(KEEP) if KEEP else pathlib.Path(tempfile.mkdtemp(prefix="fysiikkalabra-fy4-"))
 if KEEP: shutil.rmtree(T, ignore_errors=True); T.mkdir(parents=True)
 for f in ("curriculum.json", "competencies.json", "glossary.json", "CLAUDE.md", "NOTES.md"): shutil.copy(SRC / f, T / f)
-for d in ("scripts", "templates", "content/_gold", "lang"): shutil.copytree(SRC / d, T / d, ignore=shutil.ignore_patterns("__pycache__"))
+for d in ("scripts", "templates", "content/_gold", "lang", "kortit"): shutil.copytree(SRC / d, T / d, ignore=shutil.ignore_patterns("__pycache__"))
 shutil.copytree(SRC / "assets", T / "assets", ignore=shutil.ignore_patterns("fy4"))   # FY4 starts from scratch here, whatever the real project has
 c0 = json.loads((T / "curriculum.json").read_text()); c0["FY4"].pop("initialized", None)
 (T / "curriculum.json").write_text(json.dumps(c0, ensure_ascii=False, indent=2) + "\n")
@@ -155,7 +155,7 @@ site = T / "site"
 expect("site build publishes fy4-1 with its assets", code == 0 and (site / "fy4-1.html").is_file() and all((site / p).is_file() for p in ("sims/fy4/fy4-1/sim.js", "sims/fy4/fy4-1/sim.css", "pics/fy4/kalteva-taso.svg")), out)
 expect("FY4.html links fy4-1 and lists the other FY4 slots as coming; FY3.html does not list it",
        'href="fy4-1.html"' in (site / "FY4.html").read_text() and "tulossa" in (site / "FY4.html").read_text() and "fy4-1" not in (site / "FY3.html").read_text())
-nolang = lambda f: re.sub(r'<details class="lang-menu">.*?</details>|<nav class="chapter-nav".*?</nav>|<p class="concept-link">.*?</p>', "", f.read_text(), flags=re.S)   # the real site has its translations, neighbouring chapters and Käsitetakomo (../kasitetakomo-data.js, not in the copy) to link to
+nolang = lambda f: re.sub(r'<details class="lang-menu">.*?</details>|<nav class="chapter-nav".*?</nav>', "", f.read_text(), flags=re.S)   # the real site has its translations and neighbouring chapters to link to
 expect("fy3-2 is built exactly as the real site has it", nolang(site / "fy3-2.html") == nolang(SRC / "site/fy3-2.html") and (site / "fy3-2-sim.js").read_bytes() == (SRC / "site/fy3-2-sim.js").read_bytes())
 code, out = run("check_choices.py", "--all", "--site")
 expect("answer positions are checked per course on the site", code == 0 and "FY4:" in out and "FY3:" in out, out)

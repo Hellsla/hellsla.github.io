@@ -1848,12 +1848,9 @@
     "notice_draft": "Tämä oppitunti on vielä kesken. Sitä ei ole julkaistu."
   },
   "cards": {
-    "title": "Käsitetakomo",
     "home_lead": "Kertaa fysiikan sanoja ja niiden merkityksiä korttien avulla. Valitse moduuli ja aihe.",
-    "home_link": "Käsitetakomo – kertaa fysiikan käsitteitä",
-    "module_lead": "Kertaa moduulin tärkeitä sanoja korttien avulla. Valitse aihe Käsitetakomossa.",
-    "module_link": "Kertaa tämän moduulin käsitteet",
-    "lesson_link": "Kertaa luvun käsitteet Käsitetakomossa"
+    "lesson_lead": "Käännä kortti. Mieti ensin itse, mitä sana tarkoittaa. Kerro sitten, osasitko. Jos valitset Kertaa myöhemmin, kortti menee kertauspakkaasi.",
+    "practice_lead": "Nämä kortit ovat kertauspakassasi. Katso ne ennen tehtäviä."
   },
   "speech": {
     "_about": "Ääneenluku (templates/readaloud.js, opettaja 2026-11-03): miten kaava sanotaan ääneen. rate: puheen oletusnopeus; joiner: millä useamman yksikön tulo liitetään (kilowatti+tuntia); units: [perusmuoto, partitiivi]; per_unit: nimittäjän ainoa yksikkö kokonaisena ilmauksena; area/volume liitetään metrin eteen (neliömetriä).",
