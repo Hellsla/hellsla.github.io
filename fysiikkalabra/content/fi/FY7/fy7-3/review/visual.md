@@ -1,19 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 0ee7289539a81dc8
+CONTENT-HASH: 0bf68f3809480a6d
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] figure coil-dims (fig-17-390, theory-1280-2) — $\overline{B}$ now sits above the arrow's tail on a white patch inside the coil; legible and tied to the arrow, but the winding lines still run behind the patch and the label is small — optional: enlarge the patch slightly.
-- [Minor] theory "Magneettivuon tiheyden määrittäminen" — the relative-uncertainty formula is still inline in a long paragraph — consider a display line.
-- [Minor] sim readout at 390 px (sim-390) — "B =" and the value may break onto two lines (carried from round 2).
-- [Minor] sim canvas at 390 px — coil, current marks and field lines crowded (carried).
+- [Minor] figure coil-dims (fig-17-390, theory-1280-2) — $\overline{B}$ label still sits small on the winding lines at the arrow's tail (carried) — optional: enlarge its white patch.
+- [Minor] theory "Magneettivuon tiheyden määrittäminen" — the relative-uncertainty formula is inline in a long paragraph (carried) — consider a display line.
+- [Minor] sim readout and canvas at 390 px (sim-390) — readout may wrap, canvas crowded (carried).
+- for science: fig-13 now draws I pointing right along the lower wire towards the battery's lower terminal, so the circuit shows the current leaving the upper (+) terminal, down through the winding and back; consistent with the figure, no doubt raised.
 
 ## Checked
-- fig-13-390 (electromagnet): switch closed with dots at the contacts, open with the blade lifted off the contact, current arrow I moved under the circuit on a clear background, "virta kulkee" / "virta katkaistu" fit; aria-label matches the picture.
-- fig-17-390 and theory-1280-2 (coil-dims), enlarged crop: new $\overline{B}$ position, aria-label ("nuolen alkupään yläpuolella") matches.
-- stage-herata-390 (hook with the added clause "kun johdin on aivan neulan yläpuolella"): reads fluently, no layout change; the changed 1233 answer and Järkevyys edit read in the packet diff (LaTeX, units, no plain quantities).
+- fig-13-390 (electromagnet), the only figure the diff changes: the current arrow I under the circuit now has its head at the right end (head and shaft joined cleanly, no gap or overlap), the colour is the purple of the other currents, the label I sits centred under it and is legible, and nothing is clipped. The direction matches the circuit (the battery's raised terminal is on top, so the current flows down through the coil and right along the bottom). The aria-label still fits both states.
+- fig-17-390 and theory-1280-2: unchanged and still intact, the layout beside the text survived.
 - Hash run at start and end: identical.
 
 ## Scores
