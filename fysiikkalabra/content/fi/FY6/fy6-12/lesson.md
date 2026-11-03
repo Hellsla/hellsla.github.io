@@ -673,7 +673,7 @@ Revontulielektroni lähtee lähes levosta ja kulkee kohti suurempaa potentiaalia
 ## Yleinen virhekäsitys
 Potentiaali ja potentiaalienergia eivät ole sama asia. Potentiaali on kentän kohdan ominaisuus, eikä se riipu siitä, onko kohdassa varausta. Potentiaalienergia on varauksen energiaa, ja se riippuu varauksen suuruudesta ja etumerkistä: samassa $150\,\text{V}$:n kohdassa protonin potentiaalienergia on $+150\,\text{eV}$ ja elektronin $-150\,\text{eV}$. Siksi ei voi sanoa, että varaus liikkuu aina kohti pienempää potentiaalia: elektroni liikkuu kohti suurempaa.
 
-Moni ajattelee myös, että pidempi kiihdytysmatka antaa hiukkaselle enemmän energiaa. Jos levyjen välinen jännite pysyy samana, suuremmalla levyjen välillä kenttä on heikompi, $E = U : d$, ja työ $qEd = qU$ on sama. Ratkaisevaa on potentiaaliero, ei matka. Matka vaikuttaa vain siihen, kuinka kauan kiihdytys kestää.
+Moni ajattelee myös, että pidempi kiihdytysmatka antaa hiukkaselle enemmän energiaa. Jos levyjen välinen jännite pysyy samana, suuremmalla levyjen välimatkalla kenttä on heikompi, $E = U : d$, ja työ $qEd = qU$ on sama. Ratkaisevaa on potentiaaliero, ei matka. Matka vaikuttaa vain siihen, kuinka kauan kiihdytys kestää.
 
 ## Tiivistelmä
 - Sähköinen voima on konservatiivinen, joten varauksella on kentässä potentiaalienergiaa $E_\text{p} = qV$. Kentän tekemä työ on potentiaalienergian väheneminen.

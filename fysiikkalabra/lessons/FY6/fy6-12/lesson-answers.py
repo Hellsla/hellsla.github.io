@@ -2,8 +2,8 @@
 exercises' answers are in answers.py. Model: a homogeneous field E = U / d between two parallel plates (chapter
 Homogeeninen sähkökenttä), the force F = q E is the same everywhere between the plates; potential V = E x measured from
 the negative plate (zero), potential energy E_p = q V, the field's work W_AB = q (V_A - V_B) = q U_AB, and when only
-the electric force does work, E_k + E_p stays constant. Gravity is left out (it is about 10^-12 of the electric force
-on a proton here). Constants from the table: e = 1,602e-19 C, m_p = 1,673e-27 kg, m_e = 9,109e-31 kg,
+the electric force does work, E_k + E_p stays constant. Gravity is left out (in the sim's weakest field it is at least about 10^-10 of the
+electric force, 2e-11 in 5000 V/m for a proton). Constants from the table: e = 1,602e-19 C, m_p = 1,673e-27 kg, m_e = 9,109e-31 kg,
 m_alpha = 6,645e-27 kg; 1 eV = 1,602e-19 J. Prints {id: number} as JSON."""
 import json, math
 
@@ -51,10 +51,7 @@ for name, q, m in (("p", e, m_p), ("e", e, m_e), ("a", 2 * e, m_a)):   # experim
     a[f"koe2-{name}-tns"] = r["tns"]                 # 323,2 / 7,54 / 455,4 ns
 a["koe2-ratio-v"] = a["koe2-e-vkms"] / a["koe2-p-vkms"]   # electron about 43 times faster
 
-# --- retrieval: plates 4,0 cm apart, 200 V: E = 5000 V/m; wrong options 50 V/m (cm) and 8 V/m (U d)
-a["kertaus-E"] = 200 / 0.040
-a["kertaus-wrong-cm"] = 200 / 4.0
-a["kertaus-wrong-Ud"] = 200 * 0.040
+# (the kertaus item is qualitative: the force F = qE is the same everywhere between the plates; no numbers)
 
 # --- error spotting: an electron from the - plate to the + plate, U = 300 V ---
 a["virhe-dEp"] = -e * 300                           # Delta E_p = q Delta V = (-e)(+300 V) = -4,806e-17 J
@@ -80,7 +77,9 @@ a["hook-v-5keV"] = math.sqrt(2 * 5e3 * e / m_e)      # 4,19e7 m/s
 
 # --- simulation model box: the largest speed (electron, 1000 V) and the weakest field (100 V over 10 cm) ---
 a["sim-vmax-c"] = math.sqrt(2 * e * 1000 / m_e) / 3.00e8          # 0,0625: under 7 % of c
-a["sim-weight-ratio-min"] = e * (100 / 0.10) / (m_p * 9.81)        # proton: F / G = 9,8e9, about ten billion
+a["sim-weight-ratio-min"] = e * (100 / 0.10) / (m_p * 9.81)        # proton: F / G = 9,8e9
+a["sim-weight-ratio-min-alpha"] = 2 * e * (100 / 0.10) / (m_a * 9.81)   # alpha, the weakest case: 4,9e9, still "billions"
+assert a["sim-weight-ratio-min-alpha"] > 1e9 and a["sim-weight-ratio-min"] > 1e9
 a["fig-weight-ratio"] = e * 5000 / (m_p * 9.81)                    # in the figure's field 5000 V/m: 4,9e10
 a["siirto-mass-ratio"] = m_xe / m_e                                 # xenon ion 2,4e5 times the electron
 

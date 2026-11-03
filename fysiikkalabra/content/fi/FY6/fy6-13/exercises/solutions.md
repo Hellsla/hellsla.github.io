@@ -17,7 +17,7 @@
 **Muunnokset:** $C = 470\,\mu\text{F} = 470 \cdot 10^{-6}\,\text{F}$
 **Sijoitus:** $Q = 470 \cdot 10^{-6}\,\text{F} \cdot 9{,}0\,\text{V} = 4{,}23 \cdot 10^{-3}\,\text{C} = 4{,}23\,\text{mC}$
 **Vastaus:** $4{,}2\,\text{mC}$, kaksi merkitsevää numeroa kuten jännitteessä $9{,}0\,\text{V}$.
-**Järkevyys:** Arvio $500\,\mu\text{F} \cdot 10\,\text{V} = 5000\,\mu\text{C} = 5\,\text{mC}$ on hieman suurempi, koska molemmat luvut pyöristettiin ylöspäin. Yksikkö tarkistuu: $\text{F} \cdot \text{V} = \tfrac{\text{C}}{\text{V}} \cdot \text{V} = \text{C}$.
+**Järkevyys:** Arvio $500\,\mu\text{F} \cdot 10\,\text{V} = 5000\,\mu\text{C} = 5\,\text{mC}$ on hieman suurempi, koska molemmat luvut pyöristettiin ylöspäin. Yksikkö täsmää: $\text{F} \cdot \text{V} = \tfrac{\text{C}}{\text{V}} \cdot \text{V} = \text{C}$.
 
 ## fy6-13-L1-03
 **Annettu:** kapasitanssi $C = 2200\,\mu\text{F}$, jännite $U = 16\,\text{V}$
@@ -36,8 +36,8 @@
 **Kaava:** $C = \dfrac{\varepsilon_0 \varepsilon_\text{r} A}{d}$, josta ilmalle $C = \dfrac{\varepsilon_0 A}{d}$
 **Muunnokset:** $d = 1{,}0\,\text{mm} = 1{,}0 \cdot 10^{-3}\,\text{m}$
 **Sijoitus:** $C = \dfrac{8{,}854 \cdot 10^{-12}\,\text{F/m} \cdot 0{,}025\,\text{m}^2}{1{,}0 \cdot 10^{-3}\,\text{m}} = 221 \cdot 10^{-12}\,\text{F} = 221\,\text{pF}$
-**Vastaus:** $220\,\text{pF}$ eli $2{,}2 \cdot 10^{2}\,\text{pF}$, kaksi merkitsevää numeroa kuten pinta-alassa ja etäisyydessä.
-**Järkevyys:** Pinta-ala on $250$ kertaa levyjen etäisyys metreinä, ja $250 \cdot 8{,}854\,\text{pF} \approx 220\,\text{pF}$. Ilmaeristeisen levykondensaattorin kapasitanssi on tyypillisesti satoja pikofaradeja.
+**Vastaus:** $2{,}2 \cdot 10^{2}\,\text{pF} = 220\,\text{pF}$ (laskettu arvo $221\,\text{pF}$ pyöristettynä kahteen merkitsevään numeroon kuten pinta-alassa ja etäisyydessä).
+**Järkevyys:** Suhde $A : d = 0{,}025\,\text{m}^2 : 0{,}0010\,\text{m} = 25\,\text{m}$, ja $25\,\text{m} \cdot 8{,}854\,\text{pF/m} \approx 220\,\text{pF}$. Ilmaeristeisen levykondensaattorin kapasitanssi on tyypillisesti satoja pikofaradeja.
 
 ## fy6-13-L1-05
 **Annettu:** kuvaajan jännite varauksen funktiona, jännite $U = 12\,\text{V}$

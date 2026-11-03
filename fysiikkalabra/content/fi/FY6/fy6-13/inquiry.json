@@ -64,8 +64,8 @@
           "feedback": "Mallin arvot tukevat tätä: varaus kasvaa $44\\,\\text{nC}$:sta $89\\,\\text{nC}$:iin ja energia $11\\,\\mu\\text{J}$:sta $44\\,\\mu\\text{J}$:iin. Energia $\\tfrac{1}{2} Q U$ on varauksen ja jännitteen tulo, ja kumpikin kaksinkertaistuu."
         },
         {
-          "text": "Energia pysyy samana, koska kondensaattori ja sen kapasitanssi eivät muutu.",
-          "feedback": "Kapasitanssi pysyy samana, mutta mallissa energia kasvaa $11\\,\\mu\\text{J}$:sta $44\\,\\mu\\text{J}$:iin. Suurempi jännite tuo levyille enemmän varausta, ja jokainen varaus siirtyy suuremman jännitteen yli."
+          "text": "Energia pysyy samana, koska kondensaattori ei muutu.",
+          "feedback": "Kondensaattori pysyy samana, mutta mallissa energia kasvaa $11\\,\\mu\\text{J}$:sta $44\\,\\mu\\text{J}$:iin. Suurempi jännite tuo levyille enemmän varausta, ja jokainen varaus siirtyy suuremman jännitteen yli."
         },
         {
           "text": "Energia puolittuu, koska suurempi jännite purkaa kondensaattoria nopeammin.",
@@ -83,7 +83,7 @@
         "after": "koe-3",
         "min": 2
       },
-      "prompt": "Ilmaeristeinen kondensaattori ladataan $1{,}0\\,\\text{kV}$:n jännitteeseen, ja lähde irrotetaan. Sen jälkeen levyjen väli täytetään lasilla. Miten levyjen välinen jännite muuttuu?",
+      "prompt": "Ilmaeristeinen kondensaattori ladataan $1{,}0\\,\\text{kV}$:n jännitteeseen, ja lähde irrotetaan. Sen jälkeen levyjen väli täytetään lasilla. Kapasitanssi kertoo, kuinka paljon varausta kondensaattoriin tulee jännitettä kohti. Miten levyjen välinen jännite muuttuu?",
       "choices": [
         {
           "text": "Jännite pienenee, koska varaus pysyy samana mutta kapasitanssi kasvaa.",
@@ -100,7 +100,7 @@
         },
         {
           "text": "Jännite häviää kokonaan, koska lasi on eriste ja katkaisee kentän.",
-          "feedback": "Eriste heikentää kenttää mutta ei poista sitä. Mallissa jännite laskee noin $0{,}18\\,\\text{kV}$:iin eli lasin suhteellisen permittiivisyyden $5{,}6$ verran pienemmäksi."
+          "feedback": "Eriste heikentää kenttää mutta ei poista sitä. Mallissa jännite laskee noin $0{,}18\\,\\text{kV}$:iin eli $5{,}6$-kertaisesti pienemmäksi, kuten lasin suhteellinen permittiivisyys."
         }
       ]
     },
@@ -109,7 +109,7 @@
       "stage": "tutki",
       "type": "sim",
       "text": "Muuta levyjen etäisyyttä ja pinta-alaa, lähteen jännitettä ja eristettä. Irrota lähde ja katso, mikä pysyy samana.",
-      "howto": "*Levyjen etäisyys* $d$, *levyn pinta-ala* $A$ ja *lähteen jännite* $U_0$ asetetaan liukusäätimillä, *eriste* ja *lähde* valikoista. Kun lähde on *kytketty*, kondensaattorin jännite on lähteen jännite. Kun valitset *irrotettu*, kytkin aukeaa ja levyjen varaus jää siksi, mikä se oli irrotushetkellä; lähteen jännitteen säädin ei silloin vaikuta. Punaiset ympyrät ovat positiivisia ja siniset negatiivisia varauksia, ja niiden määrä kuvaa varausta pinta-alaa kohti. Vihreiden kenttäviivojen tiheys kuvaa kentän voimakkuutta. Kuvaajan suora on $U = \\tfrac{Q}{C}$, ja oranssin kolmion pinta-ala on energia. Kipinä levyjen välissä tarkoittaa läpilyöntiä.",
+      "howto": "*Levyjen etäisyys* $d$, *levyn pinta-ala* $A$ ja *lähteen jännite* $U_0$ asetetaan liukusäätimillä, *eriste* ja *lähde* valikoista. Kun lähde on *kytketty*, kondensaattorin jännite on lähteen jännite. Kun valitset *irrotettu*, kytkin aukeaa ja levyjen varaus pysyy samana kuin se oli irrotushetkellä; lähteen jännitteen säädin ei silloin vaikuta. Punaiset ympyrät ovat positiivisia ja siniset negatiivisia varauksia, ja niiden määrä kuvaa varausta pinta-alaa kohti. Vihreiden kenttäviivojen tiheys kuvaa kentän voimakkuutta. Kuvaajan suora on $U = \\tfrac{Q}{C}$, ja oranssin kolmion pinta-ala on energia. Kipinä levyjen välissä tarkoittaa läpilyöntiä.",
       "model": "Levyt ovat yhdensuuntaiset, ja niiden etäisyys on pieni levyjen kokoon verrattuna, joten kenttä on homogeeninen ja reunojen vaikutus jätetään huomiotta. Eriste täyttää levyjen välin kokonaan. Eristeiden suhteelliset permittiivisyydet ja läpilyöntilujuudet ovat pyöristettyjä taulukkoarvoja: ilma $1{,}0$ ja $3\\,\\text{MV/m}$, teflon $2{,}1$ ja $60\\,\\text{MV/m}$, paperi $3{,}7$ ja $16\\,\\text{MV/m}$, lasi $5{,}6$ ja $14\\,\\text{MV/m}$. Lataus ja purkautuminen tapahtuvat mallissa heti, joten kuva näyttää aina lopputilan. Irrotettu kondensaattori ei vuoda, mutta läpilyönnissä se purkautuu. Luvut ovat mallin laskemia arvoja, eivät mittauksia.",
       "calc": "Kapasitanssi lasketaan levykondensaattorin kaavasta\n\n$$C = \\frac{\\varepsilon_0 \\varepsilon_\\text{r} A}{d}$$\n\nkun $\\varepsilon_0 = 8{,}854 \\cdot 10^{-12}\\,\\text{F/m}$. Kun lähde on kytketty, $U = U_0$ ja $Q = C U_0$. Irrotushetkellä varaus jää talteen, ja sen jälkeen jännite on $U = \\tfrac{Q}{C}$. Kenttä on $E = \\tfrac{U}{d}$, ja energia on $W = \\tfrac{1}{2} Q U$. Läpilyönti tapahtuu, kun $E$ ylittää eristeen läpilyöntilujuuden $E_\\text{max}$. Yksiköt sopivat yhteen: $\\text{pF} \\cdot \\text{kV} = \\text{nC}$, $\\text{nC} \\cdot \\text{kV} = \\mu\\text{J}$ ja $\\text{kV} : \\text{mm} = \\text{MV/m}$."
     },
@@ -355,7 +355,6 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 5: läpilyönti ilmassa",
-      "optional": true,
       "intro": "Levyjen välissä on ilmaa $1{,}0\\,\\text{mm}$:n matkalla, ja lähde on kytketty. Nosta lähteen jännitettä vähitellen ja kirjaa kentän voimakkuus. Millä jännitteellä läpilyönti tapahtuu, ja mikä on silloin kentän voimakkuus?",
       "initial": {
         "A": 200,
@@ -482,7 +481,7 @@
       "stage": "sovella",
       "type": "numeric",
       "title": "Sovella uuteen tilanteeseen",
-      "prompt": "Tyhjää kondensaattoria, jonka kapasitanssi on $4{,}7\\,\\mu\\text{F}$, ladataan vastuksen kautta $9{,}0\\,\\text{V}$:n paristolla, kunnes virta lakkaa kulkemasta. Paristo siirtää koko varauksen jännitteensä yli. Kuinka paljon energiaa muuttuu latauksen aikana vastuksen ja johtimien sisäenergiaksi? Vastaa mikrojouleina.",
+      "prompt": "Tyhjää kondensaattoria, jonka kapasitanssi on $4{,}7\\,\\mu\\text{F}$, ladataan vastuksen kautta $9{,}0\\,\\text{V}$:n paristolla, kunnes virta lakkaa kulkemasta. Kuinka paljon energiaa muuttuu latauksen aikana vastuksen ja johtimien sisäenergiaksi? Vastaa mikrojouleina.",
       "answer": 190.35,
       "unit": "µJ",
       "tolerance": 0.02,
@@ -530,7 +529,7 @@
           "feedback": "Suurempi jännite tuo levyille suuremman varauksen, mutta varauksen ja jännitteen suhde $C = \\tfrac{Q}{U}$ pysyy samana. Kapasitanssi riippuu vain rakenteesta: pinta-alasta, etäisyydestä ja eristeestä."
         },
         {
-          "text": "Paksumpien metallilevyjen käyttäminen",
+          "text": "Paksumpien metallilevyjen käyttäminen, kun levyjen väli pysyy samana",
           "feedback": "Varaus on levyjen sisäpinnoilla, eikä levyjen paksuus vaikuta kenttään niiden välissä. Kapasitanssi riippuu levyjen pinta-alasta $A$, niiden etäisyydestä $d$ ja eristeestä."
         },
         {
@@ -571,7 +570,7 @@
       "type": "explain",
       "title": "3. Selitä vaara",
       "optional": true,
-      "prompt": "Vanhan television virtalähteessä on kondensaattori, jonka kapasitanssi on $220\\,\\mu\\text{F}$ ja jännite $330\\,\\text{V}$. Selitä, miksi kondensaattori voi olla vaarallinen vielä sen jälkeen, kun televisio on irrotettu sähköverkosta, ja mitä sen energia on.",
+      "prompt": "Vanhan television virtalähteessä on kondensaattori, jonka kapasitanssi on $220\\,\\mu\\text{F}$ ja jännite $330\\,\\text{V}$. Selitä, miksi kondensaattori voi olla vaarallinen vielä sen jälkeen, kun televisio on irrotettu sähköverkosta, ja kuinka suuri sen energia on.",
       "model": "Kun televisio irrotetaan verkosta, kondensaattorin levyjen välille ei synny reittiä, jota pitkin varaus pääsisi levystä toiseen, joten varaus ja jännite säilyvät. Kondensaattorissa on yhä $330\\,\\text{V}$:n jännite, ja sen energia on $W = \\tfrac{1}{2} C U^2 = \\tfrac{1}{2} \\cdot 220 \\cdot 10^{-6}\\,\\text{F} \\cdot (330\\,\\text{V})^2 \\approx 12\\,\\text{J}$. Jos ihminen koskettaa molempia napoja, kondensaattori purkautuu hänen kehonsa kautta, ja virta on suurin heti alussa. Siksi avattua laitetta ei kosketa, ennen kuin kondensaattori on purettu.",
       "criteria": [
         "Vastaus kertoo, että irrotetun kondensaattorin varaus ja jännite säilyvät, koska varauksella ei ole reittiä levystä toiseen.",

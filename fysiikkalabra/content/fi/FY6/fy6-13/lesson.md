@@ -257,7 +257,7 @@ Kondensaattorin kapasitanssi on varauksen ja jännitteen suhde:
 ```latex
 C = \frac{Q}{U}
 ```
-missä $C$ on kapasitanssi (F), $Q$ kondensaattorin varaus (C) ja $U$ levyjen välinen jännite (V).
+missä $C$ on kapasitanssi ($\text{F}$), $Q$ kondensaattorin varaus ($\text{C}$) ja $U$ levyjen välinen jännite ($\text{V}$).
 
 Kapasitanssin yksikkö on faradi, $1\,\text{F} = 1\,\tfrac{\text{C}}{\text{V}}$. Faradi on suuri yksikkö, joten tavallisten kondensaattorien kapasitanssit ilmoitetaan mikro-, nano- tai pikofaradeina, esimerkiksi $470\,\mu\text{F} = 470 \cdot 10^{-6}\,\text{F}$.
 
@@ -266,9 +266,9 @@ Levykondensaattorin kapasitanssi on
 ```latex
 C = \frac{\varepsilon_0 \varepsilon_\text{r} A}{d}
 ```
-missä $A$ on levyn pinta-ala ($\text{m}^2$), $d$ levyjen etäisyys (m), $\varepsilon_0 = 8{,}854 \cdot 10^{-12}\,\text{F/m}$ sähkövakio eli tyhjiön permittiivisyys ja $\varepsilon_\text{r}$ eristeen suhteellinen permittiivisyys. Suhteellinen permittiivisyys kertoo, kuinka moninkertaiseksi eriste kasvattaa kapasitanssia tyhjiöön verrattuna. Ilmalle $\varepsilon_\text{r} \approx 1{,}0$.
+missä $A$ on levyn pinta-ala ($\text{m}^2$), $d$ levyjen etäisyys ($\text{m}$), $\varepsilon_0 = 8{,}854 \cdot 10^{-12}\,\text{F/m}$ sähkövakio eli tyhjiön permittiivisyys ja $\varepsilon_\text{r}$ eristeen suhteellinen permittiivisyys. Kaava pätee, kun levyjen etäisyys on pieni levyjen kokoon verrattuna (kenttä on homogeeninen eikä reunoja huomioida) ja eriste täyttää levyjen välin. Suhteellinen permittiivisyys kertoo, kuinka moninkertaiseksi eriste kasvattaa kapasitanssia tyhjiöön verrattuna. Ilmalle $\varepsilon_\text{r} \approx 1{,}0$.
 
-| Eriste | $\varepsilon_\text{r}$ | $E_\text{max}$ (MV/m) |
+| Eriste | $\varepsilon_\text{r}$ | $E_\text{max}\ (\text{MV/m})$ |
 |---|---|---|
 | ilma | $1{,}0$ | $3$ |
 | teflon | $2{,}1$ | $60$ |
@@ -282,7 +282,7 @@ Levyjen välinen kenttä on $E = \tfrac{U}{d}$, joten eriste kestää jännittee
 ```latex
 U_\text{max} = E_\text{max} d
 ```
-missä $U_\text{max}$ on suurin jännite (V), jolla läpilyöntiä ei tapahdu, $E_\text{max}$ eristeen läpilyöntilujuus (V/m) ja $d$ eristekerroksen paksuus (m). Esimerkiksi $0{,}010\,\text{mm}$:n paperikerros kestää noin $16 \cdot 10^{6}\,\tfrac{\text{V}}{\text{m}} \cdot 0{,}010 \cdot 10^{-3}\,\text{m} = 160\,\text{V}$.
+missä $U_\text{max}$ on suurin jännite ($\text{V}$), jolla läpilyöntiä ei tapahdu, $E_\text{max}$ eristeen läpilyöntilujuus ($\text{V/m}$) ja $d$ eristekerroksen paksuus ($\text{m}$). Esimerkiksi $0{,}010\,\text{mm}$:n paperikerros kestää noin $16 \cdot 10^{6}\,\tfrac{\text{V}}{\text{m}} \cdot 0{,}010 \cdot 10^{-3}\,\text{m} = 160\,\text{V}$.
 
 ### Kondensaattorin energia
 Ladattaessa varaus kasvaa nollasta arvoon $Q$, ja jännite kasvaa samassa suhteessa nollasta arvoon $U$. Kun pieni varaus siirretään levystä toiseen jännitteen yli, se saa energian, joka on varaus kertaa senhetkinen jännite (luku *Potentiaalienergia ja potentiaali sähkökentässä*). Ensimmäiset varaukset siirtyvät pienen jännitteen yli ja viimeiset koko jännitteen $U$ yli, joten keskimääräinen jännite on $\tfrac{U}{2}$. Energia on $(Q, U)$-kuvaajan alle jäävän kolmion pinta-ala.
@@ -324,12 +324,12 @@ Kondensaattoriin varastoitunut energia on
 ```latex
 W = \tfrac{1}{2} Q U = \tfrac{1}{2} C U^2
 ```
-missä $W$ on energia (J), $Q$ varaus (C), $U$ jännite (V) ja $C$ kapasitanssi (F). Jälkimmäinen muoto saadaan sijoittamalla $Q = CU$. Energiaa merkitään $W$:llä, koska $E$ tarkoittaa tässä luvussa sähkökentän voimakkuutta. Myös luvussa *Akut ja latauspiiri* energia oli $W$, koska $E$ oli siellä lähdejännite.
+missä $W$ on energia ($\text{J}$), $Q$ varaus ($\text{C}$), $U$ jännite ($\text{V}$) ja $C$ kapasitanssi ($\text{F}$). Jälkimmäinen muoto saadaan sijoittamalla $Q = CU$. Energiaa merkitään $W$:llä, koska $E$ tarkoittaa tässä luvussa sähkökentän voimakkuutta. Myös luvussa *Akut ja latauspiiri* energia oli $W$, koska $E$ oli siellä lähdejännite.
 
 Lähde siirtää koko varauksen $Q$ täyden jännitteensä $U$ yli, joten se antaa energian $QU$. Kondensaattoriin varastoituu siitä vain puolet. Toinen puoli muuttuu latauksen aikana johtimien ja vastusten sisäenergiaksi, joka siirtyy lämpönä ympäristöön.
 
 ### Eriste, kun lähde on kytkettynä tai irrotettuna
-Kun eristelevy työnnetään levyjen väliin, kapasitanssi kasvaa $\varepsilon_\text{r}$-kertaiseksi. Muut suureet muuttuvat sen mukaan, pysyykö kondensaattori kytkettynä lähteeseen.
+Kun levyjen väliin työnnetään eristelevy, joka täyttää välin, kapasitanssi kasvaa $\varepsilon_\text{r}$-kertaiseksi. Muut suureet muuttuvat sen mukaan, pysyykö kondensaattori kytkettynä lähteeseen.
 
 | | Lähde kytkettynä | Lähde irrotettuna |
 |---|---|---|
@@ -379,7 +379,7 @@ Kameran salamalaitteen kondensaattorin kapasitanssi on $150\,\mu\text{F}$, ja se
 
 <!-- vaihe -->
 
-**Tulos.** Kondensaattoriin varastoituu noin $6{,}8\,\text{J}$, ja keskimääräinen teho välähdyksen aikana on noin $6{,}8\,\text{kW}$, kaksi merkitsevää numeroa kuten purkautumisajassa $1{,}0\,\text{ms}$.
+**Tulos.** Kondensaattoriin varastoituu noin $6{,}8\,\text{J}$, ja keskimääräinen teho välähdyksen aikana on noin $6{,}8\,\text{kW}$, kaksi merkitsevää numeroa. Energia $W$ saadaan kapasitanssista ja jännitteestä, ja teho $P$ jakamalla se purkautumisajalla $1{,}0\,\text{ms}$.
 
 <!-- vaihe -->
 

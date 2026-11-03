@@ -70,7 +70,7 @@
     {
       "id": "fy6-12-L2-04",
       "level": 2,
-      "text": "Elektronitykissä elektronit lähtevät levosta ja kiihdytetään jännitteellä. Kuinka suuri jännite tarvitaan, jotta elektronin nopeus on $1{,}0 \\cdot 10^{7}\\,\\text{m/s}$? Elektronin massa on $9{,}109 \\cdot 10^{-31}\\,\\text{kg}$. Alkeisvaraus on $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$.",
+      "text": "Elektronitykissä elektronit lähtevät levosta ja kiihdytetään jännitteellä. Kuinka suuri jännite tarvitaan, jotta elektronin nopeus on $1{,}0 \\cdot 10^{7}\\,\\text{m/s}$? Vastaa voltteina. Elektronin massa on $9{,}109 \\cdot 10^{-31}\\,\\text{kg}$. Alkeisvaraus on $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$.",
       "answer": 284.301,
       "unit": "V",
       "tolerance": 0.02
