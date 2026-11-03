@@ -4,7 +4,7 @@
 **Periaate:** Kaikki laserin fotonit syntyvät samassa siirtymässä. Siksi niillä on sama energia. Yhden fotonin energia riippuu vain valon aallonpituudesta.
 **Kaava:** $E = hf$ ja $f = \tfrac{c}{\lambda}$, joten $E = \dfrac{hc}{\lambda}$
 **Muunnokset:** $\lambda = 633\,\text{nm} = 633 \cdot 10^{-9}\,\text{m}$. Lopuksi joulet muunnetaan elektronivolteiksi sijoittamalla $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$.
-**Sijoitus:** $E = \dfrac{6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8}\,\text{m/s}}{633 \cdot 10^{-9}\,\text{m}} = 3{,}1382 \cdot 10^{-19}\,\text{J} = \dfrac{3{,}1382 \cdot 10^{-19}}{1{,}602 \cdot 10^{-19}}\,\text{eV} = 1{,}9589\,\text{eV}$
+**Sijoitus:** $E = (6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8}\,\text{m/s}) : (633 \cdot 10^{-9}\,\text{m}) = 3{,}1382 \cdot 10^{-19}\,\text{J} = \dfrac{3{,}1382 \cdot 10^{-19}}{1{,}602 \cdot 10^{-19}}\,\text{eV} = 1{,}9589\,\text{eV}$
 **Vastaus:** $1{,}96\,\text{eV}$. Vastauksessa on kolme merkitsevää numeroa, kuten aallonpituudessa $633\,\text{nm}$.
 **Järkevyys:** Näkyvän valon fotonien energiat ovat noin $1{,}7$–$3{,}3\,\text{eV}$. Punainen valo on alueen pienienergisessä päässä, ja tulos on siellä. Vedyn punaisen viivan $656\,\text{nm}$ fotonin energia on $1{,}89\,\text{eV}$. Hieman lyhyemmällä aallonpituudella energia on hieman suurempi.
 
@@ -24,7 +24,7 @@
 **Periaate:** Energia säilyy. Kun ioni putoaa ylemmältä lasertasolta alemmalle, sen energia pienenee tasojen erotuksen verran. Yksi fotoni vie juuri tämän energian.
 **Kaava:** $\dfrac{hc}{\lambda} = E_2 - E_1$, josta $\lambda = \dfrac{hc}{E_2 - E_1}$
 **Muunnokset:** $E_2 - E_1 = 1{,}79\,\text{eV} = 1{,}79 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 2{,}8676 \cdot 10^{-19}\,\text{J}$. Lopuksi $1\,\text{m} = 10^{9}\,\text{nm}$.
-**Sijoitus:** $\lambda = \dfrac{6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8}\,\text{m/s}}{2{,}8676 \cdot 10^{-19}\,\text{J}} = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{2{,}8676 \cdot 10^{-19}\,\text{J}} = 6{,}9274 \cdot 10^{-7}\,\text{m} = 692{,}74\,\text{nm}$
+**Sijoitus:** $\lambda = (6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8}\,\text{m/s}) : (2{,}8676 \cdot 10^{-19}\,\text{J}) = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{2{,}8676 \cdot 10^{-19}\,\text{J}} = 6{,}9274 \cdot 10^{-7}\,\text{m} = 692{,}74\,\text{nm}$
 **Vastaus:** $693\,\text{nm}$. Vastauksessa on kolme merkitsevää numeroa, kuten energiaerossa $1{,}79\,\text{eV}$.
 **Järkevyys:** Tulos on näkyvän valon punaisessa päässä. Rubiinilaserin valo on tummanpunaista, ja sen aallonpituus on noin $694\,\text{nm}$. Energia $1{,}79\,\text{eV}$ on näkyvän valon alueen $1{,}7$–$3{,}3\,\text{eV}$ alapäässä. Se sopii punaiseen valoon.
 
@@ -34,7 +34,7 @@
 **Periaate:** Kaikki laserin fotonit ovat samanlaisia. Siksi pulssin energia on fotonien määrä kerrottuna yhden fotonin energialla $\tfrac{hc}{\lambda}$.
 **Kaava:** $E = N \cdot \dfrac{hc}{\lambda}$, josta $N = \dfrac{E\lambda}{hc}$
 **Muunnokset:** $E = 3{,}0\,\text{mJ} = 3{,}0 \cdot 10^{-3}\,\text{J}$ ja $\lambda = 1064\,\text{nm} = 1064 \cdot 10^{-9}\,\text{m}$.
-**Sijoitus:** $N = \dfrac{3{,}0 \cdot 10^{-3}\,\text{J} \cdot 1064 \cdot 10^{-9}\,\text{m}}{6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8}\,\text{m/s}} = \dfrac{3{,}192 \cdot 10^{-12}\,\text{J}\,\text{m}}{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}} = 1{,}6069 \cdot 10^{16}$
+**Sijoitus:** $N = (3{,}0 \cdot 10^{-3}\,\text{J} \cdot 1064 \cdot 10^{-9}\,\text{m}) : (6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8}\,\text{m/s}) = \dfrac{3{,}192 \cdot 10^{-12}\,\text{J}\,\text{m}}{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}} = 1{,}6069 \cdot 10^{16}$
 **Vastaus:** $1{,}6 \cdot 10^{16}$ fotonia. Vastauksessa on kaksi merkitsevää numeroa, kuten pulssin energiassa $3{,}0\,\text{mJ}$.
 **Järkevyys:** Yhden fotonin energia on $\tfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{1064 \cdot 10^{-9}\,\text{m}} \approx 1{,}9 \cdot 10^{-19}\,\text{J}$. Lasketaan vielä $1{,}6 \cdot 10^{16} \cdot 1{,}9 \cdot 10^{-19}\,\text{J} \approx 3 \cdot 10^{-3}\,\text{J}$, kuten pitääkin. Yksikkö kumoutuu, joten tulos on pelkkä luku.
 

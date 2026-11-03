@@ -4,7 +4,7 @@
 **Principle:** All the photons of a laser are produced in the same transition, so they have the same energy, and the energy of one photon depends only on the wavelength of the light.
 **Formula:** $E = hf$ and $f = \tfrac{c}{\lambda}$, so $E = \dfrac{hc}{\lambda}$
 **Conversions:** $\lambda = 633\,\text{nm} = 633 \cdot 10^{-9}\,\text{m}$. Finally joules are converted to electronvolts by substituting $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$.
-**Substitution:** $E = \dfrac{6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2.998 \cdot 10^{8}\,\text{m/s}}{633 \cdot 10^{-9}\,\text{m}} = 3.1382 \cdot 10^{-19}\,\text{J} = \dfrac{3.1382 \cdot 10^{-19}}{1.602 \cdot 10^{-19}}\,\text{eV} = 1.9589\,\text{eV}$
+**Substitution:** $E = (6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2.998 \cdot 10^{8}\,\text{m/s}) : (633 \cdot 10^{-9}\,\text{m}) = 3.1382 \cdot 10^{-19}\,\text{J} = \dfrac{3.1382 \cdot 10^{-19}}{1.602 \cdot 10^{-19}}\,\text{eV} = 1.9589\,\text{eV}$
 **Answer:** $1.96\,\text{eV}$, three significant figures like the wavelength $633\,\text{nm}$.
 **Reasonableness:** The energies of photons of visible light are about $1.7$–$3.3\,\text{eV}$, and red light is at the low-energy end of the range, like the result. The photon of the red line of hydrogen, $656\,\text{nm}$, has the energy $1.89\,\text{eV}$; at a slightly shorter wavelength the energy is slightly greater.
 
@@ -24,7 +24,7 @@
 **Principle:** Energy is conserved: when an ion drops from the upper laser level to the lower, its energy decreases by the difference of the levels, and exactly this energy is carried away by one photon.
 **Formula:** $\dfrac{hc}{\lambda} = E_2 - E_1$, from which $\lambda = \dfrac{hc}{E_2 - E_1}$
 **Conversions:** $E_2 - E_1 = 1.79\,\text{eV} = 1.79 \cdot 1.602 \cdot 10^{-19}\,\text{J} = 2.8676 \cdot 10^{-19}\,\text{J}$; finally $1\,\text{m} = 10^{9}\,\text{nm}$.
-**Substitution:** $\lambda = \dfrac{6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2.998 \cdot 10^{8}\,\text{m/s}}{2.8676 \cdot 10^{-19}\,\text{J}} = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{2.8676 \cdot 10^{-19}\,\text{J}} = 6.9274 \cdot 10^{-7}\,\text{m} = 692.74\,\text{nm}$
+**Substitution:** $\lambda = (6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2.998 \cdot 10^{8}\,\text{m/s}) : (2.8676 \cdot 10^{-19}\,\text{J}) = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{2.8676 \cdot 10^{-19}\,\text{J}} = 6.9274 \cdot 10^{-7}\,\text{m} = 692.74\,\text{nm}$
 **Answer:** $693\,\text{nm}$, three significant figures like the energy difference $1.79\,\text{eV}$.
 **Reasonableness:** The result is at the red end of visible light, and the light of a ruby laser is dark red with a wavelength of about $694\,\text{nm}$. The energy $1.79\,\text{eV}$ is at the low end of the range of visible light, $1.7$–$3.3\,\text{eV}$, which fits red light.
 
@@ -34,7 +34,7 @@
 **Principle:** All the photons of a laser are identical, so the energy of the pulse is the number of photons multiplied by the energy of one photon $\tfrac{hc}{\lambda}$.
 **Formula:** $E = N \cdot \dfrac{hc}{\lambda}$, from which $N = \dfrac{E\lambda}{hc}$
 **Conversions:** $E = 3.0\,\text{mJ} = 3.0 \cdot 10^{-3}\,\text{J}$ and $\lambda = 1064\,\text{nm} = 1064 \cdot 10^{-9}\,\text{m}$.
-**Substitution:** $N = \dfrac{3.0 \cdot 10^{-3}\,\text{J} \cdot 1064 \cdot 10^{-9}\,\text{m}}{6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2.998 \cdot 10^{8}\,\text{m/s}} = \dfrac{3.192 \cdot 10^{-12}\,\text{J}\,\text{m}}{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}} = 1.6069 \cdot 10^{16}$
+**Substitution:** $N = (3.0 \cdot 10^{-3}\,\text{J} \cdot 1064 \cdot 10^{-9}\,\text{m}) : (6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2.998 \cdot 10^{8}\,\text{m/s}) = \dfrac{3.192 \cdot 10^{-12}\,\text{J}\,\text{m}}{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}} = 1.6069 \cdot 10^{16}$
 **Answer:** $1.6 \cdot 10^{16}$ photons, two significant figures like the energy of the pulse $3.0\,\text{mJ}$.
 **Reasonableness:** The energy of one photon is $\tfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{1064 \cdot 10^{-9}\,\text{m}} \approx 1.9 \cdot 10^{-19}\,\text{J}$, and $1.6 \cdot 10^{16} \cdot 1.9 \cdot 10^{-19}\,\text{J} \approx 3 \cdot 10^{-3}\,\text{J}$, as it should be. The unit cancels, so the result is a pure number.
 
