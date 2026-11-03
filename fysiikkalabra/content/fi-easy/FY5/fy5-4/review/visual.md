@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 4ada06d66c310934
+CONTENT-HASH: 46563ec5e04b9c5f
 
 ## Blocking
+(none)
 
 ## Polish
+- Kuva on kuvan alareunasta rajattu pyöreäksi luukuksi; alt-teksti kuvaa tämän oikein. Vuosiluku 1968 ei näy kuvasta, mutta se on kuvatekstissä tekijän lähteen mukaan.
 
 ## Checked
-batch delta review: renamed title and chapter cross-references only (no numbers, symbols or figures changed); fy5-7 and fy5-14 top-390 captures opened, long new titles wrap cleanly at 390 px; references read as natural Finnish and match the new titles.
+batch delta review: photo loads, placement ok at both widths, reworded caption natural and consistent with the normal-acceleration section. Apollo 8 -kuva latautuu ja asettuu oikealle (1280 px) ja palstalle (360 px); krediitti näkyy.
