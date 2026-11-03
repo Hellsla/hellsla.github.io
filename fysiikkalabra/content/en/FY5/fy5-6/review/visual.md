@@ -1,11 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 6944cd3c9c7c5471
+CONTENT-HASH: 71986967a9004414
 
 ## Blocking
-- none
 
 ## Polish
-- [Minor] fy5-6 photo placement — the ISS photo sits beside the geostationary-orbit paragraph, but its caption (free fall) belongs to the Weightlessness paragraph just below — move the figure after the Weightlessness paragraph if it fits.
 
 ## Checked
-- batch delta review: opened fy5-6-1280-0.png and fy5-6-360-0.png; photo loads, floats right beside the text at 1280 px and sits in the column at 360 px, no clipping or horizontal overflow; caption and alt natural English and consistent with the picture; credit line present under the caption.
+batch delta review: chapter title and chapter cross-reference renames only (no figures, maths or numbers changed); opened contact-1 captures (fy5-13, fy5-14 plus layout of the long new titles at 390 px), titles wrap cleanly, cross-references read naturally.

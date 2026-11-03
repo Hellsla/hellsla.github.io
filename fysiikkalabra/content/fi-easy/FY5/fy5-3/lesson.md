@@ -1,4 +1,4 @@
-# Ympyräliike ja ratanopeus
+# Ympyrärata: jaksonaika ja ratanopeus
 
 > **Miksi** karusellin reunalla seisova lapsi kiitää paljon lujempaa kuin keskitangon vieressä seisova, vaikka molemmat tekevät kierroksen yhtä nopeasti?
 
@@ -213,7 +213,7 @@ Naruun sidottu kiekko kiertää jäällä tappia. Naru vetää kiekkoa kohti tap
 </svg>
 
 ### Suunnan muutos on nopeuden muutos
-Nopeuden muutoksen $\Delta\overline{v}$ näkee, kun piirtää kaksi peräkkäistä nopeusvektoria samasta pisteestä alkaen. Muutos $\Delta\overline{v}$ on se vektori, joka pitää lisätä vektoriin $\overline{v}_1$, jotta saadaan $\overline{v}_2$. Ympyräradalla vektorit ovat yhtä pitkiä, mutta niiden suunnat ovat erilaiset. Siksi $\Delta\overline{v}$ ei ole nolla, kun aikaväli on lyhyempi kuin yksi kierros. Kiihtyvyys tarkoittaa nopeuden muutosta. Se ei tarkoita pelkästään vauhdin muutosta. Tasaisessa ympyräliikkeessä kappale siis kiihtyy. Newtonin toisen lain mukaan siihen vaikuttaa silloin kokonaisvoima, joka ei ole nolla. Tämä kokonaisvoima osoittaa ympyrän keskipisteen puolelle eli radan sisäpuolelle. Se ei osoita ulospäin. Kiihtyvyyden suuruus lasketaan luvussa *Tasainen ympyräliike ja normaalikiihtyvyys*.
+Nopeuden muutoksen $\Delta\overline{v}$ näkee, kun piirtää kaksi peräkkäistä nopeusvektoria samasta pisteestä alkaen. Muutos $\Delta\overline{v}$ on se vektori, joka pitää lisätä vektoriin $\overline{v}_1$, jotta saadaan $\overline{v}_2$. Ympyräradalla vektorit ovat yhtä pitkiä, mutta niiden suunnat ovat erilaiset. Siksi $\Delta\overline{v}$ ei ole nolla, kun aikaväli on lyhyempi kuin yksi kierros. Kiihtyvyys tarkoittaa nopeuden muutosta. Se ei tarkoita pelkästään vauhdin muutosta. Tasaisessa ympyräliikkeessä kappale siis kiihtyy. Newtonin toisen lain mukaan siihen vaikuttaa silloin kokonaisvoima, joka ei ole nolla. Tämä kokonaisvoima osoittaa ympyrän keskipisteen puolelle eli radan sisäpuolelle. Se ei osoita ulospäin. Kiihtyvyyden suuruus lasketaan luvussa *Normaalikiihtyvyys ja ympyräliikkeen liikeyhtälö*.
 
 <svg data-fig="dv" viewBox="0 0 600 340" role="img" aria-label="Kaavakuva: vasemmalla on ympyräradan kaari ja kappaleen kaksi peräkkäistä paikkaa. Nopeudet ovat yhtä pitkät mutta eri suuntiin. Oikealla samat vektorit on siirretty alkamaan samasta pisteestä. Musta nuoli ensimmäisen kärjestä toisen kärkeen on nopeuden muutos. Toinen nopeus on ensimmäinen nopeus plus nopeuden muutos." style="max-width:100%;font-size:24px">
   <path d="M290,300 L290,292 L289,283.5 L288,275.5 L287,267.5 L285,259.5 L283,251.5 L280.5,244 L277.5,236.5 L274.5,229 L271,221.5 L267,214.5 L262.5,207.5 L258,200.5 L253,194 L248,188 L242.5,182 L236.5,176 L230.5,170.5 L224,165.5 L217.5,160.5 L210.5,156 L203.5,152 L196.5,148 L189,144.5 L181.5,141.5 L174,139 L166,136.5 L158,134.5 L150.5,132.5 L142,131.5 L134,130.5 L126,130 L118,130 L109.5,130.5 L101.5,131 L93.5,132 L85.5,133.5 L77.5,135.5 L69.5,137.5 L62,140.5" fill="none" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>

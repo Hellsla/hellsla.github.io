@@ -1,4 +1,4 @@
-# Uniform circular motion and centripetal acceleration
+# Centripetal acceleration and the equation of motion in a circle
 
 > **Why** does a car slide off the road on a slippery bend?
 
@@ -90,7 +90,7 @@
 ## Key idea
 
 ### The direction of the velocity changes, so the object accelerates
-In the chapter *Circular motion and speed* you learned that in uniform circular motion an object goes round a circular path at a constant speed. The magnitude of the velocity, the tangential speed $v$, stays the same, but the direction of the velocity keeps changing: the velocity $\overline{v}$ always points along the tangent of the path. Velocity is a vector, so a change of direction is also a change of velocity. When the velocity changes, the object has an acceleration. So in uniform circular motion the object accelerates even though its speed does not change.
+In the chapter *Moving in a circle: period and speed* you learned that in uniform circular motion an object goes round a circular path at a constant speed. The magnitude of the velocity, the tangential speed $v$, stays the same, but the direction of the velocity keeps changing: the velocity $\overline{v}$ always points along the tangent of the path. Velocity is a vector, so a change of direction is also a change of velocity. When the velocity changes, the object has an acceleration. So in uniform circular motion the object accelerates even though its speed does not change.
 
 <svg data-fig="muutos" viewBox="0 0 600 340" role="img" aria-label="Two pictures. On the left an object goes round a circular path anticlockwise at a steady speed. At two points in the upper part of the path the blue velocity arrows v 1 and v 2 are along the tangent of the path; the arrows are equally long but point in different directions. At the topmost point between them the orange acceleration arrow a n points straight down to the centre of the path. On the right the same velocity arrows are drawn from the same point. The arrow between the tips of the arrows, the change of velocity delta v, points straight down, that is in the same direction as the acceleration, towards the centre of the path. The velocity arrows are equally long in both pictures, at the same scale." style="max-width:100%;font-size:24px">
   <foreignObject x="52.5" y="7.5" width="195" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{path of the object}$</div></foreignObject>

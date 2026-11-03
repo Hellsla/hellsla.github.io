@@ -1,11 +1,9 @@
-VERDICT: FAIL
-CONTENT-HASH: be289689f102ef01
+VERDICT: PASS
+CONTENT-HASH: 7b94cec5125b53a5
 
 ## Blocking
-- [Major] fy5-9 foucault-pendulum caption, 2nd sentence — "Heilurin jaksonaika riippuu vain heilurin pituudesta ja putoamiskiihtyvyydestä." sits right beside the paragraph that says the spring oscillator's period depends only on the mass and the spring ("riippuu vain siitä, kuinka suuri massa liikkuu ja kuinka jäykkä jousi palauttaa sitä"), before the pendulum has been introduced; the "vain" claim also holds only for small swings, and the photo shows a Foucault pendulum, not a simple one. It reads as a contradiction and is not supported by the picture — Fix: "Foucault'n heiluri tiedemuseossa Japanissa. Heiluri on pallo, joka riippuu langan varassa ja heiluu edestakaisin. Myös heilurilla jaksonaika ei riipu amplitudista, kun heilahdus on pieni."
 
 ## Polish
-- none
 
 ## Checked
-- batch delta review: opened fy5-9-1280-0.png and fy5-9-360-0.png (Foucault pendulum photo (wire is a hairline in the original, alt wording acceptable)); photo loads, floats right at 1280, full column width at 360, no clipping or horizontal overflow, credit line under the caption, alt/caption in plain Finnish and consistent with the picture and the neighbouring paragraph.
+batch delta review: renamed title and chapter cross-references only (no numbers, symbols or figures changed); fy5-7 and fy5-14 top-390 captures opened, long new titles wrap cleanly at 390 px; references read as natural Finnish and match the new titles.

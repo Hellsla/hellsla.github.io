@@ -1,4 +1,4 @@
-# Aaltojen heijastuminen ja diffraktio
+# Aalto kohtaa esteen tai raon
 
 > **Miksi** aallot ylettyvät aallonmurtajan kapeasta aukosta myös sataman nurkkiin eivätkä kulje vain suoraan aukon kohdalle?
 
@@ -898,7 +898,7 @@
 ## Ydinajatus
 
 ### Aaltorintama ja säde
-Aaltoa on helpointa kuvata ylhäältä katsottuna. **Aaltorintama** on viiva, joka yhdistää aallon samassa vaiheessa olevat kohdat, esimerkiksi yhden aallonharjan. Kahden peräkkäisen harjan välinen etäisyys on aallonpituus $\lambda$ (luku *Mekaaninen aaltoliike*). **Säde** on nuoli, joka näyttää aallon etenemissuunnan, ja se on aina kohtisuorassa aaltorintamaa vastaan. Suoran rintaman aalto on tasoaalto, ja pistemäisestä lähteestä, kuten veteen pudonneesta kivestä, lähtee ympyräaalto, jonka säteet osoittavat lähteestä poispäin joka suuntaan.
+Aaltoa on helpointa kuvata ylhäältä katsottuna. **Aaltorintama** on viiva, joka yhdistää aallon samassa vaiheessa olevat kohdat, esimerkiksi yhden aallonharjan. Kahden peräkkäisen harjan välinen etäisyys on aallonpituus $\lambda$ (luku *Aaltojen synty ja eteneminen*). **Säde** on nuoli, joka näyttää aallon etenemissuunnan, ja se on aina kohtisuorassa aaltorintamaa vastaan. Suoran rintaman aalto on tasoaalto, ja pistemäisestä lähteestä, kuten veteen pudonneesta kivestä, lähtee ympyräaalto, jonka säteet osoittavat lähteestä poispäin joka suuntaan.
 
 <svg data-fig="rintamat" viewBox="0 0 600 340" role="img" aria-label="Kaavakuva kahdesta aallosta ylhäältä katsottuna. Vasemmalla tasoaalto: aaltorintamat ovat yhdensuuntaisia suoria, joiden väli on aallonpituus lambda, ja säteet ovat niitä vastaan kohtisuoria nuolia. Oikealla pistemäisestä lähteestä lähtevä ympyräaalto: aaltorintamat ovat samankeskisiä ympyröitä ja säteet lähtevät lähteestä joka suuntaan, kohtisuoraan rintamia vastaan." style="max-width:100%;font-size:24px">
   <rect x="12" y="44" width="276" height="236" rx="8" fill="#eef5f9"/>

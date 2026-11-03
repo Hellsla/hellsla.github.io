@@ -7,7 +7,7 @@
     "explain which force turns a car in a bend and where the feeling of being pressed outwards comes from."
   ],
   "prior": [
-    "Tangential speed $v = \\tfrac{2\\pi r}{T}$ and the changing direction of the velocity in circular motion (chapter *Circular motion and speed*)",
+    "Tangential speed $v = \\tfrac{2\\pi r}{T}$ and the changing direction of the velocity in circular motion (chapter *Moving in a circle: period and speed*)",
     "Drawing a free-body diagram and the equations of motion $\\Sigma F_x = m a_x$ and $\\Sigma F_y = m a_y$ (chapter *Free-body diagrams and the combined effect of forces*)",
     "Static friction is at most $\\mu_0 N$ (chapter *Weight, friction and the inclined plane*)"
   ],
@@ -30,7 +30,7 @@
         {
           "text": "The magnitude of the velocity stays the same, but its direction changes.",
           "correct": true,
-          "feedback": "Correct. As you learned in the chapter *Circular motion and speed*, the velocity is always along the tangent of the path, so its direction turns as the object goes round. This chapter finds out what the change of direction means for acceleration and forces."
+          "feedback": "Correct. As you learned in the chapter *Moving in a circle: period and speed*, the velocity is always along the tangent of the path, so its direction turns as the object goes round. This chapter finds out what the change of direction means for acceleration and forces."
         },
         {
           "text": "The velocity stays completely the same, because the speed of the object does not change.",

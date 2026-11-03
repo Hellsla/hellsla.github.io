@@ -1,4 +1,4 @@
-# Reflection and diffraction of waves
+# A wave meets an obstacle or a gap
 
 > **Why** do waves reach the corners of a harbour through the narrow gap in a breakwater, and do not travel only straight to the place opposite the gap?
 

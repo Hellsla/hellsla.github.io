@@ -7,8 +7,8 @@
     "selittämään Huygensin periaatteella, miksi aalto heijastuu ja taipuu raossa ja esteen takana."
   ],
   "prior": [
-    "Aallonpituus $\\lambda$ on kahden peräkkäisen aallonharjan etäisyys (luku *Mekaaninen aaltoliike*)",
-    "Aallon nopeus, taajuus ja aallonpituus liittyvät toisiinsa: $v = f\\lambda$ (luku *Mekaaninen aaltoliike*)"
+    "Aallonpituus $\\lambda$ on kahden peräkkäisen aallonharjan etäisyys (luku *Aaltojen synty ja eteneminen*)",
+    "Aallon nopeus, taajuus ja aallonpituus liittyvät toisiinsa: $v = f\\lambda$ (luku *Aaltojen synty ja eteneminen*)"
   ],
   "activities": [
     {
@@ -28,11 +28,11 @@
         {
           "text": "Aallonpituus puolittuu.",
           "correct": true,
-          "feedback": "Oikein. Yhtälössä $v = f\\lambda$ nopeus pysyy samana. Silloin $\\lambda = \\tfrac{v}{f}$ puolittuu, kun $f$ kaksinkertaistuu: $2{,}0\\,\\text{cm}$:stä $1{,}0\\,\\text{cm}$:iin (luku *Mekaaninen aaltoliike*). Aallonpituutta tarvitaan tänään, kun aallon kokoa verrataan raon leveyteen."
+          "feedback": "Oikein. Yhtälössä $v = f\\lambda$ nopeus pysyy samana. Silloin $\\lambda = \\tfrac{v}{f}$ puolittuu, kun $f$ kaksinkertaistuu: $2{,}0\\,\\text{cm}$:stä $1{,}0\\,\\text{cm}$:iin (luku *Aaltojen synty ja eteneminen*). Aallonpituutta tarvitaan tänään, kun aallon kokoa verrataan raon leveyteen."
         },
         {
           "text": "Aallonpituus kaksinkertaistuu.",
-          "feedback": "Taajuus kertoo, kuinka monta harjaa lähtee sekunnissa. Nyt harjoja lähtee kaksi kertaa tiheämmin, ja nopeus on sama. Siksi harjat ovat lähempänä toisiaan: $\\lambda = \\tfrac{v}{f}$ pienenee $2{,}0\\,\\text{cm}$:stä $1{,}0\\,\\text{cm}$:iin (luku *Mekaaninen aaltoliike*)."
+          "feedback": "Taajuus kertoo, kuinka monta harjaa lähtee sekunnissa. Nyt harjoja lähtee kaksi kertaa tiheämmin, ja nopeus on sama. Siksi harjat ovat lähempänä toisiaan: $\\lambda = \\tfrac{v}{f}$ pienenee $2{,}0\\,\\text{cm}$:stä $1{,}0\\,\\text{cm}$:iin (luku *Aaltojen synty ja eteneminen*)."
         },
         {
           "text": "Aallonpituus pysyy samana, koska aallon nopeus ei muutu.",
@@ -442,7 +442,7 @@
           "feedback": "Laskit aallonpituudeksi $\\tfrac{f}{v}$. Yhtälöstä $v = f\\lambda$ saadaan $\\lambda = \\tfrac{v}{f}$."
         }
       ],
-      "solution": "**Annettu:** $f = 6{,}0\\,\\text{Hz}$, $v = 0{,}18\\,\\text{m/s}$, raon leveys $b = 4{,}5\\,\\text{cm}$\n\n**Kysytty:** suhde $b/\\lambda$ eli raon leveys aallonpituuksina, ilman yksikköä\n\n**Periaate:** Aallon nopeus, taajuus ja aallonpituus liittyvät toisiinsa yhtälöllä $v = f\\lambda$ (luku *Mekaaninen aaltoliike*). Kun aallonpituus tunnetaan, raon leveyttä verrataan siihen. Diffraktion voimakkuus riippuu nimittäin suhteesta $b/\\lambda$.\n\n**Kaava:** $v = f\\lambda$, josta $\\lambda = \\dfrac{v}{f}$ ja $\\dfrac{b}{\\lambda} = \\dfrac{b f}{v}$\n\n**Muunnokset:** $b = 4{,}5\\,\\text{cm} = 0{,}045\\,\\text{m}$, jotta yksiköt supistuvat.\n\n**Sijoitus:** $\\lambda = \\dfrac{0{,}18\\,\\text{m/s}}{6{,}0\\,\\text{Hz}} = 0{,}030\\,\\text{m}$ ja $\\dfrac{b}{\\lambda} = \\dfrac{0{,}045\\,\\text{m}}{0{,}030\\,\\text{m}} = 1{,}5$\n\n**Vastaus:** $1{,}5$, kaksi merkitsevää numeroa kuten taajuudessa $6{,}0\\,\\text{Hz}$ ja raon leveydessä $4{,}5\\,\\text{cm}$.\n\n**Järkevyys:** Aallonpituus $3{,}0\\,\\text{cm}$ on aaltoaltaalle tavallinen. Rako on vain puolitoista aallonpituutta leveä. Siksi aalto leviää raon takana selvästi: simulaation mallissa leviämiskulma on silloin noin $24^\\circ$."
+      "solution": "**Annettu:** $f = 6{,}0\\,\\text{Hz}$, $v = 0{,}18\\,\\text{m/s}$, raon leveys $b = 4{,}5\\,\\text{cm}$\n\n**Kysytty:** suhde $b/\\lambda$ eli raon leveys aallonpituuksina, ilman yksikköä\n\n**Periaate:** Aallon nopeus, taajuus ja aallonpituus liittyvät toisiinsa yhtälöllä $v = f\\lambda$ (luku *Aaltojen synty ja eteneminen*). Kun aallonpituus tunnetaan, raon leveyttä verrataan siihen. Diffraktion voimakkuus riippuu nimittäin suhteesta $b/\\lambda$.\n\n**Kaava:** $v = f\\lambda$, josta $\\lambda = \\dfrac{v}{f}$ ja $\\dfrac{b}{\\lambda} = \\dfrac{b f}{v}$\n\n**Muunnokset:** $b = 4{,}5\\,\\text{cm} = 0{,}045\\,\\text{m}$, jotta yksiköt supistuvat.\n\n**Sijoitus:** $\\lambda = \\dfrac{0{,}18\\,\\text{m/s}}{6{,}0\\,\\text{Hz}} = 0{,}030\\,\\text{m}$ ja $\\dfrac{b}{\\lambda} = \\dfrac{0{,}045\\,\\text{m}}{0{,}030\\,\\text{m}} = 1{,}5$\n\n**Vastaus:** $1{,}5$, kaksi merkitsevää numeroa kuten taajuudessa $6{,}0\\,\\text{Hz}$ ja raon leveydessä $4{,}5\\,\\text{cm}$.\n\n**Järkevyys:** Aallonpituus $3{,}0\\,\\text{cm}$ on aaltoaltaalle tavallinen. Rako on vain puolitoista aallonpituutta leveä. Siksi aalto leviää raon takana selvästi: simulaation mallissa leviämiskulma on silloin noin $24^\\circ$."
     },
     {
       "id": "tarkistus-3",

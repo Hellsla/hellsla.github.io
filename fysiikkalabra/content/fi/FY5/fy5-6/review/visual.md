@@ -1,14 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 265063d56d065a87
+CONTENT-HASH: cb6948f3d741ca30
 
 ## Blocking
 
-(none)
-
 ## Polish
 
-- At 1280 the photo sits beside the geostationary paragraph while its caption belongs to the painottomuus paragraph just below; harmless.
-
 ## Checked
-
-batch delta review: ISS photo floats right at 1280, column at 360; credit present; caption consistent with the free-fall (painottomuus) text that follows; no overflow. Captures 360 and 1280 opened.
+batch delta review: diff is chapter-title and chapter-reference renames only (no figures, maths or numbers touched); opened top-390 (and contact context) for titles that wrap at 390 px; renamed title and cross-references read consistently across FY5.

@@ -1,10 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: e92a25f237bdd1db
+CONTENT-HASH: 7598b5f8e14f77df
 ## Blocking
-(none)
+
 ## Polish
-- hero — The picture displays the diffraction result; it poses the question rather than answers it, so no gating issue.
+
 ## Checked
-- Delta review: only the hero illustration and its alt text changed; the rest stays as previously approved.
-- Straight crests at sea, narrow gap, semicircular crests filling the basin and reaching the corners: matches the opening question and Pohdinta; no misleading physics; alt matches the picture.
-- Alt text is in short plain-Finnish sentences, matching the easy-language version; no text inside the picture; the 390 px capture shows the picture intact.
+batch delta review: new lesson title and renamed chapter cross-references (prior lists, feedback, theory text) read in context; the names match the new titles of the target lessons, wording and Finnish unchanged otherwise, no stale old titles left in the lesson files.

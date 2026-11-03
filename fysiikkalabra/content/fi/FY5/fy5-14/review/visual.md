@@ -1,14 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: bc091da8b391a28e
+CONTENT-HASH: 2a5a372104aa7adf
 
 ## Blocking
 
-(none)
-
 ## Polish
 
-- The caption states a fact the picture cannot show (siren pitch); it is the lesson's own statement and is correct, so left as is.
-
 ## Checked
-
-batch delta review: Ambulance photo floats right at 1280, column at 360; credit present; caption and alt agree (sharp ambulance, horizontally blurred background) and match the Doppler text. Captures 360 and 1280 opened.
+batch delta review: diff is chapter-title and chapter-reference renames only (no figures, maths or numbers touched); opened top-390 (and contact context) for titles that wrap at 390 px; renamed title and cross-references read consistently across FY5.

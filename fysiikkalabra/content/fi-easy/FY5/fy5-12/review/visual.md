@@ -1,11 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 7d16bc063e4ad421
+CONTENT-HASH: 3505267d41514d2b
 
 ## Blocking
-- none
 
 ## Polish
-- none
 
 ## Checked
-- batch delta review: opened fy5-12-1280-0.png and fy5-12-360-0.png (two-source ripple photo (portrait, fits 1280 float and 360 column)); photo loads, floats right at 1280, full column width at 360, no clipping or horizontal overflow, credit line under the caption, alt/caption in plain Finnish and consistent with the picture and the neighbouring paragraph.
+batch delta review: renamed title and chapter cross-references only (no numbers, symbols or figures changed); fy5-7 and fy5-14 top-390 captures opened, long new titles wrap cleanly at 390 px; references read as natural Finnish and match the new titles.

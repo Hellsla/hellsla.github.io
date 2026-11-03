@@ -1,4 +1,4 @@
-# Gravitaation alainen ympyräliike
+# Satelliitit ja planeetat ympyräradalla
 
 > **Miksi** Kansainvälinen avaruusasema ISS ei putoa Maahan, ja miksi astronautit leijuvat sen sisällä?
 
@@ -459,7 +459,7 @@
 </svg>
 
 ## Ydinajatus
-Kappaletta, joka kiertää toista kappaletta gravitaation varassa, kutsutaan satelliitiksi. Kuu on Maan luonnollinen satelliitti, ISS ja sääsatelliitit ovat ihmisen rakentamia. Rataa, jota pitkin satelliitti kiertää, kutsutaan kiertoradaksi. Satelliittiin vaikuttaa avaruudessa käytännössä vain yksi voima: Maan gravitaatiovoima, joka osoittaa kohti Maan keskipistettä. Koska se on ainoa voima, se on myös kokonaisvoima. Luvussa *Tasainen ympyräliike ja normaalikiihtyvyys* todettiin, että tasaisessa ympyräliikkeessä kokonaisvoima osoittaa radan keskipisteeseen ja antaa kappaleelle normaalikiihtyvyyden. Ympyräradalla gravitaatiovoima tekee juuri tämän: se on kohtisuorassa nopeuteen nähden, joten se ei muuta vauhtia vaan kääntää nopeuden suuntaa koko ajan.
+Kappaletta, joka kiertää toista kappaletta gravitaation varassa, kutsutaan satelliitiksi. Kuu on Maan luonnollinen satelliitti, ISS ja sääsatelliitit ovat ihmisen rakentamia. Rataa, jota pitkin satelliitti kiertää, kutsutaan kiertoradaksi. Satelliittiin vaikuttaa avaruudessa käytännössä vain yksi voima: Maan gravitaatiovoima, joka osoittaa kohti Maan keskipistettä. Koska se on ainoa voima, se on myös kokonaisvoima. Luvussa *Normaalikiihtyvyys ja ympyräliikkeen liikeyhtälö* todettiin, että tasaisessa ympyräliikkeessä kokonaisvoima osoittaa radan keskipisteeseen ja antaa kappaleelle normaalikiihtyvyyden. Ympyräradalla gravitaatiovoima tekee juuri tämän: se on kohtisuorassa nopeuteen nähden, joten se ei muuta vauhtia vaan kääntää nopeuden suuntaa koko ajan.
 
 <svg data-fig="orbit" viewBox="0 0 600 360" role="img" aria-label="Kaavakuva, ei mittakaavassa: satelliitti kiertää Maata ympyrärataa, joka on piirretty katkoviivalla. Satelliitti on radan ylimmässä kohdassa. Sininen nopeusnuoli v osoittaa radan tangentin suuntaan oikealle. Punainen gravitaatiovoiman nuoli F osoittaa kohti Maan keskipistettä, ja sen vieressä oranssi normaalikiihtyvyyden nuoli a n osoittaa samaan suuntaan. Ohut katkoviiva jatkaa suoraan oikealle: sitä pitkin satelliitti liikkuisi ilman gravitaatiota." style="max-width:100%;font-size:24px">
   <defs><radialGradient id="fy56o-earth" cx="0.35" cy="0.35" r="0.8"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></radialGradient></defs>
@@ -596,7 +596,7 @@ Ratanopeus riippuu vain keskuskappaleen massasta $M$ ja radan säteestä $r$, ei
   <foreignObject x="235" y="95" width="150" height="58" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2">$v = \sqrt{\dfrac{\gamma M}{r}}$</div></foreignObject>
 </svg>
 
-Yhden kierroksen aikana satelliitti kulkee ympyrän kehän $2\pi r$, joten kiertoaika saadaan luvun *Tasainen ympyräliike ja normaalikiihtyvyys* yhteydestä $v = \tfrac{2\pi r}{T}$:
+Yhden kierroksen aikana satelliitti kulkee ympyrän kehän $2\pi r$, joten kiertoaika saadaan luvun *Normaalikiihtyvyys ja ympyräliikkeen liikeyhtälö* yhteydestä $v = \tfrac{2\pi r}{T}$:
 ```latex
 T = \frac{2\pi r}{v}
 ```

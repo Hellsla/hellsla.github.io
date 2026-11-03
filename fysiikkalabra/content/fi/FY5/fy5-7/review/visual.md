@@ -1,14 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: aaf1dfe5badc4d28
+CONTENT-HASH: 1987b6bd42085e02
 
 ## Blocking
 
-(none)
-
 ## Polish
 
-(none)
-
 ## Checked
-
-batch delta review: Swing photo floats right at 1280 beside Jaksonaika ja taajuus, column at 360; credit present; alt and caption natural and consistent with the picture. Captures 360 and 1280 opened.
+batch delta review: diff is chapter-title and chapter-reference renames only (no figures, maths or numbers touched); opened top-390 (and contact context) for titles that wrap at 390 px; renamed title and cross-references read consistently across FY5.

@@ -1,4 +1,4 @@
-# Aaltojen heijastuminen ja diffraktio
+# Aalto kohtaa esteen tai raon
 
 > **Miksi** aallot ylettyvät aallonmurtajan kapeasta aukosta myös sataman nurkkiin? Miksi ne eivät kulje vain suoraan aukon kohdalle?
 
@@ -898,7 +898,7 @@
 ## Ydinajatus
 
 ### Aaltorintama ja säde
-Aaltoa on helpointa kuvata ylhäältä katsottuna. **Aaltorintama** on viiva, joka yhdistää aallon samassa vaiheessa olevat kohdat. Samassa vaiheessa olevat kohdat liikkuvat samaan aikaan samalla tavalla. Esimerkiksi yksi aallonharja on aaltorintama. Kahden peräkkäisen harjan välinen etäisyys on aallonpituus $\lambda$ (luku *Mekaaninen aaltoliike*). **Säde** on nuoli, joka näyttää aallon etenemissuunnan. Säde on aina kohtisuorassa aaltorintamaa vastaan. Suoran rintaman aalto on tasoaalto. Pistemäisestä lähteestä, kuten veteen pudonneesta kivestä, lähtee ympyräaalto. Sen säteet osoittavat lähteestä poispäin joka suuntaan.
+Aaltoa on helpointa kuvata ylhäältä katsottuna. **Aaltorintama** on viiva, joka yhdistää aallon samassa vaiheessa olevat kohdat. Samassa vaiheessa olevat kohdat liikkuvat samaan aikaan samalla tavalla. Esimerkiksi yksi aallonharja on aaltorintama. Kahden peräkkäisen harjan välinen etäisyys on aallonpituus $\lambda$ (luku *Aaltojen synty ja eteneminen*). **Säde** on nuoli, joka näyttää aallon etenemissuunnan. Säde on aina kohtisuorassa aaltorintamaa vastaan. Suoran rintaman aalto on tasoaalto. Pistemäisestä lähteestä, kuten veteen pudonneesta kivestä, lähtee ympyräaalto. Sen säteet osoittavat lähteestä poispäin joka suuntaan.
 
 <svg data-fig="rintamat" viewBox="0 0 600 340" role="img" aria-label="Kaavakuva kahdesta aallosta ylhäältä katsottuna. Vasemmalla on tasoaalto. Sen aaltorintamat ovat yhdensuuntaisia suoria. Suorien väli on aallonpituus lambda. Säteet ovat nuolia, jotka ovat kohtisuorassa rintamia vastaan. Oikealla on ympyräaalto, joka lähtee pistemäisestä lähteestä. Sen aaltorintamat ovat samankeskisiä ympyröitä. Säteet lähtevät lähteestä joka suuntaan, ja ne ovat kohtisuorassa rintamia vastaan." style="max-width:100%;font-size:24px">
   <rect x="12" y="44" width="276" height="236" rx="8" fill="#eef5f9"/>

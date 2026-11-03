@@ -1,12 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: e8e8246b7986df8e
-
+CONTENT-HASH: 68ed6284989378b6
 ## Blocking
-(none)
 
 ## Polish
-- "tasa-aineinen" and "pallosymmetrinen" are not opened in the lesson text (pistemäinen is); a short gloss would help an S2 reader. Optional.
 
 ## Checked
-- Sentences split, one idea each; no step, feedback, hint, criterion or model answer dropped; learn goals and prior items as in the Finnish.
-- Captures opened: contact-1, theory-1280-2, sim at 390 in contact-1; layout matches the Finnish; check_layout fy5-5 --lang fi-easy --width 345: OK.
+batch delta review: new lesson title and renamed chapter cross-references (prior lists, feedback, theory text) read in context; the names match the new titles of the target lessons, wording and Finnish unchanged otherwise, no stale old titles left in the lesson files.

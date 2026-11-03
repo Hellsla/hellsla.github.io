@@ -1,4 +1,4 @@
-# Tasainen ympyräliike ja normaalikiihtyvyys
+# Normaalikiihtyvyys ja ympyräliikkeen liikeyhtälö
 
 > **Miksi** auto suistuu liukkaassa kaarteessa ulos tieltä?
 
@@ -90,7 +90,7 @@
 ## Ydinajatus
 
 ### Nopeuden suunta muuttuu, joten kappale kiihtyy
-Luvussa *Ympyräliike ja ratanopeus* opit, että tasaisessa ympyräliikkeessä kappale kiertää ympyrärataa vakiovauhdilla. Nopeuden suuruus eli ratanopeus $v$ pysyy samana, mutta nopeuden suunta muuttuu koko ajan: nopeus $\overline{v}$ on aina radan tangentin suuntainen. Nopeus on vektori, joten suunnan muutoskin on nopeuden muutos. Kun nopeus muuttuu, kappaleella on kiihtyvyys. Tasaisessa ympyräliikkeessä kappale siis kiihtyy, vaikka sen vauhti ei muutu.
+Luvussa *Ympyrärata: jaksonaika ja ratanopeus* opit, että tasaisessa ympyräliikkeessä kappale kiertää ympyrärataa vakiovauhdilla. Nopeuden suuruus eli ratanopeus $v$ pysyy samana, mutta nopeuden suunta muuttuu koko ajan: nopeus $\overline{v}$ on aina radan tangentin suuntainen. Nopeus on vektori, joten suunnan muutoskin on nopeuden muutos. Kun nopeus muuttuu, kappaleella on kiihtyvyys. Tasaisessa ympyräliikkeessä kappale siis kiihtyy, vaikka sen vauhti ei muutu.
 
 <svg data-fig="muutos" viewBox="0 0 600 340" role="img" aria-label="Kaksi kuvaa. Vasemmalla kappale kiertää ympyrärataa vastapäivään tasaisella vauhdilla. Kahdessa kohdassa radan yläosassa sininen nopeusnuoli v 1 ja v 2 on radan tangentin suuntainen; nuolet ovat yhtä pitkiä mutta eri suuntiin. Radan ylimmässä kohdassa näiden välissä oranssi kiihtyvyysnuoli a n osoittaa suoraan alas radan keskipisteeseen. Oikealla samat nopeusnuolet on piirretty samasta pisteestä. Nuolten kärkien välinen nuoli, nopeuden muutos delta v, osoittaa suoraan alas eli samaan suuntaan kuin kiihtyvyys, kohti radan keskipistettä. Nopeusnuolet ovat molemmissa kuvissa yhtä pitkiä, samassa mittakaavassa." style="max-width:100%;font-size:24px">
   <foreignObject x="65" y="7.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{kappaleen rata}$</div></foreignObject>

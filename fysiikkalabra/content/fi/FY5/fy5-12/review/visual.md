@@ -1,14 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 47d17d0719dfcacc
+CONTENT-HASH: 0888300c97549f61
 
 ## Blocking
 
-(none)
-
 ## Polish
 
-- The photo is dark and small at 1280; the pattern is visible but faint.
-
 ## Checked
-
-batch delta review: Two-source ripple photo (portrait, small) floats right at 1280, column at 360; credit present; caption, including the note that the bright blob is a lamp reflection, matches the picture and the interference text. Captures 360 and 1280 opened.
+batch delta review: diff is chapter-title and chapter-reference renames only (no figures, maths or numbers touched); opened top-390 (and contact context) for titles that wrap at 390 px; renamed title and cross-references read consistently across FY5.

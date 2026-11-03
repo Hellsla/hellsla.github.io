@@ -1,4 +1,4 @@
-# Jaksollinen liike
+# Värähtelyn suureet: jaksonaika, taajuus ja amplitudi
 
 > **Miksi** keinuvan lapsen liikkeen voi kertoa muutamalla luvulla, vaikka keinu on joka hetki eri kohdassa?
 
@@ -151,7 +151,7 @@
 </svg>
 
 ## Ydinajatus
-Liike on **jaksollista**, kun se toistuu samanlaisena yhtä pitkin väliajoin. Tasaisesti pyörivä karuselli (luku *Ympyräliike ja ratanopeus*), heilurikellon heiluri, keinu ja jousen varassa pomppiva punnus liikkuvat jaksollisesti. Kolme viimeistä ovat lisäksi **värähtelyliikkeessä**: kappale liikkuu edestakaisin **tasapainoaseman** molemmin puolin. Tasapainoasema on asema, jossa siihen paikalleen asetettu kappale pysyy levossa. Karusellin lapsi ei värähtele, vaikka liike on jaksollista, koska hän kiertää eikä liiku edestakaisin saman pisteen molemmin puolin.
+Liike on **jaksollista**, kun se toistuu samanlaisena yhtä pitkin väliajoin. Tasaisesti pyörivä karuselli (luku *Ympyrärata: jaksonaika ja ratanopeus*), heilurikellon heiluri, keinu ja jousen varassa pomppiva punnus liikkuvat jaksollisesti. Kolme viimeistä ovat lisäksi **värähtelyliikkeessä**: kappale liikkuu edestakaisin **tasapainoaseman** molemmin puolin. Tasapainoasema on asema, jossa siihen paikalleen asetettu kappale pysyy levossa. Karusellin lapsi ei värähtele, vaikka liike on jaksollista, koska hän kiertää eikä liiku edestakaisin saman pisteen molemmin puolin.
 
 Värähtelijän paikkaa kuvataan **poikkeamalla** $x$ eli kappaleen etäisyydellä tasapainoasemasta etumerkin kanssa. Tasapainoasemassa $x = 0$, ja toinen suunta valitaan positiiviseksi, jousen punnukselle esimerkiksi ylöspäin. Suurin poikkeama on **amplitudi** $A$. Se mitataan tasapainoasemasta ääriasemaan, ei ääriasemasta toiseen: ylimmän ja alimman aseman välinen etäisyys on $2A$. Tässä luvussa oletetaan, että värähtely ei vaimene, joten amplitudi pysyy samana.
 
@@ -215,7 +215,7 @@ Värähtelijän paikkaa kuvataan **poikkeamalla** $x$ eli kappaleen etäisyydell
 <figure class="unit-photo"><img src="pics/fy5/girl-on-swing.webp" alt="Lapsi keinuu puisessa keinussa vihreällä niityllä. Taustalla on korkeita kalliovuoria."><figcaption>Keinu Dolomiiteilla Italiassa. Keinuminen on jaksollista liikettä: keinu palaa samaan kohtaan lähes yhtä pitkin väliajoin.</figcaption></figure>
 
 ### Jaksonaika ja taajuus
-**Jaksonaika** $T$ on yhden täyden värähdyksen kesto: aika, jonka kuluttua kappale on taas samassa paikassa ja liikkuu samaan suuntaan. Kun punnus lähtee tasapainoasemasta ylöspäin, se käy ylimmässä asemassa, palaa tasapainoasemaan, käy alimmassa asemassa ja palaa taas tasapainoasemaan. Tämä on yksi värähdys. **Taajuus** $f$ on täysien värähdysten määrä aikayksikössä. Jaksonaika ja taajuus vastaavat kierrosaikaa ja pyörimistaajuutta luvussa *Ympyräliike ja ratanopeus*: yksi värähdys vastaa yhtä kierrosta. Jaksonaika mitataan tarkimmin usean värähdyksen kestosta: jos $n$ värähdystä kestää ajan $t_n$, jaksonaika on $T = \tfrac{t_n}{n}$.
+**Jaksonaika** $T$ on yhden täyden värähdyksen kesto: aika, jonka kuluttua kappale on taas samassa paikassa ja liikkuu samaan suuntaan. Kun punnus lähtee tasapainoasemasta ylöspäin, se käy ylimmässä asemassa, palaa tasapainoasemaan, käy alimmassa asemassa ja palaa taas tasapainoasemaan. Tämä on yksi värähdys. **Taajuus** $f$ on täysien värähdysten määrä aikayksikössä. Jaksonaika ja taajuus vastaavat kierrosaikaa ja pyörimistaajuutta luvussa *Ympyrärata: jaksonaika ja ratanopeus*: yksi värähdys vastaa yhtä kierrosta. Jaksonaika mitataan tarkimmin usean värähdyksen kestosta: jos $n$ värähdystä kestää ajan $t_n$, jaksonaika on $T = \tfrac{t_n}{n}$.
 
 ### Värähtely kuvaajana
 Kun poikkeama piirretään ajan funktiona, saadaan $(t, x)$-kuvaaja (luku *Paikka, nopeus ja tasainen liike kuvaajina*). Jaksollisen liikkeen kuvaaja toistuu samanlaisena jaksonajan välein. Jaksonaika luetaan kahden peräkkäisen huipun välistä tai kahden sellaisen tasapainoaseman ohituksen välistä, joissa kappale liikkuu samaan suuntaan. Peräkkäiset ohitukset ovat vain puolen jaksonajan päässä toisistaan, koska kappale ohittaa tasapainoaseman kerran mennessään ylös ja kerran tullessaan alas. Amplitudi luetaan tasapainoaseman tasolta $x = 0$ huipun tasolle.

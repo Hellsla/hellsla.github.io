@@ -1,11 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 93ed34c979a91f1b
+CONTENT-HASH: c8040b0ec5917f54
 
 ## Blocking
-- none
 
 ## Polish
-- none
 
 ## Checked
-- batch delta review: opened fy5-8-1280-0.png and fy5-8-360-0.png (spring rider photo); photo loads, floats right at 1280, full column width at 360, no clipping or horizontal overflow, credit line under the caption, alt/caption in plain Finnish and consistent with the picture and the neighbouring paragraph.
+batch delta review: renamed title and chapter cross-references only (no numbers, symbols or figures changed); fy5-7 and fy5-14 top-390 captures opened, long new titles wrap cleanly at 390 px; references read as natural Finnish and match the new titles.

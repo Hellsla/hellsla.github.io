@@ -1,14 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 9995aaf7bc11eb16
+CONTENT-HASH: a12ff6f500d8d885
 
 ## Blocking
 
-(none)
-
 ## Polish
 
-(none)
-
 ## Checked
-
-batch delta review: Earthset photo floats right at 1280 (black sky, no clipping), full column width at 360; credit present; caption factual and consistent with the gravitation paragraph (equal mutual force). Captures 360 and 1280 opened.
+batch delta review: diff is chapter-title and chapter-reference renames only (no figures, maths or numbers touched); opened top-390 (and contact context) for titles that wrap at 390 px; renamed title and cross-references read consistently across FY5.

@@ -1,14 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 00620148f9629011
+CONTENT-HASH: a4b2f711d8d9b2c0
 
 ## Blocking
 
-(none)
-
 ## Polish
 
-- The photo sits after the f/T paragraph, a little before the v-formula it illustrates; the caption could say so, but it reads fine.
-
 ## Checked
-
-batch delta review: Photo floats right beside the text at 1280 and sits in the column at 360; credit line present; caption and alt match the red hand-turned carousel and the nearby v = 2πrf paragraph. Captures 360 and 1280 opened.
+batch delta review: diff is chapter-title and chapter-reference renames only (no figures, maths or numbers touched); opened top-390 (and contact context) for titles that wrap at 390 px; renamed title and cross-references read consistently across FY5.

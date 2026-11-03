@@ -1,11 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 46344b610f48fc64
+CONTENT-HASH: 68ed6284989378b6
 
 ## Blocking
-- none
 
 ## Polish
-- none
 
 ## Checked
-- batch delta review: opened fy5-5-1280-0.png and fy5-5-360-0.png (Artemis II earthset photo); photo loads, floats right at 1280, full column width at 360, no clipping or horizontal overflow, credit line under the caption, alt/caption in plain Finnish and consistent with the picture and the neighbouring paragraph.
+batch delta review: renamed title and chapter cross-references only (no numbers, symbols or figures changed); fy5-7 and fy5-14 top-390 captures opened, long new titles wrap cleanly at 390 px; references read as natural Finnish and match the new titles.

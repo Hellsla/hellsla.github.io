@@ -1,17 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: e4cde2b05daf8db2
+CONTENT-HASH: 73bbab7ce4af63e8
 
 ## Blocking
 (none)
 
 ## Polish
-- The diving-board mass is $m_\text{p}$ ("p" = plank in the sim, board in the task): harmless, consistent within the task.
-- "Sum of the moments" is used, as in the Finnish; fy5-1 says "net moment". Same quantity, acceptable.
+(none)
 
 ## Checked
-- Sim canvas labels x_cm and F_b now agree with readout and text (re-captured).
-- All numbers, formulas, latex blocks (5), options, feedback, hints, mistakes, model answers and criteria compared with the Finnish by script (numbers identical, decimal point in en) and by reading: nothing dropped.
-- Subscripts: bolt, d, cm, b, pers, kb match between figures.json, figure descriptions, text and solutions.
-- Terms match fy5-1: lever arm, point of application, anticlockwise, reference point, free-body diagram.
-- Fixed: experiment table headings left Finnish (`laatikko`, `ei`/`kaatuu`, `kaatuuko`) are now box / no / topples / topples?.
-- Delta (drawn force diagrams in solutions of siirto and tarkistus-2): figures.json en has no Finnish left (seesaw, diving board, subscripts l->c, p->bolt, h->d); diagram labels F_bolt, F_d, F_c, F, G, N match the symbols in the en solutions (F_c = mg in the text); arrows and distances 1.50 m / 1.20 m match the Finnish figure and the calculation (294 N).
+batch delta review: chapter titles renamed in the title, meta and every chapter reference; every reference names the current title of the right chapter (no stale old title left in content/en/FY5); new opening illustration and its caption (painter on the plank between the trestles, tin on the overhang): the toppling question still stands, since the painter's weight sits between the supports; no formula, number, option or feedback physics changed; every changed choice keeps its single correct option.
