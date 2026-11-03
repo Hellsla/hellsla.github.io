@@ -1,19 +1,21 @@
-VERDICT: FAIL
-CONTENT-HASH: 8fc88586414b8683
+VERDICT: PASS
+CONTENT-HASH: e68558154b2428a0
 
 ## Blocking
-- inquiry.json (koe-1 and koe-2, `names`) — the labels "virta", "kulma" and "magneetti" are Finnish and appear in "Initial state", "Kept constant" and "Varied" ("virta = 0 A, kulma = 90°, magneetti: magnet A ... Varied: virta", capture #39). The sim's length menu also shows "5,0 cm" with a decimal comma. — translate to "current", "angle", "magnet"; use a decimal point in the English sim.
 
 ## Polish
-- inquiry.json — "deduce the direction of the force" is a learning goal, but the student acts on it nowhere: the experiments change only the sign of the reading, the right-hand rule appears in the theory and in the exit ticket only, and no exercise asks for a direction. Add one item (a check or an exercise) where the student determines the direction.
-- The force between wires (a goal of the slot, and a typical misconception) has no prediction or investigation; the student meets it as text, then in `siirto`. Make attract or repel a short prediction choice before the theory, or say that this goal rests on `siirto` and the exercises.
-- Two different rules are both called "the right-hand rule" (the field of a wire in fy7-3: fingers curl; the force here: thumb, fingers, palm). Name this one the palm rule or "the right-hand rule for force", so that the student does not mix them.
-- Workload: five topics plus two predictions, two experiments and a B determination is more than one lesson. Mark `ennuste-2` and `koe-2` as secondary.
+- inquiry.json koe-1 / koe-2 values — the setup line at 390 px reads "magnet: magnet A, wire in the field: 5.0 cm\n. Kept constant": the math span for 5.0 cm leaves a stray line break before the full stop, and "magnet: magnet A" is tautological. Make the value text "A" or "Magnet A" with the name "magnet" lower-case, or end the span with no trailing gap.
+- Simulation panel — four collapsibles ("Assumptions of the model and explanation", "How to use", "Assumptions of the model", "How the calculation works"); the first and third overlap.
+- lesson.md "The electric motor" — the loop "keeps moving because of its inertia" through the dead point is correct but is the one place a student may ask why the motor does not stall; one clause on the many-coil real motor already covers it, so no change needed unless space allows.
 
 ## Checked
-- The sim's numbers agree with the text and the feedback (2.45, 1.22 g; B = 0.080 T); the predictions can be refuted and the feedback repairs the misconceptions.
-- The balance is a good choice: B is hidden, so the student obtains it from a reading.
-- Motor figure (forces, commutator) and the force directions in the swing and wires figures are correct; legible at 390 px.
-- Worked example: seven stages, one step each; units and plausibility are checked; 7.0 N is correct.
-- The checks (commutator, oblique wire, loudspeaker) test concepts; the explanation criteria are observable.
-- The hash was the same at the start and the end.
+- Round-1 blocker: experiment names, units and values in koe-1 and koe-2 are English ("current", "angle", "magnet A", "wire in the field"); no Finnish remains. Internal keys (magneetti, lukema) are not shown to the student.
+- Setup line wraps in the 390 px capture, nothing clipped.
+- Opening question (how can a magnet move a copper wire) is answered by the key idea and the reflection, and not disclosed before the student commits.
+- Predictions are arguable and can be refuted by the current balance: reading changes sign with the current, halves at 30 degrees.
+- Each wrong option's feedback repairs its misconception (no contact means no force, cosine versus sine, angle proportionality) and cites the model values after commitment.
+- Experiment 1 and 2 lock the other variables; the conclusion asks for F = delta m g and B = F/(Il), a calculation the student does from their own table.
+- Worked example is staged in seven steps, a loudspeaker coil, distinct from the exercises; solutions give principle and unit conversions.
+- Check-1 commutator distractors are misconception-based; tarkistus-2 mistakes (cosine, perpendicular value) are real.
+- Exit ticket tests F = IlB and the right-hand direction.
+- Figures (swing, motor, speaker, angle, wires) are present beside their text and legible at 390 px; workload fits one lesson.
