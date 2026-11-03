@@ -1,9 +1,9 @@
 VERDICT: DONE
 
-Draft of *LEDin valo ja Planckin vakion mittaaminen*; check_lesson.py all ok at 360/768/1280 px.
-
-- `lesson.md`: Ydinajatus (bands, energy gap, electron–hole photon hf ≈ E_g, threshold voltage, LED / laser diode / lamp spectra), Kaava: Kynnysjännite ja fotonin energia (eU_k ≈ hf = hc/λ, U_k from the I–U graph, h = ek from the (f, U_k) fit, intercept explained), staged example (h from two points of a fitted line), two misconceptions, summary.
-- `figures.py`: hero, vyot, spektrit, iu, sovitus, task-only ryhma (catalog rebuilt). Lint warns only on real spectral colours (FY8 convention).
-- `inquiry.json`: hook, retrieval, two predictions, sim, koe-1 (six LEDs at 2,20 V), koe-2 (red LED I–U, U_k by extrapolation), conclusion, interpret (six U_k, Graphical Analysis Pro fit → h), reflect, example, Etsi virhe (intercept), transfer (IR LED λ), three checks (one figure task), exit.
-- `assets/sims/fy8/fy8-6/sim.js` + `lang/fi.json` sims.fy8-6 + `tests/sims/fy8-6.json` (30 assertions): LED circuit with meters and a (U, I) graph, not animated (no speed control).
-- `exercises/`, `answers.py`, `lesson-answers.py`, `exit-ticket.json`, `sim-spec.md`; glossary: valodiodi, laserdiodi, kynnysjännite, energia-aukko.
+Round 1 fixes.
+- lesson.md: "sama luku" -> "likimain sama luku"; spectrum figure alt text: laser line about 1 nm, marked suuntaa-antava (same in figures.py docstring, alt and description).
+- inquiry.json: tarkistus-2 solution axes corrected (horizontal gridline spacing Hz, vertical V); hook no longer gives away brightness vs colour; ennuste-2 feedback uses the energy-conservation wording instead of photon creation; siirto no longer ties 940 nm to a 0,1 V offset.
+- exit-ticket.json: "Arvioi sen kynnysjännite", "Lasketaan ensin hc ...".
+- lesson-answers.py: stale comment corrected (0,011 / 0,188 / 1,98 mA).
+- exercises/solutions.md: L1-03 Järkevyys units added; L2-02 unit equation as in L1-01.
+check_lesson.py fy8-6: all ok.

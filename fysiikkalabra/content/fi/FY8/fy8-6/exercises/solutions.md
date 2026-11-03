@@ -26,7 +26,7 @@
 **Muunnokset:** $\lambda = 650\,\text{nm} = 650 \cdot 10^{-9}\,\text{m}$
 **Sijoitus:** $f = \dfrac{2{,}998 \cdot 10^8\,\text{m/s}}{650 \cdot 10^{-9}\,\text{m}} = 4{,}612 \cdot 10^{14}\,\tfrac{1}{\text{s}}$
 **Vastaus:** $4{,}61 \cdot 10^{14}\,\text{Hz}$, kolme merkitsevää numeroa kuten aallonpituudessa $650\,\text{nm}$.
-**Järkevyys:** Näkyvän valon taajuudet ovat noin $4 \cdot 10^{14}$–$8 \cdot 10^{14}\,\text{Hz}$, ja punainen valo on alueen matalataajuisessa päässä. Arvio: $3 \cdot 10^8 : (6{,}5 \cdot 10^{-7}) \approx 4{,}6 \cdot 10^{14}$.
+**Järkevyys:** Näkyvän valon taajuudet ovat noin $4 \cdot 10^{14}\,\text{Hz}$–$8 \cdot 10^{14}\,\text{Hz}$, ja punainen valo on alueen matalataajuisessa päässä. Arvio: $3 \cdot 10^8\,\text{m/s} : (6{,}5 \cdot 10^{-7}\,\text{m}) \approx 4{,}6 \cdot 10^{14}\,\text{Hz}$.
 
 ## fy8-6-L1-04
 **Annettu:** energia-aukko $E_\text{g} = 1{,}42\,\text{eV}$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^8\,\text{m/s}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
@@ -63,7 +63,7 @@
 **Kysytty:** Planckin vakion arvo $h$ yhden LEDin mittauksesta, yksikössä $\text{J}\,\text{s}$
 **Periaate:** Oletetaan, että kynnysjännitteellä elektronin saama energia $eU_\text{k}$ on täsmälleen yhden fotonin energia $\tfrac{hc}{\lambda}$. Yhtälöstä voi ratkaista Planckin vakion.
 **Kaava:** $eU_\text{k} = \dfrac{hc}{\lambda}$, joten $h = \dfrac{eU_\text{k}\lambda}{c}$
-**Muunnokset:** $\lambda = 605\,\text{nm} = 605 \cdot 10^{-9}\,\text{m}$; $\text{C} \cdot \text{V} = \text{J}$
+**Muunnokset:** $\lambda = 605\,\text{nm} = 605 \cdot 10^{-9}\,\text{m}$; $1\,\text{C} \cdot 1\,\text{V} = 1\,\text{J}$
 **Sijoitus:** $eU_\text{k} = 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 1{,}95\,\text{V} = 3{,}1239 \cdot 10^{-19}\,\text{J}$ ja $eU_\text{k}\lambda = 3{,}1239 \cdot 10^{-19}\,\text{J} \cdot 605 \cdot 10^{-9}\,\text{m} = 1{,}8900 \cdot 10^{-25}\,\text{J}\,\text{m}$, joten $h = \dfrac{1{,}8900 \cdot 10^{-25}\,\text{J}\,\text{m}}{2{,}998 \cdot 10^8\,\text{m/s}} = 6{,}304 \cdot 10^{-34}\,\text{J}\,\text{s}$
 **Vastaus:** $6{,}30 \cdot 10^{-34}\,\text{J}\,\text{s}$, kolme merkitsevää numeroa kuten jännitteessä ja aallonpituudessa.
 **Järkevyys:** Tulos on oikeaa suuruusluokkaa, mutta $(6{,}304 - 6{,}626) : 6{,}626 \approx -4{,}9\,\%$ hyväksyttyä arvoa pienempi. Ero johtuu siitä, että mitattu kynnysjännite on hieman pienempi kuin $\tfrac{hf}{e}$. Siksi Planckin vakio määritetään monen LEDin suoran kulmakertoimesta, johon tämä lähes vakiosuuruinen ero ei vaikuta.

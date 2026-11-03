@@ -1,7 +1,7 @@
 [
   {
-    "q": "Violetin laserdiodin aallonpituus on $405\\,\\text{nm}$. Arvioi, kuinka suuri jännite siihen on vähintään kytkettävä, jotta se alkaa säteillä.",
-    "a": "Kynnysjännitteellä $eU_\\text{k} \\approx \\tfrac{hc}{\\lambda}$, joten $U_\\text{k} \\approx \\tfrac{hc}{e\\lambda}$. Tulo $hc = 1{,}9865 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m}$ ja $e\\lambda = 1{,}602 \\cdot 10^{-19}\\,\\text{C} \\cdot 405 \\cdot 10^{-9}\\,\\text{m} = 6{,}488 \\cdot 10^{-26}\\,\\text{C}\\,\\text{m}$, joten $U_\\text{k} \\approx 1{,}9865 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m} : 6{,}488 \\cdot 10^{-26}\\,\\text{C}\\,\\text{m} = 3{,}06\\,\\text{V}$. Jokaisen elektronin on saatava jännitelähteeltä likimain yhden fotonin energia $3{,}06\\,\\text{eV}$; mitattu kynnysjännite on yleensä hieman tätä pienempi."
+    "q": "Violetin laserdiodin aallonpituus on $405\\,\\text{nm}$. Arvioi sen kynnysjännite.",
+    "a": "Kynnysjännitteellä $eU_\\text{k} \\approx \\tfrac{hc}{\\lambda}$, joten $U_\\text{k} \\approx \\tfrac{hc}{e\\lambda}$. Lasketaan ensin $hc = 1{,}9865 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m}$ ja $e\\lambda = 1{,}602 \\cdot 10^{-19}\\,\\text{C} \\cdot 405 \\cdot 10^{-9}\\,\\text{m} = 6{,}488 \\cdot 10^{-26}\\,\\text{C}\\,\\text{m}$, joten $U_\\text{k} \\approx 1{,}9865 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m} : 6{,}488 \\cdot 10^{-26}\\,\\text{C}\\,\\text{m} = 3{,}06\\,\\text{V}$. Jokaisen elektronin on saatava jännitelähteeltä likimain yhden fotonin energia $3{,}06\\,\\text{eV}$; mitattu kynnysjännite on yleensä hieman tätä pienempi."
   },
   {
     "q": "Planckin vakion mittauksessa tarvitaan valonlähteen aallonpituus. Miksi laserdiodin aallonpituus tunnetaan tarkemmin kuin LEDin?",

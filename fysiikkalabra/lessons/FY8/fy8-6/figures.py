@@ -84,11 +84,11 @@ def vyot():
 
 def spektrit():
     """Ydinajatus: the spectra of an incandescent lamp, a red LED and a red laser diode, each scaled to its own
-    maximum; the LED's band is about 20 nm wide, the laser diode's line about 2 nm."""
+    maximum; the LED's band is about 20 nm wide, the laser diode's line about 1 nm."""
     f = Fig("fy86-spektrit", 360, "Kuvaaja: kolmen valonlähteen spektri samalla aallonpituusakselilla 380–720 nanometriä, pystyakselilla "
             "suhteellinen intensiteetti. Hehkulampun spektri on jatkuva: oranssi käyrä nousee tasaisesti violetista punaiseen. "
             "Punaisen LEDin spektri on kapea huippu aallonpituudella 630 nanometriä, ja sen leveys on noin 20 nanometriä. "
-            "Punaisen laserdiodin spektri on hyvin kapea viiva aallonpituudella 650 nanometriä, leveys noin 2 nanometriä. "
+            "Punaisen laserdiodin spektri on hyvin kapea viiva aallonpituudella 650 nanometriä, leveys noin 1 nanometri (kuva on suuntaa-antava, ei mittakaavassa). "
             "LEDin ja laserdiodin huiput on skaalattu samaan korkeuteen, hehkulampun käyrä matalammaksi.")
     ax = Axes(f, (84, 306), (470, 70), x=(380, 720), y=(0, 1.1), xticks=[400, 450, 500, 550, 600, 650, 700], yticks=[0.5, 1.0],
               xlabel=r"\lambda\ (\text{nm})", ylabel=r"\text{suhteellinen intensiteetti}", xfmt=lambda v: fi(v),
@@ -230,7 +230,7 @@ FIGURES = {"hero": hero, "vyot": vyot, "spektrit": spektrit, "iu": iu, "sovitus"
 REUSE = {
     "hero": "decorative",
     "vyot": "reveals: an electron falling across the band gap gives one photon hf ≈ E_g",
-    "spektrit": "reveals: the LED's band is about 20 nm wide, the laser diode's line about 2 nm, the lamp's spectrum continuous",
+    "spektrit": "reveals: the LED's band is about 20 nm wide, the laser diode's line about 1 nm, the lamp's spectrum continuous",
     "iu": "reveals: U_k of the red, green and blue LED (1,88 V, 2,30 V, 2,52 V) by extending the straight part",
     "sovitus": "reveals: the fitted line of the six LEDs and that its slope is h/e",
     "ryhma": "safe: another group's points and fitted line on graph paper; the slope is not given",

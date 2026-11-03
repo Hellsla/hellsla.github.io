@@ -53,7 +53,7 @@ a["sim-load-I"] = I_mA(2.00, LEDS["R"][1])                  # on load: red LED a
 for key, (lam, Uk) in LEDS.items():                         # koe 1: every LED at 2,20 V
     a[f"koe1-{key}"] = I_mA(2.20, Uk)                       # R 17,8 · O 13,9 · Y 11,1 · G 0,108 · B 0,0002 · V 0,0000 mA
 for U in (0.50, 1.00, 1.50, 1.70, 1.80, 1.90, 2.00, 2.10, 2.20, 2.30, 2.40):   # koe 2: the red LED's I–U curve
-    a[f"koe2-{U:.2f}"] = I_mA(U, LEDS["R"][1])              # 0 / 0 / 0,000 / 0,02 / 0,24 / 1,37 / 6,72 / 12,2 / 17,8 / 23,3 / 28,9 mA
+    a[f"koe2-{U:.2f}"] = I_mA(U, LEDS["R"][1])              # 0 / 0 / 0,000 / 0,011 / 0,188 / 1,98 / 6,72 / 12,2 / 17,8 / 23,3 / 28,9 mA
 k2, b2 = fit([(U, I_mA(U, LEDS["R"][1])) for U in (2.00, 2.10, 2.20, 2.30, 2.40)])
 a["koe-2"] = -b2 / k2                                       # the straight part extrapolated to I = 0: 1,879 V -> 1,88 V
 a["koe-2-slope"] = k2                                       # 55,6 mA/V = 1/R
