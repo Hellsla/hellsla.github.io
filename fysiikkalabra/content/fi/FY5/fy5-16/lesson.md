@@ -88,7 +88,7 @@
 
 Kuulovaurio syntyy sisäkorvan simpukassa. Siellä aistinkarvasolut muuttavat äänen värähtelyn hermoviesteiksi. Voimakas ääni rasittaa ja vaurioittaa karvasoluja. Konsertin jälkeen tuntuva kuulon lamaantuminen ja korvien soiminen ovat merkkejä rasituksesta. Ne menevät usein ohi, mutta toistuva rasitus johtaa pysyvään kuulon heikkenemiseen, koska ihmisen karvasolut eivät uusiudu. Pysyvä korvien soiminen eli tinnitus on yleinen melun seuraus. Kipua ääni aiheuttaa vasta noin $120\,\text{dB}$:n tasolla, joten kipu ei varoita ajoissa.
 
-<svg data-fig="scale" viewBox="0 0 600 372" role="img" aria-label="Kaavakuva: pystysuora desibeliasteikko 20 desibelistä 130 desibeliin, korkeus mittakaavassa. Asteikon oikealla puolella on tyypillisiä äänitasoja: kuiskaus noin 30 dB, keskustelu noin 60 dB, ruohonleikkuri noin 90 dB, rock-konsertti noin 105 dB ja kipukynnys noin 125 dB. Asteikon yläosa 85 desibelistä ylöspäin on värjätty punaiseksi ja merkitty vasemmalla hakasulkeella: pitkä altistus niin suurelle tasolle vaurioittaa kuuloa." style="max-width:100%;font-size:24px">
+<svg data-fig="scale" viewBox="0 0 600 372" role="img" aria-label="Kaavakuva: pystysuora desibeliasteikko 20 desibelistä 130 desibeliin, korkeus mittakaavassa. Asteikon oikealla puolella on tyypillisiä äänitasoja: kuiskaus noin 30 dB, keskustelu noin 60 dB, ruohonleikkuri noin 90 dB, rock-konsertti noin 105 dB ja kipukynnys noin 120 dB. Asteikon yläosa 85 desibelistä ylöspäin on värjätty punaiseksi ja merkitty vasemmalla hakasulkeella: pitkä altistus niin suurelle tasolle vaurioittaa kuuloa." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy516-ladder" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#b2f2bb"/><stop offset="0.55" stop-color="#ffc078"/><stop offset="1" stop-color="#f2a69c"/></linearGradient></defs>
   <rect x="300" y="36" width="26" height="308" rx="4" fill="url(#fy516-ladder)" stroke="#1f2933" stroke-width="2.5"/>
   <rect x="302" y="38" width="22" height="124" fill="#c92a2a" fill-opacity="0.55"/>
@@ -120,9 +120,9 @@ Kuulovaurio syntyy sisäkorvan simpukassa. Siellä aistinkarvasolut muuttavat ä
   <line x1="326" y1="106" x2="344" y2="106" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <circle cx="344" cy="106" r="4" fill="#1f2933"/>
   <foreignObject x="354" y="91.5" width="183" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{rock-konsertti}$</div></foreignObject>
-  <line x1="326" y1="50" x2="344" y2="50" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <circle cx="344" cy="50" r="4" fill="#1f2933"/>
-  <foreignObject x="354" y="35.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{kipukynnys}$</div></foreignObject>
+  <line x1="326" y1="64" x2="344" y2="64" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <circle cx="344" cy="64" r="4" fill="#1f2933"/>
+  <foreignObject x="354" y="49.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{kipukynnys}$</div></foreignObject>
 </svg>
 
 ### Annos: taso ja aika
@@ -131,7 +131,7 @@ Kuulolle haitallinen annos kertyy samalla tavalla kuin energia: ratkaisevaa on, 
 
 ### Työmelu laissa
 
-Työmelusta säädetään valtioneuvoston asetuksessa työntekijöiden suojelemisesta melusta aiheutuvilta vaaroilta (85/2006). Asetus vertaa työntekijän päivittäistä melualtistusta, eli kahdeksan tunnin työpäivän keskimääräistä melutasoa, toiminta-arvoihin. Kun alempi toiminta-arvo $80\,\text{dB}$ ylittyy, työnantajan on annettava kuulonsuojaimet työntekijän käyttöön ja kerrottava melun vaaroista. Kun ylempi toiminta-arvo $85\,\text{dB}$ ylittyy, suojaimia on käytettävä ja melua on vähennettävä suunnitelmallisesti. Korvaan pääsevä melu ei saa kuulonsuojaimetkaan huomioon ottaen ylittää raja-arvoa $87\,\text{dB}$. Arvot ovat A-painotettuja: mittari painottaa taajuuksia suunnilleen niin kuin korva kuulee ne. Konserttien ja kuulokkeiden melulle laki ei aseta samoja rajoja, mutta korva ei erota vapaa-aikaa työstä.
+Työmelusta säädetään valtioneuvoston asetuksessa työntekijöiden suojelemisesta melusta aiheutuvilta vaaroilta (85/2006). Asetus vertaa työntekijän päivittäistä melualtistusta, eli kahdeksan tunnin työpäivän keskimääräistä melutasoa, toiminta-arvoihin. Kun alempi toiminta-arvo $80\,\text{dB}$ ylittyy, työnantajan on annettava kuulonsuojaimet työntekijän käyttöön ja kerrottava melun vaaroista. Kun ylempi toiminta-arvo $85\,\text{dB}$ ylittyy, suojaimia on käytettävä ja melua on vähennettävä suunnitelmallisesti. Päivittäinen melualtistus korvalla, kuulonsuojainten vaimennus huomioon ottaen, ei saa ylittää raja-arvoa $87\,\text{dB}$. Arvot ovat A-painotettuja: mittari painottaa taajuuksia suunnilleen niin kuin korva kuulee ne. Lisäksi asetuksessa on äänen huippuarvoille omat, C-painotetut rajansa, jotka koskevat esimerkiksi laukausta tai iskua. Konserttien ja kuulokkeiden melulle laki ei aseta samoja rajoja, mutta korva ei erota vapaa-aikaa työstä.
 
 ## Kaava: Sallittu altistusaika
 
@@ -199,7 +199,7 @@ missä $L$ on melutaso korvalla (dB), $L_0 = 85\,\text{dB}$ ylempi toiminta-arvo
   <foreignObject x="296" y="79.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$+3\,\text{dB} \;\Rightarrow\; t : 2$</div></foreignObject>
 </svg>
 
-Kaava on arvio, ei takuu: ihmisten kuulo kestää melua eri tavoin, ja altistus kannattaa pitää selvästi rajan alapuolella. Melutaso korvalla saadaan luvun *Äänen voimakkuus* säännöillä: kaksi yhtä voimakasta lähdettä nostaa tasoa noin $3\,\text{dB}$, ja etäisyyden kaksinkertaistuminen pistemäisestä lähteestä laskee tasoa avoimessa tilassa noin $6\,\text{dB}$. Kuulonsuojain vähentää korvaan pääsevää tasoa vaimennuksensa verran.
+Kaava on arvio, ei takuu: ihmisten kuulo kestää melua eri tavoin, ja altistus kannattaa pitää selvästi rajan alapuolella. Melutaso korvalla saadaan luvun *Äänen voimakkuus* säännöillä: kaksi yhtä voimakasta lähdettä nostaa tasoa noin $3\,\text{dB}$, ja etäisyyden kaksinkertaistuminen pistemäisestä lähteestä laskee tasoa avoimessa tilassa noin $6\,\text{dB}$. Kuulonsuojain vähentää korvaan pääsevää tasoa, hyvin asetettuna, vaimennuksensa verran.
 
 ## Melun torjunta
 

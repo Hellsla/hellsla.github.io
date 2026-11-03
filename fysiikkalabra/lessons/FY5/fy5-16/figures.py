@@ -14,7 +14,7 @@ def scale():
     """Ydinajatus: a decibel ladder of everyday sounds, the range from 85 dB upwards marked as harmful."""
     f = Fig("fy516-scale", 372, "Kaavakuva: pystysuora desibeliasteikko 20 desibelistä 130 desibeliin, korkeus mittakaavassa. "
             "Asteikon oikealla puolella on tyypillisiä äänitasoja: kuiskaus noin 30 dB, keskustelu noin 60 dB, ruohonleikkuri "
-            "noin 90 dB, rock-konsertti noin 105 dB ja kipukynnys noin 125 dB. Asteikon yläosa 85 desibelistä ylöspäin on "
+            "noin 90 dB, rock-konsertti noin 105 dB ja kipukynnys noin 120 dB. Asteikon yläosa 85 desibelistä ylöspäin on "
             "värjätty punaiseksi ja merkitty vasemmalla hakasulkeella: pitkä altistus niin suurelle tasolle vaurioittaa kuuloa.")
     def Y(L): return 344 - (L - 20) * 2.8
     x0, x1 = 300, 326
@@ -33,7 +33,7 @@ def scale():
     f.path(f"M{bx + 10},{n(Y(85))} H{bx} V{n(Y(130))} H{bx + 10}", stroke=HOT, w=2.5)
     f.tex(bx - 8, Y(112), r"\text{kuulovaurion}", "end", HOT)
     f.tex(bx - 8, Y(101), r"\text{vaara}", "end", HOT)
-    for L, name in ((30, "kuiskaus"), (60, "keskustelu"), (90, "ruohonleikkuri"), (105, "rock-konsertti"), (125, "kipukynnys")):
+    for L, name in ((30, "kuiskaus"), (60, "keskustelu"), (90, "ruohonleikkuri"), (105, "rock-konsertti"), (120, "kipukynnys")):
         f.line(x1, Y(L), x1 + 18, Y(L), INK, 2)
         f.circle(x1 + 18, Y(L), 4, INK)
         f.tex(x1 + 28, Y(L), r"\text{" + name + "}", "start")

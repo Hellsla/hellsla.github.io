@@ -28,7 +28,7 @@
       "choices": [
         {
           "text": "$180\\,\\text{dB}$, koska kahden tornin tasot lasketaan yhteen.",
-          "feedback": "Desibelit eivät summaudu suoraan, vaan intensiteetit summautuvat (luku *Äänen voimakkuus*). Kaksi tornia kaksinkertaistaa intensiteetin, ja se nostaa tasoa vain noin $3\\,\\text{dB}$. Taso $180\\,\\text{dB}$ vastaisi yli sata miljoonaa kertaa suurempaa intensiteettiä."
+          "feedback": "Desibelit eivät summaudu suoraan, vaan intensiteetit summautuvat (luku *Äänen voimakkuus*). Kaksi tornia kaksinkertaistaa intensiteetin, ja se nostaa tasoa vain noin $3\\,\\text{dB}$. Taso $180\\,\\text{dB}$ vastaisi noin miljardi kertaa suurempaa intensiteettiä."
         },
         {
           "text": "$93\\,\\text{dB}$, koska intensiteetti kaksinkertaistuu.",
@@ -99,8 +99,8 @@
           "feedback": "Oikein. Kun melun ylipaine ja vastamelun alipaine osuvat samaan kohtaan samaan aikaan, ne summautuvat lähes nollaksi: heikentävä interferenssi (luku *Aaltojen interferenssi*). Tämä onnistuu parhaiten matalalle ja tasaiselle äänelle, kuten moottorin huminalle."
         },
         {
-          "text": "Kuulokkeiden mikrofoni imee melun energian itseensä ja muuttaa sen sähköenergiaksi.",
-          "feedback": "Mikrofoni muuttaa vain pienen osan siihen osuvasta äänestä sähköiseksi signaaliksi, eikä se voi imeä korvaan kulkevaa ääntä. Mikrofonia tarvitaan, jotta elektroniikka saa tiedon melusta ja voi tuottaa sille vastakkaisessa vaiheessa olevan äänen."
+          "text": "Kuulokkeet vaimentavat melun kuten tavalliset kuulokkeet: kuvut ja pehmusteet estävät äänen pääsyn korvaan, ja elektroniikka vain säätää sitä.",
+          "feedback": "Kuvut ja pehmusteet vaimentavat lähinnä korkeita ääniä, eikä matalaa huminaa saada kuntoon ilman paksuja kuvuja. Mikrofoni kuuntelee melua, ja elektroniikka tuottaa sille vastakkaisessa vaiheessa olevan äänen, joka kumoaa huminan interferenssillä."
         },
         {
           "text": "Kuulokkeiden kaiutin värähtelee samassa tahdissa kuin melu, ja korva suojautuu voimistuneelta ääneltä.",
@@ -145,7 +145,7 @@
       "type": "interpret",
       "title": "Tutki 2: puhelimella mitattu taso",
       "source": "example",
-      "text": "Opiskelijat mittasivat puhelimen äänitasosovelluksella tasaista kohinaa soittavan pienen kaiuttimen tasoa eri etäisyyksillä kahdessa paikassa: tyhjällä urheilukentällä ja tyhjässä luokassa, jonka seinät, katto ja lattia ovat kovia. Kaiuttimen asetukset olivat kummassakin paikassa samat.\n\n| etäisyys | kenttä | luokka |\n|---|---|---|\n| $1\\,\\text{m}$ | $82\\,\\text{dB}$ | $82\\,\\text{dB}$ |\n| $2\\,\\text{m}$ | $76\\,\\text{dB}$ | $78\\,\\text{dB}$ |\n| $4\\,\\text{m}$ | $70\\,\\text{dB}$ | $76\\,\\text{dB}$ |\n| $8\\,\\text{m}$ | $64\\,\\text{dB}$ | $75\\,\\text{dB}$ |\n\nKalibroimattoman puhelinsovelluksen lukema voi poiketa todellisesta tasosta useita desibelejä, mutta saman puhelimen lukemia samoilla asetuksilla voi verrata toisiinsa.",
+      "text": "Keksitty esimerkkiaineisto: opiskelijat mittasivat puhelimen äänitasosovelluksella tasaista kohinaa soittavan pienen kaiuttimen tasoa eri etäisyyksillä kahdessa paikassa: tyhjällä urheilukentällä ja tyhjässä luokassa, jonka seinät, katto ja lattia ovat kovia. Kaiuttimen asetukset olivat kummassakin paikassa samat.\n\n| etäisyys | kenttä | luokka |\n|---|---|---|\n| $1\\,\\text{m}$ | $82\\,\\text{dB}$ | $82\\,\\text{dB}$ |\n| $2\\,\\text{m}$ | $76\\,\\text{dB}$ | $78\\,\\text{dB}$ |\n| $4\\,\\text{m}$ | $70\\,\\text{dB}$ | $76\\,\\text{dB}$ |\n| $8\\,\\text{m}$ | $64\\,\\text{dB}$ | $75\\,\\text{dB}$ |\n\nKalibroimattoman puhelinsovelluksen lukema voi poiketa todellisesta tasosta useita desibelejä, mutta saman puhelimen lukemia samoilla asetuksilla voi verrata toisiinsa.",
       "question": {
         "type": "choice",
         "prompt": "Kentällä taso laskee $6\\,\\text{dB}$ aina, kun etäisyys kaksinkertaistuu, kuten pistemäiseltä lähteeltä odotetaan. Miksi luokassa taso laskee $1\\,\\text{m}$:stä $8\\,\\text{m}$:iin vain $7\\,\\text{dB}$?",
@@ -305,7 +305,7 @@
       "stage": "tarkista",
       "type": "choice",
       "title": "1. Jälkikaiunta",
-      "prompt": "Koulun ruokalassa on betoniseinät, laattalattia ja suuret ikkunat, ja puheensorina tuntuu huumaavalta. Mikä toimenpide lyhentää jälkikaiunta-aikaa tehokkaimmin?",
+      "prompt": "Koulun ruokalassa on betoniseinät, laattalattia ja suuret ikkunat, ja puheensorina on korvia huumaavaa. Mikä toimenpide lyhentää jälkikaiunta-aikaa tehokkaimmin?",
       "choices": [
         {
           "text": "Ääntä vaimentavien levyjen asentaminen kattoon ja seinille.",

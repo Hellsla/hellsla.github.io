@@ -5,7 +5,7 @@
 **Kaava:** $t_\text{sall} = \dfrac{t_0}{2^{\,n}}$, missä $n = \dfrac{L - L_0}{3\,\text{dB}}$
 **Muunnokset:** Ei tarvita: tasot ovat desibeleinä ja aika saadaan tunteina.
 **Sijoitus:** $n = \dfrac{91\,\text{dB} - 85\,\text{dB}}{3\,\text{dB}} = 2$, $t_\text{sall} = \dfrac{8\,\text{h}}{2^2} = 2{,}0\,\text{h}$
-**Vastaus:** $2{,}0\,\text{h}$; tasot ovat kokonaisia desibelejä ja sääntö on arvio, joten kaksi merkitsevää numeroa riittää.
+**Vastaus:** $2{,}0\,\text{h}$. Tasot ovat kokonaisia desibelejä ja sääntö on arvio, joten kaksi merkitsevää numeroa riittää.
 **Järkevyys:** Kaksi puolitusta: $8\,\text{h} \to 4\,\text{h} \to 2\,\text{h}$. Intensiteetti on nelinkertainen, ja $4 \cdot 2\,\text{h} = 8\,\text{h}$, joten annos on sama kuin vertailussa.
 
 ## fy5-16-L1-02
@@ -36,7 +36,7 @@
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $L = 106\,\text{dB} - 23\,\text{dB} = 83\,\text{dB}$
 **Vastaus:** $83\,\text{dB}$, kokonaisina desibeleinä kuten lähtötiedot.
-**Järkevyys:** Taso jää ylemmän toiminta-arvon $85\,\text{dB}$ alle, joten suojaimet riittävät koko työpäiväksi, jos niitä pidetään koko ajan. Ilman suojaimia sallittu aika olisi alle $8\,\text{min}$.
+**Järkevyys:** Taso jää ylemmän toiminta-arvon $85\,\text{dB}$ alle, joten suojaimet riittävät koko työpäiväksi, jos ne ovat hyvin paikallaan ja niitä pidetään koko ajan. Ilman suojaimia sallittu aika olisi noin $4\,\text{min}$.
 
 ## fy5-16-L1-05
 **Kysytty:** kuuluuko kukin keino lähteeseen, kulkutiehen vai korvaan
@@ -50,7 +50,7 @@
 **Kaava:** $L = L_1 + 3\,\text{dB}$ ja $t_\text{sall} = \dfrac{t_0}{2^{\,n}}$, missä $n = \dfrac{L - L_0}{3\,\text{dB}}$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $L = 85\,\text{dB} + 3\,\text{dB} = 88\,\text{dB}$, $n = \dfrac{88\,\text{dB} - 85\,\text{dB}}{3\,\text{dB}} = 1$, $t_\text{sall} = \dfrac{8\,\text{h}}{2^1} = 4{,}0\,\text{h}$
-**Vastaus:** $4{,}0\,\text{h}$; sääntö on arvio, joten kaksi merkitsevää numeroa riittää.
+**Vastaus:** $4{,}0\,\text{h}$. Sääntö on arvio, joten kaksi merkitsevää numeroa riittää.
 **Järkevyys:** Toinen kone tuo saman energian lisää, joten kokonaisenergia kertyy kaksi kertaa nopeammin, ja annos täyttyy puolessa ajassa. Tulos on johdonmukainen: $2 \cdot 4\,\text{h} = 8\,\text{h}$.
 
 ## fy5-16-L2-02
@@ -90,7 +90,7 @@
 **Kaava:** $t_{\text{sall},i} = \dfrac{t_0}{2^{\,n_i}}$, missä $n_i = \dfrac{L_i - L_0}{3\,\text{dB}}$, ja annos $= \left(\dfrac{t_1}{t_{\text{sall},1}} + \dfrac{t_2}{t_{\text{sall},2}}\right) \cdot 100\,\%$
 **Muunnokset:** Ei tarvita: ajat ovat tunteina, ja yksikkö supistuu.
 **Sijoitus:** $n_1 = 1$, joten $t_{\text{sall},1} = 8\,\text{h} : 2 = 4{,}0\,\text{h}$. $n_2 = \dfrac{82\,\text{dB} - 85\,\text{dB}}{3\,\text{dB}} = -1$, joten $t_{\text{sall},2} = 8\,\text{h} \cdot 2 = 16\,\text{h}$. Annos $= \left(\dfrac{4{,}0\,\text{h}}{4{,}0\,\text{h}} + \dfrac{4{,}0\,\text{h}}{16\,\text{h}}\right) \cdot 100\,\% = (1 + 0{,}25) \cdot 100\,\% = 125\,\%$
-**Vastaus:** $125\,\%$; ajat on annettu kahden numeron tarkkuudella, joten tulos on arvio, noin $1{,}3$-kertainen annos. Ylempi toiminta-arvo ylittyy, joten suojaimia on käytettävä.
+**Vastaus:** $125\,\%$. Ajat on annettu kahden numeron tarkkuudella, joten tulos on arvio, noin $1{,}3$-kertainen annos. Ylempi toiminta-arvo ylittyy, joten suojaimia on käytettävä.
 **Järkevyys:** Jo lastauslaiturin $4\,\text{h}$ täyttää koko annoksen, joten tuloksen täytyy olla yli $100\,\%$. Pakkaamon osuus on pieni, koska siellä intensiteetti on vain neljäsosa laiturin intensiteetistä.
 
 ## fy5-16-L3-02
@@ -98,12 +98,12 @@
 **Kysytty:** taso $L$ ikkunan kohdalla, kun molemmat käyvät
 **Periaate:** Lasketaan ensin yhden yksikön taso ikkunalla: jokainen etäisyyden kaksinkertaistuminen laskee tasoa $6\,\text{dB}$. Kahden yhtä voimakkaan lähteen intensiteetit summautuvat, joten yhteinen taso on $3\,\text{dB}$ suurempi.
 **Kaava:** $L_\text{yksi} = L_1 - k \cdot 6\,\text{dB}$, missä $2^{\,k} = \dfrac{r_2}{r_1}$, ja $L = L_\text{yksi} + 3\,\text{dB}$
-**Muunnokset:** Ei tarvita: $r_2 : r_1 = 12\,\text{m} : 3{,}0\,\text{m} = 4$.
-**Sijoitus:** $2^{\,k} = 4$, joten $k = 2$ ja $L_\text{yksi} = 55\,\text{dB} - 2 \cdot 6\,\text{dB} = 43\,\text{dB}$. $L = 43\,\text{dB} + 3\,\text{dB} = 46\,\text{dB}$
+**Muunnokset:** Ei tarvita: $r_2 : r_1 = 12\,\text{m} : 3{,}0\,\text{m} = 4$, joten $2^{\,k} = 4$ ja $k = 2$.
+**Sijoitus:** $L_\text{yksi} = 55\,\text{dB} - 2 \cdot 6\,\text{dB} = 43\,\text{dB}$. $L = 43\,\text{dB} + 3\,\text{dB} = 46\,\text{dB}$
 **Vastaus:** $46\,\text{dB}$, kokonaisina desibeleinä kuten lähtötieto.
 **Järkevyys:** Yhden yksikön taso on etäisyyden vuoksi selvästi pienempi kuin lähellä, ja toinen yksikkö nostaa sitä vain vähän. Tulos on hiljaisen keskustelun alapuolella, mutta makuuhuoneessa tasainen humina voi silti häiritä unta.
 
 ## fy5-16-L3-03
 **Kysytty:** miksi vastamelu vaimentaa matalaa huminaa paremmin kuin puhetta
 **Periaate:** Vastamelu kumoaa melun heikentävällä interferenssillä vain, jos se on korvan kohdalla vastakkaisessa vaiheessa. Aallonpituus $\lambda = \dfrac{v}{f}$ ja jaksonaika $T = \dfrac{1}{f}$ kertovat, kuinka tarkasti ajoituksen ja paikan on osuttava.
-**Mallivastaus:** Huminan aallonpituus on $\lambda = \dfrac{343\,\text{m/s}}{100\,\text{Hz}} \approx 3{,}4\,\text{m}$ ja jaksonaika $10\,\text{ms}$. Koko korvakäytävä ja kuvun sisus ovat pieniä aallonpituuteen verrattuna, ja elektroniikalla on aikaa muodostaa vastakkainen signaali, joten vastamelu pysyy korvan kohdalla vastakkaisessa vaiheessa. Puheen aallonpituudet ovat $\dfrac{343\,\text{m/s}}{3000\,\text{Hz}} \approx 11\,\text{cm}$ ja $\dfrac{343\,\text{m/s}}{1000\,\text{Hz}} \approx 34\,\text{cm}$, ja jaksonaika on alle $1\,\text{ms}$. Pienikin ajoitusvirhe tai muutaman senttimetrin paikkaero siirtää vaihetta paljon, jolloin aallot eivät enää kumoa toisiaan. Lisäksi puhe vaihtelee nopeasti, kun taas humina on tasaista. Korkeita ääniä vaimentavat lähinnä kuulokkeiden kuvut.
+**Mallivastaus:** Huminan aallonpituus on $\lambda = \dfrac{343\,\text{m/s}}{100\,\text{Hz}} \approx 3{,}4\,\text{m}$ ja jaksonaika $10\,\text{ms}$. Koko korvakäytävä ja kuvun sisus ovat pieniä aallonpituuteen verrattuna, ja elektroniikalla on aikaa muodostaa vastakkainen signaali, joten vastamelu pysyy korvan kohdalla vastakkaisessa vaiheessa. Puheen aallonpituudet ovat $\dfrac{343\,\text{m/s}}{3000\,\text{Hz}} \approx 11\,\text{cm}$ ja $\dfrac{343\,\text{m/s}}{1000\,\text{Hz}} \approx 34\,\text{cm}$, ja jaksonaika on enintään $1\,\text{ms}$. Pienikin ajoitusvirhe tai muutaman senttimetrin paikkaero siirtää vaihetta paljon, jolloin aallot eivät enää kumoa toisiaan. Lisäksi puhe vaihtelee nopeasti, kun taas humina on tasaista. Korkeita ääniä vaimentavat lähinnä kuulokkeiden kuvut.
