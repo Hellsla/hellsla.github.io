@@ -1703,6 +1703,23 @@
       "peili": "mirror",
       "eipeilia": "no mirrors",
       "pumppauslamppu": "pump lamp"
+    },
+    "fy8-9": {
+      "kaynnista": "Start",
+      "pysayta": "Stop",
+      "ytimia": "Nuclei at the start",
+      "puoliintumisaika": "Half-life $T_{1/2} = {{T}}\\,\\text{s}$",
+      "aika": "Time $t = {{t}}\\,\\text{s}$",
+      "arvonta": "Draw",
+      "sarja": "series {{n}}",
+      "nopeus": "Speed",
+      "hidas": "slow",
+      "normaali": "normal",
+      "nopea": "fast",
+      "selite": "Orange disc: undecayed nucleus. Grey ring: decayed nucleus. Orange dashed line: decay law.",
+      "lukemat": "Time $t = {{t}}\\,\\text{s}$, that is, $t : T_{1/2} = {{r}}$<br>Undecayed nuclei $N = {{N}}$, decayed $N_0 - N = {{D}}$<br><strong>Fraction left $N : N_0 = {{f}}$</strong>",
+      "otsikko": "$\\text{nuclei at the start}\\ N_0 = {{N0}}$",
+      "jaljella": "$\\text{undecayed}\\ N = {{N}}$"
     }
   },
   "practice": {

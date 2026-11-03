@@ -1,6 +1,6 @@
 ## fy8-7-L1-01
 **Given:** wavelength of the laser light $\lambda = 633\,\text{nm}$, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$
-**Asked:** the energy $E$ of one laser photon in electronvolts
+**Find:** the energy $E$ of one laser photon in electronvolts
 **Principle:** All the photons of a laser are produced in the same transition, so they have the same energy, and the energy of one photon depends only on the wavelength of the light.
 **Formula:** $E = hf$ and $f = \tfrac{c}{\lambda}$, so $E = \dfrac{hc}{\lambda}$
 **Conversions:** $\lambda = 633\,\text{nm} = 633 \cdot 10^{-9}\,\text{m}$. Finally joules are converted to electronvolts by substituting $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$.
@@ -10,7 +10,7 @@
 
 ## fy8-7-L1-02
 **Given:** wavelength $\lambda = 1550\,\text{nm}$, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$
-**Asked:** the energy $E$ of one photon in electronvolts
+**Find:** the energy $E$ of one photon in electronvolts
 **Principle:** Light consists of photons, and the energy of one photon is inversely proportional to the wavelength of the light.
 **Formula:** $E = \dfrac{hc}{\lambda}$
 **Conversions:** $\lambda = 1550\,\text{nm} = 1550 \cdot 10^{-9}\,\text{m}$. Finally joules to electronvolts by substituting $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$.
@@ -20,7 +20,7 @@
 
 ## fy8-7-L1-03
 **Given:** energy difference of the levels of the laser transition $E_2 - E_1 = 1.79\,\text{eV}$, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$
-**Asked:** the wavelength $\lambda$ of the laser light in nanometres
+**Find:** the wavelength $\lambda$ of the laser light in nanometres
 **Principle:** Energy is conserved: when an ion drops from the upper laser level to the lower, its energy decreases by the difference of the levels, and exactly this energy is carried away by one photon.
 **Formula:** $\dfrac{hc}{\lambda} = E_2 - E_1$, from which $\lambda = \dfrac{hc}{E_2 - E_1}$
 **Conversions:** $E_2 - E_1 = 1.79\,\text{eV} = 1.79 \cdot 1.602 \cdot 10^{-19}\,\text{J} = 2.8676 \cdot 10^{-19}\,\text{J}$; finally $1\,\text{m} = 10^{9}\,\text{nm}$.
@@ -30,7 +30,7 @@
 
 ## fy8-7-L1-04
 **Given:** energy of the pulse $E = 3.0\,\text{mJ}$, wavelength $\lambda = 1064\,\text{nm}$, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$
-**Asked:** the number of photons $N$ in the pulse
+**Find:** the number of photons $N$ in the pulse
 **Principle:** All the photons of a laser are identical, so the energy of the pulse is the number of photons multiplied by the energy of one photon $\tfrac{hc}{\lambda}$.
 **Formula:** $E = N \cdot \dfrac{hc}{\lambda}$, from which $N = \dfrac{E\lambda}{hc}$
 **Conversions:** $E = 3.0\,\text{mJ} = 3.0 \cdot 10^{-3}\,\text{J}$ and $\lambda = 1064\,\text{nm} = 1064 \cdot 10^{-9}\,\text{m}$.
@@ -40,7 +40,7 @@
 
 ## fy8-7-L1-05
 **Given:** photons per second $\tfrac{N}{t} = 4.0 \cdot 10^{15}\,\tfrac{1}{\text{s}}$, energy of a photon $hf = 2.33\,\text{eV}$, $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$
-**Asked:** the power $P$ of the laser in milliwatts
+**Find:** the power $P$ of the laser in milliwatts
 **Principle:** Power is the energy leaving per second. The photons of a laser are identical, so the power is the number of photons per second multiplied by the energy of one photon.
 **Formula:** $P = \dfrac{N}{t} \cdot hf$
 **Conversions:** $hf = 2.33\,\text{eV} = 2.33 \cdot 1.602 \cdot 10^{-19}\,\text{J} = 3.7327 \cdot 10^{-19}\,\text{J}$; finally $1\,\text{W} = 1000\,\text{mW}$.
@@ -50,7 +50,7 @@
 
 ## fy8-7-L2-01
 **Given:** wavelength of the pump light $\lambda_\text{p} = 808\,\text{nm}$, wavelength of the laser light $\lambda_\text{L} = 1064\,\text{nm}$; one pump photon produces at most one laser photon
-**Asked:** the greatest share $\eta$ of the energy of a pump photon that ends up as the energy of a laser photon, as a percentage
+**Find:** the greatest share $\eta$ of the energy of a pump photon that ends up as the energy of a laser photon, as a percentage
 **Principle:** When one pump photon produces one laser photon, the energy of the laser photon is what ends up in it, and the rest stays in the medium as heat. The energy of a photon is $\tfrac{hc}{\lambda}$, so the share is the ratio of the energies of the photons.
 **Formula:** $\eta = \dfrac{hc / \lambda_\text{L}}{hc / \lambda_\text{p}}$, from which $\eta = \dfrac{\lambda_\text{p}}{\lambda_\text{L}}$
 **Conversions:** None are needed: the wavelengths are in the same unit, and $hc$ cancels. Finally the share is converted to a percentage by multiplying by $100\,\%$.
@@ -60,7 +60,7 @@
 
 ## fy8-7-L2-02
 **Given:** wavelength of the red laser pointer $\lambda_\text{r} = 650\,\text{nm}$, of the violet one $\lambda_\text{v} = 405\,\text{nm}$, the power of both $P = 5.0\,\text{mW}$
-**Asked:** how many times more photons per second the red one emits, that is the ratio $\tfrac{N_\text{r}}{N_\text{v}}$
+**Find:** how many times more photons per second the red one emits, that is the ratio $\tfrac{N_\text{r}}{N_\text{v}}$
 **Principle:** Power is the number of photons per second multiplied by the energy of a photon $\tfrac{hc}{\lambda}$. With the same power there are more photons the smaller the energy of one photon is, that is the longer the wavelength.
 **Formula:** $\dfrac{N}{t} = \dfrac{P\lambda}{hc}$, so for lasers with the same power and time the ratio of the numbers of photons is $\dfrac{N_\text{r}}{N_\text{v}} = \dfrac{\lambda_\text{r}}{\lambda_\text{v}}$
 **Conversions:** None are needed: the power, $h$ and $c$ cancel, and the wavelengths are in the same unit.
@@ -70,7 +70,7 @@
 
 ## fy8-7-L2-03
 **Given:** wavelength of the light of the larger dot $\lambda_\text{large} = 620\,\text{nm}$, the photon energy of the smaller dot is $\Delta E = 0.35\,\text{eV}$ greater, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$
-**Asked:** the wavelength $\lambda$ of the light of the smaller dot in nanometres
+**Find:** the wavelength $\lambda$ of the light of the smaller dot in nanometres
 **Principle:** The energy of a photon is $\tfrac{hc}{\lambda}$. We calculate the photon energy of the larger dot, add $0.35\,\text{eV}$ to it and calculate the wavelength from the new energy. The energy gap of the smaller dot is larger, so its photon energy is greater.
 **Formula:** $E_\text{large} = \dfrac{hc}{\lambda_\text{large}}$ and $\dfrac{hc}{\lambda} = E_\text{large} + \Delta E$, from which $\lambda = \dfrac{hc}{E_\text{large} + \Delta E}$
 **Conversions:** $\lambda_\text{large} = 620\,\text{nm} = 620 \cdot 10^{-9}\,\text{m}$; energies in electronvolts and joules by substituting $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$; finally $1\,\text{m} = 10^{9}\,\text{nm}$.
@@ -80,7 +80,7 @@
 
 ## fy8-7-L2-04
 **Given:** photons in the pulse $N = 2.7 \cdot 10^{17}$, wavelength $\lambda = 1064\,\text{nm}$, duration of the pulse $t = 10\,\text{ns}$, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$
-**Asked:** the average power $P$ of the pulse in megawatts
+**Find:** the average power $P$ of the pulse in megawatts
 **Principle:** The energy of the pulse is the number of photons multiplied by the energy of one photon, and the average power is the energy divided by the time in which it leaves.
 **Formula:** $E = N \cdot \dfrac{hc}{\lambda}$ and $P = \dfrac{E}{t}$, from which $P = \dfrac{N hc}{\lambda t}$
 **Conversions:** $\lambda = 1064\,\text{nm} = 1064 \cdot 10^{-9}\,\text{m}$, $t = 10\,\text{ns} = 10 \cdot 10^{-9}\,\text{s}$; finally $1\,\text{MW} = 10^{6}\,\text{W}$.
@@ -90,7 +90,7 @@
 
 ## fy8-7-L3-01
 **Given:** number of chromium ions $N = 1.0 \cdot 10^{19}$, wavelength of the pump light $\lambda = 550\,\text{nm}$, one pump photon lifts one ion to the upper laser level, the laser transition ends in the ground state, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$
-**Asked:** the smallest absorbed pump energy $E$ in joules
+**Find:** the smallest absorbed pump energy $E$ in joules
 **Principle:** In a population inversion the upper laser level has more ions than the lower. Because the lower laser level is the ground state, more than half of the ions have to be lifted to the upper level, that is at least $\tfrac{N}{2}$, and each needs one pump photon. By assumption the ions do not decay in the middle of the pumping.
 **Formula:** $E = \dfrac{N}{2} \cdot \dfrac{hc}{\lambda}$
 **Conversions:** $\lambda = 550\,\text{nm} = 550 \cdot 10^{-9}\,\text{m}$.
@@ -100,7 +100,7 @@
 
 ## fy8-7-L3-02
 **Given:** wavelength of the pump light $\lambda_\text{p} = 808\,\text{nm}$ and power $P = 1.0\,\text{W}$; one pump photon produces at most one photon of $1064\,\text{nm}$; two photons of $1064\,\text{nm}$ combine into one photon of $532\,\text{nm}$; $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$
-**Asked:** the greatest number of green photons per second $\tfrac{N_\text{g}}{t}$
+**Find:** the greatest number of green photons per second $\tfrac{N_\text{g}}{t}$
 **Principle:** First we calculate the number of pump photons per second from the power and the energy of a photon. At most as many infrared photons can be produced, and two infrared photons make one green one, so there are at most half as many green photons as pump photons. Energy is conserved: the energy of two photons of $1064\,\text{nm}$ equals that of one photon of $532\,\text{nm}$.
 **Formula:** $\dfrac{N_\text{p}}{t} = \dfrac{P\lambda_\text{p}}{hc}$ and $\dfrac{N_\text{g}}{t} = \dfrac{1}{2} \cdot \dfrac{N_\text{p}}{t}$, from which $\dfrac{N_\text{g}}{t} = \dfrac{P\lambda_\text{p}}{2hc}$
 **Conversions:** $\lambda_\text{p} = 808\,\text{nm} = 808 \cdot 10^{-9}\,\text{m}$; the power is already in watts.
@@ -110,7 +110,7 @@
 
 ## fy8-7-L3-03
 **Given:** frequency of the photon corresponding to the energy difference of the states of the qubit $f_\text{q} = 5.0\,\text{GHz}$, wavelength of the red light $\lambda = 650\,\text{nm}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$
-**Asked:** the ratio of the energies $\tfrac{E_\text{light}}{E_\text{q}}$
+**Find:** the ratio of the energies $\tfrac{E_\text{light}}{E_\text{q}}$
 **Principle:** The energy of both photons is $hf$, so the ratio of the energies is the ratio of the frequencies, and the Planck constant cancels. The frequency of the red light is obtained from the wavelength, $f = \tfrac{c}{\lambda}$.
 **Formula:** $\dfrac{E_\text{light}}{E_\text{q}} = \dfrac{hc / \lambda}{h f_\text{q}}$, from which $\dfrac{E_\text{light}}{E_\text{q}} = \dfrac{c}{\lambda f_\text{q}}$
 **Conversions:** $f_\text{q} = 5.0\,\text{GHz} = 5.0 \cdot 10^{9}\,\text{Hz}$ and $\lambda = 650\,\text{nm} = 650 \cdot 10^{-9}\,\text{m}$.
