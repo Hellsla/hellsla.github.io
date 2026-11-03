@@ -1,4 +1,4 @@
-# Mekaaninen aaltoliike
+# Aaltojen synty ja eteneminen
 
 > **Miksi** tolpassa roikkuva kello kilahtaa, kun pitkän narun toista päätä heilautetaan kerran, vaikka kukaan ei koske kelloon?
 
@@ -136,7 +136,7 @@
 ### Aalto on etenevä häiriö
 Kun narun päätä heilautetaan ylös, käsi vetää mukanaan narun lähintä kohtaa. Jännittynyt naru vetää puolestaan seuraavaa kohtaa ja se taas seuraavaa, joten jokainen kohta lähtee liikkeelle hieman myöhemmin kuin edellinen. Näin poikkeama tasapainoasemasta eli häiriö etenee narussa kättä kauemmas. **Aaltoliike** on häiriön etenemistä väliaineessa. Väliaineen hiukkaset värähtelevät vain tasapainoasemansa ympärillä eivätkä kulje aallon mukana. Kaasussa molekyylit liikkuvat lisäksi satunnaisesti lämpöliikkeen vuoksi, mutta aalto ei kuljeta niitä mukanaan. Aalto kuljettaa siis energiaa lähteestä kauemmas, mutta ei ainetta. Siksi narun toisessa päässä oleva kello voi kilahtaa, vaikka mikään narun kohta ei kulje kädestä kelloon asti.
 
-Mekaaninen aalto tarvitsee väliaineen, kuten narun, jousen, veden tai ilman. Yksi heilautus synnyttää **pulssin**, yksittäisen kummun, joka etenee narussa. Kun kättä heilutetaan tasaisesti ylös ja alas, syntyy jaksollinen aalto, jossa harjat ja pohjat toistuvat. Siinä narun jokainen kohta värähtelee samalla taajuudella $f$ kuin käsi. Jaksonaika $T$, taajuus $f$ ja amplitudi $A$ tarkoittavat samaa kuin luvussa *Jaksollinen liike*. Kun aalto saapuu narun päähän, se heijastuu takaisin; heijastumista tarkastellaan luvussa *Aaltojen heijastuminen ja diffraktio*.
+Mekaaninen aalto tarvitsee väliaineen, kuten narun, jousen, veden tai ilman. Yksi heilautus synnyttää **pulssin**, yksittäisen kummun, joka etenee narussa. Kun kättä heilutetaan tasaisesti ylös ja alas, syntyy jaksollinen aalto, jossa harjat ja pohjat toistuvat. Siinä narun jokainen kohta värähtelee samalla taajuudella $f$ kuin käsi. Jaksonaika $T$, taajuus $f$ ja amplitudi $A$ tarkoittavat samaa kuin luvussa *Värähtelyn suureet: jaksonaika, taajuus ja amplitudi*. Kun aalto saapuu narun päähän, se heijastuu takaisin; heijastumista tarkastellaan luvussa *Aalto kohtaa esteen tai raon*.
 
 ### Poikittainen ja pitkittäinen aalto
 Aallot jaetaan kahteen lajiin sen mukaan, mihin suuntaan väliaineen hiukkaset värähtelevät. **Poikittaisessa aallossa** hiukkaset värähtelevät kohtisuoraan aallon etenemissuuntaa vastaan: narun kohdat liikkuvat ylös ja alas, kun aalto etenee vaakasuoraan. **Pitkittäisessä aallossa** hiukkaset värähtelevät etenemissuunnan suuntaisesti. Kun pitkän kierrejousen päätä työnnetään edestakaisin, jouseen syntyy tihentymiä, joissa kierrokset ovat lähellä toisiaan, ja harvennuksia, joissa ne ovat kaukana toisistaan. Tihentymät ja harvennukset etenevät, mutta jokainen kierros vain heilahtelee paikkansa ympärillä. Esimerkiksi ääni ilmassa on pitkittäinen aalto.

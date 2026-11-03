@@ -1,4 +1,4 @@
-# Tasapaino kiertymisen suhteen
+# Kappaleen tasapaino: voimat ja momentit
 
 > **Miksi** maalauspukkien päällä olevan lankun ulokkeelle voi nostaa maalipurkin, mutta vain tiettyyn kohtaan asti ennen kuin lankku kaatuu?
 
@@ -198,7 +198,7 @@
 ## Ydinajatus
 
 ### Kaksi tasapainoehtoa
-Luvussa *Voiman momentti ja kappaleen kiertyminen* opittiin, että voima kiertää kappaletta sitä enemmän, mitä suurempi on voiman momentti $M = Fr$. Levossa pysyvälle kappaleelle ei riitä, että voimat kumoavat toisensa. Kappale on **tasapainossa**, kun se ei lähde etenemään eikä kiertymään. Etenemisen suhteen ehto on tuttu Newtonin laeista: voimien summa on nolla. Pyörimisen suhteen ehto on uusi: voimien momenttien summa on nolla. Kuvan viivaimeen vaikuttaa kummassakin tapauksessa kaksi yhtä suurta ja vastakkaista voimaa, joten voimien summa on nolla. Vasemmalla voimat ovat samalla suoralla eivätkä kierrä viivainta. Oikealla ne vaikuttavat eri suorilla, ja niiden momentit kiertävät viivainta samaan suuntaan: viivain alkaa kiertyä, vaikka sen keskipiste ei lähde liikkeelle.
+Luvussa *Momentti: voiman kiertävä vaikutus* opittiin, että voima kiertää kappaletta sitä enemmän, mitä suurempi on voiman momentti $M = Fr$. Levossa pysyvälle kappaleelle ei riitä, että voimat kumoavat toisensa. Kappale on **tasapainossa**, kun se ei lähde etenemään eikä kiertymään. Etenemisen suhteen ehto on tuttu Newtonin laeista: voimien summa on nolla. Pyörimisen suhteen ehto on uusi: voimien momenttien summa on nolla. Kuvan viivaimeen vaikuttaa kummassakin tapauksessa kaksi yhtä suurta ja vastakkaista voimaa, joten voimien summa on nolla. Vasemmalla voimat ovat samalla suoralla eivätkä kierrä viivainta. Oikealla ne vaikuttavat eri suorilla, ja niiden momentit kiertävät viivainta samaan suuntaan: viivain alkaa kiertyä, vaikka sen keskipiste ei lähde liikkeelle.
 
 <svg data-fig="pari" viewBox="0 0 600 330" role="img" aria-label="Kaavakuva, viivain pöydällä ylhäältä katsottuna, kaksi tapausta. Vasemmalla yhtä suuret ja vastakkaiset voimat F1 ja F2 vetävät viivaimen päistä viivaimen suuntaisesti samalla suoralla: voimien summa ja momenttien summa ovat nolla, eikä viivain kierry. Oikealla yhtä suuret ja vastakkaiset voimat vaikuttavat viivaimen päihin kohtisuoraan sitä vastaan eri suorilla: voimien summa on nolla, mutta momenttien summa ei, ja viivain alkaa kiertyä, mitä kuvaa kaareva nuoli." style="max-width:100%;font-size:24px">
   <line x1="300" y1="20" x2="300" y2="316" stroke="#c9c2b2" stroke-width="2" stroke-linecap="butt" stroke-dasharray="6 6"/>
@@ -333,7 +333,7 @@ Kappale on tasapainossa, kun sekä voimien summa että voimien momenttien summa 
 &\Sigma M = 0
 \end{aligned}
 ```
-missä $\Sigma\overline{F}$ on kappaleeseen vaikuttavien voimien vektorisumma ($\text{N}$) ja $\Sigma M$ voimien momenttien summa ($\text{Nm}$) jonkin pisteen suhteen. Ensimmäinen on **tasapainoehto etenemisen suhteen** ja toinen **momenttiehto** eli tasapainoehto pyörimisen suhteen. Komponenteittain ensimmäinen ehto on $\Sigma F_x = 0$ ja $\Sigma F_y = 0$. Momentit lasketaan kuten luvussa *Voiman momentti ja kappaleen kiertyminen*: $M = Fr$, missä $r$ on voiman varsi, ja etumerkki kertoo kiertosuunnan. Tässä luvussa vastapäivään kiertävä momentti on positiivinen.
+missä $\Sigma\overline{F}$ on kappaleeseen vaikuttavien voimien vektorisumma ($\text{N}$) ja $\Sigma M$ voimien momenttien summa ($\text{Nm}$) jonkin pisteen suhteen. Ensimmäinen on **tasapainoehto etenemisen suhteen** ja toinen **momenttiehto** eli tasapainoehto pyörimisen suhteen. Komponenteittain ensimmäinen ehto on $\Sigma F_x = 0$ ja $\Sigma F_y = 0$. Momentit lasketaan kuten luvussa *Momentti: voiman kiertävä vaikutus*: $M = Fr$, missä $r$ on voiman varsi, ja etumerkki kertoo kiertosuunnan. Tässä luvussa vastapäivään kiertävä momentti on positiivinen.
 
 ### Momenttipisteen valinta
 Levossa oleva kappale ei kierry minkään pisteen ympäri, joten momenttiehto pätee jokaisen pisteen suhteen. Momenttipisteeksi kannattaa valita tuntemattoman voiman vaikutuspiste: sen voiman varsi on nolla, joten voima ei esiinny momenttiehdossa. Jos voima ei ole kohtisuorassa sauvamaista kappaletta (lankku, tanko) vastaan, se jaetaan komponentteihin. Kun momenttipiste on sauvan suoralla, momentin antaa sauvaa vastaan kohtisuora komponentti kerrottuna etäisyydellä momenttipisteestä. Kuvassa tangon päähän vaikuttava voima $\overline{F}$ muodostaa kulman $\alpha$ tangon kanssa: tangon suuntainen komponentti $F\cos\alpha$ kulkee saranan kautta eikä kierrä tankoa, ja kohtisuora komponentti $F\sin\alpha$ antaa momentin $M = F\sin\alpha \cdot r$.

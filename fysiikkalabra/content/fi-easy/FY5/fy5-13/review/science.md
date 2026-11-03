@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: bccd1bee9fe6ed4c
+CONTENT-HASH: 97126565ba9120e6
 
 ## Blocking
 (none)
 
 ## Polish
-- none
+(none)
 
 ## Checked
-- batch delta review: key_concepts, reworded sentences, photo captions, objective-form and level-policy edits, chapter-reference titles judged against the guardrails and the lesson text; restyled figure lines are styling only.
+batch delta review: references to fy5-10, fy5-11, fy5-12, fy5-14 updated; fixed-end reflection and standing-wave text unchanged. Every changed chapter reference names the renamed chapter that holds the cited content, and no old title remains.

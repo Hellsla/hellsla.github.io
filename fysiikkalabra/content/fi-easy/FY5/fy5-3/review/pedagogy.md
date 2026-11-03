@@ -1,11 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 356dca73d7951548
-
+CONTENT-HASH: 0006abed5e6a7cd2
 ## Blocking
-(none)
 
 ## Polish
-(none)
 
 ## Checked
-batch delta review: key_concepts judged against NOTES.md §12 and the editorial standard (central concepts, plain 1–2 sentence explanations, natural Finnish, physics unchanged); lesson rewordings, photos and captions, experiment/prompt wording and solution diagrams in this diff read clearly and agree with the tasks they touch.
+batch delta review: new lesson title and renamed chapter cross-references (prior lists, feedback, theory text) read in context; the names match the new titles of the target lessons, wording and Finnish unchanged otherwise, no stale old titles left in the lesson files.

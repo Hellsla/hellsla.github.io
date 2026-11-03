@@ -1,4 +1,4 @@
-# Ääni ympäristössämme
+# Melu, akustiikka ja äänentoisto
 
 > **Miksi** muutaman tunnin konsertti voi vaurioittaa kuuloa pysyvästi, vaikka ääni ei tunnu kivuliaalta?
 
@@ -127,7 +127,7 @@ Kuulovaurio syntyy sisäkorvan simpukassa. Simpukassa on aistinkarvasoluja, jotk
 
 ### Annos: taso ja aika
 
-Kuulolle haitallinen annos kertyy samalla tavalla kuin energia. Ratkaisevaa on, kuinka paljon energiaa ääni tuo korvaan koko altistuksen aikana. Luvussa *Äänen voimakkuus* opittiin, että intensiteettitason kasvu $3\,\text{dB}$ vastaa noin intensiteetin kaksinkertaistumista. Kun intensiteetti kaksinkertaistuu, korvaan tulee sekunnissa kaksi kertaa enemmän energiaa. Silloin sama annos täyttyy puolessa ajassa. Melutaso, joka on vain muutaman desibelin suurempi, voi siis lyhentää turvallista aikaa moninkertaisesti.
+Kuulolle haitallinen annos kertyy samalla tavalla kuin energia. Ratkaisevaa on, kuinka paljon energiaa ääni tuo korvaan koko altistuksen aikana. Luvussa *Intensiteetti ja desibeliasteikko* opittiin, että intensiteettitason kasvu $3\,\text{dB}$ vastaa noin intensiteetin kaksinkertaistumista. Kun intensiteetti kaksinkertaistuu, korvaan tulee sekunnissa kaksi kertaa enemmän energiaa. Silloin sama annos täyttyy puolessa ajassa. Melutaso, joka on vain muutaman desibelin suurempi, voi siis lyhentää turvallista aikaa moninkertaisesti.
 
 ### Työmelu laissa
 
@@ -199,11 +199,11 @@ Kaavassa $L$ on melutaso korvalla (dB). Luku $L_0 = 85\,\text{dB}$ on ylempi toi
   <foreignObject x="296" y="79.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$+3\,\text{dB} \;\Rightarrow\; t : 2$</div></foreignObject>
 </svg>
 
-Kaava on arvio, ei takuu. Ihmisten kuulo kestää melua eri tavoin, ja altistus kannattaa pitää selvästi rajan alapuolella. Melutaso korvalla saadaan luvun *Äänen voimakkuus* säännöillä. Kaksi yhtä voimakasta lähdettä nostaa tasoa noin $3\,\text{dB}$. Etäisyyden kaksinkertaistuminen pistemäisestä lähteestä laskee tasoa avoimessa tilassa noin $6\,\text{dB}$. Kuulonsuojain vähentää korvaan pääsevää tasoa vaimennuksensa verran, kun se on hyvin asetettu.
+Kaava on arvio, ei takuu. Ihmisten kuulo kestää melua eri tavoin, ja altistus kannattaa pitää selvästi rajan alapuolella. Melutaso korvalla saadaan luvun *Intensiteetti ja desibeliasteikko* säännöillä. Kaksi yhtä voimakasta lähdettä nostaa tasoa noin $3\,\text{dB}$. Etäisyyden kaksinkertaistuminen pistemäisestä lähteestä laskee tasoa avoimessa tilassa noin $6\,\text{dB}$. Kuulonsuojain vähentää korvaan pääsevää tasoa vaimennuksensa verran, kun se on hyvin asetettu.
 
 ## Melun torjunta
 
-Melua voidaan vähentää kolmessa kohdassa. **Lähteessä** valitaan hiljaisempi kone, huolletaan se, eristetään sen tärinä tai suljetaan se ääntä vaimentavaan koteloon. **Kulkutiellä** kasvatetaan etäisyyttä tai rakennetaan este, kuten meluseinä. Este pysäyttää suoran äänen. Ääni taipuu kuitenkin esteen reunan yli diffraktion vuoksi (luku *Aaltojen heijastuminen ja diffraktio*). Mitä matalampi ääni on, sitä enemmän se taipuu. Siksi este vaimentaa matalia ääniä huonommin kuin korkeita. Pehmeät, huokoiset pinnat vaimentavat heijastuksia kulkutiellä. **Korvalla** käytetään kuulonsuojaimia: kupusuojaimia tai korvatulppia. Ne vaimentavat tyypillisesti $20$–$30\,\text{dB}$.
+Melua voidaan vähentää kolmessa kohdassa. **Lähteessä** valitaan hiljaisempi kone, huolletaan se, eristetään sen tärinä tai suljetaan se ääntä vaimentavaan koteloon. **Kulkutiellä** kasvatetaan etäisyyttä tai rakennetaan este, kuten meluseinä. Este pysäyttää suoran äänen. Ääni taipuu kuitenkin esteen reunan yli diffraktion vuoksi (luku *Aalto kohtaa esteen tai raon*). Mitä matalampi ääni on, sitä enemmän se taipuu. Siksi este vaimentaa matalia ääniä huonommin kuin korkeita. Pehmeät, huokoiset pinnat vaimentavat heijastuksia kulkutiellä. **Korvalla** käytetään kuulonsuojaimia: kupusuojaimia tai korvatulppia. Ne vaimentavat tyypillisesti $20$–$30\,\text{dB}$.
 
 <svg data-fig="control" viewBox="0 0 600 330" role="img" aria-label="Kaavakuva, ei mittakaavassa: melun torjunnan kolme kohtaa vasemmalta oikealle. Vasemmalla kone on kotelon sisällä: lähde. Keskellä on meluseinä, jonka yli ääniaallot taipuvat heikentyneinä: kulkutie. Oikealla ihmisen päässä on kuulonsuojaimet: korva. Kunkin kohdan alla on keino: kotelointi, este ja etäisyys, kuulonsuojain." style="max-width:100%;font-size:24px">
   <line x1="200" y1="50" x2="200" y2="316" stroke="#c9c2b2" stroke-width="2" stroke-linecap="butt" stroke-dasharray="6 6"/>
@@ -328,7 +328,7 @@ Kun äänilähde vaikenee, heijastuksia kuuluu vielä hetken. Tätä hiipuvaa ä
 
 ## Vastamelu
 
-Vastamelukuulokkeissa on mikrofoni, joka kuulee ympäristön melun. Kuulokkeen elektroniikka muodostaa melusta signaalin, joka on vastakkaisessa vaiheessa. Kuulokkeen kaiutin toistaa sen. Korvakäytävässä melun ja vastamelun paineenvaihtelut summautuvat ja kumoavat toisensa suurelta osin. Tämä on heikentävää interferenssiä (luku *Aaltojen interferenssi*). Menetelmä toimii parhaiten tasaiselle ja matalalle huminalle, kuten moottorin tai ilmanvaihdon äänelle. Matalan äänen jaksonaika ja aallonpituus ovat pitkiä, joten vastamelu pysyy helposti vastakkaisessa vaiheessa. Korkeilla taajuuksilla pienikin ajoitusvirhe pilaa kumoutumisen. Niitä vaimentavat kuulokkeen kuvut. Vastamelukuulokkeilla voi kuunnella musiikkia hiljaisemmalla äänellä. Ne eivät kuitenkaan korvaa kuulonsuojaimia kovassa melussa.
+Vastamelukuulokkeissa on mikrofoni, joka kuulee ympäristön melun. Kuulokkeen elektroniikka muodostaa melusta signaalin, joka on vastakkaisessa vaiheessa. Kuulokkeen kaiutin toistaa sen. Korvakäytävässä melun ja vastamelun paineenvaihtelut summautuvat ja kumoavat toisensa suurelta osin. Tämä on heikentävää interferenssiä (luku *Aaltojen yhteisvaikutus: superpositio ja interferenssi*). Menetelmä toimii parhaiten tasaiselle ja matalalle huminalle, kuten moottorin tai ilmanvaihdon äänelle. Matalan äänen jaksonaika ja aallonpituus ovat pitkiä, joten vastamelu pysyy helposti vastakkaisessa vaiheessa. Korkeilla taajuuksilla pienikin ajoitusvirhe pilaa kumoutumisen. Niitä vaimentavat kuulokkeen kuvut. Vastamelukuulokkeilla voi kuunnella musiikkia hiljaisemmalla äänellä. Ne eivät kuitenkaan korvaa kuulonsuojaimia kovassa melussa.
 
 <svg data-fig="anc" viewBox="0 0 600 330" role="img" aria-label="Kaavakuva: kolme aaltoa allekkain samalla aika-akselilla. Ylimpänä on sininen melu. Keskellä on oranssi vastamelu, joka on samanlainen mutta vastakkaisessa vaiheessa: sen huippu on melun pohjan kohdalla. Alimpana on niiden summa, joka on suora viiva nollassa. Pystysuora katkoviiva näyttää, että huippu ja pohja osuvat samaan hetkeen." style="max-width:100%;font-size:24px">
   <line x1="170" y1="66" x2="560" y2="66" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt"/>

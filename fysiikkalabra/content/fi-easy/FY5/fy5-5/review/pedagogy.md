@@ -1,11 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 7977e6418ed1e741
-
+CONTENT-HASH: 68ed6284989378b6
 ## Blocking
-(none)
 
 ## Polish
-- meta.json key_concepts "gravitaatiovakio" — "hyvin pieni luku" — "Gravitaatiolain kerroin. Sen arvo on sama kaikkialla ja hyvin pieni."
 
 ## Checked
-batch delta review: key_concepts judged against NOTES.md §12 and the editorial standard (central concepts, plain 1–2 sentence explanations, natural Finnish, physics unchanged); lesson rewordings, photos and captions, experiment/prompt wording and solution diagrams in this diff read clearly and agree with the tasks they touch.
+batch delta review: new lesson title and renamed chapter cross-references (prior lists, feedback, theory text) read in context; the names match the new titles of the target lessons, wording and Finnish unchanged otherwise, no stale old titles left in the lesson files.

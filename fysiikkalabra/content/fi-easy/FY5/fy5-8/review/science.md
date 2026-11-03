@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: cb44f9e513bc1f17
+CONTENT-HASH: c8040b0ec5917f54
 
 ## Blocking
 (none)
 
 ## Polish
-- meta.json "jousivakio": "venytetään metrin verran" is the unit reading; "venymää kohti" avoids an unphysical picture.
+(none)
 
 ## Checked
-- batch delta review: key_concepts, reworded sentences, photo captions, objective-form and level-policy edits, chapter-reference titles judged against the guardrails and the lesson text; restyled figure lines are styling only.
+batch delta review: new pinball close-up: pulling the plunger knob out compresses the coil spring between tip and front wall, consistent with the lesson's compressed-spring launch; references to fy5-7 and fy5-9 updated. Every changed chapter reference names the renamed chapter that holds the cited content, and no old title remains.

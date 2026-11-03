@@ -7,9 +7,9 @@
     "laskemaan aallon nopeuden, taajuuden tai aallonpituuden aaltoliikkeen perusyhtälöllä."
   ],
   "prior": [
-    "Jaksonaika $T$ on yhteen täyteen värähdykseen kuluva aika. Taajuus $f = \\tfrac{1}{T}$ kertoo värähdysten määrän sekunnissa (luku *Jaksollinen liike*)",
-    "Amplitudi $A$ on suurin poikkeama tasapainoasemasta (luku *Jaksollinen liike*)",
-    "Harmonisesti värähtelevä kappale liikkuu edestakaisin tasapainoasemansa molemmin puolin. Tasapainoasema on paikka, jossa kappale olisi levossa (luku *Harmoninen värähtely ja heiluri*)"
+    "Jaksonaika $T$ on yhteen täyteen värähdykseen kuluva aika. Taajuus $f = \\tfrac{1}{T}$ kertoo värähdysten määrän sekunnissa (luku *Värähtelyn suureet: jaksonaika, taajuus ja amplitudi*)",
+    "Amplitudi $A$ on suurin poikkeama tasapainoasemasta (luku *Värähtelyn suureet: jaksonaika, taajuus ja amplitudi*)",
+    "Harmonisesti värähtelevä kappale liikkuu edestakaisin tasapainoasemansa molemmin puolin. Tasapainoasema on paikka, jossa kappale olisi levossa (luku *Jousivärähtelijä ja heiluri*)"
   ],
   "activities": [
     {
@@ -29,7 +29,7 @@
         {
           "text": "$2{,}0\\,\\text{Hz}$",
           "correct": true,
-          "feedback": "Oikein. Taajuus on värähdysten määrä sekunnissa: $f = \\tfrac{12}{6{,}0\\,\\text{s}} = 2{,}0\\,\\text{Hz}$. Jaksonaika on $T = \\tfrac{1}{f} = 0{,}50\\,\\text{s}$ (luku *Jaksollinen liike*). Tänään sama taajuus siirtyy värähtelijästä aaltoon."
+          "feedback": "Oikein. Taajuus on värähdysten määrä sekunnissa: $f = \\tfrac{12}{6{,}0\\,\\text{s}} = 2{,}0\\,\\text{Hz}$. Jaksonaika on $T = \\tfrac{1}{f} = 0{,}50\\,\\text{s}$ (luku *Värähtelyn suureet: jaksonaika, taajuus ja amplitudi*). Tänään sama taajuus siirtyy värähtelijästä aaltoon."
         },
         {
           "text": "$0{,}50\\,\\text{Hz}$",

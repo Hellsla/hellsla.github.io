@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: af7832a2b6caf3eb
+CONTENT-HASH: e1edbdcd1504df0c
 
 ## Blocking
 (none)
 
 ## Polish
-- none
+(none)
 
 ## Checked
-- batch delta review: key_concepts, reworded sentences, photo captions, objective-form and level-policy edits, chapter-reference titles judged against the guardrails and the lesson text; restyled figure lines are styling only.
+batch delta review: learn objective reworded (intensity from power and area, or power and point-source distance) means the same; references updated; feedbacks unchanged in physics. Every changed chapter reference names the renamed chapter that holds the cited content, and no old title remains.

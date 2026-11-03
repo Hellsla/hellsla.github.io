@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 3dd6e9291d4de422
+CONTENT-HASH: 4ada06d66c310934
 
 ## Blocking
 (none)
 
 ## Polish
-- none
+(none)
 
 ## Checked
-- batch delta review: key_concepts, reworded sentences, photo captions, objective-form and level-policy edits, chapter-reference titles judged against the guardrails and the lesson text; restyled figure lines are styling only.
+batch delta review: heading/meta renamed; references to fy5-3 updated in prior, prediction feedback and theory; physics unchanged. Every changed chapter reference names the renamed chapter that holds the cited content, and no old title remains.

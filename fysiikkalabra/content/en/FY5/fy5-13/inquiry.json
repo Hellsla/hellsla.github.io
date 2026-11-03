@@ -7,9 +7,9 @@
     "compare the natural frequencies of a tube open at both ends and a tube closed at one end."
   ],
   "prior": [
-    "The speed, the frequency and the wavelength of a wave are related by $v = f\\lambda$ (chapter *Mechanical waves*)",
-    "A wave is reflected from the fixed end of a rope in the opposite phase (chapter *Reflection and diffraction of waves*)",
-    "The displacements of waves that meet add up, and waves in opposite phase cancel each other (chapter *Interference of waves*)"
+    "The speed, the frequency and the wavelength of a wave are related by $v = f\\lambda$ (chapter *How waves form and travel*)",
+    "A wave is reflected from the fixed end of a rope in the opposite phase (chapter *A wave meets an obstacle or a gap*)",
+    "The displacements of waves that meet add up, and waves in opposite phase cancel each other (chapter *When waves combine: superposition and interference*)"
   ],
   "activities": [
     {
@@ -30,7 +30,7 @@
         {
           "text": "A pulse of the same size, now below the rest position.",
           "correct": true,
-          "feedback": "Correct. At a fixed end the wave is reflected in the opposite phase (chapter *Reflection and diffraction of waves*): the wall pulls the rope in the direction opposite to the pulse, so the end stays in place. Today we investigate what happens when the incident and the reflected wave travel in the rope at the same time."
+          "feedback": "Correct. At a fixed end the wave is reflected in the opposite phase (chapter *A wave meets an obstacle or a gap*): the wall pulls the rope in the direction opposite to the pulse, so the end stays in place. Today we investigate what happens when the incident and the reflected wave travel in the rope at the same time."
         },
         {
           "text": "A pulse of the same size, still above the rest position.",

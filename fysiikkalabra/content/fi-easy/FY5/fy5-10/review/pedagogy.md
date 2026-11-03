@@ -1,11 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: d3576c56392ec979
-
+CONTENT-HASH: 2e924e2326ebf2b6
 ## Blocking
-(none)
 
 ## Polish
-- meta.json "aaltoliike"/"aallonpituus" — "häiriö" and "aallonharja" unexplained for S2 — "Muutos, joka etenee…" / "Kahden peräkkäisen aallon korkeimman kohdan (harjan) välinen etäisyys."
 
 ## Checked
-batch delta review: key_concepts only (3–5 central, glossary-based concepts, plain 1–2 sentence explanations, physics matches the lesson; NOTES.md §12.7); no lesson text changed.
+batch delta review: new lesson title and renamed chapter cross-references (prior lists, feedback, theory text) read in context; the names match the new titles of the target lessons, wording and Finnish unchanged otherwise, no stale old titles left in the lesson files.

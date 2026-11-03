@@ -1,11 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 23dd7b449aee582b
-
+CONTENT-HASH: 97126565ba9120e6
 ## Blocking
-(none)
 
 ## Polish
-- meta.json "resonanssi" — "ominaistaajuus" unexplained — "…kun sitä heilutetaan taajuudella, jolla se värähtelee luonnostaan."
 
 ## Checked
-batch delta review: key_concepts only (3–5 central, glossary-based concepts, plain 1–2 sentence explanations, physics matches the lesson; NOTES.md §12.7); no lesson text changed.
+batch delta review: new lesson title and renamed chapter cross-references (prior lists, feedback, theory text) read in context; the names match the new titles of the target lessons, wording and Finnish unchanged otherwise, no stale old titles left in the lesson files.

@@ -1,10 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: cca52027b9ce0ea1
+CONTENT-HASH: 4eeb2b7f6aca79bd
+
 ## Blocking
-(none)
+
 ## Polish
-- hero — Question names a swing, but the hero shows a clock pendulum and a door bouncer; a swing would tie it to the opening question more directly (taste).
+
+
 ## Checked
-- Delta review: only the hero illustration and its alt text changed; the rest stays as previously approved.
-- Hero shows two oscillators, one displaced pendulum and one spring-hung baby at rest, matching the question's pendulum and spring; no wrong physics (pendulum hangs below its pivot, spring fixed to the door frame, toes on the floor); alt matches the picture (clock, glass door, coil spring, baby, window, plant, picture, armchair).
-- Finnish alt text reads correctly; no text inside the picture; the 390 px capture shows the picture intact.
+batch delta review: title and chapter-reference renames only; every *chapter* reference in lesson.md, inquiry.json, exercises and solutions of FY5 resolves to a current lesson title; new titles are clear and consistent with neighbouring lessons.

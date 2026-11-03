@@ -1,4 +1,4 @@
-# Voiman momentti ja kappaleen kiertyminen
+# Momentti: voiman kiertävä vaikutus
 
 > **Miksi** tiukkaan juuttunut pyöränmutteri aukeaa pitkällä avaimella, vaikka lyhyellä avaimella yhtä suuri voima ei saa sitä liikkumaan?
 
@@ -263,7 +263,7 @@ Momentilla on suuruuden lisäksi kiertosuunta. Tässä kirjassa vastapäivään 
 ```latex
 \Sigma M = M_1 + M_2 + M_3 + \ldots
 ```
-Kaavassa $\Sigma M$ on kokonaismomentti ($\text{Nm}$). Luvut $M_1$, $M_2$, … ovat yksittäisten voimien momentit saman kiertoakselin suhteen ($\text{Nm}$). Oletetaan, että kappale on levossa ja se voi kiertyä kiinteän akselin ympäri. Jos kokonaismomentti ei ole nolla, kappale alkaa kiertyä kokonaismomentin suuntaan. Milloin kappale pysyy paikallaan, tutkitaan tarkemmin luvussa *Tasapaino kiertymisen suhteen*.
+Kaavassa $\Sigma M$ on kokonaismomentti ($\text{Nm}$). Luvut $M_1$, $M_2$, … ovat yksittäisten voimien momentit saman kiertoakselin suhteen ($\text{Nm}$). Oletetaan, että kappale on levossa ja se voi kiertyä kiinteän akselin ympäri. Jos kokonaismomentti ei ole nolla, kappale alkaa kiertyä kokonaismomentin suuntaan. Milloin kappale pysyy paikallaan, tutkitaan tarkemmin luvussa *Kappaleen tasapaino: voimat ja momentit*.
 
 <svg data-fig="suunta" viewBox="0 0 600 320" role="img" aria-label="Kaksi tilannetta vierekkäin. Kummassakin vaakasuora sauva on kiinni akselissa O vasemmasta päästään. Vasemmalla voima F vaikuttaa sauvan oikeaan päähän ylöspäin. Kaarinuoli akselin ympärillä kiertää vastapäivään, joten momentti on positiivinen. Oikealla voima vaikuttaa sauvan päähän alaspäin. Kaarinuoli kiertää myötäpäivään, joten momentti on negatiivinen." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy51-suunta-44" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f1dfb5"/><stop offset="1" stop-color="#d9b26a"/></linearGradient><linearGradient id="fy51-suunta-344" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f1dfb5"/><stop offset="1" stop-color="#d9b26a"/></linearGradient></defs>

@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 7977e6418ed1e741
+CONTENT-HASH: 68ed6284989378b6
 
 ## Blocking
 (none)
 
 ## Polish
-- none
+(none)
 
 ## Checked
-- batch delta review: key_concepts, reworded sentences, photo captions, objective-form and level-policy edits, chapter-reference titles judged against the guardrails and the lesson text; restyled figure lines are styling only.
+batch delta review: heading/meta renamed; references to fy5-4 updated in prior, feedbacks and the Moon-acceleration task text; data table unchanged. Every changed chapter reference names the renamed chapter that holds the cited content, and no old title remains.

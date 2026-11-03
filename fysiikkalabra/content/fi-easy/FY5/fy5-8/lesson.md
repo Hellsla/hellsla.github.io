@@ -1,4 +1,4 @@
-# Harmoninen voima ja jousen potentiaalienergia
+# Jousivoima ja jousen energia
 
 > **Miksi** flipperin laukaisin ampuu kuulan sitä kovempaa, mitä pidemmälle sen jousta puristetaan?
 
@@ -81,7 +81,7 @@
 ## Ydinajatus
 
 ### Jousi palauttaa kohti tasapainoasemaa
-Luvussa *Jaksollinen liike* kappale liikkui edestakaisin tasapainoaseman molemmin puolin. Nyt katsotaan, mikä voima vetää kappaleen aina takaisin kohti tasapainoasemaa. Tarkastellaan kärryä, joka on kiinni vaakasuorassa jousessa. Kun jousi on lepopituudessaan, se ei vaikuta kärryyn. Silloin kärry voi olla levossa. Tämä kohta on kärryn **tasapainoasema**. Lepopituus tarkoittaa jousen pituutta, kun jousta ei venytetä eikä puristeta. Valitaan $x$-akseli jousen suuntaiseksi ja origo tasapainoasemaan. Kärryn paikka $x$ on silloin kärryn **poikkeama** eli siirtymä tasapainoasemasta. Poikkeamalla on etumerkki: tasapainoaseman oikealla puolella $x > 0$ ja vasemmalla puolella $x < 0$.
+Luvussa *Värähtelyn suureet: jaksonaika, taajuus ja amplitudi* kappale liikkui edestakaisin tasapainoaseman molemmin puolin. Nyt katsotaan, mikä voima vetää kappaleen aina takaisin kohti tasapainoasemaa. Tarkastellaan kärryä, joka on kiinni vaakasuorassa jousessa. Kun jousi on lepopituudessaan, se ei vaikuta kärryyn. Silloin kärry voi olla levossa. Tämä kohta on kärryn **tasapainoasema**. Lepopituus tarkoittaa jousen pituutta, kun jousta ei venytetä eikä puristeta. Valitaan $x$-akseli jousen suuntaiseksi ja origo tasapainoasemaan. Kärryn paikka $x$ on silloin kärryn **poikkeama** eli siirtymä tasapainoasemasta. Poikkeamalla on etumerkki: tasapainoaseman oikealla puolella $x > 0$ ja vasemmalla puolella $x < 0$.
 
 Kun kärry vedetään oikealle, jousi venyy ja vetää kärryä vasemmalle. Kun kärry työnnetään vasemmalle, jousi puristuu ja työntää kärryä oikealle. Kummassakin tapauksessa jousen voima osoittaa kohti tasapainoasemaa. Se osoittaa siis poikkeaman vastaiseen suuntaan. Siksi jousen voimaa sanotaan myös palauttavaksi voimaksi.
 
@@ -157,7 +157,7 @@ Kun kärry vedetään oikealle, jousi venyy ja vetää kärryä vasemmalle. Kun 
 </svg>
 
 ### Harmoninen voima
-Kun jousta ei venytetä eikä puristeta liikaa, jousen voiman suuruus on suoraan verrannollinen poikkeamaan. Kaksinkertainen poikkeama antaa kaksinkertaisen voiman. **Harmoninen voima** on voima, jonka suuruus on suoraan verrannollinen kappaleen poikkeamaan tasapainoasemasta ja joka osoittaa aina kohti tasapainoasemaa. Jousen voima on tavallisin esimerkki. Myös heilurin palauttava voima on pienillä heilahduksilla melkein harmoninen. Luvussa *Harmoninen värähtely ja heiluri* nähdään, millaista liikettä harmoninen voima saa aikaan.
+Kun jousta ei venytetä eikä puristeta liikaa, jousen voiman suuruus on suoraan verrannollinen poikkeamaan. Kaksinkertainen poikkeama antaa kaksinkertaisen voiman. **Harmoninen voima** on voima, jonka suuruus on suoraan verrannollinen kappaleen poikkeamaan tasapainoasemasta ja joka osoittaa aina kohti tasapainoasemaa. Jousen voima on tavallisin esimerkki. Myös heilurin palauttava voima on pienillä heilahduksilla melkein harmoninen. Luvussa *Jousivärähtelijä ja heiluri* nähdään, millaista liikettä harmoninen voima saa aikaan.
 
 ### Jousen voima ja jousta venyttävä voima
 Kun käsi venyttää jousta, kaksi kappaletta vaikuttaa toisiinsa. Käsi vetää jousta, ja jousi vetää kättä. Newtonin kolmannen lain mukaan nämä voimat ovat yhtä suuret ja vastakkaissuuntaiset. Ne vaikuttavat kuitenkin eri kappaleisiin. Jousta venyttävä voima $\overline{F}_\text{v}$ vaikuttaa jouseen. Jousen voima $\overline{F}$ vaikuttaa käteen tai jousen päässä olevaan kappaleeseen. Siksi kappaleen voimakuvioon piirretään vain jousen voima.

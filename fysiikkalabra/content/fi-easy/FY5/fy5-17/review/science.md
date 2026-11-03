@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 9cdcab48d0e8e5b4
+CONTENT-HASH: 9ab7735f51541cfd
 
 ## Blocking
 (none)
 
 ## Polish
-- none
+(none)
 
 ## Checked
-- batch delta review, round 2 (diff cc7b2aeb..debc61a4): maanjäristysaalto key concept now includes Earth's interior, consistent with the P/S-wave shadow-zone text; no other content changed.
+batch delta review: new prenatal-scan illustration is physically neutral (gel under the probe kept); objective reworded with same meaning; references updated; lambda = 343/40000 = 8,6 mm correct. Every changed chapter reference names the renamed chapter that holds the cited content, and no old title remains.
