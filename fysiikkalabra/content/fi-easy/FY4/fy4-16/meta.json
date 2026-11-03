@@ -13,6 +13,24 @@
     "fy4-8"
   ],
   "glossary": [],
+  "key_concepts": [
+    {
+      "term": "voimakuvio",
+      "explain": "Kuva, jossa näkyvät vain yhteen kappaleeseen vaikuttavat voimat nuolina."
+    },
+    {
+      "term": "tukivoima",
+      "explain": "Voima, jolla alusta työntää kappaletta. Kylpyhuonevaaka mittaa tukivoimaa."
+    },
+    {
+      "term": "rajanopeus",
+      "explain": "Nopeus, jolla ilmanvastus on yhtä suuri kuin paino. Silloin nopeus ei enää kasva."
+    },
+    {
+      "term": "liikekitka",
+      "explain": "Kitka, joka vaikuttaa, kun kappale liukuu pintaa pitkin."
+    }
+  ],
   "sim": false,
   "solutions": "all",
   "image": false

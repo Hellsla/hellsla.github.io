@@ -20,6 +20,28 @@
     "putouskorkeus",
     "virtaama"
   ],
+  "key_concepts": [
+    {
+      "term": "vesivoima",
+      "explain": "Sähkön tuottaminen putoavan veden energiasta."
+    },
+    {
+      "term": "tuulivoima",
+      "explain": "Sähkön tuottaminen tuulen liike-energiasta."
+    },
+    {
+      "term": "putouskorkeus",
+      "explain": "Korkeusero padon takana olevan veden ja alemman veden välillä."
+    },
+    {
+      "term": "virtaama",
+      "explain": "Kertoo, kuinka paljon vettä virtaa sekunnissa."
+    },
+    {
+      "term": "hyötysuhde",
+      "explain": "Kertoo, kuinka suuri osa energiasta muuttuu sähköksi."
+    }
+  ],
   "sim": false,
   "solutions": "all",
   "image": false

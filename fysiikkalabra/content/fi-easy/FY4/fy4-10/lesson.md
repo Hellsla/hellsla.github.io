@@ -384,7 +384,7 @@ Ratapihalla tavaravaunu A, jonka massa on $32\,000\,\text{kg}$, liikkuu nopeudel
 **Järkevyys.** Yhteinen nopeus on vaunujen alkunopeuksien $0{,}50\,\text{m/s}$ ja $1{,}5\,\text{m/s}$ välissä. Se on lähempänä raskaamman vaunun A nopeutta, kuten pitääkin. Liike-energia pienenee $38{,}3\,\text{kJ}$:sta $32{,}5\,\text{kJ}$:iin eli noin $15\,\%$. Se sopii täysin kimmottomaan törmäykseen: liike-energiaa muuttuu kytkimien ja puskurien sisäenergiaksi ja ääneksi.
 
 ## Yleinen virhekäsitys
-Moni ajattelee, että liike-energia säilyy törmäyksessä samalla tavalla kuin liikemäärä. Liikemäärä säilyy aina, kun ulkoisten voimien impulssi on merkityksettömän pieni. Liike-energia säilyy vain kimmoisassa törmäyksessä. Jos yhteen tarttuvien vaunujen nopeus lasketaan liike-energian säilymisestä, tulos on liian suuri.
+Moni ajattelee, että liike-energia säilyy törmäyksessä samalla tavalla kuin liikemäärä. Liikemäärä säilyy aina, kun ulkoisten voimien impulssi on niin pieni, ettei sillä ole merkitystä. Liike-energia säilyy vain kimmoisassa törmäyksessä. Jos yhteen tarttuvien vaunujen nopeus lasketaan liike-energian säilymisestä, tulos on liian suuri.
 
 Toinen virhe on unohtaa etumerkit. Jos kappaleet liikkuvat toisiaan kohti, niiden liikemäärät ovat vastakkaissuuntaiset. Silloin toinen liikemääristä on negatiivinen. Kolmas virhe on ajatella, että liikemäärä katoaa, kun lattialle pudonnut savipallo pysähtyy. Pallon liikemäärä siirtyy Maahan. Pallo ja Maa muodostavat systeemin, ja sen kokonaisliikemäärä säilyy. Maan massa on kuitenkin niin suuri, ettei sen nopeuden muutosta huomaa.
 

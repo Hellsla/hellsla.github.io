@@ -2241,6 +2241,17 @@
     "locked": false
   },
   {
+    "term": "ilmanvastus",
+    "definition": "Väliaineen vastus ilmassa: voima, jolla ilma vastustaa siinä liikkuvan kappaleen liikettä. Se kasvaa, kun nopeus kasvaa. Merkintä $\\overline{F}_\\text{v}$.",
+    "lessons": [
+      "fy4-14"
+    ],
+    "see_also": [
+      "väliaineen vastus",
+      "rajanopeus"
+    ]
+  },
+  {
     "term": "rajanopeus",
     "definition": "Nopeus, johon väliaineessa putoavan kappaleen nopeus asettuu, kun väliaineen vastus on kasvanut yhtä suureksi kuin kappaleen paino. Silloin kokonaisvoima ja kiihtyvyys ovat nolla. Samankokoisista ja samanmuotoisista kappaleista raskaammalla on suurempi rajanopeus.",
     "lessons": [

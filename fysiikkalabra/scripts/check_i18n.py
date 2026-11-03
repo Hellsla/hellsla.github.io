@@ -13,7 +13,9 @@ Finnish (fi) is the source. For every other language, lang/<lang>.json and conte
                         are set aside; figures.json translates every text figures.py draws (figures.py --lang)
 
 A lesson not translated yet is listed, not an error: build.py publishes a language's lessons as they come, each
-after its own two reviews (reviews.py; the review files live in the language's folder). Exit 1 on any error."""
+after its own two reviews (reviews.py; the review files live in the language's folder). An S2 language (S2_LANGS,
+Selkeä suomi, NOTES.md §12) needs meta.json key_concepts and may add a formula in a concrete example, never lose one.
+Exit 1 on any error."""
 import json, re, subprocess, sys, pathlib
 from collections import Counter
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))

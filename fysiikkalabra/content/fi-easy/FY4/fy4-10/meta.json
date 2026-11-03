@@ -17,6 +17,24 @@
     "kimmoton törmäys",
     "räjähdys"
   ],
+  "key_concepts": [
+    {
+      "term": "liikemäärän säilyminen",
+      "explain": "Kun ulkoiset voimat eivät muuta liikettä, kappaleiden yhteinen liikemäärä pysyy samana."
+    },
+    {
+      "term": "kimmoisa törmäys",
+      "explain": "Törmäys, jossa kappaleiden yhteinen liike-energia on lopussa yhtä suuri kuin alussa."
+    },
+    {
+      "term": "kimmoton törmäys",
+      "explain": "Törmäys, jossa osa liike-energiasta muuttuu muuksi energiaksi, esimerkiksi lämmöksi."
+    },
+    {
+      "term": "räjähdys",
+      "explain": "Levossa olevat kappaleet lähtevät liikkeelle eri suuntiin. Yhteinen liikemäärä pysyy nollana."
+    }
+  ],
   "sim": true,
   "solutions": "all",
   "image": false

@@ -169,6 +169,9 @@ pictures, templates and scripts are shared by every language.
   language menu; with two or more, each page has a language control linking to the same page in the other languages;
   when that language has not published the page, the link goes to its module page, whose note `#unavailable-<id>`
   says so (teacher 2026-10-29; `scripts/test_home.py`).
+- **Selkeä suomi** (`fi-easy`, an S2 language: `check_i18n.S2_LANGS`) follows NOTES.md §12: the same physics in
+  clearer Finnish, and `key_concepts` in each lesson's `meta.json` (`translate_kit.py` hands them to the translator as
+  `key_concepts.json`), rendered as *Luvun tärkeät käsitteet* with notes kept in the student's own browser.
 - Finnish only, for now: the agents' briefs, the lint's text rules (`lint_lesson.py`, `check_solutions.py`) and the
   reference lesson `content/_gold/`.
 
