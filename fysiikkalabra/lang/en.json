@@ -181,8 +181,7 @@
     "goal_note": "Clarification",
     "kc_title": "Key concepts of the chapter",
     "kc_optional": "Optional",
-    "kc_lead": "Get to know the key concepts of the chapter. You can write their meanings in your strongest language or in several languages.",
-    "kc_note": "My notes"
+    "kc_lead": "Get to know the key concepts of the chapter. You can write their meanings in your strongest language or in several languages."
   },
   "inquiry": {
     "stage_herata": "Think about it",
@@ -329,14 +328,7 @@
     "rubric_total": "Self-assessed points: {{got}} / {{max}}",
     "rubric_partial": "Self-assessed points: {{got}} / {{max}} ({{left}} items not assessed)",
     "criteria_all": "Your answer contains all the key points of the model answer.",
-    "criteria_missing": "Add these points to your answer and compare again:",
-    "kc_note_saved": "The notes are saved only in this browser on this device. They are not sent anywhere.",
-    "kc_copy": "Copy the notes",
-    "kc_copied": "The notes have been copied. Paste them, for example into a document of your own, with Ctrl+V.",
-    "kc_copy_failed": "Copying did not work. Select the text and copy it with Ctrl+C.",
-    "kc_empty": "Write a note first.",
-    "kc_saved": "Saved on this device",
-    "kc_save_failed": "Saving did not work. Copy your notes somewhere safe."
+    "criteria_missing": "Add these points to your answer and compare again:"
   },
   "sims": {
     "fy2-2": {

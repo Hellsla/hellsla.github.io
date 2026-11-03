@@ -498,28 +498,20 @@ def intro_html(intro, inquiry, n_opt, md):
 KEY_CONCEPTS = (3, 5)    # how many "Luvun tärkeät käsitteet" a Selkeä suomi lesson shows (teacher 2026-11-03)
 
 
-def concept_slug(term): return re.sub(r"[^a-z0-9åäö]+", "-", term.replace("$", "").lower()).strip("-")
-
-
 def key_concepts_html(lid, items, md):
     """"Luvun tärkeät käsitteet" (teacher 2026-11-03, NOTES.md §12): the S2 vocabulary activity of a Selkeä suomi
     lesson, between the opening and the first stage. meta.json "key_concepts" lists 3–5 {"term", "explain"}: the
-    Finnish physics term in bold, a short plain-Finnish explanation and a field where the student may write the
-    meaning in any language or several. Voluntary and never assessed; no language is asked or translated. The fields
-    work without scripts; lesson.js part 7 keeps them in this browser (padstore.js) and adds the copy button.
-    Only a language whose lessons carry the list shows it (check_i18n.py allows it in fi-easy only)."""
+    Finnish physics term in bold and a short plain-Finnish explanation. The student writes the meanings in a notebook
+    in any language (teacher 2026-11-03: no note fields on the page). Voluntary and never assessed; no language is
+    asked or translated. Only a language whose lessons carry the list shows it (check_i18n.py: fi-easy only)."""
     if not items: return ""
     rows = []
-    for i, k in enumerate(items, 1):
-        base, term = f"kc-{lid}-{i}", k["term"][:1].upper() + k["term"][1:]   # a symbol in the term is LaTeX: "$(t,x)$-kuvaaja"
-        name = term.replace("$", "")
-        rows.append(f'<li class="kc-item"><p class="kc-term" id="{base}-t"><strong>{inline(md, term)}</strong></p>'
-                    f'<p class="kc-explain" id="{base}-d">{inline(md, k["explain"])}</p>'
-                    f'<label class="kc-label" for="{base}">{T("lesson.kc_note")}<span class="visually-hidden">: {esc(name)}</span></label>'
-                    f'<textarea id="{base}" rows="1" lang="" aria-describedby="{base}-d" data-kc="kc:{lid}:{concept_slug(k["term"])}" data-term="{esc(name)}"></textarea></li>')
+    for k in items:
+        term = k["term"][:1].upper() + k["term"][1:]   # a symbol in the term is LaTeX: "$(t,x)$-kuvaaja"
+        rows.append(f'<dt class="kc-term">{inline(md, term)}</dt><dd class="kc-explain">{inline(md, k["explain"])}</dd>')
     return (f'<section class="kc" id="kasitteet" aria-labelledby="kc-{lid}-h"><h2 class="intro-h kc-h" id="kc-{lid}-h">{T("lesson.kc_title")} '
             f'<span class="opt-tag">{T("lesson.kc_optional")}</span></h2><p class="kc-lead">{T("lesson.kc_lead")}</p>'
-            f'<ul class="kc-list">{"".join(rows)}</ul></section>')
+            f'<dl class="kc-list">{"".join(rows)}</dl></section>')
 
 
 SENT = re.compile(r"(?<=[.!])\s+(?=[A-ZÅÄÖ])")

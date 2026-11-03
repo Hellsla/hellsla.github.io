@@ -181,8 +181,7 @@
     "goal_note": "Täsmennys",
     "kc_title": "Luvun tärkeät käsitteet",
     "kc_optional": "Vapaaehtoinen",
-    "kc_lead": "Tutustu luvun tärkeisiin käsitteisiin. Voit kirjoittaa niiden merkitykset sinulle vahvimmalla kielellä tai useammalla kielellä.",
-    "kc_note": "Omat muistiinpanot"
+    "kc_lead": "Tutustu luvun tärkeisiin käsitteisiin. Voit kirjoittaa niiden merkitykset sinulle vahvimmalla kielellä tai useammalla kielellä."
   },
   "inquiry": {
     "stage_herata": "Pohdinta",
@@ -329,14 +328,7 @@
     "rubric_total": "Itsearvioidut pisteet: {{got}} / {{max}}",
     "rubric_partial": "Itsearvioidut pisteet: {{got}} / {{max}} ({{left}} kohtaa arvioimatta)",
     "criteria_all": "Vastauksessasi on kaikki mallivastauksen tärkeät kohdat.",
-    "criteria_missing": "Lisää vastaukseesi nämä asiat. Vertaa sitten uudelleen:",
-    "kc_note_saved": "Muistiinpanot tallentuvat vain tähän selaimeen tällä laitteella. Niitä ei lähetetä minnekään.",
-    "kc_copy": "Kopioi muistiinpanot",
-    "kc_copied": "Muistiinpanot on kopioitu. Voit liittää ne esimerkiksi omaan tiedostoosi näppäimillä Ctrl+V.",
-    "kc_copy_failed": "Kopiointi ei onnistunut. Valitse teksti ja kopioi se näppäimillä Ctrl+C.",
-    "kc_empty": "Kirjoita ensin muistiinpano.",
-    "kc_saved": "Tallennettu tälle laitteelle",
-    "kc_save_failed": "Tallennus ei onnistunut. Kopioi muistiinpanot talteen."
+    "criteria_missing": "Lisää vastaukseesi nämä asiat. Vertaa sitten uudelleen:"
   },
   "sims": {
     "fy2-2": {

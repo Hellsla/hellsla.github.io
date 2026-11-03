@@ -8,8 +8,6 @@
    5b. Exercise head: Vastaus and Näytä ratkaisu as buttons beside the Ydintehtävä tag (the boxes open in place).
    6. Solution editor: "Kirjoita ratkaisu" under every exercise opens Abitti's own editor (Digabi rich-text-editor) and
       "Kopioi ratkaisu" copies the solution for L'Math or Abitti. The editor is loaded on the first click only.
-   7. Luvun tärkeät käsitteet (Selkeä suomi, inquiry.py key_concepts_html): the student's own notes on each concept,
-      in any language, kept on this device (padstore.js, keyed kc:<lesson>:<term>) and copied with one button.
    Its messages come from the page's #fl-strings block (lang/<lang>.json "js", written in by build.py). */
 (() => {
   const L10N = (() => { try { return JSON.parse(document.getElementById('fl-strings').textContent); } catch (e) { return {}; } })();
@@ -285,42 +283,6 @@
       }, () => { made = false; status.textContent = msg('pad_failed'); status.dataset.state = 'no'; });
     });
   }));
-
-  // 7. Luvun tärkeät käsitteet (teacher 2026-11-03, NOTES.md §12). The fields are plain textareas that work without
-  // this script; here each note is kept in this browser on this device in the same local store as the solutions
-  // (padstore.js, record id "kc:<lesson>:<term>", so the solutions' backup file carries the notes too), written a
-  // moment after the last keystroke, and "Kopioi muistiinpanot" copies every term with its note as plain text.
-  // Nothing is translated, assessed or sent anywhere.
-  const kc = document.querySelector('section.kc');
-  if (kc) {
-    const fields = [...kc.querySelectorAll('textarea[data-kc]')];
-    const tools = document.createElement('div'); tools.className = 'pad-tools kc-tools';
-    const copy = document.createElement('button'); copy.type = 'button'; copy.className = 'pad-copy'; copy.textContent = msg('kc_copy');
-    const state = document.createElement('p'); state.className = 'pad-status'; state.setAttribute('aria-live', 'polite');
-    const note = document.createElement('p'); note.className = 'pad-note'; note.textContent = msg('kc_note_saved');
-    tools.append(copy, state); kc.append(tools, note);
-    const store = () => (window.flPadStore ? Promise.resolve(window.flPadStore) : load('padstore.js', HERE).then(() => window.flPadStore));
-    const page = location.pathname.split('/').pop();
-    fields.forEach((f) => {
-      store().then((s) => s.get(f.dataset.kc)).then((t) => { if (t && !f.value) f.value = t; }, () => {});
-      let timer = 0;
-      const save = () => store().then((s) => s.put(f.dataset.kc, f.value.trim() ? f.value : '', page))
-        .then(() => say(state, msg('kc_saved'), 'ok'), () => say(state, msg('kc_save_failed'), 'no'));
-      f.addEventListener('input', () => { clearTimeout(timer); timer = setTimeout(save, 600); });
-      f.addEventListener('blur', () => { if (timer) { clearTimeout(timer); timer = 0; save(); } });
-    });
-    copy.addEventListener('click', () => {
-      const text = fields.filter((f) => f.value.trim()).map((f) => `${f.dataset.term}: ${f.value.trim()}`).join('\n\n');
-      if (!text) { say(state, msg('kc_empty'), 'hint'); return; }
-      const viaArea = () => {
-        const a = document.createElement('textarea'); a.value = text; a.setAttribute('readonly', ''); a.style.position = 'fixed'; a.style.opacity = '0';
-        document.body.append(a); a.select(); let ok = false; try { ok = document.execCommand('copy'); } catch (e) { ok = false; } a.remove();
-        return ok ? Promise.resolve() : Promise.reject(new Error('copy'));
-      };
-      (navigator.clipboard && navigator.clipboard.writeText ? navigator.clipboard.writeText(text).catch(viaArea) : viaArea())
-        .then(() => say(state, msg('kc_copied'), 'ok'), () => say(state, msg('kc_copy_failed'), 'no'));
-    });
-  }
 
   let opened = [];
   window.addEventListener('beforeprint', () => {

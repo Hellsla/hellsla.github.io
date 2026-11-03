@@ -420,13 +420,12 @@ separate S2 agent or review. Ten requirements, for every S2 text (theory, inquir
    chapter's central concepts, each term from `glossary.json` or the lesson's glossary (one terminology, never a second
    glossary; a symbol in a term is LaTeX, `$(t,x)$-kuvaaja`), each explanation one or two plain sentences of at most
    25 words. Only S2 languages (`check_i18n.S2_LANGS`) have them; `check_i18n.py` checks all of this.
-8. **The component** (`inquiry.key_concepts_html`, `templates/lesson.js` part 7) renders after the opening, before the
-   first stage, only in an S2 language: the fixed lead "Tutustu luvun tärkeisiin käsitteisiin. Voit kirjoittaa niiden
-   merkitykset sinulle vahvimmalla kielellä tai useammalla kielellä.", the term in bold, its explanation and a labelled
-   note field (`lang=""`: any language). Voluntary, never assessed, never auto-translated, no question about the
-   student's mother tongue.
-9. **Notes stay on the device**: saved in the browser (`padstore.js`, IndexedDB, as the solution editor), with a copy
-   button and a line that says so; no account, database, cloud or translation service.
+8. **The component** (`inquiry.key_concepts_html`) renders after the opening, before the first stage, only in an S2
+   language: the fixed lead "Tutustu luvun tärkeisiin käsitteisiin. Voit kirjoittaa niiden merkitykset sinulle
+   vahvimmalla kielellä tai useammalla kielellä.", then each term in bold with its explanation. Voluntary, never
+   assessed, never auto-translated, no question about the student's mother tongue.
+9. **No note fields on the page** (teacher 2026-11-03: "hän tekee muistiinpanot vihkoon"): the student writes the
+   meanings in a notebook. No account, database, cloud or translation service either.
 10. **Efficient production**: deterministic checks first (`check_i18n.py`, lint, `reviews.py scope`), then the existing
    reviewers on what changed; keep an S2 reword to the sentence it improves (two adjacent edited paragraphs read as
    one changed block). Never bypass a review gate.

@@ -180,7 +180,7 @@ pictures, templates and scripts are shared by every language.
   says so (teacher 2026-10-29; `scripts/test_home.py`).
 - **Selkeä suomi** (`fi-easy`, an S2 language: `check_i18n.S2_LANGS`) follows NOTES.md §12: the same physics in
   clearer Finnish, and `key_concepts` in each lesson's `meta.json` (`translate_kit.py` hands them to the translator as
-  `key_concepts.json`), rendered as *Luvun tärkeät käsitteet* with notes kept in the student's own browser.
+  `key_concepts.json`), rendered as *Luvun tärkeät käsitteet* (term and plain explanation; the student writes notes in a notebook).
 - Finnish only, for now: the agents' briefs, the lint's text rules (`lint_lesson.py`, `check_solutions.py`) and the
   reference lesson `content/_gold/`.
 
