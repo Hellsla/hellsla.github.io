@@ -19,7 +19,7 @@ esc = lambda s: _h.escape(str(s), quote=True)
 
 def _entry(task, href, where, own_module, fw):
     tags = sorted({c.get("tag") or fw["criteria"].get(c.get("key"), "") for p in task["parts"] for c in p["criteria"]} - {""})
-    mods = sorted({own_module} | {courses.course_of(l) for l in task.get("skills", [])} - {None}, key=lambda m: int(m[2:]) if m[2:].isdigit() else 99)
+    mods = sorted(({own_module} | {courses.course_of(l) for l in task.get("skills", [])}) - {None}, key=lambda m: int(m[2:]) if m[2:].isdigit() else 99)
     return {"id": task["id"], "title": task["title"], "href": href, "where": where, "points": practice.total(task),
             "modules": mods, "tags": tags, "kinds": sorted({p["kind"] for p in task["parts"]} & set(KINDS)),
             "skills": task.get("skills", []), "text": task.get("text", "")}
