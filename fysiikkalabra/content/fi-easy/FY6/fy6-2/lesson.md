@@ -228,7 +228,7 @@ Tässä $\Delta x$ on virheraja ja $x$ on lukema. Kirjain $p$ on valmistajan ilm
 Se on pelkkä luku, jolla ei ole yksikköä. Se ilmoitetaan yleensä prosentteina.
 
 ### Miksi pienin sopiva alue
-Prosenttiosa $p \cdot x$ on sama kaikilla saman suureen alueilla. Numeroiden osuus $n \cdot r$ sen sijaan pienenee kymmenesosaan, kun siirrytään kymmenen kertaa pienemmälle alueelle. Jos lukema on pieni alueeseen verrattuna, numeroiden osuus on suurin. Esimerkiksi $0{,}02\,\text{A}$:n virta alueella $10\,\text{A}$ on lähes arvaus. Jo kolme viimeisen numeron askelta on nimittäin $0{,}03\,\text{A}$.
+Tämän mittarin jännitealueilla $p$ ja $n$ ovat samat. Silloin prosenttiosa $p \cdot x$ on sama kaikilla alueilla. Numeroiden osuus $n \cdot r$ sen sijaan pienenee kymmenesosaan, kun siirrytään kymmenen kertaa pienemmälle alueelle. Jos lukema on pieni alueeseen verrattuna, numeroiden osuus on suurin. Esimerkiksi $0{,}02\,\text{A}$:n virta alueella $10\,\text{A}$ on lähes arvaus. Jo kolme viimeisen numeron askelta on nimittäin $0{,}03\,\text{A}$.
 
 <svg data-fig="error-bands" viewBox="0 0 600 312" role="img" aria-label="Kuva on mittakaavassa: jännitteen akseli välillä 1,46 V–1,54 V. Ylempi jana näyttää alueella 20 V saadun lukeman 1,50 V ja sen virherajan ±0,03 V, eli väli on 1,47 V–1,53 V. Alempi jana näyttää alueella 2 V saadun lukeman 1,500 V ja sen virherajan ±0,010 V, eli väli on 1,490 V–1,510 V. Alemman alueen jana on noin kolmasosa ylemmän pituudesta." style="max-width:100%;font-size:24px">
   <line x1="120" y1="40" x2="120" y2="252" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>

@@ -1,17 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 5cbf5e3e3414f7c9
+CONTENT-HASH: 6efd6dde9d89f690
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fig-2 (connections) — jännitemittarissa ei napaisuusmerkkejä, vaikka teksti ohjaa punaisen johdon plusnapaan — lisää pieni "+" tai jätä tekstin varaan (edellisestä kierroksesta).
-- [Minor] sim-390 / exp-koe-*-390 — kankaan selitteet ("lamppu", "vastus", "4,5 V") ovat puhelimella pieniä — suurenna selitefonttia hieman (edellisestä kierroksesta).
-- [Minor] open-tarkista-1280-2 — otsikko "Exit ticket" englanniksi suomenkielisellä sivulla — "Lähtölippu" (mallipohjan asia).
+- [Minor] lesson Kaava paragraph (theory-1280-2) — "Merkintä on sama kuin virhe-arviossa" refers to another chapter's concept without naming it — add "(luku Mittausepävarmuus)" or similar if the reference is intended.
+- [Minor] example stage 6/7 (example-390-2) — "Virheraja pyöristetään kuten virhe-arvio yhteen merkitsevään numeroon, tai kahteen, jos ensimmäinen numero on 1" is correct but dense at 390 px — optional split into two sentences.
 
 ## Checked
-- Delta: yleismittarin liitin $\text{V}\ \text{mA}$ (theory-1280-2 ja fig-3-390: sama kirjoitusasu kuin kuvassa; edellisen kierroksen Minor korjattu), oikosulku-kappale "lamppu syttyy uudelleen" (theory-1280-2, fig-4-390: kuva ei ole ristiriidassa, kuvaa vain tilanteen ennen sulakkeen palamista), Pohdinta (stage-herata-390), Ennusta 2 uusi resistanssiselite (open-ennusta-1280-1), Koe 1 intro ja avattu kytkentävalinta (exp-koe-1-390-1: valitsin ja paristot vakioina, kytkentä valittavissa, asettelu ehjä), esimerkin Järkevyys (example-390-2), Tarkista-palaute 0,8 % (open-tarkista-1280-2).
-- Ei ylivuotoa, yksiköt LaTeXina, desimaalipilkku ja \cdot johdonmukaisia muutetuissa teksteissä.
-
-## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+batch delta review: opened fig-5-390 (bands ±0,03 V and ±0,010 V match the Tulos), fig-3-390, example-390-1/2 (Tulos 2 % and 0,67 %, Sijoitus), theory-1280-1/2 (new Kaava sentence, formulas aligned), open-exit-1280 (new ≈ 0,04 V row); no overflow, units in LaTeX.

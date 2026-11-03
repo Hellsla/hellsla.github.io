@@ -1,17 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 25bd8e6cddcd5332
+CONTENT-HASH: 5b156b425ef70725
+
 ## Blocking
+
 ## Polish
-- inquiry.json esimerkki — porrastettu esimerkki on yhä pelkkä rinnankytkentä; sekakytkentä opetetaan tekstin viisivaiheisella listalla ja pakollisella siirto-tehtävällä (kolme vihjettä, ratkaisu). Riittää, mutta ensimmäinen sekakytkentä ilman vaiheistettua mallia on tiukka; harkitse siirron ratkaisun vaiheiden nostamista Sekakytkentä-osion loppuun lyhyellä luvullisella esimerkillä.
-- inquiry.json ennuste-2 — oikea vaihtoehto ("kumpikin saa saman virran kuin yksin") sisältää perustelun muiden ollessa väitteitä; muotoile kolme vaihtoehtoa yhtä pitkiksi, jotta oikea ei erotu muodosta.
-- lesson.md Kokonaisresistanssi — "sarjassa suurempi kuin yksikään vastuksista" esitetään ennen johtoa; lisää viittaus kaavaosioon.
-- inquiry.json tarkistus-1 — oikea vastaus on lyhin ja selvin; sekoita harhaluuloja vaihtoehtoihin.
+1. inquiry.json, feedback "Vastuksessa muuttuu varausten energiaa vastuksen sisäenergiaksi" — "vastuksen" twice in one sentence; smoother: "Vastuksessa varausten sähköinen energia muuttuu sisäenergiaksi".
+2. lesson.md "Sarjaankytkentä" — the sentence is now long (energy, internal energy, heat to surroundings); consider ending it at "sisäenergiaksi" and starting a new sentence "Se siirtyy lämpönä ympäristöön."
+
 ## Checked
-- Hash alussa ja lopussa 25bd8e6cddcd5332; tuki kierroksen 1 korjauksille (sekakytkentä, johtopäätöksen kehote, koe-2:n alkuarvo 100 Ω).
-- Hook ja kysymys eivät paljasta vastausta; ennusteet vaativat sitoutumista, palaute korjaa virhekäsityksen (virta ei kulu, kokonaisresistanssi ei kasva rinnan).
-- Kokeet voivat kumota ennusteet (R_2 vaihtelee, I_1, virrat ja jännitteet taulukossa); mallin arvot nimetään mallin arvoiksi ja kriteeri 4 vastaa kehotetta.
-- Sarja-, rinnan- ja sekakytkentäkaaviot, kuvaaja ja siirto-kuva luettavia 390 px:llä; siirto-kuva antaa kaikki arvot ilman vastausta.
-- Simulaatio 390 px:llä ymmärrettävä: lukemat, jännitteet ja sama virta -merkintä näkyvät, käyttöohje ja oletukset avattavissa.
-- Esimerkki vaiheittain (7 vaihetta), käänteisluvun kääntö ja järkevyystarkistus mukana.
-- Etsi virhe -vaihtoehdot perustuvat todellisiin virheisiin; tarkistukset testaavat käsitteen, laskun ja selityksen.
-- Suomi ja sanasto johdonmukaisia; työmäärä yksi oppitunti (valinnaiset kertaus, pohdi, tarkistus-3).
+batch delta review: lesson.md (Sarjaankytkentä, Yleinen virhekäsitys), inquiry.json feedback and the simulation howto ("Mitä suurempi teho vastuksessa muuttuu sisäenergiaksi, sitä oranssimpana se hehkuu"). Energy terminology is consistent with the other fy6 lessons, the howto still says what to do and what the glow means, and the changes touch no figure, number or symbol. Captures not reopened.

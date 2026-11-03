@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 0c00c93e8d59ee7c
+CONTENT-HASH: c97d32336375acfa
 
 ## Blocking
 (none)
@@ -10,3 +10,4 @@ CONTENT-HASH: 0c00c93e8d59ee7c
 ## Checked
 - Same structure and sections as the Finnish, nothing dropped; goals begin 'determine ...' under 'In this lesson, you will learn to'.
 - Natural textbook English; predictions, experiments and hints read well.
+- Re-review: shortened lamp-model subscripts (R_c, R_r, U_r) are each introduced with a word ('cold resistance', 'rated resistance', 'rated voltage'), so the formula stays readable; structure and learning goals unchanged.

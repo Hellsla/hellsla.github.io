@@ -55,7 +55,7 @@
 **Formula:** $\Delta I = p \cdot I + n \cdot r$, so $\dfrac{\Delta I}{I} = \dfrac{p \cdot I + n \cdot r}{I}$
 **Conversions:** $p = 2.0\,\% = 0.020$; all currents are in amperes.
 **Substitution:** $\Delta I = 0.020 \cdot 0.35\,\text{A} + 3 \cdot 0.01\,\text{A} = 0.007\,\text{A} + 0.03\,\text{A} = 0.037\,\text{A}$, so $\dfrac{\Delta I}{I} = \dfrac{0.037\,\text{A}}{0.35\,\text{A}} = 0.106 = 10.6\,\%$
-**Answer:** about $10\,\%$, one significant figure, because the error limit $0.037\,\text{A} \approx 0.04\,\text{A}$ is given with one figure.
+**Answer:** about $11\,\%$, two significant figures, because the first digit is 1.
 **Reasonableness:** Three steps, that is $0.03\,\text{A}$, are already almost a tenth of the reading $0.35\,\text{A}$, and the percentage part adds a little. The current $0.35\,\text{A}$ does not fit on the range $200\,\text{mA}$, so $10\,\text{A}$ is the smallest suitable range here; the error limit is still almost $11\,\%$, because the reading is small compared with the range, and a more accurate range for large currents would help.
 
 ## fy6-2-L2-02

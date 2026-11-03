@@ -374,7 +374,7 @@
       "prompt": "A student measures the reading $6.00\\,\\text{V}$ on the range $20\\,\\text{V}$. The error limit is $\\pm(0.5\\,\\% + 2\\ \\text{digits})$. The student calculates\n\n$$\\begin{aligned} &\\Delta U \\\\ &= 0.005 \\cdot 6.00\\,\\text{V} + 2\\,\\text{V} \\\\ &= 2.03\\,\\text{V} \\end{aligned}$$\n\nWhere is the error?",
       "choices": [
         {
-          "text": "Two digits means two steps of the last digit, that is $2 \\cdot 0.01\\,\\text{V}$, so $\\Delta U = 0.050\\,\\text{V}$.",
+          "text": "Two digits means two steps of the last digit, that is $2 \\cdot 0.01\\,\\text{V}$, so $\\Delta U = 0.05\\,\\text{V}$.",
           "correct": true,
           "feedback": "Correct. On the range $20\\,\\text{V}$ the last digit is a hundredth of a volt, so the share of the digits is $0.02\\,\\text{V}$ and not $2\\,\\text{V}$. The result could have been seen to be wrong at once: an error limit of $2.03\\,\\text{V}$ would be a third of the whole reading."
         },
@@ -388,7 +388,7 @@
         },
         {
           "text": "There is no error in the calculation: on the range $20\\,\\text{V}$ the meter is inaccurate, so a large error limit is correct.",
-          "feedback": "With this reading the error limit is less than a percent of the reading ($0.050\\,\\text{V} : 6.00\\,\\text{V} \\approx 0.8\\,\\%$). In the calculation one digit has been interpreted as one volt, although it is the resolution of the range $0.01\\,\\text{V}$."
+          "feedback": "With this reading the error limit is less than a percent of the reading ($0.05\\,\\text{V} : 6.00\\,\\text{V} \\approx 0.8\\,\\%$). In the calculation one digit has been interpreted as one volt, although it is the resolution of the range $0.01\\,\\text{V}$."
         }
       ]
     },

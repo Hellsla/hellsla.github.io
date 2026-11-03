@@ -374,7 +374,7 @@
       "prompt": "Opiskelija mittaa alueella $20\\,\\text{V}$ lukeman $6{,}00\\,\\text{V}$. Virheraja on $\\pm(0{,}5\\,\\% + 2\\ \\text{numeroa})$. Hän laskee\n\n$$\\begin{aligned} &\\Delta U \\\\ &= 0{,}005 \\cdot 6{,}00\\,\\text{V} + 2\\,\\text{V} \\\\ &= 2{,}03\\,\\text{V} \\end{aligned}$$\n\nMissä on virhe?",
       "choices": [
         {
-          "text": "Kaksi numeroa tarkoittaa kahta viimeisen numeron askelta eli $2 \\cdot 0{,}01\\,\\text{V}$, joten $\\Delta U = 0{,}050\\,\\text{V}$.",
+          "text": "Kaksi numeroa tarkoittaa kahta viimeisen numeron askelta eli $2 \\cdot 0{,}01\\,\\text{V}$, joten $\\Delta U = 0{,}05\\,\\text{V}$.",
           "correct": true,
           "feedback": "Oikein. Alueella $20\\,\\text{V}$ viimeinen numero on sadasosavoltti, joten numeroiden osuus on $0{,}02\\,\\text{V}$ eikä $2\\,\\text{V}$. Tuloksen olisi voinut huomata vääräksi heti: virheraja $2{,}03\\,\\text{V}$ olisi kolmasosa koko lukemasta."
         },
@@ -388,7 +388,7 @@
         },
         {
           "text": "Laskussa ei ole virhettä: alueella $20\\,\\text{V}$ mittari on epätarkka, joten suuri virheraja on oikein.",
-          "feedback": "Tällä lukemalla virheraja on alle prosentti lukemasta ($0{,}050\\,\\text{V} : 6{,}00\\,\\text{V} \\approx 0{,}8\\,\\%$). Laskussa yksi numero on tulkittu yhdeksi voltiksi, vaikka se on alueen resoluutio $0{,}01\\,\\text{V}$."
+          "feedback": "Tällä lukemalla virheraja on alle prosentti lukemasta ($0{,}05\\,\\text{V} : 6{,}00\\,\\text{V} \\approx 0{,}8\\,\\%$). Laskussa yksi numero on tulkittu yhdeksi voltiksi, vaikka se on alueen resoluutio $0{,}01\\,\\text{V}$."
         }
       ]
     },

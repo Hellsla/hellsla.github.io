@@ -228,7 +228,7 @@ where $\Delta x$ is the error limit, $x$ the reading, $p$ the percentage given b
 which is a pure number and is usually given as a percentage.
 
 ### Why the smallest suitable range
-The percentage part $p \cdot x$ is the same on all ranges of the same quantity, but the share of the digits $n \cdot r$ decreases to a tenth when we move to a range ten times smaller. When the reading is small compared with the range, the share of the digits dominates: a current of $0.02\,\text{A}$ on the range $10\,\text{A}$ is almost a guess, because three steps of the last digit are already $0.03\,\text{A}$.
+If the ranges have the same $p$ and the same $n$, as this meter's voltage ranges do, the percentage part $p \cdot x$ is the same on all of them, but the share of the digits $n \cdot r$ decreases to a tenth when we move to a range ten times smaller. When the reading is small compared with the range, the share of the digits dominates: a current of $0.02\,\text{A}$ on the range $10\,\text{A}$ is almost a guess, because three steps of the last digit are already $0.03\,\text{A}$.
 
 <svg data-fig="error-bands" viewBox="0 0 600 312" role="img" aria-label="Picture to scale: the voltage axis from 1.46 V to 1.54 V. The upper segment shows the reading 1.50 V obtained on the range 20 V and its error limit ±0.03 V, that is the interval 1.47 V–1.53 V. The lower segment shows the reading 1.500 V obtained on the range 2 V and its error limit ±0.010 V, that is the interval 1.490 V–1.510 V. The segment of the lower range is about a third of the length of the upper one." style="max-width:100%;font-size:24px">
   <line x1="120" y1="40" x2="120" y2="252" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>

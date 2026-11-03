@@ -55,7 +55,7 @@
 **Kaava:** $\Delta I = p \cdot I + n \cdot r$, joten $\dfrac{\Delta I}{I} = \dfrac{p \cdot I + n \cdot r}{I}$
 **Muunnokset:** $p = 2{,}0\,\% = 0{,}020$; kaikki virrat ovat ampeereina.
 **Sijoitus:** $\Delta I = 0{,}020 \cdot 0{,}35\,\text{A} + 3 \cdot 0{,}01\,\text{A} = 0{,}007\,\text{A} + 0{,}03\,\text{A} = 0{,}037\,\text{A}$, joten $\dfrac{\Delta I}{I} = \dfrac{0{,}037\,\text{A}}{0{,}35\,\text{A}} = 0{,}106 = 10{,}6\,\%$
-**Vastaus:** noin $10\,\%$, yksi merkitsevä numero, koska virheraja $0{,}037\,\text{A} \approx 0{,}04\,\text{A}$ ilmoitetaan yhdellä numerolla.
+**Vastaus:** noin $11\,\%$, kaksi merkitsevää numeroa, koska ensimmäinen numero on 1.
 **Järkevyys:** Kolme askelta eli $0{,}03\,\text{A}$ on jo lähes kymmenesosa lukemasta $0{,}35\,\text{A}$, ja prosenttiosa lisää vähän. Virta $0{,}35\,\text{A}$ ei mahdu alueelle $200\,\text{mA}$, joten $10\,\text{A}$ on tässä pienin sopiva alue; virheraja on silti lähes $11\,\%$, koska lukema on pieni alueeseen nähden, ja tarkempi suuren virran alue auttaisi.
 
 ## fy6-2-L2-02

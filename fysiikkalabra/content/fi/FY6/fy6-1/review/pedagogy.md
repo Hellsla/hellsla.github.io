@@ -1,22 +1,24 @@
 VERDICT: PASS
-CONTENT-HASH: eeb7638a0da72ed1
+CONTENT-HASH: b92c444bea98ff05
 
 ## Blocking
 (none)
 
 ## Polish
-- inquiry.json (virhe, feedback of the "kytkin" option) — "Kytkimen paikalla silmukassa ei ole väliä" is true, but the capture shows the switch drawn in the upper wire; the option claims it "pitäisi olla lampun ja miinusnavan välissä", which is a fair distractor; no change needed beyond keeping it. Optional: add the word "sarjassa" to the sentence.
-- fig-8 (virhe-kaavio) — the open terminal of the battery is a small circle at the bottom; a student on a phone may miss it. The feedback names it, so this is only a legibility nicety (slightly larger terminal ring).
-- lesson.md "Kaava" — "Siksi elektroneja ei lasketa yksitellen, vaan virtaa mitataan ampeereina": "Siksi" follows loosely from the previous sentence; "Elektroneja ei käytännössä lasketa yksitellen" reads more naturally.
+- inquiry.json pred-2 (correct feedback) — "Kaksi lamppua vastustaa virtaa enemmän kuin yksi" uses resistance, which the student has not met; the prediction is a guess with no basis the student could argue from. Fix: add one sentence to the prompt ("lamppu vastustaa virran kulkua; mitä enemmän vastusta silmukassa, sitä …") or name it as a pre-view of the next chapter.
+- Slot skill "kytkentäkaavioiden laatiminen" — in the lesson itself the student only reads (symbol figure) and picks (Etsi virhe, check-3) a diagram; drawing is left to the exercises. Fix: have the siirto or one check ask the student to sketch the circuit (or say in the Tehtävät text that level 1 starts with drawing).
+- inquiry.json exp-1/exp-2 — Q_A = Q_B holds by construction of the model (the model box says so honestly), so no experiment can refute the wrong options; the lesson relies on the claim "real ammeters give the same". Fix: one sentence in the johtopäätös model answer that the real check is a real ammeter before and after a lamp (fy6-2 does this).
+- lesson.md "Virran suunta" — one dense paragraph (conventional direction, electron drift, why the lamp lights at once). Fix: split into two, the second starting "Miksi lamppu syttyy heti?", so the hero question's answer is findable.
+- inquiry.json check-3 — options have empty `text`, so a screen-reader user depends on the figure descriptions alone. Fix: add a short text such as "Kaavio, jossa on kaksi lamppua ja kytkin silmukassa" per option, without giving the answer away.
 
 ## Checked
-- Hash unchanged at start and end (eeb7638a0da72ed1).
-- Changed figures: virhe-kaavio (#10) shows the error visibly (lamp's return wire joins the plus wire, minus terminal open) and the description matches; the feedback of every option repairs its own misconception.
-- check-3 figures (#11–13): a = lamps in series loop; b = same with resistor rectangles (symbol error); c = switch on a dead-end branch; each differs by one recognisable error, and the figure choices do not give away the answer in the prompt.
-- Figure 5 (kaavio) and figure 2 (piiri): current arrow direction, + on the right of the battery and arrow from + through switch to lamp are consistent; colour (violet) is backed by the label I.
-- Two reworded passages (virta direction, tiivistelmä wording) are consistent with glossary and with the exit ticket.
-- Learning path: hook question (what moves, what is used up) is answered only after pred-1/2 and the experiments; no disclosure before commitment.
-- Experiments can refute their predictions (Q_A = Q_B visible per row; lamp count changes current); controls locked and named.
-- Worked example is staged one step per stage, with unit conversion and sanity check; siirto is a new situation, hints progressive, mistakes real.
-- Exit ticket tests conductor/insulator, voltage meaning, current vs electron direction: the core ideas.
-- Finnish and case endings checked (`$10\,\text{s}$:ssa`, `$2{,}00\,\text{C}$:sta`); reading level fits 16–19.
+- Path from prior (energy conservation) to current to voltage to diagram is followable; hook question answered in Virran suunta, Virtapiiri, check-1.
+- Predictions precede evidence; wrong-option feedback repairs the misconception; exp-1/exp-2 lock and vary correctly, min 2.
+- Opening question not answered before commitment; reveal follows experiments.
+- Worked example: eight stages, one step each, units converted, estimate in Järkevyys.
+- Etsi virhe, siirto (432 kJ, both mistake values check out) and check-2 follow-ups are correct and not a copy of the example.
+- Exit ticket tests the core ideas (johde/eriste, U = E/Q, current direction).
+- Figures (captures #3–#13) legible at 390 px; colours carry meaning (blue electrons, violet current) with labels; symbols match IEC.
+- Finnish: no case or term errors found; glossary terms used as defined.
+- Phone: sim controls and readout (#2) unclipped.
+- Workload: optional items kept optional; fits one lesson.

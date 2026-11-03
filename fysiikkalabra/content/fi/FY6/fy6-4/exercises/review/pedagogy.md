@@ -1,17 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 5546f60acb4da541
+CONTENT-HASH: d4f5d2f5f70c4e20
+
 ## Blocking
+
 ## Polish
-- exercises.json fy6-4-L2-03 — "30 Ω:n vastus ja tuntematon vastus on kytketty rinnan" on yhdyssubjektin kanssa epäkieliopillinen; kirjoita "ovat kytketyt rinnan".
-- solutions.md fy6-4-L3-03 — toisen asteen yhtälö ei ole kurssin FY6 opetusta; esitä ensin vaihtoehtoinen päättely (summa 250 Ω, tulo 15 000 Ω²: mitkä luvut?) ja yhtälö toisena tapana.
-- exercises.json taso 2 — kaikki neljä ovat laskuja eikä sekakytkentää harjoitella ennen tasoa 3; yksi sekakytkentä-/päättelytehtävä tasolle 2 helpottaisi hyppyä.
-- exercises.json taso 1 — kaikki viisi ovat yhden kaavan laskuja; yksi sanallinen päättelytehtävä (mikä lamppu sammuu kun yksi irtoaa) kytkisi aloituskysymykseen.
+1. solutions.md fy6-4-L1-04 Periaate — "sen energia muuttuu lampuissa valoksi ja hehkulankojen sisäenergiaksi" is correct and clear; no change needed. Earlier polish stays open: L2-03 "ovat kytketyt rinnan", the quadratic in L3-03 shown after a plain-reasoning route, and no mixed-circuit or verbal task before level 3.
+
 ## Checked
-- Hash alussa ja lopussa 5546f60acb4da541; kierroksen 1 korjaukset (L1-04 "ensimmäisen"/"toisen", L3-01 kuvan lukeminen) tehty.
-- Tasot 5/4/3 sääntöjen mukaan, nousevat järkevästi; mikään ei toista esimerkkiä (rinnan 120 Ω ja 60 Ω).
-- Tehtävissä tilanne ensin ja kysymys omana lauseenaan; arkiset yhteydet (taskulamppu, auton valaisimet, lämmitin).
-- Ratkaisut etenevät annettu-kysytty-periaate-kaava-muunnokset-sijoitus-vastaus-järkevyys; periaate selitetty, kuvan lukeminen L3-01:ssä perusteltu.
-- Tehtävän L3-01 kuva antaa 12 V, 40, 60 ja 120 Ω ilman virtoja; kuvaus vastaa kuvaa eikä paljasta vastausta.
-- Vastaukset (670, 24, 1,5, 2,7, 110, 4,8, 35, 20, 1,3, 50, 4, 150) laskettu uudelleen ja oikein.
-- Suomi: sanasto ja sijamuodot kunnossa lukuun ottamatta L2-03:a; 1,3 kΩ:n toleranssi 3 % kattaa 1,32.
-- Ratkaisut ovat rivijaettuja kaavoja; kaappauksia ei avattu, 360 px:n asettelutesti läpäisty.
+- Delta: one Periaate sentence changed (heat and light to light and the filament's internal energy); consistent with the lesson's Yleinen virhekäsitys and other fy6 lessons.
+- The principle still states the key idea (voltages add up, same charge passes both lamps), so the solution remains followable.
+- No number, answer or figure changed; hash differs only by this wording; captures not reopened.

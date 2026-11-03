@@ -228,7 +228,7 @@ missä $\Delta x$ on virheraja, $x$ lukema, $p$ valmistajan ilmoittama prosentti
 joka on paljas luku ja ilmoitetaan yleensä prosentteina.
 
 ### Miksi pienin sopiva alue
-Prosenttiosa $p \cdot x$ on sama kaikilla saman suureen alueilla, mutta numeroiden osuus $n \cdot r$ pienenee kymmenesosaan, kun siirrytään kymmenen kertaa pienemmälle alueelle. Kun lukema on pieni verrattuna alueeseen, numeroiden osuus hallitsee: $0{,}02\,\text{A}$:n virta alueella $10\,\text{A}$ on lähes arvaus, koska jo kolme viimeisen numeron askelta on $0{,}03\,\text{A}$.
+Jos alueilla on sama $p$ ja sama $n$, kuten tämän mittarin jännitealueilla, prosenttiosa $p \cdot x$ on kaikilla alueilla sama, mutta numeroiden osuus $n \cdot r$ pienenee kymmenesosaan, kun siirrytään kymmenen kertaa pienemmälle alueelle. Kun lukema on pieni verrattuna alueeseen, numeroiden osuus hallitsee: $0{,}02\,\text{A}$:n virta alueella $10\,\text{A}$ on lähes arvaus, koska jo kolme viimeisen numeron askelta on $0{,}03\,\text{A}$.
 
 <svg data-fig="error-bands" viewBox="0 0 600 312" role="img" aria-label="Kuva mittakaavassa: jännitteen akseli välillä 1,46 V–1,54 V. Ylempi jana näyttää alueella 20 V saadun lukeman 1,50 V ja sen virherajan ±0,03 V eli välin 1,47 V–1,53 V. Alempi jana näyttää alueella 2 V saadun lukeman 1,500 V ja sen virherajan ±0,010 V eli välin 1,490 V–1,510 V. Alemman alueen jana on noin kolmasosa ylemmän pituudesta." style="max-width:100%;font-size:24px">
   <line x1="120" y1="40" x2="120" y2="252" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>

@@ -1,15 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 63948b0ff042a09c
+CONTENT-HASH: 30ef479603d38a6a
 
 ## Blocking
-(none)
 
 ## Polish
-- lesson.md Resistiivisyys paragraph — "Lämmityslangat tehdään kromnikkelistä sen suuren resistiivisyyden vuoksi" is correct; optionally add that heat comes from large R at the same current, linking to the toaster sentence below.
-- Round-1 polish items (faint lamp curve drawn from first frame, koe-4 optional and absent from conclusion, sliders shown for non-wire components, tarkistus-1 fourth option) are unchanged and still open; none blocking.
+1. inquiry.json (misconception option feedback) — "hehkulangan sisäenergiaksi" is exact for a lamp and matches the new wording used in fy6-4 and fy6-5; no change needed.
 
 ## Checked
-- Diff: inquiry.json calc now says the lamp formula is "todellisen lampun käyttäytymistä jäljittelevä malli, ei fysiikan laki"; clear, Finnish correct, consistent with "mallin arvoja" in model text.
-- Diff: units in the formula paragraphs now LaTeX ($\Omega$, $\text{V}$, $\text{m}^2$); no change in meaning.
-- Diff: konstantaani (small temperature dependence, precise resistors) and kromnikkeli (large resistiivisyys, heating wires) now correctly separated; matches the toaster paragraph and glossary.
-- Rest of lesson as approved in round 1.
+batch delta review: one feedback sentence (lamp changes electrical energy into light and the filament's internal energy, not current) is clear to a 16-19-year-old, good Finnish, consistent with the other fy6 lessons and with the feedback's message that current is not used up; no figure, number or symbol touched, so captures not reopened.
