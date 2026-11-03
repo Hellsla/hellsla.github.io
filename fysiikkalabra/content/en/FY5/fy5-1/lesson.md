@@ -1,8 +1,8 @@
 # Moment of a force and rotation of a body
 
-> **Why** does a stuck wheel nut come loose with a long wrench, when the same force on a short wrench cannot make it budge?
+> **Why** does a stuck wheel nut come loose with a long spanner, when the same force on a short spanner cannot make it budge?
 
-<svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Illustration: a garage. The rear wheel of a car has five wheel nuts. A long cross wrench has been placed on one nut, its handle reaching far to the left, and its end is pressed down by a red force arrow. On the floor to the right of the tyre lies a short spanner." class="fig-hero" style="max-width:100%;font-size:24px">
+<svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Illustration: a garage. The rear wheel of a car has five wheel nuts. A long wheel brace has been placed on one nut, its handle reaching far to the left, and its end is pressed down by a red force arrow. On the floor to the right of the tyre lies a short spanner." class="fig-hero" style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy51h-floor" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c4ccd4"/><stop offset="1" stop-color="#8a96a3"/></linearGradient><linearGradient id="fy51h-car" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d0e6fb"/><stop offset="1" stop-color="#1971c2"/></linearGradient><linearGradient id="fy51h-rim" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#c4ccd4"/></linearGradient><linearGradient id="fy51h-steel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c4ccd4"/><stop offset="1" stop-color="#8a96a3"/></linearGradient></defs>
   <rect x="0" y="0" width="1200" height="600" fill="#f6f1e6"/>
   <rect x="0" y="40" width="1200" height="2" fill="#e3dccb"/>
@@ -107,7 +107,7 @@ A door is easy to open by pushing at the handle, which is far from the hinges. I
 </svg>
 
 ### The lever arm of a force
-The turning effect is decided by the **line of action** of the force, the straight line that passes through the point of application of the force (in a wrench, the point where the hand grips) in the direction of the force. The **lever arm** $r$ of a force is the perpendicular distance from the axis of rotation to the line of action. When the force is perpendicular to the handle of the wrench, the lever arm equals the distance $d$ of the point of application from the axis. When the force is oblique, the lever arm is shorter than $d$. If the line of action passes through the axis of rotation, the lever arm is zero and the force does not rotate the body at all. This is why the force $\overline{F}_3$ along the door does not open the door.
+The turning effect is decided by the **line of action** of the force, the straight line that passes through the point of application of the force (in a spanner, the point where the hand grips) in the direction of the force. The **lever arm** $r$ of a force is the perpendicular distance from the axis of rotation to the line of action. When the force is perpendicular to the handle of the spanner, the lever arm equals the distance $d$ of the point of application from the axis. When the force is oblique, the lever arm is shorter than $d$. If the line of action passes through the axis of rotation, the lever arm is zero and the force does not rotate the body at all. This is why the force $\overline{F}_3$ along the door does not open the door.
 
 <svg data-fig="varsi" viewBox="0 0 600 340" role="img" aria-label="A spanner around a nut. The axis of rotation O is at the centre of the nut. The handle of the spanner points horizontally to the right, and a hand pulls it at a point at the distance d from the axis. The force F points obliquely up and to the right, at an angle of 60 degrees to the extension of the handle. The line of action of the force is drawn dashed in both directions. The segment drawn from the axis perpendicular to the line of action is the lever arm r of the force, and it is shorter than d. Schematic figure." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy51-varsi-steel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c4ccd4"/><stop offset="1" stop-color="#8a96a3"/></linearGradient></defs>
@@ -176,7 +176,7 @@ where $\Sigma M$ is the net moment ($\text{Nm}$) and $M_1$, $M_2$, … are the m
 </svg>
 
 ### The lever arm of an oblique force
-Often the distance $d$ of the point of application from the axis of rotation is known, together with the angle $\alpha$ that the force makes with the line from the axis to the point of application (for example, the extension of the handle of the wrench). The axis, the point of application and the foot of the lever arm form a right-angled triangle whose hypotenuse is $d$. The lever arm is the side opposite the angle $\alpha$:
+Often the distance $d$ of the point of application from the axis of rotation is known, together with the angle $\alpha$ that the force makes with the line from the axis to the point of application (for example, the extension of the handle of the spanner). The axis, the point of application and the foot of the lever arm form a right-angled triangle whose hypotenuse is $d$. The lever arm is the side opposite the angle $\alpha$:
 ```latex
 r = d\sin\alpha
 ```
@@ -249,7 +249,7 @@ M &= F d\sin\alpha \\
 **Reasonableness.** If the same force acted perpendicular to the handle, the lever arm would be the whole $0.35\,\text{m}$ and the moment $240\,\text{N}\cdot 0.35\,\text{m} = 84\,\text{Nm}$. An oblique pull gives less, because $\sin 65^\circ \approx 0.91 < 1$. So the nut would come loose with the same force if the pull were perpendicular to the handle.
 
 ## Common misconception
-The moment is not obtained by multiplying the force by the distance to the point of application, but by the distance to the line of action. The distance $d$ and the lever arm $r$ are equal only when the force is perpendicular to the line from the axis to the point of application. Another mistake is to think that a long wrench adds force. The force of the hand is the same, but with a long wrench its lever arm is longer, so the moment is greater. Loosening a nut does not require a certain force but a certain moment.
+The moment is not obtained by multiplying the force by the distance to the point of application, but by the distance to the line of action. The distance $d$ and the lever arm $r$ are equal only when the force is perpendicular to the line from the axis to the point of application. Another mistake is to think that a long spanner adds force. The force of the hand is the same, but with a long spanner its lever arm is longer, so the moment is greater. Loosening a nut does not require a certain force but a certain moment.
 
 ## Summary
 - The turning effect of a force about an axis of rotation is measured by the moment $M = Fr$, whose unit is the newton metre $\text{Nm}$.

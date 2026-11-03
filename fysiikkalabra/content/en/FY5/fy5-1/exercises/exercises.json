@@ -54,7 +54,7 @@
     {
       "id": "fy5-1-L2-02",
       "level": 2,
-      "text": "A wheel nut is being loosened with a force of $85\\,\\text{N}$ perpendicular to the handle of the wrench. The point of application is $35\\,\\text{cm}$ from the centre of the nut. What is the moment of the force about the axis of the nut?",
+      "text": "A wheel nut is being loosened with a force of $85\\,\\text{N}$ perpendicular to the handle of the spanner. The point of application is $35\\,\\text{cm}$ from the centre of the nut. What is the moment of the force about the axis of the nut?",
       "answer": 29.75,
       "unit": "Nm",
       "tolerance": 0.02
@@ -88,7 +88,7 @@
     {
       "id": "fy5-1-L3-02",
       "level": 3,
-      "text": "An adult pushes a garden gate at the handle, $0.40\\,\\text{m}$ from the hinges, with a force of $50\\,\\text{N}$ perpendicular to the gate. A child can push with a force of only $20\\,\\text{N}$. The child also pushes perpendicular to the gate. How far from the hinges must the child push so that the turning effect of his force is as large as the adult's?",
+      "text": "An adult pushes a garden gate at the handle, $0.40\\,\\text{m}$ from the hinges, with a force of $50\\,\\text{N}$ perpendicular to the gate. A child can push with a force of only $20\\,\\text{N}$. The child also pushes perpendicular to the gate. How far from the hinges must the child push so that the turning effect of the child's force is as large as the adult's?",
       "answer": 1.0,
       "unit": "m",
       "tolerance": 0.02
@@ -96,7 +96,7 @@
     {
       "id": "fy5-1-L3-03",
       "level": 3,
-      "text": "The arms of a cross wrench extend $0.20\\,\\text{m}$ from the centre of the nut on both sides. A mechanic presses the end of the left arm straight down with a force of $120\\,\\text{N}$ and pulls the end of the right arm straight up with a force of $120\\,\\text{N}$. The arms are horizontal. What is the sum of the hands' forces? What is the net moment of the hands' forces about the axis of the nut?",
+      "text": "The arms of a wheel brace extend $0.20\\,\\text{m}$ from the centre of the nut on both sides. A mechanic presses the end of the left arm straight down with a force of $120\\,\\text{N}$ and pulls the end of the right arm straight up with a force of $120\\,\\text{N}$. The arms are horizontal. What is the sum of the hands' forces? What is the net moment of the hands' forces about the axis of the nut?",
       "answer": 48,
       "unit": "Nm",
       "tolerance": 0.02

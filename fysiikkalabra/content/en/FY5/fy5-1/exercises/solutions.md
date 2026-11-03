@@ -26,7 +26,7 @@
 **Conversions:** The moment is in newton metres and the distance in metres, so the force comes directly in newtons.
 **Substitution:** $F = \dfrac{45\,\text{Nm}}{0.30\,\text{m}} = 150\,\text{N}$
 **Answer:** $150\,\text{N} = 1.5 \cdot 10^{2}\,\text{N}$, two significant figures like the moment $45\,\text{Nm}$ and the distance $0.30\,\text{m}$.
-**Reasonableness:** Check: $150\,\text{N}\cdot 0.30\,\text{m} = 45\,\text{Nm}$. The force corresponds to the weight of a body of about $15\,\text{kg}$, which an adult can pull by hand. With a wrench half as long, twice the force would be needed.
+**Reasonableness:** Check: $150\,\text{N}\cdot 0.30\,\text{m} = 45\,\text{Nm}$. The force corresponds to the weight of a body of about $15\,\text{kg}$, which an adult can pull by hand. With a spanner half as long, twice the force would be needed.
 
 ## fy5-1-L1-04
 **Given:** horizontal force $F = 40\,\text{N}$ at the point $P$; one square of the grid is $0.10\,\text{m}$
@@ -112,9 +112,9 @@
 ## fy5-1-L3-03
 **Given:** force of each hand $F = 120\,\text{N}$, the left one downwards and the right one upwards, distance of each point of application from the centre of the nut $d = 0.20\,\text{m}$; the arms are horizontal
 **Find:** sum of the hands' forces and net moment $\Sigma M$ about the axis of the nut in the unit $\text{Nm}$
-**Principle:** The forces are equal and opposite, so their sum is zero and the wrench does not move sideways. The rotation, however, is decided by the net moment. Both forces are vertical and the arms horizontal, so the lever arm of each is $d$. On the left of the axis a downward force and on the right of the axis an upward force both rotate anticlockwise, so the moments have the same sign and add up.
+**Principle:** The forces are equal and opposite, so their sum is zero and the wheel brace does not move sideways. The rotation, however, is decided by the net moment. Both forces are vertical and the arms horizontal, so the lever arm of each is $d$. On the left of the axis a downward force and on the right of the axis an upward force both rotate anticlockwise, so the moments have the same sign and add up.
 **Formula:** $\Sigma F = F - F$ and $\Sigma M = Fd + Fd$, so $\Sigma M = 2Fd$
 **Conversions:** The forces are in newtons and the distances in metres, so no conversions are needed.
 **Substitution:** $\Sigma F = 120\,\text{N} - 120\,\text{N} = 0$ and $\Sigma M = 2\cdot 120\,\text{N}\cdot 0.20\,\text{m} = 48\,\text{Nm}$
 **Answer:** The sum of the forces is zero, and the net moment is $48\,\text{Nm}$ anticlockwise, two significant figures like the distance $0.20\,\text{m}$.
-**Reasonableness:** One hand would produce $24\,\text{Nm}$, so two hands rotating in the same direction give twice the moment. Because the sum of the forces is zero, the wrench only rotates and does not push the bolt sideways, which is the advantage of a cross wrench over turning with one hand.
+**Reasonableness:** One hand would produce $24\,\text{Nm}$, so two hands rotating in the same direction give twice the moment. Because the sum of the forces is zero, the wheel brace only rotates and does not push the bolt sideways, which is the advantage of a wheel brace over turning with one hand.

@@ -1,0 +1,106 @@
+{
+  "level1": [
+    {
+      "id": "fy5-2-L1-01",
+      "level": 1,
+      "text": "Sorkkarautaa käytetään vipuna naulan vetämiseen. Raudan tukipiste on vaakasuunnassa $0{,}050\\,\\text{m}$:n päässä naulasta, ja käsi painaa rautaa pystysuoraan alas $80\\,\\text{N}$:n voimalla vaakasuunnassa $0{,}60\\,\\text{m}$:n päässä tukipisteestä. Rauta on kevyt, joten sen paino voidaan jättää huomiotta. Kuinka suurella voimalla rauta vetää naulaa ylös, kun rauta on levossa?",
+      "answer": 960,
+      "unit": "N",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-2-L1-02",
+      "level": 1,
+      "text": "Kevyt viivain on tuettu keskikohdastaan. Sen vasemmalla puolella $0{,}30\\,\\text{m}$:n päässä tukipisteestä riippuu punnus, jonka paino on $0{,}50\\,\\text{N}$. Kuinka suuri pystysuora voima tarvitaan alaspäin oikealla puolella $0{,}20\\,\\text{m}$:n päässä tukipisteestä, jotta viivain pysyy vaakasuorassa?",
+      "answer": 0.75,
+      "unit": "N",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-2-L1-03",
+      "level": 1,
+      "text": "Kottikärryjen ja kuorman yhteinen paino on $620\\,\\text{N}$, ja yhteinen painopiste on vaakasuunnassa $0{,}400\\,\\text{m}$:n päässä pyörän akselista. Kahvat ovat vaakasuunnassa $1{,}20\\,\\text{m}$:n päässä akselista. Kuinka suurella pystysuoralla voimalla kärryjen työntäjän on nostettava kahvoista, jotta kärryt pysyvät levossa pyörän ja kahvojen varassa?",
+      "answer": 207,
+      "unit": "N",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-2-L1-04",
+      "level": 1,
+      "text": "Tasa-aineinen lankku, jonka massa on $12{,}0\\,\\text{kg}$, on vaakasuorassa kahden tuen varassa. Tuet ovat lankun päissä. Kuinka suuri on kummankin tuen tukivoima?",
+      "answer": 58.9,
+      "unit": "N",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-2-L1-05",
+      "level": 1,
+      "text": "Kevyen, $0{,}80\\,\\text{m}$:n pituisen tangon toisessa päässä on $2{,}0\\,\\text{kg}$:n ja toisessa päässä $6{,}0\\,\\text{kg}$:n punnus. Kuinka kaukana kevyemmästä punnuksesta tangon yhteinen painopiste on eli mistä kohdasta tanko on tuettava, jotta se pysyy vaakasuorassa?",
+      "answer": 0.6,
+      "unit": "m",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy5-2-L2-01",
+      "level": 2,
+      "text": "Tasa-aineinen lankku, jonka pituus on $4{,}00\\,\\text{m}$ ja massa $25{,}0\\,\\text{kg}$, on vaakasuorassa kahden tuen varassa. Tuet ovat $0{,}50\\,\\text{m}$:n ja $3{,}00\\,\\text{m}$:n päässä lankun vasemmasta päästä. Kuinka suuri on vasemman tuen tukivoima?",
+      "answer": 98.1,
+      "unit": "N",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-2-L2-02",
+      "level": 2,
+      "text": "Ojan yli on asetettu tasa-aineinen $3{,}0\\,\\text{m}$:n pituinen ja $20\\,\\text{kg}$:n massainen lankku, jonka molemmat päät lepäävät maalla. Lankulla seisoo $70\\,\\text{kg}$:n henkilö $1{,}0\\,\\text{m}$:n päässä vasemmasta päästä. Kuinka suuri on lankun vasemman pään tukivoima?",
+      "answer": 560,
+      "unit": "N",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-2-L2-03",
+      "level": 2,
+      "text": "Tasa-aineisen kirjahyllyn syvyys on $0{,}400\\,\\text{m}$ ja korkeus $1{,}80\\,\\text{m}$, ja sen painopiste on keskellä. Hyllyä kallistetaan eteenpäin niin, että se nojaa vain etureunaansa. Kuinka suuri on kallistuskulma pystysuoraan nähden, kun hylly on kaatumisen rajalla eli kun se kaatuisi itsestään, jos kulma kasvaisi vielä? Vastaa asteina.",
+      "answer": 12.5,
+      "unit": "°",
+      "tolerance": 0.02,
+      "figure": "fy5-2/hylly"
+    },
+    {
+      "id": "fy5-2-L2-04",
+      "level": 2,
+      "text": "Kyynärvarsi on vaakasuorassa, ja kädessä on $5{,}0\\,\\text{kg}$:n kahvakuula $0{,}32\\,\\text{m}$:n päässä kyynärnivelestä. Kyynärvarren ja käden paino on $15\\,\\text{N}$, ja sen painopiste on $0{,}15\\,\\text{m}$:n päässä kyynärnivelestä. Hauislihas vetää kyynärvartta pystysuoraan ylös $0{,}040\\,\\text{m}$:n päässä kyynärnivelestä. Kuinka suuri on hauislihaksen voima?",
+      "answer": 450,
+      "unit": "N",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy5-2-L3-01",
+      "level": 3,
+      "text": "Maalari asettaa tasa-aineisen lankun ($4{,}00\\,\\text{m}$, $20{,}0\\,\\text{kg}$) kahden pukin päälle niin, että pukit ovat $0{,}50\\,\\text{m}$:n ja $3{,}00\\,\\text{m}$:n päässä lankun vasemmasta päästä. Maalarin massa on $60{,}0\\,\\text{kg}$. Kuinka kauas lankun vasemmasta päästä maalari voi kävellä oikeanpuoleisen pukin yli ennen kuin lankku alkaa kaatua?",
+      "answer": 3.33,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-2-L3-02",
+      "level": 3,
+      "text": "Liikkeen kyltti roikkuu vaakasuoran, tasa-aineisen tangon päässä. Tangon pituus on $1{,}20\\,\\text{m}$ ja massa $4{,}00\\,\\text{kg}$, ja sen toinen pää on kiinnitetty saranalla seinään. Kyltti, jonka massa on $8{,}00\\,\\text{kg}$, riippuu tangon uloimmasta päästä. Tangon uloimmasta päästä lähtee vaijeri seinään saranan yläpuolelle niin, että vaijerin ja tangon välinen kulma on $30{,}0^\\circ$. Kuinka suuri on vaijerin jännitysvoima?",
+      "answer": 196,
+      "unit": "N",
+      "tolerance": 0.02,
+      "figure": "fy5-2/kyltti"
+    },
+    {
+      "id": "fy5-2-L3-03",
+      "level": 3,
+      "text": "Kaksi henkilöä kantaa vaakasuorassa tasa-aineista tukkia, jonka pituus on $5{,}00\\,\\text{m}$ ja massa $90{,}0\\,\\text{kg}$. Etummainen kantaja kannattelee tukin etupäätä, ja hän jaksaa nostaa enintään $300\\,\\text{N}$:n voimalla. Kuinka kaukana tukin takapäästä takimmaisen kantajan on kannateltava tukkia, jotta etummaisen kantajan voima on tasan $300\\,\\text{N}$?",
+      "answer": 1.21,
+      "unit": "m",
+      "tolerance": 0.02
+    }
+  ]
+}

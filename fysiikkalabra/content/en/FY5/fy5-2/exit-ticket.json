@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Write the two equilibrium conditions of a body: for translation and for rotation.",
+    "a": "For translation the sum of the forces is zero, $\\Sigma\\overline{F} = \\overline{0}$. For rotation the sum of the moments of the forces is zero, $\\Sigma M = 0$, about any point."
+  },
+  {
+    "q": "The sum of the forces acting on a body is zero, but the sum of the moments is not. What happens to the body?",
+    "a": "The body starts to rotate, although its centre of mass does not start to move. For example, a ruler with equal and opposite forces on its ends along different lines rotates on the spot."
+  }
+]

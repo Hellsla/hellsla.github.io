@@ -124,7 +124,7 @@
         "d": "point of application d",
         "F": "force F",
         "alpha": "angle α",
-        "mutteri": "mutteri"
+        "mutteri": "nut"
       },
       "units": {
         "d": "m",
@@ -133,10 +133,10 @@
       },
       "values": {
         "mutteri": {
-          "tiukka": "tiukassa"
+          "tiukka": "tight"
         },
         "tulos": {
-          "1": "aukesi",
+          "1": "came loose",
           "0": "did not move"
         }
       },
@@ -156,7 +156,7 @@
         },
         {
           "key": "tulos",
-          "label": "mutteri"
+          "label": "nut"
         }
       ],
       "min": 2,
@@ -200,7 +200,7 @@
         "d": "point of application d",
         "F": "force F",
         "alpha": "angle α",
-        "mutteri": "mutteri"
+        "mutteri": "nut"
       },
       "units": {
         "d": "m",
@@ -209,10 +209,10 @@
       },
       "values": {
         "mutteri": {
-          "ruoste": "ruosteessa"
+          "ruoste": "rusted"
         },
         "tulos": {
-          "1": "aukesi",
+          "1": "came loose",
           "0": "did not move"
         }
       },
@@ -233,7 +233,7 @@
         },
         {
           "key": "tulos",
-          "label": "mutteri"
+          "label": "nut"
         }
       ],
       "min": 2,
@@ -290,7 +290,7 @@
       "type": "reflect",
       "title": "Return to your predictions",
       "optional": true,
-      "prompt": "Compare your predictions with the measurements. What did you learn about what makes a force an effective rotator? Return also to the nut at the beginning: why does a long wrench help, even though the force of the hand does not grow?",
+      "prompt": "Compare your predictions with the measurements. What did you learn about what makes a force an effective rotator? Return also to the nut at the beginning: why does a long spanner help, even though the force of the hand does not grow?",
       "predictions": [
         "pred-1",
         "pred-2"
@@ -416,7 +416,7 @@
           "feedback": "The magnitude is correct but the sign is not. The larger force rotates anticlockwise, so the net moment is positive."
         }
       ],
-      "practice": "Harjoittele kokonaismomenttia tason 2 tehtävissä.",
+      "practice": "Practise the net moment in the level 2 tasks.",
       "solution": "**Given:** radius of the steering wheel $R = 0.19\\,\\text{m}$, force of the left hand $F_1 = 25\\,\\text{N}$ anticlockwise, force of the right hand $F_2 = 15\\,\\text{N}$ clockwise, both along the rim\n\n**Find:** net moment $\\Sigma M$ about the axis in the unit $\\text{Nm}$, anticlockwise positive\n\n**Principle:** The steering wheel rotates about its axis, so the turning effect of each force is given by its moment. A force along the rim is perpendicular to the radius, so its lever arm is the radius. The net moment is the sum of the moments with their signs.\n\n**Formula:** $M_1 = F_1 R$ and $M_2 = -F_2 R$, so $\\Sigma M = F_1 R - F_2 R$\n\n**Conversions:** The forces are in newtons and the radius in metres, so no conversions are needed.\n\n**Substitution:** $\\Sigma M = 25\\,\\text{N}\\cdot 0.19\\,\\text{m} - 15\\,\\text{N}\\cdot 0.19\\,\\text{m} = 4.75\\,\\text{Nm} - 2.85\\,\\text{Nm} = 1.9\\,\\text{Nm}$\n\n**Answer:** $1.9\\,\\text{Nm}$ anticlockwise, two significant figures like the radius $0.19\\,\\text{m}$ and the forces.\n\n**Reasonableness:** Both forces have the same lever arm, so the net moment is the product of the difference of the forces, $10\\,\\text{N}$, and the radius: $10\\,\\text{N}\\cdot 0.19\\,\\text{m} = 1.9\\,\\text{Nm}$. The larger force rotates anticlockwise, so the sign is positive: together the hands' forces rotate the wheel anticlockwise."
     },
     {

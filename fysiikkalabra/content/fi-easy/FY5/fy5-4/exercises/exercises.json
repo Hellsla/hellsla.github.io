@@ -1,0 +1,109 @@
+{
+  "level1": [
+    {
+      "id": "fy5-4-L1-01",
+      "level": 1,
+      "text": "Auto ajaa moottoritien liittymän kaarteessa tasaisella nopeudella $20\\,\\text{m/s}$. Kaarteen säde on $80\\,\\text{m}$. Kuinka suuri on auton normaalikiihtyvyys?",
+      "answer": 5.0,
+      "unit": "m/s²",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-4-L1-02",
+      "level": 1,
+      "text": "Juoksija juoksee juoksuradan kaarteessa, jonka säde on $36{,}5\\,\\text{m}$. Hänen vauhtinsa pysyy kaarteessa samana, $8{,}00\\,\\text{m/s}$. Kuinka suuri on juoksijan normaalikiihtyvyys?",
+      "answer": 1.7534,
+      "unit": "m/s²",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-4-L1-03",
+      "level": 1,
+      "text": "Kivi, jonka massa on $0{,}50\\,\\text{kg}$, pyörii narun päässä vaakasuoralla ympyräradalla. Radan säde on $1{,}2\\,\\text{m}$ ja kiven ratanopeus $4{,}0\\,\\text{m/s}$. Kuinka suuri kokonaisvoima kiveen vaikuttaa?",
+      "answer": 6.6667,
+      "unit": "N",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-4-L1-04",
+      "level": 1,
+      "text": "Auto ajaa liikenneympyrässä, jonka säde on $25\\,\\text{m}$. Kiihtyvyysanturi näyttää, että auton normaalikiihtyvyys on $2{,}5\\,\\text{m/s}^2$. Kuinka suuri on auton ratanopeus?",
+      "answer": 7.9057,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-4-L1-05",
+      "level": 1,
+      "text": "Pyykinpesukoneen rummun säde on $0{,}25\\,\\text{m}$. Linkouksen aikana rummun reunalla olevan vaatteen ratanopeus on $15\\,\\text{m/s}$. Kuinka suuri on vaatteen normaalikiihtyvyys?",
+      "answer": 900.0,
+      "unit": "m/s²",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy5-4-L2-01",
+      "level": 2,
+      "text": "Pyöräilijä ajaa alikulkutunnelin notkon pohjan läpi tasaisella nopeudella $8{,}0\\,\\text{m/s}$. Pyöräilijän ja pyörän yhteinen massa on $80\\,\\text{kg}$. Notkon pohjalla tien kaaren säde on $16\\,\\text{m}$. Ilmanvastus ja vierimisvastus jätetään huomiotta. Kuinka suuri on tien tukivoima pyörään notkon pohjalla? Vastaa kilonewtoneina.",
+      "answer": 1.1048,
+      "unit": "kN",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy5-4-L2-02",
+      "level": 2,
+      "text": "Leikkikentän karuselli pyörii tasaisesti niin, että yksi kierros kestää $5{,}0\\,\\text{s}$. Lapsi istuu karusellin reunalla $3{,}0\\,\\text{m}$:n päässä keskipisteestä. Kuinka suuri on lapsen normaalikiihtyvyys?",
+      "answer": 4.7374,
+      "unit": "m/s²",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-4-L2-03",
+      "level": 2,
+      "text": "Auto, jonka massa on $1200\\,\\text{kg}$, ajaa tasaisella nopeudella $12\\,\\text{m/s}$ nyppylän yli. Nyppylän huipulla tien kaaren säde on $30\\,\\text{m}$. Ilmanvastus ja vierimisvastus jätetään huomiotta. Kuinka suuri on tien tukivoima autoon huipulla? Vastaa kilonewtoneina.",
+      "answer": 6.012,
+      "unit": "kN",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy5-4-L2-04",
+      "level": 2,
+      "text": "Moukarinheittäjä pyörittää $7{,}26\\,\\text{kg}$:n moukaria ennen heittoa. Oletetaan, että moukari kiertää vaakasuoraa ympyrää, jonka säde on $1{,}8\\,\\text{m}$. Yksi kierros kestää $0{,}50\\,\\text{s}$. Kuinka suuri kokonaisvoima moukariin vaikuttaa? Vastaa kilonewtoneina.",
+      "answer": 2.0636,
+      "unit": "kN",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy5-4-L3-01",
+      "level": 3,
+      "text": "Jäinen tie kaartaa vaakasuorassa, ja kaarteen säde on $60\\,\\text{m}$. Renkaiden ja jään välinen lepokitkakerroin on $0{,}10$. Ilmanvastus ja vierimisvastus jätetään huomiotta. Millä suurimmalla nopeudella auto voi ajaa kaarteen läpi liukumatta? Vastaa yksikössä $\\text{km/h}$.",
+      "answer": 27.6193,
+      "unit": "km/h",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy5-4-L3-02",
+      "level": 3,
+      "text": "Kiekko, jonka massa on $0{,}40\\,\\text{kg}$, on sidottu narulla pöytään kiinnitettyyn tappiin. Se liukuu sileällä pöydällä vaakasuoraa ympyrää, jonka säde on $0{,}80\\,\\text{m}$. Naru katkeaa, jos sen jännitysvoima ylittää $25\\,\\text{N}$. Kitka jätetään huomiotta. Kuinka suuri voi kiekon pyörimistaajuus enintään olla?",
+      "answer": 1.4067,
+      "unit": "Hz",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy5-4-L3-03",
+      "level": 3,
+      "text": "Tiesuunnittelija mitoittaa vaakasuoran kaarteen nopeudelle $80\\,\\text{km/h}$. Tien kitka ei saa antaa autoon suurempaa sivuttaista voimaa kuin $0{,}25$ kertaa auton paino. Silloin pito riittää myös märällä tiellä. Ilmanvastus ja vierimisvastus jätetään huomiotta. Kuinka suuri kaarteen säteen on vähintään oltava?",
+      "answer": 201.3566,
+      "unit": "m",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    }
+  ]
+}

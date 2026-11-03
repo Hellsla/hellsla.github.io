@@ -1247,7 +1247,7 @@
       "normaali": "normal",
       "nopea": "fast",
       "varsi": "Show the lever arm $r$",
-      "selite": "Red arrow: the force, dashed line: its line of action. Green dot: the nut came loose.",
+      "selite": "Red arrow: the force. Dashed line: its line of action. Green dot: nut came loose.",
       "voima": "Force $F = {{F}}\\,\\text{N}$",
       "etaisyys": "Point of application $d = {{d}}\\,\\text{m}$",
       "kulma": "Angle $\\alpha = {{a}}^\\circ$",
@@ -1280,6 +1280,24 @@
       "pitaa": "grip is enough",
       "eipida": "grip is not enough",
       "liukuu": "the car slides"
+    },
+    "fy5-2": {
+      "alusta": "Reset",
+      "tuki1": "Support 1: $x_1 = {{x}}\\,\\text{m}$",
+      "tuki2": "Support 2: $x_2 = {{x}}\\,\\text{m}$",
+      "paikka": "Box: $x_\\text{b} = {{x}}\\,\\text{m}$",
+      "massa": "Mass of the box",
+      "ei_laatikkoa": "no box",
+      "selite": "The red arrows are forces acting on the plank; the dashed line passes through the common centre of mass.",
+      "tilannekuva": "$\\text{Situation}$",
+      "voimakuvio": "$\\text{Free-body diagram: plank}$",
+      "ei_tasapainoa": "$\\text{The plank topples: no equilibrium}$",
+      "tasapaino": "the plank is in equilibrium",
+      "raja": "the plank is at the limit of toppling",
+      "kaatuu1": "the plank topples over support 1",
+      "kaatuu2": "the plank topples over support 2",
+      "lukemat": "$N_1 = {{N1}}\\,\\text{N}$, $N_2 = {{N2}}\\,\\text{N}$, $G = {{G}}\\,\\text{N}$, $F_\\text{b} = {{F}}\\,\\text{N}$<br>$x_\\text{cm} = {{x}}\\,\\text{m}$: {{tila}}<br>Moments about support 1: $M_{N_2} = {{M2}}\\,\\text{Nm}$, $M_G = {{MG}}\\,\\text{Nm}$, $M_\\text{b} = {{Mk}}\\,\\text{Nm}$",
+      "lukemat_kaatuu": "$G = {{G}}\\,\\text{N}$, $F_\\text{b} = {{F}}\\,\\text{N}$<br>$x_\\text{cm} = {{x}}\\,\\text{m}$: <strong>{{tila}}</strong>"
     }
   },
   "practice": {
