@@ -1,22 +1,20 @@
-VERDICT: FAIL
-CONTENT-HASH: dee2764a7a7b4845
+VERDICT: PASS
+CONTENT-HASH: ee661fbb3a2d0ed1
 
 ## Blocking
-- [Major] inquiry.json exp-1 and exp-2 (Alkutila line and table headers, captures exp-exp-1-390, exp-exp-2-390, stage-tutki-390-2) — the Alkutila line shows "suunta φ = 0 °" and the exp-2 table header "suunta φ" with a plain-text φ, and "0 °" with a space; headers read "$B_m$ (µT)" with an italic subscript m and a plain-text unit, while the lesson writes $B_\text{m}$ and $\mu\text{T}$ — a plain symbol where the student looks is a blocking finding (NOTES §1), and the notation differs from the rest of the chapter — make the build convert φ and µ (add φ to the SYMBOL pattern in scripts/inquiry.py, and turn "B_m (µT)" into $B_\text{m}$ with $(\mu\text{T})$), or write the labels so they come out as maths: "suunta $\varphi$", "$\varphi = 0^\circ$".
 
 ## Polish
-- [Minor] sim-390 / sim-1280 and experiment panels — the "Näytä magneetin kenttäviivat" and "Näytä kompassiruudukko" checkboxes sit above their label text, not beside it, and read as detached — put the box and label on one line.
-- [Minor] fig vector-sum — the upper left of the figure is empty, since the content sits in the lower half and "pohjoinen" is in the corner — move the vectors up or lower the viewBox height.
-- [Minor] fig inclination — the label $I$ touches the dashed vertical line — move the label about 6 px right.
-- [Minor] lesson.md Ferromagnetismi — "vastakkaisnimisen navan" next to "erinimiset" elsewhere, and the clumsy "raudalla noin 770 °C:seen" — use "erinimisen" and "raudalla noin 770 °C:n lämpötilaan".
-- [Minor] hero at 390 px — the compass and magnet, the subject, are small, so the deflected needle is hard to see — enlarge the subject slightly.
+- [Minor] lesson.md, Ferromagnetismi, last paragraph — "Kuumennus riittävän korkeaan lämpötilaan, raudalla noin $770\,{}^\circ\text{C}$:n lämpötilaan, …" repeats "lämpötilaan" and stands as a one-sentence paragraph — e.g. "Riittävän korkeassa lämpötilassa, raudalla noin $770\,{}^\circ\text{C}$:ssa, atomien lämpöliike sekoittaa järjestyksen, ja ferromagnetismi katoaa."
+- [Minor] lesson.md, Kaava, paragraph after the table — "Maan kentän arvo (…) on World Magnetic Model 2025 -mallista" mixes English and Finnish and lacks a verb of origin — "on peräisin World Magnetic Model 2025 -mallista (Maan magneettikentän malli; NOAA ja British Geological Survey)".
+- [Minor] lesson.md, Maan magneettikenttä — "Suomessa nykyään etelässä noin $10^\circ$ ja Lapissa noin $15^\circ$ itään" — "etelässä" can be read as a direction — write "Etelä-Suomessa".
+- [Minor] sim at 390 px and 1280 px (sim-390, sim-1280, lab-1280-1) — the two checkboxes sit above their labels, so the box reads as belonging to the line above — put the box and label on one line (shared template; fix there).
 
 ## Checked
-- Opened at readable size: top-390, intro-1280, theory-1280-1 to 5, and figures 2, 8, 10, 12, 14, 17, 19, 23 (fig-N-390) and 30.
-- sim-390, sim-1280, example-390-1 and -2, stage-herata, stage-ennusta-390-1, stage-tutki-390-1 and -2, exp-1 and exp-2 at 390, stage-sovella-390-1, stage-tarkista-390-1.
-- open-ennusta-1280-1, open-tarkista-1280-1, open-exit-1280; contact sheets 3 and 4.
-- Source lines of the vector-sum and inclination figures, to check that the vectors are to scale. They are: 14:20 and 14:52.
-- The exercise-set captures are covered in exercises/review/visual.md.
+- Contact-1 and the 390 px captures: top-390, fig-2 (hero), fig-8, fig-10, fig-12, fig-14, fig-17, fig-19, fig-23, fig-30. Each reads at 390 px, nothing is clipped, and the labels are LaTeX at 24 px.
+- Geometry: the arrows in the vector-sum and inclination figures follow the stated scales, 14:20 and 14:50. The field-line arrows in bar-field and earth-field run from N to S outside the magnet. The Earth figure puts S at the geographic north.
+- 1280 px: intro, theory-1-4, fig-row, sim-1280, lab-1280-1 (experiments beside the sim), open-ennusta-1, open-tarkista-1 (the two-magnets figure in the task, its feedback open) and open-exit.
+- Remaining 390 px captures: sim-390, example-390-1 and 2 (all 7 steps, the aligned chains read well), stage-tutki-390-1, exp-exp-1-390-1, stage-selita-390-4 and 5 (table, display formulas).
+- Formulas render without red source. Every number has its unit in LaTeX. No ×/÷. The decimal comma is correct.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 4

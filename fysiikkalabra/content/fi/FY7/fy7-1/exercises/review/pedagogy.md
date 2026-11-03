@@ -1,19 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 4bbed523e6b8dec9
+CONTENT-HASH: aca1e5e86a2b06fb
 
 ## Blocking
 
 ## Polish
-- exercises.json:fy7-1-L1-05 — Earth's field is present but not mentioned; far from the pole the needle would not point away from the magnet. Fix: "Maan kenttä jätetään huomiotta" or "aivan navan vieressä".
-- exercises.json:fy7-1-L3-01 — the key insight (needle flips to point south) is not graded, because the numeric answer 11 µT is the only checked value. Fix: ask for the direction as a separate part or state "(neulan suunta kerrotaan ratkaisussa)"; the solution is good.
-- exercises.json:fy7-1-L2-01 — same task as the worked example with unknown and given swapped, and the siirto item repeats it again. Fix: replace L2-01 with a task starting from θ (find B_m) in a new setting, e.g. two magnets or a phone compass.
-- exercises.json:fy7-1-L2-02 — three perpendicular components go beyond the lesson's two-component Pythagoras; the solution explains the extension, but the lesson text does not. Fix: one clause in the theory ("kolmessa ulottuvuudessa sama lause").
-- solutions.md:fy7-1-L3-03 — the "miksi kompassi toimii huonommin" part has no graded answer; the explanation is correct but the student's own answer is unchecked. Fix: acceptable as is; add a note that the reason is the weak horizontal component.
+- exercises.json:fy7-1-L3-03 — Helsinki is 53 µT here but 52 µT in the lesson table and example; "82,5°" suggests false precision for a "noin" value. Fix: use 52 µT and 82° with answer 1,87 as before, or say "kurssin arvo 52 µT" in the lesson.
+- exercises.json:fy7-1-L3-01 — answer is now -11 µT; the sign convention is stated, but a student may enter 11. Fix: add "(vastaus voi olla negatiivinen)" or accept the sign as the graded part in the solution note.
+- exercises.json:fy7-1-L2-01 — still repeats the worked example with unknown and given swapped (earlier Polish, unchanged).
+- exercises.json:fy7-1-L2-02 — three-component Pythagoras not in the lesson (earlier Polish, unchanged).
 
 ## Checked
-- Levels rise sensibly: L1 single step or concept, L2 two-step with unit/angle reasoning, L3 transfer (sign flip, steel clip, two cities).
-- All answers recomputed and correct (60 000; 13,7; 50,0; 60,8; 49,7; 52,3; 9,82; 11; 1,87); tolerances fit rounding.
-- Solutions follow Annettu-Kysytty-Periaate-Kaava-Sijoitus-Vastaus-Järkevyys; principle explained, nothing skipped, sanity checks are real.
-- Misconceptions addressed: 6/60 as ratio of angles (L2-04), poles from cutting (L1-04), cos/sin mix (L1-02, L2-03).
-- Exit ticket tests compass definition, units and non-crossing lines; core ideas covered (see Polish in the lesson report for item 2).
-- Finnish: case endings after number+unit correct.
+- L1-05: "Maan kenttä jätetään huomiotta" removes the earlier ambiguity; the answer (away from the magnet) is now unambiguous.
+- L2-03: 52/sin 77° = 53,4 µT recomputed; 53,4 cos 77° = 12,0 µT, so the sanity check is true.
+- L3-01: the north-positive sign convention makes the key insight (needle flips) part of the checked value; solution explains how the sign gives the direction.
+- L3-02: "riittävän kuumaksi" replaces "punahehkuinen", which is more accurate; the model answer names the Curie temperature and random re-formation of domains.
+- L3-03: 53 cos 74° / (55 cos 82,5°) = 14,61 / 7,179 = 2,03 recomputed; the "miksi" part now has a model answer with a criterion (horizontal component, not total field).
+- answers.py agrees with exercises.json and solutions.md for all changed tasks.
+- Finnish: "$53\,\mu\text{T}$", "$770\,{}^\circ\text{C}$" formatting and cases correct.

@@ -1,16 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 6a18b2728fb388dc
+CONTENT-HASH: a3578858afaf37ff
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] graph `fy7-4/balance-points` (L2-02) — the fitted line runs solid beyond the last measured point (5 A) to 6 A — draw the part beyond 5 A dashed (NOTES §3).
+- [Minor] L3-02 — the question still opens "Kuinka suuri voima", yet the expected answer is the signed value −270 N; the added sign rule is clear, but "Mikä on voiman etumerkillinen arvo" would match it — optional.
+- [Minor] L1-04 / L3-03 — "(WMM2025-malli, NOAA/BGS)" is a bare source tag in the task; fine, but a consistent form (both with the tag, as now) should be kept in the solutions' Annettu line too.
 
 ## Checked
-- open-exercises-1280-1 (L1-01 whole solution card), open-exercises-L2-1280-1 (L2-01) and -2 (L2-02 graph, solution start), open-exercises-L3-1280-1 (L3-01)
-- balance-points graph: axis titles with units, ticks, gridlines, markers distinct from the line, description matches the picture and does not give B away
-- Maths layout: aligned conversion rows, fractions with units in Sijoitus, equals signs in one column, nothing clipped; solutions.md read in full for LaTeX units and Finnish
+- open-exercises-L2-1280-2 (L2-02, balance-points graph): the fitted line now stops at 5 A as solid and continues dashed to 6 A; markers are distinct from the line, scatter about the line visible, axis titles with units, ticks and gridlines legible; the previous Minor is resolved. Solution "Kuvaajan lukeminen" reads clearly and matches the picture (1,47 g slightly below the line)
+- open-exercises-L2-1280-3 (L2-02 solution maths: aligned rows, fractions, units)
+- open-exercises-L3-1280-2 and -3 (L3-02 sign rule in task, Kysytty and Vastaus "−270 N" with the rule explained; L3-03 new values 53 µT, 74°, 1,8 kA, Sijoitus chain in rows, nothing clipped)
+- open-exercises-1280-2 and -3 (L1-02 unchanged layout; L1-03 "Virtavaaka" wording in task and Periaate)
+- L1-04 changed text read from the diff (53 µT, 74°, 1,0189 N chain, new Järkevyys sentence): units and angles in LaTeX, consistent significant figures
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 5
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5
