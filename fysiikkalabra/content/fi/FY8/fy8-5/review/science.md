@@ -1,21 +1,18 @@
-VERDICT: FAIL
-CONTENT-HASH: 2af55821b25eb665
+VERDICT: PASS
+CONTENT-HASH: 9bd5989c80f873f4
 
 ## Blocking
-- lesson.md:177 and lesson.md:1401 (Tiivistelmä) — **B**: "Mitä enemmän aallossa on solmuja, sitä suurempi on tilan energia" is stated for atoms in general. It is true only in hydrogen. In K and Ca, 4s (3 nodes) lies below 3d (2 nodes), which students know from chemistry. — Fix: write "Vetyatomissa: mitä enemmän solmuja, sitä suurempi energia" in both places, or "saman muotoisilla tiloilla (s, p, …)".
 
 ## Polish
-- lesson.md:179 (string figure aria-label) and inquiry.json:355 (tarkistus-2 feedback "kuten kielessä, jokainen lisäsolmu nostaa värähtelytavan energiaa") — a string's energy also depends on its amplitude; the nodes set the frequency. — Write "taajuus" for the string.
-- lesson.md:245 (cloud figure) — the figure is a projection: 48 grey dots appear inside the 0,14 nm circle, but the aria-label says the grey dots are outside. — Add "läpivalaisu: osa harmaista on rajan edessä tai takana", as the sim's model box already says.
-- sim.js:193 `boundary()` — for 2s it draws only the outer circle (R = 0,483 nm). The region's gap around the node, r ≈ 0,096–0,118 nm, is not drawn, so grey hits there appear inside the tinted disk. — Draw the two inner circles, or say this in the model box.
-- inquiry.json:387 (tarkistus-3 Järkevyys) — "noin kolminkertainen näkyvän valon fotoneihin verrattuna": 10,2 eV is 3–6 times 1,6–3,3 eV. — Write "noin 3–6-kertainen".
-- lessons/FY8/fy8-5/lesson-answers.py:74 — the key "tarkistus-2" computes tarkistus-3 (10,2 eV). — Rename it.
 
 ## Checked
-- Recomputed: 656,47 nm; 10,2 eV and the mistakes 17,0 and 3,4; n², 2n². 1s: R90 = 0,1408 nm and peak a0. 2s: node 5,27 % and peak 0,277 nm. 2p: peak 0,212 nm. R90 is 0,483 nm for both 2s and 2p.
-- Both figures that say they are to scale are to scale (cloud and energy levels).
-- Ran sim.js sampling headless, seeds 1–5. The samplers and thresholds are correct, and seed 1 with N = 1000 gives 82 outside, which matches the feedback.
-- 1s rpeak is 0,05 in every seed. 2s rpeak is 0,25–0,29 and 2p 0,19–0,23, which matches "0,2–0,3 nm" in johtopäätös.
-- koe-1 and koe-2 each vary only one parameter, and simState holds every measured key.
-- Every prediction, Etsi virhe and check has exactly one correct option, and the distractors' feedback is right. siirto: 2700, σ ≈ 39.
-- No de Broglie or Schrödinger anywhere. The model stays qualitative, as the teacher decided.
+- Round-1 fixes are in: "vetyatomissa" now qualifies "mitä enemmän solmuja, sitä suurempi energia" in the Ydinajatus, the Tiivistelmä and tarkistus-2, with "saman muotoisiin tiloihin" for many-electron atoms. The string figure and feedback say "taajuus", the cloud figure is marked "läpivalaisu", tarkistus-3 says "3–6-kertainen", and the lesson-answers key is renamed.
+- sim.js 2s boundary: the even-odd path of three circles (R, g1, g0) leaves the gap at 0,0961–0,1177 nm untinted, which matches the model box and sim-spec. The gap radii agree with my exact radial integration.
+- Recomputed in one script (my own integrals, independent of lesson-answers.py): 656,47 nm; 10,2 eV, with the mistakes 17,0 and 3,4 eV; ratios 3,1 and 6,4. 1s R50 is 0,0707 nm and R90 0,1408 nm. The 2s node holds 5,27 %, and the region's inner ball 5,25 %. R90 is 0,4831 nm for 2s and 0,4829 nm for 2p. The peaks are a0, 0,277 nm and 0,212 nm.
+- Ran the sim's own sampler headless, seeds 1–5. 1s gave N = 10 → 8, 9, 9, 10 and N = 1000 → 918, 901, 908, 903, which matches the feedback of ennuste-1. The 1s rpeak was 0,05 nm in every seed, and about 90 of 5000 hits fell beyond 0,2 nm. The 2s rpeak was 0,25–0,29 nm and the 2p 0,19–0,23 nm, so johtopäätös's "0,2–0,3 nm" and "0,48 nm" hold.
+- Samplers are correct: 1s Γ(3, ½), 2p Γ(5) with μ = ∛(2u − 1) for the cos² law, and 2s an inverse CDF. binProb normalisations 0,25, 8 and 24 are right.
+- Binomial claims: P(8–10 of 10) = 93 %, σ(1000) = 0,95 points, siirto 2700 with σ ≈ 39.
+- Figures: the cloud figure (90 % circle 0,14 nm against the 0,1 nm bar) and the energy-level figure are to scale. The nodes figure is labelled "ei mittakaavassa" and shows the right node counts.
+- koe-1 varies only N and koe-2 only orb, and simState holds k, out, frac, rpeak and R.
+- Every choice item (kertaus, ennusteet, virhe, tarkistus-1/2) has exactly one correct option, and the distractors' feedback is right. The exit ticket (N: 1s² 2s² 2p³) is correct.
+- Scope: no de Broglie and no Schrödinger equation. E_n is given as data, and the model is qualitative (standing waves, probability, threshold region), as the teacher decided.

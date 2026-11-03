@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy8-1-L1-01",
+      "level": 1,
+      "text": "A green laser pointer emits light with a wavelength of $532\\,\\text{nm}$. Use the values $h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^8\\,\\text{m/s}$ and $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$. What is the energy of one photon? Give the answer in joules.",
+      "answer": 3.73e-19,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-1-L1-02",
+      "level": 1,
+      "text": "A microwave oven heats food with electromagnetic radiation of frequency $2.45\\,\\text{GHz}$. The Planck constant is $h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$. What is the energy of one microwave photon? Give the answer in joules.",
+      "answer": 1.62e-24,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-1-L1-03",
+      "level": 1,
+      "text": "The energy of a photon is $3.2 \\cdot 10^{-19}\\,\\text{J}$. The electronvolt is $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$. What is the energy of the photon in electronvolts?",
+      "answer": 2.0,
+      "unit": "eV",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-1-L1-04",
+      "level": 1,
+      "text": "Water and surfaces are disinfected with UV-C lamps whose radiation has a wavelength of $254\\,\\text{nm}$. Use the values $h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^8\\,\\text{m/s}$ and $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$. What is the energy of one photon? Give the answer in electronvolts.",
+      "answer": 4.88,
+      "unit": "eV",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-1-L1-05",
+      "level": 1,
+      "text": "The work function of zinc is $4.31\\,\\text{eV}$. Photons with an energy of $5.00\\,\\text{eV}$ hit a zinc plate. What is the maximum kinetic energy of the released electrons? Give the answer in electronvolts.",
+      "answer": 0.69,
+      "unit": "eV",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy8-1-L2-01",
+      "level": 2,
+      "text": "The work function of caesium is $2.14\\,\\text{eV}$. Use the values $h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^8\\,\\text{m/s}$ and $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$. What is the longest wavelength of light that still releases electrons from caesium? Give the answer in nanometres.",
+      "answer": 579,
+      "unit": "nm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-1-L2-02",
+      "level": 2,
+      "text": "A red laser pointer emits light with a wavelength of $650\\,\\text{nm}$ at a power of $5.0\\,\\text{mW}$. Use the values $h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$ and $c = 2.998 \\cdot 10^8\\,\\text{m/s}$. How many photons does the laser emit per second?",
+      "answer": 1.6e+16,
+      "unit": "1/s",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy8-1-L2-03",
+      "level": 2,
+      "text": "A far-ultraviolet lamp emits radiation with a wavelength of $222\\,\\text{nm}$. The radiation hits a magnesium surface whose work function is $3.68\\,\\text{eV}$. Use the values $h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^8\\,\\text{m/s}$ and $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$. What is the maximum kinetic energy of the released electrons? Give the answer in electronvolts.",
+      "answer": 1.91,
+      "unit": "eV",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-1-L2-04",
+      "level": 2,
+      "text": "An unknown metal is illuminated with ultraviolet radiation of wavelength $300\\,\\text{nm}$. The maximum kinetic energy of the released electrons is measured to be $1.85\\,\\text{eV}$. Use the values $h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^8\\,\\text{m/s}$ and $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$. What is the work function of the metal? Give the answer in electronvolts.",
+      "answer": 2.28,
+      "unit": "eV",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy8-1-L3-01",
+      "level": 3,
+      "text": "A sodium surface with a work function of $2.28\\,\\text{eV}$ is illuminated with ultraviolet radiation of wavelength $350\\,\\text{nm}$. The mass of the electron is $9.109 \\cdot 10^{-31}\\,\\text{kg}$. Use the values $h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^8\\,\\text{m/s}$ and $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$. What is the speed of the fastest released electrons? Give the answer in the unit $\\text{m/s}$.",
+      "answer": 666000.0,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-1-L3-02",
+      "level": 3,
+      "text": "A sodium surface with a work function of $2.28\\,\\text{eV}$ is illuminated with very dim blue light of intensity $1.0 \\cdot 10^{-6}\\,\\text{W/m}^2$. In the experiment electrons start to be released immediately. Investigate what the wave model would predict: assume that one electron collects all the energy that hits an area of $1.0 \\cdot 10^{-20}\\,\\text{m}^2$ at its location (roughly the cross-sectional area of one atom) and that no energy is lost anywhere. $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$. How long would the electron have to collect energy before it has received an amount equal to the work function? Give the answer in days.",
+      "answer": 420,
+      "unit": "days",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-1-L3-03",
+      "level": 3,
+      "text": "An unknown metal is illuminated with two different frequencies, and the maximum kinetic energy of the released electrons is measured. At the frequency $7.0 \\cdot 10^{14}\\,\\text{Hz}$ it is $0.60\\,\\text{eV}$ and at the frequency $1.00 \\cdot 10^{15}\\,\\text{Hz}$ it is $1.84\\,\\text{eV}$. The maximum kinetic energy depends linearly on the frequency. What is the threshold frequency of the metal, below which no electrons are released? Give the answer in hertz.",
+      "answer": 550000000000000.0,
+      "unit": "Hz",
+      "tolerance": 0.02
+    }
+  ]
+}
