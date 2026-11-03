@@ -21,7 +21,7 @@
 ## fy6-11-L1-03
 **Given:** voltage between the plates $U = 600\,\text{V}$, plate distance $d = 0.040\,\text{m}$
 **Find:** the electric field strength $E$ in the unit $\text{V/m}$
-**Principle:** Between parallel plates the field is uniform. When a charge moves from one plate to the other, the field does the work $qEd$, and according to voltage the same work is $qU$, so the electric field strength is the voltage divided by the plate distance.
+**Principle:** Between parallel plates the field is uniform. When a charge moves from one plate to the other, the field does the work $qEd$, and by the definition of voltage the same work is $qU$, so the electric field strength is the voltage divided by the plate distance.
 **Formula:** $qEd = qU$, so $E = \dfrac{U}{d}$
 **Conversions:** Not needed: the distance is in metres.
 **Substitution:** $E = \dfrac{600\,\text{V}}{0.040\,\text{m}} = 15\,000\,\text{V/m}$

@@ -64,7 +64,7 @@
       "level": 2,
       "text": "The voltage between the plates of an air purifier is $3.0\\,\\text{kV}$, and the distance of the plates is $6.0\\,\\text{mm}$. A dust particle coming between the plates has a charge of $1.6 \\cdot 10^{-17}\\,\\text{C}$ and a mass of $4.0 \\cdot 10^{-14}\\,\\text{kg}$. How many times larger is the electric force on the particle than its weight?",
       "answer": 20.38736,
-      "unit": "kertaa",
+      "unit": "times",
       "tolerance": 0.03
     },
     {
