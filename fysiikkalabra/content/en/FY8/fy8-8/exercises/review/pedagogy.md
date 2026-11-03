@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 8b90c363e2e77d09
+CONTENT-HASH: c4a1809b541e08ee
+
 ## Blocking
-(none)
+
 ## Polish
-- solutions.md L2-01 Reasonableness — still a long digression (rounding of levels, recoil) that a student who could not solve the task will not follow; shorten to "close to the 1173.2 keV line of cobalt-60".
-- solutions.md L2-02 — colon division (`661 700 eV : 2.2545 eV`); write / or a fraction.
-- exercises.json — all 12 tasks numeric; replace one level 1 count with "write the decay equation" or a decay-mode choice.
-- fy8-8-L2-03 — ratio to green light is a sideways step from the slot's goals; L2-02/L2-04 cover similar skills.
-- Packet's exercise brief block was empty; regenerate it.
+- solutions.md L2-03 Reasonableness — "the difference between the levels of the nucleus is hundreds of thousands of times greater ... as the theory of the chapter says" is still a long sentence for a student who could not solve the task; shorten to "A gamma photon carries hundreds of thousands of times the energy of a visible photon."
+- solutions.md L2-03 Substitution — `661 700 eV : 2.2545 eV` still uses the colon for division; write a fraction.
+- Carried over, not blocking: all 12 tasks are numeric; one level 1 task could be a decay-mode choice or "write the equation".
+
 ## Checked
-- Delta fixes judged: L2-01 "Its energy is a little smaller ..." now correct wording; L2-02 "For this 662 keV line ..." removes the over-generalisation; L2-04 "any three levels give three transitions" is correct (hydrogen error gone).
-- Levels 5/4/3, answers unchanged and correct.
+- Delta judged: only L2-03's Reasonableness changed ("this 662 keV line" to "this gamma line"); the wording is correct and general, answer 2.93e5 unchanged and correct (hc/λ = 2.2545 eV).
+- Levels still 5/4/3; no other file changed.
 - Hash identical at start and end.
