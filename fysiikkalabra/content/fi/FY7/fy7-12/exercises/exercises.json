@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy7-12-L1-01",
+      "level": 1,
+      "text": "Uima-altaan pohjalla oleva lamppu lähettää valoa vedenpintaa kohti. Veden taitekerroin on $1{,}33$ ja ilman $1{,}00$. Kuinka suuri on veden ja ilman rajapinnan rajakulma?",
+      "answer": 48.7535,
+      "unit": "°",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-12-L1-02",
+      "level": 1,
+      "text": "Timantin taitekerroin on $2{,}42$. Kuinka suuri on timantin ja ilman rajapinnan rajakulma?",
+      "answer": 24.4075,
+      "unit": "°",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-12-L1-03",
+      "level": 1,
+      "text": "Akvaarion lasiseinän taitekerroin on $1{,}52$, ja sen sisäpintaa vasten on vettä, jonka taitekerroin on $1{,}33$. Kuinka suuri on rajakulma, kun valo tulee lasista veteen?",
+      "answer": 61.045,
+      "unit": "°",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-12-L1-04",
+      "level": 1,
+      "text": "Valokuidun lasin taitekerroin on $1{,}47$. Kuinka suuri on valon nopeus kuidun lasissa? Valon nopeus tyhjiössä on $3{,}00 \\cdot 10^8\\,\\text{m/s}$. Anna vastaus kilometreinä sekunnissa.",
+      "answer": 204081.6327,
+      "unit": "km/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-12-L1-05",
+      "level": 1,
+      "text": "Valopulssi etenee valokuidussa nopeudella $2{,}0 \\cdot 10^8\\,\\text{m/s}$. Kuinka kauan pulssilta kestää kulkea $100\\,\\text{km}$:n pituinen kuitu? Anna vastaus millisekunteina.",
+      "answer": 0.5,
+      "unit": "ms",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy7-12-L2-01",
+      "level": 2,
+      "text": "Valokuidun ytimen taitekerroin on $1{,}47$, ja ytimen ja kuoren rajapinnan rajakulma on $82{,}0^\\circ$. Kuinka suuri on kuoren taitekerroin?",
+      "answer": 1.4557,
+      "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-12-L2-02",
+      "level": 2,
+      "text": "Kiikarissa valo käännetään lasiprismalla, jonka poikkileikkaus on suorakulmainen tasakylkinen kolmio. Valo tulee prisman sisällä pitkälle sivutahkolle $45^\\circ$:n tulokulmassa, ja sen pitää kokonaisheijastua siitä. Prisman ulkopuolella on ilmaa. Kuinka suuri prisman lasin taitekertoimen on vähintään oltava?",
+      "answer": 1.4142,
+      "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-12-L2-03",
+      "level": 2,
+      "text": "Läpinäkyvän muovisauvan ja ilman rajapinnan rajakulmaksi mitattiin $42{,}0^\\circ$. Kuinka suuri on valon nopeus muovissa? Valon nopeus tyhjiössä on $3{,}00 \\cdot 10^8\\,\\text{m/s}$. Anna vastaus kilometreinä sekunnissa.",
+      "answer": 200739.1819,
+      "unit": "km/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-12-L2-04",
+      "level": 2,
+      "text": "Kahden kaupungin välinen valokuitu on $250\\,\\text{km}$ pitkä, ja kuidun lasin taitekerroin on $1{,}46$. Kuinka kauan kuidun akselin suuntaisesti kulkevalta valopulssilta kestää kulkea kaupungista toiseen? Valon nopeus tyhjiössä on $3{,}00 \\cdot 10^8\\,\\text{m/s}$. Anna vastaus millisekunteina.",
+      "answer": 1.2167,
+      "unit": "ms",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy7-12-L3-01",
+      "level": 3,
+      "text": "Uima-altaan pohjalla on pieni lamppu $1{,}80\\,\\text{m}$:n syvyydellä. Veden taitekerroin on $1{,}33$. Pimeällä altaan yläpuolelta katsottuna lampun valoa tulee vedenpinnasta ulos vain ympyrän muotoiselta alueelta, jonka keskipiste on suoraan lampun yläpuolella. Ympyrän ulkopuolella pinta näyttää tummalta. Kuinka suuri on ympyrän säde?",
+      "answer": 2.0528,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-12-L3-02",
+      "level": 3,
+      "text": "Valokuidun ytimen taitekerroin on $1{,}480$ ja kuoren $1{,}460$. Kuituun lähetetään lyhyt valopulssi. Osa valosta kulkee kuidun akselin suuntaisesti, ja osa etenee siksakkia niin, että se osuu ytimen ja kuoren rajapintaan juuri rajakulmassa. Kuinka paljon myöhemmin siksakkia kulkeva valo saapuu $1{,}00\\,\\text{km}$:n pituisen suoran kuidun päähän kuin akselin suuntainen valo? Valon nopeus tyhjiössä on $3{,}00 \\cdot 10^8\\,\\text{m/s}$. Anna vastaus nanosekunteina.",
+      "answer": 67.5799,
+      "unit": "ns",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-12-L3-03",
+      "level": 3,
+      "text": "Paljaassa lasisauvassa ($n = 1{,}50$) etenevä valonsäde osuu sauvan kylkeen $60^\\circ$:n tulokulmassa. Ilmaa vasten säde kokonaisheijastuu. Sauvan kylkeen tarttuu kuitenkin vesipisara ($n = 1{,}33$) juuri siihen kohtaan, johon säde osuu. Kuinka suuressa kulmassa normaaliin nähden säde jatkaa vesipisarassa?",
+      "answer": 77.6128,
+      "unit": "°",
+      "tolerance": 0.02
+    }
+  ]
+}

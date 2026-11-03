@@ -3154,7 +3154,8 @@
     "term": "heijastuslaki",
     "definition": "Heijastuskulma on yhtä suuri kuin tulokulma, β = α, kun molemmat mitataan pinnan normaalista. Tuleva säde, heijastunut säde ja normaali ovat samassa tasossa.",
     "lessons": [
-      "fy5-11"
+      "fy5-11",
+      "fy7-10"
     ],
     "see_also": [
       "heijastuminen",
@@ -3786,6 +3787,175 @@
     "see_also": [
       "pyörrevirta",
       "Lenzin laki"
+    ],
+    "locked": false
+  },
+  {
+    "term": "taittuminen",
+    "definition": "Valon tai muun aallon suunnan muuttuminen, kun se siirtyy rajapinnan läpi aineesta toiseen, jossa sen nopeus on eri. Optisesti tiheämpään aineeseen siirtyvä valo taittuu kohti normaalia, harvempaan normaalista poispäin.",
+    "lessons": [
+      "fy7-10"
+    ],
+    "see_also": [
+      "taitekerroin",
+      "Snellin laki",
+      "heijastuslaki"
+    ],
+    "locked": false
+  },
+  {
+    "term": "taitekerroin",
+    "definition": "Aineen taitekerroin n = c : v kertoo, kuinka monta kertaa hitaammin valo etenee aineessa kuin tyhjiössä. Taitekerroin on yksikötön, ja aineessa se on suurempi kuin 1; esimerkiksi veden taitekerroin on 1,33.",
+    "lessons": [
+      "fy7-10",
+      "fy7-11"
+    ],
+    "see_also": [
+      "taittuminen",
+      "Snellin laki"
+    ],
+    "locked": false
+  },
+  {
+    "term": "Snellin laki",
+    "definition": "Taittumislaki n₁ sin α₁ = n₂ sin α₂, missä α₁ on tulokulma ja α₂ taitekulma rajapinnan normaalista mitattuina ja n₁ ja n₂ aineiden taitekertoimet.",
+    "lessons": [
+      "fy7-10"
+    ],
+    "see_also": [
+      "taittuminen",
+      "taitekerroin"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kokonaisheijastuminen",
+    "definition": "Ilmiö, jossa valo heijastuu rajapinnasta kokonaan takaisin eikä taitu toiseen aineeseen. Se tapahtuu, kun valo tulee suuremman taitekertoimen aineesta pienemmän taitekertoimen aineeseen ja tulokulma on suurempi kuin rajakulma.",
+    "lessons": [
+      "fy7-12"
+    ],
+    "see_also": [
+      "rajakulma",
+      "valokuitu"
+    ],
+    "locked": false
+  },
+  {
+    "term": "rajakulma",
+    "definition": "Tulokulma, jolla taitekulma on 90°, kun valo tulee suuremman taitekertoimen aineesta pienemmän taitekertoimen aineeseen: sin α_r = n₂ : n₁. Rajakulmaa suuremmilla tulokulmilla valo kokonaisheijastuu.",
+    "lessons": [
+      "fy7-12"
+    ],
+    "see_also": [
+      "kokonaisheijastuminen"
+    ],
+    "locked": false
+  },
+  {
+    "term": "valokuitu",
+    "definition": "Ohut lasi- tai muovikuitu, jonka ytimen taitekerroin on hieman suurempi kuin ympäröivän kuoren. Valo etenee ytimessä kokonaisheijastuen, joten kuitu johtaa valoa myös mutkan ympäri. Käytetään tiedonsiirrossa ja tähystimissä.",
+    "lessons": [
+      "fy7-12"
+    ],
+    "see_also": [
+      "kokonaisheijastuminen"
+    ],
+    "locked": false
+  },
+  {
+    "term": "sähkömagneettinen säteily",
+    "definition": "Toisiaan synnyttävien sähkö- ja magneettikentän muutosten eteneminen aaltona, joka ei tarvitse väliainetta. Kentät ovat kohtisuorassa toisiaan ja etenemissuuntaa vastaan, ja tyhjiössä aalto etenee valon nopeudella c = 3,00 · 10⁸ m/s. Syntyy, kun varattu hiukkanen on kiihtyvässä liikkeessä. Esimerkiksi radioaallot, valo ja röntgensäteily.",
+    "lessons": [
+      "fy7-9"
+    ],
+    "see_also": [
+      "spektri",
+      "aallonpituus",
+      "lämpösäteily"
+    ],
+    "locked": false
+  },
+  {
+    "term": "spektri",
+    "definition": "Säteilyn jakautuminen aallonpituuksien tai taajuuksien mukaan. Sähkömagneettinen spektri on kaikkien sähkömagneettisen säteilyn lajien kokonaisuus radioaalloista gammasäteilyyn aallonpituuden mukaan järjestettynä; kappaleen säteilyn spektri kertoo, kuinka voimakkaasti se säteilee kullakin aallonpituudella.",
+    "lessons": [
+      "fy7-9",
+      "fy7-11"
+    ],
+    "see_also": [
+      "sähkömagneettinen säteily",
+      "mustan kappaleen säteily"
+    ],
+    "locked": false
+  },
+  {
+    "term": "mustan kappaleen säteily",
+    "definition": "Mustan kappaleen eli kaiken siihen osuvan säteilyn imevän ihannekappaleen lähettämä sähkömagneettinen säteily. Sen spektri on jatkuva ja riippuu vain kappaleen pintalämpötilasta, ei aineesta. Aurinko, hehkuva hiillos ja ihmisen iho infrapuna-alueella säteilevät likimain kuin musta kappale.",
+    "lessons": [
+      "fy7-9"
+    ],
+    "see_also": [
+      "Wienin siirtymälaki",
+      "lämpösäteily",
+      "spektri"
+    ],
+    "locked": false
+  },
+  {
+    "term": "Wienin siirtymälaki",
+    "definition": "Mustan kappaleen säteilyn spektrin huipun aallonpituus on kääntäen verrannollinen kappaleen absoluuttiseen lämpötilaan: λ_max · T = b, missä b = 2,898 · 10⁻³ m·K. Kuumemman kappaleen huippu on lyhyemmällä aallonpituudella.",
+    "lessons": [
+      "fy7-9"
+    ],
+    "see_also": [
+      "mustan kappaleen säteily"
+    ],
+    "locked": false
+  },
+  {
+    "term": "dispersio",
+    "definition": "Taitekertoimen riippuvuus valon aallonpituudesta. Vedessä ja lasissa violetin valon taitekerroin on suurempi kuin punaisen, joten prisma ja sadepisarat hajottavat valkoisen valon väreiksi.",
+    "lessons": [
+      "fy7-11"
+    ],
+    "see_also": [
+      "taitekerroin",
+      "spektri",
+      "sateenkaari"
+    ],
+    "locked": false
+  },
+  {
+    "term": "poikkeamakulma",
+    "definition": "Kulma, jonka verran valonsäde kääntyy alkuperäisestä suunnastaan kulkiessaan prisman läpi: $\\delta = \\alpha_1 + \\alpha_4 - A$.",
+    "lessons": [
+      "fy7-11"
+    ],
+    "see_also": [
+      "dispersio"
+    ],
+    "locked": false
+  },
+  {
+    "term": "sateenkaari",
+    "definition": "Kaari, joka syntyy, kun auringonvalo taittuu vesipisaroihin, heijastuu niiden takapinnasta ja taittuu ulos. Punainen näkyy noin $42^\\circ$:n ja violetti noin $40{,}6^\\circ$:n kulmassa vastapisteestä.",
+    "lessons": [
+      "fy7-11"
+    ],
+    "see_also": [
+      "dispersio",
+      "vastapiste"
+    ],
+    "locked": false
+  },
+  {
+    "term": "vastapiste",
+    "definition": "Taivaan piste suoraan auringon vastakkaisella puolella, katsojan pään varjon suunnassa. Sateenkaari on ympyrä vastapisteen ympärillä.",
+    "lessons": [
+      "fy7-11"
+    ],
+    "see_also": [
+      "sateenkaari"
     ],
     "locked": false
   }
