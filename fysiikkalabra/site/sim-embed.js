@@ -16,8 +16,8 @@
      readout, a legend) renders its maths the same way, and is re-rendered only when its string changes.
    Tests run at 1280 px, where the container is wider than 600 px, so the canvas keeps its native size there.
    - "Suurenna" (teacher 2026-11-03, "simulaatiot saa klikattua isoksi") shows the whole simulation card full screen
-     (the Fullscreen API, or a fixed layer where it is missing, as on an iPhone); the canvas then grows with the window
-     up to twice its native size, the controls stay beside it on a wide screen, and Esc or "Pienennä" brings it back.
+     (the Fullscreen API, or a fixed layer where it is missing, as on an iPhone); the canvas then fills the window
+     (teacher 2026-11-03: no empty margins; the Käyttöohje and model boxes are hidden there), the controls stay beside it on a wide screen, and Esc or "Pienennä" brings it back.
    It also defines window.defineSimAdapter (docs/inquiry.md, "Simulation interface"): a sim that calls it once
    from setup exposes a small adapter that guided investigations (inquiry.js) use to read the state, set
    parameters, lock controls, reset and pause. The physics stays in the sim; window.simState is untouched.
@@ -144,8 +144,8 @@
         const fit = () => {
           const el = root();
           if (!el || !p.canvas) return;
-          const big = el.closest && el.closest('#sim.sim-expanded');   // enlarged (part below): up to twice the native size, as the window allows
-          const w = Math.min(big ? 2 * W : W, el.clientWidth || W);
+          const big = el.closest && el.closest('#sim.sim-expanded');   // enlarged (part below): as large as the window allows (site.css keeps it on screen)
+          const w = Math.min(big ? 5 * W : W, el.clientWidth || W);
           if (big) el.style.setProperty('--sim-ar-x', (W / H).toFixed(4));
           const ns = Math.max(0.3, w / W);
           if (Math.abs(ns - s) < 0.002 && p.height === Math.round(H * s)) return;
@@ -194,8 +194,8 @@
     const ICON = '<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path d="%" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
     const OUT = 'M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5', IN = 'M9 4v5H4M15 4v5h5M9 20v-5H4M15 20v-5h5';
     const label = (on) => {
-      b.innerHTML = ICON.replace('%', on ? IN : OUT) + '<span>' + window.flMsg(on ? 'sim_shrink' : 'sim_expand') + '</span>';
-      b.setAttribute('aria-label', window.flMsg(on ? 'sim_shrink_aria' : 'sim_expand_aria'));
+      b.innerHTML = ICON.replace('%', on ? IN : OUT);   // the icon alone (teacher 2026-11-03); its name is the label and the tooltip
+      b.setAttribute('aria-label', window.flMsg(on ? 'sim_shrink_aria' : 'sim_expand_aria')); b.title = window.flMsg(on ? 'sim_shrink_aria' : 'sim_expand_aria');
     };
     let back = 0;
     const fs = () => document.fullscreenElement || document.webkitFullscreenElement;
