@@ -1,19 +1,10 @@
 VERDICT: PASS
-<<<<<<< HEAD
-CONTENT-HASH: cb44f9e513bc1f17
-=======
 CONTENT-HASH: 55ae0e4b739c0193
->>>>>>> origin/main
 
 ## Blocking
+(none)
 
 ## Polish
-<<<<<<< HEAD
-
-
-## Checked
-batch delta review: scratchpad kc/fy5-8-390.png and kc/fy5-8-1280.png (the new section cut from the built page, preview/fi-easy/fy5-8.html): stacked at 390 px, two columns at 1280 px, no raw maths, no overflow, no clipping; the diff text read for wording (the packet's own captures show no figure change, so only sheets of the new section were opened).
-=======
 - [Minor] hero: the hand and knob are cropped by the bottom edge and the playfield by the top and left (close-up by design); the pulling hand is small at 390 px. Optional.
 
 ## Checked
@@ -23,4 +14,3 @@ batch delta review: scratchpad kc/fy5-8-390.png and kc/fy5-8-1280.png (the new s
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 4 · accessibility 4
->>>>>>> origin/main

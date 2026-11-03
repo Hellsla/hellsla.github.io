@@ -1,19 +1,10 @@
 VERDICT: PASS
-<<<<<<< HEAD
-CONTENT-HASH: bccd1bee9fe6ed4c
-=======
 CONTENT-HASH: 26ae307e1314dfa0
->>>>>>> origin/main
 
 ## Blocking
+(none)
 
 ## Polish
-<<<<<<< HEAD
-
-
-## Checked
-batch delta review: scratchpad kc/fy5-13-390.png and kc/fy5-13-1280.png (the new section cut from the built page, preview/fi-easy/fy5-13.html): stacked at 390 px, two columns at 1280 px, no raw maths, no overflow, no clipping; the diff text read for wording (the packet's own captures show no figure change, so only sheets of the new section were opened).
-=======
 - [Minor] hero — the light blue motion envelope is slim at 390 px; it is still visible and the string, capo and bridge read clearly.
 
 ## Checked
@@ -25,4 +16,3 @@ batch delta review: scratchpad kc/fy5-13-390.png and kc/fy5-13-1280.png (the new
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5
->>>>>>> origin/main

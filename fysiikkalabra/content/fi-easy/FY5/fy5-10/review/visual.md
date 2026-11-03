@@ -1,20 +1,10 @@
 VERDICT: PASS
-<<<<<<< HEAD
-CONTENT-HASH: 9d295971139d121c
-=======
 CONTENT-HASH: e549ff46a056d756
->>>>>>> origin/main
 
 ## Blocking
 (none)
 
 ## Polish
-<<<<<<< HEAD
-
-
-## Checked
-batch delta review: scratchpad kc/fy5-10-390.png and kc/fy5-10-1280.png (the new section cut from the built page, preview/fi-easy/fy5-10.html): stacked at 390 px, two columns at 1280 px, no raw maths, no overflow, no clipping; the diff text read for wording (the packet's own captures show no figure change, so only sheets of the new section were opened).
-=======
 - [Minor] hero — the person holding the rope is drawn small and neutral; the alt text calls her a girl, which the picture neither shows nor contradicts. Optional: say "henkilö" / "person" or leave as is.
 
 ## Checked
@@ -26,4 +16,3 @@ batch delta review: scratchpad kc/fy5-10-390.png and kc/fy5-10-1280.png (the new
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5
->>>>>>> origin/main

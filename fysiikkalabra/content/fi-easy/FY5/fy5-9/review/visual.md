@@ -1,9 +1,5 @@
 VERDICT: PASS
-<<<<<<< HEAD
-CONTENT-HASH: 07be97b4da29a508
-=======
 CONTENT-HASH: 0e718a50224ca1ac
->>>>>>> origin/main
 
 ## Blocking
 (none)
@@ -11,11 +7,6 @@ CONTENT-HASH: 0e718a50224ca1ac
 ## Polish
 - [Minor] hero — the baby's face and arms are small and simple at 390 px; the bouncer and spring still read clearly. No change needed.
 
-<<<<<<< HEAD
-
-## Checked
-batch delta review: scratchpad kc/fy5-9-390.png and kc/fy5-9-1280.png (the new section cut from the built page, preview/fi-easy/fy5-9.html): stacked at 390 px, two columns at 1280 px, no raw maths, no overflow, no clipping; the diff text read for wording (the packet's own captures show no figure change, so only sheets of the new section were opened).
-=======
 ## Checked
 - Delta review, category illustration: only the hero (`data-fig="hero"`) and its aria-label changed.
 - fy5-9-top-390.png and fy5-9-intro-1280.png (hero at 390 px and 1280 px, fi-easy page): a living room with a grandfather clock (pendulum swung aside) and a baby in a spring-hung door bouncer. Layout survived: the picture sits in the 16:8 frame, nothing clipped, no horizontal overflow, the first screen is unchanged around it.
@@ -25,4 +16,3 @@ batch delta review: scratchpad kc/fy5-9-390.png and kc/fy5-9-1280.png (the new s
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5
->>>>>>> origin/main
