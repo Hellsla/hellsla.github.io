@@ -294,7 +294,7 @@ Kun taso tunnetaan, intensiteetti ratkaistaan kahdessa vaiheessa. Ensin jaetaan 
 &I = I_0 \cdot 10^{\,L/(10\,\text{dB})}
 \end{aligned}
 ```
-Esimerkiksi keskustelun $60\,\text{dB}$ antaa $\tfrac{L}{10\,\text{dB}} = 6$, joten $I = 10^{6} \cdot I_0 = 1{,}0 \cdot 10^{-6}\,\text{W/m}^2$. Laskimessa potenssi $10^x$ on yleensä logaritmin $\lg$ kanssa samassa näppäimessä.
+Esimerkiksi keskustelun $60\,\text{dB}$ antaa $\tfrac{L}{10\,\text{dB}} = 6$, joten $I = 10^{6} \cdot I_0 = 1{,}0 \cdot 10^{-6}\,\text{W/m}^2$. Laskimessa logaritmi on näppäin $\lg$ (tai $\log$) ja potenssi $10^x$ on yleensä saman näppäimen toinen toiminto; kokeile, että $\lg 3 \approx 0{,}477$ ja $10^{0{,}477} \approx 3$.
 
 ### Tasojen erotus
 Kahden äänen tasojen erotus riippuu vain niiden intensiteettien suhteesta, koska $I_0$ supistuu pois:
@@ -366,10 +366,11 @@ Kun intensiteetti kaksinkertaistuu, taso kasvaa $10\,\text{dB} \cdot \lg 2 \appr
   <foreignObject x="80" y="381.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$0$</div></foreignObject>
   <foreignObject x="532" y="361.5" width="62" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$r\ (\text{m})$</div></foreignObject>
   <foreignObject x="100" y="13.5" width="74" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$L\ (\text{dB})$</div></foreignObject>
-  <polyline points="141,94.5 144,97 147,99.5 150,101.5 153,103.5 156,105 159,106.5 162,108.5 165,110 168,111 171,112.5 174,114 177,115 180,116 183,117.5 186,118.5 189,119.5 192,120.5 195,121.5 198,122 201,123 204,124 207,125 210,125.5 213,126.5 216,127 219,128 222,128.5 225,129.5 228,130 231,130.5 234,131.5 237,132 240,132.5 243,133 246,134 249,134.5 252,135 255,135.5 258,136 261,136.5 264,137 267,137.5 270,138 273,138.5 276,139 278.5,139.5 281.5,140 284.5,140.5 287.5,141 290.5,141.5 293.5,142 296.5,142 299.5,142.5 302.5,143 305.5,143.5 308.5,144 311.5,144.5 314.5,144.5 317.5,145 320.5,145.5 323.5,146 326.5,146 329.5,146.5 332.5,147 335.5,147 338.5,147.5 341.5,148 344.5,148.5 347.5,148.5 350.5,149 353.5,149.5 356.5,149.5 359.5,150 362.5,150 365.5,150.5 368.5,151 371.5,151 374.5,151.5 377.5,152 380.5,152 383.5,152.5 386.5,152.5 389.5,153 392.5,153 395.5,153.5 398.5,154 401.5,154 404.5,154.5 407.5,154.5 410.5,155 413.5,155 416.5,155.5 419.5,155.5 422.5,156 425,156 428,156.5 431,156.5 434,157 437,157 440,157.5 443,157.5 446,158 449,158 452,158.5 455,158.5 458,159 461,159 464,159 467,159.5 470,159.5 473,160 476,160 479,160.5 482,160.5 485,161 488,161 491,161 494,161.5 497,161.5 500,162" fill="none" stroke="#e8590c" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <polyline points="149,100.5 152,102.5 155,104.5 158,106 160.5,107.5 163.5,109 166.5,110.5 169.5,112 172.5,113 175.5,114.5 178,115.5 181,116.5 184,117.5 187,118.5 190,119.5 193,120.5 196,121.5 198.5,122.5 201.5,123.5 204.5,124 207.5,125 210.5,125.5 213.5,126.5 216.5,127 219,128 222,128.5 225,129.5 228,130 231,130.5 234,131.5 237,132 239.5,132.5 242.5,133 245.5,133.5 248.5,134.5 251.5,135 254.5,135.5 257,136 260,136.5 263,137 266,137.5 269,138 272,138.5 275,139 277.5,139.5 280.5,140 283.5,140.5 286.5,140.5 289.5,141 292.5,141.5 295,142 298,142.5 301,143 304,143 307,143.5 310,144 313,144.5 315.5,145 318.5,145 321.5,145.5 324.5,146 327.5,146.5 330.5,146.5 333.5,147 336,147.5 339,147.5 342,148 345,148.5 348,148.5 351,149 354,149.5 356.5,149.5 359.5,150 362.5,150 365.5,150.5 368.5,151 371.5,151 374,151.5 377,151.5 380,152 383,152.5 386,152.5 389,153 392,153 394.5,153.5 397.5,153.5 400.5,154 403.5,154 406.5,154.5 409.5,155 412,155 415,155.5 418,155.5 421,156 424,156 427,156.5 430,156.5 432.5,157 435.5,157 438.5,157 441.5,157.5 444.5,157.5 447.5,158 450.5,158 453,158.5 456,158.5 459,159 462,159 465,159.5 468,159.5 471,159.5 473.5,160 476.5,160 479.5,160.5 482.5,160.5 485.5,161 488.5,161 491,161 494,161.5 497,161.5 500,162" fill="none" stroke="#e8590c" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
   <line x1="149" y1="100.5" x2="149" y2="376" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
   <line x1="110" y1="100.5" x2="149" y2="100.5" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
   <circle cx="149" cy="100.5" r="6.5" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
+  <foreignObject x="157" y="46" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$90{,}0$</span></div></foreignObject>
   <line x1="188" y1="119" x2="188" y2="376" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
   <line x1="110" y1="119" x2="188" y2="119" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
   <circle cx="188" cy="119" r="6.5" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
@@ -436,7 +437,14 @@ Ulkoilmakonsertissa desibelimittari näyttää $96\,\text{dB}$, kun se on $10\,\
 
 <!-- vaihe -->
 
-**Yksikkömuunnokset.** Ei tarvita: etäisyys on metreinä ja kuulokynnys yksikössä $\text{W/m}^2$. Desibelit supistuvat osamäärässä $\tfrac{L}{10\,\text{dB}} = \tfrac{96\,\text{dB}}{10\,\text{dB}} = 9{,}6$.
+**Yksikkömuunnokset.** Ei tarvita: etäisyys on metreinä ja kuulokynnys yksikössä $\text{W/m}^2$. Desibelit supistuvat osamäärässä:
+```latex
+\begin{aligned}
+&\dfrac{L}{10\,\text{dB}} \\
+&= \dfrac{96\,\text{dB}}{10\,\text{dB}} \\
+&= 9{,}6
+\end{aligned}
+```
 
 <!-- vaihe -->
 

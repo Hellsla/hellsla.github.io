@@ -89,12 +89,12 @@ def kuvaaja():
     ax = Axes(f, (110, 376), (500, 70), x=(0, 10), y=(0, 100), xticks=list(range(1, 11)), yticks=list(range(10, 101, 10)),
               xlabel=r"r\ (\text{m})", ylabel=r"L\ (\text{dB})", xfmt=lambda v: fi(v) if v % 2 == 0 else "",
               yfmt=lambda v: fi(v))
-    ax.curve(lambda r: L_of(P / (4 * math.pi * r * r)), 0.8, 10, HEAT, 3)
+    ax.curve(lambda r: L_of(P / (4 * math.pi * r * r)), 1, 10, HEAT, 3)
     for r in (1, 2, 4, 8):
         Lr = L_of(P / (4 * math.pi * r * r))
         ax.guide(r, Lr)
         ax.point(r, Lr, HEAT)
-        if r > 1: f.tex(ax.X(r) + 8, ax.Y(Lr) - 22, fi(round(Lr, 1), 1), "start", bg=True)   # r = 1 m sits on the 90 dB gridline
+        f.tex(ax.X(r) + 8, ax.Y(Lr) - (40 if r == 1 else 22), fi(round(Lr, 1), 1), "start", bg=True)   # the r = 1 m label sits higher so it clears the r = 2 m label
     return f.svg()
 
 

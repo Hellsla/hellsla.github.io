@@ -18,9 +18,10 @@ a["fy5-15-L1-05"] = 10 * lg(100)                         # intensity 100-fold: �
 # Level 2: two steps, a conversion or a rearrangement
 a["fy5-15-L2-01"] = L(0.050 / (4 * math.pi * 3.0 ** 2))  # speaker 0,050 W at 3,0 m: I = 4,42e-4 W/m², L = 86,45 dB -> 86 dB
 a["fy5-15-L2-02"] = L(I_of(85) + I_of(88)) - 88          # 85 dB + 88 dB: total 89,76 dB, 1,76 dB above 88 dB -> 1,8 dB
-a["fy5-15-L2-03"] = 90 - 10 * lg((8.0 / 2.0) ** 2)       # 90 dB at 2,0 m -> at 8,0 m: I/16, 90 − 12,04 = 77,96 dB -> 78 dB
+a["fy5-15-L2-03"] = 85 - 10 * lg((12.0 / 3.0) ** 2)     # 85 dB at 3,0 m -> at 12 m: I/16, 85 − 12,04 = 72,96 dB -> 73 dB
 a["fy5-15-L2-04"] = 10 ** ((91 - 85) / 10)               # one machine 85 dB, N machines 91 dB: N = 10^0,6 = 3,98 -> 4
 # Level 3: reasoning or an unfamiliar context
-a["fy5-15-L3-01"] = 42 + 10 * lg(12000)                  # 12 000 equal independent voices of 42 dB: 42 + 40,79 = 82,79 dB -> 83 dB
+L_crowd = 42 + 10 * lg(12000)                            # 12 000 equal independent voices of 42 dB: 42 + 40,79 = 82,79 dB
+a["fy5-15-L3-01"] = L(I_of(L_crowd) + I_of(80))          # plus a PA system alone 80 dB: 10 dB · lg(10^8,279 + 10^8) = 84,63 dB -> 85 dB
 a["fy5-15-L3-02"] = 0.50 * math.sqrt(10 ** ((30 - 0) / 10))   # mosquito 30 dB at 0,50 m down to the threshold 0 dB: r = 0,50 m · √1000 = 15,8 m -> 16 m
 print(json.dumps({k: round(v, 8) for k, v in a.items()}))

@@ -46,7 +46,7 @@
 **Muunnokset:** Ei tarvita: suhde on paljas luku.
 **Sijoitus:** $L_2 - L_1 = 10\,\text{dB} \cdot \lg 100 = 10\,\text{dB} \cdot 2 = 20\,\text{dB}$
 **Vastaus:** $20\,\text{dB}$; kerroin $100$ on tarkka, joten tulos on tarkka.
-**Järkevyys:** Satakertaistus on kaksi peräkkäistä kymmenkertaistusta, ja kumpikin lisää tasoa $10\,\text{dB}$: $10\,\text{dB} + 10\,\text{dB} = 20\,\text{dB}$. Taso ei kasva sata- eikä kaksinkertaiseksi, koska asteikko on logaritminen.
+**Järkevyys:** Satakertaistus on kaksi peräkkäistä kymmenkertaistusta, ja kumpikin lisää tasoa $10\,\text{dB}$: $10\,\text{dB} + 10\,\text{dB} = 20\,\text{dB}$. Taso kasvaa $20\,\text{dB}$, ei satakertaiseksi: desibeliasteikko on logaritminen.
 
 ## fy5-15-L2-01
 **Annettu:** kaiuttimen ääniteho $P = 0{,}050\,\text{W}$, etäisyys $r = 3{,}0\,\text{m}$, kuulokynnys $I_0 = 1{,}0 \cdot 10^{-12}\,\text{W/m}^2$; ääni leviää tasaisesti eikä heijastu
@@ -55,28 +55,35 @@
 **Kaava:** $I = \dfrac{P}{4\pi r^2}$ ja $L = 10\,\text{dB} \cdot \lg \dfrac{I}{I_0}$, joten $L = 10\,\text{dB} \cdot \lg \dfrac{P}{4\pi r^2 I_0}$
 **Muunnokset:** Ei tarvita: teho on watteina ja etäisyys metreinä.
 **Sijoitus:** $I = \dfrac{0{,}050\,\text{W}}{4\pi \cdot (3{,}0\,\text{m})^2} = 4{,}42 \cdot 10^{-4}\,\text{W/m}^2$, joten $L = 10\,\text{dB} \cdot \lg \dfrac{4{,}42 \cdot 10^{-4}\,\text{W/m}^2}{1{,}0 \cdot 10^{-12}\,\text{W/m}^2} = 10\,\text{dB} \cdot \lg (4{,}42 \cdot 10^{8}) = 86{,}45\,\text{dB}$
-**Vastaus:** $86\,\text{dB}$, kokonaisina desibeleinä, koska teho ja etäisyys on annettu kahdella merkitsevällä numerolla.
+**Vastaus:** $86\,\text{dB}$, kokonaisina desibeleinä, koska teho ja etäisyys ovat annetut kahdella merkitsevällä numerolla.
 **Järkevyys:** Intensiteetti on välillä $10^{-4}$–$10^{-3}\,\text{W/m}^2$, joten tason on oltava välillä $80$–$90\,\text{dB}$. Kovalla soiva kannettava kaiutin kuulostaa muutaman metrin päässä suunnilleen vilkkaalta kadulta tai sitä kovemmalta.
 
 ## fy5-15-L2-02
 **Annettu:** ruohonleikkuri yksinään $L_1 = 85\,\text{dB}$, lehtipuhallin yksinään $L_2 = 88\,\text{dB}$, kuulokynnys $I_0 = 1{,}0 \cdot 10^{-12}\,\text{W/m}^2$
 **Kysytty:** kuinka paljon yhteistaso $L$ on suurempi kuin $L_2$, eli $L - L_2$ desibeleinä
 **Periaate:** Laitteet ovat toisistaan riippumattomia äänilähteitä, joten niiden intensiteetit lasketaan yhteen. Desibelejä ei voi laskea yhteen, joten tasot muutetaan ensin intensiteeteiksi.
-**Kaava:** $I_1 = I_0 \cdot 10^{\,L_1/(10\,\text{dB})}$, $I_2 = I_0 \cdot 10^{\,L_2/(10\,\text{dB})}$ ja $L = 10\,\text{dB} \cdot \lg \dfrac{I_1 + I_2}{I_0}$, joten $L - L_2 = 10\,\text{dB} \cdot \lg \dfrac{I_1 + I_2}{I_0} - L_2$
+**Kaava:** $L - L_2 = 10\,\text{dB} \cdot \lg \dfrac{I_1 + I_2}{I_0} - L_2$, missä intensiteetit ja yhteistaso ovat
+```latex
+\begin{aligned}
+&I_1 = I_0 \cdot 10^{\,L_1/(10\,\text{dB})} \\
+&I_2 = I_0 \cdot 10^{\,L_2/(10\,\text{dB})} \\
+&L = 10\,\text{dB} \cdot \lg \dfrac{I_1 + I_2}{I_0}
+\end{aligned}
+```
 **Muunnokset:** Ei tarvita: kaikki tasot ovat desibeleinä ja intensiteetit yksikössä $\text{W/m}^2$.
 **Sijoitus:** $I_1 = 10^{-12}\,\text{W/m}^2 \cdot 10^{8{,}5} = 3{,}16 \cdot 10^{-4}\,\text{W/m}^2$ ja $I_2 = 10^{-12}\,\text{W/m}^2 \cdot 10^{8{,}8} = 6{,}31 \cdot 10^{-4}\,\text{W/m}^2$, joten $L = 10\,\text{dB} \cdot \lg (9{,}47 \cdot 10^{8}) = 89{,}76\,\text{dB}$ ja $L - L_2 = 89{,}76\,\text{dB} - 88\,\text{dB} = 1{,}76\,\text{dB}$
 **Vastaus:** $1{,}8\,\text{dB}$, kahdella merkitsevällä numerolla, koska tasot on annettu kokonaisina desibeleinä.
 **Järkevyys:** Jos ruohonleikkuri olisi yhtä kova kuin lehtipuhallin, taso nousisi $3\,\text{dB}$. Heikompi lähde lisää vähemmän, ja hyvin heikko ei lisäisi juuri mitään, joten $1{,}8\,\text{dB}$ on näiden välissä. Yhteistaso $89{,}8\,\text{dB}$ on paljon pienempi kuin virheellinen summa $173\,\text{dB}$.
 
 ## fy5-15-L2-03
-**Annettu:** taso $L_1 = 90\,\text{dB}$ etäisyydellä $r_1 = 2{,}0\,\text{m}$, uusi etäisyys $r_2 = 8{,}0\,\text{m}$; ääni leviää tasaisesti eikä heijastu
+**Annettu:** taso $L_1 = 85\,\text{dB}$ etäisyydellä $r_1 = 3{,}0\,\text{m}$, uusi etäisyys $r_2 = 12\,\text{m}$; ääni leviää tasaisesti eikä heijastu
 **Kysytty:** taso $L_2$ etäisyydellä $r_2$ desibeleinä
 **Periaate:** Pistemäisen lähteen intensiteetti on kääntäen verrannollinen etäisyyden neliöön, koska sama teho jakautuu pallopinnalle $4\pi r^2$. Tasojen erotus saadaan intensiteettien suhteesta.
 **Kaava:** $\dfrac{I_2}{I_1} = \dfrac{r_1^2}{r_2^2}$ ja $L_2 - L_1 = 10\,\text{dB} \cdot \lg \dfrac{I_2}{I_1}$, joten $L_2 = L_1 + 10\,\text{dB} \cdot \lg \dfrac{r_1^2}{r_2^2}$
 **Muunnokset:** Ei tarvita: kumpikin etäisyys on metreinä, ja yksiköt supistuvat.
-**Sijoitus:** $\dfrac{r_1^2}{r_2^2} = \dfrac{(2{,}0\,\text{m})^2}{(8{,}0\,\text{m})^2} = \dfrac{1}{16}$, joten $L_2 = 90\,\text{dB} + 10\,\text{dB} \cdot \lg \dfrac{1}{16} = 90\,\text{dB} - 12{,}04\,\text{dB} = 77{,}96\,\text{dB}$
-**Vastaus:** $78\,\text{dB}$, kokonaisina desibeleinä kuten lähtötaso $90\,\text{dB}$.
-**Järkevyys:** Etäisyys kaksinkertaistuu kahdesti ($2\,\text{m} \to 4\,\text{m} \to 8\,\text{m}$), ja kumpikin kaksinkertaistus pienentää tasoa noin $6\,\text{dB}$: $90\,\text{dB} - 6\,\text{dB} - 6\,\text{dB} = 78\,\text{dB}$. Taso pienenee, kuten pitää kauempana lähteestä.
+**Sijoitus:** $\dfrac{r_1^2}{r_2^2} = \dfrac{(3{,}0\,\text{m})^2}{(12\,\text{m})^2} = \dfrac{1}{16}$, joten $L_2 = 85\,\text{dB} + 10\,\text{dB} \cdot \lg \dfrac{1}{16} = 85\,\text{dB} - 12{,}04\,\text{dB} = 72{,}96\,\text{dB}$
+**Vastaus:** $73\,\text{dB}$, kokonaisina desibeleinä kuten lähtötaso $85\,\text{dB}$.
+**Järkevyys:** Etäisyys kaksinkertaistuu kahdesti ($3\,\text{m} \to 6\,\text{m} \to 12\,\text{m}$), ja kumpikin kaksinkertaistus pienentää tasoa noin $6\,\text{dB}$: $85\,\text{dB} - 6\,\text{dB} - 6\,\text{dB} = 73\,\text{dB}$. Taso pienenee, kuten pitää kauempana lähteestä.
 
 ## fy5-15-L2-04
 **Annettu:** yksi saha $L_1 = 85\,\text{dB}$, kaikki sahat yhdessä $L = 91\,\text{dB}$, sahat ovat samanlaisia ja yhtä kaukana mittarista
@@ -89,14 +96,20 @@
 **Järkevyys:** Kaksi sahaa nostaisi tasoa $3\,\text{dB}$ ja neljä $6\,\text{dB}$, eli $85\,\text{dB} + 6\,\text{dB} = 91\,\text{dB}$. Tämä vastaa annettua tasoa, joten neljä sahaa on oikea määrä.
 
 ## fy5-15-L3-01
-**Annettu:** katsojia $N = 12\,000$, yhden huudon taso kentän keskellä $L_1 = 42\,\text{dB}$; huudot ovat yhtä voimakkaita ja toisistaan riippumattomia
-**Kysytty:** kaikkien huutojen yhteistaso $L$ desibeleinä
-**Periaate:** Riippumattomien lähteiden intensiteetit lasketaan yhteen. Kun jokainen huuto tuottaa saman intensiteetin $I_1$, kokonaisintensiteetti on $N I_1$, ja taso kasvaa intensiteettien suhteen logaritmin verran.
-**Kaava:** $L = 10\,\text{dB} \cdot \lg \dfrac{N I_1}{I_0} = 10\,\text{dB} \cdot \lg \dfrac{I_1}{I_0} + 10\,\text{dB} \cdot \lg N$, joten $L = L_1 + 10\,\text{dB} \cdot \lg N$
-**Muunnokset:** Ei tarvita: taso on desibeleinä, ja $N$ on paljas luku.
-**Sijoitus:** $L = 42\,\text{dB} + 10\,\text{dB} \cdot \lg 12\,000 = 42\,\text{dB} + 10\,\text{dB} \cdot 4{,}079 = 42\,\text{dB} + 40{,}79\,\text{dB} = 82{,}79\,\text{dB}$
-**Vastaus:** $83\,\text{dB}$, kokonaisina desibeleinä kuten yhden huudon taso $42\,\text{dB}$.
-**Järkevyys:** $10\,000$ lähdettä lisäisi tasoa tasan $40\,\text{dB}$, ja $12\,000$ vähän enemmän, joten noin $83\,\text{dB}$ on oikeaa suuruusluokkaa. Desibelien summa $12\,000 \cdot 42\,\text{dB}$ olisi järjetön. Oikeassa hallissa heijastukset nostavat tasoa vielä lisää.
+**Annettu:** katsojia $N = 12\,000$, yhden huudon taso kentän keskellä $L_1 = 42\,\text{dB}$, kuulutusjärjestelmän taso yksinään $L_K = 80\,\text{dB}$; huudot ovat yhtä voimakkaita ja kaikki lähteet toisistaan riippumattomia
+**Kysytty:** kaikkien äänien yhteistaso $L$ desibeleinä
+**Periaate:** Riippumattomien lähteiden intensiteetit lasketaan yhteen, desibelejä ei. Ensin lasketaan huutojen yhteistaso: kun jokainen huuto tuottaa saman intensiteetin $I_1$, huutojen intensiteetti on $N I_1$. Sitten huutojen ja kuulutuksen intensiteetit lasketaan yhteen.
+**Kaava:** huudot yhdessä $L_H = L_1 + 10\,\text{dB} \cdot \lg N$, ja koko ääni
+```latex
+\begin{aligned}
+&L = 10\,\text{dB} \cdot \lg \frac{I_H + I_K}{I_0} \\
+&I = I_0 \cdot 10^{\,L/(10\,\text{dB})}
+\end{aligned}
+```
+**Muunnokset:** Ei tarvita: tasot ovat desibeleinä, $N$ on paljas luku ja intensiteetit yksikössä $\text{W/m}^2$.
+**Sijoitus:** $L_H = 42\,\text{dB} + 10\,\text{dB} \cdot \lg 12\,000 = 42\,\text{dB} + 40{,}79\,\text{dB} = 82{,}79\,\text{dB}$, joten $I_H = 10^{-12}\,\text{W/m}^2 \cdot 10^{8{,}279} = 1{,}90 \cdot 10^{-4}\,\text{W/m}^2$ ja $I_K = 10^{-12}\,\text{W/m}^2 \cdot 10^{8} = 1{,}0 \cdot 10^{-4}\,\text{W/m}^2$, joten $L = 10\,\text{dB} \cdot \lg \dfrac{2{,}90 \cdot 10^{-4}\,\text{W/m}^2}{1{,}0 \cdot 10^{-12}\,\text{W/m}^2} = 84{,}63\,\text{dB}$
+**Vastaus:** $85\,\text{dB}$, kokonaisina desibeleinä, koska tasot on annettu kokonaisina desibeleinä.
+**Järkevyys:** $10\,000$ lähdettä lisäisi tasoa tasan $40\,\text{dB}$, joten huudot yksin ovat noin $83\,\text{dB}$. Kuulutus on huutoja hiljaisempi, joten se nostaa yhteistasoa alle $3\,\text{dB}$, ja $2\,\text{dB}$ sopii. Desibelien summa $12\,000 \cdot 42\,\text{dB} + 80\,\text{dB}$ olisi järjetön. Oikeassa hallissa heijastukset nostavat tasoa vielä lisää.
 
 ## fy5-15-L3-02
 **Annettu:** taso $L_1 = 30\,\text{dB}$ etäisyydellä $r_1 = 0{,}50\,\text{m}$, kuulokynnyksen taso $L_2 = 0\,\text{dB}$; pistemäinen lähde, tasainen leviäminen, ei heijastuksia, vaimenemista eikä taustaääniä
@@ -111,4 +124,14 @@
 ## fy5-15-L3-03
 **Kysytty:** onko negatiivinen intensiteettitaso mahdoton, mitä se tarkoittaa ja voiko tuulettimen kuulla
 **Periaate:** Intensiteettitaso $L = 10\,\text{dB} \cdot \lg \dfrac{I}{I_0}$ ei ole intensiteetti vaan vertailu kuulokynnykseen $I_0 = 1{,}0 \cdot 10^{-12}\,\text{W/m}^2$. Logaritmi on negatiivinen, kun sen argumentti on positiivinen mutta pienempi kuin yksi.
-**Mallivastaus:** Opiskelija ei ole oikeassa. Negatiivinen taso ei tarkoita negatiivista intensiteettiä, vaan sitä, että intensiteetti on pienempi kuin kuulokynnys: $\lg \dfrac{I}{I_0} = -0{,}5$, joten $I = I_0 \cdot 10^{-0{,}5} \approx 3{,}2 \cdot 10^{-13}\,\text{W/m}^2$. Se on positiivinen, noin kolmasosa kuulokynnyksestä. Jokainen intensiteetin pieneneminen kymmenesosaan vähentää tasoa $10\,\text{dB}$, joten kuulokynnystä heikommilla äänillä taso on negatiivinen, vaikka intensiteetti on aina positiivinen. Keskimääräinen kuulija ei kuule tuuletinta, koska ääni on kuulokynnyksen alapuolella. Kuulokynnys $I_0$ on kuitenkin sovittu vertailuarvo: kuulokynnys vaihtelee ihmisestä ja taajuudesta toiseen, ja nuoret, herkkäkuuloiset ihmiset voivat kuulla herkimmillä taajuuksilla, noin $3000\,\text{Hz}$:n tienoilla, hieman alle $0\,\text{dB}$:n ääniä. Hiljaisessa kaiuttomassa huoneessa mittaus on siis aivan mahdollinen.
+**Mallivastaus:** Opiskelija ei ole oikeassa. Negatiivinen taso ei tarkoita negatiivista intensiteettiä, vaan sitä, että intensiteetti on pienempi kuin kuulokynnys: $\lg \dfrac{I}{I_0} = -0{,}5$, joten
+```latex
+I = I_0 \cdot 10^{-0{,}5} \approx 3{,}2 \cdot 10^{-13}\,\text{W/m}^2
+```
+Se on positiivinen, noin kolmasosa kuulokynnyksestä. Jokainen intensiteetin pieneneminen kymmenesosaan vähentää tasoa $10\,\text{dB}$, joten kuulokynnystä heikommilla äänillä taso on negatiivinen, vaikka intensiteetti on aina positiivinen. Keskimääräinen kuulija ei kuule tuuletinta, koska ääni on kuulokynnyksen alapuolella. Kuulokynnys $I_0$ on kuitenkin sovittu vertailuarvo: kuulokynnys vaihtelee ihmisestä ja taajuudesta toiseen, ja nuoret, herkkäkuuloiset ihmiset voivat kuulla herkimmillä taajuuksilla, noin $3000\,\text{Hz}$:n tienoilla, hieman alle $0\,\text{dB}$:n ääniä. Hiljaisessa kaiuttomassa huoneessa mittaus on siis aivan mahdollinen.
+
+**Itsearviointi:** Vastauksessani
+
+- sanon, että intensiteetti on aina positiivinen ja negatiivinen taso tarkoittaa intensiteettiä, joka on pienempi kuin kuulokynnys $I_0$
+- lasken tai arvioin intensiteetin tasosta $-5\,\text{dB}$ potenssina $10^{-0{,}5}$
+- sanon, että kuulokynnys riippuu ihmisestä ja taajuudesta, joten tuulettimen kuulee vain herkimmillä kuulijoilla ja taajuuksilla.

@@ -53,7 +53,7 @@
     {
       "id": "fy5-15-L2-02",
       "level": 2,
-      "text": "Pihalla käy samaan aikaan ruohonleikkuri ja lehtipuhallin. Mittarin kohdalla ruohonleikkuri tuottaa yksinään $85\\,\\text{dB}$ ja lehtipuhallin yksinään $88\\,\\text{dB}$. Kuinka monta desibeliä yhteistaso on suurempi kuin lehtipuhaltimen taso yksinään?",
+      "text": "Pihalla käy samaan aikaan ruohonleikkuri ja lehtipuhallin. Mittarin kohdalla ruohonleikkuri tuottaa yksinään $85\\,\\text{dB}$ ja lehtipuhallin yksinään $88\\,\\text{dB}$. Kuinka monta desibeliä suurempi yhteistaso on kuin lehtipuhaltimen taso yksinään?",
       "answer": 1.8,
       "unit": "dB",
       "tolerance": 0.03
@@ -61,8 +61,8 @@
     {
       "id": "fy5-15-L2-03",
       "level": 2,
-      "text": "Kaiuttimen edessä $2{,}0\\,\\text{m}$:n päässä mittari näyttää $90\\,\\text{dB}$. Mitä mittari näyttää $8{,}0\\,\\text{m}$:n päässä samasta kaiuttimesta, kun ääni leviää tasaisesti joka suuntaan eikä heijastu? Anna vastaus desibeleinä.",
-      "answer": 78,
+      "text": "Kaiuttimen edessä $3{,}0\\,\\text{m}$:n päässä mittari näyttää $85\\,\\text{dB}$. Mitä mittari näyttää $12\\,\\text{m}$:n päässä samasta kaiuttimesta, kun ääni leviää tasaisesti joka suuntaan eikä heijastu? Anna vastaus desibeleinä.",
+      "answer": 73,
       "unit": "dB",
       "tolerance": 0.01
     },
@@ -79,8 +79,8 @@
     {
       "id": "fy5-15-L3-01",
       "level": 3,
-      "text": "Jäähallissa on $12\\,000$ katsojaa. Kun yksi katsoja huutaa, hänen äänensä tuottaa kentän keskelle keskimäärin tason $42\\,\\text{dB}$. Mikä on intensiteettitaso kentän keskellä, kun kaikki huutavat yhtä aikaa? Oletetaan, että jokainen huuto tuottaa kentän keskelle saman intensiteetin ja että huudot ovat toisistaan riippumattomia. Anna vastaus desibeleinä.",
-      "answer": 83,
+      "text": "Jäähallissa on $12\\,000$ katsojaa. Kun yksi katsoja huutaa, hänen äänensä tuottaa kentän keskelle keskimäärin tason $42\\,\\text{dB}$. Samaan aikaan hallin kuulutusjärjestelmä soi, ja se tuottaa kentän keskelle yksinään tason $80\\,\\text{dB}$. Mikä on intensiteettitaso kentän keskellä, kun kaikki katsojat huutavat yhtä aikaa ja kuulutus soi? Oletetaan, että jokainen huuto tuottaa kentän keskelle saman intensiteetin ja että kaikki äänilähteet ovat toisistaan riippumattomia. Anna vastaus desibeleinä.",
+      "answer": 85,
       "unit": "dB",
       "tolerance": 0.01
     },
@@ -95,7 +95,7 @@
     {
       "id": "fy5-15-L3-03",
       "level": 3,
-      "text": "Akustiikkalaboratorion kaiuttomassa huoneessa mitataan hyvin hiljaisen tuulettimen intensiteettitasoksi $-5\\,\\text{dB}$. Opiskelija sanoo: ”Mittaus on varmasti väärä, koska negatiivinen intensiteettitaso tarkoittaisi negatiivista intensiteettiä.” Onko hän oikeassa? Selitä, mitä negatiivinen intensiteettitaso tarkoittaa, ja voiko tuulettimen kuulla.",
+      "text": "Akustiikkalaboratorion kaiuttomassa huoneessa mitataan hyvin hiljaisen tuulettimen intensiteettitasoksi $-5\\,\\text{dB}$. Opiskelija sanoo: ”Mittaus on varmasti väärä, koska negatiivinen intensiteettitaso tarkoittaisi negatiivista intensiteettiä.” Onko hän oikeassa? Selitä, mitä negatiivinen intensiteettitaso tarkoittaa, ja voiko tuulettimen kuulla. Muista, että kuulokynnys $I_0$ on määritelty noin $1000\\,\\text{Hz}$:n taajuudelle.",
       "answer": "Ei ole: negatiivinen taso tarkoittaa, että intensiteetti on positiivinen mutta kuulokynnystä pienempi, $I = 10^{-0{,}5} I_0 \\approx 3{,}2 \\cdot 10^{-13}\\,\\text{W/m}^2$; keskimääräinen kuulija ei kuule sitä, mutta herkimmät kuulijat voivat kuulla herkimmillä taajuuksilla.",
       "unit": "",
       "tolerance": 0.02

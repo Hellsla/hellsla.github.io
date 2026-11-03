@@ -56,7 +56,7 @@
         "after": "koe-1",
         "min": 2
       },
-      "prompt": "Desibelimittari on $2{,}0\\,\\text{m}$:n päässä kaiuttimesta ja näyttää $90\\,\\text{dB}$. Mittari siirretään $4{,}0\\,\\text{m}$:n päähän samasta kaiuttimesta. Ääni ei heijastu mistään. Mitä mittari näyttää nyt?",
+      "prompt": "Desibelimittari on $2{,}0\\,\\text{m}$:n päässä kaiuttimesta ja näyttää $90\\,\\text{dB}$. Mittari siirretään $4{,}0\\,\\text{m}$:n päähän samasta kaiuttimesta. Kaiutin säteilee tasaisesti joka suuntaan, eikä ääni heijastu mistään. Mitä mittari näyttää nyt?",
       "choices": [
         {
           "text": "Noin $45\\,\\text{dB}$, koska kaksinkertaisella etäisyydellä ääni on puolet heikompi.",
@@ -67,7 +67,7 @@
           "feedback": "Alan kasvu on oikea havainto, ja mallin arvoissa intensiteetti putoaakin neljäsosaan, $0{,}995 \\to 0{,}249\\,\\text{mW/m}^2$. Taso ei kuitenkaan jaeta neljällä: se on $84{,}0\\,\\text{dB}$. Desibeleissä nelinkertainen intensiteettiero on vain noin $6\\,\\text{dB}$."
         },
         {
-          "text": "Noin $84\\,\\text{dB}$: taso pienenee vain muutamalla desibelillä.",
+          "text": "Noin $84\\,\\text{dB}$, koska nelinkertainen intensiteettiero näkyy tasossa vain muutamana desibelinä.",
           "correct": true,
           "feedback": "Mallin arvot tukevat tätä: $4{,}0\\,\\text{m}$:ssä taso on $84{,}0\\,\\text{dB}$ ja $8{,}0\\,\\text{m}$:ssä $77{,}9\\,\\text{dB}$. Intensiteetti putoaa joka kerta neljäsosaan, mutta taso pienenee vain noin $6\\,\\text{dB}$, koska asteikko on logaritminen."
         },
@@ -91,10 +91,10 @@
       "choices": [
         {
           "text": "$180\\,\\text{dB}$, koska kaksi kaiutinta tuottaa kaksinkertaisen äänen.",
-          "feedback": "Mallin arvot kumoavat tämän: kahdella kaiuttimella taso on $93{,}0\\,\\text{dB}$. Kaksinkertaistuu teho ja siksi intensiteetti, ei desibelilukema. $180\\,\\text{dB}$ olisi miljardeja kertoja voimakkaampi kuin suihkukone."
+          "feedback": "Mallin arvot kumoavat tämän: kahdella kaiuttimella taso on $93{,}0\\,\\text{dB}$. Kaksinkertaistuu teho ja siksi intensiteetti, ei desibelilukema. $180\\,\\text{dB}$ olisi intensiteetiltään miljardi kertaa yhden kaiuttimen $90\\,\\text{dB}$ ja tuhansia kertoja suihkukonetta lähietäisyydeltä voimakkaampi."
         },
         {
-          "text": "Noin $93\\,\\text{dB}$: taso nousee vain muutamalla desibelillä.",
+          "text": "Noin $93\\,\\text{dB}$, koska kaksinkertainen intensiteetti lisää tasoa vain muutamalla desibelillä.",
           "correct": true,
           "feedback": "Mallin arvot tukevat tätä: kahdella kaiuttimella taso on $93{,}0\\,\\text{dB}$, neljällä $96{,}0\\,\\text{dB}$ ja kymmenellä $100{,}0\\,\\text{dB}$. Intensiteetti kasvaa samassa suhteessa kuin kaiuttimien määrä, ja jokainen kaksinkertaistus lisää tasoa noin $3\\,\\text{dB}$."
         },
@@ -277,7 +277,7 @@
         },
         {
           "text": "Laskussa ei ole virhettä; $65\\,\\text{dB}$ on hiljainen ääni, joten pieni intensiteetti on oikein.",
-          "feedback": "$65\\,\\text{dB}$ on keskustelun tai sitä vähän kovemman äänen taso, ja sen intensiteetti on $3{,}2 \\cdot 10^{-6}\\,\\text{W/m}^2$, satojatuhansia kertoja kuulokynnys. Laskussa logaritmia ei ole purettu potenssiksi $10^{6{,}5}$."
+          "feedback": "$65\\,\\text{dB}$ on keskustelun tai sitä vähän kovemman äänen taso, ja sen intensiteetti on $3{,}2 \\cdot 10^{-6}\\,\\text{W/m}^2$, noin kolme miljoonaa kertaa kuulokynnys. Laskussa logaritmia ei ole purettu potenssiksi $10^{6{,}5}$."
         }
       ]
     },
@@ -286,7 +286,7 @@
       "stage": "sovella",
       "type": "numeric",
       "title": "Sovella uuteen tilanteeseen",
-      "prompt": "Juhlasalissa on kaksi samanlaista kaiutinta, jotka soittavat toisistaan riippumattomia ääniä yhtä suurella teholla. Kuulija on $2{,}0\\,\\text{m}$:n päässä toisesta kaiuttimesta ja $4{,}0\\,\\text{m}$:n päässä toisesta. Lähempi kaiutin tuottaa yksinään kuulijan kohdalle $80\\,\\text{dB}$. Kuinka monta desibeliä yhteistaso on suurempi kuin lähemmän kaiuttimen taso yksinään? Oletetaan, että kumpikin kaiutin säteilee tasaisesti joka suuntaan eikä ääni heijastu. Vastaa desibeleinä.",
+      "prompt": "Juhlasalissa on kaksi samanlaista kaiutinta, jotka soittavat toisistaan riippumattomia ääniä yhtä suurella teholla. Kuulija on $2{,}0\\,\\text{m}$:n päässä yhdestä kaiuttimesta ja $4{,}0\\,\\text{m}$:n päässä toisesta. Lähempi kaiutin tuottaa yksinään kuulijan kohdalle $80\\,\\text{dB}$. Kuinka monta desibeliä yhteistaso on suurempi kuin lähemmän kaiuttimen taso yksinään? Oletetaan, että kumpikin kaiutin säteilee tasaisesti joka suuntaan eikä ääni heijastu. Vastaa desibeleinä.",
       "answer": 0.97,
       "unit": "dB",
       "tolerance": 0.03,
@@ -318,7 +318,7 @@
       "stage": "tarkista",
       "type": "choice",
       "title": "1. Kuulokynnys",
-      "prompt": "Äänitarkkaamon hiljaisuudessa mittari näyttää tason $0\\,\\text{dB}$. Mitä lukema kertoo?",
+      "prompt": "Kaiuttomassa huoneessa mittari näyttää tason $0\\,\\text{dB}$. Mitä lukema kertoo?",
       "choices": [
         {
           "text": "Ääntä ei ole lainkaan: intensiteetti on nolla.",
@@ -378,7 +378,7 @@
         "Lasken, että taso pienenee noin $10\\,\\text{dB} \\cdot \\lg 4 \\approx 6\\,\\text{dB}$, eli desibelilukema ei puolitu.",
         "Mainitsen oletuksen, ettei ääni heijastu eikä vaimene."
       ],
-      "model": "Väite ei pidä. Kun ääni leviää tasaisesti joka suuntaan eikä heijastu, kaiuttimen teho jakautuu pallopinnalle, jonka pinta-ala on $4\\pi r^2$. Kaksinkertaisella etäisyydellä pinta-ala on nelinkertainen, joten intensiteetti putoaa neljäsosaan eikä puoleen. Desibelilukema ei kuitenkaan puolitu eikä putoa neljäsosaan: taso pienenee $10\\,\\text{dB} \\cdot \\lg 4 \\approx 6\\,\\text{dB}$, esimerkiksi $100\\,\\text{dB}$:sta noin $94\\,\\text{dB}$:iin. Korvalle tämä on selvä mutta ei suuri hiljeneminen. Todellisuudessa maa ja rakenteet heijastavat ääntä, joten taso pienenee usein vielä vähemmän."
+      "model": "Väite ei pidä. Kun ääni leviää tasaisesti joka suuntaan eikä heijastu, kaiuttimen teho jakautuu pallopinnalle, jonka pinta-ala on $4\\pi r^2$. Kaksinkertaisella etäisyydellä pinta-ala on nelinkertainen, joten intensiteetti putoaa neljäsosaan eikä puoleen. Desibelilukema ei kuitenkaan puolitu eikä putoa neljäsosaan: taso pienenee $10\\,\\text{dB} \\cdot \\lg 4 \\approx 6\\,\\text{dB}$, esimerkiksi $100\\,\\text{dB}$:sta noin $94\\,\\text{dB}$:iin. Korvalle tämä on selvä mutta ei suuri hiljeneminen. Huomaa, että \"puolet\" voi tarkoittaa myös koettua voimakkuutta: noin $10\\,\\text{dB}$:n pudotus kuulostaa suunnilleen puolta hiljaisemmalta, vaikka intensiteetti pienenee silloin kymmenesosaan. Intensiteetti ja koettu voimakkuus eivät ole sama asia, eikä kumpikaan tulkinta täsmää: intensiteetti putoaa neljäsosaan, ja noin $6\\,\\text{dB}$:n pudotus kuulostaa vain noin kolmanneksen hiljaisemmalta, ei puolta. Todellisuudessa maa ja rakenteet heijastavat ääntä, joten taso pienenee usein vielä vähemmän."
     },
     {
       "id": "lahtolippu",
