@@ -1,15 +1,17 @@
-VERDICT: FAIL
-CONTENT-HASH: f790eb2be657d8e1
-
+VERDICT: PASS
+CONTENT-HASH: 5124d76d81e95f4d
 ## Blocking
-- exercises/solutions.md:37 (L1-04) — A, quantitative: the intermediate numerator $3{,}192 \cdot 10^{-12}\,\text{J}\,\text{m}$ is wrong; $3{,}0 \cdot 10^{-3}\,\text{J} \cdot 1064 \cdot 10^{-9}\,\text{m} = 3{,}192 \cdot 10^{-9}\,\text{J}\,\text{m}$, and the line's own quotient $\frac{3{,}192 \cdot 10^{-12}}{1{,}9865 \cdot 10^{-25}}$ would give $1{,}6 \cdot 10^{13}$, not the stated $1{,}6069 \cdot 10^{16}$ — write $3{,}192 \cdot 10^{-9}\,\text{J}\,\text{m}$. (Present before the colon-division edit; the final value and exercises.json are right.)
 
 ## Polish
-- exercises.json (L2-02) — stores 1.6 while the solution answers 1,60 with three significant figures — store 1.60 or 1.605 (tolerance already covers it).
+- exercises/solutions.md:fy8-7-L3-02 — the answer key holds 2,03·10¹⁸ but the Vastaus gives 2,0·10¹⁸ (2 sig. figs from 1,0 W); both lie within the 2 % tolerance — consider making the key  2.0e18 so it matches the stated rounding.
+- exercises/solutions.md:fy8-7-L3-01 — "yli puolet … eli vähintään N/2" mixes strict and non-strict; the closing remark ("inversio vaatii hieman tätä enemmän") already covers it — optionally write "noin N/2 (hieman yli)".
+- exercises/solutions.md:fy8-7-L2-03 — the reasonableness check cites the lesson's quantum-dot table (3,0 nm → 530 nm), which the brief does not carry; I could not verify it — keep it only if it matches the lesson's table.
 
 ## Checked
-- Content hash identical at start and end.
-- Colon-division rewrites of L1-01, L1-03, L1-04: brackets group numerator and denominator correctly, operator precedence unambiguous; L1-01 gives 3,1382e-19 J = 1,9589 eV and L1-03 6,9274e-7 m = 692,74 nm, as written.
-- All 12 answers recomputed in one script with my own formulas; exercises.json within tolerance and answers.py (lessons/FY8/fy8-7/answers.py) identical to mine for every task.
-- Physics unchanged from the passed version: photon energy hc/λ, P = (N/t)·hf, quantum defect λp/λL, inversion to a ground-state lower level needs over N/2 ions, two 1064 nm photons → one 532 nm photon.
-- Units, conversions and rounding by the limiting datum checked in every solution.
+- All 12 answers recomputed independently from the task text (hc/λ, P = (N/t)hf, η = λ_p/λ_L, N/2 inversion, P·λ_p/(2hc), c/(λf_q)); each agrees with the key within 0,9 %, inside tolerance 0,02.
+- Previous blocker fixed: L1-04 intermediate 3,0·10⁻³ J · 1064·10⁻⁹ m = 3,192·10⁻⁹ J m, N = 1,6069·10¹⁶.
+- answers.py: every line implements the physics of its task; units and tolerances fit the data.
+- Solutions: symbolic first, conversions right, rounding follows the limiting datum, reasonableness checks numerically true (green 0,76 W < 1,0 W; qubit 2,07·10⁻⁵ eV; 1,17/1,53 eV; 3,27/2,04·10¹⁵ s⁻¹).
+- Physics: ruby three-level with ground-state lower level, N₂ > N₁, quantum-defect limit, SHG energy conservation, quantum-dot size→gap trend, all consistent with the brief and glossary; within FY8 scope.
+- Assumptions stated in tasks (no decay during pumping, one photon per pump photon, ideal conversion).
+- Hash identical at start and end.
