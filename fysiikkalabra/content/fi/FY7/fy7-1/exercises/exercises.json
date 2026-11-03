@@ -1,0 +1,104 @@
+{
+ "level1": [
+  {
+   "id": "fy7-1-L1-01",
+   "level": 1,
+   "text": "Sairaalan magneettikuvauslaitteen magneettivuon tiheys on $3{,}0\\,\\text{T}$. Maan magneettikentän magneettivuon tiheys on noin $50\\,\\mu\\text{T}$. Kuinka monta kertaa suurempi laitteen kenttä on kuin Maan kenttä?",
+   "answer": 60000,
+   "unit": "",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy7-1-L1-02",
+   "level": 1,
+   "text": "Kuopiossa Maan magneettikentän magneettivuon tiheys on noin $53\\,\\mu\\text{T}$, ja kenttä osoittaa $75^\\circ$ vaakatason alapuolelle. Kuinka suuri on kentän vaakakomponentti mikrotesloina?",
+   "answer": 13.7,
+   "unit": "µT",
+   "tolerance": 0.03
+  },
+  {
+   "id": "fy7-1-L1-03",
+   "level": 1,
+   "text": "Kompassin kohdalla Maan magneettikentän vaakakomponentti on $14\\,\\mu\\text{T}$ pohjoiseen ja pöydällä olevan magneetin kenttä $48\\,\\mu\\text{T}$ itään. Kuinka suuri on vaakasuora kokonaiskenttä mikrotesloina?",
+   "answer": 50.0,
+   "unit": "µT",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy7-1-L1-04",
+   "level": 1,
+   "text": "Sauvamagneetti katkaistaan keskeltä kahtia. Mitkä navat kummassakin palassa on? Vetävätkö vai hylkivätkö palaset toisiaan, kun katkaisupinnat tuodaan takaisin vastakkain?",
+   "answer": "Kummassakin palassa on pohjoisnapa ja etelänapa. Katkaisupinnoilla on erinimiset navat, joten palaset vetävät toisiaan.",
+   "unit": "",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy7-1-L1-05",
+   "level": 1,
+   "text": "Kompassi asetetaan pöydälle sauvamagneetin akselille magneetin pohjoisnavan $\\text{N}$ eteen. Mihin kompassin neulan pohjoispää osoittaa, ja miksi?",
+   "answer": "Poispäin magneetista: magneetin kenttä osoittaa pohjoisnavasta poispäin, ja neulan pohjoisnapa hylkii magneetin pohjoisnapaa.",
+   "unit": "",
+   "tolerance": 0.02
+  }
+ ],
+ "level2": [
+  {
+   "id": "fy7-1-L2-01",
+   "level": 2,
+   "text": "Pöydällä olevan magneetin kenttä kompassin kohdalla on $25\\,\\mu\\text{T}$ itään, ja Maan magneettikentän vaakakomponentti on $14\\,\\mu\\text{T}$ pohjoiseen. Kuinka monta astetta pohjoisesta itään kompassin neula kääntyy?",
+   "answer": 60.8,
+   "unit": "°",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy7-1-L2-02",
+   "level": 2,
+   "text": "Älypuhelimen magnetometrisovellus näyttää Maan magneettikentän komponentit $B_x = 12\\,\\mu\\text{T}$, $B_y = -5{,}0\\,\\mu\\text{T}$ ja $B_z = -48\\,\\mu\\text{T}$. Komponentit ovat kohtisuorassa toisiaan vastaan. Kuinka suuri on Maan magneettikentän magneettivuon tiheys mikrotesloina?",
+   "answer": 49.7,
+   "unit": "µT",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy7-1-L2-03",
+   "level": 2,
+   "text": "Rovaniemellä Maan magneettikentän pystykomponentti on noin $51\\,\\mu\\text{T}$, ja kenttä osoittaa $77^\\circ$ vaakatason alapuolelle. Kuinka suuri on kentän magneettivuon tiheys mikrotesloina?",
+   "answer": 52.3,
+   "unit": "µT",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy7-1-L2-04",
+   "level": 2,
+   "text": "Kompassi on magneetin akselilla, ja magneetin kenttä on kohtisuorassa Maan kentän vaakakomponenttia vastaan. Kun kompassi on $10\\,\\text{cm}$:n päässä magneetista, neula kääntyy $60^\\circ$ pohjoisesta. Kun se on $20\\,\\text{cm}$:n päässä, neula kääntyy $10^\\circ$. Kuinka monta kertaa suurempi magneetin kenttä on $10\\,\\text{cm}$:n päässä kuin $20\\,\\text{cm}$:n päässä?",
+   "answer": 9.82,
+   "unit": "",
+   "tolerance": 0.02
+  }
+ ],
+ "level3": [
+  {
+   "id": "fy7-1-L3-01",
+   "level": 3,
+   "text": "Sauvamagneetti on pöydällä pohjois–eteläsuunnassa pohjoisnapa $\\text{N}$ pohjoiseen. Kompassi asetetaan magneetin itäpuolelle magneetin keskikohdan kohdalle, jossa magneetin kenttä on $25\\,\\mu\\text{T}$. Maan magneettikentän vaakakomponentti on $14\\,\\mu\\text{T}$ pohjoiseen. Kuinka suuri on vaakasuora kokonaiskenttä mikrotesloina, ja mihin kompassin neula osoittaa?",
+   "answer": 11,
+   "unit": "µT",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy7-1-L3-02",
+   "level": 3,
+   "text": "Teräksinen paperiliitin vedetään useita kertoja samaan suuntaan magneetin napaa pitkin, minkä jälkeen se nostaa pieniä nastoja. Kun liitin kuumennetaan liekissä punahehkuiseksi ja annetaan jäähtyä, se ei enää nosta nastoja. Selitä molemmat havainnot alkeisalueiden avulla.",
+   "answer": "Magneetin kenttä järjestää teräksen alkeisalueet samansuuntaisiksi, ja kovassa teräksessä ne jäävät järjestykseen, joten liitin on magneetti. Kuumennus riittävän korkeaan lämpötilaan sekoittaa alkeisalueiden järjestyksen, joten liitin ei enää ole magneetti.",
+   "unit": "",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy7-1-L3-03",
+   "level": 3,
+   "text": "World Magnetic Model 2025 -mallin mukaan Maan magneettikenttä on Helsingissä noin $52\\,\\mu\\text{T}$ ja osoittaa $74^\\circ$ vaakatason alapuolelle. Huippuvuorten Longyearbyenissä kenttä on noin $55\\,\\mu\\text{T}$ ja osoittaa $82^\\circ$ vaakatason alapuolelle. Kuinka monta kertaa suurempi kentän vaakakomponentti on Helsingissä kuin Longyearbyenissä? Miksi kompassi toimii Longyearbyenissä huonommin, vaikka koko kenttä on siellä suurempi?",
+   "answer": 1.87,
+   "unit": "",
+   "tolerance": 0.02
+  }
+ ]
+}

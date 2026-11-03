@@ -1,0 +1,379 @@
+{
+  "version": 1,
+  "contribution": "Magneettikentän voima liikkuvaan varaukseen laajenee virtajohtimeen: $F = I l B \\sin\\alpha$ ja suunta oikean käden säännöllä, kahden johtimen välinen voima johtimen kentästä, sekä sovelluksina tasavirtamoottori ja kaiutin; virtavaa'an lukemista määritetään magneetin kenttä.",
+  "learn": [
+    "laskemaan virtajohtimeen magneettikentässä kohdistuvan voiman ja päättelemään sen suunnan.",
+    "selittämään, miksi rinnakkaiset virtajohtimet vetävät tai hylkivät toisiaan, ja laskemaan niiden välisen voiman.",
+    "selittämään, miten tasavirtamoottori ja kaiutin toimivat."
+  ],
+  "prior": [
+    "Magneettikenttä kohdistaa liikkuvaan varattuun hiukkaseen voiman, joka on kohtisuorassa nopeutta ja kenttää vastaan (luku *Varattu hiukkanen sähkö- ja magneettikentässä*)",
+    "Suoran virtajohtimen magneettikenttä kiertää johdinta, ja sen suuruus on $B = \\mu_0 I : (2\\pi r)$ (luku *Virtajohtimen ja käämin magneettikenttä*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Kun kaiutin soittaa bassoa, sen kartion näkee liikkuvan edestakaisin. Pöytätuulettimen siivet lähtevät pyörimään heti, kun pistoke työnnetään seinään. Kumpaakaan ei kosketa, eikä kummassakaan ole palavaa polttoainetta. Molemmissa on kuitenkin magneetti ja johdin, jossa kulkee sähkövirta.",
+      "question": "Miten magneetti voi liikuttaa johdinta, jos johdin on kuparia, jota magneetti ei vedä puoleensa?"
+    },
+    {
+      "id": "kertaus-kentta",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Kertaa: suoran johtimen magneettikenttä",
+      "prompt": "Pitkässä suorassa johtimessa kulkee virta. Kuinka suuri on magneettivuon tiheys kaksi kertaa niin kaukana johtimesta kuin aluksi?",
+      "choices": [
+        {
+          "text": "Puolet alkuperäisestä, koska $B = \\mu_0 I : (2\\pi r)$ on kääntäen verrannollinen etäisyyteen.",
+          "correct": true,
+          "feedback": "Oikein. Suoran johtimen kenttä kiertää johdinta ympyröinä, ja sen suuruus on kääntäen verrannollinen etäisyyteen $r$ (luku *Virtajohtimen ja käämin magneettikenttä*). Tänään tällä kentällä selitetään, miksi kaksi virtajohdinta vetää tai hylkii toisiaan."
+        },
+        {
+          "text": "Neljäsosa alkuperäisestä, koska kenttä heikkenee etäisyyden neliön mukaan.",
+          "feedback": "Neliön mukaan heikkenee pistevarauksen sähkökenttä. Pitkän suoran johtimen kenttä on $B = \\mu_0 I : (2\\pi r)$, joten kaksinkertaisella etäisyydellä se on puolet (luku *Virtajohtimen ja käämin magneettikenttä*)."
+        },
+        {
+          "text": "Yhtä suuri, koska virta on johtimen joka kohdassa sama.",
+          "feedback": "Virta on sama, mutta kenttä heikkenee, kun etäisyys kasvaa: $B = \\mu_0 I : (2\\pi r)$. Kaksinkertaisella etäisyydellä kenttä on puolet (luku *Virtajohtimen ja käämin magneettikenttä*)."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "ennuste-suunta",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 1: tunteeko vaaka virran?",
+      "prompt": "Virtavaa'assa magneetti on digitaalivaa'an päällä, ja jäykkä kuparijohdin on telineen varassa magneetin napojen välissä. Johdin ei kosketa magneettia eikä vaakaa. Mitä vaa'an lukemalle tapahtuu, kun johtimeen kytketään virta ja kun virran suunta sitten käännetään (virran suuruus sama)?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 3
+      },
+      "choices": [
+        {
+          "text": "Lukema ei muutu kummallakaan virralla, koska johdin ei kosketa magneettia eikä vaakaa.",
+          "feedback": "Mallin arvot kumoavat tämän: ilman virtaa lukema on $245{,}30\\,\\text{g}$, mutta virralla $6{,}0\\,\\text{A}$ se on $247{,}75\\,\\text{g}$. Magneettikenttä välittää voiman ilman kosketusta, ja Newtonin kolmannen lain mukaan johdin työntää magneettia yhtä suurella vastakkaissuuntaisella voimalla."
+        },
+        {
+          "text": "Lukema muuttuu, ja kun virran suunta käännetään, se muuttuu yhtä paljon vastakkaiseen suuntaan.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä: virralla $6{,}0\\,\\text{A}$ lukema on $247{,}75\\,\\text{g}$ ja virralla $-6{,}0\\,\\text{A}$ $242{,}85\\,\\text{g}$, kumpikin $2{,}45\\,\\text{g}$ nollalukemasta $245{,}30\\,\\text{g}$. Voiman suunta riippuu virran suunnasta, ja muutos on verrannollinen virtaan."
+        },
+        {
+          "text": "Lukema muuttuu, mutta virran suunnalla ei ole väliä: muutos on aina samansuuntainen.",
+          "feedback": "Mallin arvot kumoavat tämän: virralla $6{,}0\\,\\text{A}$ lukema kasvaa $247{,}75\\,\\text{g}$:aan, mutta virralla $-6{,}0\\,\\text{A}$ se pienenee $242{,}85\\,\\text{g}$:aan. Magneettinen voima ei ole vetovoima vaan kohtisuorassa virtaa ja kenttää vastaan, joten virran kääntäminen kääntää voiman."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 2: johdin vinossa kenttään nähden",
+      "prompt": "Virtavaa'an johtimessa kulkee $6{,}0\\,\\text{A}$:n virta, ja johdin on aluksi kohtisuorassa kenttää vastaan ($\\alpha = 90^\\circ$). Johdinta käännetään vaakatasossa niin, että johtimen ja kentän välinen kulma on $30^\\circ$. Kentässä olevan johtimen pituus ei muutu. Miten lukeman muutos eli lukema miinus nollalukema muuttuu?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-2",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "Se pysyy samana, koska virta, kenttä ja johtimen pituus ovat samat.",
+          "feedback": "Mallin arvot kumoavat tämän: kohtisuorassa johtimessa muutos on $2{,}45\\,\\text{g}$, kulmassa $30^\\circ$ vain $1{,}22\\,\\text{g}$. Voimaa synnyttää vain kentän johtimeen kohtisuora komponentti $B \\sin\\alpha$, ja kentän suuntaiseen johtimeen voimaa ei synny lainkaan."
+        },
+        {
+          "text": "Se pienenee puoleen.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä: muutos pienenee $2{,}45\\,\\text{g}$:sta $1{,}22\\,\\text{g}$:aan. Kulmassa $60^\\circ$ se on $2{,}12\\,\\text{g}$ ja kulmassa $0^\\circ$ nolla. Muutos on verrannollinen kulman siniin, ja $\\sin 30^\\circ = 0{,}5$."
+        },
+        {
+          "text": "Se pienenee kolmasosaan, koska kulma pienenee kolmasosaan.",
+          "feedback": "Mallin arvot kumoavat tämän: kulmassa $30^\\circ$ muutos on $1{,}22\\,\\text{g}$ eli puolet arvosta $2{,}45\\,\\text{g}$, ei kolmasosa. Voima ei ole verrannollinen kulmaan vaan kulman siniin: $\\sin 30^\\circ = 0{,}5$ ja $\\sin 90^\\circ = 1$."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Virtavaa'assa magneetti on vaa'an päällä ja johdin sen napojen välissä. Muuta virtaa ja johtimen kulmaa ja seuraa vaa'an lukemaa.",
+      "howto": "Säädä virtaa $I$ ja johtimen ja kentän välistä kulmaa $\\alpha$, ja valitse magneetti ja kentässä olevan johtimen pituus $l$. Negatiivinen virta tarkoittaa, että virta kulkee johtimessa vastakkaiseen suuntaan. *Sivukuvassa* näkyvät vaaka, magneetti ja johdin sekä johtimeen kohdistuva voima punaisena nuolena, jonka pituus kuvaa voiman suuruutta. *Yläkuvassa* näet magneetin navat ylhäältä, vihreät kenttäviivat, johtimen kulman ja violetin virtanuolen. Voima osoittaa paperista ulos (piste ympyrässä) tai paperiin päin (risti ympyrässä). Vaa'an lukema on lukemat-rivillä ja vaa'an näytössä.",
+      "model": "Kenttä on napojen välissä homogeeninen ja niiden ulkopuolella nolla. Vain johtimen vaakasuora alaosa on kentässä; pystysuorien tulojohtimien voimat ovat vaakasuoria eivätkä muuta vaa'an lukemaa. Johdin on jäykästi kiinni telineessä, joten se ei liiku. Magneettien kenttien suuruuksia ei näytetä: ne määritetään mittauksista. Lukemat ovat mallin laskemia arvoja $0{,}01\\,\\text{g}$:n tarkkuudella, eivät mittauksia, eikä niissä ole mittausvirhettä.",
+      "calc": "Kenttä kohdistaa johtimeen pystysuoran voiman $F = I l B \\sin\\alpha$. Newtonin kolmannen lain mukaan johdin kohdistaa magneettiin yhtä suuren vastakkaissuuntaisen voiman, joten vaaka näyttää lukeman\n\n$$m = m_0 + \\frac{F}{g}$$\n\nmissä $m_0 = 245{,}30\\,\\text{g}$ on lukema ilman virtaa ja $g = 9{,}81\\,\\text{m/s}^2$. Lukeman muutoksesta $\\Delta m = m - m_0$ saadaan voima $F = \\Delta m \\cdot g$ ja siitä magneettivuon tiheys $B = F : (I l)$, kun johdin on kohtisuorassa kenttää vastaan."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 1: vain virta muuttuu",
+      "intro": "Testaa ennuste 1. Johdin on kohtisuorassa kenttää vastaan, magneetti ja johtimen pituus pysyvät samoina; muuta vain virtaa. Kirjaa ensin lukema ilman virtaa (nollalukema), sitten esimerkiksi virroilla $3{,}0\\,\\text{A}$, $6{,}0\\,\\text{A}$, $-3{,}0\\,\\text{A}$ ja $-6{,}0\\,\\text{A}$. Laske jokaiselle riville lukeman muutos.",
+      "initial": {
+        "I": 0,
+        "alpha": 90,
+        "magneetti": "A",
+        "l": "5"
+      },
+      "locked": [
+        "alpha",
+        "magneetti",
+        "l"
+      ],
+      "vary": "I",
+      "names": {
+        "I": "virta",
+        "alpha": "kulma",
+        "magneetti": "magneetti",
+        "l": "johdinta kentässä"
+      },
+      "units": {
+        "I": "A",
+        "alpha": "°",
+        "magneetti": "",
+        "l": "cm"
+      },
+      "values": {
+        "magneetti": {
+          "A": "magneetti A",
+          "B": "magneetti B"
+        },
+        "l": {
+          "5": "$5{,}0\\,\\text{cm}$",
+          "2.5": "$2{,}5\\,\\text{cm}$"
+        }
+      },
+      "measure": [
+        {
+          "key": "lukema",
+          "label": "m (g)"
+        }
+      ],
+      "min": 3
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 2: vain kulma muuttuu",
+      "intro": "Testaa ennuste 2. Virta on $6{,}0\\,\\text{A}$, ja magneetti ja johtimen pituus pysyvät samoina; muuta vain johtimen ja kentän välistä kulmaa. Kirjaa lukema ainakin kulmissa $90^\\circ$ ja $30^\\circ$, halutessasi myös $60^\\circ$ ja $0^\\circ$. Nollalukema on sama kuin kokeessa 1.",
+      "initial": {
+        "I": 6,
+        "alpha": 90,
+        "magneetti": "A",
+        "l": "5"
+      },
+      "locked": [
+        "I",
+        "magneetti",
+        "l"
+      ],
+      "vary": "alpha",
+      "names": {
+        "I": "virta",
+        "alpha": "kulma",
+        "magneetti": "magneetti",
+        "l": "johdinta kentässä"
+      },
+      "units": {
+        "I": "A",
+        "alpha": "°",
+        "magneetti": "",
+        "l": "cm"
+      },
+      "values": {
+        "magneetti": {
+          "A": "magneetti A",
+          "B": "magneetti B"
+        },
+        "l": {
+          "5": "$5{,}0\\,\\text{cm}$",
+          "2.5": "$2{,}5\\,\\text{cm}$"
+        }
+      },
+      "measure": [
+        {
+          "key": "lukema",
+          "label": "m (g)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös: voima ja magneetin kenttä",
+      "after": [
+        "koe-1",
+        "koe-2"
+      ],
+      "prompt": "Kirjoita taulukoidesi perusteella: miten lukeman muutos riippuu virrasta ja sen suunnasta, ja miten johtimen kulmasta? Laske kokeen 1 luvuista voima, jonka kenttä kohdistaa johtimeen virralla $6{,}0\\,\\text{A}$, ja määritä magneetin A magneettivuon tiheys, kun kentässä on $5{,}0\\,\\text{cm}$ johdinta.",
+      "model": "Ilman virtaa lukema on $245{,}30\\,\\text{g}$. Virralla $3{,}0\\,\\text{A}$ muutos on $1{,}22\\,\\text{g}$ ja virralla $6{,}0\\,\\text{A}$ $2{,}45\\,\\text{g}$, joten muutos on verrannollinen virtaan; negatiivisilla virroilla lukema pienenee yhtä paljon. Virralla $6{,}0\\,\\text{A}$ voima on $F = \\Delta m \\cdot g = 0{,}00245\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 = 0{,}0240\\,\\text{N}$, joten $B = F : (I l) = 0{,}0240\\,\\text{N} : (6{,}0\\,\\text{A} \\cdot 0{,}050\\,\\text{m}) = 0{,}080\\,\\text{T}$. Kokeessa 2 muutos pieneni kulmassa $30^\\circ$ puoleen, $1{,}22\\,\\text{g}$:aan, ja kulmassa $0^\\circ$ nollaan, joten voima on verrannollinen kulman siniin: $F = I l B \\sin\\alpha$. Arvot ovat mallin laskemia; oikeassa virtavaa'assa lukemat vaihtelisivat hieman.",
+      "criteria": [
+        "Kerroin, että lukeman muutos on verrannollinen virtaan ja vaihtaa merkkiä, kun virran suunta kääntyy.",
+        "Laskin voiman lukeman muutoksesta yhtälöllä $F = \\Delta m \\cdot g$ ja muunsin grammat kilogrammoiksi.",
+        "Ratkaisin magneettivuon tiheyden $B = F : (I l)$ ja sain noin $0{,}080\\,\\text{T}$.",
+        "Kerroin, että voima riippuu kulman sinistä eikä kulmasta suoraan, ja että kentän suuntaiseen johtimeen ei kohdistu voimaa."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Palaa ennusteisiisi",
+      "prompt": "Vertaa ennusteitasi kokeiden mallin arvoihin ja kaavaan $F = I l B \\sin\\alpha$. Palaa sitten alun kysymykseen: miten magneetti voi liikuttaa kuparijohdinta, jota se ei vedä puoleensa? Selitä samalla, miksi kaiuttimen kartio liikkuu edestakaisin eikä vain yhteen suuntaan.",
+      "predictions": [
+        "ennuste-suunta",
+        "ennuste-2"
+      ],
+      "optional": true
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe",
+      "prompt": "Homogeenisessa magneettikentässä $B = 0{,}30\\,\\text{T}$ on $20\\,\\text{cm}$ suoraa johdinta, jossa kulkee $5{,}0\\,\\text{A}$:n virta. Johtimen ja kentän välinen kulma on $30^\\circ$. Opiskelija laskee\n\n$$\\begin{aligned} F &= I l B \\cos 30^\\circ \\\\ &= 5{,}0\\,\\text{A} \\cdot 0{,}20\\,\\text{m} \\cdot 0{,}30\\,\\text{T} \\cdot 0{,}866 \\\\ &\\approx 0{,}26\\,\\text{N} \\end{aligned}$$\n\nMissä on virhe?",
+      "choices": [
+        {
+          "text": "Kaavassa pitää olla $\\sin\\alpha$, koska voimaa synnyttää kentän johtimeen kohtisuora komponentti. Oikea tulos on $0{,}15\\,\\text{N}$.",
+          "correct": true,
+          "feedback": "Oikein. Kulma on johtimen ja kentän välinen, ja kentän johtimeen kohtisuora komponentti on $B \\sin\\alpha$. Siksi $F = 5{,}0\\,\\text{A} \\cdot 0{,}20\\,\\text{m} \\cdot 0{,}30\\,\\text{T} \\cdot 0{,}5 = 0{,}15\\,\\text{N}$. Tarkistus rajatapauksella: kentän suuntaisessa johtimessa ($\\alpha = 0^\\circ$) voiman on oltava nolla, mutta kosini antaisi suurimman voiman."
+        },
+        {
+          "text": "Johtimen pituus olisi pitänyt sijoittaa senttimetreinä, $20\\,\\text{cm}$.",
+          "feedback": "Pituus on oikein muunnettu metreiksi: $20\\,\\text{cm} = 20 \\cdot 0{,}01\\,\\text{m} = 0{,}20\\,\\text{m}$. Kun $\\text{T} = \\tfrac{\\text{N}}{\\text{A}\\cdot\\text{m}}$, tulos on newtoneina vain, jos pituus on metreinä. Virhe on kulman funktiossa."
+        },
+        {
+          "text": "Kulmaa ei pidä ottaa huomioon lainkaan, koska kulma vaikuttaa vain voiman suuntaan: $F = I l B = 0{,}30\\,\\text{N}$.",
+          "feedback": "Kulma vaikuttaa voiman suuruuteen: kentän suuntaiseen johtimeen ei kohdistu voimaa lainkaan. Voima $I l B = 0{,}30\\,\\text{N}$ saadaan vain, kun johdin on kohtisuorassa kenttää vastaan. Tässä kulma on $30^\\circ$, joten voima on $0{,}30\\,\\text{N} \\cdot \\sin 30^\\circ = 0{,}15\\,\\text{N}$."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Sovella uuteen tilanteeseen: starttikaapelit",
+      "prompt": "Auton akkua ladataan toisen auton akusta starttikaapeleilla. Kun moottori käynnistetään, toisessa kaapelissa kulkee $150\\,\\text{A}$:n virta akulle ja toisessa yhtä suuri virta takaisin. Kaapelit kulkevat $2{,}0\\,\\text{m}$:n matkan rinnakkain niin, että niiden keskikohtien etäisyys on $1{,}5\\,\\text{cm}$. Kuinka suuri voima kaapeleiden välillä on? Vastaa newtoneina.",
+      "answer": 0.6,
+      "unit": "N",
+      "tolerance": 0.02,
+      "hints": [
+        "Missä kentässä toinen kaapeli on? Mikä on ensimmäisen kaapelin magneettikenttä toisen kaapelin kohdalla, ja mihin suuntaan se osoittaa kaapeliin nähden?",
+        "Ensimmäisen kaapelin kenttä toisen kohdalla on $B_1 = \\mu_0 I_1 : (2\\pi r)$, ja se on kohtisuorassa toista kaapelia vastaan, joten $F = I_2 l B_1$.",
+        "$B_1 = \\dfrac{4\\pi \\cdot 10^{-7}\\,\\tfrac{\\text{Vs}}{\\text{Am}} \\cdot 150\\,\\text{A}}{2\\pi \\cdot 0{,}015\\,\\text{m}} = 2{,}0 \\cdot 10^{-3}\\,\\text{T}$, ja $F = 150\\,\\text{A} \\cdot 2{,}0\\,\\text{m} \\cdot B_1$."
+      ],
+      "mistakes": [
+        {
+          "value": 0.006,
+          "feedback": "Sijoitit etäisyyden $1{,}5$ ikään kuin se olisi metreinä. Etäisyys on $1{,}5\\,\\text{cm} = 1{,}5 \\cdot 0{,}01\\,\\text{m} = 0{,}015\\,\\text{m}$, joten voima on sata kertaa suurempi."
+        },
+        {
+          "value": 3.77,
+          "feedback": "Kaavasta puuttuu nimittäjän $2\\pi$. Suoran johtimen kenttä on $B_1 = \\mu_0 I_1 : (2\\pi r)$, sillä kenttä jakautuu johtimen ympäri kiertävälle ympyrälle."
+        },
+        {
+          "value": 0.3,
+          "feedback": "Laskit voiman yhden metrin matkalla. Kaapelit kulkevat rinnakkain $2{,}0\\,\\text{m}$, joten koko rinnakkaiseen osaan kohdistuva voima on kaksinkertainen."
+        }
+      ],
+      "solution": "**Annettu:** kaapelien virrat $I_1 = I_2 = 150\\,\\text{A}$ vastakkaisiin suuntiin, rinnakkaisen osan pituus $l = 2{,}0\\,\\text{m}$, etäisyys $r = 1{,}5\\,\\text{cm}$, $\\mu_0 = 4\\pi \\cdot 10^{-7}\\,\\tfrac{\\text{Vs}}{\\text{Am}}$\n\n**Kysytty:** kaapelien välinen voima $F$ newtoneina\n\n**Periaate:** Kumpikin kaapeli on toisen kaapelin magneettikentässä. Ensimmäisen kaapelin kenttä kiertää sitä ympyröinä, joten toisen kaapelin kohdalla se on kohtisuorassa kaapelia vastaan ja koko rinnakkaisella matkalla yhtä suuri. Siksi toiseen kaapeliin kohdistuu voima $F = I_2 l B_1$. Virrat ovat vastakkaissuuntaiset, joten kaapelit hylkivät toisiaan.\n\n**Kaava:** $B_1 = \\dfrac{\\mu_0 I_1}{2\\pi r}$ ja $F = I_2 l B_1$\n\n**Muunnokset:** $r = 1{,}5\\,\\text{cm} = 1{,}5 \\cdot 0{,}01\\,\\text{m} = 0{,}015\\,\\text{m}$\n\n**Sijoitus:** $B_1 = \\dfrac{4\\pi \\cdot 10^{-7}\\,\\tfrac{\\text{Vs}}{\\text{Am}} \\cdot 150\\,\\text{A}}{2\\pi \\cdot 0{,}015\\,\\text{m}} = 2{,}0 \\cdot 10^{-3}\\,\\text{T}$ ja $F = 150\\,\\text{A} \\cdot 2{,}0\\,\\text{m} \\cdot 2{,}0 \\cdot 10^{-3}\\,\\text{T} = 0{,}60\\,\\text{N}$\n\n**Vastaus:** $0{,}60\\,\\text{N}$, kaksi merkitsevää numeroa kuten etäisyydessä $1{,}5\\,\\text{cm}$ ja pituudessa $2{,}0\\,\\text{m}$. Kaapelit hylkivät toisiaan.\n\n**Järkevyys:** Kenttä toisen kaapelin kohdalla on $B_1 = 2{,}0 \\cdot 10^{-3}\\,\\text{T}$, noin $40$-kertainen Maan kenttään verrattuna mutta pieni magneettiin verrattuna. Voima vastaa noin $60\\,\\text{g}$:n kappaleen painoa, joten kaapelit voivat nytkähtää hieman, kun moottori käynnistyy, mutta eivät hypi."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Harjoittele kolmella tasolla. Tason 1 tehtävät käyttävät kaavaa $F = I l B \\sin\\alpha$ suoraan, tason 2 tehtävissä yhdistetään kaksi vaihetta, kuten johtimen kenttä ja voima, ja taso 3 vaatii päättelyä uudessa tilanteessa."
+    },
+    {
+      "id": "check-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Käsite: kommutaattori",
+      "prompt": "Mikä on kommutaattorin tehtävä tasavirtamoottorissa?",
+      "choices": [
+        {
+          "text": "Se kääntää silmukan virran suunnan joka puolikierroksella, jotta pyöriminen jatkuu.",
+          "correct": true,
+          "feedback": "Oikein. Ilman kommutaattoria silmukan sivujen voimat kääntäisivät silmukkaa puolen kierroksen jälkeen takaisin, ja silmukka jäisi heilumaan asentoon, jossa se on kohtisuorassa kenttää vastaan. Kun virran suunta vaihtuu, myös voimien suunta vaihtuu, ja pyöriminen jatkuu."
+        },
+        {
+          "text": "Se vahvistaa magneettikenttää, jotta silmukkaan kohdistuu suurempi voima.",
+          "feedback": "Kenttää vahvistaa rautasydän tai voimakkaampi magneetti. Kommutaattori on halkaistu rengas, jonka kautta virta tulee silmukkaan; se kääntää silmukan virran suunnan joka puolikierroksella."
+        },
+        {
+          "text": "Se muuttaa tasavirran vaihtovirraksi ennen kuin virta tulee virtalähteeseen.",
+          "feedback": "Virtalähde antaa moottorille tasavirtaa, ja kommutaattori vaihtaa virran suuntaa vain silmukassa, puolikierroksen välein. Tarkoitus on pitää silmukkaan kohdistuvien voimien vääntövaikutus samansuuntaisena, ei tuottaa vaihtovirtaa verkkoon."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Laske: vino johdin",
+      "prompt": "Homogeenisessa magneettikentässä $B = 0{,}20\\,\\text{T}$ on $0{,}50\\,\\text{m}$ suoraa johdinta, jossa kulkee $4{,}0\\,\\text{A}$:n virta. Johtimen ja kentän välinen kulma on $30^\\circ$. Kuinka suuri voima johtimeen kohdistuu? Vastaa newtoneina.",
+      "answer": 0.2,
+      "unit": "N",
+      "tolerance": 0.02,
+      "hints": [
+        "Mikä kentän komponentti synnyttää voiman: johtimen suuntainen vai johdinta vastaan kohtisuora?",
+        "$F = I l B \\sin\\alpha$, missä $\\alpha$ on johtimen ja kentän välinen kulma.",
+        "$F = 4{,}0\\,\\text{A} \\cdot 0{,}50\\,\\text{m} \\cdot 0{,}20\\,\\text{T} \\cdot \\sin 30^\\circ$."
+      ],
+      "mistakes": [
+        {
+          "value": 0.346,
+          "feedback": "Käytit kosinia. Voimaa synnyttää kentän johtimeen kohtisuora komponentti $B \\sin\\alpha$; kentän suuntaiseen johtimeen ($\\alpha = 0^\\circ$) voimaa ei synny."
+        },
+        {
+          "value": 0.4,
+          "feedback": "Tämä on voima kohtisuorassa johtimessa. Kulmassa $30^\\circ$ voima on $\\sin 30^\\circ = 0{,}5$ kertaa tämä."
+        }
+      ],
+      "solution": "**Annettu:** $B = 0{,}20\\,\\text{T}$, $l = 0{,}50\\,\\text{m}$, $I = 4{,}0\\,\\text{A}$, johtimen ja kentän välinen kulma $\\alpha = 30^\\circ$\n\n**Kysytty:** johtimeen kohdistuva voima $F$ newtoneina\n\n**Periaate:** Kenttä on homogeeninen ja johdin suora, joten voima on $F = I l B \\sin\\alpha$. Johdin on vinossa, joten voimaa synnyttää vain kentän johtimeen kohtisuora komponentti $B \\sin\\alpha$.\n\n**Kaava:** $F = I l B \\sin\\alpha$\n\n**Muunnokset:** Ei tarvita: suureet ovat SI-yksiköissä, ja $\\text{A} \\cdot \\text{m} \\cdot \\text{T} = \\text{N}$.\n\n**Sijoitus:** $F = 4{,}0\\,\\text{A} \\cdot 0{,}50\\,\\text{m} \\cdot 0{,}20\\,\\text{T} \\cdot \\sin 30^\\circ = 0{,}40\\,\\text{N} \\cdot 0{,}5 = 0{,}20\\,\\text{N}$\n\n**Vastaus:** $0{,}20\\,\\text{N}$, kaksi merkitsevää numeroa kuten lähtöarvoissa.\n\n**Järkevyys:** Kohtisuorassa johtimessa voima olisi $0{,}40\\,\\text{N}$. Vinossa johtimessa sen on oltava pienempi, ja kulmassa $30^\\circ$ se on täsmälleen puolet, koska $\\sin 30^\\circ = 0{,}5$."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Selitä: kaiutin",
+      "prompt": "Selitä, miksi kaiuttimen kartio värähtelee samalla taajuudella kuin vahvistimen virta. Selitä myös, miksi kaiuttimen magneetin kenttä tehdään raossa säteittäiseksi.",
+      "model": "Puhekela on magneetin raossa, ja kenttä kohdistaa kelan johtimeen voiman $F = I l B$ kelan akselin suuntaan. Voiman suunta riippuu virran suunnasta. Vahvistimen vaihtovirta vaihtaa suuntaansa signaalin tahdissa, joten voima työntää kelaa ja siihen kiinnitettyä kartiota vuorotellen eteen ja taakse samalla taajuudella. Kartio puristaa ja harventaa ilmaa, ja syntyy saman taajuuden ääniaalto. Säteittäisessä kentässä kelan jokainen kohta on kohtisuorassa kenttää vastaan, joten jokaiseen kohtaan kohdistuu suurin mahdollinen voima ja kaikki voimat osoittavat samaan suuntaan, akselin suuntaan. Silloin kela liikkuu suoraan edestakaisin eikä kallistu.",
+      "criteria": [
+        "Kerron, että kenttä kohdistaa virtaa kuljettavaan kelaan voiman ja että voiman suunta riippuu virran suunnasta.",
+        "Kytken vaihtovirran suunnan vaihtumisen kartion edestakaiseen liikkeeseen samalla taajuudella.",
+        "Selitän, että säteittäisessä kentässä kela on joka kohdassa kohtisuorassa kenttää vastaan, joten voimat ovat suurimmat ja samansuuntaiset.",
+        "Mainitsen, että kartion liike synnyttää ilmaan ääniaallon."
+      ],
+      "optional": true
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Lopuksi kaksi nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+    }
+  ]
+}

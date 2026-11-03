@@ -3281,7 +3281,8 @@
     "term": "kaiutin",
     "definition": "Laite, joka muuttaa sähköisen signaalin ääneksi: vaihtovirta kulkee magneetin navan ympärillä olevassa kelassa, ja kelaan kiinnitetty kartio värähtelee ja synnyttää ääniaallon. Suurin osa sähköenergiasta muuttuu sisäenergiaksi.",
     "lessons": [
-      "fy5-16"
+      "fy5-16",
+      "fy7-4"
     ],
     "see_also": [
       "mikrofoni"
@@ -3391,6 +3392,214 @@
     ],
     "see_also": [
       "ääni"
+    ],
+    "locked": false
+  },
+  {
+    "term": "sähkömoottori",
+    "definition": "Laite, joka muuttaa sähköenergiaa liike-energiaksi. Tasavirtamoottorissa magneettikenttä kohdistaa voimat virtasilmukan sivuihin, voimat kääntävät silmukkaa akselin ympäri, ja kommutaattori kääntää virran suunnan joka puolikierroksella, jotta pyöriminen jatkuu samaan suuntaan.",
+    "lessons": [
+      "fy7-4"
+    ],
+    "see_also": [
+      "virtasilmukka",
+      "kaiutin"
+    ],
+    "locked": false
+  },
+  {
+    "term": "virtasilmukka",
+    "definition": "Suljettu johdinsilmukka, jossa kulkee sähkövirta. Magneettikentässä silmukan vastakkaisiin sivuihin kohdistuu vastakkaissuuntaiset voimat, jotka pyrkivät kääntämään silmukkaa.",
+    "lessons": [
+      "fy7-4"
+    ],
+    "see_also": [
+      "sähkömoottori"
+    ],
+    "locked": false
+  },
+  {
+    "term": "virtajohdin",
+    "definition": "Johdin, jossa kulkee sähkövirta. Virtajohtimen ympärille syntyy magneettikenttä, jonka kenttäviivat ovat suoran johtimen ympärillä samankeskisiä ympyröitä; kentän suunta saadaan oikean käden säännöllä.",
+    "lessons": [
+      "fy7-3"
+    ],
+    "see_also": [
+      "oikean käden sääntö",
+      "käämi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "käämi",
+    "definition": "Kierteelle kelattu eristetty johdin. Pitkän käämin sisällä magneettikenttä on lähes homogeeninen ja käämin akselin suuntainen, $B = \\mu_0 \\tfrac{N I}{l}$, ja ulkopuolella kenttä on samanlainen kuin sauvamagneetin.",
+    "lessons": [
+      "fy7-3"
+    ],
+    "see_also": [
+      "virtajohdin",
+      "sähkömagneetti"
+    ],
+    "locked": false
+  },
+  {
+    "term": "oikean käden sääntö",
+    "definition": "Sääntö magneettikentän suunnalle. Suora johdin: kun oikean käden peukalo osoittaa virran suuntaan, koukistetut sormet kiertävät kenttäviivojen suuntaan. Käämi: kun sormet kiertävät kierroksia pitkin virran suuntaan, peukalo osoittaa käämin sisällä kentän suuntaan eli käämin pohjoisnapaa kohti.",
+    "lessons": [
+      "fy7-3"
+    ],
+    "see_also": [
+      "virtajohdin",
+      "käämi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "sähkömagneetti",
+    "definition": "Käämi, jonka sisällä on rautasydän. Rauta magnetoituu käämin kentässä, joten kenttä on moninkertainen ilman sydäntä olevaan käämiin verrattuna, ja se häviää lähes kokonaan, kun virta katkaistaan.",
+    "lessons": [
+      "fy7-3"
+    ],
+    "see_also": [
+      "käämi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "magneetti",
+    "definition": "Kappale, joka vetää puoleensa rautaa ja kääntyy vapaasti ripustettuna pohjois–eteläsuuntaan. Magneetilla on aina kaksi napaa, pohjoisnapa N ja etelänapa S; samannimiset navat hylkivät ja erinimiset vetävät toisiaan.",
+    "lessons": [
+      "fy7-1"
+    ],
+    "see_also": [
+      "magneettinen dipoli",
+      "magneettikenttä"
+    ],
+    "locked": false
+  },
+  {
+    "term": "magneettinen dipoli",
+    "definition": "Kahden vastakkaisen magneettinavan, pohjoisnavan ja etelänavan, muodostama kokonaisuus. Jokainen magneetti on dipoli: katkaistusta magneetista tulee kaksi dipolia, eikä yksittäistä magneettinapaa ole havaittu.",
+    "lessons": [
+      "fy7-1"
+    ],
+    "see_also": [
+      "magneetti"
+    ],
+    "locked": false
+  },
+  {
+    "term": "ferromagnetismi",
+    "definition": "Raudan, nikkelin, koboltin ja monien niiden seosten ominaisuus: atomien magneettiset dipolit järjestyvät samansuuntaisiksi alkeisalueiksi, joten aine magnetoituu voimakkaasti magneetin kentässä ja magneetti vetää sitä.",
+    "lessons": [
+      "fy7-1"
+    ],
+    "see_also": [
+      "alkeisalue",
+      "magneetti"
+    ],
+    "locked": false
+  },
+  {
+    "term": "alkeisalue",
+    "definition": "Ferromagneettisen aineen pieni alue, jossa kaikkien atomien magneettiset dipolit osoittavat samaan suuntaan. Magnetoimattomassa aineessa alkeisalueiden suunnat vaihtelevat; ulkoinen kenttä järjestää ne, jolloin aine magnetoituu.",
+    "lessons": [
+      "fy7-1"
+    ],
+    "see_also": [
+      "ferromagnetismi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "magneettikenttä",
+    "definition": "Magneetin tai sähkövirran ympärillä oleva tila, jossa toinen magneetti tai rautakappale kokee voiman. Kentän suunta on se, johon kompassin neulan pohjoispää osoittaa, ja sitä kuvaa magneettivuon tiheys.",
+    "lessons": [
+      "fy7-1"
+    ],
+    "see_also": [
+      "kenttäviiva",
+      "magneettivuon tiheys"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kenttäviiva",
+    "definition": "Viiva, jonka suunta kussakin pisteessä on kentän suunta. Magneetin ulkopuolella magneettikentän kenttäviivat kulkevat pohjoisnavasta etelänapaan ja muodostavat suljettuja silmukoita; viivojen tiheys kertoo kentän voimakkuuden.",
+    "lessons": [
+      "fy7-1"
+    ],
+    "see_also": [
+      "magneettikenttä"
+    ],
+    "locked": false
+  },
+  {
+    "term": "magneettivuon tiheys",
+    "definition": "Magneettikentän voimakkuutta ja suuntaa kuvaava vektorisuure $\\overline{B}$. Yksikkö on tesla $\\text{T}$. Maan magneettikenttä on Suomessa noin $52\\,\\mu\\text{T}$.",
+    "lessons": [
+      "fy7-1"
+    ],
+    "see_also": [
+      "magneettikenttä"
+    ],
+    "locked": false
+  },
+  {
+    "term": "magneettinen voima",
+    "definition": "Voima, jolla magneettikenttä vaikuttaa liikkuvaan varattuun hiukkaseen tai virtajohtimeen. Hiukkaseen vaikuttavan voiman suuruus on F = qvB sin α, ja se on kohtisuorassa sekä nopeutta että kenttää vastaan, joten se kääntää liikettä muuttamatta vauhtia.",
+    "lessons": [
+      "fy7-2"
+    ],
+    "see_also": [
+      "magneettikenttä",
+      "ympyrärata"
+    ],
+    "locked": false
+  },
+  {
+    "term": "ympyrärata",
+    "definition": "Ympyrän muotoinen rata. Kohtisuorassa homogeenista magneettikenttää vastaan liikkuva varattu hiukkanen kiertää ympyrärataa, jonka säde on r = mv/(qB), koska magneettinen voima toimii keskeisvoimana.",
+    "lessons": [
+      "fy7-2"
+    ],
+    "see_also": [
+      "magneettinen voima",
+      "keskeisvoima"
+    ],
+    "locked": false
+  },
+  {
+    "term": "nopeusvalitsin",
+    "definition": "Laite, jossa sähkökenttä ja sitä vastaan kohtisuora magneettikenttä vaikuttavat varattuun hiukkaseen vastakkaisiin suuntiin. Suoraan sen läpi kulkevat vain hiukkaset, joiden vauhti on v = E/B, riippumatta niiden massasta ja varauksesta.",
+    "lessons": [
+      "fy7-2"
+    ],
+    "see_also": [
+      "massaspektrometri"
+    ],
+    "locked": false
+  },
+  {
+    "term": "massaspektrometri",
+    "definition": "Laite, joka erottaa ionit niiden massan mukaan. Tunnetulla vauhdilla liikkuvat ionit kaartuvat magneettikentässä ympyräradalle, jonka säde on verrannollinen massaan, ja osuvat ilmaisimeen eri kohtiin. Sillä erotetaan esimerkiksi isotoopit.",
+    "lessons": [
+      "fy7-2"
+    ],
+    "see_also": [
+      "nopeusvalitsin",
+      "ympyrärata"
+    ],
+    "locked": false
+  },
+  {
+    "term": "hiukkaskiihdytin",
+    "definition": "Laite, joka kiihdyttää varattuja hiukkasia suuriin energioihin. Sähkökentät kasvattavat hiukkasten energiaa, ja magneetit taivuttavat ja kohdistavat hiukkassuihkua. Esimerkiksi CERNin LHC on 26,7 km:n rengas.",
+    "lessons": [
+      "fy7-2"
+    ],
+    "see_also": [
+      "magneettinen voima"
     ],
     "locked": false
   }

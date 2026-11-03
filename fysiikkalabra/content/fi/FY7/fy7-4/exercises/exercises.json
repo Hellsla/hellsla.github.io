@@ -1,0 +1,105 @@
+{
+  "level1": [
+    {
+      "id": "fy7-4-L1-01",
+      "level": 1,
+      "text": "Laboratoriossa suora johdin on kohtisuorassa homogeenista magneettikenttää vastaan. Kentässä on $0{,}40\\,\\text{m}$ johdinta, johtimen virta on $12\\,\\text{A}$ ja magneettivuon tiheys on $0{,}050\\,\\text{T}$. Kuinka suuri voima johtimeen kohdistuu?",
+      "answer": 0.24,
+      "unit": "N",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-4-L1-02",
+      "level": 1,
+      "text": "Sähkömagneetin napojen välissä on $15\\,\\text{cm}$:n pituinen suora johdinosa, joka on $40^\\circ$:n kulmassa magneettikenttään nähden. Johtimen virta on $8{,}0\\,\\text{A}$ ja magneettivuon tiheys $0{,}25\\,\\text{T}$. Kuinka suuri voima johdinosaan kohdistuu?",
+      "answer": 0.19,
+      "unit": "N",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-4-L1-03",
+      "level": 1,
+      "text": "Virtakeinun vaakasuora johdinosa on $6{,}0\\,\\text{cm}$ pitkä ja kohtisuorassa magneetin kenttää vastaan. Kun johtimessa kulkee $4{,}5\\,\\text{A}$:n virta, johdinosaan kohdistuu $27\\,\\text{mN}$:n voima. Kuinka suuri on magneettivuon tiheys magneetin napojen välissä?",
+      "answer": 0.1,
+      "unit": "T",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-4-L1-04",
+      "level": 1,
+      "text": "Voimalinjan kahden pylvään välinen $100\\,\\text{m}$:n johdinosa on vaakasuora ja kulkee kompassin osoittamaan pohjois–eteläsuuntaan. Johtimessa kulkee $200\\,\\text{A}$:n virta. Maan magneettikentän magneettivuon tiheys on Etelä-Suomessa noin $52\\,\\mu\\text{T}$, ja kenttä osoittaa pohjoiseen ja alaspäin $75^\\circ$:n kulmassa vaakatasoon nähden (Ilmatieteen laitos, Nurmijärven geofysiikan observatorio, 2024). Johtimen ja kentän välinen kulma on siis $75^\\circ$. Kuinka suuri voima Maan magneettikenttä kohdistaa johdinosaan?",
+      "answer": 1.0,
+      "unit": "N",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-4-L1-05",
+      "level": 1,
+      "text": "Virtakeinun johdinosasta $5{,}0\\,\\text{cm}$ on magneetin napojen välissä, missä magneettivuon tiheys on $0{,}20\\,\\text{T}$ ja kenttä on kohtisuorassa johdinta vastaan. Kuinka suuri virta johtimessa kulkee, kun johdinosaan kohdistuu $0{,}030\\,\\text{N}$:n voima?",
+      "answer": 3.0,
+      "unit": "A",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy7-4-L2-01",
+      "level": 2,
+      "text": "Laboratoriossa kaksi rinnakkaista johdinta kulkee $0{,}80\\,\\text{m}$:n matkan $5{,}0\\,\\text{mm}$:n etäisyydellä toisistaan. Kummassakin johtimessa kulkee $10\\,\\text{A}$:n virta samaan suuntaan. Kuinka suuri voima johtimeen kohdistuu toisen johtimen magneettikentässä? Anna vastaus millinewtoneina.",
+      "answer": 3.2,
+      "unit": "mN",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-4-L2-02",
+      "level": 2,
+      "text": "Opiskelijat mittasivat virtavaa'alla, kuinka paljon vaa'an lukema muuttuu, kun johtimessa kulkee virta. Magneetin napojen välissä on $4{,}0\\,\\text{cm}$ johdinta kohtisuorassa kenttää vastaan. Kuvaajassa on lukeman muutos $\\Delta m$ virran $I$ funktiona ja mittauspisteisiin sovitettu suora. Määritä magneettivuon tiheys napojen välissä. Lue tarvittavat arvot kuvaajan suoralta.",
+      "figure": "fy7-4/balance-points",
+      "answer": 0.074,
+      "unit": "T",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy7-4-L2-03",
+      "level": 2,
+      "text": "Homogeenisessa magneettikentässä, jonka magneettivuon tiheys on $0{,}40\\,\\text{T}$, on $0{,}50\\,\\text{m}$ suoraa johdinta. Kun johtimessa kulkee $5{,}0\\,\\text{A}$:n virta, siihen kohdistuu $0{,}50\\,\\text{N}$:n voima. Kuinka suuri on johtimen ja kentän välinen kulma? Anna kulma väliltä $0^\\circ$–$90^\\circ$.",
+      "answer": 30,
+      "unit": "°",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-4-L2-04",
+      "level": 2,
+      "text": "Kaksi vaakasuoraa metallikiskoa on $8{,}0\\,\\text{cm}$:n etäisyydellä toisistaan, ja niiden päällä on poikittain $20\\,\\text{g}$:n metallitanko. Kiskojen alueella on pystysuora magneettikenttä, jonka magneettivuon tiheys on $0{,}30\\,\\text{T}$. Virta $15\\,\\text{A}$ kulkee toista kiskoa pitkin tankoon, tangon läpi ja toista kiskoa pitkin takaisin. Kuinka suuri on tangon kiihtyvyys, kun kitka jätetään huomiotta?",
+      "answer": 18,
+      "unit": "m/s²",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy7-4-L3-01",
+      "level": 3,
+      "text": "Vaakasuora kuparitanko, jonka massa on $12\\,\\text{g}$ ja pituus $20\\,\\text{cm}$, riippuu kahden kevyen johtavan langan varassa. Tanko on kokonaan homogeenisessa vaakasuorassa magneettikentässä, jonka magneettivuon tiheys on $0{,}25\\,\\text{T}$, ja kohtisuorassa kenttää vastaan. Langoista johdetaan tankoon virta. Kuinka suuri virran on oltava, jotta langat jäävät löysiksi eli magneettinen voima kannattelee koko tangon painon?",
+      "answer": 2.4,
+      "unit": "A",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy7-4-L3-02",
+      "level": 3,
+      "text": "Sähköaseman kaksi rinnakkaista virtakiskoa ovat $0{,}30\\,\\text{m}$:n etäisyydellä toisistaan. Oikosulussa niissä kulkee hetkellisesti $20\\,\\text{kA}$:n virta vastakkaisiin suuntiin. Kuinka suuri voima kohdistuu kiskon $1{,}0\\,\\text{m}$:n pituiseen osaan? Vetävätkö kiskot toisiaan puoleensa vai hylkivätkö ne toisiaan?",
+      "answer": 270,
+      "unit": "N",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-4-L3-03",
+      "level": 3,
+      "text": "Ohut alumiinilanka, jonka pituus on $1{,}0\\,\\text{m}$ ja massa $2{,}7\\,\\text{g}$, on vaakasuorassa itä–länsisuunnassa. Maan magneettikentän magneettivuon tiheys on Etelä-Suomessa noin $52\\,\\mu\\text{T}$, ja kenttä osoittaa pohjoiseen ja alaspäin $75^\\circ$:n kulmassa vaakatasoon nähden. Kuinka suuri virta langassa pitäisi kulkea, jotta Maan magneettikenttä kannattelisi langan painon? Anna vastaus kiloampeereina.",
+      "answer": 2.0,
+      "unit": "kA",
+      "tolerance": 0.02
+    }
+  ]
+}
