@@ -1,18 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 0360239d64d0fe7e
+CONTENT-HASH: 5f6408d1178c112c
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] Taso 2 tehtävä 1 ratkaisukuva (nosturi, open-exercises-L2-1280-1) — label T1 touches the caption "voimakuvio: ylempi", and G1/T2 sit on the dashed divider above "voimakuvio: alempi"; arrows correct and readable — add vertical space between the two diagrams.
+- [Minor] malli-ketju (Taso 2 tehtävä 1 ratkaisu, 360 px) — the subscript of G_1 ends about 1 px above the dashed divider (no overlap, but tight; 2 px at 390, about 5 px at 1280); only closeness, nothing is covered — if touched again, move the G_1 label up 3–4 px or shift the divider down.
 - [Minor] Level 1 and 2 solution figures — label letters (G, N, T, a) small in the 664 px column; legible — enlarge slightly.
 - [Minor] Järkevyys boxes (contact #49–#59) — the yellow remark boxes contain wrapped inline formulas that break unevenly; readable — put the formula on its own display line.
 
 ## Checked
-- Contact sheets 4–6 (levels 1–3 with all solutions open); full size: L2 crane figure (open-exercises-L2-1280-1); other parts via contact sheets #46–#64.
-- Language: clear task wording, "Ydintehtävä" labels, ANNETTU/KYSYTTY/PERIAATE/VASTAUS structure, decimal comma, units upright as LaTeX, significant-figure notes in Finnish; no English words on the exercise pages.
-- Figures: colours follow the convention (force red, acceleration orange), vectors overlined, the unequal-scale note present on the cart figure.
-- Content hash 0360239d64d0fe7e at start and end.
+- Delta: the model diagram malli-ketju rendered from preview/fi-easy/fy4-13.html with details open at 360, 390 and 1280 px; T_1, upper T_2 and G_1 are clear of the captions "voimakuvio: ylempi/alempi", arrows and each other; the earlier Polish about T1 touching the caption is resolved.
+- Surroundings: contact-5 (#49–#60) and the L2-01 solution capture (#53); no overflow or clipping.
+- Content hash 5f6408d1178c112c at start and end.
 
 ## Scores
 illustrations 4 · typography 4 · Finnish 5 · accessibility 4

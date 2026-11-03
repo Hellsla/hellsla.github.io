@@ -1,19 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 25c29f64156181ab
+CONTENT-HASH: 9042a4a4fafbdf5e
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] Level 2 task 1 solution figure (crane, open-exercises-L2-1280-1) — label T1 touches the caption "free-body diagram: upper", and G1/T2 sit on the dashed divider just above the "lower" caption; arrows are correct and readable — add vertical space between the two diagrams.
+- [Minor] malli-ketju (L2-01 solution, 360 px) — the subscript of G_1 ends about 1 px above the dashed divider (no overlap, but tight; 2 px at 390, about 5 px at 1280); only closeness, nothing is covered — if touched again, move the G_1 label up 3–4 px or shift the divider down.
 - [Minor] Level 3 task 2 solution (open-exercises-L3-1280-3) — "When T = Tmax: Tmax(m1+m2) = m1m2g, so" is one crowded inline string before the boxed display fraction — break into display lines at "so".
 - [Minor] Level 1 and 2 solution figures — label letters (G, N, T, a) are small at the 664 px column; legible — enlarge label size slightly.
 
 ## Checked
-- Contact sheets 4–6 (exercise levels 1–3 with every solution open).
-- Full-size: open-exercises-1280-1 (L1 task 1), open-exercises-L2-1280-1 (crane), open-exercises-L3-1280-3; remaining parts via contact sheets #46–#64.
-- Rendered English page searched for Finnish words in the exercise text, answers and solutions: none.
-- Maths: units upright with thin space as LaTeX, vectors with overline, substitution chains aligned, significant-figure notes consistent, Answer boxes clear; free-body figures use force red and acceleration orange; the unequal-scale note on the horizontal cart figure is stated.
-- Content hash 25c29f64156181ab at start and end.
+- Delta: the model diagram malli-ketju rendered from preview/en/fy4-13.html with details open at 360, 390 and 1280 px (captions "free-body diagram: upper/lower"); T_1, upper T_2 and G_1 no longer touch the captions, arrows or each other; the earlier Polish about T1 touching the caption is resolved.
+- Surroundings: contact-5 (#49–#60) and the L2-01 solution capture (#53); no overflow, clipping or English/Finnish mixing seen.
+- Content hash 9042a4a4fafbdf5e at start and end.
 
 ## Scores
 illustrations 4 · typography 4 · Finnish (English language) 5 · accessibility 4
