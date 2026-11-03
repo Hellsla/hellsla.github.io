@@ -19,5 +19,23 @@
   ],
   "sim": true,
   "solutions": "all",
-  "image": false
+  "image": false,
+  "key_concepts": [
+    {
+      "term": "induktio",
+      "explain": "Ilmiö, jossa johdinsilmukkaan tai käämiin syntyy jännite, kun sen läpi kulkeva magneettivuo muuttuu."
+    },
+    {
+      "term": "magneettivuo",
+      "explain": "Suure, joka kertoo, kuinka paljon magneettikenttää kulkee silmukan läpi. Se riippuu kentästä ja silmukan pinta-alasta."
+    },
+    {
+      "term": "induktiojännite",
+      "explain": "Jännite, joka syntyy käämin päiden välille, kun vuo muuttuu. Suljetussa piirissä se ajaa virtaa."
+    },
+    {
+      "term": "induktiolaki",
+      "explain": "Laki, jonka mukaan induktiojännite on sitä suurempi, mitä nopeammin vuo muuttuu ja mitä enemmän käämissä on kierroksia."
+    }
+  ]
 }

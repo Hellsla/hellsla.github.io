@@ -19,5 +19,23 @@
   ],
   "sim": true,
   "solutions": "all",
-  "image": false
+  "image": false,
+  "key_concepts": [
+    {
+      "term": "muuntaja",
+      "explain": "Laite, joka nostaa tai laskee vaihtojännitettä. Siinä on kaksi käämiä yhteisen rautasydämen ympärillä."
+    },
+    {
+      "term": "muuntosuhde",
+      "explain": "Toisio- ja ensiökäämin kierroslukujen suhde. Se kertoo, kuinka monikertaiseksi muuntaja muuttaa jännitteen."
+    },
+    {
+      "term": "siirtohäviö",
+      "explain": "Teho, joka muuttuu johdoissa sisäenergiaksi, kun sähköä siirretään. Se kasvaa virran neliön mukana."
+    },
+    {
+      "term": "suurjännite",
+      "explain": "Hyvin suuri jännite, jolla sähköä siirretään kantaverkossa. Silloin virta on pieni ja häviöt pienet."
+    }
+  ]
 }

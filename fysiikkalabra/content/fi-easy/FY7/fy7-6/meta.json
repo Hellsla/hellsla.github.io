@@ -15,5 +15,19 @@
   ],
   "sim": true,
   "solutions": "all",
-  "image": false
+  "image": false,
+  "key_concepts": [
+    {
+      "term": "Lenzin laki",
+      "explain": "Induktiovirran suunta on aina sellainen, että sen magneettikenttä vastustaa vuon muutosta, joka virran synnytti."
+    },
+    {
+      "term": "pyörrevirta",
+      "explain": "Virta, joka kiertää metallilevyssä tai -putkessa, kun sen läpi kulkeva vuo muuttuu. Pyörrevirrat lämmittävät metallia."
+    },
+    {
+      "term": "induktiojarru",
+      "explain": "Jarru, jossa pyörrevirrat hidastavat liikettä ilman kosketusta. Liike-energia muuttuu metallin sisäenergiaksi."
+    }
+  ]
 }
