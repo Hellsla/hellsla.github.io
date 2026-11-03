@@ -252,7 +252,7 @@
       "stage": "sovella",
       "type": "choice",
       "title": "Find the error",
-      "prompt": "In a uniform magnetic field $B = 0.30\\,\\text{T}$ there is $20\\,\\text{cm}$ of straight wire carrying a current of $5.0\\,\\text{A}$. The angle between the wire and the field is $30^\\circ$. A student calculates\n\n$$\\begin{aligned} F &= I l B \\cos 30^\\circ \\\\ &= 5.0\\,\\text{A} \\cdot 0.20\\,\\text{m} \\cdot 0.30\\,\\text{T} \\cdot 0.866 \\\\ &\\approx 0.26\\,\\text{N} \\end{aligned}$$\n\nWhere is the error?",
+      "prompt": "In a uniform magnetic field $B = 0.30\\,\\text{T}$ there is $20\\,\\text{cm}$ of straight wire carrying a current of $5.0\\,\\text{A}$. The angle between the wire and the field is $30^\\circ$. A student calculates\n\n$$\\begin{aligned} F &= I l B \\cos 30^\\circ \\\\ &= 5.0\\,\\text{A} \\cdot 0.20\\,\\text{m} \\cdot 0.30\\,\\text{T} \\\\ &\\quad \\cdot 0.866 \\\\ &\\approx 0.26\\,\\text{N} \\end{aligned}$$\n\nWhere is the error?",
       "choices": [
         {
           "text": "The formula must have $\\sin\\alpha$, because the force is produced by the component of the field perpendicular to the wire. The correct result is $0.15\\,\\text{N}$.",

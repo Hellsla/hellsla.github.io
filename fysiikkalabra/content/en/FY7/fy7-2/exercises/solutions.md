@@ -54,7 +54,8 @@
 **Principle:** In the acceleration the work $qU$ done by the electric field becomes the kinetic energy of the proton, because the proton starts from rest in a vacuum. In the magnetic field the magnetic force $qvB$ is the centripetal force of the circular path and does not change the speed.
 **Formula:** $qU = \tfrac{1}{2}mv^2$, so $v = \sqrt{\dfrac{2qU}{m}}$; $qvB = \dfrac{mv^2}{r}$, so $r = \dfrac{mv}{qB}$
 **Conversions:** Not needed: the quantities are in SI units. Finally $1\,\text{m} = 100\,\text{cm}$.
-**Substitution:** $v = \sqrt{\dfrac{2 \cdot 1.602 \cdot 10^{-19}\,\text{C} \cdot 500\,\text{V}}{1.673 \cdot 10^{-27}\,\text{kg}}} = 3.0945 \cdot 10^{5}\,\text{m/s}$ and $r = \dfrac{1.673 \cdot 10^{-27}\,\text{kg} \cdot 3.0945 \cdot 10^{5}\,\text{m/s}}{1.602 \cdot 10^{-19}\,\text{C} \cdot 0.050\,\text{T}} = 0.06463\,\text{m} = 6.463\,\text{cm}$
+**Substitution:** $v = \sqrt{\dfrac{2 \cdot 1.602 \cdot 10^{-19}\,\text{C} \cdot 500\,\text{V}}{1.673 \cdot 10^{-27}\,\text{kg}}} = 3.0945 \cdot 10^{5}\,\text{m/s}$ and
+$$\begin{aligned} r &= \dfrac{1.673 \cdot 10^{-27}\,\text{kg}}{1.602 \cdot 10^{-19}\,\text{C} \cdot 0.050\,\text{T}} \\ &\quad \cdot 3.0945 \cdot 10^{5}\,\text{m/s} \\ &= 0.06463\,\text{m} = 6.463\,\text{cm} \end{aligned}$$
 **Answer:** $6.5\,\text{cm}$, two significant figures like the field $0.050\,\text{T}$; the voltage $500\,\text{V}$ is taken to have at least two figures.
 **Reasonableness:** The speed $3 \cdot 10^{5}\,\text{m/s}$ is about $0.1\,\%$ of the speed of light, so classical mechanics holds. The radius is of the size of laboratory equipment. If the accelerating voltage were quadrupled, the speed and the radius would double.
 

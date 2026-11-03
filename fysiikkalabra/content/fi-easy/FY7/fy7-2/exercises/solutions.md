@@ -54,7 +54,8 @@
 **Periaate:** Kiihdytyksessä sähkökentän tekemä työ $qU$ muuttuu protonin liike-energiaksi, koska protoni lähtee levosta tyhjiössä. Magneettikentässä magneettinen voima $qvB$ on ympyräradan keskeisvoima. Se ei muuta vauhtia.
 **Kaava:** $qU = \tfrac{1}{2}mv^2$, josta $v = \sqrt{\dfrac{2qU}{m}}$; $qvB = \dfrac{mv^2}{r}$, josta $r = \dfrac{mv}{qB}$
 **Muunnokset:** Ei tarvita, koska suureet ovat SI-yksiköissä. Lopuksi $1\,\text{m} = 100\,\text{cm}$.
-**Sijoitus:** $v = \sqrt{\dfrac{2 \cdot 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 500\,\text{V}}{1{,}673 \cdot 10^{-27}\,\text{kg}}} = 3{,}0945 \cdot 10^{5}\,\text{m/s}$ ja $r = \dfrac{1{,}673 \cdot 10^{-27}\,\text{kg} \cdot 3{,}0945 \cdot 10^{5}\,\text{m/s}}{1{,}602 \cdot 10^{-19}\,\text{C} \cdot 0{,}050\,\text{T}} = 0{,}06463\,\text{m} = 6{,}463\,\text{cm}$
+**Sijoitus:** $v = \sqrt{\dfrac{2 \cdot 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 500\,\text{V}}{1{,}673 \cdot 10^{-27}\,\text{kg}}} = 3{,}0945 \cdot 10^{5}\,\text{m/s}$ ja
+$$\begin{aligned} r &= \dfrac{1{,}673 \cdot 10^{-27}\,\text{kg}}{1{,}602 \cdot 10^{-19}\,\text{C} \cdot 0{,}050\,\text{T}} \\ &\quad \cdot 3{,}0945 \cdot 10^{5}\,\text{m/s} \\ &= 0{,}06463\,\text{m} = 6{,}463\,\text{cm} \end{aligned}$$
 **Vastaus:** $6{,}5\,\text{cm}$, kaksi merkitsevää numeroa kuten kentässä $0{,}050\,\text{T}$. Jännite $500\,\text{V}$ tulkitaan vähintään kaksinumeroiseksi.
 **Järkevyys:** Vauhti $3 \cdot 10^{5}\,\text{m/s}$ on noin $0{,}1\,\%$ valon nopeudesta, joten klassinen mekaniikka pätee. Säde on laboratoriolaitteen kokoluokkaa. Jos kiihdytysjännite nelinkertaistettaisiin, vauhti ja säde kaksinkertaistuisivat.
 
