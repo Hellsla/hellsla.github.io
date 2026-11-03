@@ -200,6 +200,8 @@ Amplitudi $A$ on suurin poikkeama tasapainoasemasta. Jaksonaika $T$ on aika, jon
   <line x1="380" y1="96" x2="380" y2="96" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy5/foucault-pendulum.webp" alt="Kiiltävä metallipallo roikkuu ohuen vaijerin varassa. Alla on värikäs pyöreä alusta."><figcaption>Foucault'n heiluri tiedemuseossa Japanissa. Heilurin jaksonaika riippuu vain heilurin pituudesta ja putoamiskiihtyvyydestä.</figcaption></figure>
+
 ### Miksi amplitudi ei muuta jaksonaikaa
 Harmonisella värähtelijällä on erikoinen ominaisuus. Kaksinkertaista amplitudi. Silloin kappale kulkee yhden jakson aikana kaksinkertaisen matkan. Samalla voima jokaisessa vastaavassa kohdassa kaksinkertaistuu, koska $F$ on verrannollinen poikkeamaan.
 

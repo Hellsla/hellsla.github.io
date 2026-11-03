@@ -602,6 +602,8 @@ T = \frac{2\pi r}{v}
 ```
 where $T$ is the orbital period ($\text{s}$). The orbit of a faraway satellite is longer and its speed lower, so the orbital period grows quickly as the distance grows: the ISS goes round the Earth in about an hour and a half, the Moon in about $27\,\text{d}$. When the radius and the orbital period of a satellite are measured, the same equation can also be solved for the mass $M$ of the central body. This is how, for example, the masses of the Earth, the Sun and Mars have been determined.
 
+<figure class="unit-photo"><img src="pics/fy5/iss-from-soyuz.webp" alt="The International Space Station with its solar panels against black space. The cloudy surface of the Earth is visible below."><figcaption>The International Space Station photographed from a Soyuz spacecraft in October 2018. The station is always in free fall towards the Earth, but its orbital speed is so high that it never hits the Earth.</figcaption></figure>
+
 ### Geostationary orbit
 A geostationary satellite orbits above the equator in the same direction as the Earth rotates, and its orbital period is the same as the rotation period of the Earth, $23\,\text{h}\;56\,\text{min}$. It therefore seems to stay in place in the sky, and a satellite dish can be aimed at it once. Because the orbital period determines the orbital radius, all geostationary satellites orbit at the same altitude, about $35\,800\,\text{km}$.
 

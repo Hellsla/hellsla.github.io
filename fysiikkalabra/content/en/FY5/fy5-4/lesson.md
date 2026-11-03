@@ -129,6 +129,8 @@ In the chapter *Circular motion and speed* you learned that in uniform circular 
 
 In the figure, the velocity of the object is first $\overline{v}_1$ and a moment later $\overline{v}_2$. When the arrows are drawn from the same point, the arrow between their tips is the change of velocity $\Delta\overline{v}$. It points towards the centre of the path. Acceleration is the change of velocity per unit of time, so the acceleration also points to the centre.
 
+<figure class="unit-photo"><img src="pics/fy5/apollo8-centrifuge.webp" alt="Three astronauts in spacesuits lie on their backs in seats behind a round hatch."><figcaption>The Apollo 8 crew in a centrifuge gondola in 1968. The centrifuge swings the gondola along a circular path, and the centripetal acceleration imitates the large acceleration of a launch.</figcaption></figure>
+
 ### Centripetal acceleration points to the centre
 In uniform circular motion the acceleration is perpendicular to the velocity and, at every point of the path, points towards the centre of the circle. It is called **centripetal acceleration** $\overline{a}_\text{n}$ (also known as normal acceleration). The subscript n comes from the fact that the acceleration lies along the normal of the path, the line perpendicular to the tangent. Since the acceleration has no component along the velocity, the speed neither increases nor decreases: the acceleration changes only the direction of the velocity.
 

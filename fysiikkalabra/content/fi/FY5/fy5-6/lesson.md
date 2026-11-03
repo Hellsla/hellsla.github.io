@@ -602,6 +602,8 @@ T = \frac{2\pi r}{v}
 ```
 missä $T$ on kiertoaika ($\text{s}$). Kaukana kiertävän satelliitin rata on pidempi ja sen vauhti pienempi, joten kiertoaika kasvaa nopeasti etäisyyden kasvaessa: ISS kiertää Maan noin puolessatoista tunnissa, Kuu noin $27\,\text{d}$:ssä. Kun satelliitin säde ja kiertoaika mitataan, samasta yhtälöstä voidaan ratkaista myös keskuskappaleen massa $M$. Näin on määritetty esimerkiksi Maan, Auringon ja Marsin massat.
 
+<figure class="unit-photo"><img src="pics/fy5/iss-from-soyuz.webp" alt="Kansainvälinen avaruusasema aurinkopaneeleineen mustaa avaruutta vasten. Alla näkyy Maan pilvinen pinta."><figcaption>Kansainvälinen avaruusasema ISS kuvattuna Sojuz-aluksesta lokakuussa 2018. Asema on koko ajan vapaassa pudotuksessa kohti Maata, mutta sen ratanopeus on niin suuri, että se ei osu Maahan.</figcaption></figure>
+
 ### Geostationaarinen rata
 Geostationaarinen satelliitti kiertää päiväntasaajan yläpuolella samaan suuntaan kuin Maa pyörii, ja sen kiertoaika on sama kuin Maan pyörähdysaika, $23\,\text{h}\;56\,\text{min}$. Siksi se näyttää pysyvän taivaalla paikallaan, ja lautasantennin voi suunnata siihen kerran. Koska kiertoaika määrää radan säteen, kaikki geostationaariset satelliitit kiertävät samalla korkeudella, noin $35\,800\,\text{km}$:n korkeudella.
 

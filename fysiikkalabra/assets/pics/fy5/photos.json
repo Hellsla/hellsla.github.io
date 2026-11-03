@@ -1,0 +1,57 @@
+{
+  "playground-carousel.webp": {
+    "title": "Manually powered carousel on a playground in Saint-Petersburg",
+    "creator": "Reda Kerbouche",
+    "source": "https://commons.wikimedia.org/wiki/File:Manually_powered_carousel_on_a_playground_in_Saint-Petersburg.JPG",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "edit": "Pienennetty, WebP",
+    "checked": "2026-11-03",
+    "width": 1600,
+    "height": 1063
+  },
+  "apollo8-centrifuge.webp": {
+    "title": "Apollo 8 prime crew inside centrifuge gondola (S68-53194)",
+    "creator": "NASA",
+    "source": "https://images.nasa.gov/details/S68-53194",
+    "licence": "public domain",
+    "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+    "edit": "Pienennetty, WebP",
+    "checked": "2026-11-03",
+    "width": 1570,
+    "height": 1600
+  },
+  "artemis2-earthset.webp": {
+    "title": "A Breathtaking Earthset from Orion (art002e021278)",
+    "creator": "NASA",
+    "source": "https://images.nasa.gov/details/art002e021278",
+    "licence": "public domain",
+    "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+    "edit": "Pienennetty, WebP",
+    "checked": "2026-11-03",
+    "width": 1600,
+    "height": 1067
+  },
+  "iss-from-soyuz.webp": {
+    "title": "The International Space Station photographed from a Soyuz spacecraft (iss056e201248)",
+    "creator": "NASA/Roscosmos",
+    "source": "https://images.nasa.gov/details/iss056e201248",
+    "licence": "public domain (NASA)",
+    "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+    "edit": "Pienennetty, WebP",
+    "checked": "2026-11-03",
+    "width": 1600,
+    "height": 1067
+  },
+  "foucault-pendulum.webp": {
+    "title": "Foucault pendulum with easy-to-track marks at Saitama Municipal Youth Astronomical Museum",
+    "creator": "Syced",
+    "source": "https://commons.wikimedia.org/wiki/File:Foucault_pendulum_with_easy-to-track_marks_at_Saitama_Municipal_Youth_Astronomical_Museum.jpg",
+    "licence": "CC0 1.0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "edit": "Pienennetty, WebP",
+    "checked": "2026-11-03",
+    "width": 1600,
+    "height": 1205
+  }
+}
