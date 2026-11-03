@@ -1,12 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: b490439b684add3f
+CONTENT-HASH: 48cfd52191926c87
 
 ## Blocking
+- none
 
 ## Polish
-
+- [Minor] meta.json key_concepts "sähkövirta" — "Varausten liikettä samaan suuntaan johtimessa" is a fragment in the partitive, while the other entries are noun phrases — "Varausten yhteinen liike samaan suuntaan johtimessa."
 
 ## Checked
-- Contact sheets 1-6, sim at 390 and 1280 px, lab, figures: no overflow, labels fit, maths renders.
-- Figure and sim labels Finnish as intended.
-- Re-review after the concept fix (internal energy of the filament, transferred as heat): lesson.md, kertaus option and feedbacks, pred-1 feedback, johtopaatos criterion and model match the Finnish in meaning and numbers; no physics changed. Captures current; ennusta opened state rechecked at 1280 px, no overflow.
+- batch delta review: the only change is meta.json key_concepts. I captured the "Luvun tärkeät käsitteet" panel from preview/fi-easy/fy6-1.html at 390 and 1280 px and opened it (the review/shots set has no capture of the panel). It sits between the opening and stage 1: term bold over its explanation at 390 px, two columns at 1280 px. Nothing is clipped, there is no horizontal overflow and no KaTeX error. The terms match the lesson's usage, and the explanations are plain, correct S2 Finnish.

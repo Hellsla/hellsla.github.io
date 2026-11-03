@@ -1,10 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 61d3e4d01db1ce25
+CONTENT-HASH: beea801f93a32cad
 
 ## Blocking
 
 ## Polish
-- none
+
 
 ## Checked
-batch delta review: intro-1280 (title with the formula as KaTeX, wraps cleanly, chapter references resolve), fig-row-1280; figures unchanged by the diff.
+Round 2 delta: scratchpad kc/r2-fy1-7-390.png and kc/r2-fy1-7-1280.png (section cut from rebuilt preview/fi-easy/fy1-7.html; sheets r2sheet390.png, r2sheet1280.png). Changed text read in the diff f83714cd..b8a6e1bb and seen in the capture: fluent, plain, physics unchanged. Stacked at 390 px, two columns at 1280 px, no overflow, no KaTeX errors, nothing clipped.

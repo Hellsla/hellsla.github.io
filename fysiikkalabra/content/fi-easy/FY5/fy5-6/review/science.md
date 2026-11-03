@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 74820ada2f4709e9
+CONTENT-HASH: 6b865c9e57f68a00
 
 ## Blocking
 (none)
 
 ## Polish
-- Pre-existing: the period formula $v = 2\pi r/T$ is cited to *Normaalikiihtyvyys ja ympyräliikkeen liikeyhtälö* (fy5-4), though it is introduced in *Ympyrärata: jaksonaika ja ratanopeus* (fy5-3); consider citing fy5-3.
+(none)
 
 ## Checked
-batch delta review: new ISS illustration description is physically neutral; prior and all four option feedbacks keep their physics, only chapter names change; exactly one correct option. Every changed chapter reference names the renamed chapter that holds the cited content, and no old title remains.
+batch delta review: added meta.json key_concepts (Luvun tärkeät käsitteet) checked term by term against the lesson's own definitions, summary and the physics guardrails; no number, formula or choice changed. Terms: kiertorata, satelliitti, and painottomuus (free fall, support force zero, gravity still acts) agree with the lesson and the guardrails.

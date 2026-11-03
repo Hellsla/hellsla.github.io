@@ -177,7 +177,7 @@
     const byId = Object.fromEntries(d.cards.map((c) => [c.id, c]));
     const mine = d.cards.filter((c) => c.luku === d.luku);
     // Teoriatiivistelmä: a bold term that names a card opens its popover
-    document.querySelectorAll('#selita strong.kc-term[data-kortti]').forEach((s) => {
+    document.querySelectorAll('#selita strong.kc-mark[data-kortti]').forEach((s) => {
       const c = byId[s.dataset.kortti]; if (!c) return;
       const b = termButton([...s.childNodes], c, 'kc-term-btn');
       s.append(b);
@@ -192,7 +192,7 @@
       box.append(ul); maths(box); box.hidden = false;
     });
     // the section: the chapter's cards as a row, at most 8
-    const list = sec.querySelector('dl.kc-list');
+    const list = sec.querySelector('dl.kc-dl');
     const shown = mine.slice(0, 8);
     const r = row(shown, { base: d.base });
     if (list) list.replaceWith(r); else sec.append(r);

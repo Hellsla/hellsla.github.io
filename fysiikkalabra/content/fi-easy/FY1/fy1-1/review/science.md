@@ -1,14 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: f754ddef14a4deee
+CONTENT-HASH: 101c822fbda07697
 
 ## Blocking
 (none)
 
-## Fixed
-- content/fi-easy/FY1/fy1-1/lesson.md:263 — added sentence "Oortin pilvi on tuhansia kertoja kauempana kuin heliopaussi" was wrong (2000–100 000 AU against 120 AU is about 17 to 830 times) → "kymmeniä tai jopa satoja kertoja kauempana".
-
 ## Polish
-(none)
+- none
 
 ## Checked
-- Delta against the Finnish source: AU explained (1 AU about 150 million km, correct) in short plain sentences; heliopause 120 AU and Oort cloud 2000–100 000 AU as in fi; $\overline{F}$ as in fi; learn goals complete "Tällä tunnilla opit" with -maan/-mään verbs; exercise-level sentence shortened as in fi. check_i18n fi-easy: 0 errors.
+- batch delta review, round 2 (diff f83714cd..b8a6e1bb): suuruusluokka now 'kymmenpotenssien akselilla lähimpänä' (logarithmic nearness, consistent with the a ≈ 3 threshold; 170 → 10^2, 8,8·10^3 → 10^4); 10^-3 feedback 'pilkun jälkeen kolme desimaalia' correct; Eratosthenes prompt rewording unchanged in meaning (800 km · 360/7,2 = 40 000 km, d ≈ 1,3·10^4 km); no other content changed.

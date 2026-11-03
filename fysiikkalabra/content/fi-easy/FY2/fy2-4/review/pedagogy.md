@@ -1,13 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: a5be5206fcf10172
+CONTENT-HASH: d0f5a3698663685e
 
 ## Blocking
 (none)
 
 ## Polish
-- none
+(none)
 
 ## Checked
-- Lesson translation checked against the Finnish.
-- Teaching sequence, steps (<!-- vaihe -->), misconception section and summary follow the Finnish; language natural and no Finnish left over. Short clear sentences, plain Finnish, decimal comma kept; the 5,0 cm / 4,0 cm example is introduced as a separate diagram.
-- No edits needed; hash unchanged at end.
+batch delta review: key_concepts judged against NOTES.md §12 and the editorial standard (central concepts, plain 1–2 sentence explanations, natural Finnish, physics unchanged); lesson rewordings, photos and captions, experiment/prompt wording and solution diagrams in this diff read clearly and agree with the tasks they touch.

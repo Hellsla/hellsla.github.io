@@ -101,7 +101,7 @@ def mark_terms(stage_html, code, lang):
     if not cards: return stage_html
     def one(m):
         c = match(m.group(1), cards)
-        return f'<strong class="kc-term" data-kortti="{c["id"]}">{m.group(1)}</strong>' if c else m.group(0)
+        return f'<strong class="kc-mark" data-kortti="{c["id"]}">{m.group(1)}</strong>' if c else m.group(0)
     return re.sub(r"<strong>((?:(?!</?strong>).)+?)</strong>", one, stage_html, flags=re.S)
 
 
@@ -140,16 +140,16 @@ def lesson_section(code, lid, T, lang, titles):
     """The section after the exit ticket, or "" when the chapter has no cards in this language."""
     cards = chapter_cards(code, lid, lang)
     if not cards: return ""
-    return (f'<section class="stage stage-concepts kc-section" id="kasitteet" data-stage="kasitteet" data-moduuli="{code}" data-luku="{lid}">'
-            f'<h2>{T("cards.lesson_title")}</h2><p class="kc-lead">{T("cards.lesson_lead")}</p>'
-            f'<dl class="kc-list">{"".join(static_card(c) for c in cards)}</dl>'
+    return (f'<section class="stage stage-concepts kc-section" id="kertaa-kasitteet" data-stage="kertaa-kasitteet" data-moduuli="{code}" data-luku="{lid}">'
+            f'<h2>{T("cards.lesson_title")}</h2><p class="kc-intro">{T("cards.lesson_lead")}</p>'
+            f'<dl class="kc-dl">{"".join(static_card(c) for c in cards)}</dl>'
             f'<p class="kc-more"><a href="{app_href(code)}">{T("cards.module_all")}</a></p>'
             + data_block(T, lang, cards_of(code, lang), {"luku": lid, "moduuli": code, "chapters": titles}, APP)
             + '<script src="kortit.js"></script></section>')
 
 
 def lesson_nav(T):
-    return f'<a href="#kasitteet" class="toc-sub toc-concepts"><span class="toc-label">{T("cards.nav")}</span></a>'
+    return f'<a href="#kertaa-kasitteet" class="toc-sub toc-concepts"><span class="toc-label">{T("cards.nav")}</span></a>'
 
 
 def module_section(code, T, lang, titles):
@@ -168,7 +168,7 @@ def practice_section(code, T, lang):
     cards = cards_of(code, lang)
     if not cards: return ""
     return (f'<section class="kc-practice" data-moduuli="{code}" hidden aria-labelledby="h-kc-practice"><h2 id="h-kc-practice">{T("cards.practice_title")}</h2>'
-            f'<p class="kc-lead">{T("cards.practice_lead")}</p><div class="kc-row"></div>'
+            f'<p class="kc-intro">{T("cards.practice_lead")}</p><div class="kc-row"></div>'
             + data_block(T, lang, cards, {"moduuli": code}, APP) + '<script src="kortit.js"></script></section>')
 
 
@@ -183,7 +183,7 @@ def app_page_body(T, lang, names, chapters):
         static += f'<section class="kc-static-module"><h2>{c} · {esc(m["nimi"])}</h2>'
         for a in m["aiheet"]:
             cs = [k for k in m["kortit"] if k["aihe"] == a["id"]]
-            if cs: static += f'<h3>{esc(a["nimi"])}</h3><dl class="kc-list">{"".join(static_card(k) for k in cs)}</dl>'
+            if cs: static += f'<h3>{esc(a["nimi"])}</h3><dl class="kc-dl">{"".join(static_card(k) for k in cs)}</dl>'
         static += "</section>"
     return (f'<header class="kc-app-head"><h1>{T("cards.app_title")}</h1><p class="lead">{T("cards.app_lead")}</p></header>'
             f'<div class="kc-app" data-files=\'{esc(json.dumps(files))}\' hidden></div>'

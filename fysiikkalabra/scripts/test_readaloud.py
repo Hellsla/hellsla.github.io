@@ -1,4 +1,5 @@
-"""Read aloud (templates/readaloud.js, teacher 2026-11-03: "ääneenluku", and "näyttää missä kohtaa tekstiä mennään").
+"""Read aloud (templates/readaloud.js, teacher 2026-11-03: "ääneenluku", "näyttää missä kohtaa tekstiä mennään", and the
+progress bar brief: one Kuuntele / Tauko button at the right end of the stage bar).
 Usage: python scripts/test_readaloud.py [site] [page ...]
 
 Static, every page of the site built from templates/lesson.html (lessons, Sovella itsenäisesti, investigations, TVT
@@ -6,14 +7,18 @@ guides, course units) in every language: readaloud.js is loaded and the page's s
 In a browser, with a stand-in for the browser's voice (speechSynthesis is replaced by a script that reports every
 word and ends each sentence; a headless browser has no voices), on one lesson per language, a TVT guide, an
 investigation and a course unit (or the pages named):
-  - the Kuuntele button is under the title in the page's language, and nothing is spoken before it is pressed
-  - formulas are spoken as words (lang "speech"): a fixed set of TeX gives the expected Finnish and English
-  - reading goes block by block in page order; the title is read first; a closed box, a hidden worked-example step,
-    a figure and a simulation are not read; the block being read is marked and the sentence and the word are
-    highlighted (CSS Custom Highlight API)
+  - one Kuuntele button (text and icon, aria-pressed) at the right end of the stage bar, in the page's language, and
+    nothing is spoken before it is pressed; without a voice for the page's language there is no button
+  - formulas are spoken as words (lang "speech"): a fixed set of TeX gives the expected Finnish and English; a formula
+    with data-speech is spoken as written there
+  - a lesson reads only Pohdinta and Teoriatiivistelmä, and no task, hint, model answer or solution in them; other
+    pages read from the title; a closed box, a hidden worked-example step, a figure and a simulation are never read;
+    the block being read is marked and the sentence and the word are highlighted (CSS Custom Highlight API), and the
+    stage being read is marked in the bar
   - the best voice of the language is used (neural, Google or enhanced before an old desktop voice; teacher
     2026-11-03 "the quality in chrome seems really awful") when the device's voice reads
-  - pause and continue, next and previous sentence, Esc stops and hides the bar
+  - Tauko pauses and Kuuntele continues; a click on a stage moves the reading there (to the next stage that is read,
+    paused, when that stage is not read); the speed menu (0,8 / 1 / 1,25) sets the rate; Esc stops
   - at 360, 768 and 1280 px the bar fits the window (no horizontal scroll), its controls are at least 40 px high
 Exit status 1 on any failure."""
 import functools, http.server, json, re, sys, threading, pathlib
@@ -54,7 +59,7 @@ MOCK = r"""(() => {
       { name: 'Microsoft Hazel Desktop - English (Great Britain)', lang: 'en-GB' }, { name: 'Google UK English Female', lang: 'en-GB' }, { name: 'Google US English', lang: 'en-US' },
       { name: 'Test fr', lang: 'fr-FR' }]; },
     addEventListener() {}, cancel() { this.q = null; clearTimeout(this.t); },
-    speak(u) { spoken.push(u.text); (window.__voice = window.__voice || []).push(u.voice && u.voice.name); this.q = u; const words = [...u.text.matchAll(/\S+/g)]; let k = 0;
+    speak(u) { spoken.push(u.text); (window.__rate = window.__rate || []).push(u.rate); (window.__voice = window.__voice || []).push(u.voice && u.voice.name); this.q = u; const words = [...u.text.matchAll(/\S+/g)]; let k = 0;
       const tick = () => { if (this.q !== u) return;
         if (k < words.length) { u.onboundary && u.onboundary({ name: 'word', charIndex: words[k].index, charLength: words[k][0].length }); k++; this.t = setTimeout(tick, window.__wordMs || 5); }
         else { this.q = null; u.onend && u.onend({}); } };
@@ -105,9 +110,13 @@ with sync_playwright() as pw:
             pg.goto(BASE + page); pg.wait_for_timeout(400)
             tag = f"{page} {w}px"
             start = pg.locator(".ra-start")
-            expect(f"{tag}: one Kuuntele button, in this language", start.count() == 1 and T("js.ra_listen") in start.inner_text(), start.count())
+            lesson = pg.evaluate("!!document.querySelector('main section.stage#herata, main section.stage#selita')")   # a lesson or a course unit
+            expect(f"{tag}: one Kuuntele button, in this language, with an icon", start.count() == 1 and T("js.ra_listen") in start.inner_text()
+                   and start.locator("svg").count() == 1 and start.get_attribute("aria-pressed") == "false", start.count())
             if w == 1280:
-                expect(f"{tag}: the button is under the title", pg.evaluate("(() => { const h = document.querySelector('main h1'); return !h || h.nextElementSibling === document.querySelector('.ra-bar'); })()"))
+                expect(f"{tag}: the button is at the right end of the stage bar", pg.evaluate("""(() => { const t = document.querySelector('nav.toc'), b = document.querySelector('.ra-start');
+                    if (!t) return true; const tools = t.querySelector('.toc-tools'); return !!tools && tools.contains(b) && t.lastElementChild === tools
+                      && Math.abs(t.getBoundingClientRect().right - b.parentElement.getBoundingClientRect().right) < 24; })()"""))
                 expect(f"{tag}: nothing spoken before the button", pg.evaluate("window.__spoken.length") == 0)
                 key = "en" if lang == "en" else "fi"
                 if page == targets[0] or lang == "en" and page.startswith("en/fy3"):
@@ -116,9 +125,17 @@ with sync_playwright() as pw:
                         expect(f"{lang}: {tex} is spoken as \"{want}\"", got == want, got)
                 blocks = pg.evaluate("flSpeech.blocks()")
                 expect(f"{tag}: the page has text to read", len(blocks) > 3, len(blocks))
-                h1 = pg.evaluate("(document.querySelector('main h1')||{}).textContent || ''")
-                first = re.sub(r"\s+", " ", h1).strip().split(" ")[0]
-                if first: expect(f"{tag}: the title is read first", bool(blocks) and blocks[0].startswith(first), [first, blocks[:1]])
+                if lesson:
+                    outside = pg.evaluate("""() => flSpeech.elements().filter(e => !e.closest('#herata, #selita')
+                        || e.closest('.activity:not(.act-hook):not(.act-theory), details.opt, details.answer, details.hint, .hints, .feedback, .sol-step, .example, form, fieldset'))
+                        .map(e => e.textContent.trim().slice(0, 40))""")
+                    expect(f"{tag}: only Pohdinta and Teoriatiivistelmä are read, no task, hint, model answer or solution", not outside, outside[:3])
+                    first = re.sub(r"\s+", " ", pg.evaluate("document.querySelector('#herata h2').textContent.replace(/^\\s*\\d+/, '')")).strip()
+                    expect(f"{tag}: the reading starts at Pohdinta", bool(blocks) and blocks[0].startswith(first), [first, blocks[:1]])
+                else:
+                    h1 = pg.evaluate("(document.querySelector('main h1')||{}).textContent || ''")
+                    first = re.sub(r"\s+", " ", h1).strip().split(" ")[0]
+                    if first: expect(f"{tag}: the title is read first", bool(blocks) and blocks[0].startswith(first), [first, blocks[:1]])
                 leaked = pg.evaluate("""() => flSpeech.elements().filter(e => {
                     for (let d = e.closest('details:not([open])'); d; d = d.parentElement && d.parentElement.closest('details:not([open])'))
                       if (!d.querySelector(':scope > summary')?.contains(e)) return true;
@@ -127,39 +144,68 @@ with sync_playwright() as pw:
                 expect(f"{tag}: no text from a closed box, hidden step, figure or simulation is read", not leaked, leaked[:3])
                 tex_left = [x for x in blocks if "\\" in x or "$" in x]
                 expect(f"{tag}: no TeX or $ is read out", not tex_left, tex_left[:3])
+                said = pg.evaluate("""() => { const k = [...document.querySelectorAll('main .katex')].find(k => flSpeech.elements().some(e => e.contains(k)));
+                    if (!k) return null; const s = document.createElement('span'); s.setAttribute('data-speech', 'sigma F on yhtä kuin m kertaa a');
+                    k.replaceWith(s); s.append(k); return flSpeech.blocks().some(t => t.includes('sigma F on yhtä kuin m kertaa a')); }""")
+                if said is not None: expect(f"{tag}: a formula with data-speech is spoken as written there", said)
             start.click(); pg.wait_for_timeout(120)
             pg.evaluate("window.__wordMs = 300")
             pg.wait_for_timeout(400)
-            st = pg.evaluate("""() => ({ dock: !document.querySelector('.ra-dock').hidden, on: !!document.querySelector('main .ra-on'),
-                 sent: CSS.highlights.has('ra-sentence'), word: CSS.highlights.has('ra-word'), n: window.__spoken.length,
+            st = pg.evaluate("""() => ({ pressed: document.querySelector('.ra-start').getAttribute('aria-pressed'), text: document.querySelector('.ra-start').innerText,
+                 on: !!document.querySelector('main .ra-on'), sent: CSS.highlights.has('ra-sentence'), word: CSS.highlights.has('ra-word'), n: window.__spoken.length,
+                 stage: (() => { const a = document.querySelector('nav.toc a[aria-current]'), on = document.querySelector('main .ra-on'); if (!a || !on) return true;
+                   const inAny = [...document.querySelectorAll('nav.toc a[href^="#"]')].some(x => document.getElementById(x.getAttribute('href').slice(1))?.contains(on));
+                   const t = document.getElementById(a.getAttribute('href').slice(1)); return !inAny || !!t && t.contains(on); })(),
                  sw: document.documentElement.scrollWidth, iw: window.innerWidth,
-                 r: document.querySelector('.ra-dock').getBoundingClientRect().toJSON(),
-                 low: [...document.querySelectorAll('.ra-dock button, .ra-dock select')].filter(e => e.offsetParent).filter(e => e.getBoundingClientRect().height < 40).length })""")
-            expect(f"{tag}: reading starts, the bar shows, the block is marked and the sentence and word are highlighted",
-                   st["dock"] and st["on"] and st["sent"] and st["word"] and st["n"] >= 1, st)
-            expect(f"{tag}: the bar fits the window, controls at least 40 px", st["sw"] <= st["iw"] and st["r"]["left"] >= 0 and st["r"]["right"] <= st["iw"] and st["low"] == 0, st)
+                 low: [...document.querySelectorAll('.ra-start, .ra-more')].filter(e => e.offsetParent).filter(e => e.getBoundingClientRect().height < 40).length,
+                 out: [...document.querySelectorAll('.ra-start, .ra-more')].filter(e => { const r = e.getBoundingClientRect(); return r.left < 0 || r.right > innerWidth; }).length })""")
+            expect(f"{tag}: reading starts (Tauko, aria-pressed), the block is marked, the sentence and word are highlighted and the stage being read is marked",
+                   st["pressed"] == "true" and T("js.ra_pause") in st["text"] and st["on"] and st["sent"] and st["word"] and st["n"] >= 1 and st["stage"], st)
+            expect(f"{tag}: the bar fits the window, controls at least 40 px", st["sw"] <= st["iw"] and st["low"] == 0 and st["out"] == 0, st)
             if w == 1280:
                 best = "Google UK English Female" if lang == "en" else "Microsoft Noora Online (Natural) - Finnish (Finland)"
                 used = pg.evaluate("window.__voice.slice(-1)[0]")
                 expect(f"{tag}: the best voice is chosen, not the old desktop voice", used == best, used)
-                expect(f"{tag}: without the neural voice there is no voice menu", pg.evaluate("document.querySelector('.ra-voice').hidden"))
-                n0 = pg.evaluate("window.__spoken.length")
-                pg.click(".ra-dock .ra-main"); pg.wait_for_timeout(150)
-                paused = pg.evaluate("[document.querySelector('.ra-start').getAttribute('aria-pressed'), window.__spoken.length]")
+                pg.click(".ra-start"); pg.wait_for_timeout(150)
+                paused = pg.evaluate("[document.querySelector('.ra-start').getAttribute('aria-pressed'), document.querySelector('.ra-start').innerText, window.__spoken.length]")
                 pg.wait_for_timeout(400)
-                expect(f"{tag}: pause stops the voice", paused[0] == "false" and pg.evaluate("window.__spoken.length") == paused[1], paused)
-                pg.click(".ra-dock .ra-main"); pg.wait_for_timeout(100)
+                expect(f"{tag}: Tauko stops the voice and the button says Kuuntele", paused[0] == "false" and T("js.ra_listen") in paused[1]
+                       and pg.evaluate("window.__spoken.length") == paused[2], paused)
                 said = pg.evaluate("window.__spoken.slice(-1)[0]")
-                pg.click(f'.ra-dock .ra-btn[aria-label="{T("js.ra_next")}"]'); pg.wait_for_timeout(100)
-                nxt = pg.evaluate("window.__spoken.slice(-1)[0]")
-                pg.click(f'.ra-dock .ra-btn[aria-label="{T("js.ra_prev")}"]'); pg.wait_for_timeout(100)
-                back = pg.evaluate("window.__spoken.slice(-1)[0]")
-                expect(f"{tag}: continue repeats the sentence, next and previous move by one", nxt != said and back == said, [said, nxt, back])
+                pg.click(".ra-start"); pg.wait_for_timeout(100)
+                expect(f"{tag}: Kuuntele continues from the same sentence", pg.evaluate("window.__spoken.slice(-1)[0]") == said)
+                pg.click(".ra-more"); pg.wait_for_timeout(100)
+                menu = pg.evaluate("""() => { const m = document.querySelector('.ra-menu'); return { open: !m.hidden, rates: [...m.querySelectorAll('.ra-speeds input')].map(i => i.value),
+                    voice: !m.querySelector('.ra-voice').hidden, expanded: document.querySelector('.ra-more').getAttribute('aria-expanded'), inBar: !!document.querySelector('nav.toc .ra-speeds') }; }""")
+                expect(f"{tag}: the menu opens with the speeds 0,8 / 1 / 1,25 (not in the bar), no voice menu without the neural voice",
+                       menu["open"] and menu["rates"] == ["0.8", "1", "1.25"] and not menu["voice"] and menu["expanded"] == "true" and not menu["inBar"], menu)
+                pg.locator(".ra-speeds label").nth(2).click(); pg.wait_for_timeout(150)
+                expect(f"{tag}: speed 1,25 is used", pg.evaluate("window.__rate.slice(-1)[0]") == 1.25, pg.evaluate("window.__rate.slice(-3)"))
+                pg.keyboard.press("Escape"); pg.wait_for_timeout(50)
+                expect(f"{tag}: Esc closes the menu first", pg.evaluate("document.querySelector('.ra-menu').hidden && document.querySelector('.ra-start').getAttribute('aria-pressed') === 'true'"))
+                if lesson:
+                    pg.click('nav.toc a[href="#selita"]'); pg.wait_for_timeout(300)
+                    h = re.sub(r"\s+", " ", pg.evaluate("document.querySelector('#selita h2').textContent.replace(/^\\s*\\d+/, '')")).strip()
+                    got = pg.evaluate("window.__spoken.slice(-6)")
+                    expect(f"{tag}: a click on Teoriatiivistelmä moves the reading there", any(x.strip().startswith(h) for x in got)
+                           and pg.evaluate("!!document.querySelector('#selita .ra-on')"), [h, got])
+                    if pg.locator('nav.toc a[href="#tutki"]').count():
+                        pg.click('nav.toc a[href="#herata"]'); pg.wait_for_timeout(200)
+                        pg.click('nav.toc a[href="#tutki"]'); pg.wait_for_timeout(200)
+                        st2 = pg.evaluate("[document.querySelector('.ra-start').getAttribute('aria-pressed'), !!document.querySelector('#selita .ra-on')]")
+                        expect(f"{tag}: a click on a stage that is not read pauses at the next stage that is", st2 == ["false", True], st2)
                 pg.keyboard.press("Escape"); pg.wait_for_timeout(100)
-                st = pg.evaluate("[document.querySelector('.ra-dock').hidden, !!document.querySelector('.ra-on'), CSS.highlights.has('ra-sentence')]")
-                expect(f"{tag}: Esc stops, hides the bar and clears the marks", st == [True, False, False], st)
+                st = pg.evaluate("[document.querySelector('.ra-start').getAttribute('aria-pressed'), !!document.querySelector('.ra-on'), CSS.highlights.has('ra-sentence')]")
+                expect(f"{tag}: Esc stops and clears the marks", st == ["false", False, False], st)
             expect(f"{tag}: no script errors", not errs, errs[:3])
             pg.close()
+    # no voice for the page's language: no button
+    if targets:
+        pg = b.new_page(viewport={"width": 1280, "height": 800})
+        pg.add_init_script(MOCK.replace("getVoices() { return [", "getVoices() { return [{ name: 'Test fr', lang: 'fr-FR' }]; return ["))
+        pg.goto(BASE + targets[0]); pg.wait_for_timeout(400)
+        expect(f"{targets[0]}: without a voice for the page's language there is no Kuuntele button", pg.evaluate("!document.querySelector('.ra-start') || !document.querySelector('.ra-start').offsetParent"))
+        pg.close()
     b.close()
 
 # The neural voice (teacher 2026-11-03: Supertonic 3, "Nainen / Mies"): the real model in vendor/supertonic3-v1 on the
@@ -192,7 +238,7 @@ if NPAGE and (SITE / "vendor/supertonic3-v1/manifest.json").is_file():
                bool(bufs) and bufs[0][1] == 44100 and 44100 <= bufs[0][0] <= 30 * 44100, bufs)
         expect(f"neural {NPAGE}: the sentence being read is highlighted", pg.evaluate("CSS.highlights.has('ra-sentence') && !!document.querySelector('main .ra-on')"))
         n0 = len(bufs)
-        pg.select_option(".ra-voice select", "male")
+        pg.click(".ra-more"); pg.select_option(".ra-voice select", "male")
         for _ in range(120):
             if pg.evaluate("window.__bufs.length") > n0: break
             pg.wait_for_timeout(500)

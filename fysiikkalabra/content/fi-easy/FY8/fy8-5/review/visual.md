@@ -1,17 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 774f10014b91374f
+CONTENT-HASH: f4c25dfd29e9d304
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] fig 9 (cloud) — the label "läpivalaisu" still stands alone in the figure; the model text now explains it, but "läpikuultavat pisteet" would be clearer at 390 px (carried from the earlier report).
-- [Minor] lesson.md "Todennäköisyystulkinta" — the amplitude gloss "Amplitudi on aallon suurin poikkeama tasapainosta" sits between two sentences about the same idea and splits them; place it after the "amplitudin neliö" sentence or in parentheses.
+- none
 
 ## Checked
-- Delta: theory-1280-1, -2, -3 (changed paragraphs: kupukohta, s-/p-orbitaali, amplitudi, alikuori, Paulin kieltosääntö, 90 %:n raja); fig-7 (nodes, new alt text) at 390; sim-1280 (howto/model text and labels); tarkista-1280-1 (changed prompt "solmupintaa (pintaa, jolla elektronia ei havaita)").
-- Layout survived; the new glosses fit the line width; no clipping.
-- New "90 %:n" and "s-orbitaali" forms are correct; no plain quantities found in changed lines.
-
-## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+- batch delta review: the only change is meta.json key_concepts. I captured the "Luvun tärkeät käsitteet" panel from preview/fi-easy/fy8-5.html at 390 and 1280 px and opened it (review/shots has no capture of the panel). It sits between the opening and stage 1: term bold over its explanation at 390 px, two columns at 1280 px. Nothing is clipped, there is no horizontal overflow and no KaTeX error. The terms match the lesson's usage, and the explanations are plain, correct S2 Finnish.

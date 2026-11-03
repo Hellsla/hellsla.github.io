@@ -44,10 +44,13 @@
     "course_lessons": "Lessons",
     "course_title": "{{code}} · {{title}}",
     "course_description": "{{code}} {{title}}: lessons, simulations and exercises for an upper secondary physics module. {{done}} / {{n}} lessons ready.",
-    "home_lead": "Make a prediction, investigate the phenomenon with a simulation or data, and build the explanation yourself.",
     "home_description": "Upper secondary physics through investigation: predictions, simulations, explanations and exercises, LOPS 2019 modules FY1–FY8.",
     "credits": "{{n}} cr",
-    "home_tagline": "Investigate. Understand. Apply.",
+    "home_h1": "Explore. Understand. Apply.",
+    "home_sub": "Upper secondary physics, LOPS 2019. Predict, investigate with a simulation or data, explain it yourself.",
+    "study": "How to study",
+    "about": "About this site",
+    "about_lead": "Ruukkilabra is open learning material for upper secondary physics (LOPS 2019).",
     "home_path": "How you study in Ruukkilabra",
     "home_start_lead": "Choose a module and start from its first chapter, or from the chapter your class is working on. Every chapter follows the same stages.",
     "home_path_herata": "a phenomenon and the question the chapter answers",
@@ -68,10 +71,7 @@
     "lang_unavailable": "page not available yet, goes to the module page",
     "unavailable_note": "<strong>{{title}}</strong> is not available in this language yet. Below you can see the lessons of this module and which of them you can already open.",
     "home_title": "Upper secondary physics through investigation.",
-    "modules_lead": "Physics modules of the Finnish core curriculum (LOPS 2019). The numbers show published lessons, not your own progress.",
     "upcoming": "Coming soon",
-    "upcoming_lead": "No lessons of these modules have been published yet. A module's page shows its planned lessons and goals.",
-    "open_module": "Open module →",
     "lessons_all": {
       "one": "{{n}} lesson",
       "other": "{{n}} lessons"
@@ -99,16 +99,8 @@
       "FY7": "How are electricity and magnetism linked, and what is light?",
       "FY8": "Why is the energy of an atom quantised, and where does radiation come from?"
     },
-    "local_courses": "School-specific courses",
-    "local_courses_lead": "Courses of Kiviruukki upper secondary school. They are not national modules, but their materials are open to everyone.",
     "local_course_kind": "School-specific course",
     "local_status_planning": "In planning",
-    "local_status_home_planning": "Course plan in progress",
-    "local_investigations": {
-      "one": "{{n}} investigation available",
-      "other": "{{n}} investigations available"
-    },
-    "open_course": "Open course →",
     "local_distinct": "This is a school-specific course ({{school}}). Its goals and contents come from the school's own plan, not from the national modules FY1–FY8.",
     "local_status_note_planning": "This page shows a working version of the course. Investigations are published as they are completed, and the scope and assessment have not been confirmed.",
     "local_goals": "In this course, you will learn to",
@@ -124,7 +116,6 @@
     "local_unavailable_note": "<strong>{{title}}</strong> is only available in Finnish for now.",
     "lang_unavailable_home": "page not available yet, goes to the front page",
     "local_status_building": "Under construction",
-    "local_status_home_building": "Course under construction",
     "local_status_note_building": "Units are published as they are completed and checked. The scope and assessment have not been confirmed.",
     "local_status_ready": "Ready"
   },
@@ -178,7 +169,10 @@
     "notice_legacy": "Prototype version: this lesson was published before the current review process and is waiting to be renewed. The content may still change.",
     "notice_draft": "Draft: this lesson has not been reviewed yet.",
     "why_marker": "Why",
-    "goal_note": "Clarification"
+    "goal_note": "Clarification",
+    "kc_title": "Key concepts of the chapter",
+    "kc_optional": "Optional",
+    "kc_lead": "Get to know the key concepts of the chapter. You can write their meanings in your strongest language or in several languages."
   },
   "inquiry": {
     "stage_herata": "Think about it",
@@ -331,23 +325,17 @@
     "zoom_dialog": "Enlarged figure",
     "sim_expand_aria": "Enlarge the simulation",
     "sim_shrink_aria": "Shrink the simulation back into the page",
+    "stage_done": "done",
+    "ra_settings": "Listening settings",
+    "ra_no_lang_voice": "Your device has no English voice.",
     "ra_listen": "Listen",
     "ra_pause": "Pause",
-    "ra_resume": "Continue",
-    "ra_stop": "Stop listening",
-    "ra_prev": "Previous sentence",
-    "ra_next": "Next sentence",
     "ra_speed": "Speech rate",
-    "ra_slow": "slow",
-    "ra_normal": "normal",
-    "ra_fast": "fast",
     "ra_voice": "Voice",
     "ra_female": "Female",
     "ra_male": "Male",
     "ra_loading": "Loading the voice: {{p}} %. This happens only the first time.",
-    "ra_fallback": "The voice could not be loaded, so the browser reads with the device's own voice.",
-    "ra_bar": "Read aloud",
-    "ra_no_voice": "Your device has no English voice, so the browser reads with another voice. You can add an English voice in your device's language settings."
+    "ra_fallback": "The voice could not be loaded, so the browser reads with the device's own voice."
   },
   "sims": {
     "fy2-2": {
@@ -1936,12 +1924,6 @@
     "velocity": "velocity {{dir}};"
   },
   "units": {
-    "home_sessions": "about {{n}} lessons",
-    "home_count": {
-      "one": "{{n}} unit available",
-      "other": "{{n}} units available"
-    },
-    "taught_in_en": "in English",
     "language_note_en": "This course is taught in English.",
     "authors": "Authors",
     "and": "and",

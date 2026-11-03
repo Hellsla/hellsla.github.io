@@ -15,7 +15,7 @@ Audit $ARGUMENTS against `docs/EDITORIAL_QUALITY_STANDARD.md`. Work in `fysiikka
 | `tvt-kuvaaja` | TVT guide (`content/fi/tvt/`) | `guides.py hash/status` | `review_packet.py <id> --role visual` | `screenshot.py <id> --if-stale` |
 | `FY3-sovella` | Sovella itsenäisesti set | `practice.py hash/status FY3` | `practice.py packet FY3 --role science|pedagogy|visual` | `screenshot.py FY3-sovella --if-stale` |
 
-Anything else: stop and say which types exist. `--lang en` / `fi-easy` audits a translation (every script takes `--lang`).
+Anything else: stop and say which types exist. `--lang en` / `fi-easy` audits a translation (every script takes `--lang`); `fi-easy` is also audited against NOTES.md §12 (S2).
 
 **Routing of agents** (as `/lesson`; `.claude/agents/`): visual-editorial-reviewer Sonnet medium; pedagogy-reviewer Sonnet medium; science-reviewer Opus medium; developer Sonnet medium (Opus medium only on `/lesson`'s conditions). Pass `model` and `effort` on every Agent call. If the agent types are not registered in this session, run a general-purpose agent with the same model and the first line `Read .claude/agents/<name>.md and follow it as your instructions.` The prompt is one line naming the packet: `Read <packet path> and follow it. Lesson: <id>. Mode: <mode>. Round: <n>.` (an audit says `Mode: audit (<mode>)`).
 

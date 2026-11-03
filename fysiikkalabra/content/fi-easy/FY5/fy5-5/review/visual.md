@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 405f3eb3db4c3d5a
+CONTENT-HASH: 20c69152d215564e
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- (none)
+- none
 
 ## Checked
-batch delta review: photo ok at 1280/360, alt matches picture, caption consistent with the equal-force paragraph. Artemis II -kuva latautuu, asettuu oikealle ja palstalle; krediitti on.
+- batch delta review: the new licensed photo (figure.unit-photo) captured in context from preview/fi-easy/fy5-5.html at 390 and 1280 px and opened (review/shots has no dedicated photo capture). The image loads at full resolution, scales inside the column on a phone and sits beside its paragraph at 1280 px. The caption is under the image with its credit line ("Kuva: …, licence"). Nothing is clipped and there is no horizontal overflow. The caption and alt text were read against the picture and the neighbouring paragraph: plain S2 Finnish, quantities in LaTeX.

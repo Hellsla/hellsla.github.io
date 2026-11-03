@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 7b94cec5125b53a5
+CONTENT-HASH: f2a9090c70f3a05f
 
 ## Blocking
 (none)
 
 ## Polish
-- The bouncer caption says the baby's toes touch the floor; that is the realistic use, but it means the spring is not oscillating freely. Harmless as a hook.
+- värähtelyn energia: "Ilman kitkaa" could say "Ilman kitkaa ja ilmanvastusta", as the summary does.
 
 ## Checked
-batch delta review: opening illustration now shows a pendulum clock and a spring-hung baby bouncer, both oscillators the lesson treats; references to fy5-7/fy5-8 updated; feedback kx = 40 N/m x 0,050 m = 2,0 N correct. Every changed chapter reference names the renamed chapter that holds the cited content, and no old title remains.
+batch delta review: added meta.json key_concepts (Luvun tärkeät käsitteet) checked term by term against the lesson's own definitions, summary and the physics guardrails; no number, formula or choice changed. Re-check after fix: vaimeneminen now says friction or air resistance turns part of the energy into internal energy (sisäenergiaksi), matching the lesson and the heat guardrail. harmoninen värähtely (period independent of amplitude), heiluri and värähtelyn energia agree with the lesson.

@@ -14,6 +14,20 @@
     "orbitaali",
     "todennäköisyystulkinta"
   ],
+  "key_concepts": [
+    {
+      "term": "aaltomekaaninen atomimalli",
+      "explain": "Nykyinen atomimalli. Elektronin tilaa kuvaa aalto, joka levittäytyy ytimen ympärille. Elektronilla ei ole rataa."
+    },
+    {
+      "term": "orbitaali",
+      "explain": "Alue ytimen ympärillä, jonka sisällä elektroni havaitaan valitulla todennäköisyydellä."
+    },
+    {
+      "term": "todennäköisyystulkinta",
+      "explain": "Aalto ei kerro, missä elektroni on. Se kertoo, kuinka todennäköisesti elektroni havaitaan kussakin kohdassa."
+    }
+  ],
   "sim": true,
   "solutions": "all",
   "image": false

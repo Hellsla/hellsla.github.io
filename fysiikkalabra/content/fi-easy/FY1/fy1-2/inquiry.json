@@ -121,7 +121,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 1: etäisyyden kymmenpotenssi",
-      "intro": "Testaa ennuste 2. Liu'uta etäisyyttä $d = 10^{n}\\,\\text{km}$. Kirjaa arvoille $n = 7$, $n = 8$ ja $n = 9$ etäisyys AU:na (astronominen yksikkö) ja valon kulkuaika sekunteina. Siirrä liukua niin, että liukusäätimen otsikossa lukee täsmälleen $n = 8{,}00$ (ja niin edelleen). Paina sitten *Kirjaa mittaus*. Katso, mitä taulukon luvuille tapahtuu, kun $n$ kasvaa yhdellä.",
+      "intro": "Testaa ennuste 2. Liu'uta etäisyyttä $d = 10^{n}\\,\\text{km}$. Kirjaa etäisyys AU:na (astronominen yksikkö) ja valon kulkuaika sekunteina arvoilla $n = 7$, $n = 8$ ja $n = 9$. Tee jokainen mittaus näin: siirrä ensin liukua niin, että liukusäätimen otsikossa lukee täsmälleen oikea arvo, esimerkiksi $n = 8{,}00$. Paina sitten *Kirjaa mittaus*. Katso, mitä taulukon luvuille tapahtuu, kun $n$ kasvaa yhdellä.",
       "initial": {
         "n": 7
       },
@@ -231,7 +231,7 @@
         "koe-1",
         "koe-2"
       ],
-      "prompt": "Kirjoita taulukoidesi perusteella: miten valon kulkuaika riippuu matkasta? Kuinka monta kertaa pidempi Voyager 2:n signaalin kulkuaika on kuin yhden AU:n kulkuaika? Miksi etäisyys voidaan ilmoittaa kolmella eri yksiköllä?",
+      "prompt": "Kirjoita taulukoidesi perusteella: miten valon kulkuaika muuttuu, kun matka kasvaa? Kuinka monta kertaa pidempi Voyager 2:n signaalin kulkuaika on kuin yhden AU:n kulkuaika? Miksi etäisyys voidaan ilmoittaa kolmella eri yksiköllä?",
       "model": "Kokeessa 1 jokainen $n$:n kasvu yhdellä kymmenkertaisti sekä etäisyyden AU:na että valon kulkuajan. Arvolla $n = 7$ aika oli $33{,}4\\,\\text{s}$, arvolla $n = 8$ se oli $334\\,\\text{s}$ ja arvolla $n = 9$ se oli $3340\\,\\text{s}$. Valon nopeus on vakio, joten aika on suoraan verrannollinen matkaan, $t = s : c$. Kokeessa 2 mallin arvo päivälle 1.1.2026 oli $142{,}9\\,\\text{AU}$ ja kulkuaika $19{,}8\\,\\text{h}$. Se on noin 143 kertaa yhden AU:n kulkuaika $8{,}32\\,\\text{min}$. Myöhemmin kulkuaika on pidempi, koska luotain etääntyy. Sama matka voidaan kirjoittaa kilometreinä, AU:na tai valon kulkuaikana. Luvut ovat eri, koska yksiköt ovat eri. Ne kuvaavat silti samaa matkaa. Yksikön paikalle voi aina kirjoittaa sen arvon toisessa yksikössä. Arvot ovat mallin laskemia, ja lähteinä ovat NASA/JPL. Maan kulkuaika voi poiketa niistä enintään noin kahdeksan minuuttia.",
       "criteria": [
         "Kirjoitin, että kulkuaika on suoraan verrannollinen matkaan, koska valon nopeus on vakio.",

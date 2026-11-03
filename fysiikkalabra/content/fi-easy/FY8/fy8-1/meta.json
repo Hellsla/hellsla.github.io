@@ -16,6 +16,28 @@
     "kvantti",
     "elektronivoltti"
   ],
+  "key_concepts": [
+    {
+      "term": "valosähköinen ilmiö",
+      "explain": "Valo irrottaa elektroneja metallin pinnasta."
+    },
+    {
+      "term": "fotoni",
+      "explain": "Valon energiakvantti eli pienin valon energia-annos. Fotoni luovuttaa koko energiansa yhdelle elektronille kerralla."
+    },
+    {
+      "term": "irrotustyö",
+      "explain": "Pienin energia, jolla elektroni saadaan irti metallista. Se riippuu metallista."
+    },
+    {
+      "term": "Planckin vakio",
+      "explain": "Luonnonvakio, joka kertoo, miten fotonin energia riippuu valon taajuudesta."
+    },
+    {
+      "term": "elektronivoltti",
+      "explain": "Pienten energioiden yksikkö. Se on energia, jonka elektroni saa kiihtyessään yhden voltin jännitteen läpi."
+    }
+  ],
   "sim": true,
   "solutions": "all",
   "image": false

@@ -151,7 +151,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 1: kaksi eri nopeutta",
-      "intro": "Testaa ennuste 1. Alkutila valitsee tapauksen 1. Siinä kärryt A ja B lähtevät samasta kohdasta. Paina *Käynnistä* ja seuraa, miten kuvaajat piirtyvät. Pysäytä sitten kello vetämällä *Hetki $t$* -liukusäädintä. Kirjaa paikat ainakin kolmella eri hetkellä, esimerkiksi $t = 0$, $t = 4{,}0\\,\\text{s}$ ja $t = 10\\,\\text{s}$.",
+      "intro": "Testaa ennuste 1. Simulaatio on valmiiksi tapauksessa 1. Siinä kärryt A ja B lähtevät samasta kohdasta. Paina *Käynnistä* ja seuraa, miten kuvaajat piirtyvät. Pysäytä sitten kello vetämällä *Hetki $t$* -liukusäädintä. Kirjaa paikat ainakin kolmella eri hetkellä, esimerkiksi $t = 0$, $t = 4{,}0\\,\\text{s}$ ja $t = 10\\,\\text{s}$.",
       "initial": {
         "tapaus": "1",
         "t": 0
@@ -207,7 +207,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 2: eri lähtöpaikka",
-      "intro": "Testaa ennuste 2. Alkutila valitsee tapauksen 2. Siinä kärry C lähtee A:n edestä positiiviseen suuntaan katsottuna. Paina *Käynnistä* ja katso kuvaajia. Kirjaa sitten paikat ainakin kolmella eri hetkellä, esimerkiksi $t = 0$, $t = 4{,}0\\,\\text{s}$ ja $t = 10\\,\\text{s}$. Laske kummankin kärryn paikan muutos rivien välillä.",
+      "intro": "Testaa ennuste 2. Simulaatio on valmiiksi tapauksessa 2. Siinä kärry C lähtee A:n edestä positiiviseen suuntaan katsottuna. Paina *Käynnistä* ja katso kuvaajia. Kirjaa sitten paikat ainakin kolmella eri hetkellä, esimerkiksi $t = 0$, $t = 4{,}0\\,\\text{s}$ ja $t = 10\\,\\text{s}$. Laske kummankin kärryn paikan muutos rivien välillä.",
       "initial": {
         "tapaus": "2",
         "t": 0
@@ -263,7 +263,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 3: vastakkaiset suunnat",
-      "intro": "Testaa ennuste 3. Alkutila valitsee tapauksen 3. Siinä kärry D ajaa kohti origoa. Paina *Käynnistä* ja katso, missä kuvaajat leikkaavat. Kirjaa paikat ainakin kolmella eri hetkellä, esimerkiksi $t = 0$, $t = 6{,}0\\,\\text{s}$ ja $t = 10\\,\\text{s}$.",
+      "intro": "Testaa ennuste 3. Simulaatio on valmiiksi tapauksessa 3. Siinä kärry D ajaa kohti origoa. Paina *Käynnistä* ja katso, missä kuvaajat leikkaavat. Kirjaa paikat ainakin kolmella eri hetkellä, esimerkiksi $t = 0$, $t = 6{,}0\\,\\text{s}$ ja $t = 10\\,\\text{s}$.",
       "initial": {
         "tapaus": "3",
         "t": 0

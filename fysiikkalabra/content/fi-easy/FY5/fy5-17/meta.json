@@ -15,6 +15,20 @@
     "ultraääni",
     "maanjäristysaalto"
   ],
+  "key_concepts": [
+    {
+      "term": "ultraääni",
+      "explain": "Ääni, jonka taajuus on niin suuri, ettei ihminen kuule sitä. Sillä voi kuvata kehon sisäosia."
+    },
+    {
+      "term": "heijastuminen",
+      "explain": "Aalto osuu kahden aineen rajapintaan ja osa siitä palaa takaisin."
+    },
+    {
+      "term": "maanjäristysaalto",
+      "explain": "Aalto, joka lähtee maanjäristyksen murtumakohdasta ja etenee maankuoressa ja Maan sisäosissa."
+    }
+  ],
   "sim": false,
   "solutions": "all",
   "image": false
