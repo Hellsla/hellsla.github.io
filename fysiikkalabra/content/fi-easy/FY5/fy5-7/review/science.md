@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 5b136494da94ac67
+CONTENT-HASH: 114c73babb2c6e2b
 
 ## Blocking
 (none)
@@ -8,6 +8,4 @@ CONTENT-HASH: 5b136494da94ac67
 (none)
 
 ## Checked
-- fi-easy *Jaksollinen liike* against the Finnish: lesson.md, inquiry.json, exit-ticket.json, meta.json; all numbers and formulas identical (mechanical check per file), SVG figures byte-identical.
-- Fixed in lesson.md (B-type, unstated condition): "Tässä luvussa värähtely ei vaimene" → "oletetaan, että värähtely ei vaimene"; "Aloita ajanotto …" (instruction) → "Oletetaan, että ajanotto alkaa …" so the model's condition stays a condition; equilibrium-position definition restored to "kappale pysyy levossa, kun se asetetaan siihen paikalleen".
-- Inquiry: all correct options, feedbacks, solutions and model answers unchanged in physics; 7 strings identical to Finnish are short and already plain.
+batch delta review: heading/meta renamed; references to fy5-3 updated in prior, feedback (f = 1/4,0 s = 0,25 1/s correct) and theory. Every changed chapter reference names the renamed chapter that holds the cited content, and no old title remains.

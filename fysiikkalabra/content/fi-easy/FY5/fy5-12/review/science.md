@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 34611e005e901776
+CONTENT-HASH: 3505267d41514d2b
 
 ## Blocking
 (none)
@@ -8,9 +8,4 @@ CONTENT-HASH: 34611e005e901776
 (none)
 
 ## Checked
-- Selkeä suomi -versio verrattu Finnish-lähteeseen content/fi/FY5/fy5-12 (kolme PASS-arviota): lesson.md, inquiry.json, exit-ticket.json, meta.json, figures.json; simulaation tekstit lang/fi-easy.json sims.fy5-12 (selite pilkottu, muut kuten fi).
-- Kaikki luvut verrattu skriptillä: identtiset joukot kaikissa tiedostoissa; kaavat, vastaukset, oikeat vaihtoehdot ja koeasetukset samat (check_i18n ei raportoi eroja).
-- Pilkotut virkkeet säilyttävät kausaalisuhteet: superpositio, vaihe-ero ja matkaero, n = 0 -viivat, kolmioepäyhtälö, energia ei häviä, kuvio pysyy paikallaan koska vaihe-ero ei muutu.
-- Korjattu: "poikkeama on matka, jonka väliaine on siirtynyt lepoasemastaan" → "tasapainoasemastaan" (sama käsite kuin edellisessä lauseessa).
-- Korjattu: esimerkin Tulos ja tehtävän *Sovella uuteen tilanteeseen* Vastaus sanoivat matkaeron olevan "annettu" tietyllä tarkkuudella, vaikka se on laskettu; "on annettu" poistettu.
-- Lisätyt selitykset (väliaine, aaltoallas, keskinormaali, jaksollinen signaali) ovat fysikaalisesti oikein.
+batch delta review: references to fy5-10, fy5-11, fy5-14 updated; lambda = 340/500 = 0,68 m correct; superposition text unchanged. Every changed chapter reference names the renamed chapter that holds the cited content, and no old title remains.

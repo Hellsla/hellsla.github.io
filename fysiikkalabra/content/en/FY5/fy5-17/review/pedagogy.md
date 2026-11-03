@@ -1,10 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 044ab14ee63f1b0d
+CONTENT-HASH: 881317d6a36fd926
 ## Blocking
-(none)
+
 ## Polish
-- hero — Gel is shown only as a small blue ring at the probe tip; visible but subtle at 390 px (taste).
+- Long title; acceptable, but a shorter form could be considered later.
+
 ## Checked
-- Delta review: only the hero illustration and its alt text changed; the rest stays as previously approved.
-- Probe on belly with gel, arcs going into the body, cable to machine, fan-shaped greyscale image with baby on the screen: supports both parts of the question; no misleading physics; alt matches the picture.
-- English alt text reads correctly; no text inside the picture; the 390 px capture shows the picture intact.
+batch delta review: the diff is a renamed lesson title and updated chapter cross-references; every reference matches the new titles, no stale old title remains in the lesson, inquiry or exercises, and the sentences read correctly. No figures, numbers or symbols changed.

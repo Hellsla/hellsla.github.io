@@ -1,15 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 34611e005e901776
-
+CONTENT-HASH: 3505267d41514d2b
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] inquiry.json fourier-kysymys ja tiivistelmä: "spektri", "perustaajuus" ja "monikerta" jäävät selittämättä; Teoriatiivistelmän kappale selittää ne, joten riittää.
 
 ## Checked
-- Oppimispolku sama kuin lähteessä; jokainen vaihe, vihje, virhepalaute, kriteeri ja mallivastaus mukana; esimerkin seitsemän vaihetta.
-- Selkokieli: lyhyet päälauseet, yksi asia virkkeessä, käsitteet selitetään ensimmäisellä kerralla (väliaine, poikkeama, aaltoallas, keskinormaali, jaksollinen signaali); termit sanaston mukaiset (vahvistava/heikentävä interferenssi, matkaero, solmuviiva).
-- learn-tavoitteet jatkavat lausetta "Tällä tunnilla opit" (-maan/-mään); prior-kohdat päättyvät luvun nimeen.
-- Korjattu: "Jaksollinen signaali toistuu samanlaisena, esimerkiksi soittimen ääni." → kaksi selvää lausetta.
-- Avatut kaapparit: contact-1 ja -2 (aloitus, ennusteet, kokeet, teoria, esimerkki, tarkistus, exit ticket), sim-390.
+batch delta review: new lesson title and renamed chapter cross-references (prior lists, feedback, theory text) read in context; the names match the new titles of the target lessons, wording and Finnish unchanged otherwise, no stale old titles left in the lesson files.

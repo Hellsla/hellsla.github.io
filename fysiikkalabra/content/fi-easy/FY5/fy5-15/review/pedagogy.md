@@ -1,13 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 9cb596630b684518
-
+CONTENT-HASH: e1edbdcd1504df0c
 ## Blocking
-- none
 
 ## Polish
-- inquiry.json learn[0] — "avulla ... avulla" toistuu, mutta tavoite on kieliopillisesti oikea ja täydentää otsikon "Tällä tunnilla opit"; ei muutosta.
 
 ## Checked
-- Muutos on vain yksi tavoite: finiittiverbi "tiedät" poistunut, symbolit ja luvut ennallaan, sisältö (teho/pinta-ala tai etäisyys) sama.
-- Tavoite täydentää otsikon lauseen; sama tavoite kuin kokeiden ja esimerkin sisältö, ei uutta oppisisältöä.
-- Muu oppitunti ennallaan hyväksytyn version mukaan; tuore tiiviste vastaa pakettia.
+batch delta review: new lesson title and renamed chapter cross-references (prior lists, feedback, theory text) read in context; the names match the new titles of the target lessons, wording and Finnish unchanged otherwise, no stale old titles left in the lesson files.
