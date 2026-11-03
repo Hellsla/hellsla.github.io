@@ -1,8 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 945351131a3135c6
+CONTENT-HASH: e3e3fdce6c1f6d9e
 ## Blocking
 
 ## Polish
 
 ## Checked
-batch delta review: added meta.json key_concepts ("Luvun tärkeät käsitteet") read against lesson.md: every term is a term the lesson bolds and uses, each explanation is short S2 Finnish, physically correct and consistent with the lesson's own definition, wording, tasks and feedback; no numbers or symbols changed, nothing in the lesson disclosed or removed.
+- Delta: meta.json key_concepts "painopiste" now reads "Tasa-aineisen ja symmetrisen kappaleen painopiste on sen keskellä."
+- The new wording matches the lesson's own definition word for word (lesson.md, Ydinajatus: "Tasa-aineisen ja symmetrisen kappaleen, kuten tasapaksun lankun, painopiste on keskellä").
+- The added condition removes the oversimplification that any symmetric body has its centre of gravity at the centre. The sentence is still short S2 Finnish, and "tasa-aineinen" is explained by the lesson's example.
+- The other key concepts are unchanged since the passed batch review.
