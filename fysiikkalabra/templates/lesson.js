@@ -8,6 +8,8 @@
    5b. Exercise head: Vastaus and Näytä ratkaisu as buttons beside the Ydintehtävä tag (the boxes open in place).
    6. Solution editor: "Kirjoita ratkaisu" under every exercise opens Abitti's own editor (Digabi rich-text-editor) and
       "Kopioi ratkaisu" copies the solution for L'Math or Abitti. The editor is loaded on the first click only.
+   7. Enlarge a figure (teacher 2026-11-03): a click on a figure or a photo, or its "Suurenna kuva" button, shows it
+      larger in a dialog, never over the image's own pixels nor about 90 % of the window (sim-embed.js enlarges a simulation).
    Its messages come from the page's #fl-strings block (lang/<lang>.json "js", written in by build.py). */
 (() => {
   const L10N = (() => { try { return JSON.parse(document.getElementById('fl-strings').textContent); } catch (e) { return {}; } })();
@@ -283,6 +285,83 @@
       }, () => { made = false; status.textContent = msg('pad_failed'); status.dataset.state = 'no'; });
     });
   }));
+
+  // 7. Enlarge a figure (teacher 2026-11-03, "kuvat aukeaa klikkaamalla isoksi, ei kuitenkaan liian isoksi"). Every
+  // figure (svg role="img") and every photo or screenshot (figure > img) in the page opens larger in a modal dialog:
+  // as large as fits in about 92 % of the window, but a photo never over its own pixels and a drawing never over
+  // 1,6 times its drawn size (at most 1200 px). On a phone, where the window is no wider than the figure already is,
+  // it opens 1,6 times larger in a box that scrolls. A button (shown on hover and keyboard focus) gives the same to
+  // the keyboard; Esc, the close button or a click closes it, and the focus returns to where it was. Figures inside
+  // controls, the simulation and the interactive course components are left as they are.
+  const ZOOM_SKIP = '#sim, .fx, button, a, label, summary, [contenteditable], .pad, .zoom-dlg, [data-nozoom]';
+  const zoomable = (el) => el && el.matches('main svg[role="img"], main figure > img') && !el.parentElement.closest(ZOOM_SKIP + ', svg');
+  const ZOOM_ICON = '<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+  let zdlg = null, zstage = null, zcap = null, zfrom = null;
+  const zoomDialog = () => {
+    if (zdlg) return zdlg;
+    zdlg = document.createElement('dialog'); zdlg.className = 'zoom-dlg'; zdlg.setAttribute('aria-label', msg('zoom_dialog'));
+    zdlg.innerHTML = '<button type="button" class="zoom-close"><span aria-hidden="true">×</span> </button><div class="zoom-stage"></div><div class="zoom-cap"></div>';
+    const close = zdlg.querySelector('.zoom-close'); close.append(msg('zoom_close'));
+    zstage = zdlg.querySelector('.zoom-stage'); zcap = zdlg.querySelector('.zoom-cap');
+    close.addEventListener('click', () => zdlg.close());
+    zdlg.addEventListener('click', (e) => { if (!zcap.contains(e.target) && !close.contains(e.target)) zdlg.close(); });   // a click on the picture or around it closes
+    zdlg.addEventListener('close', () => {
+      zstage.textContent = ''; zcap.textContent = ''; document.documentElement.classList.remove('zoom-open');
+      if (zfrom && zfrom.isConnected) zfrom.focus({ preventScroll: true }); zfrom = null;
+    });
+    document.body.appendChild(zdlg);
+    return zdlg;
+  };
+  const openZoom = (el, from) => {
+    const d = zoomDialog(), r = el.getBoundingClientRect();
+    let node, w0, h0, cap;
+    if (el.tagName === 'IMG') {
+      node = new Image(); node.src = el.currentSrc || el.src; node.alt = el.alt; node.decoding = 'async';
+      w0 = el.naturalWidth || r.width; h0 = el.naturalHeight || r.height; cap = w0;
+    } else {
+      node = el.cloneNode(true);
+      [node, ...node.querySelectorAll('[id]')].forEach((n) => n.removeAttribute('id'));   // its markers and gradients still resolve to the figure on the page
+      const vb = el.viewBox && el.viewBox.baseVal;
+      w0 = vb && vb.width ? vb.width : r.width; h0 = vb && vb.height ? vb.height : r.height;
+      cap = Math.min(1200, Math.max(720, r.width * 1.6));
+      node.removeAttribute('width'); node.removeAttribute('height'); node.classList.remove('zoomable');
+    }
+    const fig = el.closest('figure'), fc = fig && fig.querySelector(':scope > figcaption');
+    if (fc) zcap.innerHTML = fc.innerHTML;
+    zstage.textContent = ''; zstage.appendChild(node);
+    document.documentElement.classList.add('zoom-open');
+    zfrom = from || document.activeElement;
+    d.showModal();
+    const ar = h0 / w0 || 0.6;
+    const roomW = Math.min(window.innerWidth * 0.92, 1200), roomH = window.innerHeight * 0.92 - zcap.offsetHeight - d.querySelector('.zoom-close').offsetHeight - 24;
+    let w = Math.min(roomW, roomH / ar, cap);
+    if (w < r.width * 1.1) w = Math.min(cap, Math.max(w, r.width * 1.6));   // a phone: larger than the window, the box scrolls
+    node.style.width = Math.round(w) + 'px'; node.style.height = Math.round(w * ar) + 'px'; node.style.maxWidth = 'none';
+    zstage.classList.toggle('zoom-pan', w > roomW + 1 || w * ar > roomH + 1);
+    zstage.scrollLeft = 0; zstage.scrollTop = 0;
+    d.querySelector('.zoom-close').focus({ preventScroll: true });
+  };
+  const wire = (el) => {
+    if (el.classList.contains('zoomable')) return;
+    el.classList.add('zoomable');
+    const host = el.parentElement; host.classList.add('zoom-host');
+    const b = document.createElement('button'); b.type = 'button'; b.className = 'zoom-btn';
+    b.setAttribute('aria-label', msg('zoom_open')); b.title = msg('zoom_open'); b.innerHTML = ZOOM_ICON;
+    b.addEventListener('click', (e) => { e.stopPropagation(); openZoom(el, b); });
+    el.after(b);
+  };
+  document.querySelectorAll('main svg[role="img"], main figure > img').forEach((el) => {
+    if (!zoomable(el)) return;
+    if (el.tagName !== 'IMG') { wire(el); return; }
+    // a photo only when it has more pixels than the page shows (a screenshot at its own size would not grow)
+    const check = () => { const w = el.getBoundingClientRect().width; if (el.naturalWidth > (w || el.width || 0) * 1.15) wire(el); };
+    if (el.complete && el.naturalWidth) check(); else el.addEventListener('load', check, { once: true });
+  });
+  document.addEventListener('click', (e) => {
+    const el = e.target.closest && e.target.closest('svg.zoomable, img.zoomable');
+    if (!el || !zoomable(el) || e.defaultPrevented || (window.getSelection && String(window.getSelection()).length)) return;
+    openZoom(el, el.parentElement.querySelector(':scope > .zoom-btn'));
+  });
 
   let opened = [];
   window.addEventListener('beforeprint', () => {
