@@ -35,7 +35,7 @@
     },
     {
       "term": "suurjännite",
-      "explain": "Hyvin suuri jännite, jolla sähköä siirretään kantaverkossa. Silloin virta on pieni ja häviöt pienet."
+      "explain": "Hyvin suuri jännite, jolla sähköä siirretään kantaverkossa. Kun siirretty teho on sama, virta on silloin pieni ja häviöt pienet."
     }
   ]
 }
