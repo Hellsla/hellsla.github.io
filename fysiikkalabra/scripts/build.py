@@ -28,7 +28,7 @@ stay in their lesson folders and keep their <id>-sim.js URLs.
 """
 import json, os, sys, re, shutil, pathlib, atexit, html as _h, markdown
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent)); from reviews import status as review_status, published_exercises, WorkTree
-import answers_shown, courses, fbdspec, figcat, guides, i18n, inquiry, investigations, local_courses, mathlayout, module_icons, practice, reading_tips, svgids, units
+import answers_shown, concept_cards, courses, fbdspec, figcat, guides, i18n, inquiry, investigations, local_courses, mathlayout, module_icons, practice, reading_tips, svgids, units
 from i18n import t as T
 
 ROOT = pathlib.Path(os.environ.get("FYSIIKKALABRA_ROOT") or pathlib.Path(__file__).resolve().parents[1])   # tests build a copy
@@ -566,7 +566,7 @@ def build_language(lang):
         skey = (meta["id"] if where[0] == "lesson" else where[1].name) if where else None   # the sim's block of lang "sims"
         html = (texts(tpl).replace("{{title}}", esc(meta["title"])).replace("{{course}}", meta["course"]).replace("{{notice}}", notice(meta["state"]))
                 .replace("{{strings}}", strings_block(skey)).replace("{{back_to_course}}", esc(T("site.back_to_course", course=meta["course"])))
-                .replace("{{toc}}", toc).replace("{{main}}", main + f"<!--fl-chapter-nav:{meta['id']}-->")
+                .replace("{{toc}}", toc).replace("{{main}}", main + concept_cards.lesson_link(meta["course"], meta["id"], T, UP) + f"<!--fl-chapter-nav:{meta['id']}-->")
                 .replace("{{scripts}}", '<script src="inquiry.js"></script>' if inq else "")
                 .replace("{{description}}", esc(description_of(meta, lesson_md))).replace("{{url}}", URL + name)
                 .replace("{{home}}", HOME).replace("{{languages}}", languages_nav(name)))
@@ -655,6 +655,7 @@ def build_language(lang):
                 + f'<h2>{T("site.course_lessons")}</h2><ol class="lessons">{items}</ol>'
                 + (f'<h2>{T("practice.title")}</h2><p>{T("practice.course_lead")}</p><ul class="lessons practice-link"><li class="live">'
                    f'<a href="{practice.page_name(code)}">{T("practice.title")}</a> <span class="count">{practice_built[code]}</span></li></ul>' if code in practice_built else "")
+                + concept_cards.module_link(code, T, UP)   # Käsitetakomo, the course's topic menu (teacher 2026-11-03)
                 + (f'<h2>{T("site.course_goals")}</h2><details class="goals"><summary>{T.count("site.course_goals_show", len(mod.get("tavoitteet", [])))}</summary>'
                    f'<p>{T("site.course_goals_lead")}</p><ul>{goals}</ul></details>' if goals else ""))
         desc = T("site.course_description", code=code, title=mod["title"], done=done, n=len(slots))
@@ -747,6 +748,7 @@ def build_language(lang):
         f'<p class="section-lead">{T("site.modules_lead")}</p><ul class="mod-list">{catalogue}</ul></section>'
         + (f'<section class="local-courses" aria-labelledby="h-local"><h2 id="h-local">{T("site.local_courses")}</h2>'
            f'<p class="section-lead">{T("site.local_courses_lead")}</p><ul class="mod-list">{local_rows}</ul></section>' if local_rows else "")
+        + concept_cards.home_section(T, UP)   # Käsitetakomo, the concept cards beside the site (teacher 2026-11-03, scripts/concept_cards.py)
         + (f'<section class="upcoming" aria-labelledby="h-upcoming"><h2 id="h-upcoming">{T("site.upcoming")}</h2>'
            f'<p class="section-lead">{T("site.upcoming_lead")}</p><ul class="up-list">{upcoming}</ul></section>' if upcoming else "")
         # one study guide: the stages with the names the lessons use (lang inquiry.stage_*), where to start, more tips behind a disclosure
@@ -780,6 +782,7 @@ def build_language(lang):
           f"{sum(m['state'] == 'draft' for ms in built.values() for m in ms)} draft" + (f", {len(removed)} removed: {', '.join(removed)}" if removed else "") + ")")
 
 
+if concept_cards.errors(): sys.exit("\n".join(["ERROR: Käsitetakomo links (scripts/concept_cards.py):"] + concept_cards.errors()))
 LANGS = i18n.languages()                          # fi at site/, every other language at site/<lang>/
 OUTS = {lang: SITE if lang == i18n.SOURCE else SITE / lang for lang in LANGS}
 for lang in LANGS: build_language(lang)

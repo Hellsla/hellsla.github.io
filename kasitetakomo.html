@@ -7,7 +7,7 @@
 <meta name="theme-color" content="#efe8da" />
 <meta name="description" content="Käsitetakomo – lukion fysiikan käsitteet ja määritelmät kertauskortteina. Valitse kurssi ja aihe, ja kertaus alkaa." />
 <meta name="robots" content="noindex, nofollow" />
-<title>Käsitetakomo – lukion fysiikka</title>
+<title>Käsitetakomo – Ruukkilabra</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;600;700&family=Karla:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -85,6 +85,18 @@
     color:var(--brick-dark);
     margin:0;
   }
+
+  /* ---------- Paluu Ruukkilabraan ---------- */
+  .ruukki{ display:flex; align-items:center; justify-content:space-between; gap:8px 12px; flex-wrap:wrap; }
+  .ruukki a{
+    display:inline-flex; align-items:center; gap:8px; min-height:44px;
+    padding:4px 12px 4px 6px; border-radius:999px;
+    font-size:.88rem; font-weight:700; color:var(--brick); text-decoration:none;
+    background:var(--panel); box-shadow:0 2px 6px rgba(58,54,47,.12);
+  }
+  .ruukki a:hover{ text-decoration:underline; }
+  .ruukki img{ width:28px; height:28px; flex:0 0 auto; }
+  .brand-sub{ margin:2px 0 0; font-size:.88rem; font-weight:600; color:var(--ink-soft); }
 
   /* ---------- Screens ---------- */
   .screen{ display:none; flex-direction:column; gap:16px; }
@@ -471,11 +483,18 @@
 <body>
 <div class="app">
 
+  <nav class="ruukki" aria-label="Ruukkilabra">
+    <a id="paluu" href="fysiikkalabra/site/index.html"><img src="fysiikkalabra/site/brand/ruukkilabra-symboli.svg" alt="" width="28" height="28"><span>← Takaisin Ruukkilabraan</span></a>
+  </nav>
+
   <header class="brand">
     <svg class="brand-mark" viewBox="467.39 111.32 518.84 323.07" role="img" aria-label="Kiviruukin lukion tunnus">
       <polygon fill="#012169" points="788.76 402.2 924.08 354.81 916.49 333.96 781.17 381.35 931.96 254.82 917.69 237.82 766.91 364.35 851.24 224.87 832.02 213.78 747.69 353.26 781.58 161.07 759.72 157.21 725.84 349.4 687.25 121.32 665.39 125.17 703.98 353.25 628.3 222.18 609.09 233.27 684.76 364.35 546.24 248.11 531.97 265.11 670.5 381.35 553.71 338.84 546.12 359.69 662.91 402.2 477.39 402.2 477.39 424.39 662.96 424.39 662.96 402.21 670.54 381.37 684.79 364.38 704 353.3 725.84 349.45 747.67 353.3 766.88 364.38 781.13 381.37 788.72 402.21 788.72 424.39 976.23 424.39 976.23 402.2 788.76 402.2"/>
     </svg>
-    <h1 class="brand-title">Käsitetakomo</h1>
+    <div>
+      <h1 class="brand-title">Käsitetakomo</h1>
+      <p class="brand-sub">Kertaa fysiikan käsitteitä · Ruukkilabra</p>
+    </div>
   </header>
 
   <!-- 1. Kurssi -->
@@ -895,8 +914,52 @@ document.addEventListener("keydown", (e) => {
   if(e.key === "Escape") nayta("screenAihe");
 });
 
+/* --------------------------- Ruukkilabra: paluu ja suorat linkit --------------------------- */
+/* Paluulinkki vie sille Ruukkilabran sivulle, jolta tultiin (oppitunti tai moduulisivu), muuten etusivulle.
+   Vain saman sivuston fysiikkalabra/site/-sivut kelpaavat. */
+(function(){
+  try{
+    const r = document.referrer ? new URL(document.referrer) : null;
+    if(r && r.origin === location.origin && /\/fysiikkalabra\/site\/(?:[a-z-]+\/)?[\w-]*(?:\.html)?$/.test(r.pathname))
+      $("paluu").href = r.pathname + r.hash;
+  }catch(e){}
+})();
+
+/* ?kurssi=FY4               avaa kurssin aihevalikon (kortteja ei käynnistetä)
+   ?kurssi=FY4&aihe=fy4-…    aloittaa aiheen kertauksen; useampi aihe pilkulla: aihe=a,b
+   Aiheen id on pysyvä tunniste (kasitetakomo-data.js). Tuntematon tai virheellinen parametri
+   palauttaa kurssivalikkoon ja siivoaa osoitteen. */
+function avaaOsoitteesta(){
+  let q;
+  try{ q = new URLSearchParams(location.search); }catch(e){ return; }
+  const kk = (q.get("kurssi") || "").trim().toUpperCase();
+  const aa = (q.get("aihe") || "").split(",").map(x => x.trim().toLowerCase()).filter(Boolean);
+  if(!kk && !aa.length) return;
+  const kurssivalikkoon = () => {
+    try{ history.replaceState(null, "", location.pathname + location.hash); }catch(e){}
+    nayta("screenKurssi");
+  };
+  const k = kk ? KURSSIT.find(x => String(x.id).toUpperCase() === kk)
+               : KURSSIT.find(x => x.aiheet.some(a => a.id === aa[0]));
+  if(!k || k.kesken) return kurssivalikkoon();
+  const ind = aa.map(id => k.aiheet.findIndex(a => a.id === id));
+  if(ind.some(i => i < 0) || new Set(ind).size !== ind.length) return kurssivalikkoon();
+  valitseKurssi(k);
+  if(!ind.length) return;
+  ind.forEach(i => {
+    valitut.add(i);
+    const rivi = $("aiheList").children[i + 1];       // 0 = Kaikki aiheet
+    rivi.classList.add("valittu");
+    rivi.querySelector(".pick").setAttribute("aria-pressed", "true");
+  });
+  paivitaValinta();
+  const aiheet = valitutAiheet();
+  aloita(aiheet, aiheet.length === 1 ? aiheet[0].nimi : aiheet.length + " aihetta");
+}
+
 piirraKurssit();
 paivitaMode();
+avaaOsoitteesta();
 lataaLisatiedostot().then(piirraKurssit);
 </script>
 </body>

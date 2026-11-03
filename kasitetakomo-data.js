@@ -1,9 +1,10 @@
 /* ===============================================================
    Käsitetakomo – sisältötiedosto
    ---------------------------------------------------------------
-   Muoto:
+   Muoto (aiheen id on pysyvä tunniste: Ruukkilabran linkit
+   ?kurssi=FY3&aihe=fy3-lampo osoittavat siihen, joten älä muuta sitä):
    { id:"FY3", nimi:"Energia ja lämpö", aiheet:[
-       { nimi:"Lämpö", kortit:[
+       { id:"fy3-lampo", nimi:"Lämpö", kortit:[
            ["Käsite", "Määritelmä"],
            ...
        ]}
@@ -16,7 +17,7 @@
 ----------------------------------------------------------------*/
 window.KORTIT = [
 { id:"FY1", nimi:"Fysiikka luonnontieteenä", aiheet:[
-  { nimi:"Fysiikka ja tutkimusmenetelmä", kortit:[
+  { id:"fy1-tutkimusmenetelma", nimi:"Fysiikka ja tutkimusmenetelmä", kortit:[
     ["Fysiikka","Kokeellinen luonnontiede, joka tutkii luonnon perusilmiöitä, rakenteita ja niitä kuvaavia lainalaisuuksia."],
     ["Empiirinen tiede","Tieto perustuu havaintoihin, mittauksiin ja kokeisiin."],
     ["Luonnontieteellinen menetelmä","Havaintoja, oletuksia, kokeita ja malleja yhdistävä tapa rakentaa luotettavaa tietoa."],
@@ -25,18 +26,18 @@ window.KORTIT = [
     ["Malli","Yksinkertaistettu kuvaus todellisuudesta, jolla selitetään ilmiöitä tai tehdään ennusteita."],
     ["Pätevyysalue","Olosuhteet ja rajat, joissa mallia voidaan käyttää luotettavasti."]
   ]},
-  { nimi:"Mittaaminen ja virheet", kortit:[
+  { id:"fy1-mittaaminen", nimi:"Mittaaminen ja virheet", kortit:[
     ["Suure","Mitattava ominaisuus, kuten pituus, massa tai aika."],
     ["Yksikkö","Sovittu vertailuarvo, jonka avulla mitattu ominaisuus ilmaistaan."],
     ["Mittaustulos","Lukuarvon ja mittayksikön muodostama suureen arvo."],
     ["Mittausvirhe","Mitatun arvon poikkeama suureen todellisesta arvosta."],
-    ["Satunnainen virhe","Vaihteleva poikkeama, jonka vaikutusta voidaan pienentää toistamalla mittaus ja laskemalla keskiarvo."],
+    ["Satunnaisvirhe","Vaihteleva poikkeama, jonka vaikutusta voidaan pienentää toistamalla mittaus ja laskemalla keskiarvo."],
     ["Systemaattinen virhe","Samaan suuntaan vaikuttava poikkeama, jonka syynä voi olla viallinen laite tai menetelmä."],
     ["Karkea virhe","Selvä poikkeama, joka syntyy esimerkiksi lukuvirheestä, väärästä kirjauksesta tai laitteen virheellisestä käytöstä."],
     ["Merkitsevät numerot","Luvun numerot, jotka kuvaavat mittaustuloksen käytettävissä olevaa tarkkuutta."],
     ["Mittalaitteen tarkkuus","Kertoo, kuinka pieniä muutoksia mittavälineellä voidaan luotettavasti havaita."]
   ]},
-  { nimi:"SI-järjestelmä ja suuruusluokat", kortit:[
+  { id:"fy1-si-jarjestelma", nimi:"SI-järjestelmä ja suuruusluokat", kortit:[
     ["SI-järjestelmä","Kansainvälisesti sovittu mittayksikkökokonaisuus, jonka seitsemästä perusyksiköstä muut yksiköt muodostetaan."],
     ["Perussuure","Yksi seitsemästä perustaksi valitusta mitattavasta ominaisuudesta, kuten pituus, massa tai aika."],
     ["Perusyksikkö","Perustaksi valitulle suureelle sovittu yksikkö, kuten metri, kilogramma tai sekunti."],
@@ -46,20 +47,20 @@ window.KORTIT = [
     ["Kymmenpotenssi","Muoto 10ⁿ helpottaa erittäin suurten ja pienten lukujen kirjoittamista ja vertailua."],
     ["Suuruusluokka","Kohteen kokoa kuvataan sopivan kymmenen potenssin avulla."]
   ]},
-  { nimi:"Maailmankaikkeuden perusrakenteet", kortit:[
-    ["Perushiukkanen","Aineen pienimpiä tunnettuja rakenneosia, joihin kuuluvat kvarkit ja leptonit."],
+  { id:"fy1-perusrakenteet", nimi:"Maailmankaikkeuden perusrakenteet", kortit:[
+    ["Alkeishiukkanen","Aineen pienimpiä tunnettuja rakenneosia, joihin kuuluvat kvarkit ja leptonit."],
     ["Kvarkki","Protonien ja neutronien rakenneosa, joita näkyvässä aineessa ovat erityisesti ylös- ja alas-kvarkit."],
     ["Leptoni","Perushiukkasten ryhmä, johon esimerkiksi elektroni kuuluu."],
     ["Protoni","Positiivisesti varautunut atomin ytimen rakenneosa, joka koostuu kvarkeista."],
     ["Neutroni","Sähköisesti neutraali atomin ytimen rakenneosa, joka koostuu kvarkeista."],
-    ["Atomin ydin","Tiivis keskiosa, jossa protonit ja neutronit sijaitsevat."],
+    ["Atomiydin","Tiivis keskiosa, jossa protonit ja neutronit sijaitsevat."],
     ["Atomi","Ytimen ja sitä ympäröivien elektronien muodostama aineen rakenneosa."],
     ["Molekyyli","Kahden tai useamman atomin muodostama sitoutunut kokonaisuus."],
     ["Aurinkokunta","Tähti ja sitä kiertävät planeetat, pienkappaleet sekä muu aine."],
     ["Galaksi","Valtava tähtien, kaasun, pölyn ja muun aineen gravitaation sitoma järjestelmä."],
     ["Galaksijoukko","Useiden galaksien gravitaation sitoma suuri rakenne."]
   ]},
-  { nimi:"Avaruus ja maailmankaikkeuden kehitys", kortit:[
+  { id:"fy1-avaruus", nimi:"Avaruus ja maailmankaikkeuden kehitys", kortit:[
     ["Alkuräjähdys","Malli, jonka mukaan aika ja avaruus kehittyivät hyvin kuumasta ja tiheästä alkutilasta."],
     ["Maailmankaikkeuden laajeneminen","Galaksien keskimääräiset etäisyydet kasvavat ajan kuluessa."],
     ["Punasiirtymä","Kaukaisen kohteen spektriviivat siirtyvät pidemmille aallonpituuksille, mikä kertoo sen etääntymisestä."],
@@ -69,7 +70,7 @@ window.KORTIT = [
     ["Neutronitähti","Raskaan tähden luhistumisessa syntyvä erittäin tiheä jäännös, joka koostuu pääosin neutroneista."],
     ["Musta aukko","Erittäin tiheä massakeskittymä, jonka gravitaatio on niin voimakas, ettei valokaan pääse pois."]
   ]},
-  { nimi:"Mallintaminen ja kuvaajat", kortit:[
+  { id:"fy1-mallintaminen", nimi:"Mallintaminen ja kuvaajat", kortit:[
     ["Fysikaalinen malli","Mittauksiin perustuva yksinkertaistus, joka kuvaa luonnon ilmiötä tai rakennetta."],
     ["Graafinen malli","Suureiden välinen riippuvuus esitetään koordinaatiston kuvaajana."],
     ["Matemaattinen malli","Suureiden välinen riippuvuus esitetään yhtälön avulla."],
@@ -81,7 +82,7 @@ window.KORTIT = [
     ["Interpolointi","Mallia käytetään arvon arvioimiseen mitattujen pisteiden väliltä."],
     ["Ekstrapolointi","Mallia jatketaan mittausalueen ulkopuolelle, jolloin ennuste on yleensä epävarmempi."]
   ]},
-  { nimi:"Tiheys ja liikeilmiöt", kortit:[
+  { id:"fy1-tiheys-ja-liike", nimi:"Tiheys ja liikeilmiöt", kortit:[
     ["Tiheys","Kertoo, kuinka suuri massa aineella on tilavuusyksikköä kohti; ρ = m/V."],
     ["Suoraan verrannollisuus","Toisen suureen kaksinkertaistuessa myös toinen kaksinkertaistuu, ja kuvaaja kulkee origon kautta."],
     ["Paikka","Kertoo kappaleen sijainnin valitussa koordinaatistossa tiettynä hetkenä."],
@@ -89,10 +90,10 @@ window.KORTIT = [
     ["Nopeus","Kertoo paikan muutoksen aikayksikössä ja liikkeen suunnan."],
     ["Keskinopeus","Koko siirtymä jaetaan siihen kuluneella ajalla."],
     ["Kiihtyvyys","Kertoo nopeuden muutoksen aikayksikössä; a = Δv/Δt."],
-    ["Vapaa putoaminen","Liike, jossa ilmanvastus sivuutetaan ja kappaleeseen vaikuttaa vain painovoima."],
+    ["Vapaa pudotus","Liike, jossa ilmanvastus sivuutetaan ja kappaleeseen vaikuttaa vain painovoima."],
     ["Putoamiskiihtyvyys","Maan lähellä nopeus muuttuu noin 9,81 m/s joka sekunti; g ≈ 9,81 m/s²."]
   ]},
-  { nimi:"Kokeellinen tutkimus", kortit:[
+  { id:"fy1-kokeellinen-tutkimus", nimi:"Kokeellinen tutkimus", kortit:[
     ["Tutkimuskysymys","Täsmällinen kysymys, johon tutkimuksella pyritään vastaamaan."],
     ["Koesuunnitelma","Etukäteen laadittu kuvaus mittauksista, välineistä ja tutkimuksen toteutuksesta."],
     ["Mittaussarja","Samasta ilmiöstä järjestelmällisesti kerätty joukko mittaustuloksia."],
@@ -104,7 +105,7 @@ window.KORTIT = [
     ["Luotettavuus","Arvio siitä, kuinka hyvin menetelmä ja tulokset tukevat tehtyä päätelmää."],
     ["Tutkimusraportti","Kirjallinen kuvaus tutkimuskysymyksestä, menetelmästä, tuloksista, johtopäätöksistä ja arvioinnista."]
   ]},
-  { nimi:"Tiedonhankinta", kortit:[
+  { id:"fy1-tiedonhankinta", nimi:"Tiedonhankinta", kortit:[
     ["Tiedonhankinta","Luotettavan tiedon etsimistä esimerkiksi tutkimuksista, oppikirjoista, tietokannoista ja asiantuntijalähteistä."],
     ["Tiedontuottaja","Tahon tausta ja tarkoitus vaikuttavat siihen, miten sen julkaisemaa tietoa kannattaa arvioida."],
     ["Lähdekritiikki","Lähteen luotettavuutta arvioidaan tekijän, perustelujen, ajantasaisuuden ja muiden lähteiden avulla."],
@@ -114,7 +115,7 @@ window.KORTIT = [
 ]},
 
 { id:"FY2", nimi:"Fysiikka, ympäristö ja yhteiskunta", aiheet:[
-  { nimi:"Energia ympäristössä ja yhteiskunnassa", kortit:[
+  { id:"fy2-energia-ymparistossa", nimi:"Energia ympäristössä ja yhteiskunnassa", kortit:[
     ["Energialähde","Aine tai ilmiö, jota hyödynnetään käyttökelpoisen energian tuottamiseen."],
     ["Uusiutuva energialähde","Luonnonvara tai ilmiö, jota syntyy jatkuvasti lisää ihmisen käytön kannalta riittävän nopeasti."],
     ["Uusiutumaton energialähde","Luonnonvara, jota on rajallinen määrä eikä muodostu nopeasti lisää."],
@@ -124,7 +125,7 @@ window.KORTIT = [
     ["Absorptio","Säteily imeytyy aineeseen ja sen kuljettama energia siirtyy aineeseen."],
     ["Heijastuminen","Säteily muuttaa pinnalla suuntaansa eikä sen energia absorboidu pintaan."]
   ]},
-  { nimi:"Ilmastonmuutos", kortit:[
+  { id:"fy2-ilmastonmuutos", nimi:"Ilmastonmuutos", kortit:[
     ["Kasvihuoneilmiö","Ilmakehän kaasut vähentävät Maan lähettämän lämpösäteilyn pääsyä suoraan avaruuteen."],
     ["Kasvihuonekaasu","Ilmakehän kaasu, joka absorboi Maan lähettämää infrapunasäteilyä."],
     ["Hiilidioksidi","Kasvihuonekaasu, jonka pitoisuutta fossiilisten polttoaineiden käyttö lisää."],
@@ -134,7 +135,7 @@ window.KORTIT = [
     ["Takaisinkytkentä","Muutos käynnistää vaikutuksen, joka voi vahvistaa tai heikentää alkuperäistä muutosta."],
     ["Päästövähennys","Kasvihuonekaasujen vapautumista ilmakehään pienennetään esimerkiksi muuttamalla energiantuotantoa ja kulutusta."]
   ]},
-  { nimi:"Energia ja energialajit", kortit:[
+  { id:"fy2-energialajit", nimi:"Energia ja energialajit", kortit:[
     ["Energia","Fysiikan keskeinen suure, joka säilyy kaikissa ilmiöissä mutta voi siirtyä ja muuntua."],
     ["Joule","SI-järjestelmän energian yksikkö."],
     ["Energialaji","Tapa kuvata, missä muodossa energia esiintyy tai varastoituu."],
@@ -146,7 +147,7 @@ window.KORTIT = [
     ["Sähköenergia","Sähköisiin vuorovaikutuksiin liittyvä energiamuoto, jota on helppo siirtää sähköverkossa."],
     ["Sisäenergia","Aineen rakenneosasten liikkeeseen ja vuorovaikutuksiin liittyvä energiamuoto."]
   ]},
-  { nimi:"Energian säilyminen", kortit:[
+  { id:"fy2-energian-sailyminen", nimi:"Energian säilyminen", kortit:[
     ["Energian säilymislaki","Energiaa ei synny eikä häviä, vaan sitä voi siirtyä tai muuntua muodosta toiseen."],
     ["Energian muuntuminen","Yhden energialajin määrä pienenee samalla kun jonkin toisen määrä kasvaa."],
     ["Energian siirtyminen","Energia kulkee kohteesta tai systeemistä toiseen muuttamatta säilymisen periaatetta."],
@@ -155,7 +156,7 @@ window.KORTIT = [
     ["Hukkaenergia","Energiaa, joka muuntuu laitteen varsinaisen käyttötarkoituksen kannalta hyödyttömään muotoon."],
     ["Hyötyenergia","Se osa laitteen ottamasta energiasta, joka saadaan haluttuun tarkoitukseen."]
   ]},
-  { nimi:"Teho ja energiankulutus", kortit:[
+  { id:"fy2-teho", nimi:"Teho ja energiankulutus", kortit:[
     ["Teho","Kertoo, kuinka nopeasti energiaa siirtyy tai muuntuu; P = ΔE/Δt."],
     ["Watti","SI-järjestelmän tehon yksikkö, joka vastaa yhtä joulea sekunnissa."],
     ["Ottoteho","Kertoo, kuinka nopeasti laite ottaa energiaa energialähteestään."],
@@ -165,7 +166,7 @@ window.KORTIT = [
     ["Arvokilpi","Laitteen merkintä, josta voidaan lukea esimerkiksi sen sähköverkosta ottama teho."],
     ["Sähkön hinta","Käytetyn sähköenergian kustannus saadaan kertomalla kilowattitunnit energian yksikköhinnalla."]
   ]},
-  { nimi:"Hyötysuhde ja lämpöarvo", kortit:[
+  { id:"fy2-hyotysuhde-ja-lampoarvo", nimi:"Hyötysuhde ja lämpöarvo", kortit:[
     ["Hyötysuhde","Kertoo, kuinka suuri osa otetusta energiasta saadaan hyödyksi; η = Eₐ/Eₒ."],
     ["Tehohyötysuhde","Voidaan laskea anto- ja ottotehon suhteena; η = Pₐ/Pₒ."],
     ["Ottoenergia","Kokonaisenergiamäärä, jonka laite ottaa toimintaansa varten."],
@@ -175,7 +176,7 @@ window.KORTIT = [
     ["Palamisenergia","Polttoaineesta vapautuva määrä voidaan laskea massan ja lämpöarvon avulla; E = Hm."],
     ["Energiatehokkuus","Haluttu hyöty saavutetaan mahdollisimman pienellä energian kulutuksella ja vähäisillä häviöillä."]
   ]},
-  { nimi:"Energiantuotanto", kortit:[
+  { id:"fy2-energiantuotanto", nimi:"Energiantuotanto", kortit:[
     ["Energiantuotanto","Luonnossa olevan energian muuntamista ihmisille käyttökelpoiseen muotoon, kuten sähköksi tai lämmöksi."],
     ["Voimalaitos","Tuotantolaitos, jossa energialähteen energiaa muunnetaan sähköksi, lämmöksi tai molemmiksi."],
     ["Generaattori","Laite, joka muuntaa pyörimisliikkeen energiaa sähköenergiaksi."],
@@ -184,9 +185,9 @@ window.KORTIT = [
     ["Lauhdutin","Jäähdyttää turbiinista tulevan höyryn takaisin vedeksi ja siirtää samalla lämpöä ympäristöön."],
     ["Yhteistuotanto","Samassa laitoksessa tuotetaan sekä sähköä että hyödynnettävää lämpöä, jolloin hyötysuhde paranee."],
     ["Kaukolämpö","Keskitetysti tuotettua lämpöenergiaa siirretään kuuman veden avulla rakennusten lämmitykseen."],
-    ["Lauhdutusvoima","Sähköntuotantoa, jossa turbiinin jälkeen jäävää lämpöä ei yleensä hyödynnetä kaukolämpönä."]
+    ["Lauhdevoima","Sähköntuotantoa, jossa turbiinin jälkeen jäävää lämpöä ei yleensä hyödynnetä kaukolämpönä."]
   ]},
-  { nimi:"Energiantuotantotavat", kortit:[
+  { id:"fy2-tuotantotavat", nimi:"Energiantuotantotavat", kortit:[
     ["Aurinkovoima","Auringon säteilyenergiaa muunnetaan esimerkiksi aurinkopaneelissa suoraan sähköenergiaksi."],
     ["Tuulivoima","Ilman liike-energia pyörittää turbiinia ja generaattoria, joka tuottaa sähköä."],
     ["Vesivoima","Veden potentiaali- ja liike-energiaa muunnetaan turbiinin ja generaattorin avulla sähköksi."],
@@ -196,7 +197,7 @@ window.KORTIT = [
     ["Maalämpö","Maaperään tai kallioon varastoitunutta lämpöenergiaa siirretään rakennusten lämmitykseen."],
     ["Geoterminen energia","Maan sisäisestä lämmöstä peräisin olevaa energiaa hyödynnetään lämmön- tai sähköntuotannossa."]
   ]},
-  { nimi:"Ympäristövaikutukset", kortit:[
+  { id:"fy2-ymparistovaikutukset", nimi:"Ympäristövaikutukset", kortit:[
     ["Elinkaari","Tuotantomuodon vaikutuksia tarkastellaan rakentamisesta ja käytöstä aina laitoksen poistamiseen asti."],
     ["Hiilidioksidipäästö","Energiantuotannon ilmastovaikutusta voidaan vertailla vapautuvan hiilidioksidin määrän avulla."],
     ["Maankäyttö","Eri tuotantotavat tarvitsevat erilaisia pinta-aloja voimaloille, polttoaineille ja siirtoyhteyksille."],
@@ -205,7 +206,7 @@ window.KORTIT = [
     ["Terveysvaikutus","Tuotantotapojen päästöt, onnettomuusriskit ja muut tekijät voivat vaikuttaa ihmisten terveyteen."],
     ["Suuruusluokka","Tuotantotapoja voidaan vertailla esimerkiksi tehon, päästöjen, kustannusten tai pinta-alan mittakaavan avulla."]
   ]},
-  { nimi:"Joustava energiajärjestelmä", kortit:[
+  { id:"fy2-energiajarjestelma", nimi:"Joustava energiajärjestelmä", kortit:[
     ["Energiajärjestelmä","Kokonaisuus, johon kuuluvat energian tuotanto, siirto, varastointi ja kulutus."],
     ["Hajautettu tuotanto","Energiaa tuotetaan useissa pienissä kohteissa lähellä kuluttajia suurten keskitettyjen laitosten lisäksi."],
     ["Älykäs sähköverkko","Digitaalinen verkko ohjaa tuotantoa ja kulutusta sekä välittää tietoa molempiin suuntiin."],
@@ -216,7 +217,7 @@ window.KORTIT = [
     ["Vauhtipyörä","Pyörivään kappaleeseen varastoidaan liike-energiaa, jota voidaan myöhemmin muuntaa takaisin sähköksi."],
     ["Mikroverkko","Paikallinen energiaverkko yhdistää lähellä sijaitsevia tuottajia, varastoja ja kuluttajia."]
   ]},
-  { nimi:"Kestävä energiatalous", kortit:[
+  { id:"fy2-kestava-energiatalous", nimi:"Kestävä energiatalous", kortit:[
     ["Kestävä energiatalous","Energiantuotannossa ja kulutuksessa huomioidaan ekologiset, taloudelliset ja sosiaaliset vaikutukset."],
     ["Ekologinen kestävyys","Luonnonvaroja käytetään niin, että ympäristön uusiutumis- ja kantokyky eivät vaarannu."],
     ["Taloudellinen kestävyys","Energiaratkaisujen tulee olla kustannuksiltaan ja resurssien käytöltään pitkäjänteisesti toteuttamiskelpoisia."],
@@ -229,7 +230,7 @@ window.KORTIT = [
 ]},
 
 { id:"FY3", nimi:"Energia ja lämpö", aiheet:[
-  { nimi:"Lämpötila ja termodynaaminen systeemi", kortit:[
+  { id:"fy3-lampotila-ja-systeemi", nimi:"Lämpötila ja termodynaaminen systeemi", kortit:[
     ["Lämpötila","Kuvaa aineen rakenneosasten lämpöliikkeen voimakkuutta."],
     ["Kelvinasteikko","Absoluuttinen lämpötila-asteikko, jonka nollakohta on alin mahdollinen lämpötila, 0 K."],
     ["Absoluuttinen nollapiste","Alin mahdollinen lämpötila on 0 K eli −273,15 °C."],
@@ -241,19 +242,19 @@ window.KORTIT = [
     ["Eristetty systeemi","Ympäristön kanssa ei vaihdu ainetta eikä energiaa."],
     ["Lämpötasapaino","Kosketuksissa olevien systeemien lämpötilat ovat tasoittuneet samoiksi."]
   ]},
-  { nimi:"Lämpölaajeneminen ja lämmön siirtyminen", kortit:[
+  { id:"fy3-lampolaajeneminen-ja-lammon-siirtyminen", nimi:"Lämpölaajeneminen ja lämmön siirtyminen", kortit:[
     ["Lämpölaajeneminen","Useimpien aineiden mitat kasvavat lämmetessä ja pienenevät jäähtyessä."],
-    ["Pituuden lämpölaajeneminen","Kappaleen pituuden muutos riippuu alkuperäisestä pituudesta, lämpötilan muutoksesta ja materiaalista; Δl = αl₀ΔT."],
+    ["Pituuden lämpölaajeneminen","Kappaleen pituuden muutos riippuu alkuperäisestä pituudesta, lämpötilan muutoksesta ja materiaalista; ΔL = αL₀ΔT."],
     ["Tilavuuden lämpölaajeneminen","Kappaleen tilavuuden muutos riippuu alkuperäisestä tilavuudesta, lämpötilan muutoksesta ja materiaalista; ΔV = γV₀ΔT."],
     ["Lämpö","Energiaa, joka siirtyy lämpötilaeron vuoksi kuumemmasta systeemistä kylmempään."],
     ["Johtuminen","Energia siirtyy aineen rakenneosasten vuorovaikutusten kautta ilman aineen kokonaisliikettä."],
-    ["Kulkeutuminen","Energia siirtyy liikkuvan nesteen tai kaasun mukana; konvektio."],
+    ["Konvektio","Energia siirtyy liikkuvan nesteen tai kaasun mukana; kulkeutuminen."],
     ["Lämpösäteily","Energia siirtyy sähkömagneettisena säteilynä eikä tarvitse väliainetta."],
     ["Lämmönjohde","Aine, jossa energia siirtyy johtumalla tehokkaasti."],
     ["Lämmöneriste","Aine, jossa energia siirtyy johtumalla hitaasti."],
     ["Energiatasapaino","Systeemin energiamäärä pysyy vakiona, kun siihen tulee ja siitä poistuu yhtä paljon energiaa."]
   ]},
-  { nimi:"Voima ja paine", kortit:[
+  { id:"fy3-voima-ja-paine", nimi:"Voima ja paine", kortit:[
     ["Voima","Kuvaa kahden kappaleen välisen vuorovaikutuksen voimakkuutta."],
     ["Paino","Maan ja kappaleen gravitaatiovuorovaikutuksen voimakkuus; G = mg."],
     ["Paine","Kertoo pintaa vastaan kohtisuoran voiman pinta-alayksikköä kohti; p = F/A."],
@@ -264,7 +265,7 @@ window.KORTIT = [
     ["Kokonaispaine","Nesteessä vallitseva paine on pinnan paineen ja hydrostaattisen paineen summa; p = p₀ + ρgh."],
     ["Paine-ero","Kahden alueen erisuuruiset paineet voivat aiheuttaa kappaleeseen voiman."]
   ]},
-  { nimi:"Kaasun tila ja tilanmuutokset", kortit:[
+  { id:"fy3-kaasun-tila", nimi:"Kaasun tila ja tilanmuutokset", kortit:[
     ["Kaasun paine","Rakenneosasten törmäykset säiliön seinämiin aiheuttavat makroskooppisesti havaittavan paineen."],
     ["Ainemäärä","Kuvaa aineen rakenneosasten lukumäärää, ja sen yksikkö on mooli."],
     ["Mooli","Ainemäärä, jossa on noin 6,02·10²³ rakenneosasta."],
@@ -274,9 +275,9 @@ window.KORTIT = [
     ["Isobaarinen muutos","Paine pysyy vakiona, joten tilavuus on suoraan verrannollinen absoluuttiseen lämpötilaan."],
     ["Isoterminen muutos","Lämpötila pysyy vakiona, joten paine ja tilavuus ovat kääntäen verrannolliset; pV = vakio."],
     ["Boylen laki","Vakiolämpötilassa kaasun paine kasvaa tilavuuden pienentyessä; p₁V₁ = p₂V₂."],
-    ["Yleinen kaasulaki","Suljetun kaasumäärän tiloja voidaan verrata yhtälöllä p₁V₁/T₁ = p₂V₂/T₂."]
+    ["Yhdistetty kaasulaki","Suljetun kaasumäärän tiloja voidaan verrata yhtälöllä p₁V₁/T₁ = p₂V₂/T₂."]
   ]},
-  { nimi:"Lämpeneminen ja jäähtyminen", kortit:[
+  { id:"fy3-lampeneminen-ja-jaahtyminen", nimi:"Lämpeneminen ja jäähtyminen", kortit:[
     ["Lämpökapasiteetti","Kertoo energiamäärän, joka tarvitaan kappaleen lämpötilan nostamiseen yhdellä asteella."],
     ["Ominaislämpökapasiteetti","Kertoo energiamäärän, joka tarvitaan yhden kilogramman lämpötilan nostamiseen yhdellä asteella."],
     ["Lämpömäärä","Lämpötilan muutoksessa siirtyvä energia voidaan laskea massan ja ominaislämpökapasiteetin avulla; Q = cmΔT."],
@@ -286,7 +287,7 @@ window.KORTIT = [
     ["Jäähtyminen","Systeemin lämpötila laskee, kun siitä siirtyy energiaa ympäristöön."],
     ["Lämpeneminen","Systeemin lämpötila nousee, kun sen sisäenergia kasvaa ilman olomuodon muutosta."]
   ]},
-  { nimi:"Olomuodon muutokset", kortit:[
+  { id:"fy3-olomuodon-muutokset", nimi:"Olomuodon muutokset", kortit:[
     ["Kiinteä aine","Rakenneosat ovat sidottuja paikoilleen ja värähtelevät tasapainoasemiensa ympärillä."],
     ["Neste","Rakenneosat ovat lähekkäin mutta voivat liikkua toistensa suhteen."],
     ["Kaasu","Rakenneosat liikkuvat lähes vapaasti ja täyttävät käytettävissä olevan tilan."],
@@ -299,7 +300,7 @@ window.KORTIT = [
     ["Ominaissulamislämpö","Kertoo yhden kilogramman sulattamiseen tarvittavan energian sulamispisteessä; Q = sm."],
     ["Ominaishöyrystymislämpö","Kertoo yhden kilogramman höyrystämiseen tarvittavan energian kiehumispisteessä; Q = rm."]
   ]},
-  { nimi:"Faasikaavio ja kosteus", kortit:[
+  { id:"fy3-faasikaavio-ja-kosteus", nimi:"Faasikaavio ja kosteus", kortit:[
     ["Faasikaavio","Esittää aineen olomuodon lämpötilan ja paineen funktiona."],
     ["Kolmoispiste","Lämpötila ja paine, joissa kiinteä, neste ja kaasu voivat esiintyä tasapainossa yhtä aikaa."],
     ["Kriittinen piste","Tämän lämpötilan yläpuolella kaasua ei voi nesteyttää pelkästään painetta kasvattamalla."],
@@ -310,18 +311,18 @@ window.KORTIT = [
     ["Kastepiste","Lämpötila, johon ilma on jäähdytettävä, jotta vesihöyry alkaa tiivistyä."],
     ["Kiehumispiste","Lämpötila riippuu ympäristön paineesta ja nousee paineen kasvaessa."]
   ]},
-  { nimi:"Mekaaninen työ ja sisäenergia", kortit:[
+  { id:"fy3-tyo-ja-sisaenergia", nimi:"Mekaaninen työ ja sisäenergia", kortit:[
     ["Mekaaninen työ","Voiman avulla siirtyvä energia saadaan voiman ja voiman suuntaisen matkan tulona; W = Fs."],
     ["Sisäenergia","Rakenneosasten liike- ja vuorovaikutusenergioiden muodostama systeemin energiamäärä."],
-    ["Termodynamiikan I pääsääntö","Sisäenergia muuttuu lämmön siirtymisen ja systeemiin tehdyn työn vaikutuksesta; ΔU = Q + W."],
+    ["Termodynamiikan ensimmäinen pääsääntö","Sisäenergia muuttuu lämmön siirtymisen ja systeemiin tehdyn työn vaikutuksesta; ΔU = Q + W."],
     ["Joulen koe","Mekaanisen työn muuttuminen sisäenergiaksi havaitaan veden lämpötilan nousuna."],
-    ["Kaasun työ","Laajeneva kaasu tekee työtä ympäristöön, kun sen tilavuus kasvaa."],
+    ["Kaasun tekemä työ","Laajeneva kaasu tekee työtä ympäristöön, kun sen tilavuus kasvaa."],
     ["Tilavuustyö","Vakiopaineessa kaasun tekemän työn suuruus riippuu paineesta ja tilavuuden muutoksesta; W = pΔV."],
     ["Adiabaattinen muutos","Systeemin ja ympäristön välillä ei siirry lämpöä, joten työ muuttaa sisäenergiaa."],
     ["Isoterminen prosessi","Lämpötila ja ideaalikaasun sisäenergia pysyvät vakioina prosessin aikana."],
     ["Energian säilyminen","Energia ei synny eikä häviä, vaan siirtyy ja muuntuu eri muotoihin."]
   ]},
-  { nimi:"Lämpövoimakoneet", kortit:[
+  { id:"fy3-lampovoimakoneet", nimi:"Lämpövoimakoneet", kortit:[
     ["Lämpövoimakone","Muuntaa osan kuumasta systeemistä saadusta energiasta mekaaniseksi työksi."],
     ["Kuumalähde","Korkeamman lämpötilan systeemi, josta kone vastaanottaa energiaa lämpönä."],
     ["Kylmälähde","Matalamman lämpötilan systeemi, johon kone luovuttaa osan vastaanottamastaan energiasta."],
@@ -332,7 +333,7 @@ window.KORTIT = [
     ["Lämpöpumppu","Siirtää ulkopuolisen työn avulla energiaa viileämmästä ympäristöstä lämmitettävään tilaan."],
     ["Kompressori","Puristaa jäähdytysainetta, jolloin sen paine ja yleensä myös lämpötila kasvavat."]
   ]},
-  { nimi:"Ilmasto ja lämpö", kortit:[
+  { id:"fy3-ilmasto-ja-lampo", nimi:"Ilmasto ja lämpö", kortit:[
     ["Säteilytasapaino","Maapallon lämpötila pysyy vakaana, kun vastaanotettu ja avaruuteen säteilevä teho ovat yhtä suuret."],
     ["Kasvihuoneilmiö","Ilmakehä absorboi osan Maan lämpösäteilystä ja nostaa maanpinnan keskilämpötilaa."],
     ["Kasvihuonekaasu","Ilmakehän kaasu, joka absorboi ja lähettää infrapunasäteilyä."],
@@ -347,17 +348,17 @@ window.KORTIT = [
 ]},
 
 { id:"FY4", nimi:"Voima ja liike", aiheet:[
-  { nimi:"Liikkeen suureet", kortit:[
+  { id:"fy4-liikkeen-suureet", nimi:"Liikkeen suureet", kortit:[
     ["Paikka","Kertoo kappaleen sijainnin valitussa koordinaatistossa tiettynä ajanhetkenä."],
     ["Matka","Kertoo kappaleen kulkeman reitin kokonaispituuden."],
     ["Siirtymä","Kertoo kappaleen paikan muutoksen ja suunnan; Δx = x₂ − x₁."],
     ["Nopeus","Kertoo paikan muuttumisnopeuden ja liikkeen suunnan."],
     ["Vauhti","Kertoo liikkeen nopeuden suuruuden ilman tietoa suunnasta."],
-    ["Keskinopeus","Koko siirtymä jaetaan siihen kuluneella ajalla; vₖ = Δx/Δt."],
+    ["Keskinopeus","Koko siirtymä jaetaan siihen kuluneella ajalla; vₖₐ = Δx/Δt."],
     ["Hetkellinen nopeus","Kertoo kappaleen nopeuden tietyllä ajanhetkellä."],
     ["Tasainen liike","Nopeus pysyy vakiona, joten paikka muuttuu yhtä paljon yhtä pitkissä aikaväleissä."]
   ]},
-  { nimi:"Liikkeen kuvaajat", kortit:[
+  { id:"fy4-liikkeen-kuvaajat", nimi:"Liikkeen kuvaajat", kortit:[
     ["Paikan kuvaaja","Esittää kappaleen paikan ajan funktiona."],
     ["Kuvaajan tangentti","Suora, joka koskettaa käyrää tarkasteltavassa pisteessä ja kertoo hetkellisen muutosnopeuden."],
     ["Tangentin kulmakerroin","Paikan kuvaajassa se antaa kappaleen hetkellisen nopeuden."],
@@ -367,7 +368,7 @@ window.KORTIT = [
     ["Nopeuden muutos","Kiihtyvyyden aika-kuvaajan etumerkillinen pinta-ala antaa nopeuden muutoksen."],
     ["Graafinen derivointi","Kuvaajan kulmakertoimien avulla muodostetaan muuttumisnopeutta kuvaava uusi kuvaaja."]
   ]},
-  { nimi:"Kiihtyvä liike", kortit:[
+  { id:"fy4-kiihtyva-liike", nimi:"Kiihtyvä liike", kortit:[
     ["Kiihtyvyys","Kertoo nopeuden muuttumisnopeuden; a = Δv/Δt."],
     ["Keskikiihtyvyys","Nopeuden kokonaismuutos jaetaan siihen kuluneella ajalla."],
     ["Hetkellinen kiihtyvyys","Kertoo nopeuden muuttumisnopeuden tietyllä ajanhetkellä."],
@@ -375,19 +376,19 @@ window.KORTIT = [
     ["Tasaisesti kiihtyvän liikkeen nopeus","Nopeus kasvaa tasaisesti ajan mukana; v = v₀ + at."],
     ["Tasaisesti kiihtyvän liikkeen paikka","Paikka saadaan alkupaikan, alkunopeuden ja kiihtyvyyden avulla; x = x₀ + v₀t + ½at²."],
     ["Putoamiskiihtyvyys","Maan lähellä vapaasti putoavan kappaleen kiihtyvyyden suuruus on noin 9,81 m/s²."],
-    ["Vapaa putoaminen","Liike, jossa kappaleeseen vaikuttaa vain gravitaatiovoima ja ilmanvastus jätetään huomiotta."]
+    ["Vapaa pudotus","Liike, jossa kappaleeseen vaikuttaa vain paino ja ilmanvastus jätetään huomiotta."]
   ]},
-  { nimi:"Vuorovaikutus ja Newtonin lait", kortit:[
+  { id:"fy4-newtonin-lait", nimi:"Vuorovaikutus ja Newtonin lait", kortit:[
     ["Vuorovaikutus","Kahden kappaleen välinen tapahtuma, jossa kappaleet voivat muuttaa toistensa liikettä tai muotoa."],
     ["Voima","Kuvaa vuorovaikutuksen voimakkuutta, ja sen yksikkö on newton."],
     ["Newtonin I laki","Kappale säilyttää liiketilansa, jos siihen vaikuttava kokonaisvoima on nolla; jatkavuuden laki."],
-    ["Hitaus","Kappaleen ominaisuus vastustaa liiketilansa muuttumista."],
+    ["Inertia","Kappaleen hitaus: ominaisuus vastustaa liiketilansa muuttumista."],
     ["Newtonin II laki","Kokonaisvoima aiheuttaa kappaleelle kiihtyvyyden; dynamiikan peruslaki, ΣF = ma."],
     ["Kokonaisvoima","Kappaleeseen vaikuttavien voimien vektorisumma."],
     ["Newtonin III laki","Vuorovaikutuksessa kappaleet kohdistavat toisiinsa yhtä suuret mutta vastakkaissuuntaiset voimat."],
-    ["Vastavoimapari","Kaksi yhtä suurta vastakkaissuuntaista voimaa vaikuttavat eri kappaleisiin samassa vuorovaikutuksessa."]
+    ["Voima ja vastavoima","Kaksi yhtä suurta vastakkaissuuntaista voimaa vaikuttavat eri kappaleisiin samassa vuorovaikutuksessa."]
   ]},
-  { nimi:"Voimat ja liikeyhtälö", kortit:[
+  { id:"fy4-voimat-ja-liikeyhtalo", nimi:"Voimat ja liikeyhtälö", kortit:[
     ["Voimakuvio","Piirros, jossa esitetään kaikki tarkasteltavaan kappaleeseen vaikuttavat voimat nuolina."],
     ["Paino","Maan kappaleeseen kohdistama gravitaatiovoima; G = mg."],
     ["Tukivoima","Pinnan kappaleeseen kohdistama voima, joka suuntautuu kohtisuoraan pintaa vastaan."],
@@ -398,29 +399,29 @@ window.KORTIT = [
     ["Tasapainoehto","Etenemisliikkeen tasapainossa kappaleeseen vaikuttavien voimien vektorisumma on nolla; ΣF = 0."],
     ["Kalteva taso","Tilanne helpottuu valitsemalla koordinaatisto tason suuntaiseksi ja jakamalla voimat komponentteihin.","kuvat/fy4-kalteva-taso.svg"]
   ]},
-  { nimi:"Kitka, vastusvoimat ja noste", kortit:[
+  { id:"fy4-kitka-ja-vastusvoimat", nimi:"Kitka, vastusvoimat ja noste", kortit:[
     ["Kitka","Kosketuksessa olevien pintojen välinen voima vastustaa niiden suhteellista liikettä tai liikkeelle lähtöä."],
     ["Lepokitka","Estää pintojen liukumisen toistensa suhteen ja mukautuu tarvittavaan suuruuteen enimmäisarvoonsa asti."],
-    ["Liukukitka","Vastustaa toistensa suhteen liukuvien pintojen liikettä; Fₖ = μN."],
+    ["Liikekitka","Vastustaa toistensa suhteen liukuvien pintojen liikettä (liukukitka); F_μ = μN."],
     ["Kitkakerroin","Aineparista riippuva dimensioton luku, joka kuvaa pintojen välistä kitkaa."],
     ["Väliaineen vastus","Kaasu tai neste kohdistaa liikkuvaan kappaleeseen liikkeen suuntaa vastustavan voiman."],
     ["Ilmanvastus","Ilman kappaleeseen kohdistama vastusvoima kasvaa yleensä nopeuden kasvaessa."],
     ["Rajanopeus","Vakionopeus, joka saavutetaan, kun vastusvoima ja muut liikkeen suuntaiset voimat kumoavat toisensa."],
     ["Noste","Nesteen tai kaasun kappaleeseen kohdistama ylöspäin suuntautuva voima."]
   ]},
-  { nimi:"Työ ja mekaaninen energia", kortit:[
+  { id:"fy4-tyo-ja-mekaaninen-energia", nimi:"Työ ja mekaaninen energia", kortit:[
     ["Mekaaninen työ","Voima siirtää energiaa kappaleeseen tai siitä pois siirtymän aikana; W = Fs cos α."],
     ["Liike-energia","Liikkeeseen liittyvä energia riippuu massasta ja nopeudesta; Eₖ = ½mv²."],
     ["Potentiaalienergia","Konservatiiviseen vuorovaikutukseen liittyvä energia riippuu kappaleiden asemasta."],
     ["Painon potentiaalienergia","Maan lähellä gravitaatioon liittyvä energia voidaan laskea Eₚ = mgh."],
     ["Konservatiivinen voima","Voiman tekemä työ riippuu vain alku- ja loppuasemasta, ei kuljetusta reitistä."],
-    ["Mekaaninen energia","Liike-energian ja potentiaalienergian summa; Eₘ = Eₖ + Eₚ."],
+    ["Mekaaninen energia","Liike-energian ja potentiaalienergian summa; Eₘₑₖ = Eₖ + Eₚ."],
     ["Energian säilyminen","Eristetyssä systeemissä energian kokonaismäärä pysyy vakiona."],
-    ["Mekaaninen säilyminen","Mekaaninen energia säilyy, kun vain konservatiiviset voimat tekevät työtä."],
-    ["Energiaperiaate","Mekaanisen energian muutos on yhtä suuri kuin ei-konservatiivisten voimien tekemä työ; ΔEₘ = Wₑᵢ₋ₖ."],
-    ["Työperiaate","Kappaleeseen vaikuttavan kokonaisvoiman tekemä työ on yhtä suuri kuin liike-energian muutos; W = ΔEₖ."]
+    ["Mekaanisen energian säilyminen","Mekaaninen energia säilyy, kun vain konservatiiviset voimat tekevät työtä."],
+    ["Energiaperiaate","Mekaanisen energian muutos on yhtä suuri kuin ei-konservatiivisten voimien tekemä työ; ΔEₘₑₖ = Wₘᵤᵤₜ."],
+    ["Työperiaate","Kappaleeseen vaikuttavan kokonaisvoiman tekemä työ on yhtä suuri kuin liike-energian muutos; Wₖₒₖ = ΔEₖ."]
   ]},
-  { nimi:"Liikemäärä, impulssi ja törmäykset", kortit:[
+  { id:"fy4-liikemaara-ja-tormaykset", nimi:"Liikemäärä, impulssi ja törmäykset", kortit:[
     ["Liikemäärä","Kappaleen massan ja nopeuden tulo on vektorisuure; p = mv."],
     ["Impulssi","Kuvaa voiman kokonaisvaikutusta tietyn ajan kuluessa; I = FΔt vakioisella voimalla."],
     ["Impulssiperiaate","Kappaleen saama impulssi on yhtä suuri kuin sen liikemäärän muutos; I = Δp."],
@@ -429,13 +430,13 @@ window.KORTIT = [
     ["Törmäys","Lyhytkestoinen vuorovaikutus, jossa kappaleiden nopeudet ja liikemäärät voivat muuttua nopeasti."],
     ["Kimmoisa törmäys","Kokonaisliikemäärän lisäksi myös kappaleiden yhteenlaskettu liike-energia säilyy."],
     ["Kimmoton törmäys","Kokonaisliikemäärä säilyy, mutta osa liike-energiasta muuttuu muihin energiamuotoihin."],
-    ["Täysin kimmoton","Törmäyksen jälkeen kappaleet liikkuvat yhdessä samalla nopeudella."],
+    ["Täysin kimmoton törmäys","Törmäyksen jälkeen kappaleet liikkuvat yhdessä samalla nopeudella."],
     ["Yksiulotteinen törmäys","Kappaleiden liike tapahtuu samalla suoralla, joten liikemäärän suunnat voidaan käsitellä etumerkeillä."]
   ]}
 ]},
 
 { id:"FY5", nimi:"Jaksollinen liike ja aallot", aiheet:[
-  { nimi:"Momentti ja tasapaino", kortit:[
+  { id:"fy5-momentti-ja-tasapaino", nimi:"Momentti ja tasapaino", kortit:[
     ["Statiikka","Mekaniikan osa-alue, jossa tutkitaan paikallaan pysyvien kappaleiden tasapainoa."],
     ["Tasapaino","Tila, jossa kappaleen etenemis- ja pyörimisliike eivät muutu."],
     ["Momentti","Suure, joka kuvaa voiman vääntövaikutusta; M = Fr."],
@@ -449,7 +450,7 @@ window.KORTIT = [
     ["Painopiste","Piste, johon kappaleen painon voidaan ajatella kokonaisuudessaan vaikuttavan."],
     ["Tukipinta","Kappaleen alustaa koskettavien kohtien rajaama alue, jonka yläpuolella painopisteen on oltava, jotta kappale ei kaadu."]
   ]},
-  { nimi:"Ympyräliike", kortit:[
+  { id:"fy5-ympyraliike", nimi:"Ympyräliike", kortit:[
     ["Ympyräliike","Liike, jossa kappaleen rata on ympyränmuotoinen."],
     ["Tasainen ympyräliike","Liike ympyräradalla niin, että nopeuden suuruus pysyy vakiona mutta sen suunta muuttuu jatkuvasti."],
     ["Ratanopeus","Ympyrärataa pitkin liikkuvan kappaleen nopeuden suuruus; v = 2πr/T."],
@@ -458,7 +459,7 @@ window.KORTIT = [
     ["Pyörähdys","Yksi kokonainen kierros ympyräradalla."],
     ["Ympyräliikkeen kokonaisvoima","Tasaisessa ympyräliikkeessä keskipistettä kohti suuntautuva voimien summa, joka aiheuttaa normaalikiihtyvyyden; ΣF = mv²/r."]
   ]},
-  { nimi:"Gravitaatio ja planetaarinen liike", kortit:[
+  { id:"fy5-gravitaatio-ja-planetaarinen-liike", nimi:"Gravitaatio ja planetaarinen liike", kortit:[
     ["Gravitaatiovuorovaikutus","Massallisten kappaleiden välinen aina vetävä vuorovaikutus."],
     ["Gravitaatiovoima","Voima, jolla kaksi massallista kappaletta vetävät toisiaan puoleensa."],
     ["Yleinen gravitaatiolaki","Gravitaatiovoima on verrannollinen kappaleiden massojen tuloon ja kääntäen verrannollinen etäisyyden neliöön; F = Gm₁m₂/r²."],
@@ -471,7 +472,7 @@ window.KORTIT = [
     ["Kiertoaika","Yhteen kokonaiseen kierrokseen keskuskappaleen ympäri kuluva aika."],
     ["Geostationaarinen rata","Päiväntasaajan yläpuolinen ympyrärata, jolla satelliitin kiertoaika on vuorokausi, joten se näyttää pysyvän paikallaan taivaalla."]
   ]},
-  { nimi:"Värähdysliike", kortit:[
+  { id:"fy5-varahdysliike", nimi:"Värähdysliike", kortit:[
     ["Jaksollinen liike","Liike, jossa sama liiketila toistuu säännöllisin aikavälein."],
     ["Värähdysliike","Jaksollinen edestakainen liike tasapainoaseman ympärillä."],
     ["Heilahdusliike","Jaksollinen liike, jossa kappale liikkuu edestakaisin kaarevaa rataa pitkin."],
@@ -483,7 +484,7 @@ window.KORTIT = [
     ["Taajuus","Kokonaisten värähdysten lukumäärä aikayksikössä; f = 1/T."],
     ["Vaimeneminen","Värähtelyn amplitudin pieneneminen, kun energiaa siirtyy ympäristöön esimerkiksi kitkan tai väliaineen vastuksen vuoksi."]
   ]},
-  { nimi:"Harmoninen värähtely", kortit:[
+  { id:"fy5-harmoninen-varahtely", nimi:"Harmoninen värähtely", kortit:[
     ["Jousivoima","Jousen muodonmuutoksesta syntyvä palauttava voima."],
     ["Hooken laki","Jousivoima on suoraan verrannollinen jousen venymään tai puristumaan; F = −kx."],
     ["Jousivakio","Jousen jäykkyyttä kuvaava suure; mitä suurempi k, sitä jäykempi jousi."],
@@ -497,7 +498,7 @@ window.KORTIT = [
     ["Resonanssi","Amplitudin voimakas kasvu, kun ulkoisen herätteen taajuus vastaa systeemin ominaistaajuutta."],
     ["Jousen potentiaalienergia","Venytettyyn tai puristettuun jouseen varastoitunut energia; Eₚ = ½kx²."]
   ]},
-  { nimi:"Aaltoliikkeen perusteet", kortit:[
+  { id:"fy5-aaltoliikkeen-perusteet", nimi:"Aaltoliikkeen perusteet", kortit:[
     ["Aaltoliike","Värähtelyn etenemistä paikasta toiseen niin, että energiaa siirtyy mutta aine ei siirry mukana."],
     ["Mekaaninen aaltoliike","Värähtelyn etenemistä aineellisessa väliaineessa rakenneosasta toiseen."],
     ["Aaltolähde","Värähtelijä, joka synnyttää ympäröivään väliaineeseen aaltoliikkeen."],
@@ -509,7 +510,7 @@ window.KORTIT = [
     ["Aallon etenemisnopeus","Nopeus, jolla häiriö etenee väliaineessa; se riippuu väliaineen ominaisuuksista."],
     ["Aaltoliikkeen perusyhtälö","Aallon etenemisnopeuden, taajuuden ja aallonpituuden yhteys; v = λf."]
   ]},
-  { nimi:"Aaltoliikkeen ilmiöt", kortit:[
+  { id:"fy5-aaltoliikkeen-ilmiot", nimi:"Aaltoliikkeen ilmiöt", kortit:[
     ["Heijastuminen","Aallon suunnan muuttuminen rajapinnassa niin, että aalto palaa alkuperäiseen väliaineeseen."],
     ["Diffraktio","Aallon taipuminen ja leviäminen esteen reunan tai kapean aukon kohdalla."],
     ["Interferenssi","Kahden tai useamman aallon yhteisvaikutus niiden kohdatessa."],
@@ -519,7 +520,7 @@ window.KORTIT = [
     ["Spektri","Esitys siitä, mitä taajuuksia värähtely tai aaltoliike sisältää ja kuinka voimakkaita ne ovat."],
     ["Huojunta","Kahden taajuudeltaan lähekkäisen aallon interferenssistä syntyvä äänen voimakkuuden jaksollinen vaihtelu."]
   ]},
-  { nimi:"Seisovat aallot", kortit:[
+  { id:"fy5-seisovat-aallot", nimi:"Seisovat aallot", kortit:[
     ["Seisova aalto","Kahden vastakkaisiin suuntiin etenevän samanlaisen aallon interferenssistä syntyvä aaltokuvio, jossa solmut pysyvät paikallaan."],
     ["Solmu","Seisovan aallon kohta, jossa värähtelyn amplitudi on nolla."],
     ["Kupu","Seisovan aallon kohta, jossa värähtelyn amplitudi on suurimmillaan."],
@@ -529,7 +530,7 @@ window.KORTIT = [
     ["Puoliavoin putki","Putki, jonka toinen pää on suljettu ja toinen avoin; suljettuun päähän muodostuu solmu ja avoimeen kupu."],
     ["Avoin putki","Putki, jonka molemmat päät ovat avoimia, joten kumpaankin päähän muodostuu seisovan aallon kupu."]
   ]},
-  { nimi:"Ääni", kortit:[
+  { id:"fy5-aani", nimi:"Ääni", kortit:[
     ["Ääni","Mekaanista aaltoliikettä, joka etenee kaasussa, nesteessä tai kiinteässä aineessa mutta ei tyhjiössä."],
     ["Ääniaalto","Väliaineessa etenevä tihentymien ja harventumien muodostama pitkittäinen aaltoliike."],
     ["Äänen korkeus","Kuuloaistimus, joka määräytyy pääasiassa äänen taajuuden perusteella."],
@@ -538,7 +539,7 @@ window.KORTIT = [
     ["Äänes","Äänen yksittäinen tietyntaajuinen värähtelykomponentti."],
     ["Dopplerin ilmiö","Havaitun taajuuden muuttuminen, kun äänilähde ja havaitsija liikkuvat toistensa suhteen."]
   ]},
-  { nimi:"Äänen intensiteetti ja kuuleminen", kortit:[
+  { id:"fy5-aanen-intensiteetti-ja-kuuleminen", nimi:"Äänen intensiteetti ja kuuleminen", kortit:[
     ["Äänen intensiteetti","Kertoo pinta-alayksikön läpi aikayksikössä siirtyvän äänienergian; I = P/A."],
     ["Intensiteettitaso","Desibeleinä ilmoitettava logaritminen suure, joka vertaa äänen intensiteettiä kuulokynnykseen; L = 10 dB · lg(I/I₀)."],
     ["Kuulokynnys","Pienin äänen intensiteetti, jonka ihminen pystyy tietyllä taajuudella kuulemaan; 1 kHz:n taajuudella I₀ ≈ 10⁻¹² W/m²."],
@@ -550,7 +551,7 @@ window.KORTIT = [
 ]},
 
 { id:"FY6", kesken:true, nimi:"Sähkö", aiheet:[
-  { nimi:"Varaus ja kenttä", kortit:[
+  { id:"fy6-varaus-ja-kentta", nimi:"Varaus ja kenttä", kortit:[
     ["Sähkövaraus","Aineen ominaisuus, joka aiheuttaa sähköisen vuorovaikutuksen; yksikkö coulombi."],
     ["Alkeisvaraus","Pienin vapaana esiintyvä varaus, e = 1,602 · 10⁻¹⁹ C."],
     ["Coulombin laki","Kahden pistevarauksen välinen voima, F = k·q₁q₂ / r²."],
@@ -558,7 +559,7 @@ window.KORTIT = [
     ["Jännite","Kahden pisteen välinen sähköinen potentiaaliero, U = W / q."],
     ["Varauksen säilymislaki","Suljetun systeemin kokonaisvaraus pysyy vakiona."]
   ]},
-  { nimi:"Virtapiirit", kortit:[
+  { id:"fy6-virtapiirit", nimi:"Virtapiirit", kortit:[
     ["Sähkövirta","Varauksen kulkeutuminen aikayksikköä kohti, I = Q / t."],
     ["Resistanssi","Komponentin kyky vastustaa sähkövirtaa, R = U / I."],
     ["Ohmin laki","Virta on suoraan verrannollinen jännitteeseen, kun resistanssi on vakio."],
@@ -569,7 +570,7 @@ window.KORTIT = [
     ["Kirchhoffin jännitelaki","Suljetun silmukan jännitteiden summa on nolla."],
     ["Lähdejännite","Virtalähteen napojen välinen jännite ilman kuormaa."]
   ]},
-  { nimi:"Sähköenergia ja komponentit", kortit:[
+  { id:"fy6-sahkoenergia-ja-komponentit", nimi:"Sähköenergia ja komponentit", kortit:[
     ["Sähköteho","Sähkövirran tekemä työ aikayksikössä, P = UI."],
     ["Joulen laki","Resistanssissa kehittyvä lämpöteho, P = RI²."],
     ["Kondensaattori","Komponentti, joka varastoi energiaa sähkökenttään."],
@@ -580,7 +581,7 @@ window.KORTIT = [
 ]},
 
 { id:"FY7", kesken:true, nimi:"Sähkömagnetismi ja valo", aiheet:[
-  { nimi:"Magnetismi", kortit:[
+  { id:"fy7-magnetismi", nimi:"Magnetismi", kortit:[
     ["Magneettikenttä","Alue, jossa magneettiseen aineeseen tai liikkuvaan varaukseen kohdistuu voima."],
     ["Magneettivuon tiheys","Magneettikentän voimakkuutta kuvaava suure B; yksikkö tesla."],
     ["Lorentzin voima","Magneettikentän liikkuvaan varaukseen kohdistama voima, F = qvB sin α."],
@@ -588,7 +589,7 @@ window.KORTIT = [
     ["Magneettivuo","Pinnan läpi kulkeva magneettikentän määrä, Φ = BA cos α."],
     ["Solenoidi","Käämi, jonka sisällä syntyy tasainen magneettikenttä virran kulkiessa."]
   ]},
-  { nimi:"Induktio", kortit:[
+  { id:"fy7-induktio", nimi:"Induktio", kortit:[
     ["Faradayn induktiolaki","Muuttuva magneettivuo synnyttää jännitteen, e = −ΔΦ / Δt."],
     ["Lenzin laki","Indusoitunut virta vastustaa sen syntyyn johtanutta muutosta."],
     ["Generaattori","Laite, joka muuttaa liike-energiaa sähköenergiaksi induktion avulla."],
@@ -596,7 +597,7 @@ window.KORTIT = [
     ["Vaihtovirta","Virta, jonka suunta ja suuruus vaihtelevat jaksollisesti."],
     ["Tehollisarvo","Vaihtovirran arvo, joka vastaa lämpövaikutukseltaan yhtä suurta tasavirtaa."]
   ]},
-  { nimi:"Valo", kortit:[
+  { id:"fy7-valo", nimi:"Valo", kortit:[
     ["Sähkömagneettinen aalto","Etenevä sähkö- ja magneettikentän värähtely, joka ei tarvitse väliainetta."],
     ["Valon nopeus","Valon nopeus tyhjiössä, c = 299 792 458 m/s."],
     ["Taitekerroin","Valon nopeuden suhde tyhjiössä ja aineessa, n = c / v."],
@@ -609,7 +610,7 @@ window.KORTIT = [
 ]},
 
 { id:"FY8", nimi:"Aine, säteily ja kvantittuminen", aiheet:[
-  { nimi:"Säteilyn kvantittuminen", kortit:[
+  { id:"fy8-sateilyn-kvantittuminen", nimi:"Säteilyn kvantittuminen", kortit:[
     ["Kvantti","Pienin määrä, jossa tietty fysikaalinen suure voi siirtyä vuorovaikutuksessa."],
     ["Kvantittuminen","Energia voi tietyissä ilmiöissä saada tai siirtyä vain määrättyinä erinä."],
     ["Fotoni","Sähkömagneettisen säteilykentän energiakvantti, jolla ei ole lepomassaa."],
@@ -619,7 +620,7 @@ window.KORTIT = [
     ["Musta kappale","Ideaalinen säteilijä, jonka lähettämän säteilyn spektri riippuu vain lämpötilasta."],
     ["Jatkuva spektri","Sisältää yhtenäisen aallonpituusalueen ilman erillisiä spektriviivoja."]
   ]},
-  { nimi:"Valosähköilmiö", kortit:[
+  { id:"fy8-valosahkoilmio", nimi:"Valosähköilmiö", kortit:[
     ["Valosähköilmiö","Riittävän suuritaajuinen sähkömagneettinen säteily voi irrottaa elektroneja aineen pinnasta."],
     ["Irrotustyö","Pienin energia, joka tarvitaan elektronin irrottamiseen tietyn aineen pinnasta."],
     ["Rajataajuus","Pienin säteilyn taajuus, jolla elektroneja voi irrota tietystä aineesta."],
@@ -628,7 +629,7 @@ window.KORTIT = [
     ["Valosähköilmiön energiayhtälö","Fotonin energia kuluu irrotustyöhön ja elektronin liike-energiaksi; hf = W₀ + Eₖ,max."],
     ["Säteilyn intensiteetti","Kertoo pinnalle saapuvan säteilyenergian määrän pinta-alaa ja aikaa kohti."]
   ]},
-  { nimi:"Aaltohiukkasdualismi", kortit:[
+  { id:"fy8-aaltohiukkasdualismi", nimi:"Aaltohiukkasdualismi", kortit:[
     ["Aaltohiukkasdualismi","Säteilyllä ja ainehiukkasilla voi olla sekä aaltomaisia että hiukkasmaisia ominaisuuksia."],
     ["Fotonin liikemäärä","Massattomalla säteilykvantilla on liikemäärä; p = h/λ = E/c."],
     ["Comptonin sironta","Fotonin törmäys elektroniin muuttaa fotonin energiaa ja aallonpituutta."],
@@ -638,7 +639,7 @@ window.KORTIT = [
     ["Interferenssi","Aaltojen yhdistyminen vahvistaa tai heikentää havaittua vaikutusta eri kohdissa."],
     ["Elektronimikroskooppi","Elektronien lyhyt aallonpituus mahdollistaa näkyvää valoa tarkemman kuvantamisen."]
   ]},
-  { nimi:"Atomin energiatasot", kortit:[
+  { id:"fy8-atomin-energiatasot", nimi:"Atomin energiatasot", kortit:[
     ["Energiataso","Elektronilla voi atomissa olla vain tiettyjä sallittuja energioita."],
     ["Perustila","Atomin matalin mahdollinen energiatila."],
     ["Viritystila","Atomin tila, jossa elektronisysteemillä on enemmän energiaa kuin perustilassa."],
@@ -652,7 +653,7 @@ window.KORTIT = [
     ["Ionisaatioenergia","Pienin energia, jolla elektroni voidaan irrottaa atomista kokonaan."],
     ["Vetyatomin energia","Elektronin sallittu energia riippuu pääkvanttiluvusta; Eₙ = −13,6 eV/n²."]
   ]},
-  { nimi:"Kvanttimekaaninen atomimalli", kortit:[
+  { id:"fy8-kvanttimekaaninen-atomimalli", nimi:"Kvanttimekaaninen atomimalli", kortit:[
     ["Kvanttitila","Järjestelmän sallittu tila, johon liittyy tiettyjä fysikaalisia ominaisuuksia ja energia."],
     ["Aaltofunktio","Matemaattinen kuvaus, jonka avulla voidaan määrittää hiukkasen havaitsemisen todennäköisyyksiä."],
     ["Todennäköisyysjakauma","Kuvaa, kuinka todennäköisesti hiukkanen havaitaan eri alueilla."],
@@ -664,7 +665,7 @@ window.KORTIT = [
     ["Tunneloituminen","Hiukkanen voi kvanttimekaniikan mukaan löytyä esteen toiselta puolelta ilman klassisesti riittävää energiaa."],
     ["Seisova aalto","Aaltomuoto, joka pysyy paikallaan ja mahdollistaa vain tietyt elektronin kvanttitilat."]
   ]},
-  { nimi:"Kvantti-ilmiöiden sovellukset", kortit:[
+  { id:"fy8-kvantti-ilmioiden-sovellukset", nimi:"Kvantti-ilmiöiden sovellukset", kortit:[
     ["Puolijohde","Aine, jonka sähkönjohtavuutta voidaan hallita esimerkiksi seostamalla tai lämpötilaa muuttamalla."],
     ["Seostaminen","Puolijohteeseen lisätään pieni määrä muita atomeja sen sähkönjohtavuuden muuttamiseksi."],
     ["Diodi","Puolijohdekomponentti, joka johtaa sähkövirtaa pääasiassa yhteen suuntaan."],
@@ -677,7 +678,7 @@ window.KORTIT = [
     ["Laser","Tuottaa voimakkaasti suunnattua, lähes yksiväristä ja koherenttia sähkömagneettista säteilyä."],
     ["Koherentti valo","Aallot värähtelevät keskenään vakiossa vaihe-erossa."]
   ]},
-  { nimi:"Röntgensäteily", kortit:[
+  { id:"fy8-rontgensateily", nimi:"Röntgensäteily", kortit:[
     ["Röntgensäteily","Lyhytaaltoista ja suurienergistä ionisoivaa sähkömagneettista säteilyä."],
     ["Röntgenputki","Elektronit kiihdytetään suurella jännitteellä ja törmäytetään anodiin säteilyn tuottamiseksi."],
     ["Katodi","Röntgenputken elektrodi, josta elektroneja irrotetaan ja kiihdytetään kohti anodia."],
@@ -687,7 +688,7 @@ window.KORTIT = [
     ["Röntgenspektri","Koostuu jatkuvasta jarrutussäteilystä ja sen päälle tulevista karakteristisista viivoista."],
     ["Lyhyin aallonpituus","Röntgenputken suurienergisin fotoni syntyy, kun elektronin energia muuttuu kokonaan fotoniksi; λmin = hc/(eU)."]
   ]},
-  { nimi:"Atomiydin", kortit:[
+  { id:"fy8-atomiydin", nimi:"Atomiydin", kortit:[
     ["Nukleoni","Yhteisnimitys atomiytimen protoneille ja neutroneille."],
     ["Protoni","Positiivisesti varautunut nukleoni, jonka lukumäärä määrää alkuaineen."],
     ["Neutroni","Sähköisesti neutraali nukleoni, jonka lukumäärä voi vaihdella saman alkuaineen ytimissä."],
@@ -699,7 +700,7 @@ window.KORTIT = [
     ["Sidosenergia","Energia, joka tarvitaan ytimen hajottamiseen erillisiksi nukleoneiksi; E = Δmc²."],
     ["Sidososuus","Sidosenergia jaettuna ytimen nukleonien lukumäärällä kuvaa ytimen pysyvyyttä."]
   ]},
-  { nimi:"Ydinreaktiot", kortit:[
+  { id:"fy8-ydinreaktiot", nimi:"Ydinreaktiot", kortit:[
     ["Ydinreaktio","Atomiydin muuttuu toiseksi ytimeksi tai ytimiksi vuorovaikutuksessa toisen hiukkasen kanssa."],
     ["Reaktioenergia","Ydinreaktiossa vapautuva tai sitoutuva energia määräytyy alku- ja lopputilan massaerosta; Q = Δmc²."],
     ["Fissio","Raskas atomiydin hajoaa kahdeksi kevyemmäksi ytimeksi ja vapauttaa energiaa."],
@@ -709,7 +710,7 @@ window.KORTIT = [
     ["Ydinvoimala","Fission vapauttamaa energiaa käytetään lämmön kautta sähköenergian tuottamiseen."],
     ["Kriittinen massa","Pienin fissioituvan aineen määrä, jolla itseään ylläpitävä ketjureaktio on mahdollinen."]
   ]},
-  { nimi:"Radioaktiivisuus", kortit:[
+  { id:"fy8-radioaktiivisuus", nimi:"Radioaktiivisuus", kortit:[
     ["Radioaktiivisuus","Epästabiili atomiydin muuttuu itsestään toiseksi ytimeksi ja lähettää samalla säteilyä."],
     ["Emoydin","Radioaktiivisen hajoamisen alkuperäinen epästabiili ydin."],
     ["Tytärydin","Radioaktiivisessa hajoamisessa syntyvä uusi atomiydin."],
@@ -723,7 +724,7 @@ window.KORTIT = [
     ["Gammasäteily","Suurienergistä sähkömagneettista säteilyä, jolla on suuri läpäisykyky."],
     ["Neutriino","Hyvin kevyt ja varaukseton hiukkanen, joka vuorovaikuttaa aineen kanssa erittäin heikosti."]
   ]},
-  { nimi:"Hajoamislaki", kortit:[
+  { id:"fy8-hajoamislaki", nimi:"Hajoamislaki", kortit:[
     ["Aktiivisuus","Kertoo radioaktiivisten hajoamisten määrän sekunnissa."],
     ["Becquerel","Aktiivisuuden yksikkö, jossa yksi becquerel tarkoittaa yhtä hajoamista sekunnissa."],
     ["Hajoamisvakio","Kuvaa yksittäisen radioaktiivisen ytimen hajoamisen todennäköisyyttä aikayksikössä."],
@@ -732,7 +733,7 @@ window.KORTIT = [
     ["Aktiivisuuden pieneneminen","Näytteen aktiivisuus pienenee samalla eksponentiaalisella tavalla; A = A₀e⁻λt."],
     ["Hajoamissarja","Peräkkäisten radioaktiivisten hajoamisten ketju päättyy lopulta stabiiliin ytimeen."]
   ]},
-  { nimi:"Säteilyn vaimeneminen", kortit:[
+  { id:"fy8-sateilyn-vaimeneminen", nimi:"Säteilyn vaimeneminen", kortit:[
     ["Intensiteetti","Kuvaa säteilyn kuljettamaa tehoa pinta-alayksikköä kohti."],
     ["Säteilyn vaimeneminen","Gammasäteilyn intensiteetti pienenee aineessa eksponentiaalisesti; I = I₀e⁻μx."],
     ["Vaimennuskerroin","Kuvaa, kuinka voimakkaasti tietty aine vaimentaa tietyn energistä säteilyä."],
@@ -742,7 +743,7 @@ window.KORTIT = [
     ["Comptoninsironta","Fotoni luovuttaa osan energiastaan elektronille ja jatkaa pienemmällä energialla."],
     ["Parinmuodostus","Riittävän energinen fotoni voi ytimen lähellä muuttua elektroniksi ja positroniksi."]
   ]},
-  { nimi:"Säteilyturvallisuus", kortit:[
+  { id:"fy8-sateilyturvallisuus", nimi:"Säteilyturvallisuus", kortit:[
     ["Ionisoiva säteily","Säteily, jolla on riittävästi energiaa irrottamaan elektroneja atomeista tai molekyyleistä."],
     ["Absorboitunut annos","Kertoo aineeseen siirtyneen säteilyenergian massayksikköä kohti."],
     ["Gray","Absorboituneen annoksen yksikkö; 1 Gy = 1 J/kg."],
@@ -753,7 +754,7 @@ window.KORTIT = [
     ["Säteilysuojaus","Altistusta vähennetään lyhentämällä aikaa, kasvattamalla etäisyyttä ja käyttämällä sopivaa suojausta."],
     ["Säteilyvaurio","Ionisoiva säteily voi vaurioittaa soluja ja DNA:ta sekä lisätä syöpäriskiä."]
   ]},
-  { nimi:"Säteilyn hyötykäyttö", kortit:[
+  { id:"fy8-sateilyn-hyotykaytto", nimi:"Säteilyn hyötykäyttö", kortit:[
     ["Röntgenkuvaus","Kehon eri kudokset vaimentavat röntgensäteilyä eri tavoin, jolloin muodostuu kuva sisäisistä rakenteista."],
     ["Tietokonetomografia","Useista röntgenkuvista muodostetaan tietokoneella kehon poikkileikkaus- tai kolmiulotteinen kuva."],
     ["Isotooppilääketiede","Radioaktiivisia merkkiaineita käytetään elimistön toiminnan tutkimiseen ja sairauksien hoitoon."],
@@ -762,7 +763,7 @@ window.KORTIT = [
     ["Radiohiiliajoitus","Orgaanisen näytteen ikää arvioidaan hiili-14-isotoopin jäljellä olevan määrän avulla."],
     ["Palovaroitin","Joissakin ilmaisimissa radioaktiivinen aine ionisoi ilmaa ja mahdollistaa savun havaitsemisen."]
   ]},
-  { nimi:"Standardimalli", kortit:[
+  { id:"fy8-standardimalli", nimi:"Standardimalli", kortit:[
     ["Standardimalli","Teoria kuvaa materian perushiukkaset sekä vahvan, heikon ja sähkömagneettisen vuorovaikutuksen."],
     ["Alkeishiukkanen","Hiukkanen, jolla ei nykyisen tiedon mukaan ole sisäistä rakennetta."],
     ["Kvarkki","Materian perushiukkanen, josta esimerkiksi protonit ja neutronit rakentuvat."],
@@ -776,7 +777,7 @@ window.KORTIT = [
     ["Vahva vuorovaikutus","Pitää kvarkit yhdessä hadroneissa ja sitoo protoneja sekä neutroneja atomiytimessä."],
     ["Heikko vuorovaikutus","Aiheuttaa esimerkiksi beetahajoamista ja muuttaa hiukkasten tyyppiä."]
   ]},
-  { nimi:"Maailmankaikkeus", kortit:[
+  { id:"fy8-maailmankaikkeus", nimi:"Maailmankaikkeus", kortit:[
     ["Hiukkasfysiikka","Tutkii aineen pienimpiä tunnettuja rakenneosia ja niiden välisiä vuorovaikutuksia."],
     ["Kosmologia","Tutkii maailmankaikkeutta kokonaisuutena sekä sen rakennetta, kehitystä ja ainesisältöä."],
     ["Alkuräjähdys","Mallin mukaan maailmankaikkeus kehittyi erittäin kuumasta ja tiheästä alkutilasta."],

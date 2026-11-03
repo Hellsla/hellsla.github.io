@@ -1403,5 +1403,13 @@
     "checked": "checked {{date}}",
     "teacher": "For the teacher",
     "notice_draft": "This unit is a draft: its reviews are not complete and it is not published."
+  },
+  "cards": {
+    "title": "Käsitetakomo concept cards",
+    "home_lead": "Review physics concepts and definitions with flashcards (in Finnish). Choose a module and a topic, or combine topics.",
+    "home_link": "Käsitetakomo – review physics concepts (in Finnish)",
+    "module_lead": "Review this module's concepts and definitions with flashcards in Käsitetakomo (in Finnish). Choose a topic there or combine several.",
+    "module_link": "Review this module's concepts (in Finnish)",
+    "lesson_link": "Review this chapter's concepts in Käsitetakomo (in Finnish)"
   }
 }

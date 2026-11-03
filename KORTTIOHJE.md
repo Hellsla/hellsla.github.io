@@ -27,6 +27,24 @@ verkossa, ei paikallisesti `file://`-osoitteesta avattuna.)
 Lisää kurssi `kasitetakomo-data.js`-tiedostoon samassa muodossa kuin FY1–FY8.
 Näin on tehty kaikki nykyiset kurssit.
 
+Jokaisella aiheella on pysyvä tunniste `id` (esim. `id:"fy4-newtonin-lait"`).
+Ruukkilabran oppitunnit ja moduulisivut linkittävät aiheisiin tunnisteella
+(`fysiikkalabra/concept-cards.json`), joten **älä muuta tai poista olemassa olevaa
+tunnistetta**. Aiheen nimen ja korttien muuttaminen on vapaata. Uudelle aiheelle
+keksi uusi tunniste: pienet kirjaimet, numerot ja yhdysmerkit, ei ääkkösiä.
+
+## Suorat linkit
+
+| Osoite | Mitä avautuu |
+|---|---|
+| `kasitetakomo.html` | Kurssivalikko |
+| `kasitetakomo.html?kurssi=FY4` | FY4:n aihevalikko (kortteja ei käynnistetä) |
+| `kasitetakomo.html?kurssi=FY4&aihe=fy4-newtonin-lait` | Aiheen kertaus alkaa heti |
+| `kasitetakomo.html?kurssi=FY4&aihe=fy4-newtonin-lait,fy4-kiihtyva-liike` | Kahden aiheen yhdistetty kertaus |
+
+Tuntematon kurssi tai aihe palauttaa kurssivalikkoon. Vanha osoite
+`kasitekortit.html` ohjaa edelleen tänne parametreineen.
+
 ---
 
 ## Tekstimuoto (tämä kannattaa pyytää ChatGPT:ltä)
