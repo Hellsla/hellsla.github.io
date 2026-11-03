@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: da8b0d7dc276dfca
+CONTENT-HASH: da586486a19d963f
 
 ## Blocking
 
@@ -8,7 +8,5 @@ CONTENT-HASH: da8b0d7dc276dfca
 
 
 ## Checked
-- Same structure as the Finnish: all sections, stages, 18 inquiry activities, hints, mistakes, model answers and criteria are present; nothing dropped.
-- Learning goals complete "In this lesson, you will learn to" + explain / calculate / solve.
-- Natural textbook English; chapter names are the English titles from courses.json.
-- Sim legend now 13 words (was 28, folded into a box): fixed in lang/en.json sims.fy6-4.selite.
+- Structure identical to the Finnish (342 lines, all stages and activities present); learning goals complete; natural textbook English.
+- Sim legend is a short 13-word sentence: "Dot speed shows the current; its direction is from positive terminal to negative."
