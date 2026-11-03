@@ -325,7 +325,14 @@
     "rubric_total": "Self-assessed points: {{got}} / {{max}}",
     "rubric_partial": "Self-assessed points: {{got}} / {{max}} ({{left}} items not assessed)",
     "criteria_all": "Your answer contains all the key points of the model answer.",
-    "criteria_missing": "Add these points to your answer and compare again:"
+    "criteria_missing": "Add these points to your answer and compare again:",
+    "zoom_open": "Enlarge the figure",
+    "zoom_close": "Close",
+    "zoom_dialog": "Enlarged figure",
+    "sim_expand": "Enlarge",
+    "sim_expand_aria": "Enlarge the simulation",
+    "sim_shrink": "Shrink",
+    "sim_shrink_aria": "Shrink the simulation back into the page"
   },
   "sims": {
     "fy2-2": {

@@ -325,7 +325,14 @@
     "rubric_total": "Itsearvioidut pisteet: {{got}} / {{max}}",
     "rubric_partial": "Itsearvioidut pisteet: {{got}} / {{max}} ({{left}} kohtaa arvioimatta)",
     "criteria_all": "Vastauksessasi on kaikki mallivastauksen tärkeät kohdat.",
-    "criteria_missing": "Lisää vastaukseesi nämä asiat. Vertaa sitten uudelleen:"
+    "criteria_missing": "Lisää vastaukseesi nämä asiat. Vertaa sitten uudelleen:",
+    "zoom_open": "Näytä kuva isona",
+    "zoom_close": "Sulje",
+    "zoom_dialog": "Iso kuva",
+    "sim_expand": "Suurenna",
+    "sim_expand_aria": "Näytä simulaatio isona",
+    "sim_shrink": "Pienennä",
+    "sim_shrink_aria": "Palauta simulaatio sivulle"
   },
   "sims": {
     "fy2-2": {

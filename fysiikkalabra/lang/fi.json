@@ -325,7 +325,14 @@
     "reflect_measure_first": " — tee vielä mittaukset, niin näet, pitikö ennuste.",
     "reflect_not_answered": "Et ole vielä vastannut: <a href=\"{{href}}\">siirry ennusteeseen</a>.",
     "rubric_total": "Itsearvioidut pisteet: {{got}} / {{max}}",
-    "rubric_partial": "Itsearvioidut pisteet: {{got}} / {{max}} ({{left}} kohtaa arvioimatta)"
+    "rubric_partial": "Itsearvioidut pisteet: {{got}} / {{max}} ({{left}} kohtaa arvioimatta)",
+    "zoom_open": "Suurenna kuva",
+    "zoom_close": "Sulje",
+    "zoom_dialog": "Suurennettu kuva",
+    "sim_expand": "Suurenna",
+    "sim_expand_aria": "Suurenna simulaatio",
+    "sim_shrink": "Pienennä",
+    "sim_shrink_aria": "Pienennä simulaatio takaisin sivulle"
   },
   "sims": {
     "fy2-2": {
