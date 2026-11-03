@@ -114,7 +114,7 @@ new p5((p) => {
     // the light beam from the lamp's lens to the plate's lit face, faint, so the light visibly ends at the plate
     if (S.Iv > 0) {
       p.noStroke(); p.fill(...col, 28 + 0.5 * S.Iv);
-      p.quad(X(158), Y(51), X(222), Y(51), X(FACE), Y(280), X(FACE), Y(110));
+      p.quad(X(158), Y(51), X(222), Y(51), X(FACE), Y(250), X(FACE), Y(110));
     }
     // emitter plate and collector
     p.fill(...METAL[S.m]); p.stroke(...INKC); p.strokeWeight(2 * sk); p.rect(X(60), Y(110), 18 * s, 170 * s, 3 * s);

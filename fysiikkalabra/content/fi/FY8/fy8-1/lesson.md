@@ -173,7 +173,16 @@ missä $E$ on fotonin energia ($\text{J}$), $h = 6{,}626 \cdot 10^{-34}\,\text{J
 ```latex
 E = \frac{hc}{\lambda}
 ```
-missä $\lambda$ on säteilyn aallonpituus tyhjiössä ($\text{m}$). Mitä lyhyempi aallonpituus, sitä suurempi fotonin energia. Esimerkiksi vihreän valon, $\lambda = 500\,\text{nm}$, fotonin energia on $E = \tfrac{6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^8\,\text{m/s}}{500 \cdot 10^{-9}\,\text{m}} = 3{,}97 \cdot 10^{-19}\,\text{J}$ eli $2{,}48\,\text{eV}$. Arvioita varten tulo $hc$ kannattaa muuntaa kerran elektronivolteiksi ja nanometreiksi: $hc = 1{,}986 \cdot 10^{-25}\,\text{J}\,\text{m} = \tfrac{1{,}986 \cdot 10^{-25}}{1{,}602 \cdot 10^{-19}}\,\text{eV}\,\text{m} \approx 1{,}240 \cdot 10^{-6}\,\text{eV}\,\text{m} = 1240\,\text{eV}\,\text{nm}$. Sillä saa nopean arvion: $500\,\text{nm}$:n fotonin energia on noin $1240\,\text{eV}\,\text{nm} : 500\,\text{nm} \approx 2{,}5\,\text{eV}$.
+missä $\lambda$ on säteilyn aallonpituus tyhjiössä ($\text{m}$). Mitä lyhyempi aallonpituus, sitä suurempi fotonin energia. Esimerkiksi vihreän valon, $\lambda = 500\,\text{nm}$, fotonin energia on $E = \tfrac{6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^8\,\text{m/s}}{500 \cdot 10^{-9}\,\text{m}} = 3{,}97 \cdot 10^{-19}\,\text{J}$ eli $2{,}48\,\text{eV}$. Arvioita varten tulo $hc$ kannattaa muuntaa kerran elektronivolteiksi ja nanometreiksi. Koska $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$ ja $1\,\text{m} = 10^{9}\,\text{nm}$, tulo on
+
+```latex
+\begin{aligned}
+hc &= 1{,}986 \cdot 10^{-25}\,\text{J}\,\text{m} \\
+&= \tfrac{1{,}986 \cdot 10^{-25}}{1{,}602 \cdot 10^{-19}}\,\text{eV}\,\text{m} \\
+&\approx 1{,}240 \cdot 10^{-6}\,\text{eV}\,\text{m} = 1240\,\text{eV}\,\text{nm}
+\end{aligned}
+```
+Sen avulla saa nopean arvion: $500\,\text{nm}$:n fotonin energia on noin $1240\,\text{eV}\,\text{nm} : 500\,\text{nm} \approx 2{,}5\,\text{eV}$.
 
 ### Valosähköinen yhtälö
 Kun fotoni irrottaa elektronin, sen energia kuluu irrotustyöhön, ja loppu jää elektronin liike-energiaksi. Energian säilymisestä saadaan Einsteinin valosähköinen yhtälö
