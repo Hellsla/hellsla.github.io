@@ -89,6 +89,7 @@ def page_form(pg, b, url, acts, page):
     want.append(inquiry.EXERCISES_TITLE)
     check("nav names the stages, the exit ticket and the exercises", toc == want, f"{toc} != {want}")
     order = pg.evaluate("[...document.querySelectorAll('article > section, article > .intro')].map((e) => e.id || e.className)")
+    order = [o for o in order if o != "credits"]          # the photo credits (build.photo_credits) follow as the page's colophon
     check("the exercises close the page, after the exit ticket", order[-1:] == ["exercises"] and pg.evaluate("(() => { const x = document.getElementById('exit'), e = document.getElementById('exercises'); return !x || !!(x.compareDocumentPosition(e) & 4); })()"), str(order))
     if any(a["stage"] == "ennusta" for a in acts):
         fold = pg.locator("#ennusta details.fold")
