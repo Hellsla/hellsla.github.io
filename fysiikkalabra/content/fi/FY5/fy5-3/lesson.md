@@ -213,30 +213,30 @@ Naruun sidottu kiekko kiertää jäällä tappia. Naru vetää kiekkoa kohti tap
 </svg>
 
 ### Suunnan muutos on nopeuden muutos
-Nopeuden muutos $\Delta\overline{v}$ nähdään, kun kaksi peräkkäistä nopeusvektoria piirretään alkamaan samasta pisteestä. Muutos $\Delta\overline{v}$ on se vektori, joka on lisättävä vektoriin $\overline{v}_1$, jotta saadaan $\overline{v}_2$. Ympyräradalla vektorit ovat yhtä pitkiä, mutta niiden suunnat eroavat, joten $\Delta\overline{v}$ ei ole nolla, kun aikaväli on lyhyempi kuin yksi kierros. Kiihtyvyys tarkoittaa nopeuden muutosta, ei pelkästään vauhdin muutosta. Tasaisessa ympyräliikkeessä kappale on siis kiihtyvässä liikkeessä, ja Newtonin toisen lain mukaan siihen vaikuttaa kokonaisvoima, joka ei ole nolla. Kiihtyvyyden suuruus ja suunta käsitellään luvussa *Tasainen ympyräliike ja normaalikiihtyvyys*.
+Nopeuden muutos $\Delta\overline{v}$ nähdään, kun kaksi peräkkäistä nopeusvektoria piirretään alkamaan samasta pisteestä. Muutos $\Delta\overline{v}$ on se vektori, joka on lisättävä vektoriin $\overline{v}_1$, jotta saadaan $\overline{v}_2$. Ympyräradalla vektorit ovat yhtä pitkiä, mutta niiden suunnat eroavat, joten $\Delta\overline{v}$ ei ole nolla, kun aikaväli on lyhyempi kuin yksi kierros. Kiihtyvyys tarkoittaa nopeuden muutosta, ei pelkästään vauhdin muutosta. Tasaisessa ympyräliikkeessä kappale on siis kiihtyvässä liikkeessä, ja Newtonin toisen lain mukaan siihen vaikuttaa kokonaisvoima, joka ei ole nolla. Tämä kokonaisvoima osoittaa ympyrän keskipisteen puolelle eli radan sisäpuolelle, ei ulospäin. Kiihtyvyyden suuruus lasketaan luvussa *Tasainen ympyräliike ja normaalikiihtyvyys*.
 
 <svg data-fig="dv" viewBox="0 0 600 340" role="img" aria-label="Kaavakuva: vasemmalla ympyräradan kaari ja kappaleen kaksi peräkkäistä paikkaa, joissa nopeudet ovat yhtä pitkät mutta eri suuntiin. Oikealla samat vektorit on siirretty alkamaan samasta pisteestä, ja musta nuoli ensimmäisen kärjestä toisen kärkeen on nopeuden muutos. Toinen nopeus on ensimmäinen nopeus plus nopeuden muutos." style="max-width:100%;font-size:24px">
   <path d="M290,300 L290,292 L289,283.5 L288,275.5 L287,267.5 L285,259.5 L283,251.5 L280.5,244 L277.5,236.5 L274.5,229 L271,221.5 L267,214.5 L262.5,207.5 L258,200.5 L253,194 L248,188 L242.5,182 L236.5,176 L230.5,170.5 L224,165.5 L217.5,160.5 L210.5,156 L203.5,152 L196.5,148 L189,144.5 L181.5,141.5 L174,139 L166,136.5 L158,134.5 L150.5,132.5 L142,131.5 L134,130.5 L126,130 L118,130 L109.5,130.5 L101.5,131 L93.5,132 L85.5,133.5 L77.5,135.5 L69.5,137.5 L62,140.5" fill="none" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
   <circle cx="120" cy="300" r="5" fill="#1f2933"/>
   <line x1="120" y1="300" x2="267" y2="215" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
-  <line x1="267" y1="215" x2="216.5" y2="127.5" stroke="#4f8fbf" stroke-width="3.5" stroke-linecap="butt"/>
-  <path d="M209,114.5 L223.5,125 L211,132 Z" fill="#4f8fbf" stroke-linejoin="round"/>
+  <line x1="267" y1="215" x2="216.5" y2="127.5" stroke="#1971c2" stroke-width="3.5" stroke-linecap="butt"/>
+  <path d="M209,114.5 L223.5,125 L211,132 Z" fill="#1971c2" stroke-linejoin="round"/>
   <circle cx="267" cy="215" r="8" fill="#1f2933"/>
-  <foreignObject x="221" y="96" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#4f8fbf">$\overline{v}_1$</div></foreignObject>
+  <foreignObject x="221" y="96" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$\overline{v}_1$</div></foreignObject>
   <line x1="120" y1="300" x2="164" y2="136" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
   <line x1="164" y1="136" x2="66.5" y2="109.5" stroke="#1971c2" stroke-width="3.5" stroke-linecap="butt"/>
   <path d="M52,106 L69.5,103 L65.5,117 Z" fill="#1971c2" stroke-linejoin="round"/>
   <circle cx="164" cy="136" r="8" fill="#1f2933"/>
   <foreignObject x="-3" y="99.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#1971c2">$\overline{v}_2$</div></foreignObject>
   <line x1="340" y1="30" x2="340" y2="320" stroke="#c9c2b2" stroke-width="2" stroke-linecap="butt" stroke-dasharray="6 6"/>
-  <line x1="540" y1="262" x2="489.5" y2="174.5" stroke="#4f8fbf" stroke-width="3.5" stroke-linecap="butt"/>
-  <path d="M482,161.5 L496,172 L484,179 Z" fill="#4f8fbf" stroke-linejoin="round"/>
+  <line x1="540" y1="262" x2="489.5" y2="174.5" stroke="#1971c2" stroke-width="3.5" stroke-linecap="butt"/>
+  <path d="M482,161.5 L496,172 L484,179 Z" fill="#1971c2" stroke-linejoin="round"/>
   <line x1="540" y1="262" x2="442.5" y2="236" stroke="#1971c2" stroke-width="3.5" stroke-linecap="butt"/>
   <path d="M428,232 L445.5,229 L441.5,243 Z" fill="#1971c2" stroke-linejoin="round"/>
   <line x1="482" y1="161.5" x2="436" y2="221.5" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
   <path d="M428,232 L431.5,217 L441.5,224.5 Z" fill="#1f2933" stroke-linejoin="round"/>
   <circle cx="540" cy="262" r="5" fill="#1f2933"/>
-  <foreignObject x="490" y="137" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#4f8fbf">$\overline{v}_1$</div></foreignObject>
+  <foreignObject x="490" y="137" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$\overline{v}_1$</div></foreignObject>
   <foreignObject x="375" y="233.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#1971c2">$\overline{v}_2$</div></foreignObject>
   <foreignObject x="394" y="166.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\Delta\overline{v}$</div></foreignObject>
   <foreignObject x="366" y="297.5" width="200" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\overline{v}_2 = \overline{v}_1 + \Delta\overline{v}$</div></foreignObject>
@@ -247,13 +247,13 @@ Tasaista ympyräliikettä kuvaa **kierrosaika** $T$, joka on aika, jossa kappale
 ```latex
 f = \frac{1}{T}
 ```
-missä $f$ on pyörimistaajuus ($\text{1/s}$) ja $T$ kierrosaika ($\text{s}$). Kun kierrosaika on $T = 0{,}50\,\text{s}$, kappale tekee $2{,}0$ kierrosta sekunnissa eli $f = 2{,}0\,\tfrac{1}{\text{s}}$. Pyörimistaajuus ilmoitetaan usein myös kierroksina minuutissa. Se muunnetaan sijoittamalla $1\,\text{min} = 60\,\text{s}$: $45\,\tfrac{1}{\text{min}} = \tfrac{45}{60\,\text{s}} = 0{,}75\,\tfrac{1}{\text{s}}$.
+missä $f$ on pyörimistaajuus ($\tfrac{1}{\text{s}}$) ja $T$ kierrosaika ($\text{s}$). Kun kierrosaika on $T = 0{,}50\,\text{s}$, kappale tekee $2{,}0$ kierrosta sekunnissa eli $f = 2{,}0\,\tfrac{1}{\text{s}}$. Pyörimistaajuus ilmoitetaan usein myös kierroksina minuutissa. Esimerkiksi $45\,\tfrac{1}{\text{min}}$ muunnetaan sijoittamalla $1\,\text{min} = 60\,\text{s}$, jolloin $45\,\tfrac{1}{\text{min}} = \tfrac{45}{60\,\text{s}} = 0{,}75\,\tfrac{1}{\text{s}}$.
 
 Yhdellä kierroksella kappale kulkee ympyrän kehän pituisen matkan $2\pi r$, ja siihen kuluu kierrosaika $T$. Koska vauhti on tasainen, nopeuden suuruus ympyräradalla eli **ratanopeus** on kuljettu matka jaettuna ajalla:
 ```latex
 v = \frac{2\pi r}{T} = 2\pi r f
 ```
-missä $v$ on ratanopeus ($\text{m/s}$), $r$ radan säde ($\text{m}$), $T$ kierrosaika ($\text{s}$) ja $f$ pyörimistaajuus ($\text{1/s}$). Jälkimmäinen muoto saadaan, kun $\tfrac{1}{T}$ korvataan pyörimistaajuudella $f$.
+missä $v$ on ratanopeus ($\text{m/s}$), $r$ radan säde ($\text{m}$), $T$ kierrosaika ($\text{s}$) ja $f$ pyörimistaajuus ($\tfrac{1}{\text{s}}$). Jälkimmäinen muoto saadaan, kun $\tfrac{1}{T}$ korvataan pyörimistaajuudella $f$.
 
 Kaavasta näkyy alun kysymyksen vastaus. Karusellin kaikki kohdat tekevät kierroksen samassa ajassa $T$, mutta reunalla seisova lapsi kiertää suurempaa ympyrää. Ratanopeus on suoraan verrannollinen säteeseen, kun kierrosaika on sama: kaksi kertaa kauempana keskipisteestä seisova lapsi kulkee samassa ajassa kaksi kertaa pidemmän matkan, joten hänen ratanopeutensa on kaksinkertainen. Samalla säteellä taas kierrosajan puolittaminen kaksinkertaistaa ratanopeuden.
 
@@ -335,7 +335,7 @@ Moni ajattelee, että tasaisessa ympyräliikkeessä nopeus ei muutu, koska nopeu
 
 Toinen virhe on luulla, että narun katketessa kappale lentää suoraan poispäin keskipisteestä. Mikään voima ei työnnä kappaletta ulospäin. Kun naru lakkaa vetämästä, kappale jatkaa sen hetkisen nopeutensa suuntaan eli radan tangentin suuntaan.
 
-Laskuissa tavallisia virheitä ovat halkaisijan sijoittaminen säteen paikalle kaavaan $v = \tfrac{2\pi r}{T}$ ja kierrosten käyttäminen minuuttia kohti muuntamatta minuutteja sekunneiksi.
+Laskuissa tavallisia virheitä ovat halkaisijan sijoittaminen säteen paikalle kaavaan $v = \tfrac{2\pi r}{T}$ ja pyörimistaajuuden sijoittaminen kierroksina minuutissa muuntamatta sitä kierroksiksi sekunnissa.
 
 ## Tiivistelmä
 - Ympyräliikkeessä kappaleen rata on ympyrä, jonka säde on $r$. Tasaisessa ympyräliikkeessä vauhti pysyy samana.

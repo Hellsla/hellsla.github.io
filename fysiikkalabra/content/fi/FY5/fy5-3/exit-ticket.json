@@ -5,6 +5,6 @@
   },
   {
     "q": "Pyörivän levyn kohta A on $3{,}0\\,\\text{cm}$:n ja kohta B $9{,}0\\,\\text{cm}$:n päässä akselista. Kuinka moninkertainen on B:n ratanopeus A:n ratanopeuteen verrattuna?",
-    "a": "Kolminkertainen. Kohdilla on sama kierrosaika, ja ratanopeus $v = \\tfrac{2\\pi r}{T}$ on silloin suoraan verrannollinen säteeseen: $9{,}0\\,\\text{cm} : 3{,}0\\,\\text{cm} = 3{,}0$."
+    "a": "Kolminkertainen. Kohdilla on sama kierrosaika, ja ratanopeus $v = \\tfrac{2\\pi r}{T}$ on silloin suoraan verrannollinen säteeseen. Etäisyyksien suhde on siis ratanopeuksien suhde:\n\n$\\dfrac{9{,}0\\,\\text{cm}}{3{,}0\\,\\text{cm}} = 3{,}0$."
   }
 ]

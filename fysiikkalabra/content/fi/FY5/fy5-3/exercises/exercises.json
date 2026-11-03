@@ -27,9 +27,9 @@
     {
       "id": "fy5-3-L1-04",
       "level": 1,
-      "text": "Hamsterin juoksupyörän säde on $0{,}13\\,\\text{m}$, ja pyörä pyörii pyörimistaajuudella $1{,}2\\,\\tfrac{1}{\\text{s}}$. Kuinka suuri on pyörän kehän ratanopeus?",
-      "answer": 0.98,
-      "unit": "m/s",
+      "text": "Jääkiekkoilija pyörittää kiekkoa narun päässä jäällä ympyrärataa, jonka säde on $1{,}5\\,\\text{m}$, ja kiekon ratanopeus on $3{,}0\\,\\text{m/s}$. Naru katkeaa. Kuinka kaukana radan keskipisteestä kiekko on $2{,}0\\,\\text{s}$ katkeamisen jälkeen? Jää on kitkaton, ja kiekko ei osu mihinkään.",
+      "answer": 6.2,
+      "unit": "m",
       "tolerance": 0.02
     },
     {

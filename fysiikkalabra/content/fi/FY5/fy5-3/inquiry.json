@@ -119,7 +119,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 1: naru katkeaa",
-      "intro": "Testaa ennuste 1. Kierrosaika pysyy vakiona. Valitse säde, paina *Käynnistä* ja sitten haluamassasi kohdassa samaa painiketta, jossa lukee nyt *Katkaise naru*. Kun kiekko on pysähtynyt laitaan, kirjaa mittaus: taulukkoon tulevat kulma $\\alpha$ reitin ja narun suunnan välillä, ratanopeus $v$ ennen katkeamista ja vauhti $v_\\text{irti}$ sen jälkeen. Toista ainakin kahdella eri säteellä; säteen muuttaminen palauttaa kiekon alkuun.",
+      "intro": "Testaa ennuste 1. Kierrosaika pysyy vakiona. Valitse säde, paina *Käynnistä* ja sitten haluamassasi kohdassa samaa painiketta, jossa lukee nyt *Katkaise naru*. Katkaise naru selvästi eri kohdissa rataa, esimerkiksi kun kiekko on radan ylä- ja vasemmassa reunassa, ja tarkkaile, mihin suuntaan kiekko lähtee kussakin kohdassa. Kun kiekko on pysähtynyt laitaan, kirjaa mittaus: taulukkoon tulevat kulma $\\alpha$ reitin ja narun suunnan välillä, ratanopeus $v$ ennen katkeamista ja vauhti $v_\\text{irti}$ sen jälkeen. Tee mittaus eri katkaisukohdissa ainakin kahdella eri säteellä, jotta näet, riippuuko lähtösuunta katkaisukohdasta vai säteestä; säteen muuttaminen palauttaa kiekon alkuun.",
       "initial": {
         "r": 2,
         "T": 4
@@ -147,7 +147,7 @@
         },
         {
           "key": "vIrti",
-          "label": "v irti (m/s)"
+          "label": "$v_\\text{irti}$ (m/s)"
         }
       ],
       "min": 2
@@ -397,10 +397,9 @@
       "criteria": [
         "Sanon, että moukari lähtee irrotushetkellä radan tangentin suuntaan eli kohtisuoraan vaijeria vastaan, ei suoraan ulospäin.",
         "Perustelen sen sillä, että irrotuksen jälkeen vaijeri ei enää vedä moukaria, joten vaakasuunnassa ei vaikuta voimaa ja moukari jatkaa irrotushetken nopeudella.",
-        "Selitän, että nopeuden suunta kääntyy ympyräradalla koko ajan, joten lähtösuunta riippuu siitä, missä kohdassa rataa irrotus tapahtuu.",
-        "Mainitsen, että painovoima kaartaa lentoradan alaspäin, mutta ylhäältä katsottuna lento jatkuu suoraan."
+        "Selitän, että nopeuden suunta kääntyy ympyräradalla koko ajan, joten lähtösuunta riippuu siitä, missä kohdassa rataa irrotus tapahtuu."
       ],
-      "model": "Moukarin nopeus on joka hetki radan tangentin suuntainen. Kun heittäjä päästää irti, vaijeri lakkaa vetämästä moukaria kohti keskipistettä, eikä vaakasuunnassa vaikuta enää voimaa (ilmanvastus on pieni). Newtonin ensimmäisen lain mukaan moukari jatkaa vaakasuunnassa irrotushetken nopeudella eli tangentin suuntaan, ei suoraan poispäin heittäjästä. Koska tangentin suunta kääntyy kierroksen aikana koko ajan, moukari lentää sektoriin vain, jos irrotus tapahtuu siinä kohdassa rataa, jossa tangentti osoittaa sektoriin. Painovoima kaartaa lentoradan alaspäin, mutta ylhäältä katsottuna lento on suora.",
+      "model": "Moukarin nopeus on joka hetki radan tangentin suuntainen. Kun heittäjä päästää irti, vaijeri lakkaa vetämästä moukaria kohti keskipistettä, eikä vaakasuunnassa vaikuta enää voimaa (ilmanvastus on pieni). Newtonin ensimmäisen lain mukaan moukari jatkaa vaakasuunnassa irrotushetken nopeudella eli tangentin suuntaan, ei suoraan poispäin heittäjästä. Koska tangentin suunta kääntyy kierroksen aikana koko ajan, moukari lentää sektoriin vain, jos irrotus tapahtuu siinä kohdassa rataa, jossa tangentti osoittaa sektoriin.",
       "optional": true
     },
     {

@@ -16,7 +16,7 @@
 **Muunnokset:** Ei tarvita: $\text{m} \cdot \tfrac{1}{\text{s}} = \text{m/s}$.
 **Sijoitus:** $v = 2\pi \cdot 0{,}20\,\text{m} \cdot 15\,\tfrac{1}{\text{s}} = 1{,}257\,\text{m} \cdot 15\,\tfrac{1}{\text{s}} = 18{,}85\,\text{m/s}$
 **Vastaus:** $19\,\text{m/s}$, kaksi merkitsevää numeroa kuten säteessä $0{,}20\,\text{m}$ ja pyörimistaajuudessa $15\,\tfrac{1}{\text{s}}$.
-**Järkevyys:** Kehä on noin $1{,}3\,\text{m}$, ja $15$ kierrosta sekunnissa antaa noin $15 \cdot 1{,}3\,\text{m} \approx 19\,\text{m}$ sekunnissa. Se on noin $70\,\text{km/h}$; siksi tuulettimen siipiin ei saa koskea.
+**Järkevyys:** Tarkistus toista tietä kierrosajan kautta: $T = \dfrac{1}{f} = \dfrac{1}{15\,\tfrac{1}{\text{s}}} = 0{,}0667\,\text{s}$, joten $v = \dfrac{2\pi \cdot 0{,}20\,\text{m}}{0{,}0667\,\text{s}} = 18{,}85\,\text{m/s}$, sama kuin edellä. Suuruusluokka sopii: kehä on noin $1{,}3\,\text{m}$, ja $15$ kierrosta sekunnissa antaa noin $19\,\text{m}$ sekunnissa eli noin $70\,\text{km/h}$.
 
 ## fy5-3-L1-03
 **Annettu:** kierrosaika $T = 4{,}0\,\text{s}$
@@ -29,14 +29,14 @@
 **Järkevyys:** Kierros kestää $4\,\text{s}$, joten sekunnissa ehditään neljäsosa kierroksesta. Minuutissa siivet pyörivät $0{,}25 \cdot 60 = 15$ kierrosta, mikä on tavallinen tuulimyllyn tahti.
 
 ## fy5-3-L1-04
-**Annettu:** pyörän säde $r = 0{,}13\,\text{m}$, pyörimistaajuus $f = 1{,}2\,\tfrac{1}{\text{s}}$
-**Kysytty:** kehän ratanopeus $v$ yksikössä $\text{m/s}$
-**Periaate:** Pyörän kehän jokainen kohta on tasaisessa ympyräliikkeessä, jonka säde on pyörän säde. Yhdellä kierroksella kohta kulkee matkan $2\pi r$, ja kierroksia on $f$ sekunnissa.
-**Kaava:** $v = 2\pi r f$
-**Muunnokset:** Ei tarvita: säde on metreinä ja pyörimistaajuus yksikössä $\tfrac{1}{\text{s}}$.
-**Sijoitus:** $v = 2\pi \cdot 0{,}13\,\text{m} \cdot 1{,}2\,\tfrac{1}{\text{s}} = 0{,}8168\,\text{m} \cdot 1{,}2\,\tfrac{1}{\text{s}} = 0{,}9802\,\text{m/s}$
-**Vastaus:** $0{,}98\,\text{m/s}$, kaksi merkitsevää numeroa kuten säteessä $0{,}13\,\text{m}$ ja pyörimistaajuudessa $1{,}2\,\tfrac{1}{\text{s}}$.
-**Järkevyys:** Kehä on noin $0{,}8\,\text{m}$, ja vähän yli kierros sekunnissa on noin $1\,\text{m}$ sekunnissa. Se on noin $3{,}5\,\text{km/h}$, sopiva vauhti juoksevalle hamsterille.
+**Annettu:** radan säde $r = 1{,}5\,\text{m}$, ratanopeus $v = 3{,}0\,\text{m/s}$, aika katkeamisen jälkeen $t = 2{,}0\,\text{s}$
+**Kysytty:** kiekon etäisyys $d$ radan keskipisteestä yksikössä $\text{m}$
+**Periaate:** Kun naru katkeaa, kiekkoon ei vaikuta vaakasuunnassa voimaa, joten kiekko jatkaa suoraan katkeamishetken nopeudella. Nopeus on radan tangentin suuntainen eli kohtisuorassa sädettä vastaan, joten kiekko liikkuu tangentin suuntaan matkan $s = vt$. Keskipisteestä katkeamiskohtaan on matka $r$ ja siitä eteenpäin kohtisuoraan matka $s$, joten Pythagoraan lauseen mukaan $d^2 = r^2 + s^2$.
+**Kaava:** $d = \sqrt{r^2 + (vt)^2}$
+**Muunnokset:** Ei tarvita: säde on metreinä, aika sekunteina ja nopeus yksikössä $\text{m/s}$.
+**Sijoitus:** $d = \sqrt{(1{,}5\,\text{m})^2 + (3{,}0\,\text{m/s} \cdot 2{,}0\,\text{s})^2} = \sqrt{2{,}25\,\text{m}^2 + 36\,\text{m}^2} = 6{,}185\,\text{m}$
+**Vastaus:** $6{,}2\,\text{m}$, kaksi merkitsevää numeroa kuten tiedoissa $1{,}5\,\text{m}$, $3{,}0\,\text{m/s}$ ja $2{,}0\,\text{s}$.
+**Järkevyys:** Kiekko kulkee suoraan $s = 6{,}0\,\text{m}$, ja etäisyys keskipisteestä on hieman tätä suurempi, koska lähtöpiste on jo $1{,}5\,\text{m}$:n päässä. Jos kiekko lähtisi säteen suuntaan ulospäin, etäisyys olisi $r + s = 7{,}5\,\text{m}$; tangentin suunnassa se jää tätä pienemmäksi, kuten tulos $6{,}2\,\text{m}$.
 
 ## fy5-3-L1-05
 **Annettu:** radan säde $r = 6{,}78 \cdot 10^{6}\,\text{m}$, kierrosaika $T = 5{,}55 \cdot 10^{3}\,\text{s}$
@@ -96,7 +96,7 @@
 **Muunnokset:** Ei tarvita: säteiden yksikkö supistuu.
 **Sijoitus:** $v_2 = \dfrac{40{,}2\,\text{m}}{36{,}5\,\text{m}} \cdot 7{,}0\,\text{m/s} = 1{,}1014 \cdot 7{,}0\,\text{m/s} = 7{,}710\,\text{m/s}$
 **Vastaus:** $7{,}7\,\text{m/s}$, kaksi merkitsevää numeroa kuten sisemmän juoksijan vauhdissa $7{,}0\,\text{m/s}$.
-**Järkevyys:** Ulompi kaari on noin $10\,\%$ pidempi, joten vauhdinkin on oltava noin $10\,\%$ suurempi. Kaarteen kestoksi tulee $t = \tfrac{\pi \cdot 36{,}5\,\text{m}}{7{,}0\,\text{m/s}} = 16{,}4\,\text{s}$ kummallekin. Siksi ulkoradan juoksijan lähtöpaikka on porrastettu eteenpäin.
+**Järkevyys:** Ulompi kaari on noin $10\,\%$ pidempi, joten vauhdinkin on oltava noin $10\,\%$ suurempi. Kummallakin kaarteen kesto on $t = \tfrac{\pi \cdot 36{,}5\,\text{m}}{7{,}0\,\text{m/s}} = 16{,}4\,\text{s}$, koska rinnakkain pysyminen tarkoittaa, että molemmat saapuvat kaarteen loppuun yhtä aikaa. Kilpajuoksussa ulkoradan lähtöpaikka porrastetaan eteenpäin, jotta eripituiset kaaret tasoittuvat; tässä tehtävässä juoksijat lähtevät rinnakkain eikä porrastusta tarvita.
 
 ## fy5-3-L3-02
 **Annettu:** vauhti $v = 36\,\text{km/h}$, auto kiertää neljänneksen ympyrästä
@@ -111,7 +111,7 @@
 ## fy5-3-L3-03
 **Annettu:** eturattaan säde $r_\text{e} = 10{,}0\,\text{cm}$, takarattaan säde $r_\text{t} = 4{,}0\,\text{cm}$, takapyörän säde $R = 0{,}34\,\text{m}$, eturattaan pyörimistaajuus $f_\text{e} = 1{,}0\,\tfrac{1}{\text{s}}$; rengas ei luista
 **Kysytty:** pyörän vauhti $u$ yksikössä $\text{km/h}$
-**Periaate:** Ketju liikkuu molempien rattaiden kehällä samalla ratanopeudella $v_\text{k}$, joten $2\pi r_\text{e} f_\text{e} = 2\pi r_\text{t} f_\text{t}$. Takapyörä pyörii samalla taajuudella $f_\text{t}$ kuin takaratas. Kun rengas ei luista, renkaan pinnan ratanopeus akselin ympäri on yhtä suuri kuin pyörän vauhti maata vasten.
+**Periaate:** Ketju liikkuu molempien rattaiden kehällä samalla ratanopeudella $v_\text{k}$, joten $2\pi r_\text{e} f_\text{e} = 2\pi r_\text{t} f_\text{t}$. Takapyörä pyörii samalla taajuudella $f_\text{t}$ kuin takaratas. Kun rengas ei luista, renkaan maata koskettava kohta on hetkellisesti levossa maahan nähden, joten pyörä etenee yhdellä kierroksella renkaan kehän $2\pi R$ verran ja vauhti on $u = 2\pi R f_\text{t}$.
 **Kaava:** $f_\text{t} = \dfrac{r_\text{e}}{r_\text{t}}\, f_\text{e}$ ja $u = 2\pi R f_\text{t}$, josta $u = 2\pi R\, \dfrac{r_\text{e}}{r_\text{t}}\, f_\text{e}$
 **Muunnokset:** Rattaiden säteiden yksikkö supistuu. Lopuksi $1\,\text{m/s} = \dfrac{0{,}001\,\text{km}}{\frac{1}{3600}\,\text{h}} = 3{,}6\,\tfrac{\text{km}}{\text{h}}$.
 **Sijoitus:** $f_\text{t} = \dfrac{10{,}0\,\text{cm}}{4{,}0\,\text{cm}} \cdot 1{,}0\,\tfrac{1}{\text{s}} = 2{,}5\,\tfrac{1}{\text{s}}$, $u = 2\pi \cdot 0{,}34\,\text{m} \cdot 2{,}5\,\tfrac{1}{\text{s}} = 5{,}341\,\text{m/s} = 5{,}341 \cdot 3{,}6\,\tfrac{\text{km}}{\text{h}} = 19{,}23\,\tfrac{\text{km}}{\text{h}}$

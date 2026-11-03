@@ -5,7 +5,7 @@ from figlib import (Fig, INK, MUTED, WHITE, RULE, RULE_LIGHT, COLD, COLD_LIGHT, 
                     ALUMINIUM, GOOD, GOOD_LIGHT, SAND, SAND_LIGHT, SAND_DARK, GRAIN, n)
 import herolib as H
 
-V_LIGHT = ICE_EDGE            # an earlier velocity: a lighter blue than the current one
+V_LIGHT = COLD                # both velocities are blue; the labels tell v1 from v2
 
 
 def pos(cx, cy, R, deg):

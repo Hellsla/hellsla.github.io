@@ -9,7 +9,7 @@ a = {}
 a["fy5-3-L1-01"] = 2 * pi * 2.5 / 6.0                    # carousel rim: v = 2π · 2,5 m / 6,0 s = 2,618 m/s -> 2,6 m/s
 a["fy5-3-L1-02"] = 2 * pi * 0.20 * 15                    # fan blade tip: v = 2π · 0,20 m · 15 1/s = 18,85 m/s -> 19 m/s
 a["fy5-3-L1-03"] = 1 / 4.0                               # windmill sails: f = 1 / 4,0 s = 0,25 1/s
-a["fy5-3-L1-04"] = 2 * pi * 0.13 * 1.2                   # hamster wheel: v = 2π · 0,13 m · 1,2 1/s = 0,9802 m/s -> 0,98 m/s
+a["fy5-3-L1-04"] = math.hypot(1.5, 3.0 * 2.0)            # puck after the string breaks: d = √(r² + (vt)²) = √(1,5² + 6,0²) m = 6,185 m -> 6,2 m
 a["fy5-3-L1-05"] = 2 * pi * 6.78e6 / 5.55e3              # space station: v = 2π · 6,78e6 m / 5,55e3 s = 7675,6 m/s -> 7680 m/s
 # Level 2: a conversion or a rearrangement
 f_single = 45 / 60                                       # 45 1/min = 45 / 60 s = 0,75 1/s

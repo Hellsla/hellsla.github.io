@@ -7,16 +7,16 @@
 // direction at the release and its speed after the release.
 // Left (wide) or top (narrow): the rink with the path, the string, the puck and its velocity as a blue arrow tangent to
 // the path; optionally the puck's places and velocities at twelve equal time steps over the last lap. Right or bottom:
-// the velocity a twelfth of a lap ago (v̄₁, lighter blue) and now (v̄₂, blue) drawn from one point, and their difference
+// the velocity a twelfth of a lap ago (v̄₁, blue) and now (v̄₂, blue) drawn from one point, and their difference
 // Δv̄ (ink). That panel has its own scale: the speed is drawn at a fixed length, so it shows only directions and the
 // change relative to the speed. Every canvas text goes through lab(), which pushes its ink box to simState.labels.
 // p5.js 1.9 instance mode.
 new p5((p) => {
   const FENCE = 3.8, LAPS = 12;                                         // m: the boards; strobe steps per lap
-  const BLUE = [25, 113, 194], BLUE1 = [79, 143, 191], INKC = [31, 41, 51], MUTEDC = [107, 116, 128], RULEC = [201, 194, 178];
+  const BLUE = [25, 113, 194], INKC = [31, 41, 51], MUTEDC = [107, 116, 128], RULEC = [201, 194, 178];
   // geometry: wide 600 x 400 (rink left, vectors right); narrow (sim-root < 500 px) 600 x 960, stacked at full width
-  const WIDE = { cx: 200, cy: 200, z: 50, ox: 500, oy: 262, L: 84, H: 400 };
-  const NARROW = { cx: 300, cy: 292, z: 72, ox: 330, oy: 774, L: 112, H: 960 };
+  const WIDE = { cx: 190, cy: 200, z: 46, ox: 488, oy: 235, L: 94, H: 400, pw: 380 };
+  const NARROW = { cx: 300, cy: 292, z: 72, ox: 330, oy: 772, L: 150, H: 960, pw: 600 };
   let G = WIDE, narrow = false, sk = 1, fh = 11, labels = [];
   let btn, slR, slT, lR, lT, selSpeed, cbTrail, readout;
   let t, running, phase, rel;                                            // rel: {t, x, y, vx, vy} at the release
@@ -75,7 +75,7 @@ new p5((p) => {
   p.draw = () => {   // the speed select scales simulated time, so it changes only the pace
     if (running) advance(Math.min(p.deltaTime, 100) / 1000 * Number(selSpeed.value()));
     const P = params(), v = 2 * Math.PI * P.r / P.T, f = 1 / P.T, dtStep = P.T / LAPS;
-    const now = state(t, P), before = state(t - dtStep, P);
+    const now = state(t, P), before = state(rel ? Math.max(t - dtStep, rel.t) : t - dtStep, P);
     const dvx = now.vx - before.vx, dvy = now.vy - before.vy, dv = Math.hypot(dvx, dvy);
     const tCircle = rel ? rel.t : t, N = Math.floor(tCircle / P.T + 1e-9);
     let alpha = null, vIrti = null;
@@ -97,7 +97,7 @@ new p5((p) => {
     narrow = cw < 500;
     const k = Math.max(1, 600 / cw);
     sk = narrow ? k : 1;                                                 // strokes grow with the label size on a phone
-    fh = narrow ? Math.round(14 * k) : Math.round(11 * k);
+    fh = narrow ? Math.round(14 * k) : Math.round(13 * k);
     G = narrow ? NARROW : WIDE;
     if (p.__H !== G.H) { p.__H = G.H; p.resizeCanvas(600, G.H); setTimeout(() => p.redraw(), 0); return; }   // the resize clears the drawing state: draw again next frame
     labels = [];
@@ -110,7 +110,7 @@ new p5((p) => {
   // --- the rink seen from above ---
   function rink(P, v, now, dtStep) {
     const { cx, cy, z } = G, X = (xm) => cx + xm * z, Y = (ym) => cy - ym * z;
-    const pw = narrow ? 600 : 400, ph = narrow ? 584 : 400;
+    const pw = G.pw, ph = narrow ? 584 : 400;
     grect(0, 0, pw, ph, [[208, 230, 251], [238, 245, 249]]);
     const c = p.drawingContext; c.save();                               // the ice inside the boards
     const gr = c.createRadialGradient(cx - 40 * sk, cy - 50 * sk, 10, cx, cy, FENCE * z);
@@ -160,14 +160,23 @@ new p5((p) => {
   }
 
   // --- the velocities a twelfth of a lap apart from one point, and their difference ---
-  function vectors(now, before, dv, v) {
-    const { ox, oy, L } = G;
-    const tx0 = narrow ? 14 : 412, ty0 = narrow ? 584 + fh * 1.4 : 14 + fh;
+  function vectors(now, before, dv, v) {                                 // larger labels: this panel carries the point
+    const fh0 = fh;
+    try { vectors2(now, before, dv, v); } finally { fh = fh0; }
+  }
+  function vectors2(now, before, dv, v) {
+    const fV = Math.round(fh * (narrow ? 1.25 : 1.15));       // the vector labels; the title and Δt keep the base size
+    const { L } = G;
+    const tx0 = narrow ? 14 : 392, ty0 = narrow ? 584 + fh * 1.4 : 14 + fh;
     lab(__('muutos'), tx0, ty0, 'l', INKC);
     lab('$\\Delta t = \\tfrac{T}{12}$', tx0, ty0 + fh * 2, 'l', MUTEDC);
+    fh = fV;
     const s1 = Math.hypot(before.vx, before.vy), s2 = Math.hypot(now.vx, now.vy);
     if (phase === 'loppu' || s2 < 1e-9) return;
     const u1 = [before.vx / s1, -before.vy / s1], u2 = [now.vx / s2, -now.vy / s2];
+    // the triangle is centred in its panel: its bounding box (origin, both tips) sits on the panel's centre
+    const bx = [0, L * u1[0], L * u2[0]], by = [0, L * u1[1], L * u2[1]];
+    const ox = G.ox - (Math.min(...bx) + Math.max(...bx)) / 2, oy = G.oy - (Math.min(...by) + Math.max(...by)) / 2;
     const a1 = [ox + L * u1[0], oy + L * u1[1]], a2 = [ox + L * u2[0], oy + L * u2[1]];
     p.noStroke(); p.fill(...INKC); p.circle(ox, oy, 7 * sk);
     if (dv / v < 1e-6) {
@@ -176,10 +185,10 @@ new p5((p) => {
       lab('$\\Delta\\overline{v} = 0$', tx0, ty0 + fh * 4, 'l', INKC);
       return;
     }
-    vArrow(ox, oy, L * u1[0], L * u1[1], BLUE1, 3.5 * sk);
+    vArrow(ox, oy, L * u1[0], L * u1[1], BLUE, 3.5 * sk);
     vArrow(ox, oy, L * u2[0], L * u2[1], BLUE, 3.5 * sk);
     vArrow(a1[0], a1[1], a2[0] - a1[0], a2[1] - a1[1], INKC, 3 * sk, true);
-    lab('$\\overline{v}_1$', a1[0] + u1[0] * fh * 0.9, a1[1] + u1[1] * fh * 0.9 + fh * 0.36, 'c', BLUE1);
+    lab('$\\overline{v}_1$', a1[0] + u1[0] * fh * 0.9, a1[1] + u1[1] * fh * 0.9 + fh * 0.36, 'c', BLUE);
     lab('$\\overline{v}_2$', a2[0] + u2[0] * fh * 0.9, a2[1] + u2[1] * fh * 0.9 + fh * 0.36, 'c', BLUE);
     const mx = (a1[0] + a2[0]) / 2, my = (a1[1] + a2[1]) / 2, md = Math.hypot(mx - ox, my - oy);
     lab('$\\Delta\\overline{v}$', mx + (mx - ox) / md * fh * 2.3, my + (my - oy) / md * fh * 2.3 + fh * 0.36, 'c', INKC);
