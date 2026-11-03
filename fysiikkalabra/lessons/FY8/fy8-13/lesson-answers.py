@@ -33,7 +33,7 @@ for x in (0, 3, 6, 12, 18, 24, 30):
 # the sim's dose at r = 2,0 m for 30 min: 10,0 µSv/h · 0,5 h = 5,00 µSv
 a["sim-dose-2m-30min"] = hdot(2.0, 0) * 30 / 60
 
-# ---------------------------------------------------------------- Ydinajatus: the Finnish average dose (STUK 2023)
+# ---------------------------------------------------------------- Ydinajatus: the Finnish average dose (STUK-A263, 2020)
 SOURCES = {"radon": 4.0, "luonto": 1.1, "terveydenhuolto": 0.8}
 a["total"] = sum(SOURCES.values())                         # 5,9 mSv
 a["radon-share-%"] = 100 * SOURCES["radon"] / a["total"]   # 67,8 % -> about two thirds
