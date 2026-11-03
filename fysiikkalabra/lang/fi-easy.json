@@ -123,6 +123,8 @@
     "local_status_ready": "Valmis"
   },
   "lesson": {
+    "photos": "Valokuvat",
+    "photo_by": "Kuva",
     "steps_nav": "Oppitunnin vaiheet",
     "theory": "Teoria",
     "simulation": "Simulaatio",

@@ -355,6 +355,8 @@ The same power can be transferred in two ways: with a low voltage and a large el
 
 A transformer raises the voltage at the power plant and lowers it again close to the user. In a good transformer the loss is very small.
 
+<figure class="unit-photo"><img src="pics/fy2/muurame-transformer.webp" alt="A large grey-green transformer with insulators and fans at a fenced substation among birch trees."><figcaption>A substation transformer in Muurame, Finland. At a substation the transformer lowers the high voltage of the power line to the voltage of the distribution network.</figcaption></figure>
+
 ### District heating
 
 **District heating** transfers energy as hot water. The water heated at the heating plant flows in the supply pipe to buildings and gives heat to the building's heating system. The cooled water returns in the return pipe to be heated again. The pipes are underground in thick insulation so that as little heat as possible goes into the surrounding ground.

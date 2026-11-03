@@ -688,3 +688,21 @@ details.inv-teacher>summary{min-height:48px;display:flex;align-items:center;font
 .investigation table{border-collapse:collapse;max-width:100%;display:block;overflow-x:auto}
 .investigation th,.investigation td{border:1px solid var(--line);padding:.35rem .6rem;min-width:4.5rem}
 .inv-section{scroll-margin-top:var(--sticky-top)}
+/* a licensed photograph (FY14 units 2026-11-01; FY1–FY3 lessons 2026-11-03, assets/pics/<course>/photos.json): never wider than the reading column, at most 22rem tall so a portrait never
+   fills a phone screen, centred in its box (the box keeps the width and height attributes' ratio while it loads);
+   the caption under it, the credit on its own line */
+figure.unit-photo{display:table;width:min(100%,20rem);margin:1.25rem 0 1.5rem}
+figure.unit-photo img{display:block;width:auto;max-width:min(100%,24rem);height:auto;max-height:14rem}
+figure.unit-photo figcaption{display:table-caption;caption-side:bottom;margin-top:.5rem;font-size:var(--fs-small);line-height:1.45;color:var(--ink-2)}
+figure.unit-photo .photo-credit{display:block;margin-top:.2rem;font-size:var(--fs-small)}
+figure.unit-photo.logo img{width:100%;max-width:16rem;max-height:none}
+/* On a wide screen a photo in the running text sits beside the text column, in the empty space to its right
+   (teacher 2026-11-01); inside a box or on a narrower screen it stays in the column. */
+@media (min-width:80rem){
+  .act-theory>figure.unit-photo:not(:has(+ .fx-wide, + .fig-row.side, + .example, + .fx-map, + .fx-timeline, + * + .fx-wide, + * + .fig-row.side, + * + .example, + * + .fx-map, + * + .fx-timeline, + * + * + .fx-wide, + * + * + .fig-row.side, + * + * + .example, + * + * + .fx-map, + * + * + .fx-timeline)){float:right;clear:right;margin:.35rem calc(100% - var(--measure) - 4.5rem - 20rem) 1rem 0}
+  details .activity.act-theory>figure.unit-photo.unit-photo{float:none;margin:1.25rem 0 1.5rem}
+  .act-theory>.fx-wide,.act-theory>.fig-row.side,.act-theory>.example,.act-theory>.fx-map,.act-theory>.fx-timeline,.act-sim,section.stage,.unit-credits{clear:right}
+}
+/* the photographs' credits at the end of the page */
+.unit-credits{max-width:var(--measure);margin-top:var(--stage-space);border-top:1px solid var(--line);padding-top:1.25rem;font-size:var(--fs-inner)}
+.unit-credits ul{padding-left:1.2rem}

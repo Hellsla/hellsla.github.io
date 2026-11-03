@@ -206,6 +206,8 @@ Voimamittarin asteikko pitää kalibroida. Se tarkoittaa, että asteikkoon merki
 
 Kappaleen paino kertoo, kuinka voimakas Maan ja kappaleen välinen vuorovaikutus on. Paino on voima, ja sen yksikkö on newton. Massa on aivan eri asia. Massa kertoo, kuinka paljon ainetta kappaleessa on, ja sen yksikkö on kilogramma. Massa on sama kaikkialla, mutta paino riippuu siitä, missä kappale on. Kuu on paljon pienempi taivaankappale kuin Maa. Kuun ja astronautin välinen vuorovaikutus on heikompi kuin Maan ja astronautin. Siksi astronautti painaa Kuussa vähemmän.
 
+<figure class="unit-photo"><img src="pics/fy3/iss-cupola.webp" alt="Astronautti leijuu avaruusaseman ikkunan edessä. Ikkunasta näkyy Maa."><figcaption>Astronautti Jessica Watkins leijuu avaruusasemalla vuonna 2022. Maa vetää häntä myös siellä. Asema ja astronautti putoavat yhdessä Maan ympäri.</figcaption></figure>
+
 ## Kaava: Paino
 Kaksi samanlaista kappaletta venyttää voimamittarin jousta kaksi kertaa niin paljon kuin yksi. Siksi paino on suoraan verrannollinen massaan:
 ```latex

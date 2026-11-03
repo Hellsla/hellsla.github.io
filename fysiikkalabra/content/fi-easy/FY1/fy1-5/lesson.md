@@ -229,6 +229,8 @@ Tasainen liike on liikettä suoraa pitkin vakionopeudella. Kappale kulkee yhtä 
   <foreignObject x="80" y="301.5" width="440" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{yhtä pitkissä ajoissa yhtä pitkät matkat}$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy1/night-traffic-light-trails.webp" alt="Pimeässä kuvassa on punaisia ja valkoisia valoviiruja."><figcaption>Kun kuva otetaan pitkällä valotusajalla, autojen valot piirtävät viivoja. Kuvasta näkyy liikkeen rata.</figcaption></figure>
+
 ### Suoraan verrannollisuus
 Kaksi suuretta ovat suoraan verrannollisia, jos niiden suhde on aina sama. Oletetaan, että tasainen liike alkaa nollakohdasta. Silloin kuljettu matka $s$ ja aika $t$ ovat suoraan verrannollisia. Kaksinkertainen aika antaa kaksinkertaisen matkan. Suhde $s : t$ on nopeus $v$. $(t, s)$-kuvaajassa tämä näkyy suorana, joka kulkee origon kautta.
 

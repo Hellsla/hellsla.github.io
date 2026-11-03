@@ -192,6 +192,8 @@ Kun kappale päästetään putoamaan levosta, sen nopeus kasvaa. **Vapaa pudotus
 
 Nopeuden muutosta aikayksikköä kohti kutsutaan **kiihtyvyydeksi**. Vapaasti putoavan kappaleen kiihtyvyys on **putoamiskiihtyvyys** $g = 9{,}81\,\text{m/s}^2$. Yksikkö $\text{m/s}^2$ luetaan "metriä sekunnissa sekunnissa". Nopeus mitataan yksiköllä $\text{m/s}$, ja se muuttuu joka sekunti tämän verran. Luku $g$ ei siis ole nopeus. Se kertoo, kuinka nopeasti nopeus kasvaa.
 
+<figure class="unit-photo"><img src="pics/fy1/bouncing-ball-strobe.webp" alt="Keltaisen pallon kuvia kahtena kaarena mustalla taustalla."><figcaption>Pomppiva pallo on kuvattu yhtä pitkin väliajoin. Kun pallo putoaa, sen nopeus kasvaa. Siksi kuvien välit kasvavat.</figcaption></figure>
+
 ### Massa ei vaikuta putoamiseen
 Kun ilmanvastusta ei ole, kaikki kappaleet putoavat samalla kiihtyvyydellä. Kappaleen massalla ei ole väliä. Tyhjiössä vasara ja höyhen putoavat yhtä nopeasti. Kuulalla, jonka massa on $5\,\text{kg}$, on joka hetki sama nopeus kuin kuulalla, jonka massa on $1\,\text{kg}$. Syy selitetään myöhemmin voimien yhteydessä. Tässä luvussa tämä on koetulos, jonka tutkit itse.
 
