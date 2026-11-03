@@ -1,18 +1,17 @@
-VERDICT: FAIL
-CONTENT-HASH: 9ec8522d9ac8e1c9
+VERDICT: PASS
+CONTENT-HASH: 25bd8e6cddcd5332
 ## Blocking
-- inquiry.json (esimerkki, siirto) / lesson.md Sekakytkentä — oppimistavoite "ratkaisemaan sekakytkennän virrat ja jännitteet vaiheittain" ei saa porrastettua esimerkkiä: Esimerkki on pelkkä rinnankytkentä, simulaatiossa ei ole sekakytkentää, ja ainoa sekakytkentätehtävä (siirto) on valinnainen ja ensimmäinen kohtaaminen ilman mallia. Lesson.md:n kappale sanoo vain "kunkin osan jännite ja virta saadaan Ohmin laista" (osajännitteiden päättely jää näyttämättä). Korjaus: lisää porrastettu sekakytkentäesimerkki (R_23, R, I, U_1, U_23, haaravirrat) tai tee siirto pakolliseksi ja nosta sen ratkaisun vaiheet tekstiin ennen tehtävää.
 ## Polish
-- inquiry.json johtopaatos criteria 4 — kehote ei pyydä mainitsemaan mallin arvoja, joten kriteeri arvioi muuta kuin kysytään. Lisää kehotteeseen "ja mitä oletuksia arvot vaativat" tai poista kriteeri.
-- inquiry.json ennuste-2 / koe-2 — ennusteen arvo koskee R_2 = 100 Ω, mutta kokeen alkuarvo on 200 Ω ja min 2 sallii kaksi muuta arvoa (200, 50): ennuste voi jäädä testaamatta. Aseta alkutilaksi 100 Ω tai pyydä arvoa 100 Ω kokeen ohjeessa.
-- inquiry.json ennuste-2 — oikea vaihtoehto sisältää perustelun ("kumpikin saa saman virran kuin yksin"), jolloin se erottuu muista; muotoile vaihtoehdot rinnakkain pelkkinä väitteinä.
-- lesson.md Kokonaisresistanssi — väite "sarjassa suurempi kuin yksikään" tulee ennen johtoa; viittaa kaavaosioon tai perustele lyhyesti.
-- inquiry.json tarkistus-1 — oikea vastaus on myös muotoilultaan yksinkertaisin; sekoita kaksi harhaluuloa samaan vaihtoehtoon.
+- inquiry.json esimerkki — porrastettu esimerkki on yhä pelkkä rinnankytkentä; sekakytkentä opetetaan tekstin viisivaiheisella listalla ja pakollisella siirto-tehtävällä (kolme vihjettä, ratkaisu). Riittää, mutta ensimmäinen sekakytkentä ilman vaiheistettua mallia on tiukka; harkitse siirron ratkaisun vaiheiden nostamista Sekakytkentä-osion loppuun lyhyellä luvullisella esimerkillä.
+- inquiry.json ennuste-2 — oikea vaihtoehto ("kumpikin saa saman virran kuin yksin") sisältää perustelun muiden ollessa väitteitä; muotoile kolme vaihtoehtoa yhtä pitkiksi, jotta oikea ei erotu muodosta.
+- lesson.md Kokonaisresistanssi — "sarjassa suurempi kuin yksikään vastuksista" esitetään ennen johtoa; lisää viittaus kaavaosioon.
+- inquiry.json tarkistus-1 — oikea vastaus on lyhin ja selvin; sekoita harhaluuloja vaihtoehtoihin.
 ## Checked
-- Hash alussa ja lopussa 9ec8522d9ac8e1c9; vain pakettiin ja kuvakaappauksiin nojaten (contact-1).
-- Hook ja kysymys eivät paljasta vastausta; kertaus ja ennusteet edellyttävät sitoutumista, palaute korjaa virhekäsityksen (virta ei kulu).
-- Sarja- ja rinnankytkentäkaaviot, kuvaaja ja sekakytkentäkuva ovat luettavissa 390 px:llä; värit eivät ole ainoa tieto.
-- Kokeet voivat kumota ennusteet (R_2 muuttuu, I_1 ja jännitteet taulukossa); mallin arvot nimetään mallin arvoiksi.
-- Esimerkki vaiheittainen, rinnankytkentä, käänteisluvun käännös ja järkevyystarkistus mukana.
+- Hash alussa ja lopussa 25bd8e6cddcd5332; tuki kierroksen 1 korjauksille (sekakytkentä, johtopäätöksen kehote, koe-2:n alkuarvo 100 Ω).
+- Hook ja kysymys eivät paljasta vastausta; ennusteet vaativat sitoutumista, palaute korjaa virhekäsityksen (virta ei kulu, kokonaisresistanssi ei kasva rinnan).
+- Kokeet voivat kumota ennusteet (R_2 vaihtelee, I_1, virrat ja jännitteet taulukossa); mallin arvot nimetään mallin arvoiksi ja kriteeri 4 vastaa kehotetta.
+- Sarja-, rinnan- ja sekakytkentäkaaviot, kuvaaja ja siirto-kuva luettavia 390 px:llä; siirto-kuva antaa kaikki arvot ilman vastausta.
+- Simulaatio 390 px:llä ymmärrettävä: lukemat, jännitteet ja sama virta -merkintä näkyvät, käyttöohje ja oletukset avattavissa.
+- Esimerkki vaiheittain (7 vaihetta), käänteisluvun kääntö ja järkevyystarkistus mukana.
 - Etsi virhe -vaihtoehdot perustuvat todellisiin virheisiin; tarkistukset testaavat käsitteen, laskun ja selityksen.
-- Suomi ja sanasto (sarjaankytkentä, rinnankytkentä, kokonaisresistanssi) johdonmukaisia; työmäärä yksi oppitunti.
+- Suomi ja sanasto johdonmukaisia; työmäärä yksi oppitunti (valinnaiset kertaus, pohdi, tarkistus-3).

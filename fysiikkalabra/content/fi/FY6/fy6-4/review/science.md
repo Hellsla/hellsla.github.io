@@ -1,20 +1,18 @@
-VERDICT: FAIL
-CONTENT-HASH: 9ec8522d9ac8e1c9
+VERDICT: PASS
+CONTENT-HASH: 25bd8e6cddcd5332
 
 ## Blocking
-- assets/sims/fy6/fy6-4/sim.js:91 — **A**: `Math.min(360, 600 * w.I)` caps the dot speed at 0.6 A in each wire separately, so above that the main-wire dots are no longer the sum of the branch dots. That sum is the lesson's central idea (I = I1 + I2) and what `howto` and sim-spec promise. It happens inside koe-2's vary range: with 6 V, R1 = 100 Ω and R2 = 10 Ω, the main wire (660 mA) moves as fast as branch 2 (600 mA), while branch 1 moves at 36 px/s. At 12 V with 10 Ω || 10 Ω all three wires look the same. — Fix: one common scale factor, e.g. `k = Math.min(1, 0.6 / C.I)` and `v = 600 * w.I * k`.
 
 ## Polish
-- content/fi/FY6/fy6-4/lesson.md:102 — "energiaa muuttuu lämmöksi, ja siksi … on jännite" reads as reversed causation. Suggest: "Vastuksen jännite kertoo, kuinka paljon kunkin varauksen sähköistä energiaa muuttuu siinä lämmöksi."
-- content/fi/FY6/fy6-4/inquiry.json:85 — the 120 mA answer to ennuste-2 assumes an ideal battery, and the student sees the prompt before the model text. Add "ihanteelliseen".
-- content/fi/FY6/fy6-4/inquiry.json:320 — the not-inverted error gives 0.5985 A, within 2 % of the mistake value 0.6, so that student gets "otit huomioon vain rinnakkaisosan", which is the wrong diagnosis. Combine the two feedbacks.
-- sim.js (rinnan) and the parallel figure — a node dot is drawn at a corner where the wire does not branch, (Rx, T) and (476, 86).
+- lessons/FY6/fy6-4/figures.py:123 — `mixed_circuit` puts a node dot at (R, T), and in the lesson figure "mixed" there is one at (278, 84). Both are plain corners where nothing branches; the real junction is at (R, ym). The sim and the parallel figure were fixed in round 1, but the mixed, task and siirto figures still draw this dot. Fix: drop `node(f, xa, ym)` and `node(f, R, T)`, keeping only the dots at the two real branch points.
 
 ## Checked
-- I recomputed in one script and compared with lesson-answers.py: example 0.225 → 0.23 A, virhe 12 Ω, siirto 0.30 A (mistakes 0.109/0.60), tarkistus-2 5.4 V (3.6/4.5/9.0), exit ticket 115 Ω and 40 Ω, kertaus 60 mA, misconception 0.20 A. All agree.
-- Koe-1 and koe-2 model values agree with the sim's solve(); the measured simState keys exist; mode, U and R1 are locked, so only R2 varies.
-- Every choice item has exactly one correct option, and all distractors and feedback are correct.
-- Graph to scale: series 100→300 Ω, parallel up to 66.7 Ω, and the points at R2 = 100 Ω are in the right place.
-- Circuit figures: polarity, conventional current, and the R2 || R3 topology of the mixed, task and siirto figures are correct.
-- Conditions stated: ideal battery, ideal wires, constant resistance. The mechanism is charge conservation plus a new path for each branch.
-- Scope: FY6 "vastusten kytkennät"; power appears only qualitatively, as the glow.
+- Round-1 blocking fixed: sim.js:1345 now uses one common factor `kk = min(1, 0.6/I)` for every wire, so the branch dots still add up to the main-wire dots above 0.6 A. The two branches carry I1, I2 ≤ I, and spacing is equal in every wire.
+- Round-1 polish taken: the voltage sentence is now energy per charge (lesson.md:200); "ihanteelliseen" is in ennuste-2; the siirto 0.6 A feedback covers both the parallel-only error and the not-inverted error (0.5985 A); the sim's node dots are only at the branch points.
+- I recomputed in one script with my own formulas, and everything agrees with lesson-answers.py: example 0.225 → 0.23 A, virhe 12 Ω, siirto 0.30 A (mistakes 0.109/0.60/0.598), tarkistus-2 5.4 V (3.6/4.5/9.0), exit ticket 115 Ω and 40 Ω, kertaus 60 mA, misconception 0.20 A, and the koe-1 and koe-2 rows.
+- The johtopäätös model values (40/20 mA; 4.00 + 2.00 V; 60 + 30 = 90 mA; 50.0 Ω) match the sim's solve() and its three-significant-figure formatting.
+- Every choice item has exactly one correct option. All distractor feedback is correct, and tarkistus-1 assumes mains voltage and no wire resistance.
+- The graph is to scale: the series line runs 100→300 Ω, the parallel curve reaches 66.7 Ω at 200 Ω, and the markers at R2 = 100 Ω sit at 200 Ω and 50 Ω.
+- Circuit figures: polarity, conventional current, I = I1 + I2, and the R2 || R3 topology in the mixed and siirto figures are correct.
+- Conditions are stated: ideal battery, ideal wires and ammeter, constant resistance. The mechanism given is charge conservation plus a new path per branch.
+- Scope is FY6 "vastusten kytkennät". Power appears only qualitatively, as the glow, and is deferred to its own chapter.

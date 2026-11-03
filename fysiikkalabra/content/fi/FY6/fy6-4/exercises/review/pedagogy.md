@@ -1,14 +1,17 @@
-VERDICT: FAIL
-CONTENT-HASH: c73001120d4d9bbb
+VERDICT: PASS
+CONTENT-HASH: 5546f60acb4da541
 ## Blocking
-- exercises.json fy6-4-L1-04 — teksti käyttää sanaa "toisen lampun" kahdesti ("näyttää toisen lampun yli 1,8 V" ja "jännite on toisen lampun yli?"), joten kysytty lamppu on epäselvä (vastaus 1,8 V tai 2,7 V); ratkaisu puhuu ensimmäisestä ja toisesta — korjaa: "Jännitemittari näyttää ensimmäisen lampun yli 1,8 V. Kuinka suuri jännite on toisen lampun yli?"
 ## Polish
-- solutions.md fy6-4-L3-01 Kuvaajan lukeminen — "R_1 on niiden kanssa samassa silmukassa eli sarjassa" ei erota sarjaa rinnasta; perustele: koko paristosta lähtevä virta kulkee R_1:n läpi (kuten lesson siirto-ratkaisussa).
-- exercises.json taso 1 — kaikki viisi tehtävää ovat suoria yhden kaavan laskuja; lisää yksi päättelytehtävä (esim. mikä lamppu sammuu, kun yksi irtoaa) jäljitelläkseen aloituskysymystä.
-- exercises.json taso 2 — kaikki neljä ovat laskuja; sekakytkentää ei harjoiteta ennen tasoa 3, jossa on vain yksi sekakytkentätehtävä.
-- solutions.md fy6-4-L3-03 — toisen asteen yhtälön ratkaisu on taidon hyppäys; mainitse vaihtoehtoinen tapa (summa 250, tulo 15 000: etsi luvut) ensin.
+- exercises.json fy6-4-L2-03 — "30 Ω:n vastus ja tuntematon vastus on kytketty rinnan" on yhdyssubjektin kanssa epäkieliopillinen; kirjoita "ovat kytketyt rinnan".
+- solutions.md fy6-4-L3-03 — toisen asteen yhtälö ei ole kurssin FY6 opetusta; esitä ensin vaihtoehtoinen päättely (summa 250 Ω, tulo 15 000 Ω²: mitkä luvut?) ja yhtälö toisena tapana.
+- exercises.json taso 2 — kaikki neljä ovat laskuja eikä sekakytkentää harjoitella ennen tasoa 3; yksi sekakytkentä-/päättelytehtävä tasolle 2 helpottaisi hyppyä.
+- exercises.json taso 1 — kaikki viisi ovat yhden kaavan laskuja; yksi sanallinen päättelytehtävä (mikä lamppu sammuu kun yksi irtoaa) kytkisi aloituskysymykseen.
 ## Checked
-- Hash c73001120d4d9bbb alussa ja lopussa; tasot nousevat järkevästi (yksi sääntö, kaava + Ohm, sekakytkentä ja päättely).
-- Vastaukset ja toleranssit tarkistettu laskemalla: 670 Ω, 24 Ω, 1,5 A, 2,7 V, 110 Ω, 4,8 mA, 35 Ω, 20 Ω, 1,3 kΩ, 50 mA, 4, 150 Ω.
-- Mikään tehtävä ei toista esimerkkiä; L3-02 (nelinkertainen virta) tuo oivalluksen.
-- Ratkaisut etenevät annettu–kysytty–periaate–kaava–muunnokset–sijoitus–järkevyys ja selittävät periaatteen.
+- Hash alussa ja lopussa 5546f60acb4da541; kierroksen 1 korjaukset (L1-04 "ensimmäisen"/"toisen", L3-01 kuvan lukeminen) tehty.
+- Tasot 5/4/3 sääntöjen mukaan, nousevat järkevästi; mikään ei toista esimerkkiä (rinnan 120 Ω ja 60 Ω).
+- Tehtävissä tilanne ensin ja kysymys omana lauseenaan; arkiset yhteydet (taskulamppu, auton valaisimet, lämmitin).
+- Ratkaisut etenevät annettu-kysytty-periaate-kaava-muunnokset-sijoitus-vastaus-järkevyys; periaate selitetty, kuvan lukeminen L3-01:ssä perusteltu.
+- Tehtävän L3-01 kuva antaa 12 V, 40, 60 ja 120 Ω ilman virtoja; kuvaus vastaa kuvaa eikä paljasta vastausta.
+- Vastaukset (670, 24, 1,5, 2,7, 110, 4,8, 35, 20, 1,3, 50, 4, 150) laskettu uudelleen ja oikein.
+- Suomi: sanasto ja sijamuodot kunnossa lukuun ottamatta L2-03:a; 1,3 kΩ:n toleranssi 3 % kattaa 1,32.
+- Ratkaisut ovat rivijaettuja kaavoja; kaappauksia ei avattu, 360 px:n asettelutesti läpäisty.
