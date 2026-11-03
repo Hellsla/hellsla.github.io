@@ -7,8 +7,8 @@
     "selittämään, mitä kuulokynnys tarkoittaa, ja laskemaan usean äänilähteen yhteistason."
   ],
   "prior": [
-    "Ääni on ilmassa etenevä pitkittäinen aalto. Aallon amplitudi kertoo, kuinka voimakas ääni on (luku *Äänen ominaisuudet*)",
-    "Aalto kuljettaa energiaa lähteestä ympäristöön. Väliaine ei siirry mukana (luku *Mekaaninen aaltoliike*)",
+    "Ääni on ilmassa etenevä pitkittäinen aalto. Aallon amplitudi kertoo, kuinka voimakas ääni on (luku *Äänen korkeus, sointiväri ja taajuusanalyysi*)",
+    "Aalto kuljettaa energiaa lähteestä ympäristöön. Väliaine ei siirry mukana (luku *Aaltojen synty ja eteneminen*)",
     "Teho on energia aikayksikköä kohti, $P = \\tfrac{\\Delta E}{\\Delta t}$. Tehon yksikkö on watti (luku *Teho*)"
   ],
   "activities": [
@@ -30,11 +30,11 @@
         {
           "text": "Ääniaallon amplitudi eli ilman painevaihtelun suuruus kasvaa.",
           "correct": true,
-          "feedback": "Oikein. Sama sävel tarkoittaa samaa taajuutta. Voimakkaampi ääni tarkoittaa suurempaa amplitudia (luku *Äänen ominaisuudet*). Tässä luvussa voimakkuutta mitataan aallon kuljettamalla teholla pinta-alaa kohti."
+          "feedback": "Oikein. Sama sävel tarkoittaa samaa taajuutta. Voimakkaampi ääni tarkoittaa suurempaa amplitudia (luku *Äänen korkeus, sointiväri ja taajuusanalyysi*). Tässä luvussa voimakkuutta mitataan aallon kuljettamalla teholla pinta-alaa kohti."
         },
         {
           "text": "Äänen taajuus kasvaa, koska kova ääni on korkeampi.",
-          "feedback": "Taajuus määrää sävelkorkeuden, ei voimakkuutta. Sama sävel voi soida hiljaa tai kovaa (luku *Äänen ominaisuudet*). Kovempi ääni on aalto, jolla on sama taajuus mutta suurempi amplitudi."
+          "feedback": "Taajuus määrää sävelkorkeuden, ei voimakkuutta. Sama sävel voi soida hiljaa tai kovaa (luku *Äänen korkeus, sointiväri ja taajuusanalyysi*). Kovempi ääni on aalto, jolla on sama taajuus mutta suurempi amplitudi."
         },
         {
           "text": "Ääni etenee ilmassa nopeammin, joten se ehtii korvaan voimakkaampana.",

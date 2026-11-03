@@ -1,4 +1,4 @@
-# Seisovat aallot
+# Seisova aalto: solmut, kuvut ja ominaistaajuudet
 
 > **Miksi** kitaran kieli soi aina samalla sävelellä, kun sitä näppää, ja miksi sävel nousee, kun kieltä painetaan otelautaa vasten tai kun sitä kiristetään?
 
@@ -129,7 +129,7 @@
 ## Ydinajatus
 
 ### Aalto ja sen heijastus
-Heiluta narun päätä tasaisesti. Narua pitkin kulkee silloin aalto kohti narun kiinnitettyä päätä. Kiinteästä päästä aalto heijastuu takaisin. Heijastunut aalto on vastakkaisvaiheinen eli se on kääntynyt toisin päin (luku *Aaltojen heijastuminen ja diffraktio*). Narussa kulkee nyt kaksi aaltoa. Niillä on sama taajuus, sama aallonpituus ja sama amplitudi, mutta ne kulkevat vastakkaisiin suuntiin. Aaltojen poikkeamat lasketaan yhteen joka kohdassa (luku *Aaltojen interferenssi*). Summa ei näytä etenevältä aallolta. Jotkin kohdat pysyvät koko ajan paikallaan, ja niiden välissä naru heilahtelee edestakaisin. Tällaista aaltoa sanotaan **seisovaksi aalloksi**.
+Heiluta narun päätä tasaisesti. Narua pitkin kulkee silloin aalto kohti narun kiinnitettyä päätä. Kiinteästä päästä aalto heijastuu takaisin. Heijastunut aalto on vastakkaisvaiheinen eli se on kääntynyt toisin päin (luku *Aalto kohtaa esteen tai raon*). Narussa kulkee nyt kaksi aaltoa. Niillä on sama taajuus, sama aallonpituus ja sama amplitudi, mutta ne kulkevat vastakkaisiin suuntiin. Aaltojen poikkeamat lasketaan yhteen joka kohdassa (luku *Aaltojen yhteisvaikutus: superpositio ja interferenssi*). Summa ei näytä etenevältä aallolta. Jotkin kohdat pysyvät koko ajan paikallaan, ja niiden välissä naru heilahtelee edestakaisin. Tällaista aaltoa sanotaan **seisovaksi aalloksi**.
 
 <svg data-fig="superpositio" viewBox="0 0 600 386" role="img" aria-label="Kaavakuva kolmesta hetkestä allekkain. Kuva ei ole mittakaavassa. Narun oikea pää on kiinni seinässä. Oranssi katkoviiva on seinää kohti etenevä aalto. Violetti pisteviiva on seinästä heijastunut aalto. Sillä on sama amplitudi ja sama aallonpituus kuin tulevalla aallolla. Sininen yhtenäinen viiva on aaltojen summa eli narun todellinen muoto. Ylimmällä hetkellä tuleva ja heijastunut aalto ovat päällekkäin, ja summa on suurimmillaan. Keskimmäisellä hetkellä summa on pienempi. Alimmalla hetkellä summa on nolla, koska aallot kumoavat toisensa. Mustat pisteet ovat kohtia, joissa summa on joka hetki nolla. Niiden väli on puoli aallonpituutta, ja yksi niistä on seinän kohdalla." style="max-width:100%;font-size:24px">
   <line x1="120" y1="26" x2="154" y2="26" stroke="#e8590c" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="8 6"/>
@@ -244,7 +244,7 @@ L &= n \cdot \frac{\lambda_n}{2} \\
 \lambda_n &= \frac{2L}{n}
 \end{aligned}
 ```
-Aallon nopeus, taajuus ja aallonpituus liittyvät toisiinsa yhtälöllä $v = f\lambda$ (luku *Mekaaninen aaltoliike*). Siitä saadaan kielen ominaistaajuudet
+Aallon nopeus, taajuus ja aallonpituus liittyvät toisiinsa yhtälöllä $v = f\lambda$ (luku *Aaltojen synty ja eteneminen*). Siitä saadaan kielen ominaistaajuudet
 ```latex
 \begin{aligned}
 &f_n = \frac{v}{\lambda_n} = n \cdot \frac{v}{2L} = n f_1 \\
@@ -444,4 +444,4 @@ Toinen virhe on laskea toisesta päästä suljetun putken ominaistaajuudet samoi
 - Vierekkäisten solmujen etäisyys on $\tfrac{\lambda}{2}$, ja solmusta kupuun on $\tfrac{\lambda}{4}$.
 - Kahdesta päästä kiinnitetyn kielen ja molemmista päistä avoimen putken ominaistaajuudet ovat $f_n = n \cdot \tfrac{v}{2L}$, kun $n = 1, 2, 3, \ldots$ Alin niistä on perustaajuus $f_1$.
 - Toisesta päästä suljetussa putkessa suljettu pää on solmu ja avoin pää kupu. Ominaistaajuudet ovat $f_n = n \cdot \tfrac{v}{4L}$, kun $n = 1, 3, 5, \ldots$
-- Lyhyempi tai kireämpi kieli ja lyhyempi putki soivat korkeammalta. Luvussa *Äänen ominaisuudet* tutkitaan, miten perustaajuus ja yläsävelet näkyvät äänen taajuusanalyysissä.
+- Lyhyempi tai kireämpi kieli ja lyhyempi putki soivat korkeammalta. Luvussa *Äänen korkeus, sointiväri ja taajuusanalyysi* tutkitaan, miten perustaajuus ja yläsävelet näkyvät äänen taajuusanalyysissä.

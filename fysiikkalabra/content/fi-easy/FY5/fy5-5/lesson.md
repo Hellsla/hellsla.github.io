@@ -1,4 +1,4 @@
-# Newtonin gravitaatiolaki
+# Gravitaatiovuorovaikutus kappaleiden välillä
 
 > **Miksi** pudonnut omena syöksyy Maata kohti, mutta Maa ei näytä liikahtavankaan omenaa kohti?
 

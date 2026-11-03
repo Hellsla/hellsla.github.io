@@ -1,4 +1,4 @@
-# Harmoninen värähtely ja heiluri
+# Jousivärähtelijä ja heiluri
 
 > **Miksi** jokainen keinu, heiluri ja jousen varassa pomppiva kappale värähtelee omassa tahdissaan, ja mikä sen tahdin määrää?
 
@@ -123,7 +123,7 @@
 </svg>
 
 ## Ydinajatus
-Luvussa *Harmoninen voima ja jousen potentiaalienergia* jousen voima oli $F = -kx$: se on suoraan verrannollinen poikkeamaan $x$ tasapainoasemasta ja osoittaa aina kohti tasapainoasemaa. Kun kappale vedetään sivuun ja päästetään irti, voima kiihdyttää sitä kohti tasapainoasemaa. Tasapainoasemassa voima on nolla, mutta kappaleella on nopeutta, joten se jatkaa toiselle puolelle. Siellä voima jarruttaa sen, pysäyttää ääriasennossa ja kääntää takaisin. Liike toistuu samanlaisena: kappale värähtelee. Kun värähtelyn aiheuttaa harmoninen voima, liikettä sanotaan **harmoniseksi värähtelyksi**.
+Luvussa *Jousivoima ja jousen energia* jousen voima oli $F = -kx$: se on suoraan verrannollinen poikkeamaan $x$ tasapainoasemasta ja osoittaa aina kohti tasapainoasemaa. Kun kappale vedetään sivuun ja päästetään irti, voima kiihdyttää sitä kohti tasapainoasemaa. Tasapainoasemassa voima on nolla, mutta kappaleella on nopeutta, joten se jatkaa toiselle puolelle. Siellä voima jarruttaa sen, pysäyttää ääriasennossa ja kääntää takaisin. Liike toistuu samanlaisena: kappale värähtelee. Kun värähtelyn aiheuttaa harmoninen voima, liikettä sanotaan **harmoniseksi värähtelyksi**.
 
 <svg data-fig="jousi" viewBox="0 0 600 400" role="img" aria-label="Kaavakuva, ei mittakaavassa: kitkattomalla vaakasuoralla alustalla oleva kappale on kiinnitetty jousella seinään. Kolme hetkeä allekkain. Ylhäällä kappale on ääriasennossa x = A tasapainoaseman oikealla puolella: jousivoima ja kiihtyvyys osoittavat vasemmalle kohti tasapainoasemaa, nopeus on nolla. Keskellä kappale ohittaa tasapainoaseman x = 0 vasemmalle: voima ja kiihtyvyys ovat nolla ja nopeus on suurimmillaan. Alhaalla kappale on ääriasennossa x = −A: voima ja kiihtyvyys osoittavat oikealle, nopeus on nolla." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy59-wood" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9c98a"/><stop offset="1" stop-color="#d9b26a"/></linearGradient></defs>
@@ -169,7 +169,7 @@ Luvussa *Harmoninen voima ja jousen potentiaalienergia* jousen voima oli $F = -k
 Kuvassa näkyy liikkeen rytmi. Ääriasennoissa $x = A$ ja $x = -A$ nopeus on nolla, mutta voima ja kiihtyvyys ovat suurimmillaan. Tasapainoasemassa tilanne on päinvastainen: voima ja kiihtyvyys ovat nolla ja nopeus on suurimmillaan. Kiihtyvyys osoittaa aina kohti tasapainoasemaa, samaan suuntaan kuin voima.
 
 ### Paikka ajan funktiona
-Kun harmonisen värähtelijän paikka piirretään ajan funktiona, saadaan siniaallon muotoinen käyrä. Luvun *Jaksollinen liike* käsitteet näkyvät siinä suoraan. Amplitudi $A$ on suurin poikkeama tasapainoasemasta. Jaksonaika $T$ on aika, jossa kappale tekee yhden kokonaisen edestakaisen värähdyksen ja palaa samaan kohtaan samaan suuntaan liikkuen, esimerkiksi kahden peräkkäisen huipun väli. Taajuus $f = \tfrac{1}{T}$ kertoo värähdysten määrän sekunnissa.
+Kun harmonisen värähtelijän paikka piirretään ajan funktiona, saadaan siniaallon muotoinen käyrä. Luvun *Värähtelyn suureet: jaksonaika, taajuus ja amplitudi* käsitteet näkyvät siinä suoraan. Amplitudi $A$ on suurin poikkeama tasapainoasemasta. Jaksonaika $T$ on aika, jossa kappale tekee yhden kokonaisen edestakaisen värähdyksen ja palaa samaan kohtaan samaan suuntaan liikkuen, esimerkiksi kahden peräkkäisen huipun väli. Taajuus $f = \tfrac{1}{T}$ kertoo värähdysten määrän sekunnissa.
 
 <svg data-fig="xt" viewBox="0 0 600 350" role="img" aria-label="Kaavakuva: harmonisen värähtelyn paikka x ajan t funktiona on siniaallon muotoinen käyrä. Käyrä alkaa ääriasennosta x = A, käy ääriasennossa x = −A ja palaa ääriasentoon A. Amplitudi A on merkitty tasapainoasemasta x = 0 käyrän huippuun, ja jaksonaika T kahden peräkkäisen huipun väliin. Kuvaajassa on kaksi ja puoli jaksoa." style="max-width:100%;font-size:24px">
   <line x1="80" y1="310" x2="80" y2="191" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>

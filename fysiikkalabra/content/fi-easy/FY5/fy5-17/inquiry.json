@@ -7,9 +7,9 @@
     "laskemaan maanjäristyksen etäisyyden P-aallon ja S-aallon saapumisaikojen erosta."
   ],
   "prior": [
-    "Aallon nopeus, taajuus ja aallonpituus liittyvät toisiinsa yhtälöllä $v = f\\lambda$, ja aalto voi olla poikittainen tai pitkittäinen (luku *Mekaaninen aaltoliike*)",
-    "Aalto heijastuu osittain kahden aineen rajapinnalta, ja este taivuttaa aaltoa sitä enemmän, mitä suurempi aallonpituus on esteeseen verrattuna (luku *Aaltojen heijastuminen ja diffraktio*)",
-    "Ääni on pitkittäistä aaltoliikettä, ja ihminen kuulee taajuudet noin $20\\,\\text{Hz}$:stä $20\\,\\text{kHz}$:iin (luku *Äänen ominaisuudet*)"
+    "Aallon nopeus, taajuus ja aallonpituus liittyvät toisiinsa yhtälöllä $v = f\\lambda$, ja aalto voi olla poikittainen tai pitkittäinen (luku *Aaltojen synty ja eteneminen*)",
+    "Aalto heijastuu osittain kahden aineen rajapinnalta, ja este taivuttaa aaltoa sitä enemmän, mitä suurempi aallonpituus on esteeseen verrattuna (luku *Aalto kohtaa esteen tai raon*)",
+    "Ääni on pitkittäistä aaltoliikettä, ja ihminen kuulee taajuudet noin $20\\,\\text{Hz}$:stä $20\\,\\text{kHz}$:iin (luku *Äänen korkeus, sointiväri ja taajuusanalyysi*)"
   ],
   "activities": [
     {
@@ -29,15 +29,15 @@
         {
           "text": "noin $8{,}6\\,\\text{mm}$",
           "correct": true,
-          "feedback": "Oikein. Yhtälöstä $v = f\\lambda$ saadaan $\\lambda = \\tfrac{v}{f} = \\tfrac{343\\,\\text{m/s}}{40\\,000\\,\\text{Hz}} \\approx 0{,}0086\\,\\text{m}$ (luku *Mekaaninen aaltoliike*). Aallonpituus on suunnilleen yhtä suuri kuin hyönteinen. Siksi lepakot käyttävät ultraääntä."
+          "feedback": "Oikein. Yhtälöstä $v = f\\lambda$ saadaan $\\lambda = \\tfrac{v}{f} = \\tfrac{343\\,\\text{m/s}}{40\\,000\\,\\text{Hz}} \\approx 0{,}0086\\,\\text{m}$ (luku *Aaltojen synty ja eteneminen*). Aallonpituus on suunnilleen yhtä suuri kuin hyönteinen. Siksi lepakot käyttävät ultraääntä."
         },
         {
           "text": "noin $1{,}4 \\cdot 10^{7}\\,\\text{m}$",
-          "feedback": "Kerroit nopeuden taajuudella. Yhtälössä $v = f\\lambda$ aallonpituus on nopeus jaettuna taajuudella, $\\lambda = \\tfrac{v}{f}$. Suuri taajuus tarkoittaa lyhyttä aallonpituutta, ei pitkää (luku *Mekaaninen aaltoliike*)."
+          "feedback": "Kerroit nopeuden taajuudella. Yhtälössä $v = f\\lambda$ aallonpituus on nopeus jaettuna taajuudella, $\\lambda = \\tfrac{v}{f}$. Suuri taajuus tarkoittaa lyhyttä aallonpituutta, ei pitkää (luku *Aaltojen synty ja eteneminen*)."
         },
         {
           "text": "noin $117\\,\\text{m}$",
-          "feedback": "Jaoit taajuuden nopeudella. Silloin tuloksen yksikkö on $1/\\text{m}$, ei metri. Aallonpituus on $\\lambda = \\tfrac{v}{f}$: nopeus jaettuna taajuudella (luku *Mekaaninen aaltoliike*)."
+          "feedback": "Jaoit taajuuden nopeudella. Silloin tuloksen yksikkö on $1/\\text{m}$, ei metri. Aallonpituus on $\\lambda = \\tfrac{v}{f}$: nopeus jaettuna taajuudella (luku *Aaltojen synty ja eteneminen*)."
         }
       ]
     },

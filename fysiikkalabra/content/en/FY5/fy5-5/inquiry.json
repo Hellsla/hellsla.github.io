@@ -9,7 +9,7 @@
   "prior": [
     "In an interaction, bodies exert forces of equal magnitude and opposite directions on each other (chapter *Interaction and force: Newton's first and third laws*)",
     "The weight of a body is $G = mg$, and on the Earth's surface $g = 9.81\\,\\text{m/s}^2$ (chapter *Weight, friction and the inclined plane*)",
-    "In uniform circular motion a body has a centripetal acceleration $a_\\text{n} = \\tfrac{v^2}{r}$ towards the centre of the path (chapter *Uniform circular motion and centripetal acceleration*)"
+    "In uniform circular motion a body has a centripetal acceleration $a_\\text{n} = \\tfrac{v^2}{r}$ towards the centre of the path (chapter *Centripetal acceleration and the equation of motion in a circle*)"
   ],
   "activities": [
     {
@@ -30,11 +30,11 @@
         {
           "text": "The Moon has an acceleration towards the Earth, so a net force towards the Earth acts on it.",
           "correct": true,
-          "feedback": "Correct. In uniform circular motion the direction of the velocity changes all the time, so the body has a centripetal acceleration $a_\\text{n} = \\tfrac{v^2}{r}$ towards the centre of the path (chapter *Uniform circular motion and centripetal acceleration*). By Newton's second law the net force points in the same direction. In this lesson you find out where that force comes from."
+          "feedback": "Correct. In uniform circular motion the direction of the velocity changes all the time, so the body has a centripetal acceleration $a_\\text{n} = \\tfrac{v^2}{r}$ towards the centre of the path (chapter *Centripetal acceleration and the equation of motion in a circle*). By Newton's second law the net force points in the same direction. In this lesson you find out where that force comes from."
         },
         {
           "text": "The Moon's acceleration is zero, because its speed stays constant all the time.",
-          "feedback": "The speed stays the same, but velocity is a vector whose direction changes all the time. The change of velocity towards the centre of the path is the centripetal acceleration $a_\\text{n} = \\tfrac{v^2}{r}$ (chapter *Uniform circular motion and centripetal acceleration*)."
+          "feedback": "The speed stays the same, but velocity is a vector whose direction changes all the time. The change of velocity towards the centre of the path is the centripetal acceleration $a_\\text{n} = \\tfrac{v^2}{r}$ (chapter *Centripetal acceleration and the equation of motion in a circle*)."
         },
         {
           "text": "A force along the path acts on the Moon and keeps it moving.",
@@ -219,7 +219,7 @@
       "optional": true,
       "source": "statistics",
       "source_note": "NASA, Moon Fact Sheet and Earth Fact Sheet (nssdc.gsfc.nasa.gov), read in 2026",
-      "text": "Newton tested his law of gravitation by comparing the accelerations of the apple and the Moon. If the Earth's pull weakens with the square of the distance, the Moon's acceleration should be $\\tfrac{1}{60^2}$ of the acceleration due to gravity, because the Moon is about $60$ Earth radii from the Earth's centre.\n\n| quantity | value |\n|---|---|\n| radius of the Earth $R$ | $6378\\,\\text{km}$ |\n| mean distance of the Moon from the Earth's centre $r$ | $384\\,400\\,\\text{km}$ |\n| orbital period of the Moon $T$ | $27.32\\,\\text{d}$ |\n| gravitational field strength on the Earth's surface $g$ | $9.80\\,\\text{m/s}^2$ |\n\nThe acceleration of the Moon can be calculated from its orbit as in the chapter *Uniform circular motion and centripetal acceleration*, when the orbit is assumed to be a circle.",
+      "text": "Newton tested his law of gravitation by comparing the accelerations of the apple and the Moon. If the Earth's pull weakens with the square of the distance, the Moon's acceleration should be $\\tfrac{1}{60^2}$ of the acceleration due to gravity, because the Moon is about $60$ Earth radii from the Earth's centre.\n\n| quantity | value |\n|---|---|\n| radius of the Earth $R$ | $6378\\,\\text{km}$ |\n| mean distance of the Moon from the Earth's centre $r$ | $384\\,400\\,\\text{km}$ |\n| orbital period of the Moon $T$ | $27.32\\,\\text{d}$ |\n| gravitational field strength on the Earth's surface $g$ | $9.80\\,\\text{m/s}^2$ |\n\nThe acceleration of the Moon can be calculated from its orbit as in the chapter *Centripetal acceleration and the equation of motion in a circle*, when the orbit is assumed to be a circle.",
       "question": {
         "type": "numeric",
         "prompt": "Calculate the centripetal acceleration of the Moon $a_\\text{n} = \\tfrac{v^2}{r}$, when the orbital speed of the Moon is $v = \\tfrac{2\\pi r}{T}$. Give the answer in $\\text{mm/s}^2$.",

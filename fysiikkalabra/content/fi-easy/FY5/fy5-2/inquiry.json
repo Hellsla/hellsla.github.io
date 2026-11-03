@@ -7,7 +7,7 @@
     "selittämään, miten painopisteen paikka ratkaisee, pysyykö tuettu kappale paikallaan vai kaatuuko se."
   ],
   "prior": [
-    "Voiman momentti on $M = Fr$. Tässä $r$ on voiman varsi. Momentin etumerkki kertoo kiertosuunnan (luku *Voiman momentti ja kappaleen kiertyminen*)",
+    "Voiman momentti on $M = Fr$. Tässä $r$ on voiman varsi. Momentin etumerkki kertoo kiertosuunnan (luku *Momentti: voiman kiertävä vaikutus*)",
     "Voimakuvioon piirretään vain kappaleeseen vaikuttavat voimat. Levossa olevaan kappaleeseen vaikuttavien voimien summa on nolla (luku *Voimakuvio ja voimien yhteisvaikutus*)"
   ],
   "activities": [
@@ -29,7 +29,7 @@
         {
           "text": "$16\\,\\text{Nm}$, koska momentti on voima kertaa voiman varsi.",
           "correct": true,
-          "feedback": "Oikein. $M = Fr = 20\\,\\text{N} \\cdot 0{,}80\\,\\text{m} = 16\\,\\text{Nm}$. Voima on kohtisuorassa ovea vastaan, ja varsi on etäisyys saranoista (luku *Voiman momentti ja kappaleen kiertyminen*). Tänään lasketaan momentteja kappaleelle, joka ei kierry lainkaan."
+          "feedback": "Oikein. $M = Fr = 20\\,\\text{N} \\cdot 0{,}80\\,\\text{m} = 16\\,\\text{Nm}$. Voima on kohtisuorassa ovea vastaan, ja varsi on etäisyys saranoista (luku *Momentti: voiman kiertävä vaikutus*). Tänään lasketaan momentteja kappaleelle, joka ei kierry lainkaan."
         },
         {
           "text": "$25\\,\\text{Nm}$, koska voima jaetaan etäisyydellä saranoista.",
@@ -37,7 +37,7 @@
         },
         {
           "text": "$20\\,\\text{Nm}$, koska momentti on yhtä suuri kuin voima.",
-          "feedback": "Momentti riippuu myös siitä, kuinka kaukana kiertoakselista voima vaikuttaa. Sama $20\\,\\text{N}$:n voima aivan saranan vieressä ei juuri kierrä ovea. Momentti on $M = Fr = 16\\,\\text{Nm}$ (luku *Voiman momentti ja kappaleen kiertyminen*)."
+          "feedback": "Momentti riippuu myös siitä, kuinka kaukana kiertoakselista voima vaikuttaa. Sama $20\\,\\text{N}$:n voima aivan saranan vieressä ei juuri kierrä ovea. Momentti on $M = Fr = 16\\,\\text{Nm}$ (luku *Momentti: voiman kiertävä vaikutus*)."
         }
       ]
     },

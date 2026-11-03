@@ -7,8 +7,8 @@
     "arvioimaan, milloin tasaisen ympyräliikkeen malli kuvaa radan hyvin."
   ],
   "prior": [
-    "Tasaisessa ympyräliikkeessä kappaleella on normaalikiihtyvyys $a_\\text{n} = \\tfrac{v^2}{r}$ kohti keskipistettä, ja ratanopeus on $v = \\tfrac{2\\pi r}{T}$ (luku *Tasainen ympyräliike ja normaalikiihtyvyys*)",
-    "Kahden kappaleen välinen gravitaatiovoima on $F = \\gamma \\tfrac{Mm}{r^2}$, ja putoamiskiihtyvyys etäisyydellä $r$ on $g = \\tfrac{\\gamma M}{r^2}$ (luku *Newtonin gravitaatiolaki*)"
+    "Tasaisessa ympyräliikkeessä kappaleella on normaalikiihtyvyys $a_\\text{n} = \\tfrac{v^2}{r}$ kohti keskipistettä, ja ratanopeus on $v = \\tfrac{2\\pi r}{T}$ (luku *Normaalikiihtyvyys ja ympyräliikkeen liikeyhtälö*)",
+    "Kahden kappaleen välinen gravitaatiovoima on $F = \\gamma \\tfrac{Mm}{r^2}$, ja putoamiskiihtyvyys etäisyydellä $r$ on $g = \\tfrac{\\gamma M}{r^2}$ (luku *Gravitaatiovuorovaikutus kappaleiden välillä*)"
   ],
   "activities": [
     {
@@ -29,19 +29,19 @@
         {
           "text": "Kohti radan keskipistettä.",
           "correct": true,
-          "feedback": "Oikein. Tasaisessa ympyräliikkeessä nopeuden suunta muuttuu koko ajan, joten kappaleella on normaalikiihtyvyys $a_\\text{n} = \\tfrac{v^2}{r}$ kohti keskipistettä, ja kokonaisvoima $\\Sigma F = \\tfrac{mv^2}{r}$ osoittaa samaan suuntaan (luku *Tasainen ympyräliike ja normaalikiihtyvyys*)."
+          "feedback": "Oikein. Tasaisessa ympyräliikkeessä nopeuden suunta muuttuu koko ajan, joten kappaleella on normaalikiihtyvyys $a_\\text{n} = \\tfrac{v^2}{r}$ kohti keskipistettä, ja kokonaisvoima $\\Sigma F = \\tfrac{mv^2}{r}$ osoittaa samaan suuntaan (luku *Normaalikiihtyvyys ja ympyräliikkeen liikeyhtälö*)."
         },
         {
           "text": "Liikkeen suuntaan eli radan tangentin suuntaan.",
-          "feedback": "Tangentin suuntainen voima muuttaisi vauhtia. Tasaisessa ympyräliikkeessä vauhti pysyy samana ja vain nopeuden suunta muuttuu, joten kokonaisvoima on kohtisuorassa nopeuteen nähden ja osoittaa kohti keskipistettä (luku *Tasainen ympyräliike ja normaalikiihtyvyys*)."
+          "feedback": "Tangentin suuntainen voima muuttaisi vauhtia. Tasaisessa ympyräliikkeessä vauhti pysyy samana ja vain nopeuden suunta muuttuu, joten kokonaisvoima on kohtisuorassa nopeuteen nähden ja osoittaa kohti keskipistettä (luku *Normaalikiihtyvyys ja ympyräliikkeen liikeyhtälö*)."
         },
         {
           "text": "Poispäin keskipisteestä, koska kappale pyrkii ulospäin.",
-          "feedback": "Kappale ei pyri ulospäin vaan suoraan eteenpäin, radan tangentin suuntaan. Jotta se kääntyy, siihen täytyy vaikuttaa voima kohti keskipistettä (luku *Tasainen ympyräliike ja normaalikiihtyvyys*)."
+          "feedback": "Kappale ei pyri ulospäin vaan suoraan eteenpäin, radan tangentin suuntaan. Jotta se kääntyy, siihen täytyy vaikuttaa voima kohti keskipistettä (luku *Normaalikiihtyvyys ja ympyräliikkeen liikeyhtälö*)."
         },
         {
           "text": "Kokonaisvoima on nolla, koska vauhti ei muutu.",
-          "feedback": "Vauhti ei muutu, mutta nopeuden suunta muuttuu, joten kappaleella on kiihtyvyys. Ilman kokonaisvoimaa kappale liikkuisi suoraan (luku *Tasainen ympyräliike ja normaalikiihtyvyys*)."
+          "feedback": "Vauhti ei muutu, mutta nopeuden suunta muuttuu, joten kappaleella on kiihtyvyys. Ilman kokonaisvoimaa kappale liikkuisi suoraan (luku *Normaalikiihtyvyys ja ympyräliikkeen liikeyhtälö*)."
         }
       ]
     },

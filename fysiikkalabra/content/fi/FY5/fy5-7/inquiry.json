@@ -7,7 +7,7 @@
     "sovittamaan sinifunktion mittauspisteisiin ja tulkitsemaan sovituksen tuloksen."
   ],
   "prior": [
-    "Kierrosaika $T$ on yhden kierroksen kesto, ja pyörimistaajuus $f = \\tfrac{1}{T}$ on kierrosten määrä aikayksikössä (luku *Ympyräliike ja ratanopeus*)",
+    "Kierrosaika $T$ on yhden kierroksen kesto, ja pyörimistaajuus $f = \\tfrac{1}{T}$ on kierrosten määrä aikayksikössä (luku *Ympyrärata: jaksonaika ja ratanopeus*)",
     "$(t, x)$-kuvaaja näyttää kappaleen paikan ajan funktiona (luku *Paikka, nopeus ja tasainen liike kuvaajina*)"
   ],
   "activities": [
@@ -28,7 +28,7 @@
         {
           "text": "$0{,}25\\,\\tfrac{1}{\\text{s}}$, koska sekunnissa ehditään neljäsosa kierroksesta.",
           "correct": true,
-          "feedback": "Oikein. Pyörimistaajuus on kierrosajan käänteisluku, $f = \\tfrac{1}{T} = \\tfrac{1}{4{,}0\\,\\text{s}} = 0{,}25\\,\\tfrac{1}{\\text{s}}$ (luku *Ympyräliike ja ratanopeus*). Samat suureet kuvaavat tänään edestakaista liikettä."
+          "feedback": "Oikein. Pyörimistaajuus on kierrosajan käänteisluku, $f = \\tfrac{1}{T} = \\tfrac{1}{4{,}0\\,\\text{s}} = 0{,}25\\,\\tfrac{1}{\\text{s}}$ (luku *Ympyrärata: jaksonaika ja ratanopeus*). Samat suureet kuvaavat tänään edestakaista liikettä."
         },
         {
           "text": "$4{,}0\\,\\tfrac{1}{\\text{s}}$, koska yksi kierros kestää neljä sekuntia.",

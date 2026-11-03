@@ -1,4 +1,4 @@
-# Newton's law of gravitation
+# Gravitational interaction between bodies
 
 > **Why** does a dropped apple rush towards the Earth, while the Earth does not seem to move towards the apple at all?
 

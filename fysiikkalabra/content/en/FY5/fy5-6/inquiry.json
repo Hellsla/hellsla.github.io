@@ -7,8 +7,8 @@
     "estimate when the model of uniform circular motion describes an orbit well."
   ],
   "prior": [
-    "In uniform circular motion a body has a centripetal acceleration $a_\\text{n} = \\tfrac{v^2}{r}$ towards the centre, and the speed is $v = \\tfrac{2\\pi r}{T}$ (chapter *Uniform circular motion and centripetal acceleration*)",
-    "The gravitational force between two bodies is $F = \\gamma \\tfrac{Mm}{r^2}$, and the acceleration of free fall at distance $r$ is $g = \\tfrac{\\gamma M}{r^2}$ (chapter *Newton's law of gravitation*)"
+    "In uniform circular motion a body has a centripetal acceleration $a_\\text{n} = \\tfrac{v^2}{r}$ towards the centre, and the speed is $v = \\tfrac{2\\pi r}{T}$ (chapter *Centripetal acceleration and the equation of motion in a circle*)",
+    "The gravitational force between two bodies is $F = \\gamma \\tfrac{Mm}{r^2}$, and the acceleration of free fall at distance $r$ is $g = \\tfrac{\\gamma M}{r^2}$ (chapter *Gravitational interaction between bodies*)"
   ],
   "activities": [
     {
@@ -29,19 +29,19 @@
         {
           "text": "Towards the centre of the path.",
           "correct": true,
-          "feedback": "Correct. In uniform circular motion the direction of the velocity changes all the time, so the body has a centripetal acceleration $a_\\text{n} = \\tfrac{v^2}{r}$ towards the centre, and the net force $\\Sigma F = \\tfrac{mv^2}{r}$ points in the same direction (chapter *Uniform circular motion and centripetal acceleration*)."
+          "feedback": "Correct. In uniform circular motion the direction of the velocity changes all the time, so the body has a centripetal acceleration $a_\\text{n} = \\tfrac{v^2}{r}$ towards the centre, and the net force $\\Sigma F = \\tfrac{mv^2}{r}$ points in the same direction (chapter *Centripetal acceleration and the equation of motion in a circle*)."
         },
         {
           "text": "In the direction of motion, that is along the tangent of the path.",
-          "feedback": "A force along the tangent would change the speed. In uniform circular motion the speed stays the same and only the direction of the velocity changes, so the net force is perpendicular to the velocity and points towards the centre (chapter *Uniform circular motion and centripetal acceleration*)."
+          "feedback": "A force along the tangent would change the speed. In uniform circular motion the speed stays the same and only the direction of the velocity changes, so the net force is perpendicular to the velocity and points towards the centre (chapter *Centripetal acceleration and the equation of motion in a circle*)."
         },
         {
           "text": "Away from the centre, because the body tends to move outwards.",
-          "feedback": "The body does not tend to move outwards but straight ahead, along the tangent of the path. To make it turn, a force towards the centre must act on it (chapter *Uniform circular motion and centripetal acceleration*)."
+          "feedback": "The body does not tend to move outwards but straight ahead, along the tangent of the path. To make it turn, a force towards the centre must act on it (chapter *Centripetal acceleration and the equation of motion in a circle*)."
         },
         {
           "text": "The net force is zero, because the speed does not change.",
-          "feedback": "The speed does not change, but the direction of the velocity does, so the body accelerates. Without a net force the body would move in a straight line (chapter *Uniform circular motion and centripetal acceleration*)."
+          "feedback": "The speed does not change, but the direction of the velocity does, so the body accelerates. Without a net force the body would move in a straight line (chapter *Centripetal acceleration and the equation of motion in a circle*)."
         }
       ]
     },

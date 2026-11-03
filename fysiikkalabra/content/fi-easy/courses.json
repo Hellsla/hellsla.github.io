@@ -98,7 +98,7 @@
   },
   "FY5": {
     "title": "Jaksollinen liike ja aallot",
-    "themes": ["Pyöriminen ja tasapaino", "Ympyräliike ja gravitaatio", "Jaksollinen liike", "Aaltoliike", "Ääni"],
+    "themes": ["Pyöriminen ja tasapaino", "Ympyräliike ja gravitaatio", "Värähtelyt", "Aaltoliike", "Ääni"],
     "tavoitteet": [
       "osaa kuvata planeettojen liikettä ympyräliikkeenä",
       "tutustuu värähtelyn ja aaltoliikkeen perusteisiin tutkimalla mekaanista värähtelyä ja ääntä",
@@ -106,23 +106,23 @@
       "osaa kuvata mekaanista värähtelyä ja ääntä jaksollisena liikkeenä"
     ],
     "lessons": {
-      "fy5-1": "Voiman momentti ja kappaleen kiertyminen",
-      "fy5-2": "Tasapaino kiertymisen suhteen",
-      "fy5-3": "Ympyräliike ja ratanopeus",
-      "fy5-4": "Tasainen ympyräliike ja normaalikiihtyvyys",
-      "fy5-5": "Newtonin gravitaatiolaki",
-      "fy5-6": "Gravitaation alainen ympyräliike",
-      "fy5-7": "Jaksollinen liike",
-      "fy5-8": "Harmoninen voima ja jousen potentiaalienergia",
-      "fy5-9": "Harmoninen värähtely ja heiluri",
-      "fy5-10": "Mekaaninen aaltoliike",
-      "fy5-11": "Aaltojen heijastuminen ja diffraktio",
-      "fy5-12": "Aaltojen interferenssi",
-      "fy5-13": "Seisovat aallot",
-      "fy5-14": "Äänen ominaisuudet",
-      "fy5-15": "Äänen voimakkuus",
-      "fy5-16": "Ääni ympäristössämme",
-      "fy5-17": "Soveltava luku: ultraäänikuvaus ja aallot luonnossa"
+      "fy5-1": "Momentti: voiman kiertävä vaikutus",
+      "fy5-2": "Kappaleen tasapaino: voimat ja momentit",
+      "fy5-3": "Ympyrärata: jaksonaika ja ratanopeus",
+      "fy5-4": "Normaalikiihtyvyys ja ympyräliikkeen liikeyhtälö",
+      "fy5-5": "Gravitaatiovuorovaikutus kappaleiden välillä",
+      "fy5-6": "Satelliitit ja planeetat ympyräradalla",
+      "fy5-7": "Värähtelyn suureet: jaksonaika, taajuus ja amplitudi",
+      "fy5-8": "Jousivoima ja jousen energia",
+      "fy5-9": "Jousivärähtelijä ja heiluri",
+      "fy5-10": "Aaltojen synty ja eteneminen",
+      "fy5-11": "Aalto kohtaa esteen tai raon",
+      "fy5-12": "Aaltojen yhteisvaikutus: superpositio ja interferenssi",
+      "fy5-13": "Seisova aalto: solmut, kuvut ja ominaistaajuudet",
+      "fy5-14": "Äänen korkeus, sointiväri ja taajuusanalyysi",
+      "fy5-15": "Intensiteetti ja desibeliasteikko",
+      "fy5-16": "Melu, akustiikka ja äänentoisto",
+      "fy5-17": "Soveltava luku: ultraäänikuvaus ja maanjäristysaallot"
     }
   },
   "FY6": {

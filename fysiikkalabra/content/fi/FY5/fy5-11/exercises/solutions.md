@@ -21,7 +21,7 @@
 ## fy5-11-L1-03
 **Annettu:** taajuus $f = 8{,}0\,\text{Hz}$, aallon nopeus $v = 0{,}24\,\text{m/s}$
 **Kysytty:** aallonpituus $\lambda$ senttimetreinä
-**Periaate:** Aalto etenee yhden jaksonajan aikana yhden aallonpituuden matkan, joten nopeus, taajuus ja aallonpituus liittyvät toisiinsa aaltoliikkeen perusyhtälöllä (luku *Mekaaninen aaltoliike*).
+**Periaate:** Aalto etenee yhden jaksonajan aikana yhden aallonpituuden matkan, joten nopeus, taajuus ja aallonpituus liittyvät toisiinsa aaltoliikkeen perusyhtälöllä (luku *Aaltojen synty ja eteneminen*).
 **Kaava:** $v = f\lambda$, josta $\lambda = \dfrac{v}{f}$
 **Muunnokset:** Tulos saadaan metreinä, ja lopuksi $1\,\text{m} = 100\,\text{cm}$.
 **Sijoitus:** $\lambda = \dfrac{0{,}24\,\text{m/s}}{8{,}0\,\text{Hz}} = 0{,}030\,\text{m} = 0{,}030 \cdot 100\,\text{cm} = 3{,}0\,\text{cm}$
@@ -76,7 +76,7 @@
 ## fy5-11-L2-04
 **Annettu:** oviaukon leveys $b = 0{,}90\,\text{m}$, äänen nopeus $v = 343\,\text{m/s}$
 **Kysytty:** taajuus $f$, jolla aallonpituus on $\lambda = b$
-**Periaate:** Äänen nopeus, taajuus ja aallonpituus liittyvät toisiinsa yhtälöllä $v = f\lambda$ (luku *Mekaaninen aaltoliike*). Asetetaan aallonpituus yhtä suureksi kuin aukon leveys ja ratkaistaan taajuus.
+**Periaate:** Äänen nopeus, taajuus ja aallonpituus liittyvät toisiinsa yhtälöllä $v = f\lambda$ (luku *Aaltojen synty ja eteneminen*). Asetetaan aallonpituus yhtä suureksi kuin aukon leveys ja ratkaistaan taajuus.
 **Kaava:** $v = f\lambda$ ja $\lambda = b$, joten $f = \dfrac{v}{b}$
 **Muunnokset:** Ei tarvita: nopeus on yksikössä m/s ja leveys metreinä, joten tulos on hertseinä.
 **Sijoitus:** $f = \dfrac{343\,\text{m/s}}{0{,}90\,\text{m}} = 381{,}1\,\text{Hz}$
@@ -85,7 +85,7 @@
 
 ## fy5-11-L3-01
 **Kysytty:** miksi matala ääni kuuluu nurkan taakse mutta korkea ei, perusteltuna diffraktiolla ja aallonpituuksilla
-**Periaate:** Diffraktio on voimakasta, kun aukon leveys on aallonpituuden suuruusluokkaa tai pienempi, ja heikkoa, kun aukko on monta aallonpituutta leveä. Aallonpituus saadaan yhtälöstä $\lambda = \tfrac{v}{f}$ (luku *Mekaaninen aaltoliike*).
+**Periaate:** Diffraktio on voimakasta, kun aukon leveys on aallonpituuden suuruusluokkaa tai pienempi, ja heikkoa, kun aukko on monta aallonpituutta leveä. Aallonpituus saadaan yhtälöstä $\lambda = \tfrac{v}{f}$ (luku *Aaltojen synty ja eteneminen*).
 **Mallivastaus:** Basson aallonpituus on $\lambda = \tfrac{343\,\text{m/s}}{100\,\text{Hz}} = 3{,}43\,\text{m}$, joten ikkuna on vain noin neljäsosa aallonpituudesta ($b/\lambda = \tfrac{0{,}80\,\text{m}}{3{,}43\,\text{m}} \approx 0{,}23$). Ikkuna toimii silloin kuin yksi alkeisaallon lähde, ja ääni leviää ikkunasta joka suuntaan, myös nurkan taakse. Symbaalin aallonpituus on $\lambda = \tfrac{343\,\text{m/s}}{5000\,\text{Hz}} \approx 6{,}9\,\text{cm}$, joten ikkuna on noin $12$ aallonpituutta leveä. Siitä ääni jatkaa lähes suorana keilana eteenpäin, ja nurkan taakse taipuu vain vähän. Siksi nurkan takana kuuluu enimmäkseen bassoa.
 
 ## fy5-11-L3-02
