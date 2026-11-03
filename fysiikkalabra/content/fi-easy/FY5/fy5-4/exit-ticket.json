@@ -8,7 +8,7 @@
     "a": "Nopeus kolminkertaistuu. Kaavassa $a_\\text{n} = \\tfrac{v^2}{r}$ kiihtyvyys kasvaa nopeuden neliön mukana, joten kiihtyvyys on $3^2 = 9$-kertainen. Samalla tien kitkan on oltava yhdeksänkertainen. Siksi suuri nopeus vie auton helposti ulos kaarteesta."
   },
   {
-    "q": "Miksi auton matkustaja tuntee itsensä kevyeksi, kun auto ajaa nopeasti nyppylän huipun yli?",
+    "q": "Miksi matkustaja tuntee itsensä kevyeksi, kun auto ajaa nopeasti nyppylän eli pienen mäen huipun yli?",
     "a": "Huipulla auto ja matkustaja kiihtyvät alas kohti kaaren keskipistettä. Istuimen tukivoiman on siis oltava painoa pienempi: $N = m\\left(g - \\tfrac{v^2}{r}\\right)$. Paino ei muutu, mutta istuin painaa matkustajaa vähemmän. Se tuntuu keveytenä."
   }
 ]

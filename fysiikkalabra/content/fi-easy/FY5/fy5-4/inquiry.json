@@ -2,13 +2,13 @@
   "version": 1,
   "contribution": "Tasaisessa ympyräliikkeessä nopeuden suunta muuttuu, ja se tulkitaan kiihtyvyydeksi. Normaalikiihtyvyys $a_\\text{n} = \\tfrac{v^2}{r}$ osoittaa keskipisteeseen. Newtonin toinen laki antaa keskipisteeseen osoittavan kokonaisvoiman $m\\tfrac{v^2}{r}$. Se on todellisten voimien summa: kitka kaarteessa, jännitysvoima narussa sekä tukivoima nyppylällä ja notkossa. Keskipakoisvoima käsitellään virhekäsityksenä. Auton pidon raja tutkitaan simulaatiolla.",
   "learn": [
-    "tunnistamaan tasaisen ympyräliikkeen ja määrittämään normaalikiihtyvyyden suunnan ja suuruuden.",
+    "tunnistamaan tasaisen ympyräliikkeen ja selvittämään, mihin suuntaan normaalikiihtyvyys osoittaa ja kuinka suuri se on.",
     "piirtämään ympyräradalla liikkuvan kappaleen voimakuvion ja käyttämään siihen Newtonin toista lakia.",
     "selittämään, mikä voima kääntää auton kaarteessa ja mistä tunne ulospäin painautumisesta tulee."
   ],
   "prior": [
-    "Ratanopeus $v = \\tfrac{2\\pi r}{T}$ ja nopeuden suunnan muuttuminen ympyräliikkeessä (luku *Ympyräliike ja ratanopeus*)",
-    "Voimakuvion piirtäminen ja liikeyhtälöt $\\Sigma F_x = m a_x$ ja $\\Sigma F_y = m a_y$ (luku *Voimakuvio ja voimien yhteisvaikutus*)",
+    "Ratanopeus $v = \\tfrac{2\\pi r}{T}$ ja se, että nopeuden suunta muuttuu ympyräliikkeessä (luku *Ympyräliike ja ratanopeus*)",
+    "Voimakuvion piirtäminen ja liikeyhtälöiden kirjoittaminen: $\\Sigma F_x = m a_x$ ja $\\Sigma F_y = m a_y$ (luku *Voimakuvio ja voimien yhteisvaikutus*)",
     "Lepokitka on enintään $\\mu_0 N$ (luku *Paino, kitka ja kalteva taso*)"
   ],
   "activities": [
@@ -189,7 +189,7 @@
       "question": {
         "type": "numeric",
         "fbd": "equations",
-        "prompt": "Taulukon mukaan pito riittää nopeudella $15\\,\\text{m/s}$ mutta ei nopeudella $20\\,\\text{m/s}$. Laske, mikä on suurin ratanopeus, jolla auto vielä pysyy tällä radalla kuivalla asfaltilla.",
+        "prompt": "Taulukon mukaan pito riittää nopeudella $15\\,\\text{m/s}$ mutta ei nopeudella $20\\,\\text{m/s}$. Laske suurin ratanopeus, jolla auto vielä pysyy radalla kuivalla asfaltilla.",
         "answer": 19.81,
         "unit": "m/s",
         "tolerance": 0.02,
@@ -272,8 +272,8 @@
       ],
       "prompt": "Selitä mittaustesi avulla, miten tarvittava kitka riippuu nopeudesta. Selitä myös, miksi auto ajautuu radan ulkoreunan yli, kun pito pettää.",
       "criteria": [
-        "Vastaus kertoo, että kaksinkertainen nopeus vaatii nelinkertaisen kitkan, ja käyttää taulukon lukuja.",
-        "Vastaus kertoo, että auto pysyy radalla vain, kun tarvittava kitka on enintään suurin lepokitka $\\mu_0 mg$.",
+        "Vastaus kertoo, että kun nopeus kaksinkertaistuu, tarvittava kitka nelinkertaistuu, ja käyttää taulukon lukuja.",
+        "Vastaus kertoo, että auto pysyy radalla vain, jos tarvittava kitka on korkeintaan yhtä suuri kuin suurin lepokitka $\\mu_0 mg$.",
         "Vastaus kertoo, että kitka osoittaa kohti keskipistettä. Vastaus kertoo myös, että pidon pettäessä auto kaartaa liian vähän eikä mikään voima työnnä sitä ulos."
       ],
       "model": "Taulukossa tarvittava kitka kasvaa nopeuden neliön mukana. Nopeudella $10\\,\\text{m/s}$ se on $3{,}0\\,\\text{kN}$ ja nopeudella $20\\,\\text{m/s}$ se on $12\\,\\text{kN}$. Kaksinkertainen nopeus vaatii siis nelinkertaisen kitkan. Kuivan asfaltin suurin lepokitka on mallin arvoissa $11{,}8\\,\\text{kN}$. Nopeudella $15\\,\\text{m/s}$ tarvitaan $6{,}75\\,\\text{kN}$, ja pito riittää. Nopeudella $20\\,\\text{m/s}$ tarvittava kitka on suurempi kuin tie voi antaa. Kitka osoittaa kohti keskipistettä ja kääntää autoa. Kun kitka ei riitä, auto kaartaa loivemmin kuin rata. Se kulkee sitä suoremmin, mitä suurempi nopeus on, ja ajautuu radan ulkoreunan yli. Ulospäin työntävää voimaa ei tarvita selittämään liikettä."

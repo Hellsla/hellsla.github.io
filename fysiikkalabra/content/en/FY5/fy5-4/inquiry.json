@@ -129,7 +129,7 @@
       "stage": "tutki",
       "type": "sim",
       "text": "A car goes round a horizontal circular path. On the left is the path seen from above, on the right the free-body diagram of the car seen from behind and a comparison of the friction needed with the maximum static friction.",
-      "howto": "Choose the tangential speed $v$ and the radius $r$ of the path with the sliders, and the *Mass* of the car and the *Surface* of the road. Press *Start* and the car starts to go round the path. If the friction needed is greater than the maximum static friction, the car starts to slide. *Reset* puts the car back on the path. The readings update at once, also when the car is standing still. *Speed* slows down or speeds up the animation without changing the readings.",
+      "howto": "Choose the tangential speed $v$ and the radius $r$ of the path with the sliders, and the *Mass* of the car and the *Surface* of the road. Press *Start* and the car starts to go round the path. If the friction needed is greater than the maximum static friction, the car starts to slide. *Reset* puts the car back on the path. The readings update at once, also when the car is standing still. *Animation speed* slows down or speeds up the animation without changing the readings.",
       "model": "The values are model values calculated by the simulation. The road is horizontal, air resistance and rolling resistance are neglected, and the forces on the tyres are added together into one support force and one friction force. The coefficients of static friction are model values: dry asphalt $\\mu_0 = 0.80$, wet asphalt $0.50$ and ice $0.10$. When the grip fails, in the model the road still gives its maximum friction $\\mu_0 mg$ perpendicular to the velocity of the car, so the car turns less than the path. For clarity the car and the arrows are drawn larger than to scale, and the path is always the same size in the picture.",
       "calc": "The centripetal acceleration is $a_\\text{n} = \\tfrac{v^2}{r}$, and the car stays on the path if the friction of the road gives the net force $m\\tfrac{v^2}{r}$ towards the centre. In the vertical direction $N = mg$, and $g = 9.81\\,\\text{m/s}^2$. The maximum static friction is $\\mu_0 N = \\mu_0 mg$. If $m\\tfrac{v^2}{r} \\le \\mu_0 mg$, the friction is $F_\\mu = m\\tfrac{v^2}{r}$; otherwise $F_\\mu = \\mu_0 mg$, and the car slides off the path."
     },
@@ -146,10 +146,10 @@
         "v": 10
       },
       "names": {
-        "v": "tangential speed $v$",
+        "v": "speed $v$",
         "r": "radius $r$",
         "m": "mass $m$",
-        "pinta": "pinta"
+        "pinta": "road surface"
       },
       "units": {
         "v": "m/s",
@@ -178,7 +178,7 @@
         },
         {
           "key": "Fmax",
-          "label": "maximum static friction (N)"
+          "label": "max. static friction (N)"
         },
         {
           "key": "pito",
@@ -225,10 +225,10 @@
         "m": "1000"
       },
       "names": {
-        "v": "tangential speed $v$",
+        "v": "speed $v$",
         "r": "radius $r$",
         "m": "mass $m$",
-        "pinta": "pinta"
+        "pinta": "road surface"
       },
       "units": {
         "v": "m/s",
@@ -253,7 +253,7 @@
         },
         {
           "key": "Fmax",
-          "label": "maximum static friction (N)"
+          "label": "max. static friction (N)"
         },
         {
           "key": "pito",
