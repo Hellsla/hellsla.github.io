@@ -1,0 +1,311 @@
+[
+ {
+  "expr": "(() => { const S=window.simState; return S.U===9 && S.R1===10 && S.R2===30 && S.R3===60 && S.probe==='A' && S.ground==='F' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "on load: U = 9,0 V, R1 = 10, R2 = 30, R3 = 60 ohm, probe A, reference the minus pole (must run before any setup)"
+ },
+ {
+  "expr": "window.simState.I1",
+  "expected": 0.3,
+  "tol": 0.01,
+  "note": "on load: I1 = 9,0 V : 30 ohm = 0,30 A (lesson-answers sim-I1)"
+ },
+ {
+  "expr": "window.simState.I2",
+  "expected": 0.2,
+  "tol": 0.01,
+  "note": "on load: I2 = 6,0 V : 30 ohm = 0,20 A (sim-I2)"
+ },
+ {
+  "expr": "window.simState.I3",
+  "expected": 0.1,
+  "tol": 0.01,
+  "note": "on load: I3 = 6,0 V : 60 ohm = 0,10 A (sim-I3)"
+ },
+ {
+  "expr": "window.simState.R23",
+  "expected": 20,
+  "tol": 0.01,
+  "note": "on load: R23 = 20 ohm (sim-R23)"
+ },
+ {
+  "expr": "window.simState.U1",
+  "expected": 3.0,
+  "tol": 0.01,
+  "note": "on load: U1 = 3,0 V (sim-U1)"
+ },
+ {
+  "expr": "window.simState.U2",
+  "expected": 6.0,
+  "tol": 0.01,
+  "note": "on load: U2 = 6,0 V (sim-U23)"
+ },
+ {
+  "expr": "window.simState.VA",
+  "expected": 9.0,
+  "tol": 0.01,
+  "note": "on load: V_A = 9,0 V (sim-VA)"
+ },
+ {
+  "expr": "window.simState.VB",
+  "expected": 6.0,
+  "tol": 0.01,
+  "note": "on load: V_B = 6,0 V (sim-VB)"
+ },
+ {
+  "expr": "window.simState.VF",
+  "expected": 0.0,
+  "tol": 0.01,
+  "note": "on load: V_F = 0 V"
+ },
+ {
+  "expr": "window.simState.Vp",
+  "expected": 9.0,
+  "tol": 0.01,
+  "note": "on load: meter at A: 9,0 V"
+ },
+ {
+  "expr": "window.simState.sumLoop",
+  "expected": 0.0,
+  "tol": 0.01,
+  "note": "on load: loop sum U - U1 - U2 = 0"
+ },
+ {
+  "expr": "(() => { const R=document.querySelectorAll('#sim-root input[type=range]'); const ok=(r,a,b,s)=>r.min===a&&r.max===b&&r.step===s; return R.length===4 && ok(R[0],'1','12','0.5') && ok(R[1],'5','100','5') && ok(R[2],'10','120','5') && ok(R[3],'10','120','5') ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "four sliders: U 1-12 V by 0,5; R1 5-100 ohm by 5; R2 and R3 10-120 ohm by 5"
+ },
+ {
+  "expr": "(() => { const L=[...document.querySelectorAll('#sim-root select')].map(s=>[...s.options].map(o=>o.value).join(',')); return L.length===2 && L[0]==='A,B,C,D,E,F' && L[1]==='F,B' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "two selects: probe point A-F and reference point (minus pole F or junction B)"
+ },
+ {
+  "expr": "(() => { const k=[...document.getElementById('sim-root').children].map(e=>e.tagName==='CANVAS'?'canvas':e.className); return k.indexOf('canvas')<k.indexOf('controls') && k.indexOf('controls')<k.indexOf('readout') ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "DOM order canvas, controls, readout"
+ },
+ {
+  "expr": "(() => { const n=document.querySelectorAll('#sim-root p.note'); return !document.querySelector('#sim-root details') && n.length===1 && n[0].textContent.trim().split(/\\s+/).length<=15 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "no Lisätietoja box; one legend line of at most 15 words"
+ },
+ {
+  "expr": "(() => { const P=window.simAdapter && window.simAdapter.params; return P && Object.keys(P).sort().join(',')==='R1,R2,R3,U,ground,probe' && P.U.unit==='V' && P.R3.unit==='Ω' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "adapter declares U (V), R1-R3 (ohm), probe and ground"
+ },
+ {
+  "expr": "(() => { const c=document.querySelector('#sim-root canvas'); const w=document.getElementById('sim-root').clientWidth; return c.width===600 && c.height===(w<500?966:400) ? 1 : 0; })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "canvas 600x400 on a wide screen, 600x966 (stacked, larger labels, the meter under the circuit) under 500 px"
+ },
+ {
+  "expr": "(() => { const t=document.querySelector('#sim-root .readout').textContent; return /Virrat/.test(t) && /Mittari/.test(t) ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "the readout shows the currents and the meter reading"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],9); I(R[1],10); I(R[2],30); I(R[3],30); I(S[0],'A'); I(S[1],'F');",
+  "expr": "window.simState.I1",
+  "expected": 0.36,
+  "tol": 0.01,
+  "note": "koe 1: R3 = 30 ohm, I1 (lesson-answers koe1-R3-30-I1)"
+ },
+ {
+  "expr": "window.simState.I2",
+  "expected": 0.18,
+  "tol": 0.01,
+  "note": "koe 1: R3 = 30 ohm, I2"
+ },
+ {
+  "expr": "window.simState.I3",
+  "expected": 0.18,
+  "tol": 0.01,
+  "note": "koe 1: R3 = 30 ohm, I3"
+ },
+ {
+  "expr": "window.simState.I2 + window.simState.I3 - window.simState.I1",
+  "expected": 0,
+  "tol": 0.001,
+  "note": "koe 1: current law I2 + I3 = I1 at R3 = 30 ohm"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],9); I(R[1],10); I(R[2],30); I(R[3],60); I(S[0],'A'); I(S[1],'F');",
+  "expr": "window.simState.I1",
+  "expected": 0.3,
+  "tol": 0.01,
+  "note": "koe 1: R3 = 60 ohm, I1 (lesson-answers koe1-R3-60-I1)"
+ },
+ {
+  "expr": "window.simState.I2",
+  "expected": 0.2,
+  "tol": 0.01,
+  "note": "koe 1: R3 = 60 ohm, I2"
+ },
+ {
+  "expr": "window.simState.I3",
+  "expected": 0.1,
+  "tol": 0.01,
+  "note": "koe 1: R3 = 60 ohm, I3"
+ },
+ {
+  "expr": "window.simState.I2 + window.simState.I3 - window.simState.I1",
+  "expected": 0,
+  "tol": 0.001,
+  "note": "koe 1: current law I2 + I3 = I1 at R3 = 60 ohm"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],9); I(R[1],10); I(R[2],30); I(R[3],120); I(S[0],'A'); I(S[1],'F');",
+  "expr": "window.simState.I1",
+  "expected": 0.264706,
+  "tol": 0.01,
+  "note": "koe 1: R3 = 120 ohm, I1 (lesson-answers koe1-R3-120-I1)"
+ },
+ {
+  "expr": "window.simState.I2",
+  "expected": 0.211765,
+  "tol": 0.01,
+  "note": "koe 1: R3 = 120 ohm, I2"
+ },
+ {
+  "expr": "window.simState.I3",
+  "expected": 0.052941,
+  "tol": 0.01,
+  "note": "koe 1: R3 = 120 ohm, I3"
+ },
+ {
+  "expr": "window.simState.I2 + window.simState.I3 - window.simState.I1",
+  "expected": 0,
+  "tol": 0.001,
+  "note": "koe 1: current law I2 + I3 = I1 at R3 = 120 ohm"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],9); I(R[1],10); I(R[2],30); I(R[3],60); I(S[0],'A'); I(S[1],'F');",
+  "expr": "window.simState.Vp",
+  "expected": 9,
+  "tol": 0.01,
+  "note": "koe 2 and prediction 2: potential at A = 9 V (minus pole reference)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],9); I(R[1],10); I(R[2],30); I(R[3],60); I(S[0],'B'); I(S[1],'F');",
+  "expr": "window.simState.Vp",
+  "expected": 6,
+  "tol": 0.01,
+  "note": "koe 2 and prediction 2: potential at B = 6 V (minus pole reference)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],9); I(R[1],10); I(R[2],30); I(R[3],60); I(S[0],'C'); I(S[1],'F');",
+  "expr": "window.simState.Vp",
+  "expected": 6,
+  "tol": 0.01,
+  "note": "koe 2 and prediction 2: potential at C = 6 V (minus pole reference)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],9); I(R[1],10); I(R[2],30); I(R[3],60); I(S[0],'D'); I(S[1],'F');",
+  "expr": "window.simState.Vp",
+  "expected": 0,
+  "tol": 0.01,
+  "note": "koe 2 and prediction 2: potential at D = 0 V (minus pole reference)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],9); I(R[1],10); I(R[2],30); I(R[3],60); I(S[0],'E'); I(S[1],'F');",
+  "expr": "window.simState.Vp",
+  "expected": 0,
+  "tol": 0.01,
+  "note": "koe 2 and prediction 2: potential at E = 0 V (minus pole reference)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],9); I(R[1],10); I(R[2],30); I(R[3],60); I(S[0],'F'); I(S[1],'F');",
+  "expr": "window.simState.Vp",
+  "expected": 0,
+  "tol": 0.01,
+  "note": "koe 2 and prediction 2: potential at F = 0 V (minus pole reference)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],9); I(R[1],10); I(R[2],30); I(R[3],60); I(S[0],'A'); I(S[1],'B');",
+  "expr": "window.simState.VA",
+  "expected": 3.0,
+  "tol": 0.01,
+  "note": "koe 3: reference B, V_A = 3,0 V (koe3-VA)"
+ },
+ {
+  "expr": "window.simState.VB",
+  "expected": 0,
+  "tol": 0.01,
+  "note": "koe 3: reference B, V_B = 0"
+ },
+ {
+  "expr": "window.simState.VF",
+  "expected": -6.0,
+  "tol": 0.01,
+  "note": "koe 3: reference B, V_F = -6,0 V (koe3-VF)"
+ },
+ {
+  "expr": "window.simState.U1",
+  "expected": 3.0,
+  "tol": 0.01,
+  "note": "koe 3: U1 = 3,0 V with either reference"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],9); I(R[1],10); I(R[2],30); I(R[3],60); I(S[0],'F'); I(S[1],'B');",
+  "expr": "window.simState.Vp",
+  "expected": -6.0,
+  "tol": 0.01,
+  "note": "meter at F with reference B: -6,0 V"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],12); I(R[1],10); I(R[2],30); I(R[3],60); I(S[0],'A'); I(S[1],'F');",
+  "expr": "window.simState.I1",
+  "expected": 0.4,
+  "tol": 0.01,
+  "note": "U = 12 V: I1 = 12 V : 30 ohm = 0,40 A"
+ },
+ {
+  "expr": "window.simState.VA",
+  "expected": 12,
+  "tol": 0.01,
+  "note": "U = 12 V: V_A = 12 V"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],9); I(R[1],40); I(R[2],30); I(R[3],60); I(S[0],'A'); I(S[1],'F');",
+  "expr": "window.simState.I1",
+  "expected": 0.15,
+  "tol": 0.01,
+  "note": "R1 = 40 ohm: I1 = 9,0 V : 60 ohm = 0,15 A"
+ },
+ {
+  "expr": "window.simState.VB",
+  "expected": 3.0,
+  "tol": 0.01,
+  "note": "R1 = 40 ohm: V_B = 9,0 V - 6,0 V = 3,0 V"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],9); I(R[1],10); I(R[2],60); I(R[3],60); I(S[0],'A'); I(S[1],'F');",
+  "expr": "window.simState.I2",
+  "expected": 0.1125,
+  "tol": 0.01,
+  "note": "R2 = R3 = 60 ohm: R23 = 30, I1 = 0,225 A, I2 = I3 = 0,1125 A"
+ },
+ {
+  "expr": "window.simState.I3",
+  "expected": 0.1125,
+  "tol": 0.01,
+  "note": "R2 = R3 = 60 ohm: equal branch currents"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],9); I(R[1],10); I(R[2],30); I(R[3],60); I(S[0],'A'); I(S[1],'F');",
+  "expr": "window.simState.sumLoop",
+  "expected": 0,
+  "tol": 0.001,
+  "note": "back to the start: the loop sum stays zero"
+ }
+]

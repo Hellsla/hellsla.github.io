@@ -1,0 +1,105 @@
+{
+ "level1": [
+  {
+   "id": "fy6-3-L1-01",
+   "level": 1,
+   "text": "Vedenkeitin on kytketty $230\\,\\text{V}$:n jännitteeseen, ja sen lämmitysvastuksen läpi kulkee $8{,}7\\,\\text{A}$:n virta. Mikä on lämmitysvastuksen resistanssi?",
+   "answer": 26,
+   "unit": "Ω",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy6-3-L1-02",
+   "level": 1,
+   "text": "Elektroniikkapiirin vastuksen resistanssi on $220\\,\\Omega$, ja sen läpi kulkee $15\\,\\text{mA}$:n virta. Kuinka suuri on vastuksen jännite? Vastaa voltteina.",
+   "answer": 3.3,
+   "unit": "V",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy6-3-L1-03",
+   "level": 1,
+   "text": "Auton takalasin lämmityslankojen yhteinen resistanssi on $1{,}2\\,\\Omega$, ja ne on kytketty auton $12\\,\\text{V}$:n jännitteeseen. Kuinka suuri virta lankojen läpi kulkee?",
+   "answer": 10,
+   "unit": "A",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy6-3-L1-04",
+   "level": 1,
+   "text": "Kuparisen sähköjohdon johtimen pituus on $25\\,\\text{m}$ ja poikkipinta-ala $2{,}5\\,\\text{mm}^2$. Kuparin resistiivisyys on $1{,}7 \\cdot 10^{-8}\\,\\Omega\\cdot\\text{m}$. Mikä on johtimen resistanssi? Vastaa ohmeina.",
+   "answer": 0.17,
+   "unit": "Ω",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy6-3-L1-05",
+   "level": 1,
+   "text": "Ruukun multaan pistetyn kosteusanturin elektrodien välillä on $5{,}0\\,\\text{V}$:n jännite, ja mullan läpi kulkee $2{,}0\\,\\text{mA}$:n virta. Mikä on mullan resistanssi elektrodien välillä? Vastaa kilo-ohmeina.",
+   "answer": 2.5,
+   "unit": "kΩ",
+   "tolerance": 0.02
+  }
+ ],
+ "level2": [
+  {
+   "id": "fy6-3-L2-01",
+   "level": 2,
+   "text": "Vastuksen jännite on $6{,}0\\,\\text{V}$ ja sen läpi kulkee $0{,}25\\,\\text{A}$:n virta. Jännite nostetaan $9{,}0\\,\\text{V}$:iin, ja vastuksen lämpötila pysyy samana. Kuinka suuri virta vastuksen läpi nyt kulkee?",
+   "answer": 0.38,
+   "unit": "A",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy6-3-L2-02",
+   "level": 2,
+   "text": "Kuvaajassa on hehkulampun ominaiskäyrä. Mikä on lampun resistanssi, kun sen jännite on $1{,}0\\,\\text{V}$? Lue tarvittava arvo kuvaajasta.",
+   "figure": "fy6-3/lamp-curve",
+   "answer": 6.7,
+   "unit": "Ω",
+   "tolerance": 0.05
+  },
+  {
+   "id": "fy6-3-L2-03",
+   "level": 2,
+   "text": "Ulkorakennukseen vedetään $50\\,\\text{m}$:n pituinen kuparijohdin. Johtimen resistanssi saa olla enintään $0{,}50\\,\\Omega$. Kuparin resistiivisyys on $1{,}7 \\cdot 10^{-8}\\,\\Omega\\cdot\\text{m}$. Kuinka suuri johtimen poikkipinta-alan on vähintään oltava? Vastaa neliömillimetreinä.",
+   "answer": 1.7,
+   "unit": "mm²",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy6-3-L2-04",
+   "level": 2,
+   "text": "Konstantaanilangan halkaisija on $0{,}40\\,\\text{mm}$ ja pituus $2{,}0\\,\\text{m}$. Konstantaanin resistiivisyys on $5{,}0 \\cdot 10^{-7}\\,\\Omega\\cdot\\text{m}$. Mikä on langan resistanssi?",
+   "answer": 8.0,
+   "unit": "Ω",
+   "tolerance": 0.02
+  }
+ ],
+ "level3": [
+  {
+   "id": "fy6-3-L3-01",
+   "level": 3,
+   "text": "Kuparilangan resistanssi on $0{,}80\\,\\Omega$. Lanka vedetään vetopenkissä kaksi kertaa alkuperäistä pidemmäksi. Kuparin määrä eli langan tilavuus ei muutu, ja lanka pysyy tasapaksuna. Mikä on venytetyn langan resistanssi? Perustele, miksi resistanssi muuttuu enemmän kuin pituus.",
+   "answer": 3.2,
+   "unit": "Ω",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy6-3-L3-02",
+   "level": 3,
+   "text": "Opiskelija mittasi kromnikkelilangan virran eri pituuksilla, kun langan jännite oli koko ajan $2{,}00\\,\\text{V}$ ja poikkipinta-ala $0{,}20\\,\\text{mm}^2$. Pituuksilla $0{,}40\\,\\text{m}$, $0{,}80\\,\\text{m}$, $1{,}20\\,\\text{m}$ ja $1{,}60\\,\\text{m}$ virrat olivat $0{,}91\\,\\text{A}$, $0{,}46\\,\\text{A}$, $0{,}30\\,\\text{A}$ ja $0{,}23\\,\\text{A}$. Määritä mittausten perusteella kromnikkelin resistiivisyys. Vastaa yksikössä $\\mu\\Omega\\cdot\\text{m}$ ($1\\,\\mu\\Omega\\cdot\\text{m} = 10^{-6}\\,\\Omega\\cdot\\text{m}$).",
+   "answer": 1.1,
+   "unit": "µΩ·m",
+   "tolerance": 0.05
+  },
+  {
+   "id": "fy6-3-L3-03",
+   "level": 3,
+   "text": "Taskulampun hehkulampun resistanssi mitataan yleismittarilla, kun lamppu on huoneenlämpöinen: $1{,}0\\,\\Omega$. Kun lamppu palaa $3{,}0\\,\\text{V}$:n jännitteellä, sen läpi kulkee $0{,}25\\,\\text{A}$:n virta. Kuinka suuri virta lampun läpi kulkee heti kytkentähetkellä, kun lanka on vielä kylmä? Selitä, miksi hehkulamppu palaa puhki useimmiten juuri päälle kytkettäessä.",
+   "answer": 3.0,
+   "unit": "A",
+   "tolerance": 0.02
+  }
+ ]
+}

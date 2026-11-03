@@ -1,0 +1,22 @@
+{
+  "id": "fy6-1",
+  "course": "FY6",
+  "title": "Virtapiiri, sähkövirta ja jännite",
+  "goals": [
+    "LOPS FY6: jännite ja sähkövirta tasavirtapiireissä",
+    "Täsmennys: peruskäsitteet, jotka liittyvät sähköiseen vuorovaikutukseen, sähkövirtaan ja tasavirtapiirien komponentteihin",
+    "Taidot: kytkentäkaavioiden laatiminen"
+  ],
+  "prerequisites": [],
+  "glossary": [
+    "sähkövirta",
+    "jännite",
+    "virtapiiri",
+    "kytkentäkaavio",
+    "johde",
+    "eriste"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

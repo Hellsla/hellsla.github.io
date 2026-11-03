@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Komponentin jännite on $9{,}0\\,\\text{V}$, ja sen läpi kulkee $0{,}060\\,\\text{A}$:n virta. Mikä on komponentin resistanssi?",
+    "a": "$R = U : I = 9{,}0\\,\\text{V} : 0{,}060\\,\\text{A} = 150\\,\\Omega$."
+  },
+  {
+    "q": "Kuparilangan pituus puolitetaan, ja sen poikkipinta-ala kaksinkertaistetaan. Miten langan resistanssi muuttuu?",
+    "a": "Resistanssi pienenee neljäsosaan, koska $R = \\rho l : A$. Puolet pienempi pituus puolittaa resistanssin. Kaksinkertainen poikkipinta-ala puolittaa sen uudelleen."
+  }
+]

@@ -1,0 +1,459 @@
+{
+  "version": 1,
+  "contribution": "Kaksi vastusta kytketään sarjaan tai rinnan: sarjassa virta on sama ja jännitteet summautuvat, rinnan jännite on sama ja virrat summautuvat, ja niistä johdetaan kokonaisresistanssin kaavat ja sekakytkennän vaiheittainen ratkaisu.",
+  "learn": [
+    "selittämään, miten virta ja jännite jakautuvat sarja- ja rinnankytkennässä.",
+    "laskemaan sarjaan ja rinnan kytkettyjen vastusten kokonaisresistanssin.",
+    "ratkaisemaan sekakytkennän virrat ja jännitteet vaiheittain."
+  ],
+  "prior": [
+    "Vastuksen jännite, virta ja resistanssi liittyvät toisiinsa Ohmin lain $U = RI$ mukaan (luku *Resistanssi ja Ohmin laki*)",
+    "Virtamittari kytketään sarjaan ja jännitemittari rinnan mitattavan komponentin kanssa (luku *Mittaukset virtapiirissä*)",
+    "Sovittu virran suunta on pariston plusnavasta miinusnapaan (luku *Virtapiiri, sähkövirta ja jännite*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Joulukuun iltana ikkunassa roikkuu vanha valosarja, jonka kaikki lamput sammuivat yhtä aikaa, kun yksi pieni lamppu irtosi kannastaan. Samaan jatkojohtoon kytketyt lattiavalaisin ja pöytävalaisin palavat kuitenkin edelleen, ja kumman tahansa niistä voi sammuttaa toisesta riippumatta.",
+      "question": "Miten lamppujen kytkentätapa ratkaisee, mihin kaikkiin lamppuihin virta lakkaa kulkemasta, kun yksi lamppu sammuu?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Kertaa: Ohmin laki",
+      "prompt": "Vastus, jonka resistanssi on $100\\,\\Omega$, kytketään $6{,}0\\,\\text{V}$:n paristoon. Kuinka suuri virta vastuksen läpi kulkee?",
+      "choices": [
+        {
+          "text": "$60\\,\\text{mA}$",
+          "correct": true,
+          "feedback": "Oikein. Ohmin lain mukaan $I = U : R = 6{,}0\\,\\text{V} : 100\\,\\Omega = 0{,}060\\,\\text{A} = 60\\,\\text{mA}$ (luku *Resistanssi ja Ohmin laki*). Tänään selvitetään, mitä tapahtuu, kun vastuksia on kaksi."
+        },
+        {
+          "text": "$600\\,\\text{mA}$",
+          "feedback": "Jännite jaetaan resistanssilla: $6{,}0\\,\\text{V} : 100\\,\\Omega = 0{,}060\\,\\text{A}$. Ampeereista milliampeereihin kerrotaan tuhannella, joten virta on $60\\,\\text{mA}$, ei $600\\,\\text{mA}$."
+        },
+        {
+          "text": "$17\\,\\text{A}$",
+          "feedback": "Tässä resistanssi on jaettu jännitteellä. Ohmin laista $U = RI$ ratkaistuna virta on $I = U : R$, joten suurempi resistanssi antaa pienemmän virran: $6{,}0\\,\\text{V} : 100\\,\\Omega = 60\\,\\text{mA}$."
+        },
+        {
+          "text": "$0{,}60\\,\\text{kA}$",
+          "feedback": "Virta ei ole jännitteen ja resistanssin tulo: Ohmin laista $U = RI$ ratkaistuna $I = U : R$. Tulon $6{,}0\\,\\text{V} \\cdot 100\\,\\Omega$ yksikkö ei edes ole ampeeri. Oikea virta on $60\\,\\text{mA}$."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 1: sarjaankytkentä",
+      "prompt": "Vastukset $R_1 = 100\\,\\Omega$ ja $R_2 = 50\\,\\Omega$ kytketään sarjaan $6{,}0\\,\\text{V}$:n paristoon niin, että virta kulkee ensin $R_1$:n ja sitten $R_2$:n läpi. Miten virta ja jännite jakautuvat vastusten kesken?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "Kummankin läpi kulkee sama virta, ja suurempi jännite on vastuksen $R_1$ yli.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä: kun $R_2 = 50\\,\\Omega$, kummankin vastuksen läpi kulkee $40{,}0\\,\\text{mA}$, ja jännitteet ovat $U_1 = 4{,}00\\,\\text{V}$ ja $U_2 = 2{,}00\\,\\text{V}$. Sama virta tekee kaksinkertaiseen resistanssiin kaksinkertaisen jännitteen, ja jännitteiden summa on aina pariston $6{,}0\\,\\text{V}$."
+        },
+        {
+          "text": "Vastuksen $R_1$ läpi kulkee suurempi virta, koska se on ensimmäisenä ja kuluttaa osan virrasta.",
+          "feedback": "Mallin arvot kumoavat tämän: kummankin vastuksen läpi kulkee sama $40{,}0\\,\\text{mA}$. Virta ei kulu vastuksessa, koska varausta ei katoa mihinkään. Vastuksessa muuttuu varausten energiaa vastuksen sisäenergiaksi, ja se näkyy jännitteenä $U_1 = 4{,}00\\,\\text{V}$."
+        },
+        {
+          "text": "Kummankin läpi kulkee sama virta, ja pariston jännite jakautuu tasan: kummankin yli on $3{,}0\\,\\text{V}$.",
+          "feedback": "Virta on todella sama, $40{,}0\\,\\text{mA}$, mutta jännitteet ovat $U_1 = 4{,}00\\,\\text{V}$ ja $U_2 = 2{,}00\\,\\text{V}$. Ohmin lain mukaan $U = RI$, joten samalla virralla jännite on suoraan verrannollinen resistanssiin. Tasan jännite jakautuu vain, kun $R_2 = 100\\,\\Omega$."
+        },
+        {
+          "text": "Vastuksen $R_2$ läpi kulkee suurempi virta, koska sen resistanssi on pienempi.",
+          "feedback": "Mallin arvot kumoavat tämän: kummankin vastuksen läpi kulkee $40{,}0\\,\\text{mA}$. Sarjaankytkennässä varauksilla on vain yksi reitti, joten pienempi resistanssi ei voi vetää enempää virtaa. Pienemmän resistanssin yli on vain pienempi jännite, $2{,}00\\,\\text{V}$."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 2: rinnankytkentä",
+      "prompt": "Kun vastus $R_1 = 100\\,\\Omega$ on yksin kytketty $6{,}0\\,\\text{V}$:n ihanteelliseen paristoon, paristosta lähtee virta $60\\,\\text{mA}$. Sen rinnalle kytketään toinen samanlainen vastus, $R_2 = 100\\,\\Omega$. Kuinka suuri virta paristosta nyt lähtee?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-2",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "$30\\,\\text{mA}$, koska piiriin tulee lisää resistanssia vastustamaan virtaa.",
+          "feedback": "Mallin arvot kumoavat tämän: paristosta lähtee $120\\,\\text{mA}$, ja kokonaisresistanssi on $50{,}0\\,\\Omega$. Rinnan kytketty vastus ei ole samalla reitillä, vaan se avaa uuden reitin. Siksi kokonaisresistanssi pienenee."
+        },
+        {
+          "text": "$60\\,\\text{mA}$, joka jakautuu tasan kahden haaran kesken.",
+          "feedback": "Mallin arvot kumoavat tämän: kummassakin haarassa kulkee $60{,}0\\,\\text{mA}$, ja paristosta lähtee $120\\,\\text{mA}$. Paristo ei anna aina samaa virtaa, vaan pitää napojensa jännitteen samana. Kummankin vastuksen yli on siis $6{,}0\\,\\text{V}$, ja kumpikin saa saman virran kuin yksinään."
+        },
+        {
+          "text": "$120\\,\\text{mA}$, koska kumpikin saa saman virran kuin yksin.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä: kummassakin haarassa kulkee $60{,}0\\,\\text{mA}$, ja paristosta lähtee $I = I_1 + I_2 = 120\\,\\text{mA}$. Kokonaisresistanssi on $50{,}0\\,\\Omega$, puolet yhden vastuksen resistanssista."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Kytke vastukset sarjaan tai rinnan ja seuraa, miten virta ja jännitteet jakautuvat ja kuinka suuri virta paristosta lähtee.",
+      "howto": "Valitse *Kytkentä*: yksi vastus, kaksi vastusta sarjaan tai kaksi vastusta rinnan. Säädä pariston jännitettä $U$ sekä vastuksia $R_1$ ja $R_2$. Virtamittari $\\text{A}$ näyttää paristosta lähtevän virran $I$. Vastusten vieressä näkyvät niiden jännitteet ja rinnankytkennässä haaravirrat. Violettien pisteiden nopeus kuvaa virran suuruutta kussakin johtimen osassa. Mitä suurempi teho vastuksessa muuttuu sisäenergiaksi, sitä oranssimpana se hehkuu. *Nopeus* muuttaa vain pisteiden liikkeen tahtia, ei lukemia.",
+      "model": "Paristo on ihanteellinen: sen napojen välinen jännite $U$ pysyy samana virrasta riippumatta. Johtimien ja virtamittarin resistanssi on nolla, ja vastusten resistanssit eivät muutu lämmetessä. Kaikki lukemat ovat mallin laskemia arvoja, eivät mittauksia. Pisteet kuvaavat sovittua virran suuntaa plusnavasta miinusnapaan; metallijohtimessa elektronit liikkuvat vastakkaiseen suuntaan. Pisteiden nopeus on vain havainnollistus: elektronien todellinen keskimääräinen liike johtimessa on hyvin hidasta.",
+      "calc": "Sarjaankytkennässä $R = R_1 + R_2$ ja koko piirissä kulkee sama virta $I = U : R$. Vastusten jännitteet ovat $U_1 = R_1 I$ ja $U_2 = R_2 I$.\n\nRinnankytkennässä kummankin vastuksen yli on pariston jännite $U$, joten haaravirrat ovat $I_1 = U : R_1$ ja $I_2 = U : R_2$. Paristosta lähtevä virta on $I = I_1 + I_2$ ja kokonaisresistanssi $R = U : I$, mikä on sama kuin\n\n$$R = \\frac{R_1 R_2}{R_1 + R_2}$$\n\nVastuksen hehku seuraa tehoa $P = UI$, jota käsitellään luvussa *Sähköteho ja vastuksen lämpeneminen*."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 1: sarjaankytkentä",
+      "intro": "Testaa ennuste 1. Vastukset ovat sarjassa, pariston jännite on $6{,}0\\,\\text{V}$ ja $R_1 = 100\\,\\Omega$. Muuta vain vastusta $R_2$ ja kirjaa virrat ja jännitteet ainakin kahdella arvolla, esimerkiksi $50\\,\\Omega$, $100\\,\\Omega$ ja $200\\,\\Omega$. Vertaa virtoja $I_1$ ja $I_2$ ja laske jännitteiden summa.",
+      "initial": {
+        "mode": "sarja",
+        "U": 6,
+        "R1": 100,
+        "R2": 50
+      },
+      "locked": [
+        "mode",
+        "U",
+        "R1"
+      ],
+      "vary": "R2",
+      "names": {
+        "mode": "kytkentä",
+        "U": "pariston jännite",
+        "R1": "R_1",
+        "R2": "R_2"
+      },
+      "units": {
+        "mode": "",
+        "U": "V",
+        "R1": "Ω",
+        "R2": "Ω"
+      },
+      "values": {
+        "mode": {
+          "sarja": "sarjaankytkentä"
+        },
+        "R1": {
+          "100": "$100\\,\\Omega$"
+        },
+        "R2": {
+          "10": "$10\\,\\Omega$",
+          "20": "$20\\,\\Omega$",
+          "30": "$30\\,\\Omega$",
+          "40": "$40\\,\\Omega$",
+          "50": "$50\\,\\Omega$",
+          "60": "$60\\,\\Omega$",
+          "70": "$70\\,\\Omega$",
+          "80": "$80\\,\\Omega$",
+          "90": "$90\\,\\Omega$",
+          "100": "$100\\,\\Omega$",
+          "110": "$110\\,\\Omega$",
+          "120": "$120\\,\\Omega$",
+          "130": "$130\\,\\Omega$",
+          "140": "$140\\,\\Omega$",
+          "150": "$150\\,\\Omega$",
+          "160": "$160\\,\\Omega$",
+          "170": "$170\\,\\Omega$",
+          "180": "$180\\,\\Omega$",
+          "190": "$190\\,\\Omega$",
+          "200": "$200\\,\\Omega$"
+        }
+      },
+      "measure": [
+        {
+          "key": "I1mA",
+          "label": "I_1 (mA)"
+        },
+        {
+          "key": "I2mA",
+          "label": "I_2 (mA)"
+        },
+        {
+          "key": "U1",
+          "label": "U_1 (V)"
+        },
+        {
+          "key": "U2",
+          "label": "U_2 (V)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 2: rinnankytkentä",
+      "intro": "Testaa ennuste 2. Vastukset ovat nyt rinnan, pariston jännite on $6{,}0\\,\\text{V}$ ja $R_1 = 100\\,\\Omega$. Muuta vain vastusta $R_2$ ja kirjaa virrat ja kokonaisresistanssi ainakin kahdella arvolla, ensin ennusteen arvolla $100\\,\\Omega$ ja sitten esimerkiksi arvoilla $200\\,\\Omega$ ja $50\\,\\Omega$. Muuttuuko haaravirta $I_1$, kun $R_2$ muuttuu? Onko kokonaisresistanssi koskaan suurempi kuin pienempi vastuksista?",
+      "initial": {
+        "mode": "rinnan",
+        "U": 6,
+        "R1": 100,
+        "R2": 100
+      },
+      "locked": [
+        "mode",
+        "U",
+        "R1"
+      ],
+      "vary": "R2",
+      "names": {
+        "mode": "kytkentä",
+        "U": "pariston jännite",
+        "R1": "R_1",
+        "R2": "R_2"
+      },
+      "units": {
+        "mode": "",
+        "U": "V",
+        "R1": "Ω",
+        "R2": "Ω"
+      },
+      "values": {
+        "mode": {
+          "rinnan": "rinnankytkentä"
+        },
+        "R1": {
+          "100": "$100\\,\\Omega$"
+        },
+        "R2": {
+          "10": "$10\\,\\Omega$",
+          "20": "$20\\,\\Omega$",
+          "30": "$30\\,\\Omega$",
+          "40": "$40\\,\\Omega$",
+          "50": "$50\\,\\Omega$",
+          "60": "$60\\,\\Omega$",
+          "70": "$70\\,\\Omega$",
+          "80": "$80\\,\\Omega$",
+          "90": "$90\\,\\Omega$",
+          "100": "$100\\,\\Omega$",
+          "110": "$110\\,\\Omega$",
+          "120": "$120\\,\\Omega$",
+          "130": "$130\\,\\Omega$",
+          "140": "$140\\,\\Omega$",
+          "150": "$150\\,\\Omega$",
+          "160": "$160\\,\\Omega$",
+          "170": "$170\\,\\Omega$",
+          "180": "$180\\,\\Omega$",
+          "190": "$190\\,\\Omega$",
+          "200": "$200\\,\\Omega$"
+        }
+      },
+      "measure": [
+        {
+          "key": "I1mA",
+          "label": "I_1 (mA)"
+        },
+        {
+          "key": "I2mA",
+          "label": "I_2 (mA)"
+        },
+        {
+          "key": "ImA",
+          "label": "I (mA)"
+        },
+        {
+          "key": "R",
+          "label": "R (Ω)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös: virta ja jännite kytkennöissä",
+      "after": [
+        "koe-1",
+        "koe-2"
+      ],
+      "prompt": "Kirjoita taulukoidesi perusteella: mikä suure oli sarjaankytkennässä sama kummassakin vastuksessa ja mikä jakautui niiden kesken? Mikä suure oli rinnankytkennässä sama kummassakin haarassa, ja miten paristosta lähtevä virta riippui haaravirroista? Miten kokonaisresistanssi muuttui, kun toinen vastus kytkettiin rinnan? Mainitse lopuksi, että luvut ovat mallin arvoja, ja mitä oletuksia ne vaativat.",
+      "model": "Sarjaankytkennässä virta oli sama kummassakin vastuksessa, esimerkiksi $40{,}0\\,\\text{mA}$, kun $R_2 = 50\\,\\Omega$, ja $20{,}0\\,\\text{mA}$, kun $R_2 = 200\\,\\Omega$. Pariston jännite jakautui vastusten kesken resistanssien suhteessa: $4{,}00\\,\\text{V} + 2{,}00\\,\\text{V} = 6{,}0\\,\\text{V}$. Rinnankytkennässä kummankin haaran yli oli pariston jännite, joten haaravirta $I_1$ pysyi $60{,}0\\,\\text{mA}$:ssa, vaikka $R_2$ muuttui. Paristosta lähtevä virta oli haaravirtojen summa, esimerkiksi $60{,}0\\,\\text{mA} + 30{,}0\\,\\text{mA} = 90{,}0\\,\\text{mA}$. Kokonaisresistanssi oli aina pienempi kuin pienempi vastuksista, esimerkiksi $50{,}0\\,\\Omega$ kahdella $100\\,\\Omega$:n vastuksella. Arvot ovat mallin laskemia: paristo on ihanteellinen eikä johtimissa ole resistanssia.",
+      "criteria": [
+        "Sanoin, että sarjaankytkennässä virta on sama ja jännite jakautuu, ja perustelin sen lukuarvoilla.",
+        "Sanoin, että rinnankytkennässä jännite on sama ja paristosta lähtevä virta on haaravirtojen summa.",
+        "Totesin, että rinnan kytketty vastus pienensi kokonaisresistanssia, ja annoin esimerkin taulukosta.",
+        "Mainitsin, että arvot ovat mallin arvoja ihanteellisella paristolla."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Palaa ennusteisiisi",
+      "prompt": "Vertaa ennusteitasi kokeiden mallin arvoihin. Palaa sitten alun kysymykseen: miksi jouluvalosarjan kaikki lamput sammuivat yhden lampun irrotessa, mutta jatkojohtoon kytketyt valaisimet voi sammuttaa toisistaan riippumatta? Kumpi kytkentä on valosarjassa ja kumpi jatkojohdossa?",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2"
+      ],
+      "optional": true
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe",
+      "prompt": "Opiskelija laskee rinnan kytkettyjen vastusten $R_1 = 20\\,\\Omega$ ja $R_2 = 30\\,\\Omega$ kokonaisresistanssin. Hän kirjoittaa\n\n$$\\begin{aligned} R &= \\frac{1}{R_1} + \\frac{1}{R_2} \\\\ &= \\frac{1}{20\\,\\Omega} + \\frac{1}{30\\,\\Omega} \\\\ &\\approx 0{,}083\\,\\Omega \\end{aligned}$$\n\nMissä on virhe?",
+      "choices": [
+        {
+          "text": "Summa on $\\tfrac{1}{R}$, joten se pitää vielä kääntää: $R = 12\\,\\Omega$.",
+          "correct": true,
+          "feedback": "Oikein. Summa $\\tfrac{1}{20\\,\\Omega} + \\tfrac{1}{30\\,\\Omega} \\approx 0{,}083\\,\\tfrac{1}{\\Omega}$ on luku $\\tfrac{1}{R}$, ja sen yksikkö on $\\tfrac{1}{\\Omega}$, ei ohmi. Käänteisluku antaa $R = 12\\,\\Omega$, joka on pienempi kuin $20\\,\\Omega$, kuten rinnankytkennässä pitää."
+        },
+        {
+          "text": "Rinnankytkennässä resistanssit lasketaan yhteen: $R = 50\\,\\Omega$.",
+          "feedback": "Resistanssit lasketaan yhteen sarjaankytkennässä. Rinnankytkennässä jokainen haara on uusi kulkureitti, joten kokonaisresistanssi on pienempi kuin pienin vastus, ei suurempi kuin suurin. Opiskelijan virhe on, että hän ei kääntänyt summaa $\\tfrac{1}{R}$."
+        },
+        {
+          "text": "Ohmit olisi pitänyt muuttaa kilo-ohmeiksi ennen kuin laskun voi tehdä.",
+          "feedback": "Yksikkömuunnosta ei tarvita, koska molemmat resistanssit ovat samassa yksikössä. Virhe on se, että laskettu summa on $\\tfrac{1}{R}$ eikä $R$: sen yksikkö on $\\tfrac{1}{\\Omega}$, ja kokonaisresistanssi saadaan vasta käänteislukuna, $12\\,\\Omega$."
+        },
+        {
+          "text": "Tulos on oikein: rinnankytkennän kokonaisresistanssi on hyvin pieni.",
+          "feedback": "Kokonaisresistanssi on pienempi kuin pienin vastus, mutta ei näin pieni: $0{,}083\\,\\Omega$ olisi lähes oikosulku. Laskettu summa on $\\tfrac{1}{R}$, jonka yksikkö on $\\tfrac{1}{\\Omega}$. Käänteisluku antaa $R = 12\\,\\Omega$."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Sovella uuteen tilanteeseen",
+      "prompt": "Kuvan kytkennässä paristo on ihanteellinen, ja johtimien resistanssi jätetään huomiotta. Kuinka suuri virta paristosta lähtee? Vastaa ampeereina.",
+      "figure": "fy6-4/siirto-mixed",
+      "answer": 0.3,
+      "unit": "A",
+      "tolerance": 0.02,
+      "hints": [
+        "Mitkä vastukset ovat samojen kahden haarautumispisteen välissä, ja mikä vastus on niiden kanssa samalla reitillä, jonka koko virta kulkee?",
+        "Korvaa rinnakkaiset vastukset ensin yhdellä vastuksella: $R_{23} = \\dfrac{R_2 R_3}{R_2 + R_3}$. Se on sarjassa $20\\,\\Omega$:n vastuksen kanssa.",
+        "$R_{23} = \\dfrac{60\\,\\Omega \\cdot 30\\,\\Omega}{90\\,\\Omega} = 20\\,\\Omega$, joten $R = 40\\,\\Omega$ ja $I = 12\\,\\text{V} : 40\\,\\Omega$."
+      ],
+      "mistakes": [
+        {
+          "value": 0.109,
+          "feedback": "Laskit kaikki kolme vastusta yhteen kuin ne olisivat sarjassa. $60\\,\\Omega$ ja $30\\,\\Omega$ ovat rinnan, joten niiden yhteinen resistanssi on pienempi kuin $30\\,\\Omega$, ei $90\\,\\Omega$."
+        },
+        {
+          "value": 0.6,
+          "feedback": "Virta on liian suuri. Joko otit huomioon vain rinnakkaisosan, jolloin $20\\,\\Omega$ antaisi $0{,}60\\,\\text{A}$, tai et kääntänyt rinnankytkennän käänteislukua: $\\tfrac{1}{60\\,\\Omega} + \\tfrac{1}{30\\,\\Omega}$ on $\\tfrac{1}{R_{23}}$, ei $R_{23}$. Koko virta kulkee myös sarjaan kytketyn $20\\,\\Omega$:n vastuksen läpi, ja rinnakkaisosan resistanssi on $20\\,\\Omega$, joten kokonaisresistanssi on $20\\,\\Omega + 20\\,\\Omega = 40\\,\\Omega$."
+        }
+      ],
+      "solution": "**Annettu:** kuvasta pariston jännite $U = 12\\,\\text{V}$, sarjavastus $R_1 = 20\\,\\Omega$ ja rinnakkaiset vastukset $R_2 = 60\\,\\Omega$ ja $R_3 = 30\\,\\Omega$; paristo ihanteellinen, johtimissa ei resistanssia\n\n**Kysytty:** paristosta lähtevä virta $I$ ampeereina\n\n**Periaate:** Rinnakkaiset vastukset korvataan yhdellä vastuksella $R_{23}$, jonka kanssa $20\\,\\Omega$:n vastus on sarjassa, koska koko virta kulkee sen läpi. Kokonaisresistanssi on näiden summa, ja Ohmin laki antaa paristosta lähtevän virran.\n\n**Kuvan lukeminen:** Kuvasta luetaan $12\\,\\text{V}$ ja vastukset. $60\\,\\Omega$ ja $30\\,\\Omega$ ovat samojen kahden haarautumispisteen välissä eli rinnan, ja $20\\,\\Omega$ on pariston kanssa samassa silmukassa ennen haarautumista eli sarjassa.\n\n**Kaava:** $R_{23} = \\dfrac{R_2 R_3}{R_2 + R_3}$, $R = R_1 + R_{23}$ ja $U = RI$, josta\n\n$$I = \\frac{U}{R_1 + \\dfrac{R_2 R_3}{R_2 + R_3}}$$\n\n**Muunnokset:** Ei tarvita: jännite on voltteina ja resistanssit ohmeina, ja $\\tfrac{\\text{V}}{\\Omega} = \\text{A}$.\n\n**Sijoitus:** $R_{23} = \\dfrac{60\\,\\Omega \\cdot 30\\,\\Omega}{90\\,\\Omega} = 20\\,\\Omega$, $R = 20\\,\\Omega + 20\\,\\Omega = 40\\,\\Omega$ ja $I = \\dfrac{12\\,\\text{V}}{40\\,\\Omega} = 0{,}30\\,\\text{A}$\n\n**Vastaus:** $0{,}30\\,\\text{A}$, kaksi merkitsevää numeroa kuten jännitteessä $12\\,\\text{V}$.\n\n**Järkevyys:** Sarjavastuksen yli on $20\\,\\Omega \\cdot 0{,}30\\,\\text{A} = 6{,}0\\,\\text{V}$ ja rinnakkaisosan yli loput $6{,}0\\,\\text{V}$. Haaravirrat ovat $6{,}0\\,\\text{V} : 60\\,\\Omega = 0{,}10\\,\\text{A}$ ja $6{,}0\\,\\text{V} : 30\\,\\Omega = 0{,}20\\,\\text{A}$, yhteensä $0{,}30\\,\\text{A}$, sama kuin paristosta lähtevä virta."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Harjoittele kolmella tasolla. Tason 1 tehtävissä käytetään yhtä kytkennän sääntöä, tason 2 tehtävissä yhdistetään kokonaisresistanssi ja Ohmin laki, ja taso 3 vaatii sekakytkentää tai päättelyä."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Käsite",
+      "prompt": "Keittiön pistorasioihin on jo kytketty jääkaappi ja valaisin. Samaan virtapiiriin kytketään vielä vedenkeitin. Mitä tapahtuu jääkaapin virralle ja virtapiirin sulakkeen läpi kulkevalle kokonaisvirralle? Johtojen resistanssi jätetään huomiotta.",
+      "choices": [
+        {
+          "text": "Jääkaapin virta pysyy samana, ja kokonaisvirta kasvaa.",
+          "correct": true,
+          "feedback": "Oikein. Laitteet ovat rinnan, joten jokainen saa saman verkkojännitteen, ja jääkaapin virta pysyy samana. Vedenkeitin on uusi haara, joten sulakkeen läpi kulkeva kokonaisvirta on haaravirtojen summa ja kasvaa. Siksi liian monta laitetta samassa virtapiirissä voi laukaista sulakkeen."
+        },
+        {
+          "text": "Jääkaapin virta pienenee, koska kokonaisvirta jakautuu nyt useammalle laitteelle.",
+          "feedback": "Virta ei jakaudu kiinteästä määrästä. Jokaisen rinnakkaisen haaran yli on sama verkkojännite, joten jääkaapin virta $I = U : R$ ei muutu. Uusi haara kasvattaa kokonaisvirtaa."
+        },
+        {
+          "text": "Jääkaapin virta pysyy samana, ja kokonaisvirta pienenee, koska piirissä on enemmän resistanssia.",
+          "feedback": "Rinnan lisätty laite ei lisää resistanssia vaan avaa uuden kulkureitin, joten kokonaisresistanssi pienenee. Kokonaisvirta on haaravirtojen summa ja kasvaa."
+        },
+        {
+          "text": "Jääkaapin virta ja kokonaisvirta pysyvät molemmat samoina, koska verkkojännite ei muutu.",
+          "feedback": "Jääkaapin virta pysyy samana, koska sen jännite ei muutu. Kokonaisvirta on kuitenkin kaikkien haaravirtojen summa, ja vedenkeittimen haara tuo siihen oman virtansa."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Jännitteen jakautuminen",
+      "prompt": "Vastukset $220\\,\\Omega$ ja $330\\,\\Omega$ kytketään sarjaan $9{,}0\\,\\text{V}$:n paristoon. Kuinka suuri jännite on $330\\,\\Omega$:n vastuksen yli? Vastaa voltteina.",
+      "answer": 5.4,
+      "unit": "V",
+      "tolerance": 0.02,
+      "hints": [
+        "Mikä suure on sarjaankytkennässä sama kummassakin vastuksessa?",
+        "Laske ensin virta kokonaisresistanssin avulla: $I = \\dfrac{U}{R_1 + R_2}$.",
+        "$I = 9{,}0\\,\\text{V} : 550\\,\\Omega \\approx 0{,}0164\\,\\text{A}$, ja $U_2 = 330\\,\\Omega \\cdot I$."
+      ],
+      "mistakes": [
+        {
+          "value": 3.6,
+          "feedback": "Tämä on $220\\,\\Omega$:n vastuksen jännite. Kysytty jännite on suuremman vastuksen yli, ja se on suurempi, koska sama virta kulkee molempien läpi."
+        },
+        {
+          "value": 4.5,
+          "feedback": "Jännite jakautuu tasan vain, jos vastukset ovat yhtä suuret. Sarjaankytkennässä jännite jakautuu resistanssien suhteessa, joten $330\\,\\Omega$:n vastuksen yli on enemmän kuin puolet."
+        },
+        {
+          "value": 9.0,
+          "feedback": "Koko pariston jännite on vastuksen yli vain, jos se on yksin tai rinnan. Sarjaankytkennässä jännite jakautuu vastusten kesken."
+        }
+      ],
+      "solution": "**Annettu:** sarjaan kytketyt vastukset $R_1 = 220\\,\\Omega$ ja $R_2 = 330\\,\\Omega$, pariston jännite $U = 9{,}0\\,\\text{V}$\n\n**Kysytty:** vastuksen $R_2$ jännite $U_2$ voltteina\n\n**Periaate:** Sarjaankytkennässä sama virta kulkee kummankin vastuksen läpi, ja se saadaan kokonaisresistanssista Ohmin lailla. Vastuksen jännite on sen resistanssi kertaa tämä virta.\n\n**Kaava:** $I = \\dfrac{U}{R_1 + R_2}$ ja $U_2 = R_2 I$, josta\n\n$$U_2 = \\frac{R_2 U}{R_1 + R_2}$$\n\n**Muunnokset:** Ei tarvita: resistanssit ovat ohmeina ja jännite voltteina.\n\n**Sijoitus:** $U_2 = \\dfrac{330\\,\\Omega \\cdot 9{,}0\\,\\text{V}}{220\\,\\Omega + 330\\,\\Omega} = \\dfrac{2970\\,\\Omega \\cdot \\text{V}}{550\\,\\Omega} = 5{,}4\\,\\text{V}$\n\n**Vastaus:** $5{,}4\\,\\text{V}$, kaksi merkitsevää numeroa kuten jännitteessä $9{,}0\\,\\text{V}$.\n\n**Järkevyys:** Vastuksen $R_2$ osuus kokonaisresistanssista on $330 : 550 = 0{,}6$, joten sen yli on $0{,}6$ pariston jännitteestä. Toisen vastuksen yli on $9{,}0\\,\\text{V} - 5{,}4\\,\\text{V} = 3{,}6\\,\\text{V}$, ja suurempi jännite on suuremman resistanssin yli."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Selitä",
+      "prompt": "Selitä, miksi kahden rinnan kytketyn vastuksen kokonaisresistanssi on aina pienempi kuin kummankaan vastuksen resistanssi. Käytä selityksessäsi jännitettä ja virtaa.",
+      "criteria": [
+        "Sanon, että rinnankytkennässä kummankin vastuksen yli on sama pariston jännite.",
+        "Sanon, että paristosta lähtevä virta on haaravirtojen summa, joten se on suurempi kuin kummankaan haaran virta yksinään.",
+        "Päättelen yhtälöstä $R = U : I$, että suurempi virta samalla jännitteellä tarkoittaa pienempää kokonaisresistanssia."
+      ],
+      "model": "Rinnankytkennässä kummankin vastuksen yli on sama pariston jännite $U$. Kumpikin haara saa siksi saman virran, jonka se saisi yksinään, esimerkiksi $I_1 = U : R_1$. Paristosta lähtevä virta on haaravirtojen summa $I = I_1 + I_2$, joten se on suurempi kuin $I_1$ tai $I_2$. Kokonaisresistanssi on $R = U : I$. Kun sama jännite antaa suuremman virran kuin kumpikaan vastus yksinään, kokonaisresistanssi on pienempi kuin $R_1$ ja pienempi kuin $R_2$. Jokainen uusi haara on lisäreitti varauksille.",
+      "optional": true
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Lopuksi kaksi nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+    }
+  ]
+}

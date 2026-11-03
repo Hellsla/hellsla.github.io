@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy6-2-L1-01",
+      "level": 1,
+      "text": "Auton akun jännite mitataan yleismittarilla alueella $20\\,\\text{V}$, ja näyttö näyttää $12{,}46\\,\\text{V}$. Tällä alueella resoluutio on $0{,}01\\,\\text{V}$. Käyttöohjeen mukaan virheraja on $\\pm(0{,}5\\,\\% + 2\\ \\text{numeroa})$. Kuinka suuri on lukeman virheraja? Anna vastaus voltteina.",
+      "answer": 0.0823,
+      "unit": "V",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy6-2-L1-02",
+      "level": 1,
+      "text": "LED-nauhan virta mitataan yleismittarin alueella $200\\,\\text{mA}$, ja näyttö näyttää $146{,}3\\,\\text{mA}$. Tällä alueella resoluutio on $0{,}1\\,\\text{mA}$ ja virheraja on $\\pm(1{,}0\\,\\% + 2\\ \\text{numeroa})$. Kuinka suuri on lukeman virheraja? Anna vastaus milliampeereina.",
+      "answer": 1.663,
+      "unit": "mA",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy6-2-L1-03",
+      "level": 1,
+      "text": "Verkkolaitteen jännitteeksi mitataan $8{,}00\\,\\text{V}$. Lukeman virheraja on $0{,}06\\,\\text{V}$. Kuinka suuri on suhteellinen virheraja? Anna vastaus prosentteina.",
+      "answer": 0.75,
+      "unit": "%",
+      "tolerance": 0.07
+    },
+    {
+      "id": "fy6-2-L1-04",
+      "level": 1,
+      "text": "Piirissä on peräkkäin paristo, lamppu ja vastus. Piirissä ei ole haaroja. Virtamittari on kytketty sarjaan pariston ja lampun väliin, ja se näyttää $0{,}180\\,\\text{A}$. Mittari siirretään lampun ja vastuksen väliin. Mitä mittari näyttää nyt? Oletetaan, ettei mittarin siirtäminen muuta piiriä. Anna vastaus ampeereina.",
+      "answer": 0.18,
+      "unit": "A",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-2-L1-05",
+      "level": 1,
+      "text": "Uuden AA-pariston jännitteeksi mitataan alueella $2\\,\\text{V}$ lukema $1{,}587\\,\\text{V}$. Tällä alueella resoluutio on $0{,}001\\,\\text{V}$ ja virheraja $\\pm(0{,}5\\,\\% + 2\\ \\text{numeroa})$. Kuinka suuri on lukeman virheraja? Anna vastaus voltteina.",
+      "answer": 0.009935,
+      "unit": "V",
+      "tolerance": 0.03
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy6-2-L2-01",
+      "level": 2,
+      "text": "Pienen moottorin virta mitataan yleismittarin alueella $10\\,\\text{A}$, ja näyttö näyttää $0{,}35\\,\\text{A}$. Tällä alueella resoluutio on $0{,}01\\,\\text{A}$ ja virheraja $\\pm(2{,}0\\,\\% + 3\\ \\text{numeroa})$. Kuinka monta prosenttia lukemasta virheraja on?",
+      "answer": 10.57,
+      "unit": "%",
+      "tolerance": 0.08
+    },
+    {
+      "id": "fy6-2-L2-02",
+      "level": 2,
+      "text": "Opiskelija kirjaa lampun virraksi $0{,}0875\\,\\text{A}$. Hän mittasi virran yleismittarin alueella $200\\,\\text{mA}$. Sen resoluutio on $0{,}1\\,\\text{mA}$ ja virheraja $\\pm(1{,}0\\,\\% + 2\\ \\text{numeroa})$. Kuinka suuri on lukeman virheraja? Anna vastaus ampeereina.",
+      "answer": 0.001075,
+      "unit": "A",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy6-2-L2-03",
+      "level": 2,
+      "text": "Saman pariston jännite mitataan kahdesti. Alueella $2\\,\\text{V}$ (resoluutio $0{,}001\\,\\text{V}$) näyttö näyttää $1{,}234\\,\\text{V}$. Alueella $20\\,\\text{V}$ (resoluutio $0{,}01\\,\\text{V}$) se näyttää $1{,}23\\,\\text{V}$. Kummallakin alueella virheraja on $\\pm(0{,}5\\,\\% + 2\\ \\text{numeroa})$. Kuinka moninkertainen on alueen $20\\,\\text{V}$ virheraja alueen $2\\,\\text{V}$ virherajaan verrattuna?",
+      "answer": 3.2,
+      "unit": "",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy6-2-L2-04",
+      "level": 2,
+      "text": "Opiskelija haluaa mitata lampun jännitteen. Hän kytkee jännitemittarin vahingossa sarjaan lampun kanssa. Piirissä on vain $9{,}0\\,\\text{V}$:n paristo, lamppu ja mittari. Jännitemittarin resistanssi on hyvin suuri lampun resistanssiin verrattuna. Lamppu sammuu. Mitä jännitemittari näyttää? Anna vastaus voltteina.",
+      "answer": 9.0,
+      "unit": "V",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy6-2-L3-01",
+      "level": 3,
+      "text": "Yleismittarin käyttöohjeessa kerrotaan, että alueella $200\\,\\text{mA}$ mittarin yli jää jännite $1{,}0\\,\\text{mV}$ jokaista mittarin läpi kulkevaa milliampeeria kohti. Mittari on sarjassa lampun ja vastuksen kanssa piirissä, jonka paristojen jännite on $4{,}5\\,\\text{V}$. Mittari näyttää $97{,}8\\,\\text{mA}$. Kuinka monta prosenttia pariston jännitteestä jää virtamittarin yli? Oletetaan, että paristo on ihanteellinen.",
+      "answer": 2.17,
+      "unit": "%",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy6-2-L3-02",
+      "level": 3,
+      "text": "Kaksi opiskelijaa mittaa saman virtalähteen jännitteen alueella $20\\,\\text{V}$ (resoluutio $0{,}01\\,\\text{V}$). Mittari A näyttää $5{,}02\\,\\text{V}$, ja sen virheraja on $\\pm(0{,}5\\,\\% + 2\\ \\text{numeroa})$. Halvempi mittari B näyttää $5{,}14\\,\\text{V}$, ja sen virheraja on $\\pm(1{,}5\\,\\% + 3\\ \\text{numeroa})$. Lukemat eroavat $0{,}12\\,\\text{V}$. Kuinka suuri on mittarien virherajojen summa? Voiko lukemien eron perusteella sanoa, että toinen mittari on viallinen? Anna summa voltteina.",
+      "answer": 0.1522,
+      "unit": "V",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy6-2-L3-03",
+      "level": 3,
+      "text": "Opiskelija haluaa mitata lampun läpi kulkevan virran. Hän kääntää yleismittarin valitsimen virta-alueelle $200\\,\\text{mA}$. Sitten hän painaa mittajohdot lampun kumpaankin napaan, samalla tavalla kuin jännitettä mitattaessa. Piirissä on vain paristo ja lamppu. Lamppu sammuu hetkeksi ja syttyy sitten uudelleen. Mittarin näyttö jää nollaan. Selitä, mitä piirissä tapahtui ja miksi lamppu sammui vain hetkeksi. Kerro myös, miten virta olisi pitänyt mitata.",
+      "answer": "Virtamittari kytkettiin lampun rinnalle. Sen resistanssi on hyvin pieni, joten virta kulki lampun ohi mittarin kautta ja kasvoi suureksi. Lamppu sammui, kunnes mittarin sulake paloi. Palanut sulake katkaisi virran mittarin kautta, joten mittari jäi pois piiristä. Lamppu syttyi uudelleen, ja näyttö jäi nollaan. Virtamittari kytketään sarjaan: piiri avataan ja mittari asetetaan aukkoon.",
+      "unit": "",
+      "tolerance": 0.02
+    }
+  ]
+}

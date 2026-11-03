@@ -1,0 +1,459 @@
+{
+  "version": 1,
+  "contribution": "Two resistors are connected in series or in parallel: in series the current is the same and the voltages add up, in parallel the voltage is the same and the currents add up. From these the formulas for the total resistance and a step-by-step solution of a mixed connection are derived.",
+  "learn": [
+    "explain how current and voltage are shared in series and parallel connections.",
+    "calculate the total resistance of resistors connected in series and in parallel.",
+    "solve the currents and voltages of a mixed connection step by step."
+  ],
+  "prior": [
+    "The voltage, current and resistance of a resistor are linked by Ohm's law $U = RI$ (chapter *Resistance and Ohm's law*)",
+    "An ammeter is connected in series and a voltmeter in parallel with the component being measured (chapter *Measurements in an electric circuit*)",
+    "The agreed direction of the current is from the positive terminal of the battery to the negative terminal (chapter *Electric circuit, current and voltage*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "On a December evening an old string of fairy lights hangs in a window. All its bulbs went out at the same moment when one small bulb came loose from its socket. The floor lamp and the desk lamp plugged into the same extension cord are still on, though, and either of them can be switched off independently of the other.",
+      "question": "How does the way the lamps are connected decide which lamps stop carrying current when one lamp goes out?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Recall: Ohm's law",
+      "prompt": "A resistor whose resistance is $100\\,\\Omega$ is connected to a $6.0\\,\\text{V}$ battery. How large is the current through the resistor?",
+      "choices": [
+        {
+          "text": "$60\\,\\text{mA}$",
+          "correct": true,
+          "feedback": "Correct. By Ohm's law $I = U : R = 6.0\\,\\text{V} : 100\\,\\Omega = 0.060\\,\\text{A} = 60\\,\\text{mA}$ (chapter *Resistance and Ohm's law*). Today we find out what happens when there are two resistors."
+        },
+        {
+          "text": "$600\\,\\text{mA}$",
+          "feedback": "The voltage is divided by the resistance: $6.0\\,\\text{V} : 100\\,\\Omega = 0.060\\,\\text{A}$. To go from amperes to milliamperes you multiply by a thousand, so the current is $60\\,\\text{mA}$, not $600\\,\\text{mA}$."
+        },
+        {
+          "text": "$17\\,\\text{A}$",
+          "feedback": "Here the resistance has been divided by the voltage. Solving Ohm's law $U = RI$ for the current gives $I = U : R$, so a larger resistance gives a smaller current: $6.0\\,\\text{V} : 100\\,\\Omega = 60\\,\\text{mA}$."
+        },
+        {
+          "text": "$0.60\\,\\text{kA}$",
+          "feedback": "The current is not the product of voltage and resistance: solving Ohm's law $U = RI$ gives $I = U : R$. The unit of the product $6.0\\,\\text{V} \\cdot 100\\,\\Omega$ is not even the ampere. The correct current is $60\\,\\text{mA}$."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: series connection",
+      "prompt": "Resistors $R_1 = 100\\,\\Omega$ and $R_2 = 50\\,\\Omega$ are connected in series to a $6.0\\,\\text{V}$ battery so that the current passes first through $R_1$ and then through $R_2$. How are the current and the voltage shared between the resistors?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "The same current passes through both, and the larger voltage is across resistor $R_1$.",
+          "correct": true,
+          "feedback": "The model's values support this: when $R_2 = 50\\,\\Omega$, a current of $40.0\\,\\text{mA}$ passes through both resistors, and the voltages are $U_1 = 4.00\\,\\text{V}$ and $U_2 = 2.00\\,\\text{V}$. The same current gives twice the voltage across twice the resistance, and the sum of the voltages is always the battery's $6.0\\,\\text{V}$."
+        },
+        {
+          "text": "A larger current passes through resistor $R_1$, because it comes first and uses up part of the current.",
+          "feedback": "The model's values refute this: the same $40.0\\,\\text{mA}$ passes through both resistors. Current is not used up in a resistor, because charge does not vanish anywhere. In a resistor the energy of the charges is transformed into internal energy of the resistor, and this shows up as the voltage $U_1 = 4.00\\,\\text{V}$."
+        },
+        {
+          "text": "The same current passes through both, and the battery voltage is shared equally: $3.0\\,\\text{V}$ across each.",
+          "feedback": "The current really is the same, $40.0\\,\\text{mA}$, but the voltages are $U_1 = 4.00\\,\\text{V}$ and $U_2 = 2.00\\,\\text{V}$. By Ohm's law $U = RI$, so with the same current the voltage is directly proportional to the resistance. The voltage is shared equally only when $R_2 = 100\\,\\Omega$."
+        },
+        {
+          "text": "A larger current passes through resistor $R_2$, because its resistance is smaller.",
+          "feedback": "The model's values refute this: $40.0\\,\\text{mA}$ passes through both resistors. In a series connection the charges have only one route, so a smaller resistance cannot draw more current. Across the smaller resistance there is only a smaller voltage, $2.00\\,\\text{V}$."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: parallel connection",
+      "prompt": "When a resistor $R_1 = 100\\,\\Omega$ alone is connected to an ideal $6.0\\,\\text{V}$ battery, a current of $60\\,\\text{mA}$ leaves the battery. A second, identical resistor, $R_2 = 100\\,\\Omega$, is connected in parallel with it. How large a current leaves the battery now?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-2",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "$30\\,\\text{mA}$, because more resistance is added to the circuit to oppose the current.",
+          "feedback": "The model's values refute this: $120\\,\\text{mA}$ leaves the battery, and the total resistance is $50.0\\,\\Omega$. A resistor connected in parallel is not on the same route but opens a new route. So the total resistance decreases."
+        },
+        {
+          "text": "$60\\,\\text{mA}$, shared equally between the two branches.",
+          "feedback": "The model's values refute this: $60.0\\,\\text{mA}$ passes through each branch, and $120\\,\\text{mA}$ leaves the battery. A battery does not always give the same current; it keeps the voltage between its terminals the same. So there is $6.0\\,\\text{V}$ across each resistor, and each gets the same current as it would alone."
+        },
+        {
+          "text": "$120\\,\\text{mA}$, because each gets the same current as it would alone.",
+          "correct": true,
+          "feedback": "The model's values support this: $60.0\\,\\text{mA}$ passes through each branch, and the current leaving the battery is $I = I_1 + I_2 = 120\\,\\text{mA}$. The total resistance is $50.0\\,\\Omega$, half the resistance of one resistor."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Connect the resistors in series or in parallel and see how the current and the voltages are shared and how large a current leaves the battery.",
+      "howto": "Choose the *Connection*: one resistor, two resistors in series or two resistors in parallel. Adjust the battery voltage $U$ and the resistors $R_1$ and $R_2$. The ammeter $\\text{A}$ shows the current $I$ leaving the battery. Next to the resistors you can see their voltages and, in the parallel connection, the branch currents. The speed of the purple dots shows the size of the current in each part of the wire. The more power is transformed into internal energy in a resistor, the more orange it glows. *Speed* changes only the pace of the dots' motion, not the readings.",
+      "model": "The battery is ideal: the voltage $U$ between its terminals stays the same whatever the current. The resistance of the wires and the ammeter is zero, and the resistances of the resistors do not change as they warm up. All readings are values calculated by the model, not measurements. The dots show the agreed direction of the current from the positive terminal to the negative terminal; in a metal wire the electrons move in the opposite direction. The speed of the dots is only an illustration: the real average motion of the electrons in a wire is very slow.",
+      "calc": "In a series connection $R = R_1 + R_2$ and the same current $I = U : R$ passes through the whole circuit. The voltages of the resistors are $U_1 = R_1 I$ and $U_2 = R_2 I$.\n\nIn a parallel connection the battery voltage $U$ is across both resistors, so the branch currents are $I_1 = U : R_1$ and $I_2 = U : R_2$. The current leaving the battery is $I = I_1 + I_2$ and the total resistance is $R = U : I$, which is the same as\n\n$$R = \\frac{R_1 R_2}{R_1 + R_2}$$\n\nThe glow of a resistor follows the power $P = UI$, which is covered in the chapter *Electric power and the heating of a resistor*."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 1: series connection",
+      "intro": "Test prediction 1. The resistors are in series, the battery voltage is $6.0\\,\\text{V}$ and $R_1 = 100\\,\\Omega$. Change only the resistor $R_2$ and record the currents and voltages for at least two values, for example $50\\,\\Omega$, $100\\,\\Omega$ and $200\\,\\Omega$. Compare the currents $I_1$ and $I_2$ and calculate the sum of the voltages.",
+      "initial": {
+        "mode": "sarja",
+        "U": 6,
+        "R1": 100,
+        "R2": 50
+      },
+      "locked": [
+        "mode",
+        "U",
+        "R1"
+      ],
+      "vary": "R2",
+      "names": {
+        "mode": "connection",
+        "U": "battery voltage",
+        "R1": "R_1",
+        "R2": "R_2"
+      },
+      "units": {
+        "mode": "",
+        "U": "V",
+        "R1": "Ω",
+        "R2": "Ω"
+      },
+      "values": {
+        "mode": {
+          "sarja": "series connection"
+        },
+        "R1": {
+          "100": "$100\\,\\Omega$"
+        },
+        "R2": {
+          "10": "$10\\,\\Omega$",
+          "20": "$20\\,\\Omega$",
+          "30": "$30\\,\\Omega$",
+          "40": "$40\\,\\Omega$",
+          "50": "$50\\,\\Omega$",
+          "60": "$60\\,\\Omega$",
+          "70": "$70\\,\\Omega$",
+          "80": "$80\\,\\Omega$",
+          "90": "$90\\,\\Omega$",
+          "100": "$100\\,\\Omega$",
+          "110": "$110\\,\\Omega$",
+          "120": "$120\\,\\Omega$",
+          "130": "$130\\,\\Omega$",
+          "140": "$140\\,\\Omega$",
+          "150": "$150\\,\\Omega$",
+          "160": "$160\\,\\Omega$",
+          "170": "$170\\,\\Omega$",
+          "180": "$180\\,\\Omega$",
+          "190": "$190\\,\\Omega$",
+          "200": "$200\\,\\Omega$"
+        }
+      },
+      "measure": [
+        {
+          "key": "I1mA",
+          "label": "I_1 (mA)"
+        },
+        {
+          "key": "I2mA",
+          "label": "I_2 (mA)"
+        },
+        {
+          "key": "U1",
+          "label": "U_1 (V)"
+        },
+        {
+          "key": "U2",
+          "label": "U_2 (V)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 2: parallel connection",
+      "intro": "Test prediction 2. The resistors are now in parallel, the battery voltage is $6.0\\,\\text{V}$ and $R_1 = 100\\,\\Omega$. Change only the resistor $R_2$ and record the currents and the total resistance for at least two values, first the prediction's value $100\\,\\Omega$ and then for example $200\\,\\Omega$ and $50\\,\\Omega$. Does the branch current $I_1$ change when $R_2$ changes? Is the total resistance ever greater than the smaller of the resistors?",
+      "initial": {
+        "mode": "rinnan",
+        "U": 6,
+        "R1": 100,
+        "R2": 100
+      },
+      "locked": [
+        "mode",
+        "U",
+        "R1"
+      ],
+      "vary": "R2",
+      "names": {
+        "mode": "connection",
+        "U": "battery voltage",
+        "R1": "R_1",
+        "R2": "R_2"
+      },
+      "units": {
+        "mode": "",
+        "U": "V",
+        "R1": "Ω",
+        "R2": "Ω"
+      },
+      "values": {
+        "mode": {
+          "rinnan": "parallel connection"
+        },
+        "R1": {
+          "100": "$100\\,\\Omega$"
+        },
+        "R2": {
+          "10": "$10\\,\\Omega$",
+          "20": "$20\\,\\Omega$",
+          "30": "$30\\,\\Omega$",
+          "40": "$40\\,\\Omega$",
+          "50": "$50\\,\\Omega$",
+          "60": "$60\\,\\Omega$",
+          "70": "$70\\,\\Omega$",
+          "80": "$80\\,\\Omega$",
+          "90": "$90\\,\\Omega$",
+          "100": "$100\\,\\Omega$",
+          "110": "$110\\,\\Omega$",
+          "120": "$120\\,\\Omega$",
+          "130": "$130\\,\\Omega$",
+          "140": "$140\\,\\Omega$",
+          "150": "$150\\,\\Omega$",
+          "160": "$160\\,\\Omega$",
+          "170": "$170\\,\\Omega$",
+          "180": "$180\\,\\Omega$",
+          "190": "$190\\,\\Omega$",
+          "200": "$200\\,\\Omega$"
+        }
+      },
+      "measure": [
+        {
+          "key": "I1mA",
+          "label": "I_1 (mA)"
+        },
+        {
+          "key": "I2mA",
+          "label": "I_2 (mA)"
+        },
+        {
+          "key": "ImA",
+          "label": "I (mA)"
+        },
+        {
+          "key": "R",
+          "label": "R (Ω)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion: current and voltage in the connections",
+      "after": [
+        "koe-1",
+        "koe-2"
+      ],
+      "prompt": "Based on your tables, write: which quantity was the same in both resistors in the series connection, and which was shared between them? Which quantity was the same in both branches in the parallel connection, and how did the current leaving the battery depend on the branch currents? How did the total resistance change when the second resistor was connected in parallel? Finally, state that the numbers are model values and which assumptions they require.",
+      "model": "In the series connection the current was the same in both resistors, for example $40.0\\,\\text{mA}$ when $R_2 = 50\\,\\Omega$ and $20.0\\,\\text{mA}$ when $R_2 = 200\\,\\Omega$. The battery voltage was shared between the resistors in proportion to their resistances: $4.00\\,\\text{V} + 2.00\\,\\text{V} = 6.0\\,\\text{V}$. In the parallel connection the battery voltage was across both branches, so the branch current $I_1$ stayed at $60.0\\,\\text{mA}$ even though $R_2$ changed. The current leaving the battery was the sum of the branch currents, for example $60.0\\,\\text{mA} + 30.0\\,\\text{mA} = 90.0\\,\\text{mA}$. The total resistance was always smaller than the smaller of the resistors, for example $50.0\\,\\Omega$ with two $100\\,\\Omega$ resistors. The values are calculated by the model: the battery is ideal and the wires have no resistance.",
+      "criteria": [
+        "I said that in a series connection the current is the same and the voltage is shared, and I justified it with numerical values.",
+        "I said that in a parallel connection the voltage is the same and the current leaving the battery is the sum of the branch currents.",
+        "I stated that the resistor connected in parallel decreased the total resistance, and I gave an example from the table.",
+        "I mentioned that the values are model values with an ideal battery."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Return to your predictions",
+      "prompt": "Compare your predictions with the model values of the experiments. Then return to the opening question: why did all the bulbs of the string of fairy lights go out when one bulb came loose, while the lamps plugged into the extension cord can be switched off independently of each other? Which connection is in the string of lights and which in the extension cord?",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2"
+      ],
+      "optional": true
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the error",
+      "prompt": "A student calculates the total resistance of resistors $R_1 = 20\\,\\Omega$ and $R_2 = 30\\,\\Omega$ connected in parallel. She writes\n\n$$\\begin{aligned} R &= \\frac{1}{R_1} + \\frac{1}{R_2} \\\\ &= \\frac{1}{20\\,\\Omega} + \\frac{1}{30\\,\\Omega} \\\\ &\\approx 0.083\\,\\Omega \\end{aligned}$$\n\nWhere is the error?",
+      "choices": [
+        {
+          "text": "The sum is $\\tfrac{1}{R}$, so it still has to be inverted: $R = 12\\,\\Omega$.",
+          "correct": true,
+          "feedback": "Correct. The sum $\\tfrac{1}{20\\,\\Omega} + \\tfrac{1}{30\\,\\Omega} \\approx 0.083\\,\\tfrac{1}{\\Omega}$ is the number $\\tfrac{1}{R}$, and its unit is $\\tfrac{1}{\\Omega}$, not the ohm. Taking the reciprocal gives $R = 12\\,\\Omega$, which is smaller than $20\\,\\Omega$, as it should be in a parallel connection."
+        },
+        {
+          "text": "In a parallel connection the resistances are added together: $R = 50\\,\\Omega$.",
+          "feedback": "Resistances are added together in a series connection. In a parallel connection each branch is a new route, so the total resistance is smaller than the smallest resistor, not greater than the largest. The student's error is that she did not invert the sum $\\tfrac{1}{R}$."
+        },
+        {
+          "text": "The ohms should have been converted to kilohms before the calculation can be done.",
+          "feedback": "No unit conversion is needed, because both resistances are in the same unit. The error is that the calculated sum is $\\tfrac{1}{R}$, not $R$: its unit is $\\tfrac{1}{\\Omega}$, and the total resistance is obtained only as the reciprocal, $12\\,\\Omega$."
+        },
+        {
+          "text": "The result is correct: the total resistance of a parallel connection is very small.",
+          "feedback": "The total resistance is smaller than the smallest resistor, but not this small: $0.083\\,\\Omega$ would be almost a short circuit. The calculated sum is $\\tfrac{1}{R}$, whose unit is $\\tfrac{1}{\\Omega}$. Taking the reciprocal gives $R = 12\\,\\Omega$."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply to a new situation",
+      "prompt": "In the circuit in the figure the battery is ideal and the resistance of the wires is ignored. How large a current leaves the battery? Answer in amperes.",
+      "figure": "fy6-4/siirto-mixed",
+      "answer": 0.3,
+      "unit": "A",
+      "tolerance": 0.02,
+      "hints": [
+        "Which resistors are between the same two branching points, and which resistor is on the same route as them, the route that carries the whole current?",
+        "First replace the parallel resistors with one resistor: $R_{23} = \\dfrac{R_2 R_3}{R_2 + R_3}$. It is in series with the $20\\,\\Omega$ resistor.",
+        "$R_{23} = \\dfrac{60\\,\\Omega \\cdot 30\\,\\Omega}{90\\,\\Omega} = 20\\,\\Omega$, so $R = 40\\,\\Omega$ and $I = 12\\,\\text{V} : 40\\,\\Omega$."
+      ],
+      "mistakes": [
+        {
+          "value": 0.109,
+          "feedback": "You added all three resistors together as if they were in series. $60\\,\\Omega$ and $30\\,\\Omega$ are in parallel, so their combined resistance is smaller than $30\\,\\Omega$, not $90\\,\\Omega$."
+        },
+        {
+          "value": 0.6,
+          "feedback": "The current is too large. Either you took into account only the parallel part, in which case $20\\,\\Omega$ would give $0.60\\,\\text{A}$, or you did not invert the reciprocal of the parallel connection: $\\tfrac{1}{60\\,\\Omega} + \\tfrac{1}{30\\,\\Omega}$ is $\\tfrac{1}{R_{23}}$, not $R_{23}$. The whole current also passes through the $20\\,\\Omega$ resistor in series, and the resistance of the parallel part is $20\\,\\Omega$, so the total resistance is $20\\,\\Omega + 20\\,\\Omega = 40\\,\\Omega$."
+        }
+      ],
+      "solution": "**Given:** from the figure, the battery voltage $U = 12\\,\\text{V}$, the series resistor $R_1 = 20\\,\\Omega$ and the parallel resistors $R_2 = 60\\,\\Omega$ and $R_3 = 30\\,\\Omega$; the battery is ideal and the wires have no resistance\n\n**Find:** the current $I$ leaving the battery in amperes\n\n**Principle:** The parallel resistors are replaced with one resistor $R_{23}$, with which the $20\\,\\Omega$ resistor is in series, because the whole current passes through it. The total resistance is the sum of these, and Ohm's law gives the current leaving the battery.\n\n**Reading the figure:** From the figure we read $12\\,\\text{V}$ and the resistors. $60\\,\\Omega$ and $30\\,\\Omega$ are between the same two branching points, that is, in parallel, and $20\\,\\Omega$ is in the same loop as the battery before the branching, that is, in series.\n\n**Formula:** $R_{23} = \\dfrac{R_2 R_3}{R_2 + R_3}$, $R = R_1 + R_{23}$ and $U = RI$, so\n\n$$I = \\frac{U}{R_1 + \\dfrac{R_2 R_3}{R_2 + R_3}}$$\n\n**Conversions:** Not needed: the voltage is in volts and the resistances in ohms, and $\\tfrac{\\text{V}}{\\Omega} = \\text{A}$.\n\n**Substitution:** $R_{23} = \\dfrac{60\\,\\Omega \\cdot 30\\,\\Omega}{90\\,\\Omega} = 20\\,\\Omega$, $R = 20\\,\\Omega + 20\\,\\Omega = 40\\,\\Omega$ and $I = \\dfrac{12\\,\\text{V}}{40\\,\\Omega} = 0.30\\,\\text{A}$\n\n**Answer:** $0.30\\,\\text{A}$, two significant figures like the voltage $12\\,\\text{V}$.\n\n**Reasonableness:** Across the series resistor there is $20\\,\\Omega \\cdot 0.30\\,\\text{A} = 6.0\\,\\text{V}$ and across the parallel part the remaining $6.0\\,\\text{V}$. The branch currents are $6.0\\,\\text{V} : 60\\,\\Omega = 0.10\\,\\text{A}$ and $6.0\\,\\text{V} : 30\\,\\Omega = 0.20\\,\\text{A}$, together $0.30\\,\\text{A}$, the same as the current leaving the battery."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise on three levels. Level 1 tasks use one rule of a connection, level 2 tasks combine the total resistance and Ohm's law, and level 3 requires a mixed connection or reasoning."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept",
+      "prompt": "A refrigerator and a lamp are already plugged into the kitchen sockets. A kettle is now plugged into the same circuit. What happens to the current of the refrigerator and to the total current through the circuit's fuse? The resistance of the wires is ignored.",
+      "choices": [
+        {
+          "text": "The current of the refrigerator stays the same, and the total current increases.",
+          "correct": true,
+          "feedback": "Correct. The appliances are in parallel, so each gets the same mains voltage and the current of the refrigerator stays the same. The kettle is a new branch, so the total current through the fuse is the sum of the branch currents and increases. This is why too many appliances on the same circuit can trip the fuse."
+        },
+        {
+          "text": "The current of the refrigerator decreases, because the total current is now shared among more appliances.",
+          "feedback": "The current is not shared out from a fixed amount. The same mains voltage is across every parallel branch, so the current of the refrigerator $I = U : R$ does not change. The new branch increases the total current."
+        },
+        {
+          "text": "The current of the refrigerator stays the same, and the total current decreases, because there is more resistance in the circuit.",
+          "feedback": "An appliance added in parallel does not add resistance but opens a new route, so the total resistance decreases. The total current is the sum of the branch currents and increases."
+        },
+        {
+          "text": "The current of the refrigerator and the total current both stay the same, because the mains voltage does not change.",
+          "feedback": "The current of the refrigerator stays the same, because its voltage does not change. The total current, however, is the sum of all the branch currents, and the branch of the kettle brings its own current into it."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Sharing of voltage",
+      "prompt": "Resistors $220\\,\\Omega$ and $330\\,\\Omega$ are connected in series to a $9.0\\,\\text{V}$ battery. How large is the voltage across the $330\\,\\Omega$ resistor? Answer in volts.",
+      "answer": 5.4,
+      "unit": "V",
+      "tolerance": 0.02,
+      "hints": [
+        "Which quantity is the same in both resistors in a series connection?",
+        "First calculate the current using the total resistance: $I = \\dfrac{U}{R_1 + R_2}$.",
+        "$I = 9.0\\,\\text{V} : 550\\,\\Omega \\approx 0.0164\\,\\text{A}$, and $U_2 = 330\\,\\Omega \\cdot I$."
+      ],
+      "mistakes": [
+        {
+          "value": 3.6,
+          "feedback": "This is the voltage across the $220\\,\\Omega$ resistor. The voltage asked for is across the larger resistor, and it is larger, because the same current passes through both."
+        },
+        {
+          "value": 4.5,
+          "feedback": "The voltage is shared equally only if the resistors are equal. In a series connection the voltage is shared in proportion to the resistances, so across the $330\\,\\Omega$ resistor there is more than half."
+        },
+        {
+          "value": 9.0,
+          "feedback": "The whole battery voltage is across a resistor only if it is alone or in parallel. In a series connection the voltage is shared between the resistors."
+        }
+      ],
+      "solution": "**Given:** resistors in series $R_1 = 220\\,\\Omega$ and $R_2 = 330\\,\\Omega$, battery voltage $U = 9.0\\,\\text{V}$\n\n**Find:** the voltage $U_2$ across resistor $R_2$ in volts\n\n**Principle:** In a series connection the same current passes through both resistors, and it is obtained from the total resistance by Ohm's law. The voltage across a resistor is its resistance times this current.\n\n**Formula:** $I = \\dfrac{U}{R_1 + R_2}$ and $U_2 = R_2 I$, so\n\n$$U_2 = \\frac{R_2 U}{R_1 + R_2}$$\n\n**Conversions:** Not needed: the resistances are in ohms and the voltage in volts.\n\n**Substitution:** $U_2 = \\dfrac{330\\,\\Omega \\cdot 9.0\\,\\text{V}}{220\\,\\Omega + 330\\,\\Omega} = \\dfrac{2970\\,\\Omega \\cdot \\text{V}}{550\\,\\Omega} = 5.4\\,\\text{V}$\n\n**Answer:** $5.4\\,\\text{V}$, two significant figures like the voltage $9.0\\,\\text{V}$.\n\n**Reasonableness:** The share of resistor $R_2$ in the total resistance is $330 : 550 = 0.6$, so $0.6$ of the battery voltage is across it. Across the other resistor there is $9.0\\,\\text{V} - 5.4\\,\\text{V} = 3.6\\,\\text{V}$, and the larger voltage is across the larger resistance."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Explain",
+      "prompt": "Explain why the total resistance of two resistors connected in parallel is always smaller than the resistance of either resistor. Use voltage and current in your explanation.",
+      "criteria": [
+        "I say that in a parallel connection the same battery voltage is across both resistors.",
+        "I say that the current leaving the battery is the sum of the branch currents, so it is larger than the current of either branch alone.",
+        "I conclude from the equation $R = U : I$ that a larger current at the same voltage means a smaller total resistance."
+      ],
+      "model": "In a parallel connection the same battery voltage $U$ is across both resistors. Each branch therefore gets the same current it would get alone, for example $I_1 = U : R_1$. The current leaving the battery is the sum of the branch currents, $I = I_1 + I_2$, so it is larger than $I_1$ or $I_2$. The total resistance is $R = U : I$. When the same voltage gives a larger current than either resistor alone, the total resistance is smaller than $R_1$ and smaller than $R_2$. Every new branch is an extra route for the charges.",
+      "optional": true
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, two quick questions. Answer first on your own and open the answer only after that."
+    }
+  ]
+}

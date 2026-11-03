@@ -1,0 +1,500 @@
+{
+  "version": 1,
+  "contribution": "Virta- ja jännitemittarin kytkentä perustellaan mittarin tehtävällä ja sen omalla resistanssilla. Luvussa käsitellään yleismittarin valitsin, liittimet, mittausalue ja OL. Lisäksi käsitellään väärien kytkentöjen seuraukset (oikosulku, katkennut virta) sekä valmistajan virheraja $\\Delta x = p \\cdot x + n \\cdot r$. Virherajan avulla perustellaan pienimmän sopivan alueen valinta.",
+  "learn": [
+    "kytkemään virtamittarin sarjaan ja jännitemittarin rinnalle ja perustelemaan, miksi.",
+    "valitsemaan yleismittarin mittausalueen ja laskemaan lukeman virherajan.",
+    "selittämään, miten mittari ja väärä kytkentä vaikuttavat virtapiiriin."
+  ],
+  "prior": [
+    "Sähkövirta on varauksen virtausta johtimen poikkileikkauksen läpi. Sen yksikkö on ampeeri (luku *Virtapiiri, sähkövirta ja jännite*)",
+    "Jännite on kahden pisteen välinen suure. Sen yksikkö on voltti (luku *Virtapiiri, sähkövirta ja jännite*)",
+    "Mittaustuloksella on aina epävarmuus. Resoluutio on pienin askel, jonka mittalaite voi näyttää (luku *Mittaaminen ja mittauksen luotettavuus*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Fysiikan työpöydällä on piiri, jossa paristo, lamppu ja vastus ovat peräkkäin. Pöydällä on myös yleismittari ja kaksi mittajohtoa. Tehtävä kuulostaa helpolta: mittaa lampun virta ja jännite. Mittajohtojen paikka ja valitsimen asento ratkaisevat kuitenkin, mitä näyttö kertoo. Väärin kytketty mittari voi muuttaa piirin toimintaa.",
+      "question": "Miten virtamittari ja jännitemittari kytketään piiriin? Miksi juuri niin?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Kertaa: virta ja jännite",
+      "optional": true,
+      "prompt": "Mikä seuraavista kuvaa oikein sähkövirtaa ja jännitettä?",
+      "choices": [
+        {
+          "text": "Virta on varauksen virtaus johtimen poikkileikkauksen läpi, ja jännite on kahden pisteen välinen suure.",
+          "correct": true,
+          "feedback": "Oikein (luku *Virtapiiri, sähkövirta ja jännite*). Siksi virtaa mitataan kohdasta, jonka läpi varaus kulkee. Jännitettä mitataan kahden pisteen väliltä. Tämä ero ratkaisee, miten mittarit kytketään."
+        },
+        {
+          "text": "Virta ja jännite ovat saman asian kaksi nimeä: kumpikin kertoo, kuinka paljon sähköä johdossa on.",
+          "feedback": "Ne ovat eri suureita, ja niillä on eri yksiköt: ampeeri ja voltti. Virta kertoo, kuinka paljon varausta kulkee sekunnissa poikkileikkauksen läpi. Jännite on kahden pisteen välinen suure. Se liittyy energiaan varausta kohti."
+        },
+        {
+          "text": "Jännite kulkee johtoa pitkin lamppuun, ja virta syntyy vasta lampussa.",
+          "feedback": "Jännite ei kulje mihinkään. Se on aina kahden pisteen välinen, esimerkiksi pariston napojen tai lampun napojen välinen. Virtaa kulkee suljetun piirin joka kohdassa, myös johdoissa."
+        },
+        {
+          "text": "Virta on yhden pisteen ominaisuus, ja jännite kertoo, kuinka nopeasti varaus liikkuu.",
+          "feedback": "Virta kuvaa varauksen kulkua poikkileikkauksen läpi. Jännite on kahden pisteen välinen suure. Varauksenkuljettajien nopeus ei ole kumpikaan näistä."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 1: virta ennen ja jälkeen lampun",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 2
+      },
+      "prompt": "Piirissä paristo, lamppu ja vastus ovat peräkkäin ilman haaroja. Virtamittari kytketään sarjaan ensin pariston ja lampun väliin. Sitten se kytketään lampun ja vastuksen väliin. Miten lukemat eroavat?",
+      "choices": [
+        {
+          "text": "Lampun jälkeen lukema on pienempi, koska lamppu käyttää osan virrasta valoksi.",
+          "feedback": "Mallin lukemat kumoavat tämän: kumpikin paikka antaa $97{,}8\\,\\text{mA}$. Lamppu muuttaa sähköenergiaa valoksi ja hehkulangan sisäenergiaksi. Varausta ei kuitenkaan katoa. Lampusta tulee ulos yhtä paljon varausta kuin sinne menee."
+        },
+        {
+          "text": "Lukemat ovat samat, koska haarattomassa piirissä sama varaus kulkee kaikkien osien läpi.",
+          "correct": true,
+          "feedback": "Mallin lukemat tukevat tätä: kumpikin paikka antaa $97{,}8\\,\\text{mA}$. Varausta ei katoa eikä kerry. Siksi jokaisen poikkileikkauksen läpi kulkee sekunnissa yhtä paljon varausta. Virtamittarin voi siis kytkeä mihin tahansa kohtaan haaratonta piiriä."
+        },
+        {
+          "text": "Lampun jälkeen lukema on suurempi, koska lamppu kiihdyttää varausta.",
+          "feedback": "Mallin lukemat kumoavat tämän: molemmat lukemat ovat $97{,}8\\,\\text{mA}$. Lamppu ei lisää varausta eikä virtaa. Se muuttaa sähköenergiaa valoksi ja hehkulangan sisäenergiaksi."
+        },
+        {
+          "text": "Lampun ja vastuksen välissä virta on nolla, koska lamppu on käyttänyt sen kokonaan.",
+          "feedback": "Mallin lukemat kumoavat tämän: myös lampun ja vastuksen välissä virta on $97{,}8\\,\\text{mA}$. Jos virta loppuisi lamppuun, vastuksen läpi ei kulkisi mitään. Silloin piiri ei olisi suljettu."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 2: jännitemittari sarjaan",
+      "justify": true,
+      "reveal": {
+        "after": "koe-2",
+        "min": 2
+      },
+      "prompt": "Lampun jännite halutaan mitata, mutta jännitemittari kytketään vahingossa sarjaan. Piiri avataan pariston ja lampun välistä, ja mittari asetetaan aukkoon. Paristojen jännite on $4{,}5\\,\\text{V}$. Resistanssi kertoo, kuinka voimakkaasti mittari vastustaa virtaa. Jännitemittarin resistanssi on hyvin suuri, esimerkiksi $10\\,\\text{M}\\Omega$. Virtamittarin resistanssi on hyvin pieni. Mitä tapahtuu?",
+      "choices": [
+        {
+          "text": "Lamppu palaa kuten ennenkin, ja mittari näyttää lampun jännitteen.",
+          "feedback": "Mallin lukemat kumoavat tämän: sarjaan kytkettynä mittari näyttää $4{,}50\\,\\text{V}$, ja lamppu sammuu. Rinnalle kytkettynä lampun jännite on vain $1{,}50\\,\\text{V}$. Koko virran täytyy kulkea mittarin läpi. Jännitemittarin suuri resistanssi pysäyttää silloin virran."
+        },
+        {
+          "text": "Lamppu sammuu, ja mittari näyttää suunnilleen pariston jännitteen.",
+          "correct": true,
+          "feedback": "Mallin lukemat tukevat tätä: sarjaan kytkettynä mittari näyttää $4{,}50\\,\\text{V}$, eikä lamppu pala. Lampun rinnalla mittari näyttää $1{,}50\\,\\text{V}$, ja lamppu palaa. Jännitemittarin resistanssi on niin suuri, että virta pienenee lähes nollaan. Lähes koko pariston jännite jää mittarin napojen välille."
+        },
+        {
+          "text": "Lamppu palaa kirkkaammin, koska mittari lisää piiriin jännitettä.",
+          "feedback": "Mallin lukemat kumoavat tämän: lamppu sammuu. Mittari ei ole jännitelähde, eikä se lisää piiriin energiaa. Sen suuri resistanssi päinvastoin pysäyttää virran."
+        },
+        {
+          "text": "Mittarin sulake palaa, koska mittarin läpi kulkee suuri virta.",
+          "feedback": "Mallin lukemat kumoavat tämän: sulake ei pala, ja mittari näyttää $4{,}50\\,\\text{V}$. Jännitemittarin suuri resistanssi tekee virrasta lähes nollan. Suuri virta ja palanut sulake kuuluvat virtamittariin, joka kytketään väärin rinnalle."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Valitse mittajohtojen paikka ja valitsimen asento. Seuraa näytön lukemaa ja lamppua.",
+      "howto": "*Mittarin kytkentä* valitsee, mihin mittajohdot kosketetaan. Ne voivat olla sarjassa jommassakummassa yläjohdon aukossa. Ne voivat olla myös lampun, vastuksen tai pariston rinnalla. *Valitsin* valitsee suureen ja mittausalueen, kuten oikean yleismittarin kiertokytkin. Virta-alueella $10\\,\\text{A}$ punainen johto siirtyy omaan liittimeensä. *Paristoja* muuttaa paristojen määrää. Näyttö näyttää lukeman alueen resoluutiolla. Jos arvo on yli alueen, näytössä on OL. Violetit nuolet näyttävät virran suunnan pariston plusnavasta miinusnapaan, kun piirissä kulkee virtaa.",
+      "model": "Paristot ovat ihanteellisia: kunkin jännite on $1{,}5\\,\\text{V}$ virrasta riippumatta. Lampun resistanssi on mallissa vakio $15\\,\\Omega$. Oikean hehkulampun resistanssi kasvaa, kun se lämpenee. Vastuksen resistanssi on $30\\,\\Omega$. Mittarin oma resistanssi on jännitealueilla $10\\,\\text{M}\\Omega$, alueella $200\\,\\text{mA}$ se on $1{,}0\\,\\Omega$ ja alueella $10\\,\\text{A}$ se on $0{,}010\\,\\Omega$. Jos mittarin läpi kulkee suurempi virta kuin alue näyttää, sulake palaa ja mittari irtoaa piiristä. Mallissa uusi sulake on paikallaan heti, kun kytkentää tai valitsinta muutetaan. Lukemat ovat mallin laskemia arvoja, eivät mittauksia.",
+      "calc": "Malli ratkaisee piirin virran ja jännitteet resistanssien avulla, kuten luvussa *Resistanssi ja Ohmin laki*. Mittari on piirissä yhtenä osana oman resistanssinsa kanssa. Siksi alueella $200\\,\\text{mA}$ virta on $97{,}8\\,\\text{mA}$ eikä $100\\,\\text{mA}$. Mittarin oma resistanssi pienentää virtaa hieman. Alueella $10\\,\\text{A}$ eroa ei näy. Näytön lukema pyöristetään alueen resoluutioon: $0{,}001\\,\\text{V}$, $0{,}01\\,\\text{V}$, $0{,}1\\,\\text{mA}$ tai $0{,}01\\,\\text{A}$. Mallissa lamppu palaa, kun sen teho on vähintään $4\\,\\text{mW}$."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 1: virtamittarin paikka",
+      "intro": "Testaa ennuste 1. Valitsin on alueella $200\\,\\text{mA}$, ja paristoja on kolme. Muuta vain mittarin kytkentää. Kirjaa lukema ainakin paikoissa *sarjaan ennen lamppua* ja *sarjaan lampun ja vastuksen väliin*. Kokeile lopuksi myös *lampun rinnalle*. Mitä lampulle tapahtuu? Mitä mittari näyttää? Mitä mittarille tapahtuu?",
+      "initial": {
+        "kytkenta": "sarja1",
+        "alue": "mA200",
+        "N": "3"
+      },
+      "locked": [
+        "alue",
+        "N"
+      ],
+      "vary": "kytkenta",
+      "names": {
+        "kytkenta": "kytkentä",
+        "alue": "valitsin",
+        "N": "paristot"
+      },
+      "values": {
+        "kytkenta": {
+          "sarja1": "sarjaan ennen lamppua",
+          "sarja2": "sarjaan lampun ja vastuksen väliin",
+          "lamppu": "lampun rinnalle",
+          "vastus": "vastuksen rinnalle",
+          "paristo": "pariston rinnalle"
+        },
+        "alue": {
+          "V2": "jännite, alue $2\\,\\text{V}$",
+          "V20": "jännite, alue $20\\,\\text{V}$",
+          "mA200": "virta, alue $200\\,\\text{mA}$",
+          "A10": "virta, alue $10\\,\\text{A}$"
+        },
+        "N": {
+          "1": "yksi paristo",
+          "2": "kaksi paristoa",
+          "3": "kolme paristoa"
+        },
+        "ImA": {
+          "OL": "OL (yli alueen)",
+          "sulake": "sulake paloi",
+          "–": "–"
+        },
+        "UV": {
+          "OL": "OL (yli alueen)",
+          "sulake": "sulake paloi",
+          "–": "–"
+        },
+        "lamppu": {
+          "palaa": "palaa",
+          "ei": "ei pala"
+        }
+      },
+      "measure": [
+        {
+          "key": "ImA",
+          "label": "I (mA)"
+        },
+        {
+          "key": "lamppu",
+          "label": "lamppu"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 2: jännitemittari rinnalle ja sarjaan",
+      "intro": "Testaa ennuste 2. Valitsin on alueella $20\\,\\text{V}$, ja paristoja on kolme. Muuta vain mittarin kytkentää. Kirjaa lukema ainakin paikoissa *lampun rinnalle* ja *sarjaan ennen lamppua*. Kirjaa mieluiten myös *pariston rinnalle*. Missä kytkennässä lamppu palaa? Minkä jännitteen mittari näyttää kussakin kytkennässä?",
+      "initial": {
+        "kytkenta": "lamppu",
+        "alue": "V20",
+        "N": "3"
+      },
+      "locked": [
+        "alue",
+        "N"
+      ],
+      "vary": "kytkenta",
+      "names": {
+        "kytkenta": "kytkentä",
+        "alue": "valitsin",
+        "N": "paristot"
+      },
+      "values": {
+        "kytkenta": {
+          "sarja1": "sarjaan ennen lamppua",
+          "sarja2": "sarjaan lampun ja vastuksen väliin",
+          "lamppu": "lampun rinnalle",
+          "vastus": "vastuksen rinnalle",
+          "paristo": "pariston rinnalle"
+        },
+        "alue": {
+          "V2": "jännite, alue $2\\,\\text{V}$",
+          "V20": "jännite, alue $20\\,\\text{V}$",
+          "mA200": "virta, alue $200\\,\\text{mA}$",
+          "A10": "virta, alue $10\\,\\text{A}$"
+        },
+        "N": {
+          "1": "yksi paristo",
+          "2": "kaksi paristoa",
+          "3": "kolme paristoa"
+        },
+        "ImA": {
+          "OL": "OL (yli alueen)",
+          "sulake": "sulake paloi",
+          "–": "–"
+        },
+        "UV": {
+          "OL": "OL (yli alueen)",
+          "sulake": "sulake paloi",
+          "–": "–"
+        },
+        "lamppu": {
+          "palaa": "palaa",
+          "ei": "ei pala"
+        }
+      },
+      "measure": [
+        {
+          "key": "UV",
+          "label": "U (V)"
+        },
+        {
+          "key": "lamppu",
+          "label": "lamppu"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "koe-3",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 3: mittausalue",
+      "optional": true,
+      "intro": "Mittari on lampun rinnalla, ja paristoja on kolme. Muuta vain valitsimen asentoa. Kirjaa lukema alueilla $20\\,\\text{V}$ ja $2\\,\\text{V}$. Kuinka monta desimaalia näyttö näyttää kummallakin alueella? Siirrä sitten mittari vastuksen rinnalle alueelle $2\\,\\text{V}$. Mitä näyttö kertoo? Mitä silloin pitää tehdä?",
+      "initial": {
+        "kytkenta": "lamppu",
+        "alue": "V20",
+        "N": "3"
+      },
+      "locked": [
+        "N"
+      ],
+      "vary": "alue",
+      "names": {
+        "kytkenta": "kytkentä",
+        "alue": "valitsin",
+        "N": "paristot"
+      },
+      "values": {
+        "kytkenta": {
+          "sarja1": "sarjaan ennen lamppua",
+          "sarja2": "sarjaan lampun ja vastuksen väliin",
+          "lamppu": "lampun rinnalle",
+          "vastus": "vastuksen rinnalle",
+          "paristo": "pariston rinnalle"
+        },
+        "alue": {
+          "V2": "jännite, alue $2\\,\\text{V}$",
+          "V20": "jännite, alue $20\\,\\text{V}$",
+          "mA200": "virta, alue $200\\,\\text{mA}$",
+          "A10": "virta, alue $10\\,\\text{A}$"
+        },
+        "N": {
+          "1": "yksi paristo",
+          "2": "kaksi paristoa",
+          "3": "kolme paristoa"
+        },
+        "ImA": {
+          "OL": "OL (yli alueen)",
+          "sulake": "sulake paloi",
+          "–": "–"
+        },
+        "UV": {
+          "OL": "OL (yli alueen)",
+          "sulake": "sulake paloi",
+          "–": "–"
+        },
+        "lamppu": {
+          "palaa": "palaa",
+          "ei": "ei pala"
+        }
+      },
+      "measure": [
+        {
+          "key": "UV",
+          "label": "U (V)"
+        },
+        {
+          "key": "lamppu",
+          "label": "lamppu"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös: miten mittarit kytketään",
+      "after": [
+        "koe-1",
+        "koe-2"
+      ],
+      "prompt": "Kirjoita taulukoidesi perusteella: miten virtamittarin lukema riippui sen paikasta haarattomassa piirissä? Mitä tapahtui, kun jännitemittari oli lampun rinnalla? Mitä tapahtui, kun se oli sarjassa? Selitä havainnot mittarien resistanssin avulla.",
+      "model": "Virtamittari näytti $97{,}8\\,\\text{mA}$ sekä ennen lamppua että lampun ja vastuksen välissä. Haarattomassa piirissä sama varaus kulkee jokaisen osan läpi, joten virta on joka kohdassa sama. Lampun rinnalla jännitemittari näytti $1{,}50\\,\\text{V}$, ja lamppu paloi. Mittarin suuren resistanssin kautta ei juuri kulje virtaa lampun ohi. Sarjaan kytkettynä sama mittari näytti $4{,}50\\,\\text{V}$, ja lamppu sammui. Mittarin suuri resistanssi pienensi koko piirin virran lähes nollaan. Lähes koko pariston jännite jäi mittarin napojen välille. Jos virtamittari kytkettiin lampun rinnalle, lamppu sammui. Virta kulki silloin pienen resistanssin mittarin kautta lampun ohi. Siksi virtamittari kytketään sarjaan ja jännitemittari rinnalle. Arvot ovat mallin laskemia.",
+      "criteria": [
+        "Kerroin, että virtamittarin lukema oli molemmissa sarjapaikoissa sama. Selitin sen sillä, ettei varausta katoa.",
+        "Kerroin jännitemittarin lukemat rinnalla ($1{,}50\\,\\text{V}$, lamppu palaa) ja sarjassa ($4{,}50\\,\\text{V}$, lamppu sammuu).",
+        "Selitin, että jännitemittarin suuri resistanssi pysäyttää virran sarjassa. Selitin myös, että virtamittarin pieni resistanssi ohittaa lampun rinnalla.",
+        "Totesin, että lukemat ovat mallin arvoja."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Palaa ennusteisiisi",
+      "optional": true,
+      "prompt": "Vertaa ennusteitasi kokeiden lukemiin. Palaa sitten alun kysymykseen: miksi virtamittari ja jännitemittari kytketään piiriin eri tavoin?",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2"
+      ]
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe",
+      "optional": true,
+      "prompt": "Opiskelija mittaa alueella $20\\,\\text{V}$ lukeman $6{,}00\\,\\text{V}$. Virheraja on $\\pm(0{,}5\\,\\% + 2\\ \\text{numeroa})$. Hän laskee\n\n$$\\begin{aligned} &\\Delta U \\\\ &= 0{,}005 \\cdot 6{,}00\\,\\text{V} + 2\\,\\text{V} \\\\ &= 2{,}03\\,\\text{V} \\end{aligned}$$\n\nMissä on virhe?",
+      "choices": [
+        {
+          "text": "Kaksi numeroa tarkoittaa kahta viimeisen numeron askelta eli $2 \\cdot 0{,}01\\,\\text{V}$. Siksi $\\Delta U = 0{,}05\\,\\text{V}$.",
+          "correct": true,
+          "feedback": "Oikein. Alueella $20\\,\\text{V}$ viimeinen numero on sadasosavoltti. Numeroiden osuus on siis $0{,}02\\,\\text{V}$ eikä $2\\,\\text{V}$. Tuloksen olisi voinut huomata vääräksi heti. Virheraja $2{,}03\\,\\text{V}$ olisi kolmasosa koko lukemasta."
+        },
+        {
+          "text": "Prosenttiosuus on väärin: $0{,}5\\,\\%$ on desimaalilukuna $0{,}5$. Siksi $\\Delta U = 5{,}0\\,\\text{V}$.",
+          "feedback": "Prosentti tarkoittaa sadasosaa, joten $0{,}5\\,\\% = 0{,}005$. Opiskelija on kirjoittanut sen oikein. Virhe on numeroiden osuudessa: kaksi numeroa on $2 \\cdot 0{,}01\\,\\text{V}$."
+        },
+        {
+          "text": "Prosenttiosa ja numerot pitäisi kertoa keskenään. Niitä ei pidä laskea yhteen.",
+          "feedback": "Virheraja on kahden osan summa: prosenttiosuus lukemasta ja numeroiden osuus. Virhe on numeroiden osuudessa. Yksi numero on alueen resoluutio $0{,}01\\,\\text{V}$, ei $1\\,\\text{V}$."
+        },
+        {
+          "text": "Laskussa ei ole virhettä. Alueella $20\\,\\text{V}$ mittari on epätarkka, joten suuri virheraja on oikein.",
+          "feedback": "Tällä lukemalla virheraja on alle prosentti lukemasta ($0{,}05\\,\\text{V} : 6{,}00\\,\\text{V} \\approx 0{,}8\\,\\%$). Laskussa yksi numero on tulkittu yhdeksi voltiksi. Se on kuitenkin alueen resoluutio $0{,}01\\,\\text{V}$."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Sovella uuteen tilanteeseen",
+      "prompt": "LED-valon virta mitataan ensin yleismittarin alueella $10\\,\\text{A}$, koska kaveri sanoo sen olevan turvallisin. Näyttö näyttää $0{,}02\\,\\text{A}$. Alueen resoluutio on $0{,}01\\,\\text{A}$ ja virheraja $\\pm(2{,}0\\,\\% + 3\\ \\text{numeroa})$. Kuinka monta prosenttia lukemasta virheraja on?",
+      "answer": 152,
+      "unit": "%",
+      "tolerance": 0.03,
+      "hints": [
+        "Virheraja koostuu prosenttiosasta ja numeroiden osuudesta. Kumpi niistä on tässä suurempi?",
+        "Yksi numero on alueen resoluutio $0{,}01\\,\\text{A}$. Kolme numeroa on siis $0{,}03\\,\\text{A}$. Prosenttiosa on $0{,}020 \\cdot 0{,}02\\,\\text{A}$.",
+        "$\\Delta I = 0{,}0004\\,\\text{A} + 0{,}03\\,\\text{A} = 0{,}0304\\,\\text{A}$. Jaa tämä lukemalla $0{,}02\\,\\text{A}$."
+      ],
+      "mistakes": [
+        {
+          "value": 2.0,
+          "feedback": "Otit huomioon vain prosenttiosan. Numeroiden osuus $3 \\cdot 0{,}01\\,\\text{A} = 0{,}03\\,\\text{A}$ on tässä paljon suurempi kuin koko lukema. Juuri se tekee pienen virran mittaamisesta suurella alueella epätarkkaa."
+        },
+        {
+          "value": 17.0,
+          "feedback": "Käytit numeron askeleena $0{,}001\\,\\text{A}$. Alueella $10\\,\\text{A}$ näytössä on kaksi desimaalia. Yksi numero on siis $0{,}01\\,\\text{A}$."
+        }
+      ],
+      "solution": "**Annettu:** lukema $I = 0{,}02\\,\\text{A}$ alueella $10\\,\\text{A}$, resoluutio $r = 0{,}01\\,\\text{A}$, virheraja $\\pm(2{,}0\\,\\% + 3\\ \\text{numeroa})$\n\n**Kysytty:** suhteellinen virheraja $\\tfrac{\\Delta I}{I}$ prosentteina\n\n**Periaate:** Valmistajan virheraja on prosenttiosuus lukemasta ja siihen lisätty kolme viimeisen numeron askelta. Jos lukema on hyvin pieni alueeseen verrattuna, numeroiden osuus ei pienene lukeman mukana. Silloin se on virherajassa suurin osa.\n\n**Kaava:** $\\Delta I = p \\cdot I + n \\cdot r$, joten\n\n$$\\frac{\\Delta I}{I} = \\frac{p \\cdot I + n \\cdot r}{I}$$\n\n**Muunnokset:** $p = 2{,}0\\,\\% = 0{,}020$. Virrat ovat ampeereina.\n\n**Sijoitus:** $\\Delta I = 0{,}020 \\cdot 0{,}02\\,\\text{A} + 3 \\cdot 0{,}01\\,\\text{A} = 0{,}0004\\,\\text{A} + 0{,}03\\,\\text{A} = 0{,}0304\\,\\text{A}$, joten $\\dfrac{\\Delta I}{I} = \\dfrac{0{,}0304\\,\\text{A}}{0{,}02\\,\\text{A}} = 1{,}52 = 152\\,\\%$\n\n**Vastaus:** noin $150\\,\\%$. Lukema $0{,}02\\,\\text{A}$ on annettu yhdellä merkitsevällä numerolla. Siksi tulos on vain suuruusluokka.\n\n**Järkevyys:** Jo kolme askelta, $0{,}03\\,\\text{A}$, on suurempi kuin koko lukema. Virherajan on siis oltava yli $100\\,\\%$. Lukema ei kerro virrasta juuri mitään. Alueella $200\\,\\text{mA}$ sama virta voisi näkyä esimerkiksi muodossa $18{,}6\\,\\text{mA}$. Silloin virheraja olisi $0{,}186\\,\\text{mA} + 0{,}2\\,\\text{mA} = 0{,}386\\,\\text{mA}$ eli noin $2\\,\\%$. Kun suuruusluokka tiedetään, siirrytään pienimmälle sopivalle alueelle."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Harjoittele kolmella tasolla. Tason 1 tehtävissä lasketaan virheraja tai käytetään yhtä havaintoa. Tason 2 tehtävissä yhdistetään kaksi vaihetta, esimerkiksi muunnos ja virheraja. Taso 3 vaatii päättelyä uudessa tilanteessa."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Virtamittarin kytkentä",
+      "prompt": "Halutaan mitata, kuinka suuri virta kulkee vastuksen läpi. Piirissä paristo, lamppu ja vastus ovat peräkkäin. Miten virtamittari kytketään?",
+      "choices": [
+        {
+          "text": "Piiri avataan vastuksen vierestä, ja mittari asetetaan aukkoon. Silloin vastuksen virta kulkee mittarin läpi.",
+          "correct": true,
+          "feedback": "Oikein. Virtamittari mittaa sen läpi kulkevan virran, joten se kytketään sarjaan. Haarattomassa piirissä aukon voi tehdä mihin tahansa kohtaan, koska virta on joka kohdassa sama."
+        },
+        {
+          "text": "Mittarin johdot kosketetaan vastuksen kumpaankin päähän piiriä avaamatta.",
+          "feedback": "Näin kytketään jännitemittari. Virtamittari vastuksen rinnalla tekee oikosulun. Virta kulkee pienen resistanssin mittarin kautta vastuksen ohi, ja mittarin sulake voi palaa."
+        },
+        {
+          "text": "Toinen mittarin johto kosketetaan pariston plusnapaan ja toinen miinusnapaan.",
+          "feedback": "Virtamittari pariston napojen välissä on oikosulku koko paristolle. Virta kasvaa hyvin suureksi, ja mittarin sulake palaa. Pariston jännite mitataan napojen väliltä jännitemittarilla."
+        },
+        {
+          "text": "Mittari kytketään sarjaan, mutta vain vastuksen jälkeen, koska ennen vastusta virta on suurempi.",
+          "feedback": "Haarattomassa piirissä virta on joka kohdassa sama. Vastus ei kuluta virtaa, joten mittari näyttää saman lukeman ennen vastusta ja sen jälkeen."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Lukeman virheraja",
+      "prompt": "Lampun jännite mitataan alueella $2\\,\\text{V}$, ja näyttö näyttää $0{,}846\\,\\text{V}$. Alueen resoluutio on $0{,}001\\,\\text{V}$ ja virheraja $\\pm(0{,}5\\,\\% + 2\\ \\text{numeroa})$. Kuinka suuri on lukeman virheraja? Anna vastaus millivoltteina.",
+      "answer": 6.23,
+      "unit": "mV",
+      "tolerance": 0.05,
+      "hints": [
+        "Virheraja on prosenttiosa lukemasta ja siihen lisätty kaksi viimeisen numeron askelta.",
+        "Prosenttiosa on $0{,}005 \\cdot 0{,}846\\,\\text{V}$. Numeroiden osuus on $2 \\cdot 0{,}001\\,\\text{V}$.",
+        "$\\Delta U = 0{,}00423\\,\\text{V} + 0{,}002\\,\\text{V}$. Muunna tulos millivolteiksi kertomalla tuhannella."
+      ],
+      "mistakes": [
+        {
+          "value": 4.23,
+          "feedback": "Laskit vain prosenttiosan. Lisää siihen kaksi viimeisen numeron askelta, $2 \\cdot 0{,}001\\,\\text{V} = 2\\,\\text{mV}$."
+        },
+        {
+          "value": 24.23,
+          "feedback": "Käytit alueen $20\\,\\text{V}$ resoluutiota $0{,}01\\,\\text{V}$. Alueella $2\\,\\text{V}$ näytössä on kolme desimaalia. Yksi numero on siis $0{,}001\\,\\text{V}$."
+        }
+      ],
+      "solution": "**Annettu:** lukema $U = 0{,}846\\,\\text{V}$ alueella $2\\,\\text{V}$, resoluutio $r = 0{,}001\\,\\text{V}$, virheraja $\\pm(0{,}5\\,\\% + 2\\ \\text{numeroa})$\n\n**Kysytty:** virheraja $\\Delta U$ millivoltteina\n\n**Periaate:** Valmistajan virheraja on osuus lukemasta ja siihen lisätty kaksi viimeisen numeron askelta. Yksi numero on alueen resoluutio, tässä $0{,}001\\,\\text{V}$.\n\n**Kaava:** $\\Delta U = p \\cdot U + n \\cdot r$\n\n**Muunnokset:** $p = 0{,}5\\,\\% = 0{,}005$. Lopuksi $1\\,\\text{V} = 1000\\,\\text{mV}$.\n\n**Sijoitus:** $\\Delta U = 0{,}005 \\cdot 0{,}846\\,\\text{V} + 2 \\cdot 0{,}001\\,\\text{V} = 0{,}00423\\,\\text{V} + 0{,}002\\,\\text{V} = 0{,}00623\\,\\text{V} = 0{,}00623 \\cdot 1000\\,\\text{mV} = 6{,}23\\,\\text{mV}$\n\n**Vastaus:** $6\\,\\text{mV}$. Vastauksessa on yksi merkitsevä numero, koska virheraja pyöristetään kuten virhe-arvio. Laskimen arvo on $6{,}23\\,\\text{mV}$.\n\n**Järkevyys:** Puoli prosenttia vajaasta voltista on vähän yli $4\\,\\text{mV}$. Kaksi askelta lisää $2\\,\\text{mV}$. Suhteellinen virheraja on alle prosentti, kuten pienimmällä sopivalla alueella kuuluukin."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Selitä: mittarin oma resistanssi",
+      "optional": true,
+      "prompt": "Miksi hyvän jännitemittarin resistanssin pitää olla hyvin suuri ja hyvän virtamittarin hyvin pieni? Selitä kummastakin, mitä mittarissa ja piirissä tapahtuu, kun mittari on kytketty oikein.",
+      "criteria": [
+        "Selitin, että jännitemittari on osan rinnalla. Sen kautta kulkeva virta ohittaa osan ja muuttaa piiriä. Suuri resistanssi pitää tämän virran hyvin pienenä.",
+        "Selitin, että virtamittari on sarjassa, joten koko virta kulkee sen läpi. Pieni resistanssi pitää mittarin yli jäävän jännitteen ja virran muutoksen pienenä.",
+        "Totesin, että oikea mittari muuttaa piiriä aina vähän. Se on yksi mittausepävarmuuden lähde."
+      ],
+      "model": "Jännitemittari kytketään osan rinnalle. Sen kautta syntyy osan ohi kulkeva rinnakkainen tie. Jos mittarin resistanssi olisi pieni, osa virrasta kulkisi mittarin kautta. Osan virta ja jännite muuttuisivat. Mittari näyttäisi eri arvon kuin ilman mittaria. Suuri resistanssi, esimerkiksi $10\\,\\text{M}\\Omega$, pitää mittarin virran niin pienenä, ettei piiri käytännössä muutu. Virtamittari kytketään sarjaan, joten koko mitattava virta kulkee sen läpi. Jos sen resistanssi olisi suuri, se pienentäisi juuri sitä virtaa, jota mitataan. Lisäksi osa pariston jännitteestä jäisi mittarin yli. Pieni resistanssi pitää tämän vaikutuksen pienenä. Simulaatiossa alueen $200\\,\\text{mA}$ mittari pienensi virtaa vain noin $2\\,\\%$. Ihanteellinen mittari ei muuttaisi piiriä lainkaan. Oikea mittari muuttaa sitä aina vähän, ja se on yksi mittausepävarmuuden lähde."
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Lopuksi kaksi nopeaa kysymystä. Vastaa ensin itse. Avaa vastaus vasta sitten."
+    }
+  ]
+}

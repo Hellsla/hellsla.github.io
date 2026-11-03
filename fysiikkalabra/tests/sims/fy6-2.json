@@ -1,0 +1,190 @@
+[
+ {
+  "expr": "(() => { const S=window.simState; return S.N===3 && S.kytkenta==='sarja1' && S.alue==='mA200' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "on load: three cells, the ammeter in series before the lamp on the 200 mA range (must run before any setup)"
+ },
+ {
+  "expr": "window.simState.Im * 1000",
+  "expected": 97.826087,
+  "tol": 0.01,
+  "note": "on load: I = 4,5 V / (15 + 30 + 1,0) Ω = 97,8 mA (lesson-answers sim-I-mA200)"
+ },
+ {
+  "expr": "window.simState.reading",
+  "expected": 97.8,
+  "tol": 0.001,
+  "note": "on load: the display shows 97,8 (resolution 0,1 mA)"
+ },
+ {
+  "expr": "(() => { const S=[...document.querySelectorAll('#sim-root select')].map(s=>[...s.options].map(o=>o.value).join(',')); return S.length===3 && S[0]==='sarja1,sarja2,lamppu,vastus,paristo' && S[1]==='V2,V20,mA200,A10' && S[2]==='1,2,3' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "three selects: connection (5), selector (4 ranges), number of cells 1–3"
+ },
+ {
+  "expr": "(() => { const k=[...document.getElementById('sim-root').children].map(e=>e.tagName==='CANVAS'?'canvas':e.className); return k.indexOf('canvas')<k.indexOf('controls') && k.indexOf('controls')<k.indexOf('readout') ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "DOM order canvas, controls, readout"
+ },
+ {
+  "expr": "(() => { const n=document.querySelectorAll('#sim-root p.note'); return !document.querySelector('#sim-root details') && n.length===1 && n[0].textContent.trim().split(/\\s+/).length<=15 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "no Lisätietoja box; one legend line of at most 15 words"
+ },
+ {
+  "expr": "(() => { const P=window.simAdapter && window.simAdapter.params; return P && Object.keys(P).sort().join(',')==='N,alue,kytkenta' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "adapter declares kytkenta, alue and N"
+ },
+ {
+  "expr": "(() => { const c=document.querySelector('#sim-root canvas'); const w=document.getElementById('sim-root').clientWidth; return c.width===600 && c.height===(w<500?800:400) ? 1 : 0; })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "canvas 600x400 on a wide screen, 600x800 (stacked, larger labels) under 500 px"
+ },
+ {
+  "expr": "(() => { const t=document.querySelector('#sim-root .readout').textContent; return /mA/.test(t) && /palaa/.test(t) ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "the readout shows the range, the reading in mA and the lamp's state"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'sarja2'); I(S[1],'mA200'); I(S[2],'3');",
+  "expr": "window.simState.reading",
+  "expected": 97.8,
+  "tol": 0.001,
+  "note": "koe 1 and prediction 1: between the lamp and the resistor the ammeter shows the same 97,8 mA"
+ },
+ {
+  "expr": "window.simState.lamppu === 'palaa' ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "the lamp is lit with the ammeter in series"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'sarja1'); I(S[1],'A10'); I(S[2],'3');",
+  "expr": "window.simState.reading",
+  "expected": 0.1,
+  "tol": 0.001,
+  "note": "10 A range in series: 0,09998 A shown as 0,10 A (lesson-answers sim-I-A10)"
+ },
+ {
+  "expr": "window.simState.ImA",
+  "expected": 100,
+  "tol": 0.001,
+  "note": "ImA records the 10 A reading in mA: 100"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'lamppu'); I(S[1],'mA200'); I(S[2],'3');",
+  "expr": "window.simState.reading",
+  "expected": 136.4,
+  "tol": 0.001,
+  "note": "koe 1: ammeter across the lamp carries 136,4 mA (lesson-answers sim-lamp-short-mA)"
+ },
+ {
+  "expr": "window.simState.lamppu === 'ei' && Math.abs(window.simState.IL - 0.00909091) < 1e-5 ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "the lamp is bypassed: 9,1 mA, it goes out"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'vastus'); I(S[1],'mA200'); I(S[2],'3');",
+  "expr": "window.simState.fuse && window.simState.reading === 'sulake' && window.simState.lamppu === 'palaa' ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "ammeter across the resistor: 272,7 mA > 199,9 mA blows the fuse; the circuit is as without the meter"
+ },
+ {
+  "expr": "window.simState.IL * 1000",
+  "expected": 100,
+  "tol": 0.001,
+  "note": "after the fuse blows the lamp's current is 100 mA (lesson-answers sim-I-nometer)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'paristo'); I(S[1],'A10'); I(S[2],'3');",
+  "expr": "window.simState.fuse ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "ammeter across the battery on 10 A: 450 A, the fuse blows"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'lamppu'); I(S[1],'V20'); I(S[2],'3');",
+  "expr": "window.simState.reading",
+  "expected": 1.5,
+  "tol": 0.001,
+  "note": "koe 2 and prediction 2: voltmeter across the lamp shows 1,50 V (lesson-answers sim-UL)"
+ },
+ {
+  "expr": "window.simState.lamppu === 'palaa' ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "the lamp stays lit with the voltmeter across it"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'sarja1'); I(S[1],'V20'); I(S[2],'3');",
+  "expr": "window.simState.reading",
+  "expected": 4.5,
+  "tol": 0.001,
+  "note": "koe 2 and prediction 2: voltmeter in series shows 4,50 V (lesson-answers sim-V-series)"
+ },
+ {
+  "expr": "window.simState.lamppu === 'ei' && window.simState.IL < 1e-6 ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "the current is 0,45 µA and the lamp is out"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'paristo'); I(S[1],'V20'); I(S[2],'3');",
+  "expr": "window.simState.reading",
+  "expected": 4.5,
+  "tol": 0.001,
+  "note": "koe 2: voltmeter across the battery shows 4,50 V"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'lamppu'); I(S[1],'V2'); I(S[2],'3');",
+  "expr": "window.simState.reading",
+  "expected": 1.5,
+  "tol": 0.001,
+  "note": "koe 3: the 2 V range shows 1,500 V"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'vastus'); I(S[1],'V2'); I(S[2],'3');",
+  "expr": "window.simState.reading === 'OL' ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "koe 3: 3,00 V across the resistor is over the 2 V range: OL"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'vastus'); I(S[1],'V20'); I(S[2],'3');",
+  "expr": "window.simState.reading",
+  "expected": 3.0,
+  "tol": 0.001,
+  "note": "the resistor's 3,00 V on the 20 V range (lesson-answers sim-UR)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'sarja1'); I(S[1],'mA200'); I(S[2],'1');",
+  "expr": "window.simState.reading",
+  "expected": 32.6,
+  "tol": 0.001,
+  "note": "one cell: 1,5 V / 46 Ω = 32,6 mA"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'lamppu'); I(S[1],'V2'); I(S[2],'2');",
+  "expr": "window.simState.reading",
+  "expected": 1.0,
+  "tol": 0.001,
+  "note": "two cells: the lamp's voltage 1,000 V"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'sarja1'); I(S[1],'mA200'); I(S[2],'3');",
+  "expr": "(() => { const t=document.querySelector('#sim-root .readout').textContent; return /97[,.]8/.test(t) ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "the readout shows the reading 97,8"
+ }
+]

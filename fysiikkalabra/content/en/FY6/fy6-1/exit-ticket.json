@@ -1,0 +1,14 @@
+[
+  {
+    "q": "What is a conductor and what is an insulator? Give one example of each from an electric wire.",
+    "a": "In a conductor the charges are able to move, for example the free electrons in the copper of a wire. In an insulator the charges are not able to move; the plastic sheath of a wire is an insulator."
+  },
+  {
+    "q": "What does it mean that the voltage of a battery is $1.5\\,\\text{V}$? How much energy does the battery transfer when a charge of $4.0\\,\\text{C}$ passes through it?",
+    "a": "Every coulomb that passes from the battery into the circuit gets $1.5\\,\\text{J}$ of energy, because $1\\,\\text{V} = 1\\,\\text{J/C}$. For a charge of $4.0\\,\\text{C}$ the energy is $E = UQ = 1.5\\,\\text{V}\\cdot 4.0\\,\\text{C} = 6.0\\,\\text{J}$."
+  },
+  {
+    "q": "In which direction do the electrons move in the wire outside the lamp, and in which direction does the conventional direction of current point?",
+    "a": "In the external circuit the electrons move from the negative terminal of the battery to the positive terminal. The conventional direction of current is the opposite, from the positive terminal to the negative terminal."
+  }
+]

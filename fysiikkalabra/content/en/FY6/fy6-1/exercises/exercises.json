@@ -1,0 +1,106 @@
+{
+  "level1": [
+    {
+      "id": "fy6-1-L1-01",
+      "level": 1,
+      "text": "A charge of $45\\,\\text{C}$ passes through the filament of a lamp in $30\\,\\text{s}$. How large is the electric current through the lamp?",
+      "answer": 1.5,
+      "unit": "A",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-1-L1-02",
+      "level": 1,
+      "text": "A current of $0.50\\,\\text{A}$ passes through an electric motor for $40\\,\\text{s}$. How large a charge passes through the motor during this time?",
+      "answer": 20,
+      "unit": "C",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-1-L1-03",
+      "level": 1,
+      "text": "A battery transfers $54\\,\\text{J}$ of energy to a charge of $6.0\\,\\text{C}$ that passes through it. How large is the voltage of the battery?",
+      "answer": 9.0,
+      "unit": "V",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-1-L1-04",
+      "level": 1,
+      "text": "A charge of $150\\,\\text{C}$ passes from the $12\\,\\text{V}$ battery of a car through the starter motor. How much energy does the battery transfer to the motor?",
+      "answer": 1800,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-1-L1-05",
+      "level": 1,
+      "text": "A current of $0.080\\,\\text{A}$ passes through an indicator lamp. How long does it take for a charge of $2.4\\,\\text{C}$ to pass through the indicator lamp?",
+      "answer": 30,
+      "unit": "s",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy6-1-L2-01",
+      "level": 2,
+      "text": "A current of $20\\,\\text{mA}$ passes through the LED indicator of a bicycle rear light, and the light is on for $1.5\\,\\text{h}$. How large a charge passes through the light? Give the answer in coulombs.",
+      "answer": 108,
+      "unit": "C",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-1-L2-02",
+      "level": 2,
+      "text": "A current of $0.16\\,\\text{A}$ passes through a lamp. How many electrons pass through the lamp in one second? The elementary charge is $e = 1.602 \\cdot 10^{-19}\\,\\text{C}$.",
+      "answer": 9.99e+17,
+      "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-1-L2-03",
+      "level": 2,
+      "text": "The voltage of a phone battery is $3.7\\,\\text{V}$, and when fully charged the battery can deliver a charge of $3000\\,\\text{mAh}$. The unit $\\text{mAh}$ means the charge that passes when a current of $1\\,\\text{mA}$ flows for one hour. How much energy can the full battery transfer to the circuits of the phone? Give the answer in kilojoules.",
+      "answer": 39.96,
+      "unit": "kJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-1-L2-04",
+      "level": 2,
+      "text": "The graph shows how the current through an electric device changes with time. How large a charge passes through the device between the times $0\\,\\text{s}$ and $60\\,\\text{s}$?",
+      "answer": 11,
+      "unit": "C",
+      "tolerance": 0.02,
+      "figure": "fy6-1/virta-kuvaaja"
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy6-1-L3-01",
+      "level": 3,
+      "text": "The side of an AA battery says $2.0\\,\\text{Ah}$. The unit ampere-hour $\\text{Ah}$ means the charge that passes when a current of $1\\,\\text{A}$ flows for one hour. For how many hours can the battery keep a torch lamp on, if the current of the lamp is $0.25\\,\\text{A}$ all the time?",
+      "answer": 8.0,
+      "unit": "h",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-1-L3-02",
+      "level": 3,
+      "text": "A small $9.0\\,\\text{V}$ battery can deliver a charge of $0.50\\,\\text{Ah}$, and an AA battery with a voltage of $1.5\\,\\text{V}$ a charge of $2.5\\,\\text{Ah}$. The AA battery thus delivers a charge five times as large. How many times more energy can the $9.0\\,\\text{V}$ battery still transfer than the AA battery?",
+      "answer": 1.2,
+      "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-1-L3-03",
+      "level": 3,
+      "text": "A bicycle light has two $1.5\\,\\text{V}$ batteries in a row, a switch and a lamp. In addition, the current through the lamp is to be measured with an ammeter connected into the same loop. Draw the circuit diagram of the circuit on paper and mark the conventional direction of current in it. Tell how you drew the diagram.",
+      "answer": "One closed loop: two battery cells in a row (the positive terminal of the first to the negative terminal of the second), a switch, a lamp and an ammeter in the same loop; the arrow of the current from the positive terminal through the circuit to the negative terminal.",
+      "unit": "",
+      "tolerance": 0.02,
+      "model_figure": "fy6-1/kaavio-malli"
+    }
+  ]
+}
