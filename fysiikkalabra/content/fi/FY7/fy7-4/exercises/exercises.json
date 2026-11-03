@@ -19,7 +19,7 @@
     {
       "id": "fy7-4-L1-03",
       "level": 1,
-      "text": "Virtakeinun vaakasuora johdinosa on $6{,}0\\,\\text{cm}$ pitkä ja kohtisuorassa magneetin kenttää vastaan. Kun johtimessa kulkee $4{,}5\\,\\text{A}$:n virta, johdinosaan kohdistuu $27\\,\\text{mN}$:n voima. Kuinka suuri on magneettivuon tiheys magneetin napojen välissä?",
+      "text": "Virtavaa'an vaakasuora johdinosa on $6{,}0\\,\\text{cm}$ pitkä ja kohtisuorassa magneetin kenttää vastaan. Kun johtimessa kulkee $4{,}5\\,\\text{A}$:n virta, johdinosaan kohdistuu $27\\,\\text{mN}$:n voima. Kuinka suuri on magneettivuon tiheys magneetin napojen välissä?",
       "answer": 0.1,
       "unit": "T",
       "tolerance": 0.02
@@ -27,7 +27,7 @@
     {
       "id": "fy7-4-L1-04",
       "level": 1,
-      "text": "Voimalinjan kahden pylvään välinen $100\\,\\text{m}$:n johdinosa on vaakasuora ja kulkee kompassin osoittamaan pohjois–eteläsuuntaan. Johtimessa kulkee $200\\,\\text{A}$:n virta. Maan magneettikentän magneettivuon tiheys on Etelä-Suomessa noin $52\\,\\mu\\text{T}$, ja kenttä osoittaa pohjoiseen ja alaspäin $75^\\circ$:n kulmassa vaakatasoon nähden (Ilmatieteen laitos, Nurmijärven geofysiikan observatorio, 2024). Johtimen ja kentän välinen kulma on siis $75^\\circ$. Kuinka suuri voima Maan magneettikenttä kohdistaa johdinosaan?",
+      "text": "Voimalinjan kahden pylvään välinen $100\\,\\text{m}$:n johdinosa on vaakasuora ja kulkee kompassin osoittamaan pohjois–eteläsuuntaan. Johtimessa kulkee $200\\,\\text{A}$:n virta. Maan magneettikentän magneettivuon tiheys on Etelä-Suomessa noin $53\\,\\mu\\text{T}$, ja kenttä osoittaa magneettiseen pohjoiseen ja alaspäin $74^\\circ$:n kulmassa vaakatasoon nähden (WMM2025-malli, NOAA/BGS). Johtimen ja kentän välinen kulma on siis $74^\\circ$. Kuinka suuri voima Maan magneettikenttä kohdistaa johdinosaan?",
       "answer": 1.0,
       "unit": "N",
       "tolerance": 0.02
@@ -35,7 +35,7 @@
     {
       "id": "fy7-4-L1-05",
       "level": 1,
-      "text": "Virtakeinun johdinosasta $5{,}0\\,\\text{cm}$ on magneetin napojen välissä, missä magneettivuon tiheys on $0{,}20\\,\\text{T}$ ja kenttä on kohtisuorassa johdinta vastaan. Kuinka suuri virta johtimessa kulkee, kun johdinosaan kohdistuu $0{,}030\\,\\text{N}$:n voima?",
+      "text": "Virtavaa'an johdinosasta $5{,}0\\,\\text{cm}$ on magneetin napojen välissä, missä magneettivuon tiheys on $0{,}20\\,\\text{T}$ ja kenttä on kohtisuorassa johdinta vastaan. Kuinka suuri virta johtimessa kulkee, kun johdinosaan kohdistuu $0{,}030\\,\\text{N}$:n voima?",
       "answer": 3.0,
       "unit": "A",
       "tolerance": 0.02
@@ -88,16 +88,16 @@
     {
       "id": "fy7-4-L3-02",
       "level": 3,
-      "text": "Sähköaseman kaksi rinnakkaista virtakiskoa ovat $0{,}30\\,\\text{m}$:n etäisyydellä toisistaan. Oikosulussa niissä kulkee hetkellisesti $20\\,\\text{kA}$:n virta vastakkaisiin suuntiin. Kuinka suuri voima kohdistuu kiskon $1{,}0\\,\\text{m}$:n pituiseen osaan? Vetävätkö kiskot toisiaan puoleensa vai hylkivätkö ne toisiaan?",
-      "answer": 270,
+      "text": "Sähköaseman kaksi rinnakkaista virtakiskoa ovat $0{,}30\\,\\text{m}$:n etäisyydellä toisistaan. Oikosulussa niissä kulkee hetkellisesti $20\\,\\text{kA}$:n virta vastakkaisiin suuntiin. Kuinka suuri voima kohdistuu kiskon $1{,}0\\,\\text{m}$:n pituiseen osaan, ja vetävätkö kiskot toisiaan puoleensa vai hylkivätkö ne toisiaan? Ilmoita voima positiivisena, jos kiskot vetävät toisiaan puoleensa, ja negatiivisena, jos ne hylkivät toisiaan.",
+      "answer": -270,
       "unit": "N",
       "tolerance": 0.02
     },
     {
       "id": "fy7-4-L3-03",
       "level": 3,
-      "text": "Ohut alumiinilanka, jonka pituus on $1{,}0\\,\\text{m}$ ja massa $2{,}7\\,\\text{g}$, on vaakasuorassa itä–länsisuunnassa. Maan magneettikentän magneettivuon tiheys on Etelä-Suomessa noin $52\\,\\mu\\text{T}$, ja kenttä osoittaa pohjoiseen ja alaspäin $75^\\circ$:n kulmassa vaakatasoon nähden. Kuinka suuri virta langassa pitäisi kulkea, jotta Maan magneettikenttä kannattelisi langan painon? Anna vastaus kiloampeereina.",
-      "answer": 2.0,
+      "text": "Ohut alumiinilanka, jonka pituus on $1{,}0\\,\\text{m}$ ja massa $2{,}7\\,\\text{g}$, on vaakasuorassa kompassin mukaan itä–länsisuunnassa. Maan magneettikentän magneettivuon tiheys on Etelä-Suomessa noin $53\\,\\mu\\text{T}$, ja kenttä osoittaa magneettiseen pohjoiseen ja alaspäin $74^\\circ$:n kulmassa vaakatasoon nähden (WMM2025-malli, NOAA/BGS). Kuinka suuri virta langassa pitäisi kulkea, jotta Maan magneettikenttä kannattelisi langan painon? Anna vastaus kiloampeereina.",
+      "answer": 1.8,
       "unit": "kA",
       "tolerance": 0.02
     }

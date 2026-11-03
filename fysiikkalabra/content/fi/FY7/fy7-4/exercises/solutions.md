@@ -21,7 +21,7 @@
 ## fy7-4-L1-03
 **Annettu:** $l = 6{,}0\,\text{cm}$, $I = 4{,}5\,\text{A}$, $F = 27\,\text{mN}$, johdin kohtisuorassa kenttää vastaan eli $\alpha = 90^\circ$
 **Kysytty:** magneettivuon tiheys $B$ tesloina
-**Periaate:** Voima, jonka kenttä kohdistaa suoraan virtajohtimeen, on $F = I l B \sin\alpha$. Kun voima, virta ja pituus tunnetaan, kaavasta voidaan ratkaista kentän suuruus. Virtakeinu on siis tapa mitata magneettikenttää.
+**Periaate:** Voima, jonka kenttä kohdistaa suoraan virtajohtimeen, on $F = I l B \sin\alpha$. Kun voima, virta ja pituus tunnetaan, kaavasta voidaan ratkaista kentän suuruus. Virtavaaka on siis tapa mitata magneettikenttää.
 **Kaava:** $F = I l B$, josta $B = \dfrac{F}{I l}$
 **Muunnokset:** $l = 6{,}0\,\text{cm} = 6{,}0 \cdot 0{,}01\,\text{m} = 0{,}060\,\text{m}$ ja $F = 27\,\text{mN} = 27 \cdot 0{,}001\,\text{N} = 0{,}027\,\text{N}$
 **Sijoitus:** $B = \dfrac{0{,}027\,\text{N}}{4{,}5\,\text{A} \cdot 0{,}060\,\text{m}} = \dfrac{0{,}027\,\text{N}}{0{,}27\,\text{A}\cdot\text{m}} = 0{,}10\,\text{T}$
@@ -29,14 +29,14 @@
 **Järkevyys:** Hevosenkenkämagneetin napojen välissä kenttä on tyypillisesti sadasosista kymmenesosiin teslaa, joten $0{,}10\,\text{T}$ on uskottava. Tarkistus: $4{,}5\,\text{A} \cdot 0{,}060\,\text{m} \cdot 0{,}10\,\text{T} = 0{,}027\,\text{N}$.
 
 ## fy7-4-L1-04
-**Annettu:** $l = 100\,\text{m}$, $I = 200\,\text{A}$, Maan kenttä $B = 52\,\mu\text{T}$, johtimen ja kentän välinen kulma $\alpha = 75^\circ$
+**Annettu:** $l = 100\,\text{m}$, $I = 200\,\text{A}$, Maan kenttä $B = 53\,\mu\text{T}$, johtimen ja kentän välinen kulma $\alpha = 74^\circ$
 **Kysytty:** Maan magneettikentän johdinosaan kohdistama voima $F$ newtoneina
-**Periaate:** Maan magneettikenttä on johtimen pituisella alueella käytännössä homogeeninen, joten voima on $F = I l B \sin\alpha$. Johdin kulkee pohjois–eteläsuunnassa, ja kenttä on $75^\circ$:n kulmassa vaakatasoon nähden pohjoissuunnassa, joten kulma johtimen ja kentän välillä on $75^\circ$.
+**Periaate:** Maan magneettikenttä on johtimen pituisella alueella käytännössä homogeeninen, joten voima on $F = I l B \sin\alpha$. Johdin kulkee kompassin osoittamassa pohjois–eteläsuunnassa, ja kenttä on $74^\circ$:n kulmassa vaakatasoon nähden magneettisen pohjoisen suunnassa, joten kulma johtimen ja kentän välillä on $74^\circ$.
 **Kaava:** $F = I l B \sin\alpha$
-**Muunnokset:** $B = 52\,\mu\text{T} = 52 \cdot 10^{-6}\,\text{T}$
-**Sijoitus:** $F = 200\,\text{A} \cdot 100\,\text{m} \cdot 52 \cdot 10^{-6}\,\text{T} \cdot \sin 75^\circ = 1{,}04\,\text{N} \cdot 0{,}9659 = 1{,}0046\,\text{N}$
-**Vastaus:** $1{,}0\,\text{N}$, kaksi merkitsevää numeroa kuten magneettivuon tiheydessä $52\,\mu\text{T}$.
-**Järkevyys:** Voima on noin $100\,\text{g}$:n kappaleen painon suuruinen koko $100\,\text{m}$:n matkalla eli mitätön verrattuna johtimen painoon, joka on satoja newtoneja. Maan kenttä on heikko, joten tulos on odotettu.
+**Muunnokset:** $B = 53\,\mu\text{T} = 53 \cdot 10^{-6}\,\text{T}$
+**Sijoitus:** $F = 200\,\text{A} \cdot 100\,\text{m} \cdot 53 \cdot 10^{-6}\,\text{T} \cdot \sin 74^\circ = 1{,}06\,\text{N} \cdot 0{,}9613 = 1{,}0189\,\text{N}$
+**Vastaus:** $1{,}0\,\text{N}$, kaksi merkitsevää numeroa kuten magneettivuon tiheydessä $53\,\mu\text{T}$.
+**Järkevyys:** Voima on noin $100\,\text{g}$:n kappaleen painon suuruinen koko $100\,\text{m}$:n matkalla eli mitätön verrattuna johtimen painoon: $200\,\text{A}$:n voimajohdin painaa noin $1\,\text{kg}$ metriä kohti, joten $100\,\text{m}$:n johdinosan paino on noin $1000\,\text{N}$. Maan kenttä on heikko, joten tulos on odotettu.
 
 ## fy7-4-L1-05
 **Annettu:** $l = 5{,}0\,\text{cm}$, $B = 0{,}20\,\text{T}$, $F = 0{,}030\,\text{N}$, johdin kohtisuorassa kenttää vastaan eli $\alpha = 90^\circ$
@@ -62,7 +62,7 @@
 **Annettu:** johtimen pituus kentässä $l = 4{,}0\,\text{cm}$, johdin kohtisuorassa kenttää vastaan; kuvaajassa vaa'an lukeman muutos $\Delta m$ virran $I$ funktiona; $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** magneettivuon tiheys $B$ tesloina
 **Periaate:** Kenttä kohdistaa johtimeen voiman $F = I l B$, ja Newtonin kolmannen lain mukaan johdin kohdistaa magneettiin yhtä suuren vastakkaissuuntaisen voiman. Siksi vaa'an lukema muuttuu: muutosta $\Delta m$ vastaa voima $F = \Delta m \cdot g$. Suora kulkee origon kautta, koska ilman virtaa voimaa ei ole.
-**Kuvaajan lukeminen:** Sovitettu suora kulkee origon ja ruudukon pisteen ($5{,}0\,\text{A}$; $1{,}50\,\text{g}$) kautta. Luetaan siis virta $I = 5{,}0\,\text{A}$ ja sitä vastaava muutos $\Delta m = 1{,}50\,\text{g}$ suoralta, ei yksittäisestä mittauspisteestä.
+**Kuvaajan lukeminen:** Mittauspisteet poikkeavat hieman suorasta mittausepätarkkuuden vuoksi, joten käytetään pisteisiin sovitettua suoraa, joka tasoittaa poikkeamat. Suora kulkee origon ja ruudukon pisteen ($5{,}0\,\text{A}$; $1{,}50\,\text{g}$) kautta. Luetaan siis virta $I = 5{,}0\,\text{A}$ ja sitä vastaava muutos $\Delta m = 1{,}50\,\text{g}$ suoralta, ei yksittäisestä mittauspisteestä: viimeinen mittauspiste $1{,}47\,\text{g}$ on hieman suoran alapuolella.
 **Kaava:** $\Delta m \cdot g = I l B$, josta $B = \dfrac{\Delta m \cdot g}{I l}$
 **Muunnokset:** $\Delta m = 1{,}50\,\text{g} = 1{,}50 \cdot 0{,}001\,\text{kg} = 0{,}00150\,\text{kg}$ ja $l = 4{,}0\,\text{cm} = 4{,}0 \cdot 0{,}01\,\text{m} = 0{,}040\,\text{m}$
 **Sijoitus:** $B = \dfrac{0{,}00150\,\text{kg} \cdot 9{,}81\,\text{m/s}^2}{5{,}0\,\text{A} \cdot 0{,}040\,\text{m}} = \dfrac{0{,}014715\,\text{N}}{0{,}20\,\text{A}\cdot\text{m}} = 0{,}0736\,\text{T}$
@@ -101,20 +101,20 @@
 
 ## fy7-4-L3-02
 **Annettu:** kiskojen etäisyys $r = 0{,}30\,\text{m}$, virrat $I_1 = I_2 = 20\,\text{kA}$ vastakkaisiin suuntiin, tarkasteltava pituus $l = 1{,}0\,\text{m}$, $\mu_0 = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$
-**Kysytty:** kiskon $1{,}0\,\text{m}$:n osaan kohdistuva voima $F$ ja sen suunta
+**Kysytty:** kiskon $1{,}0\,\text{m}$:n osaan kohdistuva voima $F$ ja sen suunta; voima ilmoitetaan positiivisena, jos kiskot vetävät toisiaan, ja negatiivisena, jos ne hylkivät
 **Periaate:** Kumpikin kisko on toisen magneettikentässä. Toisen kiskon kenttä on kiskon kohdalla kohtisuorassa sitä vastaan ja koko matkalla sama, joten voima on $F = I_2 l B_1$. Vastakkaissuuntaiset virrat hylkivät toisiaan, joten voima työntää kiskoja erilleen.
 **Kaava:** $B_1 = \dfrac{\mu_0 I_1}{2\pi r}$ ja $F = I_2 l B_1$
 **Muunnokset:** $I_1 = I_2 = 20\,\text{kA} = 20 \cdot 1000\,\text{A} = 20\,000\,\text{A}$
 **Sijoitus:** $B_1 = \dfrac{4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot 20\,000\,\text{A}}{2\pi \cdot 0{,}30\,\text{m}} = 0{,}013\,333\,\text{T}$ ja $F = 20\,000\,\text{A} \cdot 1{,}0\,\text{m} \cdot 0{,}013\,333\,\text{T} = 266{,}7\,\text{N}$
-**Vastaus:** $270\,\text{N}$, kaksi merkitsevää numeroa kuten virrassa ja etäisyydessä. Kiskot hylkivät toisiaan.
+**Vastaus:** Voiman suuruus on $270\,\text{N}$, kaksi merkitsevää numeroa kuten virrassa ja etäisyydessä. Kiskot hylkivät toisiaan, joten tehtävän merkkisäännön mukaan vastaus on $-270\,\text{N}$.
 **Järkevyys:** Kenttä toisen kiskon kohdalla on $B_1 = 0{,}013\,\text{T}$, ja virta on hyvin suuri, joten voima metriä kohti vastaa noin $27\,\text{kg}$:n kappaleen painoa. Siksi sähköasemien kiskot kiinnitetään tukevasti: oikosulku voisi muuten taivuttaa niitä.
 
 ## fy7-4-L3-03
-**Annettu:** langan pituus $l = 1{,}0\,\text{m}$, massa $m = 2{,}7\,\text{g}$, lanka vaakasuorassa itä–länsisuunnassa; Maan kenttä $B = 52\,\mu\text{T}$ pohjoiseen ja alaspäin $75^\circ$:n kulmassa vaakatasoon nähden; $g = 9{,}81\,\text{m/s}^2$
+**Annettu:** langan pituus $l = 1{,}0\,\text{m}$, massa $m = 2{,}7\,\text{g}$, lanka vaakasuorassa kompassin mukaan itä–länsisuunnassa; Maan kenttä $B = 53\,\mu\text{T}$ magneettiseen pohjoiseen ja alaspäin $74^\circ$:n kulmassa vaakatasoon nähden; $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** virta $I$ kiloampeereina
-**Periaate:** Jaetaan kenttä vaaka- ja pystykomponenttiin. Lanka on kohtisuorassa kumpaakin vastaan. Pystykomponentti kohdistaa lankaan vaakasuoran voiman, joka ei kannattele lankaa. Vaakakomponentti $B_\text{v} = B \cos 75^\circ$ osoittaa pohjoiseen, ja oikean käden säännön mukaan itään kulkevaan virtaan kohdistuu siitä pystysuora voima ylöspäin. Lanka pysyy paikallaan, kun tämä voima on painon suuruinen.
-**Kaava:** $I l B \cos 75^\circ = m g$, josta $I = \dfrac{m g}{l B \cos 75^\circ}$
-**Muunnokset:** $m = 2{,}7\,\text{g} = 2{,}7 \cdot 0{,}001\,\text{kg} = 0{,}0027\,\text{kg}$ ja $B = 52\,\mu\text{T} = 52 \cdot 10^{-6}\,\text{T}$. Lopuksi $1\,\text{kA} = 1000\,\text{A}$.
-**Sijoitus:** $I = \dfrac{0{,}0027\,\text{kg} \cdot 9{,}81\,\text{m/s}^2}{1{,}0\,\text{m} \cdot 52 \cdot 10^{-6}\,\text{T} \cdot \cos 75^\circ} = \dfrac{0{,}026487\,\text{N}}{1{,}3459 \cdot 10^{-5}\,\text{T}\cdot\text{m}} = 1968\,\text{A} = 1{,}968\,\text{kA}$
-**Vastaus:** $2{,}0\,\text{kA}$, kaksi merkitsevää numeroa kuten lähtöarvoissa.
+**Periaate:** Jaetaan kenttä vaaka- ja pystykomponenttiin. Lanka on kompassin mukaan itä–länsisuunnassa, joten se on kohtisuorassa magneettiseen pohjoiseen osoittavaa vaakakomponenttia vastaan ja myös pystykomponenttia vastaan. Pystykomponentti kohdistaa lankaan vaakasuoran voiman, joka ei kannattele lankaa. Vaakakomponentti $B_\text{vaaka} = B \cos 74^\circ$ osoittaa magneettiseen pohjoiseen, ja oikean käden säännön mukaan itään kulkevaan virtaan kohdistuu siitä pystysuora voima ylöspäin. Lanka pysyy paikallaan, kun tämä voima on painon suuruinen.
+**Kaava:** $I l B \cos 74^\circ = m g$, josta $I = \dfrac{m g}{l B \cos 74^\circ}$
+**Muunnokset:** $m = 2{,}7\,\text{g} = 2{,}7 \cdot 0{,}001\,\text{kg} = 0{,}0027\,\text{kg}$ ja $B = 53\,\mu\text{T} = 53 \cdot 10^{-6}\,\text{T}$. Lopuksi $1\,\text{kA} = 1000\,\text{A}$.
+**Sijoitus:** $I = \dfrac{0{,}0027\,\text{kg} \cdot 9{,}81\,\text{m/s}^2}{1{,}0\,\text{m} \cdot 53 \cdot 10^{-6}\,\text{T} \cdot \cos 74^\circ} = \dfrac{0{,}026487\,\text{N}}{1{,}4609 \cdot 10^{-5}\,\text{T}\cdot\text{m}} = 1813\,\text{A} = 1{,}813\,\text{kA}$
+**Vastaus:** $1{,}8\,\text{kA}$, kaksi merkitsevää numeroa kuten lähtöarvoissa.
 **Järkevyys:** Tarvittava virta on valtava: ohut lanka sulaisi siinä heti. Tulos osoittaa, kuinka heikko Maan magneettikenttä on, noin $0{,}05\,\text{mT}$, verrattuna laboratoriomagneetin kymmenesosaan teslaa. Kompassineula kääntyy silti, koska se on magneetti eikä virtajohdin.

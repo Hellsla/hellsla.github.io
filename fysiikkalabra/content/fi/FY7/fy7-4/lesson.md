@@ -129,9 +129,9 @@ Tasavirtamoottorissa magneetin napojen välissä on akselin ympäri kääntyvä 
 </svg>
 
 ### Kaiutin
-Kaiuttimen magneetti on rakennettu niin, että rengasmaisessa raossa kenttä osoittaa säteittäin ulospäin. Raossa on kevyt puhekela, jonka jokainen kohta on kohtisuorassa kenttää vastaan, joten jokaiseen kohtaan kohdistuu yhtä suuri voima kelan akselin suuntaan. Kela on kiinni kartiossa. Vahvistimen vaihtovirta muuttaa suuntaansa samassa tahdissa kuin äänisignaali, joten voima työntää kartiota vuorotellen eteen ja taakse. Kartio värähtelee signaalin taajuudella, puristaa ja harventaa ilmaa ja synnyttää ääniaallon. Mitä suurempi virta, sitä suurempi voima ja sitä voimakkaampi ääni. Suurin osa kaiuttimeen tuodusta sähköenergiasta muuttuu kuitenkin kelan ja magneetin sisäenergiaksi.
+Kaiuttimen magneetti on rakennettu niin, että rengasmaisessa raossa kenttä osoittaa säteittäin ulospäin. Raossa on kevyt puhekela, jonka jokainen kohta on kohtisuorassa kenttää vastaan, joten jokaiseen kohtaan kohdistuu yhtä suuri voima kelan akselin suuntaan. Säteittäinen kenttä on välttämätön: homogeenisessa kentässä suljetun kelan vastakkaisiin puoliin kohdistuvat voimat olisivat vastakkaissuuntaiset ja kumoaisivat toisensa, joten kelaa ei työntäisi mikään. Kela on kiinni kartiossa. Vahvistimen vaihtovirta muuttaa suuntaansa samassa tahdissa kuin äänisignaali, joten voima työntää kartiota vuorotellen eteen ja taakse. Kartio värähtelee signaalin taajuudella, puristaa ja harventaa ilmaa ja synnyttää ääniaallon. Mitä suurempi virta, sitä suurempi voima ja sitä voimakkaampi ääni. Suurin osa kaiuttimeen tuodusta sähköenergiasta muuttuu kuitenkin kelan ja magneetin sisäenergiaksi.
 
-<svg data-fig="speaker" viewBox="0 0 600 360" role="img" aria-label="Kaiuttimen poikkileikkaus, periaatekuva, ei mittakaavassa. Vasemmalla on rautainen keskinapa ja sen ympärillä rengasmagneetti ja etulevy. Keskinapa on N-napa ja etulevy S-napa, joten kapeassa raossa magneettikenttä osoittaa säteittäin ulospäin, yläraossa ylös ja alaraossa alas. Raossa on puhekela: sen poikkileikkauksessa virta kulkee yläpuolella paperiin päin ja alapuolella paperista ulos. Kummallakin puolella voima osoittaa oikealle, kohti kartiota, joka on kiinnitetty kelaan." style="max-width:100%;font-size:24px">
+<svg data-fig="speaker" viewBox="0 0 600 360" role="img" aria-label="Kaiuttimen poikkileikkaus, periaatekuva, ei mittakaavassa. Vasemmalla on rautainen keskinapa ja sen ympärillä rengasmagneetti ja etulevy. Keskinapa on N-napa ja etulevy S-napa, joten kapeassa raossa magneettikenttä osoittaa säteittäin ulospäin, yläraossa ylös ja alaraossa alas. Raossa on puhekela: sen kierrosten poikkileikkauksessa virta kulkee yläpuolella paperiin päin ja alapuolella paperista ulos. Kummallakin puolella voima osoittaa oikealle, kohti kartiota, joka on kiinnitetty kelaan." style="max-width:100%;font-size:24px">
   <rect x="40" y="60" width="24" height="240" rx="3" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
   <rect x="64" y="150" width="176" height="60" rx="3" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
   <rect x="64" y="60" width="56" height="54" rx="3" fill="#8a96a3" stroke="#1f2933" stroke-width="2"/>
@@ -143,16 +143,11 @@ Kaiuttimen magneetti on rakennettu niin, että rengasmaisessa raossa kenttä oso
   <foreignObject x="138" y="258.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{S}$</div></foreignObject>
   <rect x="126" y="141" width="142" height="4" fill="#e9c98a"/>
   <rect x="126" y="215" width="142" height="4" fill="#e9c98a"/>
-  <circle cx="134" cy="130" r="7" fill="#ffffff" stroke="#7048e8" stroke-width="2.5"/>
-  <line x1="130" y1="126" x2="138" y2="134" stroke="#7048e8" stroke-width="2.5" stroke-linecap="butt"/>
-  <line x1="138" y1="126" x2="130" y2="134" stroke="#7048e8" stroke-width="2.5" stroke-linecap="butt"/>
-  <circle cx="134" cy="230" r="7" fill="#ffffff" stroke="#7048e8" stroke-width="2.5"/>
-  <circle cx="134" cy="230" r="2.24" fill="#7048e8"/>
-  <circle cx="152" cy="130" r="7" fill="#ffffff" stroke="#7048e8" stroke-width="2.5"/>
-  <line x1="148" y1="126" x2="156" y2="134" stroke="#7048e8" stroke-width="2.5" stroke-linecap="butt"/>
-  <line x1="156" y1="126" x2="148" y2="134" stroke="#7048e8" stroke-width="2.5" stroke-linecap="butt"/>
-  <circle cx="152" cy="230" r="7" fill="#ffffff" stroke="#7048e8" stroke-width="2.5"/>
-  <circle cx="152" cy="230" r="2.24" fill="#7048e8"/>
+  <circle cx="143" cy="130" r="8" fill="#ffffff" stroke="#7048e8" stroke-width="2.5"/>
+  <line x1="138.5" y1="125.5" x2="147.5" y2="134.5" stroke="#7048e8" stroke-width="2.5" stroke-linecap="butt"/>
+  <line x1="147.5" y1="125.5" x2="138.5" y2="134.5" stroke="#7048e8" stroke-width="2.5" stroke-linecap="butt"/>
+  <circle cx="143" cy="230" r="8" fill="#ffffff" stroke="#7048e8" stroke-width="2.5"/>
+  <circle cx="143" cy="230" r="2.56" fill="#7048e8"/>
   <foreignObject x="92" y="115.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#7048e8">$I$</div></foreignObject>
   <foreignObject x="92" y="215.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#7048e8">$I$</div></foreignObject>
   <line x1="168" y1="148" x2="168" y2="125" stroke="#2b8a3e" stroke-width="2.5" stroke-linecap="butt"/>

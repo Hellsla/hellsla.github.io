@@ -178,7 +178,7 @@ def speaker():
     f = Fig("fy74-speaker", 360, "Kaiuttimen poikkileikkaus, periaatekuva, ei mittakaavassa. Vasemmalla on rautainen "
             "keskinapa ja sen ympärillä rengasmagneetti ja etulevy. Keskinapa on N-napa ja etulevy S-napa, joten "
             "kapeassa raossa magneettikenttä osoittaa säteittäin ulospäin, yläraossa ylös ja alaraossa alas. Raossa on "
-            "puhekela: sen poikkileikkauksessa virta kulkee yläpuolella paperiin päin ja alapuolella paperista ulos. "
+            "puhekela: sen kierrosten poikkileikkauksessa virta kulkee yläpuolella paperiin päin ja alapuolella paperista ulos. "
             "Kummallakin puolella voima osoittaa oikealle, kohti kartiota, joka on kiinnitetty kelaan.")
     ay = 180
     # back plate and centre pole (iron), ring magnet, front plate; the gap between the front plate and the centre pole
@@ -190,8 +190,7 @@ def speaker():
     f.tex(148, 87, r"\text{S}", "middle"); f.tex(148, 273, r"\text{S}", "middle")
     # the voice coil on its former, which runs to the cone
     f.rect(126, 141, 142, 4, SAND_DARK); f.rect(126, 215, 142, 4, SAND_DARK)
-    for x in (134, 152):
-        into(f, x, 130, 7); out(f, x, 230, 7)
+    into(f, 143, 130, 8); out(f, 143, 230, 8)
     f.tex(112, 130, "I", "end", CURRENT); f.tex(112, 230, "I", "end", CURRENT)
     # radial field in the gaps: from the N pole outwards
     f.arrow(168, 148, 168, 116, FIELD, 2.5, 10); f.arrow(168, 212, 168, 244, FIELD, 2.5, 10)
@@ -214,17 +213,20 @@ def speaker():
 
 def balance_points():
     """Task figure: a current balance, reading change Δm against the current I, five measured points and the line
-    through the origin fitted to them, passing (5,0 A; 1,50 g). No B or slope written."""
+    through the origin fitted to them (scatter about ±0,04 g), passing (5,0 A; 1,50 g), dashed beyond 5 A. No B or slope written."""
     f = Fig("fy74-balance-points", 340, "Kuvaaja mittakaavassa: virtavaa'an lukeman muutos delta m grammoina virran I "
-            "funktiona ampeereina. Viisi mittauspistettä virroilla 1,0; 2,0; 3,0; 4,0 ja 5,0 A, muutokset 0,30; 0,60; "
-            "0,91; 1,19 ja 1,50 g, sekä pisteisiin sovitettu origon kautta kulkeva suora, joka kulkee pisteen (5,0 A; "
-            "1,50 g) kautta. Ruudukon väli on 0,5 A ja 0,15 g.")
+            "funktiona ampeereina. Viisi mittauspistettä virroilla 1,0; 2,0; 3,0; 4,0 ja 5,0 A, muutokset 0,27; 0,64; "
+            "0,87; 1,24 ja 1,47 g, sekä pisteisiin sovitettu origon kautta kulkeva suora, joka kulkee ruudukon pisteen "
+            "(5,0 A; 1,50 g) kautta ja jatkuu katkoviivana viimeisen mittauspisteen jälkeen. Ruudukon väli on 0,5 A ja "
+            "0,15 g.")
     ax = Axes(f, (96, 290), (470, 56), x=(0, 6), y=(0, 1.8), xticks=[0.5 * k for k in range(1, 13)],
               yticks=[0.15 * k for k in range(1, 13)], xlabel=r"I\ (\text{A})", ylabel=r"\Delta m\ (\text{g})",
               xfmt=lambda v: fi(v) if abs(v - round(v)) < 1e-9 else "",
               yfmt=lambda v: fi(round(v, 2), 1) if round(v / 0.15) % 2 == 0 else "")
-    ax.line([(0, 0), (6, 1.8)], HOT, 3)
-    for I, dm in ((1, 0.30), (2, 0.60), (3, 0.91), (4, 1.19), (5, 1.50)):
+    # least-squares slope through the origin of the points below: 16,47 g·A / 55 A² = 0,2995 g/A ≈ 0,300 g/A
+    ax.line([(0, 0), (5, 1.5)], HOT, 3)
+    ax.line([(5, 1.5), (6, 1.8)], HOT, 3, "7 5")
+    for I, dm in ((1, 0.27), (2, 0.64), (3, 0.87), (4, 1.24), (5, 1.47)):
         ax.point(I, dm, CURRENT)
     return f.svg()
 
