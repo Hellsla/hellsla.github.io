@@ -25,7 +25,7 @@
 **Kaava:** $N_g = N_0 k^g$
 **Muunnokset:** Ei tarvita: neutronien määrä ja kasvukerroin ovat paljaita lukuja.
 **Sijoitus:** $N_{10} = 1000 \cdot 0{,}90^{10} = 1000 \cdot 0{,}34868 = 348{,}68$
-**Vastaus:** noin $349$ neutronia; määrä on keskiarvo, koska yksittäisten neutronien kohtalo on satunnainen.
+**Vastaus:** $349$ neutronia, ja määrä on keskiarvo, koska yksittäisten neutronien kohtalo on satunnainen.
 **Järkevyys:** Joka sukupolvessa katoaa $10\,\%$ neutroneista. Jos vähennys olisi aina $100$ neutronia, määrä olisi nolla, mutta $10\,\%$ lasketaan yhä pienemmästä määrästä, joten jäljellä on vielä noin kolmannes.
 
 ## fy8-11-L1-04
@@ -36,7 +36,7 @@
 **Muunnokset:** $1\,\text{u} = 931{,}5\,\tfrac{\text{MeV}}{c^2}$, joten $c^2$ supistuu ja energia saadaan megaelektronivoltteina.
 **Sijoitus:** $Q = (4{,}0282036\,\text{u} - 4{,}0246942\,\text{u})\,c^2 = 0{,}0035094\,\text{u} \cdot c^2 = 0{,}0035094 \cdot 931{,}5\,\tfrac{\text{MeV}}{c^2} \cdot c^2 = 3{,}2690\,\text{MeV}$
 **Vastaus:** $3{,}27\,\text{MeV}$, kolme merkitsevää numeroa; massaero $0{,}0035094\,\text{u}$ on laskettu riittävän tarkasti.
-**Järkevyys:** Massaero on noin $0{,}0035\,\text{u}$, ja $0{,}0035 \cdot 1000\,\text{MeV} = 3{,}5\,\text{MeV}$. Tulos on noin viidesosa deuteriumin ja tritiumin fuusion energiasta, mikä selittää, miksi voimaloihin suunnitellaan juuri tritiumia.
+**Järkevyys:** Massaero on noin $0{,}0035\,\text{u}$, ja $0{,}0035 \cdot 1000\,\text{MeV} = 3{,}5\,\text{MeV}$. Tulos on noin viidesosa deuteriumin ja tritiumin fuusion energiasta, mikä on yksi syy siihen, että voimaloihin suunnitellaan juuri tritiumia.
 
 ## fy8-11-L1-05
 **Annettu:** neutronin massa $m_\text{n} = 1{,}0086649\,\text{u}$
@@ -46,7 +46,7 @@
 **Muunnokset:** $1\,\text{u} = 931{,}5\,\tfrac{\text{MeV}}{c^2}$, joten massa kerrotaan luvulla $931{,}5\,\tfrac{\text{MeV}}{c^2}$ ja $c^2$ supistuu.
 **Sijoitus:** $E = 1{,}0086649\,\text{u} \cdot c^2 = 1{,}0086649 \cdot 931{,}5\,\tfrac{\text{MeV}}{c^2} \cdot c^2 = 939{,}57\,\text{MeV}$
 **Vastaus:** $939{,}6\,\text{MeV}$, neljä merkitsevää numeroa kuten muuntokertoimessa $931{,}5\,\tfrac{\text{MeV}}{c^2}$.
-**Järkevyys:** Neutronin massa on hieman yli $1\,\text{u}$, joten energian on oltava hieman yli $931{,}5\,\text{MeV}$. Se on noin viisi kertaa yhden fission energia, mikä näyttää, että fissiossa muuttuu energiaksi vain pieni osa massasta.
+**Järkevyys:** Neutronin massa on hieman yli $1\,\text{u}$, joten energian on oltava hieman yli $931{,}5\,\text{MeV}$. Se on noin viisi kertaa yhden fission energia. Fission noin $200\,\text{MeV}$ vastaa siis vain noin $0{,}2\,\text{u}$:n massan pienenemistä, alle $0{,}1\,\%$ uraaniatomin massasta.
 
 ## fy8-11-L2-01
 **Annettu:** lämpöteho $P = 4300\,\text{MW}$, aika $t = 365\,\text{d}$, valon nopeus $c = 2{,}998 \cdot 10^{8}\,\tfrac{\text{m}}{\text{s}}$
@@ -91,7 +91,7 @@
 ## fy8-11-L3-01
 **Annettu:** lämpöteho $P = 4300\,\text{MW}$, yhden fission energia $Q = 200\,\text{MeV}$, aika $t = 1\,\text{d}$, uraani-235:n atomimassa $235{,}0439282\,\text{u}$, $1\,\text{u} = 1{,}66054 \cdot 10^{-27}\,\text{kg}$
 **Kysytty:** vuorokaudessa fissioituvan uraani-235:n massa $m$ kilogrammoina
-**Periaate:** Lämpöteho on fissioissa vapautuva energia aikayksikössä, joten fissioiden määrä on vapautunut energia jaettuna yhden fission energialla. Jokainen fissio kuluttaa yhden uraani-235-atomin, joten massa on fissioiden määrä kertaa atomin massa.
+**Periaate:** Tehtävän oletuksen mukaan kaikki lämpöteho syntyy uraani-235:n fissioista (todellisessa reaktorissa osa tulee plutonium-239:n fissioista). Lämpöteho on fissioissa vapautuva energia aikayksikössä, joten fissioiden määrä on vapautunut energia jaettuna yhden fission energialla. Jokainen fissio kuluttaa yhden uraani-235-atomin, joten massa on fissioiden määrä kertaa atomin massa.
 **Kaava:** $Pt = NQ$, josta $N = \dfrac{Pt}{Q}$ ja $m = N m_\text{U} = \dfrac{Pt\,m_\text{U}}{Q}$
 **Muunnokset:** $P = 4300 \cdot 10^{6}\,\text{W}$; $t = 24 \cdot 3600\,\text{s} = 86\,400\,\text{s}$; $Q = 200 \cdot 10^{6} \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 3{,}204 \cdot 10^{-11}\,\text{J}$; $m_\text{U} = 235{,}0439282 \cdot 1{,}66054 \cdot 10^{-27}\,\text{kg} = 3{,}9030 \cdot 10^{-25}\,\text{kg}$
 **Sijoitus:** $N = \dfrac{4300 \cdot 10^{6}\,\text{W} \cdot 86\,400\,\text{s}}{3{,}204 \cdot 10^{-11}\,\text{J}} = 1{,}1596 \cdot 10^{25}$, joten $m = 1{,}1596 \cdot 10^{25} \cdot 3{,}9030 \cdot 10^{-25}\,\text{kg} = 4{,}5257\,\text{kg}$
@@ -106,7 +106,7 @@
 **Muunnokset:** $1\,\text{u} = 931{,}5\,\tfrac{\text{MeV}}{c^2}$ ja $1\,\text{MeV} = 10^{6} \cdot 1{,}602 \cdot 10^{-19}\,\text{J}$
 **Sijoitus:** $Q = (4{,}0313000\,\text{u} - 4{,}0026033\,\text{u})\,c^2 = 0{,}0286967 \cdot 931{,}5\,\text{MeV} = 26{,}731\,\text{MeV} = 26{,}731 \cdot 10^{6} \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 4{,}2823 \cdot 10^{-12}\,\text{J}$, joten $\dfrac{N}{t} = \dfrac{3{,}83 \cdot 10^{26}\,\tfrac{\text{J}}{\text{s}}}{4{,}2823 \cdot 10^{-12}\,\text{J}} = 8{,}9438 \cdot 10^{37}\,\tfrac{1}{\text{s}}$
 **Vastaus:** $8{,}94 \cdot 10^{37}\,\tfrac{1}{\text{s}}$, kolme merkitsevää numeroa kuten säteilytehossa $3{,}83 \cdot 10^{26}\,\text{W}$.
-**Järkevyys:** Arviolla $4 \cdot 10^{26}\,\text{W} : 4 \cdot 10^{-12}\,\text{J} = 10^{38}\,\tfrac{1}{\text{s}}$. Massaa muuttuu energiaksi $\tfrac{P}{c^2} \approx 4 \cdot 10^{9}\,\tfrac{\text{kg}}{\text{s}}$, mikä on Auringon massaan nähden mitätön.
+**Järkevyys:** Arviolla $4 \cdot 10^{26}\,\text{W} : 4 \cdot 10^{-12}\,\text{J} = 10^{38}\,\tfrac{1}{\text{s}}$. Auringon massa pienenee $\tfrac{P}{c^2} \approx 4 \cdot 10^{9}\,\tfrac{\text{kg}}{\text{s}}$, mikä on Auringon massaan nähden mitätön.
 
 ## fy8-11-L3-03
 **Annettu:** plutonium-239:n puoliintumisaika $T_{1/2} = 24\,100\,\text{a}$, aktiivisuus pienenee tuhannesosaan: $\tfrac{A}{A_0} = \tfrac{1}{1000}$

@@ -69,7 +69,7 @@
     {
       "id": "fy8-11-L2-04",
       "level": 2,
-      "text": "Reaktorin käynnistyksessä ketjun neutronimäärä kasvaa $40$ sukupolvessa $1000$:sta $5000$:een. Kasvukerroin $k$ pysyy koko ajan samana. Kuinka monta prosenttia neutronien määrä kasvaa sukupolvesta seuraavaan?",
+      "text": "Koejärjestelyssä ketjun neutronimäärä kasvaa $40$ sukupolvessa $1000$:sta $5000$:een. Kasvukerroin $k$ pysyy koko ajan samana. Kuinka monta prosenttia neutronien määrä kasvaa sukupolvesta seuraavaan?",
       "answer": 4.11,
       "unit": "%",
       "tolerance": 0.02
@@ -79,7 +79,7 @@
     {
       "id": "fy8-11-L3-01",
       "level": 3,
-      "text": "Olkiluoto 3:n reaktorin lämpöteho on $4300\\,\\text{MW}$. Kussakin uraani-235:n fissiossa vapautuu keskimäärin $200\\,\\text{MeV}$. Kuinka monta kilogrammaa uraani-235:tä fissioituu reaktorissa vuorokaudessa? Uraani-235:n atomimassa on $235{,}0439282\\,\\text{u}$, ja $1\\,\\text{u} = 1{,}66054 \\cdot 10^{-27}\\,\\text{kg}$.",
+      "text": "Olkiluoto 3:n reaktorin lämpöteho on $4300\\,\\text{MW}$. Kussakin uraani-235:n fissiossa vapautuu keskimäärin $200\\,\\text{MeV}$. Uraani-235:n atomimassa on $235{,}0439282\\,\\text{u}$, ja $1\\,\\text{u} = 1{,}66054 \\cdot 10^{-27}\\,\\text{kg}$. Oleta, että kaikki lämpöteho syntyy uraani-235:n fissioista. Kuinka monta kilogrammaa uraani-235:tä fissioituu reaktorissa vuorokaudessa?",
       "answer": 4.5,
       "unit": "kg",
       "tolerance": 0.02

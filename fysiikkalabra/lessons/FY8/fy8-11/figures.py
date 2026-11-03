@@ -31,7 +31,7 @@ def neutron(f, x, y, r=9):
     f.circle(x, y, r, NEUTRON, INK, 2)
 
 
-semf = LA.semf                                       # the smooth trend of E_s/A for A >= 16 (lesson-answers.py)
+semf = LA.semf                                       # the smooth trend of E_B/A for A >= 16 (lesson-answers.py)
 
 
 NAMED = [("H-2", r"{}^{2}\text{H}", "start", 10, 0), ("He-4", r"{}^{4}\text{He}", "start", 10, 28),
@@ -46,33 +46,36 @@ def sidosenergia():
             "funktiona, massaluku nollasta 240:een. Pisteet on laskettu atomimassoista: deuterium 1,1, helium-4 7,1, "
             "hiili-12 7,7, rauta-56 8,8, krypton-92 8,5, barium-141 8,3 ja uraani-235 7,6 megaelektronivolttia. Käyrä "
             "nousee jyrkästi kevyillä ytimillä, on korkeimmillaan raudan kohdalla ja laskee loivasti raskaita ytimiä kohti. "
-            "Vasemmalla nuoli kevyistä ytimistä ylöspäin: fuusio. Oikealla nuoli uraanista keskiraskaisiin ytimiin: fissio.")
+            "Vasemmalla nuoli kevyistä ytimistä viistosti oikealle ylöspäin kohti huippua: fuusio. Oikealla nuoli uraanista "
+            "viistosti vasemmalle ylöspäin keskiraskaisiin ytimiin: fissio.")
     ax = Axes(f, (96, 318), (500, 72), x=(0, 240), y=(0, 10), xticks=[40, 80, 120, 160, 200, 240], yticks=[2, 4, 6, 8, 10],
-              xlabel="A", ylabel=r"E_\text{s}/A\ (\text{MeV})")
+              xlabel="A", ylabel=r"E_\text{B}/A\ (\text{MeV})")
     ax.curve(semf, 16, 240, HEAT_LIGHT, 3)
     for key, tex, anc, dx, dy in NAMED:
         A = int(key.split("-")[1]); v = A_[f"bpn-{key}"]
         ax.point(A, v, HEAT)
         f.tex(ax.X(A) + dx, ax.Y(v) + dy, tex, anc)
-    # fusion: from the light nuclei upwards; fission: from uranium to the middle
-    f.block_arrow(ax.X(44), ax.Y(2.4), ax.X(44), ax.Y(6.2), GOOD_LIGHT, 14, 30, 22)
-    f.tex(ax.X(44) + 22, ax.Y(4.2), r"\text{fuusio}", "start", GOOD)
-    f.block_arrow(ax.X(226), ax.Y(5.8), ax.X(150), ax.Y(5.8), HEAT_LIGHT, 14, 30, 22)
-    f.tex(ax.X(188), ax.Y(4.9), r"\text{fissio}", "middle", HEAT)
+    # fusion: from the light nuclei up and right towards the peak; fission: from uranium up and left to the middle
+    f.block_arrow(ax.X(24), ax.Y(2.4), ax.X(56), ax.Y(6.4), GOOD_LIGHT, 14, 30, 22)
+    f.tex(ax.X(46), ax.Y(3.0), r"\text{fuusio}", "start", GOOD)
+    f.block_arrow(ax.X(226), ax.Y(5.4), ax.X(156), ax.Y(6.1), HEAT_LIGHT, 14, 30, 22)
+    f.tex(ax.X(192), ax.Y(4.5), r"\text{fissio}", "middle", HEAT)
     return f.svg()
 
 
 def sidosenergia_read():
-    """Tarkista 2: the same values on a finer grid, no arrows, for reading E_s/A at A = 118 and A = 236."""
+    """Tarkista 2: the same values on a finer grid, no arrows, for reading E_B/A at A = 118 and A = 236."""
     f = Fig("fy811-bpnr", 380, "Kuvaaja mittakaavassa: ytimen sidosenergia nukleonia kohti megaelektronivoltteina "
             "massaluvun funktiona, massaluku 20:stä 240:een, pystyakseli 7,0:sta 9,0:aan. Ruudukon väli on vaakasuunnassa "
             "10 ja pystysuunnassa 0,1 megaelektronivolttia. Käyrä on korkeimmillaan noin massaluvun 60 kohdalla ja laskee "
-            "loivasti raskaita ytimiä kohti.")
+            "loivasti raskaita ytimiä kohti. Pystyakselissa on katkosmerkki, koska akseli ei ala nollasta.")
     ax = Axes(f, (96, 318), (500, 72), x=(20, 240), y=(7.0, 9.0), xticks=list(range(30, 241, 10)),
-              yticks=[7.0 + 0.1 * k for k in range(1, 21)], xlabel="A", ylabel=r"E_\text{s}/A\ (\text{MeV})",
+              yticks=[7.0 + 0.1 * k for k in range(1, 21)], xlabel="A", ylabel=r"E_\text{B}/A\ (\text{MeV})",
               xfmt=lambda v: fi(v) if v % 40 == 0 else "", yfmt=lambda v: fi(round(v, 1)) if abs(v * 2 - round(v * 2)) < 1e-9 else "",
               origin_label=False)
     f.tex(ax.x0 - 12, ax.y0, r"7{,}0", "end")
+    brk = f"M{ax.x0 - 8},{ax.y0 - 3} L{ax.x0 + 8},{ax.y0 - 8} M{ax.x0 - 8},{ax.y0 - 9} L{ax.x0 + 8},{ax.y0 - 14}"
+    f.path(brk, stroke=WHITE, w=5); f.path(brk, stroke=INK, w=2)          # break mark: the y axis starts at 7,0
     ax.curve(semf, 20, 240, HEAT, 3)
     return f.svg()
 
@@ -270,12 +273,12 @@ FIGURES = {"hero": hero, "sidosenergia": sidosenergia, "fissio": fissio, "ketju"
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
     "hero": "decorative",
-    "sidosenergia": "reveals: E_s/A of H-2, He-4, C-12, Fe-56, Kr-92, Ba-141, U-235 and the fusion/fission directions",
+    "sidosenergia": "reveals: E_B/A of H-2, He-4, C-12, Fe-56, Kr-92, Ba-141, U-235 and the fusion/fission directions",
     "fissio": "reveals: n + U-235 -> U-236 -> Ba-141 + Kr-92 + 3 n, about 200 MeV",
     "ketju": "reveals: k = 0,5 dies out, k = 1 steady, k = 2 grows (neutrons per generation)",
     "fuusio": "reveals: D + T -> He-4 + n, Q = 17,6 MeV",
     "massat": "reveals: the worked example's masses 236,0526 u and 235,8666 u and Q = 173 MeV",
     "reaktori": "safe: schematic of a pressurised-water plant (reactor, steam generator, turbine, generator, condenser, sea water)",
     "onkalo": "safe: schematic of the KBS-3 repository at about 430 m: copper canister, cast-iron insert, bentonite",
-    "sidosenergia-luku": "safe: E_s/A trend curve for A = 20–240 on a 10 × 0,1 MeV grid, no values marked",
+    "sidosenergia-luku": "safe: E_B/A trend curve for A = 20–240 on a 10 × 0,1 MeV grid, no values marked",
 }

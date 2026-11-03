@@ -1,9 +1,9 @@
 VERDICT: DONE
 
-Drafted fy8-11 Fissio, fuusio ja ydinvoima.
-- lesson.md: Ydinajatus (E_s/A curve, fissio, ketjureaktio with N_g = N_0 k^g, ydinreaktori, fuusio + ITER, link to FY14 Road to Fusion), Kaava: Reaktioenergia (Q from atomic masses, 1 u = 931,5 MeV/c²), section Ydinvoima Suomessa (plants table with sources, Onkalo, jälkilämpö, balanced debate with IPCC 2014), staged example U-235 → Ba-141 + Kr-92 + 3n (173 MeV), misconceptions, summary; 9 figures incl. hero and task figure sidosenergia-luku.
-- New sim assets/sims/fy8/fy8-11 (generational chain reaction, control rods → k = 1,2 − 0,008 s, seeded), tests/sims/fy8-11.json, sim-spec.md, lang/fi.json sims.fy8-11.
-- inquiry.json: hook, retrieval, 2 predictions, 2 experiments, conclusion, Etsi virhe, societal explain task, ITER transfer task, 3 checks, exit.
-- exercises 5/4/3 with complete solutions; answers.py, lesson-answers.py (AME2020 masses, sim model replica).
-- glossary: fissio, fuusio, ketjureaktio, ydinreaktori.
-Facts to verify before publication: Onkalo licence status (STUK lausunto 4.8.2026; government decision), plant start years, 39 % share 2024.
+Round-1 fixes.
+- lesson.md: E_s → E_B (text and figure labels); Onkalo: valtioneuvosto granted the operating licence in October 2026 to the end of 2070 (Yle, Posiva news 22.10.2026), disposal starts after STUK's inspection; weapons "noin 90 %:iin rikastettua uraania"; "annetuista atomimassoista (taulukko luvussa Massavaje …)"; hook 3,4 t; "siirrytään kuvaajalla ylöspäin"; "noin 1,5 % kivihiilen päästöistä"; "työnnetään syvemmälle".
+- inquiry.json: E_s → E_B (8); keskustelu model 1 weapons wording.
+- figures.py: E_B labels; fusion arrow up-right towards the peak, fission arrow up-left; break mark on the y axis of the task graph; descriptions updated; figures regenerated, figcat rebuilt.
+- exercises.json: L3-01 data before the question and the assumption "kaikki lämpöteho syntyy uraani-235:n fissioista"; L2-04 neutral context "Koejärjestelyssä".
+- solutions.md: L3-01 Periaate states the assumption; L1-03 answer wording; L1-04 "yksi syy"; L1-05 and L3-02 "massa pienenee" instead of "muuttuu energiaksi".
+Skipped (Polish): new L1 concept task, workload/optional tasks, uranium-mining sentence, koe-1 intro, L3-02 positron clause, L3-03 log step, answer 4.11/1.51 form.
