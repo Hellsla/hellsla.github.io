@@ -322,9 +322,9 @@ Magneettikentän voimakkuutta ja suuntaa kuvaa vektorisuure **magneettivuon tihe
 | jääkaappimagneetti | noin $5\,\text{mT}$ |
 | neodyymimagneetti | noin $0{,}5\,\text{T}$ |
 | magneettikuvaus | $1{,}5$–$3\,\text{T}$ |
-| laboratoriomagneetti | yli $45\,\text{T}$ |
+| laboratoriomagneetti | noin $45\,\text{T}$ |
 
-Maan kentän arvo ($52$–$53\,\mu\text{T}$ Etelä-Suomessa) on World Magnetic Model 2025 -mallista (NOAA ja British Geological Survey), sairaaloiden magneettikuvauslaitteiden kentät ovat tavallisesti $1{,}5\,\text{T}$ tai $3\,\text{T}$, ja yli $45\,\text{T}$:n jatkuvia kenttiä tuotetaan tutkimuslaboratorioissa, esimerkiksi National High Magnetic Field Laboratoryn hybridimagneetilla Yhdysvalloissa. Magneettien arvot ovat suuruusluokkia magneetin pinnalla.
+Maan kentän arvo ($52$–$53\,\mu\text{T}$ Etelä-Suomessa) on World Magnetic Model 2025 -mallista (NOAA ja British Geological Survey), sairaaloiden magneettikuvauslaitteiden kentät ovat tavallisesti $1{,}5\,\text{T}$ tai $3\,\text{T}$, ja noin $45\,\text{T}$:n jatkuvia kenttiä tuotetaan tutkimuslaboratorioissa, esimerkiksi National High Magnetic Field Laboratoryn hybridimagneetilla Yhdysvalloissa. Magneettien arvot ovat suuruusluokkia magneetin pinnalla.
 
 Kun samaan pisteeseen vaikuttaa kaksi magneettikenttää, kokonaiskenttä on niiden vektorisumma:
 ```latex

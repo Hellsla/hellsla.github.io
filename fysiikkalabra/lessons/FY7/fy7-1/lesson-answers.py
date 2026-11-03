@@ -37,7 +37,7 @@ def field(r_cm, phi, s=1, earth=True):
 # exp-1: on the axis (φ = 0), N pole east, Earth's field on: B_m and θ by distance
 for r in (10, 12, 14, 16, 20, 24):
     Bm, B, th = field(r, 0)
-    a[f"exp1-Bm-{r}"] = Bm                       # 30,0; 15,5; 9,15; 5,93; 2,87; 1,53 µT
+    a[f"exp1-Bm-{r}"] = Bm                       # B_m by distance, printed by the script
     a[f"exp1-th-{r}"] = th                       # 65,0°; 47,9°; 33,2°; 22,9°; 11,6°; 6,2°
 a["exp1-question"] = field(10, 0)[0] / field(20, 0)[0]          # B_m(10 cm) : B_m(20 cm) = 10,4
 a["exp1-q-readout"] = 30.0 / 2.9                                 # from the readout's rounded values: 10,3
@@ -48,7 +48,7 @@ a["pred1-quarter"] = 30.0 / 4                                     # 7,5 µT
 # exp-2: r = 14 cm, Earth's field off, N pole east: needle direction around the magnet
 for phi in (0, 45, 90, 135, 180, 270):
     Bm, B, th = field(14, phi, earth=False)
-    a[f"exp2-th-{phi}"] = th                      # 90°, 145°(?), −90°, …: printed
+    a[f"exp2-th-{phi}"] = th                      # needle directions around the magnet: printed
     a[f"exp2-Bm-{phi}"] = Bm                      # 9,15 µT on the axis, 3,43 µT beside the middle
 a["exp2-axis-side-ratio"] = field(14, 0, earth=False)[0] / field(14, 90, earth=False)[0]
 # flipped magnet (N pole west), on the axis east, Earth on
@@ -64,6 +64,7 @@ a["siirto-B"] = math.hypot(20, 26)                # 32,8 µT
 a["siirto-noB"] = deg(math.atan2(20, 14))         # mistake: magnet B left out, 55,0°
 a["siirto-noEarth"] = deg(math.atan2(20, 12))     # mistake: Earth left out, 59,0°
 a["siirto-inverted"] = deg(math.atan2(26, 20))    # mistake: tan θ inverted, 52,4°
-# exit ticket: 0,050 mT in µT
-a["exit-uT"] = 0.050e-3 / 1e-6                    # 50 µT
+# exit ticket: fridge magnet 5 mT in µT and against Earth's 52 µT
+a["exit-uT"] = 5e-3 / 1e-6                         # 5000 µT
+a["exit-ratio"] = 5000 / 52                        # about 96, i.e. about a hundred times
 print(json.dumps(a))
