@@ -23,6 +23,28 @@
     "kaukolämpö",
     "lauhdevoimalaitos"
   ],
+  "key_concepts": [
+    {
+      "term": "lämpövoimakone",
+      "explain": "Kone, joka muuttaa osan lämpönä saamastaan energiasta työksi, esimerkiksi automoottori tai voimalaitoksen turbiini."
+    },
+    {
+      "term": "hyötysuhde",
+      "explain": "Kertoo, kuinka suuri osa koneeseen tuodusta energiasta saadaan hyödyksi."
+    },
+    {
+      "term": "hukkalämpö",
+      "explain": "Lämpö, joka siirtyy koneesta tai voimalaitoksesta ympäristöön käyttämättä."
+    },
+    {
+      "term": "lämpöpumppu",
+      "explain": "Laite, joka siirtää työn avulla lämpöä kylmästä paikasta lämpimään, esimerkiksi ulkoilmasta taloon."
+    },
+    {
+      "term": "yhteistuotanto",
+      "explain": "Voimalaitos tuottaa samalla sekä sähköä että kaukolämpöä. Lauhduttimen lämpö, joka muuten menisi hukkaan, käytetään lämmitykseen."
+    }
+  ],
   "sim": true,
   "image": false
 }

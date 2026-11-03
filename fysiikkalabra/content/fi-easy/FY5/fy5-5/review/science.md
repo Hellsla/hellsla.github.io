@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 68ed6284989378b6
+CONTENT-HASH: 32e63de67a0a9c1b
 
 ## Blocking
 (none)
@@ -8,4 +8,4 @@ CONTENT-HASH: 68ed6284989378b6
 (none)
 
 ## Checked
-batch delta review: heading/meta renamed; references to fy5-4 updated in prior, feedbacks and the Moon-acceleration task text; data table unchanged. Every changed chapter reference names the renamed chapter that holds the cited content, and no old title remains.
+batch delta review: added meta.json key_concepts (Luvun tärkeät käsitteet) checked term by term against the lesson's own definitions, summary and the physics guardrails; no number, formula or choice changed. Terms: gravitaatiolaki (grows with the masses, falls fast with distance), gravitaatiovakio and gravitaatiokenttä agree with the lesson.

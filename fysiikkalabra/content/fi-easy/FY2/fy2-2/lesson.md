@@ -367,9 +367,9 @@
 
 ## Ydinajatus
 ### Energia muuttuu muodosta toiseen
-Energia on suure. Sen avulla kuvataan, mitä systeemissä voi tapahtua. Energia esiintyy eri muodoissa. Muotoja ovat esimerkiksi mekaaninen energia, kemiallinen energia, sähköenergia, lämpöenergia, säteily ja ydinenergia (luku *Energialajit ja energian säilyminen*). Arjessa energia on harvoin vain yhdessä muodossa. Se muuttuu muodosta toiseen monessa vaiheessa. Vaiheet muodostavat ketjun.
+Energia on suure. Sen avulla kuvataan, mitä systeemissä eli tarkasteltavassa kohteessa voi tapahtua. Esimerkiksi liikkuvalla pyörällä on energiaa. Siksi se voi lämmittää jarrut, kun jarrutat. Energia esiintyy eri muodoissa. Muotoja ovat esimerkiksi mekaaninen energia, kemiallinen energia, sähköenergia, lämpöenergia, säteily ja ydinenergia (luku *Energialajit ja energian säilyminen*). Arjessa energia on harvoin vain yhdessä muodossa. Se muuttuu muodosta toiseen monessa vaiheessa. Vaiheet seuraavat toisiaan kuin ketjun lenkit. Siksi puhutaan **energiaketjusta**.
 
-Pyöräilijän ketju alkaa Auringosta. Kasvi sitoo säteilyenergian kemialliseksi energiaksi. Kemiallinen energia päätyy kauraan ja aamupuuroon. Lihakset muuttavat osan puuron kemiallisesta energiasta pyörän liikkeeksi. Kun pysähdyt, liike-energia muuttuu lopulta renkaiden, jarrujen ja ilman lämpöenergiaksi.
+Pyöräilijän ketju alkaa Auringosta. Kasvi ottaa talteen Auringon säteilyenergiaa ja muuttaa sen kemialliseksi energiaksi. Kemiallinen energia päätyy kauraan ja aamupuuroon. Lihakset muuttavat osan puuron kemiallisesta energiasta pyörän liikkeeksi. Kun pysähdyt, liike-energia muuttuu lopulta renkaiden, jarrujen ja ilman lämpöenergiaksi.
 
 <svg data-fig="ketju" viewBox="0 0 600 370" role="img" aria-label="Kaavakuva: energiaketju Auringosta pyöräilyyn. Aurinko lähettää säteilyenergiaa. Kasvi (kaura) sitoo sen kemialliseksi energiaksi ruokaan. Lihakset muuttavat osan siitä pyörän liikkeeksi. Loppu muuttuu lämpöenergiaksi. Joka vaiheessa osa energiasta siirtyy lämpönä ympäristöön (oranssit nuolet alas). Lopuksi myös liike-energia muuttuu lämpöenergiaksi. Nuolten pituus ei ole mittakaavassa." style="max-width:100%;font-size:24px">
   <line x1="106" y1="100" x2="120" y2="100" stroke="#e8590c" stroke-width="3" stroke-linecap="round"/>

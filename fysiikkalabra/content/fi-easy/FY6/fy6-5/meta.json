@@ -17,6 +17,28 @@
     "haarautumispiste",
     "potentiaali"
   ],
+  "key_concepts": [
+    {
+      "term": "haarautumispiste",
+      "explain": "Kohta, jossa johdin jakautuu haaroiksi. Siinä virta jakautuu."
+    },
+    {
+      "term": "Kirchhoffin virtalaki",
+      "explain": "Haarautumispisteeseen tulevien virtojen summa on yhtä suuri kuin siitä lähtevien virtojen summa."
+    },
+    {
+      "term": "silmukka",
+      "explain": "Virtapiirin suljettu reitti, joka palaa lähtökohtaansa."
+    },
+    {
+      "term": "Kirchhoffin jännitelaki",
+      "explain": "Potentiaalin nousujen ja laskujen summa silmukassa on nolla."
+    },
+    {
+      "term": "potentiaali",
+      "explain": "Kohdan jännite valittuun nollakohtaan nähden."
+    }
+  ],
   "sim": true,
   "solutions": "all",
   "image": false

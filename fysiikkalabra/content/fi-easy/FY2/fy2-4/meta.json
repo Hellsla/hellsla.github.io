@@ -14,6 +14,20 @@
     "hyötyenergia",
     "häviöt"
   ],
+  "key_concepts": [
+    {
+      "term": "hyötysuhde",
+      "explain": "Kertoo, kuinka suuri osa laitteeseen otetusta energiasta muuttuu hyödylliseen muotoon."
+    },
+    {
+      "term": "hyötyenergia",
+      "explain": "Se osa energiasta, joka muuttuu siihen muotoon, jota laitteelta halutaan. Lampussa hyötyenergia on valo."
+    },
+    {
+      "term": "häviöt",
+      "explain": "Energia, joka muuttuu hyödyttömään muotoon, yleensä lämmöksi. Häviöt eivät ole kadonnutta energiaa."
+    }
+  ],
   "sim": true,
   "solutions": "all",
   "image": false

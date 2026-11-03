@@ -1,10 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 39d2dd5e2e38e730
+CONTENT-HASH: ee08d6fd321e1cf2
 
 ## Blocking
+(none)
 
 ## Polish
-- A goal keeps a short second sentence of explanation after the -maan/-mään clause; it reads acceptably in Selkeä suomi, but folding it into the clause would be tidier.
+- meta.json key_concepts "lämpö" and "lämpömäärä" overlap — merge: "Lämpö on energiaa, joka siirtyy lämpimämmästä kappaleesta kylmempään. Lämpömäärä kertoo, kuinka paljon energiaa siirtyy."
+- meta.json "termodynamiikan ensimmäinen pääsääntö" — abstract for S2 ("liike- ja potentiaalienergia eivät muutu"); simpler: "Systeemin sisäenergia kasvaa sen verran kuin siihen tulee energiaa lämpönä ja työnä."
 
 ## Checked
-batch delta review: every `learn` goal completes "Tällä tunnilla opit" with a lowercase -maan/-mään verb in parallel form; the skill, demand, key terms, symbols and numbers match the previous wording; plain Selkeä suomi.
+batch delta review: key_concepts judged against NOTES.md §12 and the editorial standard (central concepts, plain 1–2 sentence explanations, natural Finnish, physics unchanged); lesson rewordings, photos and captions, experiment/prompt wording and solution diagrams in this diff read clearly and agree with the tasks they touch.

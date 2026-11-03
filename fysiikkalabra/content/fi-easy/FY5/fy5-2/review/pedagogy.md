@@ -1,8 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 0391b8113be17541
+CONTENT-HASH: e3e3fdce6c1f6d9e
 ## Blocking
 
 ## Polish
 
 ## Checked
-batch delta review: new lesson title and renamed chapter cross-references (prior lists, feedback, theory text) read in context; the names match the new titles of the target lessons, wording and Finnish unchanged otherwise, no stale old titles left in the lesson files.
+- Delta: meta.json key_concepts "painopiste" now reads "Tasa-aineisen ja symmetrisen kappaleen painopiste on sen keskellä."
+- The new wording matches the lesson's own definition word for word (lesson.md, Ydinajatus: "Tasa-aineisen ja symmetrisen kappaleen, kuten tasapaksun lankun, painopiste on keskellä").
+- The added condition removes the oversimplification that any symmetric body has its centre of gravity at the centre. The sentence is still short S2 Finnish, and "tasa-aineinen" is explained by the lesson's example.
+- The other key concepts are unchanged since the passed batch review.

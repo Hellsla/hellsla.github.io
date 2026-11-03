@@ -14,6 +14,20 @@
     "impulssi",
     "impulssiperiaate"
   ],
+  "key_concepts": [
+    {
+      "term": "liikemäärä",
+      "explain": "Massan ja nopeuden tulo. Liikemäärällä on suuruus ja suunta."
+    },
+    {
+      "term": "impulssi",
+      "explain": "Voiman ja sen vaikutusajan tulo. Impulssi muuttaa kappaleen liikemäärää."
+    },
+    {
+      "term": "impulssiperiaate",
+      "explain": "Kokonaisvoiman impulssi on yhtä suuri kuin liikemäärän muutos."
+    }
+  ],
   "sim": true,
   "solutions": "all",
   "image": false

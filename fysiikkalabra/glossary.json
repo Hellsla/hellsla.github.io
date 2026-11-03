@@ -3918,5 +3918,27 @@
       "orbitaali"
     ],
     "locked": false
+  },
+  {
+    "term": "ilmanvastus",
+    "definition": "Väliaineen vastus ilmassa: voima, jolla ilma vastustaa siinä liikkuvan kappaleen liikettä. Se kasvaa, kun nopeus kasvaa. Merkintä $\\overline{F}_\\text{v}$.",
+    "lessons": [
+      "fy4-14"
+    ],
+    "see_also": [
+      "väliaineen vastus",
+      "rajanopeus"
+    ]
+  },
+  {
+    "term": "pinta-ala",
+    "definition": "Pinnan koko. Pinta-alan SI-yksikkö on neliömetri, m². Paine on voima pinta-alaa kohti, joten sama voima pienelle pinta-alalle antaa suuren paineen.",
+    "lessons": [
+      "fy3-4"
+    ],
+    "see_also": [
+      "paine"
+    ],
+    "locked": false
   }
 ]

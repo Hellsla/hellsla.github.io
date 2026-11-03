@@ -14,6 +14,20 @@
     "pituuden lämpötilakerroin",
     "tilavuuden lämpötilakerroin"
   ],
+  "key_concepts": [
+    {
+      "term": "lämpölaajeneminen",
+      "explain": "Kun aineen lämpötila nousee, sen pituus tai tilavuus kasvaa yleensä hieman."
+    },
+    {
+      "term": "pituuden lämpötilakerroin",
+      "explain": "Kertoo, kuinka suuren osan pituudestaan kappale pitenee, kun lämpötila nousee yhdellä kelvinillä."
+    },
+    {
+      "term": "tilavuuden lämpötilakerroin",
+      "explain": "Kertoo, kuinka suuren osan tilavuudestaan aine laajenee, kun lämpötila nousee yhdellä kelvinillä."
+    }
+  ],
   "sim": true,
   "image": false
 }

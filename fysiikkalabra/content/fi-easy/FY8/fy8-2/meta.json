@@ -18,6 +18,28 @@
     "energiatila",
     "fluoresenssi"
   ],
+  "key_concepts": [
+    {
+      "term": "viivaspektri",
+      "explain": "Spektri, jossa on vain tiettyjä aallonpituuksia. Kuuma ohut kaasu antaa viivaspektrin."
+    },
+    {
+      "term": "emissiospektri",
+      "explain": "Kirkkaat värilliset viivat, jotka kaasu lähettää. Jokaisella alkuaineella on omat viivansa."
+    },
+    {
+      "term": "absorptiospektri",
+      "explain": "Tummat viivat jatkuvassa spektrissä, kun valo kulkee kaasun läpi ja kaasu imee tietyt aallonpituudet."
+    },
+    {
+      "term": "energiatila",
+      "explain": "Atomin sallittu energia. Atomilla voi olla vain tiettyjä energioita."
+    },
+    {
+      "term": "fluoresenssi",
+      "explain": "Aine absorboi lyhytaaltoista valoa, yleensä ultraviolettia, ja lähettää heti pidempiaaltoista näkyvää valoa."
+    }
+  ],
   "sim": true,
   "solutions": "all",
   "image": false

@@ -1,13 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: b490439b684add3f
-
+CONTENT-HASH: 48cfd52191926c87
 ## Blocking
 
 ## Polish
 
-
 ## Checked
-- Same structure as Finnish: 13 headings, 448 lines, 154 inquiry maths items, same stages, predictions, options and feedback; nothing dropped.
-- Learning goals complete (3), plain Finnish verbs after "Tällä tunnilla opit".
-- Clearly rewritten plain Finnish: short sentences, one idea each, terms explained at first use; not a copy of the Finnish.
-- Re-review after the concept fix (internal energy of the filament, transferred as heat): lesson.md, kertaus option and feedbacks, pred-1 feedback, johtopaatos criterion and model match the Finnish in meaning and numbers; no physics changed. Correct kertaus option stays about as long as the wrong ones.
+batch delta review: re-checked meta.json key_concepts after the fix. "jännite" now gives the lesson's own definition (energy per unit charge between two points), consistent with the exit ticket's question on 1,5 V. "sähkövirta" now matches the lesson ("varauksia liikkumaan samaan suuntaan"). The other three concepts are unchanged and read against lesson.md. The S2 Finnish is clear.

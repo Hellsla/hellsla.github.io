@@ -1,12 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 0b2d8154f98ba8a6
+CONTENT-HASH: fe7f595d5dc5d197
 
 ## Blocking
 (none)
 
 ## Polish
-- None.
+- none
 
 ## Checked
-- Delta review 2026-11-01 (commit 79af52c4 and learn list): the new `values` maps for the experiment panels and the learn-list wording, compared with the reviewed Finnish source.
-- inquiry.json: experiment `values` map (keys unchanged, plain Finnish values) gives the right terms; physics, numbers, answers and feedback unchanged and equal to the Finnish.
+- batch delta review, round 2 (diff cc7b2aeb..debc61a4): Boyle key concept now states fixed amount of gas and temperature, matching lesson line 120; no other content changed.

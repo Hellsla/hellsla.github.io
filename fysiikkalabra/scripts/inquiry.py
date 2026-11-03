@@ -521,6 +521,25 @@ def intro_html(intro, inquiry, n_opt, md):
     return f'<div class="intro"><div class="intro-head">{head}</div>{row}' + (f'<div class="intro-more">{more}</div>' if more else "") + '</div>'
 
 
+KEY_CONCEPTS = (3, 5)    # how many "Luvun tärkeät käsitteet" a Selkeä suomi lesson shows (teacher 2026-11-03)
+
+
+def key_concepts_html(lid, items, md):
+    """"Luvun tärkeät käsitteet" (teacher 2026-11-03, NOTES.md §12): the S2 vocabulary activity of a Selkeä suomi
+    lesson, between the opening and the first stage. meta.json "key_concepts" lists 3–5 {"term", "explain"}: the
+    Finnish physics term in bold and a short plain-Finnish explanation. The student writes the meanings in a notebook
+    in any language (teacher 2026-11-03: no note fields on the page). Voluntary and never assessed; no language is
+    asked or translated. Only a language whose lessons carry the list shows it (check_i18n.py: fi-easy only)."""
+    if not items: return ""
+    rows = []
+    for k in items:
+        term = k["term"][:1].upper() + k["term"][1:]   # a symbol in the term is LaTeX: "$(t,x)$-kuvaaja"
+        rows.append(f'<dt class="kc-term">{inline(md, term)}</dt><dd class="kc-explain">{inline(md, k["explain"])}</dd>')
+    return (f'<section class="kc" id="kasitteet" aria-labelledby="kc-{lid}-h"><h2 class="intro-h kc-h" id="kc-{lid}-h">{T("lesson.kc_title")} '
+            f'<span class="opt-tag">{T("lesson.kc_optional")}</span></h2><p class="kc-lead">{T("lesson.kc_lead")}</p>'
+            f'<dl class="kc-list">{"".join(rows)}</dl></section>')
+
+
 SENT = re.compile(r"(?<=[.!])\s+(?=[A-ZÅÄÖ])")
 
 
@@ -593,7 +612,7 @@ def render(folder, inquiry, parts, md):
         by_stage["selita"].append({"id": "theory-rest", "type": "theory", "stage": "selita", "sections": leftover})
     elif leftover:                                     # append to the last theory activity in Teoriatiivistelmä
         last = [a for a in by_stage["selita"] if a["type"] == "theory"][-1]; last["sections"] = list(last["sections"]) + leftover
-    body = [intro_html(parts["intro"], inquiry, sum(1 for a in acts if a.get("optional")), md)]
+    body = [intro_html(parts["intro"], inquiry, sum(1 for a in acts if a.get("optional")), md) + parts.get("concepts", "")]
 
     def act(a):
         t, aid = a["type"], a["id"]

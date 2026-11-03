@@ -18,6 +18,28 @@
     "eristetty systeemi",
     "joule"
   ],
+  "key_concepts": [
+    {
+      "term": "energia",
+      "explain": "Suure, joka kertoo, kuinka paljon jokin voi saada aikaan muutosta, esimerkiksi liikettä tai lämpenemistä. Yksikkö on joule."
+    },
+    {
+      "term": "energialaji",
+      "explain": "Energian muoto, esimerkiksi liike-energia, potentiaalienergia tai lämpöenergia."
+    },
+    {
+      "term": "mekaaninen energia",
+      "explain": "Potentiaalienergian ja liike-energian summa."
+    },
+    {
+      "term": "energian säilyminen",
+      "explain": "Energiaa ei synny eikä katoa. Se vain muuttaa muotoaan tai siirtyy paikasta toiseen."
+    },
+    {
+      "term": "eristetty systeemi",
+      "explain": "Kokonaisuus, johon ei tule energiaa ulkopuolelta ja josta ei lähde energiaa pois."
+    }
+  ],
   "sim": true,
   "solutions": "all",
   "image": false
