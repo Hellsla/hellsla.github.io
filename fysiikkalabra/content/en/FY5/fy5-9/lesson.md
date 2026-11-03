@@ -1,4 +1,4 @@
-# Simple harmonic motion and the pendulum
+# The mass–spring oscillator and the pendulum
 
 > **Why** does every swing, pendulum and body bobbing on a spring oscillate at its own pace, and what determines that pace?
 
@@ -123,7 +123,7 @@
 </svg>
 
 ## Key idea
-In the chapter *Harmonic force and elastic potential energy* the force of a spring was $F = -kx$: it is directly proportional to the displacement $x$ from the equilibrium position and always points towards the equilibrium position. When a body is pulled aside and released, the force accelerates it towards the equilibrium position. At the equilibrium position the force is zero, but the body has speed, so it carries on to the other side. There the force slows it down, stops it at the extreme position and turns it back. The motion repeats itself in the same way: the body oscillates. When the oscillation is caused by a harmonic force, the motion is called **simple harmonic motion**.
+In the chapter *Spring force and spring energy* the force of a spring was $F = -kx$: it is directly proportional to the displacement $x$ from the equilibrium position and always points towards the equilibrium position. When a body is pulled aside and released, the force accelerates it towards the equilibrium position. At the equilibrium position the force is zero, but the body has speed, so it carries on to the other side. There the force slows it down, stops it at the extreme position and turns it back. The motion repeats itself in the same way: the body oscillates. When the oscillation is caused by a harmonic force, the motion is called **simple harmonic motion**.
 
 <svg data-fig="jousi" viewBox="0 0 600 400" role="img" aria-label="Diagram, not to scale: a body on a frictionless horizontal surface is attached to a wall with a spring. Three moments one below the other. At the top the body is at the extreme position x = A to the right of the equilibrium position: the spring force and the acceleration point left towards the equilibrium position, and the speed is zero. In the middle the body passes the equilibrium position x = 0 moving left: the force and the acceleration are zero and the speed is greatest. At the bottom the body is at the extreme position x = −A: the force and the acceleration point right, and the speed is zero." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy59-wood" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9c98a"/><stop offset="1" stop-color="#d9b26a"/></linearGradient></defs>
@@ -169,7 +169,7 @@ In the chapter *Harmonic force and elastic potential energy* the force of a spri
 The figure shows the rhythm of the motion. At the extreme positions $x = A$ and $x = -A$ the speed is zero, but the force and the acceleration are greatest. At the equilibrium position the situation is the opposite: the force and the acceleration are zero and the speed is greatest. The acceleration always points towards the equilibrium position, in the same direction as the force.
 
 ### Position as a function of time
-When the position of a simple harmonic oscillator is plotted as a function of time, the result is a sine-shaped curve. The concepts of the chapter *Periodic motion* can be seen in it directly. The amplitude $A$ is the greatest displacement from the equilibrium position. The period $T$ is the time in which the body makes one complete oscillation back and forth and returns to the same point moving in the same direction, for example the interval between two successive peaks. The frequency $f = \tfrac{1}{T}$ tells us the number of oscillations per second.
+When the position of a simple harmonic oscillator is plotted as a function of time, the result is a sine-shaped curve. The concepts of the chapter *Describing oscillation: period, frequency and amplitude* can be seen in it directly. The amplitude $A$ is the greatest displacement from the equilibrium position. The period $T$ is the time in which the body makes one complete oscillation back and forth and returns to the same point moving in the same direction, for example the interval between two successive peaks. The frequency $f = \tfrac{1}{T}$ tells us the number of oscillations per second.
 
 <svg data-fig="xt" viewBox="0 0 600 350" role="img" aria-label="Diagram: the position x of simple harmonic motion as a function of time t is a sine-shaped curve. The curve starts from the extreme position x = A, goes to the extreme position x = −A and returns to A. The amplitude A is marked from the equilibrium position x = 0 to the peak of the curve, and the period T between two successive peaks. The graph shows two and a half cycles." style="max-width:100%;font-size:24px">
   <line x1="80" y1="310" x2="80" y2="191" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
@@ -195,6 +195,8 @@ When the position of a simple harmonic oscillator is plotted as a function of ti
   <line x1="230" y1="96" x2="230" y2="96" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="380" y1="96" x2="380" y2="96" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
 </svg>
+
+<figure class="unit-photo"><img src="pics/fy5/foucault-pendulum.webp" alt="A shiny metal ball hangs on a thin wire above a colourful round base. Small numbered pegs stand at the edge of the base."><figcaption>A Foucault pendulum at the Saitama Municipal Youth Astronomical Museum in Japan. For small swings, the period of a pendulum does not depend on the amplitude but only on the length of the pendulum and on the acceleration due to gravity.</figcaption></figure>
 
 ### Why the amplitude does not change the period
 A simple harmonic oscillator has a remarkable property. If the amplitude is doubled, the distance travelled in one cycle doubles. At the same time the force at every corresponding point also doubles, because $F$ is proportional to the displacement. A doubled force gives a doubled acceleration, and in the same time a doubled acceleration makes the speed grow twice as much. So the longer distance is covered at a greater speed, and the time taken is the same. The period of a simple harmonic oscillator does not depend on the amplitude. It depends only on how large the mass in motion is and how stiff the spring that restores it is.

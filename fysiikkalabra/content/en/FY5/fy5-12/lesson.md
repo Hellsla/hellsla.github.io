@@ -1,4 +1,4 @@
-# Interference of waves
+# When waves combine: superposition and interference
 
 > **Why** does the sound sometimes get louder and sometimes almost vanish when you walk in front of two loudspeakers playing the same tone?
 
@@ -121,10 +121,10 @@ Superposition is clearest when two equally large pulses of the same shape are se
   <path d="M402,374 L413,369 L413,379 Z" fill="#7048e8" stroke-linejoin="round"/>
 </svg>
 
-The combined effect of waves at the same place is called **interference**. When the waves strengthen each other and the displacement of the resultant wave grows, the interference is **constructive**. When they weaken each other, the interference is **destructive**. In the chapter *Mechanical waves* the displacement of a wave varied with place and time; the principle of superposition holds at every place and at every moment separately.
+The combined effect of waves at the same place is called **interference**. When the waves strengthen each other and the displacement of the resultant wave grows, the interference is **constructive**. When they weaken each other, the interference is **destructive**. In the chapter *How waves form and travel* the displacement of a wave varied with place and time; the principle of superposition holds at every place and at every moment separately.
 
 ### Two sources in phase
-In a ripple tank two small dippers can be attached to the same vibrator, which moves them up and down in step. The sources then have the same frequency, and they are in phase: each sends out a crest at the same moment. A circular wave spreads from each source, as after a gap in the chapter *Reflection and diffraction of waves*. Two loudspeakers connected to the same signal generator work in the same way for sound waves.
+In a ripple tank two small dippers can be attached to the same vibrator, which moves them up and down in step. The sources then have the same frequency, and they are in phase: each sends out a crest at the same moment. A circular wave spreads from each source, as after a gap in the chapter *A wave meets an obstacle or a gap*. Two loudspeakers connected to the same signal generator work in the same way for sound waves.
 
 The waves meet at every point of the tank. At some points a crest always meets a crest and a trough a trough, and the water vibrates strongly. At others a crest always meets a trough, and the water stays almost at rest. The water is at rest along whole lines, which are called **nodal lines**. Between them are the lines of constructive interference. The pattern stays in place even though the waves keep travelling, because the frequency of the sources is the same and the phase difference between them does not change. If the frequencies were slightly different, the strong and weak places would drift.
 
@@ -209,6 +209,8 @@ The amplitude of the resultant wave is then the difference of the amplitudes. Eq
   <foreignObject x="396.5" y="347.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{destructive}$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy5/ripple-tank-two-sources.webp" alt="A dark picture of a water surface. Two sets of rings are at the top, and below them the rings form a checkered pattern. A bright spot of light is in the middle."><figcaption>Two-source interference in a ripple tank. The circular waves from the sources meet, and in some directions they reinforce each other and in others they weaken each other. The bright spot is a reflection of the lamp.</figcaption></figure>
+
 ### The lines of the pattern
 Each number $n = 1, 2, \ldots$ corresponds to one line in the pattern on each side of the perpendicular bisector; $n = 0$ is, in the constructive case, the perpendicular bisector itself and, in the destructive case, the two nodal lines nearest to the perpendicular bisector. On the perpendicular bisector of the sources, that is, the line whose every point is equally far from both sources, the path difference is zero. There the interference is constructive at all frequencies. The path difference cannot be greater than the distance $d$ between the sources, because one side of a triangle is shorter than the sum of the other two. So there are only a finite number of lines. When the wavelength gets smaller, that is, the frequency grows, the conditions are met at smaller path differences, and the lines get closer together.
 
@@ -242,7 +244,7 @@ The principle of superposition works in the other direction too. Every periodic 
   <rect x="457.5" y="308.5" width="18" height="21.5" fill="#2b8a3e"/>
 </svg>
 
-The upper part of the figure shows three sine waves with frequencies $220\,\text{Hz}$, $660\,\text{Hz}$ and $1100\,\text{Hz}$, and their sum is almost a square wave. The spectrum shows only these three frequencies. The Fourier transform is useful in analysing sound: from the spectrum you can see why a piano and a violin playing the same note sound different, and from noise you can see which frequencies dominate it. Measuring programs calculate the spectrum with the fast Fourier transform (FFT), which is used in the chapter *Properties of sound*.
+The upper part of the figure shows three sine waves with frequencies $220\,\text{Hz}$, $660\,\text{Hz}$ and $1100\,\text{Hz}$, and their sum is almost a square wave. The spectrum shows only these three frequencies. The Fourier transform is useful in analysing sound: from the spectrum you can see why a piano and a violin playing the same note sound different, and from noise you can see which frequencies dominate it. Measuring programs calculate the spectrum with the fast Fourier transform (FFT), which is used in the chapter *Sound as a wave: pitch, timbre and the Doppler effect*.
 
 ## Worked example
 Two loudspeakers are connected to the same signal generator, so they play in phase the same sound, whose frequency is $680\,\text{Hz}$. The speed of sound in air is $340\,\text{m/s}$. A listener is $4.25\,\text{m}$ from one loudspeaker and $3.00\,\text{m}$ from the other. Does the listener hear a loud or a weak sound?
@@ -253,7 +255,7 @@ Two loudspeakers are connected to the same signal generator, so they play in pha
 
 <!-- vaihe -->
 
-**Principle.** The loudspeakers are in phase and play the same frequency, so the type of interference is decided by the ratio of the path difference to the wavelength. The wavelength follows from the speed and frequency of the wave, $v = f\lambda$ (chapter *Mechanical waves*).
+**Principle.** The loudspeakers are in phase and play the same frequency, so the type of interference is decided by the ratio of the path difference to the wavelength. The wavelength follows from the speed and frequency of the wave, $v = f\lambda$ (chapter *How waves form and travel*).
 
 <!-- vaihe -->
 

@@ -1,19 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: d141c14dfc9f5692
-
+CONTENT-HASH: ccf3af484bc43927
 ## Blocking
-- none
+(none)
 
 ## Polish
-- [Minor] fig-3 (asteikko) — grey source labels are pale on cream at 390 px — darken a step.
-- [Minor] fig-4 (kuvaaja) — the 90,0 label sits slightly high and right of its point, away from the dashed guides; acceptable, could be nudged down.
-- [Minor] tarkista-1280 — a chosen wrong option has the same green outline as a correct one (shared quiz style, interface owner).
+- Alt-tekstissä "62 dB" on tavallista tekstiä; alt-attribuutissa LaTeX ei renderöidy, joten tämä on asianmukaista. Kuvatekstissä luku on LaTeXilla.
 
 ## Checked
-- fig-4-390 and theory-1280-3: curve now starts at r = 1 m, all four points labelled, labels clear of the curve.
-- example-390-1 and -2: stage 4 is now a display block with \dfrac, legible; the later stages are unchanged.
-- theory-1280-2: the calculator note (lg or log, 10^x, test lg 3 ≈ 0,477) wraps cleanly in the column.
-- Figures 1, 2, 3 and 5, the sim captures and the open Tarkista states are unchanged from the earlier pass and still hold.
-
-## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+batch delta review: opened captures at 360 and 1280 px; photo loads, floats right beside the text at 1280 px and fills the column at 360 px, no clipping or horizontal overflow; alt text and caption natural Finnish, factual, consistent with the image and neighbouring paragraph; credit line present under the caption; numbers with units in LaTeX.

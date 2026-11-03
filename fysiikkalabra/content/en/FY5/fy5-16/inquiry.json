@@ -8,8 +8,8 @@
   ],
   "prior": [
     "The sound intensity level $L$ is given in decibels, and it always rises by the same amount when the intensity is multiplied by the same factor (chapter *Loudness of sound*)",
-    "A wave is reflected from an obstacle according to the law of reflection and bends behind the edge of an obstacle (chapter *Reflection and diffraction of waves*)",
-    "Waves that meet add together, and they can strengthen or weaken each other (chapter *Interference of waves*)"
+    "A wave is reflected from an obstacle according to the law of reflection and bends behind the edge of an obstacle (chapter *A wave meets an obstacle or a gap*)",
+    "Waves that meet add together, and they can strengthen or weaken each other (chapter *When waves combine: superposition and interference*)"
   ],
   "activities": [
     {
@@ -96,7 +96,7 @@
         {
           "text": "The headphones produce a wave that is in the opposite phase to the noise, and the waves cancel each other.",
           "correct": true,
-          "feedback": "Correct. When the overpressure of the noise and the underpressure of the anti-noise arrive at the same place at the same time, they add up to almost zero: destructive interference (chapter *Interference of waves*). This works best for a low and steady sound, such as the hum of an engine."
+          "feedback": "Correct. When the overpressure of the noise and the underpressure of the anti-noise arrive at the same place at the same time, they add up to almost zero: destructive interference (chapter *When waves combine: superposition and interference*). This works best for a low and steady sound, such as the hum of an engine."
         },
         {
           "text": "The headphones dampen the noise like ordinary headphones: the cups and pads keep the sound out of the ear, and the electronics only adjust it.",

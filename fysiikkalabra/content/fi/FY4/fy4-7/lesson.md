@@ -353,6 +353,8 @@ E_\text{mek} = E_\text{k} + E_\text{p}
 ```
 missä $E_\text{mek}$ on mekaaninen energia ($\text{J}$). Koska potentiaalienergia riippuu nollatasosta, myös mekaanisen energian arvo riippuu siitä. Kerro siksi laskussa aina, mikä nollataso on.
 
+<figure class="unit-photo"><img src="pics/fy4/roller-coaster-loop.webp" alt="Punainen vuoristoradan silmukka sinistä taivasta vasten. Silmukan yläosassa vaunu kulkee matkustajat ylösalaisin."><figcaption>Vuoristoradan vaunu silmukan yläosassa aurinkoisena päivänä.</figcaption></figure>
+
 ## Esimerkki
 Lumilautailija, jonka massa varusteineen on $68\,\text{kg}$, laskee rinnettä. Kohdassa, joka on $25\,\text{m}$ rinteen alapään yläpuolella, hänen nopeutensa on $12\,\text{m/s}$. Kuinka suuri on lautailijan mekaaninen energia tässä kohdassa, kun nollatasoksi valitaan rinteen alapää?
 

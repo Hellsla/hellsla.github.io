@@ -7,9 +7,9 @@
     "vertailemaan molemmista päistä avoimen ja toisesta päästä suljetun putken ominaistaajuuksia."
   ],
   "prior": [
-    "Aallon nopeus, taajuus ja aallonpituus liittyvät toisiinsa yhtälöllä $v = f\\lambda$ (luku *Mekaaninen aaltoliike*)",
-    "Aalto heijastuu narun kiinteästä päästä vastakkaisvaiheisena (luku *Aaltojen heijastuminen ja diffraktio*)",
-    "Kohtaavien aaltojen poikkeamat summautuvat, ja vastakkaisvaiheiset aallot kumoavat toisensa (luku *Aaltojen interferenssi*)"
+    "Aallon nopeus, taajuus ja aallonpituus liittyvät toisiinsa yhtälöllä $v = f\\lambda$ (luku *Aaltojen synty ja eteneminen*)",
+    "Aalto heijastuu narun kiinteästä päästä vastakkaisvaiheisena (luku *Aalto kohtaa esteen tai raon*)",
+    "Kohtaavien aaltojen poikkeamat summautuvat, ja vastakkaisvaiheiset aallot kumoavat toisensa (luku *Aaltojen yhteisvaikutus: superpositio ja interferenssi*)"
   ],
   "activities": [
     {
@@ -30,7 +30,7 @@
         {
           "text": "Samankokoinen pulssi, joka on nyt lepoaseman alapuolella.",
           "correct": true,
-          "feedback": "Oikein. Kiinteästä päästä aalto heijastuu vastakkaisvaiheisena (luku *Aaltojen heijastuminen ja diffraktio*): seinä vetää narua vastakkaiseen suuntaan kuin pulssi, joten pää pysyy paikallaan. Tänään tutkitaan, mitä tapahtuu, kun tuleva ja heijastunut aalto kulkevat narussa yhtä aikaa."
+          "feedback": "Oikein. Kiinteästä päästä aalto heijastuu vastakkaisvaiheisena (luku *Aalto kohtaa esteen tai raon*): seinä vetää narua vastakkaiseen suuntaan kuin pulssi, joten pää pysyy paikallaan. Tänään tutkitaan, mitä tapahtuu, kun tuleva ja heijastunut aalto kulkevat narussa yhtä aikaa."
         },
         {
           "text": "Samankokoinen pulssi, joka on yhä lepoaseman yläpuolella.",

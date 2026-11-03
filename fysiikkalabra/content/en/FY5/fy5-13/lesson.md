@@ -1,4 +1,4 @@
-# Standing waves
+# Standing waves: nodes, antinodes and natural frequencies
 
 > **Why** does a guitar string always sound the same note when it is plucked, and why does the note rise when the string is pressed against the fingerboard or tightened?
 
@@ -129,7 +129,7 @@
 ## Key idea
 
 ### A wave and its reflection
-When the end of a rope is shaken steadily, a wave travels along the rope towards its fixed end. At the fixed end the wave is reflected back in the opposite phase (chapter *Reflection and diffraction of waves*). The rope then carries two waves with the same frequency, wavelength and amplitude but opposite directions of travel. Their displacements add up at every point (chapter *Interference of waves*). The sum does not look like a travelling wave: certain points stay in place all the time, and between them the rope swings back and forth. This kind of wave motion is called a **standing wave**.
+When the end of a rope is shaken steadily, a wave travels along the rope towards its fixed end. At the fixed end the wave is reflected back in the opposite phase (chapter *A wave meets an obstacle or a gap*). The rope then carries two waves with the same frequency, wavelength and amplitude but opposite directions of travel. Their displacements add up at every point (chapter *When waves combine: superposition and interference*). The sum does not look like a travelling wave: certain points stay in place all the time, and between them the rope swings back and forth. This kind of wave motion is called a **standing wave**.
 
 <svg data-fig="superpositio" viewBox="0 0 600 386" role="img" aria-label="Diagram of three moments one below the other, not to scale: the right end of a rope is fixed to a wall. The orange dashed line is the wave travelling towards the wall and the violet dotted line is the wave reflected from the wall, with the same amplitude and wavelength. The blue solid line is their sum, that is, the actual shape of the rope. At the top moment the incident and the reflected wave overlap and the sum is greatest, at the middle moment it is smaller, and at the bottom moment it is zero, when the waves cancel each other. The black dots mark points where the sum is zero at every moment: they are half a wavelength apart, and one of them is at the wall." style="max-width:100%;font-size:24px">
   <line x1="120" y1="26" x2="154" y2="26" stroke="#e8590c" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="8 6"/>
@@ -244,7 +244,7 @@ L &= n \cdot \frac{\lambda_n}{2} \\
 \lambda_n &= \frac{2L}{n}
 \end{aligned}
 ```
-The speed, the frequency and the wavelength of a wave are related by $v = f\lambda$ (chapter *Mechanical waves*). From this we get the natural frequencies of the string
+The speed, the frequency and the wavelength of a wave are related by $v = f\lambda$ (chapter *How waves form and travel*). From this we get the natural frequencies of the string
 ```latex
 \begin{aligned}
 &f_n = \frac{v}{\lambda_n} = n \cdot \frac{v}{2L} = n f_1 \\
@@ -322,6 +322,8 @@ where $f_n$ is the $n$th natural frequency (Hz), $v$ the speed of the wave in th
   <path d="M411,352 L399,357.5 L399,346.5 Z" fill="#1f2933" stroke-linejoin="round"/>
   <foreignObject x="252" y="359.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$L$</span></div></foreignObject>
 </svg>
+
+<figure class="unit-photo"><img src="pics/fy5/guitar-playing.webp" alt="A close-up of an acoustic guitar. One hand plucks the strings at the sound hole, and the fingers of the other hand press the strings against the fingerboard."><figcaption>Playing the guitar. When the player presses a string against the fingerboard, the vibrating part of the string becomes shorter and the fundamental frequency increases.</figcaption></figure>
 
 ### An instrument and its pitch
 The formula tells how the pitch of a string instrument is changed. When the player presses the string against the fingerboard, the vibrating part $L$ becomes shorter and the fundamental frequency increases. When the string is tightened with the tuning peg, the speed $v$ of the wave in the string increases and the fundamental frequency rises. At the same tension a thick, heavy string carries a wave more slowly than a thin one, which is why bass strings sound low. The vibrating string makes the body of the instrument and the air vibrate at the same frequency, so the frequency of the sound we hear is the frequency of the string's vibration.
@@ -444,4 +446,4 @@ Another mistake is to calculate the natural frequencies of a tube closed at one 
 - The distance between adjacent nodes is $\tfrac{\lambda}{2}$, and from a node to an antinode it is $\tfrac{\lambda}{4}$.
 - The natural frequencies of a string fixed at both ends and of a tube open at both ends are $f_n = n \cdot \tfrac{v}{2L}$, where $n = 1, 2, 3, \ldots$ The lowest of them is the fundamental frequency $f_1$.
 - In a tube closed at one end the closed end is a node and the open end an antinode, and the natural frequencies are $f_n = n \cdot \tfrac{v}{4L}$, where $n = 1, 3, 5, \ldots$
-- A shorter or tighter string and a shorter tube sound higher. The chapter *Properties of sound* examines how the fundamental frequency and the overtones show up in the frequency analysis of a sound.
+- A shorter or tighter string and a shorter tube sound higher. The chapter *Sound as a wave: pitch, timbre and the Doppler effect* examines how the fundamental frequency and the overtones show up in the frequency analysis of a sound.

@@ -1,10 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: c303495cd7b5cceb
+CONTENT-HASH: 9ab7735f51541cfd
 ## Blocking
-(none)
+
 ## Polish
-- hero — Gel is shown only as a small blue ring at the probe tip; visible but subtle at 390 px (taste).
+
 ## Checked
-- Delta review: only the hero illustration and its alt text changed; the rest stays as previously approved.
-- Probe on belly with gel, arcs going into the body, cable to machine, fan-shaped greyscale image with baby on the screen: supports both parts of the question; no misleading physics; alt matches the picture.
-- Alt text is in short plain-Finnish sentences, matching the easy-language version; no text inside the picture; the 390 px capture shows the picture intact.
+batch delta review: new lesson title and renamed chapter cross-references (prior lists, feedback, theory text) read in context; the names match the new titles of the target lessons, wording and Finnish unchanged otherwise, no stale old titles left in the lesson files.

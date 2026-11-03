@@ -403,6 +403,8 @@ So that a metre is the same metre everywhere in the world, the scientific commun
 
 In this course you need the first three most. You will meet the other base quantities in later courses.
 
+<figure class="unit-photo"><img src="pics/fy1/nist-4-kibble-balance.webp" alt="A complex metal apparatus with frames, coils, wires and parts of a vacuum chamber against a dark background."><figcaption>The NIST-4 Kibble balance at the US National Institute of Standards and Technology. Today the kilogram is defined using a constant of nature, the Planck constant, and a balance like this can measure mass according to that definition.</figcaption></figure>
+
 ### Prefixes and powers of ten
 The metre is good for measuring a room but not an atom or Neptune. That is why a **prefix**, an abbreviation for a power of ten, is attached in front of the unit: $1\,\text{km} = 10^{3}\,\text{m}$ and $1\,\text{mm} = 10^{-3}\,\text{m}$. The most common prefixes go up in steps of a factor of a thousand (exceptions are, for example, centi $10^{-2}$ and deci $10^{-1}$), and large and small numbers are written in scientific notation $a\cdot10^{n}$, where $1 \le a < 10$ and $n$ is an integer. For example, the distance between the Earth and the Sun is $1.5\cdot10^{11}\,\text{m} = 1.5\cdot10^{8}\,\text{km}$.
 

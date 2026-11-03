@@ -1,4 +1,4 @@
-# Seisovat aallot
+# Seisova aalto: solmut, kuvut ja ominaistaajuudet
 
 > **Miksi** kitaran kieli soi aina samalla sävelellä, kun sitä näppää, ja miksi sävel nousee, kun kieltä painetaan otelautaa vasten tai kun sitä kiristetään?
 
@@ -129,7 +129,7 @@
 ## Ydinajatus
 
 ### Aalto ja sen heijastus
-Kun narun päätä heilutetaan tasaisesti, narua pitkin etenee aalto kohti narun kiinnitettyä päätä. Kiinteästä päästä aalto heijastuu takaisin vastakkaisvaiheisena (luku *Aaltojen heijastuminen ja diffraktio*). Narussa kulkee silloin kaksi aaltoa, joilla on sama taajuus, aallonpituus ja amplitudi mutta vastakkaiset etenemissuunnat. Niiden poikkeamat summautuvat joka kohdassa (luku *Aaltojen interferenssi*). Summa ei näytä etenevältä aallolta: tietyt kohdat pysyvät koko ajan paikallaan, ja niiden välissä naru heilahtelee edestakaisin. Tällaista aaltoliikettä sanotaan **seisovaksi aalloksi**.
+Kun narun päätä heilutetaan tasaisesti, narua pitkin etenee aalto kohti narun kiinnitettyä päätä. Kiinteästä päästä aalto heijastuu takaisin vastakkaisvaiheisena (luku *Aalto kohtaa esteen tai raon*). Narussa kulkee silloin kaksi aaltoa, joilla on sama taajuus, aallonpituus ja amplitudi mutta vastakkaiset etenemissuunnat. Niiden poikkeamat summautuvat joka kohdassa (luku *Aaltojen yhteisvaikutus: superpositio ja interferenssi*). Summa ei näytä etenevältä aallolta: tietyt kohdat pysyvät koko ajan paikallaan, ja niiden välissä naru heilahtelee edestakaisin. Tällaista aaltoliikettä sanotaan **seisovaksi aalloksi**.
 
 <svg data-fig="superpositio" viewBox="0 0 600 386" role="img" aria-label="Kaavakuva kolmena hetkenä allekkain, ei mittakaavassa: narun oikea pää on kiinni seinässä. Oranssi katkoviiva on seinää kohti etenevä aalto ja violetti pisteviiva seinästä heijastunut aalto, jolla on sama amplitudi ja aallonpituus. Sininen yhtenäinen viiva on niiden summa eli narun todellinen muoto. Ylimmällä hetkellä tuleva ja heijastunut aalto ovat päällekkäin ja summa on suurimmillaan, keskimmäisellä pienempi ja alimmalla nolla, kun aallot kumoavat toisensa. Mustat pisteet merkitsevät kohtia, joissa summa on joka hetkellä nolla: ne ovat puolen aallonpituuden välein, ja yksi niistä on seinän kohdalla." style="max-width:100%;font-size:24px">
   <line x1="120" y1="26" x2="154" y2="26" stroke="#e8590c" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="8 6"/>
@@ -244,7 +244,7 @@ L &= n \cdot \frac{\lambda_n}{2} \\
 \lambda_n &= \frac{2L}{n}
 \end{aligned}
 ```
-Aallon nopeus, taajuus ja aallonpituus liittyvät toisiinsa yhtälöllä $v = f\lambda$ (luku *Mekaaninen aaltoliike*). Siitä saadaan kielen ominaistaajuudet
+Aallon nopeus, taajuus ja aallonpituus liittyvät toisiinsa yhtälöllä $v = f\lambda$ (luku *Aaltojen synty ja eteneminen*). Siitä saadaan kielen ominaistaajuudet
 ```latex
 \begin{aligned}
 &f_n = \frac{v}{\lambda_n} = n \cdot \frac{v}{2L} = n f_1 \\
@@ -322,6 +322,8 @@ missä $f_n$ on $n$:s ominaistaajuus (Hz), $v$ aallon nopeus kielessä (m/s), $L
   <path d="M411,352 L399,357.5 L399,346.5 Z" fill="#1f2933" stroke-linejoin="round"/>
   <foreignObject x="252" y="359.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$L$</span></div></foreignObject>
 </svg>
+
+<figure class="unit-photo"><img src="pics/fy5/guitar-playing.webp" alt="Lähikuva akustisesta kitarasta. Toinen käsi näppäilee kieliä äänireiän kohdalla, toisen käden sormet painavat kieliä otelautaa vasten."><figcaption>Kitaransoittoa. Kun soittaja painaa kielen otelautaa vasten, kielen värähtelevä osa lyhenee ja perustaajuus kasvaa.</figcaption></figure>
 
 ### Soitin ja sävelkorkeus
 Kaava kertoo, miten kielisoittimen sävelkorkeutta muutetaan. Kun soittaja painaa kielen otelautaa vasten, kielen värähtelevä osa $L$ lyhenee ja perustaajuus kasvaa. Kun kieltä kiristetään virityskoneistolla, aallon nopeus $v$ kielessä kasvaa ja perustaajuus nousee. Samalla kireydellä paksussa ja raskaassa kielessä aalto etenee hitaammin kuin ohuessa, joten bassokielet soivat matalalta. Kielen värähtely saa kaikukopan ja ilman värähtelemään samalla taajuudella, joten kuuluvan äänen taajuus on kielen värähtelyn taajuus.
@@ -444,4 +446,4 @@ Toinen virhe on laskea toisesta päästä suljetun putken ominaistaajuudet samoi
 - Vierekkäisten solmujen etäisyys on $\tfrac{\lambda}{2}$, ja solmusta kupuun on $\tfrac{\lambda}{4}$.
 - Kahdesta päästä kiinnitetyn kielen ja molemmista päistä avoimen putken ominaistaajuudet ovat $f_n = n \cdot \tfrac{v}{2L}$, kun $n = 1, 2, 3, \ldots$ Alin niistä on perustaajuus $f_1$.
 - Toisesta päästä suljetussa putkessa suljettu pää on solmu ja avoin pää kupu, ja ominaistaajuudet ovat $f_n = n \cdot \tfrac{v}{4L}$, kun $n = 1, 3, 5, \ldots$
-- Lyhyempi tai kireämpi kieli ja lyhyempi putki soivat korkeammalta. Luvussa *Äänen ominaisuudet* tutkitaan, miten perustaajuus ja yläsävelet näkyvät äänen taajuusanalyysissä.
+- Lyhyempi tai kireämpi kieli ja lyhyempi putki soivat korkeammalta. Luvussa *Ääni aaltona: korkeus, sointiväri ja Dopplerin ilmiö* tutkitaan, miten perustaajuus ja yläsävelet näkyvät äänen taajuusanalyysissä.

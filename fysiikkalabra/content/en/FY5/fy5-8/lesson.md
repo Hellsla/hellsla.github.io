@@ -1,4 +1,4 @@
-# Harmonic force and elastic potential energy
+# Spring force and spring energy
 
 > **Why** does a pinball launcher shoot the ball faster the further its spring is compressed?
 
@@ -81,7 +81,7 @@
 ## Key idea
 
 ### A spring pulls back towards the equilibrium position
-In the chapter *Periodic motion* an object moved back and forth on both sides of the equilibrium position. Now we find out what kind of force always pulls the object back towards the equilibrium position. Consider a trolley attached to a horizontal spring. When the spring is at its rest length, it exerts no force on the trolley, and the trolley can be at rest. This point is the **equilibrium position** of the trolley. Let the $x$-axis point along the spring with its origin at the equilibrium position. The position $x$ of the trolley is then its **displacement** from the equilibrium position: to the right of the equilibrium position $x > 0$ and to the left $x < 0$.
+In the chapter *Describing oscillation: period, frequency and amplitude* an object moved back and forth on both sides of the equilibrium position. Now we find out what kind of force always pulls the object back towards the equilibrium position. Consider a trolley attached to a horizontal spring. When the spring is at its rest length, it exerts no force on the trolley, and the trolley can be at rest. This point is the **equilibrium position** of the trolley. Let the $x$-axis point along the spring with its origin at the equilibrium position. The position $x$ of the trolley is then its **displacement** from the equilibrium position: to the right of the equilibrium position $x > 0$ and to the left $x < 0$.
 
 When the trolley is pulled to the right, the spring stretches and pulls the trolley to the left. When the trolley is pushed to the left, the spring is compressed and pushes the trolley to the right. In both cases the force of the spring points towards the equilibrium position, that is opposite to the displacement. This is why the force of a spring is also called a **restoring force**.
 
@@ -156,8 +156,10 @@ When the trolley is pulled to the right, the spring stretches and pulls the trol
   <foreignObject x="72" y="293.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#c92a2a">$\overline{F}$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy5/spring-rider-suomenlinna.webp" alt="A small child sits on a yellow lion-shaped rider fixed to the ground by a thick coil spring."><figcaption>A spring rider in Suomenlinna, Helsinki. When the rider tilts to one side, the spring pulls it back towards the equilibrium position, and the rider rocks back and forth.</figcaption></figure>
+
 ### Harmonic force
-When a spring is neither stretched nor compressed too much, the magnitude of the spring force is directly proportional to the displacement: double the displacement gives double the force. A force whose magnitude is directly proportional to the displacement of an object from the equilibrium position and which always points towards the equilibrium position is called a **harmonic force**. The force of a spring is its most common example. The restoring force of a pendulum is also approximately harmonic for small swings. In the chapter *Simple harmonic motion and the pendulum* we see what kind of motion a harmonic force produces.
+When a spring is neither stretched nor compressed too much, the magnitude of the spring force is directly proportional to the displacement: double the displacement gives double the force. A force whose magnitude is directly proportional to the displacement of an object from the equilibrium position and which always points towards the equilibrium position is called a **harmonic force**. The force of a spring is its most common example. The restoring force of a pendulum is also approximately harmonic for small swings. In the chapter *The mass–spring oscillator and the pendulum* we see what kind of motion a harmonic force produces.
 
 ### The force of the spring and the force that stretches the spring
 When a hand stretches a spring, two objects interact: the hand pulls the spring, and the spring pulls the hand. By Newton's third law these forces are equal in magnitude and opposite in direction, but they act on different objects. The force $\overline{F}_\text{v}$ that stretches the spring acts on the spring (the subscript v comes from the Finnish *venyttävä*, stretching, as in the simulation). The spring force $\overline{F}$ acts on the hand or on the object at the end of the spring. So only the spring force is drawn in the free-body diagram of the object.

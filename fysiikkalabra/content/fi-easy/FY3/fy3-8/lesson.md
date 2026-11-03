@@ -95,6 +95,8 @@
 ## Ydinajatus
 Lähes kaikki aineet laajenevat lämmetessään ja kutistuvat jäähtyessään. Ilmiötä sanotaan **lämpölaajenemiseksi**.
 
+<figure class="unit-photo"><img src="pics/fy3/bridge-expansion-joint.webp" alt="Sillan kannella on metallinen sauma. Taustalla on sillan kaide."><figcaption>Kruunuvuorensillan liikuntasauma Helsingissä vuonna 2026. Sauma antaa sillalle tilaa liikkua, esimerkiksi kun lämpötila muuttuu.</figcaption></figure>
+
 ### Miksi aine laajenee?
 Mikromalli (hiukkasmalli) selittää lämpölaajenemisen. Kiinteässä aineessa hiukkaset värähtelevät tasapainoasemiensa ympärillä. Kun lämpötila nousee, värähtely voimistuu.
 

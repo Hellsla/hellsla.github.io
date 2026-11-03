@@ -1,15 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: bc6253babd6345ca
+CONTENT-HASH: 74820ada2f4709e9
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- Pre-existing: the period formula $v = 2\pi r/T$ is cited to *Normaalikiihtyvyys ja ympyräliikkeen liikeyhtälö* (fy5-4), though it is introduced in *Ympyrärata: jaksonaika ja ratanopeus* (fy5-3); consider citing fy5-3.
 
 ## Checked
-- Every file of content/fi-easy/FY5/fy5-6 against the Finnish: lesson.md, inquiry.json (all options, correct flags, feedback, hints, mistakes, criteria, model answers, solutions), exit-ticket.json, meta.json, figures.json; sims.fy5-6 in lang/fi-easy.json (26 keys, same placeholders; only selite and tila_pois reworded).
-- A script compared every $…$ formula of every changed string with the Finnish: all present (only the order of $0{,}5\,\%$ moved in a split sentence); numbers, answers, tolerances and the Mars answer 6,43·10²³ kg identical; no string shortened below 85 % of the Finnish.
-- Physics unchanged in the simpler sentences: the only force, free fall with zero support force, r = R + h, mass cancels, the circular model's three conditions.
-- Fixed here: "He putoavat samalla tavalla" -> "Ne putoavat" (the station and the astronaut); split long sentences in the Mars solution (Periaate, Järkevyys), Koe 1 hint 3 and the Etsi virhe feedback ("Väärä tulos 30,8 km/s on lähes neljä kertaa liian suuri", same fact).
-- Hash at the start 19651fb4c55ceefe, final above.
+batch delta review: new ISS illustration description is physically neutral; prior and all four option feedbacks keep their physics, only chapter names change; exactly one correct option. Every changed chapter reference names the renamed chapter that holds the cited content, and no old title remains.

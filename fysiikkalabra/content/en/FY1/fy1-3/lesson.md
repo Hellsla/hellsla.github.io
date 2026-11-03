@@ -283,6 +283,8 @@ A **measurement** means determining the value of a quantity by comparing it with
 
 Errors are divided into three kinds: gross error, random error and systematic error. You can tell them apart by how they behave when the measurement is repeated.
 
+<figure class="unit-photo"><img src="pics/fy1/caliper-measurement.webp" alt="Hands holding a metal vernier caliper with a small object between its jaws. There are tools on the table."><figcaption>With a vernier caliper a length can be read to a fraction of a millimetre. The precision of the measuring instrument is one source of uncertainty in a measurement result.</figcaption></figure>
+
 ### Gross error
 A **gross error** is a single clear mistake: the instrument is read wrongly, a number is recorded wrongly (for example $3.52\,\text{s}$ instead of $3.25\,\text{s}$), the stopwatch is accidentally started only once the ball is already moving, or the result is recorded in the wrong unit. It usually shows up as a result that differs clearly from the others. A gross error is not estimated or averaged but looked for: the odd result is checked, and the measurement can be repeated if necessary. A result is not removed merely because it differs from the others: it is left out of the calculations only if the cause of the error is found, and leaving it out is justified and recorded.
 

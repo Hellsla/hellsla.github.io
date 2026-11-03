@@ -7,9 +7,9 @@
     "selittämään huojunnan ja Dopplerin ilmiön sekä laskemaan kuullun taajuuden."
   ],
   "prior": [
-    "Ääni on pitkittäinen aalto, ja aallon nopeus on $v = f\\lambda$ (luku *Mekaaninen aaltoliike*)",
-    "Kun aallot kohtaavat, niiden poikkeamat summautuvat (luku *Aaltojen interferenssi*)",
-    "Kielen ja molemmista päistä avoimen putken ominaistaajuudet ovat perustaajuuden monikertoja (luku *Seisovat aallot*)"
+    "Ääni on pitkittäinen aalto, ja aallon nopeus on $v = f\\lambda$ (luku *Aaltojen synty ja eteneminen*)",
+    "Kun aallot kohtaavat, niiden poikkeamat summautuvat (luku *Aaltojen yhteisvaikutus: superpositio ja interferenssi*)",
+    "Kielen ja molemmista päistä avoimen putken ominaistaajuudet ovat perustaajuuden monikertoja (luku *Seisova aalto: solmut, kuvut ja ominaistaajuudet*)"
   ],
   "activities": [
     {
@@ -30,7 +30,7 @@
         {
           "text": "$220\\,\\text{Hz}$, $330\\,\\text{Hz}$, $440\\,\\text{Hz}$ ja niin edelleen.",
           "correct": true,
-          "feedback": "Oikein. Kahdesta päästä kiinnitetyn kielen ominaistaajuudet ovat perustaajuuden kokonaislukukertoja $f_n = n f_1$ (luku *Seisovat aallot*). Tänään nähdään, että kieli soi näillä kaikilla yhtä aikaa ja että ne ratkaisevat äänen sointivärin."
+          "feedback": "Oikein. Kahdesta päästä kiinnitetyn kielen ominaistaajuudet ovat perustaajuuden kokonaislukukertoja $f_n = n f_1$ (luku *Seisova aalto: solmut, kuvut ja ominaistaajuudet*). Tänään nähdään, että kieli soi näillä kaikilla yhtä aikaa ja että ne ratkaisevat äänen sointivärin."
         },
         {
           "text": "Vain $330\\,\\text{Hz}$, $550\\,\\text{Hz}$, $770\\,\\text{Hz}$ ja niin edelleen.",
@@ -365,7 +365,7 @@
       "tolerance": 0.01,
       "hints": [
         "Missä kohdassa ympyrää summeri liikkuu suoraan kuulijaa kohti? Kuinka suuri on silloin sen nopeus?",
-        "Tasaisessa ympyräliikkeessä ratanopeus on $v_\\text{s} = \\tfrac{2\\pi r}{T}$ (luku *Ympyräliike ja ratanopeus*). Suurin taajuus kuuluu, kun summeri lähestyy kuulijaa tällä nopeudella.",
+        "Tasaisessa ympyräliikkeessä ratanopeus on $v_\\text{s} = \\tfrac{2\\pi r}{T}$ (luku *Ympyrärata: jaksonaika ja ratanopeus*). Suurin taajuus kuuluu, kun summeri lähestyy kuulijaa tällä nopeudella.",
         "$v_\\text{s} = \\tfrac{2\\pi \\cdot 1{,}00\\,\\text{m}}{0{,}500\\,\\text{s}} = 12{,}57\\,\\text{m/s}$ ja $f = f_0 \\cdot \\tfrac{v}{v - v_\\text{s}}$."
       ],
       "mistakes": [

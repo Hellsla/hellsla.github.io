@@ -1,10 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 5ba8167a14fad42b
+CONTENT-HASH: 0006abed5e6a7cd2
 ## Blocking
-(none)
+
 ## Polish
-- [Minor] none beyond what the Finnish reviews noted (teaching structure is unchanged).
+
 ## Checked
-- lesson.md, inquiry.json, exit-ticket.json, meta.json, figures.json and the sim labels (lang/fi-easy.json sims.fy5-3): every stage, prediction, hint, feedback, rubric and model answer is kept; the learning path, activity order and workload equal the Finnish version.
-- Plain Finnish: short sentences, terms explained at first use, nothing dropped relative to the Finnish version.
-- Captures opened: sim-390, lab-1280-1.
+batch delta review: new lesson title and renamed chapter cross-references (prior lists, feedback, theory text) read in context; the names match the new titles of the target lessons, wording and Finnish unchanged otherwise, no stale old titles left in the lesson files.

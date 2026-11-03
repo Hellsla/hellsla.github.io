@@ -1,4 +1,4 @@
-# Moment of a force and rotation of a body
+# Moment: the turning effect of a force
 
 > **Why** does a stuck wheel nut come loose with a long spanner, when the same force on a short spanner cannot make it budge?
 
@@ -263,7 +263,7 @@ In addition to its magnitude, a moment has a direction of rotation. In this book
 ```latex
 \Sigma M = M_1 + M_2 + M_3 + \ldots
 ```
-where $\Sigma M$ is the net moment ($\text{Nm}$) and $M_1$, $M_2$, … are the moments of the individual forces about the same chosen axis of rotation ($\text{Nm}$). If the net moment on a body at rest that can rotate about a fixed axis is not zero, the body starts to rotate in the direction of the net moment. When a body stays at rest is studied more closely in the chapter *Rotational equilibrium*.
+where $\Sigma M$ is the net moment ($\text{Nm}$) and $M_1$, $M_2$, … are the moments of the individual forces about the same chosen axis of rotation ($\text{Nm}$). If the net moment on a body at rest that can rotate about a fixed axis is not zero, the body starts to rotate in the direction of the net moment. When a body stays at rest is studied more closely in the chapter *Equilibrium of a body: forces and moments*.
 
 <svg data-fig="suunta" viewBox="0 0 600 320" role="img" aria-label="Two situations side by side. In both, a horizontal rod is fixed to the axis O at its left end. On the left, the force F acts on the right end of the rod upwards, and the curved arrow around the axis rotates anticlockwise: the moment is positive. On the right, the force acts on the end of the rod downwards, and the curved arrow rotates clockwise: the moment is negative." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy51-suunta-44" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f1dfb5"/><stop offset="1" stop-color="#d9b26a"/></linearGradient><linearGradient id="fy51-suunta-344" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f1dfb5"/><stop offset="1" stop-color="#d9b26a"/></linearGradient></defs>

@@ -1,4 +1,4 @@
-# Reflection and diffraction of waves
+# A wave meets an obstacle or a gap
 
 > **Why** do waves reach the corners of a harbour through the narrow gap in a breakwater, and do not travel only straight to the place opposite the gap?
 
@@ -1030,6 +1030,8 @@ When a wave passes through a slit or past an obstacle, it also bends behind the 
   <line x1="320" y1="318" x2="350" y2="318" stroke="#1971c2" stroke-width="3" stroke-linecap="butt"/>
   <path d="M362,318 L349,324 L349,312 Z" fill="#1971c2" stroke-linejoin="round"/>
 </svg>
+
+<figure class="unit-photo"><img src="pics/fy5/ripple-tank-single-slit.webp" alt="A blurry grey picture of a water surface. On the right there are slanted straight light stripes, on the left curved rings."><figcaption>Diffraction in a ripple tank. Straight wavefronts arrive from the right and pass through a narrow slit, and behind the slit on the left the waves spread out as curved fronts.</figcaption></figure>
 
 The same holds for an obstacle. An obstacle narrower than the wavelength, like a pier post, leaves hardly any shadow behind it, because the wave bends around it. Behind an obstacle much wider than the wavelength there is a sheltered region. So diffraction is strong when the width of the slit or obstacle is of the order of the wavelength or smaller. Sound bends from a door into a corridor, because the wavelength of speech is of the order of a metre, as wide as the doorway.
 

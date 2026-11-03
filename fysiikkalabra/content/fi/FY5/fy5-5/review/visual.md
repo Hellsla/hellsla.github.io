@@ -1,16 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 1fa0e4e20ea43329
-
+CONTENT-HASH: 88efef8753545278
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] Esimerkki Järkevyys (example-390-2) — the inline chain splits the sentence into three blocks and nested \tfrac fractions are small at 390 px — mathlayout output; optional: end the sentence before the chain.
-- [Minor] Planeetat figure — Jupiter drawn with a solid surface — fine as a schematic; optional wording in the description.
+- Kuvan Maa on pieni 360 px:ssä; alt-teksti kuvaa sen silti riittävästi.
 
 ## Checked
-- Round 2, full re-review against hash 1fa0e4e20ea43329. Opened fig-4-390 and theory-1280-2: kuvaaja now shows $m_1 = m_2 = 10\,\text{t}$ in the plot and the paragraph names the case; curve starts cleanly at r = 2 m. Finnish quotes now ”…” (source checked).
-- stage-tutki-390-1: simulation canvas now draws (round 1 blank canvas gone).
-- Round 1 captures of the other six figures, the example, sim, exit ticket and open states re-checked in the regenerated contact sheets: layout unchanged.
-
-## Scores
-illustrations 5 · typography 4 · Finnish 5 · accessibility 5
+batch delta review: opened captures at 360 and 1280 px; photo loads, floats right beside the text at 1280 px and fills the column at 360 px, no clipping or horizontal overflow; alt text and caption natural Finnish, factual, consistent with the image and neighbouring paragraph; credit line present under the caption; numbers with units in LaTeX.

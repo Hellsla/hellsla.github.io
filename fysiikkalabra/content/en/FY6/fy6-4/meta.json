@@ -1,0 +1,19 @@
+{
+  "id": "fy6-4",
+  "course": "FY6",
+  "title": "Resistors in series and in parallel",
+  "goals": [
+    "LOPS FY6: connections of resistors"
+  ],
+  "prerequisites": [
+    "fy6-3"
+  ],
+  "glossary": [
+    "sarjaankytkentä",
+    "rinnankytkentä",
+    "kokonaisresistanssi"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

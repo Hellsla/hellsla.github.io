@@ -1,4 +1,4 @@
-# Tasainen ympyräliike ja normaalikiihtyvyys
+# Normaalikiihtyvyys ja ympyräliikkeen liikeyhtälö
 
 > **Miksi** auto suistuu liukkaassa kaarteessa ulos tieltä?
 
@@ -90,7 +90,7 @@
 ## Ydinajatus
 
 ### Nopeuden suunta muuttuu, joten kappale kiihtyy
-Luvussa *Ympyräliike ja ratanopeus* opit, että tasaisessa ympyräliikkeessä kappale kiertää ympyrärataa vakiovauhdilla. Nopeuden suuruus eli ratanopeus $v$ pysyy samana. Nopeuden suunta kuitenkin muuttuu koko ajan, sillä nopeus $\overline{v}$ osoittaa aina radan tangentin suuntaan. Tangentti on suora, joka koskettaa rataa yhdessä pisteessä. Nopeus on vektori, eli sillä on suuruus ja suunta. Siksi myös suunnan muutos on nopeuden muutos. Kun nopeus muuttuu, kappale kiihtyy. Tasaisessa ympyräliikkeessä kappale siis kiihtyy, vaikka sen vauhti ei muutu.
+Luvussa *Ympyrärata: jaksonaika ja ratanopeus* opit, että tasaisessa ympyräliikkeessä kappale kiertää ympyrärataa vakiovauhdilla. Nopeuden suuruus eli ratanopeus $v$ pysyy samana. Nopeuden suunta kuitenkin muuttuu koko ajan, sillä nopeus $\overline{v}$ osoittaa aina radan tangentin suuntaan. Tangentti on suora, joka koskettaa rataa yhdessä pisteessä. Nopeus on vektori, eli sillä on suuruus ja suunta. Siksi myös suunnan muutos on nopeuden muutos. Kun nopeus muuttuu, kappale kiihtyy. Tasaisessa ympyräliikkeessä kappale siis kiihtyy, vaikka sen vauhti ei muutu.
 
 <svg data-fig="muutos" viewBox="0 0 600 340" role="img" aria-label="Kaksi kuvaa. Vasemmalla kappale kiertää ympyrärataa tasaisella vauhdilla. Siniset nopeusnuolet v 1 ja v 2 ovat yhtä pitkät mutta osoittavat eri suuntiin. Oikealla samat nuolet on piirretty samasta pisteestä: niiden kärkien välinen nuoli, nopeuden muutos, osoittaa kohti radan keskipistettä." style="max-width:100%;font-size:24px">
   <foreignObject x="65" y="7.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{kappaleen rata}$</div></foreignObject>
@@ -128,6 +128,8 @@ Luvussa *Ympyräliike ja ratanopeus* opit, että tasaisessa ympyräliikkeessä k
 </svg>
 
 Kuvassa kappaleen nopeus on ensin $\overline{v}_1$ ja hetken kuluttua $\overline{v}_2$. Kun nuolet piirretään samasta pisteestä, niiden kärkien välinen nuoli on nopeuden muutos $\Delta\overline{v}$. Se osoittaa kohti radan keskipistettä. Kiihtyvyys kertoo, kuinka nopeasti nopeus muuttuu. Siksi myös kiihtyvyys osoittaa kohti keskipistettä.
+
+<figure class="unit-photo"><img src="pics/fy5/apollo8-centrifuge.webp" alt="Kolme astronauttia makaa selällään istuimissa pyöreän luukun takana."><figcaption>Apollo 8:n astronautit sentrifugissa vuonna 1968. Sentrifugi pyörittää astronautteja ympyrää pitkin. Sentrifugissa normaalikiihtyvyys voi olla yhtä suuri kuin laukaisun kiihtyvyys.</figcaption></figure>
 
 ### Normaalikiihtyvyys osoittaa keskipisteeseen
 Tasaisessa ympyräliikkeessä kiihtyvyys on kohtisuorassa nopeutta vastaan. Se osoittaa radan joka kohdassa kohti ympyrän keskipistettä. Tätä kiihtyvyyttä kutsutaan **normaalikiihtyvyydeksi** $\overline{a}_\text{n}$ tai **keskeiskiihtyvyydeksi**. Nimi tulee siitä, että kiihtyvyys on radan normaalin suuntainen. Normaali on suora, joka on kohtisuorassa tangenttia vastaan. Kiihtyvyydellä ei ole nopeuden suuntaista osaa, joten vauhti ei kasva eikä pienene. Kiihtyvyys muuttaa vain nopeuden suuntaa.

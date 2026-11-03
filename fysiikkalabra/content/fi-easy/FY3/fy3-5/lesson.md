@@ -95,6 +95,8 @@ Energia säilyy. Oletetaan, että systeemin liike- ja potentiaalienergia eivät 
 
 Eristetty systeemi on suljettu systeemi. Siihen ei siirry energiaa lämpönä eikä työnä, eikä siitä siirry pois. Sen kokonaisenergia pysyy vakiona. Energia voi silti vaihtaa muotoa systeemin sisällä.
 
+<figure class="unit-photo"><img src="pics/fy3/glowing-metal-furnace.webp" alt="Uunin aukosta näkyy oranssina hehkuva metallipala."><figcaption>Kuuma metalli hehkuu uunissa. Kun metallia kuumennetaan, sen sisäenergia kasvaa.</figcaption></figure>
+
 ## Kaava: Termodynamiikan ensimmäinen pääsääntö
 Sisäenergian muutos on kahden asian summa: systeemiin tuotu lämpömäärä ja systeemiin tehty työ:
 ```latex

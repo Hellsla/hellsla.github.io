@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 85e8f706000c5d31
+CONTENT-HASH: 97126565ba9120e6
 
 ## Blocking
 (none)
@@ -8,9 +8,4 @@ CONTENT-HASH: 85e8f706000c5d31
 (none)
 
 ## Checked
-- Selkokielinen versio verrattu suomenkieliseen (kolme PASS-katselmusta): lesson.md, inquiry.json, exit-ticket.json, meta.json, figures.json, lang/fi-easy.json sims.fy5-13.
-- Kaikki luvut ja kaavat skriptillä verrattuina identtiset; check_i18n ei raportoi eroja fy5-13:lle.
-- Kaavat f_n = n·v/(2L) ja f_n = n·v/(4L) (n pariton), esimerkki 143 m/s ja 0,433 m, didgeridoo 170 Hz, Tarkista 2 0,80 m: samat.
-- Ennusteiden oikeat vaihtoehdot ja palautteet säilyvät; ennuste 2:n 150 Hz -palaute sanoo jo vain parittomat kerrat ("eivät puolitoistakertaisia").
-- Pitkät virkkeet on pilkottu ilman fysiikan muutosta; selitys "vastakkaisvaiheinen eli kääntynyt toisin päin" ja "oktaavi" on avattu oikein.
-- Simulaation laatikot (käyttöohje, mallin oletukset, laskennan selitys) samat kuin suomessa; kirjaimet S ja K pysyvät suomessa.
+batch delta review: references to fy5-10, fy5-11, fy5-12, fy5-14 updated; fixed-end reflection and standing-wave text unchanged. Every changed chapter reference names the renamed chapter that holds the cited content, and no old title remains.

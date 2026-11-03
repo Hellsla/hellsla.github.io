@@ -1,4 +1,4 @@
-# Äänen voimakkuus
+# Intensiteetti ja desibeliasteikko
 
 > **Miksi** äänen voimakkuus ilmoitetaan desibeleinä eikä watteina neliömetriä kohti? Mitä desibelilukema oikeastaan kertoo?
 
@@ -215,6 +215,8 @@ Pieni äänilähde, joka säteilee tasaisesti joka suuntaan, on pistemäinen lä
   <foreignObject x="42" y="311.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$0$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy5/sound-level-meter-park.webp" alt="Ihmisiä istuu puistossa. Tolpassa on punainen näyttö, jossa lukee 62 dB."><figcaption>Melunäyttö puistossa Kiinassa. Näyttö kertoo äänen voimakkuuden desibeleinä. $62\,\text{dB}$ on noin tavallisen puheen voimakkuus.</figcaption></figure>
+
 ### Kuulokynnys ja kipukynnys
 Ihmisen korva on hämmästyttävän herkkä. Nuori normaalikuuloinen ihminen erottaa noin $1000\,\text{Hz}$:n taajuudella äänen, jonka intensiteetti on noin $I_0 = 1{,}0 \cdot 10^{-12}\,\text{W/m}^2$. Se on heikoin ääni, jonka hän kuulee. Tätä sanotaan **kuulokynnykseksi**. Kuulokynnys ei ole hiljaisuus. Se on heikoin kuultavissa oleva ääni. Se on myös eri suuri eri taajuuksilla. Kovimmat äänet alkavat tuntua kivulta, kun intensiteetti on noin $1\,\text{W/m}^2$. Tämä kipukynnys on biljoona eli $10^{12}$ kertaa kuulokynnyksen suuruinen. Näin laajaa vaihteluväliä on hankala esittää tavallisella asteikolla.
 
@@ -263,7 +265,7 @@ Siksi äänen voimakkuutta kuvataan **intensiteettitasolla** $L$. Se vertaa inte
   <foreignObject x="400" y="53.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$1$</div></foreignObject>
 </svg>
 
-Korva ei ole yhtä herkkä kaikille taajuuksille. Matalat ja hyvin korkeat äänet kuulostavat samalla intensiteetillä hiljaisemmilta kuin äänet, joiden taajuus on noin $1000$–$4000\,\text{Hz}$. Siksi melumittarit painottavat taajuuksia korvan herkkyyden mukaan. Tällainen painotettu lukema merkitään $\text{dB(A)}$. Tässä luvussa lasketaan painottamattomia intensiteettitasoja. Melun vaikutuksista ja kuulon suojaamisesta kerrotaan luvussa *Ääni ympäristössämme*.
+Korva ei ole yhtä herkkä kaikille taajuuksille. Matalat ja hyvin korkeat äänet kuulostavat samalla intensiteetillä hiljaisemmilta kuin äänet, joiden taajuus on noin $1000$–$4000\,\text{Hz}$. Siksi melumittarit painottavat taajuuksia korvan herkkyyden mukaan. Tällainen painotettu lukema merkitään $\text{dB(A)}$. Tässä luvussa lasketaan painottamattomia intensiteettitasoja. Melun vaikutuksista ja kuulon suojaamisesta kerrotaan luvussa *Melu, akustiikka ja äänentoisto*.
 
 ## Kaava: Intensiteettitaso
 
@@ -386,7 +388,7 @@ Kun intensiteetti kaksinkertaistuu, taso kasvaa $10\,\text{dB} \cdot \lg 2 \appr
 </svg>
 
 ### Usean lähteen yhteistaso
-Joskus samaan paikkaan kuuluu kaksi toisistaan riippumatonta äänilähdettä, esimerkiksi kaksi konetta tai kaksi soittajaa. Silloin niiden tehot lasketaan yhteen, ja siksi myös intensiteetit lasketaan yhteen: $I = I_1 + I_2$. Desibelejä ei lasketa yhteen. Yhteistaso lasketaan summaintensiteetistä. Kaksi yhtä voimakasta lähdettä kaksinkertaistaa intensiteetin, joten $80\,\text{dB}$ ja $80\,\text{dB}$ antavat yhdessä noin $83\,\text{dB}$. Jos toinen lähde on paljon heikompi, se ei juuri muuta tasoa. Tasot $70\,\text{dB}$ ja $60\,\text{dB}$ antavat intensiteetin $1{,}1 \cdot 10^{-5}\,\text{W/m}^2$ eli noin $70{,}4\,\text{dB}$. Sääntö ei päde kahteen kaiuttimeen, jotka toistavat samaa sävelaaltoa. Niiden aallot interferoivat, kuten luvussa *Aaltojen interferenssi*.
+Joskus samaan paikkaan kuuluu kaksi toisistaan riippumatonta äänilähdettä, esimerkiksi kaksi konetta tai kaksi soittajaa. Silloin niiden tehot lasketaan yhteen, ja siksi myös intensiteetit lasketaan yhteen: $I = I_1 + I_2$. Desibelejä ei lasketa yhteen. Yhteistaso lasketaan summaintensiteetistä. Kaksi yhtä voimakasta lähdettä kaksinkertaistaa intensiteetin, joten $80\,\text{dB}$ ja $80\,\text{dB}$ antavat yhdessä noin $83\,\text{dB}$. Jos toinen lähde on paljon heikompi, se ei juuri muuta tasoa. Tasot $70\,\text{dB}$ ja $60\,\text{dB}$ antavat intensiteetin $1{,}1 \cdot 10^{-5}\,\text{W/m}^2$ eli noin $70{,}4\,\text{dB}$. Sääntö ei päde kahteen kaiuttimeen, jotka toistavat samaa sävelaaltoa. Niiden aallot interferoivat, kuten luvussa *Aaltojen yhteisvaikutus: superpositio ja interferenssi*.
 
 <svg data-fig="summa" viewBox="0 0 600 360" role="img" aria-label="Kaksi pylväskaaviota mittakaavassa. Vasemmalla ovat intensiteetit yksikössä 10 potenssiin miinus 4 wattia neliömetrille: kumpikin kaiutin yksin 1,0 ja yhdessä 2,0. Yhteinen pylväs on siis kaksi kertaa niin korkea. Oikealla ovat samat tilanteet intensiteettitasoina: kumpikin yksin 80 dB ja yhdessä 83 dB. Yhteinen pylväs on vain vähän korkeampi." style="max-width:100%;font-size:24px">
   <line x1="300" y1="14" x2="300" y2="346" stroke="#c9c2b2" stroke-width="2" stroke-linecap="butt" stroke-dasharray="6 6"/>
