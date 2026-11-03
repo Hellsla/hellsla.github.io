@@ -1612,7 +1612,7 @@
       "hidas": "slow",
       "normaali": "normal",
       "nopea": "fast",
-      "selite": "The speed of the dots shows the size of the current; the direction is the agreed direction of the current from the positive terminal to the negative terminal.",
+      "selite": "Dot speed shows the current; its direction is from positive terminal to negative.",
       "lukemat": "<strong>Total resistance $R = {{R}}\\,\\Omega$</strong><br>Current leaving the battery $I = {{I}}\\,\\text{mA}$<br>Resistor $R_1$: current $I_1 = {{I1}}\\,\\text{mA}$, voltage $U_1 = {{U1}}\\,\\text{V}$",
       "lukemat2": "<br>Resistor $R_2$: current $I_2 = {{I2}}\\,\\text{mA}$, voltage $U_2 = {{U2}}\\,\\text{V}$",
       "lukemat2pois": "<br>Resistor $R_2$ is not connected.",
@@ -1620,7 +1620,8 @@
         "yksi": "one resistor",
         "sarja": "series connection",
         "rinnan": "parallel connection"
-      }
+      },
+      "samavirta": "$\\text{same current}$"
     }
   },
   "practice": {

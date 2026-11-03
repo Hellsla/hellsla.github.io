@@ -1620,7 +1620,8 @@
         "yksi": "yksi vastus",
         "sarja": "sarjaankytkentä",
         "rinnan": "rinnankytkentä"
-      }
+      },
+      "samavirta": "$\\text{sama virta}$"
     }
   },
   "practice": {
