@@ -1,23 +1,22 @@
 VERDICT: PASS
-CONTENT-HASH: ba8b7d0172ca4e9b
+CONTENT-HASH: 9e418b3b567bd336
 
 ## Blocking
 (none)
 
 ## Polish
-- inquiry.json koe-1 (measure list) — johtopäätöksen kriteeri 4 (tehot yhteensä lähteen teho) koskee molempia kytkentöjä, mutta vain koe-2 pyytää laskemaan P1 + P2 ja vertaamaan lähteen tehoon; mallivastauksen esimerkki on rinnankytkennästä — lisää koe-1:n introon "Laske P1 + P2 ja vertaa tehoon P" ja lisää P mittauksiin.
-- lesson.md "Vastuksen lämpeneminen tasaantuu" — tasaantuminen on yksi oppimistavoite (learn[2]), mutta mikään tutkimus ei anna opiskelijan toimia sen parissa (simulaatio ei mallinna häviöitä, mikä sanotaan); asia opitaan vain lukemalla ja valinnaisessa tarkistus-3:ssa. Hyväksyttävä yhden tunnin työmäärässä; harkitse yhtä ennusteen kaltaista kysymystä.
-- inquiry.json koe-1/koe-2 — ennuste kysyy "kumpi lasi lämpenee nopeammin", mutta koe vastaa taulukon tehoilla; kehota käynnistämään kello ja vertaamaan lämpötiloja (intro mainitsee kellon; "kirjaa T-arvot" lisäisi yhteyden).
-- lesson.md Esimerkki — "Tulokset ilmoitetaan kahdella merkitsevällä numerolla" -rivi on oikein, mutta "noin 4,3 kJ" ja ratkaisun "4320 J" näkyvät rinnakkain; yhtenäistä muotoon "4,3 kJ".
+- inquiry.json johtopaatos model — "P2 ei kasvanut koko ajan" on epätarkka: kun R2 = 4, 8, 16 Ω, mallin P2 on 9,0, 8,0 ja 5,8 W eli pienenee, vaikka R2 > R1 (P2 > P1 pysyy). Kirjoita: "P2 pieneni, kun R2 kasvoi yli R1:n, koska yhteinen virta pieneni; silti P2 > P1." Hyvä ristiriita, nosta se esiin.
+- inquiry.json koe-1 intro/measure — johtopäätöksen kriteeri 4 (tehot yhteensä lähteen teho) koskee molempia kytkentöjä, mutta vain koe-2 pyytää laskemaan P1 + P2 ja mittaa P:n; lisää koe-1:een "Laske P1 + P2" ja P mittauksiin.
+- inquiry.json koe-1/koe-2 — ennuste kysyy, kumpi lasi lämpenee nopeammin, mutta taulukko kirjaa vain tehoja; lisää "kirjaa myös lämpötilat hetkellä t" tai sano, että tehojen suhde ratkaisee lämpenemisen.
+- lesson.md "Vastuksen lämpeneminen tasaantuu" — oppimistavoite luetaan, ei tutkita (sim ei mallinna häviöitä, mikä sanotaan); hyväksyttävä yhden tunnin työmäärässä.
 
 ## Checked
-- Oppimispolku: sähköteho P = UI johdetaan jännitteestä (J/C) ja virrasta (C/s), sitten Joulen laki, sarja/rinnan, paahdin; alun kysymykseen vastataan (Paahdin ja sen johto, tarkistus-3).
-- Ennusteet 1 ja 2: ennen todistusaineistoa, väärien vaihtoehtojen palaute korjaa virhekäsityksen (pieni R "kulkee helpommin", "aina suurempi R"), ja koe voi kumota ne (R2 = 4/8/16 Ω).
-- Muuttujien hallinta: U, R1 ja kytkentä lukittu, vain R2 muuttuu; mallin arvot vs. mittaukset sanotaan.
-- Simulaatio 1280 px: lasit, nuolet, tehopalkit ja lukemat selkeät; ohjaimet ja lukema mahtuvat 390 px:llä.
-- Kuvat (energia, jako, lampo, graafi, hero) tunnistettavia, värit eivät ainoa koodaus; kuvaukset antavat saman tiedon.
-- Esimerkki porrastettu (tunnetut, periaate, kaava, yksiköt, sijoitus, tulos, järkevyys), ei hyppyjä.
-- Etsi virhe -tehtävä paljastaa virheen (U² : R koko jännitteellä) energian säilymisellä; siirtotehtävä kolmella vihjeellä ja todellisilla virheillä.
-- Tarkista: käsite (lamppujen 40 W / 100 W, harhaanjohtavat vaihtoehdot), laskenta, selitys kriteereineen; lähtölippu testaa ydinideaa.
-- Suomi: termit (sähköteho, Joulen laki, sisäenergia) oikein, sijamuodot ($12\,\text{V}$:n) kunnossa.
-- Työmäärä: ydinpolku ennuste, kaksi koetta, teoria, esimerkki, siirto, kaksi tarkistusta, noin yksi tunti.
+- Polku: P = UI johdetaan J/C ja C/s, sitten Joulen laki, sarja/rinnan, paahdin; alun kysymykseen vastataan (Paahdin ja sen johto, tarkistus-3); luvut 59 Ω, 3,9 A, 0,8 W, 1200 oikein.
+- Ennusteet 1 ja 2 ennen todisteita; väärien vaihtoehtojen palaute korjaa virhekäsityksen, koe voi kumota ennusteen (R2 = 4/8/16 Ω); U, R1 ja kytkentä lukittu.
+- Mallin arvot erotettu mittauksista (sim-malli ja johtopäätöksen mallivastaus).
+- Kuvat (hero, energia, jako, lampo, graafi) tunnistettavia ja luettavia 390 px:llä, värit eivät ainoa koodaus; kuvaukset antavat saman tiedon.
+- Esimerkki porrastettu seitsemään vaiheeseen, ei hyppyjä; ei toista harjoituksia.
+- Etsi virhe paljastaa virheen energian säilymisellä; siirto (37 min) kolmella vihjeellä ja todellisilla virheillä (2235, 77,6, 447 tarkistettu).
+- Tarkista: käsite (40/100 W lamput), laskenta, selitys kriteereineen; lähtölippu (5,0 A, nelinkertainen) testaa ydinideaa.
+- Suomi ja sijamuodot ($12\,\text{V}$:n, $5{,}0\,\text{min}$:ssa) kunnossa; puhelinnäkymä: ohjaimet ja lukema mahtuvat 390 px:ssä.
+- Työmäärä: ydinpolku noin yksi tunti; valinnaiset kertaus, pohdi ja tarkistus-3 pois ydinpolulta.

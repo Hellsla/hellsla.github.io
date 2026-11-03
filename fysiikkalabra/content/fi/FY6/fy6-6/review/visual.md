@@ -1,22 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: ba8b7d0172ca4e9b
+CONTENT-HASH: 9e418b3b567bd336
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fig graph (fig-11-390, theory-1280-3) — the label "4,0 W" is crossed by the black R = 8 Ω curve and the "R = 8 Ω" label is touched by the curve's end — legibility slip — move "4,0 W" below the orange curve and "R = 8 Ω" left of the curve.
-- [Minor] fig lampo (fig-9-390) — axis and annotation text (T_loppu, T_0, P_sisään = P_ulos) is about 9–10 px at 390 px — smaller than in the other figures — raise the label size.
-- [Minor] Esimerkki step 4 (example-390-1) — "Lisäksi" and "W · s = J." are split around a display block, so the second unit identity dangles on its own line — put both identities in one block.
-- [Minor] Tutki table "Simulaation lukemat" at 1280 px (lab-1280-1) — the 7 columns overflow the narrow column and the last header is cut off (it scrolls) — allow smaller cell padding.
-- [Minor] Plain unit letters in "missä P on teho (W)" — bare unit symbols without a number are not in LaTeX — optional: $(\text{W})$.
+- [Minor] fig graph (theory-1280-3) — label "4,0 W" is still crossed by the black R = 8 Ω curve (carried from round 1) — legibility slip — move "4,0 W" below the orange curve.
+- [Minor] lesson.md "Paahdin ja sen johto" (theory-1280-2) — the new ratio breaks as "59 Ω :" / "0,050 Ω ≈ 1200", the colon stranded at line end — reads as a cut formula — rephrase so the ratio opens a line ("Resistanssien suhde on" + non-breaking maths) or move it to its own display line.
+- [Minor] fig lampo (fig-9-390) — axis and annotation text smaller than in other figures (carried) — raise label size.
+- [Minor] exercises/solutions L2-03 Järkevyys (L2-1280-3) — display block inside a sentence ("Yksikkö [√…] on oikea") — put the unit check in one inline expression.
 
 ## Checked
-- Hash at start and end. Contact sheets 2 and 3.
-- Opening: intro-1280 and fig-2-390 (hero toaster, calm, readable).
-- Figures: fig-5 (circuit), fig-7 (power bars), fig-9 (temperature), fig-11 (P-I graph): units, colours (current violet, power orange), data and model distinct, legible.
-- Theory-1280-1/2/3, example-390-1/2, sim-390, sim-1280, lab-1280-1, exp-koe-1-390-1, open-ennusta-1280-1, open-exit-1280.
-- Plain number+unit scan of lesson/inquiry/exit/solutions: none.
+- Hash at start and end (9e418b3b567bd336).
+- Delta: sim.js glow now scaled by PMAX (matches the 72 W bar); opened sim-1280 (series state: coils faint at 4 W and 8 W, bars, thermometers, readout all legible, no clipping) and contact-1.
+- Changed text in the page: theory-1280-2 (Paahdin ja sen johto, new 59 Ω : 0,050 Ω ≈ 1200 sentence; jako and lampo figures) and theory-1280-3 (changed "kun resistanssi pysyy likimain samana" sentence, graph fig-11).
+- inquiry.json model answers (johtopäätös, tarkistus-3): LaTeX units, decimal comma, colon, "$P_2 > P_1$" notation consistent.
 
 ## Scores
 illustrations 4 · typography 4 · Finnish 5 · accessibility 4

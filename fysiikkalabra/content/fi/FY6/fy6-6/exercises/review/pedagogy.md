@@ -1,19 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: d5b2bdee471e987e
+CONTENT-HASH: 7e839286024975e7
 
 ## Blocking
 (none)
 
 ## Polish
-- solutions.md fy6-6-L1-03 Järkevyys — "10 A:n sulakkeen raja" viittaa sulakkeeseen, jota ei vielä käsitellä (aihe myöhemmin FY6:ssa); muotoile "tavallisen pistorasian virtaraja" tai poista.
-- exercises.json fy6-6-L3-01 — "Hehkulamput, joihin on merkitty ..." on vaikea lause; lyhennä: "Kaksi hehkulamppua, joiden merkinnät ovat 230 V, 40 W ja 230 V, 100 W, on kytketty sarjaan ..." ja kysy lopuksi omana lauseenaan.
-- exercises.json fy6-6-L1-04 — "muuttuu valoksi ja sisäenergiaksi" on tehtävän ainoa kohta, jossa laite ei ole vastus; riittää "muuttuu muuksi energiaksi".
+- solutions.md fy6-6-L1-05 Kuvaajan lukeminen — "piste on ruudukkoviivalla P = 20 W" on hyvä; mainitse vielä, että muut pisteet vahvistavat saman R:n (esim. 11,25 W : (1,5 A)² = 5,0 Ω).
+- solutions.md fy6-6-L2-04 Annettu — alkulämpötila 20 °C lisättiin tehtävään, mutta ratkaisu ei mainitse sitä; lisää "alkulämpötila $20\,{}^\circ\text{C}$ ei vaikuta nousuun".
 
 ## Checked
-- Tasot: L1 viisi yhden kaavan tehtävää (P = UI, RI², U²/R, E = Pt, graafi), L2 neljä kaksivaiheista tai yksikkömuunnos (kW, kΩ, min), L3 kolme päättelyä kytkennöistä; ei toista esimerkkiä (rinnan 15/30 Ω, 12 V).
-- Tilanne ensin, kysymys viimeisenä omana lauseenaan; arkikontekstit tunnistettavia (USB-laturi, keitin, hiustenkuivaaja, jouluvalot).
-- L1-05: kuva antaa tarvittavat arvot (ruudukkoviivoilla), kuvaus antaa saman tiedon eikä paljasta resistanssia.
-- Ratkaisut: Annettu, Kysytty, Periaate selitettynä, Kaava, Muunnokset, Sijoitus, Vastaus (merkitsevät numerot), Järkevyys; jokainen seurattavissa.
-- Numerot tarkistettu: 12 W, 1,88 W, 1,996 kW, 64,8 kJ, 5,0 Ω, 7,83 A, 3,2 W, 15,8 V, 17,9 K, 20,4 W, 287,5 Ω, 12 Ω.
-- L3-01 ja L3-02 sanovat resistanssioletuksen (nimellisarvot) eikä ansaa ole.
-- Suomi ja sijamuodot ($230\,\text{V}$:n verkkojännitteeseen) kunnossa; puhelinnäkymä: pitkät sijoitukset rivittyvät.
+- Diff: L1-04 "muuksi energiaksi", L1-05 "mitattu" pois, L2-04 alkulämpötila ja "ei höyrysty", L3-01 lyhyempi lause, sulakeviittaukset poistettu: kaikki Polish-kohdat edelliseltä kierrokselta korjattu.
+- Tasot L1 5, L2 4, L3 3 oikein; ei toista esimerkkiä (rinnan 15/30 Ω).
+- Tilanne ensin, kysymys omana lauseenaan; arkikontekstit tunnistettavia.
+- L2-04: 17,9 K (60 000 J : 3352 J/K) oikein; höyrystymisoletus tekee kiehumispisteen alle jäävän nousun yksiselitteiseksi (20 °C + 18 K).
+- L3-01: 20,4 W ja järkevyys (8,2 W) oikein, resistanssioletus sanottu.
+- Ratkaisut seurattavissa: Annettu, Kysytty, Periaate, Kaava, Muunnokset, Sijoitus, Vastaus, Järkevyys.
+- Suomi ja sijamuodot kunnossa; L1-03 vastauksen merkitsevät numerot perusteltu.
