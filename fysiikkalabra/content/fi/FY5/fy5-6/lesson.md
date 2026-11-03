@@ -633,6 +633,8 @@ Asema ja astronautti ovat vapaassa pudotuksessa: kumpaankin vaikuttaa vain gravi
   <foreignObject x="427.5" y="341.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$N = 0$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy5/iss-from-soyuz.webp" alt="Kansainvälinen avaruusasema aurinkopaneeleineen mustaa avaruutta vasten. Alla näkyy Maan pilvinen pinta."><figcaption>Kansainvälinen avaruusasema ISS kuvattuna Sojuz-aluksesta lokakuussa 2018. Asema on koko ajan vapaassa pudotuksessa kohti Maata, mutta sen ratanopeus on niin suuri, että se ei osu Maahan.</figcaption></figure>
+
 Saman tilan voi kokea hetken maan päälläkin: hypyn aikana, vapaasti putoavassa hississä tai lentokoneessa, joka lentää moottorit säädettyinä heittoliikkeen rataa. Painottomuutta ei selitä mikään gravitaation kumoava "keskipakoisvoima". Jos jokin voima kumoaisi gravitaation, kokonaisvoima olisi nolla, ja asema jatkaisi suoraan eteenpäin eikä kiertäisi Maata.
 
 ## Milloin ympyrämalli pätee

@@ -156,6 +156,8 @@ Kun kärry vedetään oikealle, jousi venyy ja vetää kärryä vasemmalle. Kun 
   <foreignObject x="72" y="293.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#c92a2a">$\overline{F}$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy5/spring-rider-suomenlinna.webp" alt="Pieni lapsi istuu keltaisella leijonakeinulla. Keinu on kiinni maassa jousen varassa."><figcaption>Jousikeinu Suomenlinnassa Helsingissä. Kun keinu kallistuu, jousi vetää sen takaisin kohti tasapainoasemaa. Keinu heiluu edestakaisin.</figcaption></figure>
+
 ### Harmoninen voima
 Kun jousta ei venytetä eikä puristeta liikaa, jousen voiman suuruus on suoraan verrannollinen poikkeamaan. Kaksinkertainen poikkeama antaa kaksinkertaisen voiman. **Harmoninen voima** on voima, jonka suuruus on suoraan verrannollinen kappaleen poikkeamaan tasapainoasemasta ja joka osoittaa aina kohti tasapainoasemaa. Jousen voima on tavallisin esimerkki. Myös heilurin palauttava voima on pienillä heilahduksilla melkein harmoninen. Luvussa *Jousivärähtelijä ja heiluri* nähdään, millaista liikettä harmoninen voima saa aikaan.
 
