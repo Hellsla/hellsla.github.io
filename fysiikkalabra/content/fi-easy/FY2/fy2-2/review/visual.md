@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: c5cbd855da5d25c4
+CONTENT-HASH: 9e60540cd71fe93c
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] Caption has two sentences in plain Finnish; "liike-energiaksi, lämmöksi, valoksi ja ääneksi" is a long list but clear.
+(none)
 
 ## Checked
-batch delta review: Playwright captures of the built page at 360 and 1280 px (Artemis I launch, narrower portrait); photo sits after a paragraph, 320 px wide, caption and credit under it, no horizontal overflow, float beside text at 1280, full-width flow at 360; alt text matches the image; caption plain Finnish and factual.
+batch delta review: preview/fi-easy/fy2-2.html opened in Chromium (Playwright) at 360, 768 and 1280 px; moved Artemis I launch photo captured with its surroundings. New spot after the Joule paragraph; at 1280 it floats beside the "Energian yksikkö ja kerrannaisyksiköt" heading, text and the kJ–TJ formula box without touching it. No overlap with any figure, table, formula box or example (measured), stays in the column at 360/768, no horizontal overflow at any width, image loads, caption and credit unchanged; placement reads naturally (a large-energy example next to the unit multiples).

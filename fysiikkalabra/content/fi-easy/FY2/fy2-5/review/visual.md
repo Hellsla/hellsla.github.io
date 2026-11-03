@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 6579cb19a05b30fb
+CONTENT-HASH: b9db13cbb03ada41
 
 ## Blocking
+(none)
 
 ## Polish
+(none)
 
 ## Checked
-batch delta review: Playwright captures of the built page at 360 and 1280 px (lignite excavator); photo sits after a paragraph, 320 px wide, caption and credit under it, no horizontal overflow, float beside text at 1280, full-width flow at 360; alt text matches the image; caption plain Finnish and factual.
+batch delta review: preview/fi-easy/fy2-5.html opened in Chromium (Playwright) at 360, 768 and 1280 px; moved Garzweiler excavator photo captured with its surroundings. New spot after the "Koska lämpöarvo…" paragraph; at 1280 it floats beside E = Hm and its explanation and ends well above the fuel table. No overlap with any figure, table, formula box or example (measured), stays in the column at 360/768, no horizontal overflow at any width, image loads, caption and credit unchanged; placement reads naturally (lignite with a low heating value beside the heating-value law).

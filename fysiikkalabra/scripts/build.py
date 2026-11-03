@@ -26,7 +26,7 @@ it), and the pictures the text refers to (pics/<course>/<file>, shared/pics/<fil
 output folder, so every reference is relative and works on GitHub Pages under any base path. FY3's simulations
 stay in their lesson folders and keep their <id>-sim.js URLs.
 """
-import json, os, sys, re, shutil, pathlib, atexit, html as _h, markdown
+import hashlib, json, os, sys, re, shutil, pathlib, atexit, html as _h, markdown
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent)); from reviews import status as review_status, published_exercises, WorkTree
 import answers_shown, concept_cards, courses, fbdspec, figcat, guides, i18n, inquiry, investigations, local_courses, mathlayout, module_icons, practice, reading_tips, svgids, units
 from i18n import t as T
@@ -789,6 +789,15 @@ OUTS = {lang: SITE if lang == i18n.SOURCE else SITE / lang for lang in LANGS}
 for lang in LANGS: build_language(lang)
 link_languages()
 i18n.set_lang(i18n.SOURCE)
+# Cache busting (teacher 2026-11-03: a page fetched just after a deploy showed new HTML with yesterday's cached site.css):
+# every link to a shared stylesheet or script carries ?v=<first 8 hex of its SHA-256>, so a changed file is a new URL.
+SHARED = ("site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js", "investigation.js", "invfilter.js", "padstore.js")
+_ver = {f: hashlib.sha256((SITE / f).read_bytes()).hexdigest()[:8] for f in SHARED if (SITE / f).is_file()}
+_ref = re.compile(r'((?:href|src)="(?:\.\./)*)(' + "|".join(re.escape(f) for f in _ver) + r')(?:\?v=[0-9a-f]*)?"')
+for _page in SITE.rglob("*.html"):
+    if "vendor" in _page.relative_to(SITE).parts: continue
+    _old = _page.read_text(); _new = _ref.sub(lambda m: f'{m[1]}{m[2]}?v={_ver[m[2]]}"', _old)
+    if _new != _old: _page.write_text(_new)
 if SITE.name == "site.tmp":                      # check the render, then swap it in; the old site comes back if the swap fails
     expected += ["site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js", "investigation.js", "invfilter.js", "padstore.js"] + assets
     broken = [n for n in expected if not (SITE / n).is_file() or (SITE / n).stat().st_size == 0]

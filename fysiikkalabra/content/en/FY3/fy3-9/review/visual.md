@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 13e39de8c6ea70d3
+CONTENT-HASH: 7dacc875513ffc50
 
 ## Blocking
 (none)
@@ -8,4 +8,4 @@ CONTENT-HASH: 13e39de8c6ea70d3
 (none)
 
 ## Checked
-batch delta review: built page opened in Chromium at 360, 768 and 1280 px, photo (BARREL balloon) captured with its surrounding text and caption; image loads (WebP), no horizontal overflow, floats right beside text at 1280 and stands in the column at 360/768, caption short and factual, credit under the caption, credits list at page end, alt text describes the picture; fig-1 captures and the unchanged figures not affected.
+batch delta review: preview/en/fy3-9.html opened in Chromium (Playwright) at 360, 768 and 1280 px; moved BARREL balloon photo captured with its surroundings. New spot after the last Ydinajatus figure row (which ends above it); at 1280 it floats beside the Boyle formula section (p1V1 = p2V2, p = vakio·1/V) without touching the formula boxes. No overlap with any figure, table, formula box or example (measured), stays in the column at 360/768, no horizontal overflow at any width, image loads, caption and credit unchanged; placement reads naturally (gas expanding as outside pressure falls, next to Boyle's law).

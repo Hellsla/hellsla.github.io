@@ -1,8 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 8756e22c179b2687
+CONTENT-HASH: 62a1556990baa2d5
+
 ## Blocking
 (none)
+
 ## Polish
-- Kuvateksti luettelee energiamuodot oikein; kuva sopii muuntumisketjun perään.
+(none)
+
 ## Checked
-batch delta review: the added photo in the built preview at 360/768/1280 px (loads, no horizontal overflow, 320 px figure, credit under the caption), alt text vs image, Finnish and factual accuracy of the caption, placement in the page rhythm.
+batch delta review: preview/fy2-2.html opened in Chromium (Playwright) at 360, 768 and 1280 px; moved Artemis I launch photo captured with its surroundings. New spot after the Joule paragraph; at 1280 it floats beside the "Energian yksikkö ja kerrannaisyksiköt" heading, text and the kJ–TJ formula box without touching it. No overlap with any figure, table, formula box or example (measured), stays in the column at 360/768, no horizontal overflow at any width, image loads, caption and credit unchanged; placement reads naturally (a large-energy example next to the unit multiples).

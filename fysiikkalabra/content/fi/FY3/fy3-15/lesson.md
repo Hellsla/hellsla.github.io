@@ -97,8 +97,6 @@ Lauhdevoimalaitoksessa ketju on polttoaine, kattila, turbiini ja lauhdutin, gene
 
 Suurin häviö ei johdu pääosin kitkasta tai huonosta tekniikasta. Suurin osa siitä on höyrykierron hukkalämpöä, jota lämpövoimakone ei voi kokonaan välttää: osa lämmöstä on luovutettava kylmempään ympäristöön, kuten luvussa Kaasun tekemä työ ja lämpövoimakone nähtiin. Vesivoimala, tuulivoimala ja aurinkopaneeli eivät ole lämpövoimakoneita, joten niillä tätä pakollista häviötä ei ole: vesivoimalan hyötysuhde on noin $90\,\%$, tuulivoimalan $40$–$45\,\%$ ja aurinkopaneelin noin $20\,\%$. Näiden lukujen nimittäjä on kuitenkin virtaavan veden, tuulen tai säteilyn teho eikä ostettu polttoaine, joten ne eivät ole suoraan verrattavissa polttolaitoksen hyötysuhteeseen.
 
-<figure class="unit-photo"><img src="pics/fy3/nesjavellir.webp" alt="Vihreässä laaksossa vuorten keskellä on valkoisia voimalaitosrakennuksia, ja yhdestä nousee korkea valkoinen pilvi."><figcaption>Nesjavellirin geoterminen voimalaitos Islannissa tuottaa sähköä ja kaukolämpöä. Voimalaitokselta nouseva pilvi on tiivistynyttä vesihöyryä, joka vie hukkalämpöä ympäristöön.</figcaption></figure>
-
 Sähkön ja lämmön yhteistuotannossa lauhduttimen lämpö johdetaan kaukolämpöverkkoon. Jotta vesi lämpenee riittävästi, höyry lauhdutetaan korkeammassa lämpötilassa, ja turbiinista saadaan vähemmän sähköä. Kuvaaja näyttää esimerkkilaitoksen, jonka polttoaineteho on $400\,\text{MW}$: kun kaukolämpöteho kasvaa, sähköteho pienenee vähän, mutta hukkalämpö pienenee paljon enemmän. Kuvaajassa pystysuora matka kerrosten välillä on teho, ja kolmen kerroksen yhteenlaskettu korkeus on aina $400\,\text{MW}$.
 
 <svg viewBox="0 0 600 380" role="img" aria-label="Pinottu pinta-alakuvaaja yhteistuotantolaitoksesta, jonka polttoaineteho on 400 MW. Vaaka-akselilla on kaukolämpöteho 0–250 MW, pystyakselilla teho. Kun kaukolämpöteho kasvaa nollasta 232 MW:iin, sähköteho pienenee 160 MW:sta 120 MW:iin, kaukolämpö kasvaa ja hukkalämpö pienenee 240 MW:sta 48 MW:iin. Kolmen kerroksen yhteenlaskettu korkeus on aina 400 MW. Kuvaaja on mittakaavassa, ja sähkön ja lämmön riippuvuus on likimain suora." style="max-width:100%;font-size:24px">
@@ -143,6 +141,8 @@ Sähkön ja lämmön yhteistuotannossa lauhduttimen lämpö johdetaan kaukolämp
 </svg>
 
 Kokonaishyötysuhde nousee yhteistuotannossa jopa 85–$90\,\%$:iin, mutta sähkö ja lämpö eivät ole yhtä arvokkaita. Sähköä voi käyttää mihin tahansa, ja sitä voi siirtää satojen kilometrien päähän. Kaukolämpö kelpaa vain lämmitykseen, ja sen verkko ulottuu vain kaupunkiin. Siksi yhteistuotantolaitoksen sähkön ja lämmön suhde valitaan lämmön tarpeen mukaan: kesällä lämpöä tarvitaan vähän ja laitos tuottaa lähes pelkkää sähköä, talvella pakkasella lämpöä tarvitaan paljon.
+
+<figure class="unit-photo"><img src="pics/fy3/nesjavellir.webp" alt="Vihreässä laaksossa vuorten keskellä on valkoisia voimalaitosrakennuksia, ja yhdestä nousee korkea valkoinen pilvi."><figcaption>Nesjavellirin geoterminen voimalaitos Islannissa tuottaa sähköä ja kaukolämpöä. Voimalaitokselta nouseva pilvi on tiivistynyttä vesihöyryä, joka vie hukkalämpöä ympäristöön.</figcaption></figure>
 
 ## Kaava: Voimalaitoksen hyötysuhde
 Yhden vaiheen tai koko laitoksen hyötysuhde on hyödyksi saadun tehon suhde sisään tuotuun tehoon, ja hukkalämmön teho on se osa, joka ei tule hyödyksi:
