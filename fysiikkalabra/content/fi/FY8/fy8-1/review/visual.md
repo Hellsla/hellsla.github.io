@@ -1,22 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: 837c54c17f1db8f8
+CONTENT-HASH: 938cb46bc9a4e600
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] lesson.md "Kaava: Fotonin energia" — the h2 and the h3 beneath it are both "Fotonin energia", so the page shows the same heading twice in a row — rename the h3 (e.g. "Fotonin energia ja aallonpituus") or drop it.
-- [Minor] lesson.md Misconception paragraph — the quotation marks around "pallo" are straight ASCII; the rest of the site uses ”…” — use ”pallo”.
-- [Minor] lesson.md Elektronivoltti paragraph (theory-1280) — the inline chain $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 1\,\text{V} = …$ breaks across lines at a "·" on a laptop; inline maths should stay on one line — move the C·V step to display maths or split it into two sentences.
-- [Minor] exit ticket — the heading "Exit ticket" is English on a Finnish page (the activity is called lahtolippu) — "Lähtölippu" if that is not a project-wide template string.
-- [Minor] sim at 1280 — the "Nopeus" select spans the full width under the sliders, unlike the other controls; harmless, but a narrower control would match the row above. For science: the lamp's photon wave ends in mid-air in the sim canvas rather than at the plate; check that the schematic is acceptable.
+- [Minor] lesson.md "Taajuus ja aallonpituus", the new hc chain — "hc = … = … ≈ … = 1240 eV nm" is one long inline chain that wraps over three lines at 1280 px (breaks after "="); inline maths should stay on one line — move the hc conversion to its own display line or split it into two sentences.
+- [Minor] exit-ticket.json — the heading "Exit ticket" is still English on the Finnish page (open-exit-1280) — "Lähtölippu" if it is not a project-wide template string.
+- [Minor] sim canvas — the faint beam's lower corner ends at the plate's foot beside the e⁻ label (sim-1280); harmless, but the beam could end slightly higher on the face.
+- [Minor] lesson.md Kaava — the old duplicate heading is fixed (now "Taajuus ja aallonpituus"); the h2 "Kaava: Fotonin energia" and the h3 "Fotonin energia" under "Teoriatiivistelmä" (theory-1280-2) still repeat a title; optional.
 
 ## Checked
-- Contact sheets not needed; opened fig-2 (hero), fig-5 (ilmio), fig-7 (energia), fig-9 (kuvaaja) at 390 px, and top-390, intro-1280, sim-390, sim-1280.
-- example-390-1 and -2 (aligned chain, fractions, rows all readable); theory-1280-1/2/3 (figures beside text, display formulas, summary).
-- lab-1280-1, exp-koe-3-390-1, stage-tutki-390-3 (tables and controls), open-ennusta-1280-1, open-tarkista-1280-1 (feedback, hints inside cards), open-exit-1280.
-- Exercises were also opened for the second report (L1-1, L2-2, L3-3).
-- Spectral colours (red, green, violet photons) accepted as intended per the teacher's FY8 brief; the 390 px captures show no clipping or overlap.
+- sim-390 and sim-1280: new faint light beam from lamp to the plate's lit face; the light now visibly ends at the plate, readable, no clipping, spectral purple is as intended.
+- fig-7-390 (energia diagram with the changed aria-label; figure itself unchanged and intact).
+- theory-1280-2 (new hc paragraph, renamed h3, the rajataajuus sentence, the curly quotes elsewhere), exp-koe-3-390-1 (new "Arvaa ensin" intro, readable on a phone).
+- open-exit-1280 (new question 2 and answer: units in LaTeX, case endings correct, layout intact).
+- Finnish: new sentences (kellertävän vihreä, sinivihreä, "Samanvärisellä valolla", feedback of the red lamp) are fluent and consistent with the glossary.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 5 · accessibility 4

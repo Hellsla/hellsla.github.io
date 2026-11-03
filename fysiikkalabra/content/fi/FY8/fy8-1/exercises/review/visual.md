@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 5988de04ca4b7b84
+CONTENT-HASH: 8c9f2db725cf76bc
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] exercises.json fy8-1-L3-02 — "Tutki, mitä aaltomalli ennustaisi: oletetaan, että…" is a clumsy lead-in; the situation and the question are clear but the sentence runs long — e.g. "Aaltomallin mukaan elektroni kerää energiaa. Oletetaan, että…" and end with the question as its own sentence.
-- [Minor] exercises.json fy8-1-L3-01 — the task carries four given values and the unit instruction in one long paragraph; fine on a laptop, dense on a phone — no change required, optional.
+- [Minor] solutions.md fy8-1-L1-03 Järkevyys — "suunnilleen oranssin ja punaisen valon rajalla olevan fotonin energia" is correct and fluent but heavy; optional: "Se on suunnilleen oranssin ja punaisen rajakohdan fotonin energia." For science: check the boundary (about 2 eV, 620 nm) is the intended one.
 
 ## Checked
-- open-exercises-1280 level 1 part 1 (L1-01: given, formula, substitution rows, answer box, sanity check), level 2 part 2 (L2-01 sanity, L2-02 given and conversion rows), level 3 part 3 (L3-02 full solution with fractions and unit check).
-- Answer fields, units after the input, solution cards and Järkevyys blocks are legible and unclipped; every number carries its unit in LaTeX; the decimal comma and \cdot are used throughout.
+- The changed Järkevyys line in solutions.md read from the source (one wording change, no numbers or symbols; quantities already in LaTeX).
+- open-exercises-1280-2 (a solution block with given, formula, substitution, answer and Järkevyys cards): the layout of the solution cards is intact and unclipped; the changed line sits in the same block type.
 - No exercise figures exist.
 
 ## Scores

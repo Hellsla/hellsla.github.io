@@ -1,21 +1,18 @@
 VERDICT: FAIL
-CONTENT-HASH: 837c54c17f1db8f8
+CONTENT-HASH: 938cb46bc9a4e600
 
 ## Blocking
-- lesson.md:160; inquiry.json:396, :109 (sim `model`), :213 (koe-3) — **B**: intensity is equated with photon number ("Valon intensiteetti kertoo, kuinka monta fotonia pinnalle osuu sekunnissa"; tarkistus-1 feedback "Teho kertoo, kuinka monta fotonia lamppu lähettää sekunnissa"). That holds only at one frequency: intensity = photon flux · hf, so at equal intensity short-wavelength light carries fewer photons (1 W at 254 nm is about 0,4·10^18 photons/s; 100 W at 650 nm is about 3·10^20). The sim's slider is a photon rate (n = 0,4·I whatever λ is), so in koe-3 ("Intensiteetti on nyt 50 %; muuta vain aallonpituutta") n stays constant while λ varies, and that is not what a real constant intensity would give. — Fix: lesson.md:160 "Samanvärisellä valolla intensiteetti kertoo, kuinka monta fotonia…"; tarkistus-1 feedback "Teho kertoo, kuinka paljon energiaa lamppu lähettää sekunnissa; punaisia fotoneja tulee paljon, mutta yksikään ei riitä…"; add one sentence to the sim `model`: "Mallin intensiteetti on fotonien määrä sekunnissa; todellisessa valossa saman tehon lyhytaaltoisessa valossa on vähemmän fotoneja."
+- inquiry.json:374 (siirto, solution, Järkevyys) — **A**: "punaisen valon alku on noin 650 nm: putki havaitsee näkyvän valon lähes punaiseen asti". Red starts at about 620–630 nm, so a 653 nm limit already reaches into the red. It contradicts exercises/solutions.md L1-03 (≈620 nm "oranssin ja punaisen valon rajalla"). — Fix: "…punainen valo alkaa noin 620 nm:stä, joten putki havaitsee näkyvän valon punaisen alkupäähän asti; syvää punaista, kuten 700 nm, se ei havaitse."
 
 ## Polish
-- lesson.md:183 — "Natriumilla λ0 ≈ 544 nm, joten … vihreä … irrottavat": 544 nm lies inside green, so yellowish green (545–570 nm) does not free electrons; write "sinivihreä, sininen ja violetti" or "osa vihreästä".
-- lesson.md:126 (energia aria-label) — "alempi vaakaviiva on elektronin energia metallissa": this is the energy of the most loosely bound electron. The wording is acceptable as a simplification (C), but "heikoimmin sidotun elektronin energia" would be exact.
+- inquiry.json:272 (koe-3, solution, Järkevyys) — "punainen ja keltainen valo eivät irrota … kuten kokeessa 1 nähtiin": koe 1 tested only red at 650 nm. Write "kuten punaisella valolla kokeessa 1 nähtiin" or leave out the reference.
 
 ## Checked
-- Every number in the lesson and inquiry recomputed in one script (hc/λ, E_k,max, λ0 = 543,9 nm, f0 Na 5,51·10^14 / Zn 10,42·10^14 Hz, 500/400 nm → 0,20/0,82 eV, 540 nm → 0,016 eV, siirto 652,6 nm, tarkistus-2 2,756 eV, exit 6,6·10^-19 J = 4,1 eV): all agree within rounding.
-- Worked example 0,782 eV: symbolic first, the conversions and the two-decimal rounding reason are right.
-- Figure "energia" to scale: 60,1 px/eV; red 1,91, green 2,28, violet 3,05 eV, bracket 0,77 eV ✓.
-- Figure "kuvaaja" to scale: f0 Na 5,51, Zn 10,42 (·10^14 Hz), Na 4,34 eV at 16·10^14 Hz, parallel lines, slope triangle 4,14·10^-15 eV s, on the line ✓.
-- Figure "ilmio" and hero: 254 nm (4,88 eV) > Zn 4,3 eV > 650 nm (1,91 eV); leaves fall only under UV ✓.
-- Wave-model vs photon-model claims (threshold, no delay, intensity, frequency); multiphoton caveat "tavallisessa valossa" present ✓.
-- sim.js: E = hc/λ, emits when E ≥ W, Ek = E − W, n = 0,4·I, panel to scale; the sim's limits (every photon frees one electron, typical W) stated in the `model` box ✓.
-- koe-1/2/3 initial and locked values isolate the varied parameter; simState carries E, Ek, n ✓.
-- Predictions: exactly one correct option each; distractor feedback correct; johtopäätös model answer uses model values ✓.
-- Scope: within FY8 central contents (photon, quantisation); no de Broglie ✓.
+- Round-1 blocking item fixed: lesson "Samanvärisellä valolla intensiteetti kertoo, kuinka monta fotonia…"; tarkistus-1 feedback "Teho kertoo, kuinka paljon energiaa…"; the sim's `model` box says the model intensity is a photon rate and that equal power at short wavelength gives fewer photons; koe-3 intro says "mallissa fotoneja tulee yhtä monta" ✓. Round-1 polish fixed as well (544 nm colours, "heikoimmin sidotun" in the energia aria-label) ✓.
+- All numbers recomputed in one script: 500 nm 3,973·10^-19 J / 2,480 eV; hc = 1240 eV nm; example 4,905 − 3,653 = 1,252·10^-19 J = 0,782 eV; λ0 Na 543,9 nm, f0 Na 5,51·10^14, Zn 10,42·10^14 Hz; koe-3 300/400/500/540/545 nm → Ek 1,85/0,82/0,20/0,016/0 eV; siirto 652,6 nm, mistakes 4,59·10^14 Hz and 1,05·10^-16; tarkistus-1 4,88/1,91 eV; tarkistus-2 2,756 eV; exit 6,6·10^-19 J = 4,1 eV, 590 nm 2,10 eV, 470 nm 2,64 eV; kertaus 7,5/4,6·10^14 Hz ✓.
+- Figures "energia" and "kuvaaja" are to scale (Na 4,34 eV at 16·10^14 Hz, parallel lines, slope h); "ilmio" and hero: 254 nm > Zn > 650 nm ✓.
+- sim.js: E = hc/λ, emits iff E ≥ W, Ek = E − W, n = 0,4·I, electron speed ∝ √Ek, share 0,3–1 of Ek,max; the panel is to scale; light drawn in an approximate spectral colour, with UV shown as violet and said so in howto ✓.
+- koe-1/2/3: the initial and locked values isolate the varied parameter; simState carries E, Ek and n ✓.
+- Predictions and checks: exactly one correct option each, and every distractor's feedback is right ✓.
+- The johtopäätös and tarkistus-3 model answers use model values and the right physics ✓.
+- Scope is within FY8 (photon, quantisation, E = hf) and there is no de Broglie ✓.

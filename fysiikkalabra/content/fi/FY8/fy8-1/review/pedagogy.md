@@ -1,22 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: 837c54c17f1db8f8
+CONTENT-HASH: 938cb46bc9a4e600
 
 ## Blocking
 
 ## Polish
-- inquiry.json:108 (sim `howto`) and ennuste/koe texts — eV is used in every reading, prediction feedback and the experiments, but defined only in the theory section after Tutki. A student with no prerequisite sees "1,91 eV < 2,28 eV" and can compare, but not what the unit is. Fix: add one sentence to `howto`: "Energia on elektronivoltteina (eV), energian yksikkö, jolla fotonien energioita on kätevä lukea; 1 eV on noin 1,6·10⁻¹⁹ J."
-- lesson.md:290 (Järkevyys) and many solutions — "1240 eV nm : λ" is used as an estimate but never introduced; the student cannot reproduce it. Fix: in the theory after E = hc/λ add "Sijoittamalla saadaan $hc \approx 1240\,\text{eV nm}$, hyödyllinen arviointiin", or drop the shortcut from the example.
-- lesson.md:183 — "vihreä, sininen ja violetti irrottavat" is false for green above 544 nm (544 nm is mid-green) and contradicts the energy figure, where green is exactly hf = W. Fix: "valo, jonka aallonpituus on alle 544 nm (vihreän keskikohta), irrottaa".
-- inquiry.json:koe-3 — the frequency role (Ek grows with f) is found with no prediction, while intensity gets two. The key idea "taajuus ratkaisee" is the less argued one. Fix: a third short prediction before koe-3, or make the koe-3 intro ask for a guess first.
-- inquiry.json:lahtolippu / tarkistus-3 — the intensity-versus-frequency misconception, the lesson's core, is tested in only an optional explain; the exit ticket tests h·f and the meaning of W only. Fix: replace one exit ticket question with "Kirkastat punaista valoa; irtoaako sinkistä elektroneja? Miksi?"
+- inquiry.json:ennuste-1 — the hook already states that bright red light frees nothing, so the "right" option is nearly given before the student predicts. Fix: make prediction 1 about something the hook leaves open, e.g. natrium with 650 nm versus 500 nm, or ask what happens to the leaves if the red lamp is replaced by a dimmer UV lamp.
+- inquiry.json:koe-3 intro — the frequency role (Ek grows with f) gets a guess in the intro but not a committed, gated prediction like intensity does; "taajuus ratkaisee" is the less argued core idea. Fix: add a short third choice prediction before koe-3 (optional).
+- inquiry.json:tarkistus-1 distractor 4 feedback — "Elektroneja irtoaa siis UV-C-lampulla vähemmän kuin suuritehoisella UV-lampulla" brings in a lamp the student was never given. Fix: "…mutta niitä irtoaa: vähäinenkin UV-C-valo irrottaa elektroneja."
+- lesson.md "Yleinen virhekäsitys" — the second paragraph (photon is not a ball; interference needs the wave model) is a good guard but sits after the summary-level material; it will be skipped on a phone. Fix: keep, but shorten to two sentences.
 
 ## Checked
-- Opening question (UV vs. bright red) is committed to in the hook, predicted, investigated and answered in koe-1/koe-3 and the reflect; answer not disclosed before the commit.
-- Predictions can be refuted: koe-1 gives n = 0 at every intensity at 650 nm; koe-2 shows n doubling with Ek,max fixed.
-- Model values check out (1,91; 3,06; 0,78; 2,48 → 3,10 eV, Ek 0,20 → 0,82; λ0 = 544 nm); the model answer for johtopäätös uses table values.
-- Sim at 390 and 1280 px: legible, bars to scale, readout clear; experiments sit beside the sim at 1280.
-- Figures (hero, ilmio, energia, kuvaaja) are recognisable, colour paired with labels; descriptions give the data.
-- Worked example is staged one step per stage, with unit conversion, reasonableness and rounding explained.
-- Misconception feedback repairs (names evidence and energy comparison), distractors are misconception-based.
-- Finnish reads cleanly at upper-secondary level; case endings correct.
-- Workload is heavy but the optional items (kertaus, virhe, tarkistus-3, pohdi) give a one-lesson core path.
+- Round-1 polish done: eV defined in the sim howto, 1240 eV nm introduced in the Kaava section, the green-light claim corrected (544 nm is the limit), exit ticket now tests brightness versus colour.
+- Opening question (UV versus bright red) is committed to in the hook, predicted, investigated (koe-1, koe-3) and answered in johtopäätös and pohdi; nothing disclosed before the commit.
+- Predictions can be refuted: koe-1 gives n = 0 at every intensity at 650 nm; koe-2 shows n doubling with Ek,max fixed; each option's feedback repairs its misconception with evidence.
+- Model values recomputed (1,91; 3,06; 0,78; 0,20 -> 0,82 eV; lambda0 = 544 nm; 653 nm for 1,90 eV); calc and model answer call them model values.
+- Sim at 390 px (capture): legible, bars to scale and labelled with symbols, readout clear, help behind named boxes.
+- Figures (energia figure checked at 390 px) are recognisable, colour paired with labels and wavelengths; descriptions give the data without the answer.
+- Worked example staged one step per stage; conversion, rounding and reasonableness explained.
+- Core path is one lesson: kertaus, virhe, pohdi, tarkistus-3 are optional.
+- Finnish reads cleanly at upper-secondary level; case endings after number+unit correct.
