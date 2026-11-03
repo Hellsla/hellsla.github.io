@@ -1,21 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: 96c7da8962aef32f
+CONTENT-HASH: eb1f18684a64aec9
 
 ## Blocking
 
 ## Polish
-- inquiry.json:mittaus, epavarmuus — Tutki-vaiheen mittaus ja epävarmuustehtävä tulevat ennen teoriaa, ja tarvittavat tiedot ovat vain vihjeissä: kulmakerroin  = \mu_0 N : l$ ja epävarmuuksien yhteenlasku (suhteellisten epävarmuuksien summa) eivät ole missään tekstissä. Virtaa ei myöskään muuteta kummassakaan kokeessa, joten verrannollisuus  \sim I$ on vain annettu. Lisää kappaleeseen "Magneettivuon tiheyden määrittäminen" yksi lause epävarmuuden arviosta, tai lisää virtaa muuttava valinnainen koe.
-- inquiry.json:mittaus — tehtävä ei vaadi kuvaajan käyttöä: $ ja $\Delta A$ annetaan valmiina, joten kuva (fig-7) ei ole vastaamiseen tarpeen eikä opiskelija sovita tai lue mitään. Anna esim. vain taulukko ja pyydä lukemaan kulmakerroin kuvaajasta, tai kysy ensin ennuste suorasta.
-- lesson.md:hero-kuva — magneetti riippuu auton yläpuolella ilman kosketusta, joten kuva ei näytä, että magneetti nostaa romun (kuvan ja avauskysymyksen ristiriita). Piirrä auto kiinni magneetin pohjassa.
-- Aktiivisuus kohdistuu vain käämiin. Suoran johtimen kenttä, oikean käden sääntö ja rautasydän (tavoite 1) opitaan vain tekstistä ja tarkistuksesta; ei ennustetta tai koetta (esim. virran suunnan vaihto kompassilla). Valinnainen ennuste riittäisi.
-- lesson.md:209 — "koulun magneettikenttäanturin mittausalue" on väite, jota tekstissä ei perustella; korvaa vertailulla Maan kenttään.
+- inquiry.json:mittaus — kuva fig-7 ei ole vastaamiseen tarpeen: $A$ ja $\Delta A$ annetaan tekstissä valmiina, joten opiskelija ei lue tai sovita mitään (toistuu kierrokselta 1). Jätä $A$ pois tekstistä ja pyydä lukemaan kulmakerroin kuvaajan kahdesta pisteestä, tai ilmoita $A$ vasta vihjeessä.
+- inquiry.json:mittaus, epavarmuus — Tutki-vaihe on ennen teoriaa, joten relaatio $A = \mu_0 N : l$ ja epävarmuuksien summaussääntö ovat vain vihjeissä; teksti ("Magneettivuon tiheyden määrittäminen") tulee vasta Teoriatiivistelmässä. Lisää tehtävän tekstiin yksi lause "kulmakerroin kertoo $\mu_0 N : l$:n", tai siirrä tehtävät Sovella-vaiheeseen.
+- Suoran johtimen kenttä ja oikean käden sääntö (tavoite 1) opitaan vain tekstistä ja tarkistus-1:stä; ei ennustetta eikä koetta (esim. kompassi ja virran suunnan vaihto). Valinnainen ennuste riittäisi.
+- inquiry.json:hook — ensimmäinen ydinkysymys "miten tehdään niin voimakas" vastataan vasta pohdi-kohdassa, joka on valinnainen; tarkistus-3 (myös valinnainen) on ainoa muu paikka. Tee jommastakummasta ydinpolkua tai lisää yksi lause teoriaan.
 
 ## Checked
-- Polku: ennuste, koe, johtopäätös, teoria, esimerkki toimii; avauskysymykseen vastataan (pohdi, tarkistus-3); vain tavoitteen sisältö.
-- Ennusteet voi kumota kokeilla (koe-1 {,}46 \to 1{,}25\,\text{mT}$, koe-2 päässä {,}25\,\text{mT}$); laskin tarkistettu.
-- Oikean käden sääntö, pisteet ja ristit, N-navan paikka (kuva ja simulaatio) tarkistettu oikeiksi; lähtölipun vastaukset oikein.
-- Esimerkki ja siirto laskettu uudelleen: 2{,}6\,\text{mT}$, /bin/bash{,}27\,\text{A}$; mittaus {,}23$, epävarmuus {,}7\,\%$.
-- Virhekäsitys-osa tulee vasta kokeiden jälkeen, ei paljasta ennusteen vastausta.
-- Simulaatio 390 px: kuvaaja, liukusäätimet ja lukema selkeät; kokeessa lukitut parametrit näkyvät.
-- Suomi: termit (virtajohdin, käämi, kierrostiheys) ja sijamuodot kunnossa.
-- Työmäärä: ydinpolku mahtuu tuntiin, valinnaiset merkitty.
+- Polku: kertaus (valinn.), 2 ennustetta, 2 koetta, johtopäätös, teoria, esimerkki; vain tavoitteen sisältö; työmäärä noin tunti.
+- Ennusteet voi kumota kokeilla (koe-1 2,46 → 1,25 mT, koe-2 päässä 1,25 mT); koe 1 lukitsee I, N, x, dir (390 px -kuva), joten vain l muuttuu.
+- Ennusteiden vaihtoehdot ovat virhekäsityspohjaisia ja palaute korjaa käsityksen; ei vastauksen paljastusta ennen sitoutumista.
+- Hero-kuva: auto roikkuu nyt magneetin pohjassa, kuva tukee avauskysymystä.
+- Kuvat (johdin, käämi, sähkömagneetti, kuvaaja) selkeitä 390 px:llä; pisteet ja ristit, N-navan paikka ja kompassien pohjoispäät oikein; väri ei yksin kanna merkitystä.
+- Esimerkki on vaiheistettu (7 vaihetta), sisältää yksikkömuunnokset ja järkevyyden; ei toista harjoituksia.
+- Tarkistus 1 (kompassit, väärien vaihtoehtojen palaute nimeää virheen), 2 (laskenta, tyypilliset virheet) ja explain-kriteerit havainnoitavia; lähtölipun vastaukset oikein.
+- Suomi: termit ja sijamuodot (esim. "$20\,\text{cm}$:n") kunnossa.
+- 1280 px: simulaatio kokeiden vieressä, ohjaimet ja lukemat luettavissa; 390 px: ei leikkautumista.

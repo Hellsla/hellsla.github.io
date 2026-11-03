@@ -1,18 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 3e396d934e202161
+CONTENT-HASH: 190c2fdd98b183b0
 
 ## Blocking
 
 ## Polish
-- exercises.json:fy7-3-L3-02 — "Käsittele käämiä pitkänä käämänä" on kömpelö ja väärä sijamuoto; kirjoita "Oleta käämi pitkäksi."
-- solutions.md:fy7-3-L3-03 "Kysytty" — "johtimesta $1$ senttimetreinä" on virheellinen; kirjoita "{,}0\,\text{A}$:n johtimesta senttimetreinä".
-- exercises.json — yksikään tehtävä ei kysy kentän suuntaa (oikean käden sääntö on tavoite); suunta tulee vain ratkaisuissa L2-04 ja L3-03. Lisää tasolle 2 tehtävä, jossa pyydetään suunta ja napa.
-- Kenttien vektorisumma (L2-04, L3-01, L3-03) ei ole opetettu tekstissä, vain ratkaisujen periaate-kohdassa selitetään; harkitse yhtä lausetta teoriaan.
-- exercises.json:L1 — viisi tehtävää ovat kaikki suoraa sijoitusta; vaihtelu on hyvä (kaapeli, voimajohto, lamppu), mutta yksi pelkkä suureen valinta (kumpi kaava) puuttuu.
+- exercises.json — edellisen kierroksen huomio on edelleen voimassa: yksikään tehtävä ei kysy kentän suuntaa tai napaa (oikean käden sääntö on slotin tavoite); lisää tasolle 2 tehtävä, jossa suunta päätellään.
+- solutions.md:fy7-3-L3-02 "Järkevyys" — uusi lause on oikein ($0{,}8 : \sqrt{0{,}8^2 + 0{,}5^2} \approx 0{,}85$), mutta pitkä; jaa kahdeksi virkkeeksi: "... paksuuteensa verrattuna. Kun pituus on vain $1{,}6$-kertainen halkaisijaan nähden, ..."
+- solutions.md:fy7-3-L2-02 "Periaate" — "kenttä on juuri $14\,\mu\text{T}$ vain yhdellä etäisyydellä" on epäselvä; kirjoita "kenttä on $14\,\mu\text{T}$ täsmälleen yhdellä etäisyydellä".
 
 ## Checked
-- Kaikki 12 vastausta laskettu uudelleen ja täsmäävät toleransseineen.
-- Tasot nousevat: L1 sijoitus, L2 ratkaisu tai kaksi vaihetta, L3 päättely (kompassin kulma, kenttien nollakohta).
-- Mikään tehtävä ei toista esimerkkiä (600 kierrosta, 15 cm).
-- Ratkaisut etenevät: annettu, kysytty, periaate selitetty, muunnokset, sijoitus, järkevyys.
-- Merkitsevät numerot ja yksiköt oikein; tehtävät lyhyitä ja autenttisia.
+- exercises.json:fy7-3-L3-02 — "Oleta käämi pitkäksi ja oleta, että ..." korjaa aiemman kömpelön muodon; teksti on nyt luontevaa suomea, kysymys viimeisenä virkkeenä.
+- solutions.md:fy7-3-L3-02 — vastaus 15 km pysyy ennallaan, ja uusi huomautus (noin 85 %, lankaa tarvitaan enemmän) on fysikaalisesti oikein ja opettaa mallin rajan.
+- solutions.md:fy7-3-L3-03 "Kysytty" — "johtimesta, jossa kulkee virta $I_1$, senttimetreinä" korjaa aiemman virheellisen "johtimesta $1$" -muodon.
+- solutions.md:fy7-3-L1-04 "Järkevyys" — heikkenee "useimmissa kohdissa ja varsinkin kauempana" on tarkempi kuin edellinen; opiskelija voi seurata.
+- solutions.md:fy7-3-L2-02 — takaisinsijoituksen yksiköt ($\tfrac{\text{Vs}}{\text{Am}} \cdot \text{A} : \text{m} = \text{T}$) nyt mukana ja tulos $1{,}4 \cdot 10^{-5}\,\text{T}$ täsmää.
+- Muutokset eivät muuta vastauksia, tasoja (5/4/3) eivätkä esimerkin toistoa; edellisen kierroksen muut tarkistukset pätevät.
