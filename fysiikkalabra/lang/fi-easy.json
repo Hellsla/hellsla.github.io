@@ -1849,6 +1849,26 @@
       "purkautui": "$\\text{purkautui}$",
       "lapilyonti-teksti": "Läpilyönti: kenttä on liian voimakas, eriste alkaa johtaa ja levyjen välillä purkautuu kipinä.",
       "purkautui-teksti": "Kondensaattori purkautui läpilyönnissä. Kytke lähde uudelleen, niin se latautuu."
+    },
+    "fy6-11": {
+      "u_lbl": "Jännite $U = {{u}}\\,\\text{kV}$",
+      "d_lbl": "Levyjen etäisyys $d = {{d}}\\,\\text{cm}$",
+      "q_lbl": "Pallon varaus $q = {{q}}\\,\\text{nC}$",
+      "x_lbl": "Vaakasuora paikka $x = {{x}}\\,\\text{cm}$",
+      "h_lbl": "Korkeus alalevystä $h = {{h}}\\,\\text{cm}$",
+      "kentta": "Kenttä",
+      "viivat": "kenttäviivat",
+      "vektorit": "kenttävektorit",
+      "piilossa": "ei näytetä",
+      "selite": "Vihreät viivat ovat kenttäviivoja. Punainen nuoli on palloon kohdistuva sähköinen voima.",
+      "lukema": "Voima-anturi: $F = {{f}}\\,\\mu\\text{N}$, suunta: {{dir}}",
+      "dir_alas": "alas",
+      "dir_ylos": "ylös",
+      "dir_vino_alas": "vinosti alas",
+      "dir_vino_ylos": "vinosti ylös",
+      "dir_ei": "ei voimaa",
+      "c_u": "$U = {{u}}\\,\\text{kV}$",
+      "c_d": "$d = {{d}}\\,\\text{cm}$"
     }
   },
   "practice": {

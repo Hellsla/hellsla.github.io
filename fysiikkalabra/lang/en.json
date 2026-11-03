@@ -1849,6 +1849,26 @@
       "purkautui": "$\\text{discharged}$",
       "lapilyonti-teksti": "Breakdown: the field exceeds the dielectric strength, the dielectric starts to conduct and a spark discharges between the plates.",
       "purkautui-teksti": "The capacitor discharged in the breakdown. Connect the source again to charge it."
+    },
+    "fy6-11": {
+      "u_lbl": "Voltage $U = {{u}}\\,\\text{kV}$",
+      "d_lbl": "Plate distance $d = {{d}}\\,\\text{cm}$",
+      "q_lbl": "Charge of the ball $q = {{q}}\\,\\text{nC}$",
+      "x_lbl": "Horizontal position $x = {{x}}\\,\\text{cm}$",
+      "h_lbl": "Height above the lower plate $h = {{h}}\\,\\text{cm}$",
+      "kentta": "Field",
+      "viivat": "field lines",
+      "vektorit": "field vectors",
+      "piilossa": "not shown",
+      "selite": "Green lines are field lines. The red arrow is the electric force on the ball.",
+      "lukema": "Force sensor: $F = {{f}}\\,\\mu\\text{N}$, direction: {{dir}}",
+      "dir_alas": "down",
+      "dir_ylos": "up",
+      "dir_vino_alas": "diagonally down",
+      "dir_vino_ylos": "diagonally up",
+      "dir_ei": "no force",
+      "c_u": "$U = {{u}}\\,\\text{kV}$",
+      "c_d": "$d = {{d}}\\,\\text{cm}$"
     }
   },
   "practice": {
