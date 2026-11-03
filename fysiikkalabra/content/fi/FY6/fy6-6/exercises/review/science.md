@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 7e839286024975e7
+CONTENT-HASH: a873417c3d7f23d9
 
 ## Blocking
 
 ## Polish
-- exercises.json (fy6-6-L1-05), figure ex-pi and the answers.py comment — this is still open from round 1. The four points are called "mittauspisteet", yet they lie exactly on $P = 5I^2$. Call them model values, or add the guardrail sentence "Todellisissa mittaussarjoissa mittauspisteet eivät yleensä sijaitse täsmälleen samalla käyrällä …" to the solution.
+- exercises/solutions.md (L1-05 Järkevyys) — "Kun virta kaksinkertaistuu, teho nelinkertaistuu … kuten Joulen laki vaatii": correct here (one resistor, constant R read from the graph), but the brief now states the condition "resistanssi pysyy samana"; adding "samassa vastuksessa" would keep the wording identical.
 
 ## Checked
-- Round-1 Blocking (L2-04) is fixed. The task now gives "lämpötila on aluksi 20 °C" and "eikä vettä höyrysty", so the model's assumptions are in the task, and the solution's "eikä olomuoto muutu" matches them. The end temperature is 20 + 17,9 ≈ 38 °C, far below boiling, so the assumption is consistent.
-- Round-1 Polish is applied: L2-03 adds "vaikka koko jännite olisi vastuksen yli", and L1-03 names 230 V as three significant figures.
-- All twelve answers were recomputed with independent formulas: 12 W, 1,88 W, 1,996 kW, 64,8 kJ, 5,0 Ω, 7,83 A, 3,2 W, 15,8 V, 17,9 K, 20,4 W, 287,5 Ω, 12 Ω. They agree with answers.py and exercises.json.
-- The assumptions are stated where they are used: constant lamp resistance (L3-01), resistance "kun sarja palaa" (L3-02), an ideal source and wires (L2-02, L3-03), no losses (L2-04).
-- Every solution is symbolic first, its conversions are right, its rounding follows the limiting datum, and its reasonableness checks are real cross-checks.
-- The energy wording follows the FY6 rule: no "lämmöksi"; "sisäenergiaksi", "siirtyy ympäristöön".
+- The exercise files are unchanged since my last PASS; the hash moved with the brief (Joule's-law condition in Tiivistelmä). The brief's new wording agrees with every solution.
+- All 12 answers recomputed in one script with my own formulas (L3-01 from rated resistances in series, L3-02 via P per lamp = U₁²/R, L3-03 from P₂ = P − U²/R₁): 12; 1,88; 1,996 kW; 64,8 kJ; 5,0 Ω; 7,83 A; 3,2 W; 15,8 V; 17,9 K; 20,4 W; 287,5 Ω; 12 Ω — all match answers.py and exercises.json.
+- Energy wording: "sisäenergiaksi muuttuva teho", L2-04 states its no-loss and no-boiling assumptions, Q = cmΔT used without a change of state.
+- L3-01 states the constant-resistance assumption; L2-02, L3-03 neglect source and wire resistance in the task text.
+- Figure ex-pi: four points on P = 5 Ω · I², values given in the description, no resistance shown.
+- Solutions complete, symbolic first, rounding reasons right, checks real (energy balance in L2-02, L3-03).

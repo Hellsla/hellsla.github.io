@@ -1,19 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 6a20ede240385bd9
+CONTENT-HASH: 57b913a6fc66f29e
 
 ## Blocking
 
 ## Polish
-- inquiry.json:16 (hook) — "Viimeiset kymmenen prosenttia vievät lähes yhtä kauan kuin koko alkuosa": in the lesson's own constant-voltage model 90 → 100 % takes about 18 min against 30 min for 10 → 52 %. As a description of a real phone (CC/CV) it is fair (C), but "melkein yhtä kauan" may make a student expect the sim to reproduce it; "pitkään" would avoid that.
+- inquiry.json:112 (sim howto) — the glow is `S.Ps / 0.5` in sim.js, i.e. the power R_s I² (a rate), but the text says "kuinka paljon sähköenergiaa muuttuu … sisäenergiaksi" (an amount). Write "kuinka nopeasti sähköenergiaa muuttuu" or "kuinka suuri teho muuttuu".
+- lesson.md:281 — "ei päädy määriteltyyn hyödylliseen käyttötarkoitukseen" is the guardrail sentence; the next sentence makes it concrete, but naming the useful part here ("akkuun kemialliseksi energiaksi") would tie the general rule to η = W_akku : W_lat directly.
+- inquiry.json:16 (hook, carried from round 2) — "lähes yhtä kauan kuin koko alkuosa" is CC/CV behaviour; the lesson's constant-voltage model gives 18 min for 90 → 100 % against 30 min for 10 → 52 %.
 
 ## Checked
-- Round-1 Blocking fixed: sim `model` now says a too-low charger discharges the cell until its source voltage has fallen to the charger's voltage, and only a charger below 3,40 V empties it. This matches sim.js `cell()` (x → 0 asymptotically; stop at q = 0 only when x0 < 0 reaches empty) and my own run: 3,6 V from 80 % settles at 25 %, 3,3 V empties it.
-- Round-1 Polish taken: virhe feedback "noin 15 %" (4,57 A vs 4,0 A, +14 %); siirto "lähes kolmannes" (30 %); koe-2 intro wording.
-- Hook "noin puoleen": model gives 10 % → 52 % in 0,5 h at 4,5 V, 0,40 Ω.
-- Every number recomputed in one script: start 2,2 A; drops 0,88/0,22/3,40 V; terminal 3,62 V; koe-1 1,47/0,99/0,66 A; koe-2 −0,88/−0,08/0,32/1,12 A; koe-3 2,01/1,37/0,87 h, 86/83/76 %; full charge 9,0/7,6 Wh, η 84 %.
-- Worked example 2,0 A, 3,90 V and the 16,8 A check; virhe 35 A vs 4,0 A; siirto 1,68 with mistakes 2,5/2,40/1,75; check 2 6,0 A (48 A, 7,2 A), 12,9 V both ways; exit ticket 9000 C.
-- Energy wording "sisäenergiaksi, joka siirtyy lämpönä"; no "lämmöksi"; efficiency sentence follows the guardrail.
-- The cell neutral, stores chemical energy; capacity is charge, energy UQ with nominal voltage.
-- Predictions: exactly one correct option each; distractor feedback right with model values.
-- Experiments vary one parameter and lock the rest; simState keys I, E, soc, tFull, Wlat, eta exist.
-- Voltage law and conditions ($U_\text{lat} > E$, diode) stated.
+- Diff since the last science PASS (d18a4faa, after 8520f10b): only the efficiency paragraph and the sim howto changed; no number, formula or symbol.
+- Efficiency: "enintään 100 %", "usein alle 100 %" now matches the guardrail wording; "Latauksessa näin käy aina, koska virta lämmittää resistansseja R ja R_s" is right in the lesson's model (R, R_s > 0 whenever I ≠ 0) and consistent with "loput muuttuvat resistanssien R ja R_s sisäenergiaksi, joka siirtyy lämpönä ympäristöön" two lines up and the energy-flow figure (1,1 + 0,3 Wh).
+- η = 7,6 Wh : 9,0 Wh = 0,844 ≈ 84 %; W_lat = 4,5 V · 2,0 Ah = 9,0 Wh recomputed.
+- Howto energy wording: sähköenergia → sisäenergia in R_s, no "lämmöksi"; glow indeed tracks R_s I² in the cell.
+- Unchanged numbers rely on my earlier recomputation (round 2): 2,2 A; 0,88/0,22/3,40 V; 3,62 V; koe-1..3 values; worked example 2,0 A, 3,90 V; virhe, siirto, check 2, exit ticket 9000 C.
+- Predictions, experiments, simState keys and model answers unchanged; one correct option each still holds.
+- Deterministic checks all ok; no physics lint warnings listed.
