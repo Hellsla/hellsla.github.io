@@ -49,13 +49,13 @@ def water_rays():
             "30 astetta on pienempi kuin rajakulma: säde taittuu ilmaan normaalista poispäin, ja heikko osa heijastuu "
             "takaisin veteen. Keskellä tulokulma on rajakulma 48,8 astetta: taittunut säde kulkee pitkin pintaa. "
             "Oikealla tulokulma 65 astetta on suurempi kuin rajakulma: ilmaan ei pääse valoa, vaan koko säde "
-            "heijastuu takaisin veteen, eli tapahtuu kokonaisheijastus.")
+            "heijastuu takaisin veteen, eli tapahtuu kokonaisheijastuminen.")
     ys, lx, ly = 150, 90, 312
     f.rect(12, ys, 576, 336 - ys, H.grad(f, "fy712w-water", WATER_LIGHT, WATER))
     f.line(12, ys, 588, ys, INK, 2)
     hits = []
     for deg in (30.0, math.degrees(math.asin(1 / 1.33)), 65.0):
-        hx = lx + (ly - ys) * math.tan(math.radians(deg)); hits.append((hx, deg))
+        hx = lx + (ly - 10 - ys) * math.tan(math.radians(deg)); hits.append((hx, deg))
     for hx, deg in hits:
         normal(f, hx, 66, hx, 226)
     # incoming rays from the lamp
@@ -82,7 +82,7 @@ def water_rays():
     f.tex(hits[1][0] + 8, 36, r"\alpha = \alpha_\text{r}", "middle", w=110)
     f.tex(hits[2][0], 36, r"\alpha > \alpha_\text{r}", "middle", w=110)
     f.tex(584, 100, r"\text{ilma}", "end")
-    f.tex(584, 246, r"\text{kokonaisheijastus}", "end", color=WHITE)
+    f.tex(584, 246, r"\text{kokonaisheijastuminen}", "end", color=WHITE)
     f.tex(584, 306, r"\text{vesi},\ n = 1{,}33", "end", color=WHITE)
     return f.svg()
 

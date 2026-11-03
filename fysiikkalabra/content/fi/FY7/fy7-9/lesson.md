@@ -318,18 +318,18 @@ Sähkömagneettisen säteilyn lajit eroavat toisistaan vain aallonpituudeltaan j
   <foreignObject x="273.5" y="337.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{näkyvä valo}$</div></foreignObject>
 </svg>
 
-| Alue | Aallonpituus | Lähteitä | Käyttöä ja vaikutuksia |
-|---|---|---|---|
-| radioaallot | yli $1\,\text{m}$ | lähettimen antenni | radio, televisio |
-| mikroaallot | $1\,\text{mm}$–$1\,\text{m}$ | antenni, magnetroni | matkapuhelin, tutka, uuni |
-| infrapuna | $750\,\text{nm}$–$1\,\text{mm}$ | kaikki kappaleet | lämpösäteily, lämpökamera |
-| näkyvä valo | $380\,\text{nm}$–$750\,\text{nm}$ | Aurinko, hehkuvat kappaleet, LED | näkeminen, yhteyttäminen |
-| ultravioletti | $10\,\text{nm}$–$380\,\text{nm}$ | Aurinko, UV-lamppu | D-vitamiini, palovamma, desinfiointi |
-| röntgen | $0{,}01\,\text{nm}$–$10\,\text{nm}$ | röntgenputki | röntgenkuvaus |
-| gamma | alle noin $0{,}01\,\text{nm}$ | radioaktiiviset atomiytimet | sädehoito, sterilointi |
+| Alue | Aallon­pituus | Lähteitä ja käyttöä |
+|---|---|---|
+| radio­aallot | yli $1\,\text{m}$ | antenni; radio, televisio |
+| mikro­aallot | $1\,\text{mm}$–$1\,\text{m}$ | antenni; matkapuhelin, tutka, uuni |
+| infrapuna | $750\,\text{nm}$–$1\,\text{mm}$ | kaikki kappaleet; lämpökamera |
+| näkyvä valo | $380$–$750\,\text{nm}$ | Aurinko, hehkuva kappale; näkeminen |
+| ultra­violetti | $10$–$380\,\text{nm}$ | Aurinko; D‑vitamiini, palovamma |
+| röntgen | $0{,}01$–$10\,\text{nm}$ | röntgen­putki; röntgen­kuvaus |
+| gamma | alle $0{,}01\,\text{nm}$ | atomi­ytimet; sädehoito, sterilointi |
 
 ### Säteilyn vaikutukset
-Säteilyn vaikutus riippuu sen aallonpituudesta. Radioaallot, mikroaallot ja infrapunasäteily lisäävät aineen sisäenergiaa: mikroaaltouunin säteily saa ruoan vesimolekyylit värähtelemään, ja infrapuna lämmittää ihoa. Röntgensäteily ja gammasäteily sekä lyhytaaltoisin ultraviolettisäteily ovat **ionisoivaa säteilyä**: ne voivat irrottaa elektroneja atomeista ja vaurioittaa soluja. Myös röntgenputki on kiihtyvän varauksen lähde: siinä nopeat elektronit pysähtyvät metalliin, ja niiden jyrkkä hidastuminen synnyttää röntgensäteilyä. Röntgensäteily läpäisee pehmytkudoksen paremmin kuin luun, joten luut näkyvät kuvassa.
+Säteilyn vaikutus riippuu sen aallonpituudesta. Radioaallot, mikroaallot ja infrapunasäteily lisäävät aineen sisäenergiaa: mikroaaltouunin säteily saa ruoan vesimolekyylit kääntyilemään edestakaisin, ja infrapuna lämmittää ihoa. Röntgensäteily ja gammasäteily sekä lyhytaaltoisin ultraviolettisäteily ovat **ionisoivaa säteilyä**: ne voivat irrottaa elektroneja atomeista ja vaurioittaa soluja. Myös röntgenputki on kiihtyvän varauksen lähde: siinä nopeat elektronit pysähtyvät metalliin, ja niiden jyrkkä hidastuminen synnyttää röntgensäteilyä. Röntgensäteily läpäisee pehmytkudoksen paremmin kuin luun, joten luut näkyvät kuvassa.
 
 ### Kaikki kappaleet säteilevät
 Aineen hiukkaset ovat jatkuvassa lämpöliikkeessä, ja niiden varaukset ovat kiihtyvässä liikkeessä. Siksi jokainen kappale lähettää sähkömagneettista säteilyä, jota kutsutaan lämpösäteilyksi (luku *Lämmön siirtyminen, energiatasapaino ja ilmastonmuutos*). Säteilyssä on mukana kaikkia aallonpituuksia, eli sen spektri on jatkuva. Huoneenlämpöinen kappale säteilee lähes pelkästään infrapunaa, jota silmä ei näe. Kun kappaletta kuumennetaan, säteily voimistuu ja sen pääosa siirtyy lyhyemmille aallonpituuksille. Noin $800\,\text{K}$:n lämpötilassa säteilyssä on jo niin paljon punaista valoa, että kappale hehkuu pimeässä tummanpunaisena. Kuumempana se hehkuu oranssina, keltaisena ja lopulta valkoisena.
@@ -342,7 +342,7 @@ Mustan kappaleen spektrin huippu eli aallonpituus, jolla kappale säteilee voima
 ```latex
 \lambda_\text{max} T = b
 ```
-missä $\lambda_\text{max}$ on spektrin huipun aallonpituus (m), $T$ kappaleen pintalämpötila (K) ja $b = 2{,}898 \cdot 10^{-3}\,\text{m} \cdot \text{K}$ Wienin siirtymälain vakio. Lämpötilan on oltava absoluuttinen lämpötila, joten celsiusasteina annettu lämpötila muutetaan ensin kelvineiksi lisäämällä siihen $273{,}15$. Kun absoluuttinen lämpötila kaksinkertaistuu, huipun aallonpituus puolittuu. Laki koskee mustaa kappaletta, ja todellisille kappaleille, kuten Auringolle ja hiillokselle, se pätee likimain.
+missä $\lambda_\text{max}$ on spektrin huipun aallonpituus (m), $T$ kappaleen pintalämpötila (K) ja $b = 2{,}898 \cdot 10^{-3}\,\text{m} \cdot \text{K}$ Wienin siirtymälain vakio. Lämpötilan on oltava absoluuttinen lämpötila, joten celsiusasteina annettu lämpötila muutetaan ensin kelvineiksi lisäämällä siihen $273{,}15\,\text{K}$. Kun absoluuttinen lämpötila kaksinkertaistuu, huipun aallonpituus puolittuu. Laki koskee mustaa kappaletta, ja todellisille kappaleille, kuten Auringolle ja hiillokselle, se pätee likimain.
 
 <svg data-fig="curves" viewBox="0 0 600 340" role="img" aria-label="Kuvaaja mittakaavassa: mustan kappaleen säteilyn spektri kolmessa lämpötilassa. Vaaka-akselilla aallonpituus nanometreinä nollasta 2000:een, pystyakselilla säteilyteho pinta-alaa ja aallonpituusväliä kohti megawatteina neliömetriä ja mikrometriä kohti. Näkyvän valon alue 380–750 nm on taustalla värikaistana. Musta yhtenäinen käyrä on 6000 K, oranssi katkoviiva 5000 K ja punainen pisteviiva 4000 K. Huiput ovat aallonpituuksilla 483 nm, 580 nm ja 724 nm, ja niiden korkeudet ovat noin 100, 40 ja 13. Mitä kuumempi kappale, sitä korkeampi käyrä ja sitä lyhyemmällä aallonpituudella huippu on." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy79-cband" gradientUnits="userSpaceOnUse" x1="239.5" y1="0" x2="170.5" y2="0"><stop offset="0" stop-color="#c81e1e"/><stop offset="0.25" stop-color="#f08a1a"/><stop offset="0.4" stop-color="#e6e01a"/><stop offset="0.55" stop-color="#2fbf3f"/><stop offset="0.7" stop-color="#1aa0e6"/><stop offset="0.88" stop-color="#3b3bf0"/><stop offset="1" stop-color="#7a1fd1"/></linearGradient></defs>
@@ -408,7 +408,7 @@ missä $\lambda_\text{max}$ on spektrin huipun aallonpituus (m), $T$ kappaleen p
 </svg>
 
 ### Huippu kertoo lämpötilan
-Huoneenlämpöisen kappaleen ($300\,\text{K}$) spektrin huippu on noin $9{,}7\,\mu\text{m}$:n ja ihmisen ihon ($34\,{}^\circ\text{C}$ eli $307\,\text{K}$) noin $9{,}4\,\mu\text{m}$:n kohdalla, syvällä infrapuna-alueella. Lämpökamera mittaa säteilyä aallonpituuksilla noin $8$–$14\,\mu\text{m}$ ja muuttaa sen kuvaksi. Siksi se näkee ihmisen pimeässäkin: ihminen ei tarvitse valoa näkyäkseen kameralle, koska hän itse säteilee. Tummanpunaisena hehkuvan, noin $800\,\text{K}$:n kappaleen huippu on vielä infrapuna-alueella, noin $3{,}6\,\mu\text{m}$:n kohdalla, ja silmä näkee vain spektrin lyhytaaltoisen reunan. Auringon säteilyn huippu on noin $500\,\text{nm}$:n kohdalla, näkyvän valon keskellä.
+Huoneenlämpöisen kappaleen ($300\,\text{K}$) spektrin huippu on noin $9{,}7\,\mu\text{m}$:n ja ihmisen ihon ($34\,{}^\circ\text{C}$ eli $307\,\text{K}$) noin $9{,}4\,\mu\text{m}$:n kohdalla, syvällä infrapuna-alueella. Lämpökamera mittaa säteilyä aallonpituuksilla noin $8$–$14\,\mu\text{m}$ ja muuttaa sen kuvaksi. Siksi se näkee ihmisen pimeässäkin: ihminen ei tarvitse valoa näkyäkseen kameralle, koska hän itse säteilee. Tummanpunaisena hehkuvan, noin $800\,\text{K}$:n kappaleen huippu on vielä infrapuna-alueella, noin $3{,}6\,\mu\text{m}$:n kohdalla, ja silmä näkee vain spektrin lyhytaaltoisen reunan. Auringon säteilyn huippu on noin $500\,\text{nm}$:n (tarkemmin $502\,\text{nm}$:n) kohdalla, näkyvän valon keskellä.
 
 ### Säteilyteho kasvaa jyrkästi
 Kuumempi musta kappale säteilee jokaisella aallonpituudella enemmän kuin kylmempi, joten sen spektrikäyrä on kokonaan kylmemmän käyrän yläpuolella. Kappaleen pinta-alaa kohti säteilemä kokonaisteho on verrannollinen absoluuttisen lämpötilan neljänteen potenssiin (Stefanin–Boltzmannin laki). Kun lämpötila kaksinkertaistuu, jokainen neliömetri säteilee $16$-kertaisen tehon. Siksi hehkuva rauta lämmittää kasvoja jo metrien päästä. Miksi spektrikäyrä on juuri tämän muotoinen, selittää vasta kvanttifysiikka kurssilla *Aine, säteily ja kvantittuminen*.

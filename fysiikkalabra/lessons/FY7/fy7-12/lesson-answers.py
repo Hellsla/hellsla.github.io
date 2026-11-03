@@ -13,8 +13,8 @@ a["fig-water-30"] = degrees(asin(1.33 * sin(radians(30))))   # 30° in water -> 
 a["graph-water"] = degrees(asin(1 / 1.33))          # 48,8°
 a["graph-glass"] = degrees(asin(1 / 1.50))          # 41,8°
 a["graph-diamond"] = degrees(asin(1 / 2.42))        # 24,4°
-# diamond figure: back facets at 41° to the girdle, a vertical ray meets the first facet at 41° to its normal
-a["dia-inc1"] = 41.0                                # 41° > 24,4° (diamond): total reflection; 41° < 41,8° (glass): leaks
+# diamond figure: back facets at 38° to the girdle (atan(98,5 : 126)), a vertical ray meets the first facet at 38° to its normal
+a["dia-inc1"] = 38.0                                # 38° > 24,4° (diamond): total reflection; 38° < 41,8° (glass): leaks
 # fibre speed in the text: core n = 1,47 -> v = c / n
 a["v-fibre"] = c / 1.47                             # 2,04 · 10^8 m/s, "noin 2 · 10^8 m/s"
 # worked example: core n1 = 1,48, cladding n2 = 1,46

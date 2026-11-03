@@ -88,42 +88,42 @@ Luvussa *Valon heijastuminen ja taittuminen* nähtiin, että valo taittuu kahden
 ### Rajakulma ja kokonaisheijastuminen
 Tulokulmaa, jolla taitekulma on $90^\circ$, sanotaan **rajakulmaksi** $\alpha_\text{r}$. Rajakulmassa taittunut säde kulkee pitkin rajapintaa. Kun tulokulma on suurempi kuin rajakulma, taittumislaista ei saada taitekulmaa, koska sen sinin pitäisi olla suurempi kuin yksi. Toiseen aineeseen ei silloin pääse valoa lainkaan, vaan kaikki valo heijastuu takaisin heijastumislain mukaan. Tämä on **kokonaisheijastuminen**. Veden ja ilman rajapinnassa rajakulma on $48{,}8^\circ$. Siksi sukeltaja näkee vedenpinnan vinosti alhaalta katsottuna peilinä, josta näkyy pohja.
 
-<svg data-fig="water" viewBox="0 0 600 360" role="img" aria-label="Periaatekuva: veden pohjalla oleva lamppu lähettää kolme valonsädettä vedenpintaan eri tulokulmissa. Jokaiseen osumakohtaan on piirretty pinnan normaali katkoviivana. Vasemmalla tulokulma 30 astetta on pienempi kuin rajakulma: säde taittuu ilmaan normaalista poispäin, ja heikko osa heijastuu takaisin veteen. Keskellä tulokulma on rajakulma 48,8 astetta: taittunut säde kulkee pitkin pintaa. Oikealla tulokulma 65 astetta on suurempi kuin rajakulma: ilmaan ei pääse valoa, vaan koko säde heijastuu takaisin veteen, eli tapahtuu kokonaisheijastus." style="max-width:100%;font-size:24px">
+<svg data-fig="water" viewBox="0 0 600 360" role="img" aria-label="Periaatekuva: veden pohjalla oleva lamppu lähettää kolme valonsädettä vedenpintaan eri tulokulmissa. Jokaiseen osumakohtaan on piirretty pinnan normaali katkoviivana. Vasemmalla tulokulma 30 astetta on pienempi kuin rajakulma: säde taittuu ilmaan normaalista poispäin, ja heikko osa heijastuu takaisin veteen. Keskellä tulokulma on rajakulma 48,8 astetta: taittunut säde kulkee pitkin pintaa. Oikealla tulokulma 65 astetta on suurempi kuin rajakulma: ilmaan ei pääse valoa, vaan koko säde heijastuu takaisin veteen, eli tapahtuu kokonaisheijastuminen." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy712w-water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></linearGradient></defs>
   <rect x="12" y="150" width="576" height="186" fill="url(#fy712w-water)"/>
   <line x1="12" y1="150" x2="588" y2="150" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="183.5" y1="66" x2="183.5" y2="226" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
-  <line x1="274.5" y1="66" x2="274.5" y2="226" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
-  <line x1="437.5" y1="66" x2="437.5" y2="226" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
-  <path d="M90,302 L183.5,150" fill="none" stroke="#e64980" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M140,221 L138,235 L128,229 Z" fill="#e64980"/>
-  <path d="M90,302 L274.5,150" fill="none" stroke="#e64980" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M187,222 L181,235 L173,226 Z" fill="#e64980"/>
-  <path d="M90,302 L437.5,150" fill="none" stroke="#e64980" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M269,223.5 L259.5,234.5 L255,223.5 Z" fill="#e64980"/>
-  <path d="M183.5,150 L262,62" fill="none" stroke="#e64980" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M227,101.5 L222.5,115 L213.5,107 Z" fill="#e64980"/>
-  <path d="M183.5,150 L208.5,193.5" fill="none" stroke="#e64980" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.45"/>
-  <path d="M274.5,147 L414.5,147" fill="none" stroke="#e64980" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M350.5,147 L337.5,153 L337.5,141 Z" fill="#e64980"/>
-  <path d="M274.5,150 L317,187" fill="none" stroke="#e64980" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.7"/>
-  <path d="M437.5,150 L580,216.5" fill="none" stroke="#e64980" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M514,186 L500,185.5 L505,175 Z" fill="#e64980"/>
-  <path d="M166.5,179.5 A34,34 0 0,0 183.5,184" fill="none" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
-  <path d="M249,172.5 A34,34 0 0,0 274.5,184" fill="none" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
-  <path d="M406.5,164.5 A34,34 0 0,0 437.5,184" fill="none" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <line x1="178" y1="66" x2="178" y2="226" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
+  <line x1="263.5" y1="66" x2="263.5" y2="226" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
+  <line x1="416" y1="66" x2="416" y2="226" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
+  <path d="M90,302 L178,150" fill="none" stroke="#e64980" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M137,221 L135.5,235 L125,229 Z" fill="#e64980"/>
+  <path d="M90,302 L263.5,150" fill="none" stroke="#e64980" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M181,222 L175.5,235 L167.5,226 Z" fill="#e64980"/>
+  <path d="M90,302 L416,150" fill="none" stroke="#e64980" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M258.5,223.5 L249,234.5 L244,223.5 Z" fill="#e64980"/>
+  <path d="M178,150 L256,62" fill="none" stroke="#e64980" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M221,101.5 L217,115 L208,107 Z" fill="#e64980"/>
+  <path d="M178,150 L203,193.5" fill="none" stroke="#e64980" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.45"/>
+  <path d="M263.5,147 L403.5,147" fill="none" stroke="#e64980" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M339.5,147 L326.5,153 L326.5,141 Z" fill="#e64980"/>
+  <path d="M263.5,150 L305.5,187" fill="none" stroke="#e64980" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.7"/>
+  <path d="M416,150 L580,226.5" fill="none" stroke="#e64980" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M503.5,191 L489,190.5 L494,180 Z" fill="#e64980"/>
+  <path d="M161,179.5 A34,34 0 0,0 178,184" fill="none" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M238,172.5 A34,34 0 0,0 263.5,184" fill="none" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M385,164.5 A34,34 0 0,0 416,184" fill="none" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
   <rect x="74" y="310" width="32" height="18" rx="3" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
   <circle cx="90" cy="308" r="11" fill="#ffc078" stroke="#1f2933" stroke-width="2"/>
-  <foreignObject x="92.5" y="21.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\alpha < \alpha_\text{r}$</div></foreignObject>
-  <foreignObject x="227.5" y="21.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\alpha = \alpha_\text{r}$</div></foreignObject>
-  <foreignObject x="382.5" y="21.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\alpha > \alpha_\text{r}$</div></foreignObject>
+  <foreignObject x="87" y="21.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\alpha < \alpha_\text{r}$</div></foreignObject>
+  <foreignObject x="216.5" y="21.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\alpha = \alpha_\text{r}$</div></foreignObject>
+  <foreignObject x="361" y="21.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\alpha > \alpha_\text{r}$</div></foreignObject>
   <foreignObject x="526" y="85.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{ilma}$</div></foreignObject>
-  <foreignObject x="364" y="231.5" width="220" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#ffffff">$\text{kokonaisheijastus}$</div></foreignObject>
+  <foreignObject x="314" y="231.5" width="270" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#ffffff">$\text{kokonaisheijastuminen}$</div></foreignObject>
   <foreignObject x="435" y="291.5" width="149" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#ffffff">$\text{vesi},\ n = 1{,}33$</div></foreignObject>
 </svg>
 
 ### Vain suuremmasta taitekertoimesta pienempään
-Kokonaisheijastuminen voi tapahtua vain, kun valo tulee suuremman taitekertoimen aineesta pienemmän taitekertoimen aineeseen. Kun valo tulee ilmasta veteen tai lasiin, se taittuu normaalia kohti, ja taittunut säde on olemassa jokaisella tulokulmalla. Silloin osa valosta pääsee aina toiseen aineeseen, vaikka heijastuva osuus kasvaa suurilla tulokulmilla. Kokonaisheijastuksessa valoa ei katoa: sileästä rajapinnasta heijastunut säde vie mukanaan koko tulevan säteen tehon, kun aine ei absorboi valoa. Siksi kokonaisheijastus on parempi peili kuin metallipinta, joka absorboi osan valosta.
+Kokonaisheijastuminen voi tapahtua vain, kun valo tulee suuremman taitekertoimen aineesta pienemmän taitekertoimen aineeseen. Kun valo tulee ilmasta veteen tai lasiin, se taittuu normaalia kohti, ja taittunut säde on olemassa jokaisella tulokulmalla. Silloin osa valosta pääsee aina toiseen aineeseen, vaikka heijastuva osuus kasvaa suurilla tulokulmilla. Kokonaisheijastumisessa valoa ei katoa: sileästä rajapinnasta heijastunut säde vie mukanaan koko tulevan säteen tehon, kun aine ei absorboi valoa. Siksi kokonaisheijastuminen on parempi peili kuin metallipinta, joka absorboi osan valosta.
 
 ### Valokuitu
 **Valokuitu** on hiuksen paksuinen lasikuitu, jonka keskellä on ydin ja sen ympärillä kuori. Ytimen taitekerroin on hieman suurempi kuin kuoren, esimerkiksi $1{,}48$ ja $1{,}46$. Kuidun päähän lähes akselin suuntaisesti tuleva valo osuu ytimen ja kuoren rajapintaan hyvin loivasti eli suurella tulokulmalla, joka on suurempi kuin rajakulma. Valo kokonaisheijastuu joka kerta takaisin ytimeen ja etenee kuitua pitkin siksakkia myös silloin, kun kuitu kaartuu loivasti. Jos valo tulee kuidun päähän liian jyrkässä kulmassa, se osuu rajapintaan rajakulmaa pienemmällä tulokulmalla, ja jokaisessa osumassa osa siitä taittuu kuoreen ja katoaa ytimestä. Jyrkkä mutka pienentää tulokulmaa samalla tavalla, joten kuitua ei saa taittaa terävälle mutkalle.

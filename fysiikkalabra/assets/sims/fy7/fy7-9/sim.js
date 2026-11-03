@@ -4,7 +4,7 @@
 // student can find λ_max T = constant from the model values. The share of the power in visible light (380–750 nm) is
 // the integral of M_λ over that band divided by σT⁴. The glow colour comes from the curve through the CIE 1931
 // colour-matching functions (the multi-lobe fit of Wyman, Sloan & Shirley 2013) and sRGB; its brightness grows with
-// the luminance (no glow below about 750 K). The picture: the hot body on the left (above on a narrow screen), the
+// the luminance (no glow below 800 K). The picture: the hot body on the left (above on a narrow screen), the
 // curve on the right with the visible band in colour and the peak marked; the vertical scale follows the curve.
 // Static: drawn again on every frame, no animation. Every canvas text goes through lab() (simState.labels).
 new p5((p) => {

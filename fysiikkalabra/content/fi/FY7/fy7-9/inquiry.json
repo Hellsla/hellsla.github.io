@@ -240,7 +240,7 @@
         },
         {
           "text": "Kaava on väärin päin: oikein on $\\lambda_\\text{max} = b T$, jolloin huippu on $2{,}61\\,\\text{m}$.",
-          "feedback": "Kaava $\\lambda_\\text{max} = b : T$ on oikein, sillä kuumemman kappaleen huippu on lyhyemmällä aallonpituudella. Tulo $b T$ antaisi metrien aallonpituuden, joka on radioaaltojen alueella. Virhe on lämpötilassa: se on celsiusasteina, ja kelvineinä $T = 1173\\,\\text{K}$."
+          "feedback": "Kaava $\\lambda_\\text{max} = b : T$ on oikein, sillä kuumemman kappaleen huippu on lyhyemmällä aallonpituudella. Tulon $b T$ yksikkö olisi $\\text{m} \\cdot \\text{K}^2$ eikä metri, joten se ei voi olla aallonpituus. Virhe on lämpötilassa: se on celsiusasteina, ja kelvineinä $T = 1173\\,\\text{K}$."
         },
         {
           "text": "Laskussa ei ole virhettä, sillä lämpötilaero on sama celsiusasteina ja kelvineinä.",
@@ -314,20 +314,20 @@
       "tolerance": 0.02,
       "hints": [
         "Mikä laki yhdistää spektrin huipun ja lämpötilan, ja missä yksikössä se antaa lämpötilan?",
-        "Wienin siirtymälaista $T = b : \\lambda_\\text{max}$ kelvineinä, ja celsiusasteet ovat $273{,}15$ pienemmät.",
+        "Wienin siirtymälaista $T = b : \\lambda_\\text{max}$ kelvineinä, ja celsiusasteet saadaan vähentämällä siitä $273{,}15\\,\\text{K}$.",
         "$T = 2{,}898 \\cdot 10^{-3}\\,\\text{m} \\cdot \\text{K} : (2{,}1 \\cdot 10^{-6}\\,\\text{m}) = 1380\\,\\text{K}$."
       ],
       "mistakes": [
         {
           "value": 1380.0,
-          "feedback": "Tämä on lämpötila kelvineinä. Celsiusasteina se on $273{,}15$ pienempi."
+          "feedback": "Tämä on lämpötila kelvineinä. Celsiusasteet saadaan vähentämällä siitä $273{,}15\\,\\text{K}$."
         },
         {
           "value": 1653.15,
-          "feedback": "Lisäsit $273{,}15$, vaikka kelvineistä celsiusasteisiin siirryttäessä se vähennetään: $t = (1380 - 273{,}15)\\,{}^\\circ\\text{C}$."
+          "feedback": "Lisäsit $273{,}15\\,\\text{K}$, vaikka kelvineistä celsiusasteisiin siirryttäessä se vähennetään: $t = (1380 - 273{,}15)\\,{}^\\circ\\text{C}$."
         }
       ],
-      "solution": "**Annettu:** laavan spektrin huipun aallonpituus $\\lambda_\\text{max} = 2{,}1\\,\\mu\\text{m}$, Wienin siirtymälain vakio $b = 2{,}898 \\cdot 10^{-3}\\,\\text{m} \\cdot \\text{K}$; laava oletetaan mustaksi kappaleeksi\n\n**Kysytty:** laavan pintalämpötila $t$ celsiusasteina\n\n**Periaate:** Hehkuva laava säteilee likimain kuin musta kappale, joten sen spektrin huipun paikka riippuu vain pintalämpötilasta. Wienin siirtymälaki antaa absoluuttisen lämpötilan, joka muutetaan lopuksi celsiusasteiksi.\n\n**Kaava:** $\\lambda_\\text{max} T = b$, josta $T = \\dfrac{b}{\\lambda_\\text{max}}$, ja $t = T - 273{,}15\\,\\text{K}$ celsiusasteina\n\n**Muunnokset:** $\\lambda_\\text{max} = 2{,}1\\,\\mu\\text{m} = 2{,}1 \\cdot 10^{-6}\\,\\text{m}$. Lopuksi kelvineistä vähennetään $273{,}15$, jolloin saadaan celsiusasteet.\n\n**Sijoitus:** $T = \\dfrac{2{,}898 \\cdot 10^{-3}\\,\\text{m} \\cdot \\text{K}}{2{,}1 \\cdot 10^{-6}\\,\\text{m}} = 1380\\,\\text{K}$, joten $t = (1380 - 273{,}15)\\,{}^\\circ\\text{C} = 1106{,}85\\,{}^\\circ\\text{C}$\n\n**Vastaus:** $1{,}1 \\cdot 10^{3}\\,{}^\\circ\\text{C}$, kaksi merkitsevää numeroa kuten aallonpituudessa $2{,}1\\,\\mu\\text{m}$.\n\n**Järkevyys:** Huippu on infrapuna-alueella, mutta silmä näkee spektrin lyhytaaltoisen reunan, ja laava hehkuu oranssina. Lämpötila on samaa suuruusluokkaa kuin sulan kiven, noin tuhat celsiusastetta, ja paljon pienempi kuin Auringon pinnan $5772\\,\\text{K}$, kuten pitää."
+      "solution": "**Annettu:** laavan spektrin huipun aallonpituus $\\lambda_\\text{max} = 2{,}1\\,\\mu\\text{m}$, Wienin siirtymälain vakio $b = 2{,}898 \\cdot 10^{-3}\\,\\text{m} \\cdot \\text{K}$; laava oletetaan mustaksi kappaleeksi\n\n**Kysytty:** laavan pintalämpötila $t$ celsiusasteina\n\n**Periaate:** Hehkuva laava säteilee likimain kuin musta kappale, joten sen spektrin huipun paikka riippuu vain pintalämpötilasta. Wienin siirtymälaki antaa absoluuttisen lämpötilan, joka muutetaan lopuksi celsiusasteiksi.\n\n**Kaava:** $\\lambda_\\text{max} T = b$, josta $T = \\dfrac{b}{\\lambda_\\text{max}}$, ja $t = T - 273{,}15\\,\\text{K}$ celsiusasteina\n\n**Muunnokset:** $\\lambda_\\text{max} = 2{,}1\\,\\mu\\text{m} = 2{,}1 \\cdot 10^{-6}\\,\\text{m}$. Lopuksi kelvineistä vähennetään $273{,}15\\,\\text{K}$, jolloin saadaan celsiusasteet.\n\n**Sijoitus:** $T = \\dfrac{2{,}898 \\cdot 10^{-3}\\,\\text{m} \\cdot \\text{K}}{2{,}1 \\cdot 10^{-6}\\,\\text{m}} = 1380\\,\\text{K}$, joten $t = (1380 - 273{,}15)\\,{}^\\circ\\text{C} = 1106{,}85\\,{}^\\circ\\text{C}$\n\n**Vastaus:** $1{,}1 \\cdot 10^{3}\\,{}^\\circ\\text{C}$, kaksi merkitsevää numeroa kuten aallonpituudessa $2{,}1\\,\\mu\\text{m}$.\n\n**Järkevyys:** Huippu on infrapuna-alueella, mutta silmä näkee spektrin lyhytaaltoisen reunan, ja laava hehkuu oranssina. Lämpötila on samaa suuruusluokkaa kuin sulan kiven, noin tuhat celsiusastetta, ja paljon pienempi kuin Auringon pinnan $5772\\,\\text{K}$, kuten pitää."
     },
     {
       "id": "tarkistus-3",

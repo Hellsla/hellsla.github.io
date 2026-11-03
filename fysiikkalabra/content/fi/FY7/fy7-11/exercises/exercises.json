@@ -3,8 +3,8 @@
     {
       "id": "fy7-11-L1-01",
       "level": 1,
-      "text": "Punainen valo tulee ilmasta tyynen järven pintaan tulokulmassa $50{,}0^\\circ$. Veden taitekerroin punaiselle valolle on $1{,}331$. Kuinka suuri on taitekulma vedessä?",
-      "answer": 35.1375,
+      "text": "Punainen valo tulee ilmasta tyynen järven pintaan tulokulmassa $50{,}0^\\circ$. Veden taitekerroin punaiselle valolle on $1{,}332$. Kuinka suuri on taitekulma vedessä?",
+      "answer": 35.1072,
       "unit": "°",
       "tolerance": 0.02
     },
@@ -45,7 +45,7 @@
     {
       "id": "fy7-11-L2-01",
       "level": 2,
-      "text": "Valkoisen valon lyhyt välähdys lähetetään $5{,}00\\,\\text{km}$ pitkän kruunulasisen valokuidun läpi. Lasin taitekerroin on punaiselle valolle $1{,}5143$ ja violetille $1{,}5302$. Kuinka paljon myöhemmin violetti valo saapuu kuidun toiseen päähän kuin punainen? Oletetaan, että valo kulkee kuidun suuntaisesti. Anna vastaus nanosekunteina.",
+      "text": "Valkoisen valon lyhyt välähdys lähetetään $5{,}00\\,\\text{km}$ pitkän kruunulasisen valokuidun läpi. Lasin taitekerroin on punaiselle valolle $1{,}5143$ ja violetille $1{,}5302$. Kuinka paljon myöhemmin violetti valo saapuu kuidun toiseen päähän kuin punainen? Oletetaan, että kumpikin väri etenee kuidussa nopeudella $v = c : n$ ja kulkee kuidun suuntaisesti. Anna vastaus nanosekunteina.",
       "answer": 265.0,
       "unit": "ns",
       "tolerance": 0.02
@@ -88,16 +88,16 @@
     {
       "id": "fy7-11-L3-02",
       "level": 3,
-      "text": "Punainen valo tulee vesipisaran reunan lähelle tulokulmassa $80{,}0^\\circ$. Veden taitekerroin punaiselle valolle on $1{,}331$. Valo heijastuu kerran pisaran takapinnasta ja taittuu ulos. Missä kulmassa vastapisteen suunnasta tämä valo näkyy? Näkyykö se sateenkaaren punaisen reunan sisä- vai ulkopuolella?",
-      "answer": 30.8918,
+      "text": "Punainen valo tulee vesipisaran reunan lähelle tulokulmassa $80{,}0^\\circ$. Veden taitekerroin punaiselle valolle on $1{,}332$. Valo heijastuu kerran pisaran takapinnasta ja taittuu ulos. Missä kulmassa vastapisteen suunnasta tämä valo näkyy? Näkyykö se sateenkaaren punaisen reunan sisä- vai ulkopuolella?",
+      "answer": 30.7027,
       "unit": "°",
       "tolerance": 0.02
     },
     {
       "id": "fy7-11-L3-03",
       "level": 3,
-      "text": "Sateenkaaren punaisen reunan muodostavat säteet tulevat pisaraan tulokulmassa $59{,}5^\\circ$, kun veden taitekerroin on $1{,}331$. Violetin reunan säteet tulevat tulokulmassa $58{,}8^\\circ$, kun taitekerroin on $1{,}343$. Kumpikin heijastuu kerran pisaran takapinnasta. Kuinka leveä sateenkaari on asteina eli kuinka suuri on punaisen ja violetin reunan kulmien erotus vastapisteestä katsottuna? Laske välivaiheet sadasosa-asteen tarkkuudella.",
-      "answer": 1.724,
+      "text": "Sateenkaaren punaisen reunan muodostavat säteet tulevat pisaraan tulokulmassa $59{,}5^\\circ$, kun veden taitekerroin on $1{,}3315$. Violetin reunan säteet tulevat tulokulmassa $58{,}8^\\circ$, kun taitekerroin on $1{,}3431$. Kumpikin heijastuu kerran pisaran takapinnasta. Kuinka leveä sateenkaari on asteina eli kuinka suuri on punaisen ja violetin reunan kulmien erotus vastapisteestä katsottuna? Laske välivaiheet tuhannesosa-asteen tarkkuudella.",
+      "answer": 1.6647,
       "unit": "°",
       "tolerance": 0.02
     }

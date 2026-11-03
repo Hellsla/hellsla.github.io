@@ -15,7 +15,7 @@
       "id": "hook",
       "stage": "herata",
       "type": "hook",
-      "text": "Laita pilli vesilasiin ja katso lasia sivulta: pilli näyttää katkeavan vedenpinnan kohdalla, ja sen vedessä oleva osa näyttää siirtyneen sivuun. Uima-altaan pohja näyttää olevan lähempänä kuin se on, ja tyyni järvi peilaa rannan puut. Silmälasit, kameran objektiivi ja valokuitu perustuvat kaikki siihen, mitä valolle tapahtuu kahden aineen rajalla.",
+      "text": "Laita pilli vesilasiin ja katso lasia vinosti ylhäältä: pilli näyttää katkeavan vedenpinnan kohdalla, ja sen vedessä oleva osa näyttää siirtyneen sivuun. Uima-altaan pohja näyttää olevan lähempänä kuin se on, ja tyyni järvi peilaa rannan puut. Silmälasit, kameran objektiivi ja valokuitu perustuvat kaikki siihen, mitä valolle tapahtuu kahden aineen rajalla.",
       "question": "Mitä valolle tapahtuu, kun se kohtaa vedenpinnan, ja miksi pilli näyttää katkeavan?"
     },
     {
@@ -253,7 +253,7 @@
       "title": "Mittaus: akryylin taitekerroin",
       "source": "example",
       "figure": "fy7-10/fit",
-      "text": "Ryhmä teki koulun laboratoriossa kokeen, jossa laserin säde ohjattiin ilmasta akryylisen puolisylinterin tasaisen pinnan keskipisteeseen astelevyn päällä. Lasissa valo kulkee keskipisteestä suoraan kohti kaarevaa pintaa, joten se ei taitu kaarevassa pinnassa, ja taitekulman voi lukea astelevyltä. Ryhmä luki kulmat asteen tarkkuudella.\n\n| $\\alpha_1$ (°) | $\\alpha_2$ (°) |\n| --- | --- |\n| $10$ | $7$ |\n| $20$ | $13$ |\n| $30$ | $20$ |\n| $40$ | $26$ |\n| $50$ | $31$ |\n| $60$ | $36$ |\n| $70$ | $39$ |\n\nRyhmä laski kulmien sinit ja piirsi Vernier Graphical Analysis -ohjelmalla kuvaajan, jossa pystyakselilla on $\\sin\\alpha_1$ ja vaaka-akselilla $\\sin\\alpha_2$. Ohjelma sovitti pisteisiin suoran $\\sin\\alpha_1 = A \\sin\\alpha_2 + B$ ja ilmoitti kulmakertoimen $A = 1{,}489$, sen epävarmuuden $\\Delta A = 0{,}016$ ja vakiotermin $B = -0{,}004$. Todellisissa mittaussarjoissa mittauspisteet eivät yleensä sijaitse täsmälleen samalla suoralla mittausepävarmuuden vuoksi.",
+      "text": "Ryhmä teki koulun laboratoriossa kokeen, jossa laserin säde ohjattiin ilmasta akryylisen puolisylinterin tasaisen pinnan keskipisteeseen astelevyn päällä. Akryylissä valo kulkee keskipisteestä suoraan kohti kaarevaa pintaa, joten se ei taitu kaarevassa pinnassa, ja taitekulman voi lukea astelevyltä. Ryhmä luki kulmat asteen tarkkuudella.\n\n| $\\alpha_1$ (°) | $\\alpha_2$ (°) |\n| --- | --- |\n| $10$ | $7$ |\n| $20$ | $13$ |\n| $30$ | $20$ |\n| $40$ | $26$ |\n| $50$ | $31$ |\n| $60$ | $36$ |\n| $70$ | $39$ |\n\nRyhmä laski kulmien sinit ja piirsi Vernier Graphical Analysis -ohjelmalla kuvaajan, jossa pystyakselilla on $\\sin\\alpha_1$ ja vaaka-akselilla $\\sin\\alpha_2$. Ohjelma sovitti pisteisiin suoran $\\sin\\alpha_1 = A \\sin\\alpha_2 + B$ ja ilmoitti kulmakertoimen $A = 1{,}489$, sen epävarmuuden $\\Delta A = 0{,}016$ ja vakiotermin $B = -0{,}004$. Todellisissa mittaussarjoissa mittauspisteet eivät yleensä sijaitse täsmälleen samalla suoralla mittausepävarmuuden vuoksi.",
       "question": {
         "type": "numeric",
         "prompt": "Määritä mittauksesta akryylin taitekerroin. Ilman taitekerroin on $1{,}00$.",

@@ -263,8 +263,8 @@
           "feedback": "Rajakulma $48{,}8^\\circ$ on oikein, sillä $\\sin\\alpha_\\text{r} = 1{,}00 : 1{,}33$. Virhe on suunnassa: ilmasta veteen tullessa valo taittuu normaalia kohti, eikä rajakulmaa ole. Taitekulma on noin $40{,}6^\\circ$."
         },
         {
-          "text": "Päättely on muuten oikein, mutta kokonaisheijastus alkaa vasta $90^\\circ$:n tulokulmassa.",
-          "feedback": "Päättely ei ole oikein. Ilmasta veteen kokonaisheijastusta ei tapahdu millään tulokulmalla, koska valo taittuu normaalia kohti ja taittunut säde on aina olemassa. Vedestä ilmaan kokonaisheijastus alkaa jo rajakulmasta $48{,}8^\\circ$."
+          "text": "Päättely on muuten oikein, mutta kokonaisheijastuminen alkaa vasta $90^\\circ$:n tulokulmassa.",
+          "feedback": "Päättely ei ole oikein. Ilmasta veteen kokonaisheijastumista ei tapahdu millään tulokulmalla, koska valo taittuu normaalia kohti ja taittunut säde on aina olemassa. Vedestä ilmaan kokonaisheijastuminen alkaa jo rajakulmasta $48{,}8^\\circ$."
         }
       ],
       "optional": true

@@ -15,7 +15,7 @@
       "id": "hook",
       "stage": "herata",
       "type": "hook",
-      "text": "Kesäsateen jälkeen ilta-aurinko paistaa matalalta lännestä, ja itäisellä taivaalla on sateenkaari. Sen ulkoreuna on punainen ja sisäreuna violetti, ja joskus sen ulkopuolella näkyy toinen, himmeämpi kaari. Samat värit näkyvät, kun aurinko paistaa lasiprisman tai kattokruunun kristallin läpi. Sadepisarat ja lasi ovat värittömiä, ja auringonvalo on valkoista.",
+      "text": "Kesäsateen jälkeen taivaalla on sateenkaari. Sen ulkoreuna on punainen ja sisäreuna violetti, ja joskus sen ulkopuolella näkyy toinen, himmeämpi kaari. Samat värit näkyvät, kun aurinko paistaa lasiprisman tai kattokruunun kristallin läpi. Sadepisarat ja lasi ovat värittömiä, ja auringonvalo on valkoista.",
       "question": "Mistä sateenkaaren värit tulevat, ja miksi ne ovat aina samassa järjestyksessä?"
     },
     {
@@ -221,7 +221,7 @@
         "koe-1"
       ],
       "prompt": "Kirjoita taulukkosi perusteella: mikä väri poikkeaa eniten ja mikä vähiten? Miten värien ero $\\Delta\\delta$ muuttuu, kun huippukulma kasvaa? Mistä erot johtuvat? Kokeile lopuksi vapaasti, kuinka suuri ero on flinttilasilla ja vedellä, kun $A = 60^\\circ$ ja $\\alpha_1 = 50^\\circ$.",
-      "model": "Violetti poikkeaa jokaisella huippukulmalla eniten ja punainen vähiten: esimerkiksi huippukulmalla $60^\\circ$ poikkeamakulmat ovat $39{,}8^\\circ$ ja $38{,}4^\\circ$. Ero kasvaa huippukulman mukana: $30^\\circ$:lla se on $0{,}53^\\circ$, $60^\\circ$:lla $1{,}40^\\circ$ ja $70^\\circ$:lla $4{,}4^\\circ$. Erot johtuvat siitä, että lasin taitekerroin on violetille suurempi ($1{,}5302$) kuin punaiselle ($1{,}5143$), joten violetti taittuu molemmissa pinnoissa enemmän. Suurempi huippukulma kääntää toisen pinnan jyrkemmin, jolloin säde osuu siihen suuremmassa kulmassa ja värien ero kasvaa. Flinttilasilla ero on $3{,}9^\\circ$ ja vedellä $0{,}91^\\circ$, joten dispersio on aineen ominaisuus. Arvot ovat mallin laskemia.",
+      "model": "Violetti poikkeaa jokaisella huippukulmalla eniten ja punainen vähiten: esimerkiksi huippukulmalla $60^\\circ$ poikkeamakulmat ovat $39{,}8^\\circ$ ja $38{,}4^\\circ$. Ero kasvaa huippukulman mukana: $30^\\circ$:lla se on $0{,}53^\\circ$, $60^\\circ$:lla $1{,}40^\\circ$ ja $70^\\circ$:lla $4{,}4^\\circ$. Erot johtuvat siitä, että lasin taitekerroin on violetille suurempi ($1{,}5302$) kuin punaiselle ($1{,}5143$), joten violetti taittuu molemmissa pinnoissa enemmän. Suurempi huippukulma kasvattaa toisen pinnan tulokulmaa $\\alpha_3$. Kun $\\alpha_3$ lähestyy kokonaisheijastuksen rajakulmaa, pieni ero värien kulmissa $\\alpha_3$ kasvaa suureksi eroksi kulmissa $\\alpha_4$, ja siksi ero kasvaa jyrkästi huippukulmien $60^\\circ$ ja $70^\\circ$ välillä. Flinttilasilla ero on $3{,}9^\\circ$ ja vedellä $0{,}85^\\circ$, joten dispersio on aineen ominaisuus. Arvot ovat mallin laskemia.",
       "criteria": [
         "Kerroin, että violetti poikkeaa eniten ja punainen vähiten, ja tuin sen taulukon arvoilla.",
         "Kerroin, että värien ero kasvaa huippukulman kasvaessa.",
@@ -286,22 +286,22 @@
       "stage": "sovella",
       "type": "numeric",
       "title": "Sovella uuteen tilanteeseen: värit uima-altaan pohjalla",
-      "prompt": "Auringonvalo tulee tyynen uima-altaan pintaan tulokulmassa $60{,}0^\\circ$. Allas on $2{,}00\\,\\text{m}$ syvä. Punaisen valon taitekerroin vedessä on $1{,}3311$ ja violetin $1{,}3435$. Kuinka kaukana toisistaan punainen ja violetti valo osuvat altaan pohjaan, kun valo tulee pintaan samasta kohdasta? Vastaa millimetreinä.",
-      "answer": 27.147,
+      "prompt": "Auringonvalo tulee tyynen uima-altaan pintaan tulokulmassa $60{,}0^\\circ$. Allas on $2{,}00\\,\\text{m}$ syvä. Punaisen valon taitekerroin vedessä on $1{,}3315$ ja violetin $1{,}3431$. Kuinka kaukana toisistaan punainen ja violetti valo osuvat altaan pohjaan, kun valo tulee pintaan samasta kohdasta? Vastaa millimetreinä.",
+      "answer": 25.396,
       "unit": "mm",
       "tolerance": 0.02,
       "hints": [
         "Laske ensin kummankin värin taitekulma vedessä. Kumpi taittuu enemmän?",
         "Kun taitekulma $\\beta$ tunnetaan, säde etenee syvyydellä $h$ vaakasuunnassa matkan $x = h \\tan\\beta$.",
-        "$\\beta_\\text{p} = 40{,}59^\\circ$ ja $\\beta_\\text{v} = 40{,}14^\\circ$, joten $\\Delta x = 2{,}00\\,\\text{m} \\cdot (\\tan 40{,}59^\\circ - \\tan 40{,}14^\\circ)$."
+        "$\\beta_\\text{p} = 40{,}57^\\circ$ ja $\\beta_\\text{v} = 40{,}15^\\circ$, joten $\\Delta x = 2{,}00\\,\\text{m} \\cdot (\\tan 40{,}57^\\circ - \\tan 40{,}15^\\circ)$."
       ],
       "mistakes": [
         {
-          "value": 0.027147,
+          "value": 0.025396,
           "feedback": "Tulos on oikein metreinä. Muunna millimetreiksi: $1\\,\\text{m} = 1000\\,\\text{mm}$."
         },
         {
-          "value": 12.01,
+          "value": 11.23,
           "feedback": "Käytit sinejä tangenttien sijaan. Vaakasuora matka syvyydellä $h$ on $x = h \\tan\\beta$, koska säde, pohja ja pinnan normaali muodostavat suorakulmaisen kolmion, jonka pystysivu on $h$."
         },
         {
@@ -309,7 +309,7 @@
           "feedback": "Laskit, mihin valo osuisi, jos se ei taittuisi lainkaan. Laske ensin taitekulmat $\\sin\\beta = \\sin 60{,}0^\\circ : n$ ja sitten kummankin värin vaakasuora matka $h \\tan\\beta$ ja niiden erotus."
         }
       ],
-      "solution": "**Annettu:** tulokulma $\\alpha = 60{,}0^\\circ$, altaan syvyys $h = 2{,}00\\,\\text{m}$, punaisen taitekerroin $n_\\text{p} = 1{,}3311$, violetin $n_\\text{v} = 1{,}3435$\n\n**Kysytty:** punaisen ja violetin osumakohtien etäisyys $\\Delta x$ millimetreinä\n\n**Periaate:** Kumpikin väri taittuu pinnassa taittumislain $\\sin\\alpha = n \\sin\\beta$ mukaan omalla taitekertoimellaan, koska taitekerroin riippuu aallonpituudesta. Vedessä valo kulkee suoraan, joten säde, pinnan normaali ja pohja muodostavat suorakulmaisen kolmion: vaakasuora matka pohjaan on $x = h \\tan\\beta$.\n\n**Kaava:** $\\sin\\beta = \\dfrac{\\sin\\alpha}{n}$ ja $x = h \\tan\\beta$, joten $\\Delta x = h \\left(\\tan\\beta_\\text{p} - \\tan\\beta_\\text{v}\\right)$\n\n**Muunnokset:** Lopuksi $1\\,\\text{m} = 1000\\,\\text{mm}$.\n\n**Sijoitus:** $\\sin\\beta_\\text{p} = \\dfrac{\\sin 60{,}0^\\circ}{1{,}3311} = 0{,}65061$, joten $\\beta_\\text{p} = 40{,}588^\\circ$; $\\sin\\beta_\\text{v} = \\dfrac{\\sin 60{,}0^\\circ}{1{,}3435} = 0{,}64460$, joten $\\beta_\\text{v} = 40{,}136^\\circ$. $\\Delta x = 2{,}00\\,\\text{m} \\cdot (0{,}85673 - 0{,}84315) = 0{,}02715\\,\\text{m} = 27\\,\\text{mm}$\n\n**Vastaus:** noin $27\\,\\text{mm}$, kaksi merkitsevää numeroa, koska tulos on kahden lähes yhtä suuren luvun erotus, jossa merkitseviä numeroita häviää.\n\n**Järkevyys:** Violetti taittuu enemmän, joten se osuu lähemmäs pinnan tulokohtaa, ja ero on positiivinen. Kumpikin väri etenee vaakasuunnassa noin $2{,}00\\,\\text{m} \\cdot 0{,}85 \\approx 1{,}7\\,\\text{m}$, ja ero on alle $2\\,\\%$ tästä, mikä sopii taitekertoimien pieneen eroon. Siksi pohjalla näkyy kapeita värireunoja."
+      "solution": "**Annettu:** tulokulma $\\alpha = 60{,}0^\\circ$, altaan syvyys $h = 2{,}00\\,\\text{m}$, punaisen taitekerroin $n_\\text{p} = 1{,}3315$, violetin $n_\\text{v} = 1{,}3431$\n\n**Kysytty:** punaisen ja violetin osumakohtien etäisyys $\\Delta x$ millimetreinä\n\n**Periaate:** Kumpikin väri taittuu pinnassa taittumislain $\\sin\\alpha = n \\sin\\beta$ mukaan omalla taitekertoimellaan, koska taitekerroin riippuu aallonpituudesta. Vedessä valo kulkee suoraan, joten säde, pinnan normaali ja pohja muodostavat suorakulmaisen kolmion: vaakasuora matka pohjaan on $x = h \\tan\\beta$.\n\n**Kaava:** $\\sin\\beta = \\dfrac{\\sin\\alpha}{n}$ ja $x = h \\tan\\beta$, joten $\\Delta x = h \\left(\\tan\\beta_\\text{p} - \\tan\\beta_\\text{v}\\right)$\n\n**Muunnokset:** Lopuksi $1\\,\\text{m} = 1000\\,\\text{mm}$.\n\n**Sijoitus:** $\\sin\\beta_\\text{p} = \\dfrac{\\sin 60{,}0^\\circ}{1{,}3315} = 0{,}65041$, joten $\\beta_\\text{p} = 40{,}573^\\circ$; $\\sin\\beta_\\text{v} = \\dfrac{\\sin 60{,}0^\\circ}{1{,}3431} = 0{,}64480$, joten $\\beta_\\text{v} = 40{,}150^\\circ$. $\\Delta x = 2{,}00\\,\\text{m} \\cdot (0{,}85628 - 0{,}84358) = 0{,}02540\\,\\text{m} = 25\\,\\text{mm}$\n\n**Vastaus:** noin $25\\,\\text{mm}$, kaksi merkitsevää numeroa, koska tulos on kahden lähes yhtä suuren luvun erotus, jossa merkitseviä numeroita häviää.\n\n**Järkevyys:** Violetti taittuu enemmän, joten se osuu lähemmäs pinnan tulokohtaa, ja ero on positiivinen. Kumpikin väri etenee vaakasuunnassa noin $2{,}00\\,\\text{m} \\cdot 0{,}85 \\approx 1{,}7\\,\\text{m}$, ja ero on alle $2\\,\\%$ tästä, mikä sopii taitekertoimien pieneen eroon. Siksi pohjalla näkyy kapeita värireunoja."
     },
     {
       "id": "harjoitukset",
@@ -348,26 +348,26 @@
       "stage": "tarkista",
       "type": "numeric",
       "title": "2. Laske: punainen ja violetti vedessä",
-      "prompt": "Veden taitekerroin on punaiselle valolle $1{,}3311$ ja violetille $1{,}3435$. Kuinka paljon suurempi punaisen valon nopeus vedessä on kuin violetin? Vastaa kilometreinä sekunnissa.",
-      "answer": 2080.15,
+      "prompt": "Veden taitekerroin on punaiselle valolle $1{,}3315$ ja violetille $1{,}3431$. Kuinka paljon suurempi punaisen valon nopeus vedessä on kuin violetin? Vastaa kilometreinä sekunnissa.",
+      "answer": 1945.94,
       "unit": "km/s",
       "tolerance": 0.02,
       "hints": [
         "Valon nopeus aineessa saadaan taitekertoimesta. Millä kaavalla?",
         "$v = c : n$, missä $c = 3{,}00 \\cdot 10^8\\,\\text{m/s}$. Laske kummankin värin nopeus ja vähennä.",
-        "Pidä välituloksissa kuusi numeroa: $v_\\text{p} = 225\\,377\\,\\text{km/s}$ ja $v_\\text{v} = 223\\,297\\,\\text{km/s}$."
+        "Pidä välituloksissa kuusi numeroa: $v_\\text{p} = 225\\,310\\,\\text{km/s}$ ja $v_\\text{v} = 223\\,364\\,\\text{km/s}$."
       ],
       "mistakes": [
         {
           "value": 2000,
-          "feedback": "Pyöristit nopeudet liian aikaisin, esimerkiksi $225\\,000\\,\\text{km/s}$ ja $223\\,000\\,\\text{km/s}$. Kun lasketaan kahden lähes yhtä suuren luvun erotus, välitulokset on pidettävä tarkkoina: $225\\,377\\,\\text{km/s} - 223\\,297\\,\\text{km/s}$."
+          "feedback": "Pyöristit nopeudet liian aikaisin, esimerkiksi $225\\,000\\,\\text{km/s}$ ja $223\\,000\\,\\text{km/s}$. Kun lasketaan kahden lähes yhtä suuren luvun erotus, välitulokset on pidettävä tarkkoina: $225\\,310\\,\\text{km/s} - 223\\,364\\,\\text{km/s}$."
         },
         {
-          "value": 2080150,
+          "value": 1945940,
           "feedback": "Tulos on oikein metreinä sekunnissa. Muunna kilometreiksi sekunnissa: $1\\,\\text{km/s} = 1000\\,\\text{m/s}$."
         }
       ],
-      "solution": "**Annettu:** punaisen taitekerroin $n_\\text{p} = 1{,}3311$, violetin $n_\\text{v} = 1{,}3435$, valon nopeus tyhjiössä $c = 3{,}00 \\cdot 10^8\\,\\text{m/s}$\n\n**Kysytty:** nopeuksien erotus $\\Delta v = v_\\text{p} - v_\\text{v}$ kilometreinä sekunnissa\n\n**Periaate:** Taitekerroin kertoo, kuinka monta kertaa hitaammin valo kulkee aineessa kuin tyhjiössä, $n = c : v$. Taitekerroin riippuu aallonpituudesta, joten punaisella ja violetilla on vedessä eri nopeudet.\n\n**Kaava:** $n = \\dfrac{c}{v}$, josta $v = \\dfrac{c}{n}$, ja $\\Delta v = \\dfrac{c}{n_\\text{p}} - \\dfrac{c}{n_\\text{v}}$\n\n**Muunnokset:** $c = 3{,}00 \\cdot 10^8\\,\\text{m/s} = 3{,}00 \\cdot 10^5\\,\\text{km/s}$, koska $1\\,\\text{km} = 1000\\,\\text{m}$.\n\n**Sijoitus:** $v_\\text{p} = \\dfrac{3{,}00 \\cdot 10^5\\,\\text{km/s}}{1{,}3311} = 225\\,377\\,\\text{km/s}$ ja $v_\\text{v} = \\dfrac{3{,}00 \\cdot 10^5\\,\\text{km/s}}{1{,}3435} = 223\\,297\\,\\text{km/s}$, joten $\\Delta v = 225\\,377\\,\\text{km/s} - 223\\,297\\,\\text{km/s} = 2080\\,\\text{km/s}$\n\n**Vastaus:** $2{,}08 \\cdot 10^3\\,\\text{km/s}$, kolme merkitsevää numeroa kuten valon nopeudessa $3{,}00 \\cdot 10^8\\,\\text{m/s}$.\n\n**Järkevyys:** Ero on noin $1\\,\\%$ nopeudesta, sillä taitekertoimetkin eroavat noin prosentin: $1{,}3435 : 1{,}3311 \\approx 1{,}009$. Punainen on nopeampi, koska sen taitekerroin on pienempi."
+      "solution": "**Annettu:** punaisen taitekerroin $n_\\text{p} = 1{,}3315$, violetin $n_\\text{v} = 1{,}3431$, valon nopeus tyhjiössä $c = 3{,}00 \\cdot 10^8\\,\\text{m/s}$\n\n**Kysytty:** nopeuksien erotus $\\Delta v = v_\\text{p} - v_\\text{v}$ kilometreinä sekunnissa\n\n**Periaate:** Taitekerroin kertoo, kuinka monta kertaa hitaammin valo kulkee aineessa kuin tyhjiössä, $n = c : v$. Taitekerroin riippuu aallonpituudesta, joten punaisella ja violetilla on vedessä eri nopeudet.\n\n**Kaava:** $n = \\dfrac{c}{v}$, josta $v = \\dfrac{c}{n}$, ja $\\Delta v = \\dfrac{c}{n_\\text{p}} - \\dfrac{c}{n_\\text{v}}$\n\n**Muunnokset:** $c = 3{,}00 \\cdot 10^8\\,\\text{m/s} = 3{,}00 \\cdot 10^5\\,\\text{km/s}$, koska $1\\,\\text{km} = 1000\\,\\text{m}$.\n\n**Sijoitus:** $v_\\text{p} = \\dfrac{3{,}00 \\cdot 10^5\\,\\text{km/s}}{1{,}3315} = 225\\,310\\,\\text{km/s}$ ja $v_\\text{v} = \\dfrac{3{,}00 \\cdot 10^5\\,\\text{km/s}}{1{,}3431} = 223\\,364\\,\\text{km/s}$, joten $\\Delta v = 225\\,310\\,\\text{km/s} - 223\\,364\\,\\text{km/s} = 1946\\,\\text{km/s}$\n\n**Vastaus:** $1{,}95 \\cdot 10^3\\,\\text{km/s}$, kolme merkitsevää numeroa kuten valon nopeudessa $3{,}00 \\cdot 10^8\\,\\text{m/s}$.\n\n**Järkevyys:** Ero on noin $1\\,\\%$ nopeudesta, sillä taitekertoimetkin eroavat noin prosentin: $1{,}3431 : 1{,}3315 \\approx 1{,}009$. Punainen on nopeampi, koska sen taitekerroin on pienempi."
     },
     {
       "id": "tarkistus-3",

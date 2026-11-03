@@ -1,9 +1,7 @@
 VERDICT: DONE
 
-Drafted fy7-9 from scratch; `check_lesson.py fy7-9` all ok, `check_solutions.py` ok.
+Round-1 fixes; `check_lesson.py fy7-9` all ok.
 
-- `lesson.md`: Ydinajatus (EM wave from mutually inducing fields, E ⊥ B ⊥ travel, $c = f\lambda$, accelerating charge and antenna, spectrum figure + table of sources and effects, ionising part, thermal radiation, black body), `## Kaava: Wienin siirtymälaki` (absolute T, 300 K / skin / 800 K / Sun examples, Stefan–Boltzmann only qualitatively, one pointer to the FY8 course), staged example (Sun 502 nm → 5,77 · 10³ K, checked against IAU 2015 5772 K), misconceptions, summary. No photon or Planck quantisation.
-- `lessons/FY7/fy7-9/figures.py`: hero (forge, rod glowing white→red), wave, antenna, spectrum, curves (Planck, 4000/5000/6000 K with a legend because the curves crowd at their ends), task figure spectrum-task. The spectral colours are outside the palette (two lint warnings, on purpose).
-- `inquiry.json`, `exit-ticket.json`: two predictions tested by two experiments, a conclusion, an error-spotting task (°C in Wien), a transfer task (bulb filament), three checks.
-- New sim `assets/sims/fy7/fy7-9/`: Planck curve, λ_max from the curve's highest point, visible share, glow colour (CIE), with 27 assertions in `tests/sims/fy7-9.json`; texts in `lang/fi.json` `sims.fy7-9`.
-- Exercise set 5/4/3, `answers.py`, `lesson-answers.py`, `solutions.md`; 4 glossary terms.
+- Visual Blocking (spectrum table clipped, heads misaligned) — `lesson.md`: the table now has three columns (Alue | Aallonpituus | Lähteitä ja käyttöä) with shorter cells, soft hyphens in the long words and a non-breaking hyphen in D‑vitamiini. Measured: it fits with no horizontal scroll at 360, 390, 768 and 1280 px (scrollWidth = clientWidth), and `check_layout` passes at 360/768/1280 with no wide-table warning. **For developer:** the heads are still offset from the body columns. The cause is the shared rule `table thead,table tbody{display:table;width:100%}` in templates/site.css: thead and tbody are laid out as two separate tables. With `display:table-row-group`, every column lines up at all four widths (tested by injecting the rule), and the table still fits. That is a template change, outside this lesson.
+- Polish: microwaves make the water molecules "kääntyilemään edestakaisin"; "273,15 K" in lesson.md and in the lava hints, feedback and solution in inquiry.json; the Etsi virhe feedback now says that b·T has the unit m·K², not m; "noin 500 nm (tarkemmin 502 nm)"; sim.js header comment 750 K → 800 K.
+- Not done: glossary "aallonpituus" belongs to fy5-10, not this chapter.

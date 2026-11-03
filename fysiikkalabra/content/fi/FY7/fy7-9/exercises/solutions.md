@@ -16,7 +16,7 @@
 **Muunnokset:** $f = 2{,}45\,\text{GHz} = 2{,}45 \cdot 10^{9}\,\text{Hz}$. Lopuksi $1\,\text{m} = 100\,\text{cm}$.
 **Sijoitus:** $\lambda = \dfrac{3{,}00 \cdot 10^{8}\,\text{m/s}}{2{,}45 \cdot 10^{9}\,\text{Hz}} = 0{,}1224\,\text{m} = 0{,}1224 \cdot 100\,\text{cm} = 12{,}24\,\text{cm}$
 **Vastaus:** $12{,}2\,\text{cm}$, kolme merkitsevää numeroa kuten taajuudessa $2{,}45\,\text{GHz}$.
-**Järkevyys:** Aallonpituus on millimetrin ja metrin välillä, eli mikroaaltojen alueella. Se on samaa suuruusluokkaa kuin uunin sisätila, mikä sopii siihen, että uunin seinät heijastavat aallot edestakaisin.
+**Järkevyys:** Aallonpituus on millimetrin ja metrin välillä, eli mikroaaltojen alueella.
 
 ## fy7-9-L1-03
 **Annettu:** ihon pintalämpötila $T = 307\,\text{K}$, Wienin siirtymälain vakio $b = 2{,}898 \cdot 10^{-3}\,\text{m} \cdot \text{K}$; iho oletetaan mustaksi kappaleeksi
@@ -62,7 +62,7 @@
 **Annettu:** kuvaajan spektrikäyrä; Wienin siirtymälain vakio $b = 2{,}898 \cdot 10^{-3}\,\text{m} \cdot \text{K}$; kappale säteilee kuin musta kappale
 **Kysytty:** kappaleen pintalämpötila $T$ kelvineinä
 **Periaate:** Mustan kappaleen spektrin huipun paikka riippuu vain pintalämpötilasta, joten lämpötila saadaan Wienin siirtymälaista, kun huipun aallonpituus luetaan kuvaajasta.
-**Kuvaajan lukeminen:** Käyrän korkein kohta on pystysuoralla ruudukon viivalla, joka on kolme ruutua ($3 \cdot 0{,}2\,\mu\text{m}$) luvun $1$ oikealla puolella, eli $\lambda_\text{max} = 1{,}2\,\mu\text{m}$. Huipun korkeutta ei tarvita, koska lämpötila riippuu vain huipun paikasta.
+**Kuvaajan lukeminen:** Käyrän korkein kohta on pystysuoralla ruudukon viivalla, joka on yksi ruutu ($0{,}2\,\mu\text{m}$) luvun $1$ oikealla puolella (ruudukon viivojen väli on $0{,}2\,\mu\text{m}$), eli $\lambda_\text{max} = 1{,}2\,\mu\text{m}$. Huipun korkeutta ei tarvita, koska lämpötila riippuu vain huipun paikasta.
 **Kaava:** $\lambda_\text{max} T = b$, josta $T = \dfrac{b}{\lambda_\text{max}}$
 **Muunnokset:** $\lambda_\text{max} = 1{,}2\,\mu\text{m} = 1{,}2 \cdot 10^{-6}\,\text{m}$
 **Sijoitus:** $T = \dfrac{2{,}898 \cdot 10^{-3}\,\text{m} \cdot \text{K}}{1{,}2 \cdot 10^{-6}\,\text{m}} = 2415\,\text{K}$
@@ -72,11 +72,11 @@
 ## fy7-9-L2-03
 **Annettu:** alkulämpötila $t_1 = 27\,{}^\circ\text{C}$, loppulämpötila $t_2 = 327\,{}^\circ\text{C}$, Wienin siirtymälain vakio $b = 2{,}898 \cdot 10^{-3}\,\text{m} \cdot \text{K}$; levy oletetaan mustaksi kappaleeksi
 **Kysytty:** spektrin huipun siirtymä $\Delta\lambda = \lambda_1 - \lambda_2$ mikrometreinä
-**Periaate:** Wienin siirtymälain mukaan huipun aallonpituus on kääntäen verrannollinen absoluuttiseen lämpötilaan, joten lasketaan huippu kummassakin lämpötilassa ja niiden erotus. Erotusta ei voi laskea lämpötilaerosta, koska $\lambda_\text{max}$ ei riipu lämpötilasta lineaarisesti.
+**Periaate:** Wienin siirtymälain mukaan huipun aallonpituus on kääntäen verrannollinen absoluuttiseen lämpötilaan, joten kuumennettaessa huippu siirtyy lyhyemmille aallonpituuksille. Lasketaan huippu kummassakin lämpötilassa ja niiden erotus. Erotusta ei voi laskea lämpötilaerosta, koska $\lambda_\text{max}$ ei riipu lämpötilasta lineaarisesti.
 **Kaava:** $\lambda_\text{max} T = b$, josta $\lambda_\text{max} = \dfrac{b}{T}$ ja $\Delta\lambda = \dfrac{b}{T_1} - \dfrac{b}{T_2}$
 **Muunnokset:** $T_1 = (27 + 273{,}15)\,\text{K} = 300{,}15\,\text{K}$ ja $T_2 = (327 + 273{,}15)\,\text{K} = 600{,}15\,\text{K}$. Lopuksi $1\,\mu\text{m} = 10^{-6}\,\text{m}$.
 **Sijoitus:** $\Delta\lambda = \dfrac{2{,}898 \cdot 10^{-3}\,\text{m} \cdot \text{K}}{300{,}15\,\text{K}} - \dfrac{2{,}898 \cdot 10^{-3}\,\text{m} \cdot \text{K}}{600{,}15\,\text{K}} = 9{,}655\,\mu\text{m} - 4{,}829\,\mu\text{m} = 4{,}826\,\mu\text{m}$
-**Vastaus:** $4{,}83\,\mu\text{m}$ lyhyempiin aallonpituuksiin päin, kolme merkitsevää numeroa kuten lämpötiloissa kelvineinä, $300\,\text{K}$ ja $600\,\text{K}$.
+**Vastaus:** $4{,}83\,\mu\text{m}$ lyhyempiin aallonpituuksiin päin, kolme merkitsevää numeroa, koska lämpötilat on annettu asteen tarkkuudella.
 **Järkevyys:** Absoluuttinen lämpötila lähes kaksinkertaistuu, joten huipun aallonpituus lähes puolittuu, noin $9{,}7\,\mu\text{m}$:stä noin $4{,}8\,\mu\text{m}$:iin; siirtymä on siis noin puolet alkuperäisestä aallonpituudesta. Molemmat huiput ovat infrapuna-alueella, joten levy ei hehku.
 
 ## fy7-9-L2-04
@@ -104,7 +104,7 @@
 **Kysytty:** korkein lämpötila $t$ celsiusasteina, jossa spektrin huippu on vielä välillä
 **Periaate:** Wienin siirtymälain mukaan kuumemman kappaleen huippu on lyhyemmällä aallonpituudella. Korkeimman lämpötilan kappaleen huippu on siis välin lyhyimmässä päässä, $\lambda_\text{max} = 8{,}0\,\mu\text{m}$; vielä kuumemman kappaleen huippu on välin ulkopuolella.
 **Kaava:** $\lambda_\text{max} T = b$, josta $T = \dfrac{b}{\lambda_\text{max}}$, ja $t = T - 273{,}15\,\text{K}$ celsiusasteina
-**Muunnokset:** $\lambda_\text{max} = 8{,}0\,\mu\text{m} = 8{,}0 \cdot 10^{-6}\,\text{m}$. Lopuksi kelvineistä vähennetään $273{,}15$.
+**Muunnokset:** $\lambda_\text{max} = 8{,}0\,\mu\text{m} = 8{,}0 \cdot 10^{-6}\,\text{m}$. Lopuksi kelvineistä vähennetään $273{,}15\,\text{K}$.
 **Sijoitus:** $T = \dfrac{2{,}898 \cdot 10^{-3}\,\text{m} \cdot \text{K}}{8{,}0 \cdot 10^{-6}\,\text{m}} = 362{,}25\,\text{K}$, joten $t = (362{,}25 - 273{,}15)\,{}^\circ\text{C} = 89{,}1\,{}^\circ\text{C}$
 **Vastaus:** $89\,{}^\circ\text{C}$, kaksi merkitsevää numeroa kuten aallonpituudessa $8{,}0\,\mu\text{m}$.
 **Järkevyys:** Välin toinen pää $14\,\mu\text{m}$ antaa alimmaksi lämpötilaksi $2{,}898 \cdot 10^{-3}\,\text{m} \cdot \text{K} : (14 \cdot 10^{-6}\,\text{m}) = 207\,\text{K}$ eli noin $-66\,{}^\circ\text{C}$. Väli $-66\,{}^\circ\text{C}$…$89\,{}^\circ\text{C}$ kattaa ihmiset, rakennukset ja luonnon, joita lämpökameralla kuvataan.

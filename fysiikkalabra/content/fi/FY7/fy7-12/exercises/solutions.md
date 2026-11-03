@@ -56,10 +56,10 @@
 **Muunnokset:** Ei tarvita: taitekertoimet ovat yksiköttömiä, ja kulma on asteina.
 **Sijoitus:** $n_2 = 1{,}47 \cdot \sin 82{,}0^\circ = 1{,}47 \cdot 0{,}9903 = 1{,}456$
 **Vastaus:** $1{,}46$, kolme merkitsevää numeroa kuten ytimen taitekerroin $1{,}47$ ja kulma $82{,}0^\circ$.
-**Järkevyys:** Kuoren taitekertoimen pitää olla pienempi kuin ytimen, jotta kokonaisheijastus on mahdollinen, ja rajakulma lähellä $90^\circ$:ta tarkoittaa, että taitekertoimet ovat lähes samat. Tulos $1{,}46$ on vähän pienempi kuin $1{,}47$, kuten pitää.
+**Järkevyys:** Kuoren taitekertoimen pitää olla pienempi kuin ytimen, jotta kokonaisheijastuminen on mahdollinen, ja rajakulma lähellä $90^\circ$:ta tarkoittaa, että taitekertoimet ovat lähes samat. Tulos $1{,}46$ on vähän pienempi kuin $1{,}47$, kuten pitää.
 
 ## fy7-12-L2-02
-**Annettu:** tulokulma prisman pitkälle sivutahkolle $\alpha = 45^\circ$, prisman ulkopuolella ilmaa $n_2 = 1{,}00$
+**Annettu:** tulokulma prisman lyhyelle sivutahkolle (kateettitahkolle) $\alpha = 45^\circ$, prisman ulkopuolella ilmaa $n_2 = 1{,}00$
 **Kysytty:** prisman lasin pienin taitekerroin $n$, jolla valo kokonaisheijastuu
 **Periaate:** Valo kokonaisheijastuu lasista ilmaan, kun tulokulma on suurempi kuin rajakulma tai yhtä suuri. Siksi rajakulma saa olla enintään $45^\circ$. Rajakulma pienenee, kun lasin taitekerroin kasvaa, joten pienin sallittu taitekerroin on se, jolla rajakulma on täsmälleen $45^\circ$.
 **Kaava:** $\sin\alpha_\text{r} = \dfrac{n_2}{n}$, josta rajalla $\alpha_\text{r} = \alpha$ saadaan $n = \dfrac{n_2}{\sin\alpha}$
@@ -106,7 +106,7 @@
 **Muunnokset:** $L = 1{,}00\,\text{km} = 1{,}00 \cdot 1000\,\text{m}$. Lopuksi $1\,\text{s} = 10^9\,\text{ns}$.
 **Sijoitus:** $\Delta t = \dfrac{1{,}480 \cdot 1000\,\text{m}}{3{,}00 \cdot 10^8\,\text{m/s}} \cdot \left(\dfrac{1{,}480}{1{,}460} - 1\right) = 4{,}933 \cdot 10^{-6}\,\text{s} \cdot 0{,}01370 = 6{,}758 \cdot 10^{-8}\,\text{s} = 67{,}58\,\text{ns}$
 **Vastaus:** $68\,\text{ns}$, kaksi merkitsevää numeroa, koska taitekertoimien erotus $1{,}480 - 1{,}460 = 0{,}020$ on kahden merkitsevän numeron tarkkuudella.
-**Järkevyys:** Siksakkia kulkevan valon matka on vain noin $1{,}4\,\%$ pidempi, ja koko kulkuaika on noin $4{,}9\,\mu\text{s}$, joten ero on noin $1{,}4\,\%$ siitä eli kymmeniä nanosekunteja. Ero kasvaa matkan mukana, joten pitkillä yhteyksillä lyhyet pulssit venyisivät. Siksi tietoliikennekuiduissa ydin tehdään hyvin ohueksi.
+**Järkevyys:** Siksakkia kulkevan valon matka on vain noin $1{,}4\,\%$ pidempi, ja koko kulkuaika on noin $4{,}9\,\mu\text{s}$, joten ero on noin $1{,}4\,\%$ siitä eli kymmeniä nanosekunteja. Ero kasvaa matkan mukana, joten pitkillä yhteyksillä lyhyet pulssit venyisivät. Siksi tietoliikennekuiduissa ytimen ja kuoren taitekertoimien ero tehdään hyvin pieneksi.
 
 ## fy7-12-L3-03
 **Annettu:** lasin taitekerroin $n_1 = 1{,}50$, veden taitekerroin $n_2 = 1{,}33$, tulokulma $\alpha_1 = 60^\circ$

@@ -14,7 +14,7 @@ RED, ORANGE, YELLOW, GREEN, BLUE, VIOLET = HOT, HEAT, "#f59f00", GOOD, COLD, "#7
 SPECTRUM = [RED, ORANGE, YELLOW, GREEN, BLUE, VIOLET]
 # measured data (lesson text): crown glass N-BK7, SCHOTT optical glass catalogue 2017
 BK7 = [(404.7, 1.53024), (435.8, 1.52668), (486.1, 1.52238), (546.1, 1.51872), (589.3, 1.51673), (656.3, 1.51432)]
-CAUCHY = {"bk7": (1.50411, 0.00446253, -3.09312e-05), "water": (1.32293, 0.00361273, -3.98464e-05),
+CAUCHY = {"bk7": (1.50411, 0.00446253, -3.09312e-05), "water": (1.32289, 0.00395357, -0.000105379),
           "flint": (1.59582, 0.00791448, 0.000154174)}      # n = A + B / λ² + C / λ⁴, λ in µm (sim.js has the same)
 
 
@@ -163,7 +163,7 @@ def drop():
                f'<stop offset="1" stop-color="{WATER_LIGHT}"/></radialGradient>')
     f.circle(C[0], C[1], R, "url(#fy711-drop-g)", WATER, 2.5)
     alpha = 59.5
-    paths = [(RED, 1.331), (VIOLET, 1.40)]                    # violet exaggerated (description says so)
+    paths = [(RED, 1.3315), (VIOLET, 1.40)]                    # violet exaggerated (description says so)
     P1 = None
     for col, nn in paths:
         P1, P2, P3, d3 = drop_path(C, R, alpha, nn)
@@ -182,7 +182,7 @@ def drop():
     a_out = ang(nrm)                                           # direction of the outward normal
     arc(f, P1, 44, 180, a_out + 360 if a_out < 0 else a_out, INK, 2)
     f.tex(P1[0] - 70, P1[1] - 24, r"\alpha", "middle")
-    d1 = refract((1.0, 0.0), nrm, 1 / 1.331)
+    d1 = refract((1.0, 0.0), nrm, 1 / 1.3315)
     arc(f, P1, 52, ang((-nrm[0], -nrm[1])), ang(d1), INK, 2)
     f.tex(P1[0] + 58, P1[1] + 34, r"\beta", "middle")
     f.tex(20, P1[1] - 32, r"\text{auringonvalo}", "start")
@@ -218,7 +218,7 @@ def observer():
     # the antisolar direction from the eye, dashed, down to the shadow of the head below the horizon
     t = (ground + 20 - eye[1]) / ds[1]
     f.line(eye[0], eye[1], eye[0] + ds[0] * t, eye[1] + ds[1] * t, MUTED, 2, "7 6")
-    # two drops drawn 42° and 33° above that direction (the real difference, 1,8°, is too small to see)
+    # two drops drawn 42° and 33° above that direction (the real difference, 1,7°, is too small to see)
     drops = []
     for deg, r_arc in ((42, 168), (33, 118)):
         a = sun + deg
@@ -300,7 +300,7 @@ def prism_angles():
     f = Fig("fy711-prism-angles", 336, "Kaavakuva prismasta: yksivärinen säde tulee vasemmalta prisman vasempaan "
             "sivuun tulokulmassa alfa 1 normaaliin nähden ja taittuu lasissa kulmaan alfa 2. Säde osuu oikeaan "
             "sivuun tulokulmassa alfa 3 ja lähtee prismasta taitekulmassa alfa 4. Molempien pintojen normaalit on "
-            "piirretty katkoviivoin. Prisman huipussa on taitava kulma A. Tulevan säteen jatke on piirretty "
+            "piirretty katkoviivoin. Prisman huipussa on huippukulma A. Tulevan säteen jatke on piirretty "
             "katkoviivana, ja sen ja lähtevän säteen välinen kulma on poikkeamakulma delta.")
     T, A, L = (290, 24), 60, 330
     h = math.radians(A / 2)
@@ -334,22 +334,22 @@ def prism_angles():
 
 # --- Kaava: the exit angle of a ray from a drop against the angle of incidence ---
 def theta_graph():
-    f = Fig("fy711-theta-graph", 350, "Kuvaaja mittakaavassa: punaisen valon (n = 1,331) säde lähtee vesipisarasta "
+    f = Fig("fy711-theta-graph", 350, "Kuvaaja mittakaavassa: punaisen valon (n = 1,332) säde lähtee vesipisarasta "
             "kulmassa theeta vastapisteen suuntaan nähden. Vaaka-akselilla on tulokulma alfa 0–90 astetta ja "
-            "pystyakselilla theeta 0–45 astetta. Käyrä nousee origosta, saavuttaa suurimman arvonsa 42,4 astetta, "
+            "pystyakselilla theeta 0–45 astetta. Käyrä nousee origosta, saavuttaa suurimman arvonsa 42,3 astetta, "
             "kun tulokulma on noin 59,5 astetta, ja laskee sitten noin 15 asteeseen. Huipun lähellä käyrä on "
             "lähes vaakasuora: laajalta tulokulmien väliltä säteet lähtevät lähes samaan suuntaan.")
     ax = Axes(f, (96, 290), (470, 50), x=(0, 90), y=(0, 45), xticks=[10 * k for k in range(1, 10)],
               yticks=[5 * k for k in range(1, 10)], xlabel=r"\alpha\ (^\circ)", ylabel=r"\theta\ (^\circ)",
               xfmt=lambda v: fi(v) if v % 30 == 0 else "", yfmt=lambda v: fi(v) if v % 10 == 0 else "")
-    nn = 1.331
+    nn = 1.3315
     th = lambda a: 4 * math.degrees(math.asin(math.sin(math.radians(a)) / nn)) - 2 * a
     ax.area([(50, 0), (50, 45), (70, 45), (70, 0)], GOOD_LIGHT, 0.45)
     ax.curve(th, 0, 90, RED, 3)
     amax = math.degrees(math.acos(math.sqrt((nn * nn - 1) / 3)))
     ax.guide(amax, th(amax))
     ax.point(amax, th(amax), RED)
-    f.tex(ax.X(amax), ax.Y(th(amax)) - 26, r"42{,}4^\circ", "middle", RED, bg=True)
+    f.tex(ax.X(amax), ax.Y(th(amax)) - 26, r"42{,}3^\circ", "middle", RED, bg=True)
     f.tex(ax.X(60), ax.Y(8), r"\text{kirkas kaari}", "middle", INK, bg=True)
     return f.svg()
 
@@ -414,6 +414,6 @@ REUSE = {
     "observer": "reveals: red reaches the eye from drops at 42° and violet from drops at 40,6° from the antisolar point",
     "n-graph": "reveals: crown glass N-BK7 n against λ (1,5302 at 405 nm … 1,5143 at 656 nm), n falls with λ",
     "prism-angles": "safe: prism geometry with α1–α4, the apex angle A and the deviation δ labelled, no values",
-    "theta-graph": "reveals: θ(α) of red light in a drop peaks at 42,4° near α = 59,5°",
+    "theta-graph": "reveals: θ(α) of red light in a drop peaks at 42,3° near α = 59,5°",
     "flint-points": "safe: flint glass n against λ at 400–700 nm (seven points on a curve), grid 0,002; no answer",
 }

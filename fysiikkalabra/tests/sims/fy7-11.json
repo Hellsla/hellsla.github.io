@@ -102,9 +102,9 @@
  {
   "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const s=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],60); I(R[1],50); I(s,'vesi');",
   "expr": "window.simState.dd",
-  "expected": 0.9108,
+  "expected": 0.852,
   "tol": 0.001,
-  "note": "water, A = 60°, α1 = 50°: Δδ = 0,91° (vesi-ero)"
+  "note": "water, A = 60°, α1 = 50°: Δδ = 0,85° (vesi-ero)"
  },
  {
   "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const s=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],60); I(R[1],30); I(s,'kruunu');",

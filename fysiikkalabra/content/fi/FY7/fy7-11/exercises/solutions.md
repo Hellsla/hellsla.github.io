@@ -1,10 +1,10 @@
 ## fy7-11-L1-01
-**Annettu:** tulokulma $\alpha_1 = 50{,}0^\circ$, veden taitekerroin punaiselle valolle $n = 1{,}331$, valo tulee ilmasta
+**Annettu:** tulokulma $\alpha_1 = 50{,}0^\circ$, veden taitekerroin punaiselle valolle $n = 1{,}332$, valo tulee ilmasta
 **Kysytty:** taitekulma $\alpha_2$ asteina
 **Periaate:** Valo taittuu rajapinnassa taittumislain mukaan. Valo tulee ilmasta, jonka taitekerroin on pyöristettynä $1$, joten $\sin\alpha_1 = n \sin\alpha_2$. Punaiselle valolle käytetään punaisen valon taitekerrointa, koska taitekerroin riippuu aallonpituudesta.
 **Kaava:** $\sin\alpha_1 = n \sin\alpha_2$, josta $\sin\alpha_2 = \dfrac{\sin\alpha_1}{n}$
 **Muunnokset:** Ei tarvita: taitekerroin on yksikötön, ja kulmat ovat asteina.
-**Sijoitus:** $\sin\alpha_2 = \dfrac{\sin 50{,}0^\circ}{1{,}331} = 0{,}57554$, joten $\alpha_2 = 35{,}14^\circ$
+**Sijoitus:** $\sin\alpha_2 = \dfrac{\sin 50{,}0^\circ}{1{,}332} = 0{,}57511$, joten $\alpha_2 = 35{,}11^\circ$
 **Vastaus:** $35{,}1^\circ$, kolme merkitsevää numeroa kuten tulokulmassa $50{,}0^\circ$.
 **Järkevyys:** Taitekulma on pienempi kuin tulokulma, koska vedessä valo hidastuu ja taittuu kohti normaalia. Suhde $\sin 50{,}0^\circ : \sin 35{,}1^\circ = 0{,}766 : 0{,}575 \approx 1{,}33$ on veden taitekerroin.
 
@@ -36,7 +36,7 @@
 **Muunnokset:** Ei tarvita: kaikki kulmat ovat asteina.
 **Sijoitus:** $\delta = 45{,}0^\circ + 52{,}0^\circ - 60{,}0^\circ = 37{,}0^\circ$
 **Vastaus:** $37{,}0^\circ$, kulmien tarkkuudella yksi desimaali.
-**Järkevyys:** Poikkeamakulma on positiivinen, eli säde kääntyy kohti prisman kantaa, kuten prismassa pitää. Se on samaa suuruusluokkaa kuin luvun simulaation kruunulasiprisman poikkeamakulmat, noin $38$–$40^\circ$, kun huippukulma on $60^\circ$.
+**Järkevyys:** Poikkeamakulma on positiivinen, eli säde kääntyy kohti prisman kantaa, kuten prismassa pitää. Se on samaa suuruusluokkaa kuin luvun simulaation kruunulasiprisman poikkeamakulmat, noin $38\text{–}40^\circ$, kun huippukulma on $60^\circ$.
 
 ## fy7-11-L1-05
 **Annettu:** tulokulma pisaran pinnalla $\alpha = 55{,}0^\circ$, taitekulma $\beta = 38{,}0^\circ$, yksi heijastus pisaran takapinnasta
@@ -51,7 +51,7 @@
 ## fy7-11-L2-01
 **Annettu:** kuidun pituus $L = 5{,}00\,\text{km}$, punaisen taitekerroin $n_\text{p} = 1{,}5143$, violetin $n_\text{v} = 1{,}5302$, valon nopeus tyhjiössä $c = 3{,}00 \cdot 10^8\,\text{m/s}$
 **Kysytty:** saapumisaikojen ero $\Delta t$ nanosekunteina
-**Periaate:** Lasissa valon nopeus on $v = c : n$, ja taitekerroin riippuu aallonpituudesta. Violetin taitekerroin on suurempi, joten violetti kulkee hitaammin ja saapuu myöhemmin. Kumpikin väri kulkee saman matkan tasaisella nopeudella, joten kulkuaika on $t = L : v$.
+**Periaate:** Tehtävän oletuksen mukaan kumpikin väri etenee lasissa nopeudella $v = c : n$; todellinen lyhyt välähdys etenee hieman hitaammin ryhmänopeudella, mutta se jätetään tässä huomiotta. Taitekerroin riippuu aallonpituudesta. Violetin taitekerroin on suurempi, joten violetti kulkee hitaammin ja saapuu myöhemmin. Kumpikin väri kulkee saman matkan tasaisella nopeudella, joten kulkuaika on $t = L : v$.
 **Kaava:** $v = \dfrac{c}{n}$ ja $t = \dfrac{L}{v} = \dfrac{L n}{c}$, joten $\Delta t = t_\text{v} - t_\text{p} = \dfrac{L n_\text{v}}{c} - \dfrac{L n_\text{p}}{c}$
 **Muunnokset:** $L = 5{,}00\,\text{km} = 5{,}00 \cdot 1000\,\text{m} = 5000\,\text{m}$. Lopuksi $1\,\text{s} = 10^9\,\text{ns}$.
 **Sijoitus:** $t_\text{v} = \dfrac{5000\,\text{m} \cdot 1{,}5302}{3{,}00 \cdot 10^8\,\text{m/s}} = 2{,}55033 \cdot 10^{-5}\,\text{s}$ ja $t_\text{p} = \dfrac{5000\,\text{m} \cdot 1{,}5143}{3{,}00 \cdot 10^8\,\text{m/s}} = 2{,}52383 \cdot 10^{-5}\,\text{s}$, joten $\Delta t = 2{,}55033 \cdot 10^{-5}\,\text{s} - 2{,}52383 \cdot 10^{-5}\,\text{s} = 2{,}650 \cdot 10^{-7}\,\text{s} = 265\,\text{ns}$
@@ -77,7 +77,7 @@
 **Muunnokset:** $c = 3{,}00 \cdot 10^8\,\text{m/s} = 3{,}00 \cdot 10^5\,\text{km/s}$, koska $1\,\text{km} = 1000\,\text{m}$.
 **Sijoitus:** $v = \dfrac{3{,}00 \cdot 10^5\,\text{km/s}}{1{,}639} = 183\,038\,\text{km/s}$
 **Vastaus:** $1{,}83 \cdot 10^5\,\text{km/s}$, kolme merkitsevää numeroa kuten valon nopeudessa $3{,}00 \cdot 10^8\,\text{m/s}$; lukematarkkuus $\pm 0{,}001$ taitekertoimessa muuttaa nopeutta vain noin $0{,}1\,\%$.
-**Järkevyys:** Flinttilasin taitekerroin on suurempi kuin kruunulasin, joten valo etenee siinä hitaammin kuin kruunulasissa (noin $196\,000$–$198\,000\,\text{km/s}$). Nopeus on noin $61\,\%$ valon nopeudesta tyhjiössä, koska $1 : 1{,}64 \approx 0{,}61$.
+**Järkevyys:** Flinttilasin taitekerroin on suurempi kuin kruunulasin, joten valo etenee siinä hitaammin kuin kruunulasissa (noin $196\,000\text{–}198\,000\,\text{km/s}$). Nopeus on noin $61\,\%$ valon nopeudesta tyhjiössä, koska $1 : 1{,}64 \approx 0{,}61$.
 
 ## fy7-11-L2-04
 **Annettu:** auringon korkeus $h = 25{,}0^\circ$, violetin reunan säteiden tulokulma $\alpha = 58{,}8^\circ$, veden taitekerroin violetille valolle $n = 1{,}343$, yksi heijastus pisaran takapinnasta
@@ -87,7 +87,7 @@
 **Muunnokset:** Ei tarvita: kulmat ovat asteina.
 **Sijoitus:** $\sin\beta = \dfrac{\sin 58{,}8^\circ}{1{,}343} = 0{,}63691$, joten $\beta = 39{,}56^\circ$; $\theta = 4 \cdot 39{,}56^\circ - 2 \cdot 58{,}8^\circ = 158{,}25^\circ - 117{,}60^\circ = 40{,}65^\circ$ ja $h_\text{v} = 40{,}65^\circ - 25{,}0^\circ = 15{,}65^\circ$
 **Vastaus:** $15{,}6^\circ$, yhden desimaalin tarkkuudella kuten auringon korkeus $25{,}0^\circ$.
-**Järkevyys:** Violetin kulma $40{,}6^\circ$ on pienempi kuin punaisen $42^\circ$, joten violetti reuna on alempana kuin punainen, noin $17^\circ$:n korkeudella oleva punainen huippu. Jos aurinko olisi yli $40{,}6^\circ$:n korkeudella, violetin kaaren huippu jäisi horisontin alle.
+**Järkevyys:** Violetin kulma $40{,}6^\circ$ on pienempi kuin punaisen $42^\circ$, joten violetti reuna on alempana kuin punainen, jonka huippu on noin $17^\circ$:n korkeudella. Jos aurinko olisi yli $40{,}6^\circ$:n korkeudella, violetin kaaren huippu jäisi horisontin alle.
 
 ## fy7-11-L3-01
 **Annettu:** huippukulma $A = 50{,}0^\circ$, tulokulma $\alpha_1 = 45{,}0^\circ$, punaisen taitekerroin $n_\text{p} = 1{,}5143$, violetin $n_\text{v} = 1{,}5302$, prisma ilmassa
@@ -96,25 +96,25 @@
 **Kaava:** $\sin\alpha_2 = \dfrac{\sin\alpha_1}{n}$, $\alpha_3 = A - \alpha_2$, $\sin\alpha_4 = n \sin\alpha_3$ ja $\delta = \alpha_1 + \alpha_4 - A$, joten $\Delta\delta = \alpha_{4,\text{v}} - \alpha_{4,\text{p}}$
 **Muunnokset:** Ei tarvita: kulmat ovat asteina, ja taitekertoimet ovat yksikköttömiä.
 **Sijoitus:** Punainen: $\sin\alpha_2 = \dfrac{\sin 45{,}0^\circ}{1{,}5143} = 0{,}46695$, $\alpha_2 = 27{,}84^\circ$, $\alpha_3 = 50{,}0^\circ - 27{,}84^\circ = 22{,}16^\circ$, $\sin\alpha_4 = 1{,}5143 \cdot \sin 22{,}16^\circ = 0{,}57127$, $\alpha_4 = 34{,}84^\circ$. Violetti: $\sin\alpha_2 = \dfrac{\sin 45{,}0^\circ}{1{,}5302} = 0{,}46210$, $\alpha_2 = 27{,}52^\circ$, $\alpha_3 = 22{,}48^\circ$, $\sin\alpha_4 = 1{,}5302 \cdot \sin 22{,}48^\circ = 0{,}58502$, $\alpha_4 = 35{,}80^\circ$. $\Delta\delta = 35{,}80^\circ - 34{,}84^\circ = 0{,}96^\circ$
-**Vastaus:** noin $0{,}97^\circ$ (tarkoilla välituloksilla $0{,}966^\circ$), kaksi merkitsevää numeroa, koska tulos on kahden lähes yhtä suuren kulman erotus.
+**Vastaus:** $0{,}96^\circ$ (tarkoilla välituloksilla $0{,}966^\circ$), kaksi merkitsevää numeroa, koska tulos on kahden lähes yhtä suuren kulman erotus.
 **Järkevyys:** Poikkeamakulmat ovat $\delta_\text{p} = 29{,}84^\circ$ ja $\delta_\text{v} = 30{,}80^\circ$, ja violetti poikkeaa enemmän, kuten pitää. Ero on suurempi kuin tasapaksussa lasissa yhden pinnan kohdalla (noin $0{,}3^\circ$), koska prisman toinen pinta kasvattaa sitä.
 
 ## fy7-11-L3-02
-**Annettu:** tulokulma $\alpha = 80{,}0^\circ$, veden taitekerroin punaiselle valolle $n = 1{,}331$, yksi heijastus pisaran takapinnasta
-**Kysytty:** kulma $\theta$ vastapisteen suunnasta asteina ja sen vertailu punaisen reunan kulmaan $42{,}4^\circ$
+**Annettu:** tulokulma $\alpha = 80{,}0^\circ$, veden taitekerroin punaiselle valolle $n = 1{,}332$, yksi heijastus pisaran takapinnasta
+**Kysytty:** kulma $\theta$ vastapisteen suunnasta asteina ja sen vertailu punaisen reunan kulmaan $42{,}3^\circ$
 **Periaate:** Pisaran pinnassa valo taittuu taittumislain mukaan, ja ilman taitekerroin on pyöristettynä $1$. Säde kääntyy kahdessa taittumisessa ja yhdessä heijastuksessa, joten lähtevän valon kulma vastapisteen suunnasta on $\theta = 4\beta - 2\alpha$. Sateenkaaren punainen reuna on kulmassa, jota yksikään punainen säde ei ylitä.
 **Kaava:** $\sin\alpha = n \sin\beta$, josta $\sin\beta = \dfrac{\sin\alpha}{n}$, ja $\theta = 4\beta - 2\alpha$
 **Muunnokset:** Ei tarvita: kulmat ovat asteina.
-**Sijoitus:** $\sin\beta = \dfrac{\sin 80{,}0^\circ}{1{,}331} = 0{,}73990$, joten $\beta = 47{,}72^\circ$, ja $\theta = 4 \cdot 47{,}72^\circ - 2 \cdot 80{,}0^\circ = 190{,}89^\circ - 160{,}0^\circ = 30{,}89^\circ$
-**Vastaus:** $30{,}9^\circ$, kolme merkitsevää numeroa kuten tulokulmassa $80{,}0^\circ$. Kulma on pienempi kuin punaisen reunan $42{,}4^\circ$, joten valo näkyy kaaren sisäpuolella.
-**Järkevyys:** Punaisen valon kulma ei voi olla yli $42{,}4^\circ$, ja tulos on sitä pienempi. Tällaiset reunan lähelle osuvat säteet valaisevat kaaren sisäpuolista taivasta, joka on siksi kaaren ulkopuolta vaaleampi.
+**Sijoitus:** $\sin\beta = \dfrac{\sin 80{,}0^\circ}{1{,}332} = 0{,}73935$, joten $\beta = 47{,}676^\circ$, ja $\theta = 4 \cdot 47{,}676^\circ - 2 \cdot 80{,}0^\circ = 190{,}70^\circ - 160{,}0^\circ = 30{,}70^\circ$
+**Vastaus:** $30{,}7^\circ$, kolme merkitsevää numeroa kuten tulokulmassa $80{,}0^\circ$. Kulma on pienempi kuin punaisen reunan $42{,}3^\circ$, joten valo näkyy kaaren sisäpuolella.
+**Järkevyys:** Punaisen valon kulma ei voi olla yli $42{,}3^\circ$, ja tulos on sitä pienempi. Tällaiset reunan lähelle osuvat säteet valaisevat kaaren sisäpuolista taivasta, joka on siksi kaaren ulkopuolta vaaleampi.
 
 ## fy7-11-L3-03
-**Annettu:** punainen reuna: tulokulma $\alpha_\text{p} = 59{,}5^\circ$, taitekerroin $n_\text{p} = 1{,}331$; violetti reuna: $\alpha_\text{v} = 58{,}8^\circ$, $n_\text{v} = 1{,}343$; yksi heijastus pisaran takapinnasta
+**Annettu:** punainen reuna: tulokulma $\alpha_\text{p} = 59{,}5^\circ$, taitekerroin $n_\text{p} = 1{,}3315$; violetti reuna: $\alpha_\text{v} = 58{,}8^\circ$, $n_\text{v} = 1{,}3431$; yksi heijastus pisaran takapinnasta
 **Kysytty:** kaaren leveys $\Delta\theta = \theta_\text{p} - \theta_\text{v}$ asteina
 **Periaate:** Kummankin värin reunan kulma vastapisteen suunnasta saadaan pisaran geometriasta $\theta = 4\beta - 2\alpha$, kun taitekulma $\beta$ lasketaan taittumislaista omalla taitekertoimella. Kaaren leveys on punaisen ja violetin reunan kulmien erotus, koska punainen on ulkoreunalla.
 **Kaava:** $\sin\beta = \dfrac{\sin\alpha}{n}$, $\theta = 4\beta - 2\alpha$ ja $\Delta\theta = \theta_\text{p} - \theta_\text{v}$
 **Muunnokset:** Ei tarvita: kulmat ovat asteina.
-**Sijoitus:** Punainen: $\sin\beta_\text{p} = \dfrac{\sin 59{,}5^\circ}{1{,}331} = 0{,}64735$, $\beta_\text{p} = 40{,}34^\circ$, $\theta_\text{p} = 4 \cdot 40{,}34^\circ - 2 \cdot 59{,}5^\circ = 42{,}37^\circ$. Violetti: $\sin\beta_\text{v} = \dfrac{\sin 58{,}8^\circ}{1{,}343} = 0{,}63691$, $\beta_\text{v} = 39{,}56^\circ$, $\theta_\text{v} = 4 \cdot 39{,}56^\circ - 2 \cdot 58{,}8^\circ = 40{,}65^\circ$. $\Delta\theta = 42{,}37^\circ - 40{,}65^\circ = 1{,}72^\circ$
-**Vastaus:** $1{,}7^\circ$, kaksi merkitsevää numeroa, koska tulos on kahden lähes yhtä suuren kulman erotus.
+**Sijoitus:** Punainen: $\sin\beta_\text{p} = \dfrac{\sin 59{,}5^\circ}{1{,}3315} = 0{,}64711$, $\beta_\text{p} = 40{,}324^\circ$, $\theta_\text{p} = 4 \cdot 40{,}324^\circ - 2 \cdot 59{,}5^\circ = 42{,}296^\circ$. Violetti: $\sin\beta_\text{v} = \dfrac{\sin 58{,}8^\circ}{1{,}3431} = 0{,}63686$, $\beta_\text{v} = 39{,}558^\circ$, $\theta_\text{v} = 4 \cdot 39{,}558^\circ - 2 \cdot 58{,}8^\circ = 40{,}632^\circ$. $\Delta\theta = 42{,}296^\circ - 40{,}632^\circ = 1{,}664^\circ$
+**Vastaus:** noin $1{,}66^\circ$, eli pyöristettynä $1{,}7^\circ$: tulos on kahden lähes yhtä suuren kulman erotus, joten merkitseviä numeroita häviää.
 **Järkevyys:** Leveys on noin kolme kertaa auringon näennäinen halkaisija $0{,}5^\circ$, mikä sopii kokemukseen: sateenkaari on kapea nauha. Punainen kulma on suurempi, joten punainen on ulkoreunalla.

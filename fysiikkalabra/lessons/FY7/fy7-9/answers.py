@@ -14,7 +14,7 @@ a["fy7-9-L1-05"] = c / 532e-9 / 1e12                   # green laser 532 nm: f =
 # Level 2: two steps, a conversion or a rearrangement
 a["fy7-9-L2-01"] = b / (450 + 273.15) * 1e6            # pizza oven vault 450 °C = 723,15 K: λ_max = 4,007 µm
 # figure fy7-9/spectrum-task: the curve's peak sits on the gridline λ = 1,20 µm
-a["fy7-9-L2-02"] = b / 1.20e-6                         # T = b / λ_max = 2415 K -> 2,42 · 10³ K
+a["fy7-9-L2-02"] = b / 1.20e-6                         # T = b / λ_max = 2415 K -> 2,4 · 10³ K (λ read to two figures)
 a["fy7-9-L2-03"] = (b / (27 + 273.15) - b / (327 + 273.15)) * 1e6   # 9,655 µm - 4,829 µm = 4,826 µm
 lam = c / 6.0e14                                       # star: peak frequency 6,0 · 10¹⁴ Hz -> λ_max = 5,0 · 10⁻⁷ m
 a["fy7-9-L2-04"] = b / lam                             # T = b / λ_max = 5796 K -> 5,8 · 10³ K

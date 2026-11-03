@@ -88,7 +88,7 @@
     {
       "id": "fy7-9-L3-02",
       "level": 3,
-      "text": "Lämpökamera havaitsee infrapunasäteilyä aallonpituuksilla $8{,}0\\,\\mu\\text{m}$–$14\\,\\mu\\text{m}$. Kamera näkee parhaiten kappaleet, joiden säteilyn spektrin huippu osuu tälle välille. Mikä on korkein lämpötila, jossa mustan kappaleen spektrin huippu on vielä kameran aallonpituusvälillä? Anna vastaus celsiusasteina.",
+      "text": "Lämpökamera havaitsee infrapunasäteilyä aallonpituuksilla $8{,}0\\,\\mu\\text{m}$–$14\\,\\mu\\text{m}$. Kameran aallonpituusväli on valittu niin, että tavallisten kappaleiden säteilyn spektrin huippu osuu sille. Mikä on korkein lämpötila, jossa mustan kappaleen spektrin huippu on vielä kameran aallonpituusvälillä? Anna vastaus celsiusasteina.",
       "answer": 89.1,
       "unit": "°C",
       "tolerance": 0.02

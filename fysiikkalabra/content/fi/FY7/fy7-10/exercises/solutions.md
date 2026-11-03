@@ -16,7 +16,7 @@
 **Muunnokset:** Ei tarvita: taitekerroin on yksikötön, joten $v$ saadaan samassa yksikössä kuin $c$.
 **Sijoitus:** $v = \dfrac{3{,}00 \cdot 10^{8}\,\text{m/s}}{2{,}42} = 1{,}2397 \cdot 10^{8}\,\text{m/s}$
 **Vastaus:** $v \approx 1{,}24 \cdot 10^{8}\,\text{m/s}$, vastaukseksi $1{,}24$; kolme merkitsevää numeroa kuten taitekertoimessa.
-**Järkevyys:** Timantissa valo etenee alle puolella tyhjiön nopeudesta, koska taitekerroin on yli $2$: $3{,}00 : 2 = 1{,}5$, ja tulos on vähän tätä pienempi.
+**Järkevyys:** Timantissa valo etenee alle puolella tyhjiön nopeudesta, koska taitekerroin on yli $2$, joten $3{,}00 : 2 = 1{,}5$, ja tulos on vähän tätä pienempi.
 
 ## fy7-10-L1-03
 **Annettu:** tulevan ja heijastuneen säteen välinen kulma $76^\circ$, tasopeili
@@ -97,7 +97,7 @@
 **Muunnokset:** Ei tarvita: kulmat ovat asteina.
 **Sijoitus:** $\alpha_\text{toinen} = 90^\circ - 30{,}0^\circ = 60{,}0^\circ$
 **Vastaus:** $60{,}0^\circ$, kolme merkitsevää numeroa kuten tulokulmassa $30{,}0^\circ$.
-**Järkevyys:** Tulokulmat $30{,}0^\circ$ ja $60{,}0^\circ$ ovat yhteensä $90^\circ$, kuten kohtisuorien peilien normaalien välisestä kulmasta seuraa. Kahden heijastuksen jälkeen säde palaa tulosuuntaansa vastakkaiseen suuntaan, ja tähän perustuvat esimerkiksi polkupyörän heijastimet.
+**Järkevyys:** Tulokulmat $30{,}0^\circ$ ja $60{,}0^\circ$ ovat yhteensä $90^\circ$, kuten kohtisuorien peilien normaalien välisestä kulmasta seuraa. Kahden heijastuksen jälkeen säde palaa tulosuuntaansa vastakkaiseen suuntaan, ja samaan periaatteeseen perustuvat esimerkiksi polkupyörän heijastimet.
 
 ## fy7-10-L3-02
 **Annettu:** lampun syvyys $h = 2{,}0\,\text{m}$, vaakasuora etäisyys $x = 1{,}5\,\text{m}$, veden taitekerroin $n_1 = 1{,}33$, ilman taitekerroin $n_2 = 1{,}00$
@@ -115,6 +115,6 @@
 **Periaate:** Taittumislaki $n_1 \sin\alpha_1 = n_2 \sin\alpha_2$ ja taitekertoimen määritelmä $n = c : v$ yhdessä antavat $\dfrac{\sin\alpha_1}{v_1} = \dfrac{\sin\alpha_2}{v_2}$: kulmien sinien suhde on sama kuin nopeuksien suhde. Valo hidastuu, kun se siirtyy aineeseen B, joten se taittuu kohti normaalia.
 **Kaava:** $\dfrac{c}{v_1}\sin\alpha_1 = \dfrac{c}{v_2}\sin\alpha_2$, josta $\sin\alpha_2 = \dfrac{v_2 \sin\alpha_1}{v_1}$
 **Muunnokset:** Ei tarvita: nopeudet ovat samassa yksikössä, joten ne supistuvat.
-**Sijoitus:** $\sin\alpha_2 = \dfrac{1{,}97 \cdot 10^{8}\,\text{m/s} \cdot \sin 40{,}0^\circ}{2{,}25 \cdot 10^{8}\,\text{m/s}} = 0{,}8756 \cdot 0{,}6428 = 0{,}5628$, joten $\alpha_2 = 34{,}25^\circ$
+**Sijoitus:** $\sin\alpha_2 = \dfrac{1{,}97 \cdot 10^{8}\,\text{m/s} \cdot \sin 40{,}0^\circ}{2{,}25 \cdot 10^{8}\,\text{m/s}} = 0{,}8756 \cdot 0{,}6428 = 0{,}5628$, joten $\alpha_2 = 34{,}249^\circ$
 **Vastaus:** $\alpha_2 \approx 34{,}2^\circ$, kolme merkitsevää numeroa kuten nopeuksissa ja tulokulmassa.
 **Järkevyys:** Taitekulma on pienempi kuin tulokulma, kuten hitaampaan aineeseen siirryttäessä pitää. Taitekertoimet ovat $3{,}00 : 2{,}25 = 1{,}33$ (vesi) ja $3{,}00 : 1{,}97 = 1{,}52$ (lasi), ja niillä laskettuna $\sin\alpha_2 = 1{,}33 \cdot 0{,}6428 : 1{,}52 = 0{,}563$, sama tulos.

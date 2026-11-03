@@ -74,10 +74,10 @@ Luvussa *Valon heijastuminen ja taittuminen* taitekerroin $n$ kertoi, kuinka mon
 
 | väri | $\lambda\ (\text{nm})$ | vesi | kruunulasi |
 |---|---|---|---|
-| punainen | $656$ | $1{,}3311$ | $1{,}5143$ |
-| keltainen | $589$ | $1{,}3330$ | $1{,}5167$ |
-| sininen | $486$ | $1{,}3371$ | $1{,}5224$ |
-| violetti | $405$ | $1{,}3435$ | $1{,}5302$ |
+| punainen | $656$ | $1{,}3315$ | $1{,}5143$ |
+| keltainen | $589$ | $1{,}3334$ | $1{,}5167$ |
+| sininen | $486$ | $1{,}3375$ | $1{,}5224$ |
+| violetti | $405$ | $1{,}3431$ | $1{,}5302$ |
 
 Veden taitekertoimet lämpötilassa $20\,{}^\circ\text{C}$: M. Daimon ja A. Masumura, *Applied Optics* 46, 2007. Kruunulasin N-BK7 taitekertoimet: SCHOTT AG, optisten lasien luettelo, 2017.
 
@@ -127,9 +127,9 @@ Pieni sadepisara on lähes pallon muotoinen. Auringonvalo taittuu pisaraan, heij
   <defs><radialGradient id="fy711-drop-g" cx="0.38" cy="0.35" r="0.75"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#a9d1f0"/></radialGradient></defs>
   <circle cx="392" cy="160" r="118" fill="url(#fy711-drop-g)" stroke="#2f74b5" stroke-width="2.5"/>
   <line x1="332" y1="58.5" x2="502" y2="117.5" stroke="#c92a2a" stroke-width="2.5" stroke-linecap="butt"/>
-  <line x1="502" y1="117.5" x2="416.5" y2="275.5" stroke="#c92a2a" stroke-width="2.5" stroke-linecap="butt"/>
-  <line x1="416.5" y1="275.5" x2="327.5" y2="356.5" stroke="#c92a2a" stroke-width="3" stroke-linecap="butt"/>
-  <path d="M327.5,356.5 L334,341.5 L343,351 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <line x1="502" y1="117.5" x2="416" y2="275.5" stroke="#c92a2a" stroke-width="2.5" stroke-linecap="butt"/>
+  <line x1="416" y1="275.5" x2="327.5" y2="356.5" stroke="#c92a2a" stroke-width="3" stroke-linecap="butt"/>
+  <path d="M327.5,356.5 L334,341 L343,351 Z" fill="#c92a2a" stroke-linejoin="round"/>
   <line x1="332" y1="58.5" x2="505" y2="126.5" stroke="#7048e8" stroke-width="2.5" stroke-linecap="butt"/>
   <line x1="505" y1="126.5" x2="397" y2="278" stroke="#7048e8" stroke-width="2.5" stroke-linecap="butt"/>
   <line x1="397" y1="278" x2="296.5" y2="343" stroke="#7048e8" stroke-width="3" stroke-linecap="butt"/>
@@ -255,7 +255,7 @@ Prismassa säde taittuu kahdesti, ja kulmat riippuvat toisistaan:
 ```
 missä $\alpha_1$ on tulokulma ja $\alpha_2$ taitekulma ensimmäisessä pinnassa, $\alpha_3$ tulokulma lasin sisältä toiseen pintaan ja $\alpha_4$ taitekulma ulos tullessa, kaikki normaaleista mitattuina. $A$ on prisman huippukulma ja $\delta$ **poikkeamakulma**, jonka verran säde kääntyy alkuperäisestä suunnastaan. Ensimmäinen yhtälö seuraa kolmion kulmien summasta, koska pintojen normaalit leikkaavat toisensa kulmassa $180^\circ - A$. Toinen seuraa siitä, että säde kääntyy ensimmäisessä pinnassa kulman $\alpha_1 - \alpha_2$ ja toisessa kulman $\alpha_4 - \alpha_3$. Violetille $\alpha_4$ on suurempi kuin punaiselle, joten sen poikkeamakulma on suurempi. Yhtälöt pätevät, kun säde pääsee ulos prisman toisesta pinnasta.
 
-<svg data-fig="prism-angles" viewBox="0 0 600 336" role="img" aria-label="Kaavakuva prismasta: yksivärinen säde tulee vasemmalta prisman vasempaan sivuun tulokulmassa alfa 1 normaaliin nähden ja taittuu lasissa kulmaan alfa 2. Säde osuu oikeaan sivuun tulokulmassa alfa 3 ja lähtee prismasta taitekulmassa alfa 4. Molempien pintojen normaalit on piirretty katkoviivoin. Prisman huipussa on taitava kulma A. Tulevan säteen jatke on piirretty katkoviivana, ja sen ja lähtevän säteen välinen kulma on poikkeamakulma delta." style="max-width:100%;font-size:24px">
+<svg data-fig="prism-angles" viewBox="0 0 600 336" role="img" aria-label="Kaavakuva prismasta: yksivärinen säde tulee vasemmalta prisman vasempaan sivuun tulokulmassa alfa 1 normaaliin nähden ja taittuu lasissa kulmaan alfa 2. Säde osuu oikeaan sivuun tulokulmassa alfa 3 ja lähtee prismasta taitekulmassa alfa 4. Molempien pintojen normaalit on piirretty katkoviivoin. Prisman huipussa on huippukulma A. Tulevan säteen jatke on piirretty katkoviivana, ja sen ja lähtevän säteen välinen kulma on poikkeamakulma delta." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy711-glass2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#d0e6fb"/></linearGradient></defs>
   <path d="M290,24 L455,310 L125,310 Z" fill="url(#fy711-glass2)" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
   <line x1="108" y1="155" x2="257" y2="241" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
@@ -281,13 +281,13 @@ missä $\alpha_1$ on tulokulma ja $\alpha_2$ taitekulma ensimmäisessä pinnassa
 </svg>
 
 ### Sateenkaaren kulma
-Pisarassa säde kääntyy tulokohdassa kulman $\alpha - \beta$, heijastuksessa kulman $180^\circ - 2\beta$ ja lähtökohdassa taas kulman $\alpha - \beta$. Pisarasta lähtevän valon ja auringon suunnan välinen kulma on siksi
+Pisarassa säde kääntyy tulokohdassa kulman $\alpha - \beta$, heijastuksessa kulman $180^\circ - 2\beta$ ja lähtökohdassa taas kulman $\alpha - \beta$. Kokonaiskääntymä on siis $180^\circ + 2\alpha - 4\beta$. Pisarasta lähtevän valon ja auringon suunnan välinen kulma on $180^\circ$ miinus kokonaiskääntymä eli
 ```latex
 \theta = 4\beta - 2\alpha
 ```
-missä $\alpha$ on tulokulma pisaran pinnalla, $\beta$ taitekulma, $\sin\alpha = n \sin\beta$, ja $\theta$ on kulma, jossa valo näkyy vastapisteen suunnasta. Kuvaaja näyttää, että $\theta$ riippuu tulokulmasta mutta ei kasva yli $42{,}4^\circ$:n, kun $n = 1{,}331$. Huipun lähellä käyrä on lähes vaakasuora, joten laajalta tulokulmien väliltä säteet lähtevät lähes samaan suuntaan, ja siihen suuntaan näkyy kirkas kaari. Muu valo lähtee pienempiin kulmiin, joten taivas on kaaren sisäpuolella vaaleampi. Violetille ($n = 1{,}3435$) suurin kulma on $40{,}6^\circ$.
+missä $\alpha$ on tulokulma pisaran pinnalla, $\beta$ taitekulma, $\sin\alpha = n \sin\beta$, ja $\theta$ on kulma, jossa valo näkyy vastapisteen suunnasta. Kuvaaja näyttää, että $\theta$ riippuu tulokulmasta mutta ei kasva yli $42{,}3^\circ$:n, kun $n = 1{,}3315$. Huipun lähellä käyrä on lähes vaakasuora, joten laajalta tulokulmien väliltä säteet lähtevät lähes samaan suuntaan, ja siihen suuntaan näkyy kirkas kaari. Muu valo lähtee pienempiin kulmiin, joten taivas on kaaren sisäpuolella vaaleampi. Violetille ($n = 1{,}3431$) suurin kulma on $40{,}6^\circ$.
 
-<svg data-fig="theta-graph" viewBox="0 0 600 350" role="img" aria-label="Kuvaaja mittakaavassa: punaisen valon (n = 1,331) säde lähtee vesipisarasta kulmassa theeta vastapisteen suuntaan nähden. Vaaka-akselilla on tulokulma alfa 0–90 astetta ja pystyakselilla theeta 0–45 astetta. Käyrä nousee origosta, saavuttaa suurimman arvonsa 42,4 astetta, kun tulokulma on noin 59,5 astetta, ja laskee sitten noin 15 asteeseen. Huipun lähellä käyrä on lähes vaakasuora: laajalta tulokulmien väliltä säteet lähtevät lähes samaan suuntaan." style="max-width:100%;font-size:24px">
+<svg data-fig="theta-graph" viewBox="0 0 600 350" role="img" aria-label="Kuvaaja mittakaavassa: punaisen valon (n = 1,332) säde lähtee vesipisarasta kulmassa theeta vastapisteen suuntaan nähden. Vaaka-akselilla on tulokulma alfa 0–90 astetta ja pystyakselilla theeta 0–45 astetta. Käyrä nousee origosta, saavuttaa suurimman arvonsa 42,3 astetta, kun tulokulma on noin 59,5 astetta, ja laskee sitten noin 15 asteeseen. Huipun lähellä käyrä on lähes vaakasuora: laajalta tulokulmien väliltä säteet lähtevät lähes samaan suuntaan." style="max-width:100%;font-size:24px">
   <line x1="137.5" y1="290" x2="137.5" y2="50" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="179" y1="290" x2="179" y2="50" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="220.5" y1="290" x2="220.5" y2="50" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -339,11 +339,11 @@ missä $\alpha$ on tulokulma pisaran pinnalla, $\beta$ taitekulma, $\sin\alpha =
   <foreignObject x="502" y="275.5" width="62" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\alpha\ (^\circ)$</div></foreignObject>
   <foreignObject x="86" y="-6.5" width="62" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\theta\ (^\circ)$</div></foreignObject>
   <polygon points="304,290 304,50 387,50 387,290" fill="#b2f2bb" fill-opacity="0.45"/>
-  <polyline points="96,290 99,286 102,282 105.5,278 108.5,274 111.5,270 114.5,266 118,262 121,258 124,254 127,250 130.5,246 133.5,242 136.5,238 139.5,234 143,230 146,226.5 149,222.5 152,218.5 155,214.5 158.5,211 161.5,207 164.5,203 167.5,199.5 171,195.5 174,192 177,188 180,184.5 183.5,181 186.5,177 189.5,173.5 192.5,170 195.5,166.5 199,163 202,159.5 205,156 208,152.5 211.5,149 214.5,146 217.5,142.5 220.5,139.5 224,136 227,133 230,130 233,126.5 236,123.5 239.5,120.5 242.5,118 245.5,115 248.5,112 252,109.5 255,106.5 258,104 261,101.5 264.5,99 267.5,96.5 270.5,94 273.5,92 277,89.5 280,87.5 283,85.5 286,83.5 289,81.5 292.5,79.5 295.5,78 298.5,76.5 301.5,74.5 305,73.5 308,72 311,70.5 314,69.5 317.5,68.5 320.5,67.5 323.5,66.5 326.5,66 330,65.5 333,65 336,64.5 339,64 342,64 345.5,64 348.5,64 351.5,64.5 354.5,65 358,65.5 361,66 364,67 367,68 370.5,69.5 373.5,70.5 376.5,72 379.5,74 382.5,76 386,78 389,80 392,82.5 395,85 398.5,88 401.5,91 404.5,94 407.5,97.5 411,101 414,105 417,109 420,113 423,117.5 426.5,122 429.5,127 432.5,132 435.5,137.5 439,143 442,148.5 445,154.5 448,161 451.5,167.5 454.5,174 457.5,181 460.5,188 464,195.5 467,203 470,211" fill="none" stroke="#c92a2a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-  <line x1="343.5" y1="64" x2="343.5" y2="290" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
-  <line x1="96" y1="64" x2="343.5" y2="64" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
-  <circle cx="343.5" cy="64" r="6.5" fill="#c92a2a" stroke="#ffffff" stroke-width="2"/>
-  <foreignObject x="308.5" y="23.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$42{,}4^\circ$</span></div></foreignObject>
+  <polyline points="96,290 99,286 102,282 105.5,278 108.5,274 111.5,270 114.5,266 118,262 121,258 124,254 127,250 130.5,246 133.5,242 136.5,238 139.5,234 143,230.5 146,226.5 149,222.5 152,218.5 155,214.5 158.5,211 161.5,207 164.5,203.5 167.5,199.5 171,195.5 174,192 177,188.5 180,184.5 183.5,181 186.5,177.5 189.5,173.5 192.5,170 195.5,166.5 199,163 202,159.5 205,156 208,152.5 211.5,149.5 214.5,146 217.5,142.5 220.5,139.5 224,136.5 227,133 230,130 233,127 236,124 239.5,121 242.5,118 245.5,115 248.5,112.5 252,109.5 255,107 258,104.5 261,101.5 264.5,99 267.5,97 270.5,94.5 273.5,92 277,90 280,88 283,85.5 286,83.5 289,82 292.5,80 295.5,78 298.5,76.5 301.5,75 305,73.5 308,72 311,71 314,70 317.5,68.5 320.5,68 323.5,67 326.5,66 330,65.5 333,65 336,65 339,64.5 342,64.5 345.5,64.5 348.5,64.5 351.5,65 354.5,65.5 358,66 361,66.5 364,67.5 367,68.5 370.5,70 373.5,71 376.5,72.5 379.5,74.5 382.5,76.5 386,78.5 389,80.5 392,83 395,85.5 398.5,88.5 401.5,91.5 404.5,94.5 407.5,98 411,101.5 414,105.5 417,109.5 420,113.5 423,118 426.5,122.5 429.5,127.5 432.5,132.5 435.5,138 439,143.5 442,149 445,155 448,161.5 451.5,168 454.5,174.5 457.5,181.5 460.5,188.5 464,196 467,203.5 470,211.5" fill="none" stroke="#c92a2a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <line x1="343" y1="64.5" x2="343" y2="290" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
+  <line x1="96" y1="64.5" x2="343" y2="64.5" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
+  <circle cx="343" cy="64.5" r="6.5" fill="#c92a2a" stroke="#ffffff" stroke-width="2"/>
+  <foreignObject x="308" y="24" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$42{,}3^\circ$</span></div></foreignObject>
   <foreignObject x="273" y="233" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{kirkas kaari}$</span></div></foreignObject>
 </svg>
 

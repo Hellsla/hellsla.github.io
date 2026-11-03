@@ -53,7 +53,7 @@
     {
       "id": "fy7-12-L2-02",
       "level": 2,
-      "text": "Kiikarissa valo käännetään lasiprismalla, jonka poikkileikkaus on suorakulmainen tasakylkinen kolmio. Valo tulee prisman sisällä pitkälle sivutahkolle $45^\\circ$:n tulokulmassa, ja sen pitää kokonaisheijastua siitä. Prisman ulkopuolella on ilmaa. Kuinka suuri prisman lasin taitekertoimen on vähintään oltava?",
+      "text": "Kiikarissa valo käännetään lasiprismalla, jonka poikkileikkaus on suorakulmainen tasakylkinen kolmio. Valo tulee prismaan pitkän sivutahkon läpi ja osuu prisman sisällä lyhyelle sivutahkolle (kateettitahkolle) $45^\\circ$:n tulokulmassa, ja sen pitää kokonaisheijastua siitä. Prisman ulkopuolella on ilmaa. Kuinka suuri prisman lasin taitekertoimen on vähintään oltava?",
       "answer": 1.4142,
       "unit": "",
       "tolerance": 0.02
