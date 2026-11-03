@@ -1546,7 +1546,8 @@
       "pituus": "Johdon pituus $l = {{l}}\\,\\text{km}$",
       "selite": "Vihreä palkki on perille tuleva teho. Oranssi palkki on johdossa lämmöksi muuttuva teho.",
       "lukemat": "<strong>Häviö $P_\\text{h} = {{Ph}}\\,\\text{MW}$ eli ${{o}}\\,\\%$ tehosta</strong><br>$I = {{I}}\\,\\text{A}$, $R = {{R}}\\,\\Omega$, $P_\\text{perille} = {{Pp}}\\,\\text{MW}$<br>Nostomuuntaja $N_2 : N_1 = {{n}}$",
-      "lukemat_mahdoton": "<strong>Siirto ei onnistu: häviö olisi suurempi kuin lähetetty teho.</strong><br>$I = {{I}}\\,\\text{A}$, $R = {{R}}\\,\\Omega$<br>Nostomuuntaja $N_2 : N_1 = {{n}}$"
+      "lukemat_mahdoton": "<strong>Siirto ei onnistu: häviö olisi suurempi kuin lähetetty teho.</strong><br>$I = {{I}}\\,\\text{A}$, $R = {{R}}\\,\\Omega$<br>Nostomuuntaja $N_2 : N_1 = {{n}}$",
+      "palkki_perille": "$P_\\text{perille}$"
     },
     "fy7-5": {
       "kaynnista": "Käynnistä",

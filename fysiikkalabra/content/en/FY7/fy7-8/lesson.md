@@ -188,7 +188,7 @@ A power line has resistance, and the current flowing in the line heats it. The p
   <circle cx="208.5" cy="300" r="10" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
   <circle cx="219.5" cy="300" r="10" fill="none" stroke="#1f2933" stroke-width="2.5"/>
   <line x1="196" y1="300" x2="150" y2="300" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <foreignObject x="116.5" y="233.5" width="195" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{local substation}$</div></foreignObject>
+  <foreignObject x="141.5" y="233.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{transformer}$</div></foreignObject>
   <rect x="66" y="272" width="84" height="62" fill="#f1dfb5" stroke="#1f2933" stroke-width="3"/>
   <path d="M52,272 L108,233.5 L164,272 Z" fill="#c92a2a" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
   <rect x="78" y="289.5" width="22" height="18.5" fill="#eef5f9" stroke="#1f2933" stroke-width="2"/>

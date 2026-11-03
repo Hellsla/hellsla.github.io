@@ -131,7 +131,7 @@ new p5((p) => {
     const sc = wmax / 500, gap = (y1 - y0 - 2 * bh) / 3;
     const ya = y0 + gap, yb = ya + bh + gap;
     p.noStroke(); p.fill(...MUTEDC); p.rect(xb, ya - 4, 1.5, yb - ya + bh + 8);
-    lab('$P_\\text{perille}$', 16, ya + bh * 0.5 + fh * 0.35, 'l', fh, GREEN);
+    lab(__('palkki_perille'), 16, ya + bh * 0.5 + fh * 0.35, 'l', fh, GREEN);
     lab('$P_\\text{h}$', 16, yb + bh * 0.5 + fh * 0.35, 'l', fh, HEATC);
     p.stroke(...INKC); p.strokeWeight(1.5);
     const wa = s.perille * sc, wb = Math.min(s.Ph, 500) * sc;

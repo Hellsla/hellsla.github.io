@@ -16,7 +16,7 @@
       "id": "hook",
       "stage": "herata",
       "type": "hook",
-      "text": "Pohjanmaan rannikolla tuulivoimalan roottori pyörii tasaisesti, noin kerran viidessä sekunnissa. Satojen kilometrien päässä kotona pistorasian jännite vaihtaa suuntaansa sata kertaa sekunnissa. Kaikki verkon voimalaitokset pyörivät samassa tahdissa, ja verkon taajuus on $50\\,\\text{Hz}$. Tuulivoimala, vesivoimala ja ydinvoimala tuottavat sähkön samalla periaatteella: jokin pyörii magneettikentässä.",
+      "text": "Pohjanmaan rannikolla tuulivoimalan roottori pyörii tasaisesti, noin kerran viidessä sekunnissa. Satojen kilometrien päässä kotona pistorasian jännite vaihtaa suuntaansa sata kertaa sekunnissa. Kaikki verkon voimalaitokset tuottavat jännitettä samalla taajuudella, ja verkon taajuus on $50\\,\\text{Hz}$. Tuulivoimala, vesivoimala ja ydinvoimala tuottavat sähkön samalla periaatteella: jokin pyörii magneettikentässä.",
       "question": "Miten tasainen pyöriminen saa aikaan jännitteen, joka vaihtaa suuntaansa?"
     },
     {

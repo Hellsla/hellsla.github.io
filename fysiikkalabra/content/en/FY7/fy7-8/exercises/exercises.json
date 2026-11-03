@@ -13,13 +13,13 @@
       "level": 1,
       "text": "The ideal transformer of a garden light lowers the mains voltage $230\\,\\text{V}$ to a voltage of $8.0\\,\\text{V}$. The secondary coil has $40$ turns. How many turns does the primary coil have?",
       "answer": 1150.0,
-      "unit": "kierrosta",
+      "unit": "turns",
       "tolerance": 0.02
     },
     {
       "id": "fy7-8-L1-03",
       "level": 1,
-      "text": "The substation of a residential area lowers the voltage of the distribution network, $20\\,\\text{kV}$, to $400\\,\\text{V}$. The current going into the low-voltage network is $250\\,\\text{A}$. How large a current flows in the primary coil of the transformer, when the transformer is assumed to be ideal?",
+      "text": "The local substation of a residential area lowers the voltage of the distribution network, $20\\,\\text{kV}$, to $400\\,\\text{V}$. The current going into the low-voltage network is $250\\,\\text{A}$. How large a current flows in the primary coil of the transformer, when the transformer is assumed to be ideal?",
       "answer": 5.0,
       "unit": "A",
       "tolerance": 0.02
@@ -98,7 +98,7 @@
       "level": 3,
       "text": "An old $220\\,\\text{kV}$ power line is converted into a $400\\,\\text{kV}$ line so that the conductors and their resistance remain the same. How many times the power can the same line transmit, if the power loss is still to be the same share of the transmitted power as before?",
       "answer": 3.3058,
-      "unit": "kertaa",
+      "unit": "times",
       "tolerance": 0.02
     }
   ]

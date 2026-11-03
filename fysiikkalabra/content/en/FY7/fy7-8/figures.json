@@ -9,7 +9,7 @@
  "kantaverkko": "transmission grid",
  "sähköasema": "substation",
  "jakeluverkko": "distribution network",
- "muuntamo": "local substation",
+ "muuntamo": "transformer",
  "Kuvaaja mittakaavassa: siirtojohdossa lämmöksi muuttuvan tehon osuus siirretystä tehosta prosentteina siirtojännitteen funktiona kilovoltteina, kun siirretty teho on 200 MW ja johdon resistanssi 6,0 ohmia. Käyrä laskee jyrkästi: 100 kV:lla osuus on 12 %, 200 kV:lla 3,0 % ja 400 kV:lla 0,75 %. Kun jännite kaksinkertaistuu, osuus pienenee neljäsosaan.": "Graph, to scale: the share of the transmitted power that becomes internal energy in a transmission line, as a percentage, as a function of the transmission voltage in kilovolts, when the transmitted power is 200 MW and the resistance of the line 6.0 ohms. The curve falls steeply: at 100 kV the share is 12 %, at 200 kV 3.0 % and at 400 kV 0.75 %. When the voltage doubles, the share falls to a quarter.",
  "MW": "MW",
  "Kuvitus: seinäpistorasiaan on kytketty pieni puhelimen laturi, ja sen johto vie pöydällä olevaan puhelimeen, joka latautuu.": "Illustration: a small phone charger is plugged into a wall socket, and its cable leads to a phone on a table, which is charging.",
