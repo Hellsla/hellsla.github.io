@@ -7,7 +7,7 @@
     "justify a choice using several criteria for comparison."
   ],
   "prior": [
-    "When a fuel burns, chemical energy is released, and energy is measured in joules and kilowatt-hours (chapter *Fuels and heat of combustion E = Hm*)",
+    "When a fuel burns, chemical energy is released, and energy is measured in joules and kilowatt-hours (chapter *Fuels and heat of combustion $E = Hm$*)",
     "Ways of producing energy differ in power, availability and environmental effects (chapter *Ways of producing energy and how they compare*)"
   ],
   "activities": [
@@ -29,7 +29,7 @@
         {
           "text": "Chemical energy changes into kinetic energy and heat, and the carbon of the petrol leaves as carbon dioxide in the exhaust gases.",
           "correct": true,
-          "feedback": "Correct. When a fuel burns, chemical energy is released (chapter *Fuels and heat of combustion E = Hm*), and the carbon atoms of the fuel combine with oxygen: $\\text{C} + \\text{O}_2 \\rightarrow \\text{CO}_2$. That is why every amount of energy obtained by burning a carbon-containing fuel brings carbon dioxide with it."
+          "feedback": "Correct. When a fuel burns, chemical energy is released (chapter *Fuels and heat of combustion $E = Hm$*), and the carbon atoms of the fuel combine with oxygen: $\\text{C} + \\text{O}_2 \\rightarrow \\text{CO}_2$. That is why every amount of energy obtained by burning a carbon-containing fuel brings carbon dioxide with it."
         },
         {
           "text": "When petrol burns, it changes completely into energy, so no carbon or other matter is left in the exhaust gases.",
@@ -37,7 +37,7 @@
         },
         {
           "text": "When petrol burns, it produces energy out of nothing, so the engine gets more energy than the fuel originally contained.",
-          "feedback": "Energy does not appear out of nothing. The energy the engine gets comes from the chemical energy of the fuel, and part of it becomes waste heat (chapter *Fuels and heat of combustion E = Hm*)."
+          "feedback": "Energy does not appear out of nothing. The energy the engine gets comes from the chemical energy of the fuel, and part of it becomes waste heat (chapter *Fuels and heat of combustion $E = Hm$*)."
         },
         {
           "text": "The carbon of the petrol burns away and disappears, so the exhaust gases contain only water vapour and warm air.",

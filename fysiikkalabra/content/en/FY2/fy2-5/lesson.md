@@ -1,4 +1,4 @@
-# Fuels and heat of combustion E = Hm
+# Fuels and heat of combustion $E = Hm$
 
 > **Why** do a kilogram of petrol and a kilogram of air-dried firewood release different amounts of energy when they burn, even though both are just burning matter?
 

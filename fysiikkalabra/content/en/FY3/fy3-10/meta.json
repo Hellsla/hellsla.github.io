@@ -1,7 +1,7 @@
 {
   "id": "fy3-10",
   "course": "FY3",
-  "title": "Ideal gas law pV = nRT",
+  "title": "Ideal gas law $pV = nRT$",
   "goals": [
     "LOPS FY3: equation of state of an ideal gas",
     "Skills: solving for a quantity from the equation of state of an ideal gas",
