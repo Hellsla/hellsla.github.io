@@ -9,12 +9,12 @@ CONTENT-HASH: a43ca0c07950edcc
 - [Minor] L2-04 — "kelkka" while the chapter says "pulkka" — use one word.
 - [Minor] L1-02 solution — heading "Kuvaajan lukeminen" for a force diagram on a grid — "Kuvion lukeminen".
 - [Minor] L2-01 — the model figure is shown above the solution and again at "Voimakuvio" — drop one.
-- [Minor] L2-03 solution figure — crowded: F_y label under the floor hatching, away from its dashed arrow — move component labels beside their arrows.
+- [Minor] L2-03 solution figure — redrawn: $\overline{F}_x$ and $\overline{F}_y$ now start at the tail of $\overline{F}$ and are clearly distinguishable, no overlaps (earlier crowding resolved); the $\overline{F}_y$ label stands close under the $\overline{F}$ shaft and $\overline{a}$ runs just above $\overline{F}_x$, a little more room would help.
 
 ## Checked
-- open-exercises-1280 (L1 parts 1–6), L2 parts 1–6, L3 parts 1–4 (same figures as the English set), L3-1280-4 balloon with F_noste (correct Finnish)
-- open-tarkista-1280-1, contact-3 (exercise stage at 390)
-- Solutions read in full: fluent plain Finnish, decimal comma, units in LaTeX, glossary terms consistent; force red, velocity blue, acceleration orange
+- Hash a43ca0c07950edcc at start and end.
+- Opened L2-03 at 1280 (open-exercises-L2-1280-4, with the surrounding task and solution text) and rendered at 390 (enlarged).
+- Rendered all 16 exercise figures at 390 and skimmed them as one sheet: nothing broken, clipped or overlapping; same figures as the fi set.
 
 ## Scores
 illustrations 4 · typography 4 · Finnish 4 · accessibility 4

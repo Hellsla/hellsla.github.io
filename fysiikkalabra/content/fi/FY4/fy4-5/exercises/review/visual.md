@@ -5,15 +5,15 @@ CONTENT-HASH: 548a782b3164dea2
 (none)
 
 ## Polish
-- [Minor] L2 task 3 figure — now readable: $\overline{F}$ starts at the rear top corner and $\overline{F}_x$ and $\overline{F}_y$ are distinguishable, $\overline{a}$ stands clear above. The box is still small next to the very long $\overline{N}$ and $\overline{G}$, and the $\overline{F}_y$ label sits on the floor hatch; a slightly larger box or a label lifted off the hatch would help.
+- [Minor] L2-03 solution figure (redrawn renderer) — the dashed $\overline{F}_x$ and $\overline{F}_y$ now start at the tail of $\overline{F}$, clearly apart from the box, and are distinct from the solid arrow; no label overlaps an arrow, the box or the axes. The $\overline{F}_y$ label stands close under the $\overline{F}$ shaft and $\overline{a}$ runs directly above $\overline{F}_x$ (colours keep them apart); a few pixels more room would help.
 - [Minor] L1 task 3 (kirja) — F and N collinear, F's arrowhead hidden; offset N slightly.
-- [Minor] L3 task 2 (curlingkivi) — F_μ drawn on the floor hatch; lift a few pixels.
-- [Minor] L2 task 1 second figure — T_y is a short dashed stub and crowds the T label; acceptable.
+- [Minor] L3 task 2 (curlingkivi) — $\overline{F}_\mu$ drawn on the floor hatch; lift a few pixels.
+- [Minor] L2 task 1 second figure — $\overline{T}_y$ is a short dashed stub and crowds the $\overline{T}$ label; acceptable.
 
 ## Checked
-- Opened at 1280: L2 part 4 (L2-03, redrawn, fresh capture), L2 part 2 (sled), L3 part 1 (lift, v/a clear of shafts) and part 4 (balloon, G and N clearly different), earlier L2 parts 1 and 5, L3 part 3 (curling), L1 part 3.
-- Not opened: L1 parts 1, 2, 4–7; L2 parts 3, 6; L3 parts 2, 5.
-- Maths typography, units, case endings clean in the captures seen.
+- Hash 548a782b3164dea2 at start and end.
+- Opened L2-03 at 1280 (open-exercises-L2-1280-4) and rendered at 390 (enlarged): components, labels, axes, $\overline{N}$/$\overline{G}$, $\overline{F}_\mu$ all readable.
+- Rendered all 16 exercise figures at 390 and skimmed them as one sheet (supports, T and T_x/T_y, grid, wall, lift with v/a, balloon, curling): nothing broken or clipped; solved-text typography unchanged.
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 4 · accessibility 4

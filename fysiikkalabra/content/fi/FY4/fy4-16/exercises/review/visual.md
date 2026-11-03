@@ -5,15 +5,14 @@ CONTENT-HASH: 0e9004dded5fe968
 (none)
 
 ## Polish
-- [Minor] Support diagrams (svg 4, 9, 14 and the a-up/a-down supports; e.g. 172x178) — $\overline{N}$ is drawn with its tail below the ground line and the tip at the contact, $\overline{G}$ also reaches below the line, so both stand in the hatching, whereas fy4-3 draws $\overline{N}$ up through the body — readable, but use one convention across FY4.
-- [Minor] Incline diagrams (svg 8, 10: 303x397 and 244x393) are tall, with a long $\overline{N}$ and a long dashed $\overline{G}_y$; no clipping and they do not dominate the page, but the figure is large next to its text.
-- [Minor] Carried over, text unchanged: L2-03 Kaava chain breaks after "="; L2-02 \tfrac units cramped; Järkevyys boxes cut a sentence; L3-02 graph y-labels every 200 N and no "esimerkkiaineisto" on screen; L1-01 task not split.
+- [Minor] L3-01 two-body figure (renderer change) — $\overline{F}_\mu$ on the flat part now has a short visible shaft and reads as a vector at 390 and 1280; it is still short next to $\overline{N}$ and $\overline{G}$, which is true to its size. Labels, $\overline{a}$ and the axes do not overlap.
+- [Minor] Support diagrams (e.g. 172x178) — $\overline{N}$ is drawn with its tail below the ground line, so both $\overline{N}$ and $\overline{G}$ stand in the hatching, whereas fy4-3 draws $\overline{N}$ up through the body — readable, but use one convention across FY4.
+- [Minor] Incline diagrams (303x397 and 244x393) are tall, with a long $\overline{N}$ and a long dashed $\overline{G}_y$; no clipping, large next to their text.
+- [Minor] Carried over, text unchanged: L2-03 Kaava chain breaks after "="; L2-02 \tfrac units cramped; L3-02 graph y-labels every 200 N; L1-01 task not split.
 
 ## Checked
 - Hash 0e9004dded5fe968 at start and end; text unchanged.
-- Rendered all 15 exercise force diagrams from preview/fy4-16.html at 390 and 1280 and opened them enlarged (packet has only 1280 captures), including redrawn 2, 5, 7, 8, 10 and 12 (G with F_v and a, v; supports with a; inclines with a, v off the shafts; two-block diagram).
-- $\overline{a}$ orange and $\overline{v}$ blue are now clear of the force shafts; the force arrows are larger with visible shafts; labels readable, no overlap, no clipping; heights 165-397 px; the same at both widths.
-- Graph svg 13 (L3-02) unchanged in content.
+- Rendered all 17 exercise svgs at 390 and 1280; opened the two-body L3-01 figure at both widths and the sheet of the rest (supports, inclines, lift, balloon, rope, graph): nothing broken or clipped.
 
 ## Scores
 illustrations 4 · typography 4 · Finnish 5 · accessibility 4
