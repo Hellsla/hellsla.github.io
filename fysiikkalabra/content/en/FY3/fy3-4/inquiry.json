@@ -7,7 +7,7 @@
     "interpret the constant term and the slope of a graph of pressure against depth."
   ],
   "prior": [
-    "Weight is a force, $G = mg$, and $g = 9.81\\,\\text{m/s}^2$ (chapter *Force as a measure of interaction and weight G = mg*)",
+    "Weight is a force, $G = mg$, and $g = 9.81\\,\\text{m/s}^2$ (chapter *Force as a measure of interaction and weight $G = mg$*)",
     "Pressure is a state variable that arises in the micro model from particles colliding with the wall (chapter *Thermodynamic system, state variables and temperature*)"
   ],
   "activities": [

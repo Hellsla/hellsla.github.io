@@ -1,6 +1,7 @@
 {
   "FY1": {
     "title": "Physics as a natural science",
+    "themes": ["Physics and measurement", "Motion and matter", "Your own investigation"],
     "tavoitteet": [
       "becomes familiar with physics as a systematic science based on experiments",
       "becomes familiar with the scales of matter and of the universe",
@@ -14,13 +15,14 @@
       "fy1-3": "Measuring and the reliability of a measurement",
       "fy1-4": "Graphing and fitting a straight line",
       "fy1-5": "Uniform motion: speed, position and graphs",
-      "fy1-6": "Acceleration of free fall: v = gt",
-      "fy1-7": "Density: m = ρV",
+      "fy1-6": "Acceleration of free fall: $v = gt$",
+      "fy1-7": "Density: $m = \\rho V$",
       "fy1-8": "Your own experimental investigation: planning, carrying out and reporting"
     }
   },
   "FY2": {
     "title": "Physics, environment and society",
+    "themes": ["Energy and power", "Energy production and the environment"],
     "tavoitteet": [
       "becomes familiar with energy as a central concept of physics",
       "knows different forms of energy and ways of producing energy",
@@ -30,9 +32,9 @@
     "lessons": {
       "fy2-1": "Forms of energy and conservation of energy",
       "fy2-2": "Energy transformations and the joule",
-      "fy2-3": "Power: P = ΔE/Δt",
+      "fy2-3": "Power: $P = \\Delta E/\\Delta t$",
       "fy2-4": "Efficiency",
-      "fy2-5": "Fuels and heat of combustion E = Hm",
+      "fy2-5": "Fuels and heat of combustion $E = Hm$",
       "fy2-6": "Ways of producing energy and how they compare",
       "fy2-7": "Transferring energy: electricity and heat",
       "fy2-8": "Energy production, the environment and climate change"
@@ -40,6 +42,7 @@
   },
   "FY3": {
     "title": "Energy and heat",
+    "themes": ["Force, work and temperature", "Pressure, heat and phases", "Expansion and gases", "Energy and the environment"],
     "tavoitteet": [
       "deepens their understanding of energy as a central concept of physics",
       "can investigate phenomena related to the thermodynamic state of matter and to changes of state",
@@ -47,18 +50,18 @@
       "recognises the importance of energy balance and heat transfer in climate change"
     ],
     "lessons": {
-      "fy3-1": "Force as a measure of interaction and weight G = mg",
+      "fy3-1": "Force as a measure of interaction and weight $G = mg$",
       "fy3-2": "Work and energy",
       "fy3-3": "Thermodynamic system, state variables and temperature",
       "fy3-13": "Determining absolute zero",
       "fy3-4": "Pressure and hydrostatic pressure",
       "fy3-5": "Internal energy, heat and conservation of energy",
-      "fy3-6": "Heating and cooling of a substance: Q = cmΔT",
+      "fy3-6": "Heating and cooling of matter: $Q = cm\\Delta T$",
       "fy3-7": "Changes of state",
       "fy3-14": "Thermal balance during a change of state",
       "fy3-8": "Thermal expansion",
       "fy3-9": "Changes of state of a gas and Boyle's law",
-      "fy3-10": "Equation of state of an ideal gas pV = nRT",
+      "fy3-10": "Ideal gas law $pV = nRT$",
       "fy3-11": "Work done by a gas and the heat engine",
       "fy3-15": "Energy production and the efficiency of power plants",
       "fy3-12": "Heat transfer, energy balance and climate change",
@@ -67,6 +70,7 @@
   },
   "FY4": {
     "title": "Force and motion",
+    "themes": ["Describing motion", "Newton's laws and forces", "Mechanical energy", "Momentum and applications"],
     "tavoitteet": [
       "can investigate phenomena related to force and motion experimentally",
       "can produce and analyse graphs of measurement data",

@@ -75,6 +75,10 @@ md = (en_dir / "lesson.md").read_text(); m = re.search(r"(?<!\$)\$([^$\n]+?)\$(?
 code, out = run("check_i18n.py")
 expect("a translation that changes a formula is an error", code == 1 and "lesson.md: formulas differ" in out, out)
 (en_dir / "lesson.md").write_text(md)
+import check_i18n
+expect("a chapter reference's title is a name, not a formula of the text",
+       check_i18n.formulas("$E = Pt$ (luku *Teho*)") == check_i18n.formulas("$E = Pt$ (chapter *Power: $P = \\Delta E/\\Delta t$*)")
+       == check_i18n.formulas("$E = Pt$ (chapter Power: $P = \\Delta E/\\Delta t$)") == ["E=Pt"])
 
 # reviews: the translation has its own hash and its own reports; the Finnish lesson is untouched
 en_hash = run("reviews.py", "hash", LESSON)[1].strip()
