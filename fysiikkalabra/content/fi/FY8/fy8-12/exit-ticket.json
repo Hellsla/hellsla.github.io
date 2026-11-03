@@ -1,6 +1,6 @@
 [
   {
-    "q": "Vihreän valon fotonin energia on noin $2{,}5\\,\\text{eV}$ ja hammasröntgenin fotonin noin $60\\,\\text{keV}$. Kumpi pystyy ionisoimaan vesimolekyylin, jonka ionisaatioenergia on $12{,}6\\,\\text{eV}$, ja miksi kirkkaampi vihreä valo ei muuta asiaa?",
+    "q": "Vihreän valon fotonin energia on noin $2{,}5\\,\\text{eV}$ ja hammasröntgenin fotonin suurimmillaan noin $60\\,\\text{keV}$. Kumpi pystyy ionisoimaan vesimolekyylin, jonka ionisaatioenergia on $12{,}6\\,\\text{eV}$, ja miksi kirkkaampi vihreä valo ei muuta asiaa?",
     "a": "Vain röntgenfotoni, koska sen energia ylittää ionisaatioenergian moninkertaisesti. Yhden vihreän fotonin energia $2{,}5\\,\\text{eV}$ on liian pieni, ja kirkkaampi valo tarkoittaa vain useampia samanlaisia fotoneja: yksittäinen fotoni ei silti pysty irrottamaan elektronia."
   },
   {

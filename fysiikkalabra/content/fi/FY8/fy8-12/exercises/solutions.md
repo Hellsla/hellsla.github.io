@@ -1,5 +1,5 @@
 ## fy8-12-L1-01
-**Annettu:** lyijyn puoliintumispaksuus $d_{1/2} = 10{,}4\,\text{mm}$, lyijylevyn paksuus $d = 25{,}0\,\text{mm}$, kapea säde
+**Annettu:** lyijyn puoliintumispaksuus $d_{1/2} = 10{,}4\,\text{mm}$ gammasäteilyn keskimääräiselle energialle $1{,}25\,\text{MeV}$, lyijylevyn paksuus $d = 25{,}0\,\text{mm}$, kapea säde
 **Kysytty:** läpäisevän gammasäteilyn osuus $\tfrac{I}{I_0}$ prosentteina
 **Periaate:** Jokaisella gammafotonilla on lyijyn jokaisessa ohuessa kerroksessa sama todennäköisyys vuorovaikuttaa, joten jokainen puoliintumispaksuuden kerros puolittaa intensiteetin. Kapeassa säteessä sironneet fotonit eivät palaa säteeseen, joten vaimenemislaki pätee.
 **Kaava:** $I = I_0 \left(\tfrac{1}{2}\right)^{d/d_{1/2}}$, josta $\dfrac{I}{I_0} = \left(\tfrac{1}{2}\right)^{d/d_{1/2}}$
@@ -56,7 +56,7 @@
 **Muunnokset:** $t = 3{,}00\,\text{min} = 3{,}00 \cdot 60\,\text{s} = 180\,\text{s}$
 **Sijoitus:** $R = \dfrac{1260 - 72}{180\,\text{s}} = \dfrac{1188}{180\,\text{s}} = 6{,}600\,\tfrac{1}{\text{s}}$
 **Vastaus:** $6{,}60\,\tfrac{1}{\text{s}}$, kolme merkitsevää numeroa kuten mittausajassa $3{,}00\,\text{min}$.
-**Järkevyys:** Kokonaispulssitaajuus on $1260 : 180\,\text{s} = 7{,}0\,\tfrac{1}{\text{s}}$ ja tausta $72 : 180\,\text{s} = 0{,}40\,\tfrac{1}{\text{s}}$; erotus on $6{,}6\,\tfrac{1}{\text{s}}$. Taustan osuus on pieni mutta ei merkityksetön.
+**Järkevyys:** Kokonaispulssitaajuus on ${1260 : 180}\,\text{s} = 7{,}0\,\tfrac{1}{\text{s}}$ ja tausta ${72 : 180}\,\text{s} = 0{,}40\,\tfrac{1}{\text{s}}$; erotus on $6{,}6\,\tfrac{1}{\text{s}}$. Taustan osuus on pieni mutta ei merkityksetön.
 
 ## fy8-12-L2-02
 **Annettu:** lyijyn paksuus $d_\text{Pb} = 10\,\text{mm}$ ja puoliintumispaksuus $d_{1/2,\text{Pb}} = 5{,}5\,\text{mm}$, betonin paksuus $d_\text{b} = 20\,\text{cm}$ ja puoliintumispaksuus $d_{1/2,\text{b}} = 3{,}9\,\text{cm}$, kapea säde
@@ -86,7 +86,7 @@
 **Muunnokset:** Ei tarvita: kaikki paksuudet ovat millimetreinä.
 **Sijoitus:** $d_\text{b} = \dfrac{10\,\text{mm}}{5{,}5\,\text{mm}} \cdot 39\,\text{mm} = 1{,}8182 \cdot 39\,\text{mm} = 70{,}909\,\text{mm}$
 **Vastaus:** $71\,\text{mm}$, kaksi merkitsevää numeroa kuten puoliintumispaksuuksissa.
-**Järkevyys:** Betonin puoliintumispaksuus on noin seitsemän kertaa lyijyn, joten betonia tarvitaan noin seitsemän kertaa paksumpi kerros: $7 \cdot 10\,\text{mm} = 70\,\text{mm}$. Lyijy on siis tehokkaampi suoja samalla paksuudella, mutta betoniseinä on halvempi.
+**Järkevyys:** Betonin puoliintumispaksuus on noin seitsemän kertaa lyijyn, joten betonia tarvitaan noin seitsemän kertaa paksumpi kerros: $7 \cdot 10\,\text{mm} = 70\,\text{mm}$. Lyijy on siis tehokkaampi suoja samalla paksuudella, mutta betonia tarvitaan paksumpi kerros, ja se on usein käytännöllisempi rakennusmateriaali.
 
 ## fy8-12-L3-01
 **Annettu:** alfahiukkasen energia $E_\alpha = 5{,}49\,\text{MeV}$ ja matka $s_\alpha = 4{,}1\,\text{cm}$; beetahiukkasen energia $E_\beta = 1{,}0\,\text{MeV}$ ja matka $s_\beta = 3{,}6\,\text{m}$; ioniparin energia $W = 34\,\text{eV}$

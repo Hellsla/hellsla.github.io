@@ -3,7 +3,7 @@
     {
       "id": "fy8-12-L1-01",
       "level": 1,
-      "text": "Koboltti-60 lähettää gammasäteilyä, jolle lyijyn puoliintumispaksuus on $10{,}4\\,\\text{mm}$. Kuinka monta prosenttia gammasäteilystä läpäisee $25{,}0\\,\\text{mm}$:n paksuisen lyijylevyn? Oletetaan kapea säde.",
+      "text": "Koboltti-60 lähettää gammasäteilyä, jonka keskimääräiselle energialle $1{,}25\\,\\text{MeV}$ lyijyn puoliintumispaksuus on $10{,}4\\,\\text{mm}$. Kuinka monta prosenttia gammasäteilystä läpäisee $25{,}0\\,\\text{mm}$:n paksuisen lyijylevyn? Oletetaan kapea säde.",
       "answer": 18.9,
       "unit": "%",
       "tolerance": 0.02
@@ -95,7 +95,7 @@
     {
       "id": "fy8-12-L3-03",
       "level": 3,
-      "text": "WLAN-verkko ja mikroaaltouuni käyttävät sähkömagneettista säteilyä, jonka taajuus on $2{,}45\\,\\text{GHz}$. Vesimolekyylin ionisaatioenergia on $12{,}6\\,\\text{eV}$. Kuinka monta kertaa suurempi on ionisaatioenergia kuin yhden tämän säteilyn fotonin energia? Anna vastaus yksikössä $10^{6}$. Miksi tehokaskaan mikroaaltosäteily ei siksi ole ionisoivaa?",
+      "text": "WLAN-verkko ja mikroaaltouuni käyttävät sähkömagneettista säteilyä, jonka taajuus on $2{,}45\\,\\text{GHz}$. Vesimolekyylin ionisaatioenergia on $12{,}6\\,\\text{eV}$. Kuinka monta kertaa suurempi on ionisaatioenergia kuin yhden tämän säteilyn fotonin energia? Anna vastaus yksikössä $10^{6}$.",
       "answer": 1.24,
       "unit": "· 10⁶",
       "tolerance": 0.02

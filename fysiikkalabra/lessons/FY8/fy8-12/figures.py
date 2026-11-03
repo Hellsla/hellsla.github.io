@@ -154,7 +154,7 @@ def gm():
     f.line(140, 170, 520, 170, GAMMA, 2.5)                   # the wire (anode)
     f.tex(120, 86, r"\text{ikkuna}", "middle")
     f.tex(300, 86, r"\text{metalliseinä}\ (-)", "middle")
-    f.tex(470, 196, r"\text{lanka}\ (+)", "start", GAMMA, bg=True)
+    f.tex(480, 196, r"\text{lanka}\ (+)", "start", GAMMA, bg=True)
     # the beta particle, the first ion pair and the avalanche at the wire
     f.arrow(20, 140, 196, 152, BETA, 3, 14)
     f.tex(40, 116, r"\beta", "middle", BETA, size=28)
@@ -205,7 +205,7 @@ def tuntematon():
             "loivemmin.")
     ax = Axes(f, (100, 312), (476, 58), x=(0, 48), y=(0, 850), xticks=list(range(2, 49, 2)), yticks=list(range(50, 851, 50)),
               xlabel=r"d\ (\text{mm})", ylabel=r"\text{pulssia}\ /\ \text{min}",
-              xfmt=lambda v: fi(v) if v % 8 == 0 else "", yfmt=lambda v: fi(v) if v % 200 == 0 else "")
+              xfmt=lambda v: fi(v) if v % 4 == 0 else "", yfmt=lambda v: fi(v) if v % 200 == 0 else "")
     ax.curve(lambda d: R0 * 0.5 ** (d / D), 0, 48, GAMMA, 3)
     ax.point(0, R0, GAMMA)
     return f.svg()

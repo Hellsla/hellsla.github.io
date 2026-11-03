@@ -292,7 +292,7 @@ Ihminen ei aisti ionisoivaa säteilyä, joten se havaitaan mittalaitteella. Tava
   <line x1="140" y1="170" x2="520" y2="170" stroke="#e8590c" stroke-width="2.5" stroke-linecap="butt"/>
   <foreignObject x="78.5" y="71.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{ikkuna}$</div></foreignObject>
   <foreignObject x="200.5" y="71.5" width="199" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{metalliseinä}\ (-)$</div></foreignObject>
-  <foreignObject x="470" y="181.5" width="112" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#e8590c"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{lanka}\ (+)$</span></div></foreignObject>
+  <foreignObject x="480" y="181.5" width="112" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#e8590c"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{lanka}\ (+)$</span></div></foreignObject>
   <line x1="20" y1="140" x2="183" y2="151" stroke="#1971c2" stroke-width="3" stroke-linecap="butt"/>
   <path d="M196,152 L181.5,157.5 L182.5,145 Z" fill="#1971c2" stroke-linejoin="round"/>
   <foreignObject x="28.5" y="99" width="23" height="34" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:28px;color:#1971c2">$\beta$</div></foreignObject>
@@ -414,7 +414,7 @@ Cesium-137-lähdettä säilytetään lyijysuojassa. Lyijyn puoliintumispaksuus c
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Puoliintumispaksuus $d_{1/2} = 5{,}5\,\text{mm}$ ja intensiteettien suhde $I : I_0 = 5{,}0\,\% = 0{,}050$. Kysytään lyijykerroksen paksuutta $d$.
+**Tunnetut ja kysytty.** Puoliintumispaksuus $d_{1/2} = 5{,}5\,\text{mm}$ ja intensiteettien suhde ${I : I_0} = 5{,}0\,\% = 0{,}050$. Kysytään lyijykerroksen paksuutta $d$.
 
 <!-- vaihe -->
 
@@ -429,7 +429,7 @@ d = d_{1/2} \cdot \frac{\ln (I_0 : I)}{\ln 2}
 
 <!-- vaihe -->
 
-**Yksikkömuunnokset.** Prosenttiluku muutetaan suhteeksi: $5{,}0\,\% = 0{,}050$, joten $I_0 : I = 1 : 0{,}050 = 20$. Paksuus saadaan millimetreinä, koska puoliintumispaksuus on millimetreinä.
+**Yksikkömuunnokset.** Prosenttiluku muutetaan suhteeksi: $5{,}0\,\% = 0{,}050$, joten ${I_0 : I} = {1 : 0{,}050} = 20$. Paksuus saadaan millimetreinä, koska puoliintumispaksuus on millimetreinä.
 
 <!-- vaihe -->
 
@@ -453,7 +453,7 @@ d = d_{1/2} \cdot \frac{\ln (I_0 : I)}{\ln 2}
 **Järkevyys.** Neljä puoliintumispaksuutta eli $22\,\text{mm}$ päästäisi läpi $\left(\tfrac{1}{2}\right)^{4} = 6{,}25\,\%$ ja viisi eli $27{,}5\,\text{mm}$ noin $3{,}1\,\%$. Tavoite $5{,}0\,\%$ on näiden välissä, ja niin on myös paksuus $24\,\text{mm}$.
 
 ## Yleinen virhekäsitys
-Moni ajattelee, että säteilytetty esine tai ruoka muuttuu itse radioaktiiviseksi. Alfa-, beeta-, gamma- ja röntgensäteily kuitenkin vain ionisoi atomeja tai siirtää niille energiaa; se ei muuta ytimiä. Esimerkiksi sairaalatarvikkeet steriloidaan gammasäteilyllä, ja ne ovat sen jälkeen yhtä turvallisia käsitellä kuin ennenkin. Ainetta voi tehdä radioaktiiviseksi lähinnä neutronisäteily, jonka neutronit sitoutuvat ytimiin (luku *Fissio, fuusio ja ydinvoima*). Haitallista on se, että radioaktiivista *ainetta* joutuu iholle tai elimistöön, ei se, että esine on ollut säteilyssä.
+Moni ajattelee, että säteilytetty esine tai ruoka muuttuu itse radioaktiiviseksi. Steriloinnissa ja lääketieteessä käytetty gamma-, röntgen- ja elektronisäteily kuitenkin vain ionisoi atomeja tai siirtää niille energiaa; sen energia ei riitä muuttamaan ytimiä, joten aine ei muutu radioaktiiviseksi. Esimerkiksi sairaalatarvikkeet steriloidaan gammasäteilyllä, ja ne ovat sen jälkeen yhtä turvallisia käsitellä kuin ennenkin. Ainetta voi tehdä radioaktiiviseksi lähinnä neutronisäteily, jonka neutronit sitoutuvat ytimiin (luku *Fissio, fuusio ja ydinvoima*). Haitallista on se, että radioaktiivista *ainetta* joutuu iholle tai elimistöön, ei se, että esine on ollut säteilyssä.
 
 Toinen virhe on ajatella, että kaksi puoliintumispaksuutta pysäyttää kaiken gammasäteilyn. Toinen kerros vaimentaa puolet siitä säteilystä, joka *pääsi ensimmäisen läpi*, joten läpi pääsee neljäsosa.
 
