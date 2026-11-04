@@ -1,14 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 7af079e6fca22cc3
+CONTENT-HASH: 80b922026fcda7db
+Mode: full
+Round: 1
 
 ## Blocking
 (none)
 
 ## Fixed
-- solutions.md L3-01 Reasonableness: garbled clause "electricity is good for anything but district heating only for heating" -> "electricity can be used for anything, but district heat only for heating" (matches the Finnish).
+- None.
 
 ## Polish
 - None.
 
 ## Checked
-- Translation review against the reviewed Finnish (teacher's procedure 2026-10-28), after the typesetting round: exercises.json (answers, units, tolerances, figure id) and solutions.md compared with content/fi; every number in all 12 texts and solutions matches by script; recomputed L1-01 90.2 %, L2-01 109 MW, L2-04 7.16 t/s, L3-01 206 MW / 67.6 %, L3-02 13.6 kt, L3-03 87.7 kWh. Values with units set as inline LaTeX like the Finnish; no Finnish words left.
+- Translation review against the reviewed Finnish (teacher's procedure), new tasks L1-06..08, L2-05..07, L3-04..05: ids, answers, units, tolerances, correct flags, L1-06 choices and feedback, table cells (decimal point in JSON) and every number in texts and solutions equal content/fi (scripted number comparison of all 20 solutions, no differences).
+- Recomputed L1-07 34.0 %, L1-08 12.0 GWh, L2-05 90.0 % (30.0 % / 35.0 % electrical, 84.6 -> 90.0 % overall), L2-06 1560 MW, L2-07 36.6 %, L3-04 131.9 MW, L3-05 dT mean 10.775 K and 1716 MW.
+- check_i18n.py en: 0 errors for fy3-15.

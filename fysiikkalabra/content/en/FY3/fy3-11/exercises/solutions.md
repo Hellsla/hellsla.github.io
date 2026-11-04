@@ -121,3 +121,123 @@ $$\begin{aligned} P &= \dfrac{5.418 \cdot 10^7\,\text{J}}{4500\,\text{s}} \\ &= 
 
 **Answer:** $12.0\,\text{kW}$, three significant figures. All the values ($6.00\,\textsf{l}$, $0.750\,\text{kg/l}$, $43.0\,\text{MJ/kg}$, $28.0\,\%$ and $80.0\,\text{km/h}$) are given with three figures; the distance $100\,\text{km}$ is the reference distance for consumption and does not limit the precision.
 **Reasonableness:** The fuel power is $\tfrac{1.935 \cdot 10^8\,\text{J}}{4500\,\text{s}} = 43\,\text{kW}$, so $31\,\text{kW}$ leaves as waste heat through the exhaust gases and the radiator. The petrol used is $54\,\text{kWh}$ of energy, and the work is $28\,\%$ of that, $15\,\text{kWh}$. An electric car needs about $\tfrac{15\,\text{kWh}}{0.90} \approx 17\,\text{kWh}$ from the battery to do the same work, because its motor turns electricity into work with an efficiency of $90\,\%$ and no heat has to be turned into work.
+
+## fy3-11-L1-06
+**Find:** how the work done by a gas expanding at constant pressure can be seen in the $(V, p)$ coordinate system.
+**Principle:** At constant pressure the work done by the gas is $W_\text{g} = p\,\Delta V$. In the coordinate system the pressure is the height of the horizontal segment and the change in volume $\Delta V$ is its length, that is, its width, so the product is the area of the rectangle between the segment and the volume axis.
+**Model answer:** The work is the area of the rectangle under the segment, because its height is the pressure and its width is the change in volume. The height alone or the length alone is not the work; to get the work you need both the pressure and the change in volume. The work is not zero either, even though the pressure does not change: the piston moves when the volume grows, and the force does work. The unit $\text{Pa} \cdot \text{m}^3$ is the joule.
+
+## fy3-11-L1-07
+**Find:** why the heat that a heat pump gives out indoors can be greater than the electrical energy it uses without breaking the conservation of energy.
+**Principle:** A heat pump uses electricity to transfer heat from the colder outdoor air to the warmer indoor air. Energy is conserved, so the heat given out indoors is the sum of the heat taken from outdoors and the electrical energy used by the pump: $Q_\text{indoors} = Q_\text{outdoors} + E_\text{el}$.
+**Model answer:** Part of the heat given out indoors has been taken from the outdoor air, so the energy going indoors is the sum of the heat from the outdoor air and the electrical energy. The pump does not produce energy but transfers it, and the outdoor air cools a little. The coefficient of performance $\varepsilon = Q_\text{indoors}/E_\text{el}$ can therefore be over 1, although the efficiency cannot exceed $100\,\%$. Electricity and heat are both energy, so they can be compared with each other.
+
+## fy3-11-L1-08
+**Given:** electric power of the pump $P_\text{el} = 1.20\,\text{kW}$, thermal power given out to the heating circuit $P_\text{indoors} = 3.90\,\text{kW}$
+**Find:** the coefficient of performance $\varepsilon$
+**Principle:** The coefficient of performance tells how many times as much heat the pump gives out indoors as the electrical energy it uses. It can also be calculated from the powers, because both powers are energy in the same time.
+**Formula:** $\varepsilon = \dfrac{Q_\text{indoors}}{E_\text{el}} = \dfrac{P_\text{indoors}}{P_\text{el}}$
+**Conversions:** Both powers are in kilowatts, so the unit cancels and no conversion is needed. The coefficient of performance has no unit.
+**Substitution:** $\varepsilon = \dfrac{3.90\,\text{kW}}{1.20\,\text{kW}} = 3.25$
+**Answer:** $\varepsilon = 3.25$, three significant figures, because both powers are given with three figures.
+**Reasonableness:** The coefficient of performance is over 1, as it can be for a heat pump. The power taken from the outdoor air is $3.90\,\text{kW} - 1.20\,\text{kW} = 2.70\,\text{kW}$, that is, $2.25$ times the electric power. Estimate: $\tfrac{3.9}{1.2} \approx \tfrac{4}{1.2} \approx 3.3$.
+
+## fy3-11-L2-05
+**Given:** heat of combustion of the fuel $H = 43\,\text{MJ/kg}$. Power and consumption: $20.0\,\text{kW}$ and $7.9\,\text{kg/h}$; $40.0\,\text{kW}$ and $11.6\,\text{kg/h}$; $60.0\,\text{kW}$ and $16.0\,\text{kg/h}$; $80.0\,\text{kW}$ and $22.5\,\text{kg/h}$
+**Find:** the greatest efficiency $\eta$ of the engine as a percentage
+**Principle:** The engine is a heat engine, and its efficiency is the share of the power released in the burning of the fuel that becomes mechanical power. The fuel power is the consumption times the heat of combustion. The efficiency is calculated separately for each load, and the greatest is chosen.
+**Formula:** $P_1 = q_m H$ and $\eta = \dfrac{P}{P_1} = \dfrac{P}{q_m H}$
+**Conversions:** $43\,\text{MJ/kg} = 43 \cdot 10^6\,\text{J/kg}$ and $1\,\text{h} = 3600\,\text{s}$, so for example $16.0\,\text{kg/h} = \tfrac{16.0}{3600}\,\text{kg/s} = 4.444 \cdot 10^{-3}\,\text{kg/s}$. The power $60.0\,\text{kW} = 60\,000\,\text{W}$.
+**Substitution:** At the load $60.0\,\text{kW}$:
+```latex
+\begin{aligned}
+P_1 &= 4.444 \cdot 10^{-3}\,\tfrac{\text{kg}}{\text{s}} \cdot 43 \cdot 10^6\,\tfrac{\text{J}}{\text{kg}} \\
+&= 191\,100\,\text{W} \\
+\eta &= \frac{60\,000\,\text{W}}{191\,100\,\text{W}} \\
+&= 0.314
+\end{aligned}
+```
+For the other loads in the same way: $20.0\,\text{kW}$ gives $21.2\,\%$, $40.0\,\text{kW}$ gives $28.9\,\%$ and $80.0\,\text{kW}$ gives $29.8\,\%$.
+**Answer:** The greatest efficiency is $31.4\,\%$ at the load $60.0\,\text{kW}$, three significant figures. The heat of combustion $43\,\text{MJ/kg}$ is given with two figures, so the result is really known to two figures ($31\,\%$); the third figure is given so that the loads can be compared with each other and the rounding does not take the answer outside the accepted interval.
+**Reasonableness:** The efficiency is below $100\,\%$ and in the range of $20$–$40\,\%$ typical of diesel engines. It grows with the load and decreases again at the greatest load, so the maximum is in the middle. Estimate: $\tfrac{60}{16 \cdot 43 / 3.6} = \tfrac{60}{191} \approx 0.31$.
+
+## fy3-11-L2-06
+**Find:** what is wrong in the student's claim about the efficiency of a heat engine.
+**Principle:** A heat engine takes heat $Q_1$ from a hot source, does work $W$ and gives out heat $Q_2$ to a colder environment: $W = Q_1 - Q_2$. A piston engine can repeat its work only if the gas is cooled before the piston is returned, and in the cooling heat is transferred to the colder surroundings. So $Q_2 > 0$ and $\eta = W/Q_1 < 100\,\%$.
+**Model answer:** The claim is wrong, because the engine can repeat its work only by cooling the gas, and therefore part of the heat must always be given out to the colder surroundings. Energy is indeed conserved, but that does not mean that all the heat could become work: part of the heat is transferred to the surroundings in the cooling. Removing friction improves the efficiency, but the limit does not go away. The size of the engine or the heat of combustion of the fuel does not change this limit.
+
+## fy3-11-L2-07
+**Given:** electrical energies of the four days in the table $E_\text{el}$: $2.1$, $3.0$, $4.2$ and $3.6\,\text{kWh}$, and the heats given out indoors $Q_\text{indoors}$: $6.4$, $8.1$, $10.0$ and $9.3\,\text{kWh}$
+**Find:** the heat $Q_\text{outdoors}$ taken from the outdoor air in total in the four days
+**Principle:** A heat pump does not produce energy. The heat given out indoors is the sum of the heat taken from the outdoor air and the electrical energy used by the pump, and this holds also for sums over several days.
+**Formula:** $Q_\text{outdoors} = Q_\text{indoors} - E_\text{el}$
+**Conversions:** All the energies are given in kilowatt-hours, so no conversions are needed.
+**Substitution:** The sums are $E_\text{el} = 2.1 + 3.0 + 4.2 + 3.6 = 12.9\,\text{kWh}$ and $Q_\text{indoors} = 6.4 + 8.1 + 10.0 + 9.3 = 33.8\,\text{kWh}$. So
+```latex
+\begin{aligned}
+Q_\text{outdoors} &= 33.8\,\text{kWh} - 12.9\,\text{kWh} \\
+&= 20.9\,\text{kWh}
+\end{aligned}
+```
+**Answer:** $20.9\,\text{kWh}$, three significant figures, because the energies are given to a tenth and the difference is known to that precision.
+**Reasonableness:** The heat taken from outdoors is less than the heat given out indoors, as it should be. Energy balance: $20.9\,\text{kWh} + 12.9\,\text{kWh} = 33.8\,\text{kWh}$. The outdoor temperatures $T_\text{outdoor}$ are not part of the calculation, because the energy balance does not need them. The coefficient of performance $Q_\text{indoors}/E_\text{el}$ of each day is over 1 ($3.05$; $2.70$; $2.38$; $2.58$) and decreases as the frost gets harder, which fits the fact that it is harder to transfer heat from cold air.
+
+## fy3-11-L3-04
+**Given:** monthly heat demands $Q$ and coefficients of performance $\varepsilon$ from the table: November $1.8\,\text{MWh}$ and $3.4$; December $2.6\,\text{MWh}$ and $2.9$; January $4.0\,\text{MWh}$ and $2.4$; February $3.1\,\text{MWh}$ and $2.6$; March $2.2\,\text{MWh}$ and $3.1$
+**Find:** a) the monthly electrical energies and their sum, b) the coefficient of performance of the season $\varepsilon_\text{season}$ (for the answer box), c) why the average is not used, and the saving of electricity compared with direct electric heating
+**Principle:** The coefficient of performance is $\varepsilon = Q_\text{indoors}/E_\text{el}$, so the electrical energy of each month is $E_\text{el} = Q/\varepsilon$. The coefficient of performance of the whole season is defined in the same way from the energies of the whole season: the heat given out during the season divided by the electrical energy of the season. The electricity use of direct electric heating is equal to the heat demand.
+**Formula:** $E_\text{el} = \dfrac{Q}{\varepsilon}$ and $\varepsilon_\text{season} = \dfrac{\sum Q}{\sum E_\text{el}}$
+**Conversions:** All the energies are in megawatt-hours, so no conversions are needed. The coefficient of performance has no unit.
+**Substitution:** a) Month by month:
+```latex
+\begin{aligned}
+E_\text{el,Nov} &= \frac{1.8\,\text{MWh}}{3.4} = 0.529\,\text{MWh} \\
+E_\text{el,Dec} &= \frac{2.6\,\text{MWh}}{2.9} = 0.897\,\text{MWh} \\
+E_\text{el,Jan} &= \frac{4.0\,\text{MWh}}{2.4} = 1.667\,\text{MWh} \\
+E_\text{el,Feb} &= \frac{3.1\,\text{MWh}}{2.6} = 1.192\,\text{MWh} \\
+E_\text{el,Mar} &= \frac{2.2\,\text{MWh}}{3.1} = 0.710\,\text{MWh}
+\end{aligned}
+```
+The sum of the electrical energies is $4.995\,\text{MWh}$ and the sum of the heat demands $1.8 + 2.6 + 4.0 + 3.1 + 2.2 = 13.7\,\text{MWh}$.
+
+b) The coefficient of performance of the season:
+```latex
+\begin{aligned}
+\varepsilon_\text{season} &= \frac{13.7\,\text{MWh}}{4.995\,\text{MWh}} \\
+&= 2.74
+\end{aligned}
+```
+c) Direct electric heating uses $13.7\,\text{MWh}$ of electricity, so the saving is $13.7\,\text{MWh} - 4.995\,\text{MWh} = 8.7\,\text{MWh}$.
+**Answer:** b) $\varepsilon_\text{season} = 2.74$, three significant figures. The initial values are given with two figures, so the result is really known to two figures ($2.7$), and the third figure is given so that the rounding does not move the answer outside the accepted interval. This number goes in the answer box.
+**Reasonableness:** The coefficient of performance of the season, $2.74$, lies between the smallest ($2.4$) and the greatest ($3.4$) monthly coefficient of performance. The ordinary average of the monthly coefficients of performance would be: the sum of the coefficients is $14.4$, so the average is $\tfrac{14.4}{5} = 2.88$, about $5\,\%$ too high. Justification: the average would give every month the same weight, although in the coldest month the most heat is needed and the coefficient of performance is the smallest. Then most electricity is used at a small coefficient of performance, so the coefficient of performance of the whole season must be smaller than the average. Energy balance: $4.995\,\text{MWh} + 8.7\,\text{MWh} = 13.7\,\text{MWh}$, so the heat taken from the outdoor air covers about $64\,\%$ of the heat demand. The coefficient of performance is the smallest in the coldest month, because it is harder to transfer heat from the cold outdoor air to the warm inside when the temperature difference grows.
+
+## fy3-11-L3-05
+**Given:** cross-sectional area $A = 200\,\text{cm}^2$, constant pressure $p = 125\,\text{kPa}$, power of the resistor $P = 260\,\text{W}$, time $t = 4.0\,\text{s}$, height of the piston $h_1 = 10.0\,\text{cm}$ at the start and $h_2 = 22.0\,\text{cm}$ at the end
+**Find:** a) the heat $Q$ and the work $W_\text{g}$ done by the gas, b) the change in internal energy $\Delta U$ in kilojoules (for the answer box), c) the share that became work, and a justification of why a single expansion is not a heat engine
+**Principle:** The energy of the resistor is transferred to the air as heat, $Q = Pt$. The pressure is constant, so the work done by the air is $W_\text{g} = p\,\Delta V$, and the change in volume is obtained from the displacement of the piston: $\Delta V = A\,\Delta h$. Energy is conserved, so the first law is $\Delta U = Q - W_\text{g}$.
+**Reading the graph:** From the table the height of the piston grows from $h_1 = 10.0\,\text{cm}$ to $h_2 = 22.0\,\text{cm}$, so $\Delta h = 12.0\,\text{cm}$. The height grows by about the same amount every second ($3.0\,\text{cm/s}$). The pressure is given as constant, and the steady rise fits heating with a constant power.
+**Formula:** $Q = Pt$, $\Delta V = A\,\Delta h$, $W_\text{g} = p\,\Delta V$ and $\Delta U = Q - W_\text{g}$
+**Conversions:** $A = 200\,\text{cm}^2 = 200 \cdot 10^{-4}\,\text{m}^2 = 0.0200\,\text{m}^2$, $\Delta h = 12.0\,\text{cm} = 0.120\,\text{m}$ and $p = 125\,\text{kPa} = 125\,000\,\text{Pa}$.
+**Substitution:** a)
+```latex
+\begin{aligned}
+Q &= 260\,\text{W} \cdot 4.0\,\text{s} \\
+&= 1040\,\text{J} \\
+\Delta V &= 0.0200\,\text{m}^2 \cdot 0.120\,\text{m} \\
+&= 2.40 \cdot 10^{-3}\,\text{m}^3 \\
+W_\text{g} &= 125\,000\,\text{Pa} \cdot 2.40 \cdot 10^{-3}\,\text{m}^3 \\
+&= 300\,\text{J}
+\end{aligned}
+```
+b)
+```latex
+\begin{aligned}
+\Delta U &= 1040\,\text{J} - 300\,\text{J} \\
+&= 740\,\text{J} \\
+&= 0.74\,\text{kJ}
+\end{aligned}
+```
+c) The share that became work is $\tfrac{W_\text{g}}{Q} = \tfrac{300\,\text{J}}{1040\,\text{J}} = 0.288 \approx 29\,\%$.
+**Answer:** b) $\Delta U = 0.74\,\text{kJ}$, two significant figures, because the power $260\,\text{W}$ and the time $4.0\,\text{s}$ are given with two figures. This number goes in the answer box.
+**Justification c):** About $29\,\%$ of the heat became work, and the remaining about $71\,\%$ stayed as the internal energy of the air, so the air warmed up. This fits air: for a diatomic gas at constant pressure the share of the work is about $\tfrac{2}{7} \approx 29\,\%$ of the heat received. A single expansion is not a heat engine, because an engine repeats its work cycle after cycle. To bring the piston back to the start, the air has to be cooled and compressed, and in the cooling heat is transferred to the colder surroundings. The work share $29\,\%$ of one expansion is therefore not the efficiency of a cycle: that is $\eta = W/Q_1$, where the work is $W = Q_1 - Q_2$.
+**Reasonableness:** The change in internal energy is positive and smaller than the heat, $0 < 740\,\text{J} < 1040\,\text{J}$, as it should be when a gas expands and receives heat. Energy balance: $740\,\text{J} + 300\,\text{J} = 1040\,\text{J}$. The speed of the piston, $3.0\,\text{cm/s}$, is slow, so the motion of a lightly moving piston is calm.

@@ -1,16 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: cfdb3fcb022b45aa
+CONTENT-HASH: a9fc9cb18c0434a8
 
 ## Blocking
-(none left; see Fixed)
+(none)
 
 ## Fixed
-- Update 2026-10-28: "20 °C" kept as plain text where the Finnish has "20-asteista", so the formulas match the Finnish.
-- exercises.json fy3-16-L3-01 — "A stove contains 25 kg of stones" (Finnish: saunan kiuas, as in L1-01) → "A sauna stove contains 25 kg of stones"
+- (none needed in the exercise files)
 
 ## Polish
 - none
 
 ## Checked
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): exercises.json (texts, units, answers) and solutions.md (all step labels, substitutions, significant-figure remarks, reasonableness checks) for all 12 tasks.
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked exercises.json (unit wrapping in tasks) and solutions.md (L1-04 principle) against the new Finnish.
+- Delta review of the 8 new tasks (L1-06..08, L2-05..07, L3-04..05) against the reviewed Finnish: ids, levels, kinds, answers (incl. the text answers of L1-06/07), units, tolerances, correct flags and choice order, data table cells all identical (scripted comparison).
+- Every number in exercises.json and solutions.md equals the Finnish (decimal comma normalised to point, `{,}` handled); all 21 solution sections compared one by one.
+- Answers recomputed: 250 s, 76 %, 139 W/K, 2.9 h, 480 EUR, 590 kW.
+- Feedback of each wrong choice keeps the Finnish physics (no "cold flows", equilibrium, c vs latent heat).
+- Translation (English): natural, no Finnish words left; terms consistent (thermal conductivity, latent heat of fusion, heat loss coefficient, U-value).
+- check_i18n.py: 0 errors.

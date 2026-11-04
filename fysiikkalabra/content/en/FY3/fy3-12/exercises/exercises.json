@@ -40,6 +40,96 @@
       "answer": 239,
       "unit": "W/m²",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-12-L1-06",
+      "level": 1,
+      "text": "You sit in front of a campfire on a windless evening, and your face feels warm even though the air between the campfire and your face is cool. How does heat mainly transfer from the campfire to your face?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "By thermal radiation, because the hot surface of the campfire emits radiation that travels through the air to the skin.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "By convection, because the air heated by the campfire flows horizontally towards the face.",
+          "feedback": "Warm air rises upwards from the campfire and does not flow horizontally to the face. In addition, the air in front of the face is cool, so no heat is carried along with it."
+        },
+        {
+          "text": "By conduction, because the particles of the air pass energy from the campfire all the way to the face by colliding with each other.",
+          "feedback": "Air is a poor conductor of heat, and the cool air between the campfire and the face shows that energy does not travel through it. Conduction would require the medium to warm up along the way."
+        },
+        {
+          "text": "By conduction, because the hot embers of the campfire touch the skin of the face and give energy directly.",
+          "feedback": "The face is at a distance from the campfire and does not touch the embers. Conduction requires the bodies to touch, so it does not explain the feeling of warmth from a distance."
+        },
+        {
+          "text": "By thermal radiation, because the hot surface of the campfire emits radiation that travels through the air to the skin.",
+          "correct": true,
+          "feedback": "Correct: all bodies emit thermal radiation, and a hot campfire radiates strongly. The radiation passes through the cool air without warming it much and is absorbed by the skin, which warms up."
+        }
+      ]
+    },
+    {
+      "id": "fy3-12-L1-07",
+      "level": 1,
+      "text": "Which statement about the greenhouse effect is correct?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Greenhouse gases absorb the thermal radiation of the surface and radiate part of it back down, so the surface warms.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Greenhouse gases absorb the thermal radiation of the surface and radiate part of it back down, so the surface warms.",
+          "correct": true,
+          "feedback": "Correct: greenhouse gases, such as water vapour and carbon dioxide, absorb the thermal radiation of the surface and send part of it back down. That is why the mean temperature of the surface is about $+15\\,{}^\\circ\\text{C}$ and not about $-18\\,{}^\\circ\\text{C}$."
+        },
+        {
+          "text": "The effect is due to the thinning of the ozone layer, which lets more warming ultraviolet radiation reach the surface.",
+          "feedback": "This confuses the greenhouse effect with ozone depletion. Ozone depletion lets more ultraviolet radiation through, but it hardly warms the Earth. The greenhouse effect arises from the absorption of thermal radiation."
+        },
+        {
+          "text": "Greenhouse gases prevent the radiation of the Sun from entering the atmosphere, so they warm the air from above.",
+          "feedback": "A large part of the radiation of the Sun passes through the atmosphere to the surface. Greenhouse gases affect how the thermal radiation emitted by the surface escapes, not whether the radiation of the Sun gets in."
+        },
+        {
+          "text": "The effect arises only from human emissions, and without them the mean temperature of the surface would be the same as now.",
+          "feedback": "The natural greenhouse effect exists even without humans and keeps the Earth habitable. Human emissions strengthen it, and that is why the Earth is warming."
+        }
+      ]
+    },
+    {
+      "id": "fy3-12-L1-08",
+      "level": 1,
+      "text": "It is $21\\,{}^\\circ\\text{C}$ inside a house and $-15\\,{}^\\circ\\text{C}$ outside on a frosty night. Which statement about heat transfer through the wall is correct?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Heat is transferred, as a net amount, from indoors to outdoors, because the temperature difference transfers energy from the warmer to the colder.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Cold moves through the wall from outside to inside, which is why the inner surface of the wall feels cold.",
+          "feedback": "Cold is not something that moves. The inner surface feels cold because heat is transferred from the skin and the room towards the wall. The thing that is transferred is always energy, and it goes from warm to cold."
+        },
+        {
+          "text": "Equal amounts of heat are transferred through the wall in both directions, so the indoor temperature stays the same even without heating.",
+          "feedback": "The temperature difference makes energy transfer, as a net amount, from indoors to outdoors. Without heating, the indoor temperature falls until the difference has disappeared."
+        },
+        {
+          "text": "Heat is transferred, as a net amount, from indoors to outdoors, because the temperature difference transfers energy from the warmer to the colder.",
+          "correct": true,
+          "feedback": "Correct: energy is transferred, as a net amount, from the warm indoors to the cold outdoors. Thermal radiation also goes from the cold outdoors to the indoors, but more goes from the warmer side."
+        },
+        {
+          "text": "Heat is transferred from indoors to outdoors only if there is a hole in the wall, because no heat is conducted through a solid wall.",
+          "feedback": "Heat is conducted also through a solid wall, and a large part of the heat loss of a building goes precisely through the walls, the roof and the windows. Insulation only reduces this power."
+        }
+      ]
     }
   ],
   "level2": [
@@ -74,6 +164,106 @@
       "answer": 3.4,
       "unit": "W/m²",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-12-L2-05",
+      "level": 2,
+      "text": "Two identical cups are filled with $0.25\\,\\text{kg}$ of hot water at a temperature of $80.0\\,{}^\\circ\\text{C}$. Cup A is open, and cup B has a lid. The cups are in the same room, and the temperatures are measured at five-minute intervals (example data). The heat capacity of the cup itself is ignored, and the specific heat capacity of water is $4190\\,\\text{J/(kg}\\cdot\\text{K)}$.\n\na) Calculate how large a mean thermal power the lid keeps from escaping during the first $10\\,\\text{min}$.\n\nb) What does the lid prevent in the open cup, and why does the water in cup B still cool?\n\nEnter the result of part a) in the answer box.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 7.0,
+      "unit": "W",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Temperature of the water as it cools (example data)",
+        "columns": [
+          "$t\\,(\\text{min})$",
+          "$T_\\text{A}\\,({}^\\circ\\text{C})$",
+          "$T_\\text{B}\\,({}^\\circ\\text{C})$"
+        ],
+        "rows": [
+          [
+            "0",
+            "80.0",
+            "80.0"
+          ],
+          [
+            "5",
+            "73.9",
+            "76.6"
+          ],
+          [
+            "10",
+            "69.0",
+            "73.0"
+          ],
+          [
+            "15",
+            "64.8",
+            "70.1"
+          ],
+          [
+            "20",
+            "61.2",
+            "67.4"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy3-12-L2-06",
+      "level": 2,
+      "text": "A student calculates how large a thermal power is conducted through a window. The window has an area of $1.6\\,\\text{m}^2$ and a U-value of $1.0\\,\\text{W/(m}^2\\cdot\\text{K)}$. It is $21\\,{}^\\circ\\text{C}$ indoors and $-15\\,{}^\\circ\\text{C}$ outdoors. The student's solution is: “The temperature difference is $21\\,{}^\\circ\\text{C} - 15\\,{}^\\circ\\text{C} = 6\\,\\text{K}$, so $P = UA\\Delta T = 1.0 \\cdot 1.6 \\cdot 6\\,\\text{W} = 9.6\\,\\text{W}$.”\n\na) Where is the error in the student's solution, and how would you notice already with rounded numbers that the result is too small?\n\nb) Calculate correctly the thermal power conducted through the window.\n\nEnter the result of part b) in the answer box.",
+      "kind": [
+        "error"
+      ],
+      "answer": 57.6,
+      "unit": "W",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-12-L2-07",
+      "level": 2,
+      "text": "Students investigate the insulating ability of a wall panel. The area of the panel is $0.50\\,\\text{m}^2$. The inner side of the panel is heated with an electric resistor that keeps the temperatures constant, and the power $P$ conducted through the panel is measured at different temperature differences $\\Delta T$ (example data).\n\na) Plot the points in a $(\\Delta T, P)$ coordinate system and fit a straight line through the origin to them. Justify why the line should pass through the origin. The line passes approximately through the point $(50.0\\,\\text{K};\\ 8.75\\,\\text{W})$. Determine the U-value of the panel from the slope of the line.\n\nb) What does the placement of the points on a line tell you about the dependence between the power and the temperature difference? Why did the temperatures have to stay constant during the measurement?\n\nEnter the U-value of part a) in the answer box.",
+      "kind": [
+        "data",
+        "experiment",
+        "graph"
+      ],
+      "answer": 0.35,
+      "unit": "W/(m²·K)",
+      "tolerance": 0.04,
+      "data": {
+        "caption": "Power conducted through the panel at different temperature differences (example data)",
+        "columns": [
+          "$\\Delta T\\,(\\text{K})$",
+          "$P\\,(\\text{W})$"
+        ],
+        "rows": [
+          [
+            "10.0",
+            "1.8"
+          ],
+          [
+            "20.0",
+            "3.4"
+          ],
+          [
+            "30.0",
+            "5.4"
+          ],
+          [
+            "40.0",
+            "6.9"
+          ],
+          [
+            "50.0",
+            "8.8"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -100,6 +290,90 @@
       "answer": 984,
       "unit": "kWh",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-12-L3-04",
+      "level": 3,
+      "text": "The ice cover of the Arctic Ocean has shrunk. The table gives the area of the ice at the September minimum (example data). Use a model to estimate what follows from the loss of ice. The open sea that replaced the ice receives the same solar radiation as the ice did, on average $90\\,\\text{W/m}^2$. Albedo tells you what share of the incoming radiation is reflected: the albedo of ice is $0.60$ and that of open sea $0.06$. The surface area of the Earth is $5.1 \\cdot 10^{14}\\,\\text{m}^2$.\n\na) Read from the table the decrease in the area of the ice from 1980 to 2020 and convert it into square metres.\n\nb) By how much greater a power does the area now absorb? Then calculate this increase per area of the whole Earth, on average, and compare it with the energy imbalance $1.0\\,\\text{W/m}^2$.\n\nc) Explain why the loss of ice is a positive feedback (an effect that strengthens the change) and which simplification of the model makes the estimate rough.\n\nEnter the power per area of the whole Earth from part b) in the answer box.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 0.34,
+      "unit": "W/m²",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Area of Arctic Ocean ice at the September minimum (example data)",
+        "columns": [
+          "Year",
+          "$A\\,(10^{6}\\,\\text{km}^2)$"
+        ],
+        "rows": [
+          [
+            "1980",
+            "7.5"
+          ],
+          [
+            "1990",
+            "6.1"
+          ],
+          [
+            "2000",
+            "6.4"
+          ],
+          [
+            "2010",
+            "4.9"
+          ],
+          [
+            "2020",
+            "3.9"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy3-12-L3-05",
+      "level": 3,
+      "text": "The temperature of the Earth is estimated with a simple model. The surface absorbs a power of $239\\,\\text{W/m}^2$ from the Sun and radiates thermal radiation upwards at a power $S$ per square metre. The atmosphere absorbs the share $0.80$ of this radiation, and the remaining $20\\,\\%$ passes straight into space. The atmosphere radiates the energy it has absorbed half upwards into space and half downwards to the surface. In the model the atmosphere does not absorb the radiation of the Sun, and both the top of the atmosphere and the surface are in energy balance. The table gives the thermal power radiated by the surface per square metre as a function of its temperature (example data).\n\na) Write the energy balances (the outgoing power is equal to the incoming power) for the top of the atmosphere and for the surface and calculate the power $S$ radiated by the surface.\n\nb) Deduce the temperature of the surface from the table by interpolation and give it in degrees Celsius.\n\nc) What would the temperature of the surface be without the atmosphere, if it radiated only the power $239\\,\\text{W/m}^2$ it absorbs? What does the difference tell you about the greenhouse effect, and why is the model still rough?\n\nEnter the temperature of part b) in degrees Celsius in the answer box.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 16.3,
+      "unit": "°C",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Thermal power radiated by the surface as a function of temperature (example data)",
+        "columns": [
+          "$T\\,(\\text{K})$",
+          "$P\\,(\\text{W/m}^2)$"
+        ],
+        "rows": [
+          [
+            "255",
+            "240"
+          ],
+          [
+            "273",
+            "315"
+          ],
+          [
+            "288",
+            "390"
+          ],
+          [
+            "303",
+            "478"
+          ],
+          [
+            "318",
+            "580"
+          ]
+        ]
+      }
     }
   ]
 }
