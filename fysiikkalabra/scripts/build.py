@@ -337,7 +337,7 @@ def exercise_text(text, pid):
     if len(paras) < 2: return inquiry.task_text(text, pid=pid)
     head = inquiry.task_text(paras[0])
     idattr = f' id="{esc(pid)}"'
-    part = lambda p: "task ask" if re.match(r"[a-h]\)", p) else "task"      # "a) …" is a question; "Vakiot: …" plain text
+    part = lambda p: "task ask" if re.match(r"[a-h]\)", p) else "task more"   # "a) …" is a question; "Vakiot: …" plain text (never a 2nd bare p.task: test_writepad)
     parts = [f'<p class="{part(p)}"{idattr if i == len(paras) - 2 else ""}>{p}</p>' for i, p in enumerate(paras[1:])]
     return head + "".join(parts)
 
