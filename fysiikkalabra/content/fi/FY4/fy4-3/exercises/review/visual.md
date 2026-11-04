@@ -1,19 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: c2d3495c28992833
-Round: 2
+CONTENT-HASH: 9afe1ad795180985
+Round: 3
 
 ## Blocking
 
 ## Polish
-- [Minor] L3-05 table / solution — v at 3,0 s is $0{,}69\,\text{m/s}$, practically equal to $0{,}70\,\text{m/s}$ at 4,0 s, so "vakio vasta 4,0 s:stä" is not readable from the table; for science: make the 3,0 s row clearly still accelerating or say it is within noise.
-- [Minor] L2-06 Vastaus a) — "pieni ilmanvastus on hyvin pieni" is tautological — "ilmanvastus on niin pieni, että se voidaan jättää huomiotta".
-- [Minor] L2-07 and L3-04 task quotes use straight "…" — Finnish ”…” as fy4-12 L2-06 does.
-- [Minor] L1-08 / L3-04 "Voimakuvio" is described in words only and F_KL / F_LK / T are not defined in the task — name the symbols in Annettu.
+- [Minor] L3-04 horse figure — the F_h label sits just over the hatching beside the contact surface; legible, optional nudge.
+- [Minor] No 360 px capture of the exercise bodies exists; phone view rests on the layout checks.
 
 ## Checked
-- Round 1 had no Blocking items; the round 2 diff is two wording fixes in solutions.md. Resolved: L2-05 Järkevyys now says "enintään $0{,}1\,\text{N}$" (matches Kuvaajan lukeminen, earlier Polish closed) and explains the random scatter; L3-04 (hevonen) Järkevyys now says friction points forward because it resists the hoof sliding backward, which reads correctly and consistently with the Vastaus.
-- Captures open-exercises-L2-1280-3 (4-10/4-11 solutions) and surrounding layout opened: fine; captures predate the wording fixes, deterministic layout checks ok.
-- Earlier round: L1-06..08, L2-05..07, L3-04..05 captures at 1280 px.
+- Opened the regenerated L3-04 captures at 1280 px (fi): both figures fit their frame, every arrowhead is visible, arrows in house red, labels KaTeX with overlines, no overlap between bodies and arrows.
+- fi labels match the text (F_r, F_k/F_dc, F_h/F_dh, T, F_t/F_road); no leftover Finnish symbol in en.
+- L1-08 wording change: no layout effect.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 5
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4
