@@ -29,7 +29,7 @@ a["fy8-13-L3-03"] = 0.12 * 20 * 0.10 + 1 * 0.50        # lungs alpha 0,10 mGy ->
 # Exercise-bank additions (L1-06 is a multiple-choice task: no number)
 a["fy8-13-L1-07"] = 0.04 * 2.0 + 0.12 * 1.0            # liver 0,04 · 2,0 + stomach 0,12 · 1,0 = 0,080 + 0,12 = 0,20 mSv
 a["fy8-13-L1-08"] = 0.10 / 5.9 * 100                   # chest X-ray 0,10 mSv of 5,9 mSv: 1,69 % -> 1,7 %
-a["fy8-13-L2-05"] = 4.0 / (4.0 + 0.7 + 0.6 + 0.3 + 0.3) * 100   # sum 5,9 mSv; radon share 4,0 / 5,9 = 67,8 % -> 68 %
+a["fy8-13-L2-05"] = 4.0 / (4.0 + 1.1 + 0.8) * 100   # radon 4,0 + other natural 1,1 + medical 0,8 = sum 5,9 mSv; radon share 4,0 / 5,9 = 67,8 % -> 68 %
 k = [r * r * h for r, h in [(0.50, 410), (1.00, 98.0), (1.50, 44.0), (2.00, 26.0)]]   # H r^2: 102,5; 98,0; 99,0; 104,0
 a["fy8-13-L2-06"] = sum(k) / len(k) / 3.0 ** 2         # k_ka = 100,875 (sum 403,5 / 4); H(3,0 m) = 11,2 µSv/h
 a["fy8-13-L2-07"] = 20 * 0.63e-3 / 1.8 * 1e3           # liver 0,63 mJ in 1,8 kg: D = 0,35 mGy; alpha w_R = 20: 7,0 mSv

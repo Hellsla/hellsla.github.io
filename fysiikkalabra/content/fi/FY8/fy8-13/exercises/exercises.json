@@ -47,26 +47,26 @@
       "kind": [
         "concept"
       ],
-      "answer": "Gray kertoo kudokseen absorboituneen energian massaa kohti, ja sievert huomioi myös säteilylajin ja kudoksen herkkyyden.",
+      "answer": "Gray mittaa absorboitunutta energiaa massaa kohti, ja sievert painottaa sitä säteilylajin ja kudoksen mukaan.",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
         {
-          "text": "Gray kuvaa vain gammasäteilyä ja sievert vain alfasäteilyä, koska nämä säteilylajit absorboituvat kudokseen eri tavoin.",
-          "feedback": "Kumpikaan yksikkö ei rajoitu yhteen säteilylajiin. Absorboitunut annos voidaan laskea mille tahansa ionisoivalle säteilylle, ja ekvivalenttiannoksessa ja efektiivisessä annoksessa säteilylaji otetaan huomioon painotuskertoimella $w_\\text{R}$."
+          "text": "Gray kertoo lähteen hajoamisnopeuden ja sievert lähteen säteilemän energian, joten kumpikin kuvaa lähdettä.",
+          "feedback": "Molemmat annokset kuvaavat säteilyn kohdetta, eivät lähdettä. Lähteen aktiivisuus eli hajoamisnopeus mitataan becquereleinä, ja gray ja sievert kertovat, kuinka paljon energiaa kudokseen absorboituu massaa kohti."
         },
         {
-          "text": "Gray kertoo kudokseen absorboituneen energian massaa kohti, ja sievert huomioi myös säteilylajin ja kudoksen herkkyyden.",
+          "text": "Gray ja sievert ovat sama suure, koska molemmat ovat joulea kilogrammaa kohti eikä säteilylaji vaikuta annokseen.",
+          "feedback": "Yksiköt ovat samaa muotoa, mutta suureet eivät ole samat. Sama absorboitunut annos antaa alfasäteilystä $20$-kertaisen ekvivalenttiannoksen gammasäteilyyn verrattuna, ja siksi annoksen yksikölle on oma nimensä sievert."
+        },
+        {
+          "text": "Gray mittaa absorboitunutta energiaa massaa kohti, ja sievert painottaa sitä säteilylajin ja kudoksen mukaan.",
           "correct": true,
           "feedback": "Oikein: absorboitunut annos $D = \\tfrac{E}{m}$ on fysikaalinen suure. Ekvivalenttiannoksessa sen kertoo säteilyn painotuskerroin $w_\\text{R}$ ja efektiivisessä annoksessa vielä kudoksen painotuskerroin $w_\\text{T}$, joten sievert kuvaa terveysriskiä."
         },
         {
-          "text": "Gray kertoo lähteen hajoamisnopeuden ja sievert lähteen säteilemän energian, joten ne kuvaavat lähdettä eivätkä kudosta.",
-          "feedback": "Molemmat annokset kuvaavat säteilyn kohdetta, eivät lähdettä. Lähteen aktiivisuus eli hajoamisnopeus mitataan becquereleinä, ja gray ja sievert kertovat, kuinka paljon energiaa kudokseen absorboituu massaa kohti."
-        },
-        {
-          "text": "Gray ja sievert ovat sama suure, koska molemmat ovat joulea kilogrammaa kohti, joten säteilylaji ei vaikuta sieverteihin.",
-          "feedback": "Yksiköt ovat samaa muotoa, mutta suureet eivät ole samat. Sama absorboitunut annos antaa alfasäteilystä $20$-kertaisen ekvivalenttiannoksen gammasäteilyyn verrattuna, ja siksi annoksen yksikölle on oma nimensä sievert."
+          "text": "Gray kuvaa vain gammasäteilyä ja sievert vain alfasäteilyä, koska säteilylajit absorboituvat eri tavalla.",
+          "feedback": "Kumpikaan yksikkö ei rajoitu yhteen säteilylajiin. Absorboitunut annos voidaan laskea mille tahansa ionisoivalle säteilylle, ja ekvivalenttiannoksessa ja efektiivisessä annoksessa säteilylaji otetaan huomioon painotuskertoimella $w_\\text{R}$."
         }
       ]
     },
@@ -123,7 +123,7 @@
     {
       "id": "fy8-13-L2-05",
       "level": 2,
-      "text": "Taulukossa on suomalaisen keskimääräinen efektiivinen vuosiannos lähteittäin. Aineisto on esimerkkiaineisto, jonka summa vastaa STUK-A263:n (2020) keskiarvoa $5{,}9\\,\\text{mSv}$ ja jonka lähteittäinen jako on pyöristetty.\n\na) Laske lähteiden annosten summa.\n\nb) Kuinka monta prosenttia kokonaisannoksesta tulee sisäilman radonista? Anna vastaus prosentteina.\n\nVastauslaatikkoon tulee kohdan b) tulos.",
+      "text": "Taulukossa on suomalaisen keskimääräinen efektiivinen vuosiannos lähteittäin. Aineisto on esimerkkiaineisto, joka perustuu STUK-A263:n (2020) keskimääräiseen vuosiannokseen $5{,}9\\,\\text{mSv}$.\n\na) Laske lähteiden annosten summa.\n\nb) Kuinka monta prosenttia kokonaisannoksesta tulee sisäilman radonista? Anna vastaus prosentteina.\n\nVastauslaatikkoon tulee kohdan b) tulos.",
       "kind": [
         "data"
       ],
@@ -142,20 +142,12 @@
             "4.0"
           ],
           [
-            "Maan gammasäteily",
-            "0.7"
+            "Muu luonnon säteily (maaperä ja rakennusaineet, kosminen säteily, kehon omat radioaktiiviset aineet)",
+            "1.1"
           ],
           [
-            "Lääketieteellinen kuvantaminen",
-            "0.6"
-          ],
-          [
-            "Ruoka ja juoma",
-            "0.3"
-          ],
-          [
-            "Kosminen säteily",
-            "0.3"
+            "Lääketieteellinen käyttö",
+            "0.8"
           ]
         ]
       }
@@ -163,7 +155,7 @@
     {
       "id": "fy8-13-L2-06",
       "level": 2,
-      "text": "Ryhmä mittasi pienen gammasäteilylähteen annosnopeuden eri etäisyyksillä. Taustasäteilyn osuus on vähennetty tuloksista (taulukko, esimerkkiaineisto).\n\nHalutaan tutkia, noudattaako annosnopeus etäisyyden neliölakia $\\dot{H}_2 = \\dot{H}_1 \\left(\\tfrac{r_1}{r_2}\\right)^2$.\n\na) Laske jokaiselle etäisyydelle tulo $\\dot{H} r^2$.\n\nb) Mitä tulolle pitäisi tapahtua, jos etäisyyden neliölaki pätee? Päättele, noudattaako mittaus lakia.\n\nc) Ennusta annosnopeus $3{,}0\\,\\text{m}$:n etäisyydellä käyttämällä neljän tulon keskiarvoa $k_\\text{ka}$. Anna vastaus yksikössä $\\mu\\text{Sv/h}$.\n\nVastauslaatikkoon tulee kohdan c) tulos.",
+      "text": "Ryhmä mittasi pienen gammasäteilylähteen annosnopeuden eri etäisyyksillä. Taustasäteilyn osuus on vähennetty tuloksista (taulukko, esimerkkiaineisto).\n\nHalutaan tutkia, noudattaako annosnopeus etäisyyden neliölakia:\n\n$\\dot{H}_2 = \\dot{H}_1 \\left(\\dfrac{r_1}{r_2}\\right)^2$\n\na) Laske jokaiselle etäisyydelle tulo $\\dot{H} r^2$.\n\nb) Mitä tulolle pitäisi tapahtua, jos etäisyyden neliölaki pätee? Päättele, noudattaako mittaus lakia.\n\nc) Ennusta annosnopeus $3{,}0\\,\\text{m}$:n etäisyydellä käyttämällä neljän tulon keskiarvoa $k_\\text{ka}$. Anna vastaus yksikössä $\\mu\\text{Sv/h}$.\n\nVastauslaatikkoon tulee kohdan c) tulos keskiarvomenetelmällä.",
       "kind": [
         "data",
         "experiment"
@@ -237,7 +229,7 @@
     {
       "id": "fy8-13-L3-04",
       "level": 3,
-      "text": "Omakotitalon asukas mittautti sisäilman radonpitoisuuden. Pitoisuus mitattiin neljässä kolmen kuukauden jaksossa vuoden ympäri (taulukko, esimerkkiaineisto).\n\nSuomalaisten asuntojen keskimääräinen radonpitoisuus $94\\,\\tfrac{\\text{Bq}}{\\text{m}^3}$ aiheuttaa keskimäärin $4{,}0\\,\\text{mSv}$ efektiivisen annoksen vuodessa (STUK-A263, 2020). Oletetaan, että radonannos on suoraan verrannollinen pitoisuuteen ja että asukas oleskelee kotona $80\\,\\%$ siitä ajasta, jonka suomalainen keskimäärin oleskelee kotona. Asuntojen radonin viitearvo on $300\\,\\tfrac{\\text{Bq}}{\\text{m}^3}$.\n\na) Laske vuoden keskipitoisuus.\n\nb) Laske asukkaan radonista saama efektiivinen vuosiannos.\n\nc) Selitä, miksi vuosiannosta ei saa arvioida pelkästä talvimittauksesta, ja arvioi, ylittääkö vuoden keskipitoisuus viitearvon.\n\nd) Asukas haluaa pienentää radonannoksensa radonkorjauksella enintään arvoon $2{,}0\\,\\text{mSv}$ vuodessa. Kuinka suuri vuoden keskipitoisuus saa korjauksen jälkeen enintään olla? Anna vastaus yksikössä $\\tfrac{\\text{Bq}}{\\text{m}^3}$.\n\nVastauslaatikkoon tulee kohdan d) tulos.",
+      "text": "Omakotitalon asukas mittautti sisäilman radonpitoisuuden. Pitoisuus mitattiin neljässä kolmen kuukauden jaksossa vuoden ympäri (taulukko, esimerkkiaineisto).\n\nSuomalaisten asuntojen keskimääräinen radonpitoisuus $94\\,\\tfrac{\\text{Bq}}{\\text{m}^3}$ aiheuttaa keskimäärin $4{,}0\\,\\text{mSv}$ efektiivisen annoksen vuodessa (STUK-A263, 2020). Oletetaan, että radonannos on suoraan verrannollinen pitoisuuteen ja että asukas oleskelee kotona $80\\,\\%$ siitä ajasta, jonka suomalainen keskimäärin oleskelee kotona. Asuntojen radonin viitearvo on $300\\,\\tfrac{\\text{Bq}}{\\text{m}^3}$.\n\na) Laske vuoden keskipitoisuus.\n\nb) Laske asukkaan radonista saama efektiivinen vuosiannos.\n\nc) Selitä, miksi talvella mitattu pitoisuus yliarvioi vuosiannoksen ja miksi virallinen radonmittaus tehdään silti lämmityskaudella. Ylittääkö vuoden keskipitoisuus viitearvon?\n\nd) Asukas haluaa pienentää radonannoksensa radonkorjauksella enintään arvoon $2{,}0\\,\\text{mSv}$ vuodessa. Kuinka suuri vuoden keskipitoisuus saa korjauksen jälkeen enintään olla? Anna vastaus yksikössä $\\tfrac{\\text{Bq}}{\\text{m}^3}$.\n\nVastauslaatikkoon tulee kohdan d) tulos.",
       "kind": [
         "data",
         "model",
@@ -278,7 +270,6 @@
       "text": "Teollisuuslaitoksessa käytetään gammasäteilylähdettä. Betoniseinän paksuuden vaikutus mitattiin annosnopeudelle $1{,}0\\,\\text{m}$:n etäisyydellä lähteestä (taulukko, esimerkkiaineisto).\n\nHuoltotyöntekijän työpiste on seinän takana $2{,}0\\,\\text{m}$:n etäisyydellä lähteestä, ja seinän paksuus on $10\\,\\text{cm}$. Työntekijän annos saa vuoron aikana olla enintään $25\\,\\mu\\text{Sv}$ (esimerkkiarvo). Oletetaan, että lähde on pistemäinen ja että betonin vaimennus noudattaa puoliintumispaksuuden lakia.\n\na) Arvioi betonin puoliintumispaksuus taulukosta.\n\nb) Laske annosnopeus työpisteessä.\n\nc) Kuinka kauan työntekijä saa työskennellä vuoron aikana? Anna vastaus tunteina.\n\nd) Mainitse yksi oletus, joka voi tehdä lasketusta työajasta liian pitkän, ja kerro, miten työaika kannattaa siksi valita.\n\nVastauslaatikkoon tulee kohdan c) tulos.",
       "kind": [
         "data",
-        "graph",
         "model"
       ],
       "answer": 2.4,

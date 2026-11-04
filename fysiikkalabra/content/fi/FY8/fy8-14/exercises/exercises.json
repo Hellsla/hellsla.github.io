@@ -47,26 +47,26 @@
       "kind": [
         "concept"
       ],
-      "answer": "Positroni annihiloituu elektronin kanssa kahdeksi vastakkaiseksi fotoniksi, joiden reitit risteävät lähteen kohdalla.",
+      "answer": "Positroni annihiloituu kahdeksi vastakkaiseksi fotoniksi, joiden yhdistävä jana kulkee lähteen kautta.",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
         {
-          "text": "Positroni kulkee kudoksen läpi ulos asti, joten ilmaisin havaitsee sen suoraan lähteen kohdalta.",
+          "text": "Positroni kulkee kudoksen läpi ulos asti, joten ilmaisin havaitsee sen suoraan juuri lähteen kohdalta.",
           "feedback": "Positroni on varattu hiukkanen ja pysähtyy kudoksessa jo millimetrien matkalla. Ilmaisin ei havaitse positronia itseään vaan vasta sen annihilaatiossa syntyneet fotonit."
         },
         {
-          "text": "Positroni on sähkövaraukseton, joten se ei sirota kudoksessa ja sen suora reitti näkyy kuvassa.",
+          "text": "Positroni on sähkövaraukseton, joten se ei sirota kudoksessa ja sen suora reitti näkyy kuvassa selvästi.",
           "feedback": "Positronilla on positiivinen varaus, joten se ionisoi ja pysähtyy kudoksessa nopeasti. Sähkövaraukseton hiukkanen olisi esimerkiksi fotoni tai neutroni, eikä ilmaisin näe positronin reittiä."
         },
         {
-          "text": "Positroni annihiloituu elektronin kanssa kahdeksi vastakkaiseksi fotoniksi, joiden reitit risteävät lähteen kohdalla.",
-          "correct": true,
-          "feedback": "Oikein: annihilaatiossa syntyy kaksi samanenergista fotonia vastakkaisiin suuntiin. Kun ilmaisin havaitsee ne yhtä aikaa, lähde on niiden yhdistävällä janalla, ja monen janan leikkauskohta paljastaa merkkiaineen paikan."
+          "text": "Positroni synnyttää jarruttuessaan röntgensäteilyä, jonka energia kertoo, kuinka syvällä kasvain on.",
+          "feedback": "Positronin jarrutussäteily ei kerro kasvaimen syvyyttä. Paikan antaa annihilaatiofotonien suunta, ei niiden energia: se on aina $511\\,\\text{keV}$."
         },
         {
-          "text": "Positroni synnyttää jarruttuessaan röntgensäteilyä, jonka energia kertoo kasvaimen syvyyden.",
-          "feedback": "Positroni ei jarruta röntgenputken tavoin jännitteen avulla, eikä sen jarrutussäteilyn energia kerro syvyydestä. Paikan antaa annihilaatiofotonien suunta, ei niiden energia: se on aina $511\\,\\text{keV}$."
+          "text": "Positroni annihiloituu kahdeksi vastakkaiseksi fotoniksi, joiden yhdistävä jana kulkee lähteen kautta.",
+          "correct": true,
+          "feedback": "Oikein: annihilaatiossa syntyy kaksi samanenergista fotonia vastakkaisiin suuntiin. Kun ilmaisin havaitsee ne yhtä aikaa, lähde on niiden yhdistävällä janalla, ja monen janan leikkauskohta paljastaa merkkiaineen paikan."
         }
       ]
     },
@@ -86,9 +86,6 @@
       "id": "fy8-14-L1-08",
       "level": 1,
       "text": "Röntgenputkessa elektronit kiihdytetään jännitteellä $80\\,\\text{kV}$, ja ne jarruttavat anodissa. Yksittäinen elektroni voi luovuttaa yhdelle röntgenfotonille enintään koko liike-energiansa. Kuinka suuri energia röntgenfotonilla on enintään? Alkeisvaraus on $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$. Anna vastaus jouleina.",
-      "kind": [
-        "concept"
-      ],
       "answer": 1.3e-14,
       "unit": "J",
       "tolerance": 0.02
@@ -130,12 +127,12 @@
     {
       "id": "fy8-14-L2-05",
       "level": 2,
-      "text": "Taulukossa on esimerkkiaineisto potilaan vuoden aikana saamista kuvantamistutkimuksista. Efektiiviset annokset ovat tyypillisten tutkimusten suuruusluokkaa. Luonnon säteilyn keskimääräinen vuosiannos Suomessa on $5{,}1\\,\\text{mSv}$.\n\nKuinka monta prosenttia luonnon säteilyn vuosiannoksesta on se efektiivinen kokonaisannos, jonka potilas sai kaikista taulukon tutkimuksista yhteensä?",
+      "text": "Taulukossa on esimerkkiaineisto potilaan vuoden aikana saamista kuvantamistutkimuksista. Efektiiviset annokset ovat tyypillisten tutkimusten suuruusluokkaa. Luonnon säteilyn keskimääräinen vuosiannos Suomessa on $5{,}1\\,\\text{mSv}$ (STUK-A263, 2020).\n\nKuinka monta prosenttia luonnon säteilyn vuosiannoksesta on se efektiivinen kokonaisannos, jonka potilas sai kaikista taulukon tutkimuksista yhteensä?",
       "kind": [
         "data",
         "reasoning"
       ],
-      "answer": 42,
+      "answer": 44,
       "unit": "%",
       "tolerance": 0.03,
       "data": {
@@ -153,7 +150,7 @@
           ],
           [
             "Keuhkokuva",
-            "0.050",
+            "0.10",
             "2"
           ],
           [

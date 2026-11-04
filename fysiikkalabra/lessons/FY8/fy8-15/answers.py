@@ -32,7 +32,7 @@ a["fy8-15-L3-01"] = m_Om - m_La - m_K                   # Lambda0 + K-: Q = 63,0
 a["fy8-15-L3-02"] = 2 * 1.0e-3 * c ** 2 / 1e14          # 1,0 g antimatter + 1,0 g matter: E = 1,798e14 J -> 1,8 · 10^14 J
 a["fy8-15-L3-03"] = -1                                  # anti-nu_e + p -> n + X: q of X +1, B 0, L of X = -1 (positron)
 # Exercise bank additions (teacher 2026-11-04): L1-06, L1-07 and L2-07 are multiple choice (no number)
-a["fy8-15-L1-08"] = charge("u", "d")                    # pi+ = u anti-d: +2/3 + 1/3 = +1
+a["fy8-15-L1-08"] = charge("u", "s")                    # K+ = u anti-s: +2/3 + 1/3 = +1
 def is_hadron(qk, aq=""):                               # B and q both integers
     B = F(len(qk) - len(aq), 3); q = sum(QQ[k] for k in qk) - sum(QQ[k] for k in aq)
     return B.denominator == 1 and q.denominator == 1
@@ -48,8 +48,8 @@ rx = [((0, 1, 0), (0, 1, 0)),                           # n -> p + e- + anti-nu:
       ((0, 2, 0), (0, 0, 0))]                           # n + n -> pi0 pi0: B 2 -> 0
 a["fy8-15-L2-06"] = sum(x != y for x, y in rx)          # 3 forbidden reactions: 3, 5, 7
 # Level 3
-a["fy8-15-L3-04"] = (2.615 - 2 * 0.511) / 2             # Tl-208 line: T_total = 1,593 MeV, each particle 0,7965 MeV -> 0,80 MeV
+a["fy8-15-L3-04"] = (2.615 - 2 * 0.511) / 2             # Tl-208 line: T_total = 1,593 MeV, each particle 0,7965 MeV -> 0,797 MeV
 m_pi, m_p, m_La, m_K0 = 139.570, 938.272, 1115.683, 497.611
 assert abs(m_pi + m_p - m_La) > 0 and charge("d", "u") == -1   # L3-05 a): pi- = d anti-u, q = -1; both sides q 0, B 1, u 1, d 2, s 0
-a["fy8-15-L3-05"] = m_K0 - 2 * m_pi                     # K0 -> pi+ + pi-: Q = 218,471 MeV -> 218,5 MeV
+a["fy8-15-L3-05"] = m_K0 - 2 * m_pi                     # K0 -> pi+ + pi-: Q = 218,471 MeV (stored 218,5)
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

@@ -43,29 +43,29 @@
     {
       "id": "fy8-15-L1-06",
       "level": 1,
-      "text": "Fotoni on perusvuorovaikutuksen välittäjähiukkanen. Minkä vuorovaikutuksen?",
+      "text": "Minkä perusvuorovaikutuksen välittäjähiukkanen fotoni on?",
       "kind": [
         "concept"
       ],
-      "answer": "Sähkömagneettinen, joka vaikuttaa varattujen hiukkasten välillä",
+      "answer": "Sähkömagneettinen vuorovaikutus, joka vaikuttaa varauksiin",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
         {
-          "text": "Sähkömagneettinen, joka vaikuttaa varattujen hiukkasten välillä",
-          "correct": true,
-          "feedback": "Oikein: fotoni välittää sähkömagneettisen vuorovaikutuksen, joka vaikuttaa sähköisesti varattujen hiukkasten välillä. Sähkömagneettinen vuorovaikutus ei vaikuta varauksettomaan neutroniin kokonaisuutena."
-        },
-        {
-          "text": "Vahva, joka pitää kvarkit yhdessä protonin ja neutronin sisällä",
+          "text": "Vahva vuorovaikutus, joka sitoo kvarkit yhteen hadroneiksi",
           "feedback": "Vahvan vuorovaikutuksen välittäjähiukkanen on gluoni, ei fotoni. Vahva vuorovaikutus todella sitoo kvarkit hadroneiksi, mutta sen välittäjä on toinen."
         },
         {
-          "text": "Heikko, joka muuttaa neutronin protoniksi beetahajoamisessa ytimessä",
+          "text": "Heikko vuorovaikutus, joka muuttaa kvarkin lajia ytimessä",
           "feedback": "Heikon vuorovaikutuksen välittäjähiukkaset ovat $W$- ja $Z$-bosonit, ei fotoni. Beetahajoamisessa $d$-kvarkki muuttuu $u$-kvarkiksi $W^-$-bosonin välityksellä."
         },
         {
-          "text": "Gravitaatio, joka vetää puoleensa kaikkia massallisia kappaleita",
+          "text": "Sähkömagneettinen vuorovaikutus, joka vaikuttaa varauksiin",
+          "correct": true,
+          "feedback": "Oikein: fotoni välittää sähkömagneettisen vuorovaikutuksen, joka vaikuttaa sähköisesti varattujen hiukkasten välillä. Neutroniin ei kohdistu sähköistä voimaa, koska sen kokonaisvaraus on nolla."
+        },
+        {
+          "text": "Gravitaatio, joka vetää kaikkia massallisia kappaleita",
           "feedback": "Gravitaation välittäjäksi esitetty gravitoni on hypoteettinen, ja gravitaatio ei kuulu standardimalliin. Fotoni ei välitä gravitaatiota."
         }
       ]
@@ -77,35 +77,35 @@
       "kind": [
         "concept"
       ],
-      "answer": "Massa on sama kuin elektronilla, varaus ja leptoniluku vastakkaiset",
+      "answer": "Massa on sama kuin elektronilla, varaus ja leptoniluku kääntyvät",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
-        {
-          "text": "Massa on sama kuin elektronilla, varaus ja leptoniluku vastakkaiset",
-          "correct": true,
-          "feedback": "Oikein: antihiukkasella on sama massa kuin hiukkasella, mutta varaus ja leptoniluku ovat vastakkaiset. Positronin varaus on $+e$ ja leptoniluku $-1$."
-        },
         {
           "text": "Massa on pienempi kuin elektronilla, koska antihiukkaset ovat kevyempiä",
           "feedback": "Antihiukkasen massa on sama kuin hiukkasen. Siksi positronin ja elektronin annihilaatiossa vapautuu kahden elektronin lepoenergiaa vastaava energia."
         },
         {
-          "text": "Varaus on sama kuin elektronilla, mutta leptoniluku on vastakkainen",
+          "text": "Varaus on sama kuin elektronilla, koska vain leptoniluku kääntyy",
           "feedback": "Antihiukkasella on vastakkainen varaus: positronin varaus on $+e$, elektronin $-e$. Pelkkä leptoniluvun merkki ei erota antihiukkasta, vaan kaikki varaukset kääntyvät."
         },
         {
-          "text": "Se on varaukseton, koska sen varaus kumoaa elektronin varauksen",
+          "text": "Varaus on nolla, koska positroni kumoaa elektronin varauksen",
           "feedback": "Positronin varaus on $+e$. Varaukset kumoavat toisensa vasta, kun positroni ja elektroni ovat samassa systeemissä, ei yhden hiukkasen sisällä."
+        },
+        {
+          "text": "Massa on sama kuin elektronilla, varaus ja leptoniluku kääntyvät",
+          "correct": true,
+          "feedback": "Oikein: antihiukkasella on sama massa kuin hiukkasella, mutta varaus ja leptoniluku ovat vastakkaiset. Positronin varaus on $+e$ ja leptoniluku $-1$."
         }
       ]
     },
     {
       "id": "fy8-15-L1-08",
       "level": 1,
-      "text": "Pioni $\\pi^+$ on mesoni, joka koostuu $u$-kvarkista ja $\\bar{d}$-antikvarkista. Laske sen varaus alkeisvarauksen $e$ monikertana. Kvarkkien varaukset: $u$ ($+\\tfrac{2}{3}e$), $d$ ja $s$ ($-\\tfrac{1}{3}e$); antikvarkin varaus on vastakkainen.",
+      "text": "Kaoni $K^+$ on mesoni, joka koostuu $u$-kvarkista ja $\\bar{s}$-antikvarkista. Laske sen varaus alkeisvarauksen $e$ monikertana. Kvarkkien varaukset: $u$ ($+\\tfrac{2}{3}e$), $d$ ja $s$ ($-\\tfrac{1}{3}e$); antikvarkin varaus on vastakkainen.",
       "kind": [
-        "reasoning"
+        "concept"
       ],
       "answer": 1,
       "unit": "e",
@@ -251,26 +251,26 @@
         "error",
         "concept"
       ],
-      "answer": "Neutroni koostuu kvarkeista, ja sen $d$-kvarkki voi muuttua $u$-kvarkiksi",
+      "answer": "Neutroni koostuu kvarkeista, ja kvarkin laji voi muuttua",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
         {
-          "text": "Neutroni koostuu kvarkeista, ja sen $d$-kvarkki voi muuttua $u$-kvarkiksi",
-          "correct": true,
-          "feedback": "Oikein: neutroni ei ole perushiukkanen vaan koostuu kvarkeista $u\\,d\\,d$. Heikossa vuorovaikutuksessa yksi $d$-kvarkki muuttuu $u$-kvarkiksi, ja neutroni hajoaa protoniksi, elektroniksi ja antineutriinoksi."
+          "text": "Kaikki perushiukkaset hajoavat, joten neutronin hajoaminen on varmaa",
+          "feedback": "Kaikki perushiukkaset eivät hajoa: elektroni on stabiili. Väitteen kumoaa kuitenkin se, että perushiukkanenkin voi hajota, esimerkiksi myoni. Hajoamisen ratkaisevat säilymislait ja $Q > 0$, ei perushiukkasuus."
         },
         {
-          "text": "Kaikki perushiukkaset hajoavat ajan kuluessa, joten neutronin hajoaminen on varmaa",
-          "feedback": "Kaikki perushiukkaset eivät hajoa: esimerkiksi elektroni on perushiukkanen, jonka ei ole nähty hajoavan. Neutroni hajoaa siksi, että se ei ole perushiukkanen."
+          "text": "Neutroni koostuu kvarkeista, ja kvarkin laji voi muuttua",
+          "correct": true,
+          "feedback": "Oikein: neutroni ei ole perushiukkanen vaan koostuu kvarkeista $u\\,d\\,d$, ja heikossa vuorovaikutuksessa yksi $d$-kvarkki muuttuu $u$-kvarkiksi. Osa perushiukkasista hajoaa (myoni). Hajoamisen ratkaisevat säilymislait ja $Q > 0$; neutroni hajoaa protoniksi, elektroniksi ja antineutriinoksi."
         },
         {
           "text": "Energian säilyminen estää neutronia hajoamasta kevyemmiksi hiukkasiksi",
           "feedback": "Energian säilyminen sallii hajoamisen, koska syntyvien hiukkasten yhteismassa on neutronin massaa pienempi. Hajoamisessa vapautuu energiaa."
         },
         {
-          "text": "Neutronilla ei ole antihiukkasta, joten se ei voi muuttua toiseksi hiukkaseksi",
-          "feedback": "Neutronilla on antihiukkanen, antineutroni. Hiukkasen muuttuminen toiseksi ei muutenkaan vaadi antihiukkasen olemassaoloa vaan säilymislakien täyttymistä."
+          "text": "Neutronilla ei ole antihiukkasta, joten se ei voi hajota",
+          "feedback": "Neutronilla on antihiukkanen, antineutroni. Hajoaminen ei vaadi antihiukkasen olemassaoloa vaan säilymislakien täyttymistä ja positiivista $Q$:ta."
         }
       ]
     }
@@ -307,12 +307,12 @@
         "data",
         "model"
       ],
-      "text": "Lyijysuojassa gammafotoni voi ytimen lähellä muuttua elektroniksi ja positroniksi, jos sen energia on vähintään elektronin ja positronin lepoenergioiden summa. Lepoenergia on kummallakin $m_e c^2 = 0{,}511\\,\\text{MeV}$. Taulukossa on suojaan osuvien gammafotonien energioita (esimerkkiaineisto, tunnetuista gammaviivoista pyöristetty).\n\na) Mitkä taulukon fotoneista voivat synnyttää elektroni-positroniparin?\n\nb) Suurienergisin fotoni synnyttää parin. Fotonin energiasta lepoenergioiden jälkeen jäävä osa muuttuu liike-energiaksi, ja se jakautuu elektronin ja positronin kesken tasan. Ytimen liike-energia jätetään huomiotta. Laske elektronin liike-energia megaelektronivoltteina.\n\nc) Positroni hidastuu ja annihiloituu levossa olevaan elektroniin kahdeksi fotoniksi. Mikä on kunkin fotonin energia, ja miksi se ei riipu alkuperäisen fotonin energiasta?\n\nVastauslaatikkoon tulee kohdan b) tulos.",
-      "answer": 0.7965,
+      "text": "Lyijysuojassa gammafotoni voi ytimen lähellä muuttua elektroniksi ja positroniksi, jos sen energia on vähintään elektronin ja positronin lepoenergioiden summa.\n\nLepoenergia on kummallakin $m_e c^2 = 0{,}511\\,\\text{MeV}$. Taulukossa on suojaan osuvien gammafotonien energioita (tilanne on kuvitteellinen, energiat ovat gammaviivoista pyöristettyinä).\n\na) Mitkä taulukon fotoneista voivat synnyttää elektroni-positroniparin?\n\nb) Suurienergisin fotoni synnyttää parin. Fotonin energiasta lepoenergioiden jälkeen jäävä osa muuttuu liike-energiaksi, ja se jakautuu elektronin ja positronin kesken tasan. Ytimen liike-energia jätetään huomiotta. Laske elektronin liike-energia megaelektronivoltteina.\n\nc) Positroni hidastuu ja annihiloituu levossa olevaan elektroniin kahdeksi fotoniksi. Mikä on kunkin fotonin energia, ja miksi se ei riipu alkuperäisen fotonin energiasta?\n\nVastauslaatikkoon tulee kohdan b) tulos.",
+      "answer": 0.797,
       "unit": "MeV",
       "tolerance": 0.02,
       "data": {
-        "caption": "Gammafotonien energioita (esimerkkiaineisto)",
+        "caption": "Gammaviivojen energioita (ENSDF, pyöristetty)",
         "columns": [
           "Lähde",
           "$E_\\gamma\\,(\\text{MeV})$"
@@ -328,7 +328,7 @@
           ],
           [
             "${}^{60}\\text{Co}$",
-            "1.333"
+            "1.332"
           ],
           [
             "${}^{40}\\text{K}$",
@@ -349,8 +349,8 @@
         "experiment",
         "model"
       ],
-      "text": "Kuplakammiokuvassa (esimerkkiaineisto, kuvaus tekstinä) negatiivinen pioni $\\pi^-$ osuu vetyytimeen eli protoniin $p$. Törmäyspisteestä ei lähde yhtään jälkeä. Hieman kauempana kahdessa eri kohdassa alkaa V:n muotoinen jälkipari: kohdassa 1 pari on protoni ja negatiivinen pioni, kohdassa 2 positiivinen ja negatiivinen pioni. Kummassakin parissa jäljet kaareutuvat kammion magneettikentässä vastakkaisiin suuntiin. Tutkijan tulkinta on, että törmäyksessä syntyi kaksi varauksetonta hiukkasta, $\\Lambda^0$ ja $K^0$, jotka hajosivat V-kohdissa.\n\nHiukkasten kvarkkikoostumus ja massat ovat taulukossa.\n\na) Näytä, että reaktio $\\pi^- + p \\to \\Lambda^0 + K^0$ säilyttää varauksen ja baryoniluvun ja että $u$-, $d$- ja $s$-kvarkkien nettomäärät ovat reaktion kummallakin puolella samat. Antikvarkki vähentää nettomäärää yhdellä.\n\nb) Laske energia, joka vapautuu, kun $K^0$ hajoaa reaktiolla $K^0 \\to \\pi^+ + \\pi^-$. Vastaa megaelektronivoltteina.\n\nc) Selitä, miksi törmäyspisteestä ei lähde jälkeä ja miksi V:n haarat kaareutuvat vastakkaisiin suuntiin.\n\nVastauslaatikkoon tulee kohdan b) tulos.",
-      "answer": 218.471,
+      "text": "Kuplakammiokuvassa (kuvitteellinen mittaus, kuvaus tekstinä) negatiivinen pioni $\\pi^-$ osuu vetyytimeen eli protoniin $p$. Törmäyspisteestä ei lähde yhtään jälkeä.\n\nHieman kauempana kahdessa eri kohdassa alkaa V:n muotoinen jälkipari: kohdassa 1 pari on protoni ja negatiivinen pioni, kohdassa 2 positiivinen ja negatiivinen pioni. Kummassakin parissa jäljet kaareutuvat kammion magneettikentässä vastakkaisiin suuntiin.\n\nTutkijan tulkinta on, että törmäyksessä syntyi kaksi varauksetonta hiukkasta, $\\Lambda^0$ ja $K^0$, jotka hajosivat V-kohdissa.\n\nHiukkasten kvarkkikoostumus ja massat ovat taulukossa.\n\na) Näytä, että reaktio $\\pi^- + p \\to \\Lambda^0 + K^0$ säilyttää varauksen ja baryoniluvun ja että $u$-, $d$- ja $s$-kvarkkien nettomäärät ovat reaktion kummallakin puolella samat. Antikvarkki vähentää nettomäärää yhdellä.\n\nb) Laske energia, joka vapautuu, kun $K^0$ hajoaa reaktiolla $K^0 \\to \\pi^+ + \\pi^-$. Vastaa megaelektronivoltteina.\n\nc) Selitä, miksi törmäyspisteestä ei lähde jälkeä ja miksi V:n haarat kaareutuvat vastakkaisiin suuntiin.\n\nVastauslaatikkoon tulee kohdan b) tulos.",
+      "answer": 218.5,
       "unit": "MeV",
       "tolerance": 0.005,
       "data": {

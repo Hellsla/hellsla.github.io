@@ -47,26 +47,26 @@
       "kind": [
         "concept"
       ],
-      "answer": "Avaruus laajenee valon matkan aikana ja venyttää samalla valon aallonpituuden pidemmäksi kuin se oli lähtiessä.",
+      "answer": "Avaruus laajenee valon matkan aikana, ja laajeneminen venyttää samalla valon aallonpituutta.",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
         {
-          "text": "Galaksien tähdet ovat punaisia ja kylmiä, joten niiden valon aallonpituudet ovat pidempiä kuin laboratoriossa.",
-          "feedback": "Punasiirtymä ei tarkoita galaksin väriä. Spektriviivat siirtyvät samassa suhteessa aallonpituuteensa, ja siirtymä syntyy valon matkalla, ei tähtien lämpötilasta."
-        },
-        {
-          "text": "Avaruus laajenee valon matkan aikana ja venyttää samalla valon aallonpituuden pidemmäksi kuin se oli lähtiessä.",
+          "text": "Avaruus laajenee valon matkan aikana, ja laajeneminen venyttää samalla valon aallonpituutta.",
           "feedback": "Oikein: kun avaruus laajenee, se venyttää myös siinä kulkevan valon aallonpituutta. Mitä pidempi matka, sitä suurempi venymä, ja sama osuus aallonpituudesta koskee jokaista spektriviivaa.",
           "correct": true
         },
         {
-          "text": "Galaksien välinen pöly ja kaasu imevät lyhyet aallonpituudet, joten jäljelle jää vain pitkäaaltoista valoa.",
+          "text": "Galaksien tähdet ovat kylmiä ja punaisia, joten niiden valon aallonpituudet ovat pitkiä.",
+          "feedback": "Punasiirtymä ei tarkoita galaksin väriä. Spektriviivat siirtyvät samassa suhteessa aallonpituuteensa, ja siirtymä syntyy valon matkalla, ei tähtien lämpötilasta."
+        },
+        {
+          "text": "Galaksien välinen pöly ja kaasu imevät lyhyet aallonpituudet, joten jäljelle jää pitkäaaltoista valoa.",
           "feedback": "Absorptio vähentää valoa tietyillä aallonpituuksilla, mutta se ei siirrä spektriviivojen paikkaa. Punasiirtymässä jokainen viiva on siirtynyt kokonaisuudessaan pidemmälle aallonpituudelle."
         },
         {
-          "text": "Galaksin oma pyöriminen vääristää sen valoa, joten kaikkien viivojen aallonpituus kasvaa saman nanometrimäärän verran.",
-          "feedback": "Siirtymä ei ole sama nanometrimäärä kaikille viivoille vaan sama osuus viivan omasta aallonpituudesta, ja se kasvaa etäisyyden mukana. Galaksin pyöriminen ei selitä sitä."
+          "text": "Galaksit liikkuvat avaruudessa poispäin (Doppler-ilmiö), ja liike venyttää valon aallonpituutta.",
+          "feedback": "Kaukaisten galaksien punasiirtymä ei johdu liikkeestä avaruuden läpi vaan avaruuden laajenemisesta. Doppler-ilmiö kuvaa vain galaksin omaa liikettä, joka on pieni osa siirtymästä."
         }
       ]
     },
@@ -77,7 +77,7 @@
       "kind": [
         "data"
       ],
-      "answer": 69.19,
+      "answer": 69.2,
       "unit": "km/s/Mpc",
       "tolerance": 0.02
     },
@@ -88,7 +88,7 @@
       "kind": [
         "concept"
       ],
-      "answer": "Se on säteilyä, joka vapautui atomien syntyessä ja jonka avaruuden laajeneminen on sittemmin venyttänyt mikroaalloiksi.",
+      "answer": "Se on säteilyä, joka vapautui atomien syntyessä, ja laajeneminen on venyttänyt sen mikroaalloiksi.",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
@@ -97,11 +97,11 @@
           "feedback": "Tähdet ja galaksit ovat vain tietyissä suunnissa, ja ne syntyivät vasta taustasäteilyn vapautumisen jälkeen. Taustasäteily tulee tasaisesti joka suunnasta, myös tyhjiltä näyttäviltä alueilta."
         },
         {
-          "text": "Se on pimeän aineen lähettämää säteilyä, joka täyttää avaruuden, koska pimeää ainetta on kaikkialla.",
+          "text": "Se on pimeän aineen lähettämää säteilyä, joka täyttää koko avaruuden, koska pimeää ainetta on kaikkialla.",
           "feedback": "Pimeä aine ei säteile eikä absorboi valoa, minkä takia sitä sanotaan pimeäksi. Se ei voi olla taustasäteilyn lähde."
         },
         {
-          "text": "Se on säteilyä, joka vapautui atomien syntyessä ja jonka avaruuden laajeneminen on sittemmin venyttänyt mikroaalloiksi.",
+          "text": "Se on säteilyä, joka vapautui atomien syntyessä, ja laajeneminen on venyttänyt sen mikroaalloiksi.",
           "feedback": "Oikein: noin $380\\,000$ vuotta alkuräjähdyksen jälkeen atomit syntyivät ja maailmankaikkeus muuttui läpinäkyväksi. Silloin vapautunut säteily tulee joka suunnasta, ja laajeneminen on venyttänyt sen aallonpituuden mikroaalloiksi.",
           "correct": true
         },
@@ -124,7 +124,7 @@
     {
       "id": "fy8-16-L2-02",
       "level": 2,
-      "text": "Planck-satelliitin taustasäteilymittauksista saatu Hubblen vakion arvo on $H_0 = 67{,}4\\,\\tfrac{\\text{km/s}}{\\text{Mpc}}$. Arvioi maailmankaikkeuden ikä olettaen, että laajenemisnopeus on pysynyt samana. Käytä $1\\,\\text{Mpc} = 3{,}086 \\cdot 10^{19}\\,\\text{km}$ ja $1\\,\\text{a} = 3{,}156 \\cdot 10^{7}\\,\\text{s}$. Anna vastaus yksikössä $10^{9}\\,\\text{a}$ eli miljardeina vuosina.",
+      "text": "Planck-satelliitin taustasäteilymittauksista (Planck Collaboration 2018) saatu Hubblen vakion arvo on $H_0 = 67{,}4\\,\\tfrac{\\text{km/s}}{\\text{Mpc}}$. Arvioi maailmankaikkeuden ikä olettaen, että laajenemisnopeus on pysynyt samana. Käytä $1\\,\\text{Mpc} = 3{,}086 \\cdot 10^{19}\\,\\text{km}$ ja $1\\,\\text{a} = 3{,}156 \\cdot 10^{7}\\,\\text{s}$. Anna vastaus yksikössä $10^{9}\\,\\text{a}$ eli miljardeina vuosina.",
       "answer": 14.51,
       "unit": "10⁹ a",
       "tolerance": 0.02
@@ -155,7 +155,7 @@
       ],
       "answer": 68.45,
       "unit": "km/s/Mpc",
-      "tolerance": 0.04,
+      "tolerance": 0.05,
       "data": {
         "caption": "Yhdeksän galaksin etäisyys ja etääntymisnopeus (esimerkkiaineisto)",
         "columns": [
@@ -189,15 +189,15 @@
           ],
           [
             "166",
-            "11190"
+            "$11\\,190$"
           ],
           [
             "194",
-            "13310"
+            "$13\\,310$"
           ],
           [
             "238",
-            "16350"
+            "$16\\,350$"
           ]
         ]
       }
@@ -205,7 +205,7 @@
     {
       "id": "fy8-16-L2-06",
       "level": 2,
-      "text": "Tehtävässä vedyn $\\text{H}\\beta$-viiva on laboratoriossa $486{,}1\\,\\text{nm}$ ja galaksin spektrissä $505{,}5\\,\\text{nm}$. Galaksin etäisyys halutaan laskea, kun $H_0 = 70\\,\\tfrac{\\text{km/s}}{\\text{Mpc}}$ ja $c = 2{,}998 \\cdot 10^{5}\\,\\text{km/s}$.\n\nOppilaan ratkaisu: ”Punasiirtymä on $z = 0{,}0399$ ja nopeus $v = c\\,z = 1{,}196 \\cdot 10^{4}\\,\\text{km/s}$. Etäisyys on $d = v \\cdot H_0 = 1{,}196 \\cdot 10^{4} \\cdot 70 = 8{,}4 \\cdot 10^{5}\\,\\text{Mpc}$.”\n\na) Etsi oppilaan virhe ja perustele, miksi tulos on jo yksiköiden perusteella mahdoton.\n\nb) Laske galaksin oikea etäisyys megaparsekeina.\n\nAnna b)-kohdan tulos vastauskenttään.",
+      "text": "Vedyn $\\text{H}\\beta$-viiva on laboratoriossa $486{,}1\\,\\text{nm}$ ja erään galaksin spektrissä $505{,}5\\,\\text{nm}$. Galaksin etäisyys halutaan laskea, kun $H_0 = 70\\,\\tfrac{\\text{km/s}}{\\text{Mpc}}$ ja $c = 2{,}998 \\cdot 10^{5}\\,\\text{km/s}$.\n\nOppilaan ratkaisu: ”Punasiirtymä on $z = 0{,}0399$ ja nopeus $v = c\\,z = 1{,}196 \\cdot 10^{4}\\,\\text{km/s}$. Etäisyys on $d = v \\cdot H_0 = 1{,}196 \\cdot 10^{4} \\cdot 70 = 8{,}4 \\cdot 10^{5}\\,\\text{Mpc}$.”\n\na) Etsi oppilaan virhe ja perustele, miksi tulos on jo yksiköiden perusteella mahdoton.\n\nb) Laske galaksin oikea etäisyys megaparsekeina.\n\nAnna b)-kohdan tulos vastauskenttään.",
       "kind": [
         "error"
       ],
@@ -221,7 +221,7 @@
         "error",
         "concept"
       ],
-      "answer": "Avaruus itse laajenee kaikkialla, joten jokaisesta galaksista katsoen muut galaksit loittonevat samalla tavalla eikä keskipistettä ole.",
+      "answer": "Avaruus itse laajenee kaikkialla, joten jokaisesta galaksista katsoen kuva on sama eikä keskipistettä ole.",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
@@ -230,17 +230,17 @@
           "feedback": "Jos räjähdyksellä olisi keskipiste, loittoneminen näyttäisi eri galakseista katsottuna erilaiselta. Havaintojen mukaan se näyttää samalta mistä tahansa katsottuna, eikä Linnunrata ole erityisessä paikassa."
         },
         {
-          "text": "Avaruus itse laajenee kaikkialla, joten jokaisesta galaksista katsoen muut galaksit loittonevat samalla tavalla eikä keskipistettä ole.",
-          "feedback": "Oikein: laajeneminen ei tapahdu avaruudessa vaan avaruus itse laajenee, ja kaikki galaksien väliset etäisyydet kasvavat samassa suhteessa. Siksi jokaisesta galaksista katsoen kuva on sama.",
-          "correct": true
-        },
-        {
           "text": "Kauempana olevat galaksit loittonevat hitaammin, joten räjähdyksen paikka on lähellä sitä, missä galaksit liikkuvat vähiten.",
           "feedback": "Hubblen ja Lemaîtren lain mukaan nopeus kasvaa etäisyyden mukana: kaukaiset galaksit loittonevat nopeammin, ei hitaammin. Laki on sama kaikkialla, eikä siitä löydy keskipistettä."
         },
         {
-          "text": "Galaksit eivät oikeasti loitone, vaan punasiirtymän aiheuttaa se, että valo väsyy ja menettää energiaa pitkällä matkalla.",
+          "text": "Galaksit eivät oikeasti loitone, vaan punasiirtymän aiheuttaa se, että valo väsyy ja menettää energiaa matkalla.",
           "feedback": "Havaintojen tulkinta on, että etäisyydet todella kasvavat avaruuden laajetessa. Punasiirtymä syntyy, kun laajeneminen venyttää valon aallonpituutta, eikä oppilaan alkuperäinen havainto galaksien loittonemisesta ole väärä."
+        },
+        {
+          "text": "Avaruus itse laajenee kaikkialla, joten jokaisesta galaksista katsoen kuva on sama eikä keskipistettä ole.",
+          "feedback": "Oikein: laajeneminen ei tapahdu avaruudessa vaan avaruus itse laajenee, ja kaikki galaksien väliset etäisyydet kasvavat samassa suhteessa. Siksi jokaisesta galaksista katsoen kuva on sama.",
+          "correct": true
         }
       ]
     }
@@ -273,7 +273,7 @@
     {
       "id": "fy8-16-L3-04",
       "level": 3,
-      "text": "Esimerkkiaineisto: spiraaligalaksin tähtien ja kaasun ratanopeus $v_{\\text{hav}}$ on mitattu eri etäisyyksillä $r$ galaksin keskustasta. Taulukon kolmannessa sarakkeessa on nopeus $v_{\\text{näk}}$, jonka näkyvä aine eli tähdet, kaasu ja pöly yksin mallin mukaan aiheuttaisivat. Etäisyys on kiloparsekeina: $1\\,\\text{kpc} = 0{,}001\\,\\text{Mpc}$.\n\na) Kuinka monta prosenttia havaittu nopeus muuttuu etäisyyksien $10\\,\\text{kpc}$ ja $30\\,\\text{kpc}$ välillä? Entä mallin nopeus?\n\nb) Laske havaitun ja mallin nopeuden suhde $\\dfrac{v_{\\text{hav}}}{v_{\\text{näk}}}$ etäisyydellä $30\\,\\text{kpc}$.\n\nc) Mitä aineisto kertoo galaksin massasta? Perustele, miksi ero ei selity mittausvirheillä, ja päättele, mitä pimeä aine on tässä tulkinnassa.\n\nAnna b)-kohdan tulos vastauskenttään.",
+      "text": "Esimerkkiaineisto: spiraaligalaksin tähtien ja kaasun ratanopeus $v_{\\text{hav}}$ on mitattu eri etäisyyksillä $r$ galaksin keskustasta. Taulukon kolmannessa sarakkeessa on nopeus $v_{\\text{näk}}$, jonka näkyvä aine eli tähdet, kaasu ja pöly yksin mallin mukaan aiheuttaisivat.\n\na) Kuinka monta prosenttia havaittu nopeus muuttuu etäisyyksien $10\\,\\text{kpc}$ ja $30\\,\\text{kpc}$ välillä? Entä mallin nopeus?\n\nb) Laske havaitun ja mallin nopeuden suhde $\\dfrac{v_{\\text{hav}}}{v_{\\text{näk}}}$ etäisyydellä $30\\,\\text{kpc}$.\n\nc) Mitä aineisto kertoo galaksin massasta? Perustele, miksi ero ei selity mittausvirheillä, ja päättele, mitä pimeä aine on tässä tulkinnassa.\n\nAnna b)-kohdan tulos vastauskenttään.",
       "kind": [
         "data",
         "model",
@@ -331,7 +331,7 @@
     {
       "id": "fy8-16-L3-05",
       "level": 3,
-      "text": "Esimerkkitilanne: kaukaisen kvasaarin spektrissä vedyn ultraviolettiviiva (Lyman-alfa), jonka aallonpituus laboratoriossa on $121{,}6\\,\\text{nm}$, näkyy aallonpituudella $486{,}4\\,\\text{nm}$. Valon aallonpituus on venynyt samassa suhteessa kuin avaruus on laajentunut valon matkan aikana.\n\nKosmisen taustasäteilyn lämpötila on kääntäen verrannollinen avaruuden venymiseen: jos avaruus on venynyt $k$-kertaiseksi, lämpötila oli silloin $k$ kertaa nykyinen. Voit tarkistaa säännön luvuista: taustasäteilyn aallonpituudet ovat venyneet noin $1100$-kertaisiksi, ja lämpötila on laskenut arvosta $3000\\,\\text{K}$ arvoon $2{,}725\\,\\text{K}$.\n\na) Laske kvasaarin punasiirtymä $z$.\n\nb) Oppilas laskee nopeuden kaavalla $v = c\\,z$ ja saa kolminkertaisen valon nopeuden. Miksi tulos on mahdoton ja miksi kaava ei tässä päde?\n\nc) Kuinka suuri oli taustasäteilyn lämpötila silloin, kun kvasaarin valo lähti matkaan? Nykyinen lämpötila on $2{,}725\\,\\text{K}$.\n\nAnna c)-kohdan tulos kelvineinä vastauskenttään.",
+      "text": "Esimerkkitilanne: kaukaisen kvasaarin spektrissä vedyn ultraviolettiviiva (Lyman-alfa), jonka aallonpituus laboratoriossa on $121{,}6\\,\\text{nm}$, näkyy aallonpituudella $486{,}4\\,\\text{nm}$. Valon aallonpituus on venynyt samassa suhteessa kuin avaruus on laajentunut valon matkan aikana.\n\nKosmisen taustasäteilyn lämpötila on kääntäen verrannollinen avaruuden venymiseen: jos avaruus on venynyt $k$-kertaiseksi, lämpötila oli silloin $k$ kertaa nykyinen. Voit tarkistaa säännön luvuista: taustasäteilyn aallonpituudet ovat venyneet noin $1100$-kertaisiksi, ja lämpötila on laskenut arvosta $3000\\,\\text{K}$ arvoon $2{,}725\\,\\text{K}$.\n\na) Laske kvasaarin punasiirtymä $z$.\n\nb) Oppilas laskee nopeuden kaavalla $v = c\\,z$ ja saa kolminkertaisen valon nopeuden. Miksi tulosta ei voi pitää galaksin nopeutena?\n\nc) Kuinka suuri oli taustasäteilyn lämpötila silloin, kun kvasaarin valo lähti matkaan? Nykyinen lämpötila on $2{,}725\\,\\text{K}$.\n\nAnna c)-kohdan tulos kelvineinä vastauskenttään.",
       "kind": [
         "model",
         "reasoning"

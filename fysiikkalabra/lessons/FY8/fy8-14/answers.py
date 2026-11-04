@@ -24,7 +24,7 @@ a["fy8-14-L3-02"] = 2 ** (1.0 / 0.27 - 1.0 / 1.8)         # 30 keV, 1,0 cm bone 
 a["fy8-14-L3-03"] = 3.9 * math.log2(1 / 0.050)            # F-18 511 keV, lead d½ 3,9 mm, down to 5,0 %: 16,9 mm -> 17 mm
 # Exercise bank additions (teacher 2026-11-04): L1-06 is multiple choice and L1-07 a written answer (no number)
 a["fy8-14-L1-08"] = 1.602e-19 * 80e3                      # E = eU, U = 80 kV: 1,2816e-14 J -> 1,3e-14 J
-a["fy8-14-L2-05"] = (3 * 0.010 + 2 * 0.050 + 1 * 2.0) / 5.1 * 100   # 3 dental, 2 chest, 1 head CT: 2,13 mSv / 5,1 mSv = 41,8 % -> 42 %
+a["fy8-14-L2-05"] = (3 * 0.010 + 2 * 0.10 + 1 * 2.0) / 5.1 * 100   # 3 dental, 2 chest (0,10 mSv as in fy8-13), 1 head CT: 2,23 mSv / 5,1 mSv = 43,7 % -> 44 %
 a["fy8-14-L2-06"] = 64 / (500 * 0.5 ** (12.0 / 6.01)) * 100   # measured 64 MBq vs decay only 125,3 MBq at 12,0 h: 51,1 % (part a: halving time about 4,0 h)
 a["fy8-14-L2-07"] = 3.9 * math.log2(1 / 0.010)            # error: d½ of 140 keV used; right d½ 3,9 mm, down to 1,0 %: 25,9 mm -> 26 mm
 A_scan = 2.0 * 75                                         # L3-04: 2,0 MBq/kg · 75 kg = 150 MBq needed at the start of the scan
