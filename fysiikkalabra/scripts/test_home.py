@@ -9,8 +9,8 @@ For every language, from the pages that are actually in site/ (so nothing here h
     guide there
   - every row is one link, to its module page, with icon, code, title and the Miksi question (whole in its title),
     the arrow hidden from screen readers; the module page's lesson links all resolve (two clicks to a lesson)
-  - the <title>, og:title and description stay as they were; the header links Näin opiskelet (the study guide, now at
-    the top of Lukuvinkit with the six stages under the lessons' names) and the footer Tietoa sivustosta, which has
+  - the <title>, og:title and description stay as they were; the header links Näin opiskelet and Sivustosta (the study guide, now at
+    the top of Lukuvinkit with the six stages under the lessons' names) and the footer Sivustosta (the teacher's text, content/<lang>/tietoa.md), which has
     the portfolio link the front page no longer has
   - every language link resolves, and a link to a page the other language has not published goes to that
     language's module page, to a note that exists there
@@ -110,6 +110,12 @@ for lang in i18n.languages():
            'href="tietoa.html"' in ftr and 'href="lukuvinkit.html"' in ftr and T("site.back_to_portfolio") not in ftr and "../index.html" not in ftr, ftr)
     about = (out / "tietoa.html").read_text() if (out / "tietoa.html").is_file() else ""
     expect(f"{lang}: tietoa.html exists and links back to the portfolio", T("site.back_to_portfolio") in about and re.search(r'href="(\.\./)+index\.html"', about))
+    expect(f"{lang}: the front page header links Sivustosta after Lukuvinkit",
+           f'<a class="nav-reading" href="lukuvinkit.html">{_h.escape(T("site.reading_tips"))}</a><a class="nav-about" href="tietoa.html">{_h.escape(T("site.about"))}</a>' in hdr, hdr[-400:])
+    src = next((f for f in (ROOT / "content" / lang / "tietoa.md", ROOT / "content" / "fi" / "tietoa.md") if f.is_file()), None)
+    heads = re.findall(r"^#+ (.+)$", src.read_text(), re.M) if src else []
+    expect(f"{lang}: Sivustosta shows the teacher's text (content/{lang}/tietoa.md) with all its headings and bold parts",
+           bool(heads) and all(_h.escape(h) in about for h in heads) and about.count("<strong>") == src.read_text().count("**") // 2, heads)
     rp = (out / "lukuvinkit.html").read_text()
     guide = re.search(r'<main[^>]*><section class="path" id="nain-opiskelet".*?</section>', rp, re.S)
     stages = re.findall(r"<li><strong>(.*?)</strong>", guide.group(0)) if guide else []
