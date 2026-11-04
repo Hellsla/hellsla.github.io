@@ -39,6 +39,77 @@
       "answer": -255.06,
       "unit": "J",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy4-7-L1-06",
+      "level": 1,
+      "text": "Auto ajaa tasaisella tiellä ensin nopeudella $v$ ja sitten nopeudella $2v$. Auton massa on molemmissa tapauksissa sama.\n\nMikä väite auton liike-energian muutoksesta on oikea?",
+      "kind": [
+        "concept"
+      ],
+      "unit": "",
+      "tolerance": 0.02,
+      "answer": "Liike-energia kasvaa nelinkertaiseksi, koska se on verrannollinen nopeuden neliöön.",
+      "choices": [
+        {
+          "text": "Liike-energia kaksinkertaistuu, koska se on verrannollinen nopeuteen.",
+          "feedback": "Liike-energia ei ole verrannollinen nopeuteen vaan nopeuden neliöön: $E_\\text{k} = \\tfrac{1}{2}\\,mv^2$. Kaksinkertainen nopeus antaa nelinkertaisen neliön."
+        },
+        {
+          "text": "Liike-energia kasvaa kahdeksankertaiseksi, koska se on verrannollinen nopeuden kolmanteen potenssiin.",
+          "feedback": "Nopeus on liike-energian kaavassa toisessa potenssissa, ei kolmannessa. Kaksinkertaisen nopeuden neliö on $2^2 = 4$, ei $2^3 = 8$."
+        },
+        {
+          "text": "Liike-energia kasvaa nelinkertaiseksi, koska se on verrannollinen nopeuden neliöön.",
+          "correct": true,
+          "feedback": "Oikein: $\\tfrac{1}{2}\\,m(2v)^2 = 4 \\cdot \\tfrac{1}{2}\\,mv^2$. Siksi nopeuden kaksinkertaistuminen kasvattaa liike-energian nelinkertaiseksi."
+        },
+        {
+          "text": "Liike-energia pysyy samana, koska se riippuu vain auton massasta.",
+          "feedback": "Liike-energia riippuu massan lisäksi nopeudesta. Massan pysyessä samana nopeuden muutos muuttaa liike-energiaa."
+        }
+      ]
+    },
+    {
+      "id": "fy4-7-L1-07",
+      "level": 1,
+      "kind": [
+        "reasoning"
+      ],
+      "text": "Hissi nostaa henkilön, jonka massa on $80\\,\\text{kg}$, ylempään kerrokseen. Henkilön potentiaalienergia kasvaa $9{,}4\\,\\text{kJ}$. Kuinka monta metriä hissi nostaa henkilöä?",
+      "answer": 12.0,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-7-L1-08",
+      "level": 1,
+      "text": "Ämpäri on kaivossa $3{,}0\\,\\text{m}$ maanpinnan alapuolella ja liikkuu alaspäin nopeudella $2{,}0\\,\\text{m/s}$. Nollataso on maanpinta.\n\nMikä väite ämpärin liike-energiasta $E_\\text{k}$ ja potentiaalienergiasta $E_\\text{p}$ on oikea?",
+      "kind": [
+        "concept"
+      ],
+      "unit": "",
+      "tolerance": 0.02,
+      "answer": "$E_\\text{k} > 0$ ja $E_\\text{p} < 0$, koska liike-energia ei riipu suunnasta ja korkeus on negatiivinen.",
+      "choices": [
+        {
+          "text": "$E_\\text{k} < 0$ ja $E_\\text{p} < 0$, koska ämpäri liikkuu alas ja on nollatason alapuolella.",
+          "feedback": "Liike-energia ei voi olla negatiivinen, koska $E_\\text{k} = \\tfrac{1}{2}\\,mv^2$ ja $v^2 \\ge 0$. Liikkeen suunta ei vaikuta liike-energiaan."
+        },
+        {
+          "text": "$E_\\text{k} > 0$ ja $E_\\text{p} < 0$, koska liike-energia ei riipu suunnasta ja korkeus on negatiivinen.",
+          "correct": true,
+          "feedback": "Oikein: $v^2$ on positiivinen suunnasta riippumatta, ja nollatason alapuolella $h < 0$, joten $E_\\text{p} = m g h < 0$."
+        },
+        {
+          "text": "$E_\\text{k} > 0$ ja $E_\\text{p} > 0$, koska energia on aina positiivista, kun kappale liikkuu.",
+          "feedback": "Potentiaalienergia voi olla negatiivinen. Nollatason alapuolella korkeus $h$ on negatiivinen, joten myös $E_\\text{p} = m g h$ on negatiivinen."
+        },
+        {
+          "text": "$E_\\text{k} < 0$ ja $E_\\text{p} > 0$, koska nopeus osoittaa alas ja syvyys on positiivinen luku.",
+          "feedback": "Tilanne on päinvastoin: liike-energia on positiivinen ja potentiaalienergia negatiivinen. Kaavassa $h$ on korkeus nollatasosta, ei syvyys."
+        }
+      ]
     }
   ],
   "level2": [
@@ -73,6 +144,115 @@
       "answer": 14.857844916257388,
       "unit": "m/s",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy4-7-L2-05",
+      "level": 2,
+      "kind": [
+        "data"
+      ],
+      "text": "Kumipallo, jonka massa on $0{,}057\\,\\text{kg}$, pudotettiin lattian yläpuolelta. Videoanalyysillä mitattiin pallon korkeus $h$ lattiasta ja nopeus $v$ ajan $t$ funktiona. Ilmanvastus oli niin pieni, että se jätetään huomiotta. Alla on esimerkkiaineisto.\n\na) Laske jokaiselle ajanhetkelle liike-energia, potentiaalienergia ja mekaaninen energia. Nollataso on lattia.\n\nb) Kuvaile, miten kolme energiaa muuttuvat pudotuksen aikana.\n\nc) Laske mekaanisen energian keskiarvo $E_{\\text{mek,ka}}$ kaikista hetkistä.\n\nKirjoita vastauslaatikkoon kohdan c) keskiarvo.",
+      "answer": 1.0,
+      "unit": "J",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Pudotetun pallon korkeus $h$ ja nopeus $v$ ajan $t$ funktiona (esimerkkiaineisto)",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$h\\,(\\text{m})$",
+          "$v\\,(\\text{m/s})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "1.80",
+            "0.00"
+          ],
+          [
+            "0.1",
+            "1.75",
+            "0.98"
+          ],
+          [
+            "0.2",
+            "1.60",
+            "1.99"
+          ],
+          [
+            "0.3",
+            "1.36",
+            "2.91"
+          ],
+          [
+            "0.4",
+            "1.02",
+            "3.95"
+          ],
+          [
+            "0.5",
+            "0.58",
+            "4.88"
+          ],
+          [
+            "0.6",
+            "0.04",
+            "5.92"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy4-7-L2-06",
+      "level": 2,
+      "kind": [
+        "error"
+      ],
+      "text": "Sukeltaja, jonka massa varusteineen on $70\\,\\text{kg}$, on hypännyt tornista veteen. Kun hän on $1{,}5\\,\\text{m}$ vedenpinnan alapuolella, hänen nopeutensa on $4{,}0\\,\\text{m/s}$. Nollataso on vedenpinta. Tehtävässä lasketaan vain määritelmän mukainen mekaaninen energia $E_\\text{k} + E_\\text{p}$.\n\nOppilas laski sukeltajan mekaanisen energian näin: ”$E_\\text{mek} = \\tfrac{1}{2}\\,mv^2 + mgh = \\tfrac{1}{2} \\cdot 70\\,\\text{kg} \\cdot (4{,}0\\,\\text{m/s})^2 + 70\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 \\cdot 1{,}5\\,\\text{m} \\approx 1590\\,\\text{J}$.”\n\na) Selitä oppilaan virhe.\n\nb) Laske sukeltajan mekaaninen energia oikein.\n\nKirjoita vastauslaatikkoon kohdan b) tulos.",
+      "answer": -470.0,
+      "unit": "J",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy4-7-L2-07",
+      "level": 2,
+      "kind": [
+        "data",
+        "graph",
+        "experiment"
+      ],
+      "text": "Kärryn liike-energia mitattiin eri nopeuksilla. Kärryn massa unohtui kirjata muistiin, joten se on määritettävä mittausaineistosta. Alla on esimerkkiaineisto.\n\nPiirrä $(v^2, E_\\text{k})$-kuvaaja ja sovita siihen origon kautta kulkeva suora. Perustele kaavan $E_\\text{k} = \\tfrac{1}{2}\\,mv^2$ avulla, miksi suoran kulmakerroin kertoo kärryn massan, ja määritä massa.\n\nKirjoita vastauslaatikkoon kärryn massa.",
+      "answer": 0.52,
+      "unit": "kg",
+      "tolerance": 0.04,
+      "data": {
+        "caption": "Kärryn nopeus $v$ ja liike-energia $E_\\text{k}$ (esimerkkiaineisto)",
+        "columns": [
+          "$v\\,(\\text{m/s})$",
+          "$E_\\text{k}\\,(\\text{J})$"
+        ],
+        "rows": [
+          [
+            "0.40",
+            "0.043"
+          ],
+          [
+            "0.80",
+            "0.17"
+          ],
+          [
+            "1.20",
+            "0.37"
+          ],
+          [
+            "1.60",
+            "0.66"
+          ],
+          [
+            "2.00",
+            "1.04"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -99,6 +279,94 @@
       "answer": 214.4449999999997,
       "unit": "J",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy4-7-L3-04",
+      "level": 3,
+      "kind": [
+        "data",
+        "model"
+      ],
+      "text": "Tennispallo, jonka massa on $0{,}058\\,\\text{kg}$, pudotettiin kovalle lattialle. Videolta mitattiin pallon korkein kohta lattian yläpuolella ennen pudotusta ja jokaisen pomppauksen jälkeen. Pallo liikkuu pystysuunnassa, ja korkeimmassa kohdassa sen nopeus on nolla. Alla on esimerkkiaineisto.\n\na) Laske pallon mekaaninen energia jokaisessa korkeimmassa kohdassa, kun nollataso on lattia.\n\nb) Kuinka monta prosenttia mekaanisesta energiasta muuttuu yhdessä pomppauksessa muuksi energiaksi keskimäärin?\n\nc) Kuinka paljon mekaanista energiaa on muuttunut muuksi energiaksi neljän ensimmäisen pomppauksen aikana? Mihin energia on mennyt?\n\nd) Toinen oppilas valitsee nollatasoksi pöydän pinnan, joka on $1{,}00\\,\\text{m}$ lattian yläpuolella. Laske hänen nollatasonsa mukaan pallon mekaaninen energia pudotushetkellä ja neljännen pomppauksen jälkeen. Perustele, miksi kohdan c) tulos on silti sama.\n\nKirjoita vastauslaatikkoon kohdan c) energia.",
+      "answer": 0.61,
+      "unit": "J",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Pallon korkein kohta $h$ lattian yläpuolella (esimerkkiaineisto)",
+        "columns": [
+          "Pomppauksia",
+          "$h\\,(\\text{m})$"
+        ],
+        "rows": [
+          [
+            "0",
+            "1.50"
+          ],
+          [
+            "1",
+            "1.09"
+          ],
+          [
+            "2",
+            "0.80"
+          ],
+          [
+            "3",
+            "0.57"
+          ],
+          [
+            "4",
+            "0.42"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy4-7-L3-05",
+      "level": 3,
+      "kind": [
+        "data",
+        "model"
+      ],
+      "text": "Pulkkamäen varrella oli viisi mittauspistettä, joissa mitattiin pulkkailijan korkeus $h$ rinteen alapään yläpuolella ja nopeus $v$. Pulkkailijan ja pulkan yhteismassa on $48\\,\\text{kg}$. Alla on esimerkkiaineisto.\n\na) Laske mekaaninen energia jokaisessa mittauspisteessä, kun nollataso on rinteen alapää.\n\nb) Kuinka paljon mekaanista energiaa on muuttunut muuksi energiaksi pisteiden 1 ja 5 välillä?\n\nc) Millä pisteiden välillä mekaanista energiaa muuttuu eniten? Perustele havainnolla nopeudesta ja selitä, miksi energia ei häviä mihinkään.\n\nd) Valitaan nollatasoksi pisteen 1 korkeus. Laske mekaaninen energia pisteissä 1 ja 5 ja perustele, miksi kohdan b) tulos ei muutu.\n\nKirjoita vastauslaatikkoon kohdan b) energia kilojouleina.",
+      "answer": 1.6,
+      "unit": "kJ",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Pulkkailijan korkeus $h$ ja nopeus $v$ mittauspisteissä (esimerkkiaineisto)",
+        "columns": [
+          "Piste",
+          "$h\\,(\\text{m})$",
+          "$v\\,(\\text{m/s})$"
+        ],
+        "rows": [
+          [
+            "1",
+            "18.0",
+            "1.5"
+          ],
+          [
+            "2",
+            "14.0",
+            "8.3"
+          ],
+          [
+            "3",
+            "10.0",
+            "11.5"
+          ],
+          [
+            "4",
+            "6.0",
+            "14.0"
+          ],
+          [
+            "5",
+            "2.0",
+            "15.8"
+          ]
+        ]
+      }
     }
   ]
 }
