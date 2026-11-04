@@ -556,8 +556,8 @@ textarea:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border
 .experiment>.intro>:first-child{margin-top:0}
 .exp-setup{font-size:var(--fs-ui);margin:.6rem 0;padding:.5rem .8rem;background:var(--bg);border-radius:var(--inner-radius)}
 .exp-controls{display:flex;flex-wrap:wrap;gap:.5rem;margin:.7rem 0}
-.exp-controls .exp-reset,.exp-controls .exp-copy,.exp-controls .exp-csv,.choice-actions .copy-notes{background:var(--surface);color:var(--accent-deep)}
-.exp-controls .exp-reset:hover:not(:disabled),.exp-controls .exp-copy:hover:not(:disabled),.exp-controls .exp-csv:hover:not(:disabled){background:var(--accent-soft);color:var(--accent-deep)}
+.exp-controls .exp-reset,.exp-controls .exp-copy,.choice-actions .copy-notes{background:var(--surface);color:var(--accent-deep)}
+.exp-controls .exp-reset:hover:not(:disabled),.exp-controls .exp-copy:hover:not(:disabled){background:var(--accent-soft);color:var(--accent-deep)}
 .exp-export-status{align-self:center;font:600 var(--fs-ui) var(--sans);color:var(--accent-deep)}
 .exp-export-text{display:block;width:100%;box-sizing:border-box;margin:.3rem 0 .7rem;font:15px/1.4 var(--mono);white-space:pre;overflow:auto}
 table.exp-table{margin:.6rem 0 .3rem}table.exp-table caption{font:600 var(--fs-small) var(--sans);color:var(--ink-2);text-align:left;padding:.3rem .8rem .1rem;white-space:nowrap}
