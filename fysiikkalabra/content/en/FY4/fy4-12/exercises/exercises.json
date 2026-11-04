@@ -133,7 +133,7 @@
     {
       "id": "fy4-12-L2-03",
       "level": 2,
-      "text": "Cart A starts from the place $6.0\\,\\text{m}$ and moves at a constant velocity of $3.0\\,\\text{m/s}$ in the positive direction. Cart B starts at the same moment from the place $42\\,\\text{m}$ and moves at a constant velocity of $-1.0\\,\\text{m/s}$. Sketch on paper the $(t,x)$ graph of each in the same coordinate system and use the graphs to justify why the lines intersect and what the intersection tells. Then state when the carts meet.",
+      "text": "Cart A starts from the place $6.0\\,\\text{m}$ and moves at a constant velocity of $3.0\\,\\text{m/s}$ in the positive direction. Cart B starts at the same moment from the place $42\\,\\text{m}$ and moves at a constant velocity of $-1.0\\,\\text{m/s}$.\n\nSketch on paper the $(t,x)$ graph of each in the same coordinate system and use the graphs to justify why the lines intersect and what the intersection tells. Then state when the carts meet.",
       "answer": 9.0,
       "unit": "s",
       "tolerance": 0.02
