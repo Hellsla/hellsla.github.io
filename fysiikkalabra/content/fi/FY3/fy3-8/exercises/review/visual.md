@@ -1,18 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: d311cb11b332d994
+CONTENT-HASH: 56d94f2d09a1fcbc
 
 ## Blocking
 
 ## Polish
-- [Minor] solutions.md L2-06 Vastaus — kohdat esitetään järjestyksessä b), a), c) — järjestä a), b), c).
-- [Minor] solutions.md L2-05 ja L3-04 Vastaus — mallivastaukset c) ja b) ovat pitkiä kappaleita — jaa kohdittain omille riveilleen.
-- [Minor] L3-04 taulukko — negatiivinen lukuarvo "-32" tavuviivalla — käytä miinusmerkkiä (−32).
+- [Minor] solutions.md L2-06 Vastaus — kohdat esitetään järjestyksessä b), a), c) — järjestä a), b), c). Carried over.
+- [Minor] solutions.md L2-05 ja L3-04 Vastaus — mallivastaukset ovat pitkiä kappaleita — jaa kohdittain omille riveilleen. Carried over.
+- [Minor] L3-04 taulukko — "-32" tavuviivalla — käytä miinusmerkkiä (−32). Carried over.
 - [Minor] L2-05, L2-06 — vastauslaatikon yksikkö "10⁻⁶ 1/K" tavallista tekstiä — pidä, jos laatikko ei tue matematiikkaa.
 
 ## Checked
-- Round 2 (delta). Round 1 Blocking: none. Round 1 Polish fixed: L2-05 c) now in Vastaus; L1-08 "(yksiköt jätetty pois)" added; L3-05 fraction now readable.
-- open-exercises-1280-8, -10 (L1-06, L1-08 end), L2-1280-8 (L2-06 solution), L3-1280-7, -9 (L3-04, L3-05 solutions). No 360 px exercise captures exist.
-- Tables, MC feedback, solution cards inside their cards, no red KaTeX, no overflow.
+- Round 3 (delta, text-only). L2-06 Vastaus a): the garbled clause is gone and the sentence now reads cleanly in Finnish; no layout change, the answer paragraph is slightly shorter. No new captures taken; round-2 captures of the L2-06 solution (L2-1280-8) still apply.
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 4 · accessibility 4
