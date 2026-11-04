@@ -1,0 +1,34 @@
+{
+  "id": "fy6-6",
+  "course": "FY6",
+  "title": "Sähköteho ja vastuksen lämpeneminen",
+  "goals": [
+    "LOPS FY6: sähköteho ja Joulen laki",
+    "Täsmennys: tehon jakautuminen virtapiirin komponenteille"
+  ],
+  "prerequisites": [
+    "fy6-3"
+  ],
+  "glossary": [
+    "sähköteho",
+    "Joulen laki",
+    "sähköenergia"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false,
+  "key_concepts": [
+    {
+      "term": "sähköteho",
+      "explain": "Sähköteho kertoo, kuinka paljon sähköenergiaa muuttuu muuksi energiaksi yhdessä sekunnissa. Saat sen kertomalla jännitteen ja virran."
+    },
+    {
+      "term": "Joulen laki",
+      "explain": "Joulen laki kertoo, miten vastuksen teho riippuu virrasta tai jännitteestä. Kun virta samassa vastuksessa kaksinkertaistuu ja resistanssi pysyy samana, vastus lämpenee nelinkertaisella teholla."
+    },
+    {
+      "term": "sähköenergia",
+      "explain": "Sähköenergia on energiaa, jonka virtapiirin varaukset siirtävät komponenttiin. Vastuksessa se muuttuu sisäenergiaksi, ja vastus lämpenee."
+    }
+  ]
+}

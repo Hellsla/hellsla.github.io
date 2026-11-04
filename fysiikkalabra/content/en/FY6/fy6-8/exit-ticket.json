@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Why is the terminal voltage of a battery smaller than its source voltage when a current is drawn from the battery?",
+    "a": "The current also flows inside the battery, and in the internal resistance of the battery the potential drops by the voltage $R_\\text{s} I$. So $U = E - R_\\text{s} I$ is left between the terminals. Without a current the terminal voltage is the source voltage."
+  },
+  {
+    "q": "The source voltage of a battery is $9.0\\,\\text{V}$ and its internal resistance $1.8\\,\\Omega$. What is its short-circuit current, and why is a short circuit dangerous?",
+    "a": "The short-circuit current is $I_\\text{k} = E : R_\\text{s} = 9.0\\,\\text{V} : 1.8\\,\\Omega = 5.0\\,\\text{A}$. Only the internal resistance limits the current, so the whole power of the source is changed into internal energy of the battery and the wire: they heat up, and the battery may leak or catch fire."
+  }
+]

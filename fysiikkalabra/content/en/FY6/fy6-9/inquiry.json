@@ -1,0 +1,429 @@
+{
+  "version": 1,
+  "contribution": "A battery in a charging circuit: capacity as charge (Ah) and as energy (Wh), the charging current from the voltage law using the source voltage and the internal resistance, the reversal of the current direction in the battery and the energy losses of charging; the model explains why constant-voltage charging slows down towards the end.",
+  "learn": [
+    "calculate the charge and the energy of a battery from its capacity and compare batteries in watt-hours.",
+    "calculate the charging current and the terminal voltage of a battery using the voltage law of the charging circuit.",
+    "explain why the charging current decreases as the battery fills and why part of the energy becomes internal energy."
+  ],
+  "prior": [
+    "When a current is drawn from a battery, its terminal voltage is $U = E - R_\\text{s} I$ (chapter *Electromotive force and internal resistance*)",
+    "The sum of the potential changes around a loop is zero (chapter *Kirchhoff's laws and potential in a circuit*)",
+    "Electric power is $P = UI$, and energy is power times time (chapter *Electric power and the heating of a resistor*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "In the evening a phone battery has $10\\,\\%$ left. When the phone is connected to a charger, the charge level rises to about half in half an hour. The last ten percent, however, take almost as long as the whole first part, and the phone feels warm while charging. The charger is the same all the time.",
+      "question": "What changes during charging so that the current into the battery decreases even though the charger stays the same?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Recall: terminal voltage",
+      "optional": true,
+      "prompt": "A current is drawn from a battery. The source voltage of the battery is $E$ and its internal resistance is $R_\\text{s}$. Which statement about the terminal voltage $U$ of the battery is true?",
+      "choices": [
+        {
+          "text": "$U$ is smaller than $E$, because part of the source voltage is left in the internal resistance of the battery.",
+          "correct": true,
+          "feedback": "Correct. When a current $I$ is drawn from a battery, the terminal voltage is $U = E - R_\\text{s} I$ (chapter *Electromotive force and internal resistance*). Today the current passes through the battery in the other direction, and we will see what happens to the terminal voltage then."
+        },
+        {
+          "text": "$U$ is equal to $E$, because the source voltage is a property of the battery itself.",
+          "feedback": "The terminal voltage is equal to the source voltage only when no current flows. When a current is drawn, the voltage $R_\\text{s} I$ in the internal resistance lowers the terminal voltage: $U = E - R_\\text{s} I$ (chapter *Electromotive force and internal resistance*)."
+        },
+        {
+          "text": "$U$ is greater than $E$, because the current increases the voltage between the terminals of the battery.",
+          "feedback": "When a battery discharges, the opposite happens: the current passes through the internal resistance, and the terminal voltage is smaller, $U = E - R_\\text{s} I$ (chapter *Electromotive force and internal resistance*)."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: how does the charging current change?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 3
+      },
+      "prompt": "An empty battery cell is charged with a charger whose voltage stays at $4.5\\,\\text{V}$ all the time. At the start of charging the current is $2.2\\,\\text{A}$. How does the current change as charging continues?",
+      "choices": [
+        {
+          "text": "The current stays at $2.2\\,\\text{A}$ until the cell is full, because the voltage of the charger does not change.",
+          "feedback": "The values of the model refute this: after half an hour the current is about $1.5\\,\\text{A}$ and after an hour about $1.0\\,\\text{A}$. The current is not set by the voltage of the charger alone but by the difference between the voltage of the charger and the source voltage of the cell, and the source voltage grows as the cell charges."
+        },
+        {
+          "text": "The current grows, because the filling cell takes in more and more charge and draws more current.",
+          "feedback": "In the model the current decreases: from $2.2\\,\\text{A}$ to about $1.0\\,\\text{A}$ in an hour. Charge does not accumulate in the cell; the same charge passes through it. The source voltage of the cell grows as it charges, and the voltage difference between the charger and the cell becomes smaller."
+        },
+        {
+          "text": "The current decreases, because the source voltage of the cell grows and its difference from the voltage of the charger becomes smaller.",
+          "correct": true,
+          "feedback": "The values of the model support this: the source voltage rises from $3.40\\,\\text{V}$ to about $4.0\\,\\text{V}$ in an hour, and the current decreases from $2.2\\,\\text{A}$ to about $1.0\\,\\text{A}$. The current is driven by the difference between the voltage of the charger and the source voltage, so when the difference becomes smaller, the current decreases."
+        },
+        {
+          "text": "The current decreases, because the internal resistance of the cell grows quickly during charging.",
+          "feedback": "In the model the internal resistance stays at $0.10\\,\\Omega$, and the current still decreases from $2.2\\,\\text{A}$ to about $1.0\\,\\text{A}$ in an hour. The cause is the growth of the source voltage from $3.40\\,\\text{V}$ to about $4.0\\,\\text{V}$, which makes the voltage difference between the charger and the cell smaller."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: a charger voltage that is too small",
+      "justify": true,
+      "reveal": {
+        "after": "koe-2",
+        "min": 2
+      },
+      "prompt": "The charge level of a battery cell is $80\\,\\%$, and its source voltage is $4.04\\,\\text{V}$. The cell is connected to a charger whose voltage is only $3.6\\,\\text{V}$. The charger has no diode to prevent a current in the opposite direction. What happens?",
+      "choices": [
+        {
+          "text": "The cell charges, but more slowly than with a larger charger voltage.",
+          "feedback": "In the model the current is $-0.88\\,\\text{A}$: it passes through the cell from the negative terminal to the positive terminal, that is, in the same direction as during discharging. The charger charges the cell only when the voltage of the charger is greater than the source voltage of the cell."
+        },
+        {
+          "text": "No current flows, because the charger and the cell are connected against each other.",
+          "feedback": "In the model the current is $-0.88\\,\\text{A}$. The current is zero only when the voltage of the charger is exactly the source voltage of the cell. Now the source voltage of the cell is greater, and the cell drives a current through the charger."
+        },
+        {
+          "text": "A current flows from the cell to the charger, and the cell discharges.",
+          "correct": true,
+          "feedback": "The values of the model support this: the current is $-0.88\\,\\text{A}$, that is, in the opposite direction to charging, and the charge level falls. The source voltage of the cell, $4.04\\,\\text{V}$, is greater than that of the charger, $3.6\\,\\text{V}$, so the cell acts as a voltage source and the charger as a load."
+        },
+        {
+          "text": "The cell charges as fast as before, because the current from a charger always goes into the battery.",
+          "feedback": "In the model the current reverses, and it is $-0.88\\,\\text{A}$. The direction of the current is decided by which is greater, the voltage of the charger or the source voltage of the cell, and not by which of the devices is called the charger."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Move the duration of charging and change the voltage and resistance of the charger and the initial state. Follow the current, the voltages, the charge level and the energy.",
+      "howto": "*Duration of charging* $t$ shows the situation when the charger has been connected for $t$ hours. The graph shows the current of the whole charge faintly and the part that has passed boldly, and the present moment is circled. *Charger voltage* $U_\\text{ch}$ and *resistance of the charger and wires* $R$ are set with sliders. *Charge level at the start* tells how large a part of the capacity is available when charging begins. The purple arrows show the direction of the current by convention from the positive terminal to the negative terminal, the green fill shows the charge level of the cell and the orange glow how much electrical energy is transformed into internal energy in the internal resistance of the cell. A negative current means that the cell discharges into the charger.",
+      "model": "The capacity of the battery cell is $2.0\\,\\text{Ah}$ and its internal resistance is $R_\\text{s} = 0.10\\,\\Omega$. The source voltage of the cell grows steadily with the charge level, from $3.40\\,\\text{V}$ when empty to $4.20\\,\\text{V}$ when full; the source voltage of a real lithium-ion battery changes less evenly. The voltage of the charger stays constant, and when the cell is full the charger cuts off the current. The charger has no diode, so a charger voltage that is too small discharges the cell until the source voltage of the cell has fallen to the voltage of the charger; the charger drains it completely only below $3.40\\,\\text{V}$. A real phone charger first charges with a constant current and only in the last phase with a constant voltage. The numbers are values calculated by the model, not measurements.",
+      "calc": "By the voltage law $U_\\text{ch} - RI - R_\\text{s} I - E = 0$, so\n\n$$I = \\frac{U_\\text{ch} - E}{R + R_\\text{s}}$$\n\nAs charge passes through the cell, its source voltage grows by $0.40\\,\\text{V}$ per ampere-hour, and the current decreases as the cell charges. The model calculates the current and the source voltage together from the start of charging to the moment $t$. The terminal voltage is $U = E + R_\\text{s} I$. The charger delivers the energy $W_\\text{ch} = U_\\text{ch}\\,\\Delta Q$ when the charge $\\Delta Q$ has passed through the cell. The energy stored in the cell as chemical energy is the part given by the source voltage, and the difference becomes internal energy in the resistances $R$ and $R_\\text{s}$. The efficiency is $\\eta = W_\\text{batt} : W_\\text{ch}$."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 1: the current during charging",
+      "intro": "Test prediction 1. The voltage of the charger, the resistance and the charge level at the start stay constant; change only the duration of charging. Record the current, the source voltage and the charge level at at least three durations, for example $0$, $0.5$, $1.0$ and $1.5$ hours. How does the current change, and what changes at the same time?",
+      "initial": {
+        "t": 0,
+        "Ulat": 4.5,
+        "R": 0.4,
+        "alku": 0
+      },
+      "locked": [
+        "Ulat",
+        "R",
+        "alku"
+      ],
+      "vary": "t",
+      "names": {
+        "t": "duration of charging",
+        "Ulat": "charger voltage",
+        "R": "resistance of charger and wires",
+        "alku": "charge level at the start"
+      },
+      "units": {
+        "t": "h",
+        "Ulat": "V",
+        "R": "Ω",
+        "alku": "%"
+      },
+      "measure": [
+        {
+          "key": "I",
+          "label": "I (A)"
+        },
+        {
+          "key": "E",
+          "label": "E (V)"
+        },
+        {
+          "key": "soc",
+          "label": "charge level (%)"
+        }
+      ],
+      "min": 3
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 2: a charger voltage that is too small",
+      "intro": "Test prediction 2. The charge level at the start ($80\\,\\%$), the duration of charging $0$ and the resistance stay constant; change only the voltage of the charger. Record the current and the source voltage at at least two charger voltages, one below and one above $4.04\\,\\text{V}$, for example $3.6\\,\\text{V}$, $4.0\\,\\text{V}$, $4.2\\,\\text{V}$ and $4.6\\,\\text{V}$. At what charger voltage does the current change direction?",
+      "initial": {
+        "t": 0,
+        "Ulat": 3.6,
+        "R": 0.4,
+        "alku": 80
+      },
+      "locked": [
+        "t",
+        "R",
+        "alku"
+      ],
+      "vary": "Ulat",
+      "names": {
+        "t": "duration of charging",
+        "Ulat": "charger voltage",
+        "R": "resistance of charger and wires",
+        "alku": "charge level at the start"
+      },
+      "units": {
+        "t": "h",
+        "Ulat": "V",
+        "R": "Ω",
+        "alku": "%"
+      },
+      "measure": [
+        {
+          "key": "I",
+          "label": "I (A)"
+        },
+        {
+          "key": "E",
+          "label": "E (V)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "koe-3",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 3: fast charging and losses",
+      "optional": true,
+      "intro": "Charge the cell from empty to full with different charger voltages. The duration of charging is $4.0$ hours, so the cell has time to fill, and the resistance stays constant; change only the voltage of the charger between $4.4$ and $5.0\\,\\text{V}$. Record the charging time, the energy delivered by the charger and the efficiency. Every time the same energy is stored in the cell, $7.6\\,\\text{Wh}$. What does faster charging cost?",
+      "initial": {
+        "t": 4.0,
+        "Ulat": 4.4,
+        "R": 0.4,
+        "alku": 0
+      },
+      "locked": [
+        "t",
+        "R",
+        "alku"
+      ],
+      "vary": "Ulat",
+      "names": {
+        "t": "duration of charging",
+        "Ulat": "charger voltage",
+        "R": "resistance of charger and wires",
+        "alku": "charge level at the start"
+      },
+      "units": {
+        "t": "h",
+        "Ulat": "V",
+        "R": "Ω",
+        "alku": "%"
+      },
+      "measure": [
+        {
+          "key": "tFull",
+          "label": "charging time (h)"
+        },
+        {
+          "key": "Wlat",
+          "label": "W_ch (Wh)"
+        },
+        {
+          "key": "eta",
+          "label": "η (%)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion: the charging current and its direction",
+      "after": [
+        "koe-1",
+        "koe-2"
+      ],
+      "prompt": "Write on the basis of your tables: how did the charging current and the source voltage of the cell change during charging, and why did the current decrease? Under what condition does the cell charge, and what happened when the condition was not met?",
+      "model": "During charging the source voltage of the cell grew from $3.40\\,\\text{V}$ to about $4.17\\,\\text{V}$ in an hour and a half, and at the same time the current decreased from $2.2\\,\\text{A}$ to about $0.66\\,\\text{A}$. The voltage of the charger stayed at $4.5\\,\\text{V}$, so the difference between the voltage of the charger and the source voltage became smaller, and the current decreased with it. This is why charging slows down towards the end. In experiment 2 the cell charged only when the voltage of the charger was greater than the source voltage of the cell, $4.04\\,\\text{V}$. When the voltage of the charger was smaller, the current became negative, for example $-0.88\\,\\text{A}$ at $3.6\\,\\text{V}$, and the cell discharged into the charger. The values are calculated by the model: the source voltage of the cell in the model grows steadily with the charge level.",
+      "criteria": [
+        "The answer states with the numbers of the table that the current decreased and the source voltage grew during charging.",
+        "The answer explains the decrease of the current by the decrease of the difference between the voltage of the charger and the source voltage.",
+        "The answer states that the cell charges only when the voltage of the charger is greater than the source voltage of the cell.",
+        "The answer states that with a charger voltage that is too small the current reverses and the cell discharges."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Return to your predictions",
+      "optional": true,
+      "prompt": "Compare your predictions with the values of the model in the experiments and with the voltage law of the charging circuit. Then return to the question at the start: why do the last few percent of a phone charge slowly, and why does the phone warm up while charging?",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2"
+      ]
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the error",
+      "prompt": "The source voltage of a car battery is $12.4\\,\\text{V}$ and its internal resistance is $0.050\\,\\Omega$. The battery is charged with a charger whose voltage is $14.0\\,\\text{V}$, and the resistance of the charger and wires is $0.35\\,\\Omega$. A student calculates the charging current like this:\n\n$$I = \\frac{14.0\\,\\text{V}}{0.35\\,\\Omega + 0.050\\,\\Omega} = 35\\,\\text{A}$$\n\nWhere is the error?",
+      "choices": [
+        {
+          "text": "The current is driven by the difference between the voltage of the charger and the source voltage of the battery: $I = (14.0\\,\\text{V} - 12.4\\,\\text{V}) : 0.40\\,\\Omega = 4.0\\,\\text{A}$.",
+          "correct": true,
+          "feedback": "Correct. The current passes through the battery from the positive terminal to the negative terminal, so the potential also drops by the source voltage in the battery. The voltage law gives $14.0\\,\\text{V} - 0.40\\,\\Omega \\cdot I - 12.4\\,\\text{V} = 0$. The student's current of $35\\,\\text{A}$ would flow only if the source voltage of the battery were zero."
+        },
+        {
+          "text": "The resistances must be combined with the formula for a parallel connection, because the battery and the charger are in parallel with each other.",
+          "feedback": "The resistance of the charger and wires and the internal resistance of the battery are one after the other in the same loop, and the same current passes through both. They are in series, and $0.35\\,\\Omega + 0.050\\,\\Omega = 0.40\\,\\Omega$ is correct. The error is forgetting the source voltage of the battery."
+        },
+        {
+          "text": "The method is otherwise right, but the internal resistance of the battery must be left out, because it is inside the battery.",
+          "feedback": "The internal resistance belongs in the loop just like the resistance of the charger, and the current passes through it. Leaving it out would change the result by about $15\\,\\%$; the real error is that the source voltage of the battery, $12.4\\,\\text{V}$, is missing from the calculation."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply to a new situation",
+      "prompt": "The capacity of a power bank is marked $10\\,000\\,\\text{mAh}$, and the nominal voltage of its cells is $3.7\\,\\text{V}$. The capacity of a phone battery is $4000\\,\\text{mAh}$ and its nominal voltage is $3.85\\,\\text{V}$. In the transfer $30\\,\\%$ of the energy becomes internal energy of the voltage converter, the wires and the batteries. How many times does the power bank charge an empty phone battery full?",
+      "answer": 1.68,
+      "unit": "kertaa",
+      "tolerance": 0.02,
+      "hints": [
+        "The power bank and the phone work at different voltages. Which should be compared: the numbers of ampere-hours or the energies?",
+        "Calculate the energy of each in watt-hours, $W = UQ$. Only $70\\,\\%$ of the energy of the power bank ends up in the phone.",
+        "The power bank holds $3.7\\,\\text{V} \\cdot 10\\,\\text{Ah} = 37\\,\\text{Wh}$, and of that $0.70 \\cdot 37\\,\\text{Wh}$ ends up in the phone."
+      ],
+      "mistakes": [
+        {
+          "value": 2.5,
+          "feedback": "You compared milliampere-hours: $10\\,000 : 4000 = 2.5$. The ampere-hour is a unit of charge, and the voltages of the batteries are different, so energies are compared. Besides, $30\\,\\%$ of the energy does not end up in the phone."
+        },
+        {
+          "value": 2.4,
+          "feedback": "You compared the energies correctly, $37\\,\\text{Wh} : 15.4\\,\\text{Wh} \\approx 2.4$, but forgot the losses. Only $70\\,\\%$ of the energy of the power bank ends up in the phone."
+        },
+        {
+          "value": 1.75,
+          "feedback": "You took the losses into account but compared milliampere-hours. The voltages of the batteries are different, so compare the energies $W = UQ$."
+        }
+      ],
+      "solution": "**Given:** power bank $Q_1 = 10\\,000\\,\\text{mAh}$ and $U_1 = 3.7\\,\\text{V}$, phone battery $Q_2 = 4000\\,\\text{mAh}$ and $U_2 = 3.85\\,\\text{V}$, losses $30\\,\\%$, so the share $0.70$ ends up in the phone\n\n**Find:** the number of charges $N$\n\n**Principle:** The voltages of the batteries are different, so they are compared by energy and not by charge. The energy of a battery is voltage times charge. $70\\,\\%$ of the energy of the power bank ends up in the phone, because the rest becomes internal energy.\n\n**Formula:** $W = UQ$ and $N \\cdot U_2 Q_2 = 0.70 \\cdot U_1 Q_1$, from which $N = \\dfrac{0.70\\, U_1 Q_1}{U_2 Q_2}$\n\n**Conversions:** $Q_1 = 10\\,000\\,\\text{mAh} = 10\\,000 \\cdot 0.001\\,\\text{Ah} = 10\\,\\text{Ah}$ and $Q_2 = 4000\\,\\text{mAh} = 4.0\\,\\text{Ah}$\n\n**Substitution:** $N = \\dfrac{0.70 \\cdot 3.7\\,\\text{V} \\cdot 10\\,\\text{Ah}}{3.85\\,\\text{V} \\cdot 4.0\\,\\text{Ah}} = \\dfrac{25.9\\,\\text{Wh}}{15.4\\,\\text{Wh}} \\approx 1.68$\n\n**Answer:** $1.7$ times, two significant figures like the voltage $3.7\\,\\text{V}$ and the loss share $30\\,\\%$.\n\n**Reasonableness:** Comparing milliampere-hours would give $2.5$, but the voltage of the phone battery is slightly greater and almost a third of the energy is wasted, so there are clearly fewer charges. After one full charge the power bank still holds energy for about two thirds of a second charge."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise at three levels. In level 1 tasks you calculate capacity, energy or time with one formula, in level 2 tasks you use the voltage law of the charging circuit and conversions, and level 3 requires comparing batteries and reasoning about quantities that change during charging."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept",
+      "prompt": "A car battery is being charged with a charger. Which of the following describes the battery correctly during charging?",
+      "choices": [
+        {
+          "text": "The current passes through the battery from the positive terminal to the negative terminal, and the terminal voltage is greater than the source voltage.",
+          "correct": true,
+          "feedback": "Correct. The charger forces the current through the battery in the opposite direction to discharging, and the current also passes through the internal resistance, so the terminal voltage is $U = E + R_\\text{s} I$."
+        },
+        {
+          "text": "The current passes through the battery from the negative terminal to the positive terminal, and the terminal voltage is smaller than the source voltage.",
+          "feedback": "That is how it is during discharging. In charging the charger forces the current through the battery from the positive terminal to the negative terminal, and the terminal voltage is $U = E + R_\\text{s} I$, that is, greater than the source voltage."
+        },
+        {
+          "text": "The current passes through the battery from the positive terminal to the negative terminal, and the terminal voltage is equal to the source voltage.",
+          "feedback": "The direction is right, but the current also passes through the internal resistance of the battery, so the terminal voltage is greater than the source voltage: $U = E + R_\\text{s} I$. They are equal only when no current flows."
+        },
+        {
+          "text": "Positive charge accumulates in the battery during charging, and therefore its terminal voltage grows.",
+          "feedback": "The battery stays electrically neutral: as much charge enters the positive terminal as leaves the negative terminal. The terminal voltage grows during charging because the source voltage grows as the chemical energy of the battery increases."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Charging current",
+      "prompt": "The source voltage of a car battery is $12.6\\,\\text{V}$ and its internal resistance is $0.050\\,\\Omega$. The battery is charged with a charger whose voltage is $14.4\\,\\text{V}$. The resistance of the charger and wires is $0.25\\,\\Omega$. How large is the charging current? Answer in amperes.",
+      "answer": 6.0,
+      "unit": "A",
+      "tolerance": 0.02,
+      "hints": [
+        "What rises and drops of potential are there in the loop when the current passes through the battery from the positive terminal to the negative terminal?",
+        "Voltage law: $U_\\text{ch} - RI - R_\\text{s} I - E = 0$.",
+        "$I = (14.4\\,\\text{V} - 12.6\\,\\text{V}) : (0.25\\,\\Omega + 0.050\\,\\Omega)$."
+      ],
+      "mistakes": [
+        {
+          "value": 48,
+          "feedback": "You left out the source voltage of the battery. The current is driven by the difference between the voltage of the charger and the source voltage, $14.4\\,\\text{V} - 12.6\\,\\text{V} = 1.8\\,\\text{V}$."
+        },
+        {
+          "value": 7.2,
+          "feedback": "You left out the internal resistance of the battery. The current passes through both the charger and wires and the internal resistance of the battery: $0.25\\,\\Omega + 0.050\\,\\Omega = 0.30\\,\\Omega$."
+        }
+      ],
+      "solution": "**Given:** $E = 12.6\\,\\text{V}$, $R_\\text{s} = 0.050\\,\\Omega$, $U_\\text{ch} = 14.4\\,\\text{V}$, $R = 0.25\\,\\Omega$\n\n**Find:** the charging current $I$ in amperes\n\n**Principle:** The circuit has one loop, so by the voltage law the voltage of the charger equals the sum of the potential drops. The current passes through the battery from the positive terminal to the negative terminal, so the potential drops in the battery both in the internal resistance and by the source voltage.\n\n**Formula:** $U_\\text{ch} - RI - R_\\text{s} I - E = 0$, from which $I = \\dfrac{U_\\text{ch} - E}{R + R_\\text{s}}$\n\n**Conversions:** Not needed: the voltages are in volts and the resistances in ohms, and $1\\,\\text{V} : 1\\,\\Omega = 1\\,\\text{A}$.\n\n**Substitution:** $I = \\dfrac{14.4\\,\\text{V} - 12.6\\,\\text{V}}{0.25\\,\\Omega + 0.050\\,\\Omega} = \\dfrac{1.8\\,\\text{V}}{0.30\\,\\Omega} = 6.0\\,\\text{A}$\n\n**Answer:** $6.0\\,\\text{A}$, two significant figures like the voltage difference $1.8\\,\\text{V}$ and the resistance $0.25\\,\\Omega$.\n\n**Reasonableness:** The terminal voltage is $12.6\\,\\text{V} + 0.050\\,\\Omega \\cdot 6.0\\,\\text{A} = 12.9\\,\\text{V}$, and from the charger side $14.4\\,\\text{V} - 0.25\\,\\Omega \\cdot 6.0\\,\\text{A} = 12.9\\,\\text{V}$. The results agree, and the terminal voltage lies between the source voltage and the voltage of the charger."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Explain the losses of charging",
+      "optional": true,
+      "prompt": "Use energy to explain why less energy is stored in the battery than the charger delivers. Why does fast charging with a large current warm the battery more than slow charging?",
+      "model": "For each unit of charge that passes through the battery, the charger delivers energy according to the voltage of the charger, but only the part given by the source voltage is stored in the battery as chemical energy. The difference becomes internal energy of the charger, the wires and the internal resistance of the battery, and it is transferred to the surroundings as heat. This is why the efficiency of charging is below $100\\,\\%$. In fast charging the difference between the voltage of the charger and the source voltage is larger so that the current will be large. Then more energy per unit of charge becomes internal energy, and in the internal resistance of the battery the power $R_\\text{s} I^2$ grows with the square of the current, so the battery warms more.",
+      "criteria": [
+        "The answer states that the charger delivers energy according to its voltage and only the part given by the source voltage is stored in the battery.",
+        "The answer states that the difference becomes internal energy in the resistances and is transferred to the surroundings as heat.",
+        "The answer explains the warming in fast charging by the larger current and the power $R_\\text{s} I^2$ of the internal resistance, or by the larger voltage difference."
+      ]
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally two quick questions. Answer first yourself and open the answer only then."
+    }
+  ]
+}

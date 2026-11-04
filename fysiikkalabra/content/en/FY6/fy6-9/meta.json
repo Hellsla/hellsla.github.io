@@ -1,0 +1,22 @@
+{
+  "id": "fy6-9",
+  "course": "FY6",
+  "title": "Batteries and the charging circuit",
+  "goals": [
+    "LOPS FY6: batteries and the charging circuit of a battery",
+    "Thematic study: storing electrical energy",
+    "Clarification: battery capacity (Ah, Wh), charging and the charging circuit"
+  ],
+  "prerequisites": [
+    "fy6-8"
+  ],
+  "glossary": [
+    "akku",
+    "paristo",
+    "latauspiiri",
+    "akun kapasiteetti"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

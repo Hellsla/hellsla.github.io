@@ -1,0 +1,10 @@
+[
+  {
+    "q": "The rating plate of a device says $230\\,\\text{V}$, $1150\\,\\text{W}$. How large a current flows through the device when it is connected to the mains and works at its rated power?",
+    "a": "The power is $P = UI$, so the current is $I = P : U = 1150\\,\\text{W} : 230\\,\\text{V} = 5.0\\,\\text{A}$."
+  },
+  {
+    "q": "The current through a resistor becomes twice as large, and the resistance of the resistor stays the same. How many times larger does the power of the resistor become?",
+    "a": "By Joule's law $P = RI^2$. When the current doubles, the power becomes $2^2 = 4$ times larger."
+  }
+]
