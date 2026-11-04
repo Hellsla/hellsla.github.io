@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Johtimessa kulkee $2{,}0\\,\\text{A}$:n virta, ja $0{,}30\\,\\text{m}$ johdinta on kohtisuorassa magneettikenttää $0{,}50\\,\\text{T}$ vastaan. Kuinka suuri voima johtimeen kohdistuu?",
+    "a": "$F = I l B = 2{,}0\\,\\text{A} \\cdot 0{,}30\\,\\text{m} \\cdot 0{,}50\\,\\text{T} = 0{,}30\\,\\text{N}$."
+  },
+  {
+    "q": "Vaakasuorassa johtimessa virta kulkee itään, ja magneettikenttä osoittaa vaakasuoraan pohjoiseen. Mihin suuntaan johtimeen kohdistuva voima osoittaa?",
+    "a": "Ylöspäin. Kun oikean käden peukalo osoittaa itään (virta) ja muut sormet pohjoiseen (kenttä), kämmen osoittaa ylöspäin. Voima on kohtisuorassa sekä virtaa että kenttää vastaan."
+  }
+]

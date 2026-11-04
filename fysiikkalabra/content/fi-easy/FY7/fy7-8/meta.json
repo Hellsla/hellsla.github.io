@@ -1,0 +1,41 @@
+{
+  "id": "fy7-8",
+  "course": "FY7",
+  "title": "Muuntaja ja sähköenergian siirto",
+  "goals": [
+    "LOPS FY7: muuntaja ja energian siirto sähkövirran avulla",
+    "LOPS FY7: ymmärtää sähköenergian tuotannon ja siirron fysikaaliset perusteet ja merkityksen yhteiskunnan toiminnan kannalta",
+    "Laaja-alainen: yhteiskunnallinen osaaminen"
+  ],
+  "prerequisites": [
+    "fy7-7"
+  ],
+  "glossary": [
+    "muuntaja",
+    "muuntosuhde",
+    "siirtohäviö",
+    "sähköverkko",
+    "suurjännite"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false,
+  "key_concepts": [
+    {
+      "term": "muuntaja",
+      "explain": "Laite, joka nostaa tai laskee vaihtojännitettä. Siinä on kaksi käämiä yhteisen rautasydämen ympärillä."
+    },
+    {
+      "term": "muuntosuhde",
+      "explain": "Ensiö- ja toisiokäämin kierroslukujen suhde $N_1 : N_2$. Ihanteellisessa muuntajassa se on sama kuin jännitteiden suhde $U_1 : U_2$."
+    },
+    {
+      "term": "siirtohäviö",
+      "explain": "Teho, joka muuttuu johdoissa sisäenergiaksi, kun sähköä siirretään. Samassa johdossa se kasvaa virran neliön mukana."
+    },
+    {
+      "term": "suurjännite",
+      "explain": "Hyvin suuri jännite, jolla sähköä siirretään kantaverkossa. Kun siirretty teho on sama, virta on silloin pieni ja häviöt pienet."
+    }
+  ]
+}

@@ -1,0 +1,186 @@
+[
+ {
+  "expr": "(() => { const S=window.simState; return S.putki==='kupari' && S.kappale==='magneetti' && S.running===false && S.valmis===false && S.t===0 && S.aika===0 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "on load: copper tube, magnet, at rest, no run (must run before any setup)"
+ },
+ {
+  "expr": "(() => { const L=[...document.querySelectorAll('#sim-root select')].map(s=>[...s.options].map(o=>o.value).join(',')); const B=document.querySelectorAll('#sim-root button'); return L.length===3 && L[0]==='muovi,alumiini,kupari,rako' && L[1]==='magneetti,teras' && L[2]==='0.5,1,2' && B.length===1 && document.querySelectorAll('#sim-root input[type=range]').length===0 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "controls: Pudota button, tube (plastic, aluminium, copper, slit copper), body (magnet, steel), speed"
+ },
+ {
+  "expr": "(() => { const k=[...document.getElementById('sim-root').children].map(e=>e.tagName==='CANVAS'?'canvas':e.className); const c=k.findIndex(x=>x==='canvas'||/sim-canvas/.test(x)); return c>=0 && c<k.indexOf('controls') && k.indexOf('controls')<k.indexOf('readout') ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "DOM order canvas, controls, readout; the button first in the controls"
+ },
+ {
+  "expr": "(() => { const n=document.querySelectorAll('#sim-root p.note'); return !document.querySelector('#sim-root details') && n.length===1 && n[0].textContent.trim().split(/\\s+/).length<=15 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "no Lisätietoja box; one legend line of at most 15 words"
+ },
+ {
+  "expr": "(() => { const P=window.simAdapter && window.simAdapter.params; return P && Object.keys(P).sort().join(',')==='kappale,putki' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "adapter declares putki and kappale"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'muovi'); I(L[1],'magneetti'); ",
+  "expr": "window.simState.T",
+  "expected": 0.451524,
+  "tol": 0.01,
+  "note": "model fall time, free fall: T = sqrt(2h/g) = 0,452 s"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'alumiini'); I(L[1],'magneetti'); ",
+  "expr": "window.simState.T",
+  "expected": 4.241175,
+  "tol": 0.01,
+  "note": "model fall time, aluminium: vt = 0,15 · 5,96/3,77 = 0,237 m/s, T = 4,24 s"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'alumiini'); I(L[1],'magneetti'); ",
+  "expr": "window.simState.vt",
+  "expected": 0.237135,
+  "tol": 0.01,
+  "note": "terminal speed in alumiini"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'kupari'); I(L[1],'magneetti'); ",
+  "expr": "window.simState.T",
+  "expected": 6.681957,
+  "tol": 0.01,
+  "note": "model fall time, copper: vt = 0,15 m/s, T = h/vt + vt/g = 6,68 s"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'kupari'); I(L[1],'magneetti'); ",
+  "expr": "window.simState.vt",
+  "expected": 0.15,
+  "tol": 0.01,
+  "note": "terminal speed in kupari"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'rako'); I(L[1],'magneetti'); ",
+  "expr": "window.simState.T",
+  "expected": 0.81885,
+  "tol": 0.01,
+  "note": "model fall time, slit copper: vt = 1,5 m/s, T = 0,819 s"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'rako'); I(L[1],'magneetti'); ",
+  "expr": "window.simState.vt",
+  "expected": 1.5,
+  "tol": 0.01,
+  "note": "terminal speed in rako"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'kupari'); I(L[1],'teras'); ",
+  "expr": "window.simState.T",
+  "expected": 0.451524,
+  "tol": 0.01,
+  "note": "the unmagnetised steel piece falls freely even in copper"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'kupari'); I(L[1],'magneetti'); window.fy76.finish();",
+  "expr": "window.simState.aika",
+  "expected": 6.681957,
+  "tol": 0.01,
+  "note": "a finished copper run records its fall time 6,68 s"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'kupari'); I(L[1],'magneetti'); window.fy76.finish();",
+  "expr": "window.simState.vLoppu",
+  "expected": 0.15,
+  "tol": 0.01,
+  "note": "speed at the bottom 0,15 m/s"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'kupari'); I(L[1],'magneetti'); window.fy76.finish();",
+  "expr": "window.simState.lampo",
+  "expected": 195.975,
+  "tol": 0.01,
+  "note": "Q = m g h - 1/2 m v² = 196,2 - 0,225 = 195,98 mJ"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'kupari'); I(L[1],'magneetti'); window.fy76.finish();",
+  "expr": "window.simState.Ep",
+  "expected": 196.2,
+  "tol": 0.01,
+  "note": "ΔEp = m g h = 0,020 · 9,81 · 1,00 J = 196,2 mJ"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'muovi'); I(L[1],'magneetti'); window.fy76.finish();",
+  "expr": "window.simState.vLoppu",
+  "expected": 4.429447,
+  "tol": 0.01,
+  "note": "plastic: v = sqrt(2 g h) = 4,43 m/s"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'muovi'); I(L[1],'magneetti'); window.fy76.finish();",
+  "expr": "window.simState.lampo",
+  "expected": 0,
+  "tol": 0.01,
+  "note": "plastic: no internal energy"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'alumiini'); I(L[1],'magneetti'); window.fy76.finish();",
+  "expr": "window.simState.lampo",
+  "expected": 195.637669,
+  "tol": 0.01,
+  "note": "aluminium: Q = 195,6 mJ"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'rako'); I(L[1],'magneetti'); window.fy76.finish();",
+  "expr": "window.simState.lampo",
+  "expected": 173.91204,
+  "tol": 0.01,
+  "note": "slit tube: Q = 173,9 mJ"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'rako'); I(L[1],'magneetti'); window.fy76.finish();",
+  "expr": "window.simState.vLoppu",
+  "expected": 1.492915,
+  "tol": 0.01,
+  "note": "slit tube: v at the bottom 1,49 m/s"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'kupari'); I(L[1],'magneetti'); document.querySelector('#sim-root button').click();",
+  "expr": "(() => window.simState.running===true && window.simState.t>0 && window.simState.t<1 ? 1 : 0)()",
+  "expected": 1,
+  "tol": 0,
+  "note": "Pudota starts the run; the time advances"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'kupari'); I(L[1],'magneetti'); document.querySelector('#sim-root button').click();",
+  "expr": "(() => window.simState.Fj>0 && window.simState.Fj<=window.simState.G*1.0001 ? 1 : 0)()",
+  "expected": 1,
+  "tol": 0,
+  "note": "while falling in copper the braking force is positive and at most the weight"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'kupari'); I(L[1],'magneetti'); window.fy76.finish();",
+  "expr": "(() => /6\\{?,\\}?68/.test(document.querySelector('#sim-root .readout').textContent + document.querySelector('#sim-root .readout').innerHTML) ? 1 : 0)()",
+  "expected": 1,
+  "tol": 0,
+  "note": "the readout shows the fall time 6,68 s"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'kupari'); I(L[1],'magneetti'); for (const k of ['muovi','rako','alumiini','kupari']) { I(L[0],k); window.fy76.finish(); } ",
+  "expr": "window.simState.jaljet",
+  "expected": 4,
+  "tol": 0,
+  "note": "each tube keeps its last magnet run as a trace"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'kupari'); I(L[1],'magneetti'); for (const k of ['muovi','rako','alumiini','kupari']) { I(L[0],k); window.fy76.finish(); } ",
+  "expr": "(() => { const L=window.simState.labels; let bad=0; for (let i=0;i<L.length;i++) for (let j=i+1;j<L.length;j++){const a=L[i],b=L[j]; if (a.x0<b.x1&&b.x0<a.x1&&a.y0<b.y1&&b.y0<a.y1) bad++;} const H=document.querySelector('#sim-root canvas'); return bad===0 && L.every(a=>a.x0>=0&&a.y0>=0&&a.x1<=600) ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "with the four traces the curve labels do not overlap each other or anything else"
+ }
+]

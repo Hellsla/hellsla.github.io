@@ -1,0 +1,151 @@
+[
+ {
+  "expr": "(() => { const S=window.simState; return S.theta===10 && Math.abs(S.n2-1.46)<1e-9 && S.n1===1.48 && S.tir===true ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "on load: θ = 10°, n2 = 1,46, n1 = 1,48, the light stays in (must run before any setup)"
+ },
+ {
+  "expr": "(() => { const R=document.querySelectorAll('#sim-root input[type=range]'); return R.length===2 && R[0].min==='0' && R[0].max==='60' && R[0].step==='1' && R[1].min==='1' && R[1].max==='1.47' && R[1].step==='0.01' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "two sliders: θ 0–60° by 1, n2 1,00–1,47 by 0,01"
+ },
+ {
+  "expr": "(() => { const k=[...document.getElementById('sim-root').children].map(e=>e.tagName==='CANVAS'?'canvas':e.className); const c=k.findIndex(x=>x==='canvas'||/sim-canvas/.test(x)); return c>=0 && c<k.indexOf('controls') && k.indexOf('controls')<k.indexOf('readout') ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "DOM order canvas, controls, readout"
+ },
+ {
+  "expr": "(() => { const n=document.querySelectorAll('#sim-root p.note'); return !document.querySelector('#sim-root details') && n.length===1 && n[0].textContent.trim().split(/\\s+/).length<=15 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "no Lisätietoja box; one legend line of at most 15 words"
+ },
+ {
+  "expr": "(() => { const P=window.simAdapter && window.simAdapter.params; return P && Object.keys(P).sort().join(',')==='n2,theta' && P.theta.unit==='°' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "adapter declares theta (°) and n2"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],14); I(R[1],1.46);",
+  "expr": "window.simState.theta1",
+  "expected": 9.4078,
+  "tol": 0.01,
+  "note": "θ = 14°: sin θ1 = sin 14° / 1,48, θ1 = 9,41°"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],14); I(R[1],1.46);",
+  "expr": "window.simState.alpha",
+  "expected": 80.5922,
+  "tol": 0.01,
+  "note": "θ = 14°: α = 90° − θ1 = 80,59°"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],14); I(R[1],1.46);",
+  "expr": "window.simState.alphar",
+  "expected": 80.57,
+  "tol": 0.01,
+  "note": "n2 = 1,46: α_r = sin⁻¹(1,46 / 1,48) = 80,57°"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],14); I(R[1],1.46);",
+  "expr": "window.simState.tir ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "θ = 14°, n2 = 1,46: α > α_r, the light stays in"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],15); I(R[1],1.46);",
+  "expr": "window.simState.tir ? 1 : 0",
+  "expected": 0,
+  "tol": 0,
+  "note": "θ = 15°, n2 = 1,46: α = 79,93° < α_r, light leaks"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],15); I(R[1],1.46);",
+  "expr": "window.simState.alpha",
+  "expected": 79.9285,
+  "tol": 0.01,
+  "note": "θ = 15°: α = 79,93°"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],30); I(R[1],1.0);",
+  "expr": "window.simState.alphar",
+  "expected": 42.5066,
+  "tol": 0.01,
+  "note": "n2 = 1,00 (air): α_r = 42,51°"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],30); I(R[1],1.0);",
+  "expr": "window.simState.tir ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "θ = 30° in air: α = 70,25° > 42,51°, stays in"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],60); I(R[1],1.0);",
+  "expr": "window.simState.tir ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "θ = 60° in air: α = 54,2° > 42,5°, stays in"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],30); I(R[1],1.4);",
+  "expr": "window.simState.alphar",
+  "expected": 71.0754,
+  "tol": 0.01,
+  "note": "n2 = 1,40: α_r = 71,08°"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],30); I(R[1],1.4);",
+  "expr": "window.simState.tir ? 1 : 0",
+  "expected": 0,
+  "tol": 0,
+  "note": "θ = 30°, n2 = 1,40: α = 70,25° < 71,08°, light leaks"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],30); I(R[1],1.33);",
+  "expr": "window.simState.tir ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "θ = 30°, n2 = 1,33: α_r = 63,98°, stays in"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],30); I(R[1],1.46);",
+  "expr": "window.simState.hits",
+  "expected": 3,
+  "tol": 0,
+  "note": "θ = 30°: the ray meets the wall three times in the drawn length"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],0); I(R[1],1.46);",
+  "expr": "window.simState.alpha",
+  "expected": 90,
+  "tol": 0.01,
+  "note": "θ = 0°: the ray runs along the axis, α = 90°"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],0); I(R[1],1.46);",
+  "expr": "window.simState.hits",
+  "expected": 0,
+  "tol": 0,
+  "note": "θ = 0°: no wall hits"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],15); I(R[1],1.46);",
+  "expr": "(() => /vuotaa/.test(document.querySelector('#sim-root .readout').textContent) ? 1 : 0)()",
+  "expected": 1,
+  "tol": 0,
+  "note": "the readout says when light leaks"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],14); I(R[1],1.46);",
+  "expr": "(() => /pysyy/.test(document.querySelector('#sim-root .readout').textContent) && /80\\{?,\\}?59/.test(document.querySelector('#sim-root .readout').innerHTML + document.querySelector('#sim-root .readout').textContent) ? 1 : 0)()",
+  "expected": 1,
+  "tol": 0,
+  "note": "the readout shows α = 80,59° and that the light stays in"
+ }
+]

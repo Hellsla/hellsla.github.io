@@ -206,31 +206,39 @@ ol.lessons .tag{font-size:.8125rem;font-weight:600;color:var(--ink-2);border:1px
    Sovella itsenäisesti, Käsitetakomo and the goals sit side by side under the cards when there is room. */
 main.reading.module-page{max-width:68rem}
 main.module-page>.lead,main.module-page>.mod-status{max-width:var(--measure)}
-h3.ch-theme{font:600 var(--fs-small)/1.3 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--accent-deep);margin:1.6rem 0 .6rem}
-h3.ch-theme:first-of-type{margin-top:.6rem}
-ol.lessons.ch-cards{display:grid;grid-template-columns:1fr;gap:.75rem;border-top:0;margin:0 0 1rem}
-ol.lessons li.ch-card{position:relative;display:grid;grid-template-columns:7.5rem minmax(0,1fr);grid-template-areas:"img num" "img title" "why why" "tags tags";
-  align-items:start;gap:.15rem .9rem;padding:.75rem;border:1px solid var(--line);border-radius:12px;background:var(--surface);box-shadow:0 1px 2px rgba(20,23,30,.04)}
-ol.lessons li.ch-card.soon{background:transparent;border-style:dashed;grid-template-columns:minmax(0,1fr);grid-template-areas:"num" "title" "tags"}
+h3.ch-theme{font:600 var(--fs-small)/1.3 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--accent-deep);margin:1.4rem 0 .6rem}
+ol.lessons.ch-cards>li:first-child>h3.ch-theme{margin-top:.6rem}
+/* One continuous grid (teacher 2026-11-04): each li holds the theme label (only the theme's first chapter has one) and the
+   card (.ch-box). From 40rem each li spans two subgrid rows, label and card, so a row's label strip is as tall as its
+   tallest label and zero in a row without one; the next theme's cards continue beside a short theme without a hole. */
+ol.lessons.ch-cards{display:grid;grid-template-columns:1fr;gap:0;border-top:0;margin:0 0 1rem}
+ol.lessons li.ch-card{display:block;margin:0;padding:0;border:0}
+ol.lessons li.ch-card>.ch-box{position:relative;display:grid;grid-template-columns:7.5rem minmax(0,1fr);grid-template-areas:"img num" "img title" "why why" "tags tags";
+  align-items:start;gap:.15rem .9rem;margin:0 0 .75rem;padding:.75rem;border:1px solid var(--line);border-radius:12px;background:var(--surface);box-shadow:0 1px 2px rgba(20,23,30,.04)}
+ol.lessons li.ch-card.soon>.ch-box{background:transparent;border-style:dashed;grid-template-columns:minmax(0,1fr);grid-template-areas:"num" "title" "tags"}
 ol.lessons li.ch-card .l-num{grid-area:num;text-align:left;flex:none;font:600 var(--fs-small)/1.4 var(--sans);letter-spacing:.06em;text-transform:uppercase;color:var(--copper-ink)}
-ol.lessons li.ch-card>a,ol.lessons li.ch-card>.ch-title{grid-area:title;display:block;min-height:0;padding:0;font:700 1.0625rem/1.35 var(--sans);hyphens:auto;overflow-wrap:break-word}
-ol.lessons li.ch-card.live>a{color:var(--accent-deep);text-decoration:none}
-ol.lessons li.ch-card.live>a::after{content:"";position:absolute;inset:0;border-radius:12px;margin:0}   /* the whole card is the link's target */
-ol.lessons li.ch-card.live>a:focus-visible{outline:none}ol.lessons li.ch-card.live:has(>a:focus-visible){outline:3px solid var(--accent);outline-offset:2px}
-ol.lessons li.ch-card.live:hover{border-color:var(--accent);box-shadow:0 6px 18px rgba(20,23,30,.08)}
-ol.lessons li.ch-card.live:hover>a{text-decoration:underline}
+ol.lessons li.ch-card .ch-box>a,ol.lessons li.ch-card .ch-box>.ch-title{grid-area:title;display:block;min-height:0;padding:0;font:700 1.0625rem/1.35 var(--sans);hyphens:auto;overflow-wrap:break-word}
+ol.lessons li.ch-card.live .ch-box>a{color:var(--accent-deep);text-decoration:none}
+ol.lessons li.ch-card.live .ch-box>a::after{content:"";position:absolute;inset:0;border-radius:12px;margin:0}   /* the whole card is the link's target */
+ol.lessons li.ch-card.live .ch-box>a:focus-visible{outline:none}ol.lessons li.ch-card.live .ch-box:has(>a:focus-visible){outline:3px solid var(--accent);outline-offset:2px}
+ol.lessons li.ch-card.live .ch-box:hover{border-color:var(--accent);box-shadow:0 6px 18px rgba(20,23,30,.08)}
+ol.lessons li.ch-card.live .ch-box:hover>a{text-decoration:underline}
 .ch-card .ch-img{grid-area:img;aspect-ratio:2/1;overflow:hidden;border-radius:8px;background:var(--bg-tint);align-self:start}
 .ch-card .ch-img svg{display:block;width:100%;height:100%}
 .ch-card p.ch-why{grid-area:why;margin:.45rem 0 0;font-size:var(--fs-small);line-height:1.5;color:var(--ink-2)}
 .ch-card p.ch-tags{grid-area:tags;margin:.5rem 0 0;display:flex;flex-wrap:wrap;gap:.35rem}
 .ch-card p.ch-tags .tag{margin:0}
 @container content (min-width:40rem){
-  ol.lessons.ch-cards{grid-template-columns:repeat(auto-fill,minmax(15.5rem,1fr));gap:1rem}
-  ol.lessons li.ch-card.live{grid-template-columns:minmax(0,1fr);grid-template-areas:"img" "num" "title" "why" "tags";grid-template-rows:auto auto auto 1fr auto;padding:0 0 .9rem;overflow:hidden}
-  ol.lessons li.ch-card.live>*:not(.ch-img){margin-inline:1rem}
+  ol.lessons.ch-cards{grid-template-columns:repeat(auto-fill,minmax(15.5rem,1fr));column-gap:1rem}
+  ol.lessons li.ch-card{display:grid;grid-row:span 2;grid-template-rows:subgrid}
+  ol.lessons li.ch-card>h3.ch-theme{grid-row:1;align-self:end;margin:1rem 0 .6rem}
+  ol.lessons.ch-cards>li:first-child>h3.ch-theme{margin-top:.6rem}
+  ol.lessons li.ch-card>.ch-box{grid-row:2;margin-bottom:1rem}
+  ol.lessons li.ch-card.live>.ch-box{grid-template-columns:minmax(0,1fr);grid-template-areas:"img" "num" "title" "why" "tags";grid-template-rows:auto auto auto 1fr auto;padding:0 0 .9rem;overflow:hidden}
+  ol.lessons li.ch-card.live>.ch-box>*:not(.ch-img){margin-inline:1rem}
   ol.lessons li.ch-card.live .l-num{margin-top:.75rem}
   .ch-card .ch-img{border-radius:0;border-bottom:1px solid var(--line-2)}
-  ol.lessons li.ch-card.soon{padding:1rem}
+  ol.lessons li.ch-card.soon>.ch-box{padding:1rem}
 }
 .mod-more{display:grid;grid-template-columns:repeat(auto-fit,minmax(18rem,1fr));gap:0 2.5rem;margin-top:1.4rem}
 .mod-more>section>h2:first-child{margin-top:1rem}
@@ -267,6 +275,8 @@ ul.local-prepare a:hover{text-decoration:underline}
 .bank-reset:hover{background:var(--bg-tint)}
 .bank-count{margin:0;font-size:var(--fs-small);color:var(--ink-2)}
 @media (min-width:48rem){.bank-filter .bank-reset{grid-column:1}.bank-filter .bank-count{grid-column:2 / -1;align-self:center}}
+.bank-random{white-space:nowrap}
+@media (min-width:48rem){.bank-filter .bank-random{grid-column:1 / -1}}
 .bank-none{margin:.6rem 0;padding:.7rem 1rem;border-left:4px solid var(--copper);background:var(--surface);border-radius:0 10px 10px 0}
 ol.bank-list li.bank-item[hidden]{display:none}
 .bank-meta{display:flex;flex-wrap:wrap;align-items:center;gap:.2rem .7rem;flex-basis:100%;margin:.2rem 0 .45rem;font-size:var(--fs-small);line-height:1.45;color:var(--ink-2)}
@@ -669,6 +679,7 @@ details.reveal>summary{min-height:52px;flex-wrap:wrap;gap:.1rem .6rem;font:700 v
 h4.sol-part{margin:1rem 0 .4rem;font:700 var(--fs-body) var(--sans)}
 .reveal-body .steps{padding:.9rem 1.1rem;background:var(--bg);border:1px solid var(--line-2);border-radius:var(--inner-radius);font-size:var(--fs-inner);line-height:1.6}
 .reveal-body .steps p{margin:0 0 .5rem}.reveal-body .steps strong{color:var(--accent-deep)}.reveal-body .steps svg{display:block;margin:.6rem auto}
+.reveal-body .steps .katex svg{margin:0}   /* KaTeX draws \sqrt as a 400em-wide svg clipped by .hide-tail: the figure margin above pushed the surd out of its box (FY7 Sovella visual review 2026-11-04) */
 .rubric{font-size:var(--fs-inner)}.rubric-lead{color:var(--ink-2)}
 .rubric-part{margin:0 0 1rem;padding:.7rem .9rem;background:var(--bg);border:1px solid var(--line-2);border-radius:var(--inner-radius)}
 .rubric-part-h{display:flex;justify-content:space-between;margin:0 0 .4rem;font-weight:700}
@@ -725,6 +736,7 @@ ul.inv-prereq li{margin:0;padding:.5rem 0;border-bottom:1px solid var(--line-2)}
 ul.inv-safety li::marker{color:var(--copper)}
 details.inv-teacher{margin:2.4rem 0 1rem;border:1px solid var(--line);border-radius:12px;background:var(--surface);padding:0 1rem}
 details.inv-teacher>summary{min-height:48px;display:flex;align-items:center;font:700 var(--fs-ui) var(--sans);color:var(--accent-deep);cursor:pointer}
+.unit-credits,.unit-sources,.unit-teacher{max-width:var(--measure)}   /* every course's units (FY9 has no units.css of its own) */
 .investigation table{border-collapse:collapse;max-width:100%;display:block;overflow-x:auto}
 .investigation th,.investigation td{border:1px solid var(--line);padding:.35rem .6rem;min-width:4.5rem}
 .inv-section{scroll-margin-top:var(--sticky-top)}

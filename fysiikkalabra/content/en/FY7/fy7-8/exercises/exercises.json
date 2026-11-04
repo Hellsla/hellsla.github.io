@@ -1,0 +1,105 @@
+{
+  "level1": [
+    {
+      "id": "fy7-8-L1-01",
+      "level": 1,
+      "text": "The primary coil of a doorbell transformer has $1200$ turns and the secondary coil $60$ turns. The primary coil is connected to the mains voltage $230\\,\\text{V}$. How large is the secondary voltage? Assume the transformer to be ideal.",
+      "answer": 11.5,
+      "unit": "V",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-8-L1-02",
+      "level": 1,
+      "text": "The ideal transformer of a garden light lowers the mains voltage $230\\,\\text{V}$ to a voltage of $8.0\\,\\text{V}$. The secondary coil has $40$ turns. How many turns does the primary coil have?",
+      "answer": 1150.0,
+      "unit": "turns",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-8-L1-03",
+      "level": 1,
+      "text": "The local substation of a residential area lowers the voltage of the distribution network, $20\\,\\text{kV}$, to $400\\,\\text{V}$. The current going into the low-voltage network is $250\\,\\text{A}$. How large a current flows in the primary coil of the transformer, when the transformer is assumed to be ideal?",
+      "answer": 5.0,
+      "unit": "A",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-8-L1-04",
+      "level": 1,
+      "text": "The total resistance of the conductors of a distribution line is $2.5\\,\\Omega$, and a current of $120\\,\\text{A}$ flows in the line. How large a power becomes internal energy in the line? Give the answer in kilowatts.",
+      "answer": 36.0,
+      "unit": "kW",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-8-L1-05",
+      "level": 1,
+      "text": "A current of $800\\,\\text{A}$ flows in a $400\\,\\text{kV}$ line of the transmission grid. How large a power does the line transmit? Give the answer in megawatts.",
+      "answer": 320.0,
+      "unit": "MW",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy7-8-L2-01",
+      "level": 2,
+      "text": "A hydroelectric power plant transmits a power of $50\\,\\text{MW}$ at a voltage of $110\\,\\text{kV}$ to a substation. The total resistance of the conductors is $4.0\\,\\Omega$. How large a power becomes internal energy in the line? Give the answer in kilowatts.",
+      "answer": 826.4463,
+      "unit": "kW",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-8-L2-02",
+      "level": 2,
+      "text": "A phone charges at a voltage of $5.0\\,\\text{V}$ and a current of $2.0\\,\\text{A}$. Assume that the charger has an ideal transformer that lowers the mains voltage $230\\,\\text{V}$ directly to the charging voltage. How large a current flows in the primary coil of the transformer? Give the answer in milliamperes.",
+      "answer": 43.4783,
+      "unit": "mA",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-8-L2-03",
+      "level": 2,
+      "text": "A power plant transmits a power of $100\\,\\text{MW}$ at a voltage of $220\\,\\text{kV}$ along a line whose total conductor resistance is $4.8\\,\\Omega$. What percentage of the transmitted power becomes internal energy in the line?",
+      "answer": 0.9917,
+      "unit": "%",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-8-L2-04",
+      "level": 2,
+      "text": "Students built a model of a transmission line from resistance wire and measured how large a power becomes internal energy in the wire at different currents. The graph shows the power loss $P_\\text{h}$ as a function of the current $I$ and a curve fitted to the measurement points. Determine the resistance of the wire. Read the values you need from the curve of the graph.",
+      "figure": "fy7-8/loss-current",
+      "answer": 0.8,
+      "unit": "Ω",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy7-8-L3-01",
+      "level": 3,
+      "text": "The generator of a power plant produces a power of $150\\,\\text{MW}$ at a voltage of $20\\,\\text{kV}$. An ideal transformer raises the voltage to $400\\,\\text{kV}$, and the electricity is transmitted along a line whose total conductor resistance is $8.0\\,\\Omega$. What percentage of the power becomes internal energy in the line?",
+      "answer": 0.75,
+      "unit": "%",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-8-L3-02",
+      "level": 3,
+      "text": "A $400\\,\\text{kV}$ power line is being planned to transmit a power of $400\\,\\text{MW}$. The power loss of the line may be at most $1.0\\,\\%$ of the transmitted power. What is the greatest total resistance the conductors may have?",
+      "answer": 4.0,
+      "unit": "Ω",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-8-L3-03",
+      "level": 3,
+      "text": "An old $220\\,\\text{kV}$ power line is converted into a $400\\,\\text{kV}$ line so that the conductors and their resistance remain the same. How many times the power can the same line transmit, if the power loss is still to be the same share of the transmitted power as before?",
+      "answer": 3.3058,
+      "unit": "times",
+      "tolerance": 0.02
+    }
+  ]
+}

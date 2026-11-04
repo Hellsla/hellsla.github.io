@@ -1,0 +1,105 @@
+{
+  "level1": [
+    {
+      "id": "fy7-9-L1-01",
+      "level": 1,
+      "text": "An FM radio channel transmits at the frequency $94.0\\,\\text{MHz}$. What is the wavelength of the radio wave? The speed of a radio wave in air is $c = 3.00 \\cdot 10^{8}\\,\\text{m/s}$.",
+      "answer": 3.1915,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-9-L1-02",
+      "level": 1,
+      "text": "A microwave oven heats food with microwaves whose frequency is $2.45\\,\\text{GHz}$. What is the wavelength of the microwaves? Give the answer in centimetres.",
+      "answer": 12.2449,
+      "unit": "cm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-9-L1-03",
+      "level": 1,
+      "text": "The surface temperature of human skin is $307\\,\\text{K}$. At what wavelength is the peak of the spectrum of the thermal radiation emitted by the skin, when the skin is assumed to be a black body? Give the answer in micrometres.",
+      "answer": 9.4397,
+      "unit": "µm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-9-L1-04",
+      "level": 1,
+      "text": "The peak of the spectrum of the radiation from a blue-white star is at the wavelength $290\\,\\text{nm}$. What is the surface temperature of the star, when the star is assumed to be a black body?",
+      "answer": 9993.1034,
+      "unit": "K",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-9-L1-05",
+      "level": 1,
+      "text": "The wavelength of the light from a green laser pointer is $532\\,\\text{nm}$. What is the frequency of the light? Give the answer in terahertz ($1\\,\\text{THz} = 10^{12}\\,\\text{Hz}$).",
+      "answer": 563.9098,
+      "unit": "THz",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy7-9-L2-01",
+      "level": 2,
+      "text": "The temperature of the inner surface of the vault of a wood-fired pizza oven is $450\\,{}^\\circ\\text{C}$. At what wavelength is the peak of the spectrum of the radiation emitted by the vault, when the vault is assumed to be a black body? Give the answer in micrometres.",
+      "answer": 4.0075,
+      "unit": "µm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-9-L2-02",
+      "level": 2,
+      "text": "The graph shows the spectrum of the radiation emitted by a glowing body. The body radiates like a black body. Determine the surface temperature of the body. Read the value you need from the graph.",
+      "answer": 2415.0,
+      "unit": "K",
+      "tolerance": 0.02,
+      "figure": "fy7-9/spectrum-task"
+    },
+    {
+      "id": "fy7-9-L2-03",
+      "level": 2,
+      "text": "An iron plate is heated from $27\\,{}^\\circ\\text{C}$ to $327\\,{}^\\circ\\text{C}$. By how many micrometres does the peak of the spectrum of the thermal radiation of the plate shift? The plate is assumed to be a black body.",
+      "answer": 4.8264,
+      "unit": "µm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-9-L2-04",
+      "level": 2,
+      "text": "The peak of the spectrum of the radiation from a star is at a wavelength at which the frequency of the light is $6.0 \\cdot 10^{14}\\,\\text{Hz}$. What is the surface temperature of the star, when the star is assumed to be a black body?",
+      "answer": 5796.0,
+      "unit": "K",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy7-9-L3-01",
+      "level": 3,
+      "text": "Radiation arrives uniformly from every direction in space, and its spectrum corresponds exactly to black-body radiation at the temperature $2.7255\\,\\text{K}$ (Fixsen 2009). The radiation originates from the early universe, and it is called the cosmic background radiation. At what wavelength is the peak of its spectrum? Give the answer in millimetres and deduce which region of the spectrum the radiation belongs to.",
+      "answer": 1.0633,
+      "unit": "mm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-9-L3-02",
+      "level": 3,
+      "text": "A thermal camera detects infrared radiation at wavelengths $8.0\\,\\mu\\text{m}$–$14\\,\\mu\\text{m}$. The wavelength range of the camera has been chosen so that the peak of the spectrum of the radiation from ordinary bodies falls within it. What is the highest temperature at which the peak of a black-body spectrum is still within the wavelength range of the camera? Give the answer in degrees Celsius.",
+      "answer": 89.1,
+      "unit": "°C",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-9-L3-03",
+      "level": 3,
+      "text": "The astronauts of the Apollo missions left reflectors on the surface of the Moon. A laser pulse sent from the Earth is reflected back from them, and the time between the departure and the return of the pulse is $2.56\\,\\text{s}$. How far from the Earth is the reflector? The speed of light is $c = 3.00 \\cdot 10^{8}\\,\\text{m/s}$. Give the answer in kilometres.",
+      "answer": 384000.0,
+      "unit": "km",
+      "tolerance": 0.02
+    }
+  ]
+}

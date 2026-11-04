@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Nopeusvalitsimen levyjen välissä sähkökentän voimakkuus on $3{,}0 \\cdot 10^{4}\\,\\text{V/m}$ ja magneettivuon tiheys $0{,}10\\,\\text{T}$. Millä vauhdilla ionit kulkevat valitsimen läpi suoraan?",
+    "a": "$v = \\tfrac{E}{B} = \\tfrac{3{,}0 \\cdot 10^{4}\\,\\text{V/m}}{0{,}10\\,\\text{T}} = 3{,}0 \\cdot 10^{5}\\,\\text{m/s}$, olipa ionin massa tai varaus mikä tahansa."
+  },
+  {
+    "q": "Protoni ja elektroni lentävät samalla vauhdilla kohtisuoraan samaan magneettikenttään. Miten niiden radat eroavat?",
+    "a": "Radat kaartuvat vastakkaisiin suuntiin, koska varaukset ovat vastakkaismerkkiset. Varausten suuruus on sama, joten säde $r = mv : (qB)$ on verrannollinen massaan: elektronin rata on noin $1840$ kertaa pienempi kuin protonin."
+  }
+]

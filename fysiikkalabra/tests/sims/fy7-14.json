@@ -1,0 +1,228 @@
+[
+ {
+  "expr": "(() => { const S=window.simState; return S.tilanne==='saippua' && S.d===200 && S.lam===550 && S.n===1.33 && S.shifts===1 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "on load: soap film, d = 200 nm, λ = 550 nm, one shift (must run before any setup)"
+ },
+ {
+  "expr": "(() => { const R=document.querySelectorAll('#sim-root input[type=range]'); const S=document.querySelectorAll('#sim-root select'); return R.length===2 && S.length===1 && S[0].options.length===2 && R[0].min==='0' && R[0].max==='1000' && R[0].step==='1' && R[1].min==='400' && R[1].max==='700' && R[1].step==='1' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "one select (two situations), sliders d 0–1000 nm by 1 and λ 400–700 nm by 1"
+ },
+ {
+  "expr": "(() => { const k=[...document.getElementById('sim-root').children].map(e=>e.tagName==='CANVAS'?'canvas':e.className); const c=k.findIndex(x=>x==='canvas'||/sim-canvas/.test(x)); return c>=0 && c<k.indexOf('controls') && k.indexOf('controls')<k.indexOf('readout') ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "DOM order canvas, controls, readout"
+ },
+ {
+  "expr": "(() => { const n=document.querySelectorAll('#sim-root p.note'); return !document.querySelector('#sim-root details') && n.length===1 && n[0].textContent.trim().split(/\\s+/).length<=15 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "no Lisätietoja box; one legend line of at most 15 words"
+ },
+ {
+  "expr": "(() => { const P=window.simAdapter && window.simAdapter.params; return P && Object.keys(P).sort().join(',')==='d,lam,tilanne' && P.d.unit==='nm' && P.lam.unit==='nm' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "adapter declares tilanne, d (nm) and lam (nm)"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S,'saippua'); I(R[0],103); I(R[1],550);",
+  "expr": "window.simState.s",
+  "expected": 273.98,
+  "tol": 0.01,
+  "note": "soap, d = 103 nm: 2nd = 273,98 nm"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S,'saippua'); I(R[0],103); I(R[1],550);",
+  "expr": "window.simState.q",
+  "expected": 0.49814545454545456,
+  "tol": 0.01,
+  "note": "soap, d = 103 nm, λ = 550 nm: 2nd : λ = 0,498"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S,'saippua'); I(R[0],103); I(R[1],550);",
+  "expr": "window.simState.R",
+  "expected": 7.711,
+  "tol": 0.01,
+  "note": "soap, d = 103 nm: the strongest reflection 7,71 %"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S,'saippua'); I(R[0],103); I(R[1],550);",
+  "expr": "window.simState.kind==='vahvistava' ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "soap, quarter-wave layer: constructive"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S,'saippua'); I(R[0],0); I(R[1],550);",
+  "expr": "window.simState.R < 1e-9 ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "soap, d = 0: no reflection (the black film)"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S,'saippua'); I(R[0],0); I(R[1],550);",
+  "expr": "window.simState.kind==='heikentava' ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "soap, d = 0: one shift, destructive"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S,'saippua'); I(R[0],50); I(R[1],550);",
+  "expr": "window.simState.R",
+  "expected": 3.812,
+  "tol": 0.01,
+  "note": "soap, d = 50 nm: R = 3,81 %"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S,'saippua'); I(R[0],207); I(R[1],550);",
+  "expr": "window.simState.R < 0.01 ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "soap, d = 207 nm: practically no reflection"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S,'saippua'); I(R[0],200); I(R[1],532);",
+  "expr": "window.simState.R < 1e-6 ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "soap, d = 200 nm: 2nd = 532 nm, green 532 nm cancelled"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S,'saippua'); I(R[0],200); I(R[1],400);",
+  "expr": "window.simState.R",
+  "expected": 5.8296,
+  "tol": 0.01,
+  "note": "soap, d = 200 nm, λ = 400 nm: R = 5,83 %"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S,'saippua'); I(R[0],200); I(R[1],700);",
+  "expr": "window.simState.R",
+  "expected": 3.7679,
+  "tol": 0.01,
+  "note": "soap, d = 200 nm, λ = 700 nm: R = 3,77 %"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S,'saippua'); I(R[0],200); I(R[1],550);",
+  "expr": "(() => { const c=window.simState.rgb; return c[0]>c[1]+40 && c[2]>c[1]+40 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "soap, d = 200 nm: the colour is purple (red and blue above green)"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S,'saippua'); I(R[0],150); I(R[1],550);",
+  "expr": "window.simState.kind==='osittain' ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "soap, d = 150 nm, λ = 550 nm: 2nd : λ = 0,73, partly out of phase"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S,'pinnoite'); I(R[0],0); I(R[1],550);",
+  "expr": "window.simState.R",
+  "expected": 4.258,
+  "tol": 0.01,
+  "note": "coating, d = 0: bare glass R = 4,26 %"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S,'pinnoite'); I(R[0],0); I(R[1],550);",
+  "expr": "window.simState.kind==='paljas' ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "coating, d = 0: bare glass"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S,'pinnoite'); I(R[0],100); I(R[1],550);",
+  "expr": "window.simState.R",
+  "expected": 1.2602,
+  "tol": 0.01,
+  "note": "coating, d = 100 nm: R = 1,26 %"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S,'pinnoite'); I(R[0],100); I(R[1],550);",
+  "expr": "window.simState.kind==='heikentava' ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "coating, d = 100 nm (≈ λ / 4n): two shifts, destructive"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S,'pinnoite'); I(R[0],100); I(R[1],550);",
+  "expr": "window.simState.shifts",
+  "expected": 2,
+  "tol": 0,
+  "note": "coating: two shifts"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S,'pinnoite'); I(R[0],199); I(R[1],550);",
+  "expr": "window.simState.R",
+  "expected": 4.2579,
+  "tol": 0.01,
+  "note": "coating, d = 199 nm (half-wave): R back to 4,26 %"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S,'pinnoite'); I(R[0],50); I(R[1],550);",
+  "expr": "window.simState.R",
+  "expected": 2.7736,
+  "tol": 0.01,
+  "note": "coating, d = 50 nm: R = 2,77 %"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S,'pinnoite'); I(R[0],100); I(R[1],400);",
+  "expr": "window.simState.R",
+  "expected": 2.2273,
+  "tol": 0.01,
+  "note": "coating, d = 100 nm, λ = 400 nm: R = 2,19 %"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S,'pinnoite'); I(R[0],100); I(R[1],550);",
+  "expr": "window.simState.n",
+  "expected": 1.38,
+  "tol": 0,
+  "note": "coating index 1,38"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S,'pinnoite'); I(R[0],100); I(R[1],550);",
+  "expr": "window.simState.ns",
+  "expected": 1.52,
+  "tol": 0,
+  "note": "glass index 1,52"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S,'saippua'); I(R[0],103); I(R[1],550);",
+  "expr": "window.simState.d",
+  "expected": 103,
+  "tol": 0,
+  "note": "d slider read back"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S,'saippua'); I(R[0],103); I(R[1],612);",
+  "expr": "window.simState.lam",
+  "expected": 612,
+  "tol": 0,
+  "note": "λ slider read back"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S,'saippua'); I(R[0],103); I(R[1],550);",
+  "expr": "(() => /vahvistava/.test(document.querySelector('#sim-root .readout').textContent) && /7\\{?,\\}?71/.test(document.querySelector('#sim-root .readout').innerHTML + document.querySelector('#sim-root .readout').textContent) ? 1 : 0)()",
+  "expected": 1,
+  "tol": 0,
+  "note": "the readout shows R = 7,71 % and constructive interference"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S,'pinnoite'); I(R[0],100); I(R[1],550);",
+  "expr": "(() => /heikentävä/.test(document.querySelector('#sim-root .readout').textContent) && /1\\{?,\\}?26/.test(document.querySelector('#sim-root .readout').innerHTML + document.querySelector('#sim-root .readout').textContent) ? 1 : 0)()",
+  "expected": 1,
+  "tol": 0,
+  "note": "the readout shows R = 1,26 % and destructive interference"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S,'saippua'); I(R[0],103); I(R[1],550);",
+  "expr": "(() => /274\\{?,\\}?0/.test(document.querySelector('#sim-root .readout').innerHTML + document.querySelector('#sim-root .readout').textContent) ? 1 : 0)()",
+  "expected": 1,
+  "tol": 0,
+  "note": "the readout shows 2nd = 274,0 nm"
+ }
+]

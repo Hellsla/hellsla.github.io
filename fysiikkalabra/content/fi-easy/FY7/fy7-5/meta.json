@@ -1,0 +1,41 @@
+{
+  "id": "fy7-5",
+  "course": "FY7",
+  "title": "Sähkömagneettinen induktio",
+  "goals": [
+    "LOPS FY7: sähkömagneettinen induktio",
+    "LOPS FY7: ymmärtää induktioilmiön keskeisen merkityksen sähkömagnetismissa",
+    "Täsmennys: itseinduktio ei kuulu keskeisiin sisältöihin",
+    "Täsmennys: magneettivuo, induktiolaki ja liikkuvan johtimen jännite e = vBl"
+  ],
+  "prerequisites": [
+    "fy7-3"
+  ],
+  "glossary": [
+    "induktio",
+    "magneettivuo",
+    "induktiojännite",
+    "induktiolaki"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false,
+  "key_concepts": [
+    {
+      "term": "induktio",
+      "explain": "Ilmiö, jossa johdinsilmukkaan tai käämiin syntyy jännite, kun sen läpi kulkeva magneettivuo muuttuu."
+    },
+    {
+      "term": "magneettivuo",
+      "explain": "Suure, joka kertoo, kuinka paljon magneettikenttää kulkee silmukan läpi. Se riippuu kentästä, silmukan pinta-alasta ja silmukan asennosta kenttään nähden."
+    },
+    {
+      "term": "induktiojännite",
+      "explain": "Jännite, joka syntyy käämin päiden välille, kun vuo muuttuu. Suljetussa piirissä se ajaa virtaa."
+    },
+    {
+      "term": "induktiolaki",
+      "explain": "Laki, jonka mukaan induktiojännite on sitä suurempi, mitä nopeammin vuo muuttuu ja mitä enemmän käämissä on kierroksia."
+    }
+  ]
+}

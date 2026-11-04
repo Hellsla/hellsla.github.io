@@ -1887,14 +1887,40 @@
       "Monitieteinen ja luova osaaminen",
       "Hyvinvointiosaaminen"
     ],
+    "initialized": "2026-11-03",
+    "scope_notes": [
+      "Plan approved by the teacher 2026-11-03 (16 chapters from the LOPS FY7 contents, not from any timetable): magnets and the field, charged particles in fields, the field of a wire and a coil, the force on a wire with the motor and loudspeaker; induction, Lenz and eddy currents, the generator, the transformer and transmission; electromagnetic radiation with the black-body spectrum; reflection and refraction, dispersion, total internal reflection, interference and diffraction with the grating, thin films, polarisation; an applied chapter (wireless charging, induction hob, fibre link).",
+      "FY7 builds on FY6 (charge, uniform electric field, potential, W = qU, circuits) and FY5 (waves, interference of mechanical waves) without re-teaching them; FY8 owns the photon and the effects of ionising radiation. No self-induction, no para- or diamagnetism (LOPS täsmennys); polarisation qualitative with Brewster's law tan α₁ = n₂ : n₁ as in the teacher's own FY07 sheet.",
+      "Vectors with an overline (\\overline{F}, \\overline{B}, \\overline{v}); force red, velocity blue, acceleration orange as in FY4, current violet as in FY6, the magnetic field its own distinct colour; field into and out of the page drawn with the usual × and • symbols.",
+      "The teacher's own summary sheet FY07_K2026.pdf in the repository root (CC-BY-SA) gives the notation and the extras to include: velocity selector v = E : B, mass spectrometer, moving-wire voltage e = vBl, e(t) = e₀ sin(2πft) with e₀ = NBA · 2πf, effective values, Brewster's law. Repository-root *_Timetable.pdf files follow a commercial textbook and are never a basis. Old sim FY07_hiukkaset_kentassa_kalvo.html in the site root is a starting point for ideas only."
+    ],
+    "themes": [
+      {
+        "title": "Magneettikenttä ja magneettinen voima",
+        "first": "fy7-1"
+      },
+      {
+        "title": "Induktio ja sähköenergia",
+        "first": "fy7-5"
+      },
+      {
+        "title": "Säteily ja valon eteneminen",
+        "first": "fy7-9"
+      },
+      {
+        "title": "Valon aaltoilmiöt",
+        "first": "fy7-13"
+      }
+    ],
     "lessons": [
       {
         "id": "fy7-1",
-        "title": "Magnetismi, magneettinen dipoli ja magneettikenttä",
+        "title": "Magneetit, magneettinen dipoli ja magneettikenttä",
         "goals": [
           "LOPS FY7: ferromagnetismi ja magneettinen dipoli",
           "LOPS FY7: magneettinen vuorovaikutus ja magneettikenttä",
-          "Täsmennys: para- ja diamagneettiset aineet eivät kuulu keskeisiin sisältöihin"
+          "Täsmennys: para- ja diamagneettiset aineet eivät kuulu keskeisiin sisältöihin",
+          "Täsmennys: Maan magneettikenttä ja kompassi"
         ],
         "prerequisites": [],
         "sim": true,
@@ -1911,6 +1937,7 @@
         "title": "Varatun hiukkasen liike sähkö- ja magneettikentässä",
         "goals": [
           "LOPS FY7: varatun hiukkasen liike homogeenisessa sähkö- ja magneettikentässä",
+          "Täsmennys: magneettinen voima F = qvB, ympyrärata, nopeusvalitsin ja massaspektrometri; sähköinen voima ja työ W = qU kerrataan FY6:sta lyhyesti",
           "Temaattinen tarkastelu: hiukkaskiihdytin"
         ],
         "prerequisites": [
@@ -1918,18 +1945,20 @@
         ],
         "sim": true,
         "glossary": [
-          "Lorentzin voima",
           "magneettinen voima",
           "ympyrärata",
+          "nopeusvalitsin",
+          "massaspektrometri",
           "hiukkaskiihdytin"
         ]
       },
       {
         "id": "fy7-3",
-        "title": "Virtajohtimen magneettikenttä ja johtimien välinen voima",
+        "title": "Virtajohtimen ja käämin magneettikenttä",
         "goals": [
           "LOPS FY7: virtajohtimen magneettikenttä ja kahden virtajohtimen välinen voima",
-          "Kokeellisesti: magneettivuon tiheyden määritys käämin sisällä"
+          "Kokeellisesti: magneettivuon tiheyden määritys käämin sisällä",
+          "Täsmennys: suoran johtimen ja käämin magneettikenttä, oikean käden sääntö, sähkömagneetti"
         ],
         "prerequisites": [
           "fy7-1"
@@ -1938,34 +1967,35 @@
         "glossary": [
           "virtajohdin",
           "käämi",
-          "solenoidi",
           "oikean käden sääntö",
-          "ampeeri"
+          "sähkömagneetti"
         ]
       },
       {
-        "id": "fy7-13",
-        "title": "Sähkömoottori ja kaiutin",
+        "id": "fy7-4",
+        "title": "Voima virtajohtimeen: sähkömoottori ja kaiutin",
         "goals": [
           "LOPS FY7: virtajohtimen magneettikenttä ja kahden virtajohtimen välinen voima",
-          "Täsmennys: voima virtajohtimeen magneettikentässä sovelluksina: sähkömoottori ja kaiutin"
+          "Täsmennys: voima F = IlB sin α virtajohtimeen magneettikentässä, kahden virtajohtimen välinen voima; sovelluksina tasavirtamoottori ja kaiutin"
         ],
         "prerequisites": [
           "fy7-3"
         ],
         "sim": true,
         "glossary": [
-          "magneettikenttä",
-          "sähkömoottori"
+          "sähkömoottori",
+          "kaiutin",
+          "virtasilmukka"
         ]
       },
       {
-        "id": "fy7-4",
+        "id": "fy7-5",
         "title": "Sähkömagneettinen induktio",
         "goals": [
           "LOPS FY7: sähkömagneettinen induktio",
           "LOPS FY7: ymmärtää induktioilmiön keskeisen merkityksen sähkömagnetismissa",
-          "Täsmennys: itseinduktio ei kuulu keskeisiin sisältöihin"
+          "Täsmennys: itseinduktio ei kuulu keskeisiin sisältöihin",
+          "Täsmennys: magneettivuo, induktiolaki ja liikkuvan johtimen jännite e = vBl"
         ],
         "prerequisites": [
           "fy7-3"
@@ -1979,13 +2009,13 @@
         ]
       },
       {
-        "id": "fy7-5",
+        "id": "fy7-6",
         "title": "Lenzin laki ja pyörrevirrat",
         "goals": [
           "LOPS FY7: Lenzin laki ja pyörrevirrat"
         ],
         "prerequisites": [
-          "fy7-4"
+          "fy7-5"
         ],
         "sim": true,
         "glossary": [
@@ -1995,15 +2025,15 @@
         ]
       },
       {
-        "id": "fy7-6",
-        "title": "Generaattori ja vaihtovirran synty",
+        "id": "fy7-7",
+        "title": "Generaattori ja vaihtovirta",
         "goals": [
           "LOPS FY7: generaattori, vaihtovirran synty",
           "Täsmennys: käämi pyörivässä magneettikentässä tai pyörivä käämi magneettikentässä; perustellaan, miksi käämiin syntyy sinimuotoinen induktiojännite",
           "Temaattinen tarkastelu: tuulivoima"
         ],
         "prerequisites": [
-          "fy7-5"
+          "fy7-6"
         ],
         "sim": true,
         "glossary": [
@@ -2015,7 +2045,7 @@
         ]
       },
       {
-        "id": "fy7-7",
+        "id": "fy7-8",
         "title": "Muuntaja ja sähköenergian siirto",
         "goals": [
           "LOPS FY7: muuntaja ja energian siirto sähkövirran avulla",
@@ -2023,7 +2053,7 @@
           "Laaja-alainen: yhteiskunnallinen osaaminen"
         ],
         "prerequisites": [
-          "fy7-6"
+          "fy7-7"
         ],
         "sim": true,
         "glossary": [
@@ -2035,15 +2065,15 @@
         ]
       },
       {
-        "id": "fy7-8",
-        "title": "Sähkömagneettinen säteily, spektri ja mustan kappaleen säteily",
+        "id": "fy7-9",
+        "title": "Sähkömagneettinen säteily ja mustan kappaleen spektri",
         "goals": [
           "LOPS FY7: sähkömagneettinen säteily ja sen spektri sekä mustan kappaleen säteilyn spektri",
           "LOPS FY7: tunnistaa sähkömagneettisen säteilyn lähteitä ja vaikutuksia",
           "Täsmennys: lähteinä kiihtyvässä liikkeessä oleva varattu hiukkanen ja kuuma kappale; mustan kappaleen säteilyn spektri riippuu vain pintalämpötilasta"
         ],
         "prerequisites": [
-          "fy7-6"
+          "fy7-7"
         ],
         "sim": true,
         "glossary": [
@@ -2055,7 +2085,7 @@
         ]
       },
       {
-        "id": "fy7-9",
+        "id": "fy7-10",
         "title": "Valon heijastuminen ja taittuminen",
         "goals": [
           "LOPS FY7: valon heijastuminen, taittuminen",
@@ -2063,7 +2093,7 @@
           "Kokeellisesti: valon heijastumisen ja taittumisen tutkiminen rajapinnassa"
         ],
         "prerequisites": [
-          "fy7-8"
+          "fy7-9"
         ],
         "sim": true,
         "glossary": [
@@ -2074,14 +2104,14 @@
         ]
       },
       {
-        "id": "fy7-14",
-        "title": "Valon dispersio ja sateenkaari",
+        "id": "fy7-11",
+        "title": "Dispersio: prisma ja sateenkaari",
         "goals": [
           "LOPS FY7: valon heijastuminen, taittuminen ja kokonaisheijastuminen",
           "Täsmennys: taitekerroin riippuu aallonpituudesta, prisma ja sateenkaaren synty"
         ],
         "prerequisites": [
-          "fy7-9"
+          "fy7-10"
         ],
         "sim": false,
         "glossary": [
@@ -2090,14 +2120,14 @@
         ]
       },
       {
-        "id": "fy7-10",
+        "id": "fy7-12",
         "title": "Kokonaisheijastuminen ja valokuitu",
         "goals": [
           "LOPS FY7: kokonaisheijastuminen",
           "Temaattinen tarkastelu: optinen tiedonsiirto"
         ],
         "prerequisites": [
-          "fy7-9"
+          "fy7-10"
         ],
         "sim": true,
         "glossary": [
@@ -2107,7 +2137,7 @@
         ]
       },
       {
-        "id": "fy7-11",
+        "id": "fy7-13",
         "title": "Valon interferenssi ja diffraktio",
         "goals": [
           "LOPS FY7: valon interferenssi ja diffraktio",
@@ -2115,7 +2145,7 @@
           "Täsmennys: saman taajuisten ja samassa vaiheessa olevien lähteiden interferenssikuvio; interferenssi ohuissa kalvoissa"
         ],
         "prerequisites": [
-          "fy7-9"
+          "fy7-10"
         ],
         "sim": true,
         "glossary": [
@@ -2127,14 +2157,14 @@
         ]
       },
       {
-        "id": "fy7-15",
+        "id": "fy7-14",
         "title": "Ohuen kalvon interferenssi",
         "goals": [
           "LOPS FY7: valon interferenssi ja diffraktio",
           "Täsmennys: saippuakalvon värit ja heijastuksenestopinnoite kvalitatiivisesti ja yksinkertaisin laskuin"
         ],
         "prerequisites": [
-          "fy7-11"
+          "fy7-13"
         ],
         "sim": true,
         "glossary": [
@@ -2143,33 +2173,34 @@
         ]
       },
       {
-        "id": "fy7-12",
+        "id": "fy7-15",
         "title": "Valon polarisaatio",
         "goals": [
           "LOPS FY7: valon polarisaatio kvalitatiivisesti",
-          "Täsmennys: polarisaatio eristeestä heijastuessa ja polarisaattorissa"
+          "Täsmennys: polarisaatio polarisaattorissa ja eristeestä heijastuessa, Brewsterin laki"
         ],
         "prerequisites": [
-          "fy7-9"
+          "fy7-10"
         ],
         "sim": true,
         "glossary": [
           "polarisaatio",
           "polarisaattori",
-          "polaroidut aurinkolasit"
+          "polaroidut aurinkolasit",
+          "Brewsterin laki"
         ]
       },
       {
         "id": "fy7-16",
-        "title": "Soveltava tunti: induktio ja valo nykytekniikassa",
+        "title": "Soveltava luku: langaton lataus, induktioliesi ja kuituyhteys",
         "goals": [
           "LOPS FY7: sähkömagneettinen induktio, Lenzin laki ja pyörrevirrat",
           "LOPS FY7: valon heijastuminen, taittuminen ja kokonaisheijastuminen",
           "Täsmennys: soveltava tunti, ei kertausta: moduulin ideat yhdistetään uudessa, arkisessa tilanteessa (langaton lataus, induktioliesi, kuituyhteys)"
         ],
         "prerequisites": [
-          "fy7-5",
-          "fy7-10"
+          "fy7-6",
+          "fy7-12"
         ],
         "sim": false,
         "glossary": []

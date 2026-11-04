@@ -1,0 +1,460 @@
+{
+  "version": 1,
+  "contribution": "An electric current creates a magnetic field: the field of a straight wire goes round the wire ($B = \\mu_0 I : (2\\pi r)$, right-hand rule), the field inside a long coil is almost uniform ($B = \\mu_0 \\tfrac{N I}{l}$) and an iron core turns a coil into an electromagnet; the LOPS measurement of the field of a coil as a function of the current gives $\\mu_0$ with its uncertainty.",
+  "learn": [
+    "use the right-hand rule to work out the direction of the magnetic field of a straight wire and of a coil.",
+    "calculate the magnetic flux density of a straight wire and of a long coil.",
+    "determine the permeability of free space and its uncertainty from a straight line fitted to measurements."
+  ],
+  "prior": [
+    "The direction of a magnetic field is the direction of the north end of a compass needle, and outside a bar magnet the field lines go from the north pole to the south pole (chapter *Magnets, the magnetic dipole and the magnetic field*)",
+    "The unit of magnetic flux density $B$ is the tesla, and the Earth's magnetic field in Finland is about $50\\,\\mu\\text{T}$ (chapter *Magnets, the magnetic dipole and the magnetic field*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "A compass lies on a table, and a north–south copper wire runs above it. When a current of $3\\,\\text{A}$ is switched on in the wire, the needle turns almost across the wire while the wire is directly above the needle. When the direction of the current is reversed, the needle turns the other way, and when the current is switched off, the needle goes back to pointing north. Copper is not a magnetic material: a copper nail does not stick to a magnet.",
+      "question": "Where does the magnetic field that turns the compass come from, and how can the same effect be made so strong that it lifts a scrap car?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Revise: a compass in a magnetic field",
+      "optional": true,
+      "prompt": "A compass is placed next to a bar magnet. In which direction does the north end of the compass needle turn?",
+      "choices": [
+        {
+          "text": "Along the field line, that is, in the direction in which the magnetic field points at the compass.",
+          "correct": true,
+          "feedback": "Correct. A compass is a small magnet that turns to point along the field; that is why it can be used to explore the direction of the field (chapter *Magnets, the magnetic dipole and the magnetic field*). In this lesson the compass will also reveal the field of a current-carrying wire."
+        },
+        {
+          "text": "Always towards the north pole of the magnet, because like poles attract each other.",
+          "feedback": "Like poles repel each other. The north end of the needle turns along the field line, and outside a magnet the field lines go from the north pole to the south pole."
+        },
+        {
+          "text": "Always towards geographic north, because the Earth's field is stronger than the field of the magnet.",
+          "feedback": "Near a magnet its field is usually much stronger than the Earth's field (about $50\\,\\mu\\text{T}$), so the needle turns along the field line of the magnet."
+        },
+        {
+          "text": "Perpendicular to the field lines, because a magnetic force is always perpendicular to the field.",
+          "feedback": "Perpendicularity applies to the force on a moving charge (chapter *A charged particle in electric and magnetic fields*). A compass needle is a magnetic dipole, and it turns to point along the field."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: a stretched coil",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 2
+      },
+      "prompt": "A coil has $200$ turns, its length is $20\\,\\text{cm}$ and a current of $2.0\\,\\text{A}$ flows in it. The coil is stretched to a length of $40\\,\\text{cm}$ so that the turns are evenly spread along the whole length. The current and the number of turns stay the same. How does the magnetic flux density at the centre of the coil change?",
+      "choices": [
+        {
+          "text": "It stays the same, because there are as many turns and as much current as before.",
+          "feedback": "The values of the model contradict this: at the centre of the coil $B$ falls from $2.46\\,\\text{mT}$ to $1.25\\,\\text{mT}$. The field does not depend on the total number of turns but on how close together they are: in the stretched coil there are half as many turns per metre."
+        },
+        {
+          "text": "It is roughly halved, because the turns are now twice as far apart.",
+          "correct": true,
+          "feedback": "The values of the model support this: $B$ falls from $2.46\\,\\text{mT}$ to $1.25\\,\\text{mT}$, and the turn density $n$ is halved from $1000\\,\\tfrac{1}{\\text{m}}$ to $500\\,\\tfrac{1}{\\text{m}}$. The field at the centre is produced mainly by the nearest turns, and they are now farther apart."
+        },
+        {
+          "text": "It increases, because a longer coil is a bigger magnet and its field is more extensive.",
+          "feedback": "The values of the model contradict this: at the centre $B$ falls from $2.46\\,\\text{mT}$ to $1.25\\,\\text{mT}$. The field of a longer coil extends farther, but it is weaker, because the same turns are spread over a greater length."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: the end of the coil",
+      "justify": true,
+      "reveal": {
+        "after": "koe-2",
+        "min": 2
+      },
+      "prompt": "A magnetic field sensor is placed on the axis of the same $20\\,\\text{cm}$ coil. The sensor is moved from the centre of the coil to the end of the coil, to the middle of the opening. How great is the magnetic flux density at the end of the coil compared with the centre?",
+      "choices": [
+        {
+          "text": "Equal, because inside the coil the field is uniform right up to the ends.",
+          "feedback": "The values of the model contradict this: at the centre $B = 2.46\\,\\text{mT}$, at the end only $1.25\\,\\text{mT}$. The field is almost uniform in the middle part, but at the end there are no turns on the other side any more, and the field lines spread out."
+        },
+        {
+          "text": "About half of the value at the centre, because there are turns on one side only.",
+          "correct": true,
+          "feedback": "The values of the model support this: at the centre $B = 2.46\\,\\text{mT}$ and at the end $1.25\\,\\text{mT}$, about half. At the centre there are turns on both sides, at the end on one side only."
+        },
+        {
+          "text": "Almost zero, because the end of the coil is already outside the coil.",
+          "feedback": "The values of the model contradict this: at the end $B = 1.25\\,\\text{mT}$, about half of the value $2.46\\,\\text{mT}$ at the centre. The field weakens quickly only outside the coil: at $2\\,\\text{cm}$ beyond the end it is only about $0.36\\,\\text{mT}$."
+        },
+        {
+          "text": "Greater than at the centre, because the field lines are densest at the poles.",
+          "feedback": "The values of the model contradict this: at the end $B = 1.25\\,\\text{mT}$ is smaller than at the centre, $2.46\\,\\text{mT}$. At the end of the coil the field lines do not get denser but spread out as they turn to the outside."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "A magnetic field sensor moves along the axis of a coil. Change the current, the number of turns, the length of the coil and the position of the sensor, and follow how the magnetic flux density changes.",
+      "howto": "Set the current $I$, the number of turns $N$, the length $l$ of the coil and the position $x$ of the sensor, measured from the centre of the coil. The reading of the sensor is shown above the sensor and in the readouts. The lower graph shows the magnetic flux density $B$ along the whole axis; the light area is the position of the coil, and the circled point is the position of the sensor. The choice of the direction of the current reverses the field and swaps the places of the poles. The speed changes only the pace of the movement of the current markers.",
+      "model": "The radius of the coil is $2.0\\,\\text{cm}$, and the turns are evenly spaced along its whole length. The model calculates the field only on the axis of the coil by adding together the fields of all the turns. The coil has no iron core, and the Earth's magnetic field is not included. The field lines are drawn schematically, and one drawn turn stands for twenty real ones. The readings are values of the model, not measurements.",
+      "calc": "At the centre of the coil and on its axis at a distance $x$ from the centre, the model calculates\n\n$$\\begin{aligned} &B = \\frac{\\mu_0\\, N I}{2 l}\\,(k_1 - k_2) \\\\ &k_1 = \\frac{x + \\tfrac{l}{2}}{\\sqrt{(x + \\tfrac{l}{2})^2 + R^2}} \\\\ &k_2 = \\frac{x - \\tfrac{l}{2}}{\\sqrt{(x - \\tfrac{l}{2})^2 + R^2}} \\end{aligned}$$\n\nwhere $R = 2.0\\,\\text{cm}$ is the radius of the coil and $\\mu_0 = 4\\pi \\cdot 10^{-7}\\,\\tfrac{\\text{Vs}}{\\text{Am}}$. When the coil is much longer than its radius, the value at the centre is almost $B = \\mu_0 \\tfrac{N I}{l}$: for example, with the default values $1.23\\,\\text{mT}$, when the formula for a long coil gives $1.26\\,\\text{mT}$. The turn density is $n = N : l$."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 1: only the length of the coil changes",
+      "intro": "Test prediction 1. The current, the number of turns and the position of the sensor at the centre of the coil stay constant; change only the length of the coil. Record the magnetic flux density at least at the lengths $20\\,\\text{cm}$ and $40\\,\\text{cm}$, and if you wish also at $10\\,\\text{cm}$ and $30\\,\\text{cm}$. Compare $B$ and the turn density $n$.",
+      "initial": {
+        "I": 2,
+        "N": "200",
+        "l": 20,
+        "x": 0,
+        "dir": "1"
+      },
+      "locked": [
+        "I",
+        "N",
+        "x",
+        "dir"
+      ],
+      "vary": "l",
+      "names": {
+        "I": "current",
+        "N": "number of turns",
+        "l": "length of the coil (cm)",
+        "x": "position of the sensor",
+        "dir": "direction of the current"
+      },
+      "units": {
+        "I": "A",
+        "l": "cm",
+        "x": "cm"
+      },
+      "values": {
+        "dir": {
+          "1": "downwards at the front",
+          "-1": "upwards at the front"
+        },
+        "N": {
+          "100": "100 turns",
+          "200": "200 turns",
+          "400": "400 turns"
+        }
+      },
+      "measure": [
+        {
+          "key": "B",
+          "label": "B (mT)"
+        },
+        {
+          "key": "n",
+          "label": "n (1/m)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 2: only the position of the sensor changes",
+      "intro": "Test prediction 2. The length of the coil is $20\\,\\text{cm}$, so its ends are at $x = -10\\,\\text{cm}$ and $x = 10\\,\\text{cm}$. Move only the sensor and record $B$ at least at the centre and at the end of the coil, and if you wish also at $5\\,\\text{cm}$ and $15\\,\\text{cm}$.",
+      "initial": {
+        "I": 2,
+        "N": "200",
+        "l": 20,
+        "x": 0,
+        "dir": "1"
+      },
+      "locked": [
+        "I",
+        "N",
+        "l",
+        "dir"
+      ],
+      "vary": "x",
+      "names": {
+        "I": "current",
+        "N": "number of turns",
+        "l": "length of the coil",
+        "x": "position of the sensor",
+        "dir": "direction of the current"
+      },
+      "units": {
+        "I": "A",
+        "l": "cm",
+        "x": "cm"
+      },
+      "values": {
+        "dir": {
+          "1": "downwards at the front",
+          "-1": "upwards at the front"
+        },
+        "N": {
+          "100": "100 turns",
+          "200": "200 turns",
+          "400": "400 turns"
+        }
+      },
+      "measure": [
+        {
+          "key": "B",
+          "label": "B (mT)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion: what determines the field of a coil?",
+      "after": [
+        "koe-1",
+        "koe-2"
+      ],
+      "prompt": "Write, on the basis of your tables: how did the field at the centre of the coil change when the same coil was stretched to twice its length? What quantity therefore determines the field? How did the field change when the sensor moved from the centre to the end of the coil and beyond it?",
+      "model": "When the coil of $200$ turns was stretched from $20\\,\\text{cm}$ to $40\\,\\text{cm}$, the field at the centre fell to about a half, from $2.46\\,\\text{mT}$ to $1.25\\,\\text{mT}$ in the values of the model. At the same time the turn density $n = N : l$ was halved. So the field is not determined by the total number of turns but by the turn density and the current. In experiment 2 the field stayed almost the same in the middle part of the coil ($2.46\\,\\text{mT}$ at the centre, $2.41\\,\\text{mT}$ at $5\\,\\text{cm}$), was about a half at the end ($1.25\\,\\text{mT}$) and weakened quickly outside the coil. Inside a long coil the field is therefore almost uniform, but not right up to the ends. The model has no iron core and no Earth's field.",
+      "criteria": [
+        "I compare the numbers of experiment 1 and state that doubling the length about halved the field.",
+        "I conclude that the field depends on the turn density $N : l$, not on the total number of turns.",
+        "Using the numbers of experiment 2, I state that the field is almost constant in the middle part and about a half at the end.",
+        "I call the numbers values of the model and mention at least one assumption of the model."
+      ]
+    },
+    {
+      "id": "mittaus",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Measurement: the permeability of free space from a coil",
+      "source": "example",
+      "figure": "fy7-3/coil-fit",
+      "text": "A group measured the magnetic flux density at the centre of a coil with a magnetic field sensor. The coil has $N = 320$ turns, and its length was measured with a ruler: $l = 16.0\\,\\text{cm}$, uncertainty $\\Delta l = 0.2\\,\\text{cm}$. The diameter of the coil is $3.0\\,\\text{cm}$. The current was varied with a power supply, and the readings were recorded at each current.\n\n| $I$ (A) | $B$ (mT) |\n| --- | --- |\n| $0.00$ | $0.04$ |\n| $0.50$ | $1.27$ |\n| $1.00$ | $2.51$ |\n| $1.50$ | $3.69$ |\n| $2.00$ | $4.99$ |\n| $2.50$ | $6.20$ |\n\nVernier Graphical Analysis fitted a straight line $B = A I + B_0$ to the points and gave the slope $A = 2.465\\,\\tfrac{\\text{mT}}{\\text{A}}$, its uncertainty $\\Delta A = 0.012\\,\\tfrac{\\text{mT}}{\\text{A}}$ and the constant term $B_0 = 0.035\\,\\text{mT}$. In real series of measurements the points are not usually exactly on one straight line because of measurement uncertainty.",
+      "question": {
+        "type": "numeric",
+        "prompt": "Determine the permeability of free space $\\mu_0$ from the measurement. Give the answer in the form $\\ldots \\cdot 10^{-6}\\,\\tfrac{\\text{Vs}}{\\text{Am}}$, that is, write the coefficient as your answer.",
+        "answer": 1.23,
+        "unit": "· 10⁻⁶ Vs/(Am)",
+        "tolerance": 0.02,
+        "hints": [
+          "What does the slope $A$ of the line mean in the formula of the coil $B = \\mu_0 \\tfrac{N}{l} I$?",
+          "The slope is $A = \\mu_0 \\tfrac{N}{l}$, so $\\mu_0 = A l : N$. First convert $A$ to the unit $\\tfrac{\\text{T}}{\\text{A}}$ and $l$ to metres.",
+          "$\\mu_0 = 2.465 \\cdot 10^{-3}\\,\\tfrac{\\text{T}}{\\text{A}} \\cdot 0.160\\,\\text{m} : 320$."
+        ],
+        "mistakes": [
+          {
+            "value": 123,
+            "feedback": "The length has stayed in centimetres. Convert $l = 16.0 \\cdot 0.01\\,\\text{m} = 0.160\\,\\text{m}$ before substituting."
+          },
+          {
+            "value": 1233,
+            "feedback": "Check the millitesla: $A = 2.465\\,\\tfrac{\\text{mT}}{\\text{A}} = 2.465 \\cdot 10^{-3}\\,\\tfrac{\\text{T}}{\\text{A}}$, and the answer to write is the coefficient, which is multiplied by $10^{-6}$."
+          }
+        ],
+        "solution": "**Given:** turns $N = 320$, length of the coil $l = 16.0\\,\\text{cm}$, slope of the fitted line $A = 2.465\\,\\tfrac{\\text{mT}}{\\text{A}}$\n\n**Find:** permeability of free space $\\mu_0$ in the unit $\\tfrac{\\text{Vs}}{\\text{Am}}$\n\n**Principle:** At the centre of a long coil $B = \\mu_0 \\tfrac{N}{l} I$, so $B$ is directly proportional to the current and the slope of the line is $\\mu_0 \\tfrac{N}{l}$. The slope is read from the fitted line and not from two measured points, because the line takes all the points into account. The constant term $B_0$ does not affect the slope.\n\n**Reading the graph:** The fitted line passes approximately through the points $(0;\\ 0.04\\,\\text{mT})$ and $(2.5\\,\\text{A};\\ 6.2\\,\\text{mT})$, so the slope is about $(6.2 - 0.04)\\,\\text{mT} : 2.5\\,\\text{A} \\approx 2.46\\,\\tfrac{\\text{mT}}{\\text{A}}$; the exact value from the program is $2.465\\,\\tfrac{\\text{mT}}{\\text{A}}$.\n\n**Formula:** $A = \\mu_0 \\dfrac{N}{l}$, from which $\\mu_0 = \\dfrac{A l}{N}$\n\n**Conversions:** $A = 2.465 \\cdot 10^{-3}\\,\\tfrac{\\text{T}}{\\text{A}}$ and $l = 16.0 \\cdot 0.01\\,\\text{m} = 0.160\\,\\text{m}$. Unit: $\\tfrac{\\text{T}\\cdot\\text{m}}{\\text{A}} = \\tfrac{\\text{Vs}}{\\text{m}^2} \\cdot \\tfrac{\\text{m}}{\\text{A}} = \\tfrac{\\text{Vs}}{\\text{Am}}$.\n\n**Substitution:** $\\mu_0 = \\dfrac{2.465 \\cdot 10^{-3}\\,\\tfrac{\\text{T}}{\\text{A}} \\cdot 0.160\\,\\text{m}}{320} = 1.2326 \\cdot 10^{-6}\\,\\tfrac{\\text{Vs}}{\\text{Am}}$\n\n**Answer:** $\\mu_0 \\approx 1.23 \\cdot 10^{-6}\\,\\tfrac{\\text{Vs}}{\\text{Am}}$, three significant figures like the length $16.0\\,\\text{cm}$.\n\n**Reasonableness:** The table value is $4\\pi \\cdot 10^{-7}\\,\\tfrac{\\text{Vs}}{\\text{Am}} = 1.257 \\cdot 10^{-6}\\,\\tfrac{\\text{Vs}}{\\text{Am}}$. The measurement gives a value about $2\\,\\%$ smaller. The difference is slightly greater than the measurement uncertainty, and its cause is found in the next task. A small difference is to be expected, because at the centre of a short coil the field is slightly smaller than the formula for a long coil gives."
+      }
+    },
+    {
+      "id": "epavarmuus",
+      "stage": "tutki",
+      "type": "numeric",
+      "title": "Uncertainty of the result",
+      "prompt": "Estimate the relative uncertainty of the result $\\mu_0$ of the previous measurement. Take into account the uncertainty of the slope $\\Delta A = 0.012\\,\\tfrac{\\text{mT}}{\\text{A}}$ and the uncertainty of the length $\\Delta l = 0.2\\,\\text{cm}$; the number of turns is known exactly. Add together the relative uncertainties of the factors. Give the answer as a percentage.",
+      "answer": 1.7,
+      "unit": "%",
+      "tolerance": 0.05,
+      "hints": [
+        "The result is $\\mu_0 = A l : N$. When quantities are multiplied or divided, which uncertainties are added together?",
+        "A simple estimate: the relative uncertainty of a product and a quotient is the sum of the relative uncertainties of the factors, $\\tfrac{\\Delta \\mu_0}{\\mu_0} = \\tfrac{\\Delta A}{A} + \\tfrac{\\Delta l}{l}$.",
+        "$\\tfrac{\\Delta A}{A} = 0.012 : 2.465$ and $\\tfrac{\\Delta l}{l} = 0.2 : 16.0$."
+      ],
+      "mistakes": [
+        {
+          "value": 0.49,
+          "feedback": "You took into account only the uncertainty of the slope. The length measured with a ruler is also uncertain: $\\Delta l : l = 0.2\\,\\text{cm} : 16.0\\,\\text{cm} = 1.25\\,\\%$."
+        },
+        {
+          "value": 1.25,
+          "feedback": "You took into account only the uncertainty of the length. Add the relative uncertainty of the slope $0.012 : 2.465 \\approx 0.49\\,\\%$."
+        }
+      ],
+      "solution": "**Given:** $A = 2.465\\,\\tfrac{\\text{mT}}{\\text{A}}$, $\\Delta A = 0.012\\,\\tfrac{\\text{mT}}{\\text{A}}$, $l = 16.0\\,\\text{cm}$, $\\Delta l = 0.2\\,\\text{cm}$, $N = 320$ exactly; from the previous task $\\mu_0 = 1.23 \\cdot 10^{-6}\\,\\tfrac{\\text{Vs}}{\\text{Am}}$\n\n**Find:** relative uncertainty $\\Delta \\mu_0 : \\mu_0$ as a percentage\n\n**Principle:** The result is calculated as a product and a quotient, $\\mu_0 = A l : N$. A simple estimate of the uncertainty is found by adding the relative uncertainties of the factors. The number of turns is counted, so it adds no uncertainty.\n\n**Formula:** $\\dfrac{\\Delta \\mu_0}{\\mu_0} = \\dfrac{\\Delta A}{A} + \\dfrac{\\Delta l}{l}$\n\n**Conversions:** None needed: in each quotient the units cancel, because the numerator and the denominator are in the same unit.\n\n**Substitution:** $\\dfrac{\\Delta \\mu_0}{\\mu_0} = \\dfrac{0.012\\,\\tfrac{\\text{mT}}{\\text{A}}}{2.465\\,\\tfrac{\\text{mT}}{\\text{A}}} + \\dfrac{0.2\\,\\text{cm}}{16.0\\,\\text{cm}} = 0.00487 + 0.0125 = 0.0174$\n\n**Answer:** about $1.7\\,\\%$, two significant figures, because the uncertainty is itself an estimate. So $\\Delta \\mu_0 \\approx 0.017 \\cdot 1.23 \\cdot 10^{-6}\\,\\tfrac{\\text{Vs}}{\\text{Am}} \\approx 0.02 \\cdot 10^{-6}\\,\\tfrac{\\text{Vs}}{\\text{Am}}$ and the result is $\\mu_0 = (1.23 \\pm 0.02) \\cdot 10^{-6}\\,\\tfrac{\\text{Vs}}{\\text{Am}}$.\n\n**Reasonableness:** The measurement of the length is the greatest source of uncertainty, which is plausible: $2\\,\\text{mm}$ is more than one per cent of $16\\,\\text{cm}$. The table value $1.257 \\cdot 10^{-6}\\,\\tfrac{\\text{Vs}}{\\text{Am}}$ lies slightly outside the interval $1.21$–$1.25$. The difference points to a systematic error: the diameter of the coil is $3.0\\,\\text{cm}$, so it is not very long compared with its width, and at its centre the field is about $98\\,\\%$ of the value given by the formula for a long coil. When this is taken into account, the result is about $1.25 \\cdot 10^{-6}\\,\\tfrac{\\text{Vs}}{\\text{Am}}$."
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Return to your predictions",
+      "optional": true,
+      "prompt": "Compare your predictions with the values of the model in the experiments and with the formula $B = \\mu_0 \\tfrac{N I}{l}$. Then return to the opening question: where does the field that turns the compass come from, and which three means make the magnet of the crane so strong that it lifts a scrap car?",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2"
+      ]
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the error",
+      "optional": true,
+      "prompt": "A student calculates the magnetic flux density in a coil with $500$ turns, a length of $25\\,\\text{cm}$ and a current of $2.0\\,\\text{A}$. She writes $B = \\mu_0 \\tfrac{N I}{l} = 4\\pi \\cdot 10^{-7}\\,\\tfrac{\\text{Vs}}{\\text{Am}} \\cdot \\tfrac{500 \\cdot 2.0\\,\\text{A}}{25} = 5.0 \\cdot 10^{-5}\\,\\text{T}$ and concludes that the field of the coil is as strong as the Earth's field. What is wrong with the calculation?",
+      "choices": [
+        {
+          "text": "The length has been substituted in centimetres; in metres $l = 0.25\\,\\text{m}$, which gives $B \\approx 5.0\\,\\text{mT}$.",
+          "correct": true,
+          "feedback": "Correct. The unit of $\\mu_0$ contains the metre, so the length must be substituted in metres: $25 \\cdot 0.01\\,\\text{m} = 0.25\\,\\text{m}$. The result becomes a hundred times greater, $5.0\\,\\text{mT}$, which is about a hundred times the Earth's field."
+        },
+        {
+          "text": "The formula $B = \\tfrac{\\mu_0 I}{2\\pi r}$ should have been used for the coil, because a coil is a wound wire.",
+          "feedback": "The formula for a straight wire gives the field around a single straight wire. Inside a coil the fields of the turns strengthen each other, and then the formula $B = \\mu_0 \\tfrac{N I}{l}$ is used. The error is in the unit of the length."
+        },
+        {
+          "text": "The number of turns should have been divided by the length of the coil before multiplying by the current.",
+          "feedback": "The order of calculation does not change the result: $\\tfrac{N}{l} \\cdot I$ and $\\tfrac{N I}{l}$ are the same thing. The error is that the length was substituted in centimetres."
+        },
+        {
+          "text": "There is no error in the calculation; the field of a coil is usually as weak as the Earth's field.",
+          "feedback": "The fields of school coils are typically millitesla, hundreds of times stronger than the Earth's field. Check the units: the unit of $\\mu_0$ requires the length in metres."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply to a new situation",
+      "optional": true,
+      "prompt": "In a laboratory an electron beam is to be studied without the effect of the Earth's magnetic field. The beam travels along the axis of a long coil, and the coil is oriented so that its axis is parallel to the Earth's magnetic field. The length of the coil is $0.80\\,\\text{m}$ and it has $120$ turns. How great a current must flow in the coil so that its field cancels the Earth's magnetic field of $50\\,\\mu\\text{T}$ inside the coil? The coil is much longer than it is wide.",
+      "answer": 0.27,
+      "unit": "A",
+      "tolerance": 0.03,
+      "hints": [
+        "How great must the field of the coil be, and in which direction must it point, for the total field to be zero?",
+        "The magnitude of the field of the coil must be $50\\,\\mu\\text{T}$, opposing the Earth's field. Solve the current from the formula of the coil $B = \\mu_0 \\tfrac{N I}{l}$.",
+        "$I = \\dfrac{B l}{N \\mu_0} = \\dfrac{50 \\cdot 10^{-6}\\,\\text{T} \\cdot 0.80\\,\\text{m}}{4\\pi \\cdot 10^{-7}\\,\\tfrac{\\text{Vs}}{\\text{Am}} \\cdot 120}$"
+      ],
+      "mistakes": [
+        {
+          "value": 26.5,
+          "feedback": "The length has stayed in centimetres. In the formula the length is in metres: $l = 0.80\\,\\text{m}$."
+        },
+        {
+          "value": 3.33,
+          "feedback": "Check $\\mu_0$: it is $4\\pi \\cdot 10^{-7}\\,\\tfrac{\\text{Vs}}{\\text{Am}}$, not $10^{-7}\\,\\tfrac{\\text{Vs}}{\\text{Am}}$."
+        }
+      ],
+      "solution": "**Given:** length of the coil $l = 0.80\\,\\text{m}$, turns $N = 120$, Earth's magnetic field $B_\\text{Earth} = 50\\,\\mu\\text{T}$; the coil is long and its axis is parallel to the Earth's field; $\\mu_0 = 4\\pi \\cdot 10^{-7}\\,\\tfrac{\\text{Vs}}{\\text{Am}}$\n\n**Find:** current $I$ of the coil in amperes\n\n**Principle:** Magnetic fields are added as vectors. When the field of the coil is equal in magnitude and opposite in direction to the Earth's field, the total field inside the coil is zero. The coil is long, so inside it the field is almost uniform and the formula for a long coil holds. The direction of the field is chosen by the direction of the current according to the right-hand rule.\n\n**Formula:** $B = \\mu_0 \\dfrac{N I}{l}$, from which $I = \\dfrac{B l}{N \\mu_0}$, when $B = B_\\text{Earth}$\n\n**Conversions:** $B = 50\\,\\mu\\text{T} = 50 \\cdot 10^{-6}\\,\\text{T}$; the length is already in metres.\n\n**Substitution:** $I = \\dfrac{50 \\cdot 10^{-6}\\,\\text{T} \\cdot 0.80\\,\\text{m}}{4\\pi \\cdot 10^{-7}\\,\\tfrac{\\text{Vs}}{\\text{Am}} \\cdot 120} = 0.2653\\,\\text{A}$\n\n**Answer:** $0.27\\,\\text{A}$, two significant figures like the Earth's field $50\\,\\mu\\text{T}$ and the length $0.80\\,\\text{m}$.\n\n**Reasonableness:** The turn density is $120 : 0.80\\,\\text{m} = 150$ turns per metre. A thousand turns per metre and $1\\,\\text{A}$ give about $1.3\\,\\text{mT}$, so $150$ turns per metre and $0.27\\,\\text{A}$ give about $1.3\\,\\text{mT} \\cdot 0.15 \\cdot 0.27 \\approx 0.05\\,\\text{mT} = 50\\,\\mu\\text{T}$, as it should. The Earth's field is weak, so a small current is enough."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise at three levels. In the level 1 problems the formula of a straight wire or a coil is used directly, in the level 2 problems another quantity is solved from the formula or two steps are combined, and level 3 requires combining fields and reasoning."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Direction of the field",
+      "prompt": "A vertical wire passes through a table top, and a strong current flows up in it. Four compasses are placed on the table around the wire, one in each compass direction. The field of the wire is much stronger than the Earth's field. How do the compass needles settle, seen from above?",
+      "choices": [
+        {
+          "text": "They settle along the tangent of the circle round the wire, and the north ends go round anticlockwise.",
+          "correct": true,
+          "feedback": "Correct. The field lines are circles round the wire. Put the thumb of the right hand up, in the direction of the current, and the fingers curl anticlockwise seen from above."
+        },
+        {
+          "text": "They settle along the tangent of the circle round the wire, and the north ends go round clockwise.",
+          "feedback": "The field goes round the wire, but the direction is wrong. Put the thumb of the right hand up, in the direction of the current: seen from above the fingers curl anticlockwise. The field would go round clockwise if the current flowed down."
+        },
+        {
+          "text": "They point straight away from the wire, like the electric field lines from a charged wire.",
+          "feedback": "The magnetic field lines of a current-carrying wire do not start from the wire; they are closed circles round the wire. That is why the needles settle across the radius."
+        },
+        {
+          "text": "They all point in the same direction, because the field of the wire is uniform, like inside a coil.",
+          "feedback": "The field of a straight wire is not uniform: its direction goes round the wire and its magnitude decreases as the distance grows. A uniform field is found inside a long coil."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Field of a wire",
+      "prompt": "A current of $150\\,\\text{A}$ flows in the cable of a welding machine. How great is the magnetic flux density of the cable at a distance of $2.0\\,\\text{cm}$ from the centre of the cable? The cable is straight, and the return wire is far away. Give the answer in millitesla.",
+      "answer": 1.5,
+      "unit": "mT",
+      "tolerance": 0.02,
+      "hints": [
+        "Which formula gives the field of a straight wire at a distance $r$?",
+        "$B = \\dfrac{\\mu_0 I}{2\\pi r}$, and the distance is substituted in metres.",
+        "$B = \\dfrac{4\\pi \\cdot 10^{-7}\\,\\tfrac{\\text{Vs}}{\\text{Am}} \\cdot 150\\,\\text{A}}{2\\pi \\cdot 0.020\\,\\text{m}}$"
+      ],
+      "mistakes": [
+        {
+          "value": 0.015,
+          "feedback": "The distance has stayed in centimetres. Convert $2.0\\,\\text{cm} = 2.0 \\cdot 0.01\\,\\text{m} = 0.020\\,\\text{m}$."
+        },
+        {
+          "value": 9.42,
+          "feedback": "The $2\\pi$ is missing from the denominator. The field is spread over a circle round the wire, and the circumference of the circle is $2\\pi r$."
+        }
+      ],
+      "solution": "**Given:** current $I = 150\\,\\text{A}$, distance $r = 2.0\\,\\text{cm}$, $\\mu_0 = 4\\pi \\cdot 10^{-7}\\,\\tfrac{\\text{Vs}}{\\text{Am}}$; straight cable, return wire far away\n\n**Find:** magnetic flux density $B$ in millitesla\n\n**Principle:** The cable is straight and much longer than the distance of $2\\,\\text{cm}$, and the return wire is far away, so the formula for a long straight wire holds and no other wire weakens the field.\n\n**Formula:** $B = \\dfrac{\\mu_0 I}{2\\pi r}$\n\n**Conversions:** $r = 2.0 \\cdot 0.01\\,\\text{m} = 0.020\\,\\text{m}$; finally $1\\,\\text{mT} = 10^{-3}\\,\\text{T}$.\n\n**Substitution:** $B = \\dfrac{4\\pi \\cdot 10^{-7}\\,\\tfrac{\\text{Vs}}{\\text{Am}} \\cdot 150\\,\\text{A}}{2\\pi \\cdot 0.020\\,\\text{m}} = 1.5 \\cdot 10^{-3}\\,\\text{T} = 1.5\\,\\text{mT}$\n\n**Answer:** $1.5\\,\\text{mT}$, two significant figures like the distance $2.0\\,\\text{cm}$.\n\n**Reasonableness:** In the formula $\\mu_0 : 2\\pi = 2 \\cdot 10^{-7}\\,\\tfrac{\\text{Vs}}{\\text{Am}}$, so $B = 2 \\cdot 10^{-7} \\cdot 150 : 0.02\\,\\text{T} = 1.5 \\cdot 10^{-3}\\,\\text{T}$. The field is about $30$ times the Earth's field, which fits the fact that a welding cable clearly turns a compass nearby when it carries a direct current."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Explain: the electromagnet of the crane",
+      "optional": true,
+      "prompt": "Explain why the magnet of a scrapyard crane has a coil and an iron core, and why the crane lets the scrap go when the current is switched off. Use the concepts current, magnetic field, magnetic domain and turn density.",
+      "model": "A current in the coil creates a magnetic field, which inside the coil is stronger the greater the current and the turn density $N : l$. In the iron core the field of the coil turns the magnetic domains of the iron to point the same way, so the iron becomes magnetised and its own field is added to the field of the coil: the total field is many times greater. The strong field also magnetises the steel of the scrap, and the magnet attracts it. When the current is switched off, the field of the coil disappears, and the domains of soft iron return almost to disorder, so the magnet loses its pull and the scrap falls. The domains of a permanent magnet stay aligned, and it cannot be switched off.",
+      "criteria": [
+        "I state that the current in the coil creates a magnetic field that grows with the current and the turn density.",
+        "I explain the effect of the iron core with domains: they turn to point the same way and strengthen the field.",
+        "I explain why the field and the pull disappear when the current is switched off.",
+        "I compare the electromagnet with a permanent magnet."
+      ]
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, two quick questions. Answer first yourself and open the answer only then."
+    }
+  ]
+}
