@@ -1,0 +1,10 @@
+[
+  {
+    "q": "The capacity of a battery is marked $2500\\,\\text{mAh}$. How large a charge in coulombs passes through the battery when it discharges from full to empty?",
+    "a": "$2500\\,\\text{mAh} = 2.5\\,\\text{Ah} = 2.5\\,\\text{A} \\cdot 3600\\,\\text{s} = 9000\\,\\text{C}$."
+  },
+  {
+    "q": "What is the difference between a disposable battery and a rechargeable battery, and what happens to the rechargeable battery in terms of energy when it is charged?",
+    "a": "Both change chemical energy into electrical energy, but only the chemical reaction of a rechargeable battery can be reversed. When charging, the charger drives the current through the battery from the positive terminal to the negative terminal, and electrical energy becomes the chemical energy of the battery; part becomes internal energy."
+  }
+]

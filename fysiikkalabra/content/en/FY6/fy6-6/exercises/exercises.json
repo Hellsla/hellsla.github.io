@@ -1,0 +1,105 @@
+{
+  "level1": [
+    {
+      "id": "fy6-6-L1-01",
+      "level": 1,
+      "text": "A USB charger gives a phone a voltage of $5.0\\,\\text{V}$ and a current of $2.4\\,\\text{A}$. How large is the charging power?",
+      "answer": 12.0,
+      "unit": "W",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-6-L1-02",
+      "level": 1,
+      "text": "The resistance of a resistor is $47\\,\\Omega$, and a current of $0.20\\,\\text{A}$ flows through it. How large a power is transformed into internal energy in the resistor?",
+      "answer": 1.88,
+      "unit": "W",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-6-L1-03",
+      "level": 1,
+      "text": "The heating resistor of an electric kettle has a resistance of $26.5\\,\\Omega$, and the kettle is connected to the $230\\,\\text{V}$ mains voltage. How large is the power of the kettle? Give the answer in kilowatts.",
+      "answer": 1.996,
+      "unit": "kW",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-6-L1-04",
+      "level": 1,
+      "text": "An LED lamp with a power of $9.0\\,\\text{W}$ stays lit for $2.0\\,\\text{h}$. How much electrical energy is transformed into other forms of energy in the lamp during this time? Give the answer in kilojoules.",
+      "answer": 64.8,
+      "unit": "kJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-6-L1-05",
+      "level": 1,
+      "text": "The graph shows the power of a resistor as a function of the current. How large is the resistance of the resistor? Read the values you need from the graph.",
+      "figure": "fy6-6/ex-pi",
+      "answer": 5.0,
+      "unit": "Ω",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy6-6-L2-01",
+      "level": 2,
+      "text": "The power of a hair dryer is $1.8\\,\\text{kW}$ when it is connected to the $230\\,\\text{V}$ mains voltage. How large a current flows through the dryer?",
+      "answer": 7.83,
+      "unit": "A",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-6-L2-02",
+      "level": 2,
+      "text": "The resistors $R_1 = 10\\,\\Omega$ and $R_2 = 20\\,\\Omega$ are connected in series to a $12\\,\\text{V}$ voltage source. The resistances of the source and the wires are ignored. How large is the power of the resistor $R_2$?",
+      "answer": 3.2,
+      "unit": "W",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-6-L2-03",
+      "level": 2,
+      "text": "The resistance of a resistor is $1.0\\,\\text{k}\\Omega$, and the manufacturer gives its maximum permitted power as $0.25\\,\\text{W}$. What is the largest voltage that may be across the resistor?",
+      "answer": 15.8,
+      "unit": "V",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-6-L2-04",
+      "level": 2,
+      "text": "An immersion heater has a power of $200\\,\\text{W}$. It heats $0.80\\,\\text{kg}$ of water, initially at a temperature of $20\\,{}^\\circ\\text{C}$, for $5.0\\,\\text{min}$. Assume that all the electrical energy heats the water and that no water evaporates. The specific heat capacity of water is $4190\\,\\tfrac{\\text{J}}{\\text{kg} \\cdot \\text{K}}$. By how much does the temperature of the water rise?",
+      "answer": 17.9,
+      "unit": "K",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy6-6-L3-01",
+      "level": 3,
+      "text": "Two light bulbs marked $230\\,\\text{V}$, $40\\,\\text{W}$ and $230\\,\\text{V}$, $100\\,\\text{W}$ are connected in series to the $230\\,\\text{V}$ mains voltage. Assume that the resistances of the bulbs stay the same as at the rated voltage. How large is the power of the $40\\,\\text{W}$ bulb in this connection?",
+      "answer": 20.4,
+      "unit": "W",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy6-6-L3-02",
+      "level": 3,
+      "text": "A string of Christmas tree lights has $20$ identical bulbs in series, and the string is connected to the $230\\,\\text{V}$ mains voltage. The power of the whole string is $9.2\\,\\text{W}$. How large is the resistance of one bulb when the string is lit?",
+      "answer": 287.5,
+      "unit": "Ω",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-6-L3-03",
+      "level": 3,
+      "text": "Two resistors are connected in parallel to a $12\\,\\text{V}$ voltage source. The resistances of the source and the wires are ignored. The resistance of one resistor is $6.0\\,\\Omega$, and the total power of the resistors is $36\\,\\text{W}$. How large is the resistance of the other resistor?",
+      "answer": 12.0,
+      "unit": "Ω",
+      "tolerance": 0.02
+    }
+  ]
+}

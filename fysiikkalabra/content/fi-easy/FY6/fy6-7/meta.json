@@ -1,0 +1,35 @@
+{
+  "id": "fy6-7",
+  "course": "FY6",
+  "title": "Sähköenergia kotona",
+  "goals": [
+    "LOPS FY6: sähköteho ja Joulen laki",
+    "Temaattinen tarkastelu: yksinkertaiset sähkölaitteet",
+    "Täsmennys: laitteiden teho ja energian kulutus kilowattitunteina, sähkölasku ja säästökeinot"
+  ],
+  "prerequisites": [
+    "fy6-6"
+  ],
+  "glossary": [
+    "sähköteho",
+    "kilowattitunti",
+    "sähköenergia"
+  ],
+  "sim": false,
+  "solutions": "all",
+  "image": false,
+  "key_concepts": [
+    {
+      "term": "sähköteho",
+      "explain": "Sähköteho kertoo, kuinka nopeasti laite ottaa sähköenergiaa verkosta. Teho on jännite kertaa virta. Sen yksikkö on watti."
+    },
+    {
+      "term": "kilowattitunti",
+      "explain": "Kilowattitunti on energian yksikkö. Se on energia, jonka laite käyttää tunnissa, kun sen teho on yksi kilowatti. Sähkölasku lasketaan kilowattitunneista."
+    },
+    {
+      "term": "sähköenergia",
+      "explain": "Sähköenergia on energiaa, jonka laite ottaa sähköverkosta. Sen saa kertomalla laitteen tehon käyttöajalla. Lämmittävässä laitteessa se muuttuu laitteen sisäenergiaksi, joka siirtyy lämpönä ympäristöön."
+    }
+  ]
+}

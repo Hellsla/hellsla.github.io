@@ -123,22 +123,18 @@ def page_form(pg, b, url, acts, page):
 
 
 def export_checks(pg, lid, ex, loc):
-    """The table's export after two measurements (teacher 2026-11-03): both buttons on, the rows kept in localStorage as
-    ruukkilabra:<page>:koe<n>, the CSV named <page>-koe<n>.csv with a BOM, ";" and plain headings (th[data-plain]), the copy
+    """The table's export after two measurements (teacher 2026-11-03; Lataa CSV dropped 2026-11-04): the copy button on, the rows kept in localStorage as
+    ruukkilabra:<page>:koe<n>, plain headings (th[data-plain]), numbers with a decimal comma, the copy
     either on the clipboard ("Kopioitu") or shown in a text field to select."""
     eid = ex["id"]
-    check(f"{eid}: export buttons enabled with measurements", loc.locator(".exp-copy").is_enabled() and loc.locator(".exp-csv").is_enabled())
+    check(f"{eid}: export button enabled with measurements", loc.locator(".exp-copy").is_enabled() and not loc.locator(".exp-csv").count())
     n = pg.evaluate("(id) => [...document.querySelectorAll('.experiment')].indexOf(document.querySelector('#' + id + ' .experiment')) + 1", eid)
     stored = pg.evaluate(f"() => {{ try {{ return JSON.parse(localStorage.getItem('ruukkilabra:{lid}:koe{n}')) }} catch (e) {{ return null }} }}")
     check(f"{eid}: measurements stored as ruukkilabra:{lid}:koe{n}", bool(stored) and len(stored.get("rows", [])) == 2, str(stored)[:200])
     heads = loc.locator(".exp-table thead th").evaluate_all("(ts) => ts.map((t) => t.dataset.plain)")
     check(f"{eid}: every heading has a plain form without LaTeX", all(h and not re.search(r"[$\\{}_^]", h) for h in heads), str(heads))
-    with pg.expect_download() as dl: loc.locator(".exp-csv").click()
-    d = dl.value; raw = pathlib.Path(d.path()).read_bytes(); text = raw.decode("utf-8-sig"); lines = text.strip("\r\n").split("\r\n")
-    nums = [c for line in lines[1:] for c in line.split(";") if re.fullmatch(r"-?\d+(?:[.,]\d+)?", c)]
-    check(f"{eid}: CSV {lid}-koe{n}.csv, BOM, ';', plain headings, decimal comma",
-          d.suggested_filename == f"{lid}-koe{n}.csv" and raw.startswith(b"\xef\xbb\xbf") and lines[0] == ";".join(heads) and len(lines) == 3 and all("." not in c for c in nums),
-          f"{d.suggested_filename} {text[:200]!r}")
+    vals = loc.locator(".exp-table tbody td[data-value]").evaluate_all("(ts) => ts.map((t) => t.dataset.value)")
+    check(f"{eid}: exported numbers with a decimal comma", all("." not in v for v in vals if re.fullmatch(r"-?[\\d.,]+", v)), str(vals[:8]))
     loc.locator(".exp-copy").click(); pg.wait_for_timeout(200)
     said = loc.locator(".exp-export-status").inner_text(); field = loc.locator(".exp-export-text")
     shown = field.count() and field.is_visible() and field.input_value().split("\n")[0] == "\t".join(heads)
@@ -263,7 +259,7 @@ def generic(lid):
             n = pg.evaluate("(id) => [...document.querySelectorAll('.experiment')].indexOf(document.querySelector('#' + id + ' .experiment')) + 1", ex["id"])
             check(f"{ex['id']}: Nollaa clears the stored table and disables the export",
                   pg.evaluate(f"() => {{ try {{ return localStorage.getItem('ruukkilabra:{lid}:koe{n}') }} catch (e) {{ return null }} }}") is None
-                  and loc.locator(".exp-copy").is_disabled() and loc.locator(".exp-csv").is_disabled())
+                  and loc.locator(".exp-copy").is_disabled())
         for a in acts:
             if a["type"] == "numeric": check(f"{a['id']}: numeric form", pg.locator(f"#{a['id']} form.check input").count() == 1)
             if a["type"] == "explain": check(f"{a['id']}: explain form", pg.locator(f"#{a['id']} textarea").count() == 1 and pg.locator(f"#{a['id']} .show-model").count() == 1)
@@ -465,9 +461,8 @@ with sync_playwright() as pw:
     inp.fill("240,0"); n.locator("form.check button").click(); check("decimal comma accepted", "Oikein" in out.inner_text())
     inp.fill("0,24"); n.locator("form.check button").click(); check("after a correct answer a later mistake does not override", "Oikein" in out.inner_text() or "kilowat" in out.inner_text())
     hints = n.locator(".hints details")
-    check("every hint in view, the later ones locked", hints.nth(1).is_visible() and hints.nth(1).get_attribute("data-locked") == "1" and hints.nth(2).get_attribute("data-locked") == "1")
-    hints.nth(1).locator("summary").click(); pg.wait_for_timeout(80); check("a locked hint does not open", not hints.nth(1).evaluate("(d) => d.open"))
-    hints.nth(0).locator("summary").click(); pg.wait_for_timeout(80); check("second hint unlocks after the first is opened", hints.nth(1).get_attribute("data-locked") is None and hints.nth(2).get_attribute("data-locked") == "1")
+    check("every hint in view and unlocked", hints.count() >= 2 and all(hints.nth(k).is_visible() and hints.nth(k).get_attribute("data-locked") is None for k in range(hints.count())))
+    hints.nth(1).locator("summary").click(); pg.wait_for_timeout(80); check("a later hint opens without the first (teacher 2026-11-04)", hints.nth(1).evaluate("(d) => d.open"))
     n2 = pg.locator("#check-2"); i2 = n2.locator("form.check input"); o2 = n2.locator("form.check output")
     i2.fill("100"); n2.locator("form.check button").click(); i2.fill("100"); n2.locator("form.check button").click()
     check("second wrong try points to the solution", "Ei vielä" in o2.inner_text() or "Vastaus" in o2.inner_text(), o2.inner_text())

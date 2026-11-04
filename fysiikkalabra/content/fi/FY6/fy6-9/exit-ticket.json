@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Akun kapasiteetiksi on merkitty $2500\\,\\text{mAh}$. Kuinka suuri varaus coulombeina akun läpi kulkee, kun se purkautuu täydestä tyhjäksi?",
+    "a": "$2500\\,\\text{mAh} = 2{,}5\\,\\text{Ah} = 2{,}5\\,\\text{A} \\cdot 3600\\,\\text{s} = 9000\\,\\text{C}$."
+  },
+  {
+    "q": "Mikä ero on paristolla ja akulla, ja mitä akulle tapahtuu energian kannalta, kun sitä ladataan?",
+    "a": "Kumpikin muuttaa kemiallista energiaa sähköenergiaksi, mutta vain akun kemiallisen reaktion voi kääntää. Ladattaessa laturi ajaa virran akun läpi plusnavalta miinusnavalle, ja sähköenergiaa muuttuu akun kemialliseksi energiaksi; osa muuttuu sisäenergiaksi."
+  }
+]

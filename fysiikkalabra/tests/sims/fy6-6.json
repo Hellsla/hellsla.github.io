@@ -1,0 +1,349 @@
+[
+ {
+  "expr": "(() => { const S=window.simState; return S.U===12 && S.R1===4 && S.R2===8 && S.kytkenta==='sarja' && S.t===0 && S.T1===20 && S.T2===20 && S.running===false ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "on load: U = 12 V, R1 = 4 ohm, R2 = 8 ohm in series, clock stopped at 0 s, both beakers 20,0 C (must run before any setup)"
+ },
+ {
+  "expr": "window.simState.I",
+  "expected": 1.0,
+  "tol": 0.01,
+  "note": "on load, series: I (lesson-answers sarja-I)"
+ },
+ {
+  "expr": "window.simState.U1",
+  "expected": 4.0,
+  "tol": 0.01,
+  "note": "on load, series: U1 (lesson-answers sarja-U1)"
+ },
+ {
+  "expr": "window.simState.U2",
+  "expected": 8.0,
+  "tol": 0.01,
+  "note": "on load, series: U2 (lesson-answers sarja-U2)"
+ },
+ {
+  "expr": "window.simState.P1",
+  "expected": 4.0,
+  "tol": 0.01,
+  "note": "on load, series: P1 (lesson-answers sarja-P1)"
+ },
+ {
+  "expr": "window.simState.P2",
+  "expected": 8.0,
+  "tol": 0.01,
+  "note": "on load, series: P2 (lesson-answers sarja-P2)"
+ },
+ {
+  "expr": "window.simState.P",
+  "expected": 12.0,
+  "tol": 0.01,
+  "note": "on load, series: P (lesson-answers sarja-P)"
+ },
+ {
+  "expr": "window.simState.Psum - window.simState.P",
+  "expected": 0,
+  "tol": 0.001,
+  "note": "on load: P1 + P2 = U I"
+ },
+ {
+  "expr": "(() => { const R=document.querySelectorAll('#sim-root input[type=range]'); const ok=(r,a,b,s)=>r.min===a&&r.max===b&&r.step===s; return R.length===3 && ok(R[0],'1','12','0.5') && ok(R[1],'2','20','1') && ok(R[2],'2','20','1') ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "three sliders: U 1-12 V by 0,5; R1 and R2 2-20 ohm by 1"
+ },
+ {
+  "expr": "(() => { const L=[...document.querySelectorAll('#sim-root select')].map(s=>[...s.options].map(o=>o.value).join(',')); return L.length===2 && L[0]==='sarja,rinnan' && L[1]==='5,15,60' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "selects: connection series/parallel, speed 5/15/60 simulated s per s"
+ },
+ {
+  "expr": "(() => { const b=[...document.querySelectorAll('#sim-root button')].map(x=>x.textContent); const k=[...document.getElementById('sim-root').children].map(e=>e.tagName==='CANVAS'?'canvas':e.className); return b[0]==='Käynnistä' && b[1]==='Nollaa' && k.indexOf('canvas')<k.indexOf('controls') && k.indexOf('controls')<k.indexOf('readout') ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "main button first; DOM order canvas, controls, readout"
+ },
+ {
+  "expr": "(() => { const n=document.querySelectorAll('#sim-root p.note'); return !document.querySelector('#sim-root details') && n.length===1 && n[0].textContent.trim().split(/\\s+/).length<=15 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "no Lisätietoja box; one legend line of at most 15 words"
+ },
+ {
+  "expr": "(() => { const P=window.simAdapter && window.simAdapter.params; return P && Object.keys(P).sort().join(',')==='R1,R2,U,kytkenta' && P.U.unit==='V' && P.R2.unit==='Ω' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "adapter declares U (V), R1 and R2 (ohm) and the connection"
+ },
+ {
+  "expr": "(() => { const c=document.querySelector('#sim-root canvas'); const w=document.getElementById('sim-root').clientWidth; return c.width===600 && c.height===(w<500?660:400) ? 1 : 0; })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "canvas 600x400 on a wide screen, 600x660 (larger labels) under 500 px"
+ },
+ {
+  "expr": "(() => { const t=document.querySelector('#sim-root .readout').textContent; return /Tehot/.test(t) && /Jännitteet/.test(t) ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "the readout shows the voltages and the powers"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],12); I(R[1],4); I(R[2],4); I(S[0],'sarja');",
+  "expr": "window.simState.I",
+  "expected": 1.5,
+  "tol": 0.01,
+  "note": "koe sarja: R2 = 4 ohm, I (lesson-answers koe-sarja-4-I)"
+ },
+ {
+  "expr": "window.simState.P1",
+  "expected": 9.0,
+  "tol": 0.01,
+  "note": "koe sarja: R2 = 4 ohm, P1 (lesson-answers koe-sarja-4-P1)"
+ },
+ {
+  "expr": "window.simState.P2",
+  "expected": 9.0,
+  "tol": 0.01,
+  "note": "koe sarja: R2 = 4 ohm, P2 (lesson-answers koe-sarja-4-P2)"
+ },
+ {
+  "expr": "window.simState.P",
+  "expected": 18.0,
+  "tol": 0.01,
+  "note": "koe sarja: R2 = 4 ohm, P (lesson-answers koe-sarja-4-P)"
+ },
+ {
+  "expr": "window.simState.Psum - window.simState.P",
+  "expected": 0,
+  "tol": 0.001,
+  "note": "koe sarja: R2 = 4 ohm, P1 + P2 = U I"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],12); I(R[1],4); I(R[2],8); I(S[0],'sarja');",
+  "expr": "window.simState.I",
+  "expected": 1.0,
+  "tol": 0.01,
+  "note": "koe sarja: R2 = 8 ohm, I (lesson-answers koe-sarja-8-I)"
+ },
+ {
+  "expr": "window.simState.P1",
+  "expected": 4.0,
+  "tol": 0.01,
+  "note": "koe sarja: R2 = 8 ohm, P1 (lesson-answers koe-sarja-8-P1)"
+ },
+ {
+  "expr": "window.simState.P2",
+  "expected": 8.0,
+  "tol": 0.01,
+  "note": "koe sarja: R2 = 8 ohm, P2 (lesson-answers koe-sarja-8-P2)"
+ },
+ {
+  "expr": "window.simState.P",
+  "expected": 12.0,
+  "tol": 0.01,
+  "note": "koe sarja: R2 = 8 ohm, P (lesson-answers koe-sarja-8-P)"
+ },
+ {
+  "expr": "window.simState.Psum - window.simState.P",
+  "expected": 0,
+  "tol": 0.001,
+  "note": "koe sarja: R2 = 8 ohm, P1 + P2 = U I"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],12); I(R[1],4); I(R[2],16); I(S[0],'sarja');",
+  "expr": "window.simState.I",
+  "expected": 0.6,
+  "tol": 0.01,
+  "note": "koe sarja: R2 = 16 ohm, I (lesson-answers koe-sarja-16-I)"
+ },
+ {
+  "expr": "window.simState.P1",
+  "expected": 1.44,
+  "tol": 0.01,
+  "note": "koe sarja: R2 = 16 ohm, P1 (lesson-answers koe-sarja-16-P1)"
+ },
+ {
+  "expr": "window.simState.P2",
+  "expected": 5.76,
+  "tol": 0.01,
+  "note": "koe sarja: R2 = 16 ohm, P2 (lesson-answers koe-sarja-16-P2)"
+ },
+ {
+  "expr": "window.simState.P",
+  "expected": 7.2,
+  "tol": 0.01,
+  "note": "koe sarja: R2 = 16 ohm, P (lesson-answers koe-sarja-16-P)"
+ },
+ {
+  "expr": "window.simState.Psum - window.simState.P",
+  "expected": 0,
+  "tol": 0.001,
+  "note": "koe sarja: R2 = 16 ohm, P1 + P2 = U I"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],12); I(R[1],4); I(R[2],4); I(S[0],'rinnan');",
+  "expr": "window.simState.I",
+  "expected": 6.0,
+  "tol": 0.01,
+  "note": "koe rinnan: R2 = 4 ohm, I (lesson-answers koe-rinnan-4-I)"
+ },
+ {
+  "expr": "window.simState.P1",
+  "expected": 36.0,
+  "tol": 0.01,
+  "note": "koe rinnan: R2 = 4 ohm, P1 (lesson-answers koe-rinnan-4-P1)"
+ },
+ {
+  "expr": "window.simState.P2",
+  "expected": 36.0,
+  "tol": 0.01,
+  "note": "koe rinnan: R2 = 4 ohm, P2 (lesson-answers koe-rinnan-4-P2)"
+ },
+ {
+  "expr": "window.simState.P",
+  "expected": 72.0,
+  "tol": 0.01,
+  "note": "koe rinnan: R2 = 4 ohm, P (lesson-answers koe-rinnan-4-P)"
+ },
+ {
+  "expr": "window.simState.Psum - window.simState.P",
+  "expected": 0,
+  "tol": 0.001,
+  "note": "koe rinnan: R2 = 4 ohm, P1 + P2 = U I"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],12); I(R[1],4); I(R[2],8); I(S[0],'rinnan');",
+  "expr": "window.simState.I",
+  "expected": 4.5,
+  "tol": 0.01,
+  "note": "koe rinnan: R2 = 8 ohm, I (lesson-answers koe-rinnan-8-I)"
+ },
+ {
+  "expr": "window.simState.P1",
+  "expected": 36.0,
+  "tol": 0.01,
+  "note": "koe rinnan: R2 = 8 ohm, P1 (lesson-answers koe-rinnan-8-P1)"
+ },
+ {
+  "expr": "window.simState.P2",
+  "expected": 18.0,
+  "tol": 0.01,
+  "note": "koe rinnan: R2 = 8 ohm, P2 (lesson-answers koe-rinnan-8-P2)"
+ },
+ {
+  "expr": "window.simState.P",
+  "expected": 54.0,
+  "tol": 0.01,
+  "note": "koe rinnan: R2 = 8 ohm, P (lesson-answers koe-rinnan-8-P)"
+ },
+ {
+  "expr": "window.simState.Psum - window.simState.P",
+  "expected": 0,
+  "tol": 0.001,
+  "note": "koe rinnan: R2 = 8 ohm, P1 + P2 = U I"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],12); I(R[1],4); I(R[2],16); I(S[0],'rinnan');",
+  "expr": "window.simState.I",
+  "expected": 3.75,
+  "tol": 0.01,
+  "note": "koe rinnan: R2 = 16 ohm, I (lesson-answers koe-rinnan-16-I)"
+ },
+ {
+  "expr": "window.simState.P1",
+  "expected": 36.0,
+  "tol": 0.01,
+  "note": "koe rinnan: R2 = 16 ohm, P1 (lesson-answers koe-rinnan-16-P1)"
+ },
+ {
+  "expr": "window.simState.P2",
+  "expected": 9.0,
+  "tol": 0.01,
+  "note": "koe rinnan: R2 = 16 ohm, P2 (lesson-answers koe-rinnan-16-P2)"
+ },
+ {
+  "expr": "window.simState.P",
+  "expected": 45.0,
+  "tol": 0.01,
+  "note": "koe rinnan: R2 = 16 ohm, P (lesson-answers koe-rinnan-16-P)"
+ },
+ {
+  "expr": "window.simState.Psum - window.simState.P",
+  "expected": 0,
+  "tol": 0.001,
+  "note": "koe rinnan: R2 = 16 ohm, P1 + P2 = U I"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],12); I(R[1],4); I(R[2],8); I(S[0],'rinnan');",
+  "expr": "window.simState.U1",
+  "expected": 12,
+  "tol": 0.01,
+  "note": "parallel: each resistor has the source voltage"
+ },
+ {
+  "expr": "window.simState.I1",
+  "expected": 3.0,
+  "tol": 0.01,
+  "note": "parallel: I1 = 12 V : 4 ohm = 3,0 A (rinnan-I1)"
+ },
+ {
+  "expr": "window.simState.I2",
+  "expected": 1.5,
+  "tol": 0.01,
+  "note": "parallel: I2 = 12 V : 8 ohm = 1,5 A (rinnan-I2)"
+ },
+ {
+  "expr": "window.simState.I",
+  "expected": 4.5,
+  "tol": 0.01,
+  "note": "parallel: I = I1 + I2 = 4,5 A (rinnan-I)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],6); I(R[1],4); I(R[2],8); I(S[0],'sarja');",
+  "expr": "window.simState.P1",
+  "expected": 1.0,
+  "tol": 0.01,
+  "note": "U = 6,0 V, series 4 + 8 ohm: I = 0,50 A, P1 = 4 ohm · (0,50 A)^2 = 1,0 W (a quarter of the 12 V value)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],12); I(R[1],4); I(R[2],4); I(S[0],'rinnan');",
+  "expr": "window.simState.Rkok",
+  "expected": 2.0,
+  "tol": 0.01,
+  "note": "parallel 4 || 4 ohm: Rkok = 2,0 ohm"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],12); I(R[1],4); I(R[2],8); I(S[0],'sarja'); document.querySelectorAll('#sim-root button')[0].click();",
+  "expr": "(window.simState.running===true && document.querySelectorAll('#sim-root button')[0].textContent==='Pysäytä') ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "Käynnistä starts the clock and turns into Pysäytä"
+ },
+ {
+  "expr": "window.simState.t > 0 && window.simState.T2 > window.simState.T1 && window.simState.T1 > 20 ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "after 0,2 s running in series: time has passed and the 8 ohm beaker is warmer than the 4 ohm one"
+ },
+ {
+  "setup": "document.querySelectorAll('#sim-root button')[1].click();",
+  "expr": "window.simState.t",
+  "expected": 0,
+  "tol": 0.001,
+  "note": "after Nollaa: t = 0"
+ },
+ {
+  "expr": "window.simState.T1",
+  "expected": 20,
+  "tol": 0.001,
+  "note": "after Nollaa: T1 = 20,0 C"
+ },
+ {
+  "expr": "window.simState.running ? 1 : 0",
+  "expected": 0,
+  "tol": 0,
+  "note": "after Nollaa: the clock is stopped"
+ }
+]

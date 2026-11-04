@@ -1,0 +1,9 @@
+ok   lint
+ok   latex
+ok   build
+ok   inquiry (41 passed, 0 failed)
+ok   answer positions
+ok   layout 360 px
+ok   layout 768 px
+ok   layout 1280 px
+fy6-7: reviewed (science=PASS, pedagogy=PASS, visual=PASS); exercises: reviewed (science=PASS, pedagogy=PASS, visual=PASS)
