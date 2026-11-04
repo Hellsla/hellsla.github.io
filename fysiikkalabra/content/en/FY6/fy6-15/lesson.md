@@ -347,7 +347,7 @@ The rating plate of a device has the sign of its **protection class**. A protect
   <foreignObject x="205" y="201.5" width="190" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{double insulation}$</div></foreignObject>
   <foreignObject x="205" y="241.5" width="190" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{hair dryer}$</div></foreignObject>
   <foreignObject x="430" y="165.5" width="140" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{class III}$</div></foreignObject>
-  <foreignObject x="405" y="201.5" width="190" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{protective extra-low voltage}$</div></foreignObject>
+  <foreignObject x="405" y="201.5" width="190" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{extra-low voltage}$</div></foreignObject>
   <foreignObject x="405" y="241.5" width="190" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{cordless drill}$</div></foreignObject>
 </svg>
 
@@ -391,8 +391,8 @@ A fuse does not notice a current through a person: its rated current is amperes,
   <foreignObject x="448" y="257.5" width="76" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$R_\text{body}$</div></foreignObject>
   <line x1="492" y1="192" x2="516" y2="192" stroke="#7048e8" stroke-width="3" stroke-linecap="butt"/>
   <path d="M530,192 L515,199 L515,185 Z" fill="#7048e8" stroke-linejoin="round"/>
-  <foreignObject x="552" y="167.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#7048e8">$I_\text{v}$</div></foreignObject>
-  <foreignObject x="420" y="17.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$I_\text{L} - I_\text{N} = I_\text{v}$</div></foreignObject>
+  <foreignObject x="552" y="167.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#7048e8">$I_\text{fault}$</div></foreignObject>
+  <foreignObject x="420" y="17.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$I_\text{L} - I_\text{N} = I_\text{fault}$</div></foreignObject>
 </svg>
 
 An RCD does not prevent all shocks. If a person touches the line conductor and the neutral conductor at the same time, the current returns along the neutral conductor, and there is no difference between the currents of the line and neutral conductors. For this reason live parts are never touched, even if the circuit has an RCD.
@@ -516,7 +516,7 @@ The table applies to the $50\,\text{Hz}$ alternating current of a home. The usua
   <foreignObject x="210" y="158" width="370" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$30\,\text{mA}\ \ \text{breathing becomes difficult}$</div></foreignObject>
   <line x1="172" y1="152" x2="190" y2="152" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <line x1="190" y1="152" x2="202" y2="126" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <foreignObject x="210" y="111.5" width="370" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$50\,\text{mA}\ \ \text{danger of ventricular fibrillation}$</div></foreignObject>
+  <foreignObject x="210" y="111.5" width="370" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$50\,\text{mA}\ \ \text{danger of fibrillation}$</div></foreignObject>
 </svg>
 
 ## Worked example
