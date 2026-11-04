@@ -992,3 +992,4 @@ body:has(main.about-page){background-image:none}
 .about-page h2{color:var(--kr-navy);padding-left:.75rem;border-left:4px solid var(--kr-pink)}
 .about-page strong{color:var(--kr-navy)}
 @media (max-width:600px){.about-page .about-hero{padding:1.5rem 1.25rem 1.25rem}.about-page .about-logo{width:104px;margin-bottom:1.25rem}}
+.about-page .about-tag{display:inline-block;margin:1.5rem 0 0;padding:.3rem .9rem;border-radius:999px;background:var(--kr-pink);color:var(--kr-navy);font:700 var(--fs-ui) var(--sans);letter-spacing:.01em}

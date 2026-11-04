@@ -35,3 +35,5 @@ Olen **Lauri Hellsten**. Olen fysiikan, kemian ja matematiikan opettaja Espoosta
 Ruukkilabra on oma oppimateriaaliprojektini. Sen lähtökohta on Kiviruukin lukion tuleva opetus. Materiaali on silti tarkoitettu myös muille opettajille ja opiskelijoille.
 
 Ruukkilabra kehittyy koko ajan. Otan mielelläni vastaan palautetta ja kehitysehdotuksia.
+
+<p class="about-tag">#ruukkirocks</p>
