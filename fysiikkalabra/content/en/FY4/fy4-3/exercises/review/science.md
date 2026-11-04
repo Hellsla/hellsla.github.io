@@ -1,15 +1,15 @@
-VERDICT: PASS
-CONTENT-HASH: a6b5805555cd9b85
-Mode: full
-Round: 1
+VERDICT: FAIL
+CONTENT-HASH: 976d1bb4784c43af
 
 ## Blocking
-
-## Fixed
-solutions.md: 'equally large as' changed to the idiomatic 'as large as' (five places); no numbers or formulas touched.
+- solutions.md:265–279 (L3-04, both `voimakuvio` blocks; renderer scripts/fbdspec.py `draw`) — A. $\overline{T}$ on the cart (450 N) and $\overline{F}_\text{road}$ on the horse (480 N) have their heads at x = 642 in a 600-wide viewBox, so both forward arrows end without a head at the figure's edge. The two forces that drive the paradox show no direction. — Fix the crop in `draw` so that every head and label is inside the viewBox, then re-render.
 
 ## Polish
-L1-06 en keeps 'velocity' for the Finnish 'nopeus' (consistent with the chapter).
+- solutions.md:265–279 (L3-04) — only horizontal forces are drawn, and the cart's diagram has no surface. Add "the weight and the normal force of the road cancel each other and are not drawn", as in L1-04.
+- solutions.md:227 (L1-08) — the moved Principle text is correct. "that is, against the child" is unclear; "(the rope pulls the child backwards)" is clearer.
 
 ## Checked
-Compared en exercises.json and solutions.md with the reviewed Finnish for the 8 new tasks (L1-06..08, L2-05..07, L3-04..05): ids, kind, level, answers (text and numeric), units, tolerances, correct flags, choice order and feedback, data tables (all cells) and every number match; decimal point in JSON and LaTeX; formulas identical. No Finnish left in en. Terms right: first law, third law, normal force, reaction force, net force, rolling resistance, air resistance, force sensor, motion sensor. check_i18n en 0 errors.
+- The labels now match the text: with figures.json `F_k→F_dc`, `F_h→F_dh`, `F_t→F_road` and spec `F_r`, the diagrams show T, F_r, F_dc and F_road, T, F_dh, as in the Formula step. (The committed version showed the 410 N rolling resistance as F_d, a drag; the working-tree edit fixes this.)
+- L3-04: cart 450 − 410 − 40 = 0 and horse 480 − 450 − 30 = 0. Friction on the hooves points forward, T appears on separate bodies, and a = 0.
+- The answers agree with the Finnish set (same data, recomputed): 450 N / 480 N, 38 N, and the rest.
+- The hash changed during the review because of an uncommitted developer edit. This report judges 976d1bb4784c43af.

@@ -1,20 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: e6361e81ae93222a
+CONTENT-HASH: d0a3da0eb8c360f9
 
 ## Blocking
 
 ## Polish
-- exercises.json L2-07: the ring now lies on a horizontal table. Static friction from the table could take part of the balance, so F₃ would not be exactly the sum. Fix: add "kitka renkaan ja pöydän välillä on pieni", or name it as a cause in c).
-- solutions.md:239, 278 "Kuvaajan lukeminen": the values come from a table, so "Taulukon lukeminen" would fit better.
-- Plan: level 1 asks for an MC with "fbd: select" and level 3 for a "draw" task. The new tasks use identify/equations. This is for pedagogy to judge.
+- solutions.md:244–257 (L2-05) — the diagram is drawn for the first measurement (3,0 N, 2,5 N, 3,9 N at 39,8°), but the text does not say so. Add "(ensimmäinen mittaus)" to the Voimakuvio sentence.
+- solutions.md:291–304 (L2-07) — the diagram is in the table's plane, seen from above, so the weight and the support force are not in it. Say "ylhäältä katsottuna".
+- solutions.md:225 (L1-07) — G = N = 600 N is invented, because the mass is not given. Horizontal and vertical forces are drawn on separate scales ("eri mittakaavassa"), so no wrong ratio shows. If the spec could draw "equal, size unknown", that would be cleaner.
+- Carried from the previous round: L2-07 table friction; "Kuvaajan lukeminen" → "Taulukon lukeminen".
 
 ## Checked
-- Round 2: the blocking item is fixed. The L2-05 text now says "renkaan massa ja paino jätetään huomiotta", and solutions.md:238 refers to it.
-- Round-2 polish items fixed: L2-07 states the plane (horizontal table, weight balanced by the support force), L3-04 d) now gives 1,9·10² N, and the L1-08 "N = 0" feedback uses the friction argument.
-- I recomputed all answers in one script: 55 N, 40,1°, 2,5 m/s², 12,17 N, 83,9 N, 14,38 m. All match answers.py and the solutions.
-- L2-05 data: √(F_A² + F_C²) gives 3,91 / 5,89 / 7,87 N, against the readings 3,9 / 5,9 / 7,9 N.
-- L2-07 data: the computed sums 13,5 / 12,2 / 10,0 N are close to the table's 13,4 / 12,3 / 10,1 N.
-- L3-04: a fit gives a = 0,803 m/s², so F_μ = 83,8 N, and N = 185 N.
-- L3-05: a = 1,20 / 0 / −1,19 m/s², h = 14,4 m, and the diagram is right.
-- MC L1-06 and L1-08: one correct option each, and every distractor is really wrong.
-- The hash was the same at the start and at the end.
+- L1-07: F₁ 120 and F₂ 85 are pushes ending on the body, and F_μ 150 runs from the rear bottom corner along the floor. ΣF_x = 55 N forward, matching `a oikea` and the answer 55 N. G and N are equal. F_μ is longer than either push and shorter than their sum, as the text says (rendered lengths 175 : 125 : 220).
+- L2-05: arctan(2,5/3,0) = 39,8° and √(3,0² + 2,5²) = 3,91 N ≈ 3,9 N. The dashed components equal F_A and F_C in length, F_A points left, F_C down, F_B up to the right, and no weight is drawn (as the task states).
+- L2-07: F₁ + F₂ (60°) = (10,0; 6,93), with |Σ| = 12,17 N at 34,7°, so F₃ = 12,2 N at 214,7° closes the sum. The F₂ components are dashed. The table's 12,3 N is the measured value, and drawing the computed 12,2 N is right.
+- Every equation follows the drawn axes and signs. No velocity or acceleration is drawn as a force, and no component is double-counted.
+- The hash was d0a3da0eb8c360f9 at the start and at the end.
