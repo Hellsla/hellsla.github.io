@@ -4468,7 +4468,7 @@
   },
   {
     "term": "röntgensäteily",
-    "definition": "Suurienerginen fotonisäteily, joka syntyy, kun nopeat elektronit jarruttavat aineessa, esimerkiksi röntgenputken anodissa. Se on ionisoivaa ja vaimenee aineessa kuten gammasäteily; kuvauksessa fotonien energia on tyypillisesti kymmeniä kiloelektronivoltteja.",
+    "definition": "Suurienerginen fotonisäteily, joka syntyy, kun nopeat elektronit jarruttavat aineessa (jarrutussäteily) tai kun ne irrottavat elektronin atomin sisimmältä kuorelta ja ulomman kuoren elektroni siirtyy sen paikalle (karakteristinen röntgensäteily), esimerkiksi röntgenputken anodissa. Se on ionisoivaa ja vaimenee aineessa kuten gammasäteily; kuvauksessa fotonien energia on tyypillisesti kymmeniä kiloelektronivoltteja.",
     "lessons": [
       "fy8-14"
     ],

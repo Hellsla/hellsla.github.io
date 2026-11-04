@@ -279,14 +279,14 @@ Käänteinen ilmiö on **parinmuodostus**: atomiytimen lähellä fotoni voi muut
 ### Neljä perusvuorovaikutusta
 Kaikki tunnetut voimat palautuvat neljään **perusvuorovaikutukseen**. Standardimallin mukaan vuorovaikutus välittyy **välittäjähiukkasten** avulla: hiukkaset lähettävät ja absorboivat välittäjähiukkasia, ja tämä muuttaa niiden liiketilaa.
 
-| Vuorovaikutus | Välittäjä | Vaikuttaa | Kantama |
-| --- | --- | --- | --- |
-| vahva | gluoni $g$ | kvarkit | $10^{-15}\,\text{m}$ |
-| sähkömagneettinen | fotoni $\gamma$ | varatut hiukkaset | rajaton |
-| heikko | $W^+$, $W^-$, $Z^0$ | kvarkit ja leptonit | $10^{-18}\,\text{m}$ |
-| gravitaatio | gravitoni (hypoteettinen) | kaikki | rajaton |
+| Vuorovaikutus | Välittäjä | Vaikuttaa |
+| --- | --- | --- |
+| vahva | gluoni $g$ | kvarkit |
+| sähkömagneettinen | fotoni $\gamma$ | varatut hiukkaset |
+| heikko | $W^+$, $W^-$, $Z^0$ | kvarkit ja leptonit |
+| gravitaatio | gravitoni (hypoteettinen) | kaikki |
 
-Taulukon kantamat ovat suuruusluokkia. Gravitonia ei ole havaittu, eikä se kuulu standardimalliin. **Fotoni** on sähkömagneettisen vuorovaikutuksen välittäjähiukkanen. Kun kaksi elektronia hylkii toisiaan, ne vaihtavat fotoneja. Sama hiukkanen on valon kvantti (luku *Valosähköinen ilmiö ja fotoni*), mutta vuorovaikutuksessa vaihdettuja fotoneja ei havaita valona. **Vahva vuorovaikutus** sitoo kvarkit hadroneiksi ja vaikuttaa myös nukleonien välillä ytimessä. **Heikko vuorovaikutus** voi muuttaa kvarkin lajin, ja se aiheuttaa beetahajoamisen. **Gravitaatio** on perusvuorovaikutuksista heikoin: kahden protonin välinen sähköinen hylkimisvoima on noin $10^{36}$ kertaa suurempi kuin niiden välinen gravitaatiovoima. Gravitaation välittäjää gravitonia ei ole havaittu, eikä gravitaatio kuulu standardimalliin.
+Sähkömagneettisen vuorovaikutuksen ja gravitaation kantama on rajaton. Vahva vuorovaikutus ulottuu vain noin $10^{-15}\,\text{m}$:n ja heikko noin $10^{-18}\,\text{m}$:n päähän (suuruusluokkia). **Fotoni** on sähkömagneettisen vuorovaikutuksen välittäjähiukkanen. Kun kaksi elektronia hylkii toisiaan, ne vaihtavat fotoneja. Sama hiukkanen on valon kvantti (luku *Valosähköinen ilmiö ja fotoni*), mutta vuorovaikutuksessa vaihdettuja fotoneja ei havaita valona. **Vahva vuorovaikutus** sitoo kvarkit hadroneiksi ja vaikuttaa myös nukleonien välillä ytimessä. **Heikko vuorovaikutus** voi muuttaa kvarkin lajin, ja se aiheuttaa beetahajoamisen. **Gravitaatio** on perusvuorovaikutuksista heikoin: kahden protonin välinen sähköinen hylkimisvoima on noin $10^{36}$ kertaa suurempi kuin niiden välinen gravitaatiovoima. Gravitaation välittäjää gravitonia ei ole havaittu, eikä gravitaatio kuulu standardimalliin.
 
 <svg data-fig="valittaja" viewBox="0 0 600 330" role="img" aria-label="Kaavakuva sähkömagneettisesta vuorovaikutuksesta, aika kulkee alhaalta ylös. Kaksi elektronia lähestyy toisiaan alhaalta. Kohdassa, jossa ne ovat lähimpänä, niiden välillä kulkee oranssi aaltoviiva, vaihdettu fotoni gamma. Sen jälkeen elektronit loittonevat toisistaan: ne hylkivät toisiaan. Vasemmassa reunassa ylöspäin osoittava nuoli, aika." style="max-width:100%;font-size:24px">
   <line x1="46" y1="300" x2="46" y2="72" stroke="#6b7480" stroke-width="2.5" stroke-linecap="butt"/>
