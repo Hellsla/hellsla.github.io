@@ -1,8 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: f5f87a72cec845ae
-Round: 3
+CONTENT-HASH: fa39dc3b4232eb3a
+Round: 4
 
-Round 2 had no Blocking items. The round-2 Polish on L3-05 b) is fixed: the tolerance is now 0.01, and b) says "Käytä a)-kohdan pyöristämättömiä massoja". Nothing else changed (`git diff HEAD~1`).
+Round 3 had no Blocking items. Only change since round 3: the L3-05 "Vastaus:" line states the answer-box value (`git show HEAD`).
 
 ## Blocking
 
@@ -11,6 +11,7 @@ Round 2 had no Blocking items. The round-2 Polish on L3-05 b) is fixed: the tole
 - L3-04 and L3-05 — both still follow the same chain (m = E/(ηH), then η falls), and the plan's level 3 asks for "polttoainemäärä ja päästöt" (carried over). Add an emissions part (factor × fuel energy) to one of them when the set is next edited.
 
 ## Checked
+- Round 3 -> 4 change (only solutions.md, L3-05 "Vastaus:" line, now "vastauslaatikkoon kohdan b) tulos $940\,\text{kg}$."): 940 kg is part b)'s result (3428,6 - 2491,3 = 937,2 kg -> 940 kg, two significant figures) and equals the answer-box value 940 (tolerance 0,01); wording is clear and consistent with a)-d) below it. Mode: full.
 - L3-05 recomputed: wood 3428,6 kg, pellets 2491,3 kg, difference 937,2 kg. That is 0,3 % from 940, inside 0,01. The 3-figure a) values (3430 − 2490 = 940) also pass. The 2-figure values (3400 − 2500 = 900, −4,3 %) fail, as they should now that b) says to use unrounded masses.
 - L3-05 solution: the Sijoitus difference 3429 − 2491 = 938 kg, the Vastaus 940 kg and answer 940 agree. The b) instruction does not conflict with the 2-figure rounding in the a) Vastaus.
 - L3-05 c), d) and Järkevyys are unchanged and still correct: 2824 kg, +330 kg, 1,13 = 0,85 : 0,75, and 43 : 15 = 2,9.

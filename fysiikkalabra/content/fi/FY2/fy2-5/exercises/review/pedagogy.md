@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: f5f87a72cec845ae
-Round: 3
+CONTENT-HASH: fa39dc3b4232eb3a
+Round: 4
 
 ## Blocking
 - none
@@ -12,6 +12,7 @@ Round: 3
 - docs/exercise-bank/FY2.md — the L2 "lämpöarvot ja CO2-päästökertoimet" table is not realised in fy2-5 (emissions belong to fy2-8); note it in the plan.
 
 ## Checked
+- Round 3 -> 4 change (only solutions.md, L3-05 "Vastaus:" line, now "vastauslaatikkoon kohdan b) tulos $940\,\text{kg}$."): 940 kg is part b)'s result (3428,6 - 2491,3 = 937,2 kg -> 940 kg, two significant figures) and equals the answer-box value 940 (tolerance 0,01); wording is clear and consistent with a)-d) below it. Mode: delta.
 - Round 2 fix, L3-05: b) now says "Käytä a)-kohdan pyöristämättömiä massoja"; exact difference 3428,6 - 2491,3 = 937,2 kg, solution 938 kg, answer 940 kg with tolerance 0,01 (930,6-949,4) accepts both; closed.
 - L3-05 c) 2824 kg (0,85:0,75 = 1,13 check), d) oil 43:15 = 2,9 reasoning correct; answer lines a-d separate.
 - Round 1 items (L1-06 distractors, L3-05 answer split, correct option not B) remain fixed.
