@@ -46,8 +46,7 @@
     {
       "kind": "physics",
       "level": "helpful",
-      "text": "Ääni aaltoliikkeenä ja äänen eteneminen",
-      "missing": "FY5: Ääni aaltoliikkeenä: ominaisuudet ja eteneminen",
+      "target": "fy5-14",
       "why": "Tarvittava lyhyt selitys äänen etenemisestä ja sen nopeuteen vaikuttavista tekijöistä on tällä sivulla kohdassa Teoriaa lyhyesti."
     },
     {
@@ -59,8 +58,7 @@
     {
       "kind": "physics",
       "level": "helpful",
-      "text": "Äänen voimakkuus ja kuulon suojaaminen",
-      "missing": "FY5: Äänen intensiteettitaso ja kuulon suojaaminen",
+      "target": "fy5-15",
       "why": "Kovia ääniä ei tehdä kenenkään korvan lähellä; turvallisuusohjeet ovat tällä sivulla."
     },
     {

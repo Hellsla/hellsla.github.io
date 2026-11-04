@@ -41,15 +41,13 @@
     {
       "kind": "physics",
       "level": "essential",
-      "text": "Valon taittuminen, taitekerroin ja taittumislaki",
-      "missing": "FY7: Valon heijastuminen ja taittuminen",
+      "target": "fy7-10",
       "why": "Taittumislaki on malli, jota mittauksilla testataan; lyhyt selitys on tällä sivulla kohdassa Teoriaa lyhyesti."
     },
     {
       "kind": "physics",
       "level": "extension",
-      "text": "Kokonaisheijastus ja rajakulma",
-      "missing": "FY7: Kokonaisheijastuminen ja valokuitu",
+      "target": "fy7-12",
       "why": "Laajennuksessa tarvittava selitys on laajennuksen alussa."
     },
     {

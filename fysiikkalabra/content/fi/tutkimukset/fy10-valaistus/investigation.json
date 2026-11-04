@@ -42,14 +42,13 @@
       "kind": "physics",
       "level": "essential",
       "text": "Valaistusvoimakkuus ja valon heikkeneminen etäisyyden kasvaessa",
-      "missing": "FY7: Sähkömagneettinen säteily, spektri ja mustan kappaleen säteily",
+      "missing": "ei lukion fysiikan moduuleissa; lyhyt selitys on tällä sivulla",
       "why": "Tarvittava periaate on selitetty lyhyesti tällä sivulla kohdassa Teoriaa lyhyesti."
     },
     {
       "kind": "physics",
       "level": "helpful",
-      "text": "Intensiteetti ja sen heikkeneminen etäisyyden kasvaessa",
-      "missing": "FY5: Äänen intensiteettitaso ja kuulon suojaaminen",
+      "target": "fy5-15",
       "why": "Äänen intensiteetti heikkenee etäisyyden kasvaessa samasta syystä kuin valaistusvoimakkuus: aalto leviää yhä suuremmalle alalle."
     },
     {

@@ -67,15 +67,13 @@
     {
       "kind": "physics",
       "level": "essential",
-      "text": "Sähköteho $P = UI$",
-      "missing": "FY6: Sähköteho ja Joulen laki",
+      "target": "fy6-6",
       "why": "Sähköenergia lasketaan jännitteestä, sähkövirrasta ja ajasta; lyhyt selitys on tällä sivulla kohdassa Teoriaa lyhyesti."
     },
     {
       "kind": "experiment",
       "level": "essential",
-      "text": "Virtamittarin ja jännitemittarin kytkeminen",
-      "missing": "FY6: Mittaukset virtapiirissä",
+      "target": "fy6-2",
       "why": "Virtamittari kytketään sarjaan ja jännitemittari rinnan kuumentimen kanssa; kytkentä on selitetty ja piirretty tällä sivulla."
     },
     {
