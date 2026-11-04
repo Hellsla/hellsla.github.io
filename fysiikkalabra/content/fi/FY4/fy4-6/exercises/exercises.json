@@ -46,29 +46,29 @@
     {
       "id": "fy4-6-L1-06",
       "level": 1,
-      "text": "Laatikko on levossa vaakasuoralla lattialla. Sitä työnnetään vaakasuoraan $20\\,\\text{N}$:n voimalla, mutta se ei liiku.\n\nLaatikon ja lattian välisen lepokitkan suurin mahdollinen arvo on $60\\,\\text{N}$. Mikä väite lattian laatikkoon kohdistamasta kitkavoimasta on oikea?",
+      "text": "Laatikko on levossa vaakasuoralla lattialla. Sitä työnnetään vaakasuoraan $20\\,\\text{N}$:n voimalla, mutta se ei liiku.\n\nLaatikon ja lattian välisen lepokitkan suurin mahdollinen arvo on $60\\,\\text{N}$. Mikä väite lattian laatikkoon kohdistamasta lepokitkasta $F_{\\mu 0}$ on oikea?",
       "kind": [
         "concept"
       ],
       "unit": "",
       "tolerance": 0.02,
-      "answer": "$F = 20\\,\\text{N}$, koska laatikko on levossa ja kitka kumoaa työnnön.",
+      "answer": "$F_{\\mu 0} = 20\\,\\text{N}$, koska levossa lepokitka on yhtä suuri kuin työntö.",
       "choices": [
         {
-          "text": "$F = 60\\,\\text{N}$, koska lepokitka on aina yhtä suuri kuin sen enimmäisarvo.",
-          "feedback": "Lepokitka on vain niin suuri kuin tilanne vaatii. Enimmäisarvo $\\mu_0 N$ on yläraja, ei kitkan varsinainen arvo."
-        },
-        {
-          "text": "$F = 0\\,\\text{N}$, koska liikkumattomaan kappaleeseen ei vaikuta kitkaa.",
-          "feedback": "Juuri kitka estää laatikkoa liikkumasta. Jos kitka olisi nolla, työntö kiihdyttäisi laatikkoa."
-        },
-        {
-          "text": "$F = 20\\,\\text{N}$, koska laatikko on levossa ja kitka kumoaa työnnön.",
+          "text": "$F_{\\mu 0} = 20\\,\\text{N}$, koska levossa lepokitka on yhtä suuri kuin työntö.",
           "correct": true,
           "feedback": "Oikein: levossa voimien summa on nolla, joten lepokitka on työnnön suuruinen ja vastakkaissuuntainen. Se on pienempi kuin enimmäisarvo."
         },
         {
-          "text": "$F = 40\\,\\text{N}$, koska kitka on enimmäisarvon ja työnnön erotus.",
+          "text": "$F_{\\mu 0} = 60\\,\\text{N}$, koska lepokitka on aina yhtä suuri kuin sen enimmäisarvo.",
+          "feedback": "Lepokitka on vain niin suuri kuin tilanne vaatii. Enimmäisarvo $\\mu_0 N$ on yläraja, ei kitkan varsinainen arvo."
+        },
+        {
+          "text": "$F_{\\mu 0} = 0\\,\\text{N}$, koska levossa olevaan kappaleeseen ei vaikuta kitkaa.",
+          "feedback": "Juuri kitka estää laatikkoa liikkumasta. Jos kitka olisi nolla, työntö kiihdyttäisi laatikkoa."
+        },
+        {
+          "text": "$F_{\\mu 0} = 40\\,\\text{N}$, koska lepokitka on enimmäisarvon ja työnnön erotus.",
           "feedback": "Kitkan suuruutta ei saada vähentämällä työntö enimmäisarvosta. Levossa kitka ja työntö kumoavat toisensa."
         }
       ]
@@ -95,20 +95,20 @@
       ],
       "unit": "",
       "tolerance": 0.02,
-      "answer": "$N < G$, koska tukivoima kumoaa vain painon pintaa vastaan kohtisuoran komponentin.",
+      "answer": "$N < G$, koska tukivoima kumoaa vain painon kohtisuoran komponentin.",
       "choices": [
         {
-          "text": "$N = G$, koska tukivoima ja paino ovat aina vastakkaiset ja yhtä suuret.",
+          "text": "$N = G$, koska tukivoima ja paino ovat aina yhtä suuret ja vastakkaiset.",
           "feedback": "Tukivoima on kohtisuorassa pintaa vastaan, mutta paino osoittaa suoraan alas. Ne eivät ole samalla suoralla, eikä tukivoima kumoa koko painoa."
         },
         {
-          "text": "$N < G$, koska tukivoima kumoaa vain painon pintaa vastaan kohtisuoran komponentin.",
-          "correct": true,
-          "feedback": "Oikein: pintaa vastaan kohtisuorassa suunnassa kappale ei kiihdy, joten $N = G_y = mg\\cos\\alpha$. Rinteen suuntaisen komponentin kumoaa kitka."
+          "text": "$N > G$, koska rinne tukee kappaletta ja kitka painaa sitä pintaa vasten.",
+          "feedback": "Kitka on pinnan suuntainen eikä paina kappaletta pintaa vasten. Kohtisuoraan pintaa vastaan vaikuttavat vain paino ja tukivoima."
         },
         {
-          "text": "$N > G$, koska rinne tukee kappaletta ja kitka painaa sitä lisäksi pintaan.",
-          "feedback": "Kitka on pinnan suuntainen eikä paina kappaletta pintaa vasten. Kohtisuoraan pintaa vastaan vaikuttavat vain paino ja tukivoima."
+          "text": "$N < G$, koska tukivoima kumoaa vain painon kohtisuoran komponentin.",
+          "correct": true,
+          "feedback": "Oikein: pintaa vastaan kohtisuorassa suunnassa kappale ei kiihdy, joten $N = G_y = mg\\cos\\alpha$. Rinteen suuntaisen komponentin kumoaa kitka."
         },
         {
           "text": "$N = 0$, koska paino vetää kappaletta rinnettä alas eikä pintaa vasten.",
@@ -202,7 +202,7 @@
         "data",
         "graph"
       ],
-      "text": "Voima-anturilla vedettiin $0{,}75\\,\\text{kg}$:n puupalikkaa vaakasuoralla pöydällä. Vetoa kasvatettiin hitaasti, kunnes palikka lähti liikkeelle, ja sen jälkeen palikkaa vedettiin vaakasuoraan tasaisella nopeudella. Palikka liikkui tasaisella nopeudella hetkestä $t = 3{,}5\\,\\text{s}$ alkaen. Alla on esimerkkiaineisto.\n\nPiirrä $(t, F)$-kuvaaja ja lue siitä lepokitkan suurin arvo ja tasaisen liikkeen aikainen vetovoima. Määritä lepokitkakerroin $\\mu_0$ ja liikekitkakerroin $\\mu$.\n\nKirjoita vastauslaatikkoon liikekitkakerroin $\\mu$.",
+      "text": "Voima-anturilla vedettiin $0{,}75\\,\\text{kg}$:n puupalikkaa vaakasuoralla pöydällä. Veto oli koko ajan vaakasuora. Vetoa kasvatettiin hitaasti, kunnes palikka lähti liikkeelle, ja sen jälkeen palikkaa vedettiin vaakasuoraan tasaisella nopeudella. Palikka liikkui tasaisella nopeudella hetkestä $t = 3{,}5\\,\\text{s}$ alkaen. Alla on esimerkkiaineisto.\n\nPiirrä $(t, F)$-kuvaaja ja lue taulukosta suurin lukema lepokitkan suurimmaksi arvoksi ja tasaisen liikkeen aikainen vetovoima. Määritä lepokitkakerroin $\\mu_0$ ja liikekitkakerroin $\\mu$.\n\nKirjoita vastauslaatikkoon liikekitkakerroin $\\mu$.",
       "answer": 0.29,
       "unit": "",
       "tolerance": 0.04,
@@ -334,7 +334,7 @@
         "model"
       ],
       "text": "Henkilöauton jarrutusmatka lasketaan mallilla, jossa pyörät lukkiutuvat ja renkaiden ja tien välillä vaikuttaa liikekitka. Alla on esimerkkiaineisto renkaiden ja tien välisistä liikekitkakertoimista.\n\nAuto jarruttaa nopeudesta $80\\,\\text{km/h}$ pysähdyksiin. Ilmanvastus jätetään huomiotta, ja kiihtyvyys on vakio.\n\na) Määritä jarrutusmatka kuivalla vaakasuoralla asfaltilla.\n\nb) Määritä jarrutusmatka märällä vaakasuoralla asfaltilla.\n\nc) Märkä tie viettää alamäkeen $6{,}0^\\circ$:n kulmassa. Määritä jarrutusmatka alamäessä ja perustele, miksi auton massaa ei tarvita.\n\nKirjoita vastauslaatikkoon kohdan c) jarrutusmatka.",
-      "answer": 73.0,
+      "answer": 73.4,
       "unit": "m",
       "tolerance": 0.03,
       "fbd": "equations",
@@ -352,10 +352,6 @@
           [
             "Märkä asfaltti",
             "0.45"
-          ],
-          [
-            "Lumi",
-            "0.20"
           ]
         ]
       }
@@ -367,11 +363,11 @@
         "error",
         "model"
       ],
-      "text": "Laatikko, jonka massa on $20\\,\\text{kg}$, lähtee levossa liukumaan $25^\\circ$:n rinnettä alas. Laatikon ja rinteen välinen liikekitkakerroin on $0{,}30$, ja ilmanvastus jätetään huomiotta.\n\nOppilas ratkaisi tehtävän näin: \"Tukivoima on painon suuruinen, $N = mg$. Liikeyhtälö rinteen suuntaan on $mg\\sin\\alpha - \\mu mg = ma$, joten $a = g(\\sin\\alpha - \\mu) \\approx 1{,}2\\,\\text{m/s}^2$.\"\n\na) Selitä oppilaan virhe ja piirrä laatikon voimakuvio.\n\nb) Laske laatikon oikea kiihtyvyys.\n\nc) Kuinka pitkän matkan laatikko liukuu ensimmäisten $3{,}0\\,\\text{s}$:n aikana?\n\nKirjoita vastauslaatikkoon kohdan c) matka.",
-      "answer": 6.7,
+      "text": "Laatikko, jonka massa on $20\\,\\text{kg}$, lähtee levossa liukumaan $30^\\circ$:n rinnettä alas. Laatikon ja rinteen välinen liikekitkakerroin on $0{,}35$, ja ilmanvastus jätetään huomiotta.\n\nOppilas ratkaisi tehtävän näin: ”Tukivoima on painon suuruinen, $N = mg$. Liikeyhtälö rinteen suuntaan on $mg\\sin\\alpha - \\mu mg = ma$, joten $a = g(\\sin\\alpha - \\mu) \\approx 1{,}5\\,\\text{m/s}^2$.”\n\na) Selitä oppilaan virhe ja piirrä laatikon voimakuvio.\n\nb) Laske laatikon oikea kiihtyvyys.\n\nc) Kuinka pitkän matkan laatikko liukuu ensimmäisten $3{,}0\\,\\text{s}$:n aikana?\n\nKirjoita vastauslaatikkoon kohdan c) matka.",
+      "answer": 8.7,
       "unit": "m",
       "tolerance": 0.03,
-      "fbd": "error"
+      "fbd": "equations"
     }
   ]
 }

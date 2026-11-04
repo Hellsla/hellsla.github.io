@@ -45,7 +45,7 @@ a["fy4-13-L2-05"] = within(k * 0.500, 9.8, 0.03)                           # Atw
 m1, acc_m = 1.20, 2.84
 a["fy4-13-L2-06"] = within(m1 * acc_m, 3.4, 0.04)                          # cart: T = m1 a = 3,408 N (hanging body: m2 (g − a) = 3,485 N)
 m1, m2 = 2.0, 0.50
-a["fy4-13-L2-07"] = within(m2 * g / (m1 + m2), 1.96, 0.03)                 # error: a = m2 g/(m1 + m2) = 1,962 m/s², not m2 g/m1 = 2,45 m/s²
+a["fy4-13-L2-07"] = within(m2 * g / (m1 + m2), 2.0, 0.02)                 # error: a = m2 g/(m1 + m2) = 1,962 m/s², not m2 g/m1 = 2,45 m/s²
 tv = [(0, 0.00), (5, 2.46), (10, 5.03), (15, 7.48), (20, 10.02)]
 a_tr = round((tv[-1][1] - tv[0][1]) / (tv[-1][0] - tv[0][0]), 2)           # a = 10,02/20 = 0,50 m/s²
 a["fy4-13-L3-04"] = within((18.0 + 12.0) * a_tr, 15, 0.04)                 # coupling 1–2 pulls wagons 2 and 3: K = (m2 + m3) a = 15 kN (t·m/s² = kN); reordered 12, 18, 24 t: (18 + 24) a = 21 kN

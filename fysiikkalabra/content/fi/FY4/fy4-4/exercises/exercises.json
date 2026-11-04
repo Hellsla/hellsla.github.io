@@ -49,25 +49,25 @@
       "kind": [
         "concept"
       ],
-      "answer": "Kokonaisvoima osoittaa alas, koska nopeus pienenee ja kiihtyvyys osoittaa alas.",
+      "answer": "Kokonaisvoima osoittaa alas, koska nopeus pienenee ja kiihtyvyys osoittaa alaspäin.",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
         {
-          "text": "Kokonaisvoima osoittaa ylös, koska hissi liikkuu ylöspäin ja nopeuden suunta ratkaisee.",
+          "text": "Kokonaisvoima osoittaa ylös, koska hissi liikkuu ylöspäin ja nopeus määrää voiman suunnan.",
           "feedback": "Kokonaisvoiman suunnan määrää kiihtyvyyden suunta, ei nopeuden suunta. Kun hissi hidastuu, nopeus pienenee, joten kiihtyvyys ja kokonaisvoima osoittavat nopeuden vastaiseen suuntaan eli alas."
         },
         {
-          "text": "Kokonaisvoima osoittaa alas, koska nopeus pienenee ja kiihtyvyys osoittaa alas.",
+          "text": "Kokonaisvoima on nolla, koska hissin liikkeen suunta pysyy koko ajan samana ylöspäin.",
+          "feedback": "Kokonaisvoima on nolla vain, kun nopeus ei muutu. Hissin nopeus pienenee, joten kiihtyvyys ei ole nolla. Liikkeen suunnan pysyminen samana ei kerro kiihtyvyydestä mitään."
+        },
+        {
+          "text": "Kokonaisvoima osoittaa alas, koska nopeus pienenee ja kiihtyvyys osoittaa alaspäin.",
           "feedback": "Oikein: Newtonin toisen lain mukaan $\\Sigma\\overline{F} = m\\overline{a}$, joten kokonaisvoima osoittaa kiihtyvyyden suuntaan. Hidastuessaan hissi saa kiihtyvyyden alas, vaikka se liikkuu yhä ylöspäin. Köyden voima on tällöin painoa pienempi.",
           "correct": true
         },
         {
-          "text": "Kokonaisvoima on nolla, koska hissin liikkeen suunta pysyy koko ajan samana.",
-          "feedback": "Kokonaisvoima on nolla vain, kun nopeus ei muutu. Hissin nopeus pienenee, joten kiihtyvyys ei ole nolla. Liikkeen suunnan pysyminen samana ei kerro kiihtyvyydestä mitään."
-        },
-        {
-          "text": "Kokonaisvoima osoittaa ylös, koska köyden voima on aina painoa suurempi hissin liikkuessa ylöspäin.",
+          "text": "Kokonaisvoima osoittaa ylös, koska köyden voima on aina painoa suurempi hissin noustessa.",
           "feedback": "Köyden voima on painoa suurempi vain nousua aloittaessa. Tasaisessa nousussa voimat ovat yhtä suuret, ja hidastuessa köyden voima on painoa pienempi. Kokonaisvoima seuraa kiihtyvyyttä, ei liikkeen suuntaa."
         }
       ]
@@ -76,9 +76,9 @@
       "id": "fy4-4-L1-07",
       "level": 1,
       "kind": [
-        "reasoning"
+        "model"
       ],
-      "text": "Jääkiekkokiekko, jonka massa on $0{,}17\\,\\text{kg}$, saa mailan iskusta vaakasuoran kiihtyvyyden $400\\,\\text{m/s}^2$. Kuinka suuri kokonaisvoima kiekkoon vaikuttaa iskun aikana?",
+      "text": "Jääkiekkokiekon massa on $170\\,\\text{g}$. Mailan isku antaa kiekolle vaakasuoran kiihtyvyyden $400\\,\\text{m/s}^2$. Kuinka suuri kokonaisvoima kiekkoon vaikuttaa iskun aikana?",
       "answer": 68,
       "unit": "N",
       "tolerance": 0.02
@@ -87,9 +87,9 @@
       "id": "fy4-4-L1-08",
       "level": 1,
       "kind": [
-        "reasoning"
+        "model"
       ],
-      "text": "Moottorikelkkaan vaikuttaa vaakasuora kokonaisvoima $600\\,\\text{N}$, ja sen kiihtyvyys on $1{,}5\\,\\text{m/s}^2$. Mikä on moottorikelkan massa?",
+      "text": "Moottorikelkkaan vaikuttaa vaakasuora kokonaisvoima $0{,}60\\,\\text{kN}$, ja sen kiihtyvyys on $1{,}5\\,\\text{m/s}^2$. Mikä on moottorikelkan massa?",
       "answer": 400,
       "unit": "kg",
       "tolerance": 0.02
@@ -206,7 +206,7 @@
           ],
           [
             "0.50",
-            "2.35"
+            "2.4"
           ],
           [
             "0.60",
@@ -221,9 +221,9 @@
       "kind": [
         "error"
       ],
-      "text": "Rakennushissin korin ja kuorman yhteismassa on $500\\,\\text{kg}$. Hissi nousee, ja kannatinköyden jännitysvoima on $5{,}40\\,\\text{kN}$.\n\nOpiskelija ratkaisi kiihtyvyyden näin: \"Köysi vetää koria ylös voimalla $5{,}40\\,\\text{kN}$, joten kokonaisvoima on $5400\\,\\text{N}$ ja $a = 5400\\,\\text{N} : 500\\,\\text{kg} = 10{,}8\\,\\text{m/s}^2$.\"\n\nMikä on opiskelijan ratkaisun virhe? Laske oikea kiihtyvyys. Ilmanvastus jätetään huomiotta. Vastauslaatikkoon hissin kiihtyvyyden suuruus.",
-      "answer": 0.99,
-      "unit": "m/s²",
+      "text": "Nosturi laskee betonielementin, jonka massa on $820\\,\\text{kg}$, laiturille. Elementti liikkuu alaspäin ja hidastuu tasaisesti, ja sen kiihtyvyyden suuruus on $1{,}20\\,\\text{m/s}^2$. Ilmanvastus jätetään huomiotta.\n\nOpiskelija laski köyden jännitysvoiman näin: ”Elementti liikkuu alaspäin, joten kiihtyvyys osoittaa alas. Siis $mg - T = ma$, josta $T = m(g - a) = 820\\,\\text{kg}\\cdot(9{,}81\\,\\text{m/s}^2 - 1{,}20\\,\\text{m/s}^2) = 7{,}06\\,\\text{kN}$.”\n\nMikä on opiskelijan ratkaisun virhe? Laske oikea köyden jännitysvoima. Vastauslaatikkoon köyden jännitysvoiman suuruus.",
+      "answer": 9028.2,
+      "unit": "N",
       "tolerance": 0.02,
       "fbd": "error"
     }

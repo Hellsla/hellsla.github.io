@@ -235,7 +235,7 @@ a 0
 **Annettu:** rengas on paikallaan; mittaukset $(F_\text{A}, F_\text{C}, F_\text{B})$: $(3{,}0;\ 2{,}5;\ 3{,}9)\,\text{N}$, $(4{,}5;\ 3{,}8;\ 5{,}9)\,\text{N}$ ja $(6{,}0;\ 5{,}1;\ 7{,}9)\,\text{N}$
 **Kysytty:** kulman $\alpha$ keskiarvo $\alpha_\text{ka}$ yksikössä $^\circ$
 **Periaate:** Rengas on levossa, joten Newtonin toisen lain mukaan siihen vaikuttavien voimien summa on nolla sekä vaaka- että pystysuunnassa. Köysi B on vino, joten sen voima jaetaan komponentteihin.
-**Voimakuvio:** Rengas suorakulmiona, $x$ oikealle ja $y$ ylös. Köyden A jännitysvoima $\overline{F}_\text{A}$ vasemmalle ja köyden C jännitysvoima $\overline{F}_\text{C}$ alas. Köyden B voima $\overline{F}_\text{B}$ lähtee vinosti ylös oikealle kulmassa $\alpha$, ja sen komponentit $F_\text{B}\cos\alpha$ ja $F_\text{B}\sin\alpha$ piirretään katkoviivoin. Komponentit ovat yhtä pitkät kuin $F_\text{A}$ ja $F_\text{C}$. Painoja ei piirretä, koska renkaan massa on pieni.
+**Voimakuvio:** Rengas suorakulmiona, $x$ oikealle ja $y$ ylös. Köyden A jännitysvoima $\overline{F}_\text{A}$ vasemmalle ja köyden C jännitysvoima $\overline{F}_\text{C}$ alas. Köyden B voima $\overline{F}_\text{B}$ lähtee vinosti ylös oikealle kulmassa $\alpha$, ja sen komponentit $F_\text{B}\cos\alpha$ ja $F_\text{B}\sin\alpha$ piirretään katkoviivoin. Komponentit ovat yhtä pitkät kuin $F_\text{A}$ ja $F_\text{C}$. Renkaan painoa ei piirretä, koska tehtävässä se jätetään huomiotta.
 **Kuvaajan lukeminen:** Taulukosta luetaan kunkin mittauksen voimat $F_\text{A}$ ja $F_\text{C}$. Vertailuun otetaan myös anturin B lukema.
 **Kaava:** $x$: $F_\text{B}\cos\alpha - F_\text{A} = 0$ ja $y$: $F_\text{B}\sin\alpha - F_\text{C} = 0$, joten $\alpha = \arctan\dfrac{F_\text{C}}{F_\text{A}}$
 **Muunnokset:** Voimat ovat newtoneina ja kulma lasketaan asteina, joten muunnoksia ei tarvita; laskin on asteikolla DEG.
@@ -248,13 +248,13 @@ a 0
 \end{aligned}
 ```
 Summa on $120{,}4\,{}^\circ$, joten keskiarvo on $\alpha_\text{ka} = 120{,}4\,{}^\circ : 3 = 40{,}1\,{}^\circ$. Tarkistus ensimmäisellä mittauksella: $F_\text{B} = \sqrt{(3{,}0\,\text{N})^2 + (2{,}5\,\text{N})^2} = 3{,}9\,\text{N}$.
-**Vastaus:** $\alpha_\text{ka} \approx 40\,{}^\circ$, kahden merkitsevän numeron tarkkuudella kuten voimien lukemat. Laskettu $F_\text{B} = 3{,}9\,\text{N}$ on sama kuin anturin lukema.
+**Vastaus:** a) Voimakuvio ja yhtälöt yllä. b) $\alpha_\text{ka} = 40{,}1\,{}^\circ \approx 40\,{}^\circ$, kahden merkitsevän numeron tarkkuudella kuten voimien lukemat. c) Laskettu $F_\text{B} = 3{,}9\,\text{N}$ on sama kuin anturin lukema.
 **Järkevyys:** Kolme kulmaa poikkeaa toisistaan enintään $0{,}6\,{}^\circ$, joten ne kuvaavat samaa kulmaa ja pieni vaihtelu on mittauksen satunnaisvaihtelua. Voimat kasvavat samassa suhteessa, ja suhde $F_\text{C} : F_\text{A}$ pysyy noin $0{,}84$:ssä. Kulma on alle $45\,{}^\circ$, joten $F_\text{A} > F_\text{C}$ kuten taulukossa. Voima $F_\text{B}$ on suurempi kuin kumpikaan komponentti mutta pienempi kuin niiden summa $5{,}5\,\text{N}$.
 
 ## fy4-5-L2-06
 **Annettu:** $m = 12\,\text{kg}$, kitkavoima $F_\mu = 30\,\text{N}$ vasemmalle, laatikko liukuu oikealle ja hidastuu; ilmanvastusta ei ole
 **Kysytty:** a) opiskelijan virhe; b) kiihtyvyyden suuruus $a$ yksikössä $\text{m/s}^2$
-**Periaate:** Voimakuvioon kuuluvat vain kappaleeseen vaikuttavat voimat, joilla on aiheuttaja. Opiskelija piirsi laatikkoon "potkun voiman", vaikka potkun jälkeen mikään kappale ei työnnä laatikkoa oikealle, ja päätteli kiihtyvyyden suunnan liikkeen suunnasta, vaikka laatikko hidastuu. Potkun voima vaikuttaa laatikkoon vain sen ajan, kun jalka koskee siihen. Kun laatikko on irronnut jalasta, sen vaakasuoraan liikkeeseen vaikuttaa vain kitka.
+**Periaate:** Voimakuvioon kuuluvat vain kappaleeseen vaikuttavat voimat, joilla on aiheuttaja. Opiskelija piirsi laatikkoon ”potkun voiman”, vaikka potkun jälkeen mikään kappale ei työnnä laatikkoa oikealle, ja päätteli kiihtyvyyden suunnan liikkeen suunnasta, vaikka laatikko hidastuu. Potkun voima vaikuttaa laatikkoon vain sen ajan, kun jalka koskee siihen. Kun laatikko on irronnut jalasta, sen vaakasuoraan liikkeeseen vaikuttaa vain kitka.
 **Voimakuvio:** Laatikko suorakulmiona, $x$ oikealle ja $y$ ylös. Paino $\overline{G}$ alas ja lattian tukivoima $\overline{N}$ ylös yhtä pitkinä sekä kitkavoima $\overline{F}_\mu$ vasemmalle. Oikealle ei piirretä voimaa. Nopeus oikealle ja kiihtyvyys vasemmalle piirretään kuvion viereen erikseen.
 ```voimakuvio
 pinta 0
@@ -327,7 +327,7 @@ N &= 25\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 \\
 &= 185\,\text{N}
 \end{aligned}
 ```
-**Vastaus:** a) Voimakuvio ja yhtälöt yllä. b) $a \approx 0{,}80\,\text{m/s}^2$. c) $F_\mu \approx 84\,\text{N}$, kaksi merkitsevää numeroa kuten massassa ja kulmassa. d) $N \approx 185\,\text{N}$. Tukivoima on painoa $245\,\text{N}$ pienempi, koska köyden pystykomponentti $T\sin\alpha = 60\,\text{N}$ kannattelee osan painosta: lattian tarvitsee tukea vain loppuosa, $N + T\sin\alpha = mg$.
+**Vastaus:** a) Voimakuvio ja yhtälöt yllä. b) $a \approx 0{,}80\,\text{m/s}^2$. c) $F_\mu \approx 84\,\text{N}$, kaksi merkitsevää numeroa kuten massassa ja kulmassa. d) $N \approx 185\,\text{N} \approx 1{,}9\cdot 10^2\,\text{N}$, kaksi merkitsevää numeroa kuten massassa ja kulmassa. Tukivoima on painoa $245\,\text{N}$ pienempi, koska köyden pystykomponentti $T\sin\alpha = 60\,\text{N}$ kannattelee osan painosta: lattian tarvitsee tukea vain loppuosa, $N + T\sin\alpha = mg$.
 **Järkevyys:** Köyden vaakakomponentti $104\,\text{N}$ on suurempi kuin kitka $84\,\text{N}$, joten kokonaisvoima $20\,\text{N}$ osoittaa eteenpäin ja laatikko kiihtyy, kuten taulukko näyttää. Kokonaisvoima $ma = 20\,\text{N}$ on noin viidennes vaakakomponentista. Tarkistus pystysuunnassa: $185\,\text{N} + 60\,\text{N} = 245\,\text{N} = mg$.
 
 ## fy4-5-L3-05
@@ -368,5 +368,5 @@ h_3 &= \tfrac12\cdot 2{,}397\,\tfrac{\text{m}}{\text{s}}\cdot 2{,}0\,\text{s} \\
 \end{aligned}
 ```
 Korkeus on $h = 2{,}40\,\text{m} + 9{,}59\,\text{m} + 2{,}40\,\text{m} = 14{,}38\,\text{m}$.
-**Vastaus:** a) Voimakuvio ja yhtälö yllä. b) $a_1 \approx 1{,}2\,\text{m/s}^2$ ylös, $a_2 \approx 0$ ja $a_3 \approx -1{,}2\,\text{m/s}^2$ eli kiihtyvyys alas. c) Kolmannessa vaiheessa kokonaisvoima osoittaa alas, joten köyden voima on painoa pienempi, vaikka nopeus osoittaa ylös: kuorma hidastuu. Kiihtyvyyden suunta on kokonaisvoiman suunta, ei liikkeen suunta. d) $h \approx 14\,\text{m}$, kahden merkitsevän numeron tarkkuudella kuten massassa $80\,\text{kg}$.
-**Järkevyys:** Tasaisessa vaiheessa köyden voima $785\,\text{N}$ on sama kuin paino $785\,\text{N}$, kuten pitää. Nopeuden muutokset kumoavat toisensa: vaiheessa 3 nopeus pienenee $1{,}19\,\text{m/s}^2\cdot 2{,}0\,\text{s} = 2{,}38\,\text{m/s}$, eli lähes arvosta $2{,}40\,\text{m/s}$ nollaan, joten nosto päättyy levossa kuten tehtävässä. Korkeus on myös suurimman nopeuden ja ajan tulo, kun kiihdytys- ja hidastusvaihe yhdessä vastaavat tasaista nopeutta ajan $2{,}0\,\text{s}$ ja tasainen vaihe kestää $4{,}0\,\text{s}$: $2{,}40\,\text{m/s}\cdot 6{,}0\,\text{s} = 14{,}4\,\text{m}$.
+**Vastaus:** a) Voimakuvio ja yhtälö yllä. b) $a_1 \approx 1{,}2\,\text{m/s}^2$ ylös, $a_2 \approx 0$ ja $a_3 \approx -1{,}2\,\text{m/s}^2$ eli kiihtyvyys alas. c) Kolmannessa vaiheessa kokonaisvoima osoittaa alas, joten köyden voima on painoa pienempi, vaikka nopeus osoittaa ylös: kuorma hidastuu. Kiihtyvyyden suunta on kokonaisvoiman suunta, ei liikkeen suunta. d) $h \approx 14{,}4\,\text{m}$ eli kahden merkitsevän numeron tarkkuudella $14\,\text{m}$ kuten massassa $80\,\text{kg}$; vastauslaatikkoon käy tarkempi arvo $14{,}4\,\text{m}$.
+**Järkevyys:** Tasaisessa vaiheessa köyden voima $785\,\text{N}$ on sama kuin paino $785\,\text{N}$, kuten pitää. Nopeuden muutokset kumoavat toisensa: vaiheessa 3 nopeus pienenee $1{,}19\,\text{m/s}^2\cdot 2{,}0\,\text{s} = 2{,}38\,\text{m/s}$, eli lähes arvosta $2{,}40\,\text{m/s}$ nollaan, joten nosto päättyy levossa kuten tehtävässä. Korkeus on myös suurimman nopeuden ja ajan tulo: kiihdytys- ja hidastusvaihe kattavat yhdessä saman matkan kuin tasainen nopeus ajassa $2{,}0\,\text{s}$, joten $h = v_\text{max}\cdot 6{,}0\,\text{s} = 2{,}397\,\text{m/s}\cdot 6{,}0\,\text{s} = 14{,}4\,\text{m}$.

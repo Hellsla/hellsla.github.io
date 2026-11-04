@@ -51,27 +51,27 @@
       "kind": [
         "concept"
       ],
-      "answer": "Paino, tukivoima ja kitka, koska jokaisella voimalla on aiheuttaja, Maa tai lattia",
+      "answer": "Paino, tukivoima ja kitka, koska kullakin voimalla on aiheuttaja",
       "unit": "",
       "tolerance": 0.02,
       "fbd": "identify",
       "choices": [
         {
-          "text": "Paino, tukivoima, kitka ja liikevoima oikealle, koska laatikko liikkuu oikealle",
+          "text": "Paino, tukivoima, kitka ja liikevoima, koska laatikko liikkuu oikealle",
           "feedback": "Liikkeen suuntaista voimaa ei tarvita eikä sellaista ole: ei ole kappaletta, joka sitä aiheuttaisi. Voimaa tarvitaan nopeuden muuttamiseen, ei liikkeen jatkumiseen."
         },
         {
-          "text": "Paino ja kitka, koska tukivoima ja paino kumoavat toisensa eivätkä ne näy kuviossa",
+          "text": "Paino ja kitka, koska tukivoima kumoaa painon eikä näy kuviossa",
           "feedback": "Voimakuvioon piirretään jokainen kappaleeseen vaikuttava voima, vaikka voimat kumoaisivat toisensa. Tukivoima ja paino ovat yhtä pitkät mutta molemmat mukana."
         },
         {
-          "text": "Paino, tukivoima ja kitka, koska jokaisella voimalla on aiheuttaja, Maa tai lattia",
-          "feedback": "Oikein: Maa vetää laatikkoa (paino), lattia tukee sitä (tukivoima) ja lattia vastustaa liukumista (kitka). Kitka osoittaa vasemmalle, ja se on ainoa vaakasuora voima.",
-          "correct": true
+          "text": "Paino, tukivoima, kitka ja nopeus, koska nopeus kertoo liikkeen suunnan",
+          "feedback": "Nopeus ei ole voima, vaan kappaleen liikettä kuvaava suure. Se piirretään tarvittaessa voimakuvion viereen omalla värillään, ei voimana."
         },
         {
-          "text": "Paino, tukivoima, kitka ja nopeus oikealle, koska nopeus kertoo liikkeen suunnan",
-          "feedback": "Nopeus ei ole voima, vaan kappaleen liikettä kuvaava suure. Se piirretään tarvittaessa voimakuvion viereen omalla värillään, ei voimana."
+          "text": "Paino, tukivoima ja kitka, koska kullakin voimalla on aiheuttaja",
+          "feedback": "Oikein: Maa vetää laatikkoa (paino), lattia tukee sitä (tukivoima) ja lattia vastustaa liukumista (kitka). Kitka osoittaa vasemmalle, ja se on ainoa vaakasuora voima.",
+          "correct": true
         }
       ]
     },
@@ -94,27 +94,27 @@
       "kind": [
         "concept"
       ],
-      "answer": "$N$ on painoa pienempi, koska narun pystykomponentti kannattelee osaa painosta",
+      "answer": "$N$ on painoa pienempi, koska naru kannattelee osaa painosta",
       "unit": "",
       "tolerance": 0.02,
       "fbd": "identify",
       "choices": [
         {
-          "text": "$N$ on yhtä suuri kuin paino, koska laatikko pysyy paikallaan pystysuunnassa",
+          "text": "$N$ on yhtä suuri kuin $G$, koska laatikko pysyy paikallaan pystysuunnassa",
           "feedback": "Pystysuunnassa ylöspäin vaikuttaa tukivoiman lisäksi narun pystykomponentti. Kokonaisvoima on nolla, joten $N + T_y = G$ ja $N$ on painoa pienempi."
         },
         {
-          "text": "$N$ on painoa pienempi, koska narun pystykomponentti kannattelee osaa painosta",
+          "text": "$N$ on painoa suurempi, koska naru painaa laatikkoa lattiaa vasten",
+          "feedback": "Naru vetää laatikkoa ylöspäin eikä paina sitä lattiaa vasten. Narun pystykomponentti pienentää tukivoimaa."
+        },
+        {
+          "text": "$N$ on painoa pienempi, koska naru kannattelee osaa painosta",
           "feedback": "Oikein: pystysuunnan yhtälö on $N + T\\sin\\alpha - G = 0$, joten $N = G - T\\sin\\alpha$. Tukivoima ei ole aina yhtä suuri kuin paino.",
           "correct": true
         },
         {
-          "text": "$N$ on painoa suurempi, koska narun voima painaa laatikkoa lattiaa vasten",
-          "feedback": "Naru vetää laatikkoa ylöspäin eikä paina sitä lattiaa vasten. Narun pystykomponentti pienentää tukivoimaa."
-        },
-        {
           "text": "$N$ on nolla, koska naru kannattelee laatikon koko painon",
-          "feedback": "Naru kannattelee vain osan painosta, koska narun pystykomponentti on pienempi kuin paino. Laatikko koskettaa lattiaa, ja lattia tukee loppuosan."
+          "feedback": "Jos $N$ olisi nolla, myös lattian kitka olisi nolla, ja narun vaakakomponentti saisi laatikon liikkeelle. Laatikko kuitenkin pysyy paikallaan, joten lattia tukee sitä ja $N > 0$."
         }
       ]
     }
@@ -160,7 +160,7 @@
     {
       "id": "fy4-5-L2-05",
       "level": 2,
-      "text": "Voima-antureilla tutkitaan rengasta, joka pysyy paikallaan kolmen köyden varassa. Köysi A vetää rengasta vaakasuoraan vasemmalle ja köysi C pystysuoraan alas. Köysi B vetää rengasta vinosti ylös oikealle kulmassa $\\alpha$ vaakatasoon nähden. Köysien massat jätetään huomiotta. Taulukossa on esimerkkiaineisto kolmesta mittauksesta, joissa anturit A, B ja C näyttävät voimat $F_\\text{A}$, $F_\\text{B}$ ja $F_\\text{C}$.\n\na) Perustele, miksi renkaaseen vaikuttavien voimien summa on nolla, ja kirjoita liikeyhtälöt $x$- ja $y$-suunnassa. Piirrä renkaan voimakuvio suorakulmiona.\n\nb) Laske kulma $\\alpha$ kunkin mittauksen voimista $F_\\text{A}$ ja $F_\\text{C}$ sekä kolmen kulman keskiarvo.\n\nc) Tarkista tulos laskemalla ensimmäisen mittauksen komponenteista voima $F_\\text{B}$ ja vertaamalla sitä anturin lukemaan.\n\nVastauslaatikkoon tulee kohdan b) kulmien keskiarvo.",
+      "text": "Voima-antureilla tutkitaan rengasta, joka pysyy paikallaan kolmen köyden varassa. Köysi A vetää rengasta vaakasuoraan vasemmalle ja köysi C pystysuoraan alas. Köysi B vetää rengasta vinosti ylös oikealle kulmassa $\\alpha$ vaakatasoon nähden. Köysien massat sekä renkaan massa ja paino jätetään huomiotta. Taulukossa on esimerkkiaineisto kolmesta mittauksesta, joissa anturit A, B ja C näyttävät voimat $F_\\text{A}$, $F_\\text{B}$ ja $F_\\text{C}$.\n\na) Perustele, miksi renkaaseen vaikuttavien voimien summa on nolla, ja kirjoita liikeyhtälöt $x$- ja $y$-suunnassa. Piirrä renkaan voimakuvio suorakulmiona.\n\nb) Laske kulma $\\alpha$ kunkin mittauksen voimista $F_\\text{A}$ ja $F_\\text{C}$ sekä kolmen kulman keskiarvo.\n\nc) Tarkista tulos laskemalla ensimmäisen mittauksen komponenteista voima $F_\\text{B}$ ja vertaamalla sitä anturin lukemaan.\n\nVastauslaatikkoon tulee kohdan b) kulmien keskiarvo.",
       "kind": [
         "data",
         "experiment"
@@ -198,7 +198,7 @@
     {
       "id": "fy4-5-L2-06",
       "level": 2,
-      "text": "Laatikko, jonka massa on $12\\,\\text{kg}$, potkaistaan liikkeelle vaakasuoralla lattialla. Laatikko liukuu oikealle ja hidastuu. Lattian kitkavoima laatikkoon on $30\\,\\text{N}$ vasemmalle. Ilmanvastus jätetään huomiotta. Opiskelija ratkaisee kiihtyvyyden näin:\n\n\"Laatikko liikkuu oikealle, joten siihen vaikuttaa potkun antama voima $40\\,\\text{N}$ oikealle. Kokonaisvoima on $40\\,\\text{N} - 30\\,\\text{N} = 10\\,\\text{N}$ oikealle, joten $a = 10\\,\\text{N} : 12\\,\\text{kg} \\approx 0{,}83\\,\\text{m/s}^2$ oikealle ja laatikko kiihtyy.\"\n\na) Mikä on opiskelijan virhe? Piirrä laatikon oikea voimakuvio.\n\nb) Laske laatikon kiihtyvyyden suuruus oikein.\n\nVastauslaatikkoon tulee kohdan b) kiihtyvyyden suuruus.",
+      "text": "Laatikko, jonka massa on $12\\,\\text{kg}$, potkaistaan liikkeelle vaakasuoralla lattialla. Laatikko liukuu oikealle ja hidastuu. Lattian kitkavoima laatikkoon on $30\\,\\text{N}$ vasemmalle. Ilmanvastus jätetään huomiotta. Opiskelija ratkaisee kiihtyvyyden näin:\n\n”Laatikko liikkuu oikealle, joten siihen vaikuttaa potkun antama voima $40\\,\\text{N}$ oikealle. Kokonaisvoima on $40\\,\\text{N} - 30\\,\\text{N} = 10\\,\\text{N}$ oikealle, joten $a = 10\\,\\text{N} : 12\\,\\text{kg} \\approx 0{,}83\\,\\text{m/s}^2$ oikealle ja laatikko kiihtyy.”\n\na) Mikä on opiskelijan virhe? Piirrä laatikon oikea voimakuvio.\n\nb) Laske laatikon kiihtyvyyden suuruus oikein.\n\nVastauslaatikkoon tulee kohdan b) kiihtyvyyden suuruus.",
       "kind": [
         "error",
         "reasoning"
@@ -211,7 +211,7 @@
     {
       "id": "fy4-5-L2-07",
       "level": 2,
-      "text": "Opiskelija tutkii kokeellisesti, miten kaksi vinoa voimaa yhdistyvät. Hän kiinnittää renkaaseen kolme voima-anturia. Anturit 1 ja 2 vetävät rengasta voimilla $F_1 = 6{,}0\\,\\text{N}$ ja $F_2 = 8{,}0\\,\\text{N}$, joiden suuntien välinen kulma on $\\varphi$. Anturi 3 vetää rengasta vastakkaiseen suuntaan kuin voimien $\\overline{F}_1$ ja $\\overline{F}_2$ summa, ja rengas pysyy paikallaan. Taulukossa on esimerkkiaineisto kolmesta mittauksesta.\n\na) Perustele, miksi anturin 3 lukema $F_3$ on yhtä suuri kuin voimien $\\overline{F}_1$ ja $\\overline{F}_2$ summan suuruus.\n\nb) Laske voimien $\\overline{F}_1$ ja $\\overline{F}_2$ summan suuruus, kun $\\varphi = 60\\,{}^\\circ$. Valitse $x$-akseli voiman $\\overline{F}_1$ suuntaan.\n\nc) Vertaa laskettua arvoa mitattuun ja kerro, mistä pieni ero voi johtua.\n\nVastauslaatikkoon tulee kohdan b) summan suuruus.",
+      "text": "Opiskelija tutkii kokeellisesti, miten kaksi vinoa voimaa yhdistyvät. Rengas on vaakasuoralla pöydällä, joten sen paino ja pöydän tukivoima kumoavat toisensa. Hän kiinnittää renkaaseen kolme voima-anturia. Anturit 1 ja 2 vetävät rengasta voimilla $F_1 = 6{,}0\\,\\text{N}$ ja $F_2 = 8{,}0\\,\\text{N}$, joiden suuntien välinen kulma on $\\varphi$. Anturi 3 vetää rengasta vastakkaiseen suuntaan kuin voimien $\\overline{F}_1$ ja $\\overline{F}_2$ summa, ja rengas pysyy paikallaan. Taulukossa on esimerkkiaineisto kolmesta mittauksesta.\n\na) Perustele, miksi anturin 3 lukema $F_3$ on yhtä suuri kuin voimien $\\overline{F}_1$ ja $\\overline{F}_2$ summan suuruus.\n\nb) Laske voimien $\\overline{F}_1$ ja $\\overline{F}_2$ summan suuruus, kun $\\varphi = 60\\,{}^\\circ$. Valitse $x$-akseli voiman $\\overline{F}_1$ suuntaan.\n\nc) Vertaa laskettua arvoa mitattuun ja kerro, mistä pieni ero voi johtua.\n\nVastauslaatikkoon tulee kohdan b) summan suuruus.",
       "kind": [
         "experiment",
         "data"

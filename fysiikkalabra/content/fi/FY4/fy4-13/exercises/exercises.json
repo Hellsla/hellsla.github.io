@@ -65,13 +65,13 @@
           "feedback": "Lanka vetää punnusta ylöspäin ja kärryä eteenpäin yhtä suurella voimalla $T$, mutta se ei lisää voimaa. Jos $T$ olisi painoa suurempi, punnuksen kokonaisvoima osoittaisi ylös eikä punnus laskisi."
         },
         {
+          "text": "$T$ on puolet $G_2$:sta, koska lanka jakaa voimansa kahden kappaleen kesken",
+          "feedback": "Lanka ei jaa voimaansa kappaleiden kesken: se vetää kumpaakin kappaletta samalla voimalla $T$. Suhde painoon riippuu massoista, ei kiinteästä puolikkaasta."
+        },
+        {
           "text": "$T$ on pienempi kuin $G_2$, koska punnuksen kokonaisvoima osoittaa alaspäin",
           "correct": true,
           "feedback": "Oikein: punnus kiihtyy alas, joten Newtonin toisen lain mukaan $G_2 - T = m_2 a$ ja kokonaisvoima osoittaa alas. Siksi $T < G_2$."
-        },
-        {
-          "text": "$T$ on puolet $G_2$:sta, koska lanka jakaa voimansa kahden kappaleen kesken",
-          "feedback": "Lanka ei jaa voimaansa kappaleiden kesken: se vetää kumpaakin kappaletta samalla voimalla $T$. Suhde painoon riippuu massoista, ei kiinteästä puolikkaasta."
         }
       ]
     },
@@ -96,13 +96,13 @@
       "tolerance": 0.02,
       "choices": [
         {
+          "text": "Langan jännitysvoima ja punnuksen paino, koska punnus vetää myös kärryä langan kautta",
+          "feedback": "Punnuksen paino on Maan voima punnukseen, ei kärryyn. Lanka välittää kärryyn jännitysvoiman $T$, ja se on jo koko langan vaikutus. Painon piirtäminen kärryn kuvioon lisäisi voiman, jota kärryyn ei kohdistu."
+        },
+        {
           "text": "Vain langan jännitysvoima, koska punnuksen paino vaikuttaa punnukseen eikä kärryyn",
           "correct": true,
           "feedback": "Oikein: kärryn voimakuvioon piirretään vain kärryyn vaikuttavat voimat. Punnuksen paino kohdistuu punnukseen, ja lanka välittää vaikutuksen kärryyn jännitysvoimana $T$, joka on kärryn ainoa vaakasuuntainen voima."
-        },
-        {
-          "text": "Langan jännitysvoima ja punnuksen paino, koska punnus vetää myös kärryä langan kautta",
-          "feedback": "Punnuksen paino on Maan voima punnukseen, ei kärryyn. Lanka välittää kärryyn jännitysvoiman $T$, ja se on jo koko langan vaikutus. Painon piirtäminen kärryn kuvioon lisäisi voiman, jota kärryyn ei kohdistu."
         },
         {
           "text": "Vain punnuksen paino, koska se saa kärryn liikkeelle ja lanka vain välittää sen kärrylle",
@@ -244,9 +244,9 @@
       "kind": [
         "error"
       ],
-      "answer": 1.96,
+      "answer": 2.0,
       "unit": "m/s²",
-      "tolerance": 0.03,
+      "tolerance": 0.02,
       "fbd": "equations"
     }
   ],
@@ -281,7 +281,7 @@
     {
       "id": "fy4-13-L3-04",
       "level": 3,
-      "text": "Veturi vetää kolmea peräkkäistä vaunua suoralla vaakasuoralla radalla. Vaunujen massat veturista lukien ovat $m_1 = 24\\,\\text{t}$, $m_2 = 18\\,\\text{t}$ ja $m_3 = 12\\,\\text{t}$, ja ne ovat kytketty toisiinsa kytkimillä. Vastusvoimat jätetään huomiotta, ja kytkimet ovat kevyet ja venymättömät. Junan nopeus mitataan lähdön jälkeen. Taulukossa on esimerkkiaineisto.\n\na) Määritä taulukosta junan kiihtyvyys. Perustele, miksi sitä voi pitää vakiona.\n\nb) Piirrä jokaisen vaunun voimakuvio ja laske vaunujen 1 ja 2 välisen kytkimen voima.\n\nc) Vaunut järjestetään uudelleen niin, että raskain vaunu on viimeisenä ja kevyin ensimmäisenä, ja kiihtyvyys on sama. Kuinka suuri on nyt ensimmäisen ja toisen vaunun välisen kytkimen voima? Kestääkö kytkin, jonka suurin sallittu voima on $20\\,\\text{kN}$? Perustele, miksi kytkimen voima muuttui.\n\nVastauslaatikkoon tulee kohdan b) kytkimen voima kilonewtoneina.",
+      "text": "Veturi vetää kolmea peräkkäistä vaunua suoralla vaakasuoralla radalla. Vaunujen massat ovat $m_1 = 24\\,\\text{t}$, $m_2 = 18\\,\\text{t}$ ja $m_3 = 12\\,\\text{t}$, ja ne on kytketty toisiinsa kytkimillä. Veturin massaa ei lasketa mukaan, ja veturi vetää ensimmäistä vaunua molemmissa järjestyksissä samalla voimalla. Vastusvoimat jätetään huomiotta, ja kytkimet ovat kevyet ja venymättömät. Junan nopeus mitataan lähdön jälkeen. Taulukossa on esimerkkiaineisto.\n\na) Määritä taulukosta junan kiihtyvyys. Perustele, miksi sitä voi pitää vakiona.\n\nb) Piirrä jokaisen vaunun voimakuvio ja laske vaunujen 1 ja 2 välisen kytkimen voima.\n\nc) Vaunut järjestetään uudelleen niin, että raskain vaunu on viimeisenä ja kevyin ensimmäisenä, ja kiihtyvyys on sama. Kuinka suuri on nyt ensimmäisen ja toisen vaunun välisen kytkimen voima? Kestääkö kytkin, jonka suurin sallittu voima on $20\\,\\text{kN}$? Perustele, miksi kytkimen voima muuttui.\n\nVastauslaatikkoon tulee kohdan b) kytkimen voima kilonewtoneina.",
       "kind": [
         "data",
         "model",
@@ -323,7 +323,7 @@
     {
       "id": "fy4-13-L3-05",
       "level": 3,
-      "text": "Kitkattomalla radalla on kärry, jonka massa $m_1$ on tuntematon. Siihen sidottu kevyt ja venymätön lanka kulkee kevyen ja kitkattoman väkipyörän yli, ja langan päässä roikkuu punnus, jonka massa $m_2$ vaihtelee. Kärry päästetään liikkeelle levosta, ja mitataan aika $t$, jonka punnus laskeutuu matkan $0{,}80\\,\\text{m}$ lattiaan asti. Taulukossa on esimerkkiaineisto mittauksista.\n\na) Laske jokaisesta mittauksesta punnuksen kiihtyvyys. Johda kummankin kappaleen liikeyhtälöistä kaava, jolla kärryn massa lasketaan massasta $m_2$ ja kiihtyvyydestä $a$.\n\nb) Määritä kärryn massa jokaisesta mittauksesta ja laske niiden keskiarvo.\n\nc) Punnus, jonka massa on $0{,}200\\,\\text{kg}$, osuu lattiaan. Mitä kärrylle tapahtuu sen jälkeen? Perustele ja laske kärryn nopeus tällä hetkellä.\n\nVastauslaatikkoon tulee kohdan b) kärryn massan keskiarvo.",
+      "text": "Kitkattomalla radalla on kärry, jonka massa $m_1$ on tuntematon. Siihen sidottu kevyt ja venymätön lanka kulkee kevyen ja kitkattoman väkipyörän yli, ja langan päässä roikkuu punnus, jonka massa $m_2$ vaihtelee. Kärry päästetään liikkeelle levosta, ja mitataan aika $t$, jonka punnus laskeutuu matkan $0{,}80\\,\\text{m}$ lattiaan asti. Taulukossa on esimerkkiaineisto mittauksista.\n\na) Laske jokaisesta mittauksesta punnuksen kiihtyvyys. Johda kummankin kappaleen liikeyhtälöistä kaava, jolla kärryn massa lasketaan massasta $m_2$ ja kiihtyvyydestä $a$.\n\nb) Määritä kärryn massa jokaisesta mittauksesta ja laske niiden keskiarvo.\n\nc) Punnus, jonka massa on $0{,}200\\,\\text{kg}$, osuu lattiaan; rata on riittävän pitkä, joten kärry ei osu väkipyörään. Mitä kärrylle tapahtuu sen jälkeen? Perustele ja laske kärryn nopeus tällä hetkellä.\n\nVastauslaatikkoon tulee kohdan b) kärryn massan keskiarvo.",
       "kind": [
         "data",
         "model",

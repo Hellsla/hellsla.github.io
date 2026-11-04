@@ -38,11 +38,11 @@ a["fy4-6-L1-07"] = sf(0.45 * 50 * g, 2)                           # box at rest:
 fs = [0.85, 1.62, 2.50, 3.31, 4.02]; Ns = [m * g for m in (0.20, 0.40, 0.60, 0.80, 1.00)]   # friction against N = mg (data table)
 a["fy4-6-L2-05"] = sf(sum(n * f for n, f in zip(Ns, fs)) / sum(n * n for n in Ns), 2)   # slope of the line through the origin = 0,416
 a["fy4-6-L2-06"] = sf(((2.2 + 2.1 + 2.2) / 3) / (0.75 * g), 2)   # steady pull 2,17 N = mu N, N = mg = 7,36 N → mu = 0,295 (mu0 = 3,3/7,36 = 0,449)
-a["fy4-6-L2-07"] = sf(math.tan(r((24 + 26 + 25 + 27 + 25) / 5)), 2)   # mu0 = tan(mean angle 25,4°) = 0,475
+a["fy4-6-L2-07"] = sf(math.tan(r((24 + 26 + 25 + 27 + 25) / 5)), 2)   # mu0 = tan(mean angle 25,4°) = 0,4748
 # Level 3 additions
 v0 = 80 / 3.6                                                      # 22,2 m/s
 acs = g * (0.45 * math.cos(r(6)) - math.sin(r(6)))                 # wet road, 6° downhill: x: mu mg cos α − mg sin α = ma → 3,36 m/s²
-a["fy4-6-L3-04"] = sf(v0 ** 2 / (2 * acs), 2)                      # s = v0²/(2a) = 73 m (level dry 34 m, level wet 56 m)
-a5 = g * (math.sin(r(25)) - 0.30 * math.cos(r(25)))                # N = mg cos α, not mg: a = 1,48 m/s²
-a["fy4-6-L3-05"] = sf(0.5 * a5 * 3.0 ** 2, 2)                      # from rest: s = a t²/2 = 6,65 m
+a["fy4-6-L3-04"] = sf(v0 ** 2 / (2 * acs), 3)                      # s = v0²/(2a) = 73,4 m (level dry 33,6 m, level wet 55,9 m)
+a5 = g * (math.sin(r(30)) - 0.35 * math.cos(r(30)))                # N = mg cos α, not mg: a = 1,93 m/s²
+a["fy4-6-L3-05"] = sf(0.5 * a5 * 3.0 ** 2, 2)                      # from rest: s = a t²/2 = 8,69 m
 print(json.dumps(a))
