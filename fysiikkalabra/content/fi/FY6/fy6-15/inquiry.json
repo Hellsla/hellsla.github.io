@@ -1,0 +1,343 @@
+{
+  "version": 1,
+  "contribution": "Sähköteho ja Ohmin laki viedään turvallisuuteen: ryhmän kokonaisvirta ja sulake, johdon lämpeneminen, maadoitus, suojausluokat, vikavirtasuoja, kehon läpi kulkeva virta kuivalla ja märällä iholla, läpilyöntilujuus, suurjännitejohdot ja askeljännite sekä maallikon sallitut sähkötyöt Suomessa.",
+  "learn": [
+    "laskemaan ryhmäjohdon kokonaisvirran laitteiden tehoista ja päättelemään, ylittyykö sulakkeen nimellisvirta.",
+    "laskemaan kehon läpi kulkevan virran ja vertailemaan sitä vaarallisiin virtoihin kuivalla ja märällä iholla.",
+    "selittämään, miten maadoitus, suojausluokat, vikavirtasuoja ja eristeet suojaavat sähköiskulta."
+  ],
+  "prior": [
+    "Sähköteho on $P = UI$, ja johtimessa kehittyy lämpöteho $P = RI^2$ (luku *Sähköteho ja vastuksen lämpeneminen*)",
+    "Rinnankytkennässä jokaisella haaralla on sama jännite ja haarojen virrat summautuvat (luku *Vastusten sarja- ja rinnankytkennät*)",
+    "Eriste kestää sähkökentän vain läpilyöntilujuuteensa asti (luku *Kondensaattori ja sen energia*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Lauantaiaamuna keittiössä keitetään kahvia, vedenkeitin kiehuttaa teevettä, leivänpaahdin on päällä ja mikroaaltouunissa lämpenee puuro. Hetken kuluttua keittiö pimenee: sähkökeskuksessa yksi johdonsuojakatkaisija on lauennut. Mikään laite ei ole rikki, ja kun laitteita käytetään vuorotellen, katkaisija pysyy päällä.",
+      "question": "Miksi katkaisija laukesi, ja suojaako sama sulake myös ihmistä sähköiskulta?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Kertaa: laitteen virta",
+      "optional": true,
+      "prompt": "Vedenkeittimen teho on $2000\\,\\text{W}$, ja se on kytketty $230\\,\\text{V}$:n pistorasiaan. Kuinka suuren virran keitin ottaa?",
+      "choices": [
+        {
+          "text": "Noin $8{,}7\\,\\text{A}$, koska virta on teho jaettuna jännitteellä.",
+          "correct": true,
+          "feedback": "Oikein. $P = UI$, joten $I = P : U = 2000\\,\\text{W} : 230\\,\\text{V} \\approx 8{,}7\\,\\text{A}$ (luku *Sähköteho ja vastuksen lämpeneminen*). Tänään lasketaan, mitä tapahtuu, kun monta tällaista laitetta on samassa ryhmässä."
+        },
+        {
+          "text": "Noin $0{,}12\\,\\text{A}$, koska virta on jännite jaettuna teholla.",
+          "feedback": "Jännite jaettuna teholla ei ole virta, eikä sen yksikkö ole ampeeri. Tehosta $P = UI$ ratkaistaan $I = P : U = 2000\\,\\text{W} : 230\\,\\text{V} \\approx 8{,}7\\,\\text{A}$ (luku *Sähköteho ja vastuksen lämpeneminen*)."
+        },
+        {
+          "text": "Noin $2000\\,\\text{A}$, koska laitteen virta on sama luku kuin sen teho.",
+          "feedback": "Teho ja virta ovat eri suureita. Sama teho saadaan pienellä virralla, kun jännite on suuri: $I = P : U = 2000\\,\\text{W} : 230\\,\\text{V} \\approx 8{,}7\\,\\text{A}$ (luku *Sähköteho ja vastuksen lämpeneminen*)."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 1: sulake vai vikavirtasuoja?",
+      "justify": true,
+      "reveal": {
+        "after": "teoria-osa",
+        "pending": "Palaute avautuu, kun olet tutkinut taulukot ja Teoriatiivistelmä on näkyvissä."
+      },
+      "prompt": "Ihminen koskettaa vioittuneen laitteen jännitteistä runkoa, ja hänen kauttaan kulkee maahan virta $0{,}1\\,\\text{A}$. Ryhmässä on $10\\,\\text{A}$:n sulake ja $30\\,\\text{mA}$:n vikavirtasuoja. Mikä katkaisee virran?",
+      "choices": [
+        {
+          "text": "Sulake, koska ihmisen kautta kulkeva virta on vaarallisen suuri.",
+          "feedback": "Virta on ihmiselle vaarallinen, mutta sulakkeelle pieni: $0{,}1\\,\\text{A}$ on sadasosa sulakkeen nimellisvirrasta $10\\,\\text{A}$. Sulake suojaa johtoja ylikuumenemiselta, ei ihmistä. Vikavirtasuoja huomaa, että $100\\,\\text{mA}$ ei palaa nollajohdinta pitkin, ja katkaisee virran."
+        },
+        {
+          "text": "Vikavirtasuoja, koska vaihe- ja nollajohtimen virtojen ero on yli $30\\,\\text{mA}$.",
+          "correct": true,
+          "feedback": "Teoria tukee tätä: vikavirtasuoja vertaa laitteeseen menevää ja sieltä palaavaa virtaa. Ihmisen kautta maahan menevä $100\\,\\text{mA}$ puuttuu nollajohtimesta, ja ero ylittää $30\\,\\text{mA}$. Sulake ei reagoi, koska $0{,}1\\,\\text{A}$ on vain sadasosa sen nimellisvirrasta."
+        },
+        {
+          "text": "Molemmat yhtä aikaa, koska kumpikin on tehty katkaisemaan vaarallinen virta.",
+          "feedback": "Suojat on tehty eri tarkoituksiin. Sulake katkaisee johtoa kuumentavan ylivirran tai oikosulun, eikä se huomaa $0{,}1\\,\\text{A}$:n virtaa, joka on sadasosa sen nimellisvirrasta. Ihmistä suojaa vikavirtasuoja, joka laukeaa noin $30\\,\\text{mA}$:n vikavirrasta."
+        },
+        {
+          "text": "Kumpikaan ei katkaise, koska $0{,}1\\,\\text{A}$ on niin pieni virta.",
+          "feedback": "Sulakkeelle virta on liian pieni, mutta vikavirtasuojalle ei: se laukeaa, kun noin $30\\,\\text{mA}$ katoaa maahan, ja $0{,}1\\,\\text{A} = 100\\,\\text{mA}$ on yli kolminkertainen. Kehon läpi kulkevana $100\\,\\text{mA}$ on hengenvaarallinen virta."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 2: lintu johtimella",
+      "layout": "models",
+      "justify": true,
+      "reveal": {
+        "after": "teoria-osa",
+        "pending": "Palaute avautuu, kun Teoriatiivistelmä on näkyvissä."
+      },
+      "prompt": "Lintu istuu paljaalla $20\\,\\text{kV}$:n johtimella eikä saa sähköiskua. Mikä selitys on oikea?",
+      "choices": [
+        {
+          "text": "Linnun kuivat jalat eristävät sen johtimesta.",
+          "feedback": "Linnun jalat johtavat sähköä, ja märkänäkin lintu istuu turvassa. Ratkaisevaa on, että molemmat jalat ovat samassa potentiaalissa: jalkojen välillä ei ole jännitettä, joten linnun kautta ei kulje virtaa."
+        },
+        {
+          "text": "Linnun jalkojen välillä ei ole jännitettä, joten sen kautta ei kulje virtaa.",
+          "correct": true,
+          "feedback": "Teoria tukee tätä: kehon läpi kulkee virta vain, kun keho yhdistää kaksi eri potentiaalissa olevaa kohtaa. Linnun jalat ovat samalla johtimella lähes samassa potentiaalissa. Jos siipi koskettaisi samalla toista johdinta tai maadoitettua pylvästä, virta kulkisi linnun kautta."
+        },
+        {
+          "text": "Virta kulkee kokonaan johtimessa, koska se valitsee aina pienimmän resistanssin reitin.",
+          "feedback": "Rinnakkaisissa reiteissä virta jakautuu kaikkiin reitteihin eikä valitse vain yhtä. Linnun kautta ei kulje merkittävää virtaa siksi, että sen jalkojen välillä ei ole jännitettä: jalat ovat samalla johtimella lähes samassa potentiaalissa."
+        },
+        {
+          "text": "Suurjännitejohtimen ympärillä on ohut eristekuori, joka suojaa lintua.",
+          "feedback": "Suurjännitejohtimet ovat paljaita metallijohtimia, ja niitä eristää vain ympäröivä ilma. Lintu on turvassa, koska sen molemmat jalat ovat samassa potentiaalissa eikä sen kautta siksi kulje virtaa."
+        }
+      ]
+    },
+    {
+      "id": "keittio",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Mitkä laitteet mahtuvat samaan ryhmään?",
+      "source": "example",
+      "source_note": "Keksitty esimerkkiaineisto: kodin laitteiden tyypillisiä tehoja, ei mittaus.",
+      "text": "Keittiön pistorasiat ovat samassa ryhmässä, joka on suojattu $10\\,\\text{A}$:n sulakkeella. Verkkojännite on $230\\,\\text{V}$, ja laitteet on kytketty rinnan.\n\n| laite | $P$ |\n| --- | --- |\n| vedenkeitin | $2000\\,\\text{W}$ |\n| kahvinkeitin | $1000\\,\\text{W}$ |\n| mikroaaltouuni (ottoteho) | $1200\\,\\text{W}$ |\n| leivänpaahdin | $900\\,\\text{W}$ |\n| jääkaappi | $100\\,\\text{W}$ |\n\nLaske jokaisen laitteen virta $I = P : U$. Selvitä sitten, mitkä kahden laitteen yhdistelmät mahtuvat ryhmään ylittämättä sulakkeen nimellisvirtaa ja kuinka suuri virta kulkisi, jos kaikki laitteet olisivat päällä yhtä aikaa.",
+      "question": {
+        "type": "numeric",
+        "prompt": "Kuinka suuri virta ryhmäjohdossa kulkee, kun vedenkeitin ja mikroaaltouuni ovat päällä yhtä aikaa?",
+        "answer": 13.913043,
+        "unit": "A",
+        "tolerance": 0.02,
+        "hints": [
+          "Laitteet ovat rinnan. Miten rinnakkaisten laitteiden virrat yhdistyvät ryhmäjohdossa?",
+          "Ryhmäjohdon virta on laitteiden virtojen summa, eli yhteisteho jaettuna jännitteellä.",
+          "$I = (2000\\,\\text{W} + 1200\\,\\text{W}) : 230\\,\\text{V}$."
+        ],
+        "mistakes": [
+          {
+            "value": 8.695652,
+            "feedback": "Tämä on vain vedenkeittimen virta. Sulakkeen läpi kulkee molempien laitteiden virta: $8{,}7\\,\\text{A} + 5{,}2\\,\\text{A} \\approx 13{,}9\\,\\text{A}$."
+          },
+          {
+            "value": 0.071875,
+            "feedback": "Jaoit jännitteen teholla. Virta on teho jaettuna jännitteellä: $3200\\,\\text{W} : 230\\,\\text{V} \\approx 13{,}9\\,\\text{A}$."
+          }
+        ],
+        "solution": "**Annettu:** vedenkeittimen teho $P_1 = 2000\\,\\text{W}$, mikroaaltouunin ottoteho $P_2 = 1200\\,\\text{W}$, jännite $U = 230\\,\\text{V}$\n\n**Kysytty:** ryhmäjohdon virta $I$ ampeereina\n\n**Periaate:** Laitteet on kytketty rinnan, joten kummankin jännite on $230\\,\\text{V}$ ja niiden virrat summautuvat ryhmäjohdossa. Kokonaisvirta saadaan siksi laitteiden yhteistehosta.\n\n**Kaava:** $I = \\dfrac{P_1 + P_2}{U}$\n\n**Muunnokset:** Ei tarvita: $1\\,\\text{W} : 1\\,\\text{V} = 1\\,\\text{A}$.\n\n**Sijoitus:** $I = \\dfrac{2000\\,\\text{W} + 1200\\,\\text{W}}{230\\,\\text{V}} = \\dfrac{3200\\,\\text{W}}{230\\,\\text{V}} = 13{,}91\\,\\text{A}$\n\n**Vastaus:** $14\\,\\text{A}$, kaksi merkitsevää numeroa kuten tehossa $1200\\,\\text{W}$. Virta on suurempi kuin sulakkeen nimellisvirta $10\\,\\text{A}$, joten ryhmä on ylikuormitettu.\n\n**Järkevyys:** Laitteiden omat virrat ovat $8{,}7\\,\\text{A}$ ja $5{,}2\\,\\text{A}$, ja niiden summa on sama $13{,}9\\,\\text{A}$. Kumpikin laite mahtuu ryhmään yksinään, mutta ei yhdessä. Kaikki viisi laitetta yhdessä ottaisivat $5200\\,\\text{W} : 230\\,\\text{V} \\approx 23\\,\\text{A}$."
+      }
+    },
+    {
+      "id": "iho",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Kuiva vai märkä iho?",
+      "source": "example",
+      "source_note": "Keksitty esimerkkiaineisto: virtatien resistanssit ovat suuntaa antavia suuruusluokkia. Vaikutusrajat ovat likimääräisiä arvoja standardin IEC 60479-1 kuvaamista virran vaikutuksista.",
+      "text": "Ihminen koskettaa vioittuneen laitteen runkoa, jonka jännite maahan nähden on $230\\,\\text{V}$. Virta kulkee kädestä kehon kautta jalkoihin ja maahan. Taulukossa on koko virtatien resistanssi kolmessa tilanteessa.\n\n| tilanne | $R$ |\n| --- | --- |\n| kuivat kädet, kumipohjaiset kengät, kuiva lattia | $200\\,\\text{k}\\Omega$ |\n| kuivat kädet, paljaat jalat kuivalla lattialla | $20\\,\\text{k}\\Omega$ |\n| märät kädet, paljaat jalat märällä lattialla | $1{,}0\\,\\text{k}\\Omega$ |\n\nLaske jokaisessa tilanteessa kehon läpi kulkeva virta milliampeereina. Vertaa virtoja suuntaa antaviin vaikutusrajoihin: noin $0{,}5\\,\\text{mA}$:n virta tuntuu, noin $10\\,\\text{mA}$:n virrasta ei välttämättä pääse irti, ja noin $50\\,\\text{mA}$:sta alkaen sydämen kammiovärinän vaara kasvaa.",
+      "question": {
+        "type": "numeric",
+        "prompt": "Kuinka suuri virta kulkee kehon läpi märissä oloissa? Vastaa milliampeereina.",
+        "answer": 230.0,
+        "unit": "mA",
+        "tolerance": 0.02,
+        "hints": [
+          "Keho on osa virtapiiriä. Mikä laki kertoo virran, kun jännite ja resistanssi tunnetaan?",
+          "$I = U : R$, kun resistanssi on ohmeina: $1{,}0\\,\\text{k}\\Omega = 1000\\,\\Omega$.",
+          "$I = 230\\,\\text{V} : 1000\\,\\Omega$, ja $1\\,\\text{A} = 1000\\,\\text{mA}$."
+        ],
+        "mistakes": [
+          {
+            "value": 0.23,
+            "feedback": "Tulos on ampeereina. Milliampeereina se on $0{,}23 \\cdot 1000\\,\\text{mA} = 230\\,\\text{mA}$."
+          },
+          {
+            "value": 230000,
+            "feedback": "Et muuntanut kilo-ohmeja ohmeiksi. $1{,}0\\,\\text{k}\\Omega = 1000\\,\\Omega$, joten virta on $0{,}23\\,\\text{A} = 230\\,\\text{mA}$."
+          }
+        ],
+        "solution": "**Annettu:** kosketusjännite $U = 230\\,\\text{V}$, virtatien resistanssi märissä oloissa $R = 1{,}0\\,\\text{k}\\Omega$\n\n**Kysytty:** kehon läpi kulkeva virta $I$ milliampeereina\n\n**Periaate:** Keho on osa virtapiiriä laitteen rungon ja maan välillä, joten sen läpi kulkeva virta saadaan Ohmin laista koko virtatien resistanssin avulla.\n\n**Kaava:** $U = RI$, josta $I = \\dfrac{U}{R}$\n\n**Muunnokset:** $R = 1{,}0\\,\\text{k}\\Omega = 1{,}0 \\cdot 1000\\,\\Omega = 1000\\,\\Omega$; $1\\,\\text{A} = 1000\\,\\text{mA}$.\n\n**Sijoitus:** $I = \\dfrac{230\\,\\text{V}}{1000\\,\\Omega} = 0{,}23\\,\\text{A} = 230\\,\\text{mA}$\n\n**Vastaus:** $230\\,\\text{mA}$, kaksi merkitsevää numeroa kuten resistanssissa $1{,}0\\,\\text{k}\\Omega$.\n\n**Järkevyys:** Virta on yli nelinkertainen kammiovärinän vaaran rajaan $50\\,\\text{mA}$ verrattuna. Kumipohjaisin kengin virta olisi $230\\,\\text{V} : 200\\,\\text{k}\\Omega = 1{,}15\\,\\text{mA}$ ja paljain jaloin kuivalla lattialla $11{,}5\\,\\text{mA}$; resistanssi pienenee märissä oloissa $200$-osaan, joten virta kasvaa $200$-kertaiseksi."
+      }
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös: mikä suojaa johtoa, mikä ihmistä?",
+      "prompt": "Kirjoita taulukoiden laskujen perusteella: miksi sulake laukeaa, vaikka mikään laite ei ole rikki, ja miksi sama sulake ei suojaa ihmistä? Miksi märkä iho tekee sähköiskusta vaarallisemman?",
+      "model": "Ryhmän laitteet ovat rinnan, joten niiden virrat summautuvat sulakkeessa. Vedenkeitin ottaa $8{,}7\\,\\text{A}$ ja mikroaaltouuni $5{,}2\\,\\text{A}$; kumpikin mahtuu yksin $10\\,\\text{A}$:n ryhmään, mutta yhdessä virta on $13{,}9\\,\\text{A}$, joten sulake katkaisee virran ennen kuin johto kuumenee liikaa. Sulake reagoi ampeerien virtoihin, mutta ihmiselle vaarallinen virta on kymmeniä milliampeereja, sadasosa sulakkeen nimellisvirrasta. Siksi ihmistä suojaa vikavirtasuoja. Kehon läpi kulkeva virta on $I = U : R$. Kun iho ja lattia ovat märkiä, resistanssi pienenee noin $200\\,\\text{k}\\Omega$:sta noin $1\\,\\text{k}\\Omega$:iin, ja virta kasvaa noin $1\\,\\text{mA}$:sta noin $230\\,\\text{mA}$:iin, mikä on hengenvaarallinen. Luvut on laskettu keksitystä esimerkkiaineistosta.",
+      "criteria": [
+        "Vastaus kertoo, että rinnankytkettyjen laitteiden virrat summautuvat sulakkeessa, ja perustelee sen keittiötaulukon luvuilla.",
+        "Vastaus selittää, että sulake suojaa johtoa ylikuumenemiselta eikä huomaa ihmiselle vaarallista milliampeerien virtaa.",
+        "Vastaus nimeää vikavirtasuojan ihmisen suojaksi.",
+        "Vastaus perustelee märän ihon vaaran Ohmin lailla: pienempi resistanssi, suurempi virta, ja vertaa virtaa vaikutusrajoihin."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Palaa ennusteisiisi",
+      "optional": true,
+      "prompt": "Vertaa ennusteitasi teoriaan ja laskemiisi virtoihin. Palaa sitten alun kysymykseen: miksi keittiön katkaisija laukesi, ja mikä suojaa ihmistä?",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2"
+      ]
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe",
+      "prompt": "Opiskelija tarkistaa, voiko $10\\,\\text{A}$:n ryhmässä käyttää yhtä aikaa vedenkeitintä ($2000\\,\\text{W}$) ja leivänpaahdinta ($900\\,\\text{W}$):\n\n$$\\begin{aligned} I_1 &= \\frac{2000\\,\\text{W}}{230\\,\\text{V}} \\approx 8{,}7\\,\\text{A} \\\\ I_2 &= \\frac{900\\,\\text{W}}{230\\,\\text{V}} \\approx 3{,}9\\,\\text{A} \\end{aligned}$$\n\n”Kumpikin virta on alle $10\\,\\text{A}$, joten laitteet voi pitää päällä yhtä aikaa.” Missä on virhe?",
+      "choices": [
+        {
+          "text": "Sulakkeen läpi kulkee virtojen summa, noin $12{,}6\\,\\text{A}$, joka ylittää $10\\,\\text{A}$.",
+          "correct": true,
+          "feedback": "Oikein. Laitteet ovat rinnan, ja sulake on ryhmäjohdon alussa, joten sen läpi kulkee molempien virta: $2900\\,\\text{W} : 230\\,\\text{V} \\approx 12{,}6\\,\\text{A}$. Virrat on laskettu oikein, mutta johtopäätös vertaa väärää virtaa sulakkeeseen."
+        },
+        {
+          "text": "Virrat on laskettu väärin: virta on jännite jaettuna teholla.",
+          "feedback": "Virrat on laskettu oikein, sillä $P = UI$ antaa $I = P : U$. Virhe on johtopäätöksessä: sulake kantaa molempien laitteiden virran, $8{,}7\\,\\text{A} + 3{,}9\\,\\text{A} \\approx 12{,}6\\,\\text{A}$, joka ylittää $10\\,\\text{A}$."
+        },
+        {
+          "text": "Virheitä ei ole, koska jokaisella laitteella on oma pistorasiansa.",
+          "feedback": "Saman ryhmän pistorasiat ovat saman ryhmäjohdon ja saman sulakkeen takana. Siksi sulakkeen läpi kulkee kaikkien ryhmän laitteiden virta yhteensä, tässä noin $12{,}6\\,\\text{A}$."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Sovella uuteen tilanteeseen",
+      "prompt": "Rakennustyömaalla $16\\,\\text{A}$:n ryhmään on kytketty saman jatkojohdon kautta työmaalämmitin ($2{,}0\\,\\text{kW}$) ja kulmahiomakone ($1{,}4\\,\\text{kW}$). Jatkojohdon kahden johtimen yhteenlaskettu resistanssi on $0{,}60\\,\\Omega$. Oletetaan, että laitteiden virrat ovat samat kuin suoraan $230\\,\\text{V}$:n pistorasiaan kytkettyinä. Kuinka suuri lämpöteho jatkojohdossa kehittyy?",
+      "answer": 131.115312,
+      "unit": "W",
+      "tolerance": 0.02,
+      "hints": [
+        "Jatkojohdon läpi kulkee molempien laitteiden virta. Kuinka suuri se on?",
+        "$I = (2000\\,\\text{W} + 1400\\,\\text{W}) : 230\\,\\text{V}$. Johdossa kehittyvä lämpöteho riippuu johdon resistanssista ja virrasta.",
+        "$P = RI^2 = 0{,}60\\,\\Omega \\cdot (14{,}8\\,\\text{A})^2$."
+      ],
+      "mistakes": [
+        {
+          "value": 8.869565,
+          "feedback": "Laskit $RI$, joka on johdon jännite volteissa, ei teho. Lämpöteho on $RI^2$: virta pitää korottaa toiseen potenssiin."
+        },
+        {
+          "value": 45.36862,
+          "feedback": "Käytit vain lämmittimen virtaa. Jatkojohdon läpi kulkee molempien laitteiden virta yhteensä, $3400\\,\\text{W} : 230\\,\\text{V} \\approx 14{,}8\\,\\text{A}$."
+        },
+        {
+          "value": 88166.666667,
+          "feedback": "Käytit kaavaa $U^2 : R$ verkkojännitteellä. Jatkojohdon yli ei ole $230\\,\\text{V}$, vaan vain muutama voltti. Laske johdon virta laitteiden tehoista ja käytä kaavaa $P = RI^2$."
+        }
+      ],
+      "solution": "**Annettu:** tehot $P_1 = 2{,}0\\,\\text{kW}$ ja $P_2 = 1{,}4\\,\\text{kW}$, jännite $U = 230\\,\\text{V}$, jatkojohdon resistanssi $R = 0{,}60\\,\\Omega$\n\n**Kysytty:** jatkojohdossa kehittyvä lämpöteho $P_\\text{j}$\n\n**Periaate:** Laitteet ovat jatkojohdon päässä rinnan, joten johdon läpi kulkee niiden virtojen summa, joka saadaan yhteistehosta. Johdon resistanssissa sähköenergia muuttuu sisäenergiaksi teholla $RI^2$. Oletuksen mukaan johdon pieni jännitehäviö ei muuta laitteiden virtoja.\n\n**Kaava:** $I = \\dfrac{P_1 + P_2}{U}$ ja $P_\\text{j} = RI^2$, joten $P_\\text{j} = R\\left(\\dfrac{P_1 + P_2}{U}\\right)^2$\n\n**Muunnokset:** $P_1 + P_2 = 2{,}0\\,\\text{kW} + 1{,}4\\,\\text{kW} = 3{,}4\\,\\text{kW} = 3{,}4 \\cdot 1000\\,\\text{W} = 3400\\,\\text{W}$\n\n**Sijoitus:** $I = \\dfrac{3400\\,\\text{W}}{230\\,\\text{V}} = 14{,}78\\,\\text{A}$ ja $P_\\text{j} = 0{,}60\\,\\Omega \\cdot (14{,}78\\,\\text{A})^2 = 131{,}1\\,\\text{W}$\n\n**Vastaus:** $130\\,\\text{W}$, kaksi merkitsevää numeroa kuten resistanssissa $0{,}60\\,\\Omega$ ja tehoissa.\n\n**Järkevyys:** Virta $14{,}8\\,\\text{A}$ on alle $16\\,\\text{A}$, joten sulake ei laukea, mutta johto lämpenee $130\\,\\text{W}$:n teholla. Johdon jännite on $0{,}60\\,\\Omega \\cdot 14{,}8\\,\\text{A} \\approx 8{,}9\\,\\text{V}$, pieni verrattuna $230\\,\\text{V}$:iin, joten oletus pitää. Kelalle rullattuna johto ei pääse jäähtymään, joten työmaalla johto puretaan kelalta kokonaan."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Harjoittele kolmella tasolla. Tason 1 tehtävissä lasketaan laitteen virta, ryhmän suurin teho, kehon läpi kulkeva virta tai johdon lämpöteho yhdellä kaavalla, tason 2 tehtävissä yhdistetään kaksi vaihetta tai käännetään kaava, ja taso 3 vaatii päättelyä sulakkeesta, sarjaan kytketyistä resistansseista ja askeljännitteestä."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Askeljännite",
+      "prompt": "Suurjännitejohdin on pudonnut maahan myrskyssä. Miksi sen luota poistutaan lyhyin askelin jalat yhdessä?",
+      "choices": [
+        {
+          "text": "Maan potentiaali pienenee etäisyyden kasvaessa, joten pitkän askeleen jalkojen välille tulee suuri jännite.",
+          "correct": true,
+          "feedback": "Oikein. Virta leviää maaperään, ja maan potentiaali pienenee kosketuskohdasta poispäin. Jalkojen välinen askeljännite kasvaa askeleen pituuden mukana, ja jalat yhdessä se on lähes nolla."
+        },
+        {
+          "text": "Nopea liike synnyttää kehoon sähkövarauksen, joka voi purkautua maahan kipinänä.",
+          "feedback": "Vaara ei johdu liikkeen nopeudesta. Maan potentiaali pienenee kosketuskohdasta poispäin, ja jos jalat ovat eri etäisyyksillä, niiden välillä on askeljännite, joka ajaa virran jalasta toiseen kehon kautta."
+        },
+        {
+          "text": "Maa on eriste, joten virta kulkee vain siellä, mihin johdin koskettaa, ja lyhyet askeleet pitävät sen kaukana.",
+          "feedback": "Maa johtaa sähköä, ja juuri siksi virta leviää maaperään laajalle alueelle. Maan potentiaali pienenee kosketuskohdasta poispäin, ja pitkä askel ulottuu kahden eri potentiaalin välille."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Suojausluokan merkki",
+      "layout": "figures",
+      "prompt": "Hiustenkuivaajan kilvessä on merkki, joka kertoo, että laitteessa on kaksinkertainen tai vahvistettu eristys eikä sitä maadoiteta. Mikä merkki se on?",
+      "choices": [
+        {
+          "text": "",
+          "figure": "fy6-15/merkki-2",
+          "correct": true,
+          "feedback": "Oikein. Kaksi sisäkkäistä neliötä on suojausluokan II merkki: kaksinkertainen tai vahvistettu eristys erottaa jännitteiset osat käyttäjästä, joten maadoitusta ei tarvita."
+        },
+        {
+          "text": "",
+          "figure": "fy6-15/merkki-1",
+          "feedback": "Ympyrän sisällä oleva maadoitusmerkki tarkoittaa suojausluokkaa I: laitteen runko on suojamaadoitettu. Kaksinkertaisen eristyksen merkki on kaksi sisäkkäistä neliötä."
+        },
+        {
+          "text": "",
+          "figure": "fy6-15/merkki-3",
+          "feedback": "Vinoneliö, jonka sisällä on III, tarkoittaa suojausluokkaa III: laite toimii pienellä suojajännitteellä. Kaksinkertaisen eristyksen merkki on kaksi sisäkkäistä neliötä."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Selitä suojamaadoitus",
+      "optional": true,
+      "prompt": "Pesukoneen sisällä vaihejohtimen eriste on kulunut, ja johdin koskettaa koneen metallirunkoa. Selitä, miten suojamaadoitus ja sulake suojaavat konetta koskettavaa ihmistä. Miksi suojausluokan II laitteessa ei tarvita maadoitusta?",
+      "model": "Pesukone on suojausluokan I laite, joten sen metallirunko on kytketty keltavihreällä suojamaadoitusjohtimella maahan. Kun vaihejohdin koskettaa runkoa, virta pääsee kulkemaan suojamaadoitusjohdinta pitkin, jonka resistanssi on hyvin pieni. Silloin vikavirta on suuri, paljon suurempi kuin sulakkeen nimellisvirta, ja sulake katkaisee virran nopeasti. Ilman maadoitusta runko jäisi jännitteiseksi, ja virta kulkisi runkoon koskevan ihmisen kautta maahan. Suojausluokan II laitteessa ei ole kosketeltavia johtavia osia, joihin vika voisi tuoda jännitteen, koska kaksinkertainen tai vahvistettu eristys erottaa jännitteiset osat käyttäjästä.",
+      "criteria": [
+        "Vastaus kertoo, että suojamaadoitusjohdin yhdistää rungon maahan ja vikavirta kulkee sitä pitkin.",
+        "Vastaus selittää, että vikavirta on suuri, joten sulake katkaisee virran.",
+        "Vastaus kertoo, mitä tapahtuisi ilman maadoitusta: virta kulkisi ihmisen kautta.",
+        "Vastaus perustelee luokan II laitteen turvallisuuden kaksinkertaisella tai vahvistetulla eristyksellä."
+      ]
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Lopuksi kaksi nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+    }
+  ]
+}

@@ -3928,7 +3928,8 @@
     "term": "läpilyöntilujuus",
     "definition": "Suurin sähkökentän voimakkuus $E_\\text{max}$, jonka eriste kestää alkamatta johtaa. Kun kenttä ylittää sen, eristeen läpi purkautuu kipinä. Ilmalle se on noin $3\\,\\text{MV/m}$.",
     "lessons": [
-      "fy6-13"
+      "fy6-13",
+      "fy6-15"
     ],
     "see_also": [
       "eriste",
@@ -4258,6 +4259,199 @@
     ],
     "see_also": [
       "paine"
+    ],
+    "locked": false
+  },
+  {
+    "term": "sulake",
+    "definition": "Virtapiirin suojalaite, joka katkaisee virran, kun virta on liian suuri pitkään tai kun syntyy oikosulku. Sulake suojaa johtoja ylikuumenemiselta; kodin ryhmäjohdoissa se on tavallisesti $10\\,\\text{A}$ tai $16\\,\\text{A}$. Sulakkeena toimii sulava lanka (tulppasulake) tai johdonsuojakatkaisija.",
+    "lessons": [
+      "fy6-15"
+    ],
+    "see_also": [
+      "vikavirtasuoja",
+      "sähköteho"
+    ],
+    "locked": false
+  },
+  {
+    "term": "vikavirtasuoja",
+    "definition": "Suojalaite, joka vertaa laitteeseen menevää ja sieltä palaavaa virtaa. Jos niiden ero eli vikavirta ylittää laukaisuvirran, tavallisesti $30\\,\\text{mA}$, suoja katkaisee virran sekunnin murto-osassa. Se pienentää sähköiskun vaaraa, kun virta kulkee ihmisen kautta maahan.",
+    "lessons": [
+      "fy6-15"
+    ],
+    "see_also": [
+      "sulake",
+      "maadoitus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "suojausluokitus",
+    "definition": "Sähkölaitteiden jako suojausluokkiin sen mukaan, miten laite suojaa käyttäjää sähköiskulta. Luokan I laitteen metallirunko on suojamaadoitettu, luokan II laitteessa on kaksinkertainen tai vahvistettu eristys, ja luokan III laite toimii pienellä suojajännitteellä.",
+    "lessons": [
+      "fy6-15"
+    ],
+    "see_also": [
+      "maadoitus",
+      "eriste"
+    ],
+    "locked": false
+  },
+  {
+    "term": "maadoitus",
+    "definition": "Laitteen johtavan rungon tai muun osan yhdistäminen maahan suojamaadoitusjohtimella, joka on väriltään keltavihreä. Jos vaihejohdin koskettaa vian takia runkoa, vikavirta kulkee maadoitusjohdinta pitkin ja sulake tai vikavirtasuoja katkaisee virran.",
+    "lessons": [
+      "fy6-15"
+    ],
+    "see_also": [
+      "suojausluokitus",
+      "vikavirtasuoja"
+    ],
+    "locked": false
+  },
+  {
+    "term": "pääsulake",
+    "definition": "Sähkökeskuksen sulake, joka on talon jokaisessa vaihejohtimessa ennen ryhmiä, esimerkiksi $3 \\cdot 25\\,\\text{A}$. Se rajoittaa koko talon virtaa: saman vaihejohtimen kautta kulkevat kaikkien laitteiden virrat lasketaan yhteen, eikä summa saa pitkään ylittää pääsulakkeen kokoa.",
+    "lessons": [
+      "fy6-16"
+    ],
+    "see_also": [
+      "sulake",
+      "kolmivaihesähkö"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kolmivaihesähkö",
+    "definition": "Sähköliittymä, jossa on kolme vaihejohdinta ja nollajohdin. Kunkin vaihejohtimen ja nollajohtimen välinen jännite on Suomessa $230\\,\\text{V}$. Kun laite ottaa jokaisesta vaihejohtimesta saman virran $I$, sen teho on $P = 3UI$.",
+    "lessons": [
+      "fy6-16"
+    ],
+    "see_also": [
+      "pääsulake",
+      "sähköteho"
+    ],
+    "locked": false
+  },
+  {
+    "term": "puolijohde",
+    "definition": "Aine, kuten pii, joka johtaa sähköä huonommin kuin metallit mutta paremmin kuin eristeet. Sen johtavuutta voidaan muuttaa lisäämällä siihen pieniä määriä muita aineita, ja siitä valmistetaan diodit, LEDit, aurinkokennot ja transistorit.",
+    "lessons": [
+      "fy6-14"
+    ],
+    "see_also": [
+      "diodi",
+      "aurinkokenno"
+    ],
+    "locked": false
+  },
+  {
+    "term": "diodi",
+    "definition": "Puolijohdekomponentti, joka päästää sähkövirran läpi vain yhteen suuntaan. Piirrosmerkin kolmio osoittaa suuntaan, johon virta pääsee; kolmion puoleinen napa on anodi ja poikkiviivan puoleinen katodi.",
+    "lessons": [
+      "fy6-14"
+    ],
+    "see_also": [
+      "päästösuunta",
+      "estosuunta",
+      "kynnysjännite"
+    ],
+    "locked": false
+  },
+  {
+    "term": "LED",
+    "definition": "Hohtodiodi eli diodi, joka lähettää valoa, kun virta kulkee sen läpi päästösuuntaan. Valon väri riippuu puolijohdemateriaalista; LEDin kanssa kytketään sarjaan etuvastus, joka rajoittaa virran.",
+    "lessons": [
+      "fy6-14"
+    ],
+    "see_also": [
+      "diodi",
+      "etuvastus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "päästösuunta",
+    "definition": "Diodin kytkentä, jossa sen anodi on lähteen plusnavan puolella. Kun diodin jännite ylittää kynnysjännitteen, virta kulkee diodin läpi.",
+    "lessons": [
+      "fy6-14"
+    ],
+    "see_also": [
+      "estosuunta",
+      "kynnysjännite"
+    ],
+    "locked": false
+  },
+  {
+    "term": "estosuunta",
+    "definition": "Diodin kytkentä, jossa sen katodi on lähteen plusnavan puolella. Virtaa ei käytännössä kulje, ja koko lähteen jännite on diodin yli.",
+    "lessons": [
+      "fy6-14"
+    ],
+    "see_also": [
+      "päästösuunta",
+      "diodi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kynnysjännite",
+    "definition": "Diodin jännite päästösuunnassa, jonka jälkeen virta alkaa kasvaa jyrkästi. Piidiodilla se on noin $0{,}6$–$0{,}7\\,\\text{V}$ ja LEDeillä värin mukaan noin $1{,}8$–$3{,}3\\,\\text{V}$.",
+    "lessons": [
+      "fy6-14"
+    ],
+    "see_also": [
+      "diodi",
+      "ominaiskäyrä"
+    ],
+    "locked": false
+  },
+  {
+    "term": "etuvastus",
+    "definition": "LEDin tai diodin kanssa sarjaan kytketty vastus, joka rajoittaa virran. Sen resistanssi on $R = \\tfrac{U - U_\\text{D}}{I}$, missä $U$ on lähteen ja $U_\\text{D}$ LEDin jännite ja $I$ virta.",
+    "lessons": [
+      "fy6-14"
+    ],
+    "see_also": [
+      "LED",
+      "Ohmin laki"
+    ],
+    "locked": false
+  },
+  {
+    "term": "aurinkokenno",
+    "definition": "Puolijohdekomponentti, joka tuottaa valossa tasavirtaa ja toimii tasajännitelähteenä. Sen oikosulkuvirta on suoraan verrannollinen valon voimakkuuteen, ja aurinkopaneelissa on monta kennoa sarjassa.",
+    "lessons": [
+      "fy6-14"
+    ],
+    "see_also": [
+      "tyhjäkäyntijännite",
+      "maksimitehopiste"
+    ],
+    "locked": false
+  },
+  {
+    "term": "tyhjäkäyntijännite",
+    "definition": "Jännitelähteen, kuten aurinkokennon, napojen välinen jännite, kun siitä ei oteta virtaa. Aurinkokennolla se muuttuu valon voimakkuuden mukana vain vähän.",
+    "lessons": [
+      "fy6-14"
+    ],
+    "see_also": [
+      "aurinkokenno",
+      "lähdejännite"
+    ],
+    "locked": false
+  },
+  {
+    "term": "maksimitehopiste",
+    "definition": "Aurinkokennon $(U, I)$-käyrän piste, jossa sen antama teho $P = UI$ on suurin. Se on käyrän polvessa oikosulun ja tyhjäkäynnin välissä, joissa kummassakin teho on nolla.",
+    "lessons": [
+      "fy6-14"
+    ],
+    "see_also": [
+      "aurinkokenno",
+      "tyhjäkäyntijännite"
     ],
     "locked": false
   }

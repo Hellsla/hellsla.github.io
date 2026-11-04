@@ -1,0 +1,616 @@
+{
+  "version": 1,
+  "contribution": "Puolijohteet virtapiirin komponentteina: diodin päästö- ja estosuunta, kynnysjännite ja epälineaarinen $(U, I)$-ominaiskäyrä, LED ja sen etuvastuksen mitoitus Kirchhoffin ja Ohmin lailla sekä aurinkokenno tasajännitelähteenä, jonka oikosulkuvirta seuraa valoa ja jonka teho on suurin maksimitehopisteessä; malli selittää, miksi LED tarvitsee vastuksen ja oikean napaisuuden.",
+  "learn": [
+    "selittämään diodin päästö- ja estosuunnan sekä kynnysjännitteen ominaiskäyrän avulla.",
+    "laskemaan LEDin etuvastuksen, virran ja tehon sarjaan kytketyssä virtapiirissä.",
+    "tulkitsemaan aurinkokennon $(U, I)$-kuvaajaa ja laskemaan kennon tehon ja hyötysuhteen."
+  ],
+  "prior": [
+    "Vastuksen jännite on $U = RI$, ja Ohmin lakia noudattavan vastuksen ominaiskäyrä on suora (luku *Resistanssi ja Ohmin laki*)",
+    "Sarjaankytkennässä sama virta kulkee kaikkien komponenttien läpi, ja lähteen jännite jakautuu niille (luku *Kirchhoffin lait ja potentiaali virtapiirissä*)",
+    "Komponentin teho on $P = UI$ (luku *Sähköteho ja vastuksen lämpeneminen*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Elektroniikkasarjan ohjeessa lukee: ”Kytke LED aina etuvastuksen kanssa ja tarkista, kumpi jalka on pidempi.” Hehkulampun voi kuitenkin kytkeä paristoon suoraan ja kummin päin tahansa. Sama sarja sisältää pienen aurinkopaneelin, jonka kyljessä lukee $6\\,\\text{V}$ ja $200\\,\\text{mA}$, mutta paneeli ei anna $1{,}2\\,\\text{W}$:n tehoa millään kuormalla.",
+      "question": "Mitä LED tekee virtapiirissä toisin kuin vastus tai lamppu, ja mikä määrää, kuinka paljon tehoa aurinkopaneelista saadaan?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Kertaa: Ohmin laki",
+      "optional": true,
+      "prompt": "Vastuksen jännite on $3{,}0\\,\\text{V}$, ja sen läpi kulkee $15\\,\\text{mA}$:n virta. Mikä on vastuksen resistanssi?",
+      "choices": [
+        {
+          "text": "$200\\,\\Omega$",
+          "correct": true,
+          "feedback": "Oikein. Ohmin lain mukaan $R = \\tfrac{U}{I} = 3{,}0\\,\\text{V} : 0{,}015\\,\\text{A} = 200\\,\\Omega$ (luku *Resistanssi ja Ohmin laki*). Tänään vastus rajoittaa LEDin virtaa."
+        },
+        {
+          "text": "$0{,}20\\,\\Omega$",
+          "feedback": "Jaoit jännitteen milliampeereilla. Virta muutetaan ampeereiksi: $15\\,\\text{mA} = 0{,}015\\,\\text{A}$, ja $R = 3{,}0\\,\\text{V} : 0{,}015\\,\\text{A} = 200\\,\\Omega$."
+        },
+        {
+          "text": "$45\\,\\Omega$",
+          "feedback": "Kerroit jännitteen ja virran. Resistanssi on jännite jaettuna virralla, $R = \\tfrac{U}{I}$: suurempi resistanssi antaa samalla jännitteellä pienemmän virran. Oikea arvo on $200\\,\\Omega$."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 1: lähteen jännite kaksinkertaiseksi",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 3
+      },
+      "prompt": "Punainen LED ja $330\\,\\Omega$:n etuvastus on kytketty sarjaan säädettävään jännitelähteeseen, ja LED on päästösuunnassa. Lähteen jännite nostetaan $3{,}0\\,\\text{V}$:sta $6{,}0\\,\\text{V}$:iin. Miten LEDin jännite ja piirin virta muuttuvat?",
+      "choices": [
+        {
+          "text": "LEDin jännite pysyy lähes samana, ja virta kasvaa yli kaksinkertaiseksi.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä: LEDin jännite kasvaa vain $1{,}85\\,\\text{V}$:sta $1{,}91\\,\\text{V}$:iin, mutta virta kasvaa $3{,}5\\,\\text{mA}$:sta $12{,}4\\,\\text{mA}$:iin. Lähes koko jännitteen lisäys tulee vastuksen yli, ja vastuksen jännite yli kolminkertaistuu."
+        },
+        {
+          "text": "LEDin jännite ja virta kaksinkertaistuvat, kuten vastuksella.",
+          "feedback": "Näin kävisi, jos LED noudattaisi Ohmin lakia. Mallissa LEDin jännite kasvaa vain $1{,}85\\,\\text{V}$:sta $1{,}91\\,\\text{V}$:iin, ja virta kasvaa $3{,}5\\,\\text{mA}$:sta $12{,}4\\,\\text{mA}$:iin. LEDin jännitteen ja virran suhde ei pysy vakiona."
+        },
+        {
+          "text": "LEDin jännite kaksinkertaistuu, mutta virta pysyy samana, koska vastus rajoittaa sen.",
+          "feedback": "Vastus rajoittaa virtaa, mutta ei pidä sitä vakiona: vastuksen virta on $\\tfrac{U_R}{R}$, ja $U_R$ kasvaa. Mallissa LEDin jännite pysyy lähes samana, noin $1{,}9\\,\\text{V}$:ssa, ja virta kasvaa $3{,}5\\,\\text{mA}$:sta $12{,}4\\,\\text{mA}$:iin."
+        },
+        {
+          "text": "Kumpikaan ei muutu, koska LED palaa samalla kirkkaudella kaikilla jännitteillä.",
+          "feedback": "LEDin kirkkaus riippuu sen virrasta. Mallissa virta kasvaa $3{,}5\\,\\text{mA}$:sta $12{,}4\\,\\text{mA}$:iin, ja LED palaa kirkkaammin. Vain LEDin jännite pysyy lähes samana, noin $1{,}9\\,\\text{V}$:ssa."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 2: millä kuormalla eniten tehoa?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-3",
+        "min": 5
+      },
+      "prompt": "Aurinkopaneeliin kytketään kuormitusvastus, ja valo pysyy samana. Pienellä vastuksella paneelin virta on suuri, suurella vastuksella sen jännite on suuri. Millä kuormitusvastuksella paneelin antama teho $P = UI$ on suurin?",
+      "choices": [
+        {
+          "text": "Keskikokoisella vastuksella, jolla jännite ja virta ovat kumpikin melko suuria.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä: teho on oikosulussa nolla, kasvaa noin $0{,}92\\,\\text{W}$:iin, kun vastus on noin $27\\,\\Omega$, ja pienenee sitten taas: $300\\,\\Omega$:lla se on vain $0{,}12\\,\\text{W}$. Suurin teho on käyrän polvessa."
+        },
+        {
+          "text": "Pienimmällä vastuksella, koska paneelin virta on silloin suurimmillaan.",
+          "feedback": "Virta on suurin oikosulussa, noin $200\\,\\text{mA}$, mutta jännite on silloin nolla, joten mallissa teho on $0\\,\\text{W}$. Teho kasvaa vastuksen kasvaessa noin $27\\,\\Omega$:iin asti, jossa se on noin $0{,}92\\,\\text{W}$."
+        },
+        {
+          "text": "Suurimmalla vastuksella, koska paneelin jännite on silloin suurimmillaan.",
+          "feedback": "Jännite on suurimmillaan lähes tyhjäkäynnissä, mutta virta on silloin pieni: mallissa $300\\,\\Omega$:lla teho on vain $0{,}12\\,\\text{W}$. Suurin teho, noin $0{,}92\\,\\text{W}$, saadaan noin $27\\,\\Omega$:lla."
+        },
+        {
+          "text": "Kaikilla vastuksilla yhtä suuri, koska valo tuo paneeliin aina saman tehon.",
+          "feedback": "Valo tuo paneeliin saman tehon, mutta sähköksi siitä muuttuva osa riippuu kuormasta. Mallissa teho vaihtelee nollasta noin $0{,}92\\,\\text{W}$:iin: oikosulussa se on nolla ja noin $27\\,\\Omega$:lla suurin."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Valitse LED-piiri tai aurinkokenno. Muuta jännitettä, vastusta, komponenttia ja kytkentäsuuntaa tai valoa ja kuormaa, ja seuraa toimintapistettä kuvaajassa.",
+      "howto": "*Piiri*-valikosta valitaan LED-piiri tai aurinkokenno. LED-piirissä asetetaan *lähteen jännite* $U$ ja *etuvastus* $R$ liukusäätimillä sekä *komponentti* ja *kytkentä* (päästösuunta tai estosuunta) valikoista. Kytkentäkaaviossa diodin kolmio osoittaa suuntaan, johon virta pääsee kulkemaan, ja LED hehkuu sitä kirkkaammin, mitä suurempi virta on. Kuvaajassa on komponentin ominaiskäyrä, ja violetti piste on toimintapiste. Aurinkokennolle asetetaan *valon voimakkuus* $G$ ja *kuormitusvastus* $R$. Kuvaajassa on paneelin $(U, I)$-käyrä, ja oranssin suorakulmion pinta-ala on teho $P = UI$; himmeä käyrä näyttää täyden valon $1000\\,\\text{W/m}^2$ vertailuksi.",
+      "model": "Diodin virta kasvaa päästösuunnassa jännitteen mukana eksponentiaalisesti: virta on $10\\,\\text{mA}$, kun piidiodin jännite on $0{,}70\\,\\text{V}$, punaisen LEDin $1{,}90\\,\\text{V}$ ja sinisen LEDin $2{,}90\\,\\text{V}$. Estosuunnassa virta on nolla: pieni vuotovirta jätetään huomiotta, eikä estosuunnan läpilyöntiä ole mallinnettu, vaikka todellinen LED kestää estosuunnassa usein vain noin $5\\,\\text{V}$. LEDien suurin suositeltu virta on $20\\,\\text{mA}$. Lähde ja johdot ovat ideaaliset. Aurinkopaneelissa on kymmenen piikennoa sarjassa, ja sen pinta-ala on $60\\,\\text{cm}^2$. Kun $G = 1000\\,\\text{W/m}^2$, oikosulkuvirta on $200\\,\\text{mA}$ ja tyhjäkäyntijännite $6{,}0\\,\\text{V}$. Oikosulkuvirta on suoraan verrannollinen valon voimakkuuteen, ja kennojen lämpötila pysyy samana. Luvut ovat mallin laskemia arvoja, eivät mittauksia.",
+      "calc": "LED-piirissä lähde, vastus ja diodi ovat sarjassa, joten Kirchhoffin jännitelain mukaan $U = U_R + U_\\text{D}$ ja Ohmin lain mukaan $U_R = RI$. Diodin virta on\n\n$$I = I_\\text{s} \\left(e^{U_\\text{D}/m} - 1\\right)$$\n\nmissä $m$ on komponentin vakio ($0{,}040$–$0{,}060\\,\\text{V}$) ja $I_\\text{s}$ hyvin pieni virta, joka on valittu niin, että virta on $10\\,\\text{mA}$ komponentin kynnysjännitteellä. Toimintapiste on se diodin jännite, jolla $U_\\text{D} + RI = U$; ohjelma etsii sen puolitusmenetelmällä. Diodin teho on $P_\\text{D} = U_\\text{D} I$. Aurinkopaneelin virta on $I = I_\\text{L} - I_0 \\left(e^{U/m} - 1\\right)$, missä $I_\\text{L}$ on valon synnyttämä virta, joka on suoraan verrannollinen valon voimakkuuteen, ja $m = 0{,}40\\,\\text{V}$. Kuormalla $R$ toimintapiste on se jännite, jolla tämä virta on $\\tfrac{U}{R}$. Teho on $P = UI$."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 1: lähteen jännite ja LEDin jännite",
+      "intro": "Testaa ennuste 1. Punainen LED on päästösuunnassa, ja etuvastus on $330\\,\\Omega$. Muuta vain lähteen jännitettä ja kirjaa LEDin jännite, vastuksen jännite ja virta ainakin kolmella jännitteellä, esimerkiksi $2{,}0$, $3{,}0$, $5{,}0$, $7{,}0$ ja $9{,}0\\,\\text{V}$. Mikä muuttuu paljon ja mikä vähän?",
+      "initial": {
+        "piiri": "led",
+        "R": 330,
+        "komponentti": "punainen",
+        "suunta": "paasto",
+        "U": 2
+      },
+      "locked": [
+        "piiri",
+        "R",
+        "komponentti",
+        "suunta"
+      ],
+      "vary": "U",
+      "names": {
+        "piiri": "piiri",
+        "U": "lähteen jännite",
+        "R": "etuvastus",
+        "komponentti": "komponentti",
+        "suunta": "kytkentä",
+        "G": "valon voimakkuus",
+        "Rk": "kuormitusvastus"
+      },
+      "units": {
+        "U": "V",
+        "R": "Ω",
+        "G": "W/m²",
+        "Rk": "Ω"
+      },
+      "values": {
+        "piiri": {
+          "led": "LED-piiri",
+          "kenno": "aurinkokenno"
+        },
+        "komponentti": {
+          "piidiodi": "piidiodi",
+          "punainen": "punainen LED",
+          "sininen": "sininen LED"
+        },
+        "suunta": {
+          "paasto": "päästösuunta",
+          "esto": "estosuunta"
+        }
+      },
+      "measure": [
+        {
+          "key": "UD",
+          "label": "U_D (V)"
+        },
+        {
+          "key": "UR",
+          "label": "U_R (V)"
+        },
+        {
+          "key": "I",
+          "label": "I (mA)"
+        }
+      ],
+      "min": 3
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 2: päästösuunta ja estosuunta",
+      "intro": "Lähteen jännite on $5{,}0\\,\\text{V}$, etuvastus $330\\,\\Omega$ ja komponenttina punainen LED. Vaihda vain kytkentäsuuntaa ja kirjaa virta, LEDin jännite ja vastuksen jännite kummassakin suunnassa. Missä lähteen jännite on estosuunnassa?",
+      "initial": {
+        "piiri": "led",
+        "U": 5,
+        "R": 330,
+        "komponentti": "punainen",
+        "suunta": "paasto"
+      },
+      "locked": [
+        "piiri",
+        "U",
+        "R",
+        "komponentti"
+      ],
+      "vary": "suunta",
+      "names": {
+        "piiri": "piiri",
+        "U": "lähteen jännite",
+        "R": "etuvastus",
+        "komponentti": "komponentti",
+        "suunta": "kytkentä",
+        "G": "valon voimakkuus",
+        "Rk": "kuormitusvastus"
+      },
+      "units": {
+        "U": "V",
+        "R": "Ω",
+        "G": "W/m²",
+        "Rk": "Ω"
+      },
+      "values": {
+        "piiri": {
+          "led": "LED-piiri",
+          "kenno": "aurinkokenno"
+        },
+        "komponentti": {
+          "piidiodi": "piidiodi",
+          "punainen": "punainen LED",
+          "sininen": "sininen LED"
+        },
+        "suunta": {
+          "paasto": "päästösuunta",
+          "esto": "estosuunta"
+        }
+      },
+      "measure": [
+        {
+          "key": "I",
+          "label": "I (mA)"
+        },
+        {
+          "key": "UD",
+          "label": "U_D (V)"
+        },
+        {
+          "key": "UR",
+          "label": "U_R (V)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "koe-3",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 3: aurinkopaneelin teho kuorman funktiona",
+      "intro": "Testaa ennuste 2. Piirinä on aurinkokenno, ja valon voimakkuus pysyy $1000\\,\\text{W/m}^2$:ssa. Muuta vain kuormitusvastusta ja kirjaa jännite, virta ja teho ainakin viidellä vastuksella, esimerkiksi $0$, $10$, $20$, $30$, $50$, $100$ ja $300\\,\\Omega$. Etsi lopuksi vastus, jolla teho on suurin.",
+      "initial": {
+        "piiri": "kenno",
+        "G": 1000,
+        "Rk": 0
+      },
+      "locked": [
+        "piiri",
+        "G"
+      ],
+      "vary": "Rk",
+      "names": {
+        "piiri": "piiri",
+        "U": "lähteen jännite",
+        "R": "etuvastus",
+        "komponentti": "komponentti",
+        "suunta": "kytkentä",
+        "G": "valon voimakkuus",
+        "Rk": "kuormitusvastus"
+      },
+      "units": {
+        "U": "V",
+        "R": "Ω",
+        "G": "W/m²",
+        "Rk": "Ω"
+      },
+      "values": {
+        "piiri": {
+          "led": "LED-piiri",
+          "kenno": "aurinkokenno"
+        },
+        "komponentti": {
+          "piidiodi": "piidiodi",
+          "punainen": "punainen LED",
+          "sininen": "sininen LED"
+        },
+        "suunta": {
+          "paasto": "päästösuunta",
+          "esto": "estosuunta"
+        }
+      },
+      "measure": [
+        {
+          "key": "Upv",
+          "label": "U (V)"
+        },
+        {
+          "key": "Ipv",
+          "label": "I (mA)"
+        },
+        {
+          "key": "Ppv",
+          "label": "P (W)"
+        }
+      ],
+      "min": 5
+    },
+    {
+      "id": "koe-4",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 4: kynnysjännite eri komponenteilla",
+      "optional": true,
+      "intro": "Lähteen jännite on $5{,}0\\,\\text{V}$ ja etuvastus $330\\,\\Omega$, ja kytkentä on päästösuunnassa. Vaihda vain komponenttia ja kirjaa diodin jännite ja virta. Miten komponentit eroavat?",
+      "initial": {
+        "piiri": "led",
+        "U": 5,
+        "R": 330,
+        "suunta": "paasto",
+        "komponentti": "piidiodi"
+      },
+      "locked": [
+        "piiri",
+        "U",
+        "R",
+        "suunta"
+      ],
+      "vary": "komponentti",
+      "names": {
+        "piiri": "piiri",
+        "U": "lähteen jännite",
+        "R": "etuvastus",
+        "komponentti": "komponentti",
+        "suunta": "kytkentä",
+        "G": "valon voimakkuus",
+        "Rk": "kuormitusvastus"
+      },
+      "units": {
+        "U": "V",
+        "R": "Ω",
+        "G": "W/m²",
+        "Rk": "Ω"
+      },
+      "values": {
+        "piiri": {
+          "led": "LED-piiri",
+          "kenno": "aurinkokenno"
+        },
+        "komponentti": {
+          "piidiodi": "piidiodi",
+          "punainen": "punainen LED",
+          "sininen": "sininen LED"
+        },
+        "suunta": {
+          "paasto": "päästösuunta",
+          "esto": "estosuunta"
+        }
+      },
+      "measure": [
+        {
+          "key": "UD",
+          "label": "U_D (V)"
+        },
+        {
+          "key": "I",
+          "label": "I (mA)"
+        }
+      ],
+      "min": 3
+    },
+    {
+      "id": "koe-5",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 5: valon voimakkuus",
+      "optional": true,
+      "intro": "Piirinä on aurinkokenno, ja kuormitusvastus on $50\\,\\Omega$. Muuta vain valon voimakkuutta ja kirjaa oikosulkuvirta ja tyhjäkäyntijännite, jotka näkyvät lukemissa, sekä paneelin teho. Kumpi riippuu valosta enemmän?",
+      "initial": {
+        "piiri": "kenno",
+        "Rk": 50,
+        "G": 1000
+      },
+      "locked": [
+        "piiri",
+        "Rk"
+      ],
+      "vary": "G",
+      "names": {
+        "piiri": "piiri",
+        "U": "lähteen jännite",
+        "R": "etuvastus",
+        "komponentti": "komponentti",
+        "suunta": "kytkentä",
+        "G": "valon voimakkuus",
+        "Rk": "kuormitusvastus"
+      },
+      "units": {
+        "U": "V",
+        "R": "Ω",
+        "G": "W/m²",
+        "Rk": "Ω"
+      },
+      "values": {
+        "piiri": {
+          "led": "LED-piiri",
+          "kenno": "aurinkokenno"
+        },
+        "komponentti": {
+          "piidiodi": "piidiodi",
+          "punainen": "punainen LED",
+          "sininen": "sininen LED"
+        },
+        "suunta": {
+          "paasto": "päästösuunta",
+          "esto": "estosuunta"
+        }
+      },
+      "measure": [
+        {
+          "key": "Ik",
+          "label": "$I_\\text{k}$ (mA)"
+        },
+        {
+          "key": "Ut",
+          "label": "$U_\\text{t}$ (V)"
+        },
+        {
+          "key": "Ppv",
+          "label": "P (W)"
+        }
+      ],
+      "min": 3
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös: miten diodi ja aurinkokenno toimivat?",
+      "after": [
+        "koe-1",
+        "koe-2",
+        "koe-3"
+      ],
+      "prompt": "Kirjoita taulukoidesi perusteella: miten LEDin jännite ja virta muuttuivat, kun lähteen jännite kasvoi, ja mitä estosuunnassa tapahtui? Millä kuormitusvastuksella aurinkopaneelin teho oli suurin, ja miksi teho oli pieni sekä hyvin pienellä että hyvin suurella vastuksella?",
+      "model": "Kokeessa 1 LEDin jännite pysyi lähes samana, noin $1{,}8$–$1{,}9\\,\\text{V}$, vaikka lähteen jännite kasvoi $2{,}0\\,\\text{V}$:sta $9{,}0\\,\\text{V}$:iin. Lähes koko jännitteen lisäys tuli vastuksen yli, ja virta kasvoi alle $1\\,\\text{mA}$:sta yli $21\\,\\text{mA}$:iin. LED ei siis noudata Ohmin lakia, ja vastus määrää virran. Kokeessa 2 estosuunnassa virta oli nolla, joten vastuksen jännite oli nolla ja koko lähteen jännite $5{,}0\\,\\text{V}$ oli LEDin yli. Kokeessa 3 paneelin teho oli nolla oikosulussa, koska jännite oli nolla, ja pieni suurella vastuksella, koska virta oli pieni. Suurin teho, noin $0{,}92\\,\\text{W}$, saatiin noin $27\\,\\Omega$:n vastuksella, kun jännite oli noin $5{,}0\\,\\text{V}$ ja virta noin $184\\,\\text{mA}$. Arvot ovat mallin laskemia.",
+      "criteria": [
+        "Vastaus kertoo taulukon luvuilla, että LEDin jännite pysyi lähes vakiona mutta virta kasvoi moninkertaiseksi.",
+        "Vastaus kertoo, että jännitteen lisäys tuli vastuksen yli, joten vastus määrää virran.",
+        "Vastaus kertoo, että estosuunnassa virta oli nolla ja koko lähteen jännite oli LEDin yli.",
+        "Vastaus nimeää taulukosta vastuksen, jolla teho oli suurin, ja perustelee, miksi teho oli pieni oikosulussa ja suurella vastuksella."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Palaa ennusteisiisi",
+      "optional": true,
+      "prompt": "Vertaa ennusteitasi kokeiden mallin arvoihin ja kaavaan $R = \\tfrac{U - U_\\text{D}}{I}$. Palaa sitten alun kysymykseen: miksi LED syttyy vain toisin päin kytkettynä, ja miksi sen kanssa tarvitaan vastus?",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2"
+      ]
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe",
+      "prompt": "Punaista LEDiä käytetään $9{,}0\\,\\text{V}$:n paristolla. LEDin jännite on $2{,}0\\,\\text{V}$, ja virraksi halutaan $20\\,\\text{mA}$. Opiskelija laskee etuvastuksen näin:\n\n$$R = \\frac{9{,}0\\,\\text{V}}{0{,}020\\,\\text{A}} = 450\\,\\Omega$$\n\nMissä on virhe?",
+      "choices": [
+        {
+          "text": "Vastuksen yli on vain $9{,}0\\,\\text{V} - 2{,}0\\,\\text{V} = 7{,}0\\,\\text{V}$, joten vastuksen pitää olla $350\\,\\Omega$.",
+          "correct": true,
+          "feedback": "Oikein. Pariston jännite jakautuu LEDille ja vastukselle, joten $R = \\tfrac{U - U_\\text{D}}{I} = 7{,}0\\,\\text{V} : 0{,}020\\,\\text{A} = 350\\,\\Omega$. Opiskelijan $450\\,\\Omega$:n vastuksella virta olisi vain $7{,}0\\,\\text{V} : 450\\,\\Omega \\approx 16\\,\\text{mA}$, ja LED palaisi himmeämmin."
+        },
+        {
+          "text": "Virta pitää sijoittaa milliampeereina, joten vastus on $0{,}45\\,\\Omega$.",
+          "feedback": "Ohmin laissa virta sijoitetaan ampeereina, jolloin resistanssi tulee ohmeina; $0{,}020\\,\\text{A}$ on oikein. Virhe on siinä, että vastuksen yli ei ole koko pariston jännitettä, vaan $9{,}0\\,\\text{V} - 2{,}0\\,\\text{V} = 7{,}0\\,\\text{V}$."
+        },
+        {
+          "text": "LEDin jännite pitää lisätä pariston jännitteeseen, joten vastus on $550\\,\\Omega$.",
+          "feedback": "LEDin jännite ei lisää vastuksen jännitettä, vaan vähentää sitä: Kirchhoffin jännitelain mukaan $U = U_R + U_\\text{D}$, joten $U_R = 9{,}0\\,\\text{V} - 2{,}0\\,\\text{V} = 7{,}0\\,\\text{V}$ ja $R = 350\\,\\Omega$."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Sovella uuteen tilanteeseen",
+      "prompt": "Mökin aurinkopaneeli antaa suurimman tehonsa, kun sen jännite on $18{,}0\\,\\text{V}$ ja virta $5{,}50\\,\\text{A}$. Paneeli kytketään suoraan $12\\,\\text{V}$:n akkuun ilman säätöelektroniikkaa, ja akku pitää paneelin jännitteen $12{,}8\\,\\text{V}$:ssa. Silloin paneelin virta on $5{,}80\\,\\text{A}$. Kuinka paljon pienempi paneelin teho on akkuun kytkettynä kuin maksimitehopisteessä?",
+      "answer": 24.76,
+      "unit": "W",
+      "tolerance": 0.02,
+      "hints": [
+        "Paneelin teho on sen jännite kertaa virta. Laske teho erikseen kummassakin toimintapisteessä.",
+        "Maksimitehopisteessä $P_1 = 18{,}0\\,\\text{V} \\cdot 5{,}50\\,\\text{A}$ ja akkuun kytkettynä $P_2 = 12{,}8\\,\\text{V} \\cdot 5{,}80\\,\\text{A}$.",
+        "$P_1 = 99{,}0\\,\\text{W}$ ja $P_2 = 74{,}24\\,\\text{W}$. Kysytty on niiden erotus."
+      ],
+      "mistakes": [
+        {
+          "value": 74.24,
+          "feedback": "Tämä on paneelin teho akkuun kytkettynä. Kysytään, kuinka paljon pienempi se on kuin maksimitehopisteen teho $18{,}0\\,\\text{V} \\cdot 5{,}50\\,\\text{A} = 99{,}0\\,\\text{W}$."
+        },
+        {
+          "value": 99.0,
+          "feedback": "Tämä on maksimitehopisteen teho. Laske myös teho akkuun kytkettynä, $12{,}8\\,\\text{V} \\cdot 5{,}80\\,\\text{A}$, ja vähennä."
+        },
+        {
+          "value": 1.65,
+          "feedback": "Kerroit jännitteiden erotuksen $5{,}2\\,\\text{V}$ ja virtojen erotuksen $0{,}30\\,\\text{A}$ keskenään. Teho lasketaan kummassakin pisteessä erikseen, $P = UI$, ja vasta sitten tehot vähennetään."
+        }
+      ],
+      "solution": "**Annettu:** maksimitehopisteessä $U_1 = 18{,}0\\,\\text{V}$ ja $I_1 = 5{,}50\\,\\text{A}$, akkuun kytkettynä $U_2 = 12{,}8\\,\\text{V}$ ja $I_2 = 5{,}80\\,\\text{A}$\n\n**Kysytty:** tehon pieneneminen $\\Delta P$ watteina\n\n**Periaate:** Aurinkopaneeli on tasajännitelähde, ja sen teho on jännite kertaa virta. Akku määrää paneelin jännitteen, joten paneeli toimii $(U, I)$-käyränsä toisessa pisteessä kuin maksimitehopisteessä. Virta on siellä hieman suurempi, mutta jännite paljon pienempi.\n\n**Kaava:** $P_1 = U_1 I_1$ ja $P_2 = U_2 I_2$, josta $\\Delta P = U_1 I_1 - U_2 I_2$\n\n**Muunnokset:** Ei tarvita: jännitteet ovat voltteina ja virrat ampeereina, ja $\\text{V} \\cdot \\text{A} = \\text{W}$.\n\n**Sijoitus:** $\\Delta P = 18{,}0\\,\\text{V} \\cdot 5{,}50\\,\\text{A} - 12{,}8\\,\\text{V} \\cdot 5{,}80\\,\\text{A} = 99{,}0\\,\\text{W} - 74{,}24\\,\\text{W} = 24{,}76\\,\\text{W}$\n\n**Vastaus:** $25\\,\\text{W}$, kaksi merkitsevää numeroa, koska erotuksessa $99{,}0\\,\\text{W} - 74{,}2\\,\\text{W}$ tarkkuus määräytyy kymmenesosawateista ja akun jännite $12\\,\\text{V}$ on annettu kahdella numerolla.\n\n**Järkevyys:** Akkuun kytkettynä paneeli antaa noin $74\\,\\text{W} : 99\\,\\text{W} \\approx 75\\,\\%$ suurimmasta tehostaan, eli neljäsosa menetetään. Virta kasvoi vain noin $5\\,\\%$, mutta jännite pieneni noin $30\\,\\%$. Siksi aurinkolatureissa on maksimitehopistettä hakeva säädin."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Harjoittele kolmella tasolla. Tason 1 tehtävissä lasketaan etuvastus, virta tai teho yhdellä kaavalla, tason 2 tehtävissä tarvitaan estosuuntaa, sarjaan kytkettyjä LEDejä, hyötysuhdetta tai muunnoksia, ja taso 3 vaatii päättelyä: miten virta muuttuu pariston tyhjentyessä, missä aurinkopaneelin maksimitehopiste on ja kuinka suuri osa tehosta menee etuvastuksiin."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Käsite",
+      "prompt": "Piidiodi ja lamppu on kytketty sarjaan paristoon. Diodin katodi eli poikkiviivan puoleinen napa on pariston plusnavan puolella. Mikä seuraavista pitää paikkansa?",
+      "choices": [
+        {
+          "text": "Diodi on estosuunnassa: virtaa ei kulje, ja koko pariston jännite on diodin yli.",
+          "correct": true,
+          "feedback": "Oikein. Päästösuunnassa anodi on plusnavan puolella. Nyt diodi on toisin päin, joten virtaa ei kulje, lampun jännite on nolla ja koko pariston jännite on diodin yli."
+        },
+        {
+          "text": "Diodi on päästösuunnassa, ja lamppu palaa normaalisti.",
+          "feedback": "Diodi on päästösuunnassa, kun sen anodi eli kolmion puoleinen napa on plusnavan puolella. Nyt plusnavan puolella on katodi, joten diodi on estosuunnassa eikä virtaa kulje."
+        },
+        {
+          "text": "Virta kulkee, mutta lamppu palaa himmeämmin, koska diodi vie osan jännitteestä.",
+          "feedback": "Näin kävisi päästösuunnassa: diodi veisi noin $0{,}7\\,\\text{V}$ ja lamppu saisi loput. Estosuunnassa virtaa ei kulje lainkaan, joten lamppu ei pala."
+        },
+        {
+          "text": "Virta kulkee toiseen suuntaan, miinusnavalta plusnavalle.",
+          "feedback": "Diodi ei käännä virran suuntaa, vaan estää sen. Kun katodi on plusnavan puolella, diodi on estosuunnassa, eikä virtaa kulje kumpaankaan suuntaan."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Kuvaaja",
+      "figure": "fy6-14/ex-kenno",
+      "prompt": "Kuvaajassa on aurinkopaneelin $(U, I)$-käyrä, kun valo pysyy samana. Millä jännitteellä paneelin antama teho on suurin?",
+      "choices": [
+        {
+          "text": "Noin $5\\,\\text{V}$:n kohdalla, jossa käyrä alkaa taipua alaspäin.",
+          "correct": true,
+          "feedback": "Oikein. Teho on suorakulmion $U \\cdot I$ pinta-ala. Noin $5\\,\\text{V}$:ssa virta on vielä lähes $200\\,\\text{mA}$, joten tulo $UI$ on suurin, noin $0{,}9\\,\\text{W}$. Se on käyrän polvi eli maksimitehopiste."
+        },
+        {
+          "text": "Nollajännitteellä, koska virta on silloin suurin.",
+          "feedback": "Oikosulussa virta on suurin, mutta jännite on nolla, joten teho $UI$ on nolla. Suorakulmion $U \\cdot I$ pinta-ala on suurin käyrän polvessa, noin $5\\,\\text{V}$:ssa."
+        },
+        {
+          "text": "Kuuden voltin kohdalla, koska jännite on silloin suurin.",
+          "feedback": "Tyhjäkäynnissä jännite on suurin, mutta virta on nolla, joten teho on nolla. Suurin teho saadaan käyrän polvessa, noin $5\\,\\text{V}$:ssa, jossa virta on vielä lähes suurimmillaan."
+        },
+        {
+          "text": "Kaikilla jännitteillä yhtä suuri, koska valo pysyy samana.",
+          "feedback": "Valo tuo saman tehon, mutta sähköksi muuttuva teho $UI$ riippuu toimintapisteestä. Kuvaajasta näkee, että suorakulmion $U \\cdot I$ pinta-ala vaihtelee nollasta suurimpaan arvoonsa noin $5\\,\\text{V}$:ssa."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Selitä etuvastus",
+      "optional": true,
+      "prompt": "Kaveri kytkee punaisen LEDin suoraan $4{,}5\\,\\text{V}$:n paristoon, koska ”hehkulampullekaan ei tarvita vastusta”. LED välähtää ja sammuu lopullisesti. Selitä, mitä tapahtui ja miksi hehkulamppu kestää saman kytkennän.",
+      "model": "LEDin jännite on päästösuunnassa noin $2\\,\\text{V}$, ja sen yläpuolella pieni jännitteen lisäys kasvattaa virtaa hyvin paljon. Ilman etuvastusta LEDin yli tuli lähes koko pariston jännite, ja virtaa rajoittivat vain pariston sisäinen resistanssi ja johdot. Jos niiden resistanssi on noin $1\\,\\Omega$, virta on suuruusluokkaa $(4{,}5\\,\\text{V} - 2{,}0\\,\\text{V}) : 1\\,\\Omega \\approx 2{,}5\\,\\text{A}$, yli sata kertaa LEDin suositeltu $20\\,\\text{mA}$. LED kuumeni ja rikkoutui. Hehkulampun lanka noudattaa likimain Ohmin lakia, ja sen resistanssi kasvaa langan kuumetessa, joten lamppu rajoittaa itse virtaansa. LEDin kanssa tarvitaan siksi sarjaan etuvastus, joka ottaa ylimääräisen jännitteen ja määrää virran.",
+      "criteria": [
+        "Vastaus kertoo, että LEDin jännite pysyy lähes vakiona ja pieni jännitteen lisäys kasvattaa virtaa paljon.",
+        "Vastaus kertoo, että ilman etuvastusta virtaa rajoittivat vain pariston sisäinen resistanssi ja johdot, joten virta kasvoi liian suureksi ja LED kuumeni.",
+        "Vastaus kertoo, että hehkulampun resistanssi rajoittaa virtaa, ja päättelee, että LEDin kanssa tarvitaan sarjaan vastus."
+      ]
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Lopuksi kaksi nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+    }
+  ]
+}

@@ -1890,6 +1890,28 @@
       "zone_uv": "UV",
       "zone_nakyva": "näkyvä",
       "zone_ir": "IR"
+    },
+    "fy6-14": {
+      "piiri": "Piiri",
+      "led": "LED-piiri",
+      "kenno": "aurinkokenno",
+      "komponentti": "Komponentti",
+      "piidiodi": "piidiodi",
+      "punainen": "punainen LED",
+      "sininen": "sininen LED",
+      "suunta": "Kytkentä",
+      "paasto": "päästösuunta",
+      "esto": "estosuunta",
+      "jannite": "Lähteen jännite $U = {{U}}\\,\\text{V}$",
+      "vastus": "Etuvastus $R = {{R}}\\,\\Omega$",
+      "valo": "Valon voimakkuus $G = {{G}}\\,\\text{W/m}^2$",
+      "kuorma": "Kuormitusvastus $R = {{R}}\\,\\Omega$",
+      "selite": "Violetti nuoli: sähkövirran suunta. Oranssi suorakulmio: aurinkokennon teho.",
+      "lukemat-led": "<strong>Virta $I = {{I}}\\,\\text{mA}$</strong><br>Diodin jännite $U_\\text{D} = {{UD}}\\,\\text{V}$, vastuksen jännite $U_R = {{UR}}\\,\\text{V}$<br>Diodin teho $P_\\text{D} = {{PD}}\\,\\text{mW}$",
+      "lukemat-kenno": "Jännite $U = {{U}}\\,\\text{V}$, virta $I = {{I}}\\,\\text{mA}$<br><strong>Teho $P = {{P}}\\,\\text{W}$</strong><br>Oikosulkuvirta $I_\\text{k} = {{Ik}}\\,\\text{mA}$, tyhjäkäyntijännite $U_\\text{t} = {{Ut}}\\,\\text{V}$",
+      "ylikuorma": "$\\text{virta yli } 20\\,\\text{mA}$",
+      "ylikuorma-teksti": "LEDin virta ylittää suurimman suositellun virran $20\\,\\text{mA}$: LED kuumenee ja voi rikkoutua. Suurenna etuvastusta.",
+      "estosuunta": "$\\text{estosuunta: ei virtaa}$"
     }
   },
   "practice": {
