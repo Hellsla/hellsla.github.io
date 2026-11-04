@@ -1,19 +1,17 @@
-VERDICT: PASS
-CONTENT-HASH: 6e962ba765f93e9c
+VERDICT: FAIL
+CONTENT-HASH: 9069a8122f6961ad
 
 ## Blocking
+- solutions.md fy8-6-L2-06 Järkevyys — "Suoran jatke … ja sen $h$ on lähimpänä hyväksyttyä arvoa" is false (A): Eero is −4,5 % and Salla +3,65 %, so Salla's value is the closest. b) is answered only in Järkevyys. — Delete the clause. In Vastaus, answer b) and add: "Sallan arvo osuu sattumalta lähemmäs, koska hänen ylimääräinen noin $0{,}16\,\text{V}$ kumoaa osan siitä, että kynnysjännite on yleensä noin $0{,}1\,\text{V}$ pienempi kuin $\tfrac{hf}{e}$. Lähellä taulukkoarvoa oleva tulos ei todista lukutapaa oikeaksi; suoran jatke ei riipu valitusta virrasta, ja jäljelle jäävä ero poistuu kulmakertoimesta."
+- solutions.md fy8-6-L2-07 Vastaus — two errors (A). First, "puolet intensiteetistä tulee fotoneista, joiden energia on välillä 1,91–2,03 eV" is wrong: the half-maximum points bound the band where the intensity is above half its maximum, and that band holds about 76 % of the table's intensity. — Write "intensiteetti on yli puolet maksimista, kun fotonin energia on välillä …". Second, "energia-aukko ei ole tarkka arvo" contradicts L1-04 and the brief, where E_g is a material constant. — Write "energia-aukko on materiaalin ominaisuus, mutta elektronit ja aukot ovat vöissä lämpöliikkeen vuoksi hieman eri energioilla, joten fotonien energiat jakautuvat kapealle välille energia-aukon kohdalle".
 
 ## Polish
-- exercises/exercises.json (L2-01) — "kuinka suuri jännite LEDiin on vähintään kytkettävä" while solutions.md L2-01 says the measured threshold is usually about 0,1 V below the estimate; "Arvioi LEDin kynnysjännite" avoids calling it a minimum.
-- solutions.md L2-03 — Vastaus "noin 39 mW, kaksi merkitsevää numeroa" while exercises.json stores 39.4; harmless within 2 % tolerance.
-- solutions.md L2-04 Järkevyys — "kuten fluoresenssissa aina": fine at this level (C); "tavallisesti" would be exact.
+- exercises.json fy8-6-L2-07 data — a FWHM of 40 nm (0,125 eV) is about twice that of a typical red LED (15–25 nm). — Put the half-maximum points at about 620 and 640 nm.
+- solutions.md fy8-6-L3-04 Vastaus — "on aina hieman pienempi kuin $\tfrac{hf}{e}$" → "yleensä", as in the brief. The plan's "h tyypillisesti liian suuri" is not covered and does not match the brief's direction. — Fix the plan.
+- solutions.md fy8-6-L2-05 Sijoitus — the raw point (2,00 V; 8,8 mA) is called "suoran piste". — Use the fit's mean point (2,10 V; 14,92 mA), as answers.py does.
+- exercises.json fy8-6-L1-07 — this is the same step as L2-01 reversed, one level lower, and L1-08 is not in the plan. — Align the levels or the plan.
 
 ## Checked
-- One-script recompute of all 12 answers with own formulas: 3,124e-19 J; 2,362 eV; 4,612e14 Hz; 873,2 nm; 6,568e-34; 2,638 V; 6,304e-34 (stored 6,3e-34, within tolerance); 39,36 mW; 0,541 eV; 6,748e-34 (LSQ k = 4,212e-15, b = −0,164 V); 2,403e-35; 22,08 % — all match answers.py and solutions.
-- L3-01 data realistic (offsets −0,11…−0,13 V below hc/(eλ)); two-endpoint check 4,18e-15 V s right.
-- L3-02 steepest/shallowest lines as an estimated range; (6,6 ± 0,2)·10^-34 J s, ≈ 4 %.
-- L3-03 at most one photon per electron; 68 mW upper-bound check real.
-- L2-02 assumption eU_k = hc/λ stated in the task; −4,9 % explained by the offset, consistent with the brief.
-- L2-03, L3-03 assumptions (one escaping photon per electron) stated in the tasks.
-- Units, conversions, symbolic solving first, rounding by the limiting datum throughout.
-- Notation (U_k, h = ek, 1240 eV nm) matches the brief; within FY8 scope.
+- One-script recompute of all 20 answers, all equal to answers.py. New answers: 539,1 nm; 6,242·10¹⁶ 1/s; 1,857 V; +3,645 % (Aino and Eero −11,6 and −4,5 %); 0,1251 eV; 6,742·10⁻³⁴ J s (intercept −0,062 → −0,112 V); 486,0 nm (direct 504,1 nm, Δλ 9,5 nm).
+- In L3-04 the zero error shifts only the intercept; in L3-05 the line includes b. L1-06 has exactly one correct option.
+- The renders are clean. Hash is the same at start and end.

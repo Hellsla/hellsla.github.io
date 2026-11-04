@@ -1,20 +1,18 @@
-VERDICT: PASS
-CONTENT-HASH: 1c8a634f4609ffc4
+VERDICT: FAIL
+CONTENT-HASH: 4187dbc87c6a58fb
 
 ## Blocking
-(none)
+- [Major] exercises.json fy8-5-L2-05 (task 5-13), data table, column "$r\,(\text{nm})$" — the class ranges render with decimal points ("0.00–0.05", "0.05–0.10", … "0.25–0.30"), while every other table in the set shows the decimal comma (L3-05 "5,39") — Finnish decimal-comma rule broken in new text, and the table disagrees with the task text and solution ("$0{,}05\,\text{nm}$", "0,05–0,10 nm") — write the cells with a comma, e.g. "0,00–0,05" (or `$0{,}00\text{–}0{,}05$`) in all six rows.
 
 ## Polish
-- [Minor] exercises.json L1-02 — the line breaks between "$2\text{s}$" and "-elektroni" ("2s / -elektroni") — bind them, e.g. rephrase to "$2\text{s}$-tilan elektroni" or keep the suffix in the same inline unit.
-- [Minor] solutions.md L3-01 Muunnokset — "$1\,\text{J} = \tfrac{1}{1{,}602 \cdot 10^{-19}}\,\text{eV}$" is set small inline and hard to read; give it as its own chain or write $1\,\text{J} = 1 : (1{,}602 \cdot 10^{-19})\,\text{eV}$.
-- [Minor] solutions.md L2-01 vs L3-01 — $hc$ is $1{,}9865 \cdot 10^{-25}$ here but $1{,}98647 \cdot 10^{-25}$ in the lesson example; harmless as an intermediate value, but one precision across the chapter would read more consistently.
+- [Minor] solutions.md L2-05 Vastaus — one long paragraph holds a), b), c), the interpolation and the 8,0 % outside the limit; hard to scan — split a)/b)/c) onto separate lines.
+- [Minor] solutions.md L3-05 Annettu — "$h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$" breaks after "h =" at 1280 px; keep each constant in one unit (e.g. separate with line breaks).
 
 ## Checked
-- Exercise set has no figures; all judgement from captures (1280 px; the 360 px layout comes from check_layout, no phone capture of the exercises exists).
-- Opened: open-exercises-1280-1, -2, -4 (level 1: tasks 1, 2, 4, 5, solutions open); open-exercises-L2-1280-1, -3 (tasks 1, 2, 3); open-exercises-L3-1280-1, -4 (tasks 1, 3).
-- Read all of exercises.json and solutions.md: quantities with units are inline LaTeX, case endings after maths correct ("$90\,\%$:n"), colon for division ($8000 : 20$), decimal comma, \cdot, aligned chains split into rows with = in one column, opened solutions stay inside their cards.
-- Task texts read as situation then question; one instructional voice; Annettu/Kysytty/Periaate/Kaava/Muunnokset/Sijoitus/Vastaus/Järkevyys order kept.
-- Not opened: L1-1280-3, -5; L2-1280-2, -4, -5; L3-1280-2, -3.
+- Opened at 1280 px: open-exercises-1280-7, -8 (L1-07, L1-08 with solution); open-exercises-L2-1280-5, -6, -7, -8, -9 (L2-05, L2-06 with figure, L2-07 with wrong option chosen); open-exercises-L3-1280-7, -8 (L3-04 end, L3-05 task and solution); contact-7.
+- Read all new tasks and solutions in source (L1-06..08, L2-05..07, L3-04..05). Numbers recomputed: 72,25 %, 120 Hz, 1,887–3,020 eV, n = 3–6, 13,6 eV, 590,5 nm, 241,2 nm; all match answers.
+- Figure fy8-5/string in L2-06 reads clearly (nodes marked, 0/1/2 solmua, dashed second phase); LaTeX, units, colon, case endings correct; MC feedback stays inside cards.
+- No 360 px capture of the exercises exists (only stage-exercises-390, not opened); layout check at 360 px is clean per packet.
 
 ## Scores
-illustrations n/a (5) · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

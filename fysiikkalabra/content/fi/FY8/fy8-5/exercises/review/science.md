@@ -1,18 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 1c8a634f4609ffc4
+CONTENT-HASH: 4187dbc87c6a58fb
 
 ## Blocking
 
 ## Polish
-- solutions.md L2-04 Järkevyys — "juuri näkyvän alueen alapuolella, lähellä ultraviolettia": 365 nm is already ultraviolet (UVA), not near it. — Write "aallonpituus on lähellä ultraviolettia" → "aallonpituus on ultraviolettia, juuri näkyvän alueen ulkopuolella".
+- solutions.md fy8-5-L3-05 Vastaus b) — "alkalimetalleilla arvot ovat suurempia, koska ytimen varaus on suurempi kuin vedyllä" clashes with the screening argument just made. — Write "koska sisäkuorten elektronit eivät varjosta ytimen varausta täysin, joten valenssielektroniin vaikuttaa suurempi varaus kuin vedyssä".
+- solutions.md fy8-5-L3-04 Kuvaajan lukeminen — the slope is read through the first and last raw data points, called "suoran päätepisteet". Also "kuoille" → "kuorille". — Either read two points off the fitted line (for example at 0,14 and 0,22) or call the end-point slope a check of the fitted value 13,62 eV.
+- figure fy8-5/string (used by L2-06) — the labels "0 solmua / 1 solmu / 2 solmua" give away the node count that a) asks for. — Ask in a) only for the wavelengths, or remove the node-count labels from the copy shown with the task.
+- solutions.md fy8-5-L2-06 Vastaus c) — "$80\,\text{Hz} \cdot \tfrac12 = 40\,\text{Hz}$" uses the m = 2 frequency before it has been computed. — Write $f_1 = \tfrac{64\,\text{m/s}}{1{,}60\,\text{m}} = 40\,\text{Hz}$.
+- exercises.json fy8-5-L3-05 — Li 5,39, Na 5,14 and K 4,34 eV and the 2,10 eV Na transition are real tabulated values but are labelled "Esimerkkiaineisto". — Name a source (for example NIST ASD) and present the values as lähteellinen aineisto.
 
 ## Checked
-- Round-1 polish is resolved: L1-01 now says "s, p, d, …" with "1, 3, 5, …", and its check uses the differences of 2, 8, 18, 32 instead of a fifth subshell.
-- Recomputed independently in one script, agreeing with answers.py: L1 50, 5,2625 %, 300, 1,5111 eV, −0,544 eV; L2 102,57 nm, 8, 960, 364,70 nm; L3 n = 3,986 → 16 orbitals, 15 (P), 4235.
-- L3-01: 1 → 4 is 97,25 nm with these constants, so 97,3 nm is the Lyman line and the rounding to n = 4 is safe.
-- L3-03: an exact 2s isodensity region at 90 % gives an inner ball of 5,25 % of the 5,27 % inside the node, which justifies "käytännössä kokonaan". The exact count is 4237, so "noin 4240" is sound.
-- L1-02: 421/8000 matches the model's 5,27 % (expected 421,2).
-- L2-03: the radii 0,071 and 0,14 nm match the 1s radial distribution (0,0707 and 0,1408 nm).
-- Solutions are symbolic first, with eV→J by substitution. The 3-significant-figure rounding follows from 13,6 eV, and the expected counts are called odotusarvo.
-- The reasonableness checks are real comparisons: 122 nm for 2p→1s, E_4 against E_3 and E_5, argon as a noble gas, phosphorus.
-- Within FY8 scope: E_n is given as data, with no de Broglie and no Schrödinger equation.
+- One-script recompute, all equal to answers.py: 50; 5,26 %; 300; 1,51; −0,544 eV; 14; 103 nm; 8; 960; 365 nm; 72,25 %; 120 Hz; 16; 15; 4235; 13,62 eV; 590,5 nm (241,2 nm).
+- L2-05 histogram matches the exact 1s distribution (117/174/78/24/6/1); interpolated 90 % radius 0,145 vs 0,141 nm.
+- L3-04 gives n = 3,00/4,01/5,02/5,98; the n = 7 line is 397,1 nm and the limit 365 nm.
+- L3-05 configuration and trend reasoning are right; 2,10 eV < E_i.
+- L2-06: 40/80/120 Hz; the node–energy analogy matches the brief.
+- MC L1-06, L1-07, L2-07: one correct option each, and every feedback is right.
+- Scope, notation, symbolic-first solving and rounding are fine. The levels fit and nothing duplicates an existing task. Hash is the same at start and end.
