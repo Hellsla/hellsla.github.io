@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Miksi luu näkyy röntgenkuvassa vaaleana ja keuhkot tummina?",
+    "a": "Luu vaimentaa röntgensäteilyä paljon enemmän kuin pehmytkudos, koska se on tiheämpää ja sen kalsiumatomeissa on paljon elektroneja: sen puoliintumispaksuus on pienempi. Luun taakse osuu siksi vähemmän säteilyä, ja kohta näkyy vaaleana. Keuhkojen ilma päästää säteilyn läpi lähes vaimentamatta, joten ilmaisimeen osuu paljon säteilyä ja keuhkot näkyvät tummina."
+  },
+  {
+    "q": "Mitä tarkoittavat säteilyn lääketieteellisen käytön periaatteet oikeutus ja optimointi?",
+    "a": "Oikeutus: tutkimuksesta tai hoidosta saatavan hyödyn on oltava suurempi kuin säteilyn haitta, joten se tehdään vain, kun tulos vaikuttaa hoitoon. Optimointi: annos pidetään niin pienenä kuin käytännössä on mahdollista, kun kuva silti vastaa kysymykseen. Liian pieni annos voi pakottaa uusimaan kuvauksen."
+  }
+]

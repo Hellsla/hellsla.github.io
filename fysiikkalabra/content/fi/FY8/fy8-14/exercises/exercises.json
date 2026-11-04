@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy8-14-L1-01",
+      "level": 1,
+      "text": "Röntgensäde kulkee $6{,}8\\,\\text{cm}$ paksun pehmytkudoskerroksen läpi. Pehmytkudoksen puoliintumispaksuus tälle säteilylle on $3{,}4\\,\\text{cm}$. Kuinka monta prosenttia säteilystä pääsee kudoksen läpi?",
+      "answer": 25,
+      "unit": "%",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-14-L1-02",
+      "level": 1,
+      "text": "Luuston isotooppikuvausta varten potilaalle annetaan teknetium-$99\\text{m}$-merkkiainetta, jonka aktiivisuus on $600\\,\\text{MBq}$. Teknetium-$99\\text{m}$:n puoliintumisaika on $6{,}01\\,\\text{h}$. Kuinka suuri merkkiaineen aktiivisuus on $24{,}0\\,\\text{h}$:n kuluttua, jos aineesta ei poistuisi mitään elimistöstä? Anna vastaus megabecquereleinä.",
+      "answer": 38,
+      "unit": "MBq",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-14-L1-03",
+      "level": 1,
+      "text": "PET-kuvauksen FDG-merkkiaineen efektiivinen annos on aikuiselle noin $0{,}019\\,\\text{mSv}$ jokaista ruiskutettua megabecquerelia kohti. Kuinka suuren efektiivisen annoksen potilas saa, kun hänelle ruiskutetaan $300\\,\\text{MBq}$? Anna vastaus millisieverteinä.",
+      "answer": 5.7,
+      "unit": "mSv",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-14-L1-04",
+      "level": 1,
+      "text": "Sädehoidossa kasvain, jonka massa on $50\\,\\text{g}$, saa yhdellä hoitokerralla absorboituneen annoksen $2{,}0\\,\\text{Gy}$. Kuinka paljon säteilyenergiaa kasvain absorboi hoitokerran aikana? Anna vastaus jouleina.",
+      "answer": 0.1,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-14-L1-05",
+      "level": 1,
+      "text": "Savuilmaisimessa on amerikium-241:tä, jonka aktiivisuus on uutena $37\\,\\text{kBq}$. Amerikium-241:n puoliintumisaika on $432\\,\\text{a}$. Kuinka suuri aktiivisuus on $100\\,\\text{a}$:n kuluttua? Anna vastaus kilobecquereleinä.",
+      "answer": 32,
+      "unit": "kBq",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy8-14-L2-01",
+      "level": 2,
+      "text": "Elävän puun hiilestä mitataan hiili-14:n aktiivisuudeksi $0{,}23\\,\\text{Bq}$ grammaa kohti. Arkeologisesta kaivauksesta löytyneen puuhiilen vastaava aktiivisuus on $0{,}029\\,\\text{Bq}$ grammaa kohti. Hiili-14:n puoliintumisaika on $5700\\,\\text{a}$. Kuinka vanha puuhiili on? Anna vastaus vuosina kahden merkitsevän numeron tarkkuudella.",
+      "answer": 17000,
+      "unit": "a",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-14-L2-02",
+      "level": 2,
+      "text": "Terästehtaan paksuusmittarissa amerikium-241:n $60\\,\\text{keV}$:n gammasäteily kulkee ohuen teräsnauhan läpi ilmaisimeen. Ilman nauhaa ilmaisin laskee $1200$ fotonia sekunnissa ja nauhan kanssa $900$ fotonia sekunnissa, kun taustasäteily on vähennetty. Teräksen puoliintumispaksuus tälle säteilylle on $0{,}73\\,\\text{mm}$. Kuinka paksu nauha on? Anna vastaus millimetreinä.",
+      "answer": 0.3,
+      "unit": "mm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-14-L2-03",
+      "level": 2,
+      "text": "Vartalon TT-tutkimuksesta potilas saa efektiivisen annoksen $8{,}0\\,\\text{mSv}$. Suomalainen saa luonnon säteilystä keskimäärin noin $5{,}1\\,\\text{mSv}$ vuodessa. Kuinka monen vuorokauden luonnon säteilyannosta TT-tutkimus vastaa? Vuodessa on $365$ vuorokautta.",
+      "answer": 570,
+      "unit": "d",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-14-L2-04",
+      "level": 2,
+      "text": "PET-potilaasta lähtevän säteilyn annosnopeus on heti merkkiaineen ruiskutuksen jälkeen $1{,}0\\,\\text{m}$:n etäisyydellä $30\\,\\mu\\text{Sv/h}$. Hoitaja auttaa potilasta $5{,}0\\,\\text{min}$ ajan $0{,}50\\,\\text{m}$:n etäisyydellä. Kuinka suuren annoksen hoitaja saa? Oletetaan, että potilasta voi pitää pistemäisenä lähteenä ja että annosnopeus pysyy tämän ajan vakiona. Anna vastaus mikrosieverteinä.",
+      "answer": 10,
+      "unit": "µSv",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy8-14-L3-01",
+      "level": 3,
+      "text": "Kasvain saa sädehoidossa $30$ hoitokertaa, kullakin kerralla $2{,}0\\,\\text{Gy}$. Kullakin kerralla säteily annetaan viidestä eri suunnasta, ja jokainen keila antaa kasvaimeen yhtä suuren osan annoksesta. Keilan tulokohdassa, ennen kasvainta, terve kudos saa keilasta $1{,}3$-kertaisen annoksen siihen verrattuna, mitä sama keila antaa kasvaimeen. Kuinka suuren kokonaisannoksen terve kudos yhden keilan tulokohdassa saa koko hoidon aikana? Oletetaan, että muut keilat eivät kulje tämän kohdan kautta. Anna vastaus grayna.",
+      "answer": 16,
+      "unit": "Gy",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy8-14-L3-02",
+      "level": 3,
+      "text": "Mammografiassa käytetään noin $30\\,\\text{keV}$:n röntgensäteilyä. Tällä energialla pehmytkudoksen puoliintumispaksuus on $1{,}8\\,\\text{cm}$ ja luun tai kalkkeuman $0{,}27\\,\\text{cm}$. Kaksi yhtä pitkää sädettä kulkee kudoksen läpi: toinen pelkän pehmytkudoksen läpi, toisen matkalla $1{,}0\\,\\text{cm}$ pehmytkudosta on korvautunut samanpaksuisella kalkkeutuneella kudoksella, joka vaimentaa kuin luu. Kuinka monta kertaa suurempi intensiteetti osuu ilmaisimeen pelkän pehmytkudoksen läpi kulkeneen säteen kohdalla?",
+      "answer": 8.9,
+      "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-14-L3-03",
+      "level": 3,
+      "text": "PET-merkkiaineen $511\\,\\text{keV}$:n fotoneille lyijyn puoliintumispaksuus on $3{,}9\\,\\text{mm}$. Kuinka paksu lyijysuoja ruiskun ympärillä tarvitaan, jotta suojan läpi pääsee vain $5{,}0\\,\\%$ säteilystä? Anna vastaus millimetreinä.",
+      "answer": 17,
+      "unit": "mm",
+      "tolerance": 0.02
+    }
+  ]
+}
