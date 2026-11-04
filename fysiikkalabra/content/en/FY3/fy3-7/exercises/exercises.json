@@ -40,6 +40,74 @@
       "answer": 333,
       "unit": "kJ/kg",
       "tolerance": 0.03
+    },
+    {
+      "id": "fy3-7-L1-06",
+      "level": 1,
+      "text": "A block of ice is heated steadily at its melting point, and the block melts. What happens to the temperature of the mixture of ice and meltwater while there is still ice left?",
+      "kind": [
+        "concept"
+      ],
+      "unit": "",
+      "tolerance": 0.02,
+      "answer": "The temperature stays the same, because the energy changes the interactions between the particles.",
+      "choices": [
+        {
+          "text": "The temperature rises steadily, because the energy increases the kinetic energy of the particles.",
+          "feedback": "The energy transferred during melting does not increase the kinetic energy but the interaction energy between the particles. That is why the temperature does not rise even though a lot of energy is transferred."
+        },
+        {
+          "text": "The temperature falls, because melting takes energy from the mixture itself.",
+          "feedback": "During heating, energy is transferred to the mixture from outside all the time, so the mixture does not cool. The energy is used for melting, and the temperature stays the same."
+        },
+        {
+          "text": "The temperature first rises and then falls, because most energy is needed at the start.",
+          "feedback": "The temperature does not change during melting, either upwards or downwards. It starts to rise only after all the ice has melted."
+        },
+        {
+          "text": "The temperature stays the same, because the energy changes the interactions between the particles.",
+          "correct": true,
+          "feedback": "Correct: at constant pressure the temperature stays constant throughout a change of state. The energy is used to change the interactions between the particles, and only when all the ice has melted does the water start to warm up."
+        }
+      ]
+    },
+    {
+      "id": "fy3-7-L1-07",
+      "level": 1,
+      "text": "On a hot day sweat appears on the skin, and the sweat evaporates. Why does the evaporation of sweat cool the skin?",
+      "kind": [
+        "concept"
+      ],
+      "unit": "",
+      "tolerance": 0.02,
+      "answer": "Evaporating sweat takes energy from the skin, so the skin cools.",
+      "choices": [
+        {
+          "text": "As it evaporates, sweat gives out energy to the skin, and that is why the temperature of the skin falls.",
+          "feedback": "Vaporisation does not give out energy but absorbs it. If sweat gave out energy to the skin, the skin would warm up, not cool down."
+        },
+        {
+          "text": "The drops of sweat are colder than the skin, and they cool the skin like an ice cube.",
+          "feedback": "Sweat comes from the body and is as warm as the skin. The cooling effect arises only from the evaporation."
+        },
+        {
+          "text": "Evaporating sweat takes energy from the skin, so the skin cools.",
+          "correct": true,
+          "feedback": "Correct: the vaporisation of a liquid needs energy, $Q = rm$, and the sweat takes it from the skin. When the skin loses energy, its temperature falls."
+        },
+        {
+          "text": "Evaporation uses up the oxygen of the skin, and that is why the skin cools.",
+          "feedback": "Evaporation does not use up oxygen. The cooling effect is due to the fact that vaporisation absorbs energy."
+        }
+      ]
+    },
+    {
+      "id": "fy3-7-L1-08",
+      "level": 1,
+      "text": "A cottage hob is left on under an open pan. When the water boils, a total of $1.36\\,\\text{MJ}$ of energy is transferred to the water during boiling, and all of it is used to vaporise the water. How many kilograms of water boil away?",
+      "answer": 0.602,
+      "unit": "kg",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -74,6 +142,115 @@
       "answer": 0.94,
       "unit": "MJ",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-7-L2-05",
+      "level": 2,
+      "kind": [
+        "data",
+        "experiment"
+      ],
+      "text": "A student heats $0.250\\,\\text{kg}$ of ice with a $600\\,\\text{W}$ immersion heater and measures the temperature $T$ as a function of time $t$ (table, sample data). Assume that all the energy of the heater is transferred to the ice and the water formed from it.\n\na) Use the table to explain what happens to the substance in the different stages and why the temperature does not rise between about $20\\,\\text{s}$ and $150\\,\\text{s}$.\n\nb) Determine from the table the time taken by the melting and use it to calculate the specific latent heat of fusion of ice. The rows $20\\,\\text{s}$ and $150\\,\\text{s}$ of the table are already inside the plateau: use the slopes of the rises to estimate exactly when the temperature reaches $0\\,{}^\\circ\\text{C}$ and when it starts to rise again.\n\nWrite the specific latent heat of fusion from part b) in the unit $\\text{kJ/kg}$ in the answer box.",
+      "answer": 334,
+      "unit": "kJ/kg",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Heating of ice at a power of $600\\,\\text{W}$ (sample data)",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$T\\,({}^\\circ\\text{C})$"
+        ],
+        "rows": [
+          [
+            "0",
+            "−20.0"
+          ],
+          [
+            "10",
+            "−8.6"
+          ],
+          [
+            "20",
+            "0.0"
+          ],
+          [
+            "60",
+            "0.0"
+          ],
+          [
+            "100",
+            "0.1"
+          ],
+          [
+            "140",
+            "0.0"
+          ],
+          [
+            "150",
+            "0.0"
+          ],
+          [
+            "160",
+            "1.9"
+          ],
+          [
+            "180",
+            "13.4"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy3-7-L2-06",
+      "level": 2,
+      "kind": [
+        "error"
+      ],
+      "text": "A student boils water in an open pan on an electric hob. The water boils, and she writes in her notes: “When I turn up the power of the hob, the boiling water warms to over $100\\,{}^\\circ\\text{C}$, because more energy is transferred to the water, and so it vaporises faster.”\n\na) Explain what is wrong in the student’s reasoning.\n\nb) The power of the hob is $3.0\\,\\text{kW}$. How many kilograms of water boil away in $5.0\\,\\text{min}$ when all the energy of the hob is transferred to the water?\n\nWrite the result of part b) in the answer box.",
+      "answer": 0.4,
+      "unit": "kg",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-7-L2-07",
+      "level": 2,
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "text": "The table gives the boiling point $T_\\text{b}$ of water at different pressures $p$ (steam table, values rounded). Water is boiled in an open pan high in the mountains, where the air pressure is $60.0\\,\\text{kPa}$. Normal air pressure is $101.3\\,\\text{kPa}$.\n\na) Estimate the boiling point at a pressure of $60.0\\,\\text{kPa}$ using the two neighbouring rows of the table. By how many kelvins lower does water boil at $60.0\\,\\text{kPa}$ than at normal pressure?\n\nb) Explain why food cooks more slowly in the mountains even though the water boils all the time and the hob gives the same power.\n\nWrite the result of part a) in the answer box.",
+      "answer": 14.4,
+      "unit": "K",
+      "tolerance": 0.04,
+      "data": {
+        "caption": "Boiling point of water at different pressures (steam table)",
+        "columns": [
+          "$p\\,(\\text{kPa})$",
+          "$T_\\text{k}\\,({}^\\circ\\text{C})$"
+        ],
+        "rows": [
+          [
+            "20.0",
+            "60.1"
+          ],
+          [
+            "30.0",
+            "69.1"
+          ],
+          [
+            "50.0",
+            "81.3"
+          ],
+          [
+            "70.0",
+            "90.0"
+          ],
+          [
+            "101.3",
+            "100.0"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -99,6 +276,87 @@
       "text": "A group measures the specific latent heat of vaporisation of water with two measurements. Water boils in an open vessel on a balance, and the water contains an immersion heater whose power can be adjusted. When the heater power is $800\\,\\text{W}$, the balance reading falls by $196\\,\\text{g}$ in $10.0\\,\\text{min}$. When the power is $400\\,\\text{W}$, the reading falls by $90.0\\,\\text{g}$ in $10.0\\,\\text{min}$. In both measurements the water is at $100\\,{}^\\circ\\text{C}$, so the same amount of energy passes from the vessel to the surrounding air every second. Calculate the specific latent heat of vaporisation using the difference of the two measurements. Justify why the energy passing to the air does not affect the result and why the value calculated from each measurement separately is too large. Give your answer in the unit MJ/kg.",
       "answer": 2.26,
       "unit": "MJ/kg",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-7-L3-04",
+      "level": 3,
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "text": "The stearin used to make candles has been melted into a $0.100\\,\\text{kg}$ batch, which cools and solidifies in air. The temperature $T$ is measured as a function of time $t$ (table, sample data). The stearin gives out the same power to its surroundings all the time. The specific heat capacity of liquid stearin is $2200\\,\\text{J/(kg}\\cdot\\text{K)}$.\n\na) Determine the solidification temperature of stearin from the table.\n\nb) Calculate the power $P$ given out to the surroundings as liquid stearin cools.\n\nc) Estimate from the table the start and end of solidification, and calculate the energy released in the solidification and the specific latent heat of solidification of stearin (the same as the specific latent heat of fusion). Justify why the temperature does not fall during solidification.\n\nWrite the energy released in the solidification in part c) in the unit $\\text{kJ}$ in the answer box.",
+      "answer": 20,
+      "unit": "kJ",
+      "tolerance": 0.08,
+      "data": {
+        "caption": "Cooling of a batch of stearin (sample data)",
+        "columns": [
+          "$t\\,(\\text{min})$",
+          "$T\\,({}^\\circ\\text{C})$"
+        ],
+        "rows": [
+          [
+            "0",
+            "80.0"
+          ],
+          [
+            "1",
+            "76.7"
+          ],
+          [
+            "2",
+            "73.5"
+          ],
+          [
+            "3",
+            "70.2"
+          ],
+          [
+            "4",
+            "69.4"
+          ],
+          [
+            "8",
+            "69.4"
+          ],
+          [
+            "14",
+            "69.3"
+          ],
+          [
+            "20",
+            "69.3"
+          ],
+          [
+            "26",
+            "69.2"
+          ],
+          [
+            "30",
+            "69.2"
+          ],
+          [
+            "32",
+            "65.0"
+          ],
+          [
+            "34",
+            "57.4"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy3-7-L3-05",
+      "level": 3,
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "text": "At a café milk is heated with the steam wand of an espresso machine. The jug contains $0.300\\,\\text{kg}$ of milk at a temperature of $20.0\\,{}^\\circ\\text{C}$. Steam at $100\\,{}^\\circ\\text{C}$ is blown from the wand into the milk; it condenses and cools to the final temperature of the milk. The milk is heated until its temperature is $65.0\\,{}^\\circ\\text{C}$. The specific heat capacity of milk is the same as that of water, and no heat passes to the jug or the air.\n\na) Calculate how many grams of steam must condense in the milk.\n\nb) How many kilograms of water at $100\\,{}^\\circ\\text{C}$ would have to be mixed into the milk for the milk to warm to the same $65.0\\,{}^\\circ\\text{C}$? Use the comparison to justify why steam at $100\\,{}^\\circ\\text{C}$ burns the skin worse than water that is just as hot.\n\nWrite the result of part a) in the unit $\\text{g}$ in the answer box. You can check the calculation and justification of part b) from the model answer.",
+      "answer": 23.5,
+      "unit": "g",
       "tolerance": 0.02
     }
   ]
