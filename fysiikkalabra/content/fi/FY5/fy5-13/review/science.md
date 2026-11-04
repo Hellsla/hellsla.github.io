@@ -1,9 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 41dcb60373a7417e
+CONTENT-HASH: d4a87ce48229af48
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- batch delta review: the diff only renames this and neighbouring FY5 chapters (title, meta.json, `luku *...*` references in lesson.md and inquiry.json); every renamed reference names the chapter that holds the cited content, and no formula, number, option, `correct` flag or feedback physics changed. Opening illustration redrawn: its alt text and capture show the situation correctly (no labels or numbers in the lesson's other figures changed). Every choice still has exactly one correct option.
+- delta review: the only change since my last PASS is the organ-pipe Find-the-error prompt, whose display formula is split with `aligned` into two rows; f_1 = v/(2L) = 340 m/s / (2 * 0.85 m) = 200 Hz is unchanged, still the deliberate error (closed pipe: v/(4L) = 100 Hz).
+- Choices, correct flags and feedback untouched; exactly one correct option remains.
