@@ -120,8 +120,8 @@
 
 ## fy8-16-L1-06
 **Asked:** what causes the shift of the spectral lines of distant galaxies to longer wavelengths, that is, the redshift.
-**Principle:** The space of the universe expands, and the expansion stretches light travelling in space. The wavelength of the light grows in the same proportion as space stretches during the journey, so the redshift $z = \tfrac{\Delta\lambda}{\lambda_0}$ is the same fraction of the own wavelength of every line.
-**Model answer:** The cause of the redshift is the expansion of space: when space stretches during the journey of the light, the wavelength of the light stretches too, and all spectral lines shift to longer wavelengths. The colour of the galaxy or the temperature of its stars does not explain it, because the shift applies as an equal fraction to every line. Dust and gas remove light only at certain wavelengths, but they do not move the positions of the lines. The motion of galaxies through space (the Doppler effect) does not explain the shift of distant galaxies, because it describes only the own motion of the galaxy, whereas the shift arises from the expansion of space and grows with distance.
+**Principle:** The space of the universe expands, and the expansion stretches light travelling in space. The wavelength of the light grows in the same proportion as space stretches during the journey, so the redshift $z = \tfrac{\Delta\lambda}{\lambda_0}$ is the same fraction of each line's own wavelength.
+**Model answer:** The cause of the redshift is the expansion of space: when space stretches during the journey of the light, the wavelength of the light stretches too, and all spectral lines shift to longer wavelengths. The colour of the galaxy or the temperature of its stars does not explain it, because the shift applies as an equal fraction to every line. Dust and gas remove light only at certain wavelengths, but they do not move the positions of the lines. The motion of galaxies through space (the Doppler effect) does not explain the shift of distant galaxies, because it describes only the galaxy's own motion, whereas the shift arises from the expansion of space and grows with distance.
 
 ## fy8-16-L1-07
 **Given:** distance of the galaxy $d = 185\,\text{Mpc}$ and recession speed $v = 12\,800\,\text{km/s}$
@@ -131,7 +131,7 @@
 **Conversions:** None needed: the speed is in kilometres per second and the distance in megaparsecs, so the result comes directly in the right unit.
 **Substitution:** $H_0 = \dfrac{12\,800\,\text{km/s}}{185\,\text{Mpc}} = 69.19\,\tfrac{\text{km/s}}{\text{Mpc}}$
 **Answer:** $69.2\,\tfrac{\text{km/s}}{\text{Mpc}}$, three significant figures, as in the given values $185\,\text{Mpc}$ and $12\,800\,\text{km/s}$.
-**Reasonableness:** Check by multiplying: $69.2\,\tfrac{\text{km/s}}{\text{Mpc}} \cdot 185\,\text{Mpc} = 12\,800\,\text{km/s}$. The value is close to the known value of the Hubble constant, $70\,\tfrac{\text{km/s}}{\text{Mpc}}$, and in the measurement of a single galaxy the small difference is due to measurement uncertainty and the own motion of the galaxy.
+**Reasonableness:** Check by multiplying: $69.2\,\tfrac{\text{km/s}}{\text{Mpc}} \cdot 185\,\text{Mpc} = 12\,800\,\text{km/s}$. The value is close to the known value of the Hubble constant, $70\,\tfrac{\text{km/s}}{\text{Mpc}}$, and in the measurement of a single galaxy the small difference is due to measurement uncertainty and the galaxy's own motion.
 
 ## fy8-16-L1-08
 **Asked:** where the almost uniform radiation of the cosmic background radiation, arriving from every direction, comes from.
@@ -147,7 +147,7 @@
 **Conversions:** None needed: the distance is in megaparsecs and the speed in kilometres per second, so the slope comes directly in the unit $\tfrac{\text{km/s}}{\text{Mpc}}$.
 **Substitution:** The sums are $\sum d\,v = 11\,439\,330\,\tfrac{\text{km}}{\text{s}}\,\text{Mpc}$ and $\sum d^{2} = 167\,127\,\text{Mpc}^{2}$, so $H_0 = \dfrac{11\,439\,330}{167\,127}\,\tfrac{\text{km/s}}{\text{Mpc}} = 68.45\,\tfrac{\text{km/s}}{\text{Mpc}}$.
 b) At the distance $28\,\text{Mpc}$ the line gives the speed $68.45 \cdot 28\,\text{km/s} = 1917\,\text{km/s}$, but the measured value is $2260\,\text{km/s}$. The deviation is $343\,\text{km/s}$, or $18\,\%$. The other points deviate by at most $3\,\%$ from the value of the line.
-**Answer:** $68\,\tfrac{\text{km/s}}{\text{Mpc}}$ (more precisely $68.4\,\tfrac{\text{km/s}}{\text{Mpc}}$), two significant figures. b) The point that deviates most is the nearest galaxy, at $28\,\text{Mpc}$. The deviation is due to the own motion of the galaxy, typically a few hundred kilometres per second: nearby the expansion speed is small, so the same own motion is a large part of the speed there and a small part far away.
+**Answer:** $68\,\tfrac{\text{km/s}}{\text{Mpc}}$ (more precisely $68.4\,\tfrac{\text{km/s}}{\text{Mpc}}$), two significant figures. b) The point that deviates most is the nearest galaxy, at $28\,\text{Mpc}$. The deviation is due to the galaxy's own motion, typically a few hundred kilometres per second: nearby the expansion speed is small, so the same own motion is a large part of the speed there and a small part far away.
 **Reasonableness:** The ratio $\tfrac{v}{d}$ of every point is $66$–$81\,\tfrac{\text{km/s}}{\text{Mpc}}$, and for eight of the nine it is $66$–$70\,\tfrac{\text{km/s}}{\text{Mpc}}$, so the result $68\,\tfrac{\text{km/s}}{\text{Mpc}}$ lies between them. It is close to the known value of the Hubble constant, $67$–$70\,\tfrac{\text{km/s}}{\text{Mpc}}$.
 
 ## fy8-16-L2-06

@@ -257,12 +257,12 @@
       "choices": [
         {
           "text": "Kaikki perushiukkaset hajoavat, joten neutronin hajoaminen on varmaa",
-          "feedback": "Kaikki perushiukkaset eivät hajoa: elektroni on pysyvä. Hajoaminen ei riipu siitä, onko hiukkanen perushiukkanen. Myoni on perushiukkanen mutta hajoaa, ja protoni koostuu kvarkeista mutta on pysyvä. Hajoamisen ratkaisevat säilymislait ja $Q > 0$."
+          "feedback": "Kaikki perushiukkaset eivät hajoa: elektroni on pysyvä. Hajoaminen ei riipu siitä, onko hiukkanen perushiukkanen. Myoni on perushiukkanen mutta hajoaa, ja protoni koostuu kvarkeista mutta on pysyvä. Hajoamisen ratkaisevat säilymislait ja se, että $Q > 0$ eli hajoamisessa vapautuu energiaa."
         },
         {
           "text": "Neutroni koostuu kvarkeista, ja kvarkin laji voi muuttua",
           "correct": true,
-          "feedback": "Oikein: neutroni ei ole perushiukkanen. Se koostuu kvarkeista $u\\,d\\,d$, ja heikossa vuorovaikutuksessa yksi $d$-kvarkki muuttuu $u$-kvarkiksi. Osa perushiukkasista hajoaa (myoni). Hajoamisen ratkaisevat säilymislait ja $Q > 0$. Neutroni hajoaa protoniksi, elektroniksi ja antineutriinoksi."
+          "feedback": "Oikein: neutroni ei ole perushiukkanen. Se koostuu kvarkeista $u\\,d\\,d$, ja heikossa vuorovaikutuksessa yksi $d$-kvarkki muuttuu $u$-kvarkiksi. Osa perushiukkasista hajoaa (myoni). Hajoamisen ratkaisevat säilymislait ja se, että $Q > 0$ eli hajoamisessa vapautuu energiaa. Neutroni hajoaa protoniksi, elektroniksi ja antineutriinoksi."
         },
         {
           "text": "Energian säilyminen estää neutronia hajoamasta kevyemmiksi hiukkasiksi",

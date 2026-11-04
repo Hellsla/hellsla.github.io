@@ -2214,6 +2214,7 @@
     "op": 2,
     "planned_lessons": 16,
     "type": "valtakunnallinen valinnainen",
+    "exercise_total": 20,
     "tavoitteet": [
       "tuntee ionisoivan säteilyn vaikutukset ja tutustuu säteilyn turvalliseen käyttöön",
       "tutustuu kvanttifysiikkaan perustuvaan maailmankuvaan alkeishiukkasfysiikasta kosmologiaan",

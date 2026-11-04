@@ -1,18 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 774a8c852b1e5169
+CONTENT-HASH: aea99f1fb4c1726f
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] L2-03, L3-01 — kysymys ei ole viimeinen lause (kantaan jäänyt).
-- [Minor] solutions L3-01 Kaava (360 px): hakasulun sisällä \tfrac-murtolukujen $r_1/r_\text{A}$ on pieni (~7 px) ja "=" jää omalle rivilleen; luettavissa, mutta heikoin kohta.
+(none)
 
 ## Checked
-- Own Playwright captures at 360 px, ?ratkaisut=1, details opened: every changed formula in fi (L2-04 Järkevyys and L3-01 Kaava) plus the en and fi-easy counterparts (contact sheets sheet-fi/en/fi-easy.png in scratchpad shots-fx/).
-- Result: no h·c/X formulas in fy8-13; the changed items fit the 360 px column, document scrollWidth = 360 = viewport, no clipped KaTeX.
-- fy8-13 L2-04 Järkevyys ("(yksikkönä µSv/h)") and L3-01 Kaava with \tfrac in the bracket checked at 360 px; see Polish.
-- LaTeX valid, no red KaTeX; hash at start and end the same.
+- Opened the fi-easy captures of the new tasks (fy8-13-open-exercises-L2-*, L3-*, 1280-*). Data tables render with headings and units as maths, answer box with unit, solution blocks (Annettu/Given ... Reasonableness) laid out like fi.
+- No raw LaTeX, no plain-text symbols, no Finnish in the en captures; fi-easy shows decimal comma in tables and texts.
+- Table cells in JSON keep decimal point as in fi (the page localises them).
 
 ## Scores
-illustrations n/a · typography 4 · Finnish 5 · accessibility 4
+illustrations n/a - typography 5 - language 5 - accessibility 5

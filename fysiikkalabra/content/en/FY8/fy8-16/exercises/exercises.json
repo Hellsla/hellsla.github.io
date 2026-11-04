@@ -58,7 +58,7 @@
         },
         {
           "text": "The stars of the galaxies are cool and red, so the wavelengths of their light are long.",
-          "feedback": "Redshift does not mean the colour of the galaxy. Spectral lines shift in the same proportion to their wavelength, and the shift arises on the journey of the light, not from the temperature of the stars."
+          "feedback": "Redshift does not mean the colour of the galaxy. Spectral lines shift in the same proportion to their wavelength, and the shift arises during the light's journey, not from the temperature of the stars."
         },
         {
           "text": "Dust and gas between the galaxies absorb the short wavelengths, so only long-wavelength light is left.",
@@ -66,7 +66,7 @@
         },
         {
           "text": "The galaxies move away through space (the Doppler effect), and the motion stretches the wavelength of the light.",
-          "feedback": "The redshift of distant galaxies is caused not by motion through space but by the expansion of space. The Doppler effect describes only the own motion of the galaxy, which is a small part of the shift."
+          "feedback": "The redshift of distant galaxies is caused not by motion through space but by the expansion of space. The Doppler effect describes only the galaxy's own motion, which is a small part of the shift."
         }
       ]
     },
@@ -205,7 +205,7 @@
     {
       "id": "fy8-16-L2-06",
       "level": 2,
-      "text": "The $\\text{H}\\beta$ line of hydrogen is $486.1\\,\\text{nm}$ in the laboratory and $505.5\\,\\text{nm}$ in the spectrum of a galaxy. The distance of the galaxy is to be calculated when $H_0 = 70\\,\\tfrac{\\text{km/s}}{\\text{Mpc}}$ and $c = 2.998 \\cdot 10^{5}\\,\\text{km/s}$.\n\nStudent's solution: “The redshift is $z = 0.0399$ and the speed $v = c\\,z = 1.196 \\cdot 10^{4}\\,\\text{km/s}$. The distance is $d = v \\cdot H_0 = 1.196 \\cdot 10^{4} \\cdot 70 = 8.4 \\cdot 10^{5}\\,\\text{Mpc}$.”\n\na) Find the student's error and justify why the result is impossible already on the basis of units.\n\nb) Calculate the correct distance of the galaxy in megaparsecs.\n\nEnter the result of part b) in the answer field.",
+      "text": "The $\\text{H}\\beta$ line of hydrogen is $486.1\\,\\text{nm}$ in the laboratory and $505.5\\,\\text{nm}$ in the spectrum of a galaxy. The distance of the galaxy is to be calculated when $H_0 = 70\\,\\tfrac{\\text{km/s}}{\\text{Mpc}}$ and $c = 2.998 \\cdot 10^{5}\\,\\text{km/s}$.\n\nStudent's solution: “The redshift is $z = 0.0399$ and the speed $v = c\\,z = 1.196 \\cdot 10^{4}\\,\\text{km/s}$. The distance is $d = v \\cdot H_0 = 1.196 \\cdot 10^{4} \\cdot 70 = 8.4 \\cdot 10^{5}\\,\\text{Mpc}$.”\n\na) Find the student's error and explain why the result is impossible from the units alone.\n\nb) Calculate the correct distance of the galaxy in megaparsecs.\n\nEnter the result of part b) in the answer field.",
       "kind": [
         "error"
       ],
@@ -273,7 +273,7 @@
     {
       "id": "fy8-16-L3-04",
       "level": 3,
-      "text": "Sample data: the orbital speed $v_{\\text{obs}}$ of the stars and gas of a spiral galaxy has been measured at different distances $r$ from the centre of the galaxy. The third column of the table gives the speed $v_{\\text{vis}}$ that visible matter, that is, stars, gas and dust alone, would cause according to the model.\n\na) By what percentage does the observed speed change between the distances $10\\,\\text{kpc}$ and $30\\,\\text{kpc}$? What about the speed of the model?\n\nb) Calculate the ratio $\\dfrac{v_{\\text{obs}}}{v_{\\text{vis}}}$ of the observed speed to the speed of the model at the distance $30\\,\\text{kpc}$.\n\nc) What does the data tell about the mass of the galaxy? Justify why the difference is not explained by measurement errors, and conclude what dark matter is in this interpretation.\n\nEnter the result of part b) in the answer field.",
+      "text": "Sample data: the orbital speed $v_{\\text{obs}}$ of the stars and gas of a spiral galaxy has been measured at different distances $r$ from the centre of the galaxy. The third column of the table gives the speed $v_{\\text{vis}}$ that visible matter, that is, stars, gas and dust alone, would cause according to the model.\n\na) By what percentage does the observed speed change between the distances $10\\,\\text{kpc}$ and $30\\,\\text{kpc}$? What about the model's speed?\n\nb) Calculate the ratio $\\dfrac{v_{\\text{obs}}}{v_{\\text{vis}}}$ of the observed speed to the speed of the model at the distance $30\\,\\text{kpc}$.\n\nc) What does the data tell about the mass of the galaxy? Justify why the difference is not explained by measurement errors, and conclude what dark matter is in this interpretation.\n\nEnter the result of part b) in the answer field.",
       "kind": [
         "data",
         "model",
