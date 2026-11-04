@@ -1,0 +1,490 @@
+{
+ "version": 1,
+ "contribution": "Kertaustunti kokoaa FY6-moduulin virtapiirin, sähkövirran ja jännitteen, mittaukset, resistanssin ja Ohmin lain, sarja- ja rinnankytkennät, Kirchhoffin lait ja potentiaalin, sähkötehon ja Joulen lain, sähköenergian kotona sekä lähdejännitteen, sisäisen resistanssin ja akkujen latauksen yhdeksi malliksi tasavirtapiiristä ja harjoittaa niistä ylioppilaskokeen tyyppisiä tehtäviä: sekakytkennän ratkaiseminen, tehon jakautuminen, mittarin virheraja, pariston (I, U)-kuvaaja ja sen sovitus, akkujen energian vertailu ja FY3:n lämpömäärän yhdistäminen sähkölämmitykseen.",
+ "learn": [
+  "ratkaisemaan tasavirtapiirien virtoja, jännitteitä ja tehoja valitsemalla sopivan mallin",
+  "laatimaan ja tulkitsemaan pariston ja johtimen mittausaineiston kuvaajia",
+  "arvioimaan sähköenergiaa, akkuja ja sähkömittauksia koskevia väitteitä perustellusti"
+ ],
+ "prior": [
+  "Sähkövirta on varauksen liikettä, eikä virta kulu komponentissa (luku *Virtapiiri, sähkövirta ja jännite*)",
+  "Resistanssi on jännitteen ja virran suhde, $R = \\tfrac{U}{I}$ (luku *Resistanssi ja Ohmin laki*)",
+  "Sarjaankytkennässä virta on sama, rinnankytkennässä jännite (luku *Vastusten sarja- ja rinnankytkennät*)",
+  "Sähköteho on $P = UI$ ja energia $E = Pt$ (luku *Sähköteho ja vastuksen lämpeneminen*)",
+  "Pariston napajännite pienenee, kun virta kasvaa (luku *Lähdejännite ja sisäinen resistanssi*)"
+ ],
+ "activities": [
+  {
+   "id": "hook",
+   "stage": "herata",
+   "type": "hook",
+   "text": "Mökin sähköt tulevat akusta, jonka jännite on $12\\,\\text{V}$ ja kapasiteetti $100\\,\\text{Ah}$. Aurinkopaneeli lataa akun päivällä täyteen. Illalla akkuun kytketään LED-valot, joiden teho on yhteensä $6{,}0\\,\\text{W}$, ja kylmälaukku, jonka teho on $48\\,\\text{W}$. Kokeessa tällainen tilanne voi olla tehtävän alku: luvut on annettu, mutta kaavaa ei.",
+   "question": "Kuinka suuri virta akusta otetaan, ja kuinka monta tuntia täysi akku riittää, kun molemmat laitteet ovat päällä?"
+  },
+  {
+   "id": "lt-1",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Lähtötaso 1: virta lamppujen välissä",
+   "prompt": "Paristoon on kytketty sarjaan kaksi samanlaista lamppua. Virtamittari pariston ja ensimmäisen lampun välissä näyttää $0{,}20\\,\\text{A}$. Mitä näyttää toinen virtamittari, joka on lamppujen välissä?",
+   "choices": [
+    {
+     "text": "$0{,}10\\,\\text{A}$, koska ensimmäinen lamppu käyttää puolet virrasta.",
+     "feedback": "Lamppu ei käytä virtaa vaan muuttaa sähköenergiaa valoksi ja sisäenergiaksi. Sama varaus, joka tulee lamppuun, lähtee siitä, joten haarattomassa piirissä virta on joka kohdassa $0{,}20\\,\\text{A}$. Kertaa luvussa *Virtapiiri, sähkövirta ja jännite*."
+    },
+    {
+     "text": "$0{,}20\\,\\text{A}$, koska haarattomassa piirissä virta on joka kohdassa sama.",
+     "feedback": "Oikein. Varaus ei katoa lampussa, joten molemmat mittarit näyttävät $0{,}20\\,\\text{A}$. Lampuissa pienenee potentiaali, ei virta. Kertaa tarvittaessa luvussa *Kirchhoffin lait ja potentiaali virtapiirissä*.",
+     "correct": true
+    },
+    {
+     "text": "$0{,}40\\,\\text{A}$, koska kaksi lamppua tarvitsee kaksinkertaisen virran.",
+     "feedback": "Toinen lamppu lisää piirin resistanssia, joten virta on pienempi kuin yhden lampun piirissä, ei suurempi. Sarjassa sama virta kulkee molempien lamppujen läpi: $0{,}20\\,\\text{A}$. Kertaa luvussa *Vastusten sarja- ja rinnankytkennät*."
+    }
+   ]
+  },
+  {
+   "id": "lt-2",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Lähtötaso 2: jännitemittari sarjassa",
+   "prompt": "Opiskelija kytkee yleismittarin jännitealueella vahingossa sarjaan lampun kanssa $4{,}5\\,\\text{V}$:n paristoon. Mitä tapahtuu?",
+   "choices": [
+    {
+     "text": "Lamppu palaa normaalisti, ja mittari näyttää lampun jännitteen.",
+     "feedback": "Jännitemittarin resistanssi on hyvin suuri, joten sarjassa se pienentää virran lähes nollaan. Lamppu ei pala, ja lähes koko pariston jännite jää mittarin yli. Kertaa luvussa *Mittaukset virtapiirissä*."
+    },
+    {
+     "text": "Mittarin sulake palaa, koska mittarin läpi kulkee suuri virta.",
+     "feedback": "Suuri virta syntyy, jos virtamittari kytketään väärin rinnalle, koska virtamittarin resistanssi on hyvin pieni. Jännitemittarin suuri resistanssi pysäyttää virran. Kertaa luvussa *Mittaukset virtapiirissä*."
+    },
+    {
+     "text": "Lamppu ei pala, ja mittari näyttää lähes pariston jännitteen.",
+     "feedback": "Oikein. Jännitemittarin resistanssi on hyvin suuri, joten virta on lähes nolla. Lampun yli ei jää jännitettä, ja mittari näyttää lähes $4{,}5\\,\\text{V}$. Kertaa tarvittaessa luvussa *Mittaukset virtapiirissä*.",
+     "correct": true
+    }
+   ]
+  },
+  {
+   "id": "lt-3",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Lähtötaso 3: hehkulamppu puolella jännitteellä",
+   "prompt": "Hehkulampun läpi kulkee $0{,}50\\,\\text{A}$, kun sen jännite on $6{,}0\\,\\text{V}$. Kuinka suuri virta lampun läpi kulkee jännitteellä $3{,}0\\,\\text{V}$?",
+   "choices": [
+    {
+     "text": "Yli $0{,}25\\,\\text{A}$, koska kylmemmän langan resistanssi on pienempi.",
+     "feedback": "Oikein. Jännitteellä $6{,}0\\,\\text{V}$ lampun resistanssi on $\\tfrac{6{,}0\\,\\text{V}}{0{,}50\\,\\text{A}} = 12\\,\\Omega$. Puolella jännitteellä lanka on kylmempi ja resistanssi pienempi, joten virta on yli puolet. Kertaa tarvittaessa luvussa *Resistanssi ja Ohmin laki*.",
+     "correct": true
+    },
+    {
+     "text": "Tasan $0{,}25\\,\\text{A}$, koska virta on verrannollinen jännitteeseen.",
+     "feedback": "Ohmin laki pätee metallille vakiolämpötilassa. Lampun lanka on pienemmällä virralla kylmempi, joten sen resistanssi on alle $12\\,\\Omega$, ja virta jää yli $0{,}25\\,\\text{A}$:n. Kertaa luvussa *Resistanssi ja Ohmin laki*."
+    },
+    {
+     "text": "Alle $0{,}25\\,\\text{A}$, koska resistanssi kasvaa jännitteen pienetessä.",
+     "feedback": "Lampun resistanssi kasvaa, kun lanka kuumenee, eli suuremmalla virralla. Pienemmällä jännitteellä lanka on kylmempi ja resistanssi pienempi, joten virta on yli $0{,}25\\,\\text{A}$. Kertaa luvussa *Resistanssi ja Ohmin laki*."
+    }
+   ]
+  },
+  {
+   "id": "lt-4",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Lähtötaso 4: kolmas vastus rinnan",
+   "prompt": "Paristoon on kytketty rinnan kaksi vastusta. Niiden rinnalle kytketään kolmas vastus. Miten pariston antama virta muuttuu, kun napajännite pysyy lähes samana?",
+   "choices": [
+    {
+     "text": "Se pienenee, koska lisätty vastus suurentaa piirin resistanssia.",
+     "feedback": "Sarjaan lisätty vastus suurentaisi resistanssia, mutta rinnan lisätty avaa uuden kulkureitin. Kokonaisresistanssi pienenee, ja virta kasvaa. Kertaa luvussa *Vastusten sarja- ja rinnankytkennät*."
+    },
+    {
+     "text": "Se pysyy samana, koska paristo antaa aina yhtä suuren virran.",
+     "feedback": "Paristo pitää yllä lähes vakiona pysyvää jännitettä, ja virran määrää piirin resistanssi. Uusi haara saa oman virtansa, ja haarojen virrat summautuvat. Kertaa luvussa *Lähdejännite ja sisäinen resistanssi*."
+    },
+    {
+     "text": "Se kasvaa, koska uusi haara ottaa oman virtansa samalla jännitteellä.",
+     "feedback": "Oikein. Jokaisen haaran yli on sama jännite, joten vanhojen haarojen virrat eivät muutu, ja uuden haaran virta lisätään niihin. Kokonaisresistanssi pienenee. Kertaa tarvittaessa luvussa *Kirchhoffin lait ja potentiaali virtapiirissä*.",
+     "correct": true
+    }
+   ]
+  },
+  {
+   "id": "lt-5",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Lähtötaso 5: kumpi vastus lämpenee",
+   "prompt": "Vastukset $10\\,\\Omega$ ja $20\\,\\Omega$ on kytketty rinnan $9{,}0\\,\\text{V}$:n jännitelähteeseen. Kummassa vastuksessa muuttuu enemmän sähköenergiaa sisäenergiaksi?",
+   "choices": [
+    {
+     "text": "Vastuksessa $20\\,\\Omega$, koska suurempi resistanssi lämpenee aina enemmän.",
+     "feedback": "Näin on sarjaankytkennässä, jossa virta on sama. Rinnan molempien yli on sama jännite, joten teho $\\tfrac{U^2}{R}$ on suurempi pienemmällä resistanssilla: $8{,}1\\,\\text{W}$ ja $4{,}05\\,\\text{W}$. Kertaa luvussa *Sähköteho ja vastuksen lämpeneminen*."
+    },
+    {
+     "text": "Vastuksessa $10\\,\\Omega$, koska sama jännite antaa sille suuremman virran.",
+     "feedback": "Oikein. $P = \\tfrac{U^2}{R}$, joten $10\\,\\Omega$:n teho on $\\tfrac{(9{,}0\\,\\text{V})^2}{10\\,\\Omega} = 8{,}1\\,\\text{W}$ ja $20\\,\\Omega$:n $4{,}05\\,\\text{W}$. Kertaa tarvittaessa luvussa *Sähköteho ja vastuksen lämpeneminen*.",
+     "correct": true
+    },
+    {
+     "text": "Molemmissa yhtä paljon, koska niiden yli on sama jännite.",
+     "feedback": "Sama jännite ei tarkoita samaa tehoa: pienemmän resistanssin läpi kulkee suurempi virta, joten teho $P = UI$ on sille suurempi. Kertaa luvussa *Sähköteho ja vastuksen lämpeneminen*."
+    }
+   ]
+  },
+  {
+   "id": "lt-6",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Lähtötaso 6: ajovalot himmenevät",
+   "prompt": "Auton ajovalot palavat, kun moottoria käynnistetään. Käynnistysmoottori ottaa akusta hetken aikaa yli $100\\,\\text{A}$:n virran, ja ajovalot himmenevät. Miksi?",
+   "choices": [
+    {
+     "text": "Akun sisäiseen resistanssiin syntyy jännitehäviö, joten napajännite laskee.",
+     "feedback": "Oikein. $U = E - R_\\text{s} I$: kun virta on suuri, $R_\\text{s} I$ kasvaa ja napajännite laskee, joten valojen teho $\\tfrac{U^2}{R}$ pienenee. Kertaa tarvittaessa luvussa *Lähdejännite ja sisäinen resistanssi*.",
+     "correct": true
+    },
+    {
+     "text": "Käynnistysmoottori vie osan virrasta, koska akun virta jakautuu laitteille.",
+     "feedback": "Akussa ei ole varastossa tiettyä virtaa. Valot ovat rinnan moottorin kanssa, ja niiden virran määrää niiden jännite. Jännite laskee, koska akun sisäisessä resistanssissa syntyy jännitehäviö. Kertaa luvussa *Lähdejännite ja sisäinen resistanssi*."
+    },
+    {
+     "text": "Akun lähdejännite laskee pysyvästi, koska suuri virta purkaa akun hetkessä.",
+     "feedback": "Lähdejännite pysyy lähes samana, ja valot kirkastuvat heti, kun moottori sammuu. Hetkellinen himmeneminen johtuu sisäisen resistanssin jännitehäviöstä $R_\\text{s} I$. Kertaa luvussa *Lähdejännite ja sisäinen resistanssi*."
+    }
+   ]
+  },
+  {
+   "id": "aineisto",
+   "stage": "tutki",
+   "type": "interpret",
+   "title": "Tunnistamaton lanka",
+   "source": "example",
+   "source_note": "Arvot on keksitty, ja niihin on lisätty mittausten kaltaista vaihtelua.",
+   "text": "Fysiikan tunnilla mitattiin tunnistamattoman metallilangan resistanssi yleismittarilla eri pituuksilla. Langan halkaisija mitattiin mikrometriruuvilla, ja se oli $0{,}30\\,\\text{mm}$. Mittarin johdot kiinnitettiin lankaan hauenleuoilla, ja pituus $l$ mitattiin leukojen välistä.\n\n| $l\\ (\\text{m})$ | $R\\ (\\Omega)$ |\n|---|---|\n| $0{,}20$ | $1{,}73$ |\n| $0{,}40$ | $3{,}10$ |\n| $0{,}60$ | $4{,}55$ |\n| $0{,}80$ | $5{,}98$ |\n| $1{,}00$ | $7{,}36$ |\n\nPäättele aineistosta langan resistiivisyys ja tunnista aine resistiivisyystaulukon avulla. Pohdi myös, miksi resistanssi ei näytä lähestyvän nollaa, kun pituus lähestyy nollaa. Vastaa alla resistiivisyyden luvulla.",
+   "question": {
+    "type": "numeric",
+    "prompt": "Kuinka suuri on langan resistiivisyys?",
+    "answer": 0.5,
+    "unit": "µΩ·m",
+    "tolerance": 0.03,
+    "hints": [
+     "Mikä aineistossa on verrannollinen pituuteen: resistanssi itse vai sen muutos?",
+     "Kun pituus kasvaa $0{,}20\\,\\text{m}$, resistanssi kasvaa noin $1{,}41\\,\\Omega$. Kulmakerroin $\\tfrac{\\Delta R}{\\Delta l}$ on $\\tfrac{\\rho}{A}$.",
+     "$\\rho = A \\cdot \\tfrac{\\Delta R}{\\Delta l}$, missä $A = \\pi r^2$ ja $r = 0{,}15\\,\\text{mm}$."
+    ],
+    "mistakes": [
+     {
+      "value": 1.999,
+      "feedback": "Käytit halkaisijaa säteenä, jolloin poikkipinta-ala tuli nelinkertaiseksi. Säde on $0{,}15\\,\\text{mm}$."
+     },
+     {
+      "value": 0.5203,
+      "feedback": "Laskit resistiivisyyden yhdestä pisteestä suhteena $\\tfrac{R}{l}$, jolloin mittausjohtojen resistanssi on mukana. Käytä kulmakerrointa $\\tfrac{\\Delta R}{\\Delta l}$."
+     }
+    ],
+    "solution": "**Annettu:** langan halkaisija $d = 0{,}30\\,\\text{mm}$; pituudet $0{,}20$–$1{,}00\\,\\text{m}$ ja resistanssit $1{,}73$–$7{,}36\\,\\Omega$ taulukossa\n\n**Kysytty:** langan resistiivisyys $\\rho$ yksikössä $\\mu\\Omega\\cdot\\text{m}$\n\n**Periaate:** Tasapaksun langan resistanssi on suoraan verrannollinen pituuteen, $R = \\rho\\,\\tfrac{l}{A}$ (luku *Resistanssi ja Ohmin laki*). Mittarin johdot ja liitokset lisäävät jokaiseen lukemaan saman resistanssin, joten aineistoon sopii suora $R = \\tfrac{\\rho}{A}\\,l + R_0$. Resistiivisyys saadaan suoran kulmakertoimesta, johon vakiotermi $R_0$ ei vaikuta.\n\n**Kaava:** $\\dfrac{\\Delta R}{\\Delta l} = \\dfrac{\\rho}{A}$, joten $\\rho = A \\cdot \\dfrac{\\Delta R}{\\Delta l}$, missä $A = \\pi r^2 = \\pi \\left(\\dfrac{d}{2}\\right)^2$\n\n**Muunnokset:** $0{,}15\\,\\text{mm} = 0{,}15 \\cdot 10^{-3}\\,\\text{m}$ ja lopuksi $1\\,\\Omega\\cdot\\text{m} = 10^{6}\\,\\mu\\Omega\\cdot\\text{m}$\n\n**Sijoitus:** Pisteisiin sovitetun suoran kulmakerroin on $7{,}07\\,\\Omega/\\text{m}$, ja vakiotermi on $0{,}30\\,\\Omega$. $A = \\pi \\cdot (0{,}15 \\cdot 10^{-3}\\,\\text{m})^2 = 7{,}069 \\cdot 10^{-8}\\,\\text{m}^2$, joten $\\rho = 7{,}069 \\cdot 10^{-8}\\,\\text{m}^2 \\cdot 7{,}07\\,\\tfrac{\\Omega}{\\text{m}} = 4{,}998 \\cdot 10^{-7}\\,\\Omega\\cdot\\text{m} = 0{,}4998\\,\\mu\\Omega\\cdot\\text{m}$\n\n**Vastaus:** $\\rho \\approx 0{,}50\\,\\mu\\Omega\\cdot\\text{m} = 5{,}0 \\cdot 10^{-7}\\,\\Omega\\cdot\\text{m}$, kaksi merkitsevää numeroa kuten halkaisija $0{,}30\\,\\text{mm}$. Lanka on konstantaania. Kun pituus lähestyy nollaa, resistanssi lähestyy arvoa $0{,}30\\,\\Omega$: se on mittausjohtojen ja hauenleukojen liitosten resistanssi, joka on mukana jokaisessa lukemassa.\n\n**Järkevyys:** Ääripisteistä $\\tfrac{7{,}36\\,\\Omega - 1{,}73\\,\\Omega}{1{,}00\\,\\text{m} - 0{,}20\\,\\text{m}} = 7{,}04\\,\\Omega/\\text{m}$, mikä antaa saman tuloksen $0{,}50\\,\\mu\\Omega\\cdot\\text{m}$. Rauta ($0{,}10\\,\\mu\\Omega\\cdot\\text{m}$) ja kromnikkeli ($1{,}1\\,\\mu\\Omega\\cdot\\text{m}$) ovat selvästi eri arvoja, joten tunnistus on luotettava. Jos resistiivisyys laskettaisiin yhdestä pisteestä ilman johtojen korjausta, tulos olisi lyhyellä langalla noin $22\\,\\%$ liian suuri."
+   }
+  },
+  {
+   "id": "teoriatiivistelma",
+   "stage": "selita",
+   "type": "theory",
+   "sections": [
+    "Ydinajatus",
+    "Kaava",
+    "Virheet",
+    "Kertaa"
+   ]
+  },
+  {
+   "id": "virhe-teho",
+   "stage": "sovella",
+   "type": "choice",
+   "title": "Etsi virhe: sarjavastuksen teho",
+   "prompt": "Jännitelähteeseen $9{,}0\\,\\text{V}$ on kytketty sarjaan vastukset $R_1 = 15\\,\\Omega$ ja $R_2 = 30\\,\\Omega$. Opiskelija laski vastuksen $R_2$ tehon: ”$P_2 = \\tfrac{U^2}{R_2} = \\tfrac{(9{,}0\\,\\text{V})^2}{30\\,\\Omega} = 2{,}7\\,\\text{W}$.” Mikä ratkaisussa on väärin?",
+   "choices": [
+    {
+     "text": "Vastuksen $R_2$ yli on vain osa lähteen jännitteestä, $6{,}0\\,\\text{V}$.",
+     "feedback": "Oikein. Virta on $I = \\tfrac{9{,}0\\,\\text{V}}{45\\,\\Omega} = 0{,}20\\,\\text{A}$, joten $U_2 = R_2 I = 6{,}0\\,\\text{V}$ ja $P_2 = \\tfrac{(6{,}0\\,\\text{V})^2}{30\\,\\Omega} = 1{,}2\\,\\text{W}$.",
+     "correct": true
+    },
+    {
+     "text": "Sarjaankytkennässä teho lasketaan muodosta $RI^2$ eikä muodosta $\\tfrac{U^2}{R}$.",
+     "feedback": "Kumpikin muoto käy, kun niihin sijoitetaan juuri tämän vastuksen suureet. Virhe on lähteen jännitteen käyttö: $U_2 = 6{,}0\\,\\text{V}$ antaa saman $1{,}2\\,\\text{W}$ kuin $R_2 I^2$. Kertaa luvussa *Sähköteho ja vastuksen lämpeneminen*."
+    },
+    {
+     "text": "Ratkaisu on oikein, koska koko jännite on myös vastuksen $R_2$ yli.",
+     "feedback": "Sarjassa lähteen jännite jakautuu vastuksille, $U = U_1 + U_2$. Vastuksen $R_2$ yli on $6{,}0\\,\\text{V}$ ja vastuksen $R_1$ yli $3{,}0\\,\\text{V}$. Kertaa luvussa *Kirchhoffin lait ja potentiaali virtapiirissä*."
+    }
+   ]
+  },
+  {
+   "id": "lue-kuvaaja",
+   "stage": "sovella",
+   "type": "choice",
+   "title": "Lue kuvaaja: hehkulampun ominaiskäyrä",
+   "figure": "fy6-3/lamp-curve",
+   "prompt": "Kuvaajassa on hehkulampun jännite virran funktiona. Jännitteellä $3{,}0\\,\\text{V}$ virta on $0{,}25\\,\\text{A}$. Lue muut tarvitsemasi arvot kuvaajasta. Mikä väite on oikein?",
+   "choices": [
+    {
+     "text": "Lamppu noudattaa Ohmin lakia, koska sen ominaiskäyrä alkaa origosta.",
+     "feedback": "Jokainen ominaiskäyrä alkaa origosta, koska ilman jännitettä ei kulje virtaa. Ohmin lain mukainen käyrä on suora, mutta tämä kaartuu. Kertaa luvussa *Resistanssi ja Ohmin laki*."
+    },
+    {
+     "text": "Resistanssi on tangentin kulmakerroin, joten $3{,}0\\,\\text{V}$:ssa se on yli $12\\,\\Omega$.",
+     "feedback": "Resistanssi on kussakin pisteessä suhde $U : I$ eli origosta pisteeseen piirretyn suoran kulmakerroin, ei tangentin kulmakerroin. Jännitteellä $3{,}0\\,\\text{V}$ se on $12\\,\\Omega$. Kertaa luvussa *Resistanssi ja Ohmin laki*."
+    },
+    {
+     "text": "Resistanssi on $3{,}0\\,\\text{V}$:ssa $12\\,\\Omega$ ja $1{,}0\\,\\text{V}$:ssa pienempi.",
+     "feedback": "Oikein. $\\tfrac{3{,}0\\,\\text{V}}{0{,}25\\,\\text{A}} = 12\\,\\Omega$ ja $\\tfrac{1{,}0\\,\\text{V}}{0{,}15\\,\\text{A}} \\approx 6{,}7\\,\\Omega$. Suurempi virta kuumentaa lankaa, ja kuuman langan resistanssi on suurempi.",
+     "correct": true
+    }
+   ]
+  },
+  {
+   "id": "akkuvertailu",
+   "stage": "sovella",
+   "type": "choice",
+   "title": "Perusteltu väite: kummassa on enemmän energiaa",
+   "prompt": "Kaupassa verrataan sähköpotkulaudan akkua ($36\\,\\text{V}$, $7{,}8\\,\\text{Ah}$) ja varavirtalähdettä ($3{,}7\\,\\text{V}$, $26\\,800\\,\\text{mAh}$). Myyjä sanoo, että varavirtalähteessä on enemmän energiaa, koska sen milliampeeritunteja on yli kolme kertaa enemmän. Mikä arvio väitteestä on oikein?",
+   "choices": [
+    {
+     "text": "Väite on oikein, koska milliampeeritunnit kertovat akun energian.",
+     "feedback": "Milliampeeritunti on varauksen yksikkö, ei energian. Energia on $W = UQ$, joten jännite vaikuttaa yhtä paljon kuin kapasiteetti. Kertaa luvussa *Akut ja latauspiiri*."
+    },
+    {
+     "text": "Väite on väärä: laudan akussa on $281\\,\\text{Wh}$, lähteessä $99\\,\\text{Wh}$.",
+     "feedback": "Oikein. $W = UQ$: $36\\,\\text{V} \\cdot 7{,}8\\,\\text{Ah} \\approx 281\\,\\text{Wh}$ ja $3{,}7\\,\\text{V} \\cdot 26{,}8\\,\\text{Ah} \\approx 99\\,\\text{Wh}$. Potkulaudan akussa on lähes kolminkertainen energia.",
+     "correct": true
+    },
+    {
+     "text": "Väitettä ei voi arvioida, koska akkujen sisäisiä resistansseja ei tiedetä.",
+     "feedback": "Sisäinen resistanssi vaikuttaa napajännitteeseen kuormitettuna, mutta varastoidun energian arvioon riittävät nimellisjännite ja kapasiteetti: $W = UQ$. Kertaa luvussa *Akut ja latauspiiri*."
+    }
+   ]
+  },
+  {
+   "id": "kaksi-vastusta",
+   "stage": "sovella",
+   "type": "choice",
+   "title": "Kumpi kytkentä lämmittää enemmän",
+   "prompt": "Veneen $12\\,\\text{V}$:n akkuun kytketään kaksi samanlaista $6{,}0\\,\\Omega$:n lämmitysvastusta joko sarjaan tai rinnan. Akun napajännite pysyy lähes $12\\,\\text{V}$:ssa. Mikä väite kytkentöjen yhteistehosta on oikein?",
+   "choices": [
+    {
+     "text": "Sarjaankytkentä lämmittää enemmän, koska siinä resistanssi on suurempi.",
+     "feedback": "Suurempi kokonaisresistanssi pienentää virtaa. Sarjassa $R = 12\\,\\Omega$ ja $P = \\tfrac{U^2}{R} = 12\\,\\text{W}$, rinnan $R = 3{,}0\\,\\Omega$ ja $P = 48\\,\\text{W}$. Kertaa luvussa *Sähköteho ja vastuksen lämpeneminen*."
+    },
+    {
+     "text": "Kytkennät lämmittävät yhtä paljon, koska vastukset ovat samat.",
+     "feedback": "Samojen vastusten jännitteet ovat eri: sarjassa kummankin yli on $6{,}0\\,\\text{V}$, rinnan $12\\,\\text{V}$. Teho on verrannollinen jännitteen neliöön. Kertaa luvussa *Vastusten sarja- ja rinnankytkennät*."
+    },
+    {
+     "text": "Rinnankytkentä lämmittää neljä kertaa enemmän kuin sarjaankytkentä.",
+     "feedback": "Oikein. Rinnan kummankin yli on $12\\,\\text{V}$, joten $P = 2 \\cdot \\tfrac{(12\\,\\text{V})^2}{6{,}0\\,\\Omega} = 48\\,\\text{W}$. Sarjassa $P = \\tfrac{(12\\,\\text{V})^2}{12\\,\\Omega} = 12\\,\\text{W}$.",
+     "correct": true
+    }
+   ]
+  },
+  {
+   "id": "kaynnistys",
+   "stage": "sovella",
+   "type": "numeric",
+   "title": "Auton akku pakkasaamuna",
+   "prompt": "Auton akun napajännite on $12{,}6\\,\\text{V}$, kun siitä ei oteta virtaa. Käynnistettäessä käynnistysmoottori ottaa akusta $150\\,\\text{A}$, ja akun napajännite laskee $10{,}2\\,\\text{V}$:iin. Kuinka suuri on akun sisäinen resistanssi?",
+   "answer": 16.0,
+   "unit": "mΩ",
+   "tolerance": 0.02,
+   "hints": [
+    "Mitä napajännite kertoo silloin, kun akusta ei oteta virtaa?",
+    "Ilman virtaa napajännite on lähdejännite $E$. Kuormitettuna $U = E - R_\\text{s} I$.",
+    "$R_\\text{s} = \\tfrac{E - U}{I}$. Muuta lopuksi ohmit milliohmeiksi."
+   ],
+   "mistakes": [
+    {
+     "value": 68.0,
+     "feedback": "Laskit suhteen $\\tfrac{U}{I}$, joka on käynnistysmoottorin resistanssi. Sisäinen resistanssi saadaan jännitehäviöstä $E - U$."
+    },
+    {
+     "value": 84.0,
+     "feedback": "Jaoit lähdejännitteen virralla, jolloin sait koko piirin resistanssin $R + R_\\text{s}$. Sisäisen resistanssin yli on vain $E - U = 2{,}4\\,\\text{V}$."
+    },
+    {
+     "value": 0.016,
+     "feedback": "Tulos on ohmeina. Kysytään milliohmeina: $1\\,\\Omega = 1000\\,\\text{m}\\Omega$."
+    }
+   ],
+   "solution": "**Annettu:** napajännite ilman virtaa $12{,}6\\,\\text{V}$, napajännite käynnistettäessä $U = 10{,}2\\,\\text{V}$, virta $I = 150\\,\\text{A}$\n\n**Kysytty:** akun sisäinen resistanssi $R_\\text{s}$ yksikössä $\\text{m}\\Omega$\n\n**Periaate:** Akkua kuvataan mallilla, jossa ideaalinen lähde on sarjassa sisäisen resistanssin kanssa (luku *Lähdejännite ja sisäinen resistanssi*). Ilman virtaa sisäisessä resistanssissa ei ole jännitehäviötä, joten napajännite on lähdejännite $E = 12{,}6\\,\\text{V}$. Kun akusta otetaan virtaa, potentiaali laskee sisäisessä resistanssissa $R_\\text{s} I$:n verran, ja napajännite pienenee.\n\n**Kaava:** $U = E - R_\\text{s} I$, joten $R_\\text{s} = \\dfrac{E - U}{I}$\n\n**Muunnokset:** Lopuksi $1\\,\\Omega = 1000\\,\\text{m}\\Omega$.\n\n**Sijoitus:** $R_\\text{s} = \\dfrac{12{,}6\\,\\text{V} - 10{,}2\\,\\text{V}}{150\\,\\text{A}} = \\dfrac{2{,}4\\,\\text{V}}{150\\,\\text{A}} = 0{,}016\\,\\Omega = 16\\,\\text{m}\\Omega$\n\n**Vastaus:** $R_\\text{s} \\approx 16\\,\\text{m}\\Omega$, kaksi merkitsevää numeroa, koska jännitteiden erotus $2{,}4\\,\\text{V}$ tunnetaan kahdella numerolla.\n\n**Järkevyys:** Käynnistysmoottorin resistanssi on $\\tfrac{10{,}2\\,\\text{V}}{150\\,\\text{A}} = 68\\,\\text{m}\\Omega$, noin nelinkertainen, joten suurin osa jännitteestä jää moottorille, kuten pitää. Oikosulkuvirta olisi $\\tfrac{12{,}6\\,\\text{V}}{0{,}016\\,\\Omega} \\approx 790\\,\\text{A}$, mikä on autonakulle tavallinen suuruusluokka. Kylmä akku antaa vähemmän virtaa, koska sen sisäinen resistanssi kasvaa."
+  },
+  {
+   "id": "sekakytkenta",
+   "stage": "sovella",
+   "type": "numeric",
+   "title": "Sekakytkentä kytkentälevyllä",
+   "prompt": "Kytkentälevyllä on $24\\,\\text{V}$:n jännitelähde. Sen plusnavasta virta kulkee ensin vastuksen $R_1 = 12\\,\\Omega$ läpi ja jakautuu sitten kahteen rinnakkaiseen haaraan, joissa ovat vastukset $R_2 = 30\\,\\Omega$ ja $R_3 = 20\\,\\Omega$. Haarat yhtyvät ja palaavat lähteen miinusnapaan. Kuinka suuri virta kulkee vastuksen $R_2$ läpi?",
+   "answer": 0.4,
+   "unit": "A",
+   "tolerance": 0.02,
+   "hints": [
+    "Korvaa ensin rinnakkaiset vastukset yhdellä vastuksella. Kuinka suuri on koko piirin resistanssi?",
+    "$R_{23} = \\tfrac{R_2 R_3}{R_2 + R_3} = 12\\,\\Omega$ ja $R = R_1 + R_{23} = 24\\,\\Omega$, joten lähteen virta on $1{,}0\\,\\text{A}$.",
+    "Rinnakkaisosan jännite on $U_{23} = R_{23} I$, ja $I_2 = \\tfrac{U_{23}}{R_2}$."
+   ],
+   "mistakes": [
+    {
+     "value": 0.8,
+     "feedback": "Jaoit lähteen jännitteen vastuksella $R_2$. Rinnakkaisosan yli on vain $12\\,\\text{V}$, koska vastuksen $R_1$ yli jää $12\\,\\text{V}$."
+    },
+    {
+     "value": 0.5,
+     "feedback": "Jaoit virran haaroille tasan. Haarojen yli on sama jännite, joten pienemmän resistanssin haaraan kulkee suurempi virta."
+    },
+    {
+     "value": 0.6,
+     "feedback": "Tämä on vastuksen $R_3 = 20\\,\\Omega$ virta. Vastuksen $R_2 = 30\\,\\Omega$ virta on $\\tfrac{12\\,\\text{V}}{30\\,\\Omega}$."
+    }
+   ],
+   "solution": "**Annettu:** lähteen jännite $U = 24\\,\\text{V}$, $R_1 = 12\\,\\Omega$ sarjassa rinnakkaisten vastusten $R_2 = 30\\,\\Omega$ ja $R_3 = 20\\,\\Omega$ kanssa\n\n**Kysytty:** vastuksen $R_2$ läpi kulkeva virta $I_2$\n\n**Periaate:** Sekakytkentä ratkaistaan sisältä ulospäin (luku *Vastusten sarja- ja rinnankytkennät*): rinnakkaiset vastukset korvataan yhdellä vastuksella, ja sen kanssa sarjassa oleva $R_1$ lisätään. Lähteen virta kulkee $R_1$:n ja rinnakkaisosan läpi. Jännitelain mukaan lähteen jännite jakautuu vastukselle $R_1$ ja rinnakkaisosalle, ja rinnakkaisten haarojen yli on sama jännite (luku *Kirchhoffin lait ja potentiaali virtapiirissä*).\n\n**Kaava:** $R_{23} = \\dfrac{R_2 R_3}{R_2 + R_3}$, $I = \\dfrac{U}{R_1 + R_{23}}$, $U_{23} = R_{23} I$ ja $I_2 = \\dfrac{U_{23}}{R_2}$\n\n**Muunnokset:** Suureet ovat perusyksiköissä, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $R_{23} = \\dfrac{30\\,\\Omega \\cdot 20\\,\\Omega}{30\\,\\Omega + 20\\,\\Omega} = 12\\,\\Omega$, $I = \\dfrac{24\\,\\text{V}}{12\\,\\Omega + 12\\,\\Omega} = 1{,}0\\,\\text{A}$, $U_{23} = 12\\,\\Omega \\cdot 1{,}0\\,\\text{A} = 12\\,\\text{V}$ ja $I_2 = \\dfrac{12\\,\\text{V}}{30\\,\\Omega} = 0{,}40\\,\\text{A}$\n\n**Vastaus:** $I_2 = 0{,}40\\,\\text{A}$, kaksi merkitsevää numeroa kuten resistanssit.\n\n**Järkevyys:** Vastuksen $R_3$ virta on $\\tfrac{12\\,\\text{V}}{20\\,\\Omega} = 0{,}60\\,\\text{A}$, ja $0{,}40\\,\\text{A} + 0{,}60\\,\\text{A} = 1{,}0\\,\\text{A}$ on lähteen virta, kuten virtalaki vaatii. Suurempi resistanssi saa pienemmän haaravirran, ja jännitteet $12\\,\\text{V} + 12\\,\\text{V}$ ovat yhteensä lähteen $24\\,\\text{V}$."
+  },
+  {
+   "id": "paahdin",
+   "stage": "sovella",
+   "type": "numeric",
+   "title": "Leivänpaahtimen lämmityslanka",
+   "prompt": "Leivänpaahtimen teho on $850\\,\\text{W}$ jännitteellä $230\\,\\text{V}$. Sen lämmityslanka on kromnikkeliä, jonka resistiivisyys on $1{,}1 \\cdot 10^{-6}\\,\\Omega\\cdot\\text{m}$, ja langan halkaisija on $0{,}40\\,\\text{mm}$. Oletetaan, että resistiivisyys ei muutu langan kuumetessa. Kuinka pitkä lanka on?",
+   "answer": 7.11,
+   "unit": "m",
+   "tolerance": 0.02,
+   "hints": [
+    "Kuinka suuri on langan resistanssi, kun teho ja jännite tunnetaan?",
+    "$P = \\tfrac{U^2}{R}$, joten $R = \\tfrac{U^2}{P} \\approx 62{,}2\\,\\Omega$.",
+    "$R = \\rho\\,\\tfrac{l}{A}$, joten $l = \\tfrac{RA}{\\rho}$, missä $A = \\pi r^2$ ja $r = 0{,}20\\,\\text{mm}$."
+   ],
+   "mistakes": [
+    {
+     "value": 28.44,
+     "feedback": "Käytit halkaisijaa säteenä, jolloin poikkipinta-ala tuli nelinkertaiseksi. Säde on $0{,}20\\,\\text{mm}$."
+    },
+    {
+     "value": 460.0,
+     "feedback": "Käytit kuparin resistiivisyyttä. Lämmityslanka on kromnikkeliä, jonka resistiivisyys on $1{,}1 \\cdot 10^{-6}\\,\\Omega\\cdot\\text{m}$."
+    },
+    {
+     "value": 0.0309,
+     "feedback": "Laskit resistanssiksi $\\tfrac{U}{P}$. Teho on $P = \\tfrac{U^2}{R}$, joten $R = \\tfrac{U^2}{P}$."
+    }
+   ],
+   "solution": "**Annettu:** teho $P = 850\\,\\text{W}$, jännite $U = 230\\,\\text{V}$, resistiivisyys $\\rho = 1{,}1 \\cdot 10^{-6}\\,\\Omega\\cdot\\text{m}$, halkaisija $d = 0{,}40\\,\\text{mm}$\n\n**Kysytty:** langan pituus $l$\n\n**Periaate:** Paahtimen lanka on vastus, jossa sähköenergia muuttuu sisäenergiaksi teholla $P = \\tfrac{U^2}{R}$ (luku *Sähköteho ja vastuksen lämpeneminen*), joten merkinnöistä saadaan langan resistanssi. Tasapaksun langan resistanssi riippuu pituudesta, poikkipinta-alasta ja aineesta (luku *Resistanssi ja Ohmin laki*).\n\n**Kaava:** $R = \\dfrac{U^2}{P}$ ja $R = \\rho\\,\\dfrac{l}{A}$, joten $l = \\dfrac{RA}{\\rho} = \\dfrac{U^2 \\pi r^2}{P \\rho}$\n\n**Muunnokset:** $r = \\tfrac{d}{2} = 0{,}20\\,\\text{mm} = 0{,}20 \\cdot 10^{-3}\\,\\text{m}$\n\n**Sijoitus:** $R = \\dfrac{(230\\,\\text{V})^2}{850\\,\\text{W}} = 62{,}24\\,\\Omega$, $A = \\pi \\cdot (0{,}20 \\cdot 10^{-3}\\,\\text{m})^2 = 1{,}257 \\cdot 10^{-7}\\,\\text{m}^2$ ja $l = \\dfrac{62{,}24\\,\\Omega \\cdot 1{,}257 \\cdot 10^{-7}\\,\\text{m}^2}{1{,}1 \\cdot 10^{-6}\\,\\Omega\\cdot\\text{m}} = 7{,}11\\,\\text{m}$\n\n**Vastaus:** $l \\approx 7{,}1\\,\\text{m}$, kaksi merkitsevää numeroa kuten resistiivisyys ja halkaisija.\n\n**Järkevyys:** Seitsemän metrin lanka mahtuu paahtimeen, kun se on kierretty kiemuroiksi leipäaukkojen molemmille puolille. Kuuman kromnikkelin resistiivisyys on hieman suurempi kuin huoneenlämmössä, joten todellinen lanka on vähän lyhyempi. Kuparilangan pitäisi olla satoja metrejä, mikä selittää, miksi lämmityslangat tehdään kromnikkelistä."
+  },
+  {
+   "id": "keitin",
+   "stage": "sovella",
+   "type": "numeric",
+   "title": "Vedenkeitin sähkölaskussa",
+   "prompt": "Perhe keittää vettä $2{,}2\\,\\text{kW}$:n vedenkeittimellä kolme kertaa päivässä, ja yksi keitto kestää $4{,}0\\,\\text{min}$. Sähköenergia ja siirto maksavat yhteensä $15{,}8\\,\\text{snt/kWh}$. Kuinka paljon vedenkeittimen käyttö maksaa $30$ vuorokauden aikana?",
+   "answer": 2.086,
+   "unit": "€",
+   "tolerance": 0.02,
+   "hints": [
+    "Kuinka monta tuntia keitin on päällä $30$ vuorokaudessa?",
+    "Keittoja on $90$, joten aika on $90 \\cdot 4{,}0\\,\\text{min} = 360\\,\\text{min} = 6{,}0\\,\\text{h}$. Energia on $E = Pt$ kilowattitunteina.",
+    "Hinta on $aE$, missä $a = 0{,}158\\,\\text{€/kWh}$."
+   ],
+   "mistakes": [
+    {
+     "value": 125.1,
+     "feedback": "Kerroit tehon minuuteilla. Muuta aika ensin tunneiksi: $360\\,\\text{min} = 6{,}0\\,\\text{h}$."
+    },
+    {
+     "value": 0.6952,
+     "feedback": "Laskit vain yhden keiton päivässä. Keittoja on $3 \\cdot 30 = 90$."
+    },
+    {
+     "value": 208.6,
+     "feedback": "Käytit hintaa euroina kilowattitunnilta. $15{,}8\\,\\text{snt/kWh} = 0{,}158\\,\\text{€/kWh}$."
+    }
+   ],
+   "solution": "**Annettu:** teho $P = 2{,}2\\,\\text{kW}$, $3$ keittoa päivässä, yksi keitto $4{,}0\\,\\text{min}$, $30$ vuorokautta, hinta $a = 15{,}8\\,\\text{snt/kWh}$\n\n**Kysytty:** käytön hinta $K$ euroina\n\n**Periaate:** Keittimen teho on vakio, joten sen käyttämä energia on teho kertaa käyttöaika (luku *Sähköenergia kotona*). Kun teho on kilowatteina ja aika tunteina, energia saadaan kilowattitunteina, joilla hinta lasketaan. Perusmaksut eivät riipu keittimen käytöstä, joten ne eivät kuulu laskuun.\n\n**Kaava:** $E = Pt$ ja $K = aE$\n\n**Muunnokset:** $t = 3 \\cdot 30 \\cdot 4{,}0\\,\\text{min} = 360\\,\\text{min} = 360 \\cdot \\tfrac{1}{60}\\,\\text{h} = 6{,}0\\,\\text{h}$ ja $a = 15{,}8 \\cdot 0{,}01\\,\\text{€/kWh} = 0{,}158\\,\\text{€/kWh}$\n\n**Sijoitus:** $E = 2{,}2\\,\\text{kW} \\cdot 6{,}0\\,\\text{h} = 13{,}2\\,\\text{kWh}$ ja $K = 0{,}158\\,\\tfrac{\\text{€}}{\\text{kWh}} \\cdot 13{,}2\\,\\text{kWh} = 2{,}09\\,\\text{€}$\n\n**Vastaus:** $K \\approx 2{,}1\\,\\text{€}$, kaksi merkitsevää numeroa kuten teho $2{,}2\\,\\text{kW}$ ja keittoaika $4{,}0\\,\\text{min}$.\n\n**Järkevyys:** Keitin on kodin suuritehoisimpia laitteita mutta ei suurimpia energian kuluttajia: kuukauden $13\\,\\text{kWh}$ on vain muutama prosentti tavallisen kerrostaloasunnon kulutuksesta, koska keitin on päällä vain $12\\,\\text{min}$ päivässä."
+  },
+  {
+   "id": "lisaa",
+   "stage": "sovella",
+   "type": "exercises",
+   "text": "Tunnin lopussa ovat ylioppilaskokeen tyyliset tehtävät. Kirjoita ratkaisu vihkoon tai koneelle kuten kokeessa, ja arvioi se vasta sitten mallivastauksen ja pisteytyksen avulla."
+  },
+  {
+   "id": "tarkistus-1",
+   "stage": "tarkista",
+   "type": "choice",
+   "title": "1. Käsite",
+   "prompt": "Jännitelähteen ($12\\,\\text{V}$) miinusnavan potentiaali on $0\\,\\text{V}$. Plusnavasta virta kulkee vastuksen $R_1 = 20\\,\\Omega$ ja sitten vastuksen $R_2 = 40\\,\\Omega$ kautta takaisin miinusnapaan. Mikä on vastusten välisen kohdan potentiaali?",
+   "choices": [
+    {
+     "text": "$4{,}0\\,\\text{V}$, koska vastuksen $R_1$ yli on jännite $4{,}0\\,\\text{V}$.",
+     "feedback": "$4{,}0\\,\\text{V}$ on vastuksen $R_1$ jännite eli potentiaalin lasku siinä. Kohdan potentiaali on plusnavan $12\\,\\text{V}$ miinus tämä lasku, $8{,}0\\,\\text{V}$. Kertaa luvussa *Kirchhoffin lait ja potentiaali virtapiirissä*."
+    },
+    {
+     "text": "$6{,}0\\,\\text{V}$, koska kohta on kahden vastuksen puolivälissä.",
+     "feedback": "Jännite jakautuu resistanssien suhteessa, ei tasan. Virta on $\\tfrac{12\\,\\text{V}}{60\\,\\Omega} = 0{,}20\\,\\text{A}$, joten $R_1$:n yli on $4{,}0\\,\\text{V}$ ja $R_2$:n yli $8{,}0\\,\\text{V}$. Kertaa luvussa *Vastusten sarja- ja rinnankytkennät*."
+    },
+    {
+     "text": "$8{,}0\\,\\text{V}$, koska potentiaali laskee vastuksessa $R_1$.",
+     "feedback": "Oikein. $I = \\tfrac{12\\,\\text{V}}{60\\,\\Omega} = 0{,}20\\,\\text{A}$, ja vastuksessa $R_1$ potentiaali laskee $R_1 I = 4{,}0\\,\\text{V}$: $12\\,\\text{V} - 4{,}0\\,\\text{V} = 8{,}0\\,\\text{V}$. Sama on vastuksen $R_2$ jännite. Kertaa tarvittaessa luvussa *Kirchhoffin lait ja potentiaali virtapiirissä*.",
+     "correct": true
+    }
+   ],
+   "practice": "Kertaa potentiaali ja jännitelaki luvussa [*Kirchhoffin lait ja potentiaali virtapiirissä*](fy6-5.html) ja sarjaankytkentä luvussa [*Vastusten sarja- ja rinnankytkennät*](fy6-4.html)."
+  },
+  {
+   "id": "tarkistus-2",
+   "stage": "tarkista",
+   "type": "numeric",
+   "title": "2. Laskeminen",
+   "prompt": "Taskulampun paristosta otetaan ensin $0{,}30\\,\\text{A}$, jolloin napajännite on $4{,}40\\,\\text{V}$, ja sitten $0{,}80\\,\\text{A}$, jolloin napajännite on $4{,}10\\,\\text{V}$. Kuinka suuri on pariston lähdejännite?",
+   "answer": 4.58,
+   "unit": "V",
+   "tolerance": 0.02,
+   "hints": [
+    "Kumpikin mittaus toteuttaa saman yhtälön $U = E - R_\\text{s} I$. Montako tuntematonta on?",
+    "Kun yhtälöt vähennetään toisistaan, $E$ supistuu pois: $R_\\text{s} = -\\tfrac{\\Delta U}{\\Delta I}$.",
+    "$R_\\text{s} = \\tfrac{4{,}40\\,\\text{V} - 4{,}10\\,\\text{V}}{0{,}80\\,\\text{A} - 0{,}30\\,\\text{A}} = 0{,}60\\,\\Omega$, ja $E = U + R_\\text{s} I$."
+   ],
+   "mistakes": [
+    {
+     "value": 4.4,
+     "feedback": "Tämä on napajännite virralla $0{,}30\\,\\text{A}$. Lähdejännite on napajännite ilman virtaa, joten se on suurempi."
+    },
+    {
+     "value": 4.25,
+     "feedback": "Laskit napajännitteiden keskiarvon. Lähdejännite on suoran $U = E - R_\\text{s} I$ arvo, kun $I = 0$."
+    },
+    {
+     "value": 0.6,
+     "feedback": "Tämä on sisäinen resistanssi ohmeina. Lähdejännite on $E = U + R_\\text{s} I$."
+    }
+   ],
+   "practice": "Kertaa napajännite ja sisäinen resistanssi luvussa [*Lähdejännite ja sisäinen resistanssi*](fy6-8.html).",
+   "solution": "**Annettu:** $I_1 = 0{,}30\\,\\text{A}$ ja $U_1 = 4{,}40\\,\\text{V}$, $I_2 = 0{,}80\\,\\text{A}$ ja $U_2 = 4{,}10\\,\\text{V}$\n\n**Kysytty:** pariston lähdejännite $E$\n\n**Periaate:** Paristoa kuvataan lähteellä, jonka lähdejännite $E$ ja sisäinen resistanssi $R_\\text{s}$ pysyvät vakioina (luku *Lähdejännite ja sisäinen resistanssi*). Napajännite pienenee sisäisen resistanssin jännitehäviön verran, joten kumpikin mittaus antaa yhtälön, jossa on samat kaksi tuntematonta. Kun yhtälöt vähennetään toisistaan, saadaan ensin $R_\\text{s}$ ja sitten $E$.\n\n**Kaava:** $U_1 = E - R_\\text{s} I_1$ ja $U_2 = E - R_\\text{s} I_2$, joten $R_\\text{s} = \\dfrac{U_1 - U_2}{I_2 - I_1}$ ja $E = U_1 + R_\\text{s} I_1$\n\n**Muunnokset:** Suureet ovat perusyksiköissä, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $R_\\text{s} = \\dfrac{4{,}40\\,\\text{V} - 4{,}10\\,\\text{V}}{0{,}80\\,\\text{A} - 0{,}30\\,\\text{A}} = \\dfrac{0{,}30\\,\\text{V}}{0{,}50\\,\\text{A}} = 0{,}60\\,\\Omega$ ja $E = 4{,}40\\,\\text{V} + 0{,}60\\,\\Omega \\cdot 0{,}30\\,\\text{A} = 4{,}58\\,\\text{V}$\n\n**Vastaus:** $E \\approx 4{,}58\\,\\text{V}$, kolme merkitsevää numeroa kuten napajännitteet: korjaus $0{,}18\\,\\text{V}$ lisätään sadasosan tarkkuudella tunnettuun jännitteeseen.\n\n**Järkevyys:** Toinen mittaus antaa saman: $4{,}10\\,\\text{V} + 0{,}60\\,\\Omega \\cdot 0{,}80\\,\\text{A} = 4{,}58\\,\\text{V}$. Kolmen sarjaan kytketyn AA-pariston lähdejännite on noin $4{,}5$–$4{,}8\\,\\text{V}$, ja lähdejännite on suurempi kuin kumpikaan napajännite, kuten pitää."
+  },
+  {
+   "id": "tarkistus-3",
+   "stage": "tarkista",
+   "type": "explain",
+   "title": "3. Selitä",
+   "prompt": "Kaksi hehkulamppua, joiden merkinnät ovat $230\\,\\text{V}$, $40\\,\\text{W}$ ja $230\\,\\text{V}$, $100\\,\\text{W}$, kytketään sarjaan $230\\,\\text{V}$:n jännitteeseen. Kumpi lamppu palaa kirkkaammin? Selitä resistanssien, virran ja tehon avulla.",
+   "criteria": [
+    "Vastaus päättelee merkinnöistä resistanssit $R = \\tfrac{U^2}{P}$: $40\\,\\text{W}$:n lampulla noin $1320\\,\\Omega$ ja $100\\,\\text{W}$:n lampulla noin $530\\,\\Omega$, eli pienempitehoisella lampulla on suurempi resistanssi.",
+    "Vastaus perustelee, että sarjaankytkennässä molempien lamppujen läpi kulkee sama virta.",
+    "Vastaus päättelee tehosta $P = RI^2$, että suuremman resistanssin $40\\,\\text{W}$:n lamppu saa suuremman tehon ja palaa kirkkaammin.",
+    "Vastaus toteaa joko, että kumpikin palaa nimellistehoaan himmeämmin, koska kummankin yli on vain osa jännitteestä, tai että luvut ovat arvioita, koska kylmemmän langan resistanssi on pienempi; kumpi tahansa riittää."
+   ],
+   "model": "Merkinnät kertovat tehon nimellisjännitteellä, joten resistanssit ovat $R = \\tfrac{U^2}{P}$: $40\\,\\text{W}$:n lampulla $\\tfrac{(230\\,\\text{V})^2}{40\\,\\text{W}} \\approx 1320\\,\\Omega$ ja $100\\,\\text{W}$:n lampulla noin $530\\,\\Omega$. Sarjaankytkennässä molempien läpi kulkee sama virta, noin $\\tfrac{230\\,\\text{V}}{1850\\,\\Omega} \\approx 0{,}12\\,\\text{A}$. Teho on $P = RI^2$, joten suuremman resistanssin lamppu saa suuremman tehon: $40\\,\\text{W}$:n lamppu noin $20\\,\\text{W}$ ja $100\\,\\text{W}$:n lamppu noin $8\\,\\text{W}$. Siksi $40\\,\\text{W}$:n lamppu palaa kirkkaammin, vaikka kumpikin palaa nimellistehoaan himmeämmin, koska kummankin yli on vain osa jännitteestä. Luvut ovat arvioita: himmeämmin palavan langan lämpötila on matalampi, joten sen resistanssi on pienempi kuin nimellisteholla.",
+   "practice": "Kertaa teho sarjaankytkennässä luvussa [*Sähköteho ja vastuksen lämpeneminen*](fy6-6.html) ja hehkulampun resistanssi luvussa [*Resistanssi ja Ohmin laki*](fy6-3.html)."
+  },
+  {
+   "id": "lahtolippu",
+   "stage": "tarkista",
+   "type": "exit",
+   "text": "Lopuksi kaksi nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+  }
+ ]
+}

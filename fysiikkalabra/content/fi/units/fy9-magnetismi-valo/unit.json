@@ -1,0 +1,14 @@
+{
+ "id": "fy9-magnetismi-valo",
+ "course": "FY9",
+ "chapter": 5,
+ "order": 3,
+ "title": "Magnetismi, induktio ja valo",
+ "description": "Kerrataan FY7-moduulin magneettikenttä, varatun hiukkasen liike sähkö- ja magneettikentässä, virtajohtimen ja käämin kenttä, voima virtajohtimeen, induktio ja Lenzin laki, generaattori, vaihtovirta ja muuntaja, sähkömagneettinen säteily sekä valon heijastuminen, taittuminen, dispersio, kokonaisheijastuminen, interferenssi, hila, ohut kalvo ja polarisaatio ja ratkaistaan niistä ylioppilaskokeen tyylisiä tehtäviä.",
+ "kind": "review",
+ "minutes": 75,
+ "subjects": [
+  "physics"
+ ],
+ "sources": []
+}
