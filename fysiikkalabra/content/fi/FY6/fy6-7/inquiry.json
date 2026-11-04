@@ -1,0 +1,337 @@
+{
+  "version": 1,
+  "contribution": "Sähköteho viedään kotiin: energia tehon ja ajan tulona kilowattitunteina, laitteen virta verkkojännitteellä, sähkölasku mittarin lukemista ja säästökeinojen vertailu energian eikä tehon perusteella.",
+  "learn": [
+    "laskemaan laitteen käyttämän sähköenergian tehosta ja käyttöajasta kilowattitunteina ja jouleina.",
+    "laskemaan sähkölaskun mittarin lukemista, kilowattitunnin hinnasta ja perusmaksuista.",
+    "vertailemaan säästökeinoja ja selittämään, miksi kulutuksen ratkaisee energia eikä teho."
+  ],
+  "prior": [
+    "Sähköteho on jännite kertaa virta, $P = UI$, ja vastuksessa $P = RI^2$ (luku *Sähköteho ja vastuksen lämpeneminen*)",
+    "Teho kertoo, kuinka paljon energiaa muuntuu aikayksikössä, ja energiaa voi mitata kilowattitunteina (luku *Teho*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Talvi-iltana kotona on paljon laitteita päällä yhtä aikaa: saunan kiuas lämpenee, keittiössä kiehuu vedenkeitin, jääkaappi hurisee, televisio on auki ja puhelin latautuu. Kuukauden päästä tulee sähkölasku. Siinä ei yleensä lue yhtään wattia, vaan kulutus kilowattitunteina ja sen hinta.",
+      "question": "Mistä riippuu, kuinka paljon jokin laite kasvattaa sähkölaskua?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Kertaa: sähköteho",
+      "optional": true,
+      "prompt": "Pöytävalaisimen hehkulamppu on kytketty $230\\,\\text{V}$:n verkkoon, ja sen läpi kulkee virta $0{,}26\\,\\text{A}$. Kuinka suuri on lampun teho?",
+      "choices": [
+        {
+          "text": "Noin $60\\,\\text{W}$, koska teho on jännite kertaa virta.",
+          "correct": true,
+          "feedback": "Oikein. $P = UI = 230\\,\\text{V} \\cdot 0{,}26\\,\\text{A} \\approx 60\\,\\text{W}$ (luku *Sähköteho ja vastuksen lämpeneminen*). Tänään lasketaan, kuinka paljon energiaa tällainen lamppu käyttää ja mitä se maksaa."
+        },
+        {
+          "text": "Noin $880\\,\\text{W}$, koska teho on jännite jaettuna virralla.",
+          "feedback": "Jännite jaettuna virralla on resistanssi, ei teho: $230\\,\\text{V} : 0{,}26\\,\\text{A} \\approx 880\\,\\Omega$. Teho on jännite kertaa virta, $P = UI \\approx 60\\,\\text{W}$ (luku *Sähköteho ja vastuksen lämpeneminen*)."
+        },
+        {
+          "text": "Noin $0{,}26\\,\\text{W}$, koska lampun teho on sama kuin sen virta.",
+          "feedback": "Virta ja teho ovat eri suureita, eikä niillä ole samaa lukuarvoa. Sama virta tuottaa sitä suuremman tehon, mitä suurempi jännite on: $P = UI = 230\\,\\text{V} \\cdot 0{,}26\\,\\text{A} \\approx 60\\,\\text{W}$ (luku *Sähköteho ja vastuksen lämpeneminen*)."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 1: vedenkeitin vai jääkaappi?",
+      "justify": true,
+      "reveal": {
+        "after": "teoria-osa",
+        "pending": "Palaute avautuu, kun olet laskenut laitetaulukon energiat ja Teoriatiivistelmä on näkyvissä."
+      },
+      "prompt": "Vedenkeittimen teho on $2000\\,\\text{W}$, ja sillä keitetään vettä yhteensä $12\\,\\text{min}$ vuorokaudessa. Jääkaapin kompressorin teho on $100\\,\\text{W}$, ja kompressori käy yhteensä $8\\,\\text{h}$ vuorokaudessa. Kumpi käyttää vuorokaudessa enemmän sähköenergiaa?",
+      "choices": [
+        {
+          "text": "Vedenkeitin, koska sen teho on kaksikymmenkertainen jääkaappiin verrattuna.",
+          "feedback": "Taulukon laskut kumoavat tämän: keitin käyttää vuorokaudessa $2{,}0\\,\\text{kW} \\cdot 0{,}20\\,\\text{h} = 0{,}40\\,\\text{kWh}$, jääkaappi $0{,}10\\,\\text{kW} \\cdot 8{,}0\\,\\text{h} = 0{,}80\\,\\text{kWh}$. Teho kertoo vain, kuinka nopeasti energiaa käytetään; käyttöaika ratkaisee yhtä paljon."
+        },
+        {
+          "text": "Jääkaappi, koska energia on teho kertaa aika ja jääkaappi käy monta tuntia.",
+          "correct": true,
+          "feedback": "Laskut tukevat tätä: jääkaappi käyttää $0{,}10\\,\\text{kW} \\cdot 8{,}0\\,\\text{h} = 0{,}80\\,\\text{kWh}$ ja keitin $2{,}0\\,\\text{kW} \\cdot 0{,}20\\,\\text{h} = 0{,}40\\,\\text{kWh}$. Jääkaapin teho on kahdeskymmenesosa, mutta se käy neljäkymmentä kertaa kauemmin."
+        },
+        {
+          "text": "Kumpikin yhtä paljon, koska molemmat ovat tavallisia kodin laitteita.",
+          "feedback": "Laitteen tyyppi ei kerro energiaa, vaan teho ja käyttöaika. Taulukon mukaan jääkaappi käyttää $0{,}80\\,\\text{kWh}$ ja keitin $0{,}40\\,\\text{kWh}$ vuorokaudessa, joten jääkaapin kulutus on kaksinkertainen."
+        },
+        {
+          "text": "Ei voi verrata, koska keittimen aika on minuutteina ja jääkaapin tunteina.",
+          "feedback": "Ajat voi muuntaa samaan yksikköön: $12\\,\\text{min} = 0{,}20\\,\\text{h}$. Silloin keittimen energia on $0{,}40\\,\\text{kWh}$ ja jääkaapin $0{,}80\\,\\text{kWh}$, ja niitä voi verrata suoraan."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 2: mikä säästää eniten?",
+      "justify": true,
+      "reveal": {
+        "after": "teoria-osa",
+        "pending": "Palaute avautuu, kun olet tutkinut säästökeinojen taulukon ja Teoriatiivistelmä on näkyvissä."
+      },
+      "prompt": "Perhe haluaa pienentää sähkölaskuaan. Mikä seuraavista säästää vuodessa eniten sähköenergiaa?",
+      "choices": [
+        {
+          "text": "Television ja digiboksin yhteensä noin $3\\,\\text{W}$:n valmiustila katkaistaan virtakytkimellä öiksi ja päiviksi.",
+          "feedback": "Valmiustilan teho on vain noin $3\\,\\text{W}$, vaikka se vaikuttaa lähes ympäri vuoden ($365 \\cdot 21\\,\\text{h} = 7665\\,\\text{h}$), joten säästö on vuodessa noin $23\\,\\text{kWh}$. Se on pieni verrattuna saunaan: yksi saunomiskerta viikossa vähemmän säästää $468\\,\\text{kWh}$, koska kiukaan teho on kaksituhatkertainen."
+        },
+        {
+          "text": "Vedenkeitintä, jonka teho on $2000\\,\\text{W}$, käytetään joka päivä kymmenen minuuttia vähemmän.",
+          "feedback": "Ajan lyhennys ei ole pieni: vuodessa keitin on päällä $365 \\cdot 10\\,\\text{min} \\approx 61\\,\\text{h}$ vähemmän, lähes yhtä paljon kuin saunomisen vähentäminen, $52 \\cdot 1{,}5\\,\\text{h} = 78\\,\\text{h}$. Energiaero ($\\approx 120\\,\\text{kWh}$ ja $468\\,\\text{kWh}$) johtuu pääosin tehosta: kiukaan teho $6{,}0\\,\\text{kW}$ on kolme kertaa keittimen teho $2{,}0\\,\\text{kW}$."
+        },
+        {
+          "text": "Viisi $40\\,\\text{W}$:n halogeenilamppua vaihdetaan $5\\,\\text{W}$:n LED-lamppuihin.",
+          "feedback": "Vaihto säästää paljon, noin $190\\,\\text{kWh}$ vuodessa, kun lamput palavat kolme tuntia päivässä. Saunominen kerran viikossa harvemmin säästää silti enemmän, $468\\,\\text{kWh}$, koska kiukaan teho $6{,}0\\,\\text{kW}$ on niin suuri."
+        },
+        {
+          "text": "Saunotaan kerran viikossa harvemmin $6\\,\\text{kW}$:n sähkökiukaalla.",
+          "correct": true,
+          "feedback": "Taulukko tukee tätä: yksi saunomiskerta käyttää $6{,}0\\,\\text{kW} \\cdot 1{,}5\\,\\text{h} = 9{,}0\\,\\text{kWh}$, ja vuodessa säästöä kertyy $52 \\cdot 9{,}0\\,\\text{kWh} = 468\\,\\text{kWh}$. Eniten säästää siellä, missä sekä teho että aika ovat suuria."
+        }
+      ]
+    },
+    {
+      "id": "laitteet",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Kodin laitteiden vuorokausi",
+      "source": "example",
+      "source_note": "Keksitty esimerkkiaineisto: laitteiden tyypillisiä nimellistehoja ja arvioituja käyttöaikoja, ei mittaus.",
+      "text": "Taulukossa on viiden kodin laitteen teho ja yhteenlaskettu käyttöaika yhden vuorokauden aikana. Jääkaapin kompressori käy ja sammuu vuorotellen, joten sen aika on käyntijaksojen summa.\n\n| laite | $P$ | käyttöaika |\n| --- | --- | --- |\n| vedenkeitin | $2000\\,\\text{W}$ | $12\\,\\text{min}$ |\n| jääkaappi | $100\\,\\text{W}$ | $8{,}0\\,\\text{h}$ |\n| televisio | $100\\,\\text{W}$ | $3{,}0\\,\\text{h}$ |\n| LED-valaistus | $40\\,\\text{W}$ | $5{,}0\\,\\text{h}$ |\n| puhelimen laturi | $5{,}0\\,\\text{W}$ | $2{,}0\\,\\text{h}$ |\n\nLaske jokaiselle laitteelle vuorokauden energia kilowattitunteina: muunna teho kilowateiksi ja aika tunneiksi ja kerro ne. Vertaa sitten tuloksia laitteiden tehoihin.",
+      "question": {
+        "type": "numeric",
+        "prompt": "Kuinka paljon sähköenergiaa vedenkeitin käyttää vuorokaudessa? Vastaa kilowattitunteina.",
+        "answer": 0.4,
+        "unit": "kWh",
+        "tolerance": 0.02,
+        "hints": [
+          "Energia on teho kertaa aika. Missä yksiköissä teho ja aika pitää ilmoittaa, jotta tulos tulee kilowattitunteina?",
+          "$2000\\,\\text{W} = 2{,}0\\,\\text{kW}$ ja $12\\,\\text{min} = \\tfrac{12}{60}\\,\\text{h}$.",
+          "$E = 2{,}0\\,\\text{kW} \\cdot 0{,}20\\,\\text{h}$."
+        ],
+        "mistakes": [
+          {
+            "value": 24,
+            "feedback": "Kerroit kilowatit minuuteilla. Aika pitää muuntaa tunneiksi: $12\\,\\text{min} = 0{,}20\\,\\text{h}$, joten energia on $0{,}40\\,\\text{kWh}$."
+          },
+          {
+            "value": 400,
+            "feedback": "Tulos on wattitunteina, $2000\\,\\text{W} \\cdot 0{,}20\\,\\text{h} = 400\\,\\text{Wh}$. Kilowattitunteina se on $0{,}40\\,\\text{kWh}$."
+          }
+        ],
+        "solution": "**Annettu:** teho $P = 2000\\,\\text{W}$, käyttöaika $t = 12\\,\\text{min}$ vuorokaudessa\n\n**Kysytty:** vuorokauden energia $E$ kilowattitunteina\n\n**Periaate:** Kun keitin on päällä, sen teho on vakio, joten energia on teho kertaa yhteenlaskettu käyttöaika. Kilowateilla ja tunneilla energia saadaan suoraan kilowattitunteina.\n\n**Kaava:** $E = Pt$\n\n**Muunnokset:** $P = 2000\\,\\text{W} = 2000 \\cdot 0{,}001\\,\\text{kW} = 2{,}0\\,\\text{kW}$ ja $t = 12\\,\\text{min} = \\tfrac{12}{60}\\,\\text{h} = 0{,}20\\,\\text{h}$\n\n**Sijoitus:** $E = 2{,}0\\,\\text{kW} \\cdot 0{,}20\\,\\text{h} = 0{,}40\\,\\text{kWh}$\n\n**Vastaus:** $0{,}40\\,\\text{kWh}$, kaksi merkitsevää numeroa kuten käyttöajassa $12\\,\\text{min}$.\n\n**Järkevyys:** Tunnin käytöllä keitin käyttäisi $2{,}0\\,\\text{kWh}$, ja $12\\,\\text{min}$ on viidesosa tunnista, joten $2{,}0\\,\\text{kWh} : 5 = 0{,}40\\,\\text{kWh}$. Jääkaappi käyttää samassa ajassa $0{,}10\\,\\text{kW} \\cdot 8{,}0\\,\\text{h} = 0{,}80\\,\\text{kWh}$, vaikka sen teho on paljon pienempi."
+      }
+    },
+    {
+      "id": "saastot",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Säästökeinojen vertailu",
+      "source": "example",
+      "source_note": "Keksitty esimerkkiaineisto: tyypillisiä tehoja ja arvioituja käyttöaikoja, ei mittaus.",
+      "text": "Perhe vertailee neljää säästökeinoa: television ja digiboksin valmiustilan katkaisua, vedenkeittimen käytön lyhentämistä kymmenellä minuutilla joka päivä, viiden $40\\,\\text{W}$:n halogeenilampun vaihtoa $5{,}0\\,\\text{W}$:n LED-lamppuihin ja yhtä $6{,}0\\,\\text{kW}$:n kiukaalla lämmitettävää saunomiskertaa viikossa vähemmän. Taulukossa on, kuinka paljon tehoa kukin keino säästää ja kuinka kauan säästö vaikuttaa vuoden aikana.\n\n| keino | säästyvä teho | aika vuodessa |\n| --- | --- | --- |\n| valmiustila pois | $3{,}0\\,\\text{W}$ | $365 \\cdot 21\\,\\text{h}$ |\n| keitin $10\\,\\text{min}$ vähemmän | $2{,}0\\,\\text{kW}$ | $365 \\cdot 10\\,\\text{min}$ |\n| LED-lamput | $5 \\cdot 35\\,\\text{W}$ | $365 \\cdot 3{,}0\\,\\text{h}$ |\n| sauna harvemmin | $6{,}0\\,\\text{kW}$ | $52 \\cdot 1{,}5\\,\\text{h}$ |\n\nLaske jokaisen säästökeinon vuotuinen energiansäästö kilowattitunteina ja järjestä keinot säästön mukaan.",
+      "question": {
+        "type": "numeric",
+        "prompt": "Kuinka paljon sähköenergiaa lamppujen vaihto säästää vuodessa? Vastaa kilowattitunteina.",
+        "answer": 191.625,
+        "unit": "kWh",
+        "tolerance": 0.02,
+        "hints": [
+          "Säästö on säästyvä teho kertaa aika, jona säästö vaikuttaa. Kuinka suuri teho säästyy, kun viisi lamppua vaihdetaan?",
+          "Säästyvä teho on $5 \\cdot 35\\,\\text{W} = 175\\,\\text{W} = 0{,}175\\,\\text{kW}$, ja aika vuodessa on $365 \\cdot 3{,}0\\,\\text{h}$.",
+          "$\\Delta E = 0{,}175\\,\\text{kW} \\cdot 1095\\,\\text{h}$."
+        ],
+        "mistakes": [
+          {
+            "value": 38.325,
+            "feedback": "Laskit vain yhden lampun säästön. Lamppuja on viisi, joten säästö on viisinkertainen: noin $190\\,\\text{kWh}$."
+          },
+          {
+            "value": 219,
+            "feedback": "Käytit halogeenilamppujen koko tehoa $5 \\cdot 40\\,\\text{W}$. LED-lamput käyttävät edelleen $5{,}0\\,\\text{W}$ kukin, joten säästyvä teho on $5 \\cdot 35\\,\\text{W} = 175\\,\\text{W}$."
+          }
+        ],
+        "solution": "**Annettu:** viisi lamppua, joiden teho pienenee $40\\,\\text{W}$:sta $5{,}0\\,\\text{W}$:iin; paloaika $3{,}0\\,\\text{h}$ päivässä, $365$ päivää\n\n**Kysytty:** vuoden energiansäästö $\\Delta E$ kilowattitunteina\n\n**Periaate:** Lamput palavat ennen vaihtoa ja sen jälkeen yhtä kauan, joten säästö on tehojen erotus kertaa paloaika. Kaikkien viiden lampun säästö on yhden lampun säästö viisinkertaisena.\n\n**Kaava:** $\\Delta E = 5 \\cdot (P_1 - P_2) \\cdot t$\n\n**Muunnokset:** $5 \\cdot (40\\,\\text{W} - 5{,}0\\,\\text{W}) = 175\\,\\text{W} = 0{,}175\\,\\text{kW}$ ja $t = 365 \\cdot 3{,}0\\,\\text{h} = 1095\\,\\text{h}$\n\n**Sijoitus:** $\\Delta E = 0{,}175\\,\\text{kW} \\cdot 1095\\,\\text{h} = 191{,}6\\,\\text{kWh}$\n\n**Vastaus:** $190\\,\\text{kWh}$, kaksi merkitsevää numeroa kuten paloajassa $3{,}0\\,\\text{h}$ ja tehossa $5{,}0\\,\\text{W}$.\n\n**Järkevyys:** Arvio: $0{,}2\\,\\text{kW} \\cdot 1000\\,\\text{h} = 200\\,\\text{kWh}$. Taulukon muut säästöt ovat valmiustilalle $0{,}0030\\,\\text{kW} \\cdot 7665\\,\\text{h} \\approx 23\\,\\text{kWh}$, keittimelle $2{,}0\\,\\text{kW} \\cdot \\tfrac{1}{6}\\,\\text{h} \\cdot 365 \\approx 122\\,\\text{kWh}$ ja saunalle $6{,}0\\,\\text{kW} \\cdot 78\\,\\text{h} = 468\\,\\text{kWh}$, joten lamppujen vaihto on toiseksi tehokkain keino, keittimen lyhentäminen kolmanneksi."
+      }
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös: mikä ratkaisee kulutuksen?",
+      "prompt": "Kirjoita laskujesi perusteella: mikä ratkaisee, kuinka paljon sähköenergiaa laite käyttää? Miksi pienitehoinen laite voi käyttää enemmän energiaa kuin suuritehoinen, ja mitkä säästökeinot kannattaa tehdä ensin?",
+      "model": "Laitteen käyttämä energia on teho kertaa käyttöaika, joten kumpikin ratkaisee yhtä paljon. Jääkaappi käyttää vuorokaudessa $0{,}80\\,\\text{kWh}$ ja vedenkeitin vain $0{,}40\\,\\text{kWh}$, vaikka keittimen teho on kaksikymmenkertainen, koska jääkaappi käy $8\\,\\text{h}$ ja keitin $12\\,\\text{min}$. Säästökeinoista suurin vaikutus on saunomiskerran vähentämisellä, $468\\,\\text{kWh}$ vuodessa, ja seuraavaksi suurin lamppujen vaihdolla, noin $190\\,\\text{kWh}$, koska niissä säästyvä teho ja aika ovat suuria. Keittimen käytön lyhentäminen säästää noin $122\\,\\text{kWh}$ ja valmiustilan katkaisu vain noin $23\\,\\text{kWh}$. Kannattaa aloittaa niistä laitteista, joiden energia on suurin. Luvut ovat keksityn esimerkkiaineiston laskettuja arvoja.",
+      "criteria": [
+        "Vastaus kertoo, että energia on teho kertaa aika, ja perustelee sen taulukon luvuilla.",
+        "Vastaus selittää jääkaapin ja keittimen vertailulla, että pitkä käyttöaika voi korvata pienen tehon.",
+        "Vastaus järjestää säästökeinot laskettujen säästöjen mukaan ja nimeää suurimman.",
+        "Vastaus päättelee, että säästäminen kannattaa aloittaa suurimman energian laitteista."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Palaa ennusteisiisi",
+      "optional": true,
+      "prompt": "Vertaa ennusteitasi laskemiisi energioihin. Palaa sitten alun kysymykseen: miksi sähkölaskussa on kilowattitunteja eikä watteja?",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2"
+      ]
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe",
+      "prompt": "Opiskelija laskee, kuinka paljon sähköenergiaa $2000\\,\\text{W}$:n vedenkeitin käyttää $15\\,\\text{min}$:ssa:\n\n$$\\begin{aligned} E &= Pt \\\\ &= 2000\\,\\text{W} \\cdot 15\\,\\text{min} \\\\ &= 30\\,000\\,\\text{kWh} \\end{aligned}$$\n\nMissä on virhe?",
+      "choices": [
+        {
+          "text": "Yksiköitä ei ole muunnettu: $2{,}0\\,\\text{kW} \\cdot 0{,}25\\,\\text{h} = 0{,}50\\,\\text{kWh}$.",
+          "correct": true,
+          "feedback": "Oikein. Watit kertaa minuutit ei ole kilowattitunteja. Kun teho muunnetaan kilowateiksi ja aika tunneiksi, saadaan $0{,}50\\,\\text{kWh}$. Virheen olisi voinut huomata suuruusluokasta: $30\\,000\\,\\text{kWh}$ on enemmän kuin omakotitalo käyttää vuodessa."
+        },
+        {
+          "text": "Kaava on väärä: energia on teho jaettuna ajalla.",
+          "feedback": "Teho jaettuna ajalla ei ole energia. Energia on teho kertaa aika, $E = Pt$: mitä kauemmin keitin on päällä, sitä enemmän energiaa se käyttää. Virhe on yksiköissä: oikea tulos on $2{,}0\\,\\text{kW} \\cdot 0{,}25\\,\\text{h} = 0{,}50\\,\\text{kWh}$."
+        },
+        {
+          "text": "Laskussa ei ole virhettä, koska $\\text{W} \\cdot \\text{min}$ on sama kuin $\\text{kWh}$.",
+          "feedback": "Wattiminuutti on paljon pienempi yksikkö kuin kilowattitunti: $1\\,\\text{kWh} = 1000\\,\\text{W} \\cdot 60\\,\\text{min} = 60\\,000\\,\\text{W} \\cdot \\text{min}$. Siksi $30\\,000\\,\\text{W} \\cdot \\text{min}$ on vain $0{,}50\\,\\text{kWh}$."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Sovella uuteen tilanteeseen",
+      "prompt": "Kerrostaloasunnon sähkömittarin lukema oli kuukauden alussa $15\\,362\\,\\text{kWh}$ ja lopussa $15\\,589\\,\\text{kWh}$. Sähköenergia maksaa $12{,}0\\,\\text{snt/kWh}$ ja siirto $6{,}0\\,\\text{snt/kWh}$. Lisäksi energiayhtiö ja verkkoyhtiö perivät perusmaksuja yhteensä $9{,}00\\,\\text{€}$ kuukaudessa. Kaikki hinnat sisältävät arvonlisäveron. Kuinka suuri on kuukauden sähkölasku? Vastaa euroina.",
+      "answer": 49.86,
+      "unit": "€",
+      "tolerance": 0.02,
+      "hints": [
+        "Kuinka paljon energiaa kuukauden aikana käytettiin? Mittari näyttää kaikkien aikojen yhteenlasketun kulutuksen.",
+        "Kilowattitunnin hinta on energian ja siirron hinta yhteensä. Perusmaksut lisätään kerran, ei kilowattituntia kohti.",
+        "$E = 15\\,589\\,\\text{kWh} - 15\\,362\\,\\text{kWh} = 227\\,\\text{kWh}$ ja $a = 0{,}180\\,\\text{€/kWh}$, joten $K = aE + 9{,}00\\,\\text{€}$."
+      ],
+      "mistakes": [
+        {
+          "value": 40.86,
+          "feedback": "Unohdit perusmaksut. Ne maksetaan kulutuksesta riippumatta, joten laskuun lisätään vielä $9{,}00\\,\\text{€}$."
+        },
+        {
+          "value": 36.24,
+          "feedback": "Käytit vain energian hintaa. Myös siirto maksetaan jokaiselta kilowattitunnilta, joten hinta on $12{,}0\\,\\text{snt/kWh} + 6{,}0\\,\\text{snt/kWh} = 18{,}0\\,\\text{snt/kWh}$."
+        }
+      ],
+      "solution": "**Annettu:** mittarin lukemat $15\\,362\\,\\text{kWh}$ ja $15\\,589\\,\\text{kWh}$, energian hinta $12{,}0\\,\\text{snt/kWh}$, siirron hinta $6{,}0\\,\\text{snt/kWh}$, perusmaksut $K_\\text{perus} = 9{,}00\\,\\text{€}$\n\n**Kysytty:** kuukauden laskun summa $K$ euroina\n\n**Periaate:** Mittari laskee yhteen kaiken asunnossa käytetyn sähköenergian, joten kuukauden energia on lukemien erotus. Energiasta ja siirrosta maksetaan kilowattituntia kohti, ja perusmaksut lisätään kulutuksesta riippumatta.\n\n**Kaava:** $E = E_\\text{loppu} - E_\\text{alku}$ ja $K = aE + K_\\text{perus}$, joten $K = a(E_\\text{loppu} - E_\\text{alku}) + K_\\text{perus}$\n\n**Muunnokset:** $a = 12{,}0\\,\\text{snt/kWh} + 6{,}0\\,\\text{snt/kWh} = 18{,}0\\,\\text{snt/kWh} = 0{,}180\\,\\text{€/kWh}$\n\n**Sijoitus:** $E = 15\\,589\\,\\text{kWh} - 15\\,362\\,\\text{kWh} = 227\\,\\text{kWh}$ ja $K = 0{,}180\\,\\tfrac{\\text{€}}{\\text{kWh}} \\cdot 227\\,\\text{kWh} + 9{,}00\\,\\text{€} = 40{,}86\\,\\text{€} + 9{,}00\\,\\text{€} = 49{,}86\\,\\text{€}$\n\n**Vastaus:** $49{,}86\\,\\text{€} \\approx 50\\,\\text{€}$; tiedot ovat kolmen merkitsevän numeron tarkkuudella kuten energian hinnassa $12{,}0\\,\\text{snt/kWh}$.\n\n**Järkevyys:** Arvio: $230\\,\\text{kWh} \\cdot 0{,}2\\,\\text{€/kWh} \\approx 46\\,\\text{€}$ ja perusmaksut päälle, noin $55\\,\\text{€}$; tarkka tulos on vähän pienempi, koska hinta on alle $0{,}2\\,\\text{€/kWh}$. Kulutus $227\\,\\text{kWh}$ kuukaudessa eli noin $7{,}6\\,\\text{kWh}$ vuorokaudessa sopii kerrostaloasuntoon, jossa ei ole sähkölämmitystä."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Harjoittele kolmella tasolla. Tason 1 tehtävissä lasketaan energia, virta tai hinta yhdellä kaavalla, tason 2 tehtävissä yhdistetään kaksi vaihetta tai luetaan kuvaajaa, ja taso 3 vaatii päättelyä sähkölaskusta ja laitteen vastuksesta."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Käsite",
+      "prompt": "Sähkölaskussa kulutus on ilmoitettu kilowattitunteina. Mitä suuretta kilowattitunti mittaa?",
+      "choices": [
+        {
+          "text": "Energiaa: kilowattitunti on kilowatin teho kerrottuna tunnin ajalla.",
+          "correct": true,
+          "feedback": "Oikein. Kilowattitunti on energian yksikkö, $1\\,\\text{kWh} = 1000\\,\\text{W} \\cdot 3600\\,\\text{s} = 3{,}6\\,\\text{MJ}$. Sähkölaskussa maksetaan käytetystä energiasta."
+        },
+        {
+          "text": "Tehoa: kilowattitunti kertoo, montako kilowattia laite käyttää tunnissa.",
+          "feedback": "Teho ilmoitetaan watteina tai kilowatteina, ja se kertoo, kuinka nopeasti energiaa käytetään. Kilowattitunti on teho kertaa aika eli energia, ei teho."
+        },
+        {
+          "text": "Virtaa: kilowattitunti kertoo, kuinka paljon sähköä on kulkenut johdoissa.",
+          "feedback": "Virran yksikkö on ampeeri. Kilowattitunti on energian yksikkö: se on teho kertaa aika. Sama virta voi siirtää eri määrän energiaa, jos jännite tai aika on eri."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Energia kilowattitunteina",
+      "prompt": "Hiustenkuivaajan teho on $1800\\,\\text{W}$, ja sitä käytetään $10\\,\\text{min}$ joka päivä. Kuinka paljon sähköenergiaa kuivaaja käyttää $30$ päivässä? Vastaa kilowattitunteina.",
+      "answer": 9.0,
+      "unit": "kWh",
+      "tolerance": 0.02,
+      "hints": [
+        "Mikä on kuivaajan yhteenlaskettu käyttöaika $30$ päivässä tunteina?",
+        "$10\\,\\text{min} = \\tfrac{10}{60}\\,\\text{h}$, joten $30$ päivässä $t = 30 \\cdot \\tfrac{10}{60}\\,\\text{h}$.",
+        "$E = 1{,}8\\,\\text{kW} \\cdot 5{,}0\\,\\text{h}$."
+      ],
+      "mistakes": [
+        {
+          "value": 5.4,
+          "feedback": "Käytit $10\\,\\text{min}$ arvona $0{,}10\\,\\text{h}$. Tunnissa on $60$ minuuttia, joten $10\\,\\text{min} = \\tfrac{10}{60}\\,\\text{h} \\approx 0{,}17\\,\\text{h}$."
+        },
+        {
+          "value": 9000,
+          "feedback": "Tulos on wattitunteina. Kilowattitunteina se on $9000\\,\\text{Wh} : 1000 = 9{,}0\\,\\text{kWh}$."
+        }
+      ],
+      "solution": "**Annettu:** teho $P = 1800\\,\\text{W}$, käyttöaika $10\\,\\text{min}$ päivässä, $30$ päivää\n\n**Kysytty:** energia $E$ kilowattitunteina\n\n**Periaate:** Kuivaajan teho on vakio, joten energia on teho kertaa yhteenlaskettu käyttöaika. Kilowateilla ja tunneilla energia saadaan kilowattitunteina.\n\n**Kaava:** $E = Pt$\n\n**Muunnokset:** $P = 1800\\,\\text{W} = 1{,}8\\,\\text{kW}$; $t = 30 \\cdot 10\\,\\text{min} = 300\\,\\text{min} = \\tfrac{300}{60}\\,\\text{h} = 5{,}0\\,\\text{h}$\n\n**Sijoitus:** $E = 1{,}8\\,\\text{kW} \\cdot 5{,}0\\,\\text{h} = 9{,}0\\,\\text{kWh}$\n\n**Vastaus:** $9{,}0\\,\\text{kWh}$, kaksi merkitsevää numeroa kuten tehossa $1800\\,\\text{W}$ ja ajassa $10\\,\\text{min}$.\n\n**Järkevyys:** Päivässä kuivaaja käyttää $1{,}8\\,\\text{kW} \\cdot \\tfrac{1}{6}\\,\\text{h} = 0{,}30\\,\\text{kWh}$, ja $30$ päivässä $30 \\cdot 0{,}30\\,\\text{kWh} = 9{,}0\\,\\text{kWh}$. Se maksaa noin $9 \\cdot 0{,}18\\,\\text{€} \\approx 1{,}6\\,\\text{€}$ kuukaudessa, mikä on pieni osa kodin laskusta."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Selitä kulutus",
+      "optional": true,
+      "prompt": "Omakotitalossa on sähkölämmitys, lämminvesivaraaja ja sähkökiuas. Selitä, miksi juuri nämä laitteet ratkaisevat talon sähkölaskun suuruuden, vaikka talossa on kymmeniä muitakin sähkölaitteita. Kerro myös, mihin sähköenergia lämmittävissä laitteissa päätyy.",
+      "model": "Laitteen energia on teho kertaa käyttöaika. Lämmityksen, lämminvesivaraajan ja kiukaan teho on kilowatteja, ja lämmitys ja varaaja toimivat tuntikausia joka päivä, joten niiden energia on suuri. Esimerkiksi $2\\,\\text{kW}$:n varaaja käyttää kolmessa tunnissa $6\\,\\text{kWh}$, kun taas $100\\,\\text{W}$:n televisio kolmessa tunnissa vain $0{,}3\\,\\text{kWh}$. Muiden laitteiden teho on pieni tai käyttöaika lyhyt, joten niiden yhteenlaskettu energia jää pienemmäksi. Lämmittävissä laitteissa sähköenergia muuttuu vastuksen sisäenergiaksi, joka siirtyy lämpönä huoneilmaan, veteen tai kiviin. Siksi säästökeinot kannattaa kohdistaa näihin laitteisiin.",
+      "criteria": [
+        "Vastaus perustelee energian suuruuden sekä teholla että käyttöajalla.",
+        "Vastaus vertaa lämmittäviä laitteita johonkin pienitehoiseen laitteeseen lukujen tai suuruusluokan avulla.",
+        "Vastaus kertoo, että lämmittävissä laitteissa sähköenergia muuttuu sisäenergiaksi, joka siirtyy lämpönä ympäristöön.",
+        "Vastaus päättelee, että säästökeinot kannattaa kohdistaa näihin laitteisiin."
+      ]
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Lopuksi kaksi nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "level1": [
+    {
+      "id": "fy6-9-L1-01",
+      "level": 1,
+      "text": "Polkupyörän takavalo ottaa akusta tasaista virtaa $0{,}25\\,\\text{A}$, ja täyteen ladattu akku tyhjenee $8{,}0$ tunnissa. Mikä on akun kapasiteetti? Vastaa ampeeritunteina.",
+      "answer": 2.0,
+      "unit": "Ah",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-9-L1-02",
+      "level": 1,
+      "text": "Akun kapasiteetti on $3000\\,\\text{mAh}$. Kuinka suuri varaus akun läpi kulkee, kun se purkautuu täydestä tyhjäksi? Vastaa coulombeina.",
+      "answer": 10800,
+      "unit": "C",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-9-L1-03",
+      "level": 1,
+      "text": "Sähköpyörän akun nimellisjännite on $36\\,\\text{V}$ ja kapasiteetti $13\\,\\text{Ah}$. Kuinka paljon energiaa täyteen ladattuun akkuun on varastoitunut? Vastaa wattitunteina.",
+      "answer": 468,
+      "unit": "Wh",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-9-L1-04",
+      "level": 1,
+      "text": "Taskulampun akun kapasiteetti on $2{,}4\\,\\text{Ah}$, ja lamppu ottaa akusta virtaa $0{,}15\\,\\text{A}$. Kuinka kauan lamppu palaa täyteen ladatulla akulla? Vastaa tunteina.",
+      "answer": 16,
+      "unit": "h",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-9-L1-05",
+      "level": 1,
+      "text": "Kuvaajassa on akun latausvirta ajan funktiona. Kuinka suuri varaus akun läpi kulki latauksen aikana? Lue tarvittavat arvot kuvaajasta. Vastaa ampeeritunteina.",
+      "figure": "fy6-9/ex-current",
+      "answer": 4.0,
+      "unit": "Ah",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy6-9-L2-01",
+      "level": 2,
+      "text": "Moottoripyörän akun lähdejännite on $12{,}4\\,\\text{V}$ ja sisäinen resistanssi $40\\,\\text{m}\\Omega$. Akkua ladataan laturilla, jonka jännite on $14{,}4\\,\\text{V}$, ja laturin ja johtojen resistanssi on $0{,}36\\,\\Omega$. Kuinka suuri on latausvirta?",
+      "answer": 5.0,
+      "unit": "A",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-9-L2-02",
+      "level": 2,
+      "text": "Akkukennoa ladataan laturilla, jonka jännite on $5{,}0\\,\\text{V}$. Kennon lähdejännite on $3{,}8\\,\\text{V}$, laturin ja johdon resistanssi on $0{,}80\\,\\Omega$, ja virtamittari näyttää latausvirraksi $1{,}2\\,\\text{A}$. Mikä on kennon sisäinen resistanssi?",
+      "answer": 0.2,
+      "unit": "Ω",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-9-L2-03",
+      "level": 2,
+      "text": "Puhelimen akun kapasiteetti on $4500\\,\\text{mAh}$. Akku ladataan varaustasosta $15\\,\\%$ varaustasoon $80\\,\\%$, ja latausvirta on keskimäärin $1{,}8\\,\\text{A}$. Kuinka kauan lataus kestää? Vastaa minuutteina.",
+      "answer": 97.5,
+      "unit": "min",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-9-L2-04",
+      "level": 2,
+      "text": "Sähköpyörän akun nimellisjännite on $36\\,\\text{V}$ ja kapasiteetti $14\\,\\text{Ah}$. Tyhjän akun lataaminen täyteen vie sähköverkosta energiaa $600\\,\\text{Wh}$. Oleta, että akkuun varastoituu energia nimellisjännite kertaa kapasiteetti. Mikä on latauksen hyötysuhde? Vastaa prosentteina.",
+      "answer": 84,
+      "unit": "%",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy6-9-L3-01",
+      "level": 3,
+      "text": "Auton käynnistysakun nimellisjännite on $12\\,\\text{V}$ ja kapasiteetti $60\\,\\text{Ah}$, mutta lyijyakusta voi ottaa vain puolet sen kapasiteetista vahingoittamatta sitä. Sähköpotkulaudan akun nimellisjännite on $36\\,\\text{V}$ ja kapasiteetti $7{,}8\\,\\text{Ah}$, ja sen voi käyttää kokonaan. Ampeerituntien suhde on lähes kahdeksan. Kuinka monta kertaa niin paljon energiaa auton akusta voi käyttää kuin potkulaudan akusta?",
+      "answer": 1.28,
+      "unit": "kertaa",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-9-L3-02",
+      "level": 3,
+      "text": "Laturin jännite pysyy latauksen ajan $13{,}8\\,\\text{V}$:ssa. Akun lähdejännite on latauksen alussa $12{,}0\\,\\text{V}$ ja lopussa $12{,}6\\,\\text{V}$. Laturin, johtojen ja akun resistanssit ovat yhteensä $0{,}30\\,\\Omega$, ja ne pysyvät vakioina. Kuinka monta prosenttia latausvirta pienenee latauksen aikana?",
+      "answer": 33.3,
+      "unit": "%",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-9-L3-03",
+      "level": 3,
+      "text": "Puhelimen akkua ladataan $1{,}5$ tuntia vakiovirralla $2{,}0\\,\\text{A}$. Akun sisäinen resistanssi on $0{,}15\\,\\Omega$. Kuinka paljon energiaa muuttuu akun sisäisessä resistanssissa sisäenergiaksi latauksen aikana? Vastaa kilojouleina.",
+      "answer": 3.24,
+      "unit": "kJ",
+      "tolerance": 0.02
+    }
+  ]
+}

@@ -694,9 +694,6 @@ nav.chapter-nav a:hover{border-color:var(--accent);background:var(--accent-soft)
 nav.chapter-nav a:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
 @media (max-width:40rem){nav.chapter-nav{grid-template-columns:1fr}nav.chapter-nav a.next{grid-column:1;text-align:left}}
 nav.chapter-nav a.prev .dir::before{content:"← "}nav.chapter-nav a.next .dir::after{content:" →"}
-/* Käsitetakomo (teacher 2026-11-03, scripts/concept_cards.py): the chapter's small link above the chapter navigation, the front page's section */
-p.concept-link{max-width:var(--measure);margin:3rem 0 0;font-size:var(--fs-ui)}p.concept-link a,ul.concept-cards a{display:inline-flex;align-items:center;min-height:44px;font-weight:700;color:var(--accent-deep);text-decoration:none;overflow-wrap:anywhere}p.concept-link a:hover,ul.concept-cards a:hover{text-decoration:underline}p.concept-link a::after{content:"→";margin-left:.5em;flex:none}
-p.concept-link+nav.chapter-nav{margin-top:1rem}
 /* after a wrong answer in Tarkista osaamisesi: where to practise, as a suggestion (inquiry.py, teacher 2026-10-29) */
 .practice-hint{display:none;margin:.6rem 0 0;padding:.55rem .8rem;border-radius:var(--inner-radius);background:var(--bg-tint);font-size:var(--fs-inner);line-height:1.5}
 fieldset.choice[data-state="no"] .practice-hint,.numeric:has(output[data-state="no"]) .practice-hint{display:block}
@@ -844,3 +841,123 @@ dialog.zoom-dlg::backdrop{background:rgba(14,17,22,.78)}
 .ra-voice[hidden]{display:none}
 .ra-voice select{flex:1;min-width:0;max-width:17rem;min-height:44px;padding:0 .4rem;font:500 var(--fs-ui) var(--sans);color:var(--ink);border:1px solid var(--line);border-radius:10px;background:var(--surface)}
 .ra-voice select:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+/* Concept cards (kortit.js, teacher 2026-11-03: "kortit tulevat luvun luo"). One card everywhere: both faces in one
+   grid cell, so a turned card keeps its height and a row never gets an empty column; a row of cards scrolls sideways
+   from 40rem and stacks on a phone. Without JavaScript the cards are a definition list (.kc-dl). The bold terms of
+   Teoriatiivistelmä that name a card get a dotted underline and open a popover (.kc-pop). */
+.kc-intro{font-size:var(--fs-inner);color:var(--ink-2);margin:0 0 1rem}
+.kc-dl{margin:0 0 1rem;display:grid;gap:.6rem}
+.kc-item{background:var(--surface);border:1px solid var(--line);border-radius:var(--inner-radius);padding:.7rem 1rem}
+.kc-item dt{font:700 var(--fs-body) var(--sans);color:var(--ink)}
+.kc-item dd{margin:.15rem 0 0;font-size:var(--fs-inner)}
+.kc-formula{display:block}
+.kc-more,.kc-all{font:600 var(--fs-ui) var(--sans);margin:.9rem 0 0}
+.kc-row{display:grid;gap:.9rem;margin:0 0 .5rem}
+@media (min-width:40rem){
+  .kc-row{grid-auto-flow:column;grid-auto-columns:minmax(16.5rem,18rem);overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x proximity;
+    padding:.25rem .25rem 1rem;margin-inline:-.25rem;scrollbar-width:thin}
+  .kc-row>.kc-card{scroll-snap-align:start}
+}
+.kc-card{perspective:1400px;min-width:0}
+.kc-inner{display:grid;height:100%;transition:transform .45s cubic-bezier(.3,.7,.3,1);transform-style:preserve-3d}
+.kc-card.is-flipped .kc-inner{transform:rotateY(180deg)}
+.kc-face,.kc-back{grid-area:1/1;backface-visibility:hidden;-webkit-backface-visibility:hidden;min-height:11.5rem;box-sizing:border-box;
+  border:1px solid var(--line);border-radius:var(--card-radius);background:var(--surface);box-shadow:0 1px 2px rgba(20,23,30,.05),0 6px 18px rgba(20,23,30,.06)}
+.kc-face{display:flex;flex-direction:column;align-items:flex-start;gap:.5rem;width:100%;padding:1rem 1rem;text-align:left;cursor:pointer;color:var(--ink);font:inherit;
+  background:linear-gradient(180deg,var(--surface),#fbf8f1)}
+.kc-face:hover{border-color:var(--accent);box-shadow:0 1px 2px rgba(20,23,30,.05),0 8px 22px rgba(20,48,30,.12)}
+.kc-back{transform:rotateY(180deg);padding:.8rem 1rem 1rem;display:flex;flex-direction:column;gap:.35rem}
+.kc-back:focus{outline:none}.kc-back:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.kc-kind{font:700 .8125rem/1.2 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2)}
+.kc-front{flex:1;display:flex;align-items:center;font:600 1.3125rem/1.3 var(--serif);overflow-wrap:anywhere;hyphens:auto;-webkit-hyphens:auto}
+.kc-front.is-def{font:500 var(--fs-inner)/1.5 var(--sans)}
+.kc-hint{font:600 var(--fs-ui) var(--sans);color:var(--accent-deep)}
+.kc-hint::after{content:" ↻"}
+.kc-back-top{display:flex;align-items:center;justify-content:space-between;gap:.5rem}
+.kc-turn{min-width:40px;min-height:40px;border:1px solid var(--line);border-radius:999px;background:var(--surface);color:var(--accent-deep);font:600 1.05rem var(--sans);cursor:pointer}
+.kc-back-term{margin:0;font:700 var(--fs-ui)/1.3 var(--sans);color:var(--ink-2)}
+.kc-def{margin:0;font-size:var(--fs-inner);line-height:1.5}
+.kc-def-term{font:600 1.25rem/1.3 var(--serif)}
+.kc-back .kc-formula,.kc-pop .kc-formula{margin:.15rem 0;overflow-x:auto;overflow-y:hidden}
+.kc-back .kc-formula .katex-display,.kc-pop .kc-formula .katex-display{margin:.3rem 0;text-align:left}
+.kc-img{max-width:100%;height:auto;margin:.2rem 0}
+.kc-actions{display:flex;flex-wrap:wrap;gap:.45rem;margin-top:auto;padding-top:.45rem}
+.kc-actions button,.kc-add,.kc-button,.kc-app button{font:600 var(--fs-ui) var(--sans);min-height:40px;padding:0 .85rem;border-radius:999px;cursor:pointer}
+.kc-good{border:1px solid var(--accent-deep);background:var(--accent-deep);color:#fff}
+.kc-good:hover{background:var(--accent)}
+.kc-again{border:1px solid #b4532a;background:var(--surface);color:#8a3b1a}
+.kc-again:hover{background:#fff4ec}
+.kc-actions button:disabled{opacity:.55;cursor:default}
+.kc-status{margin:0;font-size:var(--fs-small);color:var(--ink-2);min-height:1.2em}
+.kc-status:empty{display:none}
+.kc-card.in-deck .kc-face{border-color:#e0a77f;box-shadow:inset 4px 0 0 #d9822b,0 6px 18px rgba(20,23,30,.06)}
+@media (prefers-reduced-motion:reduce){.kc-inner{transition:none}}
+/* the bold terms and the chips of Teoriatiivistelmä */
+strong.kc-ready{font-weight:inherit}
+.kc-term-btn{font:inherit;font-weight:700;color:inherit;background:none;border:0;padding:0;margin:0;cursor:pointer;
+  text-decoration:underline dotted;text-decoration-color:var(--accent);text-decoration-thickness:2px;text-underline-offset:.22em}
+.kc-term-btn:hover,.kc-term-btn[aria-expanded="true"]{color:var(--accent-deep);text-decoration-style:solid}
+.kc-chips{margin:1rem 0 0;padding:.75rem 1rem .85rem;border-radius:var(--inner-radius);background:var(--bg-tint)}
+.kc-chips-label{margin:0 0 .5rem;font:700 var(--fs-ui) var(--sans);color:var(--ink-2)}
+.kc-chip-list{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:.4rem}
+.kc-chip-list li{margin:0}
+.kc-chip{min-height:40px;padding:0 .9rem;border:1px solid var(--line);border-radius:999px;background:var(--surface);color:var(--ink);font:600 var(--fs-ui) var(--sans);cursor:pointer;
+  text-decoration:underline dotted;text-decoration-color:var(--accent);text-underline-offset:.2em}
+.kc-chip:hover,.kc-chip[aria-expanded="true"]{border-color:var(--accent);color:var(--accent-deep)}
+.kc-pop{position:absolute;z-index:70;box-sizing:border-box;padding:.9rem 1.1rem 1rem;background:var(--surface);border:1px solid var(--line);border-radius:14px;
+  box-shadow:0 14px 36px rgba(20,23,30,.18);font-size:var(--fs-inner);line-height:1.5}
+.kc-pop-term{margin:0 2.2rem .3rem 0;font:600 1.125rem/1.3 var(--serif)}
+.kc-pop .kc-def{margin:0 0 .4rem}
+.kc-pop-close{position:absolute;top:.4rem;right:.4rem;width:40px;height:40px;border:0;border-radius:999px;background:none;font:400 1.5rem/1 var(--sans);color:var(--ink-2);cursor:pointer}
+.kc-pop-close:hover{background:var(--bg-tint)}
+.kc-add{margin-top:.35rem;border:1px solid var(--accent-deep);background:var(--surface);color:var(--accent-deep)}
+.kc-add[aria-pressed="true"]{background:var(--accent-soft)}
+.kc-pop .kc-status{margin-top:.4rem}
+/* the module page's deck, Sovella itsenäisesti and Käsitetakomo */
+.kc-deck .kc-deck-count{margin:0 0 .7rem}
+.kc-button{display:inline-flex;align-items:center;border:1px solid var(--accent-deep);background:var(--accent-deep);color:#fff;text-decoration:none}
+.kc-button:hover{background:var(--accent)}
+.kc-practice{margin:2rem 0 1rem;padding:1.1rem 1.25rem 1rem;border:1px solid #e9cdb6;border-radius:var(--card-radius);background:#fffaf4}
+.kc-practice h2{margin-top:0}.kc-practice .kc-intro,.kc-section .kc-intro,.kc-deck p{max-width:var(--measure)}
+.kc-app-head h1{margin-bottom:.3rem}
+.kc-app h2{font-size:var(--fs-h2);margin:1.2rem 0 .8rem}
+.kc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(10.5rem,1fr));gap:.7rem}
+.kc-tile{display:flex;flex-direction:column;align-items:flex-start;gap:.2rem;padding:.9rem 1rem!important;min-height:7rem!important;border-radius:var(--card-radius)!important;
+  border:1px solid var(--line);background:var(--surface);color:var(--ink);text-align:left}
+.kc-tile:hover:not(:disabled){border-color:var(--accent)}
+.kc-tile:disabled{opacity:.6;cursor:default}
+.kc-tile-code{font:800 1.5rem/1 var(--sans);color:var(--brand-green)}
+.kc-tile-name{font:600 var(--fs-ui)/1.35 var(--sans)}
+.kc-tile-count{margin-top:auto;font:500 var(--fs-small) var(--sans);color:var(--ink-2)}
+.kc-back-btn{border:1px solid var(--line);background:var(--surface);color:var(--accent-deep)}
+.kc-topics{display:grid;gap:.45rem}
+.kc-topic{display:flex;gap:.45rem;align-items:stretch}
+.kc-topic-main{flex:1;display:flex;align-items:center;gap:.6rem;text-align:left;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:12px!important;min-height:48px!important}
+.kc-topic-main:hover{border-color:var(--accent)}
+.kc-topic-all .kc-topic-main{background:var(--accent-soft)}
+.kc-topic-label{flex:1}
+.kc-topic-n{font:500 var(--fs-small) var(--sans);color:var(--ink-2)}
+.kc-go{color:var(--accent-deep)}
+.kc-pick{width:48px;padding:0!important;border:2px solid var(--line);background:var(--surface);color:transparent;border-radius:999px!important}
+.kc-pick[aria-pressed="true"]{background:var(--accent-deep);border-color:var(--accent-deep);color:#fff}
+.kc-topic.is-chosen .kc-topic-main{border-color:var(--accent-deep)}
+.kc-startbar{display:flex;flex-wrap:wrap;gap:.5rem;margin:.9rem 0 0}
+.kc-start{border:1px solid var(--accent-deep);background:var(--accent-deep);color:#fff}
+.kc-clear{border:1px solid var(--line);background:var(--surface);color:var(--ink-2)}
+.kc-tip{font-size:var(--fs-small);color:var(--ink-2);margin:.8rem 0 0}
+.kc-mode{display:flex;flex-wrap:wrap;gap:.4rem;margin:1rem 0 0}
+.kc-mode button{border:1px solid var(--line);background:var(--surface);color:var(--ink-2)}
+.kc-mode button[aria-pressed="true"]{border-color:var(--accent-deep);background:var(--accent-soft);color:var(--accent-deep)}
+.kc-studybar{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:.3rem 1rem;margin-top:1rem}
+.kc-studybar h2{margin:0;font-size:var(--fs-h3)}
+.kc-tally{font:600 var(--fs-small) var(--sans);color:var(--ink-2)}
+.kc-track{height:6px;border-radius:999px;background:var(--line-2);margin:.6rem 0 1.2rem;overflow:hidden}
+.kc-fill{height:100%;width:0;background:var(--accent);transition:width .3s}
+.kc-study .kc-face,.kc-study .kc-back{min-height:17rem}
+.kc-study .kc-front.is-term{font-size:1.75rem;justify-content:center;text-align:center;width:100%}
+.kc-done{text-align:center;padding:1.5rem 1rem;border:1px solid var(--line);border-radius:var(--card-radius);background:var(--surface)}
+.kc-done-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:.5rem;margin-top:1rem}
+.kc-done-actions button{border:1px solid var(--line);background:var(--surface);color:var(--ink)}
+.kc-done-actions button.kc-primary{border-color:var(--accent-deep);background:var(--accent-deep);color:#fff}
+.kc-static-module h2{margin-top:2rem}
+@media print{.kc-chips,.kc-pop,.kc-turn,.kc-actions,.kc-face{display:none!important}.kc-inner{transform:none!important}.kc-back{transform:none;backface-visibility:visible;-webkit-backface-visibility:visible;min-height:0}}
