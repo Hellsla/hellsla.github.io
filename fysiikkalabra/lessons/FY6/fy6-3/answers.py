@@ -26,4 +26,15 @@ Rs = [2.00 / I for I in Is]                            # R = U / I: 2,198; 4,348
 k = sum(l * R for l, R in zip(ls, Rs)) / sum(l * l for l in ls)   # least-squares slope through the origin, R / l = 5,47 Ω/m
 a["fy6-3-L3-02"] = k * 0.20e-6 * 1e6                   # ρ = (R / l) · A = 5,47 Ω/m · 0,20·10⁻⁶ m² = 1,09·10⁻⁶ Ω·m -> 1,1 µΩ·m
 a["fy6-3-L3-03"] = 3.0 / 1.0                           # lamp switched on cold: I = U / R_cold = 3,0 V / 1,0 Ω = 3,0 A (12 times the running 0,25 A)
+# Exercise bank additions (teacher 2026-11-04): L1-06 and L1-07 are multiple choice (no number)
+a["fy6-3-L1-08"] = 4.5 / (2 * (4.5 / 0.60))            # copper wire twice as long: R2 = 2 R1 = 2 · 7,5 Ω = 15 Ω, I2 = 4,5 V / 15 Ω = 0,30 A
+U5 = [1, 2, 3, 4, 5, 6, 7, 8]; I5 = [6.6, 13.5, 19.8, 26.9, 33.1, 40.2, 46.3, 53.6]   # mA, resistor U-I table
+a["fy6-3-L2-05"] = sum(u * i * 1e-3 for u, i in zip(U5, I5)) / sum((i * 1e-3) ** 2 for i in I5)   # slope through the origin (least squares) 150,0 Ω
+Ul = [1, 2, 3, 4, 5]; Il = [0.098, 0.146, 0.187, 0.221, 0.248]      # lamp, A
+a["fy6-3-L2-06"] = (Ul[-1] / Il[-1]) / (Ul[0] / Il[0])              # R(5,0 V) / R(1,0 V) = 20,2 Ω / 10,2 Ω = 1,98 -> 2,0
+Re = [u / i for u, i in zip([1.0, 2.0, 3.0, 4.0], [0.20, 0.41, 0.61, 0.81])]   # 5,00; 4,88; 4,92; 4,94 Ω (0 V point excluded: 0 : 0)
+a["fy6-3-L2-07"] = sum(Re) / len(Re)                                 # sum 19,74 Ω, mean 4,93 Ω -> 4,9 Ω
+a["fy6-3-L3-04"] = 1.5 / 2.5e-3                                      # diode C at U = 1,5 V, I = 2,5 mA: R = 600 Ω (lamp B 1,5 V / 57 mA = 26 Ω, resistor A 75 Ω)
+Rt = [1.00 / i for i in (0.500, 0.442, 0.398, 0.362)]                # iron wire R = U / I at 20, 40, 60, 80 °C
+a["fy6-3-L3-05"] = (Rt[-1] / Rt[0] - 1) * 100                        # increase 20 -> 80 °C: 2,762 / 2,000 - 1 = 38,1 %
 print(json.dumps({k_: round(v, 6) for k_, v in a.items()}))
