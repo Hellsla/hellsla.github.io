@@ -611,7 +611,6 @@ def build_language(lang):
         solutions = solutions_of(sol_text) if publish != "none" else {}
         ex_html = "" if ex else f'<p class="notice" role="note">{T("lesson.exercises_pending")}</p>'
         core = core_ids(ex)
-        if ex: ex_html += f'<p class="ex-path">{T("lesson.exercise_path")}</p>'
         for lvl, items in ex.items():
             ex_html += (f"<details class=\"level\"><summary>{T('lesson.level', n=lvl[-1])} · {T('lesson.level_kind_' + lvl[-1])} "
                         f"<span class=\"count\">{T.count('lesson.level_count', len(items))}</span></summary><p class=\"level-lead\">{T('lesson.level_lead_' + lvl[-1])}</p><ol>")
@@ -631,7 +630,6 @@ def build_language(lang):
         if inq is not None:
             errs = inquiry.validate(folder, inq, lesson_md)
             if errs: sys.exit("\n".join(errs))
-        howto = f'<p class="howto">{T("lesson.check_howto")}</p>'
         sim = ""
         where = courses.sim_dir(folder, meta)
         if where and where[0] == "lesson":                # FY3: sim.js in the lesson folder, published as <id>-sim.js
@@ -664,7 +662,7 @@ def build_language(lang):
                    + f'<a href="#exit">{inquiry.exit_title()}</a>' + (concept_cards.lesson_nav(T) if kc_section else "") + f'<a href="#exercises">{inquiry.exercises_title()}</a>')
             main = (f'<article id="teoria">{lesson_html}</article>\n'
                     f'<section id="exit"><h2>{inquiry.exit_title()}</h2>{exit_items}</section>\n' + kc_section +
-                    f'<section id="exercises"><h2>{inquiry.exercises_title()}</h2>{howto if ex else ""}{ex_html}</section>{photo_tail}')
+                    f'<section id="exercises"><h2>{inquiry.exercises_title()}</h2>{ex_html}</section>{photo_tail}')
         else:                                             # inquiry layout: the same parts placed by inquiry.json (scripts/inquiry.py)
             lesson_html = lesson_raw.replace("<!-- sim -->", "")
             pieces = re.split(r"(?=<h2[ >])", lesson_html)
@@ -677,7 +675,7 @@ def build_language(lang):
             if kc_section and "Tiivistelmä" in sections:   # the chapter's concept chips after the summary list (concept_cards.chips)
                 tv = sections["Tiivistelmä"]; kc = concept_cards.chips(meta["course"], meta["id"], T, lang)
                 sections["Tiivistelmä"] = tv.replace("</ul>", "</ul>" + kc, 1) if "</ul>" in tv else tv + kc
-            parts = {"intro": intro, "sections": sections, "sim": sim, "exercises": f'{howto if ex else ""}{ex_html}',
+            parts = {"intro": intro, "sections": sections, "sim": sim, "exercises": ex_html,
                      "concepts": inquiry.key_concepts_html(meta["id"], meta.get("key_concepts"), lambda t: nbsp_units(render_md(t))),   # Selkeä suomi only (NOTES.md §12)
                      "exit": f'<div id="exit"><h3>{inquiry.exit_title()}</h3>{exit_items}</div>', "cards": kc_section,
                      "cards_nav": concept_cards.lesson_nav(T) if kc_section else ""}
