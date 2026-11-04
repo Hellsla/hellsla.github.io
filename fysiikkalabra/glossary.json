@@ -1728,7 +1728,8 @@
     "term": "kvarkki",
     "definition": "Alkeishiukkanen, josta protonit ja neutronit koostuvat, kumpikin kolmesta. Kvarkille ei ole mitattu kokoa: kokeiden mukaan se on pienempi kuin noin 10⁻¹⁸ m.",
     "lessons": [
-      "fy1-1"
+      "fy1-1",
+      "fy8-15"
     ],
     "see_also": [
       "protoni",
@@ -1861,7 +1862,8 @@
     "term": "perusvuorovaikutus",
     "definition": "Yksi neljästä vuorovaikutuksesta, joihin kaikki tunnetut vuorovaikutukset palautuvat: gravitaatio, sähkömagneettinen, vahva ja heikko vuorovaikutus.",
     "lessons": [
-      "fy1-1"
+      "fy1-1",
+      "fy8-15"
     ],
     "see_also": [
       "gravitaatio",
@@ -4364,6 +4366,103 @@
     ],
     "see_also": [
       "ionisoiva säteily"
+    ],
+    "locked": false
+  },
+  {
+    "term": "standardimalli",
+    "definition": "Hiukkasfysiikan teoria, joka kuvaa aineen perushiukkaset (kuusi kvarkkia ja kuusi leptonia), niiden välittäjähiukkaset ja Higgsin bosonin sekä vahvan, sähkömagneettisen ja heikon vuorovaikutuksen. Gravitaatio ei kuulu standardimalliin.",
+    "lessons": [
+      "fy8-15"
+    ],
+    "see_also": [
+      "kvarkki",
+      "leptoni",
+      "välittäjähiukkanen",
+      "perusvuorovaikutus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "leptoni",
+    "definition": "Perushiukkanen, johon vahva vuorovaikutus ei vaikuta: elektroni, myoni ja tau, joiden varaus on $-e$, sekä niiden kolme sähköisesti neutraalia neutriinoa. Leptonin leptoniluku on $+1$ ja antileptonin $-1$.",
+    "lessons": [
+      "fy8-15"
+    ],
+    "see_also": [
+      "standardimalli",
+      "kvarkki"
+    ],
+    "locked": false
+  },
+  {
+    "term": "välittäjähiukkanen",
+    "definition": "Hiukkanen, jonka välityksellä perusvuorovaikutus vaikuttaa hiukkasten välillä: fotoni välittää sähkömagneettisen, gluoni vahvan ja $W$- ja $Z$-bosonit heikon vuorovaikutuksen. Gravitaation välittäjä gravitoni on hypoteettinen.",
+    "lessons": [
+      "fy8-15"
+    ],
+    "see_also": [
+      "perusvuorovaikutus",
+      "fotoni",
+      "standardimalli"
+    ],
+    "locked": false
+  },
+  {
+    "term": "punasiirtymä",
+    "definition": "Spektriviivojen siirtymä pidempiin aallonpituuksiin: $z = \\tfrac{\\Delta\\lambda}{\\lambda_0}$, missä $\\lambda_0$ on viivan aallonpituus laboratoriossa. Kaukaisten galaksien punasiirtymä syntyy, kun avaruuden laajeneminen venyttää valon aallonpituutta; pienellä punasiirtymällä etääntymisnopeus on $v = cz$.",
+    "lessons": [
+      "fy8-16"
+    ],
+    "see_also": [
+      "alkuräjähdys",
+      "absorptiospektri"
+    ],
+    "locked": false
+  },
+  {
+    "term": "alkuräjähdys",
+    "definition": "Maailmankaikkeuden laajenemisen alku noin 13,8 miljardia vuotta sitten hyvin kuumasta ja tiheästä tilasta. Se ei ollut räjähdys tyhjään avaruuteen jostakin pisteestä, vaan avaruus itse alkoi laajeta kaikkialla.",
+    "lessons": [
+      "fy8-16"
+    ],
+    "see_also": [
+      "punasiirtymä",
+      "kosminen taustasäteily"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kosminen taustasäteily",
+    "definition": "Joka suunnasta lähes tasaisesti tuleva mikroaaltosäteily, joka vapautui noin 380 000 vuotta alkuräjähdyksen jälkeen, kun atomit syntyivät ja maailmankaikkeus muuttui läpinäkyväksi. Laajeneminen on venyttänyt sen aallonpituudet noin 1100-kertaisiksi; sen lämpötila on nyt $2{,}725\\,\\text{K}$.",
+    "lessons": [
+      "fy8-16"
+    ],
+    "see_also": [
+      "alkuräjähdys"
+    ],
+    "locked": false
+  },
+  {
+    "term": "pimeä aine",
+    "definition": "Näkymätön aine, joka ei säteile eikä absorboi valoa mutta vaikuttaa painovoimallaan: se selittää esimerkiksi, miksi galaksien laitamien tähdet kiertävät niin nopeasti. Sitä on noin viisi kertaa niin paljon kuin tavallista ainetta, eikä tiedetä, mistä se koostuu.",
+    "lessons": [
+      "fy8-16"
+    ],
+    "see_also": [
+      "pimeä energia"
+    ],
+    "locked": false
+  },
+  {
+    "term": "pimeä energia",
+    "definition": "Tuntematon tekijä, joka kiihdyttää maailmankaikkeuden laajenemista. Kiihtyminen havaittiin kaukaisten supernovien mittauksista vuonna 1998; pimeää energiaa on noin $69\\,\\%$ maailmankaikkeuden energiasisällöstä.",
+    "lessons": [
+      "fy8-16"
+    ],
+    "see_also": [
+      "pimeä aine",
+      "alkuräjähdys"
     ],
     "locked": false
   }

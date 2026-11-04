@@ -1,0 +1,345 @@
+{
+  "version": 1,
+  "contribution": "Vie aineen rakenteen ytimestä perushiukkasiin: kvarkit, leptonit, hadronien varaukset kvarkeista, neljä perusvuorovaikutusta välittäjineen, antihiukkaset ja annihilaatio sekä varauksen, baryoniluvun ja leptoniluvun säilyminen hiukkasreaktioissa; beetahajoaminen kvarkkitasolla ja Higgsin bosoni.",
+  "learn": [
+    "luokittelemaan perushiukkaset kvarkeiksi, leptoneiksi ja välittäjähiukkasiksi ja nimeämään neljän perusvuorovaikutuksen välittäjät.",
+    "laskemaan hadronin varauksen ja baryoniluvun sen kvarkeista ja päättelemään säilymislaeista, onko hiukkasreaktio mahdollinen.",
+    "selittämään beeta miinus -hajoamisen kvarkkitasolla sekä hiukkasen ja antihiukkasen annihilaation."
+  ],
+  "prior": [
+    "Beeta miinus -hajoamisessa ytimen neutroni muuttuu protoniksi, ja syntyy elektroni ja antineutriino (luku *Atomiydin ja radioaktiivinen hajoaminen*)",
+    "Massan ja energian ekvivalenssi $E = mc^2$, ja massa voidaan ilmoittaa yksikössä $\\tfrac{\\text{MeV}}{c^2}$ (luku *Massavaje ja ytimen sidosenergia*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Ytimestä irrotettu vapaa neutroni ei säily: keskimäärin noin $15\\,\\text{min}$ kuluttua se on muuttunut protoniksi, elektroniksi ja antineutriinoksi. Protonin hajoamista on etsitty vuosikymmeniä valtavilla vesisäiliöillä, joissa on yli $10^{33}$ protonia, eikä yhtään hajoamista ole nähty. Protoni ja neutroni ovat kuitenkin lähes yhtä raskaita, ja molemmat koostuvat kolmesta kvarkista.",
+      "question": "Mikä tekee neutronista epävakaan mutta protonista niin pysyvän?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Kertaa: beeta miinus -hajoaminen",
+      "optional": true,
+      "prompt": "Hiili-14-ydin hajoaa beeta miinus -hajoamisella: ${}^{14}_{6}\\text{C} \\to {}^{14}_{7}\\text{N} + e^- + \\bar{\\nu}$. Mitä ytimessä tapahtuu?",
+      "choices": [
+        {
+          "text": "Yksi neutroni muuttuu protoniksi, ja elektroni ja antineutriino syntyvät.",
+          "correct": true,
+          "feedback": "Oikein (luku *Atomiydin ja radioaktiivinen hajoaminen*): järjestysluku kasvaa yhdellä ja massaluku pysyy, koska neutroni muuttuu protoniksi. Tänään katsotaan, mitä neutronin sisällä tapahtuu."
+        },
+        {
+          "text": "Ytimessä valmiina ollut elektroni lähtee, ja ydin jää ennalleen.",
+          "feedback": "Ytimessä ei ole elektroneja. Ydin ei myöskään jää ennalleen: hiilestä tulee typpeä, eli protoneja on yksi enemmän."
+        },
+        {
+          "text": "Yksi protoni muuttuu neutroniksi, ja ytimestä lähtee elektroni.",
+          "feedback": "Silloin järjestysluku pienenisi. Tässä se kasvaa arvosta $6$ arvoon $7$, joten neutroni muuttuu protoniksi."
+        },
+        {
+          "text": "Ydin menettää yhden neutronin, joten massaluku pienenee yhdellä.",
+          "feedback": "Massaluku pysyy arvossa $14$. Neutroni ei lähde ytimestä vaan muuttuu protoniksi."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 1: kvarkkien varaukset",
+      "justify": true,
+      "reveal": {
+        "after": "teoria-osa",
+        "pending": "Palaute avautuu, kun olet lukenut teoriaosan."
+      },
+      "prompt": "Protoni koostuu kolmesta kvarkista $u\\,u\\,d$ ja neutroni kvarkeista $u\\,d\\,d$. Protonin varaus on $+e$ ja neutronin $0$. Mitkä kvarkkien varaukset sopivat molempiin?",
+      "choices": [
+        {
+          "text": "$u$-kvarkin varaus on $+\\tfrac{2}{3}e$ ja $d$-kvarkin $-\\tfrac{1}{3}e$.",
+          "correct": true,
+          "feedback": "Taulukko ja teoria tukevat tätä: protonissa $\\tfrac{2}{3} + \\tfrac{2}{3} - \\tfrac{1}{3} = 1$ ja neutronissa $\\tfrac{2}{3} - \\tfrac{1}{3} - \\tfrac{1}{3} = 0$. Myös hiukkaset $\\Delta^{++} = uuu$ ($+2e$) ja $\\Delta^- = ddd$ ($-e$) sopivat."
+        },
+        {
+          "text": "$u$-kvarkin varaus on $+e$ ja $d$-kvarkin $0$.",
+          "feedback": "Tämä ei toimi: protoni $uud$ saisi varauksen $+2e$ ja neutroni $udd$ varauksen $+e$. Mitattu varaus vaatii murto-osan alkeisvarauksesta."
+        },
+        {
+          "text": "$u$-kvarkin varaus on $+e$ ja $d$-kvarkin $-e$.",
+          "feedback": "Tämä ei toimi: protoni saisi $1 + 1 - 1 = +1$, mutta neutroni $1 - 1 - 1 = -1$, vaikka neutroni on neutraali."
+        },
+        {
+          "text": "Kaikkien kvarkkien varaus on $+\\tfrac{1}{3}e$.",
+          "feedback": "Silloin protonilla ja neutronilla olisi sama varaus $+e$. Kvarkeilla $u$ ja $d$ on oltava eri varaukset, koska ne erottavat protonin neutronista."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 2: miksi protoni ei hajoa?",
+      "justify": true,
+      "layout": "models",
+      "reveal": {
+        "after": "teoria-osa",
+        "pending": "Palaute avautuu, kun olet lukenut teoriaosan."
+      },
+      "prompt": "Opiskelijat selittävät, miksi neutroni hajoaa mutta protoni ei. Kenen selitys on mielestäsi oikea?",
+      "choices": [
+        {
+          "text": "Aino: Protoni on kevyin kolmen kvarkin hiukkanen. Tällaisten hiukkasten määrä ei muutu, joten protonille ei ole kevyempää tuotetta.",
+          "correct": true,
+          "feedback": "Teoria tukee tätä: baryoniluku säilyy, joten protonin hajoamistuotteissa pitäisi olla baryoni. Protoni on kevyin baryoni, ja hajoaminen vaatii, että tuotteet ovat kevyempiä. Neutroni on protonia raskaampi, joten se voi hajota protoniksi."
+        },
+        {
+          "text": "Bea: Protoni on alkeishiukkanen, jolla ei ole osia, joten se ei voi muuttua miksikään muuksi hiukkaseksi.",
+          "feedback": "Teoria kumoaa tämän: protoni koostuu kolmesta kvarkista kuten neutronikin. Esteenä on baryoniluvun säilyminen ja se, että protoni on kevyin baryoni."
+        },
+        {
+          "text": "Eetu: Protonin positiivinen varaus pitää sen kvarkit koossa, mutta neutraalissa neutronissa tätä voimaa ei ole.",
+          "feedback": "Kvarkit pitää koossa vahva vuorovaikutus, joka on sama protonissa ja neutronissa. Sähköinen voima ei estä hajoamista; sen estää baryoniluvun säilyminen yhdessä massojen kanssa."
+        },
+        {
+          "text": "Kalle: Protoni hajoaa yhtä usein kuin neutroni, mutta sen hajoamistuotteet ovat niin kevyitä, ettei niitä havaita.",
+          "feedback": "Jos protonit hajoaisivat vartissa, ainetta ei olisi. Kokeiden mukaan protonin elinikä on yli $10^{34}$ vuotta. Hajoamisen estää baryoniluvun säilyminen."
+        }
+      ]
+    },
+    {
+      "id": "kvarkit",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Hadronien varaukset ja kvarkit",
+      "source": "measured",
+      "source_note": "Varaukset ja kvarkkisisällöt: Particle Data Group, Review of Particle Physics 2024.",
+      "text": "Taulukossa on kuuden hadronin kvarkkisisältö ja mitattu varaus. Viiva kirjaimen päällä tarkoittaa antikvarkkia, jonka varaus on vastakkainen kuin kvarkin.\n\n| Hiukkanen | Kvarkit | Mitattu varaus |\n| --- | --- | --- |\n| protoni $p$ | $u\\,u\\,d$ | $+1\\,e$ |\n| neutroni $n$ | $u\\,d\\,d$ | $0$ |\n| delta $\\Delta^{++}$ | $u\\,u\\,u$ | $+2\\,e$ |\n| delta $\\Delta^{-}$ | $d\\,d\\,d$ | $-1\\,e$ |\n| pioni $\\pi^+$ | $u\\,\\bar{d}$ | $+1\\,e$ |\n| pioni $\\pi^-$ | $d\\,\\bar{u}$ | $-1\\,e$ |",
+      "question": {
+        "type": "numeric",
+        "prompt": "Päättele taulukosta $u$-kvarkin varaus alkeisvarauksen $e$ monikertana. Vastaa desimaalilukuna.",
+        "answer": 0.667,
+        "unit": "e",
+        "tolerance": 0.02,
+        "hints": [
+          "Etsi taulukosta hiukkanen, jossa on vain yhtä kvarkkilajia.",
+          "Hiukkasessa $\\Delta^{++}$ on kolme $u$-kvarkkia ja varaus $+2e$.",
+          "Jaa varaus kolmen kvarkin kesken: $2 : 3$."
+        ],
+        "mistakes": [
+          {
+            "value": 2,
+            "feedback": "Tämä on kolmen $u$-kvarkin yhteinen varaus. Yhden kvarkin varaus on kolmasosa siitä."
+          },
+          {
+            "value": 1,
+            "feedback": "Protonin varaus $+e$ jakautuu kolmelle kvarkille, joista yksi on $d$. Katso hiukkasta, jossa on vain $u$-kvarkkeja."
+          }
+        ],
+        "solution": "**Annettu:** taulukosta $\\Delta^{++} = u\\,u\\,u$, varaus $q = +2\\,e$\n\n**Kysytty:** yhden $u$-kvarkin varaus $q_u$ alkeisvarauksen monikertana\n\n**Periaate:** Hadronin varaus on sen kvarkkien varausten summa, koska varaus on additiivinen suure. Hiukkasessa $\\Delta^{++}$ on kolme samanlaista $u$-kvarkkia, joten jokaisella on kolmasosa varauksesta.\n\n**Kaava:** $q = 3\\,q_u$, josta $q_u = \\dfrac{q}{3}$\n\n**Muunnokset:** Ei tarvita, koska varaukset ovat alkeisvarauksen $e$ monikertoja.\n\n**Sijoitus:** $q_u = \\dfrac{+2\\,e}{3} = +0{,}667\\,e$\n\n**Vastaus:** $+0{,}667\\,e$ eli tarkasti $+\\tfrac{2}{3}e$; murtoluku on tarkka, koska varaukset ovat kokonaislukuja, ja desimaaleja on kolme.\n\n**Järkevyys:** Hiukkasesta $\\Delta^- = d\\,d\\,d$ saadaan samoin $q_d = -\\tfrac{1}{3}e$. Protonille tulee silloin $\\tfrac{2}{3} + \\tfrac{2}{3} - \\tfrac{1}{3} = 1$ ja neutronille $\\tfrac{2}{3} - \\tfrac{1}{3} - \\tfrac{1}{3} = 0$, kuten taulukossa, ja pionille $\\pi^+ = u\\bar{d}$ tulee $\\tfrac{2}{3} + \\tfrac{1}{3} = 1$."
+      }
+    },
+    {
+      "id": "reaktiot",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Mitkä reaktiot tapahtuvat?",
+      "source": "measured",
+      "source_note": "Havainnot: Particle Data Group, Review of Particle Physics 2024; antineutriinon reaktio Cowan ja Reines 1956; protonin hajoamisen etsintä Super-Kamiokande-koe.",
+      "text": "Ensimmäisessä taulukossa on hiukkasten varaus $q$ alkeisvarauksina, baryoniluku $B$ ja leptoniluku $L$. Toisessa taulukossa on reaktioita, joista osa on havaittu ja osaa ei ole havaittu koskaan. Laske jokaisen reaktion kummallekin puolelle $q$:n, $B$:n ja $L$:n summa.\n\n| Hiukkanen | $q$ | $B$ | $L$ |\n| --- | --- | --- | --- |\n| $p$ | $+1$ | $1$ | $0$ |\n| $n$ | $0$ | $1$ | $0$ |\n| $e^-$ | $-1$ | $0$ | $1$ |\n| $e^+$ | $+1$ | $0$ | $-1$ |\n| $\\bar{\\nu}_e$ | $0$ | $0$ | $-1$ |\n| $\\pi^0$, $\\gamma$ | $0$ | $0$ | $0$ |\n\n| Reaktio | Havaittu? |\n| --- | --- |\n| $n \\to p + e^- + \\bar{\\nu}_e$ | kyllä |\n| $n \\to p + e^-$ | ei koskaan |\n| $e^- + e^+ \\to \\gamma + \\gamma$ | kyllä |\n| $\\bar{\\nu}_e + p \\to n + e^+$ | kyllä |\n| $p + p \\to p + p + \\pi^0$ | kyllä |\n| $p + p \\to p + p + n$ | ei koskaan |\n| $p \\to e^+ + \\pi^0$ | ei koskaan, vaikka sitä on etsitty |",
+      "question": {
+        "type": "choice",
+        "prompt": "Reaktiossa $n \\to p + e^-$ olisi energiaa riittävästi, mutta sitä ei ole havaittu. Mikä taulukon luvuista ei säily?",
+        "choices": [
+          {
+            "text": "Leptoniluku: alussa $L = 0$, lopussa $L = 1$.",
+            "correct": true,
+            "feedback": "Oikein. Elektronin leptoniluku on $1$, joten lopussa tarvitaan antineutriino, jonka $L = -1$. Siksi havaittu hajoaminen on $n \\to p + e^- + \\bar{\\nu}_e$."
+          },
+          {
+            "text": "Varaus: alussa $q = 0$, lopussa $q = +2$.",
+            "feedback": "Varaus säilyy: $0 = (+1) + (-1)$. Elektronin varaus on negatiivinen. Laske vielä leptoniluku."
+          },
+          {
+            "text": "Baryoniluku: alussa $B = 1$, lopussa $B = 2$.",
+            "feedback": "Elektroni ei ole baryoni, joten sen $B = 0$. Baryoniluku säilyy: $1 = 1 + 0$. Ero on leptoniluvussa."
+          },
+          {
+            "text": "Kaikki kolme lukua säilyvät; reaktio on vain hyvin harvinainen.",
+            "feedback": "Leptoniluku ei säily: alussa $0$, lopussa elektronin $1$. Tällaista reaktiota ei ole havaittu kertaakaan."
+          }
+        ]
+      }
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös: mikä erottaa havaitut reaktiot?",
+      "prompt": "Vertaa taulukon havaittuja ja havaitsemattomia reaktioita. Mitkä luvut säilyvät kaikissa havaituissa reaktioissa? Nimeä jokaisesta havaitsemattomasta reaktiosta luku, joka ei säily.",
+      "model": "Kaikissa havaituissa reaktioissa varauksen, baryoniluvun ja leptoniluvun summa on alussa ja lopussa sama. Esimerkiksi $\\bar{\\nu}_e + p \\to n + e^+$: $q$ on $0 + 1 = 0 + 1$, $B$ on $0 + 1 = 1 + 0$ ja $L$ on $-1 + 0 = 0 + (-1)$. Havaitsemattomissa reaktioissa jokin luku muuttuu: reaktiossa $n \\to p + e^-$ leptoniluku muuttuu arvosta $0$ arvoon $1$, reaktiossa $p + p \\to p + p + n$ baryoniluku muuttuu arvosta $2$ arvoon $3$, ja reaktiossa $p \\to e^+ + \\pi^0$ baryoniluku muuttuu arvosta $1$ arvoon $0$ ja leptoniluku arvosta $0$ arvoon $-1$. Varaus säilyy kaikissa taulukon reaktioissa, joten pelkkä varaus ei riitä erottamaan niitä.",
+      "criteria": [
+        "Totesin, että havaituissa reaktioissa varaus, baryoniluku ja leptoniluku säilyvät.",
+        "Nimesin reaktiolle $n \\to p + e^-$ leptoniluvun ja reaktiolle $p + p \\to p + p + n$ baryoniluvun.",
+        "Nimesin reaktiolle $p \\to e^+ + \\pi^0$ baryoniluvun tai leptoniluvun."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Palaa ennusteisiisi",
+      "optional": true,
+      "prompt": "Vertaa ennusteitasi taulukoihin ja teoriaan. Palaa sitten alun kysymykseen: miksi neutroni voi hajota protoniksi mutta protoni ei voi hajota miksikään?",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2"
+      ]
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe",
+      "optional": true,
+      "prompt": "Opiskelija kirjoittaa elektronikaappauksen, jossa ytimen protoni sieppaa atomin elektronin, näin:\n\n$$p + e^- \\to n + \\bar{\\nu}_e$$\n\nHän perustelee, että beetahajoamisessakin syntyy antineutriino. Missä on virhe?",
+      "choices": [
+        {
+          "text": "Leptoniluku ei säily: vasemmalla $L = 1$, oikealla $L = -1$.",
+          "correct": true,
+          "feedback": "Oikein. Lopussa on oltava neutriino, jonka $L = 1$: $p + e^- \\to n + \\nu_e$. Beeta miinus -hajoamisessa antineutriino tarvitaan, koska siinä elektroni syntyy; tässä elektroni häviää."
+        },
+        {
+          "text": "Varaus ei säily: vasemmalla $q = +2$, oikealla $q = 0$.",
+          "feedback": "Elektronin varaus on $-1$, joten vasemmalla $q = +1 - 1 = 0$, kuten oikealla. Virhe on leptoniluvussa."
+        },
+        {
+          "text": "Baryoniluku ei säily, koska neutroni on raskaampi kuin protoni.",
+          "feedback": "Baryoniluku on $1$ molemmin puolin; se ei riipu massasta. Virhe on leptoniluvussa: oikealla tarvitaan neutriino."
+        },
+        {
+          "text": "Yhtälö on oikein, koska antineutriinon varaus on nolla.",
+          "feedback": "Varaus kyllä säilyy, mutta leptoniluku ei: vasemmalla elektronin $L = 1$, oikealla antineutriinon $L = -1$."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Sovella uuteen tilanteeseen",
+      "prompt": "Kosmisen säteilyn törmäyksissä yläilmakehässä syntyy myoneja, joita tulee maanpinnalle jatkuvasti. Myoni hajoaa reaktiolla $\\mu^- \\to e^- + \\bar{\\nu}_e + \\nu_\\mu$. Kuinka paljon energiaa hajoamisessa vapautuu? Massat ovat $m_\\mu = 105{,}658\\,\\tfrac{\\text{MeV}}{c^2}$ ja $m_e = 0{,}511\\,\\tfrac{\\text{MeV}}{c^2}$; neutriinojen massat ovat merkityksettömän pieniä. Vastaa megaelektronivoltteina.",
+      "answer": 105.1,
+      "unit": "MeV",
+      "tolerance": 0.002,
+      "hints": [
+        "Vapautuva energia on massojen erotusta vastaava energia $Q = (m_\\text{alku} - m_\\text{loppu})\\,c^2$.",
+        "Alussa on vain myoni, lopussa elektroni ja kaksi neutriinoa, joiden massat jätetään pois.",
+        "$Q = (105{,}658 - 0{,}511)\\,\\text{MeV}$."
+      ],
+      "mistakes": [
+        {
+          "value": 106.2,
+          "feedback": "Laskit massat yhteen. Vapautuva energia on alkutilan ja lopputilan massojen erotus: elektronin syntyminen vie osan myonin energiasta."
+        },
+        {
+          "value": 105.7,
+          "feedback": "Tämä on myonin koko lepoenergia. Elektronin lepoenergia $0{,}511\\,\\text{MeV}$ ei vapaudu, vaan se kuluu elektronin syntymiseen; vähennä se."
+        }
+      ],
+      "solution": "**Annettu:** $\\mu^- \\to e^- + \\bar{\\nu}_e + \\nu_\\mu$, $m_\\mu = 105{,}658\\,\\tfrac{\\text{MeV}}{c^2}$, $m_e = 0{,}511\\,\\tfrac{\\text{MeV}}{c^2}$, neutriinojen massat merkityksettömän pienet\n\n**Kysytty:** hajoamisessa vapautuva energia $Q$ megaelektronivoltteina\n\n**Periaate:** Hajoavan hiukkasen massa on suurempi kuin syntyvien hiukkasten massojen summa, ja erotusta vastaava energia vapautuu syntyvien hiukkasten liike-energiaksi ($E = mc^2$). Hajoaminen on sallittu: varaus $-1 = -1 + 0 + 0$ ja leptoniluku $1 = 1 + (-1) + 1$ säilyvät.\n\n**Kaava:** $Q = (m_\\text{alku} - m_\\text{loppu})\\,c^2$, josta $Q = (m_\\mu - m_e)\\,c^2$\n\n**Muunnokset:** Ei tarvita: massat ovat yksikössä $\\tfrac{\\text{MeV}}{c^2}$, joten $c^2$ supistuu ja $Q$ saadaan megaelektronivoltteina.\n\n**Sijoitus:** $Q = (105{,}658 - 0{,}511)\\,\\tfrac{\\text{MeV}}{c^2} \\cdot c^2 = 105{,}147\\,\\text{MeV}$\n\n**Vastaus:** $105{,}1\\,\\text{MeV}$, neljä merkitsevää numeroa; massat on annettu tuhannesosan tarkkuudella, joten tulos voidaan ilmoittaa myös muodossa $105{,}147\\,\\text{MeV}$.\n\n**Järkevyys:** Elektroni on noin $200$ kertaa myonia kevyempi, joten lähes koko myonin lepoenergia, noin $106\\,\\text{MeV}$, vapautuu. Energia on yli sata kertaa neutronin hajoamisen $0{,}782\\,\\text{MeV}$, koska myonin ja elektronin massaero on paljon suurempi kuin neutronin ja protonin."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Harjoittele kolmella tasolla. Tason 1 tehtävissä käytetään yhtä sääntöä, tason 2 tehtävissä yhdistetään kaksi vaihetta, ja taso 3 vaatii päättelyä uudessa tilanteessa."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Käsite",
+      "prompt": "Kaksi elektronia hylkii toisiaan. Mikä väite kuvaa vuorovaikutusta standardimallin mukaan?",
+      "choices": [
+        {
+          "text": "Elektronit vaihtavat fotoneja, sähkömagneettisen vuorovaikutuksen välittäjiä.",
+          "correct": true,
+          "feedback": "Oikein. Fotoni välittää sähkömagneettisen vuorovaikutuksen kaikkien varattujen hiukkasten välillä. Vaihdettuja fotoneja ei havaita valona."
+        },
+        {
+          "text": "Elektronit vaihtavat gluoneja, koska ne ovat vahvan vuorovaikutuksen hiukkasia.",
+          "feedback": "Gluonit välittävät vahvan vuorovaikutuksen kvarkkien välillä. Elektroni on lepton, eikä vahva vuorovaikutus vaikuta siihen."
+        },
+        {
+          "text": "Elektronit vaihtavat $W$-bosoneja, koska kaikki leptonien voimat ovat heikkoja.",
+          "feedback": "$W$-bosonit välittävät heikon vuorovaikutuksen, joka voi muuttaa hiukkasen lajin. Varausten hylkiminen on sähkömagneettista: sen välittäjä on fotoni."
+        },
+        {
+          "text": "Elektronit vaikuttavat toisiinsa suoraan ilman välittäjää, koska ne ovat alkeishiukkasia.",
+          "feedback": "Standardimallissa jokainen vuorovaikutus välittyy välittäjähiukkasilla. Sähkömagneettisen vuorovaikutuksen välittäjä on fotoni."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Mesonin varaus",
+      "prompt": "$D^+$-mesoni koostuu $c$-kvarkista ja anti-$d$-kvarkista $\\bar{d}$. Laske sen varaus alkeisvarauksen $e$ monikertana.",
+      "answer": 1,
+      "unit": "e",
+      "tolerance": 0.02,
+      "hints": [
+        "$c$-kvarkin varaus on sama kuin $u$-kvarkin.",
+        "Antikvarkin varaus on vastakkainen kuin kvarkin: $\\bar{d}$:n varaus on $+\\tfrac{1}{3}e$.",
+        "Laske yhteen $+\\tfrac{2}{3} + \\tfrac{1}{3}$."
+      ],
+      "mistakes": [
+        {
+          "value": 0.333,
+          "feedback": "Käytit $d$-kvarkin varausta $-\\tfrac{1}{3}e$. Antikvarkin varaus on vastakkainen: $\\bar{d}$:n varaus on $+\\tfrac{1}{3}e$."
+        }
+      ],
+      "solution": "**Annettu:** $D^+ = c\\,\\bar{d}$; $c$-kvarkin varaus $+\\tfrac{2}{3}e$, $d$-kvarkin $-\\tfrac{1}{3}e$\n\n**Kysytty:** mesonin varaus $q$ alkeisvarauksen monikertana\n\n**Periaate:** Hadronin varaus on sen kvarkkien ja antikvarkkien varausten summa. Antikvarkin varaus on vastakkainen kuin kvarkin, joten $\\bar{d}$:n varaus on $+\\tfrac{1}{3}e$.\n\n**Kaava:** $q = q_c + q_{\\bar{d}}$, josta $q = q_c - q_d$\n\n**Muunnokset:** Ei tarvita, koska varaukset ovat alkeisvarauksen $e$ monikertoja.\n\n**Sijoitus:** $q = +\\tfrac{2}{3}e - \\left(-\\tfrac{1}{3}e\\right) = +1\\,e$\n\n**Vastaus:** $+1\\,e$; tulos on tarkka, koska kvarkkien varaukset ovat tarkkoja murtolukuja.\n\n**Järkevyys:** Varaus on alkeisvarauksen kokonaislukumonikerta, kuten jokaisella hadronilla, ja se sopii merkintään $D^+$. Mesonin baryoniluku on $\\tfrac{1 - 1}{3} = 0$."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Välittäjähiukkaset",
+      "optional": true,
+      "prompt": "Selitä kolmella tai neljällä virkkeellä, mitä tarkoittaa, että fotoni on sähkömagneettisen vuorovaikutuksen välittäjähiukkanen. Miksi gravitonia sanotaan hypoteettiseksi?",
+      "model": "Standardimallin mukaan varatut hiukkaset vuorovaikuttavat lähettämällä ja absorboimalla fotoneja, ja tämä fotonien vaihto muuttaa niiden liiketilaa: esimerkiksi kaksi elektronia hylkii toisiaan. Sama fotoni on valon ja muun sähkömagneettisen säteilyn kvantti. Muut perusvuorovaikutukset välittyvät samoin omilla välittäjillään: vahva gluoneilla ja heikko $W$- ja $Z$-bosoneilla. Gravitonia sanotaan hypoteettiseksi, koska sitä ei ole havaittu eikä gravitaatio kuulu standardimalliin.",
+      "criteria": [
+        "Kerroin, että varatut hiukkaset vuorovaikuttavat lähettämällä ja absorboimalla fotoneja.",
+        "Mainitsin, että fotoni on myös sähkömagneettisen säteilyn kvantti, tai nimesin toisen vuorovaikutuksen välittäjän.",
+        "Perustelin gravitonin hypoteettisuuden sillä, että sitä ei ole havaittu tai gravitaatio ei kuulu standardimalliin."
+      ]
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Lopuksi kaksi nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+    }
+  ]
+}
