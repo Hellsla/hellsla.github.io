@@ -1,14 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: a1d177b89b4cfeaf
+CONTENT-HASH: 2876b3a6403442d6
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] solutions L1-04 Sijoitus — capture open-exercises-1280-5 is stale (shows 10^-12, source has 10^-9); regenerate with screenshot.py to confirm the rendering.
+- [Minor] L2-06 and L3-05 task text — a line break falls right after "(" before the constants ($h = ...$); a cosmetic result of inline maths wrapping, same as in fi; no source change.
 
 ## Checked
-- Source solutions.md:37: one exponent changed (10^-12 to 10^-9); notation, thin spaces, upright units, decimal comma and colon division unchanged.
-- Captures open-exercises-1280-4 and -5 (L1-04) opened: layout of the Sijoitus chain, Vastaus and Järkevyys intact; only the pre-fix exponent is visible.
+- Captures opened: open-exercises-L2-1280-7 (L2-05 solution, L2-06 task) and open-exercises-L3-1280-7 (L3-04 Reasonableness, L3-05 task and table).
+- Decimal point in all LaTeX and table cells, thin spaces and upright units intact; fractions and display blocks render as in fi.
+- Tables: caption and column headers in English, no overflow at 1280 px.
+- Answer chips (0.54 eV, 0.52) and unit boxes show English formatting.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · English 5 · accessibility 4

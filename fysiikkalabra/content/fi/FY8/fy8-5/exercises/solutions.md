@@ -146,7 +146,7 @@
 **Kaava:** $P = \dfrac{k}{N}$, missä $k$ on alueeseen osuneiden mittausten summa
 **Muunnokset:** Osuus muunnetaan prosenteiksi kertomalla sadalla: $1 = 100\,\%$.
 **Sijoitus:** Kahden ensimmäisen luokan mittausten summa on $k = 118 + 171 = 289$, joten $P = \dfrac{289}{400} = 0{,}7225 = 72{,}25\,\%$. Kohdassa c) lasketaan vastaavasti kolmen ensimmäisen luokan summa $289 + 79 = 368$ ja osuus $\dfrac{368}{400} = 0{,}920 = 92{,}0\,\%$.
-**Vastaus:**
+**Vastaus:** Vastauslaatikkoon $72{,}3\,\%$.
 
 a) Yleisin luokka on $0{,}05$–$0{,}10\,\text{nm}$.
 
