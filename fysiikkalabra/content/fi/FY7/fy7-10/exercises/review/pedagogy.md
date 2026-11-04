@@ -1,19 +1,19 @@
-VERDICT: PASS
-CONTENT-HASH: 40525b228243b454
+VERDICT: FAIL
+CONTENT-HASH: ed9f8063168d80d7
+
+Round 2
+
 ## Blocking
+- exercises.json:fy7-10-L3-04 — the second paragraph is now 48 words in one block (the added sentence "Oletetaan, että esine näyttää olevan suoraan todellisen paikkansa yläpuolella." pushed it over the ~45 limit). Fix: start a new paragraph at that sentence, i.e. (1) "Silmään tuleva säde ja esineestä pinnan samaan pisteeseen kulkeva säde ovat samassa pystytasossa. Oletetaan, että esine näyttää olevan suoraan todellisen paikkansa yläpuolella." (2) "Pinnan piste on vaakasuunnassa etäisyydellä $x$ esineen kohdalta. Vedessä säteen ja normaalin välinen kulma on $\alpha_1$, ja näennäiseen paikkaan piirretty jatke muodostaa normaalin kanssa kulman $\alpha_2$."
 
 ## Polish
-- exercises.json:fy7-10-L3-04 — the geometry (x = d tan α1 = h' tan α2) is described only in words and the task has no figure; add a small figure or the sentence "Piirrä tilanteesta kuva." The four-row, two-step table work is also heavy; consider three rows.
-- exercises.json:fy7-10-L3-05 — "on kiinni vesikerroksen päällä" is clumsy; write "on vesikerroksen päällä".
-- exercises.json:fy7-10-L2-07 — answer tolerance 0,05 relative on Δn is wide; 0,03 still accepts rounding of the intermediate values.
-- exercises.json:fy7-10-L2-05 — the task asks for a plot but the box accepts n alone; state in the solution that the plot is self-checked, or ask for the slope value in the box.
-- exercises.json:fy7-10-L1-07/L1-08 — both are single formula tasks; fine, but L1-07 is close to a lesson sentence about λ = λ0 : n.
+- exercises.json:fy7-10-L3-04 — a) now says "Piirrä tilanteesta kuva" but the box takes only b); add "(kuvan tarkistat itse)" as in fy7-12-L3-05.
+- solutions.md:fy7-10-L3-05 Vastaus — "20,0 mm:n vesikerros rajoittaa tuloksen tarkkuutta" is muddled (the water term 15,6 mm dominates); say instead that the water layer gives most of the 19,5 mm.
+- exercises.json:fy7-10-L1-07/L1-08 — single-formula tasks, L1-07 close to a lesson sentence; acceptable.
 
 ## Checked
-- New tasks L1-06..08, L2-05..07, L3-04..05 recomputed: 416,4 nm; 25,50°; LSQ slope 1,4985 (graph 1,50); 40,63°; Δn 0,038 (n 1,506, 1,545, 1,469); n_avg 1,3301 from the four rows; x = 19,47 mm. All match the solutions.
-- L3-04 derivation (x = d tan α1 = h' tan α2, then n sin α1 = sin α2) is physically correct and the data are consistent with n = 1,33.
-- L2-06 error analysis names the real mistake (dividing the angle by n) and shows the sine check.
-- L2-07 uncertainty estimate (half the max-min range) is stated as an estimate, not a guarantee.
-- Levels fit the plan (data reading, error analysis, three-layer YO task); no duplicate of existing tasks.
-- Paragraph rule: no lead paragraph over ~45 words (longest L3-04: 39 words, L2-07: 36); lettered parts stay separate.
-- Solutions have all steps with principle explained; Finnish and units fine; 1280 px captures show no clipping.
+- Round 1 had no Blocking; all round-1 Polish was acted on: "Piirrä kuva" added and the assumption (apparent position on the vertical through the object) is stated in task and solution; "kiinni" removed from L3-05; L2-06 tolerance 0,03; L2-05 solution says the graph is self-drawn.
+- L2-06 rewritten with 50,0°: student's 37,6° is wrong, correct 35,17° (box 35,1678, tolerance 0,03); sine check 0,811 vs 0,766 correct.
+- L3-04 construction x = d tan α1 = h' tan α2 is valid with the stated assumption; n_avg 1,3301 unchanged.
+- L3-05 recomputed: 3,84 mm + 15,63 mm = 19,47 mm, matches.
+- L1-06 option order changed only; feedback intact. Finnish fine.

@@ -1,22 +1,19 @@
 VERDICT: FAIL
-CONTENT-HASH: 81597b11751cc4cb
+CONTENT-HASH: ce7668f796b8c369
+
+Round 2: The round-1 blocking item is fixed. In L2-06, I is 0 % at 49,0 and 49,2 µs, and the solution adds "Aiemmin valoa ei voi tulla". Four round-1 polish items are also fixed: 39,0°, "Taulukon lukeminen", and the precision notes in L1-08, L3-04 and L3-05. Two of those precision notes now conflict with the answer box (items 2–3 below, which my round-1 polish caused). The reorder of L1-06 broke one of its options.
 
 ## Blocking
-- exercises.json:183–189 and solutions.md:164 (fy7-12-L2-06) — A, data contradicts the model the task asks students to check: the axial (fastest) ray arrives at t₀ = n s : c = 49,33 µs, yet the table shows light at 49,0 µs (1 %) and 49,2 µs (4 %). Nothing can arrive before t₀, and b) asks when the pulse starts to arrive; the solution says the pulse "alkaa saapua hetkien 49,2 µs (4 %) ja 49,4 µs (52 %) välillä", which its own 4 % row contradicts. — Fix: set I = 0 at 49,0 µs and 49,2 µs (width stays 800 ns), and at solutions.md:164 write "pulssi alkaa saapua hetkien 49,2 µs (0 %) ja 49,4 µs (52 %) välillä, mikä sopii kulkuaikaan 49,33 µs: aiemmin valoa ei voi tulla, koska akselin suuntainen reitti on lyhin."
+- exercises.json:59–60 (fy7-12-L1-06) — A, assessment: option 2 now has the same text as option 4 ("Valo tulee ilmasta mihin tahansa ... kuin peili"), but option 2 keeps the feedback of the deleted small-angle option ("kohtisuoraan rajapintaan osuva säde ..."). The option is duplicated, its feedback answers another claim, and the Mallivastaus ("Pieni tulokulma ei riitä") refers to a missing option. — Fix: restore line 59 to "Valo tulee suuremman taitekertoimen aineesta pienempään, ja tulokulma on pieni, jolloin säde osuu rajapintaan lähes kohtisuorasti."
+- solutions.md:143 vs exercises.json fy7-12-L1-08 — the answer does not match its solution. The Vastaus is "1,0 · 10² km (noin 100 km)", but the answer box expects 103,45 with tolerance 0,02, so the model answer 100 (3,3 % off) is rejected. — Fix: give the time as 0,500 ms in the task and solution and write the Vastaus as "103 km, kolme merkitsevää numeroa". Or keep 1,0 · 10² km with tolerance 0,04.
+- solutions.md:184 vs exercises.json fy7-12-L3-04 — the same conflict. The Vastaus says "17°", but the answer is 17,367 with tolerance 0,02, so 17 is rejected (2,1 % off). — Fix: set the tolerance to 0,03. Or report 17,4°.
 
 ## Polish
-- solutions.md:154 (fy7-12-L2-05) — sin⁻¹(1,00 : 1,59) = 38,97°, so write 39,0°, not 38,9°.
-- solutions.md:143 (fy7-12-L1-08) — the limiting datum is t = 0,50 ms (two significant figures), not n = 1,45: answer "1,0 · 10² km (noin 100 km), kaksi merkitsevää numeroa kuten aika 0,50 ms".
-- solutions.md:184 and :194 (L3-04, L3-05) — "kolme merkitsevää numeroa kuten taitekertoimet" ignores that the results hinge on n₁ − n₂ (0,03 / 0,09, one or two significant figures) and a = 0,50 mm: say the precision is limited by the difference: R_min ≈ 16 mm, θ_max ≈ 17°.
-- solutions.md:160 (L2-06) — "Kuvaajan lukeminen" for a table: "Taulukon lukeminen".
-- exercises.json fy7-12-L1-07 vs L1-03 and plan — L1-07 (acrylic→water) has the same structure as L1-03 (glass→water); the plan's Taso 3 "timantin hionta (kuva diamond)" was replaced by the bent-fibre L3-05. Update the plan or note the swap.
+- exercises.json fy7-12-L1-07 vs L1-03 and the plan (carried over): L1-07 (acrylic → water) has the same structure as L1-03 (glass → water), and the plan's "timantin hionta" was replaced by L3-05. — Update the plan or note the swap.
+- solutions.md:192 (fy7-12-L3-05) — the triangle geometry is described only in words. Add a small figure (O, R − a, R + a).
 
 ## Checked
-- All 20 answers recomputed in one script; all match answers.py and exercises.json; units and tolerances fit.
-- L1-06: exactly one correct option.
-- L2-05: mean 42,04°, n = 1,4933; extremes 1,477 / 1,509; "todennäköisesti" wording follows the guardrails; acrylic identification right.
-- L2-07: error explained correctly (no critical angle from air to glass); α₂ = 38,79°.
-- L3-04: α_r, φ_max, θ_max for A/B/C = 14,03° / 17,37° / 9,82°; √(n₁² − n₂²) identity correct; delay ratios 0,0137 / 0,0204 / 0,0069.
-- L3-05: geometry sin α = (R − a) : (R + a) is the minimum over the core, R_min = a(n₁ + n₂) : (n₁ − n₂) = 16,06 mm, check angle 70,0°.
-- Notation matches the lesson brief; within FY7 scope.
-- Hash unchanged start to end.
+- All new answers were recomputed with my own formulas, and they agree with answers.py: 63,20°; 103,4 km; 1,4933; 800 ns (t₀ 49,33 µs); 38,79°; 17,37°/14,03°/9,82°; 16,06 mm.
+- L2-06: the corrected table shows no light before t₀.
+- All other Vastaus values lie inside their tolerances (L3-05: 16 mm, 0,35 % off).
+- The hash was the same at the start and at the end.

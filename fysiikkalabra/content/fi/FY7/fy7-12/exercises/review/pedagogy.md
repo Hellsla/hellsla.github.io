@@ -1,18 +1,20 @@
 VERDICT: FAIL
-CONTENT-HASH: 81597b11751cc4cb
+CONTENT-HASH: ce7668f796b8c369
+
+Round 2
+
 ## Blocking
-- exercises.json:fy7-12-L3-05 — first paragraph is 62 words in one block. Split: (1) "Muovisen valokuidun ytimen halkaisija ... kuoren 1,40." (2) "Kuitu taivutetaan ympyrän kaareksi ... Vaarallisin on säde, joka kulkee ytimen sisäreunan vierestä." (3) "Taulukossa on kuidun läpi kulkeva teho prosentteina ... (esimerkkiaineisto)."
-- exercises.json:fy7-12-L3-04 — first paragraph is 58 words in one block. Split: (1) "Valokuidun ydin on lasia ... jonka taitekerroin on 1,00." (2) "Valo pysyy ytimessä vain, jos ... Tämä on kuidun vastaanottokulma." (3) "Taulukossa on kolmen kuitutyypin taitekertoimet (esimerkkiaineisto)."
-- exercises.json:fy7-12-L2-06 — first paragraph is 52 words in one block. Split: (1) "Valokuidun ytimen taitekerroin on 1,48 ... lähetyshetkestä lukien." (2) "Taulukossa intensiteetti on prosentteina suurimmasta arvosta (esimerkkiaineisto). Pulssin leveys on aika ... viimeiseen sellaiseen riviin."
+- exercises.json:fy7-12-L1-08 and solutions.md:fy7-12-L1-08 Vastaus — the model answer is now "1,0 · 10² km (noin 100 km)", but the box answer is 103,4483 with tolerance 0,02 (accepts 101,4 to 105,5), so a student who writes the solution's own 100 km is marked wrong; CLAUDE.md requires rounding to the significant figures to stay inside the tolerance. Fix: tolerance 0.04, or write the answer as 103 km (three figures, as n = 1,45).
+- exercises.json:fy7-12-L3-04 and solutions.md Vastaus — the model answer is now "17° (17,4°)", but the box answer is 17,3673 with tolerance 0,02 (accepts 17,02 to 17,71), so 17° is rejected. Fix: tolerance 0.03, or keep the answer 17,4°.
 
 ## Polish
-- solutions.md:fy7-12-L3-05 Järkevyys — "Tarkistus: kun R = ... = 1,40 : 1,49" renders as a sentence cut by a display block (visible in the L3 capture); write the check as inline sentences.
-- exercises.json:fy7-12-L2-05 — "Mittaussarjan summa on 210,2°" does the students' addition; drop it (the table has the five values) or keep it as a self-check hint.
-- exercises.json:fy7-12-L3-04 — the "n1/n2 − 1" delay measure is given as a fact; add half a sentence that it is the relative extra path of the steepest zigzag ray.
-- exercises.json:fy7-12-L3-05 — the task asks for a drawing; say that the drawing is self-checked, and that the answer box takes only b.
+- exercises.json:fy7-12-L3-04 — the "n1/n2 − 1" delay measure is still given as a fact; add half a sentence that it is the relative extra path of the steepest zigzag ray (carried over).
+- solutions.md:fy7-12-L3-04 Vastaus — "yhden tai kahden merkitsevän numeron luku" is unclear; say the difference n1 − n2 = 0,03 has one figure.
+- exercises.json:fy7-12-L2-02 (42 words) and L3-02 (58 words) — existing tasks with long lead paragraphs; split when next touched.
 
 ## Checked
-- Recomputed: 63,20°; 103,4 km; n 1,493 (range 1,477..1,509, acrylic not polystyrene); 800 ns and t0 49,33 µs; 38,79°; θ_max B 17,37°, A 14,03°, C 9,82°; R_min 16,06 mm. All match answers and solutions.
-- L2-07 error (critical angle applied to air to glass) is real and repaired; L1-06 distractors each have their own feedback.
-- L3-05 geometry sin α = (R − a) : (R + a) is correct and the table fits R_min.
-- Levels rise; plan covered (plastic series, pulse distortion, acceptance angle, bend loss); no duplicates; Finnish and units fine; 1280 px captures show no clipping.
+- Round-1 Blocking (L2-06 52 words, L3-04 58 words, L3-05 62 words) resolved: each is split into short paragraphs (longest about 38 words).
+- L2-06 table rows 49,0 and 49,2 µs now 0 % (nothing arrives before the axial ray at 49,33 µs); width 800 ns and the added "no earlier light" sentence are correct.
+- L2-05: the given sum 210,2° removed from the task and shown in the solution; n = 1,493, 1,477 to 1,509; polystyrene limit 39,0° correct.
+- L2-07 and L1-06 reworded and reordered without changing the physics; distractors keep their feedback.
+- L3-05: R_min = 16,06 mm (box 16,0556, so 16 mm is inside tolerance); sin α = (R − a) : (R + a) correct; the "vain b)" instruction and self-checked drawing are clear.
