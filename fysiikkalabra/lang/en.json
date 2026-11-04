@@ -134,6 +134,7 @@
     "chapter_next": "Next chapter",
     "chapter_up": "Back to the module",
     "chapter_course": "All chapters of {{course}}",
+    "exercise_word": "Exercise",
     "core_exercise": "Core",
     "level_kind_1": "basic practice",
     "level_kind_2": "applied practice",
@@ -1920,6 +1921,7 @@
     "lead": "In these tasks nobody tells you which formula to use. Decide yourself which phenomena and models belong to the situation, solve the task on paper and justify your solution, as in the matriculation examination.",
     "howto": "Solve the task yourself first, on paper or on a computer. You may use a calculator, a data booklet and graphing software. Write out your reasoning, formulas, substitutions and answers with units.",
     "points": "{{n}} p",
+    "task_n": "task {{n}}",
     "task_points": {
       "one": "{{n}} point",
       "other": "{{n}} points"

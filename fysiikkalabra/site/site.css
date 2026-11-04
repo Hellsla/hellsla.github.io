@@ -611,11 +611,14 @@ details.level{max-width:calc(var(--measure) + 3rem);background:var(--surface);bo
 details.level>summary{min-height:52px;font:700 var(--fs-h3) var(--sans)}
 details.level>summary .count{margin-left:.6rem}
 details.level[open]>summary{border-bottom:1px solid var(--line-2)}
-details.level>ol{margin:0;padding:0 0 .6rem 1.4rem}
+details.level>ol{margin:0;padding:0 0 .6rem;list-style:none}
 details.level>ol>li{margin:0;padding:.8rem 0;border-bottom:1px solid var(--line-2)}
 details.level>ol>li:last-child{border-bottom:0}
-details.level>ol>li::marker{font-weight:700;color:var(--accent-deep)}
-@media (max-width:600px){details.level{padding:0 .8rem}details.level>ol{padding-left:1.2rem}.feedback{margin-left:0}}
+/* The exercise's running number "6-3" (chapter-exercise, teacher 2026-11-04, build.py number_label): first in the
+   exercise, in place of the list marker that restarted at every level; lesson.js moves it into the head row. */
+.ex-num{display:inline-block;margin:0 .6rem .25rem 0;font:700 var(--fs-h3) var(--sans);color:var(--accent-deep);white-space:nowrap;font-variant-numeric:tabular-nums}
+.ex-head .ex-num{margin:0}.practice-task h3 .ex-num{font:inherit;color:var(--accent-deep);margin:0 .35rem 0 0}
+@media (max-width:600px){details.level{padding:0 .8rem}.feedback{margin-left:0}}
 
 /* a figure with the text it explains (build.py fig_rows): text first, its figure under it in the reading column, with
    room around it; side by side on a wide screen only when the two are about as tall (.fig-row.side) */

@@ -134,6 +134,7 @@
     "chapter_next": "Seuraava luku",
     "chapter_up": "Moduulin sivulle",
     "chapter_course": "Kaikki moduulin {{course}} luvut",
+    "exercise_word": "Tehtävä",
     "core_exercise": "Ydintehtävä",
     "level_kind_1": "perusharjoitus",
     "level_kind_2": "soveltava harjoitus",
@@ -1920,6 +1921,7 @@
     "lead": "Näissä tehtävissä kukaan ei kerro, mitä kaavaa käyttää. Päätä itse, mitkä ilmiöt ja mallit tilanteeseen liittyvät, ratkaise tehtävä paperille ja perustele ratkaisusi, kuten ylioppilaskokeessa.",
     "howto": "Ratkaise ensin itse paperille tai tietokoneelle. Saat käyttää laskinta, taulukkokirjaa ja kuvaajaohjelmaa. Kirjoita näkyviin perustelut, kaavat, sijoitukset ja vastaukset yksiköineen.",
     "points": "{{n}} p",
+    "task_n": "tehtävä {{n}}",
     "task_points": {
       "one": "{{n}} piste",
       "other": "{{n}} pistettä"
