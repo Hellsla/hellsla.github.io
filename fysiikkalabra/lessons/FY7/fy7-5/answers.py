@@ -26,4 +26,24 @@ a["fy7-5-L3-01"] = v_train * 50e-6 * 1.524 * 1e3             # axle 1,524 m (Fin
 a["fy7-5-L3-02"] = 2.0e-3 * 0.10 / (2 * 100 * 0.020) * 1e6   # flip coil: ΔΦ = 2 B A, e = N · 2 B A / Δt, so B = e Δt / (2 N A) = 5,0 · 10⁻⁵ T = 50 µT
 area = 0.5 * 0.90 * 0.040                                    # first pulse, about a triangle: e Δt summed = ½ · 0,90 V · 0,040 s = 0,018 V·s = N ΔΦ
 a["fy7-5-L3-03"] = area / 300 * 1e3                          # Φ_max = 0,018 V·s / 300 = 6,0 · 10⁻⁵ Wb = 0,060 mWb
+# Exercise-bank additions: L1-06 and L2-07 are multiple-choice (answer text, not computed here)
+a["fy7-5-L1-07"] = 300 / 120 * 0.90                 # e is proportional to N: e2 = (N2 / N1) e1 = 2,5 · 0,90 V = 2,25 V
+a["fy7-5-L1-08"] = 18e-3 / (0.60 * 0.50)                     # B = e / (v l) = 0,018 V / (0,60 m/s · 0,50 m) = 0,060 T
+# L2-05 data: N = 120, Φ (mWb) at 0,10 s steps; steepest part 0,40–0,60 s
+phi = [0.00, 0.98, 2.03, 3.00, 3.01, 1.80, 0.60]
+a["fy7-5-L2-05"] = 120 * (3.01 - 0.60) * 1e-3 / 0.20         # use the whole falling part: 1,446 V ≈ 1,45 V
+# L2-06 data: slope k of (v, e) through the origin, B = k / l
+v = [0.10, 0.20, 0.30, 0.40, 0.50, 0.60]
+e = [3.1, 5.8, 9.2, 11.9, 15.2, 17.8]                        # mV
+k = sum(x * y for x, y in zip(v, e)) / sum(x * x for x in v) # least squares through the origin: 29,97 mV/(m/s)
+a["fy7-5-L2-06"] = k * 1e-3 / 0.20                           # B = k / l = 0,030 V·s/m / 0,20 m = 0,15 T
+# L3-04 data: e = a B l t, so a = k / (B l), k from the (t, e) fit through the origin
+t = [0.2, 0.4, 0.6, 0.8, 1.0, 1.2]
+ev = [32, 65, 98, 133, 163, 198]                             # mV
+k3 = sum(x * y for x, y in zip(t, ev)) / sum(x * x for x in t) * 1e-3   # 0,1643 V/s
+a["fy7-5-L3-04"] = k3 / (0.25 * 0.40)                        # a = k / (B l) = 1,64 m/s² -> 1,6 m/s²
+# L3-05 data: N = 250, trapezoid area of the first pulse 0–24 ms (step 4 ms) = N Φ
+u = [-0.02, 0.09, 0.63, 1.77, 1.77, 0.60, 0.03]
+area1 = 0.004 * (sum(u) - (u[0] + u[-1]) / 2)                # 0,01946 V·s
+a["fy7-5-L3-05"] = area1 / 250 * 1e3                         # Φ = 0,0778 mWb -> 0,078 mWb
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

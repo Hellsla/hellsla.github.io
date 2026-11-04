@@ -39,6 +39,52 @@
    "answer": 0.5,
    "unit": "m/s",
    "tolerance": 0.02
+  },
+  {
+   "id": "fy7-5-L1-06",
+   "level": 1,
+   "kind": [
+    "concept"
+   ],
+   "text": "Voimakas sauvamagneetti on levossa käämin sisällä, ja käämiin on kytketty herkkä volttimittari. Mittari näyttää nollaa. Miksi käämin päiden välille ei synny induktiojännitettä, vaikka käämin läpi kulkee suuri magneettivuo?",
+   "answer": "Vuo ei muutu, ja jännite riippuu vuon muutosnopeudesta.",
+   "unit": "",
+   "tolerance": 0.02,
+   "choices": [
+    {
+     "text": "Vuo ei muutu, ja jännite riippuu vuon muutosnopeudesta.",
+     "correct": true,
+     "feedback": "Oikein: induktiolain mukaan jännite on verrannollinen vuon muutosnopeuteen $\\Delta\\Phi : \\Delta t$. Levossa olevan magneetin vuo on vakio, joten $\\Delta\\Phi = 0$ ja jännite on nolla suuresta vuosta huolimatta."
+    },
+    {
+     "text": "Vuo on liian suuri, joten käämin johdin ei kykene johtamaan jännitettä.",
+     "feedback": "Vuon suuruus ei estä jännitteen syntyä. Jännite riippuu vuon muutosnopeudesta, ei vuon arvosta; suurikin vuo antaa nollajännitteen, jos se ei muutu."
+    },
+    {
+     "text": "Jännitettä ei synny, koska käämissä ei kulje virtaa, joka tarvittaisiin sen synnyttämiseen.",
+     "feedback": "Syy ja seuraus ovat toisinpäin: jännite syntyy vuon muutoksesta, ja suljetussa piirissä se synnyttää virran. Virran puuttuminen johtuu siitä, ettei jännitettä synny."
+    },
+    {
+     "text": "Kenttä ja käämi ovat samassa paikassa, joten kenttä ei voi kohdistaa käämiin mitään vaikutusta.",
+     "feedback": "Kenttä vaikuttaa käämiin silloin, kun vuo sen läpi muuttuu, esimerkiksi kun magneettia liikutetaan. Paikallaan pysyvän magneetin vuo on vakio, ja vain siksi jännite on nolla."
+    }
+   ]
+  },
+  {
+   "id": "fy7-5-L1-07",
+   "level": 1,
+   "text": "Käämin kierrosluku on $120$, ja kun käämiin työnnetään magneetti, sen päiden välille syntyy $0{,}90\\,\\text{V}$:n induktiojännite. Toinen käämi on muuten samanlainen (sama pinta-ala), mutta siinä on $300$ kierrosta. Magneetti työnnetään siihen samalla tavalla ja yhtä nopeasti. Kuinka suuri induktiojännite toisen käämin päiden välille syntyy?",
+   "answer": 2.25,
+   "unit": "V",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy7-5-L1-08",
+   "level": 1,
+   "text": "Metallitanko, jonka pituus on $0{,}50\\,\\text{m}$, liikkuu vauhdilla $0{,}60\\,\\text{m/s}$ homogeenisessa magneettikentässä. Tanko, sen nopeus ja kenttä ovat keskenään kohtisuorassa, ja tangon päiden välillä mitataan $18\\,\\text{mV}$:n induktiojännite. Kuinka suuri on kentän magneettivuon tiheys?",
+   "answer": 0.06,
+   "unit": "T",
+   "tolerance": 0.02
   }
  ],
  "level2": [
@@ -74,6 +120,132 @@
    "answer": 75,
    "unit": "mV",
    "tolerance": 0.02
+  },
+  {
+   "id": "fy7-5-L2-05",
+   "level": 2,
+   "kind": [
+    "data",
+    "graph"
+   ],
+   "text": "Käämissä on $120$ kierrosta. Taulukossa on esimerkkiaineisto: yhden kierroksen läpi kulkeva magneettivuo $\\Phi$ eri ajanhetkillä, kun käämiä siirretään magneettikentässä. Vuo muuttuu kunkin $0{,}10\\,\\text{s}$:n välin aikana likimain tasaisesti.\n\nKuinka suuri on käämin induktiojännitteen suurin itseisarvo mittausjaksolla?",
+   "answer": 1.45,
+   "unit": "V",
+   "tolerance": 0.03,
+   "data": {
+    "caption": "Esimerkkiaineisto: magneettivuo yhden kierroksen läpi",
+    "columns": [
+     "$t\\,(\\text{s})$",
+     "$\\Phi\\,(\\text{mWb})$"
+    ],
+    "rows": [
+     [
+      "0.00",
+      "0.00"
+     ],
+     [
+      "0.10",
+      "0.98"
+     ],
+     [
+      "0.20",
+      "2.03"
+     ],
+     [
+      "0.30",
+      "3.00"
+     ],
+     [
+      "0.40",
+      "3.01"
+     ],
+     [
+      "0.50",
+      "1.80"
+     ],
+     [
+      "0.60",
+      "0.60"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "fy7-5-L2-06",
+   "level": 2,
+   "kind": [
+    "data",
+    "experiment",
+    "graph"
+   ],
+   "text": "Oppilaat tutkivat, miten induktiojännite riippuu liikkeen nopeudesta. Vaakasuorilla kiskoilla liikutetaan metallitankoa tasaisella vauhdilla $v$ kiskojen tasoa vastaan kohtisuorassa homogeenisessa magneettikentässä, ja tangon päiden välinen jännite $e$ mitataan. Tanko ja kenttä ovat kohtisuorassa, ja kiskojen väli eli tangon kentässä oleva pituus on $0{,}20\\,\\text{m}$. Taulukossa on esimerkkiaineisto.\n\nPiirrä mittauspisteet $(v, e)$-koordinaatistoon ja sovita pisteisiin origon kautta kulkeva suora. Kuinka suuri on kentän magneettivuon tiheys? Käytä apuna suoran kulmakerrointa.",
+   "answer": 0.15,
+   "unit": "T",
+   "tolerance": 0.04,
+   "data": {
+    "caption": "Esimerkkiaineisto: jännite ja vauhti",
+    "columns": [
+     "$v\\,(\\text{m/s})$",
+     "$e\\,(\\text{mV})$"
+    ],
+    "rows": [
+     [
+      "0.10",
+      "3.1"
+     ],
+     [
+      "0.20",
+      "5.8"
+     ],
+     [
+      "0.30",
+      "9.2"
+     ],
+     [
+      "0.40",
+      "11.9"
+     ],
+     [
+      "0.50",
+      "15.2"
+     ],
+     [
+      "0.60",
+      "17.8"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "fy7-5-L2-07",
+   "level": 2,
+   "kind": [
+    "error",
+    "concept"
+   ],
+   "text": "Opiskelija ratkaisee tehtävän: \"Metallitanko, jonka pituus on $0{,}30\\,\\text{m}$, liikkuu vauhdilla $2{,}0\\,\\text{m/s}$ homogeenisessa magneettikentässä $0{,}50\\,\\text{T}$. Tanko on kohtisuorassa kenttään nähden, ja tanko liikkuu kentän suuntaan.\" Hän laskee $e = vBl = 2{,}0\\,\\text{m/s} \\cdot 0{,}50\\,\\text{T} \\cdot 0{,}30\\,\\text{m} = 0{,}30\\,\\text{V}$ ja ilmoittaa, että tangon päiden välille syntyy $0{,}30\\,\\text{V}$:n jännite. Mikä laskussa on virheellistä?",
+   "answer": "Nopeus on kentän suuntainen, joten magneettinen voima elektroneihin on nolla eikä jännitettä synny.",
+   "unit": "",
+   "tolerance": 0.02,
+   "choices": [
+    {
+     "text": "Nopeus on kentän suuntainen, joten magneettinen voima elektroneihin on nolla eikä jännitettä synny.",
+     "correct": true,
+     "feedback": "Oikein: kaava $e = vBl$ pätee, kun nopeus, tanko ja kenttä ovat keskenään kohtisuorassa. Kentän suuntaisesti liikkuvaan elektroniin ei kohdistu magneettista voimaa, tangon päihin ei kerry varausta, ja jännite on nolla."
+    },
+    {
+     "text": "Jännite määräytyy tangon massasta ja vauhdista, joten magneettivuon tiheyttä ei kuulu käyttää.",
+     "feedback": "Tangon massa ei vaikuta induktiojännitteeseen. Jännite syntyy, kun kenttä kohdistaa tangon elektroneihin voiman, ja sen suuruus riippuu vauhdista, magneettivuon tiheydestä ja pituudesta."
+    },
+    {
+     "text": "Jännite syntyy vasta, kun tanko on osa suljettua piiriä, joten tangon päiden välillä ei ole jännitettä.",
+     "feedback": "Liikkuvan tangon päiden välille syntyy jännite $e = vBl$ myös silloin, kun tanko ei ole osa suljettua piiriä. Suljetussa piirissä jännite synnyttää lisäksi virran."
+    },
+    {
+     "text": "Tangon liikkuessa tasaisella vauhdilla jännite on aina nolla, koska liike ei kiihdy.",
+     "feedback": "Jännite ei vaadi kiihtyvää liikettä. Esimerkiksi kenttää vastaan kohtisuoraan tasaisella vauhdilla liikkuvan tangon jännite on vakio $vBl$."
+    }
+   ]
   }
  ],
  "level3": [
@@ -100,6 +272,126 @@
    "answer": 0.06,
    "unit": "mWb",
    "tolerance": 0.02
+  },
+  {
+   "id": "fy7-5-L3-04",
+   "level": 3,
+   "kind": [
+    "data",
+    "model",
+    "reasoning"
+   ],
+   "text": "Kevyt vaunu, jonka päällä on poikittainen metallitanko, lähtee levosta ja kiihtyy tasaisesti vaakasuorilla kiskoilla. Kiskojen väli eli tangon kentässä oleva pituus on $0{,}40\\,\\text{m}$. Kiskojen tasoa vastaan kohtisuoran homogeenisen kentän magneettivuon tiheys on $0{,}25\\,\\text{T}$. Tangon päiden välinen jännite $e$ mitataan hetkinä $t$, jolloin $t = 0$ on lähtöhetki. Taulukossa on esimerkkiaineisto.\n\na) Selitä kaavan $e = vBl$ avulla, miksi jännitteen pitäisi kasvaa suoraan verrannollisena aikaan, ja määritä aineistosta vaunun kiihtyvyys.\n\nb) Laske, kuinka pitkän matkan vaunu kulkee ensimmäisten $1{,}2\\,\\text{s}$:n aikana.\n\nKirjoita perustelut ja laskut vastaukseesi. Vastauslaatikkoon tulee kohdan a) kiihtyvyys.",
+   "answer": 1.6,
+   "unit": "m/s²",
+   "tolerance": 0.04,
+   "data": {
+    "caption": "Esimerkkiaineisto: tangon jännite ajan funktiona",
+    "columns": [
+     "$t\\,(\\text{s})$",
+     "$e\\,(\\text{mV})$"
+    ],
+    "rows": [
+     [
+      "0.2",
+      "32"
+     ],
+     [
+      "0.4",
+      "65"
+     ],
+     [
+      "0.6",
+      "98"
+     ],
+     [
+      "0.8",
+      "133"
+     ],
+     [
+      "1.0",
+      "163"
+     ],
+     [
+      "1.2",
+      "198"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "fy7-5-L3-05",
+   "level": 3,
+   "kind": [
+    "data",
+    "model",
+    "reasoning"
+   ],
+   "text": "Sauvamagneetti pudotetaan pystysuoran $250$ kierroksen käämin läpi, ja käämin jännite $e$ tallennetaan oskilloskoopilla. Ennen pudotusta ja sen jälkeen magneetti on kaukana käämistä. Taulukossa on esimerkkiaineisto tallennuksesta. Jännite on ensin positiivinen, ja kun magneetti on käämin keskellä, jännite on likimain nolla.\n\na) Arvioi taulukon avulla jännitteen ja ajan tulon summa ensimmäisen pulssin aikana, kun $t = 0$–$24\\,\\text{ms}$, ja laske siitä yhden kierroksen läpi kulkeva suurin magneettivuo $\\Phi$.\n\nb) Laske sama suure toisen pulssin avulla, kun $t = 24$–$48\\,\\text{ms}$, ja selitä, miksi pulssit ovat etumerkiltään vastakkaiset ja toinen pulssi on korkeampi ja kapeampi mutta pinta-alaltaan yhtä suuri.\n\nKirjoita perustelut ja laskut vastaukseesi. Vastauslaatikkoon tulee kohdan a) magneettivuo millivebereinä.",
+   "answer": 0.078,
+   "unit": "mWb",
+   "tolerance": 0.05,
+   "data": {
+    "caption": "Esimerkkiaineisto: käämin jännite",
+    "columns": [
+     "$t\\,(\\text{ms})$",
+     "$e\\,(\\text{V})$"
+    ],
+    "rows": [
+     [
+      "0",
+      "-0.02"
+     ],
+     [
+      "4",
+      "0.09"
+     ],
+     [
+      "8",
+      "0.63"
+     ],
+     [
+      "12",
+      "1.77"
+     ],
+     [
+      "16",
+      "1.77"
+     ],
+     [
+      "20",
+      "0.60"
+     ],
+     [
+      "24",
+      "0.03"
+     ],
+     [
+      "28",
+      "-0.32"
+     ],
+     [
+      "32",
+      "-2.15"
+     ],
+     [
+      "36",
+      "-2.16"
+     ],
+     [
+      "40",
+      "-0.31"
+     ],
+     [
+      "44",
+      "-0.01"
+     ],
+     [
+      "48",
+      "0.03"
+     ]
+    ]
+   }
   }
  ]
 }
