@@ -39,6 +39,74 @@
       "answer": 0.009935,
       "unit": "V",
       "tolerance": 0.03
+    },
+    {
+      "id": "fy6-2-L1-06",
+      "level": 1,
+      "text": "You want to measure with a multimeter the current passing through a lamp. The circuit has a battery and a lamp. How is the ammeter connected?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The circuit is opened and the meter is placed in the gap, so that the current of the lamp passes through the meter.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The meter is connected between the terminals of the lamp, so that the meter measures the current across the lamp.",
+          "feedback": "This is how a voltmeter is connected. Current is not measured across a component: an ammeter in parallel directs the current past the lamp and makes a short circuit, because its resistance is very small."
+        },
+        {
+          "text": "The meter is connected between the terminals of the battery, so that the meter measures the current given by the battery.",
+          "feedback": "An ammeter connected between the terminals of the battery is short-circuited: its small resistance lets through a large current, which can blow the fuse of the meter. The meter belongs in the wire of the circuit."
+        },
+        {
+          "text": "The circuit is opened and the meter is placed in the gap, so that the current of the lamp passes through the meter.",
+          "feedback": "Correct: current is measured at the point through which it passes. In a circuit without branches the current is the same everywhere, so a meter in series with the lamp shows the current of the lamp.",
+          "correct": true
+        },
+        {
+          "text": "The meter is placed next to the lamp without wires, so that the meter detects the current from the radiation of the lamp.",
+          "feedback": "A multimeter measures current only when the current passes through its internal resistance. The meter does not detect current from a distance, but must be a part of the electric circuit."
+        }
+      ]
+    },
+    {
+      "id": "fy6-2-L1-07",
+      "level": 1,
+      "text": "A voltmeter is connected in parallel with the component whose voltage is measured. Why must the resistance of a good voltmeter be very large?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Then only a very small current passes through the meter, so the meter hardly changes the circuit.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Then a large current passes through the meter, which keeps the reading of the display steady during the measurement.",
+          "feedback": "A large current through the meter would take current away from the component and change the voltage being measured. The steadiness of the display does not depend on the current passing through the meter."
+        },
+        {
+          "text": "Then only a very small current passes through the meter, so the meter hardly changes the circuit.",
+          "feedback": "Correct: the meter is in parallel, so the current passing through it is taken away from the component. When the resistance of the meter is very large, this current is negligible and the voltage of the component does not change.",
+          "correct": true
+        },
+        {
+          "text": "Then the meter increases the voltage being measured, so even a small voltage shows up clearly.",
+          "feedback": "A voltmeter does not amplify voltage. A good meter shows the voltage as it is, and a large resistance keeps the effect of the meter on the circuit as small as possible."
+        },
+        {
+          "text": "Then the leads of the meter heat up less, so they do not melt when large voltages are measured.",
+          "feedback": "When used as a voltmeter only a negligible current passes through the meter, so the heating of the leads is not the reason. A large resistance is chosen so that the meter does not disturb the circuit being measured."
+        }
+      ]
+    },
+    {
+      "id": "fy6-2-L1-08",
+      "level": 1,
+      "text": "The voltage of a solar cell is measured on the range $20\\,\\text{V}$ of a multimeter, and the display shows $5.98\\,\\text{V}$. On this range the resolution is $0.01\\,\\text{V}$ and the error limit $\\pm(0.5\\,\\% + 2\\ \\text{digits})$. State the measurement result in the form $U \\pm \\Delta U$. Enter the error limit $\\Delta U$ in volts in the answer box.",
+      "answer": 0.0499,
+      "unit": "V",
+      "tolerance": 0.03
     }
   ],
   "level2": [
@@ -73,6 +141,115 @@
       "answer": 9.0,
       "unit": "V",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-2-L2-05",
+      "level": 2,
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "text": "The terminal voltage of the same voltage source is measured with the same multimeter on three voltage ranges. The measurements in the table are example data. The column $r$ is the resolution of the range. On all ranges the error limit is $\\pm(0.5\\,\\% + 2\\ \\text{digits})$.\n\na) Calculate the error limit on each range.\n\nb) Which range should be chosen? Justify your answer.\n\nEnter in the answer box the error limit of the best range in millivolts.",
+      "answer": 11.235,
+      "unit": "mV",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Example data: the same voltage on three measuring ranges",
+        "columns": [
+          "$\\text{Range}\\,(\\text{V})$",
+          "$U\\,(\\text{V})$",
+          "$r\\,(\\text{V})$"
+        ],
+        "rows": [
+          [
+            "2",
+            "1.847",
+            "0.001"
+          ],
+          [
+            "20",
+            "1.85",
+            "0.01"
+          ],
+          [
+            "200",
+            "1.8",
+            "0.1"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy6-2-L2-06",
+      "level": 2,
+      "text": "A student measures the current of a lamp on the current range $200\\,\\text{mA}$ of a multimeter. The meter is correctly connected in series with the lamp, but the display reads OL. What is the best next step?",
+      "kind": [
+        "error",
+        "concept"
+      ],
+      "answer": "The current is switched off and the lead is moved to the jack of a larger range, because the current exceeds the range.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "A smaller current range is chosen, because the current is too small for the resolution of the present range and for the meter.",
+          "feedback": "Too small a current does not cause the reading OL; the display then shows almost zero. OL tells of an overrange, and moving to a smaller range would make the situation worse."
+        },
+        {
+          "text": "It is concluded that the meter has broken, because a working meter always shows numbers, and the measurement is stopped there.",
+          "feedback": "OL is not a fault message. A working meter always shows it when the value being measured exceeds the range, and the solution is to change the range."
+        },
+        {
+          "text": "It is concluded that the current is zero, because the meter cannot show anything else, and the lamp is left out of the circuit.",
+          "feedback": "A zero current would show as the reading zero and not as the reading OL. The lamp should be kept in the circuit, because it is the component being measured."
+        },
+        {
+          "text": "The current is switched off and the lead is moved to the jack of a larger range, because the current exceeds the range.",
+          "feedback": "Correct: OL means that the value is above the selected range. The current is switched off or the circuit is opened before the lead is moved, because the meter has a separate jack for large currents. The size is not known, so we start from the largest range and move to the smallest range where the reading fits.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "fy6-2-L2-07",
+      "level": 2,
+      "kind": [
+        "data",
+        "experiment"
+      ],
+      "text": "The terminal voltage of a car battery is measured five times in a row on the range $20\\,\\text{V}$ of a multimeter. The measurements in the table are example data. The resolution of the range is $0.01\\,\\text{V}$ and the error limit $\\pm(0.5\\,\\% + 2\\ \\text{digits})$. The rest voltage of a fully charged battery is $12.60\\,\\text{V}$.\n\na) Calculate the mean of the readings.\n\nb) Calculate an estimate of the spread of the readings as half of the range of variation.\n\nc) Calculate the error limit of the meter for the mean.\n\nd) Is the measurement result consistent with the rest voltage of a fully charged battery? Justify, and tell whether repeating the readings would help.\n\nEnter in the answer box the error limit of part c) in volts.",
+      "answer": 0.08245,
+      "unit": "V",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Example data: the voltage of a battery in five measurements",
+        "columns": [
+          "$\\text{Measurement}$",
+          "$U\\,(\\text{V})$"
+        ],
+        "rows": [
+          [
+            "1",
+            "12.48"
+          ],
+          [
+            "2",
+            "12.52"
+          ],
+          [
+            "3",
+            "12.46"
+          ],
+          [
+            "4",
+            "12.50"
+          ],
+          [
+            "5",
+            "12.49"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -99,6 +276,30 @@
       "answer": "An ammeter was connected in parallel with the lamp. Its resistance is very small, so the current passed through the meter past the lamp and became large: the lamp went out until the fuse of the meter blew. The blown fuse interrupted the current through the meter, so the meter was left out of the circuit: the lamp lit up again and the display stayed at zero. An ammeter is connected in series: the circuit is opened and the meter is placed in the gap.",
       "unit": "",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-2-L3-04",
+      "level": 3,
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "text": "An example situation: the voltage of an ideal voltage source is $12.0\\,\\text{V}$. Two resistors, $R_1 = 1.0\\,\\text{M}\\Omega$ and $R_2 = 1.0\\,\\text{M}\\Omega$, are connected to it one after another. A student measures the voltage of the resistor $R_2$ with a multimeter whose resistance on the voltage range is $R_\\text{m} = 10\\,\\text{M}\\Omega$. The meter is connected in parallel with the resistor $R_2$.\n\na) How large is the voltage of the resistor $R_2$ without the meter?\n\nb) Calculate the voltage $U$ shown by the meter. A hint: the resistor $R_2$ and the meter have the same voltage $U$, and the current through the resistor $R_1$ is the sum of the currents through the resistor $R_2$ and the meter. The voltage of the resistor $R_1$ is $12.0\\,\\text{V} - U$. The current through a resistor is $I = U : R$.\n\nc) By what percentage does the meter decrease the voltage being measured?\n\nd) The error limit of the meter on the range $20\\,\\text{V}$ is $\\pm(0.5\\,\\% + 2\\ \\text{digits})$ and the resolution $0.01\\,\\text{V}$. Compare the error limit of the meter with the change caused by the meter. Tell what follows from the comparison for the reliability of the measurement result and how the measurement would be made more reliable.\n\nEnter in the answer box the result of part c).",
+      "answer": 4.76,
+      "unit": "%",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy6-2-L3-05",
+      "level": 3,
+      "kind": [
+        "error",
+        "reasoning"
+      ],
+      "text": "A student determines the resistance of a resistor by measuring the voltage and the current of the resistor. The voltmeter is connected in parallel with the resistor and the ammeter in series with the resistor. The measurements are example data. The voltage reading on the range $20\\,\\text{V}$ is $4.52\\,\\text{V}$, the resolution $0.01\\,\\text{V}$ and the error limit $\\pm(0.5\\,\\% + 2\\ \\text{digits})$. The current reading on the range $200\\,\\text{mA}$ is $38.4\\,\\text{mA}$, the resolution $0.1\\,\\text{mA}$ and the error limit $\\pm(1.0\\,\\% + 2\\ \\text{digits})$. The resistance of the voltmeter is $10\\,\\text{M}\\Omega$. The student writes in the report: “$R = 117.71\\,\\Omega$, so the resistor is not of the nominal value $120\\,\\Omega$ but faulty.”\n\na) Calculate the resistance of the resistor $R = U : I$ from the readings.\n\nb) Calculate the relative error limits of the voltage and the current.\n\nc) The relative error limit of a quotient is the sum of the relative error limits of the numerator and the denominator. Calculate the error limit of the resistance $\\Delta R$.\n\nd) Evaluate the student's conclusion and write the measurement result correctly. What must be corrected in the report? Also justify why the current of the voltmeter does not need to be taken into account.\n\nEnter in the answer box the error limit of part c) $\\Delta R$ in ohms.",
+      "answer": 2.8995,
+      "unit": "Ω",
+      "tolerance": 0.03
     }
   ]
 }
