@@ -1,18 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: 37db2f4776a48d36
+CONTENT-HASH: ea5bc4173fe3ad0e
 
 ## Blocking
-(none) Round 3: L1-01 now has `"unit": "N"` and says both distances are horizontal ("vaakasuunnassa"), so the lever arms are unambiguous; the answer 960 N is unchanged and correct.
+(none)
 
 ## Polish
-1. fy5-2-L3-01 — unchanged: the same geometry as koe-2 and ennuste-2 (20 kg plank, supports 0,50 m and 3,00 m), only the load mass differs, so level 3 repeats the investigation. Change the supports or ask for the largest load mass at a given position. (The solution's Järkevyys check was reworded but the task is the same.)
-2. fy5-2-L2-01 and L2-02 use the same method (moment point at the far support) with the same plank; replace one with a different situation (a leaning ladder or a door), if a level-2 item with a tangential wall force is wanted.
-3. The `hylly` figure was not opened (no capture in the packet); its description (symbols d, h, α only) fits the solution, and the L2-03 task text still says "pystysuoraan nähden", which agrees with it.
+- fy5-2-L2-07 solution, Vastaus b): says the results "eivät kasva punnuksen mukana", but they drift 108,5 -> 111,4 g (+3 %). Reword: "vaihtelevat vain muutaman prosentin eikä selvää suuntaa ole".
+- fy5-2-L3-04 solution a): the ladder free-body diagram is described only in words (all other force-diagram solutions in the FY5 set have a drawn figure); add the drawn diagram, since the diagram is the crux of the task.
+- fy5-2-L3-05 is closer to level 2 in demand (one centre-of-mass formula plus interpolation); acceptable because part c) asks for modelling and a design change.
+- fy5-2-L1-06: the force pair (a couple) is not named in the lesson; the task works through the momenttiehto, so fine, but a one-line remark in the solution that equal opposite forces on different lines give a pure rotation would help.
 
 ## Checked
-- Round-1 blocking fixed: the L2-03 solution now defines α from the figure, builds the right triangle with legs d/2 and h/2, and explains why the vertical is the hypotenuse and why tan α = d/h. A student who could not solve the task can follow it. 12,5° recomputed.
-- L1-01 (sorkkarauta): the principle, signs and sanity check (12 × 80 N = 960 N) are right and the task is authentic; only the unit is wrong (Blocking 1).
-- L3-02 now says the wire is attached above the hinge and has a figure; the component step is explained in the solution and in the lesson; T = 196 N recomputed.
-- L3-01 the solution's check is rephrased so that the weighted-mean position gives 3,00 m: correct. L1-03 now says "vaakasuunnassa" for the handles: the arm is unambiguous.
-- All other answers and tolerances unchanged and correct (58,9; 0,60; 98,1; 560; 450; 1,21; 0,75; 207).
-- Finnish: case after number+unit is correct in the new task text ($0{,}050\,\text{m}$:n päässä, $80\,\text{N}$:n voimalla).
+- Counts 8/7/5 = 20; every new id has a complete solution with Annettu, Periaate, Kaava, Sijoitus, Vastaus, Järkevyys.
+- Recomputed: 0,98 m; 1,6 m; slope -202,5 N/m -> 62 kg (tolerance 5 % fits eyeballed line); N2 = 209,9 N (student's 141,3 N matches the forgotten bench weight); mean M = 110,2 g; ladder s = 4,575 m -> 4,6; chair limit 42,2 cm -> 52,97° -> 53.
+- L2-07 data are internally consistent (a 110 g rule reproduces all four balance points within 1 mm).
+- L3-04 uses μ N, momenttipiste at the foot; the check via the top end closes (1803,5 Nm).
+- Plan coverage: two-supports data/graph (L2-05), error with forgotten force (L2-06), ladder with friction (L3-04), why leaning tips a chair (L3-05).
+- No duplicates of old tasks; the lesson's 'yhteinen painopiste' covers L1-08 and L3-05.
+- Finnish and units correct; the L2-05/L2-06 answer boxes match the stated "Vastauslaatikkoon" part.
+- Captures only at 1280 px; no overflow seen in the table tasks.
