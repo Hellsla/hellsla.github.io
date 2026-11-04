@@ -1,15 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: d3180190d4bc348b
+CONTENT-HASH: c2df97fe60adb95a
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
+(none)
+
+## Fixed
+(none needed: text already matched fi in every number and was natural)
 
 ## Polish
-- [Minor] fy1-5-L3-02 solution — "Principle" is a long block mixing the round trip and two negligible-motion estimates; split off a "Justification" line.
-- [Minor] fy1-5-L1-03 solution — Substitution chain rows have fractions of different heights; acceptable.
+(none)
 
 ## Checked
-- Round 2: the round-1 Blocking item is resolved (L3-01 answer field now shows "days", matching answer and solution).
-- Opened open-exercises-1280-2 (L1 solution layout, line-read graph start) and open-exercises-L3-1280-1 (L3-01 unit, answer, conversion and substitution fractions). Units, spacing and chain layout read well.
-
-## Scores
-illustrations 5 · typography 4 · Finnish (English) 4 · accessibility 4
+- Opened screenshots of new tasks (e.g. L2-5, L3-4): tables, display maths, answer boxes and solution blocks render without overflow or layout breaks; units and symbols set as maths.
+- Data table captions and column headers translated; decimal point/comma convention correct for the language.

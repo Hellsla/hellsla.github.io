@@ -117,3 +117,64 @@
 **Sijoitus:** $n = \dfrac{60\,\text{min} - 12\,\text{min}}{6 \cdot 2{,}0\,\text{min}} = \dfrac{48\,\text{min}}{12\,\text{min}} = 4{,}0$
 **Vastaus:** $4{,}0$ toistoa, kaksi merkitsevää numeroa kuten toiston kestossa. Toistojen määrän pitää olla kokonaisluku. Tässä tulos on tasan neljä.
 **Järkevyys:** Neljä toistoa kuudella matkalla on 24 mittausta. Mittauksiin kuluu $24 \cdot 2{,}0\,\text{min} = 48\,\text{min}$. Kun siihen lisätään valmistelun $12\,\text{min}$, summa on $60\,\text{min}$. Aikaa ei jää hukkaan, eikä aika ylity.
+
+## fy1-8-L1-06
+**Kysytty:** tutkimuksen riippumaton (muutettava) muuttuja.
+**Periaate:** Riippumaton muuttuja on se, jota tutkija muuttaa tarkoituksella. Riippuva muuttuja on se, jota mitataan ja jonka odotetaan muuttuvan. Vakioitavat muuttujat pidetään samoina kaikissa mittauksissa. Silloin muutoksen voi yhdistää riippumattomaan muuttujaan.
+**Mallivastaus:** Riippumaton muuttuja on veden lämpötila, koska oppilas valitsee sen itse. Riippuva muuttuja on sokeripalan liukenemisaika, jonka hän mittaa. Veden määrä ja sokeripalan koko vakioidaan eli pidetään samoina. Kello on mittalaite. Se ei ole tutkimuksen muuttuja.
+
+## fy1-8-L1-07
+**Kysytty:** mikä esitetyistä kysymyksistä on hyvä tutkimuskysymys.
+**Periaate:** Hyvä tutkimuskysymys on täsmällinen, ja siihen voi vastata mittaamalla. Siinä on yksi muutettava suure ja yksi mitattava suure. Koe pitää voida tehdä käytettävissä olevilla välineillä.
+**Mallivastaus:** Hyvä kysymys on ”Miten heilurin langan pituus vaikuttaa heilahdusajan pituuteen?” Langan pituutta voi muuttaa, heilahdusajan voi mitata ja muut tekijät voi pitää samoina. Kysymykset ”Millainen heiluri on?” ja ”Miksi heiluri ylipäätään heiluu?” ovat yhdelle kokeelle liian epämääräisiä tai laajoja. Kysymys ”Onko heiluri kiva?” ei koske mitattavaa suuretta.
+
+## fy1-8-L1-08
+**Kysytty:** mikä lause kuuluu tulososioon eikä pohdintaan.
+**Periaate:** Tulososio kertoo, mitä mitattiin ja laskettiin: taulukot, kuvaajat, keskiarvot ja epävarmuudet. Pohdinta tulkitsee tuloksia. Siinä arvioidaan virhelähteitä ja luotettavuutta, otetaan kantaa hypoteesiin ja ehdotetaan jatkotutkimusta.
+**Mallivastaus:** Tuloksiin kuuluu lause ”Viiden mittauksen keskiarvo oli $12{,}4\,\text{s}$ ja puolet vaihteluvälistä $0{,}2\,\text{s}$.” Se kertoo lasketut arvot ilman tulkintaa. Virhelähteen arviointi (reaktioaika), kanta hypoteesiin ja parannusehdotus (valokenno) ovat tulkintaa. Siksi ne kuuluvat pohdintaan.
+
+## fy1-8-L2-05
+**Annettu:** kevyen pallon ajat $3{,}12\,\text{s}$, $3{,}08\,\text{s}$, $3{,}16\,\text{s}$, $3{,}10\,\text{s}$ ja $3{,}14\,\text{s}$; raskaan pallon ajat $3{,}06\,\text{s}$, $3{,}12\,\text{s}$, $3{,}04\,\text{s}$, $3{,}10\,\text{s}$ ja $3{,}08\,\text{s}$
+**Kysytty:** keskiarvojen erotus prosentteina epävarmuudesta sekä johtopäätös, tukeeko aineisto väitettä
+**Periaate:** Kun vertaat kahden ryhmän keskiarvoja, vertaa eroa mittausten hajontaan. Hajonnan yksinkertaisena arviona käytetään tässä puolta vaihteluvälistä. Jos ero ei ole suurempi kuin hajonta ja välit menevät päällekkäin, eroa ei voi osoittaa.
+**Kaava:** $\bar{t} = \dfrac{t_1 + \dots + t_5}{5}$, $\;\Delta t = \dfrac{t_\text{max} - t_\text{min}}{2}$ ja $\;\dfrac{|\bar{t}_{50} - \bar{t}_{200}|}{\Delta t} \cdot 100\,\%$
+**Muunnokset:** Kaikki ajat ovat sekunteina, joten muunnoksia ei tarvita.
+**Sijoitus:** Kevyen pallon aikojen summa on $15{,}60\,\text{s}$, joten $\bar{t}_{50} = \dfrac{15{,}60\,\text{s}}{5} = 3{,}12\,\text{s}$ ja $\Delta t_{50} = \dfrac{3{,}16\,\text{s} - 3{,}08\,\text{s}}{2} = 0{,}04\,\text{s}$. Raskaan pallon summa on $15{,}40\,\text{s}$, joten $\bar{t}_{200} = \dfrac{15{,}40\,\text{s}}{5} = 3{,}08\,\text{s}$ ja $\Delta t_{200} = \dfrac{3{,}12\,\text{s} - 3{,}04\,\text{s}}{2} = 0{,}04\,\text{s}$. Keskiarvojen erotus on $3{,}12\,\text{s} - 3{,}08\,\text{s} = 0{,}04\,\text{s}$, joten $\dfrac{0{,}04\,\text{s}}{0{,}04\,\text{s}} \cdot 100\,\% = 100\,\%$.
+**Vastaus:** $100\,\%$. Keskiarvojen erotus on yhtä suuri kuin epävarmuus. Välit $3{,}12\,\text{s} \pm 0{,}04\,\text{s}$ eli $3{,}08$–$3{,}16\,\text{s}$ ja $3{,}08\,\text{s} \pm 0{,}04\,\text{s}$ eli $3{,}04$–$3{,}12\,\text{s}$ menevät päällekkäin. Siksi aineisto ei tue väitettä ”raskas pallo on nopeampi”.
+**Järkevyys:** Kevyen pallon ajat vaihtelevat välillä $3{,}08$–$3{,}16\,\text{s}$ ja raskaan pallon välillä $3{,}04$–$3{,}12\,\text{s}$. Välin $3{,}08$–$3{,}12\,\text{s}$ aikoja on kummallakin pallolla. Ero ei siis ole suurempi kuin yhden pallon oma vaihtelu. Tämä ei todista, ettei massalla ole vaikutusta. Eroa ei vain voi osoittaa näillä mittauksilla. Lisää toistoja ja tarkempi ajanotto voisivat näyttää, onko eroa.
+
+## fy1-8-L2-06
+**Kysytty:** mikä muutos korjaa suunnitelman.
+**Periaate:** Jotta aikojen eron voi yhdistää massaan, vain massa saa muuttua. Muut tekijät, kuten rampin kulma, pidetään samoina. Jos kaksi muuttujaa muuttuu yhtä aikaa, ero voi johtua kummasta tahansa.
+**Mallivastaus:** Suunnitelma korjataan käyttämällä molemmille kärryille samaa rampin kulmaa ja muuttamalla vain kärryn massaa. Alkuperäisessä suunnitelmassa massa ja kulma vaihtuvat yhtä aikaa. Siksi ajan ero ei kerro, kumpi sen aiheutti. Toistot ja tarkempi kello pienentävät satunnaisvirhettä ja mittauksen epävarmuutta, mutta ne eivät korjaa tätä suunnitteluvirhettä. Entistä raskaampi kärry ja jyrkempi ramppi pahentaisivat sitä.
+
+## fy1-8-L2-07
+**Annettu:** taulukon pisteet $(t;\,s)$ = $(0{,}0\,\text{s};\,0{,}00\,\text{m})$, $(2{,}0\,\text{s};\,0{,}62\,\text{m})$, $(4{,}0\,\text{s};\,1{,}18\,\text{m})$, $(6{,}0\,\text{s};\,1{,}83\,\text{m})$, $(8{,}0\,\text{s};\,2{,}39\,\text{m})$; oppilaan lukema kulmakerroin on $3{,}3$
+**Kysytty:** auton nopeus $v$ yksikössä $\text{m/s}$ ja se, mitä luku $3{,}3$ kuvaa
+**Periaate:** Tasaisessa liikkeessä $s = vt$. Kun aika on vaaka-akselilla ja matka pystyakselilla, suoran kulmakerroin on nopeus. Oppilas vaihtoi akselit. Kun matka on vaaka-akselilla, kulmakerroin on $\Delta t / \Delta s = 1/v$ eli nopeuden käänteisluku. Lisäksi akseleilta puuttuivat suureet ja yksiköt, joten luvulle $3{,}3$ ei voi antaa merkitystä.
+**Kuvaajan lukeminen:** Pisteet ovat lähes suoralla, joka kulkee origon kautta. Sovitettu suora kulkee esimerkiksi pisteiden $(2{,}0\,\text{s};\,0{,}60\,\text{m})$ ja $(8{,}0\,\text{s};\,2{,}40\,\text{m})$ kautta. Kulmakerroin luetaan kahdesta suoran pisteestä, ei kahdesta vierekkäisestä mittauspisteestä.
+**Kaava:** $v = \dfrac{s_2 - s_1}{t_2 - t_1}$
+**Muunnokset:** Matka on metreinä ja aika sekunteina, joten muunnoksia ei tarvita.
+**Sijoitus:** $v = \dfrac{2{,}40\,\text{m} - 0{,}60\,\text{m}}{8{,}0\,\text{s} - 2{,}0\,\text{s}} = \dfrac{1{,}80\,\text{m}}{6{,}0\,\text{s}} = 0{,}30\,\text{m/s}$
+**Vastaus:** $0{,}30\,\text{m/s}$, kaksi merkitsevää numeroa kuten luetuissa pisteissä. Oppilaan luku $3{,}3$ on käänteisluku: $\dfrac{1}{0{,}30\,\text{m/s}} = 3{,}3\,\text{s/m}$. Oikein piirretyssä kuvaajassa $t$ on vaaka-akselilla ja $s$ pystyakselilla. Akseleilla ovat suure ja yksikkö, esimerkiksi $t\,(\text{s})$ ja $s\,(\text{m})$.
+**Järkevyys:** Mittauspisteet kasvavat noin $0{,}6\,\text{m}$ joka kahden sekunnin välein, eli noin $0{,}3\,\text{m/s}$. Tulos on leluauton nopeuden luokkaa.
+
+## fy1-8-L3-04
+**Annettu:** $\bar{t}_{50} = 3{,}12\,\text{s} \pm 0{,}04\,\text{s}$, $\bar{t}_{200} = 3{,}08\,\text{s} \pm 0{,}04\,\text{s}$; käsiajanoton epävarmuus $\Delta t_\text{käsi} = 0{,}15\,\text{s}$; pohdinnan väitteet ”koe onnistui hyvin”, ”hypoteesi oli oikein” ja ”virheitä oli vähän”
+**Kysytty:** kuinka monta kertaa $\Delta t_\text{käsi}$ on keskiarvojen erotus, ja mitkä väitteet aineisto tukee
+**Periaate:** Pohdinnassa arvioidaan, mitä tulokset osoittavat ja kuinka luotettavia ne ovat. Väite on tuettu vain, jos ero on suurempi kuin epävarmuus eli jos epävarmuusvälit eivät mene päällekkäin. Koe ei todista hypoteesia varmaksi. Lausetta ”virheitä oli vähän” ei myöskään saa jättää ilman lukuja.
+**Kaava:** $\Delta \bar{t} = \bar{t}_{50} - \bar{t}_{200}$ ja suhde $k = \dfrac{\Delta t_\text{käsi}}{\Delta \bar{t}}$
+**Muunnokset:** Kaikki ajat ovat sekunteina, joten muunnoksia ei tarvita.
+**Sijoitus:** $\Delta \bar{t} = 3{,}12\,\text{s} - 3{,}08\,\text{s} = 0{,}04\,\text{s}$, joten $k = \dfrac{0{,}15\,\text{s}}{0{,}04\,\text{s}} = 3{,}75 \approx 3{,}8$. Välit ovat $3{,}08$–$3{,}16\,\text{s}$ ja $3{,}04$–$3{,}12\,\text{s}$. Ne menevät päällekkäin välillä $3{,}08$–$3{,}12\,\text{s}$.
+**Vastaus:** noin $3{,}8$ kertaa. Aineisto ei tue väitettä ”hypoteesi oli oikein”. Erotus $0{,}04\,\text{s}$ on yhtä suuri kuin epävarmuus $0{,}04\,\text{s}$, ja välit menevät päällekkäin. Pelkkä pienempi keskiarvo ei riitä. Väite ”virheitä oli vähän” ei myöskään pidä: käsiajanoton epävarmuus on moninkertainen eroon nähden. Väite ”koe onnistui hyvin” on liian vahva, koska koe ei pystynyt osoittamaan eroa. Parempia lauseita: ”Keskiarvojen erotus $0{,}04\,\text{s}$ on yhtä suuri kuin epävarmuus $0{,}04\,\text{s}$, joten aineisto ei osoita pallojen kulkuaikojen eroa. Tämä ei kuitenkaan todista, ettei massalla ole vaikutusta.” ja ”Käsiajanoton epävarmuus $0{,}15\,\text{s}$ on noin $3{,}8$-kertainen erotukseen nähden, joten jatkossa kannattaa käyttää valokennoa ja lisätä toistoja.”
+**Järkevyys:** Käsikellon epävarmuus on moninkertainen mitattuun eroon nähden. Siksi pieni ero ($0{,}04\,\text{s}$, noin $1{,}3\,\%$ ajasta) ei erotu mittausvirheestä. Johtopäätös ”eroa ei voi osoittaa” on siksi sopivan varovainen. Poikkeavaa mittausta ei poistettu, eikä hypoteesia julistettu varmaksi.
+
+## fy1-8-L3-05
+**Annettu:** esikokeen lämpötilat lasiastiassa: $80{,}0\,{}^\circ\text{C}$ hetkellä $0{,}0\,\text{min}$ ja $74{,}0\,{}^\circ\text{C}$ hetkellä $3{,}0\,\text{min}$; laskun epävarmuus $\Delta T_\text{lasku} = 1{,}0\,\text{K}$, suurin sallittu suhteellinen epävarmuus $\varepsilon_\text{max} = 5{,}0\,\%$
+**Kysytty:** mittausjakson vähimmäispituus $t$ yksikössä $\text{min}$ sekä kolme vakioitavaa suuretta ja jäähtymiskäyrien vertailutapa
+**Periaate:** Alun jäähtymisnopeus arvioidaan taulukon kolmen ensimmäisen minuutin muutoksesta. Suhteellinen epävarmuus pysyy rajassa vain, jos mitattu lasku on tarpeeksi suuri epävarmuuteen nähden. Sama pätee aikamittauksessa, jossa ajan epävarmuus on vakio. Ensin lasketaan pienin riittävä lasku. Sitten lasketaan aika, jossa vesi jäähtyy tämän verran alun nopeudella.
+**Kaava:** $r = \dfrac{T_\text{alku} - T_3}{\Delta t}$, $\;\varepsilon = \dfrac{\Delta T_\text{lasku}}{T_\text{lasku}} \le \varepsilon_\text{max}$, josta $T_\text{lasku} \ge \dfrac{\Delta T_\text{lasku}}{\varepsilon_\text{max}}$ ja $t = \dfrac{T_\text{lasku}}{r}$
+**Muunnokset:** Prosentti on sadasosa: $5{,}0\,\% = 0{,}050$. Lämpötilan lasku on sama kelvineinä ja celsiusasteina, joten $\text{K}$ sopii yksiköksi.
+**Sijoitus:** $r = \dfrac{80{,}0\,{}^\circ\text{C} - 74{,}0\,{}^\circ\text{C}}{3{,}0\,\text{min}} = \dfrac{6{,}0\,\text{K}}{3{,}0\,\text{min}} = 2{,}0\,\text{K/min}$. Sitten $T_\text{lasku} \ge \dfrac{1{,}0\,\text{K}}{0{,}050} = 20\,\text{K}$, joten $t = \dfrac{20\,\text{K}}{2{,}0\,\text{K/min}} = 10\,\text{min}$.
+**Vastaus:** vähintään $10\,\text{min}$, kaksi merkitsevää numeroa kuten annetuissa arvoissa. Vakioitavia suureita: vesimäärä (muuten lämpökapasiteetti ja pinta-ala muuttuvat), veden alkulämpötila (jäähtymisnopeus riippuu lämpötilaerosta huoneeseen) ja ympäristö eli huoneen lämpötila ja ilmavirta sekä se, onko astiassa kansi. Käyrät piirretään samaan kuvaajaan. Niitä verrataan alun kulmakertoimilla (laskunopeus samalla lämpötilan laskulla $\Delta T$, esimerkiksi ensimmäisen $20\,\text{K}$ laskun aikana) ja otetaan epävarmuus huomioon.
+**Järkevyys:** Lämpötilan laskun pitää olla $20\,\text{K}$. Se on 20 kertaa epävarmuus $1{,}0\,\text{K}$, joten suhteellinen epävarmuus on $\tfrac{1}{20} = 5\,\%$. Todellisuudessa jäähtyminen hidastuu (vrt. aiempi jäähtymistehtävä), ja hitaimmin jäähtyvässä astiassa lasku on pienempi. Siksi $10\,\text{min}$ on alaraja: jakso kannattaa suunnitella pidemmäksi ja tarkistaa esikokeella.

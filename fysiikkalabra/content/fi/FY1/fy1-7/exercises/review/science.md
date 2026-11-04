@@ -1,13 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: dc94aa09f627304b
-
-Delta review over the audit's PASS (4336e3fb3c6c8370): L2-03 (steel ball, given readings) replaced by a reading task on fy1-7/cylinders-read; numbers with units turned into LaTeX.
+CONTENT-HASH: c9e42a3b190e9ad8
+Round: 3. Checked the diff since round 2 (commit 094aa590): the L3-04 stem now says "metallikappaleen" instead of "lyijyisen kappaleen". Everything else is unchanged, so the round-2 checks still apply.
 
 ## Blocking
 (none)
+
 ## Polish
-- solutions.md:79 — "10 ml luetaan noin 1 ml:n tarkkuudella" would make ρ uncertain by about 10 %, wider than the tolerance 3 %; the levels sit on 10 ml long lines, so say that the readings are on long lines and therefore exact enough for two figures.
+- exercises.json:104 (L1-08) — with m = ρV this is the same task type as L1-02 (g/cm³ · cm³ → g) — consider adding a unit change, for example asking for the answer in kg.
+- solutions.md:184 (L3-04) — "massa ja lukemat kolmella numerolla" leaves out the bubble's 2,0 ml — better: V = 10,0 cm³ is exact to 0,1 ml, like the readings.
+- solutions.md:184 (L3-04) — the only way given to detect the bubble is "lasin sivusta katsomalla" — also mention repeating the measurement.
+
 ## Checked
-- Figure: scale 0–100 ml, ticks every 2 ml, long every 10 ml, numbers every 20 ml; water at 40 ml before and 50 ml after, both on long lines; piece fully submerged; description matches.
-- Recomputed V = 10 ml = 1,0·10⁻⁵ m³, ρ = 0,0890 kg / 1,0·10⁻⁵ m³ = 8900 kg/m³; answers.py 8900; tolerance 0,03 (8633…9167) accepts 8900 and 9,0·10³; rejects 89 g/50 ml (1780) and 89 g/40 ml (2225).
-- Copper 8960 kg/m³ hedged ("voi olla"), consistent with check-3. LaTeX conversions keep every value (11,3; 94,5; 400; 1800; 920; 1,9; 2,0; 788; 4,4; 71).
+- Hash c9e42a3b190e9ad8 at the start and at the end.
+- Round-2 Polish (L3-04 named the metal): resolved. The stem no longer gives lead away. The solution (solutions.md:178–184) takes both Cu and Pb from the table and infers lead from 11,3 g/cm³, so it still fits the new stem. No numbers changed: 11,3 g/cm³, 9,42 g/cm³ and −16,7 % stay as checked.
+- Round-2 checks of L1-07, L1-08, L3-05 and L2-05/L2-06 are carried over unchanged.

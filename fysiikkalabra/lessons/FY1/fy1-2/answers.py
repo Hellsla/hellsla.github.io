@@ -21,6 +21,19 @@ a["fy1-2-L2-04"] = 15.341 * 86400 / 1e6                 # 15,341 km/s · 86 400 
 a["fy1-2-L3-01"] = C * YEAR / AU                        # 1 ly = 2,998e5 · 3,156e7 km = 9,461e12 km; / 1,496e8 km/AU = 63 247 AU -> 63 250
 a["fy1-2-L3-02"] = 30.07 * AU / MOON / 1920             # 30,07 AU = 4,498e9 km = 1,295e6 px; / 1920 px (exact) = 674,4 (four figures)
 a["fy1-2-L3-03"] = 2 * 145 * AU / C / 3600              # one way 145 AU = 2,169e10 km, 72 356 s; there and back twice: 144 713 s = 40,2 h
+# Exercise bank additions (teacher 2026-11-04): L1-06 and L1-08 are multiple choice (no number)
+a["fy1-2-L1-07"] = 18 * 1000 / 3600                     # 18 km/h = 18 · 1000 m / 3600 s = 5,0 m/s
+KN = 1.852                                              # km/h per knot (exact)
+speeds = {"pikalaiva": 38.0 * KN / 3.6, "juna": 66.0 / 3.6, "pyoraili": 9.0, "vene": 12.0 * KN / 3.6}   # table of L2-05 in m/s: 19,55; 18,33; 9,0; 6,17
+a["fy1-2-L2-05"] = round(max(speeds.values()), 1)       # fastest = the 38,0 knot ship: 19,549 -> 19,5 m/s (three figures)
+apples = [152.4, 147.9, 160.8, 155.3, 158.1]            # data of L2-06 in grams (the head wrongly says kg)
+a["fy1-2-L2-06"] = round(sum(apples) / len(apples) / 1000, 4)   # mean 154,9 g = 154,9 · 10^-3 kg = 0,1549 kg
+a["fy1-2-L2-07"] = 12 / 0.20 / 60                       # t = V/q = 12 l / 0,20 l/s = 60 s = 1,0 min (pupil's t = qV has the unit l²/s)
+# L3-04: [T] = s = m^a (m/s²)^b kg^c -> c = 0, -2b = 1, a + b = 0 -> T = k sqrt(L/g), so T ∝ sqrt(L)
+a["fy1-2-L3-04"] = round(1.00 * (1.00 / 0.250) ** 0.5, 2)   # 1,00 s · sqrt(1,00/0,250) = 2,00 s
+tA = 0.65 * 1000 * 3600 / 85.0                          # A: 0,65 kWh = 0,65 · 1000 W · 3600 s = 2,34e6 J; / 85,0 W = 27 529 s = 7,647 h
+tB = 2.20e6 / (0.100 * 1000)                            # B: 2,20 MJ = 2,20e6 J; 0,100 kW = 100 W: 22 000 s = 6,111 h
+a["fy1-2-L3-05"] = round((tA - tB) / 3600, 2)           # A lasts 1,54 h longer -> 1,5 h (two figures from 0,65 kWh; tolerance 0,03: 1,46…1,54)
 # Worked example (not in exercises.json): Neptune 30,1 AU
 s_nep = 30.1 * AU                                       # 4,503e9 km
 t_nep = s_nep / C                                       # 15 020 s = 4,17 h
