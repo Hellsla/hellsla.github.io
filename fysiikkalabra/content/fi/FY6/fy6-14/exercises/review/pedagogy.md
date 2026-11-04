@@ -1,19 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: c53dc15ad7e8996c
+CONTENT-HASH: d82481d212cae25e
+ROUND: 2
 
 ## Blocking
 
 ## Polish
-- exercises.json L1-06 text: "kohti vastusta eli pariston miinusnapaa" equates the resistor with the minus terminal. Fix: "Diodin symbolin kolmio osoittaa kohti vastusta, ja vastus on kytketty pariston miinusnapaan."
-- L2-06 duplicates the method of the existing L3-02 (compute U·I per load, take the maximum; L3-02 asks the same for a 9-point table). Consider asking L2-06 for the load resistance at maximum power or the maximum power point's efficiency, so the two tasks differ.
-- L2-05 and L2-07 and existing L1-02/L2-02 all are "R = (U − U_D) : I". The bank plan's error task (LED without resistor burns, explained from the characteristic) is not in the new set; L3-05 c) partly covers it.
-- L3-05 b) prescribes the method ("Ratkaise ensin ...") and so lowers the demand; keep one hint at most.
+- L2-06 uses the same method as the existing L3-02 (U·I per load, take the maximum); ask L2-06 for the load at maximum power or an efficiency instead (carried over).
+- L2-05, L2-07 and existing L1-02/L2-02 are all "R = (U − U_D) : I"; the plan's error task (LED without resistor) is covered only partly by L3-05 c) (carried over).
+- L3-05 a): "jatkamalla jyrkkää suoraa" now prescribes the extrapolation method; acceptable since the lesson does not teach threshold extraction, but it is the only hint left, keep it at that.
 
 ## Checked
-- Text lead length, all new tasks: longest L3-04 and L1-08 at 23–26 words; none over ~45.
-- L1-08: P = 0,20 W, light 1,2 W, η = 16,7 %.
-- L2-05: red LED, (5,0 − 1,90) : 0,015 = 207 Ω; L2-07: 387 Ω against the student's 600 Ω.
-- L2-06: eight powers recomputed, maximum 181 mW at 22 Ω; table consistent with R = U : I.
-- L3-04: ΣH = 1027, E = 4683 kWh, ΣE = 5340 kWh, 87,7 %; the six deficit months and the 2517 kWh deficit are correct.
-- L3-05: load line meets the curve at about 2,02 V and 13,8 mA (linear and logarithmic interpolation agree); c) 0,10 V rise is correct.
-- Render (L3 and L2 captures, 1280 px): nothing clipped.
+- Round-1 items resolved: L1-06 no longer equates the resistor with the minus terminal; it now gives 9,0 V and "vain pieni jännite" (solution: at most about 1 V).
+- L1-06/L1-07 correct option no longer first; L1-07 answer and options consistent, kind "reasoning" added.
+- L3-05 a): slope 21 mA : 0,05 V = 420 mA/V, threshold 2,05 − 0,048 = 2,00 V, correct; b) 13,8 mA at 2,02 V unchanged (load line (4,5 − U) : 180 meets the table); c) 0,10 V, 4,2-fold current correct.
+- Tolerance 0,05 on L3-05 fits the interpolation; no stale 1,85 V remains in the files.
+- Levels and kinds fit the plan; render not re-opened (wording and option order only).

@@ -1,17 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: f5fcd47fe45cc762
+CONTENT-HASH: 314e222bbcc3a430
+
+Round 2.
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] exercises.json fy6-13-L2-06, väärä vaihtoehto "2–3 s … noin puolet lähteen jännitteestä" — taulukossa jännite on tällä välillä 5,5–6,9 V eli 61–77 % arvosta 9,0 V, joten perustelu on vain heikosti uskottava — muuta esim. "Välillä $1\text{–}2\,\text{s}$, koska jännite on silloin noin puolet lähteen jännitteestä" (3,5–5,5 V) ja korjaa palaute vastaavasti.
-- [Minor] solutions L3-05, Sijoitus — "Lasi: $U = 350\,\text{V}$," ja pilkku ennen display-lohkoa — poista pilkku tai kirjoita "Lasille $U = 350\,\text{V}$, $C$ ja $W$ ovat".
+- [Minor] solutions L3-05, Sijoitus — "Lasille $U = 350\,\text{V}$," päättyy pilkkuun ennen display-lohkoa (renderissä pilkku roikkuu rivin lopussa) — kirjoita "Lasille $U = 350\,\text{V}$, ja $C$ ja $W$ ovat" tai poista pilkku (kierrokselta 1, "Lasi:" korjattu, pilkku jäi).
 - [Minor] solutions L1-07 (taso 1) — sisältö (varaus vakio, jännite kapasitanssin muuttuessa) on lähempänä tasoa 2; ok monivalintana, ei vaadi muutosta.
 
 ## Checked
-- Uudet L1-06..08, L2-05..07, L3-04..05 luettu exercises.jsonista ja solutions.md:stä; luvut laskettu itse (144 mJ, 3,40 mJ, 63,4 mJ, 48,6 kW, suhde 6,89) ja täsmäävät.
-- Avatut kaappaukset 1280 px: open-exercises-1280-8, -9 (13-7, 13-8), L2-1280-6, -7, -8 (13-13..15), L3-1280-6, -8 (13-19, 13-20). Kaavat, taulukot, ratkaisurivit ja vastauslaatikko renderöityvät ilman ylivuotoa. 360 px:n tehtäväkaappauksia ei ole; layout 360 px -tarkistus on ok paketissa.
+- Kierroksen 1 Polish: L2-06:n väärä vaihtoehto "1–2 s" ja palaute ($2{,}0\,\text{V}$) täsmäävät taulukkoon (3,5 → 5,5 V); L3-05:n "Lasi:" korjattu; L2-05:n ja L2-06:n kuvaajanluku ("(12 V; 566 µC)", "(12 s; 1200 V)") sopii sovitettuun suoraan.
+- Muuttuneet kohdat (vaihtoehtojen järjestys L1/L2, L2-06 vastaus ja palaute, L1-05/L2-04 Vastaus-rivi) luettu diffistä ja laskettu: 144 mJ, 47,2 µF, 100 V/s oikein.
+- Avatut kaappaukset 1280 px: open-exercises-L2-1280-7 ja -8 (13-14 taulukko ja valinta, 13-15), L3-1280-8 (13-20 ratkaisu). Ei ylivuotoa, taulukko ja kaavat renderöityvät ehjinä. 360 px:n tehtäväkaappauksia ei ole; layout 360 px ok paketissa.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 4 · accessibility 4
