@@ -27,11 +27,11 @@ a["fy7-5-L3-02"] = 2.0e-3 * 0.10 / (2 * 100 * 0.020) * 1e6   # flip coil: ΔΦ =
 area = 0.5 * 0.90 * 0.040                                    # first pulse, about a triangle: e Δt summed = ½ · 0,90 V · 0,040 s = 0,018 V·s = N ΔΦ
 a["fy7-5-L3-03"] = area / 300 * 1e3                          # Φ_max = 0,018 V·s / 300 = 6,0 · 10⁻⁵ Wb = 0,060 mWb
 # Exercise-bank additions: L1-06 and L2-07 are multiple-choice (answer text, not computed here)
-a["fy7-5-L1-07"] = 300 / 120 * 0.90                 # e is proportional to N: e2 = (N2 / N1) e1 = 2,5 · 0,90 V = 2,25 V
+a["fy7-5-L1-07"] = 300 / 120 * 0.90                 # e is proportional to N: e2 = (N2 / N1) e1 = 2,5 · 0,90 V = 2,25 V -> 2,3 V (two figures)
 a["fy7-5-L1-08"] = 18e-3 / (0.60 * 0.50)                     # B = e / (v l) = 0,018 V / (0,60 m/s · 0,50 m) = 0,060 T
-# L2-05 data: N = 120, Φ (mWb) at 0,10 s steps; steepest part 0,40–0,60 s
+# L2-05 data: N = 120, Φ (mWb) at 0,10 s steps; steepest single interval 0,40–0,50 s
 phi = [0.00, 0.98, 2.03, 3.00, 3.01, 1.80, 0.60]
-a["fy7-5-L2-05"] = 120 * (3.01 - 0.60) * 1e-3 / 0.20         # use the whole falling part: 1,446 V ≈ 1,45 V
+a["fy7-5-L2-05"] = 120 * (3.01 - 1.80) * 1e-3 / 0.10         # interval 0,40–0,50 s: ΔΦ = 1,21 mWb, e = 1,452 V ≈ 1,45 V
 # L2-06 data: slope k of (v, e) through the origin, B = k / l
 v = [0.10, 0.20, 0.30, 0.40, 0.50, 0.60]
 e = [3.1, 5.8, 9.2, 11.9, 15.2, 17.8]                        # mV

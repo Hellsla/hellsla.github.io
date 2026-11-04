@@ -39,6 +39,52 @@
       "answer": 0.5,
       "unit": "m/s",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-5-L1-06",
+      "level": 1,
+      "kind": [
+        "concept"
+      ],
+      "text": "A strong bar magnet is at rest inside a coil, and a sensitive voltmeter is connected to the coil. The meter reads zero. Why is no induced voltage produced between the ends of the coil, even though a large magnetic flux passes through the coil?",
+      "answer": "The flux does not change, and the voltage depends only on the rate of change of the flux.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The flux is so large that the wire of the coil cannot conduct a voltage.",
+          "feedback": "The size of the flux does not prevent a voltage from appearing. The voltage depends on the rate of change of the flux, not on the value of the flux; even a large flux gives zero voltage if it does not change."
+        },
+        {
+          "text": "No current flows in the coil, and a voltage would need a current in order to appear.",
+          "feedback": "Cause and effect are the other way round: the voltage arises from the change in flux, and in a closed circuit it produces the current. The absence of current is due to the fact that no voltage appears."
+        },
+        {
+          "text": "The flux does not change, and the voltage depends only on the rate of change of the flux.",
+          "correct": true,
+          "feedback": "Correct: according to the law of induction, the voltage is proportional to the rate of change of the flux $\\Delta\\Phi : \\Delta t$. The flux of a magnet at rest is constant, so $\\Delta\\Phi = 0$ and the voltage is zero despite the large flux."
+        },
+        {
+          "text": "The field and the coil are in the same place, so the field has no effect on the coil.",
+          "feedback": "The field affects the coil when the flux through it changes, for example when the magnet is moved. The flux of a stationary magnet is constant, and that alone is the reason the voltage is zero."
+        }
+      ]
+    },
+    {
+      "id": "fy7-5-L1-07",
+      "level": 1,
+      "text": "A coil has $120$ turns, and when a magnet is pushed into the coil, an induced voltage of $0.90\\,\\text{V}$ appears between its ends.\n\nA second coil is otherwise similar (the same area), but it has $300$ turns. The magnet is pushed into it in the same way and at the same speed. How large is the induced voltage between the ends of the second coil?",
+      "answer": 2.3,
+      "unit": "V",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy7-5-L1-08",
+      "level": 1,
+      "text": "A metal rod of length $0.50\\,\\text{m}$ moves at a speed of $0.60\\,\\text{m/s}$ in a uniform magnetic field. The rod, its velocity and the field are mutually perpendicular, and an induced voltage of $18\\,\\text{mV}$ is measured between the ends of the rod. How large is the magnetic flux density of the field?",
+      "answer": 0.06,
+      "unit": "T",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -74,6 +120,131 @@
       "answer": 75,
       "unit": "mV",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-5-L2-05",
+      "level": 2,
+      "kind": [
+        "data"
+      ],
+      "text": "A coil has $120$ turns. The table shows sample data: the magnetic flux $\\Phi$ through one turn at different moments while the coil is moved in a magnetic field. The flux changes roughly steadily during each $0.10\\,\\text{s}$ interval.\n\nWhat is the greatest absolute value of the induced voltage of the coil during the measurement period?",
+      "answer": 1.45,
+      "unit": "V",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Sample data: magnetic flux through one turn",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$\\Phi\\,(\\text{mWb})$"
+        ],
+        "rows": [
+          [
+            "0.00",
+            "0.00"
+          ],
+          [
+            "0.10",
+            "0.98"
+          ],
+          [
+            "0.20",
+            "2.03"
+          ],
+          [
+            "0.30",
+            "3.00"
+          ],
+          [
+            "0.40",
+            "3.01"
+          ],
+          [
+            "0.50",
+            "1.80"
+          ],
+          [
+            "0.60",
+            "0.60"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy7-5-L2-06",
+      "level": 2,
+      "kind": [
+        "data",
+        "experiment",
+        "graph"
+      ],
+      "text": "Students investigate how the induced voltage depends on the speed of the motion. A metal rod is moved at a steady speed $v$ on horizontal rails in a uniform magnetic field perpendicular to the plane of the rails, and the voltage $e$ between the ends of the rod is measured.\n\nThe rod and the field are perpendicular, and the distance between the rails, that is, the length of the rod in the field, is $0.20\\,\\text{m}$. The table shows sample data.\n\nPlot the measurement points in a $(v, e)$ coordinate system and fit a straight line through the origin to the points. How large is the magnetic flux density of the field? Use the slope of the line.",
+      "answer": 0.15,
+      "unit": "T",
+      "tolerance": 0.04,
+      "data": {
+        "caption": "Sample data: voltage and speed",
+        "columns": [
+          "$v\\,(\\text{m/s})$",
+          "$e\\,(\\text{mV})$"
+        ],
+        "rows": [
+          [
+            "0.10",
+            "3.1"
+          ],
+          [
+            "0.20",
+            "5.8"
+          ],
+          [
+            "0.30",
+            "9.2"
+          ],
+          [
+            "0.40",
+            "11.9"
+          ],
+          [
+            "0.50",
+            "15.2"
+          ],
+          [
+            "0.60",
+            "17.8"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy7-5-L2-07",
+      "level": 2,
+      "kind": [
+        "error",
+        "concept"
+      ],
+      "text": "A student solves a problem: “A metal rod of length $0.30\\,\\text{m}$ moves at a speed of $2.0\\,\\text{m/s}$ in a uniform magnetic field of $0.50\\,\\text{T}$. The rod is perpendicular to the field but moves in the direction of the field.”\n\nThe student calculates $e = vBl = 2.0\\,\\text{m/s} \\cdot 0.50\\,\\text{T} \\cdot 0.30\\,\\text{m} = 0.30\\,\\text{V}$ and states that a voltage of $0.30\\,\\text{V}$ appears between the ends of the rod.\n\nWhat is wrong in the calculation?",
+      "answer": "The velocity is in the direction of the field, so the magnetic force on the electrons is zero.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The voltage is determined by the mass and the speed of the rod, so the magnetic flux density should not be used.",
+          "feedback": "The mass of the rod does not affect the induced voltage. The voltage appears when the field exerts a force on the electrons of the rod, and its size depends on the speed, the magnetic flux density and the length."
+        },
+        {
+          "text": "A voltage appears only in a closed circuit, so there is no voltage between the ends of the rod.",
+          "feedback": "A voltage $e = vBl$ appears between the ends of a moving rod even when the rod is not part of a closed circuit. In a closed circuit the voltage also produces a current."
+        },
+        {
+          "text": "The voltage of a rod moving at a steady speed is always zero, because the motion is not accelerating.",
+          "feedback": "The voltage does not require accelerating motion. For example, the voltage of a rod moving at a steady speed perpendicular to the field is constant, $vBl$."
+        },
+        {
+          "text": "The velocity is in the direction of the field, so the magnetic force on the electrons is zero.",
+          "correct": true,
+          "feedback": "Correct: the formula $e = vBl$ holds when the velocity, the rod and the field are mutually perpendicular. No magnetic force acts on an electron moving in the direction of the field, no charge collects at the ends of the rod, and the voltage is zero."
+        }
+      ]
     }
   ],
   "level3": [
@@ -100,6 +271,126 @@
       "answer": 0.06,
       "unit": "mWb",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-5-L3-04",
+      "level": 3,
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "text": "A light cart with a transverse metal rod on top starts from rest and accelerates steadily on horizontal rails.\n\nThe distance between the rails, that is, the length of the rod in the field, is $0.40\\,\\text{m}$, and the magnetic flux density of the uniform field perpendicular to the plane of the rails is $0.25\\,\\text{T}$. The voltage $e$ between the ends of the rod is measured at moments $t$, where $t = 0$ is the moment of starting. The table shows sample data.\n\na) Using the formula $e = vBl$, explain why the voltage should grow in direct proportion to time, and determine the acceleration of the cart from the data.\n\nb) Calculate the distance the cart travels during the first $1.2\\,\\text{s}$.\n\nWrite the justifications and calculations in your answer. The answer box takes the acceleration of part a).",
+      "answer": 1.6,
+      "unit": "m/s²",
+      "tolerance": 0.04,
+      "data": {
+        "caption": "Sample data: voltage of the rod as a function of time",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$e\\,(\\text{mV})$"
+        ],
+        "rows": [
+          [
+            "0.2",
+            "32"
+          ],
+          [
+            "0.4",
+            "65"
+          ],
+          [
+            "0.6",
+            "98"
+          ],
+          [
+            "0.8",
+            "133"
+          ],
+          [
+            "1.0",
+            "163"
+          ],
+          [
+            "1.2",
+            "198"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy7-5-L3-05",
+      "level": 3,
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "text": "A bar magnet is dropped through a vertical coil of $250$ turns, and the voltage $e$ of the coil is recorded with an oscilloscope. Before the drop and after it the magnet is far from the coil.\n\nThe table shows sample data from the recording. The voltage is first positive, and when the magnet is in the middle of the coil, the voltage is roughly zero.\n\na) Estimate the area between the voltage graph and the time axis, that is, the sum of the products of voltage and time, during the first pulse, $t = 0$–$24\\,\\text{ms}$, and use it to calculate the greatest magnetic flux $\\Phi$ through one turn.\n\nb) Calculate the same quantity using the second pulse, $t = 24$–$48\\,\\text{ms}$, and explain why the pulses have opposite signs and why the second pulse is taller and narrower but has the same area.\n\nWrite the justifications and calculations in your answer. The answer box takes the magnetic flux of part a) in milliwebers.",
+      "answer": 0.078,
+      "unit": "mWb",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Sample data: voltage of the coil",
+        "columns": [
+          "$t\\,(\\text{ms})$",
+          "$e\\,(\\text{V})$"
+        ],
+        "rows": [
+          [
+            "0",
+            "−0.02"
+          ],
+          [
+            "4",
+            "0.09"
+          ],
+          [
+            "8",
+            "0.63"
+          ],
+          [
+            "12",
+            "1.77"
+          ],
+          [
+            "16",
+            "1.77"
+          ],
+          [
+            "20",
+            "0.60"
+          ],
+          [
+            "24",
+            "0.03"
+          ],
+          [
+            "28",
+            "−0.32"
+          ],
+          [
+            "32",
+            "−2.15"
+          ],
+          [
+            "36",
+            "−2.16"
+          ],
+          [
+            "40",
+            "−0.31"
+          ],
+          [
+            "44",
+            "−0.01"
+          ],
+          [
+            "48",
+            "0.03"
+          ]
+        ]
+      }
     }
   ]
 }
