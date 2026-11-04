@@ -1,13 +1,24 @@
-VERDICT: PASS
-CONTENT-HASH: 195defcc8edc8d08
+VERDICT: FAIL
+CONTENT-HASH: 75bfc1e860c6154b
 
 ## Blocking
+- solutions.md:185, exercises.json:334 (L3-05 b) — **A, wrong cause.** "mahdoton, koska mikään ei liiku valoa nopeammin avaruudessa" mixes up motion through space with the expansion of space. At z = 3 the true recession speed is about 1,5c, and L2-07 teaches that space itself expands. — Task: "Miksi tulosta ei voi pitää galaksin nopeutena?". Answer: "$v = c\,z$ on pienen punasiirtymän likiarvo ($z < 0{,}1$); kun $z = 3{,}00$, se ei päde." Delete the sentence about the speed of light.
 
 ## Polish
+- exercises.json:127 (L2-02) — The plan requires a year for the Planck value. — Add "(Planck Collaboration 2018)".
+- exercises.json:44 (L1-06) — The plan asks for redshift vs. the Doppler effect, but no option names Doppler. — Replace the rotation distractor with "Galaksit liikkuvat avaruudessa poispäin (Doppler-ilmiö)".
+- solutions.md:160 (L2-06) — 171 Mpc with three figures does not match L2-01 and L3-03, which use two figures because H₀ = 70. — Write 1,7 · 10² Mpc.
+- solutions.md:176 (L3-04) — Write "muutaman kilometrin sekunnissa".
+- L2-05 — The plan's `hubble-t` figure is missing. This is for pedagogy and visual to judge.
 
 ## Checked
-- Delta re-review: the only change since the passed version is commit fd2e54e95 in exercises/solutions.md (360 px narrowing); hash 195defcc8edc8d08 equals the packet's, at start and end. No task, answer, unit, tolerance or other file changed.
-- solutions.md:47 (L1-05) — `\dfrac{6,626·10⁻³⁴ J s · 2,998·10⁸ m/s}{X}` → `6,626·10⁻³⁴ J s · \dfrac{2,998·10⁸ m/s}{X}` is identical (a·b/X = a·(b/X)); X = 1,06 · 10⁻³ m still the denominator, braces balanced (old numerator's closing brace now closes the new one), units J s · m/s / (m) give J; recomputed 1,8740 · 10⁻²² J → 1,1698 · 10⁻³ eV, as written.
-- solutions.md:77 (L2-03) — `\dfrac{6,626·10⁻³⁴ J s · 2,998·10⁸ m/s}{X}` → `6,626·10⁻³⁴ J s · \dfrac{2,998·10⁸ m/s}{X}` is identical (a·b/X = a·(b/X)); X = 9,636 · 10⁻⁷ m still the denominator, braces balanced (old numerator's closing brace now closes the new one), units J s · m/s / (m) give J; recomputed 2,0615 · 10⁻¹⁹ J → 1,287 eV, as written.
-- Decimal comma `{,}` kept in every changed number; `\,\text{}` units unchanged.
-- Previous review's recomputation of all 12 answers and its other checks stand (content unchanged).
+- Hash 75bfc1e860c6154b at the start and the end.
+- All 18 numeric answers recomputed independently: all within tolerance.
+- L2-05: H₀ = 11 439 330 / 167 127 = 68,45. The 28 Mpc point is +17,9 % and the others are within 2,9 %.
+- L2-06: the student's error is the multiplication; the result is about 4900 times too large.
+- L3-04: +2,9 % and −38,9 %, ratio 1,885. The model column is nearly Keplerian, so it is realistic. No gravitation calculation is needed.
+- L3-05: z = 3,000, T = 10,9 K.
+- MC L1-06, L1-08 and L2-07 each have exactly one correct option, and the feedback is right.
+- No de Broglie anywhere in the exercise set.
+- The plan's levels are followed, and nothing duplicates an existing task.
+- L3-05 renders at 1280 px.
