@@ -39,6 +39,58 @@
       "answer": 1.0,
       "unit": "mT",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-3-L1-06",
+      "level": 1,
+      "text": "A current flows upwards in a long vertical wire. Which of the following correctly describes the direction of the magnetic field of the wire seen from above, and how the direction changes when the direction of the current is reversed?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The field lines are circles anticlockwise, and reversing the current reverses the circulation, because the direction is determined by the right-hand rule.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The field lines are circles anticlockwise, and reversing the current does not change the circulation, because the direction is determined by the material of the wire.",
+          "feedback": "The direction of the field does not depend on the material of the wire but on the direction of the current. When the current reverses, the field reverses with it, because the field is produced by moving charges."
+        },
+        {
+          "text": "The field lines are straight lines pointing away from the wire, and reversing the current reverses them towards the wire, because the current pushes the field out.",
+          "feedback": "The field lines of a current-carrying wire do not start from the wire or end at it: they are concentric circles around the wire. The field does not radiate outwards from the wire the way the electric field radiates from an electric charge."
+        },
+        {
+          "text": "The field lines are circles anticlockwise, and reversing the current reverses the circulation, because the direction is determined by the right-hand rule.",
+          "feedback": "Correct: when the thumb of the right hand points in the direction of the current, upwards, the fingers curl round the wire anticlockwise as seen from above. When the current reverses, the thumb points down and the circulation of the field turns clockwise.",
+          "correct": true
+        },
+        {
+          "text": "The field lines are circles clockwise, and reversing the current reverses the circulation, because the direction is determined by the left-hand rule.",
+          "feedback": "The course uses the right-hand rule: thumb in the direction of the current, fingers in the direction of the field. The left-hand rule would give the direction the wrong way round, even though it is correct that the field reverses together with the current."
+        }
+      ]
+    },
+    {
+      "id": "fy7-3-L1-07",
+      "level": 1,
+      "kind": [
+        "reasoning"
+      ],
+      "text": "A coil has $400$ turns over a length of $20\\,\\text{cm}$, and a current of $0.75\\,\\text{A}$ flows in it. More wire is wound on the coil so that there are $1000$ turns in total over the same length of $20\\,\\text{cm}$. The current stays the same. The coil is long compared with its width. How great is the magnetic flux density at the centre of the coil after the addition? Give the answer in millitesla.",
+      "answer": 4.7,
+      "unit": "mT",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-3-L1-08",
+      "level": 1,
+      "kind": [
+        "reasoning"
+      ],
+      "text": "The same current of $2.0\\,\\text{A}$ flows in a long straight wire and in a long coil. The coil has $250$ turns over a length of $10\\,\\text{cm}$. The coil is long compared with its width. How many times as great is the magnetic flux density at the centre of the coil as the magnetic flux density of the wire at a distance of $2.0\\,\\text{cm}$ from the wire?",
+      "answer": 310,
+      "unit": "times",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -73,6 +125,119 @@
       "answer": 80,
       "unit": "µT",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-3-L2-05",
+      "level": 2,
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "text": "A student uses a magnetic field sensor to measure the magnetic flux density $B$ at the centre of a coil at different currents $I$. The coil has $600$ turns, and its length is $0.300\\,\\text{m}$. The data are example data.\n\na) Plot the graph $(I,\\,B)$ from the measurement points and fit a straight line to the points. Determine the slope $A$ of the line.\n\nb) From the slope, calculate an estimate of the permeability of free space, $\\mu_0 = A l : N$, and give it in the unit $\\mu\\text{Vs/(Am)}$, that is $10^{-6}\\,\\text{Vs/(Am)}$.\n\nGive the result of part b) in the answer field.",
+      "answer": 1.26,
+      "unit": "µVs/(Am)",
+      "tolerance": 0.04,
+      "data": {
+        "caption": "Field inside a coil as a function of current (example data)",
+        "columns": [
+          "$I\\,(\\text{A})$",
+          "$B\\,(\\text{mT})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "0.05"
+          ],
+          [
+            "0.5",
+            "1.31"
+          ],
+          [
+            "1.0",
+            "2.60"
+          ],
+          [
+            "1.5",
+            "3.80"
+          ],
+          [
+            "2.0",
+            "5.12"
+          ],
+          [
+            "2.5",
+            "6.31"
+          ],
+          [
+            "3.0",
+            "7.60"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy7-3-L2-06",
+      "level": 2,
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "text": "The magnetic flux density of a long straight wire was measured at three distances $r$ from the wire. The effect of the Earth's field has been subtracted from the results, and the current is unknown. The data are example data.\n\na) Calculate the product $B \\cdot r$ for each row and use it to decide whether $B$ is inversely proportional to the distance $r$.\n\nb) Deduce the current $I$ of the wire from the mean of the product $B \\cdot r$.\n\nc) How great is the magnetic flux density at a distance of $3.0\\,\\text{cm}$ from the wire? Give the answer in microtesla.\n\nd) Estimate the magnetic flux density at a distance of $0.50\\,\\text{cm}$ from the wire using inverse proportionality. Give the result in microtesla.\n\nGive the result of part c) in the answer field.",
+      "answer": 54,
+      "unit": "µT",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Field of a straight wire as a function of distance (example data)",
+        "columns": [
+          "$r\\,(\\text{cm})$",
+          "$B\\,(\\mu\\text{T})$"
+        ],
+        "rows": [
+          [
+            "1.0",
+            "161"
+          ],
+          [
+            "2.0",
+            "79"
+          ],
+          [
+            "4.0",
+            "41"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy7-3-L2-07",
+      "level": 2,
+      "kind": [
+        "experiment",
+        "error"
+      ],
+      "text": "A student measures the field inside a coil with a sensor that measures the component of the magnetic flux density in the direction of the sensor itself. She places the sensor at the centre of the coil, but the sensor is turned $60\\,{}^\\circ$ from the axis of the coil. The coil is long, and inside it the field is uniform and along the axis. Which of the following correctly describes how this affects the measurement result?",
+      "answer": "The reading is too small, because the sensor measures only the component in its own direction and not the whole field.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The reading is correct, because the field inside the coil is uniform and the direction of the sensor does not matter.",
+          "feedback": "A uniform field means that the magnitude and direction are the same at every point, not that the direction of the sensor would not matter. The sensor measures the component in its own direction, so a sensor that is at an angle shows less."
+        },
+        {
+          "text": "The reading is too large, because the tilted sensor is nearer to the wires of the coil and their field.",
+          "feedback": "The field does not get stronger near the wire inside the coil: it is uniform over the whole cross-section. Tilting the sensor does not change the field but how large a part of the field shows in the direction of the sensor."
+        },
+        {
+          "text": "The reading is too small, because tilting the sensor weakens the field of the coil and the wires are left to the side.",
+          "feedback": "The position of the sensor does not affect the field of the coil, because the sensor only measures the field. The reading is small because the sensor measures only a part of the field, not because the field itself would become weaker."
+        },
+        {
+          "text": "The reading is too small, because the sensor measures only the component in its own direction and not the whole field.",
+          "feedback": "Correct: the sensor shows the component of the field in its own direction. When the angle to the axis is $60\\,{}^\\circ$, the component is $B \\cos 60\\,{}^\\circ = 0.50\\,B$, so the reading is only half of the true value, even though the field itself does not change.",
+          "correct": true
+        }
+      ]
     }
   ],
   "level3": [
@@ -99,6 +264,60 @@
       "answer": 4.0,
       "unit": "cm",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-3-L3-04",
+      "level": 3,
+      "kind": [
+        "data",
+        "graph",
+        "reasoning"
+      ],
+      "text": "A compass is on a table, and its needle points north. A long north–south wire is stretched directly above the compass, at a height of $4.0\\,\\text{cm}$. The field of the wire at the compass is horizontal and perpendicular to the horizontal component $B_\\text{h}$ of the Earth's field. When a current $I$ is switched on in the wire, the needle turns through an angle $\\alpha$. In the experiment the current is changed five times, and the angle of the needle is read at each current. The data are example data.\n\na) Find the quantity whose graph as a function of the current is a straight line, and justify your choice. Fit a straight line to the points.\n\nb) Using the slope of the line, determine the horizontal component $B_\\text{h}$ of the Earth's magnetic field in microtesla.\n\nc) Explain why the angle $\\alpha$ itself is not directly proportional to the current, and why the angle of the needle approaches $90\\,{}^\\circ$ even if the current is increased a great deal.\n\nGive the result of part b) in the answer field.",
+      "answer": 16,
+      "unit": "µT",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Turning of a compass needle as a function of current (example data)",
+        "columns": [
+          "$I\\,(\\text{A})$",
+          "$\\alpha\\,({}^\\circ)$"
+        ],
+        "rows": [
+          [
+            "1.0",
+            "17.5"
+          ],
+          [
+            "2.0",
+            "32.0"
+          ],
+          [
+            "3.0",
+            "43.5"
+          ],
+          [
+            "4.0",
+            "51.0"
+          ],
+          [
+            "5.0",
+            "57.5"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy7-3-L3-05",
+      "level": 3,
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "text": "A student is designing an electromagnet. She has $30\\,\\text{m}$ of insulated copper wire whose metal has a diameter of $0.50\\,\\text{mm}$ and which with its insulation has a diameter of $0.55\\,\\text{mm}$. The resistivity of copper is $\\rho = 1.7 \\cdot 10^{-8}\\,\\Omega\\,\\text{m}$. She winds the wire in a single layer, tightly side by side, round a cardboard tube. The outer diameter of the tube is $3.0\\,\\text{cm}$, and the length of wire in one turn is $\\pi \\cdot 3.0\\,\\text{cm}$. The coil is connected to a power supply whose voltage is $6.0\\,\\text{V}$. Assume that the power supply gives the current needed and that the resistance of the circuit is only the resistance of the wire. The coil is long enough for the formula for a long coil to hold.\n\na) Calculate the number of turns $N$ and the length $l$ of the coil.\n\nb) Calculate the resistance of the wire, $R = \\rho L : A$, and the current $I$ of the coil.\n\nc) Calculate the magnetic flux density at the centre of the coil in millitesla.\n\nd) Justify what would happen to the field at the centre of the coil if the wire were $60\\,\\text{m}$ long and the voltage stayed the same. Would the field increase, decrease or stay the same? The coil stays a single layer.\n\nGive the result of part c) in the answer field.",
+      "answer": 5.3,
+      "unit": "mT",
+      "tolerance": 0.03
     }
   ]
 }
