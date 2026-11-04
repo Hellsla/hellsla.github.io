@@ -29,7 +29,6 @@
     "breadcrumb": "Path",
     "footer": "Ruukkilabra · upper secondary school physics, LOPS 2019",
     "back_to_course": "← {{course}} module",
-    "back_to_portfolio": "← Back to the portfolio",
     "course_type_required": "Compulsory",
     "course_type_optional": "Optional",
     "lessons_planned": {
@@ -116,8 +115,8 @@
     "home_h1": "Explore. Understand. Apply.",
     "home_sub": "Upper secondary physics, LOPS 2019. Predict, investigate with a simulation or data, explain it yourself.",
     "study": "How to study",
-    "about": "About this site",
-    "about_lead": "Ruukkilabra is open learning material for upper secondary physics (LOPS 2019).",
+    "about": "About",
+    "about_lead": "How Ruukkilabra began, why it comes in three language forms, how AI is used and who makes it.",
     "home_lead": "Make a prediction, investigate the phenomenon with a simulation or data, and build the explanation yourself.",
     "home_tagline": "Investigate. Understand. Apply.",
     "modules_lead": "Physics modules of the Finnish core curriculum (LOPS 2019). The numbers show published lessons, not your own progress.",
