@@ -1,20 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: adeddfca1934989d
+CONTENT-HASH: 0bf9852097a178ac
 
 ## Blocking
 (none)
 
 ## Polish
-- exercises.json L1-06 and L1-08 — both test only that T and f are reciprocals (as do L1-01, L1-02); replace L1-08 with a conceptual check on amplitude vs total distance (L1-05 type) or on the zero crossing.
-- exercises.json L3-05 — kind has "graph" but only a table is given; either add the (t, d) figure or drop "graph". Also "lue D" can give 40,0 (from extremes) or 40,1 (d at t = 0); say in the solution that both are fine.
-- solutions.md L2-06 Järkevyys — "hajonnan arvio" is placed under Järkevyys; move the b) answer into Vastaus so the student finds it.
-- exercises.json L2-05 — no figure although the text speaks of a graph; say "taulukossa on kuvaajan huippujen ajat" or add the figure.
+- exercises.json L1-06 — now the correct answer has "jaksonaikaa vastaava taajuus", which hints at the conversion; acceptable.
+- exercises.json L1-08 — correct option explains by "puolet ajasta" without naming T = 1/f; fine, solution names it.
+- exercises.json L3-05 — answer 44 cm (tol 0,02) fits 44,2; still mostly level-2 computation.
 
 ## Checked
-- Counts 8/7/5, ids and levels fit; L2 tasks are data/experiment/error, L3 modelling (ECG, sine prediction).
-- Recomputed: L2-05 1,64 Hz; L2-06 1,51 s; L2-07 1,34 Hz (oppilas käytti puolta jaksoa); L3-04 79 %, 72,6 and 130 /min; L3-05 44,2 cm. All match the solutions.
-- Error tasks (L2-07, L1-08) name one recognisable error and the solution explains it.
-- Sine fitting skill (slot goal) practised in L3-05; prerequisites none, all inside the slot.
-- Solutions follow the full step structure; Finnish and units fine.
-- L3-04 ECG context is everyday and uses six intervals, not one.
-- No 360 px exercise captures listed; overflow not judgeable from images.
+- Rewritten MC L1-06 and L1-08: one correct option each, distractors misconception-based, correct option no longer longest by a clear margin.
+- L2-06 b) answer moved into Vastaus; L3-05 notes D = 40,0 or 40,1 both fine; kind "graph" removed.
+- L2-07 Periaate states why consecutive crossings are half a period.
+- L3-04 Annettu clarified (six intervals, t = 4,96 s and 2,77 s).
+- Counts 8/7/5; answers recomputed (1,64; 1,51; 1,34; 79 %; 44,2 cm) match.

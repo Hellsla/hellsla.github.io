@@ -12,7 +12,7 @@
       "id": "fy5-7-L1-02",
       "level": 1,
       "text": "Kitaran kieli värähtelee taajuudella $196\\,\\text{Hz}$. Mikä on kielen värähtelyn jaksonaika? Anna vastaus millisekunteina.",
-      "answer": 5.1,
+      "answer": 5.10,
       "unit": "ms",
       "tolerance": 0.02
     },
@@ -144,7 +144,7 @@
       "id": "fy5-7-L2-04",
       "level": 2,
       "text": "Liiketunnistin mittaa etäisyyden jousen varassa värähtelevään punnukseen. Pienin mitattu etäisyys on $32{,}0\\,\\text{cm}$ ja suurin $47{,}0\\,\\text{cm}$. Mikä on värähtelyn amplitudi?",
-      "answer": 7.5,
+      "answer": 7.50,
       "unit": "cm",
       "tolerance": 0.02
     },
