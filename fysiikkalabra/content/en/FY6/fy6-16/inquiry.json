@@ -2,9 +2,9 @@
   "version": 1,
   "contribution": "Applied chapter: the ideas of the module (battery energy, electric power $P = UI$, Joule's law, efficiency, fuse and residual current device) are combined in charging an electric car at home: charging time and losses, single-phase and three-phase charging, the main fuse and simultaneous loads, the cost of charging, and the heating of a cable and a joint.",
   "learn": [
-    "calculate the charging time, the energy from the grid and the cost of charging an electric car.",
+    "calculate the charging time, the energy from the grid and the cost of charging from the battery energy, current and efficiency.",
     "compare single-phase and three-phase charging and explain when simultaneous loads exceed the current of the main fuses.",
-    "use Joule's law to explain why a charging station has its own circuit and why an extension cord gets hot."
+    "use Joule's law to explain why a charging station has its own circuit and why an extension cord and a loose joint get hot."
   ],
   "prior": [
     "The energy of a battery is the nominal voltage times the capacity, $W = UQ$, and the efficiency of charging is below $100\\,\\%$ (chapter *Batteries and the charging circuit*)",

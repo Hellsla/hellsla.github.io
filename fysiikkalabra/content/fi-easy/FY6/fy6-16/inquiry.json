@@ -2,9 +2,9 @@
   "version": 1,
   "contribution": "Soveltava luku: moduulin ideat (akun energia, sähköteho $P = UI$, Joulen laki, hyötysuhde, sulake ja vikavirtasuoja) yhdistetään sähköauton lataamiseen kotona. Luvussa lasketaan latausaika ja häviöt, verrataan yksivaiheista ja kolmivaiheista latausta, tutkitaan pääsulaketta ja yhtä aikaa päällä olevia laitteita sekä latauksen hintaa ja johdon ja liitoksen lämpenemistä.",
   "learn": [
-    "laskemaan sähköauton latausajan, verkosta otetun energian ja latauksen hinnan.",
-    "vertailemaan yksivaiheista ja kolmivaiheista latausta sekä selittämään, milloin pääsulakkeen virta ylittyy.",
-    "selittämään Joulen lain avulla, miksi latausasemalla on oma ryhmä ja vikavirtasuoja ja miksi jatkojohto kuumenee."
+    "laskemaan latausajan, verkosta otetun energian ja hinnan, kun tiedät akun energian, latausvirran ja hyötysuhteen.",
+    "vertailemaan yksivaiheista ja kolmivaiheista latausta sekä selittämään, milloin pääsulakkeiden virta ylittyy, kun laitteita on yhtä aikaa päällä.",
+    "selittämään Joulen lain avulla, miksi latausasemalla on oma ryhmä ja vikavirtasuoja ja miksi jatkojohto ja liitos kuumenevat."
   ],
   "prior": [
     "Akun energia on nimellisjännite kertaa kapasiteetti, $W = UQ$. Latauksen hyötysuhde on alle $100\\,\\%$ (luku *Akut ja latauspiiri*)",
