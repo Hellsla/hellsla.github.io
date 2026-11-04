@@ -47,26 +47,26 @@
       "kind": [
         "concept"
       ],
-      "answer": "Luku $230\\,\\text{V}$ on tehollinen arvo, koska se vastaa lämmitysteholtaan samaa tasajännitettä; huippuarvo on suurempi.",
+      "answer": "Luku $230\\,\\text{V}$ on tehollinen arvo, koska se tuottaa saman tehon kuin tasajännite.",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
         {
-          "text": "Luku $230\\,\\text{V}$ on tehollinen arvo, koska se vastaa lämmitysteholtaan samaa tasajännitettä; huippuarvo on suurempi.",
+          "text": "Luku $230\\,\\text{V}$ on huippuarvo, koska mittari näyttää suurimman hetkellisen jännitteen.",
+          "feedback": "Mittarit eivät näytä huippuarvoa vaan tehollisarvon, ja pistorasian $230\\,\\text{V}$ on tehollinen arvo. Jännitteen huippuarvo on noin $325\\,\\text{V}$ eli suurempi kuin ilmoitettu luku."
+        },
+        {
+          "text": "Luku $230\\,\\text{V}$ on keskiarvo, koska positiivinen ja negatiivinen jännite ovat yhtä suuria.",
+          "feedback": "Sinimuotoisen jännitteen keskiarvo yhden jakson aikana on nolla, koska positiiviset ja negatiiviset arvot kumoavat toisensa. Luku $230\\,\\text{V}$ perustuu tehoon eikä keskiarvoon: se on tehollinen arvo."
+        },
+        {
+          "text": "Luku $230\\,\\text{V}$ on tehollinen arvo, koska se tuottaa saman tehon kuin tasajännite.",
           "feedback": "Oikein: tehollinen arvo on määritelty tehon kautta. Se on se tasajännite, joka tuottaisi vastukseen saman keskimääräisen tehon, ja sinimuotoisen jännitteen huippuarvo on tehollista arvoa $\\sqrt{2}$-kertainen eli noin $325\\,\\text{V}$.",
           "correct": true
         },
         {
-          "text": "Luku $230\\,\\text{V}$ on huippuarvo, koska mittari näyttää suurinta hetkellistä jännitettä; tehollinen arvo on pienempi.",
-          "feedback": "Mittarit eivät näytä huippuarvoa vaan tehollisarvon, ja pistorasian $230\\,\\text{V}$ on tehollinen arvo. Jännitteen huippuarvo on noin $325\\,\\text{V}$ eli suurempi kuin ilmoitettu luku."
-        },
-        {
-          "text": "Luku $230\\,\\text{V}$ on keskiarvo, koska jännite käy yhtä paljon positiivisena ja negatiivisena; huippuarvo on suurempi.",
-          "feedback": "Sinimuotoisen jännitteen keskiarvo yhden jakson aikana on nolla, koska positiiviset ja negatiiviset arvot kumoavat toisensa. Luku $230\\,\\text{V}$ perustuu tehoon eikä keskiarvoon: se on tehollinen arvo."
-        },
-        {
-          "text": "Luku $230\\,\\text{V}$ on tehollinen arvo, koska teho on keskimäärin puolet huipputehosta; huippuarvo on $115\\,\\text{V}$.",
-          "feedback": "Teho on keskimäärin puolet huipputehosta, mutta jännite on tehollista arvoa suurempi, ei pienempi. Huippuarvo saadaan kertomalla luvulla $\\sqrt{2}$, ja se on noin $325\\,\\text{V}$, ei $115\\,\\text{V}$."
+          "text": "Luku $230\\,\\text{V}$ on tehollinen arvo, koska huippuarvo on tehollista arvoa pienempi.",
+          "feedback": "Luku $230\\,\\text{V}$ on kyllä tehollinen arvo, mutta perustelu on väärin: sinimuotoisen jännitteen huippuarvo on tehollista arvoa suurempi, noin $230\\,\\text{V} \\cdot \\sqrt{2} \\approx 325\\,\\text{V}$. Tehollinen arvo määritellään tehon kautta."
         }
       ]
     },
@@ -126,8 +126,7 @@
       "level": 2,
       "text": "Oskilloskooppi mittasi pienen generaattorin jännitettä $e$ ajan $t$ funktiona, ja mittaustulokset ovat taulukossa (esimerkkiaineisto). Jännite on sinimuotoinen, ja mittapisteet kattavat yli yhden jakson.\n\na) Päättele taulukosta jännitteen jaksonaika ja taajuus.\n\nb) Lue taulukosta jännitteen huippuarvo.\n\nc) Laske jännitteen tehollinen arvo.\n\nVastauskenttään kirjataan c-kohdan tulos.",
       "kind": [
-        "data",
-        "graph"
+        "data"
       ],
       "answer": 5.939697,
       "unit": "V",
@@ -165,27 +164,27 @@
           ],
           [
             "12",
-            "-0.1"
+            "−0.1"
           ],
           [
             "14",
-            "-4.2"
+            "−4.2"
           ],
           [
             "16",
-            "-7.3"
+            "−7.3"
           ],
           [
             "18",
-            "-8.4"
+            "−8.4"
           ],
           [
             "20",
-            "-7.2"
+            "−7.2"
           ],
           [
             "22",
-            "-4.3"
+            "−4.3"
           ],
           [
             "24",
@@ -201,7 +200,7 @@
     {
       "id": "fy7-7-L2-06",
       "level": 2,
-      "text": "Ryhmä tutki kokeella, miten generaattorin jännite riippuu pyörimistaajuudesta. Käämi ja magneetti pysyivät samoina, ja pyörimistaajuus kaksinkertaistettiin. Oskilloskoopilla mitatut jännitteen huippuarvot ovat taulukossa (esimerkkiaineisto).\n\na) Ennusta kaavan $e_0 = NBA \\cdot 2\\pi f$ avulla huippuarvo pyörimistaajuudella $10{,}0\\,\\text{Hz}$ ensimmäisen mittauksen perusteella.\n\nb) Kuinka monta prosenttia mitattu huippuarvo poikkeaa ennusteesta? Laske poikkeama ennusteesta ja ilmoita sen itseisarvo.\n\nc) Kerro, miten jännitteen taajuus muuttuu, ja arvioi, sopiiko mittaus ennusteeseen, kun huippuarvot on luettu kymmenesosavoltin tarkkuudella.\n\nVastauskenttään kirjataan b-kohdan tulos.",
+      "text": "Ryhmä tutki kokeella, miten generaattorin jännite riippuu pyörimistaajuudesta. Käämi ja magneetti pysyivät samoina, ja pyörimistaajuus kaksinkertaistettiin. Oskilloskoopilla mitatut jännitteen huippuarvot ovat taulukossa (esimerkkiaineisto).\n\na) Ennusta kaavan $e_0 = NBA \\cdot 2\\pi f$ avulla huippuarvo pyörimistaajuudella $10{,}0\\,\\text{Hz}$ ensimmäisen mittauksen perusteella.\n\nb) Kuinka monta prosenttia mitattu huippuarvo poikkeaa ennusteesta? Laske poikkeama ennusteesta ja ilmoita sen itseisarvo.\n\nc) Kerro, miten jännitteen taajuus muuttuu, ja arvioi, sopiiko mittaus ennusteeseen, kun kunkin huippuarvon lukemisen epävarmuus on $\\pm 0{,}1\\,\\text{V}$.\n\nVastauskenttään kirjataan b-kohdan tulos.",
       "kind": [
         "experiment",
         "data"
@@ -267,7 +266,7 @@
     {
       "id": "fy7-7-L3-04",
       "level": 3,
-      "text": "Polkupyörän napadynamon käämissä on $240$ kierrosta ja sen pinta-ala on $6{,}0\\,\\text{cm}^2$. Dynamon jännitteen huippuarvo $e_0$ mitattiin oskilloskoopilla eri pyörimistaajuuksilla $f$ (esimerkkiaineisto, taulukko).\n\na) Sovita mittapisteisiin suora $e_0 = kf + c$ ja määritä sen kulmakerroin $k$.\n\nb) Laske kulmakertoimen avulla magneettivuon tiheys $B$ ja perustele, miksi kaavan $e_0 = NBA \\cdot 2\\pi f$ mukaan suoran pitäisi kulkea origon kautta, vaikka mitattu suora ei kulje.\n\nc) Ennusta huippuarvo taajuudella $22\\,\\text{Hz}$ ja arvioi, onko vakiotermillä $c$ merkitystä ennusteessa.\n\nVastauskenttään kirjataan b-kohdan magneettivuon tiheys.",
+      "text": "Pullodynamo on polkupyörän renkaan sivua vasten painuva pieni generaattori, jonka käämissä on $240$ kierrosta ja pinta-ala on $6{,}0\\,\\text{cm}^2$. Dynamon jännitteen huippuarvo $e_0$ mitattiin oskilloskoopilla eri pyörimistaajuuksilla $f$ (esimerkkiaineisto, taulukko).\n\na) Sovita mittapisteisiin laskimen lineaarisella sovituksella tai silmämääräisesti suora $e_0 = kf + c$ ja määritä sen kulmakerroin $k$.\n\nb) Laske kulmakertoimen avulla magneettivuon tiheys $B$ ja perustele, miksi kaavan $e_0 = NBA \\cdot 2\\pi f$ mukaan suoran pitäisi kulkea origon kautta, vaikka mitattu suora ei kulje.\n\nc) Ennusta huippuarvo taajuudella $22\\,\\text{Hz}$ ja arvioi, onko vakiotermillä $c$ merkitystä ennusteessa.\n\nVastauskenttään kirjataan b-kohdan magneettivuon tiheys.",
       "kind": [
         "data",
         "model"
@@ -276,7 +275,7 @@
       "unit": "T",
       "tolerance": 0.04,
       "data": {
-        "caption": "Napadynamon huippujännite (esimerkkiaineisto)",
+        "caption": "Pullodynamon huippujännite (esimerkkiaineisto)",
         "columns": [
           "$f\\,(\\text{Hz})$",
           "$e_0\\,(\\text{V})$"
@@ -312,7 +311,7 @@
     {
       "id": "fy7-7-L3-05",
       "level": 3,
-      "text": "Opetuslaboratorion generaattorin käämissä on $120$ kierrosta ja sen pinta-ala on $0{,}0050\\,\\text{m}^2$. Käämi pyörii homogeenisessa magneettikentässä $0{,}20\\,\\text{T}$, ja generaattori on kytketty $8{,}0\\,\\Omega$:n vastukseen. Generaattorin oma resistanssi on niin pieni, että sen voi jättää huomiotta. Pyörimistaajuus on ensin $25\\,\\text{Hz}$ ja sitten $40\\,\\text{Hz}$ (esimerkkitilanne).\n\na) Laske jännitteen huippuarvo ja tehollinen arvo kummallakin pyörimistaajuudella.\n\nb) Laske vastuksen keskimääräinen teho kummallakin pyörimistaajuudella sekä hetkellisen tehon $p(t)$ suurin arvo pyörimistaajuudella $40\\,\\text{Hz}$.\n\nc) Perustele, miksi teho kasvaa yli kaksinkertaiseksi, vaikka pyörimistaajuus kasvaa vain $1{,}6$-kertaiseksi.\n\nVastauskenttään kirjataan vastuksen keskimääräinen teho pyörimistaajuudella $40\\,\\text{Hz}$.",
+      "text": "Opetuslaboratorion generaattorin käämissä on $120$ kierrosta ja sen pinta-ala on $0{,}0050\\,\\text{m}^2$. Käämi pyörii homogeenisessa magneettikentässä $0{,}20\\,\\text{T}$, ja generaattori on kytketty $8{,}0\\,\\Omega$:n vastukseen.\n\nGeneraattorin oma resistanssi on niin pieni, että sen voi jättää huomiotta. Pyörimistaajuus on ensin $25\\,\\text{Hz}$ ja sitten $40\\,\\text{Hz}$ (esimerkkitilanne).\n\na) Laske jännitteen huippuarvo ja tehollinen arvo kummallakin pyörimistaajuudella.\n\nb) Laske vastuksen keskimääräinen teho kummallakin pyörimistaajuudella sekä hetkellisen tehon $p(t)$ suurin arvo pyörimistaajuudella $40\\,\\text{Hz}$.\n\nc) Perustele, miksi teho kasvaa yli kaksinkertaiseksi, vaikka pyörimistaajuus kasvaa vain $1{,}6$-kertaiseksi.\n\nVastauskenttään kirjataan vastuksen keskimääräinen teho pyörimistaajuudella $40\\,\\text{Hz}$.",
       "kind": [
         "model",
         "reasoning"

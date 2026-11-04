@@ -51,7 +51,7 @@
 ## fy7-7-L1-06
 **Kysytty:** mikä väite pistorasian jännitteestä $230\,\text{V}$ on oikein.
 **Periaate:** Vaihtojännite ilmoitetaan tehollisarvona: tehollinen arvo on se tasajännite, joka tuottaisi vastukseen saman keskimääräisen tehon. Sinimuotoisen jännitteen huippuarvo on tehollista arvoa $\sqrt{2}$-kertainen, joten se on suurempi kuin tehollinen arvo. Jännitteen keskiarvo jakson yli on nolla, joten se ei kelpaa jännitteen suuruuden mitaksi.
-**Mallivastaus:** Luku $230\,\text{V}$ on tehollinen arvo: se vastaa lämmitysteholtaan samaa tasajännitettä, ja huippuarvo on suurempi, noin $230\,\text{V} \cdot \sqrt{2} \approx 325\,\text{V}$. Väite, jonka mukaan luku olisi huippuarvo, on väärin, koska mittarit näyttävät tehollisarvon. Väite keskiarvosta on väärin, koska keskiarvo on nolla. Väite, jonka mukaan huippuarvo olisi tehollista arvoa pienempi, on väärin, koska huippuarvo on tehollista arvoa suurempi.
+**Mallivastaus:** Luku $230\,\text{V}$ on tehollinen arvo: se tuottaa saman tehon kuin tasajännite, ja huippuarvo on suurempi, noin $230\,\text{V} \cdot \sqrt{2} \approx 325\,\text{V}$. Väite, jonka mukaan luku olisi huippuarvo, on väärin, koska mittarit näyttävät tehollisarvon. Väite keskiarvosta on väärin, koska keskiarvo on nolla. Väite, jonka mukaan huippuarvo olisi tehollista arvoa pienempi, on väärin, koska huippuarvo on tehollista arvoa suurempi.
 
 ## fy7-7-L1-07
 **Annettu:** pyörimisnopeus $3000$ kierrosta minuutissa
@@ -60,7 +60,7 @@
 **Kaava:** $f = \dfrac{n}{t}$ ja $T = \dfrac{1}{f}$
 **Muunnokset:** $t = 1\,\text{min} = 60\,\text{s}$ ja lopuksi $1\,\text{s} = 1000\,\text{ms}$
 **Sijoitus:** $f = \dfrac{3000}{60\,\text{s}} = 50\,\text{Hz}$ ja $T = \dfrac{1}{50\,\tfrac{1}{\text{s}}} = 0{,}020\,\text{s} = 0{,}020 \cdot 1000\,\text{ms} = 20\,\text{ms}$
-**Vastaus:** $20\,\text{ms}$; lukema $3000$ kierrosta minuutissa on tarkka, joten tulos on täsmälleen $20\,\text{ms}$.
+**Vastaus:** $20\,\text{ms}$, lukema $3000$ kierrosta minuutissa on tarkka, joten tulos on täsmälleen $20\,\text{ms}$.
 **Järkevyys:** Taajuus $50\,\text{Hz}$ on sähköverkon taajuus, ja sen jaksonaika on $20\,\text{ms}$. Tarkistus: $50 \cdot 20\,\text{ms} = 1000\,\text{ms} = 1\,\text{s}$.
 
 ## fy7-7-L1-08
@@ -118,7 +118,7 @@
 **Annettu:** taulukon $14$ mittapistettä, joissa jännite $e$ ajan $t$ funktiona; jännite on sinimuotoinen
 **Kysytty:** a) jaksonaika $T$ ja taajuus $f$, b) huippuarvo $e_0$, c) tehollinen arvo $U$ voltteina
 **Periaate:** Sinimuotoisen jännitteen jaksonaika on aika, jonka kuluttua jännite on samassa arvossa ja kulkee samaan suuntaan. Huippuarvo on jännitteen itseisarvon suurin arvo, ja tehollinen arvo on huippuarvo jaettuna luvulla $\sqrt{2}$.
-**Kuvaajan lukeminen:** Taulukossa jännite on nolla ja nousemassa hetkellä $0\,\text{ms}$ (arvo $0{,}1\,\text{V}$) ja uudelleen hetkellä $24\,\text{ms}$ (arvo $0{,}0\,\text{V}$), joten $T = 24\,\text{ms}$. Jännite on nolla myös hetkellä $12\,\text{ms}$, kun se on kulkemassa puoli jaksoa. Suurin jännite on $8{,}4\,\text{V}$ hetkellä $6\,\text{ms}$ ja pienin $-8{,}4\,\text{V}$ hetkellä $18\,\text{ms}$, joten $e_0 = 8{,}4\,\text{V}$.
+**Kuvaajan lukeminen:** Taulukossa jännite on nolla ja nousemassa hetkellä $0\,\text{ms}$ (arvo $0{,}1\,\text{V}$) ja uudelleen hetkellä $24\,\text{ms}$ (arvo $0{,}0\,\text{V}$), joten $T = 24\,\text{ms}$. Jännite on nolla myös hetkellä $12\,\text{ms}$ (arvo $-0{,}1\,\text{V}$) eli puolen jakson kohdalla. Suurin jännite on $8{,}4\,\text{V}$ hetkellä $6\,\text{ms}$ ja pienin $-8{,}4\,\text{V}$ hetkellä $18\,\text{ms}$, joten $e_0 = 8{,}4\,\text{V}$.
 **Kaava:** $f = \dfrac{1}{T}$ ja $U = \dfrac{e_0}{\sqrt{2}}$
 **Muunnokset:** $T = 24\,\text{ms} = 24 \cdot 0{,}001\,\text{s} = 0{,}024\,\text{s}$
 **Sijoitus:** $f = \dfrac{1}{0{,}024\,\text{s}} = 41{,}7\,\text{Hz}$ ja $U = \dfrac{8{,}4\,\text{V}}{\sqrt{2}} = 5{,}94\,\text{V}$
@@ -132,7 +132,7 @@
 **Kaava:** $e_{0,2} = e_{0,1} \cdot \dfrac{f_2}{f_1}$ ja poikkeama $= \dfrac{|e_{0,\text{ennuste}} - e_{0,\text{mitattu}}|}{e_{0,\text{ennuste}}} \cdot 100\,\%$
 **Muunnokset:** Ei tarvita: suhde $f_2 : f_1$ on lukuarvo.
 **Sijoitus:** a) $e_{0,\text{ennuste}} = 4{,}1\,\text{V} \cdot \dfrac{10{,}0\,\text{Hz}}{5{,}0\,\text{Hz}} = 8{,}2\,\text{V}$. b) Poikkeama $= \dfrac{|8{,}2\,\text{V} - 8{,}0\,\text{V}|}{8{,}2\,\text{V}} \cdot 100\,\% = 2{,}44\,\%$
-**Vastaus:** Poikkeama on $2{,}4\,\%$. c) Jännitteen taajuus on sama kuin pyörimistaajuus, joten sekin kaksinkertaistuu: jaksonaika puolittuu arvosta $200\,\text{ms}$ arvoon $100\,\text{ms}$. Huippuarvot on luettu kymmenesosavoltin tarkkuudella, joten ne ovat noin $\pm 0{,}1\,\text{V}$ epävarmoja. Erotus $0{,}2\,\text{V}$ on saman suuruusluokan kuin kahden lukeman yhteenlaskettu epävarmuus, joten mittaus sopii ennusteeseen ja tukee verrannollisuutta.
+**Vastaus:** Poikkeama on $2{,}4\,\%$. c) Jännitteen taajuus on sama kuin pyörimistaajuus, joten sekin kaksinkertaistuu: jaksonaika puolittuu arvosta $200\,\text{ms}$ arvoon $100\,\text{ms}$. Kunkin huippuarvon lukemisen epävarmuus on $\pm 0{,}1\,\text{V}$. Ennuste $2 \cdot 4{,}1\,\text{V}$ kaksinkertaistaa lukeman epävarmuuden ($\pm 0{,}2\,\text{V}$), ja mitatun arvon epävarmuus $\pm 0{,}1\,\text{V}$ lisäksi, joten yhteensä epävarmuus on noin $\pm 0{,}3\,\text{V}$. Erotus $0{,}2\,\text{V}$ on tätä pienempi, joten mittaus ei poikkea ennusteesta enempää kuin lukematarkkuus sallii: eroa verrannollisuudesta ei voida osoittaa, ja mittaus on sopusoinnussa ennusteen kanssa.
 **Järkevyys:** Kaksinkertaisella taajuudella huippuarvo on lähes kaksinkertainen: $8{,}0 : 4{,}1 = 1{,}95$. Jos huippuarvo olisi riippunut taajuudesta jotenkin muuten, esimerkiksi neliöllisesti, tulos olisi ollut noin $16\,\text{V}$.
 
 ## fy7-7-L2-07
@@ -142,7 +142,7 @@
 **Kaava:** $P = UI$, josta $I = \dfrac{P}{U}$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $I = \dfrac{60\,\text{W}}{230\,\text{V}} = 0{,}2609\,\text{A}$
-**Vastaus:** b) Virran tehollinen arvo on $0{,}26\,\text{A}$, kaksi merkitsevää numeroa kuten tehossa $60\,\text{W}$. a) Oppilas piti verkkojännitettä huippuarvona ja jakoi sen luvulla $\sqrt{2}$, vaikka pistorasian jännite on jo tehollinen arvo. Tehollinen jännite on siis $230\,\text{V}$, ei $163\,\text{V}$, ja liian pienellä jännitteellä virta tuli liian suureksi.
+**Vastaus:** a) Oppilas piti verkkojännitettä huippuarvona ja jakoi sen luvulla $\sqrt{2}$, vaikka pistorasian jännite on jo tehollinen arvo. Tehollinen jännite on siis $230\,\text{V}$, ei $163\,\text{V}$, ja liian pienellä jännitteellä virta tuli liian suureksi. b) Virran tehollinen arvo on $0{,}26\,\text{A}$, kaksi merkitsevää numeroa kuten tehossa $60\,\text{W}$.
 **Järkevyys:** Tarkistus: $230\,\text{V} \cdot 0{,}26\,\text{A} \approx 60\,\text{W}$. Oppilaan tulos $0{,}37\,\text{A}$ olisi antanut tehoksi $230\,\text{V} \cdot 0{,}37\,\text{A} = 85\,\text{W}$, mikä ei ole $60\,\text{W}$.
 
 ## fy7-7-L3-01
@@ -176,13 +176,13 @@
 **Järkevyys:** Pyörimisnopeus pieneni $40\,\%$, joten myös jännite pienenee $40\,\%$. Samalla myös jännitteen taajuus pienenee, ja siksi tuulivoimalassa tarvitaan taajuusmuuttaja, joka sovittaa sekä jännitteen että taajuuden verkkoon.
 
 ## fy7-7-L3-04
-**Annettu:** kierroksia $N = 240$, pinta-ala $A = 6{,}0\,\text{cm}^2$, taulukon kuusi mittapistettä $(f, e_0)$
+**Annettu:** pullodynamon käämissä kierroksia $N = 240$, pinta-ala $A = 6{,}0\,\text{cm}^2$, taulukon kuusi mittapistettä $(f, e_0)$
 **Kysytty:** a) suoran $e_0 = kf + c$ kulmakerroin $k$, b) magneettivuon tiheys $B$ ja perustelu suoran origokulusta, c) huippuarvo taajuudella $22\,\text{Hz}$ ja vakiotermin merkitys
-**Periaate:** Huippuarvo $e_0 = NBA \cdot 2\pi f$ on pyörimistaajuuden lineaarinen funktio, jonka kulmakerroin on $k = NBA \cdot 2\pi$. Mittapisteisiin sovitetaan suora pienimmän neliösumman menetelmällä laskimella, ja kulmakertoimesta ratkaistaan $B$. Pyörimättömässä käämissä jännite on nolla, joten suoran pitäisi kulkea origon kautta.
+**Periaate:** Huippuarvo $e_0 = NBA \cdot 2\pi f$ on pyörimistaajuuden lineaarinen funktio, jonka kulmakerroin on $k = NBA \cdot 2\pi$. Mittapisteisiin sovitetaan suora laskimen lineaarisella sovituksella (tai silmämääräisesti), ja kulmakertoimesta ratkaistaan $B$. Pyörimättömässä käämissä jännite on nolla, joten suoran pitäisi kulkea origon kautta. Pullodynamon rulla pyörii rengasta vasten, ja taajuus $f$ on rullan ja käämin pyörimistaajuus.
 **Kaava:** $k = NBA \cdot 2\pi$, josta $B = \dfrac{k}{NA \cdot 2\pi}$
 **Muunnokset:** $A = 6{,}0\,\text{cm}^2 = 6{,}0 \cdot 0{,}0001\,\text{m}^2 = 6{,}0 \cdot 10^{-4}\,\text{m}^2$
-**Sijoitus:** a) Sovitus antaa $k = 0{,}308\,\tfrac{\text{V}}{\text{Hz}} = 0{,}308\,\text{V}\cdot\text{s}$ ja $c = -0{,}107\,\text{V}$. b) $B = \dfrac{0{,}308\,\text{V}\cdot\text{s}}{240 \cdot 6{,}0 \cdot 10^{-4}\,\text{m}^2 \cdot 2\pi} = \dfrac{0{,}308\,\text{V}\cdot\text{s}}{0{,}9048\,\text{m}^2} = 0{,}3404\,\text{T}$. c) $e_0 = 0{,}308\,\tfrac{\text{V}}{\text{Hz}} \cdot 22\,\text{Hz} - 0{,}107\,\text{V} = 6{,}67\,\text{V}$; ilman vakiotermiä tulos olisi $6{,}78\,\text{V}$.
-**Vastaus:** b) $B \approx 0{,}34\,\text{T}$, kaksi merkitsevää numeroa kuten käämin pinta-alassa. Kaavassa $e_0$ on suoraan verrannollinen taajuuteen, joten jännitteen pitäisi olla nolla, kun $f = 0$. Vakiotermi $c = -0{,}11\,\text{V}$ on pieni ja johtuu mittausvirheestä, kuten oskilloskoopin nollakohdasta tai lukematarkkuudesta ($\pm 0{,}1\,\text{V}$). c) $e_0 \approx 6{,}7\,\text{V}$. Vakiotermi muuttaa ennustetta vain $1{,}6\,\%$, joten sillä ei ole merkitystä.
+**Sijoitus:** a) Kahden ääripisteen tarkistus: $k \approx \dfrac{(9{,}1 - 1{,}4)\,\text{V}}{(30 - 5)\,\text{Hz}} = 0{,}308\,\tfrac{\text{V}}{\text{Hz}}$. Laskimen sovitus antaa $k = 0{,}308\,\tfrac{\text{V}}{\text{Hz}} = 0{,}308\,\text{V}\cdot\text{s}$ ja $c = -0{,}107\,\text{V}$. b) $B = \dfrac{0{,}308\,\text{V}\cdot\text{s}}{240 \cdot 6{,}0 \cdot 10^{-4}\,\text{m}^2 \cdot 2\pi} = \dfrac{0{,}308\,\text{V}\cdot\text{s}}{0{,}9048\,\text{m}^2} = 0{,}3404\,\text{T}$. c) $e_0 = 0{,}308\,\tfrac{\text{V}}{\text{Hz}} \cdot 22\,\text{Hz} - 0{,}107\,\text{V} = 6{,}67\,\text{V}$; ilman vakiotermiä tulos olisi $6{,}78\,\text{V}$.
+**Vastaus:** b) $B \approx 0{,}34\,\text{T}$, kaksi merkitsevää numeroa kuten käämin pinta-alassa. Kaavassa $e_0$ on suoraan verrannollinen taajuuteen, joten jännitteen pitäisi olla nolla, kun $f = 0$. Vakiotermi $c = -0{,}11\,\text{V}$ on pieni ja johtuu todennäköisesti mittausvirheestä, kuten oskilloskoopin nollakohdasta tai lukematarkkuudesta ($\pm 0{,}1\,\text{V}$). c) $e_0 \approx 6{,}7\,\text{V}$. Vakiotermi muuttaa ennustetta vain $1{,}6\,\%$, joten sillä ei ole merkitystä.
 **Järkevyys:** Kestomagneetin kenttä on tyypillisesti kymmenesosia teslaa, joten $0{,}34\,\text{T}$ on uskottava. Tarkistus: suora antaa taajuudella $30\,\text{Hz}$ arvon $9{,}13\,\text{V}$, mikä vastaa mitattua $9{,}1\,\text{V}$.
 
 ## fy7-7-L3-05

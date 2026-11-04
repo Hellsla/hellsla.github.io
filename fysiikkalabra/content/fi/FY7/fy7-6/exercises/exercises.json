@@ -47,25 +47,25 @@
       "kind": [
         "concept"
       ],
-      "answer": "Vuo renkaan läpi pienenee, joten induktiovirran kenttä pyrkii säilyttämään vuon ja rengas vetää magneettia puoleensa.",
+      "answer": "Vuo pienenee, joten induktiovirran kenttä pitää vuon ennallaan ja rengas vetää magneettia puoleensa.",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
         {
-          "text": "Vuo renkaan läpi pienenee, joten induktiovirran kenttä pyrkii säilyttämään vuon ja rengas vetää magneettia puoleensa.",
+          "text": "Vuo pienenee, joten induktiovirran kenttä vastustaa magneetin kenttää ja rengas hylkii magneettia.",
+          "feedback": "Lenzin laki ei vastusta kenttää vaan vuon muutosta. Kun vuo pienenee, induktiovirran kenttä pyrkii pitämään sen ennallaan, eli se on samansuuntainen kuin magneetin kenttä. Hylkivä rengas kuuluisi tilanteeseen, jossa magneetti lähestyy."
+        },
+        {
+          "text": "Vuo kasvaa, joten induktiovirran kenttä pienentää vuota ja rengas hylkii magneettia.",
+          "feedback": "Kun magneetti loittonee, rengasta lävistävä vuo pienenee eikä kasva. Vuo kasvaa vain, kun magneetti lähestyy rengasta; silloin rengas todella hylkii magneettia."
+        },
+        {
+          "text": "Vuo pienenee, joten induktiovirran kenttä pitää vuon ennallaan ja rengas vetää magneettia puoleensa.",
           "correct": true,
           "feedback": "Oikein: vuon pienenemistä vastustetaan, joten induktiovirran kenttä on renkaan keskellä samansuuntainen kuin magneetin kenttä. Renkaan magneetin puoleiselle sivulle syntyy S-napa, joka vetää N-napaa puoleensa ja vastustaa magneetin loittonemista."
         },
         {
-          "text": "Vuo renkaan läpi pienenee, joten induktiovirran kenttä vastustaa magneetin kenttää ja rengas hylkii magneettia.",
-          "feedback": "Lenzin laki ei vastusta kenttää vaan vuon muutosta. Kun vuo pienenee, induktiovirran kenttä pyrkii pitämään sen ennallaan, eli se on samansuuntainen kuin magneetin kenttä. Hylkivä rengas kuuluisi tilanteeseen, jossa magneetti lähestyy."
-        },
-        {
-          "text": "Vuo renkaan läpi kasvaa magneetin liikkuessa, joten induktiovirran kenttä pienentää vuota ja rengas hylkii magneettia.",
-          "feedback": "Kun magneetti loittonee, rengasta lävistävä vuo pienenee eikä kasva. Vuo kasvaa vain, kun magneetti lähestyy rengasta; silloin rengas todella hylkii magneettia."
-        },
-        {
-          "text": "Renkaassa ei kulje virtaa, koska kupari ei ole ferromagneettinen aine, eikä rengas siksi vuorovaikuta magneetin kanssa.",
+          "text": "Renkaassa ei kulje virtaa, koska kupari ei ole ferromagneettista eikä rengas siksi vuorovaikuta magneetin kanssa.",
           "feedback": "Induktio ei vaadi ferromagneettista ainetta, vaan sähköä johtavan suljetun silmukan ja muuttuvan vuon. Kupari johtaa sähköä hyvin, joten vuon muuttuessa renkaaseen syntyy induktiovirta."
         }
       ]
@@ -77,33 +77,33 @@
       "kind": [
         "concept"
       ],
-      "answer": "Putoava magneetti synnyttää alumiiniin pyörrevirtoja, jotka Lenzin lain mukaan jarruttavat sitä; muoviin ei synny virtoja.",
+      "answer": "Putoava magneetti synnyttää alumiiniin pyörrevirtoja, jotka vastustavat liikettä, mutta muoviin virtoja ei synny.",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
         {
-          "text": "Putoava magneetti synnyttää alumiiniin pyörrevirtoja, jotka Lenzin lain mukaan jarruttavat sitä; muoviin ei synny virtoja.",
-          "correct": true,
-          "feedback": "Oikein: magneetin liike muuttaa putken läpi kulkevaa vuota, ja sähköä johtavaan alumiiniin syntyy pyörrevirtoja. Lenzin lain mukaan ne vastustavat liikettä. Muovi on eriste, joten siinä ei kulje virtaa eikä jarrutusta synny."
-        },
-        {
-          "text": "Alumiini vetää magneettia puoleensa, koska se on ferromagneettista, ja tämä vetovoima jarruttaa magneetin putoamista alaspäin.",
+          "text": "Alumiini on ferromagneettista ja vetää magneettia puoleensa, ja tämä vetovoima jarruttaa putoamista.",
           "feedback": "Alumiini ei ole ferromagneettinen aine, eikä paikallaan oleva magneetti tartu siihen. Jarrutus syntyy vain liikkeestä, koska liikkuva magneetti muuttaa vuota ja synnyttää pyörrevirtoja."
         },
         {
-          "text": "Muovi on alumiinia kevyempää, joten painovoima vetää magneettia muoviputkessa voimakkaammin ja putoaminen on nopeampaa.",
+          "text": "Muovi on alumiinia kevyempää, joten painovoima vetää magneettia muoviputkessa voimakkaammin.",
           "feedback": "Magneettiin kohdistuva painovoima riippuu magneetin massasta, ei putken aineesta. Ero syntyy siitä, että vain sähköä johtavaan putkeen syntyy jarruttavia pyörrevirtoja."
         },
         {
-          "text": "Alumiiniputken sisäpinta on karheampi kuin muoviputken, joten kitka hidastaa magneettia alumiiniputkessa selvästi enemmän.",
+          "text": "Alumiiniputken sisäpinta on muovia karheampi, joten kitka hidastaa magneettia alumiiniputkessa enemmän.",
           "feedback": "Kitka ei riipu siitä, johtaako putken aine sähköä. Pyörrevirtajarrutus toimii ilman kosketusta, ja samanlainen muoviputki on yhtä sileä kuin alumiiniputki, mutta siinä magneetti putoaa vapaasti."
+        },
+        {
+          "text": "Putoava magneetti synnyttää alumiiniin pyörrevirtoja, jotka vastustavat liikettä, mutta muoviin virtoja ei synny.",
+          "correct": true,
+          "feedback": "Oikein: magneetin liike muuttaa putken läpi kulkevaa vuota, ja sähköä johtavaan alumiiniin syntyy pyörrevirtoja. Lenzin lain mukaan ne vastustavat liikettä. Muovi on eriste, joten siinä ei kulje virtaa eikä jarrutusta synny."
         }
       ]
     },
     {
       "id": "fy7-6-L1-08",
       "level": 1,
-      "text": "Käämissä on $120$ kierrosta. Kun magneetti työnnetään käämiin, käämin läpi kulkeva magneettivuo kasvaa tasaisesti $2{,}5\\,\\text{mWb}$ ajassa $0{,}050\\,\\text{s}$. Kuinka suuri induktiojännite käämiin syntyy?",
+      "text": "Käämissä on $120$ kierrosta. Kun magneetti työnnetään käämiin, yhden kierroksen läpi kulkeva magneettivuo kasvaa tasaisesti $2{,}5\\,\\text{mWb}$ ajassa $0{,}050\\,\\text{s}$. Kuinka suuri induktiojännite käämiin syntyy?",
       "answer": 6.0,
       "unit": "V",
       "tolerance": 0.02
@@ -192,7 +192,7 @@
     {
       "id": "fy7-6-L2-06",
       "level": 2,
-      "text": "Opiskelija kirjoittaa vastauksensa kokeeseen:\n\n„Sauvamagneetin N-napa lähestyy kuparirengasta, ja renkaan läpi kulkeva magneettivuo kasvaa. Induktiovirta pyrkii kasvattamaan tätä vuon muutosta, joten renkaan magneetin puoleiselle sivulle syntyy S-napa. Rengas vetää magneettia puoleensa, ja magneetti kiihtyy kohti rengasta.”\n\na) Mikä virhe päättelyssä on, ja kumpi napa renkaan magneetin puoleiselle sivulle oikeasti syntyy?\n\nb) Miksi opiskelijan sääntö rikkoisi energian säilymisen?",
+      "text": "Opiskelija kirjoittaa vastauksensa kokeeseen:\n\n”Sauvamagneetin N-napa lähestyy kuparirengasta, ja renkaan läpi kulkeva magneettivuo kasvaa. Induktiovirta pyrkii kasvattamaan tätä vuon muutosta, joten renkaan magneetin puoleiselle sivulle syntyy S-napa. Rengas vetää magneettia puoleensa, ja magneetti kiihtyy kohti rengasta.”\n\na) Mikä virhe päättelyssä on, ja kumpi napa renkaan magneetin puoleiselle sivulle oikeasti syntyy?\n\nb) Miksi opiskelijan sääntö rikkoisi energian säilymisen?",
       "kind": [
         "error"
       ],
@@ -203,7 +203,7 @@
     {
       "id": "fy7-6-L2-07",
       "level": 2,
-      "text": "Opiskelija tutkii käämiä, jossa on $300$ kierrosta. Hän työntää sauvamagneetin käämiin aina saman matkan mutta eri nopeuksilla, jolloin käämin läpi kulkeva magneettivuo kasvaa nollasta aina samaan arvoon $\\Delta\\Phi$, mutta eri ajassa $\\Delta t$. Jännitemittari näyttää työnnön aikana induktiojännitteen $e$. Taulukossa ovat neljän työnnön tulokset (esimerkkiaineisto).\n\na) Laske jokaisesta työnnöstä tulo $e \\cdot \\Delta t$ ja tulojen keskiarvo.\n\nb) Määritä keskiarvon avulla magneettivuon muutos $\\Delta\\Phi$ milliwebereinä.\n\nc) Miten tulojen lähes sama arvo osoittaa, että induktiojännite on kääntäen verrannollinen aikaan $\\Delta t$?\n\nKohdan b) tulos tulee vastauslaatikkoon.",
+      "text": "Opiskelija tutkii käämiä, jossa on $300$ kierrosta. Hän työntää sauvamagneetin käämiin aina saman matkan mutta eri nopeuksilla, jolloin yhden kierroksen läpi kulkeva magneettivuo kasvaa nollasta aina samaan arvoon $\\Delta\\Phi$, mutta eri ajassa $\\Delta t$.\n\nJännitemittari näyttää työnnön aikana keskimääräisen induktiojännitteen $e$. Taulukossa ovat neljän työnnön tulokset (esimerkkiaineisto).\n\na) Laske jokaisesta työnnöstä tulo $e \\cdot \\Delta t$ ja tulojen keskiarvo.\n\nb) Määritä keskiarvon avulla magneettivuon muutos $\\Delta\\Phi$ milliwebereinä.\n\nc) Miten tulojen lähes sama arvo osoittaa, että induktiojännite on kääntäen verrannollinen aikaan $\\Delta t$?\n\nKohdan b) tulos tulee vastauslaatikkoon.",
       "kind": [
         "data",
         "experiment"
@@ -266,7 +266,7 @@
     {
       "id": "fy7-6-L3-04",
       "level": 3,
-      "text": "Fysiikan kokeessa $50\\,\\text{g}$:n neodyymimagneetti pudotetaan pystysuorassa paksuseinäisessä kupariputkessa, ja sen vauhti mitataan videolta eri ajanhetkillä (esimerkkiaineisto). Pyörrevirtojen jarruttavan voiman oletetaan olevan verrannollinen vauhtiin, $F_\\text{j} = k v$. Ilmanvastus ja kitka jätetään huomiotta.\n\na) Mikä on magneetin rajavauhti $v_\\text{r}$? Käytä kolmen viimeisen mittauksen keskiarvoa.\n\nb) Kuinka suuri on jarruttava voima rajavauhdilla, ja mikä on kerroin $k$? Perustele, miksi voima on tällöin juuri tämän suuruinen.\n\nc) Kuinka suuri on magneetin kiihtyvyys hetkellä $t = 0{,}10\\,\\text{s}$? Tarkista tulos kuvaajan muutosnopeudella hetkien $0{,}05\\,\\text{s}$ ja $0{,}15\\,\\text{s}$ välillä.\n\nd) Millä teholla putken sisäenergia kasvaa rajavauhdilla, ja mihin magneetin energia tällöin muuttuu?\n\nKohdan c) kiihtyvyys tulee vastauslaatikkoon.",
+      "text": "Fysiikan kokeessa $50\\,\\text{g}$:n neodyymimagneetti pudotetaan pystysuorassa paksuseinäisessä kupariputkessa, ja sen vauhti mitataan videolta eri ajanhetkillä (esimerkkiaineisto).\n\nPyörrevirtojen jarruttavan voiman oletetaan olevan verrannollinen vauhtiin, $F_\\text{j} = k v$. Ilmanvastus ja kitka jätetään huomiotta.\n\na) Mikä on magneetin rajavauhti $v_\\text{r}$? Käytä kolmen viimeisen mittauksen keskiarvoa.\n\nb) Kuinka suuri on jarruttava voima rajavauhdilla, ja mikä on kerroin $k$? Perustele, miksi voima on tällöin juuri tämän suuruinen.\n\nc) Kuinka suuri on magneetin kiihtyvyys hetkellä $t = 0{,}10\\,\\text{s}$? Piirrä $(t, v)$-kuvaaja ja tarkista tulos sen kulmakertoimella hetkien $0{,}05\\,\\text{s}$ ja $0{,}15\\,\\text{s}$ välillä.\n\nd) Millä teholla putken sisäenergia kasvaa rajavauhdilla, ja mihin magneetin energia tällöin muuttuu?\n\nKohdan c) kiihtyvyys tulee vastauslaatikkoon.",
       "kind": [
         "data",
         "graph",
@@ -321,13 +321,13 @@
     {
       "id": "fy7-6-L3-05",
       "level": 3,
-      "text": "Muuntajan rautasydämessä vaihtuva magneettikenttä synnyttää pyörrevirtoja, jotka lämmittävät sydäntä. Kokeessa mitattiin saman kokoisen rautasydämen pyörrevirtahäviöiden teho $P$, kun sydän koottiin eri paksuisista eristetyistä levyistä. Sydämen tilavuus ja sen läpi kulkeva vaihtuva magneettikenttä olivat joka kerta samat (esimerkkiaineisto).\n\na) Laske jokaiselle mittaukselle suhde $P : d^2$. Mitä tulokset kertovat siitä, miten teho $P$ riippuu levyn paksuudesta $d$?\n\nb) Laske suhteiden keskiarvo $k$.\n\nc) Ennusta pyörrevirtahäviöiden teho, kun sydän koostuu $0{,}35\\,\\text{mm}$ paksuista levyistä. Anna vastaus watteina.\n\nd) Perustele Lenzin lain ja pyörrevirtojen avulla, miksi ohuet levyt pienentävät häviötä. Kuinka moninkertainen häviö olisi $5{,}0\\,\\text{mm}$ paksuilla levyillä?\n\nKohdan c) teho tulee vastauslaatikkoon.",
+      "text": "Muuntajan rautasydämessä vaihtuva magneettikenttä synnyttää pyörrevirtoja, jotka lämmittävät sydäntä.\n\nKokeessa mitattiin saman kokoisen rautasydämen pyörrevirtahäviöiden teho $P$, kun sydän koottiin eri paksuisista eristetyistä levyistä. Sydämen tilavuus ja sen läpi kulkeva vaihtuva magneettikenttä olivat joka kerta samat, ja levyt olivat ohuita verrattuna siihen syvyyteen, jolle kenttä tunkeutuu rautaan (esimerkkiaineisto).\n\na) Laske jokaiselle mittaukselle suhde $P : d^2$. Mitä tulokset kertovat siitä, miten teho $P$ riippuu levyn paksuudesta $d$?\n\nb) Laske suhteiden keskiarvo $k$.\n\nc) Ennusta pyörrevirtahäviöiden teho, kun sydän koostuu $0{,}35\\,\\text{mm}$ paksuista levyistä. Anna vastaus watteina.\n\nd) Perustele Lenzin lain ja pyörrevirtojen avulla, miksi ohuet levyt pienentävät häviötä. Kuinka moninkertainen häviö olisi $1{,}0\\,\\text{mm}$ paksuilla levyillä kuin $0{,}35\\,\\text{mm}$:n levyillä?\n\nKohdan c) teho tulee vastauslaatikkoon.",
       "kind": [
         "data",
         "model",
         "reasoning"
       ],
-      "answer": 0.93,
+      "answer": 0.15,
       "unit": "W",
       "tolerance": 0.03,
       "data": {
@@ -338,20 +338,20 @@
         ],
         "rows": [
           [
-            "4.0",
-            "121"
+            "1.00",
+            "1.21"
           ],
           [
-            "2.0",
-            "30.2"
-          ],
-          [
-            "1.0",
-            "7.7"
+            "0.80",
+            "0.76"
           ],
           [
             "0.50",
-            "1.9"
+            "0.31"
+          ],
+          [
+            "0.25",
+            "0.073"
           ]
         ]
       }

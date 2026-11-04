@@ -1,20 +1,20 @@
-VERDICT: FAIL
-CONTENT-HASH: 91ada7bf896f45b8
+VERDICT: PASS
+CONTENT-HASH: b0742fa0acf09e72
+ROUND: 2
 
 ## Blocking
-Lauri's rule (2–4 paragraphs); these have five. Fix: merge lettered parts and put the box note at the end of the last part.
-- exercises.json fy7-8-L3-04 (first paragraph 40 words, situation and given values together) — P1 "Suunnittelija vertaa ... 150 km:n päähän." / P2 "Johtimien resistanssi ... Luvut ovat esimerkkiaineistoa." / P3 "a) ... b) ..." / P4 "c) ... Anna vastauslaatikkoon kohdan c) säästö miljoonina euroina."
-- fy7-8-L3-05 — P1 "Jakelumuuntajan ... häviöteho on $P_\text{h} = ...$" / P2 "a) ... b) ..." / P3 "c) ... Anna vastauslaatikkoon ... kilowatteina."
+(none) Round 1 flagged only paragraph count (L3-04, L3-05); under the rule lettered parts stand alone. L3-04's 40-word lead mixing situation and data is now split (23 + 21 words).
 
 ## Polish
-- L1-08 uses hyötysuhde and a lossy transformer, which the lesson (ideal transformer) does not teach; give the definition η = P2 : P1 in the task as L2-06 does.
-- L3-05 solution: "muilta riveiltä määritetty a antaisi 54–57 kW" holds for 40–80 kW only; the 20 kW row gives about 49 kW. Write "riveiltä 40–60 kW".
-- L3-05 c): the maximum-efficiency condition P0 = aP2 is given, not derived; fine for the lesson level, but say so in the solution.
-- L3-04 uses the same 220 and 400 kV pair as L3-03; the 3,3 ratio repeats. Consider other voltages.
-- L3-04: state whether "johtimien resistanssi" is for the whole circuit, since a real line has three phases.
+- L3-04 uses the same 220 and 400 kV pair as L3-03, so the 3,3 ratio repeats; consider other voltages.
+- L3-05: the condition P0 = aP2 is given, not derived; the solution now says so, good. Name which row is the main fit for a.
+- L3-04: "johtimien yhteinen resistanssi" now clarifies the whole circuit; a short note on three phases is optional.
+- L1-08 now gives eta = P2 : P1 in the task, which fixes the earlier gap.
 
 ## Checked
 - Counts 8/7/5; new tasks have complete solutions.
-- Recomputed: L1-07 210 kW; L1-08 90 %; L2-05 k = 0,012354 V, N1 = 486; L2-06 54–88 %, 87,7 % on the last row, losses 2,1–3,2 W; L2-07 0,20 A and the error (current is not kept); L3-04 R = 6 Ω, 909 and 500 A, 4,96 and 1,50 MW, 43 440 and 13 140 MWh, 1,515 M€; L3-05 P0 = 0,6 kW, a = 2,03·10⁻⁴, 54 kW.
-- L1-06 distractors are real misconceptions with their own feedback.
-- Levels fit the plan (data at L2, YO-style L3, error analysis, MC); no duplicate of the worked example.
+- L2-06 answer 87,72 % (solution 87,7 %, three s.f.) matches; "oletetaan P1 = U1 I1" added in task and solution.
+- L3-05: P0 = 0,6 kW, a = 2,03e-4 from the 80 kW row, P = sqrt(P0/a) = 54 kW; range 49-57 kW from rows 20-60 kW stated honestly.
+- L3-04: R = 6 Ω, 909 and 500 A, 4,96 and 1,50 MW, 43 440 and 13 140 MWh, 1,515 M€ unchanged and correct; "vakio teho" wording added.
+- L2-05 k = 0,012354 V/kierros, N1 = 486; L1-07 reworded (current settled), L1-07/L2-07 error analysis sound.
+- Levels fit the plan; no duplicate of the worked example; no lead text over 45 words.

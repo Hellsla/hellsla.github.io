@@ -130,8 +130,8 @@
 **Periaate:** Käämien pinta-ala on sama ja magneetti liikkuu samoin, joten yhden kierroksen vuon muutosnopeus $\Delta\Phi : \Delta t$ on molemmissa sama. Kierrokset ovat sarjassa, joten jännite on suoraan verrannollinen kierrosten lukumäärään.
 **Kaava:** $e_1 = N_1\dfrac{\Delta\Phi}{\Delta t}$ ja $e_2 = N_2\dfrac{\Delta\Phi}{\Delta t}$, joten $e_2 = \dfrac{N_2}{N_1}\,e_1$
 **Muunnokset:** Ei tarvita: kierrosluvut ovat lukuja, ja jännite on voltteina.
-**Sijoitus:** $e_2 = \dfrac{300}{120} \cdot 0{,}90\,\text{V} = 2{,}5 \cdot 0{,}90\,\text{V} = 2{,}25\,\text{V}$
-**Vastaus:** $2{,}25\,\text{V}$, kolme merkitsevää numeroa, koska tulos on tarkka tulo $2{,}5 \cdot 0{,}90\,\text{V}$.
+**Sijoitus:** $e_2 = \dfrac{300}{120} \cdot 0{,}90\,\text{V} = 2{,}5 \cdot 0{,}90\,\text{V} = 2{,}25\,\text{V} \approx 2{,}3\,\text{V}$
+**Vastaus:** $2{,}3\,\text{V}$, kaksi merkitsevää numeroa kuten jännitteessä $0{,}90\,\text{V}$.
 **Järkevyys:** Kierroksia on yli kaksi kertaa enemmän, joten jännite on yli kaksinkertainen: $2 \cdot 0{,}90\,\text{V} = 1{,}8\,\text{V}$ on pienempi ja $3 \cdot 0{,}90\,\text{V} = 2{,}7\,\text{V}$ suurempi kuin vastaus. Yhden kierroksen jännite on molemmissa $0{,}90\,\text{V} : 120 = 7{,}5\,\text{mV}$.
 
 ## fy7-5-L1-08
@@ -148,12 +148,12 @@
 **Annettu:** kierrosten lukumäärä $N = 120$; taulukosta yhden kierroksen vuo $\Phi$ ajan $t$ funktiona, väli $0{,}10\,\text{s}$ (esimerkkiaineisto)
 **Kysytty:** induktiojännitteen suurin itseisarvo $|e|$ voltteina
 **Periaate:** Induktiolain mukaan jännite on verrannollinen vuon muutosnopeuteen $\Delta\Phi : \Delta t$, joten jännite on suurin siinä kohdassa, jossa vuo muuttuu nopeimmin. Vuo muuttuu kunkin aikavälin aikana likimain tasaisesti, joten jännite on kullakin välillä likimain vakio.
-**Kuvaajan lukeminen:** Aikavälillä $0$–$0{,}30\,\text{s}$ vuo kasvaa nollasta arvoon $3{,}00\,\text{mWb}$, eli kasvu on noin $10\,\tfrac{\text{mWb}}{\text{s}}$; suurin yksittäinen väli on $0{,}10$–$0{,}20\,\text{s}$, jolla vuo kasvaa $1{,}05\,\text{mWb}$. Aikavälillä $0{,}30$–$0{,}40\,\text{s}$ vuo ei muutu, joten jännite on nolla. Aikavälillä $0{,}40$–$0{,}60\,\text{s}$ vuo pienenee arvosta $3{,}01\,\text{mWb}$ arvoon $0{,}60\,\text{mWb}$, joten $\Delta\Phi = 2{,}41\,\text{mWb}$ ja $\Delta t = 0{,}20\,\text{s}$. Tämä on jyrkin osa.
+**Kuvaajan lukeminen:** Taulukon vuoarvoista lasketaan vuon muutos $\Delta\Phi$ jokaisella $0{,}10\,\text{s}$:n välillä. Nousuvaiheessa ($0$–$0{,}30\,\text{s}$) muutokset ovat $0{,}98$, $1{,}05$ ja $0{,}97\,\text{mWb}$, suurin $1{,}05\,\text{mWb}$ välillä $0{,}10$–$0{,}20\,\text{s}$. Välillä $0{,}30$–$0{,}40\,\text{s}$ vuo ei juuri muutu ($0{,}01\,\text{mWb}$). Laskuvaiheessa muutokset ovat $\Delta\Phi = 1{,}21\,\text{mWb}$ välillä $0{,}40$–$0{,}50\,\text{s}$ ja $1{,}20\,\text{mWb}$ välillä $0{,}50$–$0{,}60\,\text{s}$. Jyrkin yksittäinen väli on siis $0{,}40$–$0{,}50\,\text{s}$, jolla $\Delta\Phi = 1{,}21\,\text{mWb}$ ja $\Delta t = 0{,}10\,\text{s}$.
 **Kaava:** $|e| = N\dfrac{\Delta\Phi}{\Delta t}$
-**Muunnokset:** $\Delta\Phi = 2{,}41\,\text{mWb} = 2{,}41 \cdot 10^{-3}\,\text{Wb}$
-**Sijoitus:** $|e| = 120 \cdot \dfrac{2{,}41 \cdot 10^{-3}\,\text{Wb}}{0{,}20\,\text{s}} = 120 \cdot 0{,}01205\,\text{V} = 1{,}446\,\text{V} \approx 1{,}45\,\text{V}$
-**Vastaus:** $1{,}45\,\text{V}$, kolme merkitsevää numeroa kuten taulukon vuoarvoissa.
-**Järkevyys:** Nousuvaiheessa vuo muuttuu noin $10\,\tfrac{\text{mWb}}{\text{s}}$, jolloin jännite on $120 \cdot 10 \cdot 10^{-3}\,\text{V} = 1{,}2\,\text{V}$ eli pienempi kuin laskuvaiheessa. Suurin jännite on siellä, missä kuvaaja on jyrkin, ei siellä, missä vuo on suurin.
+**Muunnokset:** $\Delta\Phi = 1{,}21\,\text{mWb} = 1{,}21 \cdot 10^{-3}\,\text{Wb}$
+**Sijoitus:** $|e| = 120 \cdot \dfrac{1{,}21 \cdot 10^{-3}\,\text{Wb}}{0{,}10\,\text{s}} = 120 \cdot 0{,}0121\,\text{V} = 1{,}452\,\text{V} \approx 1{,}45\,\text{V}$
+**Vastaus:** $1{,}45\,\text{V}$, kolme merkitsevää numeroa kuten taulukon vuoarvoissa. Koko laskuvaiheen keskiarvo $0{,}40$–$0{,}60\,\text{s}$ antaa likimain saman tuloksen, $1{,}45\,\text{V}$.
+**Järkevyys:** Nousuvaiheessa vuo muuttuu noin $0{,}010\,\tfrac{\text{Wb}}{\text{s}}$, jolloin jännite on $120 \cdot 0{,}010\,\text{V} = 1{,}2\,\text{V}$ eli pienempi kuin laskuvaiheessa. Suurin jännite on siellä, missä vuo muuttuu nopeimmin, ei siellä, missä vuo on suurin.
 
 ## fy7-5-L2-06
 **Annettu:** tangon kentässä oleva pituus $l = 0{,}20\,\text{m}$; taulukosta jännite $e$ vauhdin $v$ funktiona (esimerkkiaineisto), tanko ja nopeus kohtisuorassa kenttää vastaan
@@ -168,27 +168,27 @@
 
 ## fy7-5-L2-07
 **Kysytty:** mikä opiskelijan laskussa on virheellistä
-**Periaate:** Kaava $e = vBl$ johdetaan tilanteesta, jossa nopeus, tanko ja kenttä ovat keskenään kohtisuorassa: magneettinen voima siirtää tangon mukana liikkuvia elektroneja tangon suuntaan, ja päiden välille syntyy jännite. Opiskelijan tehtävässä tanko liikkuu kentän suuntaan, joten tämä ehto ei täyty.
+**Periaate:** Kaava $e = vBl$ johdetaan tilanteesta, jossa nopeus, tanko ja kenttä ovat keskenään kohtisuorassa: magneettinen voima siirtää tangon mukana liikkuvia elektroneja tangon suuntaan, ja päiden välille syntyy jännite. Opiskelijan tehtävässä tanko liikkuu kentän suuntaisesti, joten tämä ehto ei täyty.
 **Mallivastaus:** Kun tanko liikkuu kentän suuntaan, elektronien nopeus on samansuuntainen kuin kenttä, jolloin magneettinen voima on nolla. Elektronit eivät siirry tangon päähän, päihin ei kerry varausta, ja tangon päiden välille ei synny jännitettä. Opiskelijan tulos $0{,}30\,\text{V}$ on väärä; oikea jännite on nolla. Samaan tulokseen päätyy vuon avulla: tanko ei pyyhkäise kenttäviivojen läpi uutta pinta-alaa, joten vuo ei muutu. Kaavaa $e = vBl$ saa käyttää vain, kun kolme suuntaa ovat kohtisuorassa toisiaan vastaan.
 
 ## fy7-5-L3-04
 **Annettu:** tangon pituus $l = 0{,}40\,\text{m}$, magneettivuon tiheys $B = 0{,}25\,\text{T}$, lähtö levosta, tasainen kiihtyvyys; taulukosta $e(t)$ kuuden mittauspisteen avulla (esimerkkiaineisto), muun muassa $e = 198\,\text{mV}$ hetkellä $t = 1{,}2\,\text{s}$
 **Kysytty:** a) vaunun kiihtyvyys $a$ ($\text{m/s}^2$) ja perustelu jännitteen kasvulle; b) vaunun kulkema matka $s$ ajassa $1{,}2\,\text{s}$
 **Periaate:** Tanko, nopeus ja kenttä ovat kohtisuorassa, joten tangon päiden välinen jännite on $e = vBl$. Vaunu kiihtyy tasaisesti levosta, joten $v = at$. Tästä seuraa $e = aBl \cdot t$: jännite on suoraan verrannollinen aikaan, ja $(t, e)$-pisteiden suoran kulmakerroin on $k = aBl$.
-**Kuvaajan lukeminen:** Osamäärät $e : t$ ovat $0{,}160$, $0{,}163$, $0{,}163$, $0{,}166$, $0{,}163$ ja $0{,}165\,\tfrac{\text{V}}{\text{s}}$, eli jännite kasvaa todella suoraan verrannollisena aikaan. Sovitetun suoran kulmakerroin on noin $k = 0{,}164\,\tfrac{\text{V}}{\text{s}}$, esimerkiksi pisteestä $(1{,}2\,\text{s};\ 198\,\text{mV})$: $k = 0{,}198\,\text{V} : 1{,}2\,\text{s} = 0{,}165\,\tfrac{\text{V}}{\text{s}}$.
+**Kuvaajan lukeminen:** Osamäärät $e : t$ ovat $0{,}160$, $0{,}163$, $0{,}163$, $0{,}166$, $0{,}163$ ja $0{,}165\,\tfrac{\text{V}}{\text{s}}$, eli jännite kasvaa todella suoraan verrannollisena aikaan. Origon kautta sovitetun suoran kulmakerroin on $k = 0{,}164\,\tfrac{\text{V}}{\text{s}}$ (pienimmän neliösumman sovitus), ja se sopii kaikkiin osamääriin $0{,}160$–$0{,}166\,\tfrac{\text{V}}{\text{s}}$.
 **Kaava:** a) $k = aBl$, josta $a = \dfrac{k}{Bl}$. b) Tasaisesti kiihtyvän liikkeen matka levosta on $s = \tfrac{1}{2}at^2$.
 **Muunnokset:** $1\,\text{mV} = 0{,}001\,\text{V}$, joten $k$ on SI-yksiköissä.
 **Sijoitus:** a) $a = \dfrac{0{,}164\,\text{V/s}}{0{,}25\,\text{T} \cdot 0{,}40\,\text{m}} = \dfrac{0{,}164\,\text{V/s}}{0{,}100\,\text{T}\cdot\text{m}} = 1{,}64\,\text{m/s}^2$. b) $s = \tfrac{1}{2} \cdot 1{,}64\,\text{m/s}^2 \cdot (1{,}2\,\text{s})^2 = 1{,}18\,\text{m}$
 **Vastaus:** a) $a = 1{,}6\,\text{m/s}^2$, kaksi merkitsevää numeroa kuten kentässä ja pituudessa. b) $s \approx 1{,}2\,\text{m}$.
-**Järkevyys:** Hetkellä $1{,}2\,\text{s}$ vauhti on $1{,}64\,\text{m/s}^2 \cdot 1{,}2\,\text{s} = 1{,}97\,\text{m/s}$ ja $e = 1{,}97\,\text{m/s} \cdot 0{,}25\,\text{T} \cdot 0{,}40\,\text{m} = 0{,}197\,\text{V}$, mikä vastaa mitattua $198\,\text{mV}$.
+**Järkevyys:** Hetkellä $1{,}2\,\text{s}$ vaunun vauhti on $v = 1{,}64\,\text{m/s}^2 \cdot 1{,}2\,\text{s} = 1{,}97\,\text{m/s}$. Silloin $e = 1{,}97\,\text{m/s} \cdot 0{,}25\,\text{T} \cdot 0{,}40\,\text{m} = 0{,}197\,\text{V}$, mikä vastaa mitattua $198\,\text{mV}$.
 
 ## fy7-5-L3-05
 **Annettu:** kierrosten lukumäärä $N = 250$; taulukosta $e(t)$ ajanhetkillä $0$–$48\,\text{ms}$ välein $4\,\text{ms}$ (esimerkkiaineisto); ennen pudotusta ja sen jälkeen vuo on nolla; jännite on nolla noin hetkellä $24\,\text{ms}$, kun magneetti on käämin keskellä
 **Kysytty:** a) yhden kierroksen läpi kulkeva suurin magneettivuo $\Phi$ millivebereinä; b) sama toisesta pulssista ja pulssien erojen selitys
 **Periaate:** Induktiolaista seuraa, että lyhyen aikavälin tulo $e\,\Delta t$ on $-N\Delta\Phi$. Kun nämä tulot lasketaan yhteen koko pulssin yli, summa on jännitekuvaajan $(t, e)$ ja aika-akselin väliin jäävä pinta-ala, ja se on $N$ kertaa vuon kokonaismuutos. Ensimmäisen pulssin aikana vuo kasvaa nollasta suurimpaan arvoon, ja pulssin lopussa jännite on nolla, koska vuo ei enää muutu.
-**Kuvaajan lukeminen:** Pinta-ala arvioidaan puolisuunnikassäännöllä: kunkin $4\,\text{ms}$:n välin pinta-ala on välin päiden jännitteiden keskiarvo kertaa $0{,}004\,\text{s}$. Ensimmäisen pulssin jännitteet ovat $-0{,}02$; $0{,}09$; $0{,}63$; $1{,}77$; $1{,}77$; $0{,}60$ ja $0{,}03\,\text{V}$. Summa on $A_\text{a} = 0{,}004\,\text{s} \cdot (\tfrac{1}{2}(-0{,}02) + 0{,}09 + 0{,}63 + 1{,}77 + 1{,}77 + 0{,}60 + \tfrac{1}{2}\cdot 0{,}03)\,\text{V} = 0{,}004\,\text{s} \cdot 4{,}865\,\text{V} = 0{,}01946\,\text{V}\cdot\text{s}$.
-**Kaava:** $A_\text{a} = N\Phi$, josta $\Phi = \dfrac{A_\text{a}}{N}$
+**Kuvaajan lukeminen:** Pinta-ala arvioidaan puolisuunnikassäännöllä: kunkin $4\,\text{ms}$:n välin pinta-ala on välin päiden jännitteiden keskiarvo kertaa $0{,}004\,\text{s}$. Ensimmäisen pulssin jännitteet ovat $-0{,}02$; $0{,}09$; $0{,}63$; $1{,}77$; $1{,}77$; $0{,}60$ ja $0{,}03\,\text{V}$. Summa on pinta-alan itseisarvo $|A_\text{a}| = 0{,}004\,\text{s} \cdot (\tfrac{1}{2}(-0{,}02) + 0{,}09 + 0{,}63 + 1{,}77 + 1{,}77 + 0{,}60 + \tfrac{1}{2}\cdot 0{,}03)\,\text{V} = 0{,}004\,\text{s} \cdot 4{,}865\,\text{V} = 0{,}01946\,\text{V}\cdot\text{s}$.
+**Kaava:** $|A_\text{a}| = N\Phi$, josta $\Phi = \dfrac{|A_\text{a}|}{N}$
 **Muunnokset:** $1\,\text{ms} = 0{,}001\,\text{s}$; vastaus muunnetaan millivebereiksi: $1\,\text{Wb} = 1000\,\text{mWb}$; $\text{V}\cdot\text{s} = \text{Wb}$.
 **Sijoitus:** a) $\Phi = \dfrac{0{,}01946\,\text{V}\cdot\text{s}}{250} = 7{,}78 \cdot 10^{-5}\,\text{Wb} = 0{,}0778\,\text{mWb}$. b) Toisen pulssin ($24$–$48\,\text{ms}$) pinta-ala on samalla tavalla laskien $-0{,}01968\,\text{V}\cdot\text{s}$, joten $\Phi = 0{,}01968\,\text{V}\cdot\text{s} : 250 = 0{,}0787\,\text{mWb}$.
-**Vastaus:** a) $\Phi \approx 0{,}078\,\text{mWb}$, kaksi merkitsevää numeroa, koska jännitteet on annettu kahden desimaalin tarkkuudella ja pinta-ala on arvio. b) Toisesta pulssista saadaan $0{,}079\,\text{mWb}$, eli sama vuo. Ensimmäisessä pulssissa vuo kasvaa ja toisessa se pienenee takaisin nollaan, joten induktiolain miinusmerkin takia jännitteet ovat vastakkaismerkkiset ja pinta-alat itseisarvoltaan yhtä suuret. Magneetti kiihtyy pudotessaan, joten sama vuon muutos tapahtuu toisessa pulssissa lyhyemmässä ajassa: pulssi on kapeampi ja korkeampi.
+**Vastaus:** a) $\Phi \approx 0{,}078\,\text{mWb}$, kaksi merkitsevää numeroa, koska jännitteet on annettu kahden desimaalin tarkkuudella ja pinta-ala on arvio. b) Toisesta pulssista saadaan $0{,}079\,\text{mWb}$, eli sama vuo. Ensimmäisessä pulssissa vuo kasvaa ja toisessa se pienenee takaisin nollaan, joten jännitteiden etumerkit ovat vastakkaiset, ja vuon kokonaismuutos on kummassakin pulssissa yhtä suuri, joten pinta-alat ovat itseisarvoltaan yhtä suuret. Magneetti kiihtyy pudotessaan, joten sama vuon muutos tapahtuu toisessa pulssissa lyhyemmässä ajassa: pulssi on kapeampi ja korkeampi.
 **Järkevyys:** Pulssien pinta-alat eroavat toisistaan noin $1\,\%$, joten mittausaineisto on sisäisesti johdonmukainen. Kolmion likiarvo $\tfrac{1}{2} \cdot 1{,}8\,\text{V} \cdot 0{,}020\,\text{s} = 0{,}018\,\text{V}\cdot\text{s}$ antaa saman suuruusluokan.

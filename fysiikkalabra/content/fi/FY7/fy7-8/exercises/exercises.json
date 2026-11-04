@@ -43,7 +43,7 @@
     {
       "id": "fy7-8-L1-06",
       "level": 1,
-      "text": "Ideaalinen muuntaja kytketään paristoon, joka antaa tasajännitteen. Ensiökäämin virta on vakio, ja toisiokäämin jännitteeksi mitataan nolla. Mikä on syynä?",
+      "text": "Ideaalinen muuntaja kytketään paristoon, joka antaa tasajännitteen. Kun ensiökäämin virta on asettunut vakioksi, toisiokäämin jännitteeksi mitataan nolla. Mikä on syynä?",
       "kind": [
         "concept"
       ],
@@ -84,7 +84,7 @@
     {
       "id": "fy7-8-L1-08",
       "level": 1,
-      "text": "Muuntajan ensiökäämi ottaa verkosta tehon $80\\,\\text{W}$, ja toisiokäämi antaa kuormalle tehon $72\\,\\text{W}$. Mikä on muuntajan hyötysuhde prosentteina?",
+      "text": "Muuntajan ensiökäämi ottaa verkosta tehon $80\\,\\text{W}$, ja toisiokäämi antaa kuormalle tehon $72\\,\\text{W}$. Hyötysuhde on $\\eta = P_2 : P_1$. Mikä on muuntajan hyötysuhde prosentteina?",
       "kind": [
         "concept"
       ],
@@ -175,7 +175,7 @@
     {
       "id": "fy7-8-L2-06",
       "level": 2,
-      "text": "Pienoismuuntajan ensiökäämi on kytketty jännitteeseen $U_1 = 230\\,\\text{V}$. Toisiokäämiin kytkettiin eri suuruisia kuormia, ja kullakin kuormalla mitattiin toisiojännite $U_2$, toisiovirta $I_2$ ja ensiövirta $I_1$ (esimerkkiaineisto).\n\na) Laske jokaiselle riville ensiöteho $P_1$, toisioteho $P_2$ ja hyötysuhde $\\eta = P_2 : P_1$.\n\nb) Millä kuormalla hyötysuhde on suurin? Selitä, miksi hyötysuhde on pienin pienimmällä kuormalla.\n\nAnna vastauslaatikkoon kohdan a) hyötysuhde rivillä, jolla toisiovirta on suurin, prosentteina.",
+      "text": "Pienoismuuntajan ensiökäämi on kytketty jännitteeseen $U_1 = 230\\,\\text{V}$. Toisiokäämiin kytkettiin eri suuruisia kuormia.\n\nKullakin kuormalla mitattiin toisiojännite $U_2$, toisiovirta $I_2$ ja ensiövirta $I_1$ (esimerkkiaineisto). Oletetaan, että ensiöteho on $P_1 = U_1 I_1$.\n\na) Laske jokaiselle riville ensiöteho $P_1$, toisioteho $P_2$ ja hyötysuhde $\\eta = P_2 : P_1$.\n\nb) Millä kuormalla hyötysuhde on suurin? Selitä, miksi hyötysuhde on pienin pienimmällä kuormalla.\n\nAnna vastauslaatikkoon kohdan a) hyötysuhde rivillä, jolla toisiovirta on suurin, prosentteina.",
       "kind": [
         "data"
       ],
@@ -258,7 +258,7 @@
     {
       "id": "fy7-8-L3-04",
       "level": 3,
-      "text": "Suunnittelija vertaa kahta tapaa siirtää tuulipuiston keskimääräinen teho $200\\,\\text{MW}$ sähköasemalle $150\\,\\text{km}$:n päähän. Johtimien resistanssi on $0{,}040\\,\\Omega$ kilometriä kohti, ja teho siirretään ympäri vuoden, $8760\\,\\text{h}$. Vaihtoehto A on $220\\,\\text{kV}$:n johto ja vaihtoehto B $400\\,\\text{kV}$:n johto, kummassakin samanlaiset johtimet. Luvut ovat esimerkkiaineistoa.\n\na) Laske johtimien resistanssi ja johdon virta kummassakin vaihtoehdossa.\n\nb) Laske häviöteho ja vuodessa johtoon hukkuva energia kummassakin vaihtoehdossa megawattitunteina.\n\nc) Sähkön hinta on $50\\,\\text{€/MWh}$. Kuinka monta miljoonaa euroa vuodessa vaihtoehto B säästää häviöenergian arvossa verrattuna vaihtoehtoon A? Perustele lisäksi kirjallisesti, miksi häviö pienenee, vaikka siirrettävä teho on sama.\n\nAnna vastauslaatikkoon kohdan c) säästö miljoonina euroina.",
+      "text": "Suunnittelija vertaa kahta tapaa siirtää tuulipuiston teho sähköasemalle $150\\,\\text{km}$:n päähän. Vaihtoehto A on $220\\,\\text{kV}$:n johto ja vaihtoehto B $400\\,\\text{kV}$:n johto, kummassakin samanlaiset johtimet.\n\nOletetaan, että siirrettävä teho on vakio $200\\,\\text{MW}$ koko vuoden, $8760\\,\\text{h}$. Johtimien yhteinen resistanssi on $0{,}040\\,\\Omega$ johdon kilometriä kohti. Luvut ovat esimerkkiaineistoa.\n\na) Laske johtimien resistanssi ja johdon virta kummassakin vaihtoehdossa.\n\nb) Laske häviöteho ja vuodessa johtoon hukkuva energia kummassakin vaihtoehdossa megawattitunteina.\n\nc) Sähkön hinta on $50\\,\\text{€/MWh}$. Kuinka monta miljoonaa euroa vuodessa vaihtoehto B säästää häviöenergian arvossa verrattuna vaihtoehtoon A? Perustele lisäksi kirjallisesti, miksi häviö pienenee, vaikka siirrettävä teho on sama.\n\nAnna vastauslaatikkoon kohdan c) säästö miljoonina euroina.",
       "kind": [
         "model",
         "reasoning"
