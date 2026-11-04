@@ -119,13 +119,13 @@
 **Reasonableness:** The energy of a visible-light photon is about $2\,\text{eV}$ and its frequency about $5 \cdot 10^{14}\,\text{Hz}$; the frequency of microwaves is about $2 \cdot 10^{5}$ times smaller, so the energy of the photon is about $2\,\text{eV} : (2 \cdot 10^{5}) = 10^{-5}\,\text{eV}$, as calculated.
 
 ## fy8-12-L1-06
-**Find:** which of the shields stops alpha radiation but lets some of the beta radiation through
+**Asked:** which of the shields stops alpha radiation but lets some of the beta radiation through
 **Principle:** Alpha and beta particles give up their energy by ionising matter, and that is why they have a range. An alpha particle is heavy and doubly charged, so it ionises densely and stops over a very short distance. A beta particle ionises less densely, so its range is much longer.
 **Model answer:** A sheet of paper is the right shield, because an alpha particle gives up its energy in a thin layer of paper owing to its dense ionisation, whereas a beta particle ionises less densely and some of it gets through the paper. An aluminium plate, a lead plate and a concrete wall are thicker, so they stop beta particles as well as alpha particles. The speed or the small mass of a particle does not prevent it from losing energy by ionising, and stopping is based on ionisation and not on electric repulsion.
 
 ## fy8-12-L1-07
 **Given:** measuring time $t = 45\,\text{s}$, pulse count $N = 1215$, pulse rate of the background radiation $R_\text{t} = 90\,\tfrac{1}{\text{min}}$
-**Find:** the pulse rate $R$ caused by the radiation of the source in the unit $\tfrac{1}{\text{min}}$
+**Asked:** the pulse rate $R$ caused by the radiation of the source in the unit $\tfrac{1}{\text{min}}$
 **Principle:** A GM counter counts all ionising events, so the measured pulse rate also includes the background radiation. The share of the source is obtained by subtracting the pulse rate of the background from the total pulse rate.
 **Formula:** $R = \dfrac{N}{t} - R_\text{t}$
 **Conversions:** $t = 45\,\text{s} = \dfrac{45}{60}\,\text{min} = 0.75\,\text{min}$, so that the pulse rates are in the same unit.
@@ -134,13 +134,13 @@
 **Reasonableness:** The total pulse rate $1620\,\tfrac{1}{\text{min}}$ is about $27\,\tfrac{1}{\text{s}}$, and the background $90\,\tfrac{1}{\text{min}}$ is only about $1.5\,\tfrac{1}{\text{s}}$. So the background is a small part of the total, and the share of the source, $1530$, is slightly below the total $1620$.
 
 ## fy8-12-L1-08
-**Find:** why an alpha emitter is fairly harmless outside the skin but dangerous inside the body
+**Asked:** why an alpha emitter is fairly harmless outside the skin but dangerous inside the body
 **Principle:** An alpha particle ionises densely and gives up all its energy over a very short distance. Ionisation damages cells, so the damage occurs where the energy is given up.
 **Model answer:** Outside the skin, alpha particles stop in the air and in the surface layer of the skin before they reach living cells. When an alpha emitter has been swallowed or breathed in, it is right next to tissue. The alpha particle then gives up all its energy over the distance of a few cells by ionising, and the damage is concentrated in a small area. So the difference is explained by the range of the particle, not by its energy increasing or turning into another kind of radiation: an alpha particle does not accelerate in tissue and does not turn into gamma radiation.
 
 ## fy8-12-L2-05
 **Given:** ten pulse counts in $10\,\text{s}$ periods: $52$, $45$, $49$, $57$, $44$, $48$, $51$, $42$, $50$ and $46$; the order of magnitude of the random variation is $\sqrt{N}$
-**Find:** the relative uncertainty of the total pulse count $N_\text{tot}$ as a percentage
+**Asked:** the relative uncertainty of the total pulse count $N_\text{tot}$ as a percentage
 **Principle:** The mean describes the typical pulse count in a period. The order of magnitude of the random variation of the number of pulses is $\sqrt{N}$, and the relative uncertainty is the share that the variation is of the pulse count. The more pulses are counted, the smaller the relative uncertainty.
 **Formula:** $N_\text{mean} = \dfrac{N_\text{tot}}{10}$ and relative uncertainty $\dfrac{\sqrt{N_\text{tot}}}{N_\text{tot}}$
 **Conversions:** Not needed: all periods are equally long. Finally the fraction is converted into a percentage: $1 = 100\,\%$.
@@ -150,7 +150,7 @@
 
 ## fy8-12-L2-06
 **Given:** thicknesses of lead $d = 0$, $3$, $6$, $9$, $12$ and $15\,\text{mm}$ and pulses in $60\,\text{s}$ $1850$, $1290$, $890$, $640$, $440$ and $315$; pulse count of the background radiation $N_\text{t} = 50$
-**Find:** the half-value thickness $d_{1/2}$ of lead in millimetres (the mean of part c))
+**Asked:** the half-value thickness $d_{1/2}$ of lead in millimetres (the mean of part c))
 **Principle:** Lead attenuates only the radiation of the source, so the net pulse counts, that is the pulse counts from which the background has been subtracted, are substituted into the attenuation law. They are proportional to the intensity. Each measurement gives its own estimate of the half-value thickness, and the mean evens out the random variation of the pulses.
 **Reading the graph:** The net pulse counts are $1800$, $1240$, $840$, $590$, $390$ and $265$. The points form a falling, curving line that does not cross the axis. Half of the original net pulse count is $900$. At the value $900$ the curve passes between the thicknesses $3\,\text{mm}$ ($1240$) and $6\,\text{mm}$ ($840$): linear interpolation gives $3\,\text{mm} + \dfrac{1240 - 900}{1240 - 840} \cdot 3\,\text{mm} = 5.6\,\text{mm}$. So the half-value thickness read from the graph is about $5.6\,\text{mm}$.
 **Formula:** $N - N_\text{t} = (N_0 - N_\text{t}) \left(\tfrac{1}{2}\right)^{d/d_{1/2}}$, from which $d_{1/2} = \dfrac{d \cdot \ln 2}{\ln \tfrac{N_0 - N_\text{t}}{N - N_\text{t}}}$
@@ -160,13 +160,13 @@
 **Reasonableness:** The value is the same as the value of lead in the table, $5.5\,\text{mm}$, for the gamma radiation of caesium-137. Check: the thickness $15\,\text{mm}$ is about $2.7$ half-value thicknesses, and $1800 \cdot \left(\tfrac{1}{2}\right)^{2.7} = 277$ is close to the measured net $265$.
 
 ## fy8-12-L2-07
-**Find:** with which measurement beta and gamma radiation can be told apart most reliably
+**Asked:** with which measurement beta and gamma radiation can be told apart most reliably
 **Principle:** A beta particle has a range because it gives up its energy by ionising, and a few millimetres of aluminium stops it. Gamma radiation is attenuated layer by layer, and for example the half-value thickness of aluminium is tens of millimetres. A GM tube counts events but does not distinguish types of radiation.
 **Model answer:** The types are told apart by comparing the net pulse count without a barrier and behind a thin aluminium plate. If the net pulse count drops almost to zero, the source is a beta source, because the plate stops beta particles. If the pulse count decreases only a little, the source is a gamma source, because a thin aluminium plate lets most of the gamma photons through. A sheet of paper does not distinguish the types, because it does not stop beta particles. A lead plate does not distinguish them, because it attenuates both, and the pulses of a GM tube are always the same size, so the type cannot be deduced from the height of the pulse.
 
 ## fy8-12-L3-04
 **Given:** source caesium-137 ($662\,\text{keV}$), thicknesses $d = 0$, $6$, $12$, $18$, $24$ and $30\,\text{mm}$ and pulses in $60\,\text{s}$ $2640$, $1895$, $1330$, $950$, $685$ and $495$; background $N_\text{t} = 40$; half-value thicknesses of the table: lead $5.5\,\text{mm}$, iron $12\,\text{mm}$, aluminium $34\,\text{mm}$, concrete $39\,\text{mm}$, water $81\,\text{mm}$
-**Find:** the mean half-value thickness $d_{1/2}$ in millimetres, the material of the plates, the thickness that drops the net pulse count to one per cent, and why the thickest measurement is the most uncertain
+**Asked:** the mean half-value thickness $d_{1/2}$ in millimetres, the material of the plates, the thickness that drops the net pulse count to one per cent, and why the thickest measurement is the most uncertain
 **Principle:** A plate attenuates only the radiation of the source, not the background, so the background is subtracted first and the net pulse counts follow the attenuation law. The net pulse count of gamma radiation is halved by every layer of one half-value thickness and does not stop at a certain thickness. The range of beta particles is short, so their pulse count would drop almost to zero in a layer of a few millimetres. Each measurement gives its own estimate of the half-value thickness, and the material is identified by comparing the mean with the table.
 **Reading the graph:** The net pulse counts are $2600$, $1855$, $1290$, $910$, $645$ and $455$. The net pulse count is halved at intervals of $12\,\text{mm}$: $2600 \to 1290$ at the thickness $12\,\text{mm}$ and $1290 \to 645$ at the thickness $24\,\text{mm}$. A steady halving is the attenuation of gamma radiation, and the curve is still clearly above zero at the thickness $30\,\text{mm}$, so it is not a matter of a range. So the radiation is gamma and not beta (part a).
 **Formula:** $N - N_\text{t} = (N_0 - N_\text{t}) \left(\tfrac{1}{2}\right)^{d/d_{1/2}}$, from which $d_{1/2} = \dfrac{d \cdot \ln 2}{\ln \tfrac{N_0 - N_\text{t}}{N - N_\text{t}}}$; the thickness for a certain fraction $p$ is $d = d_{1/2} \cdot \dfrac{\ln (1 : p)}{\ln 2}$
@@ -177,7 +177,7 @@
 
 ## fy8-12-L3-05
 **Given:** thickness of the lead wall $d = 8.0\,\text{mm}$ and half-value thickness $d_{1/2} = 5.5\,\text{mm}$, geometric efficiency $\eta = 1.5\,\% = 0.015$, pulses of five $60\,\text{s}$ periods with the source $1010$, $987$, $1032$, $1001$ and $1020$ and without the source $24$, $29$, $22$, $27$ and $28$
-**Find:** the activity $A$ of the source in kilobecquerels
+**Asked:** the activity $A$ of the source in kilobecquerels
 **Principle:** The background is subtracted first, and the net pulse rate tells how many photons per second hit the tube. Of the photons from the source only the fraction $\eta$ leaves in the direction of the tube, and the lead wall attenuates the photons according to the attenuation law. Activity is the number of decays per second, and by assumption each decay emits one photon, so the photons per second of the source are obtained by dividing the pulse rate by the fraction that reaches the tube.
 **Formula:** $R = \dfrac{N_\text{s,mean} - N_\text{t,mean}}{t}$, the fraction passing through the wall $T = \left(\tfrac{1}{2}\right)^{d/d_{1/2}}$ and $R = A \cdot T \cdot \eta$, from which $A = \dfrac{R}{T \cdot \eta}$
 **Conversions:** $t = 60\,\text{s}$ and $1.5\,\% = 0.015$. Finally $1\,\text{kBq} = 1000\,\text{Bq}$ and $1\,\text{Bq} = 1\,\tfrac{1}{\text{s}}$.

@@ -48,6 +48,33 @@
 **Answer:** $24.0\,\text{h}$, three significant figures like the time $48.0\,\text{h}$.
 **Reasonableness:** Check with the decay law: $800\,\text{kBq} \cdot \left(\tfrac{1}{2}\right)^{48.0\,\text{h} / 24.0\,\text{h}} = 800\,\text{kBq} \cdot \tfrac{1}{4} = 200\,\text{kBq}$, as in the task.
 
+## fy8-9-L1-06
+**Asked:** which statement about the undecayed nuclei of the sample is correct, when $8.0\,\text{h}$ is two half-lives ($T_{1/2} = 4.0\,\text{h}$).
+**Principle:** In every half-life half of the nuclei remaining at that time decay, not half of the original ones. Decay neither stops nor speeds up, because a nucleus has no memory and its decay probability stays the same.
+**Model answer:** The correct statement is the one according to which one quarter of the nuclei remain, because each half-life removes half of those remaining at that time. After the first $4.0\,\text{h}$ a fraction $\tfrac{1}{2}$ of the original nuclei remains, and after the second $\tfrac{1}{2} \cdot \tfrac{1}{2} = \tfrac{1}{4}$.
+
+The statement that all have decayed is an error, because the second half-life removes only half of what was left. The statement that decay stops is wrong, because the remaining nuclei still decay with the same probability. The statement about the effect of age is wrong, because the decay probability of a nucleus does not depend on its age.
+
+## fy8-9-L1-07
+**Given:** half-life $T_{1/2} = 28.8\,\text{a}$, time $t = 144\,\text{a}$
+**Asked:** the fraction $\tfrac{N}{N_0}$ of undecayed nuclei as a percentage
+**Principle:** Every half-life halves the number of undecayed nuclei, so the fraction is $\left(\tfrac{1}{2}\right)^{t/T_{1/2}}$.
+**Formula:** $\dfrac{N}{N_0} = \left(\tfrac{1}{2}\right)^{t/T_{1/2}}$
+**Conversions:** None are needed: the time and the half-life are both in years, so their ratio is a pure number. Finally the fraction is converted to a percentage by multiplying by $100$.
+**Substitution:** $\dfrac{N}{N_0} = \left(\tfrac{1}{2}\right)^{144\,\text{a} : 28.8\,\text{a}} = \left(\tfrac{1}{2}\right)^{5.00} = \tfrac{1}{32} = 0.03125 = 3.125\,\%$
+**Answer:** $3.13\,\%$, three significant figures like the given values.
+**Reasonableness:** After five half-lives the fraction has been halved five times: $100\,\% \to 50\,\% \to 25\,\% \to 12.5\,\% \to 6.25\,\% \to 3.125\,\%$. The sample is not empty, but only a small fraction of it is left.
+
+## fy8-9-L1-08
+**Given:** half-life $T_{1/2} = 5.27\,\text{a}$, activity $A = 0.100\,A_0$
+**Asked:** the time $t$ in years
+**Principle:** The activity follows the decay law, $A = A_0 \left(\tfrac{1}{2}\right)^{t/T_{1/2}}$. The wanted time is in the exponent, so it is solved using a logarithm.
+**Formula:** $\dfrac{A}{A_0} = \left(\tfrac{1}{2}\right)^{t/T_{1/2}}$, so $\ln \dfrac{A_0}{A} = \dfrac{t}{T_{1/2}} \ln 2$ and $t = T_{1/2} \cdot \dfrac{\ln (A_0 / A)}{\ln 2}$
+**Conversions:** None are needed: $\tfrac{A_0}{A} = \tfrac{1}{0.100} = 10.0$ is a pure number, and the time is obtained in the same unit as the half-life, that is, in years.
+**Substitution:** $t = 5.27\,\text{a} \cdot \dfrac{\ln 10.0}{0.69315} = 5.27\,\text{a} \cdot \dfrac{2.3026}{0.69315} = 5.27\,\text{a} \cdot 3.3219 = 17.51\,\text{a}$
+**Answer:** $17.5\,\text{a}$, three significant figures like the half-life $5.27\,\text{a}$.
+**Reasonableness:** After three half-lives the activity is $\tfrac{1}{8} = 12.5\,\%$ and after four $\tfrac{1}{16} = 6.25\,\%$. The time at which the activity is $10\,\%$ lies between these: $3.32$ half-lives, that is, $3.32 \cdot 5.27\,\text{a} \approx 17.5\,\text{a}$.
+
 ## fy8-9-L2-01
 **Given:** the half-life of iodine-131 $T_{1/2} = 8.02\,\text{d}$
 **Asked:** the decay constant $\lambda$ in the unit $10^{-6}\,\tfrac{1}{\text{s}}$
@@ -88,6 +115,38 @@
 **Answer:** $0.695\,\text{mg}$, three significant figures like the initial mass $5.00\,\text{mg}$ and the half-life $5.27\,\text{a}$.
 **Reasonableness:** A little less than three half-lives passed, so the mass should be slightly more than an eighth of the original: $5.00\,\text{mg} : 8 = 0.625\,\text{mg}$. Nickel-60 takes the place of the decayed nuclei, so the total mass of the source hardly changes.
 
+## fy8-9-L2-05
+**Given:** pulse counts in $10\,\text{s}$ intervals in the table, background $8$ pulses per $10\,\text{s}$ interval
+**Asked:** the half-life $T_{1/2}$ in seconds
+**Principle:** The counter counts the pulses of both the sample and the background. Only the contribution of the sample decreases according to the decay law, so the background is subtracted first. The measurement points vary at random, so the half-life is read through two points that are far apart.
+**Formula:** $\dfrac{R}{R_0} = \left(\tfrac{1}{2}\right)^{t/T_{1/2}}$, so $T_{1/2} = \dfrac{t \ln 2}{\ln (R_0 / R)}$, where $R_0$ and $R$ are the net pulse counts
+**Conversions:** a) The net pulse counts are $291 - 8 = 283$, $250 - 8 = 242$, $204 - 8 = 196$, $178 - 8 = 170$, $143 - 8 = 135$, $126 - 8 = 118$, $103 - 8 = 95$, $90 - 8 = 82$, $72 - 8 = 64$, $66 - 8 = 58$ and $51 - 8 = 43$ ($t = 0, 40, \ldots, 400\,\text{s}$). The unit of time is the second, like in the answer, so no other conversions are needed.
+**Substitution:** b) At the start $R_0 = 283$ and at $t = 320\,\text{s}$ $R = 64$. The ratio is $\tfrac{283}{64} = 4.42$, that is, slightly over two half-lives ($2^2 = 4$), and $64$ is about $23\,\%$ of $283$. Thus $T_{1/2} = \dfrac{320\,\text{s} \cdot 0.69315}{\ln 4.42} = \dfrac{221.8\,\text{s}}{1.4865} = 149.2\,\text{s}$
+**Answer:** $149\,\text{s}$, that is, about $150\,\text{s}$. The accuracy of an estimate from two points is about $\pm 8\,\%$, because the scatter of the net count $64$ is about $\sqrt{64} = 8$.
+**Reasonableness:** Half of the initial value is $\tfrac{283}{2} = 141.5$. In the table the net pulse count is $170$ at $120\,\text{s}$ and $135$ at $160\,\text{s}$, so the halving happens at about $150\,\text{s}$. This fits the result. The points are not exactly on the curve, because the pulse counts vary at random.
+
+## fy8-9-L2-06
+**Given:** pulse counts of the table in $10\,\text{s}$ intervals, background $20$ pulses per $10\,\text{s}$ interval, the student’s result $70\,\text{s}$
+**Asked:** a) the half-life $T_{1/2}$ in seconds, b) why the student’s result is too large
+**Principle:** Only the net pulse count caused by the sample decreases according to the decay law. The background stays the same throughout the measurement, so it must be subtracted before looking for the halving.
+**Formula:** $R = R_0 \left(\tfrac{1}{2}\right)^{t/T_{1/2}}$, so after two half-lives $R = \tfrac{R_0}{4}$, where $R_0$ and $R$ are the net pulse counts
+**Conversions:** The net pulse counts are $200 - 20 = 180$, $148 - 20 = 128$, $108 - 20 = 88$, $84 - 20 = 64$, $65 - 20 = 45$, $50 - 20 = 30$ and $43 - 20 = 23$ ($t = 0, 30, \ldots, 180\,\text{s}$). No other conversions: the time is in seconds, like in the answer.
+**Substitution:** a) At the start $R_0 = 180$, and a quarter of it is $\tfrac{180}{4} = 45$. It is reached at the moment $t = 120\,\text{s}$, so $2\,T_{1/2} = 120\,\text{s}$ and $T_{1/2} = \dfrac{120\,\text{s}}{2} = 60\,\text{s}$.
+**Answer:** $60\,\text{s}$, two significant figures. Check: the net count has halved by the time $60\,\text{s}$, because at that point it is $88$ and half of the initial value is $90$.
+**Reasonableness:** a) The result $60\,\text{s}$ fits the table: the net count $88$ is close to half of the initial value, $90$.
+
+**Explanation of part b):** The student halved the measured total pulse count $200$. Of this, $20$ pulses are background, which does not decay, so the total count does not halve in the same time as the net count: when the net count is $90$, the total count is still $110$. The measured count reaches the value $100$ only later, at about $70\,\text{s}$, and the result is too large. The background slows the decrease of the total pulse count and moves the halving of the total count to a later time.
+
+## fy8-9-L2-07
+**Given:** the sum of the background pulse counts $80$ in ten $10\,\text{s}$ intervals, $340$ pulses in one $10\,\text{s}$ interval with the sample, number of intervals $n = 10$
+**Asked:** the net pulse rate $R$ in pulses per second (and a) the mean of the background, c) the relative scatter)
+**Principle:** The counter counts the pulses of both the background and the sample. The contribution of the sample itself is obtained by subtracting the average background from the total count. The pulse count is random, and its scatter is approximately $\sqrt{N}$.
+**Formula:** The mean of the background $N_\text{bg} = \dfrac{\text{sum}}{n}$, the net pulse count $N_\text{net} = N - N_\text{bg}$ and the pulse rate $R = \dfrac{N_\text{net}}{\Delta t}$
+**Conversions:** The length of an interval is $\Delta t = 10\,\text{s}$, so the pulse count is divided by ten to get pulses per second.
+**Substitution:** a) The sum of the background pulse counts is $80$, so the mean is $N_\text{bg} = \dfrac{80}{10} = 8.0$ pulses in $10\,\text{s}$. b) $N_\text{net} = 340 - 8.0 = 332$ and $R = \dfrac{332}{10\,\text{s}} = 33.2\,\tfrac{1}{\text{s}}$. c) The scatter is $\sqrt{340} = 18.4$, so the relative scatter is $\dfrac{18.4}{340} = 0.0542 = 5.4\,\%$.
+**Answer:** $33.2\,\tfrac{1}{\text{s}}$, three significant figures like the net pulse count $332$.
+**Reasonableness:** The variation of the background of $5$–$11$ pulses means a deviation of at most about $\pm 3$ pulses from the mean $8.0$. That is under one percent of the pulse count $340$, whereas the scatter of the sample’s own pulse count is about $18$ pulses. The randomness of the sample measurement dominates the uncertainty, and the variation of the background does not change the net result significantly.
+
 ## fy8-9-L3-01
 **Given:** the activity of the sample is $38.0\,\%$ of the activity of living wood per gram of carbon, the half-life of carbon-14 $T_{1/2} = 5700\,\text{a}$
 **Asked:** the time $t$ passed since the death of the tree in years
@@ -117,3 +176,23 @@
 **Substitution:** $\left(\tfrac{1}{2}\right)^{30.0\,\text{d} / 8.02\,\text{d}} = \left(\tfrac{1}{2}\right)^{3.7406} = 0.074809$ and $\left(\tfrac{1}{2}\right)^{30.0\,\text{d} / 10\,994\,\text{d}} = \left(\tfrac{1}{2}\right)^{0.0027288} = 0.99811$, so $p = \dfrac{0.074809}{0.074809 + 0.99811} = \dfrac{0.074809}{1.07292} = 0.069725 = 6.9725\,\%$
 **Answer:** $6.97\,\%$, three significant figures like the half-lives and the time $30.0\,\text{d}$.
 **Reasonableness:** In a month almost four half-lives of iodine pass, so the activity of iodine has dropped below a tenth, while the activity of caesium is almost unchanged. The share of iodine must therefore be below $10\,\%$ but above zero, as the result is. That is why after an accident iodine is a big problem for the first weeks, caesium for decades.
+
+## fy8-9-L3-04
+**Given:** $T_{1/2} = 6.0\,\text{h}$ of the shorter-lived nuclide, total activity in the table, $A = A_1 + A_2$
+**Asked:** a) the half-life of the longer-lived nuclide in days, b) its initial activity and the share of the shorter-lived nuclide at the start, c) the check of $6.0\,\text{h}$
+**Principle:** Each nuclide follows its own decay law, and the total activity is their sum. The activity of the shorter-lived one has dropped almost to zero in the last measurements: at $96\,\text{h}$ there have passed $\tfrac{96}{6.0} = 16$ half-lives, and $\left(\tfrac{1}{2}\right)^{16} \approx 1.5 \cdot 10^{-5}$. So the late points describe only the longer-lived nuclide.
+**Formula:** $\dfrac{A_2(t_2)}{A_2(t_1)} = \left(\tfrac{1}{2}\right)^{(t_2 - t_1)/T_2}$, so $T_2 = \dfrac{(t_2 - t_1) \ln 2}{\ln \left(A_2(t_1) / A_2(t_2)\right)}$
+**Conversions:** The points $t_1 = 96\,\text{h}$ and $t_2 = 168\,\text{h}$ are $\Delta t = 72\,\text{h}$ apart. The result is converted to days by dividing by $24\,\tfrac{\text{h}}{\text{d}}$.
+**Substitution:** a) $A(96\,\text{h}) = 71.2\,\text{MBq}$ and $A(168\,\text{h}) = 32.8\,\text{MBq}$, so $T_2 = \dfrac{72\,\text{h} \cdot 0.69315}{\ln (71.2 : 32.8)} = \dfrac{49.907\,\text{h}}{0.7752} = 64.38\,\text{h} = \dfrac{64.38\,\text{h}}{24\,\text{h/d}} = 2.683\,\text{d}$. b) The activity at the moment $t = 0$ is $A_2(0) = 71.2\,\text{MBq} \cdot \left(\tfrac{1}{2}\right)^{-96/64.38} = 71.2\,\text{MBq} \cdot 2^{1.491} = 71.2\,\text{MBq} \cdot 2.811 = 200\,\text{MBq}$. The total activity at the start is $1000\,\text{MBq}$, so the activity of the shorter-lived nuclide is $1000\,\text{MBq} - 200\,\text{MBq} = 800\,\text{MBq}$, that is, $80\,\%$ of the total activity. c) At $12\,\text{h}$ the activity of the longer-lived nuclide is $200\,\text{MBq} \cdot \left(\tfrac{1}{2}\right)^{12/64.38} = 200\,\text{MBq} \cdot 0.879 = 175.8\,\text{MBq}$. The activity of the shorter-lived one is then $376\,\text{MBq} - 175.8\,\text{MBq} = 200.2\,\text{MBq}$. The initial activity $800\,\text{MBq}$ has halved twice ($12\,\text{h} = 2 \cdot 6.0\,\text{h}$): $\tfrac{800\,\text{MBq}}{4} = 200\,\text{MBq}$, which matches.
+**Answer:** $2.68\,\text{d}$, three significant figures like the activities of the table.
+**Reasonableness:** The result $2.68\,\text{d} = 64.4\,\text{h}$ is much longer than $6.0\,\text{h}$, as the task requires. With a third pair of points the result stays the same: $A(120\,\text{h}) = 55.9\,\text{MBq}$ and $A(168\,\text{h}) = 32.8\,\text{MBq}$ give $T_2 = \tfrac{48\,\text{h} \cdot 0.69315}{\ln 1.704} = 62.4\,\text{h} \approx 2.6\,\text{d}$, which is close to the result, considering the random variation of the measurement points.
+
+## fy8-9-L3-05
+**Given:** iodine-131 activity of the body in the table ($400\,\text{MBq} \to 65.5\,\text{MBq}$ in eight days), physical half-life $T_\text{phys} = 8.02\,\text{d}$, $\lambda_\text{eff} = \lambda_\text{phys} + \lambda_\text{bio}$
+**Asked:** a) the effective half-life $T_\text{eff}$, b) the biological half-life $T_\text{bio}$ in days, c) the remaining fraction with physical decay alone and which process decreases the activity faster
+**Principle:** The measured activity decreases according to the decay law with the effective half-life, because both decay and removal reduce the iodine in the body. The decay constants are added, and $\lambda = \tfrac{\ln 2}{T_{1/2}}$ gives the half-lives. The biological constant is obtained by subtracting the physical one from the total.
+**Formula:** $T_\text{eff} = \dfrac{t \ln 2}{\ln (A_0 / A)}$ and $\lambda_\text{bio} = \lambda_\text{eff} - \lambda_\text{phys}$, that is, $\dfrac{1}{T_\text{bio}} = \dfrac{1}{T_\text{eff}} - \dfrac{1}{T_\text{phys}}$
+**Conversions:** All times are in days, so no unit conversions are needed. The equation $\lambda = \tfrac{\ln 2}{T_{1/2}}$ divided by $\ln 2$ gives $\tfrac{1}{T_\text{bio}} = \tfrac{1}{T_\text{eff}} - \tfrac{1}{T_\text{phys}}$.
+**Substitution:** a) $T_\text{eff} = \dfrac{8.0\,\text{d} \cdot 0.69315}{\ln (400 : 65.5)} = \dfrac{5.545\,\text{d}}{1.8092} = 3.065\,\text{d}$. b) $\dfrac{1}{T_\text{bio}} = \dfrac{1}{3.065\,\text{d}} - \dfrac{1}{8.02\,\text{d}} = 0.3263\,\tfrac{1}{\text{d}} - 0.1247\,\tfrac{1}{\text{d}} = 0.2016\,\tfrac{1}{\text{d}}$, so $T_\text{bio} = \dfrac{1}{0.2016\,\tfrac{1}{\text{d}}} = 4.96\,\text{d}$. c) With decay alone the remaining fraction would be $100\,\% \cdot \left(\tfrac{1}{2}\right)^{8.0/8.02} = 100\,\% \cdot 0.5008 = 50.1\,\%$. The measured fraction is $\tfrac{65.5}{400} = 16.4\,\%$. Both processes act on all nuclei, so the faster process is the one with the greater decay constant: $\lambda_\text{bio} = \tfrac{0.69315}{4.96\,\text{d}} = 0.140\,\tfrac{1}{\text{d}}$ and $\lambda_\text{phys} = \tfrac{0.69315}{8.02\,\text{d}} = 0.0864\,\tfrac{1}{\text{d}}$.
+**Answer:** $T_\text{bio} = 4.96\,\text{d}$, three significant figures like the values of the table.
+**Reasonableness:** The biological half-life is shorter than the physical one, so removal is the faster process and the effective time is shorter than either: $3.07\,\text{d} < 4.96\,\text{d} < 8.02\,\text{d}$. Check: $\lambda_\text{eff} = \tfrac{0.69315}{3.065\,\text{d}} = 0.2262\,\tfrac{1}{\text{d}}$ and $\lambda_\text{phys} + \lambda_\text{bio} = 0.0864\,\tfrac{1}{\text{d}} + 0.1398\,\tfrac{1}{\text{d}} = 0.2262\,\tfrac{1}{\text{d}}$. On the basis of part c), biological removal decreases the iodine-131 activity of the body faster than physical decay, because $\lambda_\text{bio} > \lambda_\text{phys}$. Together they leave only $16.4\,\%$ and not the $50.1\,\%$ of decay alone.
