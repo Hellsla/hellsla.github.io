@@ -25,7 +25,7 @@ a["fy8-7-L2-04"] = E_pulse / 10e-9 / 1e6                  # P = E / t = 0,05041 
 a["fy8-7-L2-05"] = eV(486) - eV(617)                      # 2,5514 eV - 2,0097 eV = 0,5417 eV (d 2,0 nm vs 6,0 nm)
 diodes = [(405, 10), (520, 6.0), (650, 5.0), (980, 4.0)]   # (nm, mW)
 rate = [p * 1e-3 * l * 1e-9 / hc for l, p in diodes]      # N/t = P lambda / hc: 2,039e16; 1,571e16; 1,636e16; 1,973e16 1/s
-a["fy8-7-L2-06"] = max(rate) / min(rate)                  # 2,0388e16 / 1,5706e16 = 1,298 -> 1,30
+a["fy8-7-L2-06"] = max(rate) / min(rate)                  # 2,0388e16 / 1,5706e16 = 1,298 -> 1,3
 # Level 3: reasoning or an unfamiliar context
 a["fy8-7-L3-01"] = 0.5 * 1.0e19 * hc / 550e-9             # just over half of 1,0e19 ions lifted, one 550 nm photon each: 1,806 J -> 1,8 J
 a["fy8-7-L3-02"] = 0.5 * 1.0 * 808e-9 / hc                # 1,0 W of 808 nm: 4,067e18 pump photons/s -> as many 1064 nm, half as many 532 nm: 2,03e18

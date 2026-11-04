@@ -149,7 +149,7 @@
         "data",
         "reasoning"
       ],
-      "text": "Esimerkkiaineisto: samasta puolijohteesta valmistettujen kvanttipisteiden halkaisija $d$ on mitattu elektronimikroskoopilla ja niiden lähettämän valon aallonpituus $\\lambda$ spektrometrillä. Taulukossa on viiden pisteen tulokset. Oletetaan, että fotonin energia on yhtä suuri kuin pisteen energiarako.\n\na) Laske kunkin pisteen fotonin energia elektronivoltteina ($h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$).\n\nb) Päättele taulukon perusteella, miten energiarako riippuu pisteen koosta.\n\nc) Kuinka paljon suurempi energiarako on pienimmällä kuin suurimmalla pisteellä?\n\nAnna c)-kohdan tulos vastauslaatikkoon.",
+      "text": "Esimerkkiaineisto: samasta puolijohteesta valmistettujen kvanttipisteiden halkaisija $d$ on mitattu elektronimikroskoopilla ja niiden lähettämän valon aallonpituus $\\lambda$ spektrometrillä. Taulukossa on viiden pisteen tulokset.\n\nOletetaan, että fotonin energia on yhtä suuri kuin pisteen energiarako.\n\na) Laske kunkin pisteen fotonin energia elektronivoltteina ($h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$).\n\nb) Päättele taulukon perusteella, miten energiarako riippuu pisteen koosta. Onko energiarako suoraan verrannollinen pisteen kokoon?\n\nc) Kuinka paljon suurempi energiarako on pienimmällä kuin suurimmalla pisteellä?\n\nAnna c)-kohdan tulos vastauslaatikkoon.",
       "answer": 0.54,
       "unit": "eV",
       "tolerance": 0.04,
@@ -243,7 +243,7 @@
         },
         {
           "text": "Kahden fotonin yhteenlaskettu energia on suurempi, mutta peilit heikentävät valoa niin paljon, että laserista ulos tuleva energia on aina pienempi.",
-          "feedback": "Peilit eivät ole selitys energian lisääntymiselle: virhe on jo siinä, että energian ajatellaan syntyvän tyhjästä. Energian lähde on atomien viritys, ja tuleva energia on enintään pumpatun energian suuruinen."
+          "feedback": "Peilit eivät ole selitys energian lisääntymiselle: virhe on jo siinä, että energian ajatellaan syntyvän tyhjästä. Energian lähde on atomien viritys, ja laserista ulos tuleva energia on enintään pumpatun energian suuruinen."
         },
         {
           "text": "Fotonien määrä ei voi kasvaa, koska valo on aaltoliikettä eikä koostu fotoneista, joten väite kahdesta fotonista on vain kuvitelma.",
@@ -289,7 +289,7 @@
         "model",
         "reasoning"
       ],
-      "text": "Esimerkkiaineisto: kuitulaseria pumpataan laserdiodeilla, joiden valon aallonpituus on $976\\,\\text{nm}$ ja yhteenlaskettu teho $20{,}0\\,\\text{W}$. Laser lähettää valoa aallonpituudella $1070\\,\\text{nm}$ ja sen lähtöteho on $15{,}0\\,\\text{W}$. Oleta, että kaikki pumppausvalo absorboituu aineeseen ja että se osa pumppausenergiasta, joka ei lähde laservalona, muuttuu lämmöksi. Määritellään kvanttihyötysuhde $\\eta_\\text{q}$ laserfotonien lukumäärän ja pumppausfotonien lukumäärän suhteeksi samana aikana ($h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$).\n\na) Laske pumppausfotonien ja laserfotonien määrät sekunnissa.\n\nb) Laske kvanttihyötysuhde prosentteina.\n\nc) Laske aineeseen sekunnissa muuttuva lämpöteho ja sen osa, joka syntyy siitä, että laserfotonin energia on pienempi kuin pumppausfotonin energia.\n\nd) Perustele laskettujen lukujen avulla, miksi laserin energiahyötysuhde on pienempi kuin kvanttihyötysuhde.\n\nAnna b)-kohdan tulos vastauslaatikkoon.",
+      "text": "Esimerkkiaineisto: kuitulaseria pumpataan laserdiodeilla, joiden valon aallonpituus on $976\\,\\text{nm}$ ja yhteenlaskettu teho $20{,}0\\,\\text{W}$. Laser lähettää valoa aallonpituudella $1070\\,\\text{nm}$ ja sen lähtöteho on $15{,}0\\,\\text{W}$.\n\nOleta, että kaikki pumppausvalo absorboituu aineeseen ja että se osa pumppausenergiasta, joka ei lähde laservalona, muuttuu lämmöksi.\n\nMääritellään kvanttihyötysuhde $\\eta_\\text{q}$ laserfotonien lukumäärän ja pumppausfotonien lukumäärän suhteeksi samana aikana ($h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$).\n\na) Laske pumppausfotonien ja laserfotonien määrät sekunnissa.\n\nb) Laske kvanttihyötysuhde prosentteina.\n\nc) Laske aineeseen sekunnissa muuttuva lämpöteho ja sen osa, joka syntyy siitä, että laserfotonin energia on pienempi kuin pumppausfotonin energia.\n\nd) Perustele laskettujen lukujen avulla, miksi laserin energiahyötysuhde on pienempi kuin kvanttihyötysuhde.\n\nAnna b)-kohdan tulos vastauslaatikkoon.",
       "answer": 82.2,
       "unit": "%",
       "tolerance": 0.02
@@ -303,7 +303,7 @@
         "experiment",
         "model"
       ],
-      "text": "Esimerkkiaineisto: neodyymilaseria pumpataan laserdiodilla, jonka valon aallonpituus on $808\\,\\text{nm}$. Laser lähettää valoa aallonpituudella $1064\\,\\text{nm}$. Taulukossa on laserin lähtöteho $P_\\text{L}$, kun pumppausteho $P_\\text{p}$ on säädetty eri arvoihin ($h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$).\n\na) Piirrä mittauspisteistä kuvaaja, jonka vaaka-akselilla on $P_\\text{p}$ ja pystyakselilla $P_\\text{L}$, ja sovita suora pisteisiin, joissa $P_\\text{p} \\ge 30\\,\\text{mW}$. Määritä suoran ja vaaka-akselin leikkauspiste eli kynnysteho.\n\nb) Määritä suoran kulmakerroin $\\dfrac{\\Delta P_\\text{L}}{\\Delta P_\\text{p}}$.\n\nc) Kuinka monta laserfotonia syntyy kynnyksen yläpuolella kutakin lisäpumppausfotonia kohti? Laske se kulmakertoimen ja aallonpituuksien avulla.\n\nd) Selitä, miksi laser ei anna merkittävästi valoa kynnystehoa pienemmillä pumppausteholla, vaikka pumppausta on.\n\nAnna c)-kohdan tulos vastauslaatikkoon.",
+      "text": "Esimerkkiaineisto: neodyymilaseria pumpataan laserdiodilla, jonka valon aallonpituus on $808\\,\\text{nm}$. Laser lähettää valoa aallonpituudella $1064\\,\\text{nm}$. Taulukossa on laserin lähtöteho $P_\\text{L}$, kun pumppausteho $P_\\text{p}$ on säädetty eri arvoihin ($h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$).\n\na) Piirrä mittauspisteistä kuvaaja, jonka vaaka-akselilla on $P_\\text{p}$ ja pystyakselilla $P_\\text{L}$, ja sovita suora pisteisiin, joissa $P_\\text{p} \\ge 30\\,\\text{mW}$ (kaksi ensimmäistä pistettä ovat kynnyksen alapuolella). Määritä suoran ja vaaka-akselin leikkauspiste eli kynnysteho.\n\nb) Määritä suoran kulmakerroin $\\dfrac{\\Delta P_\\text{L}}{\\Delta P_\\text{p}}$.\n\nc) Kuinka monta laserfotonia syntyy kynnyksen yläpuolella kutakin lisäpumppausfotonia kohti? Laske se kulmakertoimen ja aallonpituuksien avulla.\n\nd) Selitä, miksi laser ei anna merkittävästi valoa kynnystehoa pienemmillä pumppaustehoilla, vaikka pumppausta on.\n\nAnna c)-kohdan tulos vastauslaatikkoon.",
       "answer": 0.524,
       "unit": "",
       "tolerance": 0.06,

@@ -22,7 +22,7 @@ UI = [(1.90, 2.6), (2.00, 8.8), (2.10, 15.0), (2.20, 20.9), (2.30, 27.3)]   # li
 ku = sum((x - 2.10) * (y - sum(v for _, v in UI) / 5) for x, y in UI) / sum((x - 2.10) ** 2 for x, _ in UI)   # slope 61,5 mA/V
 a["fy8-6-L2-05"] = 2.10 - (sum(v for _, v in UI) / 5) / ku  # U_k = U_mean − I_mean/k = 1,857 V -> 1,86 V (hc/(eλ) at 650 nm = 1,908 V)
 a["fy8-6-L2-06"] = (e * 2.04 * 630e-9 / c - 6.626e-34) / 6.626e-34 * 100   # Salla (2,04 V, 10 mA): h = 6,868e-34 J s, +3,645 % -> 3,65 % (Aino 5,858e-34, Eero 6,329e-34)
-a["fy8-6-L2-07"] = h * c / e * (1 / 610e-9 - 1 / 650e-9)   # half-maximum points 610 nm and 650 nm: 2,0328 − 1,9077 = 0,1251 eV -> 0,125 eV
+a["fy8-6-L2-07"] = h * c / e * (1 / 620e-9 - 1 / 640e-9)   # half-maximum points 620 nm and 640 nm: 2,0000 − 1,9375 = 0,0625 eV -> 0,0625 eV
 # Level 3: reasoning or an unfamiliar context
 L3 = [(625, 1.86), (590, 1.97), (520, 2.27), (465, 2.55)]  # four LEDs: λ (nm), U_k (V)
 pts = [(c / (lam * 1e-9), U) for lam, U in L3]
