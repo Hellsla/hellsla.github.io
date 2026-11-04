@@ -450,6 +450,8 @@ Homogeenisessa sähkökentässä varattuun hiukkaseen vaikuttaa kaikkialla levyj
   <foreignObject x="380" y="291.5" width="140" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$W = qEd$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy6/lightning-dallas.webp" alt="Sininen yötaivas ja ukkospilvi, josta haarautuva salama kulkee vaakasuoraan pilvessä ja alas maassa olevaan mastoon."><figcaption>Salama iskee mastoon Dallasissa. Ukkospilven ja maan välillä voi olla kymmenien tai satojen miljoonien volttien potentiaaliero. Kun varaus purkautuu sen läpi, sähköinen potentiaalienergia muuttuu valoksi, lämmöksi ja ääneksi.</figcaption></figure>
+
 ### Sähköinen potentiaalienergia
 Sähköinen voima on konservatiivinen kuten painovoima: sen tekemä työ riippuu vain alku- ja loppukohdasta, ei reitistä. Siksi varauksella on kentässä **potentiaalienergiaa** $E_\text{p}$, joka riippuu sen paikasta. Kun kenttä tekee positiivista työtä, potentiaalienergia pienenee saman verran. Kun varausta siirretään kentän voimaa vastaan, potentiaalienergia kasvaa. Potentiaalienergian nollataso valitaan vapaasti, kuten korkeuden nollataso: usein se on negatiivinen levy tai maadoitettu kohta. Merkitystä on vain potentiaalienergian muutoksilla, eivätkä ne riipu nollatason valinnasta.
 
@@ -507,6 +509,8 @@ Levyjen välissä potentiaali kasvaa tasaisesti negatiivisesta levystä positiiv
   <foreignObject x="512" y="73" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$50\,\text{V}$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy6/lightning-strikes.webp" alt="Hämärä sininen taivas tasaisen maiseman yllä; kaukana horisontissa useita haarautuvia salamoita ja oikealla sähköpylväs."><figcaption>Salamoita kesäillan taivaalla. Useimmiten ukkospilven alaosa on varautunut negatiivisesti, joten sen potentiaali on pienempi kuin maan. Salamassa elektronit kulkevat kohti suurempaa potentiaalia, ja niiden potentiaalienergia pienenee.</figcaption></figure>
+
 ### Positiivinen ja negatiivinen varaus
 Positiivinen varaus lähtee levosta liikkeelle kentän suuntaan eli kohti pienempää potentiaalia, ja sen potentiaalienergia pienenee. Elektronin varaus on negatiivinen, $q = -e$, joten siihen vaikuttava voima osoittaa kenttää vastaan: elektroni lähtee kohti suurempaa potentiaalia. Silloinkin sen potentiaalienergia pienenee, koska negatiivisen varauksen potentiaalienergia on sitä pienempi, mitä suurempi potentiaali on. Samassa $150\,\text{V}$:n kohdassa protonin potentiaalienergia on positiivinen ja elektronin negatiivinen. **Kumpikin varaus lähtee levosta liikkeelle suuntaan, jossa sen potentiaalienergia pienenee**, kuten pallo putoaa alaspäin.
 
@@ -548,6 +552,8 @@ Kun hiukkanen, jonka varauksen suuruus on alkeisvaraus $e$, kulkee potentiaalier
   <foreignObject x="533" y="305.5" width="44" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$E_\text{k}$</div></foreignObject>
   <foreignObject x="475" y="337.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{lopussa}$</div></foreignObject>
 </svg>
+
+<figure class="unit-photo"><img src="pics/fy6/plasma-lamp.webp" alt="Lasinen plasmapallo pimeässä: keskellä hehkuva pallo, josta lähtee violetteja ja punaisia purkausnauhoja lasin sisäpintaan."><figcaption>Plasmapallon keskielektrodissa on usean kilovoltin suurtaajuinen vaihtojännite. Harvan kaasun elektronit kiihtyvät sähkökentässä, ja törmätessään kaasuatomeihin ne saavat atomit lähettämään valoa, samaan tapaan kuin revontulissa.</figcaption></figure>
 
 ### Revontulet
 Maan magneettikenttä ohjaa avaruudesta tulevia elektroneja napa-alueiden yläpuolelle. Tuhansien kilometrien korkeudella elektronit kulkevat usein muutaman kilovoltin potentiaalieron läpi, ja jokainen voltti antaa elektronille yhden elektronivoltin liike-energiaa. Potentiaaliero $5\,\text{kV}$ antaa liike-energian $5\,\text{keV}$ ja nopeuden noin $40\,000\,\text{km/s}$. Elektronin massa on niin pieni, että jo tällainen energia antaa sille valtavan nopeuden. Noin $100$–$300\,\text{km}$:n korkeudella elektronit törmäävät ilman happi- ja typpiatomeihin ja -molekyyleihin ja luovuttavat niille energiaansa, ja ne säteilevät energian valona. Vihreä valo tulee hapesta.

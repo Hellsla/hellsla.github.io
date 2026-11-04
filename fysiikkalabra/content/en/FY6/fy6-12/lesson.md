@@ -450,6 +450,8 @@ In a uniform electric field the same force $\overline{F} = q\overline{E}$ acts o
   <foreignObject x="380" y="291.5" width="140" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$W = qEd$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy6/lightning-dallas.webp" alt="A blue night sky and a thundercloud from which a branching lightning bolt runs sideways through the cloud and down to a mast on the ground."><figcaption>Lightning strikes a mast in Dallas. The potential difference between a thundercloud and the ground can be tens or hundreds of millions of volts. When charge is discharged across it, electric potential energy turns into light, heat and sound.</figcaption></figure>
+
 ### Electric potential energy
 The electric force is conservative like gravity: the work it does depends only on the initial and final points, not on the path. So a charge in a field has **potential energy** $E_\text{p}$, which depends on its position. When the field does positive work, the potential energy decreases by the same amount. When a charge is moved against the force of the field, the potential energy increases. The zero level of the potential energy is chosen freely, like the zero level of height: often it is the negative plate or an earthed point. Only the changes of the potential energy matter, and they do not depend on the choice of the zero level.
 
@@ -507,6 +509,8 @@ Between the plates the potential grows steadily from the negative plate to the p
   <foreignObject x="512" y="73" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$50\,\text{V}$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy6/lightning-strikes.webp" alt="A dim blue sky over flat countryside; several branching lightning bolts on the distant horizon and a power pylon on the right."><figcaption>Lightning in a summer evening sky. The lower part of a thundercloud is usually negatively charged, so its potential is lower than that of the ground. In a lightning strike electrons move towards the higher potential, and their potential energy decreases.</figcaption></figure>
+
 ### Positive and negative charge
 A positive charge starts moving from rest in the direction of the field, that is, toward a lower potential, and its potential energy decreases. The charge of an electron is negative, $q = -e$, so the force on it points against the field: the electron starts toward a higher potential. Its potential energy decreases then too, because the potential energy of a negative charge is the lower the higher the potential. At the same point of $150\,\text{V}$ the potential energy of a proton is positive and that of an electron negative. **Each charge starts moving from rest in the direction in which its potential energy decreases**, like a ball falling downward.
 
@@ -548,6 +552,8 @@ When a particle whose charge has the magnitude of the elementary charge $e$ trav
   <foreignObject x="533" y="305.5" width="44" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$E_\text{k}$</div></foreignObject>
   <foreignObject x="475" y="337.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{at the end}$</div></foreignObject>
 </svg>
+
+<figure class="unit-photo"><img src="pics/fy6/plasma-lamp.webp" alt="A glass plasma ball in the dark: a glowing sphere in the centre with violet and red discharge filaments reaching out to the inside of the glass."><figcaption>The central electrode of a plasma ball carries a high-frequency alternating voltage of several kilovolts. Electrons in the thin gas are accelerated by the electric field, and when they collide with gas atoms they make the atoms emit light, much as in the aurora.</figcaption></figure>
 
 ### The aurora
 The magnetic field of the Earth guides electrons coming from space to the polar regions. At a height of thousands of kilometres the electrons often travel through a potential difference of a few kilovolts, and every volt gives the electron one electronvolt of kinetic energy. A potential difference of $5\,\text{kV}$ gives a kinetic energy of $5\,\text{keV}$ and a speed of about $40\,000\,\text{km/s}$. The mass of an electron is so small that even such an energy gives it an enormous speed. At a height of about $100$–$300\,\text{km}$ the electrons collide with the oxygen and nitrogen atoms and molecules of the air and give them their energy, and these radiate the energy as light. The green light comes from oxygen.

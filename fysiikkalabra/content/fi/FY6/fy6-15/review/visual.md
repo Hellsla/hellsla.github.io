@@ -1,18 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 1f46e7478f93fd99
-
-Re-review after the earthing-figure label change: $I_\text{v}$ now sits clear of the arrow shaft.
+CONTENT-HASH: 350146b65da505bf
 
 ## Blocking
-(none)
+- (none)
 
 ## Polish
-- [Minor] fig 7 (maadoitus), left panel — the violet current arrow $I$ still runs over the leg and arm (optional, unchanged).
-- [Minor] fig 11 and fig 7 — the residual current is $I_\text{v}$ in both figures, but the text never names it; optional: one clause in the RCD paragraph.
+- [Minor] fy6-15 kuvateksti (RCD) — "Keltaisesta TEST-painikkeesta suojan toiminta kokeillaan" on kömpelö — "Keltaisella TEST-painikkeella suojan toiminta kokeillaan säännöllisesti"; "ero on 30 mA" -> "ero on vähintään 30 mA".
 
 ## Checked
-- fig-7 at 390: $I_\text{v}$ clear of the green-yellow wire and arrow, inside the panel; fig-11 (same label, equation top right), fig-15 (scale labels match the table), fig-13 at 390; theory-1280-4 and -3 from the earlier rounds (layout unchanged).
-- Source: changed paragraphs (fuse sizing, colour coding, shoes, RCD) fluent, all quantities LaTeX, kilo-ohmiin consistent.
-
-## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+batch delta review: photo file(s) opened and compared with alt text; rendered fy6-15 at 1280 px (float right, 320 px wide, no clipping, beside its paragraph) and 390 px (full-width block, no horizontal overflow); caption physics, Finnish and LaTeX units read; changed typography checked in the capture.

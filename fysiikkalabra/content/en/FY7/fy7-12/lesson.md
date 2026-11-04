@@ -122,6 +122,8 @@ The angle of incidence at which the angle of refraction is $90^\circ$ is called 
   <foreignObject x="422" y="291.5" width="162" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#ffffff">$\text{water},\ n = 1.33$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy7/tir-wine-glass.webp" alt="A hand holds a wine glass by its stem against a black background; a green laser beam enters from below and zigzags through the stem and base of the glass."><figcaption>A green laser beam in the stem of a wine glass. The beam meets the surface of the glass at an angle larger than the critical angle, so it is totally reflected back into the glass and does not escape into the air.</figcaption></figure>
+
 ### Only from a larger refractive index to a smaller one
 Total internal reflection can happen only when light goes from a substance with a larger refractive index into one with a smaller refractive index. When light goes from air into water or glass, it refracts towards the normal, and a refracted ray exists at every angle of incidence. Then some of the light always gets into the second substance, even though the reflected share grows at large angles of incidence. In total internal reflection no light is lost: when the substance does not absorb light, the ray reflected from a smooth boundary carries away all the power of the incident ray. That is why total internal reflection is a better mirror than a metal surface, which absorbs some of the light.
 
@@ -151,6 +153,8 @@ An **optical fibre** is a glass fibre as thin as a hair, with a core in the midd
   <circle cx="506" cy="270" r="4" fill="#e64980"/>
   <foreignObject x="330" y="255.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$n_1 > n_2$</div></foreignObject>
 </svg>
+
+<figure class="unit-photo"><img src="pics/fy7/optical-fibres.webp" alt="A translucent optical cable coiled on a black surface; at each end is a connector shining with red light."><figcaption>Red light sent into one end of a plastic optical cable comes out of the other end. Thanks to total internal reflection, the light follows the fibre around the coil.</figcaption></figure>
 
 ### Why a fibre has a cladding
 A bare glass rod keeps light inside even in air, and even light that arrives at a steeper angle, because the difference between the refractive indices of glass and air is large and the critical angle is therefore small. However, water, grease or another fibre that touches the surface of the glass changes the boundary, and light leaks out at the point of contact. The cladding keeps the reflecting boundary clean inside the fibre, and the plastic protective coating protects the glass from scratches. When the difference between the refractive indices of the core and the cladding is small, only rays almost parallel to the axis stay in the fibre. Their paths are almost equally long, so short light pulses spread out only a little on the way.

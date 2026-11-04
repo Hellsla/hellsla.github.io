@@ -1,16 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 0672750c648ab7b0
+CONTENT-HASH: 71a9fbee53d55aef
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] fig-5 bar chart at 390 px: "at the start / at the end" labels sit close together under the bars; legible, no overlap.
-- [Minor] Experiment table header "plate separa-tion d" hyphenates at 390 px; readable.
+- [Minor] lightning-strikes caption says 'summer evening sky', which the photo does not establish; 'Lightning in a darkening sky' or just 'Lightning over open country' is safer.
 
 ## Checked
-- Rebuilt and re-captured (en): contact sheets 1 and 3, the sim at 390 and 1280 px, the experiment cards and the opened tables.
-- No Finnish left in figures, headings, the sim labels (Release, Reset, Voltage, Plate separation, Particle, proton/electron/alpha particle, Speed) or the experiment tables after the fix; aria/alt descriptions in English.
-- Maths renders (display formulas, aligned example, fractions, roots); no overflow at 390 px; the sim stays readable at 1280 px.
-
-## Scores
-illustrations 5 · typography 5 · Finnish n/a · accessibility 5
+- batch delta review: opened the source image(s) and 1280/390 px renders of the photo(s): lightning-dallas.webp, lightning-strikes.webp, plasma-lamp.webp (all three alts match; pylon on the right and the mast visible; three floats do not collide with figures at 1280). Alt matches the visible content, captions physically correct and tied to the chapter, units in LaTeX, photo floats right at 1280 (no clipping, scrollWidth = viewport) and stacks above the caption at 390.

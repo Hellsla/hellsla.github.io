@@ -143,6 +143,8 @@ When a charged capacitor is connected, for example, to a lamp, it acts as a volt
   <foreignObject x="285.5" y="205.5" width="180" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{discharging}$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy6/film-capacitor.webp" alt="A grey rectangular component on a green circuit board; printed on its side are KNB1560, MKP, X2, 0.1 µF and 275 VAC."><figcaption>A film capacitor with a capacitance of $0.1\,\mu\text{F}$. The marking MKP means that the dielectric is a thin polypropylene film, and $275\,\text{V}$ is the highest alternating voltage at which the capacitor may be used.</figcaption></figure>
+
 ### Capacitance tells how much charge a voltage brings
 When the voltage of a capacitor doubles, the field between the plates doubles, and twice the charge is needed for it. The charge is thus directly proportional to the voltage. Their ratio is the **capacitance** of the capacitor, which depends only on the structure of the capacitor: the area $A$ of the plates, their distance $d$ and the dielectric. Larger plates have room for more charge at the same field. When the plates are closer to each other, the same voltage produces a stronger field $E = \tfrac{U}{d}$, and a stronger field requires more charge on the plates. Capacitance does not depend on the voltage or on the charge.
 
@@ -246,6 +248,8 @@ In an insulator the charges cannot move freely, but the electric field shifts th
 
 ### The energy is in the electric field
 Moving charge from one plate to the other requires work, because the positive plate attracts electrons and the negative plate repels them. This work is stored as energy in the electric field between the plates, and when it discharges, the capacitor gives the energy back. The batteries of a flash unit can deliver only a small power, so charging the capacitor takes seconds. The capacitor discharges through the flash tube in a millisecond, and the same energy is released at a power thousands of times greater.
+
+<figure class="unit-photo"><img src="pics/fy6/capacitor-bank.webp" alt="An electrical substation from above: groups of capacitors on frames topped with grey insulators stand on fenced gravel, joined by conductors."><figcaption>A capacitor bank at a substation. The dielectrics of capacitors working at high voltage must withstand a strong electric field. The area is fenced because a charged capacitor can be dangerous even after it has been disconnected.</figcaption></figure>
 
 ### Dielectric strength
 Every insulator withstands only an electric field of a certain size. When the field exceeds the **dielectric strength** $E_\text{max}$ of the insulator, electrons are torn from the molecules of the insulator, the insulator starts to conduct and a spark discharges between the plates. The capacitor may then be permanently damaged. That is why the greatest allowed voltage is marked on every capacitor. The dielectric strength of air is about $3\,\text{MV/m}$, and lightning is a dielectric breakdown of air on a large scale.

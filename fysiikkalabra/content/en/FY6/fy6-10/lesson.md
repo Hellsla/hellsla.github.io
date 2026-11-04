@@ -180,6 +180,8 @@ Charge is neither created nor destroyed. The total charge of an isolated system,
   <foreignObject x="491" y="243.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$Q = +3e$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy6/balloon-hair.webp" alt="A hand holds a red balloon above long hair, and the hair rises towards the balloon."><figcaption>A balloon rubbed on hair attracts the hair. Rubbing moved electrons from the hair to the balloon, so the balloon became negatively charged and the hair positively charged. Opposite charges attract each other.</figcaption></figure>
+
 ### Charging objects
 An object can be charged in three ways.
 
@@ -386,6 +388,8 @@ A **point charge** is a charged object whose size is small compared with the dis
   <line x1="84" y1="40" x2="104" y2="70" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
   <circle cx="104" cy="70" r="3.5" fill="#6b7480"/>
 </svg>
+
+<figure class="unit-photo"><img src="pics/fy6/balloons-repel.webp" alt="Two yellow balloons hang on thin threads in front of a green chalkboard; the balloons are apart and the threads are slanted."><figcaption>Two balloons charged in the same way push each other apart, so the threads tilt. Each balloon is acted on by gravity, the tension of its thread and the electric force from the other balloon.</figcaption></figure>
 
 ## Formula: Coulomb's law
 The magnitude of the electric force between two point charges is directly proportional to the product of the charges and inversely proportional to the square of the distance between them. This is **Coulomb's law**:

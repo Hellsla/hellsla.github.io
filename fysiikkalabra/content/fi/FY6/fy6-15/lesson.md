@@ -395,6 +395,8 @@ Sulake ei huomaa ihmisen kautta kulkevaa virtaa: sen nimellisvirta on ampeereja,
   <foreignObject x="420" y="17.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$I_\text{L} - I_\text{N} = I_\text{v}$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy6/residual-current-device.webp" alt="Valkoinen nelinapainen vikavirtasuoja mustalla taustalla: keltainen TEST-painike, musta vipu ja ruuviliittimet ylä- ja alareunassa; kyljessä on merkinnät jännitteestä, laukaisuvirrasta ja nimellisvirrasta."><figcaption>Vikavirtasuoja. Merkintä $I_{\Delta n} = 0{,}03\,\text{A}$ kertoo, että suoja katkaisee virran, kun vaihe- ja nollajohtimen virtojen ero on $30\,\text{mA}$. Keltaisesta TEST-painikkeesta suojan toiminta kokeillaan säännöllisesti.</figcaption></figure>
+
 Vikavirtasuoja ei estä kaikkia iskuja. Jos ihminen koskettaa yhtä aikaa vaihejohdinta ja nollajohdinta, virta palaa nollajohdinta pitkin, eikä vaihe- ja nollajohtimen virtojen välille synny eroa. Siksi jännitteisiin osiin ei kosketa, vaikka ryhmässä olisi vikavirtasuoja.
 
 ### Eristeen läpilyöntilujuus
@@ -452,6 +454,8 @@ Jos johdin putoaa maahan, virta leviää maaperään. Maan potentiaali on suurin
   <path d="M560,304 L546,310.5 L546,297.5 Z" fill="#1f2933" stroke-linejoin="round"/>
   <foreignObject x="255" y="267.5" width="250" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{potentiaali pienenee}$</span></div></foreignObject>
 </svg>
+
+<figure class="unit-photo"><img src="pics/fy6/high-voltage-sign.webp" alt="Keltainen kolmion muotoinen varoitusmerkki, jossa on musta reunus ja musta salamanuoli, valkoisella pinnalla."><figcaption>Salamanuolimerkki varoittaa vaarallisesta jännitteestä. Se on esimerkiksi sähkökeskuksen kannessa: kannen takana on jännitteisiä osia, joihin ei saa koskea.</figcaption></figure>
 
 ### Turvallinen toiminta kotona ja työssä
 Suomessa sähköasennustöitä saavat tehdä vain sähköalan ammattilaiset, ja töitä tekevän yrityksen on oltava Turvallisuus- ja kemikaalivirasto Tukesin rekisterissä sähköurakoitsijana. Maallikko saa tehdä vain yksinkertaisia töitä: esimerkiksi vaihtaa sulakkeen ja lampun, palauttaa lauenneen johdonsuojakatkaisijan tai vikavirtasuojan, korjata jatkojohdon tai vaihtaa sen pistotulpan sekä kytkeä valaisimen kuivassa tilassa valaisinliittimellä. Ajantasainen luettelo maallikon sallituista sähkötöistä on Tukesin verkkosivuilla. Ennen työtä virta katkaistaan ja varmistetaan, ettei kohteessa ole jännitettä.

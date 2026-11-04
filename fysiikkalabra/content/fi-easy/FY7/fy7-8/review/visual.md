@@ -1,14 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: b7cca4eb5d885eb4
+CONTENT-HASH: 56742c333cf1f2c4
 
 ## Blocking
-- none
 
 ## Polish
-- [Minor] key_concepts muuntosuhde — the thin gap before 'U_1 : U_2' in 'suhde $U_1 : U_2$' is slightly tight at 390 px; cosmetic.
+- [Minor] caption: $P = RI^2$ appears without saying what P, R and I are; if the lesson body has not defined them just above, add "(P teho, R resistanssi, I virta)" for S2 readers.
 
 ## Checked
-- Delta (round 2): the new "Luvun tärkeät käsitteet" box (key_concepts in meta.json), rendered at 390 px (own capture of section.kc, no horizontal overflow: scrollWidth 390), plus top-390 (opening, layout survived). Rewritten round-1 entries checked for exactness, plain Finnish and consistency with the lesson/glossary terms in the packet. Other content unchanged and not re-audited.
-
-## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+batch delta review: caption with $P = RI^2$ renders correctly; order loss formula then high-voltage explanation reads fine. Rendered preview/fi-easy/fy7-8.html at 390 and 1280 px, photo figure opened at 390; KaTeX renders without error, no clipping, no horizontal overflow.

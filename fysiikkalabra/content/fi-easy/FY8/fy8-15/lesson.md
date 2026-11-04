@@ -315,10 +315,14 @@ Sähkömagneettisen vuorovaikutuksen ja gravitaation kantama on rajaton. Kantama
   <foreignObject x="268.5" y="203.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{fotoni}$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy8/cms-detector.webp" alt="Iso ilmaisin, jossa on paljon johtoja ja metallia. Edessä on ihmisiä oranssit kypärät päässä."><figcaption>CMS-ilmaisin CERNissä. Ilmaisin mittaa hiukkasia, joita syntyy törmäyksissä. Ihmiset näyttävät, kuinka iso laite on.</figcaption></figure>
+
 ### Higgsin bosoni ja CERN
 Standardimallin mukaan avaruuden täyttää **Higgsin kenttä**. Kun hiukkanen vuorovaikuttaa tämän kentän kanssa, se saa massan. Näin massan saavat $W$- ja $Z$-bosonit, kvarkit ja varatut leptonit. Fotoni ja gluoni jäävät massattomiksi. Kentän kvantti on **Higgsin bosoni**. Se löydettiin vuonna 2012 Euroopan hiukkasfysiikan tutkimuskeskuksessa CERNissä, LHC-kiihdyttimellä. Sen massa on noin $125\,\tfrac{\text{GeV}}{c^2}$. Protonin massasta vain noin $1\,\%$ on sen kvarkkien massaa. Loput on kvarkkeja sitovan vahvan vuorovaikutuksen energiaa.
 
 LHC on $27\,\text{km}$ pitkä maanalainen rengas Sveitsin ja Ranskan rajalla. Siinä kaksi protonisuihkua kiihdytetään vastakkaisiin suuntiin energiaan $6{,}8\,\text{TeV}$. Suihkut törmäytetään ilmaisimien keskellä. Törmäyksen energiasta syntyy uusia, raskaita hiukkasia yhtälön $E = mc^2$ mukaisesti. Ilmaisimet mittaavat niiden hajoamistuotteiden radat ja energiat. Suomi on ollut CERNin jäsen vuodesta 1991.
+
+<figure class="unit-photo"><img src="pics/fy8/atlas-detector.webp" alt="Korkea halli maan alla. Sivuilla on valtavia metallirakenteita."><figcaption>ATLAS-ilmaisin rakenteilla vuonna 2007. Valmis ilmaisin on noin $46\,\text{m}$ pitkä ja $25\,\text{m}$ korkea.</figcaption></figure>
 
 ## Kaava: Säilymislait hiukkasreaktioissa
 

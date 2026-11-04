@@ -201,6 +201,8 @@ Luvussa *Sähkömagneettinen induktio* käämiin syntyi induktiojännite, kun se
   <line x1="425" y1="266" x2="425" y2="215" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy7/bicycle-dynamo.webp" alt="Polkupyörän etupyörä ja pyöreä etuvalo; rengasta vasten on painettu pieni hopeanvärinen pullodynamo."><figcaption>Polkupyörän dynamo on pieni generaattori. Renkaan pyörittämä akseli pyörittää kestomagneettia käämin sisällä. Käämi pysyy paikallaan, mutta sen läpi kulkeva magneettivuo muuttuu, joten siihen indusoituu vaihtojännite.</figcaption></figure>
+
 ### Liukurenkaat ja harjat
 Käämin johtimen päät on kytketty akselilla oleviin kahteen **liukurenkaaseen**. Renkaita koskettavat hiiliharjat, joiden kautta jännite johdetaan ulkoiseen virtapiiriin, kuten kuvan lamppuun. Toisin kuin tasavirtamoottorin kommutaattori luvussa *Voima virtajohtimeen: sähkömoottori ja kaiutin*, liukurenkaat eivät käännä virran suuntaa, joten ulkoiseen piiriin tulee käämiin syntyvä jännite sellaisenaan.
 
@@ -295,6 +297,10 @@ Induktiolain mukaan jännite ei riipu siitä, kuinka suuri vuo on, vaan siitä, 
   <circle cx="472" cy="375" r="4" fill="#1f2933"/>
   <circle cx="472" cy="409" r="4" fill="#1f2933"/>
 </svg>
+
+<figure class="unit-photo"><img src="pics/fy7/generator-stator.webp" alt="Suuri pyöreä kuilu ylhäältä kuvattuna; kuilun seinämillä kiertää käämien rivi, reunoilla on keltaiset kaiteet ja pohjalla työkaluja."><figcaption>Vesivoimalan generaattorin staattori, josta roottori on nostettu pois. Käämit ovat paikallaan kehän ympärillä, ja niissä indusoituu jännite, kun magneettinapoja kantava roottori pyörii sisällä.</figcaption></figure>
+
+<figure class="unit-photo"><img src="pics/fy7/generator-rotor.webp" alt="Suuri punaruskea lieriö seisoo valaistun hallin lattialla; lieriön kehällä on pystysuoria raitoja, ja sen ympärillä on laitteita ja ihmisiä pieninä."><figcaption>Pumppuvoimalan generaattorin roottori huollossa Coo-Trois-Pontsissa Belgiassa. Roottorin kehällä on sähkömagneettien napoja. Kun roottori pyörii staattorin sisällä, käämien läpi kulkeva magneettivuo muuttuu jatkuvasti.</figcaption></figure>
 
 ### Voimalaitoksen generaattori ja tuulivoimala
 Voimalaitosten suurissa generaattoreissa pyörii sähkömagneetti, ja käämit ovat paikallaan ympärillä. Paikallaan olevan käämin läpi kulkeva vuo muuttuu samalla tavalla kuin pyörivässä käämissä, joten syntyy samanlainen vaihtojännite, ja suuri virta saadaan käämeistä ilman liukukoskettimia. Tuulivoimalassa tuuli pyörittää roottoria, jonka akseli pyörittää generaattoria. Roottori pyörii hitaasti, noin $10$–$15$ kierrosta minuutissa, joten generaattorissa on joko vaihteisto, joka nostaa pyörimisnopeuden, tai paljon magneettinapoja. Tuulen nopeus vaihtelee, joten taajuusmuuttaja muuntaa generaattorin jännitteen verkon taajuuteen $50\,\text{Hz}$. Suomessa oli vuoden 2024 lopussa $1835$ tuulivoimalaa, joiden yhteenlaskettu nimellisteho oli $8358\,\text{MW}$. Ne tuottivat vuonna 2024 $19{,}8\,\text{TWh}$ sähköä, noin $24\,\%$ Suomen sähkönkulutuksesta (Suomen Uusiutuvat ry, tuulivoimatilastot 2024).

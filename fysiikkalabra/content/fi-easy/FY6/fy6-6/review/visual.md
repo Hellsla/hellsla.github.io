@@ -1,12 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 39146c60089b3711
+CONTENT-HASH: 1d9f83f79f46c28f
 
 ## Blocking
+(none)
 
 ## Polish
-- None.
+- [Minor] fy6-6 toaster alt: 'hehkuvia vastuslankoja' — the wires are hard to see, the orange glow around the bread is what shows. Fix: 'Leivän ympärillä hehkuu oranssia valoa.'
 
 ## Checked
-- Recaptured after the text fix (screenshot.py --if-stale). Contact sheets, figures at 390 px, sim at 390 and 1280 px, opened states: no overflow, labels fit, maths renders.
-- Figure and sim texts are Finnish and match the reference; stage chips and buttons are Finnish.
-- Re-review after the concept-review commit: heat-transfer wording (energy transferred as heat to the surroundings), Joule-law condition (same resistor, resistance constant), points no longer called measured (ex-pi), all matching the Finnish; no numbers changed; figure descriptions regenerated and captures retaken.
+batch delta review: opened the image file(s) and rendered preview/fi-easy/fy6-6.html at 1280 px (photo floats right, 320 px wide, credit line shown, no clipping) and 390 px (full column width, no horizontal overflow); Photo toaster-glowing: alt and caption match; glow visible, wires themselves barely visible.

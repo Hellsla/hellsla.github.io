@@ -204,6 +204,8 @@ Under the glass top of an induction hob there is a flat copper coil in which an 
   <line x1="500" y1="158" x2="412" y2="178" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy7/induction-hob.webp" alt="A black glass hob with four cooking zones and touch controls at the front; a steel saucepan stands at the back right."><figcaption>An induction hob. An alternating current flows in a coil under the glass, and its changing magnetic field induces eddy currents in the steel base of the pan. The pan heats itself, and the hob only gets warm from the pan.</figcaption></figure>
+
 ### Why the pan must be steel or cast iron
 An induction hob heats efficiently only a pan whose base is a ferromagnetic substance, such as steel or cast iron. A ferromagnetic base strengthens the field of the coil and gathers the flux into itself (chapter *Magnets, the magnetic dipole and the magnetic field*). In addition, steel conducts electricity worse than aluminium, and the eddy currents flow in it only in a thin surface layer with a large resistance, so with the same current in the coil the internal energy of the base grows quickly. Aluminium and copper are not ferromagnetic, and they conduct electricity extremely well. In them the eddy currents spread over a thicker region, the resistance stays small and there is little heating. An ordinary induction hob therefore usually does not heat an aluminium pan: it detects an unsuitable pan and does not start. Many pans have a steel plate under the base for just this reason.
 

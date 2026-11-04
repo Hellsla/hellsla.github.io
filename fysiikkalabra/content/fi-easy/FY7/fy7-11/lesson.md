@@ -83,6 +83,8 @@ Taulukon aallonpituudet ovat tyhjiössä. Kun valo menee rajapinnan läpi, sen t
 
 Veden taitekertoimet lämpötilassa $20\,{}^\circ\text{C}$: M. Daimon ja A. Masumura, *Applied Optics* 46, 2007. Kruunulasin N-BK7 taitekertoimet: SCHOTT AG, optisten lasien luettelo, 2017.
 
+<figure class="unit-photo"><img src="pics/fy7/prism-dispersion.webp" alt="Seinällä on valojuova, jossa on sateenkaaren värit."><figcaption>Valkoinen valo on kulkenut prisman läpi. Prisma taittaa sinistä valoa enemmän kuin punaista. Siksi värit erottuvat toisistaan.</figcaption></figure>
+
 ### Miksi violetti hidastuu enemmän
 Valo on aaltoa, jossa sähkökenttä värähtelee. Valon sähkökenttä saa aineen elektronit värähtelemään valon taajuudella. Värähtelevät elektronit lähettävät itse valoa. Tämä valo yhdistyy tulevaan valoon, ja yhdistynyt aalto etenee hitaammin kuin valo tyhjiössä.
 
@@ -189,6 +191,8 @@ Samassa kulmassa olevat pisarat muodostavat ympyrän, jonka keskipiste on vastap
   <foreignObject x="50.5" y="145.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#7048e8">$\text{violetti}$</div></foreignObject>
   <foreignObject x="111" y="311.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{vastapiste}$</div></foreignObject>
 </svg>
+
+<figure class="unit-photo"><img src="pics/fy7/rainbow-glen-coe.webp" alt="Vihreä vuoristolaakso ja puro. Laakson yllä on sateenkaari."><figcaption>Sateenkaari Skotlannissa. Aurinko paistaa katsojan takaa. Valo taittuu ja heijastuu vesipisaroissa, ja pisarat jakavat sen väreihin.</figcaption></figure>
 
 Sateenkaari näkyy siis vain, kun aurinko paistaa selän takaa ja edessä on pisaroita. Tasaisella maalla näkyy vain se osa kaaresta, joka on horisontin yläpuolella. Olkoon auringon korkeus horisontista $h$. Silloin vastapiste on yhtä paljon horisontin alapuolella, ja punaisen kaaren huippu on korkeudella $42^\circ - h$.
 

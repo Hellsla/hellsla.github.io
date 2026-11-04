@@ -1,18 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 4706a24b50cab984
+CONTENT-HASH: a2ef4994cefae8e2
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] sim readout (sim-390) — before a run it still reads "Valmis mittaus: N = − pulssia 10 s:ssa", the dash looks like a minus sign; write "ei vielä mittausta" (round-1 note, unchanged).
-- [Minor] hero — alpha and beta tracks remain short and similar at 390 px; harmless for a mood illustration.
+- [Minor] for science: Tšerenkov-kuvatekstissä 'hiukkaset' on tarkemmin 'varatut hiukkaset (elektronit)'.
+- [Minor] Tšernobyl-kuva on GM-kappaleen vieressä hyvin, mutta kuvateksti voisi mainita, että kuvan laite on keltainen taskumittari (alt sanoo jo).
 
 ## Checked
-- Delta: graph fy812-tu (Tarkista 2, fig-14-390, stamp matches hash). d axis now labelled 0, 6, 12 … 48 mm: labels clearly separate at 390 px, none overlapping, 'd (mm)' and the axis title clear of the last tick, y labels unchanged, curve and the 800 start marker clear of all labels.
-- 12 mm half-value crossing still readable: 12 is a labelled tick and the gridlines (every 2 mm) remain.
-- Not re-opened: other figures and text unchanged by the diff.
-- Hash at start and end: 4706a24b50cab984.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+batch delta review: rendered preview/fy8-12.html at 1280 px and opened the 2 added photo(s) with caption; image files read where alt text needed verification; floats right of the text (x 744-1064 px), no clipping or horizontal overflow at 1280 or 390 px; alt text matches image, captions physically correct and tied to the chapter, LaTeX for numbers with units.

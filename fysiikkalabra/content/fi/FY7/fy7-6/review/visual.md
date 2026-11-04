@@ -1,15 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: c8a33754cfe99f67
+CONTENT-HASH: 569c8f6ed3d687f8
 
 ## Blocking
 
 ## Polish
 
-## Checked
-- Delta re-review of the Sijoitus step of the roller-coaster braking solution (siirto task). Arithmetic: 625 - 100 = 525 m^2/s^2; 2400 * 525 / 60 = 21 000 N = 21 kN. Consistent with the Kaava step; the symbols, units and decimal comma are fine.
-- check_layout.py fy7-6 --width 340: OK in fi, en and fi-easy.
-- Own capture of the opened solution at 340 px (scratchpad sol-fi.png): the two-part Sijoitus renders cleanly, with no overflow or clipping, and the order is principle, formula, substitution, result.
-- Existing 390 captures of the sovella stage show nothing else changed.
 
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+## Checked
+batch delta review: opened the image file(s) (eddy-current-brake) and rendered unit-photo with caption at 1280 px (float right, 320 px wide, inside column, no clipping) and 390 px (stacked, no horizontal overflow); alt text matches what is visible, caption physically sound and tied to the chapter, Finnish natural, number+unit in LaTeX.

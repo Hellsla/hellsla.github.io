@@ -57,6 +57,14 @@
 html{-webkit-text-size-adjust:100%}
 body{margin:0;font:var(--sim-fs)/var(--sim-lh) var(--sans);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;
   background-image:radial-gradient(circle at 18% 8%,rgba(26,77,46,.06),transparent 32rem),radial-gradient(circle at 90% 0,rgba(26,77,46,.04),transparent 28rem);background-repeat:no-repeat}
+/* the front page's background shape (teacher 2026-11-04): Kiviruukin lukio's hero blob shape (his path, viewBox 0 0 1000 900)
+   in Ruukkilabra's pale sage green #dde8d4, with a crisp edge (teacher 2026-11-04: sharper, no fade). At the top right turned
+   upside down so that it hangs from the corner, runs off the right edge and partly behind the module list; mirrored and
+   fainter in the bottom left corner. Background layers only: no content, layout or horizontal scroll changes. */
+body:has(main.home){--blob:clamp(26rem,14rem + 48vw,68rem);
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-60 -60 1120 1020'%3E%3Cpath transform='matrix(1 0 0 -1 0 900)' fill='%23dde8d4' d='M54 880V760C54 669 75 590 118 523C160 459 220 410 296 377C423 323 521 355 625 400C685 426 741 447 782 438C821 430 840 396 842 334L846 282C849 188 885 108 958 54L1000 24V880H54Z'/%3E%3C/svg%3E"),url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-60 -60 1120 1020'%3E%3Cpath transform='matrix(-1 0 0 1 1000 0)' fill='%23dde8d4' fill-opacity='.6' d='M54 880V760C54 669 75 590 118 523C160 459 220 410 296 377C423 323 521 355 625 400C685 426 741 447 782 438C821 430 840 396 842 334L846 282C849 188 885 108 958 54L1000 24V880H54Z'/%3E%3C/svg%3E"),radial-gradient(circle at 18% 8%,rgba(26,77,46,.06),transparent 32rem),radial-gradient(circle at 90% 0,rgba(26,77,46,.04),transparent 28rem);
+  background-size:var(--blob) auto,calc(var(--blob) * .5) auto,auto,auto;
+  background-position:right calc(var(--blob) * -.12) top calc(var(--blob) * -.2),left calc(var(--blob) * -.06) bottom calc(var(--blob) * -.1),0 0,0 0}
 a{color:var(--accent-deep);text-underline-offset:.18em}
 a:focus-visible,summary:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:6px}
 .page{width:min(80rem,calc(100% - 32px));margin:0 auto;padding:18px 0 40px}

@@ -411,6 +411,8 @@ In 1998, measurements of distant supernovae showed that the expansion is acceler
 
 ## Formula: Hubble–Lemaître law
 
+<figure class="unit-photo"><img src="pics/fy8/hubble-deep-field.webp" alt="A black sky full of small points of light and galaxies of different colours and shapes."><figcaption>The Hubble Ultra Deep Field: a small patch of sky showing about $10\,000$ galaxies. Light from the most distant of them set out more than $13$ billion years ago, and the expansion has stretched its wavelengths.</figcaption></figure>
+
 ### Redshift and recession speed
 Redshift is the change in the wavelength of a spectral line relative to its wavelength in the laboratory:
 ```latex

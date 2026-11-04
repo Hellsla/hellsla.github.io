@@ -440,6 +440,8 @@ The $(U, I)$ graph of a cell is not a falling straight line like that of a batte
   <foreignObject x="427.5" y="255.5" width="40" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$U_\text{oc}$</span></div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy6/solar-panels-jyvaskyla.webp" alt="A dark house roof against a blue sky; on the roof are two rows of dark blue solar panels and a chimney."><figcaption>Solar panels on the roof of a detached house in Jyväskylä, Finland. Each panel contains many solar cells connected in series. The panels produce a direct voltage, which an inverter converts into the alternating voltage of the grid.</figcaption></figure>
+
 ## Formula: Series resistor and power of a solar cell
 
 ### Sizing the series resistor

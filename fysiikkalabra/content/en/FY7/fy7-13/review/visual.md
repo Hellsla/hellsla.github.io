@@ -1,16 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: de4174ac1f57e923
+CONTENT-HASH: 029afbb4725a0a19
 
 ## Blocking
-- none
 
 ## Polish
-- [Minor] white-light figure (fig-11) — the labels $k = 2$ and $k = 3$ under the spectrum strip sit almost touching — widen the gap.
-- [Minor] Tutki experiments, "Initial state" line — $L = 1.0\,\text{m}$ and $0.5\,\text{m}$ while the simulation shows $1.00\,\text{m}$ and $0.50\,\text{m}$ — use the same number of decimals.
-- [Minor] Measurement example-data table at 390 px (exp-koe-3, stage tutki) — first column is squeezed and hyphenates ("den-sity", "grat-ing") — shorten the row labels.
+- [Minor] fy7-13 caption — the interference photo (before "Coherent light") already says "coherent"; fine, but the diffraction alt could say "a bright green panel" rather than "pale surface".
 
 ## Checked
-- contact sheet 1; top/intro-1280; hero; figs 5,7,9,11,13,15,17 (fig-N-390, enlarged); example-390 1-2; stage-tutki 1,3; exp-koe-1,3; theory-1280-2; open-tarkista-1280-2. check_layout at 340 px OK. Translation read against source: no Finnish words visible (en), terms consistent, labels translated in all figures, units and maths match fi.
-
-## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+batch delta review: opened each new photo in assets/pics/fy7 and compared alt text and caption with it; rendered preview/en/fy7-13.html at 1280 px (figure floats right, 320 px wide, no overflow) and 390 px (full-width, below text, credit line present); captions physically correct and tied to the chapter, numbers with units in LaTeX.
