@@ -1,16 +1,22 @@
-VERDICT: PASS
-CONTENT-HASH: 702b7c7a415dfe04
+VERDICT: FAIL
+CONTENT-HASH: 65a4524d88dce239
 
 ## Blocking
+- exercises.json:305 / solutions.md:193ff / answers.py (fy3-16-L3-05) — A: the mass of a 0,030 m *ice* layer is computed with the density of *water* (1000 kg/m³). 54 m³ of ice has mass about 49 500 kg (ρ_jää ≈ 917 kg/m³); the answer 592 kW would become 543 kW. — Fix (simplest): make the given volume water, e.g. "ruiskutetaan betonilaatalle 0,030 m:n paksuinen kerros 12-asteista vettä" (keep a) "Laske jäädytettävän veden massa", answer unchanged); or give ρ_jää = 917 kg/m³ and recompute (answer 540 kW).
+- solutions.md:205 (L3-05 d) — A, guardrail "a heat pump has a lämpökerroin, not an efficiency": "koneen oma hyötysuhde on alle 100 %" is not a reason for the required cooling power to be larger; the heat to remove does not depend on the machine, and its electrical power is P divided by the kylmäkerroin (can be smaller than P). — Fix: delete that clause; keep the extra heat loads (air, lights, spectators, slab, ground) as the reason the model gives a lower bound. Optionally add "koneen sähköteho riippuu sen kylmäkertoimesta".
 
 ## Polish
-- exercises/solutions.md:126 (L3-03 Järkevyys) — "kahdella numerolla pienin sopiva massa 1,5 kg": the computed minimum is 1,511 kg, so 1,5 kg is slightly below it (lasts about 5,96 h). Say "noin 1,5 kg (laskettu vähimmäismassa 1,51 kg)" instead of calling 1,5 kg the smallest sufficient mass.
-- exercises/solutions.md L3-02 Periaate — "Koska 251 400 J > 167 000 J … loppulämpötila on yli 0 °C" is right here; for consistency with the lesson's guardrail wording, the closing check could also mention that equality would give exactly 0 °C.
+- solutions.md:167 (L2-06 Vastaus) — "kolme merkitsevää numeroa … noin 140 W/K" contradicts itself; state 1,4·10² W/K, two significant figures, limited by the fit.
+- solutions.md:185 (L3-04) — "Teho UA = … W/K": UA is not a power; write "Lämpöhäviökerroin UA".
+- exercises.json:257 (L3-04) — one U-value 0,50 for walls, roof and windows; add "keskimääräinen" so the simplification is visible.
+- Plan (docs/exercise-bank/FY3.md): the level-1 löyly multiple choice and the level-2 thermos comparison experiment are not in the set (L1-08 kettle, L2-05 sauna data stand in). Update the plan or note the swap.
+- L2-05 b: "P = UAΔT" for stones is an analogy; "häviöteho kasvaa lämpötilaeron mukana" is enough.
 
 ## Checked
-- All 12 answers recomputed in one script with my own formulas: 4,48 MJ; 452 kJ; 26,9 W; 250,5 kJ; 14,0 kW; 1,617 kg; 648,8 kJ; 0,857 kg/s; 91,1 g; 25,95 K; 8,057 °C; 1,511 kg — all match answers.py and exercises.json; tolerance 0,02 admits the rounded answers.
-- L3-02 checks "does all ice melt" first (251 400 J > 167 000 J) and the energy balance 183 880 J both sides.
-- L3-03 assumptions stated in the task (drinks cool at once, ice warms then melts, wall power at 0 °C inside); energy terms 486 000 J + 50 280 J over 355 000 J/kg right.
-- L1-03 uses the given 2,0 °C inside (ΔT = 28 K); L2-01 states "vain jäätä"; Q = cmΔT used only without phase change, as each Periaate says.
-- Magnitude checks real (coolant tens of kW, glycol needs ~20 % more flow than water, sauna stones fall 26 K, heating alone 3,4 K).
-- Solutions symbolic first; notation (P = UAΔT, P = c(m/t)ΔT, Q = sm, Q = rm) matches the lesson brief; melting described with the guardrail wording; scope within FY3.
+- One script recomputed all new answers: L1-08 251,4 s; L2-05 75,6 %; L2-06 least-squares slope −99,8 kWh/K → 138,6 W/K, intercept 20,1 °C; L2-07 2,913 h (student 912 s reproduced); L3-04 5443 kWh, 816,5 € vs 335,9 €, difference 480,6 €, break-even 0,44 €/kg; L3-05 21,32 GJ, 592 kW, freezing 85 %. All match answers.py.
+- L1-06/L1-07: one correct option each, distractors wrong with correct feedback; guardrail wording for melting and net transfer used.
+- L2-05: efficiency defined in the task; per-interval efficiencies 82/75/70 % right.
+- L2-07: the error (ΔT = 299 K) and ratio 299/26 = 11,5 check right.
+- Scope: Q = cmΔT, sm, rm, P = UAΔT, efficiency and fuel heating value; all in FY3 and its prerequisites.
+- No duplicates with existing L1-01…L3-03.
+- Hash identical at start and end.
