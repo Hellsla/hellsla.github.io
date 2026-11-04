@@ -444,24 +444,23 @@ def chapter_cards(code, mod, slots, built_ids, legacy_ids, cards):
     if themes and slots[0]["id"] not in themes: sys.exit(f"{code}: the first theme must start at the first chapter {slots[0]['id']}")
     bad = set(themes) - {l["id"] for l in slots}
     if bad: sys.exit(f"{code}: themes start at unknown chapters {sorted(bad)} (curriculum.json)")
-    out = ""; group = ""
-    def close():
-        return f'<ol class="lessons ch-cards">{group}</ol>' if group else ""
+    items = ""
     for i, l in enumerate(slots, 1):
-        if l["id"] in themes:
-            out += close(); group = ""
-            out += f'<h3 class="ch-theme">{esc(themes[l["id"]])}</h3>'
+        # One continuous grid (teacher 2026-11-04): a theme's name is a label above its first card, so the next theme's
+        # cards go on in the same row and a short theme leaves no hole beside it.
+        theme = f'<h3 class="ch-theme">{esc(themes[l["id"]])}</h3>' if l["id"] in themes else ""
         num = f'<span class="l-num">{T("site.chapter_n", n=i)}</span>'
         title = esc(l["title"])
         if l["id"] in built_ids:
             svg, why = cards.get(l["id"], ("", ""))
             tags = f'<span class="tag">{T("site.lesson_prototype")}</span>' if l["id"] in legacy_ids else ""
-            group += (f'<li class="live ch-card">{num}<a href="{l["id"]}.html">{title}</a>'
+            items += (f'<li class="live ch-card">{theme}<div class="ch-box">{num}<a href="{l["id"]}.html">{title}</a>'
                       + (f'<p class="ch-why">{why}</p>' if why else "") + (f'<p class="ch-tags">{tags}</p>' if tags else "")
-                      + (f'<div class="ch-img">{svg}</div>' if svg else "") + "</li>")
+                      + (f'<div class="ch-img">{svg}</div>' if svg else "") + "</div></li>")
         else:
-            group += f'<li class="soon ch-card">{num}<span class="ch-title">{title}</span><p class="ch-tags"><span class="tag">{T("site.lesson_coming")}</span></p></li>'
-    return out + close()
+            items += (f'<li class="soon ch-card">{theme}<div class="ch-box">{num}<span class="ch-title">{title}</span>'
+                      f'<p class="ch-tags"><span class="tag">{T("site.lesson_coming")}</span></p></div></li>')
+    return f'<ol class="lessons ch-cards">{items}</ol>'
 
 
 def chapter_titles(code, built=None):
