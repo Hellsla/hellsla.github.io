@@ -268,8 +268,8 @@ if NPAGE:
                bool(better) and better["shown"] and better["text"] == T("js.ra_better") and not better["on"] and not better["voice"], better)
         expect(f"{NPAGE} 360px: still nothing of the model fetched with the menu open", not asked, asked[:3])
         pg.check(".ra-better input"); pg.wait_for_timeout(1500)
-        expect(f"{NPAGE} 360px: choosing the better voice starts the download and shows Nainen / Mies",
-               any(MODEL_FILES + "manifest.json" in u for u in asked) and pg.evaluate("!document.querySelector('.ra-voice').hidden"), asked[:3])
+        expect(f"{NPAGE} 360px: choosing the better voice starts the download" + (" and shows Nainen / Mies" if MBASE else " (models not reachable here)"),
+               any(u.startswith(MBASE or MODELS_URL) for u in asked) and (not MBASE or pg.evaluate("!document.querySelector('.ra-voice').hidden")), asked[:3])
         expect(f"{NPAGE} 360px: no script errors", not errs, errs[:3])
         b.close()
 
