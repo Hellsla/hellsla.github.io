@@ -126,3 +126,72 @@ $$\begin{aligned} d &= \dfrac{1328{,}9\,\text{J}}{121\,200\,\text{N}} \\ &= 0{,}
 **Sijoitus:** $\Delta n = \dfrac{3{,}0 \cdot 10^5\,\text{Pa} \cdot 0{,}2000\,\text{m}^3}{8{,}31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}} \cdot 291{,}15\,\text{K}} = 24{,}80\,\text{mol}$. $\Delta m = 24{,}80\,\text{mol} \cdot 0{,}029\,\tfrac{\text{kg}}{\text{mol}} = 0{,}7192\,\text{kg}$
 **Vastaus:** $0{,}72\,\text{kg}$, kaksi merkitsevää numeroa. Rajoittava tieto on paine-ero $10{,}0\,\text{bar} - 7{,}0\,\text{bar} = 3{,}0\,\text{bar}$: lukemien erotuksella on desimaalit epätarkemmasta lukemasta, joten sillä on kaksi numeroa. Tilavuus $200{,}0\,\textsf{l}$, moolimassa $29\,\text{g/mol}$ ja $291\,\text{K}$ ovat vähintään kahden numeron arvoja eivätkä rajoita.
 **Järkevyys:** Alussa säiliössä oli kokonaispaineella $11{,}0\,\text{bar}$ noin $2{,}6\,\text{kg}$ ilmaa, joten vuotanut $0{,}72\,\text{kg}$ on noin $27\,\%$. Paine laski ylipaineella $10{,}0 \to 7{,}0\,\text{bar}$, mikä on $30\,\%$ ylipaineesta ja hieman enemmän kuin $27\,\%$ kokonaispaineesta, koska ilmanpaine ei vuoda. Ilmaa vuoti $24{,}8\,\text{mol}$, ja se on järkevä määrä kolmen baarin paineen laskulle.
+
+## fy3-10-L1-06
+**Kysytty:** mitä ainemäärä $n$ kuvaa tilanyhtälössä $pV = nRT$.
+**Periaate:** Mooli on hiukkasten lukumäärän yksikkö, ja yhdessä moolissa on aina $6{,}022 \cdot 10^{23}$ hiukkasta aineesta riippumatta. Tilanyhtälö sitoo paineen, tilavuuden ja lämpötilan kaasun hiukkasmäärään.
+**Mallivastaus:** Ainemäärä kertoo kaasun hiukkasten lukumäärän mooleina, $n = N/N_\text{A}$. Se ei ole kaasun massa: massa on $m = nM$, ja moolimassa $M$ ei esiinny tilanyhtälössä. Se ei myöskään ole tiheys eikä hiukkasten nopeus, koska tilavuus $V$ ja lämpötila $T$ ovat yhtälössä omina suureinaan.
+
+## fy3-10-L1-07
+**Annettu:** helium, $V_1 = 2{,}50\,\textsf{l}$, $\theta_1 = 21\,{}^\circ\text{C}$, $p_1 = 101\,\text{kPa}$; $\theta_2 = -9\,{}^\circ\text{C}$, $p_2 = 98\,\text{kPa}$
+**Kysytty:** tilavuus $V_2$ litroina
+**Periaate:** Kaasua ei pääse pois, joten ainemäärä $n$ pysyy samana. Tilanyhtälö $pV = nRT$ antaa kummassakin tilassa saman luvun $nR = pV/T$, joten $p_1V_1/T_1 = p_2V_2/T_2$.
+**Kaava:** $\dfrac{p_1V_1}{T_1} = \dfrac{p_2V_2}{T_2}$, josta $V_2 = \dfrac{p_1 V_1 T_2}{p_2 T_1}$
+**Muunnokset:** $T_1 = (21 + 273{,}15)\,\text{K} = 294{,}15\,\text{K}$ ja $T_2 = (-9 + 273{,}15)\,\text{K} = 264{,}15\,\text{K}$. Paineen ja tilavuuden yksiköt supistuvat, joten niitä ei tarvitse muuntaa.
+**Sijoitus:** $V_2 = \dfrac{101\,\text{kPa} \cdot 2{,}50\,\textsf{l} \cdot 264{,}15\,\text{K}}{98\,\text{kPa} \cdot 294{,}15\,\text{K}} = 2{,}314\,\textsf{l}$
+**Vastaus:** $2{,}31\,\textsf{l}$, kolme merkitsevää numeroa kuten tilavuudessa $2{,}50\,\textsf{l}$ ja paineessa $101\,\text{kPa}$; paine $98\,\text{kPa}$ on annettu kahdella numerolla, joten tulos on varmin kahden numeron tarkkuudella $2{,}3\,\textsf{l}$.
+**Järkevyys:** Lämpötila laskee suhteessa $264{,}15 / 294{,}15 \approx 0{,}90$, mikä pienentää tilavuutta kymmenyksellä. Paine laskee suhteessa $98 / 101 \approx 0{,}97$, mikä kasvattaa tilavuutta kolmella prosentilla. Tulo $0{,}90 / 0{,}97 \approx 0{,}93$ ja $0{,}93 \cdot 2{,}50\,\textsf{l} \approx 2{,}3\,\textsf{l}$ vastaa tulosta.
+
+## fy3-10-L1-08
+**Kysytty:** mikä virhe oppilaan laskussa on.
+**Periaate:** Tilanyhtälö toimii oikein vain, kun suureet ovat perusyksiköissä: paine pascaleina, tilavuus kuutiometreinä ja lämpötila kelvineinä. Muuten tulokseen jää yksikön kerroin.
+**Mallivastaus:** Oppilas sijoitti paineen $150\,\text{kPa}$ lukuna $150$ pascaleiden sijaan. Oikea paine on $150\,000\,\text{Pa}$, jolloin $n = \dfrac{150\,000 \cdot 0{,}0020}{8{,}31 \cdot 300} \approx 0{,}12\,\text{mol}$. Oppilaan tulos on siis tuhat kertaa liian pieni, kuten hänen arvionsakin vihjasi. Lämpötila ja tilavuus oli sijoitettu oikeissa yksiköissä, eikä moolimassaa tarvita.
+
+## fy3-10-L2-05
+**Annettu:** rengas, $\theta_1 = 5{,}0\,{}^\circ\text{C}$, $p_1 = 220\,\text{kPa}$ ennen ajoa; $\theta_2 = 26{,}0\,{}^\circ\text{C}$, $p_2 = 224\,\text{kPa}$ ajon jälkeen; tilavuus $V$ vakio
+**Kysytty:** vuotanut osuus $\dfrac{n_1 - n_2}{n_1}$ prosentteina
+**Periaate:** Tilavuus on vakio, joten tilanyhtälöstä $pV = nRT$ saadaan ainemäärä $n = \dfrac{pV}{RT}$ kummassakin tilassa. Lämpötila nousee ajossa, joten paine nousisi vuotamattomassakin renkaassa, ja vuoto näkyy vasta ainemäärien vertailussa.
+**Kaava:** $n_1 = \dfrac{p_1V}{RT_1}$ ja $n_2 = \dfrac{p_2V}{RT_2}$, joten $\dfrac{n_2}{n_1} = \dfrac{p_2 T_1}{p_1 T_2}$ ja vuotanut osuus on $1 - \dfrac{n_2}{n_1}$
+**Muunnokset:** $T_1 = (5{,}0 + 273{,}15)\,\text{K} = 278{,}15\,\text{K}$ ja $T_2 = (26{,}0 + 273{,}15)\,\text{K} = 299{,}15\,\text{K}$. Paineet ovat samassa yksikössä, joten ne supistuvat.
+**Sijoitus:** a) Ilman vuotoa $p_2' = p_1 \dfrac{T_2}{T_1} = 220\,\text{kPa} \cdot \dfrac{299{,}15\,\text{K}}{278{,}15\,\text{K}} = 236{,}6\,\text{kPa}$. b) $\dfrac{n_2}{n_1} = \dfrac{224\,\text{kPa} \cdot 278{,}15\,\text{K}}{220\,\text{kPa} \cdot 299{,}15\,\text{K}} = 0{,}9467$, joten vuotanut osuus on $1 - 0{,}9467 = 0{,}0533$
+**Vastaus:** $5{,}3\,\%$, kaksi merkitsevää numeroa, koska paineet on annettu kolmella numerolla mutta niiden suhde $0{,}947$ eroaa ykkösestä vain vähän. Vuotamattomassa renkaassa paine olisi ollut $237\,\text{kPa}$, mutta mitattu on $224\,\text{kPa}$. Paineen nousu $220 \to 224\,\text{kPa}$ ei yksin kerro vuodosta, koska lämpötilan nousu nostaisi painetta ilman vuotoakin.
+**Järkevyys:** Paine on $224 / 236{,}6 \approx 0{,}947$ vuotamattoman renkaan paineesta, joten ilmaa on jäljellä noin $94{,}7\,\%$ ja vuotanut osuus on noin $5{,}3\,\%$. Pieni vuoto näkyy pienenä paine-erona, mikä sopii tilanteeseen.
+
+## fy3-10-L2-06
+**Annettu:** $p = 101\,\text{kPa}$ vakio, ilmamäärä vakio; $(T, V)$-pisteet taulukossa; $R = 8{,}31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}}$
+**Kysytty:** ainemäärä $n$ millimooleina
+**Periaate:** Paine ja ainemäärä ovat vakioita, joten tilanyhtälöstä saadaan $V = \dfrac{nR}{p}\,T$. Tilavuus on suoraan verrannollinen kelvinlämpötilaan, ja $(T, V)$-kuvaajan suoran kulmakerroin on $\dfrac{nR}{p}$.
+**Kuvaajan lukeminen:** Piirretään pisteet ja suora, joka kulkee pisteiden lomassa. Luetaan suoralta kaksi kaukana toisistaan olevaa pistettä, esimerkiksi $(280\,\text{K};\ 115{,}4\,\text{cm}^3)$ ja $(360\,\text{K};\ 148{,}0\,\text{cm}^3)$. Kulmakerroin on $k = \dfrac{(148{,}0 - 115{,}4)\,\text{cm}^3}{(360 - 280)\,\text{K}} = 0{,}4075\,\tfrac{\text{cm}^3}{\text{K}}$. Suora kulkee lähes origon kautta, sillä $V = 0$ vastaisi lämpötilaa lähellä $0\,\text{K}$.
+**Kaava:** $k = \dfrac{nR}{p}$, josta $n = \dfrac{kp}{R}$
+**Muunnokset:** $k = 0{,}4075\,\tfrac{\text{cm}^3}{\text{K}} = 0{,}4075 \cdot 10^{-6}\,\tfrac{\text{m}^3}{\text{K}}$ ja $p = 101\,\text{kPa} = 101\,000\,\text{Pa}$. Lopuksi $1\,\text{mol} = 1000\,\text{mmol}$.
+**Sijoitus:** $n = \dfrac{0{,}4075 \cdot 10^{-6}\,\tfrac{\text{m}^3}{\text{K}} \cdot 101\,000\,\text{Pa}}{8{,}31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}}} = 4{,}953 \cdot 10^{-3}\,\text{mol}$
+**Vastaus:** $4{,}95\,\text{mmol}$ eli noin $5{,}0\,\text{mmol}$, kaksi tai kolme merkitsevää numeroa, koska kulmakerroin luetaan kuvaajalta kolmella numerolla mutta hajonta rajoittaa tarkkuutta. Suoran sovitus antaa $\pm 0{,}1\,\text{mmol}$:n vaihtelun. Suoran pitää kulkea origon kautta, koska $V = nRT/p$ on suoraan verrannollinen lämpötilaan kun $T$ on kelvineinä: lämpötilassa $T = 0$ tilavuus olisi nolla.
+**Järkevyys:** Tilavuus $131\,\text{cm}^3$ lämpötilassa $320\,\text{K}$ ja paine $101\,\text{kPa}$ antavat $n \approx \dfrac{101\,000 \cdot 131 \cdot 10^{-6}}{8{,}31 \cdot 320} \approx 5{,}0 \cdot 10^{-3}\,\text{mol}$, joka vastaa tulosta. Huoneenlämmössä $0{,}13\,\textsf{l}$ ilmaa sisältää noin $0{,}13 \cdot 0{,}041\,\text{mol} \approx 5\,\text{mmol}$.
+
+## fy3-10-L2-07
+**Annettu:** saman kaasumäärän paineet $p_\text{A}$ ja $p_\text{B}$ tilavuuksilla $1{,}0$–$4{,}0\,\textsf{l}$
+**Kysytty:** kumpi sarja on mitattu korkeammassa lämpötilassa.
+**Periaate:** Kaasumäärä on sama, joten tilanyhtälöstä $pV = nRT$ seuraa, että tulo $pV$ on suoraan verrannollinen lämpötilaan. Isotermillä tulo $pV$ on vakio, ja korkeammassa lämpötilassa tulo on suurempi.
+**Mallivastaus:** Sarjassa A tulo $pV$ on joka rivillä noin $244\,\text{kPa} \cdot \textsf{l}$ ja sarjassa B noin $304\,\text{kPa} \cdot \textsf{l}$. Tulo on suurempi sarjassa B, joten sarja B on mitattu korkeammassa lämpötilassa. Lämpötilojen suhde on noin $304 / 244 \approx 1{,}25$. Samassa tilavuudessa B:n paine on suurempi, ja $(V, p)$-koordinaatistossa B:n isotermi kulkee ylempänä. Kumpikin sarja noudattaa Boylen lakia, joten paineen pieneneminen tilavuuden kasvaessa ei kerro lämpötilasta.
+
+## fy3-10-L3-04
+**Annettu:** hiilidioksidi, $V = 10{,}0\,\textsf{l}$, $\theta = 27\,{}^\circ\text{C}$, $p = 15{,}0\,\text{bar}$; taulukosta $Z = 0{,}92$ paineella $10{,}0\,\text{bar}$ ja $Z = 0{,}84$ paineella $20{,}0\,\text{bar}$; $R = 8{,}31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}}$
+**Kysytty:** todellinen ainemäärä $n$ mooleina (b-kohta)
+**Periaate:** Ideaalikaasumalli antaa ainemäärän $n_\text{id} = \dfrac{pV}{RT}$. Todelliselle kaasulle $Z = \dfrac{pV}{nRT}$, joten todellinen ainemäärä on $n = \dfrac{pV}{ZRT} = \dfrac{n_\text{id}}{Z}$. Paine on suuri, joten kaasu ei noudata ideaalimallia tarkasti.
+**Kuvaajan lukeminen:** Paine $15{,}0\,\text{bar}$ on taulukon pisteiden $10{,}0\,\text{bar}$ ja $20{,}0\,\text{bar}$ puolivälissä. Lineaarisella interpoloinnilla $Z = \dfrac{0{,}92 + 0{,}84}{2} = 0{,}88$.
+**Kaava:** a) $n_\text{id} = \dfrac{pV}{RT}$. b) $n = \dfrac{n_\text{id}}{Z}$. c) Ideaalimallin virhe on $\dfrac{n - n_\text{id}}{n} = 1 - Z$.
+**Muunnokset:** $p = 15{,}0\,\text{bar} = 1{,}50 \cdot 10^6\,\text{Pa}$, $V = 10{,}0\,\textsf{l} = 0{,}0100\,\text{m}^3$ ja $T = (27 + 273{,}15)\,\text{K} = 300{,}15\,\text{K}$.
+**Sijoitus:** a) $n_\text{id} = \dfrac{1{,}50 \cdot 10^6\,\text{Pa} \cdot 0{,}0100\,\text{m}^3}{8{,}31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}} \cdot 300{,}15\,\text{K}} = 6{,}014\,\text{mol}$. b) $n = \dfrac{6{,}014\,\text{mol}}{0{,}88} = 6{,}834\,\text{mol}$
+**Vastaus:** b) $6{,}8\,\text{mol}$, kaksi merkitsevää numeroa, koska $Z$ on annettu kahdella numerolla. Ideaalimallin tulos on $6{,}0\,\text{mol}$, joten malli aliarvioi ainemäärää $1 - 0{,}88 = 12\,\%$. c) Virhe on alle $5\,\%$, kun $Z > 0{,}95$. Taulukon mukaan $Z = 0{,}96$ paineella $5{,}0\,\text{bar}$ ja $Z = 0{,}92$ paineella $10{,}0\,\text{bar}$, joten raja on noin $6\,\text{bar}$: sitä pienemmillä paineilla malli kelpaa. Suuressa paineessa hiukkaset ovat lähellä toisiaan ja vetävät toisiaan puoleensa, joten paine on pienempi kuin ideaalikaasun ja sama paine vaatii enemmän kaasua. Siksi $Z < 1$ ja $n > n_\text{id}$.
+**Järkevyys:** Arvio: $\dfrac{15\,\text{bar} \cdot 10\,\textsf{l}}{0{,}083\,\tfrac{\text{bar}\cdot\textsf{l}}{\text{mol}\cdot\text{K}} \cdot 300\,\text{K}} \approx 6{,}0\,\text{mol}$. Todellinen määrä $6{,}8\,\text{mol}$ on $6{,}0 / 0{,}88$ ja ero on sama $12\,\%$, joka saatiin $Z$:sta. Hiilidioksidin massa on noin $6{,}8 \cdot 44\,\text{g} \approx 0{,}30\,\text{kg}$, mikä on kohtuullinen pullolle.
+
+## fy3-10-L3-05
+**Annettu:** helium, $V_0 = 2{,}50\,\text{m}^3$, $p_0 = 101\,\text{kPa}$, $\theta_0 = 15{,}0\,{}^\circ\text{C}$; korkeudella $10\,\text{km}$ $p = 26{,}5\,\text{kPa}$, $\theta = -50{,}0\,{}^\circ\text{C}$; korkeudella $15\,\text{km}$ $p = 12{,}1\,\text{kPa}$, $\theta = -56{,}5\,{}^\circ\text{C}$; $V_\text{max} = 12{,}0\,\text{m}^3$; $R = 8{,}31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}}$
+**Kysytty:** tilavuus $V$ korkeudella $10\,\text{km}$ (b-kohta)
+**Periaate:** Pallo on suljettu, joten ainemäärä $n$ pysyy samana. Ilmakehän paine ja lämpötila laskevat, ja pallon kaasun paine on sama kuin ympäristön. Tilanyhtälö $pV = nRT$ antaa tilavuuden kullakin korkeudella.
+**Kuvaajan lukeminen:** Luetaan taulukosta paine ja lämpötila korkeuksilla $0\,\text{km}$, $10\,\text{km}$ ja $15\,\text{km}$.
+**Kaava:** a) $n = \dfrac{p_0V_0}{RT_0}$. b) ja c) $V = \dfrac{nRT}{p}$
+**Muunnokset:** $p_0 = 101\,000\,\text{Pa}$, $T_0 = (15{,}0 + 273{,}15)\,\text{K} = 288{,}15\,\text{K}$, $T_{10} = (-50{,}0 + 273{,}15)\,\text{K} = 223{,}15\,\text{K}$, $T_{15} = 216{,}65\,\text{K}$ ja $p_{10} = 26\,500\,\text{Pa}$, $p_{15} = 12\,100\,\text{Pa}$.
+**Sijoitus:** a) $n = \dfrac{101\,000\,\text{Pa} \cdot 2{,}50\,\text{m}^3}{8{,}31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}} \cdot 288{,}15\,\text{K}} = 105{,}4\,\text{mol}$. b) $V_{10} = \dfrac{105{,}4\,\text{mol} \cdot 8{,}31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}} \cdot 223{,}15\,\text{K}}{26\,500\,\text{Pa}} = 7{,}379\,\text{m}^3$. c) $V_{15} = \dfrac{105{,}4\,\text{mol} \cdot 8{,}31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}} \cdot 216{,}65\,\text{K}}{12\,100\,\text{Pa}} = 15{,}69\,\text{m}^3$
+**Vastaus:** b) $7{,}4\,\text{m}^3$, kaksi merkitsevää numeroa, koska tilavuus $2{,}50\,\text{m}^3$ ja paineet on annettu kolmella numerolla mutta lämpötilojen pyöristys rajoittaa tarkkuutta. Heliumia on a) $105\,\text{mol}$. c) Korkeudella $15\,\text{km}$ tilavuus olisi $15{,}7\,\text{m}^3$, joka on yli kuoren rajan $12{,}0\,\text{m}^3$, joten pallo halkeaa jo ennen korkeutta $15\,\text{km}$. Tilavuus kasvaa, koska paine laskee tekijällä $26{,}5 / 101 \approx 0{,}26$ mutta kelvinlämpötila vain tekijällä $223{,}15 / 288{,}15 \approx 0{,}77$. Tilavuus on suoraan verrannollinen lämpötilaan ja kääntäen paineeseen, joten paineen lasku voittaa lämpötilan laskun.
+**Järkevyys:** Tilavuuden suhde on $V_{10}/V_0 = 0{,}77 / 0{,}26 \approx 3{,}0$ ja $3{,}0 \cdot 2{,}50\,\text{m}^3 \approx 7{,}4\,\text{m}^3$. Heliumin massa on $105{,}4\,\text{mol} \cdot 4{,}0\,\text{g/mol} \approx 0{,}42\,\text{kg}$, mikä on kohtuullinen sääpallolle. Tilavuus kasvaa jatkuvasti kohti korkeutta, joten halkeaminen on odotettua.
