@@ -3,7 +3,9 @@
 # Pages (branch main, folder /, custom domain ruukkilab.fi). This workflow runs after fysiikkalabra-ci has passed on an
 # approved (merged) main commit and pushes that commit's committed fysiikkalabra/site/ to the root of the publishing
 # repository, plus the read-aloud models under models/ (Hellsla/ruukkilabra-models). Pull requests never publish.
-# A manual run (Actions -> ruukkilabra-deploy -> Run workflow) publishes the newest main commit whose CI passed.
+# A manual run (Actions -> ruukkilabra-deploy -> Run workflow) publishes the newest main commit whose CI passed, or,
+# with "now" ticked, the newest main commit at once without waiting for CI (the teacher's call as admin; the privacy
+# and link gates of scripts/deploy_site.py still run; teacher 2026-11-04).
 # Needs the repository secret RUUKKILABRA_DEPLOY_KEY: the private half of an SSH deploy key that has write access to
 # Hellsla/ruukkilabra and nothing else (fysiikkalabra/README.md, "Julkaisu osoitteeseen ruukkilab.fi").
 # The other sites of this repository are untouched: GitHub Pages keeps serving them from this repository as before.
@@ -13,7 +15,12 @@ on:
     workflows: [fysiikkalabra-ci]
     types: [completed]
     branches: [main]
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      now:
+        description: "Julkaise mainin uusin versio heti, odottamatta CI:tä (yksityisyys- ja linkkitarkistus ajetaan silti)"
+        type: boolean
+        default: false
 permissions: { contents: read, actions: read }
 concurrency: { group: ruukkilabra-deploy, cancel-in-progress: false }
 jobs:
@@ -30,7 +37,9 @@ jobs:
         id: pick
         env: { GH_TOKEN: "${{ github.token }}" }
         run: |
-          if [ "${{ github.event_name }}" = workflow_dispatch ]; then
+          if [ "${{ github.event_name }}" = workflow_dispatch ] && [ "${{ inputs.now }}" = true ]; then
+            sha=$(gh api "repos/${{ github.repository }}/commits/main" --jq .sha)
+          elif [ "${{ github.event_name }}" = workflow_dispatch ]; then
             sha=$(gh api "repos/${{ github.repository }}/actions/workflows/fysiikkalabra-ci.yml/runs?branch=main&status=success&per_page=30" \
                   --jq '[.workflow_runs[] | select(.event != "pull_request")][0].head_sha')
             [ -n "$sha" ] && [ "$sha" != null ] || { echo "::error::no passed fysiikkalabra-ci run on main"; exit 1; }
