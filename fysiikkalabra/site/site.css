@@ -1009,12 +1009,12 @@ strong.kc-ready{font-weight:inherit}
 :root:has(main.about-page){--bg:#fff;--bg-tint:#f3f5f9;--ink:#0b1638;--ink-2:#3c4563;--line:#dfe5eb;--line-2:#ecf0f4;
   --accent:#012169;--accent-deep:#012169;--accent-soft:#fff0f6;--brand-green:#012169;--kr-navy:#012169;--kr-navy-deep:#00174f;--kr-pink:#fca5c7}
 body:has(main.about-page){background-image:none}
-.about-page .about-hero{margin:0 0 2.25rem;padding:2rem 2rem 1.75rem;border-radius:var(--card-radius);color:#fff;
+.about-page .about-hero{display:flex;flex-wrap:wrap;align-items:center;gap:.9rem 1.75rem;margin:0 0 2.25rem;padding:1.25rem 1.75rem;border-radius:var(--card-radius);color:#fff;
   background:linear-gradient(135deg,var(--kr-navy) 0%,var(--kr-navy-deep) 100%)}
-.about-page .about-logo{display:block;width:128px;height:auto;margin:0 0 1.75rem}
+.about-page .about-logo{display:block;flex:none;width:120px;height:auto;margin:0}   /* the logo beside the heading, not above it (teacher 2026-11-04: less empty blue) */
 .about-page .about-hero h1{margin:0;color:#fff;display:flex;align-items:center;gap:.75rem}
 .about-page .about-hero h1::before{content:"";flex:none;width:26px;height:3px;background:var(--kr-pink)}
 .about-page h2{color:var(--kr-navy);padding-left:.75rem;border-left:4px solid var(--kr-pink)}
 .about-page strong{color:var(--kr-navy)}
-@media (max-width:600px){.about-page .about-hero{padding:1.5rem 1.25rem 1.25rem}.about-page .about-logo{width:104px;margin-bottom:1.25rem}}
+@media (max-width:600px){.about-page .about-hero{gap:.75rem 1.1rem;padding:1rem 1.1rem}.about-page .about-logo{width:96px}}
 .about-page .about-tag{display:inline-block;margin:1.5rem 0 0;padding:.3rem .9rem;border-radius:999px;background:var(--kr-pink);color:var(--kr-navy);font:700 var(--fs-ui) var(--sans);letter-spacing:.01em}
