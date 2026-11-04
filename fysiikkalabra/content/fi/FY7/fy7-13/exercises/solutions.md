@@ -117,3 +117,75 @@
 **Sijoitus:** $\theta_\text{p} = \tan^{-1}\dfrac{0{,}199\,\text{m}}{1{,}00\,\text{m}} = 11{,}25^\circ$, $d = \dfrac{650 \cdot 10^{-9}\,\text{m}}{\sin 11{,}25^\circ} = \dfrac{650 \cdot 10^{-9}\,\text{m}}{0{,}1952} = 3{,}330 \cdot 10^{-6}\,\text{m}$, $\theta_\text{v} = \tan^{-1} 0{,}162 = 9{,}202^\circ$ ja $\lambda_\text{v} = 3{,}330 \cdot 10^{-6}\,\text{m} \cdot \sin 9{,}202^\circ = 3{,}330 \cdot 10^{-6}\,\text{m} \cdot 0{,}1599 = 5{,}326 \cdot 10^{-7}\,\text{m} = 532{,}6\,\text{nm}$
 **Vastaus:** $533\,\text{nm}$, kolme merkitsevää numeroa kuten etäisyydet $19{,}9\,\text{cm}$ ja $16{,}2\,\text{cm}$.
 **Järkevyys:** Vihreän laserosoittimen ilmoitettu aallonpituus on $532\,\text{nm}$, ja vihreä maksimi on lähempänä keskimaksimia kuin punainen, koska lyhyempi aallonpituus poikkeaa vähemmän. Hilavakio $3{,}33\,\mu\text{m}$ vastaa $300$ viivaa millimetrillä, mikä on tavallinen koulun hila.
+
+## fy7-13-L1-06
+**Kysytty:** miten diffraktiokuvion leveys muuttuu, kun rakoa kavennetaan
+**Periaate:** Diffraktio on sitä voimakkaampaa, mitä lähempänä raon leveys on aallonpituutta. Kapeassa raossa valo taipuu raon reunoilla laajemmalle kulma-alueelle, ja aallonpituus määräytyy valonlähteestä eikä muutu raossa.
+**Mallivastaus:** Kuvio levenee, koska valo taipuu raon taakse voimakkaammin, kun rako on kapeampi. Vaihtoehto, jonka mukaan kuvio kapenee, ei pidä paikkaansa, koska kapeakaan rako ei päästä läpi vain suoraan etenevää valoa. Vaihtoehto, jonka mukaan kuvion leveys riippuu vain aallonpituudesta, ohittaa raon leveyden, vaikka juuri se ratkaisee taipumisen. Vaihtoehto, jonka mukaan rako lyhentää aallonpituutta, on väärä, koska rako ei muuta aallonpituutta; kuvio levenee siksi, että valo taipuu enemmän, ei siksi, että aallonpituus muuttuisi.
+
+## fy7-13-L1-07
+**Annettu:** viivatiheys $N = 500$ viivaa millimetrillä, aallonpituus $\lambda = 532\,\text{nm}$, kertaluku $k = 2$
+**Kysytty:** toisen kertaluvun maksimin kulma $\theta$ asteina
+**Periaate:** Valo tulee kohtisuoraan hilaan, joten maksimin suunta noudattaa hilayhtälöä. Hilavakio saadaan ensin viivatiheydestä, ja toisen kertaluvun maksimissa vierekkäisten rakojen matkaero on kaksi aallonpituutta.
+**Kaava:** $d = \dfrac{1\,\text{mm}}{N}$ ja $d\sin\theta = k\lambda$, josta $\theta = \sin^{-1}\dfrac{k\lambda}{d}$
+**Muunnokset:** $d = 1 \cdot 10^{-3}\,\text{m} : 500 = 2{,}00 \cdot 10^{-6}\,\text{m}$ ja $532\,\text{nm} = 532 \cdot 10^{-9}\,\text{m}$.
+**Sijoitus:** $\theta = \sin^{-1}\dfrac{2 \cdot 532 \cdot 10^{-9}\,\text{m}}{2{,}00 \cdot 10^{-6}\,\text{m}} = \sin^{-1} 0{,}532 = 32{,}14^\circ$
+**Vastaus:** $32{,}1^\circ$, kolme merkitsevää numeroa kuten aallonpituus.
+**Järkevyys:** Ensimmäisen kertaluvun maksimin $\sin\theta = 0{,}266$ eli kulma on $15{,}4^\circ$, ja toisen kertaluvun sini on tämän kaksinkertainen, $0{,}532$. Kulma on alle $90^\circ$, joten maksimi syntyy. Tarkistus: $2{,}00\,\mu\text{m} \cdot \sin 32{,}14^\circ = 1{,}064\,\mu\text{m} = 2 \cdot 0{,}532\,\mu\text{m}$.
+
+## fy7-13-L1-08
+**Annettu:** aallonpituus $\lambda = 589\,\text{nm}$, viivatiheys $N = 400$ viivaa millimetrillä
+**Kysytty:** suurin kertaluku $k_\text{max}$, jonka maksimi syntyy
+**Periaate:** Sini on enintään $1$, joten maksimi syntyy vain kertaluvuilla, joille $k\lambda < d$. Suurin kokonaisluku, joka täyttää ehdon, on suurin kertaluku.
+**Kaava:** $d = \dfrac{1\,\text{mm}}{N}$ ja $k < \dfrac{d}{\lambda}$
+**Muunnokset:** $d = 1 \cdot 10^{-3}\,\text{m} : 400 = 2{,}50 \cdot 10^{-6}\,\text{m}$ ja $589\,\text{nm} = 589 \cdot 10^{-9}\,\text{m}$.
+**Sijoitus:** $\dfrac{d}{\lambda} = \dfrac{2{,}50 \cdot 10^{-6}\,\text{m}}{589 \cdot 10^{-9}\,\text{m}} = 4{,}24$, joten $k < 4{,}24$ ja $k_\text{max} = 4$
+**Vastaus:** $4$, kokonaisluku, joten pyöristystä ei tarvita.
+**Järkevyys:** Neljännessä kertaluvussa $\sin\theta = 4 \cdot 0{,}589 : 2{,}50 = 0{,}942$ eli $\theta = 70{,}5^\circ$, mikä on mahdollinen. Viidennessä $\sin\theta = 5 \cdot 0{,}589 : 2{,}50 = 1{,}18$, mikä on mahdotonta.
+
+## fy7-13-L2-05
+**Annettu:** viivatiheys $N = 100$ viivaa millimetrillä, varjostimen etäisyys $L = 1{,}00\,\text{m}$, maksimien paikat $x_k$ kertaluvuilla $k = 1, \ldots, 8$ (esimerkkiaineisto)
+**Kysytty:** laserin aallonpituus $\lambda$ nanometreinä
+**Periaate:** Hilayhtälöstä $\sin\theta_k = \dfrac{\lambda}{d} \cdot k$, joten pisteet $(k, \sin\theta_k)$ ovat suoralla, joka kulkee origon kautta ja jonka kulmakerroin on $\lambda : d$. Kulma saadaan jokaiselle maksimille suorakulmaisesta kolmiosta tangentin kautta, koska varjostin on kohtisuorassa sädettä vastaan.
+**Kuvaajan lukeminen:** Taulukon $x_k$:sta lasketaan $\theta_k = \tan^{-1}(x_k : L)$ ja $\sin\theta_k$: arvot ovat $0{,}0629$, $0{,}1250$, $0{,}1914$, $0{,}2516$, $0{,}3176$, $0{,}3801$, $0{,}4429$ ja $0{,}5081$. Pisteet ovat lähellä origon kautta kulkevaa suoraa. Pienimmän neliösumman suora origon kautta (laskimella tai taulukkolaskennalla) antaa kulmakertoimeksi $0{,}06337$ ja piirretty suora samoin noin $0{,}063$; yksittäinen piste poikkeaa suorasta hieman mittausvirheen takia.
+**Kaava:** $d = \dfrac{1\,\text{mm}}{N}$ ja kulmakerroin $a = \dfrac{\lambda}{d}$, josta $\lambda = a\,d$
+**Muunnokset:** $d = 1 \cdot 10^{-3}\,\text{m} : 100 = 1{,}00 \cdot 10^{-5}\,\text{m}$ ja lopuksi $1\,\text{nm} = 1 \cdot 10^{-9}\,\text{m}$.
+**Sijoitus:** $\lambda = 0{,}06337 \cdot 1{,}00 \cdot 10^{-5}\,\text{m} = 6{,}337 \cdot 10^{-7}\,\text{m} = 633{,}7\,\text{nm}$
+**Vastaus:** $634\,\text{nm}$, kolme merkitsevää numeroa kuten etäisyys $L$. Punaisen valon aallonpituus on tavallisesti noin $630$–$650\,\text{nm}$, joten tulos sopii.
+**Järkevyys:** Yksittäinen piste antaa saman suuruusluokan: $k = 8$ antaa $\lambda = 0{,}5081 \cdot 10{,}0\,\mu\text{m} : 8 = 635\,\text{nm}$. Kaukaisimmalle maksimille sama mittausvirhe $x_k$:ssa on pienempi osa, joten suoran sovittaminen koko aineistoon vahvistaa tuloksen.
+
+## fy7-13-L2-06
+**Annettu:** viivatiheys $N = 600$ viivaa millimetrillä, $L = 1{,}00\,\text{m}$, $x = 33{,}7\,\text{cm}$, kertaluku $k = 1$; opiskelijan tulos $562\,\text{nm}$
+**Kysytty:** oikea aallonpituus ja opiskelijan tuloksen poikkeama oikeasta prosentteina
+**Periaate:** Varjostimen kolmiosta saadaan $\tan\theta = x : L$, ei $\sin\theta = x : L$. Sini ja tangentti ovat lähes yhtä suuret vain pienillä kulmilla, ja tässä kulma on lähes $19^\circ$. Oikea aallonpituus lasketaan kulman sinistä, ja virhe on opiskelijan tuloksen ero oikeaan suhteessa oikeaan tulokseen.
+**Kaava:** $d = \dfrac{1\,\text{mm}}{N}$, $\tan\theta = \dfrac{x}{L}$, $\lambda = d\sin\theta$ ja virhe $\dfrac{\lambda_\text{op} - \lambda}{\lambda} \cdot 100\,\%$
+**Muunnokset:** $x = 33{,}7\,\text{cm} = 0{,}337\,\text{m}$ ja $d = 1 \cdot 10^{-3}\,\text{m} : 600 = 1{,}667 \cdot 10^{-6}\,\text{m}$.
+**Sijoitus:** $\theta = \tan^{-1}\dfrac{0{,}337\,\text{m}}{1{,}00\,\text{m}} = 18{,}62^\circ$, $\lambda = 1{,}667 \cdot 10^{-6}\,\text{m} \cdot \sin 18{,}62^\circ = 1{,}667 \cdot 10^{-6}\,\text{m} \cdot 0{,}3193 = 5{,}323 \cdot 10^{-7}\,\text{m} = 532{,}3\,\text{nm}$ ja virhe $= \dfrac{561{,}7\,\text{nm} - 532{,}3\,\text{nm}}{532{,}3\,\text{nm}} \cdot 100\,\% = 5{,}53\,\%$
+**Vastaus:** $5{,}5\,\%$, kaksi merkitsevää numeroa. Oikea aallonpituus on $532\,\text{nm}$ ja opiskelijan $562\,\text{nm}$ on liian suuri.
+**Järkevyys:** Tangentti on kulmassa $18{,}6^\circ$ aina suurempi kuin sini: $\tan\theta : \sin\theta = 0{,}337 : 0{,}3193 = 1{,}055$, joten opiskelijan tulos on $5{,}5\,\%$ liian suuri. Oikea tulos $532\,\text{nm}$ vastaa vihreän laserin ilmoitettua aallonpituutta. Virhe kasvaa kulman mukana.
+
+## fy7-13-L2-07
+**Kysytty:** mikä muutos pienentää aallonpituuden suhteellista virhettä, kun lukemisvirhe $\Delta x$ on aina sama
+**Periaate:** Aallonpituus lasketaan etäisyydestä $x$, ja suhteellinen virhe on likimain $\Delta x : x$. Kun $\Delta x$ pysyy samana, virhe on sitä pienempi osa, mitä suurempi $x$ on. Siksi mittaus kannattaa tehdä niin, että $x$ on mahdollisimman suuri.
+**Mallivastaus:** Suhteellinen virhe pienenee, kun mitataan kaukaisemman maksimin paikka: sama lukemisvirhe on silloin pienempi osa suuremmasta etäisyydestä. Varjostimen siirtäminen lähemmäs hilaa pienentää $x$:ää, joten sama $\Delta x$ on suurempi osa ja virhe kasvaa. Harvempi hila pienentää kulmia ja siten $x$:ää, joten suhteellinen virhe kasvaa sekin eikä virhe jakaudu mihinkään. Kirkkaampi laser ei muuta maksimien paikkoja, koska ne määräytyvät aallonpituudesta, hilavakiosta ja etäisyydestä $L$.
+
+## fy7-13-L3-04
+**Annettu:** rakoväli $d = 0{,}250\,\text{mm}$, varjostimen etäisyys $L = 2{,}00\,\text{m}$, intensiteettitaulukko (esimerkkiaineisto)
+**Kysytty:** a) aallonpituus $\lambda$ nanometreinä, b) toisen kertaluvun maksimin paikka, c) ensimmäisen maksimin paikka hilalla ja hilan kuvion ero
+**Periaate:** Kaksoisraon maksimit syntyvät samalla ehdolla kuin hilassa: $d\sin\theta = k\lambda$. Ensimmäisen maksimin paikka luetaan taulukosta intensiteetin huipusta, kulma saadaan suorakulmaisesta kolmiosta, ja aallonpituus hilayhtälöstä. Samalla $d$:llä ja aallonpituudella maksimien suunnat ovat samat.
+**Kuvaajan lukeminen:** Intensiteetti kasvaa arvosta $0{,}09$ kohdassa $3{,}0\,\text{mm}$ huippuarvoon $1{,}00$ kohdassa $5{,}0\,\text{mm}$ ja pienenee sitten symmetrisesti, ja lukemat kohdissa $4{,}5\,\text{mm}$ ja $5{,}5\,\text{mm}$ ($0{,}91$ ja $0{,}89$) ovat lähes yhtä suuret. Siksi huippu on kohdassa $x_1 = 5{,}0\,\text{mm}$.
+**Kaava:** $\tan\theta = \dfrac{x}{L}$ ja $d\sin\theta = k\lambda$, joista $\lambda = \dfrac{d\sin\theta}{k}$ ja $x_k = L\tan\theta_k$
+**Muunnokset:** $d = 0{,}250\,\text{mm} = 2{,}50 \cdot 10^{-4}\,\text{m}$ ja $x_1 = 5{,}0\,\text{mm} = 5{,}0 \cdot 10^{-3}\,\text{m}$.
+**Sijoitus:** a) $\theta_1 = \tan^{-1}\dfrac{5{,}0 \cdot 10^{-3}\,\text{m}}{2{,}00\,\text{m}} = \tan^{-1} 0{,}00250 = 0{,}143^\circ$ ja $\lambda = 2{,}50 \cdot 10^{-4}\,\text{m} \cdot \sin 0{,}143^\circ = 2{,}50 \cdot 10^{-4}\,\text{m} \cdot 0{,}00250 = 6{,}25 \cdot 10^{-7}\,\text{m} = 625\,\text{nm}$. b) $\sin\theta_2 = \dfrac{2 \cdot 625 \cdot 10^{-9}\,\text{m}}{2{,}50 \cdot 10^{-4}\,\text{m}} = 0{,}00500$, joten $x_2 = 2{,}00\,\text{m} \cdot \tan 0{,}2865^\circ = 0{,}0100\,\text{m} = 10{,}0\,\text{mm}$. c) Hilan ensimmäinen maksimi tulee samaan kohtaan, $x_1 = 5{,}0\,\text{mm}$.
+**Vastaus:** $625\,\text{nm}$, kolme merkitsevää numeroa kuten rakoväli ja etäisyys. Toisen kertaluvun maksimi on kohdassa $10{,}0\,\text{mm}$. Hilan maksimit ovat samoissa kohdissa, koska $d$ ja ehto $d\sin\theta = k\lambda$ ovat samat, mutta ne ovat kapeampia ja kirkkaampia, ja niiden välissä on laaja pimeä alue.
+**Järkevyys:** Aallonpituus $625\,\text{nm}$ on oranssinpunaista valoa. Maksimien väli on $5{,}0\,\text{mm}$, joten minimi on kohdassa $2{,}5\,\text{mm}$ ja $7{,}5\,\text{mm}$, ja intensiteetin pitää olla pieni jo kohdassa $7{,}0\,\text{mm}$; taulukossa se on $0{,}09$. Kulma on pieni, joten $\lambda \approx d x_1 : L = 625\,\text{nm}$.
+
+## fy7-13-L3-05
+**Annettu:** aallonpituus $\lambda = 532\,\text{nm}$, kertaluku $k = 1$, mittaukset $(L; 2x)$: $(4{,}0\,\text{cm}; 8{,}3\,\text{cm})$, $(6{,}0\,\text{cm}; 12{,}5\,\text{cm})$, $(8{,}0\,\text{cm}; 16{,}7\,\text{cm})$ ja $(10{,}0\,\text{cm}; 20{,}9\,\text{cm})$ (esimerkkiaineisto), vertailuarvo $0{,}74\,\mu\text{m}$
+**Kysytty:** a) raitojen etäisyys $d$ ja sen keskiarvo $d_\text{ka}$ mikrometreinä, b) toisen kertaluvun olemassaolo ja valopisteiden määrä, c) keskiarvon poikkeama vertailuarvosta
+**Periaate:** DVD-levyn tasaväliset raidat toimivat heijastushilana: kohtisuoraan tulevan valon heijastuneet maksimit noudattavat hilayhtälöä $d\sin\theta = k\lambda$. Pahvi on levyn suuntainen eli kohtisuorassa tulevaa sädettä vastaan, joten kulma saadaan suorakulmaisesta kolmiosta. Maksimi on puolen välimatkan $2x$ päässä reiästä.
+**Kaava:** $x = \dfrac{2x}{2}$, $\tan\theta = \dfrac{x}{L}$ ja $d\sin\theta = k\lambda$, joista $d = \dfrac{\lambda}{\sin\theta}$
+**Muunnokset:** $532\,\text{nm} = 0{,}532\,\mu\text{m}$; kulmaan riittää, että $x$ ja $L$ ovat samassa yksikössä (senttimetreinä).
+**Sijoitus:** a) Kulmat ovat $\theta_1 = \tan^{-1}\dfrac{4{,}15}{4{,}0} = 46{,}05^\circ$, $\theta_2 = \tan^{-1}\dfrac{6{,}25}{6{,}0} = 46{,}17^\circ$, $\theta_3 = \tan^{-1}\dfrac{8{,}35}{8{,}0} = 46{,}23^\circ$ ja $\theta_4 = \tan^{-1}\dfrac{10{,}45}{10{,}0} = 46{,}26^\circ$. Niistä $d_1 = \dfrac{0{,}532\,\mu\text{m}}{\sin 46{,}05^\circ} = 0{,}7389\,\mu\text{m}$, $d_2 = 0{,}7375\,\mu\text{m}$, $d_3 = 0{,}7368\,\mu\text{m}$ ja $d_4 = 0{,}7363\,\mu\text{m}$. Summa on $2{,}9495\,\mu\text{m}$, joten $d_\text{ka} = 2{,}9495\,\mu\text{m} : 4 = 0{,}7374\,\mu\text{m}$. b)Toiselle kertaluvulle $\sin\theta_2 = 2 \cdot 0{,}532\,\mu\text{m} : 0{,}7374\,\mu\text{m} = 1{,}44$. c) $\dfrac{0{,}7374 - 0{,}74}{0{,}74} \cdot 100\,\% = -0{,}36\,\%$.
+**Vastaus:** $0{,}737\,\mu\text{m}$, kolme merkitsevää numeroa kuten aallonpituus. Toisen kertaluvun maksimia ei synny, koska sinin arvo $1{,}44$ on yli $1$, joten pahvilla näkyy kolme valopistettä: reikä ja maksimit $k = \pm 1$. Keskiarvo on vertailuarvoa $0{,}36\,\%$ pienempi.
+**Järkevyys:** Aallonpituus on vain noin $0{,}7$ kertaa raitaväli, joten $\sin\theta_1 = 0{,}532 : 0{,}7374 = 0{,}72$ ja kulma $46^\circ$ on mahdollinen; maksimi on kauempana sivussa kuin $L$ ($\tan 46^\circ = 1{,}04$). Eri $L$:n arvot antavat lähes saman $d$:n, joten aineisto on johdonmukainen.
