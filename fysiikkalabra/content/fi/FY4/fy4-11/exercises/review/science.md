@@ -1,15 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 0dc06ac7bbe7c1fa
+CONTENT-HASH: 0ecc1231135aa3d4
 
 ## Blocking
 
 ## Polish
-- exercises.json L1-03 (carried over) — a cyclist braking from 20,0 m/s (72 km/h) is not a realistic speed. — Use, for example, 8,00 m/s, or make the vehicle a car.
-- solutions.md L2-04 Järkevyys (carried over) — "Todellinen nopeus voi olla suurempi, jos auto törmäsi johonkin" contradicts the task's given "Auto pysähtyi jäljen päähän". — Give a different caveat: the deceleration is an estimate, or braking may have started before the marks.
+- content/fi/FY4/fy4-11/exercises/solutions.md:252 (L3-05 Vastaus) — "kolme merkitsevää numeroa kuten nopeuden muutoksessa 4,5 m/s": 4,5 m/s has two significant figures (from 10,1 − 5,6, both to 0,1 m/s) — write "18 kN, kaksi merkitsevää numeroa kuten nopeuden muutoksessa 4,5 m/s"; the answer box value 18,0 with tolerance 0,02 is unaffected.
+- content/fi/FY4/fy4-11/exercises/solutions.md:125 (L2-05 Vastaus) — "jarrutusmatkat on mitattu kolmen tai neljän numeron tarkkuudella": the data are 6,5 (two) and 14,1/25,9/39,6 (three) — write "kahden tai kolmen numeron tarkkuudella".
+- content/fi/FY4/fy4-11/exercises/exercises.json:186 (L2-06) — Δt = 0,200 s from 60 km/h means about 1,7 m of stopping distance, more than crumple zone plus belt travel allow — drop that row or call it a test setting.
+- docs/exercise-bank/FY4.md — the planned level-2 crash-test acceleration figure became the L3-05 velocity table; update the plan line.
 
 ## Checked
-- Rename: L1-04, L2-03 and L3-02 (Kysytty, Kaava, Sijoitus) and the answers.py docstring and comments now write $F_\text{ka}$. No $F_\text{k}$ is left, and the symbol matches fy4-9 and the lesson.
-- I recomputed all 12 answers in one script with my own formulas: 24,0 m; 39,06 m; 4,00 s; 8750 N; 1,20 s; 79,17 m; 131,1 m ($a=\mu g$); 10 417 N; 81,46 km/h; 36,72 km/h; 11 253 N; 35,94 m. Every one agrees with exercises.json and answers.py.
-- L3-03: a time-stepped simulation of both cars confirms that a gap of 35,94 m gives a minimum separation of 0. The end-position difference is therefore the right model, as the solution argues.
-- L3-02: Δt = 2s/v₀ comes from constant deceleration, and that condition is stated in the task.
-- Every solution is symbolic first, the conversions are right, the significant figures follow the limiting datum, and the reasonableness checks are real comparisons.
+- All 18 numeric answers recomputed in one script with my own formulas and from answers.py: all agree within tolerance.
+- L3-04: my least-squares fit of s_p/v on v gives t_r = 1,21 s, a = 5,10 m/s², v_max = 65,9 km/h, s_p(80) = 75 m, impact 52 km/h.
+- L2-05: least-squares slope through the origin gives a = 7,85 m/s²; the origin is physically justified.
+- L2-06: F·Δt = 1,24–1,27 kN·s in every row, v_0 = 60,0 km/h. L2-07: 12,0 m · 1,8² = 38,9 m.
+- L3-05: distance 0,79 m, F_ka = 10,0 kN, peak 18,0 kN (40–60 ms); assumptions stated; (d) right, belt and airbag together.
+- L1-06, L1-07: exactly one correct option; distractor feedback right. L1-08: a = μg with conditions stated.
+- Scope and notation as in the lesson; level 3 tasks multi-step YO style; no duplicates.
+- Hash 0ecc1231135aa3d4 at the start and at the end.

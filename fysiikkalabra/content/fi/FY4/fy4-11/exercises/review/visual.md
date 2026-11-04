@@ -1,19 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 0dc06ac7bbe7c1fa
+CONTENT-HASH: 0ecc1231135aa3d4
 
 ## Blocking
 
 ## Polish
-- [Minor] exercises.json fy4-11-L2-02 — the assumption "Ilmanvastus jätetään huomiotta." comes after the question, so the page sets it bold as part of the question; move it into the situation: "… kitkakerroin on $0{,}30$, ja ilmanvastus jätetään huomiotta. Kuinka pitkä on jarrutusmatka, kun auto jarruttaa niin lujaa kuin pito sallii?"
-- [Minor] solutions.md fy4-11-L1-02 Järkevyys — "jarrutus kestää $25 : 8 \approx 3\,\text{s}$" and then "$\cdot\,3{,}1\,\text{s}$" in the next sentence; write $\approx 3{,}1\,\text{s}$ in both.
-- [Minor] exercises.json fy4-11-L3-02 task wording "liikkuu auton suhteen ja auton mukana yhteensä $0{,}600\,\text{m}$" reads awkwardly; e.g. "Vyöhön kiinnitetty … matkustaja kulkee törmäyksen alusta pysähtymiseensä yhteensä $0{,}600\,\text{m}$ (auton mukana ja vyössä eteenpäin)."
-- [Minor] rendered chains (mathlayout, all levels: L1-02/03/04/05 Sijoitus, L2-01 Kaava/Sijoitus, L3-01 $d$, L3-03 $d$) — when a row holds a tall fraction, the left side ($s_\text{p}$, $d$, $F_\text{ka}$) sits raised at the top of the row instead of on the baseline of its "="; a template matter (scripts/mathlayout.py / site.css), not this text.
+- [Minor] solutions.md fy4-11-L3-05 Vastaus (open-exercises-L3-1280-9) — the paragraph runs to about 150 words and carries the d) explanation (belt, airbag, 120 kN); move the d) answer into its own line after Sijoitus ("d) …") so Vastaus stays a short result block.
+- [Minor] solutions.md fy4-11-L3-04 Kaava (open-exercises-L3-1280-6) — "$t_\text{r}$ = leikkauskohta" mixes a symbol and a plain word without a verb — "$t_\text{r}$ on suoran leikkauskohta pystyakselilla".
+- [Minor] solutions.md fy4-11-L2-07 Vastaus (open-exercises-L2-1280-9) — the a) explanation is in Vastaus and the b) value follows in the same paragraph; set b) $38{,}9\,\text{m}$ on its own line as in the other tasks.
+- [Minor] tables of L2-06, L3-04, L3-05 (open-exercises-L2-1280-7, L3-1280-8) — numeric column headers centred over right-aligned values; align them (page CSS, developer).
+- [Minor] fy4-11-L1-08 Järkevyys — "noin $2{,}5$-kertainen lumeen verrattuna" reads oddly — "noin $2{,}5$ kertaa lumella saatava arvo".
 
 ## Checked
-- Contact sheets 4–6; full size: open-exercises-1280-1 (L1-01), open-tarkista-1280-2 (same chain layout), open-exercises-L3-1280-2; L1-02…05, L2-01…04, L3-01…03 read on the contact sheets at enough size to follow every block.
-- Every Annettu/Kysytty/Periaate/Kaava/Muunnokset/Sijoitus/Vastaus/Järkevyys block present and inside its card; Vastaus boxed; "Kirjoita ratkaisu" button present (page feature).
-- Numbers with units are LaTeX throughout tasks and solutions; decimal comma, `\cdot`, colon division, thin-space thousands ($10\,417\,\text{N}$) consistent; significant figures stated with reasons.
-- No figures in the set.
+- Text of L1-06…08, L2-05…07, L3-04…05 with tables and complete solutions; recomputed 7,85 m/s², 60 km/h, 38,9 m, 66 km/h, 75 m, 0,79 m, 10 kN, 18,0 kN: all match the answer boxes.
+- open-exercises-1280-7 (L1-07 options and solution, L1-08 task), L2-1280-7, -9 (L2-06, L2-07), L3-1280-6, -8, -10 (L3-04 solution, L3-05 table, Kaava, Järkevyys).
+- 1280 px only, no per-task 390 captures; 360/768/1280 layout checks clean per packet. No figures in the new tasks; aligned blocks render without overflow.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

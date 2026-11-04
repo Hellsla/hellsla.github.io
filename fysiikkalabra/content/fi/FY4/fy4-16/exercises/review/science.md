@@ -1,20 +1,20 @@
-VERDICT: PASS
-CONTENT-HASH: 0e9004dded5fe968
+VERDICT: FAIL
+CONTENT-HASH: b0233d6033e9c661
 
 ## Blocking
+- content/fi/FY4/fy4-16/exercises/exercises.json:255 (L2-07, B) — the method "nostaa laudan toista päätä hitaasti, kunnes laatikko liukuu tasaisella nopeudella" measures the angle where the box starts to slip, which is set by static friction (μ_s > μ_k); once it slips it speeds up, so tan α of that angle is not the kinetic coefficient the task asks for — add the missing step, for example "Jokaisella kulmalla laatikkoa tönäistään kevyesti liikkeelle, ja kulmaa säädetään, kunnes laatikko jatkaa liukumista tasaisella nopeudella", and add the same condition to the Periaate in solutions.md.
 
 ## Polish
-- solutions.md:166–179 (L3-01) — The flat-part friction is on its own horizontal scale: it is drawn 42 units, while the slope-part friction is lifted to the floor and drawn 11 (true 12 and 10,9 N). In one figure the flat friction therefore looks four times the slope friction. The note about this exists only in the text alternative. — Fix: draw both moments at one scale, or say in the step that the flat part is at its own scale. Also still open from round 1: the text says "Kummallakin rinteen osalla" but the 10° part is not drawn.
-- solutions.md:166–179 (L3-01) — The text alternative puts both scale notes before "Kappale 1 … Kappale 2", but this is one sled at two places, and only the second needs the split-scale note. — Fix: give fbdspec a "two moments" wording, and attach each note to its body.
-- solutions.md:23–27 (L1-02) — This is still open from round 1. The point is a up while the jumper moves down. Add `v alas`, as L2-03 and L3-03 do.
-- solutions.md:38–43 (L1-03) — The chute's 30° is not in the task. The step could call it an example angle.
+- content/fi/FY4/fy4-16/exercises/solutions.md:290, 305 (L2-07) — "virhemarginaali" and "μ = 0,321 ± 0,015" present half the range of five repeats as an uncertainty; the guardrails call this a simple estimate of the scatter — call it "vaihteluvälin puolikas (hajonnan yksinkertainen arvio)" and give μ ≈ 0,32 ± 0,02.
+- content/fi/FY4/fy4-16/exercises/exercises.json:209 and solutions.md:272 (L2-06) — "liikkeessa" → "liikkeessä".
+- L3-05 Vastaus — "kolme merkitsevää numeroa kuten … nopeuksissa": 7,9 m/s has two; 2,2 kN would follow the rule (the answer box is unaffected). The trapezoid sum slightly overestimates the distance (Simpson 54,8 m, F_v = 2,23 kN, inside tolerance).
+- Plan (docs/exercise-bank/FY4.md): "ilmanvastuskertoimen arvio" became the mean air resistance in L3-05, and the phone-sensor lift figure became the video table in L2-05; both are fine physics for FY4 (no F = kv² in the lesson), so update the plan line.
 
 ## Checked
-- Hash 0e9004dded5fe968 at the start and at the end. The text is unchanged since round 1; only the renderer changed.
-- I rendered all 12 blocks with `fbdspec.py show`, viewed them, and measured every arrow and dashed component from the SVG.
-- Round-1 blocker L1-05 is gone. The dashed $\overline{G}_x$ is 14,6 and $\overline{F}_\mu$ is 15,1 (true 14,83 each, F_μ at the 15 % floor). They are visibly equal under `a 0`, and the text alternative says that small forces are lengthened.
-- Round-1 blocker L2-02 is gone. $\overline{G}_x$ is 21,0 and $\overline{F}_\mu$ is 14,9 (true 20,8 and 13,4), so the drawn net force along the slope points down the slope, as $\overline{a}$ does.
-- L1-04 (level ice): F_μ is on its own horizontal scale (60), a points left, and the text alternative says the scales differ.
-- One-scale ratios match the true ones within 0,5 px: L1-01 92,5 % (92,5 %), L1-02 42 % (42,0 %), L1-03 N 86,5 % (cos 30°), L2-01 90 % (90,2 %), L2-03 51,5 % (51,6 %), L3-02 88,5 % (88,3 %), L3-03 32,5 % (32,3 %). L2-04 is equal.
-- In the lift and parachute diagrams the longer arrow agrees with $\overline{a}$ in every case. On the slopes N is perpendicular to the slope and friction points up the slope from the outline.
-- I recomputed every answer in one script from the task text; all agree (L3-01 x = h/μ = 37,5 m).
+- All 20 numeric answers recomputed in one script and from answers.py: all agree (L2-05 fit 0,400 m/s², 633 N; L2-06 quadratic fit μ = 0,081; L3-04 16,33 m, 7,67 m/s; L3-05 55,6 m, 2,205 kN, (c) 851 N > 765 N).
+- L2-06 data fit constant deceleration and the sled still moves at 5,0 s.
+- L3-04: energy equation, tan 14° > μ_1, 5,0 m margin and mass cancelling all right.
+- L1-06, L1-07: exactly one correct option; distractor feedback right.
+- L1-08 and the force-diagram blocks: right forces, a drawn apart from forces.
+- Scope inside the lesson; no duplicates; level 3 tasks are multi-part modelling/data tasks.
+- Hash b0233d6033e9c661 at the start and at the end.
