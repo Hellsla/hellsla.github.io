@@ -39,6 +39,52 @@
       "answer": 563.9098,
       "unit": "THz",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-9-L1-06",
+      "level": 1,
+      "text": "Radio waves and light are electromagnetic waves. An electromagnetic wave travelling in a vacuum has an electric field $\\overline{E}$ and a magnetic field $\\overline{B}$. Which of the following describes the structure of the wave correctly?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The fields are perpendicular to each other and to the direction of propagation, because the wave is transverse.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The fields oscillate along the direction of propagation, because the wave is longitudinal like sound.",
+          "feedback": "An electromagnetic wave is transverse: the fields oscillate perpendicular to the direction of propagation. Sound is longitudinal wave motion and needs a medium, light does not."
+        },
+        {
+          "text": "Only the electric field oscillates, because a magnetic field is produced only by permanent magnets.",
+          "feedback": "The magnetic field oscillates in the wave together with the electric field. A changing electric field produces a magnetic field, so the magnetic field of the wave does not need a permanent magnet."
+        },
+        {
+          "text": "The fields are perpendicular to each other and to the direction of propagation, because the wave is transverse.",
+          "correct": true,
+          "feedback": "Correct: a changing electric field produces a magnetic field and a changing magnetic field produces an electric field, so the wave propagates even in a vacuum. The fields oscillate perpendicular to each other and to the direction of propagation."
+        },
+        {
+          "text": "The fields are in the same direction as each other, because they oscillate at the same time in the same direction.",
+          "feedback": "The fields are not in the same direction but perpendicular to each other. If they were in the same direction, they could not produce each other and carry the wave forward."
+        }
+      ]
+    },
+    {
+      "id": "fy7-9-L1-07",
+      "level": 1,
+      "text": "A GPS satellite orbits the Earth at an altitude of about $20\\,200\\,\\text{km}$. How long does it take the radio signal of the satellite to travel from a satellite directly above the receiver to the receiver? The speed of a radio wave is $c = 3.00 \\cdot 10^{8}\\,\\text{m/s}$. Give the answer in milliseconds.",
+      "answer": 67.3333,
+      "unit": "ms",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-9-L1-08",
+      "level": 1,
+      "text": "The centre frequency of one frequency band of the 5G mobile network is $3.5\\,\\text{GHz}$. What is the wavelength of a radio wave at this frequency? The speed of a radio wave is $c = 3.00 \\cdot 10^{8}\\,\\text{m/s}$. Give the answer in centimetres.",
+      "answer": 8.5714,
+      "unit": "cm",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -74,6 +120,86 @@
       "answer": 5796.0,
       "unit": "K",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-9-L2-05",
+      "level": 2,
+      "text": "The wavelength of the peak of the spectrum of the radiation from three light sources was measured with a spectrometer (example data). All three sources are assumed to radiate like a black body.\n\na) Calculate the surface temperatures of the sources.\n\nb) Which of the sources is the hottest? Does the peak of the spectrum fall in the region of visible light ($380\\,\\text{nm}$–$750\\,\\text{nm}$) for any source? Justify with your results.\n\nWrite in the answer box the temperature of the filament from part a, in kelvins.",
+      "kind": [
+        "data"
+      ],
+      "answer": 2683.3,
+      "unit": "K",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Peaks of the spectra of the sources (example data)",
+        "columns": [
+          "Source",
+          "$\\lambda_\\text{max}\\,(\\mu\\text{m})$"
+        ],
+        "rows": [
+          [
+            "Candle flame",
+            "1.62"
+          ],
+          [
+            "Filament",
+            "1.08"
+          ],
+          [
+            "Sun",
+            "0.50"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy7-9-L2-06",
+      "level": 2,
+      "text": "In a foundry a steel ingot is heated to the temperature $1500\\,{}^\\circ\\text{C}$. A student calculated the wavelength of the peak of the black-body spectrum of the ingot like this:\n\n$\\lambda_\\text{max} = \\dfrac{b}{t} = \\dfrac{2.898 \\cdot 10^{-3}\\,\\text{m} \\cdot \\text{K}}{1500} = 1.93\\,\\mu\\text{m}$\n\na) Explain what the error in the student's solution is.\n\nb) Calculate the wavelength of the peak correctly, in micrometres.\n\nWrite in the answer box the result of part b.",
+      "kind": [
+        "error"
+      ],
+      "answer": 1.6344,
+      "unit": "µm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-9-L2-07",
+      "level": 2,
+      "text": "Students investigate how the wavelength of the peak of the spectrum of the radiation from the filament of an incandescent lamp depends on the temperature of the filament. The temperature of the filament and the peak of the spectrum were measured at four different voltages (example data). The filament is assumed to be a black body.\n\na) Calculate the product $\\lambda_\\text{max} T$ for each measurement in the unit $10^{-3}\\,\\text{m} \\cdot \\text{K}$.\n\nb) Calculate the mean $b_{\\text{mean}}$ of the products and compare it with the constant of Wien's displacement law $b = 2.898 \\cdot 10^{-3}\\,\\text{m} \\cdot \\text{K}$. Do the measurements support the law?\n\nWrite in the answer box the mean from part b in the unit $10^{-3}\\,\\text{m} \\cdot \\text{K}$.",
+      "kind": [
+        "data",
+        "experiment"
+      ],
+      "answer": 2.897,
+      "unit": "10⁻³ m·K",
+      "tolerance": 0.01,
+      "data": {
+        "caption": "Temperature of the filament and peak of the spectrum (example data)",
+        "columns": [
+          "$T\\,(\\text{K})$",
+          "$\\lambda_\\text{max}\\,(\\mu\\text{m})$"
+        ],
+        "rows": [
+          [
+            "2000",
+            "1.47"
+          ],
+          [
+            "2400",
+            "1.18"
+          ],
+          [
+            "2800",
+            "1.06"
+          ],
+          [
+            "3200",
+            "0.89"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -100,6 +226,80 @@
       "answer": 384000.0,
       "unit": "km",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-9-L3-04",
+      "level": 3,
+      "text": "An astronomer measured the wavelength of the peak of the spectrum of the radiation from three stars and recorded the observed colour of each star (example data). The stars are assumed to radiate like black bodies.\n\na) Calculate the surface temperatures of the stars.\n\nb) How many times hotter is star C than star A?\n\nc) The peak of the spectrum of star C is in the ultraviolet region, but the star looks blue-white. The peak of star A is in the infrared, but the star looks red. Explain why the position of the peak and the visible colour are not the same thing.\n\nWrite in the answer box the ratio of the temperatures from part b.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 3.1923,
+      "unit": "times",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Peaks of the spectra and colours of the stars (example data)",
+        "columns": [
+          "Star",
+          "$\\lambda_\\text{max}\\,(\\text{nm})$",
+          "Colour"
+        ],
+        "rows": [
+          [
+            "A",
+            "830",
+            "red"
+          ],
+          [
+            "B",
+            "480",
+            "yellow-white"
+          ],
+          [
+            "C",
+            "260",
+            "blue-white"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy7-9-L3-05",
+      "level": 3,
+      "text": "A blacksmith takes a glowing iron bar from the furnace and lets it cool in the air. The wavelength of the peak of the spectrum of the radiation from the bar was measured with a spectrometer at four moments (example data). The bar is assumed to be a black body, and in the dark its glow is visible to the eye only when the temperature is above $800\\,\\text{K}$.\n\na) Calculate the temperature of the bar at each moment.\n\nb) Calculate the average cooling rate of the bar over the whole measurement period in the unit $\\text{K/min}$.\n\nc) Estimate how many minutes after the first measurement the glow goes out, when the cooling is assumed to continue at the average rate. Is the actual glowing time of the bar shorter or longer than the estimate? Justify with the information in the table.\n\nWrite in the answer box the estimate from part c in minutes.",
+      "kind": [
+        "data",
+        "model"
+      ],
+      "answer": 17.476,
+      "unit": "min",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Peak of the spectrum of the cooling bar (example data)",
+        "columns": [
+          "$t\\,(\\text{min})$",
+          "$\\lambda_\\text{max}\\,(\\mu\\text{m})$"
+        ],
+        "rows": [
+          [
+            "0",
+            "1.80"
+          ],
+          [
+            "4",
+            "2.05"
+          ],
+          [
+            "8",
+            "2.35"
+          ],
+          [
+            "12",
+            "2.75"
+          ]
+        ]
+      }
     }
   ]
 }

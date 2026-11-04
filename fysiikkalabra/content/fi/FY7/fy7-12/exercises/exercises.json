@@ -81,7 +81,7 @@
     {
       "id": "fy7-12-L1-08",
       "level": 1,
-      "text": "Valokuidun lasin taitekerroin on $1{,}45$. Valopulssi etenee kuidun akselin suuntaisesti $0{,}50\\,\\text{ms}$. Kuinka pitkän matkan se kulkee kuidussa? Valon nopeus tyhjiössä on $3{,}00 \\cdot 10^8\\,\\text{m/s}$. Anna vastaus kilometreinä.",
+      "text": "Valokuidun lasin taitekerroin on $1{,}45$. Valopulssi etenee kuidun akselin suuntaisesti $0{,}500\\,\\text{ms}$. Kuinka pitkän matkan se kulkee kuidussa? Valon nopeus tyhjiössä on $3{,}00 \\cdot 10^8\\,\\text{m/s}$. Anna vastaus kilometreinä.",
       "answer": 103.4483,
       "unit": "km",
       "tolerance": 0.02

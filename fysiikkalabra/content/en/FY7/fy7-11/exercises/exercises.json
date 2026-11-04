@@ -39,6 +39,55 @@
       "answer": 42.0,
       "unit": "°",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-11-L1-06",
+      "level": 1,
+      "text": "White light arrives from air at a glass prism, and the violet part is refracted more than the red part. Which statement explains the difference correctly?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The refractive index of glass is greater for violet, so violet light slows down more in the glass.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The frequency of violet light increases in the glass, so its wavelength decreases and the ray turns more sharply.",
+          "feedback": "Wrong: the frequency of light does not change at the boundary; the same colour keeps its frequency in air and in glass. The difference arises because the refractive index of glass is different for different colours."
+        },
+        {
+          "text": "The glass colours the white light, so violet light is only created in the glass and turns more sharply.",
+          "feedback": "Wrong: the colours are already present in white light, and glass does not colour the light. The prism only separates the colours, because the refractive index is different for different wavelengths."
+        },
+        {
+          "text": "The refractive index of glass is greater for violet, so violet light slows down more in the glass.",
+          "feedback": "Correct: the refractive index depends on wavelength (dispersion), and in glass it is greatest for violet. According to the law of refraction $\\sin\\alpha_1 = n\\sin\\alpha_2$, a greater $n$ gives a smaller angle of refraction, that is, a greater change of direction.",
+          "correct": true
+        },
+        {
+          "text": "Red light travels in the glass at the speed of light in vacuum, so it is not refracted as much as violet.",
+          "feedback": "Wrong: in glass all colours travel more slowly than in vacuum, red too, and red is also refracted. It is refracted only less than violet, because its refractive index is smaller."
+        }
+      ]
+    },
+    {
+      "id": "fy7-11-L1-07",
+      "level": 1,
+      "text": "The wavelength of violet light in vacuum is $405\\,\\text{nm}$. The light enters crown glass whose refractive index for violet light is $1.530$. The frequency of the light does not change at the boundary, and for a wave $v = f\\lambda$. What is the wavelength of violet light in the glass? Give your answer in nanometres.",
+      "answer": 264.7059,
+      "unit": "nm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-11-L1-08",
+      "level": 1,
+      "text": "The red edge of a rainbow is seen at an angle of $42.3^\\circ$ from the direction of the antisolar point. The sun is $30.0^\\circ$ above the horizon, so the antisolar point is $30.0^\\circ$ below the horizon. How high above the horizon is the top of the red edge of the arc?",
+      "kind": [
+        "reasoning"
+      ],
+      "answer": 12.3,
+      "unit": "°",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -74,6 +123,68 @@
       "answer": 15.6459,
       "unit": "°",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-11-L2-05",
+      "level": 2,
+      "text": "The table gives the refractive indices of three types of glass for red ($656\\,\\text{nm}$) and violet ($405\\,\\text{nm}$) light (typical values, example data). A narrow beam of white light arrives from air at the surface of a glass plate at an angle of incidence of $60.0^\\circ$. Do not round intermediate results.\n\na) Calculate the difference of the angles of refraction of red and violet light, $\\Delta\\alpha = \\alpha_\\text{r} - \\alpha_\\text{v}$, in flint glass.\n\nb) Calculate the difference $\\Delta\\alpha$ also in crown glass and in acrylic glass.\n\nc) Which type of glass separates the colours most? Justify with the refractive indices in the table why a prism spectrometer is better made of flint glass than of crown or acrylic glass.\n\nEnter the result of part a) in degrees in the answer field.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 0.7646,
+      "unit": "°",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Refractive indices of the glasses (typical values, example data)",
+        "columns": [
+          "Glass",
+          "$n_\\text{r}\\,(656\\,\\text{nm})$",
+          "$n_\\text{v}\\,(405\\,\\text{nm})$"
+        ],
+        "rows": [
+          [
+            "Crown glass",
+            "1.5143",
+            "1.5302"
+          ],
+          [
+            "Flint glass",
+            "1.6150",
+            "1.6498"
+          ],
+          [
+            "Acrylic glass",
+            "1.4892",
+            "1.5062"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy7-11-L2-06",
+      "level": 2,
+      "text": "A student reasons: “Red is refracted the least, so it turns the least in the droplet and deviates to the smallest angle from the direction of the antisolar point. So red is at the inner edge of the rainbow.”\n\nThe refractive index of water is $1.3315$ for red light and $1.3431$ for violet. The light arrives at the surface of the droplet at an angle of incidence of $59.0^\\circ$, is reflected once from the back surface of the droplet and leaves the droplet.\n\na) Calculate the angle $\\theta$ from the direction of the antisolar point for each colour.\n\nb) What is correct and what is wrong in the student's reasoning? Justify with the results of part a).\n\nEnter the angle $\\theta$ of red light in degrees in the answer field.",
+      "kind": [
+        "error",
+        "reasoning"
+      ],
+      "answer": 42.2913,
+      "unit": "°",
+      "tolerance": 0.01
+    },
+    {
+      "id": "fy7-11-L2-07",
+      "level": 2,
+      "text": "The graph shows the refractive index $n$ of N-BK7 crown glass as a function of the vacuum wavelength $\\lambda$. The measured points are at wavelengths $405$, $436$, $486$, $546$, $589$ and $656\\,\\text{nm}$, so the refractive index of orange light ($\\lambda_0 = 600\\,\\text{nm}$) must be read from the curve between the points.\n\nThe speed of light in vacuum is $c = 3.00 \\cdot 10^8\\,\\text{m/s}$. The frequency of light does not change when it enters the glass.\n\na) Read the refractive index at the wavelength $600\\,\\text{nm}$ from the graph.\n\nb) Calculate the speed of light in the glass at this wavelength.\n\nc) Calculate the wavelength of the light in the glass.\n\nEnter the speed of part b) in kilometres per second in the answer field.",
+      "kind": [
+        "graph",
+        "data"
+      ],
+      "answer": 197889.1821,
+      "unit": "km/s",
+      "tolerance": 0.003,
+      "figure": "fy7-11/n-graph"
     }
   ],
   "level3": [
@@ -100,6 +211,71 @@
       "answer": 1.6647,
       "unit": "°",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-11-L3-04",
+      "level": 3,
+      "text": "Students model a rainbow with a droplet in which light is reflected once from the back surface. The table gives the angle $\\theta$ of red light from the direction of the antisolar point as a function of the angle of incidence $\\alpha$ for two droplets: a water droplet and a droplet of an unknown sugar solution (example data). The refractive index of water for red light is $1.3315$.\n\na) From the angles $\\alpha$ and $\\theta$ of each row of the table, calculate the angle of refraction $\\beta$ in the solution droplet and from it the refractive index $n$ of the solution. Take the mean of the refractive indices of the rows.\n\nb) Read the greatest angle $\\theta$ of each droplet from the table and calculate by how many degrees smaller an angle the arc of the solution droplets would be seen at.\n\nc) Justify with the table why the arc forms exactly at the greatest angle $\\theta$, and tell whether the arc of the solution droplets would be seen inside or outside the arc of water rain.\n\nEnter the mean refractive index of part a) in the answer field.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 1.4,
+      "unit": "",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Angle $\\theta$ as a function of the angle of incidence (example data)",
+        "columns": [
+          "$\\alpha\\,({}^\\circ)$",
+          "$\\theta_\\text{water}\\,({}^\\circ)$",
+          "$\\theta_\\text{solution}\\,({}^\\circ)$"
+        ],
+        "rows": [
+          [
+            "40.0",
+            "35.46",
+            "29.35"
+          ],
+          [
+            "50.0",
+            "40.49",
+            "32.67"
+          ],
+          [
+            "55.0",
+            "41.87",
+            "33.26"
+          ],
+          [
+            "58.0",
+            "42.25",
+            "33.10"
+          ],
+          [
+            "62.0",
+            "42.15",
+            "32.41"
+          ],
+          [
+            "66.0",
+            "41.29",
+            "30.91"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy7-11-L3-05",
+      "level": 3,
+      "text": "The prism of a spectrometer is made of flint glass (example data), whose refractive index is $n_\\text{r} = 1.6150$ for red light and $n_\\text{v} = 1.6498$ for violet.\n\nA narrow beam of white light arrives from air at the first surface of the prism at an angle of incidence of $50.0^\\circ$.\n\nA greater apex angle $A$ separates the colours better, but the ray can leave the second surface only if $n\\sin\\alpha_3 < 1$. Do not round intermediate results, because the exit angle is sensitive to rounding.\n\na) Calculate the greatest apex angle $A_\\text{max}$ at which violet light can still leave the second surface. In the limiting case the angle of refraction of the emerging ray is $\\alpha_4 = 90^\\circ$. Calculate the same for red and deduce which colour limits the apex angle.\n\nb) The apex angle of the prism is chosen to be $A = 64.0^\\circ$. Calculate the angles of deviation of the red and the violet ray and their difference $\\Delta\\delta = \\delta_\\text{v} - \\delta_\\text{r}$.\n\nc) By how much would the difference $\\Delta\\delta$ change if the apex angle were $60.0^\\circ$? Why is it not worth choosing $65.0^\\circ$ as the apex angle?\n\nEnter the difference $\\Delta\\delta$ of part b) in degrees in the answer field.",
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "answer": 7.417,
+      "unit": "°",
+      "tolerance": 0.05
     }
   ]
 }

@@ -134,14 +134,14 @@
 **Järkevyys:** Akryylin ja veden taitekertoimet ovat melko lähellä toisiaan, joten rajakulman pitää olla suuri. Lasin ja veden rajakulma on $61{,}0^\circ$ ($1{,}52$ ja $1{,}33$), ja akryylin ja veden taitekertoimien suhde $1{,}49 : 1{,}33$ on vielä lähempänä ykköstä, joten rajakulman pitää olla vielä suurempi, kuten tuloksessa. Tarkistus: $1{,}49 \cdot \sin 63{,}20^\circ = 1{,}33$.
 
 ## fy7-12-L1-08
-**Annettu:** lasin taitekerroin $n = 1{,}45$, aika $t = 0{,}50\,\text{ms}$, valon nopeus tyhjiössä $c = 3{,}00 \cdot 10^8\,\text{m/s}$
+**Annettu:** lasin taitekerroin $n = 1{,}45$, aika $t = 0{,}500\,\text{ms}$, valon nopeus tyhjiössä $c = 3{,}00 \cdot 10^8\,\text{m/s}$
 **Kysytty:** pulssin kulkema matka $s$ kilometreinä
 **Periaate:** Lasissa valo etenee tasaisella nopeudella $v = c : n$. Pulssi kulkee kuidun akselin suuntaisesti, joten sen matka on nopeus kerrottuna ajalla.
 **Kaava:** $v = \dfrac{c}{n}$ ja $s = v t$, josta $s = \dfrac{c t}{n}$
-**Muunnokset:** $t = 0{,}50\,\text{ms} = 0{,}50 \cdot 10^{-3}\,\text{s}$. Lopuksi $1\,\text{km} = 1000\,\text{m}$.
-**Sijoitus:** $s = \dfrac{3{,}00 \cdot 10^8\,\text{m/s} \cdot 0{,}50 \cdot 10^{-3}\,\text{s}}{1{,}45} = 1{,}034 \cdot 10^5\,\text{m} = 103{,}4\,\text{km}$
-**Vastaus:** $103\,\text{km}$, kolme merkitsevää numeroa kuten taitekerroin $1{,}45$ ja valon nopeus.
-**Järkevyys:** Tyhjiössä valo kulkisi $0{,}50\,\text{ms}$:ssa $150\,\text{km}$. Lasissa valo on hitaampaa ja kulkee tässä ajassa vain osan siitä: $150\,\text{km} : 1{,}45 = 103\,\text{km}$.
+**Muunnokset:** $t = 0{,}500\,\text{ms} = 0{,}500 \cdot 10^{-3}\,\text{s}$. Lopuksi $1\,\text{km} = 1000\,\text{m}$.
+**Sijoitus:** $s = \dfrac{3{,}00 \cdot 10^8\,\text{m/s} \cdot 0{,}500 \cdot 10^{-3}\,\text{s}}{1{,}45} = 1{,}034 \cdot 10^5\,\text{m} = 103{,}4\,\text{km}$
+**Vastaus:** $103\,\text{km}$, kolme merkitsevää numeroa kuten taitekerroin $1{,}45$, aika $0{,}500\,\text{ms}$ ja valon nopeus.
+**Järkevyys:** Tyhjiössä valo kulkisi $0{,}500\,\text{ms}$:ssa $150\,\text{km}$. Lasissa valo on hitaampaa ja kulkee tässä ajassa vain osan siitä: $150\,\text{km} : 1{,}45 = 103\,\text{km}$.
 
 ## fy7-12-L2-05
 **Annettu:** taulukon rajakulmat $41{,}8^\circ$, $42{,}6^\circ$, $41{,}5^\circ$, $42{,}3^\circ$ ja $42{,}0^\circ$; ilman taitekerroin $n_2 = 1{,}00$; taulukkoarvot: akryyli $1{,}49$ ja polystyreeni $1{,}59$
