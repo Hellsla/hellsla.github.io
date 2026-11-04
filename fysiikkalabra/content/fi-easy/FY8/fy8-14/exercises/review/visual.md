@@ -5,15 +5,13 @@ CONTENT-HASH: 1b0ae72e68f858d4
 (none)
 
 ## Polish
-- [Minor] L3-01/L3-02 — very long task sentences; split for Selkeä suomi (see pedagogy report).
-- [Minor] L2-02 — "1200 fotonia sekunnissa" in words but solution uses $1200\,\tfrac{1}{\text{s}}$; align.
-- [Minor] L1-01 solution — exponent "6,8 cm / 3,4 cm" small; write the ratio first.
-- [Minor] L1-03 — "mSv/MBq" shown with `\tfrac` in solutions and with a slash in the task; pick one.
+- [Minor] L3-02 — put the 30 keV assumption first, drop the contradictory 20 keV.
+- [Minor] L2-02 — photon rate as words in the task but $\tfrac{1}{\text{s}}$ in the solution; align.
+- [Minor] L1-01 solution exponent 6,8 cm / 3,4 cm renders small; write the ratio first.
 
 ## Checked
-- Opened: open-exercises-L3-1280-2 (L3-01 answer, L3-02 task and solution start).
-- Source of all 12 tasks and solutions: decimal comma, units, thin spaces, `\cdot`, order principle - equation - substitution - result - interpretation.
-- No figures in the set.
+- Set unchanged since the previous PASS (same hash); earlier captures and findings carried.
+- Hash at start and end: 1b0ae72e68f858d4.
 
 ## Scores
 illustrations n/a · typography 4 · Finnish 4 · accessibility 4
