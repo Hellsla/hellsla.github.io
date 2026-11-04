@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 226834e3f8ddfdfe
+CONTENT-HASH: 4ae84ded355a8eeb
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
+- [Minor] fy5-8-L1-08 graph — the dashed line for B and the solid line for A are told apart by dash and the end labels A/B; good. The gridline spacing of 1 N leaves 2,5 N between lines, which the solution says explicitly.
+- [Minor] fy5-8-L2-05 — stored answer 24,4 N/m but the Vastaus box shows '24 N/m' (two figures); for science: check the precision statement matches the answer-check tolerance.
 
 ## Checked
-- Round 2: open-exercises-L2-1280-4/5 (ex-kaksi ticks now 0,10; L2-04 Kaava is one line with k_A explained), open-exercises-1280-3 (L1-03 Järkevyys: sentence, chain, sentence now reads smoothly).
-- Level 1/3 captures and the L3-03 force diagram unchanged since round 1 and still sound.
+- contact-7 and contact-8 (#73–#90); full size open-exercises-1280-7, -8, -9 (L1-08 graph: axes, ticks, units, A/B labels, dashed B line, solution). L2-05..07 and L3-04..05 tables and solutions on the contact sheets. Script scan found no plain quantities or ×/÷.
+- Round 3 delta against the 8 new tasks (L1-06..08, L2-05..07, L3-04..05); old tasks unchanged.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 4 · Finnish 5 · accessibility 5

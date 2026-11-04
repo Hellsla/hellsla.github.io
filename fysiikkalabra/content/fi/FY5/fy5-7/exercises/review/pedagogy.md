@@ -1,19 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 35f0502795996779
+CONTENT-HASH: adeddfca1934989d
 
 ## Blocking
 (none)
 
 ## Polish
-- solutions.md L1-02 — Vastaus "5,10 ms" (three figures) while the stored answer is 5.1; align the two.
-- solutions.md L1-03 Kaava — "A = x_huippu − 0" only restates the reading; drop it or note that the dashed line is x = 0.
+- exercises.json L1-06 and L1-08 — both test only that T and f are reciprocals (as do L1-01, L1-02); replace L1-08 with a conceptual check on amplitude vs total distance (L1-05 type) or on the zero crossing.
+- exercises.json L3-05 — kind has "graph" but only a table is given; either add the (t, d) figure or drop "graph". Also "lue D" can give 40,0 (from extremes) or 40,1 (d at t = 0); say in the solution that both are fine.
+- solutions.md L2-06 Järkevyys — "hajonnan arvio" is placed under Järkevyys; move the b) answer into Vastaus so the student finds it.
+- exercises.json L2-05 — no figure although the text speaks of a graph; say "taulukossa on kuvaajan huippujen ajat" or add the figure.
 
 ## Checked
-- Levels 5/4/3 as required; none repeats the worked example.
-- New L2-01 (read A and T from the graph, then x at t = 0,10 s) practises x = A sin(2πt/T) at level 2; solution explains why the value is computed, not read; 2,85 cm verified two ways.
-- L3-01 solution now shows sin 30° = 1/2 and 30° = π/6, and why the first (rising) angle is taken.
-- Situation first, question last; everyday contexts; data sufficient; no untaught trap.
-- Solutions follow the full step order, principle explained, conversions shown.
-- Finnish: case after number+unit correct, glossary terms used.
-- Round 3: L2-01 solution wording now fits the horizontal cart ("positiivisella puolella", ääriasemassa); nothing else changed.
-- Phone: no clipping in the captures; 360 px check passed.
+- Counts 8/7/5, ids and levels fit; L2 tasks are data/experiment/error, L3 modelling (ECG, sine prediction).
+- Recomputed: L2-05 1,64 Hz; L2-06 1,51 s; L2-07 1,34 Hz (oppilas käytti puolta jaksoa); L3-04 79 %, 72,6 and 130 /min; L3-05 44,2 cm. All match the solutions.
+- Error tasks (L2-07, L1-08) name one recognisable error and the solution explains it.
+- Sine fitting skill (slot goal) practised in L3-05; prerequisites none, all inside the slot.
+- Solutions follow the full step structure; Finnish and units fine.
+- L3-04 ECG context is everyday and uses six intervals, not one.
+- No 360 px exercise captures listed; overflow not judgeable from images.

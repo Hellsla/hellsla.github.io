@@ -1,13 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 35f0502795996779
+CONTENT-HASH: adeddfca1934989d
 
 ## Blocking
 
 ## Polish
-- [Minor] L1-03 figure — gridlines every 0,5 cm without a label at 2,5; the solution explains the half-cm line, so usable.
+- [Minor] fy5-7-L3-04 solution — the long Sijoitus chains (T, f, p) break into narrow rows but stay inside the card at 1280 px; fine.
+- [Minor] fy5-7-L2-07 — table column 'Suunta' holds words (ylös/alas) without LaTeX; ordinary table text, no change.
 
 ## Checked
-- Round 3 (delta): solutions.md L2-01 Vastaus and Järkevyys read from source; the wording "tasapainoaseman positiivisella puolella" and "ääriasemassa hetkellä T/4" is fluent, the chain layout is unchanged, and no figure or layout changed. Round-2 captures of the L2-01 task, graph and solution still apply.
+- contact-6 and contact-7 (#61–#82): L1-06..08, L2-05..07 with tables, L3-04 and L3-05 (long table split over a page edge only in the capture). Script scan of the new tasks found no plain quantities or ×/÷.
+- Round 3 delta against the 8 new tasks (L1-06..08, L2-05..07, L3-04..05); old tasks unchanged.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 4 · Finnish 5 · accessibility 5

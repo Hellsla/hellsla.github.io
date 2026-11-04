@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: a0b2e7a7c4453baf
+CONTENT-HASH: 843688caee54bb50
 
 ## Blocking
 
 ## Polish
-- [Minor] exercises.json — answer units "m/s²" are plain text in the unit field beside the input (readable); answer chips and solutions use LaTeX.
-- [Minor] solutions L3-02 — "v_1"/"v_2" stand alone on their row (layout by design).
+- [Minor] fy5-6-L2-05 / L3-04 data tables — the 'Kuu'/'Planeetta' name column sits left, numbers right-aligned with decimal comma; readable, nothing to do.
+- [Minor] fy5-6-L3-05 b) — the bold question block runs to four lines at 1280 px; acceptable.
 
 ## Checked
-- Round 2: open-exercises-L3-1280-2 (L3-02 with the new "Älä pyöristä välituloksia ennen vähennystä" sentence: bold question block reads clearly, solution intact); round-1 captures of levels 1–3 and stage-exercises-390 still apply
-- all quantities LaTeX with case endings, \cdot, colon division, consistent solution structure
+- contact-7 and contact-8 (#73–#91): L1-06..08 MC and solutions, L2-05..07 incl. data tables, L3-04 table, L3-05 and all solution blocks. No figures in the new tasks. Script scan of the new tasks found no plain quantities or ×/÷.
+- Round 3 delta against the 8 new tasks (L1-06..08, L2-05..07, L3-04..05); old tasks unchanged.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 5
+illustrations 5 · typography 4 · Finnish 5 · accessibility 5
