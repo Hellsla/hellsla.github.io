@@ -269,6 +269,8 @@ Metallissa positiiviset ionit muodostavat säännöllisen hilan, ja vapaat elekt
   <foreignObject x="430" y="271.5" width="24" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#7048e8">$I$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy6/filament-bulb.webp" alt="Kirkas hehkulamppu läheltä. Ohut kierretty lanka hehkuu oranssin keltaisena."><figcaption>Hehkulampun ohut volframilanka hehkuu, kun sen läpi kulkee virta. Elektronien törmäykset metallin ioneihin muuttavat sähköenergiaa langan sisäenergiaksi, ja lanka kuumenee.</figcaption></figure>
+
 ## Kaava: Ohmin laki ja resistiivisyys
 Resistanssi on komponentin jännitteen ja sen läpi kulkevan virran suhde:
 ```latex

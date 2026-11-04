@@ -380,6 +380,8 @@ missä $U$ on jännite ($\text{V}$), $E$ siirtynyt energia ($\text{J}$) ja $Q$ v
 ### Tyypillisiä arvoja
 Jännitteet ja virrat vaihtelevat arkisissa laitteissa paljon. Taulukon arvot ovat suuruusluokkia.
 
+<figure class="unit-photo"><img src="pics/fy6/macro-circuit-board.webp" alt="Piirilevy läheltä: vihreä kondensaattori, pieni raidallinen vastus ja muita komponentteja, joita johtimet yhdistävät."><figcaption>Elektroniikkalaitteen piirilevy. Komponentit on kytketty toisiinsa levyn johtimilla, ja kondensaattorin kylkeen on merkitty suurin jännite, jonka se kestää: $6{,}3\,\text{V}$.</figcaption></figure>
+
 | Jännitelähde | Jännite |
 |---|---|
 | AA-paristo | $1{,}5\,\text{V}$ |

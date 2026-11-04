@@ -1,0 +1,497 @@
+{
+ "version": 1,
+ "contribution": "Kertaustunti kokoaa FY1:n tasaisen liikkeen ja FY4:n paikan, siirtymän, nopeuden, kiihtyvyyden, tasaisesti kiihtyvän liikkeen ja kahden kappaleen vertailun yhdeksi kuvaajien malliksi (kulmakerroin alaspäin, pinta-ala ylöspäin) ja harjoittaa niistä ylioppilaskokeen tyyppisiä tehtäviä: kuvaajien lukeminen ja laatiminen, etumerkit ja suunnat, kohtaamisehto, mittausaineiston sovitus ja tulosten luotettavuus.",
+ "learn": [
+  "ratkaisemaan tasaisen ja tasaisesti kiihtyvän liikkeen tehtäviä yksiköt sijoittaen",
+  "laatimaan ja tulkitsemaan $(t,x)$- ja $(t,v)$-kuvaajia mittausaineistosta",
+  "arvioimaan kahden kappaleen liikkeitä ja mittaustulosten luotettavuutta perustellusti"
+ ],
+ "prior": [
+  "Siirtymä on paikan muutos, ja sen etumerkki kertoo suunnan (luku *Paikka, nopeus ja tasainen liike kuvaajina*)",
+  "Tasaisessa liikkeessä $x = x_0 + vt$, ja $(t,x)$-kuvaajan kulmakerroin on nopeus (luku *Tasainen liike – nopeus, paikka ja kuvaajat*)",
+  "Kiihtyvyys on nopeuden muutos aikaa kohti, ja $(t,v)$-kuvaajan pinta-ala on siirtymä (luku *Kiihtyvyys ja tasaisesti kiihtyvä liike*)",
+  "Kappaleet kohtaavat, kun niiden paikat ovat samalla hetkellä yhtä suuret (luku *Kahden kappaleen liikkeiden vertailu*)",
+  "Mittauspisteisiin sovitetaan suora, ja kulmakerroin luetaan suoralta (luku *Graafinen esitys ja suoran sovittaminen*)"
+ ],
+ "activities": [
+  {
+   "id": "hook",
+   "stage": "herata",
+   "type": "hook",
+   "text": "Raitiovaunu lähtee pysäkiltä, kiihdyttää, ajaa hetken tasaista vauhtia ja jarruttaa seuraavalle pysäkille. Matkustaja tallensi puhelimen sovelluksella vaunun nopeuden koko välin ajan. Sovellus näyttää vain nopeuden ajan funktiona: kuvaajassa on sekunteja ja metrejä sekunnissa, mutta ei yhtään metriä. Ylioppilaskokeessa tällainen kuvaaja voi olla tehtävän ainoa aineisto.",
+   "question": "Miten pysäkkien välisen matkan voi päätellä pelkästä nopeuskuvaajasta?"
+  },
+  {
+   "id": "lt-1",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Lähtötaso 1: vaakasuora viiva",
+   "prompt": "Kärryn $(t,x)$-kuvaaja on hetkestä $4\\,\\text{s}$ hetkeen $6\\,\\text{s}$ vaakasuora viiva korkeudella $x = 8\\,\\text{m}$. Mitä kärry tekee tänä aikana?",
+   "choices": [
+    {
+     "text": "Se on paikallaan kohdassa $x = 8\\,\\text{m}$.",
+     "correct": true,
+     "feedback": "Oikein. Paikka pysyy samana, joten $\\Delta x = 0$ ja nopeus $v = \\Delta x : \\Delta t = 0$. Kertaa tarvittaessa luvussa *Paikka, nopeus ja tasainen liike kuvaajina*."
+    },
+    {
+     "text": "Se liikkuu tasaisella nopeudella vaakasuoraa rataa.",
+     "feedback": "$(t,x)$-kuvaaja ei ole kuva radasta. Vaakasuora viiva tarkoittaa, että paikka ei muutu, joten nopeus on nolla. Kertaa luvussa *Paikka, nopeus ja tasainen liike kuvaajina*."
+    },
+    {
+     "text": "Se liikkuu nopeudella $8\\,\\text{m} : 2\\,\\text{s} = 4\\,\\text{m/s}$.",
+     "feedback": "Nopeus on paikan *muutos* aikaa kohti, ei paikka jaettuna ajalla. Paikan muutos on nolla, joten nopeuskin on nolla. Kertaa luvussa *Paikka, nopeus ja tasainen liike kuvaajina*."
+    }
+   ]
+  },
+  {
+   "id": "lt-2",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Lähtötaso 2: kierros radalla",
+   "prompt": "Juoksija juoksee $400\\,\\text{m}$:n radan yhden kierroksen ja pysähtyy lähtöviivalle $80\\,\\text{s}$:n kuluttua. Mikä väite on oikein?",
+   "choices": [
+    {
+     "text": "Siirtymä on $400\\,\\text{m}$, koska juoksija kiersi koko radan, ja keskinopeus $5{,}0\\,\\text{m/s}$.",
+     "feedback": "$400\\,\\text{m}$ on kuljettu matka. Siirtymä on loppupaikka miinus alkupaikka, ja juoksija päätyy lähtöpaikkaansa. Kertaa luvussa *Paikka, nopeus ja tasainen liike kuvaajina*."
+    },
+    {
+     "text": "Siirtymä on $-400\\,\\text{m}$, koska juoksija kääntyy lopuksi takaisin lähtöä kohti.",
+     "feedback": "Siirtymä riippuu vain alku- ja loppupaikasta, ei reitistä. Ne ovat samat, joten siirtymä on nolla. Kertaa luvussa *Paikka, nopeus ja tasainen liike kuvaajina*."
+    },
+    {
+     "text": "Matka on $400\\,\\text{m}$, mutta siirtymä ja keskinopeus ovat nolla.",
+     "correct": true,
+     "feedback": "Oikein. Loppupaikka on sama kuin alkupaikka, joten $\\Delta x = 0$ ja keskinopeus $\\Delta x : \\Delta t = 0$. Matka $400\\,\\text{m}$ on reitin pituus. Kertaa tarvittaessa luvussa *Paikka, nopeus ja tasainen liike kuvaajina*."
+    }
+   ]
+  },
+  {
+   "id": "lt-3",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Lähtötaso 3: kaksinkertainen aika",
+   "prompt": "Bussi on hetkellä $t = 0$ paikassa $200\\,\\text{m}$ ja liikkuu tasaisesti nopeudella $15\\,\\text{m/s}$. Hetkellä $10\\,\\text{s}$ se on paikassa $350\\,\\text{m}$. Missä se on hetkellä $20\\,\\text{s}$?",
+   "choices": [
+    {
+     "text": "$700\\,\\text{m}$, koska paikka kaksinkertaistuu ajan mukana.",
+     "feedback": "Paikka kaksinkertaistuisi vain, jos bussi lähtisi origosta. Kaksinkertaistuu kuljettu matka: $150\\,\\text{m}$ muuttuu $300\\,\\text{m}$:ksi. Kertaa luvussa *Tasainen liike – nopeus, paikka ja kuvaajat*."
+    },
+    {
+     "text": "$500\\,\\text{m}$, koska matka kasvaa $150\\,\\text{m}$ joka $10\\,\\text{s}$.",
+     "correct": true,
+     "feedback": "Oikein. $x = x_0 + vt = 200\\,\\text{m} + 15\\,\\text{m/s} \\cdot 20\\,\\text{s} = 500\\,\\text{m}$. Paikka ei ole verrannollinen aikaan, kun $x_0 \\neq 0$. Kertaa tarvittaessa luvussa *Tasainen liike – nopeus, paikka ja kuvaajat*."
+    },
+    {
+     "text": "$300\\,\\text{m}$, koska nopeus kertaa aika on $15\\,\\text{m/s} \\cdot 20\\,\\text{s}$.",
+     "feedback": "$300\\,\\text{m}$ on kuljettu matka. Paikka saadaan lisäämällä se alkupaikkaan $200\\,\\text{m}$. Kertaa luvussa *Tasainen liike – nopeus, paikka ja kuvaajat*."
+    }
+   ]
+  },
+  {
+   "id": "lt-4",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Lähtötaso 4: negatiivinen kiihtyvyys",
+   "prompt": "Auto liikkuu $x$-akselin negatiiviseen suuntaan, ja sen kiihtyvyys on $-2{,}0\\,\\text{m/s}^2$. Mitä auton vauhdille tapahtuu?",
+   "choices": [
+    {
+     "text": "Vauhti kasvaa, koska $a$ ja $v$ ovat samansuuntaiset.",
+     "correct": true,
+     "feedback": "Oikein. Kumpikin osoittaa negatiiviseen suuntaan, joten vauhti kasvaa $2{,}0\\,\\text{m/s}$ sekunnissa. Kertaa tarvittaessa luvussa *Kiihtyvyys ja tasaisesti kiihtyvä liike*."
+    },
+    {
+     "text": "Vauhti pienenee, koska kiihtyvyys on negatiivinen.",
+     "feedback": "Etumerkki kertoo suunnan. Nopeus ja kiihtyvyys ovat tässä samansuuntaiset, joten vauhti kasvaa. Kertaa luvussa *Kiihtyvyys ja tasaisesti kiihtyvä liike*."
+    },
+    {
+     "text": "Vauhti pysyy samana, koska suunnat kumoavat toisensa.",
+     "feedback": "Kiihtyvyys ei ole nolla, joten nopeus muuttuu joka sekunti $2{,}0\\,\\text{m/s}$. Saman suunnan kiihtyvyys kasvattaa vauhtia. Kertaa luvussa *Kiihtyvyys ja tasaisesti kiihtyvä liike*."
+    }
+   ]
+  },
+  {
+   "id": "lt-5",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Lähtötaso 5: lakipiste",
+   "prompt": "Pallo heitetään suoraan ylös, eikä ilmanvastusta huomioida. Mikä on pallon kiihtyvyys lakipisteessä, jossa se on hetken paikallaan?",
+   "choices": [
+    {
+     "text": "Nolla, koska pallon nopeus on lakipisteessä nolla.",
+     "feedback": "Nopeus on nolla vain hetken. Juuri ennen lakipistettä pallo liikkuu ylös ja heti sen jälkeen alas, joten nopeus muuttuu koko ajan. Kertaa luvussa *Kiihtyvyys ja tasaisesti kiihtyvä liike*."
+    },
+    {
+     "text": "$9{,}81\\,\\text{m/s}^2$ ylöspäin, koska pallo juuri nousi.",
+     "feedback": "Nousun aikana pallo hidastuu, joten kiihtyvyys on vastakkainen nopeudelle eli alaspäin. Se pysyy samana koko lennon. Kertaa luvussa *Kiihtyvyys ja tasaisesti kiihtyvä liike*."
+    },
+    {
+     "text": "$9{,}81\\,\\text{m/s}^2$ alaspäin, kuten koko lennon ajan.",
+     "correct": true,
+     "feedback": "Oikein. Painovoima vaikuttaa koko ajan, joten kiihtyvyys on $g = 9{,}81\\,\\text{m/s}^2$ alaspäin myös lakipisteessä. Kertaa tarvittaessa luvussa *Kiihtyvyys ja tasaisesti kiihtyvä liike*."
+    }
+   ]
+  },
+  {
+   "id": "lt-6",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Lähtötaso 6: pinta-ala",
+   "prompt": "Mitä $(t,v)$-kuvaajan ja aika-akselin väliin jäävä pinta-ala kertoo kappaleen liikkeestä?",
+   "choices": [
+    {
+     "text": "Kappaleen kiihtyvyyden tällä aikavälillä.",
+     "feedback": "Kiihtyvyys on $(t,v)$-kuvaajan kulmakerroin. Pinta-ala on nopeus kertaa aika, siis metrejä: siirtymä. Kertaa luvussa *Kiihtyvyys ja tasaisesti kiihtyvä liike*."
+    },
+    {
+     "text": "Kappaleen paikan aikavälin lopussa.",
+     "feedback": "Pinta-ala kertoo, kuinka paljon paikka *muuttuu*. Loppupaikka on alkupaikka plus tämä siirtymä. Kertaa luvussa *Kiihtyvyys ja tasaisesti kiihtyvä liike*."
+    },
+    {
+     "text": "Kappaleen keskinopeuden tällä aikavälillä.",
+     "feedback": "Keskinopeus saadaan, kun pinta-ala eli siirtymä jaetaan ajalla. Pinta-ala itse on siirtymä. Kertaa luvussa *Kiihtyvyys ja tasaisesti kiihtyvä liike*."
+    },
+    {
+     "text": "Kappaleen siirtymän tällä aikavälillä.",
+     "correct": true,
+     "feedback": "Oikein. Nopeus kertaa aika on metrejä, ja pinta-ala laskee nämä tulot yhteen. Aika-akselin alapuolinen ala on negatiivinen siirtymä. Kertaa tarvittaessa luvussa *Kiihtyvyys ja tasaisesti kiihtyvä liike*."
+    }
+   ]
+  },
+  {
+   "id": "aineisto",
+   "stage": "tutki",
+   "type": "interpret",
+   "title": "Raitiovaunu pysäkkien välillä",
+   "source": "example",
+   "source_note": "Kuvaaja on keksitty esimerkki, jonka luvut vastaavat raitiovaunun tavallista kiihtyvyyttä ja nopeutta kaupungissa.",
+   "text": "Kuvaajassa on raitiovaunun nopeus pysäkiltä seuraavalle pysäkille. Lue kuvaajasta tarvitsemasi hetket ja nopeudet, päättele niistä pysäkkien välinen matka ja vastaa alla. Mallivastauksessa on myös kiihtyvyydet ja keskinopeus.\n\n<svg viewBox=\"0 0 440 360\" role=\"img\" aria-label=\"Kuvaaja mittakaavassa: raitiovaunun nopeus v ajan t funktiona pysäkiltä seuraavalle. Ruudukon väli on 10 s ja 2 m/s. Nopeus kasvaa tasaisesti nollasta nopeuteen 10 m/s hetkeen 10 s, pysyy 10 metrissä sekunnissa hetkeen 40 s ja pienenee tasaisesti nollaan hetkellä 60 s.\" style=\"max-width:100%;font-size:21px\">\n  <line x1=\"109.5\" y1=\"300\" x2=\"109.5\" y2=\"52\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"154.5\" y1=\"300\" x2=\"154.5\" y2=\"52\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"200\" y1=\"300\" x2=\"200\" y2=\"52\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"245.5\" y1=\"300\" x2=\"245.5\" y2=\"52\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"290.5\" y1=\"300\" x2=\"290.5\" y2=\"52\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"336\" y1=\"300\" x2=\"336\" y2=\"52\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"64\" y1=\"258.5\" x2=\"336\" y2=\"258.5\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"64\" y1=\"217.5\" x2=\"336\" y2=\"217.5\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"64\" y1=\"176\" x2=\"336\" y2=\"176\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"64\" y1=\"134.5\" x2=\"336\" y2=\"134.5\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"64\" y1=\"93.5\" x2=\"336\" y2=\"93.5\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"64\" y1=\"52\" x2=\"336\" y2=\"52\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"63\" y1=\"300\" x2=\"350\" y2=\"300\" stroke=\"#1f2933\" stroke-width=\"2.5\" stroke-linecap=\"butt\"/>\n  <path d=\"M362,300 L349,306 L349,294 Z\" fill=\"#1f2933\" stroke-linejoin=\"round\"/>\n  <line x1=\"64\" y1=\"301\" x2=\"64\" y2=\"38\" stroke=\"#1f2933\" stroke-width=\"2.5\" stroke-linecap=\"butt\"/>\n  <path d=\"M64,26 L70,39 L58,39 Z\" fill=\"#1f2933\" stroke-linejoin=\"round\"/>\n  <line x1=\"109.5\" y1=\"300\" x2=\"109.5\" y2=\"307\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <line x1=\"154.5\" y1=\"300\" x2=\"154.5\" y2=\"307\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"139.5\" y=\"311.5\" width=\"30\" height=\"25\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:21px\">$20$</div></foreignObject>\n  <line x1=\"200\" y1=\"300\" x2=\"200\" y2=\"307\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <line x1=\"245.5\" y1=\"300\" x2=\"245.5\" y2=\"307\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"230.5\" y=\"311.5\" width=\"30\" height=\"25\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:21px\">$40$</div></foreignObject>\n  <line x1=\"290.5\" y1=\"300\" x2=\"290.5\" y2=\"307\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <line x1=\"336\" y1=\"300\" x2=\"336\" y2=\"307\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"321\" y=\"311.5\" width=\"30\" height=\"25\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:21px\">$60$</div></foreignObject>\n  <line x1=\"57\" y1=\"258.5\" x2=\"64\" y2=\"258.5\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"33\" y=\"246\" width=\"19\" height=\"25\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:21px\">$2$</div></foreignObject>\n  <line x1=\"57\" y1=\"217.5\" x2=\"64\" y2=\"217.5\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"33\" y=\"205\" width=\"19\" height=\"25\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:21px\">$4$</div></foreignObject>\n  <line x1=\"57\" y1=\"176\" x2=\"64\" y2=\"176\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"33\" y=\"163.5\" width=\"19\" height=\"25\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:21px\">$6$</div></foreignObject>\n  <line x1=\"57\" y1=\"134.5\" x2=\"64\" y2=\"134.5\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"33\" y=\"122\" width=\"19\" height=\"25\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:21px\">$8$</div></foreignObject>\n  <line x1=\"57\" y1=\"93.5\" x2=\"64\" y2=\"93.5\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"22\" y=\"81\" width=\"30\" height=\"25\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:21px\">$10$</div></foreignObject>\n  <line x1=\"57\" y1=\"52\" x2=\"64\" y2=\"52\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"22\" y=\"39.5\" width=\"30\" height=\"25\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:21px\">$12$</div></foreignObject>\n  <foreignObject x=\"35\" y=\"307.5\" width=\"19\" height=\"25\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:21px\">$0$</div></foreignObject>\n  <foreignObject x=\"368\" y=\"287.5\" width=\"55\" height=\"25\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px\">$t\\ (\\text{s})$</div></foreignObject>\n  <foreignObject x=\"54\" y=\"-2.5\" width=\"77\" height=\"25\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px\">$v\\ (\\text{m/s})$</div></foreignObject>\n  <polyline points=\"64,300 109.5,93.5 245.5,93.5 336,300\" fill=\"none\" stroke=\"#1971c2\" stroke-width=\"3.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n  <circle cx=\"64\" cy=\"300\" r=\"6.5\" fill=\"#1971c2\" stroke=\"#ffffff\" stroke-width=\"2\"/>\n  <circle cx=\"109.5\" cy=\"93.5\" r=\"6.5\" fill=\"#1971c2\" stroke=\"#ffffff\" stroke-width=\"2\"/>\n  <circle cx=\"245.5\" cy=\"93.5\" r=\"6.5\" fill=\"#1971c2\" stroke=\"#ffffff\" stroke-width=\"2\"/>\n  <circle cx=\"336\" cy=\"300\" r=\"6.5\" fill=\"#1971c2\" stroke=\"#ffffff\" stroke-width=\"2\"/>\n</svg>",
+   "question": {
+    "type": "numeric",
+    "prompt": "Kuinka pitkä on pysäkkien välinen matka? Vastaa metreinä.",
+    "answer": 450,
+    "unit": "m",
+    "tolerance": 0.03,
+    "hints": [
+     "Nopeus kertaa aika on matka. Mikä kuvaajan alue on nopeus kertaa aika?",
+     "Jaa kuvaajan alle jäävä alue kolmeen osaan: kolmio, suorakulmio ja kolmio.",
+     "Kiihdytys: $\\tfrac{1}{2} \\cdot 10\\,\\text{s} \\cdot 10\\,\\text{m/s}$; tasainen osa: $30\\,\\text{s} \\cdot 10\\,\\text{m/s}$; jarrutus: $\\tfrac{1}{2} \\cdot 20\\,\\text{s} \\cdot 10\\,\\text{m/s}$."
+    ],
+    "mistakes": [
+     {
+      "value": 600,
+      "feedback": "Kerroit suurimman nopeuden koko ajalla. Vaunu kulkee $10\\,\\text{m/s}$ vain osan ajasta: kiihdytyksessä ja jarrutuksessa nopeus on pienempi, ja niiden alue on kolmio."
+     },
+     {
+      "value": 300,
+      "feedback": "Otit mukaan vain tasaisen nopeuden vaiheen. Myös kiihdytyksen ja jarrutuksen aikana vaunu liikkuu: lisää kolmioiden alat."
+     },
+     {
+      "value": 0.75,
+      "feedback": "Jaoit nopeuden ajalla. Se antaa kiihtyvyyden. Matka on nopeus *kertaa* aika eli kuvaajan alle jäävä pinta-ala."
+     }
+    ],
+    "solution": "**Annettu:** kuvaajasta: nopeus kasvaa tasaisesti nollasta nopeuteen $v = 10\\,\\text{m/s}$ hetkeen $t_1 = 10\\,\\text{s}$, pysyy siinä hetkeen $t_2 = 40\\,\\text{s}$ ja pienenee tasaisesti nollaan hetkellä $t_3 = 60\\,\\text{s}$\n\n**Kysytty:** pysäkkien välinen matka $\\Delta x$ metreinä\n\n**Periaate:** Vaunu liikkuu koko ajan samaan suuntaan, joten matka on sama kuin siirtymä. Siirtymä on $(t,v)$-kuvaajan ja aika-akselin välinen pinta-ala, koska nopeus kertaa aika on kuljettu matka (luku *Kiihtyvyys ja tasaisesti kiihtyvä liike*).\n\n**Kuvaajan lukeminen:** Kuvaajan kulmat ovat ruudukon risteyksissä $(0\\,\\text{s};\\ 0)$, $(10\\,\\text{s};\\ 10\\,\\text{m/s})$, $(40\\,\\text{s};\\ 10\\,\\text{m/s})$ ja $(60\\,\\text{s};\\ 0)$. Alue jakautuu kolmioon, suorakulmioon ja kolmioon.\n\n**Kaava:** $\\Delta x = \\tfrac{1}{2}\\,v\\,t_1 + v\\,(t_2 - t_1) + \\tfrac{1}{2}\\,v\\,(t_3 - t_2)$\n\n**Muunnokset:** Nopeus on yksikössä $\\text{m/s}$ ja aika sekunteina, joten pinta-ala tulee suoraan metreinä. Muunnoksia ei tarvita.\n\n**Sijoitus:** $\\Delta x = \\tfrac{1}{2} \\cdot 10\\,\\text{m/s} \\cdot 10\\,\\text{s} + 10\\,\\text{m/s} \\cdot 30\\,\\text{s} + \\tfrac{1}{2} \\cdot 10\\,\\text{m/s} \\cdot 20\\,\\text{s} = 50\\,\\text{m} + 300\\,\\text{m} + 100\\,\\text{m} = 450\\,\\text{m}$\n\n**Vastaus:** $450\\,\\text{m}$, kaksi merkitsevää numeroa ($4{,}5 \\cdot 10^{2}\\,\\text{m}$), koska kuvaajasta luetut nopeus $10\\,\\text{m/s}$ ja ajat tunnetaan noin kahden numeron tarkkuudella.\n\n**Järkevyys:** Kiihtyvyys on kiihdytyksessä $10\\,\\text{m/s} : 10\\,\\text{s} = 1{,}0\\,\\text{m/s}^2$ ja jarrutuksessa $-10\\,\\text{m/s} : 20\\,\\text{s} = -0{,}50\\,\\text{m/s}^2$, raitiovaunulle tavalliset arvot. Keskinopeus $450\\,\\text{m} : 60\\,\\text{s} = 7{,}5\\,\\text{m/s} \\approx 27\\,\\text{km/h}$ on pienempi kuin suurin nopeus $10\\,\\text{m/s}$, kuten pitää, ja noin puolen kilometrin pysäkkiväli on kaupungissa tavallinen."
+   }
+  },
+  {
+   "id": "teoriatiivistelma",
+   "stage": "selita",
+   "type": "theory",
+   "sections": [
+    "Ydinajatus",
+    "Kaava",
+    "Virheet",
+    "Kertaa"
+   ]
+  },
+  {
+   "id": "keskinopeus",
+   "stage": "sovella",
+   "type": "choice",
+   "title": "Etsi virhe: keskinopeus",
+   "prompt": "Pyöräilijä nousee $10\\,\\text{km}$ ylämäkeä nopeudella $20\\,\\text{km/h}$ ja laskee saman matkan takaisin alas nopeudella $60\\,\\text{km/h}$. Opiskelija laski keskivauhdin: ”$(20\\,\\text{km/h} + 60\\,\\text{km/h}) : 2 = 40\\,\\text{km/h}$.” Mikä ratkaisussa on väärin?",
+   "choices": [
+    {
+     "text": "Keskivauhti on matka jaettuna ajalla: $20\\,\\text{km} : \\tfrac{2}{3}\\,\\text{h} = 30\\,\\text{km/h}$.",
+     "correct": true,
+     "feedback": "Oikein. Ylämäki kestää $10\\,\\text{km} : 20\\,\\text{km/h} = 0{,}50\\,\\text{h}$ ja alamäki $10\\,\\text{km} : 60\\,\\text{km/h} \\approx 0{,}17\\,\\text{h}$, yhteensä $\\tfrac{2}{3}\\,\\text{h}$. Hitaampaa nopeutta ajetaan pidempään, joten se painaa enemmän."
+    },
+    {
+     "text": "Ei mikään: nopeuksien keskiarvo on oikea tapa laskea keskivauhti myös edestakaisella matkalla.",
+     "feedback": "Nopeuksien keskiarvo kelpaisi vain, jos kumpaakin nopeutta ajettaisiin yhtä *kauan*. Ylämäkeen kuluu kolme kertaa enemmän aikaa kuin alamäkeen."
+    },
+    {
+     "text": "Keskinopeus on nolla, koska pyöräilijä palaa lopuksi takaisin samaan lähtöpaikkaansa.",
+     "feedback": "Keskinopeus eli siirtymä jaettuna ajalla on tässä nolla, mutta kysymys koskee keskivauhtia, joka lasketaan kuljetusta matkasta: $20\\,\\text{km} : \\tfrac{2}{3}\\,\\text{h} = 30\\,\\text{km/h}$."
+    }
+   ]
+  },
+  {
+   "id": "rata",
+   "stage": "sovella",
+   "type": "choice",
+   "title": "Valitse kuvaaja: kärry radalla",
+   "prompt": "Kärry tönäistään ylös kaltevaa rataa. Se hidastuu, pysähtyy hetkeksi ja vierii takaisin alas. Kiihtyvyys on koko ajan sama, ja ylös on positiivinen suunta. Millainen on kärryn $(t,v)$-kuvaaja?",
+   "choices": [
+    {
+     "text": "V-kirjaimen muotoinen: ensin laskeva, sitten nouseva viiva.",
+     "feedback": "Tämä on vauhdin kuvaaja, ei nopeuden. Nopeuden etumerkki vaihtuu kääntymishetkellä, joten viiva jatkaa samaan suuntaan aika-akselin alapuolelle."
+    },
+    {
+     "text": "Laskeva suora, joka jatkuu aika-akselin alapuolelle.",
+     "correct": true,
+     "feedback": "Oikein. Vakiokiihtyvyys antaa suoran, jonka kulmakerroin on negatiivinen. Nopeus on nolla kääntymishetkellä ja sen jälkeen negatiivinen, koska kärry liikkuu alas."
+    },
+    {
+     "text": "Laskeva suora, joka pysähtyy nollaan ja jatkuu vaakasuorana.",
+     "feedback": "Kärry on paikallaan vain hetken. Kiihtyvyys ei muutu kääntymishetkellä, joten nopeus jatkaa pienenemistä negatiiviseksi."
+    },
+    {
+     "text": "Ylöspäin kaartuva käyrä, kuten kiihtyvän liikkeen paikan kuvaaja.",
+     "feedback": "Kun kiihtyvyys on vakio, nopeus muuttuu joka sekunti yhtä paljon: $(t,v)$-kuvaaja on suora. Kaareva on $(t,x)$-kuvaaja."
+    }
+   ]
+  },
+  {
+   "id": "tangentti",
+   "stage": "sovella",
+   "type": "choice",
+   "title": "Lue tangentti",
+   "figure": "fy4-2/ex-tangent",
+   "prompt": "Kuvaajassa on levosta kiihtyvän kärryn paikka ja käyrän pisteeseen hetkellä $4{,}0\\,\\text{s}$ piirretty tangentti. Mikä on kärryn nopeus hetkellä $4{,}0\\,\\text{s}$?",
+   "choices": [
+    {
+     "text": "$2{,}0\\,\\text{m/s}$, koska $8{,}0\\,\\text{m} : 4{,}0\\,\\text{s} = 2{,}0\\,\\text{m/s}$",
+     "feedback": "Tämä on keskinopeus ajalta $0$–$4{,}0\\,\\text{s}$, koska laskit sen origosta käyrän pisteeseen. Hetkellinen nopeus on tangentin kulmakerroin."
+    },
+    {
+     "text": "$4{,}0\\,\\text{m/s}$, tangentin kulmakerroin $16\\,\\text{m} : 4{,}0\\,\\text{s}$",
+     "correct": true,
+     "feedback": "Oikein. Tangentti kulkee pisteiden $(2{,}0\\,\\text{s};\\ 0)$ ja $(6{,}0\\,\\text{s};\\ 16\\,\\text{m})$ kautta: $v = 16\\,\\text{m} : 4{,}0\\,\\text{s} = 4{,}0\\,\\text{m/s}$. Levosta kiihtyvällä nopeus on kaksinkertainen keskinopeuteen nähden."
+    },
+    {
+     "text": "$8{,}0\\,\\text{m/s}$, koska käyrän piste on korkeudella $8{,}0\\,\\text{m}$",
+     "feedback": "Käyrän korkeus on paikka, ei nopeus. Nopeus on tangentin jyrkkyys: paikan muutos jaettuna ajan muutoksella tangentilla."
+    }
+   ]
+  },
+  {
+   "id": "edella",
+   "stage": "sovella",
+   "type": "choice",
+   "title": "Kumpi on edellä?",
+   "prompt": "Kaksi pyöräilijää ajaa samaa suoraa tietä $x$-akselin negatiiviseen suuntaan. Heidän $(t,x)$-kuvaajissaan pyöräilijän A viiva on koko ajan pyöräilijän B viivan yläpuolella. Mikä väite on oikein?",
+   "choices": [
+    {
+     "text": "A on edellä, koska ylempi viiva tarkoittaa edellä olevaa.",
+     "feedback": "Ylempänä oleva viiva tarkoittaa suurempaa paikkakoordinaattia. Kun liikutaan negatiiviseen suuntaan, edellä on se, jonka paikkakoordinaatti on pienempi. Kertaa luvussa *Kahden kappaleen liikkeiden vertailu*."
+    },
+    {
+     "text": "B on edellä, koska sen paikkakoordinaatti on pienempi.",
+     "correct": true,
+     "feedback": "Oikein. Kuvaajassa ylempänä oleva viiva tarkoittaa suurempaa paikkakoordinaattia. Negatiiviseen suuntaan ajettaessa edellä on pienempi paikkakoordinaatti, eli B. Kertaa tarvittaessa luvussa *Kahden kappaleen liikkeiden vertailu*."
+    },
+    {
+     "text": "Kumpikaan ei ole edellä, koska viivat eivät leikkaa.",
+     "feedback": "Leikkauspiste olisi kohtaaminen. Viivojen välinen ero kertoo välimatkan, ja B:n pienempi paikkakoordinaatti tarkoittaa tässä, että B on edellä. Kertaa luvussa *Kahden kappaleen liikkeiden vertailu*."
+    }
+   ]
+  },
+  {
+   "id": "potkulauta",
+   "stage": "sovella",
+   "type": "numeric",
+   "title": "Potkulauta",
+   "figure": "fy4-2/ex-tv",
+   "prompt": "Kuvaajassa on potkulaudan nopeus. Kuinka pitkän matkan potkulauta kulkee kuvaajan esittämänä aikana? Vastaa metreinä.",
+   "answer": 22.5,
+   "unit": "m",
+   "tolerance": 0.03,
+   "hints": [
+    "Mikä kuvaajan alue vastaa kuljettua matkaa?",
+    "Alue on puolisuunnikas: sen voi jakaa suorakulmioon ja kolmioon tai laskea keskinopeuden avulla.",
+    "$\\Delta x = \\dfrac{2{,}0\\,\\text{m/s} + 7{,}0\\,\\text{m/s}}{2} \\cdot 5{,}0\\,\\text{s}$"
+   ],
+   "mistakes": [
+    {
+     "value": 35,
+     "feedback": "Kerroit loppunopeuden koko ajalla. Nopeus kasvoi vähitellen, joten keskinopeus on alku- ja loppunopeuden keskiarvo."
+    },
+    {
+     "value": 12.5,
+     "feedback": "Laskit vain kolmion, jonka korkeus on nopeuden kasvu. Lisää alkunopeuden suorakulmio $2{,}0\\,\\text{m/s} \\cdot 5{,}0\\,\\text{s}$."
+    },
+    {
+     "value": 1,
+     "feedback": "Laskit kulmakertoimen eli kiihtyvyyden. Matka on kuvaajan alle jäävä pinta-ala."
+    }
+   ],
+   "solution": "**Annettu:** kuvaajasta alkunopeus $v_0 = 2{,}0\\,\\text{m/s}$, loppunopeus $v = 7{,}0\\,\\text{m/s}$, aika $t = 5{,}0\\,\\text{s}$; nopeus kasvaa tasaisesti\n\n**Kysytty:** kuljettu matka $\\Delta x$ metreinä\n\n**Periaate:** Potkulauta liikkuu yhteen suuntaan, joten matka on siirtymä, ja siirtymä on $(t,v)$-kuvaajan alle jäävä pinta-ala (luku *Kiihtyvyys ja tasaisesti kiihtyvä liike*). Nopeus kasvaa tasaisesti, joten alue on puolisuunnikas.\n\n**Kuvaajan lukeminen:** Suora alkaa pisteestä $(0;\\ 2{,}0\\,\\text{m/s})$ ja päättyy pisteeseen $(5{,}0\\,\\text{s};\\ 7{,}0\\,\\text{m/s})$.\n\n**Kaava:** $\\Delta x = \\dfrac{v_0 + v}{2}\\,t$\n\n**Muunnokset:** Nopeudet ovat yksikössä $\\text{m/s}$ ja aika sekunteina, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $\\Delta x = \\dfrac{2{,}0\\,\\text{m/s} + 7{,}0\\,\\text{m/s}}{2} \\cdot 5{,}0\\,\\text{s} = 4{,}5\\,\\text{m/s} \\cdot 5{,}0\\,\\text{s} = 22{,}5\\,\\text{m}$\n\n**Vastaus:** $23\\,\\text{m}$, kaksi merkitsevää numeroa kuten kuvaajasta luetut nopeudet ja aika.\n\n**Järkevyys:** Tulos on suorakulmioiden $2{,}0\\,\\text{m/s} \\cdot 5{,}0\\,\\text{s} = 10\\,\\text{m}$ ja $7{,}0\\,\\text{m/s} \\cdot 5{,}0\\,\\text{s} = 35\\,\\text{m}$ välissä, kuten pitää. Jakamalla: suorakulmio $10\\,\\text{m}$ ja kolmio $\\tfrac{1}{2} \\cdot 5{,}0\\,\\text{m/s} \\cdot 5{,}0\\,\\text{s} = 12{,}5\\,\\text{m}$, yhteensä sama $22{,}5\\,\\text{m}$."
+  },
+  {
+   "id": "jarrutus",
+   "stage": "sovella",
+   "type": "numeric",
+   "title": "Hirvi tiellä",
+   "prompt": "Auto ajaa maantiellä nopeudella $72\\,\\text{km/h}$, kun kuljettaja huomaa hirven tiellä. Reaktioaika on $0{,}80\\,\\text{s}$, ja sen jälkeen auto jarruttaa tasaisesti hidastuvuudella $6{,}5\\,\\text{m/s}^2$ pysähdyksiin. Kuinka pitkän matkan auto kulkee huomaamishetkestä pysähtymiseen? Vastaa metreinä.",
+   "answer": 46.77,
+   "unit": "m",
+   "tolerance": 0.03,
+   "hints": [
+    "Piirrä $(t,v)$-kuvaaja: ensin vaakasuora osa reaktioajan, sitten laskeva suora nollaan.",
+    "Jarrutusaika on $t_\\text{j} = v_0 : a$, ja kumpikin matka on oman osansa pinta-ala.",
+    "$v_0 = 20\\,\\text{m/s}$, $t_\\text{j} = 20\\,\\text{m/s} : 6{,}5\\,\\text{m/s}^2 \\approx 3{,}08\\,\\text{s}$."
+   ],
+   "mistakes": [
+    {
+     "value": 30.77,
+     "feedback": "Tämä on pelkkä jarrutusmatka. Reaktioajan aikana auto kulkee vielä täyttä vauhtia: lisää $20\\,\\text{m/s} \\cdot 0{,}80\\,\\text{s}$."
+    },
+    {
+     "value": 77.54,
+     "feedback": "Laskit jarrutusmatkan suorakulmiona $v_0\\,t_\\text{j}$. Jarrutuksessa nopeus pienenee tasaisesti, joten alue on kolmio: ota puolet."
+    },
+    {
+     "value": 16,
+     "feedback": "Tämä on vain reaktiomatka. Lisää jarrutusmatka, jonka aikana nopeus pienenee nollaan."
+    }
+   ],
+   "solution": "**Annettu:** nopeus $v_0 = 72\\,\\text{km/h}$, reaktioaika $t_\\text{r} = 0{,}80\\,\\text{s}$, hidastuvuus $a = 6{,}5\\,\\text{m/s}^2$\n\n**Kysytty:** pysähtymismatka $s$ metreinä\n\n**Periaate:** Reaktioajan auto liikkuu tasaisesti, ja sen jälkeen nopeus pienenee tasaisesti nollaan (luvut *Paikka, nopeus ja tasainen liike kuvaajina* ja *Kiihtyvyys ja tasaisesti kiihtyvä liike*). Kummankin vaiheen matka on $(t,v)$-kuvaajan alue: suorakulmio ja kolmio.\n\n**Kaava:** $v = v_0 - a\\,t_\\text{j} = 0$, joten $t_\\text{j} = \\dfrac{v_0}{a}$, ja $s = v_0\\,t_\\text{r} + \\tfrac{1}{2}\\,v_0\\,t_\\text{j} = v_0\\,t_\\text{r} + \\dfrac{v_0^2}{2a}$\n\n**Muunnokset:** $72\\,\\text{km/h} = \\dfrac{72 \\cdot 1000\\,\\text{m}}{3600\\,\\text{s}} = 20\\,\\text{m/s}$\n\n**Sijoitus:** $s = 20\\,\\text{m/s} \\cdot 0{,}80\\,\\text{s} + \\dfrac{(20\\,\\text{m/s})^2}{2 \\cdot 6{,}5\\,\\text{m/s}^2} = 16\\,\\text{m} + 30{,}77\\,\\text{m} = 46{,}77\\,\\text{m}$\n\n**Vastaus:** $47\\,\\text{m}$, kaksi merkitsevää numeroa kuten reaktioaika $0{,}80\\,\\text{s}$ ja hidastuvuus $6{,}5\\,\\text{m/s}^2$.\n\n**Järkevyys:** Jarrutus kestää $20\\,\\text{m/s} : 6{,}5\\,\\text{m/s}^2 \\approx 3{,}1\\,\\text{s}$ keskinopeudella $10\\,\\text{m/s}$, eli noin $31\\,\\text{m}$. Reaktiomatka on kolmasosa koko matkasta, joten tarkkaavaisuudella on suuri merkitys. Muutaman kymmenen metrin pysähtymismatka on tavallinen maantienopeudella kuivalla tiellä."
+  },
+  {
+   "id": "koira",
+   "stage": "sovella",
+   "type": "numeric",
+   "title": "Koira ja juoksija",
+   "prompt": "Hölkkääjä juoksee suoraa polkua tasaisella nopeudella $3{,}0\\,\\text{m/s}$. Kun hän on $24\\,\\text{m}$ koiran edellä, paikallaan seissyt koira lähtee perään ja kiihtyy tasaisesti kiihtyvyydellä $1{,}5\\,\\text{m/s}^2$. Kuinka monen sekunnin kuluttua koira saavuttaa hölkkääjän?",
+   "answer": 8.0,
+   "unit": "s",
+   "tolerance": 0.03,
+   "hints": [
+    "Valitse origo koiran lähtöpaikkaan ja kirjoita kummankin paikka ajan funktiona.",
+    "Koira: $x_\\text{K} = \\tfrac{1}{2}\\,a\\,t^2$. Hölkkääjä: $x_\\text{H} = 24\\,\\text{m} + 3{,}0\\,\\text{m/s} \\cdot t$. Saavuttaminen: $x_\\text{K} = x_\\text{H}$.",
+    "$0{,}75\\,t^2 - 3{,}0\\,t - 24 = 0$ (yksiköt pois kirjoitettuina); valitse positiivinen juuri."
+   ],
+   "mistakes": [
+    {
+     "value": 2.0,
+     "feedback": "Tämä on hetki, jolloin nopeudet ovat yhtä suuret. Silloin välimatka on suurimmillaan. Saavuttamisessa yhtä suuria ovat paikat."
+    },
+    {
+     "value": 4.0,
+     "feedback": "Jätit hölkkääjän etumatkan $24\\,\\text{m}$ pois. Hänen paikkansa on $24\\,\\text{m} + vt$."
+    },
+    {
+     "value": 5.12,
+     "feedback": "Unohdit kertoimen $\\tfrac{1}{2}$ koiran paikasta: levosta kiihtyvän paikka on $\\tfrac{1}{2}\\,a\\,t^2$."
+    }
+   ],
+   "solution": "**Annettu:** hölkkääjän nopeus $v = 3{,}0\\,\\text{m/s}$ ja etumatka $x_0 = 24\\,\\text{m}$; koira lähtee levosta kiihtyvyydellä $a = 1{,}5\\,\\text{m/s}^2$\n\n**Kysytty:** saavuttamishetki $t$ sekunteina\n\n**Periaate:** Kun koira saavuttaa hölkkääjän, he ovat samassa paikassa samalla hetkellä: $x_\\text{K}(t) = x_\\text{H}(t)$ (luku *Kahden kappaleen liikkeiden vertailu*). Origo on koiran lähtöpaikassa ja positiivinen suunta juoksusuunta. Koiran liike on tasaisesti kiihtyvää, hölkkääjän tasaista.\n\n**Kaava:** $\\tfrac{1}{2}\\,a\\,t^2 = x_0 + v\\,t$, eli $\\tfrac{1}{2}\\,a\\,t^2 - v\\,t - x_0 = 0$, jonka positiivinen juuri on $t = \\dfrac{v + \\sqrt{v^2 + 2\\,a\\,x_0}}{a}$\n\n**Muunnokset:** Kaikki suureet ovat SI-yksiköissä. Juurrettavan molemmat termit ovat yksikössä $\\text{m}^2/\\text{s}^2$, joten muunnoksia ei tarvita.\n\n**Sijoitus:** Juurrettava on $v^2 + 2\\,a\\,x_0 = (3{,}0\\,\\text{m/s})^2 + 2 \\cdot 1{,}5\\,\\text{m/s}^2 \\cdot 24\\,\\text{m} = 81\\,\\text{m}^2/\\text{s}^2$, ja sen neliöjuuri on $9{,}0\\,\\text{m/s}$. Siis $t = \\dfrac{3{,}0\\,\\text{m/s} + 9{,}0\\,\\text{m/s}}{1{,}5\\,\\text{m/s}^2} = 8{,}0\\,\\text{s}$\n\n**Vastaus:** $8{,}0\\,\\text{s}$, kaksi merkitsevää numeroa kuten nopeus $3{,}0\\,\\text{m/s}$ ja kiihtyvyys $1{,}5\\,\\text{m/s}^2$. Toinen juuri $-4{,}0\\,\\text{s}$ on ennen lähtöä, joten se hylätään.\n\n**Järkevyys:** Koiran paikka on $\\tfrac{1}{2} \\cdot 1{,}5\\,\\text{m/s}^2 \\cdot (8{,}0\\,\\text{s})^2 = 48\\,\\text{m}$ ja hölkkääjän $24\\,\\text{m} + 3{,}0\\,\\text{m/s} \\cdot 8{,}0\\,\\text{s} = 48\\,\\text{m}$: sama paikka. Koiran nopeus on silloin $12\\,\\text{m/s}$, nelinkertainen hölkkääjään nähden, eli koira on saavuttaessaan nopeampi, kuten pitää."
+  },
+  {
+   "id": "pesapallo",
+   "stage": "sovella",
+   "type": "numeric",
+   "title": "Pesäpallon syöttö",
+   "prompt": "Pesäpallossa lukkari syöttää pallon pystysuoraan ylös nopeudella $8{,}0\\,\\text{m/s}$. Ilmanvastusta ei huomioida, ja ylös on positiivinen suunta. Mikä on pallon nopeus $1{,}0\\,\\text{s}$ syötön jälkeen? Anna vastaus etumerkkeineen yksikössä $\\text{m/s}$.",
+   "answer": -1.81,
+   "unit": "m/s",
+   "tolerance": 0.03,
+   "hints": [
+    "Kiihtyvyys on koko lennon ajan $g$ alaspäin. Mikä on sen etumerkki, kun ylös on positiivinen?",
+    "$v = v_0 + a\\,t$, missä $a = -9{,}81\\,\\text{m/s}^2$.",
+    "Pallo saavuttaa lakipisteen hetkellä $8{,}0\\,\\text{m/s} : 9{,}81\\,\\text{m/s}^2 \\approx 0{,}82\\,\\text{s}$. Mihin suuntaan se liikkuu hetkellä $1{,}0\\,\\text{s}$?"
+   ],
+   "mistakes": [
+    {
+     "value": 1.81,
+     "feedback": "Suuruus on oikein, mutta pallo on jo ohittanut lakipisteen ja liikkuu alaspäin. Nopeuden etumerkki on silloin negatiivinen."
+    },
+    {
+     "value": 17.81,
+     "feedback": "Lisäsit putoamiskiihtyvyyden vaikutuksen. Kiihtyvyys on alaspäin eli negatiivinen, joten nopeus pienenee: $v = v_0 - g\\,t$."
+    },
+    {
+     "value": -9.81,
+     "feedback": "Unohdit alkunopeuden. Nopeus hetkellä $t$ on alkunopeus plus muutos: $v = v_0 + a\\,t$."
+    }
+   ],
+   "solution": "**Annettu:** alkunopeus $v_0 = 8{,}0\\,\\text{m/s}$ ylöspäin, aika $t = 1{,}0\\,\\text{s}$, kiihtyvyys $a = -g = -9{,}81\\,\\text{m/s}^2$ (ylös positiivinen)\n\n**Kysytty:** nopeus $v$ etumerkkeineen hetkellä $t$\n\n**Periaate:** Kun ilmanvastus jätetään huomiotta, pallon kiihtyvyys on koko lennon ajan $g$ alaspäin, myös lakipisteessä. Liike on tasaisesti kiihtyvää, ja nopeuden etumerkki kertoo suunnan (luku *Kiihtyvyys ja tasaisesti kiihtyvä liike*).\n\n**Kaava:** $v = v_0 + a\\,t = v_0 - g\\,t$\n\n**Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $v = 8{,}0\\,\\text{m/s} - 9{,}81\\,\\text{m/s}^2 \\cdot 1{,}0\\,\\text{s} = 8{,}0\\,\\text{m/s} - 9{,}81\\,\\text{m/s} = -1{,}81\\,\\text{m/s}$\n\n**Vastaus:** $v \\approx -1{,}8\\,\\text{m/s}$, eli pallo liikkuu alaspäin vauhdilla $1{,}8\\,\\text{m/s}$. Kaksi merkitsevää numeroa kuten alkunopeus $8{,}0\\,\\text{m/s}$ ja aika $1{,}0\\,\\text{s}$.\n\n**Järkevyys:** Pallo on lakipisteessä hetkellä $8{,}0\\,\\text{m/s} : 9{,}81\\,\\text{m/s}^2 \\approx 0{,}82\\,\\text{s}$, joten hetkellä $1{,}0\\,\\text{s}$ se on jo laskeutumassa ja negatiivinen etumerkki on oikea. Lakipisteen jälkeen kulunut $0{,}18\\,\\text{s}$ antaa vauhdin $9{,}81\\,\\text{m/s}^2 \\cdot 0{,}18\\,\\text{s} \\approx 1{,}8\\,\\text{m/s}$: sama tulos."
+  },
+  {
+   "id": "tarkistus-1",
+   "stage": "tarkista",
+   "type": "choice",
+   "title": "1. Käsite",
+   "prompt": "Kaksi kärryä liikkuu samalla radalla. Niiden $(t,x)$-kuvaajat leikkaavat hetkellä $3{,}0\\,\\text{s}$. Mikä väite on oikein?",
+   "choices": [
+    {
+     "text": "Kärryillä on hetkellä $3{,}0\\,\\text{s}$ sama nopeus.",
+     "feedback": "Nopeus on $(t,x)$-kuvaajan kulmakerroin. Leikkauspisteessä viivat ovat yleensä eri jyrkkiä, joten nopeudet ovat erisuuret. Samat ovat paikat. Kertaa luvussa *Kahden kappaleen liikkeiden vertailu*."
+    },
+    {
+     "text": "Kärryt törmäävät toisiinsa, koska niiden radat leikkaavat.",
+     "feedback": "$(t,x)$-kuvaaja ei ole kuva radasta. Leikkauspiste kertoo, että kärryt ovat samassa paikassa samalla hetkellä, eli ne kohtaavat tai ohittavat toisensa. Kertaa luvussa *Paikka, nopeus ja tasainen liike kuvaajina*."
+    },
+    {
+     "text": "Kärryt ovat hetkellä $3{,}0\\,\\text{s}$ samassa kohdassa.",
+     "correct": true,
+     "feedback": "Oikein. Kuvaajassa ylempänä oleva viiva tarkoittaa suurempaa paikkakoordinaattia. Kohtaamishetkellä kappaleiden kuvaajat leikkaavat toisensa: paikat ovat yhtä suuret."
+    }
+   ],
+   "practice": "Kertaa kohtaaminen luvussa [*Kahden kappaleen liikkeiden vertailu*](fy4-12.html) ja $(t,x)$-kuvaajan lukeminen luvussa [*Paikka, nopeus ja tasainen liike kuvaajina*](fy4-1.html)."
+  },
+  {
+   "id": "tarkistus-2",
+   "stage": "tarkista",
+   "type": "numeric",
+   "title": "2. Laskeminen",
+   "prompt": "Hissi lähtee levosta ja kiihtyy tasaisesti $2{,}0\\,\\text{s}$ nopeuteen $1{,}6\\,\\text{m/s}$, kulkee tällä nopeudella $8{,}0\\,\\text{s}$ ja hidastuu sitten tasaisesti $2{,}0\\,\\text{s}$ pysähdyksiin. Kuinka monta metriä hissi nousee?",
+   "answer": 16.0,
+   "unit": "m",
+   "tolerance": 0.02,
+   "hints": [
+    "Hahmottele $(t,v)$-kuvaaja. Mikä sen alue on noussut matka?",
+    "Alue on kaksi kolmiota ja suorakulmio.",
+    "$\\tfrac{1}{2} \\cdot 1{,}6\\,\\text{m/s} \\cdot 2{,}0\\,\\text{s} + 1{,}6\\,\\text{m/s} \\cdot 8{,}0\\,\\text{s} + \\tfrac{1}{2} \\cdot 1{,}6\\,\\text{m/s} \\cdot 2{,}0\\,\\text{s}$"
+   ],
+   "mistakes": [
+    {
+     "value": 19.2,
+     "feedback": "Kerroit nopeuden $1{,}6\\,\\text{m/s}$ koko ajalla $12\\,\\text{s}$. Kiihdytyksessä ja hidastuksessa nopeus on pienempi: niiden alue on kolmio."
+    },
+    {
+     "value": 12.8,
+     "feedback": "Otit mukaan vain tasaisen vaiheen. Hissi liikkuu myös kiihtyessään ja hidastuessaan."
+    },
+    {
+     "value": 14.4,
+     "feedback": "Unohdit toisen kolmion. Sekä kiihdytyksessä että hidastuksessa hissi nousee $1{,}6\\,\\text{m}$."
+    }
+   ],
+   "practice": "Kertaa siirtymä $(t,v)$-kuvaajan pinta-alana luvussa [*Kiihtyvyys ja tasaisesti kiihtyvä liike*](fy4-2.html).",
+   "solution": "**Annettu:** kiihdytys $t_1 = 2{,}0\\,\\text{s}$ nopeuteen $v = 1{,}6\\,\\text{m/s}$, tasainen vaihe $t_2 = 8{,}0\\,\\text{s}$, hidastus $t_3 = 2{,}0\\,\\text{s}$\n\n**Kysytty:** hissin siirtymä $\\Delta x$ metreinä\n\n**Periaate:** Siirtymä on $(t,v)$-kuvaajan ja aika-akselin välinen pinta-ala. Tasaisesti muuttuvan nopeuden alue on kolmio ja vakionopeuden suorakulmio (luku *Kiihtyvyys ja tasaisesti kiihtyvä liike*).\n\n**Kaava:** $\\Delta x = \\tfrac{1}{2}\\,v\\,t_1 + v\\,t_2 + \\tfrac{1}{2}\\,v\\,t_3$\n\n**Muunnokset:** Nopeus on yksikössä $\\text{m/s}$ ja ajat sekunteina, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $\\Delta x = \\tfrac{1}{2} \\cdot 1{,}6\\,\\text{m/s} \\cdot 2{,}0\\,\\text{s} + 1{,}6\\,\\text{m/s} \\cdot 8{,}0\\,\\text{s} + \\tfrac{1}{2} \\cdot 1{,}6\\,\\text{m/s} \\cdot 2{,}0\\,\\text{s} = 1{,}6\\,\\text{m} + 12{,}8\\,\\text{m} + 1{,}6\\,\\text{m} = 16{,}0\\,\\text{m}$\n\n**Vastaus:** $16\\,\\text{m}$, kaksi merkitsevää numeroa kuten nopeus $1{,}6\\,\\text{m/s}$ ja ajat.\n\n**Järkevyys:** Keskinopeus on $16\\,\\text{m} : 12\\,\\text{s} \\approx 1{,}3\\,\\text{m/s}$, vähän alle suurimman nopeuden, koska hissi kulkee täyttä vauhtia suurimman osan ajasta. $16\\,\\text{m}$ on noin viisi kerrosta, mikä sopii kerrostalon hissille."
+  },
+  {
+   "id": "tarkistus-3",
+   "stage": "tarkista",
+   "type": "explain",
+   "title": "3. Selitä",
+   "prompt": "Liikennevalojen vaihtuessa vihreiksi auto lähtee levosta ja kiihtyy tasaisesti. Sen ohi ajaa samalla hetkellä tasaisella nopeudella mopo. Opiskelija piirtää kummankin $(t,v)$-kuvaajan ja sanoo: ”Viivat leikkaavat hetkellä $4\\,\\text{s}$, joten silloin auto saavuttaa mopon.” Arvioi väite. Selitä, mitä leikkauspiste kertoo ja miten saavuttamishetken voi päätellä kuvaajasta.",
+   "criteria": [
+    "Vastaus kertoo, että $(t,v)$-kuvaajien leikkauspisteessä nopeudet ovat yhtä suuret, eivät paikat.",
+    "Vastaus kertoo, että ennen leikkauspistettä mopo on nopeampi, joten sen etumatka kasvaa ja on leikkaushetkellä suurimmillaan.",
+    "Vastaus kertoo, että siirtymä on $(t,v)$-kuvaajan pinta-ala, joten auto saavuttaa mopon, kun kuvaajien alle jäävät pinta-alat ovat yhtä suuret.",
+    "Vastaus päättelee, että saavuttaminen tapahtuu vasta myöhemmin, tässä hetkellä $8\\,\\text{s}$, jolloin auton nopeus on kaksinkertainen mopoon nähden."
+   ],
+   "model": "Väite on väärä. $(t,v)$-kuvaajien leikkauspisteessä autolla ja mopolla on sama nopeus, mutta ne eivät ole samassa paikassa. Ennen hetkeä $4\\,\\text{s}$ mopo on nopeampi, joten se etenee enemmän ja sen etumatka kasvaa. Etumatka on siis suurimmillaan juuri leikkaushetkellä. Sen jälkeen auto on nopeampi ja alkaa kuroa etumatkaa umpeen. Siirtymä on $(t,v)$-kuvaajan ja aika-akselin välinen pinta-ala, joten auto saavuttaa mopon, kun auton kolmion ala on yhtä suuri kuin mopon suorakulmion ala. Kun auto lähtee levosta, tämä tapahtuu kaksinkertaisella ajalla, hetkellä $8\\,\\text{s}$, jolloin auton nopeus on kaksi kertaa mopon nopeus. Kohtaamisen näkee suoraan vain $(t,x)$-kuvaajasta, viivojen leikkauspisteenä.",
+   "practice": "Kertaa ohitus ja suurin välimatka luvussa [*Kahden kappaleen liikkeiden vertailu*](fy4-12.html)."
+  },
+  {
+   "id": "lahtolippu",
+   "stage": "tarkista",
+   "type": "exit",
+   "text": "Lopuksi kaksi nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+  }
+ ]
+}

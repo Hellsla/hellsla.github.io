@@ -1010,6 +1010,8 @@ Aaltomalli ei kerro, mihin yksittäinen fotoni tai elektroni osuu. Se kertoo tod
 
 Ilmiötä, jossa samalla kohteella on sekä aalto- että hiukkasominaisuuksia, kutsutaan **aalto-hiukkasdualismiksi**. Se ei tarkoita, että fotoni tai elektroni vaihtaisi muotoaan. Kumpikaan vanha malli, aalto tai kuula, ei yksin kuvaa kvanttioliota. Kvanttiolio on pieni kohde, jota kvanttifysiikka kuvaa, esimerkiksi fotoni tai elektroni. Koejärjestely ratkaisee, kumpi ominaisuus näkyy. Kulkiessaan kvanttiolio käyttäytyy aallon tavoin. Kun se havaitaan, se rekisteröidään yhteen kohtaan kuin hiukkanen.
 
+<figure class="unit-photo"><img src="pics/fy8/electron-microscope.webp" alt="Tutkija säätää suurta metallista laitetta laboratoriossa."><figcaption>Elektronimikroskooppi laboratoriossa Yhdysvalloissa. Laite kuvaa näytteen elektronisuihkulla. Elektroneilla on aaltoluonne, ja siksi laite näyttää paljon pienempiä yksityiskohtia kuin valo.</figcaption></figure>
+
 ### Fotonin neljä mallia
 Fotonia kuvataan fysiikassa usealla mallilla. Jokainen malli toimii omassa ilmiöjoukossaan. Mikään niistä ei yksin kerro koko kuvaa.
 

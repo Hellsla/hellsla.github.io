@@ -196,6 +196,7 @@
     const boxes = [...li.querySelectorAll(':scope > details.answer, :scope > details.solution')];
     if (!boxes.length || !li.querySelector(':scope > .task')) return;
     const head = document.createElement('div'); head.className = 'ex-head';
+    const num = li.querySelector(':scope > .ex-num'); if (num) head.append(num);   // the running number "6-3" first (build.py number_label)
     const tag = li.querySelector(':scope > .ex-core'); if (tag) head.append(tag);
     boxes.forEach((d, i) => {
       d.id = d.id || `${li.id}-${d.classList.contains('answer') ? 'answer' : 'solution'}`;

@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: a6883821eb80f9b4
+CONTENT-HASH: ea31e34a11f88c58
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] lesson.md:299 Yleinen virhekäsitys (theory-1280-3) — "muuttaa sähköenergiaa sisäenergiakseen" differs from the neighbouring "vastuksen sisäenergiaksi" and the possessive is odd — write "muuttaa sähköenergiaa vastuksen sisäenergiaksi".
+- [Minor] Alt text and caption agree; caption sentence "Kuvan johto on eristetty kaapeli" is a clear honest note. None blocking.
 
 ## Checked
-batch delta review: opened theory-1280-1 (Kirchhoff virtalaki paragraph, figure beside it), theory-1280-3 (Yleinen virhekäsitys, potential graph), fig captures context; changed text reads fluently, layout intact.
+batch delta review: rendered the new figure.unit-photo at 390 px and 1280 px from the built page (own captures, plus fig-row-1280 to confirm the existing figures survived); photo loads, no horizontal overflow, caption and credit line legible, alt text matches the image, LaTeX in captions renders ($6{,}3\,\text{V}$, $656\,\text{nm}$, $n = 3$) with units upright; no clipping.

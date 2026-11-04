@@ -1,19 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: d9f63abcfb924693
+CONTENT-HASH: c67aaee0de94adc6
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] fig 11 (levels) — the wavy photon line starts away from the 3d→2p arrow, so the link between transition and photon is implied, not drawn; start the wavy line at the arrow tip.
-- [Minor] fig 11 (levels) — "— at most 2 e⁻" after 1s reads as a stray dash at 390 px; drop the dash or add a space.
-- [Minor] fig 9 (cloud) — the label "overlapping dots" is grey and low-contrast beside the N = 1000 panel; darken slightly.
-- [Minor] sim canvas keeps decimal comma ("0,1 nm") in English; allowed (teacher 2026-10-31), noted only.
+- [Minor] fy8-5 STM photo — on a wide screen it lands beside the Shells section while its text sits after the 1s paragraph, and the picture is only loosely related to orbitals — optionally place it later or tie the caption to the orbital cloud.
 
 ## Checked
-- contact-1; fig-2 (hero), fig-5 (string), fig-7 (nodes), fig-9 (cloud), fig-11 (levels) at 390.
-- theory-1280-1 and -3; example-390-1; sim-1280; open-exercises-1280-1.
-- Text scan: units and numbers in LaTeX with thin spaces, "." decimal, \cdot used; English fluent, one voice, terms consistent.
-
-## Scores
-illustrations 4 · typography 5 · Finnish 4 (English text reads naturally; glossary is Finnish) · accessibility 4
+batch delta review: opened the 390 px theory captures (stage-selita, whole sequence) and the 1280 theory captures around each new unit-photo; photo is sharp, caption and its $...$ maths render, credit line present, alt text informative, no clipping or horizontal overflow, surrounding figures and formulas intact.

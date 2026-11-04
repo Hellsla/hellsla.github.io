@@ -34,8 +34,8 @@ reviewing FY1–FY8 with many original exam-style tasks). Work in `fysiikkalabra
   root (they follow a commercial textbook). Write new, realistic, Finnish situations: everyday life, technology,
   nature, Finnish places, sport, the school lab. Data must be realistic and computed in Python.
 - **Exam style.** Long tasks give a situation and source material (a table, figure or short text), then parts a), b), c)
-  with points. No part names the formula or the model. Points are 12–20 per task: graph/data tasks and cross-module
-  tasks about 15–20, the rest about 12–15. The rubric uses shared criteria keys plus task-specific criteria. Every
+  with points. No part names the formula or the model. Points follow the exam (teacher 2026-11-04): the data → graph → fit → interpret
+  task is 20 p (Osa III type), every other long task 15 p (Osa II type). The rubric uses shared criteria keys plus task-specific criteria. Every
   calc part has the full step set (Annettu · Kysytty · Periaate · Kaava · Muunnokset · Sijoitus · Vastaus ·
   Järkevyys). Word parts have Kysytty · Periaate · Mallivastaus, and graph parts have Kysytty · Kuvaaja ·
   Mallivastaus with a model graph from figures.py. Every task has `### Yleisiä virheitä`.
