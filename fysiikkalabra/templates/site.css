@@ -1018,3 +1018,32 @@ body:has(main.about-page){background-image:none}
 .about-page strong{color:var(--kr-navy)}
 @media (max-width:600px){.about-page .about-hero{gap:.75rem;padding:1rem 1.1rem}.about-page .about-hero h1{gap:.5rem}.about-page .about-hero h1::before{width:16px}.about-page .about-logo{height:48px}}
 .about-page .about-tag{display:inline-block;margin:1.5rem 0 0;padding:.3rem .9rem;border-radius:999px;background:var(--kr-pink);color:var(--kr-navy);font:700 var(--fs-ui) var(--sans);letter-spacing:.01em}
+/* Käsitekartta (teacher 2026-11-04, scripts/conceptmaps.py): the module's Novak-style concept map under the chapter
+   cards, as wide as the module page. Below 48rem the map keeps a readable 760 px drawing in a box that scrolls
+   sideways (the caption says so), and "Kartta sanoina" gives the same propositions as a list for a phone and a
+   screen reader. A concept's box links to its chapter. */
+.cmap{margin:1.8rem 0 0}
+.cmap>h2{margin:0 0 .35rem}
+.cmap-focus{max-width:var(--measure);margin:0 0 .8rem;font:600 var(--fs-body)/1.45 var(--serif)}
+.cmap-focus-label{display:block;font:600 var(--fs-small)/1.3 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--accent-deep)}
+.cmap-fig{margin:0}
+.cmap-scroll{overflow-x:auto;overscroll-behavior-x:contain;border-radius:14px}
+.cmap-scroll:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+svg.cmap-svg{display:block;width:100%;height:auto}
+.cmap-fig>figcaption{max-width:var(--measure);margin:.6rem 0 0;font-size:var(--fs-small);line-height:1.5;color:var(--ink-2)}
+.cmap-scroll-hint{display:none}
+@media (max-width:47.99rem){svg.cmap-svg{width:760px;max-width:none!important}.cmap-scroll{border:1px solid var(--line)}.cmap-scroll-hint{display:inline}}
+a.cmap-node rect{transition:stroke-width .12s}
+a.cmap-node:hover rect,a.cmap-node:focus-visible rect{stroke:var(--accent);stroke-width:3.5}
+a.cmap-node:focus-visible{outline:none}
+details.cmap-text{max-width:var(--measure);margin:.9rem 0 0}
+details.cmap-text>summary{min-height:40px;display:flex;align-items:center;font:600 var(--fs-ui) var(--sans);color:var(--accent-deep);cursor:pointer}
+ul.cmap-words{margin:.4rem 0 0;padding-left:1.2rem;font-size:var(--fs-inner);line-height:1.5}
+ul.cmap-words>li{margin:.35rem 0}
+ul.cmap-words ul{margin:.1rem 0 0;padding-left:1.1rem;list-style:none}
+ul.cmap-words .cmap-phrase{font-style:italic;color:var(--ink-2)}
+a.cmap-node .fig-tex{color:#1f2933}
+.cmap-key{display:flex;flex-wrap:wrap;gap:.4rem 2rem;margin:.7rem 0 0;font-size:var(--fs-small);color:var(--ink-2)}
+.cmap-key>ul{display:flex;flex-wrap:wrap;gap:.35rem 1.1rem;margin:0;padding:0;list-style:none}
+.cmap-key li{display:flex;align-items:center;gap:.4rem}
+.cmap-key-icon{flex:none;display:block}

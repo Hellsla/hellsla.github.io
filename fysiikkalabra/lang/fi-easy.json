@@ -2996,5 +2996,19 @@
     "none": "Mikään tehtävä ei sovi valintoihin. Valitse Näytä kaikki.",
     "course_heading": "YO-sekoitin",
     "course_lead": "Kaikki ylioppilaskokeen kaltaiset tehtävät samalla sivulla. Voit valita tehtäviä tai arpoa niitä."
+  },
+  "cmap": {
+    "title": "Käsitekartta",
+    "focus": "Kartan kysymys:",
+    "region": "Moduulin käsitekartta",
+    "caption": "Lue kartta ylhäältä alas. Kaksi käsitettä ja niiden välissä oleva sana tekevät lauseen, esimerkiksi ”mittaustulos sisältää aina mittausvirheen”. Laatikon muoto kertoo, onko käsite ilmiö, suure, laki vai jokin muu. Väri kertoo, mihin aiheeseen käsite kuuluu. Katkoviiva yhdistää kartan eri osia. Kun painat käsitettä, pääset lukuun, jossa siitä kerrotaan.",
+    "scroll": "Vieritä karttaa sivulle tai avaa kartta sanoina alta.",
+    "words": "Kartta sanoina",
+    "type_ilmio": "ilmiö",
+    "type_suure": "suure",
+    "type_laki": "laki tai malli",
+    "type_kasite": "muu käsite tai työtapa",
+    "key_types": "Laatikon muoto kertoo, millainen käsite on",
+    "key_themes": "Väri kertoo aiheen"
   }
 }
