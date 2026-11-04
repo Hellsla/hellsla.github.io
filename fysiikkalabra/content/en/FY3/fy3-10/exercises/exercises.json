@@ -39,6 +39,78 @@
       "answer": 9.7,
       "unit": "mol",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-10-L1-06",
+      "level": 1,
+      "text": "What does the amount of substance $n$ describe in the equation of state of an ideal gas $pV = nRT$?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The number of particles in moles, because one mole is always the same number of particles.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The mass of the gas, because a heavier gas contains more matter and causes a higher pressure.",
+          "feedback": "Wrong: mass is obtained from the amount of substance only with the help of the molar mass, $m = nM$. There is no molar mass in the equation of state, so the type of gas does not affect the pressure."
+        },
+        {
+          "text": "The density of the gas, because in a dense gas there are more particles in the same space.",
+          "feedback": "Wrong: density is mass divided by volume. The amount of substance is the total quantity of gas, and the volume $V$ is a quantity of its own in the equation of state."
+        },
+        {
+          "text": "The number of particles in moles, because one mole is always the same number of particles.",
+          "correct": true,
+          "feedback": "Correct: $n = N/N_\\text{A}$, so the amount of substance gives the number of particles in moles. That is why the same pressure, volume and temperature mean the same amount of substance for all gases."
+        },
+        {
+          "text": "The speed of the particles, because faster particles hit the wall more often.",
+          "feedback": "Wrong: the motion of the particles is described by the temperature $T$, which is a quantity of its own in the equation. The amount of substance tells how many particles there are."
+        }
+      ]
+    },
+    {
+      "id": "fy3-10-L1-07",
+      "level": 1,
+      "text": "A balloon is filled with helium in a room where the temperature is $21\\,{}^\\circ\\text{C}$ and the air pressure is $101\\,\\text{kPa}$. The volume of the balloon is then $2.50\\,\\textsf{l}$. The balloon is taken outside, where the temperature is $-9\\,{}^\\circ\\text{C}$ and the air pressure is $98\\,\\text{kPa}$. The pressure of the gas in the balloon is always the same as the pressure of the surrounding air, and no gas escapes. What is the volume of the balloon outside, in litres?",
+      "kind": [
+        "reasoning"
+      ],
+      "answer": 2.3,
+      "unit": "l",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-10-L1-08",
+      "level": 1,
+      "text": "A student calculates the amount of substance of a gas when the pressure is $150\\,\\text{kPa}$, the volume is $0.0020\\,\\text{m}^3$ and the temperature is $300\\,\\text{K}$. The student writes\n\n$n = \\dfrac{150 \\cdot 0.0020}{8.31 \\cdot 300} = 1.2 \\cdot 10^{-4}\\,\\text{mol}$\n\nThe result seems small to the student, because two litres of gas surely contains more than a thousandth of a mole. What is the error in the calculation?",
+      "kind": [
+        "error",
+        "concept"
+      ],
+      "answer": "The pressure has been substituted in kilopascals instead of pascals, so the numerator is too small.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The pressure has been substituted in kilopascals instead of pascals, so the numerator is too small.",
+          "correct": true,
+          "feedback": "Correct: $150\\,\\text{kPa} = 150\\,000\\,\\text{Pa}$. When the pressure is in pascals, the result is $0.12\\,\\text{mol}$, which is a thousand times larger."
+        },
+        {
+          "text": "The temperature has been substituted in degrees Celsius instead of kelvins, so the denominator is too small.",
+          "feedback": "Wrong: the student substituted $T = 300\\,\\text{K}$, which is already in kelvins. If the temperature were in degrees Celsius, the result would be, on the contrary, too large."
+        },
+        {
+          "text": "The molar mass of the gas is missing from the calculation, so the amount of substance cannot be calculated from the equation of state.",
+          "feedback": "Wrong: there is no molar mass in the equation of state. The amount of substance is obtained from the pressure, the volume and the temperature, whatever the type of gas."
+        },
+        {
+          "text": "The volume has been substituted in cubic metres, although the equation of state requires it in litres.",
+          "feedback": "Wrong: the volume should be substituted in cubic metres when the pressure is in pascals. The student's volume $0.0020\\,\\text{m}^3$ is in exactly the right unit."
+        }
+      ]
     }
   ],
   "level2": [
@@ -74,6 +146,146 @@
       "answer": 0.024,
       "unit": "mol",
       "tolerance": 0.03
+    },
+    {
+      "id": "fy3-10-L2-05",
+      "level": 2,
+      "text": "A motorist suspects that the tyre of a passenger car is leaking. The motorist measures the total pressure of the air in the tyre before driving and immediately after a long drive (example data set). The volume of the tyre is assumed to stay the same.\n\na) Calculate how high the pressure in the tyre would be after the drive if no air had leaked.\n\nb) What percentage of the original amount of air in the tyre has leaked? Justify with the equation of state why measuring the pressure alone is not enough to show a leak.\n\nThe answer box takes the result of part b).",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "data": {
+        "caption": "Temperature and total pressure of the air in the tyre (example data set)",
+        "columns": [
+          "Moment",
+          "$\\theta\\,({}^\\circ\\text{C})$",
+          "$p\\,(\\text{kPa})$"
+        ],
+        "rows": [
+          [
+            "Before the drive",
+            "5.0",
+            "300"
+          ],
+          [
+            "After the drive",
+            "26.0",
+            "305"
+          ]
+        ]
+      },
+      "answer": 5.5,
+      "unit": "%",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy3-10-L2-06",
+      "level": 2,
+      "text": "Students study how the volume of air depends on temperature. The air is in a syringe that is heated and whose piston moves freely. The pressure stays at atmospheric pressure, $101\\,\\text{kPa}$, and the amount of air stays constant. The measurement results are in the table (example data set). Draw the $(T, V)$ graph and fit a line to the points. The points are usually not exactly on a line because of measurement uncertainty.\n\na) Determine the slope $\\Delta V / \\Delta T$ of the line from two points chosen on the line, not from two measurement points.\n\nb) Calculate from the slope the amount of substance $n$ of the air in the syringe in millimoles. Use the value $R = 8.31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$. Justify briefly why the line should pass through the origin when the temperature is in kelvins.\n\nThe answer box takes the result of part b).",
+      "kind": [
+        "data",
+        "graph",
+        "experiment"
+      ],
+      "data": {
+        "caption": "Volume of air at constant pressure (example data set)",
+        "columns": [
+          "$T\\,(\\text{K})$",
+          "$V\\,(\\text{cm}^3)$"
+        ],
+        "rows": [
+          [
+            "280",
+            "115.0"
+          ],
+          [
+            "300",
+            "124.1"
+          ],
+          [
+            "320",
+            "131.2"
+          ],
+          [
+            "340",
+            "140.5"
+          ],
+          [
+            "360",
+            "147.6"
+          ]
+        ]
+      },
+      "answer": 4.95,
+      "unit": "mmol",
+      "tolerance": 0.04
+    },
+    {
+      "id": "fy3-10-L2-07",
+      "level": 2,
+      "text": "The table shows the pressure of two equal amounts of gas as a function of volume (example data set). Series A and B were measured at different temperatures, and the volumes in the measurements are different. Which series was measured at the higher temperature?",
+      "kind": [
+        "data",
+        "concept"
+      ],
+      "answer": "Series B, because its product $pV$ is greater, and the temperature of the same amount of gas is proportional to it.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Series A, because its pressure $p$ is lower, and a low pressure means faster-moving particles.",
+          "feedback": "Wrong: pressure also depends on the volume and the amount of substance. To compare temperatures the product $pV$ is needed, and it is smaller in series A."
+        },
+        {
+          "text": "Series B, because its product $pV$ is greater, and the temperature of the same amount of gas is proportional to it.",
+          "correct": true,
+          "feedback": "Correct: the amount of gas is the same, so $pV = nRT$ gives a greater $T$ for the series whose product $pV$ is greater. In series B the product is about $305\\,\\text{kPa} \\cdot \\textsf{l}$ and in series A about $244\\,\\text{kPa} \\cdot \\textsf{l}$."
+        },
+        {
+          "text": "Series A, because its pressure falls more slowly as the volume increases, so the gas is warmer.",
+          "feedback": "Wrong: in both series the product $pV$ stays constant, so the pressure decreases in the same way as the volume increases, in inverse proportion. How fast the pressure decreases does not tell the temperature."
+        },
+        {
+          "text": "It cannot be deduced, because the volumes of the series are different and the pressure decreases in both.",
+          "feedback": "Wrong: the volumes can be taken into account by calculating the product $pV$. It is directly proportional to the temperature, so the temperatures can be compared even if the volumes are of different sizes."
+        }
+      ],
+      "data": {
+        "caption": "Pressure and volume of the same amount of gas at two temperatures (example data set)",
+        "columns": [
+          "$V_\\text{A}\\,(\\textsf{l})$",
+          "$p_\\text{A}\\,(\\text{kPa})$",
+          "$V_\\text{B}\\,(\\textsf{l})$",
+          "$p_\\text{B}\\,(\\text{kPa})$"
+        ],
+        "rows": [
+          [
+            "1.0",
+            "244",
+            "1.5",
+            "203"
+          ],
+          [
+            "2.0",
+            "122",
+            "2.5",
+            "122"
+          ],
+          [
+            "3.0",
+            "81",
+            "3.5",
+            "87"
+          ],
+          [
+            "4.0",
+            "61",
+            "4.5",
+            "68"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -99,6 +311,87 @@
       "text": "The compressed air tank of a car workshop's compressor has a volume of $200.0\\,\\textsf{l}$. In the evening the pressure gauge of the tank shows $10.0\\,\\text{bar}$, but in the morning only $7.0\\,\\text{bar}$, because air leaks from a joint. The gauge shows gauge pressure, that is, how much greater the pressure in the tank is than atmospheric pressure ($1\\,\\text{bar}$ = $100\\,\\text{kPa}$). The temperature of the workshop is $18\\,{}^\\circ\\text{C}$ the whole time. How many kilograms of air leaked from the tank during the night? The molar mass of air is $29\\,\\text{g/mol}$, and $R = 8.31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$. Justify why in this calculation the readings of the gauge can be used without adding atmospheric pressure to them.",
       "answer": 0.72,
       "unit": "kg",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-10-L3-04",
+      "level": 3,
+      "text": "At a party, balloons are filled from a helium cylinder whose volume is $20.0\\,\\textsf{l}$. The cylinder was first in a cold storeroom and was then used indoors in two stages. The table shows the total pressure indicated by the pressure gauge in bars ($1\\,\\text{bar} = 100\\,\\text{kPa}$) at three moments (example data set). The temperature of the gas in the cylinder is always the same as that of the surroundings, and the cylinder does not leak. Treat the helium as an ideal gas and use the value $R = 8.31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$. The amount of helium that goes into one filled balloon is such that the balloon takes up a volume of $5.0\\,\\textsf{l}$ at atmospheric pressure $101\\,\\text{kPa}$ and temperature $21.0\\,{}^\\circ\\text{C}$.\n\na) Calculate the amount of substance of helium in the cylinder at moments 1, 2 and 3.\n\nb) Calculate the mass of helium used between moments 1 and 3. The molar mass is $M = 4.0\\,\\tfrac{\\text{g}}{\\text{mol}}$. Explain why the amount used cannot be calculated directly from the difference of the pressures.\n\nc) How many balloons were filled with the helium used? How many more balloons can be obtained from the cylinder when it is used until the pressure has fallen to atmospheric pressure $101\\,\\text{kPa}$?\n\nThe answer box takes the mass of part b).",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "data": {
+        "caption": "Temperature and total pressure of the helium cylinder (example data set)",
+        "columns": [
+          "Moment",
+          "$\\theta\\,({}^\\circ\\text{C})$",
+          "$p\\,(\\text{bar})$"
+        ],
+        "rows": [
+          [
+            "1 (storeroom, before use)",
+            "5.0",
+            "14.2"
+          ],
+          [
+            "2 (indoors, after stage 1)",
+            "21.0",
+            "11.0"
+          ],
+          [
+            "3 (indoors, after stage 2)",
+            "21.0",
+            "6.5"
+          ]
+        ]
+      },
+      "answer": 28,
+      "unit": "g",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy3-10-L3-05",
+      "level": 3,
+      "text": "A weather balloon is filled with helium at ground level, and its volume is then $2.50\\,\\text{m}^3$. The table shows the pressure and temperature of the atmosphere at different heights (ICAO standard atmosphere, rounded). Assume that the pressure and temperature of the gas in the balloon are always the same as those of the surrounding air, that no gas escapes and that the balloon rises. Use the value $R = 8.31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$.\n\na) Calculate the amount of substance of helium in the balloon at ground level.\n\nb) Calculate the volume of the balloon at a height of $10\\,\\text{km}$.\n\nc) The envelope of the balloon withstands a volume of at most $12.0\\,\\text{m}^3$. Calculate the volume at a height of $15\\,\\text{km}$ and estimate up to what height the balloon withstands: assume the volume is linear with respect to height between the heights $10\\,\\text{km}$ and $15\\,\\text{km}$. Explain why the volume increases even though the gas cools.\n\nThe answer box takes the volume of part b).",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "data": {
+        "caption": "Standard atmosphere (ICAO, rounded)",
+        "columns": [
+          "$h\\,(\\text{km})$",
+          "$p\\,(\\text{kPa})$",
+          "$\\theta\\,({}^\\circ\\text{C})$"
+        ],
+        "rows": [
+          [
+            "0",
+            "101",
+            "15.0"
+          ],
+          [
+            "5",
+            "54.0",
+            "-17.5"
+          ],
+          [
+            "10",
+            "26.5",
+            "-50.0"
+          ],
+          [
+            "15",
+            "12.1",
+            "-56.5"
+          ]
+        ]
+      },
+      "answer": 7.4,
+      "unit": "m³",
       "tolerance": 0.02
     }
   ]
