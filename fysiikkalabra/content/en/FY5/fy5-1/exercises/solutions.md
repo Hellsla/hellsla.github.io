@@ -49,6 +49,26 @@
 **Answer:** $0.30\,\text{m}$, two significant figures like the moment $18\,\text{Nm}$ and the force $60\,\text{N}$.
 **Reasonableness:** Check: $60\,\text{N}\cdot 0.30\,\text{m} = 18\,\text{Nm}$. The numerical value of the moment is smaller than that of the force, so the lever arm must be less than a metre.
 
+## fy5-1-L1-06
+**Find:** why the handle of a door is far from the hinges.
+**Principle:** The door rotates about an axis through the hinges, so the turning effect of a push is given by the moment $M = Fr$. When the push is perpendicular to the door, the lever arm $r$ is the distance of the point of the push from the hinges. The door starts to turn when the moment is large enough.
+**Model answer:** A long lever arm gives a larger moment, so the door turns with a smaller push. For example, a push of $10\,\text{N}$ at $0.80\,\text{m}$ from the hinges gives a moment of $8.0\,\text{Nm}$, but the same push at $0.10\,\text{m}$ from the hinges gives only $1.0\,\text{Nm}$. The magnitude of the force does not grow with the distance and the weight of the door does not change, and if the line of action passed through the hinges, the lever arm would be zero and the door would not turn.
+
+## fy5-1-L1-07
+**Find:** the moment $M$ of the string's force about the hinges.
+**Principle:** The moment is $M = Fr$, and the lever arm $r$ is the perpendicular distance of the axis of rotation from the line of action of the force. The string pulls the handle in the plane of the door towards the hinges, so the line of action is a line in the plane of the door that passes through the hinges.
+**Model answer:** The distance of the hinges from the line of action is zero, so the lever arm is $r = 0$ and the moment is $M = 30\,\text{N}\cdot 0\,\text{m} = 0\,\text{Nm}$. The string pulls the door towards the hinges and does not turn it, although the force is $30\,\text{N}$ and the handle is $0.80\,\text{m}$ from the hinges. The distance to the handle would be the lever arm only if the force were perpendicular to the door, and then the moment would be $24\,\text{Nm}$. A moment is also not the same thing as a force, but the product of the force and the lever arm.
+
+## fy5-1-L1-08
+**Given:** force $F = 15\,\text{N}$ perpendicular to the rod, lever arm $r = 0.60\,\text{m}$, direction of rotation clockwise
+**Find:** moment $M$ of the force about the axis $O$ in the unit $\text{Nm}$, anticlockwise positive
+**Principle:** The turning effect of a force is given by its moment $M = Fr$. The force is perpendicular to the rod, so the lever arm is the distance from the axis. By convention, a moment that turns clockwise is negative.
+**Formula:** $M = -Fr$, because the force turns clockwise
+**Conversions:** The force is in newtons and the distance in metres, so no conversions are needed.
+**Substitution:** $M = -15\,\text{N}\cdot 0.60\,\text{m} = -9.0\,\text{Nm}$
+**Answer:** $-9.0\,\text{Nm}$, two significant figures like the force $15\,\text{N}$ and the distance $0.60\,\text{m}$. The minus sign tells the direction of rotation.
+**Reasonableness:** Estimate with rounded numbers: $15\,\text{N}\cdot 0.6\,\text{m} = 9\,\text{Nm}$, like the magnitude of the result. The sign is negative because the rotation is clockwise. If the same force turned the rod anticlockwise, the moment would be $+9.0\,\text{Nm}$.
+
 ## fy5-1-L2-01
 **Given:** tension of the string $F = 40\,\text{N}$, distance of the handle from the hinges $d = 0.75\,\text{m}$, angle of the string to the plane of the door $\alpha = 35^\circ$
 **Find:** moment $M$ of the string's force about the hinges in the unit $\text{Nm}$
@@ -89,6 +109,36 @@
 **Answer:** $231\,\text{N} \approx 2.3 \cdot 10^{2}\,\text{N}$, two significant figures like the moment $50\,\text{Nm}$ and the length $0.25\,\text{m}$.
 **Reasonableness:** With a perpendicular pull, $50\,\text{Nm} : 0.25\,\text{m} = 200\,\text{N}$ would be enough. An oblique pull needs more, because the lever arm is only $\sin 60^\circ \approx 0.87$ times the length of the lever: $200\,\text{N} : 0.87 \approx 230\,\text{N}$, the same as $231\,\text{N}$ to the accuracy of the roundings.
 
+## fy5-1-L2-05
+**Given:** a series of measurements from the table: lever arm $r$ and the smallest force $F$ with which the nut starts to turn (five measurements); the force is perpendicular to the handle
+**Find:** the moment $M$ needed to loosen the nut in the unit $\text{Nm}$
+**Principle:** The force is perpendicular to the handle, so the lever arm is $r$ and the moment is $M = Fr$. The nut always starts to turn with the same moment, so the product $Fr$ of every measurement should be the same. The measurements vary a little, so the moment is estimated as the mean of the products.
+**Formula:** $M_i = F_i r_i$ for each measurement, and $M = \dfrac{M_1 + M_2 + \ldots + M_5}{5}$
+**Conversions:** The forces are in newtons and the lever arms in metres, so no conversions are needed.
+**Substitution:** The products are $251\,\text{N}\cdot 0.10\,\text{m} = 25.1\,\text{Nm}$, $170\,\text{N}\cdot 0.15\,\text{m} = 25.5\,\text{Nm}$, $126\,\text{N}\cdot 0.20\,\text{m} = 25.2\,\text{Nm}$, $83\,\text{N}\cdot 0.30\,\text{m} = 24.9\,\text{Nm}$ and $62\,\text{N}\cdot 0.40\,\text{m} = 24.8\,\text{Nm}$. The sum is $125.5\,\text{Nm}$, so $M = 125.5\,\text{Nm} : 5 = 25.1\,\text{Nm}$.
+**Answer:** $25\,\text{Nm}$, two significant figures like the lever arms $r$. The products are almost the same, so the force is inversely proportional to the lever arm: doubling the lever arm halves the required force.
+**Reasonableness:** The variation of the products is only about $\pm 0.4\,\text{Nm}$, that is, less than $2\,\%$, which fits the random variation of measurements. The lever arm $0.10\,\text{m}$ is a third of the lever arm $0.30\,\text{m}$, and the force $251\,\text{N}$ is about three times the force $83\,\text{N}$: $251 : 83 \approx 3.0$. The moment $25\,\text{Nm}$ is of the order of tens of newton metres, like ordinary tightening moments of nuts.
+
+## fy5-1-L2-06
+**Given:** from the table, masses $m_A = 200\,\text{g}$, $m_B = 100\,\text{g}$ (on the left, distances $0.300\,\text{m}$ and $0.100\,\text{m}$) and $m_C = 120\,\text{g}$, $m_D = 50.0\,\text{g}$ (on the right, distances $0.400\,\text{m}$ and $0.200\,\text{m}$); $g = 9.81\,\text{m/s}^2$
+**Find:** the net moment $\Sigma M$ of the weights of the masses about the axis in the unit $\text{Nm}$, anticlockwise positive, and the direction in which the stick starts to turn
+**Principle:** The weights of the masses are vertical and the stick is horizontal, so the lever arm of each force is the distance of the mass from the axis. The net moment is the sum of the moments with their signs. On the left of the axis, a weight pulling down turns the stick anticlockwise (positive), and on the right clockwise (negative).
+**Formula:** $G = mg$ and $M = Gr$, so $\Sigma M = g\,(m_A r_A + m_B r_B - m_C r_C - m_D r_D)$
+**Conversions:** The masses are converted to kilograms and the distances to metres: $m_A = 0.200\,\text{kg}$, $m_B = 0.100\,\text{kg}$, $m_C = 0.120\,\text{kg}$, $m_D = 0.0500\,\text{kg}$ and $r_A = 0.300\,\text{m}$, $r_B = 0.100\,\text{m}$, $r_C = 0.400\,\text{m}$, $r_D = 0.200\,\text{m}$.
+**Substitution:** The products on the left are $0.200\cdot 0.300 + 0.100\cdot 0.100 = 0.0700\,\text{kg}\cdot\text{m}$ and on the right $0.120\cdot 0.400 + 0.0500\cdot 0.200 = 0.0580\,\text{kg}\cdot\text{m}$. The difference is $0.0700\,\text{kg}\cdot\text{m} - 0.0580\,\text{kg}\cdot\text{m} = 0.0120\,\text{kg}\cdot\text{m}$, so $\Sigma M = 9.81\,\text{m/s}^2\cdot 0.0120\,\text{kg}\cdot\text{m} = 0.1177\,\text{Nm}$.
+**Answer:** $0.118\,\text{Nm}$ anticlockwise, three significant figures like the masses and the distances. The net moment is positive, so the stick starts to turn anticlockwise, that is, the left end goes down.
+**Reasonableness:** The moment of the weights on the left is $9.81\cdot 0.0700 = 0.687\,\text{Nm}$ and on the right $9.81\cdot 0.0580 = 0.569\,\text{Nm}$. They are close to each other, so their difference $0.118\,\text{Nm}$ is much smaller than either. The moment is larger on the left, so the result is positive.
+
+## fy5-1-L2-07
+**Given:** force $F = 90\,\text{N}$ perpendicular to the handle, measured distance from the edge of the head of the spanner to the hand $0.270\,\text{m}$, centre of the nut $0.030\,\text{m}$ from the edge towards the hand
+**Find:** the moment $M$ of the force about the axis of the nut in the unit $\text{Nm}$ and the student's error
+**Principle:** The lever arm is measured from the axis of rotation, which is the centre of the nut, not from the edge of the spanner. The student measured the length from the edge of the spanner, so the measurement includes the distance $0.030\,\text{m}$ from the edge to the axis, which is on the other side of the axis and is not part of the lever arm. The force is perpendicular to the handle, so the correct lever arm is the distance from the axis to the hand.
+**Formula:** $r = d - e$ and $M = Fr$, so $M = F\,(d - e)$, where $d$ is the measured length and $e$ the distance from the edge to the axis
+**Conversions:** All lengths are in metres, so no conversions are needed.
+**Substitution:** $r = 0.270\,\text{m} - 0.030\,\text{m} = 0.240\,\text{m}$ and $M = 90\,\text{N}\cdot 0.240\,\text{m} = 21.6\,\text{Nm}$
+**Answer:** $21.6\,\text{Nm} \approx 22\,\text{Nm}$, two significant figures like the force $90\,\text{N}$. The student's error was to measure the lever arm from the edge of the spanner and not from the axis of rotation, so the lever arm and the moment came out too large.
+**Reasonableness:** The correct lever arm is shorter than the measured one, so the correct moment is smaller than the student's result: $21.6\,\text{Nm} < 24.3\,\text{Nm}$. Check: $90\,\text{N}\cdot 0.240\,\text{m}$ is about $90\cdot 0.24 \approx 22$, and the size of the error is $90\,\text{N}\cdot 0.030\,\text{m} = 2.7\,\text{Nm}$, the same as the difference $24.3\,\text{Nm} - 21.6\,\text{Nm}$.
+
 ## fy5-1-L3-01
 **Given:** force of the foot $F = 500\,\text{N}$ straight down, distance of the pedal from the axis $d = 0.175\,\text{m}$, crank $45^\circ$ below the horizontal
 **Find:** moment $M$ of the force about the axis of the crank in the unit $\text{Nm}$, and the positions in which the moment is greatest and zero
@@ -118,3 +168,23 @@
 **Substitution:** $\Sigma F = 120\,\text{N} - 120\,\text{N} = 0$ and $\Sigma M = 2\cdot 120\,\text{N}\cdot 0.20\,\text{m} = 48\,\text{Nm}$
 **Answer:** The sum of the forces is zero, and the net moment is $48\,\text{Nm}$ anticlockwise, two significant figures like the distance $0.20\,\text{m}$.
 **Reasonableness:** One hand would produce $24\,\text{Nm}$, so two hands rotating in the same direction give twice the moment. Because the sum of the forces is zero, the wheel brace only rotates and does not push the bolt sideways, which is the advantage of a wheel brace over turning with one hand.
+
+## fy5-1-L3-04
+**Given:** pedal force $F_\text{pedal} = 450\,\text{N}$ perpendicular to the crank, length of the crank $d = 0.175\,\text{m}$, radius of the front sprocket $R = 0.100\,\text{m}$, radius of the rear sprocket in gear 1 from the table $r_1 = 9.00\,\text{cm}$ (in gears 2 and 3 $6.00\,\text{cm}$ and $4.00\,\text{cm}$)
+**Find:** the force of the chain $F_\text{chain}$ and its moment $M$ about the axis of the rear wheel in gear 1 in the unit $\text{Nm}$; the moments in gears 2 and 3
+**Principle:** The moment of the pedal force about the axis of the crank is $M = Fr$. In the problem the crank and the front sprocket rotate steadily, so the moment of the pedal force and the moment of the chain force are equal (and opposite in direction). The force of the chain is the same at both sprockets, so the moment on the rear wheel is this force times the radius of the rear sprocket.
+**Formula:** $M_\text{pedal} = F_\text{pedal} d$ and $M_\text{pedal} = F_\text{chain} R$, so $F_\text{chain} = \dfrac{F_\text{pedal} d}{R}$; for the rear wheel $M = F_\text{chain} r$
+**Conversions:** The radii of the rear sprocket are converted to metres: $r_1 = 9.00\,\text{cm} = 0.0900\,\text{m}$, $r_2 = 0.0600\,\text{m}$ and $r_3 = 0.0400\,\text{m}$.
+**Substitution:** The moment of the crank is $M_\text{pedal} = 450\,\text{N}\cdot 0.175\,\text{m} = 78.75\,\text{Nm}$, and the force of the chain is $F_\text{chain} = \dfrac{78.75\,\text{Nm}}{0.100\,\text{m}} = 787.5\,\text{N}$. In gear 1: $M = 787.5\,\text{N}\cdot 0.0900\,\text{m} = 70.875\,\text{Nm}$, in gear 2: $787.5\,\text{N}\cdot 0.0600\,\text{m} = 47.25\,\text{Nm}$ and in gear 3: $787.5\,\text{N}\cdot 0.0400\,\text{m} = 31.5\,\text{Nm}$.
+**Answer:** $70.9\,\text{Nm}$, three significant figures like the given data. The force of the chain is $788\,\text{N}$, and the moments in gears 2 and 3 are $47.3\,\text{Nm}$ and $31.5\,\text{Nm}$. For a steep uphill gear 1 is chosen, because the largest rear sprocket gives the greatest moment on the rear wheel with the same pedal force, and the bicycle needs a large moment uphill. The price is a lower speed: a large rear sprocket makes the wheel turn more slowly at the same pedalling rate. With a small rear sprocket the moment is correspondingly smaller but the speed higher.
+**Reasonableness:** The lever arm of the crank is larger than the radius of the front sprocket, so the force of the chain is larger than the pedal force: $450\,\text{N}\cdot 1.75 = 787.5\,\text{N}$. The radius of the rear sprocket is $0.90$ times the radius of the front sprocket, so $78.75\,\text{Nm}\cdot 0.90 = 70.9\,\text{Nm}$. The order of magnitude is sensible: a radius of $9\,\text{cm}$ is a large rear sprocket, and the moment it gives is only slightly smaller than the moment of the crank.
+
+## fy5-1-L3-05
+**Given:** required moment $M = 60.0\,\text{Nm}$, from the table spanners A: $d = 0.250\,\text{m}$, $\alpha = 90^\circ$; B: $d = 0.400\,\text{m}$, $\alpha = 65^\circ$; C: $d = 0.600\,\text{m}$, $\alpha = 30^\circ$; the greatest force of the person $170\,\text{N}$
+**Find:** the smallest force $F$ required by each spanner in the unit $\text{N}$ and the force required by the spanner to be chosen
+**Principle:** The nut starts to turn when the moment is at least $60.0\,\text{Nm}$. The angle $\alpha$ is the angle between the force and the extension of the handle, so the lever arm of the force is $r = d\sin\alpha$, and the smallest force is obtained when the moment is exactly $60.0\,\text{Nm}$. What decides how good a spanner is, is the lever arm $r$, not the length $d$ alone.
+**Formula:** $M = Fd\sin\alpha$, so $F = \dfrac{M}{d\sin\alpha}$
+**Conversions:** The lengths are in metres and the moment in newton metres, so no conversions are needed.
+**Substitution:** Spanner A: $r = 0.250\,\text{m}\cdot\sin 90^\circ = 0.250\,\text{m}$ and $F = 60.0\,\text{Nm} : 0.250\,\text{m} = 240\,\text{N}$. Spanner B: $r = 0.400\,\text{m}\cdot\sin 65^\circ = 0.3625\,\text{m}$ and $F = 60.0\,\text{Nm} : 0.3625\,\text{m} = 165.5\,\text{N}$. Spanner C: $r = 0.600\,\text{m}\cdot\sin 30^\circ = 0.300\,\text{m}$ and $F = 60.0\,\text{Nm} : 0.300\,\text{m} = 200\,\text{N}$.
+**Answer:** $166\,\text{N}$ with spanner B, three significant figures like the moment and the length. Only spanner B is usable, because spanners A and C would need $240\,\text{N}$ and $200\,\text{N}$. The longest spanner C is not the best, because of the oblique pull its lever arm $0.300\,\text{m}$ is shorter than the lever arm of spanner B.
+**Reasonableness:** With a perpendicular pull the longest spanner would need only $60.0\,\text{Nm} : 0.600\,\text{m} = 100\,\text{N}$, but the angle $30^\circ$ halves its lever arm. Check: $165.5\,\text{N}\cdot 0.3625\,\text{m} = 60.0\,\text{Nm}$, and $166\,\text{N} < 170\,\text{N}$.

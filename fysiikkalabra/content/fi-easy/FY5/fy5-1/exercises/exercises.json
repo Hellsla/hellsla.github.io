@@ -40,6 +40,73 @@
       "answer": 0.3,
       "unit": "m",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-1-L1-06",
+      "level": 1,
+      "text": "Oven kahva on yleensä mahdollisimman kaukana saranoista. Mikä seuraavista perustelee tämän oikein?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Pitkä varsi antaa suuremman momentin, joten ovi kiertyy pienemmällä työntövoimalla.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Kahvan luona sama työntövoima on suurempi, joten ovi lähtee liikkeelle helpommin kuin muualta.",
+          "feedback": "Voiman suuruus ei muutu sen mukaan, mistä kohdasta ovea työnnetään. Käsi työntää samalla voimalla mihin tahansa. Kahvan etäisyys saranoista vaikuttaa varteen eli siihen, kuinka suuri momentti samasta voimasta syntyy."
+        },
+        {
+          "text": "Kahvan luona ovi painaa vähemmän, joten sen kiertämiseen tarvitaan pienempi työntövoima.",
+          "feedback": "Oven paino ei muutu, vaikka sitä työnnettäisiin eri kohdasta. Ratkaisevaa ei ole oven paino. Ratkaisevaa on, kuinka suuri momentti työntövoimasta saranoiden suhteen syntyy: $M = Fr$."
+        },
+        {
+          "text": "Pitkä varsi antaa suuremman momentin, joten ovi kiertyy pienemmällä työntövoimalla.",
+          "correct": true,
+          "feedback": "Oikein: momentti on $M = Fr$. Kun varsi $r$ on pitkä, tarvittava momentti saadaan pienellä voimalla. Siksi kahva on oven reunassa. Saranoiden vieressä työntäminen vaatisi paljon suuremman voiman."
+        },
+        {
+          "text": "Kahvan luona voiman vaikutussuora kulkee saranoiden kautta, joten vääntövaikutus kasvaa.",
+          "feedback": "Kun vaikutussuora kulkee kiertoakselin kautta, varsi on nolla. Silloin voima ei kierrä ovea lainkaan. Kohtisuoraan työnnettäessä vaikutussuora kulkee kahvan kautta ja on kohtisuorassa oveen nähden. Sen etäisyys saranoista on varsi."
+        }
+      ]
+    },
+    {
+      "id": "fy5-1-L1-07",
+      "level": 1,
+      "text": "Oven kahvaa vedetään narulla $30\\,\\text{N}$:n voimalla. Naru kulkee oven tasossa saranoiden suuntaan eli vetää kahvaa kohti saranoita. Naru on oven reunan suuntainen ja kiinnitetty kahvaan. Kahva on $0{,}80\\,\\text{m}$:n päässä saranoista. Mikä on narun voiman momentti saranoiden suhteen?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "$0\\,\\text{Nm}$, koska voiman vaikutussuora kulkee saranoiden kautta, jolloin varsi on nolla.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "$24\\,\\text{Nm}$, koska varsi on kahvan etäisyys saranoista, vaikka voiman suunta on oven suuntainen.",
+          "feedback": "Varsi ei ole etäisyys otekohtaan. Varsi on kiertoakselin kohtisuora etäisyys voiman vaikutussuorasta. Tässä vaikutussuora kulkee saranoiden kautta, joten varsi ei ole $0{,}80\\,\\text{m}$."
+        },
+        {
+          "text": "$0\\,\\text{Nm}$, koska voiman vaikutussuora kulkee saranoiden kautta, jolloin varsi on nolla.",
+          "correct": true,
+          "feedback": "Oikein: naru vetää ovea sen omassa tasossa kohti saranoita. Vaikutussuora kulkee kiertoakselin kautta, ja varsi on $r = 0$. Silloin $M = Fr = 0$. Voima ei kierrä ovea lainkaan, vaikka se on suuri."
+        },
+        {
+          "text": "$30\\,\\text{Nm}$, koska momentin lukuarvo on yhtä suuri kuin voiman, kun voima vaikuttaa kahvaan.",
+          "feedback": "Momentti ei ole sama asia kuin voima. Momentti on voiman ja varren tulo $M = Fr$, ja sen yksikkö on $\\text{Nm}$. Tässä varsi on nolla, joten momentti ei voi olla $30\\,\\text{Nm}$."
+        }
+      ]
+    },
+    {
+      "id": "fy5-1-L1-08",
+      "level": 1,
+      "text": "Sauva kiertyy akselin $O$ ympäri. Sauvaan vaikuttaa $0{,}60\\,\\text{m}$:n päässä akselista $15\\,\\text{N}$:n voima kohtisuoraan sauvaa vastaan. Voima kiertää sauvaa myötäpäivään.\n\nKuinka suuri on voiman momentti akselin $O$ suhteen? Vastapäivään kiertävä momentti on positiivinen. Anna vastaus etumerkkeineen.",
+      "kind": [
+        "reasoning"
+      ],
+      "answer": -9.0,
+      "unit": "Nm",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -74,6 +141,104 @@
       "answer": 231,
       "unit": "N",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-1-L2-05",
+      "level": 2,
+      "text": "Juuttunutta mutteria avataan kiintoavaimella. Voima-anturi mittaa pienimmän voiman, jolla mutteri lähtee kiertymään. Voima vaikuttaa kohtisuoraan vartta vastaan eri etäisyyksillä $r$ mutterin keskeltä (esimerkkiaineisto).\n\nLaske jokaisesta mittauksesta tulo $Fr$ ja päättele, mitä tulot kertovat. Kuinka suuri momentti mutterin avaamiseen tarvitaan? Anna vastaus kahden merkitsevän numeron tarkkuudella.",
+      "kind": [
+        "data",
+        "experiment"
+      ],
+      "answer": 25,
+      "unit": "Nm",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Mutterin avaaminen eri varsilla (esimerkkiaineisto)",
+        "columns": [
+          "$r\\,(\\text{m})$",
+          "$F\\,(\\text{N})$"
+        ],
+        "rows": [
+          [
+            "0.10",
+            "251"
+          ],
+          [
+            "0.15",
+            "170"
+          ],
+          [
+            "0.20",
+            "126"
+          ],
+          [
+            "0.30",
+            "83"
+          ],
+          [
+            "0.40",
+            "62"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy5-1-L2-06",
+      "level": 2,
+      "text": "Kevyen mittakepin keskikohta on kiinnitetty akseliin, ja keppi on vaakasuorassa. Kepistä riippuu punnuksia akselin vasemmalla ja oikealla puolella. Taulukossa ovat punnusten massat ja etäisyydet akselista (esimerkkiaineisto). Kepin oma massa jätetään huomiotta. Käytä arvoa $g = 9{,}81\\,\\text{m/s}^2$.\n\na) Laske punnusten painojen kokonaismomentti akselin suhteen. Vastapäivään kiertävä momentti on positiivinen.\n\nb) Mihin suuntaan keppi alkaa kiertyä?\n\nVastauslaatikkoon tulee kohdan a) tulos.",
+      "kind": [
+        "data"
+      ],
+      "answer": 0.118,
+      "unit": "Nm",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Mittakepin punnukset (esimerkkiaineisto)",
+        "columns": [
+          "Punnus",
+          "$m\\,(\\text{g})$",
+          "Puoli",
+          "$r\\,(\\text{cm})$"
+        ],
+        "rows": [
+          [
+            "A",
+            "200",
+            "vasen",
+            "30.0"
+          ],
+          [
+            "B",
+            "100",
+            "vasen",
+            "10.0"
+          ],
+          [
+            "C",
+            "120",
+            "oikea",
+            "40.0"
+          ],
+          [
+            "D",
+            "50.0",
+            "oikea",
+            "20.0"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy5-1-L2-07",
+      "level": 2,
+      "text": "Oppilas määrittää momentin, jolla hän kiristää mutteria kiintoavaimella. Hän vetää avaimen vartta kohtisuoraan $90\\,\\text{N}$:n voimalla. Hän mittaa mittanauhalla etäisyyden avaimen pään uloimmasta reunasta käteen: $0{,}270\\,\\text{m}$. Mutterin keskikohta eli kiertoakseli on kuitenkin $0{,}030\\,\\text{m}$:n päässä tästä reunasta kohti kättä. Oppilas laskee $M = 90\\,\\text{N}\\cdot 0{,}270\\,\\text{m} = 24{,}3\\,\\text{Nm}$.\n\na) Mikä virhe oppilaan laskussa on?\n\nb) Kuinka suuri on voiman momentti mutterin akselin suhteen oikein laskettuna?\n\nVastauslaatikkoon tulee kohdan b) tulos.",
+      "kind": [
+        "error"
+      ],
+      "answer": 21.6,
+      "unit": "Nm",
+      "tolerance": 0.02
     }
   ],
   "level3": [
@@ -100,6 +265,77 @@
       "answer": 48,
       "unit": "Nm",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-1-L3-04",
+      "level": 3,
+      "text": "Pyöräilijä painaa poljinta $450\\,\\text{N}$:n voimalla kohtisuoraan kampea vastaan. Kammen pituus on $0{,}175\\,\\text{m}$ ja etuhammaspyörän säde $0{,}100\\,\\text{m}$. Ketju vetää etuhammaspyörää sen kehällä. Ketju välittää voiman takahammaspyörään. Sen säde riippuu vaihteesta (esimerkkiaineisto, taulukko). Takahammaspyörä on kiinni takapyörässä. Vain ketjun vedettävän puolen voima otetaan huomioon, ja sen suuruus on sama kummassakin hammaspyörässä. Kitka jätetään huomiotta. Kampi ja etuhammaspyörä pyörivät tasaisesti. Siksi polkimen voiman momentti ja ketjun voiman momentti kammen akselin suhteen ovat yhtä suuret (ja vastakkaissuuntaiset).\n\na) Kuinka suuri on ketjun voima?\n\nb) Kuinka suuri on ketjun voiman momentti takapyörän akselin suhteen vaihteella 1?\n\nc) Laske momentti myös vaihteilla 2 ja 3. Perustele, minkä vaihteen valitset jyrkkään ylämäkeen.\n\nVastauslaatikkoon tulee kohdan b) tulos.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 70.9,
+      "unit": "Nm",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Takahammaspyörän säde eri vaihteilla (esimerkkiaineisto)",
+        "columns": [
+          "Vaihde",
+          "$r_{\\text{taka}}\\,(\\text{cm})$"
+        ],
+        "rows": [
+          [
+            "1",
+            "9.00"
+          ],
+          [
+            "2",
+            "6.00"
+          ],
+          [
+            "3",
+            "4.00"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy5-1-L3-05",
+      "level": 3,
+      "text": "Auton pyöränmutteri lähtee kiertymään vasta, kun käden voiman momentti mutterin keskikohdan suhteen on vähintään $60{,}0\\,\\text{Nm}$. Ahtaassa tilassa avainta voi vetää vain taulukon osoittamassa kulmassa. Taulukossa on kolmen avaimen otekohdan etäisyys $d$ mutterin keskeltä. Siinä on myös kulma $\\alpha$, jonka vetosuunta muodostaa varren jatkeen kanssa (esimerkkiaineisto). Tilanne tutkitaan tasossa, ja voima vaikuttaa aina otekohdassa.\n\nHenkilö jaksaa vetää enintään $170\\,\\text{N}$:n voimalla.\n\na) Laske kunkin avaimen vaatima pienin voima.\n\nb) Mitä avainta käytät? Perustele valinta ja selitä, miksi pisin avain ei ole paras.\n\nVastauslaatikkoon tulee valitun avaimen vaatima pienin voima.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 166,
+      "unit": "N",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Kolme avainta ahtaassa tilassa (esimerkkiaineisto)",
+        "columns": [
+          "Avain",
+          "$d\\,(\\text{m})$",
+          "$\\alpha\\,({}^\\circ)$"
+        ],
+        "rows": [
+          [
+            "A",
+            "0.250",
+            "90"
+          ],
+          [
+            "B",
+            "0.400",
+            "65"
+          ],
+          [
+            "C",
+            "0.600",
+            "30"
+          ]
+        ]
+      }
     }
   ]
 }

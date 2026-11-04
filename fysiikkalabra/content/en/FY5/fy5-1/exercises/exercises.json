@@ -40,6 +40,73 @@
       "answer": 0.3,
       "unit": "m",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-1-L1-06",
+      "level": 1,
+      "text": "The handle of a door is usually as far from the hinges as possible. Which of the following justifies this correctly?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "A long lever arm gives a larger moment, so the door turns with a smaller push.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "At the handle the same push is a larger force, so the door starts to move more easily than elsewhere.",
+          "feedback": "The magnitude of the force does not depend on where the door is pushed: the hand pushes with the same force wherever it is. The distance of the handle from the hinges affects the lever arm, that is, how large a moment the same force produces."
+        },
+        {
+          "text": "At the handle the door weighs less, so a smaller push is needed to turn it.",
+          "feedback": "The weight of the door does not change, even if it is pushed at a different point. What matters is not the weight of the door but how large a moment the push produces about the hinges: $M = Fr$."
+        },
+        {
+          "text": "A long lever arm gives a larger moment, so the door turns with a smaller push.",
+          "correct": true,
+          "feedback": "Correct: the moment is $M = Fr$, so when the lever arm $r$ is long, the required moment is obtained with a small force. That is why the handle is at the edge of the door, and pushing next to the hinges would need a much larger force."
+        },
+        {
+          "text": "At the handle the line of action of the force passes through the hinges, so the turning effect grows.",
+          "feedback": "When the line of action passes through the axis of rotation, the lever arm is zero and the force does not turn the door at all. When the push is perpendicular, the line of action is the line through the handle perpendicular to the door, and its distance from the hinges is the lever arm."
+        }
+      ]
+    },
+    {
+      "id": "fy5-1-L1-07",
+      "level": 1,
+      "text": "A string pulls the handle of a door with a force of $30\\,\\text{N}$ so that the string runs in the plane of the door in the direction of the hinges, that is, it pulls the handle towards the hinges (the string is parallel to the edge of the door and fixed to the handle). The handle is $0.80\\,\\text{m}$ from the hinges. What is the moment of the string's force about the hinges?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "$0\\,\\text{Nm}$, because the line of action of the force passes through the hinges, so the lever arm is zero.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "$24\\,\\text{Nm}$, because the lever arm is the distance of the handle from the hinges, even though the force is in the direction of the door.",
+          "feedback": "The lever arm is not the distance to the point of application but the perpendicular distance of the axis of rotation from the line of action of the force. Here the line of action passes through the hinges, so the lever arm is not $0.80\\,\\text{m}$."
+        },
+        {
+          "text": "$0\\,\\text{Nm}$, because the line of action of the force passes through the hinges, so the lever arm is zero.",
+          "correct": true,
+          "feedback": "Correct: the string pulls the door in its own plane towards the hinges, so the line of action passes through the axis of rotation and the lever arm is $r = 0$. Then $M = Fr = 0$: the force does not turn the door at all, even though it is large."
+        },
+        {
+          "text": "$30\\,\\text{Nm}$, because the numerical value of the moment equals that of the force when the force acts on the handle.",
+          "feedback": "A moment is not the same thing as a force: it is the product of the force and the lever arm, $M = Fr$, and its unit is $\\text{Nm}$. Here the lever arm is zero, so the moment cannot be $30\\,\\text{Nm}$."
+        }
+      ]
+    },
+    {
+      "id": "fy5-1-L1-08",
+      "level": 1,
+      "text": "A rod rotates about the axis $O$. A force of $15\\,\\text{N}$ acts on the rod $0.60\\,\\text{m}$ from the axis, perpendicular to the rod, so that the force turns the rod clockwise.\n\nWhat is the moment of the force about the axis $O$, when an anticlockwise moment is positive? Give the answer with its sign.",
+      "kind": [
+        "reasoning"
+      ],
+      "answer": -9.0,
+      "unit": "Nm",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -74,6 +141,104 @@
       "answer": 231,
       "unit": "N",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-1-L2-05",
+      "level": 2,
+      "text": "A stuck nut is being loosened with a spanner. A force sensor measures the smallest force with which the nut starts to turn, when the force acts perpendicular to the handle at different distances $r$ from the centre of the nut (example data).\n\nCalculate the product $Fr$ for each measurement and conclude what the products tell. What moment is needed to loosen the nut? Give the answer to two significant figures.",
+      "kind": [
+        "data",
+        "experiment"
+      ],
+      "answer": 25,
+      "unit": "Nm",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Loosening a nut with different lever arms (example data)",
+        "columns": [
+          "$r\\,(\\text{m})$",
+          "$F\\,(\\text{N})$"
+        ],
+        "rows": [
+          [
+            "0.10",
+            "251"
+          ],
+          [
+            "0.15",
+            "170"
+          ],
+          [
+            "0.20",
+            "126"
+          ],
+          [
+            "0.30",
+            "83"
+          ],
+          [
+            "0.40",
+            "62"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy5-1-L2-06",
+      "level": 2,
+      "text": "The centre of a light metre stick is fixed to an axis, and the stick is horizontal. Weights hang from the stick on the left and right of the axis. The table gives the masses of the weights and their distances from the axis (example data). The mass of the stick itself is ignored. Use the value $g = 9.81\\,\\text{m/s}^2$.\n\na) Calculate the net moment of the weights of the masses about the axis, when an anticlockwise moment is positive.\n\nb) In which direction does the stick start to turn?\n\nThe answer box takes the result of part a).",
+      "kind": [
+        "data"
+      ],
+      "answer": 0.118,
+      "unit": "Nm",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Weights on a metre stick (example data)",
+        "columns": [
+          "Weight",
+          "$m\\,(\\text{g})$",
+          "Side",
+          "$r\\,(\\text{cm})$"
+        ],
+        "rows": [
+          [
+            "A",
+            "200",
+            "left",
+            "30.0"
+          ],
+          [
+            "B",
+            "100",
+            "left",
+            "10.0"
+          ],
+          [
+            "C",
+            "120",
+            "right",
+            "40.0"
+          ],
+          [
+            "D",
+            "50.0",
+            "right",
+            "20.0"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy5-1-L2-07",
+      "level": 2,
+      "text": "A student determines the moment with which they tighten a nut with a spanner. They pull the handle of the spanner perpendicularly with a force of $90\\,\\text{N}$ and measure with a tape measure the distance from the outer edge of the head of the spanner to the hand: $0.270\\,\\text{m}$. However, the centre of the nut, that is, the axis of rotation, is $0.030\\,\\text{m}$ from this edge towards the hand. The student calculates $M = 90\\,\\text{N}\\cdot 0.270\\,\\text{m} = 24.3\\,\\text{Nm}$.\n\na) What is the error in the student's calculation?\n\nb) What is the moment of the force about the axis of the nut when calculated correctly?\n\nThe answer box takes the result of part b).",
+      "kind": [
+        "error"
+      ],
+      "answer": 21.6,
+      "unit": "Nm",
+      "tolerance": 0.02
     }
   ],
   "level3": [
@@ -100,6 +265,77 @@
       "answer": 48,
       "unit": "Nm",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-1-L3-04",
+      "level": 3,
+      "text": "A cyclist presses the pedal with a force of $450\\,\\text{N}$ perpendicular to the crank. The length of the crank is $0.175\\,\\text{m}$ and the radius of the front sprocket $0.100\\,\\text{m}$. The chain pulls the front sprocket at its rim, and the chain transmits the force to the rear sprocket, whose radius depends on the gear (example data, table). The rear sprocket is fixed to the rear wheel. Only the force of the pulling side of the chain is taken into account, and its magnitude is the same at both sprockets. Friction is ignored. The crank and the front sprocket rotate steadily, so the moment of the pedal force and the moment of the chain force about the axis of the crank are equal (and opposite in direction).\n\na) What is the force of the chain?\n\nb) What is the moment of the chain force about the axis of the rear wheel in gear 1?\n\nc) Calculate the moment also in gears 2 and 3 and justify which gear you choose for a steep uphill.\n\nThe answer box takes the result of part b).",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 70.9,
+      "unit": "Nm",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Radius of the rear sprocket in different gears (example data)",
+        "columns": [
+          "Gear",
+          "$r_{\\text{rear}}\\,(\\text{cm})$"
+        ],
+        "rows": [
+          [
+            "1",
+            "9.00"
+          ],
+          [
+            "2",
+            "6.00"
+          ],
+          [
+            "3",
+            "4.00"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy5-1-L3-05",
+      "level": 3,
+      "text": "The wheel nut of a car starts to turn only when the moment of the hand's force about the centre of the nut is at least $60.0\\,\\text{Nm}$. In a cramped space the spanner can be pulled only at the angle given in the table. The table gives, for three spanners, the distance $d$ of the point of application from the centre of the nut and the angle $\\alpha$ that the direction of the pull makes with the extension of the handle (example data). The situation is studied in a plane, and the force always acts at the point of application.\n\nThe person can pull with a force of at most $170\\,\\text{N}$.\n\na) Calculate the smallest force required by each spanner.\n\nb) Which spanner do you use? Justify your choice and explain why the longest spanner is not the best.\n\nThe answer box takes the smallest force required by the chosen spanner.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 166,
+      "unit": "N",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Three spanners in a cramped space (example data)",
+        "columns": [
+          "Spanner",
+          "$d\\,(\\text{m})$",
+          "$\\alpha\\,({}^\\circ)$"
+        ],
+        "rows": [
+          [
+            "A",
+            "0.250",
+            "90"
+          ],
+          [
+            "B",
+            "0.400",
+            "65"
+          ],
+          [
+            "C",
+            "0.600",
+            "30"
+          ]
+        ]
+      }
     }
   ]
 }
