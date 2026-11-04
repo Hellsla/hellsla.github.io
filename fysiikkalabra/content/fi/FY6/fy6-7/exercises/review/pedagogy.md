@@ -1,17 +1,13 @@
-VERDICT: PASS
-CONTENT-HASH: c467bcc940349896
-
+VERDICT: FAIL
+CONTENT-HASH: d683ac7a621baa2e
 ## Blocking
-(none)
-
+- exercises.json fy6-7-L3-04 — lead text is one 47-word paragraph (rule ~45) — add "\n\n" after "...sama koko jakson ajan." so "Lämminvesivaraajan vastus ... kyseisen jakson kulutukseen." is its own paragraph.
 ## Polish
-- solutions.md fy6-7-L1-05 Järkevyys — "suunnilleen saman verran (hieman enemmän)" : 10,95 kWh on 22 % enemmän kuin 9,0 kWh; kirjoita "noin viidenneksen enemmän kuin yksi saunomiskerta ($9{,}0\,\text{kWh}$)".
-- Aiemmat Polish-kohdat L3-03 (resistanssi 26,5 Ω sama kuin fy6-6) ja L2-02 (kaksi muunnosta) ovat ennallaan.
-
+- L2-07 text: "$0.00\,\text{kWh}$" uses a decimal point; write "$0{,}00\,\text{kWh}$".
+- L1-07 repeats the worked example's structure (P, min/vrk, 30 vrk, snt/kWh); acceptable per plan, but change the context or add a unit trap if wanted.
+- L2-06 solution has a "Kuvaajan lukeminen" label for a table; rename "Taulukon lukeminen".
+- L2-06 uses only the first and last reading; ask in a) for the daily consumption per day from the rows to use the data.
 ## Checked
-- L1-03 uusi tehtävä (silitysrauta 1200 W, 230 V): I = 5,217 A, answer 5.217391 ja answers.py yhtenevät; tolerance 0,02 sopii.
-- Muutos poistaa aiemman päällekkäisyyden fy6-6:n hiustenkuivaajatehtävän kanssa.
-- Ratkaisu: Annettu, Kysytty, Periaate (tehollinen jännite), Kaava, Muunnokset, Sijoitus, Vastaus (2 merkitsevää), Järkevyys (6 A arvio, alle 10 A) seurattavissa.
-- L2-01 Järkevyys: "käyttää yli puolet energiasta" (0,50 / 0,80) oikein; kuva ja kuvaus antavat samat arvot, eivät vastausta.
-- Sijamuodot ($10\,\text{A}$:n, $230\,\text{V}$:n) kunnossa.
-- Tasot L1 5, L2 4, L3 3, ei toista esimerkkiä.
+- Recomputed: L1-07 1,215 €, L1-08 25 h, L2-05 733,65 kWh (sum 2,01 kWh/vrk), L2-06 56,3 kWh / 335 W / 9,0 €, L2-07 299 kWh, L3-04 267,44 snt, 14,08 snt/kWh, saving 0,93 €, L3-05 12,96 a and 77 € gain.
+- Levels, plan coverage (kW vs kWh, meter, experiment, price data, refrigerator payback) and solutions complete.
+- Lead texts of the other new tasks are under 45 words.

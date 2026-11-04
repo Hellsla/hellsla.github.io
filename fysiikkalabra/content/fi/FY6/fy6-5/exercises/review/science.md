@@ -1,16 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: 098f88de6ba5c331
+CONTENT-HASH: b025248b5c0201e8
 
 ## Blocking
 
 ## Polish
-- solutions.md (fy6-5-L2-02, Vastaus): "resistanssit on annettu kahden numeron tarkkuudella" — 200 Ω and 400 Ω do not show their significant figures. Fix: give the two figures as the course convention for such data, or cite 12,0 V and state the answer to the precision of the data.
+- solutions.md:188 (fy6-5-L3-05 b) — "alle 0,01 V:n poikkeamalla": 4,01 V − 4,00 V is exactly 0,01 V, not under it — write "0,01 V:n poikkeamalla" or "mittaustarkkuuden rajoissa".
+- solutions.md:189 (fy6-5-L3-05 Vastaus) — "Pienempi kuorma laskisi potentiaalin" is ambiguous (a smaller load usually means less current, which is the opposite) — write "Pienempi kuorman resistanssi".
+- exercises.json:150 / solutions.md:145 (fy6-5-L2-05) — the Ohm check of each branch ($I = U : R$ with 12 V across every resistor) assumes an ideal source and ideal ammeters; the task does not say so (B-type, minor: the data agree with it) — add "Lähde, johtimet ja virtamittarit oletetaan ideaalisiksi."
+- docs/exercise-bank/FY6.md plan, level 3 — the plan's error analysis "silmukka väärään suuntaan → negatiivinen virta" is not in the set; L3-05 (loaded voltage divider) replaces it. Update the plan or note the swap.
 
 ## Checked
-- The round-1 blocker is fixed: L3-03 now places the 20 Ω resistor between the plus pole and the lamps, asks for the junction between them and states ideal source and wires; +1,8 V is then the only reading.
-- The round-1 polish is fixed: L1-04 Järkevyys is now a real magnitude check; L2-03 and L3-03 state the ideal source (L1-02, L2-02, L3-01 depend only on the terminal voltage, so C).
-- All 12 answers recomputed in one script with my own formulas (L3-02 via R_tot = 12 V : 0,20 A = 60 Ω, so R23 = 20 Ω, R3 = 30 Ω; L3-03 via the voltage divider 9,0 V − 7,2 V): 1,2 A; 7,5 V; 8,0 V; 6,0 V; 4,0 V; 3,5 V; 8,0 V; 0,50 A; 60 Ω; −9,0 V; 30 Ω; 1,8 V. All agree with exercises.json and answers.py within tolerance.
-- ex-graph: 0 → 9 → 7 → 3 → 0 V on 1 V gridlines, R2 between B and C, drops 2 + 4 + 3 = 9 V; the description carries the same values. ex-branch (6,0 V, 20 Ω ∥ 30 Ω, ammeter in the main wire) and ex-branch2 (12 V, 0,20 A, 40 Ω, 60 Ω ∥ ?) give every needed value and no answer.
-- Every solution states the principle, solves symbolically first, converts mA → A correctly, gets the signs right (L1-03, L3-01, L3-03) and back-substitutes in Järkevyys.
-- L3-03's "remaining lamp brighter" follows from constant resistance, which the task states.
-- Notation (V_A, U_AB, ΔV, R I) matches the lesson's Kaava; scope stays within one junction and FY6 contents.
+- Hash b025248b5c0201e8 at start and end.
+- All eight new answers recomputed in one script with my own formulas (node-voltage method for L3-04) and compared with exercises.json and answers.py: L1-08 3,0 V; L2-05 0,59 A; L2-06 40 Ω; L2-07 −3,0 V; L3-04 I₂ = 0,30 A (I₁ = 0,20 A, I₃ = 0,10 A, V_PQ = 6,0 V, 3,3 W = 3,3 W); L3-05 250 Ω. All agree within tolerance.
+- L3-05 table checked against the divider model: 5,71 / 4,00 / 2,91 V against 5,72 / 4,01 / 2,91 V, labelled as example data; R_k = 236…266 Ω for V_P = 4,95…5,05 V, so 2 s.f. and 3 % fit.
+- L3-04 signs: both loop equations follow the lesson's ΔV rules; the energy balance assumes the ideal sources the task states.
+- L2-05: the branch readings equal U/R, so A₀ is the inconsistent one.
+- L2-06: B and C are joined by a wire, so ΔV = 0; R₁ = R₃ = 30 Ω.
+- L2-07: the student's error is the sign of the drop; −3,0 V and the −9,0 V minus pole are consistent.
+- L1-06 and L1-07: exactly one correct option each; every distractor is really wrong and its feedback names the reason.
+- Notation (V_A, U_AB, ΔV, RI, I₁ = I₂ + I₃) matches the lesson; scope within FY6 Kirchhoff and the LOPS note on branched circuits; no new task duplicates an existing one, and the levels fit.

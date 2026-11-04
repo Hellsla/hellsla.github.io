@@ -1,18 +1,15 @@
-VERDICT: PASS
-CONTENT-HASH: 098f88de6ba5c331
-
+VERDICT: FAIL
+CONTENT-HASH: b025248b5c0201e8
 ## Blocking
-
+- exercises.json fy6-5-L3-04 — lead text is one 61-word paragraph (rule: over ~45 words must be split) — add "\n\n" after "...kolme rinnakkaista haaraa." and after "...ja vastus $R_3 = 30\,\Omega$." so it reads situation / branch values / current directions ("Kummankin lähteen plusnapa ... pisteeseen $Q$.").
+- exercises.json fy6-5-L3-05 — lead text is one 56-word paragraph — add "\n\n" after "...joka on nollakohta." so the load sentence and the table sentence ("Pisteen $P$ ja miinusnavan väliin kytketään kuorma ... (esimerkkiaineisto).") form the second paragraph.
+- exercises.json fy6-5-L2-06 — lead text is one 49-word paragraph — add "\n\n" after "...lähteen miinusnapaan $E$." so "Miinusnapa on nollakohta. Jännitemittarilla mitatut potentiaalit ... $0{,}12\,\text{A}$." is its own paragraph.
 ## Polish
-- No exercise has the student draw or tabulate a potential graph (only L1-05 reads one); a level 2 task asking for the potentials of points in a given circuit would close the goal "potentiaalikuvaaja".
-- L1-04 solution "Järkevyys": "joten vastus voi olla tällaisessa piirissä" is a weak check; say instead that 6 V lies between 4 V and 8 V and that the drop must be below the source voltage of the circuit.
-- L1-05: the graph axis is labelled D A B C D while the task never names the points; add "Vastuksen R2 päät ovat kohdat B ja C" or let the solution say "lue kuvaajan akselin merkinnät".
-
+- L1-08 (two resistors in series) is harder than the existing L2-01 (one resistor, mA conversion, same V_B = V_A − RI idea); consider swapping the levels or giving L1-08 one resistor.
+- Plan item "virheanalyysi: silmukka väärään suuntaan, negatiivinen virta" is not covered (L3-04 gives all-positive currents); L2-07 covers sign error only. Consider one sentence on a negative current in L3-04 c).
+- L3-05 c): the solution's Sijoitus does not show the a)-part reasoning separately (only in Periaate); add one sentence under a).
+- L1-07 distractor 4 feedback: "ja nekin pysyvät samoina" is awkward; write "ja ne pysyvät samoina".
 ## Checked
-- Levels rise: L1 one law, L2 law plus Ohm, L3 zero-point shift, unknown R3 from a branching circuit, changing-load reasoning.
-- None repeats the worked example (12 V, 20/60/30 Ω) or the bird task.
-- Answers recomputed: 1,2 A; 7,5 V; 8,0 V; 6,0 V; 4,0 V; 3,5 V; 8,0 V; 0,50 A; 60 Ω; -9,0 V; 30 Ω; 1,8 V.
-- Situation first, question last as its own sentence; contexts (bike lights, lamps) recognisable.
-- Figures ex-graph, ex-branch, ex-branch2 are needed, legible at 1280 px, and give no answer; descriptions match the data.
-- Solutions follow principle, formula, units, substitution, sanity pattern; round-1 stray semicolon in L1-05 gone.
-- L3-03 sanity check explains the physics (brighter remaining lamp); mA and sign slips anticipated.
+- Recomputed all 8 new answers and data (L2-05 0.59 A, L2-06 40 Ω, L2-07 −3.0 V, L3-04 I1/I2/I3 and power balance 3.3 W, L3-05 table values and 250 Ω): consistent with solutions.
+- Levels, kinds and the plan (data/MC/error/model) fit; no duplicate of an existing task.
+- Solutions complete and followable; Finnish and glossary terms fine.

@@ -1,18 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: a873417c3d7f23d9
-
+CONTENT-HASH: 666a811032b40963
 ## Blocking
-(none)
-
+(none) Lead texts of all new tasks are at most 39 words; lettered parts are their own paragraphs.
 ## Polish
-- exercises.json fy6-6-L3-03 — "Toisen vastuksen resistanssi on 6,0 Ω ... Kuinka suuri on toisen vastuksen resistanssi?" uses "toinen" for both resistors, so the question reads as asking for the given value; write "Toisen vastuksen resistanssi on 6,0 Ω. Kuinka suuri on ensimmäisen vastuksen resistanssi?" (and "ensimmäisen" in the solution's Kysytty).
-- solutions.md fy6-6-L2-03 — Vastaus 16 V rounded from 15,8 V while the check says "tavallisessa 5 V:n tai 9 V:n piirissä"; fine, but state that 15,8 V is rounded up so the limit is not exceeded (optional).
-- solutions.md fy6-6-L1-03 — "Tulos watteina muunnetaan" is clumsy; "Tulos muunnetaan watteista kilowateiksi" is clearer.
-
+- L1-07 (max current of a 0,25 W resistor) is the same method as the existing L2-03 (max voltage, 1,0 kΩ, 0,25 W) yet sits one level lower; change the context/values or move it to L2.
+- L2-06 solution Järkevyys: "teho kasvaa tasaisesti jännitteen mukana" is vague; write "teho kasvaa jokaisella rivillä".
+- L1-07 solution Periaate: "Virta tunnetaan tavoiteltavana suureena, joten sopiva muoto on virran kautta kirjoitettu." is unclear; write "Kysytty on virta, joten käytetään muotoa $P = RI^2$."
+- L3-04: the 1780 W row is redundant for a) (used only as a check); say so in the task or in the solution's Periaate.
 ## Checked
-- Levels 5/4/3; none repeats the worked example (parallel heaters, energy 5 min).
-- Situation first, question last; contexts (USB charger, kettle, hairdryer, Christmas lights) familiar.
-- Solutions: principle explained, conversions on own line, real sanity checks; followable stepwise.
-- L1-05 figure: description gives the four (I, P) points and grid; no resistance or answer stated.
-- Goals covered: P = UI, Joulen laki, E = Pt, power split in series/parallel.
-- Finnish and case endings after units correct; 390 px stage capture usable.
+- Recomputed: L1-07 33,7 mA, L1-08 7,2 W, L2-05 slope 12,1 K/W (5 points consistent), L2-06 +172 %, L2-07 3,0 W, L3-04 R1 48,1 Ω / R2 77,9 Ω / 822 W, L3-05 152,5 W and 50,9 W.
+- Answer tolerances match the ranges stated in solutions; levels fit; every solution complete.
+- Plan items (heating data, lamp U–I, series-lamp error, toaster, extension cord) covered.

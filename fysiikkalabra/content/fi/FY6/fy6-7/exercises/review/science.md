@@ -1,18 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: c467bcc940349896
+CONTENT-HASH: d683ac7a621baa2e
 
 ## Blocking
 
 ## Polish
-- exercises/solutions.md (L2-01 Järkevyys) — the "average about 0,5 kW" check is still the answer divided back; the 0,50 kWh heating stage as more than half is the real check already given.
+- exercises/solutions.md:176 (L2-07 Vastaus) — "299 kWh, kolme merkitsevää numeroa … noin 300 kWh" gives two precisions. The by-eye fit limits it, so give 300 kWh (two significant figures).
+- exercises/solutions.md:172 (L2-07) — give the origin line its physical reason (guardrail "Fits"): "lukema oli 0,00 kWh hetkellä t = 0".
+- exercises/solutions.md:196 (L3-05 c) — say which way the waste heat acts: the old fridge heats the home more, so with electric heating part of the saving is lost in winter.
+- exercises/solutions.md:161 (L2-06) — the heading "Kuvaajan lukeminen" sits over a table. Use "Taulukon lukeminen".
 
 ## Checked
-- Round-1 Blocking fixed: L1-05 Järkevyys now says a year of one LED lamp (11 kWh) is about the same as, slightly more than, one 1,5 h session on a 6 kW stove (9,0 kWh). Correct.
-- New L1-03 (iron 1200 W, 230 V): a resistive heating device, so P = UI with the effective 230 V applies as the lesson states; I = 1200 W : 230 V = 5,217 A → 5,2 A, two significant figures; estimate 6 A is a real check; the fuse sentence (10 A or 16 A circuit, nothing else heavy on) is exact. exercises.json 5.217391, answers.py and solution agree.
-- L2-01 wording "käyttää yli puolet energiasta" fixed; answers.py comment names `fy6-7/washer`.
-- All 12 answers recomputed in one script with my own formulas: 0,18; 0,54; 5,22; 52,5; 10,95; 0,80; 480,24; 6,70; 75,92; 7,33; 371,3; 4,99. All agree with answers.py and exercises.json.
-- washer figure: 2,0 / 0,2 / 0,4 kW and the 0,25 h breaks on gridlines; the description gives the same data and no energy.
-- L3-03: constant resistance stated; I = U : R, P = UI, E = Pt symbolic first; "sisäenergiaksi, joka siirtyy lämpönä" correct. No "lämmöksi" in the set.
-- L3-02 solved symbolically; check 64,15 € ≈ 64,20 €; the 428 kWh mistake correct.
-- Units, tolerances and significant-figure reasons fit the data; magnitudes realistic.
-- Notation E, P, t, a, K, K_perus as in the brief; all inside FY6 "sähköteho ja Joulen laki".
+- All 20 answers recomputed in one script with my own formulas. New ones: 1,215 €; 25 h; 733,65 kWh; 335,1 W; 299,1 kWh (least squares through the origin; 299,3 kWh from the reading); 0,930 €; 12,96 a. All agree with answers.py and exercises.json. A by-eye L2-07 line (1,60–1,68 kWh) stays inside the 5 % tolerance.
+- L2-05: daily energies 0,45 / 0,44 / 0,36 / 0,60 / 0,16 kWh. The vacuum cleaner is the largest and lighting second, as the solution says.
+- L2-06: daily differences of 7,2–9,2 kWh are realistic. 56,3 kWh / 168 h = 335 W, and the cost is 9,0 €.
+- L3-04: the costs add up to 267,44 snt over 19,0 kWh (14,1 snt/kWh). The 2,4 kWh of other use in 16–20 is consistent. Saving = 6,0 kWh · 15,5 snt/kWh. Part c names the right cause.
+- L3-05: the saving is 37,74 €/a and the lifetime gain 77,1 €. The model's assumptions are stated in the task.
+- L1-06 has exactly one correct option, and every distractor's feedback is right. L1-08's error (E·P) is explained with units.
+- Notation E, P, t, a, K follows the brief. The data are labelled esimerkkiaineisto. Everything stays in scope.
+- The L3-04 table at 1280 px renders cleanly.
+- Set: 8/7/5, with no duplicates and every task matching the FY6.md plan.
