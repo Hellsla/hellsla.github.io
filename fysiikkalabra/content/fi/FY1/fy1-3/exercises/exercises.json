@@ -268,7 +268,7 @@
     {
       "id": "fy1-3-L3-04",
       "level": 3,
-      "text": "Kärryn kulkuaika radan päästä päähän mitattiin käsikellolla kahdeksan kertaa, ja tulokset ovat taulukossa. Laboratoriopäiväkirjassa on kuudennen mittauksen kohdalla merkintä: ”Katsoin hetkeksi muualle ja pysäytin kellon myöhään.” Saako tuloksen $2{,}97\\,\\text{s}$ jättää pois? Perustele päiväkirjan merkinnällä ja laske keskiarvo $\\bar{t}$, jota perustellusti käytät. Entä jos merkintää ei olisi eikä poikkeamalle löytyisi syytä? Laske silloin keskiarvo kaikista kahdeksasta tuloksesta ja vertaa vaihteluvälin puolikasta tuloksen kanssa ja ilman sitä.",
+      "text": "Kärryn kulkuaika radan päästä päähän mitattiin käsikellolla kahdeksan kertaa, ja tulokset ovat taulukossa. Laboratoriopäiväkirjassa on kuudennen mittauksen kohdalla merkintä: ”Katsoin hetkeksi muualle ja pysäytin kellon myöhään.”\n\nSaako tuloksen $2{,}97\\,\\text{s}$ jättää pois? Perustele päiväkirjan merkinnällä ja laske keskiarvo $\\bar{t}$, jota perustellusti käytät.\n\nEntä jos merkintää ei olisi eikä poikkeamalle löytyisi syytä? Laske silloin keskiarvo kaikista kahdeksasta tuloksesta ja vertaa vaihteluvälin puolikasta tuloksen kanssa ja ilman sitä.",
       "kind": [
         "data",
         "reasoning"

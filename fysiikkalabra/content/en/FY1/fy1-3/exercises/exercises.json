@@ -268,7 +268,7 @@
     {
       "id": "fy1-3-L3-04",
       "level": 3,
-      "text": "The travel time of a cart from one end of a track to the other was measured eight times with a hand-held stopwatch, and the results are in the table. The laboratory notebook has a note at the sixth measurement: “I looked away for a moment and stopped the clock late.” May the result $2.97\\,\\text{s}$ be left out? Justify with the notebook note and calculate the mean $\\bar{t}$ that you can justifiably use. What if there were no note and no reason could be found for the deviation? Then calculate the mean of all eight results and compare the half-range with and without the result.",
+      "text": "The travel time of a cart from one end of a track to the other was measured eight times with a hand-held stopwatch, and the results are in the table. The laboratory notebook has a note at the sixth measurement: “I looked away for a moment and stopped the clock late.”\n\nMay the result $2.97\\,\\text{s}$ be left out? Justify with the notebook note and calculate the mean $\\bar{t}$ that you can justifiably use.\n\nWhat if there were no note and no reason could be found for the deviation? Then calculate the mean of all eight results and compare the half-range with and without the result.",
       "kind": [
         "data",
         "reasoning"
