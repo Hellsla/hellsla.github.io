@@ -1,10 +1,10 @@
-VERDICT: FAIL
-CONTENT-HASH: 518085fae28916f4
+VERDICT: PASS
+CONTENT-HASH: fec4683407094eec
 
 ## Blocking
-- exercises/exercises.json:65 (L1-06, feedback of the correct option) and exercises/solutions.md:123 (L1-06 Periaate) — (A) "osa liike-energiasta muuttuu muodonmuutokseksi, lämmöksi ja ääneksi": deformation is not an energy form, and by the heat guardrail kinetic energy does not turn into "lämpö". It also contradicts the option text and the glossary. — In both places write "Osa liike-energiasta muuttuu muodonmuutoksissa sisäenergiaksi ja ääneksi." The same fix applies to the existing solutions.md:69 (L2-02, "muodonmuutoksiksi").
 
 ## Polish
+- solutions.md:69 (L2-02, existing) — "muuttuu … muodonmuutoksiksi, sisäenergiaksi ja ääneksi": still lists the deformation as an energy form — write "muuttuu muodonmuutoksissa sisäenergiaksi ja ääneksi", as in L1-06.
 - solutions.md:159 (L2-05) — "Koe 2 on täysin kimmoton, koska vaunut jäävät kiinni toisiinsa": not stated in the task, only inferable from the data — write "koska vaunuilla on törmäyksen jälkeen sama nopeus 0,37 m/s eli ne liikkuvat yhdessä".
 - exercises.json:175 (L2-06) — kind "graph", but no graph is drawn or read; the speeds are taken from two table rows — ask for the (t, x) graph in a) or drop "graph".
 - exercises.json:266 (L3-05) — "vaunu liukuu" with μ ≈ 0,20 called "tavallinen liukukitkakerroin": wheeled carts roll and have much smaller resistance — say "kappale/palikka A" (with a felt base) or "vaunu, jonka pyörät on lukittu".
@@ -19,4 +19,4 @@ CONTENT-HASH: 518085fae28916f4
 - L1-06: exactly one correct option; L2-07 sign error modelled correctly (0,70 vs 0,50 m/s).
 - Scope: 1-D only, with the energy principle and friction from FY4; there is no 2-D content. Notation (v, v′) matches the brief. Plan items and 8/7/5 levels are covered.
 - Lint now 0 errors (warnings only).
-- Hash is the same at the start and at the end.
+- Round 2: L1-06 feedback (exercises.json:65) and Periaate (solutions.md:123) now say "muodonmuutoksissa sisäenergiaksi ja ääneksi"; the round-1 blocker is resolved. Hash is the same at the start and at the end.

@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: d2dfe6f7b0e18bab
+CONTENT-HASH: cd5b133c0f7ecf25
 
 ## Blocking
 
 ## Polish
 - exercises/solutions.md:175 (L2-07) — the rounding reason cites "nopeudessa 1,50 m/s pyöristettynä", but that speed has three significant figures and is not used in the calculation (Δv = I/m) — write "kaksi merkitsevää numeroa kuten massassa 0,50 kg".
-- exercises/solutions.md:145 (L1-08) — "noin satakertainen" is wrong: 18 000 : 100 = 180 — write "noin 180-kertainen" or "kahden kertaluvun verran suurempi".
 - exercises/exercises.json:362 (L3-05) — a 12 ms contact time read from video at 1 ms resolution needs a high-speed camera (an ordinary 30–240 fps video gives 4–33 ms steps) — write "kuvasi suurnopeuskameralla" or give the frame rate.
 - exercises/exercises.json:362 (L3-05 c) — the stick-versus-bounce comparison repeats the idea of L3-03 (clay ball vs rubber ball). Acceptable as one part of a multi-step task; c) could instead ask for the fall and rise heights.
 
@@ -18,4 +17,4 @@ CONTENT-HASH: d2dfe6f7b0e18bab
 - Significant figures and tolerances fit the data; every new answer rounded to 2 s.f. lies inside its tolerance.
 - Scope: everything is impulse, momentum change, area under F(t), mean force and 1-D signs; there is no conservation or 2-D content. Notation matches the brief (F_ka, v₀, Δp).
 - Plan in docs/exercise-bank/FY4.md covered: MC direction, p = mv, error analysis, kick table, bumper experiment, force sensor area, soft/hard comparison, YO-style bounce. Levels are 8/7/5.
-- Hash is the same at the start and at the end.
+- Round 2: L2-07 "seitsemän puolisuunnikasta" is correct (8 points, 7 intervals); L1-08 "noin 180-kertainen" is correct. No numbers changed; hash is the same at the start and at the end.
