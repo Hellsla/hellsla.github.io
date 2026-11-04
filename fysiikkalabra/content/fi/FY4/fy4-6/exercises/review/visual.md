@@ -1,17 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 92a29494f4fbe0d8
+CONTENT-HASH: 03f78491accd52af
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] open-exercises-L2-1280-1 (L2 task 1, 12 degree slope) — the redrawn diagram is tall (about 400 px) with long N and G arrows and much empty space above the box; it does not dominate but is the largest figure in the set — optional: crop the viewBox to the arrows.
-- [Minor] all solution diagrams — labels are about 9-10 px at 1280 px and the figures only 130-290 px wide; legible but small (carried from the earlier report) — enlarge when figures are next edited.
+- [Minor] fy4-6-L3-04 Sijoitus — shows "s_c = 73,5 m" but the answer, chip and Vastaus say "73 m" (2 s.f. of 73,5 would be 74) — carry the unrounded  = 3{,}365\,\text{m/s}^2$ and ^2 = 493{,}8$, giving 3{,}4\,\text{m}$, then "73 m".
+- [Minor] fy4-6-L3-04 table — the "Lumi 0,20" row is not used in any part — drop it or say it is extra.
+- [Minor] fy4-6-L3-05 task text — straight quotes around the student's solution — use ”…”.
+- [Minor] fy4-6-L3-04 FBD — v and a arrows are horizontal on a 6° tilted car and G_x touches the box edge — cosmetic.
 
 ## Checked
-- Captures (1280 px; the exercise captures live in fy4-6/review/shots): open-exercises-1280-1..7, L2-1280-1..6, L3-1280-1..5, contact sheets not needed.
-- Redrawn solution diagrams: level 1 task 3 (sliding crate; v on its own row above N, F and F_mu on separate rows), task 4 and 5 (book on 20 degree and crate on 30 degree slope; F_mu, G_x, G_y, G distinct), level 2 task 1 (12 degree), level 3 task 2 (v and a apart, F_mu short but shaft visible), and neighbours level 1 task 1-2, level 2 task 2, 4, level 3 task 1, 3.
-- No overlapping labels; velocity and acceleration arrows no longer on force shafts; the 390 px widths use the same figure size, so no separate capture was needed.
+- 1280 px captures: L1 parts 8-10 (L1-07 with FBD, L1-08 MC feedback, closing), L2 parts 7-11 (L2-05, L2-06 with data table, L2-07 table), L3 parts 5-9 (L3-04 table, tilted-car FBD, aligned Sijoitus; L3-05 slope FBD with components, student solution).
+- Slope FBDs (N, F_mu, G components, v blue, a orange) are legible; formulas and tables render without clipping.
+- Captures: only 1280 px solution-open parts exist for exercises (no 360/390 exercise-body captures; stage-exercises-390 shows only the stage header), so phone rendering rests on the passing layout 360/768/1280 checks.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

@@ -1,17 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 9c86d3f377cf47f7
+CONTENT-HASH: 03f78491accd52af
 
 ## Blocking
 
 ## Polish
-- exercises.json fy4-6-L2-04 — "Kuinka monta newtonia komponentti ylittää suurimman lepokitkan? (Jos luku olisi negatiivinen…)" is a scaffolded comparison rather than a question a student would meet — fix: ask "Pysyykö laatikko paikallaan? Perustele laskemalla" and keep the 8,1 N as the check value.
-- solutions.md fy4-6-L1-05 — "Voimakuvio" comes before "Periaate", unlike every other solution — fix: reorder for consistency.
-- fy4-6-L1-03 repeats the spring-balance idea of the lesson's optional "Mittaus jousivaa'alla" at level 1 only with other numbers; acceptable, but no level-1 task uses static friction below the limit (only check-1 does) — fix: optional, swap L1-05 or add one.
+- fy4-6-L2-05 is nearly the same task as the existing L2-03 ($(N, F_\mu)$ points, slope through the origin gives $\mu$). It only adds the step $N = mg$. Make it different: for example two surfaces in one table (compare $\mu$ and say which is rougher), or a set where the line does not pass through the origin and the student must say why.
+- L3-05 repeats the error of L1-08 ($N < G$ on a slope) and of the lesson's own rule $N = mg\cos\alpha$. The error is therefore pre-answered; keep L3-05 for the multi-part work, or change the error to the sign of friction on a block that is pushed up the slope.
+- L3-04: the table has a row "Lumi" that no part uses. Add a part (snow, how much longer) or drop the row. Also $s_c$ is 73,4 m with exact values; the key $73{,}0$ is within the tolerance, but use 73,4.
+- L2-06: the table samples every 0,5 s, so the peak "3,3 N" may be missed; say "lue taulukosta suurin lukema" or give a finer step.
+- Data tables use decimal points while the text uses commas.
 
 ## Checked
-- Counts 5/4/3; levels rise from one formula (L1) through rearrangement, graph reading and kinematics link (L2) to the accelerating truck bed, the up-slope stop and the Moon scaling (L3); none repeats the worked example.
-- Every task has answer, unit, tolerance; data significant figures match the stated answers.
-- fbd plan: seven tasks tagged equations ask for the diagram first; all solutions draw the diagram before any equation, with direction reasons (friction up the slope when sliding down, forward on the truck bed).
-- L3-01 and L3-02 cover friction along the motion and up-slope sliding (misconception from the lesson).
-- Solutions state the principle, symbolic step, units, significant figures and a reasonableness check; steps followable by a student who could not solve it.
-- Finnish: case after number+unit correct (150 N:n, 40 kg:n); glossary terms used.
+- 20 tasks in 8/7/5 with complete solutions (voimakuvio with axes and components where the slope enters).
+- Re-computed: L2-05 slope 0,417 so 0,42; L2-06 $\mu_0$ = 0,45, $\mu$ = 0,295 (the key 0,29 is inside the 4 % band); L2-07 mean 25,4 degrees and $\tan$ = 0,475; L3-04 33,6 m / 55,9 m / 73,4 m; L3-05 $a$ = 1,48 and $s$ = 6,65 m.
+- Level 2 covers the plan's three items: the peak graph, the slope of $F_\mu$ against $N$, and the tilting experiment. L3-04 matches the plan (wet or dry asphalt and braking distance).
+- L1-06 (static friction adjusts to the push) and L1-08 ($N < G$ on a slope) are concept tasks with real distractors and their own feedback.
+- Scope: friction coefficients, slopes and the energy-free kinematic formula; no rolling resistance or compressible effects.
+- 360 px layout checks pass.
+- Hash identical at the start and the end.

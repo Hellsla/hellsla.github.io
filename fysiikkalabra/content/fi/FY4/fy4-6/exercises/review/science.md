@@ -1,28 +1,20 @@
-VERDICT: PASS
-CONTENT-HASH: 92a29494f4fbe0d8
+VERDICT: FAIL
+CONTENT-HASH: 03f78491accd52af
 
 ## Blocking
+- solutions.md:348 (L3-05) — A: "Laatikko lähtee liukumaan, koska $\tan 25^\circ = 0{,}47 > \mu = 0{,}30$" uses the wrong coefficient. By the lesson, a box starts to slide only when $\tan\alpha > \mu_0$, and $\mu_0 \ge \mu$ is not given — write: "Liukuessaan laatikko kiihtyy alas, koska $\tan 25^\circ = 0{,}47 > \mu = 0{,}30$; tehtävän mukaan se lähtee liikkeelle, joten $\mu_0 < \tan 25^\circ$."
+- solutions.md:318/321 (L3-04) — A: the shown result $s_c = 73{,}5\,\text{m}$ rounds to 74 m, but the Vastaus gives 73 m. The 73,5 comes from intermediates rounded before the end ($v_0^2 = 494$, $a_c = 3{,}36$), which NOTES forbids — carry unrounded values ($v_0^2 = 493{,}8\,\text{m}^2/\text{s}^2$, $a_c = 3{,}365\,\text{m/s}^2$), which give $s_c = 73{,}4\,\text{m} \approx 73\,\text{m}$. Likewise use $s_b = 55{,}9\,\text{m}$.
+- solutions.md:289 (L2-07) — A: the shown $\mu_0 = \tan 25{,}4^\circ = 0{,}475$ is then rounded to 0,47 (line 290), which looks like a rounding error. Write $\tan 25{,}4^\circ = 0{,}4748$.
 
 ## Polish
-- solutions.md:84-92 (L1-05) — Carried over. The diagram adds $\overline{N}$ and a static friction equal to $G_x$, but the Voimakuvio sentence names only G and its components. Mention them in the sentence, or say in the task that the box is at rest.
-- solutions.md:157-165 (L2-04) — Carried over. $\overline{F}_\mu$ is drawn at $\mu_0 N$ while $\overline{a}$ points down the slope. Say that the arrow shows the largest possible static friction, which is not enough.
-- solutions.md:7-12 (L1-01) — Carried over. N = G assumes the astronaut stands still, which the task does not state.
-- L1-02, L1-03, L2-02, L3-01 — The split horizontal scale is stated only in the text alternative. A visible note under such figures would help sighted readers.
+- L3-05 — the angle 25° and μ = 0,30 are exactly the lesson's Esimerkki, so part b) is the example's $a = 1{,}48\,\text{m/s}^2$ copied, which is thin for level 3. Change the data, for example to 30° and μ = 0,35 (then a = 1,93 m/s² and s = 8,7 m in 3,0 s). Its fbd tag `error` also means "a drawn diagram with `wrong=`" in the standard, not an equation error.
+- exercises.json:55/66 (L1-06) — the options call the friction $F$, the same symbol a reader takes for the 20 N push. Use $F_{\mu 0}$, as the lesson does.
+- solutions.md:250 (L1-07) — $F_{\mu 0,\text{max}}$ is not lesson notation. Write $F - \mu_0 N = 0$.
+- solutions.md:321 (L3-04) — "Auton massa ei tarvita" → "Auton massaa ei tarvita".
+- L2-05 and L2-03 — both fit $(N, F_\mu)$ through the origin to get μ. L2-05 adds computing N from the mass and drawing the graph, so the overlap is acceptable, but L2-06 (the sensor peak) already carries the data work. State in the L2-06 text that the pull is horizontal from the start.
 
 ## Checked
-- The round-1 blocking item (L2-01) is resolved. Measured lengths: G 100, $\overline{G}_x$ 21,0 (true 20,8), $\overline{F}_\mu$ 14,9 (true 13,1, lifted to the 15 % floor, and the text alternative says so). Friction is now shorter than $G_x$, so the net force points down the slope, along $\overline{a}$. $\overline{G}_y$ 97,7 equals N 98,2.
-- Also from round 1, L1-04: $F_\mu$ 34,2 now equals $G_x$ 34,0 (a = 0).
-- I rendered, screenshotted and measured all 11 diagrams. Forces and dashed components are drawn on one scale:
-  - L1-05: $F_\mu$ = $G_x$ = 50,2.
-  - L2-04: $F_\mu$ 49,5 < $G_x$ 57,4, a down the slope.
-  - L3-02: $F_\mu$ 23,4 and $G_x$ 34,0, both down the slope, with $\overline{v}$ up the slope.
-  - L3-03: $F_\mu$ 29,6 < $G_x$ 50,2.
-  - N = $G_y$ in each.
-- Split scales on level ground:
-  - L1-02: friction only, a opposite to v.
-  - L1-03: F = $F_\mu$ = 60.
-  - L2-02: T 60, $F_\mu$ 47, which is 117,7/150 = 0,785, net force forward.
-  - L3-01: friction forward, along $\overline{a}$.
-- No diagram contradicts its Voimakuvio sentence or its motion.
-- I recomputed all 12 answers in one script. Each is within tolerance: 259; 35,3; 0,306; 7,37; 58,9; 0,134 (3,3 % against 4 %); 0,807; 0,2145; 8,05; 0,357; 0,795; 0,330.
-- The exercise text is unchanged since round 1. Only fbdspec.py changed. The hash was the same at the start and at the end.
+- New answers recomputed: L1-07 220,7 N; L2-05 least-squares 0,416; L2-06 μ = 0,2945 and μ0 = 0,449; L2-07 tan 25,4° = 0,4748; L3-04 33,6, 55,9 and 73,4 m; L3-05 a = 1,479, student 1,203, s = 6,65 m. All are inside their tolerances.
+- In L1-06 and L1-08, exactly one option is correct. Every distractor's feedback is right, and L1-08 states the condition "vain paino, tukivoima ja kitka".
+- L2-07: the derivation $\mu_0 = \tan\alpha_0$ is right, the mass cancels, and the guardrails' measurement terms are respected.
+- L3-04: locked wheels make kinetic friction the model. On the 6° downhill $a = g(\mu\cos\alpha - \sin\alpha)$, the voimakuvio block sums to $m\overline{a}$, and the hidastuvuus stays positive because μ > tan 6°.
