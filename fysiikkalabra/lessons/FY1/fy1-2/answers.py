@@ -24,7 +24,7 @@ a["fy1-2-L3-03"] = 2 * 145 * AU / C / 3600              # one way 145 AU = 2,169
 # Exercise bank additions (teacher 2026-11-04): L1-06 and L1-08 are multiple choice (no number)
 a["fy1-2-L1-07"] = 18 * 1000 / 3600                     # 18 km/h = 18 · 1000 m / 3600 s = 5,0 m/s
 KN = 1.852                                              # km/h per knot (exact)
-speeds = {"pikalaiva": 38.0 * KN / 3.6, "juna": 66.0 / 3.6, "pyoraili": 14.0, "vene": 21.0 * KN / 3.6}   # table of L2-05 in m/s: 19,55; 18,33; 14,0; 10,80
+speeds = {"pikalaiva": 38.0 * KN / 3.6, "juna": 66.0 / 3.6, "pyoraili": 9.0, "vene": 12.0 * KN / 3.6}   # table of L2-05 in m/s: 19,55; 18,33; 9,0; 6,17
 a["fy1-2-L2-05"] = round(max(speeds.values()), 1)       # fastest = the 38,0 knot ship: 19,549 -> 19,5 m/s (three figures)
 apples = [152.4, 147.9, 160.8, 155.3, 158.1]            # data of L2-06 in grams (the head wrongly says kg)
 a["fy1-2-L2-06"] = round(sum(apples) / len(apples) / 1000, 4)   # mean 154,9 g = 154,9 · 10^-3 kg = 0,1549 kg

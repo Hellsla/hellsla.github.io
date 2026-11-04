@@ -122,7 +122,7 @@
 ## fy1-1-L1-06
 **Kysytty:** mikä erottaa fysikaalisen mallin pelkästä havainnosta.
 **Periaate:** Havainto kertoo, mitä yksittäisessä tilanteessa tapahtui. Malli on yksinkertaistettu kuvaus ilmiöstä, ja siitä voi päätellä ennusteita myös tilanteisiin, joita ei ole vielä tutkittu. Koska fysiikka nojaa kokeisiin, ennuste testataan mittauksella, ja malli pätee vain oloissa, joissa se on testattu.
-**Mallivastaus:** Malli on yksinkertaistettu kuvaus, josta voi päätellä ennusteita, ja koe tai mittaus ratkaisee, kestääkö se. Kiven ja höyhenen putoaminen on havainto. Malli, jossa ilmanvastus jätetään pois, ennustaa kappaleiden putoamisen, ja se pätee vain, kun ilmanvastus on pieni. Malli ei ole toistettu havainto, mielipide eikä täydellinen totuus: jos huolellinen mittaus poikkeaa ennusteesta, mallia korjataan tai sen voimassaolo rajataan.
+**Mallivastaus:** Mallista voi päätellä ennusteen uuteen tilanteeseen, ja ennusteen voi testata mittauksella. Malli on yksinkertaistettu kuvaus, ja koe tai mittaus ratkaisee, kestääkö se. Kiven ja höyhenen putoaminen on havainto. Malli, jossa ilmanvastus jätetään pois, ennustaa kappaleiden putoamisen, ja se pätee vain, kun ilmanvastus on pieni. Malli ei ole toistettu havainto, muuttumaton teoria eikä täydellinen totuus: jos huolellinen mittaus poikkeaa ennusteesta, mallia korjataan tai sen voimassaolo rajataan.
 
 ## fy1-1-L1-07
 **Annettu:** etäisyys $s = 3{,}84\cdot10^{8}\,\text{m}$ ja valon nopeus $c = 2{,}998\cdot10^{8}\,\text{m/s}$
@@ -141,18 +141,18 @@
 **Kaava:** $k = \dfrac{10^{n_\text{hiekka}}}{10^{n_\text{virus}}} = 10^{\,n_\text{hiekka} - n_\text{virus}}$
 **Muunnokset:** Ei tarvita: koot ovat samassa yksikössä, joten suhde on pelkkä luku.
 **Sijoitus:** $k = \dfrac{10^{-3}\,\text{m}}{10^{-7}\,\text{m}} = 10^{-3-(-7)} = 10^{4} = 10\,000$
-**Vastaus:** $10\,000$ kertaa eli $10^{4}$; luku on tarkka, koska suuruusluokat ovat kokonaisia kymmenpotensseja. Suuruusluokkien ero on neljä askelta, mutta koko ero on kymmenentuhatkertainen eikä nelinkertainen.
+**Vastaus:** $10\,000$ eli $10^{4}$; hiekanjyvä on kymmenentuhatta kertaa viruksen kokoinen, ja luku on tarkka, koska suuruusluokat ovat kokonaisia kymmenpotensseja. Suuruusluokkien ero on neljä askelta, mutta koko ero on kymmenentuhatkertainen eikä nelinkertainen.
 **Järkevyys:** Jos virus suurennettaisiin millimetrin kokoiseksi, hiekanjyvä olisi $10^{4}\cdot1\,\text{mm} = 10\,000\,\text{mm} = 10\,\text{m}$ eli talon kokoinen. Hiekanjyvä on selvästi paljon viruksen kokoa suurempi.
 
 ## fy1-1-L2-05
 **Annettu:** taulukosta etäisyydet $r_\text{Jupiter} = 5{,}20\,\text{AU}$ ja $r_\text{Neptunus} = 30{,}1\,\text{AU}$; pienoismallissa Neptunus on $r_\text{malli,N} = 2{,}0\,\text{m}$ päässä Auringosta
-**Kysytty:** Jupiterin etäisyys Auringosta pienoismallissa $r_\text{malli,J}$ senttimetreinä
+**Kysytty:** Jupiterin etäisyys Auringosta pienoismallissa $r_\text{malli,J}$ senttimetreinä sekä planeetta, joka on lähimpänä kohtaa $1{,}0\,\text{m}$
 **Periaate:** Kaikki etäisyydet pienenevät samalla kertoimella, joten kahden planeetan etäisyyksien suhde on mallissa sama kuin todellisuudessa: $\dfrac{r_\text{malli,J}}{r_\text{malli,N}} = \dfrac{r_\text{Jupiter}}{r_\text{Neptunus}}$.
 **Kaava:** $r_\text{malli,J} = r_\text{malli,N}\cdot\dfrac{r_\text{Jupiter}}{r_\text{Neptunus}}$
 **Muunnokset:** $r_\text{malli,N} = 2{,}0\,\text{m} = 2{,}0\cdot100\,\text{cm} = 200\,\text{cm}$. Tähtitieteelliset yksiköt supistuvat suhteesta pois.
 **Sijoitus:** $r_\text{malli,J} = 200\,\text{cm}\cdot\dfrac{5{,}20\,\text{AU}}{30{,}1\,\text{AU}} = 200\,\text{cm}\cdot0{,}1727 = 34{,}6\,\text{cm}$
-**Vastaus:** $35\,\text{cm}$, kaksi merkitsevää numeroa kuten mallin pituudessa $2{,}0\,\text{m}$ (kenttään sopii $34{,}6$).
-**Järkevyys:** Jupiter on noin $5$ AU:n päässä ja Neptunus noin $30$ AU:n päässä, eli Jupiter on noin kuudesosa Neptunuksen etäisyydestä. Kuudesosa luvusta $200\,\text{cm}$ on noin $33\,\text{cm}$, ja tulos $34{,}6\,\text{cm}$ on lähellä sitä. Maa olisi mallissa vain noin $6{,}6\,\text{cm}$ päässä Auringosta.
+**Vastaus:** $35\,\text{cm}$, kaksi merkitsevää numeroa kuten mallin pituudessa $2{,}0\,\text{m}$ (kenttään sopii $34{,}6$). Kohtaa $1{,}0\,\text{m}$ lähimpänä on Uranus: kohtaa $100\,\text{cm}$ vastaa todellinen etäisyys $100\,\text{cm} : 200\,\text{cm}\cdot30{,}1\,\text{AU} = 15{,}05\,\text{AU}$, joka on lähempänä Uranuksen arvoa $19{,}2\,\text{AU}$ (ero $4{,}15\,\text{AU}$) kuin Saturnuksen arvoa $9{,}58\,\text{AU}$ (ero $5{,}47\,\text{AU}$).
+**Järkevyys:** Jupiter on noin $5\,\text{AU}$:n päässä ja Neptunus noin $30\,\text{AU}$:n päässä, eli Jupiter on noin kuudesosa Neptunuksen etäisyydestä. Kuudesosa luvusta $200\,\text{cm}$ on noin $33\,\text{cm}$, ja tulos $34{,}6\,\text{cm}$ on lähellä sitä. Maa olisi mallissa vain noin $6{,}6\,\text{cm}$ päässä Auringosta.
 
 ## fy1-1-L2-06
 **Annettu:** taulukosta $d = a\cdot10^{n}\,\text{m}$: ihminen $1{,}7\cdot10^{0}$, Maa $1{,}27\cdot10^{7}$, Aurinko $1{,}39\cdot10^{9}$ ja Linnunrata $9{,}46\cdot10^{20}$
@@ -161,28 +161,28 @@
 **Kaava:** $\text{askelia} = n_\text{Linnunrata} - n_\text{ihminen}$, missä $n$ on suuruusluokan eksponentti
 **Muunnokset:** Ei tarvita: eksponentit ovat yksiköttömiä lukuja.
 **Sijoitus:** Ihminen $1{,}7 < 3$, joten $10^{0}\,\text{m}$. Maa $1{,}27 < 3$, joten $10^{7}\,\text{m}$. Aurinko $1{,}39 < 3$, joten $10^{9}\,\text{m}$. Linnunrata $9{,}46 > 3$, joten $10^{20+1} = 10^{21}\,\text{m}$. Siis $\text{askelia} = 21 - 0 = 21$.
-**Vastaus:** $21$ suuruusluokkaa; luku on kokonaisluku, koska suuruusluokat ovat kokonaisia kymmenpotensseja. Linnunradan suuruusluokka on $10^{21}\,\text{m}$, koska kerroin $9{,}46$ on lähempänä lukua $10$ kuin lukua $1$: $9{,}46\cdot10^{20}\,\text{m}$ on lähempänä arvoa $10^{21}\,\text{m}$ kuin arvoa $10^{20}\,\text{m}$.
+**Vastaus:** $21$, eli ihmisen ja Linnunradan suuruusluokkien välillä on $21$ suuruusluokkaa; luku on kokonaisluku, koska suuruusluokat ovat kokonaisia kymmenpotensseja. Linnunradan suuruusluokka on $10^{21}\,\text{m}$, koska kerroin $9{,}46$ on lähempänä lukua $10$ kuin lukua $1$: $9{,}46\cdot10^{20}\,\text{m}$ on lähempänä arvoa $10^{21}\,\text{m}$ kuin arvoa $10^{20}\,\text{m}$.
 **Järkevyys:** Linnunrata on noin $10^{21}\,\text{m}$ ja ihminen noin $1\,\text{m}$, joten suhde on $9{,}46\cdot10^{20}\,\text{m} : 1{,}7\,\text{m} \approx 5{,}6\cdot10^{20}$ eli noin $10^{21}$. Se sopii 21 askeleeseen.
 
 ## fy1-1-L2-07
 **Annettu:** taulukon pisteet $(N;\ h)$: $(50;\ 5{,}0\,\text{mm})$, $(100;\ 10{,}5\,\text{mm})$, $(150;\ 15{,}0\,\text{mm})$, $(200;\ 20{,}5\,\text{mm})$, $(250;\ 25{,}5\,\text{mm})$ ja $(300;\ 30{,}5\,\text{mm})$; viivaimen luku on puolen millimetrin tarkkuudella
 **Kysytty:** yhden arkin paksuus $d$ millimetreinä
 **Periaate:** Pinon korkeus on arkkien määrä kertaa yhden arkin paksuus, $h = dN$, joten pisteet asettuvat suoralle, ja suoran kulmakerroin on arkin paksuus. Suora kulkee origon kautta, koska nollan arkin pino on nollan korkuinen.
-**Kuvaajan lukeminen:** Pisteet asettuvat nousevalle suoralle, jonka molemmille puolille jää pisteitä. Sovitettu suora kulkee likimain pisteiden $(0;\ 0\,\text{mm})$ ja $(300;\ 30{,}5\,\text{mm})$ kautta. Ne luetaan suoralta ja valitaan kaukana toisistaan.
-**Kaava:** $d = \dfrac{\Delta h}{\Delta N} = \dfrac{h_2 - h_1}{N_2 - N_1}$
+**Kuvaajan lukeminen:** Pisteet asettuvat nousevalle suoralle, jonka molemmille puolille jää pisteitä. Sovitettu suora kulkee origon kautta. Pinon korkeus luetaan sovitetulta suoralta kohdasta $N = 300$, ei suoraan taulukosta: suoralta saadaan $h \approx 30{,}6\,\text{mm}$, ja taulukon mittauspiste $30{,}5\,\text{mm}$ on hieman suoran alapuolella.
+**Kaava:** $h = dN$, joten suoran kulmakertoimena $d = \dfrac{h}{N}$
 **Muunnokset:** Ei tarvita: korkeus on jo millimetreinä, ja arkkien määrä on pelkkä luku.
-**Sijoitus:** $d = \dfrac{30{,}5\,\text{mm} - 0\,\text{mm}}{300 - 0} = 0{,}1017\,\text{mm}$
-**Vastaus:** $0{,}10\,\text{mm}$, kaksi merkitsevää numeroa, koska suora sovitetaan silmämääräisesti. Silmämääräinen sovitus vaihtelee, joten noin $0{,}097\text{–}0{,}107\,\text{mm}$ on hyvä vastaus.
-**Mallivastaus pinon eduista:** Yhden arkin paksuus on noin $0{,}1\,\text{mm}$, mikä on paljon pienempi kuin viivaimen asteikkoväli $1\,\text{mm}$, joten yksittäisestä arkista ei saisi edes luettua mitään. Viivaimelta luetun korkeuden epävarmuus on noin $0{,}25\,\text{mm}$ eli puolet lukutarkkuudesta. Pinon korkeus $30{,}5\,\text{mm}$ on tähän verrattuna suuri, ja epävarmuus jakautuu $300$ arkille: yhden arkin paksuuden epävarmuus on vain noin $0{,}001\,\text{mm}$.
+**Sijoitus:** $d = \dfrac{30{,}6\,\text{mm}}{300} = 0{,}102\,\text{mm}$
+**Vastaus:** $0{,}10\,\text{mm}$, kaksi merkitsevää numeroa, koska suora sovitetaan silmämääräisesti ja pinon korkeudessa on muitakin virhelähteitä kuin viivaimen lukeminen. Silmämääräinen sovitus vaihtelee, joten noin $0{,}097\text{–}0{,}107\,\text{mm}$ on hyvä vastaus.
+**Mallivastaus pinon eduista:** Yhden arkin paksuus on noin $0{,}1\,\text{mm}$, paljon pienempi kuin viivaimen asteikkoväli $1\,\text{mm}$, joten yksittäisestä arkista ei saisi mitään luettua. Kun mittalaitteen asteikolta luetaan arvo, lukeman epävarmuutta voidaan yksinkertaisessa tilanteessa arvioida esimerkiksi puoleksi pienimmästä lukuvälistä, tässä noin $0{,}25\,\text{mm}$. Pinon korkeus $30{,}6\,\text{mm}$ on siihen nähden suuri, ja lukemisen osuus jakautuu $300$ arkille: $0{,}25\,\text{mm} : 300 \approx 0{,}001\,\text{mm}$ yhtä arkkia kohti. Tämä on vain lukeman osuus. Mittauksen kokonaisepävarmuuteen vaikuttavat myös muut virhelähteet, kuten käsin painettu pino ja pisteiden hajonta noin $\pm0{,}3\,\text{mm}$, joten kokonaisepävarmuus on suurempi ja vastaus annetaan kahdella merkitsevällä numerolla.
 **Järkevyys:** Kopiopaperin arkki on tuttuun tapaan noin $0{,}1\,\text{mm}$ paksu, ja $500$ arkin nippu on $500\cdot0{,}10\,\text{mm} = 50\,\text{mm}$ eli noin viiden sentin paksuinen.
 
 ## fy1-1-L3-04
-**Annettu:** vesikerroksen kasvu $5{,}0\,\text{mm/h}$, kuuron kesto $\Delta t = 10\,\text{min}$, kentän ala $A = 6{,}0\cdot10^{3}\,\text{m}^2$, pisaran halkaisija $2{,}0\,\text{mm}$ ja $V = \tfrac{4}{3}\pi r^{3}$
+**Annettu:** vesikerroksen kasvu $5{,}0\,\text{mm/h}$, kuuron kesto $\Delta t = 10\,\text{min}$, kentän ala $A = 6{,}0\cdot10^{3}\,\text{m}^2$, pisaran halkaisija $2{,}0\,\text{mm}$ ja pallon tilavuus $V = 4\pi r^{3}/3$
 **Kysytty:** pisaroiden lukumäärä $N$ miljardeina; oletus, jonka $20\,\%$:n virhe vaikuttaa tulokseen eniten
 **Periaate:** Kentälle satanut veden tilavuus jaetaan yhden pisaran tilavuudella. Arvio on malli, jonka oletukset ovat näkyvissä: pisarat ovat saman kokoisia palloja, ja sade on tasaista.
-**Kaava:** $V_\text{sade} = h\,A$, $V_\text{pisara} = \tfrac{4}{3}\pi r^{3}$ ja $N = \dfrac{V_\text{sade}}{V_\text{pisara}}$
-**Muunnokset:** $h = 5{,}0\,\text{mm/h}\cdot\tfrac{10}{60}\,\text{h} = 0{,}833\,\text{mm} = 8{,}33\cdot10^{-4}\,\text{m}$ ja $r = 2{,}0\,\text{mm} : 2 = 1{,}0\cdot10^{-3}\,\text{m}$.
-**Sijoitus:** $V_\text{sade} = 8{,}33\cdot10^{-4}\,\text{m}\cdot6{,}0\cdot10^{3}\,\text{m}^2 = 5{,}0\,\text{m}^3$ ja $V_\text{pisara} = \tfrac{4}{3}\pi\left(1{,}0\cdot10^{-3}\,\text{m}\right)^{3} = 4{,}19\cdot10^{-9}\,\text{m}^3$, joten $N = \dfrac{5{,}0\,\text{m}^3}{4{,}19\cdot10^{-9}\,\text{m}^3} = 1{,}19\cdot10^{9}$
+**Kaava:** $V_\text{sade} = h\,A \quad V_\text{pisara} = \dfrac{4}{3}\pi r^{3} \quad N = \dfrac{V_\text{sade}}{V_\text{pisara}}$
+**Muunnokset:** $h = 5{,}0\,\text{mm/h}\cdot(10 : 60)\,\text{h} = 0{,}833\,\text{mm} = 8{,}33\cdot10^{-4}\,\text{m}$ ja $r = 2{,}0\,\text{mm} : 2 = 1{,}0\cdot10^{-3}\,\text{m}$.
+**Sijoitus:** $V_\text{sade} = 8{,}33\cdot10^{-4}\,\text{m}\cdot6{,}0\cdot10^{3}\,\text{m}^2 = 5{,}0\,\text{m}^3$ ja $V_\text{pisara} = \dfrac{4}{3}\pi\left(1{,}0\cdot10^{-3}\,\text{m}\right)^{3} = 4{,}19\cdot10^{-9}\,\text{m}^3$, joten $N = \dfrac{5{,}0\,\text{m}^3}{4{,}19\cdot10^{-9}\,\text{m}^3} = 1{,}19\cdot10^{9}$
 **Vastaus:** noin $1{,}2$ miljardia pisaraa, kaksi merkitsevää numeroa kuten kaikissa lähtötiedoissa (kenttään sopii $1{,}19$). Jos sade-intensiteetti, kesto tai ala on $20\,\%$ liian suuri, $N$ kasvaa $20\,\%$. Jos pisaran halkaisija on $20\,\%$ liian suuri, pisaran tilavuus kasvaa tekijällä $1{,}2^{3} = 1{,}73$ ja $N$ pienenee noin $42\,\%$. Pisaran koko vaikuttaa eniten, koska tilavuus on halkaisijan kolmannessa potenssissa.
 **Järkevyys:** Jokaiselle neliömetrille tulee $1{,}19\cdot10^{9} : 6{,}0\cdot10^{3} \approx 2\cdot10^{5}$ pisaraa eli noin $20$ pisaraa neliösenttimetrille kymmenessä minuutissa, mikä on kohtuullinen määrä. Suuruusluokka $10^{9}$ ei muutu, vaikka yksittäinen oletus heittäisi parikymmentä prosenttia.
 

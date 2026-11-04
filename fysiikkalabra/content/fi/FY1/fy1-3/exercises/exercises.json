@@ -85,12 +85,12 @@
     {
       "id": "fy1-3-L1-08",
       "level": 1,
-      "text": "Nestelämpömittarin pienin asteikkoväli on $0{,}2\\,{}^\\circ\\text{C}$. Lukeman epävarmuudeksi $\\Delta T$ arvioidaan puoli asteikkoväliä. Kuinka suuri on arvio?",
+      "text": "Levyn paksuus mitataan kahdella välineellä: viivaimella, jonka pienin asteikkoväli on $1{,}0\\,\\text{mm}$, ja digitaalisella työntömitalla, jonka näyttö muuttuu $0{,}01\\,\\text{mm}$:n portain. Lukeman epävarmuudeksi arvioidaan kummallakin puoli pienintä lukemaväliä. Kuinka monta kertaa pienempi on työntömitan lukeman epävarmuus kuin viivaimen?",
       "kind": [
         "model"
       ],
-      "answer": 0.1,
-      "unit": "°C",
+      "answer": 100,
+      "unit": "kertaa",
       "tolerance": 0.02
     }
   ],
@@ -130,7 +130,7 @@
     {
       "id": "fy1-3-L2-05",
       "level": 2,
-      "text": "Levysoittimen levyn kymmenen kierroksen aika mitattiin käsikellolla kahdeksan kertaa, ja tulokset ovat taulukossa. Ota 10 kierroksen ajan virhe-arvioksi vaihteluvälin puolikas ja ilmoita yhden kierroksen aika $T$ muodossa $\\bar{T} \\pm \\Delta T$. Anna keskiarvo $\\bar{T}$ sekunteina pyöristettynä virhe-arvion tarkkuuteen.",
+      "text": "Levysoittimen levyn kymmenen kierroksen aika mitattiin käsikellolla kahdeksan kertaa, ja tulokset ovat taulukossa. Ota 10 kierroksen ajan virhe-arvioksi vaihteluvälin puolikas ja pyöristä keskiarvo virhe-arvion tarkkuuteen. Ilmoita yhden kierroksen aika muodossa $\\bar{T} \\pm \\Delta T$.",
       "kind": [
         "data",
         "reasoning"
@@ -183,7 +183,7 @@
     {
       "id": "fy1-3-L2-06",
       "level": 2,
-      "text": "Kaksi ryhmää mittasi saman vesimäärän, jonka tilavuus tunnetaan tarkasti: $50{,}0\\,\\text{ml}$. Ryhmä A käytti mittalasia ja ryhmä B mittapipettiä, ja tulokset ovat taulukossa. Laske ryhmän A tulosten keskiarvon poikkeama tunnetusta arvosta etumerkkeineen. Kumpi mittaussarja on toistettavampi ja kumpi lähempänä oikeaa arvoa? Perustele vaihteluvälin puolikkailla ja keskiarvoilla.",
+      "text": "Kaksi ryhmää mittasi saman vesimäärän, jonka tilavuus tunnetaan tarkasti: $50{,}0\\,\\text{ml}$. Tulokset ovat taulukossa. Laske ryhmän A tulosten keskiarvon poikkeama tunnetusta arvosta etumerkkeineen. Kumpi mittaussarja on toistettavampi ja kumpi lähempänä oikeaa arvoa? Perustele vaihteluvälin puolikkailla ja keskiarvoilla.",
       "kind": [
         "data",
         "reasoning"
@@ -268,7 +268,7 @@
     {
       "id": "fy1-3-L3-04",
       "level": 3,
-      "text": "Kärryn kulkuaika radan päästä päähän mitattiin käsikellolla kahdeksan kertaa, ja tulokset ovat taulukossa. Kuudennella kerralla oppilas katsoi hetkeksi muualle ja pysäytti kellon myöhään; hän huomasi sen heti ja kirjasi asian muistiin. Saako tuloksen $2{,}97\\,\\text{s}$ jättää pois? Perustele ja laske keskiarvo, jota perustellusti käytät. Mitä jos syytä poikkeamaan ei olisi löytynyt?",
+      "text": "Kärryn kulkuaika radan päästä päähän mitattiin käsikellolla kahdeksan kertaa, ja tulokset ovat taulukossa. Laboratoriopäiväkirjassa on kuudennen mittauksen kohdalla merkintä: ”Katsoin hetkeksi muualle ja pysäytin kellon myöhään.” Saako tuloksen $2{,}97\\,\\text{s}$ jättää pois? Perustele päiväkirjan merkinnällä ja laske keskiarvo $\\bar{t}$, jota perustellusti käytät. Entä jos merkintää ei olisi eikä poikkeamalle löytyisi syytä? Laske silloin keskiarvo kaikista kahdeksasta tuloksesta ja vertaa vaihteluvälin puolikasta tuloksen kanssa ja ilman sitä.",
       "kind": [
         "data",
         "reasoning"
@@ -321,7 +321,7 @@
     {
       "id": "fy1-3-L3-05",
       "level": 3,
-      "text": "Kaksi ryhmää mittasi saman alumiinikappaleen tiheyden. Ryhmä A sai tulokseksi $\\rho_\\text{A} = 2{,}74 \\pm 0{,}05\\,\\text{g/cm}^3$ ja ryhmä B tulokseksi $\\rho_\\text{B} = 2{,}60 \\pm 0{,}05\\,\\text{g/cm}^3$ (epävarmuudet ovat ryhmien arvioita). Oppilas päättelee: ”Tulokset eroavat vain $0{,}14\\,\\text{g/cm}^3$ eli noin $5\\,\\%$, joten ne ovat sopusoinnussa.” Etsi päättelyn virhe. Kuinka suuri on tulosten ero, kun siitä vähennetään epävarmuuksien summa, ja mitä se kertoo?",
+      "text": "Kaksi ryhmää mittasi saman alumiinikappaleen tiheyden. Ryhmä A sai tulokseksi $\\rho_\\text{A} = 2{,}74 \\pm 0{,}05\\,\\text{g/cm}^3$ ja ryhmä B tulokseksi $\\rho_\\text{B} = 2{,}60 \\pm 0{,}05\\,\\text{g/cm}^3$ (epävarmuudet ovat ryhmien arvioita). Oppilas päättelee näin. ”Tulokset eroavat vain $0{,}14\\,\\text{g/cm}^3$ eli noin $5\\,\\%$, joten ne ovat sopusoinnussa.” Etsi päättelyn virhe ja arvioi epävarmuusväleillä, ovatko tulokset sopusoinnussa. Kuinka suuri on välien väliin jäävä rako?",
       "kind": [
         "error",
         "reasoning"

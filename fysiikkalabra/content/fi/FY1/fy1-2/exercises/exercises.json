@@ -54,7 +54,7 @@
       "choices": [
         {
           "text": "Newton ($\\text{N}$), jolla mitataan voimaa.",
-          "feedback": "Newton on johdettu yksikkö: se määritellään perusyksiköiden kilogramma, metri ja sekunti avulla. Perusyksiköitä on vain seitsemän, eikä voiman yksikkö kuulu niihin."
+          "feedback": "Newton on johdettu yksikkö: se saadaan perusyksiköistä tulona ja osamääränä, $1\\,\\text{N} = 1\\,\\text{kg}\\cdot\\text{m/s}^2$. Perusyksiköitä on vain seitsemän, eikä voiman yksikkö kuulu niihin."
         },
         {
           "text": "Kilogramma ($\\text{kg}$), jolla mitataan massaa.",
@@ -63,7 +63,7 @@
         },
         {
           "text": "Gramma ($\\text{g}$), jolla mitataan massaa.",
-          "feedback": "Gramma on kilogrammasta johdettu yksikkö, $1\\,\\text{g} = 10^{-3}\\,\\text{kg}$. Etuliite ei tee yksiköstä perusyksikköä, ja massan SI-perusyksikkö on kilogramma."
+          "feedback": "Gramma ei ole oma perusyksikkönsä vaan kilogrammasta etuliitteellä muodostettu osa, $1\\,\\text{g} = 10^{-3}\\,\\text{kg}$. Massan SI-perusyksikkö on kilogramma."
         },
         {
           "text": "Litra ($\\textsf{l}$), jolla mitataan tilavuutta.",
@@ -74,7 +74,7 @@
     {
       "id": "fy1-2-L1-07",
       "level": 1,
-      "text": "Pyöräilijän nopeus on $18\\,\\text{km/h}$. Ilmoita nopeus yksikössä m/s.",
+      "text": "Pyöräilijän nopeus on $18\\,\\text{km/h}$. Ilmoita nopeus yksikössä $\\text{m/s}$.",
       "kind": [
         "model"
       ],
@@ -150,7 +150,7 @@
     {
       "id": "fy1-2-L2-05",
       "level": 2,
-      "text": "Taulukossa on neljän kulkuneuvon nopeus ilmoitettuna eri yksiköissä. Käytä arvoa $1\\,\\text{solmu} = 1{,}852\\,\\text{km/h}$. Mikä kulkuneuvo on nopein? Ilmoita sen nopeus yksikössä m/s.",
+      "text": "Taulukossa on neljän kulkuneuvon nopeus ilmoitettuna eri yksiköissä. Käytä arvoa $1\\,\\text{solmu} = 1{,}852\\,\\text{km/h}$. Mikä kulkuneuvo on nopein? Ilmoita sen nopeus yksikössä $\\text{m/s}$.",
       "kind": [
         "data",
         "reasoning"
@@ -163,13 +163,13 @@
         "columns": [
           "Kulkuneuvo",
           "$v$",
-          "Yksikkö"
+          "$\\text{Yksikkö}$"
         ],
         "rows": [
           [
             "Pikalaiva",
             "38.0",
-            "solmua"
+            "$\\text{solmua}$"
           ],
           [
             "Juna",
@@ -178,13 +178,13 @@
           ],
           [
             "Pyöräilijä",
-            "14.0",
+            "9.0",
             "$\\text{m/s}$"
           ],
           [
             "Kalastusvene",
-            "21.0",
-            "solmua"
+            "12.0",
+            "$\\text{solmua}$"
           ]
         ]
       }
@@ -233,7 +233,7 @@
     {
       "id": "fy1-2-L2-07",
       "level": 2,
-      "text": "Vesihana täyttää ämpäriä tasaisella virtaamalla $q = 0{,}20\\,\\tfrac{\\textsf{l}}{\\text{s}}$. Oppilas laskee, kauanko $12\\,\\textsf{l}$:n ämpärin täyttäminen kestää: ”Aika on virtaaman ja tilavuuden tulo, $t = qV = 0{,}20\\,\\tfrac{\\textsf{l}}{\\text{s}}\\cdot12\\,\\textsf{l} = 2{,}4$, eli ämpäri täyttyy $2{,}4$ sekunnissa.” Tarkista oppilaan laskun yksiköt ja selitä, mistä yksikkötarkastelu paljastaa virheen. Laske sitten oikea aika minuutteina.",
+      "text": "Vesihana täyttää ämpäriä tasaisella virtaamalla $q = 0{,}20\\,\\textsf{l}/\\text{s}$. Oppilas laskee, kauanko $12\\,\\textsf{l}$:n ämpärin täyttäminen kestää. Oppilaan ratkaisu on: ”Aika on virtaaman ja tilavuuden tulo, $t = qV = 0{,}20\\,\\textsf{l}/\\text{s}\\cdot12\\,\\textsf{l} = 2{,}4$.” Hän päättelee, että ämpäri täyttyy $2{,}4$ sekunnissa. Tarkista oppilaan laskun yksiköt ja selitä, mistä yksikkötarkastelu paljastaa virheen. Laske sitten oikea aika minuutteina.",
       "kind": [
         "error",
         "reasoning"
@@ -283,12 +283,12 @@
     {
       "id": "fy1-2-L3-05",
       "level": 3,
-      "text": "Valmistaja ilmoittaa kahden kannettavan virtalähteen tiedot eri yksiköissä. Molemmat on ladattu täyteen, ja kumpikin syöttää laitetta, jonka teho on taulukon käyttöteho. Toiminta-aika on $t = \\dfrac{E}{P}$, ja teholle pätee $1\\,\\text{W} = 1\\,\\text{J/s}$. Ystäväsi väittää, että laite B kestää kauemmin, koska sen energian lukuarvo $2{,}20$ on suurempi kuin laitteen A lukuarvo $0{,}65$. Onko väite oikein? Kuinka monta tuntia kauemmin pidempään toimiva laite toimii? Perustele.",
+      "text": "Valmistaja ilmoittaa kahden kannettavan virtalähteen tiedot eri yksiköissä. Molemmat on ladattu täyteen, ja kumpikin syöttää laitetta, jonka teho on taulukon käyttöteho. Toiminta-aika on $t = \\dfrac{E}{P}$, ja teholle pätee $1\\,\\text{W} = 1\\,\\text{J/s}$. Energian yksiköille pätee $1\\,\\text{kWh} = 3{,}6\\,\\text{MJ}$. Ystäväsi väittää, että laite B kestää kauemmin, koska sen energian lukuarvo $2{,}20$ on suurempi kuin laitteen A lukuarvo $0{,}65$. Kuinka monta tuntia kauemmin pidempään toimiva laite toimii? Perustele. Onko väite oikein?",
       "kind": [
         "data",
         "reasoning"
       ],
-      "answer": 1.5,
+      "answer": 1.54,
       "unit": "h",
       "tolerance": 0.03,
       "data": {
