@@ -30,7 +30,7 @@ a["fy8-3-L3-02"] = lam_nm(54.4 * (1 / 9 - 1 / 16))         # He+ 4 -> 3: dE = 54
 a["fy8-3-L3-03"] = (En(2) - En(1)) - (0 - En(2))          # 2 -> 1 photon 10,2 eV ionises an atom at n = 2 (3,40 eV): E_k = 6,80 eV
 # Exercise bank additions (teacher 2026-11-04): L1-06 is multiple choice (no number): 4 -> 1 has the largest gap 12,75 eV, so the shortest wavelength 97,3 nm
 a["fy8-3-L1-07"] = lam_nm(En(2) - En(1))                  # Lyman longest 2 -> 1: dE = 10,2 eV, lambda = 121,57 nm -> 122 nm
-a["fy8-3-L1-08"] = En(3) - En(1)                          # absorption 1 -> 3: -1,511 eV + 13,6 eV = 12,089 eV -> 12,1 eV
+a["fy8-3-L1-08"] = En(4) - En(2)                          # absorption 2 -> 4: -0,85 eV + 3,40 eV = 2,55 eV
 import numpy as np
 lam_b = [656.7, 486.1, 434.5, 410.2]                      # L2-05 table (nm) of the Balmer lines n = 3..6
 x_b = [1 / n ** 2 for n in (3, 4, 5, 6)]
@@ -40,7 +40,7 @@ a["fy8-3-L2-05"] = -slope * h / e                         # E_ion = -h k = 13,60
 phot = [300, 413, 500, 207, 248]                          # L2-06 photons (nm); levels of fy8-3/levels-task: E1..E4 = -8, -5, -3, -2 eV
 gaps = [-5.0 + 8.0, -3.0 + 8.0, -2.0 + 8.0]               # absorption from the ground state: 3,0 / 5,0 / 6,0 eV
 a["fy8-3-L2-06"] = sum(any(abs(h * c / (l * 1e-9) / e - g) <= 0.05 for g in gaps) for l in phot)   # 413, 248 and 207 nm -> 3
-a["fy8-3-L2-07"] = En(3) - En(1)                          # correct 3 -> 1 photon: 12,089 eV -> 12,1 eV (pupil wrongly 9 · 13,6 eV = 122 eV)
+a["fy8-3-L2-07"] = En(5) - En(1)                          # correct 5 -> 1 photon: -0,544 eV + 13,6 eV = 13,056 eV -> 13,1 eV (pupil wrongly 25 · 13,6 eV = 340 eV)
 # L3-04: lines 1876, 1282, 1094 nm all end on level m = 3 (n_y = 4, 5, 6 integers only for m = 3); ionisation from n = 3: 1,511 eV
 lines = [1876, 1282, 1094]
 m_ok = [m for m in (1, 2, 3) if all(abs((E1 / -(En(m) + h * c / (l * 1e-9) / e)) ** 0.5 - round((E1 / -(En(m) + h * c / (l * 1e-9) / e)) ** 0.5)) < 0.02 for l in lines)]

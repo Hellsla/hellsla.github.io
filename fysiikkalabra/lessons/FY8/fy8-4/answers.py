@@ -36,7 +36,7 @@ dl_t = [0.32, 1.20, 2.45, 3.60, 4.55]               # pm: λ' − 71,10 pm at θ
 x_t = [1 - math.cos(math.radians(t)) for t in (30, 60, 90, 120, 150)]   # 1 − cos θ = 0,134 ... 1,866
 k_t = sum(x * d for x, d in zip(x_t, dl_t)) / sum(x * x for x in x_t)   # line through the origin: k = 2,426 pm
 a["fy8-4-L2-06"] = 2 * k_t                          # θ = 180°: 1 − cos θ = 2, Δλ = 2 k = 4,852 pm -> 4,85 pm
-a["fy8-4-L2-07"] = 5.00e-3 / (h * c / 650e-9) / 1e16   # 650 nm, 5,00 mW: hf = 3,056e-19 J, N/t = 1,636e16 1/s -> 1,64 (10¹⁶ 1/s)
+a["fy8-4-L2-07"] = 2.0e-3 / (h * c / 633e-9) / 1e15    # 633 nm, 2,0 mW: hf = 3,138e-19 J, N/t = 6,373e15 1/s -> 6,4 (10¹⁵ 1/s)
 r_t = 1.5e-15 / (h * c / 532e-9) * 0.20 * 0.40     # slits: N/t = P/hf = 4017 1/s; detected = 0,20 · 0,40 · 4017 = 321,4 1/s
 a["fy8-4-L3-04"] = 5000 / r_t                       # time for 5000 counts: t = 15,56 s
 lam0, lam1 = 0.07110e-9, 0.07476e-9                 # Compton at θ = 120°: λ = 0,07110 nm, λ' = 0,07476 nm
