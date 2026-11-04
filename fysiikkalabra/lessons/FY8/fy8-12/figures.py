@@ -205,7 +205,7 @@ def tuntematon():
             "loivemmin.")
     ax = Axes(f, (100, 312), (476, 58), x=(0, 48), y=(0, 850), xticks=list(range(2, 49, 2)), yticks=list(range(50, 851, 50)),
               xlabel=r"d\ (\text{mm})", ylabel=r"\text{pulssia}\ /\ \text{min}",
-              xfmt=lambda v: fi(v) if v % 4 == 0 else "", yfmt=lambda v: fi(v) if v % 200 == 0 else "")
+              xfmt=lambda v: fi(v) if v % 6 == 0 else "", yfmt=lambda v: fi(v) if v % 200 == 0 else "")
     ax.curve(lambda d: R0 * 0.5 ** (d / D), 0, 48, GAMMA, 3)
     ax.point(0, R0, GAMMA)
     return f.svg()

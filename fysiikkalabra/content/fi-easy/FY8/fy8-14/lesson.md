@@ -307,12 +307,12 @@ Säteily kulkee aina myös terveen kudoksen läpi. Siksi kasvainta säteilytetä
   <path d="M396,209 L124,120.5 L113.5,153 L385.5,241.5 Z" fill="#e8590c" stroke-linejoin="round" fill-opacity="0.22"/>
   <path d="M404,204 L389,250 L402.5,254 L417.5,208.5 Z" fill="#6c757d" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
   <circle cx="252" cy="180" r="15" fill="#c92a2a" stroke="#1f2933" stroke-width="2.5"/>
-  <line x1="268" y1="174" x2="446" y2="132" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <foreignObject x="452" y="109.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{kasvain}$</div></foreignObject>
-  <foreignObject x="452" y="141.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#c92a2a">$2{,}0\,\text{Gy}$</div></foreignObject>
-  <line x1="268" y1="250" x2="446" y2="252" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <foreignObject x="452" y="229.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{terve kudos}$</div></foreignObject>
-  <foreignObject x="452" y="261.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#e8590c">$0{,}40\,\text{Gy}$</div></foreignObject>
+  <line x1="268" y1="174" x2="434" y2="132" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="440" y="109.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{kasvain}$</div></foreignObject>
+  <foreignObject x="440" y="141.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#c92a2a">$2{,}0\,\text{Gy}$</div></foreignObject>
+  <line x1="268" y1="250" x2="434" y2="252" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="440" y="229.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{terve kudos}$</div></foreignObject>
+  <foreignObject x="440" y="261.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#e8590c">$0{,}40\,\text{Gy}$</div></foreignObject>
   <foreignObject x="452" y="25.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{keila}$</div></foreignObject>
   <line x1="446" y1="48" x2="330" y2="72" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
 </svg>
