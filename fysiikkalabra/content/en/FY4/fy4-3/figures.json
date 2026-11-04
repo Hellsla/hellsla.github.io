@@ -16,6 +16,8 @@
  "F_i": "F_d",
  "F_KL": "F_BS",
  "F_t": "F_road",
+ "F_k": "F_dc",
+ "F_h": "F_dh",
  "F_AP": "F_CT",
  "F_VU": "F_WS",
  "G_k": "G_c",

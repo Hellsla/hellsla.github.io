@@ -222,7 +222,7 @@ a 0
 ## fy4-3-L1-08
 **Annettu:** lapsen voima köyteen $F = 38\,\text{N}$, kelkka liikkuu tasaisella nopeudella, köyden paino jätetään huomiotta
 **Kysytty:** köyden voima lapseen $F_\text{KL}$ yksikössä $\text{N}$
-**Periaate:** Newtonin kolmannen lain mukaan lapsi ja köysi vuorovaikuttavat. Köysi vetää lasta yhtä suurella mutta vastakkaissuuntaisella voimalla kuin lapsi köyttä. Laki pätee, vaikka kelkka liikkuu tasaisella nopeudella. Valitaan kappaleeksi lapsi, joka piirretään suorakulmiona. Köyden voima $\overline{F}_\text{KL}$ osoittaa lapsesta kelkkaa kohti eli lasta vastaan. Lapsen oma voima köyteen vaikuttaa köyteen, joten se ei kuulu lapsen kuvioon.
+**Periaate:** Newtonin kolmannen lain mukaan lapsi ja köysi vuorovaikuttavat. Köysi vetää lasta yhtä suurella mutta vastakkaissuuntaisella voimalla kuin lapsi köyttä. Laki pätee, vaikka kelkka liikkuu tasaisella nopeudella. Valitaan kappaleeksi lapsi. Köyden voima $\overline{F}_\text{KL}$ osoittaa lapsesta kelkkaa kohti eli lasta vastaan. Lapsen oma voima köyteen vaikuttaa köyteen, joten se ei kuulu lapsen kuvioon.
 **Kaava:** $\overline{F}_\text{KL} = -\overline{F}_\text{LK}$, joten suuruuksina $F_\text{KL} = F_\text{LK}$
 **Muunnokset:** Voima on newtoneina, joten muunnoksia ei tarvita.
 **Sijoitus:** $F_\text{KL} = F_\text{LK} = 38\,\text{N}$
@@ -258,24 +258,25 @@ $s = 0{,}500\,\text{m/s}\cdot 6{,}0\,\text{s} = 3{,}0\,\text{m}$.
 **Mallivastaus:** Oppilas ottaa huomioon kaksi voimaa, nyrkin voiman seinään ja seinän voiman nyrkkiin. Ne vaikuttavat kuitenkin eri kappaleisiin. Nyrkin voima seinään vaikuttaa seinään, joten se ei kumoa mitään nyrkkiin vaikuttavaa. Nyrkkiin vaikuttaa seinän voima, ja se on nyrkin liikettä vastaan. Siksi nyrkki hidastuu ja pysähtyy. Voimat ovat silti yhtä suuret, vaikka seinä ei liiku, ja ne syntyvät yhtä aikaa. Liikkeen ylläpitämiseen ei tarvita voimaa.
 
 ## fy4-3-L3-04
-**Annettu:** kärryn vierimisvastus $F_\text{v} = 410\,\text{N}$, ilmanvastus kärryyn $F_\text{k} = 40\,\text{N}$, ilmanvastus hevoseen $F_\text{h} = 30\,\text{N}$, nopeus on vakio ja suoraan eteenpäin, esimerkkiaineisto
+**Annettu:** kärryn vierimisvastus $F_\text{r} = 410\,\text{N}$, ilmanvastus kärryyn $F_\text{k} = 40\,\text{N}$, ilmanvastus hevoseen $F_\text{h} = 30\,\text{N}$, nopeus on vakio ja suoraan eteenpäin, esimerkkiaineisto
 **Kysytty:** a) köyden voima kärryyn $T$; b) tien voima hevosen kavioihin $F_\text{t}$ yksikössä $\text{N}$; c) miksi voimat eivät kumoa toisiaan
 **Periaate:** Sekä kärry että hevonen liikkuvat tasaisella nopeudella, joten kummankin kokonaisvoima on nolla (ensimmäinen laki). Kärrystä saadaan köyden voima. Kolmannen lain mukaan kärry vetää hevosta taaksepäin yhtä suurella voimalla $T$ kuin köysi kärryä eteenpäin. Tätä voimaa käytetään hevosen tasapainossa. Tien voima kavioihin on ulkoinen voima, joka vie parin eteenpäin.
 **Voimakuvio:** Piirrä kärrylle: köyden voima $\overline{T}$ eteenpäin, vierimisvastus ja ilmanvastus taaksepäin. Piirrä hevoselle: tien voima $\overline{F}_\text{t}$ eteenpäin, köyden voima $\overline{T}$ ja ilmanvastus taaksepäin. Hevosen ja kärryn voimat ovat eri kuvioissa.
 ```voimakuvio
 pinta 0
 T 450 oikea
-F_v 410 vasen
+F_r 410 vasen
 F_k 40 vasen
 a 0
----
+```
+```voimakuvio
 pinta 0
 F_t 480 oikea kitka
 T 450 vasen
 F_h 30 vasen
 a 0
 ```
-**Kaava:** Kärry: $T - F_\text{v} - F_\text{k} = 0$, joten $T = F_\text{v} + F_\text{k}$. Hevonen: $F_\text{t} - T - F_\text{h} = 0$, joten $F_\text{t} = T + F_\text{h}$.
+**Kaava:** Kärry: $T - F_\text{r} - F_\text{k} = 0$, joten $T = F_\text{r} + F_\text{k}$. Hevonen: $F_\text{t} - T - F_\text{h} = 0$, joten $F_\text{t} = T + F_\text{h}$.
 **Muunnokset:** Voimat ovat newtoneina, joten muunnoksia ei tarvita.
 **Sijoitus:** $T = 410\,\text{N} + 40\,\text{N} = 450\,\text{N}$ ja
 $F_\text{t} = 450\,\text{N} + 30\,\text{N} = 480\,\text{N}$.

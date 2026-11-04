@@ -1,19 +1,14 @@
-VERDICT: PASS
-CONTENT-HASH: c2d3495c28992833
+VERDICT: FAIL
+CONTENT-HASH: f8729787de7b9147
 
 ## Blocking
+- solutions.md fy4-3-L3-04, the new ```voimakuvio two-body spec — the model diagram is drawn wrongly. The two bodies are 480 N against 30 N, so fbdspec.py scales the arrows up (small force at least 44 px, up to 300 px) and the long arrows run out of their half of the figure: the horse's T (pointing left) is drawn across the cart and ends inside it, so the cart looks to have T pointing backwards (the text says forwards), the cart's forward T and the horse's F_t are cut off or unlabelled, and the label of F_v (rolling resistance) is not visible. A student who compares text and picture would learn a wrong diagram, the exact error the chapter teaches against. Fix: write two separate ```voimakuvio blocks, one per body (cart: pinta 0 / T 450 oikea / F_v 410 vasen / F_k 40 vasen / a 0; horse: pinta 0 / F_t 480 oikea kitka / T 450 vasen / F_h 30 vasen / a 0), each on its own scale, with a sentence before each saying which body it is; check the captures after the rebuild.
 
 ## Polish
-- exercises.json L2-06 — the table runs to 5,0 s but the question asks for the distance in 6,0 s; add "Oleta nopeuden pysyvän samana" or ask for 5,0 s. kind graph but no graph is asked: add "piirrä (t,v)-kuvaaja" or drop graph.
-- solutions.md L2-06 Vastaus a) — "pieni ilmanvastus on hyvin pieni" is a tautology; write "ilmanvastus on niin pieni, ettei nopeus siitä huomattavasti muutu, joten kokonaisvoima on käytännössä nolla".
-- exercises.json L3-05 a) — at t = 3,0 s the speed is 0,69 m/s so "kokonaisvoima nolla" starts fuzzily; add a solution line that readings from 3,0 s differ by less than the 0,02 m/s scatter.
-- exercises.json L3-05 — mostly restates laws I and III with a mean; asking for the force the cart exerts on the student at 2,0 s (4,3 N) would use the data more.
-- exercises.json L1-08 — close to L1-02 and L1-03; the constant-speed twist is the value, no change needed.
+- solutions.md L1-08 Periaate — "Valitaan kappaleeksi lapsi, joka piirretään suorakulmiona" now announces a drawing that never comes (no Voimakuvio step); say instead "Lapsen kuvioon kuuluisi vain köyden voima…" or keep it as a thought step. Wording only, not blocking.
 
 ## Checked
-- Round 2. Earlier report had no Blocking items; the only changes are two Järkevyys lines.
-- L2-05 Järkevyys: differences between A and B are +0,1; −0,1; 0; +0,1; −0,1 N, so "enintään 0,1 N" and "erot vaihtelevat suunnaltaan" are correct; the new wording (light rope pulls equally at both ends) is sound.
-- L3-04 Järkevyys: friction on the hoof points forward because it resists the hoof slipping backward; correct, and the "tavallisesti vastustaa liukumista" contradiction is gone.
-- Numbers unchanged and match: L2-05 4,8 N, L3-04 450 N and 480 N.
-- Levels fit and plan +3/+3/+2 met; scope stays within Newton I and III; MC distractors are real misconceptions with repairing feedback.
-- Solutions complete (principle, voimakuvio, formula, units, substitution, significant figures, sanity check); captures show no clipping.
+- L1-08: the sentence moved into Periaate unchanged in meaning; no equation of motion is written, so no Voimakuvio step is needed; numbers and answer untouched.
+- Opened the L3-04 capture at 1280 px (fi, en, fi-easy): same defect in all three; the capture of L1-08 is text only.
+- Solution order in L3-04 stays principle, diagram text, diagram, formula; forces and numbers unchanged (450 N, 480 N).
+- Hash unchanged at the end of the review.
