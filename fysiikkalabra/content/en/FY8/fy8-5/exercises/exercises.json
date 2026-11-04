@@ -39,6 +39,77 @@
       "answer": -0.544,
       "unit": "eV",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-5-L1-06",
+      "level": 1,
+      "text": "In the Bohr model the electron orbits the nucleus on a precisely determined circular path. In the wave-mechanical model of the atom, the ground state of the hydrogen atom is described by the $1\\text{s}$ orbital. What is the essential difference between an orbital and a Bohr orbit?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "An orbital is not a path but a region inside which the electron is detected with a chosen probability; no route can be drawn.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The orbital is still a path, but its radius varies slightly, because the electron oscillates on both sides of the path as it goes around the nucleus.",
+          "feedback": "In the wave model the electron has no path at all, not even an imprecise one. A measurement always gives a single point, and the orbital describes only the distribution of many measurements."
+        },
+        {
+          "text": "The orbital is a spherical surface on which the electron always stays, so the distance of the electron from the nucleus is the same in every measurement.",
+          "feedback": "The measurement results scatter over different distances: the $1\\text{s}$ electron is detected most often near the nucleus but sometimes farther away. An orbital is not a surface on which the electron stays."
+        },
+        {
+          "text": "An orbital is not a path but a region inside which the electron is detected with a chosen probability; no route can be drawn.",
+          "feedback": "Correct: in the wave model the state of the electron is described by a standing wave, which tells the probability of detection. The boundary of an orbital is an agreed probability boundary, and the electron has no path along which it would travel.",
+          "correct": true
+        },
+        {
+          "text": "The orbital is the inner structure of the electron: the electron is spread out into a cloud, and each measurement finds only a small part of it.",
+          "feedback": "In a measurement the electron is always detected whole at a single point, not in parts. The cloud arises only from many measurements, and it describes the distribution of the points."
+        }
+      ]
+    },
+    {
+      "id": "fy8-5-L1-07",
+      "level": 1,
+      "text": "In a computer simulation, the position of the $1\\text{s}$ electron of a hydrogen atom is measured once and the result is marked as a point in the picture. The measurement is repeated $5000$ times, and the points form a cloud that is densest near the nucleus. What does the point cloud describe?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The cloud describes the distribution of the measurement results: there are the most points where the electron is most probably detected.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The cloud is the route travelled by the electron, because between the measurements the electron moves quickly from point to point and leaves a trail.",
+          "feedback": "Between measurements the position of the electron cannot be described as a route. The points are independent measurement results, not the trail of one electron."
+        },
+        {
+          "text": "The cloud shows the exact position of the electron, which is at the densest part of the cloud, and the other points arise from the noise of the measuring device.",
+          "feedback": "The electron has no single exact position that the cloud would show. Each point is an equally valid measurement result, and the distribution of the points tells where the electron is most probably detected."
+        },
+        {
+          "text": "The cloud shows that the electron breaks into thousands of pieces in a measurement, each of which shows up as one point in the picture.",
+          "feedback": "The electron does not break into pieces. In each measurement a whole electron is detected at one place, and there are as many points as there are measurements."
+        },
+        {
+          "text": "The cloud describes the distribution of the measurement results: there are the most points where the electron is most probably detected.",
+          "feedback": "Correct: one measurement gives one random point, and the probability distribution of the wave model becomes visible only from many measurements.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "fy8-5-L1-08",
+      "level": 1,
+      "text": "An electron has spin, so at most two electrons can be in one orbital. What is the greatest number of electrons that fit in the $4\\text{f}$ subshell?",
+      "kind": [
+        "concept"
+      ],
+      "answer": 14,
+      "unit": "electrons",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -73,6 +144,95 @@
       "answer": 365,
       "unit": "nm",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-5-L2-05",
+      "level": 2,
+      "text": "Example data: the distance of the $1\\text{s}$ electron of a hydrogen atom from the nucleus is measured $N = 400$ times in a simulation. The table gives the number of measurements $k$ in each class, when the width of a class is $0.05\\,\\text{nm}$.\n\na) Which distance class is the most common?\n\nb) What share of the measurements land at a distance of less than $0.10\\,\\text{nm}$? Give the share as a percentage.\n\nc) Is the data consistent with the radius of the $90\\,\\%$ boundary of the $1\\text{s}$ orbital being $0.14\\,\\text{nm}$? Justify with numbers.\n\nEnter the result of part b) in the answer box.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 72.25,
+      "unit": "%",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Distance of the electron from the nucleus, $N = 400$ measurements",
+        "columns": [
+          "$r\\,(\\text{nm})$",
+          "$k$"
+        ],
+        "rows": [
+          [
+            "0.00–0.05",
+            "118"
+          ],
+          [
+            "0.05–0.10",
+            "171"
+          ],
+          [
+            "0.10–0.15",
+            "79"
+          ],
+          [
+            "0.15–0.20",
+            "23"
+          ],
+          [
+            "0.20–0.25",
+            "7"
+          ],
+          [
+            "0.25–0.30",
+            "2"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy8-5-L2-06",
+      "level": 2,
+      "text": "The figure shows the first three standing waves of a string fixed at both ends. Example data: the length of the string is $L = 0.80\\,\\text{m}$ and the speed of the wave in the string is $v = 64\\,\\text{m/s}$.\n\na) What is the wavelength $\\lambda$ of each state in the figure?\n\nb) Calculate the frequency $f$ of each state.\n\nc) Using the frequencies you calculated, justify why a state with more nodes corresponds to a higher frequency, and say what this tells about the states of the electron in an atom.\n\nEnter in the answer box the result of part b) for the state that has two nodes.",
+      "kind": [
+        "graph",
+        "concept"
+      ],
+      "figure": "fy8-5/string",
+      "answer": 120,
+      "unit": "Hz",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-5-L2-07",
+      "level": 2,
+      "text": "A student looks at a picture of the $1\\text{s}$ orbital of a hydrogen atom, in which the boundary is the $90\\,\\%$ boundary, and reasons: “The boundary is a wall. The electron always stays inside the boundary, so not a single measurement lands outside it.” In a simulation, however, $205$ of $2000$ measurements land outside the boundary. What is the error in the student’s reasoning?",
+      "kind": [
+        "error",
+        "concept"
+      ],
+      "answer": "The boundary is an agreed probability boundary: about nine tenths of the measurements land inside it, and the rest land outside.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The simulation is faulty, because it should give all hits inside the boundary if the boundary of the orbital has been drawn in the right place.",
+          "feedback": "The simulation works correctly. There are supposed to be hits outside the boundary, because the $90\\,\\%$ boundary leaves about every tenth measurement outside."
+        },
+        {
+          "text": "The boundary is an agreed probability boundary: about nine tenths of the measurements land inside it, and the rest land outside.",
+          "feedback": "Correct: about $10\\,\\%$ of the measurements land outside, that is, about $200$ hits out of $2000$. The number $205$ fits this, and the boundary of an orbital is not a wall.",
+          "correct": true
+        },
+        {
+          "text": "The electron rushes so fast that it sometimes has time to get outside the boundary, although it stays inside the boundary most of the time.",
+          "feedback": "The hits are not caused by the electron rushing about quickly. Each measurement gives one point, and the hits outside belong to the probability distribution of the wave model."
+        },
+        {
+          "text": "The hits outside are measurement errors that would disappear if the measuring device were accurate enough, so the boundary would then be a wall.",
+          "feedback": "The hits are not errors. They belong to the distribution, and even a more accurate measurement would find the electron outside the boundary one time in ten."
+        }
+      ]
     }
   ],
   "level3": [
@@ -99,6 +259,87 @@
       "answer": 4240,
       "unit": "hits",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-5-L3-04",
+      "level": 3,
+      "text": "Example data: the visible lines of the emission spectrum of hydrogen gas arise when the electron of an atom moves from a higher shell to the shell $n = 2$. The table gives the wavelengths $\\lambda$ of four lines.\n\nThe energy levels of the hydrogen atom are $E_n = -\\tfrac{13.6\\,\\text{eV}}{n^2}$, but the starting shells of the lines are not known.\n\na) Calculate the energy $E_\\text{f}$ of the photon of each line in electronvolts.\n\nb) For each line, deduce the number $n$ of the starting shell by solving it from the equation $E_\\text{f} = E_n - E_2$. Justify why the results must be integers.\n\nc) Draw a graph with $\\tfrac{1}{4} - \\tfrac{1}{n^2}$ on the horizontal axis and $E_\\text{f}$ on the vertical axis, and fit a straight line to the points. Determine the slope of the line and say what it expresses.\n\nd) Predict the wavelength of the next line, the transition starting from the shell $n = 7$.\n\nEnter the slope of part c) in the answer box in electronvolts.",
+      "kind": [
+        "data",
+        "graph",
+        "model",
+        "reasoning"
+      ],
+      "answer": 13.6,
+      "unit": "eV",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Lines of the emission spectrum of hydrogen",
+        "columns": [
+          "Line",
+          "$\\lambda\\,(\\text{nm})$"
+        ],
+        "rows": [
+          [
+            "1",
+            "657.1"
+          ],
+          [
+            "2",
+            "485.4"
+          ],
+          [
+            "3",
+            "433.5"
+          ],
+          [
+            "4",
+            "410.6"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy8-5-L3-05",
+      "level": 3,
+      "text": "The table gives the first ionisation energy $E_\\text{i}$ of three alkali metals, that is, the smallest energy needed to release the outermost electron from an atom in the ground state. Source: NIST Atomic Spectra Database.\n\nA sodium atom absorbs light when its valence electron moves from the ground state to a higher state. The energy of the transition is $2.10\\,\\text{eV}$.\n\na) Write the ground-state electron configuration of the sodium atom ($Z = 11$) and justify why there is only one electron in the outermost shell.\n\nb) Using the table, explain why the ionisation energy decreases from lithium to potassium even though the charge of the nucleus increases. Use shells and the mutual repulsion of electrons.\n\nc) The transition is $3\\text{s} \\to 3\\text{p}$. Calculate the wavelength of the photon that moves the valence electron of sodium from the state $3\\text{s}$ to the state $3\\text{p}$.\n\nd) Calculate the wavelength shorter than which a photon can release the valence electron of sodium from the atom, and deduce whether the energy of the photon of part c) is enough for that.\n\nEnter the result of part c) in the answer box in nanometres.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 590,
+      "unit": "nm",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Ionisation energies of the alkali metals",
+        "columns": [
+          "Element",
+          "$Z$",
+          "$n$ (outermost shell)",
+          "$E_\\text{i}\\,(\\text{eV})$"
+        ],
+        "rows": [
+          [
+            "Li",
+            "3",
+            "2",
+            "5.39"
+          ],
+          [
+            "Na",
+            "11",
+            "3",
+            "5.14"
+          ],
+          [
+            "K",
+            "19",
+            "4",
+            "4.34"
+          ]
+        ]
+      }
     }
   ]
 }
