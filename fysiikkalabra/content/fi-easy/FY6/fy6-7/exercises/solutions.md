@@ -151,7 +151,7 @@
 **Kaava:** $E_\text{vrk} = Pt$ jokaiselle laitteelle ja $E_\text{vuosi} = 365 \cdot E_\text{vrk,yht}$
 **Muunnokset:** $90\,\text{W} = 0{,}090\,\text{kW}$, $110\,\text{W} = 0{,}110\,\text{kW}$, $60\,\text{W} = 0{,}060\,\text{kW}$, $1200\,\text{W} = 1{,}200\,\text{kW}$ ja $800\,\text{W} = 0{,}800\,\text{kW}$
 **Sijoitus:** Valaistus $0{,}090\,\text{kW} \cdot 5{,}0\,\text{h} = 0{,}45\,\text{kWh}$; televisio $0{,}110\,\text{kW} \cdot 4{,}0\,\text{h} = 0{,}44\,\text{kWh}$; tietokone $0{,}060\,\text{kW} \cdot 6{,}0\,\text{h} = 0{,}36\,\text{kWh}$; pölynimuri $1{,}200\,\text{kW} \cdot 0{,}50\,\text{h} = 0{,}60\,\text{kWh}$; leivänpaahdin $0{,}800\,\text{kW} \cdot 0{,}20\,\text{h} = 0{,}16\,\text{kWh}$. Summa on $2{,}01\,\text{kWh}$ vuorokaudessa. Siis $E_\text{vuosi} = 365 \cdot 2{,}01\,\text{kWh} = 733{,}65\,\text{kWh}$.
-**Vastaus:** a) Eniten energiaa käyttää pölynimuri, vaikka se on päällä vain puoli tuntia.
+**Vastaus:** Vastauslaatikkoon $730\,\text{kWh}$. a) Eniten energiaa käyttää pölynimuri, vaikka se on päällä vain puoli tuntia.
 
 b) $730\,\text{kWh}$. Vastaus on annettu kahdella merkitsevällä numerolla kuten tehot ja ajat.
 
@@ -166,7 +166,7 @@ c) Säästökohteeksi sopii valaistus. Se on toiseksi suurin erä. Sen tehoa voi
 **Kaava:** $E = E_\text{loppu} - E_\text{alku}$, $P_\text{ka} = \dfrac{E}{t}$ ja $K = aE$
 **Muunnokset:** $t = 7 \cdot 24\,\text{h} = 168\,\text{h}$; $a = 16\,\text{snt/kWh} = 0{,}16\,\text{€/kWh}$; lopuksi $1\,\text{kW} = 1000\,\text{W}$
 **Sijoitus:** Viikon energia on $E = 12\,493{,}5\,\text{kWh} - 12\,437{,}2\,\text{kWh} = 56{,}3\,\text{kWh}$. Vuorokaudessa se on $56{,}3\,\text{kWh} : 7 = 8{,}04\,\text{kWh}$. Keskiteho on $P_\text{ka} = \dfrac{56{,}3\,\text{kWh}}{168\,\text{h}} = 0{,}3351\,\text{kW} = 335{,}1\,\text{W}$. Hinta on $K = 0{,}16\,\tfrac{\text{€}}{\text{kWh}} \cdot 56{,}3\,\text{kWh} = 9{,}008\,\text{€}$.
-**Vastaus:** a) Vuorokausien energiat ovat $7{,}7$; $7{,}2$; $8{,}2$; $7{,}5$; $9{,}1$; $9{,}2$ ja $7{,}4\,\text{kWh}$. Viikossa energiaa kuluu $56{,}3\,\text{kWh}$ ja keskimäärin $8{,}04\,\text{kWh}$ vuorokaudessa.
+**Vastaus:** Vastauslaatikkoon $335\,\text{W}$. a) Vuorokausien energiat ovat $7{,}7$; $7{,}2$; $8{,}2$; $7{,}5$; $9{,}1$; $9{,}2$ ja $7{,}4\,\text{kWh}$. Viikossa energiaa kuluu $56{,}3\,\text{kWh}$ ja keskimäärin $8{,}04\,\text{kWh}$ vuorokaudessa.
 
 b) $335\,\text{W}$. Vastaus on annettu kolmella merkitsevällä numerolla kuten energian erotus $56{,}3\,\text{kWh}$.
 
@@ -181,7 +181,7 @@ c) $9{,}0\,\text{€}$.
 **Kaava:** $P_\text{ka} = \dfrac{E}{t}$ ja $E_\text{vuosi} = P_\text{ka} t_\text{vuosi}$
 **Muunnokset:** $t_\text{vuosi} = 365 \cdot 24\,\text{h} = 8760\,\text{h}$
 **Sijoitus:** $P_\text{ka} = \dfrac{1{,}64\,\text{kWh}}{48\,\text{h}} = 0{,}03417\,\text{kW}$ ja $E_\text{vuosi} = 0{,}03417\,\text{kW} \cdot 8760\,\text{h} = 299{,}3\,\text{kWh}$
-**Vastaus:** a) Suoralta luettu energia $48\,\text{h}$:n kohdalla on $1{,}64\,\text{kWh}$.
+**Vastaus:** Vastauslaatikkoon $300\,\text{kWh}$. a) Suoralta luettu energia $48\,\text{h}$:n kohdalla on $1{,}64\,\text{kWh}$.
 
 b) $300\,\text{kWh}$. Vastaus on annettu kahdella merkitsevällä numerolla, koska suoran sovitus silmällä rajoittaa tarkkuutta.
 
@@ -196,7 +196,7 @@ c) Huoneen lämpötila on mittauksen aikana eri kuin vuoden keskiarvo. Oven avau
 $$S = E_\text{varaaja}\,(a_\text{kallis} - a_\text{halpa}).$$
 **Muunnokset:** Kustannukset lasketaan sentteinä. Lopuksi ne muunnetaan euroiksi: $100\,\text{snt} = 1\,\text{€}$.
 **Sijoitus:** Jaksojen kustannukset ovat $4{,}68$; $12{,}96$; $32{,}24$; $19{,}20$; $162{,}96$ ja $35{,}40$ senttiä. Esimerkiksi ensimmäinen jakso on $1{,}2\,\text{kWh} \cdot 3{,}9\,\tfrac{\text{snt}}{\text{kWh}} = 4{,}68\,\text{snt}$. Summa on $267{,}44\,\text{snt} = 2{,}674\,\text{€}$. Kokonaisenergia on $19{,}0\,\text{kWh}$, joten $a_\text{ka} = 267{,}44\,\text{snt} : 19{,}0\,\text{kWh} = 14{,}08\,\text{snt/kWh}$. Varaajan energia on $E_\text{varaaja} = 2{,}0\,\text{kW} \cdot 3{,}0\,\text{h} = 6{,}0\,\text{kWh}$. Säästö on $S = 6{,}0\,\text{kWh} \cdot (19{,}4 - 3{,}9)\,\tfrac{\text{snt}}{\text{kWh}} = 93{,}0\,\text{snt} = 0{,}930\,\text{€}$.
-**Vastaus:** a) $2{,}7\,\text{€}$ ja keskihinta $14\,\text{snt/kWh}$.
+**Vastaus:** Vastauslaatikkoon $0{,}93\,\text{€}$. a) $2{,}7\,\text{€}$ ja keskihinta $14\,\text{snt/kWh}$.
 
 b) $0{,}93\,\text{€}$ vuorokaudessa. Vastaus on annettu kahdella merkitsevällä numerolla kuten varaajan teho $2{,}0\,\text{kW}$.
 
@@ -212,7 +212,7 @@ c) Säästö syntyy, koska sama energia $6{,}0\,\text{kWh}$ ostetaan halvemmalla
 **Sijoitus:** $\Delta E = 320\,\text{kWh} - 98\,\text{kWh} = 222\,\text{kWh}$ vuodessa ja $S = 0{,}17\,\tfrac{\text{€}}{\text{kWh}} \cdot 222\,\text{kWh} = 37{,}74\,\text{€}$ vuodessa. Takaisinmaksuaika on
 $$T = \dfrac{489\,\text{€}}{37{,}74\,\text{€/a}} = 12{,}96\,\text{a}.$$
 Käyttöiän aikana säästö on $15\,\text{a} \cdot 37{,}74\,\text{€/a} = 566{,}1\,\text{€}$. Siis $V = 566{,}1\,\text{€} - 489\,\text{€} = 77{,}1\,\text{€}$.
-**Vastaus:** a) $222\,\text{kWh}$ vuodessa eli $38\,\text{€}$ vuodessa.
+**Vastaus:** Vastauslaatikkoon $13\,\text{a}$. a) $222\,\text{kWh}$ vuodessa eli $38\,\text{€}$ vuodessa.
 
 b) $13\,\text{a}$. Vastaus on annettu kahdella merkitsevällä numerolla kuten hinta $17\,\text{snt/kWh}$ ja energia $98\,\text{kWh}$.
 
