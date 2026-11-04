@@ -1,18 +1,20 @@
-VERDICT: PASS
-CONTENT-HASH: 88089ff793c3d21f
+VERDICT: FAIL
+CONTENT-HASH: bc698d30f1bc8ada
 
 ## Blocking
+- solutions.md:180 (fy4-15-L2-07, "Mallivastaus virheestä") — the unit check is wrong: (kg/m^3)(m^2)(m/s) = kg/s, not "kg/(m·s)". The conclusion (not a watt) is right but the stated result is false physics — fix to "kg/m^3 · m^2 · m/s = kg/s, ei W = kg·m^2/s^3; puuttuu v^2 eli m^2/s^2".
 
 ## Polish
-- exercises.json fy4-15-L1-02 — tehtävä (1 m³, 24 m, 235 kJ) on sama lasku kuin luvun Ydinajatus-tekstissä; vastaus löytyy sivulta. — Vaihda luvut (esim. 18,0 m, 2500 kg).
-- fy4-15-L3-01 — yhden ideaan (v³) suhdetehtävä, lähes sama kuin Tarkista 3; "keskinopeus" ei kelpaa v³-lain kanssa. — Vaihda "tuulen nopeus" ja yhdistä toiseen ideaan (pinta-ala tai korkeus).
-- Taso 3 on kolme suhdelaskua, ei selitystehtävää. — Yksi tehtävä voisi pyytää perustelun sanoin.
-- fy4-15-L1-05 — "myrskyisenä päivänä tasaisella teholla" ristiriidassa luvun säästä riippuvan tuotannon kanssa. — Muotoile esim. "vakioteholla".
+- fy4-15-L3-04 c) solution explains the 13 m/s case with "lapoja käännetään"; add that this is how the real power curve flattens (one sentence), and consider splitting the long "Mallivastaus kohtiin a ja c" into a) and c) lines for phone reading.
+- fy4-15-L3-04 "Järkevyys" cites the 59 % upper limit; the lesson does not teach it, so say "teoreettinen yläraja (Betzin raja)" or drop it.
+- fy4-15-L2-06 answer field 19 GWh but computed 18,8; use 18,8 (three digits) so students computing exactly are not told they are rounding.
+- fy4-15-L3-05 a) is a level-2 computation; the level-3 part is b) and c). Acceptable, but say in c) which energy (240 MWh in the water) the 6 h refers to.
+- fy4-15-L2-07 and L3-04 both use eta = 0,40; vary one (e.g. 0,35).
 
 ## Checked
-- Tasot 5/4/3; L1 yksi kaava, L2 muunnos tai kaavan ratkaisu, L3 suhteet ja vertailu.
-- Kaikki vastaukset laskettu uudelleen ja täsmäävät (15,9 MW; 235 kJ; 92 %; 480 kW; 18 MWh; 96,5; 44,9 %; 40,7 kW; 5,73 MWh; 3,375; 3,90; 5,10 m).
-- Annettu/Kysytty/Periaate/Kaava/Muunnokset/Sijoitus/Vastaus/Järkevyys kaikissa ratkaisuissa; periaate perusteltu.
-- Merkitsevät numerot ja toleranssit sopivat pyöristetylle vastaukselle.
-- Litra-muunnos (L2-03) ja kilometri (siirto) tarjoavat muunnoskoulutusta.
-- 1280 px: ratkaisut avautuvat kortin sisään, ei leikkautumista.
+- Recomputed: 2,918 MW; 180 kJ; 5,478 GWh; 18,80 GWh, ratio 4,3; 242 kW; P/v^3 = 1,24-1,27, eta 39,9 %, 2751 kW at 13 m/s; 300 MWh, 1,036e6 m^3, 240 MWh, 6,0 h; all match answers.
+- L1-06 distractors address real errors; feedback repairs them.
+- L2-07 error (v instead of v^3) is real; student's 4948 W reproduces.
+- Scope: P = rho Q g h, P = 1/2 eta rho A v^3, pumped storage per plan; nothing beyond the lesson except the Betz remark.
+- Levels fit; counts 8/7/5 reached; no duplicate within the set.
+- Renders at 1280 px not clipped.

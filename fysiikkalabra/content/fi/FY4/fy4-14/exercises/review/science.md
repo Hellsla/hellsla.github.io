@@ -1,20 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 3daf47c3361e7181
+CONTENT-HASH: 71907f335cfdbc4e
 
 ## Blocking
 
 ## Polish
-- solutions.md:71–79 (L1-05) — $\overline{F}_\text{r}$ is drawn 15 units (6 : 24 on the horizontal scale, which is right), but its filled head is about as long as that, so it reads as a bare arrowhead at the left face. Its text alternative also calls it only "voima Fr". — Fix: let fbdspec give it the word "vierimisvastus", or draw the head shorter for short arrows.
-- solutions.md:38–44 (L1-03) — This is still open from round 1. The task is about $\overline{a}$ pointing against the motion. Add `v alas`, as in L1-04 and L2-03.
-- solutions.md:159–167 and 179–187 (L3-01, L3-02) — This is still open from round 1. Each diagram shows one body at two moments, but the text alternative says "Voimakuviot kummastakin kappaleesta … Kappale 1 / Kappale 2". — Fix: give fbdspec a "two moments" wording.
+- solutions.md:307–308 (L3-05 c, Järkevyys) — "Pisaran paino on vain noin 1,4·10⁻⁴ N, joten pieni ilmanvastus riittää … pienellä nopeudella" is true only for a small, light drop relative to its cross-section (B); and "kokee putoamisen vain noin 190 s ajan" says "vain" although the fall lasts ten times longer than without drag (17,5 s) — write "pisara on kevyt kokoonsa nähden, joten …" and drop "vain".
+- solutions.md:252 and 291 (L2-05, L3-04) — three significant figures are justified by the mass, but the limiting datum is the time step read from the table (Δt = 0,40 s and 1,0 s, two figures) and the secant only approximates the slope at the midpoint — answer 0,11 N and 2,2 kN, or justify the third figure.
+- solutions.md:253 (L2-05 Järkevyys) — "kiihtyvyys … noin puolet putoamiskiihtyvyydestä, kuten pitää" repeats the result instead of checking it — compare instead with the table's end: F_v approaches the weight 0,196 N as v levels off.
+- exercises.json:215 (L2-06) — the comparison of drag at different speeds needs cones of the same size and shape; "samanmuotoisia" alone leaves size open — write "samankokoisia ja samanmuotoisia (sisäkkäin)".
+- Set vs plan (docs/exercise-bank/FY4.md) — L2-05 (falling ball, slope → F_v = m(g − a)) repeats the method of L3-03 one level lower; the plan's level-3 linearisation (v_raja², m) is not there, and the plan's (t, v) parachute figure is a table in L2-07 — update the plan or change one task.
 
 ## Checked
-- Hash 3daf47c3361e7181 at the start and at the end. The only change since round 1 is solutions.md:75 (`F 24 oikea kitka`).
-- I rendered all 12 blocks with `fbdspec.py show`, viewed them, and measured every arrow from the SVG.
-- Round-1 blocker 1 (L1-05) is gone. The horizontal forces are on their own common scale: F 60, F_v 45, F_r 15, so 45 + 15 = 60 is visible under `a 0`. G and N are both 100. The text alternative says that the horizontal scale is different.
-- Round-1 blocker 2 (L1-05) is gone. The road's friction force $\overline{F}$ now starts at the front lower corner of the contact surface and points forward along the surface. The step text ("tien kitkavoima $\overline{F}$ … eteenpäin"), the equation $F - F_\text{v} - F_\text{r} = 0$ and the task use the same symbol.
-- Round-1 polish item L2-04 is resolved: F_v 60 and F_r 24 (0,40, which is the true 450 : 180). The axis has its own scale, a points left, and the text alternative says so.
-- These one-scale ratios match the true ones within 0,5 px: L1-02 25,5 % (true 25,5 %), L1-03 G 73,5 % (73,6 %), L1-04 27 % (27,2 %), L2-02 39 % (38,8 %), L2-03 44,5 % (44,7 %), L3-01 35 : 70 (½), L3-02 21,5 : 70 (30,6 %), L3-03 33,5 % (33,7 %). No force falls under the 15 % floor.
-- At terminal speed the forces are drawn equal (L1-01, L2-01, L3-01 first moment). F_v opposes v in every diagram: down while rising (L1-04, L2-03, L3-02 first moment).
-- No diagram now contradicts its step text, equation or motion.
-- I recomputed all 12 answers in one script from the task text; all agree (L3-03 from the tangent slope 6,5 m/s²).
+- All 17 numeric answers recomputed independently (one script): json, answers.py and own model agree within tolerance; L3-04 F_v/mg = 2,78, ΣF = −1435 N; L3-05 v = 171,6 m/s = 618 km/h, 21× the 8,0 m/s.
+- Data realism: foam-ball table follows v_t·tanh(gt/v_t) with v_t ≈ 5,8 m/s; cone speeds scale as √m (F ∝ v², plan's test); 0,0140 g drop ≈ 3 mm, 8 m/s terminal realistic; parachute decelerations 2,8 g, consistent with the lesson's "lähes kolminkertainen".
+- MC L1-06, L1-07, L2-07: exactly one correct option, every distractor's feedback right; "samankokoinen ja samanmuotoinen" condition stated in L1-07.
+- L1-08: student's 2089 N reproduces mg + F_v; correct 911 N up.
+- Voimakuvio specs of new solutions: forces, a and v agree with the motion (L3-05 render checked).
+- Scope: G + F_v = ma, terminal velocity, v² = 2gh; drag never computed from speed; F ∝ v² only inferred from data, as planned.
+- Levels 8/7/5 fit; solutions complete.

@@ -1,17 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: 88089ff793c3d21f
+CONTENT-HASH: bc698d30f1bc8ada
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] L2-02, L3-01, L3-02 (open-exercises-L2-1280-3, -L3-1280-2) — a Vastaus that starts with "noin" is shown as plain text, while the other nine have the boxed answer; the set looks inconsistent — start these Vastaus lines with the value ($45\,\%$, $3{,}4$ kertaa, $3{,}9$ kertaa) and put "noin" after it, so the box appears.
-- [Minor] L1-04 (open-exercises-1280-4) — the box shows $480\,\text{kW}$ (three figures read), then the line says two significant figures, "Eli $4{,}8 \cdot 10^{2}\,\text{kW}$" — box $4{,}8 \cdot 10^{2}\,\text{kW}$ first, as the lesson's check-2 does with $8{,}0 \cdot 10^{2}\,\text{kW}$.
-- [Minor] L3-03 Periaate — "Kilogramman ilmaa liike-energia on … ja kilogramman vettä potentiaalienergia pienenee" is ungrammatical — "Kilogrammalla ilmaa on liike-energiaa $\tfrac{1}{2}mv^2$, ja kilogramman vesimäärän potentiaalienergia pienenee pudotuksessa $mgh$." Järkevyys "Kilogrammalla tuulta" → "Kilogrammalla tuulen ilmaa".
-- [Minor] L3-01/L3-02 Kaava, L3-03 Sijoitus (open-exercises-L3-1280-1/-4) — the page sets a one-letter left side ($x$, $h$) alone on its first row with "=" below, which wastes a row and breaks the reading — build (mathlayout) behaviour, not the text: keep a short left side on the first row.
+- [Minor] exercises.json fy4-15-L2-07 (task 12-15, capture L2-1280-8) — the student's quotation uses straight quotes and its closing full stop and quote mark (".) wrap alone onto a new row after the formula chain; use Finnish quotes ”…” and put the student's formula on its own display row.
+- [Minor] solutions.md fy4-15-L1-07, L1-08, L2-07, L3-04 (captures 1280-7, 1280-8, L2-1280-7, L3-1280-5) — units are set as stacked \tfrac{kg}{m^3}, \tfrac{m}{s} in the Sijoitus chains, which shrinks them to about 60 % and looks cramped; the house form is \text{kg/m}^3, \text{m/s}. Same style as the unchanged tasks 12-1..12-5, so it can wait for a chapter-wide pass.
+- [Minor] solutions.md fy4-15-L3-04, Kaava and Vastaus (capture L3-1280-6) — inline \dfrac fractions in running text make uneven line spacing; \tfrac inline is enough.
+- [Minor] fy4-15-L2-05/L3-04/L3-05 solutions are 319-384 words (lint warning); acceptable at level 3.
+- [Minor] fy4-15-L3-04 Annettu (capture L3-1280-6) — ranges "4-9" and "80-905" are set with a plain hyphen inside maths; use an en dash outside the maths ("4–9 m/s") as the Sijoitus line does.
 
 ## Checked
-- Contact sheets 3–5; open-exercises-1280-1 (L1-01), -1280-4 (L1-04), open-exercises-L2-1280-2/-3 (L2-01…03, litre $\textsf{l}$ reads correctly), open-exercises-L3-1280-1/-2/-4 (L3-01…03).
-- No figures in the set. Each solution follows Annettu → Periaate → Kaava → Muunnokset → Sijoitus → Vastaus → Järkevyys; units upright with thin space; decimal comma; `\cdot` and colon division; no plain number-with-unit; opened answers and solutions stay inside their cards; "Kirjoita ratkaisu" buttons as designed.
+- Level 1 new tasks 12-6, 12-7, 12-8 (1280-5..8): MC options and feedback, answer boxes, solution cards intact.
+- Level 2 new tasks 12-13, 12-14, 12-15 (L2-1280-5..9): data tables with caption and LaTeX headers, multi-part texts, aligned chains, the error-analysis answer 240 kW.
+- Level 3 new tasks 12-19, 12-20 (L3-1280-3..8): table tasks, aligned Sijoitus, long Mallivastaus readable, no clipping.
+- No 390/360 px capture of the exercise cards exists (only the figures and stage captures); layout 360/768/1280 checks ok in the packet; lint now 0 errors, warnings only.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4
