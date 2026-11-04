@@ -352,7 +352,7 @@ A narrow beam of white light arrives from air at the surface of a crown-glass pl
 
 <!-- vaihe -->
 
-**Given and find.** Angle of incidence $\alpha_1 = 60.0^\circ$; from the table the refractive index of red light is $n_\text{p} = 1.5143$ and of violet $n_\text{v} = 1.5302$. We are asked for the angles of refraction $\alpha_\text{p}$ and $\alpha_\text{v}$ and their difference $\Delta\alpha = \alpha_\text{p} - \alpha_\text{v}$.
+**Given and find.** Angle of incidence $\alpha_1 = 60.0^\circ$; from the table the refractive index of red light is $n_\text{r} = 1.5143$ and of violet $n_\text{v} = 1.5302$. We are asked for the angles of refraction $\alpha_\text{r}$ and $\alpha_\text{v}$ and their difference $\Delta\alpha = \alpha_\text{r} - \alpha_\text{v}$.
 
 <!-- vaihe -->
 
@@ -377,10 +377,10 @@ A narrow beam of white light arrives from air at the surface of a crown-glass pl
 **Substitution.**
 ```latex
 \begin{aligned}
-&\sin \alpha_\text{p} = \frac{\sin \alpha_1}{n_\text{p}} \\
+&\sin \alpha_\text{r} = \frac{\sin \alpha_1}{n_\text{r}} \\
 &= \frac{\sin 60.0^\circ}{1.5143} \\
 &= 0.57190 \\
-&\alpha_\text{p} = 34.88^\circ \\[6pt]
+&\alpha_\text{r} = 34.88^\circ \\[6pt]
 &\sin \alpha_\text{v} = \frac{\sin \alpha_1}{n_\text{v}} \\
 &= \frac{\sin 60.0^\circ}{1.5302} \\
 &= 0.56596 \\

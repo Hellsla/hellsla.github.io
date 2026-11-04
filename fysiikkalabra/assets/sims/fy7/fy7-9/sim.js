@@ -147,7 +147,7 @@ new p5((p) => {
     const xpk = lm <= R.max ? X(lm) : x1 - 46;
     if (alue === 'lyhyt' && Math.abs(X(190) - xpk) > fh * 3) lab('$\\text{UV}$', X(190), y1 + fh * 0.9, 'c', fh, MUTEDC);
     const xir = alue === 'lyhyt' ? X(1900) : X(15000);
-    if (Math.abs(xir - xpk) > fh * 5) lab('$\\text{infrapuna}$', xir, y1 + fh * 0.9, 'c', fh, MUTEDC);
+    if (Math.abs(xir - xpk) > fh * 5) lab(__('alue_ir'), xir, y1 + fh * 0.9, 'c', fh, MUTEDC);
     // axes with arrowheads
     p.stroke(...INKC); p.strokeWeight(2.5); p.line(x0, y0, x1 + 4, y0); p.line(x0, y0, x0, y1 - 14);
     p.noStroke(); p.fill(...INKC);

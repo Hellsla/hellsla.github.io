@@ -49,12 +49,12 @@
 **Reasonableness:** The result is close to the angle of a rainbow, $42^\circ$. From the angles the refractive index is $\sin 55.0^\circ : \sin 38.0^\circ = 0.819 : 0.616 \approx 1.33$, which is the refractive index of water, so the situation is possible.
 
 ## fy7-11-L2-01
-**Given:** length of the fibre $L = 5.00\,\text{km}$, refractive index of red $n_\text{p} = 1.5143$, of violet $n_\text{v} = 1.5302$, speed of light in vacuum $c = 3.00 \cdot 10^8\,\text{m/s}$
+**Given:** length of the fibre $L = 5.00\,\text{km}$, refractive index of red $n_\text{r} = 1.5143$, of violet $n_\text{v} = 1.5302$, speed of light in vacuum $c = 3.00 \cdot 10^8\,\text{m/s}$
 **Find:** difference $\Delta t$ in arrival times in nanoseconds
 **Principle:** According to the assumption of the problem, each colour travels in the glass at speed $v = c : n$; a real short flash travels slightly more slowly at the group velocity, but that is ignored here. The refractive index depends on wavelength. The refractive index of violet is greater, so violet travels more slowly and arrives later. Each colour travels the same distance at a steady speed, so the travel time is $t = L : v$.
-**Formula:** $v = \dfrac{c}{n}$ and $t = \dfrac{L}{v} = \dfrac{L n}{c}$, so $\Delta t = t_\text{v} - t_\text{p} = \dfrac{L n_\text{v}}{c} - \dfrac{L n_\text{p}}{c}$
+**Formula:** $v = \dfrac{c}{n}$ and $t = \dfrac{L}{v} = \dfrac{L n}{c}$, so $\Delta t = t_\text{v} - t_\text{r} = \dfrac{L n_\text{v}}{c} - \dfrac{L n_\text{r}}{c}$
 **Conversions:** $L = 5.00\,\text{km} = 5.00 \cdot 1000\,\text{m} = 5000\,\text{m}$. Finally $1\,\text{s} = 10^9\,\text{ns}$.
-**Substitution:** $t_\text{v} = \dfrac{5000\,\text{m} \cdot 1.5302}{3.00 \cdot 10^8\,\text{m/s}} = 2.55033 \cdot 10^{-5}\,\text{s}$ and $t_\text{p} = \dfrac{5000\,\text{m} \cdot 1.5143}{3.00 \cdot 10^8\,\text{m/s}} = 2.52383 \cdot 10^{-5}\,\text{s}$, so $\Delta t = 2.55033 \cdot 10^{-5}\,\text{s} - 2.52383 \cdot 10^{-5}\,\text{s} = 2.650 \cdot 10^{-7}\,\text{s} = 265\,\text{ns}$
+**Substitution:** $t_\text{v} = \dfrac{5000\,\text{m} \cdot 1.5302}{3.00 \cdot 10^8\,\text{m/s}} = 2.55033 \cdot 10^{-5}\,\text{s}$ and $t_\text{r} = \dfrac{5000\,\text{m} \cdot 1.5143}{3.00 \cdot 10^8\,\text{m/s}} = 2.52383 \cdot 10^{-5}\,\text{s}$, so $\Delta t = 2.55033 \cdot 10^{-5}\,\text{s} - 2.52383 \cdot 10^{-5}\,\text{s} = 2.650 \cdot 10^{-7}\,\text{s} = 265\,\text{ns}$
 **Answer:** $265\,\text{ns}$, three significant figures like the difference of the refractive indices $0.0159$ and the length $5.00\,\text{km}$.
 **Reasonableness:** Each travel time is about $25\,\mu\text{s}$, and the difference is about $1\,\%$ of it, as the ratio of the refractive indices $1.5302 : 1.5143 \approx 1.01$ leads us to expect. The intermediate results must be kept accurate: the difference of times rounded to three figures would come out wrong.
 
@@ -90,14 +90,14 @@
 **Reasonableness:** The angle of violet, $40.6^\circ$, is smaller than that of red, $42^\circ$, so the violet edge is lower than the red one, whose top is at a height of about $17^\circ$. If the sun were higher than $40.6^\circ$, the top of the violet arc would be below the horizon.
 
 ## fy7-11-L3-01
-**Given:** apex angle $A = 50.0^\circ$, angle of incidence $\alpha_1 = 45.0^\circ$, refractive index of red $n_\text{p} = 1.5143$, of violet $n_\text{v} = 1.5302$, prism in air
-**Find:** angle between the emerging rays $\Delta\delta = \delta_\text{v} - \delta_\text{p}$ in degrees
+**Given:** apex angle $A = 50.0^\circ$, angle of incidence $\alpha_1 = 45.0^\circ$, refractive index of red $n_\text{r} = 1.5143$, of violet $n_\text{v} = 1.5302$, prism in air
+**Find:** angle between the emerging rays $\Delta\delta = \delta_\text{v} - \delta_\text{r}$ in degrees
 **Principle:** Each colour is refracted at both surfaces with its own refractive index, because the refractive index depends on wavelength. Both colours arrive from the same direction, so the angle between the emerging rays is the difference of the angles of deviation. From the geometry of the prism $\alpha_2 + \alpha_3 = A$ and $\delta = \alpha_1 + \alpha_4 - A$.
-**Formula:** $\sin\alpha_2 = \dfrac{\sin\alpha_1}{n}$, $\alpha_3 = A - \alpha_2$, $\sin\alpha_4 = n \sin\alpha_3$ and $\delta = \alpha_1 + \alpha_4 - A$, so $\Delta\delta = \alpha_{4,\text{v}} - \alpha_{4,\text{p}}$
+**Formula:** $\sin\alpha_2 = \dfrac{\sin\alpha_1}{n}$, $\alpha_3 = A - \alpha_2$, $\sin\alpha_4 = n \sin\alpha_3$ and $\delta = \alpha_1 + \alpha_4 - A$, so $\Delta\delta = \alpha_{4,\text{v}} - \alpha_{4,\text{r}}$
 **Conversions:** Not needed: the angles are in degrees, and the refractive indices have no unit.
 **Substitution:** Red: $\sin\alpha_2 = \dfrac{\sin 45.0^\circ}{1.5143} = 0.46695$, $\alpha_2 = 27.84^\circ$, $\alpha_3 = 50.0^\circ - 27.84^\circ = 22.16^\circ$, $\sin\alpha_4 = 1.5143 \cdot \sin 22.16^\circ = 0.57127$, $\alpha_4 = 34.84^\circ$. Violet: $\sin\alpha_2 = \dfrac{\sin 45.0^\circ}{1.5302} = 0.46210$, $\alpha_2 = 27.52^\circ$, $\alpha_3 = 22.48^\circ$, $\sin\alpha_4 = 1.5302 \cdot \sin 22.48^\circ = 0.58502$, $\alpha_4 = 35.80^\circ$. $\Delta\delta = 35.80^\circ - 34.84^\circ = 0.96^\circ$
 **Answer:** $0.96^\circ$ (with accurate intermediate values $0.966^\circ$), two significant figures, because the result is the difference of two almost equal angles.
-**Reasonableness:** The angles of deviation are $\delta_\text{p} = 29.84^\circ$ and $\delta_\text{v} = 30.80^\circ$, and violet is deviated more, as it should be. The difference is greater than at one surface of glass of uniform thickness (about $0.3^\circ$), because the second surface of the prism increases it.
+**Reasonableness:** The angles of deviation are $\delta_\text{r} = 29.84^\circ$ and $\delta_\text{v} = 30.80^\circ$, and violet is deviated more, as it should be. The difference is greater than at one surface of glass of uniform thickness (about $0.3^\circ$), because the second surface of the prism increases it.
 
 ## fy7-11-L3-02
 **Given:** angle of incidence $\alpha = 80.0^\circ$, refractive index of water for red light $n = 1.332$, one reflection from the back surface of the droplet
@@ -110,11 +110,11 @@
 **Reasonableness:** The angle of red light cannot exceed $42.3^\circ$, and the result is smaller than that. Rays that hit near the edge like this light the sky inside the arc, which is therefore brighter than the sky outside the arc.
 
 ## fy7-11-L3-03
-**Given:** red edge: angle of incidence $\alpha_\text{p} = 59.5^\circ$, refractive index $n_\text{p} = 1.3315$; violet edge: $\alpha_\text{v} = 58.8^\circ$, $n_\text{v} = 1.3431$; one reflection from the back surface of the droplet
-**Find:** width of the arc $\Delta\theta = \theta_\text{p} - \theta_\text{v}$ in degrees
+**Given:** red edge: angle of incidence $\alpha_\text{r} = 59.5^\circ$, refractive index $n_\text{r} = 1.3315$; violet edge: $\alpha_\text{v} = 58.8^\circ$, $n_\text{v} = 1.3431$; one reflection from the back surface of the droplet
+**Find:** width of the arc $\Delta\theta = \theta_\text{r} - \theta_\text{v}$ in degrees
 **Principle:** The angle of the edge of each colour from the direction of the antisolar point follows from the geometry of the droplet, $\theta = 4\beta - 2\alpha$, when the angle of refraction $\beta$ is calculated from the law of refraction with its own refractive index. The width of the arc is the difference between the angles of the red and violet edges, because red is on the outer edge.
-**Formula:** $\sin\beta = \dfrac{\sin\alpha}{n}$, $\theta = 4\beta - 2\alpha$ and $\Delta\theta = \theta_\text{p} - \theta_\text{v}$
+**Formula:** $\sin\beta = \dfrac{\sin\alpha}{n}$, $\theta = 4\beta - 2\alpha$ and $\Delta\theta = \theta_\text{r} - \theta_\text{v}$
 **Conversions:** Not needed: the angles are in degrees.
-**Substitution:** Red: $\sin\beta_\text{p} = \dfrac{\sin 59.5^\circ}{1.3315} = 0.64711$, $\beta_\text{p} = 40.324^\circ$, $\theta_\text{p} = 4 \cdot 40.324^\circ - 2 \cdot 59.5^\circ = 42.296^\circ$. Violet: $\sin\beta_\text{v} = \dfrac{\sin 58.8^\circ}{1.3431} = 0.63686$, $\beta_\text{v} = 39.558^\circ$, $\theta_\text{v} = 4 \cdot 39.558^\circ - 2 \cdot 58.8^\circ = 40.632^\circ$. $\Delta\theta = 42.296^\circ - 40.632^\circ = 1.664^\circ$
+**Substitution:** Red: $\sin\beta_\text{r} = \dfrac{\sin 59.5^\circ}{1.3315} = 0.64711$, $\beta_\text{r} = 40.324^\circ$, $\theta_\text{r} = 4 \cdot 40.324^\circ - 2 \cdot 59.5^\circ = 42.296^\circ$. Violet: $\sin\beta_\text{v} = \dfrac{\sin 58.8^\circ}{1.3431} = 0.63686$, $\beta_\text{v} = 39.558^\circ$, $\theta_\text{v} = 4 \cdot 39.558^\circ - 2 \cdot 58.8^\circ = 40.632^\circ$. $\Delta\theta = 42.296^\circ - 40.632^\circ = 1.664^\circ$
 **Answer:** about $1.66^\circ$, that is, rounded $1.7^\circ$: the result is the difference of two almost equal angles, so significant figures are lost.
 **Reasonableness:** The width is about three times the apparent diameter of the sun, $0.5^\circ$, which fits experience: a rainbow is a narrow band. The angle of red is greater, so red is on the outer edge.

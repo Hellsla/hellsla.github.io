@@ -1713,7 +1713,8 @@
       "v4": "keltainen",
       "v5": "kellertävän valkoinen",
       "v6": "valkoinen",
-      "v7": "sinertävän valkoinen"
+      "v7": "sinertävän valkoinen",
+      "alue_ir": "$\\text{infrapuna}$"
     },
     "fy7-10": {
       "ylempi": "Yläpuolen aine",

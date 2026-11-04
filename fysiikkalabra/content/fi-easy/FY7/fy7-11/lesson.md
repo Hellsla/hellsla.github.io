@@ -70,7 +70,7 @@
 ## Ydinajatus
 
 ### Taitekerroin riippuu aallonpituudesta
-Luvussa *Valon heijastuminen ja taittuminen* taitekerroin $n$ kertoi, kuinka monta kertaa hitaammin valo kulkee aineessa kuin tyhjiössä. Tarkat mittaukset näyttävät, että taitekerroin riippuu myös valon aallonpituudesta. Aallonpituus kertoo valon värin. Vedessä ja lasissa taitekerroin on violetille valolle suurempi kuin punaiselle. Siksi violetti valo kulkee niissä hitaammin. Kruunulasissa punainen valo etenee nopeudella $198\,000\,\text{km/s}$ ja violetti valo nopeudella $196\,000\,\text{km/s}$. Tätä sanotaan **dispersioksi**: taitekerroin on eri suuri eri aallonpituuksille.
+Luvussa *Valon heijastuminen ja taittuminen* taitekerroin $n$ kertoi, kuinka monta kertaa hitaammin valo kulkee aineessa kuin tyhjiössä. Tarkat mittaukset näyttävät, että taitekerroin riippuu myös valon aallonpituudesta. Vedessä ja lasissa taitekerroin on violetille valolle suurempi kuin punaiselle. Siksi violetti valo kulkee niissä hitaammin. Kruunulasissa punainen valo etenee nopeudella noin $198\,000\,\text{km/s}$ ja violetti valo nopeudella noin $196\,000\,\text{km/s}$. Tätä sanotaan **dispersioksi**: taitekerroin on eri suuri eri aallonpituuksille.
 
 Taulukon aallonpituudet ovat tyhjiössä. Kun valo menee rajapinnan läpi, sen taajuus ei muutu. Väri riippuu taajuudesta, joten väri pysyy samana, vaikka nopeus ja aallonpituus muuttuvat.
 

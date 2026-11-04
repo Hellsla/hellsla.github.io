@@ -102,7 +102,7 @@
       "text": "A narrow beam of white light hits a prism in a darkened room. Adjust the apex angle, the angle of incidence and the material, and follow how much each colour is deviated.",
       "howto": "Adjust the apex angle $A$ of the prism and the angle of incidence $\\alpha_1$, and choose the material. The white ray arrives from the left and splits in the prism into seven coloured rays, which look white where they overlap. The spectrum falls on the screen on the right. The dashed lines are the normals of the surfaces and the extension of the incident ray: the angle between a coloured ray and the extension is the angle of deviation. The readings row shows the angles of deviation of red ($656\\,\\text{nm}$) and violet ($405\\,\\text{nm}$), their difference and the refractive indices.",
       "model": "The model treats light as rays: a narrow beam hits the middle of the left side of the prism, and the direction of each colour is calculated from the law of refraction $n_1 \\sin\\alpha_1 = n_2 \\sin\\alpha_2$ at both surfaces. The prism is in air, and the refractive index of air is $1$. The refractive index comes from a curve fitted to the tabulated values of the material: the values for red and violet in crown glass and water are those in the table of the chapter. The part of the light reflected at the surfaces is not drawn. If a colour cannot leave through the second surface, its ray is drawn reflected back into the glass. The readings are values calculated by the model, not measurements.",
-      "calc": "At the first surface $\\sin\\alpha_2 = \\sin\\alpha_1 : n$. Inside the glass $\\alpha_3 = A - \\alpha_2$, and at the second surface $\\sin\\alpha_4 = n \\sin\\alpha_3$. The angle of deviation is\n\n$$\\delta = \\alpha_1 + \\alpha_4 - A$$\n\nand the difference between the colours is $\\Delta\\delta = \\delta_\\text{v} - \\delta_\\text{p}$. If $n \\sin\\alpha_3 > 1$, the colour cannot leave the prism."
+      "calc": "At the first surface $\\sin\\alpha_2 = \\sin\\alpha_1 : n$. Inside the glass $\\alpha_3 = A - \\alpha_2$, and at the second surface $\\sin\\alpha_4 = n \\sin\\alpha_3$. The angle of deviation is\n\n$$\\delta = \\alpha_1 + \\alpha_4 - A$$\n\nand the difference between the colours is $\\Delta\\delta = \\delta_\\text{v} - \\delta_\\text{r}$. If $n \\sin\\alpha_3 > 1$, the colour cannot leave the prism."
     },
     {
       "id": "koe-1",
@@ -155,7 +155,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Experiment 2: angle of incidence and minimum deviation",
-      "intro": "The prism is crown glass and the apex angle is $A = 60^\\circ$; change only the angle of incidence $\\alpha_1$. Record at least the angles of incidence $40^\\circ$, $45^\\circ$, $50^\\circ$, $55^\\circ$, $60^\\circ$, $70^\\circ$ and $80^\\circ$. Follow the angle of deviation of red, $\\delta_\\text{p}$.",
+      "intro": "The prism is crown glass and the apex angle is $A = 60^\\circ$; change only the angle of incidence $\\alpha_1$. Record at least the angles of incidence $40^\\circ$, $45^\\circ$, $50^\\circ$, $55^\\circ$, $60^\\circ$, $70^\\circ$ and $80^\\circ$. Follow the angle of deviation of red, $\\delta_\\text{r}$.",
       "initial": {
         "A": 60,
         "a1": 40,
@@ -198,7 +198,7 @@
           {
             "text": "It first decreases, is smallest at about $50^\\circ$ and then increases.",
             "correct": true,
-            "feedback": "Correct. In the model's values $\\delta_\\text{p}$ is $40.0^\\circ$ at an angle of incidence of $40^\\circ$, smallest at $38.4^\\circ$ at an angle of incidence of about $49$–$50^\\circ$, and $50.3^\\circ$ at $80^\\circ$. Near the minimum deviation a change in the angle of incidence hardly changes the direction. The same phenomenon gathers the light of a rainbow into one direction."
+            "feedback": "Correct. In the model's values $\\delta_\\text{r}$ is $40.0^\\circ$ at an angle of incidence of $40^\\circ$, smallest at $38.4^\\circ$ at an angle of incidence of about $49$–$50^\\circ$, and $50.3^\\circ$ at $80^\\circ$. Near the minimum deviation a change in the angle of incidence hardly changes the direction. The same phenomenon gathers the light of a rainbow into one direction."
           },
           {
             "text": "It increases all the time in the same proportion as the angle of incidence increases.",
@@ -206,7 +206,7 @@
           },
           {
             "text": "It stays the same, because the prism and its material do not change.",
-            "feedback": "The model's values refute this: $\\delta_\\text{p}$ varies between $38.4^\\circ$ and $50.3^\\circ$. When the angle of incidence changes, $\\alpha_2$, $\\alpha_3$ and $\\alpha_4$ change too, and with them $\\delta = \\alpha_1 + \\alpha_4 - A$."
+            "feedback": "The model's values refute this: $\\delta_\\text{r}$ varies between $38.4^\\circ$ and $50.3^\\circ$. When the angle of incidence changes, $\\alpha_2$, $\\alpha_3$ and $\\alpha_4$ change too, and with them $\\delta = \\alpha_1 + \\alpha_4 - A$."
           }
         ]
       },
@@ -293,7 +293,7 @@
       "hints": [
         "First calculate the angle of refraction of each colour in water. Which one is refracted more?",
         "Once the angle of refraction $\\beta$ is known, the ray travels a horizontal distance $x = h \\tan\\beta$ at depth $h$.",
-        "$\\beta_\\text{p} = 40.57^\\circ$ and $\\beta_\\text{v} = 40.15^\\circ$, so $\\Delta x = 2.00\\,\\text{m} \\cdot (\\tan 40.57^\\circ - \\tan 40.15^\\circ)$."
+        "$\\beta_\\text{r} = 40.57^\\circ$ and $\\beta_\\text{v} = 40.15^\\circ$, so $\\Delta x = 2.00\\,\\text{m} \\cdot (\\tan 40.57^\\circ - \\tan 40.15^\\circ)$."
       ],
       "mistakes": [
         {
@@ -309,7 +309,7 @@
           "feedback": "You calculated where the light would hit if it were not refracted at all. First calculate the angles of refraction $\\sin\\beta = \\sin 60.0^\\circ : n$, then the horizontal distance $h \\tan\\beta$ for each colour, and their difference."
         }
       ],
-      "solution": "**Given:** angle of incidence $\\alpha = 60.0^\\circ$, depth of the pool $h = 2.00\\,\\text{m}$, refractive index of red $n_\\text{p} = 1.3315$, of violet $n_\\text{v} = 1.3431$\n\n**Find:** distance $\\Delta x$ between the points where red and violet hit, in millimetres\n\n**Principle:** Each colour is refracted at the surface according to the law of refraction $\\sin\\alpha = n \\sin\\beta$ with its own refractive index, because the refractive index depends on wavelength. In water light travels in a straight line, so the ray, the normal of the surface and the bottom form a right-angled triangle: the horizontal distance to the bottom is $x = h \\tan\\beta$.\n\n**Formula:** $\\sin\\beta = \\dfrac{\\sin\\alpha}{n}$ and $x = h \\tan\\beta$, so $\\Delta x = h \\left(\\tan\\beta_\\text{p} - \\tan\\beta_\\text{v}\\right)$\n\n**Conversions:** Finally $1\\,\\text{m} = 1000\\,\\text{mm}$.\n\n**Substitution:** $\\sin\\beta_\\text{p} = \\dfrac{\\sin 60.0^\\circ}{1.3315} = 0.65041$, so $\\beta_\\text{p} = 40.573^\\circ$; $\\sin\\beta_\\text{v} = \\dfrac{\\sin 60.0^\\circ}{1.3431} = 0.64480$, so $\\beta_\\text{v} = 40.150^\\circ$. $\\Delta x = 2.00\\,\\text{m} \\cdot (0.85628 - 0.84358) = 0.02540\\,\\text{m} = 25\\,\\text{mm}$\n\n**Answer:** about $25\\,\\text{mm}$, two significant figures, because the result is the difference of two almost equal numbers, in which significant figures are lost.\n\n**Reasonableness:** Violet is refracted more, so it hits closer to the point where the light enters the surface, and the difference is positive. Each colour travels horizontally about $2.00\\,\\text{m} \\cdot 0.85 \\approx 1.7\\,\\text{m}$, and the difference is less than $2\\,\\%$ of this, which fits the small difference in the refractive indices. That is why narrow coloured fringes appear on the bottom."
+      "solution": "**Given:** angle of incidence $\\alpha = 60.0^\\circ$, depth of the pool $h = 2.00\\,\\text{m}$, refractive index of red $n_\\text{r} = 1.3315$, of violet $n_\\text{v} = 1.3431$\n\n**Find:** distance $\\Delta x$ between the points where red and violet hit, in millimetres\n\n**Principle:** Each colour is refracted at the surface according to the law of refraction $\\sin\\alpha = n \\sin\\beta$ with its own refractive index, because the refractive index depends on wavelength. In water light travels in a straight line, so the ray, the normal of the surface and the bottom form a right-angled triangle: the horizontal distance to the bottom is $x = h \\tan\\beta$.\n\n**Formula:** $\\sin\\beta = \\dfrac{\\sin\\alpha}{n}$ and $x = h \\tan\\beta$, so $\\Delta x = h \\left(\\tan\\beta_\\text{r} - \\tan\\beta_\\text{v}\\right)$\n\n**Conversions:** Finally $1\\,\\text{m} = 1000\\,\\text{mm}$.\n\n**Substitution:** $\\sin\\beta_\\text{r} = \\dfrac{\\sin 60.0^\\circ}{1.3315} = 0.65041$, so $\\beta_\\text{r} = 40.573^\\circ$; $\\sin\\beta_\\text{v} = \\dfrac{\\sin 60.0^\\circ}{1.3431} = 0.64480$, so $\\beta_\\text{v} = 40.150^\\circ$. $\\Delta x = 2.00\\,\\text{m} \\cdot (0.85628 - 0.84358) = 0.02540\\,\\text{m} = 25\\,\\text{mm}$\n\n**Answer:** about $25\\,\\text{mm}$, two significant figures, because the result is the difference of two almost equal numbers, in which significant figures are lost.\n\n**Reasonableness:** Violet is refracted more, so it hits closer to the point where the light enters the surface, and the difference is positive. Each colour travels horizontally about $2.00\\,\\text{m} \\cdot 0.85 \\approx 1.7\\,\\text{m}$, and the difference is less than $2\\,\\%$ of this, which fits the small difference in the refractive indices. That is why narrow coloured fringes appear on the bottom."
     },
     {
       "id": "harjoitukset",
@@ -355,7 +355,7 @@
       "hints": [
         "The speed of light in a material is obtained from the refractive index. With which formula?",
         "$v = c : n$, where $c = 3.00 \\cdot 10^8\\,\\text{m/s}$. Calculate the speed of each colour and subtract.",
-        "Keep six figures in the intermediate results: $v_\\text{p} = 225\\,310\\,\\text{km/s}$ and $v_\\text{v} = 223\\,364\\,\\text{km/s}$."
+        "Keep six figures in the intermediate results: $v_\\text{r} = 225\\,310\\,\\text{km/s}$ and $v_\\text{v} = 223\\,364\\,\\text{km/s}$."
       ],
       "mistakes": [
         {
@@ -367,7 +367,7 @@
           "feedback": "The result is correct in metres per second. Convert to kilometres per second: $1\\,\\text{km/s} = 1000\\,\\text{m/s}$."
         }
       ],
-      "solution": "**Given:** refractive index of red $n_\\text{p} = 1.3315$, of violet $n_\\text{v} = 1.3431$, speed of light in vacuum $c = 3.00 \\cdot 10^8\\,\\text{m/s}$\n\n**Find:** difference of the speeds $\\Delta v = v_\\text{p} - v_\\text{v}$ in kilometres per second\n\n**Principle:** The refractive index tells how many times slower light travels in a material than in vacuum, $n = c : v$. The refractive index depends on wavelength, so red and violet have different speeds in water.\n\n**Formula:** $n = \\dfrac{c}{v}$, so $v = \\dfrac{c}{n}$, and $\\Delta v = \\dfrac{c}{n_\\text{p}} - \\dfrac{c}{n_\\text{v}}$\n\n**Conversions:** $c = 3.00 \\cdot 10^8\\,\\text{m/s} = 3.00 \\cdot 10^5\\,\\text{km/s}$, because $1\\,\\text{km} = 1000\\,\\text{m}$.\n\n**Substitution:** $v_\\text{p} = \\dfrac{3.00 \\cdot 10^5\\,\\text{km/s}}{1.3315} = 225\\,310\\,\\text{km/s}$ and $v_\\text{v} = \\dfrac{3.00 \\cdot 10^5\\,\\text{km/s}}{1.3431} = 223\\,364\\,\\text{km/s}$, so $\\Delta v = 225\\,310\\,\\text{km/s} - 223\\,364\\,\\text{km/s} = 1946\\,\\text{km/s}$\n\n**Answer:** $1.95 \\cdot 10^3\\,\\text{km/s}$, three significant figures like the speed of light $3.00 \\cdot 10^8\\,\\text{m/s}$.\n\n**Reasonableness:** The difference is about $1\\,\\%$ of the speed, since the refractive indices also differ by about one per cent: $1.3431 : 1.3315 \\approx 1.009$. Red is faster because its refractive index is smaller."
+      "solution": "**Given:** refractive index of red $n_\\text{r} = 1.3315$, of violet $n_\\text{v} = 1.3431$, speed of light in vacuum $c = 3.00 \\cdot 10^8\\,\\text{m/s}$\n\n**Find:** difference of the speeds $\\Delta v = v_\\text{r} - v_\\text{v}$ in kilometres per second\n\n**Principle:** The refractive index tells how many times slower light travels in a material than in vacuum, $n = c : v$. The refractive index depends on wavelength, so red and violet have different speeds in water.\n\n**Formula:** $n = \\dfrac{c}{v}$, so $v = \\dfrac{c}{n}$, and $\\Delta v = \\dfrac{c}{n_\\text{r}} - \\dfrac{c}{n_\\text{v}}$\n\n**Conversions:** $c = 3.00 \\cdot 10^8\\,\\text{m/s} = 3.00 \\cdot 10^5\\,\\text{km/s}$, because $1\\,\\text{km} = 1000\\,\\text{m}$.\n\n**Substitution:** $v_\\text{r} = \\dfrac{3.00 \\cdot 10^5\\,\\text{km/s}}{1.3315} = 225\\,310\\,\\text{km/s}$ and $v_\\text{v} = \\dfrac{3.00 \\cdot 10^5\\,\\text{km/s}}{1.3431} = 223\\,364\\,\\text{km/s}$, so $\\Delta v = 225\\,310\\,\\text{km/s} - 223\\,364\\,\\text{km/s} = 1946\\,\\text{km/s}$\n\n**Answer:** $1.95 \\cdot 10^3\\,\\text{km/s}$, three significant figures like the speed of light $3.00 \\cdot 10^8\\,\\text{m/s}$.\n\n**Reasonableness:** The difference is about $1\\,\\%$ of the speed, since the refractive indices also differ by about one per cent: $1.3431 : 1.3315 \\approx 1.009$. Red is faster because its refractive index is smaller."
     },
     {
       "id": "tarkistus-3",

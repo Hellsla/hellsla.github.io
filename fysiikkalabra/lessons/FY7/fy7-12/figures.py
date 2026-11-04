@@ -214,7 +214,7 @@ def critical_graph():
     f.tex(ax.X(1.0), 314, r"1{,}0", "middle")
     f.tex(84, 282, r"0", "end")
     ax.curve(lambda x: math.degrees(math.asin(1 / x)), 1.0, 2.6, RAY, 3)
-    for nn, name, dx, dy, anc in ((1.33, r"\text{vesi}", 12, -32, "start"), (1.50, r"\text{lasi}", -14, 28, "end"),
+    for nn, name, dx, dy, anc in ((1.33, r"\text{vesi}", -12, 26, "end"), (1.50, r"\text{lasi}", 12, -22, "start"),
                                   (2.42, r"\text{timantti}", 0, -36, "middle")):
         v = math.degrees(math.asin(1 / nn))
         ax.point(nn, v, INK)

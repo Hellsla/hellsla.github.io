@@ -1624,7 +1624,7 @@
     "fy7-12": {
       "kulma": "Angle of incidence on the end face $\\theta = {{t}}^\\circ$",
       "n2": "Refractive index of the surrounding substance $n_2 = {{n}}$",
-      "selite": "The core is glass. The dashed lines are normals to the surfaces. The picture is not to scale.",
+      "selite": "The core is glass. Dashed lines are normals. Not to scale.",
       "lukemat_pysyy": "<strong>The light stays in the core: $\\alpha > \\alpha_\\text{r}$</strong><br>Angle of incidence at the wall $\\alpha = {{a}}^\\circ$, critical angle $\\alpha_\\text{r} = {{ar}}^\\circ$<br>Angle of refraction at the end face $\\theta_1 = {{t1}}^\\circ$",
       "lukemat_vuoto": "<strong>Light leaks out: $\\alpha < \\alpha_\\text{r}$</strong><br>Angle of incidence at the wall $\\alpha = {{a}}^\\circ$, critical angle $\\alpha_\\text{r} = {{ar}}^\\circ$<br>Angle of refraction at the end face $\\theta_1 = {{t1}}^\\circ$",
       "ydin": "core",
@@ -1635,7 +1635,7 @@
       "alue": "Wavelength range",
       "alue_lyhyt": "short wavelengths",
       "alue_pitka": "long wavelengths",
-      "selite": "The colour band is visible light, the dashed line shows the wavelength of the peak of the spectrum.",
+      "selite": "The colour band is visible light; the dashed line marks the peak wavelength.",
       "lukemat": "<strong>Peak $\\lambda_\\text{max} = {{l}}\\,\\text{nm}$</strong>, {{a}}<br>$T = {{T}}\\,\\text{K}$ i.e. $t = {{t}}\\,{}^\\circ\\text{C}$<br>Share of visible light in the radiated power: {{o}}<br>Colour of the glow: {{v}}",
       "huippu_uv": "in the ultraviolet region",
       "huippu_nakyva": "in the region of visible light",
@@ -1648,7 +1648,8 @@
       "v4": "yellow",
       "v5": "yellowish white",
       "v6": "white",
-      "v7": "bluish white"
+      "v7": "bluish white",
+      "alue_ir": "$\\text{infrared}$"
     },
     "fy7-11": {
       "huippu": "Apex angle $A = {{A}}^\\circ$",
@@ -1657,10 +1658,10 @@
       "kruunu": "crown glass",
       "flint": "flint glass",
       "vesi": "water (hollow prism)",
-      "selite": "The dashed lines are the normals of the surfaces and the extension of the incident ray.",
+      "selite": "Dashed lines: the surface normals and the extended incident ray.",
       "kuva_alt": "A darkened room where a narrow beam of white light hits a glass prism, splits into colours and hits a white screen on the right.",
-      "lukemat": "<strong>Angles of deviation: red $\\delta_\\text{p} = {{dp}}^\\circ$, violet $\\delta_\\text{v} = {{dv}}^\\circ$</strong><br>Difference $\\Delta\\delta = {{dd}}^\\circ$<br>Refractive indices $n_\\text{p} = {{np}}$ ($656\\,\\text{nm}$), $n_\\text{v} = {{nv}}$ ($405\\,\\text{nm}$)",
-      "lukemat_tir": "<strong>Some of the colours cannot leave through the second surface of the prism but are reflected back into the glass.</strong><br>{{k}} of the seven colours get out.<br>Refractive indices $n_\\text{p} = {{np}}$ ($656\\,\\text{nm}$), $n_\\text{v} = {{nv}}$ ($405\\,\\text{nm}$)"
+      "lukemat": "<strong>Angles of deviation: red $\\delta_\\text{r} = {{dp}}^\\circ$, violet $\\delta_\\text{v} = {{dv}}^\\circ$</strong><br>Difference $\\Delta\\delta = {{dd}}^\\circ$<br>Refractive indices $n_\\text{r} = {{np}}$ ($656\\,\\text{nm}$), $n_\\text{v} = {{nv}}$ ($405\\,\\text{nm}$)",
+      "lukemat_tir": "<strong>Some of the colours cannot leave through the second surface of the prism but are reflected back into the glass.</strong><br>{{k}} of the seven colours get out.<br>Refractive indices $n_\\text{r} = {{np}}$ ($656\\,\\text{nm}$), $n_\\text{v} = {{nv}}$ ($405\\,\\text{nm}$)"
     }
   },
   "practice": {
