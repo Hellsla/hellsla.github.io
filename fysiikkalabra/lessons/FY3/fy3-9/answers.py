@@ -39,4 +39,17 @@ a["fy3-9-L3-02"] = p2_rengas - p0                        # gauge reading 303,1 �
 p_rengas_abs = 300 + p0                                  # tyre absolute pressure 401 kPa
 L_ilma = 40.0 * p0 / p_rengas_abs                        # uniform cylinder, V ∝ length: Boyle L₂ = 40,0 cm · 101/401 = 10,07 cm
 a["fy3-9-L3-03"] = 40.0 - L_ilma                         # piston travel before the valve opens: 40,0 − 10,07 = 29,93 cm -> 29,9 cm
+# Exercise bank additions (MC tasks L1-06, L1-08 have no numeric answer)
+a["fy3-9-L1-07"] = 101 * 1.50 / 240                      # compressor cylinder, Boyle: V₂ = p₁V₁/p₂ = 151,5 kPa·l / 240 kPa = 0,6312 l -> 0,63 l
+T_ab = [K(t) for t in (20.0, 40.0, 60.0, 80.0)]          # tasks L2-05: p/T (isochoric), V/T (isobaric); kelvins
+p_ab = [99.8, 106.4, 113.4, 119.8]                       # kPa, rigid flask A
+k_ab = sum(pp / T for pp, T in zip(p_ab, T_ab)) / 4      # mean p/T = 0,33995 kPa/K
+a["fy3-9-L2-05"] = k_ab * K(100)                         # p(100 °C) = k·373,15 K = 126,9 kPa -> 127 kPa
+a["fy3-9-L2-06"] = (57.1 * 40.0 - 200 * 10.0) / (200 - 57.1)   # hose volume from rows 1 and 4: p₁(V₁+V_h) = p₄(V₄+V_h) -> V_h = 284/142,9 = 1,99 ml -> 2,0 ml
+k_th = (129.1 - 100.1) / 80.0                            # L2-07: line read at θ = 0 and 80 °C: slope 0,3625 kPa/K
+a["fy3-9-L2-07"] = 0.0 - 100.1 / k_th                    # p = 0: θ₀ = -100,1/0,3625 = -276,1 °C -> -276 °C
+p_iso = 101 * 40.0 / 10.0                                # L3-04: isothermal step 40 -> 10 ml: p' = 404 kPa
+a["fy3-9-L3-04"] = K(20.0) * 481 / p_iso - 273.15        # isochoric heating 404 -> 481 kPa: T₂ = 293,15·481/404 = 349,0 K -> 75,9 °C -> 76 °C
+pV_dive = sum((p0 + rho_vesi * g * h / 1000) * V for h, V in ((0, 6.0), (5, 4.0), (10, 3.0), (20, 2.0))) / 4   # mean pV = 599,5 kPa·l (rounded pressures: 599,25)
+a["fy3-9-L3-05"] = (pV_dive / 1.5 - p0) / (rho_vesi * g / 1000)   # V = 1,5 l: p = 399,7 kPa, h = (p − p₀)/(ρg) = 30,4 m -> 30 m
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

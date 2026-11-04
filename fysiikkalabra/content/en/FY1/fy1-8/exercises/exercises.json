@@ -167,7 +167,7 @@
     {
       "id": "fy1-8-L2-05",
       "level": 2,
-      "text": "A student investigates whether a light ($50\\,\\text{g}$) and a heavy ($200\\,\\text{g}$) ball roll down the same slope equally fast. He changes only the mass and measures five travel times for each ball with a hand stopwatch. He concludes: “The heavy ball is faster, because its mean time is shorter.” Calculate the mean and the uncertainty (half of the range) of the times of each ball. What percentage of the uncertainty is the difference of the means? Also decide whether the data supports the student's conclusion.",
+      "text": "A student investigates whether a light ($50\\,\\text{g}$) and a heavy ($200\\,\\text{g}$) ball roll down the same slope equally fast. He changes only the mass and measures five travel times for each ball with a hand stopwatch.\n\nHe concludes: “The heavy ball is faster, because its mean time is shorter.”\n\nCalculate the mean and the uncertainty (half of the range) of the times of each ball. What percentage of the uncertainty is the difference of the means? Also decide whether the data supports the student's conclusion.",
       "kind": [
         "data",
         "error"
@@ -245,7 +245,7 @@
     {
       "id": "fy1-8-L2-07",
       "level": 2,
-      "text": "A student measures the position of a toy car at different moments (table). He draws a graph with the distance $s$ on the horizontal axis and the time $t$ on the vertical axis, and the axes have no quantities or units marked. He reads the slope of the fitted line as $3.3$ and gives it as the speed of the car. Draw the line fitted to the points the right way round ($t$ on the horizontal axis) and read its slope from two points of the line that are clearly far apart. What is the speed of the car? Answer in m/s and explain what the student's number $3.3$ actually describes.",
+      "text": "A student measures the position of a toy car at different moments (table). He draws a graph with the distance $s$ on the horizontal axis and the time $t$ on the vertical axis, and the axes have no quantities or units marked. He reads the slope of the fitted line as $3.3$ and gives it as the speed of the car.\n\nDraw the line fitted to the points the right way round ($t$ on the horizontal axis) and read its slope from two points of the line that are clearly far apart. What is the speed of the car? Answer in m/s and explain what the student's number $3.3$ actually describes.",
       "kind": [
         "data",
         "graph",
@@ -313,7 +313,7 @@
     {
       "id": "fy1-8-L3-04",
       "level": 3,
-      "text": "A student investigated whether the mass of a ball affects the rolling time (compare the measurements of the light and heavy ball). The results of five repeats are the means $\\bar{t}_{50} = 3.12\\,\\text{s} \\pm 0.04\\,\\text{s}$ and $\\bar{t}_{200} = 3.08\\,\\text{s} \\pm 0.04\\,\\text{s}$ (the uncertainty is half of the range). The uncertainty of timing with a hand stopwatch was estimated at $0.15\\,\\text{s}$ for a single measurement. The discussion says: “The experiment went well. The mean of the heavy ball is smaller, so the hypothesis was correct. There were few errors.” How many times the difference of the means is the hand-timing uncertainty $0.15\\,\\text{s}$? Use this and the intervals of the results to justify which claims of the discussion the data supports and which it does not, and write two better sentences for the discussion.",
+      "text": "A student investigated whether the mass of a ball affects the rolling time (compare the measurements of the light and heavy ball). The results of five repeats are the means $\\bar{t}_{50} = 3.12\\,\\text{s} \\pm 0.04\\,\\text{s}$ and $\\bar{t}_{200} = 3.08\\,\\text{s} \\pm 0.04\\,\\text{s}$ (the uncertainty is half of the range). The uncertainty of timing with a hand stopwatch was estimated at $0.15\\,\\text{s}$ for a single measurement.\n\nThe discussion says: “The experiment went well. The mean of the heavy ball is smaller, so the hypothesis was correct. There were few errors.”\n\nHow many times the difference of the means is the hand-timing uncertainty $0.15\\,\\text{s}$? Use this and the intervals of the results to justify which claims of the discussion the data supports and which it does not, and write two better sentences for the discussion.",
       "kind": [
         "data",
         "reasoning",
@@ -346,7 +346,7 @@
     {
       "id": "fy1-8-L3-05",
       "level": 3,
-      "text": "A student plans an investigation for the question “Does the cooling rate of water depend on the material of the container?” He pours the same number of decilitres of $80\\,{}^\\circ\\text{C}$ water into three containers of the same size (glass, metal, plastic) and reads the temperature every minute. The independent (manipulated) variable is the material of the container and the dependent variable is the fall in temperature. The temperatures of the glass container in a preliminary experiment are in the table. Estimate the initial cooling rate from the change during the first three minutes of the table. The uncertainty of the fall in temperature $\\Delta T_\\text{fall}$ is estimated at $1.0\\,\\text{K}$, and the relative uncertainty of the fall is wanted to be at most $5.0\\,\\%$. Assume that even in the container that cools most slowly the initial rate is about the same as in the glass container. How long must the measurement period be planned to be at least? Also name three variables to be controlled, with reasons, and tell how the cooling curves of the three containers are compared.",
+      "text": "A student plans an investigation for the question “Does the cooling rate of water depend on the material of the container?” He pours the same number of decilitres of $80\\,{}^\\circ\\text{C}$ water into three containers of the same size (glass, metal, plastic) and reads the temperature every minute. The independent (manipulated) variable is the material of the container and the dependent variable is the fall in temperature.\n\nThe temperatures of the glass container in a preliminary experiment are in the table. Estimate the initial cooling rate from the change during the first three minutes of the table. The uncertainty of the fall in temperature $\\Delta T_\\text{fall}$ is estimated at $1.0\\,\\text{K}$, and the relative uncertainty of the fall is wanted to be at most $5.0\\,\\%$. Assume that even in the container that cools most slowly the initial rate is about the same as in the glass container.\n\nHow long must the measurement period be planned to be at least? Also name three variables to be controlled, with reasons, and tell how the cooling curves of the three containers are compared.",
       "kind": [
         "data",
         "model",

@@ -39,6 +39,52 @@
       "answer": 18.0,
       "unit": "MWh",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy4-15-L1-06",
+      "level": 1,
+      "text": "Two hydropower plants have the same flow rate and the same efficiency, but the head of one is twice that of the other. The power of the plant with the double head is twice as large. Which of the following explains this?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Every kilogram of water flowing through the turbine loses twice as much potential energy as it falls.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "As the water falls from a higher level, it flows twice as fast, so twice as much water passes through the turbine.",
+          "feedback": "The flow rate is the same at both plants in the task, so the same amount of water passes through the turbine every second. The power increases because the energy obtained from each kilogram of water increases."
+        },
+        {
+          "text": "As the water falls from a higher level, it becomes heavier, so its mass and thus the power it brings double.",
+          "feedback": "The mass of the water does not change as it falls. The mass passing through the turbine per second, $\\rho Q$, is the same at both plants, and the difference arises because each kilogram loses more potential energy."
+        },
+        {
+          "text": "Every kilogram of water flowing through the turbine loses twice as much potential energy as it falls.",
+          "correct": true,
+          "feedback": "Correct: the change in potential energy is $mgh$, so it is directly proportional to the head $h$. When the mass per second is the same and the height is doubled, the power brought by the water $\\rho Q g h$ and, with the same efficiency, the electric power both double."
+        },
+        {
+          "text": "A higher head increases the efficiency, because the turbine then rotates faster and loses less.",
+          "feedback": "In the task the efficiency is the same at both plants, and an efficiency cannot exceed $100\\,\\%$. The power increases because the power brought by the water increases with the head."
+        }
+      ]
+    },
+    {
+      "id": "fy4-15-L1-07",
+      "level": 1,
+      "text": "River water flows through the turbines of a power plant at $35.0\\,\\text{m}^3$ per second, and the head is $8.50\\,\\text{m}$. How much power is released from the potential energy of the falling water? The efficiency is not taken into account.",
+      "answer": 2.918475,
+      "unit": "MW",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-15-L1-08",
+      "level": 1,
+      "text": "During a certain time, air with a mass of $2.50\\cdot 10^{3}\\,\\text{kg}$ and a speed of $12.0\\,\\text{m/s}$ flows through the rotor of a wind turbine. What is the kinetic energy of this air?",
+      "answer": 180.0,
+      "unit": "kJ",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -73,6 +119,108 @@
       "answer": 5.725901,
       "unit": "MWh",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy4-15-L2-05",
+      "level": 2,
+      "text": "The table is an example data set of the electric power of a wind turbine at different wind speeds and of how many hours a year the wind blows at each speed. The rated power of the turbine is $2000\\,\\text{kW}$.\n\nAt other times the wind is too weak or the turbine has been stopped, and it produces no electricity. Assume that the power stays at the value in the table for the whole stated time.\n\nCalculate the electric energy produced by the turbine in a year in gigawatt-hours.",
+      "kind": [
+        "data"
+      ],
+      "answer": 5.5,
+      "unit": "GWh",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Power of a wind turbine and the time per year the wind speed occurs (example data)",
+        "columns": [
+          "$v\\,(\\text{m/s})$",
+          "$P\\,(\\text{kW})$",
+          "$t\\,(\\text{h})$"
+        ],
+        "rows": [
+          [
+            "4",
+            "100",
+            "1500"
+          ],
+          [
+            "6",
+            "340",
+            "2200"
+          ],
+          [
+            "8",
+            "850",
+            "1800"
+          ],
+          [
+            "10",
+            "1650",
+            "1000"
+          ],
+          [
+            "12",
+            "2000",
+            "700"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy4-15-L2-06",
+      "level": 2,
+      "text": "The table is an example data set of the mean flow rate $Q$ of a river at a small hydropower plant from April to September. The head of the plant is $9.0\\,\\text{m}$ and its efficiency $0.85$.\n\nAssume that the whole flow passes through the turbine, the head and efficiency stay constant, and every month has $30$ days.\n\na) Calculate the total electric energy produced by the plant from April to September in gigawatt-hours.\n\nb) How many times as large is the electric power of the plant in May as in August? Explain with the help of the table why the production of the plant varies during the year.\n\nThe answer field takes the result of part a).",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 19,
+      "unit": "GWh",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Mean flow rate of the river by month (example data)",
+        "columns": [
+          "Month",
+          "$Q\\,(\\text{m}^3\\text{/s})$"
+        ],
+        "rows": [
+          [
+            "April",
+            "85"
+          ],
+          [
+            "May",
+            "120"
+          ],
+          [
+            "June",
+            "45"
+          ],
+          [
+            "July",
+            "30"
+          ],
+          [
+            "August",
+            "28"
+          ],
+          [
+            "September",
+            "40"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy4-15-L2-07",
+      "level": 2,
+      "text": "A student calculated the electric power of a wind turbine and got a strangely small result. Here is the student's solution.\n\n“The diameter of the rotor is $60\\,\\text{m}$, the wind speed $7.0\\,\\text{m/s}$, the density of air $1.25\\,\\text{kg/m}^3$ and the efficiency $0.40$. The area is $A = \\pi r^2 = 2827\\,\\text{m}^2$ and the power $P = \\tfrac{1}{2}\\eta\\rho A v = 0.5 \\cdot 0.40 \\cdot 1.25 \\cdot 2827 \\cdot 7.0 = 4948\\,\\text{W} \\approx 4.9\\,\\text{kW}$.”\n\nExplain what the error in the student's formula is, and calculate the correct electric power of the turbine. The answer field takes the correct power in kilowatts.",
+      "kind": [
+        "error"
+      ],
+      "answer": 240,
+      "unit": "kW",
+      "tolerance": 0.02
     }
   ],
   "level3": [
@@ -99,6 +247,98 @@
       "answer": 5.09684,
       "unit": "m",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy4-15-L3-04",
+      "level": 3,
+      "text": "The table is an example data set of the electric power of a wind turbine at different wind speeds. The diameter of the rotor is $80\\,\\text{m}$, the density of air $1.25\\,\\text{kg/m}^3$ and the rated power of the turbine $2.0\\,\\text{MW}$. At the speeds in the table the turbine operates below its rated power, and the efficiency is assumed to be approximately constant.\n\nLet us investigate whether the power follows the model $P = k v^3$.\n\na) Calculate the ratio $P/v^3$ for each row of the table and use it to justify that the power is proportional to the cube of the speed.\n\nb) From the mean of the ratios $P/v^3$, calculate the efficiency of the turbine as a percentage.\n\nc) What would be the power according to the model at a speed of $13\\,\\text{m/s}$? Compare the result with the rated power and explain what the difference tells about the validity of the model.\n\nThe answer field takes the result of part b).",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 40,
+      "unit": "%",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Electric power of a wind turbine as a function of wind speed (example data)",
+        "columns": [
+          "$v\\,(\\text{m/s})$",
+          "$P\\,(\\text{kW})$"
+        ],
+        "rows": [
+          [
+            "4",
+            "80"
+          ],
+          [
+            "5",
+            "155"
+          ],
+          [
+            "6",
+            "275"
+          ],
+          [
+            "7",
+            "425"
+          ],
+          [
+            "8",
+            "650"
+          ],
+          [
+            "9",
+            "905"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy4-15-L3-05",
+      "level": 3,
+      "text": "At night the electricity production of a wind farm exceeds consumption. The table is an example data set of the surplus power of the farm over six consecutive hours; the power is the mean of each hour.\n\nThe surplus electricity is used to pump water from the lower reservoir to the upper reservoir, which is $85.0\\,\\text{m}$ higher. The efficiency of the pumps is $0.800$, that is, $80.0\\,\\%$ of the electric energy is converted into the potential energy of the water. Assume that all the water is raised through the height difference of $85.0\\,\\text{m}$. The volume of the upper reservoir is $1.20\\cdot 10^{6}\\,\\text{m}^3$.\n\na) What volume of water can be pumped into the upper reservoir in six hours?\n\nb) Does the water fit into the upper reservoir?\n\nc) For how many hours would the stored potential energy be enough for a consumption of $40.0\\,\\text{MW}$, when the losses of the turbine and the generator are ignored here? Justify why a pumped-storage plant suits well alongside wind power.\n\nThe answer field takes the result of part a).",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 1040000.0,
+      "unit": "m³",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Surplus power of a wind farm at night (example data)",
+        "columns": [
+          "$t\\,(\\text{h})$",
+          "$P\\,(\\text{MW})$"
+        ],
+        "rows": [
+          [
+            "1",
+            "40"
+          ],
+          [
+            "2",
+            "52"
+          ],
+          [
+            "3",
+            "62"
+          ],
+          [
+            "4",
+            "58"
+          ],
+          [
+            "5",
+            "48"
+          ],
+          [
+            "6",
+            "40"
+          ]
+        ]
+      }
     }
   ]
 }

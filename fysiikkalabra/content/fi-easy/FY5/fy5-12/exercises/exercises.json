@@ -45,7 +45,7 @@
     {
       "id": "fy5-12-L2-01",
       "level": 2,
-      "text": "Kaksi samassa vaiheessa olevaa kaiutinta A ja B on $1{,}20\\,\\text{m}$:n päässä toisistaan. Kuulija seisoo $1{,}60\\,\\text{m}$:n päässä kaiuttimesta B suoraan sen edessä. Kuulijan ja kaiuttimen B välinen suora on kohtisuorassa kaiuttimien väliseen suoraan nähden. Mikä on suurin aallonpituus, jolla kuulijan kohdalla on hiljaista? Anna vastaus metreinä.",
+      "text": "Kaksi samassa vaiheessa olevaa kaiutinta A ja B on $1{,}20\\,\\text{m}$:n päässä toisistaan.\n\nKuulija seisoo $1{,}60\\,\\text{m}$:n päässä kaiuttimesta B suoraan sen edessä. Kuulijan ja kaiuttimen B välinen suora on kohtisuorassa kaiuttimien väliseen suoraan nähden.\n\nMikä on suurin aallonpituus, jolla kuulijan kohdalla on hiljaista? Anna vastaus metreinä.",
       "answer": 0.8,
       "unit": "m",
       "tolerance": 0.02
@@ -61,7 +61,7 @@
     {
       "id": "fy5-12-L2-03",
       "level": 2,
-      "text": "Aaltoaltaan kaksi lähdettä värähtelee samassa vaiheessa. Aallonpituus on $2{,}0\\,\\text{cm}$. Pisteeseen R on lähteestä $S_1$ matkaa $14{,}0\\,\\text{cm}$ ja lähteestä $S_2$ matkaa $9{,}0\\,\\text{cm}$. Lähde $S_1$ värähtelee voimakkaammin. Sen aallon amplitudi pisteessä R on $3{,}0\\,\\text{mm}$, ja lähteen $S_2$ aallon amplitudi on $2{,}0\\,\\text{mm}$. Mikä on veden värähtelyn amplitudi pisteessä R? Anna vastaus millimetreinä.",
+      "text": "Aaltoaltaan kaksi lähdettä värähtelee samassa vaiheessa. Aallonpituus on $2{,}0\\,\\text{cm}$.\n\nPisteeseen R on lähteestä $S_1$ matkaa $14{,}0\\,\\text{cm}$ ja lähteestä $S_2$ matkaa $9{,}0\\,\\text{cm}$. Lähde $S_1$ värähtelee voimakkaammin. Sen aallon amplitudi pisteessä R on $3{,}0\\,\\text{mm}$, ja lähteen $S_2$ aallon amplitudi on $2{,}0\\,\\text{mm}$.\n\nMikä on veden värähtelyn amplitudi pisteessä R? Anna vastaus millimetreinä.",
       "answer": 1.0,
       "unit": "mm",
       "tolerance": 0.02
@@ -79,7 +79,7 @@
     {
       "id": "fy5-12-L3-01",
       "level": 3,
-      "text": "Urheilukentällä kaksi kaiutinta on samassa vaiheessa $3{,}0\\,\\text{m}$:n päässä toisistaan. Ne soittavat ääntä, jonka taajuus on $340\\,\\text{Hz}$. Äänen nopeus on $340\\,\\text{m/s}$. Kuulija kävelee pitkää suoraa polkua kaukaa vasemmalta kauas oikealle. Polku kulkee kaiuttimien edessä kaiuttimien välisen suoran suuntaisesti. Kuinka monen hiljaisen kohdan ohi kuulija kulkee? Perustele, miksi hiljaisia kohtia on vain rajallinen määrä. Oleta, ettei ääni heijastu mistään.",
+      "text": "Urheilukentällä kaksi kaiutinta on samassa vaiheessa $3{,}0\\,\\text{m}$:n päässä toisistaan. Ne soittavat ääntä, jonka taajuus on $340\\,\\text{Hz}$. Äänen nopeus on $340\\,\\text{m/s}$.\n\nKuulija kävelee pitkää suoraa polkua kaukaa vasemmalta kauas oikealle. Polku kulkee kaiuttimien edessä kaiuttimien välisen suoran suuntaisesti.\n\nKuinka monen hiljaisen kohdan ohi kuulija kulkee? Perustele, miksi hiljaisia kohtia on vain rajallinen määrä. Oleta, ettei ääni heijastu mistään.",
       "answer": 6,
       "unit": "kpl",
       "tolerance": 0.02
@@ -87,7 +87,7 @@
     {
       "id": "fy5-12-L3-02",
       "level": 3,
-      "text": "Aaltoaltaan kahden samassa vaiheessa olevan lähteen taajuutta voi säätää. Aallon nopeus altaassa on $24\\,\\text{cm/s}$. Altaassa on merkitty piste T. Kun taajuus on $10\\,\\text{Hz}$, vesi pysyy pisteessä T levossa. Kun taajuutta nostetaan, vesi on pisteessä T seuraavan kerran levossa taajuudella $14\\,\\text{Hz}$. Kuinka suuri on matkaero pisteessä T? Anna vastaus senttimetreinä.",
+      "text": "Aaltoaltaan kahden samassa vaiheessa olevan lähteen taajuutta voi säätää. Aallon nopeus altaassa on $24\\,\\text{cm/s}$.\n\nAltaassa on merkitty piste T. Kun taajuus on $10\\,\\text{Hz}$, vesi pysyy pisteessä T levossa. Kun taajuutta nostetaan, vesi on pisteessä T seuraavan kerran levossa taajuudella $14\\,\\text{Hz}$.\n\nKuinka suuri on matkaero pisteessä T? Anna vastaus senttimetreinä.",
       "answer": 6.0,
       "unit": "cm",
       "tolerance": 0.02
@@ -95,7 +95,7 @@
     {
       "id": "fy5-12-L3-03",
       "level": 3,
-      "text": "Sataman aallonmurtajassa on kaksi kapeaa aukkoa. Niiden välinen etäisyys on $16{,}0\\,\\text{m}$. Merellä aallot tulevat suoraan kohti aallonmurtajaa, joten aallonharjat ovat sen suuntaisia. Aukkojen läpi tulevat aallot leviävät satamaan. Vene on ankkuroitu $30{,}0\\,\\text{m}$:n päähän toisesta aukosta, suoraan sen eteen kohtisuoraan aallonmurtajaa vastaan. Vene on aukkojen keskinormaalia lähimmällä solmuviivalla, jolla vesi on lähes tyyntä. Perustele, miksi aukot toimivat kuin kaksi samassa vaiheessa olevaa lähdettä. Laske aaltojen aallonpituus. Anna vastaus metreinä.",
+      "text": "Sataman aallonmurtajassa on kaksi kapeaa aukkoa. Niiden välinen etäisyys on $16{,}0\\,\\text{m}$.\n\nMerellä aallot tulevat suoraan kohti aallonmurtajaa, joten aallonharjat ovat sen suuntaisia. Aukkojen läpi tulevat aallot leviävät satamaan.\n\nVene on ankkuroitu $30{,}0\\,\\text{m}$:n päähän toisesta aukosta, suoraan sen eteen kohtisuoraan aallonmurtajaa vastaan. Vene on aukkojen keskinormaalia lähimmällä solmuviivalla, jolla vesi on lähes tyyntä.\n\nPerustele, miksi aukot toimivat kuin kaksi samassa vaiheessa olevaa lähdettä. Laske aaltojen aallonpituus. Anna vastaus metreinä.",
       "answer": 8.0,
       "unit": "m",
       "tolerance": 0.02

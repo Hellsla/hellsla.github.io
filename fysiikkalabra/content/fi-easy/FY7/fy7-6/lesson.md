@@ -172,6 +172,8 @@ Muoviputkessa ei synny virtoja, koska muovi ei johda sähköä. Kupariputki ei j
   <foreignObject x="341" y="31.5" width="250" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{alempi rengas ylhäältä}$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy7/eddy-current-brake.webp" alt="Harmaa akseli ja iso pyöreä metallilevy. Levyn vieressä on jarrulaite, jossa on johtoja."><figcaption>Junan pyörrevirtajarru. Metallilevy pyörii akselin mukana. Levyn vieressä on sähkömagneetteja. Kun jarrutetaan, levyyn syntyy pyörrevirtoja. Ne vastustavat levyn pyörimistä. Liike-energia muuttuu levyn sisäenergiaksi.</figcaption></figure>
+
 ### Pyörrevirtajarru, induktioliesi ja metallinilmaisin
 **Induktiojarrussa** eli pyörrevirtajarrussa metallilevy tai kisko liikkuu magneettikentässä. Pyörrevirrat jarruttavat liikettä. Vuoristoradan vaunun alle kiinnitetyt kupari- tai alumiinilevyt kulkevat radan vahvojen magneettien välistä. Junissa jarrun sähkömagneetit ovat lähellä kiskoa.
 

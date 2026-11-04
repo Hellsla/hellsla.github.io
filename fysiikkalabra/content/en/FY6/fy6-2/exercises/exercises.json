@@ -256,7 +256,7 @@
     {
       "id": "fy6-2-L3-01",
       "level": 3,
-      "text": "The manual of a multimeter says that on the range $200\\,\\text{mA}$ a voltage of $1.0\\,\\text{mV}$ is left across the meter for every milliampere passing through the meter. The meter is in series with a lamp and a resistor in a circuit where the voltage of the batteries is $4.5\\,\\text{V}$, and it shows $97.8\\,\\text{mA}$. What percentage of the voltage of the battery is left across the ammeter? Assume that the battery is ideal.",
+      "text": "The manual of a multimeter says that on the range $200\\,\\text{mA}$ a voltage of $1.0\\,\\text{mV}$ is left across the meter for every milliampere passing through the meter.\n\nThe meter is in series with a lamp and a resistor in a circuit where the voltage of the batteries is $4.5\\,\\text{V}$, and it shows $97.8\\,\\text{mA}$.\n\nWhat percentage of the voltage of the battery is left across the ammeter? Assume that the battery is ideal.",
       "answer": 2.17,
       "unit": "%",
       "tolerance": 0.03
@@ -264,7 +264,7 @@
     {
       "id": "fy6-2-L3-02",
       "level": 3,
-      "text": "Two students measure the voltage of the same power supply on the range $20\\,\\text{V}$ (resolution $0.01\\,\\text{V}$). Meter A shows $5.02\\,\\text{V}$, and its error limit is $\\pm(0.5\\,\\% + 2\\ \\text{digits})$. The cheaper meter B shows $5.14\\,\\text{V}$, and its error limit is $\\pm(1.5\\,\\% + 3\\ \\text{digits})$. The readings differ by $0.12\\,\\text{V}$. How large is the sum of the error limits of the meters? Can it be said on the basis of the difference of the readings that one meter is faulty? Give the sum in volts.",
+      "text": "Two students measure the voltage of the same power supply on the range $20\\,\\text{V}$ (resolution $0.01\\,\\text{V}$).\n\nMeter A shows $5.02\\,\\text{V}$, and its error limit is $\\pm(0.5\\,\\% + 2\\ \\text{digits})$. The cheaper meter B shows $5.14\\,\\text{V}$, and its error limit is $\\pm(1.5\\,\\% + 3\\ \\text{digits})$. The readings differ by $0.12\\,\\text{V}$.\n\nHow large is the sum of the error limits of the meters? Can it be said on the basis of the difference of the readings that one meter is faulty? Give the sum in volts.",
       "answer": 0.1522,
       "unit": "V",
       "tolerance": 0.03
@@ -272,7 +272,7 @@
     {
       "id": "fy6-2-L3-03",
       "level": 3,
-      "text": "A student wants to measure the current passing through a lamp. The student turns the selector of a multimeter to the current range $200\\,\\text{mA}$ and presses the test leads to both terminals of the lamp, in the same way as when measuring voltage. The circuit has only a battery and a lamp. The lamp goes out for a moment and then lights up again, and the display of the meter stays at zero. Explain what happened in the circuit and why the lamp went out only for a moment, and tell how the current should have been measured.",
+      "text": "A student wants to measure the current passing through a lamp. The student turns the selector of a multimeter to the current range $200\\,\\text{mA}$ and presses the test leads to both terminals of the lamp, in the same way as when measuring voltage. The circuit has only a battery and a lamp.\n\nThe lamp goes out for a moment and then lights up again, and the display of the meter stays at zero.\n\nExplain what happened in the circuit and why the lamp went out only for a moment, and tell how the current should have been measured.",
       "answer": "An ammeter was connected in parallel with the lamp. Its resistance is very small, so the current passed through the meter past the lamp and became large: the lamp went out until the fuse of the meter blew. The blown fuse interrupted the current through the meter, so the meter was left out of the circuit: the lamp lit up again and the display stayed at zero. An ammeter is connected in series: the circuit is opened and the meter is placed in the gap.",
       "unit": "",
       "tolerance": 0.02

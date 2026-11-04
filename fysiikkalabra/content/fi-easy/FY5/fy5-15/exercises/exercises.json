@@ -79,7 +79,7 @@
     {
       "id": "fy5-15-L3-01",
       "level": 3,
-      "text": "Jäähallissa on $12\\,000$ katsojaa. Kun yksi katsoja huutaa, hänen äänensä tuottaa kentän keskelle keskimäärin tason $42\\,\\text{dB}$. Samaan aikaan hallin kuulutusjärjestelmä soi. Se tuottaa kentän keskelle yksinään tason $80\\,\\text{dB}$. Mikä on intensiteettitaso kentän keskellä, kun kaikki katsojat huutavat yhtä aikaa ja kuulutus soi? Oleta, että jokainen huuto tuottaa kentän keskelle saman intensiteetin. Oleta myös, että kaikki äänilähteet ovat toisistaan riippumattomia. Anna vastaus desibeleinä.",
+      "text": "Jäähallissa on $12\\,000$ katsojaa.\n\nKun yksi katsoja huutaa, hänen äänensä tuottaa kentän keskelle keskimäärin tason $42\\,\\text{dB}$. Samaan aikaan hallin kuulutusjärjestelmä soi. Se tuottaa kentän keskelle yksinään tason $80\\,\\text{dB}$.\n\nMikä on intensiteettitaso kentän keskellä, kun kaikki katsojat huutavat yhtä aikaa ja kuulutus soi? Oleta, että jokainen huuto tuottaa kentän keskelle saman intensiteetin. Oleta myös, että kaikki äänilähteet ovat toisistaan riippumattomia. Anna vastaus desibeleinä.",
       "answer": 85,
       "unit": "dB",
       "tolerance": 0.01

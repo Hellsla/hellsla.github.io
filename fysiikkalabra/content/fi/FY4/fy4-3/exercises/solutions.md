@@ -208,3 +208,76 @@ a 0
 **Sijoitus:** $F = 1{,}5\,\text{N} + 0{,}40\,\text{N} = 1{,}9\,\text{N}$
 **Vastaus:** $1{,}9\,\text{N}$, kymmenesosanewtonin tarkkuudella kuten omenan paino $1{,}5\,\text{N}$, eli kaksi merkitsevää numeroa.
 **Järkevyys:** Alempi vaaka näyttää omenan painon $1{,}5\,\text{N}$, ja ylempi kannattelee lisäksi alempaa vaakaa, joten sen lukeman on oltava suurempi. Lukemien erotus $0{,}40\,\text{N}$ on juuri alemman vaa'an paino.
+
+## fy4-3-L1-06
+**Kysytty:** mikä väite kiekkoon vaikuttavista voimista on oikein, kun kiekko liukuu tasaisella nopeudella eikä kitkaa tai ilmanvastusta ole.
+**Periaate:** Newtonin ensimmäisen lain mukaan kappaleen nopeus pysyy samana silloin ja vain silloin, kun kokonaisvoima on nolla. Voimaa tarvitaan nopeuden muuttamiseen, ei sen ylläpitämiseen.
+**Mallivastaus:** Kiekon nopeus ja suunta pysyvät samoina, joten kokonaisvoima on nolla. Pystysuunnassa paino ja jään tukivoima kumoavat toisensa, ja vaakasuunnassa ei vaikuta mikään voima, koska kitka ja ilmanvastus puuttuvat. Eteenpäin työntävää voimaa ei tarvita eikä sellaista ole: lyönnin voima loppui, kun maila irtosi kiekosta. Jos kokonaisvoima osoittaisi liikkeen suuntaan, kiekko kiihtyisi, ja jos taaksepäin, se hidastuisi.
+
+## fy4-3-L1-07
+**Kysytty:** mikä voima on pöydän kirjaan kohdistaman tukivoiman vastavoima.
+**Periaate:** Newtonin kolmannen lain mukaan vuorovaikutuksessa kumpikin osapuoli vaikuttaa toiseen yhtä suurella ja vastakkaissuuntaisella voimalla. Vastavoima vaikuttaa siis eri kappaleeseen kuin alkuperäinen voima ja on samaa lajia.
+**Mallivastaus:** Tukivoima on pöydän voima kirjaan, joten sen vastavoima on kirjan voima pöytään: kirja painaa pöytää alaspäin. Kirjan paino ei ole vastavoima, koska se vaikuttaa samaan kappaleeseen kuin tukivoima; ne ovat yhtä suuret, koska kirja on levossa (ensimmäinen laki). Maan vetovoima kirjaan on kirjan paino ja kuuluu Maan ja kirjan vuorovaikutukseen. Pöydän paino lattiaan kuuluu pöydän ja lattian vuorovaikutukseen.
+
+## fy4-3-L1-08
+**Annettu:** lapsen voima köyteen $F = 38\,\text{N}$, kelkka liikkuu tasaisella nopeudella, köyden paino jätetään huomiotta
+**Kysytty:** köyden voima lapseen $F_\text{KL}$ yksikössä $\text{N}$
+**Periaate:** Newtonin kolmannen lain mukaan lapsi ja köysi vuorovaikuttavat, joten köysi vetää lasta yhtä suurella mutta vastakkaissuuntaisella voimalla kuin lapsi köyttä. Laki pätee, vaikka kelkka liikkuu tasaisella nopeudella.
+**Voimakuvio:** Valitaan kappaleeksi lapsi, joka piirretään suorakulmiona. Köyden voima $\overline{F}_\text{KL}$ osoittaa lapsesta kelkkaa kohti eli lasta vastaan, ja lapsen oma voima köyteen vaikuttaa köyteen eikä kuulu lapsen kuvioon.
+**Kaava:** $\overline{F}_\text{KL} = -\overline{F}_\text{LK}$, joten suuruuksina $F_\text{KL} = F_\text{LK}$
+**Muunnokset:** Voima on newtoneina, joten muunnoksia ei tarvita.
+**Sijoitus:** $F_\text{KL} = F_\text{LK} = 38\,\text{N}$
+**Vastaus:** $38\,\text{N}$ kelkkaa kohti, kaksi merkitsevää numeroa kuten voimassa $38\,\text{N}$.
+**Järkevyys:** Kelkan liike ei vaikuta voimien suuruuteen: sama $38\,\text{N}$ olisi, jos kelkka seisoisi. Tasainen nopeus kertoo vain, että köyden voima kelkkaan on yhtä suuri kuin kelkkaan kohdistuva vastus, $38\,\text{N}$.
+
+## fy4-3-L2-05
+**Annettu:** köysi on paikallaan; taulukosta anturin A suurin lukema $F_\text{A} = 4{,}8\,\text{N}$ hetkellä $t = 1{,}0\,\text{s}$, jolloin anturi B näyttää $4{,}8\,\text{N}$
+**Kysytty:** seinän voima köyteen $F_\text{S}$ yksikössä $\text{N}$ hetkellä, jolloin $F_\text{A}$ on suurin
+**Periaate:** Köysi on levossa, joten ensimmäisen lain mukaan siihen vaikuttavien voimien summa on nolla: seinän voima köyteen on yhtä suuri kuin oppilaan voima köyteen. Kolmannen lain mukaan köysi vetää anturia A ja seinää yhtä suurilla voimilla kuin ne köyttä, joten antureiden lukemat ovat yhtä suuret joka hetki.
+**Kuvaajan lukeminen:** Taulukosta luetaan rivi, jolla $F_\text{A}$ on suurin: $t = 1{,}0\,\text{s}$, $F_\text{A} = 4{,}8\,\text{N}$. Samalla rivillä $F_\text{B} = 4{,}8\,\text{N}$. Muilla riveillä lukemat eroavat enintään $0{,}1\,\text{N}$, mikä on mittauksen satunnaisvaihtelua, ei fysikaalista eroa.
+**Kaava:** $F_\text{S} - F_\text{A} = 0$, joten $F_\text{S} = F_\text{A}$
+**Muunnokset:** Voimat ovat newtoneina, joten muunnoksia ei tarvita.
+**Sijoitus:** $F_\text{S} = F_\text{A} = 4{,}8\,\text{N}$
+**Vastaus:** $4{,}8\,\text{N}$, kaksi merkitsevää numeroa kuten taulukon lukemissa.
+**Järkevyys:** Anturien lukemat eroavat kaikilla viidellä hetkellä enintään $0{,}1\,\text{N}$, kun lukemat vaihtelevat välillä $0{,}9\,\text{N}$–$4{,}8\,\text{N}$. Erot vaihtelevat suunnaltaan, joten ne ovat satunnaista mittausvaihtelua: kevyen köyden molemmat päät vetävät yhtä suurella voimalla joka hetki.
+
+## fy4-3-L2-06
+**Annettu:** taulukosta nopeudet $0{,}51$; $0{,}50$; $0{,}49$; $0{,}50$; $0{,}51$ ja $0{,}49\,\text{m/s}$, aika $\Delta t = 6{,}0\,\text{s}$
+**Kysytty:** a) miksi eteenpäin työntävää voimaa ei tarvita; b) kärryn kulkema matka $s$ yksikössä $\text{m}$
+**Periaate:** Newtonin ensimmäisen lain mukaan kappale liikkuu tasaisella nopeudella, kun kokonaisvoima on nolla, eikä voimaa tarvita ylläpitämään liikettä. Nopeus on kaikissa lukemissa lähes sama, joten liike on tasaista ja matka on nopeuden ja ajan tulo.
+**Kuvaajan lukeminen:** Taulukosta nähdään, että nopeus pysyy välillä $0{,}49$–$0{,}51\,\text{m/s}$ eikä kasva tai pienene. Vaihtelu on mittauksen satunnaisvaihtelua. Nopeuden keskiarvo $v_\text{ka}$ kuvaa tasaista nopeutta.
+**Kaava:** $v_\text{ka} = \dfrac{\Sigma v}{n}$ ja $s = v_\text{ka}\,\Delta t$
+**Muunnokset:** Nopeus on yksikössä $\text{m/s}$ ja aika sekunteina, joten muunnoksia ei tarvita.
+**Sijoitus:** Nopeuksien summa on $3{,}00\,\text{m/s}$ ja lukemia on $6$, joten $v_\text{ka} = \dfrac{3{,}00\,\text{m/s}}{6} = 0{,}500\,\text{m/s}$. Matka on
+$s = 0{,}500\,\text{m/s}\cdot 6{,}0\,\text{s} = 3{,}0\,\text{m}$.
+**Vastaus:** a) Nopeus ei muutu, joten kokonaisvoima on nolla: pieni ilmanvastus on hyvin pieni ja pystysuunnassa paino ja tukivoima kumoavat toisensa, joten eteenpäin työntävää voimaa ei tarvita. b) $3{,}0\,\text{m}$, kaksi merkitsevää numeroa kuten ajassa $6{,}0\,\text{s}$.
+**Järkevyys:** Nopeus on noin $0{,}5\,\text{m/s}$, joten $6\,\text{s}$:ssa kuljetaan noin $3\,\text{m}$. Radan pituuden on siis oltava vähintään tämän verran.
+
+## fy4-3-L2-07
+**Kysytty:** mikä virhe oppilaan päättelyssä on.
+**Periaate:** Newtonin kolmannen lain voima ja vastavoima ovat yhtä suuret ja vastakkaissuuntaiset, mutta ne vaikuttavat eri kappaleisiin. Kappaleen liikkeen ratkaisee vain siihen itseensä vaikuttavien voimien summa.
+**Mallivastaus:** Oppilas ottaa huomioon kaksi voimaa, nyrkin voiman seinään ja seinän voiman nyrkkiin, mutta ne vaikuttavat eri kappaleisiin. Nyrkin voima seinään vaikuttaa seinään, joten se ei kumoa mitään nyrkkiin vaikuttavaa. Nyrkkiin vaikuttaa seinän voima, ja se on nyrkin liikettä vastaan, joten nyrkki hidastuu ja pysähtyy. Voimat ovat silti yhtä suuret, vaikka seinä ei liiku, ja ne syntyvät yhtä aikaa. Liikkeen ylläpitämiseen ei tarvita voimaa.
+
+## fy4-3-L3-04
+**Annettu:** kärryn vierimisvastus $F_\text{v} = 410\,\text{N}$, ilmanvastus kärryyn $F_\text{k} = 40\,\text{N}$, ilmanvastus hevoseen $F_\text{h} = 30\,\text{N}$, nopeus on vakio ja suoraan eteenpäin, esimerkkiaineisto
+**Kysytty:** a) köyden voima kärryyn $T$; b) tien voima hevosen kavioihin $F_\text{t}$ yksikössä $\text{N}$; c) miksi voimat eivät kumoa toisiaan
+**Periaate:** Sekä kärry että hevonen liikkuvat tasaisella nopeudella, joten kummankin kokonaisvoima on nolla (ensimmäinen laki). Kärrystä saadaan köyden voima. Kolmannen lain mukaan kärry vetää hevosta taaksepäin yhtä suurella voimalla $T$ kuin köysi kärryä eteenpäin, ja sitä käytetään hevosen tasapainossa. Tien voima kavioihin on ulkoinen voima, joka vie parin eteenpäin.
+**Voimakuvio:** Piirrä kärrylle: köyden voima $\overline{T}$ eteenpäin, vierimisvastus ja ilmanvastus taaksepäin. Hevoselle: tien voima $\overline{F}_\text{t}$ eteenpäin, köyden voima $\overline{T}$ ja ilmanvastus taaksepäin. Hevosen ja kärryn voimat ovat eri kuvioissa.
+**Kaava:** Kärry: $T - F_\text{v} - F_\text{k} = 0$, joten $T = F_\text{v} + F_\text{k}$. Hevonen: $F_\text{t} - T - F_\text{h} = 0$, joten $F_\text{t} = T + F_\text{h}$.
+**Muunnokset:** Voimat ovat newtoneina, joten muunnoksia ei tarvita.
+**Sijoitus:** $T = 410\,\text{N} + 40\,\text{N} = 450\,\text{N}$ ja
+$F_\text{t} = 450\,\text{N} + 30\,\text{N} = 480\,\text{N}$.
+**Vastaus:** a) $450\,\text{N}$ ja b) $480\,\text{N}$ eteenpäin, kaksi merkitsevää numeroa kuten annetuissa voimissa. c) Hevosen voima kärryyn ja kärryn voima hevoseen ovat yhtä suuret ja vastakkaissuuntaiset, mutta ne vaikuttavat eri kappaleisiin, joten ne eivät kumoa toisiaan. Kärryn liikkeen ratkaisevat vain kärryyn vaikuttavat voimat, ja hevosen liikkeen vain hevoseen vaikuttavat. Hevonen pääsee liikkeelle, koska tie työntää sen kavioita eteenpäin voimalla, joka on suurempi kuin kärryn voima hevoseen.
+**Järkevyys:** Tien voima $480\,\text{N}$ on yhtä suuri kuin kaikkien vastusten summa $410\,\text{N} + 40\,\text{N} + 30\,\text{N} = 480\,\text{N}$, joten koko järjestelmä liikkuu tasaisella nopeudella. Kitka tien ja kavioiden välillä osoittaa eteenpäin, koska se vastustaa kavion liukumista taaksepäin.
+
+## fy4-3-L3-05
+**Annettu:** taulukosta nopeus ja köyden voima; hetkillä $t = 4{,}0\,\text{s}$, $5{,}0\,\text{s}$ ja $6{,}0\,\text{s}$ nopeudet $0{,}70$; $0{,}71$ ja $0{,}70\,\text{m/s}$ sekä voimat $3{,}4$; $3{,}5$ ja $3{,}3\,\text{N}$; alussa $F = 5{,}1\,\text{N}$ ja $v = 0$ (esimerkkiaineisto)
+**Kysytty:** a) milloin kokonaisvoima on nolla; b) kitkavoima $F_\text{k}$ yksikössä $\text{N}$; c) miksi alussa $F > F_\text{k}$
+**Periaate:** Kun kärryn nopeus on vakio, ensimmäisen lain mukaan kokonaisvoima on nolla, joten köyden voima ja kitka ovat yhtä suuret. Jos nopeus muuttuu, kokonaisvoima ei ole nolla. Kolmannen lain mukaan kärry vetää köyttä ja oppilasta yhtä suurella voimalla kuin köysi kärryä.
+**Kuvaajan lukeminen:** Nopeus kasvaa hetkestä $t = 0$ alkaen arvosta $0$ arvoon $0{,}69\,\text{m/s}$ ja pysyy sitten hetkistä $t = 4{,}0\,\text{s}$ alkaen lähes samana, noin $0{,}70\,\text{m/s}$. Kokonaisvoima on nolla hetkistä $t = 4{,}0\,\text{s}$ alkaen. Näiden kolmen hetken anturilukemat ovat $3{,}4\,\text{N}$, $3{,}5\,\text{N}$ ja $3{,}3\,\text{N}$.
+**Kaava:** $F_\text{k} = F_\text{ka}$ ja $F_\text{ka} = \dfrac{\Sigma F}{n}$
+**Muunnokset:** Voimat ovat newtoneina ja nopeus yksikössä $\text{m/s}$, joten muunnoksia ei tarvita.
+**Sijoitus:** Voimien summa on $10{,}2\,\text{N}$ ja lukemia on $3$, joten
+$F_\text{k} = \dfrac{10{,}2\,\text{N}}{3} = 3{,}40\,\text{N}$.
+**Vastaus:** b) $3{,}4\,\text{N}$, kaksi merkitsevää numeroa kuten anturin lukemissa. a) Kokonaisvoima on nolla siitä alkaen, kun nopeus on vakio, eli neljännestä sekunnista. c) Alussa nopeus kasvaa, joten kokonaisvoima ei ole nolla: köysi vetää kärryä eteenpäin enemmän kuin kitka vastustaa, ja alussa köysi vetää kärryä $5{,}1\,\text{N}$:n voimalla. Kolmannen lain mukaan kärry vetää köyttä ja oppilasta samalla $5{,}1\,\text{N}$:n voimalla taaksepäin, vaikka kärry kiihtyy.
+**Järkevyys:** Voima pienenee $5{,}1\,\text{N}$:sta kohti $3{,}4\,\text{N}$:a samalla, kun kiihtyminen loppuu. Kitka $3{,}4\,\text{N}$ on pienempi kuin alun voima, joten kärry on kiihtynyt, ja yhtä suuri kuin tasaisen vauhdin voima, joten nopeus ei enää muutu.

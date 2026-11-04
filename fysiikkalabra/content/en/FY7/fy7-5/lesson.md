@@ -195,6 +195,8 @@ In the chapter *Magnetic field of a wire and a coil*, an electric current produc
   <foreignObject x="435.5" y="171.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2">$\overline{v}$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy7/shake-flashlight.webp" alt="A transparent plastic torch on a pale background; inside the body a copper-coloured coil can be seen, with the black lamp end on the left."><figcaption>A shake torch. When the torch is shaken, a magnet inside it slides back and forth through the coil. The magnetic flux through the coil changes, so a voltage is induced in the coil, which charges the torch's energy store.</figcaption></figure>
+
 ### A change produces a voltage
 The phenomenon is called **electromagnetic induction**, and the voltage produced between the ends of the coil is called the **induced voltage**. When the ends of the coil are joined by a wire or a lamp, an induced current flows in the circuit. What all of Faraday's experiments have in common is that the magnetic field passing through the coil **changes**. A coil at rest in a strong but unchanging field gets no voltage. The change can come about in many ways: the magnet or the coil moves, the coil turns in the field, the area of the loop changes, or the current in a nearby electromagnet is switched on or off. In the hub dynamo of a bicycle, a magnet turns in the middle of the coils when the wheel turns. When the wheel stands still, nothing changes and the lamp stays dark.
 

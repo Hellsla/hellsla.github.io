@@ -169,3 +169,96 @@ a vasen
 **Substitution:** $\Delta t = \dfrac{30\,\text{kg}\cdot(4.0\,\text{m/s} - 0)}{18\,\text{N}} = \dfrac{120\,\text{kg}\cdot\text{m/s}}{18\,\text{N}} = 6.67\,\text{s}$
 **Answer:** $6.7\,\text{s}$, two significant figures like the data $4.0\,\text{m/s}$, $18\,\text{N}$ and $30\,\text{kg}$.
 **Reasonableness:** The deceleration is $18\,\text{N} : 30\,\text{kg} = 0.60\,\text{m/s}^2$, so the speed decreases by $0.6\,\text{m/s}$ every second, and $4.0\,\text{m/s}$ takes about seven seconds. The sled keeps moving forward the whole time even though the net force points backward: it just slows down.
+
+## fy4-4-L1-06
+**Find:** in which direction the net force $\Sigma\overline{F}$ acting on the elevator points when the elevator rises and slows down
+**Principle:** By Newton's second law $\Sigma\overline{F} = m\overline{a}$, so the net force always points in the direction of the acceleration. The direction of the acceleration is the direction of the change of velocity: when the speed decreases, the acceleration points against the velocity.
+**Model answer:** The correct statement is the one saying that the net force points down, because the speed decreases and the acceleration points down. The elevator is still moving upward, but its speed decreases, so the acceleration and the net force point down. The force of the rope is then smaller than the weight. The statement that the direction of the velocity decides the direction of the net force confuses velocity and acceleration. The statement about a zero net force would hold only in a steady rise. The statement that the force of the rope is always greater than the weight holds only when the rise begins.
+
+## fy4-4-L1-07
+**Given:** $m = 170\,\text{g}$, $a = 400\,\text{m/s}^2$
+**Find:** the net force $\Sigma F$ in $\text{N}$
+**Principle:** By Newton's second law the acceleration is produced by the net force: $\Sigma F = ma$. The acceleration and the mass of the puck are known, so the net force is obtained once the mass is first in kilograms.
+**Formula:** $\Sigma F = ma$
+**Conversions:** $170\,\text{g} = 170 : 1000\,\text{kg} = 0.17\,\text{kg}$
+**Substitution:** $\Sigma F = 0.17\,\text{kg}\cdot 400\,\text{m/s}^2 = 68\,\text{N}$
+**Answer:** $68\,\text{N}$ in the direction of motion, two significant figures like the mass $170\,\text{g}$.
+**Reasonableness:** The weight of the puck is $0.17\,\text{kg}\cdot 9.81\,\text{m/s}^2 \approx 1.7\,\text{N}$, so the hit is about $40$ times the weight, since the acceleration is about $40$ times the free-fall acceleration: $400 : 9.81 \approx 41$. A small puck needs a large force because the acceleration is large.
+
+## fy4-4-L1-08
+**Given:** $\Sigma F = 0.60\,\text{kN}$, $a = 1.5\,\text{m/s}^2$
+**Find:** the mass $m$ in $\text{kg}$
+**Principle:** Newton's second law $\Sigma F = ma$ connects the net force, the mass and the acceleration. When two of them are known, the third is obtained by solving the law for it.
+**Formula:** $\Sigma F = ma$, so $m = \dfrac{\Sigma F}{a}$
+**Conversions:** $0.60\,\text{kN} = 0.60 \cdot 1000\,\text{N} = 600\,\text{N}$
+**Substitution:** $m = \dfrac{600\,\text{N}}{1.5\,\text{m/s}^2} = 400\,\text{kg}$
+**Answer:** $4.0\cdot 10^{2}\,\text{kg}$ or $400\,\text{kg}$, two significant figures like the data.
+**Reasonableness:** Check by multiplying: $400\,\text{kg}\cdot 1.5\,\text{m/s}^2 = 600\,\text{N}$. The mass of a snowmobile is realistically a few hundred kilograms.
+
+## fy4-4-L2-05
+**Given:** the points $(F, a)$ of the table, for example $F = 1.00\,\text{N}$ and $a = 2.03\,\text{m/s}^2$; the mass is constant, friction is ignored
+**Find:** the mass $m$ of the cart in $\text{kg}$
+**Principle:** Friction is small, so the pulling force is the net force, and by Newton's second law $a = \dfrac{1}{m}F$. The acceleration is proportional to the force, so the line of the graph passes through the origin (no force, no acceleration) and its slope is $\dfrac{1}{m}$.
+**Reading the graph:** The points are drawn in the $(F, a)$ coordinate system and a straight line through the origin is fitted between the points. From the line we read the point $F = 1.00\,\text{N}$, $a = 2.01\,\text{m/s}^2$. The slope is calculated using the origin and this point, not from two neighbouring measurement points.
+**Formula:** $k = \dfrac{a}{F} = \dfrac{1}{m}$, so $m = \dfrac{1}{k}$
+**Conversions:** The quantities are in SI units, and $\dfrac{\text{m/s}^2}{\text{N}} = \dfrac{1}{\text{kg}}$, so no conversions are needed.
+**Substitution:** $k = \dfrac{2.01\,\text{m/s}^2 - 0\,\text{m/s}^2}{1.00\,\text{N} - 0\,\text{N}} = 2.01\,\tfrac{1}{\text{kg}}$ and $m = \dfrac{1}{2.01\,\tfrac{1}{\text{kg}}} = 0.4975\,\text{kg}$
+**Answer:** $0.50\,\text{kg}$, two significant figures, because the slope is read from the graph to an accuracy of about two figures.
+**Reasonableness:** At the measurement points $a : F$ is $0.41 : 0.20 \approx 2.05\,\tfrac{1}{\text{kg}}$ and $2.03 : 1.00 = 2.03\,\tfrac{1}{\text{kg}}$, so all the ratios are close to $2.0\,\tfrac{1}{\text{kg}}$. A mass of $0.5\,\text{kg}$ fits a small air-track cart. The points are not exactly on the line because of the random variation of the measurement.
+
+## fy4-4-L2-06
+**Given:** the pulling force is constant, the points $(m, a)$ of the table, for example $m = 0.20\,\text{kg}$ and $a = 6.1\,\text{m/s}^2$; friction is ignored
+**Find:** the magnitude of the pulling force $F$ in $\text{N}$
+**Principle:** With a constant force $a = F \cdot \dfrac{1}{m}$, so the acceleration is proportional to the reciprocal of the mass $\dfrac{1}{m}$. With the reciprocal, the curve $(m, a)$ becomes a straight line, and the slope of the line is the force $F$. The line passes through the origin, because with a very large mass the acceleration would be almost zero. The condition for the slope and the straight line to make sense is that only the mass changes: the pulling force, the surface and the friction must stay the same.
+**Reading the graph:** The reciprocals are $5.0$, $3.3$, $2.5$, $2.0$ and $1.7\,\tfrac{1}{\text{kg}}$. The points $(1/m, a)$ lie on a straight line, and from the line we read the points $(0, 0)$ and $(5.0\,\tfrac{1}{\text{kg}}, 6.0\,\text{m/s}^2)$.
+**Formula:** $a = F \cdot \dfrac{1}{m}$, so the slope $k = \dfrac{\Delta a}{\Delta(1/m)} = F$
+**Conversions:** The quantities are in SI units, and $\text{kg}\cdot\dfrac{\text{m}}{\text{s}^2} = \text{N}$, so no conversions are needed.
+**Substitution:** $F = k = \dfrac{6.0\,\text{m/s}^2 - 0\,\text{m/s}^2}{5.0\,\tfrac{1}{\text{kg}} - 0\,\tfrac{1}{\text{kg}}} = 1.2\,\text{N}$
+**Answer:** a) the slope is the pulling force $F$; b) the pulling force, the track and the friction were kept constant, and only the mass changed. The magnitude of the force is $1.2\,\text{N}$, two significant figures like the readings of the accelerations.
+**Reasonableness:** At every point $ma$ is close to the same value: $0.20\,\text{kg} \cdot 6.1\,\text{m/s}^2 = 1.22\,\text{N}$ and $0.50\,\text{kg} \cdot 2.4\,\text{m/s}^2 = 1.20\,\text{N}$. If the mass doubles, the acceleration halves: $0.30\,\text{kg}$ gives $3.9\,\text{m/s}^2$ and $0.60\,\text{kg}$ gives $2.0\,\text{m/s}^2$.
+
+## fy4-4-L2-07
+**Given:** $m = 820\,\text{kg}$, magnitude of the acceleration $a = 1.20\,\text{m/s}^2$, the element moves down and slows down; $g = 9.81\,\text{m/s}^2$
+**Find:** the tension $T$ in the rope in $\text{N}$ and the error in the student's solution
+**Principle:** By Newton's second law $\Sigma\overline{F} = m\overline{a}$ the net force points in the direction of the acceleration, not the direction of the velocity. The element moves down but slows down, so its speed decreases and the acceleration points up. The student chose the direction of motion, that is, down, as the direction of the acceleration. The rope must pull upward harder than the weight so that the net force points up.
+**Free-body diagram:** The concrete element as a rectangle, the positive direction up. The tension $\overline{T}$ of the rope points up from the top surface and the weight $\overline{G}$ points down from the centre. The arrow $\overline{T}$ is longer than $\overline{G}$. The velocity points down and the acceleration up.
+```voimakuvio
+T 9028 ylös
+G 8044
+a ylös
+v alas
+```
+**Formula:** $T - mg = ma$, so $T = m(g + a)$
+**Conversions:** The quantities are in SI units, so no conversions are needed.
+**Substitution:** $T = 820\,\text{kg}\cdot(9.81\,\text{m/s}^2 + 1.20\,\text{m/s}^2) = 820\,\text{kg}\cdot 11.01\,\text{m/s}^2 = 9028.2\,\text{N}$
+**Answer:** $9030\,\text{N}$ or $9.03\,\text{kN}$, three significant figures like the acceleration $1.20\,\text{m/s}^2$. The student's error was to take the direction of motion, down, as the direction of the acceleration: the acceleration points up, because the element slows down.
+**Reasonableness:** The weight is $820\,\text{kg}\cdot 9.81\,\text{m/s}^2 = 8044.2\,\text{N}$. For the slowing acceleration an additional $820\,\text{kg}\cdot 1.20\,\text{m/s}^2 = 984\,\text{N}$ is needed, and the sum is $9028.2\,\text{N}$. The student's result $7.06\,\text{kN}$ would be smaller than the weight, and then the element would accelerate down instead of slowing down.
+
+## fy4-4-L3-04
+**Given:** the points $(F, a)$ of the table for $F = 2.0 \ldots 6.0\,\text{N}$; the mass is constant, the friction force is constant
+**Find:** the magnitude of the friction force $F_\mu$ in $\text{N}$ (and also the mass $m$ of the cart)
+**Principle:** On the moving cart the pulling force acts in the direction of motion and friction against it, so by Newton's second law $F - F_\mu = ma$, that is, $a = \dfrac{1}{m}F - \dfrac{F_\mu}{m}$. The graph is a straight line whose slope is $\dfrac{1}{m}$. The line does not pass through the origin, because part of the pulling force is used to overcome friction: the acceleration is zero when $F = F_\mu$, so the line crosses the $F$-axis at the value of the friction force.
+**Reading the graph:** A straight line is fitted between the points. From the line we read two points far from each other: $(2.0\,\text{N}, 0.41\,\text{m/s}^2)$ and $(6.0\,\text{N}, 2.40\,\text{m/s}^2)$. The slope is calculated from them, and the crossing point on the $F$-axis is obtained from the first point with the slope.
+**Formula:** $k = \dfrac{\Delta a}{\Delta F} = \dfrac{1}{m}$, so $m = \dfrac{1}{k}$, and at the crossing point $a = 0$, so $F_\mu = F_1 - \dfrac{a_1}{k}$
+**Conversions:** The quantities are in SI units, so no conversions are needed.
+**Substitution:** $k = \dfrac{2.40\,\text{m/s}^2 - 0.41\,\text{m/s}^2}{6.0\,\text{N} - 2.0\,\text{N}} = 0.4975\,\tfrac{1}{\text{kg}}$, $m = \dfrac{1}{0.4975\,\tfrac{1}{\text{kg}}} = 2.01\,\text{kg}$ and $F_\mu = 2.0\,\text{N} - \dfrac{0.41\,\text{m/s}^2}{0.4975\,\tfrac{1}{\text{kg}}} = 1.18\,\text{N}$
+**Answer:** $1.2\,\text{N}$ ($1.18\,\text{N}$ before rounding), two significant figures. The mass of the cart is about $2.0\,\text{kg}$. The points are not exactly on the line because of the random variation of the measurement, so the result is an estimate.
+**Reasonableness:** When $F = 4.0\,\text{N}$, the net force is $4.0\,\text{N} - 1.18\,\text{N} = 2.82\,\text{N}$ and $a = 2.82\,\text{N} : 2.01\,\text{kg} = 1.40\,\text{m/s}^2$, which matches the value $1.42\,\text{m/s}^2$ of the table. Friction is small compared with the weight $2.01\,\text{kg}\cdot 9.81\,\text{m/s}^2 \approx 19.7\,\text{N}$, about $6\,\%$ of it, which fits a smooth surface.
+
+## fy4-4-L3-05
+**Given:** $m = 70\,\text{kg}$, phase 1: $0 \ldots 3.0\,\text{s}$, $a_1 = 1.0\,\text{m/s}^2$; phase 2: $3.0 \ldots 9.0\,\text{s}$, $a_2 = 0$; phase 3: $9.0 \ldots 13.0\,\text{s}$, uniform slowing down to a stop; initial velocity $0$; $g = 9.81\,\text{m/s}^2$
+**Find:** the greatest velocity $v_{\max}$, the acceleration $a_3$ and the normal force $N$ from the floor in phase 3
+**Principle:** In uniformly accelerated motion the change of velocity is $\Delta v = a\Delta t$. The elevator accelerates only in phase 1, so the greatest velocity is at the end of phase 1 and it is kept in phase 2. In phase 3 the elevator slows down to a stop. The forces on the person are from the Earth (weight) and from the floor (normal force), and by Newton's second law their sum is $ma$.
+**Free-body diagram:** The person as a rectangle, the positive direction up. The weight $\overline{G}$ points down from the centre and the normal force $\overline{N}$ from the floor points up from the bottom surface. The arrow $\overline{N}$ is shorter than $\overline{G}$, because the acceleration points down. The velocity points up.
+```voimakuvio
+pinta 0
+N 634,2 ylös
+G 686,7
+a alas
+v ylös
+```
+**Formula:** $v_{\max} = a_1\Delta t_1$, $a_3 = \dfrac{0 - v_{\max}}{\Delta t_3}$ and $N - mg = ma_3$, so $N = m(g + a_3)$
+**Conversions:** The quantities are in SI units, so no conversions are needed. The duration of phase 3 is $\Delta t_3 = 13.0\,\text{s} - 9.0\,\text{s} = 4.0\,\text{s}$.
+**Substitution:** $v_{\max} = 1.0\,\text{m/s}^2 \cdot 3.0\,\text{s} = 3.0\,\text{m/s}$ and $a_3 = \dfrac{0 - 3.0\,\text{m/s}}{4.0\,\text{s}} = -0.75\,\text{m/s}^2$. The normal force is $N = 70\,\text{kg}\cdot(9.81\,\text{m/s}^2 - 0.75\,\text{m/s}^2) = 70\,\text{kg}\cdot 9.06\,\text{m/s}^2 = 634.2\,\text{N}$
+**Answer:** $630\,\text{N}$ ($634\,\text{N}$ before rounding), two significant figures like the mass $70\,\text{kg}$ and the acceleration. The greatest velocity is $3.0\,\text{m/s}$ and the acceleration in phase 3 is $0.75\,\text{m/s}^2$ downward. The normal force is smaller than the weight $mg = 686.7\,\text{N}$, because the net force and the acceleration point down.
+**Reasonableness:** The elevator stops: $3.0\,\text{m/s} - 0.75\,\text{m/s}^2 \cdot 4.0\,\text{s} = 0$. The difference between the weight and the normal force is $686.7\,\text{N} - 634.2\,\text{N} = 52.5\,\text{N} = 70\,\text{kg}\cdot 0.75\,\text{m/s}^2$, so the forces agree with the equation of motion. In phase 1 the normal force would correspondingly be greater than the weight, $70\,\text{kg}\cdot 10.81\,\text{m/s}^2 = 756.7\,\text{N}$, and in the steady phase 2 equal to the weight.

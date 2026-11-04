@@ -245,7 +245,7 @@
     {
       "id": "fy6-9-L3-01",
       "level": 3,
-      "text": "A car starter battery has a nominal voltage of $12\\,\\text{V}$ and a capacity of $60\\,\\text{Ah}$, but only half of its capacity can be drawn from a lead-acid battery without damaging it. An electric-scooter battery has a nominal voltage of $36\\,\\text{V}$ and a capacity of $7.8\\,\\text{Ah}$, and it can be used completely. The ratio of the ampere-hours is almost eight. How many times as much usable energy can be drawn from the car battery as from the scooter battery?",
+      "text": "A car starter battery has a nominal voltage of $12\\,\\text{V}$ and a capacity of $60\\,\\text{Ah}$, but only half of its capacity can be drawn from a lead-acid battery without damaging it.\n\nAn electric-scooter battery has a nominal voltage of $36\\,\\text{V}$ and a capacity of $7.8\\,\\text{Ah}$, and it can be used completely. The ratio of the ampere-hours is almost eight.\n\nHow many times as much usable energy can be drawn from the car battery as from the scooter battery?",
       "answer": 1.28,
       "unit": "kertaa",
       "tolerance": 0.02

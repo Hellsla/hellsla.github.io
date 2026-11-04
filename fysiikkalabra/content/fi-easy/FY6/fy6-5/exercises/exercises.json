@@ -254,7 +254,7 @@
     {
       "id": "fy6-5-L3-03",
       "level": 3,
-      "text": "Kaksi samanlaista lamppua on kytketty rinnan jännitelähteeseen, jonka jännite on $12\\,\\text{V}$. Vastus $20\\,\\Omega$ on kytketty lähteen plusnavan ja lamppujen väliin. Kummankin lampun resistanssi on $60\\,\\Omega$, ja sen oletetaan pysyvän vakiona. Lähteen ja johtimien resistanssit jätetään huomiotta. Lähteen miinusnapa on nollakohta. Toinen lampuista kierretään irti kannastaan. Kuinka paljon muuttuu vastuksen ja lamppujen välisen haarautumispisteen potentiaali? Anna vastaus etumerkkeineen. Vastaus on positiivinen, jos potentiaali kasvaa.",
+      "text": "Kaksi samanlaista lamppua on kytketty rinnan jännitelähteeseen, jonka jännite on $12\\,\\text{V}$. Vastus $20\\,\\Omega$ on kytketty lähteen plusnavan ja lamppujen väliin.\n\nKummankin lampun resistanssi on $60\\,\\Omega$, ja sen oletetaan pysyvän vakiona. Lähteen ja johtimien resistanssit jätetään huomiotta. Lähteen miinusnapa on nollakohta.\n\nToinen lampuista kierretään irti kannastaan.\n\nKuinka paljon muuttuu vastuksen ja lamppujen välisen haarautumispisteen potentiaali? Anna vastaus etumerkkeineen. Vastaus on positiivinen, jos potentiaali kasvaa.",
       "answer": 1.8,
       "unit": "V",
       "tolerance": 0.02

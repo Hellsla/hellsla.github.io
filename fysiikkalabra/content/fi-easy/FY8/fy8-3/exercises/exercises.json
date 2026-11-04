@@ -80,7 +80,7 @@
     {
       "id": "fy8-3-L3-01",
       "level": 3,
-      "text": "Vetyatomin energiatasot ovat $E_n = -\\tfrac{13{,}6\\,\\text{eV}}{n^2}$. Purkausputkessa elektronit, joiden liike-energia on $12{,}5\\,\\text{eV}$, törmäävät perustilassa oleviin vetyatomeihin. Törmäyksessä atomi voi ottaa elektronilta vain sellaisen energian, joka on jonkin tasoparin erotus. Kuinka monta eri aallonpituutta virittyneet atomit voivat lähettää palatessaan perustilaan? Mukaan lasketaan myös siirtymät, jotka kulkevat välitasojen kautta. Laske eri tasoparit, joiden välillä siirtymä on mahdollinen. Jokainen tasopari antaa yhden aallonpituuden.",
+      "text": "Vetyatomin energiatasot ovat $E_n = -\\tfrac{13{,}6\\,\\text{eV}}{n^2}$. Purkausputkessa elektronit, joiden liike-energia on $12{,}5\\,\\text{eV}$, törmäävät perustilassa oleviin vetyatomeihin. Törmäyksessä atomi voi ottaa elektronilta vain sellaisen energian, joka on jonkin tasoparin erotus.\n\nKuinka monta eri aallonpituutta virittyneet atomit voivat lähettää palatessaan perustilaan? Mukaan lasketaan myös siirtymät, jotka kulkevat välitasojen kautta. Laske eri tasoparit, joiden välillä siirtymä on mahdollinen. Jokainen tasopari antaa yhden aallonpituuden.",
       "answer": 3,
       "unit": "",
       "tolerance": 0.02

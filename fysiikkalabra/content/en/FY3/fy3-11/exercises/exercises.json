@@ -40,6 +40,77 @@
       "answer": 21.7,
       "unit": "%",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-11-L1-06",
+      "level": 1,
+      "text": "A gas expands in a cylinder at constant pressure, and in the $(V, p)$ coordinate system the expansion appears as a horizontal line segment. Which of the following correctly tells how the work done by the gas can be seen in the coordinate system?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The work is the area of the rectangle between the segment and the volume axis, because the height is the pressure and the width is the change in volume.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The work is the height of the segment, because a higher pressure always does more work regardless of the change in volume.",
+          "feedback": "The height alone is the pressure, not the work. If the volume does not change, the piston does not move and no work is done, even if the pressure is high."
+        },
+        {
+          "text": "The work is the length of the segment, because the work depends only on the change in volume and the pressure does not matter.",
+          "feedback": "The length is the change in volume $\\Delta V$, not the work. The same change in volume does more work the higher the pressure is."
+        },
+        {
+          "text": "The work is the area of the rectangle between the segment and the volume axis, because the height is the pressure and the width is the change in volume.",
+          "feedback": "Correct: $W_\\text{g} = p\\,\\Delta V$ is the product of the height $p$ and the width $\\Delta V$, so the work is the area of the rectangle. The unit $\\text{Pa}\\cdot\\text{m}^3$ is the joule.",
+          "correct": true
+        },
+        {
+          "text": "The work is zero, because the pressure does not change during the expansion, and a quantity that does not change does no work.",
+          "feedback": "Work is done by a force when the piston moves. At constant pressure the force is constant, but the piston moves, so the work is the pressure times the change in volume and not zero."
+        }
+      ]
+    },
+    {
+      "id": "fy3-11-L1-07",
+      "level": 1,
+      "text": "A heat pump gives out more heat indoors than the electrical energy it uses. Why is this not in conflict with the conservation of energy?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The pump transfers heat from the outdoor air to the inside, so the energy given out indoors is the sum of the heat taken from outdoors and the electricity.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The pump turns electrical energy into several times as much heat, because the coefficient of performance tells how much new energy it produces.",
+          "feedback": "The coefficient of performance only tells how many times as much heat the pump gives out indoors compared with the electricity. Energy is not created; the extra heat comes from outdoors."
+        },
+        {
+          "text": "The efficiency of a heat pump is over $100\\,\\%$, because it is a more effective machine than any heat engine.",
+          "feedback": "The efficiency cannot exceed $100\\,\\%$. The coefficient of performance is a different quantity, and it can be over 1 because part of the heat is transferred from outdoors."
+        },
+        {
+          "text": "Electrical energy and heat are different things, so their magnitudes cannot be compared with each other in terms of the conservation of energy.",
+          "feedback": "Both electrical energy and heat are energy and are measured in joules or kilowatt-hours, so they can be compared. Conservation applies to their sum."
+        },
+        {
+          "text": "The pump transfers heat from the outdoor air to the inside, so the energy given out indoors is the sum of the heat taken from outdoors and the electricity.",
+          "feedback": "Correct: $Q_\\text{indoors} = Q_\\text{outdoors} + E_\\text{el}$. The pump uses electricity to transfer heat from cold to warm, and energy does not appear from nothing.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "fy3-11-L1-08",
+      "level": 1,
+      "text": "An air-to-water heat pump uses an electric power of $1.20\\,\\text{kW}$ and gives a thermal power of $3.90\\,\\text{kW}$ to the heating circuit. What is the coefficient of performance of the pump?",
+      "kind": [
+        "data"
+      ],
+      "answer": 3.25,
+      "unit": "",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -62,7 +133,7 @@
     {
       "id": "fy3-11-L2-03",
       "level": 2,
-      "text": "In a physics lesson there is air in a cylinder closed by a lightly moving piston. The air is heated, and a quantity of heat of $700.0\\,\\text{J}$ is transferred to it. The air expands so that its pressure stays at $125\\,\\text{kPa}$ and its volume grows by $1.60\\,\\textsf{l}$. By how much does the internal energy of the air change? Use the first law $\\Delta U = Q - W_\\text{g}$, where $W_\\text{g}$ is the work done by the air. Give the answer with its sign.",
+      "text": "In a physics lesson there is air in a cylinder closed by a lightly moving piston. The air is heated, and a quantity of heat of $700.0\\,\\text{J}$ is transferred to it. The air expands so that its pressure stays at $125\\,\\text{kPa}$ and its volume grows by $1.60\\,\\textsf{l}$.\n\nBy how much does the internal energy of the air change? Use the first law $\\Delta U = Q - W_\\text{g}$, where $W_\\text{g}$ is the work done by the air. Give the answer with its sign.",
       "answer": 500,
       "unit": "J",
       "tolerance": 0.02
@@ -74,13 +145,126 @@
       "answer": 720,
       "unit": "kW",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-11-L2-05",
+      "level": 2,
+      "text": "Example data: in a test run of a diesel generator, the mechanical power $P$ of the engine and the fuel consumption $q_m$ in kilograms per hour were measured at four different loads. The heat of combustion of diesel fuel is $43\\,\\text{MJ/kg}$. At which load is the efficiency of the engine greatest? Give this greatest efficiency as a percentage as the answer.",
+      "kind": [
+        "data"
+      ],
+      "answer": 31.4,
+      "unit": "%",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Power and fuel consumption of a diesel engine (example data)",
+        "columns": [
+          "$P\\,(\\text{kW})$",
+          "$q_m\\,(\\text{kg/h})$"
+        ],
+        "rows": [
+          [
+            "20.0",
+            "7.9"
+          ],
+          [
+            "40.0",
+            "11.6"
+          ],
+          [
+            "60.0",
+            "16.0"
+          ],
+          [
+            "80.0",
+            "22.5"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy3-11-L2-06",
+      "level": 2,
+      "text": "A student claims: “When the friction and other losses of a heat engine are removed, the engine can turn all the heat it receives into work, because energy is conserved.” What is wrong in the claim?",
+      "kind": [
+        "error",
+        "concept"
+      ],
+      "answer": "The engine repeats its work only by cooling the gas, so part of the heat must always be given out to the colder surroundings.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Energy is not conserved in a heat engine, so part of the heat disappears into nothing and cannot be used as work.",
+          "feedback": "Energy is always conserved: $W = Q_1 - Q_2$. Heat does not disappear; part of it is transferred to the colder surroundings."
+        },
+        {
+          "text": "The engine repeats its work only by cooling the gas, so part of the heat must always be given out to the colder surroundings.",
+          "feedback": "Correct: when the piston is returned, the gas has to be cooled, and in the cooling heat is transferred to the colder surroundings. So $Q_2 > 0$ and the efficiency $\\eta = W/Q_1$ stays below $100\\,\\%$.",
+          "correct": true
+        },
+        {
+          "text": "The claim is correct if the engine is big enough, because in a big engine the share of friction becomes negligible.",
+          "feedback": "The size of the engine does not remove the limit. Even if the friction were zero, heat has to be given out to a colder place, so the efficiency stays below $100\\,\\%$."
+        },
+        {
+          "text": "The claim is correct if the heat of combustion of the fuel is high enough, because then there is always more heat than is needed.",
+          "feedback": "The heat of combustion of the fuel tells how much heat is released, not what share of it turns into work. The cooling in each cycle always gives out heat."
+        }
+      ]
+    },
+    {
+      "id": "fy3-11-L2-07",
+      "level": 2,
+      "text": "Example data: the operation of the air-source heat pump of a school was followed for four days. For each day the electrical energy $E_\\text{el}$ used by the pump and the heat given out indoors $Q_\\text{indoors}$ were measured. How much heat did the pump take from the outdoor air in total during these four days? Give the answer in kilowatt-hours.",
+      "kind": [
+        "data"
+      ],
+      "answer": 20.9,
+      "unit": "kWh",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Measurements of the heat pump (example data)",
+        "columns": [
+          "Day",
+          "$T_\\text{outdoor}\\,({}^\\circ\\text{C})$",
+          "$E_\\text{el}\\,(\\text{kWh})$",
+          "$Q_\\text{indoors}\\,(\\text{kWh})$"
+        ],
+        "rows": [
+          [
+            "1",
+            "2.0",
+            "2.1",
+            "6.4"
+          ],
+          [
+            "2",
+            "-3.0",
+            "3.0",
+            "8.1"
+          ],
+          [
+            "3",
+            "-9.0",
+            "4.2",
+            "10.0"
+          ],
+          [
+            "4",
+            "-5.0",
+            "3.6",
+            "9.3"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
     {
       "id": "fy3-11-L3-01",
       "level": 3,
-      "text": "A city combined heat and power plant burns wood chips at a power of $320\\,\\text{MW}$ and at the same time produces $96\\,\\text{MW}$ of electricity and $180\\,\\text{MW}$ of district heating. If the plant did not exist, the same electric power would be produced in a condensing power plant with an efficiency of $40.0\\,\\%$, and the same district heating in a heating plant whose boiler heats the water of the district heating network with an efficiency of $90.0\\,\\%$. How much more fuel power would such separate production need? Justify why the heating plant reaches a much higher efficiency than the condensing power plant.",
+      "text": "A city combined heat and power plant burns wood chips at a power of $320\\,\\text{MW}$ and at the same time produces $96\\,\\text{MW}$ of electricity and $180\\,\\text{MW}$ of district heating.\n\nIf the plant did not exist, the same electric power would be produced in a condensing power plant with an efficiency of $40.0\\,\\%$, and the same district heating in a heating plant whose boiler heats the water of the district heating network with an efficiency of $90.0\\,\\%$.\n\nHow much more fuel power would such separate production need? Justify why the heating plant reaches a much higher efficiency than the condensing power plant.",
       "answer": 120,
       "unit": "MW",
       "tolerance": 0.02
@@ -88,7 +272,7 @@
     {
       "id": "fy3-11-L3-02",
       "level": 3,
-      "text": "Heating a detached house takes $16.0\\,\\text{MWh}$ of heat a year. The house now has direct electric heating, in which electric resistors turn practically all the electrical energy into internal energy, which is transferred as heat to the room. The owner is considering a heat pump that would take heat from the outdoor air and take care of all the heating. The coefficient of performance of the pump is 2.50 as a yearly average. How many megawatt-hours of electricity would the pump save in a year? How much heat would it take from the outdoor air during the year? Use conservation of energy to justify why the pump is not a perpetual motion machine even though it gives the house more heat than the electricity it uses.",
+      "text": "Heating a detached house takes $16.0\\,\\text{MWh}$ of heat a year. The house now has direct electric heating, in which electric resistors turn practically all the electrical energy into internal energy, which is transferred as heat to the room.\n\nThe owner is considering a heat pump that would take heat from the outdoor air and take care of all the heating. The coefficient of performance of the pump is 2.50 as a yearly average.\n\nHow many megawatt-hours of electricity would the pump save in a year? How much heat would it take from the outdoor air during the year? Use conservation of energy to justify why the pump is not a perpetual motion machine even though it gives the house more heat than the electricity it uses.",
       "answer": 9.6,
       "unit": "MWh",
       "tolerance": 0.02
@@ -96,10 +280,104 @@
     {
       "id": "fy3-11-L3-03",
       "level": 3,
-      "text": "A petrol car uses $6.00\\,\\textsf{l}$ of petrol over $100\\,\\text{km}$ when it drives on a main road at a steady speed of $80.0\\,\\text{km/h}$. The density of petrol is $0.750\\,\\text{kg/l}$ and its heat of combustion is $43.0\\,\\text{MJ/kg}$. The efficiency of the engine is $28.0\\,\\%$. What is the average mechanical power of the engine? Give the answer in kilowatts. Where does the rest of the energy of the fuel go, and why does an electric car, whose motor has an efficiency of about $90\\,\\%$, need much less energy for the same distance?",
+      "text": "A petrol car uses $6.00\\,\\textsf{l}$ of petrol over $100\\,\\text{km}$ when it drives on a main road at a steady speed of $80.0\\,\\text{km/h}$. The density of petrol is $0.750\\,\\text{kg/l}$ and its heat of combustion is $43.0\\,\\text{MJ/kg}$. The efficiency of the engine is $28.0\\,\\%$.\n\nWhat is the average mechanical power of the engine? Give the answer in kilowatts. Where does the rest of the energy of the fuel go, and why does an electric car, whose motor has an efficiency of about $90\\,\\%$, need much less energy for the same distance?",
       "answer": 12.0,
       "unit": "kW",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-11-L3-04",
+      "level": 3,
+      "text": "Example data: the heating of a detached house is being planned with a heat pump. The table shows the monthly heat demand $Q$ of the house in the winter season and the coefficient of performance $\\varepsilon$ of the pump at the average outdoor temperature of each month. The heat demand is covered entirely by the pump.\n\na) Calculate the electrical energy $E_\\text{el}$ that the pump uses in each month, and the total electrical energy of all the months.\n\nb) Calculate the coefficient of performance of the season $\\varepsilon_\\text{season}$, which is the ratio of the heat given out during the whole season to the electrical energy of the whole season.\n\nc) Explain why the coefficient of performance of the season must not be calculated as the ordinary average of the monthly coefficients of performance, and calculate how much electricity the pump saves compared with direct electric heating, where all the heat comes from electricity.\n\nWrite the result of part b) in the answer box.",
+      "kind": [
+        "data",
+        "model"
+      ],
+      "answer": 2.74,
+      "unit": "",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Heat demand of the house and coefficient of performance of the heat pump (example data)",
+        "columns": [
+          "Month",
+          "$T_\\text{outdoor}\\,({}^\\circ\\text{C})$",
+          "$Q\\,(\\text{MWh})$",
+          "$\\varepsilon$"
+        ],
+        "rows": [
+          [
+            "November",
+            "1.0",
+            "1.8",
+            "3.4"
+          ],
+          [
+            "December",
+            "-4.0",
+            "2.6",
+            "2.9"
+          ],
+          [
+            "January",
+            "-12.0",
+            "4.0",
+            "2.4"
+          ],
+          [
+            "February",
+            "-7.0",
+            "3.1",
+            "2.6"
+          ],
+          [
+            "March",
+            "-1.0",
+            "2.2",
+            "3.1"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy3-11-L3-05",
+      "level": 3,
+      "text": "Example data: in a vertical cylinder there is air closed by a lightly moving piston. The cross-sectional area of the cylinder is $A = 200\\,\\text{cm}^2$, and according to the measurements the pressure of the air stays constant at $p = 125\\,\\text{kPa}$. The air is heated with an electric resistor whose power is $260\\,\\text{W}$. Assume that all the energy given out by the resistor is transferred to the air as heat. The table gives the height $h$ of the piston, measured from the bottom of the cylinder, during the heating.\n\na) Calculate the heat $Q$ transferred to the air in four seconds and the work $W_\\text{g}$ done by the air, using the first and last values of the table.\n\nb) Calculate the change in the internal energy of the air $\\Delta U$.\n\nc) Calculate what share of the heat turned into work, and justify why a single expansion like this is not yet a heat engine.\n\nWrite the result of part b) in kilojoules in the answer box.",
+      "kind": [
+        "data",
+        "model"
+      ],
+      "answer": 0.74,
+      "unit": "kJ",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Height of the piston during the heating (example data)",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$h\\,(\\text{cm})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "10.0"
+          ],
+          [
+            "1.0",
+            "13.1"
+          ],
+          [
+            "2.0",
+            "16.0"
+          ],
+          [
+            "3.0",
+            "19.2"
+          ],
+          [
+            "4.0",
+            "22.0"
+          ]
+        ]
+      }
     }
   ]
 }

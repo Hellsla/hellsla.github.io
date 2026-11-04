@@ -43,6 +43,80 @@
       "answer": 190,
       "unit": "N",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy4-5-L1-06",
+      "level": 1,
+      "text": "A box slides to the right on a horizontal floor and slows down because of friction from the floor. Air drag is ignored. Which forces are drawn in the free-body diagram of the box?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Weight, normal force and friction, because each force has a cause",
+      "unit": "",
+      "tolerance": 0.02,
+      "fbd": "identify",
+      "choices": [
+        {
+          "text": "Weight, normal force, friction and a motion force, because the box moves to the right",
+          "feedback": "A force in the direction of motion is not needed and does not exist: there is no object that would cause it. A force is needed to change the velocity, not to keep the motion going."
+        },
+        {
+          "text": "Weight and friction, because the normal force cancels the weight and does not appear in the diagram",
+          "feedback": "The free-body diagram includes every force acting on the object, even if the forces cancel each other. The normal force and the weight are equally long, but both are included."
+        },
+        {
+          "text": "Weight, normal force, friction and velocity, because velocity tells the direction of motion",
+          "feedback": "Velocity is not a force but a quantity describing the motion of the object. If needed, it is drawn beside the free-body diagram in its own colour, not as a force."
+        },
+        {
+          "text": "Weight, normal force and friction, because each force has a cause",
+          "feedback": "Correct: the Earth pulls the box (weight), the floor supports it (normal force) and the floor resists the sliding (friction). The friction points to the left, and it is the only horizontal force.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "fy4-5-L1-07",
+      "level": 1,
+      "text": "Two people push a cabinet on a horizontal floor in the same direction, one with a force of $120\\,\\text{N}$ and the other with $85\\,\\text{N}$. The friction force from the floor on the cabinet is $150\\,\\text{N}$ in the opposite direction. The weight and the normal force cancel each other. How large is the net force acting on the cabinet?",
+      "kind": [
+        "reasoning"
+      ],
+      "answer": 55,
+      "unit": "N",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy4-5-L1-08",
+      "level": 1,
+      "text": "A box is on a horizontal floor. It is pulled with a string obliquely upward, but the box stays at rest on the floor. How does the normal force $N$ from the floor compare with the weight $G$ of the box?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "$N$ is smaller than the weight, because the string supports part of the weight",
+      "unit": "",
+      "tolerance": 0.02,
+      "fbd": "identify",
+      "choices": [
+        {
+          "text": "$N$ is equal to $G$, because the box stays at rest in the vertical direction",
+          "feedback": "In the vertical direction, in addition to the normal force, the vertical component of the string acts upward. The net force is zero, so $N + T_y = G$ and $N$ is smaller than the weight."
+        },
+        {
+          "text": "$N$ is greater than the weight, because the string presses the box against the floor",
+          "feedback": "The string pulls the box upward and does not press it against the floor. The vertical component of the string reduces the normal force."
+        },
+        {
+          "text": "$N$ is smaller than the weight, because the string supports part of the weight",
+          "feedback": "Correct: the equation in the vertical direction is $N + T\\sin\\alpha - G = 0$, so $N = G - T\\sin\\alpha$. The normal force is not always equal to the weight.",
+          "correct": true
+        },
+        {
+          "text": "$N$ is zero, because the string supports the whole weight of the box",
+          "feedback": "If $N$ were zero, the friction from the floor would also be zero, and the horizontal component of the string would set the box in motion. The box stays at rest, so the floor supports it and $N > 0$."
+        }
+      ]
     }
   ],
   "level2": [
@@ -82,6 +156,91 @@
       "unit": "m/s²",
       "tolerance": 0.02,
       "fbd": "equations"
+    },
+    {
+      "id": "fy4-5-L2-05",
+      "level": 2,
+      "text": "Force sensors are used to study a ring that stays at rest supported by three ropes. Rope A pulls the ring horizontally to the left and rope C vertically down. Rope B pulls the ring obliquely up and to the right at an angle $\\alpha$ with the horizontal. The masses of the ropes and the mass and weight of the ring are ignored. The table has sample data from three measurements in which sensors A, B and C show the forces $F_\\text{A}$, $F_\\text{B}$ and $F_\\text{C}$.\n\na) Explain why the sum of the forces acting on the ring is zero, and write the equations of motion in the $x$ and $y$ directions. Draw the free-body diagram of the ring as a rectangle.\n\nb) Calculate the angle $\\alpha$ from the forces $F_\\text{A}$ and $F_\\text{C}$ of each measurement and the mean of the three angles.\n\nc) Check the result by calculating the force $F_\\text{B}$ from the components of the first measurement and comparing it with the reading of the sensor.\n\nThe answer box takes the mean of the angles in part b).",
+      "kind": [
+        "data",
+        "experiment"
+      ],
+      "answer": 40.1,
+      "unit": "°",
+      "tolerance": 0.02,
+      "fbd": "equations",
+      "data": {
+        "caption": "Forces of three ropes on the ring (sample data)",
+        "columns": [
+          "$F_\\text{A}\\,(\\text{N})$",
+          "$F_\\text{C}\\,(\\text{N})$",
+          "$F_\\text{B}\\,(\\text{N})$"
+        ],
+        "rows": [
+          [
+            "3.0",
+            "2.5",
+            "3.9"
+          ],
+          [
+            "4.5",
+            "3.8",
+            "5.9"
+          ],
+          [
+            "6.0",
+            "5.1",
+            "7.9"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy4-5-L2-06",
+      "level": 2,
+      "text": "A box of mass $12\\,\\text{kg}$ is kicked into motion on a horizontal floor. The box slides to the right and slows down. The friction force from the floor on the box is $30\\,\\text{N}$ to the left. Air drag is ignored. A student solves the acceleration as follows:\n\n“The box moves to the right, so the force from the kick, $40\\,\\text{N}$ to the right, acts on it. The net force is $40\\,\\text{N} - 30\\,\\text{N} = 10\\,\\text{N}$ to the right, so $a = 10\\,\\text{N} : 12\\,\\text{kg} \\approx 0.83\\,\\text{m/s}^2$ to the right and the box accelerates.”\n\na) What is the student's error? Draw the correct free-body diagram of the box.\n\nb) Calculate the magnitude of the acceleration of the box correctly.\n\nThe answer box takes the magnitude of the acceleration in part b).",
+      "kind": [
+        "error",
+        "reasoning"
+      ],
+      "answer": 2.5,
+      "unit": "m/s²",
+      "tolerance": 0.02,
+      "fbd": "error"
+    },
+    {
+      "id": "fy4-5-L2-07",
+      "level": 2,
+      "text": "A student studies experimentally how two oblique forces combine. A ring is on a horizontal table, so its weight and the normal force from the table cancel each other. She attaches three force sensors to the ring. Sensors 1 and 2 pull the ring with forces $F_1 = 6.0\\,\\text{N}$ and $F_2 = 8.0\\,\\text{N}$, and the angle between their directions is $\\varphi$. Sensor 3 pulls the ring in the direction opposite to the sum of the forces $\\overline{F}_1$ and $\\overline{F}_2$, and the ring stays at rest. The table has sample data from three measurements.\n\na) Explain why the reading $F_3$ of sensor 3 is equal to the magnitude of the sum of the forces $\\overline{F}_1$ and $\\overline{F}_2$.\n\nb) Calculate the magnitude of the sum of the forces $\\overline{F}_1$ and $\\overline{F}_2$ when $\\varphi = 60\\,{}^\\circ$. Choose the $x$ axis in the direction of the force $\\overline{F}_1$.\n\nc) Compare the calculated value with the measured one and tell what the small difference may be due to.\n\nThe answer box takes the magnitude of the sum in part b).",
+      "kind": [
+        "experiment",
+        "data"
+      ],
+      "answer": 12.2,
+      "unit": "N",
+      "tolerance": 0.03,
+      "fbd": "equations",
+      "data": {
+        "caption": "Reading of sensor 3 at different angles (sample data)",
+        "columns": [
+          "$\\varphi\\,({}^\\circ)$",
+          "$F_3\\,(\\text{N})$"
+        ],
+        "rows": [
+          [
+            "30",
+            "13.4"
+          ],
+          [
+            "60",
+            "12.3"
+          ],
+          [
+            "90",
+            "10.1"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -112,6 +271,112 @@
       "unit": "N",
       "tolerance": 0.02,
       "fbd": "equations"
+    },
+    {
+      "id": "fy4-5-L3-04",
+      "level": 3,
+      "text": "A box of mass $25\\,\\text{kg}$ is pulled on a horizontal floor with a rope that makes an angle of $30\\,{}^\\circ$ with the horizontal. The tension in the rope is $120\\,\\text{N}$ all the time. The box starts from rest, and a motion sensor measures its velocity. The table has sample data from the measurement. The mass of the rope and air drag are ignored.\n\na) Draw the free-body diagram of the box and write the equations of motion in the $x$ and $y$ directions.\n\nb) Determine the acceleration of the box from the velocities in the table.\n\nc) Calculate the friction force from the floor on the box.\n\nd) Calculate the normal force from the floor and explain why it is smaller than the weight.\n\nThe answer box takes the friction force in part c).",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 84,
+      "unit": "N",
+      "tolerance": 0.03,
+      "fbd": "equations",
+      "data": {
+        "caption": "Velocity of the box while the rope pulls (sample data)",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$v\\,(\\text{m/s})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "0.00"
+          ],
+          [
+            "1.0",
+            "0.78"
+          ],
+          [
+            "2.0",
+            "1.63"
+          ],
+          [
+            "3.0",
+            "2.38"
+          ],
+          [
+            "4.0",
+            "3.22"
+          ],
+          [
+            "5.0",
+            "4.01"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy4-5-L3-05",
+      "level": 3,
+      "text": "A crane lifts a load of mass $80\\,\\text{kg}$ from rest straight up and stops it at the top. The lift takes $8.0\\,\\text{s}$ and has three phases: the load accelerates between the moments $0.0\\,\\text{s}$ and $2.0\\,\\text{s}$, moves at constant velocity between $2.0\\,\\text{s}$ and $6.0\\,\\text{s}$, and decelerates to a stop between $6.0\\,\\text{s}$ and $8.0\\,\\text{s}$. The acceleration of each phase is approximately constant. A force sensor measures the force of the rope on the load, and the table has sample data of the readings. The mass of the rope and air drag are ignored.\n\na) Draw the free-body diagram of the load in the first phase and write the equation of motion.\n\nb) Calculate the acceleration of the load in each phase using the mean of the readings of the phase.\n\nc) Explain why the force of the rope in the third phase is smaller than the weight although the load moves upward.\n\nd) How high is the load lifted?\n\nThe answer box takes the lifting height in part d).",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 14.4,
+      "unit": "m",
+      "tolerance": 0.03,
+      "fbd": "equations",
+      "data": {
+        "caption": "Force of the rope on the load (sample data)",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$T\\,(\\text{N})$"
+        ],
+        "rows": [
+          [
+            "0.5",
+            "881"
+          ],
+          [
+            "1.0",
+            "878"
+          ],
+          [
+            "1.5",
+            "883"
+          ],
+          [
+            "3.0",
+            "786"
+          ],
+          [
+            "4.0",
+            "783"
+          ],
+          [
+            "5.0",
+            "785"
+          ],
+          [
+            "6.5",
+            "691"
+          ],
+          [
+            "7.0",
+            "688"
+          ],
+          [
+            "7.5",
+            "690"
+          ]
+        ]
+      }
     }
   ]
 }

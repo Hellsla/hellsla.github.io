@@ -1,16 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: f8e0c8857f16c43a
+CONTENT-HASH: c5c19cd3c9ab26b2
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] fy6-16-theory-1280-2, load chart — the label "sauna heater" touches the bar edges in the L1-L3 rows (unchanged; shorten to "sauna" or widen the segment).
+- [Minor] ev-charging-socket floats at 1280 beside 'One phase or three', while its caption is about inlet types (AC vs DC); mild mismatch of position, fine to leave.
+- [Minor] for science: caption assigns the larger inlet to DC fast charging, which is right for this Nissan Leaf (CHAdeMO plus AC inlet); fine as an example but not general to all cars.
 
 ## Checked
-- fy6-16-intro-1280: third learning goal ("explain with Joule's law why a charger has its own circuit and why extension cords and loose joints heat up.") completes its heading, fits the card, no clipping.
-- fy6-16-theory-1280-2 and -5: "Heating of a cable and a joint" paragraph and the summary bullet ("little energy is transferred from the reel as heat to the surroundings, and in a loose joint the heating power is concentrated in a small spot") read: fluent, formulas and units intact.
-- fy6-16-open-tarkista-1280-3: layout intact. The changed inquiry.json answer text is a hidden model answer; seen only in source diff.
-- Changes are wording only (heat transfer, learning goal); no figure, number or symbol changed, and the figure row and example captures were not affected.
-
-## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+- batch delta review: opened the source image(s) and 1280/390 px renders of the photo(s): ev-charging-socket.webp (two inlets, larger black one and a smaller one with orange cap: matches alt) and ev-charging-station.webp (yellow station, yellow railings, black-yellow bollards: matches alt). Alt matches the visible content, captions physically correct and tied to the chapter, units in LaTeX, photo floats right at 1280 (no clipping, scrollWidth = viewport) and stacks above the caption at 390.

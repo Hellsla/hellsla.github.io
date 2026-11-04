@@ -1,14 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 8ae7e6ed7904aba9
+CONTENT-HASH: a9a1809dfd830640
 
 ## Blocking
 
 ## Polish
-- [Minor] Earlier minor items (plain "(Wb)" in the Kaava list, "tasaisesti ... jatkuvasti" sentence, phi-e tick labels) remain untouched and non-blocking.
+- [Minor] unit-photo bicycle-dynamo at 1280 px — the float pushes the following block down, leaving a ca. $120\,\text{px}$ empty gap between the heading "Miksi jännite on sinimuotoinen" and its paragraph — move the photo after that paragraph or let the heading start below the float.
 
 ## Checked
-- Delta: koe-2 intro and the summary bullet. Opened exp-koe-2-390-1: new intro wraps cleanly at 390 px, LaTeX numbers and units correct, N shown locked ("vakio"), no clipping; Finnish is correct and natural.
-- Opened theory-1280-3: summary bullet "Sinimuotoisen vaihtojännitteen tehollinen arvo on U = U0 : √2 ja I = I0 : √2 ..." renders correctly, colon division, units with thin space, list and bicycle figure layout intact.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 4
+batch delta review: opened the image file(s) (bicycle-dynamo, generator-stator, generator-rotor) and rendered unit-photo with caption at 1280 px (float right, 320 px wide, inside column, no clipping) and 390 px (stacked, no horizontal overflow); alt text matches what is visible, caption physically sound and tied to the chapter, Finnish natural, number+unit in LaTeX.

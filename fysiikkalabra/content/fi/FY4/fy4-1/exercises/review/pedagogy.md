@@ -1,17 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 1ed699cbb90173d7
+CONTENT-HASH: 5bf5cc74045e4797
 
 ## Blocking
 
 ## Polish
-- exercises.json L3-03 — "välillä 0–$10\,\text{s}$", "10–$20\,\text{s}$", "20–$40\,\text{s}$" leave the range's first number outside the LaTeX and without a unit, so the text breaks into plain and math mid-range — write each range as one expression, e.g. "välillä $0\text{–}10\,\text{s}$" (or "ajanhetkestä $0\,\text{s}$ hetkeen $10\,\text{s}$"); likewise "arvosta 0 arvoon $30\,\text{m}$" could read "arvosta $0\,\text{m}$ arvoon $30\,\text{m}$".
-- solutions.md L1-04 Järkevyys — "jokaista 0,7 sekuntia kohden" is the one number with a unit still in plain text — "$0{,}7\,\text{s}$".
-- exercises.json L3-02 — "paikasta 0" is a position without unit — "paikasta $0\,\text{m}$" (the same task already uses $90\,\text{m}$).
+- exercises.json L2-07 — the robot with rest intervals repeats the situation of the existing L3-03 (robot, three straight parts, a rest in the middle); the L2 task adds the (t,v) graph, so it is not a duplicate, but a different object (e.g. a lift or a cyclist at traffic lights) would keep the set varied.
+- exercises.json L3-05 — apart from the fit and the extrapolation remark it is the existing L3-02 meeting task with a late start; it fits level 3, but asking "what speed of the truck would make the prediction wrong by 10 %" or a second sensor reading would give more YO-style data interpretation.
+- exercises.json L2-05, L2-06, L3-04 — "Piirrä ... ja sovita suora" is the whole method; the answer box takes one number, so the graph work itself is not checked. Acceptable for a self-study set, but the solution's graph-reading step carries the teaching (it does).
+- solutions.md L2-06 Kuvaajan lukeminen — "Kärryn B nopeus on suurempi vauhdiltaan" reads clumsily; "Kärryn B vauhti on suurempi" is clearer.
 
 ## Checked
-- Delta judged: every changed line only wraps a number and unit in LaTeX; no value, unit or wording of the question changed, so levels, counts and the worked-example distinction hold from the earlier PASS.
-- Case endings after LaTeX units read correctly in Finnish ($120\,\text{m}$:n, $15\,\text{s}$:ssa, $3{,}5\,\text{m/s}$:n, $1{,}2\,\text{km}$:n, $40\,\text{s}$:n).
-- Decimal commas inside LaTeX use {,}; negatives use a proper minus ($-5{,}0\,\text{m}$), better than the former plain "−5,0 m".
-- Situation first and question last still holds in all twelve tasks; solutions keep their seven steps.
-- Solutions' changed Järkevyys lines read the same as before, units now consistent with the rest of each solution.
-- Phone capture of the exercises stage (390 px): readable, nothing clipped; the level cards are closed and unchanged by this diff.
+- All eight new tasks recomputed: least-squares fits give L2-05 0,61 m/s (x0 0,49 m), L2-06 crossing 5,8 s, L3-04 0,80 m/s and 7,0 s, L3-05 about 7,4·10^2 m; L1-08, L2-07 and L1-06/07 answers match their solutions.
+- Levels fit: L1 are single-step or conceptual MC with misconception distractors that each have repairing feedback; L2 are data/graph at level 2 as planned; L3 combine fit, correction or model with an uncertainty argument.
+- Plan in docs/exercise-bank/FY4.md covered (+3/+3/+2): MC slope sign and displacement vs distance, table fit, two-body graph with meeting, (t,x) to (t,v), perspective/scale error, prediction outside the data.
+- Scope: nothing beyond the lesson (uniform motion, signed velocity, fit); systematic error in L3-04 is explained in the solution.
+- Every new solution has principle, graph reading, formula, units, substitution, answer with significant figures and a sanity check; L3 solutions answer the reliability part.
+- Situation first and question last holds; Finnish reads correctly (case endings after units, decimal commas inside LaTeX).
+- Capture L3 (1280 px, part 6): long calculation and the L3-04 solution render without clipping; the new tasks use the standard table block.

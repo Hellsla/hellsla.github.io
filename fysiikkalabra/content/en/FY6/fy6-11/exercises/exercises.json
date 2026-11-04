@@ -250,7 +250,7 @@
     {
       "id": "fy6-11-L3-01",
       "level": 3,
-      "text": "A negative oil droplet hovers at rest between two horizontal plates when the voltage between the plates is $450\\,\\text{V}$ and the positive plate is on top. The charge of the droplet is three elementary charges. The droplet gets one extra electron, so that its charge is four elementary charges, but its mass does not change. How large a voltage is needed for the droplet to hover at rest again?",
+      "text": "A negative oil droplet hovers at rest between two horizontal plates when the voltage between the plates is $450\\,\\text{V}$ and the positive plate is on top. The charge of the droplet is three elementary charges.\n\nThe droplet gets one extra electron, so that its charge is four elementary charges, but its mass does not change.\n\nHow large a voltage is needed for the droplet to hover at rest again?",
       "answer": 337.5,
       "unit": "V",
       "tolerance": 0.02
@@ -258,7 +258,7 @@
     {
       "id": "fy6-11-L3-02",
       "level": 3,
-      "text": "An electron starts from rest at the negative plate and accelerates in a uniform field to the positive plate. The plates are in vacuum. The voltage between the plates is $50\\,\\text{V}$, and the distance of the plates is $1.0\\,\\text{cm}$. The mass of the electron is $9.109 \\cdot 10^{-31}\\,\\text{kg}$ and the magnitude of its charge is $1.602 \\cdot 10^{-19}\\,\\text{C}$. How large is the speed of the electron when it arrives at the positive plate? Answer in kilometres per second.",
+      "text": "An electron starts from rest at the negative plate and accelerates in a uniform field to the positive plate. The plates are in vacuum.\n\nThe voltage between the plates is $50\\,\\text{V}$, and the distance of the plates is $1.0\\,\\text{cm}$. The mass of the electron is $9.109 \\cdot 10^{-31}\\,\\text{kg}$ and the magnitude of its charge is $1.602 \\cdot 10^{-19}\\,\\text{C}$.\n\nHow large is the speed of the electron when it arrives at the positive plate? Answer in kilometres per second.",
       "answer": 4193.685952,
       "unit": "km/s",
       "tolerance": 0.02

@@ -167,6 +167,8 @@ In the figure, the same $4\,\Omega$ and $8\,\Omega$ resistors are connected to a
   <line x1="24" y1="157" x2="576" y2="157" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy6/toaster-glowing.webp" alt="A toaster seen from above: orange glowing heating wires beneath and beside a slice of bread."><figcaption>The heating wires of a working toaster glow orange. Their resistance is large, so they receive almost all of the toaster's power, while the cord carrying the same current stays cool.</figcaption></figure>
+
 ### The toaster and its cord
 The resistance wire of the toaster and the cord are in series, so the same current flows through them. The resistance of the wire is tens of ohms, that of the copper conductors of the cord only hundredths of an ohm. In a toaster with a power of $900\,\text{W}$, the resistance of the wire is about $59\,\Omega$ and the current about $3.9\,\text{A}$. If the resistance of the cord is $0.050\,\Omega$, the cord gets a power of $0.050\,\Omega \cdot (3.9\,\text{A})^2 \approx 0.8\,\text{W}$, which is spread over the whole length of the cord. By Joule's law the power in the cord is therefore more than a thousand times smaller than in the wire: the ratio of the resistances is $59\,\Omega : 0.050\,\Omega \approx 1200$. The resistance wire, on the other hand, glows.
 

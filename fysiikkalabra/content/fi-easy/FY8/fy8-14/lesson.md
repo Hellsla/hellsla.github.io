@@ -196,6 +196,8 @@ Tietokonetomografiassa (TT) röntgenputki ja ilmaisimet kiertävät potilaan ymp
 
 Lähde: tyypilliset suuruusluokat STUKin terveydenhuollon säteilyaltistusta koskevista julkaisuista ja ICRP:n julkaisusta 128 (2015). Yksittäisen tutkimuksen annos riippuu laitteesta ja potilaasta. Vertailun vuoksi suomalainen saa luonnon säteilystä keskimäärin noin $5{,}1\,\text{mSv}$ vuodessa (luku *Säteilyannos ja säteilyturvallisuus Suomessa*).
 
+<figure class="unit-photo"><img src="pics/fy8/pet-ct-scanner.webp" alt="Sairaalan huone. Siinä on iso rengas ja potilaspöytä."><figcaption>PET-TT-laite. Renkaan sisällä on ilmaisimia, jotka havaitsevat fotoneja. Siellä on myös röntgenputki. Potilas liikkuu pöydän mukana renkaan läpi.</figcaption></figure>
+
 ### Isotooppikuvaus: merkkiaine näyttää elimen toiminnan
 
 **Merkkiaine** on radioaktiivinen nuklidi eli tietynlainen atomiydin. Se on liitetty yhdisteeseen, jota elimistö käsittelee kuten omaa ainettaan. Siksi merkkiaine kertyy tutkittavaan elimeen. Kehon ulkopuolinen ilmaisin havaitsee merkkiaineen säteilyn. Kuva ei näytä vain rakennetta, kuten röntgenkuva, vaan sen, missä elimistö toimii. Esimerkiksi luuston isotooppikuvauksessa merkkiaine kertyy kohtiin, joissa luu uusiutuu vilkkaasti, kuten murtumiin ja etäpesäkkeisiin. Etäpesäke on syöpäkasvaimen levinnyt osa.
@@ -367,6 +369,8 @@ Paperikoneen **paksuusmittarissa** beetasäteily kulkee paperiradan läpi ilmais
 Kodin **savuilmaisimessa** on noin $37\,\text{kBq}$ amerikium-241:tä. Sen alfasäteily ionisoi ilmaa pienessä kammiossa, ja kammion läpi kulkee heikko sähkövirta. Savuhiukkaset sitovat ioneja, joten virta pienenee ja hälytin soi. Amerikium-241:n puoliintumisaika on $432\,\text{a}$. Kymmenessä vuodessa aktiivisuus pienenee siis vain noin $2\,\%$.
 
 **Radiohiiliajoitus** perustuu siihen, että ilmakehässä syntyy jatkuvasti hiili-14:ää. Elävä eliö pitää hiili-14:n osuuden hiilestään samana. Kuoleman jälkeen hiili-14 hajoaa puoliintumisajalla $5700\,\text{a}$. Jäljellä olevasta osuudesta voi laskea eliön iän noin $50\,000$ vuoteen asti.
+
+<figure class="unit-photo"><img src="pics/fy8/linear-accelerator.webp" alt="Sininen hoitohuone. Siinä on iso valkoinen laite ja hoitopöytä."><figcaption>Sädehoidon laite. Se tekee voimakasta röntgensäteilyä. Laite kiertää potilaan ympäri. Säteily osuu kasvaimeen monesta suunnasta. Terve kudos saa vähemmän säteilyä.</figcaption></figure>
 
 ### Potilaan ja henkilökunnan turvallisuus
 

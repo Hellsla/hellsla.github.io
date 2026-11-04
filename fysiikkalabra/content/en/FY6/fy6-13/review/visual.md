@@ -1,16 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: d102e61c8ec2ad48
+CONTENT-HASH: 3aceaec20807e4c9
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] Same as the Finnish: leader line of `eriste` crosses the right plate in figure `rakenne`; `U = Q/C` and `U/2` small at 390 px in `energia`.
+(none)
 
 ## Checked
-- Contact sheets 1-7, figures 1-11 at 390 px, fig-row-1280, sim at 390 and 1280, experiment states koe-1..5, open Ennusta, Tarkista, exit ticket and exercises L1-L3 looked at: no overflow, labels fit, maths renders.
-- No Finnish left: figure labels (metal plate, dielectric, charging, discharging, air, dielectric, same Q / greater U / smaller U, voltage, charge), sim labels and selects (air, Teflon, paper, glass; connected, disconnected), readout, legend, experiment initial-state line and the measurement table row all read English.
-- Sim and its closed boxes (How to use / Assumptions / Calculation) intact at both widths.
-
-## Scores
-illustrations 4 · typography 5 · language 4 · accessibility 4
+- batch delta review: opened the source image(s) and 1280/390 px renders of the photo(s): film-capacitor.webp (KNB1560, MKP, X2, 0,1 uF, 275VAC all legible, matches alt; caption MKP and 275 V correct) and capacitor-bank.webp (substation from above, fenced gravel, matches alt). Alt matches the visible content, captions physically correct and tied to the chapter, units in LaTeX, photo floats right at 1280 (no clipping, scrollWidth = viewport) and stacks above the caption at 390.

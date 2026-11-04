@@ -143,6 +143,8 @@ Ladattu kondensaattori voi toimia jännitelähteenä. Jos se kytketään esimerk
   <foreignObject x="285.5" y="205.5" width="180" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{purkautuminen}$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy6/film-capacitor.webp" alt="Harmaa laatikon muotoinen osa piirilevyllä. Kyljessä lukee esimerkiksi 0,1 µF ja 275 VAC."><figcaption>Kondensaattori, jonka kapasitanssi on $0{,}1\,\mu\text{F}$. Eristeenä on ohut muovikalvo. Kondensaattoria saa käyttää enintään $275\,\text{V}$:n vaihtojännitteellä.</figcaption></figure>
+
 ### Kapasitanssi kertoo, kuinka paljon varausta jännite tuo
 Kun kondensaattorin jännite kaksinkertaistuu, kenttä levyjen välissä kaksinkertaistuu. Siihen tarvitaan kaksinkertainen varaus. Varaus on siis suoraan verrannollinen jännitteeseen. Verrannollinen tarkoittaa, että kun toinen suure kaksinkertaistuu, myös toinen kaksinkertaistuu. Varauksen ja jännitteen suhde on kondensaattorin **kapasitanssi**. Se kertoo, kuinka paljon varausta kondensaattoriin tulee jännitettä kohti. Kapasitanssi riippuu vain kondensaattorin rakenteesta. Rakenne tarkoittaa levyjen pinta-alaa $A$, levyjen etäisyyttä $d$ ja eristettä. Suuremmille levyille mahtuu enemmän varausta samalla kentällä. Kun levyt ovat lähempänä toisiaan, sama jännite tuottaa voimakkaamman kentän $E = \tfrac{U}{d}$. Voimakkaampi kenttä vaatii levyille enemmän varausta. Kapasitanssi ei riipu jännitteestä eikä varauksesta.
 
@@ -246,6 +248,8 @@ Eristeessä varaukset eivät pääse liikkumaan vapaasti. Sähkökenttä kuitenk
 
 ### Energia on sähkökentässä
 Varauksen siirtäminen levystä toiseen vaatii työtä. Positiivinen levy vetää elektroneja puoleensa, ja negatiivinen levy hylkii niitä. Tämä työ varastoituu levyjen väliseen sähkökenttään energiaksi. Kun kondensaattori purkautuu, se luovuttaa energian takaisin. Salamalaitteen paristot jaksavat antaa vain pientä tehoa, joten kondensaattorin lataaminen kestää sekunteja. Salamaputken läpi kondensaattori purkautuu millisekunnissa. Silloin sama energia vapautuu tuhansia kertoja suuremmalla teholla.
+
+<figure class="unit-photo"><img src="pics/fy6/capacitor-bank.webp" alt="Sähköasema ylhäältä. Aidatulla alueella on telineissä kondensaattoreita ja eristimiä."><figcaption>Sähköaseman kondensaattoreita. Niissä on suuri jännite, joten eristeen pitää kestää voimakas sähkökenttä. Alue on aidattu. Ladattu kondensaattori voi olla vaarallinen, vaikka se on irrotettu verkosta.</figcaption></figure>
 
 ### Läpilyöntilujuus
 Jokainen eriste kestää vain tietyn suuruisen sähkökentän. Eristeen **läpilyöntilujuus** $E_\text{max}$ on suurin kenttä, jonka eriste kestää. Kun kenttä ylittää sen, eristeen molekyyleistä irtoaa elektroneja. Eriste alkaa johtaa, ja levyjen välillä purkautuu kipinä. Kondensaattori voi silloin vaurioitua pysyvästi. Siksi jokaiseen kondensaattoriin on merkitty suurin sallittu jännite. Ilman läpilyöntilujuus on noin $3\,\text{MV/m}$. Salama on ilman läpilyönti suuressa mittakaavassa.

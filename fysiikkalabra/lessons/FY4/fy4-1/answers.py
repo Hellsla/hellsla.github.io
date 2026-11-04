@@ -23,4 +23,18 @@ a["fy4-1-L3-01"] = s_kokonais / t_kokonais           # mean speed = s / Δt = 12
 t_kohtaus = 90 / (1.5 + 1.2)                         # x_A = 1,5 t, x_E = 90 − 1,2 t; equal when t = 90 / 2,7 = 33,3 s
 a["fy4-1-L3-02"] = 1.5 * t_kohtaus                   # meeting place x = 1,5 m/s · 33,3 s = 50 m
 a["fy4-1-L3-03"] = (10 - 0) / 40                     # whole 40 s: v_ka = Δx / Δt = (10 m − 0 m) / 40 s = 0,25 m/s
+# Exercise bank additions (teacher 2026-11-04): L1-06..08 are multiple choice (no number)
+def fit(t, x):                                       # least-squares line x = x0 + v t -> (v, x0)
+    n = len(t); mt = sum(t) / n; mx = sum(x) / n
+    v = sum((ti - mt) * (xi - mx) for ti, xi in zip(t, x)) / sum((ti - mt) ** 2 for ti in t)
+    return v, mx - v * mt
+v5, _ = fit([0, 1, 2, 3, 4, 5], [0.48, 1.12, 1.67, 2.33, 2.88, 3.53])
+a["fy4-1-L2-05"] = round(v5, 2)                      # video analysis: slope of the fit 0,605 -> 0,61 m/s (x0 = 0,49 m)
+a["fy4-1-L2-06"] = round((20.0 - 1.0) / (1.5 + 1.8), 1)   # A: 1,0 + 1,5 t; B: 20,0 - 1,8 t; t = 19,0 m / 3,3 m/s = 5,8 s
+a["fy4-1-L2-07"] = (5.0 - 14) / (16 - 10)            # robot, negative interval 10-16 s: v = -9,0 m / 6,0 s = -1,5 m/s
+vs, _ = fit([0, 1, 2, 3, 4, 5], [0.30, 0.95, 1.62, 2.21, 2.88, 3.52])
+a["fy4-1-L3-04"] = round(2.00 / 1.60 * vs, 2)        # scale factor 2,00/1,60 = 1,25; v = 1,25 * 0,642 m/s = 0,80 m/s
+vr, xr = fit([0, 10, 20, 30, 40], [205, 302, 395, 504, 598])
+t_p = (xr + 16 * 8.0) / (16 - vr)                    # truck 203,2 + 9,88 t = police 16 (t - 8,0): t = 54,1 s
+a["fy4-1-L3-05"] = round(xr + vr * t_p, -1)          # meeting place 738 m -> 740 m (two figures)
 print(json.dumps(a))

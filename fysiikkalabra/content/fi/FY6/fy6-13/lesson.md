@@ -143,6 +143,8 @@ Kun ladattu kondensaattori kytketään esimerkiksi lamppuun, se toimii jännitel
   <foreignObject x="285.5" y="205.5" width="180" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{purkautuminen}$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy6/film-capacitor.webp" alt="Harmaa suorakulmainen komponentti vihreällä piirilevyllä; kylkeen on painettu KNB1560, MKP, X2, 0,1 µF ja 275 VAC."><figcaption>Kalvokondensaattori, jonka kapasitanssi on $0{,}1\,\mu\text{F}$. Merkintä MKP kertoo, että eristeenä on ohut polypropeenikalvo, ja $275\,\text{V}$ on suurin vaihtojännite, jolla kondensaattoria saa käyttää.</figcaption></figure>
+
 ### Kapasitanssi kertoo, kuinka paljon varausta jännite tuo
 Kun kondensaattorin jännite kaksinkertaistuu, kenttä levyjen välissä kaksinkertaistuu, ja siihen tarvitaan kaksinkertainen varaus. Varaus on siis suoraan verrannollinen jännitteeseen. Niiden suhde on kondensaattorin **kapasitanssi**, joka riippuu vain kondensaattorin rakenteesta: levyjen pinta-alasta $A$, niiden etäisyydestä $d$ ja eristeestä. Suuremmille levyille mahtuu enemmän varausta samalla kentällä. Kun levyt ovat lähempänä toisiaan, sama jännite tuottaa voimakkaamman kentän $E = \tfrac{U}{d}$, ja voimakkaampi kenttä vaatii levyille enemmän varausta. Kapasitanssi ei riipu jännitteestä eikä varauksesta.
 
@@ -246,6 +248,8 @@ Eristeessä varaukset eivät pääse liikkumaan vapaasti, mutta sähkökenttä s
 
 ### Energia on sähkökentässä
 Varauksen siirtäminen levystä toiseen vaatii työtä, koska positiivinen levy vetää elektroneja puoleensa ja negatiivinen levy hylkii niitä. Tämä työ varastoituu levyjen väliseen sähkökenttään energiaksi, ja purkautuessaan kondensaattori luovuttaa energian takaisin. Salamalaitteen paristot jaksavat antaa vain pientä tehoa, joten kondensaattorin lataaminen kestää sekunteja. Salamaputken läpi kondensaattori purkautuu millisekunnissa, ja sama energia vapautuu tuhansia kertoja suuremmalla teholla.
+
+<figure class="unit-photo"><img src="pics/fy6/capacitor-bank.webp" alt="Sähköasema ylhäältä: aidatulla soralla on telineissä kondensaattoriryhmiä, joiden päällä on harmaita eristimiä, ja niitä yhdistävät johtimet."><figcaption>Sähköaseman kondensaattoriparisto. Suurjännitteellä toimivien kondensaattorien eristeiden on kestettävä suuri sähkökenttä. Alue on aidattu, koska varattu kondensaattori voi olla vaarallinen vielä irrottamisen jälkeen.</figcaption></figure>
 
 ### Läpilyöntilujuus
 Jokainen eriste kestää vain tietyn suuruisen sähkökentän. Kun kenttä ylittää eristeen **läpilyöntilujuuden** $E_\text{max}$, eristeen molekyyleistä irtoaa elektroneja, eriste alkaa johtaa ja levyjen välillä purkautuu kipinä. Kondensaattori voi silloin vaurioitua pysyvästi. Siksi jokaiseen kondensaattoriin on merkitty suurin sallittu jännite. Ilman läpilyöntilujuus on noin $3\,\text{MV/m}$, ja salama on ilman läpilyönti suuressa mittakaavassa.

@@ -208,3 +208,165 @@ a 0
 **Sijoitus:** $N = 0{,}10\,\text{N} - 0{,}0040\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 = 0{,}10\,\text{N} - 0{,}03924\,\text{N} = 0{,}06076\,\text{N}$
 **Vastaus:** $0{,}061\,\text{N} \approx 0{,}06\,\text{N}$. Tukivoima on erotus, ja erotuksessa ratkaisee desimaalien määrä: noste $0{,}10\,\text{N}$ tunnetaan sadasosanewtonin tarkkuudella.
 **Järkevyys:** Noste on suurempi kuin paino $0{,}039\,\text{N}$, joten ilman kattoa pallo nousisi. Katto pysäyttää sen työntämällä alaspäin juuri ylimäärän verran: $0{,}039\,\text{N} + 0{,}061\,\text{N} = 0{,}10\,\text{N}$. Tukivoima osoittaa tässä alas, ei ylös.
+
+
+## fy4-5-L1-06
+**Kysytty:** mitkä voimat piirretään voimakuvioon, kun laatikko liukuu vaakasuoralla lattialla ja hidastuu kitkan vaikutuksesta.
+**Periaate:** Voimakuvioon piirretään vain valittuun kappaleeseen vaikuttavat voimat, ja jokaisella voimalla on aiheuttaja: Maa, pinta, naru tai työntäjä. Nopeus ja kiihtyvyys eivät ole voimia. Newtonin toisen lain mukaan kappale voi liikkua ilman liikkeen suuntaista voimaa.
+**Mallivastaus:** Laatikkoon vaikuttavat kolme voimaa. Maa vetää laatikkoa alas (paino), lattia tukee sitä ylös (tukivoima) ja lattia vastustaa liukumista vasemmalle (kitka). Paino ja tukivoima ovat yhtä pitkät, koska laatikko ei liiku pystysuunnassa, ja kitka on ainoa vaakasuora voima, joten se hidastaa laatikkoa. Oikealle osoittavaa liikevoimaa ei ole, koska ei ole mitään kappaletta, joka sitä aiheuttaisi. Nopeutta ei piirretä voimaksi, vaan tarvittaessa erikseen voimakuvion viereen. Tukivoimaa ei saa jättää pois, vaikka se kumoaa painon.
+
+## fy4-5-L1-07
+**Annettu:** työntövoimat $F_1 = 120\,\text{N}$ ja $F_2 = 85\,\text{N}$ samaan suuntaan, kitkavoima $F_\mu = 150\,\text{N}$ vastakkaiseen suuntaan; paino ja tukivoima kumoavat toisensa
+**Kysytty:** kokonaisvoiman suuruus $\Sigma F$ yksikössä $\text{N}$
+**Periaate:** Kokonaisvoima on voimien vektorisumma. Voimat ovat samalla suoralla, joten summa lasketaan vaakasuunnan komponenteista, kun $x$ osoittaa työntämisen suuntaan. Pystysuunnassa kokonaisvoima on nolla.
+**Voimakuvio:** Kaappi suorakulmiona, $x$ työntämisen suuntaan ja $y$ ylös. Kaksi työntövoimaa $\overline{F}_1$ ja $\overline{F}_2$ eteenpäin, kitkavoima $\overline{F}_\mu$ taaksepäin sekä paino $\overline{G}$ alas ja tukivoima $\overline{N}$ ylös yhtä pitkinä. Kitkavoima on pidempi kuin kumpikaan työntövoima mutta lyhyempi kuin niiden summa.
+**Kaava:** $\Sigma F_x = F_1 + F_2 - F_\mu$
+**Muunnokset:** Kaikki voimat ovat newtoneina, joten muunnoksia ei tarvita.
+**Sijoitus:** $\Sigma F_x = 120\,\text{N} + 85\,\text{N} - 150\,\text{N} = 55\,\text{N}$
+**Vastaus:** $55\,\text{N}$ työntämisen suuntaan, kaksi merkitsevää numeroa kuten annetuissa voimissa.
+**Järkevyys:** Työntövoimat ovat yhteensä $205\,\text{N}$, mikä on suurempi kuin kitka $150\,\text{N}$, joten kokonaisvoima osoittaa työntämisen suuntaan ja kaappi kiihtyy. Jos työntövoimat olisivat yhteensä alle $150\,\text{N}$, kaappi hidastuisi tai pysyisi paikallaan. Kokonaisvoima ei ole voimien suuruuksien summa $355\,\text{N}$.
+
+## fy4-5-L1-08
+**Kysytty:** miten lattian tukivoima $N$ suhtautuu laatikon painoon $G$, kun laatikkoa vedetään narulla vinosti ylöspäin eikä se liiku.
+**Periaate:** Laatikko on levossa, joten Newtonin toisen lain mukaan voimien summa on nolla myös pystysuunnassa. Pystysuunnassa on kolme voimaa: paino alas sekä tukivoima ja narun jännitysvoiman pystykomponentti ylös.
+**Mallivastaus:** Pystysuunnan yhtälö on $N + T\sin\alpha - G = 0$, joten $N = G - T\sin\alpha$. Narun pystykomponentti kannattelee osan painosta, ja lattian tarvitsee tukea vain loppuosa, joten tukivoima on painoa pienempi. Tukivoima ei siis ole aina yhtä suuri kuin paino: se on juuri niin suuri, kuin pystysuunnan tasapaino vaatii. Jos naru vetäisi vaakasuoraan, tukivoima olisi painon suuruinen, ja jos naru vetäisi laatikkoa vinosti alaspäin, tukivoima olisi painoa suurempi. Tukivoima olisi nolla vasta, kun narun pystykomponentti olisi yhtä suuri kuin koko paino, ja silloin laatikko olisi irtoamaisillaan lattiasta.
+
+## fy4-5-L2-05
+**Annettu:** rengas on paikallaan; mittaukset $(F_\text{A}, F_\text{C}, F_\text{B})$: $(3{,}0;\ 2{,}5;\ 3{,}9)\,\text{N}$, $(4{,}5;\ 3{,}8;\ 5{,}9)\,\text{N}$ ja $(6{,}0;\ 5{,}1;\ 7{,}9)\,\text{N}$
+**Kysytty:** kulman $\alpha$ keskiarvo $\alpha_\text{ka}$ yksikössä $^\circ$
+**Periaate:** Rengas on levossa, joten Newtonin toisen lain mukaan siihen vaikuttavien voimien summa on nolla sekä vaaka- että pystysuunnassa. Köysi B on vino, joten sen voima jaetaan komponentteihin.
+**Voimakuvio:** Rengas suorakulmiona, $x$ oikealle ja $y$ ylös. Köyden A jännitysvoima $\overline{F}_\text{A}$ vasemmalle ja köyden C jännitysvoima $\overline{F}_\text{C}$ alas. Köyden B voima $\overline{F}_\text{B}$ lähtee vinosti ylös oikealle kulmassa $\alpha$, ja sen komponentit $F_\text{B}\cos\alpha$ ja $F_\text{B}\sin\alpha$ piirretään katkoviivoin. Komponentit ovat yhtä pitkät kuin $F_\text{A}$ ja $F_\text{C}$. Renkaan painoa ei piirretä, koska tehtävässä se jätetään huomiotta.
+**Kuvaajan lukeminen:** Taulukosta luetaan kunkin mittauksen voimat $F_\text{A}$ ja $F_\text{C}$. Vertailuun otetaan myös anturin B lukema.
+**Kaava:** $x$: $F_\text{B}\cos\alpha - F_\text{A} = 0$ ja $y$: $F_\text{B}\sin\alpha - F_\text{C} = 0$, joten $\alpha = \arctan\dfrac{F_\text{C}}{F_\text{A}}$
+**Muunnokset:** Voimat ovat newtoneina ja kulma lasketaan asteina, joten muunnoksia ei tarvita; laskin on asteikolla DEG.
+**Sijoitus:** Kulmat ovat
+```latex
+\begin{aligned}
+\alpha_1 &= \arctan\dfrac{2{,}5}{3{,}0} = 39{,}8\,{}^\circ \\
+\alpha_2 &= \arctan\dfrac{3{,}8}{4{,}5} = 40{,}2\,{}^\circ \\
+\alpha_3 &= \arctan\dfrac{5{,}1}{6{,}0} = 40{,}4\,{}^\circ
+\end{aligned}
+```
+Summa on $120{,}4\,{}^\circ$, joten keskiarvo on $\alpha_\text{ka} = 120{,}4\,{}^\circ : 3 = 40{,}1\,{}^\circ$. Tarkistus ensimmäisellä mittauksella: $F_\text{B} = \sqrt{(3{,}0\,\text{N})^2 + (2{,}5\,\text{N})^2} = 3{,}9\,\text{N}$.
+**Vastaus:** a) Voimakuvio ja yhtälöt yllä. b) $\alpha_\text{ka} = 40{,}1\,{}^\circ \approx 40\,{}^\circ$, kahden merkitsevän numeron tarkkuudella kuten voimien lukemat. c) Laskettu $F_\text{B} = 3{,}9\,\text{N}$ on sama kuin anturin lukema.
+**Järkevyys:** Kolme kulmaa poikkeaa toisistaan enintään $0{,}6\,{}^\circ$, joten ne kuvaavat samaa kulmaa ja pieni vaihtelu on mittauksen satunnaisvaihtelua. Voimat kasvavat samassa suhteessa, ja suhde $F_\text{C} : F_\text{A}$ pysyy noin $0{,}84$:ssä. Kulma on alle $45\,{}^\circ$, joten $F_\text{A} > F_\text{C}$ kuten taulukossa. Voima $F_\text{B}$ on suurempi kuin kumpikaan komponentti mutta pienempi kuin niiden summa $5{,}5\,\text{N}$.
+
+## fy4-5-L2-06
+**Annettu:** $m = 12\,\text{kg}$, kitkavoima $F_\mu = 30\,\text{N}$ vasemmalle, laatikko liukuu oikealle ja hidastuu; ilmanvastusta ei ole
+**Kysytty:** a) opiskelijan virhe; b) kiihtyvyyden suuruus $a$ yksikössä $\text{m/s}^2$
+**Periaate:** Voimakuvioon kuuluvat vain kappaleeseen vaikuttavat voimat, joilla on aiheuttaja. Opiskelija piirsi laatikkoon ”potkun voiman”, vaikka potkun jälkeen mikään kappale ei työnnä laatikkoa oikealle, ja päätteli kiihtyvyyden suunnan liikkeen suunnasta, vaikka laatikko hidastuu. Potkun voima vaikuttaa laatikkoon vain sen ajan, kun jalka koskee siihen. Kun laatikko on irronnut jalasta, sen vaakasuoraan liikkeeseen vaikuttaa vain kitka.
+**Voimakuvio:** Laatikko suorakulmiona, $x$ oikealle ja $y$ ylös. Paino $\overline{G}$ alas ja lattian tukivoima $\overline{N}$ ylös yhtä pitkinä sekä kitkavoima $\overline{F}_\mu$ vasemmalle. Oikealle ei piirretä voimaa. Nopeus oikealle ja kiihtyvyys vasemmalle piirretään kuvion viereen erikseen.
+```voimakuvio
+pinta 0
+G 117,72
+N 117,72
+F_mu 30 vasen
+v oikea
+a vasen
+```
+**Kaava:** $x$: $-F_\mu = m a_x$, joten $a_x = -\dfrac{F_\mu}{m}$ ja kiihtyvyyden suuruus on $a = \dfrac{F_\mu}{m}$
+**Muunnokset:** Voima on newtoneina ja massa kilogrammoina, joten tulos tulee suoraan yksikössä $\text{m/s}^2$.
+**Sijoitus:** $a = \dfrac{30\,\text{N}}{12\,\text{kg}} = 2{,}5\,\text{m/s}^2$
+**Vastaus:** a) Voimakuvioon on otettu ylimääräinen voima, jolla ei ole aiheuttajaa. b) $a = 2{,}5\,\text{m/s}^2$ vasemmalle eli liikettä vastaan, kaksi merkitsevää numeroa kuten annetuissa arvoissa. Laatikko hidastuu.
+**Järkevyys:** Kokonaisvoima $30\,\text{N}$ osoittaa vasemmalle, joten kiihtyvyys osoittaa vasemmalle ja laatikko hidastuu, kuten tehtävässä sanotaan. Opiskelijan tulos, jonka mukaan laatikko kiihtyy, on ristiriidassa tämän kanssa. Kitka on vain noin neljännes laatikon painosta $118\,\text{N}$.
+
+## fy4-5-L2-07
+**Annettu:** $F_1 = 6{,}0\,\text{N}$, $F_2 = 8{,}0\,\text{N}$, niiden suuntien välinen kulma $\varphi = 60\,{}^\circ$; taulukosta $F_3 = 12{,}3\,\text{N}$, kun $\varphi = 60\,{}^\circ$
+**Kysytty:** voimien $\overline{F}_1$ ja $\overline{F}_2$ summan suuruus $\Sigma F$ yksikössä $\text{N}$, kun $\varphi = 60\,{}^\circ$
+**Periaate:** a) Rengas on levossa, joten Newtonin toisen lain mukaan voimien $\overline{F}_1$, $\overline{F}_2$ ja $\overline{F}_3$ summa on nolla. Siksi anturin 3 voima on yhtä suuri ja vastakkaissuuntainen kuin voimien $\overline{F}_1$ ja $\overline{F}_2$ summa, ja sen lukema kertoo summan suuruuden. b) Vinojen voimien summa lasketaan komponenteittain.
+**Voimakuvio:** Rengas suorakulmiona, $x$ voiman $\overline{F}_1$ suuntaan. Voima $\overline{F}_1$ lähtee suoraan $x$-akselin suuntaan ja voima $\overline{F}_2$ kulmassa $60\,{}^\circ$ ylöspäin. Voima $\overline{F}_3$ lähtee vastakkaiseen suuntaan kuin niiden summa. Komponentit $F_{2x}$ ja $F_{2y}$ piirretään katkoviivoin.
+**Kuvaajan lukeminen:** Taulukosta luetaan rivi $\varphi = 60\,{}^\circ$: $F_3 = 12{,}3\,\text{N}$.
+**Kaava:** $\Sigma F_x = F_1 + F_2\cos\varphi$ ja $\Sigma F_y = F_2\sin\varphi$, joten $\Sigma F = \sqrt{(\Sigma F_x)^2 + (\Sigma F_y)^2}$
+**Muunnokset:** Voimat ovat newtoneina ja kulma asteina, joten muunnoksia ei tarvita.
+**Sijoitus:** Ensin komponentit:
+```latex
+\begin{aligned}
+\Sigma F_x &= 6{,}0\,\text{N} + 8{,}0\,\text{N}\cdot\cos 60\,{}^\circ \\
+&= 10{,}0\,\text{N} \\
+\Sigma F_y &= 8{,}0\,\text{N}\cdot\sin 60\,{}^\circ \\
+&= 6{,}93\,\text{N}
+\end{aligned}
+```
+Sitten suuruus: $\Sigma F = \sqrt{(10{,}0\,\text{N})^2 + (6{,}93\,\text{N})^2} = 12{,}2\,\text{N}$
+**Vastaus:** a) Rengas on levossa, joten voima $\overline{F}_3$ kumoaa voimien $\overline{F}_1$ ja $\overline{F}_2$ summan. b) $\Sigma F \approx 12\,\text{N}$, kaksi merkitsevää numeroa kuten annetuissa voimissa. c) Mitattu $12{,}3\,\text{N}$ eroaa laskennallisesta $12{,}2\,\text{N}$:sta noin $0{,}1\,\text{N}$ eli noin yhden prosentin; ero on mittausepävarmuuden suuruusluokkaa. Se voi johtua kulman lukemisen epätarkkuudesta, anturien nollauksesta tai siitä, että rengas ei ole täysin paikallaan.
+**Järkevyys:** Summa $12{,}2\,\text{N}$ on pienempi kuin voimien suuruuksien summa $14{,}0\,\text{N}$ ja suurempi kuin suurempi voima $8{,}0\,\text{N}$, kuten kulmalla $60\,{}^\circ$ pitääkin. Taulukossa lukema pienenee kulman kasvaessa ($13{,}4\,\text{N}$, $12{,}3\,\text{N}$, $10{,}1\,\text{N}$), ja kulmalla $90\,{}^\circ$ summa on $\sqrt{6{,}0^2 + 8{,}0^2}\,\text{N} = 10\,\text{N}$ kuten mittauksessa.
+
+## fy4-5-L3-04
+**Annettu:** $m = 25\,\text{kg}$, $T = 120\,\text{N}$, $\alpha = 30\,{}^\circ$, laatikko lähtee levosta; taulukosta $v = 0$ hetkellä $t = 0$ ja $v = 4{,}01\,\text{m/s}$ hetkellä $t = 5{,}0\,\text{s}$; $g = 9{,}81\,\text{m/s}^2$
+**Kysytty:** kitkavoima $F_\mu$ yksikössä $\text{N}$ ja tukivoima $N$
+**Periaate:** Laatikko kiihtyy vaakasuunnassa eikä liiku pystysuunnassa. Kiihtyvyys saadaan nopeuden muutoksesta (luku *Kiihtyvyys ja tasaisesti kiihtyvä liike*), ja Newtonin toinen laki kirjoitetaan komponenteittain: vaakasuunnassa kokonaisvoima on $ma$, pystysuunnassa nolla.
+**Voimakuvio:** Laatikko suorakulmiona, $x$ liikkeen suuntaan ja $y$ ylös. Paino $\overline{G}$ alas ja lattian tukivoima $\overline{N}$ ylös ja painoa lyhyempi, köyden jännitysvoima $\overline{T}$ vinosti ylös eteenpäin ja kitkavoima $\overline{F}_\mu$ taaksepäin. Komponentit $T_x$ ja $T_y$ katkoviivoin. Kiihtyvyys eteenpäin piirretään erikseen, ei voimaksi.
+```voimakuvio
+pinta 0
+G 245,25
+N 185,25
+T 120 30
+F_mu 83,87 vasen
+a oikea
+akselit 0
+komponentit T
+```
+**Kuvaajan lukeminen:** Nopeus kasvaa suunnilleen yhtä paljon joka sekunti: peräkkäisten sekuntien muutokset ovat $0{,}78$, $0{,}85$, $0{,}75$, $0{,}84$ ja $0{,}79\,\text{m/s}$. Kiihtyvyys on siis likimain vakio, ja se saadaan koko aikavälin muutoksesta $\Delta v = 4{,}01\,\text{m/s} - 0 = 4{,}01\,\text{m/s}$ ja $\Delta t = 5{,}0\,\text{s}$.
+**Kaava:** $a = \dfrac{\Delta v}{\Delta t}$, $x$: $T\cos\alpha - F_\mu = ma$ ja $y$: $N + T\sin\alpha - mg = 0$, joten $F_\mu = T\cos\alpha - ma$ ja $N = mg - T\sin\alpha$
+**Muunnokset:** Kaikki suureet ovat SI-yksiköissä, ja $\text{N} / \text{kg} = \text{m/s}^2$.
+**Sijoitus:** Kiihtyvyys on $a = \dfrac{4{,}01\,\text{m/s}}{5{,}0\,\text{s}} = 0{,}802\,\text{m/s}^2$. Kitkavoima:
+```latex
+\begin{aligned}
+F_\mu &= 120\,\text{N}\cdot\cos 30\,{}^\circ \\
+&\quad - 25\,\text{kg}\cdot 0{,}802\,\text{m/s}^2 \\
+&= 103{,}9\,\text{N} - 20{,}05\,\text{N} \\
+&= 83{,}9\,\text{N}
+\end{aligned}
+```
+Tukivoima:
+```latex
+\begin{aligned}
+N &= 25\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 \\
+&\quad - 120\,\text{N}\cdot\sin 30\,{}^\circ \\
+&= 245{,}25\,\text{N} - 60\,\text{N} \\
+&= 185\,\text{N}
+\end{aligned}
+```
+**Vastaus:** a) Voimakuvio ja yhtälöt yllä. b) $a \approx 0{,}80\,\text{m/s}^2$. c) $F_\mu \approx 84\,\text{N}$, kaksi merkitsevää numeroa kuten massassa ja kulmassa. d) $N \approx 185\,\text{N} \approx 1{,}9\cdot 10^2\,\text{N}$, kaksi merkitsevää numeroa kuten massassa ja kulmassa. Tukivoima on painoa $245\,\text{N}$ pienempi, koska köyden pystykomponentti $T\sin\alpha = 60\,\text{N}$ kannattelee osan painosta: lattian tarvitsee tukea vain loppuosa, $N + T\sin\alpha = mg$.
+**Järkevyys:** Köyden vaakakomponentti $104\,\text{N}$ on suurempi kuin kitka $84\,\text{N}$, joten kokonaisvoima $20\,\text{N}$ osoittaa eteenpäin ja laatikko kiihtyy, kuten taulukko näyttää. Kokonaisvoima $ma = 20\,\text{N}$ on noin viidennes vaakakomponentista. Tarkistus pystysuunnassa: $185\,\text{N} + 60\,\text{N} = 245\,\text{N} = mg$.
+
+## fy4-5-L3-05
+**Annettu:** $m = 80\,\text{kg}$, kuorma lähtee levosta ja pysähtyy; vaiheet $0$–$2{,}0\,\text{s}$, $2{,}0$–$6{,}0\,\text{s}$ ja $6{,}0$–$8{,}0\,\text{s}$; köyden voima taulukosta; $g = 9{,}81\,\text{m/s}^2$
+**Kysytty:** nostokorkeus $h$ yksikössä $\text{m}$ sekä kiihtyvyys kussakin vaiheessa
+**Periaate:** Kuormaan vaikuttavat paino ja köyden jännitysvoima. Newtonin toisen lain mukaan kiihtyvyys saadaan voimien erotuksesta, ja kiihtyvyyden suunta on kokonaisvoiman suunta: ylös, kun köyden voima on painoa suurempi, ja alas, kun se on painoa pienempi. Kun kiihtyvyys tunnetaan, korkeus saadaan liikkeen vaiheiden matkoista (luku *Kiihtyvyys ja tasaisesti kiihtyvä liike*).
+**Voimakuvio:** Ensimmäisessä vaiheessa kuorma on suorakulmio, $y$ ylös. Paino $\overline{G}$ alas ja köyden jännitysvoima $\overline{T}$ ylös, jännitysvoima painoa pidempänä. Nopeus ylös ja kiihtyvyys ylös piirretään kuvion viereen erikseen, ei voimiksi. Toisessa vaiheessa nuolet ovat yhtä pitkät ja kolmannessa jännitysvoima on painoa lyhyempi.
+```voimakuvio
+pinta 0
+G 784,8
+T 880,7 ylös
+v ylös
+a ylös
+```
+**Kuvaajan lukeminen:** Taulukon lukemat jaetaan vaiheisiin hetkien $2{,}0\,\text{s}$ ja $6{,}0\,\text{s}$ mukaan. Vaiheen 1 lukemien summa on $881\,\text{N} + 878\,\text{N} + 883\,\text{N} = 2642\,\text{N}$, joten keskiarvo on $880{,}7\,\text{N}$. Vaiheessa 2 summa on $2354\,\text{N}$ ja keskiarvo $784{,}7\,\text{N}$, vaiheessa 3 summa on $2069\,\text{N}$ ja keskiarvo $689{,}7\,\text{N}$.
+**Kaava:** $T - mg = m a_y$, joten $a_y = \dfrac{T - mg}{m}$. Suurin nopeus on $v_\text{max} = a_1 \Delta t_1$, ja matkat ovat $h_1 = \tfrac12 a_1 \Delta t_1^2$, $h_2 = v_\text{max}\,\Delta t_2$ ja $h_3 = \tfrac12 v_\text{max}\,\Delta t_3$, koska kolmannessa vaiheessa nopeus pienenee tasaisesti nollaan. Korkeus on $h = h_1 + h_2 + h_3$
+**Muunnokset:** Voimat ovat newtoneina, massa kilogrammoina ja ajat sekunteina, joten muunnoksia ei tarvita. Paino on $mg = 80\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 = 784{,}8\,\text{N}$.
+**Sijoitus:** Kiihtyvyydet:
+```latex
+\begin{aligned}
+a_1 &= \frac{880{,}7 - 784{,}8}{80}\,\frac{\text{m}}{\text{s}^2} \\
+&= 1{,}20\,\text{m/s}^2 \\
+a_2 &= \frac{784{,}7 - 784{,}8}{80}\,\frac{\text{m}}{\text{s}^2} \\
+&\approx 0 \\
+a_3 &= \frac{689{,}7 - 784{,}8}{80}\,\frac{\text{m}}{\text{s}^2} \\
+&= -1{,}19\,\text{m/s}^2
+\end{aligned}
+```
+Suurin nopeus on $v_\text{max} = 1{,}198\,\text{m/s}^2\cdot 2{,}0\,\text{s} = 2{,}397\,\text{m/s}$. Matkat:
+```latex
+\begin{aligned}
+h_1 &= \tfrac12\cdot 1{,}198\,\tfrac{\text{m}}{\text{s}^2}\cdot (2{,}0\,\text{s})^2 \\
+&= 2{,}40\,\text{m} \\
+h_2 &= 2{,}397\,\tfrac{\text{m}}{\text{s}}\cdot 4{,}0\,\text{s} \\
+&= 9{,}59\,\text{m} \\
+h_3 &= \tfrac12\cdot 2{,}397\,\tfrac{\text{m}}{\text{s}}\cdot 2{,}0\,\text{s} \\
+&= 2{,}40\,\text{m}
+\end{aligned}
+```
+Korkeus on $h = 2{,}40\,\text{m} + 9{,}59\,\text{m} + 2{,}40\,\text{m} = 14{,}38\,\text{m}$.
+**Vastaus:** a) Voimakuvio ja yhtälö yllä. b) $a_1 \approx 1{,}2\,\text{m/s}^2$ ylös, $a_2 \approx 0$ ja $a_3 \approx -1{,}2\,\text{m/s}^2$ eli kiihtyvyys alas. c) Kolmannessa vaiheessa kokonaisvoima osoittaa alas, joten köyden voima on painoa pienempi, vaikka nopeus osoittaa ylös: kuorma hidastuu. Kiihtyvyyden suunta on kokonaisvoiman suunta, ei liikkeen suunta. d) $h \approx 14{,}4\,\text{m}$ eli kahden merkitsevän numeron tarkkuudella $14\,\text{m}$ kuten massassa $80\,\text{kg}$; vastauslaatikkoon käy tarkempi arvo $14{,}4\,\text{m}$.
+**Järkevyys:** Tasaisessa vaiheessa köyden voima $785\,\text{N}$ on sama kuin paino $785\,\text{N}$, kuten pitää. Nopeuden muutokset kumoavat toisensa: vaiheessa 3 nopeus pienenee $1{,}19\,\text{m/s}^2\cdot 2{,}0\,\text{s} = 2{,}38\,\text{m/s}$, eli lähes arvosta $2{,}40\,\text{m/s}$ nollaan, joten nosto päättyy levossa kuten tehtävässä. Korkeus on myös suurimman nopeuden ja ajan tulo: kiihdytys- ja hidastusvaihe kattavat yhdessä saman matkan kuin tasainen nopeus ajassa $2{,}0\,\text{s}$, joten $h = v_\text{max}\cdot 6{,}0\,\text{s} = 2{,}397\,\text{m/s}\cdot 6{,}0\,\text{s} = 14{,}4\,\text{m}$.

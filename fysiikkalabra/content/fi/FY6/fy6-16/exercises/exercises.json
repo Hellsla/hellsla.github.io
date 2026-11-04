@@ -243,7 +243,7 @@
     {
       "id": "fy6-16-L3-03",
       "level": 3,
-      "text": "Auton akkuun pitää yön aikana varastoida $40\\,\\text{kWh}$. Lataus alkaa kello $22.00$, ja auton pitää olla valmis kello $7.00$. Latauksen hyötysuhde on $90\\,\\%$. Kolmivaiheinen latausasema ottaa jokaisesta vaihejohtimesta yhtä suuren virran, ja vaihejännite on $230\\,\\text{V}$. Kuinka suuri latausvirta yhdessä vaihejohtimessa vähintään tarvitaan, kun virta pidetään koko yön vakiona?",
+      "text": "Auton akkuun pitää yön aikana varastoida $40\\,\\text{kWh}$. Lataus alkaa kello $22.00$, ja auton pitää olla valmis kello $7.00$. Latauksen hyötysuhde on $90\\,\\%$.\n\nKolmivaiheinen latausasema ottaa jokaisesta vaihejohtimesta yhtä suuren virran, ja vaihejännite on $230\\,\\text{V}$.\n\nKuinka suuri latausvirta yhdessä vaihejohtimessa vähintään tarvitaan, kun virta pidetään koko yön vakiona?",
       "answer": 7.156915,
       "unit": "A",
       "tolerance": 0.02

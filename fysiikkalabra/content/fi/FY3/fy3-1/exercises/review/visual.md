@@ -1,20 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 97fdca59160df064
+CONTENT-HASH: aee75e10fdf5cfc4
+ROUND: 2
 
 ## Blocking
-(none)
+(none) Earlier Blocking: none. Round-1 Polish on L3-05 (chain broken mid-product, "b)" left at line end, inline display fraction) is resolved: the Sijoitus is now one aligned display block and the 612 kg comparison uses a colon.
 
 ## Polish
-- [Minor] L2-03 and L3-03 Järkevyys — still not fixed. A display fraction splits the sentence into blocks: "Kuussa paino on / [1,62/9,81 ≈ 1/6] / Maan painosta" in L2-1280-3, and "noin / [26 kg/0,38 ≈ 69 kg] / selvästi…" in L3-1280-4. The lesson now writes the same ratio with a colon ("$1{,}62 : 9{,}81 \approx 0{,}17$") — use the colon or \tfrac inline, so the two parts agree.
-- [Minor] L1-04 — the Vastaus chip shows "F = 7,0 N" while the other tasks show only the value — make the chips uniform.
-- [Minor] L1-04 Kuvaajan lukeminen — a dense paragraph with four coordinate pairs; a short list would scan better on a phone.
+- [Minor] Task tables (L2-05, L3-04, L3-05, 1280 px) — column header is centred while the numbers sit left or right, so they do not line up — align header and cells the same way.
+- [Minor] L2-07 (open-exercises-L2-1280-7) — for the error task the Mallivastaus a) stands before Kysytty/Periaate; the usual order (given, asked, principle) is broken only here — optional: keep the order and put the model answer after Sijoitus.
+- [Minor] No 360 px captures of the new tasks exist (only the collapsed stage-exercises-390); check_layout 360 is clean.
 
 ## Checked
-- Captures were blank. I re-ran `screenshot.py fy3-1` (stamp: exercises 97fdca59160df064).
-- open-exercises-L2-1280-1: L2-01 "$49\,\text{N}$" in KaTeX, and the layout is intact.
-- open-exercises-L2-1280-3: L2-04 prompt with "$1{,}5\,\text{cm}$", "$0{,}20\,\text{kg}$:n", "$4{,}5\,\text{cm}$", plus the L2-03 Järkevyys.
-- open-exercises-L3-1280-1: L3-01 "$18\,\text{N}$" with the Mars $g$, and the solution.
-- contact-4 and contact-5 (L1-02 prompt in #40–41, L1-04 chip, L3-03 end). The earlier plain-quantity item is resolved: every task prompt now uses one typeface.
+- open-exercises-1280-8: L1-08 (0,18 t, Muunnokset 1 t = 1000 kg, answer 670 N matches 667,8 N).
+- open-exercises-L2-1280-5, -7: L2-05 (table, origin and (0,50 kg; 4,90 N) read-off, 9,8 m/s²), L2-06 and L2-07 (error task, "kymmenesosa" now matches 4,9/9,81).
+- open-exercises-L3-1280-6, -7: L3-04 (3,6 m/s², Mars verdict), L3-05 (aligned Sijoitus, a) and b) in one block).
+- Reordered MC choices (L1-06, L1-07) read in the diff; quantities in KaTeX, decimal comma, no clipping or overflow at 1280.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 5 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

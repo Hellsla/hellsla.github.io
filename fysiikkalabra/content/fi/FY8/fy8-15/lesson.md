@@ -311,10 +311,14 @@ Sähkömagneettisen vuorovaikutuksen ja gravitaation kantama on rajaton. Vahva v
   <foreignObject x="268.5" y="203.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{fotoni}$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy8/cms-detector.webp" alt="Suuri, monikerroksinen ilmaisin täynnä kaapeleita ja metallilevyjä; etualalla on oransseihin kypäriin pukeutuneita ihmisiä selin kameraan."><figcaption>CMS-ilmaisin avattuna CERNissä. Ilmaisimen kerrokset mittaavat törmäyksissä syntyvien hiukkasten ratoja ja energioita. Edessä seisovat vierailijat näyttävät, kuinka suuri laite on.</figcaption></figure>
+
 ### Higgsin bosoni ja CERN
 Standardimallin mukaan avaruuden täyttää **Higgsin kenttä**. Vuorovaikutus sen kanssa antaa massan $W$- ja $Z$-bosoneille, kvarkeille ja varatuille leptoneille, mutta fotoni ja gluoni jäävät massattomiksi. Kentän kvantti on **Higgsin bosoni**. Se löydettiin vuonna 2012 Euroopan hiukkasfysiikan tutkimuskeskuksen CERNin LHC-kiihdyttimellä, ja sen massa on noin $125\,\tfrac{\text{GeV}}{c^2}$. Protonin massasta vain noin $1\,\%$ on sen kvarkkien massaa; loppu on kvarkkeja sitovan vahvan vuorovaikutuksen energiaa.
 
 LHC on $27\,\text{km}$ pitkä maanalainen rengas Sveitsin ja Ranskan rajalla. Siinä kaksi protonisuihkua kiihdytetään vastakkaisiin suuntiin energiaan $6{,}8\,\text{TeV}$, ja ne törmäytetään ilmaisimien keskellä. Törmäyksen energiasta syntyy uusia, raskaita hiukkasia $E = mc^2$ mukaisesti, ja ilmaisimet mittaavat niiden hajoamistuotteiden radat ja energiat. Suomi on ollut CERNin jäsen vuodesta 1991.
+
+<figure class="unit-photo"><img src="pics/fy8/atlas-detector.webp" alt="Pystykuva korkeasta maanalaisesta hallista: kummallakin sivulla on valtavia kaarevia metallirakenteita, ja keskellä alhaalla on sininen lieriö ja telineitä."><figcaption>ATLAS-ilmaisin rakenteilla vuonna 2007 maanalaisessa luolassa CERNissä. Valmis ilmaisin on noin $46\,\text{m}$ pitkä ja $25\,\text{m}$ korkea.</figcaption></figure>
 
 ## Kaava: Säilymislait hiukkasreaktioissa
 

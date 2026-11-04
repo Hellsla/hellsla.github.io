@@ -180,6 +180,8 @@ Varausta ei synny eikä häviä. Eristetyn systeemin kokonaisvaraus pysyy samana
   <foreignObject x="491" y="243.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$Q = +3e$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy6/balloon-hair.webp" alt="Käsi pitää punaista ilmapalloa hiusten yläpuolella. Hiukset nousevat kohti palloa."><figcaption>Ilmapalloa on hangattu hiuksiin. Elektroneja siirtyi hiuksista palloon. Pallossa on nyt negatiivinen varaus ja hiuksissa positiivinen varaus. Erimerkkiset varaukset vetävät toisiaan.</figcaption></figure>
+
 ### Kappaleiden varautuminen
 Kappale voidaan varata kolmella tavalla.
 
@@ -386,6 +388,8 @@ Varattu kappale vaikuttaa toiseen varattuun kappaleeseen koskematta siihen. Täm
   <line x1="84" y1="40" x2="104" y2="70" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
   <circle cx="104" cy="70" r="3.5" fill="#6b7480"/>
 </svg>
+
+<figure class="unit-photo"><img src="pics/fy6/balloons-repel.webp" alt="Kaksi keltaista ilmapalloa roikkuu langoissa liitutaulun edessä. Pallot ovat erillään."><figcaption>Molemmissa ilmapalloissa on samanmerkkinen varaus. Pallot työntävät toisiaan poispäin, ja langat menevät vinoon. Palloon vaikuttavat painovoima, langan voima ja toisen pallon sähköinen voima.</figcaption></figure>
 
 ## Kaava: Coulombin laki
 Kahden pistevarauksen välisen sähköisen voiman suuruus on suoraan verrannollinen varausten tuloon. Se on myös kääntäen verrannollinen niiden välisen etäisyyden neliöön. Suora verrannollisuus tarkoittaa, että kun varausten tulo kaksinkertaistuu, voimakin kaksinkertaistuu. Kääntäen verrannollinen tarkoittaa, että kun etäisyyden neliö kasvaa, voima pienenee samassa suhteessa. Tämä on **Coulombin laki**:

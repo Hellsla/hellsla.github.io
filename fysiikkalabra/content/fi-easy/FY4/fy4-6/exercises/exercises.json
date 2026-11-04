@@ -42,6 +42,79 @@
       "answer": 59.0,
       "unit": "N",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy4-6-L1-06",
+      "level": 1,
+      "text": "Laatikko on levossa vaakasuoralla lattialla. Sitä työnnetään vaakasuoraan $20\\,\\text{N}$:n voimalla, mutta se ei liiku.\n\nLaatikon ja lattian välisen lepokitkan suurin mahdollinen arvo on $60\\,\\text{N}$. Mikä väite lattian laatikkoon kohdistamasta lepokitkasta $F_{\\mu 0}$ on oikea?",
+      "kind": [
+        "concept"
+      ],
+      "unit": "",
+      "tolerance": 0.02,
+      "answer": "$F_{\\mu 0} = 20\\,\\text{N}$, koska levossa lepokitka on yhtä suuri kuin työntö.",
+      "choices": [
+        {
+          "text": "$F_{\\mu 0} = 20\\,\\text{N}$, koska levossa lepokitka on yhtä suuri kuin työntö.",
+          "correct": true,
+          "feedback": "Oikein. Levossa voimien summa on nolla. Siksi lepokitka on yhtä suuri kuin työntö ja vastakkaissuuntainen. Se on pienempi kuin enimmäisarvo."
+        },
+        {
+          "text": "$F_{\\mu 0} = 60\\,\\text{N}$, koska lepokitka on aina yhtä suuri kuin sen enimmäisarvo.",
+          "feedback": "Lepokitka on vain niin suuri kuin tilanne vaatii. Enimmäisarvo $\\mu_0 N$ on yläraja. Se ei ole kitkan oikea arvo."
+        },
+        {
+          "text": "$F_{\\mu 0} = 0\\,\\text{N}$, koska levossa olevaan kappaleeseen ei vaikuta kitkaa.",
+          "feedback": "Juuri kitka estää laatikkoa liikkumasta. Jos kitka olisi nolla, työntö panisi laatikon liikkeelle."
+        },
+        {
+          "text": "$F_{\\mu 0} = 40\\,\\text{N}$, koska lepokitka on enimmäisarvon ja työnnön erotus.",
+          "feedback": "Kitkaa ei saa vähentämällä työntö enimmäisarvosta. Levossa kitka ja työntö ovat yhtä suuret ja vastakkaiset."
+        }
+      ]
+    },
+    {
+      "id": "fy4-6-L1-07",
+      "level": 1,
+      "kind": [
+        "reasoning"
+      ],
+      "text": "Vaakasuoralla lattialla on levossa $50\\,\\text{kg}$:n laatikko. Laatikon ja lattian välinen lepokitkakerroin on $0{,}45$. Kuinka suuri vaakasuora voima laatikkoon on vähintään kohdistettava, jotta se lähtee liikkeelle?",
+      "answer": 220.0,
+      "unit": "N",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy4-6-L1-08",
+      "level": 1,
+      "text": "Kappale on levossa $30^\\circ$:n kaltevalla tasolla. Kappaleeseen vaikuttavat vain paino $\\overline{G}$, tukivoima $\\overline{N}$ ja kitka.\n\nMikä väite tukivoiman suuruudesta $N$ ja painon suuruudesta $G$ on oikea?",
+      "kind": [
+        "concept",
+        "error"
+      ],
+      "unit": "",
+      "tolerance": 0.02,
+      "answer": "$N < G$, koska tukivoima kumoaa vain painon kohtisuoran komponentin.",
+      "choices": [
+        {
+          "text": "$N = G$, koska tukivoima ja paino ovat aina yhtä suuret ja vastakkaiset.",
+          "feedback": "Tukivoima on kohtisuorassa pintaa vastaan, mutta paino osoittaa suoraan alas. Ne eivät ole samalla suoralla. Tukivoima ei kumoa koko painoa."
+        },
+        {
+          "text": "$N > G$, koska rinne tukee kappaletta ja kitka painaa sitä pintaa vasten.",
+          "feedback": "Kitka on pinnan suuntainen. Se ei paina kappaletta pintaa vasten. Kohtisuoraan pintaa vastaan vaikuttavat vain paino ja tukivoima."
+        },
+        {
+          "text": "$N < G$, koska tukivoima kumoaa vain painon kohtisuoran komponentin.",
+          "correct": true,
+          "feedback": "Oikein. Pintaa vastaan kohtisuorassa suunnassa kappale ei kiihdy, joten $N = G_y = mg\\cos\\alpha$. Rinteen suuntaisen komponentin kumoaa kitka."
+        },
+        {
+          "text": "$N = 0$, koska paino vetää kappaletta rinnettä alas eikä pintaa vasten.",
+          "feedback": "Paino ei osoita rinnettä pitkin. Sen komponentti $G_y$ painaa kappaletta pintaa vasten, joten tukivoima ei ole nolla."
+        }
+      ]
     }
   ],
   "level2": [
@@ -75,11 +148,154 @@
     {
       "id": "fy4-6-L2-04",
       "level": 2,
-      "text": "Muuttolaatikko asetetaan levossa lankulle, joka on $35^\\circ$:n kulmassa vaakatasoon nähden. Laatikon massa on $10\\,\\text{kg}$. Laatikon ja lankun välinen lepokitkakerroin on $0{,}60$. Laske lepokitkan suurin mahdollinen arvo ja vertaa sitä painon rinteen suuntaiseen komponenttiin. Kuinka monta newtonia komponentti ylittää suurimman lepokitkan? (Jos luku olisi negatiivinen, laatikko pysyisi paikallaan.)",
+      "text": "Muuttolaatikko asetetaan levossa lankulle, joka on $35^\\circ$:n kulmassa vaakatasoon nähden. Laatikon massa on $10\\,\\text{kg}$. Laatikon ja lankun välinen lepokitkakerroin on $0{,}60$.\n\nLaske lepokitkan suurin mahdollinen arvo ja vertaa sitä painon rinteen suuntaiseen komponenttiin. Kuinka monta newtonia komponentti ylittää suurimman lepokitkan? (Jos luku olisi negatiivinen, laatikko pysyisi paikallaan.)",
       "answer": 8.1,
       "unit": "N",
       "tolerance": 0.04,
       "fbd": "equations"
+    },
+    {
+      "id": "fy4-6-L2-05",
+      "level": 2,
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "text": "Oppilaat vetivät puupalikkaa vaakasuoralla pöydällä jousivaa'alla. He vetivät vaakasuoraan ja tasaisella nopeudella. Palikan päälle lisättiin painoja, ja jokaisella massalla luettiin vaa'an näyttämä veto. Alla on esimerkkiaineisto.\n\nPiirrä $(N, F_\\mu)$-kuvaaja ja sovita siihen origon kautta kulkeva suora. Määritä palikan ja pöydän välinen liikekitkakerroin kuvaajasta. Tukivoima lasketaan massasta.",
+      "answer": 0.42,
+      "unit": "",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Palikan ja painojen yhteismassa $m$ ja vaa'an veto $F$ (esimerkkiaineisto)",
+        "columns": [
+          "$m\\,(\\text{kg})$",
+          "$F\\,(\\text{N})$"
+        ],
+        "rows": [
+          [
+            "0.20",
+            "0.85"
+          ],
+          [
+            "0.40",
+            "1.62"
+          ],
+          [
+            "0.60",
+            "2.50"
+          ],
+          [
+            "0.80",
+            "3.31"
+          ],
+          [
+            "1.00",
+            "4.02"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy4-6-L2-06",
+      "level": 2,
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "text": "Voima-anturilla vedettiin $0{,}75\\,\\text{kg}$:n puupalikkaa vaakasuoralla pöydällä. Veto oli koko ajan vaakasuora. Vetoa kasvatettiin hitaasti, kunnes palikka lähti liikkeelle. Sen jälkeen palikkaa vedettiin vaakasuoraan tasaisella nopeudella. Palikka liikkui tasaisella nopeudella hetkestä $t = 3{,}5\\,\\text{s}$ alkaen. Alla on esimerkkiaineisto.\n\nPiirrä $(t, F)$-kuvaaja. Lue taulukosta suurin lukema lepokitkan suurimmaksi arvoksi. Lue myös tasaisen liikkeen aikainen vetovoima. Määritä lepokitkakerroin $\\mu_0$ ja liikekitkakerroin $\\mu$.\n\nKirjoita vastauslaatikkoon liikekitkakerroin $\\mu$.",
+      "answer": 0.29,
+      "unit": "",
+      "tolerance": 0.04,
+      "data": {
+        "caption": "Anturin mittaama vetovoima $F$ ajan $t$ funktiona (esimerkkiaineisto)",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$F\\,(\\text{N})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "0.0"
+          ],
+          [
+            "0.5",
+            "0.7"
+          ],
+          [
+            "1.0",
+            "1.4"
+          ],
+          [
+            "1.5",
+            "2.1"
+          ],
+          [
+            "2.0",
+            "2.8"
+          ],
+          [
+            "2.5",
+            "3.3"
+          ],
+          [
+            "3.0",
+            "2.3"
+          ],
+          [
+            "3.5",
+            "2.2"
+          ],
+          [
+            "4.0",
+            "2.1"
+          ],
+          [
+            "4.5",
+            "2.2"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy4-6-L2-07",
+      "level": 2,
+      "kind": [
+        "experiment",
+        "data"
+      ],
+      "text": "Lepokitkakerroin määritettiin kokeella. Puulautaa kallistettiin hitaasti, kunnes sen päällä ollut puupalikka lähti liukumaan. Kulma luettiin kulmamittarista. Koe toistettiin viisi kertaa. Alla on esimerkkiaineisto.\n\nPerustele, miksi lepokitkakerroin on $\\mu_0 = \\tan\\alpha_0$, kun $\\alpha_0$ on kulma, jolla palikka lähtee liukumaan. Laske kulmien keskiarvo ja määritä sen avulla lepokitkakerroin.\n\nKirjoita vastauslaatikkoon lepokitkakerroin $\\mu_0$.",
+      "answer": 0.47,
+      "unit": "",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Kulma $\\alpha_0$, jolla palikka lähtee liukumaan (esimerkkiaineisto)",
+        "columns": [
+          "Mittaus",
+          "$\\alpha_0\\,({}^\\circ)$"
+        ],
+        "rows": [
+          [
+            "1",
+            "24"
+          ],
+          [
+            "2",
+            "26"
+          ],
+          [
+            "3",
+            "25"
+          ],
+          [
+            "4",
+            "27"
+          ],
+          [
+            "5",
+            "25"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -107,6 +323,49 @@
       "text": "Maassa laatikko liukuu $30^\\circ$:n rinnettä alas kiihtyvyydellä $2{,}0\\,\\text{m/s}^2$. Kuinka suuri olisi laatikon kiihtyvyys samalla rinteellä ja samalla pinnalla Kuun pinnalla? Kuussa putoamiskiihtyvyys on $1{,}62\\,\\text{m/s}^2$. Kuussa ei ole ilmaa. Ilmanvastus jätetään huomiotta myös Maassa.",
       "answer": 0.33,
       "unit": "m/s²",
+      "tolerance": 0.03,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy4-6-L3-04",
+      "level": 3,
+      "kind": [
+        "data",
+        "model"
+      ],
+      "text": "Henkilöauton jarrutusmatka lasketaan mallilla. Mallissa pyörät lukkiutuvat, ja renkaiden ja tien välillä vaikuttaa liikekitka. Alla on esimerkkiaineisto renkaiden ja tien välisistä liikekitkakertoimista.\n\nAuto jarruttaa nopeudesta $80\\,\\text{km/h}$ pysähdyksiin. Ilmanvastus jätetään huomiotta, ja kiihtyvyys on vakio.\n\na) Määritä jarrutusmatka kuivalla vaakasuoralla asfaltilla.\n\nb) Määritä jarrutusmatka märällä vaakasuoralla asfaltilla.\n\nc) Märkä tie viettää alamäkeen $6{,}0^\\circ$:n kulmassa. Määritä jarrutusmatka alamäessä ja perustele, miksi auton massaa ei tarvita.\n\nKirjoita vastauslaatikkoon kohdan c) jarrutusmatka.",
+      "answer": 73,
+      "unit": "m",
+      "tolerance": 0.03,
+      "fbd": "equations",
+      "data": {
+        "caption": "Liikekitkakerroin $\\mu$ renkaiden ja tien välillä (esimerkkiaineisto)",
+        "columns": [
+          "Tienpinta",
+          "$\\mu$"
+        ],
+        "rows": [
+          [
+            "Kuiva asfaltti",
+            "0.75"
+          ],
+          [
+            "Märkä asfaltti",
+            "0.45"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy4-6-L3-05",
+      "level": 3,
+      "kind": [
+        "error",
+        "model"
+      ],
+      "text": "Laatikon massa on $20\\,\\text{kg}$. Laatikko lähtee levossa liukumaan $30^\\circ$:n rinnettä alas. Laatikon ja rinteen välinen liikekitkakerroin on $0{,}35$. Ilmanvastus jätetään huomiotta.\n\nOppilas ratkaisi tehtävän näin: ”Tukivoima on painon suuruinen, $N = mg$. Liikeyhtälö rinteen suuntaan on $mg\\sin\\alpha - \\mu mg = ma$, joten $a = g(\\sin\\alpha - \\mu) \\approx 1{,}5\\,\\text{m/s}^2$.”\n\na) Selitä oppilaan virhe ja piirrä laatikon voimakuvio.\n\nb) Laske laatikon oikea kiihtyvyys.\n\nc) Kuinka pitkän matkan laatikko liukuu ensimmäisten $3{,}0\\,\\text{s}$:n aikana?\n\nKirjoita vastauslaatikkoon kohdan c) matka.",
+      "answer": 8.7,
+      "unit": "m",
       "tolerance": 0.03,
       "fbd": "equations"
     }

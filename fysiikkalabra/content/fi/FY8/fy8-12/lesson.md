@@ -244,6 +244,8 @@ Säteilyn lajit (luku *Atomiydin ja radioaktiivinen hajoaminen*) eroavat siinä,
   <foreignObject x="224" y="347.5" width="374" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$\text{ionipari: positiivinen ioni ja}\ e^-$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy8/hfir-refueling.webp" alt="Ylhäältä kuvattu syvä vesiallas sinisessä valossa; pohjalla on pyöreä reaktorisydän, josta loistaa kirkas sininen hohde, ja ympärillä on pyöreitä kansia."><figcaption>Tutkimusreaktorin sydän vesialtaan pohjalla polttoaineen vaihdon aikana. Sininen hohde on Tšerenkovin säteilyä: hiukkaset kulkevat vedessä nopeammin kuin valo vedessä. Paksu vesikerros vaimentaa säteilyä, joten altaan reunalla voi työskennellä.</figcaption></figure>
+
 ### Läpäisykyky
 **Läpäisykyky** kertoo, kuinka paksun ainekerroksen säteily läpäisee. Mitä tiheämmin säteily ionisoi, sitä nopeammin se luovuttaa energiansa ja sitä ohuempi kerros sen pysäyttää. Siksi alfasäteilyllä on pienin ja gammasäteilyllä suurin läpäisykyky. Taulukon viimeinen sarake kertoo, mikä pysäyttää alfa- ja beetasäteilyn ja mikä vaimentaa gamma- ja neutronisäteilyä tehokkaasti. Röntgensäteily on fotonisäteilyä ja käyttäytyy kuten gammasäteily.
 
@@ -322,6 +324,8 @@ Ihminen ei aisti ionisoivaa säteilyä, joten se havaitaan mittalaitteella. Tava
   <line x1="420" y1="282" x2="420" y2="298" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
   <foreignObject x="300" y="301.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$U \approx 500\,\text{V}$</div></foreignObject>
 </svg>
+
+<figure class="unit-photo"><img src="pics/fy8/dosimeter-chernobyl.webp" alt="Käsi pitää keltaista taskukokoista säteilymittaria polven päällä; kuva on otettu läheltä, ja tausta on sumea."><figcaption>Säteilymittari Tšernobylin alueella. Tällaisessa taskumittarissa on yleensä Geigerin ja Müllerin putki, joka laskee ionisoivia tapahtumia ja muuntaa niiden määrän annosnopeudeksi.</figcaption></figure>
 
 Jokainen ionisoiva tapahtuma laukaisee samanlaisen vyöryn, joten pulssi on yhtä suuri riippumatta säteilyn lajista ja energiasta. GM-mittari siis laskee tapahtumia mutta ei kerro, mitä säteilyä se havaitsee. Säteilylajin voi päätellä esteiden avulla: jos pulssimäärä putoaa taustan tasolle paperiarkin taakse, säteily on alfasäteilyä. Mittari laskee aina myös **taustasäteilyä**, jota tulee maaperästä, rakennusmateriaaleista, ilman radonista ja avaruudesta. Gammafotoneista GM-putki havaitsee vain pienen osan, koska useimmat kulkevat ohuen kaasun läpi vuorovaikuttamatta. Säteilyn energiaa mittaavat esimerkiksi tuikeilmaisimet, ja henkilön saamaa säteilyä seurataan annosmittareilla.
 

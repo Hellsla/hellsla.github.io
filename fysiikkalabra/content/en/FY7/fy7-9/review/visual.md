@@ -1,17 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: b7d2af821abef4eb
+CONTENT-HASH: 189f50be9eaf2eed
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] Spectrum table at 390 px — "microwaves" hyphenates in the narrow first column; the table scrolls by design, acceptable.
-- [Minor] inquiry.json experiment 1 intro — "The wavelength range is short wavelengths" reads awkwardly; "is set to short wavelengths".
+- [Minor] for science: sparkler caption — "much hotter than red-glowing lava" overstates (lava about 1100 °C, sparks of similar order); say "hotter than" or drop the comparison.
 
 ## Checked
-- contact-1; sim-390, sim-1280, lab-1280-1 (round-1 blocker: region label now "infrared", no Finnish; legend now 11 words and shown as plain text, no extra disclosure).
-- fig-11 (curves) at 390, theory-1280-2 (table and spectrum figure), example-390-1, contact sheet figures 2, 5, 7, 9.
-- check_layout.py fy7-9 --width 340: OK.
-
-## Scores
-illustrations 4 · typography 5 · Finnish (English prose) 4 · accessibility 4
+batch delta review: opened each new photo in assets/pics/fy7 and compared alt text and caption with it; rendered preview/en/fy7-9.html at 1280 px (figure floats right, 320 px wide, no overflow) and 390 px (full-width, below text, credit line present); captions physically correct and tied to the chapter, numbers with units in LaTeX.

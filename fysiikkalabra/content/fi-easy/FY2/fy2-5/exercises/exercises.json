@@ -130,7 +130,7 @@
     {
       "id": "fy2-5-L2-05",
       "level": 2,
-      "text": "Taulukossa on esimerkkiaineisto polttopuun tehollisesta lämpöarvosta eri kosteuksilla. Tehollinen lämpöarvo on se energia, joka puusta oikeasti saadaan lämmitykseen. Saunan lämmitykseen tarvitaan polttopuusta energiaa $200\\,\\text{MJ}$. Laske taulukon lämpöarvoilla tarvittava puun massa, kun kosteus on $20\\,\\%$ ja kun se on $40\\,\\%$. Kuinka monta kilogrammaa enemmän kosteaa ($40\\,\\%$) puuta tarvitaan kuin ilmakuivaa ($20\\,\\%$) puuta? Anna vastaus kilogrammoina.",
+      "text": "Taulukossa on esimerkkiaineisto polttopuun tehollisesta lämpöarvosta eri kosteuksilla. Tehollinen lämpöarvo on se energia, joka puusta oikeasti saadaan lämmitykseen. Saunan lämmitykseen tarvitaan polttopuusta energiaa $200\\,\\text{MJ}$.\n\nLaske taulukon lämpöarvoilla tarvittava puun massa, kun kosteus on $20\\,\\%$ ja kun se on $40\\,\\%$. Kuinka monta kilogrammaa enemmän kosteaa ($40\\,\\%$) puuta tarvitaan kuin ilmakuivaa ($20\\,\\%$) puuta? Anna vastaus kilogrammoina.",
       "kind": [
         "data",
         "reasoning"
@@ -206,7 +206,7 @@
     {
       "id": "fy2-5-L2-07",
       "level": 2,
-      "text": "Esimerkkimittauksessa pellettipoltin ja sen pelletit olivat vaa’alla. Poltin paloi koko ajan tasaisesti. Vaa’an lukema $m$ merkittiin $10\\,\\text{min}$ välein. Piirrä massan kuvaaja ajan funktiona. Määritä kuvaajan kulmakertoimesta, kuinka monta kilogrammaa pellettejä palaa minuutissa. Pellettien lämpöarvo on $17\\,\\tfrac{\\text{MJ}}{\\text{kg}}$. Kuinka suuri teho palamisessa vapautuu? Anna vastaus kilowatteina.",
+      "text": "Esimerkkimittauksessa pellettipoltin ja sen pelletit olivat vaa’alla. Poltin paloi koko ajan tasaisesti. Vaa’an lukema $m$ merkittiin $10\\,\\text{min}$ välein.\n\nPiirrä massan kuvaaja ajan funktiona. Määritä kuvaajan kulmakertoimesta, kuinka monta kilogrammaa pellettejä palaa minuutissa. Pellettien lämpöarvo on $17\\,\\tfrac{\\text{MJ}}{\\text{kg}}$. Kuinka suuri teho palamisessa vapautuu? Anna vastaus kilowatteina.",
       "kind": [
         "data",
         "graph",

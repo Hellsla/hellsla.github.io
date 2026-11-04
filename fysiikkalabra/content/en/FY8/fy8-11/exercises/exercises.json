@@ -87,7 +87,7 @@
     {
       "id": "fy8-11-L3-02",
       "level": 3,
-      "text": "The radiated power of the Sun is $3.83 \\cdot 10^{26}\\,\\text{W}$. The energy is produced in the core of the Sun by fusion, in which one helium-4 nucleus is formed from four hydrogen nuclei in the net reaction. The energy released in the net reaction is obtained from the difference between the masses of four hydrogen atoms and one helium atom. The mass of a hydrogen atom is $1.0078250\\,\\text{u}$ and that of a helium-4 atom $4.0026033\\,\\text{u}$. How many helium nuclei are formed in the Sun per second? Assume that all the energy released ends up as radiated power. Give the answer in the unit $10^{37}\\,\\tfrac{1}{\\text{s}}$.",
+      "text": "The radiated power of the Sun is $3.83 \\cdot 10^{26}\\,\\text{W}$. The energy is produced in the core of the Sun by fusion, in which one helium-4 nucleus is formed from four hydrogen nuclei in the net reaction.\n\nThe energy released in the net reaction is obtained from the difference between the masses of four hydrogen atoms and one helium atom. The mass of a hydrogen atom is $1.0078250\\,\\text{u}$ and that of a helium-4 atom $4.0026033\\,\\text{u}$.\n\nHow many helium nuclei are formed in the Sun per second? Assume that all the energy released ends up as radiated power. Give the answer in the unit $10^{37}\\,\\tfrac{1}{\\text{s}}$.",
       "answer": 8.94,
       "unit": "10³⁷ 1/s",
       "tolerance": 0.02

@@ -1,15 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 4cfa8a8208c7ac15
-
-Delta review over the audit's PASS (497163bfee90ee02): L1-03 (water cooling) replaced by a figure task fy3-14/energy-bars (three heats as bars).
+CONTENT-HASH: 2a315176056af704
 
 ## Blocking
-- none
+
 ## Polish
-- level: the task needs a comparison (5 ≤ 25 < 65), a subtraction and the division by s, with a conclusion; that is L2 work under an L1 label. Acceptable, but say it in the hint or move it to L2 at the next edit.
-- the solution could add the common mistake 25 kJ / 334 kJ/kg = 75 g (ignoring the warming of the ice).
+- exercises.json L3-04, mittaus 1 — now 0,200 kg, 30,0 °C, 0,0500 kg, 8,2 °C, which is the L2-04 task (8,1 °C) with one digit moved; the L3 task still repeats an L2 measurement. Change the water to e.g. 0,250 kg / 25,0 °C and T = 7,0 °C (recompute s_1 and the solution) so the set has no near-duplicate.
+- L2-05 a) — "Piirrä kuvaaja ja vedä suora" still comes with the two points the line passes through, so the drawing is only a check; drop the points and let the student read (300 s; 133 g), or drop "piirrä".
+- solutions.md L3-05 Vastaus a) — the new parenthesis about "rajatapaus, jossa kaikki jää juuri suli" is confusing next to the plain answer; delete it (c) already shows the rows lie below 29 °C).
+- L2-05 solution Vastaus — the sentence about room heat melting extra ice is correct but sits after the main answer; move it to a separate "Virhelähteet" line so the b) answer stays one sentence.
+- solutions.md:188, 194 L3-04 — "Ensin … = 3,95" gives a bare number; optionally name it ("Ensin sulkulauseke: …") so the student sees where 3,95 comes from in the Kaava.
+
 ## Checked
-- Figure needed: the text names the three heats but gives no numbers; 25, 5 and 60 kJ are read from the bars (grid 5 kJ, numbers every 10 kJ). The description lists them without the answer.
-- (25 − 5) kJ / 334 kJ/kg = 59,9 g; answer 60 g, 2 % band 58,8-61,2; energy balance 25 kJ right.
-- 360 px capture: bars and labels legible, bar ends on grid; colour supplemented by labels.
-- Kuvaajan lukeminen present; Finnish clear; LaTeX in new text.
+- Round 3 (delta): L3-04 Sijoitus now computes the bracket first in a short inline formula ("Ensin … = 3,95, joten") and then s_1, s_2 and s_2' as one-step-per-row display chains. Reads naturally; the order (bracket → fraction → J/kg → kJ/kg) matches how a student would work it.
+- Values unchanged (3,95; 4,45; 331; 373 kJ/kg; s_2' = 335 100 J/kg); Vastaus and Järkevyys untouched, so a), b), c) still follow the task parts.
+- Phone usability: no 360 px exercise capture exists; the layout 360 px check passes and the widest new row (s_2' first fraction) is about 250 px at 1280 px in open-exercises-L3-1280-7, well inside a phone column.
+- Earlier Polish carried over unchanged (still open in exercises.json and solutions.md).

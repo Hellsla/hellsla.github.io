@@ -1,16 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: e184c50282f64f63
+CONTENT-HASH: 75b8ca0cb3a5bf15
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- [Minor] stage-tutki-390-2 — reaction table wraps mid-reaction, arrows split — widen first column.
-- [Minor] fig-5 — grey charges small at 390 px — darker tone.
+- [Minor] cms-detector alt — "ihmisiä oranssit kypärät päässä" reads clumsily; "Edessä on ihmisiä, joilla on oranssit kypärät."
+- [Minor] atlas-detector at 1280 px — the portrait photo (836×1600) is shown narrow (about 110 px wide) beside a wide caption; acceptable, but a little small to read the structure.
 
 ## Checked
-- Delta: lesson.md Antihiukkaset sentence now reads "annihiloitua eli tuhota toisensa", natural Finnish, bold term and layout unchanged; inquiry.json Aino option reads fluently, one sentence, no maths affected.
-- Captures from round 1 (contact-1, stage-tutki-390-2, theory-1280-2) still apply: only wording changed, no figure or math.
-
-## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+batch delta review: opened cms-detector.webp and atlas-detector.webp, rendered both at 390 and 1280 px (float right, no clipping, no overflow; the two photos do not collide). Alts match the images. ATLAS caption: $46\,\text{m}$ and $25\,\text{m}$ correct and in LaTeX; 2007 under construction plausible.

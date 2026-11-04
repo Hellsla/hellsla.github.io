@@ -21,7 +21,7 @@
     {
       "id": "fy4-13-L1-03",
       "level": 1,
-      "text": "Kärry, jonka massa on $1{,}0\\,\\text{kg}$, on kitkattomalla pöydällä. Siihen sidottu kevyt ja venymätön lanka kulkee pöydän reunalla olevan kevyen ja kitkattoman väkipyörän yli. Langan päässä roikkuu punnus, jonka massa on $0{,}40\\,\\text{kg}$. Ilmanvastus jätetään huomiotta. Piirrä kummankin kappaleen voimakuvio. Kuinka suuri on langan jännitysvoima, kun kappaleet liikkuvat?",
+      "text": "Kärry, jonka massa on $1{,}0\\,\\text{kg}$, on kitkattomalla pöydällä. Siihen sidottu kevyt ja venymätön lanka kulkee pöydän reunalla olevan kevyen ja kitkattoman väkipyörän yli. Langan päässä roikkuu punnus, jonka massa on $0{,}40\\,\\text{kg}$. Ilmanvastus jätetään huomiotta.\n\nPiirrä kummankin kappaleen voimakuvio. Kuinka suuri on langan jännitysvoima, kun kappaleet liikkuvat?",
       "answer": 2.8,
       "unit": "N",
       "tolerance": 0.02,
@@ -44,13 +44,82 @@
       "unit": "m/s²",
       "tolerance": 0.02,
       "fbd": "equations"
+    },
+    {
+      "id": "fy4-13-L1-06",
+      "level": 1,
+      "text": "Kärry on kitkattomalla pöydällä. Kärry on sidottu langalla punnukseen väkipyörän yli. Punnus laskee ja kärry kiihtyy. Lanka ja väkipyörä ovat kevyet. Ilmanvastusta ei oteta huomioon. Miten langan jännitysvoima $T$ ja punnuksen paino $G_2$ vertautuvat toisiinsa?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "$T$ on pienempi kuin $G_2$, koska punnuksen kokonaisvoima osoittaa alaspäin",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "$T$ on yhtä suuri kuin $G_2$, koska lanka kannattelee punnusta koko painon verran",
+          "feedback": "Näin on vain, jos punnus on levossa tai liikkuu tasaisella nopeudella. Nyt punnus kiihtyy alas. Silloin sen kokonaisvoima ei ole nolla, ja $T$ on pienempi kuin paino."
+        },
+        {
+          "text": "$T$ on suurempi kuin $G_2$, koska lanka vetää samalla myös kärryä eteenpäin",
+          "feedback": "Lanka vetää punnusta ylös ja kärryä eteenpäin yhtä suurella voimalla $T$. Tämä ei lisää voimaa. Jos $T$ olisi suurempi kuin paino, kokonaisvoima osoittaisi ylös. Silloin punnus ei laskisi."
+        },
+        {
+          "text": "$T$ on puolet $G_2$:sta, koska lanka jakaa voimansa kahden kappaleen kesken",
+          "feedback": "Lanka ei jaa voimaansa. Se vetää kumpaakin kappaletta samalla voimalla $T$. Suhde painoon riippuu massoista. Se ei ole aina puolet."
+        },
+        {
+          "text": "$T$ on pienempi kuin $G_2$, koska punnuksen kokonaisvoima osoittaa alaspäin",
+          "correct": true,
+          "feedback": "Oikein. Punnus kiihtyy alas. Newtonin toisen lain mukaan $G_2 - T = m_2 a$, ja kokonaisvoima osoittaa alas. Siksi $T < G_2$."
+        }
+      ]
+    },
+    {
+      "id": "fy4-13-L1-07",
+      "level": 1,
+      "text": "Kevyen ja venymättömän langan päissä roikkuu kaksi kappaletta väkipyörän yli. Kappaleiden massat ovat $0{,}30\\,\\text{kg}$ ja $0{,}70\\,\\text{kg}$. Väkipyörä on kevyt ja kitkaton. Ilmanvastusta ei oteta huomioon. Kappaleet päästetään liikkeelle. Piirrä kummankin kappaleen voimakuvio. Kuinka suuri on kappaleiden yhteinen kiihtyvyys?",
+      "answer": 3.9,
+      "unit": "m/s²",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy4-13-L1-08",
+      "level": 1,
+      "text": "Kärry on kitkattomalla pöydällä. Kärry on sidottu langalla väkipyörän yli punnukseen, joka laskee. Piirrät kärryn voimakuvion. Mitkä voimat vaikuttavat kärryyn pöydän suunnassa? Mikä väite on oikein?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Vain langan jännitysvoima, koska punnuksen paino vaikuttaa punnukseen eikä kärryyn",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Langan jännitysvoima ja punnuksen paino, koska punnus vetää myös kärryä langan kautta",
+          "feedback": "Punnuksen paino on Maan voima punnukseen. Se ei ole voima kärryyn. Lanka vaikuttaa kärryyn jännitysvoimalla $T$, ja se on jo langan koko vaikutus. Jos piirrät painon kärryn kuvioon, lisäät voiman, joka ei vaikuta kärryyn."
+        },
+        {
+          "text": "Vain langan jännitysvoima, koska punnuksen paino vaikuttaa punnukseen eikä kärryyn",
+          "correct": true,
+          "feedback": "Oikein. Kärryn voimakuvioon piirretään vain voimat, jotka vaikuttavat kärryyn. Punnuksen paino vaikuttaa punnukseen. Lanka vaikuttaa kärryyn jännitysvoimalla $T$. Se on kärryn ainoa vaakasuuntainen voima."
+        },
+        {
+          "text": "Vain punnuksen paino, koska se saa kärryn liikkeelle ja lanka vain välittää sen kärrylle",
+          "feedback": "Lanka ei välitä painoa sellaisenaan. Jos lanka vetäisi kärryä koko painon $m_2 g$ voimalla, punnuksen kokonaisvoima olisi nolla. Silloin punnus ei laskisi. Langan voima $T$ on pienempi kuin paino."
+        },
+        {
+          "text": "Langan jännitysvoima ja liike-energian voima, koska kärry liikkuu eteenpäin pöydällä",
+          "feedback": "Liikkeellä ei ole omaa voimaa. Liike-energia on energiaa, ei voima. Voimakuvioon piirretään vain voimat, jotka syntyvät kappaleiden vuorovaikutuksesta, kuten jännitysvoima."
+        }
+      ]
     }
   ],
   "level2": [
     {
       "id": "fy4-13-L2-01",
       "level": 2,
-      "text": "Nosturin köysi nostaa laatikkoa, jonka massa on $50\\,\\text{kg}$. Sen alapuolella roikkuu toisen köyden päässä toinen laatikko, jonka massa on $30\\,\\text{kg}$. Laatikot kiihtyvät ylöspäin kiihtyvyydellä $1{,}2\\,\\text{m/s}^2$. Köydet ovat kevyet ja venymättömät, ja ilmanvastus jätetään huomiotta. Piirrä kummankin laatikon voimakuvio vihkoon, ennen kuin avaat ratkaisun. Kuinka suuri on nosturin köyden jännitysvoima?",
+      "text": "Nosturin köysi nostaa laatikkoa, jonka massa on $50\\,\\text{kg}$. Sen alapuolella roikkuu toisen köyden päässä toinen laatikko, jonka massa on $30\\,\\text{kg}$. Laatikot kiihtyvät ylöspäin kiihtyvyydellä $1{,}2\\,\\text{m/s}^2$.\n\nKöydet ovat kevyet ja venymättömät, ja ilmanvastus jätetään huomiotta.\n\nPiirrä kummankin laatikon voimakuvio vihkoon, ennen kuin avaat ratkaisun. Kuinka suuri on nosturin köyden jännitysvoima?",
       "answer": 880,
       "unit": "N",
       "tolerance": 0.02,
@@ -83,13 +152,109 @@
       "unit": "kg",
       "tolerance": 0.02,
       "fbd": "equations"
+    },
+    {
+      "id": "fy4-13-L2-05",
+      "level": 2,
+      "text": "Atwoodin koneessa kaksi punnusta roikkuu kevyen ja venymättömän langan päissä väkipyörän yli. Punnusten yhteinen massa on aina $M = 0{,}500\\,\\text{kg}$. Väkipyörä on kevyt ja kitkaton. Massaero on $\\Delta m = m_2 - m_1$. Massaeroa muutetaan siirtämällä pieniä massoja punnukselta toiselle. Jokaisella massaerolla mitataan raskaamman punnuksen kiihtyvyys $a$. Taulukossa on esimerkkiaineisto mittauksista.\n\na) Johda kummankin punnuksen liikeyhtälöstä kaava, jolla lasket $a$:n massaerosta $\\Delta m$.\n\nb) Piirrä $(\\Delta m, a)$-kuvaaja ja sovita siihen suora, joka kulkee origon kautta. Määritä putoamiskiihtyvyys $g$ suoran kulmakertoimesta.\n\nVastauslaatikkoon tulee kohdan b) putoamiskiihtyvyys.",
+      "kind": [
+        "data",
+        "graph",
+        "experiment"
+      ],
+      "answer": 9.8,
+      "unit": "m/s²",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Atwoodin koneen kiihtyvyys eri massaeroilla (esimerkkiaineisto)",
+        "columns": [
+          "$\\Delta m\\,(\\text{g})$",
+          "$a\\,(\\text{m/s}^2)$"
+        ],
+        "rows": [
+          [
+            "50",
+            "0.96"
+          ],
+          [
+            "100",
+            "2.02"
+          ],
+          [
+            "150",
+            "2.88"
+          ],
+          [
+            "200",
+            "3.97"
+          ],
+          [
+            "250",
+            "4.84"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy4-13-L2-06",
+      "level": 2,
+      "text": "Kärry on kitkattomalla radalla. Sen massa on $1{,}20\\,\\text{kg}$. Kärry on sidottu kevyellä ja venymättömällä langalla punnukseen, joka roikkuu kevyen ja kitkattoman väkipyörän yli. Kärry päästetään liikkeelle levosta eri punnuksilla. Jokaisella kerralla mitataan kärryn kiihtyvyys $a$. Taulukossa on esimerkkiaineisto mittauksista.\n\nValitse mittaus, jossa punnuksen massa on $0{,}50\\,\\text{kg}$. Määritä langan jännitysvoima kärryn liikeyhtälön avulla. Tarkista tulos punnuksen liikeyhtälöllä samasta mittauksesta. Piirrä ensin kummankin kappaleen voimakuvio.\n\nVastauslaatikkoon tulee kärryn liikeyhtälöstä saatu jännitysvoima.",
+      "kind": [
+        "data",
+        "experiment"
+      ],
+      "answer": 3.4,
+      "unit": "N",
+      "tolerance": 0.04,
+      "fbd": "equations",
+      "data": {
+        "caption": "Kärryn kiihtyvyys eri punnuksilla (esimerkkiaineisto)",
+        "columns": [
+          "$m_2\\,(\\text{kg})$",
+          "$a\\,(\\text{m/s}^2)$"
+        ],
+        "rows": [
+          [
+            "0.10",
+            "0.74"
+          ],
+          [
+            "0.20",
+            "1.40"
+          ],
+          [
+            "0.30",
+            "1.97"
+          ],
+          [
+            "0.50",
+            "2.84"
+          ],
+          [
+            "0.70",
+            "3.60"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy4-13-L2-07",
+      "level": 2,
+      "text": "Kitkattomalla pöydällä on kärry, jonka massa on $2{,}0\\,\\text{kg}$. Kärryyn on sidottu kevyt ja venymätön lanka. Lanka kulkee kevyen ja kitkattoman väkipyörän yli. Langan päässä roikkuu punnus, jonka massa on $0{,}50\\,\\text{kg}$. Kappaleet päästetään liikkeelle. Ilmanvastusta ei oteta huomioon.\n\nOppilaan ratkaisu: ”Kärryyn vaikuttaa vaakasuunnassa vain lanka, joten $T = m_1 a$. Punnukselle $m_2 g - T = m_2 a$. Sijoitin ensimmäisen jälkimmäiseen: $m_2 g - m_1 a = m_2 a$. Siitä ratkaisin $a = \\dfrac{m_2 g}{m_1} = 2{,}5\\,\\text{m/s}^2$.”\n\nEtsi virhe oppilaan ratkaisusta ja laske oikea kiihtyvyys. Piirrä myös kummankin kappaleen voimakuvio.\n\nVastauslaatikkoon tulee oikea kiihtyvyys.",
+      "kind": [
+        "error"
+      ],
+      "answer": 2.0,
+      "unit": "m/s²",
+      "tolerance": 0.02,
+      "fbd": "equations"
     }
   ],
   "level3": [
     {
       "id": "fy4-13-L3-01",
       "level": 3,
-      "text": "Hissin kori, jonka massa on $800\\,\\text{kg}$, roikkuu kevyen ja venymättömän köyden päässä. Köysi kulkee kevyen ja kitkattoman pyörän yli. Köyden toisessa päässä on vastapaino, jonka massa on $1200\\,\\text{kg}$. Vastapaino laskee ja kori nousee. Kitka ja ilmanvastus jätetään huomiotta. Piirrä korin ja vastapainon voimakuviot. Kuinka suuri voima köydestä kohdistuu pyörän akseliin? Pyörä on kevyt, ja akseli pitää sen paikallaan.",
+      "text": "Hissin kori, jonka massa on $800\\,\\text{kg}$, roikkuu kevyen ja venymättömän köyden päässä. Köysi kulkee kevyen ja kitkattoman pyörän yli. Köyden toisessa päässä on vastapaino, jonka massa on $1200\\,\\text{kg}$.\n\nVastapaino laskee ja kori nousee. Kitka ja ilmanvastus jätetään huomiotta.\n\nPiirrä korin ja vastapainon voimakuviot. Kuinka suuri voima köydestä kohdistuu pyörän akseliin? Pyörä on kevyt, ja akseli pitää sen paikallaan.",
       "answer": 19000,
       "unit": "N",
       "tolerance": 0.02,
@@ -98,7 +263,7 @@
     {
       "id": "fy4-13-L3-02",
       "level": 3,
-      "text": "Kärry, jonka massa on $1{,}0\\,\\text{kg}$, on kitkattomalla pöydällä. Se on sidottu kevyellä ja venymättömällä langalla kevyen ja kitkattoman väkipyörän yli riippuvaan punnukseen. Lanka katkeaa, jos sen jännitysvoima ylittää $3{,}0\\,\\text{N}$. Kuinka suuri on suurin punnuksen massa, jolla lanka vielä kestää, kun kappaleet liikkuvat? Piirrä ensin kummankin kappaleen voimakuvio. Vastaa kilogrammoina.",
+      "text": "Kärry, jonka massa on $1{,}0\\,\\text{kg}$, on kitkattomalla pöydällä. Se on sidottu kevyellä ja venymättömällä langalla kevyen ja kitkattoman väkipyörän yli riippuvaan punnukseen.\n\nLanka katkeaa, jos sen jännitysvoima ylittää $3{,}0\\,\\text{N}$.\n\nKuinka suuri on suurin punnuksen massa, jolla lanka vielä kestää, kun kappaleet liikkuvat? Piirrä ensin kummankin kappaleen voimakuvio. Vastaa kilogrammoina.",
       "answer": 0.44,
       "unit": "kg",
       "tolerance": 0.02,
@@ -112,6 +277,86 @@
       "unit": "s",
       "tolerance": 0.02,
       "fbd": "equations"
+    },
+    {
+      "id": "fy4-13-L3-04",
+      "level": 3,
+      "text": "Veturi vetää kolmea vaunua peräkkäin suoralla vaakasuoralla radalla. Vaunujen massat ovat $m_1 = 24\\,\\text{t}$, $m_2 = 18\\,\\text{t}$ ja $m_3 = 12\\,\\text{t}$. Vaunut on kytketty toisiinsa kytkimillä. Veturin massaa ei lasketa mukaan. Veturi vetää ensimmäistä vaunua samalla voimalla molemmissa järjestyksissä. Vastusvoimia ei oteta huomioon. Kytkimet ovat kevyet ja venymättömät. Junan nopeus mitataan lähdön jälkeen. Taulukossa on esimerkkiaineisto.\n\na) Määritä taulukosta junan kiihtyvyys. Perustele, miksi kiihtyvyyttä voi pitää vakiona.\n\nb) Piirrä jokaisen vaunun voimakuvio. Laske vaunujen 1 ja 2 välisen kytkimen voima.\n\nc) Vaunut järjestetään uudelleen. Raskain vaunu on viimeisenä ja kevyin ensimmäisenä. Kiihtyvyys on sama. Kuinka suuri on nyt ensimmäisen ja toisen vaunun välisen kytkimen voima? Kestääkö kytkin, jonka suurin sallittu voima on $20\\,\\text{kN}$? Perustele, miksi kytkimen voima muuttui.\n\nVastauslaatikkoon tulee kohdan b) kytkimen voima kilonewtoneina.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 15,
+      "unit": "kN",
+      "tolerance": 0.04,
+      "data": {
+        "caption": "Junan nopeus lähdön jälkeen (esimerkkiaineisto)",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$v\\,(\\text{m/s})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "0.00"
+          ],
+          [
+            "5.0",
+            "2.46"
+          ],
+          [
+            "10.0",
+            "5.03"
+          ],
+          [
+            "15.0",
+            "7.48"
+          ],
+          [
+            "20.0",
+            "10.02"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy4-13-L3-05",
+      "level": 3,
+      "text": "Kitkattomalla radalla on kärry. Kärryn massa $m_1$ on tuntematon. Kärryyn on sidottu kevyt ja venymätön lanka. Lanka kulkee kevyen ja kitkattoman väkipyörän yli. Langan päässä roikkuu punnus, jonka massa $m_2$ vaihtelee. Kärry päästetään liikkeelle levosta. Mitataan aika $t$, jonka punnus laskeutuu matkan $0{,}80\\,\\text{m}$ lattiaan asti. Taulukossa on esimerkkiaineisto mittauksista.\n\na) Laske jokaisesta mittauksesta punnuksen kiihtyvyys. Johda kummankin kappaleen liikeyhtälöistä kaava, jolla lasket kärryn massan massasta $m_2$ ja kiihtyvyydestä $a$.\n\nb) Määritä kärryn massa jokaisesta mittauksesta. Laske niiden keskiarvo.\n\nc) Punnus, jonka massa on $0{,}200\\,\\text{kg}$, osuu lattiaan. Rata on riittävän pitkä, joten kärry ei osu väkipyörään. Mitä kärrylle tapahtuu sen jälkeen? Perustele ja laske kärryn nopeus tällä hetkellä.\n\nVastauslaatikkoon tulee kohdan b) kärryn massan keskiarvo.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 0.91,
+      "unit": "kg",
+      "tolerance": 0.04,
+      "data": {
+        "caption": "Punnuksen laskeutumisaika $0{,}80\\,\\text{m}$:n matkalla (esimerkkiaineisto)",
+        "columns": [
+          "$m_2\\,(\\text{kg})$",
+          "$t\\,(\\text{s})$"
+        ],
+        "rows": [
+          [
+            "0.100",
+            "1.29"
+          ],
+          [
+            "0.200",
+            "0.96"
+          ],
+          [
+            "0.300",
+            "0.80"
+          ],
+          [
+            "0.400",
+            "0.73"
+          ]
+        ]
+      }
     }
   ]
 }

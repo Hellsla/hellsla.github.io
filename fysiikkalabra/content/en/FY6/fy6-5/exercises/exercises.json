@@ -254,7 +254,7 @@
     {
       "id": "fy6-5-L3-03",
       "level": 3,
-      "text": "A parallel connection of two identical bulbs is connected to a voltage source whose voltage is $12\\,\\text{V}$. A resistor of $20\\,\\Omega$ is connected between the positive terminal of the source and the bulbs. The resistance of each bulb is $60\\,\\Omega$, and it is assumed to stay constant. The resistances of the source and the wires are neglected. The negative terminal of the source is the zero point. One of the bulbs is unscrewed from its socket. By how much does the potential of the junction between the resistor and the bulbs change? Give the answer with its sign (positive if the potential increases).",
+      "text": "A parallel connection of two identical bulbs is connected to a voltage source whose voltage is $12\\,\\text{V}$. A resistor of $20\\,\\Omega$ is connected between the positive terminal of the source and the bulbs.\n\nThe resistance of each bulb is $60\\,\\Omega$, and it is assumed to stay constant. The resistances of the source and the wires are neglected. The negative terminal of the source is the zero point.\n\nOne of the bulbs is unscrewed from its socket.\n\nBy how much does the potential of the junction between the resistor and the bulbs change? Give the answer with its sign (positive if the potential increases).",
       "answer": 1.8,
       "unit": "V",
       "tolerance": 0.02

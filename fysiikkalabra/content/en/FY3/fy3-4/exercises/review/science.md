@@ -1,13 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: d888d837342119d7
+CONTENT-HASH: d2575374e6555241
 
 ## Blocking
 (none)
+
+## Fixed
+(none; no translation edits were needed)
 
 ## Polish
 (none)
 
 ## Checked
-- Translation reviewed against the reviewed Finnish after the typesetting round: every inline-math segment of exercises.json, solutions.md compared with the Finnish (same numbers, units, symbols, order; only subscript labels differ, translated); no bare number+unit left outside LaTeX; decimal point (not comma) in English; no Finnish words left (Lake Päijänne is a proper noun); JSON valid; check_i18n 0 errors for en in these chapters.
-- Physics: numbers, answers and formulas identical to the Finnish; no new claim introduced.
-- Translation-only review (teacher's procedure 2026-10-28); no translation edits were needed.
+- Mode: translation review against the reviewed Finnish, round 1; the 8 new tasks L1-06..08, L2-05..07, L3-04..05 checked in exercises.json and solutions.md.
+- Ids, answers, units, tolerances, correct flags, kinds, choice order and table cells identical to fi (scripted comparison of every non-text field and of all numbers inside inline maths in text, choices, feedback and solutions; only the decimal separator differs).
+- Formulas and numeric chains in solutions.md identical to fi (decimal point in en JSON and LaTeX); no Finnish words left (Lake Päijänne is a proper noun).
+- Physics statements (p = F/A, p = p0 + rho g h, gauge vs. total pressure, mean-pressure force on wall parts) unchanged from fi.
+- check_i18n en: 0 errors.

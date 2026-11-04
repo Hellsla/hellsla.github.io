@@ -190,10 +190,14 @@ So the colour of a quantum dot can be chosen by its size, even though the materi
   <foreignObject x="455" y="303.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$hf = 2.00\,\text{eV}$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy8/helium-neon-laser.webp" alt="A black box-shaped device labelled He-Ne LASER sits in a mount on a table; red light shines from its end, with a holder in front of it."><figcaption>A helium–neon laser in an optics set-up. An electric discharge pumps the gas in the tube, and the mirrors at the ends of the tube amplify the light into a narrow red beam with a wavelength of $633\,\text{nm}$.</figcaption></figure>
+
 ### Applications of quantum structures
 In a quantum dot display, blue backlight hits quantum dots, which absorb it and emit pure green or red light in the same way as in the fluorescence of the chapter *Spectra reveal the energy levels of atoms*. Most laser diodes are quantum well lasers, in which the thickness of the well selects the wavelength. Quantum dot layers are being studied for solar cells, and by the size of the dots they can be tuned to absorb the wanted part of the spectrum of the Sun.
 
 The basic unit of a quantum computer is the **qubit**: a quantum system that has two states and can also be in a combination of them, a superposition. Qubits are made, for example, of electrons confined in the quantum dots of a semiconductor and of superconducting circuits. Such a circuit behaves like an artificial atom with its own quantised energy levels. In Finland, superconducting quantum computers are being built by VTT and IQM. The states of a qubit are sensitive, so the circuits are cooled close to absolute zero and shielded from disturbances of the environment.
+
+<figure class="unit-photo"><img src="pics/fy8/rgb-laser-pointer.webp" alt="Three horizontal laser beams in the dark: red at the top, green in the middle and blue at the bottom; the beams come from devices on the right."><figcaption>Red, green and blue laser beams. Particles in the air scatter some of the light towards the camera, so the beams are visible. A photon of blue light carries the most energy and one of red light the least.</figcaption></figure>
 
 ## Formula: Laser photons
 All the photons of a laser are produced in the same transition, so the energy and wavelength of each photon are

@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 1cf4b7863abb805b
+CONTENT-HASH: fc675ddba93a47b0
 
 ## Blocking
-(none left; see Fixed)
-
-## Fixed
-- solutions.md:118 (L3-03 Answer) — "in addition" mistranslated "yhteenlaskussa" (in the addition/sum) → "in the addition the result is as precise as the data"
+(none)
 
 ## Polish
 - none
 
 ## Checked
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): compared exercises.json and solutions.md with content/fi/FY3/fy3-5. Naturalness for the target reader, consistent terms with terms.md and lang labels, no lost steps/hints/feedback, options and feedback still match. Figure texts each translate their own key.
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked exercises.json, solutions.md (incl. the graph task and its figure text) against the new Finnish.
+- All 8 new tasks read in en against the Finnish: no steps, hints, sub-questions (a/b/c) or feedback lost; answer-box sentences kept.
+- Text is natural English; instructions, signs and "answer box" sentences are clear.
+- Terms consistent with the existing tasks of the set and the lesson (internal energy, heat, work, first law).
+- Solutions keep the Given/Find/Principle/Formula/Conversions/Substitution/Answer/Reasonableness structure and all steps.

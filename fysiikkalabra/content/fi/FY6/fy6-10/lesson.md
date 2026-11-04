@@ -180,6 +180,8 @@ Varausta ei synny eikä häviä. Eristetyn systeemin kokonaisvaraus eli sen kaik
   <foreignObject x="491" y="243.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$Q = +3e$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy6/balloon-hair.webp" alt="Käsi pitää punaista ilmapalloa pitkien hiusten yläpuolella, ja hiukset nousevat kohti palloa."><figcaption>Hiuksiin hangattu ilmapallo vetää hiuksia puoleensa. Hankauksessa elektroneja siirtyi hiuksista palloon, joten pallo varautui negatiivisesti ja hiukset positiivisesti. Vastakkaismerkkiset varaukset vetävät toisiaan.</figcaption></figure>
+
 ### Kappaleiden varautuminen
 Kappale voidaan varata kolmella tavalla.
 
@@ -386,6 +388,8 @@ Varattu kappale vaikuttaa toiseen varattuun kappaleeseen koskematta siihen. Täm
   <line x1="84" y1="40" x2="104" y2="70" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
   <circle cx="104" cy="70" r="3.5" fill="#6b7480"/>
 </svg>
+
+<figure class="unit-photo"><img src="pics/fy6/balloons-repel.webp" alt="Kaksi keltaista ilmapalloa roikkuu ohuista langoista vihreän liitutaulun edessä; pallot ovat erillään, ja langat ovat vinossa."><figcaption>Kaksi samalla tavalla varattua ilmapalloa työntää toisiaan poispäin, joten langat kääntyvät vinoon. Jokaiseen palloon vaikuttavat painovoima, langan jännitysvoima ja toisen pallon sähköinen voima.</figcaption></figure>
 
 ## Kaava: Coulombin laki
 Kahden pistevarauksen välisen sähköisen voiman suuruus on suoraan verrannollinen varausten tuloon ja kääntäen verrannollinen niiden välisen etäisyyden neliöön. Tämä on **Coulombin laki**:

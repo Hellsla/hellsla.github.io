@@ -86,7 +86,7 @@
     {
       "id": "fy4-16-L3-01",
       "level": 3,
-      "text": "The top of a sledding hill is $4.50\\,\\text{m}$ higher than the flat snow field that begins at the foot of the hill. The slope of the hill consists of two straight parts: the upper one is at an angle of $25^\\circ$ and the lower one at $10^\\circ$ to the horizontal. The sled starts from rest at the top, and the coefficient of kinetic friction is $0.120$ all the way. Air resistance and the increase of friction in the bends of the slope are ignored. How far from the top, measured horizontally, does the sled stop?",
+      "text": "The top of a sledding hill is $4.50\\,\\text{m}$ higher than the flat snow field that begins at the foot of the hill. The slope of the hill consists of two straight parts: the upper one is at an angle of $25^\\circ$ and the lower one at $10^\\circ$ to the horizontal.\n\nThe sled starts from rest at the top, and the coefficient of kinetic friction is $0.120$ all the way. Air resistance and the increase of friction in the bends of the slope are ignored.\n\nHow far from the top, measured horizontally, does the sled stop?",
       "answer": 37.5,
       "unit": "m",
       "tolerance": 0.02,

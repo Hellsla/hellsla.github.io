@@ -208,3 +208,76 @@ a 0
 **Substitution:** $F = 1.5\,\text{N} + 0.40\,\text{N} = 1.9\,\text{N}$
 **Answer:** $1.9\,\text{N}$, to the nearest tenth of a newton like the weight of the apple $1.5\,\text{N}$, so two significant figures.
 **Reasonableness:** The lower scale shows the weight of the apple, $1.5\,\text{N}$, and the upper one also supports the lower scale, so its reading must be larger. The difference of the readings, $0.40\,\text{N}$, is exactly the weight of the lower scale.
+
+## fy4-3-L1-06
+**Find:** which statement about the forces acting on the puck is correct when the puck slides at constant velocity and there is no friction or air resistance.
+**Principle:** By Newton’s first law the velocity of an object stays the same if and only if the net force is zero. A force is needed to change the velocity, not to maintain it.
+**Model answer:** The speed and direction of the puck stay the same, so the net force is zero. In the vertical direction the weight and the normal force of the ice cancel each other, and in the horizontal direction no force acts, because friction and air resistance are missing. A forward-pushing force is not needed and there is none: the force of the hit ended when the stick left the puck. If the net force pointed in the direction of motion, the puck would speed up, and if backwards, it would slow down.
+
+## fy4-3-L1-07
+**Find:** which force is the reaction force of the normal force that the table exerts on the book.
+**Principle:** By Newton’s third law, in an interaction each party acts on the other with an equally large and oppositely directed force. The reaction force therefore acts on a different object than the original force and is of the same kind.
+**Model answer:** The normal force is the force of the table on the book, so its reaction force is the force of the book on the table: the book presses the table down. The weight of the book is not the reaction force, because it acts on the same object as the normal force; they are equally large because the book is at rest (first law). The pull of the Earth on the book is the weight of the book and belongs to the interaction between the Earth and the book. The weight of the table on the floor belongs to the interaction between the table and the floor.
+
+## fy4-3-L1-08
+**Given:** force of the child on the rope $F = 38\,\text{N}$, the sled moves at constant velocity, the weight of the rope is ignored
+**Find:** the force of the rope on the child $F_\text{RC}$ in $\text{N}$
+**Principle:** By Newton’s third law the child and the rope interact, so the rope pulls the child with an equally large but oppositely directed force as the child pulls the rope. The law holds even though the sled moves at constant velocity.
+**Force diagram:** Choose the child as the object and draw the child as a rectangle. The force of the rope $\overline{F}_\text{RC}$ points from the child towards the sled, that is, against the child, and the child’s own force on the rope acts on the rope and does not belong in the child’s diagram.
+**Formula:** $\overline{F}_\text{RC} = -\overline{F}_\text{CR}$, so in magnitudes $F_\text{RC} = F_\text{CR}$
+**Conversions:** The force is in newtons, so no conversions are needed.
+**Substitution:** $F_\text{RC} = F_\text{CR} = 38\,\text{N}$
+**Answer:** $38\,\text{N}$ towards the sled, two significant figures like the force $38\,\text{N}$.
+**Reasonableness:** The motion of the sled does not affect the magnitudes of the forces: the same $38\,\text{N}$ would result if the sled were at rest. The constant velocity only tells that the force of the rope on the sled is as large as the resistance acting on the sled, $38\,\text{N}$.
+
+## fy4-3-L2-05
+**Given:** the rope is at rest; from the table the largest reading of sensor A is $F_\text{A} = 4.8\,\text{N}$ at $t = 1.0\,\text{s}$, when sensor B shows $4.8\,\text{N}$
+**Find:** the force of the wall on the rope $F_\text{W}$ in $\text{N}$ at the moment when $F_\text{A}$ is largest
+**Principle:** The rope is at rest, so by the first law the sum of the forces acting on it is zero: the force of the wall on the rope is as large as the force of the student on the rope. By the third law the rope pulls sensor A and the wall with forces as large as they pull the rope, so the readings of the sensors are equally large at every moment.
+**Reading the graph:** From the table we read the row where $F_\text{A}$ is largest: $t = 1.0\,\text{s}$, $F_\text{A} = 4.8\,\text{N}$. On the same row $F_\text{B} = 4.8\,\text{N}$. On the other rows the readings differ by at most $0.1\,\text{N}$, which is random variation of the measurement, not a physical difference.
+**Formula:** $F_\text{W} - F_\text{A} = 0$, so $F_\text{W} = F_\text{A}$
+**Conversions:** The forces are in newtons, so no conversions are needed.
+**Substitution:** $F_\text{W} = F_\text{A} = 4.8\,\text{N}$
+**Answer:** $4.8\,\text{N}$, two significant figures like the readings in the table.
+**Reasonableness:** At all five moments the readings of the sensors differ by at most $0.1\,\text{N}$, while the readings vary between $0.9\,\text{N}$ and $4.8\,\text{N}$. The differences vary in direction, so they are random measurement variation: both ends of a light rope pull with an equally large force at every moment.
+
+## fy4-3-L2-06
+**Given:** from the table the velocities $0.51$; $0.50$; $0.49$; $0.50$; $0.51$ and $0.49\,\text{m/s}$, time $\Delta t = 6.0\,\text{s}$
+**Find:** a) why a forward-pushing force is not needed; b) the distance $s$ travelled by the cart in $\text{m}$
+**Principle:** By Newton’s first law an object moves at constant velocity when the net force is zero, and no force is needed to maintain motion. The velocity is almost the same in all readings, so the motion is uniform and the distance is the product of the velocity and the time.
+**Reading the graph:** From the table we see that the velocity stays between $0.49$ and $0.51\,\text{m/s}$ and neither increases nor decreases. The variation is random variation of the measurement. The mean velocity $v_\text{av}$ describes the constant velocity.
+**Formula:** $v_\text{av} = \dfrac{\Sigma v}{n}$ and $s = v_\text{av}\,\Delta t$
+**Conversions:** The velocity is in $\text{m/s}$ and the time in seconds, so no conversions are needed.
+**Substitution:** The sum of the velocities is $3.00\,\text{m/s}$ and there are $6$ readings, so $v_\text{av} = \dfrac{3.00\,\text{m/s}}{6} = 0.500\,\text{m/s}$. The distance is
+$s = 0.500\,\text{m/s}\cdot 6.0\,\text{s} = 3.0\,\text{m}$.
+**Answer:** a) The velocity does not change, so the net force is zero: the air resistance is very small and in the vertical direction the weight and the normal force cancel each other, so a forward-pushing force is not needed. b) $3.0\,\text{m}$, two significant figures like the time $6.0\,\text{s}$.
+**Reasonableness:** The velocity is about $0.5\,\text{m/s}$, so in $6\,\text{s}$ the cart travels about $3\,\text{m}$. The track must therefore be at least this long.
+
+## fy4-3-L2-07
+**Find:** what the error in the student’s reasoning is.
+**Principle:** The force and the reaction force of Newton’s third law are equally large and oppositely directed, but they act on different objects. The motion of an object is decided only by the sum of the forces acting on that object itself.
+**Model answer:** The student considers two forces, the force of the fist on the wall and the force of the wall on the fist, but they act on different objects. The force of the fist on the wall acts on the wall, so it does not cancel anything acting on the fist. The force of the wall acts on the fist, and it is against the motion of the fist, so the fist slows down and stops. The forces are nevertheless equally large even though the wall does not move, and they appear at the same time. No force is needed to maintain motion.
+
+## fy4-3-L3-04
+**Given:** rolling resistance on the cart $F_\text{r} = 410\,\text{N}$, air resistance on the cart $F_\text{dc} = 40\,\text{N}$, air resistance on the horse $F_\text{dh} = 30\,\text{N}$, the velocity is constant and straight forwards, example data
+**Find:** a) the force of the rope on the cart $T$; b) the force of the road on the hooves of the horse $F_\text{road}$ in $\text{N}$; c) why the forces do not cancel each other
+**Principle:** Both the cart and the horse move at constant velocity, so the net force on each is zero (first law). The cart gives the force of the rope. By the third law the cart pulls the horse backwards with a force $T$ as large as the rope pulls the cart forwards, and this is used in the equilibrium of the horse. The force of the road on the hooves is an external force that carries the pair forwards.
+**Force diagram:** For the cart draw: the force of the rope $\overline{T}$ forwards, the rolling resistance and the air resistance backwards. For the horse: the force of the road $\overline{F}_\text{road}$ forwards, the force of the rope $\overline{T}$ and the air resistance backwards. The forces on the horse and on the cart are in different diagrams.
+**Formula:** Cart: $T - F_\text{r} - F_\text{dc} = 0$, so $T = F_\text{r} + F_\text{dc}$. Horse: $F_\text{road} - T - F_\text{dh} = 0$, so $F_\text{road} = T + F_\text{dh}$.
+**Conversions:** The forces are in newtons, so no conversions are needed.
+**Substitution:** $T = 410\,\text{N} + 40\,\text{N} = 450\,\text{N}$ and
+$F_\text{road} = 450\,\text{N} + 30\,\text{N} = 480\,\text{N}$.
+**Answer:** a) $450\,\text{N}$ and b) $480\,\text{N}$ forwards, two significant figures like the given forces. c) The force of the horse on the cart and the force of the cart on the horse are equally large and oppositely directed, but they act on different objects, so they do not cancel each other. The motion of the cart is decided only by the forces acting on the cart, and the motion of the horse only by the forces acting on the horse. The horse gets going because the road pushes its hooves forwards with a force that is larger than the force of the cart on the horse.
+**Reasonableness:** The force of the road $480\,\text{N}$ is as large as the sum of all the resistances $410\,\text{N} + 40\,\text{N} + 30\,\text{N} = 480\,\text{N}$, so the whole system moves at constant velocity. The friction between the road and the hooves points forwards, because it opposes the hoof slipping backwards.
+
+## fy4-3-L3-05
+**Given:** from the table the velocity and the force of the rope; at $t = 4.0\,\text{s}$, $5.0\,\text{s}$ and $6.0\,\text{s}$ the velocities are $0.70$; $0.71$ and $0.70\,\text{m/s}$ and the forces $3.4$; $3.5$ and $3.3\,\text{N}$; at the start $F = 5.1\,\text{N}$ and $v = 0$ (example data)
+**Find:** a) when the net force is zero; b) the force of friction $F_\text{f}$ in $\text{N}$; c) why $F > F_\text{f}$ at the start
+**Principle:** When the velocity of the cart is constant, by the first law the net force is zero, so the force of the rope and the friction are equally large. If the velocity changes, the net force is not zero. By the third law the cart pulls the rope and the student with a force as large as the rope pulls the cart.
+**Reading the graph:** The velocity increases from $t = 0$ from $0$ to $0.69\,\text{m/s}$ and then, from $t = 4.0\,\text{s}$ on, stays almost the same, about $0.70\,\text{m/s}$. The net force is zero from $t = 4.0\,\text{s}$ on. The sensor readings at these three moments are $3.4\,\text{N}$, $3.5\,\text{N}$ and $3.3\,\text{N}$.
+**Formula:** $F_\text{f} = F_\text{av}$ and $F_\text{av} = \dfrac{\Sigma F}{n}$
+**Conversions:** The forces are in newtons and the velocity in $\text{m/s}$, so no conversions are needed.
+**Substitution:** The sum of the forces is $10.2\,\text{N}$ and there are $3$ readings, so
+$F_\text{f} = \dfrac{10.2\,\text{N}}{3} = 3.40\,\text{N}$.
+**Answer:** b) $3.4\,\text{N}$, two significant figures like the sensor readings. a) The net force is zero from the moment the velocity is constant, that is, from the fourth second on. c) At the start the velocity increases, so the net force is not zero: the rope pulls the cart forwards more than friction opposes, and at the start the rope pulls the cart with a force of $5.1\,\text{N}$. By the third law the cart pulls the rope and the student with the same $5.1\,\text{N}$ backwards, even though the cart accelerates.
+**Reasonableness:** The force decreases from $5.1\,\text{N}$ towards $3.4\,\text{N}$ as the acceleration ends. The friction $3.4\,\text{N}$ is smaller than the force at the start, so the cart has speeded up, and equal to the force at constant speed, so the velocity no longer changes.
