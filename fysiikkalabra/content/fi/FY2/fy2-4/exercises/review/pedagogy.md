@@ -1,20 +1,20 @@
-VERDICT: PASS
-CONTENT-HASH: 52d1d3417776fda8
+VERDICT: FAIL
+CONTENT-HASH: bb79df8de9f7fc6e
 
 ## Blocking
-(none)
+- exercises.json:289 (fy2-4-L3-05) and solutions.md:183 — level 3 is not met: the whole task reduces to one error diagnosis (the student divided losses instead of useful energy) and one subtraction plus one division on the last row; the other rows are decoration. It is the same table, error and method as L2-06 (E_o and E_a for a motor) one level lower. Fix: add a second stage that needs modelling of the whole table, e.g. "Lamppu palaa 3,0 h vuorokaudessa; laske vuodessa lämmöksi muuttuva sähköenergia kWh:na ja sen hinta 0,20 €/kWh" using P = E/t from the slope (9,0 W), or move the task to level 2 and write a new level 3 task from a different context.
 
 ## Polish
-- exercises.json fy2-4-L1-02 and fy2-4-L2-04 — same numbers and answers as the lesson's Etsi virhe item (8,0 W, 2,4 W, 30 %) and Ennuste 1 feedback (25 %, 15 kW, 45 kW), so a student who read the lesson page copies the answer; change the data (e.g. 6,0 W / 1,5 W; 20 kW / 30 %).
-- exercises.json fy2-4-L3-01 and L3-02 — two-step calculations with a unit conversion, close to level 2; level 3 asks for reasoning in a new situation. L3-03 (figure) fits; add one comparison or "which is more efficient and why" task in place of L3-02.
-- exercises.json fy2-4-L2-03 — kWh is not taught in this lesson (prerequisite only); the solution explains it, fine, but say "kilowattitunteina (kWh)" is the unit already met in Teho, or give the answer in MJ.
-- exercises.json fy2-4-L3-02 — "Kuinka kauan paneelilta kuluu sähköenergian 0,50 MJ tuottamiseen?" is clumsy; better: "Kuinka kauan kestää, ennen kuin paneeli on tuottanut sähköenergiaa 0,50 MJ?". Solution gives 2083 s (four digits) yet claims two significant figures: write "noin 2,1 · 10³ s" in the Sijoitus too.
+- exercises.json L2-06 — "data, experiment" but the answer needs only the last row (95/120); ask for the efficiency of each row or for the slope of E_a against E_o so the table is actually used. Solution then needs no "muut rivit tarkistuksena".
+- solutions.md L3-05 Vastaus — "Oppilaan 70 % olisi ledille liian hyvä" is confusing (70 % is the loss share); say "70 % on häviöiden osuus, ei hyötysuhde".
+- exercises.json L2-05, L2-06, L3-05 — invented measurements not marked as example data.
+- solutions.md L2-06 Vastaus — key is 79,17 while the solution rounds to 79 %; harmless within tolerance, but state "noin 79 %".
+- L3-04 is an excellent YO-style task; the question text runs long, so consider setting the last sentence on tuotanto as its own line.
 
 ## Checked
-- Counts 5/4/3 match the course; ids correct; none repeats the kettle example.
-- Situation first, question last as its own sentence; everyday contexts.
-- Solutions: principle explained, conversions and sanity checks present, steps not skipped.
-- L3-03 figure (fy2-4/grid): input 240 J labelled, 8/2/6 squares verified against the source (arrows on grid lines); description gives the same data and not the answer.
-- Mixed J/kJ in L3-01 is addressed in the solution.
-- Finnish: no case or term errors found.
-- Hash unchanged at end.
+- Data tasks at level 2: L2-05 (table) and L2-06 (table) = 2; plus MC L2-07; matches the plan.
+- L3-04 (unit conversion, two efficiencies, useful vs taken energy, scope limit) is a genuine modelling task; recomputed 192 MJ = 53,3 kWh, ratio 3,1, useful 15,3 and 13,3 kWh.
+- L2-05 (5, 10, 20, 30 %; ratio 3,0), L2-07 (75 % vs 80 %), L3-05 (30,09 %) recomputed correct.
+- New L1 tasks: L1-06 MC with misconception distractors and repairing feedback; L1-07 (9,0 kJ) and L1-08 (200 kW) correct.
+- Solutions are complete and followable.
+- Only 1280 px exercise captures exist; 360 px layout covered by deterministic checks.

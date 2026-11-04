@@ -1,18 +1,18 @@
-VERDICT: PASS
-CONTENT-HASH: 049706003240df2d
+VERDICT: FAIL
+CONTENT-HASH: bb6a74d1fc3c3922
 
 ## Blocking
+- [Major] fy2-1-L3-05 solution, Järkevyys (open-exercises-L3-1280-7) — the chain "$5{,}00 > 0{,}80 > 0{,}64 > 0{,}56 > 0{,}14$" inside parentheses is laid out by mathlayout as a stacked display block, so the sentence breaks into "tuli (" / block / "), kuten pitääkin." and reads as broken — clearly poor readability, worst on a phone — fix: drop the chain and the parentheses; write "kunkin vaiheen ulos-energia on pienempi kuin sen tulo-energia, esimerkiksi $0{,}80 < 5{,}00$ ja $0{,}14 < 0{,}56$".
 
 ## Polish
-- [Minor] fy2-1/kitka-pylvaat (open-exercises-1280-3) — the "E (J)" axis title sits right under the half-pipe sketch and its "C" label, cramped; the sketch's A, B, C are not above the bars' A, B, C, and the "0" is set below the baseline — add a few pixels of space and align the sketch columns with the bars, or say the sketch is schematic.
-- [Minor] L1-04 and L3-03 text — parts a), b), c) run on in one paragraph — put each part on its own line so the question and the parts scan.
-- [Minor] L3-03 — the situation and the first question (a) are in one 70-word paragraph — end the situation sentence group and start a) after a break.
-- [Minor] Exercise captures exist only at 1280 px — the figure at 390 px was not seen; the 100 J gridline labels may be small on a phone.
+- [Minor] L3-04, L3-05 text (L3-1280-4/5) — the parts a), b), c) run on in one paragraph (in L3-05 the whole a)-c) block is bold) — start each part on its own line and keep only the question bold-free or the last sentence bold.
+- [Minor] L3-04 text — straight quotation marks around "energiaa kulutetaan" — use Finnish ”…”.
+- [Minor] L2-06 Vastaus — "kymmenen joulen tarkkuudella" for an answer of 20 J reads oddly — say "kaksi merkitsevää numeroa kuten tiedoissa".
+- [Minor] Exercise captures exist only at 1280 px, so the new tables (L2-05, L2-07, L3-04, L3-05) were not seen at 360/390 px; data-table headers are left-aligned over right-aligned numbers.
 
 ## Checked
-- open-exercises-1280-1/2/3 (L1: 01, 02, 03 with figure), open-exercises-L2-1280-2 (L2-01 end, L2-02), open-exercises-L3-1280-3 (L3-02 end, L3-03).
-- Solutions: structure Annettu/Kysytty/Periaate/Kaava/Sijoitus/Vastaus/Järkevyys, units upright with thin space, chains aligned at =, decimal comma, answers set apart.
-- Figure kitka-pylvaat: every value for the task readable from the bars (A 700/0, C 0/500), no thermal bar, description matches.
+- open-exercises-1280-6/7/8 (L1-06 to L1-08, MC feedback, chain answer), L2-1280-5/6/7/8 (L2-05 table and solution, L2-06, L2-07 table and chains), L3-1280-4/5/6/7 (L3-04 table and chains, L3-05 table, solution).
+- Solutions: labelled blocks, units upright with thin space, decimal comma, chains aligned at =, Vastaus boxes; the answers match answers.py.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations 4 · typography 3 · Finnish 5 · accessibility 4

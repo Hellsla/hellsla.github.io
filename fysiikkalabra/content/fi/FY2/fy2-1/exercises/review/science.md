@@ -1,19 +1,16 @@
-VERDICT: PASS
-CONTENT-HASH: 049706003240df2d
+VERDICT: FAIL
+CONTENT-HASH: bb6a74d1fc3c3922
 
 ## Blocking
-(none)
+- exercises.json:95-96 (fy2-1-L1-07, third option) — A, assessment: "Liike-energia kuluu loppuun, mutta kokonaisenergia pysyy silti samana" can be defended as correct. The car's kinetic energy really does fall to zero while the total stays the same, and the option's own feedback (line 96) and the lesson define "kuluminen" as conversion into a hard-to-use form, which makes the option true. So two options are defensible. Fix: make the distractor clearly wrong, e.g. "Liike-energia muuttuu jarruissa lämpöenergiaksi, mutta kokonaisenergia pienenee, koska lämpö siirtyy ympäristöön." (Feedback: the surroundings are part of the system.) Then change solutions.md:55 "katoaa tai kuluu loppuun" to "katoaa tai pienenee".
 
 ## Polish
-- exercises.json fy2-1-L3-02 — the task does not state the model assumption (sound ignored) that L2-03 and the lesson's data item state; add "Ääntä ei oteta huomioon." The solution's "pallo, lattia ja ilma ovat eristetty systeemi" already assumes it.
-- solutions.md fy2-1-L3-02 Järkevyys — "ja lasku hidastuu" is ambiguous (the energy loss per bounce shrinks, the fraction stays one fifth); say "lämpöenergiaksi muuttuva määrä pienenee".
-- solutions.md fy2-1-L2-01 — "paljon polttomoottoria tehokkaampi" is an unsupported comparison for a reasonableness check (C); harmless.
+- solutions.md:105 (L2-05 Periaate) — the reason given for summing ("koska kulutettu energia muuttuu ... lämpöenergiaksi eikä sitä lasketa kahteen kertaan") does not follow. The sum is valid because the uses do not overlap. Write: "koska käyttökohteet eivät mene päällekkäin".
+- exercises.json:218-228 (L2-07) — 720 kJ per hour means a 200 W lamp, which is not realistic for an LED, and a halogen lamp's light share of 12,5 % is high (realistically about 7 %). Suggest 216 kJ (60 W) with light 11 / 16 / 54 kJ, or say the lamps are examples.
+- exercises.json:309 (L3-05) — "loppu energia muuttuu vaiheessa lämpöenergiaksi" is stated as the model. For the panel, part of the light is reflected, so add "(paneelissa osa myös heijastuu)" or "muuttuu lämpöenergiaksi tai heijastuu" (C as written, since the assumption is stated).
 
 ## Checked
-- Recomputed all ten numeric answers independently: 50, 239, 200, 510, 850, 3,0 kJ, 360, 29 000, 130, 0,20 J; all match answers.py, exercises.json and solutions.md.
-- L1-03: A 700 J + 0, C 0 + 500 J from the figure description and generator; B 300+300 gives 100 J thermal, consistent with the solution.
-- Conversions (kJ to J and back) and the rounding reasons are right for each task.
-- Every task states its isolation or ignored effects (air resistance, sound) except L3-02 (polish).
-- L1-04 and L3-03: energy chains correct; solar panel mostly heat, nuclear plant about one third electrical, remainder heat to sea water, with no false "unavoidable" claim.
-- Scope: only energy balance and kJ/J; no E_k or E_p formulas, vectors or work.
-- Symbolic-first solutions with a real reasonableness check in each.
+- I recomputed every new answer in one script: L2-05 60,0 %; L2-06 20 J (100 J of Ep restored + 20 J to the lamp from 100 J); L2-07 684 − 540 = 144 kJ; L3-04 470/1200 = 39,2 % and 1,2·10⁹ GJ / 5,5·10⁶ = 218 GJ; L3-05 4,20 + 0,16 + 0,08 + 0,42 = 4,86 MJ, panel share 86 %, light 2,8 %. All of them match answers.py, exercises.json and solutions.md.
+- L1-06 (one correct option), L1-08 (energy chain) and L2-06 (the pump needs at least 100 J) are right.
+- Scope: no mgh, no c·m·ΔT, no work or force, and no product of chain efficiencies (L3-05 uses differences only). All tasks are energy balance and prefix conversions.
+- The solutions solve symbolically first and their checks are real. No new task duplicates an existing one, and the levels fit. The hash did not change.
