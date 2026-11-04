@@ -39,6 +39,77 @@
    "answer": "Poispäin magneetista: magneetin kenttä osoittaa pohjoisnavasta poispäin, ja neulan pohjoisnapa hylkii magneetin pohjoisnapaa.",
    "unit": "",
    "tolerance": 0.02
+  },
+  {
+   "id": "fy7-1-L1-06",
+   "level": 1,
+   "text": "Magneetti vetää puoleensa rautanaulaa mutta ei alumiinitölkkiä eikä kuparikolikkoa. Mikä seuraavista selittää eron?",
+   "kind": [
+    "concept"
+   ],
+   "answer": "Rauta on ferromagneettista, joten sen alkeisalueet järjestyvät magneetin kentässä; alumiini ja kupari eivät ole sitä.",
+   "unit": "",
+   "tolerance": 0.02,
+   "choices": [
+    {
+     "text": "Rauta on ferromagneettista, joten sen alkeisalueet järjestyvät magneetin kentässä; alumiini ja kupari eivät ole sitä.",
+     "feedback": "Oikein: magneetti vetää vain ferromagneettisia aineita, kuten rautaa, nikkeliä ja kobolttia. Raudan alkeisalueet järjestyvät magneetin kentässä, ja aine magnetoituu. Alumiinilla ja kuparilla ei ole tällaisia alkeisalueita.",
+     "correct": true
+    },
+    {
+     "text": "Rauta johtaa sähköä paremmin kuin alumiini ja kupari, joten magneetin kenttä saa raudassa kulkemaan enemmän virtaa.",
+     "feedback": "Väärin: sähkönjohtavuus ei ratkaise. Kupari johtaa sähköä jopa raudan paremmin, mutta magneetti ei vedä sitä. Ratkaisevaa on, onko aine ferromagneettinen."
+    },
+    {
+     "text": "Rauta on tiheämpää ja raskaampaa kuin alumiini, joten magneetin vetovoima tarttuu vain raskaampiin metallikappaleisiin.",
+     "feedback": "Väärin: magneettinen vuorovaikutus ei riipu massasta tai tiheydestä. Kupari on rautaakin tiheämpää, eikä magneetti silti vedä sitä. Ratkaisevaa on aineen ferromagneettisuus."
+    },
+    {
+     "text": "Alumiinin ja kuparin atomidipolit kumoavat toisensa täysin, kun taas raudassa ei ole lainkaan magneettisia atomidipoleja.",
+     "feedback": "Väärin: raudan atomeilla on magneettiset dipolit, ja ne muodostavat samansuuntaisia alkeisalueita. Juuri tämä tekee raudasta ferromagneettisen. Väite on siis päinvastoin kuin pitäisi."
+    }
+   ]
+  },
+  {
+   "id": "fy7-1-L1-07",
+   "level": 1,
+   "text": "Kompassin neulan pohjoispää osoittaa maantieteellistä pohjoista kohti. Mitä tämä kertoo Maan magneettisista navoista?",
+   "kind": [
+    "concept"
+   ],
+   "answer": "Maantieteellisen pohjoisnavan lähellä on Maan magneettinen etelänapa, koska neulan pohjoisnapaa vetää puoleensa eriniminen napa.",
+   "unit": "",
+   "tolerance": 0.02,
+   "choices": [
+    {
+     "text": "Maantieteellisen pohjoisnavan lähellä on Maan magneettinen etelänapa, koska neulan pohjoisnapaa vetää puoleensa eriniminen napa.",
+     "feedback": "Oikein: neulan pohjoispää on magneetin pohjoisnapa, ja erinimiset navat vetävät toisiaan. Koska neulan pohjoispää osoittaa maantieteellistä pohjoista kohti, siellä on Maan magneettinen etelänapa.",
+     "correct": true
+    },
+    {
+     "text": "Maantieteellisen pohjoisnavan lähellä on Maan magneettinen pohjoisnapa, koska neulan pohjoisnapa hakeutuu samannimisen navan luo.",
+     "feedback": "Väärin: samannimiset navat hylkivät toisiaan, joten neulan pohjoispää ei hakeudu pohjoisnavan luo. Se osoittaa kohti erinimistä napaa eli magneettista etelänapaa."
+    },
+    {
+     "text": "Neula osoittaa pohjoiseen, koska Maan pyöriminen kääntää kevyen neulan pyörimisakselin suuntaiseksi eikä magneettikentällä ole osuutta.",
+     "feedback": "Väärin: kompassin neula on magneetti, ja sen kääntää Maan magneettikenttä. Se toimisi samoin, vaikka Maa ei pyörisi, ja se osoittaa magneettisen navan eikä pyörimisakselin suuntaan."
+    },
+    {
+     "text": "Maan magneettikentässä ei ole napoja, joten neula osoittaa pohjoiseen vain painovoiman ja laakerin kitkan vuoksi.",
+     "feedback": "Väärin: Maan kenttä muistuttaa sauvamagneetin kenttää, ja siinä on napa kummassakin päässä. Neulaa kääntää magneettinen vuorovaikutus eikä painovoima tai kitka."
+    }
+   ]
+  },
+  {
+   "id": "fy7-1-L1-08",
+   "level": 1,
+   "text": "Oulussa Maan magneettikentän magneettivuon tiheys on noin $52\\,\\mu\\text{T}$, ja kenttä osoittaa $76\\,{}^\\circ$ vaakatason alapuolelle. Kuinka suuri on kentän pystykomponentti mikrotesloina?",
+   "kind": [
+    "model"
+   ],
+   "answer": 50.5,
+   "unit": "µT",
+   "tolerance": 0.02
   }
  ],
  "level2": [
@@ -73,6 +144,101 @@
    "answer": 9.82,
    "unit": "",
    "tolerance": 0.02
+  },
+  {
+   "id": "fy7-1-L2-05",
+   "level": 2,
+   "text": "Kompassi on sauvamagneetin akselilla magneetin itäpuolella, ja magneetin kenttä osoittaa kompassin kohdalla itään. Maan magneettikentän vaakakomponentti on $14\\,\\mu\\text{T}$ pohjoiseen. Taulukossa on kompassin neulan kääntymiskulma pohjoisesta, kun kompassin etäisyys magneetista on $r$ (esimerkkiaineisto).\n\na) Laske magneetin magneettivuon tiheys $B_\\text{m}$ etäisyydellä $12\\,\\text{cm}$.\n\nb) Laske $B_\\text{m}$ myös etäisyyksillä $10\\,\\text{cm}$ ja $20\\,\\text{cm}$. Onko kenttä kääntäen verrannollinen etäisyyteen? Perustele vertaamalla, miten kenttä muuttuu, kun etäisyys kaksinkertaistuu.\n\nAnna vastauskenttään kohdan a) tulos mikrotesloina.",
+   "kind": [
+    "data"
+   ],
+   "answer": 14.5,
+   "unit": "µT",
+   "tolerance": 0.03,
+   "data": {
+    "caption": "Kompassin neulan kääntymiskulma etäisyyden funktiona",
+    "columns": [
+     "$r\\,(\\text{cm})$",
+     "$\\theta\\,({}^\\circ)$"
+    ],
+    "rows": [
+     [
+      "8.0",
+      "73"
+     ],
+     [
+      "10.0",
+      "61"
+     ],
+     [
+      "12.0",
+      "46"
+     ],
+     [
+      "16.0",
+      "24"
+     ],
+     [
+      "20.0",
+      "12"
+     ],
+     [
+      "25.0",
+      "7"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "fy7-1-L2-06",
+   "level": 2,
+   "text": "Älypuhelimen magnetometrillä mitattiin magneettivuon tiheyden komponentit kolmessa paikassa samassa huoneessa (esimerkkiaineisto). Puhelin pidettiin joka kerta samassa asennossa, ja komponentit ovat kohtisuorassa toisiaan vastaan. Maan kenttä on tässä huoneessa noin $50\\,\\mu\\text{T}$.\n\na) Laske kokonaiskenttä jokaisessa paikassa.\n\nb) Missä paikassa on todennäköisesti rautaa tai terästä lähellä? Perustele.\n\nAnna vastauskenttään kohdan a) kokonaiskenttä työpöydän vieressä mikrotesloina.",
+   "kind": [
+    "data"
+   ],
+   "answer": 70.7,
+   "unit": "µT",
+   "tolerance": 0.02,
+   "data": {
+    "caption": "Magnetometrin lukemat kolmessa paikassa",
+    "columns": [
+     "Paikka",
+     "$B_x\\,(\\mu\\text{T})$",
+     "$B_y\\,(\\mu\\text{T})$",
+     "$B_z\\,(\\mu\\text{T})$"
+    ],
+    "rows": [
+     [
+      "ikkuna",
+      "11",
+      "-5.0",
+      "-47"
+     ],
+     [
+      "sohva",
+      "12",
+      "-4.0",
+      "-49"
+     ],
+     [
+      "työpöytä",
+      "31",
+      "14",
+      "-62"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "fy7-1-L2-07",
+   "level": 2,
+   "text": "Opiskelija ratkaisee tehtävän: ”Kompassin kohdalla Maan magneettikentän vaakakomponentti on $14\\,\\mu\\text{T}$ pohjoiseen ja pöydällä olevan magneetin kenttä $30\\,\\mu\\text{T}$ itään. Kuinka monta astetta pohjoisesta itään neula kääntyy?”\n\nHänen ratkaisunsa: $\\tan\\theta = \\dfrac{B_\\text{h}}{B_\\text{m}} = \\dfrac{14\\,\\mu\\text{T}}{30\\,\\mu\\text{T}} = 0{,}467$, joten $\\theta = \\tan^{-1} 0{,}467 = 25\\,{}^\\circ$.\n\na) Miksi tulos on epäuskottava, kun magneetin kenttä on paljon Maan kenttää suurempi? Mikä ratkaisussa on virhe?\n\nb) Laske oikea kulma.\n\nAnna vastauskenttään kohdan b) tulos asteina.",
+   "kind": [
+    "error"
+   ],
+   "answer": 65.0,
+   "unit": "°",
+   "tolerance": 0.02
   }
  ],
  "level3": [
@@ -99,6 +265,89 @@
    "answer": 2.03,
    "unit": "",
    "tolerance": 0.02
+  },
+  {
+   "id": "fy7-1-L3-04",
+   "level": 3,
+   "text": "Taulukossa on Maan magneettikentän magneettivuon tiheys $B$ ja inklinaatio $I$ eli kentän suunta vaakatason alapuolella kolmella paikkakunnalla (esimerkkiaineisto, lähellä World Magnetic Model -mallin arvoja). Kompassin viereen asetetaan joka paikkakunnalla sama sauvamagneetti niin, että sen kenttä on kompassin kohdalla $20\\,\\mu\\text{T}$ itään.\n\na) Laske Maan kentän vaakakomponentti kullakin paikkakunnalla.\n\nb) Laske, kuinka monta astetta pohjoisesta itään kompassin neula kääntyy kullakin paikkakunnalla.\n\nc) Koko kenttä on kaikilla paikkakunnilla lähes yhtä suuri. Selitä, miksi neulan kääntymiskulma silti kasvaa pohjoiseen mentäessä, ja mitä se kertoo kompassin toiminnasta pohjoisessa.\n\nAnna vastauskenttään kohdan b) tulos Utsjoella.",
+   "kind": [
+    "data",
+    "model"
+   ],
+   "answer": 61.6,
+   "unit": "°",
+   "tolerance": 0.02,
+   "data": {
+    "caption": "Maan magneettikenttä kolmella paikkakunnalla",
+    "columns": [
+     "Paikkakunta",
+     "$B\\,(\\mu\\text{T})$",
+     "$I\\,({}^\\circ)$"
+    ],
+    "rows": [
+     [
+      "Helsinki",
+      "53",
+      "74"
+     ],
+     [
+      "Oulu",
+      "53",
+      "76"
+     ],
+     [
+      "Utsjoki",
+      "52",
+      "78"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "fy7-1-L3-05",
+   "level": 3,
+   "text": "Tutkija mittaa kompassilla sauvamagneetin kentän etäisyyden funktiona. Magneetti on itä–länsisuuntaisena kompassin itäpuolella akselillaan, joten sen kenttä osoittaa kompassin kohdalla itään. Maan magneettikentän vaakakomponentti on $14\\,\\mu\\text{T}$ pohjoiseen. Taulukossa on neulan kääntymiskulma pohjoisesta, kun kompassin etäisyys magneetista on $r$ (esimerkkiaineisto).\n\na) Laske magneetin magneettivuon tiheys $B_\\text{m}$ jokaisessa pisteessä ja osoita, että tulo $B_\\text{m} r^3$ on likimain vakio.\n\nb) Magneetti käännetään pohjois–eteläsuuntaiseksi ja asetetaan kompassin pohjoispuolelle akselilleen niin, että sen pohjoisnapa on kompassia kohti. Oleta, että magneetin kenttä kompassin kohdalla on yhtä suuri kuin taulukon mukaan samalla etäisyydellä akselilla. Millä etäisyydellä $r_0$ vaakasuora kokonaiskenttä on nolla, joten neula ei asetu mihinkään suuntaan?\n\nc) Mihin suuntaan neulan pohjoispää osoittaa, kun etäisyys on pienempi kuin $r_0$, ja mihin, kun se on suurempi? Perustele.\n\nAnna vastauskenttään kohdan b) tulos senttimetreinä.",
+   "kind": [
+    "data",
+    "experiment",
+    "model"
+   ],
+   "answer": 16.2,
+   "unit": "cm",
+   "tolerance": 0.05,
+   "data": {
+    "caption": "Kompassin neulan kääntymiskulma etäisyyden funktiona",
+    "columns": [
+     "$r\\,(\\text{cm})$",
+     "$\\theta\\,({}^\\circ)$"
+    ],
+    "rows": [
+     [
+      "12.0",
+      "69"
+     ],
+     [
+      "14.0",
+      "56"
+     ],
+     [
+      "16.0",
+      "47"
+     ],
+     [
+      "20.0",
+      "27"
+     ],
+     [
+      "24.0",
+      "18"
+     ],
+     [
+      "30.0",
+      "8"
+     ]
+    ]
+   }
   }
  ]
 }

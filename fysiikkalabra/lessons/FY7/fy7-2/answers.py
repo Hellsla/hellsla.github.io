@@ -25,4 +25,20 @@ r14 = r12 * math.sqrt(14.0 / 12.0)                      # C-14+: 0,27003 m
 a["fy7-2-L3-01"] = 2 * (r14 - r12) * 100                # the spots are diameters apart: 2(r14 − r12) = 4,0 cm
 a["fy7-2-L3-02"] = e * 1.50 / (2 * math.pi * mp) / 1e6  # cyclotron: T = 2πr/v = 2πm/(qB), f = qB/(2πm) = 22,9 MHz
 a["fy7-2-L3-03"] = math.sqrt((ma / (2 * e)) / (mp / e)) # same U: r ∝ sqrt(m/q); r_α / r_p = sqrt(6,645/(2 · 1,673)) = 1,41
+# Exercise bank additions (teacher 2026-11-04): L1-06 and L2-07 are multiple choice (no number)
+a["fy7-2-L1-07"] = me * 3.0e6 / (e * 0.040) * 1000      # electron on r = 4,0 cm: B = mv/(qr) = 4,264e-4 T = 0,43 mT
+a["fy7-2-L1-08"] = 2 * math.pi * me / (e * 0.020) * 1e9   # T = 2πm/(qB) = 1,786e-9 s = 1,8 ns (v cancels)
+# L2-05 (example data, v = 2,0e5 m/s, B = 0,050 T): track 1 r = 4,1 cm up (positive), 2 down (negative) 4,2 cm, 3 up 8,4 cm
+a["fy7-2-L2-05"] = 0.041 * 0.050 / 2.0e5 / 1e-8         # m/q = rB/v = 1,025e-8 kg/C -> 1,0 (unit 10^-8 kg/C); proton m/e = 1,044e-8
+# L2-06 (example data, magnesium-like): hits d = 19,2 / 20,1 / 20,7 cm, counts 7890 / 1000 / 1110; m ∝ d, so m_B = 25,1 u and m_C = 25,9 u
+N26 = [7890, 1000, 1110]
+a["fy7-2-L2-06"] = N26[0] / sum(N26) * 100              # abundance of the lightest isotope 7890/10000 = 78,9 %
+# L3-04 (example data): r² = 2m/(qB²) · U; least-squares line through the origin
+sp = [(200, 4.9), (400, 6.8), (600, 8.5), (800, 9.8), (1000, 10.8)]   # (U in V, r in cm)
+k34 = sum(U * r * r for U, r in sp) / sum(U * U for U, r in sp) * 1e-4   # slope 0,1182 cm²/V = 1,182e-5 m²/V
+a["fy7-2-L3-04"] = round(e * 0.200**2 * k34 / 2 / u, 3)  # m = qB²k/2 = 3,79e-26 kg = 22,8 u (sodium-23)
+# L3-05 (cyclotron): v = qBR/m, E_k = ½mv², crossings n = E_k/(qU), two per revolution, T = 2πm/(qB)
+v35 = e * 1.50 * 0.20 / mp                              # 2,87e7 m/s (9,6 % of c)
+n35 = round(0.5 * mp * v35**2 / (e * 60e3))             # 71,8 -> 72 crossings = 36 revolutions
+a["fy7-2-L3-05"] = n35 / 2 * 2 * math.pi * mp / (e * 1.50) / 1e-6   # t = 36 · 43,7 ns = 1,57 µs -> 1,6 µs
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))
