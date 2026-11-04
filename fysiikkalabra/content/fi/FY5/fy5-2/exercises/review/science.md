@@ -1,18 +1,16 @@
 VERDICT: FAIL
-CONTENT-HASH: ea5bc4173fe3ad0e
+CONTENT-HASH: 98623ccc1f2e8db3
 
 ## Blocking
-- content/fi/FY5/fy5-2/exercises/exercises.json:255 (fy5-2-L3-05) and solutions.md:188 — **B**: the model puts the person's whole weight on the chair, which is true only if the person's feet do not touch the floor. A seated person with feet on the floor cannot tip a chair forward by leaning (the feet take the load), so as written the task and c) ("kurkottelu kaataa tuolin") leave a wrong picture. The task never states the condition. — Fix: add to the task "Henkilön jalat eivät ylety lattiaan, joten koko hänen painonsa on tuolin varassa" (or make it a person kneeling or standing on the chair, and adjust the data and the 0° value to fit), and say the same in the Periaate. The numbers stay: x_h,max = 42,2 cm, θ ≈ 53°.
+- content/fi/FY5/fy5-2/exercises/solutions.md:181–190 (L3-04, new **Voimakuvio** block) — **A**: the model answer to a) draws the ladder as a horizontal box standing on the floor. It puts the wall force at mid-height of the box's left side and friction on the floor line, with no tilt, so no force is at the ladder's real point of application. In a moment task the points of application (N and friction at the foot, the wall force at the top end, the weights at the middle) are what give the arms s cos α and L sin α. As drawn, the figure contradicts the Periaate and docs/force-diagrams.md ("each force starts at its point of application"), and a student copying it cannot read the arms from it. — Fix: draw the ladder as a rectangle tilted 65° to the floor, with N up and $\overline{F}_\mu$ toward the wall at the foot, the wall force away from the wall at the top end, and the weight(s) at the middle. Merging G_t and G_h into one arrow is valid only because the person is at the midpoint, so say that. Use the same symbols in the figure and the text: currently the figure has F_μ and F_s while the Periaate and Kaava use f and N_s. If the block cannot do this, use fbd.py.
 
 ## Polish
-- exercises.json:82 (L1-08) — this is the same common-centre-of-gravity formula as L1-05 (two masses on a rod); the only new step is the plank's own mass at its middle. Acceptable, but close to a duplicate.
-- exercises.json:74 (L1-07) — the seesaw is the same light beam with one moment on each side as L1-02, with masses instead of forces.
-- Plan (docs/exercise-bank/FY5.md) lists "kaatuvan kappaleen raja-aineisto" at level 2; L2-07 (metre-stick mass) is done instead, and the tipping data moved to L3-05. Update the plan or note it.
+- exercises.json:82, :74 (L1-08, L1-07) — close to L1-05 and L1-02 (same formula); acceptable.
 
 ## Checked
-- All 8 new answers recomputed independently: 0,98 m; 1,6 m; least-squares slope −202,4 N/m → 61,9 kg (intercept 657 N vs theory 656 N); 209,9 N; 108,5/111,3/109,6/111,4 → 110,2 g; ladder s = 4,575 m; x_h = 42,22 cm, θ = 52,97°; all match answers.py and solutions.
-- L1-06: exactly one correct option (equal and opposite forces on different lines turn the free rod; both moments clockwise); distractor feedbacks correct.
-- L2-05 tolerance 0,05 covers the 59–65 kg the solution accepts for an eye fit; L2-07 0,03 and L3-05 0,04 fit their data.
-- L2-06: the student's 141,3 N is reproduced; the forgotten bench weight (arm 1,00 m) is the real error; the check about the right leg closes.
-- L3-04: friction toward the wall, smooth wall horizontal, f = μN at the limit; c) correctly argues N constant while the required friction grows; second-point check closes. Friction is FY4, a valid level-3 combination.
-- Scope: ΣF = 0, ΣM = 0, centre of gravity, tipping: inside "tasapaino kiertymisen suhteen". Levels fit; plan +3/+3/+2 met.
+- Round 1 Blocking fixed: L3-05 now states "Henkilön jalat eivät ylety lattiaan, joten koko hänen painonsa on tuolin varassa"; the Periaate repeats it. x_h,max = 42,22 cm, θ = 52,97° → 53° unchanged.
+- The diagram's numbers are right: with the person at the midpoint the wall force and friction are 853,5 N · 2,5 m · cos 65° / (5 m · sin 65°) = 199 N < 341 N; the force directions are right (friction toward the wall, wall force away from it).
+- L1-06 rewritten options: exactly one correct (moments of a couple in the same sense → the rod turns while its centre of gravity stays put); every distractor wrong and its feedback right.
+- L2-07 rewording: the spread of 108,5–111,4 g is a few per cent with no trend in m: right; back-check 6010/210,2 = 28,6 cm right.
+- answers.py and every answer unchanged; the round-1 independent recomputation of all 8 new answers stands.
+- Scope, levels and plan +3/+3/+2 still fit.

@@ -179,15 +179,6 @@
 **Annettu:** tikkaat $L = 5{,}00\,\text{m}$, $m_\text{t} = 12{,}0\,\text{kg}$, painopiste keskellä; kulma lattiaan $\alpha = 65{,}0^\circ$; henkilö $m_\text{h} = 75{,}0\,\text{kg}$; lepokitkakerroin $\mu = 0{,}40$; seinä sileä; $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** b) matka $s$ tikkaiden alapäästä tikkaita pitkin, kun tikkaat ovat liukumisen rajalla; a) voimakuvio ja c) perustelu
 **Periaate:** Tikkaat ovat levossa, joten sekä voimien summa että momenttien summa ovat nolla. Voimakuviossa tikkaisiin vaikuttavat tikkaiden paino $G_\text{t}$ keskeltä alas, henkilön paino $G_\text{h}$ kohdasta $s$ alas, lattian tukivoima $N$ alapäästä ylös, lattian lepokitka $f$ alapäästä vaakasuoraan kohti seinää ja seinän tukivoima $N_\text{s}$ yläpäästä vaakasuoraan seinästä poispäin. Seinä on sileä, joten seinän voima on kohtisuora seinää vastaan eikä seinällä ole kitkaa. Momenttipisteeksi valitaan tikkaiden alapää, jolloin $N$ ja $f$ jäävät pois. Liukumisen rajalla kitka on suurimmillaan, $f = \mu N$. Tikkaiden suuntaisesta matkasta $s$ saadaan painon varreksi vaakasuunnassa $s\cos\alpha$ ja seinän voiman varreksi pystysuunnassa $L\sin\alpha$.
-**Voimakuvio:** Tikkaat suorakulmiona, seinä oikealla. Pystysuorat painot $\overline{G}_\text{t}$ ja $\overline{G}_\text{h}$ piirretään yhtenä nuolena $\overline{G}$, jonka pituus on niiden summa $854\,\text{N}$. Lisäksi vaikuttavat lattian tukivoima $\overline{N}$ ylös, lepokitka $\overline{F}_\mu$ lattiasta seinää kohti ja seinän voima $\overline{F}_\text{s}$ seinästä poispäin. Kun henkilö on keskikohdalla, momenttiehto alapään suhteen antaa kitkalle ja seinän voimalle arvon $199\,\text{N}$, joka on pienempi kuin rajalla ($341\,\text{N}$).
-```voimakuvio
-pinta 0
-G 854
-N 854
-F_mu 199 oikea
-F_s 199 vasen
-a 0
-```
 **Kaava:** Voimien summa: $N = G_\text{t} + G_\text{h}$ ja $N_\text{s} = f = \mu N$. Momenttiehto alapään suhteen: $M_\text{s} = M_\text{t} + M_\text{h}$, missä $M_\text{s} = N_\text{s} L \sin\alpha$, $M_\text{t} = G_\text{t}\,\tfrac{L}{2}\cos\alpha$ ja $M_\text{h} = G_\text{h}\, s \cos\alpha$. Siis $s = \dfrac{M_\text{s} - M_\text{t}}{G_\text{h}\cos\alpha}$
 **Muunnokset:** Ei tarvita: massat ovat kilogrammoina ja pituudet metreinä. Painot ovat $G_\text{t} = 12{,}0\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 117{,}7\,\text{N}$ ja $G_\text{h} = 75{,}0\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 735{,}8\,\text{N}$ sekä $\sin 65{,}0^\circ = 0{,}9063$ ja $\cos 65{,}0^\circ = 0{,}4226$.
 **Sijoitus:** Pystysuunnassa $N = 117{,}7\,\text{N} + 735{,}8\,\text{N} = 853{,}5\,\text{N}$. Rajalla $N_\text{s} = f = \mu N = 0{,}40 \cdot 853{,}5\,\text{N} = 341{,}4\,\text{N}$. Momentit ovat $N_\text{s} L \sin\alpha = 341{,}4\,\text{N} \cdot 5{,}00\,\text{m} \cdot 0{,}9063 = 1547\,\text{Nm}$ ja $G_\text{t}\,\tfrac{L}{2}\cos\alpha = 117{,}7\,\text{N} \cdot 2{,}50\,\text{m} \cdot 0{,}4226 = 124{,}4\,\text{Nm}$. Nimittäjä on $G_\text{h}\cos\alpha = 735{,}8\,\text{N} \cdot 0{,}4226 = 310{,}9\,\text{N}$. Siis $s = \dfrac{1547\,\text{Nm} - 124{,}4\,\text{Nm}}{310{,}9\,\text{N}} = 4{,}575\,\text{m}$

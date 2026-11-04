@@ -17,3 +17,4 @@ CONTENT-HASH: b07176193a006b48
 - L3-05: N·2π·r_ka is exactly the Archimedean-spiral length (π(r₂²−r₁²)/Δr = 5378 m); the CD data are realistic.
 - L1-06 MC: exactly one correct option; every distractor's feedback is right and matches the lesson's misconception section.
 - Scope: v = 2πr/T, f = 1/T only, no angular quantities; units, tolerances, symbolic-first steps fine; no duplicates, 8/7/5.
+- Round 2 delta: the diff is empty and the hash is unchanged, so the verdict stands.
