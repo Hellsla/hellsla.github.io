@@ -79,7 +79,7 @@
     {
       "id": "fy8-7-L3-01",
       "level": 3,
-      "text": "Rubiinilaserin sauvassa on $1{,}0 \\cdot 10^{19}$ kromi-ionia. Lasersiirtymä päättyy perustilaan. Pumppauslampun vihreän valon aallonpituus on $550\\,\\text{nm}$. Jokainen absorboitunut pumppausfotoni nostaa yhden ionin ylemmälle lasertasolle. Arvioi, kuinka paljon pumppausvalon energiaa ionien on vähintään absorboitava, jotta populaatioinversio syntyy. Oleta, että ionit eivät ehdi purkautua pumppauksen aikana. Anna vastaus jouleina ($h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$).",
+      "text": "Rubiinilaserin sauvassa on $1{,}0 \\cdot 10^{19}$ kromi-ionia. Lasersiirtymä päättyy perustilaan. Pumppauslampun vihreän valon aallonpituus on $550\\,\\text{nm}$. Jokainen absorboitunut pumppausfotoni nostaa yhden ionin ylemmälle lasertasolle.\n\nArvioi, kuinka paljon pumppausvalon energiaa ionien on vähintään absorboitava, jotta populaatioinversio syntyy. Oleta, että ionit eivät ehdi purkautua pumppauksen aikana. Anna vastaus jouleina ($h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$).",
       "answer": 1.8,
       "unit": "J",
       "tolerance": 0.02

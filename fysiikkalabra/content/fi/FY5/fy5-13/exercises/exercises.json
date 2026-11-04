@@ -53,7 +53,7 @@
     {
       "id": "fy5-13-L2-02",
       "level": 2,
-      "text": "Äänen nopeutta mitataan resonanssiputkella. Pystysuoran putken alaosassa on vettä, ja putken yläpään yllä soi äänirauta, jonka taajuus on $440\\,\\text{Hz}$. Kun vedenpintaa lasketaan, ääni voimistuu ensimmäisen kerran, kun ilmapatsas veden pinnasta putken suulle on $19{,}3\\,\\text{cm}$ pitkä. Veden pinta toimii putken suljettuna päänä. Mikä on mittauksen perusteella äänen nopeus ilmassa?",
+      "text": "Äänen nopeutta mitataan resonanssiputkella. Pystysuoran putken alaosassa on vettä, ja putken yläpään yllä soi äänirauta, jonka taajuus on $440\\,\\text{Hz}$.\n\nKun vedenpintaa lasketaan, ääni voimistuu ensimmäisen kerran, kun ilmapatsas veden pinnasta putken suulle on $19{,}3\\,\\text{cm}$ pitkä. Veden pinta toimii putken suljettuna päänä.\n\nMikä on mittauksen perusteella äänen nopeus ilmassa?",
       "answer": 339.68,
       "unit": "m/s",
       "tolerance": 0.02

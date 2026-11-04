@@ -79,7 +79,7 @@
     {
       "id": "fy8-2-L3-01",
       "level": 3,
-      "text": "The visible spectral lines of hydrogen are formed when an atom moves from a higher level to the level $n = 2$, whose energy is $-3.40\\,\\text{eV}$. The higher the starting level, the shorter the wavelength of the line, but the lines never go beyond a certain limit. The energy of levels very high up is almost zero. What is the shortest possible wavelength of this series? Give the answer in nanometres.",
+      "text": "The visible spectral lines of hydrogen are formed when an atom moves from a higher level to the level $n = 2$, whose energy is $-3.40\\,\\text{eV}$. The higher the starting level, the shorter the wavelength of the line, but the lines never go beyond a certain limit. The energy of levels very high up is almost zero.\n\nWhat is the shortest possible wavelength of this series? Give the answer in nanometres.",
       "answer": 365,
       "unit": "nm",
       "tolerance": 0.02

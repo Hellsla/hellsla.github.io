@@ -79,7 +79,7 @@
     {
       "id": "fy4-10-L3-01",
       "level": 3,
-      "text": "Luodin nopeutta mitataan ballistisella heilurilla. $2{,}0\\,\\text{kg}$:n puupalikka riippuu levossa pitkän narun varassa. $10\\,\\text{g}$:n luoti ammutaan vaakasuoraan nopeudella $400\\,\\text{m/s}$ palikkaan, johon se jää. Luoti pysähtyy palikkaan niin nopeasti, ettei palikka ehdi liikkua sinä aikana. Sen jälkeen palikka ja luoti heilahtavat yhdessä ylös. Ilmanvastus jätetään huomiotta. Kuinka korkealle palikka nousee alimmasta kohdastaan? Vastaa senttimetreinä.",
+      "text": "Luodin nopeutta mitataan ballistisella heilurilla. $2{,}0\\,\\text{kg}$:n puupalikka riippuu levossa pitkän narun varassa. $10\\,\\text{g}$:n luoti ammutaan vaakasuoraan nopeudella $400\\,\\text{m/s}$ palikkaan, johon se jää.\n\nLuoti pysähtyy palikkaan niin nopeasti, ettei palikka ehdi liikkua sinä aikana. Sen jälkeen palikka ja luoti heilahtavat yhdessä ylös. Ilmanvastus jätetään huomiotta.\n\nKuinka korkealle palikka nousee alimmasta kohdastaan? Vastaa senttimetreinä.",
       "answer": 20.185005,
       "unit": "cm",
       "tolerance": 0.02
@@ -87,7 +87,7 @@
     {
       "id": "fy4-10-L3-02",
       "level": 3,
-      "text": "Ilotulitusraketti, jonka massa on $0{,}90\\,\\text{kg}$, nousee suoraan ylöspäin nopeudella $12\\,\\text{m/s}$. Silloin se räjähtää kahdeksi kappaleeksi. $0{,}30\\,\\text{kg}$:n kappale jatkaa suoraan ylöspäin nopeudella $40\\,\\text{m/s}$. Toinen kappale liikkuu pystysuoraan. Painon ja ilmanvastuksen impulssi jätetään huomiotta, koska räjähdys kestää vain hetken. Mikä on toisen kappaleen nopeus heti räjähdyksen jälkeen? Ilmoita nopeus etumerkkeineen, kun ylöspäin on positiivinen suunta.",
+      "text": "Ilotulitusraketti, jonka massa on $0{,}90\\,\\text{kg}$, nousee suoraan ylöspäin nopeudella $12\\,\\text{m/s}$. Silloin se räjähtää kahdeksi kappaleeksi. $0{,}30\\,\\text{kg}$:n kappale jatkaa suoraan ylöspäin nopeudella $40\\,\\text{m/s}$. Toinen kappale liikkuu pystysuoraan.\n\nPainon ja ilmanvastuksen impulssi jätetään huomiotta, koska räjähdys kestää vain hetken.\n\nMikä on toisen kappaleen nopeus heti räjähdyksen jälkeen? Ilmoita nopeus etumerkkeineen, kun ylöspäin on positiivinen suunta.",
       "answer": -2.0,
       "unit": "m/s",
       "tolerance": 0.02

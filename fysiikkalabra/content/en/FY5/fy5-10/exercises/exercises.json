@@ -80,7 +80,7 @@
     {
       "id": "fy5-10-L3-01",
       "level": 3,
-      "text": "Two photographs are taken of a rope at an interval of $0.15\\,\\text{s}$. In the first picture a crest is at $x = 0.60\\,\\text{m}$ and in the second at $x = 1.05\\,\\text{m}$, and between the pictures the crest has not had time to travel one wavelength. In both pictures the distance between successive crests is $1.20\\,\\text{m}$. At what frequency is the end of the rope shaken? Also justify why the displacement of the crest is not a displacement of the matter of the rope.",
+      "text": "Two photographs are taken of a rope at an interval of $0.15\\,\\text{s}$.\n\nIn the first picture a crest is at $x = 0.60\\,\\text{m}$ and in the second at $x = 1.05\\,\\text{m}$, and between the pictures the crest has not had time to travel one wavelength. In both pictures the distance between successive crests is $1.20\\,\\text{m}$.\n\nAt what frequency is the end of the rope shaken? Also justify why the displacement of the crest is not a displacement of the matter of the rope.",
       "answer": 2.5,
       "unit": "Hz",
       "tolerance": 0.02
@@ -88,7 +88,7 @@
     {
       "id": "fy5-10-L3-02",
       "level": 3,
-      "text": "One end of a long railway rail is struck with a hammer. A listener at the other end of the rail hears two bangs: first the sound that came along the rail and $0.50\\,\\text{s}$ later the sound that came through the air. Sound travels in steel at a speed of $5100\\,\\text{m/s}$ and in air at $340\\,\\text{m/s}$. How long is the rail? Justify why the same blow of the hammer produces two sounds that arrive at different times.",
+      "text": "One end of a long railway rail is struck with a hammer.\n\nA listener at the other end of the rail hears two bangs: first the sound that came along the rail and $0.50\\,\\text{s}$ later the sound that came through the air. Sound travels in steel at a speed of $5100\\,\\text{m/s}$ and in air at $340\\,\\text{m/s}$.\n\nHow long is the rail? Justify why the same blow of the hammer produces two sounds that arrive at different times.",
       "answer": 182.142857,
       "unit": "m",
       "tolerance": 0.02
@@ -96,7 +96,7 @@
     {
       "id": "fy5-10-L3-03",
       "level": 3,
-      "text": "A wave goes round a stadium stand: every spectator stands up $0.050\\,\\text{s}$ later than the one sitting next to them and then sits down again. The distance between adjacent seats is $0.55\\,\\text{m}$, and the length of the row going round the stand is $440\\,\\text{m}$. How long does it take for the wave to go once round the stand? Justify why the wave travels although no spectator changes places.",
+      "text": "A wave goes round a stadium stand: every spectator stands up $0.050\\,\\text{s}$ later than the one sitting next to them and then sits down again.\n\nThe distance between adjacent seats is $0.55\\,\\text{m}$, and the length of the row going round the stand is $440\\,\\text{m}$.\n\nHow long does it take for the wave to go once round the stand? Justify why the wave travels although no spectator changes places.",
       "answer": 40,
       "unit": "s",
       "tolerance": 0.02

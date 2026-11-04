@@ -79,7 +79,7 @@
     {
       "id": "fy7-16-L3-01",
       "level": 3,
-      "text": "Merikaapeli C-Lion1 on $1172\\,\\text{km}$ pitkä (Cinia, 2016). Oletetaan, että sen kuitujen vaimennuskerroin on $0{,}18\\,\\text{dB/km}$ ja että kuidun yhden osuuden vaimennus saa olla enintään $20\\,\\text{dB}$, ennen kuin optinen vahvistin palauttaa valon tehon. Osuudet ovat yhtä pitkiä, ja vahvistimet ovat osuuksien välissä; lähetin ja vastaanotin ovat kaapelin päissä. Kuinka monta vahvistinta kaapelissa on vähintään oltava?",
+      "text": "Merikaapeli C-Lion1 on $1172\\,\\text{km}$ pitkä (Cinia, 2016).\n\nOletetaan, että sen kuitujen vaimennuskerroin on $0{,}18\\,\\text{dB/km}$ ja että kuidun yhden osuuden vaimennus saa olla enintään $20\\,\\text{dB}$, ennen kuin optinen vahvistin palauttaa valon tehon. Osuudet ovat yhtä pitkiä, ja vahvistimet ovat osuuksien välissä; lähetin ja vastaanotin ovat kaapelin päissä.\n\nKuinka monta vahvistinta kaapelissa on vähintään oltava?",
       "answer": 10,
       "unit": "vahvistinta",
       "tolerance": 0.02
@@ -87,7 +87,7 @@
     {
       "id": "fy7-16-L3-02",
       "level": 3,
-      "text": "Induktiolieden kela taajuudella $25\\,\\text{kHz}$ synnyttää kattilan pohjaan sinimuotoisesti vaihtelevan magneettikentän, jonka magneettivuon tiheyden huippuarvo on $4{,}0\\,\\text{mT}$. Oletetaan, että kenttä on homogeeninen ja kohtisuorassa pohjaa vastaan, että pohjan pyörrevirrat voidaan kuvata yhtenä silmukkana, jonka säde on $8{,}0\\,\\text{cm}$ ja resistanssi $0{,}050\\,\\Omega$, ja että pyörrevirran oma magneettikenttä jätetään huomiotta. Kuinka suurella keskimääräisellä teholla pohja lämpenee? Vastaa kilowatteina.",
+      "text": "Induktiolieden kela taajuudella $25\\,\\text{kHz}$ synnyttää kattilan pohjaan sinimuotoisesti vaihtelevan magneettikentän, jonka magneettivuon tiheyden huippuarvo on $4{,}0\\,\\text{mT}$.\n\nOletetaan, että kenttä on homogeeninen ja kohtisuorassa pohjaa vastaan, että pohjan pyörrevirrat voidaan kuvata yhtenä silmukkana, jonka säde on $8{,}0\\,\\text{cm}$ ja resistanssi $0{,}050\\,\\Omega$, ja että pyörrevirran oma magneettikenttä jätetään huomiotta.\n\nKuinka suurella keskimääräisellä teholla pohja lämpenee? Vastaa kilowatteina.",
       "answer": 1.596,
       "unit": "kW",
       "tolerance": 0.02
@@ -95,7 +95,7 @@
     {
       "id": "fy7-16-L3-03",
       "level": 3,
-      "text": "Kuituyhteyden lähetin syöttää kuituun tehon $1{,}0\\,\\text{mW}$, ja vastaanotin tarvitsee vähintään tehon $10\\,\\mu\\text{W}$. Kuidun vaimennuskerroin on $0{,}20\\,\\text{dB/km}$, ja yhteydessä on neljä liitosta, joista kukin vaimentaa $0{,}50\\,\\text{dB}$. Kuidun lasin taitekerroin on $1{,}47$. Kuinka kauan valopulssilta kestää kulkea pisimmän mahdollisen yhteyden päästä päähän, kun pulssi kulkee kuidun akselin suuntaisesti? Valon nopeus tyhjiössä on $3{,}00 \\cdot 10^8\\,\\text{m/s}$. Vastaa millisekunteina.",
+      "text": "Kuituyhteyden lähetin syöttää kuituun tehon $1{,}0\\,\\text{mW}$, ja vastaanotin tarvitsee vähintään tehon $10\\,\\mu\\text{W}$. Kuidun vaimennuskerroin on $0{,}20\\,\\text{dB/km}$, ja yhteydessä on neljä liitosta, joista kukin vaimentaa $0{,}50\\,\\text{dB}$.\n\nKuidun lasin taitekerroin on $1{,}47$.\n\nKuinka kauan valopulssilta kestää kulkea pisimmän mahdollisen yhteyden päästä päähän, kun pulssi kulkee kuidun akselin suuntaisesti? Valon nopeus tyhjiössä on $3{,}00 \\cdot 10^8\\,\\text{m/s}$. Vastaa millisekunteina.",
       "answer": 0.441,
       "unit": "ms",
       "tolerance": 0.02

@@ -45,7 +45,7 @@
     {
       "id": "fy5-12-L2-01",
       "level": 2,
-      "text": "Two loudspeakers A and B in phase are $1.20\\,\\text{m}$ apart. A listener stands $1.60\\,\\text{m}$ from loudspeaker B directly in front of it, so that the line between the listener and loudspeaker B is perpendicular to the line between the loudspeakers. What is the greatest wavelength at which it is quiet at the listener's position? Give the answer in metres.",
+      "text": "Two loudspeakers A and B in phase are $1.20\\,\\text{m}$ apart.\n\nA listener stands $1.60\\,\\text{m}$ from loudspeaker B directly in front of it, so that the line between the listener and loudspeaker B is perpendicular to the line between the loudspeakers.\n\nWhat is the greatest wavelength at which it is quiet at the listener's position? Give the answer in metres.",
       "answer": 0.8,
       "unit": "m",
       "tolerance": 0.02
@@ -61,7 +61,7 @@
     {
       "id": "fy5-12-L2-03",
       "level": 2,
-      "text": "Two sources in a ripple tank vibrate in phase, and the wavelength is $2.0\\,\\text{cm}$. The path from source $S_1$ to point R is $14.0\\,\\text{cm}$ and from source $S_2$ $9.0\\,\\text{cm}$. Source $S_1$ vibrates more strongly: the amplitude of its wave at point R is $3.0\\,\\text{mm}$ and that of the wave from $S_2$ is $2.0\\,\\text{mm}$. What is the amplitude of the vibration of the water at point R? Give the answer in millimetres.",
+      "text": "Two sources in a ripple tank vibrate in phase, and the wavelength is $2.0\\,\\text{cm}$.\n\nThe path from source $S_1$ to point R is $14.0\\,\\text{cm}$ and from source $S_2$ $9.0\\,\\text{cm}$. Source $S_1$ vibrates more strongly: the amplitude of its wave at point R is $3.0\\,\\text{mm}$ and that of the wave from $S_2$ is $2.0\\,\\text{mm}$.\n\nWhat is the amplitude of the vibration of the water at point R? Give the answer in millimetres.",
       "answer": 1.0,
       "unit": "mm",
       "tolerance": 0.02
@@ -79,7 +79,7 @@
     {
       "id": "fy5-12-L3-01",
       "level": 3,
-      "text": "On a sports field two loudspeakers in phase are $3.0\\,\\text{m}$ apart, and they play a sound with a frequency of $340\\,\\text{Hz}$. The speed of sound is $340\\,\\text{m/s}$. A listener walks along a long straight path that runs in front of the loudspeakers parallel to the line between them, from far to the left to far to the right. How many quiet spots does the listener pass? Justify why there are only a finite number of quiet spots. Assume that the sound is not reflected from anywhere.",
+      "text": "On a sports field two loudspeakers in phase are $3.0\\,\\text{m}$ apart, and they play a sound with a frequency of $340\\,\\text{Hz}$. The speed of sound is $340\\,\\text{m/s}$.\n\nA listener walks along a long straight path that runs in front of the loudspeakers parallel to the line between them, from far to the left to far to the right.\n\nHow many quiet spots does the listener pass? Justify why there are only a finite number of quiet spots. Assume that the sound is not reflected from anywhere.",
       "answer": 6,
       "unit": "kpl",
       "tolerance": 0.02
@@ -87,7 +87,7 @@
     {
       "id": "fy5-12-L3-02",
       "level": 3,
-      "text": "The frequency of two sources in phase in a ripple tank can be adjusted, and the speed of the wave in the tank is $24\\,\\text{cm/s}$. A point T is marked in the tank. When the frequency is $10\\,\\text{Hz}$, the water at point T stays at rest. When the frequency is raised, the water at point T is next at rest at the frequency $14\\,\\text{Hz}$. How large is the path difference at point T? Give the answer in centimetres.",
+      "text": "The frequency of two sources in phase in a ripple tank can be adjusted, and the speed of the wave in the tank is $24\\,\\text{cm/s}$.\n\nA point T is marked in the tank. When the frequency is $10\\,\\text{Hz}$, the water at point T stays at rest. When the frequency is raised, the water at point T is next at rest at the frequency $14\\,\\text{Hz}$.\n\nHow large is the path difference at point T? Give the answer in centimetres.",
       "answer": 6.0,
       "unit": "cm",
       "tolerance": 0.02
@@ -95,7 +95,7 @@
     {
       "id": "fy5-12-L3-03",
       "level": 3,
-      "text": "A harbour breakwater has two narrow gaps, $16.0\\,\\text{m}$ apart. At sea the waves come straight towards the breakwater, so that the wave crests are parallel to it. The waves coming through the gaps spread into the harbour. A boat is anchored $30.0\\,\\text{m}$ from one gap, directly in front of it perpendicular to the breakwater, and the boat is on the nodal line nearest to the perpendicular bisector of the gaps, where the water is almost calm. Justify why the gaps act like two sources in phase, and calculate the wavelength of the waves. Give the answer in metres.",
+      "text": "A harbour breakwater has two narrow gaps, $16.0\\,\\text{m}$ apart.\n\nAt sea the waves come straight towards the breakwater, so that the wave crests are parallel to it. The waves coming through the gaps spread into the harbour.\n\nA boat is anchored $30.0\\,\\text{m}$ from one gap, directly in front of it perpendicular to the breakwater, and the boat is on the nodal line nearest to the perpendicular bisector of the gaps, where the water is almost calm.\n\nJustify why the gaps act like two sources in phase, and calculate the wavelength of the waves. Give the answer in metres.",
       "answer": 8.0,
       "unit": "m",
       "tolerance": 0.02

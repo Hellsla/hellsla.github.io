@@ -283,7 +283,7 @@
     {
       "id": "fy4-8-L3-01",
       "level": 3,
-      "text": "Pyöräilijä rullaa polkematta ja jarruttamatta mäen alas. Pyöräilijän ja pyörän yhteinen massa on $80\\,\\text{kg}$. Mäen päällä nopeus on $4{,}0\\,\\text{m/s}$ ja mäen alla $13{,}0\\,\\text{m/s}$. Mäen korkeus on $12{,}0\\,\\text{m}$, ja tietä on mäessä $150\\,\\text{m}$. Kuinka suuri on pyöräilijää jarruttava keskimääräinen vastusvoima? Ilmanvastus ja vierimisvastus lasketaan yhteen.",
+      "text": "Pyöräilijä rullaa polkematta ja jarruttamatta mäen alas. Pyöräilijän ja pyörän yhteinen massa on $80\\,\\text{kg}$.\n\nMäen päällä nopeus on $4{,}0\\,\\text{m/s}$ ja mäen alla $13{,}0\\,\\text{m/s}$. Mäen korkeus on $12{,}0\\,\\text{m}$, ja tietä on mäessä $150\\,\\text{m}$.\n\nKuinka suuri on pyöräilijää jarruttava keskimääräinen vastusvoima? Ilmanvastus ja vierimisvastus lasketaan yhteen.",
       "answer": 21.984,
       "unit": "N",
       "tolerance": 0.02

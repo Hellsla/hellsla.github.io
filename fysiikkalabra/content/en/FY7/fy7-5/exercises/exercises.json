@@ -70,7 +70,7 @@
     {
       "id": "fy7-5-L2-04",
       "level": 2,
-      "text": "A square coil of side $5.0\\,\\text{cm}$ with $20$ turns is pulled at a steady speed of $0.25\\,\\text{m/s}$ into a region of uniform magnetic field. The field of $0.30\\,\\text{T}$ is perpendicular to the plane of the coil, and the leading side of the coil is parallel to the edge of the field. How large is the induced voltage in the coil during the time in which the coil is entering the field? Give the answer in millivolts.",
+      "text": "A square coil of side $5.0\\,\\text{cm}$ with $20$ turns is pulled at a steady speed of $0.25\\,\\text{m/s}$ into a region of uniform magnetic field. The field of $0.30\\,\\text{T}$ is perpendicular to the plane of the coil, and the leading side of the coil is parallel to the edge of the field.\n\nHow large is the induced voltage in the coil during the time in which the coil is entering the field? Give the answer in millivolts.",
       "answer": 75,
       "unit": "mV",
       "tolerance": 0.02
@@ -88,7 +88,7 @@
     {
       "id": "fy7-5-L3-02",
       "level": 3,
-      "text": "The Earth's magnetic field is measured with a flip coil. The coil has $100$ turns and an area of $0.020\\,\\text{m}^2$. The coil is at first in a position in which its plane is perpendicular to the Earth's magnetic field. The coil is turned through half a turn in $0.10\\,\\text{s}$, and an average induced voltage of $2.0\\,\\text{mV}$ appears in the coil during this time. How large is the magnetic flux density of the Earth's magnetic field? Give the answer in microteslas.",
+      "text": "The Earth's magnetic field is measured with a flip coil. The coil has $100$ turns and an area of $0.020\\,\\text{m}^2$.\n\nThe coil is at first in a position in which its plane is perpendicular to the Earth's magnetic field. The coil is turned through half a turn in $0.10\\,\\text{s}$, and an average induced voltage of $2.0\\,\\text{mV}$ appears in the coil during this time.\n\nHow large is the magnetic flux density of the Earth's magnetic field? Give the answer in microteslas.",
       "answer": 50,
       "unit": "µT",
       "tolerance": 0.02
@@ -96,7 +96,7 @@
     {
       "id": "fy7-5-L3-03",
       "level": 3,
-      "text": "A bar magnet is dropped through a vertical coil of $300$ turns, and the voltage of the coil is measured with a data logger. When the magnet enters the coil, the measurement shows a voltage pulse that is roughly triangular: the voltage rises from zero to a peak value of $0.90\\,\\text{V}$ and falls back to zero, and the pulse lasts $40\\,\\text{ms}$ in all. Before the drop the magnet is far from the coil. How large is the magnetic flux through one turn on average when the pulse has ended and the magnet is in the middle of the coil? Give the answer in milliwebers.",
+      "text": "A bar magnet is dropped through a vertical coil of $300$ turns, and the voltage of the coil is measured with a data logger.\n\nWhen the magnet enters the coil, the measurement shows a voltage pulse that is roughly triangular: the voltage rises from zero to a peak value of $0.90\\,\\text{V}$ and falls back to zero, and the pulse lasts $40\\,\\text{ms}$ in all. Before the drop the magnet is far from the coil.\n\nHow large is the magnetic flux through one turn on average when the pulse has ended and the magnet is in the middle of the coil? Give the answer in milliwebers.",
       "answer": 0.06,
       "unit": "mWb",
       "tolerance": 0.02

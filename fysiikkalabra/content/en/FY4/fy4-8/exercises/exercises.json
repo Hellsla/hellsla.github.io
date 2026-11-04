@@ -283,7 +283,7 @@
     {
       "id": "fy4-8-L3-01",
       "level": 3,
-      "text": "A cyclist coasts down a hill without pedalling or braking. The combined mass of the cyclist and the bicycle is $80\\,\\text{kg}$. The speed is $4.0\\,\\text{m/s}$ at the top of the hill and $13.0\\,\\text{m/s}$ at the bottom. The height of the hill is $12.0\\,\\text{m}$, and the road down the hill is $150\\,\\text{m}$ long. What is the average resistive force that slows the cyclist, when air resistance and rolling resistance are added together?",
+      "text": "A cyclist coasts down a hill without pedalling or braking. The combined mass of the cyclist and the bicycle is $80\\,\\text{kg}$.\n\nThe speed is $4.0\\,\\text{m/s}$ at the top of the hill and $13.0\\,\\text{m/s}$ at the bottom. The height of the hill is $12.0\\,\\text{m}$, and the road down the hill is $150\\,\\text{m}$ long.\n\nWhat is the average resistive force that slows the cyclist, when air resistance and rolling resistance are added together?",
       "answer": 21.984,
       "unit": "N",
       "tolerance": 0.02

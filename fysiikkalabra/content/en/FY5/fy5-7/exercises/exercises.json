@@ -89,7 +89,7 @@
     {
       "id": "fy5-7-L3-02",
       "level": 3,
-      "text": "A button is fixed to a disc rotating in a vertical plane at $15\\,\\text{cm}$ from the axis, and the disc rotates uniformly at $45$ revolutions per minute. The disc is lit from the side by horizontal, parallel light coming from far away, so the shadow of the button moves up and down on the wall beside it. How far from the middle of its motion is the shadow $0.20\\,\\text{s}$ after it passed the middle going up?",
+      "text": "A button is fixed to a disc rotating in a vertical plane at $15\\,\\text{cm}$ from the axis, and the disc rotates uniformly at $45$ revolutions per minute.\n\nThe disc is lit from the side by horizontal, parallel light coming from far away, so the shadow of the button moves up and down on the wall beside it.\n\nHow far from the middle of its motion is the shadow $0.20\\,\\text{s}$ after it passed the middle going up?",
       "answer": 12,
       "unit": "cm",
       "tolerance": 0.02

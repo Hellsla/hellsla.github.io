@@ -87,7 +87,7 @@
     {
       "id": "fy8-11-L3-02",
       "level": 3,
-      "text": "Auringon säteilyteho on $3{,}83 \\cdot 10^{26}\\,\\text{W}$. Energia syntyy Auringon ytimessä fuusiossa. Kokonaisreaktiossa neljästä vetyytimestä syntyy yksi helium-4-ydin. Vapautuva energia saadaan neljän vetyatomin ja yhden heliumatomin massojen erotuksesta. Vetyatomin massa on $1{,}0078250\\,\\text{u}$ ja helium-4-atomin massa $4{,}0026033\\,\\text{u}$. Kuinka monta heliumydintä Auringossa syntyy sekunnissa? Oleta, että kaikki vapautuva energia päätyy säteilytehoksi. Anna vastaus yksikössä $10^{37}\\,\\tfrac{1}{\\text{s}}$.",
+      "text": "Auringon säteilyteho on $3{,}83 \\cdot 10^{26}\\,\\text{W}$. Energia syntyy Auringon ytimessä fuusiossa. Kokonaisreaktiossa neljästä vetyytimestä syntyy yksi helium-4-ydin.\n\nVapautuva energia saadaan neljän vetyatomin ja yhden heliumatomin massojen erotuksesta. Vetyatomin massa on $1{,}0078250\\,\\text{u}$ ja helium-4-atomin massa $4{,}0026033\\,\\text{u}$.\n\nKuinka monta heliumydintä Auringossa syntyy sekunnissa? Oleta, että kaikki vapautuva energia päätyy säteilytehoksi. Anna vastaus yksikössä $10^{37}\\,\\tfrac{1}{\\text{s}}$.",
       "answer": 8.94,
       "unit": "10³⁷ 1/s",
       "tolerance": 0.02

@@ -80,7 +80,7 @@
     {
       "id": "fy5-10-L3-01",
       "level": 3,
-      "text": "Narusta otetaan kaksi valokuvaa $0{,}15\\,\\text{s}$:n välein. Ensimmäisessä kuvassa eräs harja on kohdassa $x = 0{,}60\\,\\text{m}$ ja toisessa kohdassa $x = 1{,}05\\,\\text{m}$, ja harja ei ole kuvien välillä ehtinyt kulkea yhtä aallonpituutta. Kummassakin kuvassa peräkkäisten harjojen väli on $1{,}20\\,\\text{m}$. Millä taajuudella narun päätä heilutetaan? Perustele myös, miksi harjan siirtymä ei ole narun aineen siirtymä.",
+      "text": "Narusta otetaan kaksi valokuvaa $0{,}15\\,\\text{s}$:n välein.\n\nEnsimmäisessä kuvassa eräs harja on kohdassa $x = 0{,}60\\,\\text{m}$ ja toisessa kohdassa $x = 1{,}05\\,\\text{m}$, ja harja ei ole kuvien välillä ehtinyt kulkea yhtä aallonpituutta. Kummassakin kuvassa peräkkäisten harjojen väli on $1{,}20\\,\\text{m}$.\n\nMillä taajuudella narun päätä heilutetaan? Perustele myös, miksi harjan siirtymä ei ole narun aineen siirtymä.",
       "answer": 2.5,
       "unit": "Hz",
       "tolerance": 0.02
@@ -88,7 +88,7 @@
     {
       "id": "fy5-10-L3-02",
       "level": 3,
-      "text": "Pitkän rautatiekiskon toiseen päähän lyödään vasaralla. Kiskon toisessa päässä oleva kuulija kuulee kaksi pamausta: ensin kiskoa pitkin tulleen äänen ja $0{,}50\\,\\text{s}$ myöhemmin ilman kautta tulleen äänen. Ääni etenee teräksessä nopeudella $5100\\,\\text{m/s}$ ja ilmassa $340\\,\\text{m/s}$. Kuinka pitkä on kisko? Perustele, miksi sama vasaran isku synnyttää kaksi eri aikaan saapuvaa ääntä.",
+      "text": "Pitkän rautatiekiskon toiseen päähän lyödään vasaralla.\n\nKiskon toisessa päässä oleva kuulija kuulee kaksi pamausta: ensin kiskoa pitkin tulleen äänen ja $0{,}50\\,\\text{s}$ myöhemmin ilman kautta tulleen äänen. Ääni etenee teräksessä nopeudella $5100\\,\\text{m/s}$ ja ilmassa $340\\,\\text{m/s}$.\n\nKuinka pitkä on kisko? Perustele, miksi sama vasaran isku synnyttää kaksi eri aikaan saapuvaa ääntä.",
       "answer": 182.142857,
       "unit": "m",
       "tolerance": 0.02
@@ -96,7 +96,7 @@
     {
       "id": "fy5-10-L3-03",
       "level": 3,
-      "text": "Stadionin katsomossa kiertää aalto: jokainen katsoja nousee seisomaan $0{,}050\\,\\text{s}$ myöhemmin kuin hänen vieressään istuva ja istuutuu sitten takaisin. Vierekkäisten istuinten väli on $0{,}55\\,\\text{m}$, ja katsomon kiertävän rivin pituus on $440\\,\\text{m}$. Kuinka kauan kestää, että aalto kiertää katsomon kerran ympäri? Perustele, miksi aalto etenee, vaikka yksikään katsoja ei vaihda paikkaa.",
+      "text": "Stadionin katsomossa kiertää aalto: jokainen katsoja nousee seisomaan $0{,}050\\,\\text{s}$ myöhemmin kuin hänen vieressään istuva ja istuutuu sitten takaisin.\n\nVierekkäisten istuinten väli on $0{,}55\\,\\text{m}$, ja katsomon kiertävän rivin pituus on $440\\,\\text{m}$.\n\nKuinka kauan kestää, että aalto kiertää katsomon kerran ympäri? Perustele, miksi aalto etenee, vaikka yksikään katsoja ei vaihda paikkaa.",
       "answer": 40,
       "unit": "s",
       "tolerance": 0.02
