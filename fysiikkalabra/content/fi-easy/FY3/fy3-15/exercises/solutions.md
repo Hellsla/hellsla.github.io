@@ -142,7 +142,7 @@
 **Muunnokset:** Hyötysuhteet ovat dimensiottomia lukuja, joten muunnoksia ei tarvita. Lopuksi tulos kerrotaan sadalla, jolloin saat prosentit.
 **Sijoitus:** $\eta = 0{,}920 \cdot 0{,}410 \cdot 0{,}970 = 0{,}3659 = 36{,}6\,\%$
 **Vastaus:** $36{,}6\,\%$, kolme merkitsevää numeroa kuten annetuissa hyötysuhteissa.
-**Järkevyys:** Oppilaan virhe: hyötysuhteiden summa $230\,\%$ olisi yli $100\,\%$. Se on mahdotonta, koska laitos ei voi tuottaa enemmän sähköä kuin polttoaineessa on energiaa. Jokainen vaihe pienentää jäljellä olevaa tehoa. Siksi hyötysuhteet kerrotaan eikä lasketa yhteen. Tulo $0{,}366$ on pienempi kuin heikoin vaihe $0{,}410$, kuten pitääkin, kun kaikki tekijät ovat alle 1. Arvio: $0{,}9 \cdot 0{,}4 \cdot 1{,}0 = 0{,}36$. Hukkalämpöä on $100\,\% - 36{,}6\,\% = 63{,}4\,\%$ polttoaineteholle.
+**Järkevyys:** Oppilaan virhe: hyötysuhteiden summa $230\,\%$ olisi yli $100\,\%$. Se on mahdotonta, koska laitos ei voi tuottaa enemmän sähköä kuin polttoaineessa on energiaa. Jokainen vaihe pienentää jäljellä olevaa tehoa. Siksi hyötysuhteet kerrotaan eikä lasketa yhteen. Tulo $0{,}366$ on pienempi kuin heikoin vaihe $0{,}410$, kuten pitääkin, kun kaikki tekijät ovat alle 1. Arvio: $0{,}9 \cdot 0{,}4 \cdot 1{,}0 = 0{,}36$. Hukkalämpöä on $100\,\% - 36{,}6\,\% = 63{,}4\,\%$ polttoaineteosta.
 
 ## fy3-15-L3-01
 **Annettu:** $P_0 = 600\,\text{MW}$. Pelkkä sähkö: $P_\text{s,0} = 240\,\text{MW}$. Täysi yhteistuotanto: $P_\text{s,täysi} = 180\,\text{MW}$ ja $P_\text{k,täysi} = 348\,\text{MW}$. Nyt kaukolämpöteho on $P_\text{k} = 200\,\text{MW}$.
