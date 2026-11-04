@@ -39,6 +39,77 @@
       "answer": 2.5,
       "unit": "kΩ",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-3-L1-06",
+      "level": 1,
+      "text": "Komponentin ominaiskäyrä on origon kautta kulkeva suora. Ominaiskäyrä on kuvaaja, joka näyttää komponentin virran ja jännitteen yhteyden. Virta $I$ on vaaka-akselilla ja jännite $U$ pystyakselilla. Mitä tästä voi päätellä?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Komponentti noudattaa Ohmin lakia, koska jännite on suoraan verrannollinen virtaan.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Komponentin resistanssi kasvaa jännitteen mukana, koska suuri jännite vastustaa virtaa.",
+          "feedback": "Jos resistanssi kasvaisi jännitteen mukana, ominaiskäyrä olisi kaareva. Suoralla suhde $U : I$ on joka pisteessä sama."
+        },
+        {
+          "text": "Komponentin resistanssi on nolla, koska nollajännitteellä myös virta on nolla.",
+          "feedback": "Origon kautta kulkeminen kertoo vain, että nollajännitteellä virtakin on nolla. Resistanssi on suoran kulmakerroin $U : I$. Se on suurempi kuin nolla."
+        },
+        {
+          "text": "Komponentti noudattaa Ohmin lakia, koska jännite on suoraan verrannollinen virtaan.",
+          "feedback": "Oikein. Kun käyrä on origon kautta kulkeva suora, jännitteen kaksinkertaistuessa myös virta kaksinkertaistuu. Silloin suhde $R = U : I$ on vakio. Suoran kulmakerroin on resistanssi.",
+          "correct": true
+        },
+        {
+          "text": "Komponentti ei noudata Ohmin lakia, koska virta ja jännite kasvavat yhtä aikaa.",
+          "feedback": "Se, että virta ja jännite kasvavat yhtä aikaa, ei vielä kerro mitään. Ohmin lain mukaan niiden suhde pysyy vakiona. Juuri se näkyy suorana."
+        }
+      ]
+    },
+    {
+      "id": "fy6-3-L1-07",
+      "level": 1,
+      "text": "Kaksi kuparilankaa on yhtä paksuja, mutta toinen on kaksi kertaa pidempi kuin toinen. Mikä seuraavista pitää paikkansa?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Resistiivisyys on sama, mutta pidemmän langan resistanssi on suurempi pituuden takia.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Pidemmän langan resistiivisyys on suurempi, koska resistiivisyys kasvaa pituuden mukana.",
+          "feedback": "Resistiivisyys ei riipu langan pituudesta eikä paksuudesta. Se riippuu vain aineesta ja lämpötilasta. Pituudesta riippuu resistanssi, ei resistiivisyys."
+        },
+        {
+          "text": "Resistiivisyys on sama, mutta pidemmän langan resistanssi on suurempi pituuden takia.",
+          "feedback": "Oikein. Resistiivisyys $\\rho$ on aineen ominaisuus, ja se on sama molemmille langoille. Resistanssi $R = \\rho l : A$ on verrannollinen pituuteen. Siksi pidemmän langan resistanssi on kaksinkertainen.",
+          "correct": true
+        },
+        {
+          "text": "Langoilla on sama resistanssi, koska ne ovat samaa ainetta ja yhtä paksuja.",
+          "feedback": "Aine ja paksuus määräävät vain resistiivisyyden ja poikkipinta-alan. Resistanssi riippuu myös pituudesta. Kaksi kertaa pidempi lanka on kuin kaksi lankaa peräkkäin."
+        },
+        {
+          "text": "Pidemmän langan resistanssi on pienempi, koska virralla on pidemmässä langassa enemmän tilaa.",
+          "feedback": "Pituuden kasvattaminen ei lisää virran kulkutilaa. Virran kulkutilaa kuvaa poikkipinta-ala. Sen kasvu pienentäisi resistanssia, mutta pituuden kasvu suurentaa sitä."
+        }
+      ]
+    },
+    {
+      "id": "fy6-3-L1-08",
+      "level": 1,
+      "text": "Kuparilangasta tehdyn vastuksen jännite on $4{,}5\\,\\text{V}$. Sen läpi kulkee $0{,}60\\,\\text{A}$:n virta. Vastus korvataan toisella langalla. Uusi lanka on samaa kuparia ja yhtä paksu, mutta kaksi kertaa pidempi. Jännite pysyy samana $4{,}5\\,\\text{V}$:na, eikä lämpötila muutu. Kuinka suuri virta pidemmän langan läpi kulkee?",
+      "kind": [
+        "reasoning"
+      ],
+      "answer": 0.3,
+      "unit": "A",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -74,6 +145,141 @@
       "answer": 8.0,
       "unit": "Ω",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-3-L2-05",
+      "level": 2,
+      "text": "Opiskelija mittasi vastuksen jännitteen ja virran (esimerkkiaineisto). Jännite säädettiin arvoihin $1{,}0\\,\\text{V}$–$8{,}0\\,\\text{V}$. Virta mitattiin yleismittarilla (mittarilla, joka mittaa mm. virtaa). Yleismittarin virheraja eli suurin mittausvirhe on noin $\\pm 0{,}5\\,\\text{mA}$.\n\na) Piirrä mittauspisteisiin sovitussuora, joka kulkee origon kautta. Sovitussuora on suora, joka kulkee pisteiden joukon keskeltä. Kuvaajassa virta $I$ on vaaka-akselilla ja jännite $U$ pystyakselilla. Lue vastuksen resistanssi $R$ suoran kulmakertoimesta.\n\nb) Arvioi resistanssin epävarmuus $\\Delta R$ pisteiden hajonnan perusteella.\n\nVastauskenttään kirjoitetaan a-kohdan resistanssi $R$ ohmeina.",
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "answer": 150,
+      "unit": "Ω",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Vastuksen jännite ja virta (esimerkkiaineisto)",
+        "columns": [
+          "$U\\,(\\text{V})$",
+          "$I\\,(\\text{mA})$"
+        ],
+        "rows": [
+          [
+            "1.0",
+            "6.6"
+          ],
+          [
+            "2.0",
+            "13.5"
+          ],
+          [
+            "3.0",
+            "19.8"
+          ],
+          [
+            "4.0",
+            "26.9"
+          ],
+          [
+            "5.0",
+            "33.1"
+          ],
+          [
+            "6.0",
+            "40.2"
+          ],
+          [
+            "7.0",
+            "46.3"
+          ],
+          [
+            "8.0",
+            "53.6"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy6-3-L2-06",
+      "level": 2,
+      "text": "Polkupyörän etulampun hehkulampun jännite ja virta mitattiin viidellä eri jännitteellä (esimerkkiaineisto).\n\na) Laske lampun resistanssi $R = U : I$ jokaisella jännitteellä.\n\nb) Päättele laskemiesi arvojen perusteella, noudattaako lamppu Ohmin lakia. Selitä, miksi resistanssi muuttuu.\n\nVastauskenttään kirjoitetaan, kuinka monta kertaa suurempi lampun resistanssi on jännitteellä $5{,}0\\,\\text{V}$ kuin jännitteellä $1{,}0\\,\\text{V}$.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 2.0,
+      "unit": "kertaa",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Hehkulampun jännite ja virta (esimerkkiaineisto)",
+        "columns": [
+          "$U\\,(\\text{V})$",
+          "$I\\,(\\text{A})$"
+        ],
+        "rows": [
+          [
+            "1.0",
+            "0.098"
+          ],
+          [
+            "2.0",
+            "0.146"
+          ],
+          [
+            "3.0",
+            "0.187"
+          ],
+          [
+            "4.0",
+            "0.221"
+          ],
+          [
+            "5.0",
+            "0.248"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy6-3-L2-07",
+      "level": 2,
+      "text": "Opiskelija mittasi vastuksen jännitteen ja virran (esimerkkiaineisto). Hän päätteli näin: ”Kun jännite on $0{,}0\\,\\text{V}$, virta on $0{,}00\\,\\text{A}$. Silloin resistanssi $R = U : I$ on $0\\,\\Omega$. Jännitteellä $1{,}0\\,\\text{V}$ resistanssi on jo $5{,}0\\,\\Omega$. Siksi resistanssi kasvaa jännitteen mukana.”\n\na) Selitä, mikä opiskelijan päättelyssä on virheellistä.\n\nb) Laske vastuksen resistanssi keskiarvona $R_{\\text{ka}}$. Käytä niitä jännitteitä, joilla jännite ei ole nolla.\n\nVastauskenttään kirjoitetaan b-kohdan keskiarvo $R_{\\text{ka}}$ ohmeina.",
+      "kind": [
+        "error",
+        "data"
+      ],
+      "answer": 4.9,
+      "unit": "Ω",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Vastuksen jännite ja virta (esimerkkiaineisto)",
+        "columns": [
+          "$U\\,(\\text{V})$",
+          "$I\\,(\\text{A})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "0.00"
+          ],
+          [
+            "1.0",
+            "0.20"
+          ],
+          [
+            "2.0",
+            "0.41"
+          ],
+          [
+            "3.0",
+            "0.61"
+          ],
+          [
+            "4.0",
+            "0.81"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -100,6 +306,98 @@
       "answer": 3.0,
       "unit": "A",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-3-L3-04",
+      "level": 3,
+      "text": "Kolmen komponentin jännite ja virta mitattiin samoilla jännitteillä (esimerkkiaineisto). Komponentit ovat vastus, hehkulamppu ja teholedi (LED-diodi). Ne on merkitty sekaisin kirjaimilla A, B ja C.\n\na) Laske kunkin komponentin resistanssi $R = U : I$ niillä jännitteillä, joilla virta ei ole nolla. Tunnista komponentit. Perustele tunnistus sillä, miten resistanssi muuttuu jännitteen kasvaessa.\n\nb) Selitä, miksi vastuksen resistanssi pysyy vakiona mutta hehkulampun ei.\n\nc) Laske diodin resistanssi työpisteessä $U = 1{,}5\\,\\text{V}$. Vertaa sitä hehkulampun resistanssiin samassa pisteessä.\n\nVastauskenttään kirjoitetaan c-kohdan diodin resistanssi ohmeina.",
+      "kind": [
+        "data",
+        "reasoning",
+        "model"
+      ],
+      "answer": 600,
+      "unit": "Ω",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Komponenttien virrat jännitteen funktiona (esimerkkiaineisto)",
+        "columns": [
+          "$U\\,(\\text{V})$",
+          "$I_\\text{A}\\,(\\text{mA})$",
+          "$I_\\text{B}\\,(\\text{mA})$",
+          "$I_\\text{C}\\,(\\text{mA})$"
+        ],
+        "rows": [
+          [
+            "0.5",
+            "6.6",
+            "31",
+            "0.0"
+          ],
+          [
+            "1.0",
+            "13.5",
+            "46",
+            "0.1"
+          ],
+          [
+            "1.5",
+            "20.0",
+            "57",
+            "2.5"
+          ],
+          [
+            "2.0",
+            "26.6",
+            "66",
+            "21"
+          ],
+          [
+            "3.0",
+            "40.2",
+            "81",
+            "98"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy6-3-L3-05",
+      "level": 3,
+      "text": "Oppilas haluaa tutkia kokeella, riippuuko metallilangan resistanssi lämpötilasta. Hän asettaa kelalle käämityn lakatun rautalangan vesihauteeseen. Vesihauteen lämpötilaa voi säätää. Jokaisessa lämpötilassa langan jännite pidetään arvossa $1{,}00\\,\\text{V}$. Virta luetaan virtamittarilta (esimerkkiaineisto).\n\na) Nimeä kokeen riippumaton muuttuja (muuttuja, jota muutetaan), riippuva muuttuja (muuttuja, jota mitataan) ja vakioitavat muuttujat (muuttujat, jotka pidetään samoina). Kuvaile mittausjärjestely: miten virtamittari ja jännitemittari kytketään.\n\nb) Laske langan resistanssi $R = U : I$ jokaisessa lämpötilassa. Kerro, kuinka monta prosenttia resistanssi on kasvanut lämpötilasta $20\\,{}^\\circ\\text{C}$ lämpötilaan $80\\,{}^\\circ\\text{C}$.\n\nc) Nimeä kaksi virhelähdettä, jotka voivat vääristää tulosta. Kerro, miten kumpaakin voi pienentää.\n\nVastauskenttään kirjoitetaan b-kohdan resistanssin kasvu prosentteina.",
+      "kind": [
+        "experiment",
+        "data",
+        "reasoning"
+      ],
+      "answer": 38,
+      "unit": "%",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Rautalangan virta eri lämpötiloissa, $U = 1{,}00\\,\\text{V}$ (esimerkkiaineisto)",
+        "columns": [
+          "$T\\,({}^\\circ\\text{C})$",
+          "$I\\,(\\text{A})$"
+        ],
+        "rows": [
+          [
+            "20",
+            "0.500"
+          ],
+          [
+            "40",
+            "0.442"
+          ],
+          [
+            "60",
+            "0.398"
+          ],
+          [
+            "80",
+            "0.362"
+          ]
+        ]
+      }
     }
   ]
 }
