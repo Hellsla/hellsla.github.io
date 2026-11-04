@@ -49,6 +49,26 @@
 **Answer:** $400.7\,\text{px}$, four significant figures like the initial values $1.392\cdot10^{6}\,\text{km}$ and $3474\,\text{km}$.
 **Reasonableness:** Roughly $\dfrac{1.4\cdot10^{6}}{3.5\cdot10^{3}} = 0.4\cdot10^{3} = 400$. The diameter of the Sun is about 400 Moons, which fits the fact that it is much larger than the Moon.
 
+## fy1-2-L1-06
+**Find:** which of the given units is a base unit of the SI system.
+**Principle:** The SI system has seven base units: metre, kilogram, second, ampere, kelvin, mole and candela. The base units are agreed in the SI system, and other units are derived from them as products and quotients, for example $1\,\text{N} = 1\,\text{kg}\cdot\text{m/s}^2$. A prefix does not make a new unit but forms a part or a multiple of a base unit.
+**Model answer:** The kilogram is the SI base unit of mass. The newton is the unit of force, and it is derived from base units as a product and a quotient, $\text{kg}\cdot\text{m/s}^2$, so it is a derived unit. The gram is a thousandth of a kilogram, $1\,\text{g} = 10^{-3}\,\text{kg}$, that is, a part of the kilogram formed with a prefix and not a derived unit. The litre is not an SI unit, and the SI unit of volume, $\text{m}^3$, is derived from the metre: $\text{m}\cdot\text{m}\cdot\text{m}$.
+
+## fy1-2-L1-07
+**Given:** speed $v = 18\,\text{km/h}$
+**Find:** the speed $v$ in the unit $\text{m/s}$
+**Principle:** A quantity does not change when the unit is changed; only the numerical value changes. The unit of speed is length divided by time, so both the kilometre and the hour are replaced by their values in SI units.
+**Formula:** speed is distance divided by time, $v = \dfrac{s}{t}$, so the unit is a unit of length divided by a unit of time
+**Conversions:** In place of the kilometre we write $1000\,\text{m}$ and in place of the hour $3600\,\text{s}$, because $1\,\text{km} = 1000\,\text{m}$ and $1\,\text{h} = 3600\,\text{s}$.
+**Substitution:** $v = 18\,\text{km/h} = 18\cdot\dfrac{1000\,\text{m}}{3600\,\text{s}} = 5.0\,\text{m/s}$
+**Answer:** $5.0\,\text{m/s}$, two significant figures like the initial value $18\,\text{km/h}$.
+**Reasonableness:** A second is a much shorter time than an hour, and a kilometre is a much longer distance than a metre. The cyclist travels $18\,\text{km}$ in an hour, that is a few metres in a second, and $5.0\,\text{m}$ per second fits ordinary cycling.
+
+## fy1-2-L1-08
+**Find:** the unit of density when the mass is in kilograms and the volume in cubic metres.
+**Principle:** In the formula $\rho = \dfrac{m}{V}$ the mass is divided by the volume. Units are treated like quantities: the unit of a quantity is obtained by substituting the units of the quantities into the formula. The unit of volume is a product of three lengths, $\text{m}\cdot\text{m}\cdot\text{m} = \text{m}^3$.
+**Model answer:** Substitute the units into the formula: $\dfrac{\text{kg}}{\text{m}^3}$, so the unit of density is $\text{kg/m}^3$. The kilogram is in the numerator because the mass is in the numerator of the formula. The product $\text{kg}\cdot\text{m}^3$ does not come from a division, the inverse $\text{m}^3/\text{kg}$ would describe volume per unit of mass, and the square metre is a unit of area. A unit check can therefore be used to verify that a formula has been written correctly.
+
 ## fy1-2-L2-01
 **Given:** clock frequency $f = 3.2\,\text{GHz}$, time $t = 5.0\,\text{ms}$; $1\,\text{GHz} = 10^{9}\,\text{Hz}$ and $1\,\text{Hz} = 1/\text{s}$
 **Find:** the number of clock cycles $N$
@@ -67,7 +87,7 @@
 **Conversions:** $L = 1.0\,\text{mm} = 1.0\cdot10^{-3}\,\text{m}$ and $l = 2.0\,\mu\text{m} = 2.0\cdot10^{-6}\,\text{m}$.
 **Substitution:** $N = \dfrac{1.0\cdot10^{-3}\,\text{m}}{2.0\cdot10^{-6}\,\text{m}} = 0.50\cdot10^{3} = 5.0\cdot10^{2} = 500$
 **Answer:** $500$ bacteria, two significant figures like the initial values $1.0\,\text{mm}$ and $2.0\,\mu\text{m}$.
-**Reasonableness:** A millimetre is a thousand micrometres, so 1000 objects one micrometre long would fit in 1 mm. A bacterium is two micrometres long, so half as many fit, 500.
+**Reasonableness:** A millimetre is a thousand micrometres, so 1000 objects one micrometre long would fit in $1\,\text{mm}$. A bacterium is two micrometres long, so half as many fit, 500.
 
 ## fy1-2-L2-03
 **Given:** area $A = 2.4\,\text{km}^2$; $1\,\text{ha} = 10\,000\,\text{m}^2$
@@ -88,6 +108,36 @@
 **Substitution:** $s = 15.341\,\dfrac{\text{km}}{\text{s}}\cdot 86\,400\,\text{s} = 1\,325\,462\,\text{km} = 1.3255\cdot10^{6}\,\text{km}$
 **Answer:** $1.3255$ million km, five significant figures like the speed $15.341\,\text{km/s}$; the length of a day is exact.
 **Reasonableness:** With rounded numbers $15\,\text{km/s}\cdot 9\cdot10^{4}\,\text{s} = 1.35\cdot10^{6}\,\text{km}$. In a day the probe travels a little over a million kilometres, about three times the distance from the Earth to the Moon.
+
+## fy1-2-L2-05
+**Given:** from the table the speeds: fast ferry $38.0$ knots, train $66.0\,\text{km/h}$, cyclist $9.0\,\text{m/s}$ and fishing boat $12.0$ knots; $1\,\text{knot} = 1.852\,\text{km/h}$
+**Find:** the fastest vehicle and its speed $v$ in the unit $\text{m/s}$
+**Principle:** Numerical values can be compared only when they are given in the same unit. So all speeds are converted to $\text{m/s}$, and the largest is chosen. The largest numerical value in the table, $66.0$, tells nothing, because it is in a different unit from the others.
+**Formula:** $1\,\text{knot} = 1.852\,\text{km/h}$ and $1\,\text{km/h} = \dfrac{1000\,\text{m}}{3600\,\text{s}}$, so $v = n\cdot 1.852\cdot\dfrac{1000\,\text{m}}{3600\,\text{s}}$ when there are $n$ knots
+**Conversions:** Fast ferry $38.0\cdot1.852\,\text{km/h} = 70.38\,\text{km/h}$, fishing boat $12.0\cdot1.852\,\text{km/h} = 22.22\,\text{km/h}$. The cyclist is already in $\text{m/s}$.
+**Substitution:** fast ferry $70.38\,\text{km/h} = 70.38\cdot\dfrac{1000\,\text{m}}{3600\,\text{s}} = 19.55\,\text{m/s}$; train $66.0\cdot\dfrac{1000\,\text{m}}{3600\,\text{s}} = 18.33\,\text{m/s}$; fishing boat $22.22\cdot\dfrac{1000\,\text{m}}{3600\,\text{s}} = 6.17\,\text{m/s}$; cyclist $9.0\,\text{m/s}$. The order of speed is fast ferry, train, cyclist, fishing boat.
+**Answer:** the fastest is the fast ferry, $19.5\,\text{m/s}$, three significant figures like the initial value $38.0$ knots; the conversion factor $1.852$ is exact.
+**Reasonableness:** The fast ferry travels $70\,\text{km}$ in an hour and the train $66\,\text{km}$, so the ferry is slightly faster. The cyclist's $9.0\,\text{m/s}$ is about $32\,\text{km/h}$, which is less than either.
+
+## fy1-2-L2-06
+**Given:** from the table the masses of five apples $152.4$, $147.9$, $160.8$, $155.3$ and $158.1$; the unit $\text{kg}$ in the column heading
+**Find:** the error in the table and the mean mass of an apple $m_{\text{mean}}$ in kilograms
+**Principle:** A measurement result is always judged for reasonableness. An apple would not weigh $150\,\text{kg}$, so the unit in the heading is wrong: the numerical values were measured in grams. The mean is the sum of the masses divided by the number of masses, and the unit is corrected by substitution.
+**Formula:** $m_{\text{mean}} = \dfrac{m_1 + m_2 + m_3 + m_4 + m_5}{5}$
+**Conversions:** The correct heading is $m\,(\text{g})$. In place of the gram we write its value in kilograms, $1\,\text{g} = 10^{-3}\,\text{kg}$.
+**Substitution:** The sum of the masses is $152.4\,\text{g} + 147.9\,\text{g} + 160.8\,\text{g} + 155.3\,\text{g} + 158.1\,\text{g} = 774.5\,\text{g}$, so $m_{\text{mean}} = \dfrac{774.5\,\text{g}}{5} = 154.9\,\text{g} = 154.9\cdot10^{-3}\,\text{kg} = 0.1549\,\text{kg}$
+**Answer:** $0.1549\,\text{kg}$, four significant figures like the weighings, which are given to a tenth of a gram. The number of apples is an exact number.
+**Reasonableness:** An apple weighs about $150\,\text{g}$, that is about $0.15\,\text{kg}$, and the values are close to each other. The mean $154.9\,\text{g}$ lies between $147.9$ and $160.8$, as a mean should.
+
+## fy1-2-L2-07
+**Given:** flow rate $q = 0.20\,\textsf{l}/\text{s}$ and volume of the bucket $V = 12\,\textsf{l}$; the student's result $t = qV = 2.4$ seconds
+**Find:** the student's error and the correct filling time $t$ in minutes
+**Principle:** When calculating time, the unit of the result must be a unit of time. The flow rate tells how many litres come per second, so the formula must be $V = qt$.
+**Formula:** $V = qt$, from which $t = \dfrac{V}{q}$
+**Conversions:** The unit is checked by substitution: in the student's formula $\textsf{l}/\text{s}\cdot\textsf{l} = \textsf{l}^2/\text{s}$, which is not a unit of time, so the formula is wrong. At the end the seconds are converted to minutes: $1\,\text{min} = 60\,\text{s}$.
+**Substitution:** $t = \dfrac{12\,\textsf{l}}{0.20\,\textsf{l}/\text{s}} = 60\,\text{s} = \dfrac{60}{60}\,\text{min} = 1.0\,\text{min}$
+**Answer:** $1.0\,\text{min}$, two significant figures like the flow rate $0.20\,\textsf{l}/\text{s}$ and the volume $12\,\textsf{l}$. The student's $2.4$ is not seconds but in the unit $\textsf{l}^2/\text{s}$.
+**Reasonableness:** Every second a fifth of a litre comes, so a litre fills in five seconds and $12\,\textsf{l}$ takes twelve times as long, $60\,\text{s}$. The filling time is thus of the order of a minute, as you know from filling a bucket.
 
 ## fy1-2-L3-01
 **Given:** $c = 2.998\cdot10^{5}\,\text{km/s}$, $1\,\text{a} = 3.156\cdot10^{7}\,\text{s}$, $1\,\text{AU} = 1.496\cdot10^{8}\,\text{km}$
@@ -118,3 +168,23 @@
 **Substitution:** $t = \dfrac{2\cdot 2.169\cdot10^{10}\,\text{km}}{2.998\cdot10^{5}\,\text{km/s}} = 1.447\cdot10^{5}\,\text{s}$. The number of hours is $1.447\cdot10^{5}\,\text{s} : 3600\,\text{s} = 40.2$, so $t = 40.2\,\text{h}$
 **Answer:** $40.2\,\text{h}$, three significant figures like the distance $145\,\text{AU}$.
 **Reasonableness:** In one direction light takes about $145\cdot 8.3\,\text{min} = 1200\,\text{min} = 20\,\text{h}$, so there and back is about 40 hours. The reply therefore arrives after more than a day.
+
+## fy1-2-L3-04
+**Given:** $T = k\,L^{a}g^{b}m^{c}$, where $k$ has no unit; $L_1 = 0.250\,\text{m}$, $T_1 = 1.00\,\text{s}$, $L_2 = 1.00\,\text{m}$
+**Find:** the exponents $a$, $b$ and $c$ and the period $T_2$ in seconds
+**Principle:** Both sides of an equation must have the same unit. The units therefore give conditions for the exponents. After this the form of the formula is known, and the dimensionless coefficient $k$ stays the same when the length of the pendulum changes in the same place, because $k$ is a constant of the swinging phenomenon itself and does not depend on the length or the place. A unit analysis does not, however, give the number $k$: it tells only how $T$ depends on the quantities, not the size of the coefficient.
+**Formula:** Units: $\text{s} = \text{m}^{a}\cdot\left(\tfrac{\text{m}}{\text{s}^2}\right)^{b}\cdot\text{kg}^{c} = \text{m}^{a+b}\,\text{s}^{-2b}\,\text{kg}^{c}$. The kilogram appears only in the mass, so $c = 0$. The seconds give $-2b = 1$, so $b = -\tfrac{1}{2}$, and the metres $a + b = 0$, so $a = \tfrac{1}{2}$. Thus $T = k\sqrt{\dfrac{L}{g}}$, and since $k$ and $g$ stay the same, $T_2 = T_1\sqrt{\dfrac{L_2}{L_1}}$.
+**Conversions:** Not needed: the lengths are in metres and the time in seconds.
+**Substitution:** $T_2 = 1.00\,\text{s}\cdot\sqrt{\dfrac{1.00\,\text{m}}{0.250\,\text{m}}} = 1.00\,\text{s}\cdot\sqrt{4.00} = 2.00\,\text{s}$
+**Answer:** $a = \tfrac{1}{2}$, $b = -\tfrac{1}{2}$ and $c = 0$; $T_2 = 2.00\,\text{s}$, three significant figures like the measurement. The mass does not affect the period. Units do not give the coefficient: the exact formula is $T = 2\pi\sqrt{\dfrac{L}{g}}$, in which $2\pi$ is a number without a unit that a unit analysis cannot give. It is not needed in this task, because $k$ cancels from the ratio $T_2/T_1$.
+**Reasonableness:** The length of the pendulum is four times as great and the period twice as great, because $\sqrt{4} = 2$. The period of a one-metre pendulum is about two seconds, which fits the pendulum of a wall clock.
+
+## fy1-2-L3-05
+**Given:** from the table device A: $E_\text{A} = 0.65\,\text{kWh}$, $P_\text{A} = 85.0\,\text{W}$; device B: $E_\text{B} = 2.20\,\text{MJ}$, $P_\text{B} = 0.100\,\text{kW}$; $1\,\text{W} = 1\,\text{J/s}$
+**Find:** which device runs longer and by how many hours
+**Principle:** The numerical values $0.65$ and $2.20$ cannot be compared, because the units $\text{kWh}$ and $\text{MJ}$ are of different sizes. A device runs for the time $t = \tfrac{E}{P}$ until the stored energy has been used up. Energy and power are therefore converted to the units J and W.
+**Formula:** $t = \dfrac{E}{P}$
+**Conversions:** In place of the kilowatt-hour we write $1000\,\text{W}\cdot3600\,\text{s}$, that is $1\,\text{kWh} = 3.6\,\text{MJ}$. $E_\text{A} = 0.65\cdot1000\,\text{W}\cdot3600\,\text{s} = 2.34\cdot10^{6}\,\text{J}$, $E_\text{B} = 2.20\cdot10^{6}\,\text{J}$ and $P_\text{B} = 0.100\cdot1000\,\text{W} = 100\,\text{W}$. Seconds are converted to hours, $1\,\text{h} = 3600\,\text{s}$.
+**Substitution:** $t_\text{A} = \dfrac{2.34\cdot10^{6}\,\text{J}}{85.0\,\text{W}} = 2.753\cdot10^{4}\,\text{s} = 7.647\,\text{h}$ and $t_\text{B} = \dfrac{2.20\cdot10^{6}\,\text{J}}{100\,\text{W}} = 2.20\cdot10^{4}\,\text{s} = 6.111\,\text{h}$. The difference is $7.647\,\text{h} - 6.111\,\text{h} = 1.54\,\text{h}$
+**Answer:** device A runs longer, about $1.5\,\text{h}$, two significant figures like the energy $0.65\,\text{kWh}$. The energy of device B is only $0.61\,\text{kWh}$, and its power is greater. So the claim is not correct.
+**Reasonableness:** The energy of device A, $650\,\text{Wh}$, divided by an estimate of $90\,\text{W}$ for the power $85\,\text{W}$ gives about $7\,\text{h}$. The energy of device B is $2.2:3.6 = 0.61\,\text{kWh}$, and $610\,\text{Wh} : 100\,\text{W}$ is about $6\,\text{h}$.
