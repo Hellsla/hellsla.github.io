@@ -2,13 +2,13 @@
 <html lang="fi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Sovella itsenäisesti — Ruukkilabra</title>
 <meta name="description" content="FY2 Fysiikka, ympäristö ja yhteiskunta: itsenäisesti ratkaistavat tehtävät, mallivastaukset ja pisteytysohjeet itsearviointiin.">
-<link rel="canonical" href="https://hellsla.github.io/fysiikkalabra/site/FY2-sovella.html">
+<link rel="canonical" href="https://ruukkilab.fi/FY2-sovella.html">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Ruukkilabra">
 <meta property="og:locale" content="fi_FI">
 <meta property="og:title" content="Sovella itsenäisesti">
 <meta property="og:description" content="FY2 Fysiikka, ympäristö ja yhteiskunta: itsenäisesti ratkaistavat tehtävät, mallivastaukset ja pisteytysohjeet itsearviointiin.">
-<meta property="og:url" content="https://hellsla.github.io/fysiikkalabra/site/FY2-sovella.html">
+<meta property="og:url" content="https://ruukkilab.fi/FY2-sovella.html">
 <meta name="theme-color" content="#f7f3ec">
 <link rel="stylesheet" href="vendor/katex/katex.min.css">
 <link rel="icon" href="brand/ruukkilabra-symboli.svg" type="image/svg+xml">
@@ -200,10 +200,11 @@ window.flGlueMath=function(root){var WJ='\u2060';(root||document.body).querySele
 <script>/* KaTeX lazily (teacher 2026-11-04, UI fix 4): the page is typeset element by element, and what is inside a closed
    <details> (a hint, a model answer, a solution, an optional box) only when that box is first opened (toggle event, once).
    Its <summary> is typeset at once, as it shows. Before printing every box that waits is typeset at once (lesson.js opens
-   them in beforeprint). flGlueMath runs on each root that was typeset. */
+   them in beforeprint). The simulation's boxes (#sim details.sim-box: Mallin oletukset, Laskennan selitys) are small
+   and typeset at once, as test_sims reads their text closed. flGlueMath runs on each root that was typeset. */
 window.flMath=function(root){var O={delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false,ignoredClasses:['fl-math-later','fl-math-done']};
 var open=function(d){if(d.dataset.flMath!=='wait')return;d.dataset.flMath='done';d.classList.remove('fl-math-later');window.flMath(d);};
-root.querySelectorAll('details:not([open])').forEach(function(d){if(d.dataset.flMath)return;d.dataset.flMath='wait';d.classList.add('fl-math-later');
+root.querySelectorAll('details:not([open])').forEach(function(d){if(d.dataset.flMath||d.closest('#sim'))return;d.dataset.flMath='wait';d.classList.add('fl-math-later');
 var s=d.querySelector(':scope>summary');if(s){renderMathInElement(s,O);flGlueMath(s);s.classList.add('fl-math-done');}
 d.addEventListener('toggle',function(){if(d.open)open(d);});d.flMathOpen=function(){open(d);};});
 renderMathInElement(root,O);flGlueMath(root);};

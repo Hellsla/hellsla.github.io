@@ -32,7 +32,7 @@ import answers_shown, cardgrid, concept_cards, courses, fbdspec, figcat, guides,
 from i18n import t as T
 
 ROOT = pathlib.Path(os.environ.get("FYSIIKKALABRA_ROOT") or pathlib.Path(__file__).resolve().parents[1])   # tests build a copy
-BASE_URL = "https://hellsla.github.io/fysiikkalabra/site/"
+BASE_URL = "https://ruukkilab.fi/"
 URL = BASE_URL                                 # where the language being built is published: site/, site/<lang>/
 UP = ""                                        # from a page to site/: "" for Finnish, "../" for site/<lang>/
 COURSES = {}                                   # content/<lang>/courses.json of the language being built

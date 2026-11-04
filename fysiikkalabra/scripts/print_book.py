@@ -22,7 +22,7 @@ from _browser import launch  # noqa: E402
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 SITE = ROOT / "site"
-BASE_URL = "https://hellsla.github.io/fysiikkalabra/site/"
+BASE_URL = "https://ruukkilab.fi/"
 MM = 72 / 25.4
 A5 = (148 * MM, 210 * MM)
 

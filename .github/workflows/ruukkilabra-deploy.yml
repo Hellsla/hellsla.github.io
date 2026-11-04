@@ -1,0 +1,80 @@
+# Publish Ruukkilabra at https://ruukkilab.fi/ (teacher 2026-11-04).
+# The source stays here; the public repository Hellsla/ruukkilabra only holds the published copy, served by its GitHub
+# Pages (branch main, folder /, custom domain ruukkilab.fi). This workflow runs after fysiikkalabra-ci has passed on an
+# approved (merged) main commit and pushes that commit's committed fysiikkalabra/site/ to the root of the publishing
+# repository, plus the read-aloud models under models/ (Hellsla/ruukkilabra-models). Pull requests never publish.
+# A manual run (Actions -> ruukkilabra-deploy -> Run workflow) publishes the newest main commit whose CI passed, or,
+# with "now" ticked, the newest main commit at once without waiting for CI (the teacher's call as admin; the privacy
+# and link gates of scripts/deploy_site.py still run; teacher 2026-11-04).
+# Needs the repository secret RUUKKILABRA_DEPLOY_KEY: the private half of an SSH deploy key that has write access to
+# Hellsla/ruukkilabra and nothing else (fysiikkalabra/README.md, "Julkaisu osoitteeseen ruukkilab.fi").
+# The other sites of this repository are untouched: GitHub Pages keeps serving them from this repository as before.
+name: ruukkilabra-deploy
+on:
+  workflow_run:
+    workflows: [fysiikkalabra-ci]
+    types: [completed]
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      now:
+        description: "Julkaise mainin uusin versio heti, odottamatta CI:tä (yksityisyys- ja linkkitarkistus ajetaan silti)"
+        type: boolean
+        default: false
+permissions: { contents: read, actions: read }
+concurrency: { group: ruukkilabra-deploy, cancel-in-progress: false }
+jobs:
+  deploy:
+    # only a passed CI run of a main commit of this repository (push, weekly or manual run), never a pull request's
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      (github.event.workflow_run.conclusion == 'success' &&
+       github.event.workflow_run.event != 'pull_request' &&
+       github.event.workflow_run.head_repository.full_name == github.repository)
+    runs-on: ubuntu-latest
+    steps:
+      - name: which commit to publish
+        id: pick
+        env: { GH_TOKEN: "${{ github.token }}" }
+        run: |
+          if [ "${{ github.event_name }}" = workflow_dispatch ] && [ "${{ inputs.now }}" = true ]; then
+            sha=$(gh api "repos/${{ github.repository }}/commits/main" --jq .sha)
+          elif [ "${{ github.event_name }}" = workflow_dispatch ]; then
+            sha=$(gh api "repos/${{ github.repository }}/actions/workflows/fysiikkalabra-ci.yml/runs?branch=main&status=success&per_page=30" \
+                  --jq '[.workflow_runs[] | select(.event != "pull_request")][0].head_sha')
+            [ -n "$sha" ] && [ "$sha" != null ] || { echo "::error::no passed fysiikkalabra-ci run on main"; exit 1; }
+          else
+            sha="${{ github.event.workflow_run.head_sha }}"
+          fi
+          echo "sha=$sha" >> "$GITHUB_OUTPUT"; echo "publishing $sha" | tee -a "$GITHUB_STEP_SUMMARY"
+      - uses: actions/checkout@v4
+        with: { ref: "${{ steps.pick.outputs.sha }}", path: src }
+      - name: a newer site on main is published by its own CI run
+        id: fresh
+        working-directory: src
+        run: |
+          git fetch --depth=1 origin main
+          if git diff --quiet HEAD FETCH_HEAD -- fysiikkalabra/site; then echo "go=1" >> "$GITHUB_OUTPUT"
+          else echo "main already has a newer site/; its CI run publishes it" | tee -a "$GITHUB_STEP_SUMMARY"; fi
+      - uses: actions/checkout@v4
+        if: steps.fresh.outputs.go
+        with: { repository: Hellsla/ruukkilabra-models, path: models-src }
+      - uses: actions/checkout@v4
+        if: steps.fresh.outputs.go
+        with: { repository: Hellsla/ruukkilabra, ssh-key: "${{ secrets.RUUKKILABRA_DEPLOY_KEY }}", path: out, persist-credentials: true }
+      - uses: actions/setup-python@v5
+        if: steps.fresh.outputs.go
+        with: { python-version: "3.12" }
+      - name: assemble the published copy (privacy and link gates; scripts/deploy_site.py)
+        if: steps.fresh.outputs.go
+        run: python src/fysiikkalabra/scripts/deploy_site.py out --models models-src
+      - name: push to Hellsla/ruukkilabra
+        if: steps.fresh.outputs.go
+        working-directory: out
+        run: |
+          git config user.name "Ruukkilabra"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then echo "nothing changed" | tee -a "$GITHUB_STEP_SUMMARY"; exit 0; fi
+          git commit -q -m "Ruukkilabra $(TZ=Europe/Helsinki date '+%Y-%m-%d %H.%M')"
+          git push origin HEAD:main
+          git diff --stat HEAD~1 HEAD | tail -1 | tee -a "$GITHUB_STEP_SUMMARY" || true
