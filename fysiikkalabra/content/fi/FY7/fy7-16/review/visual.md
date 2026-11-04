@@ -1,20 +1,18 @@
-VERDICT: FAIL
-CONTENT-HASH: 683a2b867e60ff05
+VERDICT: PASS
+CONTENT-HASH: e7fc6c136ce16cf8
 
 ## Blocking
-- [Major] inquiry.json lines 204 and 265, tables of koe-1 and koe-2 (captures lab-1280-1, exp-koe-1-390) — the column header reads as plain text "Φ_0 (µWb)" with a literal underscore, because the build's tex_name does not turn a Greek-letter name into maths (e_0 does) — a plain-text symbol where the student looks is blocking under NOTES §1 — set the labels to `$\\Phi_0\\ (\\mu\\text{Wb})$` (or teach tex_name Greek letters).
-- [Major] fig "charger" (lesson.md:53–128; fig-5-390, theory-1280-1) — the labels are only "laturi" twice; the phone, the transmitter coil and the receiver coil are unlabelled, though the text and the simulation name them (lähetinkäämi, vastaanotinkäämi, puhelin). The green triangles and the darker lines are explained only in the aria-label. At 390 px the two panels are small and the dark bar cannot be read as a phone — a reader cannot tell what is the phone and what is the receiver — add $\text{puhelin}$, $\text{vastaanotinkäämi}$, $\text{lähetinkäämi}$ labels as in the simulation, and one short caption phrase for the dark lines.
-- [Major] fig "hob" (lesson.md:136–199) — the aria-label says the eddy-current dots and crosses are "violetteja", but in the capture they are orange-brown, like the coil's own current symbols, so the eddy currents are not distinguishable from the coil current by colour, and the alt text is wrong — redraw the pan-base symbols in the violet or correct the description; keep the label "pyörrevirta" with its leader line to the base.
 
 ## Polish
-- [Minor] sim canvas (sim-390, sim-1280) — the "puhelin" label sits over a green field line and is hard to read at 390 px; give it a paper-coloured backing or move it.
-- [Minor] fig hob (theory-1280-2) — "teräskattila" touches the pan wall; move the label left by about 8 px.
-- [Minor] Järkevyys in the example — the sentence "2,5 % tehosta 2,0 mW on 0,050 mW" begins with a number; start with "Tehosta 2,0 mW on 2,5 % …".
-- [Minor] graph — both curves are the same pink and differ only by dash and end label; fine, but a second tone for 1310 nm would help in print.
+- [Minor] sim-390, exp-koe-1-390 — the canvas labels "vastaanotinkäämi" and "puhelin" are about 9 px and sit over green field lines; legible but cramped on a phone. Optional: shorten to "vastaanotin" or place with a leader.
+- [Minor] Esimerkki, Tulos (example-390-2) — the display chain splits the sentence, so "kahdella merkitsevällä numerolla kuten…" starts as a lowercase fragment under the equation. Optional: put the sig-fig remark in a full sentence before the display.
+- [Minor] graph (fig-9) — the 1310 nm curve is dashed, which elsewhere means a guide or extrapolation; both curves are labelled at their ends, so it reads correctly. Optional: say "katkoviiva" in the aria-label.
+- [Minor] lesson.md Ydinajatus "Äänen voimakkuus (FY5)" — course code beside the chapter name; the chapter name is given, so acceptable.
 
 ## Checked
-- Opened: top-390, intro-1280 (hero), fig-5, fig-7, fig-9 at 390, theory-1280-1 to 4, sim-390, sim-1280, example-390-1/2, lab-1280-1, open-ennusta-1280-1, open-tarkista-1280-1, open-exit-1280. Figures 1 to 4 and 6, 8 and 10 are 28 px icons in the captures, not figures.
-- Finnish text read in full from the packet: fluent, no stacked AI phrasing, glossary terms consistent, numbers with units in LaTeX.
+- fig-2 (hero, 390) and intro-1280, top-390; fig-5 charger, fig-7 hob, fig-9 graph (390) and theory-1280-1 to -4: round-1 fixes confirmed (labels at 24 px with leaders, violet eddy marks against copper coil marks, field-line step gives 6 vs 1 dark lines).
+- example-390-1/-2, stage-ennusta-390-1, open-ennusta-1280-2, sim-390, sim-1280, lab-1280-1, exp-koe-1-390: layout, maths chains and options fine. The known table header offset is not counted.
+- Source read for language: paragraphs 36–110 words; glossary terms consistent; one voice; no plain-text quantities seen.
 
 ## Scores
-illustrations 3 · typography 4 · Finnish 5 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

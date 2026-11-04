@@ -1,20 +1,20 @@
-VERDICT: FAIL
-CONTENT-HASH: 683a2b867e60ff05
+VERDICT: PASS
+CONTENT-HASH: e7fc6c136ce16cf8
 
 ## Blocking
-- assets/sims/fy7/fy7-16/sim.js:100, lesson.md:53, inquiry.json:237 — **A.** At z = 3 mm, R1 = 20 mm, only five lines are drawn darker. STEP = Φ/6 puts the sixth line exactly on the receiver wire, and the strict `lv < phiRx` test draws it faint. Node check: readout 6, dark 5; the figure likewise shows 5. The aria-label, sim-spec and koe-1 say six; koe-1 asks the student to count. — Fix: STEP = Φ(20,20,3) : 6,5, or a tolerant `<=`, in the sim and in the figure generator; regenerate the figure and check that 20 mm still gives one line.
-- inquiry.json:99, :284, :288 — **B.** "Suurempi lähetinkäämi antoi suuremman jännitteen" holds only up to about R1 = 35 mm. At z = 20 mm the model gives 1,247 V at 35 mm and 1,229 V at 40 mm and the slider offers 35 mm. — Fix: in the feedback, the model answer and criterion 3, say the voltage grows up to about 35 mm and then falls (a best size for each distance).
-- inquiry.json:428, :432 (check-1) — **B.** The feedbacks say high resistance gives much heating and low resistance little. That is true only at the same coil current; at a fixed EMF, FY6's P = U² : R predicts the opposite. The theory (lesson.md:202) states "samalla kelan virralla", but the feedbacks drop it. "Eikä pohja lämpene" also contradicts the theory's "lämpenemistä tulee vähän". — Fix: add the condition to both feedbacks, and change the absolute claim to "lämpenee vain vähän".
 
 ## Polish
-- lesson.md:136 — the hob aria-label says the eddy-current symbols are violet; they are drawn copper.
-- lesson.md:208 — "Desibelit lasketaan yhteen" may clash with FY5's "riippumattomien lähteiden desibelejä ei lasketa yhteen". Add one clause: losses in series multiply the power ratios.
+- lesson.md:335 (Tiivistelmä) — "osa energiasta muuttuu käämien sisäenergiaksi: mittauksessa lataus vei noin 47 % enemmän" credits the whole surplus to the coils. The interpret solution says it went to the coils and the electronics. Write "käämien ja elektroniikan sisäenergiaksi".
+- lesson.md:336 — "eikä sähköä johtamaton lasi lainkaan" reads as if the glass never warms. The theory says it warms from the hot pan. Write "eikä lasiin synny pyörrevirtoja".
 
 ## Checked
-- All sim values (e0 against z and R1, 19,74 %, Φ0) recomputed independently; they agree.
-- Field direction (× right, • left, so B is upward on the axis) and the hob's opposing eddy current are right.
-- Fibre: 16,7 km halving, 1,58 % after 100 km, graph points, 4,9 µs/km; the Corning limits are right.
-- The worked example (0,0502 mW) is complete and solved symbolically first. siirto 0,775 mT and its mistakes are right.
-- Ravenscraft 47,3 % (+ mistakes), tarkistus-2 25,1 %, virhe 1 %, exit 20 dB.
-- koe-1 and koe-2: initial values, locks and simState keys are right.
+- Round-1 fixes: STEP = Φ(20, 20, 3) : 6,5 gives 6,5 levels at 3 mm, so 6 dark lines (6,5 → 6), and 1,28 at 20 mm, so 1 line. The figure, aria-label, koe-1 and sim-spec agree.
+- ennuste-kela feedback, koe-2 intro, the johtopäätös model and criterion 3 now say the voltage grows up to about 35 mm (1,247 V) and then falls (40 mm: 1,229 V). The model agrees.
+- Both check-1 feedbacks state "samalla kelan virralla", and "lämpenee vain vähän" matches the theory.
+- Recomputed independently in one script (Neumann double integral for the coil mutual inductance instead of elliptic integrals): every e0(z, R1) value, Φ0 = 0,501 µWb, 19,74 %, the half point at 8,8 mm ("noin 9 mm"), and 3 mm optimum at R1 = 20 mm. All agree with lesson-answers.py.
+- Fibre: 16,7 km halving, 1,58 % after 100 km, graph endpoints 35 % and 16 %, 4,9 µs/km, worked example 0,0502 mW (symbolic first, 7 steps), tarkistus-2 25,1 %, exit 20 dB.
+- siirto 0,775 mT and its mistakes (9,30; 4,87; 7,75 · 10⁻⁵ mT); Ravenscraft 47,3 % and its mistakes (6,75; 147,3; 32,1).
+- The decibel clause (dB add, power ratios multiply) and the virhe item are consistent.
+- Hob figure: eddy current opposite to the coil current (× / • swapped); the sim at 3 mm, 20 mm reads 4,404 V, 100,0 %.
+- koe-1 and koe-2: initial values, locks and simState keys (phi0, e0, osuus) are right.
 - Each prediction has exactly one correct option, and the distractor feedbacks are right.
