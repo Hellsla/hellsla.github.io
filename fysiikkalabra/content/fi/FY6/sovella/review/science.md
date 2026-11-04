@@ -1,8 +1,8 @@
-VERDICT: FAIL
-CONTENT-HASH: b106a60fd17e0ee3
+VERDICT: PASS
+CONTENT-HASH: b1e8c35e57ad6a01
 
 ## Blocking
-1. **fy6-s2 c (A, assessment and consistency).** The question still asks how "kaapelin lämpeneminen" changes. Round 2 removed the solution's *Kaapeli* paragraph and the rubric clause $R_\text{k} I^2$ pienenee, so neither the model answer nor any criterion covers an asked item any more. Either restore one sentence to the solution and to criterion 2 (cable power $R_\text{k} I^2$: $5{,}0\,\text{W} \to 2{,}5\,\text{W}$, the cable heats less), or drop the cable from the question.
+None. The round-2 item (fy6-s2 c, cable heating) is fixed: the solution's *Kaapeli* paragraph gives $0{,}80\,\Omega \cdot (1{,}76\,\text{A})^2 = 2{,}49 \approx 2{,}5\,\text{W}$, against $5{,}0\,\text{W}$ before, and criterion 2 now grades it. Solution, rubric and question agree. The reason given (power depends on $I^2$) is correct.
 
 ## Polish
 - s2 d: the key `calculation` now appears twice (current, and lamp voltage).
@@ -23,4 +23,4 @@ CONTENT-HASH: b106a60fd17e0ee3
   - Stored energy: $E \approx 15\,\text{J}$ (14,85 J). $\Delta E = 6{,}86\,\text{J}$, 46 %.
   - Safety: the "älä yritä itse" note is appropriate.
 - **s3 figure:** the droplet now starts at the nozzle plate, consistent with "lähtee levossa".
-- All other numbers are unchanged from round 1 and still agree with my independent recomputation and with answers.py. The points still add up, and practice.py check is OK. The hash is the same at the start and at the end.
+- Round 3 changed only s2 c (verified with git show HEAD). All other numbers are unchanged from round 1 and still agree with my independent recomputation and with answers.py. The points still add up, and practice.py check is OK. The hash is the same at the start and at the end.

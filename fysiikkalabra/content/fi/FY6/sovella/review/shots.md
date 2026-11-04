@@ -1,6 +1,6 @@
 # Screenshots of FY6-sovella (preview/FY6-sovella.html)
 
-Captured for: b106a60fd17e0ee3 page ac1d4d99d80e79ae (review/shots/stamp.txt). Open the contact sheets first, then only the captures your questions need (Read tool). Cost ≈ width·height/750 tokens each.
+Captured for: b1e8c35e57ad6a01 page 53491c464d113759 (review/shots/stamp.txt). Open the contact sheets first, then only the captures your questions need (Read tool). Cost ≈ width·height/750 tokens each.
 
 | file | shows | px | ≈ tokens |
 |---|---|---|---|
@@ -15,7 +15,7 @@ Captured for: b106a60fd17e0ee3 page ac1d4d99d80e79ae (review/shots/stamp.txt). O
 | review/shots/contact-9.png | contact sheet: captures #97–#108 | 1260×1932 | 3245 |
 | review/shots/contact-10.png | contact sheet: captures #109–#120 | 1260×1224 | 2056 |
 | review/shots/contact-11.png | contact sheet: captures #121–#132 | 1260×1224 | 2056 |
-| review/shots/contact-12.png | contact sheet: captures #133–#134 | 1260×416 | 698 |
+| review/shots/contact-12.png | contact sheet: captures #133–#135 | 1260×416 | 698 |
 | review/shots/FY6-sovella-top-390.png | #1 first screen at 390 px | 390×844 | 438 |
 | review/shots/FY6-sovella-page-390-1.png | #2 the whole page at 390 px, every box open (teacher's notes included) (part 1/42) | 366×1408 | 687 |
 | review/shots/FY6-sovella-page-390-2.png | #3 the whole page at 390 px, every box open (teacher's notes included) (part 2/42) | 366×1408 | 687 |
@@ -58,7 +58,7 @@ Captured for: b106a60fd17e0ee3 page ac1d4d99d80e79ae (review/shots/stamp.txt). O
 | review/shots/FY6-sovella-page-390-39.png | #40 the whole page at 390 px, every box open (teacher's notes included) (part 39/42) | 366×1408 | 687 |
 | review/shots/FY6-sovella-page-390-40.png | #41 the whole page at 390 px, every box open (teacher's notes included) (part 40/42) | 366×1408 | 687 |
 | review/shots/FY6-sovella-page-390-41.png | #42 the whole page at 390 px, every box open (teacher's notes included) (part 41/42) | 366×1408 | 687 |
-| review/shots/FY6-sovella-page-390-42.png | #43 the whole page at 390 px, every box open (teacher's notes included) (part 42/42) | 366×323 | 157 |
+| review/shots/FY6-sovella-page-390-42.png | #43 the whole page at 390 px, every box open (teacher's notes included) (part 42/42) | 366×522 | 254 |
 | review/shots/FY6-sovella-fig-1-390.png | #44 figure 1 in “1Taskulampun paristo 15 pistettä”: Kytkentäkaavio, ei mittakaavassa: pariston mittaus. Vasemmalla on tutkittava paristo, plus | 331×182 | 80 |
 | review/shots/FY6-sovella-fig-2-390.png | #45 figure 2 in “1Taskulampun paristo 15 pistettä”:  | 28×28 | 1 |
 | review/shots/FY6-sovella-fig-3-390.png | #46 figure 3 in “Mallivastaus”: Kuvaaja: pariston napajännite U voltteina virran I funktiona ampeereina. Kuusi mustaa pist | 305×202 | 82 |
@@ -97,7 +97,7 @@ Captured for: b106a60fd17e0ee3 page ac1d4d99d80e79ae (review/shots/stamp.txt). O
 | review/shots/FY6-sovella-stage-fy6-s2-390-8.png | #79 inquiry stage Mökin pihavalot 15 pistettä (part 8/11) | 366×1408 | 687 |
 | review/shots/FY6-sovella-stage-fy6-s2-390-9.png | #80 inquiry stage Mökin pihavalot 15 pistettä (part 9/11) | 366×1408 | 687 |
 | review/shots/FY6-sovella-stage-fy6-s2-390-10.png | #81 inquiry stage Mökin pihavalot 15 pistettä (part 10/11) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s2-390-11.png | #82 inquiry stage Mökin pihavalot 15 pistettä (part 11/11) | 366×878 | 428 |
+| review/shots/FY6-sovella-stage-fy6-s2-390-11.png | #82 inquiry stage Mökin pihavalot 15 pistettä (part 11/11) | 366×1077 | 525 |
 | review/shots/FY6-sovella-stage-fy6-s3-390-1.png | #83 inquiry stage Ruiskumaalaus 16 pistettä (part 1/10) | 366×1408 | 687 |
 | review/shots/FY6-sovella-stage-fy6-s3-390-2.png | #84 inquiry stage Ruiskumaalaus 16 pistettä (part 2/10) | 366×1408 | 687 |
 | review/shots/FY6-sovella-stage-fy6-s3-390-3.png | #85 inquiry stage Ruiskumaalaus 16 pistettä (part 3/10) | 366×1408 | 687 |
@@ -119,34 +119,35 @@ Captured for: b106a60fd17e0ee3 page ac1d4d99d80e79ae (review/shots/stamp.txt). O
 | review/shots/FY6-sovella-stage-fy6-s4-390-9.png | #101 inquiry stage Kameran salama 14 pistettä (part 9/10) | 366×1408 | 687 |
 | review/shots/FY6-sovella-stage-fy6-s4-390-10.png | #102 inquiry stage Kameran salama 14 pistettä (part 10/10) | 366×279 | 136 |
 | review/shots/FY6-sovella-top-1280.png | #103 first screen at 1280 px | 1280×900 | 1536 |
-| review/shots/FY6-sovella-page-1280-1.png | #104 the whole page at 1280 px, every box open (teacher's notes included) (part 1/31) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-2.png | #105 the whole page at 1280 px, every box open (teacher's notes included) (part 2/31) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-3.png | #106 the whole page at 1280 px, every box open (teacher's notes included) (part 3/31) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-4.png | #107 the whole page at 1280 px, every box open (teacher's notes included) (part 4/31) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-5.png | #108 the whole page at 1280 px, every box open (teacher's notes included) (part 5/31) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-6.png | #109 the whole page at 1280 px, every box open (teacher's notes included) (part 6/31) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-7.png | #110 the whole page at 1280 px, every box open (teacher's notes included) (part 7/31) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-8.png | #111 the whole page at 1280 px, every box open (teacher's notes included) (part 8/31) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-9.png | #112 the whole page at 1280 px, every box open (teacher's notes included) (part 9/31) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-10.png | #113 the whole page at 1280 px, every box open (teacher's notes included) (part 10/31) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-11.png | #114 the whole page at 1280 px, every box open (teacher's notes included) (part 11/31) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-12.png | #115 the whole page at 1280 px, every box open (teacher's notes included) (part 12/31) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-13.png | #116 the whole page at 1280 px, every box open (teacher's notes included) (part 13/31) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-14.png | #117 the whole page at 1280 px, every box open (teacher's notes included) (part 14/31) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-15.png | #118 the whole page at 1280 px, every box open (teacher's notes included) (part 15/31) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-16.png | #119 the whole page at 1280 px, every box open (teacher's notes included) (part 16/31) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-17.png | #120 the whole page at 1280 px, every box open (teacher's notes included) (part 17/31) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-18.png | #121 the whole page at 1280 px, every box open (teacher's notes included) (part 18/31) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-19.png | #122 the whole page at 1280 px, every box open (teacher's notes included) (part 19/31) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-20.png | #123 the whole page at 1280 px, every box open (teacher's notes included) (part 20/31) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-21.png | #124 the whole page at 1280 px, every box open (teacher's notes included) (part 21/31) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-22.png | #125 the whole page at 1280 px, every box open (teacher's notes included) (part 22/31) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-23.png | #126 the whole page at 1280 px, every box open (teacher's notes included) (part 23/31) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-24.png | #127 the whole page at 1280 px, every box open (teacher's notes included) (part 24/31) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-25.png | #128 the whole page at 1280 px, every box open (teacher's notes included) (part 25/31) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-26.png | #129 the whole page at 1280 px, every box open (teacher's notes included) (part 26/31) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-27.png | #130 the whole page at 1280 px, every box open (teacher's notes included) (part 27/31) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-28.png | #131 the whole page at 1280 px, every box open (teacher's notes included) (part 28/31) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-29.png | #132 the whole page at 1280 px, every box open (teacher's notes included) (part 29/31) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-30.png | #133 the whole page at 1280 px, every box open (teacher's notes included) (part 30/31) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-31.png | #134 the whole page at 1280 px, every box open (teacher's notes included) (part 31/31) | 1160×1300 | 2010 |
+| review/shots/FY6-sovella-page-1280-1.png | #104 the whole page at 1280 px, every box open (teacher's notes included) (part 1/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-2.png | #105 the whole page at 1280 px, every box open (teacher's notes included) (part 2/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-3.png | #106 the whole page at 1280 px, every box open (teacher's notes included) (part 3/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-4.png | #107 the whole page at 1280 px, every box open (teacher's notes included) (part 4/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-5.png | #108 the whole page at 1280 px, every box open (teacher's notes included) (part 5/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-6.png | #109 the whole page at 1280 px, every box open (teacher's notes included) (part 6/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-7.png | #110 the whole page at 1280 px, every box open (teacher's notes included) (part 7/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-8.png | #111 the whole page at 1280 px, every box open (teacher's notes included) (part 8/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-9.png | #112 the whole page at 1280 px, every box open (teacher's notes included) (part 9/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-10.png | #113 the whole page at 1280 px, every box open (teacher's notes included) (part 10/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-11.png | #114 the whole page at 1280 px, every box open (teacher's notes included) (part 11/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-12.png | #115 the whole page at 1280 px, every box open (teacher's notes included) (part 12/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-13.png | #116 the whole page at 1280 px, every box open (teacher's notes included) (part 13/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-14.png | #117 the whole page at 1280 px, every box open (teacher's notes included) (part 14/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-15.png | #118 the whole page at 1280 px, every box open (teacher's notes included) (part 15/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-16.png | #119 the whole page at 1280 px, every box open (teacher's notes included) (part 16/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-17.png | #120 the whole page at 1280 px, every box open (teacher's notes included) (part 17/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-18.png | #121 the whole page at 1280 px, every box open (teacher's notes included) (part 18/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-19.png | #122 the whole page at 1280 px, every box open (teacher's notes included) (part 19/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-20.png | #123 the whole page at 1280 px, every box open (teacher's notes included) (part 20/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-21.png | #124 the whole page at 1280 px, every box open (teacher's notes included) (part 21/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-22.png | #125 the whole page at 1280 px, every box open (teacher's notes included) (part 22/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-23.png | #126 the whole page at 1280 px, every box open (teacher's notes included) (part 23/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-24.png | #127 the whole page at 1280 px, every box open (teacher's notes included) (part 24/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-25.png | #128 the whole page at 1280 px, every box open (teacher's notes included) (part 25/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-26.png | #129 the whole page at 1280 px, every box open (teacher's notes included) (part 26/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-27.png | #130 the whole page at 1280 px, every box open (teacher's notes included) (part 27/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-28.png | #131 the whole page at 1280 px, every box open (teacher's notes included) (part 28/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-29.png | #132 the whole page at 1280 px, every box open (teacher's notes included) (part 29/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-30.png | #133 the whole page at 1280 px, every box open (teacher's notes included) (part 30/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-31.png | #134 the whole page at 1280 px, every box open (teacher's notes included) (part 31/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-32.png | #135 the whole page at 1280 px, every box open (teacher's notes included) (part 32/32) | 1160×18 | 27 |

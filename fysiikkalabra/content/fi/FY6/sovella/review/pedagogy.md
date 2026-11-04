@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: b106a60fd17e0ee3
+CONTENT-HASH: b1e8c35e57ad6a01
 
 ## Blocking
 
@@ -10,12 +10,14 @@ None. Both round 1 items are resolved.
 
 ## Polish
 
+- Round 3: s2 c criterion 2 now bundles lamp brightness and cable heating in one point; acceptable since both follow from the same current argument, but a grader may want a partial-credit note.
 - s1 b: tolerance for R_s is now 0,09, but the accepted slope range in solutions.md is still -1,1...-1,3 V/A (about 8 %); a trivial mismatch.
 - s3 c: the `conclusion` key now carries the "yläraja" and the energy fate; fine, but "energia siirtyy ilmaan" is no longer tied to an explicit question word. The text asks "minne työ jää", so it is covered.
 - Coverage unchanged: no task on diode/LED/solar cell (fy6-14) or battery charging (fy6-9); graph competency only in s1.
 
 ## Checked
 
+- Round 3 diff (s2 c): the question asks about cable heating, and the *Kaapeli* paragraph in solutions.md (2,5 W vs 5,0 W) and criterion 2 now match it and the answers.py values. Points unchanged (4).
 - Part point sums still match their criteria in all 16 parts; assumptions criteria removed from s2 d and s3 c without changing totals.
 - s4 text now says a step-up circuit charges the capacitor, which removes the "small battery gives 300 V" confusion; s4 d adds the resistor power (9 W) and a "älä yritä purkaa itse" line, so the safety point is covered.
 - E rounding in s4 a (15 J) agrees with the later "noin 15 J" in d.

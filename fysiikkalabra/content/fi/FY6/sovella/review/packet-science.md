@@ -1,6 +1,6 @@
 # Sovella itsenäisesti FY6 (fi): science packet
 
-Course: FY6 Sähkö, 2 op. Content hash now: b106a60fd17e0ee3 (python scripts/practice.py hash FY6). Reports: science=stale, pedagogy=stale, visual=stale
+Course: FY6 Sähkö, 2 op. Content hash now: b1e8c35e57ad6a01 (python scripts/practice.py hash FY6). Reports: science=stale, pedagogy=stale, visual=stale
 
 ## Scope
 Central contents: jännite ja sähkövirta tasavirtapiireissä; resistanssi ja Ohmin laki; sähköteho ja Joulen laki; vastusten kytkennät ja Kirchhoffin lait; akut ja akun latauspiiri; Coulombin laki ja homogeeninen sähkökenttä; potentiaalienergia ja potentiaali homogeenisessa sähkökentässä; kondensaattori ja kondensaattorin energia; puolijohteet, diodi ja LED komponentteina virtapiirissä; sähköturvallisuus: sulake, suojausluokitus ja läpilyöntilujuus
@@ -46,7 +46,7 @@ practice.py check: OK
 {"fy6-s1-fit-slope": -1.1943, "fy6-s1-fit-icpt": 4.598, "fy6-s1-slope": -1.2, "fy6-s1-b-E": 4.6, "fy6-s1-b-Rs": 1.2, "fy6-s1-Ik": 3.833, "fy6-s1-c-P": 2.0, "fy6-s1-c-I": 0.5, "fy6-s1-c-Pbatt": 0.3, "fy6-s1-c-osuus": 13.04, "fy6-s1-c-U": 4.0, "fy6-s1-d-dRs": 0.08, "fy6-s1-d-maxres": 0.02, "fy6-s2-RA": 6.0, "fy6-s2-RB": 12.0, "fy6-s2-Rp": 4.0, "fy6-s2-Rtot": 4.8, "fy6-s2-a": 2.5, "fy6-s2-a-UL": 10.0, "fy6-s2-b": 16.667, "fy6-s2-b-PB": 8.333, "fy6-s2-b-Pc": 5.0, "fy6-s2-b-Pbatt": 30.0, "fy6-s2-b-eff": 0.8333, "fy6-s2-c-I": 1.7647, "fy6-s2-c-UA": 10.5882, "fy6-s2-c-PA": 18.685, "fy6-s2-c-Pc": 2.491, "fy6-s2-c-Ucable": 1.412, "fy6-s2-c-Ucable0": 2.0, "fy6-s2-RC": 4.0, "fy6-s2-d-Rp": 2.0, "fy6-s2-d": 4.2857, "fy6-s2-d-UL": 8.571, "fy6-s2-d-PC": 18.367, "fy6-s2-d-Pc": 14.694, "fy6-s3-a-E": 300000, "fy6-s3-a": 1.8e-07, "fy6-s3-a-G": 3.924e-09, "fy6-s3-a-ratio": 45.87, "fy6-s3-a-Eair": 0.1, "fy6-s3-a-acc": 450.0, "fy6-s3-b": 13.416, "fy6-s3-b-W": 3.6e-08, "fy6-s3-b-Wg": 7.848e-10, "fy6-s3-c-Ek": 5e-09, "fy6-s3-c-share": 0.1389, "fy6-s3-c-rest": 3.1e-08, "fy6-s3-d": 3.2356799999999993e-09, "fy6-s3-d-vsF": 0.018, "fy6-s3-d-vsG": 0.825, "fy6-s4-a": 14.85, "fy6-s4-b": 6.864, "fy6-s4-b-Eb": 7.986, "fy6-s4-b-share": 0.4622, "fy6-s4-c": 26.4, "fy6-s4-c-dQ": 26.4, "fy6-s4-c-P": 6864.0, "fy6-s4-Qa": 0.099, "fy6-s4-d-I": 0.3, "fy6-s4-d-Ires": 30.0}
 
 ## Your job
-Judge the files below as the science reviewer (.claude/agents/science-reviewer.md, "Sovella itsenäisesti"). Write content/fi/FY6/sovella/review/science.md: line 1 `VERDICT: PASS|FAIL`, line 2 `CONTENT-HASH: b106a60fd17e0ee3`, then Blocking, Polish, Checked (under 400 words).
+Judge the files below as the science reviewer (.claude/agents/science-reviewer.md, "Sovella itsenäisesti"). Write content/fi/FY6/sovella/review/science.md: line 1 `VERDICT: PASS|FAIL`, line 2 `CONTENT-HASH: b1e8c35e57ad6a01`, then Blocking, Polish, Checked (under 400 words).
 
 ## content/fi/FY6/sovella/tasks.json
 ```
@@ -285,7 +285,7 @@ Judge the files below as the science reviewer (.claude/agents/science-reviewer.m
               "points": 1
             },
             {
-              "text": "Perustelee, että pienempi virta pienentää jännitehäviötä kaapelissa ($R_\\text{k} I$ pienenee), jolloin lampulle A jää suurempi jännite ja se palaa kirkkaammin, vaikka sen oma haara ei muuttunut.",
+              "text": "Perustelee, että pienempi virta pienentää jännitehäviötä kaapelissa ($R_\\text{k} I$ pienenee), jolloin lampulle A jää suurempi jännite ja se palaa kirkkaammin, ja että kaapeliin siirtyvä teho $R_\\text{k} I^2$ pienenee noin $5{,}0\\,\\text{W}$:sta $2{,}5\\,\\text{W}$:iin, joten kaapeli lämpenee vähemmän.",
               "tag": "concept",
               "points": 1
             },
@@ -718,6 +718,8 @@ Pystyakselin asteikko alkaa arvosta $3{,}6\,\text{V}$, jotta pisteiden vähäine
 **Mallivastaus:** *Virta.* Kokonaisresistanssi on nyt $R = 0{,}80\,\Omega + 6{,}0\,\Omega = 6{,}8\,\Omega$ ja virta $I = \dfrac{12{,}0\,\text{V}}{6{,}8\,\Omega} \approx 1{,}8\,\text{A}$, aiemmin $2{,}5\,\text{A}$.
 
 *Kirkkaus.* Pienempi virta pienentää kaapelin jännitehäviötä: $0{,}80\,\Omega \cdot 1{,}76\,\text{A} \approx 1{,}4\,\text{V}$, aiemmin $2{,}0\,\text{V}$. Lampulle A jää siksi suurempi jännite $U_\text{A} \approx 10{,}6\,\text{V}$, ja sen teho on $\dfrac{(10{,}6\,\text{V})^2}{6{,}0\,\Omega} \approx 18{,}7\,\text{W}$, aiemmin $16{,}7\,\text{W}$. Lamppu A siis palaa kirkkaammin, vaikka sen omassa haarassa ei muuttunut mikään.
+
+*Kaapeli.* Kaapeliin siirtyy lämpönä teho $R_\text{k} I^2 = 0{,}80\,\Omega \cdot (1{,}76\,\text{A})^2 \approx 2{,}5\,\text{W}$, aiemmin $5{,}0\,\text{W}$. Kaapeli lämpenee siis vähemmän, koska teho riippuu virran neliöstä.
 
 *Johtopäätös.* Rinnankytketyt lamput ovat toisistaan riippumattomia vain, jos jännite niiden yli pysyy vakiona. Kaapelin resistanssi tekee lampuista hieman riippuvaisia toisistaan: jos kaapelin resistanssi olisi nolla, lampun A kirkkaus ei muuttuisi lainkaan.
 
