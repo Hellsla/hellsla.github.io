@@ -121,3 +121,76 @@ $$L = \frac{V}{A} = \frac{m}{\rho\,\pi r^2}$$
 **Substitution:** $V = \dfrac{0.50\,\text{kg}}{8960\,\tfrac{\text{kg}}{\text{m}^3}} = 5.58 \cdot 10^{-5}\,\text{m}^3$ and $A = \pi \cdot 2.5 \cdot 10^{-7}\,\text{m}^2 = 7.85 \cdot 10^{-7}\,\text{m}^2$, so $L = \dfrac{5.58 \cdot 10^{-5}\,\text{m}^3}{7.85 \cdot 10^{-7}\,\text{m}^2} = 71.1\,\text{m}$
 **Answer:** $71\,\text{m}$, two significant figures, because the diameter $1.0\,\text{mm}$ is known to two figures.
 **Reasonableness:** Half a kilogram of copper has a volume of only about $56\,\text{cm}^3$, that is, half a decilitre. Drawn into a thin wire one thousandth of a metre thick, it is enough for tens of metres of length, so $71\,\text{m}$ is believable.
+
+
+## fy1-7-L1-06
+**Find:** how the density changes when a uniform aluminium block is cut in half.
+**Principle:** Density $\rho = \dfrac{m}{V}$ is the ratio of mass to volume, and it is a property of the substance. The block is aluminium all the way through, so each half is the same substance as the whole block.
+**Model answer:** The density stays the same. When the block is cut in half, the mass $m$ and the volume $V$ both halve, so the ratio $m : V$ does not change: the density of each part is still $2.70\,\text{g/cm}^3$. Density does not depend on the size or shape of the object, only on the substance.
+
+## fy1-7-L1-07
+**Find:** what happens when cooking oil is poured into water, when the density of the oil is $920\,\text{kg/m}^3$ and that of water is $1000\,\text{kg/m}^3$.
+**Principle:** Density tells how much mass there is per unit of volume. A liquid with a smaller density is lighter in the same volume, and it settles on top of a liquid with a greater density.
+**Model answer:** The density of the oil, $920\,\text{kg/m}^3$, is smaller than the density of water, $1000\,\text{kg/m}^3$, so the oil stays on top of the water as a layer of its own. The same is shown by the fact that the density of the oil is $0.92$ times the density of water: a cubic metre of oil has a mass of $920\,\text{kg}$ and a cubic metre of water $1000\,\text{kg}$. The oil does not mix with the water, so the density decides which liquid is on top; the thickness or the amount of the liquid does not matter.
+
+## fy1-7-L1-08
+**Given:** volume of the lead sinker $V = 5.00\,\text{cm}^3$ and density of lead $\rho = 11.3\,\tfrac{\text{g}}{\text{cm}^3}$
+**Find:** the mass $m$ of the sinker in grams
+**Principle:** The sinker is lead all the way through, so the mass is directly proportional to volume and the constant of proportionality is the density of lead.
+**Formula:** Solve for the mass from $\rho = \dfrac{m}{V}$: $m = \rho V$
+**Conversions:** Not needed: the volume is in cubic centimetres and the density in $\text{g/cm}^3$, so $\text{cm}^3$ cancels and grams remain.
+**Substitution:** $m = 11.3\,\tfrac{\text{g}}{\text{cm}^3} \cdot 5.00\,\text{cm}^3 = 56.5\,\text{g}$
+**Answer:** $56.5\,\text{g}$, three significant figures like the given values.
+**Reasonableness:** Five cubic centimetres of water would have a mass of about $5\,\text{g}$. The density of lead is about $11$ times the density of water, so the mass is about $11 \cdot 5\,\text{g} = 55\,\text{g}$, which fits the result $56.5\,\text{g}$.
+
+## fy1-7-L2-05
+**Given:** the measurement points $(V;\ m)$ in the table: $(10.0\,\text{cm}^3;\ 27.3\,\text{g})$, $(20.0\,\text{cm}^3;\ 53.5\,\text{g})$, $(30.0\,\text{cm}^3;\ 81.6\,\text{g})$, $(40.0\,\text{cm}^3;\ 107.9\,\text{g})$ and $(50.0\,\text{cm}^3;\ 135.4\,\text{g})$
+**Find:** the density $\rho$ of the substance in $\text{g/cm}^3$ and the name of the substance
+**Principle:** The mass of a given substance is directly proportional to volume, $m = \rho V$, so the points lie on a straight line through the origin, and the slope of the line is the density. The line is drawn through the middle of the set of points, and the slope is calculated from points on the line, not from a single measurement point.
+**Reading the graph:** The points lie on a rising straight line with points on both sides of it. The fitted line passes approximately through the points $(0\,\text{cm}^3;\ 0\,\text{g})$ and $(50.0\,\text{cm}^3;\ 135\,\text{g})$. The points are read from the line and chosen far apart.
+**Formula:** $\rho = \dfrac{\Delta m}{\Delta V} = \dfrac{m_2 - m_1}{V_2 - V_1}$
+**Conversions:** Not needed: the mass is in grams and the volume in cubic centimetres, like the requested unit $\text{g/cm}^3$.
+**Substitution:** $\rho = \dfrac{135\,\text{g} - 0\,\text{g}}{50.0\,\text{cm}^3 - 0\,\text{cm}^3} = 2.70\,\tfrac{\text{g}}{\text{cm}^3}$
+**Answer:** $2.7\,\tfrac{\text{g}}{\text{cm}^3}$, two significant figures, because the line is fitted by eye. A fit by eye varies, so about $2.62\text{–}2.78\,\text{g/cm}^3$ is a good answer. In the table the density of aluminium is $2.70\,\text{g/cm}^3$, so the substance is aluminium.
+**Reasonableness:** The line passes through the origin, as it should, because an object with a volume of zero has a mass of zero. Check: $27.3\,\text{g} : 10.0\,\text{cm}^3 = 2.73\,\tfrac{\text{g}}{\text{cm}^3}$ and $135.4\,\text{g} : 50.0\,\text{cm}^3 = 2.71\,\tfrac{\text{g}}{\text{cm}^3}$, so every point gives almost the same value.
+
+## fy1-7-L2-06
+**Given:** the measurement points $(V;\ m_\text{tot})$ in the table: $(20.0\,\text{cm}^3;\ 103.6\,\text{g})$, $(40.0\,\text{cm}^3;\ 121.2\,\text{g})$, $(60.0\,\text{cm}^3;\ 140.5\,\text{g})$, $(80.0\,\text{cm}^3;\ 158.9\,\text{g})$ and $(100.0\,\text{cm}^3;\ 176.8\,\text{g})$
+**Find:** the density $\rho$ of the liquid in $\text{kg/m}^3$, the mass $m_0$ of the empty measuring cylinder and the reason why the line does not pass through the origin
+**Principle:** The balance shows the total mass of the measuring cylinder and the liquid, which follows the linear model $m_\text{tot} = \rho V + m_0$. The density of the liquid is the slope of the line, and the mass $m_0$ of the empty cylinder is the point where the line crosses the vertical axis.
+**Reading the graph:** The points lie on a rising straight line with points on both sides of it. The fitted line passes approximately through the points $(0\,\text{cm}^3;\ 85\,\text{g})$ and $(100\,\text{cm}^3;\ 177\,\text{g})$. The point $(0\,\text{cm}^3;\ 85\,\text{g})$ is where the line crosses the vertical axis.
+**Formula:** $\rho = \dfrac{\Delta m_\text{tot}}{\Delta V} = \dfrac{m_2 - m_1}{V_2 - V_1}$ and $m_0 = m_1 - \rho V_1$
+**Conversions:** $1\,\tfrac{\text{g}}{\text{cm}^3} = 1000\,\tfrac{\text{kg}}{\text{m}^3}$.
+**Substitution:** $\rho = \dfrac{177\,\text{g} - 85\,\text{g}}{100\,\text{cm}^3 - 0\,\text{cm}^3} = \dfrac{92\,\text{g}}{100\,\text{cm}^3} = 0.92\,\tfrac{\text{g}}{\text{cm}^3} = 920\,\tfrac{\text{kg}}{\text{m}^3}$ and $m_0 = 85\,\text{g}$ (where the line crosses the vertical axis)
+**Answer:** the density of the liquid is $920\,\tfrac{\text{kg}}{\text{m}^3}$, two significant figures, because the line is fitted by eye. The mass of the empty measuring cylinder is about $85\,\text{g}$. The line does not pass through the origin, because the balance also shows the mass of the empty measuring cylinder: when there is no liquid, $V = 0$, the balance still shows $m_0$.
+**Reasonableness:** The density $920\,\tfrac{\text{kg}}{\text{m}^3}$ is the same as the density of cooking oil or ice in the table, so the liquid may be cooking oil. Check at the point $V = 60\,\text{cm}^3$: $85\,\text{g}\,{+}\,0.92 \cdot 60\,\text{g} = 140\,\text{g}$, measured $140.5\,\text{g}$.
+
+## fy1-7-L2-07
+**Given:** mass of the object $m = 107\,\text{g}$, readings of the measuring cylinder $V_1 = 60\,\text{ml}$ and $V_2 = 72\,\text{ml}$; the student’s result $\rho = 1.5\,\tfrac{\text{g}}{\text{cm}^3}$
+**Find:** the student’s error, the correct density $\rho$ in $\text{g/cm}^3$ and the substance
+**Principle:** In the water displacement method the volume of the object is the rise of the water level, that is, the difference of the readings. The reading $V_2$ of the measuring cylinder also includes the water that was in the cylinder before the object was lowered in. Density is the mass of the object divided by the volume of the object.
+**Formula:** $V = V_2 - V_1$ and $\rho = \dfrac{m}{V}$
+**Conversions:** $V = 72\,\text{ml} - 60\,\text{ml} = 12\,\text{ml} = 12\,\text{cm}^3$, because $1\,\text{ml} = 1\,\text{cm}^3$.
+**Substitution:** $\rho = \dfrac{107\,\text{g}}{12\,\text{cm}^3} = 8.92\,\tfrac{\text{g}}{\text{cm}^3}$
+**Answer:** The student divided the mass by the reading $72\,\text{ml}$ after the object was lowered in, not by the difference of the readings, so the volume was six times too large and the density too small. The correct density is $8.9\,\tfrac{\text{g}}{\text{cm}^3}$, two significant figures, because the volume $12\,\text{ml}$ is a two-figure number. In the table the density of copper is $8.96\,\tfrac{\text{g}}{\text{cm}^3}$, so the object may be copper, not plastic.
+**Reasonableness:** The result $8.9\,\tfrac{\text{g}}{\text{cm}^3}$ is over eight times the density of water, which fits a metal. The difference of the readings is smaller than either reading, so the difference has relatively more uncertainty: if the error of each reading is $1\,\text{ml}$, the volume is $12 \pm 2\,\text{ml}$ and the density can be about $7.6\text{–}10.7\,\tfrac{\text{g}}{\text{cm}^3}$.
+
+## fy1-7-L3-04
+**Given:** mass of the object $m = 113\,\text{g}$, readings of the measuring cylinder $V_1 = 50.0\,\text{ml}$ and $V_2 = 62.0\,\text{ml}$, volume of the air bubble $V_\text{b} = 2.0\,\text{ml}$; from the table the density of copper $8.96\,\tfrac{\text{g}}{\text{cm}^3}$ and of lead $11.3\,\tfrac{\text{g}}{\text{cm}^3}$
+**Find:** the true density $\rho$ of the object in $\text{g/cm}^3$, the density $\rho'$ obtained by the student, its percentage error and the metals that the densities suggest
+**Principle:** In the water displacement method the volume is the difference of the readings $V_2 - V_1$. The bubble displaces water along with the object, so the difference includes both the volume of the object and the volume of the bubble. The mass is weighed separately, so the error comes only from the volume.
+**Formula:** $V' = V_2 - V_1$, $V = V' - V_\text{b}$, $\rho = \dfrac{m}{V}$ and $\rho' = \dfrac{m}{V'}$; the percentage error is $\dfrac{\rho' - \rho}{\rho} \cdot 100\,\%$
+**Conversions:** $1\,\text{ml} = 1\,\text{cm}^3$, so $V' = 12.0\,\text{cm}^3$ and $V_\text{b} = 2.0\,\text{cm}^3$.
+**Substitution:** $V' = 62.0\,\text{ml} - 50.0\,\text{ml} = 12.0\,\text{ml}$ and $V = 12.0\,\text{cm}^3 - 2.0\,\text{cm}^3 = 10.0\,\text{cm}^3$. The true density is $\rho = \dfrac{113\,\text{g}}{10.0\,\text{cm}^3} = 11.3\,\tfrac{\text{g}}{\text{cm}^3}$ and the student’s result is $\rho' = \dfrac{113\,\text{g}}{12.0\,\text{cm}^3} = 9.42\,\tfrac{\text{g}}{\text{cm}^3}$. The error is $\dfrac{9.42 - 11.3}{11.3} \cdot 100\,\% = -16.7\,\%$.
+**Answer:** The true density is $11.3\,\tfrac{\text{g}}{\text{cm}^3}$, three significant figures, because the mass and the readings are given to three figures. The student’s result $9.42\,\tfrac{\text{g}}{\text{cm}^3}$ is about $17\,\%$ too small, because the measured volume was too large. The true density matches lead ($11.3\,\tfrac{\text{g}}{\text{cm}^3}$), but the erroneous result is closer to copper ($8.96\,\tfrac{\text{g}}{\text{cm}^3}$), so the bubble can lead to the wrong metal. The bubble can be removed by tapping the object, and it can be noticed by looking at the cylinder from the side.
+**Reasonableness:** The mass is correct and the volume too large, so the density has to come out too small, and it did: $9.42 < 11.3$. Check: $0.83 \cdot 11.3 \approx 9.4$.
+
+## fy1-7-L3-05
+**Given:** volume of the alloy object $V = 100\,\text{cm}^3$ and mass $m = 520\,\text{g}$; from the table $\rho_\text{Cu} = 8.96\,\tfrac{\text{g}}{\text{cm}^3}$ and $\rho_\text{Al} = 2.70\,\tfrac{\text{g}}{\text{cm}^3}$; the volumes add up
+**Find:** the volume $V_\text{Cu}$ of copper in cubic centimetres
+**Principle:** The total volume is the sum of the volumes of the parts and the total mass is the sum of the masses of the parts. The mass of each part is density times volume. There are two unknowns, $V_\text{Cu}$ and $V_\text{Al}$, so two equations are needed: the sum of the volumes and the sum of the masses.
+**Formula:** For the volumes $V_\text{Cu} + V_\text{Al} = V$ and for the masses $\rho_\text{Cu} V_\text{Cu} + \rho_\text{Al} V_\text{Al} = m$. Substituting $V_\text{Al} = V - V_\text{Cu}$ into the second equation gives $V_\text{Cu} = \dfrac{m - \rho_\text{Al} V}{\rho_\text{Cu} - \rho_\text{Al}}$
+**Conversions:** Not needed: the masses are in grams, the volumes in cubic centimetres and the densities in $\text{g/cm}^3$.
+**Substitution:** $V_\text{Cu} = \dfrac{520\,\text{g} - 2.70\,\tfrac{\text{g}}{\text{cm}^3} \cdot 100\,\text{cm}^3}{8.96\,\tfrac{\text{g}}{\text{cm}^3} - 2.70\,\tfrac{\text{g}}{\text{cm}^3}} = \dfrac{250\,\text{g}}{6.26\,\tfrac{\text{g}}{\text{cm}^3}} = 39.9\,\text{cm}^3$
+**Answer:** $39.9\,\text{cm}^3$, three significant figures, because the densities in the table have three figures and the data $520\,\text{g}$ and $100\,\text{cm}^3$ are read to three figures. The volume of aluminium is $V_\text{Al} = 100\,\text{cm}^3 - 39.9\,\text{cm}^3 = 60.1\,\text{cm}^3$.
+**Reasonableness:** If the object were pure aluminium, its mass would be $270\,\text{g}$, and if it were pure copper, $896\,\text{g}$. The actual mass $520\,\text{g}$ is between these and closer to aluminium, so less than half of the volume is copper, like $39.9\,\text{cm}^3$. There is more aluminium by volume ($60.1\,\text{cm}^3$), but more copper by mass: the mass of the copper is about $357.5\,\text{g}$ and that of the aluminium about $162.3\,\text{g}$, because the density of copper is several times as great. Check: $8.96 \cdot 39.9\,\text{g} + 2.70 \cdot 60.1\,\text{g} = 357.5\,\text{g} + 162.3\,\text{g} = 519.8\,\text{g} \approx 520\,\text{g}$.

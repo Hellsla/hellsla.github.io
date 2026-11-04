@@ -1,13 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: e7319904009dc653
-
-Delta review over the audit's PASS (f67273566e2625ad): one exercise replaced by a figure task, LaTeX units.
+CONTENT-HASH: 1b1e5178b3cffb72
+Round: 2
 
 ## Blocking
-- none
+(none)
+
 ## Polish
-- fy1-5-L1-03: a 'kävelijä' at 2,5 m/s (9 km/h) is a jog; say 'kulkija' or 'pyöräilijä' or scale the line to 1,5 m/s. The solution calls it 'reipas kävely tai hidas hölkkä'.
-- The question needs extrapolation past the figure (150 m while the graph ends at 25 m) plus a division, which is nearer L2 than L1.
+- fy1-5-L3-05: "lähes pystysuora" is a ratio of 30:1 (about 88 degrees); say "hyvin jyrkältä" or give the angle so the claim is not a matter of taste. The numeric answer (300 m/s) checks only the first sub-question; the scale and reasoning parts rest on the model solution.
+- fy1-5-L3-04: the phrase "Hetkeä 35 s ei ole taulukossa" is a good hint, but the solution could state the piecewise equation s = 30 m + 1,0 m/s (t - 10 s) explicitly in Sijoitus (it appears in Kaava only).
+- L2 plan item "kahden kulkijan (t,x)-kuvaaja (figure) -> kohtaamishetki" in docs/exercise-bank/FY1.md still has no matching figure task (carried over from round 1); note it in the plan.
+- fy1-5-L2-06 stays a near-copy of the lesson's "Yleinen virhekäsitys" (carried over, acceptable as practice).
+- fy1-5-L1-08 is nearer level 2 than L1-05 (carried over).
+
 ## Checked
-- Figure needed: no value in the text except 150 m; speed comes from grid crossings (8 s; 20 m). At 360 px the line passes (4,10), (8,20), (10,25) exactly on gridlines; x labels every 2 s, y every 5 m, legible.
-- v=20/8=2,5 m/s; t=150/2,5=60 s; tolerance 3 % covers a read of 2,4-2,6; **Kuvaajan lukeminen:** present; aria-label lists crossings, not the answer.
+- Round-1 Blocking resolved: L3-05 is now a data task (bullet, 0,010 s frames, 300 m/s, drawing scale 3,0 cm vs 0,10 cm) with a full solution (Annettu, Kaava, Muunnokset, Sijoitus, Järkevyys).
+- L3-05 arithmetic: 3,0 m / 0,010 s = 300 m/s; 3,0 cm rise and 0,10 cm run are correct for the given scales.
+- L3-04 now needs the model: s(35 s) = 55 m, (55-15)/30 = 1,33 m/s, answer 1,3 with tolerance 0,03; naive mean 2,0 m/s explained with the 5 s / 25 s weights.
+- L1-07 retagged "model" (no graph shown): round-1 Polish done.
+- x renamed to s in L2-05, L3-04 to match the lesson; solution text consistent.
+- Level fit: L3-05 and L3-04 are multi-step data and reasoning tasks; no duplicate of Voyager L3-01..03.
