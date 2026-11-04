@@ -167,6 +167,8 @@ Kuvassa samat vastukset $4\,\Omega$ ja $8\,\Omega$ on kytketty $12\,\text{V}$:n 
   <line x1="24" y1="157" x2="576" y2="157" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy6/toaster-glowing.webp" alt="Leivänpaahdin ylhäältä. Leivän alla ja vieressä on oransseina hehkuvia vastuslankoja."><figcaption>Leivänpaahtimen vastuslangat hehkuvat. Langoilla on suuri resistanssi. Siksi lähes koko teho tulee lankoihin. Johdossa kulkee sama virta, mutta johto pysyy viileänä.</figcaption></figure>
+
 ### Paahdin ja sen johto
 Paahtimen vastuslanka ja johto ovat sarjassa. Niiden läpi kulkee siis sama virta. Vastuslangan resistanssi on kymmeniä ohmeja. Johdon kuparijohtimien resistanssi on vain sadasosia ohmista. Paahtimen teho on $900\,\text{W}$. Silloin vastuslangan resistanssi on noin $59\,\Omega$ ja virta noin $3{,}9\,\text{A}$. Oletetaan, että johdon resistanssi on $0{,}050\,\Omega$. Silloin johto saa tehon $0{,}050\,\Omega \cdot (3{,}9\,\text{A})^2 \approx 0{,}8\,\text{W}$. Tämä teho jakautuu koko johdon pituudelle. Joulen lain mukaan johtoon tuleva teho on siksi yli tuhat kertaa pienempi kuin vastuslankaan tuleva. Resistanssien suhde on $59\,\Omega : 0{,}050\,\Omega \approx 1200$. Vastuslanka sen sijaan hehkuu.
 

@@ -238,13 +238,24 @@ def home_row(code, title, question, coming=False):
             f'<span class="mod-q" title="{q}">{q}</span></span><span class="mod-go" aria-hidden="true">→</span></a></li>')
 
 
+def planned_row(p):
+    """A planned course of the school (teacher 2026-11-04): icon, name and one sentence, greyed out and not a link, as
+    the course has no content yet."""
+    q = esc(p["text"])
+    return (f'<li><div class="mod-row coming planned">{module_icons.img(p["icon"], 40)}'
+            f'<span class="mod-text"><span class="mod-name"><span class="mod-title">{esc(p["title"])}</span></span>'
+            f'<span class="mod-q" title="{q}">{q}</span></span></div></li>')
+
+
 ABOUT = "tietoa.html"
 PRIVACY = "tietosuoja.html"   # Tietosuoja (teacher 2026-11-04): no student data, no cookies, what the browser keeps and why
 
 
 def front_chrome(html):
     """The front page's own header and footer (teacher 2026-11-03): Näin opiskelet beside Moduulit and Lukuvinkit and
-    Sivustosta after them (2026-11-04); its footer ends in Sivustosta like every page's."""
+    Sivustosta after them (2026-11-04); its footer is only Ruukkilabra and Tietosuoja like every page's (2026-11-04). No Moduulit link in its header:
+    the front page is the module list (teacher 2026-11-04)."""
+    html = re.sub(r'<a class="nav-modules" [^>]*>[^<]*</a>', "", html, count=1)
     html = html.replace('<a class="nav-reading"', f'<a class="nav-study" href="{STUDY_PAGE}">{esc(T("site.study"))}</a><a class="nav-reading"', 1)
     html = html.replace(f'{esc(T("site.reading_tips"))}</a>', f'{esc(T("site.reading_tips"))}</a><a class="nav-about" href="{ABOUT}">{esc(T("site.about"))}</a>', 1)   # Sivustosta in the header too (teacher 2026-11-04)
     return html
@@ -916,6 +927,7 @@ def build_language(lang):
     # modules on the left; on the right Tulossa (dimmed) and the school's own courses under the school's name. The
     # study guide is a page of its own, nain-opiskelet.html (study_guide), linked from the header as "Näin opiskelet".
     school = next(iter(local.values()))["school"] if local else ""
+    plan_rows = "".join(planned_row(p) for p in local_courses.planned(lang))
     home = (local_notes +
         f'<section class="home-intro" aria-labelledby="h-intro"><h1 id="h-intro">{T("site.home_h1")}</h1>'
         f'<p class="lead">{T("site.home_sub")}</p>'
@@ -930,6 +942,8 @@ def build_language(lang):
         # national modules: from 700 px the logo sits above the column, out of the flow, site.css .mod-school)
         + (f'<h3 class="mod-group mod-school"><img src="brand/kiviruukin-lukio-rivi-musta.svg" alt="{esc(school)}" width="293" height="32"></h3>'
            f'<ul class="mod-list local-list">{local_rows}</ul>' if local_rows else "")
+        # after a gap, the school's planned courses, greyed out and unlinked (teacher 2026-11-04: no content yet)
+        + (f'<ul class="mod-list plan-list" aria-label="{esc(T("site.planned_courses"))}">{plan_rows}</ul>' if plan_rows else "")
         + '</div></div></section>')
     (out / "index.html").write_text(front_chrome(page(T("site.home_title"), home, "", "index.html", T("site.home_description"), main_class="home",
                                          full_title=f'{T("site.name")} — {T("site.subtitle")}')))
@@ -938,7 +952,7 @@ def build_language(lang):
         names = {c: course_text(c, curriculum[c])["title"] for c in concept_cards.modules(concept_cards.data_lang(lang))}
         (out / concept_cards.APP).write_text(page(T("cards.app_title"), concept_cards.app_page_body(T, lang, names, {k: v for c in names for k, v in chapter_titles(c).items()}),
                                              f'<a href="index.html">{T("site.name")}</a> › {T("cards.app_title")}', concept_cards.APP, T("cards.app_description"), main_class="reading kc-app-page"))
-    # Lukuvinkit (teacher 2026-11-03, scripts/reading_tips.py): a reading list of physics books, linked from every header and footer
+    # Lukuvinkit (teacher 2026-11-03, scripts/reading_tips.py): a reading list of physics books, linked from every header (not the footer, teacher 2026-11-04)
     rt = reading_tips.load(lang) if reading_tips.SOURCE.is_file() else None
     if rt: (out / reading_tips.PAGE).write_text(page(rt["title"], reading_tips.body(T, lang), f'<a href="index.html">{T("site.name")}</a> › {esc(rt["title"])}',
                                               reading_tips.PAGE, rt["description"], main_class="reading reading-tips"))

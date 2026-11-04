@@ -270,7 +270,7 @@
     {
       "id": "fy3-13-L3-01",
       "level": 3,
-      "text": "Mittausalue on 20,0–$100{,}0\\,{}^\\circ\\text{C}$. Pisteessä $20{,}0\\,{}^\\circ\\text{C}$ paine on $106{,}0 \\pm 1{,}0\\,\\text{kPa}$ ja pisteessä $100{,}0\\,{}^\\circ\\text{C}$ $137{,}0 \\pm 1{,}0\\,\\text{kPa}$. Jyrkin ääriviiva kulkee pisteiden ($20{,}0\\,{}^\\circ\\text{C}$; $105{,}0\\,\\text{kPa}$) ja ($100{,}0\\,{}^\\circ\\text{C}$; $138{,}0\\,\\text{kPa}$) kautta, loivin pisteiden ($20{,}0\\,{}^\\circ\\text{C}$; $107{,}0\\,\\text{kPa}$) ja ($100{,}0\\,{}^\\circ\\text{C}$; $136{,}0\\,\\text{kPa}$) kautta. Määritä absoluuttisen nollapisteen epävarmuus $\\Delta\\theta_0$ ja päättele, miksi pelkkien päätepisteiden ääriviivat antavat suuremman epävarmuuden kuin seitsemän pisteen aineisto.",
+      "text": "Mittausalue on 20,0–$100{,}0\\,{}^\\circ\\text{C}$. Pisteessä $20{,}0\\,{}^\\circ\\text{C}$ paine on $106{,}0 \\pm 1{,}0\\,\\text{kPa}$ ja pisteessä $100{,}0\\,{}^\\circ\\text{C}$ $137{,}0 \\pm 1{,}0\\,\\text{kPa}$.\n\nJyrkin ääriviiva kulkee pisteiden ($20{,}0\\,{}^\\circ\\text{C}$; $105{,}0\\,\\text{kPa}$) ja ($100{,}0\\,{}^\\circ\\text{C}$; $138{,}0\\,\\text{kPa}$) kautta, loivin pisteiden ($20{,}0\\,{}^\\circ\\text{C}$; $107{,}0\\,\\text{kPa}$) ja ($100{,}0\\,{}^\\circ\\text{C}$; $136{,}0\\,\\text{kPa}$) kautta.\n\nMääritä absoluuttisen nollapisteen epävarmuus $\\Delta\\theta_0$ ja päättele, miksi pelkkien päätepisteiden ääriviivat antavat suuremman epävarmuuden kuin seitsemän pisteen aineisto.",
       "answer": 20.3,
       "unit": "°C",
       "tolerance": 0.03
@@ -278,7 +278,7 @@
     {
       "id": "fy3-13-L3-02",
       "level": 3,
-      "text": "Typpikaasun paine on jäykässä astiassa $100{,}0\\,\\text{kPa}$ lämpötilassa $0\\,{}^\\circ\\text{C}$, ja paine on suoraan verrannollinen kelvinlämpötilaan. Mikä paine suoran mukaan olisi lämpötilassa $77{,}0\\,\\text{K}$, jossa typpi kiehuu normaalipaineessa? Näin pienessä paineessa typpikaasu tiivistyy nesteeksi vasta noin $67\\,\\text{K}$:ssä. Perustele, miksi suoraa ei voi jatkaa absoluuttiseen nollapisteeseen asti. Vastaa paineena kilopascaleina.",
+      "text": "Typpikaasun paine on jäykässä astiassa $100{,}0\\,\\text{kPa}$ lämpötilassa $0\\,{}^\\circ\\text{C}$, ja paine on suoraan verrannollinen kelvinlämpötilaan.\n\nMikä paine suoran mukaan olisi lämpötilassa $77{,}0\\,\\text{K}$, jossa typpi kiehuu normaalipaineessa?\n\nNäin pienessä paineessa typpikaasu tiivistyy nesteeksi vasta noin $67\\,\\text{K}$:ssä. Perustele, miksi suoraa ei voi jatkaa absoluuttiseen nollapisteeseen asti. Vastaa paineena kilopascaleina.",
       "answer": 28.2,
       "unit": "kPa",
       "tolerance": 0.02

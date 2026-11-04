@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 57b913a6fc66f29e
+CONTENT-HASH: 1be00f6735c0ad5d
 
 ## Blocking
-(none)
+- (none)
 
 ## Polish
-- [Minor] lesson.md Hyötysuhde paragraph — "määriteltyyn hyödylliseen käyttötarkoitukseen" is stiff, textbook-abstract; "siihen, mitä varten energiaa otetaan" would read more naturally (optional).
+- [Minor] fy6-9 alt — kennot ovat ruudukossa, ei rivissä, ja teksti "60Ah" on kennon yläpinnassa, ei kyljessä — "Ruudukossa suuria, litteitä, vaaleita akkukennoja ... kennon yläpinnassa teksti 60Ah".
 
 ## Checked
-- batch delta review: opened fy6-9-fig-row-1280 (layout intact), fy6-9-fig-13-390 (energy-flow figure beside the changed Hyötysuhde paragraph, legible, 9,0 Wh / 7,6 Wh / 1,1 + 0,3 Wh match the text), fy6-9-sim-390 (sim readout and legend fit; the changed howto text sits behind Käyttöohje); changed sentences keep LaTeX units ($100\,\%$, $R$, $R_\text{s}$) and read fluently.
+batch delta review: photo file(s) opened and compared with alt text; rendered fy6-9 at 1280 px (float right, 320 px wide, no clipping, beside its paragraph) and 390 px (full-width block, no horizontal overflow); caption physics, Finnish and LaTeX units read; changed typography checked in the capture.

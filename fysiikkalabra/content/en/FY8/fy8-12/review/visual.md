@@ -1,18 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 3f119d54f341f3cc
+CONTENT-HASH: 4aac98fc1dee8909
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] fig 5 (ion-pair legend, 'ion pair: positive ion and e⁻') sits tight to the card's bottom edge at 390 px; add padding.
-- [Minor] fig 6 (GM tube) 'wire (+)' label overlaps the wire end slightly.
+- [Minor] hfir-refueling caption: 'particles move through the water faster than light' should read 'charged particles' (Cherenkov radiation needs charged ones).
 
 ## Checked
-- Delta: graph fy812-tu (Tarkista 2, fig-14-390, stamp matches hash). d axis now labelled 0, 6, 12 … 48 mm: labels clearly separate at 390 px, none overlapping, 'd (mm)' and the axis title clear of the last tick, y labels unchanged, curve and the 800 start marker clear of all labels.
-- 12 mm half-value crossing still readable: 12 is a labelled tick and the gridlines (every 2 mm) remain.
-- Not re-opened: other figures and text unchanged by the diff.
-- Hash at start and end: 3f119d54f341f3cc.
-
-## Scores
-illustrations 4 · typography 5 · English 5 · accessibility 4
+- batch delta review: hfir-refueling and dosimeter-chernobyl photos opened; alts match (blue-glowing core in round lids; yellow pocket meter held on a knee); captions tie to penetrating power and GM tube; layout fine at 1280 and 390 px.

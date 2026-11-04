@@ -19,7 +19,7 @@
     {
       "id": "fy3-14-L1-03",
       "level": 1,
-      "text": "Ice taken from the freezer is added to water in an insulated container. The bars of the graph show three quantities of heat for this mixture: the heat the water can give out as it cools to $0\\,{}^\\circ\\text{C}$, the heat needed to warm the ice to $0\\,{}^\\circ\\text{C}$, and the heat that melting all the ice would need. No heat is transferred to the container or the surroundings. First work out from the graph whether all the ice melts. How many grams of ice melt before thermal equilibrium? Give the answer in grams.",
+      "text": "Ice taken from the freezer is added to water in an insulated container.\n\nThe bars of the graph show three quantities of heat for this mixture: the heat the water can give out as it cools to $0\\,{}^\\circ\\text{C}$, the heat needed to warm the ice to $0\\,{}^\\circ\\text{C}$, and the heat that melting all the ice would need. No heat is transferred to the container or the surroundings.\n\nFirst work out from the graph whether all the ice melts. How many grams of ice melt before thermal equilibrium? Give the answer in grams.",
       "figure": "fy3-14/energy-bars",
       "answer": 60,
       "unit": "g",

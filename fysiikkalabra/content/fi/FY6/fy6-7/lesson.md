@@ -165,6 +165,8 @@ Siksi suuri teho ei yksin tarkoita suurta kulutusta. Vedenkeitin, jonka teho on 
   <foreignObject x="152.5" y="256" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$E = 0{,}20\,\text{kWh}$</span></div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy6/electricity-meter.webp" alt="Musta Siemensin sähkömittari seinällä: ylhäällä numerorulla, jonka viimeinen numero on punaisessa ruudussa, ja sen vieressä yksikkö kWh, alla vaakasuora pyörivä levy."><figcaption>Vanha sähkömittari laskee kodin käyttämää sähköenergiaa kilowattitunteina. Numerorulla kertoo lukeman, ja sen alla oleva levy pyörii sitä nopeammin, mitä suurempi teho kodissa on käytössä.</figcaption></figure>
+
 ### Kilowattitunti on energian yksikkö
 Energian SI-yksikkö on joule, mutta kodin sähköenergia mitataan ja laskutetaan **kilowattitunteina**. Yksi kilowattitunti on energia, jonka $1\,\text{kW}$:n teholla toimiva laite käyttää tunnissa. Kun teho ilmoitetaan kilowatteina ja aika tunteina, energia saadaan suoraan kilowattitunteina. Nimi kertoo laskutavan: kilowatti kertaa tunti, ei kilowatti tunnissa. Yksi kilowattitunti on $3{,}6$ miljoonaa joulea.
 

@@ -270,7 +270,7 @@
     {
       "id": "fy3-13-L3-01",
       "level": 3,
-      "text": "The measurement range is 20.0–$100.0\\,{}^\\circ\\text{C}$. At $20.0\\,{}^\\circ\\text{C}$ the pressure is $106.0 \\pm 1.0\\,\\text{kPa}$ and at $100.0\\,{}^\\circ\\text{C}$ it is $137.0 \\pm 1.0\\,\\text{kPa}$. The steepest limit line passes through the points ($20.0\\,{}^\\circ\\text{C}$; $105.0\\,\\text{kPa}$) and ($100.0\\,{}^\\circ\\text{C}$; $138.0\\,\\text{kPa}$), and the shallowest through the points ($20.0\\,{}^\\circ\\text{C}$; $107.0\\,\\text{kPa}$) and ($100.0\\,{}^\\circ\\text{C}$; $136.0\\,\\text{kPa}$). Determine the uncertainty of absolute zero $\\Delta\\theta_0$ and deduce why limit lines based on the end points alone give a larger uncertainty than the seven-point data.",
+      "text": "The measurement range is 20.0–$100.0\\,{}^\\circ\\text{C}$. At $20.0\\,{}^\\circ\\text{C}$ the pressure is $106.0 \\pm 1.0\\,\\text{kPa}$ and at $100.0\\,{}^\\circ\\text{C}$ it is $137.0 \\pm 1.0\\,\\text{kPa}$.\n\nThe steepest limit line passes through the points ($20.0\\,{}^\\circ\\text{C}$; $105.0\\,\\text{kPa}$) and ($100.0\\,{}^\\circ\\text{C}$; $138.0\\,\\text{kPa}$), and the shallowest through the points ($20.0\\,{}^\\circ\\text{C}$; $107.0\\,\\text{kPa}$) and ($100.0\\,{}^\\circ\\text{C}$; $136.0\\,\\text{kPa}$).\n\nDetermine the uncertainty of absolute zero $\\Delta\\theta_0$ and deduce why limit lines based on the end points alone give a larger uncertainty than the seven-point data.",
       "answer": 20.3,
       "unit": "°C",
       "tolerance": 0.03
@@ -278,7 +278,7 @@
     {
       "id": "fy3-13-L3-02",
       "level": 3,
-      "text": "The pressure of nitrogen gas in a rigid container is $100.0\\,\\text{kPa}$ at $0\\,{}^\\circ\\text{C}$, and the pressure is directly proportional to the temperature in kelvins. What pressure would the line give at $77.0\\,\\text{K}$, where nitrogen boils at normal pressure? At such a low pressure, nitrogen gas condenses into a liquid only at about $67\\,\\text{K}$. Justify why the line cannot be extended all the way to absolute zero. Give your answer as a pressure in kilopascals.",
+      "text": "The pressure of nitrogen gas in a rigid container is $100.0\\,\\text{kPa}$ at $0\\,{}^\\circ\\text{C}$, and the pressure is directly proportional to the temperature in kelvins.\n\nWhat pressure would the line give at $77.0\\,\\text{K}$, where nitrogen boils at normal pressure?\n\nAt such a low pressure, nitrogen gas condenses into a liquid only at about $67\\,\\text{K}$. Justify why the line cannot be extended all the way to absolute zero. Give your answer as a pressure in kilopascals.",
       "answer": 28.2,
       "unit": "kPa",
       "tolerance": 0.02

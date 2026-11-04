@@ -272,7 +272,7 @@
     {
       "id": "fy4-3-L3-01",
       "level": 3,
-      "text": "Kuumailmapallo laskeutuu suoraan alas tasaisella nopeudella. Pallon, sen sisällä olevan kuuman ilman, korin ja matkustajien yhteinen paino on $4{,}62\\,\\text{kN}$. Ympäröivän ilman noste on $4{,}35\\,\\text{kN}$. Kuinka suuri on ilmanvastus palloon, ja mihin suuntaan se osoittaa? Vastaa suuruus kilonewtoneina ja kerro suunta sanoin. Vain suuruus tarkistetaan.",
+      "text": "Kuumailmapallo laskeutuu suoraan alas tasaisella nopeudella. Pallon, sen sisällä olevan kuuman ilman, korin ja matkustajien yhteinen paino on $4{,}62\\,\\text{kN}$. Ympäröivän ilman noste on $4{,}35\\,\\text{kN}$.\n\nKuinka suuri on ilmanvastus palloon, ja mihin suuntaan se osoittaa? Vastaa suuruus kilonewtoneina ja kerro suunta sanoin. Vain suuruus tarkistetaan.",
       "answer": 0.27,
       "unit": "kN",
       "tolerance": 0.02

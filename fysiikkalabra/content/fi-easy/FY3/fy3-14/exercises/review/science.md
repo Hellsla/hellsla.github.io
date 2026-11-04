@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: be3097eb05d83649
+CONTENT-HASH: ffa203d1e90b934b
 Mode: full
-Round: 1
+Round: 2
 
 ## Blocking
-(none)
-
-## Fixed
-- exercises/exercises.json L2-05 — 'vedä siihen suora pisteiden lomaan' (unclear idiom) → 'vedä suora, joka sopii pisteisiin mahdollisimman hyvin'; solutions.md L2-05 'sovitetaan pisteiden lomaan' → 'sovitetaan pisteisiin'.
-- exercises/exercises.json L3-04 — term 'sulavassa jäävesihauteessa' now explained: 'eli jään ja veden seoksessa'.
 
 ## Polish
-- None.
+- None (carried over from round 1: none).
 
 ## Checked
-- Translation review against the reviewed Finnish: all 8 new exercises (L1-06..08, L2-05..07, L3-04..05) in exercises.json and solutions.md. Ids, kinds, answers, units, tolerances, correct flags, choice order and feedback, data table cells and every number matched programmatically against fi; formulas and numbers in solutions.md identical. Selkosuomi: short sentences, common words, one idea per sentence; no content simplified away.
+- Round 2 (delta): only solutions.md L3-04 Sijoitus changed (commits bf75c929d, 6018cf733): long inline fractions became display `aligned` rows, bracket computed first.
+- solutions.md:185-199 recomputed: 0,200·21,8 − 0,0500·8,2 = 3,95; 0,200·23,8 − 0,0500·6,2 = 4,45; 4190·3,95/0,0500 = 331 010 → 331 000 J/kg = 331 kJ/kg; 4190·4,45/0,0500 = 372 910 → 372 900 J/kg = 373 kJ/kg.
+- c): 2100·0,0500·18,0 J = 1890 J; (18 645,5 J − 1890 J)/0,0500 kg = 335 110 → 335 100 J/kg. Identical to the previous chain and to fi; Vastaus (331/373/335 kJ/kg) and answers.py untouched.
+- Formulas identical to fi character for character in the changed block.
+- Hash unchanged at start and end.

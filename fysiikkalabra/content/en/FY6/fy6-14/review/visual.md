@@ -1,13 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: b8859ff155bd028e
+CONTENT-HASH: 42dc1952b6be4191
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- [Minor] The photo is the last element of the theory part, so at 1280 it floats beside the start of the 'Series resistor' section rather than a paragraph about panels; harmless, but a placement before the paragraph that mentions the panel would tie it better.
 
 ## Checked
-- Captures (contact sheets 1-7, sim at 390 and 1280 px, figures, experiment panels): sim canvas, controls, readout and menus (Circuit, Component, Connection, LED circuit / solar cell, silicon diode / red LED / blue LED, forward / reverse direction) are English; figure labels (anode, cathode, forward / reverse direction, silicon diode, maximum power point) are English; no overflow.
-- Experiment names/values in koe-1..5 are English; the reverse and overload canvas labels come from lang keys, not literals.
-- Maths renders; labels fit at 390 px.
+- batch delta review: opened the source image(s) and 1280/390 px renders of the photo(s): solar-panels-jyvaskyla.webp (two rows of dark blue panels, chimney, blue sky: matches alt). Alt matches the visible content, captions physically correct and tied to the chapter, units in LaTeX, photo floats right at 1280 (no clipping, scrollWidth = viewport) and stacks above the caption at 390.

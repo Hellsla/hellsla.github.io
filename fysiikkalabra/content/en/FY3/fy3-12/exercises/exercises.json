@@ -160,7 +160,7 @@
     {
       "id": "fy3-12-L2-04",
       "level": 2,
-      "text": "Snow and ice reflect sunlight much better than a dark sea surface or the ground. Suppose, hypothetically, that the reduction of snow and ice would decrease the fraction of the Sun's radiation reflected by the Earth from $30.0\\,\\%$ to $29.0\\,\\%$ (the real change is smaller). On average $340\\,\\text{W/m}^2$ arrives from the Sun. By how much would the power absorbed by the Earth per square metre increase? Compare the result with the current energy imbalance, which is about $1.0\\,\\text{W/m}^2$.",
+      "text": "Snow and ice reflect sunlight much better than a dark sea surface or the ground.\n\nSuppose, hypothetically, that the reduction of snow and ice would decrease the fraction of the Sun's radiation reflected by the Earth from $30.0\\,\\%$ to $29.0\\,\\%$ (the real change is smaller). On average $340\\,\\text{W/m}^2$ arrives from the Sun.\n\nBy how much would the power absorbed by the Earth per square metre increase? Compare the result with the current energy imbalance, which is about $1.0\\,\\text{W/m}^2$.",
       "answer": 3.4,
       "unit": "W/m²",
       "tolerance": 0.02
@@ -270,7 +270,7 @@
     {
       "id": "fy3-12-L3-01",
       "level": 3,
-      "text": "$0.60\\,\\text{kg}$ of hot coffee is packed into a thermos flask for a ski trip. The flask has two nested walls with the air removed from between them, and the surfaces of the walls are shiny. Explain which ways of heat transfer the vacuum and the shiny surfaces prevent and how. Through which route does heat still escape? Heat escapes from the flask at a mean power of $1.4\\,\\text{W}$. By how many kelvins does the coffee cool in $10.0\\,\\text{h}$? The specific heat capacity of coffee is the same as that of water, $4190\\,\\text{J/(kg}\\cdot\\text{K)}$.",
+      "text": "$0.60\\,\\text{kg}$ of hot coffee is packed into a thermos flask for a ski trip. The flask has two nested walls with the air removed from between them, and the surfaces of the walls are shiny.\n\nExplain which ways of heat transfer the vacuum and the shiny surfaces prevent and how. Through which route does heat still escape?\n\nHeat escapes from the flask at a mean power of $1.4\\,\\text{W}$. By how many kelvins does the coffee cool in $10.0\\,\\text{h}$? The specific heat capacity of coffee is the same as that of water, $4190\\,\\text{J/(kg}\\cdot\\text{K)}$.",
       "answer": 20,
       "unit": "K",
       "tolerance": 0.02
@@ -278,7 +278,7 @@
     {
       "id": "fy3-12-L3-02",
       "level": 3,
-      "text": "Because of the increase in greenhouse gases, the Earth now receives on average $1.0\\,\\text{W/m}^2$ more power than it radiates into space. The surface area of the Earth is $5.1 \\cdot 10^{14}\\,\\text{m}^2$. How much extra energy accumulates on the Earth in a year (365 days)? About $90\\,\\%$ of it is stored in the oceans. Suppose that it warms evenly the top 700 metres of the oceans, whose mass is $2.6 \\cdot 10^{20}\\,\\text{kg}$ and whose specific heat capacity is $4.0 \\cdot 10^{3}\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$. By how many kelvins does the layer warm in ten years? Why does the large mass of water slow down the warming of the climate?",
+      "text": "Because of the increase in greenhouse gases, the Earth now receives on average $1.0\\,\\text{W/m}^2$ more power than it radiates into space. The surface area of the Earth is $5.1 \\cdot 10^{14}\\,\\text{m}^2$.\n\nHow much extra energy accumulates on the Earth in a year (365 days)?\n\nAbout $90\\,\\%$ of it is stored in the oceans. Suppose that it warms evenly the top 700 metres of the oceans, whose mass is $2.6 \\cdot 10^{20}\\,\\text{kg}$ and whose specific heat capacity is $4.0 \\cdot 10^{3}\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$.\n\nBy how many kelvins does the layer warm in ten years? Why does the large mass of water slow down the warming of the climate?",
       "answer": 0.139,
       "unit": "K",
       "tolerance": 0.02
@@ -286,7 +286,7 @@
     {
       "id": "fy3-12-L3-03",
       "level": 3,
-      "text": "A detached house is heated by an air-to-water heat pump whose coefficient of performance is on average 2.8 over the heating season. More insulation wool is blown into the roof, and its U-value decreases from $0.35\\,\\text{W/(m}^2\\text{}\\cdot\\text{K)}$ to $0.10\\,\\text{W/(m}^2\\text{}\\cdot\\text{K)}$. The area of the roof is $100\\,\\text{m}^2$. The heating season lasts $5800\\,\\text{h}$, and the difference between the indoor and outdoor temperature is on average $19\\,\\text{K}$ during it. How many kilowatt-hours of electricity does the extra insulation save over the heating season? A neighbour thinks insulation does not matter to the owner of a heat pump, because the pump gets its heat free from the outdoor air. Justify why insulation is still worthwhile.",
+      "text": "A detached house is heated by an air-to-water heat pump whose coefficient of performance is on average 2.8 over the heating season.\n\nMore insulation wool is blown into the roof, and its U-value decreases from $0.35\\,\\text{W/(m}^2\\text{}\\cdot\\text{K)}$ to $0.10\\,\\text{W/(m}^2\\text{}\\cdot\\text{K)}$. The area of the roof is $100\\,\\text{m}^2$. The heating season lasts $5800\\,\\text{h}$, and the difference between the indoor and outdoor temperature is on average $19\\,\\text{K}$ during it.\n\nHow many kilowatt-hours of electricity does the extra insulation save over the heating season?\n\nA neighbour thinks insulation does not matter to the owner of a heat pump, because the pump gets its heat free from the outdoor air. Justify why insulation is still worthwhile.",
       "answer": 984,
       "unit": "kWh",
       "tolerance": 0.02

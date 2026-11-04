@@ -407,6 +407,8 @@ with sync_playwright() as pw:
     check("record disabled before the initial state is set", ex1.locator(".exp-record").is_disabled())
     ex1.locator(".exp-start").click(); pg.wait_for_timeout(150)
     check("1280 px: the simulation stays in its column beside the experiment", pg.locator(".lab-side #sim").count() == 1 and not pg.locator(".sim-moved").is_visible())
+    side = pg.evaluate("(() => { const s = document.querySelector('.lab-side'); return [getComputedStyle(s).overflowY, s.scrollHeight - s.clientHeight]; })()")
+    check("1280 px: the simulation column has no scrollbar of its own (Lauri 2026-11-04)", side[0] == "visible" and side[1] <= 1, str(side))
     st = pg.evaluate("window.simState")
     check("initial conditions set (F 60, s 10, t 5)", st["F"] == 60 and st["s"] == 10 and st["t"] == 5, str(st))
     locked = pg.evaluate("[...document.querySelectorAll('#sim-root input[type=range]')].map(r => r.disabled)")

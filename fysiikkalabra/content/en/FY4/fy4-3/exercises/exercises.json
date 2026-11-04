@@ -272,7 +272,7 @@
     {
       "id": "fy4-3-L3-01",
       "level": 3,
-      "text": "A hot-air balloon descends straight down at constant velocity. The combined weight of the balloon, the hot air inside it, the basket and the passengers is $4.62\\,\\text{kN}$, and the buoyancy of the surrounding air is $4.35\\,\\text{kN}$. How large is the air resistance on the balloon, and in which direction does it point? Give the magnitude in kilonewtons and the direction in words; only the magnitude is checked.",
+      "text": "A hot-air balloon descends straight down at constant velocity. The combined weight of the balloon, the hot air inside it, the basket and the passengers is $4.62\\,\\text{kN}$, and the buoyancy of the surrounding air is $4.35\\,\\text{kN}$.\n\nHow large is the air resistance on the balloon, and in which direction does it point? Give the magnitude in kilonewtons and the direction in words; only the magnitude is checked.",
       "answer": 0.27,
       "unit": "kN",
       "tolerance": 0.02

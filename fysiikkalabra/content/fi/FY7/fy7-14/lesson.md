@@ -196,6 +196,8 @@ Luvussa *Valon interferenssi ja diffraktio* nähtiin, että valo on aaltoliikett
   <foreignObject x="435" y="285.5" width="149" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{ilma},\ n = 1{,}00$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy7/soap-bubble-reflection.webp" alt="Saippuakupla ilmassa vihreää taustaa vasten; kuplan pinnalla näkyy ylösalaisin heijastunut kuva puista ja taivaasta, ja reunoilla on violetteja ja sinisiä värejä."><figcaption>Saippuakupla heijastaa ympäristöään kuin kupera peili. Kuplan reunoilla näkyy värejä, koska valo heijastuu sekä kalvon ulkopinnasta että sisäpinnasta, ja heijastuneet aallot interferoivat.</figcaption></figure>
+
 ### Matkaero kalvossa
 Alapinnasta heijastunut aalto 2 kulkee kalvon läpi edestakaisin, joten se kulkee lisämatkan $2d$, missä $d$ on kalvon paksuus. Kalvossa valo etenee nopeudella $c : n$, mutta sen taajuus ei muutu. Siksi aallonpituus kalvossa on $n$ kertaa lyhyempi kuin ilmassa: esimerkiksi saippuakalvossa ($n = 1{,}33$) aallonpituus $550\,\text{nm}$ lyhenee arvoon $413{,}5\,\text{nm}$, koska $550\,\text{nm} : 1{,}33 = 413{,}5\,\text{nm}$. Lisämatkaan $2d$ mahtuu siksi yhtä monta aallonpituutta kuin ilmassa matkaan $2nd$. Aaltojen 1 ja 2 matkaero on $2nd$, kun aallonpituus mitataan ilmassa.
 
@@ -380,6 +382,8 @@ Saippuakupla ei ole joka kohdasta yhtä paksu. Painovoima valuttaa saippuavettä
   <foreignObject x="512" y="145.5" width="74" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$d\ (\text{nm})$</div></foreignObject>
   <foreignObject x="40" y="19.5" width="249" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{saippuakalvo},\ n = 1{,}33$</div></foreignObject>
 </svg>
+
+<figure class="unit-photo"><img src="pics/fy7/soap-bubble-colours.webp" alt="Lähikuva saippuakuplan kalvosta: oransseja, sinisiä ja violetteja pyörteitä tummaa taustaa vasten."><figcaption>Saippuakalvon interferenssivärejä. Kalvon paksuus vaihtelee kohdasta toiseen, ja kussakin kohdassa vahvistuu se väri, jolle kahden heijastuksen matkaero sopii.</figcaption></figure>
 
 ## Kaava: Ohuen kalvon interferenssi
 Kun valo tulee kohtisuoraan kalvoon, kalvon kahdesta pinnasta heijastuneiden aaltojen matkaero on

@@ -133,7 +133,7 @@
     {
       "id": "fy3-11-L2-03",
       "level": 2,
-      "text": "Fysiikan tunnilla sylinterissä on ilmaa. Kevyesti liikkuva mäntä sulkee sylinterin. Ilmaa lämmitetään, ja siihen siirtyy lämpömäärä $700{,}0\\,\\text{J}$. Ilma laajenee niin, että sen paine pysyy $125\\,\\text{kPa}$:na ja tilavuus kasvaa $1{,}60\\,\\textsf{l}$. Kuinka paljon ilman sisäenergia muuttuu? Käytä ensimmäistä pääsääntöä $\\Delta U = Q - W_\\text{k}$. Siinä $W_\\text{k}$ on ilman tekemä työ. Anna vastaus etumerkkeineen.",
+      "text": "Fysiikan tunnilla sylinterissä on ilmaa. Kevyesti liikkuva mäntä sulkee sylinterin. Ilmaa lämmitetään, ja siihen siirtyy lämpömäärä $700{,}0\\,\\text{J}$. Ilma laajenee niin, että sen paine pysyy $125\\,\\text{kPa}$:na ja tilavuus kasvaa $1{,}60\\,\\textsf{l}$.\n\nKuinka paljon ilman sisäenergia muuttuu? Käytä ensimmäistä pääsääntöä $\\Delta U = Q - W_\\text{k}$. Siinä $W_\\text{k}$ on ilman tekemä työ. Anna vastaus etumerkkeineen.",
       "answer": 500,
       "unit": "J",
       "tolerance": 0.02
@@ -264,7 +264,7 @@
     {
       "id": "fy3-11-L3-01",
       "level": 3,
-      "text": "Kaupungin yhteistuotantovoimalaitos polttaa puuhaketta $320\\,\\text{MW}$:n teholla. Samalla se tuottaa $96\\,\\text{MW}$ sähköä ja $180\\,\\text{MW}$ kaukolämpöä. Kuvittele, että laitosta ei olisi. Silloin sama sähköteho tuotettaisiin lauhdevoimalaitoksessa, jonka hyötysuhde on $40{,}0\\,\\%$. Sama kaukolämpö tuotettaisiin lämpökeskuksessa, jonka kattila lämmittää kaukolämpöverkon vettä $90{,}0\\,\\%$:n hyötysuhteella. Kuinka paljon suuremman polttoainetehon tällainen erillinen tuotanto tarvitsisi? Perustele, miksi lämpökeskus pääsee paljon suurempaan hyötysuhteeseen kuin lauhdevoimalaitos.",
+      "text": "Kaupungin yhteistuotantovoimalaitos polttaa puuhaketta $320\\,\\text{MW}$:n teholla. Samalla se tuottaa $96\\,\\text{MW}$ sähköä ja $180\\,\\text{MW}$ kaukolämpöä.\n\nKuvittele, että laitosta ei olisi. Silloin sama sähköteho tuotettaisiin lauhdevoimalaitoksessa, jonka hyötysuhde on $40{,}0\\,\\%$. Sama kaukolämpö tuotettaisiin lämpökeskuksessa, jonka kattila lämmittää kaukolämpöverkon vettä $90{,}0\\,\\%$:n hyötysuhteella.\n\nKuinka paljon suuremman polttoainetehon tällainen erillinen tuotanto tarvitsisi? Perustele, miksi lämpökeskus pääsee paljon suurempaan hyötysuhteeseen kuin lauhdevoimalaitos.",
       "answer": 120,
       "unit": "MW",
       "tolerance": 0.02
@@ -272,7 +272,7 @@
     {
       "id": "fy3-11-L3-02",
       "level": 3,
-      "text": "Omakotitalon lämmittämiseen kuluu vuodessa $16{,}0\\,\\text{MWh}$ lämpöä. Talossa on nyt suora sähkölämmitys. Siinä sähkövastukset muuttavat käytännössä kaiken sähköenergian sisäenergiaksi. Sisäenergia siirtyy lämpönä huoneeseen. Omistaja harkitsee lämpöpumppua. Pumppu ottaisi lämpöä ulkoilmasta ja hoitaisi koko lämmityksen. Pumpun lämpökerroin on vuoden keskiarvona 2,50. Kuinka monta megawattituntia sähköä pumppu säästäisi vuodessa? Kuinka paljon lämpöä se ottaisi vuoden aikana ulkoilmasta? Perustele energian säilymisen avulla, miksi pumppu ei ole ikiliikkuja. Pumppu luovuttaa taloon enemmän lämpöä kuin käyttää sähköä.",
+      "text": "Omakotitalon lämmittämiseen kuluu vuodessa $16{,}0\\,\\text{MWh}$ lämpöä. Talossa on nyt suora sähkölämmitys. Siinä sähkövastukset muuttavat käytännössä kaiken sähköenergian sisäenergiaksi. Sisäenergia siirtyy lämpönä huoneeseen.\n\nOmistaja harkitsee lämpöpumppua. Pumppu ottaisi lämpöä ulkoilmasta ja hoitaisi koko lämmityksen. Pumpun lämpökerroin on vuoden keskiarvona 2,50.\n\nKuinka monta megawattituntia sähköä pumppu säästäisi vuodessa? Kuinka paljon lämpöä se ottaisi vuoden aikana ulkoilmasta? Perustele energian säilymisen avulla, miksi pumppu ei ole ikiliikkuja. Pumppu luovuttaa taloon enemmän lämpöä kuin käyttää sähköä.",
       "answer": 9.6,
       "unit": "MWh",
       "tolerance": 0.02
@@ -280,7 +280,7 @@
     {
       "id": "fy3-11-L3-03",
       "level": 3,
-      "text": "Bensiiniauto kuluttaa $6{,}00\\,\\textsf{l}$ bensiiniä $100\\,\\text{km}$:n matkalla. Auto ajaa maantiellä tasaisella $80{,}0\\,\\text{km/h}$:n nopeudella. Bensiinin tiheys on $0{,}750\\,\\text{kg/l}$ ja lämpöarvo $43{,}0\\,\\text{MJ/kg}$. Moottorin hyötysuhde on $28{,}0\\,\\%$. Kuinka suuri on moottorin keskimääräinen mekaaninen teho? Anna vastaus kilowatteina. Minne loput polttoaineen energiasta menee? Miksi sähköauto tarvitsee samaan matkaan paljon vähemmän energiaa? Sähköauton moottorin hyötysuhde on noin $90\\,\\%$.",
+      "text": "Bensiiniauto kuluttaa $6{,}00\\,\\textsf{l}$ bensiiniä $100\\,\\text{km}$:n matkalla. Auto ajaa maantiellä tasaisella $80{,}0\\,\\text{km/h}$:n nopeudella. Bensiinin tiheys on $0{,}750\\,\\text{kg/l}$ ja lämpöarvo $43{,}0\\,\\text{MJ/kg}$. Moottorin hyötysuhde on $28{,}0\\,\\%$.\n\nKuinka suuri on moottorin keskimääräinen mekaaninen teho? Anna vastaus kilowatteina. Minne loput polttoaineen energiasta menee? Miksi sähköauto tarvitsee samaan matkaan paljon vähemmän energiaa? Sähköauton moottorin hyötysuhde on noin $90\\,\\%$.",
       "answer": 12.0,
       "unit": "kW",
       "tolerance": 0.02

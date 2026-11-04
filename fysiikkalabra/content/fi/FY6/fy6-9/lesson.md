@@ -137,6 +137,8 @@ Akku ladataan kytkemällä laturin plusnapa akun plusnapaan ja miinusnapa miinus
   <foreignObject x="197" y="105" width="100" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#7048e8">$0{,}50\,\text{A}$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy6/ev-battery-cells.webp" alt="Rivissä suuria, litteitä, vaaleita akkukennoja, joiden päissä on pultein kiinnitettävät navat; kennon kyljessä teksti 60Ah ja SB Limotive Co., Ltd."><figcaption>Sähköauton akun kennoja. Jokaisen kennon kapasiteetti on $60\,\text{Ah}$. Kun nimellisjännite on noin $3{,}7\,\text{V}$, yksi kenno varastoi energiaa noin $3{,}7\,\text{V} \cdot 60\,\text{Ah} \approx 220\,\text{Wh}$. Auton akussa on kymmeniä tällaisia kennoja.</figcaption></figure>
+
 ### Varaus ei yksin kerro energiaa
 Jännite kertoo, kuinka paljon energiaa yhtä varausyksikköä kohti muuttuu muodosta toiseen (luku *Virtapiiri, sähkövirta ja jännite*). Akun energia on siksi jännite kertaa varaus, ja sen yksikkönä käytetään wattituntia: $1\,\text{V} \cdot 1\,\text{Ah} = 1\,\text{Wh} = 3600\,\text{J}$. Jännitteenä käytetään akkuun merkittyä **nimellisjännitettä**, joka on akun keskimääräinen jännite purkautumisen aikana. Tässä luvussa energiaa merkitään $W$:llä, koska $E$ on lähdejännite.
 

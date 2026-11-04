@@ -245,7 +245,7 @@
     {
       "id": "fy2-2-L3-04",
       "level": 3,
-      "text": "Taulukossa on neljän kohteen vuotuinen energia ilmoitettuna kunkin alan omalla yksiköllä. Muunna energiat gigajouleiksi, kun $1\\,\\text{MWh} = 3{,}6\\,\\text{GJ}$, $1\\,\\text{toe} = 42\\,\\text{GJ}$ ja $1\\,\\text{PJ} = 1\\,000\\,000\\,\\text{GJ}$. Järjestä kohteet pienimmästä suurimpaan. Kuinka monta kertaa suurempi suurin energia on kuin pienin? Perustele, miksi taulukon luvut ($18$, $12$, $1200$ ja $3{,}2$) antavat harhaanjohtavan kuvan energioiden suuruudesta.",
+      "text": "Taulukossa on neljän kohteen vuotuinen energia ilmoitettuna kunkin alan omalla yksiköllä.\n\nMuunna energiat gigajouleiksi, kun $1\\,\\text{MWh} = 3{,}6\\,\\text{GJ}$, $1\\,\\text{toe} = 42\\,\\text{GJ}$ ja $1\\,\\text{PJ} = 1\\,000\\,000\\,\\text{GJ}$. Järjestä kohteet pienimmästä suurimpaan. Kuinka monta kertaa suurempi suurin energia on kuin pienin? Perustele, miksi taulukon luvut ($18$, $12$, $1200$ ja $3{,}2$) antavat harhaanjohtavan kuvan energioiden suuruudesta.",
       "kind": [
         "data",
         "reasoning"
@@ -287,7 +287,7 @@
     {
       "id": "fy2-2-L3-05",
       "level": 3,
-      "text": "Henkilön päivän ruoan energia on taulukossa. Hän kuluttaa päivässä perusaineenvaihduntaan ja arkitoimiin $10{,}2\\,\\text{MJ}$ ja lisäksi kävelee joka päivä $5{,}0\\,\\text{km}$, mikä kuluttaa energiaa $250\\,\\text{kJ}$ kilometriä kohti. Ylimääräinen tai puuttuva energia varastoituu kehoon rasvana tai kuluu rasvasta, ja yhdessä rasvakilossa on kemiallista energiaa $37\\,\\text{MJ}$. Kuinka paljon rasvaa kuluu $30$ vuorokauden aikana, jos tilanne pysyy samana? Anna vastaus kilogrammoina. Perustele energian säilymisen avulla, mihin kuluva rasva muuttuu.",
+      "text": "Henkilön päivän ruoan energia on taulukossa. Hän kuluttaa päivässä perusaineenvaihduntaan ja arkitoimiin $10{,}2\\,\\text{MJ}$ ja lisäksi kävelee joka päivä $5{,}0\\,\\text{km}$, mikä kuluttaa energiaa $250\\,\\text{kJ}$ kilometriä kohti.\n\nYlimääräinen tai puuttuva energia varastoituu kehoon rasvana tai kuluu rasvasta, ja yhdessä rasvakilossa on kemiallista energiaa $37\\,\\text{MJ}$.\n\nKuinka paljon rasvaa kuluu $30$ vuorokauden aikana, jos tilanne pysyy samana? Anna vastaus kilogrammoina. Perustele energian säilymisen avulla, mihin kuluva rasva muuttuu.",
       "kind": [
         "data",
         "model",

@@ -27,7 +27,7 @@
     "reading_level": "Level",
     "reading_courses": "Especially for",
     "breadcrumb": "Path",
-    "footer": "Ruukkilabra · upper secondary school physics, LOPS 2019",
+    "footer": "Ruukkilabra",
     "back_to_course": "← {{course}} module",
     "course_type_required": "Compulsory",
     "course_type_optional": "Optional",
@@ -66,6 +66,7 @@
     "unavailable_note": "<strong>{{title}}</strong> is not available in this language yet. Below you can see the lessons of this module and which of them you can already open.",
     "home_title": "Upper secondary physics through investigation.",
     "upcoming": "Coming soon",
+    "planned_courses": "Planned courses",
     "lessons_all": {
       "one": "{{n}} lesson",
       "other": "{{n}} lessons"
@@ -113,7 +114,7 @@
     "local_status_note_building": "Units are published as they are completed and checked. The scope and assessment have not been confirmed.",
     "local_status_ready": "Ready",
     "home_h1": "Explore. Understand. Apply.",
-    "home_sub": "Predict, investigate with a simulation or data, explain it yourself.",
+    "home_sub": "Predict, try it out and explain in your own words.",
     "study": "How to study",
     "about": "About",
     "about_lead": "How Ruukkilabra began, why it comes in three language forms, how AI is used and who makes it.",

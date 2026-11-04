@@ -254,6 +254,8 @@ Neutraalit **neutronit** ionisoivat samaan tapaan epäsuorasti. Ne törmäävät
   <foreignObject x="224" y="347.5" width="374" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$\text{ionipari: positiivinen ioni ja}\ e^-$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy8/hfir-refueling.webp" alt="Syvä vesiallas ylhäältä. Pohjalla on reaktori, josta loistaa sinistä valoa."><figcaption>Tutkimusreaktori vesialtaan pohjalla. Sininen valo syntyy, kun hiukkaset kulkevat vedessä nopeammin kuin valo vedessä. Paksu vesi vaimentaa säteilyä. Siksi altaan reunalla voi olla turvallisesti.</figcaption></figure>
+
 ### Läpäisykyky
 **Läpäisykyky** kertoo, kuinka paksun ainekerroksen säteily läpäisee. Mitä tiheämmin säteily ionisoi, sitä nopeammin se luovuttaa energiansa. Silloin jo ohut kerros pysäyttää sen. Siksi alfasäteilyllä on pienin läpäisykyky ja gammasäteilyllä suurin.
 
@@ -336,6 +338,8 @@ Kun ionisoiva hiukkanen kulkee kaasun läpi, se irrottaa elektronin. Sähkökent
   <line x1="420" y1="282" x2="420" y2="298" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
   <foreignObject x="300" y="301.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$U \approx 500\,\text{V}$</div></foreignObject>
 </svg>
+
+<figure class="unit-photo"><img src="pics/fy8/dosimeter-chernobyl.webp" alt="Käsi pitää keltaista säteilymittaria."><figcaption>Säteilymittari Tšernobylin alueella. Mittarin sisällä on yleensä Geiger-putki. Putki laskee säteilyn aiheuttamia tapahtumia.</figcaption></figure>
 
 Jokainen ionisoiva tapahtuma laukaisee samanlaisen vyöryn. Pulssi on siis yhtä suuri riippumatta säteilyn lajista ja energiasta. GM-mittari laskee tapahtumia mutta ei kerro, mitä säteilyä se havaitsee. Säteilylajin voi päätellä esteiden avulla. Jos pulssimäärä putoaa taustan tasolle paperiarkin taakse, säteily on alfasäteilyä.
 

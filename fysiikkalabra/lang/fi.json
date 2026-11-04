@@ -27,7 +27,7 @@
     "reading_level": "Vaativuus",
     "reading_courses": "Sopii erityisesti",
     "breadcrumb": "Polku",
-    "footer": "Ruukkilabra · lukion fysiikka, LOPS 2019",
+    "footer": "Ruukkilabra",
     "back_to_course": "← {{course}}-moduuli",
     "course_type_required": "Pakollinen",
     "course_type_optional": "Valinnainen",
@@ -66,6 +66,7 @@
     "unavailable_note": "Sivu <strong>{{title}}</strong> ei ole vielä saatavilla tällä kielellä. Alla näet moduulin oppitunnit ja sen, mitkä niistä voit jo avata.",
     "home_title": "Lukion fysiikkaa tutkimalla.",
     "upcoming": "Tulossa",
+    "planned_courses": "Suunnitteilla olevat opintojaksot",
     "lessons_all": {
       "one": "{{n}} oppitunti",
       "other": "{{n}} oppituntia"
@@ -113,7 +114,7 @@
     "local_status_note_building": "Opintojakson oppitunteja julkaistaan sitä mukaa kuin ne valmistuvat ja on tarkistettu. Laajuutta ja arviointia ei ole vielä vahvistettu.",
     "local_status_ready": "Valmis",
     "home_h1": "Tutki. Oivalla. Sovella.",
-    "home_sub": "Ennusta, tutki simulaatiolla tai aineistolla, selitä itse.",
+    "home_sub": "Ennusta, kokeile ja selitä omin sanoin.",
     "study": "Näin opiskelet",
     "about": "Sivustosta",
     "about_lead": "Mistä Ruukkilabra sai alkunsa, miksi se on kolmella kielimuodolla, miten tekoälyä käytetään ja kuka sen tekee.",

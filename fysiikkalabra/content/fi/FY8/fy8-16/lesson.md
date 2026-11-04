@@ -411,6 +411,8 @@ Vuonna 1998 kaukaisten supernovien mittaukset osoittivat, että laajeneminen kii
 
 ## Kaava: Hubblen ja Lemaîtren laki
 
+<figure class="unit-photo"><img src="pics/fy8/hubble-deep-field.webp" alt="Musta taivas täynnä pieniä valopisteitä ja eri värisiä, eri muotoisia galakseja."><figcaption>Hubblen ultrasyvä kenttä: pieni alue taivaalta, jossa näkyy noin $10\,000$ galaksia. Kaukaisimpien galaksien valo on lähtenyt matkaan yli $13$ miljardia vuotta sitten, ja laajeneminen on venyttänyt sen aallonpituuksia.</figcaption></figure>
+
 ### Punasiirtymä ja etääntymisnopeus
 Punasiirtymä on spektriviivan aallonpituuden muutos suhteessa sen aallonpituuteen laboratoriossa:
 ```latex
