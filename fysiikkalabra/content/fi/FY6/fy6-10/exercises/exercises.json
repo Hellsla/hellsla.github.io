@@ -39,6 +39,74 @@
       "answer": 0.2876,
       "unit": "N",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-10-L1-06",
+      "level": 1,
+      "text": "Aluksi neutraali muovisauva ja neutraali villakangas hierotaan toisiaan vasten, ja sauva varautuu negatiiviseksi. Mikä väite kappaleiden varauksista hieromisen jälkeen on oikein?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Villan varaus on positiivinen ja yhtä suuri kuin sauvan varaus, koska elektroneja siirtyi villasta sauvaan.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Villan varaus on positiivinen ja yhtä suuri kuin sauvan varaus, koska elektroneja siirtyi villasta sauvaan.",
+          "correct": true,
+          "feedback": "Oikein: hierottaessa elektroneja siirtyy kappaleesta toiseen. Sauva sai elektroneja ja villa menetti saman verran, joten kappaleiden varaukset ovat yhtä suuret ja vastakkaismerkkiset ja kokonaisvaraus säilyy."
+        },
+        {
+          "text": "Villa on edelleen neutraali, koska hankaus synnytti sauvaan uusia elektroneja tyhjästä.",
+          "feedback": "Varaus ei synny tyhjästä. Elektroneja ei luoda, vaan ne siirtyvät kappaleesta toiseen, joten sauvan saama negatiivinen varaus puuttuu jostain muualta: villasta."
+        },
+        {
+          "text": "Villan varaus on positiivinen mutta pienempi, koska osa siirtyneestä varauksesta hävisi hankauksessa lämpönä.",
+          "feedback": "Varaus ei muutu lämmöksi eikä häviä. Varauksen säilymisen mukaan eristetyn systeemin kokonaisvaraus pysyy samana, joten villan varaus on suuruudeltaan sama kuin sauvan."
+        },
+        {
+          "text": "Villa on negatiivinen kuten sauvakin, koska hankaus antaa kummallekin kappaleelle ylimääräisiä elektroneja.",
+          "feedback": "Kummallekaan ei voi tulla elektroneja ilman, että ne tulevat jostain. Kun sauva saa elektroneja, villan täytyy menettää niitä, joten villa jää positiiviseksi."
+        }
+      ]
+    },
+    {
+      "id": "fy6-10-L1-07",
+      "level": 1,
+      "text": "Kahden pistevarauksen välinen sähköinen voima on $F$. Mitä voimalle tapahtuu, kun varausten välinen etäisyys kaksinkertaistetaan ja varaukset pysyvät samoina?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Voima pienenee neljäsosaan, koska etäisyys on Coulombin laissa nimittäjässä toisessa potenssissa.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Voima pienenee neljäsosaan, koska etäisyys on Coulombin laissa nimittäjässä toisessa potenssissa.",
+          "correct": true,
+          "feedback": "Oikein: kun etäisyys kaksinkertaistuu, nimittäjän $r^2$ arvo nelinkertaistuu, joten voima pienenee neljäsosaan."
+        },
+        {
+          "text": "Voima puolittuu, koska voima on kääntäen verrannollinen etäisyyteen eikä sen neliöön.",
+          "feedback": "Voima ei ole kääntäen verrannollinen etäisyyteen vaan sen neliöön. Kaksinkertaisella etäisyydellä nimittäjä $r^2$ on nelinkertainen, ei kaksinkertainen."
+        },
+        {
+          "text": "Voima kaksinkertaistuu, koska pidempi etäisyys antaa varausten vuorovaikuttaa suuremmalla alueella.",
+          "feedback": "Sähköinen voima heikkenee etäisyyden kasvaessa, ei vahvistu. Etäisyys on kaavassa nimittäjässä, joten sen kasvu pienentää voimaa."
+        },
+        {
+          "text": "Voima pysyy ennallaan, koska varaukset ja Coulombin lain vakio eivät muutu etäisyyttä muutettaessa.",
+          "feedback": "Varaukset ja vakio todella pysyvät samoina, mutta voima riippuu myös etäisyydestä: $r$ on kaavassa nimittäjässä, joten sen muutos muuttaa voimaa."
+        }
+      ]
+    },
+    {
+      "id": "fy6-10-L1-08",
+      "level": 1,
+      "text": "Matkapuhelimen laturin virta on $0{,}50\\,\\text{A}$. Kuinka suuri varaus siirtyy piirissä $3{,}0\\,\\text{min}$:ssa? Vastaa coulombeina.",
+      "answer": 90.0,
+      "unit": "C",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -73,6 +141,111 @@
       "answer": 36.94,
       "unit": "nC",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-10-L2-05",
+      "level": 2,
+      "text": "Torsiovaa'alla mitataan kahden samansuuruisesti varatun pienen pallon välistä voimaa $F$ keskipisteiden etäisyyden $r$ funktiona. Mittaustulokset ovat taulukossa (esimerkkiaineisto).\n\na) Laske jokaiselle etäisyydelle $1 : r^2$ ja piirrä pisteet $(1 : r^2,\\, F)$ koordinaatistoon. Perustele kuvaajasta, että voima on kääntäen verrannollinen etäisyyden neliöön.\n\nb) Sovita pisteisiin origon kautta kulkeva suora ja määritä sen kulmakertoimesta kummankin pallon varaus $q$. Coulombin lain vakio on $k = 8{,}988 \\cdot 10^{9}\\,\\tfrac{\\text{N} \\cdot \\text{m}^2}{\\text{C}^2}$. Vastaa nanocoulombeina.\n\nKirjoita vastauslaatikkoon kohdan b) tulos.",
+      "kind": [
+        "data",
+        "graph",
+        "experiment"
+      ],
+      "answer": 24.73,
+      "unit": "nC",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Pallojen välinen voima $F$ etäisyyden $r$ funktiona (esimerkkiaineisto)",
+        "columns": [
+          "$r\\,(\\text{cm})$",
+          "$F\\,(\\text{mN})$"
+        ],
+        "rows": [
+          [
+            "2.0",
+            "13.6"
+          ],
+          [
+            "3.0",
+            "6.4"
+          ],
+          [
+            "4.0",
+            "3.4"
+          ],
+          [
+            "5.0",
+            "2.3"
+          ],
+          [
+            "6.0",
+            "1.52"
+          ],
+          [
+            "8.0",
+            "0.91"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy6-10-L2-06",
+      "level": 2,
+      "text": "Kahden varausparin välistä voimaa mitattiin eri etäisyyksillä (esimerkkiaineisto). Parissa A kummankin pallon varaus on $20\\,\\text{nC}$. Parissa B toisen pallon varaus on $20\\,\\text{nC}$ ja toisen tuntematon $q_\\text{B}$. Kaikki varaukset ovat samanmerkkisiä.\n\na) Laske voimien suhde $F_\\text{B} : F_\\text{A}$ jokaiselle etäisyydelle ja selitä, miksi suhde on suunnilleen sama kaikilla etäisyyksillä.\n\nb) Päättele suhteiden keskiarvosta $q_\\text{B}$. Vastaa nanocoulombeina.\n\nKirjoita vastauslaatikkoon kohdan b) tulos.",
+      "kind": [
+        "data",
+        "graph",
+        "reasoning"
+      ],
+      "answer": 69.79,
+      "unit": "nC",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Voima $F$ varauspareilla A ja B (esimerkkiaineisto)",
+        "columns": [
+          "$r\\,(\\text{cm})$",
+          "$F_\\text{A}\\,(\\text{mN})$",
+          "$F_\\text{B}\\,(\\text{mN})$"
+        ],
+        "rows": [
+          [
+            "2.0",
+            "9.1",
+            "31.0"
+          ],
+          [
+            "3.0",
+            "3.9",
+            "14.4"
+          ],
+          [
+            "4.0",
+            "2.3",
+            "7.6"
+          ],
+          [
+            "6.0",
+            "1.0",
+            "3.5"
+          ],
+          [
+            "8.0",
+            "0.55",
+            "1.95"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy6-10-L2-07",
+      "level": 2,
+      "text": "Opiskelija laskee kahden pistevarauksen, $+8{,}0\\,\\text{nC}$ ja $+12\\,\\text{nC}$, välisen sähköisen voiman. Varausten etäisyys on $3{,}0\\,\\text{cm}$. Hän käyttää kaavaa $F = k\\,\\dfrac{q_1 q_2}{r}$ ja saa tulokseksi $0{,}029\\,\\text{mN}$.\n\na) Mikä opiskelijan ratkaisussa on virhe?\n\nb) Laske voima oikein millinewtoneina. Coulombin lain vakio on $k = 8{,}988 \\cdot 10^{9}\\,\\tfrac{\\text{N} \\cdot \\text{m}^2}{\\text{C}^2}$.\n\nKirjoita vastauslaatikkoon kohdan b) tulos.",
+      "kind": [
+        "error"
+      ],
+      "answer": 0.9587,
+      "unit": "mN",
+      "tolerance": 0.02
     }
   ],
   "level3": [
@@ -80,7 +253,7 @@
       "id": "fy6-10-L3-01",
       "level": 3,
       "text": "Pistevaraus $q_1 = +20\\,\\text{nC}$ on kohdassa $x = 0$ ja pistevaraus $q_2 = -20\\,\\text{nC}$ kohdassa $x = 10\\,\\text{cm}$. Niiden puoliväliin, kohtaan $x = 5{,}0\\,\\text{cm}$, tuodaan pistevaraus $q_3 = +5{,}0\\,\\text{nC}$. Kuinka suuri on varaukseen $q_3$ vaikuttava kokonaisvoima? Vastaa millinewtoneina.",
-      "answer": 0.7190,
+      "answer": 0.719,
       "unit": "mN",
       "tolerance": 0.02
     },
@@ -98,6 +271,30 @@
       "text": "Pistevaraus $+4{,}0\\,\\text{nC}$ on kohdassa $x = 0$ ja pistevaraus $+1{,}0\\,\\text{nC}$ kohdassa $x = 12\\,\\text{cm}$. Niiden välissä olevalle $x$-akselin kohdalle tuodaan kolmas pistevaraus. Missä kohdassa kolmanteen varaukseen ei vaikuta kokonaisvoimaa? Vastaa senttimetreinä kohdasta $x = 0$.",
       "answer": 8.0,
       "unit": "cm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-10-L3-04",
+      "level": 3,
+      "text": "Esimerkkitilanne: $x$-akselilla on kaksi kiinnitettyä pistevarausta, $q_1 = +6{,}0\\,\\text{nC}$ kohdassa $x = 0$ ja $q_2 = -2{,}5\\,\\text{nC}$ kohdassa $x = 12\\,\\text{cm}$. Akselille tuodaan pieni positiivinen koevaraus, johon vaikuttavat vain nämä kaksi varausta.\n\na) Perustele voimien suuntien avulla jokaisella akselin kolmella alueella ($x < 0$, $0 < x < 12\\,\\text{cm}$ ja $x > 12\\,\\text{cm}$), voiko koevaraukseen vaikuttava kokonaisvoima olla nolla.\n\nb) Laske kohta, jossa kokonaisvoima on nolla. Vastaa senttimetreinä kohdasta $x = 0$.\n\nc) Selitä, miksi tulos ei riipu koevarauksen suuruudesta.\n\nKirjoita vastauslaatikkoon kohdan b) tulos.",
+      "kind": [
+        "reasoning",
+        "model"
+      ],
+      "answer": 33.85,
+      "unit": "cm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-10-L3-05",
+      "level": 3,
+      "text": "Esimerkkitilanne: kaksi samanlaista pientä palloa, joiden massa on kummankin $0{,}80\\,\\text{g}$, on ripustettu samasta pisteestä $0{,}30\\,\\text{m}$:n pituisilla kevyillä, sähköä johtamattomilla langoilla. Pallot ovat saaneet yhtä suuret samanmerkkiset varaukset ja hylkivät toisiaan. Tasapainossa kumpikin lanka on kulmassa $\\theta = 10\\,{}^\\circ$ pystysuoraan nähden. Pallot voi käsitellä pistevarauksina, ja $g = 9{,}81\\,\\text{m/s}^2$.\n\na) Piirrä toiseen palloon vaikuttavat voimat ja perustele niiden avulla, että sähköisen voiman suuruus on $F = mg\\tan\\theta$.\n\nb) Laske pallojen keskipisteiden etäisyys ja kummankin pallon varaus $q$. Vastaa varaus nanocoulombeina.\n\nc) Toisen pallon varaus kolminkertaistetaan. Selitä, miksi langat ovat edelleen yhtä suuressa kulmassa pystysuoraan nähden.\n\nKirjoita vastauslaatikkoon kohdan b) varaus.",
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "answer": 40.88,
+      "unit": "nC",
       "tolerance": 0.02
     }
   ]

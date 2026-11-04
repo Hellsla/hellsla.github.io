@@ -40,6 +40,74 @@
       "answer": 4.0,
       "unit": "Ah",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-9-L1-06",
+      "level": 1,
+      "text": "Kaksi akkua on ladattu täyteen. Toisen kapasiteetti on suurempi ampeeritunteina, mutta sen energia voi silti olla pienempi. Miksi akkujen energioita ei voi vertailla pelkkien ampeerituntien perusteella?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Energia riippuu varauksen lisäksi jännitteestä, ja akkujen nimellisjännitteet voivat olla erisuuret.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Energia riippuu varauksen lisäksi jännitteestä, ja akkujen nimellisjännitteet voivat olla erisuuret.",
+          "correct": true,
+          "feedback": "Oikein: energia on jännite kertaa varaus, $W = UQ$, joten kapasiteetti kertoo vain varauksen. Kaksi akkua vertaillaan sen jälkeen, kun kummankin jännite on otettu mukaan."
+        },
+        {
+          "text": "Ampeeritunti mittaa akun käyttöaikaa, joten energia riippuu vain siitä, kuinka kauan akku kestää.",
+          "feedback": "Ampeeritunti on varauksen yksikkö, $1\\,\\text{Ah} = 3600\\,\\text{C}$, ei ajan yksikkö. Akun kestoon vaikuttaa myös se, kuinka suuri virta siitä otetaan."
+        },
+        {
+          "text": "Akun energia riippuu vain sen massasta ja koosta, joten kapasiteetti ei kerro energiasta mitään.",
+          "feedback": "Energia ei riipu pelkästä massasta. Kapasiteetti kertoo varauksen, ja kun se kerrotaan jännitteellä, saadaan energia, $W = UQ$."
+        },
+        {
+          "text": "Ampeeritunti on energian yksikkö, mutta sen arvo muuttuu jatkuvasti akun lämpötilan ja iän mukana.",
+          "feedback": "Energian yksikkö on wattitunti, ei ampeeritunti. Ampeeritunti on varauksen yksikkö, ja sen määritelmä ei muutu lämpötilan mukana."
+        }
+      ]
+    },
+    {
+      "id": "fy6-9-L1-07",
+      "level": 1,
+      "text": "Akkua ladataan laturilla. Mihin suuntaan virta (virran sovittu suunta) kulkee akun sisällä latauksen aikana?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Plusnavalta miinusnavalle, koska laturi ajaa virran akun läpi vastakkaiseen suuntaan kuin purkautuessa.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Plusnavalta miinusnavalle, koska laturi ajaa virran akun läpi vastakkaiseen suuntaan kuin purkautuessa.",
+          "correct": true,
+          "feedback": "Oikein: latauksessa laturin jännite on suurempi kuin akun lähdejännite ja se ajaa virran akun läpi plusnavalta miinusnavalle. Purkautuessa suunta on akun sisällä päinvastainen."
+        },
+        {
+          "text": "Miinusnavalta plusnavalle, koska akun sisällä virta kulkee latauksessa samaan suuntaan kuin purkautuessa.",
+          "feedback": "Tämä on purkautumisen suunta akun sisällä. Latauksessa laturi pakottaa virran kulkemaan akun läpi päinvastaiseen suuntaan."
+        },
+        {
+          "text": "Virta ei kulje akun sisällä, koska akku latautuu pelkän laturin jännitteen vaikutuksesta.",
+          "feedback": "Ilman virtaa akkuun ei siirtyisi energiaa. Latausvirta kulkee akun läpi, ja sen ansiosta kemiallinen energia kasvaa."
+        },
+        {
+          "text": "Suunta vaihtuu jatkuvasti, koska laturi tuottaa vuorotellen positiivista ja negatiivista jännitettä.",
+          "feedback": "Akkua ladataan tasajännitteellä, joten virran suunta pysyy samana koko latauksen ajan."
+        }
+      ]
+    },
+    {
+      "id": "fy6-9-L1-08",
+      "level": 1,
+      "text": "Polkupyörän LED-valon akun kapasiteetti on $2600\\,\\text{mAh}$. Tyhjää akkua ladataan vakiovirralla $0{,}50\\,\\text{A}$, kunnes akun läpi on kulkenut kapasiteetin verran varausta. Kuinka kauan lataus kestää? Vastaa tunteina.",
+      "answer": 5.2,
+      "unit": "h",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -74,6 +142,103 @@
       "answer": 84,
       "unit": "%",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-9-L2-05",
+      "level": 2,
+      "kind": [
+        "data"
+      ],
+      "text": "Litiumkennoa purettiin vakiovirralla $0{,}50\\,\\text{A}$, kunnes napajännite laski arvoon $3{,}12\\,\\text{V}$. Taulukossa on kennon napajännite tunnin välein (esimerkkiaineisto).\n\nOleta, että napajännite muuttuu mittausten välillä tasaisesti. Kuinka paljon energiaa kenno antoi piiriin koko purkauksen aikana? Vastaa wattitunteina.",
+      "answer": 9.32,
+      "unit": "Wh",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Litiumkennon napajännite purkauksessa, esimerkkiaineisto",
+        "columns": [
+          "$t\\,(\\text{h})$",
+          "$U\\,(\\text{V})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "4.15"
+          ],
+          [
+            "1.0",
+            "3.92"
+          ],
+          [
+            "2.0",
+            "3.80"
+          ],
+          [
+            "3.0",
+            "3.71"
+          ],
+          [
+            "4.0",
+            "3.58"
+          ],
+          [
+            "5.0",
+            "3.12"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy6-9-L2-06",
+      "level": 2,
+      "kind": [
+        "error"
+      ],
+      "text": "Akkua ladataan $1{,}5$ tuntia vakiovirralla $2{,}0\\,\\text{A}$. Laturin jännite on $4{,}2\\,\\text{V}$ ja akun lähdejännite $3{,}7\\,\\text{V}$, ja molemmat pysyvät tässä mallissa vakioina. Oppilas laskee: \"Laturin teho on $4{,}2\\,\\text{V} \\cdot 2{,}0\\,\\text{A} = 8{,}4\\,\\text{W}$ ja energia $8{,}4\\,\\text{W} \\cdot 1{,}5\\,\\text{h} = 12{,}6\\,\\text{Wh}$. Kaikki tämä energia varastoituu akkuun, joten mitään ei häviä.\"\n\na) Mikä oppilaan päättelyssä on väärin?\n\nb) Kuinka paljon laturin antamasta energiasta muuttuu resistanssien sisäenergiaksi? Vastaa wattitunteina.\n\nVastauskenttään tulee b-kohdan tulos.",
+      "answer": 1.5,
+      "unit": "Wh",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-9-L2-07",
+      "level": 2,
+      "kind": [
+        "data",
+        "experiment",
+        "graph"
+      ],
+      "text": "Kokeessa $12\\,\\text{V}$:n lyijyakkua ladattiin säädettävällä laturilla. Laturin jännite $U_\\text{lat}$ ja latausvirta $I$ mitattiin viidellä jännitteen arvolla (esimerkkiaineisto). Laturin, johtojen ja akun resistanssit ovat yhteensä $R_\\text{kok}$, ja ne ja akun lähdejännite pysyvät vakioina.\n\nPiirrä pisteet $(U_\\text{lat}, I)$-koordinaatistoon ja sovita niihin suora. Jännitelain mukaan $I = \\dfrac{U_\\text{lat} - E}{R_\\text{kok}}$, joten suoran kulmakerroin on $\\dfrac{1}{R_\\text{kok}}$. Lue kulmakerroin kahdesta sovitetun suoran pisteestä ja määritä resistanssi $R_\\text{kok}$.",
+      "answer": 0.4,
+      "unit": "Ω",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Latausvirta laturin jännitteen funktiona, esimerkkiaineisto",
+        "columns": [
+          "$U_\\text{lat}\\,(\\text{V})$",
+          "$I\\,(\\text{A})$"
+        ],
+        "rows": [
+          [
+            "13.0",
+            "1.6"
+          ],
+          [
+            "13.4",
+            "2.4"
+          ],
+          [
+            "13.8",
+            "3.5"
+          ],
+          [
+            "14.2",
+            "4.6"
+          ],
+          [
+            "14.6",
+            "5.5"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -100,6 +265,75 @@
       "answer": 3.24,
       "unit": "kJ",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-9-L3-04",
+      "level": 3,
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "text": "Litiumkennoa purettiin kahdella vakiovirralla, kunnes napajännite laski rajaan $3{,}00\\,\\text{V}$. Kennon lataaminen täyteen vei kummallakin kerralla laturilta energiaa $11{,}0\\,\\text{Wh}$. Taulukossa ovat purkausvirta, purkauksen kesto ja napajännitteen keskiarvo purkauksen aikana (esimerkkiaineisto).\n\na) Laske kummallakin virralla kennosta saatu varaus ja energia. Energia on keskijännite kertaa varaus.\n\nb) Laske lataus–purku-hyötysuhde, kun purkausvirta on $2{,}0\\,\\text{A}$.\n\nc) Arvioi kennon sisäinen resistanssi, kun napajännite on $U = E - R_\\text{s} I$ ja lähdejännite $E$ on molemmilla virroilla sama. Selitä sen avulla, miksi suuremmalla virralla saatu kapasiteetti on pienempi ja miksi pieni sisäinen resistanssi on tärkeä pikalatauksessa.\n\nVastauskenttään tulee b-kohdan tulos.",
+      "answer": 77.5,
+      "unit": "%",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Litiumkennon purkaus kahdella virralla, esimerkkiaineisto",
+        "columns": [
+          "$I\\,(\\text{A})$",
+          "$t\\,(\\text{h})$",
+          "$U_\\text{ka}\\,(\\text{V})$"
+        ],
+        "rows": [
+          [
+            "0.50",
+            "5.2",
+            "3.70"
+          ],
+          [
+            "2.0",
+            "1.2",
+            "3.55"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy6-9-L3-05",
+      "level": 3,
+      "kind": [
+        "data",
+        "model"
+      ],
+      "text": "Autoakun kapasiteetti on $50\\,\\text{Ah}$. Sitä ladataan laturilla, jonka jännite pysyy $14{,}0\\,\\text{V}$:ssa. Laturin, johtojen ja akun resistanssit ovat yhteensä $0{,}40\\,\\Omega$. Akun lähdejännite kasvaa latauksen edetessä taulukon mukaan (esimerkkiaineisto).\n\nMallinna lataus varaustasosta $20\\,\\%$ varaustasoon $80\\,\\%$ kolmessa vaiheessa: varaustasot $20\\,\\%$–$40\\,\\%$, $40\\,\\%$–$60\\,\\%$ ja $60\\,\\%$–$80\\,\\%$. Käytä kussakin vaiheessa vakiovirtaa, joka lasketaan vaiheen alun ja lopun lähdejännitteiden keskiarvosta.\n\na) Laske latausvirta ja kesto jokaiselle vaiheelle sekä koko latauksen kesto tunteina.\n\nb) Laske, kuinka kauan lataus kestäisi, jos virta pysyisi koko ajan varaustason $20\\,\\%$ virran suuruisena. Selitä, miksi todellinen lataus kestää tätä pidempään.\n\nVastauskenttään tulee a-kohdan koko latauksen kesto.",
+      "answer": 7.12,
+      "unit": "h",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Autoakun lähdejännite varaustason funktiona, esimerkkiaineisto",
+        "columns": [
+          "Varaustaso $(\\%)$",
+          "$E\\,(\\text{V})$"
+        ],
+        "rows": [
+          [
+            "20",
+            "12.00"
+          ],
+          [
+            "40",
+            "12.20"
+          ],
+          [
+            "60",
+            "12.40"
+          ],
+          [
+            "80",
+            "12.60"
+          ]
+        ]
+      }
     }
   ]
 }
