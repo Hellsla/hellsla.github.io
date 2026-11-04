@@ -1,17 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: a3211c7e2bafd3d5
-Mode: full
-Round: 1
+CONTENT-HASH: 96faa7aa76e5dca2
+Mode: delta
+Round: 2
 
 ## Blocking
-(none)
-
-## Fixed
-- exercises/exercises.json L2-05 — 'draw a straight line between the points' (calque of 'pisteiden lomaan') → 'draw the straight line that fits the points best'; solutions.md L2-05 'fitted between the points' → 'fitted to the points'.
-- exercises/exercises.json L3-04 — 'the ice has been in melting ice water' → 'the ice has been kept in a bath of melting ice and water'.
 
 ## Polish
-- None.
+- None (carried over from round 1: none).
 
 ## Checked
-- Pedagogy of the translation against the reviewed Finnish: the 8 new tasks keep their level, kind tags, misconception feedback (each wrong choice explains why it fails) and the 'Write a solution / answer box' instructions (part a/b/c wording, which part goes into the answer box) unchanged. Solution steps keep the standard step labels and the reasonableness checks.
+- Round 2 (delta): L3-04 Substitution now says "First 0.200 · 21.8 − 0.0500 · 8.2 = 3.95, so" before the s_1 rows (and the same for measurement 2). Natural English, short, and the step order (bracket → fraction → J/kg → kJ/kg) is how a student would work it; matches fi "Ensin …, joten".
+- Values unchanged (3.95, 4.45, 331 and 373 kJ/kg, s_2' 335 100 J/kg); Answer and Reasonableness untouched, so the a), b), c) answer instructions still hold.
+- Phone usability: no 360 px exercise capture exists; the 360 px layout check passes and open-exercises-L3-1280-7 shows one = step per row, the widest row about 250 px.
