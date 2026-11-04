@@ -1,22 +1,22 @@
-VERDICT: FAIL
-CONTENT-HASH: 0683fd0b7fef9f45
+VERDICT: PASS
+CONTENT-HASH: d5ba7c6f9fd90049
 
-Full review (20 tasks, 8/7/5), focus on new L1-06..08, L2-05..07, L3-04..05.
+Round 2. Full review of the 20-task set (8/7/5) after the round-1 fixes (`git diff HEAD~1`); focus on new L1-06..08, L2-05..07, L3-04..05.
 
 ## Blocking
-- exercises.json:231-232, solutions.md:178 (L2-07, third option) — A, assessment: "Kalorimetrin astia lämpeni veden mukana, joten vesi luovutti osan lämmöstään astiaan" cannot happen here: the water cools, so the cup cools with it and gives heat to the ice. A neglected cup heat capacity (the usual systematic error) makes s too SMALL, so this option is defensibly a second correct answer, and its feedback ("liian suuren sulamislämmön") teaches the opposite. — Replace with a distractor clearly in the wrong direction, e.g. "Lopputilan lämpötila luettiin liian matalaksi" (T_v − T too large → s too large); update its feedback and the sentence at solutions.md:178.
 
 ## Polish
-- solutions.md:162 (L2-05 b) — besides heat lost to the funnel, note that room heat melting ice acts the other way; the 1 % difference is within the line reading.
-- solutions.md:193/197 (L3-05 a) — T = 0,0 °C also fits the exact boundary (all ice just melted, ≥); add that c) shows rows 10 and 20 °C lie below the limit.
-- exercises.json:267 ff. (L3-04) — run 1 repeats L2-04 exactly (0,200 kg, 30,0 °C, 0,0500 kg, 8,1 °C → 333 kJ/kg); vary it or say so.
+- exercises.json L2-07, fourth option feedback — "Virhe syntyy siitä, että jään massa tai lämpötila poikkeaa oletetusta": in this task only the mass explains a too-small s (colder ice makes it too large, as the first option's feedback says). Write "jään massa poikkeaa oletetusta".
+- exercises.json L1-06 / solutions.md L1-06 — "Täsmälleen 0 °C" holds at normal pressure; the lesson's Tiivistelmä says "normaalipaineessa". Optional to add (level-1 simplification, C).
+- docs/exercise-bank/FY3.md fy3-14 Taso 2 — the planned "lämpötila-aikakuvaaja, jossa kaikki jää ei sula (figure)" has no task; L2-06 (error analysis, table-free) covers "kaikki jää ei sula". Update the plan line or note the substitution.
 
 ## Checked
-- All 17 numeric answers recomputed in one script (c_v 4190, c_j 2100, s 334 kJ/kg): agree with answers.py and exercises.json (L2-05 338; L2-06 61 g; L3-04 333/373/335; L3-05 Q_j 36 704 J, T_j −15,7 °C, T_v,min 29,2 °C).
-- L2-05: through-origin least-squares fit also gives 338 kJ/kg.
-- L3-05 data consistent: row-40 Q_j reproduces rows 30 and 60 °C (0,60; 23,1 °C).
-- L3-04 data plausible (model with s = 334: 8,06 and 6,25 °C); error direction in b) right.
-- L2-06: "kaikki jää ei sula" verified (25 140 J < 54 825 J); matches the plan's virheanalyysi.
-- L1-06, L1-08: one correct option, feedback right; boundary cases per guardrails.
-- Scope inside FY3 (Q = cmΔT, Q = sm, energy conservation, Pt = Q); levels and kinds fit the plan; every new task has a complete solution.
+- Round-1 Blocking (L2-07 third option) resolved: the cup distractor is replaced by "Lopputilan lämpötila luettiin liian matalaksi"; lower T raises both T_v − T and lowers c_v m_i T, so s comes out too large: really wrong, feedback and solutions.md Mallivastaus right. Exactly one correct option remains.
+- Round-1 Polish resolved: L2-05 b now names room heat as the opposite effect; L3-05 a states the exact boundary case and refers to c); L3-04 run 1 now T = 8,2 °C (no longer identical to L2-04).
+- All numeric answers recomputed in one script (c_v 4190, c_j 2100, s 334 kJ/kg): agree with answers.py and exercises.json (L1-07 20,95 → 21 kJ; L2-05 338; L2-06 61,1 g; L3-04 331/373/335,1; L3-05 Q_j 36 704 J, T_j −15,7 °C, T_v,min 29,2 °C).
+- L3-04 data plausible against the model with s = 334 kJ/kg (8,06 and 6,25 °C predicted vs 8,2 and 6,2 measured); answers.py comment updated to 8,2 °C.
+- L2-05: least-squares slope (free 338,3, through origin 337,7 kJ/kg) agrees with the read line.
+- L3-05: rows 10 and 20 °C give negative "all melted" T (−14,4; −6,9 °C) and Q_v exceeds the ice-warming 3304 J, so T = 0 °C with ice left is consistent; rows 30/40/60 reproduce 0,6/8,1/23,1 °C.
+- L1-06 reworded options (0 °C stated explicitly) and L1-08: one correct option each, feedback correct.
+- Scope inside FY3 (Q = cmΔT, Q = sm, energy conservation, Pt = Q); levels and kinds fit; every new task has a complete solution, symbolic before substitution.
 - Hash unchanged at start and end.

@@ -1,21 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 0683fd0b7fef9f45
+CONTENT-HASH: d5ba7c6f9fd90049
 
 ## Blocking
 - none
 
 ## Polish
-- exercises.json L3-04 — mittaus 1 on sama kuin L2-04 (0,200 kg, 30,0 °C, 0,0500 kg, 8,1 °C, s = 333 kJ/kg); half of the L3 task repeats an existing L2 task — change L3-04 measurement 1 to other numbers (e.g. 25,0 °C, 7,0 °C) so the set has no repeat.
-- L2-05 — the task asks the student to draw the line, but gives the two points it passes through, so the table is only a check; either drop "Vedä kuvaajaan" or give no points and let the student read (300 s; 133 g) from the table.
-- L1-06 — the correct option names "jään sulamislämpötila" with no number; a L1 student could be asked to give 0 °C. Also the correct option is the longest of four; shorten the explanation clause.
-- L3-05 solution, Periaate — the stray sentence "Rivi T_v = 40 °C, T = 8,1 °C on kaavassa mukana." says nothing; delete it.
-- L1-07 — a plain Q = cmΔT with the context only in the last clause; fine for L1, but it is close to L1-05 in demand. Acceptable.
+- exercises.json L3-04, mittaus 1 — now 0,200 kg, 30,0 °C, 0,0500 kg, 8,2 °C, which is the L2-04 task (8,1 °C) with one digit moved; the L3 task still repeats an L2 measurement. Change the water to e.g. 0,250 kg / 25,0 °C and T = 7,0 °C (recompute s_1 and the solution) so the set has no near-duplicate.
+- L2-05 a) — "Piirrä kuvaaja ja vedä suora" still comes with the two points the line passes through, so the drawing is only a check; drop the points and let the student read (300 s; 133 g), or drop "piirrä".
+- solutions.md L3-05 Vastaus a) — the new parenthesis about "rajatapaus, jossa kaikki jää juuri suli" is confusing next to the plain answer; delete it (c) already shows the rows lie below 29 °C).
+- L2-05 solution Vastaus — the sentence about room heat melting extra ice is correct but sits after the main answer; move it to a separate "Virhelähteet" line so the b) answer stays one sentence.
 
 ## Checked
-- 8 new tasks (L1-06..08, L2-05..07, L3-04..05) all have a complete model solution; counts 8/7/5; kinds match the plan (MC, calculation, equilibrium condition, calorimeter, graph, error, two-measurement systematic error).
-- Numbers recomputed: L1-07 20,95 kJ; L2-05 338 kJ/kg (+1 % vs 334); L2-06 61,1 g and student's 75 g; L3-04 333 / 373 / 335 kJ/kg; L3-05 Q_j 36 704 J, T_j -15,7 °C, T_v,min 29,2 °C, rows 30 and 60 reproduce T. All match the answers and tolerances.
-- L2-07 distractors each go the wrong direction with feedback that says why; correct answer is the wet-ice mass error, physically right.
-- L3-05 stays in the lesson's scope (energy balance, ice may remain); a) T = 0 rows, c) consistency check is a genuine data-interpretation step.
-- L3-04 matches the plan's "two measurements, systematic cause"; the direction of the error is asked, not just the cause.
-- Level fit: L2-05 and L2-06 are L2; L3 tasks combine the case check with inference of an unknown. No real-gas or out-of-scope content.
-- Finnish and units read correctly; solutions use the lesson's symbols; 1280 px capture of L3-05 solution is legible, no clipping.
+- Round 2. Earlier Polish carried: L1-06 now says "Täsmälleen 0 °C" (no longer the longest option, number asked); L3-05 stray sentence deleted; L3-04 structure unchanged.
+- L2-07 distractors replaced: "astia lämpeni" became "lopputilan lämpötila luettiin liian matalaksi"; both wrong options push s the stated wrong direction, correct option (wet ice) physically right.
+- Numbers recomputed: L3-04 s_1 = 331 kJ/kg (8,2 °C), s_2 = 373, corrected 335 (answer 335 unchanged); L3-05 rows 30/40/60 reproduce T = 0,6 / 8,1 / 23,1; T_j = -15,7 °C, T_v,min = 29,2 °C.
+- Solution a) of L3-04 reordered so a), b), c) answers follow the task parts; L2-05 b) 338 kJ/kg and 1 % deviation consistent.
+- Counts 8/7/5, all new tasks have complete model solutions; level fit and scope (no real-gas or FY4 content) unchanged.

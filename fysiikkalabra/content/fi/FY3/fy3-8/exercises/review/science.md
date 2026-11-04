@@ -1,22 +1,21 @@
-VERDICT: FAIL
-CONTENT-HASH: ae010b44e9caf534
+VERDICT: PASS
+CONTENT-HASH: d311cb11b332d994
 
-Full review (20 tasks, 8/7/5), focus on new L1-06..08, L2-05..07, L3-04..05.
+Round 2. Full review of the 20-task set (8/7/5) after the round-1 fixes (`git diff HEAD~1`); focus on new L1-06..08, L2-05..07, L3-04..05.
 
 ## Blocking
-- solutions.md:174 (L2-07 b mallivastaus) — A, definition (guardrail: keep mittausvirhe and mittausepävarmuus apart): "mittausvirhe olisi yli puolet tuloksesta (52 %)" calls the tape's 0,5 mm resolution an error; the error is unknown, 0,5 mm estimates the uncertainty. Same in "suhteellista virhettä". — Write "mittausepävarmuus voisi olla yli puolet tuloksesta (52 %)" and "suhteellista epävarmuutta".
 
 ## Polish
-- solutions.md:174, 198 (L2-07 c, L3-05 a) — "kolme merkitsevää numeroa" names no limiting datum; 0,5 mm, α = 12, r = 0,30 mm, γ = 1,1 suggest 10 m and 76 mm. Justify or round.
-- solutions.md:163 (L2-06 b) — use the guardrail sentence "…eivät yleensä sijaitse täsmälleen samalla suoralla mittausepävarmuuden vuoksi"; the plan asks for α "kulmakertoimesta", so a fitted line beats raw end points (fit gives 22,9 too).
-- exercises.json:290 vs solutions.md (L3-04 a) — answer 13.2 but Vastaus "≈ 13 mm, kaksi merkitsevää numeroa"; make them agree.
-- solutions.md:147, 159, 181 — "Kuvaajan lukeminen" heads table readings; "Taulukon lukeminen".
-- L1-07 — "heikot vuorovaikutukset" is a fair simplification; optionally add that at constant pressure faster gas particles need more room. L2-06 near-repeats L2-04 (α → metal), acceptable (graph vs table).
+- solutions.md L2-06 Vastaus a) — "tulos kertoo vain, kumpaa lähimpänä taulukon kerroin on" is garbled; e.g. "kolmas numero ei muuta johtopäätöstä: tulos riittää kertomaan, minkä taulukon metallin kerrointa se on lähimpänä".
+- solutions.md L2-07 c), L3-05 a) — the new "käytännössä noin 10 m / 76 mm" sentences are right; the answer box still holds 10.4 and 75.9 with tolerance 0.03, which is fine, but the Vastaus could lead with the rounded value.
+- L1-07 — "heikot vuorovaikutukset" is a fair level-1 simplification (C); the added "vakiopaineessa kaasu saa laajentua vapaasti" covers the round-1 note.
 
 ## Checked
-- All 18 numeric answers recomputed in one script: agree with answers.py and exercises.json (L1-08 2,3 vs pupil 2,99 mm; L2-05 45·10⁻⁶; L2-06 22,9; L2-07 0,96 mm, 10,4 m; L3-04 13,2/12,0/18 mm, 25,2 mm at −32 °C; L3-05 75,9, 77,8 mm, +2,5 %, water 12,9 mm).
-- L2-05 volumes match real water densities 0–10 °C; 4 °C minimum and lake reasoning correct.
-- L1-06, L1-07: one correct option, feedback right (steel 12 > glass 9; air ≫ water ≫ steel 36·10⁻⁶).
-- L3-04, L3-05 assumptions stated in the task (gap = one rail's ΔL; bulb γ = 3α, constant capillary area and coefficients).
-- Scope inside FY3 lämpölaajeneminen; levels and kinds fit the plan; every new task has a complete solution.
+- Round-1 Blocking (L2-07 b, mittausvirhe vs mittausepävarmuus) resolved: solutions.md now says "mittausepävarmuus voisi olla yli puolet tuloksesta (52 %)" and "suhteellista epävarmuutta".
+- Round-1 Polish resolved: L2-06 b uses the guardrail sentence and a fitted line (free least-squares slope 22,90 · 10⁻⁶ 1/K, same as end points); L3-04 a Vastaus "13,2 mm, käytännössä 13 mm" matches the answer 13.2; "Taulukon lukeminen" headings; L2-07 c and L3-05 a justify the digits.
+- All numeric answers recomputed in one script: agree with answers.py and exercises.json (L1-08 2,3 mm; L2-05 45,0 · 10⁻⁶; L2-06 22,9; L2-07 0,96 mm, ratio 52 %, 10,4 m; L3-04 13,2 / 18,0 / 25,2 mm; L3-05 A 0,283 mm², 75,9 mm, 77,8 mm, +2,5 %, water 12,9 mm).
+- L1-06 reordered and reworded options (teräs/lasi): exactly one correct, feedback right (12 > 9 · 10⁻⁶ 1/K); L1-07 ratios 16 and 94 ("noin 90") right.
+- L1-08 "(yksiköt jätetty pois)" makes clear that the student's error is 65 instead of ΔT = 50 K.
+- L2-05 restructure (Mallivastaus c moved into Vastaus) keeps the 4 °C, negative-γ and lake reasoning correct.
+- Scope inside FY3 lämpölaajeneminen; levels and kinds fit the plan; every new task has a complete solution, symbolic before substitution.
 - Hash unchanged at start and end.

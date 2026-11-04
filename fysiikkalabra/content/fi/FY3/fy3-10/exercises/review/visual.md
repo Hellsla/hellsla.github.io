@@ -1,19 +1,19 @@
-VERDICT: FAIL
-CONTENT-HASH: 0033aa9bfd64001a
+VERDICT: PASS
+CONTENT-HASH: 00b576af999c02d9
 
 ## Blocking
-- [Major] exercises.json fy3-10-L1-08 (tehtävä 12-8), text — oppilaan laskun tulos "$n = \dfrac{150 \cdot 0{,}0020}{8{,}31 \cdot 300} = 1{,}2 \cdot 10^{-4}$ mol": yksikkö "mol" on tavallista tekstiä kaavan ulkopuolella (kuvassa 12-8 "mol" tekstifontilla kaavan perässä) — uuden tekstin vakiosääntö (opettaja 2026-11-01): luku ja yksikkö kuuluvat samaan LaTeX-kaavaan, ja Major uudessa tekstissä — siirrä yksikkö kaavaan: `...= 1{,}2 \cdot 10^{-4}\,\text{mol}$`. Muissa uusissa tehtävissä ei löytynyt tekstinä kirjoitettuja suureita.
 
 ## Polish
-- [Minor] for science: L3-04 (hiilidioksidipullo, $Z = pV/(nRT)$, kokoonpuristuvuustekijä) — lukua ei löytynyt oppitunnin tekstistä (reaalikaasu ei kuulu sisältöön), joten LOPS-rajaus kuuluu tieteen tarkastajalle.
-- [Minor] solutions.md L3-04 Muunnokset/Vastaus — "Z" interpoloidaan ja c)-kohdan raja (noin 6 bar) on yhdessä pitkässä Vastaus-kappaleessa — jaa a), b), c) omiksi virkkeiksi tai riveiksi.
-- [Minor] solutions.md L1-07 ja L3-05 Järkevyys — jakoviiva tekstissä ("264,15/294,15", "26,5/101", "0,77/0,26") — kaksoispiste kirjoitetussa jakolaskussa.
-- [Minor] L2-06 solutions Kuvaajan lukeminen — suoralta valitut pisteet (280 K; 115,4 cm³) ja (360 K; 148,0 cm³) eroavat taulukon arvoista (115,0; 147,6) ilman selitystä — lisää "suoran arvot".
-- [Minor] L1-07 vastauslaatikon yksikkö "l" ja tulos "2,31 l" tekstinä (\textsf{l} kuvassa lukeutuu pystyviivalta) — projektin litrakäytäntö, ei muutosta; harkitse "litraa" sanallisesti kysymyksessä.
+- [Minor] L3-04 ja L3-05 taulukot — 1280 px kuvassa sarakeotsikot ($\theta$, $p$) näkyvät eri kohdassa kuin arvot (otsikko "p (bar)" osuu θ-arvojen päälle) — sivuston yhteinen taulukkotyyli (otsikot KaTeX-renderöinnin jälkeen), mutta kolmisarakkeisessa taulukossa hämmentää; ei tämän tehtävän vika.
+- [Minor] L3-05 taulukko — negatiiviset arvot "-17,5", "-50,0" tavuviivalla — käytä miinusmerkkiä.
+- [Minor] solutions.md L3-04 Vastaus — a), b), c) ja vertailu paine-eroon samassa pitkässä kappaleessa — jaa omiksi riveikseen.
+- [Minor] solutions.md L1-07, L3-05 Järkevyys — jakoviiva tekstissä ("264,15/294,15" jne.) — kaksoispiste kirjoitetussa jakolaskussa.
+- [Minor] L1-07 — litra "l" tekstinä ja \textsf{l} — projektin litrakäytäntö, ei muutosta.
 
 ## Checked
-- open-exercises-1280-7, -8, -9 (L1-07, L1-08), L2-1280-6 to -11 (L2-05, L2-06, L2-07), L3-1280-5 to -9 (L3-04, L3-05 with data tables and solutions). No 360 px exercise captures exist; layout checks in the packet are clean.
-- Tables, answer fields, MC feedback, solution cards inside their cards, no red KaTeX, no overflow. Regex scan of all new task texts and choices for plain-text quantities (only L1-08 found).
+- Round 2. Round 1 Blocking (L1-08 unit "mol" outside the formula) resolved: now `\,\text{mol}` inside the maths; no plain-text quantities found in the new task texts.
+- L3-04 (new helium-cylinder task) checked as a new task: data table, answer box (g), full solution Annettu–Järkevyys, numbers recomputed (12,29; 9,000; 5,318 mol; 27,9 g; 33,7 and 21,7 balloons) match the answer 28 g.
+- open-exercises-1280-8 (L1-08), L2-1280-9 (L2-06), L3-1280-5, -6, -7, -9 (L3-04, L3-05). No 360 px exercise captures exist.
 
 ## Scores
-illustrations 5 · typography 3 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4
