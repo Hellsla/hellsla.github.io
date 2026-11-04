@@ -157,7 +157,7 @@
 ## fy2-7-L2-06
 **Given:** transmitted power $100\,\text{MW}$; the loss power at voltages $20$, $40$, $80$ and $160\,\text{kV}$ is $16$, $4.0$, $1.0$ and $0.25\,\text{MW}$
 **Find:** the loss power $P_\text{loss}$ at a voltage of $320\,\text{kV}$ in megawatts, and the justification
-**Principle:** A regularity is looked for in the table: the loss powers at consecutive voltages are compared, each voltage being double the previous one. It is assumed that the same power line and the same transmitted power $100\,\text{MW}$ stay the same, so the same pattern continues and the next value can be estimated.
+**Principle:** A regularity is looked for in the table: the loss powers at consecutive voltages are compared, each voltage being double the previous one. It is assumed that the power line and the transmitted power $100\,\text{MW}$ stay the same, so the same pattern continues and the next value can be estimated.
 **Formula:** The loss power becomes $k$ times smaller when the voltage doubles: $k = \dfrac{P_\text{loss,previous}}{P_\text{loss,next}}$, and the estimate is $P_\text{loss,320} = \dfrac{P_\text{loss,160}}{k}$
 **Conversions:** Not needed: the voltages are in kilovolts and the powers in megawatts. The voltage $320\,\text{kV}$ is double the voltage $160\,\text{kV}$.
 **Substitution:** $k = \dfrac{16\,\text{MW}}{4.0\,\text{MW}} = \dfrac{4.0\,\text{MW}}{1.0\,\text{MW}} = \dfrac{1.0\,\text{MW}}{0.25\,\text{MW}} = 4.0$, so $P_\text{loss,320} = \dfrac{0.25\,\text{MW}}{4.0} = 0.0625\,\text{MW}$
