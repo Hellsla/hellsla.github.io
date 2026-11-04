@@ -328,8 +328,8 @@
 
   /* ---------- the neural voice (teacher 2026-11-03: Supertonic 3, "Nainen" and "Mies", the best quality) ----------
      Supertonic 3 (OpenRAIL-M) runs in a worker with onnxruntime-web: WebGPU where the browser has it and it gives
-     sound, otherwise WebAssembly on the CPU. Both live outside this site's repository (teacher 2026-11-04, UI fix 3)
-     in Hellsla/ruukkilabra-models, served by GitHub Pages at MODEL_BASE (same origin as the site). The model (about
+     sound, otherwise WebAssembly on the CPU. Both are kept outside this site's repository (teacher 2026-11-04, UI
+     fix 3) and copied into the published site's models/ folder beside this script (MODEL_BASE, same origin). The model (about
      145 MB) is kept in the browser's Cache Storage, so it is downloaded once per device. A sentence is synthesised
      while the one before it plays. If the model cannot be loaded, the device's own voice reads instead.
      When it is used (teacher 2026-11-04, UI fix 1): on a phone-sized window (max-width 700px), with Save-Data on or
@@ -450,7 +450,8 @@
   const VOICE_ID = { female: 0, male: 5 };       // voice.bin holds F1..F5, then M1..M5
   const VOICE_LANG = { fi: { female: 1, male: 8 } };   // teacher 2026-11-03: Finnish F2 and M4; English F1 and M1
   const voiceId = (l2) => { const o = VOICE_LANG[l2]; return o && o[voiceChoice] != null ? o[voiceChoice] : VOICE_ID[voiceChoice]; };
-  const MODEL_BASE = new URL(typeof window.flTtsModelBase === 'string' ? window.flTtsModelBase : 'https://hellsla.github.io/ruukkilabra-models/', location.href).href;
+  // models/ beside readaloud.js (the site's root), so pages in en/ and fi-easy/ use the same copy
+  const MODEL_BASE = new URL(typeof window.flTtsModelBase === 'string' ? window.flTtsModelBase : 'models/', (SCRIPT && SCRIPT.src) || location.href).href;
   const lightDevice = !!((navigator.connection && navigator.connection.saveData)
     || (window.matchMedia && window.matchMedia('(max-width:700px)').matches) || !navigator.gpu);
   let wantNeural = canNeural && !lightDevice;
