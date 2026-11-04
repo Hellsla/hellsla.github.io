@@ -1,0 +1,299 @@
+{
+  "version": 1,
+  "contribution": "The last lesson of the course is a full-length practice exam: the compulsory Part I of short items from the whole course and the optional problems of Parts II and III, whose model answers and marking schemes let the student assess their own answer and see which chapters are still worth reviewing.",
+  "learn": [
+    "solve the problems of a six-hour exam and divide your time between its parts.",
+    "choose the problems that best suit what you know.",
+    "assess your answers with a marking scheme and choose the chapters you will review again."
+  ],
+  "prior": [
+    "The steps of a complete solution and the command words (chapter *The matriculation exam and answer technique*)",
+    "A graph of measured data and the slope of a fitted line (chapter *Graphing and fitting a straight line*)"
+  ],
+  "activities": [
+    {
+      "id": "ohjeet",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Ohjeet",
+        "Aikataulu",
+        "Itsearviointi"
+      ]
+    },
+    {
+      "id": "osa-1",
+      "stage": "sovella",
+      "type": "text",
+      "title": "Part I: ten short items (20 p)",
+      "text": "Part I is compulsory. It has ten items from modules FY1–FY8, $2$ p each. Items 1–4 are multiple choice, in items 5–7 you choose whether a statement is true and on what grounds, and items 8–10 are short calculations. Write the solutions of the calculations in your notebook or a file before you enter the result. Choose your answers carefully: in the self-assessment your first choice decides the points."
+    },
+    {
+      "id": "osa1-1",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "1. A phone screen (2 p)",
+      "prompt": "The length of a phone screen is measured with a ruler as $14.62\\,\\text{cm}$ and its width with a tape measure as $6.8\\,\\text{cm}$. How is the area of the screen given?",
+      "choices": [
+        {
+          "text": "$99.416\\,\\text{cm}^2$, because all the digits the calculator gives are exact",
+          "feedback": "The calculator shows all the digits, but the result is no more precise than the given values. The width is known to only two digits, so the result has two significant figures: $99\\,\\text{cm}^2$. Review this in the chapter [*Measuring and the reliability of a measurement*](fy1-3.html)."
+        },
+        {
+          "text": "$99.4\\,\\text{cm}^2$, because the more precise measurement has several decimals",
+          "feedback": "The precision is set by the least precise given value, not the most precise one. The width $6.8\\,\\text{cm}$ has two significant figures, so the area is $99\\,\\text{cm}^2$. Review this in the chapter [*Measuring and the reliability of a measurement*](fy1-3.html)."
+        },
+        {
+          "text": "$99\\,\\text{cm}^2$, because the least precise value has two significant figures",
+          "correct": true,
+          "feedback": "Correct. The result of a multiplication is given to as many significant figures as the least precise given value, here the width $6.8\\,\\text{cm}$. Review this in the chapter [*Measuring and the reliability of a measurement*](fy1-3.html)."
+        },
+        {
+          "text": "$100\\,\\text{cm}^2$, because an area is always rounded to the nearest ten",
+          "feedback": "Rounding is not to the nearest ten but to significant figures. Two significant figures give $99\\,\\text{cm}^2$; $100\\,\\text{cm}^2$ is rounded too much. Review this in the chapter [*Measuring and the reliability of a measurement*](fy1-3.html)."
+        }
+      ],
+      "fold": "Osa I"
+    },
+    {
+      "id": "osa1-2",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "2. A chain of energy conversions (2 p)",
+      "prompt": "Electricity is produced in a condensing power plant with an efficiency of $40\\,\\%$. In transmission $5\\,\\%$ of the electrical energy is lost, and the efficiency of an LED lamp is $30\\,\\%$. What fraction of the energy of the fuel becomes light in the lamp?",
+      "choices": [
+        {
+          "text": "About $11\\,\\%$, because the efficiencies of the chain are multiplied together",
+          "correct": true,
+          "feedback": "Correct. Each stage receives only what the previous one gave: $0.40 \\cdot 0.95 \\cdot 0.30 \\approx 0.11$. Review this in the chapter [*Efficiency*](fy2-4.html)."
+        },
+        {
+          "text": "About $55\\,\\%$, because the chain is described by the mean of the efficiencies",
+          "feedback": "The mean does not tell how much energy is left at the end of the chain. Each stage uses only the energy the previous stage gave, so the efficiencies are multiplied: about $11\\,\\%$. Review this in the chapter [*Efficiency*](fy2-4.html)."
+        },
+        {
+          "text": "About $30\\,\\%$, because the weakest stage of the chain determines the whole",
+          "feedback": "The weakest stage alone does not determine the result, because the losses in the power plant and in transmission also reduce the energy that reaches the lamp. The overall efficiency is $0.40 \\cdot 0.95 \\cdot 0.30 \\approx 11\\,\\%$. Review this in the chapter [*Efficiency*](fy2-4.html)."
+        },
+        {
+          "text": "About $95\\,\\%$, because energy is lost only in transmission",
+          "feedback": "Energy is also converted into forms other than useful ones in the power plant ($60\\,\\%$) and in the lamp ($70\\,\\%$). The efficiencies are multiplied: about $11\\,\\%$. Review this in the chapter [*Efficiency*](fy2-4.html)."
+        }
+      ],
+      "fold": "Osa I"
+    },
+    {
+      "id": "osa1-3",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "3. A ball at its highest point (2 p)",
+      "prompt": "A ball is thrown straight up. Air resistance is neglected. Which statement about the motion of the ball at its highest point is correct?",
+      "choices": [
+        {
+          "text": "The velocity is zero, so the acceleration and the net force are zero as well.",
+          "feedback": "If the acceleration were zero, the ball would stay hovering at the highest point. The weight acts on the ball all the time, so the acceleration is $g$ downwards even when the velocity is zero. Review this in the chapter [*Newton's second law*](fy4-4.html)."
+        },
+        {
+          "text": "The velocity is zero, but the acceleration is $g$ downwards, because the weight acts.",
+          "correct": true,
+          "feedback": "Correct. The only force is the weight, so the acceleration is $g$ downwards throughout the flight, also at the highest point. Review this in the chapter [*Newton's second law*](fy4-4.html)."
+        },
+        {
+          "text": "The throwing force and the weight are equal, so the ball is momentarily in equilibrium.",
+          "feedback": "The throwing force acts only during the throw, while the ball is in the hand. During the flight only the weight acts on the ball, so the ball is not in equilibrium. Review this in the chapter [*Newton's second law*](fy4-4.html)."
+        },
+        {
+          "text": "At the highest point the acceleration changes direction from upwards to downwards.",
+          "feedback": "It is the velocity that changes direction, not the acceleration. The weight points down all the time, so the acceleration is $g$ downwards throughout the flight. Review this in the chapter [*Newton's second law*](fy4-4.html)."
+        }
+      ],
+      "fold": "Osa I"
+    },
+    {
+      "id": "osa1-4",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "4. A magnet in a copper pipe (2 p)",
+      "prompt": "A small strong magnet is dropped into a vertical copper pipe. It falls through the pipe much more slowly than a piece of iron of the same size. What explains this?",
+      "choices": [
+        {
+          "text": "The copper is magnetised and attracts the magnet just as iron does.",
+          "feedback": "Copper is not ferromagnetic and is not magnetised like iron: a magnet does not stick to copper. The slowing is due to induction. Review this in the chapter [*Lenz's law and eddy currents*](fy7-6.html)."
+        },
+        {
+          "text": "The air between the magnet and the pipe brakes it, because the gap is very narrow.",
+          "feedback": "A piece of iron of the same size falls quickly through the same gap, so the air does not explain the difference. The slowing is due to eddy currents. Review this in the chapter [*Lenz's law and eddy currents*](fy7-6.html)."
+        },
+        {
+          "text": "Electric charges in the pipe repel the magnet and slow its motion.",
+          "feedback": "The pipe is electrically neutral, and the magnet has no electric charge. The moving magnet induces currents in the pipe, and their magnetic field slows it down. Review this in the chapter [*Lenz's law and eddy currents*](fy7-6.html)."
+        },
+        {
+          "text": "Eddy currents are induced in the pipe, and their field opposes the motion.",
+          "correct": true,
+          "feedback": "Correct. The magnetic flux changes in the wall of the pipe, and by Lenz's law the magnetic field of the induced eddy currents opposes the change that produces them. Review this in the chapter [*Lenz's law and eddy currents*](fy7-6.html)."
+        }
+      ],
+      "fold": "Osa I"
+    },
+    {
+      "id": "osa1-5",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "5. Statement: a gas cylinder warms up (2 p)",
+      "prompt": "Statement: “When the gas in a closed steel cylinder warms from $20\\,{}^\\circ\\text{C}$ to $40\\,{}^\\circ\\text{C}$, the pressure of the gas doubles.” Choose the correct assessment and justification.",
+      "choices": [
+        {
+          "text": "True, because at constant volume the pressure is proportional to the temperature.",
+          "feedback": "The pressure is proportional to the absolute temperature, not to the Celsius temperature. From $293\\,\\text{K}$ to $313\\,\\text{K}$ the pressure increases by only about $7\\,\\%$. Review this in the chapter [*Ideal gas law*](fy3-10.html)."
+        },
+        {
+          "text": "True, because the speed of the gas particles doubles as the gas warms.",
+          "feedback": "The average kinetic energy of the particles is proportional to the absolute temperature, which increases by only about $7\\,\\%$. Neither the speed nor the pressure doubles. Review this in the chapter [*Ideal gas law*](fy3-10.html)."
+        },
+        {
+          "text": "False, because the pressure of a gas in a closed cylinder cannot change.",
+          "feedback": "At constant volume the pressure increases with the temperature, because the particles hit the walls more often and harder. The increase is about $7\\,\\%$. Review this in the chapter [*Ideal gas law*](fy3-10.html)."
+        },
+        {
+          "text": "False, because in kelvins the temperature increases by only about $7\\,\\%$.",
+          "correct": true,
+          "feedback": "Correct. At constant volume $\\tfrac{p_2}{p_1} = \\tfrac{T_2}{T_1} = \\tfrac{313\\,\\text{K}}{293\\,\\text{K}} \\approx 1.07$, so the pressure increases by about $7\\,\\%$. Review this in the chapter [*Ideal gas law*](fy3-10.html)."
+        }
+      ],
+      "fold": "Osa I"
+    },
+    {
+      "id": "osa1-6",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "6. Statement: the speeds of satellites (2 p)",
+      "prompt": "Statement: “A satellite orbiting the Earth in a low circular orbit moves faster than a satellite in a high circular orbit.” Choose the correct assessment and justification.",
+      "choices": [
+        {
+          "text": "True, because in a low orbit gravity requires a greater speed.",
+          "correct": true,
+          "feedback": "Correct. Gravity provides the centripetal acceleration: $G\\tfrac{mM}{r^2} = m\\tfrac{v^2}{r}$, so $v = \\sqrt{\\tfrac{GM}{r}}$, and the speed increases as the radius decreases. Review this in the chapter [*Satellites and planets in circular orbits*](fy5-6.html)."
+        },
+        {
+          "text": "True, because in a low orbit the thin air pushes the satellite forwards.",
+          "feedback": "Air resistance brakes the satellite; it does not push it. The statement is true, but the reason is gravity: $v = \\sqrt{\\tfrac{GM}{r}}$. Review this in the chapter [*Satellites and planets in circular orbits*](fy5-6.html)."
+        },
+        {
+          "text": "False, because the orbital speed of a satellite is the same in every circular orbit.",
+          "feedback": "The orbital speed depends on the radius of the orbit: $v = \\sqrt{\\tfrac{GM}{r}}$. In a low orbit the speed is greater. Review this in the chapter [*Satellites and planets in circular orbits*](fy5-6.html)."
+        },
+        {
+          "text": "False, because going round a longer orbit requires a greater speed.",
+          "feedback": "A longer orbit is travelled more slowly, not faster: high up gravity is weaker and $v = \\sqrt{\\tfrac{GM}{r}}$ is smaller. The period increases both because the orbit is longer and because the speed is smaller. Review this in the chapter [*Satellites and planets in circular orbits*](fy5-6.html)."
+        }
+      ],
+      "fold": "Osa I"
+    },
+    {
+      "id": "osa1-7",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "7. Statement: a second lamp in parallel (2 p)",
+      "prompt": "A lamp is connected to the terminals of a battery. Statement: “When a second identical lamp is connected in parallel with the lamp, the first lamp becomes clearly dimmer, because the current is shared between two lamps.” The battery is new, and its internal resistance is small. Choose the correct assessment and justification.",
+      "choices": [
+        {
+          "text": "True, because the current of the battery stays the same and is shared equally between the lamps.",
+          "feedback": "A battery does not give a constant current. Its terminal voltage stays almost the same, so each lamp gets the same current as the first one had before, and the current of the battery doubles. Review this in the chapter [*Resistors in series and in parallel*](fy6-4.html)."
+        },
+        {
+          "text": "True, because the total resistance of the parallel connection is greater than before.",
+          "feedback": "The total resistance of a parallel connection is smaller than the resistance of either lamp, so the current of the battery increases. The voltage and current of the lamp stay almost unchanged. Review this in the chapter [*Resistors in series and in parallel*](fy6-4.html)."
+        },
+        {
+          "text": "False: the voltage across the lamp stays almost the same, so its current does too.",
+          "correct": true,
+          "feedback": "Correct. Lamps connected in parallel have the same voltage, the terminal voltage of the battery, which decreases only a little because of the internal resistance. The first lamp therefore becomes only slightly dimmer. Review this in the chapter [*Electromotive force and internal resistance*](fy6-8.html)."
+        },
+        {
+          "text": "False, because the first lamp becomes brighter as the current increases.",
+          "feedback": "The current of the battery increases, but it is shared between the lamps. The voltage and current of the first lamp stay almost the same, so it does not become brighter. Review this in the chapter [*Resistors in series and in parallel*](fy6-4.html)."
+        }
+      ],
+      "fold": "Osa I"
+    },
+    {
+      "id": "osa1-8",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "8. Oscillation of a spring (2 p)",
+      "prompt": "A $250\\,\\text{g}$ mass is hung on a spring with a spring constant of $40.0\\,\\text{N/m}$. The mass is set oscillating vertically. Calculate the period of the oscillation. The mass of the spring is neglected.",
+      "answer": 0.497,
+      "unit": "s",
+      "tolerance": 0.02,
+      "mistakes": [
+        {
+          "value": 0.0791,
+          "feedback": "You forgot the factor $2\\pi$: $T = 2\\pi\\sqrt{\\tfrac{m}{k}}$. Review this in the chapter [*The mass–spring oscillator and the pendulum*](fy5-9.html)."
+        },
+        {
+          "value": 79.5,
+          "feedback": "The mass and the spring constant are the wrong way round under the square root. A heavier mass oscillates more slowly, so the mass is in the numerator: $T = 2\\pi\\sqrt{\\tfrac{m}{k}}$. Review this in the chapter [*The mass–spring oscillator and the pendulum*](fy5-9.html)."
+        },
+        {
+          "value": 15.7,
+          "feedback": "The mass must be converted to kilograms: $250\\,\\text{g} = 0.250\\,\\text{kg}$. Review this in the chapter [*The mass–spring oscillator and the pendulum*](fy5-9.html)."
+        }
+      ],
+      "solution": "**Given:** spring constant $k = 40.0\\,\\text{N/m}$, mass $m = 250\\,\\text{g}$\n\n**Find:** the period $T$\n\n**Principle:** The spring force on the mass is proportional to the displacement from the equilibrium position, so the motion is simple harmonic oscillation. Gravity only shifts the equilibrium position and does not change the period. The mass of the spring is neglected.\n\n**Formula:** $T = 2\\pi\\sqrt{\\dfrac{m}{k}}$\n\n**Conversions:** $m = 250\\,\\text{g} = 250 \\cdot 10^{-3}\\,\\text{kg} = 0.250\\,\\text{kg}$\n\n**Substitution:** $T = 2\\pi\\sqrt{\\dfrac{0.250\\,\\text{kg}}{40.0\\,\\text{N/m}}} = 2\\pi \\cdot 0.07906\\,\\text{s} = 0.4967\\,\\text{s}$\n\n**Answer:** $T \\approx 0.497\\,\\text{s}$, three significant figures like the spring constant and the mass.\n\n**Reasonableness:** Unit: $\\sqrt{\\tfrac{\\text{kg}}{\\text{N/m}}} = \\sqrt{\\tfrac{\\text{kg} \\cdot \\text{m}}{\\text{kg} \\cdot \\text{m/s}^2}} = \\text{s}$. About two oscillations per second fits the motion of a school spring and mass.",
+      "fold": "Osa I"
+    },
+    {
+      "id": "osa1-9",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "9. A fan heater (2 p)",
+      "prompt": "The power of a fan heater is $1.50\\,\\text{kW}$ when its voltage is $230\\,\\text{V}$. Calculate the resistance of the heating element of the heater.",
+      "answer": 35.3,
+      "unit": "Ω",
+      "tolerance": 0.02,
+      "mistakes": [
+        {
+          "value": 0.153,
+          "feedback": "You divided the voltage by the power. The resistance follows from the equations $P = UI$ and $U = RI$: $R = \\tfrac{U^2}{P}$. Review this in the chapter [*Electric power and the heating of a resistor*](fy6-6.html)."
+        },
+        {
+          "value": 0.0284,
+          "feedback": "The expression is upside down: $R = \\tfrac{U^2}{P}$, not $\\tfrac{P}{U^2}$. Review this in the chapter [*Electric power and the heating of a resistor*](fy6-6.html)."
+        },
+        {
+          "value": 35267.0,
+          "feedback": "The power must be converted to watts: $1.50\\,\\text{kW} = 1500\\,\\text{W}$. Review this in the chapter [*Electric power and the heating of a resistor*](fy6-6.html)."
+        }
+      ],
+      "solution": "**Given:** power $P = 1.50\\,\\text{kW}$, voltage $U = 230\\,\\text{V}$\n\n**Find:** the resistance $R$\n\n**Principle:** Electric power is the product of voltage and current, and the current through a resistor obeys Ohm's law. When the current is eliminated, the power depends only on the voltage and the resistance.\n\n**Formula:** $P = UI$ and $I = \\dfrac{U}{R}$, so $P = \\dfrac{U^2}{R}$, that is $R = \\dfrac{U^2}{P}$\n\n**Conversions:** $P = 1.50\\,\\text{kW} = 1.50 \\cdot 1000\\,\\text{W} = 1500\\,\\text{W}$\n\n**Substitution:** $R = \\dfrac{(230\\,\\text{V})^2}{1500\\,\\text{W}} = \\dfrac{52\\,900\\,\\text{V}^2}{1500\\,\\text{W}} = 35.27\\,\\Omega$\n\n**Answer:** $R \\approx 35.3\\,\\Omega$, three significant figures like the power and the voltage.\n\n**Reasonableness:** The current is $\\tfrac{230\\,\\text{V}}{35.3\\,\\Omega} = 6.5\\,\\text{A}$ and $230\\,\\text{V} \\cdot 6.5\\,\\text{A} \\approx 1500\\,\\text{W}$. The current is below the $10$–$16\\,\\text{A}$ limit of an ordinary socket, as it should be for a household appliance.",
+      "fold": "Osa I"
+    },
+    {
+      "id": "osa1-10",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "10. A violet laser (2 p)",
+      "prompt": "The laser of a Blu-ray player emits violet light with a wavelength of $405\\,\\text{nm}$. Calculate the energy of one photon in electronvolts.",
+      "answer": 3.06,
+      "unit": "eV",
+      "tolerance": 0.02,
+      "mistakes": [
+        {
+          "value": 4.9e-19,
+          "feedback": "This is the energy in joules. Convert it to electronvolts: $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$. Review this in the chapter [*The photoelectric effect and the photon*](fy8-1.html)."
+        },
+        {
+          "value": 3.06e-09,
+          "feedback": "The wavelength must be converted to metres: $405\\,\\text{nm} = 405 \\cdot 10^{-9}\\,\\text{m}$. Review this in the chapter [*The photoelectric effect and the photon*](fy8-1.html)."
+        },
+        {
+          "value": 0.327,
+          "feedback": "You divided the wavelength by the constant $hc$. The energy of a photon is $E = \\tfrac{hc}{\\lambda}$: the shorter the wavelength, the greater the energy. Review this in the chapter [*The photoelectric effect and the photon*](fy8-1.html)."
+        }
+      ],
+      "solution": "**Given:** wavelength $\\lambda = 405\\,\\text{nm}$, Planck constant $h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, speed of light $c = 2.998 \\cdot 10^8\\,\\text{m/s}$\n\n**Find:** the energy of a photon $E$ in electronvolts\n\n**Principle:** Light carries energy in quanta, photons. The energy of one photon is proportional to the frequency of the light, and the frequency follows from the wavelength, because the speed of light is $c = f\\lambda$.\n\n**Formula:** $E = hf$ and $f = \\dfrac{c}{\\lambda}$, so $E = \\dfrac{hc}{\\lambda}$\n\n**Conversions:** $\\lambda = 405\\,\\text{nm} = 405 \\cdot 10^{-9}\\,\\text{m}$ and $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$\n\n**Substitution:** $hc = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s} \\cdot 2.998 \\cdot 10^8\\,\\text{m/s} = 1.986 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m}$, so $E = \\dfrac{1.986 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m}}{405 \\cdot 10^{-9}\\,\\text{m}} = 4.905 \\cdot 10^{-19}\\,\\text{J}$ and in electronvolts $E = \\dfrac{4.905 \\cdot 10^{-19}\\,\\text{J}}{1.602 \\cdot 10^{-19}\\,\\text{J/eV}} = 3.062\\,\\text{eV}$\n\n**Answer:** $E \\approx 3.06\\,\\text{eV}$, three significant figures like the wavelength.\n\n**Reasonableness:** The photons of visible light have energies of about $1.6$–$3.3\\,\\text{eV}$, and violet is near the short-wavelength end, so the energy is at the upper end of the range. Check: $\\tfrac{1240\\,\\text{eV}\\,\\text{nm}}{405\\,\\text{nm}} = 3.06\\,\\text{eV}$.",
+      "fold": "Osa I"
+    }
+  ]
+}

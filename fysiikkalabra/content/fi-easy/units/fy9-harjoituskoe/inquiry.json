@@ -1,0 +1,299 @@
+{
+  "version": 1,
+  "contribution": "Kurssin viimeinen tunti on täysimittainen harjoituskoe eli koe, joka on yhtä pitkä kuin oikea koe. Pakollisessa Osassa I on lyhyitä kohtia koko kurssista. Osista II ja III opiskelija valitsee tehtävät itse. Mallivastausten ja pisteytysohjeiden avulla hän arvioi oman vastauksensa ja näkee, mitkä luvut hänen kannattaa vielä kerrata.",
+  "learn": [
+    "ratkaisemaan kuuden tunnin kokeen tehtäviä ja jakamaan ajan kokeen osien kesken.",
+    "valitsemaan tehtävät, jotka sopivat sinun osaamiseesi parhaiten.",
+    "arvioimaan vastauksesi pisteytysohjeen avulla ja valitsemaan luvut, jotka kertaat vielä."
+  ],
+  "prior": [
+    "Täydellisen ratkaisun vaiheet ja tehtäväsanat (luku *Ylioppilaskoe ja vastaustekniikka*)",
+    "Kuvaaja mittausaineistosta ja kulmakerroin sovitetulta suoralta (luku *Graafinen esitys ja suoran sovittaminen*)"
+  ],
+  "activities": [
+    {
+      "id": "ohjeet",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Ohjeet",
+        "Aikataulu",
+        "Itsearviointi"
+      ]
+    },
+    {
+      "id": "osa-1",
+      "stage": "sovella",
+      "type": "text",
+      "title": "Osa I: kymmenen lyhyttä kohtaa (20 p)",
+      "text": "Osa I on pakollinen eli siihen vastaavat kaikki. Siinä on kymmenen kohtaa moduuleista FY1–FY8. Jokaisesta kohdasta saa $2$ p. Kohdat 1–4 ovat monivalintoja. Kohdissa 5–7 valitset, pitääkö väite paikkansa ja millä perusteella. Kohdat 8–10 ovat lyhyitä laskuja. Kirjoita ensin laskun ratkaisu vihkoon tai tiedostoon. Syötä sitten tulos sivulle. Valitse vastaus huolellisesti, koska itsearvioinnissa vain ensimmäinen valintasi ratkaisee pisteet."
+    },
+    {
+      "id": "osa1-1",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "1. Puhelimen näyttö (2 p)",
+      "prompt": "Puhelimen näytön pituus mitataan viivoittimella, ja tulos on $14{,}62\\,\\text{cm}$. Leveys mitataan mittanauhalla, ja tulos on $6{,}8\\,\\text{cm}$. Miten näytön pinta-ala ilmoitetaan?",
+      "choices": [
+        {
+          "text": "$99{,}416\\,\\text{cm}^2$, koska kaikki laskimen antamat numerot ovat tarkkoja",
+          "feedback": "Laskin näyttää kaikki numerot, mutta tulos ei ole tarkempi kuin lähtöarvot eli annetut mittaustulokset. Leveys tiedetään vain kahden numeron tarkkuudella. Siksi tuloksessa on kaksi merkitsevää numeroa: $99\\,\\text{cm}^2$. Kertaa luvussa [*Mittaaminen ja mittauksen luotettavuus*](fy1-3.html)."
+        },
+        {
+          "text": "$99{,}4\\,\\text{cm}^2$, koska tarkemmassa mittauksessa on monta desimaalia",
+          "feedback": "Tuloksen tarkkuuden määrää epätarkin lähtöarvo, ei tarkin. Leveydessä $6{,}8\\,\\text{cm}$ on kaksi merkitsevää numeroa. Siksi pinta-ala on $99\\,\\text{cm}^2$. Kertaa luvussa [*Mittaaminen ja mittauksen luotettavuus*](fy1-3.html)."
+        },
+        {
+          "text": "$99\\,\\text{cm}^2$, koska epätarkimmassa arvossa on kaksi merkitsevää numeroa",
+          "correct": true,
+          "feedback": "Oikein. Kertolaskun tuloksessa on yhtä monta merkitsevää numeroa kuin epätarkimmassa lähtöarvossa. Tässä epätarkin arvo on leveys $6{,}8\\,\\text{cm}$. Kertaa luvussa [*Mittaaminen ja mittauksen luotettavuus*](fy1-3.html)."
+        },
+        {
+          "text": "$100\\,\\text{cm}^2$, koska pinta-ala pyöristetään aina tasakymmeniin",
+          "feedback": "Tulosta ei pyöristetä tasakymmeniin. Se pyöristetään merkitsevien numeroiden mukaan. Kaksi merkitsevää numeroa antaa $99\\,\\text{cm}^2$. Tulos $100\\,\\text{cm}^2$ on pyöristetty liikaa. Kertaa luvussa [*Mittaaminen ja mittauksen luotettavuus*](fy1-3.html)."
+        }
+      ],
+      "fold": "Osa I"
+    },
+    {
+      "id": "osa1-2",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "2. Energian ketju (2 p)",
+      "prompt": "Sähkö tuotetaan lauhdevoimalassa. Voimalan hyötysuhde on $40\\,\\%$. Sähkönsiirrossa häviää $5\\,\\%$ sähköenergiasta. LED-lampun hyötysuhde on $30\\,\\%$. Kuinka suuri osa polttoaineen energiasta muuttuu lampussa valoksi?",
+      "choices": [
+        {
+          "text": "Noin $11\\,\\%$, koska ketjun hyötysuhteet kerrotaan keskenään",
+          "correct": true,
+          "feedback": "Oikein. Jokainen vaihe saa vain sen energian, jonka edellinen vaihe antoi: $0{,}40 \\cdot 0{,}95 \\cdot 0{,}30 \\approx 0{,}11$. Kertaa luvussa [*Hyötysuhde*](fy2-4.html)."
+        },
+        {
+          "text": "Noin $55\\,\\%$, koska ketjua kuvaa hyötysuhteiden keskiarvo",
+          "feedback": "Keskiarvo ei kerro, kuinka paljon energiaa on jäljellä ketjun lopussa. Jokainen vaihe käyttää vain sen energian, jonka edellinen vaihe antoi. Siksi hyötysuhteet kerrotaan keskenään. Tulos on noin $11\\,\\%$. Kertaa luvussa [*Hyötysuhde*](fy2-4.html)."
+        },
+        {
+          "text": "Noin $30\\,\\%$, koska ketjun heikoin vaihe määrää kokonaisuuden",
+          "feedback": "Heikoin vaihe ei yksin määrää tulosta. Myös voimalan ja sähkönsiirron häviöt pienentävät energiaa, joka tulee lampulle. Kokonaishyötysuhde on $0{,}40 \\cdot 0{,}95 \\cdot 0{,}30 \\approx 11\\,\\%$. Kertaa luvussa [*Hyötysuhde*](fy2-4.html)."
+        },
+        {
+          "text": "Noin $95\\,\\%$, koska energiaa häviää vain sähkönsiirrossa",
+          "feedback": "Energiaa muuttuu muuksi kuin hyödyksi myös voimalassa ($60\\,\\%$) ja lampussa ($70\\,\\%$). Hyötysuhteet kerrotaan keskenään. Tulos on noin $11\\,\\%$. Kertaa luvussa [*Hyötysuhde*](fy2-4.html)."
+        }
+      ],
+      "fold": "Osa I"
+    },
+    {
+      "id": "osa1-3",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "3. Pallo lakipisteessä (2 p)",
+      "prompt": "Pallo heitetään suoraan ylöspäin. Ilmanvastusta ei oteta huomioon. Lakipiste on lennon korkein kohta. Mikä väite pallon liikkeestä lakipisteessä on oikein?",
+      "choices": [
+        {
+          "text": "Nopeus on nolla, joten myös kiihtyvyys ja kokonaisvoima ovat nolla.",
+          "feedback": "Jos kiihtyvyys olisi nolla, pallo jäisi lakipisteeseen ilmaan. Palloon vaikuttaa koko ajan paino. Siksi kiihtyvyys on $g$ alaspäin myös silloin, kun nopeus on nolla. Kertaa luvussa [*Newtonin toinen laki*](fy4-4.html)."
+        },
+        {
+          "text": "Nopeus on nolla, mutta kiihtyvyys on $g$ alaspäin, koska paino vaikuttaa.",
+          "correct": true,
+          "feedback": "Oikein. Ainoa voima on paino. Siksi kiihtyvyys on koko lennon ajan $g$ alaspäin, myös lakipisteessä. Kertaa luvussa [*Newtonin toinen laki*](fy4-4.html)."
+        },
+        {
+          "text": "Heittovoima ja paino ovat yhtä suuret, joten pallo on hetken tasapainossa.",
+          "feedback": "Heittovoima vaikuttaa vain heiton aikana, kun pallo on kädessä. Lennon aikana palloon vaikuttaa vain paino. Siksi pallo ei ole tasapainossa. Kertaa luvussa [*Newtonin toinen laki*](fy4-4.html)."
+        },
+        {
+          "text": "Lakipisteessä kiihtyvyyden suunta vaihtuu ylöspäin osoittavasta alaspäin osoittavaksi.",
+          "feedback": "Nopeuden suunta vaihtuu, mutta kiihtyvyyden suunta ei vaihdu. Paino osoittaa koko ajan alaspäin. Siksi kiihtyvyys on $g$ alaspäin koko lennon ajan. Kertaa luvussa [*Newtonin toinen laki*](fy4-4.html)."
+        }
+      ],
+      "fold": "Osa I"
+    },
+    {
+      "id": "osa1-4",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "4. Magneetti kupariputkessa (2 p)",
+      "prompt": "Pieni ja voimakas magneetti pudotetaan pystysuoraan kupariputkeen. Magneetti putoaa putken läpi paljon hitaammin kuin samankokoinen rautakappale. Mikä selittää ilmiön?",
+      "choices": [
+        {
+          "text": "Kupari magnetoituu ja vetää magneettia puoleensa samalla tavalla kuin rauta.",
+          "feedback": "Kupari ei ole ferromagneettinen aine. Se ei magnetoidu kuten rauta, eikä magneetti tartu kupariin. Magneetti hidastuu induktion takia. Kertaa luvussa [*Lenzin laki ja pyörrevirrat*](fy7-6.html)."
+        },
+        {
+          "text": "Magneetin ja putken välissä oleva ilma jarruttaa, koska rako on hyvin kapea.",
+          "feedback": "Samankokoinen rautakappale putoaa samassa raossa nopeasti. Siksi ilma ei selitä eroa. Magneetti hidastuu pyörrevirtojen takia. Kertaa luvussa [*Lenzin laki ja pyörrevirrat*](fy7-6.html)."
+        },
+        {
+          "text": "Putken sähkövaraukset hylkivät magneettia ja hidastavat sen liikettä.",
+          "feedback": "Putki on sähköisesti neutraali, eikä magneetilla ole sähkövarausta. Liikkuva magneetti indusoi eli synnyttää putkeen sähkövirtoja. Näiden virtojen magneettikenttä hidastaa magneettia. Kertaa luvussa [*Lenzin laki ja pyörrevirrat*](fy7-6.html)."
+        },
+        {
+          "text": "Putkeen indusoituu pyörrevirtoja, ja niiden kenttä vastustaa liikettä.",
+          "correct": true,
+          "feedback": "Oikein. Magneettivuo muuttuu putken seinämässä. Siksi seinämään syntyy pyörrevirtoja. Lenzin lain mukaan niiden magneettikenttä vastustaa muutosta, joka synnyttää ne. Kertaa luvussa [*Lenzin laki ja pyörrevirrat*](fy7-6.html)."
+        }
+      ],
+      "fold": "Osa I"
+    },
+    {
+      "id": "osa1-5",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "5. Väite: kaasupullo lämpenee (2 p)",
+      "prompt": "Väite: ”Suljetun teräspullon kaasu lämpenee $20\\,{}^\\circ\\text{C}$:sta $40\\,{}^\\circ\\text{C}$:een. Silloin kaasun paine kaksinkertaistuu eli kasvaa kaksi kertaa niin suureksi.” Valitse oikea arvio ja perustelu.",
+      "choices": [
+        {
+          "text": "Tosi, koska vakiotilavuudessa paine on verrannollinen lämpötilaan.",
+          "feedback": "Paine on verrannollinen absoluuttiseen lämpötilaan eli lämpötilaan kelvineinä, ei celsiusasteina. Kun lämpötila nousee $293\\,\\text{K}$:stä $313\\,\\text{K}$:iin, paine kasvaa vain noin $7\\,\\%$. Kertaa luvussa [*Ideaalikaasun tilanyhtälö*](fy3-10.html)."
+        },
+        {
+          "text": "Tosi, koska kaasun hiukkasten nopeus kaksinkertaistuu, kun kaasu lämpenee.",
+          "feedback": "Hiukkasten keskimääräinen liike-energia on verrannollinen absoluuttiseen lämpötilaan. Se kasvaa vain noin $7\\,\\%$. Nopeus ei kaksinkertaistu, eikä paine kaksinkertaistu. Kertaa luvussa [*Ideaalikaasun tilanyhtälö*](fy3-10.html)."
+        },
+        {
+          "text": "Epätosi, koska suljetussa pullossa kaasun paine ei voi muuttua.",
+          "feedback": "Kun tilavuus pysyy samana, paine kasvaa lämpötilan mukana. Hiukkaset törmäävät seiniin useammin ja voimakkaammin. Paine kasvaa noin $7\\,\\%$. Kertaa luvussa [*Ideaalikaasun tilanyhtälö*](fy3-10.html)."
+        },
+        {
+          "text": "Epätosi, koska kelvineinä lämpötila kasvaa vain noin $7\\,\\%$.",
+          "correct": true,
+          "feedback": "Oikein. Vakiotilavuudessa $\\tfrac{p_2}{p_1} = \\tfrac{T_2}{T_1} = \\tfrac{313\\,\\text{K}}{293\\,\\text{K}} \\approx 1{,}07$. Siksi paine kasvaa noin $7\\,\\%$. Kertaa luvussa [*Ideaalikaasun tilanyhtälö*](fy3-10.html)."
+        }
+      ],
+      "fold": "Osa I"
+    },
+    {
+      "id": "osa1-6",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "6. Väite: satelliittien nopeudet (2 p)",
+      "prompt": "Väite: ”Satelliitti kiertää Maata matalalla ympyräradalla. Se liikkuu nopeammin kuin satelliitti, joka kiertää korkealla ympyräradalla.” Valitse oikea arvio ja perustelu.",
+      "choices": [
+        {
+          "text": "Tosi, koska matalalla radalla gravitaatio vaatii suuremman nopeuden.",
+          "correct": true,
+          "feedback": "Oikein. Gravitaatio antaa satelliitille normaalikiihtyvyyden: $G\\tfrac{mM}{r^2} = m\\tfrac{v^2}{r}$. Siitä saadaan $v = \\sqrt{\\tfrac{GM}{r}}$. Nopeus kasvaa, kun säde pienenee. Kertaa luvussa [*Satelliitit ja planeetat ympyräradalla*](fy5-6.html)."
+        },
+        {
+          "text": "Tosi, koska matalalla radalla ohut ilma työntää satelliittia eteenpäin.",
+          "feedback": "Ilmanvastus jarruttaa satelliittia. Se ei työnnä satelliittia. Väite on tosi, mutta syy on gravitaatio: $v = \\sqrt{\\tfrac{GM}{r}}$. Kertaa luvussa [*Satelliitit ja planeetat ympyräradalla*](fy5-6.html)."
+        },
+        {
+          "text": "Epätosi, koska satelliitin ratanopeus on sama kaikilla ympyräradoilla.",
+          "feedback": "Ratanopeus riippuu radan säteestä: $v = \\sqrt{\\tfrac{GM}{r}}$. Matalalla radalla nopeus on suurempi. Kertaa luvussa [*Satelliitit ja planeetat ympyräradalla*](fy5-6.html)."
+        },
+        {
+          "text": "Epätosi, koska pidemmän radan kiertäminen vaatii suuremman nopeuden.",
+          "feedback": "Pidempi rata kierretään hitaammin, ei nopeammin. Korkealla gravitaatio on heikompi, ja nopeus $v = \\sqrt{\\tfrac{GM}{r}}$ on pienempi. Jaksonaika eli yhden kierroksen aika kasvaa kahdesta syystä: rata on pidempi ja nopeus on pienempi. Kertaa luvussa [*Satelliitit ja planeetat ympyräradalla*](fy5-6.html)."
+        }
+      ],
+      "fold": "Osa I"
+    },
+    {
+      "id": "osa1-7",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "7. Väite: toinen lamppu rinnalle (2 p)",
+      "prompt": "Lamppu on kytketty pariston napoihin. Väite: ”Kun lampun rinnalle kytketään toinen samanlainen lamppu, ensimmäinen lamppu himmenee selvästi. Se johtuu siitä, että virta jakautuu kahdelle lampulle.” Paristo on uusi, ja sen sisäinen resistanssi on pieni. Valitse oikea arvio ja perustelu.",
+      "choices": [
+        {
+          "text": "Tosi, koska pariston virta pysyy samana ja jakautuu lampuille puoliksi.",
+          "feedback": "Paristo ei anna aina samaa virtaa. Sen napajännite pysyy lähes samana. Siksi kumpikin lamppu saa saman virran kuin ensimmäinen lamppu sai ennen. Pariston virta kaksinkertaistuu. Kertaa luvussa [*Vastusten sarja- ja rinnankytkennät*](fy6-4.html)."
+        },
+        {
+          "text": "Tosi, koska rinnankytkennän kokonaisresistanssi on suurempi kuin ennen.",
+          "feedback": "Rinnankytkennän kokonaisresistanssi on pienempi kuin kummankaan lampun resistanssi. Siksi pariston virta kasvaa. Lampun jännite ja virta pysyvät lähes samoina. Kertaa luvussa [*Vastusten sarja- ja rinnankytkennät*](fy6-4.html)."
+        },
+        {
+          "text": "Epätosi: lampun jännite pysyy lähes samana, joten myös sen virta pysyy lähes samana.",
+          "correct": true,
+          "feedback": "Oikein. Rinnan kytketyillä lampuilla on sama jännite. Se on pariston napajännite, joka pienenee vain vähän sisäisen resistanssin takia. Siksi ensimmäinen lamppu himmenee vain vähän. Kertaa luvussa [*Lähdejännite ja sisäinen resistanssi*](fy6-8.html)."
+        },
+        {
+          "text": "Epätosi, koska ensimmäinen lamppu kirkastuu, kun virta kasvaa.",
+          "feedback": "Pariston virta kasvaa, mutta se jakautuu lampuille. Ensimmäisen lampun jännite ja virta pysyvät lähes samoina. Siksi lamppu ei kirkastu. Kertaa luvussa [*Vastusten sarja- ja rinnankytkennät*](fy6-4.html)."
+        }
+      ],
+      "fold": "Osa I"
+    },
+    {
+      "id": "osa1-8",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "8. Jousen värähtely (2 p)",
+      "prompt": "Jousen jousivakio on $40{,}0\\,\\text{N/m}$. Jouseen ripustetaan $250\\,\\text{g}$:n punnus. Punnus pannaan värähtelemään ylös ja alas. Laske värähtelyn jaksonaika. Jousen massaa ei oteta huomioon.",
+      "answer": 0.497,
+      "unit": "s",
+      "tolerance": 0.02,
+      "mistakes": [
+        {
+          "value": 0.0791,
+          "feedback": "Unohdit tekijän $2\\pi$: $T = 2\\pi\\sqrt{\\tfrac{m}{k}}$. Kertaa luvussa [*Jousivärähtelijä ja heiluri*](fy5-9.html)."
+        },
+        {
+          "value": 79.5,
+          "feedback": "Massa ja jousivakio ovat neliöjuuressa väärin päin. Raskaampi punnus värähtelee hitaammin. Siksi massa on osoittajassa eli murtoviivan yläpuolella: $T = 2\\pi\\sqrt{\\tfrac{m}{k}}$. Kertaa luvussa [*Jousivärähtelijä ja heiluri*](fy5-9.html)."
+        },
+        {
+          "value": 15.7,
+          "feedback": "Muunna massa kilogrammoiksi: $250\\,\\text{g} = 0{,}250\\,\\text{kg}$. Kertaa luvussa [*Jousivärähtelijä ja heiluri*](fy5-9.html)."
+        }
+      ],
+      "solution": "**Annettu:** jousivakio $k = 40{,}0\\,\\text{N/m}$, massa $m = 250\\,\\text{g}$\n\n**Kysytty:** jaksonaika $T$\n\n**Periaate:** Jousivoima on verrannollinen siihen, kuinka kauas punnus on siirtynyt tasapainoasemasta. Siksi liike on harmonista värähtelyä. Painovoima vain siirtää tasapainoasemaa. Se ei muuta jaksonaikaa. Jousen massaa ei oteta huomioon.\n\n**Kaava:** $T = 2\\pi\\sqrt{\\dfrac{m}{k}}$\n\n**Muunnokset:** $m = 250\\,\\text{g} = 250 \\cdot 10^{-3}\\,\\text{kg} = 0{,}250\\,\\text{kg}$\n\n**Sijoitus:** $T = 2\\pi\\sqrt{\\dfrac{0{,}250\\,\\text{kg}}{40{,}0\\,\\text{N/m}}} = 2\\pi \\cdot 0{,}07906\\,\\text{s} = 0{,}4967\\,\\text{s}$\n\n**Vastaus:** $T \\approx 0{,}497\\,\\text{s}$. Tuloksessa on kolme merkitsevää numeroa, kuten jousivakiossa ja massassa.\n\n**Järkevyys:** Yksikkö: $\\sqrt{\\tfrac{\\text{kg}}{\\text{N/m}}} = \\sqrt{\\tfrac{\\text{kg} \\cdot \\text{m}}{\\text{kg} \\cdot \\text{m/s}^2}} = \\text{s}$. Punnus värähtelee noin kaksi kertaa sekunnissa. Se sopii koulun jouseen ja punnukseen.",
+      "fold": "Osa I"
+    },
+    {
+      "id": "osa1-9",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "9. Lämpöpuhallin (2 p)",
+      "prompt": "Lämpöpuhaltimen teho on $1{,}50\\,\\text{kW}$, kun sen jännite on $230\\,\\text{V}$. Laske puhaltimen lämmitysvastuksen resistanssi.",
+      "answer": 35.3,
+      "unit": "Ω",
+      "tolerance": 0.02,
+      "mistakes": [
+        {
+          "value": 0.153,
+          "feedback": "Jaoit jännitteen teholla. Resistanssi saadaan yhtälöistä $P = UI$ ja $U = RI$: $R = \\tfrac{U^2}{P}$. Kertaa luvussa [*Sähköteho ja vastuksen lämpeneminen*](fy6-6.html)."
+        },
+        {
+          "value": 0.0284,
+          "feedback": "Lauseke on väärin päin: $R = \\tfrac{U^2}{P}$, ei $\\tfrac{P}{U^2}$. Kertaa luvussa [*Sähköteho ja vastuksen lämpeneminen*](fy6-6.html)."
+        },
+        {
+          "value": 35267.0,
+          "feedback": "Muunna teho watteiksi: $1{,}50\\,\\text{kW} = 1500\\,\\text{W}$. Kertaa luvussa [*Sähköteho ja vastuksen lämpeneminen*](fy6-6.html)."
+        }
+      ],
+      "solution": "**Annettu:** teho $P = 1{,}50\\,\\text{kW}$, jännite $U = 230\\,\\text{V}$\n\n**Kysytty:** resistanssi $R$\n\n**Periaate:** Sähköteho on jännite kerrottuna virralla. Vastuksen virta noudattaa Ohmin lakia. Kun virta poistetaan yhtälöistä, teho riippuu vain jännitteestä ja resistanssista.\n\n**Kaava:** $P = UI$ ja $I = \\dfrac{U}{R}$, joten $P = \\dfrac{U^2}{R}$ eli $R = \\dfrac{U^2}{P}$\n\n**Muunnokset:** $P = 1{,}50\\,\\text{kW} = 1{,}50 \\cdot 1000\\,\\text{W} = 1500\\,\\text{W}$\n\n**Sijoitus:** $R = \\dfrac{(230\\,\\text{V})^2}{1500\\,\\text{W}} = \\dfrac{52\\,900\\,\\text{V}^2}{1500\\,\\text{W}} = 35{,}27\\,\\Omega$\n\n**Vastaus:** $R \\approx 35{,}3\\,\\Omega$. Tuloksessa on kolme merkitsevää numeroa, kuten tehossa ja jännitteessä.\n\n**Järkevyys:** Virta on $\\tfrac{230\\,\\text{V}}{35{,}3\\,\\Omega} = 6{,}5\\,\\text{A}$, ja $230\\,\\text{V} \\cdot 6{,}5\\,\\text{A} \\approx 1500\\,\\text{W}$. Tavallisen pistorasian virran raja on $10$–$16\\,\\text{A}$. Virta on rajan alapuolella, kuten kodin laitteessa pitää olla.",
+      "fold": "Osa I"
+    },
+    {
+      "id": "osa1-10",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "10. Violetti laser (2 p)",
+      "prompt": "Blu-ray-soittimen laser lähettää violettia valoa. Valon aallonpituus on $405\\,\\text{nm}$. Laske yhden fotonin energia elektronivoltteina.",
+      "answer": 3.06,
+      "unit": "eV",
+      "tolerance": 0.02,
+      "mistakes": [
+        {
+          "value": 4.9e-19,
+          "feedback": "Tämä on energia jouleina. Muunna se elektronivolteiksi: $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$. Kertaa luvussa [*Valosähköinen ilmiö ja fotoni*](fy8-1.html)."
+        },
+        {
+          "value": 3.06e-09,
+          "feedback": "Muunna aallonpituus metreiksi: $405\\,\\text{nm} = 405 \\cdot 10^{-9}\\,\\text{m}$. Kertaa luvussa [*Valosähköinen ilmiö ja fotoni*](fy8-1.html)."
+        },
+        {
+          "value": 0.327,
+          "feedback": "Jaoit aallonpituuden vakiolla $hc$. Fotonin energia on $E = \\tfrac{hc}{\\lambda}$. Kun aallonpituus on lyhyempi, energia on suurempi. Kertaa luvussa [*Valosähköinen ilmiö ja fotoni*](fy8-1.html)."
+        }
+      ],
+      "solution": "**Annettu:** aallonpituus $\\lambda = 405\\,\\text{nm}$, Planckin vakio $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, valon nopeus $c = 2{,}998 \\cdot 10^8\\,\\text{m/s}$\n\n**Kysytty:** fotonin energia $E$ elektronivoltteina\n\n**Periaate:** Valo siirtää energiaa pieninä paketteina eli kvantteina. Niitä kutsutaan fotoneiksi. Yhden fotonin energia on verrannollinen valon taajuuteen. Taajuus saadaan aallonpituudesta, koska valon nopeus on $c = f\\lambda$.\n\n**Kaava:** $E = hf$ ja $f = \\dfrac{c}{\\lambda}$, joten $E = \\dfrac{hc}{\\lambda}$\n\n**Muunnokset:** $\\lambda = 405\\,\\text{nm} = 405 \\cdot 10^{-9}\\,\\text{m}$ ja $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$\n\n**Sijoitus:** $hc = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s} \\cdot 2{,}998 \\cdot 10^8\\,\\text{m/s} = 1{,}986 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m}$. Siksi $E = \\dfrac{1{,}986 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m}}{405 \\cdot 10^{-9}\\,\\text{m}} = 4{,}905 \\cdot 10^{-19}\\,\\text{J}$. Elektronivoltteina $E = \\dfrac{4{,}905 \\cdot 10^{-19}\\,\\text{J}}{1{,}602 \\cdot 10^{-19}\\,\\text{J/eV}} = 3{,}062\\,\\text{eV}$\n\n**Vastaus:** $E \\approx 3{,}06\\,\\text{eV}$. Tuloksessa on kolme merkitsevää numeroa, kuten aallonpituudessa.\n\n**Järkevyys:** Näkyvän valon fotonien energia on noin $1{,}6$–$3{,}3\\,\\text{eV}$. Violetilla valolla on lyhyt aallonpituus, joten energia on välin yläpäässä. Tarkistus: $\\tfrac{1240\\,\\text{eV}\\,\\text{nm}}{405\\,\\text{nm}} = 3{,}06\\,\\text{eV}$.",
+      "fold": "Osa I"
+    }
+  ]
+}

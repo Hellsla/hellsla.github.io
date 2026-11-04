@@ -1,0 +1,36 @@
+{
+  "id": "fy9-harjoituskoe",
+  "course": "FY9",
+  "chapter": 7,
+  "order": 1,
+  "title": "Harjoituskoe",
+  "description": "Kuuden tunnin harjoituskoe koko lukion fysiikasta. Kokeessa on kolme osaa: pakollinen Osa I, jossa on lyhyitä kohtia, Osa II, josta valitset neljä tehtävää seitsemästä, ja Osa III, josta valitset kaksi aineistotehtävää kolmesta. Mukana ovat mallivastaukset ja pisteytysohjeet, joilla arvioit itse oman vastauksesi.",
+  "kind": "review",
+  "minutes": 360,
+  "subjects": [
+    "physics"
+  ],
+  "sources": [],
+  "key_concepts": [
+    {
+      "term": "kuvaaja",
+      "explain": "Kuva, joka näyttää, miten yksi suure riippuu toisesta. Aineistotehtävässä mittaustulokset piirretään kuvaajaksi ja niihin sovitetaan suora."
+    },
+    {
+      "term": "kulmakerroin",
+      "explain": "Kertoo, kuinka jyrkästi suora nousee. Se luetaan sovitetulta suoralta kahdesta kaukana olevasta pisteestä: $k = \\frac{\\Delta y}{\\Delta x}$."
+    },
+    {
+      "term": "malli",
+      "explain": "Yksinkertaistettu kuvaus ilmiöstä, esimerkiksi ilmanvastus on verrannollinen nopeuden neliöön. Mallia verrataan mittauksiin."
+    },
+    {
+      "term": "mittausepävarmuus",
+      "explain": "Kertoo, kuinka paljon mittaustulos voi erota oikeasta arvosta. Se merkitään esimerkiksi $\\pm 0{,}004\\,\\text{Bq/g}$."
+    },
+    {
+      "term": "yksikkö",
+      "explain": "Kertoo, millä mitalla suure mitataan, esimerkiksi metri tai sekunti. Vastaus ilman yksikköä ei ole valmis."
+    }
+  ]
+}
