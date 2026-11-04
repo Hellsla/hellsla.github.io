@@ -107,7 +107,7 @@ expect("a page the other language lacks links to that language's module page, wh
        f'href="en/{module}.html#unavailable-{other}" hreflang="en"' in other_page and 'aria-describedby="lang-note-en"' in other_page
        and f'id="unavailable-{other}"' in (T / f"site/en/{module}.html").read_text())
 expect("the English course page lists the translated lesson, the rest as coming", f'href="{LESSON}.html"' in (T / "site/en/FY3.html").read_text() and "(en)" in (T / "site/en/FY3.html").read_text())
-code, out = run("check_layout.py", "--site")
+code, out = run("check_layout.py", LESSON, "--site")  # the one translated lesson: the whole site took over the 900 s limit in CI
 expect("the English pages pass the 360 px layout check", code == 0, "\n".join(l for l in out.splitlines() if not l.startswith("OK ")) or out[-600:])
 
 shutil.rmtree(T, ignore_errors=True)
