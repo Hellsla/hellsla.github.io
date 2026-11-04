@@ -395,7 +395,7 @@ Sulake ei huomaa ihmisen kautta kulkevaa virtaa: sen nimellisvirta on ampeereja,
   <foreignObject x="420" y="17.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$I_\text{L} - I_\text{N} = I_\text{v}$</div></foreignObject>
 </svg>
 
-<figure class="unit-photo"><img src="pics/fy6/residual-current-device.webp" alt="Valkoinen nelinapainen vikavirtasuoja mustalla taustalla: keltainen TEST-painike, musta vipu ja ruuviliittimet ylä- ja alareunassa; kyljessä merkinnät 230/400 V, IΔn = 0,03 A ja In = 40 A."><figcaption>Vikavirtasuoja. Merkintä $I_{\Delta n} = 0{,}03\,\text{A}$ kertoo, että suoja katkaisee virran, kun vaihe- ja nollajohtimen virtojen ero on $30\,\text{mA}$. Keltaisesta TEST-painikkeesta suojan toiminta kokeillaan säännöllisesti.</figcaption></figure>
+<figure class="unit-photo"><img src="pics/fy6/residual-current-device.webp" alt="Valkoinen nelinapainen vikavirtasuoja mustalla taustalla: keltainen TEST-painike, musta vipu ja ruuviliittimet ylä- ja alareunassa; kyljessä on merkinnät jännitteestä, laukaisuvirrasta ja nimellisvirrasta."><figcaption>Vikavirtasuoja. Merkintä $I_{\Delta n} = 0{,}03\,\text{A}$ kertoo, että suoja katkaisee virran, kun vaihe- ja nollajohtimen virtojen ero on $30\,\text{mA}$. Keltaisesta TEST-painikkeesta suojan toiminta kokeillaan säännöllisesti.</figcaption></figure>
 
 Vikavirtasuoja ei estä kaikkia iskuja. Jos ihminen koskettaa yhtä aikaa vaihejohdinta ja nollajohdinta, virta palaa nollajohdinta pitkin, eikä vaihe- ja nollajohtimen virtojen välille synny eroa. Siksi jännitteisiin osiin ei kosketa, vaikka ryhmässä olisi vikavirtasuoja.
 
