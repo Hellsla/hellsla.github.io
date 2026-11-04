@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 5482f5dd781ef9bd
+CONTENT-HASH: 71c65847b5364a38
+ROUND: 2
 
 ## Blocking
 
 ## Polish
-- [Minor] fy7-16-L2-07 — suorat lainausmerkit "..." tehtävätekstissä; luvuissa 13 ja 14 ”...” — yhtenäistä.
-- [Minor] fy7-16-L2-05, L2-06, L3-04, L3-05 taulukot (contact-6 #67, #68; contact-7 #76, #79) — desimaalit pisteellä (79.1, 4.62) — sivustotason käytäntö; renderöi pilkulla.
-- [Minor] fy7-16-L1-06 — lasi-väittelyn vaihtoehdot ovat selvästi eripituisia (oikea on pisin ja viimeinen) — vaihda oikean paikka ja tasaa pituus.
+- Ei huomautettavaa.
 
 ## Checked
-- 16-L1-06..08, L2-05..07, L3-04..05 (contact-6 #61–#72, contact-7 #73–#80; open-exercises-L3-1280-3): kaavat, yksiköt, taulukot, vastauslaatikot ja avatut ratkaisut ehjiä; ei leikkautumista. 360 px:n tehtäväkaappauksia ei ole; layout-tarkistus ok. Kaikilla uusilla täydellinen ratkaisu.
-- Hash alussa ja lopussa sama.
+- 16 muutetut tehtävät: lasi-MC (vaihtoehtojen järjestys ja sanamuodot), desibelitehtävä (”…”-lainausmerkit korjattu), induktioliesi (tehtävätekstin kappalejako, toleranssi); open-exercises-L3-1280-6 (latauksen interpolointi, 13 mm) ja viereiset osat. Ehjä renderöinti.
+- Kierros 1: Blocking oli tyhjä; kierroksen 1 Polish-kohdat käyty läpi (taulukoiden desimaalipiste on JSON-tallenne, ei virhe). 360 px:n tehtäväkaappauksia ei ole; layout 360 px -tarkistus on ok. Ei paljaita yksiköitä tekstissä (skriptitarkistus), hash alussa ja lopussa sama.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 5 · accessibility 5
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

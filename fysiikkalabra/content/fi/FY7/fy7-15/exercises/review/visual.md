@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 5fb1d833ae7bc6f3
+CONTENT-HASH: 1e3facb8514637c6
+ROUND: 2
 
 ## Blocking
 
 ## Polish
-- [Minor] fy7-15-L2-07 (tehtäväteksti) — suorat lainausmerkit "..." (myös fy7-16-L2-07); luvuissa 13 ja 14 käytetään ”...” — yhtenäistä.
-- [Minor] fy7-15-L2-05, L2-06, L3-04 taulukot (contact-7 #80, #82; contact-8 #88) — desimaalit pisteellä (0.94, 0.51) — sivustotason käytäntö; renderöi pilkulla.
-- [Minor] fy7-15-L3-05 a) — Auringon korkeus 36,9° on sama luku kuin vanhan tehtävän 15-17 vastaus (sama laskutapa) — for pedagogy: vaihda aine (esim. lasi) tai kysy muuta.
+- [Minor] fy7-15-L3-05 a) — Auringon korkeus 36,9° on sama luku kuin vanhan tehtävän 15-17 vastaus — for pedagogy: vaihda aine tai kysy muuta.
 
 ## Checked
-- 15-L1-06..08, L2-05..07, L3-04..05 (contact-7 #73–#84, contact-8 #85–#92; open-exercises-L3-1280-2): kaavat, taulukot, vastauslaatikot ja avatut ratkaisut ehjiä, ei ylivuotoa. 360 px:n tehtäväkaappauksia ei ole; layout-tarkistus ok. Ratkaisuissa kaikki vaiheet, kohta c) -mallivastaukset mukana.
-- Hash alussa ja lopussa sama.
+- 15 muutetut tehtävät: Malus-tehtävä (kysymysjärjestys, toleranssi), Brewster-virheanalyysi (”…”-lainausmerkit korjattu), kolmen polarisaattorin tehtävä (kappalejako), kalastaja (c-kohdan lisäys, vastaus 7,1 W/m²); open-exercises-L3-1280-4, -7. Kaikki renderöityvät ehjinä.
+- Kierros 1: Blocking oli tyhjä; kierroksen 1 Polish-kohdat käyty läpi (taulukoiden desimaalipiste on JSON-tallenne, ei virhe). 360 px:n tehtäväkaappauksia ei ole; layout 360 px -tarkistus on ok. Ei paljaita yksiköitä tekstissä (skriptitarkistus), hash alussa ja lopussa sama.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 5 · accessibility 5
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

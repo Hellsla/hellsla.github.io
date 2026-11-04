@@ -1,20 +1,18 @@
-VERDICT: FAIL
-CONTENT-HASH: 53b65d35068d0826
+VERDICT: PASS
+CONTENT-HASH: f11d7c4f7347aaa8
+ROUND: 2
 
 ## Blocking
-- exercises.json fy7-14-L3-05 text, lead over ~45 words (about 55) in one paragraph. Split points: "...ilmakiila ($n = 1{,}00$)." (the setup) / "Kiilaa valaistaan ylhäältä ... Tarkastellaan vain ilmakerroksen kahdesta pinnasta heijastuvaa valoa." (illumination and what is considered). The table and L paragraphs that follow are already separate.
-- solutions.md fy7-14-L2-07 Vastaus — "kun vihreää heijastuu vain 1,1 %, eli kolmanneksen tai alle": 1,1 : 2,9 = 0,38 and 1,1 : 3,2 = 0,34, so it is slightly over a third. Fix: "eli noin kolmanneksen".
 
 ## Polish
-- fy7-14-L1-07 is nearly the same task as the existing L2-04 (air → high-n layer → lower-n layer, one reversal, d = λ/4n); L1-07 also needs the reversal decision, which is level-2 reasoning. Vary it (e.g. ask the second-thinnest, or the dark case) or keep it as a deliberate easy variant.
-- fy7-14-L3-05 b) "x on numeron $k$ funktio" -> "x on kertaluvun (raidan järjestysluvun) $k$ funktio".
-- fy7-14-L2-07 text, second sentence is clumsy; "Pinnoite on mitoitettu ohuimman mahdollisen kerroksen ($k = 0$) mukaan niin, että heijastus on mahdollisimman pieni yhdellä aallonpituudella."
-- Data tables use decimal points ("2.9", "1.9"); the text uses commas. Use commas if the renderer does not convert them.
-- fy7-14-L3-04 c) solution: the two reflections here are very unequal (air-oil about 0,19 vs oil-water about 0,05 in amplitude), so the film is dark rather than black; one clause saying "tummempi kuin yksikään väri paksummassa kohdassa" would be more honest than "lähes musta".
+- fy7-14-L1-07 is still close to the existing L2-04 (air, high-n layer, lower-n layer, d = λ/4n) and needs the phase-reversal decision, which is level-2 reasoning. The plan asks for "uusi n", so acceptable; a twist (the dark case, or the second-thinnest) would separate them.
+- fy7-14-L3-04 b) states the condition "$2nd = k\lambda$" in the question, which hands the student the weakening condition; consider dropping the parenthesis and leaving it to the solution.
+- fy7-14-L2-07 solution Vastaus: "Purppura väri syntyy, koska heijastus on suurimmillaan ... päissä" is fine, but add that the difference is small (1,3 to 1,5 times), so the purple is faint, as the lesson says.
 
 ## Checked
-- Counts 8/7/5 reached; ids and levels follow the plan (MC phase shift, new n, wavelength in film, soap-film table, R(λ) graph, error analysis, oil film, wedge).
-- L1-07 96,9 nm, L1-08 1,5, L2-06 443 nm (k = 1 only visible), L2-07 97,8 nm, L3-04 529 nm and 360 nm, L3-05 12,4 µm (free fit 12,42, fit by eye 12,36) all recomputed and consistent with the solutions.
-- L2-05 data fit λ ≈ 5,3 d; k = 0 is the only plausible order (k = 1 gives n = 3,9), and the solution argues exactly that; tolerance 4 % covers the origin fit (1,33).
-- L1-06 distractors each have a repairing feedback; L2-07 b) and L3-04 c) are answered in the solutions.
-- Only 1280 px captures are listed; no 360 px check possible.
+- Round-1 Blocking resolved: L3-05 lead split into setup / illumination and data paragraphs (each under 45 words); L2-07 "kolmanneksen" claim removed and the table replaced by values that follow thin-film theory (R_min = 1,26 % at 540 nm; my recomputation gives 1,84 / 1,48 / 1,31 / 1,26 / 1,30 / 1,39 / 1,50 / 1,64 %, exactly the table), glass n = 1,52 now stated.
+- Round-1 Polish done: "numeron k" now "kertaluvun (raidan järjestysluvun) k"; L2-07 text reworded; L3-04 c) now says dark and nearly colourless with the amplitude argument (0,19 vs 0,05; 2,0 % vs 5,8 %), which is correct.
+- L3-04 recomputed: 529 nm strongest at 450 nm (k = 2), first weakening on thinning d = 360 nm. L3-05: 12,44 µm, answer 12,4 with 4 % tolerance accepts the stated 11,9 to 12,9 µm.
+- Correct MC option no longer first in L1-06.
+- Counts 8/7/5, levels fit the plan.
+- Only 1280 px captures listed; no 360 px capture to check.

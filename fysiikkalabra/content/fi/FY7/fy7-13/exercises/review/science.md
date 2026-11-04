@@ -1,20 +1,21 @@
-VERDICT: FAIL
-CONTENT-HASH: 061654f593114adf
+VERDICT: PASS
+CONTENT-HASH: 2599a88ef30c6ad1
+Round 2.
 
 ## Blocking
-- content/fi/FY7/fy7-13/exercises/solutions.md:190 (L3-05 b) — A: "pahvilla näkyy kolme valopistettä: reikä ja maksimit k = ±1". The beam hits the disc perpendicularly, so the k = 0 reflection goes straight back through the hole towards the laser and makes no spot on the card. Only the two k = ±1 spots show there — fix: answer "kaksi valopistettä (k = ±1); nollannen kertaluvun heijastus palaa reiän kautta laseria kohti, joten maksimeja on kolme (k = 0, ±1)", or change the question in exercises.json:312 to "Kuinka monta maksimia syntyy?" (3).
-- content/fi/FY7/fy7-13/exercises/exercises.json:254 (L3-04 b) and solutions.md:179 — A (the task asks for something its data does not give): "Tarkista, sopiiko tulos taulukon lukemiin" asks for a check against the table, but the table (exercises.json:271–303) runs only from 3,0 to 7,0 mm and x₂ = 10,0 mm lies outside it. The solution does not do the check in b either. The table also leaves out the central maximum, so the reader cannot see that the 5,0 mm peak is the first order — fix: extend the data with rows from the same cos² model (fringe spacing 5,0 mm), e.g. 0,0 → 1,00, 1,0 → 0,65, 2,5 → 0,00, 7,5 → 0,00, 9,0 → 0,65, 9,5 → 0,91, 10,0 → 1,00, 10,5 → 0,89 (an envelope may lower them), and have b) read the 10,0 mm peak from the table.
 
 ## Polish
-- solutions.md:190 (L3-05) — close to the existing L3-02 (CD), as planned; 3 significant figures is weak with 2x = 8,3 cm.
-- exercises.json L3-04 — kind "graph" but nothing is plotted: ask for a sketch of I(x) or drop "graph".
-- L2-07 — answered word for word by the lesson's measurement paragraph, so it is closer to level 1.
-- The plan's level-2 picture questions (`pattern`, `setup`, `white`) are missing (pedagogy).
+- solutions.md:190 (L3-05 Vastaus c) — the mean is now given to two significant figures (0,74 µm), the same as the reference value, so "0,36 % pienempi" claims more precision than the data have — fix: "noin −0,4 %. Ero on pienempi kuin mittausten epävarmuus, joten tulos vastaa DVD:n raitaväliä."
+- exercises.json:85 (L1-08, answer 4) and the existing L2-01 (7) — the answer box accepts ±1 in the last digit (data-step 1), so 3 and 5 count as correct for an integer order. This comes from the build's step rule, not from the task. Raise it with the tooling (a count answer should get step 0).
+- L2-07 (solutions.md:167) — the lesson's measurement paragraph answers it word for word, so it is closer to level 1 (carried over).
+- L3-05 — close to the existing L3-02 (CD) as planned; the plan's level-2 picture questions (`pattern`, `setup`, `white`) are still missing (pedagogy; carried over).
 
 ## Checked
-- All 18 answers recomputed in one script: exercises.json, answers.py and mine agree (L1-07 32,14°, L1-08 4, L2-05 633,7 nm, L2-06 5,53 %, L3-04 625,0 nm, L3-05 0,7374 µm).
-- L2-05: tan then sin, LSQ through the origin, per-point λ 625–638 nm.
-- L2-06: 562 against 532,3 nm, tan/sin = 1,055.
-- L3-04: the data fit cos²(πx/5,0 mm) to ±0,01; x₂ = 10,0 mm; part c is right.
-- L3-05: sin θ₂ = 1,44 > 1; −0,36 %.
-- L1-06 and L2-07: exactly one correct option, all feedback right; conditions stated; lesson symbols used.
+- Round-1 Blocking L3-05 b) resolved: the solution now says two spots (k = ±1) and three maxima, with k = 0 returning back through the hole. The task asks where the zero order goes.
+- Round-1 Blocking L3-04 b) resolved: 17 rows, each new row equals cos²(πx/5,0 mm) to ±0,01 (0 → 1,00, 1,0 → 0,65, 2,5 and 7,5 → 0,00, 9,0/9,5/10,0/10,5 → 0,65/0,91/1,00/0,89). b) reads the 10,0 mm peak; the computed x₂ is 10,0001 mm. The c) grating is called fictional (4 lines/mm).
+- L3-04 a) now asks for the I(x) graph (round-1 Polish).
+- One script recomputed every new answer: 32,14°; 4; 633,7 nm (LSQ through the origin); 5,53 %; 625,0 nm; 0,7374 µm (sin θ₂ = 1,443). All agree with exercises.json and answers.py.
+- The answer box accepts what the solutions call good (read from the built preview: data-tol, data-step and the 2 % floor). L3-05 0,74 falls within 0,715–0,760.
+- L2-06 now has a separate "what is wrong" part, and the Vastaus names the sin ≈ x/L error.
+- L1-06 and L2-07 (options reordered): exactly one correct option, it matches `answer`, and all feedback is right.
+- Hash the same at start and end.
