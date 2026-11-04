@@ -1,17 +1,28 @@
 VERDICT: PASS
-CONTENT-HASH: 97ec41ff120e01f4
+CONTENT-HASH: 881c48cc15dadf41
+ROUND: 4
+Mode: delta
 
 ## Blocking
+(none) Earlier Blocking: none. Round-1 Polish resolved: L2-05 now shows W1..W4 on separate rows, L3-05 uses plain "6,52 m/8,0 s" instead of nested fractions, and the d) check no longer an identity (fitted-line work against the table's last point, 28,8 kJ vs 28,7 kJ, arithmetic verified).
 
 ## Polish
-- [Minor] exercises.json tasks — some number+unit still plain text ("4,0 minuutissa", "12 sekunnissa", "25 metrin") while neighbours are maths; one rule.
-- [Minor] solutions L1-01, L1-03 Sijoitus — "2,000 kJ", "3,000 kW" pseudo-precision before the 2-digit answer; write "2,0 kJ" / "3,0 kW".
-- [Minor] solutions Järkevyys fractions (\tfrac in blocks, e.g. 36 kJ/12 s, 360 000 J/...) render about 8 px; use \dfrac in a block.
-- [Minor] solutions L1-04, L2-04, L3-01 — "0\ldots 6\,m" spaced dots (round 1, not rechecked in these captures); use an en dash.
+- [Minor] Task tables (L2-05, L2-06, L3-04, L3-05, 1280 px) — header centred, numbers left or right aligned — align both the same way.
+- [Minor] L2-07 (open-exercises-L2-1280-8) — the Mallivastaus appears above Kysytty and Periaate, unlike the other solutions — optional: place it after Sijoitus.
+- [Minor] L2-05 Kaava — "0,5 ·" replaces the fraction 1/2 in the formula (an intentional change); a reader may still expect \tfrac{1}{2}; fine as is, only keep it consistent in the other FY3 work chapters.
+- [Minor] No 360 px captures of the new tasks (only stage-exercises-390); check_layout 360 is clean.
 
 ## Checked
-- Round 1 Blocking (parenthesised chain lifted into a block): resolved. L1-01 Järkevyys now reads "Karkea arvio: ... ja" + block, "Sama työ nostaisi ...:" + block; L1-03 and L2-02 likewise, no stray parentheses.
-- open-exercises-1280-1, -3 (L1), L2-1280-2, L3-1280-2; layout intact, nothing clipped.
+- open-exercises-L2-1280-6: L2-05 (formula line, four trapezoid rows, answer 55 J) and the start of L2-06 (stairs, table).
+- open-exercises-L2-1280-8: L2-07 (error task, model answer, Sijoitus block, Järkevyys).
+- open-exercises-L3-1280-7: L3-05 (a) to d), aligned Sijoitus, Vastaus, Järkevyys).
+- Diff of the MC reorder in L1 read; no clipping or overflow at 1280.
+
+## Checked in round 3
+- Delta (HEAD): split rows read well in source: each continuation "\\ &= result" aligns under the first "=" of its aligned block, the Finnish decimal comma / English point and unit spacing are unchanged. check_layout.py 360 px --site is OK for fy3-2 (the site still serves the previous version of the formulas, so this does not yet prove the new rows). No 360 px solution captures exist in review/shots (only 390 and 1280 shots), so the 360 px result is judged from the source: rows are now at most about one line of text at 360 px.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 5 · accessibility 4
+
+## Checked in round 4
+- Delta (HEAD~3..HEAD, solutions.md display maths only): Split rows read well in source: each continuation is indented with \quad under the row's left side, the decimal separator and unit spacing are unchanged. check_layout.py fy3-2 --width 360 on freshly built preview: OK (fi, en, fi-easy), no formula overflow, only the existing wide-table scroll warning.
