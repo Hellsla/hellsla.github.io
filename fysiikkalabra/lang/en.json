@@ -1969,7 +1969,7 @@
       "hidas": "slow",
       "normaali": "normal",
       "nopea": "fast",
-      "selite": "Orange dot: annihilation photon. Line: the segment between the detectors that were hit at the same time.",
+      "selite": "Orange dot: annihilation photon. Line: segment between the detectors hit at the same time.",
       "lukemat": "Coincidences $N = {{n}}$<br><strong>Brightest spot of the image $(x, y) = ({{x}}, {{y}})\\,\\text{cm}$</strong><br>Distance from the tumour ${{e}}\\,\\text{cm}$, lines through the tumour ${{o}}\\,\\%$",
       "lukemat_ei": "Coincidences $N = {{n}}$<br><strong>Brightest spot of the image $(x, y) = ({{x}}, {{y}})\\,\\text{cm}$</strong><br>There is no tumour: the tracer is spread evenly.",
       "lukemat_0": "Coincidences $N = 0$<br><strong>The image has not started to form yet.</strong>",

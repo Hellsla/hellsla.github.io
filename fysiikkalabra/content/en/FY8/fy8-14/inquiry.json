@@ -156,15 +156,15 @@
       },
       "names": {
         "N": "coincidences $N$",
-        "kohde": "potilas",
-        "ilmaisu": "ilmaisu"
+        "kohde": "patient",
+        "ilmaisu": "detection"
       },
       "values": {
         "kohde": {
           "1": "one tumour"
         },
         "ilmaisu": {
-          "1": "koinsidenssi"
+          "1": "coincidence"
         }
       },
       "measure": [

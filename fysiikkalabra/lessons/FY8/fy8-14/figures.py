@@ -67,7 +67,7 @@ def rontgen():
         tend = stop if stop is not None else (yd - 2 - F[1]) / uy
         photon(f, F[0] + ux * 34, F[1] + uy * 34, F[0] + ux * tend, F[1] + uy * tend, PHOTON, 2.5, 3.5, 11)
     f.tex(250, 166, r"\text{pehmytkudos}", "end")
-    f.line(552, 206, 470, 210, INK, 1.5); f.tex(558, 206, r"\text{luu}", "start")
+    f.line(536, 206, 470, 210, INK, 1.5); f.tex(542, 206, r"\text{luu}", "start")
     f.tex(238, yd + 11, r"\text{ilmaisin}", "end")
     f.tex(400, 352, r"\text{luiden varjo}", "middle")
     f.line(400, 336, 400, 330, INK, 1.5)
@@ -201,7 +201,7 @@ def mittari():
     f.tex(250, 98, r"\text{ilmaisin}", "end")
     f.tex(250, 258, r"\text{lähde}\ (\beta^-)", "end")
     f.tex(362, 214, r"\text{paperirata}", "start")
-    f.tex(518, 60, r"\text{säätö}", "start")
+    f.tex(500, 60, r"\text{säätö}", "start")
     f.tex(300, 316, r"\text{paksumpi paperi: vähemmän läpi}", "middle")
     return f.svg()
 
