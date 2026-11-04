@@ -878,11 +878,18 @@ def build_language(lang):
     school = next(iter(local.values()))["school"] if local else ""
     home = (local_notes +
         f'<section class="home-intro" aria-labelledby="h-intro"><h1 id="h-intro">{T("site.home_h1")}</h1>'
-        f'<p class="lead">{T("site.home_sub")}</p></section>'
+        f'<p class="lead">{T("site.home_sub")}</p>'
+        # from 700 px the school's logo stands here, over the right column, so that both lists start level (teacher
+        # 2026-11-04); the list's own heading (the same logo) is then visually hidden, site.css .intro-school
+        + (f'<img class="intro-school" src="brand/kiviruukin-lukio-oikea-yonsininen.svg" alt="" width="98" height="56">' if local_rows else "")
+        + '</section>'
         f'<section class="catalogue" id="moduulit" aria-labelledby="h-modules"><h2 id="h-modules" class="visually-hidden">{T("site.modules")}</h2>'
         f'<div class="mod-cols"><ul class="mod-list">{catalogue}</ul><div class="mod-side">'
         + (f'<h3 class="mod-group">{T("site.upcoming")}</h3><ul class="mod-list up-list">{upcoming}</ul>' if upcoming else "")
-        + (f'<h3 class="mod-group">{esc(school)}</h3><ul class="mod-list local-list">{local_rows}</ul>' if local_rows else "")
+        # the school's own courses under the school's logo (teacher 2026-11-04: its emblem and name, the list level with the
+        # national modules: from 700 px the logo sits above the column, out of the flow, site.css .mod-school)
+        + (f'<h3 class="mod-group mod-school"><img src="brand/kiviruukin-lukio-oikea-yonsininen.svg" alt="{esc(school)}" width="98" height="56"></h3>'
+           f'<ul class="mod-list local-list">{local_rows}</ul>' if local_rows else "")
         + '</div></div></section>')
     (out / "index.html").write_text(front_chrome(page(T("site.home_title"), home, "", "index.html", T("site.home_description"), main_class="home",
                                          full_title=f'{T("site.name")} — {T("site.subtitle")}')))
