@@ -1,9 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 1bfec28580220a85
+CONTENT-HASH: 705d3af808b796fe
+
 ## Blocking
 
 ## Polish
-- Long title; acceptable, but a shorter form could be considered later.
 
 ## Checked
-batch delta review: the diff is a renamed lesson title and updated chapter cross-references; every reference matches the new titles, no stale old title remains in the lesson, inquiry or exercises, and the sentences read correctly. No figures, numbers or symbols changed.
+- delta review: the Find-the-error task is unchanged in content and difficulty; splitting the display formula over two rows (symbolic step, then substitution and result) makes the student's wrong calculation easier to read and keeps the error to be found in the same place.
+- Options, feedback and optional status unchanged; the sequence of the inquiry is unaffected.

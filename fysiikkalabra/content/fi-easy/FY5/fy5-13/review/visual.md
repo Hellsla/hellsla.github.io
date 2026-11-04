@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 7ce8a8bbaced56c2
+CONTENT-HASH: d97dd20b77970096
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- [Minor] review/shots: no capture shows the optional Find-the-error item opened; I rendered it myself at 390 px (opened details) and checked it there. Consider adding it to the captures.
 
 ## Checked
-- batch delta review: the new licensed photo (figure.unit-photo) captured in context from preview/fi-easy/fy5-13.html at 390 and 1280 px and opened (review/shots has no dedicated photo capture). The image loads at full resolution, scales inside the column on a phone and sits beside its paragraph at 1280 px. The caption is under the image with its credit line ("Kuva: …, licence"). Nothing is clipped and there is no horizontal overflow. The caption and alt text were read against the picture and the neighbouring paragraph: plain S2 Finnish, quantities in LaTeX.
+- Own 390 px render of the opened Find-the-error item: the aligned display has two rows with the = signs aligned, fractions in display size, units upright with thin space, no clipping; the formula scrolls 306/306 px (no overflow) and the page scrollWidth is 390 (no horizontal scroll).
+- Contact captures fy5-13-stage-sovella-390-2.png (fi): the item sits collapsed and the surrounding layout is intact.
+- Decimal separator matches the language; text outside the formula unchanged.

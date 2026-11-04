@@ -314,7 +314,7 @@
       "type": "choice",
       "title": "Find the error",
       "optional": true,
-      "prompt": "A student calculates the fundamental frequency of an organ pipe closed at its upper end when the length of the pipe is $0.85\\,\\text{m}$ and the speed of sound $340\\,\\text{m/s}$:\n\n$$f_1 = \\frac{v}{2L} = \\frac{340\\,\\text{m/s}}{2 \\cdot 0.85\\,\\text{m}} = 200\\,\\text{Hz}$$\n\nWhere is the error?",
+      "prompt": "A student calculates the fundamental frequency of an organ pipe closed at its upper end when the length of the pipe is $0.85\\,\\text{m}$ and the speed of sound $340\\,\\text{m/s}$:\n\n$$\\begin{aligned} f_1 &= \\frac{v}{2L} \\\\ &= \\frac{340\\,\\text{m/s}}{2 \\cdot 0.85\\,\\text{m}} = 200\\,\\text{Hz} \\end{aligned}$$\n\nWhere is the error?",
       "choices": [
         {
           "text": "There is a node at the closed end and an antinode at the open end, so $L = \\tfrac{\\lambda}{4}$ and $f_1 = \\tfrac{v}{4L} = 100\\,\\text{Hz}$.",
