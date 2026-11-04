@@ -216,3 +216,133 @@ v alas
 **Sijoitus:** $E_{\text{k},1} = \tfrac12\cdot 70{,}0\,\text{kg}\cdot(50{,}0\,\text{m/s})^2 = 87\,500\,\text{J}$ ja $E_{\text{k},2} = \tfrac12\cdot 70{,}0\,\text{kg}\cdot(6{,}0\,\text{m/s})^2 = 1260\,\text{J}$, joten $F_\text{v} = 70{,}0\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 + \dfrac{87\,500\,\text{J} - 1260\,\text{J}}{60{,}0\,\text{m}} = 686{,}7\,\text{N} + 1437{,}3\,\text{N} = 2124\,\text{N} \approx 2{,}12\,\text{kN}$
 **Vastaus:** $2{,}12\,\text{kN}$ ylöspäin, kolme merkitsevää numeroa kuten massassa $70{,}0\,\text{kg}$, nopeudessa $50{,}0\,\text{m/s}$ ja matkassa $60{,}0\,\text{m}$.
 **Järkevyys:** Ilmanvastus on noin kolme kertaa paino $687\,\text{N}$, joten kokonaisvoima osoittaa ylös ja hyppääjä hidastuu, kuten pitää. Liikeyhtälöstä hidastuvuus on $(2124 - 687)\,\text{N} : 70{,}0\,\text{kg} \approx 20\,\text{m/s}^2$, ja silloin $\tfrac12(v_1^2 - v_2^2) : a \approx 1232 : 20{,}5 \approx 60\,\text{m}$, kuten tehtävässä.
+
+
+## fy4-16-L1-06
+**Kysytty:** miten vaa'an lukema on verrattuna lukemaan, kun ylöspäin liikkuva hissi hidastaa pysähtyäkseen.
+**Periaate:** Vaaka mittaa tukivoimaa $N$. Tukivoima ja paino määräävät kiihtyvyyden Newtonin toisen lain mukaan, ei liikkeen suunta. Ylöspäin liikkuva hissi, joka hidastaa, kiihtyy alaspäin, joten kokonaisvoima osoittaa alas.
+**Mallivastaus:** Vaa'an lukema on pienempi kuin levossa. Kun positiivinen suunta on alas, $mg - N = ma$, joten $N = m(g - a)$ on pienempi kuin paino $mg$. Väite, että lukema olisi suurempi, koska hissi liikkuu ylös, sekoittaa nopeuden ja kiihtyvyyden: lukemaan vaikuttaa vain kiihtyvyys. Väite, että lukema olisi sama, koska massa ei muutu, ohittaa sen, että vaaka mittaa tukivoimaa eikä massaa. Nollaa lukema ei ole, koska hissin hidastuvuus on paljon pienempi kuin $g$.
+
+## fy4-16-L1-07
+**Kysytty:** mikä väite laskuvarjohyppääjän mekaanisesta energiasta on oikea, kun hän laskeutuu tasaisella nopeudella.
+**Periaate:** Mekaaninen energia on liike-energian ja potentiaalienergian summa. Energiaperiaatteen mukaan sen muutos on muiden voimien kuin painon tekemä työ, tässä ilmanvastuksen työ. Ilmanvastus osoittaa liikettä vastaan, joten sen työ on negatiivinen.
+**Mallivastaus:** Mekaaninen energia pienenee. Nopeus ei muutu, joten liike-energia pysyy samana, mutta korkeus pienenee ja potentiaalienergia pienenee. Ilmanvastus tekee negatiivista työtä, ja se muuttaa mekaanisen energian sisäenergiaksi. Väite, että mekaaninen energia säilyisi, koska nopeus ei muutu, ottaa huomioon vain liike-energian. Väite, että se säilyisi, koska paino ja ilmanvastus kumoavat toisensa, sekoittaa kokonaisvoiman ja energian: voimien summa on nolla, joten liike-energia ei muutu, mutta ilmanvastuksen työ ei ole nolla. Mekaaninen energia ei kasva, koska painon työ vain muuttaa potentiaalienergiaa ja ilmanvastus vie saman määrän pois.
+
+## fy4-16-L1-08
+**Annettu:** $m = 20{,}0\,\text{kg}$, $\alpha = 30{,}0\,{}^\circ$, $\mu = 0{,}200$, pulkka liukuu rinnettä alas; oppilaan tulos $39{,}2\,\text{N}$; $g = 9{,}81\,\text{m/s}^2$
+**Kysytty:** oppilaan virhe ja oikea liikekitkavoima $F_\mu$ yksikössä $\text{N}$
+**Periaate:** Liikekitka on $F_\mu = \mu N$, ja tukivoima $N$ saadaan voimakuviosta rinteen suuntaa vastaan kohtisuorassa. Pulkka ei kiihdy tähän suuntaan, joten tukivoima kumoaa vain painon rinnettä vastaan kohtisuoran komponentin. Oppilas oletti, että tukivoima kumoaa koko painon, mikä pätee vain vaakasuoralla pinnalla.
+**Voimakuvio:** Pulkka suorakulmiona rinteen suuntaisesti, $x$ rinnettä alas ja $y$ kohtisuoraan rinteestä ulos. Paino $\overline{G}$ keskipisteestä suoraan alas, tukivoima $\overline{N}$ alapinnasta kohtisuoraan rinteestä ulos, painoa lyhyempänä, ja liikekitka $\overline{F}_\mu$ alapinnan ylemmästä kulmasta rinnettä ylös. Painon komponentit katkoviivoin.
+```voimakuvio
+pinta -30
+G 196,2
+N 169,9
+F_mu 33,98 ylös
+a alas
+akselit -30
+komponentit G
+```
+**Kaava:** $y$: $N - mg\cos\alpha = 0$, joten $N = mg\cos\alpha$ ja $F_\mu = \mu N = \mu mg\cos\alpha$
+**Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
+**Sijoitus:** $N = 20{,}0\,\text{kg}\cdot 9{,}81\,\text{m/s}^2\cdot\cos 30{,}0\,{}^\circ = 169{,}9\,\text{N}$, joten $F_\mu = 0{,}200\cdot 169{,}9\,\text{N} = 33{,}98\,\text{N}$
+**Vastaus:** $34{,}0\,\text{N}$ rinnettä ylös. Oppilaan virhe oli kirjoittaa $N = mg$ rinteellä; oikein $N = mg\cos\alpha$. Kolme merkitsevää numeroa kuten massassa $20{,}0\,\text{kg}$ ja kulmassa $30{,}0\,{}^\circ$.
+**Järkevyys:** Rinteellä tukivoima on pienempi kuin paino $196{,}2\,\text{N}$, koska painon rinteen suuntainen osa ei paina pintaa vasten. Oppilaan tulos $39{,}2\,\text{N}$ on liian suuri tekijällä $1 : \cos 30{,}0\,{}^\circ \approx 1{,}15$, ja $34{,}0\,\text{N}\cdot 1{,}155 \approx 39{,}2\,\text{N}$. Painon rinteen suuntainen komponentti on $mg\sin\alpha = 98{,}1\,\text{N}$, joten pulkka kiihtyy alas, kuten pitää.
+
+## fy4-16-L2-05
+**Annettu:** $m = 62{,}0\,\text{kg}$; taulukosta $v = 0$ hetkellä $t = 0$ ja $v = 1{,}20\,\text{m/s}$ hetkellä $t = 3{,}0\,\text{s}$; $g = 9{,}81\,\text{m/s}^2$
+**Kysytty:** hissin kiihtyvyys $a$ ja lattian tukivoima $N$ yksikössä $\text{N}$
+**Periaate:** Kiihtyvyys on nopeuden muutos jaettuna ajalla eli $(t,v)$-kuvaajan kulmakerroin. Ihminen kiihtyy hissin mukana, joten Newtonin toisen lain mukaan tukivoiman ja painon erotus antaa kiihtyvyyden.
+**Kuvaajan lukeminen:** Nopeus kasvaa taulukossa tasaisesti: jokaisella $0{,}5\,\text{s}$:n välillä noin $0{,}2\,\text{m/s}$, joten kiihtyvyys on lähes vakio ja se saadaan ensimmäisen ja viimeisen rivin kautta. Pisteet ovat kaukana toisistaan, joten yksittäisen mittauksen virhe vaikuttaa vähän.
+**Voimakuvio:** Ihminen suorakulmiona, positiivinen suunta ylös. Paino $\overline{G}$ keskipisteestä alas ja lattian tukivoima $\overline{N}$ alhaalta ylös alapintaan asti, painoa pidempänä. Kiihtyvyys ylös merkitään erikseen eikä voimaksi.
+```voimakuvio
+pinta 0
+G 608,2
+N 633 työntö
+a ylös
+```
+**Kaava:** $a = \dfrac{v_2 - v_1}{t_2 - t_1}$ ja $N - mg = ma$, joten $N = m(g + a)$
+**Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
+**Sijoitus:** $a = \dfrac{1{,}20\,\text{m/s} - 0}{3{,}0\,\text{s} - 0} = 0{,}400\,\text{m/s}^2$ ja $N = 62{,}0\,\text{kg}\cdot(9{,}81 + 0{,}400)\,\text{m/s}^2 = 62{,}0\,\text{kg}\cdot 10{,}21\,\text{m/s}^2 = 633{,}0\,\text{N}$
+**Vastaus:** $633\,\text{N}$ ylöspäin, kolme merkitsevää numeroa kuten massassa $62{,}0\,\text{kg}$.
+**Järkevyys:** Paino on $62{,}0\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 \approx 608\,\text{N}$, ja tukivoima on siitä $ma \approx 25\,\text{N}$ suurempi, noin $4\,\%$. Kiihtyvyys on noin $4\,\%$ putoamiskiihtyvyydestä, joten osuus täsmää. Taulukon keskiosasta, pisteistä $t = 1{,}0\,\text{s}$ ja $t = 2{,}0\,\text{s}$, saadaan $a = 0{,}38\,\text{m/s}^2$, joten kiihtyvyys on lähes sama koko ajan.
+
+## fy4-16-L2-06
+**Annettu:** taulukosta paikat $x$ hetkillä $t = 0$, $1{,}0\,\text{s}$, $4{,}0\,\text{s}$ ja $5{,}0\,\text{s}$; vaakasuora pinta, ilmanvastus jätetään huomiotta; $g = 9{,}81\,\text{m/s}^2$
+**Kysytty:** liikekitkakerroin $\mu$ (yksikötön)
+**Periaate:** Aikavälin keskinopeus on siirtymä jaettuna ajalla. Tasaisesti hidastuvassa liikkeessa se on yhtä suuri kuin nopeus välin keskellä, joten kahden välin keskinopeuksista saadaan hidastuvuus. Vaakasuoralla pinnalla kitka on ainoa vaakasuora voima, joten Newtonin toinen laki antaa kitkakertoimen.
+**Kuvaajan lukeminen:** Ensimmäisellä sekunnilla pulkka kulkee $3{,}62\,\text{m} - 0 = 3{,}62\,\text{m}$, joten keskinopeus on $3{,}62\,\text{m/s}$ ja se on nopeus hetkellä $t = 0{,}5\,\text{s}$. Viimeisellä sekunnilla pulkka kulkee $10{,}03\,\text{m} - 9{,}57\,\text{m} = 0{,}46\,\text{m}$, joten keskinopeus on $0{,}46\,\text{m/s}$ hetkellä $t = 4{,}5\,\text{s}$.
+**Voimakuvio:** Pulkka suorakulmiona. Paino $\overline{G}$ keskipisteestä alas, tukivoima $\overline{N}$ alapinnasta ylös yhtä pitkänä ja liikekitka $\overline{F}_\mu$ alapinnan takakulmasta taaksepäin. Eteenpäin osoittavaa voimaa ei ole. Pystysuunnassa $N = mg$ ja vaakasuunnassa, kun positiivinen suunta on liikkeen suunta, $-\mu mg = ma$.
+```voimakuvio
+pinta 0
+G 100
+N 100
+F_mu 8,05 vasen
+a vasen
+```
+**Kaava:** Hidastuvuus on $\left|a\right| = \dfrac{v_1 - v_2}{t_2 - t_1}$, ja $\mu mg = m\left|a\right|$, joten $\mu = \dfrac{\left|a\right|}{g}$
+**Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita. Massa supistuu pois.
+**Sijoitus:** $\left|a\right| = \dfrac{3{,}62\,\text{m/s} - 0{,}46\,\text{m/s}}{4{,}5\,\text{s} - 0{,}5\,\text{s}} = 0{,}790\,\text{m/s}^2$ ja $\mu = \dfrac{0{,}790\,\text{m/s}^2}{9{,}81\,\text{m/s}^2} = 0{,}0805$
+**Vastaus:** $0{,}081$, kaksi merkitsevää numeroa kuten viimeisen sekunnin matkassa $0{,}46\,\text{m}$.
+**Järkevyys:** Muiden välien keskinopeudet ovat $2{,}76\,\text{m/s}$, $2{,}05\,\text{m/s}$ ja $1{,}14\,\text{m/s}$, ja ne pienenevät noin $0{,}8\,\text{m/s}$ sekunnissa, joten hidastuvuus on lähes vakio kuten kitkan aiheuttamassa liikkeessä pitääkin. Kerroin $0{,}08$ on pieni, kuten liukuvalle pulkalle lumella pitääkin, ja se on pienempi kuin $1$.
+
+## fy4-16-L2-07
+**Annettu:** viisi kulmaa $17{,}5\,{}^\circ$, $18{,}0\,{}^\circ$, $18{,}5\,{}^\circ$, $17{,}0\,{}^\circ$ ja $18{,}0\,{}^\circ$; laatikko liukuu tasaisella nopeudella
+**Kysytty:** a) liikekitkakerroin $\mu$ kulmien keskiarvosta; b) kertoimen vaihteluväli ja virhemarginaali
+**Periaate:** Nopeus on vakio, joten kokonaisvoima on nolla. Painon rinteen suuntainen komponentti kumoaa liikekitkan, ja kitka on $\mu mg\cos\alpha$, joten $\tan\alpha = \mu$. Mittauksissa on satunnaisvaihtelua, joten kulmaksi otetaan keskiarvo, ja vaihtelua kuvaa mittausten ääriarvojen väli.
+**Voimakuvio:** Laatikko suorakulmiona laudan suuntaisesti, $x$ lautaa alas ja $y$ kohtisuoraan laudasta ulos. Paino $\overline{G}$ keskipisteestä suoraan alas, tukivoima $\overline{N}$ alapinnasta kohtisuoraan laudasta ulos ja liikekitka $\overline{F}_\mu$ lautaa ylös. Voimat kumoavat toisensa rinteen suunnassa ja sitä vastaan kohtisuorassa.
+```voimakuvio
+pinta -17,8
+G 100
+N 95,2
+F_mu 30,6 ylös
+a 0
+akselit -17,8
+komponentit G
+```
+**Kaava:** $y$: $N = mg\cos\alpha$; $x$: $mg\sin\alpha - \mu N = 0$, joten $\mu = \tan\alpha$. Keskiarvo $\alpha_{\text{ka}} = \dfrac{\text{summa}}{5}$
+**Muunnokset:** Kulma on asteina, ja laskimen asteasetus on päällä. Kitkakerroin on yksikötön.
+**Sijoitus:** a) Kulmien summa on $17{,}5\,{}^\circ + 18{,}0\,{}^\circ + 18{,}5\,{}^\circ + 17{,}0\,{}^\circ + 18{,}0\,{}^\circ = 89{,}0\,{}^\circ$, joten $\alpha_{\text{ka}} = \dfrac{89{,}0\,{}^\circ}{5} = 17{,}8\,{}^\circ$ ja $\mu = \tan 17{,}8\,{}^\circ = 0{,}321$. b) Pienimmästä kulmasta $\tan 17{,}0\,{}^\circ = 0{,}306$ ja suurimmasta $\tan 18{,}5\,{}^\circ = 0{,}335$, joten vaihteluvälin puolikas on $\dfrac{0{,}335 - 0{,}306}{2} \approx 0{,}015$
+**Vastaus:** $\mu = 0{,}321 \pm 0{,}015$, kerroin kolmen merkitsevän numeron tarkkuudella kuten keskiarvokulma $17{,}8\,{}^\circ$. Virhemarginaali on noin $5\,\%$ kertoimesta.
+**Järkevyys:** Kerroin $0{,}32$ on pienempi kuin $1$ ja suuruusluokaltaan sellainen kuin arkisilla kuivilla pinnoilla. Kulmien vaihtelu on vain $\pm 0{,}75\,{}^\circ$, mutta se vaikuttaa kertoimeen noin $5\,\%$, joten yksittäinen mittaus ei riitä. Vaihteluväli kuvaa vain satunnaisvaihtelua, ei laudan karheuden tai kosteuden aiheuttamaa järjestelmällistä virhettä.
+
+## fy4-16-L3-04
+**Annettu:** rinne $\alpha = 14{,}0\,{}^\circ$, $\mu_1 = 0{,}060$; tasainen osa $\mu_2 = 0{,}150$; aita $25{,}0\,\text{m}$ rinteen juuresta ja pulkan on pysähdyttävä vähintään $5{,}0\,\text{m}$ sitä ennen, joten tasaisen osan pituus $d = 25{,}0\,\text{m} - 5{,}0\,\text{m} = 20{,}0\,\text{m}$; $v_1 = 0$ ja lopussa $v_2 = 0$; $g = 9{,}81\,\text{m/s}^2$
+**Kysytty:** b) rinteen suurin pituus $L$ yksikössä $\text{m}$; c) nopeus $v$ rinteen juurella
+**Periaate:** Pulkka on alussa ja lopussa levossa, joten käytetään energiaperiaatetta koko matkalle. Potentiaalienergian väheneminen kuluu kitkan tekemään negatiiviseen työhön, ensin rinteessä ja sitten tasaisella. Tukivoima ei tee työtä. Rinteessä kitkavoima saadaan voimakuviosta, ja sen työ on $-\mu_1 mg\cos\alpha\cdot L$. Pidempi rinne antaisi enemmän vauhtia, joten pulkka pysähtyy aidan viereen juuri suurimmalla sallitulla pituudella.
+**Voimakuvio:** Rinteessä pulkka suorakulmiona rinteen suuntaisesti: paino $\overline{G}$ keskipisteestä suoraan alas, tukivoima $\overline{N}$ kohtisuoraan rinteestä ulos, $N = mg\cos\alpha$, ja liikekitka $\overline{F}_\mu$ rinnettä ylös. Tasaisella paino alas, tukivoima ylös yhtä pitkänä ja kitka taaksepäin, ja kitka on siellä suurempi, koska $\mu_2 > \mu_1$. Nopeutta ei piirretä voimaksi.
+```voimakuvio
+pinta -14
+G 100
+N 97,03
+F_mu 5,82 ylös
+a alas
+---
+pinta 0
+G 100
+N 100
+F_mu 15 vasen
+a vasen
+```
+**Kaava:** Rinteen korkeus on $h = L\sin\alpha$. Nollataso tasaiselle: $mgL\sin\alpha - \mu_1 mg\cos\alpha\cdot L - \mu_2 mgd = 0$, joten $L = \dfrac{\mu_2 d}{\sin\alpha - \mu_1\cos\alpha}$. Rinteen juurella $mgL\sin\alpha - \mu_1 mg\cos\alpha\cdot L = \tfrac12 mv^2$
+**Muunnokset:** Suureet ovat SI-yksiköissä, ja kitkakertoimet ovat yksikköttömiä. Massa supistuu pois molemmista yhtälöistä.
+**Sijoitus:** Sulkulauseke on $\sin 14{,}0\,{}^\circ - 0{,}060\cdot\cos 14{,}0\,{}^\circ = 0{,}2419 - 0{,}0582 = 0{,}1837$, joten $L = \dfrac{0{,}150\cdot 20{,}0\,\text{m}}{0{,}1837} = 16{,}33\,\text{m}$. Juurella $v = \sqrt{2gL\left(\sin\alpha - \mu_1\cos\alpha\right)} = \sqrt{2\cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2}\cdot 16{,}33\,\text{m}\cdot 0{,}1837} = 7{,}67\,\text{m/s}$
+**Vastaus:** b) $16\,\text{m}$, kaksi merkitsevää numeroa kuten kitkakertoimessa $0{,}060$; c) $7{,}7\,\text{m/s}$. Massa supistuu pois, koska sekä paino että kitka ovat verrannollisia massaan: raskaampi lapsi saa suuremman liike-energian mutta myös suuremman kitkavoiman, ja nopeus on sama.
+**Järkevyys:** Rinteen korkeus on $h = 16{,}33\,\text{m}\cdot\sin 14{,}0\,{}^\circ = 3{,}95\,\text{m}$ ja vaakamatka $16{,}33\,\text{m}\cdot\cos 14{,}0\,{}^\circ = 15{,}85\,\text{m}$. Kitka kuluttaa rinteessä korkeuden verran $0{,}060\cdot 15{,}85\,\text{m} = 0{,}95\,\text{m}$ ja tasaisella $0{,}150\cdot 20{,}0\,\text{m} = 3{,}00\,\text{m}$, yhteensä $3{,}95\,\text{m}$ kuten pitää. Tasaisella pysähtymismatka on $\dfrac{v^2}{2\mu_2 g} = \dfrac{(7{,}67\,\text{m/s})^2}{2\cdot 0{,}150\cdot 9{,}81\,\text{m/s}^2} = 20{,}0\,\text{m}$. Rinne liukuu, koska $\tan 14{,}0\,{}^\circ = 0{,}249 > \mu_1$. Todellinen pulkka pysähtyy hieman aikaisemmin, koska juuren mutkassa kitka kasvaa hetkeksi, joten tulos on turvallisella puolella.
+
+## fy4-16-L3-05
+**Annettu:** $m = 78{,}0\,\text{kg}$; taulukosta nopeudet alaspäin hetkillä $0$ – $3{,}0\,\text{s}$ ja $4{,}0\,\text{s}$; $g = 9{,}81\,\text{m/s}^2$; positiivinen suunta alas
+**Kysytty:** a) putoama matka $h$ välillä $0$–$3{,}0\,\text{s}$; b) ilmanvastus $F_\text{v}$ keskimäärin tällä matkalla yksikössä $\text{kN}$; c) onko ilmanvastus välillä $3{,}0$–$4{,}0\,\text{s}$ painoa suurempi, pienempi vai yhtä suuri
+**Periaate:** Matka saadaan taulukosta: jokaisella aikavälillä kuljettu matka on keskinopeus kertaa aikaväli. Kun alku- ja loppunopeus sekä matka tunnetaan, käytetään energiaperiaatetta: ilmanvastus on ainoa muu voima kuin paino ja osoittaa liikettä vastaan, joten sen työ on $-F_\text{v} h$. Kohdassa c) Newtonin toinen laki: kiihtyvyyden suunta kertoo, kumpi voima on suurempi.
+**Voimakuvio:** Hyppääjä varjoineen suorakulmiona, positiivinen suunta alas. Paino $\overline{G}$ keskipisteestä alas ja ilmanvastus $\overline{F}_\text{v}$ yläpinnasta ylös, painoa selvästi pidempänä, koska hyppääjä hidastuu. Nopeus alas merkitään erikseen eikä voimaksi.
+```voimakuvio
+G 765,2
+F_v 2205 ylös
+a ylös
+v alas
+```
+**Kuvaajan lukeminen:** Keskinopeudet ovat välin päätepisteiden nopeuksien keskiarvoja, ja kukin väli on $0{,}5\,\text{s}$. Suurin nopeus on alussa, $46{,}0\,\text{m/s}$, ja nopeus pienenee ensin jyrkästi: ensimmäisellä välillä nopeus pienenee $16{,}2\,\text{m/s}$, viimeisellä puolen sekunnin välillä enää $1{,}1\,\text{m/s}$. Hyppääjä liikkuu koko ajan alas, joten matkaa kertyy koko ajan.
+**Kaava:** $h = \sum \dfrac{v_i + v_{i+1}}{2}\,\Delta t$. Nollataso lopputilanteen korkeudelle: $E_{\text{k},1} + mgh - F_\text{v} h = E_{\text{k},2}$, joten $F_\text{v} = mg + \dfrac{E_{\text{k},1} - E_{\text{k},2}}{h}$. Kohdassa c) $mg - F_\text{v} = ma$, joten $F_\text{v} = m(g - a)$
+**Muunnokset:** Lasketaan newtoneina ja muutetaan lopuksi kilonewtoneiksi: $1\,\text{kN} = 1000\,\text{N}$.
+**Sijoitus:** a) Välien matkat ovat $18{,}95\,\text{m}$, $12{,}475\,\text{m}$, $8{,}625\,\text{m}$, $6{,}35\,\text{m}$, $5{,}00\,\text{m}$ ja $4{,}225\,\text{m}$. Summa on $h = 55{,}625\,\text{m}$. b) Liike-energiat ovat $E_{\text{k},1} = \tfrac12\cdot 78{,}0\,\text{kg}\cdot(46{,}0\,\text{m/s})^2 = 82\,524\,\text{J}$ ja $E_{\text{k},2} = \tfrac12\cdot 78{,}0\,\text{kg}\cdot(7{,}9\,\text{m/s})^2 = 2434\,\text{J}$, joten $F_\text{v} = 78{,}0\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 + \dfrac{82\,524\,\text{J} - 2434\,\text{J}}{55{,}625\,\text{m}} = 765{,}2\,\text{N} + 1439{,}8\,\text{N} = 2205\,\text{N}$. c) Välillä $3{,}0$–$4{,}0\,\text{s}$ nopeus pienenee $7{,}9\,\text{m/s}$:sta $6{,}8\,\text{m/s}$:iin, joten $a = \dfrac{6{,}8 - 7{,}9}{1{,}0}\,\text{m/s}^2 = -1{,}1\,\text{m/s}^2$ eli kiihtyvyys osoittaa ylös ja $F_\text{v} = 78{,}0\,\text{kg}\cdot(9{,}81 + 1{,}1)\,\text{m/s}^2 = 851\,\text{N}$
+**Vastaus:** b) $2{,}21\,\text{kN}$ ylöspäin, kolme merkitsevää numeroa kuten massassa $78{,}0\,\text{kg}$ ja nopeuksissa; a) $h = 55{,}6\,\text{m}$; c) ilmanvastus on painoa suurempi, koska nopeus pienenee ja kiihtyvyys osoittaa ylös.
+**Järkevyys:** Keskimääräinen ilmanvastus on noin $2{,}9$ kertaa paino $765\,\text{N}$, joten kokonaisvoima osoittaa ylös ja hyppääjä hidastuu. Aikakeskiarvo liikeyhtälöstä on pienempi: keskikiihtyvyys on $\dfrac{46{,}0 - 7{,}9}{3{,}0}\,\text{m/s}^2 = 12{,}7\,\text{m/s}^2$, jolloin $F_\text{v} \approx 78{,}0\,\text{kg}\cdot(9{,}81 + 12{,}7)\,\text{m/s}^2 \approx 1{,}76\,\text{kN}$. Ero on oikea: ilmanvastus on suurimmillaan heti avautumisen jälkeen, kun nopeus on suuri, ja hyppääjä kulkee silloin pitkän matkan lyhyessä ajassa, joten matkakeskiarvo painottuu alkuun. Lopussa ilmanvastus lähestyy painoa $765\,\text{N}$ ($851\,\text{N}$ on jo lähellä sitä).

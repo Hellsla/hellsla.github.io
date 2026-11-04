@@ -39,6 +39,58 @@
    "answer": 150.0,
    "unit": "N",
    "tolerance": 0.02
+  },
+  {
+   "id": "fy4-9-L1-06",
+   "level": 1,
+   "kind": [
+    "concept"
+   ],
+   "text": "Kärry liikkuu vaakasuoraan vasemmalle. Positiivinen suunta on valittu oikealle. Mikä väite kärryn liikemäärästä $\\overline{p}$ on oikein?",
+   "answer": "Liikemäärä on negatiivinen, koska sen suunta on nopeuden suunta eli valittua suuntaa vastaan.",
+   "unit": "",
+   "tolerance": 0.02,
+   "choices": [
+    {
+     "text": "Liikemäärä on positiivinen, koska massa on aina positiivinen ja liikemäärä on massan ja nopeuden tulo.",
+     "feedback": "Massa on positiivinen, mutta nopeus ei ole: kärry liikkuu valittua suuntaa vastaan, joten $v < 0$ ja tulo $p = mv$ on negatiivinen. Nopeuden etumerkki siirtyy liikemäärään."
+    },
+    {
+     "text": "Liikemäärä on nolla, koska kärry liikkuu vaakasuoraan eikä sen korkeus muutu.",
+     "feedback": "Liikemäärä on nolla vain, kun nopeus on nolla. Liikkeen vaakasuoruus ei vaikuta siihen, ja liikkuvan kärryn liikemäärä on nollasta poikkeava."
+    },
+    {
+     "text": "Liikemäärä on negatiivinen, koska sen suunta on nopeuden suunta eli valittua suuntaa vastaan.",
+     "feedback": "Oikein: liikemäärä $\\overline{p} = m\\overline{v}$ on vektori, jolla on nopeuden suunta. Kärry liikkuu valittua positiivista suuntaa vastaan, joten $v < 0$ ja $p < 0$.",
+     "correct": true
+    },
+    {
+     "text": "Liikemäärä osoittaa oikealle, koska liikemäärän suunta on aina sama kuin valittu positiivinen suunta.",
+     "feedback": "Liikemäärän suunta seuraa nopeutta, ei suunnan valintaa. Positiivinen suunta vain kertoo, mihin suuntaan etumerkki on plus: vasemmalle liikkuvan kärryn liikemäärä osoittaa vasemmalle."
+    }
+   ]
+  },
+  {
+   "id": "fy4-9-L1-07",
+   "level": 1,
+   "kind": [
+    "reasoning"
+   ],
+   "text": "Curling-kivi, jonka massa on $20\\,\\text{kg}$, on aluksi levossa jäällä. Pelaaja työntää kiveä, ja työntövoiman impulssi on $36\\,\\text{N}\\cdot\\text{s}$. Jään kitka jätetään huomiotta. Kuinka suuri on kiven nopeus työnnön jälkeen?",
+   "answer": 1.8,
+   "unit": "m/s",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy4-9-L1-08",
+   "level": 1,
+   "kind": [
+    "error"
+   ],
+   "text": "Pakettiauton massa on $1800\\,\\text{kg}$ ja nopeus $36\\,\\text{km/h}$.\n\nOpiskelija laski auton liikemäärän näin: ”$p = mv = 1800 \\cdot 36 = 64\\,800\\,\\text{kg}\\cdot\\text{m/s}$.”\n\nMikä on opiskelijan ratkaisun virhe? Laske auton liikemäärä oikein. Vastauslaatikkoon liikemäärän suuruus.",
+   "answer": 18000.0,
+   "unit": "kg·m/s",
+   "tolerance": 0.02
   }
  ],
  "level2": [
@@ -73,6 +125,138 @@
    "answer": 25.647059,
    "unit": "m/s",
    "tolerance": 0.02
+  },
+  {
+   "id": "fy4-9-L2-05",
+   "level": 2,
+   "kind": [
+    "data"
+   ],
+   "text": "Opiskelija mittasi videoanalyysilla jalkapallon potkuja. Pallon massa on $0{,}43\\,\\text{kg}$, ja pallo on aluksi levossa. Viidellä potkulla hän määritti pallon nopeuden $v$ heti potkun jälkeen ja jalan ja pallon kosketusajan $\\Delta t$. Taulukko on esimerkkiaineisto.\n\nLaske nopeuden ja kosketusajan keskiarvot ja niiden avulla jalan palloon antama keskimääräinen voima. Pallon painon vaikutus potkun aikana jätetään huomiotta. Vastauslaatikkoon keskimääräinen voima.",
+   "answer": 927.45,
+   "unit": "N",
+   "tolerance": 0.02,
+   "data": {
+    "caption": "Jalkapallon potkut (esimerkkiaineisto)",
+    "columns": [
+     "Potku",
+     "$v\\,(\\text{m/s})$",
+     "$\\Delta t\\,(\\text{ms})$"
+    ],
+    "rows": [
+     [
+      "1",
+      "21.4",
+      "9.8"
+     ],
+     [
+      "2",
+      "22.6",
+      "10.4"
+     ],
+     [
+      "3",
+      "20.9",
+      "10.0"
+     ],
+     [
+      "4",
+      "23.1",
+      "10.6"
+     ],
+     [
+      "5",
+      "22.0",
+      "10.2"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "fy4-9-L2-06",
+   "level": 2,
+   "kind": [
+    "data",
+    "experiment"
+   ],
+   "text": "Opiskelija tutki, miten puskuri vaikuttaa törmäysvoimaan. Vaakasuoralla ilmatyynyradalla kärry, jonka massa on $0{,}50\\,\\text{kg}$, törmäsi radan päätyyn nopeudella $0{,}80\\,\\text{m/s}$ ja pysähtyi. Päädyssä oli vuorotellen kolme eri puskuria, ja voima-anturin mittauksesta määritettiin kunkin törmäyksen kesto $\\Delta t$. Taulukko on esimerkkiaineisto. Radan kitka ja ilmanvastus jätetään huomiotta.\n\na) Laske keskimääräinen voima, jolla metallipuskuri pysäytti kärryn.\n\nb) Laske keskimääräinen voima, jolla vaahtomuovipuskuri pysäytti kärryn.\n\nc) Selitä impulssiperiaatteen avulla, miksi pehmeä puskuri pienentää voimaa, vaikka kärryn liikemäärän muutos on kaikissa mittauksissa sama.\n\nVastauslaatikkoon b-kohdan tulos.",
+   "answer": 5.0,
+   "unit": "N",
+   "tolerance": 0.02,
+   "data": {
+    "caption": "Kärryn pysähtymisaika eri puskureilla (esimerkkiaineisto)",
+    "columns": [
+     "Puskuri",
+     "$\\Delta t\\,(\\text{ms})$"
+    ],
+    "rows": [
+     [
+      "Metalli",
+      "6.0"
+     ],
+     [
+      "Kumi",
+      "25"
+     ],
+     [
+      "Vaahtomuovi",
+      "80"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "fy4-9-L2-07",
+   "level": 2,
+   "kind": [
+    "data",
+    "graph"
+   ],
+   "text": "Ilmatyynyradalla kärry, jonka massa on $0{,}50\\,\\text{kg}$, liikkuu nopeudella $1{,}50\\,\\text{m/s}$ kohti radan päätyä ja kimpoaa siitä takaisin. Päädyn voima-anturi mittasi törmäyksen aikana päädyn kärryyn kohdistaman voiman $F$ kymmenen millisekunnin välein. Voima osoittaa poispäin päädystä. Taulukko on esimerkkiaineisto. Radan kitka ja ilmanvastus jätetään huomiotta.\n\nPiirrä mittauspisteistä $(t, F)$-kuvaaja ja määritä sen alle jäävä pinta-ala puolisuunnikkaiden summana. Laske pinta-alan avulla kärryn nopeuden muutoksen suuruus törmäyksessä. Vastauslaatikkoon nopeuden muutoksen suuruus.",
+   "answer": 2.88,
+   "unit": "m/s",
+   "tolerance": 0.04,
+   "data": {
+    "caption": "Päädyn voima kärryyn törmäyksen aikana (esimerkkiaineisto)",
+    "columns": [
+     "$t\\,(\\text{ms})$",
+     "$F\\,(\\text{N})$"
+    ],
+    "rows": [
+     [
+      "0",
+      "0.0"
+     ],
+     [
+      "10",
+      "11.0"
+     ],
+     [
+      "20",
+      "26.0"
+     ],
+     [
+      "30",
+      "36.5"
+     ],
+     [
+      "40",
+      "35.0"
+     ],
+     [
+      "50",
+      "25.5"
+     ],
+     [
+      "60",
+      "10.0"
+     ],
+     [
+      "70",
+      "0.0"
+     ]
+    ]
+   }
   }
  ],
  "level3": [
@@ -100,6 +284,110 @@
    "answer": 60.0,
    "unit": "N",
    "tolerance": 0.02
+  },
+  {
+   "id": "fy4-9-L3-04",
+   "level": 3,
+   "kind": [
+    "data",
+    "model",
+    "reasoning"
+   ],
+   "text": "Törmäyskokeessa mitattiin, millä vaakasuuntaisella voimalla $F$ turvatyyny pysäytti kuljettajaa esittävän nuken. Nuken massa on $70\\,\\text{kg}$, ja se pysähtyi turvatyynyyn kokonaan $100\\,\\text{ms}$:ssa. Voima osoittaa ajosuunnan vastaiseen suuntaan. Taulukko on esimerkkiaineisto. Oletetaan, että vaakasuunnassa nukkeen vaikuttaa vain turvatyynyn voima.\n\na) Piirrä mittauspisteistä $(t, F)$-kuvaaja ja määritä sen alle jäävä pinta-ala puolisuunnikkaiden summana.\n\nb) Laske pinta-alan avulla nuken nopeus ennen törmäystä yksikössä $\\text{km/h}$.\n\nc) Nukke olisi voinut osua samalla nopeudella jäykkään ohjauspyörään ja pysähtyä vain $25\\,\\text{ms}$:ssa. Laske tässä tapauksessa keskimääräinen voima, vertaa sitä taulukon suurimpaan voimaan ja perustele, miksi turvatyyny suojaa.\n\nVastauslaatikkoon b-kohdan tulos.",
+   "answer": 50.45,
+   "unit": "km/h",
+   "tolerance": 0.03,
+   "data": {
+    "caption": "Turvatyynyn voima nukkeen (esimerkkiaineisto)",
+    "columns": [
+     "$t\\,(\\text{ms})$",
+     "$F\\,(\\text{kN})$"
+    ],
+    "rows": [
+     [
+      "0",
+      "0.0"
+     ],
+     [
+      "10",
+      "4.5"
+     ],
+     [
+      "20",
+      "9.8"
+     ],
+     [
+      "30",
+      "14.6"
+     ],
+     [
+      "40",
+      "17.4"
+     ],
+     [
+      "50",
+      "16.9"
+     ],
+     [
+      "60",
+      "14.2"
+     ],
+     [
+      "70",
+      "10.9"
+     ],
+     [
+      "80",
+      "6.8"
+     ],
+     [
+      "90",
+      "3.0"
+     ],
+     [
+      "100",
+      "0.0"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "fy4-9-L3-05",
+   "level": 3,
+   "kind": [
+    "data",
+    "model",
+    "reasoning"
+   ],
+   "text": "Opiskelija kuvasi videolle koripallon, jonka massa on $0{,}60\\,\\text{kg}$. Pallo irrotettiin levosta, se putosi lattiaan, kimposi ja nousi ylimpään kohtaansa. Videoanalyysin ajat ovat taulukossa, joka on esimerkkiaineisto. Ilmanvastus jätetään huomiotta, ja ilmassa pallon kiihtyvyys on putoamiskiihtyvyys $g = 9{,}81\\,\\text{m/s}^2$.\n\na) Laske pallon nopeus juuri ennen lattiaan osumista ja heti kimpoamisen jälkeen. Valitse positiiviseksi suunnaksi ylös.\n\nb) Laske lattian palloon kohdistama keskimääräinen voima. Muista, että kosketuksen aikana palloon vaikuttaa lattian voiman lisäksi paino.\n\nc) Laske vertailuksi lattian keskimääräinen voima, jos pallo osuisi lattiaan samalla nopeudella mutta jäisi lattialle ja pysähtyisi samassa ajassa. Selitä lyhyesti, miksi kimpoavan pallon voima on suurempi.\n\nVastauslaatikkoon b-kohdan tulos.",
+   "answer": 447.34,
+   "unit": "N",
+   "tolerance": 0.02,
+   "data": {
+    "caption": "Pomppivan pallon videoanalyysi (esimerkkiaineisto)",
+    "columns": [
+     "Tapahtuma",
+     "$t\\,(\\text{s})$"
+    ],
+    "rows": [
+     [
+      "Pallo irrotetaan",
+      "0.000"
+     ],
+     [
+      "Pallo osuu lattiaan",
+      "0.500"
+     ],
+     [
+      "Pallo lähtee lattiasta",
+      "0.512"
+     ],
+     [
+      "Pallo on ylimmässä kohdassa",
+      "0.912"
+     ]
+    ]
+   }
   }
  ]
 }

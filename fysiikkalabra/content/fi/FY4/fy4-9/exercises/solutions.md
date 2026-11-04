@@ -118,3 +118,80 @@
 **Sijoitus:** $\Delta F = \dfrac{0{,}20\,\text{kg} \cdot 6{,}0\,\text{m/s}}{0{,}020\,\text{s}} = \dfrac{1{,}2\,\text{kg}\cdot\text{m/s}}{0{,}020\,\text{s}} = 60\,\text{N}$
 **Vastaus:** $60\,\text{N}$, kaksi merkitsevää numeroa kuten massassa $0{,}20\,\text{kg}$ ja nopeudessa $6{,}0\,\text{m/s}$.
 **Järkevyys:** Erikseen laskettuna savipallon voima on $\tfrac{0{,}20 \cdot 8{,}0}{0{,}020}\,\text{N} = 80\,\text{N}$ ja kumipallon $\tfrac{0{,}20 \cdot 14}{0{,}020}\,\text{N} = 140\,\text{N}$, ja erotus on $60\,\text{N}$. Kimpoava pallo työntää seinää enemmän, koska seinän on pysäytyksen lisäksi kiihdytettävä se takaisin.
+
+## fy4-9-L1-06
+**Kysytty:** kärryn liikemäärän $\overline{p}$ etumerkki ja suunta, kun kärry liikkuu vasemmalle ja positiivinen suunta on oikealle
+**Periaate:** Liikemäärä $\overline{p} = m\overline{v}$ on vektori, jolla on nopeuden suunta, koska massa on aina positiivinen. Yhdessä ulottuvuudessa suunta ilmaistaan etumerkillä: positiiviseen suuntaan osoittava liikemäärä on positiivinen ja vastakkaiseen suuntaan osoittava negatiivinen.
+**Mallivastaus:** Oikea väite on se, jonka mukaan liikemäärä on negatiivinen, koska sen suunta on nopeuden suunta eli valittua suuntaa vastaan. Kärry liikkuu vasemmalle eli positiivista suuntaa vastaan, joten $v < 0$ ja $p = mv < 0$. Väite positiivisesta liikemäärästä unohtaa, että nopeuden etumerkki siirtyy tuloon: massa on positiivinen, mutta nopeus ei. Väite, jonka mukaan liikemäärä osoittaa aina valittuun positiiviseen suuntaan, on väärä, koska suunta seuraa nopeutta eikä suunnan valintaa. Väite nollasta on väärä, koska liikemäärä on nolla vain, kun nopeus on nolla; liikkeen vaakasuoruus ei vaikuta siihen.
+
+## fy4-9-L1-07
+**Annettu:** kiven massa $m = 20\,\text{kg}$, alkunopeus $v_0 = 0$, työntövoiman impulssi $I = 36\,\text{N}\cdot\text{s}$; jään kitka jätetään huomiotta
+**Kysytty:** kiven nopeus $v$ työnnön jälkeen yksikössä $\text{m/s}$
+**Periaate:** Kun kitka jätetään huomiotta, työntövoima on kiveen vaikuttava vaakasuuntainen kokonaisvoima; paino ja jään tukivoima kumoavat toisensa. Impulssiperiaatteen mukaan sen impulssi on yhtä suuri kuin liikemäärän muutos.
+**Kaava:** $I = mv - mv_0$ ja $v_0 = 0$, joten $v = \dfrac{I}{m}$
+**Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita; $\tfrac{\text{N}\cdot\text{s}}{\text{kg}} = \text{m/s}$.
+**Sijoitus:** $v = \dfrac{36\,\text{N}\cdot\text{s}}{20\,\text{kg}} = 1{,}8\,\text{m/s}$
+**Vastaus:** $1{,}8\,\text{m/s}$, kaksi merkitsevää numeroa kuten massassa $20\,\text{kg}$ ja impulssissa $36\,\text{N}\cdot\text{s}$.
+**Järkevyys:** Takaperin $20\,\text{kg} \cdot 1{,}8\,\text{m/s} = 36\,\text{kg}\cdot\text{m/s}$, joten lasku täsmää. Raskas kivi lähtee liikkeelle hitaasti: nopeus $1{,}8\,\text{m/s}$ on nopean kävelyn vauhti.
+
+## fy4-9-L1-08
+**Annettu:** auton massa $m = 1800\,\text{kg}$, nopeus $v = 36\,\text{km/h}$; opiskelijan tulos $64\,800$
+**Kysytty:** opiskelijan ratkaisun virhe ja auton liikemäärän suuruus $p$ yksikössä $\text{kg}\cdot\text{m/s}$
+**Periaate:** Liikemäärä on massan ja nopeuden tulo, ja sen yksikkö on $\text{kg}\cdot\text{m/s}$. Opiskelija kertoi massan nopeudella yksikössä $\text{km/h}$, joten tulos on yksikössä $\text{kg}\cdot\text{km/h}$ eikä yksikössä $\text{kg}\cdot\text{m/s}$. Nopeus on muunnettava ensin yksikköön $\text{m/s}$.
+**Kaava:** $p = mv$
+**Muunnokset:** $v = 36\,\text{km/h} = \dfrac{36\,\text{m}}{3{,}6\,\text{s}} = 10\,\text{m/s}$
+**Sijoitus:** $p = 1800\,\text{kg} \cdot 10\,\text{m/s} = 18\,000\,\text{kg}\cdot\text{m/s}$
+**Vastaus:** $1{,}8 \cdot 10^4\,\text{kg}\cdot\text{m/s}$, kaksi merkitsevää numeroa kuten nopeudessa $36\,\text{km/h}$.
+**Järkevyys:** Opiskelijan luku on $3{,}6$-kertainen, koska $1\,\text{m/s} = 3{,}6\,\text{km/h}$ ja hän käytti nopeuden lukuarvona $36$ eikä $10$. Oikea liikemäärä on noin satakertainen kävelevän ihmisen liikemäärään $\approx 100\,\text{kg}\cdot\text{m/s}$ verrattuna, mikä sopii kaupunkinopeudella ajavalle pakettiautolle.
+
+## fy4-9-L2-05
+**Annettu:** pallon massa $m = 0{,}43\,\text{kg}$, alkunopeus $v_0 = 0$; viiden potkun nopeudet $v$ ja kosketusajat $\Delta t$ taulukossa (esimerkkiaineisto); painon vaikutus jätetään huomiotta
+**Kysytty:** jalan palloon antama keskimääräinen voima $F_\text{ka}$ yksikössä $\text{N}$
+**Periaate:** Mittauksissa on pientä satunnaisvaihtelua, joten käytetään keskiarvoja $v_\text{ka}$ ja $\Delta t_\text{ka}$. Potkun aikana jalan voima on palloon vaikuttava kokonaisvoima, kun painon vaikutus jätetään huomiotta. Impulssiperiaatteen mukaan sen impulssi on yhtä suuri kuin pallon liikemäärän muutos.
+**Kaava:** $F_\text{ka}\,\Delta t_\text{ka} = mv_\text{ka} - 0$, joten $F_\text{ka} = \dfrac{mv_\text{ka}}{\Delta t_\text{ka}}$
+**Muunnokset:** Nopeuksien summa on $110{,}0\,\text{m/s}$, joten $v_\text{ka} = \dfrac{110{,}0\,\text{m/s}}{5} = 22{,}0\,\text{m/s}$. Kosketusaikojen summa on $51{,}0\,\text{ms}$, joten $\Delta t_\text{ka} = \dfrac{51{,}0\,\text{ms}}{5} = 10{,}2\,\text{ms} = 0{,}0102\,\text{s}$.
+**Sijoitus:** $F_\text{ka} = \dfrac{0{,}43\,\text{kg} \cdot 22{,}0\,\text{m/s}}{0{,}0102\,\text{s}} = \dfrac{9{,}46\,\text{kg}\cdot\text{m/s}}{0{,}0102\,\text{s}} = 927\,\text{N}$
+**Vastaus:** $9{,}3 \cdot 10^2\,\text{N}$, kaksi merkitsevää numeroa kuten massassa $0{,}43\,\text{kg}$.
+**Järkevyys:** Pallon paino on $0{,}43\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \approx 4{,}2\,\text{N}$, alle prosentti jalan voimasta, joten painon jättäminen huomiotta oli perusteltua. Nopeus $22\,\text{m/s}$ eli noin $79\,\text{km/h}$ ja kosketusaika noin $10\,\text{ms}$ sopivat tavalliseen potkuun.
+
+## fy4-9-L2-06
+**Annettu:** kärryn massa $m = 0{,}50\,\text{kg}$, alkunopeus $v_0 = 0{,}80\,\text{m/s}$, loppunopeus $v = 0$; kestot $\Delta t$ metallille $6{,}0\,\text{ms}$, kumille $25\,\text{ms}$ ja vaahtomuoville $80\,\text{ms}$ (esimerkkiaineisto); kitka ja ilmanvastus jätetään huomiotta
+**Kysytty:** a) metallipuskurin keskimääräinen voima ja b) vaahtomuovipuskurin keskimääräinen voima $F_\text{ka}$ yksikössä $\text{N}$; c) selitys
+**Periaate:** Ilmatyynyradalla paino ja radan tukivoima kumoavat toisensa, joten vaakasuuntainen kokonaisvoima on puskurin voima. Impulssiperiaatteen mukaan sen impulssi on yhtä suuri kuin kärryn liikemäärän muutos. Kärry pysähtyy samasta nopeudesta jokaisella puskurilla, joten liikemäärän muutos on joka kerta sama.
+**Kaava:** $F_\text{ka}\,\Delta t = 0 - mv_0$, joten voiman suuruus on $F_\text{ka} = \dfrac{mv_0}{\Delta t}$
+**Muunnokset:** $6{,}0\,\text{ms} = 0{,}0060\,\text{s}$ ja $80\,\text{ms} = 0{,}080\,\text{s}$; liikemäärän muutoksen suuruus on $mv_0 = 0{,}50\,\text{kg} \cdot 0{,}80\,\text{m/s} = 0{,}40\,\text{kg}\cdot\text{m/s}$
+**Sijoitus:** a) $F_\text{ka} = \dfrac{0{,}40\,\text{kg}\cdot\text{m/s}}{0{,}0060\,\text{s}} = 67\,\text{N}$ ja b) $F_\text{ka} = \dfrac{0{,}40\,\text{kg}\cdot\text{m/s}}{0{,}080\,\text{s}} = 5{,}0\,\text{N}$
+**Vastaus:** b) $5{,}0\,\text{N}$; a-kohdassa metallipuskurin voima on $67\,\text{N}$. Tulokset ovat kahden merkitsevän numeron tarkkuudella kuten massa ja nopeus.
+**Järkevyys:** Aika on $80 : 6{,}0 \approx 13$ kertaa pidempi, joten voima on noin $13$ kertaa pienempi: $67\,\text{N} : 5{,}0\,\text{N} \approx 13$. Selitys c): impulssiperiaatteen mukaan kokonaisvoiman impulssi $F_\text{ka}\,\Delta t$ on yhtä suuri kuin liikemäärän muutos, ja se on kaikissa mittauksissa sama. Kun pehmeä puskuri pidentää pysähtymisaikaa $\Delta t$, tulon pitää pysyä samana, ja keskimääräinen voima pienenee. Turvatyyny toimii samalla tavalla: se ei vähennä liikemäärän muutosta vaan pidentää pysähtymistä.
+
+## fy4-9-L2-07
+**Annettu:** kärryn massa $m = 0{,}50\,\text{kg}$, tulonopeus $1{,}50\,\text{m/s}$ kohti päätyä; voima $F$ ajan funktiona taulukossa (esimerkkiaineisto); kitka ja ilmanvastus jätetään huomiotta
+**Kysytty:** kärryn nopeuden muutoksen suuruus $|\Delta v|$ yksikössä $\text{m/s}$
+**Periaate:** Päädyn voima on kärryyn vaikuttava vaakasuuntainen kokonaisvoima, koska paino ja radan tukivoima kumoavat toisensa. Voima muuttuu, joten sen impulssi on $(t, F)$-kuvaajan ja aika-akselin väliin jäävä pinta-ala. Impulssiperiaatteen mukaan impulssi on yhtä suuri kuin liikemäärän muutos. Positiivinen suunta on poispäin päädystä eli voiman suunta.
+**Kuvaajan lukeminen:** Pisteet piirretään $(t, F)$-koordinaatistoon ja yhdistetään murtoviivalla, jolloin kuvaajan alle jää kuusi puolisuunnikasta. Jokaisen leveys on $10\,\text{ms}$ ja korkeudet ovat vierekkäisten mittausten arvot. Päätepisteissä $F = 0$, joten puolisuunnikkaiden pinta-alojen summa on $\Delta t$ kertaa sisäpisteiden voimien summa. Sisäpisteiden summa on $144{,}0\,\text{N}$.
+**Kaava:** $I = \Delta t \cdot \Sigma F$ ja $I = m\,\Delta v$, joten $\Delta v = \dfrac{I}{m}$
+**Muunnokset:** $\Delta t = 10\,\text{ms} = 0{,}010\,\text{s}$
+**Sijoitus:** $I = 0{,}010\,\text{s} \cdot 144{,}0\,\text{N} = 1{,}44\,\text{N}\cdot\text{s}$ ja $\Delta v = \dfrac{1{,}44\,\text{N}\cdot\text{s}}{0{,}50\,\text{kg}} = 2{,}88\,\text{m/s}$
+**Vastaus:** $2{,}9\,\text{m/s}$, kaksi merkitsevää numeroa kuten massassa $0{,}50\,\text{kg}$ ja nopeudessa $1{,}50\,\text{m/s}$ pyöristettynä.
+**Järkevyys:** Kärryn nopeus on ennen törmäystä $-1{,}50\,\text{m/s}$ ja sen jälkeen $-1{,}50\,\text{m/s} + 2{,}88\,\text{m/s} = +1{,}38\,\text{m/s}$, joten kärry kimpoaa takaisin hieman hitaammin kuin tuli. Se sopii kimmoisaan puskuriin, joka ei lisää kärryn nopeutta. Huippuvoima $36{,}5\,\text{N}$ on suurempi kuin keskimääräinen voima $\dfrac{1{,}44\,\text{N}\cdot\text{s}}{0{,}070\,\text{s}} \approx 21\,\text{N}$, kuten pitääkin.
+
+## fy4-9-L3-04
+**Annettu:** nuken massa $m = 70\,\text{kg}$, pysähtymisaika turvatyynyssä $100\,\text{ms}$, loppunopeus $v = 0$; voima $F$ ajan funktiona taulukossa (esimerkkiaineisto); vaakasuunnassa vaikuttaa vain turvatyynyn voima
+**Kysytty:** b) nuken nopeus $v_0$ ennen törmäystä yksikössä $\text{km/h}$; a) impulssi pinta-alana; c) keskimääräinen voima jäykkään esteeseen osuttaessa ja turvatyynyn merkitys
+**Periaate:** Turvatyynyn voima on nukkeen vaikuttava vaakasuuntainen kokonaisvoima. Voima muuttuu, joten sen impulssi on $(t, F)$-kuvaajan alle jäävä pinta-ala. Impulssiperiaatteen mukaan impulssi on yhtä suuri kuin nuken liikemäärän muutos. Positiivinen suunta on ajosuunta, ja voima osoittaa vastakkaiseen suuntaan, joten impulssi on negatiivinen.
+**Kuvaajan lukeminen:** Pisteet yhdistetään murtoviivalla, jolloin alle jää kymmenen $10\,\text{ms}$ leveää puolisuunnikasta. Päätepisteissä $F = 0$, joten pinta-ala on $\Delta t$ kertaa sisäpisteiden summa $98{,}1\,\text{kN}$. Suurin voima on $17{,}4\,\text{kN}$.
+**Kaava:** $-I = 0 - mv_0$, joten $v_0 = \dfrac{I}{m}$, missä $I$ on voiman impulssin suuruus
+**Muunnokset:** $\Delta t = 10\,\text{ms} = 0{,}010\,\text{s}$, $98{,}1\,\text{kN} = 98\,100\,\text{N}$ ja $1\,\text{m/s} = 3{,}6\,\text{km/h}$
+**Sijoitus:** a) $I = 0{,}010\,\text{s} \cdot 98\,100\,\text{N} = 981\,\text{N}\cdot\text{s}$. b) $v_0 = \dfrac{981\,\text{N}\cdot\text{s}}{70\,\text{kg}} = 14{,}01\,\text{m/s} = 14{,}01 \cdot 3{,}6\,\text{km/h} = 50{,}45\,\text{km/h}$. c) Sama liikemäärän muutos pysäytettiin ajassa $0{,}025\,\text{s}$: $F_\text{ka} = \dfrac{981\,\text{N}\cdot\text{s}}{0{,}025\,\text{s}} = 39\,240\,\text{N}$.
+**Vastaus:** b) $50\,\text{km/h}$, kaksi merkitsevää numeroa kuten massassa $70\,\text{kg}$. Kohdissa a) ja c) impulssi on $9{,}8 \cdot 10^2\,\text{N}\cdot\text{s}$ ja jäykän esteen keskimääräinen voima $39\,\text{kN}$.
+**Järkevyys:** Nopeus $50\,\text{km/h}$ on tyypillinen törmäyskokeen nopeus. Turvatyynyn keskimääräinen voima $\dfrac{981\,\text{N}\cdot\text{s}}{0{,}100\,\text{s}} = 9{,}81\,\text{kN}$ on pienempi kuin suurin voima $17{,}4\,\text{kN}$, kuten pitääkin. Perustelu c): jäykällä esteellä keskimääräinen voima $39\,\text{kN}$ on yli kaksi kertaa turvatyynyn suurin voima, vaikka impulssi on sama. Turvatyyny pidentää pysähtymisen $25\,\text{ms}$:sta $100\,\text{ms}$:iin, joten voima on pienempi ja kuormittaa kehoa vähemmän.
+
+## fy4-9-L3-05
+**Annettu:** pallon massa $m = 0{,}60\,\text{kg}$, $g = 9{,}81\,\text{m/s}^2$; ajat taulukosta (esimerkkiaineisto): irrotus $0{,}000\,\text{s}$, osuma lattiaan $0{,}500\,\text{s}$, lähtö lattiasta $0{,}512\,\text{s}$, ylin kohta $0{,}912\,\text{s}$; ilmanvastus jätetään huomiotta
+**Kysytty:** b) lattian palloon kohdistama keskimääräinen voima $N_\text{ka}$ yksikössä $\text{N}$; a) nopeudet ennen osumaa ja kimpoamisen jälkeen; c) savipallon vertailuvoima ja selitys
+**Periaate:** Ilmassa pallon kiihtyvyys on $g$ alaspäin, joten nopeus ennen osumaa saadaan putoamisajasta ja nopeus kimpoamisen jälkeen nousuajasta, koska pallo on ylimmässä kohdassa levossa. Positiivinen suunta on ylös. Kosketuksen aikana palloon vaikuttavat lattian voima $N$ ylös ja paino $G = mg$ alas, joten kokonaisvoima on $N - G$. Impulssiperiaatteen mukaan sen impulssi on yhtä suuri kuin pallon liikemäärän muutos.
+**Kaava:** $v_1 = -g\,t_\text{putoaminen}$ ja $v_2 = g\,t_\text{nousu}$; $(N_\text{ka} - mg)\,\Delta t = mv_2 - mv_1$, joten $N_\text{ka} = mg + \dfrac{m(v_2 - v_1)}{\Delta t}$
+**Muunnokset:** Putoamisaika on $0{,}500\,\text{s}$, kosketusaika $\Delta t = 0{,}512\,\text{s} - 0{,}500\,\text{s} = 0{,}012\,\text{s}$ ja nousuaika $0{,}912\,\text{s} - 0{,}512\,\text{s} = 0{,}400\,\text{s}$.
+**Sijoitus:** a) $v_1 = -9{,}81\,\text{m/s}^2 \cdot 0{,}500\,\text{s} = -4{,}905\,\text{m/s}$ ja $v_2 = 9{,}81\,\text{m/s}^2 \cdot 0{,}400\,\text{s} = 3{,}924\,\text{m/s}$. b) Liikemäärän muutos on $m(v_2 - v_1) = 0{,}60\,\text{kg} \cdot (3{,}924 + 4{,}905)\,\text{m/s} = 5{,}297\,\text{kg}\cdot\text{m/s}$, ja paino on $mg = 0{,}60\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 5{,}886\,\text{N}$. Siis $N_\text{ka} = 5{,}886\,\text{N} + \dfrac{5{,}297\,\text{N}\cdot\text{s}}{0{,}012\,\text{s}} = 5{,}886\,\text{N} + 441{,}5\,\text{N} = 447{,}3\,\text{N}$. c) Savipallolle $v_2 = 0$, joten $N_\text{ka} = 5{,}886\,\text{N} + \dfrac{0{,}60\,\text{kg} \cdot 4{,}905\,\text{m/s}}{0{,}012\,\text{s}} = 5{,}886\,\text{N} + 245{,}3\,\text{N} = 251{,}1\,\text{N}$.
+**Vastaus:** b) $4{,}5 \cdot 10^2\,\text{N}$, kaksi merkitsevää numeroa kuten massassa $0{,}60\,\text{kg}$ ja kosketusajassa $0{,}012\,\text{s}$. Nopeudet ovat a-kohdassa $-4{,}9\,\text{m/s}$ ja $+3{,}9\,\text{m/s}$, ja c-kohdan savipallolle voima on $2{,}5 \cdot 10^2\,\text{N}$.
+**Järkevyys:** Paino $5{,}9\,\text{N}$ on vain noin $1{,}3\,\%$ lattian voimasta. Pallo putosi noin $1{,}2\,\text{m}$ ja nousi noin $0{,}78\,\text{m}$, mikä sopii koripallolle. Selitys c): savipallon liikemäärän muutos on $2{,}9\,\text{kg}\cdot\text{m/s}$, mutta kimpoavan pallon liikemäärä muuttuu lisäksi ylöspäin arvoon $+2{,}4\,\text{kg}\cdot\text{m/s}$, joten sen muutos $5{,}3\,\text{kg}\cdot\text{m/s}$ on suurempi ja samassa ajassa tarvitaan suurempi voima.
