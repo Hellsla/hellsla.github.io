@@ -1,19 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: ff5af81cc1f9f12e
+CONTENT-HASH: c8529fc08d8728d3
 
 ## Blocking
 
 ## Polish
-- Packet: the "Exercise brief" block is empty in the English packet (review_packet.py seems to extract the lesson sections by their Finnish headings Kaava/Esimerkki/…); the brief was judged from the lesson packet instead — fix the packet tool, not the exercises.
-- Packet: `check_lesson.py has not been run` for the translation; run the deterministic checks before release.
+- Packet (tooling) — the "Exercise brief" block is still empty in the English packet (section extraction by Finnish headings); fix the packet tool, not the exercises (carried).
+- Packet — `check_lesson.py has not been run` for the translation; run the deterministic checks before release (carried).
 
 ## Checked
-- One script recomputed all 12 answers with own formulas; all agree with exercises.json and answers.py within tolerance (L2-02 4.17→4.2, L2-03 12.77→13, L3-02 18.92→19).
-- Units and tolerances fit: mGy, mSv, µSv, µSv/h, h, mm; 2 % tolerance covers the stated rounding.
-- L1-04/L2-02/L3-01 state or inherit point source and negligible air attenuation; L1-05/L2-04/L3-01 use the narrow-beam half-value-layer model with d½ given.
-- L2-01: thyroid only, w_R 1, w_T 0.04, 30 mGy → 1.2 mSv; L3-03 adds lung-only alpha (0.24 mSv) to whole-body gamma (0.50 mSv) correctly using Σw_T = 1.
-- L2-03/L3-02 state the proportionality and same occupancy assumptions; STUK 94 Bq/m³ ↔ 4.0 mSv and others 1.9 mSv consistent with the lesson.
-- L1-03 flight dose rate flagged as approximate; answer called an order-of-magnitude estimate.
-- Every solution has Given/Asked/Principle/Formula (symbolic first)/Conversions/Substitution/Answer with sig-fig reason/Reasonableness; reasonableness checks are real (halving chains, back-substitution).
-- Notation (D, H_T, H_E, w_R, w_T, Ḣ, d_{1/2}) same as the lesson.
-- Content and numbers identical to the Finnish exercise set.
+- Delta re-review: the only change since the passed version is commit fd2e54e95 in exercises/solutions.md (360 px narrowing); hash c8529fc08d8728d3 equals the packet's, at start and end. No task, answer, unit, tolerance or other file changed.
+- solutions.md:89 (L2-04 reasonableness) — `96 → 48 → 24 → 12 → 6 → 3` then (in $\mu\text{Sv/h}$): the unit now applies to the whole chain instead of only the last entry, which is if anything more correct; 96/2⁵ = 3 µSv/h, both `$…$` pairs closed, sentence reads correctly.
+- solutions.md:95 (L3-01 formula) — inside `\left[…\right]` only `\left(\dfrac{r_1}{r_\text{A}}\right)^2` → `\left(\tfrac{r_1}{r_\text{A}}\right)^2`: same fraction, text-size only; braces and \left/\right pairs balanced (scripted check); H_A − H_B = Ḣ₁ t[(r₁/r_A)² − (½)^{d/d½}] still equals the two terms stated before it.
+- Previous review's recomputation of all 12 answers and its other checks stand (content unchanged).

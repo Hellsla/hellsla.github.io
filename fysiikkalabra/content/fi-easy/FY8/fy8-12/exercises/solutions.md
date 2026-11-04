@@ -44,7 +44,7 @@
 **Periaate:** Yksi fotoni voi ionisoida molekyylin vain, jos sen energia on vähintään ionisaatioenergia. Fotonin energia on $E = hf = \tfrac{hc}{\lambda}$, joten mitä pidempi aallonpituus, sitä pienempi energia. Pisin ionisoiva aallonpituus kuuluu fotonille, jonka energia on tasan ionisaatioenergia.
 **Kaava:** $E = \dfrac{hc}{\lambda}$, josta $\lambda = \dfrac{hc}{E}$
 **Muunnokset:** $12{,}6\,\text{eV} = 12{,}6 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 2{,}0185 \cdot 10^{-18}\,\text{J}$, ja lopuksi $1\,\text{m} = 10^{9}\,\text{nm}$.
-**Sijoitus:** $\lambda = \dfrac{6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8}\,\text{m/s}}{2{,}0185 \cdot 10^{-18}\,\text{J}} = 9{,}8412 \cdot 10^{-8}\,\text{m} = 98{,}412\,\text{nm}$
+**Sijoitus:** $\lambda = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot \dfrac{2{,}998 \cdot 10^{8}\,\text{m/s}}{2{,}0185 \cdot 10^{-18}\,\text{J}} = 9{,}8412 \cdot 10^{-8}\,\text{m} = 98{,}412\,\text{nm}$
 **Vastaus:** $98{,}4\,\text{nm}$. Vastauksessa on kolme merkitsevää numeroa, koska ionisaatioenergiassa $12{,}6\,\text{eV}$ on kolme merkitsevää numeroa.
 **Järkevyys:** Aallonpituus on paljon lyhyempi kuin näkyvän valon aallonpituus $380$–$720\,\text{nm}$. Näkyvä valo ei siis ionisoi vettä, kuten pitää. Tarkistus: $1240\,\text{eV}\,\text{nm} : 12{,}6\,\text{eV} \approx 98\,\text{nm}$.
 

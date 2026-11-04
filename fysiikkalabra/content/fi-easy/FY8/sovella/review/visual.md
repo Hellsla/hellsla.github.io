@@ -1,15 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 49d7cb0c881119b3
+CONTENT-HASH: 4f138c5ae82e3d40
 
 ## Blocking
-None.
+(none)
 
 ## Polish
-- s3 a solution table (4 columns) is about 418 px wide in a 298 px card at 390 px; the 4th column (Rr^2) clips (carried over).
-- The source box ("Tilastoaineisto...") at the top of each task is an unevenly rounded blob at 390 px.
-- Figure text at 390 px is about 9-10 px; legible but small.
-- In the cobalt-60 row "voimakas gamma" wraps over three lines at 390 px; fine but narrow.
-- The longer s2 e text (two weighting factors explained) wraps normally; no layout issue.
+- [Minor] s3 a) solution table: 4th column (Rr²) 418 px in a 273 px card at 360 px, clips and scrolls (carried; unrelated to this change).
+- [Minor] source box at the top of each task is unevenly rounded (carried).
+- [Minor] figure text ~9-10 px at narrow widths (carried).
 
 ## Checked
-Fresh captures at 390, 768, 1280 px, full page, with and without ?ratkaisut=1, details opened (scratchpad shots-sov2/). No horizontal overflow, 0 KaTeX errors. The s1 energy-level labels (ylempi viritystila, alempi viritystila, perustila) sit fully inside the figure at all widths; the s3 graphs have quantities, units, distinct markers, model lines, dashed extrapolation and Finnish aria-labels. Decimal comma in text, tables, figures and maths. Headings consistent (Annettu, Kysytty, Periaate...; Hyväksytään myös; Yleisiä virheitä).
+- Own Playwright captures at 360 px, ?ratkaisut=1, details opened: every changed formula in fi (s1 a) and d) Sijoitus) plus the en and fi-easy counterparts (contact sheets sheet-fi/en/fi-easy.png in scratchpad shots-fx/).
+- Result: h · \dfrac{c}{X} wraps after 'h ·' into a 2–4 row block, fraction bar intact, units upright with thin spaces, decimal comma; document scrollWidth = 360 = viewport, no clipped KaTeX.
+- LaTeX valid, no red KaTeX; hash at start and end the same.
+
+## Scores
+illustrations n/a · typography 5 · Finnish 5 · accessibility 4
