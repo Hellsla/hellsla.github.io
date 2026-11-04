@@ -1,19 +1,18 @@
-VERDICT: FAIL
-CONTENT-HASH: e6d018827d4ef414
+VERDICT: PASS
+CONTENT-HASH: 5f3c4888687a23c4
 
 ## Blocking
-- content/fi/FY1/fy1-1/exercises/solutions.md:176 (L2-07, B) — "yhden arkin paksuuden epävarmuus on vain noin 0,001 mm" is stated as the uncertainty of the sheet thickness, but it is only the reading contribution (0,25 mm / 300). The task itself names a method effect (the stack pressed by hand), the points scatter about ±0,3 mm round the fit, and line 175 of the same solution gives 0,10 mm with two figures and accepts 0,097–0,107 mm. The 0,25 mm sentence also lacks the guardrail condition. — Fix: use the guardrail wording ("lukeman epävarmuutta voidaan yksinkertaisessa tilanteessa arvioida …"), call 0,001 mm *lukeman osuus* yhden arkin paksuudessa, and add that pressing the stack, air between the sheets and the eye fit make the total uncertainty larger, which is why the answer has two figures.
 
 ## Polish
-- lessons/FY1/fy1-1/answers.py:41 (L3-05) — uses 1 AU = 149 597 870,7 km, while the task gives 1,496·10⁸ km. The result is the same (143,16 AU), but the comment's 23,47 AU differs from the solution's 23,46 AU. Use the task's value.
-- content/fi/FY1/fy1-1/exercises/solutions.md:171 (L2-07) — the line is read at (300; 30,5 mm), which is also a raw point. That is allowed (the fitted line passes through it), but one sentence saying the value is read off the line, not taken from the table, would match the guardrail.
+- content/fi/FY1/fy1-1/exercises/exercises.json:228 (L2-07) — the task says "pisteet asettuvat suoralle". Measured points lie on the line only approximately; the residuals here are −0,28…+0,31 mm. — Write "asettuvat likimain suoralle", in line with the fits guardrail.
+- content/fi/FY1/fy1-1/exercises/exercises.json:65 (L1-06) — the new distractor "Malli on teoria, jota ei voi enää muuttaa" mixes up model and theory. The feedback refutes "unchangeable" correctly but leaves "a model is a theory" unanswered. — Add half a sentence: a theory too stays open to revision.
 
 ## Checked
-- Recomputed all 19 numeric answers in one script from the task text: every one agrees (e.g. L2-07 slope 0,1019 mm; L3-04 1,194·10⁹; L3-05 143,16 AU).
-- L1-06: exactly one correct option; each distractor's feedback is right, and model, prediction and test are defined as in the glossary.
-- L2-06: the order-of-magnitude rule (a > about 3 → 10ⁿ⁺¹) matches the glossary; 9,46·10²⁰ m → 10²¹; Δn = 21.
-- L2-07 data: residuals −0,09…+0,31 mm, consistent with reading to 0,5 mm; the origin has a physical reason (zero sheets, zero height).
-- L3-04: assumptions stated in the task; the sensitivity 1,2³ = 1,73 → −42 % is right; 20 drops/cm² is plausible.
-- L3-05: t = 7,25 a fits 2018-11-05 → Feb 2026; the student's error (km/s · a, adding km to AU) is identified correctly; "supports but does not prove" is worded well.
-- Rounding: every stated figure count follows from the limiting datum, and each shown value lies within the tolerance.
-- Old 12: unchanged apart from the typography; scope within FY1.
+- Round-1 Blocking (L2-07 uncertainty) fixed. The solution uses the guardrail's scale-reading wording. It calls 0,25 mm : 300 ≈ 0,001 mm "vain lukeman osuus" and names the other error sources, which justify two figures.
+- L2-07 recomputed: the least-squares slope through the origin is 0,1019 mm, and the line gives 30,56 mm at N = 300 (the solution says 30,6). The answer 0,102 ± 5 % covers the stated range 0,097–0,107 mm. The origin has a physical reason.
+- L2-05 new part: 1,0 m in the model ↔ 15,05 AU. Uranus is 4,15 AU away from it and Saturn 5,47 AU, so the answer Uranus is right. In model distances this is 127,6 cm against 63,7 cm.
+- L1-06: exactly one option is correct; every distractor is wrong and its feedback is right.
+- answers.py now uses the task's 1 AU = 1,496·10⁸ km. L3-05: 143,16 AU, and the comment matches the solution (23,46 AU).
+- All 19 numeric answers: answers.py agrees with exercises.json, and the round-1 recomputation still holds for the unchanged tasks.
+- L3-04 rewording: no physics change; N = 1,19·10⁹, and the sensitivity 1,2³ → −42 % still holds.
+- The hash was the same at the start and the end.

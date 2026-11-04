@@ -1,21 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: e6d018827d4ef414
+CONTENT-HASH: 5f3c4888687a23c4
 
 ## Blocking
 none
 
 ## Polish
-- exercises.json fy1-1-L3-04 — "sadekuuro nostaisi kentälle kertyvän vesikerroksen paksuutta 5,0 mm tunnissa" is garbled — "kuuro kasvattaa kentälle kertyvän vesikerroksen paksuutta nopeudella $5{,}0\,\text{mm/h}$"; end with the two questions as separate sentences.
-- exercises.json fy1-1-L2-07 — needs graph fitting and slope, which this chapter does not teach, and the solution uses "epävarmuus 0,25 mm" (fy1-3 content); it also reads the fit from the data point (300; 30,5), not from the line — add the hint "suoran kulmakerroin on arkin paksuus", and read two points from the fitted line.
-- exercises.json fy1-1-L1-06 — the correct option is the longest and copies the lesson's sentence; "tutkijan mielipide" is a strawman — shorten it and make a distractor a real misconception ("malli on teoria, jota ei voi muuttaa"). One choice task only; add a second at level 2.
-- exercises.json fy1-1-L1-07, L2-02 — light travel time is computed, but the lesson defers it to fy1-2 and gives no $t=s/c$ — add "kulkuaika = matka : nopeus" to the text.
-- exercises.json fy1-1-L2-05 — all eight planets given, two used; add a second part (Earth's place in the model; the solution already says 6,6 cm).
+- exercises.json fy1-1-L2-05 — "Anna vastaus senttimetreinä" now sits before a second question the page cannot check, so the stored 34,6 cm answer and the "lähin planeetta" part are mixed; write "Anna Jupiterin etäisyys senttimetreinä." earlier and end with the planet question alone (the answer field takes only the number).
+- exercises.json fy1-1 — still one choice task (L1-06) in the set; a second conceptual choice at level 2 (e.g. suuruusluokka vs. kokojen suhde) would balance the mix. Not required.
+- solutions.md fy1-1-L2-07 — the passage on reading uncertainty ("puoleksi pienimmästä lukuvälistä", "kokonaisepävarmuus") is fy1-3 content and long for a step 7 remark; shorten to the one sentence that the pile spreads the reading error over 300 sheets.
 
 ## Checked
-- Counts 8/7/5 = 20; three data tasks (L2-05, 06, 07); concept, error analysis (L3-05), experiment, Fermi (L3-04), modelling at level 3.
-- None repeats the worked example (atom/proton ratio); L1-04, 05, 08 are the same step on new data, fine at level 1.
-- Answers recomputed: L2-05, L2-07 (0,102 mm), L3-04 (1,19e9), L3-05 (143,16 AU) agree with the solutions.
-- L3-05: the student's unit error is real, the absurd conclusion invites a check, "supports but does not prove" fits the model concept.
-- Solutions follow the seven steps with reasonableness checks.
-- Finnish: no case or term errors; table decimals are commas.
-- Phone usability: exercise captures were not present, so 360 px not judged.
+- Round-1 polish handled: L1-06 correct option shortened, distractor "malli on teoria, jota ei voi muuttaa" is a real misconception with feedback that repairs it (putoamismalli: kivi, höyhen); the solution's model answer matches.
+- L1-07 and L2-02 now give t = s/c in the text; L3-04 rain-rate wording fixed and the two questions are separate sentences; L3-05 the task order is now data, then error, then explanation.
+- L2-07 now states h = dN and that the slope is d, and asks to read the line at N = 300; solution 0,102 mm (read from the line, not the data point) agrees with answers.py and the tolerance.
+- L2-05 solution: 15,05 AU lies closer to Uranus (4,15) than Saturn (5,47); correct.
+- L3-05 answers.py uses the task's 1 AU = 1,496e8 km: 143,16 -> 143,2 AU, consistent with the solution.
+- Counts 8/7/5 = 20; three data tasks, error analysis, Fermi, experiment kept.
+- Phone captures not judged beyond the packet's checks (exercise captures were listed but the diff does not touch layout).
