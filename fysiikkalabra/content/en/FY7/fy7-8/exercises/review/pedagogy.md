@@ -1,15 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 6631e8a5347af402
+CONTENT-HASH: b07019580b69ebba
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
+(none)
+
+## Fixed
+- exercises.json L2-05 table caption shortened ("Secondary voltage U2 against turns N2, U1 = 6.00 V (example data)") because the long caption was clipped at the table edge in the 1280 px capture; formulas unchanged.
 
 ## Polish
-- solutions.md fy7-8-L1-02 Answer — "the two significant figures of the voltage 8.0 V are enough" confuses for a result of 1150 — say "1150 turns, a whole number; round 230 : 8.0 to the nearest turn".
-- exercises.json fy7-8-L1-01 duplicates the exit-ticket Q1 result (11.5 V) — change one set of numbers.
-- exercises.json fy7-8-L2-02 — "ideal transformer straight to 5 V" conflicts with the lesson's note about rectifiers; add "ignore the rectifier".
+- solutions.md L2-06: the answer paragraph holds the result, the best load and the explanation; fine, but long. Left as in fi.
 
 ## Checked
-- Round-1 blockers fixed: L1-02 unit is "turns" (exercises.json:16), L3-03 unit is "times" (exercises.json:101); no other Finnish unit or text in exercises.json.
-- Counts 5/4/3; none repeats the worked example; progression ratio, current, loss RI², reasoning in L3.
-- Answers as recomputed in round 1 (11.5, 1150, 5.0, 36, 320, 826.4, 43.48, 0.9917, 0.8, 0.75, 4.0, 3.306); solutions state the principle and check reasonableness.
-- L2-04 graph description gives the same data without the answer.
+- Natural, correct English: situation first, question last, "Give the answer in kilowatts", "In the answer box give ..." match fi structure.
+- Terms: transformer, primary/secondary coil, magnetic flux, internal energy, power loss, efficiency, unloaded: consistent with the lesson and the older tasks.
+- L2-07 error-analysis wording keeps the student's quote and the a)/b) split; solutions explain the mistake step by step.
+- L3-04/L3-05 multi-part wording and "example data" labelling preserved.
+- Solutions follow Given / Find / Principle / Formula / Conversions / Substitution / Answer / Reasonableness with the same content as fi.

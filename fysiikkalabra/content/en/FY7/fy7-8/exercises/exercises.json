@@ -136,7 +136,7 @@
         "graph"
       ],
       "data": {
-        "caption": "Secondary voltage $U_2$ at different numbers of turns $N_2$ of the secondary coil, when $U_1 = 6.00\\,\\text{V}$ (example data)",
+        "caption": "Secondary voltage $U_2$ against turns $N_2$, $U_1 = 6.00\\,\\text{V}$ (example data)",
         "columns": [
           "$N_2$",
           "$U_2\\,(\\text{V})$"
