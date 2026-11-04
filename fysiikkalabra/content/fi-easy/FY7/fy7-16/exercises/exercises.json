@@ -123,7 +123,7 @@
     {
       "id": "fy7-16-L2-05",
       "level": 2,
-      "text": "Langattoman laturin hyötysuhde mitattiin eri etäisyyksillä laturin ja puhelimen vastaanotinkäämin välillä. Mittaukset ovat esimerkkiaineistoa.\n\nPiirrä kuvaaja, jossa hyötysuhde on pystyakselilla ja etäisyys vaaka-akselilla. Yhdistä pisteet sujuvalla käyrällä. Määritä etäisyys, jolla hyötysuhde laskee arvoon $50\\,\\%$. Voit lukea arvon kuvaajasta tai interpoloida lineaarisesti kahden mittauspisteen välillä.\n\nKirjoita vastauslaatikkoon etäisyys millimetreinä.",
+      "text": "Langattoman laturin hyötysuhde mitattiin eri etäisyyksillä laturin ja puhelimen vastaanotinkäämin välillä. Mittaukset ovat esimerkkiaineistoa.\n\nPiirrä kuvaaja, jossa hyötysuhde on pystyakselilla ja etäisyys vaaka-akselilla. Yhdistä pisteet sujuvalla käyrällä. Määritä etäisyys, jolla hyötysuhde laskee arvoon $50\\,\\%$. Voit lukea arvon kuvaajasta. Voit myös laskea arvon kahden mittauspisteen väliltä suoran avulla (lineaarinen interpolointi).\n\nKirjoita vastauslaatikkoon etäisyys millimetreinä.",
       "kind": [
         "data",
         "graph"
@@ -248,7 +248,7 @@
     {
       "id": "fy7-16-L3-04",
       "level": 3,
-      "text": "Langattoman laturin vastaanotinkäämissä on $N = 15$ kierrosta, ja laturin taajuus on $f = 130\\,\\text{kHz}$. Eri etäisyyksillä $d$ laturista mitattiin käämiin indusoituvan jännitteen huippuarvo $e_0$. Mittaukset ovat esimerkkiaineistoa.\n\nPuhelin alkaa ladata, kun jännitteen huippuarvo on vähintään $1{,}0\\,\\text{V}$. Valmistaja harkitsee, että laturin taajuus laskettaisiin arvoon $100\\,\\text{kHz}$. Vuo pysyisi silloin jokaisella etäisyydellä samana.\n\na) Laske yhden kierroksen läpi kulkevan vuon huippuarvo $\\Phi_0$ mikroweebereinä jokaiselle taulukon etäisyydelle.\n\nb) Laske vuon huippuarvo, jolla jännite on juuri $1{,}0\\,\\text{V}$ taajuudella $100\\,\\text{kHz}$. Määritä lineaarisella interpoloinnilla suurin etäisyys, jolla lataus vielä toimii uudella taajuudella.\n\nc) Perustele, miksi toimintaetäisyys lyhenee, vaikka laturin kenttä ei muutu. Ehdota yksi muutos vastaanotinkäämiin, jolla etäisyys saataisiin takaisin.\n\nKirjoita vastauslaatikkoon b-kohdan etäisyys millimetreinä.",
+      "text": "Langattoman laturin vastaanotinkäämissä on $N = 15$ kierrosta, ja laturin taajuus on $f = 130\\,\\text{kHz}$. Eri etäisyyksillä $d$ laturista mitattiin käämiin indusoituvan jännitteen huippuarvo $e_0$. Mittaukset ovat esimerkkiaineistoa.\n\nPuhelin alkaa ladata, kun jännitteen huippuarvo on vähintään $1{,}0\\,\\text{V}$. Valmistaja harkitsee, että laturin taajuus laskettaisiin arvoon $100\\,\\text{kHz}$. Vuo pysyisi silloin jokaisella etäisyydellä samana.\n\na) Laske yhden kierroksen läpi kulkevan vuon huippuarvo $\\Phi_0$ mikroweebereinä jokaiselle taulukon etäisyydelle.\n\nb) Laske vuon huippuarvo, jolla jännite on juuri $1{,}0\\,\\text{V}$ taajuudella $100\\,\\text{kHz}$. Määritä lineaarisella interpoloinnilla (suoran avulla kahden mittauspisteen väliltä) suurin etäisyys, jolla lataus vielä toimii uudella taajuudella.\n\nc) Perustele, miksi toimintaetäisyys lyhenee, vaikka laturin kenttä ei muutu. Ehdota yksi muutos vastaanotinkäämiin, jolla etäisyys saataisiin takaisin.\n\nKirjoita vastauslaatikkoon b-kohdan etäisyys millimetreinä.",
       "kind": [
         "data",
         "model",

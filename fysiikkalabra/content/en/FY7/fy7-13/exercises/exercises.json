@@ -209,7 +209,7 @@
         },
         {
           "text": "Use a sparser grating, because then the maxima are closer together and the error is shared among more of them.",
-          "feedback": "Wrong: with a sparser grating the angles, and so $x$, become smaller, so the same $\\Delta x$ is a larger part of the distance. The error is not shared among anything."
+          "feedback": "Wrong: with a sparser grating the angles, and so $x$, become smaller, so the same $\\Delta x$ is a larger part of the distance. The error is not divided among several maxima."
         },
         {
           "text": "Use a brighter laser, because then the maxima move further apart.",

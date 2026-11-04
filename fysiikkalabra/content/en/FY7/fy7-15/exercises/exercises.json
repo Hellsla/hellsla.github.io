@@ -47,7 +47,7 @@
       "kind": [
         "concept"
       ],
-      "answer": "Heijastunut valo on osittain polarisoitunutta vaakasuuntaan, ja kalvo absorboi vaakasuuntaisen värähtelyn.",
+      "answer": "Reflected light is partially polarised in the horizontal direction, and the film absorbs the horizontal oscillation.",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
@@ -234,7 +234,7 @@
     {
       "id": "fy7-15-L2-07",
       "level": 2,
-      "text": "A student is solving a problem: “Light arrives from air at the surface of ethanol. The refractive index of ethanol is $1.36$ and that of air $1.00$. At what angle of incidence is the reflected light completely polarised?”\n\nShe writes: “Brewster's law is $\\tan\\alpha_\\text{B} = n_1 : n_2$. The refractive index of air is $n_1 = 1.00$ and that of ethanol $n_2 = 1.36$, so $\\tan\\alpha_\\text{B} = 1.00 : 1.36 = 0.735$ and $\\alpha_\\text{B} = 36.3^\\circ$.”\n\nFind the student's error and calculate the correct Brewster's angle in degrees. Explain what the angle $36.3^\\circ$ that the student obtained actually is in this situation.",
+      "text": "A student is solving a problem: “Light arrives from air at the surface of ethanol. The refractive index of ethanol is $1.36$ and that of air $1.00$. At what angle of incidence is the reflected light completely polarised?”\n\nThe student writes: “Brewster's law is $\\tan\\alpha_\\text{B} = n_1 : n_2$. The refractive index of air is $n_1 = 1.00$ and that of ethanol $n_2 = 1.36$, so $\\tan\\alpha_\\text{B} = 1.00 : 1.36 = 0.735$ and $\\alpha_\\text{B} = 36.3^\\circ$.”\n\nFind the student's error and calculate the correct Brewster's angle in degrees. Explain what the angle $36.3^\\circ$ that the student obtained actually is in this situation.",
       "kind": [
         "error"
       ],
@@ -321,7 +321,7 @@
     {
       "id": "fy7-15-L3-05",
       "level": 3,
-      "text": "An angler sits on the shore of a lake, and glaring sunlight is reflected from the surface of the water. The intensity of the reflected light at the eye is $40\\,\\text{W/m}^2$. The Sun is at such a height that the light is reflected from the water surface at Brewster's angle. The refractive index of water is $1.33$ and that of air $1.00$.\n\nThe angler wears polarised sunglasses whose transmission axis is vertical, and tilts his head so that the transmission axis is at an angle of $25.0^\\circ$ from the vertical.\n\na) How high is the Sun above the horizon?\n\nb) What is the intensity of the glare after the glasses?\n\nc) An ordinary tinted lens would let through $30\\,\\%$ of the intensity of the light regardless of direction. Which lens reduces glare more, and why? Finally, compare the effect of the lenses on unpolarised light.\n\nWrite the result of part b) in the answer box.",
+      "text": "An angler sits on the shore of a lake, and glaring sunlight is reflected from the surface of the water. The intensity of the reflected light at the eye is $40\\,\\text{W/m}^2$. The Sun is at such a height that the light is reflected from the water surface at Brewster's angle. The refractive index of water is $1.33$ and that of air $1.00$.\n\nThe angler wears polarised sunglasses whose transmission axis is vertical, and tilts their head so that the transmission axis is at an angle of $25.0^\\circ$ from the vertical.\n\na) How high is the Sun above the horizon?\n\nb) What is the intensity of the glare after the glasses?\n\nc) An ordinary tinted lens would let through $30\\,\\%$ of the intensity of the light regardless of direction. Which lens reduces glare more, and why? Finally, compare the effect of the lenses on unpolarised light.\n\nWrite the result of part b) in the answer box.",
       "kind": [
         "model",
         "reasoning"

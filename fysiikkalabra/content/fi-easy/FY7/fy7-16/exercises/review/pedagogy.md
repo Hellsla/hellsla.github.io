@@ -1,20 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 69fc5e0aeb956c21
+CONTENT-HASH: 04ccd2767440e5a9
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
 (none)
 
+## Fixed
+- L2-05 and L3-04 texts: "lineaarinen interpolointi" now explained in plain words in the task text itself ("laskea arvo kahden mittauspisteen väliltä suoran avulla"); numbers and answers unchanged.
+
 ## Polish
-1. exercises.json — all 12 tasks are numeric; nothing asks for a qualitative explanation about the hob, the coin or kokonaisheijastuminen. Replace L1-05 (hyötysuhde is not taught in the lesson) with a short conceptual or critical-angle task.
-2. fy7-16-L3-02 — requires the effective value (e0 : sqrt 2) and a one-loop eddy-current model; the solution's Periaate should say in plain words why the mean power uses the effective voltage, since fi-easy readers will not recall it.
-3. fy7-16-L3-01 — the sections come out at 107 km, above the 50–100 km the lesson calls typical; add a note in the task that 20 dB sections are allowed, or use 18 dB.
-4. L1-03 and L3-02 both give about 1,6 kW; vary one value.
-5. L1-04 "mikroweebereinä" is a rare form; "mikroweberinä" is the usual spelling in textbooks.
+(none)
 
 ## Checked
-- Same tasks, answers and units as en (script comparison); unit "vahvistinta" translated.
-- Levels 5 / 4 / 3 per rubric; level 3 combines ideas across chapters.
-- No task repeats the example (80 km) or tarkistus-2 (30 km).
-- Solutions: Annettu / Kysytty / Periaate / Kaava / Muunnokset / Sijoitus / Vastaus / Järkevyys; steps followable, principles explained.
-- Finnish grammar and case after number+unit correct in the sampled tasks and solutions; decimal commas used.
-- Hash unchanged at end.
+- Levels, kinds (concept, data, graph, experiment, error, model, reasoning), task order and the structure of parts a), b), c) match fi in all 8 new tasks; the answer box asks for the same quantity and unit as in fi.
+- L1-06 choice feedback explains the right idea (glass does not conduct, so no eddy current), not just "wrong"; L2-07 error-analysis task keeps the student's claim and both parts.
+- Wording keeps the exercise voice and the glossary terms of the chapter (eddy current, attenuation, wireless charging, induction hob).
+- Language is selkosuomi: short sentences, terms (pyörrevirta, interpolointi, pienimmän neliösumman menetelmä) explained in the solutions.
