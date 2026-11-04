@@ -327,6 +327,44 @@ def core_ids(ex):
     return out
 
 
+NUM_CELL = re.compile(r"[−-]?\d+(?:\.\d+)?")
+
+
+def exercise_text(text, pid):
+    """An exercise's task text. A text in paragraphs (a blank line before each part a), b), c)) keeps them: the
+    situation first (split like any long task, inquiry.task_text), then each paragraph as its own (a part "a) …" as a bold question),
+    the last one carrying pid (the answer field's description). A text without blank lines renders as before."""
+    paras = [p.strip() for p in text.split("\n\n") if p.strip()]
+    if len(paras) < 2: return inquiry.task_text(text, pid=pid)
+    head = inquiry.task_text(paras[0])
+    idattr = f' id="{esc(pid)}"'
+    part = lambda p: "task ask" if re.match(r"[a-h]\)", p) else "task more"   # "a) …" is a question; "Vakiot: …" plain text (never a 2nd bare p.task: test_writepad)
+    parts = [f'<p class="{part(p)}"{idattr if i == len(paras) - 2 else ""}>{p}</p>' for i, p in enumerate(paras[1:])]
+    return head + "".join(parts)
+
+
+def data_table(d):
+    """An exercise's data ("data": {"caption", "columns", "rows"}, teacher 2026-11-04, aineistotehtävät): a measurement
+    table the student reads, copies into a spreadsheet or fits. A cell that is a plain number is written with a point
+    in the JSON (the same in every language) and shown with the page language's decimal sign; any other cell, the
+    caption and the column heads are text with LaTeX."""
+    cell = lambda c: str(c).replace(".", T("format.decimal")).replace("-", "−") if NUM_CELL.fullmatch(str(c)) else nbsp_units(str(c))
+    cap = f'<caption>{nbsp_units(d["caption"])}</caption>' if d.get("caption") else ""
+    head = "".join(f'<th scope="col">{nbsp_units(h)}</th>' for h in d["columns"])
+    body = "".join("<tr>" + "".join(f"<td>{cell(c)}</td>" for c in r) + "</tr>" for r in d["rows"])
+    return f'<table class="exp-table ex-data">{cap}<thead><tr>{head}</tr></thead><tbody>{body}</tbody></table>'
+
+
+def exercise_choice(e):
+    """A conceptual multiple-choice exercise ("choices", teacher 2026-11-04): the same component as an inquiry choice
+    (inquiry.choice_html, inquiry.js: feedback for the chosen option, one change, then the correct one), in an
+    exercise's place. Its answer and model solution open after "Olen tehnyt ratkaisun", like a written task's."""
+    md = lambda t: nbsp_units(render_md(t))
+    lid = e["id"].rsplit("-L", 1)[0]
+    return inquiry.choice_html({"prompt": e.get("prompt") or T("lesson.choose"), "choices": e["choices"]}, md, lid, e["id"])
+
+
+
 def chapter_no(course, lid):
     """The chapter's number in its module: its place in curriculum.json's slots, the "Luku N" of the module page."""
     ids = [l["id"] for l in curriculum.get(course, {}).get("lessons", [])]
@@ -364,9 +402,10 @@ def exercise_html(e, solution_html, read=None, core=False, num=None):
     model = figcat.figure_html(e["model_figure"], T.lang, read) if e.get("model_figure") else ""   # a drawing task's model diagram, inside the solution
     sol = f'<details class="solution"><summary>{T("lesson.solution")}</summary>{model}<div class="steps">{solution_html}</div></details>' if solution_html else ""
     fig = figcat.figure_html(e["figure"], T.lang, read) if e.get("figure") else ""   # a figure by its id (scripts/figcat.py)
+    fig = (data_table(e["data"]) if e.get("data") else "") + fig + (exercise_choice(e) if e.get("choices") else "")
     tag = f'<span class="ex-core">{T("lesson.core_exercise")}</span>' if core else ""
     solved = "" if numeric else f'<label class="solved"><input type="checkbox"> <span>{T("inquiry.did_solution")}</span></label>'   # a written task opens its answer after this tick (lesson.js part 8)
-    return (f'<li id="{e["id"]}"{" class=" + chr(34) + "core" + chr(34) if core else ""}' + (f' data-num="{num}">' + number_label(num) if num else ">") + f'{tag}{inquiry.task_text(nbsp_units(e["text"]), pid=f"{e['id']}-q")}{fig}{check}{solved}'
+    return (f'<li id="{e["id"]}"{" class=" + chr(34) + "core" + chr(34) if core else ""}' + (f' data-num="{num}">' + number_label(num) if num else ">") + f'{tag}{exercise_text(nbsp_units(e["text"]), f"{e['id']}-q")}{fig}{check}{solved}'
             f'<details class="answer"><summary>{T("lesson.answer")}</summary><p>{ans}</p></details>{sol}</li>')
 
 
@@ -893,14 +932,14 @@ def build_language(lang):
         f'<p class="lead">{T("site.home_sub")}</p>'
         # from 700 px the school's logo stands here, over the right column, so that both lists start level (teacher
         # 2026-11-04); the list's own heading (the same logo) is then visually hidden, site.css .intro-school
-        + (f'<img class="intro-school" src="brand/kiviruukin-lukio-oikea-yonsininen.svg" alt="" width="98" height="56">' if local_rows else "")
+        + (f'<img class="intro-school" src="brand/kiviruukin-lukio-rivi-musta.svg" alt="" width="293" height="32">' if local_rows else "")
         + '</section>'
         f'<section class="catalogue" id="moduulit" aria-labelledby="h-modules"><h2 id="h-modules" class="visually-hidden">{T("site.modules")}</h2>'
         f'<div class="mod-cols"><ul class="mod-list">{catalogue}</ul><div class="mod-side">'
         + (f'<h3 class="mod-group">{T("site.upcoming")}</h3><ul class="mod-list up-list">{upcoming}</ul>' if upcoming else "")
         # the school's own courses under the school's logo (teacher 2026-11-04: its emblem and name, the list level with the
         # national modules: from 700 px the logo sits above the column, out of the flow, site.css .mod-school)
-        + (f'<h3 class="mod-group mod-school"><img src="brand/kiviruukin-lukio-oikea-yonsininen.svg" alt="{esc(school)}" width="98" height="56"></h3>'
+        + (f'<h3 class="mod-group mod-school"><img src="brand/kiviruukin-lukio-rivi-musta.svg" alt="{esc(school)}" width="293" height="32"></h3>'
            f'<ul class="mod-list local-list">{local_rows}</ul>' if local_rows else "")
         + '</div></div></section>')
     (out / "index.html").write_text(front_chrome(page(T("site.home_title"), home, "", "index.html", T("site.home_description"), main_class="home",

@@ -27,4 +27,19 @@ k_l, p0_l = (136.0 - 107.0) / 80.0, 107.0 - (136.0 - 107.0) / 80.0 * 20.0   # sh
 a["fy3-13-L3-01"] = (-p0_s / k_s - (-p0_l / k_l)) / 2  # θ0: −275,17 and −234,55 °C; Δθ0 = 20,3 °C
 a["fy3-13-L3-02"] = 100.0 * 77 / 273.15                 # p proportional to T in kelvin: p(77 K) = 100 kPa · 77/273,15 = 28,2 kPa
 a["fy3-13-L3-03"] = (273.15 - 262.0) / 6.0              # deviation 11,15 °C over uncertainty 6 °C = 1,86 times
+# Exercise-bank additions
+a["fy3-13-L1-07"] = round(-195.8 + 273.15 + 1e-9, 1)             # T = θ + 273,15 = 77,35 K, given to 0,1 K: 77,4 K
+kb = (112.4 - 107.4) / (35.0 - 20.0)                    # group B slope from the two lowest points: 5,0 kPa / 15 °C = 0,3333 kPa/°C
+a["fy3-13-L2-05"] = 50.0 - (588.9 / 5) / 0.363          # θ_ka = 250/5 = 50 °C, p_ka = 588,9/5 = 117,78 kPa; θ0 = θ_ka − p_ka/k = −274,46 °C
+a["fy3-13-L2-06"] = 20.0 - 107.4 / kb                   # θ0 = θ1 − p1/k = 20 − 322,2 = −302,2 °C
+kl_ = (120.0 - 104.0) / (80.0 - 20.0)                   # leaking vessel, end-point slope: 16,0 kPa / 60 °C = 0,2667 kPa/°C
+a["fy3-13-L2-07"] = 20.0 - 104.0 / kl_                  # θ0 = 20 − 390 = −370 °C
+def zero(th1, p1, th2, p2):                             # zero-pressure temperature of the line through two points
+    kk = (p2 - p1) / (th2 - th1)
+    return th1 - p1 / kk
+a_max, a_min = zero(25, 107.0, 85, 131.0), zero(25, 109.0, 85, 129.0)      # series A: −242,5 and −302,0 °C
+b_max, b_min = zero(25, 107.0, 225, 182.5), zero(25, 109.0, 225, 180.5)    # series B: −258,44 and −279,90 °C
+a["fy3-13-L3-04"] = (b_max - b_min) / 2                 # Δθ0 of series B = 10,73 °C (series A: 29,75 °C)
+kc = (137.0 - 100.4) / 100.0                            # calibration slope 0,366 kPa/°C from the end points
+a["fy3-13-L3-05"] = 0.0 + (94.0 - 100.4) / kc           # θ = θ1 + (p − p1)/k = −17,49 °C (Δθ = 1,0/0,366 = 2,73 °C)
 print(json.dumps({key: round(v, 6) for key, v in a.items()}))

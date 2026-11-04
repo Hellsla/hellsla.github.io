@@ -39,6 +39,75 @@
       "answer": 0.89,
       "unit": "%",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-13-L1-06",
+      "level": 1,
+      "text": "What does the temperature $0\\,\\text{K}$, that is, absolute zero, mean?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The lowest possible temperature, because the average kinetic energy of the particles is then at its smallest.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The freezing point of water, because the zero of the kelvin scale has been chosen at the melting point of ice.",
+          "feedback": "Wrong: the freezing point of water is $0\\,{}^\\circ\\text{C} = 273.15\\,\\text{K}$. The kelvin scale starts much lower, at absolute zero."
+        },
+        {
+          "text": "The temperature at which all gases condense into liquids, because the particles attract each other.",
+          "feedback": "Wrong: gases condense at different temperatures, and absolute zero is the same for all substances, $-273.15\\,{}^\\circ\\text{C}$."
+        },
+        {
+          "text": "The lowest possible temperature, because the average kinetic energy of the particles is then at its smallest.",
+          "correct": true,
+          "feedback": "Correct: there is no lower temperature, because the average kinetic energy of the particles is then at its minimum."
+        },
+        {
+          "text": "The temperature at which the particles stop completely, because all energy has been removed from them.",
+          "feedback": "Wrong: at absolute zero the energy of the particles is the smallest possible, but the motion does not stop completely."
+        }
+      ]
+    },
+    {
+      "id": "fy3-13-L1-07",
+      "level": 1,
+      "text": "Liquid nitrogen boils at normal pressure at the temperature $-195.8\\,{}^\\circ\\text{C}$ (table value). Convert the temperature to kelvins.",
+      "answer": 77.4,
+      "unit": "K",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-13-L1-08",
+      "level": 1,
+      "text": "The pressure of a gas was measured in the temperature range $20\\ldots 100\\,{}^\\circ\\text{C}$, and the line fitted to the points was extended to $p = 0$. What does extrapolation mean here?",
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "answer": "Extending the line beyond the measured range, because the pressure is assumed to behave in the same way there.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Reading a value between two measured points, because the pressure changes steadily between the points.",
+          "feedback": "Wrong: this is interpolation. In extrapolation you go outside the measured range."
+        },
+        {
+          "text": "Repeating the measurement many times, because the mean is more accurate than a single measurement.",
+          "feedback": "Wrong: repeating reduces the random error of the mean, but it is not extending a line beyond the measurement range."
+        },
+        {
+          "text": "Drawing the line through every point, because every point must lie exactly on the line.",
+          "feedback": "Wrong: because of measurement uncertainty the points do not usually lie exactly on the line. The line passes through the middle of the set of points."
+        },
+        {
+          "text": "Extending the line beyond the measured range, because the pressure is assumed to behave in the same way there.",
+          "correct": true,
+          "feedback": "Correct: the extrapolated value is an estimate that assumes the model also holds outside the measured range."
+        }
+      ]
     }
   ],
   "level2": [
@@ -73,6 +142,128 @@
       "answer": 18,
       "unit": "%",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-13-L2-05",
+      "level": 2,
+      "kind": [
+        "data"
+      ],
+      "text": "Example data: the pressure of the air in a sealed flask was measured at five temperatures. The uncertainty of the pressure reading is $\\pm 1.0\\,\\text{kPa}$. The best-fit line passes through the centre point $(\\theta_{\\text{av}}, p_{\\text{av}})$ of the points, and its slope, calculated by computer, is $0.363\\,\\tfrac{\\text{kPa}}{{}^\\circ\\text{C}}$.\n\na) Calculate the centre point $(\\theta_{\\text{av}}, p_{\\text{av}})$ of the table.\n\nb) Calculate the temperature $\\theta_0$ at zero pressure for the fitted line.\n\nThe answer field takes the result of part b) in degrees Celsius.",
+      "answer": -274,
+      "unit": "°C",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Pressure of the air in a sealed flask (example data)",
+        "columns": [
+          "$\\theta\\,({}^\\circ\\text{C})$",
+          "$p\\,(\\text{kPa})$"
+        ],
+        "rows": [
+          [
+            "10",
+            "103.4"
+          ],
+          [
+            "30",
+            "110.1"
+          ],
+          [
+            "50",
+            "118.2"
+          ],
+          [
+            "70",
+            "124.9"
+          ],
+          [
+            "90",
+            "132.3"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy3-13-L2-06",
+      "level": 2,
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "text": "Example data: two groups analyse the same pressure measurement of the air in a sealed flask. The uncertainty of the pressure reading is $\\pm 1.0\\,\\text{kPa}$. Group A fitted a line to all six points and obtained $-270\\,{}^\\circ\\text{C}$ for the temperature at zero pressure. Group B used only the two lowest temperatures, $20\\,{}^\\circ\\text{C}$ and $35\\,{}^\\circ\\text{C}$, and drew a line through them.\n\na) Calculate the temperature $\\theta_0$ at zero pressure for group B.\n\nb) Explain why group B's result differs from group A's result.\n\nThe answer field takes the result of part a) in degrees Celsius.",
+      "answer": -302,
+      "unit": "°C",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Pressure of the air in a sealed flask (example data)",
+        "columns": [
+          "$\\theta\\,({}^\\circ\\text{C})$",
+          "$p\\,(\\text{kPa})$"
+        ],
+        "rows": [
+          [
+            "20",
+            "107.4"
+          ],
+          [
+            "35",
+            "112.4"
+          ],
+          [
+            "50",
+            "118.0"
+          ],
+          [
+            "65",
+            "124.1"
+          ],
+          [
+            "80",
+            "129.1"
+          ],
+          [
+            "95",
+            "135.0"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy3-13-L2-07",
+      "level": 2,
+      "kind": [
+        "error",
+        "data"
+      ],
+      "text": "Example data: a group heated air sealed in a flask and measured the pressure at four temperatures. The uncertainty of the pressure reading is $\\pm 0.5\\,\\text{kPa}$. The group suspects that the stopper of the flask leaks. The group drew a line through the first and last points of the table and extended it to $p = 0$.\n\na) Calculate the temperature $\\theta_0$ at zero pressure obtained by the group.\n\nb) Does the table support the suspicion? Justify your answer using the slopes and explain why a leak distorts the result.\n\nThe answer field takes the result of part a) in degrees Celsius.",
+      "answer": -370,
+      "unit": "°C",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Pressure of the air in a leaking flask (example data)",
+        "columns": [
+          "$\\theta\\,({}^\\circ\\text{C})$",
+          "$p\\,(\\text{kPa})$"
+        ],
+        "rows": [
+          [
+            "20",
+            "104.0"
+          ],
+          [
+            "40",
+            "110.6"
+          ],
+          [
+            "60",
+            "116.0"
+          ],
+          [
+            "80",
+            "120.0"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -99,6 +290,90 @@
       "answer": 1.86,
       "unit": "kertaa",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-13-L3-04",
+      "level": 3,
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "text": "Example data: two groups determined absolute zero from the pressure of a sealed gas. Each measured the pressure at two temperatures, and the uncertainty of the pressure is $\\pm 1.0\\,\\text{kPa}$ in both; the uncertainty of the temperature is ignored. The steepest limit line passes through the lower end of the uncertainty bar of the lower point and the upper end of the uncertainty bar of the upper point, the shallowest the other way round.\n\na) For each series, calculate the temperature at zero pressure of the steepest and the shallowest limit line and use them to find the uncertainty $\\Delta\\theta_0$.\n\nb) Based on your calculations, deduce how the width of the measurement range affects the uncertainty, and check whether the result of each series is consistent with the value $-273.15\\,{}^\\circ\\text{C}$.\n\nThe answer field takes the uncertainty $\\Delta\\theta_0$ of series B from part a) in degrees Celsius.",
+      "answer": 10.7,
+      "unit": "°C",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Two measurement series of the same gas (example data)",
+        "columns": [
+          "Series",
+          "$\\theta\\,({}^\\circ\\text{C})$",
+          "$p\\,(\\text{kPa})$"
+        ],
+        "rows": [
+          [
+            "A",
+            "25",
+            "108.0"
+          ],
+          [
+            "A",
+            "85",
+            "130.0"
+          ],
+          [
+            "B",
+            "25",
+            "108.0"
+          ],
+          [
+            "B",
+            "225",
+            "181.5"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy3-13-L3-05",
+      "level": 3,
+      "kind": [
+        "model",
+        "data",
+        "reasoning"
+      ],
+      "text": "Example data: the pressure of the air in a sealed flask was measured at five temperatures in order to calibrate a gas thermometer. The flask was put in a freezer, and its pressure was read as $94.0\\,\\text{kPa}$. The uncertainty of the pressure reading is $\\pm 1.0\\,\\text{kPa}$. Assume that the pressure is a linear function of temperature also outside the range of the table.\n\na) Determine the temperature $\\theta$ of the freezer using a calibration line whose slope is calculated from the first and last points of the table.\n\nb) Calculate the uncertainty of the temperature caused by the uncertainty $\\pm 1.0\\,\\text{kPa}$ of the pressure reading.\n\nc) Justify why the result is extrapolation and why it is nevertheless more reliable than determining absolute zero with the same line.\n\nThe answer field takes the result of part a) in degrees Celsius.",
+      "answer": -17.5,
+      "unit": "°C",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Pressure of the air in a calibration flask (example data)",
+        "columns": [
+          "$\\theta\\,({}^\\circ\\text{C})$",
+          "$p\\,(\\text{kPa})$"
+        ],
+        "rows": [
+          [
+            "0",
+            "100.4"
+          ],
+          [
+            "25",
+            "109.7"
+          ],
+          [
+            "50",
+            "118.6"
+          ],
+          [
+            "75",
+            "127.9"
+          ],
+          [
+            "100",
+            "137.0"
+          ]
+        ]
+      }
     }
   ]
 }

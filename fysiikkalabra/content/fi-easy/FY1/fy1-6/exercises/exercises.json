@@ -39,6 +39,77 @@
       "answer": 22.26,
       "unit": "m/s",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy1-6-L1-06",
+      "level": 1,
+      "text": "Astronautti pudottaa Kuun pinnalla yhtä aikaa samalta korkeudelta levosta vasaran ja höyhenen. Kuussa ei ole ilmakehää eli ilmaa. Mitä tapahtuu?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Vasara ja höyhen osuvat maahan yhtä aikaa.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Vasara ja höyhen osuvat maahan yhtä aikaa.",
+          "feedback": "Oikein. Kun ilmanvastusta ei ole, kaikilla kappaleilla on sama putoamiskiihtyvyys. Massalla ei ole väliä. Molempien nopeus on $v = g\\,t$, joten ne putoavat yhtä nopeasti.",
+          "correct": true
+        },
+        {
+          "text": "Vasara osuu maahan ensin, koska se on raskaampi.",
+          "feedback": "Raskaampi kappale ei putoa nopeammin. Arjessa näyttää toisin vain siksi, että ilma hidastaa eniten kevyttä ja leveää kappaletta. Kuussa ilmaa ei ole."
+        },
+        {
+          "text": "Höyhen osuu maahan ensin, koska se on kevyempi.",
+          "feedback": "Massa ei vaikuta putoamiskiihtyvyyteen. Kevyt kappale putoaisi hitaammin vain ilmassa. Kuussa ei ole ilmaa, joka hidastaisi sitä."
+        },
+        {
+          "text": "Kumpikaan ei putoa, koska Kuussa ei ole ilmaa.",
+          "feedback": "Kuun pinnalla putoamiskiihtyvyys on $1{,}62\\,\\text{m/s}^2$ riippumatta ilmasta. Kappaleet siis putoavat. Ilman puute poistaa vain ilmanvastuksen."
+        }
+      ]
+    },
+    {
+      "id": "fy1-6-L1-07",
+      "level": 1,
+      "text": "Vapaasti putoavan kappaleen $(t, v)$-kuvaaja on suora, joka kulkee origon kautta. Suoran kulmakerroin on $9{,}8\\,\\text{m/s}^2$. Mitä kulmakerroin kertoo?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Nopeus kasvaa joka sekunti $9{,}8\\,\\text{m/s}$.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Nopeus kasvaa joka sekunti $9{,}8\\,\\text{m/s}$.",
+          "feedback": "Oikein. Kulmakerroin $\\dfrac{\\Delta v}{\\Delta t}$ kertoo, kuinka paljon nopeus muuttuu yhdessä sekunnissa. Yksikkö $\\text{m/s}^2$ tarkoittaa $\\text{m/s}$ sekunnissa.",
+          "correct": true
+        },
+        {
+          "text": "Kappaleen nopeus on koko ajan $9{,}8\\,\\text{m/s}$.",
+          "feedback": "Nopeus ei ole vakio vaan kasvaa. Sen antaa $v = g\\,t$. Luku $9{,}8\\,\\text{m/s}^2$ kertoo, kuinka paljon nopeus kasvaa sekunnissa. Se ei ole itse nopeus."
+        },
+        {
+          "text": "Kappale putoaa joka sekunti $9{,}8\\,\\text{m}$ lisää.",
+          "feedback": "Kulmakertoimen yksikkö on $\\text{m/s}^2$, ei metri. Se kertoo nopeuden muutoksen, ei kuljettua matkaa. Matka kasvaa joka sekunti yhä enemmän, koska nopeus kasvaa."
+        },
+        {
+          "text": "Kappaleen nopeus on $9{,}8\\,\\text{m/s}$ vasta sekunnin kuluttua, ja sitä ennen se on nolla.",
+          "feedback": "Nopeus kasvaa tasaisesti heti pudotuksen alusta. Se on esimerkiksi $4{,}9\\,\\text{m/s}$ puolen sekunnin kuluttua. Suora alkaa origosta."
+        }
+      ]
+    },
+    {
+      "id": "fy1-6-L1-08",
+      "level": 1,
+      "text": "Putoamiskiihtyvyys on Maan pinnalla $9{,}81\\,\\text{m/s}^2$. Vapaasti putoavan kappaleen nopeus kasvaa siis joka sekunti $9{,}81\\,\\text{m/s}$. Kuinka monta $\\text{km/h}$ nopeus kasvaa joka sekunti?",
+      "kind": [
+        "model"
+      ],
+      "answer": 35.316,
+      "unit": "km/h",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -74,6 +145,129 @@
       "answer": 9.8,
       "unit": "m/s²",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy1-6-L2-05",
+      "level": 2,
+      "text": "Valoporttimittauksessa mitattiin pienen kappaleen nopeus $v$ eri hetkillä $t$ pudotuksen alusta. Kappale päästettiin putoamaan levosta. Piirrä mittauspisteistä $(t, v)$-kuvaaja. Sovita pisteisiin suora ja määritä sen kulmakerroin. Mikä on putoamiskiihtyvyys $g$ mittauksen mukaan? Vertaa tulosta taulukkoarvoon $9{,}81\\,\\text{m/s}^2$.",
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "answer": 9.74,
+      "unit": "m/s²",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Putoavan kappaleen nopeus ajan funktiona",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$v\\,(\\text{m/s})$"
+        ],
+        "rows": [
+          [
+            "0.10",
+            "0.95"
+          ],
+          [
+            "0.20",
+            "2.03"
+          ],
+          [
+            "0.30",
+            "2.91"
+          ],
+          [
+            "0.40",
+            "3.88"
+          ],
+          [
+            "0.50",
+            "4.94"
+          ],
+          [
+            "0.60",
+            "5.83"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy1-6-L2-06",
+      "level": 2,
+      "text": "Kappale päästettiin putoamaan levosta. Mittaus aloitettiin vasta hetkellä $t = 0$, kun kappale oli jo ehtinyt pudota hetken. Nopeus mitattiin eri hetkinä. Piirrä mittauspisteistä $(t, v)$-kuvaaja ja sovita pisteisiin suora. Suora ei kulje origon kautta. Kuinka monta sekuntia ennen mittauksen alkua kappale päästettiin putoamaan? Selitä, mitä suoran ja $v$-akselin leikkauskohta kertoo.",
+      "kind": [
+        "data",
+        "graph",
+        "reasoning"
+      ],
+      "answer": 0.2,
+      "unit": "s",
+      "tolerance": 0.1,
+      "data": {
+        "caption": "Putoavan kappaleen nopeus mittauksen alusta",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$v\\,(\\text{m/s})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "1.97"
+          ],
+          [
+            "0.1",
+            "2.93"
+          ],
+          [
+            "0.2",
+            "3.95"
+          ],
+          [
+            "0.3",
+            "4.89"
+          ],
+          [
+            "0.4",
+            "5.90"
+          ],
+          [
+            "0.5",
+            "6.86"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy1-6-L2-07",
+      "level": 2,
+      "text": "Oppilaat mittaavat putoamiskiihtyvyyden kahdella valoportilla. Portit ovat pystysuunnassa toistensa alapuolella. Levosta pudotetun $5{,}0\\,\\text{cm}$ pitkän kappaleen nopeus saadaan kummassakin portissa kappaleen pituudesta ja ajasta $\\Delta t_\\text{valo}$, jonka valo on katkennut. Pudotushetkeä ei tunneta tarkasti. Kello mittaa hetket $t$, jolloin valon katkos on puolivälissä eli kappaleen keskikohta on portin kohdalla. Laske putoamiskiihtyvyys taulukon mittauksista. Selitä, miksi $g$ saadaan kahden portin nopeuksista, vaikka pudotushetki ei ole tiedossa.",
+      "kind": [
+        "data",
+        "model"
+      ],
+      "answer": 9.82,
+      "unit": "m/s²",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Kahden valoportin mittaus",
+        "columns": [
+          "Portti",
+          "$\\Delta t_\\text{valo}\\,(\\text{ms})$",
+          "$t\\,(\\text{s})$"
+        ],
+        "rows": [
+          [
+            "1",
+            "25.0",
+            "0.320"
+          ],
+          [
+            "2",
+            "11.1",
+            "0.575"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -100,6 +294,98 @@
       "answer": 4.43,
       "unit": "m/s",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy1-6-L3-04",
+      "level": 3,
+      "text": "Kahden kappaleen, pienen pallon ja suodatinpaperin, nopeus mitattiin videolta hetkinä $t$ pudotuksen alusta. Kappaleet päästettiin putoamaan levosta ilmassa. Piirrä molempien $(t, v)$-kuvaajat samaan koordinaatistoon. Missä kohdassa ja miksi malli $v = g\\,t$ lakkaa pätemästä suodatinpaperille mutta ei vielä pallolle? Kuinka monta prosenttia suodatinpaperin nopeus on pienempi kuin mallin antama nopeus hetkellä $0{,}40\\,\\text{s}$?",
+      "kind": [
+        "data",
+        "graph",
+        "model"
+      ],
+      "answer": 62,
+      "unit": "%",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Pallon ja suodatinpaperin nopeus ilmassa",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$v_\\text{pallo}\\,(\\text{m/s})$",
+          "$v_\\text{paperi}\\,(\\text{m/s})$"
+        ],
+        "rows": [
+          [
+            "0.05",
+            "0.49",
+            "0.49"
+          ],
+          [
+            "0.10",
+            "0.98",
+            "0.93"
+          ],
+          [
+            "0.15",
+            "1.48",
+            "1.21"
+          ],
+          [
+            "0.20",
+            "1.96",
+            "1.38"
+          ],
+          [
+            "0.30",
+            "2.94",
+            "1.46"
+          ],
+          [
+            "0.40",
+            "3.93",
+            "1.49"
+          ],
+          [
+            "0.60",
+            "5.88",
+            "1.50"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy1-6-L3-05",
+      "level": 3,
+      "text": "Oppilas pudotti kappaleen levosta ja mittasi sen nopeuden kolmella kellon lukemalla $t$. Kello oli käynnissä jo ennen pudotusta, mutta oppilas ei tiennyt, kuinka kauan. Oppilas laski jokaisesta rivistä osamäärän $\\dfrac{v}{t}$ ja sai arvot $7{,}5\\,\\text{m/s}^2$, $8{,}9\\,\\text{m/s}^2$ ja $9{,}2\\,\\text{m/s}^2$. Putoamiskiihtyvyys on kuitenkin vakio. Selitä, miksi osamäärät eroavat toisistaan ja miksi ne ovat liian pieniä. Laske $g$ toisella tavalla niin, että kellon nollakohta ei vaikuta tulokseen. Perustele menetelmä. Kuinka monta sekuntia ennen pudotusta kello oli käynnistetty?",
+      "kind": [
+        "data",
+        "reasoning",
+        "model"
+      ],
+      "answer": 0.15,
+      "unit": "s",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Putoavan kappaleen nopeus kellon lukemilla",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$v\\,(\\text{m/s})$"
+        ],
+        "rows": [
+          [
+            "0.65",
+            "4.9"
+          ],
+          [
+            "1.65",
+            "14.7"
+          ],
+          [
+            "2.65",
+            "24.5"
+          ]
+        ]
+      }
     }
   ]
 }

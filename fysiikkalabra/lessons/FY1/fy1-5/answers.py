@@ -29,6 +29,21 @@ a["fy1-5-L3-02"] = 2 * t_signal / 3600            # there and back = 149 702 s =
 # catch-up: first friend s1 = 1,5 t, second s2 = 4,5 (t − 40); equal when 1,5 t = 4,5 t − 180 -> t = 60 s
 t_meet = 4.5 * 40 / (4.5 - 1.5)
 a["fy1-5-L3-03"] = 1.5 * t_meet                   # s = 1,5 m/s · 60 s = 90 m
+# exercise-bank additions (L1-06..08, L2-05..07, L3-04..05)
+a["fy1-5-L1-07"] = 0.80 * 12                      # area of the rectangle in the (t, v) graph: s = v t = 0,80 m/s · 12 s = 9,6 m
+a["fy1-5-L1-08"] = 2400 / (16 * 60)               # 2,4 km = 2400 m, 16 min = 960 s; v = 2400 m / 960 s = 2,5 m/s
+pts5 = [(0, 1.2), (1, 2.7), (2, 3.9), (3, 5.5), (4, 6.7), (5, 8.3)]   # video analysis of the walker
+tm5, xm5 = sum(t for t, _ in pts5) / 6, sum(x for _, x in pts5) / 6
+k5 = sum((t - tm5) * (x - xm5) for t, x in pts5) / sum((t - tm5) ** 2 for t, _ in pts5)   # least-squares slope 1,403 m/s (by eye: 1,35…1,45)
+a["fy1-5-L2-05"] = round(xm5 + k5 * (12 - tm5))   # s(12 s) = 18,04 m -> 18 m (tolerance 0,04: 17,3…18,7; a by-eye line gives 17,5…18,5)
+v6 = (11 - 8.0) / 2.0                             # v = Δs / Δt = 3,0 m / 2,0 s = 1,5 m/s
+a["fy1-5-L2-06"] = 8.0 + v6 * 6.0                 # s = s0 + v t = 8,0 m + 1,5 m/s · 6,0 s = 17 m (not 33 m)
+t7 = 0.2 / 0.020                                  # 0,2 s / t <= 2,0 % -> t >= 10 s
+a["fy1-5-L2-07"] = 0.80 * t7                      # s = v t = 0,80 m/s · 10 s = 8,0 m
+# L3-04: speed changes at t = 10 s (3,0 m/s then 1,0 m/s); s(5 s) = 15 m, s(35 s) = 30 m + 1,0 m/s · 25 s = 55 m
+a["fy1-5-L3-04"] = (55.0 - 15.0) / (35.0 - 5.0)   # 40 m / 30 s = 1,33 m/s -> 1,3 m/s (the mean of 3,0 and 1,0 m/s would be 2,0 m/s, wrong)
+# L3-05: bullet filmed every 0,010 s, 3,0 m between frames
+a["fy1-5-L3-05"] = 3.0 / 0.010                    # v = 3,0 m / 0,010 s = 300 m/s
 # the worked example in lesson.md (not an exercise): Voyager 2 on 2026-11-05, 2922 days after 2018-11-05
 n_days = 2922                                     # 8 years with the leap days 2020 and 2024
 ds_au = V_VOY * n_days * DAY / AU                 # 15,341 km/s · 252 460 800 s / 149 597 870,7 km = 25,889 AU

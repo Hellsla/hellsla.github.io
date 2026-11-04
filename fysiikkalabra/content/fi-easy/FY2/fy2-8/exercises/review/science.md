@@ -1,11 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 12704897f4970fb1
+CONTENT-HASH: b4c6bc651f3acff0
+Mode: full
+Round: 1
 
 ## Blocking
 - none
 
+## Fixed
+- none needed (plain Finnish (selkosuomi) already matches the Finnish).
+
 ## Polish
-- none
+- Source wording: Finnish L1-06 distractor says the atmosphere warms the ground "alhaalta päin" (from below); fi-easy copies it. Both are wrong options, so no answer is affected; the Finnish could say "ylhäältä päin".
 
 ## Checked
-- Translation review against the reviewed Finnish source, all 12 exercises and solutions (fi-easy): same data, units, answers (72 kg, 2.5 kg, 220 g, 12 times, 1.2 kg, 460 t, 2.9 t, 24 000 kWh, 250 g/kWh, 740 g/kWh, 50 times, 4.1 times), tolerances, figure reference fy2-8/emissions and solution structure (same number of values in every section). Graph reading (second bar, 400-600 grid lines) and the L3-01 conclusion (coal about 10 % above the limit, within the uncertainty) match the Finnish. No Finnish words left; units as in the Finnish ("times" for kertaa). No edits needed. check_i18n: 0 errors.
+- All 8 new exercises (L1-06..08, L2-05..07, L3-04..05) in exercises.json and solutions.md against the reviewed Finnish: ids, answers (L1-08 480 kg, L2-05 2.3 ppm/a, L2-06 26 %, L3-04 458 ppm, L3-05 53 %), units, tolerances, correct flags, choice order and feedback, data table cells and every number are equal (scripted number comparison per solution section, decimal comma vs point normalised).
+- Recomputed: 40 000 kWh x 12 g/kWh = 480 kg; 34/15 = 2.27; 61 to 45 = 26.2 %; 1.1, 1.6, 2.2 ppm/a and 414 + 44 = 458 ppm (whole-data line 446 ppm); 52 220 t to 24 680 t = 52.7 %, full wind 61.9 %, difference 9.2 points; 820 g x 2.0 = 1640 g = 1.6 kg.
+- Decimal point in en JSON and LaTeX; decimal comma in fi-easy as in fi. No Finnish left in en.
+- Selkosuomi: short sentences, terms (päästökerroin, nielu, kulmakerroin, säätövoima) used as in the lesson.
+- check_i18n.py fi-easy: 0 errors for fy2-8 (errors listed are other chapters, fy2-5/fy2-6, being edited by other agents).

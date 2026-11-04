@@ -39,6 +39,58 @@
       "answer": 4.0,
       "unit": "kJ",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy2-4-L1-06",
+      "level": 1,
+      "text": "Keksijä väittää rakentaneensa laitteen, jonka hyötysuhde on $120\\,\\%$. Mitä väitteestä voi sanoa?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Väite on mahdoton, koska laite ei voi antaa hyötyenergiaa enempää kuin siihen otetaan.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Väite on mahdoton, koska laite ei voi antaa hyötyenergiaa enempää kuin siihen otetaan.",
+          "feedback": "Oikein: hyötyenergia on osa laitteeseen otetusta energiasta, joten $E_\\text{a} \\le E_\\text{o}$ ja hyötysuhde on enintään $100\\,\\%$. Todellisissa laitteissa se jää usein alle $100\\,\\%$.",
+          "correct": true
+        },
+        {
+          "text": "Väite on mahdollinen, jos laite on rakennettu erityisen huolellisesti.",
+          "feedback": "Huolellinenkin rakentaminen voi vain pienentää häviöitä. Hyötysuhde lähestyy arvoa $100\\,\\%$ mutta ei ylitä sitä, koska hyötyenergiaa ei voi olla enemmän kuin otettua energiaa."
+        },
+        {
+          "text": "Väite on mahdollinen, jos laite muuttaa osan energiasta uudeksi energiaksi.",
+          "feedback": "Energiaa ei synny eikä katoa, vaan se muuttuu muodosta toiseen. Jos laite antaisi enemmän energiaa kuin se ottaa, energiaa syntyisi tyhjästä, mikä on mahdotonta."
+        },
+        {
+          "text": "Väite on mahdollinen, jos laite käy pitkään, koska silloin hyötyenergia kasvaa.",
+          "feedback": "Käyntiaika ei muuta hyötysuhdetta: tasaisella teholla aika supistuu suhteesta $\\eta = \\dfrac{P_\\text{a} \\cdot t}{P_\\text{o} \\cdot t}$. Myös otettu energia kasvaa ajan mukana."
+        }
+      ]
+    },
+    {
+      "id": "fy2-4-L1-07",
+      "level": 1,
+      "text": "Akkuporakone ottaa akusta energiaa $36\\,\\text{kJ}$ ja antaa siitä liike-energiaa $27\\,\\text{kJ}$. Kuinka paljon energiaa muuttuu häviöiksi? Anna vastaus kilojouleina.",
+      "kind": [
+        "reasoning"
+      ],
+      "answer": 9.0,
+      "unit": "kJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-4-L1-08",
+      "level": 1,
+      "text": "Generaattorin hyötysuhde on $90\\,\\%$, ja se antaa sähkötehoa $180\\,\\text{kW}$. Kuinka suuren tehon generaattori ottaa turbiinilta? Anna vastaus kilowatteina.",
+      "kind": [
+        "reasoning"
+      ],
+      "answer": 200,
+      "unit": "kW",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -73,6 +125,126 @@
       "answer": 45,
       "unit": "kW",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy2-4-L2-05",
+      "level": 2,
+      "text": "Esimerkkimittauksessa mitattiin eri lamppujen sähköteho $P_\\text{o}$ ja niiden antama valoteho $P_\\text{a}$. Laske jokaisen lampun hyötysuhde. Kuinka moninkertainen ledilampun hyötysuhde on halogeenilampun hyötysuhteeseen verrattuna?",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 4.3,
+      "unit": "kertaa",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Esimerkkimittaus: lamppujen sähköteho ja valoteho",
+        "columns": [
+          "Lamppu",
+          "$P_\\text{o}\\,(\\text{W})$",
+          "$P_\\text{a}\\,(\\text{W})$"
+        ],
+        "rows": [
+          [
+            "Hehkulamppu",
+            "60",
+            "3.0"
+          ],
+          [
+            "Halogeenilamppu",
+            "40",
+            "2.8"
+          ],
+          [
+            "Loistelamppu",
+            "18",
+            "3.6"
+          ],
+          [
+            "Ledilamppu",
+            "9.0",
+            "2.7"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy2-4-L2-06",
+      "level": 2,
+      "text": "Esimerkkimittauksessa sähkömoottorin käyntiä seurattiin $40\\,\\text{s}$ ajan. Sähkömittari näytti moottoriin otetun sähköenergian $E_\\text{o}$ ja anturi moottorin antaman liike-energian $E_\\text{a}$, kun moottori käy tasaisesti. Laske hyötysuhde jokaiselta nollasta poikkeavalta riviltä ja määritä niiden perusteella moottorin hyötysuhde prosentteina.",
+      "kind": [
+        "data",
+        "experiment"
+      ],
+      "answer": 79.17,
+      "unit": "%",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Esimerkkimittaus: moottorin ottama ja antama energia",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$E_\\text{o}\\,(\\text{kJ})$",
+          "$E_\\text{a}\\,(\\text{kJ})$"
+        ],
+        "rows": [
+          [
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "10",
+            "30",
+            "24"
+          ],
+          [
+            "20",
+            "61",
+            "48"
+          ],
+          [
+            "30",
+            "89",
+            "71"
+          ],
+          [
+            "40",
+            "120",
+            "95"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy2-4-L2-07",
+      "level": 2,
+      "text": "Moottori A ottaa tehon $2{,}0\\,\\text{kW}$ ja antaa hyötytehon $1{,}5\\,\\text{kW}$. Moottori B ottaa tehon $500\\,\\text{W}$ ja antaa hyötytehon $400\\,\\text{W}$. Mikä väite moottoreiden hyötysuhteista on oikein?",
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "answer": "Moottorin B hyötysuhde on suurempi: se muuttaa $80\\,\\%$ otetusta tehosta hyödyksi, moottori A vain $75\\,\\%$.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Moottorin B hyötysuhde on suurempi: se muuttaa $80\\,\\%$ otetusta tehosta hyödyksi, moottori A vain $75\\,\\%$.",
+          "feedback": "Oikein: $\\eta_\\text{B} = \\dfrac{400\\,\\text{W}}{500\\,\\text{W}} = 0{,}80$ ja $\\eta_\\text{A} = \\dfrac{1{,}5\\,\\text{kW}}{2{,}0\\,\\text{kW}} = 0{,}75$. Hyötysuhde vertaa hyötytehoa otettuun tehoon, ei kerro tehon suuruutta.",
+          "correct": true
+        },
+        {
+          "text": "Moottorin A hyötysuhde on suurempi, koska se antaa suuremman hyötytehon.",
+          "feedback": "Suurempi hyötyteho ei tarkoita suurempaa hyötysuhdetta. Hyötysuhde on hyötytehon osuus otetusta tehosta, ja A ottaa myös paljon enemmän tehoa."
+        },
+        {
+          "text": "Moottoreiden hyötysuhde on sama, koska kummankin häviöteho on $0{,}5\\,\\text{kW}$.",
+          "feedback": "Häviötehot ovat $2{,}0\\,\\text{kW} - 1{,}5\\,\\text{kW} = 0{,}5\\,\\text{kW}$ ja $500\\,\\text{W} - 400\\,\\text{W} = 100\\,\\text{W}$, eivät samat. Lisäksi hyötysuhteen ratkaisee häviön osuus otetusta tehosta, ei häviön suuruus."
+        },
+        {
+          "text": "Hyötysuhteita ei voi verrata, koska moottoreiden tehot ovat eri suuret.",
+          "feedback": "Hyötysuhde on suhdeluku, joten eri kokoisten laitteiden hyötysuhteet voi verrata. Juuri siksi suhdeluku on hyödyllinen."
+        }
+      ]
     }
   ],
   "level3": [
@@ -100,6 +272,66 @@
       "answer": 180,
       "unit": "J",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy2-4-L3-04",
+      "level": 3,
+      "text": "Sähköauto ottaa akusta energiaa $17\\,\\text{kWh}$ sadan kilometrin matkalla, ja sen moottorin ja voimansiirron yhteenlaskettu hyötysuhde on $90\\,\\%$. Bensiiniauto kuluttaa sadalla kilometrillä bensiiniä $6{,}0\\,\\textsf{l}$, ja bensiinin energiasisältö on $32\\,\\text{MJ/l}$. Bensiinimoottorin hyötysuhde on $25\\,\\%$.\n\nMuuta bensiiniauton tankista ottama energia kilowattitunneiksi ja laske, kuinka moninkertainen se on sähköauton akusta ottamaan energiaan verrattuna. Laske myös kummankin auton hyötyenergia sadalla kilometrillä ja perustele niiden avulla, miksi autojen ottamat energiat eroavat niin paljon. Tarkastelu koskee vain autojen omaa energiankäyttöä: sähkön ja bensiinin tuotantoa ei oteta huomioon.",
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "answer": 3.1,
+      "unit": "kertaa",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy2-4-L3-05",
+      "level": 3,
+      "text": "Esimerkkimittauksessa oppilas seurasi ledilampun energian muuttumista. Sähkömittari näytti lampun ottaman sähköenergian $E_\\text{o}$, ja lämpömittaus antoi lampusta ympäristöön siirtyneen lämpöenergian $E_\\text{h}$. Lamppu käy tasaisella teholla. Oppilas päätteli: ”Viimeisellä rivillä $\\eta = \\dfrac{E_\\text{h}}{E_\\text{o}} = \\dfrac{1510\\,\\text{J}}{2160\\,\\text{J}} = 0{,}70 = 70\\,\\%$, joten lampun hyötysuhde on $70\\,\\%$.”\n\nEtsi oppilaan virhe ja laske lampun oikea hyötysuhde prosentteina. Lamppu palaa kotona $3{,}0\\,\\text{h}$ vuorokaudessa koko vuoden ($365$ vuorokautta). Määritä taulukon avulla lampun ottama teho ja laske, kuinka suuri sähköenergia muuttuu vuodessa lämmöksi. Anna vastaus kilowattitunteina. Laske myös lämmöksi muuttuvan sähkön hinta, kun sähkön hinta on $0{,}20\\,\\text{€/kWh}$. Perustele, miksi oppilaan $70\\,\\%$ on silti hyödyllinen luku tähän laskuun.",
+      "kind": [
+        "data",
+        "model",
+        "error"
+      ],
+      "answer": 6.9,
+      "unit": "kWh",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Esimerkkimittaus: ledilampun ottama sähköenergia ja lämmöksi muuttunut energia",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$E_\\text{o}\\,(\\text{J})$",
+          "$E_\\text{h}\\,(\\text{J})$"
+        ],
+        "rows": [
+          [
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "60",
+            "540",
+            "380"
+          ],
+          [
+            "120",
+            "1080",
+            "750"
+          ],
+          [
+            "180",
+            "1620",
+            "1130"
+          ],
+          [
+            "240",
+            "2160",
+            "1510"
+          ]
+        ]
+      }
     }
   ]
 }

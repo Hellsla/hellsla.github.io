@@ -40,6 +40,58 @@
       "answer": 3.5,
       "unit": "m/s",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy1-5-L1-06",
+      "level": 1,
+      "text": "Kävelijän paikka $s$ on mitattu ajan $t$ funktiona, ja mittauspisteet asettuvat suoralle. Mitä suoran kulmakerroin $\\Delta s : \\Delta t$ kertoo?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Kävelijän nopeuden.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Kävelijän nopeuden.",
+          "feedback": "Oikein: kulmakerroin on paikan muutos jaettuna aikavälillä, ja tasaisessa liikkeessä se on nopeus $v$. Sen yksikkö on m/s.",
+          "correct": true
+        },
+        {
+          "text": "Kävelijän alkupaikan.",
+          "feedback": "Alkupaikka $s_0$ on suoran ja $s$-akselin leikkauskohta eli paikka hetkellä $t = 0$, ei kulmakerroin. Kulmakerroin kertoo, kuinka jyrkästi paikka muuttuu."
+        },
+        {
+          "text": "Kävelijän kulkeman kokonaismatkan.",
+          "feedback": "Kokonaismatka on suoran loppupään paikan ja alkupaikan erotus $\\Delta s$. Kulmakerroin saadaan, kun tämä jaetaan vielä aikavälillä $\\Delta t$."
+        },
+        {
+          "text": "Paikan $s$ ja ajan $t$ osamäärän $s : t$ jostakin yksittäisestä pisteestä.",
+          "feedback": "Osamäärä $s : t$ on nopeus vain, jos suora kulkee origon kautta. Jos $s_0 \\neq 0$, nopeus on paikan muutos aikaa kohti, $\\Delta s : \\Delta t$."
+        }
+      ]
+    },
+    {
+      "id": "fy1-5-L1-07",
+      "level": 1,
+      "text": "Tasaisesti liikkuvan kärryn nopeus on $(t, v)$-kuvaajassa vaakasuora viiva kohdassa $v = 0{,}80\\,\\text{m/s}$ aikavälillä $0\\,\\text{s} - 12\\,\\text{s}$. Viivan ja $t$-akselin väliin jäävän suorakulmion pinta-ala on vastaava kuljettu matka. Kuinka pitkän matkan kärry kulkee tänä aikana?",
+      "kind": [
+        "model"
+      ],
+      "answer": 9.6,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-5-L1-08",
+      "level": 1,
+      "text": "Pyöräilijä kulkee tasaisesti $2{,}4\\,\\text{km}$ ajassa $16\\,\\text{min}$. Mikä on hänen nopeutensa? Anna vastaus yksikössä m/s.",
+      "kind": [
+        "model"
+      ],
+      "answer": 2.5,
+      "unit": "m/s",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -74,6 +126,76 @@
       "answer": 1.7,
       "unit": "km",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy1-5-L2-05",
+      "level": 2,
+      "text": "Kävelijän liikettä kuvattiin videolle, ja hänen paikkansa $s$ lähtömerkistä mitattiin videoanalyysillä ajan $t$ funktiona. Kävelijä liikkuu tasaisesti, ja pisteet poikkeavat suorasta mittausepävarmuuden vuoksi. Piirrä pisteistä kuvaaja ja sovita pisteisiin suora. Määritä suoran kulmakertoimesta kävelijän nopeus ja ennusta sen avulla kävelijän paikka hetkellä $12\\,\\text{s}$. Kuinka monta metriä lähtömerkistä hän silloin on? Perustele, miksi ennuste on mallin arvo eikä mittaus.",
+      "kind": [
+        "data",
+        "graph",
+        "model"
+      ],
+      "answer": 18,
+      "unit": "m",
+      "tolerance": 0.04,
+      "data": {
+        "caption": "Kävelijän paikka ajan funktiona",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$s\\,(\\text{m})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "1.2"
+          ],
+          [
+            "1.0",
+            "2.7"
+          ],
+          [
+            "2.0",
+            "3.9"
+          ],
+          [
+            "3.0",
+            "5.5"
+          ],
+          [
+            "4.0",
+            "6.7"
+          ],
+          [
+            "5.0",
+            "8.3"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy1-5-L2-06",
+      "level": 2,
+      "text": "Kärry liikkuu tasaisesti radalla. Se on alussa kohdassa $s_0 = 8{,}0\\,\\text{m}$, ja hetkellä $2{,}0\\,\\text{s}$ se on kohdassa $11\\,\\text{m}$. Oppilas päättelee: ”Kun aika kolminkertaistuu $6{,}0\\,\\text{s}$:iin, paikka kolminkertaistuu, joten kärry on silloin kohdassa $33\\,\\text{m}$.” Etsi oppilaan virhe ja laske kärryn oikea paikka hetkellä $6{,}0\\,\\text{s}$.",
+      "kind": [
+        "error",
+        "model"
+      ],
+      "answer": 17,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-5-L2-07",
+      "level": 2,
+      "text": "Leluauto ajaa tasaisesti nopeudella noin $0{,}80\\,\\text{m/s}$. Auton kulkuaika mitataan käsin, ja ajanoton epävarmuus on noin $0{,}2\\,\\text{s}$ riippumatta mitattavan ajan pituudesta. Suunnittelet nopeuden mittauksen, jossa ajan suhteellisen epävarmuuden pitää olla enintään $2{,}0\\,\\%$. Oleta, että matka mitataan niin tarkasti, ettei sen epävarmuus vaikuta tulokseen. Kuinka pitkän matkan auton on vähintään kuljettava mittauksen aikana? Selitä, miksi pitkä matka parantaa mittausta.",
+      "kind": [
+        "experiment",
+        "model"
+      ],
+      "answer": 8.0,
+      "unit": "m",
+      "tolerance": 0.02
     }
   ],
   "level3": [
@@ -100,6 +222,95 @@
       "answer": 90,
       "unit": "m",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy1-5-L3-04",
+      "level": 3,
+      "text": "Pyöräilijän paikka $s$ radan alusta mitattiin videoanalyysillä ajan $t$ funktiona. Piirrä pisteistä kuvaaja. Pyöräilijän nopeus muuttuu kesken matkan, joten liikettä ei voi mallintaa yhdellä suoralla. Etsi taulukosta hetki, jolloin nopeus muuttuu, ja mallinna liike kahtena tasaisena osana. Laske mallin avulla pyöräilijän keskinopeus aikavälillä $5{,}0\\,\\text{s} - 35\\,\\text{s}$, kun keskinopeus on aikavälillä kuljettu matka jaettuna aikavälin pituudella. Hetkeä $35\\,\\text{s}$ ei ole taulukossa. Miksi keskinopeus ei ole osien nopeuksien keskiarvo?",
+      "kind": [
+        "data",
+        "graph",
+        "model"
+      ],
+      "answer": 1.3,
+      "unit": "m/s",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Pyöräilijän paikka ajan funktiona",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$s\\,(\\text{m})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "0.0"
+          ],
+          [
+            "5.0",
+            "15.0"
+          ],
+          [
+            "10.0",
+            "30.0"
+          ],
+          [
+            "15.0",
+            "35.0"
+          ],
+          [
+            "20.0",
+            "40.0"
+          ],
+          [
+            "30.0",
+            "50.0"
+          ],
+          [
+            "40.0",
+            "60.0"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy1-5-L3-05",
+      "level": 3,
+      "text": "Nopeaa luotia kuvataan kameralla, joka ottaa kuvan $0{,}010\\,\\text{s}$ välein. Kuvista mitattu luodin paikka $s$ lähtökohdasta on taulukossa. Luodin nopeus on tänä aikana vakio. Laske luodin nopeus. Piirretään $(t, s)$-kuvaaja, jonka vaaka-akselilla $1{,}0\\,\\text{s}$ on $10\\,\\text{cm}$ ja pystyakselilla $1{,}0\\,\\text{m}$ on $1{,}0\\,\\text{cm}$. Kuinka monta senttimetriä viiva nousee yhden kuvausvälin aikana ja kuinka pitkä on kuvausväli vaaka-akselilla? Perustele näiden avulla, miksi viiva näyttää lähes pystysuoralta mutta ei voi olla täsmälleen pystysuora.",
+      "kind": [
+        "data",
+        "graph",
+        "model",
+        "reasoning"
+      ],
+      "answer": 300,
+      "unit": "m/s",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Luodin paikka ajan funktiona",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$s\\,(\\text{m})$"
+        ],
+        "rows": [
+          [
+            "0.000",
+            "2.0"
+          ],
+          [
+            "0.010",
+            "5.0"
+          ],
+          [
+            "0.020",
+            "8.0"
+          ],
+          [
+            "0.030",
+            "11.0"
+          ]
+        ]
+      }
     }
   ]
 }

@@ -39,6 +39,58 @@
       "answer": 4.0,
       "unit": "kJ",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy2-4-L1-06",
+      "level": 1,
+      "text": "An inventor claims to have built a device with an efficiency of $120\\,\\%$. What can be said about the claim?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The claim is impossible, because a device cannot give more useful energy than is put into it.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The claim is impossible, because a device cannot give more useful energy than is put into it.",
+          "feedback": "Correct: the useful energy is part of the energy taken by the device, so $E_\\text{a} \\le E_\\text{o}$ and the efficiency is at most $100\\,\\%$. In real devices it is usually below $100\\,\\%$.",
+          "correct": true
+        },
+        {
+          "text": "The claim is possible if the device has been built especially carefully.",
+          "feedback": "Careful building can only reduce the losses. The efficiency approaches $100\\,\\%$ but does not exceed it, because there cannot be more useful energy than energy taken."
+        },
+        {
+          "text": "The claim is possible if the device turns some of the energy into new energy.",
+          "feedback": "Energy is neither created nor destroyed; it changes from one form to another. If a device gave more energy than it takes, energy would appear out of nothing, which is impossible."
+        },
+        {
+          "text": "The claim is possible if the device runs for a long time, because then the useful energy grows.",
+          "feedback": "The running time does not change the efficiency: at constant power the time cancels in the ratio $\\eta = \\dfrac{P_\\text{a} \\cdot t}{P_\\text{o} \\cdot t}$. The energy taken also grows with time."
+        }
+      ]
+    },
+    {
+      "id": "fy2-4-L1-07",
+      "level": 1,
+      "text": "A cordless drill takes energy of $36\\,\\text{kJ}$ from its battery and gives $27\\,\\text{kJ}$ of kinetic energy. How much energy becomes losses? Give the answer in kilojoules.",
+      "kind": [
+        "reasoning"
+      ],
+      "answer": 9.0,
+      "unit": "kJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-4-L1-08",
+      "level": 1,
+      "text": "The efficiency of a generator is $90\\,\\%$, and it gives an electrical power of $180\\,\\text{kW}$. How large a power does the generator take from the turbine? Give the answer in kilowatts.",
+      "kind": [
+        "reasoning"
+      ],
+      "answer": 200,
+      "unit": "kW",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -73,6 +125,126 @@
       "answer": 45,
       "unit": "kW",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy2-4-L2-05",
+      "level": 2,
+      "text": "In an example measurement, the electrical power $P_\\text{o}$ of different lamps and the light power $P_\\text{a}$ they give were measured. Calculate the efficiency of each lamp. How many times as large is the efficiency of the LED lamp compared with that of the halogen lamp?",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 4.3,
+      "unit": "times",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Example measurement: electrical power and light power of lamps",
+        "columns": [
+          "Lamp",
+          "$P_\\text{o}\\,(\\text{W})$",
+          "$P_\\text{a}\\,(\\text{W})$"
+        ],
+        "rows": [
+          [
+            "Incandescent lamp",
+            "60",
+            "3.0"
+          ],
+          [
+            "Halogen lamp",
+            "40",
+            "2.8"
+          ],
+          [
+            "Fluorescent lamp",
+            "18",
+            "3.6"
+          ],
+          [
+            "LED lamp",
+            "9.0",
+            "2.7"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy2-4-L2-06",
+      "level": 2,
+      "text": "In an example measurement, the running of an electric motor was followed for $40\\,\\text{s}$. An electricity meter showed the electrical energy $E_\\text{o}$ taken by the motor and a sensor the kinetic energy $E_\\text{a}$ given by the motor, while the motor runs steadily. Calculate the efficiency from each row that is not zero and, based on them, determine the efficiency of the motor as a percentage.",
+      "kind": [
+        "data",
+        "experiment"
+      ],
+      "answer": 79.17,
+      "unit": "%",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Example measurement: energy taken and given by the motor",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$E_\\text{o}\\,(\\text{kJ})$",
+          "$E_\\text{a}\\,(\\text{kJ})$"
+        ],
+        "rows": [
+          [
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "10",
+            "30",
+            "24"
+          ],
+          [
+            "20",
+            "61",
+            "48"
+          ],
+          [
+            "30",
+            "89",
+            "71"
+          ],
+          [
+            "40",
+            "120",
+            "95"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy2-4-L2-07",
+      "level": 2,
+      "text": "Motor A takes a power of $2.0\\,\\text{kW}$ and gives a useful power of $1.5\\,\\text{kW}$. Motor B takes a power of $500\\,\\text{W}$ and gives a useful power of $400\\,\\text{W}$. Which statement about the efficiencies of the motors is correct?",
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "answer": "The efficiency of motor B is greater: it turns $80\\,\\%$ of the power taken into useful power, motor A only $75\\,\\%$.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The efficiency of motor B is greater: it turns $80\\,\\%$ of the power taken into useful power, motor A only $75\\,\\%$.",
+          "feedback": "Correct: $\\eta_\\text{B} = \\dfrac{400\\,\\text{W}}{500\\,\\text{W}} = 0.80$ and $\\eta_\\text{A} = \\dfrac{1.5\\,\\text{kW}}{2.0\\,\\text{kW}} = 0.75$. Efficiency compares the useful power with the power taken; it does not tell how large the power is.",
+          "correct": true
+        },
+        {
+          "text": "The efficiency of motor A is greater, because it gives a greater useful power.",
+          "feedback": "A greater useful power does not mean a greater efficiency. Efficiency is the share of the useful power in the power taken, and A also takes much more power."
+        },
+        {
+          "text": "The efficiencies of the motors are the same, because the loss power of both is $0.5\\,\\text{kW}$.",
+          "feedback": "The loss powers are $2.0\\,\\text{kW} - 1.5\\,\\text{kW} = 0.5\\,\\text{kW}$ and $500\\,\\text{W} - 400\\,\\text{W} = 100\\,\\text{W}$, which are not the same. Besides, the efficiency is decided by the share of the loss in the power taken, not by the size of the loss."
+        },
+        {
+          "text": "The efficiencies cannot be compared, because the powers of the motors are different.",
+          "feedback": "Efficiency is a ratio, so the efficiencies of devices of different sizes can be compared. That is exactly why a ratio is useful."
+        }
+      ]
     }
   ],
   "level3": [
@@ -100,6 +272,66 @@
       "answer": 180,
       "unit": "J",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy2-4-L3-04",
+      "level": 3,
+      "text": "An electric car takes energy of $17\\,\\text{kWh}$ from its battery over a distance of one hundred kilometres, and the combined efficiency of its motor and transmission is $90\\,\\%$. A petrol car uses $6.0\\,\\textsf{l}$ of petrol per hundred kilometres, and the energy content of petrol is $32\\,\\text{MJ/l}$. The efficiency of the petrol engine is $25\\,\\%$.\n\nConvert the energy that the petrol car takes from its tank into kilowatt-hours and calculate how many times as large it is compared with the energy the electric car takes from its battery. Also calculate the useful energy of each car per hundred kilometres and use it to explain why the energies taken by the cars differ so much. The examination covers only the cars' own use of energy: the production of electricity and petrol is not taken into account.",
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "answer": 3.1,
+      "unit": "times",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy2-4-L3-05",
+      "level": 3,
+      "text": "In an example measurement, a student followed the changes of energy in an LED lamp. An electricity meter showed the electrical energy $E_\\text{o}$ taken by the lamp, and a heat measurement gave the thermal energy $E_\\text{h}$ transferred from the lamp to its surroundings. The lamp runs at constant power. The student reasoned: “On the last row $\\eta = \\dfrac{E_\\text{h}}{E_\\text{o}} = \\dfrac{1510\\,\\text{J}}{2160\\,\\text{J}} = 0.70 = 70\\,\\%$, so the efficiency of the lamp is $70\\,\\%$.”\n\nFind the student's error and calculate the correct efficiency of the lamp as a percentage. The lamp is on at home for $3.0\\,\\text{h}$ a day all year round ($365$ days). Using the table, determine the power taken by the lamp and calculate how large an amount of electrical energy becomes heat in a year. Give the answer in kilowatt-hours. Also calculate the cost of the electricity that becomes heat when the price of electricity is $0.20\\,\\text{€/kWh}$. Explain why the student's $70\\,\\%$ is still a useful number for this calculation.",
+      "kind": [
+        "data",
+        "model",
+        "error"
+      ],
+      "answer": 6.9,
+      "unit": "kWh",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Example measurement: electrical energy taken by an LED lamp and energy that became heat",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$E_\\text{o}\\,(\\text{J})$",
+          "$E_\\text{h}\\,(\\text{J})$"
+        ],
+        "rows": [
+          [
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "60",
+            "540",
+            "380"
+          ],
+          [
+            "120",
+            "1080",
+            "750"
+          ],
+          [
+            "180",
+            "1620",
+            "1130"
+          ],
+          [
+            "240",
+            "2160",
+            "1510"
+          ]
+        ]
+      }
     }
   ]
 }

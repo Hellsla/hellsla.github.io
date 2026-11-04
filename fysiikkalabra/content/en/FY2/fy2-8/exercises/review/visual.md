@@ -1,19 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: ef5656b572d016c7
+CONTENT-HASH: b8d6bdb7c47a6094
+Mode: full
+Round: 1
 
 ## Blocking
-(none) Round 1 Major resolved: L1-04, L3-02 and L3-03 now show "times" beside the input.
+- none
 
 ## Polish
-- [Minor] L3-03 solution, Answer — renders "Times, two significant figures like the consumptions..." (capital T, number moved into the box) — write "about 4.1 times, two significant figures..." so the line reads as a sentence.
-- [Minor] L3-02 solution, Answer — starts lower-case "the field area needed is 50 times..." — capitalise or start "About 50 times the area...".
-- [Minor] L3-01, L3-02 — the page bolds the data sentence and parenthetical with the question — put the data first and end with the question sentences.
-- [Minor] Solutions — "l" for litre (\textsf{l}) reads close to a capital I in "6.0 l", "MJ/l"; house rule, so only name the litre in words in the Given line.
+- none
 
 ## Checked
-- open-exercises-1280-3, -4 (L1-03, L1-04: unit "times", answer 12, solution blocks, aligned chains).
-- open-exercises-L3-1280-2, -3, -4 (L3-01 end, L3-02, L3-03: "times" unit, chains, Answer lines, Conclusion).
-- Round 1 captures of L1-05 and L2 not re-opened; nothing else in the diff, layout and maths unchanged and intact where seen.
+- en fy2-8-open-exercises-1280-6, -7, -8 (L1-06 greenhouse choices with feedback and solution, L1-07 climate vs weather, L1-08 input with kg unit and solution start): choices, feedback boxes, inline maths and the temperature values render correctly.
+- fy2-8-open-exercises-L2-1280-5 (L2-05 table with caption, columns t (a) and c (ppm), ppm/a unit next to input) and fi-easy fy2-8-open-exercises-L3-1280-5 (L3-04 table, a) to c) bold questions, Answer/Solution blocks with maths): layout fits at phone width, no overflow, no leftover Finnish in en.
+- Table headers short; units in column headers as in the Finnish. Remaining L2-06, L2-07, L3-05 follow the same components and were not found to differ from the Finnish text.
 
 ## Scores
 illustrations 4 · typography 4 · Finnish (English) 4 · accessibility 4

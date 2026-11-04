@@ -40,6 +40,52 @@
       "answer": 60,
       "unit": "kWh",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy2-7-L1-06",
+      "level": 1,
+      "text": "Why is electrical energy transmitted at a high voltage in the national grid?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "For the same power, a smaller current is enough, so the conductors heat up less and the loss becomes smaller.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "High voltage increases the energy produced by the power plant, so the losses do not matter.",
+          "feedback": "Voltage does not add energy. A transformer changes the voltage but does not produce energy, and the losses are reduced precisely because there would otherwise be a lot of them."
+        },
+        {
+          "text": "At a high voltage, energy is not converted into heat on the way at all, so no loss occurs.",
+          "feedback": "The loss becomes smaller but does not disappear completely: in the electricity grid, about $4\\,\\%$ of the sent energy is still lost, because the current always heats the conductors to some extent."
+        },
+        {
+          "text": "For the same power, a smaller current is enough, so the conductors heat up less and the loss becomes smaller.",
+          "feedback": "Correct: when the voltage is high, the same power is transmitted with a smaller current. A smaller current heats the conductors less, so less electrical energy is converted into heat in the transmission.",
+          "correct": true
+        },
+        {
+          "text": "High voltage makes electricity travel faster in the wire, so less heat has time to form.",
+          "feedback": "The cause of the loss is the heating of the conductor as current flows, not the travel time. High voltage helps because the current is smaller."
+        }
+      ]
+    },
+    {
+      "id": "fy2-7-L1-07",
+      "level": 1,
+      "text": "$250\\,\\text{MWh}$ of electrical energy is sent into a regional electricity grid in a day, and $238\\,\\text{MWh}$ reaches the users. What share of the sent energy is lost? Give your answer as a percentage.",
+      "answer": 4.8,
+      "unit": "%",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-7-L1-08",
+      "level": 1,
+      "text": "A power of $800\\,\\text{kW}$ is sent from a heating plant into a district heating pipe, and a power of $728\\,\\text{kW}$ reaches the property. How much power is lost in the pipe? Give your answer in kilowatts.",
+      "answer": 72,
+      "unit": "kW",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -74,6 +120,116 @@
       "answer": 1200,
       "unit": "kWh",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy2-7-L2-05",
+      "level": 2,
+      "text": "The table contains an example data set from the district heating network of a city district: the thermal energy fed into the network by the heating plant and the thermal energy that reached customers in four months.\n\na) Calculate the share of the energy fed into the network that is lost over the whole period. Give your answer as a percentage.\n\nb) Calculate the share lost in each month and state in which month it is greatest. Give a possible explanation.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 9.62,
+      "unit": "%",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Thermal energy fed into the district heating network and thermal energy arrived (example data set)",
+        "columns": [
+          "Month",
+          "$E_\\text{sent}\\,(\\text{MWh})$",
+          "$E_\\text{arrived}\\,(\\text{MWh})$"
+        ],
+        "rows": [
+          [
+            "January",
+            "820",
+            "745"
+          ],
+          [
+            "February",
+            "760",
+            "692"
+          ],
+          [
+            "March",
+            "640",
+            "577"
+          ],
+          [
+            "April",
+            "430",
+            "381"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy2-7-L2-06",
+      "level": 2,
+      "text": "The table contains an example data set: an electric power of $100\\,\\text{MW}$ is transmitted along the same power line, and the loss power is measured at different voltages.\n\na) Deduce from the table how the loss power changes when the voltage is doubled, and estimate the loss power at a voltage of $320\\,\\text{kV}$. Give your answer in megawatts.\n\nb) Explain briefly in writing why a high voltage reduces the loss.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 0.0625,
+      "unit": "MW",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Loss power of a power line at different voltages, transmitted power $100\\,\\text{MW}$ (example data set)",
+        "columns": [
+          "$U\\,(\\text{kV})$",
+          "$P_\\text{loss}\\,(\\text{MW})$"
+        ],
+        "rows": [
+          [
+            "20",
+            "16"
+          ],
+          [
+            "40",
+            "4.0"
+          ],
+          [
+            "80",
+            "1.0"
+          ],
+          [
+            "160",
+            "0.25"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy2-7-L2-07",
+      "level": 2,
+      "text": "A student writes: “Electricity travels along the wire at the speed of light, so no losses occur in the transmission of electricity.” Which of the following corrects the claim?",
+      "kind": [
+        "error",
+        "concept"
+      ],
+      "answer": "Electricity travels quickly, but the current heats the conductor and part of the energy is converted into heat.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The claim is correct, because energy that travels quickly does not have time to change into anything else on the way.",
+          "feedback": "The cause of the loss is not the duration of the transfer. When current flows in a conductor, the conductor heats up and part of the electrical energy is converted into heat, even though the transfer is fast."
+        },
+        {
+          "text": "Electricity travels slowly in the wire, so a large part of the electrical energy has time to break down on the way.",
+          "feedback": "The loss does not depend on how fast the electrical energy is transferred. It depends on how much the conductor heats up as current flows."
+        },
+        {
+          "text": "Part of the energy disappears completely on the way, even though electricity travels quickly in the wire.",
+          "feedback": "Energy does not disappear. The lost energy is converted into heat in the surroundings, but the user cannot make use of it."
+        },
+        {
+          "text": "Electricity travels quickly, but the current heats the conductor and part of the energy is converted into heat.",
+          "feedback": "Correct: the loss occurs when the current heats the conductors, and this heat does not reach the user. That is why less energy arrives than is sent.",
+          "correct": true
+        }
+      ]
     }
   ],
   "level3": [
@@ -100,6 +256,94 @@
       "answer": 66,
       "unit": "houses",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy2-7-L3-04",
+      "level": 3,
+      "text": "The table contains an example data set of the average power of the heat losses of a detached house during the heating season, by building part. The house gets its heat from a district heating network whose loss is $9.0\\,\\%$ of the sent energy. The heating season is $5000\\,\\text{h}$. Three improvements are considered: A) insulating the external walls reduces the loss power of the walls by $50\\,\\%$, B) replacing the windows reduces the loss power of the windows by $40\\,\\%$, and C) extra insulation of the upper floor reduces the loss power of the upper floor by $60\\,\\%$.\n\na) Calculate the thermal energy that each improvement saves in the house during the heating season and choose the improvement that saves the most.\n\nb) How much less energy must the heating plant feed into the network during the heating season when the house carries out this improvement? Give your answer in megawatt-hours.\n\nc) Justify your choice in writing, and explain why the saving of the heating plant is greater than the saving of the house.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 6.6,
+      "unit": "MWh",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Average power of the heat losses of the house during the heating season (example data set)",
+        "columns": [
+          "Building part",
+          "$P_\\text{loss}\\,(\\text{kW})$"
+        ],
+        "rows": [
+          [
+            "external walls",
+            "2.4"
+          ],
+          [
+            "upper floor",
+            "1.5"
+          ],
+          [
+            "windows",
+            "1.8"
+          ],
+          [
+            "ground floor",
+            "0.9"
+          ],
+          [
+            "ventilation",
+            "1.4"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy2-7-L3-05",
+      "level": 3,
+      "text": "The table contains an example data set of one day of a regional electricity grid: the average power fed into the grid and the share of the energy fed in during the period that is lost.\n\na) Calculate the energy fed into the grid during the day and the energy lost in it. What share of the energy fed in during the whole day is lost? Give your answer as a percentage.\n\nb) Compare the result with the loss of about $4\\,\\%$ in the Finnish electricity grid (Finnish Energy, 2024).\n\nc) In which period is the lost energy greatest? Explain in writing why the share of the loss increases when the grid is loaded more. Hint: when the current doubles, the loss power becomes about four times as great.",
+      "kind": [
+        "data",
+        "model"
+      ],
+      "answer": 4.1,
+      "unit": "%",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Power fed into the electricity grid and the share lost in periods of the day (example data set)",
+        "columns": [
+          "Period (time of day)",
+          "$t\\,(\\text{h})$",
+          "$P_\\text{sent}\\,(\\text{MW})$",
+          "$p\\,(\\%)$"
+        ],
+        "rows": [
+          [
+            "00–07",
+            "7",
+            "18",
+            "1.5"
+          ],
+          [
+            "07–12",
+            "5",
+            "42",
+            "3.5"
+          ],
+          [
+            "12–19",
+            "7",
+            "50",
+            "4.2"
+          ],
+          [
+            "19–24",
+            "5",
+            "66",
+            "5.5"
+          ]
+        ]
+      }
     }
   ]
 }

@@ -1,17 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: 4c9468244fe46189
+CONTENT-HASH: 72f39e958439a660
+
+Round 2 (round 1: FAIL, 2 Blocking).
 
 ## Blocking
-(none)
 
 ## Polish
-- solutions.md fy2-7-L1-02 "Vastaus" — says "noin 32 MWh" while exercises.json/answers.py hold 32,4 (tolerance 3 %); state "32,4 MWh, noin 32 MWh".
-- exercises.json fy2-7-L3-03 — "tasaisesti 150 kW" is stated, but a real network's loss varies with the season; the word "esimerkkitilanne" would mark it as an invented case, as the other tasks do.
+- solutions.md L3-05 Sijoitus (aligned block) — the losses are named $H_1 … H_4$, a symbol the lesson does not use. Write $E_{\text{häviö},1}$ … or say once "$H_i$ = jakson häviöenergia".
+- solutions.md L3-05 Vastaus — "häviö kasvaa virtaa nopeammin, joten osuus kasvaa" holds at a roughly constant line voltage. Add "kun jännite pysyy samana" (C as it stands, so not blocking).
+- exercises.json L2-07 — the distractor "Sähkö kulkee johdossa hitaasti…" is half true, because electrons drift slowly (it is the energy that travels fast). The feedback rightly rejects the reasoning. Optional: say "energia siirtyy nopeasti" in the correct option and the model answer.
 
 ## Checked
-- Hash at start and end 4c9468244fe46189.
-- Recomputed all 12 answers with own formulas in one script: 480; 32,4; 96,0; 120; 60; 150; 1500; 10,96 -> 11; 1200; 21,04 -> 21; 13,0; 65,7 -> 66. All match exercises.json and answers.py.
-- Loss share always taken of the energy/power sent; L2 tasks divide by η, not multiply; wrong-base remarks in solutions correct (120 MWh, 1152 kWh).
-- Units and conversions (GWh, TWh, kWh -> MWh, 8760 h) right; rounding reasons match the limiting datum.
-- L1-02 reads 9 % off the Sankey figure, which carries that number and is to scale.
-- Scope: only E_häviö, η, P = E : t; no later-course physics. Solutions complete and symbolic first; reasonableness checks are real checks.
+- Round-1 Blocking 1 (L3-05 c, causality): resolved. The model answer now says that the loss grows faster than the current, so it grows faster than the input. The task text gives the hint "kaksinkertainen virta → nelinkertainen häviöteho", so c) is fair.
+- Round-1 Blocking 2 (L2-05 b): resolved. The explanation now quotes the data, 75 → 49 MWh against 820 → 430 MWh, which is true (the shares are 9,15/8,95/9,84/11,4 %).
+- Round-1 Polish, all done: L2-05 now has 9,62 % with three significant figures, properly justified; L2-06 states the same line and the same 100 MW, and its added "virta puolittuu" is right at constant power; the L3-05 data now follow loss ∝ I² (share/P = 0,00083 for every period); the plan records why the omitted items were left out.
+- Recomputed L3-05 independently: E = 1016 MWh, loss 42,09 MWh, p = 4,14 % → 4,1 %; the evening share is 43 %; the plain mean is 3,7 %; the answer key is 4,1 (within tolerance).
+- Recomputed all new answers in one script (L1-07 4,8; L1-08 72; L2-05 9,62; L2-06 0,0625; L3-04 6,59; L3-05 4,14). All agree with answers.py and exercises.json.
+- L1-06: reordering the choices left exactly one correct option, and every feedback is unchanged and right. L2-07: exactly one correct option after the rewording, and every distractor is wrong.
+- Scope: still no P = RI² law, only the data-derived factor 4 given as a hint (C). Nothing from FY3.
+- The hash was unchanged at the start and at the end.

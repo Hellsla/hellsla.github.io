@@ -118,3 +118,79 @@
 **Substitution:** The sum is $8.24\,\text{cm} + 8.27\,\text{cm} + 8.25\,\text{cm} + 8.29\,\text{cm} + 8.25\,\text{cm} = 41.30\,\text{cm}$, so $\bar{x} = \dfrac{41.30\,\text{cm}}{5} = 8.26\,\text{cm}$ and $\Delta x_\text{sys} = 8.26\,\text{cm} - 8.00\,\text{cm} = 0.26\,\text{cm}$
 **Answer:** $0.26\,\text{cm}$, two significant figures; the difference is to two decimal places.
 **Reasonableness:** The estimate of random error $\dfrac{8.29\,\text{cm} - 8.24\,\text{cm}}{2} = 0.025\,\text{cm} \approx 0.03\,\text{cm}$ is about a tenth of the systematic error, so the error is dominated by the systematic part, for example a wrong zero. If $0.26\,\text{cm}$ is subtracted from all the readings, they are $7.98\,\text{cm}$–$8.03\,\text{cm}$, that is, close to the true value.
+
+## fy1-3-L1-06
+**Find:** which of the situations is a systematic error.
+**Principle:** A systematic error is almost the same in direction and size in every measurement, for example a wrong zero point of an instrument. A random error varies at random in either direction, and a gross error is a single mistake that shows up as a result differing from the others.
+**Model answer:** The systematic error is the wrong zero point of the thermometer: in ice water the thermometer reads about $1.5\,{}^\circ\text{C}$ too high every time, so all readings shift in the same direction. Repeating and averaging do not remove it, but comparison with a known value (ice water is $0\,{}^\circ\text{C}$) reveals it, and the readings are corrected by subtracting the error. The varying moment of stopping the clock and the varying viewing direction are random errors, which the mean reduces. The wrongly recorded number $34.2\,\text{s}$ is a gross error, which is checked and corrected.
+
+## fy1-3-L1-07
+**Given:** $x_1 = 5.41\,\text{cm}$, $x_2 = 5.47\,\text{cm}$, $x_3 = 5.39\,\text{cm}$, $x_4 = 5.44\,\text{cm}$, $x_5 = 5.43\,\text{cm}$; $n = 5$
+**Find:** the mean $\bar{x}$ in $\text{cm}$, rounded to the precision of the error estimate $\Delta x$
+**Principle:** The result is given in the form $\bar{x} \pm \Delta x$. The error estimate is rounded to one significant figure (two if the first figure is 1), and the mean is rounded to the same decimal place, because the figures after the decimal place of the error estimate are already uncertain.
+**Formula:** $\bar{x} = \dfrac{x_1 + x_2 + x_3 + x_4 + x_5}{n}$ and $\Delta x = \dfrac{x_\text{max} - x_\text{min}}{2}$
+**Conversions:** All lengths are in centimetres, so no conversions are needed.
+**Substitution:** The sum of the results is $5.41\,\text{cm} + 5.47\,\text{cm} + 5.39\,\text{cm} + 5.44\,\text{cm} + 5.43\,\text{cm} = 27.14\,\text{cm}$, so $\bar{x} = \dfrac{27.14\,\text{cm}}{5} = 5.428\,\text{cm}$ and $\Delta x = \dfrac{5.47\,\text{cm} - 5.39\,\text{cm}}{2} = 0.04\,\text{cm}$
+**Answer:** $5.43\,\text{cm}$, because the error estimate $0.04\,\text{cm}$ is a one-figure number at the hundredths place (the first figure is not 1). The result is $5.43\,\text{cm} \pm 0.04\,\text{cm}$.
+**Reasonableness:** The interval $5.43\,\text{cm} \pm 0.04\,\text{cm}$, that is $5.39\,\text{cm}$–$5.47\,\text{cm}$, covers all five results. The result $5.428\,\text{cm}$ would be too precise, because it would imply knowing the width to the thousandths, although the error estimate is in hundredths.
+
+## fy1-3-L1-08
+**Given:** the smallest scale division of the ruler $d_\text{r} = 1.0\,\text{mm}$, the smallest step of the calliper display $d_\text{c} = 0.01\,\text{mm}$
+**Find:** how many times smaller the uncertainty of the calliper reading $\Delta x_\text{c}$ is than that of the ruler $\Delta x_\text{r}$
+**Principle:** The uncertainty of each reading is estimated as half of the smallest reading interval: when reading a scale, the reading is placed between the marks, and a digital display rounds the reading to the nearest step. A smaller reading interval means a smaller reading uncertainty, so the calliper is the more precise instrument. This is an estimate of the reading; the total uncertainty of a measurement can also be affected by the instrument and the method.
+**Formula:** $\Delta x = \dfrac{d}{2}$ for both instruments, and the comparison is the ratio $\Delta x_\text{r} : \Delta x_\text{c}$
+**Conversions:** Both intervals are in millimetres, so no conversions are needed.
+**Substitution:** $\Delta x_\text{r} = \dfrac{1.0\,\text{mm}}{2} = 0.5\,\text{mm}$ and $\Delta x_\text{c} = \dfrac{0.01\,\text{mm}}{2} = 0.005\,\text{mm}$, so $0.5\,\text{mm} : 0.005\,\text{mm} = 100$
+**Answer:** $100$ times smaller, one significant figure like the step $0.01\,\text{mm}$. The reading uncertainty of the calliper is a hundredth of that of the ruler.
+**Reasonableness:** The ratio is the same as the ratio of the reading intervals $1.0\,\text{mm} : 0.01\,\text{mm} = 100$, because halving cancels out. With a ruler the width is read to half a millimetre and with a calliper to a hundredth of a millimetre, which matches everyday experience that a calliper is more precise.
+
+## fy1-3-L2-05
+**Given:** the eight times $t_{10}$ (10 revolutions) of the table: $18.12\,\text{s}$, $18.31\,\text{s}$, $18.05\,\text{s}$, $18.27\,\text{s}$, $18.19\,\text{s}$, $18.35\,\text{s}$, $18.10\,\text{s}$ and $18.22\,\text{s}$; $n = 8$
+**Find:** the mean time of one revolution $\bar{T}$ in the unit $\text{s}$
+**Principle:** A time taken by hand has a random error, so the result is the mean and the error estimate is half of the range. The time of one revolution is obtained from the time of ten revolutions by dividing both the mean and the error estimate by the exact number $10$.
+**Formula:** $\bar{t}_{10} = \dfrac{t_1 + \dots + t_8}{n}$, $\;\Delta t_{10} = \dfrac{t_\text{max} - t_\text{min}}{2}$, $\;\bar{T} = \dfrac{\bar{t}_{10}}{10}$ and $\Delta T = \dfrac{\Delta t_{10}}{10}$
+**Conversions:** Not needed: all times are in seconds.
+**Substitution:** The sum is $145.61\,\text{s}$, so $\bar{t}_{10} = \dfrac{145.61\,\text{s}}{8} = 18.20125\,\text{s}$ and $\Delta t_{10} = \dfrac{18.35\,\text{s} - 18.05\,\text{s}}{2} = 0.15\,\text{s}$. Thus $\bar{T} = \dfrac{18.20125\,\text{s}}{10} = 1.820125\,\text{s}$ and $\Delta T = \dfrac{0.15\,\text{s}}{10} = 0.015\,\text{s}$.
+**Answer:** $\bar{T} = 1.820\,\text{s}$, that is $1.82\,\text{s}$. The error estimate $0.015\,\text{s}$ is a two-figure number because the first figure is 1, so the result is rounded to thousandths: $T = 1.820\,\text{s} \pm 0.015\,\text{s}$.
+**Reasonableness:** The usual speed of a turntable is $33.33$ revolutions per minute, so one revolution takes $60\,\text{s} : 33.33 = 1.800\,\text{s}$. The measured $1.820\,\text{s} \pm 0.015\,\text{s}$ has the right order of magnitude, but $1.800\,\text{s}$ falls just outside that interval; the turntable may therefore be turning slightly slowly, or the timing may have a small systematic error. Timing ten revolutions reduces the relative share of the reaction time: the error estimate $0.15\,\text{s}$ is only about $0.8\,\%$ of the time $18.2\,\text{s}$.
+
+## fy1-3-L2-06
+**Given:** known volume $V_\text{true} = 50.0\,\text{ml}$; the results of group A $50.9\,\text{ml}$, $51.1\,\text{ml}$, $50.8\,\text{ml}$, $51.0\,\text{ml}$, $50.9\,\text{ml}$ and the results of group B $49.4\,\text{ml}$, $50.5\,\text{ml}$, $49.8\,\text{ml}$, $50.3\,\text{ml}$, $50.1\,\text{ml}$
+**Find:** the deviation of the mean of series A $\bar{V}_\text{A} - V_\text{true}$ with its sign in $\text{ml}$; which series is more repeatable and which is closer to the true value
+**Principle:** Repeatability tells about random error, and it is described by the half-range $\Delta V$. The difference between the mean and the known value tells about systematic error, which repeating does not reduce.
+**Formula:** $\bar{V} = \dfrac{V_1 + \dots + V_5}{n}$, $\;\Delta V = \dfrac{V_\text{max} - V_\text{min}}{2}$ and deviation $\bar{V}_\text{A} - V_\text{true}$
+**Conversions:** Not needed: all volumes are in millilitres.
+**Substitution:** $\bar{V}_\text{A} = \dfrac{254.7\,\text{ml}}{5} = 50.94\,\text{ml}$, so the deviation is $50.94\,\text{ml} - 50.0\,\text{ml} = 0.94\,\text{ml}$. In addition $\Delta V_\text{A} = \dfrac{51.1\,\text{ml} - 50.8\,\text{ml}}{2} = 0.15\,\text{ml}$ and $\Delta V_\text{B} = \dfrac{50.5\,\text{ml} - 49.4\,\text{ml}}{2} = 0.55\,\text{ml}$; $\bar{V}_\text{B} = 50.02\,\text{ml}$.
+**Answer:** $+0.94\,\text{ml}$. The readings are three-figure numbers, and since the error estimate $\Delta V_\text{A} = 0.15\,\text{ml}$ is to hundredths, the deviation is also given in hundredths. Series A is more repeatable ($0.15\,\text{ml} < 0.55\,\text{ml}$), but all its results are over $50\,\text{ml}$, so it has a systematic error. The mean of series B is closer to the true value, although its scatter is larger.
+**Reasonableness:** All of A's results are on the same side of the true value, and the deviation $0.94\,\text{ml}$ is a multiple of the scatter $\Delta V_\text{A} = 0.15\,\text{ml}$, so the deviation is probably not random. Good repeatability therefore does not guarantee a correct result.
+
+## fy1-3-L2-07
+**Given:** period $T \approx 1.5\,\text{s}$; uncertainty due to reaction time for the whole measured time $\Delta t = 0.2\,\text{s}$ (an estimate); required relative uncertainty at most $1\,\%$
+**Find:** the minimum number of swings $N$
+**Principle:** Reaction time acts once at the start and once at the end, whether the measured time is short or long. When $N$ swings are timed and the time is divided by $N$, the uncertainty is divided by $N$ as well.
+**Formula:** $\Delta T = \dfrac{\Delta t}{N}$ and the requirement $\dfrac{\Delta T}{T} \le 0.01$, so $\dfrac{\Delta t}{N \cdot T} \le 0.01$, from which $N \ge \dfrac{\Delta t}{0.01 \cdot T}$
+**Conversions:** Not needed: all times are in seconds, and $1\,\% = 0.01$.
+**Substitution:** $N \ge \dfrac{0.2\,\text{s}}{0.01 \cdot 1.5\,\text{s}} = 13.33\ldots$
+**Answer:** At least $14$ swings must be timed, because $N$ is an integer and $13$ is not enough ($0.2 : (13 \cdot 1.5) = 1.03\,\%$).
+**Reasonableness:** Check: $N = 14$ gives $\Delta T = 0.2\,\text{s} : 14 = 0.014\,\text{s}$ and $0.014\,\text{s} : 1.5\,\text{s} = 0.95\,\%$, so the requirement is met. Timing a single swing would give the uncertainty $0.2 : 1.5 = 13\,\%$.
+**Model answer:** The error from reaction time does not grow with the length of the time; it is about the same at the start and at the end. A long measurement is divided among many swings, so the share per swing becomes smaller. Repeating also reduces random error through the mean.
+
+## fy1-3-L3-04
+**Given:** the eight times of the table; the sixth result $2.97\,\text{s}$ differs from the others, and the laboratory notebook has a note at it that the clock was stopped late
+**Find:** may the result be left out, the mean $\bar{t}$ in $\text{s}$, and what would be done if no reason had been recorded
+**Principle:** A clearly deviating result is checked, but it is not removed merely because it deviates. It may be left out only if the reason for the gross error is found and the omission is justified and recorded. Here the notebook note gives the reason: the clock was stopped late. If no reason is found, the result stays in the data and the deviation is described in the uncertainty.
+**Formula:** $\bar{t} = \dfrac{t_1 + \dots + t_n}{n}$, where $n = 7$ remaining results
+**Conversions:** Not needed: all times are in seconds.
+**Substitution:** The sum of the results is $2.41\,\text{s} + 2.38\,\text{s} + 2.44\,\text{s} + 2.40\,\text{s} + 2.43\,\text{s} + 2.39\,\text{s} + 2.42\,\text{s} = 16.87\,\text{s}$, so $\bar{t} = \dfrac{16.87\,\text{s}}{7} = 2.41\,\text{s}$
+**Answer:** The result may be left out, because the notebook note gives the reason and the omission is recorded; the mean is $2.41\,\text{s}$, three significant figures like the measurements. The half-range is $(2.44\,\text{s} - 2.38\,\text{s}) : 2 = 0.03\,\text{s}$. If no reason had been found, the result would stay in the data: the mean would be $19.84\,\text{s} : 8 = 2.48\,\text{s}$ and the half-range $(2.97\,\text{s} - 2.38\,\text{s}) : 2 = 0.30\,\text{s}$, ten times as large. The result would be given with this uncertainty, the deviation would be mentioned, and it would be worth repeating the measurement.
+**Reasonableness:** With the deviating result the mean shifts by $0.07\,\text{s}$, which is over twice the half-range $0.03\,\text{s}$. The omission is based on the recorded reason and not on the size of the deviation $2.97\,\text{s} - 2.41\,\text{s} = 0.56\,\text{s}$: on the basis of the notebook note the result is a gross error.
+
+## fy1-3-L3-05
+**Given:** $\rho_\text{A} = 2.74\,\text{g/cm}^3$, $\Delta\rho_\text{A} = 0.05\,\text{g/cm}^3$; $\rho_\text{B} = 2.60\,\text{g/cm}^3$, $\Delta\rho_\text{B} = 0.05\,\text{g/cm}^3$; the student's conclusion: the difference is about $5\,\%$, so the results are consistent
+**Find:** the error in the student's reasoning, whether the results are consistent, and the gap $E$ between the uncertainty intervals in $\text{g/cm}^3$
+**Principle:** The consistency of two results is judged with uncertainty intervals, not with the percentage by which the results differ. If the intervals $\rho \pm \Delta\rho$ overlap, a difference cannot be shown; if they do not, the difference is greater than the stated uncertainties explain. The uncertainties are estimates, not certain limits.
+**Formula:** the gap is the difference between the difference of the results and the sum of the uncertainties: $E = |\rho_\text{A} - \rho_\text{B}| - (\Delta\rho_\text{A} + \Delta\rho_\text{B})$
+**Conversions:** Not needed: all values are in $\text{g/cm}^3$.
+**Substitution:** $E = |2.74\,\text{g/cm}^3 - 2.60\,\text{g/cm}^3| - (0.05\,\text{g/cm}^3 + 0.05\,\text{g/cm}^3) = 0.14\,\text{g/cm}^3 - 0.10\,\text{g/cm}^3 = 0.04\,\text{g/cm}^3$
+**Answer:** $0.04\,\text{g/cm}^3$, two decimal places like the results. The student's error is to judge consistency by the percentage difference: the intervals $2.69$–$2.79\,\text{g/cm}^3$ and $2.55$–$2.65\,\text{g/cm}^3$ do not overlap, and a gap of $0.04\,\text{g/cm}^3$ is left between them. According to these estimates the difference is greater than the stated uncertainties explain, so the results differ from each other; the cause is worth looking for, for example in a systematic error. The difference still does not prove either result wrong.
+**Reasonableness:** The uncertainties are about $2\,\%$ of the results, so the $5\,\%$ difference is over twice as large as they are. If B were $2.66\,\text{g/cm}^3$, the intervals would overlap although the results would still differ by $0.08\,\text{g/cm}^3$.

@@ -1,16 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 78183435714f0ad9
+CONTENT-HASH: b71da49ea5d729c4
+Round: 3
+
+The round-2 Blocking item is resolved. The L1-07 Mallivastaus (solutions.md:60) now names the options by their content: hydro is säätövoima, nuclear is perusvoima and wind is weather-dependent. This matches each option and its feedback whatever the shuffle order. The L3-05 table row was shortened to "Sääriippuvainen" / "Tasainen". This changes no data that the calculation uses. The Vastaus still states the physics ("ei säädettävissä nopeasti", "tarvitsee säätövoimaa").
 
 ## Blocking
 
 ## Polish
-- solutions.md fy2-6-L2-02 — Sijoitus gives 8750 h, Vastaus 8800 h (2 s.f.), answers.py/exercises.json 8750; consistent within tolerance, but use one value.
-- exercises.json fy2-6-L2-04 — "2,86 milj. kotitaloutta (Tilastokeskus)" and 5000 kWh household are example figures; label the 5000 kWh as an example in the task (it says "Esimerkkinä"; fine) and check the household count against the source.
-- exercises.json fy2-6-L3-03 — the "Pohdi" part has no answer field or rubric; fine as discussion, but say it is not graded.
+- exercises.json:398 (L3-05, last table row) — "Tehon säädettävyys: Tasainen" describes the output rather than how adjustable it is. Rename the row "Tuotannon luonne" or write "Tasainen perusvoima" in the solution only. Rendering: the table's scrollWidth is still 601 px in a 593 px box at 1280 px, so "Tasainen" touches the card edge and scrolls 8 px. At 360 px it scrolls inside the table, like the other data tables. The page does not scroll. That part is for the visual reviewer.
+- exercises.json L2-07 and the L3-05 table — the IPCC life-cycle factors are CO₂ equivalents, but the text says "hiilidioksidimäärä" (carried over, minor). Say "hiilidioksidiekvivalentti" or add a footnote.
 
 ## Checked
-- Recomputed all 14 answers independently: 420, 960, 38,4, 26,41, 14, 70,08, 8750, 2583, 2,803, 7,14, 2,727, 13,09 match answers.py and exercises.json.
-- Units and conversions (GWh/TWh/kWh, MW/GW) right; tolerances accept the rounded answers.
-- L1-04 reads 20,2 and 0,9 off fi-bars; sum over 79,9 correct.
-- L3-03 reasoning: equal annual energy, solar yields none on a January evening; correct.
-- Rounding reasons match limiting data; sanity checks real; no FY3 physics.
+- L1-07: there is exactly one correct option. The Mallivastaus has no position words and agrees with all three feedbacks and with the glossary (vesivoima is hyvin säädettävää, ydinvoima is perusvoimaa).
+- L3-05 recomputed without change: 289 080 and 9 460 800 MWh; 16,60 → 17 €/MWh (2,4 %, inside 0,03); nuclear 10,57; c) 3469 t and 113 530 t; ratio 32,7.
+- The round-2 Polish on the "kumpikin kelpaa" reason is resolved in substance: the Vastaus says directly that the emissions per energy are the same.
+- The round-2 numbers still stand for the unchanged tasks (L1-08 2800 h; L2-05 23 pp; L2-06; L2-07 1,6·10⁶ t; L3-04 32 %, 5,7 and 7,2 GW).
+- FY2 scope: only E = Pt, shares and factor × energy.

@@ -1,16 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: 4f4044aba1139dc3
+CONTENT-HASH: fa39dc3b4232eb3a
+Round: 4
 
 ## Blocking
 - none
 
 ## Polish
-- solutions.md fy2-5-L1-02 Kuvaajan lukeminen — "pylvään pää on myös vähän ennen ruudukon viivaa 50" is a second reading cue that duplicates the printed value 48; fine, or trim to the printed label.
-- exercises.json fy2-5-L1-02 — after the change the task only transcribes 48 from a figure that repeats the lesson table; acceptable at level 1, but the figure is needed (the text no longer gives H).
-- Earlier open polish (L3-02 "perustele laskusi", L1-05 concept note) is untouched by this diff.
+- exercises.json fy2-5-L3-05 vs L3-04 (carried over) — both level-3 tasks use the same numbers and idea (pellets 85 %, oil 90 %, wood 70 %); L3-05 adds the wood boiler and the ageing case. Fix if edited again: swap one for heating energy per fuel cost or per emission.
+- fy2-5-L1-06 (carried over) — correct option D is the shortest and the only one without an extra clause. Fix: lengthen it to about 100 characters, e.g. "Yhdestä kilogrammasta bensiiniä vapautuu palaessa energiaa $43\,\text{MJ}$, ja kahdesta kaksinkertainen määrä."
+- fy2-5-L3-04 and L3-05 — keep the word "esimerkkiaineisto" in both task texts (L3-05 has it).
+- docs/exercise-bank/FY2.md — the L2 "lämpöarvot ja CO2-päästökertoimet" table is not realised in fy2-5 (emissions belong to fy2-8); note it in the plan.
 
 ## Checked
-- Delta: L1-02 now shows figure fy2-5/lampoarvot and drops H from the text; the figure prints 48 at the maakaasu bar (bar length matches 48 on the gridlines).
-- Figure description gives maakaasu 48 and all other values to a reader who cannot see it, and does not give the answer 96 MJ.
-- Solution explains how to read the value and the unit MJ/kg before applying E = Hm; the unit note now explains why the result is in MJ.
-- answers.py comment and answer 96 unchanged and consistent; Finnish correct.
+- Round 3 -> 4 change (only solutions.md, L3-05 "Vastaus:" line, now "vastauslaatikkoon kohdan b) tulos $940\,\text{kg}$."): 940 kg is part b)'s result (3428,6 - 2491,3 = 937,2 kg -> 940 kg, two significant figures) and equals the answer-box value 940 (tolerance 0,01); wording is clear and consistent with a)-d) below it. Mode: delta.
+- Round 2 fix, L3-05: b) now says "Käytä a)-kohdan pyöristämättömiä massoja"; exact difference 3428,6 - 2491,3 = 937,2 kg, solution 938 kg, answer 940 kg with tolerance 0,01 (930,6-949,4) accepts both; closed.
+- L3-05 c) 2824 kg (0,85:0,75 = 1,13 check), d) oil 43:15 = 2,9 reasoning correct; answer lines a-d separate.
+- Round 1 items (L1-06 distractors, L3-05 answer split, correct option not B) remain fixed.
+- L2-05, L2-06, L2-07 numbers verified earlier (5,6 kg; unit-slip error analysis; 18,4 kW); levels fit.
+- L3-04 and L3-05 are multi-part modelling with explanation, YO style; level 3 fits.
+- Set is coherent: 8/7/5 tasks, no duplicates of old tasks, solutions have principle, formula, substitution, answer, sanity check.

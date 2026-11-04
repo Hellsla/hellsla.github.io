@@ -1,11 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 659f54eaa9fbae03
+CONTENT-HASH: c2b8f07b38a25845
 
 ## Blocking
 (none)
+
+## Fixed
+(none needed)
 
 ## Polish
 (none)
 
 ## Checked
-- Full plain-language review: sentences are short and each step has its own sentence; L3-02 explains the term nimellisteho in the task and the solution, L3-03 splits the charging time into its own sentence; difficulty ladder, teaching sequence and solution structure as in the Finnish; no answer is given away.
+- Selkosuomi holds: short sentences, one idea each ("Siksi", "Siis" link steps), common words; terms (teho, kilowattitunti, kulmakerroin = jyrkkyys, säätövoima) are explained in the task or solution.
+- Feedback names the misconception as in fi (kW vs kWh, teho vs kokonaisenergia, jyrkkyys vs korkeus).
+- Reasonableness checks stay real checks; levels and sequence match fi.
