@@ -1,22 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: 83920706a91f4df7
+CONTENT-HASH: 776976f81cfa9ae4
 
 ## Blocking
 
 ## Polish
-- exercises.json L2-01 (also check-2 and the example) — all three are Q = It with a time conversion, so L2-01 repeats the example's structure — make L2-01 ask for the current from a charge and a time in minutes or hours, or give mAh.
-- exercises.json L3-01 — still barely harder than L2-01 (t = Q/I with the same conversion; raised in round 1) — add a second step (two lamps with different currents, or a lamp plus a LED from the lesson's table).
-- exercises.json L3-02 — "Kuinka monta kertaa enemmän" with the answer 1,2 is ambiguous (1,2 times as much or 2,2 times) — "Kuinka moninkertaisen energian ..." or "Mikä on energioiden suhde E_1 : E_2?"
-- exercises.json L2-02 — the question is not last (the value of e follows it) — "Alkeisvaraus on e = ... Kuinka monta elektronia kulkee lampun läpi yhdessä sekunnissa?"
-- exercises.json L3-03 — the lesson never says that an ammeter goes in the loop; the task states it, so it is fair, but the lesson sentence suggested for the symbols section would make it learnable.
+- exercises.json L1-08 vs L2-02 — both are N = It/e; L1-08 (mA and min conversions) is now harder than the level 2 task L2-02 (0,16 A, 1 s, no conversion) — keep L1-08 but give it a plain unit (e.g. 0,25 A, 1,0 min), or make L2-02 the conversion task.
+- exercises.json L1-06, L1-07, L2-05 c), L2-06, L2-07 — five tasks hammer "virta ei kulu / suljettu silmukka" (L2-06 a/b repeats L1-07, L2-07 repeats L2-05 c)) — vary one: L2-07 could test the direction of the current or a series of two lamps instead.
+- solutions.md L3-04 Vastaus a) — "kahden merkitsevän numeron lähtötiedoilla tulos on noin 13 Wh" sits at the edge of the 4 % tolerance and confuses the answer — drop the clause, keep 12,5 Wh.
+- solutions.md L3-05 Vastaus c) — one sentence for a "selitä" part with no criteria — add "elektronit liikkuvat kaikkialla piirissä yhtä aikaa, joten energiaa siirtyy lamppuun heti, vaikka kukin elektroni etenee hitaasti".
+- exercises.json L2-06 b) — the answer says B shorts the battery ("paristo ja johto voivat lämmetä" appears only in the solution) — one sentence in the solution that this is a short circuit and never built with a real battery is enough; fine as is for 1,5 V.
 
 ## Checked
-- Levels rise: L1 one step (I, Q, U, E, t), L2 conversions, electron count, mAh to energy, graph reading; L3 ratio and a drawing.
-- None repeats the example verbatim; goals (I = Q/t, Q = Ne, U = E/Q, diagrams) all practised, no more.
-- Every solution has principle, units, substitution and a sensible-result step; each can be followed from scratch.
-- L2-04: graph needed, values readable at 0,4 and 0,1 A, description gives the same data without the charge; solution reads it in steps.
-- L2-03: 39,96 kJ and "40 kJ" now consistent (round-1 item fixed).
-- L3-03: model answer matches kaavio-malli and the lesson's symbols; the figure appears only as the answer.
-- Everyday contexts (scooter, phone, bike light, car starter) are recognisable.
-- Finnish and case after number+unit correct (0,50 A:n, 12 V:n, 40 s:n).
-- Exercise captures readable; L2 graph and long solutions not clipped.
+- Counts 8/7/5 = 20; ids and levels match the plan in docs/exercise-bank/FY6.md (data at L2, MC, error analysis, experiment, graph, YO-style L3).
+- Recomputed: L1-08 9,36e17; L2-05 a) 22,8 C, b) 0,38 A; L2-07 means 0,310 and 0,306 A; L3-04 12,5 Wh, 3,35 Ah, 3,73 V, 45 kJ, 7,2 %; L3-05 1,92e-5 m/s, 14,5 h. All match answer fields.
+- L1-06 and L1-07: one correct option each, distractors are real misconceptions, feedback repairs them.
+- None duplicates the worked example (L1-08, L2-05 differ in structure from Q = It).
+- Every new solution has principle, units, substitution and a sensible-result step.
+- L2-06 and L2-07 have complete model answers for every part; L2-07 a) names series connection.
+- Finnish and case after number+unit correct in the new tasks.
+- Captures at 1280 px (L2-05 solution, L3-04/05) readable, nothing clipped; no 360 px exercise captures listed.
