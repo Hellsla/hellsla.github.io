@@ -1,0 +1,10 @@
+[
+ {
+  "q": "Kaksi $10\\,\\Omega$:n vastusta kytketään rinnan. Kuinka suuri on niiden kokonaisresistanssi?",
+  "a": "$\\tfrac{1}{R} = \\tfrac{1}{10\\,\\Omega} + \\tfrac{1}{10\\,\\Omega} = \\tfrac{2}{10\\,\\Omega}$, joten $R = 5{,}0\\,\\Omega$: puolet yhden vastuksen resistanssista."
+ },
+ {
+  "q": "Kuinka monta kilowattituntia $1500\\,\\text{W}$:n lämmitin käyttää $4{,}0$ tunnissa?",
+  "a": "$E = Pt = 1{,}5\\,\\text{kW} \\cdot 4{,}0\\,\\text{h} = 6{,}0\\,\\text{kWh}$."
+ }
+]

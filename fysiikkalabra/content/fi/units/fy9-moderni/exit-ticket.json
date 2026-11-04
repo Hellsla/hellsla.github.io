@@ -1,0 +1,10 @@
+[
+ {
+  "q": "Fluori-18 ($Z = 9$) hajoaa beeta plus -hajoamisella. Mikä ydin syntyy?",
+  "a": "Beeta plus -hajoamisessa protoni muuttuu neutroniksi, joten $Z$ pienenee yhdellä ja massaluku säilyy: ${}^{18}_{9}\\text{F} \\to {}^{18}_{8}\\text{O} + {}^{0}_{+1}\\text{e} + \\nu$. Syntyy happi-18. Kertaa tarvittaessa luku *Atomiydin ja radioaktiivinen hajoaminen*."
+ },
+ {
+  "q": "Kuinka suuri on $400\\,\\text{nm}$:n violetin valon fotonin energia elektronivoltteina?",
+  "a": "$E = \\tfrac{hc}{\\lambda} \\approx \\tfrac{1240\\,\\text{eV}\\,\\text{nm}}{400\\,\\text{nm}} = 3{,}1\\,\\text{eV}$. Kertaa tarvittaessa luku *Valosähköinen ilmiö ja fotoni*."
+ }
+]
