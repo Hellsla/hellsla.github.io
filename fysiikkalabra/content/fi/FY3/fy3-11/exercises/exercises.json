@@ -48,15 +48,10 @@
       "kind": [
         "concept"
       ],
-      "answer": "Työ on janan alle jäävän suorakulmion pinta-ala, koska sen korkeus on paine ja leveys tilavuuden muutos.",
+      "answer": "Työ on janan ja tilavuusakselin väliin jäävän suorakulmion ala, koska korkeus on paine ja leveys tilavuuden muutos.",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
-        {
-          "text": "Työ on janan alle jäävän suorakulmion pinta-ala, koska sen korkeus on paine ja leveys tilavuuden muutos.",
-          "feedback": "Oikein: $W_\\text{k} = p\\,\\Delta V$ on korkeuden $p$ ja leveyden $\\Delta V$ tulo, joten työ on suorakulmion pinta-ala. Yksikkö $\\text{Pa}\\cdot\\text{m}^3$ on joule.",
-          "correct": true
-        },
         {
           "text": "Työ on janan korkeus, koska suurempi paine tekee aina suuremman työn riippumatta tilavuuden muutoksesta.",
           "feedback": "Pelkkä korkeus on paine, ei työ. Jos tilavuus ei muutu, mäntä ei liiku eikä työtä tehdä, vaikka paine olisi suuri."
@@ -64,6 +59,11 @@
         {
           "text": "Työ on janan pituus, koska työ riippuu vain tilavuuden muutoksesta eikä paineella ole merkitystä.",
           "feedback": "Pituus on tilavuuden muutos $\\Delta V$, ei työ. Sama tilavuuden muutos tekee sitä suuremman työn, mitä suurempi paine on."
+        },
+        {
+          "text": "Työ on janan ja tilavuusakselin väliin jäävän suorakulmion ala, koska korkeus on paine ja leveys tilavuuden muutos.",
+          "feedback": "Oikein: $W_\\text{k} = p\\,\\Delta V$ on korkeuden $p$ ja leveyden $\\Delta V$ tulo, joten työ on suorakulmion pinta-ala. Yksikkö $\\text{Pa}\\cdot\\text{m}^3$ on joule.",
+          "correct": true
         },
         {
           "text": "Työ on nolla, koska paine ei muutu laajenemisen aikana, eikä muuttumaton suure tee työtä.",
@@ -78,15 +78,10 @@
       "kind": [
         "concept"
       ],
-      "answer": "Osa sisälle luovutetusta lämmöstä on otettu ulkoilmasta, joten sisälle menevä energia on ulkoilman lämmön ja sähkön summa.",
+      "answer": "Pumppu siirtää lämpöä ulkoilmasta sisälle, joten sisälle luovutettu energia on ulkoa otetun lämmön ja sähkön summa.",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
-        {
-          "text": "Osa sisälle luovutetusta lämmöstä on otettu ulkoilmasta, joten sisälle menevä energia on ulkoilman lämmön ja sähkön summa.",
-          "feedback": "Oikein: $Q_\\text{sisälle} = Q_\\text{ulko} + E_\\text{s}$. Pumppu siirtää lämpöä kylmästä lämpimään sähkön avulla, eikä energiaa synny tyhjästä.",
-          "correct": true
-        },
         {
           "text": "Pumppu muuttaa sähköenergian monikertaiseksi lämmöksi, koska lämpökerroin kertoo, kuinka paljon uutta energiaa se tuottaa.",
           "feedback": "Lämpökerroin kertoo vain, kuinka monta kertaa suuremman lämmön pumppu luovuttaa sisälle sähköön verrattuna. Energiaa ei synny, vaan lisälämpö tulee ulkoa."
@@ -98,6 +93,11 @@
         {
           "text": "Sähköenergia ja lämpö ovat eri asioita, joten niiden suuruuksia ei voi verrata keskenään energian säilymisen kannalta.",
           "feedback": "Sekä sähköenergia että lämpö ovat energiaa ja mitataan jouleina tai kilowattitunteina, joten ne voi verrata. Säilyminen koskee niiden summaa."
+        },
+        {
+          "text": "Pumppu siirtää lämpöä ulkoilmasta sisälle, joten sisälle luovutettu energia on ulkoa otetun lämmön ja sähkön summa.",
+          "feedback": "Oikein: $Q_\\text{sisälle} = Q_\\text{ulko} + E_\\text{s}$. Pumppu siirtää lämpöä kylmästä lämpimään sähkön avulla, eikä energiaa synny tyhjästä.",
+          "correct": true
         }
       ]
     },
@@ -106,7 +106,7 @@
       "level": 1,
       "text": "Ilma-vesilämpöpumppu käyttää sähkötehoa $1{,}20\\,\\text{kW}$ ja luovuttaa lämmityspiiriin lämpötehon $3{,}90\\,\\text{kW}$. Mikä on pumpun lämpökerroin?",
       "kind": [
-        "reasoning"
+        "data"
       ],
       "answer": 3.25,
       "unit": "",
@@ -185,23 +185,23 @@
     {
       "id": "fy3-11-L2-06",
       "level": 2,
-      "text": "Oppilas väittää: \"Kun lämpövoimakoneen kitka ja muut häviöt saadaan poistettua, kone voi muuttaa kaiken saamansa lämmön työksi, koska energia säilyy.\" Mikä väitteessä on virheellistä?",
+      "text": "Oppilas väittää: ”Kun lämpövoimakoneen kitka ja muut häviöt saadaan poistettua, kone voi muuttaa kaiken saamansa lämmön työksi, koska energia säilyy.” Mikä väitteessä on virheellistä?",
       "kind": [
         "error",
         "concept"
       ],
-      "answer": "Kone voi toistaa työnsä vain jäähdyttämällä kaasun, joten osa lämmöstä on aina luovutettava kylmempään ympäristöön.",
+      "answer": "Kone toistaa työnsä vain jäähdyttämällä kaasun, joten osa lämmöstä on aina luovutettava kylmempään ympäristöön.",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
         {
-          "text": "Kone voi toistaa työnsä vain jäähdyttämällä kaasun, joten osa lämmöstä on aina luovutettava kylmempään ympäristöön.",
-          "feedback": "Oikein: kun mäntä palautetaan, kaasu on jäähdytettävä, ja jäähdytyksessä lämpöä siirtyy kylmempään. Siksi $Q_2 > 0$ ja hyötysuhde $\\eta = W/Q_1$ jää alle $100\\,\\%$:n.",
-          "correct": true
-        },
-        {
           "text": "Energia ei säily lämpövoimakoneessa, joten osa lämmöstä katoaa tyhjiin eikä sitä voi hyödyntää työnä.",
           "feedback": "Energia säilyy aina: $W = Q_1 - Q_2$. Lämpö ei katoa, vaan osa siitä siirtyy kylmempään ympäristöön."
+        },
+        {
+          "text": "Kone toistaa työnsä vain jäähdyttämällä kaasun, joten osa lämmöstä on aina luovutettava kylmempään ympäristöön.",
+          "feedback": "Oikein: kun mäntä palautetaan, kaasu on jäähdytettävä, ja jäähdytyksessä lämpöä siirtyy kylmempään. Siksi $Q_2 > 0$ ja hyötysuhde $\\eta = W/Q_1$ jää alle $100\\,\\%$:n.",
+          "correct": true
         },
         {
           "text": "Väite on oikein, jos kone on riittävän suuri, koska suuressa koneessa kitkan osuus jää mitättömäksi.",
@@ -218,8 +218,7 @@
       "level": 2,
       "text": "Esimerkkiaineisto: koulun ilmalämpöpumpun toimintaa seurattiin neljän vuorokauden ajan. Jokaisesta vuorokaudesta mitattiin pumpun käyttämä sähköenergia $E_\\text{s}$ ja sisälle luovutettu lämpö $Q_\\text{sisälle}$. Kuinka paljon lämpöä pumppu otti ulkoilmasta kaikkiaan näiden neljän vuorokauden aikana? Anna vastaus kilowattitunteina.",
       "kind": [
-        "data",
-        "experiment"
+        "data"
       ],
       "answer": 20.9,
       "unit": "kWh",
@@ -342,12 +341,12 @@
     {
       "id": "fy3-11-L3-05",
       "level": 3,
-      "text": "Esimerkkiaineisto: pystysuorassa sylinterissä on ilmaa, jonka sulkee kevyesti liikkuva mäntä. Sylinterin poikkipinta-ala on $A = 200\\,\\text{cm}^2$, ja ilman paine pysyy mittausten mukaan vakiona $p = 125\\,\\text{kPa}$. Ilmaa lämmitetään sähkövastuksella, jonka teho on $500\\,\\text{W}$. Oletetaan, että kaikki vastuksen luovuttama energia siirtyy ilmaan lämpönä. Taulukossa on männän korkeus $h$ sylinterin pohjasta mitattuna lämmityksen aikana.\n\na) Laske ilmaan neljässä sekunnissa siirtynyt lämpö $Q$ ja ilman tekemä työ $W_\\text{k}$ käyttämällä taulukon alku- ja loppuarvoa.\n\nb) Laske ilman sisäenergian muutos $\\Delta U$.\n\nc) Laske, kuinka suuri osa lämmöstä muuttui työksi, ja perustele, miksi tällainen yksittäinen laajeneminen ei vielä ole lämpövoimakone.\n\nKirjoita vastauslaatikkoon kohdan b) tulos kilojouleina.",
+      "text": "Esimerkkiaineisto: pystysuorassa sylinterissä on ilmaa, jonka sulkee kevyesti liikkuva mäntä. Sylinterin poikkipinta-ala on $A = 200\\,\\text{cm}^2$, ja ilman paine pysyy mittausten mukaan vakiona $p = 125\\,\\text{kPa}$. Ilmaa lämmitetään sähkövastuksella, jonka teho on $260\\,\\text{W}$. Oletetaan, että kaikki vastuksen luovuttama energia siirtyy ilmaan lämpönä. Taulukossa on männän korkeus $h$ sylinterin pohjasta mitattuna lämmityksen aikana.\n\na) Laske ilmaan neljässä sekunnissa siirtynyt lämpö $Q$ ja ilman tekemä työ $W_\\text{k}$ käyttämällä taulukon alku- ja loppuarvoa.\n\nb) Laske ilman sisäenergian muutos $\\Delta U$.\n\nc) Laske, kuinka suuri osa lämmöstä muuttui työksi, ja perustele, miksi tällainen yksittäinen laajeneminen ei vielä ole lämpövoimakone.\n\nKirjoita vastauslaatikkoon kohdan b) tulos kilojouleina.",
       "kind": [
         "data",
         "model"
       ],
-      "answer": 1.7,
+      "answer": 0.74,
       "unit": "kJ",
       "tolerance": 0.02,
       "data": {

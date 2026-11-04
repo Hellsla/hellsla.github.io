@@ -158,7 +158,7 @@ P_1 &= 4{,}444 \cdot 10^{-3}\,\tfrac{\text{kg}}{\text{s}} \cdot 43 \cdot 10^6\,\
 \end{aligned}
 ```
 Muilla kuormilla samalla tavalla: $20{,}0\,\text{kW}$ antaa $21{,}2\,\%$, $40{,}0\,\text{kW}$ antaa $28{,}9\,\%$ ja $80{,}0\,\text{kW}$ antaa $29{,}8\,\%$.
-**Vastaus:** Suurin hyötysuhde on $31{,}4\,\%$ kuormalla $60{,}0\,\text{kW}$, kolme merkitsevää numeroa. Lämpöarvo $43\,\text{MJ/kg}$ on annettu kahdella numerolla, joten tulos tunnetaan oikeasti kahden numeron tarkkuudella ($31\,\%$); kolmas numero annetaan vertailun vuoksi.
+**Vastaus:** Suurin hyötysuhde on $31{,}4\,\%$ kuormalla $60{,}0\,\text{kW}$, kolme merkitsevää numeroa. Lämpöarvo $43\,\text{MJ/kg}$ on annettu kahdella numerolla, joten tulos tunnetaan oikeasti kahden numeron tarkkuudella ($31\,\%$); kolmas numero annetaan, jotta kuormat voi vertailla keskenään ja pyöristys ei vie vastausta ulos hyväksytystä välistä.
 **Järkevyys:** Hyötysuhde on alle $100\,\%$ ja dieselmoottoreille tyypillisellä alueella $20$–$40\,\%$. Se kasvaa kuorman mukana ja pienenee jälleen suurimmalla kuormalla, joten maksimi on keskellä. Arvio: $\tfrac{60}{16 \cdot 43 / 3{,}6} = \tfrac{60}{191} \approx 0{,}31$.
 
 ## fy3-11-L2-06
@@ -180,7 +180,7 @@ Q_\text{ulko} &= 33{,}8\,\text{kWh} - 12{,}9\,\text{kWh} \\
 \end{aligned}
 ```
 **Vastaus:** $20{,}9\,\text{kWh}$, kolme merkitsevää numeroa, koska energiat on annettu kymmenesosan tarkkuudella ja erotus tunnetaan sillä tarkkuudella.
-**Järkevyys:** Ulkoa otettu lämpö on pienempi kuin sisälle luovutettu lämpö, kuten pitääkin. Energiatase: $20{,}9\,\text{kWh} + 12{,}9\,\text{kWh} = 33{,}8\,\text{kWh}$. Jokaisen vuorokauden lämpökerroin $Q_\text{sisälle}/E_\text{s}$ on yli 1 ($3{,}05$; $2{,}70$; $2{,}38$; $2{,}58$) ja pienenee pakkasen kiristyessä, mikä sopii siihen, että kylmästä ilmasta on vaikeampi siirtää lämpöä.
+**Järkevyys:** Ulkoa otettu lämpö on pienempi kuin sisälle luovutettu lämpö, kuten pitääkin. Energiatase: $20{,}9\,\text{kWh} + 12{,}9\,\text{kWh} = 33{,}8\,\text{kWh}$. Ulkolämpötilat $T_\text{ulko}$ eivät kuulu laskuun, koska energiatase ei tarvitse niitä. Jokaisen vuorokauden lämpökerroin $Q_\text{sisälle}/E_\text{s}$ on yli 1 ($3{,}05$; $2{,}70$; $2{,}38$; $2{,}58$) ja pienenee pakkasen kiristyessä, mikä sopii siihen, että kylmästä ilmasta on vaikeampi siirtää lämpöä.
 
 ## fy3-11-L3-04
 **Annettu:** kuukausittaiset lämmöntarpeet $Q$ ja lämpökertoimet $\varepsilon$ taulukosta: marraskuu $1{,}8\,\text{MWh}$ ja $3{,}4$; joulukuu $2{,}6\,\text{MWh}$ ja $2{,}9$; tammikuu $4{,}0\,\text{MWh}$ ja $2{,}4$; helmikuu $3{,}1\,\text{MWh}$ ja $2{,}6$; maaliskuu $2{,}2\,\text{MWh}$ ja $3{,}1$
@@ -209,20 +209,20 @@ b) Kauden lämpökerroin:
 ```
 c) Suora sähkölämmitys kuluttaa $13{,}7\,\text{MWh}$ sähköä, joten säästö on $13{,}7\,\text{MWh} - 4{,}995\,\text{MWh} = 8{,}7\,\text{MWh}$.
 **Vastaus:** b) $\varepsilon_\text{kausi} = 2{,}74$, kolme merkitsevää numeroa. Lähtötiedot on annettu kahdella numerolla, joten tulos tunnetaan oikeasti kahden numeron tarkkuudella ($2{,}7$), ja kolmas numero annetaan, jotta pyöristys ei siirrä vastausta ulos hyväksytystä välistä. Vastauslaatikkoon tulee tämä luku.
-**Järkevyys:** Kauden lämpökerroin $2{,}74$ on kuukausien pienimmän ($2{,}4$) ja suurimman ($3{,}4$) lämpökertoimen välissä. Kuukausien lämpökertoimien tavallinen keskiarvo olisi: lämpökertoimien summa on $14{,}4$, joten keskiarvo on $\tfrac{14{,}4}{5} = 2{,}88$, noin $5\,\%$ liian suuri. Perustelu: keskiarvo antaisi jokaiselle kuukaudelle saman painon, vaikka kylmimpänä kuukautena lämpöä tarvitaan eniten ja lämpökerroin on pienin. Silloin sähköä kuluu eniten pienellä lämpökertoimella, joten koko kauden lämpökertoimen on oltava keskiarvoa pienempi. Energiatase: $4{,}995\,\text{MWh} + 8{,}7\,\text{MWh} = 13{,}7\,\text{MWh}$ eli ulkoilmasta otettu lämpö kattaa noin $64\,\%$ lämmöntarpeesta.
+**Järkevyys:** Kauden lämpökerroin $2{,}74$ on kuukausien pienimmän ($2{,}4$) ja suurimman ($3{,}4$) lämpökertoimen välissä. Kuukausien lämpökertoimien tavallinen keskiarvo olisi: lämpökertoimien summa on $14{,}4$, joten keskiarvo on $\tfrac{14{,}4}{5} = 2{,}88$, noin $5\,\%$ liian suuri. Perustelu: keskiarvo antaisi jokaiselle kuukaudelle saman painon, vaikka kylmimpänä kuukautena lämpöä tarvitaan eniten ja lämpökerroin on pienin. Silloin sähköä kuluu eniten pienellä lämpökertoimella, joten koko kauden lämpökertoimen on oltava keskiarvoa pienempi. Energiatase: $4{,}995\,\text{MWh} + 8{,}7\,\text{MWh} = 13{,}7\,\text{MWh}$ eli ulkoilmasta otettu lämpö kattaa noin $64\,\%$ lämmöntarpeesta. Lämpökerroin on pienin kylmimpänä kuukautena, koska lämpöä on vaikeampi siirtää kylmästä ulkoilmasta lämpimään sisälle, kun lämpötilaero kasvaa.
 
 ## fy3-11-L3-05
-**Annettu:** poikkipinta-ala $A = 200\,\text{cm}^2$, paine $p = 125\,\text{kPa}$ vakiona, vastuksen teho $P = 500\,\text{W}$, aika $t = 4{,}0\,\text{s}$, männän korkeus $h_1 = 10{,}0\,\text{cm}$ alussa ja $h_2 = 22{,}0\,\text{cm}$ lopussa
+**Annettu:** poikkipinta-ala $A = 200\,\text{cm}^2$, paine $p = 125\,\text{kPa}$ vakiona, vastuksen teho $P = 260\,\text{W}$, aika $t = 4{,}0\,\text{s}$, männän korkeus $h_1 = 10{,}0\,\text{cm}$ alussa ja $h_2 = 22{,}0\,\text{cm}$ lopussa
 **Kysytty:** a) lämpö $Q$ ja kaasun työ $W_\text{k}$, b) sisäenergian muutos $\Delta U$ kilojouleina (vastauslaatikkoon), c) työksi muuttunut osuus ja perustelu, miksi yksittäinen laajeneminen ei ole lämpövoimakone
 **Periaate:** Vastuksen energia siirtyy ilmaan lämpönä, $Q = Pt$. Paine on vakio, joten ilman tekemä työ on $W_\text{k} = p\,\Delta V$, ja tilavuuden muutos saadaan männän siirtymästä: $\Delta V = A\,\Delta h$. Energia säilyy, joten ensimmäinen pääsääntö on $\Delta U = Q - W_\text{k}$.
-**Kuvaajan lukeminen:** Taulukosta männän korkeus kasvaa arvosta $h_1 = 10{,}0\,\text{cm}$ arvoon $h_2 = 22{,}0\,\text{cm}$, joten $\Delta h = 12{,}0\,\text{cm}$. Korkeus kasvaa joka sekunti likimain saman verran ($3{,}0$ cm sekunnissa), joten paineen vakioksi olettaminen sopii mittauksiin.
+**Kuvaajan lukeminen:** Taulukosta männän korkeus kasvaa arvosta $h_1 = 10{,}0\,\text{cm}$ arvoon $h_2 = 22{,}0\,\text{cm}$, joten $\Delta h = 12{,}0\,\text{cm}$. Korkeus kasvaa joka sekunti likimain saman verran ($3{,}0\,\text{cm/s}$). Paine on annettu vakioksi, ja tasainen nousu sopii vakiotehoiseen lämmitykseen.
 **Kaava:** $Q = Pt$, $\Delta V = A\,\Delta h$, $W_\text{k} = p\,\Delta V$ ja $\Delta U = Q - W_\text{k}$
 **Muunnokset:** $A = 200\,\text{cm}^2 = 200 \cdot 10^{-4}\,\text{m}^2 = 0{,}0200\,\text{m}^2$, $\Delta h = 12{,}0\,\text{cm} = 0{,}120\,\text{m}$ ja $p = 125\,\text{kPa} = 125\,000\,\text{Pa}$.
 **Sijoitus:** a)
 ```latex
 \begin{aligned}
-Q &= 500\,\text{W} \cdot 4{,}0\,\text{s} \\
-&= 2000\,\text{J} \\
+Q &= 260\,\text{W} \cdot 4{,}0\,\text{s} \\
+&= 1040\,\text{J} \\
 \Delta V &= 0{,}0200\,\text{m}^2 \cdot 0{,}120\,\text{m} \\
 &= 2{,}40 \cdot 10^{-3}\,\text{m}^3 \\
 W_\text{k} &= 125\,000\,\text{Pa} \cdot 2{,}40 \cdot 10^{-3}\,\text{m}^3 \\
@@ -232,12 +232,12 @@ W_\text{k} &= 125\,000\,\text{Pa} \cdot 2{,}40 \cdot 10^{-3}\,\text{m}^3 \\
 b)
 ```latex
 \begin{aligned}
-\Delta U &= 2000\,\text{J} - 300\,\text{J} \\
-&= 1700\,\text{J} \\
-&= 1{,}70\,\text{kJ}
+\Delta U &= 1040\,\text{J} - 300\,\text{J} \\
+&= 740\,\text{J} \\
+&= 0{,}74\,\text{kJ}
 \end{aligned}
 ```
-c) Työksi muuttui osuus $\tfrac{W_\text{k}}{Q} = \tfrac{300\,\text{J}}{2000\,\text{J}} = 0{,}15 = 15\,\%$.
-**Vastaus:** b) $\Delta U = 1{,}70\,\text{kJ}$, kolme merkitsevää numeroa. Teho $500\,\text{W}$ ja aika $4{,}0\,\text{s}$ on annettu kahdella numerolla, joten tulos tunnetaan oikeasti kahden numeron tarkkuudella ($1{,}7\,\text{kJ}$); kolmas numero annetaan, jotta pyöristys ei vie vastausta ulos hyväksytystä välistä. Vastauslaatikkoon tulee tämä luku.
-**Perustelu c):** Vain $15\,\%$ lämmöstä muuttui työksi, ja loput $85\,\%$ jäi ilman sisäenergiaksi, joten ilma lämpeni. Yksittäinen laajeneminen ei ole lämpövoimakone, koska kone toistaa työnsä kierros kerrallaan. Jotta mäntä saadaan takaisin alkuun, ilma on jäähdytettävä ja puristettava, ja jäähdytyksessä lämpöä siirtyy kylmempään ympäristöön. Yhden laajenemisen osuus $15\,\%$ ei siis ole kierroksen hyötysuhde $\eta = W/Q_1$, jossa $W = Q_1 - Q_2$.
-**Järkevyys:** Sisäenergian muutos on positiivinen ja pienempi kuin lämpö, $0 < 1700\,\text{J} < 2000\,\text{J}$, kuten pitääkin, kun kaasu laajenee ja saa lämpöä. Energiatase: $1700\,\text{J} + 300\,\text{J} = 2000\,\text{J}$. Männän nopeus $3{,}0\,\text{cm/s}$ on hidas, joten kevyen männän liike on rauhallista.
+c) Työksi muuttui osuus $\tfrac{W_\text{k}}{Q} = \tfrac{300\,\text{J}}{1040\,\text{J}} = 0{,}288 \approx 29\,\%$.
+**Vastaus:** b) $\Delta U = 0{,}74\,\text{kJ}$, kaksi merkitsevää numeroa, koska teho $260\,\text{W}$ ja aika $4{,}0\,\text{s}$ on annettu kahdella numerolla. Vastauslaatikkoon tulee tämä luku.
+**Perustelu c):** Noin $29\,\%$ lämmöstä muuttui työksi, ja loput noin $71\,\%$ jäi ilman sisäenergiaksi, joten ilma lämpeni. Tämä sopii ilmaan: kaksiatomisella kaasulla vakiopaineessa työn osuus on noin $\tfrac{2}{7} \approx 29\,\%$ saadusta lämmöstä. Yksittäinen laajeneminen ei ole lämpövoimakone, koska kone toistaa työnsä kierros kerrallaan. Jotta mäntä saadaan takaisin alkuun, ilma on jäähdytettävä ja puristettava, ja jäähdytyksessä lämpöä siirtyy kylmempään ympäristöön. Yhden laajenemisen työn osuus $29\,\%$ ei siis ole kierroksen hyötysuhde: se on $\eta = W/Q_1$, ja siinä työ on $W = Q_1 - Q_2$.
+**Järkevyys:** Sisäenergian muutos on positiivinen ja pienempi kuin lämpö, $0 < 740\,\text{J} < 1040\,\text{J}$, kuten pitääkin, kun kaasu laajenee ja saa lämpöä. Energiatase: $740\,\text{J} + 300\,\text{J} = 1040\,\text{J}$. Männän nopeus $3{,}0\,\text{cm/s}$ on hidas, joten kevyen männän liike on rauhallista.

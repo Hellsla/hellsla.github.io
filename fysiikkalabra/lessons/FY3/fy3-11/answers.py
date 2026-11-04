@@ -46,8 +46,8 @@ Q_kk = [1.8, 2.6, 4.0, 3.1, 2.2]                   # L3-04: monthly heat demand,
 eps_kk = [3.4, 2.9, 2.4, 2.6, 3.1]                 # monthly coefficients of performance
 Es_kk = [q / e for q, e in zip(Q_kk, eps_kk)]      # E_s = Q/ε per month, sum 4,995 MWh
 a["fy3-11-L3-04"] = sum(Q_kk) / sum(Es_kk)         # ε_kausi = ΣQ/ΣE_s = 13,7 / 4,995 = 2,74 (plain mean of ε would be 2,88)
-Q_vastus = 500 * 4.0                               # L3-05: Q = Pt = 500 W · 4,0 s = 2000 J
+Q_vastus = 260 * 4.0                               # L3-05: Q = Pt = 260 W · 4,0 s = 1040 J
 W_ilma = 125e3 * 0.0200 * (0.220 - 0.100)          # W_k = pAΔh = 125 000 Pa · 0,0200 m² · 0,120 m = 300 J
-a["fy3-11-L3-05"] = (Q_vastus - W_ilma) / 1000     # ΔU = Q − W_k = 1700 J = 1,70 kJ (15 % of the heat became work)
+a["fy3-11-L3-05"] = (Q_vastus - W_ilma) / 1000     # ΔU = Q − W_k = 740 J = 0,74 kJ (W_k/Q = 29 % ≈ 2/7, as for a diatomic gas)
 
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

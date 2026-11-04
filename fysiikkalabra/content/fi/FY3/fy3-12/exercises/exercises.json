@@ -57,17 +57,17 @@
           "feedback": "Lämmin ilma nousee nuotion päältä ylöspäin eikä virtaa vaakasuoraan kasvoille. Lisäksi ilma kasvojen edessä on viileää, joten lämpöä ei kulje sen mukana."
         },
         {
-          "text": "Lämpösäteilynä, koska nuotion kuuma pinta lähettää säteilyä, joka kulkee ilman läpi ihoon.",
-          "correct": true,
-          "feedback": "Oikein: kaikki kappaleet lähettävät lämpösäteilyä, ja kuuma nuotio säteilee voimakkaasti. Säteily kulkee viileän ilman läpi lämmittämättä sitä paljon ja imeytyy ihoon, joka lämpenee."
-        },
-        {
           "text": "Johtumalla, koska ilman hiukkaset välittävät energiaa nuotiolta kasvoille asti toisiinsa törmäten.",
           "feedback": "Ilma on huono lämmönjohde, ja viileä ilma nuotion ja kasvojen välissä osoittaa, ettei energia kulje sen kautta. Johtuminen vaatisi, että väliaine lämpenisi matkalla."
         },
         {
           "text": "Johtumalla, koska nuotion kuumat hiilet koskettavat kasvojen ihoa ja luovuttavat energiaa suoraan.",
           "feedback": "Kasvot ovat etäällä nuotiosta eivätkä kosketa hiiliä. Johtumiseen tarvitaan kappaleiden kosketus, joten se ei selitä lämmön tunnetta etäältä."
+        },
+        {
+          "text": "Lämpösäteilynä, koska nuotion kuuma pinta lähettää säteilyä, joka kulkee ilman läpi ihoon.",
+          "correct": true,
+          "feedback": "Oikein: kaikki kappaleet lähettävät lämpösäteilyä, ja kuuma nuotio säteilee voimakkaasti. Säteily kulkee viileän ilman läpi lämmittämättä sitä paljon ja imeytyy ihoon, joka lämpenee."
         }
       ]
     },
@@ -78,18 +78,18 @@
       "kind": [
         "concept"
       ],
-      "answer": "Kasvihuonekaasut imevät maanpinnan lämpösäteilyä ja säteilevät osan siitä takaisin alas, joten maanpinta on lämpimämpi.",
+      "answer": "Kasvihuonekaasut imevät maanpinnan lämpösäteilyä ja säteilevät osan takaisin alas, joten maanpinta lämpenee.",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
         {
-          "text": "Ilmiö johtuu otsonikerroksen ohenemisesta, joka päästää maanpinnalle enemmän lämmittävää ultraviolettisäteilyä.",
-          "feedback": "Tämä sekoittaa kasvihuoneilmiön ja otsonikadon. Otsonikato päästää läpi enemmän ultraviolettisäteilyä, mutta se ei juuri lämmitä maapalloa. Kasvihuoneilmiö syntyy lämpösäteilyn imeytymisestä."
-        },
-        {
-          "text": "Kasvihuonekaasut imevät maanpinnan lämpösäteilyä ja säteilevät osan siitä takaisin alas, joten maanpinta on lämpimämpi.",
+          "text": "Kasvihuonekaasut imevät maanpinnan lämpösäteilyä ja säteilevät osan takaisin alas, joten maanpinta lämpenee.",
           "correct": true,
           "feedback": "Oikein: kasvihuonekaasut, kuten vesihöyry ja hiilidioksidi, imevät maanpinnan lämpösäteilyä ja lähettävät osan takaisin alas. Siksi maanpinnan keskilämpötila on noin $+15\\,{}^\\circ\\text{C}$ eikä noin $-18\\,{}^\\circ\\text{C}$."
+        },
+        {
+          "text": "Ilmiö johtuu otsonikerroksen ohenemisesta, joka päästää maanpinnalle enemmän lämmittävää ultraviolettisäteilyä.",
+          "feedback": "Tämä sekoittaa kasvihuoneilmiön ja otsonikadon. Otsonikato päästää läpi enemmän ultraviolettisäteilyä, mutta se ei juuri lämmitä maapalloa. Kasvihuoneilmiö syntyy lämpösäteilyn imeytymisestä."
         },
         {
           "text": "Kasvihuonekaasut estävät Auringon säteilyä pääsemästä ilmakehään, joten ne lämmittävät ilmaa ylhäältä käsin.",
@@ -168,7 +168,7 @@
     {
       "id": "fy3-12-L2-05",
       "level": 2,
-      "text": "Kaksi samanlaista kuppia täytetään $0{,}25\\,\\text{kg}$:lla kuumaa vettä, jonka lämpötila on $80{,}0\\,{}^\\circ\\text{C}$. Kuppi A on avoin, ja kupissa B on kansi. Kupit ovat samassa huoneessa, ja lämpötilat mitataan viiden minuutin välein (esimerkkiaineisto). Kupin oma lämpökapasiteetti jätetään huomiotta, ja veden ominaislämpökapasiteetti on $4190\\,\\text{J/(kg}\\cdot\\text{K)}$.\n\na) Laske, kuinka suuri keskimääräinen lämpöteho kannen ansiosta jää karkaamatta ensimmäisten $10\\,\\text{min}$ aikana.\n\nb) Mikä lämmönsiirtymistapa on avoimessa kupissa merkittävä ja kansi estää sen? Miksi kupin B vesi silti jäähtyy?\n\nAnna a)-kohdan tulos vastauslaatikkoon.",
+      "text": "Kaksi samanlaista kuppia täytetään $0{,}25\\,\\text{kg}$:lla kuumaa vettä, jonka lämpötila on $80{,}0\\,{}^\\circ\\text{C}$. Kuppi A on avoin, ja kupissa B on kansi. Kupit ovat samassa huoneessa, ja lämpötilat mitataan viiden minuutin välein (esimerkkiaineisto). Kupin oma lämpökapasiteetti jätetään huomiotta, ja veden ominaislämpökapasiteetti on $4190\\,\\text{J/(kg}\\cdot\\text{K)}$.\n\na) Laske, kuinka suuri keskimääräinen lämpöteho kannen ansiosta jää karkaamatta ensimmäisten $10\\,\\text{min}$ aikana.\n\nb) Mitä kansi estää avoimessa kupissa, ja miksi kupin B vesi silti jäähtyy?\n\nAnna a)-kohdan tulos vastauslaatikkoon.",
       "kind": [
         "data",
         "reasoning"
@@ -215,7 +215,7 @@
     {
       "id": "fy3-12-L2-06",
       "level": 2,
-      "text": "Oppilas laskee, kuinka suuri lämpöteho johtuu ikkunan läpi. Ikkunan pinta-ala on $1{,}6\\,\\text{m}^2$ ja U-arvo $1{,}0\\,\\text{W/(m}^2\\text{}\\cdot\\text{K)}$. Sisällä on $21\\,{}^\\circ\\text{C}$ ja ulkona $-15\\,{}^\\circ\\text{C}$. Oppilaan ratkaisu on: \"Lämpötilaero on $21\\,{}^\\circ\\text{C} - 15\\,{}^\\circ\\text{C} = 6\\,\\text{K}$, joten $P = UA\\Delta T = 1{,}0 \\cdot 1{,}6 \\cdot 6\\,\\text{W} = 9{,}6\\,\\text{W}$.\"\n\na) Missä oppilaan ratkaisun virhe on, ja miten huomaisit jo pyöristetyillä luvuilla, että tulos on liian pieni?\n\nb) Laske ikkunan läpi johtuva lämpöteho oikein.\n\nAnna b)-kohdan tulos vastauslaatikkoon.",
+      "text": "Oppilas laskee, kuinka suuri lämpöteho johtuu ikkunan läpi. Ikkunan pinta-ala on $1{,}6\\,\\text{m}^2$ ja U-arvo $1{,}0\\,\\text{W/(m}^2\\cdot\\text{K)}$. Sisällä on $21\\,{}^\\circ\\text{C}$ ja ulkona $-15\\,{}^\\circ\\text{C}$. Oppilaan ratkaisu on: ”Lämpötilaero on $21\\,{}^\\circ\\text{C} - 15\\,{}^\\circ\\text{C} = 6\\,\\text{K}$, joten $P = UA\\Delta T = 1{,}0 \\cdot 1{,}6 \\cdot 6\\,\\text{W} = 9{,}6\\,\\text{W}$.”\n\na) Missä oppilaan ratkaisun virhe on, ja miten huomaisit jo pyöristetyillä luvuilla, että tulos on liian pieni?\n\nb) Laske ikkunan läpi johtuva lämpöteho oikein.\n\nAnna b)-kohdan tulos vastauslaatikkoon.",
       "kind": [
         "error"
       ],
@@ -294,7 +294,7 @@
     {
       "id": "fy3-12-L3-04",
       "level": 3,
-      "text": "Jäämeren jääpeite on pienentynyt. Taulukossa on jään pinta-ala syyskuun minimissä (esimerkkiaineisto). Arvioidaan mallilla, mitä jään vähenemisestä seuraa. Jään tilalle tullut avoin meri saa saman auringonsäteilyn kuin jää sai, keskimäärin $90\\,\\text{W/m}^2$. Albedo kertoo, kuinka suuri osuus tulevasta säteilystä heijastuu: jään albedo on $0{,}60$ ja avoimen meren $0{,}06$. Maapallon pinta-ala on $5{,}1 \\cdot 10^{14}\\,\\text{m}^2$.\n\na) Lue taulukosta jään pinta-alan pieneneminen vuodesta 1980 vuoteen 2020 ja muuta se neliömetreiksi.\n\nb) Kuinka paljon suurempaa tehoa alue nyt imee? Laske sitten tämä lisäys keskimäärin koko maapallon pinta-alaa kohti ja vertaa sitä energiaepätasapainoon $1{,}0\\,\\text{W/m}^2$.\n\nc) Selitä, miksi jään väheneminen on positiivinen palautekytkentä ja mikä mallin yksinkertaistus tekee arviosta karkean.\n\nAnna b)-kohdan koko maapallon pinta-alaa kohti laskettu teho vastauslaatikkoon.",
+      "text": "Jäämeren jääpeite on pienentynyt. Taulukossa on jään pinta-ala syyskuun minimissä (esimerkkiaineisto). Arvioidaan mallilla, mitä jään vähenemisestä seuraa. Jään tilalle tullut avoin meri saa saman auringonsäteilyn kuin jää sai, keskimäärin $90\\,\\text{W/m}^2$. Albedo kertoo, kuinka suuri osuus tulevasta säteilystä heijastuu: jään albedo on $0{,}60$ ja avoimen meren $0{,}06$. Maapallon pinta-ala on $5{,}1 \\cdot 10^{14}\\,\\text{m}^2$.\n\na) Lue taulukosta jään pinta-alan pieneneminen vuodesta 1980 vuoteen 2020 ja muuta se neliömetreiksi.\n\nb) Kuinka paljon suurempaa tehoa alue nyt imee? Laske sitten tämä lisäys keskimäärin koko maapallon pinta-alaa kohti ja vertaa sitä energiaepätasapainoon $1{,}0\\,\\text{W/m}^2$.\n\nc) Selitä, miksi jään väheneminen on positiivinen palautekytkentä (muutosta vahvistava vaikutus) ja mikä mallin yksinkertaistus tekee arviosta karkean.\n\nAnna b)-kohdan koko maapallon pinta-alaa kohti laskettu teho vastauslaatikkoon.",
       "kind": [
         "data",
         "model",
@@ -336,7 +336,7 @@
     {
       "id": "fy3-12-L3-05",
       "level": 3,
-      "text": "Maapallon lämpötilaa arvioidaan yksinkertaisella mallilla. Maanpinta imee Auringosta tehon $239\\,\\text{W/m}^2$ ja säteilee lämpösäteilyä ylöspäin tehon $S$ neliömetriä kohti. Ilmakehä imee osuuden $0{,}80$ tästä säteilystä, ja loput $20\\,\\%$ pääsee suoraan avaruuteen. Ilmakehä säteilee imemänsä energian puoliksi ylös avaruuteen ja puoliksi alas maanpinnalle. Mallissa ilmakehä ei imenä Auringon säteilyä, ja sekä ilmakehän yläraja että maanpinta ovat energiatasapainossa. Taulukossa on maanpinnan säteilemä lämpöteho neliömetriä kohti sen lämpötilan mukaan (esimerkkiaineisto).\n\na) Kirjoita energiataseet ilmakehän ylärajalle ja maanpinnalle ja laske maanpinnan säteilemä teho $S$.\n\nb) Päättele taulukosta maanpinnan lämpötila interpoloimalla ja anna se celsiusasteina.\n\nc) Mikä lämpötila maanpinnalla olisi ilman ilmakehää, kun se säteilisi vain imemänsä tehon $239\\,\\text{W/m}^2$? Mitä ero kertoo kasvihuoneilmiöstä, ja miksi malli on silti karkea?\n\nAnna b)-kohdan lämpötila celsiusasteina vastauslaatikkoon.",
+      "text": "Maapallon lämpötilaa arvioidaan yksinkertaisella mallilla. Maanpinta imee Auringosta tehon $239\\,\\text{W/m}^2$ ja säteilee lämpösäteilyä ylöspäin tehon $S$ neliömetriä kohti. Ilmakehä imee osuuden $0{,}80$ tästä säteilystä, ja loput $20\\,\\%$ pääsee suoraan avaruuteen. Ilmakehä säteilee imemänsä energian puoliksi ylös avaruuteen ja puoliksi alas maanpinnalle. Mallissa ilmakehä ei ime Auringon säteilyä, ja sekä ilmakehän yläraja että maanpinta ovat energiatasapainossa. Taulukossa on maanpinnan säteilemä lämpöteho neliömetriä kohti sen lämpötilan mukaan (esimerkkiaineisto).\n\na) Kirjoita energiataseet (ulos lähtevä teho on yhtä suuri kuin sisään tuleva) ilmakehän ylärajalle ja maanpinnalle ja laske maanpinnan säteilemä teho $S$.\n\nb) Päättele taulukosta maanpinnan lämpötila interpoloimalla ja anna se celsiusasteina.\n\nc) Mikä lämpötila maanpinnalla olisi ilman ilmakehää, kun se säteilisi vain imemänsä tehon $239\\,\\text{W/m}^2$? Mitä ero kertoo kasvihuoneilmiöstä, ja miksi malli on silti karkea?\n\nAnna b)-kohdan lämpötila celsiusasteina vastauslaatikkoon.",
       "kind": [
         "data",
         "model",

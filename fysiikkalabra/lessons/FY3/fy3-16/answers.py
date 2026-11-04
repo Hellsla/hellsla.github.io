@@ -45,7 +45,7 @@ E_season = 0.060 * 720 * sum(dT)                          # E = UA t ΣΔT = 0,0
 cost_A = E_season * 0.15                                  # electricity 100 %: 816,5 €
 cost_B = E_season / (0.70 * 15 / 3.6) * 0.18              # wood: 5443 / (0,70 · 4,167 kWh/kg) = 1866 kg · 0,18 = 335,9 €
 a["fy3-16-L3-04"] = cost_A - cost_B                       # saving 480,6 € -> 480 € (tolerance 0,03)
-m_ice = 1000 * 60 * 30 * 0.030                            # 54 m³ -> 54 000 kg
+m_ice = 1000 * 60 * 30 * 0.030                            # 0,030 m layer of WATER (rho 1000): 54 m³ -> 54 000 kg
 Q_rink = m_ice * (c_vesi * 12 + s + c_jaa * 5.0)          # 2,715 + 18,04 + 0,567 GJ = 21,32 GJ
 a["fy3-16-L3-05"] = Q_rink / (10 * 3600) / 1e3            # P = 21,32 GJ / 36 000 s = 592 kW -> 590 kW (tolerance 0,03)
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))
