@@ -21,14 +21,14 @@
           },
           "criteria": [
             {
-              "text": "Calculates the photon energy of each colour, $2.22\\,\\text{eV}$ and $1.97\\,\\text{eV}$, and connects it to the difference of the levels in the figure: green from the upper excited state to the lower one, red from the lower excited state to the ground state.",
+              "text": "Calculates the photon energy of each colour, $2.22\\,\\text{eV}$ and $1.97\\,\\text{eV}$, and connects it to the difference of the levels in the figure: green from the second excited state to the lower one, red from the first excited state to the ground state.",
               "tag": "transfer",
               "points": 1
             },
             {
               "key": "equation",
               "points": 1,
-              "detail": "The photon energy is the difference of the levels, $E = \\dfrac{hc}{\\lambda}$, so $\\lambda = \\dfrac{hc}{E}$; the third transition is from the upper excited state directly to the ground state, $E = 4.19\\,\\text{eV}$."
+              "detail": "The photon energy is the difference of the levels, $E = \\dfrac{hc}{\\lambda}$, so $\\lambda = \\dfrac{hc}{E}$; the third transition is from the second excited state directly to the ground state, $E = 4.19\\,\\text{eV}$."
             },
             {
               "key": "units_precision",
@@ -46,7 +46,7 @@
           "id": "b",
           "kind": "calc",
           "points": 3,
-          "text": "The kinetic energy of an electron that produces an aurora is typically about $5\\,\\text{keV}$. At most how many oxygen atoms can one such electron excite to the upper excited state? What did you assume?",
+          "text": "The kinetic energy of an electron that produces an aurora is typically about $5\\,\\text{keV}$. At most how many oxygen atoms can one such electron excite to the second excited state? What did you assume?",
           "answer": {
             "value": 1190,
             "unit": "",
@@ -74,7 +74,7 @@
           "id": "c",
           "kind": "word",
           "points": 4,
-          "text": "Red aurora is produced mostly at altitudes above $200\\,\\text{km}$, green at about $100$–$150\\,\\text{km}$, where the air is much denser. The upper excited state decays on average about $0.7\\,\\text{s}$ after the excitation, the lower one only after about $110\\,\\text{s}$. Using this information, explain why red light is not produced lower down. Also explain why the spectrum of the light of the aurora consists of separate lines.",
+          "text": "Red aurora is produced mostly at altitudes above $200\\,\\text{km}$, green at about $100$–$150\\,\\text{km}$, where the air is much denser. The second excited state decays on average about $0.7\\,\\text{s}$ after the excitation, the lower one only after about $110\\,\\text{s}$. Using this information, explain why red light is not produced lower down. Also explain why the spectrum of the light of the aurora consists of separate lines.",
           "criteria": [
             {
               "text": "Explains that the energy of an atom can have only certain values, so the energy of a photon, and therefore the wavelength, always corresponds to the difference of some two levels, and the spectrum has only these lines.",

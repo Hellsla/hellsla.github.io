@@ -277,7 +277,7 @@
           "id": "e",
           "kind": "calc",
           "points": 4,
-          "text": "Plutonium-238 on vaarallisinta, jos sitä joutuu elimistöön. Oleta, että laukaisuonnettomuudessa ihmisen keuhkoihin jäisi plutoniumdioksidipölyä, jonka aktiivisuus on $10\\,\\text{Bq}$. Oleta myös, että pöly pysyisi keuhkoissa koko vuoden. Keuhkojen massa on $1{,}2\\,\\text{kg}$, alfasäteilyn painotuskerroin on $20$ ja keuhkojen kudoksen painotuskerroin on $0{,}12$. Painotuskerroin kertoo, kuinka vaarallista säteily tai kudos on. Kuinka suuri efektiivinen annos tästä aiheutuisi vuodessa? Efektiivinen annos kertoo säteilyn koko elimistölle aiheuttaman haitan. Vertaa tulosta suomalaisen keskimääräiseen vuosiannokseen $5{,}9\\,\\text{mSv}$.",
+          "text": "Plutonium-238 on vaarallisinta, jos sitä joutuu elimistöön. Oleta, että laukaisuonnettomuudessa ihmisen keuhkoihin jäisi plutoniumdioksidipölyä, jonka aktiivisuus on $10\\,\\text{Bq}$. Oleta myös, että pöly pysyisi keuhkoissa koko vuoden. Keuhkojen massa on $1{,}2\\,\\text{kg}$, alfasäteilyn painotuskerroin on $20$ ja keuhkojen kudoksen painotuskerroin on $0{,}12$. Säteilyn painotuskerroin kertoo, kuinka monta kertaa enemmän säteilylaji vaurioittaa soluja kuin gammasäteily. Kudoksen painotuskerroin kertoo, kuinka herkkä kudos on säteilylle. Kuinka suuri efektiivinen annos tästä aiheutuisi vuodessa? Efektiivinen annos kertoo säteilyn koko elimistölle aiheuttaman haitan. Vertaa tulosta suomalaisen keskimääräiseen vuosiannokseen $5{,}9\\,\\text{mSv}$.",
           "answer": {
             "value": 0.57,
             "unit": "mSv",

@@ -3,22 +3,22 @@
 ### a)
 **Given:** green $\lambda_\text{v} = 557.7\,\text{nm}$, red $\lambda_\text{p} = 630.0\,\text{nm}$, the energy levels of the figure, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$ and $c = 2.998 \cdot 10^{8}\,\text{m/s}$
 **Find:** the transitions corresponding to the colours and the wavelength $\lambda_3$ of the third transition
-**Principle:** When an atom moves from an upper energy level to a lower one, it emits a photon whose energy is the difference of the levels. We calculate the photon energy of each colour and compare it with the differences of the levels. The third possible transition is from the upper excited state directly to the ground state.
-**Reading the graph:** From the figure we read the ground state $0$, the lower excited state $1.97\,\text{eV}$ and the upper excited state $4.19\,\text{eV}$. The differences of the levels are $4.19\,\text{eV} - 1.97\,\text{eV} = 2.22\,\text{eV}$, $1.97\,\text{eV} - 0 = 1.97\,\text{eV}$ and $4.19\,\text{eV} - 0 = 4.19\,\text{eV}$.
+**Principle:** When an atom moves from an upper energy level to a lower one, it emits a photon whose energy is the difference of the levels. We calculate the photon energy of each colour and compare it with the differences of the levels. The third possible transition is from the second excited state directly to the ground state.
+**Reading the graph:** From the figure we read the ground state $0$, the first excited state $1.97\,\text{eV}$ and the second excited state $4.19\,\text{eV}$. The differences of the levels are $4.19\,\text{eV} - 1.97\,\text{eV} = 2.22\,\text{eV}$, $1.97\,\text{eV} - 0 = 1.97\,\text{eV}$ and $4.19\,\text{eV} - 0 = 4.19\,\text{eV}$.
 **Formula:** $E = hf = \dfrac{hc}{\lambda}$, so for the third transition $\lambda_3 = \dfrac{hc}{E_3}$
 **Conversions:** $\lambda_\text{v} = 557.7 \cdot 10^{-9}\,\text{m}$ and $\lambda_\text{p} = 630.0 \cdot 10^{-9}\,\text{m}$. The electronvolts are converted by substituting $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$: $E_3 = 4.19 \cdot 1.602 \cdot 10^{-19}\,\text{J} = 6.712 \cdot 10^{-19}\,\text{J}$.
-**Substitution:** Green: $E_\text{v} = \dfrac{6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2.998 \cdot 10^{8}\,\text{m/s}}{557.7 \cdot 10^{-9}\,\text{m}} = 3.562 \cdot 10^{-19}\,\text{J} = \dfrac{3.562 \cdot 10^{-19}}{1.602 \cdot 10^{-19}}\,\text{eV} = 2.22\,\text{eV}$, so green light is produced in the transition from the upper excited state to the lower one. Red: in the same way $E_\text{p} = 3.153 \cdot 10^{-19}\,\text{J} = 1.97\,\text{eV}$, so red light is produced in the transition from the lower excited state to the ground state. Third transition: $\lambda_3 = \dfrac{6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2.998 \cdot 10^{8}\,\text{m/s}}{6.712 \cdot 10^{-19}\,\text{J}} = 2.959 \cdot 10^{-7}\,\text{m}$
-**Answer:** Green light is produced in the transition from the upper excited state to the lower one and red light from the lower excited state to the ground state. The wavelength of the third transition is $\lambda_3 \approx 296\,\text{nm}$, three significant figures like the energy levels. It is ultraviolet radiation, which the eye cannot see.
+**Substitution:** Green: $E_\text{v} = \dfrac{6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2.998 \cdot 10^{8}\,\text{m/s}}{557.7 \cdot 10^{-9}\,\text{m}} = 3.562 \cdot 10^{-19}\,\text{J} = \dfrac{3.562 \cdot 10^{-19}}{1.602 \cdot 10^{-19}}\,\text{eV} = 2.22\,\text{eV}$, so green light is produced in the transition from the second excited state to the lower one. Red: in the same way $E_\text{p} = 3.153 \cdot 10^{-19}\,\text{J} = 1.97\,\text{eV}$, so red light is produced in the transition from the first excited state to the ground state. Third transition: $\lambda_3 = \dfrac{6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2.998 \cdot 10^{8}\,\text{m/s}}{6.712 \cdot 10^{-19}\,\text{J}} = 2.959 \cdot 10^{-7}\,\text{m}$
+**Answer:** Green light is produced in the transition from the second excited state to the lower one and red light from the first excited state to the ground state. The wavelength of the third transition is $\lambda_3 \approx 296\,\text{nm}$, three significant figures like the energy levels. It is ultraviolet radiation, which the eye cannot see.
 **Reasonableness:** The greatest energy difference gives the shortest wavelength, and $296\,\text{nm}$ is shorter than the lower limit of visible light, about $380\,\text{nm}$. The energies of photons of visible light are $1.7$–$3.3\,\text{eV}$, and both colours of the aurora fall in this range, but $4.19\,\text{eV}$ does not.
 
 ### b)
-**Given:** kinetic energy of the electron $E_\text{k} = 5\,\text{keV}$, energy of the upper excited state $\Delta E = 4.19\,\text{eV}$ above the ground state
+**Given:** kinetic energy of the electron $E_\text{k} = 5\,\text{keV}$, energy of the second excited state $\Delta E = 4.19\,\text{eV}$ above the ground state
 **Find:** the greatest possible number of exciting collisions $n$
 **Principle:** In every exciting collision the electron gives the atom at least the difference of the levels in energy. The greatest number of excitations is obtained if the whole kinetic energy is used for them and for nothing else.
 **Formula:** $n = \dfrac{E_\text{k}}{\Delta E}$
 **Conversions:** $E_\text{k} = 5\,\text{keV} = 5 \cdot 1000\,\text{eV} = 5000\,\text{eV}$. A conversion to joules is not needed, because both energies are in electronvolts.
 **Substitution:** $n = \dfrac{5000\,\text{eV}}{4.19\,\text{eV}} = 1193$
-**Answer:** One electron can excite at most about $1200$ oxygen atoms to the upper excited state.
+**Answer:** One electron can excite at most about $1200$ oxygen atoms to the second excited state.
 **Reasonableness:** The assumption was that all the energy is used for this excitation. In reality the electron also ionises atoms and molecules, excites nitrogen molecules and other levels, and transfers energy into the kinetic energy of particles, so there are clearly fewer excitations. In any case one fast electron produces hundreds of photons, which explains why auroras are bright.
 
 ### c)
@@ -26,9 +26,9 @@
 **Principle:** The energy of an atom can have only certain values. An excited atom can give up its energy in two ways: by emitting a photon or in a collision in which the energy is transferred to another particle. Which happens first depends on the mean lifetime of the excited state and on how often the atom collides.
 **Model answer:** *Spectral lines.* The energy of an oxygen atom can have only the values of the energy levels. When an atom moves from one level to another, the energy of the photon produced is the difference of the levels, and a definite wavelength follows from it. This is why the light of the gas contains only these wavelengths, that is, separate spectral lines, and not a continuous spectrum.
 
-*Altitude and colours.* The lower excited state, which produces the red light, decays by emitting a photon only after about $110\,\text{s}$ on average. At an altitude of $100$–$150\,\text{km}$ the air is so dense that an excited atom collides with other particles many times in a much shorter time. A collision releases the excited state: the energy is transferred to another particle, and no photon is produced. At altitudes above $200\,\text{km}$ the air is very thin and there are few collisions, so many atoms have time to emit a red photon.
+*Altitude and colours.* The first excited state, which produces the red light, decays by emitting a photon only after about $110\,\text{s}$ on average. At an altitude of $100$–$150\,\text{km}$ the air is so dense that an excited atom collides with other particles many times in a much shorter time. A collision releases the excited state: the energy is transferred to another particle, and no photon is produced. At altitudes above $200\,\text{km}$ the air is very thin and there are few collisions, so many atoms have time to emit a red photon.
 
-The upper excited state decays in only about $0.7\,\text{s}$, so many atoms emit a green photon before a collision even in denser air. Red light therefore requires thin air, and this is why it is seen in the upper part of the aurora.
+The second excited state decays in only about $0.7\,\text{s}$, so many atoms emit a green photon before a collision even in denser air. Red light therefore requires thin air, and this is why it is seen in the upper part of the aurora.
 
 ### d)
 **Given:** band gap of silicon $E = 1.12\,\text{eV}$, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$ and the wavelength of the claim $1500\,\text{nm}$
@@ -46,7 +46,7 @@ The upper excited state decays in only about $0.7\,\text{s}$, so many atoms emit
 - For part b, $1190$ and $1200$ are accepted as the answer.
 
 ### Yleisiä virheitä
-- Green light is connected to the transition from the upper excited state to the ground state, because it has the "highest" level.
+- Green light is connected to the transition from the second excited state to the ground state, because it has the "highest" level.
 - Electronvolts are not converted to joules, and the wavelength gets an error by a factor of $10^{19}$.
 - In part b the kiloelectronvolts are not converted, so there is "one" excitation.
 - In part c it is explained that a red photon "does not have the strength" to come down or that dense air absorbs red light.
@@ -208,7 +208,7 @@ The upper excited state decays in only about $0.7\,\text{s}$, so many atoms emit
 | $14.0$ | $8.78$ |
 | $20.0$ | $11.82$ |
 
-<svg data-fig="fy8-s3-lin" viewBox="0 0 600 450" role="img" aria-label="Graph: the inverse of the square root of the net count rate, R to the power of minus one half, in the unit 10 to the power of minus 2 minutes to the power of one half, as a function of the distance r, from r = 2 to 22 centimetres. Nine black points: (2.0; 1.82), (3.0; 2.37), (4.0; 2.95), (5.0; 3.61), (6.0; 4.10), (8.0; 5.11), (10.0; 6.54), (14.0; 8.78) and (20.0; 11.82). A straight line has been fitted to the points and extended as a dashed line to the r axis, which it crosses at r = −1.3 cm. The point (20.0; 12.0) and the intercept (−1.3; 0) have been marked on the line." style="max-width:100%;font-size:24px">
+<svg data-fig="fy8-s3-lin" viewBox="0 0 600 450" role="img" aria-label="Graph: the inverse of the square root of the net count rate, R to the power of minus one half, in the unit 10 to the power of minus 2 minutes to the power of one half, as a function of the distance r, from r = −2 to 22 centimetres. Nine black points: (2.0; 1.82), (3.0; 2.37), (4.0; 2.95), (5.0; 3.61), (6.0; 4.10), (8.0; 5.11), (10.0; 6.54), (14.0; 8.78) and (20.0; 11.82). A straight line has been fitted to the points and extended as a dashed line to the r axis, which it crosses at r = −1.3 cm. The point (20.0; 12.0) and the intercept (−1.3; 0) have been marked on the line." style="max-width:100%;font-size:24px">
   <line x1="122.5" y1="396" x2="122.5" y2="84" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="155" y1="396" x2="155" y2="84" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="187.5" y1="396" x2="187.5" y2="84" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
