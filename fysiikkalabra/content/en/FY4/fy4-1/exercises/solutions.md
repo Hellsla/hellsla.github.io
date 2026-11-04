@@ -127,3 +127,98 @@ $$\begin{aligned} x &= 0 + 1.5\,\text{m/s} \cdot 33.33\ldots\,\text{s} \\ &= 50\
 **Substitution:** $v_\text{avg} = \dfrac{10\,\text{m} - 0\,\text{m}}{40\,\text{s} - 0\,\text{s}} = 0.25\,\text{m/s}$
 **Answer:** $0.25\,\text{m/s}$, two significant figures, because the final position $10\,\text{m}$ and the time $40\,\text{s}$ are given with two figures.
 **Reasonableness:** The robot went $30\,\text{m}$ forward and $20\,\text{m}$ back, so the displacement is $30\,\text{m} - 20\,\text{m} = 10\,\text{m}$ even though the distance was $50\,\text{m}$. The sign is positive, because at the end the robot is at a greater $x$ than at the beginning. The mean of the partial velocities $3.0\,\text{m/s}$, $0$ and $-1.0\,\text{m/s}$, $\dfrac{3.0 + 0 - 1.0}{3} = 0.67\,\text{m/s}$, would be wrong, because the sub-intervals are not of equal length.
+
+## fy4-1-L1-06
+**Find:** what a falling line in a $(t, x)$ graph tells about the motion.
+**Principle:** The slope of a line in a $(t, x)$ graph is the velocity $v = \dfrac{\Delta x}{\Delta t}$. When the line falls, the position decreases as time passes, so the slope and the velocity are negative. The graph shows position as a function of time, not the shape of the path.
+**Model answer:** The position decreases as time passes, so the velocity is negative and the object moves in the negative direction. The option in which the object moves downhill confuses the graph with a picture of the path: the object can move along a horizontal track even though the graph falls. A stopped object is at rest, and then the graph is horizontal. A straight line whose slope does not change describes a constant velocity, not a slowing motion. Time always increases as one goes to the right, so there is no object travelling backwards in time.
+**Reading the graph:** In a falling line $x$ is smaller when $t$ is greater, so $\Delta x < 0$ and $\Delta t > 0$. Then $\dfrac{\Delta x}{\Delta t} < 0$.
+
+## fy4-1-L1-07
+**Find:** which statement about the displacement of the whole walk is correct.
+**Principle:** The displacement is the final position minus the initial position, $\Delta x = x_2 - x_1$, and it does not depend on the route. The distance is the length of the route travelled. Partial displacements in different directions add up with their signs.
+**Model answer:** The walker returns to the starting point, so the final position is the same as the initial position and the displacement is $0\,\text{m}$. The same result is obtained by adding the partial displacements: $+40\,\text{m} + (-40\,\text{m}) = 0\,\text{m}$. The distance travelled is $40\,\text{m} + 40\,\text{m} = 80\,\text{m}$, but the distance is not the displacement. The statement that the displacement is $-40\,\text{m}$ would be true only for the last leg, not for the whole walk. The statement that only the outward leg counts forgets the return, which cancels the outward leg.
+
+## fy4-1-L1-08
+**Find:** what the error is in the student's calculation of the velocity.
+**Principle:** The slope of a line is the change in position divided by the change in time, $v = \dfrac{x_2 - x_1}{t_2 - t_1}$. A change is always a difference, final minus initial, so the position of the second point alone is not valid as the numerator and the time of the second point alone is not valid as the denominator.
+**Model answer:** The student divided the position of the second point, $13\,\text{m}$, by its time, $6.0\,\text{s}$, and did not calculate the differences. Correctly: $v = \dfrac{13\,\text{m} - 5.0\,\text{m}}{6.0\,\text{s} - 2.0\,\text{s}} = \dfrac{8.0\,\text{m}}{4.0\,\text{s}} = 2.0\,\text{m/s}$. The student's method would work only if the line started from the origin at the moment zero, but here the starting point is $(2.0\,\text{s};\, 5.0\,\text{m})$. The sign is not wrong, because the position increases and the velocity is positive. The velocity is not the sum of the positions divided by the sum of the times, because a sum does not describe a change.
+**Reading the graph:** Two points are read from the line: $(t_1;\, x_1) = (2.0\,\text{s};\, 5.0\,\text{m})$ and $(t_2;\, x_2) = (6.0\,\text{s};\, 13\,\text{m})$. The rise is $x_2 - x_1$ and the run is $t_2 - t_1$.
+
+## fy4-1-L2-05
+**Given:** the points $(t;\, x)$ of the table, starting from $(0.0\,\text{s};\, 0.48\,\text{m})$ and ending at $(5.0\,\text{s};\, 3.53\,\text{m})$; the motion is uniform
+**Find:** the velocity $v$ in the unit $\text{m/s}$, the initial position $x_0$ and the position as a function of time
+**Principle:** In uniform motion the $(t, x)$ points lie on a line. The measurements contain small errors, so the line is fitted through the points so that the points are evenly on both sides of it. The velocity is the slope of the line, and the initial position is the intercept of the line on the position axis.
+**Reading the graph:** The time axis is $t = 0 \ldots 5.0\,\text{s}$ and the position axis $0 \ldots 4\,\text{m}$. The points are marked and the line is drawn through them. The line passes close to the points $(0.0\,\text{s};\, 0.49\,\text{m})$ and $(5.0\,\text{s};\, 3.54\,\text{m})$. The slope is calculated from these points of the line that are far apart, not from adjacent measurement points.
+**Formula:** $v = \dfrac{x_2 - x_1}{t_2 - t_1}$ and $x = x_0 + v\,t$
+**Conversions:** The positions are in metres and the times in seconds, so no conversions are needed.
+**Substitution:**
+
+$$\begin{aligned} v &= \dfrac{3.54\,\text{m} - 0.49\,\text{m}}{5.0\,\text{s} - 0.0\,\text{s}} \\ &= 0.61\,\text{m/s} \end{aligned}$$
+
+The initial position is read from the intercept of the line: $x_0 \approx 0.49\,\text{m}$. So the position is $x = 0.49\,\text{m} + 0.61\,\text{m/s} \cdot t$.
+**Answer:** $0.61\,\text{m/s}$, two significant figures, because the positions of the table are given to two decimals and the fitting of the line limits the accuracy. The reading of the line can vary by a few per cent.
+**Reasonableness:** Check with the middle point: $0.49\,\text{m} + 0.61\,\text{m/s} \cdot 2.0\,\text{s} = 1.71\,\text{m}$, while the table has $1.67\,\text{m}$, so the difference is small. The position increases, so the velocity is positive. The velocity $0.61\,\text{m/s}$ suits a small cart.
+
+## fy4-1-L2-06
+**Given:** the positions in the table for carts A and B at the moments $0.0\,\text{s} \ldots 8.0\,\text{s}$; the motions are uniform
+**Find:** which cart is faster and the moment $t$ when the carts are at the same position, in the unit $\text{s}$
+**Principle:** The points of each cart lie on a line. The slope of the line is the velocity and the intercept is the initial position. The carts are at the same position when the lines intersect, that is, when the positions are equal at the same moment.
+**Reading the graph:** A line is fitted for A close to the points $(0.0\,\text{s};\, 1.0\,\text{m})$ and $(8.0\,\text{s};\, 13.0\,\text{m})$ and for B close to the points $(0.0\,\text{s};\, 20.0\,\text{m})$ and $(8.0\,\text{s};\, 5.7\,\text{m})$. From these we get $v_\text{A} = \dfrac{13.0\,\text{m} - 1.0\,\text{m}}{8.0\,\text{s}} = 1.5\,\text{m/s}$ and $v_\text{B} = \dfrac{5.7\,\text{m} - 20.0\,\text{m}}{8.0\,\text{s}} \approx -1.8\,\text{m/s}$, and the initial positions are $x_{0\text{A}} = 1.0\,\text{m}$ and $x_{0\text{B}} = 20.0\,\text{m}$. The speed of cart B is greater ($1.8\,\text{m/s} > 1.5\,\text{m/s}$), but it moves in the negative direction toward A.
+**Formula:** $x_\text{A} = x_{0\text{A}} + v_\text{A}\,t$ and $x_\text{B} = x_{0\text{B}} + v_\text{B}\,t$. From the condition $x_\text{A} = x_\text{B}$ we get
+$$t = \dfrac{x_{0\text{B}} - x_{0\text{A}}}{v_\text{A} - v_\text{B}}$$
+**Conversions:** All quantities are in the units $\text{m}$ and $\text{m/s}$, so no conversions are needed. The velocity of B is substituted as negative.
+**Substitution:**
+
+$$\begin{aligned} t &= \dfrac{20.0\,\text{m} - 1.0\,\text{m}}{1.5\,\text{m/s} - (-1.8\,\text{m/s})} \\ &= \dfrac{19.0\,\text{m}}{3.3\,\text{m/s}} \\ &= 5.8\,\text{s} \end{aligned}$$
+**Answer:** $5.8\,\text{s}$, two significant figures, because the velocities $1.5\,\text{m/s}$ and $1.8\,\text{m/s}$ have two figures.
+**Reasonableness:** At the moment $5.8\,\text{s}$ cart A is at the position $1.0\,\text{m} + 1.5\,\text{m/s} \cdot 5.8\,\text{s} = 9.7\,\text{m}$ and cart B at the position $20.0\,\text{m} - 1.8\,\text{m/s} \cdot 5.8\,\text{s} = 9.6\,\text{m}$, so the positions are equal to within the rounding accuracy. The moment is inside the measurement interval $0.0\ldots 8.0\,\text{s}$, and in the table the order of the carts changes between the moments $4.0\,\text{s}$ and $6.0\,\text{s}$, as it should.
+
+## fy4-1-L2-07
+**Given:** the points $(t;\, x)$ of the robot: $(0\,\text{s};\, 2.0\,\text{m})$, $(4.0\,\text{s};\, 14\,\text{m})$, $(10\,\text{s};\, 14\,\text{m})$, $(16\,\text{s};\, 5.0\,\text{m})$ and $(20\,\text{s};\, 5.0\,\text{m})$; between the points the motion is uniform
+**Find:** the time interval during which the robot moves in the negative direction, and the velocity $v$ during that interval in the unit $\text{m/s}$
+**Principle:** In each time interval the $(t, x)$ graph is a line, and its slope is the velocity. A falling part gives a negative velocity, a horizontal part a velocity of zero and a rising part a positive velocity. So the $(t, v)$ graph consists of horizontal lines.
+**Reading the graph:** The $(t, x)$ graph has four parts: a rising interval $0\ldots4.0\,\text{s}$, a horizontal interval $4.0\ldots10\,\text{s}$, a falling interval $10\ldots16\,\text{s}$ and a horizontal interval $16\ldots20\,\text{s}$. The falling interval is $10\ldots16\,\text{s}$. The velocity of the first interval is $\dfrac{14\,\text{m} - 2.0\,\text{m}}{4.0\,\text{s}} = 3.0\,\text{m/s}$. In the velocity graph the velocity is $3.0\,\text{m/s}$ during $0\ldots4.0\,\text{s}$, zero during $4.0\ldots10\,\text{s}$, negative during $10\ldots16\,\text{s}$ and zero during $16\ldots20\,\text{s}$.
+**Formula:** $v = \dfrac{x_2 - x_1}{t_2 - t_1}$
+**Conversions:** The positions are in metres and the times in seconds, so no conversions are needed.
+**Substitution:**
+
+$$\begin{aligned} v &= \dfrac{5.0\,\text{m} - 14\,\text{m}}{16\,\text{s} - 10\,\text{s}} \\ &= \dfrac{-9.0\,\text{m}}{6.0\,\text{s}} \\ &= -1.5\,\text{m/s} \end{aligned}$$
+**Answer:** $-1.5\,\text{m/s}$ during $10\ldots16\,\text{s}$, two significant figures like the difference of the positions, $9.0\,\text{m}$.
+**Reasonableness:** The position of the robot decreases during $10\ldots16\,\text{s}$, so the velocity must be negative. Checking backwards: $14\,\text{m} + (-1.5\,\text{m/s}) \cdot 6.0\,\text{s} = 5.0\,\text{m}$, which is the position of the table at the moment $16\,\text{s}$. In the horizontal parts the velocity is zero, because the position does not change.
+
+## fy4-1-L3-04
+**Given:** the positions of the program $x_\text{prog}$ at the moments $0.0\ldots5.0\,\text{s}$ (e.g. $(0.0\,\text{s};\, 0.30\,\text{m})$ and $(5.0\,\text{s};\, 3.52\,\text{m})$); the true length of the measuring tape $2.00\,\text{m}$, the length given by the program $1.60\,\text{m}$; the motion is uniform
+**Find:** the true velocity $v$ of the cart in the unit $\text{m/s}$, the moment when the true position is $6.0\,\text{m}$, and the reliability of the prediction
+**Principle:** In uniform motion the points lie on a line, and the velocity is the slope of the line. A scale error multiplies all lengths given by the program by the same number. It is found by comparing the true value of a known length with the value of the program, and the correction multiplies the velocity by the same number.
+**Reading the graph:** The points are marked in the $(t, x_\text{prog})$ graph and a line is fitted through them. The line passes close to the points $(0.0\,\text{s};\, 0.31\,\text{m})$ and $(5.0\,\text{s};\, 3.52\,\text{m})$. With them the velocity given by the program is $v_\text{prog} = \dfrac{3.52\,\text{m} - 0.31\,\text{m}}{5.0\,\text{s}} \approx 0.64\,\text{m/s}$ and the initial position of the program is $0.31\,\text{m}$.
+**Formula:** correction factor $k = \dfrac{\ell_\text{true}}{\ell_\text{prog}}$, true velocity $v = k\,v_\text{prog}$ and position $x = k\,(x_{0,\text{prog}} + v_\text{prog}\,t)$
+**Conversions:** All lengths are in metres and the times in seconds, so no unit conversions are needed.
+**Substitution:**
+
+$$\begin{aligned} k &= \dfrac{2.00\,\text{m}}{1.60\,\text{m}} \\ &= 1.25 \end{aligned}$$
+
+$$\begin{aligned} v &= 1.25 \cdot 0.64\,\text{m/s} \\ &= 0.80\,\text{m/s} \end{aligned}$$
+
+The true initial position is $1.25 \cdot 0.31\,\text{m} = 0.39\,\text{m}$, so from the condition $x = 6.0\,\text{m}$ we get
+
+$$\begin{aligned} t &= \dfrac{6.0\,\text{m} - 0.39\,\text{m}}{0.80\,\text{m/s}} \\ &= 7.0\,\text{s} \end{aligned}$$
+**Answer:** the true velocity is $0.80\,\text{m/s}$, two significant figures like the values of the measuring tape. The $0.64\,\text{m/s}$ given by the program is $20\,\%$ too small. The cart is at the true position $6.0\,\text{m}$ after about $7.0\,\text{s}$.
+**Reasonableness:** The measuring tape looked shorter than it is, so all lengths of the program are too small and the correction factor must be greater than one, as $1.25$ is. Checking backwards: $0.80\,\text{m/s} \cdot 5.0\,\text{s} = 4.0\,\text{m}$ is the true displacement of the cart, and the displacement of the program, $3.2\,\text{m}$, is $0.8$ times that. The prediction $7.0\,\text{s}$ is beyond the end of the measurement interval: the measurement ends at the moment $5.0\,\text{s}$, so the prediction extends about $40\,\%$ of the measuring time further. It is reliable only if the track is level and the cart continues at a constant velocity and the track does not end before $6.0\,\text{m}$. The scale error is systematic: it distorts every measurement in the same direction by the same factor, so repeating the measurements does not remove it in the mean. A random error, on the other hand, scatters the points on both sides of the line and decreases with repetition. The error is corrected only by calibrating the scale with a known length from the same distance as the track of the cart.
+
+## fy4-1-L3-05
+**Given:** the points $(t;\, x)$ of the truck at the moments $0\ldots40\,\text{s}$, e.g. $(0\,\text{s};\, 205\,\text{m})$ and $(40\,\text{s};\, 598\,\text{m})$; police car: $x = 0$ at the moment $t_0 = 8.0\,\text{s}$, velocity $v_\text{P} = 16\,\text{m/s}$
+**Find:** the position $x$ where the police car catches up with the truck, in the unit $\text{m}$, and the reliability of the prediction
+**Principle:** The motion of the truck is uniform, so its $(t, x)$ points are fitted with a line whose slope is the velocity and whose intercept is the initial position. The position of the police car is the equation of uniform motion, where the time is counted from its moment of passing. The car catches up with the truck when the positions are equal at the same moment.
+**Reading the graph:** The points are marked in the graph and a line is fitted through them. The line passes close to the points $(0\,\text{s};\, 203\,\text{m})$ and $(40\,\text{s};\, 598\,\text{m})$. From them the velocity of the truck is $v_\text{T} = \dfrac{598\,\text{m} - 203\,\text{m}}{40\,\text{s}} \approx 9.9\,\text{m/s}$ and the initial position $x_{0\text{T}} \approx 203\,\text{m}$.
+**Formula:** truck $x_\text{T} = x_{0\text{T}} + v_\text{T}\,t$ and police car $x_\text{P} = v_\text{P}\,(t - t_0)$. From the condition $x_\text{T} = x_\text{P}$ we get
+$$t = \dfrac{x_{0\text{T}} + v_\text{P}\,t_0}{v_\text{P} - v_\text{T}}$$
+and the position is $x = x_{0\text{T}} + v_\text{T}\,t$.
+**Conversions:** All quantities are in the units $\text{m}$, $\text{s}$ and $\text{m/s}$, so no conversions are needed.
+**Substitution:**
+
+$$\begin{aligned} t &= \dfrac{203\,\text{m} + 16\,\text{m/s} \cdot 8.0\,\text{s}}{16\,\text{m/s} - 9.9\,\text{m/s}} \\ &= \dfrac{331\,\text{m}}{6.1\,\text{m/s}} \\ &= 54\,\text{s} \end{aligned}$$
+
+$$\begin{aligned} x &= 203\,\text{m} + 9.9\,\text{m/s} \cdot 54\,\text{s} \\ &= 7.4 \cdot 10^2\,\text{m} \end{aligned}$$
+**Answer:** $7.4 \cdot 10^2\,\text{m}$ or about $740\,\text{m}$, two significant figures, because the difference of the velocities, $16 - 9.9 = 6.1\,\text{m/s}$, limits the accuracy.
+**Reasonableness:** The position of the police car at the moment $54\,\text{s}$ is $16\,\text{m/s} \cdot (54\,\text{s} - 8.0\,\text{s}) = 7.4 \cdot 10^2\,\text{m}$, the same as the position of the truck, so the solution checks out. The police car is faster than the truck, so catching up is possible. The prediction is uncertain, because the data ends at the moment $40\,\text{s}$ and the catching up happens at the moment $54\,\text{s}$, that is $14\,\text{s}$ outside the data. The prediction assumes that the truck keeps driving at the same velocity along the same straight road all the time, which the data does not prove. A small error in the velocity of the truck grows in the prediction, because the difference of the velocities is small: if the velocity of the truck were $0.2\,\text{m/s}$ greater, the time would be about $3\,\%$ longer.
