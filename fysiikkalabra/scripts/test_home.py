@@ -65,7 +65,10 @@ for lang in i18n.languages():
     up_rows = re.findall(ROW, upcoming.group(1), re.S) if upcoming else []
     up = [c for _, c, _ in up_rows]
     expect(f"{lang}: the other modules are dimmed under Tulossa, linked to their pages", up == [c for c in curriculum if c not in want_left] and all(d for d, _, _ in up_rows), up)
-    expect(f"{lang}: Tulossa and the school's courses in the right column, under small headings",
+    if not [c for c in curriculum if c not in want_left]:  # every module published (teacher 2026-11-04: FY6–FY8 out of Tulossa)
+        expect(f"{lang}: no Tulossa heading when every module is published; the school's courses head the right column",
+               not upcoming and T("site.upcoming") not in home[home.find('class="mod-cols"'):] and re.search(r'<div class="mod-side">(<h3 class="mod-group">[^<]+</h3><ul class="mod-list local-list">|</div>)', home) is not None)
+    else: expect(f"{lang}: Tulossa and the school's courses in the right column, under small headings",
            bool(upcoming) and re.search(r'<div class="mod-side"><h3 class="mod-group">' + re.escape(T("site.upcoming")) + '</h3><ul class="mod-list up-list">', home) is not None)
     mods = {c: (r, curriculum[c]["title"]) for _, c, r in rows + up_rows}
     for li in re.findall(r"<li><a .*?</li>", home[home.find('class="mod-cols"'):], re.S):
@@ -321,8 +324,10 @@ with sync_playwright() as pw:
                 if name == "index.html" and w == 1440:   # hover: the row is tinted and its arrow shows; a Tulossa row is not tinted
                     pg.hover('.mod-list:not(.up-list) .mod-row'); pg.wait_for_timeout(50)
                     hov = pg.evaluate("(() => { const a = document.querySelector('.mod-list:not(.up-list) .mod-row'); return [getComputedStyle(a).backgroundColor, getComputedStyle(a.querySelector('.mod-go')).opacity]; })()")
-                    pg.hover('.up-list .mod-row'); pg.wait_for_timeout(50)
-                    dim = pg.evaluate("getComputedStyle(document.querySelector('.up-list .mod-row')).backgroundColor")
+                    dim = "rgba(0, 0, 0, 0)"   # no Tulossa row when every module is published
+                    if pg.query_selector('.up-list .mod-row'):
+                        pg.hover('.up-list .mod-row'); pg.wait_for_timeout(50)
+                        dim = pg.evaluate("getComputedStyle(document.querySelector('.up-list .mod-row')).backgroundColor")
                     expect(f"{lang}: hover tints a row and shows its arrow; a Tulossa row stays untinted", hov[0] != "rgba(0, 0, 0, 0)" and hov[1] == "1" and dim == "rgba(0, 0, 0, 0)", (hov, dim))
                 if name == "index.html" and w == 390:
                     top = pg.evaluate("document.querySelector('.mod-row').getBoundingClientRect().top")
