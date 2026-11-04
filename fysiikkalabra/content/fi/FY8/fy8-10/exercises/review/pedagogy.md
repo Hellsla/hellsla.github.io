@@ -1,17 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: 848b3b84e36daf0e
+CONTENT-HASH: b4b0be010b9da758
 
 ## Blocking
-(none)
+- None. Lead-length rule: no new task lead is over ~45 words in one paragraph (longest L3-05: 43 words, already in 2 paragraphs).
 
 ## Polish
-- exercises.json fy8-10-L1-04 — round-1 note still open: repeats the lesson's 1,00 g calculation; change the mass or context.
-- exercises.json fy8-10-L2-03 — repeats L1-02's nucleus (O-16); a different nucleus would make L2 more than a unit conversion.
-- exercises.json fy8-10-L3-03 — non-nuclear context needing specific heat from another course; acceptable as an unfamiliar context.
+- fy8-10-L2-05 asks for Δm, E_B and E_B/A for eight nuclides (24 values) plus ordering; heavy for level 2. Consider five nuclides or add "voit käyttää taulukkolaskentaa".
+- fy8-10-L1-08 and L2-07 both test the E_B/A peak at iron/nickel in MC form; the second is the deeper one, but vary L1-08 (e.g. read a value off the graph) if a replacement is wanted.
+- fy8-10-L1-06 option 2 feedback: "Tämä on yleinen virhekäsitys, joka on käännetty väärinpäin" is awkward; use "Tämä on väärinpäin: ytimen hajottaminen vaatii energiaa eikä vapauta sitä."
+- fy8-10-L1-07 is the same skill as the existing L1-04/L1-05 (mass to MeV); acceptable as the electron-rest-energy link.
+- fy8-10-L3-04 b): "vertaa tulosta a-kohtaan" gets a better question if it asks which of the two methods is more accurate and why (the solution already explains rounding).
 
 ## Checked
-- Delta: L3-01 now ends with a single question and a single numeric answer (round-1 polish fixed); answer 20,58 MeV recomputed (0,022091 u · 931,5).
-- solutions.md L3-01 Järkevyys now states He-3 as 7,7 MeV, 2,6 MeV per nucleon: readable against 7,07 MeV; "lähes kolme kertaa" correct (2,9).
-- L1-01 and L1-03 solution answer lines reworded consistently with the lesson's sig-fig convention; L2-03 answers.py comment corrected (2,04479e-11 J rounds to the same 2,045).
-- Levels 5/4/3 per course; solutions keep Annettu-Kysytty-Periaate-Kaava-Muunnokset-Sijoitus-Vastaus-Järkevyys.
-- Did not open captures beyond the packet list; the delta touches text only.
+- Recomputed: L1-07 0,511 MeV; L2-05 all eight Δm/E_B/(E_B/A) and the order (Ni-62 8,795 MeV); L2-06 31,99 MeV and the electron-mass explanation; L3-04 Q = 173,29 MeV (both ways), 7,11·10^10 J; L3-05 3,51·10^18 kg, 0,712 %, 4,93·10^20 kg, 3,5 %.
+- L2-06 error analysis diagnoses the real error (proton mass with atomic mass).
+- L3-05 d) justifies the constant-power assumption quantitatively.
+- Every new solution has principle, conversions, substitution and a sanity check.
+- MC distractors (L1-06, L1-08, L2-07) are misconceptions with repairing feedback.
+- Levels fit the plan; no duplicate of existing tasks.
+- Screenshots: only 1280 px captures in the packet; not opened.

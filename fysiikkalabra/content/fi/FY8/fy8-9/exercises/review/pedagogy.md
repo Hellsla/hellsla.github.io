@@ -1,18 +1,22 @@
-VERDICT: PASS
-CONTENT-HASH: 99b718d6f375af6f
+VERDICT: FAIL
+CONTENT-HASH: 796546d7348c683e
 
 ## Blocking
+- exercises.json fy8-9-L2-05 (text, part b) and solutions.md fy8-9-L2-05 — The hint "320 s:n kohdalla nettopulssimäärä on pudonnut suunnilleen neljäsosaan" leads a student to T = 320/2 = 160 s, but the accepted answer is 149 s ±6 % (140–158 s), so the student who follows the hint is marked wrong. The solution also says 283/64 = 4,42 is "lähes kaksi puoliintumisaikaa", but 4,42 > 4, so it is slightly MORE than two (2,14). Fix: write the hint as "hieman alle neljäsosaan (64 on noin 23 % luvusta 283)", and in the solution "hieman yli kaksi puoliintumisaikaa"; alternatively drop the hint or raise the tolerance to 0,08.
 
 ## Polish
-- exercises.json fy8-9-L1-01 — same structure and equation as the worked example (A0, T, t → A, iodine → technetium); acceptable for level 1 but gives no new skill — vary it (e.g. ask t from A/A0 at a non-integer ratio) or accept as the warm-up.
-- exercises.json fy8-9-L2-04 — level 2 is "convert units or combine two equations", but this needs neither (same law, mass instead of N, no conversion) — add a conversion (e.g. give t in months or mass in g) or move it to level 1.
-- exercises.json level 3 — the slot goal "hajoamisen satunnaisuus" has no task; add a short reasoning task (e.g. a sample of 10 nuclei after one half-life: what can and cannot be predicted).
-- solutions.md fy8-9-L3-01 and L3-02 — the step from $\left(\tfrac{1}{2}\right)^{t/T_{1/2}} = \tfrac{A}{A_0}$ to the logarithm form is skipped; the lesson never solves for the exponent. Add "Otetaan molemmista puolista luonnollinen logaritmi: $\tfrac{t}{T_{1/2}}\ln\tfrac{1}{2} = \ln\tfrac{A}{A_0}$."
-- exercises.json fy8-9-L1-03 and L2-01 — both ask λ from T_1/2; L2-01 differs only in the unit conversion. Fine, but L1-03 could ask for the fraction decaying per year to link to the meaning of λ.
+- fy8-9-L1-07 is the same type as the existing L1-02 (percent remaining, integer half-lives); consider making the data different in kind (e.g. a graph reading) or accept it as practice.
+- fy8-9-L2-05 is marked kind "graph", but no graph is asked for (the plan says to plot on a log scale). Add a short c) "piirrä logaritmiasteikolla" or drop "graph".
+- fy8-9-L2-07 (background mean, net rate, √N) is closer to level 1 in demand; fine as the experiment task, but keep it as the first L2 data task.
+- fy8-9-L3-04 c): "noin 240 000 vuodessa" assumes Pu-239 alone dominates the activity; say "jos plutonium-239 on määräävä nuklidi".
+- fy8-9-L3-05: the lesson does not teach effective half-life; the task text explains λ_eff = λ_fys + λ_bio itself, which is good. Keep.
 
 ## Checked
-- Levels: L1 single equation (5), L2 conversions and mass/number (4), L3 reasoning (carbon dating, background subtraction, mixed sample); rising demand.
-- Answers verified against solutions (92,8 MBq; 16,3 %; 0,0230 1/a; 13,3 kBq; 24,0 h; 1,00·10^-6; 7,3·10^14; 777 MBq; 0,695 mg; 7960 a; 5,05 min; 6,97 %).
-- Solutions follow Annettu–Kysytty–Periaate–Kaava–Muunnokset–Sijoitus–Vastaus–Järkevyys; principle explained, plausibility checks real.
-- Contexts authentic (PET, Cs/I fallout, radiocarbon, smoke detector); no task names the formula in the prompt.
-- L3-02 background subtraction and L3-03 two isotopes target real misconceptions; Finnish and units correct.
+- All new answers recomputed: L1-06 (1/4), L1-07 3,125 %, L1-08 17,5 a, L2-06 60 s, L2-07 33,2 1/s, L3-04 2,68 d (200 MBq, 80 %), L3-05 4,96 d, 50,1 %.
+- L2-06 error analysis: student's 70 s explained correctly (background does not decay).
+- L3-04 and L3-05 solutions are complete (principle, conversion, substitution, sanity check).
+- MC distractors are real misconceptions with repairing feedback (L1-06).
+- Lead-length rule: no new lead over ~45 words in one paragraph (L3-05 has 70 words, already in 2 paragraphs).
+- Levels fit the plan in docs/exercise-bank/FY8.md; no duplicate of existing tasks beyond L1-07/L1-02 similarity.
+- Finnish and cases after number+unit are fine.
+- Screenshots: only 1280 px captures in the packet; I did not open them.

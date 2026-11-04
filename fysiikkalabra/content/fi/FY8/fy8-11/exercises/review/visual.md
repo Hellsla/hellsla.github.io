@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: d88ebf005f47e7f8
+CONTENT-HASH: 82dfe66a8cba123a
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] solutions.md fy8-11-L1-03 — round-1 polish adopted ("$349$ neutronia, ja määrä on keskiarvo…"); no further action. The answer line is long on a phone but wraps cleanly.
+- [Minor] exercises.json 11-8, 11-19 — unit labels beside the answer fields ("10^-11 J", "a") are plain text; project-wide field convention — leave.
+- [Minor] solutions.md 11-13 Vastaus — "Neutronia kohdan b) tuloksena; kasvukerroin on ..." reads as a fragment; write "Neutroneja on $N_{50} \approx 1860$ kohdan b) mukaan; kasvukerroin on ...".
+- [Minor] solutions.md 11-8 Vastaus — "Eli $3{,}20$ yksiköissä $10^{-11}\,\text{J}$" is clumsy; "Siis $3{,}20 \cdot 10^{-11}\,\text{J}$".
+- [Minor] 11-14 — the table has no column for the unit-labelled row heading "Voimala/Reaktori"; fine, but the caption could carry "nettosähköteho (MW)".
 
 ## Checked
-- Delta: opened open-exercises-L3-1280-1 (L3-01: data sentence before the bold question, assumption sentence readable, Annettu and staged chains aligned, answer box inside the card) and read the diff of L2-04, L1-03, L1-04, L1-05, L2-02 wording and Järkevyys lines.
-- Task graph fig-18 break mark confirmed in the lesson's contact-2 (#20).
-- Maths: units upright with thin space, `\cdot`, decimal commas in all changed lines.
+- 1280 px captures, every solution open: L1 parts 5-8 (11-6, 11-7, 11-8), L2 parts 4-9 (11-12 to 11-15 in full), L3 parts 5-9 (11-19, 11-20 in full). Tables, aligned chains, answer boxes render cleanly; no clipping or red KaTeX. Only 1280 px exercise captures exist; 360 px rests on check_layout (ok).
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4
