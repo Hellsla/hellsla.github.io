@@ -1,14 +1,22 @@
 VERDICT: PASS
-CONTENT-HASH: 7fd24baac89d040d
+CONTENT-HASH: d8785cdaf35b2966
+Mode: full
+Round: 1
 
 ## Blocking
+(none)
+
+## Fixed
 (none)
 
 ## Polish
 (none)
 
 ## Checked
-- exercises en (0-change delta): theory-1280-2: hc derivation now four aligned rows (=, ≈, = in one column), no overflow, units upright; surrounding text intact. Split resolves the 390 px width.
+- review/shots/fy8-1-open-exercises-L3-1280-5.png (L3-04 task and L2-07 solution end): LaTeX, units and table render; decimal point correct.
+- review/shots/fy8-1-open-exercises-L2-1280-8.png (L2-06 task, data table, answer box, solution start): table columns aligned, nothing clipped.
+- Task texts in English are the situation first and the question last, each part a) b) c) on its own line.
+- Data tables: captions and headings translated, no Finnish left; numbers match fi.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+illustrations 4 · typography 5 · language 5 · accessibility 4

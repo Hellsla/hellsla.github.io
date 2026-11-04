@@ -133,7 +133,7 @@
 ## fy8-1-L2-07
 **Given:** points $(6.5 \cdot 10^{14}\,\text{Hz};\ 0.55\,\text{eV})$, $(8.0 \cdot 10^{14}\,\text{Hz};\ 1.17\,\text{eV})$ and $(9.5 \cdot 10^{14}\,\text{Hz};\ 1.79\,\text{eV})$; the student's reading $-2.1\,\text{eV}$
 **Find:** a) the student's error, b) the work function $W$ in electronvolts
-**Principle:** According to the photoelectric equation $E_\text{k,max} = hf - W$ is a line in the frequency. When $f = 0$, $E_\text{k,max} = -W$, so the intersection with the vertical axis gives the negative of the work function. At the threshold frequency $E_\text{k,max} = 0$, so the threshold frequency is read at the point where the line crosses the horizontal axis, that is the frequency axis.
+**Principle:** According to the photoelectric equation, $E_\text{k,max} = hf - W$ is a straight line as a function of the frequency. When $f = 0$, $E_\text{k,max} = -W$, so the intersection with the vertical axis gives the negative of the work function. At the threshold frequency $E_\text{k,max} = 0$, so the threshold frequency is read at the point where the line crosses the horizontal axis, that is the frequency axis.
 **Reading the graph:** The student's reading $-2.1\,\text{eV}$ is the intersection with the vertical axis, and its unit is the unit of energy, eV, not the unit of frequency, Hz. The threshold frequency is the intersection with the horizontal axis. The slope of the line is calculated from the first and the last point.
 **Formula:** $k = \dfrac{E_3 - E_1}{f_3 - f_1}$; at the threshold frequency $0 = E_1 + k(f_0 - f_1)$, so $f_0 = f_1 - \dfrac{E_1}{k}$, and $W = kf_0$
 **Conversions:** Not needed: the energy is in electronvolts and the frequency in hertz, so the slope is in the unit $\text{eV/Hz}$.
