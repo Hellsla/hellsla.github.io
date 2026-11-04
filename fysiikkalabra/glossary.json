@@ -4465,5 +4465,38 @@
       "alkuräjähdys"
     ],
     "locked": false
+  },
+  {
+    "term": "röntgensäteily",
+    "definition": "Suurienerginen fotonisäteily, joka syntyy, kun nopeat elektronit jarruttavat aineessa, esimerkiksi röntgenputken anodissa. Se on ionisoivaa ja vaimenee aineessa kuten gammasäteily; kuvauksessa fotonien energia on tyypillisesti kymmeniä kiloelektronivoltteja.",
+    "lessons": [
+      "fy8-14"
+    ],
+    "see_also": [
+      "puoliintumispaksuus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "merkkiaine",
+    "definition": "Radioaktiivinen nuklidi, joka on liitetty elimistön käyttämään yhdisteeseen, jotta se kertyy tutkittavaan elimeen. Kehon ulkopuolinen ilmaisin havaitsee sen säteilyn, joten kuva näyttää elimen toiminnan.",
+    "lessons": [
+      "fy8-14"
+    ],
+    "see_also": [
+      "röntgensäteily"
+    ],
+    "locked": false
+  },
+  {
+    "term": "sädehoito",
+    "definition": "Syövän hoito ionisoivalla säteilyllä, jonka suuri annos tappaa kasvaimen solut. Säteily annetaan yleensä monesta suunnasta ja moneen kertaan jaettuna, jotta terve kudos saa mahdollisimman pienen annoksen.",
+    "lessons": [
+      "fy8-14"
+    ],
+    "see_also": [
+      "absorboitunut annos"
+    ],
+    "locked": false
   }
 ]
