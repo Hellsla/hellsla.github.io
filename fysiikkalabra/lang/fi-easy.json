@@ -29,7 +29,6 @@
     "breadcrumb": "Polku",
     "footer": "Ruukkilabra · lukion fysiikka, LOPS 2019",
     "back_to_course": "← {{course}}-moduuli",
-    "back_to_portfolio": "← Takaisin portfolioon",
     "course_type_required": "Pakollinen",
     "course_type_optional": "Valinnainen",
     "lessons_planned": {

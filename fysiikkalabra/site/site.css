@@ -77,7 +77,8 @@ header.top nav>a,.lang-menu>summary{display:inline-flex;align-items:center;min-h
 header.top nav>a:hover,.lang-menu>summary:hover{color:var(--ink);background:var(--bg-tint)}
 header.top nav>a:active,.lang-menu>summary:active{background:var(--line)}
 @media (max-width:29.99rem){header.top nav>a.nav-modules{display:none}.brand-name small{letter-spacing:.06em}.lang-menu>summary{padding:0 10px}}
-@media (max-width:39.99rem){header.top nav>a.nav-reading,header.top nav>a.nav-study,header.top nav>a.nav-about{display:none}}   /* Lukuvinkit gives way first on a phone; the footer of every page links to it */
+@media (max-width:39.99rem){header.top nav>a.nav-reading,header.top nav>a.nav-study{display:none}}   /* Lukuvinkit gives way first on a phone; the footer of every page links to it */
+@media (max-width:51.99rem){header.top nav>a.nav-about{display:none}}   /* Sivustosta (front page only) needs about 800 px to keep the header on one row; the footer links it */
 .visually-hidden{position:absolute!important;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
 /* the language control: the current language on a quiet button, the others in a small panel (a <details>, no script) */
 .lang-menu{position:relative;margin:0}
@@ -978,3 +979,16 @@ strong.kc-ready{font-weight:inherit}
 .kc-done-actions button.kc-primary{border-color:var(--accent-deep);background:var(--accent-deep);color:#fff}
 .kc-static-module h2{margin-top:2rem}
 @media print{.kc-chips,.kc-pop,.kc-turn,.kc-actions,.kc-face{display:none!important}.kc-inner{transform:none!important}.kc-back{transform:none;backface-visibility:visible;-webkit-backface-visibility:visible;min-height:0}}
+
+/* Sivustosta in Kiviruukin lukio's colours (teacher 2026-11-04, after his school pages): navy #012169, pink #fca5c7 */
+:root:has(main.about-page){--bg:#fff;--bg-tint:#f3f5f9;--ink:#0b1638;--ink-2:#3c4563;--line:#dfe5eb;--line-2:#ecf0f4;
+  --accent:#012169;--accent-deep:#012169;--accent-soft:#fff0f6;--brand-green:#012169;--kr-navy:#012169;--kr-navy-deep:#00174f;--kr-pink:#fca5c7}
+body:has(main.about-page){background-image:none}
+.about-page .about-hero{margin:0 0 2.25rem;padding:2rem 2rem 1.75rem;border-radius:var(--card-radius);color:#fff;
+  background:linear-gradient(135deg,var(--kr-navy) 0%,var(--kr-navy-deep) 100%)}
+.about-page .about-logo{display:block;width:128px;height:auto;margin:0 0 1.75rem}
+.about-page .about-hero h1{margin:0;color:#fff;display:flex;align-items:center;gap:.75rem}
+.about-page .about-hero h1::before{content:"";flex:none;width:26px;height:3px;background:var(--kr-pink)}
+.about-page h2{color:var(--kr-navy);padding-left:.75rem;border-left:4px solid var(--kr-pink)}
+.about-page strong{color:var(--kr-navy)}
+@media (max-width:600px){.about-page .about-hero{padding:1.5rem 1.25rem 1.25rem}.about-page .about-logo{width:104px;margin-bottom:1.25rem}}
