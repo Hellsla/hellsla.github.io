@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: f79a923c1c959a87
+CONTENT-HASH: d97dd20b77970096
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
 
 ## Checked
-batch delta review: added meta.json key_concepts (Luvun tärkeät käsitteet) checked term by term against the lesson's own definitions, summary and the physics guardrails; no number, formula or choice changed. Terms: seisova aalto (wave and its reflection in opposite directions), solmu (no motion), kupu (largest vibration), perustaajuus (lowest) and resonanssi (driven at its own natural frequency) agree with the lesson.
+- delta review: the only change since my last PASS is the organ-pipe Find-the-error prompt, whose display formula is split with `aligned` into two rows; f_1 = v/(2L) = 340 m/s / (2 * 0.85 m) = 200 Hz is unchanged, still the deliberate error (closed pipe: v/(4L) = 100 Hz).
+- Choices, correct flags and feedback untouched; exactly one correct option remains.

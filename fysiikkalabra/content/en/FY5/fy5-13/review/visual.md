@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 5f64a5298fb6c287
+CONTENT-HASH: 705d3af808b796fe
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- [Minor] review/shots: no capture shows the optional Find-the-error item opened; I rendered it myself at 390 px (opened details) and checked it there. Consider adding it to the captures.
 
 ## Checked
-- batch delta review: opened fy5-13-1280-0 and fy5-13-360-0; photo loads, floats right beside the text at 1280 px and sits in the column at 360 px without clipping or overflow; caption and alt are natural English, factual and consistent with the picture and the adjacent paragraph; credit line present under the caption.
+- Own 390 px render of the opened Find-the-error item: the aligned display has two rows with the = signs aligned, fractions in display size, units upright with thin space, no clipping; the formula scrolls 306/306 px (no overflow) and the page scrollWidth is 390 (no horizontal scroll).
+- Contact captures fy5-13-stage-sovella-390-2.png (fi): the item sits collapsed and the surrounding layout is intact.
+- Decimal separator matches the language; text outside the formula unchanged.
