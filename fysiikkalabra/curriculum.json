@@ -744,6 +744,7 @@
     "op": 2,
     "planned_lessons": 16,
     "type": "valtakunnallinen valinnainen",
+    "exercise_total": 20,
     "tavoitteet": [
       "osaa tutkia kokeellisesti voimaan ja liikkeeseen liittyviä ilmiöitä",
       "osaa tuottaa ja analysoida graafisia esityksiä mittausaineistosta",
