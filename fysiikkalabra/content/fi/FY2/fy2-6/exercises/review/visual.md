@@ -1,18 +1,20 @@
 VERDICT: FAIL
-CONTENT-HASH: db6b0a8bbd9663c1
+CONTENT-HASH: 29e577cbf20e55f6
+Round: 2
 
 ## Blocking
-- [Major] L2-06, L2-07, L3-04, L3-05 text (open-exercises-L2-1280-7/-8..., L3-1280-4, -6; contact-5 #57-#59, contact-6 #64, #66) — the paragraph break (\n\n) before a), b), c) in the task text is lost in the render (scripts/inquiry.py task_text/split_prompt writes one <p>), so the sub-tasks run together in one 80-130 word block, partly or wholly in bold, and the instruction for the answer box ("Vastaa laatikkoon ...") is buried in the middle of it — a student cannot see the parts or which one the box takes — fix: in task_text split the text at blank lines into separate paragraphs (one <p> or list row per a)–d), the closing "Anna/Vastaa ... laatikkoon" sentence last as the bold ask); no content change needed, re-capture afterwards.
+- [Major] L3-05 data table (open-exercises-L3-1280-7) — the table is wider than the 664 px task column because the last row holds long text ("Sääriippuvainen, ei säädettävissä"); the whole "Ydinvoimala" column (1200, 90, 6000, 60, 12) is off screen behind a sideways scroll even at 1280 px, and part a)–d) cannot be started without scrolling to it — fix: shorten the last row's cells in exercises.json to "Sääriippuvainen" and "Tasainen" (the solution already explains the control question), and shorten the first column labels if the table still overflows at 360 px.
 
 ## Polish
-- [Minor] L3-05 solution, Sijoitus (contact-6 #67-#68) — a), b), c) calculations for two plants are rows inside prose chains; set each plant's step as its own aligned row.
-- [Minor] L2-05 text — "Vastaa muutoksella." is a clipped sentence; "Anna vastaus muutoksena prosenttiyksikköinä."
-- [Minor] L2-06 text — the student's claim is in straight quotes "..."; use Finnish ”...” both ends.
+- [Minor] L2-05 and L2-07, "Vastaus" disclosure (L2-1280-5, L2-1280-8) — the revealed answer is the bare number "23" and "1,6" without the unit the box shows (prosenttiyksikköä, milj. t) — write the unit in the solution's Vastaus line inside the maths, e.g. "$23\,\text{prosenttiyksikköä}$" and "$1{,}6\,\text{milj. t}$".
+- [Minor] all data tables — numeric column headers sit left of their right-aligned numbers — right-align numeric headers.
+- [Minor] L3-05 solution, Sijoitus (L3-1280-7, -8) — a), b), c) per plant are now aligned rows, readable; no further action.
 
 ## Checked
-- contact-5, contact-6 (all new tasks triaged: L1-06..08, L2-05..07, L3-04..05)
-- open-exercises-1280-x via contact-5 #49-#52 (L1-06..08), #56-#60 (L2-05..07), #61-#68 (L3-04, L3-05)
-- Tables (decimal comma, units in headers), MC feedback blocks, solution rows and fractions legible; no clipping; no 360 px exercise capture exists
+- Round 1 Blocking (paragraph break lost in L2-06, L2-07, L3-04, L3-05): resolved; a)–d) are own bold paragraphs with the box instruction in the right part.
+- Round 1 Polish: L2-05 "Anna vastaus muutoksena prosenttiyksikköinä." done; L2-06 Finnish quotes ”…” done; L3-05 Sijoitus rows done.
+- L2-1280-5, -6, -8, L3-1280-4, -6, -7, -8, -9 (L2-05, L2-06, L2-07 tables and solutions; L3-04 and L3-05 text, tables, solutions).
+- 1280 px only (no 360 px exercise capture; layout checks clean).
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 4 · accessibility 3

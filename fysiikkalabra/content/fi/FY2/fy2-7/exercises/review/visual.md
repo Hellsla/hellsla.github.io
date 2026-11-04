@@ -1,16 +1,19 @@
-VERDICT: FAIL
-CONTENT-HASH: dca6b1359dc2ef02
+VERDICT: PASS
+CONTENT-HASH: 72f39e958439a660
+Round: 2
 
 ## Blocking
-- [Major] L2-05, L2-06, L3-04, L3-05 text (contact-5 #61-#63; contact-6 #64, #70-#72) — the paragraph break (\n\n) before a), b), c) in the task text is lost in the render (scripts/inquiry.py task_text/split_prompt writes one <p>), so the sub-tasks run together in one 80-130 word block, partly or wholly in bold, and the instruction for the answer box ("Vastaa laatikkoon ...") is buried in the middle of it — a student cannot see the parts or which one the box takes — fix: in task_text split the text at blank lines into separate paragraphs (one <p> or list row per a)–d), the closing "Anna/Vastaa ... laatikkoon" sentence last as the bold ask); no content change needed, re-capture afterwards.
 
 ## Polish
-- [Minor] L3-05 solution, Sijoitus (open-exercises-L3-1280-7) — eight calculations in one prose paragraph, broken mid-chain at "0,015 ·"; give each period its own row (aligned).
+- [Minor] L3-05, Järkevyys (L3-1280-8) — the inline "$0{,}041 \cdot 1016\,\text{MWh} \approx 42\,\text{MWh}$" breaks after the "·" at 1280 px; rewrite as a short separate sentence or let the chain rows handle it.
+- [Minor] all data tables (L2-05, L2-06, L3-04, L3-05) — numeric column headers sit left of their right-aligned numbers — right-align numeric headers.
 
 ## Checked
-- contact-5, contact-6, contact-7 triaged (L1-06..08, L2-05..07, L3-04..05)
-- open-exercises-L3-1280-7 and -8 at full size (L3-05 table, solution, Vastaus, Järkevyys)
-- MC feedback (L1-06, L2-07), tables, fractions legible; no clipping; no 360 px exercise capture exists
+- Round 1 Blocking (paragraph break lost in L2-05, L2-06, L3-04, L3-05): resolved; a)/b)/c) are own bold paragraphs, the box instruction ("Anna vastaus prosentteina", "megawattitunteina") sits in the part it belongs to.
+- Round 1 Polish (L3-05 Sijoitus eight calculations in prose): resolved, E and H rows are one aligned block.
+- L2-1280-6, -8 (L2-05 table and solution, L2-06 solution, L2-07 text, ”…” quotes now Finnish), L3-1280-4, -5, -7, -8 (L3-04, L3-05).
+- Revealed answers match the boxes (checked in the built page for all new numeric tasks).
+- 1280 px only (no 360 px exercise capture; layout checks clean).
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 3
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

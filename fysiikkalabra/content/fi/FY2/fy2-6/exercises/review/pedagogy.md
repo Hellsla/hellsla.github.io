@@ -1,20 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: db6b0a8bbd9663c1
+CONTENT-HASH: 29e577cbf20e55f6
+Round: 2
 
 ## Blocking
 - none
 
 ## Polish
-- exercises.json:75 fy2-6-L1-07 — the correct option is the longest (92 vs 84/84 characters) and the only one echoing the stem's "kulutuksen mukaan"; shorten to about 84 characters, e.g. "Voimalaitos, jonka tehoa voi nostaa ja laskea nopeasti, kuten vesivoimala." Also move it from B.
-- exercises.json fy2-6-L1-06 — "Kivihiili" is the only fuel among natural phenomena, so odd-one-out solves it without the concept; replace "Tuuli" or "Virtaava vesi" by "Uraani (ydinvoima)" so that two options are material resources, or ask "Mikä on uusiutuva". Correct is B again.
-- solutions.md:L3-04 c) — the swing "6,7 GW vs 1,0 GW, 5,7 GW" ignores Sunday (−0,5 GW); say 7,2 GW including Sunday or word it as weekdays.
-- exercises.json fy2-6-L2-05 — plan asks for real Finnish production with source and year; the data is invented (labelled "esimerkkiaineisto", acceptable) but update docs/exercise-bank/FY2.md to say so.
-- L3-05 recommendation d) leaves "ydinvoima edullisempi" as an outcome of invented figures; the solution already says the data is an example, keep that sentence.
+- exercises.json fy2-6-L1-06 (carried over) — "Tuuli" is still the only non-material option among uranium, coal and gas, so odd-one-out solves it without the concept. Fix: replace "Maakaasu" or "Uraani" by "Aurinkosähkö" or ask "Mikä on fossiilinen polttoaine" with one renewable and one nuclear distractor.
+- fy2-6-L1-08 vs L2-02 — both ask "how many hours at full power for the same energy" (t = E : P); L1-08 is easier only by units. Vary L2-02 (e.g. share of year or number of plants) if the set is edited again.
+- fy2-6-L2-05 and L3-05 — data are invented; both say "esimerkkiaineisto", keep that. L3-05 recommendation lets invented costs decide "ydinvoima edullisempi"; the solution's example caveat should stay.
+- docs/exercise-bank/FY2.md — plan promised real Finnish production data with source and year in L2; note that L2-05 is an example.
 
 ## Checked
-- Level 3: L3-04 (week table, wind vs demand, residual power, Sunday surplus) and L3-05 (two plants, capacity factor, life-cycle cost per MWh, emissions, recommendation) are real modelling and data interpretation with several connected ideas; no formula named in the prompts.
-- Level 2 data tasks: L2-05, L2-06, L2-07 = 3 (within 2–3); L2-06 tests a common misreading (largest output vs best use of nominal power).
-- Numbers verified: 22,8 pp, 33 %, 1,6 milj. t, 6,7 GW, 16,6 €/MWh; answers match solutions and units.
-- L1-08 hour equivalent is level 1 in step count; not a copy of the example (14 GWh/5 MW).
-- MC L1-07 has three parallel options with a real misconception each; no clue from position beyond B bias (B in 2 of 2 here).
-- Solutions give principle, conversion, substitution and sanity check; phone captures fine.
+- Round 1: L1-07 now three equal-length options (65-68), correct A, no longest cue; Sunday surplus in L3-04 c) answer handled (7,2 GW including Sunday).
+- Numbers verified: L2-05 22,8 pp (answer 23), L2-06 A 32 %, B 29 %, C 33 %, L2-07 1,6 milj. t, L3-04 489,6 GWh / 32 % / 6,7 GW, L3-05 16,6 and 10,6 €/MWh, 3469 t and 113 500 t, L1-08 2750 h (answer 2800 within 2 %).
+- Level 2 data tasks L2-05..07 fit; L2-06 corrects a real misreading (largest output vs best use of nominal power).
+- Level 3: L3-04 (week table, residual power) and L3-05 (cost, emissions, recommendation) are YO-style modelling and data interpretation; no formula named.
+- Solutions contain given/asked/principle/formula/substitution/sanity check.

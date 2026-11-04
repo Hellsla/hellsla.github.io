@@ -1,17 +1,18 @@
 VERDICT: FAIL
-CONTENT-HASH: 22726adfb48c9d40
+CONTENT-HASH: bebeb9ecaaeaf3c1
+Round: 2
 
 ## Blocking
-- [Major] L3-04 and L3-05 text (open-exercises-L3-1280-4, -5) — the sub-tasks a)–d) run together in one paragraph, and the page's "situation, then question" break leaves only the last sentence bold (L3-04: "Kuinka monta kilogrammaa pellettejä kuluu silloin vuodessa enemmän, ja miksi?"; L3-05: all of a)–d) in bold). The answer box takes the result of b) (3300 kg, 1100 kg), so the visible question points at a different quantity than the box — the student can enter the wrong number — fix: write the text as situation + data, then one closing sentence naming the box, e.g. "Anna vastauslaatikkoon kohdan b) tulos kilogrammoina." (put that sentence last so it is the bold question), and keep a)–d) as plain sentences before it; or give the box to d) and change the answer.
+- [Major] L3-05, "Vastaus" disclosure (open-exercises-L3-1280-7; preview/fy2-5.html) — the revealed answer reads "930 kg" (the oil mass from part a)), while the answer box expects 940 kg (part b), the one the text asks for) and the solution says 940 kg. The page picks the first value in the Vastaus line within the 3 % tolerance, and 930 is 1,1 % from 940. A student who opens "Vastaus" is shown the wrong number — fix: in exercises.json set L3-05 `"tolerance": 0.005` (930 is then outside, 937-940 still accepted) so the reveal shows $940\,\text{kg}$; re-run the build and check the chip.
 
 ## Polish
-- [Minor] L1-08 solution, Kaava line — "$E = 144\,\text{MJ}$ ja $1\,\text{MJ} = 1\,\text{kWh} : 3{,}6$" is data and a unit relation, not a formula; write "$E$ ilmaistuna kilowattitunteina: $E = \dfrac{144\,\text{MJ}}{3{,}6\,\text{MJ/kWh}}$" or move to Muunnokset.
+- [Minor] all data tables (L2-05, L2-07, L3-04, L3-05) — numeric column headers sit left of their right-aligned numbers (e.g. "$H\,(\text{MJ/kg})$" over 19,0..8,3) — right-align numeric columns' headers (site.css `.ex-data`).
 
 ## Checked
-- contact-5, contact-6 (all new tasks triaged)
-- open-exercises-1280-8 (L1-08 solution), L2-1280-5, -6, -7 (L2-05 table, L2-06 MC and feedback), L3-1280-4, -5 (L3-04 text, table and solution)
-- L1-06, L1-07, L2-07 and L3-05 solution via contact sheets (rows, fractions, subscripts, decimal comma in tables fine)
-- 360 px: deterministic layout checks clean; no 360 px exercise capture exists
+- Round 1 Blocking (L3-04/L3-05 sub-tasks run together, box ambiguous): resolved. a)–d) are own bold paragraphs, the closing "Anna vastauslaatikkoon kohdan b) tulos kilogrammoina." is last (L3-04 and L3-05 captures).
+- Round 1 Polish (L1-08 Kaava line): resolved (fraction with 3,6 MJ/kWh).
+- open-exercises-1280-8 (L1-08), L2-1280-5, -6, -7, -8 (L2-05 table, L2-06 MC, L2-07 table and solution), L3-1280-4, -5, -6, -7, -8 (L3-04, L3-05 tables, Sijoitus, Vastaus).
+- Table decimals in the new data tables use the comma; 1280 px only (no 360 px exercise capture; layout checks clean).
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 3
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

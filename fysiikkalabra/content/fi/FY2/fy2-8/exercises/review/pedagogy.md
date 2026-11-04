@@ -1,19 +1,19 @@
-VERDICT: FAIL
-CONTENT-HASH: 5059516b77ef58a8
+VERDICT: PASS
+CONTENT-HASH: b0d6a520defc0939
+Round: 2
 
 ## Blocking
-- exercises.json:45 fy2-8-L1-06 — correct option is by far the longest (124 vs 84/66/91) and the only one with the full two-part mechanism; the answer can be guessed. Fix: bring all four to 80–100 characters, e.g. correct "Kasvihuonekaasut päästävät Auringon säteilyn läpi mutta hidastavat maanpinnan lämpösäteilyn poistumista." and give distractor 2 a longer, parallel text ("Ilmakehä imee kaiken Auringon säteilyn itseensä ja lämmittää sillä maanpintaa alhaalta päin."). Move the correct one from B.
-- exercises.json:75 fy2-8-L1-07 — the correct option is again the longest (120 vs 67/72/55) and the only one with the label "Esimerkkiväite:", a unit and "kolmenkymmenen vuoden keskiarvona"; the others are one-day statements. Fix: drop the label, make all four similar length, e.g. "Oulussa lämpötila on tammikuussa keskimäärin −10 °C" against "Oulussa oli tiistaina −10 °C", and shuffle position.
+- none
 
 ## Polish
-- exercises.json:147 fy2-8-L2-05 and :290 L3-04 — both use the same CO2 series; L3-04 a) recomputes the 2000–2020 slope of L2-05. Use different years or another series (e.g. temperature anomaly) in one.
-- solutions.md:142 and :168 — "Kuvaajan lukeminen" refers to a drawn graph that neither task asks for or shows; either ask for a plot or rename "Taulukon tulkinta" (and drop "graph" from kind).
-- exercises.json:329 fy2-8-L3-05 c) — the carbon sink and lag explanation is not in the lesson brief; add the one fact to the lesson or hint in the task. The task is also only multiplication and sum for a), b); add a constraint (wind needs backup) for modelling. The emission factors come from the lesson table: write "(oppitunnin taulukko)" in the task.
-- exercises.json fy2-8-L2-07 distractor 4 is the longest and absurd ("820 g silti kahdelle"); make it a plausible slip (confusing kWh with MJ).
+- exercises.json fy2-8-L1-06 — correct option D is the longest (104 vs 101/92/91) by only 3 characters, acceptable; shorten it by one clause for safety.
+- fy2-8-L1-07 — the correct option is the only one with a multi-year period, which is the concept being tested; fine, but all four now sit at 88-93 characters, so no cue remains.
+- fy2-8-L2-05 and L3-04 — both use the Mauna Loa series but different years; L3-04 is the extension of the L2-05 idea (slope, forecast, validity), a good progression. Keep.
+- fy2-8-L3-05 — a) and b) are long chains of multiplications; fine at level 3, but part c) mostly repeats b). Consider replacing c) with a constraint (wind needs backup) if edited again.
 
 ## Checked
-- Level 3: L3-04 (accelerating series, slope per period, forecast, validity of line) is real data interpretation and modelling; L3-05 several-step but thinner.
-- Level 2 data tasks: L2-05, L2-06 = 2 (L2-07 is error MC).
-- Numbers verified: 2,2 ppm/a, 26 %, 459 ppm, 62 %, 480 kg.
-- L2-07 MC: correct (96) is not longest, option C; real unit-slip distractors.
-- Solutions follow the principle and include sanity checks; render of L2/L3 captures clean.
+- Round 1: L1-06 and L1-07 length cues removed (all options 88-104 and 88-93 characters, correct D and A); L2-05/L3-04 no longer share data or recompute the same slope; "Kuvaajan lukeminen" no longer used in tasks without a graph; L3-05 now states the carbon-sink fact in the task and refers to "oppitunnin taulukko".
+- Numbers verified: L2-05 2,27 ppm/a, L2-06 61 and 45 Mt, 26 %, L3-01 736 g/kWh, L3-02 50x, L3-03 4,14x, L3-04 2,2 ppm/a and 458 ppm (full-series line 446 ppm), L3-05 52 220 t, 24 680 t, 52,7 %, 9,2 pp.
+- MC L2-07: correct C (88) is not the longest, distractors are real unit slips and consistent with the solution.
+- Level 2 data tasks L2-05 and L2-06 fit; level 3 tasks are modelling and data interpretation.
+- Solutions follow the principle, formula, substitution, sanity check order.
