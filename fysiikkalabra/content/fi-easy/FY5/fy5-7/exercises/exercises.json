@@ -89,7 +89,7 @@
     {
       "id": "fy5-7-L3-02",
       "level": 3,
-      "text": "Pystysuorassa tasossa pyörivään kiekkoon on kiinnitetty nappi $15\\,\\text{cm}$:n päähän akselista. Kiekko pyörii tasaisesti $45$ kierrosta minuutissa. Kiekkoa valaistaan sivulta kaukaa tulevalla vaakasuoralla, yhdensuuntaisella valolla. Napin varjo liikkuu siksi viereisellä seinällä ylös ja alas. Kuinka kaukana varjo on liikkeensä keskikohdasta $0{,}20\\,\\text{s}$ sen jälkeen, kun se ohitti keskikohdan ylöspäin?",
+      "text": "Pystysuorassa tasossa pyörivään kiekkoon on kiinnitetty nappi $15\\,\\text{cm}$:n päähän akselista. Kiekko pyörii tasaisesti $45$ kierrosta minuutissa.\n\nKiekkoa valaistaan sivulta kaukaa tulevalla vaakasuoralla, yhdensuuntaisella valolla. Napin varjo liikkuu siksi viereisellä seinällä ylös ja alas.\n\nKuinka kaukana varjo on liikkeensä keskikohdasta $0{,}20\\,\\text{s}$ sen jälkeen, kun se ohitti keskikohdan ylöspäin?",
       "answer": 12,
       "unit": "cm",
       "tolerance": 0.02

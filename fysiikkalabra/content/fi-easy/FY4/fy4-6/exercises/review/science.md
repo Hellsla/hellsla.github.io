@@ -1,12 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: d3de65f34d0ce0ea
+CONTENT-HASH: 0f9d5d9bfd7c1f53
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
+(none)
+
+## Fixed
+(none needed: the selkosuomi text already matched fi in every number)
 
 ## Polish
-
+(none)
 
 ## Checked
-Compared exercises.json and solutions.md with the Finnish: 14 tasks, all 108 solution headings and every number kept; decimal comma {,} used.
-Task texts are split into shorter sentences; solutions are as complete as the Finnish.
-check_latex is clean. No edits were needed.
+- All 14 tasks incl. the 8 new ones (L1-06..08, L2-05..07, L3-04..05) compared with content/fi by script: ids, levels, kinds, answers, units, tolerances, correct flags (one correct option in L1-06, L1-08), data-table cells and every number in texts, choices and feedback are equal (decimal point in en JSON/LaTeX where fi has a comma).
+- solutions.md: all numbers equal to fi (992 each; voimakuvio code blocks keep the DSL syntax of fi).
+- Terms: weight, normal force, static/kinetic friction, limiting angle are correct and consistent; no Finnish prose left in en.
+- check_i18n.py fi-easy: 0 errors. No edits were needed.

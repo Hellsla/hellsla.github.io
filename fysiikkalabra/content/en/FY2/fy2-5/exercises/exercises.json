@@ -130,7 +130,7 @@
     {
       "id": "fy2-5-L2-05",
       "level": 2,
-      "text": "The table gives example data on the effective heat of combustion of firewood at different moisture contents. Heating a sauna requires an energy of $200\\,\\text{MJ}$ released from firewood. Using the heats of combustion in the table, calculate the mass of wood needed when the moisture content is $20\\,\\%$ and when it is $40\\,\\%$. How many kilograms more moist ($40\\,\\%$) wood is needed than air-dried ($20\\,\\%$) wood? Give the answer in kilograms.",
+      "text": "The table gives example data on the effective heat of combustion of firewood at different moisture contents. Heating a sauna requires an energy of $200\\,\\text{MJ}$ released from firewood.\n\nUsing the heats of combustion in the table, calculate the mass of wood needed when the moisture content is $20\\,\\%$ and when it is $40\\,\\%$. How many kilograms more moist ($40\\,\\%$) wood is needed than air-dried ($20\\,\\%$) wood? Give the answer in kilograms.",
       "kind": [
         "data",
         "reasoning"
@@ -206,7 +206,7 @@
     {
       "id": "fy2-5-L2-07",
       "level": 2,
-      "text": "In an example measurement, a pellet burner and its pellets stood on a scale, and the burner burned steadily the whole time. The reading $m$ of the scale was recorded every $10\\,\\text{min}$. Draw a graph of the mass as a function of time and determine from its slope how many kilograms of pellets burn per minute. The heat of combustion of the pellets is $17\\,\\tfrac{\\text{MJ}}{\\text{kg}}$. What is the power released in the burning? Give the answer in kilowatts.",
+      "text": "In an example measurement, a pellet burner and its pellets stood on a scale, and the burner burned steadily the whole time. The reading $m$ of the scale was recorded every $10\\,\\text{min}$.\n\nDraw a graph of the mass as a function of time and determine from its slope how many kilograms of pellets burn per minute. The heat of combustion of the pellets is $17\\,\\tfrac{\\text{MJ}}{\\text{kg}}$. What is the power released in the burning? Give the answer in kilowatts.",
       "kind": [
         "data",
         "graph",

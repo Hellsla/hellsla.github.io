@@ -1,20 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 548a782b3164dea2
+CONTENT-HASH: d0a3da0eb8c360f9
 
 ## Blocking
 
 ## Polish
-- exercises.json:111 (L3-03) — the key is still 0.061, while the solution concludes 0,06 N. It is within tolerance; 0.06 would match.
-- solutions.md:69 (L1-05) — the step "Voimakuvio" shows only T and its components. Rename it, for example to "Kuvio: köyden voima ja komponentit", so it is not taught as a complete force diagram.
-- solutions.md `pinta` diagrams — the surface is hatched inside the voimakuvio, but the lesson says surfaces are not drawn. This comes from the tool, not from this set.
-- solutions.md:78 (L1-05) — the significant-figure reason "eikä 250 N ole sitä tarkempi" is still shaky (carried over).
+- solutions.md:244–257 (L2-05) — the diagram is drawn for the first measurement (3,0 N, 2,5 N, 3,9 N at 39,8°), but the text does not say so. Add "(ensimmäinen mittaus)" to the Voimakuvio sentence.
+- solutions.md:291–304 (L2-07) — the diagram is in the table's plane, seen from above, so the weight and the support force are not in it. Say "ylhäältä katsottuna".
+- solutions.md:225 (L1-07) — G = N = 600 N is invented, because the mass is not given. Horizontal and vertical forces are drawn on separate scales ("eri mittakaavassa"), so no wrong ratio shows. If the spec could draw "equal, size unknown", that would be cleaner.
+- Carried from the previous round: L2-07 table friction; "Kuvaajan lukeminen" → "Taulukon lukeminen".
 
 ## Checked
-- Round-1 fix: L3-03 now gives "0,061 N ≈ 0,06 N" and justifies it by decimals in a difference. Correct.
-- One script recomputed all twelve answers: 14,715 / 15 / 4,905 / 637,65 / 191,5 / 51,96 / 660,6 / 0,598 / 1,0 / 581,7 / 1,9 / 0,06076. All agree with answers.py and exercises.json.
-- Models: the wall's static friction is mg; a lift slowing on the way up has a pointing down, so N < G; the curling stone has no forward force; the ceiling's N points down; the L2-04 pulls add as vectors.
-- I rendered all 11 voimakuvio blocks. They use one linear scale, except L1-03 and L3-02, whose separate horizontal scale the rule allows and whose text alternatives say so. Every sum is visible (F = N, F_μ = G; F_noste = G + N), and no force is under 15 %.
-- Directions are right: the wall's N points away from the wall; the L2-03 push ends on the body; v and a are drawn off the body; there are no third-law pairs; components are dashed.
-- The figures ruutu, malli-pulkka and malli-hissi agree with their tasks.
-- Each solution goes diagram, axes, symbolic answer, numbers, then a real reasonableness check. Everything is within FY4's scope.
-- "FAIL sims" does not reproduce. The hash was the same at start and end.
+- L1-07: F₁ 120 and F₂ 85 are pushes ending on the body, and F_μ 150 runs from the rear bottom corner along the floor. ΣF_x = 55 N forward, matching `a oikea` and the answer 55 N. G and N are equal. F_μ is longer than either push and shorter than their sum, as the text says (rendered lengths 175 : 125 : 220).
+- L2-05: arctan(2,5/3,0) = 39,8° and √(3,0² + 2,5²) = 3,91 N ≈ 3,9 N. The dashed components equal F_A and F_C in length, F_A points left, F_C down, F_B up to the right, and no weight is drawn (as the task states).
+- L2-07: F₁ + F₂ (60°) = (10,0; 6,93), with |Σ| = 12,17 N at 34,7°, so F₃ = 12,2 N at 214,7° closes the sum. The F₂ components are dashed. The table's 12,3 N is the measured value, and drawing the computed 12,2 N is right.
+- Every equation follows the drawn axes and signs. No velocity or acceleration is drawn as a force, and no component is double-counted.
+- The hash was d0a3da0eb8c360f9 at the start and at the end.

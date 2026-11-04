@@ -1,16 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: 702b7c7a415dfe04
+CONTENT-HASH: 83dc08db7ea57a37
+Round: 2
 
 ## Blocking
+(none)
 
 ## Polish
-- exercises/solutions.md:126 (L3-03 Järkevyys) — "kahdella numerolla pienin sopiva massa 1,5 kg": the computed minimum is 1,511 kg, so 1,5 kg is slightly below it (lasts about 5,96 h). Say "noin 1,5 kg (laskettu vähimmäismassa 1,51 kg)" instead of calling 1,5 kg the smallest sufficient mass.
-- exercises/solutions.md L3-02 Periaate — "Koska 251 400 J > 167 000 J … loppulämpötila on yli 0 °C" is right here; for consistency with the lesson's guardrail wording, the closing check could also mention that equality would give exactly 0 °C.
+- docs/exercise-bank/FY3.md:97ff — the plan still names a level-1 löyly multiple choice and a level-2 thermos comparison experiment. Neither is in the set: L1-08 (kettle) and L2-05 (sauna data) stand in for them (carried over). Update the plan or note the swap.
+- exercises.json:303 (L3-05) — the task gives ρ, c_vesi and c_jää, but not s, which the solution takes "taulukosta". For consistency with L2-07, add "veden ominaissulamislämpö 334 kJ/kg" to the task.
+- solutions.md:195ff (L3-05 d) — "kylmäkerroin" appears only here and is not defined in the brief. Either add a few words ("vastaa lämpöpumpun lämpökerrointa") or drop the sentence.
 
 ## Checked
-- All 12 answers recomputed in one script with my own formulas: 4,48 MJ; 452 kJ; 26,9 W; 250,5 kJ; 14,0 kW; 1,617 kg; 648,8 kJ; 0,857 kg/s; 91,1 g; 25,95 K; 8,057 °C; 1,511 kg — all match answers.py and exercises.json; tolerance 0,02 admits the rounded answers.
-- L3-02 checks "does all ice melt" first (251 400 J > 167 000 J) and the energy balance 183 880 J both sides.
-- L3-03 assumptions stated in the task (drinks cool at once, ice warms then melts, wall power at 0 °C inside); energy terms 486 000 J + 50 280 J over 355 000 J/kg right.
-- L1-03 uses the given 2,0 °C inside (ΔT = 28 K); L2-01 states "vain jäätä"; Q = cmΔT used only without phase change, as each Periaate says.
-- Magnitude checks real (coolant tens of kW, glycol needs ~20 % more flow than water, sauna stones fall 26 K, heating alone 3,4 K).
-- Solutions symbolic first; notation (P = UAΔT, P = c(m/t)ΔT, Q = sm, Q = rm) matches the lesson brief; melting described with the guardrail wording; scope within FY3.
+- Round-1 Blocking 1 resolved: L3-05 now freezes "0,030 m paksuinen kerros vettä", so m = ρ_vesi V = 54 000 kg is correct. The answer of 590 kW is unchanged, and answers.py says so in its comment.
+- Round-1 Blocking 2 resolved: d) no longer cites the machine's "hyötysuhde". The extra heat loads (air, lights, spectators, slab, ground) give a lower bound, and the electrical power is tied to the kylmäkerroin. This fits the guardrail.
+- Round-1 Polish resolved: L2-06 Vastaus now gives 1,4·10² W/K with two significant figures, limited by the fit. L3-04 says "Lämpöhäviökerroin UA" and the task text says "keskimääräinen U-arvo". L2-05 b) says only that the loss grows with the temperature difference.
+- One script recomputed every new answer from the task text: L1-08 251,4 s; L2-05 75,56 %; L2-06 least-squares slope −99,8 kWh/K, which gives 138,6 W/K, with the intercept at 20,1 °C; L2-07 2,913 h; L3-04 480,6 € (break-even 0,44 €/kg); L3-05 21,32 GJ, 592 kW, with freezing 85 % of the energy. All agree with exercises.json and answers.py within tolerance.
+- L1-06 and L1-07: each has exactly one correct option, the answer field equals it, and every distractor is wrong with correct feedback. The guardrail wording on melting and net transfer is used.
+- L3-05: the three phases are computed separately, with no cΔT during freezing. Energy is released on freezing, as the guardrail requires.
+- Scope: Q = cmΔT, sm, P = UAΔT, efficiency and heating value. No duplicates, and the levels fit.
+- The hash was identical at the start and the end.

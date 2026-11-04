@@ -1,10 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 95854d3846e395e3
+CONTENT-HASH: 34e937c6b5c5fdb9
 
 ## Blocking
+
+## Fixed
+- solutions.md fy4-1-L3-03: added the blank line before the next heading (as in the Finnish).
+- solutions.md fy4-1-L3-05: reasonableness fragment 'Luku 1,25 on.' -> 'Näin on, koska 1,25 on suurempi kuin yksi.'
 
 ## Polish
 - The Finnish needs no changes.
 
 ## Checked
-Compared exercises.json and solutions.md block by block against the Finnish with a script: same ids, levels, answers, units, tolerances, numbers and $...$/$$...$$ content in every block; decimal comma kept. Recomputed the answers (8,0 m/s, -17 m, 42 m, 2,0 m/s, 45 m, 300 m, 5,0 min, -3,0 m/s, 16 s, 4,0 m/s, 50 m, 0,25 m/s). Nothing needed fixing.
+Compared exercises.json (all 3 levels, 8 new tasks L1-06..08, L2-05..07, L3-04..05 included) against fi with a script: same keys, ids, kinds, answers, units, tolerances, correct flags, choice order, data table cells and captions; every number identical (decimal point in fi-easy JSON and LaTeX where applicable). solutions.md: all 20 blocks present, same numbers and same maths block by block; only the intended symbol renames differ. Recomputed the new answers: 0.61 m/s, 5.8 s (19.0/3.3), -1.5 m/s (-9.0/6.0), 0.80 m/s (1.25 * 0.64), 740 m (331/6.1 = 54 s). check_i18n shows no fy4-1 error.

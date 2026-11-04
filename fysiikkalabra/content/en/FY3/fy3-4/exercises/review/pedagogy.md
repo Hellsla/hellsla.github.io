@@ -1,13 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: d888d837342119d7
+CONTENT-HASH: d2575374e6555241
 
 ## Blocking
+(none)
+
+## Fixed
 (none)
 
 ## Polish
 (none)
 
 ## Checked
-- Translation reviewed against the reviewed Finnish after the typesetting round: every inline-math segment of exercises.json, solutions.md compared with the Finnish (same numbers, units, symbols, order; only subscript labels differ, translated); no bare number+unit left outside LaTeX; decimal point (not comma) in English; no Finnish words left (Lake Päijänne is a proper noun); JSON valid; check_i18n 0 errors for en in these chapters.
-- Pedagogy: teaching sequence, staging, tasks, feedback and hints identical in structure to the Finnish; units in LaTeX read cleanly; language natural.
-- Translation-only review (teacher's procedure 2026-10-28); no translation edits were needed.
+- Teaching sequence, hints, solution structure (Given/Find/Principle/Formula/Conversions/Substitution/Answer/Reasonableness) and per-part answer-field instruction identical to fi.
+- English is natural; choice feedback keeps the diagnostic purpose of each distractor; sentence order and staging as in fi.
+- Data tables: captions, column headers and row labels translated (vessel, layer, part); numeric cells unchanged.
+- Answer-field instructions name the same part and unit as fi (L2-05 b kPa, L2-06 a kPa, L2-07 b kPa, L3-04 b kPa, L3-05 b kN).

@@ -86,7 +86,7 @@
     {
       "id": "fy4-16-L3-01",
       "level": 3,
-      "text": "Pulkkamäen huippu on $4{,}50\\,\\text{m}$ korkeammalla kuin tasainen lumikenttä mäen juurella. Mäen rinne koostuu kahdesta suorasta osasta. Ylempi osa on $25^\\circ$:n ja alempi $10^\\circ$:n kulmassa vaakatasoon nähden. Pulkka lähtee levosta huipulta. Liikekitkakerroin on $0{,}120$ koko matkalla. Ilmanvastus ja kitkan kasvu rinteen mutkissa jätetään huomiotta. Kuinka kaukana huipusta vaakasuunnassa mitattuna pulkka pysähtyy?",
+      "text": "Pulkkamäen huippu on $4{,}50\\,\\text{m}$ korkeammalla kuin tasainen lumikenttä mäen juurella. Mäen rinne koostuu kahdesta suorasta osasta. Ylempi osa on $25^\\circ$:n ja alempi $10^\\circ$:n kulmassa vaakatasoon nähden.\n\nPulkka lähtee levosta huipulta. Liikekitkakerroin on $0{,}120$ koko matkalla. Ilmanvastus ja kitkan kasvu rinteen mutkissa jätetään huomiotta.\n\nKuinka kaukana huipusta vaakasuunnassa mitattuna pulkka pysähtyy?",
       "answer": 37.5,
       "unit": "m",
       "tolerance": 0.02,

@@ -105,6 +105,8 @@
 
 ## Key idea
 
+<figure class="unit-photo"><img src="pics/fy8/cloud-chamber-radon.webp" alt="Many short, thick white tracks at random places and in random directions on a black background."><figcaption>Radon decays in a cloud chamber. Each thick track is an alpha particle emitted by a single nucleus. There is no way to predict which nucleus will decay next, but in a large collection decays happen at a steady rate.</figcaption></figure>
+
 ### The decay of a single nucleus is random
 A radioactive nucleus decays and becomes another nucleus (chapter *The atomic nucleus and radioactive decay*), but the moment of decay cannot be predicted. Of two identical nuclei, one may decay at once and the other only after years. All that can be predicted is how likely a nucleus is to decay within a given time. This probability is the same for all nuclei of the same isotope, and in practice it does not depend on the temperature, the pressure or the chemical bonds of the surroundings. Nor does it depend on the age of the nucleus: a nucleus does not grow old. A nucleus that has survived without decaying for a long time is just as likely to decay during the next second as a newly formed one.
 
@@ -441,6 +443,8 @@ The **half-life** $T_{1/2}$ is the time in which half of the undecayed nuclei of
 | uranium-238 | $4.47 \cdot 10^{9}\,\text{a}$ | bedrock |
 
 Source: literature values from the NNDC NuDat 3 database (Brookhaven National Laboratory), rounded to three significant figures.
+
+<figure class="unit-photo"><img src="pics/fy8/geiger-counter.webp" alt="An old beige radiation meter on a white table: the box has a needle display and a control knob, and a round probe on a handle is connected to it by a cable."><figcaption>A Geiger–Müller counter counts the ionising particles that hit its probe. When the counter is kept in the same place, the count rate is proportional to the activity of the source.</figcaption></figure>
 
 ### Activity
 The **activity** $A$ of a sample is the number of decays in it per unit of time. Its unit is the becquerel: $1\,\text{Bq}$ is one decay per second, that is, $1\,\tfrac{1}{\text{s}}$. Because every nucleus is equally likely to decay, the activity is directly proportional to the number of undecayed nuclei: when half of the nuclei are left, the activity has also halved. A radiation meter does not measure the activity directly. It counts the pulses from the quanta of radiation that hit its detector. The number of pulses is proportional to the activity, but the **background radiation** of the surroundings is always added to it.

@@ -95,7 +95,7 @@
     {
       "id": "fy7-6-L3-03",
       "level": 3,
-      "text": "Kaksi vaakasuoraa metallikiskoa on $0{,}40\\,\\text{m}$:n etäisyydellä toisistaan. Niiden päät on yhdistetty vastuksella, jonka resistanssi on $0{,}20\\,\\Omega$. Kiskojen alueella on pystysuora magneettikenttä, jonka magneettivuon tiheys on $0{,}50\\,\\text{T}$. Kiskojen päällä poikittain oleva metallitanko liikkuu kiskoja pitkin vauhdilla $3{,}0\\,\\text{m/s}$. Kiskojen ja tangon resistanssi jätetään huomiotta. Kuinka suuri jarruttava voima magneettikenttä kohdistaa tankoon?",
+      "text": "Kaksi vaakasuoraa metallikiskoa on $0{,}40\\,\\text{m}$:n etäisyydellä toisistaan. Niiden päät on yhdistetty vastuksella, jonka resistanssi on $0{,}20\\,\\Omega$. Kiskojen alueella on pystysuora magneettikenttä, jonka magneettivuon tiheys on $0{,}50\\,\\text{T}$.\n\nKiskojen päällä poikittain oleva metallitanko liikkuu kiskoja pitkin vauhdilla $3{,}0\\,\\text{m/s}$. Kiskojen ja tangon resistanssi jätetään huomiotta.\n\nKuinka suuri jarruttava voima magneettikenttä kohdistaa tankoon?",
       "answer": 0.6,
       "unit": "N",
       "tolerance": 0.02

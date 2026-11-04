@@ -1,16 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 9368ce31ea655078
+CONTENT-HASH: 487688f2517a3c14
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] Worked example step 7 at 390 px — "(1 + ½)·673,9 nm" still breaks inside the bracket (carried from round 1, not fixed by choice) — keep the bracket together or put the check on its own line.
-- [Minor] Hero illustration, sim panel at 390 px — carried taste/size items from round 1, unchanged.
+
 
 ## Checked
-- Delta: fig-5 reflections (fig-5-390) — "ei siirtymää" now sits left of the transmitted ray, no overlap; theory-1280-1 (fig-5, fig-7 and the reworded "Hyvin ohut kalvo on musta" paragraph, layout intact); fig-7 phase (390); example-390-2 (new "Tulos" sentence, reads fluently; steps 6–7 layout survived).
-- Edits to lesson-answers.py are comments only; no rendered effect.
-
-## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+batch delta review: opened the image file(s) (soap-bubble-reflection, soap-bubble-colours) and rendered unit-photo with caption at 1280 px (float right, 320 px wide, inside column, no clipping) and 390 px (stacked, no horizontal overflow); alt text matches what is visible, caption physically sound and tied to the chapter, Finnish natural, number+unit in LaTeX.

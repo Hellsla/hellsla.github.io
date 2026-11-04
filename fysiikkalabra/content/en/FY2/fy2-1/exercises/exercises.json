@@ -19,7 +19,7 @@
     {
       "id": "fy2-1-L1-03",
       "level": 1,
-      "text": "A skater starts from rest at point A on the rim of a half-pipe and slides down a slope with friction, past point B, to point C at the bottom. The bars in the figure show his potential energy and kinetic energy at each point, with the bottom as the zero level of potential energy. Read the energies from the figure. How much energy has friction changed into thermal energy when the skater has moved from point A to point C?",
+      "text": "A skater starts from rest at point A on the rim of a half-pipe and slides down a slope with friction, past point B, to point C at the bottom. The bars in the figure show his potential energy and kinetic energy at each point, with the bottom as the zero level of potential energy.\n\nRead the energies from the figure. How much energy has friction changed into thermal energy when the skater has moved from point A to point C?",
       "figure": "fy2-1/kitka-pylvaat",
       "answer": 200.0,
       "unit": "J",
@@ -186,7 +186,7 @@
     {
       "id": "fy2-1-L2-06",
       "level": 2,
-      "text": "An inventor demonstrates a water device that he claims works forever without outside energy. Water falling from the upper pool turns a generator and loses potential energy of $100\\,\\text{J}$ per cycle. The generator changes all of this energy into electrical energy. A pump uses $80\\,\\text{J}$ of it and lifts the water back to the upper pool, and the rest of the electrical energy goes to a lamp. How many joules of energy does the device create from nothing in one cycle, if the claim is true? Explain which principle of energy is broken.",
+      "text": "An inventor demonstrates a water device that he claims works forever without outside energy.\n\nWater falling from the upper pool turns a generator and loses potential energy of $100\\,\\text{J}$ per cycle. The generator changes all of this energy into electrical energy. A pump uses $80\\,\\text{J}$ of it and lifts the water back to the upper pool, and the rest of the electrical energy goes to a lamp.\n\nHow many joules of energy does the device create from nothing in one cycle, if the claim is true? Explain which principle of energy is broken.",
       "kind": [
         "error",
         "reasoning"
@@ -237,7 +237,7 @@
     {
       "id": "fy2-1-L3-01",
       "level": 3,
-      "text": "The energies of a skateboarder are measured at three points in a half-pipe. At point A the skateboarder is at rest and her potential energy is $900\\,\\text{J}$. At point B the potential energy is $400\\,\\text{J}$ and the kinetic energy $480\\,\\text{J}$. At point C the potential energy is zero and the kinetic energy $750\\,\\text{J}$. Friction keeps changing mechanical energy into thermal energy. How much energy is changed into thermal energy between points B and C?",
+      "text": "The energies of a skateboarder are measured at three points in a half-pipe.\n\nAt point A the skateboarder is at rest and her potential energy is $900\\,\\text{J}$. At point B the potential energy is $400\\,\\text{J}$ and the kinetic energy $480\\,\\text{J}$. At point C the potential energy is zero and the kinetic energy $750\\,\\text{J}$. Friction keeps changing mechanical energy into thermal energy.\n\nHow much energy is changed into thermal energy between points B and C?",
       "answer": 130,
       "unit": "J",
       "tolerance": 0.02
@@ -253,7 +253,7 @@
     {
       "id": "fy2-1-L3-03",
       "level": 3,
-      "text": "In a nuclear power plant, the nuclear reactions in the reactor heat water into steam, the steam turns a turbine and the turbine turns a generator, which produces electricity. The steam leaving the turbine is cooled with seawater, which warms up. a) Name the forms of energy at each stage of the chain. b) The plant turns only about a third of the nuclear energy released in the reactor into electrical energy. Use the law of conservation of energy to explain where the rest of the energy goes and why it has not been lost.",
+      "text": "In a nuclear power plant, the nuclear reactions in the reactor heat water into steam, the steam turns a turbine and the turbine turns a generator, which produces electricity. The steam leaving the turbine is cooled with seawater, which warms up.\n\na) Name the forms of energy at each stage of the chain.\n\nb) The plant turns only about a third of the nuclear energy released in the reactor into electrical energy. Use the law of conservation of energy to explain where the rest of the energy goes and why it has not been lost.",
       "answer": "a) nuclear energy → thermal energy → kinetic energy of steam and turbine → electrical energy; b) about two thirds ends up as thermal energy in the sea and the surroundings, and the total energy is conserved",
       "unit": "",
       "tolerance": 0.02

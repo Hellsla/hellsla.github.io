@@ -1,11 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 529acdbf752af739
+CONTENT-HASH: bf1ade76d9a3681f
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
+(none)
+
+## Fixed
+(none needed: the plain Finnish is short-sentenced and matches fi in every number)
 
 ## Polish
+(none)
 
 ## Checked
-Judged the exercise set as a weaker reader would meet it: each task has a short situation followed by one question, long sentences are split, solutions state the reason after 'Siksi' or 'Syy on' without dropping any step.
-Levels, hints order and the L2-03 sketch task are unchanged from the Finnish.
-No changes needed on pedagogy grounds.
+- Feedback of every distractor in L1-06 and L1-08 names the right misconception, as in fi; one correct option each.
+- Task wording keeps fi's scaffolding (a/b/c parts, answer-box sentence naming the asked value, error-analysis prompt in L2-06).
+- Selkosuomi: short sentences, one idea each, no unexplained terms (kulmakerroin explained as viivan jyrkkyys).

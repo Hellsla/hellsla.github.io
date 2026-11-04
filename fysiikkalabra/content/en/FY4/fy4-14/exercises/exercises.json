@@ -44,6 +44,78 @@
       "unit": "N",
       "tolerance": 0.02,
       "fbd": "equations"
+    },
+    {
+      "id": "fy4-14-L1-06",
+      "level": 1,
+      "text": "An object falls in air and has reached its terminal velocity. Which of the following describes the situation correctly?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Air resistance and the weight are equal, because the net force is zero",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Air resistance is greater than the weight, because the object no longer accelerates downward",
+          "feedback": "If the air resistance were greater than the weight, the net force would point up and the object would slow down. At terminal velocity the speed does not change, so the forces are equal."
+        },
+        {
+          "text": "No forces act on the object, because its speed stays constant",
+          "feedback": "There are still two forces: the weight down and the air resistance up. The speed stays constant because the sum of the forces is zero, not because there would be no forces."
+        },
+        {
+          "text": "Air resistance and the weight are equal, because the net force is zero",
+          "correct": true,
+          "feedback": "Correct: at terminal velocity the acceleration is zero, so by Newton's second law the net force is zero and the air resistance cancels the weight."
+        },
+        {
+          "text": "The weight is greater than the air resistance, because the object still moves downward",
+          "feedback": "The direction of motion does not tell the magnitudes of the forces. If the weight were greater, the net force would point down and the speed would still grow."
+        }
+      ]
+    },
+    {
+      "id": "fy4-14-L1-07",
+      "level": 1,
+      "text": "Two balls of the same size and shape are dropped from a great height in air. One is filled with sand and the other is empty. Which ball reaches the greater terminal velocity?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The sand ball, because a greater air resistance is needed to cancel the greater weight",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The sand ball, because a greater air resistance is needed to cancel the greater weight",
+          "correct": true,
+          "feedback": "Correct: at the same speed about the same air resistance acts on balls of the same size and shape. So the heavier ball accelerates for longer and its air resistance grows greater before it is equal to the weight."
+        },
+        {
+          "text": "The empty ball, because air slows a heavy ball more than a light one",
+          "feedback": "About the same air resistance acts on balls of the same size and shape at the same speed. Air does not slow the heavy ball more, but its weight is greater."
+        },
+        {
+          "text": "Both reach the same one, because all objects fall with the same acceleration",
+          "feedback": "This is true only without air resistance. In air, air resistance decreases the acceleration, and the terminal velocity depends on when the air resistance has grown to the size of the weight."
+        },
+        {
+          "text": "Both reach the same one, because the size and shape of the balls are the same",
+          "feedback": "Size and shape determine the air resistance at a given speed, but the weight also affects the terminal velocity. The air resistance of the heavier ball must grow greater, so its speed is greater."
+        }
+      ]
+    },
+    {
+      "id": "fy4-14-L1-08",
+      "level": 1,
+      "text": "The mass of a skydiver with equipment is $60.0\\,\\text{kg}$. When the parachute opens, the skydiver is still moving downward, and the air resistance is $1500\\,\\text{N}$.\n\nA student solved the magnitude of the net force like this: “The skydiver moves down, so the net force points down and its magnitude is $mg + F_\\text{v} = 2089\\,\\text{N}$.”\n\nFind the error in the student's thinking and calculate the magnitude of the net force correctly. The answer box takes the correct magnitude of the net force.",
+      "kind": [
+        "error"
+      ],
+      "answer": 911.4,
+      "unit": "N",
+      "tolerance": 0.02,
+      "fbd": "equations"
     }
   ],
   "level2": [
@@ -82,6 +154,171 @@
       "unit": "m/s²",
       "tolerance": 0.02,
       "fbd": "equations"
+    },
+    {
+      "id": "fy4-14-L2-05",
+      "level": 2,
+      "text": "The mass of a foam ball is $20.0\\,\\text{g}$. The ball is dropped from rest, and its speed is measured from a video. The table is example data.\n\nDetermine the acceleration of the ball at the moment $t = 0.60\\,\\text{s}$ as the slope from the table points $t = 0.40\\,\\text{s}$ and $t = 0.80\\,\\text{s}$. What is the air resistance acting on the ball at this moment?",
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "answer": 0.1062,
+      "unit": "N",
+      "tolerance": 0.03,
+      "fbd": "equations",
+      "data": {
+        "caption": "Speed of a dropped foam ball (example data)",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$v\\,(\\text{m/s})$"
+        ],
+        "rows": [
+          [
+            "0.00",
+            "0.00"
+          ],
+          [
+            "0.20",
+            "1.85"
+          ],
+          [
+            "0.40",
+            "3.35"
+          ],
+          [
+            "0.60",
+            "4.45"
+          ],
+          [
+            "0.80",
+            "5.15"
+          ],
+          [
+            "1.00",
+            "5.55"
+          ],
+          [
+            "1.20",
+            "5.75"
+          ],
+          [
+            "1.40",
+            "5.80"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy4-14-L2-06",
+      "level": 2,
+      "text": "Students dropped paper cones from a great height. The cones had the same shape, but their mass grew when several were nested inside each other. In the experiment the speed of each cone was measured once it had stopped accelerating. The table is example data.\n\na) What is the air resistance acting on cone 4 at terminal velocity?\n\nb) How many times greater is this air resistance than the one acting on cone 1, and what does the comparison tell about the dependence of air resistance on speed?\n\nThe answer box takes the result of part a).",
+      "kind": [
+        "data",
+        "experiment"
+      ],
+      "answer": 0.047088,
+      "unit": "N",
+      "tolerance": 0.02,
+      "fbd": "equations",
+      "data": {
+        "caption": "Terminal velocities of paper cones (example data)",
+        "columns": [
+          "Cone",
+          "$m\\,(\\text{g})$",
+          "$v_\\text{terminal}\\,(\\text{m/s})$"
+        ],
+        "rows": [
+          [
+            "1",
+            "1.2",
+            "0.72"
+          ],
+          [
+            "2",
+            "2.4",
+            "1.05"
+          ],
+          [
+            "3",
+            "3.6",
+            "1.28"
+          ],
+          [
+            "4",
+            "4.8",
+            "1.49"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy4-14-L2-07",
+      "level": 2,
+      "text": "The table shows the downward speed of a skydiver as a function of time after the parachute has opened. The data is example data, and the skydiver moves downward all the time.\n\nWhich statement about the net force acting on the skydiver is correct?",
+      "kind": [
+        "data",
+        "concept"
+      ],
+      "answer": "It points up at first and is almost zero at the end, because the speed decreases and levels off",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "It points down all the time, because the skydiver moves down all the time",
+          "feedback": "The net force points in the direction of the acceleration, not the velocity. The speed decreases quickly at first, so the acceleration and the net force point up."
+        },
+        {
+          "text": "It points up at first and is almost zero at the end, because the speed decreases and levels off",
+          "correct": true,
+          "feedback": "Correct: at first the speed decreases steeply, so the acceleration and the net force point up. At the end the speed is almost constant, so the net force is almost zero."
+        },
+        {
+          "text": "It is zero all the time, because the speed of the skydiver is always the same",
+          "feedback": "The speed is not constant: in the table it decreases from over 50 metres per second to under ten. A changing speed means that the net force is not zero."
+        },
+        {
+          "text": "It points up at the end, because the air resistance is then at its greatest",
+          "feedback": "At the end the speed stays almost constant, so the net force is almost zero. The air resistance is then the size of the weight, not greater than it."
+        }
+      ],
+      "data": {
+        "caption": "Speed of the skydiver after the parachute opened (example data)",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$v\\,(\\text{m/s})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "52.0"
+          ],
+          [
+            "1.0",
+            "24.5"
+          ],
+          [
+            "2.0",
+            "12.8"
+          ],
+          [
+            "3.0",
+            "8.9"
+          ],
+          [
+            "4.0",
+            "7.6"
+          ],
+          [
+            "5.0",
+            "7.3"
+          ],
+          [
+            "6.0",
+            "7.2"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -111,6 +348,78 @@
       "unit": "N",
       "tolerance": 0.05,
       "figure": "fy4-14/ex-tangentti",
+      "fbd": "equations"
+    },
+    {
+      "id": "fy4-14-L3-04",
+      "level": 3,
+      "text": "The mass of a skydiver with equipment is $82.0\\,\\text{kg}$. The table shows the downward speed of the skydiver after the parachute opens. The data is example data.\n\na) What is the air resistance at the moment $t = 1.0\\,\\text{s}$? Estimate the acceleration from the points $t = 0.5\\,\\text{s}$ and $t = 1.5\\,\\text{s}$ and choose down as the positive direction.\n\nb) How many times the weight is the air resistance then, and in which direction does the net force point? Explain why the skydiver nevertheless does not rise.\n\nc) Deduce the air resistance at the end from the table and explain why the speed then stays constant.\n\nThe answer box takes the result of part a).",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 2239.42,
+      "unit": "N",
+      "tolerance": 0.03,
+      "fbd": "equations",
+      "data": {
+        "caption": "Speed of the skydiver after the parachute opened (example data)",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$v\\,(\\text{m/s})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "50.0"
+          ],
+          [
+            "0.5",
+            "33.0"
+          ],
+          [
+            "1.0",
+            "22.0"
+          ],
+          [
+            "1.5",
+            "15.5"
+          ],
+          [
+            "2.0",
+            "11.5"
+          ],
+          [
+            "3.0",
+            "7.6"
+          ],
+          [
+            "4.0",
+            "6.2"
+          ],
+          [
+            "5.0",
+            "5.7"
+          ],
+          [
+            "6.0",
+            "5.6"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy4-14-L3-05",
+      "level": 3,
+      "text": "A raindrop whose mass is $0.0140\\,\\text{g}$ falls from a cloud $1.50\\,\\text{km}$ above the ground. Near the ground, according to measurements, the speed of the drop is a constant $8.0\\,\\text{m/s}$ (example data). Assume that the drop starts from rest and moves vertically.\n\na) What is the air resistance acting on the drop near the ground?\n\nb) What speed would the drop have at the bottom if there were no air resistance and the acceleration of the drop were $g$ all the way?\n\nc) Using these results, explain why raindrops are not dangerous, and tell how the air resistance changes as the drop falls.\n\nThe answer box takes the result of part b).",
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "answer": 171.55,
+      "unit": "m/s",
+      "tolerance": 0.02,
       "fbd": "equations"
     }
   ]

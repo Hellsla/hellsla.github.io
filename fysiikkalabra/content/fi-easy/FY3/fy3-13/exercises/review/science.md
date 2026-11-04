@@ -1,15 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: 51355f12725263e3
+CONTENT-HASH: 38b3c624adaef8c4
+Mode: full
+Round: 1
 
 ## Blocking
-(none left; see Fixed)
+(none)
 
 ## Fixed
-- (none)
+- (none; no text edits were needed)
 
 ## Polish
-- L2-04 "lukematarkkuus" is a rare word, but it is also in the Finnish and a hint explains it; left as is.
+- solutions.md L2-05 Substitution: "$250\,{}^\circ\text{C} : 5$" uses a colon for division (as in the Finnish source); selkokielessä selkeämpi olisi jakomerkki, mutta kaava pysyy pariteetissa fi:n kanssa. Same in L2-06 and L2-07 ("2.0 : 15", "104.0 kPa : 0.33").
 
 ## Checked
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): exercises.json and solutions.md (all 17 solutions) against the Finnish: simplified, same steps and numbers.
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked exercises (exercises.json, solutions.md) for both the physics audit and the figures/assessment changes against the new Finnish; the correct choice of the new item stays unambiguous, units and decimal signs follow the language.
+- Scripted comparison of exercises.json against fi: all 219 leaf strings and values checked; ids, answers, units, tolerances, correct flags, choice order, kind lists and table cells identical; every number in texts and feedback equals fi (decimal comma kept in fi-easy prose, point in JSON data cells as in fi).
+- solutions.md: the 20 sections match fi in every number (scripted); no formula changed.
+- New tasks L1-06..08, L2-05..07, L3-04..05: answers recomputed from the data (77.4 K, -274, -302, -370, 10.7, -17.5 degC) and equal the Finnish answers.
+- Terms follow the guardrails: absolute zero is the lowest energy, not "particles stop"; extrapolation is an estimate under a model assumption.
+- Language: short sentences, terms explained in context (ekstrapolointi, interpolointi, epävarmuus); no English left.
+- check_i18n.py fi-easy: 0 errors.

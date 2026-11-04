@@ -1,12 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: afa0393f3ec7eb40
+CONTENT-HASH: 1cb1a625e4cf590e
 
 ## Blocking
 
 ## Polish
+- solutions.md:265–279 (L3-04) — each diagram has its own scale, and the 40 N and 30 N forces are drawn at the minimum length. So T (450 N) is 232 units long on the cart and 197 on the horse. A shared scale would show that the pair is equal.
+- solutions.md:265–279 (L3-04) — only horizontal forces are drawn. Add "the weight and the normal force of the road cancel each other and are not drawn", as in L1-04.
+- solutions.md:227 (L1-08) — "that is, against the child" is unclear; "(the rope pulls the child backwards)" is clearer.
 
 ## Checked
-Compared exercises.json and solutions.md (English) with the reviewed Finnish version: every number, unit, answer, step and justification kept; Newton's first law (law of inertia) and third law named correctly; lift, buoyancy, drag/air resistance, normal force, tension, net force terms right in English.
-Decimal sign checked (point); LaTeX with \overline and \cdot; check_latex, check_i18n and figures --check pass.
-Fixes: gender-neutral wording kept (swimmer, skater, skydiver); "boards of the rink".
-Delta (symbol map, built page): the air resistance of the car solution (L1-04, step texts) is now F_d like everywhere else in the chapter (was F_a), so the English text and the diagram, which the map renders F_d, agree. Skater solution diagram now labelled F_BS (force of the board on the skater, as in the text), swimmer F_WS, F_d, balloon F_b, elevator G_c and G_p, scale G_s and F_a (force of the apple) all match the solutions. Numbers unchanged; Finnish fences untouched.
+- Round 4: the round-3 Blocking item is fixed. Line 264 now says $\overline{F}_\text{t}$, and no "F_road" remains in the file. figures.json has no F_t, F_k or F_h map, so the diagrams show T, F_r, F_k and F_t, T, F_h. Given defines F_r = 410 N, F_k = 40 N (air resistance on the cart) and F_h = 30 N (air resistance on the horse). Formula and Substitution use the same symbols. Text and diagrams now agree throughout.
+- Physics: cart 450 − 410 − 40 = 0 and horse 480 − 450 − 30 = 0, with a = 0. The road's force on the hooves is friction, pointing forward. The third-law pair T is on different bodies. Answers: 450 N and 480 N, as in answers.py.
+- The arrowheads and labels lie inside the figure (round 2, unchanged).
+- The rest of the set is unchanged since rounds 1–2, and the answers recomputed there still hold.
+- The hash was the same at the start and at the end.

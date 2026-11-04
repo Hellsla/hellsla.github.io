@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 75ec76da240a1f2c
+CONTENT-HASH: 751013725298ea15
 
 ## Blocking
 
 ## Polish
-- exercises.json:28 (fy4-4-L1-04): "vaakasuoralla lattialla vaakasuoraan suuntaan" repeats the same word. It is still correct and clear. Optional: "Laatikkoa, jonka massa on 12 kg, vedetään lattialla vaakasuoraan suuntaan 38 N:n voimalla."
-- L3-01 asks for the direction too, but the page checks only the magnitude. The solution gives the direction. This is unchanged from round 3: say so in the answer note or split the question.
-- L2-03 repeats the crane-slowing scenario of the Sovella selection task. Unchanged: vary it, for example with a lift stopping.
+- fy4-4-L2-07 now fixes the earlier Blocking item: a slab lowered and slowing, sign error in $a$ (the student takes the motion direction as the direction of $a$). It no longer repeats the example (a lift that accelerates up, the weight forgotten). It still uses a crane and a concrete element, as the example does; a lift cage or a rope-lowered crate would separate them further.
+- L1-06 (direction of $\Sigma F$ for a slowing lift) and L2-07 (the same idea for a slowing slab) test the same misconception; that is acceptable, since L2-07 adds numbers, but L1-06 pre-answers the error of L2-07.
+- Lifts recur in several tasks (L1-06, L2-02, L3-01, L3-05); one could move to a cart or lorry.
+- Data tables write decimals with a point while the text uses commas.
 
 ## Checked
-- Delta: only the L1-04 task text changed. It adds "vaakasuoraan suuntaan", so the student no longer has to guess the pull's direction. The data, the answer, the fbd tag and the solution are untouched and now match the task ("vetävä voima F vaakasuoraan").
-- The situation still comes first and the question last, as its own sentence. "Piirrä laatikon voimakuvio" still comes before the question.
-- Finnish case after number + unit is correct ("38 N:n voimalla").
-- The added three words do not change the card layout at 360 px. The deterministic layout checks pass.
-- Levels are 5/4/3, and no task repeats the worked example.
+- Changed tasks: L1-07 (mass in g) and L1-08 (force in kN) now give a real unit conversion step, shown in Muunnokset; L2-06 data row 0,50 kg now 2,4 m/s² (still $F = 1{,}2$ N); L2-07 new.
+- L2-07 answer: $T = m(g + a) = 820\cdot 11{,}01 = 9028$ N; the student's $7{,}06$ kN is exactly $m(g - a)$; solution has voimakuvio, the equation with the sign convention, and a sanity check.
+- 20 tasks in 8/7/5; all solutions have the full step list; L3-04 and L3-05 unchanged and correct.
+- L1-06 distractors have their own feedback, one correct option.
 - Hash identical at the start and the end.

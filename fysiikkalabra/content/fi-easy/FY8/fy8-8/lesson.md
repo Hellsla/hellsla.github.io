@@ -149,6 +149,10 @@ Vain tietyt protonien ja neutronien yhdistelmät ovat pysyviä. Piirrä ytimet n
   <foreignObject x="353" y="183" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#2b8a3e">$\text{pysyvät}$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy8/cloud-chamber-beta.webp" alt="Mustalla pohjalla on paljon ohuita, mutkittelevia valkoisia viivoja."><figcaption>Beetahiukkasten jälkiä sumukammiossa. Beetahiukkanen on elektroni. Se on kevyt ja ionisoi ilmaa vähemmän kuin alfahiukkanen. Siksi jälki on ohut ja pitkä. Jälki mutkittelee, koska elektroni muuttaa helposti suuntaa.</figcaption></figure>
+
+<figure class="unit-photo"><img src="pics/fy8/cloud-chamber-alpha.webp" alt="Mustalla pohjalla on paljon lyhyitä, paksuja valkoisia viivoja."><figcaption>Alfahiukkasten jälkiä sumukammiossa. Alfahiukkanen ionisoi ilmaa voimakkaasti. Se menettää energiansa muutamassa senttimetrissä. Siksi jälki on lyhyt, paksu ja suora.</figcaption></figure>
+
 ### Alfa-, beeta- ja gammahajoaminen
 **Alfahajoamisessa** ytimestä lähtee alfahiukkanen eli heliumydin ${}^{4}_{2}\text{He}$. Siinä on kaksi protonia ja kaksi neutronia. Alfahajoaminen on tyypillistä raskaille ytimille, kuten uraanille, radiumille ja savuilmaisimen americiumille.
 

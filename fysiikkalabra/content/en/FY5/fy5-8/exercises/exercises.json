@@ -89,7 +89,7 @@
     {
       "id": "fy5-8-L3-02",
       "level": 3,
-      "text": "A jumping toy has a vertical spring whose spring constant is $200\\,\\text{N/m}$. The toy is pressed against a table so that the spring is compressed $3.0\\,\\text{cm}$, and a suction cup holds it in place. When the suction cup lets go, the spring launches the $50\\,\\text{g}$ toy straight up. Assume that all of the elastic potential energy changes into the gravitational potential energy of the toy; air resistance and the mass of the spring are neglected. How high does the toy rise from its starting point?",
+      "text": "A jumping toy has a vertical spring whose spring constant is $200\\,\\text{N/m}$. The toy is pressed against a table so that the spring is compressed $3.0\\,\\text{cm}$, and a suction cup holds it in place.\n\nWhen the suction cup lets go, the spring launches the $50\\,\\text{g}$ toy straight up. Assume that all of the elastic potential energy changes into the gravitational potential energy of the toy; air resistance and the mass of the spring are neglected.\n\nHow high does the toy rise from its starting point?",
       "answer": 0.18349,
       "unit": "m",
       "tolerance": 0.03
@@ -97,7 +97,7 @@
     {
       "id": "fy5-8-L3-03",
       "level": 3,
-      "text": "A trolley of mass $0.50\\,\\text{kg}$ is on a horizontal frictionless track between two springs. One end of the left spring is attached to the left wall and one end of the right spring to the right wall, and at the equilibrium position both springs are at their rest length. The spring constant of the left spring is $30\\,\\text{N/m}$ and that of the right spring $50\\,\\text{N/m}$. The trolley is moved $4.0\\,\\text{cm}$ to the right and released. What is the net force on the trolley immediately after it is released?",
+      "text": "A trolley of mass $0.50\\,\\text{kg}$ is on a horizontal frictionless track between two springs.\n\nOne end of the left spring is attached to the left wall and one end of the right spring to the right wall, and at the equilibrium position both springs are at their rest length. The spring constant of the left spring is $30\\,\\text{N/m}$ and that of the right spring $50\\,\\text{N/m}$.\n\nThe trolley is moved $4.0\\,\\text{cm}$ to the right and released. What is the net force on the trolley immediately after it is released?",
       "fbd": "equations",
       "answer": 3.2,
       "unit": "N",

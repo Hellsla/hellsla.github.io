@@ -1,15 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: d18c5c8e6452dfbc
+CONTENT-HASH: 6253b0cdb771b33d
 
 ## Blocking
 
 ## Polish
+- [Minor] fy7-6 caption — "on a train" cannot be seen in the photo (a test bench with the brake unit); consider "An eddy current brake for a train bogie".
 
 ## Checked
-- Delta re-review of the Sijoitus step of the roller-coaster braking solution (siirto task). Arithmetic: 625 - 100 = 525 m^2/s^2; 2400 * 525 / 60 = 21 000 N = 21 kN. Consistent with the Kaava step; the symbols, units and decimal comma are fine.
-- check_layout.py fy7-6 --width 340: OK in fi, en and fi-easy.
-- Own capture of the opened solution at 340 px (scratchpad sol-en.png): the two-part Sijoitus renders cleanly, with no overflow or clipping, and the order is principle, formula, substitution, result.
-- Existing 390 captures of the sovella stage show nothing else changed.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+batch delta review: opened each new photo in assets/pics/fy7 and compared alt text and caption with it; rendered preview/en/fy7-6.html at 1280 px (figure floats right, 320 px wide, no overflow) and 390 px (full-width, below text, credit line present); captions physically correct and tied to the chapter, numbers with units in LaTeX.

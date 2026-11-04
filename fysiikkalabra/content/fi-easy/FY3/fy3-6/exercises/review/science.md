@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 5f8bfe79b2a85e41
+CONTENT-HASH: 4b8fb777f41bd4cf
 
 ## Blocking
-(none left; see Fixed)
+(none)
 
 ## Fixed
-- nothing needed fixing
+- nothing changing meaning needed fixing
 
 ## Polish
-- The Finnish term sulamislämpö in solutions is not explained; acceptable since it is a taught physics term.
+- none
 
 ## Checked
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): compared exercises.json (all 12 task texts) and solutions.md (all step labels, conversions, answers, reasonableness) sentence by sentence. Judged science: meaning, signs, quantities, units, decimal point, chapter titles.
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked exercises.json (figure task L2-02 and solution, math-wrapped values, L3-03 wording) and solutions.md; no issues found.
+- Compared the 8 new exercises in exercises.json and solutions.md against the reviewed Finnish: ids, answers, units, tolerances, correct flag, choices and feedback, table cells and every number identical; sentences short, terms (kalorimetri, ominaislämpökapasiteetti, lämpökapasiteetti) explained.
+- Physics recomputed: L1-07 77.9 K, L1-08 540 J/K and 32.4 kJ, L2-05 4138 J/(kg·K), L2-06 2083, L2-07 22.84 °C, L3-04 4286 and 81.3 W, L3-05 k = 0.587–0.614 W/K; all match the Finnish.

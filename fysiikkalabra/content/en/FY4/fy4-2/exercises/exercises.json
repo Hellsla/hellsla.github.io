@@ -40,6 +40,78 @@
       "answer": 180,
       "unit": "m",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy4-2-L1-06",
+      "level": 1,
+      "text": "A car drives east and brakes uniformly to a stop. In which direction does the car's acceleration point during the braking?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "West, because the speed decreases and the acceleration points in the direction of the change in velocity.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "West, because the speed decreases and the acceleration points in the direction of the change in velocity.",
+          "feedback": "Correct: during braking the change in velocity $\\Delta v$ is opposite to the velocity, and the acceleration points in the direction of the change. When the velocity directed east decreases, the acceleration therefore points west.",
+          "correct": true
+        },
+        {
+          "text": "East, because the car moves east and the acceleration always points in the direction of motion.",
+          "feedback": "Acceleration points in the direction of the change in velocity, not the direction of motion. If the acceleration pointed east, the car's speed towards the east would increase and the car would not slow down."
+        },
+        {
+          "text": "Nowhere, because the car slows down and the speed does not increase, so the acceleration is zero.",
+          "feedback": "The acceleration is zero only when the velocity does not change. A decrease in speed is just as much a change in velocity as an increase, so the acceleration is not zero."
+        },
+        {
+          "text": "Upwards, because the car being stopped is acted on by the reaction to its weight, which points upwards.",
+          "feedback": "Braking is horizontal motion, and the velocity changes in the horizontal direction. The acceleration points in the direction of the change in velocity, so the vertical direction is out of the question."
+        }
+      ]
+    },
+    {
+      "id": "fy4-2-L1-07",
+      "level": 1,
+      "text": "The graph shows the velocity of a kick scooter as a function of time from $0$ to $5.0\\,\\text{s}$. The scooter moves in the same direction the whole time. How far does the scooter travel during this time?",
+      "kind": [
+        "graph"
+      ],
+      "answer": 22.5,
+      "unit": "m",
+      "tolerance": 0.02,
+      "figure": "fy4-2/ex-tv"
+    },
+    {
+      "id": "fy4-2-L1-08",
+      "level": 1,
+      "text": "A student solves a problem: a stone is dropped from rest into a well and it reaches the bottom in $2.0\\,\\text{s}$. How deep is the well?\n\nThe student's solution: the velocity at $2.0\\,\\text{s}$ is $v = g\\,t = 9.81\\,\\text{m/s}^2 \\cdot 2.0\\,\\text{s} \\approx 19.6\\,\\text{m/s}$. The depth is $s = v\\,t = 19.6\\,\\text{m/s} \\cdot 2.0\\,\\text{s} \\approx 39\\,\\text{m}$.\n\nWhat is wrong in the student's solution?",
+      "kind": [
+        "error"
+      ],
+      "answer": "The stone's velocity increases the whole time, so the distance must not be calculated with the final velocity but with the average velocity.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The stone's velocity increases the whole time, so the distance must not be calculated with the final velocity but with the average velocity.",
+          "feedback": "Correct: the final velocity $19.6\\,\\text{m/s}$ is reached only at the end of the fall. At the start the velocity is zero, so the average velocity is $9.8\\,\\text{m/s}$ and the depth is $\\tfrac{1}{2}\\,g\\,t^2 \\approx 20\\,\\text{m}$.",
+          "correct": true
+        },
+        {
+          "text": "The stone's acceleration is not constant, so the formula $v = g\\,t$ must not be used to calculate the velocity.",
+          "feedback": "When air resistance is small, the acceleration of a falling stone is constant, $g$. The calculation of the velocity was therefore correct; the fault is in the calculation of the distance."
+        },
+        {
+          "text": "The fall time must be divided by the velocity, because the distance is obtained from the formula $s = t : v$.",
+          "feedback": "Time divided by velocity is not a distance; its unit would be $\\text{s}^2/\\text{m}$. In uniform motion the distance is the product of velocity and time."
+        },
+        {
+          "text": "The acceleration of free fall must be multiplied by the stone's mass, because a heavy stone falls faster than a light one.",
+          "feedback": "When air resistance is small, all bodies fall with the same acceleration $g$, so the mass has no place in the calculation of this problem."
+        }
+      ]
     }
   ],
   "level2": [
@@ -75,6 +147,131 @@
       "answer": 1.6095769830491427,
       "unit": "m/s²",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy4-2-L2-05",
+      "level": 2,
+      "text": "The velocity of a cart rolling down an inclined plane was measured as a function of time by video analysis. The data is an example data set.\n\nPlot the measured points as a $(t,v)$ graph and fit a straight line to the points. Determine the cart's acceleration from the slope of the line. Give the answer in $\\text{m/s}^2$.",
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "answer": 0.84,
+      "unit": "m/s²",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Velocity of the cart, example data",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$v\\,(\\text{m/s})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "0.21"
+          ],
+          [
+            "0.5",
+            "0.66"
+          ],
+          [
+            "1.0",
+            "1.02"
+          ],
+          [
+            "1.5",
+            "1.50"
+          ],
+          [
+            "2.0",
+            "1.86"
+          ],
+          [
+            "2.5",
+            "2.35"
+          ],
+          [
+            "3.0",
+            "2.71"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy4-2-L2-06",
+      "level": 2,
+      "text": "A cart starts from rest on an inclined track, and its position $x$ from the starting point was measured as a function of time. The data is an example data set.\n\nThe position does not grow in direct proportion to time, so a straight line cannot be fitted to the $(t,x)$ graph. Calculate $t^2$ for each moment, plot the $(t^2,x)$ graph and fit a straight line to the points. Determine the cart's acceleration from the slope of the line. Give the answer in $\\text{m/s}^2$.",
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "answer": 1.15,
+      "unit": "m/s²",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Position of the cart, example data",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$x\\,(\\text{m})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "0.00"
+          ],
+          [
+            "0.4",
+            "0.10"
+          ],
+          [
+            "0.8",
+            "0.37"
+          ],
+          [
+            "1.2",
+            "0.80"
+          ],
+          [
+            "1.6",
+            "1.46"
+          ],
+          [
+            "2.0",
+            "2.32"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy4-2-L2-07",
+      "level": 2,
+      "text": "A cart rolls on an inclined track. A student wants to find out whether the cart's acceleration is constant during the whole trip. She has two ways of measuring. Light gates measure the time between two gates to the nearest millisecond. Video analysis gives the cart's position in every frame, for example thirty times a second.\n\nWhich way of measuring gives a better answer to the question?",
+      "kind": [
+        "experiment",
+        "reasoning"
+      ],
+      "answer": "Video analysis, because the velocity is obtained at many moments and we can see whether the $(t,v)$ graph is a straight line.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Video analysis, because the velocity is obtained at many moments and we can see whether the $(t,v)$ graph is a straight line.",
+          "feedback": "Correct: with constant acceleration the $(t,v)$ graph is a straight line. Many data points show whether the slope stays the same during the whole trip, whereas two gates would give only one average value.",
+          "correct": true
+        },
+        {
+          "text": "Light gates, because the timing is more accurate and so the acceleration can be deduced from a single measurement.",
+          "feedback": "An accurate time is not enough: a measurement between two gates gives only one average value. It cannot show whether the acceleration changes during the trip."
+        },
+        {
+          "text": "Light gates, because the gates measure the velocity directly and from the velocity the acceleration is always constant.",
+          "feedback": "Acceleration is not always constant, and that is exactly what is being investigated. Constancy cannot be assumed; it must be concluded from the measurements."
+        },
+        {
+          "text": "Neither is suitable, because the cart's acceleration can only be determined by calculation from the angle of inclination.",
+          "feedback": "Acceleration can be determined directly from measurements, for example from the change in velocity in time. Calculating from the angle does not tell what the cart actually does."
+        }
+      ]
     }
   ],
   "level3": [
@@ -101,6 +298,106 @@
       "answer": -1.7600000000000002,
       "unit": "m/s",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy4-2-L3-04",
+      "level": 3,
+      "text": "The acceleration of a car was investigated on a straight road. The car started from rest, and the speed was read from the speedometer every two seconds. The data is an example data set.\n\na) Calculate the car's acceleration in each two-second interval. Decide and justify whether the acceleration is constant.\n\nb) Calculate the distance the car travels during the first $8.0\\,\\text{s}$ by reading it from the area under the $(t,v)$ graph. Assume that the velocity changes uniformly in each two-second interval. Give the distance in the answer box in metres and estimate whether the result is slightly too small or slightly too large.",
+      "kind": [
+        "data",
+        "reasoning",
+        "model"
+      ],
+      "answer": 128.3,
+      "unit": "m",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Velocity of the car, example data",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$v\\,(\\text{km/h})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "0"
+          ],
+          [
+            "2.0",
+            "36"
+          ],
+          [
+            "4.0",
+            "62"
+          ],
+          [
+            "6.0",
+            "83"
+          ],
+          [
+            "8.0",
+            "100"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy4-2-L3-05",
+      "level": 3,
+      "text": "A cart is pushed up an inclined track, and a motion sensor measures its velocity $v$ as a function of time. Up the track is the positive direction, and friction is small. The data is an example data set.\n\na) Plot the $(t,v)$ graph and fit a straight line to the points. Determine the cart's acceleration and initial velocity and justify that the acceleration is constant.\n\nb) How far from the starting point does the cart get upwards before turning? Give the distance in the answer box in metres.\n\nc) Describe in words what the $(t,a)$ and $(t,x)$ graphs look like from $0$ to $5.0\\,\\text{s}$.",
+      "kind": [
+        "data",
+        "graph",
+        "model"
+      ],
+      "answer": 3.61,
+      "unit": "m",
+      "tolerance": 0.06,
+      "data": {
+        "caption": "Velocity of the cart on the track, example data",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$v\\,(\\text{m/s})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "2.41"
+          ],
+          [
+            "0.5",
+            "2.02"
+          ],
+          [
+            "1.0",
+            "1.62"
+          ],
+          [
+            "1.5",
+            "1.19"
+          ],
+          [
+            "2.0",
+            "0.82"
+          ],
+          [
+            "2.5",
+            "0.38"
+          ],
+          [
+            "3.0",
+            "-0.01"
+          ],
+          [
+            "3.5",
+            "-0.41"
+          ],
+          [
+            "4.0",
+            "-0.83"
+          ]
+        ]
+      }
     }
   ]
 }

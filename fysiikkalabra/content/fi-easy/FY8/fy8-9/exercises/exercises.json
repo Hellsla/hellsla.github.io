@@ -79,7 +79,7 @@
     {
       "id": "fy8-9-L3-01",
       "level": 3,
-      "text": "Elävässä kasvissa hiili-14:n osuus hiilestä pysyy vakiona, koska kasvi ottaa ilmasta jatkuvasti uutta hiiltä. Kun kasvi kuolee, hiili-14 hajoaa, eikä uutta tule tilalle. Arkeologisesta puunpalasta mitattu hiili-14:n aktiivisuus grammaa hiiltä kohti on $38{,}0\\,\\%$ elävän puun vastaavasta aktiivisuudesta. Hiili-14:n puoliintumisaika on $5700\\,\\text{a}$. Kuinka kauan sitten puu kuoli? Anna vastaus vuosina.",
+      "text": "Elävässä kasvissa hiili-14:n osuus hiilestä pysyy vakiona, koska kasvi ottaa ilmasta jatkuvasti uutta hiiltä. Kun kasvi kuolee, hiili-14 hajoaa, eikä uutta tule tilalle.\n\nArkeologisesta puunpalasta mitattu hiili-14:n aktiivisuus grammaa hiiltä kohti on $38{,}0\\,\\%$ elävän puun vastaavasta aktiivisuudesta. Hiili-14:n puoliintumisaika on $5700\\,\\text{a}$.\n\nKuinka kauan sitten puu kuoli? Anna vastaus vuosina.",
       "answer": 7960,
       "unit": "a",
       "tolerance": 0.02

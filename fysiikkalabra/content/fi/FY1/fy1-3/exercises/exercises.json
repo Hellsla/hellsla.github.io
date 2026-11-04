@@ -230,7 +230,7 @@
     {
       "id": "fy1-3-L2-07",
       "level": 2,
-      "text": "Heilurin heilahdusaika on noin $1{,}5\\,\\text{s}$. Käsin ajanotossa kellon käynnistys ja pysäytys aiheuttavat reaktioajasta yhteensä noin $0{,}2\\,\\text{s}$:n epävarmuuden koko mitattuun aikaan (arvio, joka ei riipu mitatun ajan pituudesta). Suunnittelet mittauksen, jossa mitataan kerralla $N$ peräkkäistä heilahdusta ja jaetaan aika luvulla $N$. Kuinka monta heilahdusta vähintään on mitattava, jotta heilahdusajan suhteellinen epävarmuus on enintään $1\\,\\%$? Selitä myös, miksi pidemmän ajan mittaaminen pienentää reaktioajan vaikutusta.",
+      "text": "Heilurin heilahdusaika on noin $1{,}5\\,\\text{s}$. Käsin ajanotossa kellon käynnistys ja pysäytys aiheuttavat reaktioajasta yhteensä noin $0{,}2\\,\\text{s}$:n epävarmuuden koko mitattuun aikaan (arvio, joka ei riipu mitatun ajan pituudesta).\n\nSuunnittelet mittauksen, jossa mitataan kerralla $N$ peräkkäistä heilahdusta ja jaetaan aika luvulla $N$.\n\nKuinka monta heilahdusta vähintään on mitattava, jotta heilahdusajan suhteellinen epävarmuus on enintään $1\\,\\%$? Selitä myös, miksi pidemmän ajan mittaaminen pienentää reaktioajan vaikutusta.",
       "kind": [
         "experiment",
         "model"
@@ -268,7 +268,7 @@
     {
       "id": "fy1-3-L3-04",
       "level": 3,
-      "text": "Kärryn kulkuaika radan päästä päähän mitattiin käsikellolla kahdeksan kertaa, ja tulokset ovat taulukossa. Laboratoriopäiväkirjassa on kuudennen mittauksen kohdalla merkintä: ”Katsoin hetkeksi muualle ja pysäytin kellon myöhään.” Saako tuloksen $2{,}97\\,\\text{s}$ jättää pois? Perustele päiväkirjan merkinnällä ja laske keskiarvo $\\bar{t}$, jota perustellusti käytät. Entä jos merkintää ei olisi eikä poikkeamalle löytyisi syytä? Laske silloin keskiarvo kaikista kahdeksasta tuloksesta ja vertaa vaihteluvälin puolikasta tuloksen kanssa ja ilman sitä.",
+      "text": "Kärryn kulkuaika radan päästä päähän mitattiin käsikellolla kahdeksan kertaa, ja tulokset ovat taulukossa. Laboratoriopäiväkirjassa on kuudennen mittauksen kohdalla merkintä: ”Katsoin hetkeksi muualle ja pysäytin kellon myöhään.”\n\nSaako tuloksen $2{,}97\\,\\text{s}$ jättää pois? Perustele päiväkirjan merkinnällä ja laske keskiarvo $\\bar{t}$, jota perustellusti käytät.\n\nEntä jos merkintää ei olisi eikä poikkeamalle löytyisi syytä? Laske silloin keskiarvo kaikista kahdeksasta tuloksesta ja vertaa vaihteluvälin puolikasta tuloksen kanssa ja ilman sitä.",
       "kind": [
         "data",
         "reasoning"
@@ -321,7 +321,7 @@
     {
       "id": "fy1-3-L3-05",
       "level": 3,
-      "text": "Kaksi ryhmää mittasi saman alumiinikappaleen tiheyden. Ryhmä A sai tulokseksi $\\rho_\\text{A} = 2{,}74 \\pm 0{,}05\\,\\text{g/cm}^3$ ja ryhmä B tulokseksi $\\rho_\\text{B} = 2{,}60 \\pm 0{,}05\\,\\text{g/cm}^3$ (epävarmuudet ovat ryhmien arvioita). Oppilas päättelee näin. ”Tulokset eroavat vain $0{,}14\\,\\text{g/cm}^3$ eli noin $5\\,\\%$, joten ne ovat sopusoinnussa.” Etsi päättelyn virhe ja arvioi epävarmuusväleillä, ovatko tulokset sopusoinnussa. Kuinka suuri on välien väliin jäävä rako?",
+      "text": "Kaksi ryhmää mittasi saman alumiinikappaleen tiheyden. Ryhmä A sai tulokseksi $\\rho_\\text{A} = 2{,}74 \\pm 0{,}05\\,\\text{g/cm}^3$ ja ryhmä B tulokseksi $\\rho_\\text{B} = 2{,}60 \\pm 0{,}05\\,\\text{g/cm}^3$ (epävarmuudet ovat ryhmien arvioita).\n\nOppilas päättelee näin. ”Tulokset eroavat vain $0{,}14\\,\\text{g/cm}^3$ eli noin $5\\,\\%$, joten ne ovat sopusoinnussa.”\n\nEtsi päättelyn virhe ja arvioi epävarmuusväleillä, ovatko tulokset sopusoinnussa. Kuinka suuri on välien väliin jäävä rako?",
       "kind": [
         "error",
         "reasoning"

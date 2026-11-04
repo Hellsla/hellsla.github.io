@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Writes the Ruukkilabra logos (teacher 2026-10-29) into assets/shared/brand/ as clean SVG:
-the arch symbol (ruukkilabra-symboli.svg, hand-drawn after the teacher's PNG, also the favicon), the wordmark
+the symbol (ruukkilabra-symboli.svg = the teacher's prism-and-forge SVG of 2026-11-04 with a cropped viewBox, also the favicon), the wordmark
 (ruukkilabra-logo.svg) and the wordmark with the subtitle of each language (ruukkilabra-logo-<lang>.svg).
 The letters are Plus Jakarta Sans ExtraBold turned into paths, so a logo looks the same without the font.
 Needs fonttools and brotli (pip install fonttools brotli); run it again only when a logo or a subtitle changes."""
@@ -16,8 +16,8 @@ FONT = ROOT / "templates/vendor/fonts/plus-jakarta-sans-latin-wght-normal.woff2"
 GREEN, ORANGE = "#1a4b2e", "#b85f2a"
 SUBTITLES = {"fi": "LUKION FYSIIKKA", "en": "UPPER SECONDARY PHYSICS"}
 SYMBOL = (OUT / "ruukkilabra-symboli.svg").read_text()
-SYMBOL_BOX = (196, 196, 862, 862)               # viewBox of the symbol; the arch spans y 238..1012 inside it
-ARCH_TOP, ARCH_BOTTOM, ARCH_LEFT, ARCH_RIGHT = 238, 1012, 211, 1042
+# the drawing inside the symbol: prism top y 184, forge foot y 1082, incoming ray x 96, spectrum x 1151
+ARCH_TOP, ARCH_BOTTOM, ARCH_LEFT, ARCH_RIGHT = 184, 1082, 96, 1151
 
 
 def font(weight):
@@ -42,9 +42,10 @@ def num(d):
 
 
 def symbol_group(height, x, y):
-    """The arch drawn height units tall with its top-left at (x, y)."""
+    """The symbol drawn height units tall with its top-left at (x, y)."""
     s = height / (ARCH_BOTTOM - ARCH_TOP)
     inner = re.search(r"<svg[^>]*>(.*)</svg>", SYMBOL, re.S).group(1)
+    inner = re.sub(r"<(title|desc)\b.*?</\1>|<!--.*?-->", "", inner, flags=re.S)   # the logo has its own title
     return f'<g transform="translate({x - ARCH_LEFT * s:.2f} {y - ARCH_TOP * s:.2f}) scale({s:.5f})">{inner}</g>', (ARCH_RIGHT - ARCH_LEFT) * s
 
 

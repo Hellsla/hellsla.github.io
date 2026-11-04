@@ -118,3 +118,88 @@
 **Sijoitus:** $\rho_1 g h_1 = 850\,\tfrac{\text{kg}}{\text{m}^3} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \cdot 0{,}40\,\text{m} = 3335{,}4\,\text{Pa}$; $\rho_2 g h_2 = 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \cdot 1{,}60\,\text{m} = 15\,696\,\text{Pa}$; $\Delta p = 3335{,}4\,\text{Pa} + 15\,696\,\text{Pa} = 19\,031{,}4\,\text{Pa}$
 **Vastaus:** $19{,}0\,\text{kPa}$. Summassa desimaalit määräytyvät epätarkimman termin mukaan: öljykerroksen $3{,}3\,\text{kPa}$ (paksuus $0{,}40\,\text{m}$, kaksi numeroa) on tarkka desimaalin tarkkuudella, joten $3{,}3 + 15{,}7 = 19{,}0\,\text{kPa}$.
 **Järkevyys:** Jos koko $2{,}00\,\text{m}$ olisi vettä, ylipaine olisi $1000 \cdot 9{,}81 \cdot 2{,}00 = 19\,620\,\text{Pa}$. Öljy on kevyempää, joten tulos on pienempi: ero on $(1000 - 850) \cdot 9{,}81 \cdot 0{,}40\,\text{Pa} = 588{,}6\,\text{Pa}$ ja $19\,620 - 588{,}6 = 19\,031{,}4\,\text{Pa}$, kuten laskettiin.
+
+## fy3-4-L1-06
+**Kysytty:** miksi naula menee puuhun kärki edellä mutta ei kanta edellä, kun peukalon voima on sama.
+**Periaate:** Paine on pintaa vastaan kohtisuoran voiman ja pinta-alan suhde, $p = F/A$. Naula on peukalon ja puun välissä tasapainossa, joten voima on kärjessä, kannassa ja peukalolla yhtä suuri. Paine riippuu siis vain siitä, kuinka pieneen alaan sama voima keskittyy.
+**Mallivastaus:** Kärjen pinta-ala on pieni, joten sama voima aiheuttaa kärjessä suuremman paineen, ja puun kuidut antavat periksi. Kannan ala on moninkertainen, joten paine on siellä pieni ja naula ei tunkeudu puuhun. Naula ei vahvista voimaa: voima on kummassakin tapauksessa yhtä suuri, mutta paine ei ole. Naulan omalla painolla ei ole merkitystä, koska se on pieni peukalon voimaan verrattuna.
+
+## fy3-4-L1-07
+**Annettu:** syvyys $h = 40\,\text{m}$, Itämeren veden tiheys $\rho = 1005\,\text{kg/m}^3$, $g = 9{,}81\,\text{m/s}^2$
+**Kysytty:** hydrostaattinen paine $\Delta p$ kilopascaleina
+**Periaate:** Lepäävässä nesteessä paine kasvaa syvyyden mukana, koska syvemmällä on enemmän nestettä päällä. Murtovesi on kuten makea vesi käytännössä kokoonpuristumatonta, joten $\rho$ on vakio. Kysytty hydrostaattinen paine on vain veden aiheuttama osa, ilmanpainetta ei lasketa mukaan.
+**Kaava:** $\Delta p = \rho g h$; tuntematon $\Delta p$ on jo yksin vasemmalla puolella
+**Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten tulos tulee pascaleina. Lopuksi $1\,\text{kPa} = 1000\,\text{Pa}$.
+**Sijoitus:** $\Delta p = 1005\,\tfrac{\text{kg}}{\text{m}^3} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \cdot 40\,\text{m} = 394\,362\,\text{Pa} = 394{,}362\,\text{kPa}$
+**Vastaus:** $390\,\text{kPa}$, kaksi merkitsevää numeroa kuten syvyydessä $40\,\text{m}$.
+**Järkevyys:** Vesi lisää painetta noin $10\,\text{kPa}$ metriä kohti, joten $40\,\text{m}$ antaa noin $400\,\text{kPa}$. Tarkka arvo on hieman pienempi, koska $g < 10\,\text{m/s}^2$. Makean veden tiheydellä $1000\,\text{kg/m}^3$ tulos olisi $392\,\text{kPa}$, joten murtoveden suurempi tiheys muuttaa tulosta alle $1\,\%$.
+
+## fy3-4-L1-08
+**Kysytty:** mikä virhe on väitteessä, että kaksinkertaisessa syvyydessä myös kokonaispaine on kaksinkertainen.
+**Periaate:** Nesteessä kokonaispaine on $p = p_0 + \rho g h$. Hydrostaattinen osa $\rho g h$ on suoraan verrannollinen syvyyteen, mutta pinnan paine $p_0$ on vakiotermi, joka on sama jokaisessa syvyydessä.
+**Mallivastaus:** Vain veden osuus kaksinkertaistuu, koska ilmanpaine on kummassakin syvyydessä sama. Esimerkiksi ilmanpaineella $101\,\text{kPa}$ syvyydessä $5\,\text{m}$ paine on $101\,\text{kPa} + 49\,\text{kPa} = 150\,\text{kPa}$ ja syvyydessä $10\,\text{m}$ se on $101\,\text{kPa} + 98\,\text{kPa} = 199\,\text{kPa}$, eli vain noin $1{,}3$-kertainen. Paine kasvaa syvyyden mukana, ei kuitenkaan neliöllisesti, ja veden tiheys on joka syvyydessä sama.
+
+## fy3-4-L2-05
+**Annettu:** kuusi pistettä $(h, p)$ taulukosta; sovitetun suoran kulmakerroin $k = 9{,}78\,\tfrac{\text{kPa}}{\text{m}}$; suora kulkee keskipisteen $(h_{\text{ka}}, p_{\text{ka}})$ kautta; $g = 9{,}81\,\text{m/s}^2$
+**Kysytty:** a) veden tiheys $\rho$; b) ilmanpaine $p_0$ kilopascaleina
+**Periaate:** Paine nesteessä on $p = p_0 + \rho g h$, joten kuvaaja $(h, p)$ on suora, jonka kulmakerroin on $\rho g$ ja vakiotermi $p_0$. Todellisissa mittaussarjoissa mittauspisteet eivät yleensä sijaitse täsmälleen samalla suoralla mittausepävarmuuden vuoksi, joten sovitettu suora kulkee pisteiden joukon keskeltä ja siis keskipisteen kautta.
+**Taulukon lukeminen:** Vakiotermi on suoran paine kohdassa $h = 0$, ja se saadaan keskipisteestä. Syvyyksien summa on $30{,}0\,\text{m}$ ja paineiden summa $891{,}8\,\text{kPa}$.
+**Kaava:** a) $k = \rho g$, joten $\rho = \dfrac{k}{g}$. b) $p_{\text{ka}} = p_0 + k h_{\text{ka}}$, joten $p_0 = p_{\text{ka}} - k h_{\text{ka}}$
+**Muunnokset:** $k = 9{,}78\,\text{kPa/m} = 9780\,\text{Pa/m} = 9780\,\text{N/m}^3$, jotta tiheys tulee yksikössä $\text{kg/m}^3$.
+**Sijoitus:** a) $\rho = \dfrac{9780\,\text{N/m}^3}{9{,}81\,\text{m/s}^2} = 997{,}0\,\tfrac{\text{kg}}{\text{m}^3}$. b) $h_{\text{ka}} = 30{,}0\,\text{m} : 6 = 5{,}0\,\text{m}$ ja $p_{\text{ka}} = 891{,}8\,\text{kPa} : 6 = 148{,}63\,\text{kPa}$, joten
+
+$$\begin{aligned} p_0 &= 148{,}63\,\text{kPa} - 9{,}78\,\tfrac{\text{kPa}}{\text{m}} \cdot 5{,}0\,\text{m} \\ &= 148{,}63\,\text{kPa} - 48{,}9\,\text{kPa} \\ &= 99{,}73\,\text{kPa} \end{aligned}$$
+
+**Vastaus:** $p_0 = 99{,}7\,\text{kPa}$, kolme merkitsevää numeroa kuten kulmakertoimessa ja paineissa. Tiheys on $997\,\text{kg/m}^3$.
+**Järkevyys:** Suora antaa pisteessä $h = 10{,}0\,\text{m}$ paineen $99{,}73\,\text{kPa} + 9{,}78\,\tfrac{\text{kPa}}{\text{m}} \cdot 10{,}0\,\text{m} = 197{,}5\,\text{kPa}$, mikä poikkeaa mitatusta $197{,}3\,\text{kPa}$:sta vain $0{,}2\,\text{kPa}$, alle epävarmuuden $0{,}5\,\text{kPa}$. Tiheys on lähellä veden tiheyttä $1000\,\text{kg/m}^3$ ja ilmanpaine lähellä arvoa $101\,\text{kPa}$.
+
+## fy3-4-L2-06
+**Annettu:** vesipatsaan korkeus $h = 0{,}300\,\text{m}$, $\rho = 1000\,\text{kg/m}^3$, $g = 9{,}81\,\text{m/s}^2$; mitatut ylipaineet $2{,}9\ldots 3{,}0\,\text{kPa}$, lukeman epävarmuus $\pm 0{,}1\,\text{kPa}$
+**Kysytty:** a) hydrostaattinen paine $\Delta p$ kilopascaleina; b) miksi pohjan paine on lähes sama eri astioissa
+**Periaate:** Lepäävässä nesteessä hydrostaattinen paine riippuu vain syvyydestä ja nesteen tiheydestä, $\Delta p = \rho g h$. Astian muoto ja veden määrä eivät esiinny kaavassa, ja mittari mittaa ylipainetta ilmanpaineeseen verrattuna.
+**Taulukon lukeminen:** Taulukon neljä ylipainetta ovat $2{,}9\,\text{kPa}$, $3{,}0\,\text{kPa}$, $3{,}0\,\text{kPa}$ ja $2{,}9\,\text{kPa}$, vaikka vettä on $0{,}8\ldots 2{,}4\,\textsf{l}$. Ne poikkeavat toisistaan vain mittarin epävarmuuden verran.
+**Kaava:** $\Delta p = \rho g h$; tuntematon $\Delta p$ on jo yksin vasemmalla puolella
+**Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten tulos tulee pascaleina. Lopuksi $1\,\text{kPa} = 1000\,\text{Pa}$.
+**Sijoitus:** $\Delta p = 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \cdot 0{,}300\,\text{m} = 2943\,\text{Pa} = 2{,}94\,\text{kPa}$
+**Vastaus:** $2{,}94\,\text{kPa}$, kolme merkitsevää numeroa kuten korkeudessa $0{,}300\,\text{m}$. Kohdan b) selitys: pohjan paine määräytyy vain syvyydestä ja tiheydestä, joten astian muoto ja vesimäärä eivät vaikuta siihen.
+**Järkevyys:** Jokainen mitattu arvo on $0{,}1\,\text{kPa}$:n sisällä laskusta: erot ovat $0{,}04\,\text{kPa}$ ja $0{,}06\,\text{kPa}$. Suurin astia sisältää kolminkertaisen määrän vettä pienimpään verrattuna ($2{,}4\,\textsf{l} : 0{,}8\,\textsf{l} = 3$), mutta paine on sama, joten paine ei voi riippua vesimäärästä.
+
+## fy3-4-L2-07
+**Annettu:** nestepintojen korkeuserot $14{,}2\,\text{cm}$, $14{,}8\,\text{cm}$ ja $14{,}5\,\text{cm}$; $\rho = 1000\,\text{kg/m}^3$, $g = 9{,}81\,\text{m/s}^2$, ilmanpaine $p_0 = 101\,\text{kPa}$
+**Kysytty:** a) keskiarvo $\Delta h_{\text{ka}}$; b) kaasun ylipaine $\Delta p$ kilopascaleina; c) kaasun kokonaispaine $p$
+**Periaate:** Putken avoin haara on ilmanpaineessa. Samalla vaakatasolla samassa nesteessä paine on sama, joten korkeuseron $\Delta h$ aiheuttama hydrostaattinen paine $\rho g \Delta h$ on kaasun paineen ja ilmanpaineen erotus. Toistetun mittauksen keskiarvo pienentää satunnaista lukuvirhettä.
+**Kaava:** $\Delta h_{\text{ka}} = \dfrac{\text{summa}}{3}$; $\Delta p = \rho g \Delta h_{\text{ka}}$; $p = p_0 + \Delta p$
+**Muunnokset:** Korkeus senttimetreistä metreiksi: $14{,}5\,\text{cm} = 14{,}5 : 100\,\text{m} = 0{,}145\,\text{m}$. Lopuksi $1\,\text{kPa} = 1000\,\text{Pa}$.
+**Sijoitus:** a) Summa on $14{,}2\,\text{cm} + 14{,}8\,\text{cm} + 14{,}5\,\text{cm} = 43{,}5\,\text{cm}$, joten $\Delta h_{\text{ka}} = 43{,}5\,\text{cm} : 3 = 14{,}5\,\text{cm}$. b) $\Delta p = 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \cdot 0{,}145\,\text{m} = 1422{,}45\,\text{Pa} = 1{,}42\,\text{kPa}$. c) $p = 101\,\text{kPa} + 1{,}42\,\text{kPa} = 102{,}42\,\text{kPa}$
+**Vastaus:** b) $1{,}42\,\text{kPa}$, kolme merkitsevää numeroa kuten korkeuserossa $14{,}5\,\text{cm}$. Kohdassa c) kokonaispaine on $102\,\text{kPa}$, koska ilmanpaine $101\,\text{kPa}$ on annettu kolmella numerolla. Kaasun puoleinen pinta on alempana, koska kaasun paine on suurempi kuin ilmanpaine ja se painaa nestettä alas omassa haarassaan, kunnes korkeuseron vesipatsas tasapainottaa ylipaineen.
+**Järkevyys:** Vesipatsas $10\,\text{cm}$ vastaa noin $1\,\text{kPa}$, joten $14{,}5\,\text{cm}$ vastaa noin $1{,}4\,\text{kPa}$. Ylipaine on vain noin $1{,}4\,\%$ ilmanpaineesta ($1{,}42/101 = 0{,}014$), mikä sopii pieneen korkeuseroon.
+
+## fy3-4-L3-04
+**Annettu:** syvyys $20{,}0\,\text{m}$; kerrokset: $5{,}0\,\text{m}$ ($998{,}2\,\text{kg/m}^3$), $10{,}0\,\text{m}$ ($999{,}7\,\text{kg/m}^3$) ja $5{,}0\,\text{m}$ ($1000{,}0\,\text{kg/m}^3$); mittarin epävarmuus $\pm 0{,}5\,\text{kPa}$; $g = 9{,}81\,\text{m/s}^2$
+**Kysytty:** a) hydrostaattinen paine $\Delta p_{\text{a}}$ kerroksittain; b) paine vakiotiheydellä ja sen ero kohtaan a) $\delta p$ kilopascaleina; c) näkyykö ero ja syvyysvirhe
+**Periaate:** Jokainen kerros lisää painetta määrän $\rho_i g d_i$, ja kerrosten paineet lasketaan yhteen, koska kerrokset ovat päällekkäin. Jos tiheyttä pidetään vakiona, käytetään koko syvyydelle yhtä tiheyttä $\rho = 1000\,\text{kg/m}^3$. Ero on havaittavissa vain, jos se on suurempi kuin mittarin epävarmuus.
+**Taulukon lukeminen:** Taulukosta luetaan kunkin kerroksen paksuus $d_i$ ja tiheys $\rho_i$; paksuuksien summa on mittarin syvyys $20{,}0\,\text{m}$.
+**Kaava:** a) $\Delta p_{\text{a}} = g\,(\rho_1 d_1 + \rho_2 d_2 + \rho_3 d_3)$. b) $\Delta p_{\text{b}} = \rho g h$ ja $\delta p = \Delta p_{\text{b}} - \Delta p_{\text{a}}$. c) syvyysvirhe $\delta h = h - \dfrac{\Delta p_{\text{a}}}{\rho g}$
+**Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten paineet tulevat pascaleina. Lopuksi $1\,\text{kPa} = 1000\,\text{Pa}$.
+**Sijoitus:** a) $\rho_i d_i$ -summa on $998{,}2 \cdot 5{,}0 + 999{,}7 \cdot 10{,}0 + 1000{,}0 \cdot 5{,}0 = 19\,988\,\tfrac{\text{kg}}{\text{m}^2}$, joten $\Delta p_{\text{a}} = 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \cdot 19\,988\,\tfrac{\text{kg}}{\text{m}^2} = 196\,082\,\text{Pa} = 196{,}08\,\text{kPa}$. b) $\Delta p_{\text{b}} = 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \cdot 20{,}0\,\text{m} = 196\,200\,\text{Pa}$, joten $\delta p = 196\,200\,\text{Pa} - 196\,082\,\text{Pa} = 118\,\text{Pa} = 0{,}118\,\text{kPa}$. c) Kun mittarin lukema $196\,082\,\text{Pa}$ muutetaan syvyydeksi tiheydellä $1000\,\text{kg/m}^3$:
+
+$$\begin{aligned} h' &= \dfrac{196\,082\,\text{Pa}}{1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2}} \\ &= 19{,}988\,\text{m} \end{aligned}$$
+
+joten syvyysvirhe on $20{,}0\,\text{m} - 19{,}988\,\text{m} = 0{,}012\,\text{m} = 1{,}2\,\text{cm}$. Mittarin epävarmuus $0{,}5\,\text{kPa}$ vastaa syvyyttä $500\,\text{Pa} : 9810\,\text{Pa/m} = 0{,}051\,\text{m} = 5{,}1\,\text{cm}$.
+**Vastaus:** $\delta p = 0{,}12\,\text{kPa}$, kaksi merkitsevää numeroa kuten tiheyserossa $1000 - 998{,}2 = 1{,}8\,\text{kg/m}^3$. Kerrosten tiheysero näkyy siis paineessa vain noin $0{,}06\,\%$:n verran. Se on pienempi kuin mittarin epävarmuus $0{,}5\,\text{kPa}$ ja syvyysvirhe $1{,}2\,\text{cm}$ on pienempi kuin epävarmuutta vastaava $5{,}1\,\text{cm}$, joten ero ei näy mittarin lukemassa.
+**Järkevyys:** Veden tiheys poikkeaa arvosta $1000\,\text{kg/m}^3$ eniten ylimmässä kerroksessa, alle $0{,}2\,\%$ (suhde $1{,}8 : 1000 = 0{,}0018$). Poikkeama koskee vesipatsaan ylintä $15\,\text{m}$:ä, ja välikerroksessa se on vain $0{,}03\,\%$, joten kokonaispaineen muutos on vielä pienempi: laskettu ero on noin $0{,}06\,\%$.
+
+## fy3-4-L3-05
+**Annettu:** muurin korkeus $H = 20{,}0\,\text{m}$ neljässä osassa, joiden korkeus on $5{,}0\,\text{m}$; kaistan leveys $w = 1{,}0\,\text{m}$; $\rho = 1000\,\text{kg/m}^3$, $g = 9{,}81\,\text{m/s}^2$
+**Kysytty:** a) paineet osien reunoilla; b) voimat ylimpään ja alimpaan osaan $F_1$ ja $F_4$ kilonewtoneina; c) voimien summa ja tarkistus; d) miksi muuri on alaosasta paksumpi
+**Periaate:** Vesi painaa muuria pintaa vastaan kohtisuoraan, ja paine on $\Delta p = \rho g h$. Ilmanpaine vaikuttaa muuriin molemmin puolin ja kumoaa itsensä, joten laskettavana on vain ylipaine. Koska paine on syvyyden lineaarinen funktio, osan keskipaine on sen ylä- ja alareunan paineiden keskiarvo, ja osaan kohdistuva voima on $F = p_{\text{ka}} A$.
+**Taulukon lukeminen:** Taulukosta luetaan kunkin osan ylä- ja alareunan syvyydet $h_1$ ja $h_2$. Osien korkeus on $h_2 - h_1 = 5{,}0\,\text{m}$ jokaisessa, joten osan ala on $A = 5{,}0\,\text{m} \cdot 1{,}0\,\text{m} = 5{,}0\,\text{m}^2$.
+**Kaava:** a) $\Delta p = \rho g h$. b) $p_{\text{ka}} = \dfrac{\rho g h_1 + \rho g h_2}{2}$ ja $F = p_{\text{ka}} A$. c) koko kaista: $F_{\text{kok}} = \dfrac{0 + \rho g H}{2} \cdot H w$. d) vertaillaan voimia $F_4$ ja $F_1$
+**Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten paineet tulevat pascaleina ja voimat newtoneina. Lopuksi $1\,\text{kN} = 1000\,\text{N}$.
+**Sijoitus:** a) $\rho g = 9810\,\text{Pa/m}$, joten reunojen paineet ovat $0$, $49{,}05$, $98{,}1$, $147{,}15$ ja $196{,}2\,\text{kPa}$ syvyyksillä $0$, $5{,}0$, $10{,}0$, $15{,}0$ ja $20{,}0\,\text{m}$. b) Osan 1 keskipaine on $(0 + 49{,}05\,\text{kPa}) : 2 = 24{,}525\,\text{kPa}$, joten $F_1 = 24{,}525\,\text{kPa} \cdot 5{,}0\,\text{m}^2 = 122{,}6\,\text{kN}$. Osan 4 keskipaine on $(147{,}15\,\text{kPa} + 196{,}2\,\text{kPa}) : 2 = 171{,}675\,\text{kPa}$, joten
+
+$$\begin{aligned} F_4 &= 171{,}675\,\text{kPa} \cdot 5{,}0\,\text{m}^2 \\ &= 858{,}375\,\text{kN} \end{aligned}$$
+
+c) Osille 2 ja 3 saadaan samalla tavalla $367{,}9\,\text{kN}$ ja $613{,}1\,\text{kN}$. Summa on $122{,}6\,\text{kN} + 367{,}9\,\text{kN} + 613{,}1\,\text{kN} + 858{,}4\,\text{kN} = 1962\,\text{kN}$. Tarkistus koko kaistalle: $98{,}1\,\text{kPa} \cdot 20{,}0\,\text{m}^2 = 1962\,\text{kN}$. d) Voimien suhde on $F_4 : F_1 = 858{,}4\,\text{kN} : 122{,}6\,\text{kN} = 7{,}0$.
+**Vastaus:** $F_4 = 858\,\text{kN}$, kolme merkitsevää numeroa, koska syvyydet $15{,}0\,\text{m}$ ja $20{,}0\,\text{m}$ on annettu kolmella numerolla ja kaistan leveys on tasan yksi metri. Alimpaan osaan kohdistuu seitsenkertainen voima ylimpään verrattuna ($F_1 = 123\,\text{kN}$), koska paine kasvaa syvyyden mukana. Siksi muuri tehdään alaosastaan paksummaksi: alaosan on kestettävä paljon suurempi voima kuin yläosan.
+**Järkevyys:** Osien voimat kasvavat tasaisin askelin suhteessa $1 : 3 : 5 : 7$ ($122{,}6 \cdot 3 \approx 367{,}9$, $122{,}6 \cdot 5 \approx 613{,}1$, $122{,}6 \cdot 7 \approx 858{,}4$), mikä sopii lineaarisesti kasvavaan paineeseen.

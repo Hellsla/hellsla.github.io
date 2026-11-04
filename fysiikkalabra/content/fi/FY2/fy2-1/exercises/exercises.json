@@ -19,7 +19,7 @@
     {
       "id": "fy2-1-L1-03",
       "level": 1,
-      "text": "Skeittari lähtee levosta half-pipen reunalta kohdasta A ja laskee kitkallista rinnettä kohdan B kautta pohjalle kohtaan C. Kuvan pylväät näyttävät hänen potentiaalienergiansa ja liike-energiansa kussakin kohdassa, kun pohja on potentiaalienergian nollataso. Lue energiat kuvasta. Kuinka paljon energiaa kitka on muuttanut lämpöenergiaksi, kun skeittari on edennyt kohdasta A kohtaan C?",
+      "text": "Skeittari lähtee levosta half-pipen reunalta kohdasta A ja laskee kitkallista rinnettä kohdan B kautta pohjalle kohtaan C. Kuvan pylväät näyttävät hänen potentiaalienergiansa ja liike-energiansa kussakin kohdassa, kun pohja on potentiaalienergian nollataso.\n\nLue energiat kuvasta. Kuinka paljon energiaa kitka on muuttanut lämpöenergiaksi, kun skeittari on edennyt kohdasta A kohtaan C?",
       "figure": "fy2-1/kitka-pylvaat",
       "answer": 200.0,
       "unit": "J",
@@ -186,7 +186,7 @@
     {
       "id": "fy2-1-L2-06",
       "level": 2,
-      "text": "Keksijä esittelee vesilaitteen, jonka hän väittää toimivan ikuisesti ilman ulkopuolista energiaa. Yläaltaasta putoava vesi pyörittää generaattoria ja menettää potentiaalienergiaa $100\\,\\text{J}$ kierrosta kohti. Generaattori muuttaa koko tämän energian sähköenergiaksi. Pumppu käyttää siitä $80\\,\\text{J}$ ja nostaa veden takaisin yläaltaaseen, ja loput sähköenergiasta menee lamppuun. Kuinka monta joulea energiaa laite luo tyhjästä yhdellä kierroksella, jos väite pitää paikkansa? Selitä, mikä energiaperiaate rikkoutuu.",
+      "text": "Keksijä esittelee vesilaitteen, jonka hän väittää toimivan ikuisesti ilman ulkopuolista energiaa.\n\nYläaltaasta putoava vesi pyörittää generaattoria ja menettää potentiaalienergiaa $100\\,\\text{J}$ kierrosta kohti. Generaattori muuttaa koko tämän energian sähköenergiaksi. Pumppu käyttää siitä $80\\,\\text{J}$ ja nostaa veden takaisin yläaltaaseen, ja loput sähköenergiasta menee lamppuun.\n\nKuinka monta joulea energiaa laite luo tyhjästä yhdellä kierroksella, jos väite pitää paikkansa? Selitä, mikä energiaperiaate rikkoutuu.",
       "kind": [
         "error",
         "reasoning"
@@ -237,7 +237,7 @@
     {
       "id": "fy2-1-L3-01",
       "level": 3,
-      "text": "Skeittarin energioita mitataan half-pipessä kolmessa kohdassa. Kohdassa A skeittari on levossa ja hänen potentiaalienergiansa on $900\\,\\text{J}$. Kohdassa B potentiaalienergia on $400\\,\\text{J}$ ja liike-energia $480\\,\\text{J}$. Kohdassa C potentiaalienergia on nolla ja liike-energia $750\\,\\text{J}$. Kitka muuttaa koko ajan mekaanista energiaa lämpöenergiaksi. Kuinka paljon energiaa muuttuu lämpöenergiaksi kohtien B ja C välillä?",
+      "text": "Skeittarin energioita mitataan half-pipessä kolmessa kohdassa.\n\nKohdassa A skeittari on levossa ja hänen potentiaalienergiansa on $900\\,\\text{J}$. Kohdassa B potentiaalienergia on $400\\,\\text{J}$ ja liike-energia $480\\,\\text{J}$. Kohdassa C potentiaalienergia on nolla ja liike-energia $750\\,\\text{J}$. Kitka muuttaa koko ajan mekaanista energiaa lämpöenergiaksi.\n\nKuinka paljon energiaa muuttuu lämpöenergiaksi kohtien B ja C välillä?",
       "answer": 130,
       "unit": "J",
       "tolerance": 0.02
@@ -253,7 +253,7 @@
     {
       "id": "fy2-1-L3-03",
       "level": 3,
-      "text": "Ydinvoimalassa reaktorin ydinreaktiot kuumentavat vettä höyryksi, höyry pyörittää turbiinia ja turbiini pyörittää generaattoria, joka tuottaa sähköä. Turbiinista tuleva höyry jäähdytetään merivedellä, joka lämpenee. a) Nimeä energialajit ketjun jokaisessa vaiheessa. b) Voimala tuottaa sähköenergiaksi vain noin kolmanneksen reaktorissa vapautuvasta ydinenergiasta. Selitä energian säilymislain avulla, mihin loput energiasta menee ja miksi se ei ole kadonnut.",
+      "text": "Ydinvoimalassa reaktorin ydinreaktiot kuumentavat vettä höyryksi, höyry pyörittää turbiinia ja turbiini pyörittää generaattoria, joka tuottaa sähköä. Turbiinista tuleva höyry jäähdytetään merivedellä, joka lämpenee.\n\na) Nimeä energialajit ketjun jokaisessa vaiheessa.\n\nb) Voimala tuottaa sähköenergiaksi vain noin kolmanneksen reaktorissa vapautuvasta ydinenergiasta. Selitä energian säilymislain avulla, mihin loput energiasta menee ja miksi se ei ole kadonnut.",
       "answer": "a) ydinenergia → lämpöenergia → höyryn ja turbiinin liike-energia → sähköenergia; b) noin kaksi kolmannesta päätyy lämpöenergiaksi mereen ja ympäristöön, ja kokonaisenergia säilyy",
       "unit": "",
       "tolerance": 0.02

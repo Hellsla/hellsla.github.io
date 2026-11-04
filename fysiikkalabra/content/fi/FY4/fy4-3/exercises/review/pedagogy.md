@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 1e51956df59067b8
+CONTENT-HASH: 9afe1ad795180985
+Round: 3
 
 ## Blocking
 
 ## Polish
-- exercises.json L1-01, L1-02, L1-03 — still three tasks where the answer equals the given force; acceptable at level 1, but change one (for example give the weight as a mass in L1-01) if the set is edited.
-- solutions.md L2-04 — the "Voimakuvio" step has the cable force on the roof of the car but no explicit note that the lift moves at constant velocity so it equals the resting case; the "Järkevyys" line covers it, fine.
-- solutions.md L3-02 — the "Järkevyys" says the magnet's weight "siirtyy pöytään"; "välittyy" is the better verb.
+- L3-04 diagram — in the cart figure F_r and F_k both run left from the same face; F_k is a short stub beside the long F_r, so the pair reads as one arrow with a side label at a glance. Acceptable: the text names both.
 
 ## Checked
-- Round-1 blocker fixed: L1-03 and L1-05 now have a "Voimakuvio:" step (chosen body, forces on it, third-law partner named) before the equation.
-- Round-1 polish fixed: L2-01 gives 13 N with two significant figures; L3-01 asks for the magnitude in kN and the direction in words.
-- Levels 5/4/3 as the rubric; none repeats the plane example; level 3 needs two ideas or an unfamiliar context.
-- Every solution has the seven parts and the principle is explained; the diagram precedes every equation.
-- Finnish: case after number and unit correct.
+- Opened the new L3-04 captures (L3-1280-5/6, fi): two separate one-body diagrams, each with its forces labelled; the cart's T points forwards, the horse's T backwards and F_t forwards, matching the Voimakuvio text.
+- Labels match the text: fi symbols F_r, F_k/F_dc, F_h/F_dh, F_t/F_road agree with Annettu and Kaava.
+- The model solution draws the diagram before the equations; numbers (450 N, 480 N) unchanged.
+- L1-08: Periaate now ends with the body choice only; no promise of a drawing.
+- Hash unchanged at the end.

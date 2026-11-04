@@ -53,7 +53,7 @@
     {
       "id": "fy5-13-L2-02",
       "level": 2,
-      "text": "The speed of sound is measured with a resonance tube. The lower part of a vertical tube contains water, and a tuning fork with the frequency $440\\,\\text{Hz}$ sounds above the upper end of the tube. When the water level is lowered, the sound is amplified for the first time when the air column from the water surface to the mouth of the tube is $19.3\\,\\text{cm}$ long. The water surface acts as the closed end of the tube. What is the speed of sound in air according to the measurement?",
+      "text": "The speed of sound is measured with a resonance tube. The lower part of a vertical tube contains water, and a tuning fork with the frequency $440\\,\\text{Hz}$ sounds above the upper end of the tube.\n\nWhen the water level is lowered, the sound is amplified for the first time when the air column from the water surface to the mouth of the tube is $19.3\\,\\text{cm}$ long. The water surface acts as the closed end of the tube.\n\nWhat is the speed of sound in air according to the measurement?",
       "answer": 339.68,
       "unit": "m/s",
       "tolerance": 0.02

@@ -1,13 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: afa0393f3ec7eb40
+CONTENT-HASH: 1cb1a625e4cf590e
+Round: 5
 
 ## Blocking
 
 ## Polish
+- In the cart figure F_k is a short stub beside the long F_r; the text names both, acceptable.
 
 ## Checked
-Compared exercises.json and solutions.md (English) with the Finnish: same structure, hints, feedback, model answers and criteria; nothing added or dropped.
-Reads naturally in English; chapter names, not ids; option labels translated.
-Built preview page checked for leftover Finnish and layout.
-Fixes: gender-neutral wording kept (swimmer, skater, skydiver); "boards of the rink".
-Delta: English diagram labels and aria-labels now show the same symbols as the English text (F_d, F_b, G_c, ...), so a student reads one notation; nothing else changed.
+- Round 4 Blocking resolved: the Force diagram sentence now names $\overline{F}_\text{t}$, matching Find, the figure and the equations; no "road}" symbol remains.
+- The L3-04 capture (L3-1280-6) was opened in round 4 and the figure is unchanged; numbers 450 N and 480 N unchanged.

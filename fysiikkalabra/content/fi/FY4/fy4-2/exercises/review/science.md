@@ -1,20 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 8b72ddfd68744298
+CONTENT-HASH: 2aa6de8631579e57
 
 ## Blocking
 
 ## Polish
-- solutions.md:110 (L3-02): "kilometreina" should be "kilometreinä" (carried from round 2).
-- solutions.md:60 (L2-01): 5 m/s² is called "tavallinen voimakas jarrutus kuivalla tiellä". A full stop on dry asphalt reaches about 7–9 m/s², so "reipas jarrutus" fits better (carried).
-- answers.py:266 (L3-03): the code uses `0.50` while the task now gives 0,500 s. The value is the same; writing `0.500` would match the data.
+- exercises.json:69 (L1-06, option 4) — carried from round 1: "painon vastavoima, joka osoittaa ylöspäin" plants a wrong term (the normal force is not the reaction to the weight), and the feedback does not correct it. — Use a distractor with no force words, e.g. "Alaspäin, koska jarrutus painaa autoa tietä vasten".
+- solutions.md:136 (L1-07) — carried: "kolme merkitsevää numeroa, koska luetut arvot ovat tarkasti ruudukon viivoilla" contradicts L1-04, which gives 1,0 m/s² (two figures) from the same figure. — Give 23 m (22,5 m as the intermediate value), or justify the same way in both.
+- solutions.md:163 (L2-06) — carried: "kolme merkitsevää numeroa … hajonta rajoittaa … kahteen" contradicts itself; a quadratic fit gives 1,20. — Answer 1,2 m/s² (≈ 1,15).
+- solutions.md:191 (L3-05) — carried: the reasonableness check uses $g\sin\alpha$, which fy4-2 does not teach. — Mark it as a look ahead or drop it.
+- solutions.md:179 (L3-04, Vastaus) — carried: "128 m, kolme merkitsevää numeroa kuten nopeuksien muunnoksessa", but 36 km/h has two figures. — State ≈ 1,3·10² m (128 m as the intermediate value) or justify the third figure.
 
 ## Checked
-- Round-2 blocker resolved: L3-03 now gives $t = 0{,}500\,\text{s}$ in both the task and the solution, so −1,76 m/s with three significant figures is justified by the data, and the stored answer equals it.
-- I recomputed all 12 answers with my own formulas in one script: 3,125; 1,5; 11,04; 1,0; 180; 40; 4,0; 11,47 ($v_0^2/2g$); 1,610; 2,190 (other root −0,56 s); 1162,5; −1,76. All match exercises.json and answers.py.
-- Answers rounded to the data's significant figures all lie within the 2 % tolerance. The largest gap is 3,1 against 3,125, which is 0,8 %.
-- L2-02: the tangent to x = ½·1,0·t² at t = 4 s passes through (2 s; 0) and (6 s; 16 m), slope 4,0 m/s. L1-04: (0; 2,0) to (5,0; 7,0) gives 1,0 m/s².
-- L3-03: v = B + 2At is read correctly from the fit. The apex is at 0,32 s, so the ball is falling at 0,500 s and the negative sign is correct. a = −9,72 m/s² is close to −g.
-- L3-01: the whole flight is treated as one motion with a = −g. The rise-plus-fall check (0,82 s + 1,37 s) is a real check.
-- L1-05, L2-01 and L3-02 state that the motion does not reverse before they equate distance with displacement or area.
-- Every solution is symbolic first, has the conversions it needs (72 km/h = 20 m/s) and ends with a meaningful reasonableness check.
-- Conditions are stated: small air resistance, no atmosphere on the Moon, uniform acceleration or braking.
+- Round 2. Round-1 Blocking item solutions.md:180 (L3-04, Järkevyys) is resolved: the sentence now reads "loppunopeudella 27,8 m/s koko ajan kuljettavan 222 m", and 27,8 m/s · 8,0 s = 222 m is the right upper bound for a car that is never faster than 27,8 m/s; 128 m < 222 m holds.
+- The other changes (exercises.json L2-05 and L3-03 text, solutions.md L2-07) are only the spelling "videoanalyysillä"; no data, answer or tolerance changed.
+- The round-1 recomputation of all 20 answers (L1-07 22,5 m; L2-05 0,84 m/s²; L2-06 1,15 m/s²; L3-04 128,3 m; L3-05 −0,81 m/s², 2,42 m/s, 2,99 s, 3,61 m) still holds, since no number in the set changed.
+- MC items L1-06, L1-08, L2-07: exactly one correct option each, as in round 1.
+- Scope, plan (8/7/5 = 20) and coherence with the existing tasks unchanged since round 1.
+- The hash was the same at the start and at the end.

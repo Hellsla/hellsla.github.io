@@ -260,7 +260,7 @@
     {
       "id": "fy2-8-L3-01",
       "level": 3,
-      "text": "A petrol car uses $6.0$ litres per $100\\,\\text{km}$. The energy content of petrol is $32\\,\\text{MJ/}\\textsf{l}$ and the emission factor of burning is $69\\,\\text{g/MJ}$. An electric car uses $18\\,\\text{kWh}$ of electricity per $100\\,\\text{km}$. (The comparison is rough: for the petrol car only burning is counted, for the electric car the life-cycle emissions of the electricity.) At what emission factor of electricity would the emission of the electric car over $100\\,\\text{km}$ be equal to that of the petrol car? Give the answer in the unit $\\text{g/kWh}$. What does the result tell about the benefit of the electric car if the electricity is produced with coal?",
+      "text": "A petrol car uses $6.0$ litres per $100\\,\\text{km}$. The energy content of petrol is $32\\,\\text{MJ/}\\textsf{l}$ and the emission factor of burning is $69\\,\\text{g/MJ}$.\n\nAn electric car uses $18\\,\\text{kWh}$ of electricity per $100\\,\\text{km}$. (The comparison is rough: for the petrol car only burning is counted, for the electric car the life-cycle emissions of the electricity.)\n\nAt what emission factor of electricity would the emission of the electric car over $100\\,\\text{km}$ be equal to that of the petrol car? Give the answer in the unit $\\text{g/kWh}$. What does the result tell about the benefit of the electric car if the electricity is produced with coal?",
       "answer": 740,
       "unit": "g/kWh",
       "tolerance": 0.03
@@ -268,7 +268,7 @@
     {
       "id": "fy2-8-L3-02",
       "level": 3,
-      "text": "An example city needs $100\\,\\text{GWh}$ of electricity a year and compares two ways. A solar park produces about $0.50\\,\\text{GWh}$ of electricity per hectare per year. A field grown for energy gives about $0.010\\,\\text{GWh}$ of electricity per hectare per year in a power plant. (The figures are rounded example values; $1\\,\\text{ha} = 0.01\\,\\text{km}^2$.) How many times as large a field area would biomass electricity need compared with the area of the solar park? What does land use tell you about the ways of producing energy that the emission factor does not?",
+      "text": "An example city needs $100\\,\\text{GWh}$ of electricity a year and compares two ways. A solar park produces about $0.50\\,\\text{GWh}$ of electricity per hectare per year. A field grown for energy gives about $0.010\\,\\text{GWh}$ of electricity per hectare per year in a power plant. (The figures are rounded example values; $1\\,\\text{ha} = 0.01\\,\\text{km}^2$.)\n\nHow many times as large a field area would biomass electricity need compared with the area of the solar park? What does land use tell you about the ways of producing energy that the emission factor does not?",
       "answer": 50,
       "unit": "times",
       "tolerance": 0.02

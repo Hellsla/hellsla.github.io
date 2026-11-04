@@ -1,15 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 36602805dfdc3f5a
+CONTENT-HASH: 3802b9468375e741
 
 ## Blocking
-(none)
 
 ## Polish
-- Aiemmat Minor-huomautukset (hubble-kuvan "mallin arvoja", alkuaineet-kuvan nuoli, aikajanan "ei mittakaavassa", $\Delta\lambda$-nuoli, $20$ minuutin yksikkömuoto) ovat ennallaan eivätkä estä.
+- [Minor] 'yli $13$ miljardia vuotta' on yksikkö sanoina; voisi olla $13\,\text{mrd. vuotta}$ -tyyppinen, mutta ok kuvatekstissä.
 
 ## Checked
-- Delta: oppituntitiedostot eivät ole muuttuneet edellisen PASSin jälkeen (hash sama, diff tyhjä); kuvia ei avattu uudelleen, koska kuvat ja teksti ovat samat kuin hyväksytyssä versiossa.
-- Hash alussa ja lopussa sama.
-
-## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+batch delta review: rendered preview/fy8-16.html at 1280 px and opened the 1 added photo(s) with caption; image files read where alt text needed verification; floats right of the text (x 744-1064 px), no clipping or horizontal overflow at 1280 or 390 px; alt text matches image, captions physically correct and tied to the chapter, LaTeX for numbers with units.

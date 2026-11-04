@@ -1,5 +1,12 @@
 {
   "_note": "Selkosuomen tekstit local-courses.json-tiedostoon (scripts/local_courses.py).",
+  "_planned": [
+    {"icon": "LUMATUTOR", "title": "LUMA-tutor", "text": "Olet tiedetutori. Suunnittelet tiedetapahtumia ja olet mukana niissä."},
+    {"icon": "AHJO1", "title": "Ahjo 1", "text": "Opit 3D-mallintamaan ja tulostamaan sekä elektroniikan ja robotiikan perusteita."},
+    {"icon": "AHJO2", "title": "Ahjo 2", "text": "Suunnittelet, teet ja testaat oman prototyypin."},
+    {"icon": "KILPAROBO", "title": "Kilparobotiikka", "text": "Rakennat ja ohjelmoit robotteja ja osallistut kilpailuihin."},
+    {"icon": "MYYTIT", "title": "Myytinmurtajat", "text": "Kokeilet, pitävätkö tutut väitteet paikkansa."}
+  ],
   "FY14": {
     "subtitle": "Modernin fysiikan synnystä ITERiin.",
     "description": "Opintojakso on englanniksi. Siinä opiskellaan yhdessä fysiikkaa, englantia ja ranskaa. Kurssilla tutustutaan moderniin fysiikkaan, atomin ytimeen, tähtien fuusioon, plasmaan, kylmän sodan fuusiotutkimukseen ja ITER-hankkeeseen. Iso kysymys on: miksi fuusiosta on yhä vaikea saada sähköä, vaikka fuusio on tunnettu lähes sata vuotta?",

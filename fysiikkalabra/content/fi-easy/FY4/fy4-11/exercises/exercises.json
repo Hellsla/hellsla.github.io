@@ -95,7 +95,7 @@
     {
       "id": "fy4-11-L3-03",
       "level": 3,
-      "text": "Kaksi autoa ajaa peräkkäin nopeudella $80\\,\\text{km/h}$. Edellä ajava auto jarruttaa yllättäen hidastuvuudella $9{,}0\\,\\text{m/s}^2$. Takana ajavan kuljettajan reaktioaika on $1{,}0\\,\\text{s}$. Hänen autonsa renkaat ovat kuluneet, joten sen hidastuvuus on vain $6{,}0\\,\\text{m/s}^2$. Kuinka suuri autojen välimatkan täytyy vähintään olla, jotta takana ajava auto pysähtyy ennen kuin se osuu edellä ajavaan?",
+      "text": "Kaksi autoa ajaa peräkkäin nopeudella $80\\,\\text{km/h}$. Edellä ajava auto jarruttaa yllättäen hidastuvuudella $9{,}0\\,\\text{m/s}^2$. Takana ajavan kuljettajan reaktioaika on $1{,}0\\,\\text{s}$. Hänen autonsa renkaat ovat kuluneet, joten sen hidastuvuus on vain $6{,}0\\,\\text{m/s}^2$.\n\nKuinka suuri autojen välimatkan täytyy vähintään olla, jotta takana ajava auto pysähtyy ennen kuin se osuu edellä ajavaan?",
       "answer": 35.93964334705075,
       "unit": "m",
       "tolerance": 0.02

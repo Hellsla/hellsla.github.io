@@ -1,13 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 09782c554ddc3f1d
+CONTENT-HASH: 652c6d5613fc0f41
 
-Delta review over the audit's PASS (13bc0d2daf5f4e53): L2-02 replaced by figure task heating-line (c from P, m and the graph).
+Round 2. Round 1 had no Blocking items. This round checks the Polish fixes (`git diff HEAD~1`) and the whole 20-task set again. Mode: full.
 
 ## Blocking
-- none
+
 ## Polish
-- solutions.md:69 says 870…930 J/(kg·K) is accepted, but tolerance 0,03 on 900 accepts 873…927. The readings are exact grid crossings; narrow the stated range or set tolerance 0.034.
+- exercises.json:217 (L2-07) — the setup (hot metal into water, equilibrium temperature) is still the same as L2-04 and the lesson example. Part a), the error analysis, is what makes it new (carried over). — Optionally use another context, for example a hot iron nail dropped into tea.
+
 ## Checked
-- Recomputed: c = Pt/(mΔT) = 100 W · 180 s / (0,50 kg · 40 K) = 900 J/(kg·K); answers.py 900; it matches aluminium 900 in the lesson table.
-- Figure heating-line: (0 s; 20 °C) and (180 s; 60 °C) on 20 s × 10 °C grid crossings; the description has no slope and no c.
-- Assumption "all the heater's energy goes into the block" is stated (guardrail: linear heating only with small losses); two significant figures from 0,50 kg are justified.
+- Round-1 Polish taken up: L2-05 b) now says "noin 1 %" (4138 compared with 4190 is 1,2 %), and Järkevyys now calls the 1 % gap measurement scatter, not losses. L3-04 now states "Huoneen lämpötila on 20 °C", which the check uses. L3-05 now explains the two significant figures (k varies by ±3 % between intervals) and puts the scatter down to the 0,1 °C readings. L2-06 now explains the check (water has the largest c of common liquids).
+- L1-06 has been rewritten. Exactly one option is correct, and its text equals `answer`. The new density distractor is wrong for the reason its feedback gives (the masses are equal, and ΔT = Q/(cm) has no density in it). The reflection distractor is wrong because the task gives both the same heat. The "aine ei vaikuta" distractor is right to point to c. The solution matches the new options.
+- L2-07 solution: the units are now carried through the substitution (77 J/K, 2095 J/K, 49 600 J / 2172 J/K = 22,84 °C), and the numbers are unchanged.
+- L3-04 Järkevyys: "muutaman prosentin liian suuri" matches 4286 compared with 4190 (+2,3 %) and a 6 W loss (3 % of 200 W).
+- I recomputed all 19 numeric answers in one script with my own formulas. All match answers.py and exercises.json within tolerance. The L3-05 k values are 0,599, 0,587, 0,612, 0,582, 0,614 and 0,590 W/K.
+- The physics from round 1 still holds. Q = cmΔT is used only where the state does not change. Notation (c, m, ΔT, C = cm) is the lesson's. The levels match the plan in docs/exercise-bank/FY3.md.
+- The deterministic layout checks at 360, 768 and 1280 px pass.

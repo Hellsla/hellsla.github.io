@@ -201,6 +201,8 @@ In the chapter *Electromagnetic induction* a voltage was induced in a coil when 
   <line x1="425" y1="266" x2="425" y2="215" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy7/bicycle-dynamo.webp" alt="The front wheel of a bicycle and a round headlamp; a small silver bottle dynamo is pressed against the tyre."><figcaption>A bicycle dynamo is a small generator. The spindle turned by the tyre rotates a permanent magnet inside a coil. The coil stays still, but the magnetic flux through it changes, so an alternating voltage is induced in it.</figcaption></figure>
+
 ### Slip rings and brushes
 The ends of the wire of the coil are connected to two **slip rings** on the axis. Carbon brushes touch the rings, and the voltage is led through the brushes to an external circuit, such as the lamp in the picture. Unlike the commutator of a direct-current motor in the chapter *Force on a current-carrying wire: the electric motor and the loudspeaker*, slip rings do not reverse the direction of the current, so the external circuit receives the voltage induced in the coil as it is.
 
@@ -295,6 +297,10 @@ By the law of induction the voltage does not depend on how large the flux is, bu
   <circle cx="472" cy="375" r="4" fill="#1f2933"/>
   <circle cx="472" cy="409" r="4" fill="#1f2933"/>
 </svg>
+
+<figure class="unit-photo"><img src="pics/fy7/generator-stator.webp" alt="A large round pit seen from above; a ring of coil windings runs around its walls, with yellow railings around the edges and tools on the floor."><figcaption>The stator of a hydroelectric generator with its rotor lifted out. The coils stay fixed around the ring, and a voltage is induced in them when the rotor carrying the magnetic poles turns inside.</figcaption></figure>
+
+<figure class="unit-photo"><img src="pics/fy7/generator-rotor.webp" alt="A large reddish-brown cylinder stands on the floor of a brightly lit hall; it has vertical stripes around its rim, and equipment and people around it look small."><figcaption>The rotor of a pumped-storage plant's generator during maintenance at Coo-Trois-Ponts, Belgium. Around its rim are the poles of electromagnets. When the rotor turns inside the stator, the magnetic flux through the coils keeps changing.</figcaption></figure>
 
 ### The generator of a power plant and the wind turbine
 In the large generators of power plants an electromagnet rotates and the coils stay in place around it. The flux through a stationary coil changes in the same way as in a rotating coil, so a similar alternating voltage arises, and a large current is obtained from the coils without sliding contacts. In a wind turbine the wind turns the rotor, and the shaft of the rotor turns the generator. The rotor turns slowly, about $10$–$15$ revolutions per minute, so the generator has either a gearbox that raises the rotation rate or a large number of magnetic poles. The wind speed varies, so a frequency converter changes the voltage of the generator to the grid frequency, $50\,\text{Hz}$. At the end of 2024 Finland had $1835$ wind turbines with a combined rated power of $8358\,\text{MW}$. In 2024 they produced $19.8\,\text{TWh}$ of electricity, about $24\,\%$ of Finland's electricity consumption (Suomen Uusiutuvat ry, wind power statistics 2024).

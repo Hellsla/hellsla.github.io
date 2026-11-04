@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 5f8bfe79b2a85e41
+CONTENT-HASH: 4b8fb777f41bd4cf
 
 ## Blocking
-(none left; see Fixed)
+(none)
 
 ## Fixed
-- nothing needed fixing
+- solutions.md L2-06 Reasonableness — hard word "mittaushajonta" → "mittausten epätarkkuus"
+- solutions.md L2-07 Conversions — "painotettu keskiarvo" (weighted mean) explained: "keskiarvo, jossa suuremman lämpökapasiteetin kappaleen lämpötila painaa enemmän"
 
 ## Polish
-- The Finnish term sulamislämpö in solutions is not explained; acceptable since it is a taught physics term.
+- none
 
 ## Checked
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): compared exercises.json (all 12 task texts) and solutions.md (all step labels, conversions, answers, reasonableness) sentence by sentence. Judged pedagogy: short sentences, common words, physics terms kept, no steps, hints or feedback dropped.
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked exercises.json (figure task L2-02 and solution, math-wrapped values, L3-03 wording) and solutions.md; no issues found.
+- Compared the 8 new exercises in exercises.json and solutions.md against the reviewed Finnish: ids, answers, units, tolerances, correct flag, choices and feedback, table cells and every number identical; sentences short, terms (kalorimetri, ominaislämpökapasiteetti, lämpökapasiteetti) explained.
+- Judged pedagogy: natural wording for 16-18-year-olds, terms as in terms.md; error-analysis task L2-07 and model task L3-05 keep the Finnish structure and hints.

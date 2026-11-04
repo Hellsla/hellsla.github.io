@@ -79,7 +79,7 @@
     {
       "id": "fy8-9-L3-01",
       "level": 3,
-      "text": "In a living plant the fraction of carbon-14 in the carbon stays constant, because the plant continuously takes new carbon from the air. After the plant dies, the carbon-14 decays and no new carbon-14 replaces it. The activity of carbon-14 per gram of carbon measured from an archaeological piece of wood is $38.0\\,\\%$ of the corresponding activity of living wood. The half-life of carbon-14 is $5700\\,\\text{a}$. How long ago did the tree die? Give the answer in years.",
+      "text": "In a living plant the fraction of carbon-14 in the carbon stays constant, because the plant continuously takes new carbon from the air. After the plant dies, the carbon-14 decays and no new carbon-14 replaces it.\n\nThe activity of carbon-14 per gram of carbon measured from an archaeological piece of wood is $38.0\\,\\%$ of the corresponding activity of living wood. The half-life of carbon-14 is $5700\\,\\text{a}$.\n\nHow long ago did the tree die? Give the answer in years.",
       "answer": 7960,
       "unit": "a",
       "tolerance": 0.02

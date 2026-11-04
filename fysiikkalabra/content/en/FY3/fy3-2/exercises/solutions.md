@@ -84,7 +84,7 @@
 **Find:** the total work $W$ in joules
 **Principle:** The force changes, so the formula $W = F s$ does not work for the whole distance. The work is the area under the $(s,F)$ graph, and it can be calculated in parts: the constant-force part is a rectangle and the steadily increasing part is a trapezium.
 **Reading the graph:** The graph has a horizontal segment at the height $10\,\text{N}$ from $0\ldots 2.0\,\text{m}$ and, continuing from it, a straight segment from the height $10\,\text{N}$ to the height $30\,\text{N}$ from $2.0\ldots 6.0\,\text{m}$. The rectangle has height $10\,\text{N}$ and width $2.0\,\text{m}$. The parallel sides of the trapezium are $10\,\text{N}$ and $30\,\text{N}$, and its height (the width along the $s$-axis) is $4.0\,\text{m}$.
-**Formula:** $W = A_\text{rectangle} + A_\text{trapezium}$, so $W = F_1 s_1 + \tfrac{1}{2}(F_1 + F_2)\, s_2$
+**Formula:** $W = A_\text{rectangle} + A_\text{trapezium}$, so $W = F_1 s_1 + 0.5 \cdot (F_1 + F_2)\, s_2$
 **Conversions:** The forces are in newtons and the distances in metres, so no conversions are needed.
 **Substitution:** $W = 10\,\text{N} \cdot 2.0\,\text{m} + \tfrac{1}{2} \cdot (10\,\text{N} + 30\,\text{N}) \cdot 4.0\,\text{m} = 20\,\text{J} + 80\,\text{J} = 100\,\text{J}$
 **Answer:** $100\,\text{J}$, two significant figures like the given values (for example $2.0\,\text{m}$).
@@ -99,7 +99,7 @@
 **Conversions:** The forces are in newtons and the distances in metres, so no conversions are needed.
 **Substitution:** $W = \tfrac{1}{2} \cdot 40\,\text{N} \cdot 0.50\,\text{m} + 40\,\text{N} \cdot 1.0\,\text{m} + \tfrac{1}{2} \cdot 40\,\text{N} \cdot 0.50\,\text{m} = 10\,\text{J} + 40\,\text{J} + 10\,\text{J} = 60\,\text{J}$; $F_\text{avg} = \dfrac{60\,\text{J}}{2.0\,\text{m}} = 30\,\text{N}$
 **Answer:** $30\,\text{N}$, two significant figures like the distance $2.0\,\text{m}$.
-**Reasonableness:** The average is smaller than the peak value $40\,\text{N}$, because the force is small at the beginning and at the end, but greater than half of the peak, because the force is at its peak for half of the distance. The trapezium formula gives the same work: $\tfrac{1}{2}(2.0\,\text{m} + 1.0\,\text{m}) \cdot 40\,\text{N} = 60\,\text{J}$. The average of a force increasing steadily from zero would be $20\,\text{N}$.
+**Reasonableness:** The average is smaller than the peak value $40\,\text{N}$, because the force is small at the beginning and at the end, but greater than half of the peak, because the force is at its peak for half of the distance. The trapezium formula gives the same work: $0.5 \cdot (2.0\,\text{m} + 1.0\,\text{m}) \cdot 40\,\text{N} = 60\,\text{J}$. The average of a force increasing steadily from zero would be $20\,\text{N}$.
 
 ## fy3-2-L3-02
 **Given:** mass $m = 2.0\,\text{kg}$, falling height $h = 1.5\,\text{m}$, number of drops $n = 20$, $g = 9.81\,\text{m/s}^2$
@@ -120,3 +120,87 @@
 **Substitution:** $W = 1000\,\text{kg} \cdot 9.81\,\tfrac{\text{m}}{\text{s}^2} \cdot 50\,\text{m} = 490\,500\,\text{J}$; $t = \dfrac{490\,500\,\text{J}}{180\,\text{W}} = 2725\,\text{s} = \dfrac{2725}{60}\,\text{min} = 45.42\,\text{min}$
 **Answer:** $45\,\text{min}$, two significant figures like the height $50\,\text{m}$.
 **Reasonableness:** In one hour the panel produces $180\,\text{W} \cdot 3600\,\text{s} = 648\,\text{kJ}$, which is more than the required $490\,\text{kJ}$, so the time is less than an hour. The ratio $\tfrac{490.5}{648} \approx 0.76$ hours is about $45\,\text{min}$, as in the result. This matches everyday experience of solar electricity.
+
+## fy3-2-L1-06
+**Find:** why the supporting force does no work when a backpack is carried horizontally
+**Principle:** The work $W = F s$ done by a force requires the force to be in the direction of motion. The force supporting the backpack points up, but the backpack moves sideways, so the force is perpendicular to the motion.
+**Model answer:** The force points up, but the motion is sideways, so the force is not in the direction of motion and does no work. A steady speed does not explain it, because a force in the direction of motion does work even in steady motion, like the force pulling a sled. The magnitude of the force does not explain it either: in a slow lift a force equal to the weight does the work $W = G h$. Work is not limited to lifting, because a horizontal force pushing a moped does work.
+
+## fy3-2-L1-07
+**Given:** force $F = 1.2\,\text{kN}$ (in the direction of motion), power $P = 1.8\,\text{kW}$, steady speed
+**Find:** the speed $v$ of the belt in metres per second
+**Principle:** The speed is steady and the force is constant and in the direction of motion, so the power is the product of force and velocity. The velocity can be solved when the power and the force are known.
+**Formula:** $P = F v$, so $v = \dfrac{P}{F}$
+**Conversions:** $1.8\,\text{kW} = 1800\,\text{W}$ and $1.2\,\text{kN} = 1200\,\text{N}$, so that the result comes out in the unit $\tfrac{\text{W}}{\text{N}} = \tfrac{\text{m}}{\text{s}}$.
+**Substitution:** $v = \dfrac{1800\,\text{W}}{1200\,\text{N}} = 1.5\,\tfrac{\text{m}}{\text{s}}$
+**Answer:** $1.5\,\text{m/s}$, two significant figures like the given values $1.2\,\text{kN}$ and $1.8\,\text{kW}$.
+**Reasonableness:** Check in reverse: $1200\,\text{N} \cdot 1.5\,\tfrac{\text{m}}{\text{s}} = 1800\,\text{W}$, like the given power. A speed of $1.5\,\text{m/s}$ is about $5.4\,\text{km/h}$, the pace of brisk walking, which suits a conveyor belt.
+
+## fy3-2-L1-08
+**Find:** which crane is more powerful and why
+**Principle:** The load and the lifting height are the same, so the lifting work $W = m g h$ is the same for both cranes. Power is work per unit time, $P = \dfrac{W}{t}$, so the same work in a shorter time means a greater power.
+**Model answer:** The power of crane A is greater, because the work is the same but it is done in a shorter time. The lifting work is not greater for either, because it depends only on the load and the height, not on the time the lift takes. The power is not the same either, because power tells how fast the work is done: the lift of crane A takes only half the time of crane B, so its power is double. The numbers $500\,\text{kg}$ and the height do not affect the comparison, because the lifting work is the same for both.
+
+## fy3-2-L2-05
+**Given:** from the table, the force $F$ at $s = 0.0\,\text{m}$, $1.0\,\text{m}$, $2.0\,\text{m}$, $3.0\,\text{m}$ and $4.0\,\text{m}$: $18.0\,\text{N}$, $17.2\,\text{N}$, $15.1\,\text{N}$, $11.0\,\text{N}$ and $6.0\,\text{N}$; the force is in the direction of motion
+**Find:** the work $W$ done by the force in joules over the distance $0\ldots 4.0\,\text{m}$
+**Principle:** The force changes along the way, so the work is the area under the $(s,F)$ graph. For each one-metre part the area is a trapezium whose height is the average of the force at the ends of the part, and the parts are added together.
+**Reading the graph:** The points of the table are thought of as joined by straight segments in the $(s,F)$ coordinate system. At the ends of the part $0\ldots 1.0\,\text{m}$ the force is $18.0\,\text{N}$ and $17.2\,\text{N}$, of the part $1.0\ldots 2.0\,\text{m}$ $17.2\,\text{N}$ and $15.1\,\text{N}$, of the part $2.0\ldots 3.0\,\text{m}$ $15.1\,\text{N}$ and $11.0\,\text{N}$, and of the part $3.0\ldots 4.0\,\text{m}$ $11.0\,\text{N}$ and $6.0\,\text{N}$. The width of each part is $\Delta s = 1.0\,\text{m}$.
+**Formula:** $W = \sum 0.5 \cdot (F_\text{start} + F_\text{end})\,\Delta s$, so $W = W_1 + W_2 + W_3 + W_4$
+**Conversions:** The forces are in newtons and the distances in metres, so no conversions are needed.
+**Substitution:**
+
+$$\begin{aligned} W_1 &= 0.5 \cdot (18.0 + 17.2)\,\text{N} \\ &\quad \cdot 1.0\,\text{m} = 17.6\,\text{J} \\ W_2 &= 0.5 \cdot (17.2 + 15.1)\,\text{N} \\ &\quad \cdot 1.0\,\text{m} = 16.15\,\text{J} \\ W_3 &= 0.5 \cdot (15.1 + 11.0)\,\text{N} \\ &\quad \cdot 1.0\,\text{m} = 13.05\,\text{J} \\ W_4 &= 0.5 \cdot (11.0 + 6.0)\,\text{N} \\ &\quad \cdot 1.0\,\text{m} = 8.5\,\text{J} \\ W &= 17.6\,\text{J} + 16.15\,\text{J} \\ &\quad + 13.05\,\text{J} + 8.5\,\text{J} \\ &= 55.3\,\text{J} \end{aligned}$$
+**Answer:** $55\,\text{J}$, two significant figures, because the width of a part $\Delta s = 1.0\,\text{m}$ and the final force $6.0\,\text{N}$ are given with two significant figures.
+**Reasonableness:** The average force over the whole $4.0\,\text{m}$ is $55.3\,\text{J} / 4.0\,\text{m} \approx 14\,\text{N}$, which is between the smallest ($6.0\,\text{N}$) and the greatest ($18.0\,\text{N}$) value of the force. Rough estimate: $18\,\text{N} \cdot 4.0\,\text{m} = 72\,\text{J}$ is an upper limit and $6\,\text{N} \cdot 4.0\,\text{m} = 24\,\text{J}$ a lower limit, and the result is between them.
+
+## fy3-2-L2-06
+**Given:** mass $m = 62\,\text{kg}$, 18 steps, step height $0.17\,\text{m}$, climbing times $8.1\,\text{s}$, $7.8\,\text{s}$ and $8.4\,\text{s}$, $g = 9.81\,\text{m/s}^2$
+**Find:** the average power $P$ in watts
+**Principle:** At a steady pace the lifting force is equal to the student's weight, and the work is calculated only from lifting the weight to the height of the staircase: $W = m g h$. The power is this work divided by the climbing time. The average of the repeated times is used, because the random error of a single timing gets smaller in the average.
+**Formula:** $h = n\, h_1$, $W = m g h$ and $P = \dfrac{W}{t_\text{avg}}$, so $P = \dfrac{m g\, n\, h_1}{t_\text{avg}}$
+**Conversions:** All quantities are in SI units, so no conversions are needed.
+**Substitution:**
+
+$$\begin{aligned} \textstyle\sum t &= 8.1\,\text{s} + 7.8\,\text{s} + 8.4\,\text{s} \\ &= 24.3\,\text{s} \\ t_\text{avg} &= \dfrac{24.3\,\text{s}}{3} = 8.1\,\text{s} \\ h &= 18 \cdot 0.17\,\text{m} = 3.06\,\text{m} \\ W &= 62\,\text{kg} \cdot 9.81\,\dfrac{\text{m}}{\text{s}^2} \cdot 3.06\,\text{m} \\ &= 1861.2\,\text{J} \\ P &= \dfrac{1861.2\,\text{J}}{8.1\,\text{s}} \\ &= 229.8\,\text{W} \end{aligned}$$
+**Answer:** $230\,\text{W}$, two significant figures like the mass $62\,\text{kg}$ and the time $8.1\,\text{s}$.
+**Reasonableness:** Rough estimate: the weight is about $600\,\text{N}$ and the height about $3\,\text{m}$, so the work is about $1800\,\text{J}$ and the power $\tfrac{1800\,\text{J}}{8\,\text{s}} \approx 225\,\text{W}$. The range of the three time measurements $7.8\ldots 8.4\,\text{s}$ corresponds to a power of $222\ldots 239\,\text{W}$, so the result $230\,\text{W}$ is within this range. The power of a person climbing stairs quickly is hundreds of watts.
+
+## fy3-2-L2-07
+**Given:** mass $m = 40\,\text{kg}$, lifting height $h = 1.5\,\text{m}$, slow lift, $g = 9.81\,\text{m/s}^2$; the student's result $60\,\text{J}$
+**Model answer:** The error: in the formula $W = F s$ the student used the numerical value of the mass, $40$, as the force, although mass is not a force. The lifting force is equal to the weight, $F = m g$, and it must be calculated in newtons. The correct work is $W = m g h \approx 590\,\text{J}$.
+**Find:** the student's error and the correct work $W$ done by the lifting force in joules
+**Principle:** The student put the number $40$ of the mass in the place of the force in the formula $W = F s$. Mass is not a force: in a slow lift the lifting force is equal to the weight $G = m g$, and it must be brought into the calculation in newtons. The work is the product of this force and the lifting height.
+**Formula:** $F = G = m g$ and $W = F h$, so $W = m g h$
+**Conversions:** The mass is in kilograms and the height in metres, so no conversions are needed. The unit of weight is the newton: $1\,\text{N} = 1\,\text{kg}\cdot\text{m/s}^2$.
+**Substitution:**
+
+$$\begin{aligned} G &= 40\,\text{kg} \cdot 9.81\,\dfrac{\text{m}}{\text{s}^2} = 392.4\,\text{N} \\ W &= 392.4\,\text{N} \cdot 1.5\,\text{m} = 588.6\,\text{J} \end{aligned}$$
+**Answer:** $590\,\text{J}$, two significant figures like the mass $40\,\text{kg}$ and the height $1.5\,\text{m}$.
+**Reasonableness:** The student's result is almost a tenth of the correct one, which corresponds to the factor $g \approx 9.81\,\text{m/s}^2$ that was left out. Rough estimate: the weight is about $400\,\text{N}$, so $400\,\text{N} \cdot 1.5\,\text{m} = 600\,\text{J}$. Units: the student's number $40$ was a mass in kilograms and not in newtons, so the product could not be in joules.
+
+## fy3-2-L3-04
+**Given:** from the table $(s, F)$: $(2.0\,\text{cm};\ 1.9\,\text{N})$, $(4.0\,\text{cm};\ 4.2\,\text{N})$, $(6.0\,\text{cm};\ 5.8\,\text{N})$, $(8.0\,\text{cm};\ 8.1\,\text{N})$, $(10.0\,\text{cm};\ 10.0\,\text{N})$; extension $s_\text{max} = 10.0\,\text{cm}$; mass to be lifted $m = 0.20\,\text{kg}$, $g = 9.81\,\text{m/s}^2$
+**Find:** a) how the force depends on the extension, b) the work $W$ done in stretching, c) the lifting height $h$ in centimetres
+**Principle:** The force changes with the extension, so the work is the area under the $(s,F)$ graph. If the force is proportional to the extension, the graph is a straight line through the origin and the area is a triangle. Energy is conserved without losses: the work done in stretching the spring can be used to lift an object slowly, so the lifting work $m g h$ is equal to $W$.
+**Reading the graph:** The force grows with the extension so that the quotient $\tfrac{F}{s}$ is about $1.0\,\text{N/cm}$ at all points: for example $\tfrac{1.9}{2.0} = 0.95$ and $\tfrac{10.0}{10.0} = 1.0$. Because of measurement uncertainty the measured points are usually not exactly on one line, so a line through the origin is fitted among them; the origin belongs on the line, because the extension is measured from the free length. On the line, at $s = 10.0\,\text{cm}$ the force is $F = 10.0\,\text{N}$. Because the force grows steadily from zero, the graph is a straight line through the origin and the area under it is a triangle; therefore the work is the area of a triangle whose base is $s$ and whose height is $F$.
+**Formula:** $W = \tfrac{1}{2} F s$ and $W = m g h$, so $h = \dfrac{W}{m g}$
+**Conversions:** $10.0\,\text{cm} = 0.100\,\text{m}$, so that the work comes out in joules. Finally $h$ is converted to centimetres: $1\,\text{m} = 100\,\text{cm}$.
+**Substitution:**
+
+$$\begin{aligned} W &= 0.5 \cdot 10.0\,\text{N} \cdot 0.100\,\text{m} \\ &= 0.500\,\text{J} \\ h &= \dfrac{0.500\,\text{J}}{0.20\,\text{kg} \cdot 9.81\,\dfrac{\text{m}}{\text{s}^2}} = 0.2548\,\text{m} \\ &= 25.48\,\text{cm} \end{aligned}$$
+**Answer:** a) the force is approximately proportional to the extension, $F \approx 1.0\,\tfrac{\text{N}}{\text{cm}} \cdot s$; b) $W = 0.50\,\text{J}$; c) $25\,\text{cm}$ ($25.5\,\text{cm}$ before rounding), two significant figures like the mass $0.20\,\text{kg}$.
+**Reasonableness:** If the force were $10.0\,\text{N}$ over the whole distance, the work would be $10.0\,\text{N} \cdot 0.100\,\text{m} = 1.0\,\text{J}$; the work of the triangle is half of this, because the average force is $5.0\,\text{N}$. The trapezium sum of the measured points gives the same: $0.020\,\text{m} \cdot 25.0\,\text{N} = 0.50\,\text{J}$. The weight of the object is $0.20\,\text{kg} \cdot 9.81\,\tfrac{\text{m}}{\text{s}^2} \approx 2.0\,\text{N}$, and $2.0\,\text{N} \cdot 0.25\,\text{m} \approx 0.50\,\text{J}$.
+
+## fy3-2-L3-05
+**Given:** mass $m = 450\,\text{kg}$, from the table $(t, h)$: $(2.0\,\text{s};\ 1.6\,\text{m})$, $(4.0\,\text{s};\ 3.3\,\text{m})$, $(6.0\,\text{s};\ 4.9\,\text{m})$, $(8.0\,\text{s};\ 6.5\,\text{m})$, $g = 9.81\,\text{m/s}^2$
+**Find:** a) the velocity $v$ of the load, b) why the lifting force is equal to the weight, c) the power $P$ of the motor in kilowatts, d) a comparison of the work at the last point of the table
+**Principle:** If the height grows steadily with time, the load rises at constant velocity. At constant velocity the lifting force $F$ is equal to the weight $G = m g$, and the power is the product of force and velocity, $P = F v$.
+**Reading the graph:** In time intervals of $2.0\,\text{s}$ the height grows by $1.6\,\text{m}$, $1.7\,\text{m}$, $1.6\,\text{m}$ and $1.6\,\text{m}$, that is, by almost the same amount, so the velocity is approximately constant. Because of measurement uncertainty the measured points are usually not exactly on one line, so the velocity is read from the slope of a fitted line, not from two adjacent measured points. A line through the origin fits among the points, because time and height are counted from the start of the lifting motion. From the line $h = 6.52\,\text{m}$ is read at $t = 8.0\,\text{s}$, so the slope is $v = 6.52\,\text{m} / 8.0\,\text{s} = 0.815\,\text{m/s}$.
+**Formula:** $F = G = m g$ and $P = F v$, so $P = m g v$; in the comparison $W = P t$ and $W = m g h$
+**Conversions:** All quantities are in SI units. Finally $1\,\text{kW} = 1000\,\text{W}$.
+**Substitution:**
+
+$$\begin{aligned} G &= 450\,\text{kg} \cdot 9.81\,\dfrac{\text{m}}{\text{s}^2} \\ &= 4414.5\,\text{N} \\ P &= 4414.5\,\text{N} \cdot 0.815\,\dfrac{\text{m}}{\text{s}} = 3598\,\text{W} \\ &= 3.598\,\text{kW} \\ P t &= 3598\,\text{W} \cdot 8.0\,\text{s} \\ &= 28\,780\,\text{J} \\ m g h &= 4414.5\,\text{N} \cdot 6.5\,\text{m} \\ &= 28\,690\,\text{J} \end{aligned}$$
+**Answer:** $3.6\,\text{kW}$, two significant figures like the mass and the height measurements. Justifications: a) the height grows steadily, so the velocity is approximately constant, $v \approx 0.82\,\text{m/s}$; b) as the lesson says, at constant velocity the lifting force is equal to the weight, as in the derivation of the formula $W = m g h$; d) the works are $28.8\,\text{kJ}$ and $28.7\,\text{kJ}$, that is, they differ by less than one percent.
+**Reasonableness:** Rough estimate: the weight is about $4400\,\text{N}$ and the velocity about $0.8\,\text{m/s}$, so the power is about $3500\,\text{W}$. The comparison d) is consistent: the work $P t$ given by the fitted line and the work $m g h$ calculated from the point of the table differ by less than one percent. A power of a few kilowatts is believable for the lifting motor of a construction crane when only the lifting work is taken into account.

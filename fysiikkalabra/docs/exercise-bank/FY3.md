@@ -8,19 +8,19 @@ kaasujen tilanmuutokset; pV-kuvaajat, mittausaineistot ja termodynaamisten malli
 P2. +3/+3/+2.
 - Taso 1: monivalinta massa vs. paino (Kuussa); vuorovaikutusparin tunnistaminen; $G = mg$ toisella planeetalla.
 - Taso 2 (aineisto): jousivaakamittaukset eri massoilla → $(m,G)$-kuvaaja ja $g$ kulmakertoimesta; painot eri taivaankappaleilla taulukosta → $g$-arvot ja vertailu. Virheanalyysi: "voimamittari näyttää massan".
-- Taso 3: aineisto hissin vaa'an lukemista (figure) → milloin paino-lukema poikkeaa ja miksi (laadullisesti); perustelu vuorovaikutuksesta: miksi Maa ei "tunnu" omenan vetoa.
+- Taso 3: jousen kalibrointi ja tuntematon taivaankappale → $g$ ja perustelu; laskeutujan kantavuus Marsissa (osamassat taulukossa). (Hissin vaaka jätetty pois: vaatii Newtonin lait, FY4.)
 
 ### fy3-2 Työ ja energia
 P1. +3/+3/+2.
 - Taso 1: monivalinta "työtä ei tehdä, kun kantaa laukkua vaakasuoraan"; $W = Fs$; työn merkki.
-- Taso 2 (aineisto): voima–matka-kuvaaja (figure) → työ pinta-alana; mittaustaulukko kärryn vetämisestä voima-anturilla → työ ja liike-energian muutos. Kokeellinen: miten mittaat portaissa tehdyn työn.
-- Taso 3: aineisto, jossa voima vaihtelee (jousi) → työ kolmion pinta-alana ja vertailu energiaan; virheanalyysi: kulman unohtaminen vinossa vedossa.
+- Taso 2 (aineisto): voima–matka-kuvaaja (figure) → työ pinta-alana; mittaustaulukko kärryn vetämisestä voima-anturilla → työ pinta-alana (liike-energian muutos jätetty pois: FY4). Kokeellinen: miten mittaat portaissa tehdyn työn.
+- Taso 3: aineisto, jossa voima vaihtelee (jousi) → työ kolmion pinta-alana ja vertailu energiaan; nostimen korkeus–aika-aineisto → nopeus ja teho $P = Fv$ (vinon vedon kulma jätetty pois: FY4). Virheanalyysi tasolla 2: massa sijoitettu voiman paikalle.
 
 ### fy3-3 Termodynaaminen systeemi, tilanmuuttujat ja lämpötila
 P2. +3/+3/+2.
 - Taso 1: monivalinta suljettu vs. avoin systeemi; °C ↔ K sijoittamalla; tilanmuuttujan tunnistaminen.
 - Taso 2 (aineisto): kahden lämpömittarin kalibrointitaulukko → systemaattinen ero ja korjaus; lämpötila-aikasarja termospullosta → tasapainoon hakeutuminen. Kokeellinen: lämpömittarin asettumisaika, mitä se vaikuttaa mittaukseen.
-- Taso 3: perustelutehtävä: miksi lämpötila ei ole "lämmön määrä" (kaksi kappaletta, sama T, eri energia); aineisto: kehon lämpötilamittaus eri menetelmillä → luotettavuuden arviointi.
+- Taso 3: aineisto: kehon lämpötilamittaus eri menetelmillä → luotettavuuden arviointi; suljetun paineilmasäiliön varoventtiili (kokonaispaine ∝ $T$, ylipaine). ("Lämpötila ei ole lämmön määrä" siirretty lukuun fy3-5, jossa sisäenergia käsitellään.)
 
 ### fy3-13 Absoluuttisen nollapisteen määrittäminen
 P1. +3/+3/+2. Luvussa jo kokeellisuutta.
@@ -74,7 +74,7 @@ P1. +3/+3/+2.
 P1. +3/+3/+2. Luvussa jo aineistolaskuja.
 - Taso 1: monivalinta mitä $n$ kuvaa; $pV = nRT$ suoraan; tilanyhtälö kahden tilan välillä.
 - Taso 2 (aineisto): renkaan paine ja lämpötila ajon aikana → vuotaako rengas, perustelu tilanyhtälöllä; mittaussarja $(T, V)$ vakiopaineessa → $nR$ kulmakertoimesta ja ainemäärä. Kuvaajan tulkinta: kaksi isotermiä, kumpi korkeampi lämpötila.
-- Taso 3: reaalikaasun poikkeama ideaalikaasusta suurella paineella (taulukko $pV/(nRT)$) → milloin malli kelpaa; YO-tyyppinen monivaiheinen tehtävä (sääpallo noustessa: paine ja lämpötila laskevat).
+- Taso 3: YO-tyyppinen monivaiheinen tehtävä: kaasupullo tyhjenee vaiheittain lämpötilan muuttuessa (ainemäärä $pV = nRT$:stä kolmella hetkellä, käytetty massa ja pallojen lukumäärä); sääpallo noustessa (paine ja lämpötila laskevat, tilavuus ja kuoren kestävä korkeus).
 
 ### fy3-11 Kaasun tekemä työ ja lämpövoimakone
 P1. +3/+3/+2.

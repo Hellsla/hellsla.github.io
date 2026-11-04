@@ -95,7 +95,7 @@
   {
    "id": "fy7-1-L3-03",
    "level": 3,
-   "text": "Maan magneettikentän mallin (World Magnetic Model 2025) mukaan kenttä on Helsingissä noin $53\\,\\mu\\text{T}$ ja osoittaa noin $74^\\circ$ vaakatason alapuolelle. Huippuvuorten Longyearbyenissä kenttä on noin $55\\,\\mu\\text{T}$ ja osoittaa noin $82{,}5^\\circ$ vaakatason alapuolelle. Kuinka monta kertaa suurempi kentän vaakakomponentti on Helsingissä kuin Longyearbyenissä? Miksi kompassi toimii Longyearbyenissä huonommin, vaikka koko kenttä on siellä suurempi?",
+   "text": "Maan magneettikentän mallin (World Magnetic Model 2025) mukaan kenttä on Helsingissä noin $53\\,\\mu\\text{T}$ ja osoittaa noin $74^\\circ$ vaakatason alapuolelle. Huippuvuorten Longyearbyenissä kenttä on noin $55\\,\\mu\\text{T}$ ja osoittaa noin $82{,}5^\\circ$ vaakatason alapuolelle.\n\nKuinka monta kertaa suurempi kentän vaakakomponentti on Helsingissä kuin Longyearbyenissä? Miksi kompassi toimii Longyearbyenissä huonommin, vaikka koko kenttä on siellä suurempi?",
    "answer": 2.03,
    "unit": "",
    "tolerance": 0.02

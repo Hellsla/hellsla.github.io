@@ -64,6 +64,15 @@ def load(lang=i18n.SOURCE):
     return {k: dict(base[k], **tr[k]) for k in base if k in tr}
 
 
+def planned(lang=i18n.SOURCE):
+    """The school's planned courses (teacher 2026-11-04): [{icon, title, text}] from the registry's "_planned", shown greyed
+    out and unlinked on the front page under the school's own courses, as they have no content yet. A language's own
+    content/<lang>/local-courses.json "_planned" replaces the Finnish list; a language without one shows the Finnish."""
+    for f in ([ROOT / "content" / lang / REGISTRY] if lang != i18n.SOURCE else []) + [ROOT / REGISTRY]:
+        if f.is_file() and "_planned" in (d := json.loads(f.read_text())): return d["_planned"]
+    return []
+
+
 def validate(curriculum):
     """Error lines for the Finnish registry: codes apart from the national modules, required texts, known statuses,
     prepare ids that are lessons of curriculum.json."""
@@ -91,6 +100,11 @@ def validate(curriculum):
         if c.get("chapters") and not lang: errs.append(f"{REGISTRY} {code}: a course with chapters of units names their language")
         for f in ("modes", "report"):
             errs += [f"{REGISTRY} {code}: {f}[{i}] needs title and text" for i, x in enumerate(c.get(f, [])) if not (x.get("title") and x.get("text"))]
+    from module_icons import ICONS
+    for lang in i18n.languages():
+        for i, x in enumerate(planned(lang)):
+            if not (x.get("title") and x.get("text")): errs.append(f"{REGISTRY} _planned[{i}] ({lang}): needs title and text")
+            if x.get("icon") not in ICONS: errs.append(f"{REGISTRY} _planned[{i}] ({lang}): icon {x.get('icon')!r} is not in module_icons.ICONS")
     return errs
 
 

@@ -364,6 +364,8 @@ Kun läpäisysuunnat ovat kohtisuorassa toisiaan vastaan, polarisaattorit ovat r
   <foreignObject x="414" y="265.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\theta = 90^\circ$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy7/polarized-protractor.webp" alt="Läpinäkyvä kulmamitta läheltä. Muovissa on sateenkaaren värisiä raitoja."><figcaption>Muovinen kulmamitta kahden polarisaattorin välissä. Muovissa on jännityksiä. Ne muuttavat eri värien polarisaatiota eri tavalla. Siksi muovissa näkyy värejä.</figcaption></figure>
+
 ### Heijastunut valo on osittain polarisoitunutta
 Eriste on aine, joka ei johda sähköä. Esimerkkejä ovat vesi, lasi ja märkä asfaltti. Kun polarisoimaton valo heijastuu eristeen pinnasta, pinnan suuntainen värähtely heijastuu voimakkaammin kuin muut värähtelyt. Heijastunut valo on siksi **osittain polarisoitunutta** pinnan suuntaisesti. Vaakasuorasta pinnasta heijastunut häikäisy on siis polarisoitunut enimmäkseen vaakasuunnassa.
 

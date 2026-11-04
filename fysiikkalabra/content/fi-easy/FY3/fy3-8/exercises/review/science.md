@@ -1,12 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: bfda9e676208ea61
+CONTENT-HASH: beefa9f3fd066ff5
+Mode: translation delta
+Round: 1
 
 ## Blocking
 (none)
+
+## Fixed
+- None needed.
 
 ## Polish
 - None.
 
 ## Checked
-- Delta review 2026-11-01 (commit 79af52c4): units and numbers with units in exercise prose and solutions set as inline LaTeX; compared with the reviewed Finnish source.
-- exercises.json and solutions.md: every number (incl. signs, minus as maths, decimal sign) matches the Finnish in all tasks; answers, tolerances, units and reasonableness checks unchanged; no physics changed by the typography edit.
+- Delta review of the 8 new tasks (L1-06..08, L2-05..07, L3-04..05) against reviewed Finnish: ids, answers, units, tolerances, correct flags, choice order, data table cells and every number in exercises.json and solutions.md match fi (script-compared; only word order of numbers differs).
+- Decimal point in en JSON and LaTeX; Finnish decimal comma kept in fi-easy; formulas unchanged; check_i18n 0 errors.

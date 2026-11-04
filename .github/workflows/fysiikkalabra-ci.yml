@@ -29,7 +29,7 @@ jobs:
         with: { python-version: "3.12" }
       - uses: actions/setup-node@v4
         with: { node-version: "22" }
-      - run: pip install markdown playwright && playwright install --with-deps chromium
+      - run: pip install markdown playwright numpy && playwright install --with-deps chromium
       - name: which pages the browser steps test (a pull request - the pages it can change, or full; scripts/ci_scope.py, teacher 2026-11-01)
         id: scope
         run: |

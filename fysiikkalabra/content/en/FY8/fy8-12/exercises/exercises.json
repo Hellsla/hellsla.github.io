@@ -79,7 +79,7 @@
     {
       "id": "fy8-12-L3-01",
       "level": 3,
-      "text": "An alpha particle of americium-241 with a kinetic energy of $5.49\\,\\text{MeV}$ stops in air after a distance of $4.1\\,\\text{cm}$. A beta particle with a kinetic energy of $1.0\\,\\text{MeV}$ travels in a winding path in air for about $3.6\\,\\text{m}$ before it stops. Both give up all their energy by ionising, and in air one ion pair takes on average $34\\,\\text{eV}$. How many times more ion pairs per centimetre does the alpha particle form than the beta particle? Assume that ion pairs are formed evenly along the whole track.",
+      "text": "An alpha particle of americium-241 with a kinetic energy of $5.49\\,\\text{MeV}$ stops in air after a distance of $4.1\\,\\text{cm}$. A beta particle with a kinetic energy of $1.0\\,\\text{MeV}$ travels in a winding path in air for about $3.6\\,\\text{m}$ before it stops.\n\nBoth give up all their energy by ionising, and in air one ion pair takes on average $34\\,\\text{eV}$.\n\nHow many times more ion pairs per centimetre does the alpha particle form than the beta particle? Assume that ion pairs are formed evenly along the whole track.",
       "answer": 482,
       "unit": "",
       "tolerance": 0.02

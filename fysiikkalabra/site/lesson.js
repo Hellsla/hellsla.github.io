@@ -464,7 +464,7 @@
   // task's Vastaus and Näytä ratkaisu open after one Tarkista with a number (part 1); a written task's answer, an
   // exercise drawn on paper and a Sovella itsenäisesti task's model answer and rubric after the tick "Olen tehnyt
   // ratkaisun" (label.solved; an inquiry explanation's own tick is in inquiry.js). A locked control stays in view,
-  // dimmed, with the reason beside it, so the student knows the solution is there. Nothing is kept: a reload locks
+  // dimmed, with a lock symbol beside it (the reason as hover and screen-reader text), so the student knows the solution is there. Nothing is kept: a reload locks
   // again. ?ratkaisut=1 (the teacher) opens every lock on the page.
   const OPEN_ALL = (() => { try { return new URLSearchParams(location.search).get('ratkaisut') === '1'; } catch (e) { return false; } })();
   window.flSolutionsOpen = OPEN_ALL;
@@ -477,10 +477,16 @@
     const sum = e.target.closest && e.target.closest('summary');
     if (sum && sum.parentElement.dataset.locked && sum.parentElement.firstElementChild === sum) e.preventDefault();
   }, true);
+  // Only the lock symbol shows; the reason stays as hover text (title) and as hidden text for screen readers (teacher 2026-11-04).
+  const lockNote = window.flLockNote = (text, n) => {
+    n = n || document.createElement('span'); n.className = 'lock-note'; n.title = text;
+    const t = document.createElement('span'); t.className = 'visually-hidden'; t.textContent = text; n.replaceChildren(t);
+    return n;
+  };
   const lockBoxes = (boxes, why) => {
     if (OPEN_ALL || !boxes.length) return () => {};
     const notes = [], buttons = [];
-    const note = () => { const n = document.createElement('span'); n.className = 'lock-note'; n.textContent = msg(why); notes.push(n); return n; };
+    const note = () => { const n = lockNote(msg(why)); notes.push(n); return n; };
     const head = boxes[0].parentElement.querySelector(':scope > .ex-head');
     boxes.forEach((d) => {
       d.open = false; d.dataset.locked = '1';
@@ -521,4 +527,29 @@
     opened.forEach((d) => { d.open = false; }); opened = [];
     document.querySelectorAll('.worked .step[data-print-opened]').forEach((s) => { s.hidden = true; delete s.dataset.printOpened; });
   });
+})();
+
+/* Inline formulas never break onto two lines (Lauri 2026-11-04; site.css .katex nowrap). An inline formula wider
+   than its text column (a long calculation on a 360 px phone) is moved onto its own line and scrolls sideways,
+   like display maths, instead of overflowing the page. Re-checked on resize and when a <details> opens. */
+(function () {
+  const SKIP = '.katex-display,svg,.sim-tex-layer,.fig-tex,#sim-root';
+  function fit(root) {
+    const ks = [...(root || document).querySelectorAll('.katex')].filter(k => !k.closest(SKIP));
+    ks.forEach(k => k.classList.remove('kx-wide'));
+    const W = document.documentElement.clientWidth;
+    ks.forEach(k => {
+      if (!k.offsetParent) return;
+      const box = k.parentElement.closest('p,li,td,th,dd,dt,div,summary,figcaption,blockquote,label,.steps,.stage');
+      const r = k.getBoundingClientRect();
+      const right = Math.min(W, box ? box.getBoundingClientRect().right : W);
+      if (r.right > right + 1 || (box && r.width > box.clientWidth + 1)) k.classList.add('kx-wide');
+    });
+  }
+  let t; const later = () => { clearTimeout(t); t = setTimeout(() => fit(), 150); };
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', () => fit()); else fit();
+  window.addEventListener('load', () => fit()); window.addEventListener('resize', later);
+  document.addEventListener('toggle', e => { fit(e.target); later(); }, true);   // later: maths auto-rendered on open
+  new MutationObserver(later).observe(document.body, {subtree: true, attributes: true, attributeFilter: ['hidden']});   // a solution unlocked (try-first) or revealed
+  window.flFitMath = fit;
 })();

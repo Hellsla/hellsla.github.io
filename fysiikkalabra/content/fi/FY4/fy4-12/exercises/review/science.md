@@ -1,15 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: d363d2c649b787b2
+CONTENT-HASH: 140890ba59fc47db
 
 ## Blocking
 
 ## Polish
-- L3-02 — "Kuinka lähelle bussia" treats the bus as a point. That is fine at this level (C). If wanted, add "(bussin takaosaan)".
+- solutions.md:189 (L3-04) — carried from round 1: "kolme merkitsevää numeroa, koska tulos on kahden kolminumeroisen summa" is weak; the limiting data (20 m/s, 1,5 m/s², 5,0 m) have two figures. — Write "≈ 270 m (kaksi merkitsevää numeroa); välitulos 267 m". The tolerance accepts both.
+- solutions.md:170 (L2-07) — carried: "A on koko ajan edellä" holds only until t = 12 s, outside the table. — Write "A on edellä koko taulukon ajan (B saavuttaa A:n vasta hetkellä 12 s)". At :175, "kuten nopeuksissa" fits poorly (the table speeds have three figures); name 6,0 s instead.
+- lessons/FY4/fy4-12/answers.py:33 — carried: the comment says "52,5 m", but the line computes 52,46 m and solutions.md says 52,4 m. — Change the comment to 52,4 m.
+- exercises.json L2-05 — carried: `kind` includes "graph", but the task uses only the table. — Drop "graph" or ask for a sketch; update docs/exercise-bank/FY4.md where the plan's (t,v) figure item became the table task L2-07.
+- exercises.json L1-06, last distractor feedback — carried: "Viivat voivat leikata, vaikka niiden kulmakertoimet ovat erisuuret" reads as if equal slopes were possible for crossing lines. — Write "Leikkaavilla suorilla kulmakertoimet ovat aina erisuuret".
 
 ## Checked
-- The only change since my PASS is the kaksi_karrya docstring in figures.py, which now says "B from 40 m" and matches the drawing and the L1-04 and L2-04 solutions. Round-2 polish is fixed.
-- One script recomputed all 12 answers from the task text with a general meeting-root solver (L2-04 and L3-02 by a numeric search over the gap). All agree with exercises.json and answers.py: 4,0; 20; 24; 5,0; 35; 30; 5,0; 9,0; 3,75; 2,0; 4,0; 10.
-- L3-01: the roots are 2,0 s and 8,0 s, and both are named as meetings. L3-02: the discriminant is −4 m²/s² < 0, the minimum gap at 8,0 s is 4,0 m, and the gap at 6 s and at 10 s is 5,0 m. L3-03: the roots are −18 s and 10 s, and the negative root is rejected with a reason.
-- Conversions are right: 90 km/h and 72 km/h are 25 m/s and 20 m/s, and 12 km / 144 km/h = 5,0 min. L2-04 states 3,8 s, gives 3,75 s as the unrounded value, and the tolerance accepts it.
-- Figure fy4-12/kaksi-karrya: A goes 0→60 m and B 40→20 m in 10 s, so they meet at 5,0 s and 30 m on the grid.
-- Every solution has all seven parts, solves symbolically first, rounds according to the data and checks the result by substitution. Symbols are in LaTeX, multiplication uses \cdot, and there are no vectors.
+- Round 2. Round-1 Blocking item solutions.md:189 (L3-04, Vastaus) is resolved: the margin is now "ohituksen lopussa … noin 0,7 s … (33 m : 49 m/s)". Recomputed: closing speed at the end 29 m/s + 20 m/s = 49 m/s, 33 m : 49 m/s = 0,67 s ≈ 0,7 s.
+- The rest of L3-04 is unchanged and still right: t = 6,0 s, s_h = 147 m, s_v = 120 m, d_min = 267 m, v = 29 m/s = 104 km/h > 80 km/h; Mallivastaus "+24 km/h" agrees.
+- No other file in the set changed, so the round-1 recomputation of all 18 answers still holds.
+- MC items L1-06, L1-08: exactly one correct option each, as in round 1.
+- Scope, levels and plan unchanged since round 1.
+- The hash was the same at the start and at the end.

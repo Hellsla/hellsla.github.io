@@ -1,16 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: cfdb3fcb022b45aa
+CONTENT-HASH: a9fc9cb18c0434a8
 
 ## Blocking
-(none left; see Fixed)
+(none)
 
 ## Fixed
-- Update 2026-10-28: "20 °C" kept as plain text where the Finnish has "20-asteista", so the formulas match the Finnish.
-- exercises.json fy3-16-L3-01 — "A stove contains 25 kg of stones" (Finnish: saunan kiuas, as in L1-01) → "A sauna stove contains 25 kg of stones"
+- (none needed in the exercise files)
 
 ## Polish
 - none
 
 ## Checked
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): exercises.json (texts, units, answers) and solutions.md (all step labels, substitutions, significant-figure remarks, reasonableness checks) for all 12 tasks.
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked exercises.json (unit wrapping in tasks) and solutions.md (L1-04 principle) against the new Finnish.
+- The tasks, parts a)-d), the instruction which part goes in the answer box and the order of choices match the Finnish; no hint added or removed.
+- Feedback texts keep their role (correct: confirms and explains; wrong: names the misconception). Student-error task L2-07 keeps the quoted solution unchanged.
+- Model answers for open parts (L2-05 b, L2-06 c, L2-07 a, L3-04 c, L3-05 d) are complete and match the Finnish reasoning.
+- Translation (English): natural, no Finnish words left; terms consistent (thermal conductivity, latent heat of fusion, heat loss coefficient, U-value).
+- check_i18n.py: 0 errors.

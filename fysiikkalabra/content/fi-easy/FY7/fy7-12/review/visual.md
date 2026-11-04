@@ -1,17 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: a11a1c2fc6509c1e
+CONTENT-HASH: eab83363a7e48911
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] Luvun tärkeät käsitteet box — on a phone the box sits below the first screen (top-390 and intro-1280 do not show it), so it is easy to miss — no action; owner's placement decision.
+- none
 
 ## Checked
-- Delta (only meta.json key_concepts changed). The review script's captures do not include the box, so I took element captures of #kasitteet at 390 and 1280 px from the built preview page: fy7-12-kc-390.png and fy7-12-kc-1280.png (in the scratchpad kcshots folder).
-- Box layout: heading, "Vapaaehtoinen" tag, lead, term in bold, explanation; no clipping, scrollWidth 390 at 390 px (no horizontal overflow); 1280 px two-column grid reads well.
-- KaTeX in the box renders correctly (inline maths, units, indices, case endings after maths set with colon).
-- Terms and wording read as plain Finnish, consistent with the lesson's vocabulary; sentences short.
-- Surrounding page (top-390, intro-1280) from this build unchanged.
-
-## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+batch delta review: opened tir-wine-glass, optical-fibres (assets/pics/fy7) and compared with alt and caption (alt matches what is visible, caption physically correct, plain Finnish, units in LaTeX where present); rendered preview/fi-easy/fy7-12.html with playwright: figure.unit-photo floats right at 1280 px (x 744–1064, credit line shown, no clipping), stacks full width at 390 px, no horizontal overflow.

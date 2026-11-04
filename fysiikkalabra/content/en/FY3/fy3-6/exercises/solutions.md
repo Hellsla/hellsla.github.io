@@ -48,6 +48,31 @@
 **Answer:** $19\,\text{kJ}$, two significant figures as in the mass $0.50\,\text{kg}$.
 **Reasonableness:** The temperature rises, so $Q$ is positive. Be careful when subtracting readings with minus signs: the change is $18\,\text{K}$, not $26\,\text{K}$. The $c$ of ice is about half that of water, so making the same change in temperature in $0.50\,\text{kg}$ of liquid water would take about twice the heat.
 
+## fy3-6-L1-06
+**Find:** why the sand warms more than the water when the masses and the quantities of heat are the same
+**Principle:** When the phase does not change, the change in temperature is $\Delta T = \dfrac{Q}{c m}$. With the same $Q$ and $m$, $\Delta T$ depends only on the specific heat capacity $c$: the greater $c$ is, the smaller $\Delta T$ is.
+**Model answer:** The specific heat capacity of water, $4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$, is greater than that of sand, $800\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$, so the same quantity of heat raises the temperature of the water less than that of the sand. The explanation is not density, because the masses are the same and density does not appear in the formula. Reflection does not explain the difference either, because in the task both receive the same quantity of heat. The substance does matter, since $c$ is part of the formula $Q = c m \Delta T$.
+
+## fy3-6-L1-07
+**Given:** copper, $m = 0.50\,\text{kg}$, $Q = 15\,\text{kJ}$; from the table $c = 385\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$
+**Find:** the rise in temperature $\Delta T$ in kelvins
+**Principle:** The pot warms and its phase does not change, and no heat is transferred to the surroundings, so the whole quantity of heat $Q$ raises the temperature of the pot. In the formula $Q = c m \Delta T$ the unknown is $\Delta T$.
+**Formula:** $Q = c m \Delta T$, so $\Delta T = \dfrac{Q}{c m}$
+**Conversions:** $15\,\text{kJ} = 15 \cdot 1000\,\text{J} = 15\,000\,\text{J}$.
+**Substitution:** $\Delta T = \dfrac{15\,000\,\text{J}}{385\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0.50\,\text{kg}} = 77.9\,\text{K}$
+**Answer:** $78\,\text{K}$, two significant figures as in the mass $0.50\,\text{kg}$ and the quantity of heat $15\,\text{kJ}$.
+**Reasonableness:** Check by calculating back: $385\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0.50\,\text{kg} \cdot 77.9\,\text{K} \approx 15\,000\,\text{J}$, as in the given quantity of heat. The $c$ of copper is small, so a pot of half a kilogram warms by tens of kelvins with just $15\,\text{kJ}$.
+
+## fy3-6-L1-08
+**Given:** aluminium, $m = 0.60\,\text{kg}$, $T_\text{initial} = 18\,{}^\circ\text{C}$, $T_\text{final} = 78\,{}^\circ\text{C}$; from the table $c = 900\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$
+**Find:** a) the heat capacity $C$; b) the quantity of heat $Q$ needed for the heating, in kilojoules
+**Principle:** The heat capacity $C = c m$ tells how much energy is needed to heat the whole saucepan by one kelvin. The saucepan warms and its phase does not change, so $Q = C \Delta T$.
+**Formula:** $C = c m$ and $Q = C \Delta T$, where $\Delta T = T_\text{final} - T_\text{initial}$
+**Conversions:** $\Delta T = 78\,{}^\circ\text{C} - 18\,{}^\circ\text{C} = 60\,\text{K}$, the same in kelvins. Finally $1\,\text{kJ} = 1000\,\text{J}$.
+**Substitution:** $C = 900\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0.60\,\text{kg} = 540\,\tfrac{\text{J}}{\text{K}}$ and $Q = 540\,\tfrac{\text{J}}{\text{K}} \cdot 60\,\text{K} = 32\,400\,\text{J} = 32.4\,\text{kJ}$
+**Answer:** $32\,\text{kJ}$, two significant figures as in the mass $0.60\,\text{kg}$. The heat capacity is $540\,\text{J/K}$.
+**Reasonableness:** Making the same change in temperature in $0.60\,\text{kg}$ of water would take $4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0.60\,\text{kg} \cdot 60\,\text{K} = 150.8\,\text{kJ}$, that is, about $4.7$ times the heat, because the $c$ of water is about $4.7$ times that of aluminium.
+
 ## fy3-6-L2-01
 **Given:** hot water $m_1 = 160\,\text{g}$, $T_1 = 95\,{}^\circ\text{C}$; cold water $m_2 = 40\,\text{g}$, $T_2 = 8.0\,{}^\circ\text{C}$; both are water, no heat losses
 **Find:** the equilibrium temperature $T$
@@ -89,6 +114,38 @@
 **Answer:** $27\,{}^\circ\text{C}$, two significant figures as in the masses.
 **Reasonableness:** The heat capacity of the water is about 7.5 times that of the ladle, so the ladle cools by about $68\,\text{K}$ but the water warms by only about $9\,\text{K}$. The mean of the temperatures, $56.5\,{}^\circ\text{C}$, would be wrong.
 
+## fy3-6-L2-05
+**Given:** $m = 0.50\,\text{kg}$, $P = 100\,\text{W}$; the ends of the line $(0\,\text{s};\ 20.0\,{}^\circ\text{C})$ and $(300\,\text{s};\ 34.5\,{}^\circ\text{C})$; all the energy of the resistor is transferred to the liquid
+**Find:** the specific heat capacity of the liquid $c$ in $\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$
+**Principle:** At constant power the quantity of heat transferred to the liquid is $Q = P t$. When the phase does not change, $Q = c m \Delta T$, so $P t = c m \Delta T$.
+**Reading the graph:** The points lie close to the line: the line gives $25.8\,{}^\circ\text{C}$ at $120\,\text{s}$ and $31.6\,{}^\circ\text{C}$ at $240\,\text{s}$, as in the table. The ends of the line give the change in temperature $\Delta T = 34.5\,{}^\circ\text{C} - 20.0\,{}^\circ\text{C} = 14.5\,\text{K}$ in the time $\Delta t = 300\,\text{s}$, so the slope is $\dfrac{\Delta T}{\Delta t} = \dfrac{14.5\,\text{K}}{300\,\text{s}} = 0.0483\,\tfrac{\text{K}}{\text{s}}$.
+**Formula:** $P t = c m \Delta T$, so $c = \dfrac{P}{m} \cdot \dfrac{\Delta t}{\Delta T}$
+**Conversions:** The power $100\,\text{W} = 100\,\tfrac{\text{J}}{\text{s}}$ and the time in seconds are in SI units, so no conversions are needed. The change in temperature is the same in degrees Celsius and in kelvins.
+**Substitution:** $c = \dfrac{100\,\tfrac{\text{J}}{\text{s}}}{0.50\,\text{kg} \cdot 0.0483\,\tfrac{\text{K}}{\text{s}}} = 4138\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$
+**Answer:** $4100\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$, two significant figures as in the mass $0.50\,\text{kg}$. b) The liquid is water, because the table value $4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ differs from the result by only about $1\,\%$, and the values of the other substances in the table ($2100$ or less) are not close. c) Heat losses can be reduced with insulation and a lid on the calorimeter: then heat does not escape to the surroundings and the liquid does not evaporate, so a larger share of the energy of the resistor raises the temperature of the liquid and $c$ does not come out too large.
+**Reasonableness:** Energy balance: the resistor gives $100\,\text{W} \cdot 300\,\text{s} = 30\,000\,\text{J}$, and the liquid receives $4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0.50\,\text{kg} \cdot 14.5\,\text{K} = 30\,378\,\text{J}$. The numbers differ by about $1\,\%$, which is the size of the scatter of the measurements, so the losses in this interval are small.
+
+## fy3-6-L2-06
+**Given:** in each $m = 0.40\,\text{kg}$, the same power $P$ and the same time; in $120\,\text{s}$ the temperature of liquid A rises from $20.0\,{}^\circ\text{C}$ to $38.1\,{}^\circ\text{C}$ and that of liquid B from $20.0\,{}^\circ\text{C}$ to $29.0\,{}^\circ\text{C}$; from the table $c_\text{w} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ for water
+**Find:** a) which liquid is water; b) the specific heat capacity of the oil $c_\text{oil}$
+**Principle:** The same power in the same time gives both liquids the same quantity of heat $Q$, and the masses are the same. Since $Q = c m \Delta T$, the product $c\,\Delta T$ is the same for both, so the liquid with the greater $c$ warms less.
+**Reading the graph:** The temperatures in the table rise steadily: liquid A warms by about $4.5\,\text{K}$ and liquid B by about $2.3\,\text{K}$ in each $30\,\text{s}$ interval. So in the whole $120\,\text{s}$ the changes are $\Delta T_\text{A} = 38.1\,{}^\circ\text{C} - 20.0\,{}^\circ\text{C} = 18.1\,\text{K}$ and $\Delta T_\text{B} = 29.0\,{}^\circ\text{C} - 20.0\,{}^\circ\text{C} = 9.0\,\text{K}$. Liquid B warms more slowly, so B is water and A is oil.
+**Formula:** $c_\text{oil}\, m\, \Delta T_\text{A} = c_\text{w}\, m\, \Delta T_\text{B}$, so $c_\text{oil} = c_\text{w} \cdot \dfrac{\Delta T_\text{B}}{\Delta T_\text{A}}$
+**Conversions:** The mass $m$ and the quantity of heat $Q$ cancel, so no conversions are needed. The change in temperature is the same in degrees Celsius and in kelvins.
+**Substitution:** $c_\text{oil} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot \dfrac{9.0\,\text{K}}{18.1\,\text{K}} = 2083\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$
+**Answer:** $2100\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$, two significant figures as in the mass $0.40\,\text{kg}$ and the change $9.0\,\text{K}$.
+**Reasonableness:** The oil warms about $2.0$ times as much as the water ($18.1\,\text{K} : 9.0\,\text{K} \approx 2.0$), so its $c$ is about half that of water: $4190 : 2 \approx 2100$. The result is plausible, because water has the greatest specific heat capacity of the common liquids.
+
+## fy3-6-L2-07
+**Given:** water $m_\text{w} = 0.50\,\text{kg}$, $T_\text{w} = 20\,{}^\circ\text{C}$; copper $m_\text{c} = 0.20\,\text{kg}$, $T_\text{c} = 100\,{}^\circ\text{C}$; from the table $c_\text{w} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ and $c_\text{c} = 385\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$; no heat losses
+**Find:** a) the error of the student; b) the equilibrium temperature $T$
+**Principle:** In an insulated vessel the heat given out by the copper is equal to the heat received by the water. The student's mean would be correct only if the heat capacities $c m$ of the objects were equal. Here the heat capacity of the water is many times that of the copper, so the equilibrium temperature is close to the initial temperature of the water, not halfway.
+**Formula:** $c_\text{c} m_\text{c} (T_\text{c} - T) = c_\text{w} m_\text{w} (T - T_\text{w})$, so $T = \dfrac{c_\text{c} m_\text{c} T_\text{c} + c_\text{w} m_\text{w} T_\text{w}}{c_\text{c} m_\text{c} + c_\text{w} m_\text{w}}$
+**Conversions:** The heat capacities are $c_\text{c} m_\text{c} = 385\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0.20\,\text{kg} = 77\,\tfrac{\text{J}}{\text{K}}$ and $c_\text{w} m_\text{w} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0.50\,\text{kg} = 2095\,\tfrac{\text{J}}{\text{K}}$. The temperatures can be substituted in degrees Celsius, because the result is a weighted mean.
+**Substitution:** The numerator is $77\,\tfrac{\text{J}}{\text{K}} \cdot 100\,{}^\circ\text{C} + 2095\,\tfrac{\text{J}}{\text{K}} \cdot 20\,{}^\circ\text{C} = 49\,600\,\text{J}$ and the denominator $77\,\tfrac{\text{J}}{\text{K}} + 2095\,\tfrac{\text{J}}{\text{K}} = 2172\,\tfrac{\text{J}}{\text{K}}$, so $T = \dfrac{49\,600\,\text{J}}{2172\,\tfrac{\text{J}}{\text{K}}} = 22.84\,{}^\circ\text{C}$
+**Answer:** $23\,{}^\circ\text{C}$, two significant figures as in the mass $0.20\,\text{kg}$ and the temperature $20\,{}^\circ\text{C}$.
+**Reasonableness:** The result is between the initial temperatures and only about $2.8\,\text{K}$ above the initial temperature of the water. Energy balance: the copper gives out $77\,\tfrac{\text{J}}{\text{K}} \cdot 77.2\,\text{K} \approx 5.9\,\text{kJ}$ and the water receives $2095\,\tfrac{\text{J}}{\text{K}} \cdot 2.84\,\text{K} \approx 5.9\,\text{kJ}$. The student's $60\,{}^\circ\text{C}$ would require the water to receive $2095\,\tfrac{\text{J}}{\text{K}} \cdot 40\,\text{K} = 84\,\text{kJ}$, but the copper can give out at most $77\,\tfrac{\text{J}}{\text{K}} \cdot 80\,\text{K} \approx 6\,\text{kJ}$.
+
 ## fy3-6-L3-01
 **Given:** water $m_\text{w} = 20\,\text{kg}$, $T_\text{w} = 10\,{}^\circ\text{C}$, target $T = 40\,{}^\circ\text{C}$, $c_\text{w} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$; stones $T_\text{s} = 300\,{}^\circ\text{C}$, $c_\text{s} = 800\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$; no losses and no vaporisation
 **Find:** the mass of the stones $m_\text{s}$
@@ -118,3 +175,30 @@
 **Substitution:** $m_\text{s} = \dfrac{4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 1000\,\text{kg}}{800\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}} = 5237.5\,\text{kg}$, so $V_\text{s} = \dfrac{5237.5\,\text{kg}}{1600\,\tfrac{\text{kg}}{\text{m}^3}} = 3.27\,\text{m}^3$
 **Answer:** $3.3\,\text{m}^3$, two significant figures as in the volume $1.0\,\text{m}^3$.
 **Reasonableness:** Per kilogram, water stores about 5.2 times as much as sand, but sand is denser, so a cubic metre holds 1.6 times as much mass. So the ratio of the volumes is $\dfrac{5.2}{1.6} \approx 3.3$ and not 5.2.
+
+## fy3-6-L3-04
+**Given:** water $m = 0.50\,\text{kg}$, $P = 200\,\text{W}$; from the table the temperatures $20.0\,{}^\circ\text{C}$ ($0\,\text{s}$), $25.6\,{}^\circ\text{C}$ ($60\,\text{s}$), $56.8\,{}^\circ\text{C}$ ($480\,\text{s}$) and $63.6\,{}^\circ\text{C}$ ($600\,\text{s}$); from the table $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$
+**Find:** a) $c$ from the first minute; b) the reason for the curvature of the graph; c) the mean power of the heat loss $P_\text{loss}$ in the interval $480\text{–}600\,\text{s}$ in watts
+**Principle:** The energy given by the resistor is $P t$. It is divided between the warming of the water $c m \Delta T$ and the heat loss to the surroundings, so $P t = c m \Delta T + P_\text{loss} t$. When the losses are negligible, all the energy heats the water.
+**Reading the graph:** In the first minute the temperature rises by $25.6\,{}^\circ\text{C} - 20.0\,{}^\circ\text{C} = 5.6\,\text{K}$. In the interval $480\text{–}600\,\text{s}$ the rise is $63.6\,{}^\circ\text{C} - 56.8\,{}^\circ\text{C} = 6.8\,\text{K}$ in $120\,\text{s}$.
+**Formula:** a) $c = \dfrac{P t}{m \Delta T}$; c) $P_\text{loss} = P - \dfrac{c m \Delta T}{t}$
+**Conversions:** The times are in seconds and the changes in temperature in kelvins, so no conversions are needed.
+**Substitution:**
+
+$$\begin{aligned} c &= \dfrac{200\,\text{W} \cdot 60\,\text{s}}{0.50\,\text{kg} \cdot 5.6\,\text{K}} \\ &= 4286\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \\ Q_\text{water} &= 4190 \cdot 0.50 \cdot 6.8\,\text{J} \\ &= 14\,246\,\text{J} \\ P_\text{loss} &= 200\,\text{W} - \dfrac{14\,246\,\text{J}}{120\,\text{s}} \\ &= 81.3\,\text{W} \end{aligned}$$
+**Answer:** $81\,\text{W}$, two significant figures as in the mass $0.50\,\text{kg}$. a) The first minute gives $c \approx 4300\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$, which is only about $2\,\%$ above the table value. b) The power is constant, but the rise in temperature falls from $5.6\,\text{K}$ to $3.4\,\text{K}$ per minute, because the warmer water and vessel give out more and more heat to the surroundings. At the start the losses are small, so $c$ should be fitted to the beginning of the graph, where the energy of the resistor heats almost entirely the water.
+**Reasonableness:** The loss power is about $41\,\%$ of the $200\,\text{W}$ power of the resistor, and the curve bending towards the end fits this. The difference in temperature from the room is on average $60.2\,{}^\circ\text{C} - 20.0\,{}^\circ\text{C} \approx 40\,\text{K}$ in the interval, so the loss is about $81\,\text{W} : 40\,\text{K} \approx 2\,\text{W/K}$, which is of the order of magnitude of an ordinary open vessel. At the start the loss is only about $2\,\tfrac{\text{W}}{\text{K}} \cdot 3\,\text{K} \approx 6\,\text{W}$, or about $3\,\%$ of the power, so the $c$ of part a) is only a few per cent too large.
+
+## fy3-6-L3-05
+**Given:** water $m = 0.300\,\text{kg}$, $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ from the table, room temperature $T_\text{room} = 20.0\,{}^\circ\text{C}$, length of the interval $10\,\text{min}$; temperatures $90.0$, $72.5$, $59.6$, $49.5$, $42.3$, $36.6$ and $32.5\,{}^\circ\text{C}$ at ten-minute intervals
+**Find:** a) the quantity of heat $Q$ and the power $P$ in each interval; b) the coefficient $k$ in each interval, the value of the first interval in $\tfrac{\text{W}}{\text{K}}$; c) an evaluation of the model
+**Principle:** The water cools and its phase does not change, so the quantity of heat given out in an interval is $Q = c m \,|\Delta T|$ and the mean power is $P = \dfrac{Q}{t}$. If the model $P = k\,(T_\text{mean} - T_\text{room})$ holds, the quotient $k = \dfrac{P}{T_\text{mean} - T_\text{room}}$ is the same in all intervals.
+**Formula:** $Q = c m \,|\Delta T|$, $P = \dfrac{Q}{t}$ and $k = \dfrac{P}{T_\text{mean} - T_\text{room}}$, where $T_\text{mean}$ is the mean of the initial and final temperatures of the interval
+**Conversions:** $t = 10\,\text{min} = 10 \cdot 60\,\text{s} = 600\,\text{s}$. The differences in temperature are the same in degrees Celsius and in kelvins.
+**Substitution:** In the first interval $|\Delta T| = 90.0\,{}^\circ\text{C} - 72.5\,{}^\circ\text{C} = 17.5\,\text{K}$ and $T_\text{mean} = 81.25\,{}^\circ\text{C}$, so
+
+$$\begin{aligned} Q &= 4190 \cdot 0.300 \cdot 17.5\,\text{J} \\ &= 21\,998\,\text{J} \\ P &= \dfrac{21\,998\,\text{J}}{600\,\text{s}} \\ &= 36.66\,\text{W} \\ k &= \dfrac{36.66\,\text{W}}{(81.25 - 20.0)\,\text{K}} \\ &= 0.599\,\tfrac{\text{W}}{\text{K}} \end{aligned}$$
+
+In the same way for the other intervals: the quantities of heat are $16.2$, $12.7$, $9.05$, $7.16$ and $5.15\,\text{kJ}$, the powers $27.0$, $21.2$, $15.1$, $11.9$ and $8.59\,\text{W}$ and the coefficients $0.587$, $0.612$, $0.582$, $0.614$ and $0.590\,\tfrac{\text{W}}{\text{K}}$.
+**Answer:** $0.60\,\tfrac{\text{W}}{\text{K}}$, three significant figures in the temperatures and the mass, but $k$ varies from interval to interval by about $\pm 3\,\%$, so the second figure is the last meaningful one. c) All six values of $k$ are between $0.58\ldots 0.61\,\tfrac{\text{W}}{\text{K}}$, that is, within $3\,\%$ of their mean, although the power falls from $36.7\,\text{W}$ to $8.59\,\text{W}$. The model fits the measurements well; the small differences come from the $0.1\,{}^\circ\text{C}$ precision of the temperature readings. The cooling slows down because the power given out is directly proportional to the difference in temperature from the room: as the temperature of the water falls, the difference becomes smaller and the power falls in the same ratio.
+**Reasonableness:** The ratio of the powers of the first and the last interval is $\dfrac{36.66}{8.59} \approx 4.3$ and the ratio of the differences in temperature $\dfrac{61.25}{14.55} \approx 4.2$, so the power really follows the difference in temperature.
