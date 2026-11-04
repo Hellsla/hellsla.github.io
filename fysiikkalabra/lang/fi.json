@@ -147,6 +147,7 @@
     "chapter_next": "Seuraava luku",
     "chapter_up": "Moduulin sivulle",
     "chapter_course": "Kaikki moduulin {{course}} luvut",
+    "exercise_word": "Tehtävä",
     "exercise_path": "Kaikkia tehtäviä ei tarvitse tehdä. Aloita <strong>ydintehtävistä</strong>: ne harjoittavat luvun pääasiat. Tason 1 ja 2 muut tehtävät ovat lisäharjoitusta, jos haluat varmuutta, ja tason 3 tehtävät haastavaa soveltamista.",
     "core_exercise": "Ydintehtävä",
     "level_kind_1": "perusharjoitus",
@@ -2445,6 +2446,7 @@
     "lead": "Näissä tehtävissä kukaan ei kerro, mitä kaavaa käyttää. Päätä itse, mitkä ilmiöt ja mallit tilanteeseen liittyvät, ratkaise tehtävä paperille ja perustele ratkaisusi, kuten ylioppilaskokeessa.",
     "howto": "Ratkaise ensin itse paperille tai tietokoneelle. Saat käyttää laskinta, taulukkokirjaa ja kuvaajaohjelmaa. Kirjoita näkyviin perustelut, kaavat, sijoitukset ja vastaukset yksiköineen.",
     "points": "{{n}} p",
+    "task_n": "tehtävä {{n}}",
     "task_points": {
       "one": "{{n}} piste",
       "other": "{{n}} pistettä"
