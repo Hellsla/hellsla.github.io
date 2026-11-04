@@ -334,7 +334,7 @@
         "model"
       ],
       "text": "Henkilöauton jarrutusmatka lasketaan mallilla, jossa pyörät lukkiutuvat ja renkaiden ja tien välillä vaikuttaa liikekitka. Alla on esimerkkiaineisto renkaiden ja tien välisistä liikekitkakertoimista.\n\nAuto jarruttaa nopeudesta $80\\,\\text{km/h}$ pysähdyksiin. Ilmanvastus jätetään huomiotta, ja kiihtyvyys on vakio.\n\na) Määritä jarrutusmatka kuivalla vaakasuoralla asfaltilla.\n\nb) Määritä jarrutusmatka märällä vaakasuoralla asfaltilla.\n\nc) Märkä tie viettää alamäkeen $6{,}0^\\circ$:n kulmassa. Määritä jarrutusmatka alamäessä ja perustele, miksi auton massaa ei tarvita.\n\nKirjoita vastauslaatikkoon kohdan c) jarrutusmatka.",
-      "answer": 73.4,
+      "answer": 73,
       "unit": "m",
       "tolerance": 0.03,
       "fbd": "equations",

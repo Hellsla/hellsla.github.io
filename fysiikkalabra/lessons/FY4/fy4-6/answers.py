@@ -42,7 +42,7 @@ a["fy4-6-L2-07"] = sf(math.tan(r((24 + 26 + 25 + 27 + 25) / 5)), 2)   # mu0 = ta
 # Level 3 additions
 v0 = 80 / 3.6                                                      # 22,2 m/s
 acs = g * (0.45 * math.cos(r(6)) - math.sin(r(6)))                 # wet road, 6° downhill: x: mu mg cos α − mg sin α = ma → 3,36 m/s²
-a["fy4-6-L3-04"] = sf(v0 ** 2 / (2 * acs), 3)                      # s = v0²/(2a) = 73,4 m (level dry 33,6 m, level wet 55,9 m)
+a["fy4-6-L3-04"] = sf(v0 ** 2 / (2 * acs), 2)                      # s = v0²/(2a) = 73 m (laskettu 73,4 m; level dry 33,6 m, level wet 55,9 m)
 a5 = g * (math.sin(r(30)) - 0.35 * math.cos(r(30)))                # N = mg cos α, not mg: a = 1,93 m/s²
 a["fy4-6-L3-05"] = sf(0.5 * a5 * 3.0 ** 2, 2)                      # from rest: s = a t²/2 = 8,69 m
 print(json.dumps(a))

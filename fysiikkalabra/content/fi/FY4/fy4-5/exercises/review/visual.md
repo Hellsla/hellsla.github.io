@@ -1,19 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 8a86a0c579dbd292
+CONTENT-HASH: e6361e81ae93222a
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fy4-5-L2-05 solution — task a) asks for the FBD, but the solution gives only prose (no figure); the voimakuvio syntax supports `komponentit` and angles (as in L3-04) — add a block. Same for L1-07 and L2-07, whose "Voimakuvio" paragraphs also describe an undrawn figure.
-- [Minor] fy4-5-L2-06 task text — straight quotes around the student's solution and around "potkun voiman" — use ”…”.
-- [Minor] fy4-5-L3-04 FBD — N and T_y arrows are about 15 px apart and the T_y label crowds N — nudge the labels or accept.
-- [Minor] fy4-5-L3-05 Järkevyys, last sentence — long and tangled ("kun kiihdytys- ja hidastusvaihe yhdessä vastaavat tasaista nopeutta ajan 2,0 s …") — write  = v_\text{max}\cdot 6{,}0\,\text{s} = 14{,}4\,\text{m}$ with one sentence: kiihdytys- ja hidastusvaihe yhdessä kattavat saman matkan kuin tasainen nopeus ajassa {,}0\,\text{s}$.
+- [Minor] fy4-5-L1-07, L2-05 and L2-07 — solutions still describe a Voimakuvio in prose without drawing it (L2-05 a) asks the student to draw); the syntax supports it (`komponentit`, angles).
 
 ## Checked
-- 1280 px captures: L1 parts 7-9 (L1-06 MC, L1-07, L1-08 MC), L2 parts 6-11 (L2-05, L2-06 with FBD, L2-07 with table), L3 parts 6-8 (L3-04 with FBD and aligned blocks, L3-05 table, FBD and Sijoitus).
-- Formulas, tables, answer chips, FBD colours and labels render correctly with no clipping.
-- Captures: only 1280 px solution-open parts exist for exercises (no 360/390 exercise-body captures; stage-exercises-390 shows only the stage header), so phone rendering rests on the passing layout 360/768/1280 checks.
+- L2 part 8 (L2-05 Vastaus, L2-06 with ”…” quotes now), L1 part 9 (L1-08 MC with the reworded options and feedback).
+- No clipping; the MC feedback boxes and the formulas are fine. Straight quotes are fixed.
+- Round 2 delta. Captures are 1280 px only (no 360/390 exercise-body captures), so phone rendering rests on the passing layout checks.
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 4 · accessibility 4
