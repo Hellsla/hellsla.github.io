@@ -443,6 +443,11 @@ def draw(spec, fid, _frame=None):
         least = min([x for x in parts if x > 1e-9 * big] or [big])
         scale = max(scale, min(CAP, LEAST * big / least) / big)
         if least * scale < LEAST - 1: small_body = True                                    # and a smaller rectangle, so the arrows outgrow it
+    if not two:                                                                    # a horizontal arrow stays inside the 600-wide figure: the
+        hor = [size * abs(math.cos(math.radians(direction(deg)))) for b in bodies for sym, size, deg, *_ in b["forces"]   # body sits in
+               if deg is not None and kind_of(sym) not in ("gravity", "normal")]   # the middle, so each side holds (600 - W) / 2
+        room = (600 - 120) / 2 - 8                                                 # less a margin (horse and cart, 2026-11-04)
+        if hor and max(hor) * hz[True] * scale > room: scale = room / (max(hor) * hz[True])
     shown = lambda size, horiz=False: floor(size * hz[horiz])
     for i, b in enumerate(bodies):
         _body_size()
