@@ -73,7 +73,7 @@
   {
    "id": "fy1-7-L1-07",
    "level": 1,
-   "text": "Ruokaöljyä kaadetaan varovasti vesilasiin. Öljyn tiheys on $920\\,\\text{kg/m}^3$ ja veden $1000\\,\\text{kg/m}^3$. Mitä lasissa tapahtuu?",
+   "text": "Ruokaöljyä kaadetaan varovasti vesilasiin. Öljyn tiheys on $920\\,\\text{kg/m}^3$ ja veden $1000\\,\\text{kg/m}^3$. Öljy ei sekoitu veteen. Mitä lasissa tapahtuu?",
    "kind": [
     "concept"
    ],
@@ -92,23 +92,23 @@
     },
     {
      "text": "Öljy ja vesi sekoittuvat tasaisesti, koska ne ovat molemmat nesteitä.",
-     "feedback": "Nesteiden tiheys ei pakota niitä sekoittumaan. Tässä öljy on tiheydeltään pienempää, joten se asettuu veden päälle omaksi kerrokseksi."
+     "feedback": "Öljy ja vesi eivät sekoitu toisiinsa, joten ne jäävät eri kerroksiksi; tiheys ratkaisee, kumpi kerros on päällä."
     },
     {
      "text": "Öljy vajoaa pohjalle, jos öljyä on lasissa enemmän kuin vettä.",
-     "feedback": "Öljyn ja veden määrä ei vaikuta siihen, kumpi on päällä. Tiheys on aineen ominaisuus, ja pienempi tiheys tarkoittaa aina ylempää kerrosta."
+     "feedback": "Öljyn ja veden määrä ei vaikuta siihen, kumpi on päällä. Tiheys on aineen ominaisuus, ja pienempi tiheys tarkoittaa ylempää kerrosta, kun nesteet eivät sekoitu."
     }
    ]
   },
   {
    "id": "fy1-7-L1-08",
    "level": 1,
-   "text": "Onkikoukun lyijypainon massa on $56{,}5\\,\\text{g}$. Lyijyn tiheys on $11{,}3\\,\\text{g/cm}^3$. Kuinka suuri on painon tilavuus? Anna vastaus kuutiosenttimetreinä.",
+   "text": "Onkikoukun lyijypainon tilavuus on $5{,}00\\,\\text{cm}^3$. Lyijyn tiheys on $11{,}3\\,\\text{g/cm}^3$. Kuinka suuri on painon massa? Anna vastaus grammoina.",
    "kind": [
     "model"
    ],
-   "answer": 5.0,
-   "unit": "cm³",
+   "answer": 56.5,
+   "unit": "g",
    "tolerance": 0.02
   }
  ],
@@ -270,38 +270,20 @@
   {
    "id": "fy1-7-L3-04",
    "level": 3,
-   "text": "Oppilas määrittää metallikappaleen tiheyden vedensiirtomenetelmällä. Kappaleen pintaan jää upotettaessa ilmakupla, jota oppilas ei huomaa. Mittalasin lukema nousee kuplan takia hieman enemmän kuin pelkän kappaleen tilavuus. Miten tämä vaikuttaa oppilaan laskemaan tiheyteen?",
+   "text": "Oppilas määrittää lyijyisen kappaleen tiheyden vedensiirtomenetelmällä. Kappaleen massa on $113\\,\\text{g}$. Mittalasin lukema ennen upotusta on $50{,}0\\,\\text{ml}$ ja upotuksen jälkeen $62{,}0\\,\\text{ml}$. Jälkeenpäin oppilas huomaa, että kappaleen pintaan oli jäänyt ilmakupla, jonka tilavuus on $2{,}0\\,\\text{ml}$. Mikä on kappaleen todellinen tiheys yksikössä $\\text{g/cm}^3$? Laske myös oppilaan alun perin saama tiheys ja sen prosenttivirhe, päättele taulukon perusteella, mitä metallia kumpikin tiheys antaisi ymmärtää kappaleen olevan, ja kerro, miten kupla olisi voitu poistaa tai havaita.",
    "kind": [
+    "data",
     "error",
     "reasoning"
    ],
-   "answer": "Laskettu tiheys on liian pieni, koska tilavuus tulee mitattua liian suureksi.",
-   "unit": "",
-   "tolerance": 0.02,
-   "choices": [
-    {
-     "text": "Laskettu tiheys on liian pieni, koska tilavuus tulee mitattua liian suureksi.",
-     "feedback": "Oikein: kupla syrjäyttää vettä kappaleen mukana, joten lukemien erotus $V_2 - V_1$ on suurempi kuin kappaleen oma tilavuus. Massa mitataan oikein, joten $\\rho = m : V$ tulee liian pieneksi. Kuplan voi poistaa napauttamalla kappaletta ja toistamalla mittaus.",
-     "correct": true
-    },
-    {
-     "text": "Laskettu tiheys on liian suuri, koska kupla lisää kappaleen massaa.",
-     "feedback": "Ilman massa on mitätön, eikä massa ole tässä virheen lähde: se punnitaan erikseen vaa'alla. Virhe on tilavuudessa, ja liian suuri tilavuus tekee tiheydestä pienemmän, ei suuremman."
-    },
-    {
-     "text": "Tulokseen ei tule virhettä, koska ilma ei ole ainetta.",
-     "feedback": "Ilmakupla vie tilaa ja syrjäyttää vettä, vaikka sen massa on mitätön. Siksi veden pinta nousee liikaa ja tilavuuden lukema on liian suuri."
-    },
-    {
-     "text": "Virheen suunta ei ole tiedossa, koska se riippuu kuplan koosta.",
-     "feedback": "Kuplan koko vaikuttaa virheen suuruuteen, mutta ei suuntaan. Kupla kasvattaa aina syrjäytettyä tilavuutta, joten tiheys tulee aina liian pieneksi."
-    }
-   ]
+   "answer": 11.3,
+   "unit": "g/cm³",
+   "tolerance": 0.02
   },
   {
    "id": "fy1-7-L3-05",
    "level": 3,
-   "text": "Seoskappale on valettu kuparista ja alumiinista. Sen tilavuus on $100\\,\\text{cm}^3$ ja massa $520\\,\\text{g}$. Tilavuudet oletetaan yhteenlaskettaviksi. Kuinka monta kuutiosenttimetriä kuparia kappaleessa on? Käytä oppitunnin taulukon tiheyksiä. Kirjoita ratkaisussa ensin kaksi yhtälöä, joissa tuntemattomina ovat kuparin tilavuus $V_\\text{Cu}$ ja alumiinin tilavuus $V_\\text{Al}$.",
+   "text": "Seoskappale on valettu kuparista ja alumiinista. Sen tilavuus on $100\\,\\text{cm}^3$ ja massa $520\\,\\text{g}$. Tilavuudet oletetaan yhteenlaskettaviksi. Kuinka monta kuutiosenttimetriä kuparia kappaleessa on? Käytä oppitunnin taulukon tiheyksiä. Perustele myös, kumpaa metallia kappaleessa on enemmän tilavuuden ja kumpaa massan mukaan.",
    "kind": [
     "model",
     "reasoning"

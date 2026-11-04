@@ -43,7 +43,7 @@
     {
       "id": "fy1-8-L1-06",
       "level": 1,
-      "text": "Oppilas tutkii, miten veden lämpötila vaikuttaa siihen, kuinka kauan sokeripala liukenee. Hän liuottaa saman kokoisia sokeripaloja samaan vesimäärään eri lämpötiloissa ja mittaa liukenemisajan. Mikä on tutkimuksen riippumaton muuttuja?",
+      "text": "Oppilas tutkii, miten veden lämpötila vaikuttaa siihen, kuinka kauan sokeripala liukenee. Hän liuottaa saman kokoisia sokeripaloja samaan vesimäärään eri lämpötiloissa ja mittaa liukenemisajan. Mikä on tutkimuksen riippumaton (muutettava) muuttuja?",
       "kind": [
         "concept"
       ],
@@ -103,16 +103,16 @@
     {
       "id": "fy1-8-L1-08",
       "level": 1,
-      "text": "Työselostuksen kirjoittaja luettelee, mitä kukin lause kuuluu kertoa. Mikä seuraavista lauseista kuuluu selostuksen tulososioon eikä pohdintaan?",
+      "text": "Työselostuksen kirjoittaja miettii, mihin osioon kukin lause kuuluu. Mikä seuraavista lauseista kuuluu selostuksen tulososioon eikä pohdintaan?",
       "kind": [
         "concept"
       ],
-      "answer": "Kolmen mittauksen keskiarvo oli $12{,}4\\,\\text{s}$ ja puolet vaihteluvälistä $0{,}2\\,\\text{s}$.",
+      "answer": "Viiden mittauksen keskiarvo oli $12{,}4\\,\\text{s}$ ja puolet vaihteluvälistä $0{,}2\\,\\text{s}$.",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
         {
-          "text": "Kolmen mittauksen keskiarvo oli $12{,}4\\,\\text{s}$ ja puolet vaihteluvälistä $0{,}2\\,\\text{s}$.",
+          "text": "Viiden mittauksen keskiarvo oli $12{,}4\\,\\text{s}$ ja puolet vaihteluvälistä $0{,}2\\,\\text{s}$.",
           "feedback": "Oikein: tuloksissa esitetään mitatut ja lasketut arvot sellaisinaan, esimerkiksi taulukko, keskiarvo ja epävarmuus. Tulkinta jätetään pohdintaan.",
           "correct": true
         },
@@ -167,7 +167,7 @@
     {
       "id": "fy1-8-L2-05",
       "level": 2,
-      "text": "Oppilas tutkii, vierivätkö kevyt ($50\\,\\text{g}$) ja raskas ($200\\,\\text{g}$) pallo saman rinteen alas yhtä nopeasti. Hän muuttaa vain massaa ja mittaa kummallakin pallolla viisi kulkuaikaa käsikellolla. Hän päättelee: \"Raskas pallo on nopeampi, koska sen keskimääräinen aika on lyhyempi.\" Laske kummankin pallon aikojen keskiarvo ja epävarmuus (puolet vaihteluvälistä). Kuinka monta prosenttia keskiarvojen erotus on epävarmuudesta?",
+      "text": "Oppilas tutkii, vierivätkö kevyt ($50\\,\\text{g}$) ja raskas ($200\\,\\text{g}$) pallo saman rinteen alas yhtä nopeasti. Hän muuttaa vain massaa ja mittaa kummallakin pallolla viisi kulkuaikaa käsikellolla. Hän päättelee: ”Raskas pallo on nopeampi, koska sen keskimääräinen aika on lyhyempi.” Laske kummankin pallon aikojen keskiarvo ja epävarmuus (puolet vaihteluvälistä). Kuinka monta prosenttia keskiarvojen erotus on epävarmuudesta? Päättele lisäksi, tukeeko aineisto oppilaan päätelmää.",
       "kind": [
         "data",
         "error"
@@ -214,7 +214,7 @@
     {
       "id": "fy1-8-L2-06",
       "level": 2,
-      "text": "Oppilas tutkii, vaikuttaako kärryn massa siihen, kuinka nopeasti kärry vierii rampin alas. Hänen suunnitelmansa on: \"Päästän kevyen kärryn loivaa ramppia alas ja raskaan kärryn jyrkkää ramppia alas ja vertaan aikoja.\" Mikä muutos korjaa suunnitelman?",
+      "text": "Oppilas tutkii, vaikuttaako kärryn massa siihen, kuinka nopeasti kärry vierii rampin alas. Hänen suunnitelmansa on: ”Päästän kevyen kärryn loivaa ramppia alas ja raskaan kärryn jyrkkää ramppia alas ja vertaan aikoja.” Mikä muutos korjaa suunnitelman?",
       "kind": [
         "error",
         "experiment"
@@ -245,7 +245,7 @@
     {
       "id": "fy1-8-L2-07",
       "level": 2,
-      "text": "Oppilas mittaa leluauton paikan eri ajanhetkillä (taulukko). Hän piirtää kuvaajan, jossa matka $s$ on vaaka-akselilla ja aika $t$ pystyakselilla, eikä akseleille ole merkitty suureita eikä yksiköitä. Hän lukee sovitetun suoran kulmakertoimeksi $3{,}3$ ja ilmoittaa sen auton nopeudeksi. Sovitettu suora kulkee pisteiden $(2{,}0\\,\\text{s};\\,0{,}60\\,\\text{m})$ ja $(8{,}0\\,\\text{s};\\,2{,}40\\,\\text{m})$ kautta. Mikä on auton nopeus, kun se luetaan oikein? Vastaa yksikössä m/s.",
+      "text": "Oppilas mittaa leluauton paikan eri ajanhetkillä (taulukko). Hän piirtää kuvaajan, jossa matka $s$ on vaaka-akselilla ja aika $t$ pystyakselilla, eikä akseleille ole merkitty suureita eikä yksiköitä. Hän lukee sovitetun suoran kulmakertoimeksi $3{,}3$ ja ilmoittaa sen auton nopeudeksi. Piirrä pisteisiin sovitettu suora oikein päin ($t$ vaaka-akselilla) ja lue sen kulmakerroin kahdesta suoran pisteestä, jotka ovat selvästi erillään. Mikä on auton nopeus? Vastaa yksikössä m/s ja selitä, mitä oppilaan luku $3{,}3$ oikeasti kuvaa.",
       "kind": [
         "data",
         "graph",
@@ -313,45 +313,77 @@
     {
       "id": "fy1-8-L3-04",
       "level": 3,
-      "text": "Oppilas on tutkinut kokeellisesti, vaikuttaako pallon massa vierimisaikaan. Hänen työselostuksensa pohdinta kuuluu kokonaan: \"Koe onnistui hyvin. Tulokset olivat hyviä ja virheitä oli vähän. Hypoteesi oli oikein.\" Mikä muutos parantaa pohdintaa eniten?",
+      "text": "Oppilas tutki, vaikuttaako pallon massa vierimisaikaan (vrt. kevyen ja raskaan pallon mittaukset). Viiden toiston tulokset ovat keskiarvoina $\\bar{t}_{50} = 3{,}12\\,\\text{s} \\pm 0{,}04\\,\\text{s}$ ja $\\bar{t}_{200} = 3{,}08\\,\\text{s} \\pm 0{,}04\\,\\text{s}$ (epävarmuus on puolet vaihteluvälistä). Käsikellon ajanoton epävarmuudeksi arvioitiin yksittäisessä mittauksessa $0{,}15\\,\\text{s}$. Pohdinnassa lukee: ”Koe onnistui hyvin. Raskaan pallon keskiarvo on pienempi, joten hypoteesi oli oikein. Virheitä oli vähän.” Kuinka monta kertaa käsiajanoton epävarmuus $0{,}15\\,\\text{s}$ on keskiarvojen erotus? Perustele sen avulla ja tulosten väleillä, mitkä pohdinnan väitteet aineisto tukee ja mitkä ei, ja kirjoita pohdintaan kaksi parempaa lausetta.",
       "kind": [
+        "data",
         "reasoning",
         "error"
       ],
-      "answer": "Nimetään tärkeimmät epävarmuuden lähteet, esimerkiksi käsikellon reaktioaika, arvioidaan niiden suuruus ja ehdotetaan jatkotutkimus, joka pienentää niitä.",
+      "answer": 3.75,
       "unit": "",
       "tolerance": 0.02,
-      "choices": [
-        {
-          "text": "Nimetään tärkeimmät epävarmuuden lähteet, esimerkiksi käsikellon reaktioaika, arvioidaan niiden suuruus ja ehdotetaan jatkotutkimus, joka pienentää niitä.",
-          "feedback": "Oikein: hyvä pohdinta perustelee johtopäätöksen mittausten luotettavuudella, nimeää virhelähteet ja ehdottaa, miten niitä voisi vähentää tai mitä kannattaisi tutkia seuraavaksi.",
-          "correct": true
-        },
-        {
-          "text": "Kirjoitetaan pohdintaan uudelleen kaikki mittausarvot ja keskiarvot.",
-          "feedback": "Mittausarvot ja keskiarvot kuuluvat tuloksiin. Niiden toistaminen pohdinnassa ei arvioi luotettavuutta eikä kerro, mitä tuloksista voidaan päätellä."
-        },
-        {
-          "text": "Poistetaan mittaustulos, joka poikkesi muista, jotta koe näyttää onnistuneen.",
-          "feedback": "Tulosta ei poisteta pelkästään siksi, että se poikkeaa muista. Poikkeava tulos tarkistetaan, ja poisto on perusteltava ja dokumentoitava."
-        },
-        {
-          "text": "Lisätään lause \"hypoteesi on varmasti oikein\", koska tulokset olivat hyviä.",
-          "feedback": "Koe ei todista hypoteesia varmaksi. Johtopäätös on perusteltava mittaustuloksilla ja niiden epävarmuudella, ja siihen jää aina epävarmuutta."
-        }
-      ]
+      "data": {
+        "caption": "Kevyen ja raskaan pallon kulkuajan keskiarvot",
+        "columns": [
+          "Pallo",
+          "$\\bar{t}\\,(\\text{s})$",
+          "$\\Delta t\\,(\\text{s})$"
+        ],
+        "rows": [
+          [
+            "$50\\,\\text{g}$",
+            "3.12",
+            "0.04"
+          ],
+          [
+            "$200\\,\\text{g}$",
+            "3.08",
+            "0.04"
+          ]
+        ]
+      }
     },
     {
       "id": "fy1-8-L3-05",
       "level": 3,
-      "text": "Oppilas suunnittelee tutkimuksen kysymykseen \"Riippuuko veden jäähtymisnopeus astian materiaalista?\" Hän kaataa yhtä monta desilitraa $80\\,{}^\\circ\\text{C}$ vettä kolmeen samankokoiseen astiaan (lasi, metalli, muovi) ja lukee lämpötilan joka minuutti. Riippumaton muuttuja on astian materiaali ja riippuva muuttuja lämpötilan lasku. Lämpötilan laskun $\\Delta T_\\text{lasku}$ epävarmuudeksi arvioidaan $1{,}0\\,\\text{K}$, ja laskun suhteellisen epävarmuuden halutaan olevan enintään $5{,}0\\,\\%$. Oleta karkeasti, että vesi jäähtyy mittauksen ajan alun nopeudella $2{,}0\\,\\text{K/min}$. Kuinka pitkän ajan vähintään kestävän mittausjakson oppilaan pitää suunnitella?",
+      "text": "Oppilas suunnittelee tutkimuksen kysymykseen ”Riippuuko veden jäähtymisnopeus astian materiaalista?” Hän kaataa yhtä monta desilitraa $80\\,{}^\\circ\\text{C}$ vettä kolmeen samankokoiseen astiaan (lasi, metalli, muovi) ja lukee lämpötilan joka minuutti. Riippumaton (muutettava) muuttuja on astian materiaali ja riippuva muuttuja lämpötilan lasku. Esikokeen lasiastian lämpötilat ovat taulukossa. Arvioi alun jäähtymisnopeus taulukon kolmen ensimmäisen minuutin muutoksesta. Lämpötilan laskun $\\Delta T_\\text{lasku}$ epävarmuudeksi arvioidaan $1{,}0\\,\\text{K}$, ja laskun suhteellisen epävarmuuden halutaan olevan enintään $5{,}0\\,\\%$. Oleta, että hitaimmin jäähtyvässäkin astiassa alun nopeus on suunnilleen sama kuin lasiastiassa. Kuinka pitkä mittausjakso vähintään pitää suunnitella? Nimeä lisäksi kolme vakioitavaa suuretta perusteluineen ja kerro, miten kolmen astian jäähtymiskäyriä verrataan.",
       "kind": [
+        "data",
         "model",
         "experiment"
       ],
       "answer": 10,
       "unit": "min",
-      "tolerance": 0.02
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Veden lämpötila lasiastiassa",
+        "columns": [
+          "$t\\,(\\text{min})$",
+          "$T\\,({}^\\circ\\text{C})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "80.0"
+          ],
+          [
+            "1.0",
+            "77.9"
+          ],
+          [
+            "2.0",
+            "76.0"
+          ],
+          [
+            "3.0",
+            "74.0"
+          ],
+          [
+            "4.0",
+            "72.2"
+          ]
+        ]
+      }
     }
   ]
 }

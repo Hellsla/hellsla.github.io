@@ -36,5 +36,6 @@ a["fy1-6-L2-06"] = b6 / k6                           # t0 = b / k = 1,97 / 9,80 
 v1, v2 = 0.050 / 0.0250, 0.050 / 0.0111              # light gates, L = 5,0 cm: v1 = 2,00 m/s, v2 = 4,505 m/s
 a["fy1-6-L2-07"] = (v2 - v1) / (0.575 - 0.320)       # g = Δv / Δt = 2,505 / 0,255 = 9,82 m/s²
 a["fy1-6-L3-04"] = (g * 0.40 - 1.49) / (g * 0.40) * 100   # filter paper at 0,40 s: model 3,924 m/s vs 1,49 m/s -> 62,0 %
-a["fy1-6-L3-05"] = (14.7 - 4.9) / (1.65 - 0.65)      # slope of the two readings: 9,8 m/s² (the single ratio 14,7/1,65 = 8,9 is too small because the clock started 0,15 s early)
+g5 = (24.5 - 4.9) / (2.65 - 0.65)                    # slope of the readings: 9,8 m/s² (the ratios v/t = 7,5; 8,9; 9,2 are too small because the clock started early)
+a["fy1-6-L3-05"] = 0.65 - 4.9 / g5                   # clock offset t0 = t − v/g = 0,65 s − 0,50 s = 0,15 s
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

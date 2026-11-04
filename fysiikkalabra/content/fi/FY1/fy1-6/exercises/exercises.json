@@ -105,7 +105,7 @@
       "level": 1,
       "text": "Putoamiskiihtyvyys on Maan pinnalla $9{,}81\\,\\text{m/s}^2$. Vapaasti putoavan kappaleen nopeus kasvaa siis joka sekunti $9{,}81\\,\\text{m/s}$. Kuinka monta $\\text{km/h}$ nopeus kasvaa joka sekunti?",
       "kind": [
-        "concept"
+        "model"
       ],
       "answer": 35.316,
       "unit": "km/h",
@@ -240,10 +240,10 @@
     {
       "id": "fy1-6-L2-07",
       "level": 2,
-      "text": "Oppilaat suunnittelevat kokeen, jossa putoamiskiihtyvyys mitataan kahdella valoportilla, jotka ovat pystysuunnassa toistensa alapuolella. Levosta pudotetun $5{,}0\\,\\text{cm}$ pitkän kappaleen nopeus saadaan kummassakin portissa kappaleen pituudesta ja valon katkeamisajasta $\\Delta t_\\text{valo}$. Pudotushetkeä ei tunneta tarkasti, mutta kello mittaa hetket $t$, jolloin kappale saapuu portteihin. Laske putoamiskiihtyvyys taulukon mittauksista. Selitä, miksi $g$ saadaan kahden portin nopeuksista, vaikka pudotushetki ei ole tiedossa.",
+      "text": "Oppilaat mittaavat putoamiskiihtyvyyden kahdella valoportilla, jotka ovat pystysuunnassa toistensa alapuolella. Levosta pudotetun $5{,}0\\,\\text{cm}$ pitkän kappaleen nopeus saadaan kummassakin portissa kappaleen pituudesta ja valon katkeamisajasta $\\Delta t_\\text{valo}$. Pudotushetkeä ei tunneta tarkasti, mutta kello mittaa hetket $t$, jolloin valon katkos on puolivälissä, eli kappaleen keskikohta on portin kohdalla. Laske putoamiskiihtyvyys taulukon mittauksista. Selitä, miksi $g$ saadaan kahden portin nopeuksista, vaikka pudotushetki ei ole tiedossa.",
       "kind": [
-        "experiment",
-        "data"
+        "data",
+        "model"
       ],
       "answer": 9.82,
       "unit": "m/s²",
@@ -356,14 +356,36 @@
     {
       "id": "fy1-6-L3-05",
       "level": 3,
-      "text": "Oppilas mittasi putoamiskiihtyvyyden pudottamalla kappaleen levosta ja mittaamalla sen nopeuden. Hän käynnisti kellon vahingossa hieman ennen pudotusta. Kellon lukema oli $0{,}65\\,\\text{s}$, kun nopeus oli $4{,}9\\,\\text{m/s}$, ja $1{,}65\\,\\text{s}$, kun nopeus oli $14{,}7\\,\\text{m/s}$. Oppilas laski toisesta mittauksesta: \"$g = \\dfrac{v}{t} = \\dfrac{14{,}7\\,\\text{m/s}}{1{,}65\\,\\text{s}} = 8{,}9\\,\\text{m/s}^2$.\" Etsi oppilaan virhe ja selitä, miksi se antaa liian pienen $g$:n. Laske sitten putoamiskiihtyvyys niin, ettei kellon liian aikainen käynnistys vaikuta tulokseen.",
+      "text": "Oppilas pudotti kappaleen levosta ja mittasi sen nopeuden kolmella kellon lukemalla $t$. Kello oli käynnissä jo ennen pudotusta, mutta oppilas ei tiennyt, kuinka kauan. Oppilas laski jokaisesta rivistä osamäärän $\\dfrac{v}{t}$ ja sai arvot $7{,}5\\,\\text{m/s}^2$, $8{,}9\\,\\text{m/s}^2$ ja $9{,}2\\,\\text{m/s}^2$. Putoamiskiihtyvyys on kuitenkin vakio. Selitä, miksi osamäärät eroavat toisistaan ja miksi ne ovat liian pieniä. Laske $g$ toisella tavalla niin, että kellon nollakohta ei vaikuta tulokseen, ja perustele menetelmä. Kuinka monta sekuntia ennen pudotusta kello oli käynnistetty?",
       "kind": [
-        "error",
-        "reasoning"
+        "data",
+        "reasoning",
+        "model"
       ],
-      "answer": 9.8,
-      "unit": "m/s²",
-      "tolerance": 0.02
+      "answer": 0.15,
+      "unit": "s",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Putoavan kappaleen nopeus kellon lukemilla",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$v\\,(\\text{m/s})$"
+        ],
+        "rows": [
+          [
+            "0.65",
+            "4.9"
+          ],
+          [
+            "1.65",
+            "14.7"
+          ],
+          [
+            "2.65",
+            "24.5"
+          ]
+        ]
+      }
     }
   ]
 }
