@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: a59616042b279e74
+CONTENT-HASH: 65587e36f7083d7a
 
 ## Blocking
 (none)
@@ -13,3 +13,4 @@ CONTENT-HASH: a59616042b279e74
 - Lesson prose read: new terms explained at first use (positiivinen ioni, viritys, DNA, radikaali, kantama); sentences short; worked example staged in seven steps.
 - lab-1280-1 and contact-1: sim fully Finnish (GM-putki, ei estettä, Lähde, Este).
 - Predictions refutable by the sim; the opening question is answered.
+- Re-review after change: graph fy812-tu d-axis labels every 6 mm (grid unchanged); readable, no wording or content change; earlier verdict stands.

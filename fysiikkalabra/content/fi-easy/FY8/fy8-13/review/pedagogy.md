@@ -15,3 +15,4 @@ CONTENT-HASH: f51c4d028372b9fc
 - meta.json key_concepts: 5 kpl, selitykset 10–17 sanaa, ei numeroita eikä $-merkkejä: OK.
 - Inquiry-polku, ennusteet ja kokeet vastaavat en-versiota (kokeet voivat kumota ennusteet 1 ja 2); aineisto ja simulaatio suomeksi.
 - Kuvat: contact-1, fig-12-390; päätelmä- ja kriteeritekstit luettu.
+- Re-review after change: fi version unchanged by this edit; no content change; earlier verdict stands.

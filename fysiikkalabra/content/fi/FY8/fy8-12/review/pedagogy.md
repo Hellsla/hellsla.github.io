@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 47e5964342e7a136
+CONTENT-HASH: 4706a24b50cab984
 
 ## Blocking
 (none)
@@ -14,3 +14,4 @@ CONTENT-HASH: 47e5964342e7a136
 - Round-1 changes verified: ennuste-2 now says "kerros, jonka paksuus on puoliintumispaksuus"; misconception option "kaksi kolmasosaa" has feedback that two plates cannot let more through; sim model states air/window loss for alpha.
 - Opened contact-1 and sim-390: hero, energy scale, tracks, penetration, GM tube legible; sim controls (source, barrier, plates, speed) and readout fit 390 px.
 - Finnish and glossary terms correct.
+- Re-review after change: graph fy812-tu d-axis labels every 6 mm (grid unchanged); readable, no wording or content change; earlier verdict stands.

@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: b300ea6859d47d11
+CONTENT-HASH: cd31aa3ee39413c5
 
 ## Blocking
 (none)
@@ -13,4 +13,4 @@ CONTENT-HASH: b300ea6859d47d11
 ## Checked
 - Packet (lesson, inquiry, sim spec) read; delta: figure labels, experiment panel, sim legend, intensity definition.
 - Captures: fig-4, fig-6, fig-10, sim-390.
-- Hash at start and end: b300ea6859d47d11.
+- Re-review after change: radiotherapy figure labels shifted 12 px left, still fully visible and readable; hash unchanged between start and end.

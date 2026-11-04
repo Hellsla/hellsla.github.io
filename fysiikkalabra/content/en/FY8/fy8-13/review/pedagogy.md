@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 80734f621c253d2d
+CONTENT-HASH: 94744182f94ef619
 
 ## Blocking
 
@@ -15,3 +15,4 @@ CONTENT-HASH: 80734f621c253d2d
 - Captures opened: contact-1, contact-2, contact-4, lab-1280-1, intro-1280, fig-6/8/10/12 at 390.
 - Experiments can refute predictions 1 and 2 (model values 10.0 and 10.0 µSv/h); parameters locked per experiment; predictions not disclosed before action.
 - Workload fits one lesson; the sim canvas and readout are English.
+- Re-review after change: en bar label "other natural" (was "other natural radiation") is shorter and still clear beside the other bars; no content change; earlier verdict stands.

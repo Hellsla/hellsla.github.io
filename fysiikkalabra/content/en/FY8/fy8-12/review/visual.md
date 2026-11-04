@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 2e8775fbbc612d04
+CONTENT-HASH: 3f119d54f341f3cc
 
 ## Blocking
 (none)
@@ -9,10 +9,10 @@ CONTENT-HASH: 2e8775fbbc612d04
 - [Minor] fig 6 (GM tube) 'wire (+)' label overlaps the wire end slightly.
 
 ## Checked
-- Contact sheets 1 and 2 (hero, figures 1-8, graphs, worked example, Predict, Investigate).
-- sim-390 and lab-1280-1 at full size: 'GM tube', 'γ source', 'no barrier', 'Plates n = 0, thickness d = 0 mm' English; GM-putki fix confirmed; nothing clipped.
-- Figures: photon-energy scale (non-ionising/ionising, visible light, X-ray, γ), tissue bands, barrier figure (paper, aluminium, lead), GM tube (window, metal wall, gas, counter, wire), attenuation graphs: all labels English, axes with units.
-- No Finnish found in captures.
+- Delta: graph fy812-tu (Tarkista 2, fig-14-390, stamp matches hash). d axis now labelled 0, 6, 12 … 48 mm: labels clearly separate at 390 px, none overlapping, 'd (mm)' and the axis title clear of the last tick, y labels unchanged, curve and the 800 start marker clear of all labels.
+- 12 mm half-value crossing still readable: 12 is a labelled tick and the gridlines (every 2 mm) remain.
+- Not re-opened: other figures and text unchanged by the diff.
+- Hash at start and end: 3f119d54f341f3cc.
 
 ## Scores
 illustrations 4 · typography 5 · English 5 · accessibility 4

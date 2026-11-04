@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: b300ea6859d47d11
+CONTENT-HASH: cd31aa3ee39413c5
 
 ## Blocking
 
@@ -10,8 +10,7 @@ CONTENT-HASH: b300ea6859d47d11
 - lesson.md:182 "kalsiumatomeissa on paljon elektroneja" — the main cause is the larger atomic number. Carried over.
 
 ## Checked
-- Round-1 blocker fixed: lesson.md:395 now defines intensity as "teho pinta-alaa kohti: … kuinka paljon säteilyenergiaa osuu sekunnissa yhtä pinta-alayksikköä kohti". This is a rate per area, as in fi-easy fy8-4 and fy8-12, and the attenuation law I = I₀(½)^n is a ratio, so I₀ cancels as the worked example says.
-- figures.py label moves ("luu", "säätö") change no physics; the luu label still points at a bone.
-- sim "ei kuvaa" now comes from lang/fi-easy.json ei_kuvaa_kanvas with the same text; shown only in single-photon mode.
-- Worked example unchanged: 2^1,845 = 3,59 → 3,6; two significant figures from the data.
+- Only change since the passed version: the shared figures.py sadehoito() moves "kasvain"/"2,0 Gy" and "terve kudos"/"0,40 Gy" 12 px left (x 452 → 440) and the leader ends 446 → 434; the redrawn SVG in lesson.md changes only these x values. Text, colours and numbers unchanged.
+- Leaders start where they did (tumour edge; a point on the downward beam), so each label still names the right part; the figure still shows 2,0 Gy at the tumour and 0,40 Gy on one beam, as the aria-label and text say.
+- Rest of the lesson unchanged and as approved (round-1 intensity fix, worked example 3,59 → 3,6, sim "ei kuvaa" only in single-photon mode).
 - Hash unchanged between start and end.

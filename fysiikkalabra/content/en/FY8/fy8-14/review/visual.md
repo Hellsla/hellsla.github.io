@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 1bb1eedd78f766c7
+CONTENT-HASH: 5c2c419f4a60d921
 
 ## Blocking
 (none)
@@ -10,9 +10,9 @@ CONTENT-HASH: 1bb1eedd78f766c7
 - [Minor] sim canvas "-15" tick collides with the detector ring; fig-12 "soft tissue" label on the curve.
 
 ## Checked
-- Captures opened: fig-4 (bone), fig-6 (source on line), fig-10 (control), sim-390, lab-1280-1 (stamp matches hash).
-- Fixed: fig-4 "bone" fully visible; fig-6 "source on line" fits; fig-10 "control" fits (tight); en panel Finnish removed; sim legend is one line, no duplicate disclosure (three named boxes only).
-- Hash at start and end: 1bb1eedd78f766c7.
+- Delta: radiotherapy figure (fig-8-390, stamp matches hash). Right-hand labels (tumour / 2.0 Gy / normal tissue / 0.40 Gy) moved 12 px left: all fully inside the card with a clear right margin; "normal tissue" fits within the figure with margin and reads naturally beside "tumour". leader lines end just before their labels with a small gap and no overlap; labels clear of the upper-right and right-hand beam source blocks and of the beam bands; the "beam" label and its line unchanged. Figure left at 640 px: still fits in the figure's 600-unit box.
+- Rest of the page unchanged by the diff.
+- Hash at start and end: 5c2c419f4a60d921.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish n/a · accessibility 4
+illustrations 4 · typography 4 · English 4 · accessibility 4

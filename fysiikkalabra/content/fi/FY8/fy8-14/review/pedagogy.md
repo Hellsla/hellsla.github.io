@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 112a16e09d45b232
+CONTENT-HASH: 93b09f7b2b9b0175
 
 ## Blocking
 (none)
@@ -12,4 +12,4 @@ CONTENT-HASH: 112a16e09d45b232
 ## Checked
 - Packet (lesson, inquiry, sim spec) read; delta: figure labels, experiment panel, sim legend.
 - Captures: fig-4 (luu), fig-10 (säätö).
-- Hash at start and end: 112a16e09d45b232.
+- Re-review after change: radiotherapy figure labels shifted 12 px left, still fully visible and readable; hash unchanged between start and end.

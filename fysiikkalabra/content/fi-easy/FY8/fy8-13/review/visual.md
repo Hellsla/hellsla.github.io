@@ -2,6 +2,7 @@ VERDICT: PASS
 CONTENT-HASH: f51c4d028372b9fc
 
 ## Blocking
+(none)
 
 ## Polish
 - [Minor] lesson.md — "viitearvo eli enimmäisarvo" on epätarkka (viitearvo ei ole raja); korjaus: "viitearvo, jonka alle pitoisuuden tulisi jäädä".
@@ -10,10 +11,9 @@ CONTENT-HASH: f51c4d028372b9fc
 - [Minor] lahteet (fig-4) — ydinvoima-rivi (< 0,1) puuttuu pylväskuviosta, vaikka avauskysymys koskee sitä; lisää ohut pylväs.
 
 ## Checked
-- contact-1 (sim-390, fig-1, 4, 6, 8, 10, 12 suomeksi), fig-12-390, sim-390 sisältö contact-1:ssä; sim-canvas: lähde, d, r (m), Etäisyys, Lyijyä, Annosnopeus suomeksi.
-- Kuvien tekstit LaTeXina, desimaalipilkku, yksiköt pystyssä; kuvausteksti suomeksi (alt) kaikissa kuvissa.
-- Teksti: sujuva selkeä suomi, termit yhdenmukaisia (absorboitunut annos, efektiivinen annos, puoliintumispaksuus), otsikot johdonmukaisia, ei mekaanisia fraaseja.
-- meta.json key_concepts 5 kpl, ≤17 sanaa, ei numeroita eikä $: OK.
+- No wording or figure change (0 changed lines); fig-4-390 reopened: Finnish labels fit, nothing clipped.
+- Rest of the lesson is as approved in the previous report.
+- Hash at start and end: f51c4d028372b9fc.
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 4 · accessibility 4

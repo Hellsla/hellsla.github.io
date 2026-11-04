@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 47e5964342e7a136
+CONTENT-HASH: 4706a24b50cab984
 
 ## Blocking
 (none)
@@ -9,9 +9,10 @@ CONTENT-HASH: 47e5964342e7a136
 - [Minor] hero — alpha and beta tracks remain short and similar at 390 px; harmless for a mood illustration.
 
 ## Checked
-- Delta verified in captures: fig-10-390 (gm) — "lanka (+)" now sits outside the tube wall, no crossing; fig-14-390 (tuntematon) — d axis labelled every 4 mm, so the 12 mm half-value crossing can be read; example-390-1 — "$I : I_0$" and "$I_0 : I$" no longer break across lines; contact-1 (hero, energia, jaljet, lapaisy, gm), sim-390.
-- Text diffs (exit ticket "suurimmillaan", ennuste-2 prompt, misconception paragraph, 60 keV "suurin energia") read; maths with `\,\text`, comma decimals and colon division correct.
-- Not re-opened: theory 1280 captures unchanged by the diff.
+- Delta: graph fy812-tu (Tarkista 2, fig-14-390, stamp matches hash). d axis now labelled 0, 6, 12 … 48 mm: labels clearly separate at 390 px, none overlapping, 'd (mm)' and the axis title clear of the last tick, y labels unchanged, curve and the 800 start marker clear of all labels.
+- 12 mm half-value crossing still readable: 12 is a labelled tick and the gridlines (every 2 mm) remain.
+- Not re-opened: other figures and text unchanged by the diff.
+- Hash at start and end: 4706a24b50cab984.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 4

@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 2e8775fbbc612d04
+CONTENT-HASH: 3f119d54f341f3cc
 
 ## Blocking
 (none)
@@ -13,3 +13,4 @@ CONTENT-HASH: 2e8775fbbc612d04
 - Lesson read in full: question (paper stops alpha; why inside the body is it worst) is answered in 'Radiation in the body'; staged example with logarithm solved step by step; misconception box.
 - Predictions (aluminium plate, two lead plates) are refutable by the sim; each experiment names the quantity varied and kept.
 - English natural; GM / Geiger–Müller terms consistent.
+- Re-review after change: graph fy812-tu d-axis labels every 6 mm (grid unchanged); readable, no wording or content change; earlier verdict stands.

@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: a59616042b279e74
+CONTENT-HASH: 65587e36f7083d7a
 
 ## Blocking
 (none)
@@ -9,10 +9,10 @@ CONTENT-HASH: a59616042b279e74
 - [Minor] sim readout "N = − pulssia 10 s:ssa" before a measurement reads oddly; consider "ei vielä mittausta".
 
 ## Checked
-- Contact-1 (hero, sim, figures 1-8) and lab-1280-1 at full size.
-- Round-2 fix: figure descriptions (aria-label and figures.json) are short, one idea per sentence, no stacked data; the graph descriptions keep grid and axis values for a reader who cannot see.
-- Sim canvas and controls Finnish and unclipped (GM-putki, γ-lähde, Levyjä n = 0, paksuus d = 0 mm).
-- Figure labels Finnish (ionisoimaton/ionisoiva, näkyvä valo, ikkuna, metalliseinä, laskuri, lanka, vyöry); decimal comma and upright units consistent.
+- Delta: graph fy812-tu (Tarkista 2, fig-14-390, stamp matches hash). d axis now labelled 0, 6, 12 … 48 mm: labels clearly separate at 390 px, none overlapping, 'd (mm)' and the axis title clear of the last tick, y labels unchanged, curve and the 800 start marker clear of all labels.
+- 12 mm half-value crossing still readable: 12 is a labelled tick and the gridlines (every 2 mm) remain.
+- Not re-opened: other figures and text unchanged by the diff.
+- Hash at start and end: 65587e36f7083d7a.
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 5 · accessibility 5

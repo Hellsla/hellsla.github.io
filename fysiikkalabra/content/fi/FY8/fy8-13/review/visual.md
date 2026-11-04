@@ -2,9 +2,14 @@ VERDICT: PASS
 CONTENT-HASH: e9e47c77f1bab9da
 
 ## Blocking
+(none)
 
 ## Polish
 
+
 ## Checked
-- Delta round 4: the sim canvas label "lähde" now comes from lang key `lahde_kanvas` (`$\text{lähde}$` in fi.json, same value as before; en/fi-easy keys exist). Rendered Finnish unchanged; no lesson wording or content changed (0 changed lines).
-- Rest of the lesson is as approved in the previous report.
+- No wording or figure change (0 changed lines); fig-4-390 reopened: labels "sisäilman radon", "muu luonnon säteily", "terveydenhuolto" fit, nothing clipped.
+- Hash at start and end: e9e47c77f1bab9da.
+
+## Scores
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4
