@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: f8c4b9b2d678fe6e
-ROUND: 2
+CONTENT-HASH: b5d23bcdac8390ad
+ROUND: 3
 ## Blocking
 (none) Round 1 Blocking resolved: L2-06 tolerance 0,13 accepts 0,35–0,45 A as the solution states; L3-05 lead split into paragraphs of 33 and 22 words.
 ## Polish
@@ -11,3 +11,4 @@ ROUND: 2
 - L2-06 table now crosses between rows 0,30 and 0,50 A (1,45/1,42 then 1,35/1,38 V); recomputed from the fits, crossing 0,40 A at 1,40 V.
 - L2-05 b) now asks for slope variation (±0,03 Ω); solution gives 0,53–0,59 Ω, inside tolerance 0,06.
 - L2-07 and L1-06/07 MC distractors misconception-based with repairing feedback; levels and plan fit; solutions complete.
+- Delta (answer-step first line now starts with the boxed value): checked each added value against the solution result and exercises.json answer/tolerance, same unit, decimal comma; the line reads well and agrees. Values: L3-04 35 % (answer 35, tol 0,05; solution 1,10/3,10 = 35,5 %).

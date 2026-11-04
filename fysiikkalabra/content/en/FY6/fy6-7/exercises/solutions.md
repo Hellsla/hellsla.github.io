@@ -151,7 +151,7 @@
 **Formula:** $E_\text{day} = Pt$ for each appliance and $E_\text{year} = 365 \cdot E_\text{day,tot}$
 **Conversions:** $90\,\text{W} = 0.090\,\text{kW}$, $110\,\text{W} = 0.110\,\text{kW}$, $60\,\text{W} = 0.060\,\text{kW}$, $1200\,\text{W} = 1.200\,\text{kW}$ and $800\,\text{W} = 0.800\,\text{kW}$
 **Substitution:** Lighting $0.090\,\text{kW} \cdot 5.0\,\text{h} = 0.45\,\text{kWh}$; television $0.110\,\text{kW} \cdot 4.0\,\text{h} = 0.44\,\text{kWh}$; computer $0.060\,\text{kW} \cdot 6.0\,\text{h} = 0.36\,\text{kWh}$; vacuum cleaner $1.200\,\text{kW} \cdot 0.50\,\text{h} = 0.60\,\text{kWh}$; toaster $0.800\,\text{kW} \cdot 0.20\,\text{h} = 0.16\,\text{kWh}$. The sum is $2.01\,\text{kWh}$ per day, so $E_\text{year} = 365 \cdot 2.01\,\text{kWh} = 733.65\,\text{kWh}$.
-**Answer:** a) The vacuum cleaner uses the most energy, even though it is on for only half an hour.
+**Answer:** In the answer box: $730\,\text{kWh}$. a) The vacuum cleaner uses the most energy, even though it is on for only half an hour.
 
 b) $730\,\text{kWh}$, two significant figures like the powers and the times.
 
@@ -166,7 +166,7 @@ c) Lighting is a suitable target for saving, because it is the second largest it
 **Formula:** $E = E_\text{end} - E_\text{start}$, $P_\text{avg} = \dfrac{E}{t}$ and $K = aE$
 **Conversions:** $t = 7 \cdot 24\,\text{h} = 168\,\text{h}$; $a = 16\,\text{c/kWh} = 0.16\,\text{€/kWh}$; finally $1\,\text{kW} = 1000\,\text{W}$
 **Substitution:** The energy of the week is $E = 12\,493.5\,\text{kWh} - 12\,437.2\,\text{kWh} = 56.3\,\text{kWh}$ and per day $56.3\,\text{kWh} : 7 = 8.04\,\text{kWh}$. The average power is $P_\text{avg} = \dfrac{56.3\,\text{kWh}}{168\,\text{h}} = 0.3351\,\text{kW} = 335.1\,\text{W}$ and the price $K = 0.16\,\tfrac{\text{€}}{\text{kWh}} \cdot 56.3\,\text{kWh} = 9.008\,\text{€}$.
-**Answer:** a) The energies of the days are $7.7$; $7.2$; $8.2$; $7.5$; $9.1$; $9.2$ and $7.4\,\text{kWh}$, in the week $56.3\,\text{kWh}$ and on average $8.04\,\text{kWh}$ per day.
+**Answer:** In the answer box: $335\,\text{W}$. a) The energies of the days are $7.7$; $7.2$; $8.2$; $7.5$; $9.1$; $9.2$ and $7.4\,\text{kWh}$, in the week $56.3\,\text{kWh}$ and on average $8.04\,\text{kWh}$ per day.
 
 b) $335\,\text{W}$, three significant figures like the difference of the energies $56.3\,\text{kWh}$.
 
@@ -181,7 +181,7 @@ c) $9.0\,\text{€}$.
 **Formula:** $P_\text{avg} = \dfrac{E}{t}$ and $E_\text{year} = P_\text{avg} t_\text{year}$
 **Conversions:** $t_\text{year} = 365 \cdot 24\,\text{h} = 8760\,\text{h}$
 **Substitution:** $P_\text{avg} = \dfrac{1.64\,\text{kWh}}{48\,\text{h}} = 0.03417\,\text{kW}$ and $E_\text{year} = 0.03417\,\text{kW} \cdot 8760\,\text{h} = 299.3\,\text{kWh}$
-**Answer:** a) The energy read from the line at $48\,\text{h}$ is $1.64\,\text{kWh}$.
+**Answer:** In the answer box: $300\,\text{kWh}$. a) The energy read from the line at $48\,\text{h}$ is $1.64\,\text{kWh}$.
 
 b) $300\,\text{kWh}$, two significant figures, because fitting the line by eye limits the accuracy.
 
@@ -196,7 +196,7 @@ c) The room temperature during the measurement is different from the yearly aver
 $$S = E_\text{heater}\,(a_\text{high} - a_\text{low}).$$
 **Conversions:** The costs are calculated in cents and converted to euros at the end: $100\,\text{c} = 1\,\text{€}$.
 **Substitution:** The costs of the periods are $4.68$; $12.96$; $32.24$; $19.20$; $162.96$ and $35.40$ cents. For example the first period is $1.2\,\text{kWh} \cdot 3.9\,\tfrac{\text{c}}{\text{kWh}} = 4.68\,\text{c}$. The sum is $267.44\,\text{c} = 2.674\,\text{€}$. The total energy is $19.0\,\text{kWh}$, so $a_\text{avg} = 267.44\,\text{c} : 19.0\,\text{kWh} = 14.08\,\text{c/kWh}$. The energy of the heater is $E_\text{heater} = 2.0\,\text{kW} \cdot 3.0\,\text{h} = 6.0\,\text{kWh}$, and the saving is $S = 6.0\,\text{kWh} \cdot (19.4 - 3.9)\,\tfrac{\text{c}}{\text{kWh}} = 93.0\,\text{c} = 0.930\,\text{€}$.
-**Answer:** a) $2.7\,\text{€}$ and an average price of $14\,\text{c/kWh}$.
+**Answer:** In the answer box: $0.93\,\text{€}$. a) $2.7\,\text{€}$ and an average price of $14\,\text{c/kWh}$.
 
 b) $0.93\,\text{€}$ per day, two significant figures like the power of the heater $2.0\,\text{kW}$.
 
@@ -212,7 +212,7 @@ c) The saving arises because the same energy $6.0\,\text{kWh}$ is bought at a lo
 **Substitution:** $\Delta E = 320\,\text{kWh} - 98\,\text{kWh} = 222\,\text{kWh}$ a year and $S = 0.17\,\tfrac{\text{€}}{\text{kWh}} \cdot 222\,\text{kWh} = 37.74\,\text{€}$ a year. The payback time is
 $$T = \dfrac{489\,\text{€}}{37.74\,\text{€/a}} = 12.96\,\text{a}.$$
 During the service life the saving is $15\,\text{a} \cdot 37.74\,\text{€/a} = 566.1\,\text{€}$, so $V = 566.1\,\text{€} - 489\,\text{€} = 77.1\,\text{€}$.
-**Answer:** a) $222\,\text{kWh}$ a year, that is, $38\,\text{€}$ a year.
+**Answer:** In the answer box: $13\,\text{a}$. a) $222\,\text{kWh}$ a year, that is, $38\,\text{€}$ a year.
 
 b) $13\,\text{a}$, two significant figures like the price $17\,\text{c/kWh}$ and the energy $98\,\text{kWh}$.
 

@@ -1,8 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: cf09f9eaebe9b92a
+CONTENT-HASH: dddbd64aaa8cb35d
 Mode: full (translation review against the reviewed Finnish set)
-Round 1
-
+Round 2
 ## Blocking
 (none)
 
@@ -15,6 +14,7 @@ Round 1
 ## Checked
 - Opened captures fy6-7-open-exercises-L2-1280-5.png and fy6-7-open-exercises-L3-1280-2.png in content/fi-easy/FY6/fy6-7/review/shots: data tables, formulas, units and section labels render in fi-easy, no Finnish left in en, nothing clipped.
 - Table captions and column headings are translated; LaTeX units render correctly.
+- Delta (boxed value at the start of the Vastaus/Answer line): the added value is correct (matches solution and exercises.json within tolerance, unit and decimal sign right, LaTeX number+unit) and the line is short and reads well; no layout change beyond one short sentence.
 
 ## Scores
 illustrations 5 · typography 5 · language 5 · accessibility 5
