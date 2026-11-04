@@ -11,7 +11,7 @@
     {
       "id": "fy6-7-L1-02",
       "level": 1,
-      "text": "A kettle uses $0.15\\,\\text{kWh}$ of electrical energy in one boiling. How large is the energy in megajoules?",
+      "text": "A kettle uses $0.15\\,\\text{kWh}$ of electrical energy each time it boils water. How large is the energy in megajoules?",
       "answer": 0.54,
       "unit": "MJ",
       "tolerance": 0.02

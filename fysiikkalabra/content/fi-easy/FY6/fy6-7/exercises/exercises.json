@@ -57,7 +57,7 @@
         },
         {
           "text": "Virtaa, koska se kertoo, kuinka paljon varausta johdossa kulkee tunnissa.",
-          "feedback": "Virran yksikkö on ampeeri. Sähkölaskussa ei laskuteta virtaa. Kilowattitunnissa teho eli jännite ja virta yhdessä on kerrottu ajalla."
+          "feedback": "Virran yksikkö on ampeeri. Sähkölaskussa ei laskuteta virtaa. Kilowattitunnissa teho on kerrottu ajalla. Teho on jännite ja virta yhdessä."
         },
         {
           "text": "Energiaa, koska se saadaan kertomalla laitteen teho käyttöajalla.",

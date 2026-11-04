@@ -67,7 +67,7 @@
 **Conversions:** $t = 4.0\,\text{min} = 4.0 \cdot 60\,\text{s} = 240\,\text{s}$; finally $1\,\text{kJ} = 1000\,\text{J}$
 **Substitution:** $E = 230\,\text{V} \cdot 8.7\,\text{A} \cdot 240\,\text{s} = 480\,240\,\text{J} = 480.24\,\text{kJ}$
 **Answer:** $480\,\text{kJ}$, two significant figures like the current $8.7\,\text{A}$ and the time $4.0\,\text{min}$.
-**Reasonableness:** The power of the kettle is $230\,\text{V} \cdot 8.7\,\text{A} \approx 2000\,\text{W}$, that is $2\,\text{kJ}$ per second, and in $240$ seconds it is about $480\,\text{kJ}$. In kilowatt-hours this is $0.13\,\text{kWh}$, which fits an ordinary boiling of a kettle.
+**Reasonableness:** The power of the kettle is $230\,\text{V} \cdot 8.7\,\text{A} \approx 2000\,\text{W}$, that is $2\,\text{kJ}$ per second, and in $240$ seconds it is about $480\,\text{kJ}$. In kilowatt-hours this is $0.13\,\text{kWh}$, which fits an ordinary kettle boil.
 
 ## fy6-7-L2-03
 **Given:** standby power $P = 4.5\,\text{W}$ all year, $365$ days, price $a = 17\,\text{c/kWh}$
