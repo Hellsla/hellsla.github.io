@@ -1,19 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 8631b611eae6c176
+CONTENT-HASH: 1b1e5178b3cffb72
 
 ## Blocking
 
 ## Polish
-- [Minor] solutions.md L3-04, Sijoitus — "Osa 1: ... . osa 2: ... . koko matka:" the labels after the first start with a lowercase letter after a full stop — capitalise: "Osa 2:", "Koko matka:".
-- [Minor] solutions.md L2-05 — the sum is shown as "18,0 m" but the answer line says "noin 18 m, kaksi merkitsevää numeroa" — write "= 18 m" (or say three digits are carried) so the rounding is consistent.
-- [Minor] L2-05 and L3-04 — both ask "Piirrä kuvaaja", but the solution only describes the graph in words; no plotted example (points plus fitted line, or the two segments with the break at 10 s) — optional, would help the weaker students.
-- [Minor] L1-06, L1-07 — the task speaks of a graph ("(t, v)-kuvaajassa vaakasuora viiva") but none is shown; the text suffices, a tiny figure for L1-07 would be nicer.
+- [Minor] solutions.md L2-05, Kuvaajan lukeminen (open-exercises-L2-1280-5) — the point pairs "(0 s; 1,2 m)" / "(5,0 s; 8,2 m)" break across lines at the semicolon — keep each point on one line (non-breaking space after the semicolon) or write the points as display items.
+- [Minor] L3-05 task — the instruction "Piirretään (t, s)-kuvaaja ..." is passive and sits between two imperatives; "Piirrä (t, s)-kuvaaja ..." or "Oletetaan, että kuvaaja piirretään ..." reads as one voice. The sentence also sets the scale before the question that uses it, which is fine.
+- [Minor] L2-05, L3-04 — "Piirrä kuvaaja" has no plotted example in the solution (carried over, optional).
 
 ## Checked
-- Captures opened (1280 px): open-exercises-1280-7, -8 (L1-07, L1-08), L2-1280-5 to -8 (L2-05 to L2-07), L3-1280-5 to -7 (L3-04, L3-05); no 360 px capture of the exercises exists.
-- Maths: decimal comma, upright SI units with thin space, `\cdot`, aligned chains; fractions and inline units readable; data tables render with decimal comma, units in headers.
-- Interactive: MC options, feedback, hint and solution boxes open inside the card, no overflow or clipping.
-- Source of all eight new tasks and solutions read; no duplicate of an existing task seen.
+- Round 2 delta, captures current for this hash (taken after the edits). Opened open-exercises-L2-1280-5, -6 (L2-05 with s instead of x, wider accepted range), L3-1280-5 to -8 (L3-04 rewritten, L3-05 replaced by the bullet task); no 360 px exercise capture exists (only stage-exercises-390).
+- Round 1 had no Blocking. Carried-over Polish fixed: "Osa 2:" capitalisation done, "18 m" now consistent with "kaksi merkitsevää numeroa".
+- L3-04 and L3-05: tables show decimal comma, units in headers, fractions with units, long chains broken into aligned rows, MC-free number answers; solution cards open without overflow or clipping.
+- Notation: x replaced by s throughout the changed tasks, consistent with the chapter glossary (paikka, matka).
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 4 · accessibility 4

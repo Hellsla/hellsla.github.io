@@ -1,22 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: d66b07866727f253
+CONTENT-HASH: 476992e005b0e229
 
-Full review of the 8 new tasks (L1-06..08, L2-05..07, L3-04..05) and set coherence; old tasks unchanged.
+Round 2: round 1 passed. The changed tasks (L1-06, L1-08, L2-05, L2-07, the rewritten L3-04 and L3-05) are checked against the whole set.
 
 ## Blocking
 (none)
 
 ## Polish
-- solutions.md:144 (L2-05) — "Lisää toistoja ja tarkempi ajanotto voisivat näyttää sen" suggests that a mass effect exists to be found; for two balls of the same shape rolling without slipping, the rolling time does not depend on mass — "voisivat näyttää, onko eroa".
-- exercises.json:46 (L1-06) and L2-05/L3-05 — "riippumaton/riippuva muuttuja": the lesson brief and glossary use "muutettava / mitattava / vakioitavat" — add the lesson's word once, e.g. "riippumaton (muutettava) muuttuja".
-- exercises.json:106 (L1-08) — "luettelee, mitä kukin lause kuuluu kertoa" is not grammatical — "Työselostuksen kirjoittaja miettii, mihin osioon kukin lause kuuluu."
-- exercises.json:347 (L3-05) — one rate, 2,0 K/min, is assumed for all three materials, although the slowest-cooling container (plastic) gives the smallest drop and so sets the needed time — say "hitaimmin jäähtyvässäkin astiassa alun nopeus on noin 2,0 K/min".
-- exercises.json:314 (L3-04) — a multiple-choice item at level 3, where the plan asks for "paranna perustellen" — consider an open model answer (pedagogy's call).
+- exercises.json:316 (L3-04): "Kuinka monta kertaa ... 0,15 s on keskiarvojen erotus?" can also be read as 0,27. The difference of 0,04 s has one significant figure, so the answer 4 falls outside the 2 % tolerance. Write "Kuinka moninkertainen ... on erotukseen verrattuna?" and use tolerance 0,07.
+- solutions.md:168–169 (L3-04): a random error of 0,15 s per timing does not fit repeats that lie within ±0,04 s. A common reaction delay largely cancels in the difference. Add one sentence: the larger estimate is used as the cautious uncertainty, and "no difference can be shown" holds with either estimate.
+- exercises.json:349 / solutions.md:178 (L3-05): the stem assumes the slowest container cools at the glass rate, but the Järkevyys says that it cools less. Make the two agree (for example "at least the glass rate", so that 10 min stays a lower bound).
+- exercises.json:246 (L2-07): this is a by-eye line with tolerance 0,02 (0,294–0,306 m/s). A careful fit can give 0,29. Widen to 0,04.
+- L3-04 reuses the L2-05 data and its overlap conclusion. Whether that is acceptable is pedagogy's call.
 
 ## Checked
-- One python script recomputed every new answer: L2-05 means 3,12 s and 3,08 s, half-ranges 0,04 s each, ratio 100 %; L2-07 (2,40−0,60)/(8,0−2,0) = 0,30 m/s, least-squares slope of the table 0,2995 m/s, inverse 3,33 s/m matches the student's 3,3; L3-05 1,0/0,050 = 20 K, 20/2,0 = 10 min. All match answers.py.
-- L2-05: overlapping ranges → difference cannot be shown, and it is explicitly not proof of no effect (guardrail wording kept). Half-range is called a simple scatter estimate, not the uncertainty of the mean.
-- L2-07: s = vt with t horizontal gives slope v; swapped axes give 1/v; the slope is read from line points, not raw neighbours.
-- L3-05 mirrors the lesson's ε = Δ/x ≥ … method; the solution says that 10 min is a lower bound because cooling slows.
-- L1-06, L1-07, L1-08, L2-06, L3-04: exactly one correct option each; every distractor's feedback is right. Outlier removal is worded as in the guardrails, and the hypothesis is "not proven certain".
-- No duplicate of existing tasks; levels fit; kinds and data tables match the plan.
+- Round-1 Polish has been applied: L2-05 ends "onko eroa", L1-06 and L3-05 say "riippumaton (muutettava)", and the L1-08 stem is fixed.
+- One script recomputed the changed answers: L2-05 3,12 s and 3,08 s, ±0,04 s, 100 %. L2-07: the table's least-squares slope is 0,2995 m/s (0,3005 m/s through the origin), the line points give 0,30 m/s, and 1/v = 3,33 s/m. L3-04 3,75, the difference being 1,3 % of the time. L3-05 2,0 K/min, then 20 K and 10 min; the per-minute drops 2,1/1,9/2,0/1,8 K are realistic. All match answers.py.
+- L3-04: overlap is not taken as support, the hypothesis is not called proven, and no data are removed, as the guardrails require.
+- L3-05: the controlled variables are physically justified, and 10 min is called a lower bound.
+- L1-08 "Viiden mittauksen" agrees with its feedback. Levels fit, and there is no other duplicate.

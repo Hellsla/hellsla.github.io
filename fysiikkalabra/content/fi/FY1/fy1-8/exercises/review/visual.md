@@ -1,20 +1,19 @@
-VERDICT: FAIL
-CONTENT-HASH: d66b07866727f253
+VERDICT: PASS
+CONTENT-HASH: 476992e005b0e229
 
 ## Blocking
-- [Major] solutions.md fy1-8-L2-05, Vastaus line 143 (capture open-exercises-L2-1280-7) — the page splits the line at the first sentence, so the boxed "100 %" is followed by an orphan ": keskiarvojen erotus on yhtä suuri kuin epävarmuus." starting a line with a colon; the only solution in FY1 with this pattern — fix: "**Vastaus:** $100\,\%$. Keskiarvojen erotus on yhtä suuri kuin epävarmuus. Välit ..." (full stop and capital, no colon).
 
 ## Polish
-- [Minor] exercises.json / solutions.md fy1-8-L1-07, L2-05, L2-06, L3-05 — quotations use straight " " (also L2-06 task and L3-05 research question); the house style elsewhere (FY1-5) is ”…” — use ”…”, with the full stop after the closing mark.
-- [Minor] fy1-8-L3-05 Periaate — "samoin kuin lyhyessä aikamittauksessa" refers to another task the reader may not have seen — rephrase "samoin kuin aikamittauksessa, jossa ajan epävarmuus on vakio", or drop it.
-- [Minor] solutions.md L3-05 Kaava (open-exercises-L3-1280-6) — the inequality is split over three separate blocks ("josta", "ja t = ...") with short fragments; set the chain as one aligned display, optional.
-- [Minor] L2-07 — the task asks about a graph with swapped axes but shows only a table, no sketch of the wrong graph; optional small figure, the text is clear enough.
-- [Minor] L2-05 solutions Sijoitus — one long paragraph with two blocks of numbers; optional: one line per ball.
+- [Minor] exercises.json fy1-8-L3-04 task — "Kuinka monta kertaa käsiajanoton epävarmuus 0,15 s on keskiarvojen erotus?" is grammatical but easy to read the other way (0,04 : 0,15 = 0,27, the answer field has no unit to hint the direction) — write "Kuinka monta kertaa suurempi käsiajanoton epävarmuus 0,15 s on kuin keskiarvojen erotus?".
+- [Minor] solutions.md L2-05 Vastaus (open-exercises-L2-1280-7) — "3,12 s ±" and "0,04 s" split across lines at the ± sign; join with a non-breaking space or put the intervals on separate lines.
+- [Minor] solutions.md L3-05, Kaava (open-exercises-L3-1280-6) — T_3 and Δt appear without being defined in the sentence (T_alku, "kolmen minuutin lämpötila", "Δt = 3,0 min"); name them once.
+- [Minor] solutions.md L3-04 Vastaus — one long paragraph with two quoted model sentences; split the two "Parempia lauseita" into separate lines.
+- [Minor] L2-07 — the wrong graph (axes swapped) is described but not drawn (carried over, optional).
 
 ## Checked
-- Captures opened (1280 px): open-exercises-1280-7 (L1-07, L1-08), L2-1280-7, -8 (L2-05 to L2-07), L3-1280-6 (L3-05); L3-04 and L1-06 judged from source; no 360 px exercise capture exists.
-- Source of all eight new tasks and solutions read; maths uses decimal comma, upright units, `\cdot`; data tables show decimal comma and units in the header; MC feedback boxes open inside the cards with no overflow.
-- Level and duplication: no duplicate of an existing task seen; levels match the exercise kinds.
+- Round 2 delta, captures current (taken after the edits). Opened open-exercises-1280-7, -8 (L1-08), L2-1280-7, -8, -9 (L2-05, L2-06, L2-07), L3-1280-5 to -8 (L3-04, L3-05 with their new data tables); no 360 px exercise capture exists.
+- Round 1 Blocking (L2-05 Vastaus: orphan ": keskiarvojen erotus ...") is fixed: "100 %" then a separate sentence "Keskiarvojen erotus on yhtä suuri kuin epävarmuus." Carried quote Polish fixed (”…” used).
+- L2-07: the student's task now asks to redraw and read the slope; 0,30 m/s box, 1/0,30 = 3,3 s/m render cleanly. L3-05: aligned chains, ≥ in display, kelvin/celsius handled in Muunnokset, no overflow. Data tables show decimal comma, units in headers.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

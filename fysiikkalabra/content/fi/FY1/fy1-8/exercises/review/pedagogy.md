@@ -1,19 +1,20 @@
-VERDICT: FAIL
-CONTENT-HASH: d66b07866727f253
+VERDICT: PASS
+CONTENT-HASH: 476992e005b0e229
+Round: 2
 
 ## Blocking
-- exercises.json fy1-8-L3-04 — not YO-style level 3. It is a four-option MC with one obviously best answer (name the sources of uncertainty, estimate, suggest a follow-up); no data, no text of the reflection beyond three sentences, nothing to analyse. The bank plan asks to "paranna perustellen". Fix: give the results of a short experiment (e.g. the 50 g and 200 g balls of L2-05: 3,12 ± 0,04 s and 3,08 ± 0,04 s) and the weak reflection; ask which of its claims ("hypoteesi oli oikein", "virheitä oli vähän") the data do and do not support, with numbers, and to write two improved sentences.
-- exercises.json fy1-8-L3-05 — level badly off. The task gives the research question, both variables and all numbers; the answer is one division chain (1,0 K / 0,050 = 20 K; 20 K / 2,0 K/min = 10 min), the same structure as fy1-5-L2-07 and fy1-8-L2-02. It does not ask for the design (variables held constant, measurements, analysis) that the plan names. Fix: give a cooling table (as in L3-02) for the glass container, have the student estimate the initial rate, fix the run length with the 5 % criterion, name which three quantities to hold constant and why, and say how the three cooling curves are to be compared (slopes at the start, same ΔT).
+(none)
 
 ## Polish
-- fy1-8-L2-07 gives the two fit points in the text, so the table and the "kind: data, graph" are unused and the answer is one slope calculation; remove the points and ask the student to read them from a figure, or ask separately what the swapped axes do (slope = 1/v) and what is missing on the axes.
-- fy1-8-L2-05 asks "kuinka monta prosenttia erotus on epävarmuudesta"; the real learning is the conclusion (overlapping intervals), which the numeric answer 100 % does not check. Ask for the conclusion explicitly in the task text.
-- fy1-8-L1-06..08 and L2-06 are well-formed MCs with misconception feedback, but the correct option is first in the file and often the longest; check shuffle and balance lengths.
-- fy1-8-L1-08 says "kolmen mittauksen" and 0,2 s from a set whose mean is 12,4 s; harmless, but cite the earlier data (L1-02) so students can see the link.
+- fy1-8-L3-05: the premise "hitaimmin jäähtyvässäkin astiassa alun nopeus on suunnilleen sama" is an assumption stated in the task; a design would use the slowest vessel, so 10 min is the lower bound for glass only. The solution says so (lower bound); state it as an assumption in the Vastaus too. The numeric answer checks only 10 min; the three constants and the comparison method rest on the model solution.
+- fy1-8-L3-04: the question "kuinka monta kertaa 0,15 s on keskiarvojen erotus" is awkwardly phrased (answer 3,75 = 0,15 / 0,04); rephrase as "Kuinka moninkertainen käsiajanoton epävarmuus on keskiarvojen erotukseen verrattuna?". The solution's second improved sentence (use a photogate) is a recommendation, not a result: fine for a reflection.
+- fy1-8-L3-04: the hand-timing uncertainty 0,15 s (single reading) is larger than the scatter ±0,04 s of the five readings; the solution could comment on why (systematic reaction delay). Optional.
+- fy1-8-L1-08 still names "viiden mittauksen" and 12,4 s without linking to the earlier L1 data (carried over).
+- fy1-8-L2-05: the numeric answer 100 % does not check the conclusion; the task text now asks for it ("tukeeko aineisto päätelmää"), so only the model solution carries it (carried over, acceptable).
 
 ## Checked
-- Counts 8/7/5; plan items covered: variable types, research question, results vs discussion, two-variable plan, wrong axes, discussion section, own design.
-- L2-05 sums 15,60 s and 15,40 s, means 3,12 and 3,08 s, Δt 0,04 s each: 100 % correct.
-- L2-07: slope between fit points 0,30 m/s; student's 3,3 is 1/v; consistent with the table.
-- L3-05 arithmetic correct (10 min) and the solution warns that the rate falls, so 10 min is a lower bound.
-- Finnish reads correctly.
+- Round-1 Blocking resolved: L3-04 now gives the means 3,12 ± 0,04 s and 3,08 ± 0,04 s, hand-timing uncertainty 0,15 s and the weak reflection; the student judges each claim with numbers and writes two improved sentences. Solution rejects "hypoteesi oli oikein", "virheitä oli vähän" and "koe onnistui hyvin" with reasons (difference equals uncertainty, intervals overlap on 3,08-3,12 s).
+- L3-05 now gives a cooling table: rate (80,0 - 74,0)/3,0 = 2,0 K/min; T_lasku >= 1,0 / 0,050 = 20 K; t = 10 min; plus three constants with reasons and a comparison method (initial slopes at equal ΔT). Solution has all steps and flags 10 min as a lower bound.
+- L2-07 no longer gives the fit points in the task; slope 0,30 m/s and the reciprocal 3,3 s/m explained, table and graph tags now used.
+- L2-05 arithmetic unchanged and correct (means 3,12 and 3,08 s, 100 %).
+- Level fit: both new L3 tasks are data interpretation and design reasoning; counts 8/7/5 and plan items still covered; Finnish reads correctly.
