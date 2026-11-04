@@ -1,21 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: ce684c7f1daaa50d
+CONTENT-HASH: 1fd82ba49312a3cf
 
 ## Blocking
 (none)
 
 ## Polish
-- inquiry.json "pohdi" and "tarkistus-3" (both optional) — the opening question (why polaroid glasses kill glare but dark glasses do not, why it returns when the head tilts) is asked of the student only in these two optional items; the required path never makes the student commit to an answer or return to it. Make "pohdi" required (or keep tarkistus-3) so the hook is closed by the student, not just by the text.
-- inquiry.json "mittaus" — the prompt text already states `A = 360,7 lx`, which is the answer; the student only picks which of three given numbers is the slope. Drop `A` from the text and give the figure/two fit points so the student reads the slope (the solution already shows the two-point reading).
-- inquiry.json "ennuste-yksi" — "polarisoimaton" and "polarisaattorikalvo" are used before the theory is read and the retrieval item is optional. Add one gloss sentence: "Polarisoimattomassa valossa sähkökentän värähtelysuunta vaihtelee satunnaisesti; kalvo päästää läpi vain yhdessä suunnassa värähtelevän osan." so the prediction can be argued.
-- lesson.md "Yleinen virhekäsitys" / "Järkevyys" — "polarisaattori vain poistaa valoa eikä voi lisätä" reads as if a film adds light; write "eikä voi lisätä läpi pääsevän valon määrää". "Lähtevästä valosta läpi pääsee noin kolmannes" → "Alkuperäisestä valosta $ läpi pääsee noin kolmannes."
-- exit-ticket.json Q1 — glass 1,50 and 56,3° are stated in the Brewster paragraph, so it tests lookup; use another medium (e.g. akryyli 1,49).
+- exit-ticket.json Q1 — round-1 polish not taken: glass 1,50 and 56,3° are still stated in the Brewster paragraph, so Q1 tests lookup. Use another medium (e.g. akryyli 1,49) if cheap.
+- inquiry.json "pohdi" / "tarkistus-3" (optional) — the opening glare question is still only closed in optional items; consider making "pohdi" required.
 
 ## Checked
-- Path: prerequisite alignment, hook, predictions, sim, theory, example, error item, transfer, checks, exit: coherent; both slot goals covered; one-hour core path.
-- Predictions can be refuted by the model values; each wrong option's feedback repairs its misconception.
-- Example has seven stages, one step each; justification of halving and of Malus explained, not named.
-- Siirto (Brewster, camera height) has three hints and real mistake values.
-- Sim not opened; only the 390 px hero capture was available (hero legible, glasses contrast clear). Figure bodies not reviewed.
-- Finnish: no errors found beyond the sentences above.
+- Delta: "mittaus" no longer states A in the text; the fit figure (capture #7, 332 px) shows axes 0–400 lx and 0–1,0 with the line from about 15 to 375 lx, so the slope can be read off by the student; the solution's two-point reading matches and tolerance 2 % accepts 360 ± 7. The mistakes (374, 14,6) are real and each feedback repairs it.
+- Solution "Annettu" now names only DeltaA and B; consistent with the new prompt.
+- lesson.md "Järkevyys": 282/840 is about one third, correct and clearer; virhekäsitys sentence "lisäkalvo voi vain vähentää läpi tulevaa valoa" fixes the earlier misreading.
+- Round-1 polish for ennuste-yksi gloss not re-judged beyond the diff (outside delta).
 - Hash unchanged at end.

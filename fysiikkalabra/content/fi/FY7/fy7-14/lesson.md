@@ -186,7 +186,7 @@ Luvussa *Valon interferenssi ja diffraktio* nähtiin, että valo on aaltoliikett
   <foreignObject x="273" y="19.5" width="30" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$1$</div></foreignObject>
   <foreignObject x="320" y="19.5" width="30" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$2$</div></foreignObject>
   <foreignObject x="89" y="103.5" width="137" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\tfrac{1}{2}\lambda\ \text{siirtymä}$</div></foreignObject>
-  <foreignObject x="256" y="251.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{ei siirtymää}$</div></foreignObject>
+  <foreignObject x="121" y="251.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{ei siirtymää}$</div></foreignObject>
   <line x1="150" y1="159" x2="150" y2="221" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
   <path d="M150,150 L145,160 L155,160 Z" fill="#1f2933" stroke-linejoin="round"/>
   <path d="M150,230 L145,220 L155,220 Z" fill="#1f2933" stroke-linejoin="round"/>
@@ -203,7 +203,7 @@ Alapinnasta heijastunut aalto 2 kulkee kalvon läpi edestakaisin, joten se kulke
 Matkaero ei yksin ratkaise interferenssiä. Luvussa *Aaltojen heijastuminen ja diffraktio* köyden pulssi kääntyi heijastuessaan kiinteästä päästä mutta ei vapaasta päästä. Valolle pätee vastaava sääntö: **kun valo heijastuu rajapinnasta, jonka takana on suuremman taitekertoimen aine, heijastunut aalto kääntyy**, eli harja palaa pohjana. Tämä vastaa puolen aallonpituuden siirtymää. Kun takana on pienemmän taitekertoimen aine, heijastunut aalto ei käänny. Saippuakalvossa yläpinnan heijastus tapahtuu ilmasta kalvoon ($1{,}00 \to 1{,}33$), joten aalto 1 kääntyy. Alapinnan heijastus tapahtuu kalvosta ilmaan ($1{,}33 \to 1{,}00$), joten aalto 2 ei käänny.
 
 ### Hyvin ohut kalvo on musta
-Kun saippuakalvo on paljon ohuempi kuin aallonpituus, matkaero on lähes nolla. Aalto 1 on kuitenkin kääntynyt ja aalto 2 ei, joten aallot ovat vastakkaisessa vaiheessa ja kumoavat toisensa. Hyvin ohut kalvo ei heijasta valoa, ja se näyttää mustalta. Siksi saippuakuplan yläosaan ilmestyy juuri ennen puhkeamista musta laikku. Kun kalvo on niin paksu, että $2nd = \tfrac{1}{2}\lambda$, aalto 2 jää puoli aallonpituutta jälkeen. Silloin molemmat aallot ovat kääntyneet, ne ovat samassa vaiheessa ja vahvistavat toisiaan.
+Kun saippuakalvo on paljon ohuempi kuin aallonpituus, matkaero on lähes nolla. Aalto 1 on kuitenkin kääntynyt ja aalto 2 ei, joten aallot ovat vastakkaisessa vaiheessa ja kumoavat toisensa. Hyvin ohut kalvo ei heijasta valoa, ja se näyttää mustalta. Siksi saippuakuplan yläosaan ilmestyy juuri ennen puhkeamista musta laikku. Kun kalvo on niin paksu, että $2nd = \tfrac{1}{2}\lambda$, aalto 2 jää puoli aallonpituutta jälkeen, mikä vastaa kääntymistä. Silloin aallot ovat samassa vaiheessa ja vahvistavat toisiaan.
 
 <svg data-fig="phase" viewBox="0 0 600 360" role="img" aria-label="Kaavakuva: kalvosta heijastuneet aallot 1 ja 2 sekä niiden summa kahdessa tapauksessa. Vasemmalla kalvo on paljon ohuempi kuin aallonpituus. Aalto 1 on kääntynyt yläpinnan heijastuksessa, aalto 2 ei, eikä aalto 2 ole jäänyt jälkeen, joten aallot ovat vastakkaisessa vaiheessa: harja kohtaa pohjan, ja summa on vaakasuora suora eli heijastunutta valoa ei ole. Oikealla kalvo on niin paksu, että aalto 2 kulkee puoli aallonpituutta pidemmän matkan. Silloin aallot ovat samassa vaiheessa, ja summa on kaksinkertainen aalto eli heijastus on voimakas." style="max-width:100%;font-size:24px">
   <foreignObject x="69.5" y="21.5" width="183" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{hyvin ohut kalvo}$</div></foreignObject>
@@ -402,7 +402,7 @@ Tavallinen lasi ($n = 1{,}52$) heijastaa kummastakin pinnastaan noin $4\,\%$ koh
 ```latex
 d = \frac{\lambda}{4n}
 ```
-Pinnoite mitoitetaan yleensä näkyvän valon keskelle, jolle silmä on herkin. Kun $\lambda = 550\,\text{nm}$, paksuus on $99{,}6\,\text{nm}$, ja heijastus pienenee noin $4{,}3\,\%$:sta noin $1{,}3\,\%$:iin.
+Pinnoite mitoitetaan yleensä näkyvän valon keskelle, jolle silmä on herkin. Kun $\lambda = 550\,\text{nm}$, paksuus on $99{,}6\,\text{nm}$, ja heijastus pienenee pinnasta noin $4{,}3\,\%$:sta noin $1{,}3\,\%$:iin.
 
 Täydellinen kumoutuminen vaatisi, että kaksi heijastunutta aaltoa olisivat yhtä voimakkaat. Kohtisuorassa tulossa se toteutuu, kun pinnoitteen taitekerroin on $\sqrt{n_\text{lasi}}$, lasille $\sqrt{1{,}52} \approx 1{,}23$. Näin pientä taitekerrointa ei ole kestävillä pinnoiteaineilla, ja $\text{MgF}_2$ on lähimpiä. Pinnoite ei myöskään kumoa kaikkia aallonpituuksia yhtä hyvin: violettia ja punaista heijastuu enemmän kuin vihreää, joten pinnoitettu linssi kiiltää purppuraisena. Valo ei katoa: mitä vähemmän sitä heijastuu, sitä enemmän sitä pääsee lasin läpi. Nykyaikaisissa objektiiveissa on usein monta päällekkäistä kerrosta.
 
@@ -495,7 +495,7 @@ Matkaero on $2nd = 1010{,}8\,\text{nm}$. Arvolla $k = 0$ saadaan $2021{,}6\,\tex
 
 <!-- vaihe -->
 
-**Tulos.** Voimakkaimmin heijastuvat punainen valo, jonka aallonpituus on $674\,\text{nm}$, ja violetti valo, jonka aallonpituus on $404\,\text{nm}$, kolmella merkitsevällä numerolla kuten taitekerroin ja paksuus. Niiden välissä heikentävä ehto $2nd = 2\lambda$ kumoaa vihreänsinisen valon, $1010{,}8\,\text{nm} : 2 = 505\,\text{nm}$, joten kalvo näyttää tässä kohdassa punertavan purppuralta.
+**Tulos.** Voimakkaimmin heijastuvat punainen valo, jonka aallonpituus on $674\,\text{nm}$, ja violetti valo, jonka aallonpituus on $404\,\text{nm}$. Vastaukset on annettu kolmella merkitsevällä numerolla kuten taitekerroin ja paksuus. Niiden välissä heikentävä ehto $2nd = 2\lambda$ kumoaa vihreänsinisen valon, $1010{,}8\,\text{nm} : 2 = 505\,\text{nm}$, joten kalvo näyttää tässä kohdassa punertavan purppuralta.
 
 <!-- vaihe -->
 

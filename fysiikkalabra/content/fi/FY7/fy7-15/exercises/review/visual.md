@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 65b809c8004384e8
+CONTENT-HASH: 3d1522308c46aedd
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] exercises L2-02 — "Kuinka suuri on ... kulma, kun ..." is correct but heavy; "Kuinka suuri kulma on ..." would be lighter. Optional.
-- [Minor] L3-01 solution, Annettu — "keskimmäisen läpäisysuunta 30,0°:n kulmassa ensimmäiseen nähden" lacks a closing full stop in the rendered capture (list-style line); add one for consistency with the other Annettu lines.
+- [Minor] exercises L2-02 — "Kuinka suuri on ... kulma, kun ..." heavy; optional (carried).
+- [Minor] L3-01 solution, Annettu — closing full stop missing (carried, optional).
 
 ## Checked
-- Hash at start and end: 65b809c8004384e8.
-- Opened full size: open-exercises-1280-3 (L1-03, L1-04 start), open-exercises-L3-1280-1 (L3-01).
-- Opened as contact sheets (contact-6, contact-7): all of levels 1, 2 and 3 and every solution, plus the source text of exercises.json: seven-step solutions complete, LaTeX units with thin spaces, decimal comma, \cdot, significant figures consistent with the data, answer boxes and unit fields legible, no clipping or overflow.
+- Hash at start and end: 3d1522308c46aedd.
+- Opened full size: open-exercises-1280-3 and -4 (L1-03; changed L1-04 acrylic task, answer 56,1°, solution steps complete, sin check 0,830 = 0,830 renders aligned with \cdot and decimal comma, units LaTeX).
+- L1-05 Järkevyys change ("akryylin 56,1°") read from the diff; consistent with L1-04.
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 5 · accessibility 4

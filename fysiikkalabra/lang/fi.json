@@ -1756,7 +1756,7 @@
       "kolme": "kolme",
       "p1": "Polarisaattori $\\text{P}_1$: $\\theta_1 = {{t}}^\\circ$",
       "p2": "Keskimmäinen $\\text{P}_2$: $\\theta_2 = {{t}}^\\circ$",
-      "p2_pois": "Keskimmäinen $\\text{P}_2$ (ei käytössä): $\\theta_2 = {{t}}^\\circ$",
+      "p2_pois": "$\\text{P}_2$ (pois): $\\theta_2 = {{t}}^\\circ$",
       "p3": "Analysaattori $\\text{P}_3$: $\\theta_3 = {{t}}^\\circ$",
       "selite": "Ruskea: sähkökentän värähtelysuunta. Viivoitus: läpäisysuunta. Ei mittakaavassa.",
       "lamppu": "lamppu",

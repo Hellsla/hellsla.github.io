@@ -39,10 +39,10 @@
 **Järkevyys:** Sama kaava $d = \lambda : (4n)$ antaa saippuakalvossa voimakkaimman heijastuksen mutta pinnoitteessa heikoimman, koska kääntäviä heijastuksia on eri määrä. Paksuus on suurempi kuin simulaation $103\,\text{nm}$ aallonpituudelle $550\,\text{nm}$, kuten pidemmälle aallonpituudelle pitää.
 
 ## fy7-14-L1-05
-**Annettu:** linssin muovin taitekerroin $n_\text{lasi} = 1{,}60$, kohtisuora tulo
+**Annettu:** linssin muovin taitekerroin $n_\text{muovi} = 1{,}60$, kohtisuora tulo
 **Kysytty:** ihanteellisen pinnoitteen taitekerroin $n_\text{p}$
-**Periaate:** Heijastunut aalto on sitä voimakkaampi, mitä enemmän rajapinnan taitekertoimet eroavat. Kun pinnoitteen yläpinnasta ja alapinnasta heijastuneet aallot ovat yhtä voimakkaat, ne voivat kumota toisensa täysin. Kohtisuorassa tulossa näin käy, kun pinnoitteen taitekerroin on lasin taitekertoimen neliöjuuri, kuten luvussa todettiin: silloin $1{,}00 : n_\text{p} = n_\text{p} : n_\text{lasi}$.
-**Kaava:** $n_\text{p} = \sqrt{n_\text{lasi}}$
+**Periaate:** Heijastunut aalto on sitä voimakkaampi, mitä enemmän rajapinnan taitekertoimet eroavat. Kun pinnoitteen yläpinnasta ja alapinnasta heijastuneet aallot ovat yhtä voimakkaat, ne voivat kumota toisensa täysin. Kohtisuorassa tulossa näin käy, kun pinnoitteen taitekerroin on linssin aineen taitekertoimen neliöjuuri, kuten luvussa todettiin: silloin $1{,}00 : n_\text{p} = n_\text{p} : n_\text{muovi}$.
+**Kaava:** $n_\text{p} = \sqrt{n_\text{muovi}}$
 **Muunnokset:** Ei tarvita: taitekertoimet ovat yksiköttömiä.
 **Sijoitus:** $n_\text{p} = \sqrt{1{,}60} = 1{,}2649$
 **Vastaus:** $1{,}26$, kolme merkitsevää numeroa kuten taitekerroin $1{,}60$.
@@ -106,7 +106,7 @@
 **Muunnokset:** $R = 1{,}3\,\% = 0{,}013$. Lopuksi osuus kerrotaan sadalla prosenteiksi.
 **Sijoitus:** $\dfrac{I_\text{läpi}}{I_0} = (1 - 0{,}013)^8 = 0{,}987^8 = 0{,}9006 = 90{,}06\,\%$
 **Vastaus:** $90\,\%$, kaksi merkitsevää numeroa kuten heijastuva osuus $1{,}3\,\%$.
-**Järkevyys:** Arvio: kahdeksan pintaa heijastaa yhteensä noin $8 \cdot 1{,}3\,\% \approx 10\,\%$, joten läpi pääsee noin $90\,\%$. Ilman pinnoitteita jokainen pinta heijastaisi noin $4{,}26\,\%$, ja läpi pääsisi vain $(1 - 0{,}0426)^8 \approx 70{,}6\,\%$. Pinnoitteet lisäävät siis kennolle pääsevää valoa noin viidenneksellä ja vähentävät haamukuvia.
+**Järkevyys:** Arvio: kahdeksan pintaa heijastaa yhteensä noin $8 \cdot 1{,}3\,\% \approx 10\,\%$, joten läpi pääsee noin $90\,\%$. Ilman pinnoitteita jokainen pinta heijastaisi noin $4{,}26\,\%$, ja läpi pääsisi vain $(1 - 0{,}0426)^8 \approx 70{,}6\,\%$. Pinnoitteet lisäävät siis kennolle pääsevää valoa noin $19$ prosenttiyksikköä eli runsaan neljänneksen ($90{,}06 : 70{,}6 \approx 1{,}28$) ja vähentävät haamukuvia.
 
 ## fy7-14-L3-03
 **Annettu:** saippuakalvon taitekerroin $n = 1{,}33$, ilmaa molemmin puolin, voimakkaimmin heijastuvat aallonpituudet $\lambda_1 = 630\,\text{nm}$ ja $\lambda_2 = 450\,\text{nm}$, ei muita niiden välissä

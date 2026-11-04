@@ -313,7 +313,7 @@ Thomas Young teki 1800-luvun alussa kokeen, joka osoitti valon aaltoliikkeeksi. 
 </svg>
 
 ### Hila
-**Hila** on levy tai kalvo, jossa on suuri määrä tasavälisiä kapeita rakoja tai viivoja. Vierekkäisten rakojen etäisyys on **hilavakio** $d$. Koulun hiloissa on tavallisesti $100$, $300$ tai $600$ viivaa millimetrillä. Hilan kirkkaat maksimit syntyvät samoihin suuntiin kuin kaksoisraon kirkkaat juovat eli suuntiin, joissa vierekkäisten rakojen matkaero on kokonainen määrä aallonpituuksia. Silloin jokaisen raon aalto saapuu samassa vaiheessa. Jo vähän sivummalla eri rakojen aallot ovat eri vaiheissa ja kumoavat toisensa lähes kokonaan. Siksi hilan maksimit ovat kapeita ja kirkkaita, ja niiden välissä on lähes pimeää. Laserin valo piirtää varjostimelle teräviä pisteitä, joiden paikat voi mitata tarkasti.
+**Hila** on levy tai kalvo, jossa on suuri määrä tasavälisiä kapeita rakoja tai viivoja. Vierekkäisten rakojen etäisyys on **hilavakio** $d$. Koulun hiloissa on tavallisesti $100$, $300$ tai $600$ viivaa millimetrillä. Hilan kirkkaat maksimit syntyvät samoihin suuntiin kuin kaksoisraon kirkkaat juovat, kun rakojen väli on sama, eli suuntiin, joissa vierekkäisten rakojen matkaero on kokonainen määrä aallonpituuksia. Silloin jokaisen raon aalto saapuu samassa vaiheessa. Jo vähän sivummalla eri rakojen aallot ovat eri vaiheissa ja kumoavat toisensa lähes kokonaan. Siksi hilan maksimit ovat kapeita ja kirkkaita, ja niiden välissä on lähes pimeää. Laserin valo piirtää varjostimelle teräviä pisteitä, joiden paikat voi mitata tarkasti.
 
 <svg data-fig="pattern" viewBox="0 0 600 340" role="img" aria-label="Kuvaaja mittakaavassa: valon intensiteetti varjostimella suhteessa suurimpaan arvoon naapurirakojen matkaeron funktiona, kun matkaero on ilmaistu aallonpituuksina nollasta 3,2:een. Kaksoisraon katkoviivakäyrä vaihtelee tasaisesti: huiput kohdissa 0, 1, 2 ja 3 ja nollakohdat niiden puolivälissä. Kahdeksan raon hilan käyrä on samoissa kohdissa olevia kapeita ja korkeita huippuja, ja niiden välissä intensiteetti on lähes nolla. Rakojen leveyden vaikutus on jätetty pois." style="max-width:100%;font-size:24px">
   <line x1="156" y1="290" x2="156" y2="70" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -887,10 +887,10 @@ missä $d$ on hilavakio ($\text{m}$), $\theta$ maksimin suunta tulevan valon suu
   <rect x="185" y="24" width="10" height="39" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
   <rect x="185" y="77" width="10" height="126" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
   <rect x="185" y="217" width="10" height="99" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
-  <line x1="190" y1="70" x2="464" y2="192" stroke="#e64980" stroke-width="3" stroke-linecap="round"/>
-  <path d="M332.5,133.5 L318,133.5 L323,122.5 Z" fill="#e64980" stroke-linejoin="round"/>
-  <line x1="190" y1="210" x2="464" y2="332" stroke="#e64980" stroke-width="3" stroke-linecap="round"/>
-  <path d="M332.5,273.5 L318,273.5 L323,262.5 Z" fill="#e64980" stroke-linejoin="round"/>
+  <line x1="190" y1="70" x2="372.5" y2="151.5" stroke="#e64980" stroke-width="3" stroke-linecap="round"/>
+  <path d="M287,113 L272.5,113.5 L277.5,102.5 Z" fill="#e64980" stroke-linejoin="round"/>
+  <line x1="190" y1="210" x2="372.5" y2="291.5" stroke="#e64980" stroke-width="3" stroke-linecap="round"/>
+  <path d="M287,253 L272.5,253.5 L277.5,242.5 Z" fill="#e64980" stroke-linejoin="round"/>
   <line x1="190" y1="210" x2="430" y2="210" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
   <path d="M252,210 A62,62 0 0,1 246.5,235" fill="none" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
   <foreignObject x="261" y="210.5" width="26" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\theta$</div></foreignObject>
@@ -919,7 +919,7 @@ d = \frac{1\,\text{mm}}{N}
 Esimerkiksi kun millimetrillä on $300$ viivaa, $d = 1\,\text{mm} : 300 = 1 \cdot 10^{-3}\,\text{m} : 300 = 3{,}33 \cdot 10^{-6}\,\text{m}$ eli $3{,}33\,\mu\text{m}$. Mitä tiheämpi hila on, sitä pienempi on $d$ ja sitä suuremmassa kulmassa saman kertaluvun maksimi on.
 
 ### Kuinka monta maksimia syntyy
-Sinin arvo on enintään $1$, joten kertaluvun on täytettävä ehto $k\lambda \le d$. Tasarajalla valo kulkisi hilan pinnan suuntaisesti eikä osuisi varjostimelle. Esimerkiksi kun hilassa on $600$ viivaa millimetrillä ja valon aallonpituus on $650\,\text{nm}$, $d : \lambda = 1{,}667\,\mu\text{m} : 0{,}650\,\mu\text{m} = 2{,}56$. Maksimeja syntyy kertaluvuilla $k = 0, \pm 1, \pm 2$ eli viisi kappaletta.
+Sinin arvo on enintään $1$, joten kertaluvun on täytettävä ehto $k\lambda < d$. Tasarajalla $k\lambda = d$ valo kulkisi hilan pinnan suuntaisesti eikä osuisi varjostimelle. Esimerkiksi kun hilassa on $600$ viivaa millimetrillä ja valon aallonpituus on $650\,\text{nm}$, $d : \lambda = 1{,}667\,\mu\text{m} : 0{,}650\,\mu\text{m} = 2{,}56$. Maksimeja syntyy kertaluvuilla $k = 0, \pm 1, \pm 2$ eli viisi kappaletta.
 
 ### Kulma varjostimelta
 Kulmaa ei yleensä mitata suoraan, vaan varjostimelta mitataan etäisyyksiä. Kun varjostin on kohtisuorassa laserin sädettä vastaan etäisyydellä $L$ hilasta ja maksimi on etäisyydellä $x$ keskimaksimista, kuvan suorakulmaisesta kolmiosta saadaan

@@ -127,7 +127,7 @@
         "L": "varjostimen etäisyys L"
       },
       "units": {
-        "N": "1/mm",
+        "N": "viivaa/mm",
         "lambda": "nm",
         "L": "m"
       },
@@ -184,7 +184,7 @@
         "L": "varjostimen etäisyys L"
       },
       "units": {
-        "N": "1/mm",
+        "N": "viivaa/mm",
         "lambda": "nm",
         "L": "m"
       },
@@ -245,7 +245,7 @@
         "L": "varjostimen etäisyys L"
       },
       "units": {
-        "N": "1/mm",
+        "N": "viivaa/mm",
         "lambda": "nm",
         "L": "m"
       },

@@ -29,14 +29,14 @@
 **Järkevyys:** Kulma on lähellä $90^\circ$:ta, jossa läpi ei pääsisi mitään, joten läpi pääsee vain pieni osa valosta, noin $12\,\%$. Kulmalla $60^\circ$ läpi pääsisi $25\,\%$ eli $20\,\text{W/m}^2$, ja tulos on sitä pienempi, kuten pitää.
 
 ## fy7-15-L1-04
-**Annettu:** ilman taitekerroin $n_1 = 1{,}00$, veden taitekerroin $n_2 = 1{,}33$
+**Annettu:** ilman taitekerroin $n_1 = 1{,}00$, akryylin taitekerroin $n_2 = 1{,}49$
 **Kysytty:** Brewsterin kulma $\alpha_\text{B}$ asteina
-**Periaate:** Eristeen pinnasta heijastunut valo on täysin polarisoitunutta, kun tulokulma on Brewsterin kulma. Silloin heijastunut ja taittunut säde ovat kohtisuorassa toisiaan vastaan, ja taittumislaista saadaan Brewsterin laki. Valo tulee ilmasta ja heijastuu takaisin ilmaan, joten $n_1$ on ilman ja $n_2$ veden taitekerroin.
+**Periaate:** Eristeen pinnasta heijastunut valo on täysin polarisoitunutta, kun tulokulma on Brewsterin kulma. Silloin heijastunut ja taittunut säde ovat kohtisuorassa toisiaan vastaan, ja taittumislaista saadaan Brewsterin laki. Valo tulee ilmasta ja heijastuu takaisin ilmaan, joten $n_1$ on ilman ja $n_2$ akryylin taitekerroin.
 **Kaava:** $\tan\alpha_\text{B} = \dfrac{n_2}{n_1}$, josta $\alpha_\text{B} = \tan^{-1}\dfrac{n_2}{n_1}$
 **Muunnokset:** Ei tarvita: taitekertoimet ovat yksiköttömiä lukuja, ja kulma saadaan asteina.
-**Sijoitus:** $\alpha_\text{B} = \tan^{-1}\dfrac{1{,}33}{1{,}00} = \tan^{-1} 1{,}33 = 53{,}06^\circ$
-**Vastaus:** $53{,}1^\circ$, kolme merkitsevää numeroa kuten taitekertoimet.
-**Järkevyys:** Kun $n_2 > n_1$, on $\tan\alpha_\text{B} > 1$, joten kulman pitää olla yli $45^\circ$, kuten tuloksessa. Tarkistus: taitekulma on $90^\circ - 53{,}06^\circ = 36{,}94^\circ$, ja $1{,}00 \cdot \sin 53{,}06^\circ = 0{,}799 = 1{,}33 \cdot \sin 36{,}94^\circ$, joten taittumislaki toteutuu.
+**Sijoitus:** $\alpha_\text{B} = \tan^{-1}\dfrac{1{,}49}{1{,}00} = \tan^{-1} 1{,}49 = 56{,}13^\circ$
+**Vastaus:** $56{,}1^\circ$, kolme merkitsevää numeroa kuten taitekertoimet.
+**Järkevyys:** Kun $n_2 > n_1$, on $\tan\alpha_\text{B} > 1$, joten kulman pitää olla yli $45^\circ$, kuten tuloksessa. Tarkistus: taitekulma on $90^\circ - 56{,}13^\circ = 33{,}87^\circ$, ja $1{,}00 \cdot \sin 56{,}13^\circ = 0{,}830 = 1{,}49 \cdot \sin 33{,}87^\circ$, joten taittumislaki toteutuu.
 
 ## fy7-15-L1-05
 **Annettu:** ilman taitekerroin $n_1 = 1{,}00$, timantin taitekerroin $n_2 = 2{,}42$
@@ -46,7 +46,7 @@
 **Muunnokset:** Ei tarvita: taitekertoimet ovat yksiköttömiä lukuja.
 **Sijoitus:** $\alpha_\text{B} = \tan^{-1}\dfrac{2{,}42}{1{,}00} = \tan^{-1} 2{,}42 = 67{,}55^\circ$
 **Vastaus:** $67{,}5^\circ$, kolme merkitsevää numeroa kuten taitekertoimet.
-**Järkevyys:** Timantin taitekerroin on paljon suurempi kuin veden, joten Brewsterin kulman pitää olla suurempi kuin veden $53{,}1^\circ$, mutta alle $90^\circ$, kuten tuloksessa. Tarkistus: $\tan 67{,}55^\circ = 2{,}42$.
+**Järkevyys:** Timantin taitekerroin on paljon suurempi kuin akryylin, joten Brewsterin kulman pitää olla suurempi kuin akryylin $56{,}1^\circ$, mutta alle $90^\circ$, kuten tuloksessa. Tarkistus: $\tan 67{,}55^\circ = 2{,}42$.
 
 ## fy7-15-L2-01
 **Annettu:** polarisoimattoman valon intensiteetti $I_0 = 900\,\text{W/m}^2$, polarisaattorien läpäisysuuntien välinen kulma $\theta = 40{,}0^\circ$

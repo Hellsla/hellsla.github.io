@@ -96,7 +96,7 @@
 **Muunnokset:** Ei tarvita: pituudet ovat kilometreinä ja vaimennukset desibeleinä.
 **Sijoitus:** $l_\text{max} = \dfrac{20\,\text{dB}}{0{,}18\,\text{dB/km}} = 111{,}1\,\text{km}$, joten $\dfrac{L}{l_\text{max}} = \dfrac{1172\,\text{km}}{111{,}1\,\text{km}} = 10{,}55$. Osuuksia tarvitaan siis $k = 11$, ja vahvistimia $11 - 1 = 10$.
 **Vastaus:** vähintään $10$ vahvistinta. Lukumäärä on kokonaisluku, ja se pyöristetään ylöspäin osuuksien määränä, koska $10$ osuutta olisi liian pitkiä.
-**Järkevyys:** Koko kaapelin vaimennus olisi ilman vahvistimia $0{,}18\,\text{dB/km} \cdot 1172\,\text{km} = 211\,\text{dB}$, ja $211\,\text{dB} : 20\,\text{dB} \approx 10{,}5$ osuutta. Osuuden pituus $1172\,\text{km} : 11 = 107\,\text{km}$ sopii todellisten yhteyksien vahvistinväliin $50$–$100\,\text{km}$:n luokkaa.
+**Järkevyys:** Koko kaapelin vaimennus olisi ilman vahvistimia $0{,}18\,\text{dB/km} \cdot 1172\,\text{km} = 211\,\text{dB}$, ja $211\,\text{dB} : 20\,\text{dB} \approx 10{,}5$ osuutta. Osuuden pituus $1172\,\text{km} : 11 = 107\,\text{km}$ on hieman yli todellisten yhteyksien tyypillisen $50$–$100\,\text{km}$:n vahvistinvälin.
 
 ## fy7-16-L3-02
 **Annettu:** taajuus $f = 25\,\text{kHz}$, magneettivuon tiheyden huippuarvo $B_0 = 4{,}0\,\text{mT}$, silmukan säde $r = 8{,}0\,\text{cm}$, silmukan resistanssi $R = 0{,}050\,\Omega$, kenttä homogeeninen ja kohtisuorassa pohjaa vastaan
@@ -106,7 +106,7 @@
 **Muunnokset:** $f = 25\,\text{kHz} = 25 \cdot 1000\,\text{Hz} = 2{,}5 \cdot 10^{4}\,\text{Hz}$, $B_0 = 4{,}0\,\text{mT} = 4{,}0 \cdot 10^{-3}\,\text{T}$ ja $r = 8{,}0\,\text{cm} = 8{,}0 \cdot 0{,}01\,\text{m} = 0{,}080\,\text{m}$. Lopuksi $1\,\text{kW} = 1000\,\text{W}$.
 **Sijoitus:** $e_0 = 2\pi \cdot 2{,}5 \cdot 10^{4}\,\text{Hz} \cdot 4{,}0 \cdot 10^{-3}\,\text{T} \cdot \pi \cdot (0{,}080\,\text{m})^2 = 12{,}63\,\text{V}$, joten $P = \dfrac{(12{,}63\,\text{V})^2}{2 \cdot 0{,}050\,\Omega} = 1596\,\text{W} = 1{,}596\,\text{kW}$
 **Vastaus:** $1{,}6\,\text{kW}$, kaksi merkitsevää numeroa kuten vuon tiheys $4{,}0\,\text{mT}$, säde $8{,}0\,\text{cm}$ ja resistanssi $0{,}050\,\Omega$.
-**Järkevyys:** Tehollinen jännite on $12{,}63\,\text{V} : \sqrt{2} = 8{,}93\,\text{V}$ ja tehollinen virta $8{,}93\,\text{V} : 0{,}050\,\Omega = 179\,\text{A}$; teho $8{,}93\,\text{V} \cdot 179\,\text{A} \approx 1600\,\text{W}$ täsmää. Tulos on keittoalueen tehon suuruusluokkaa; malli on karkea, koska todelliset pyörrevirrat jakautuvat koko pohjaan.
+**Järkevyys:** Tehollinen jännite on $12{,}63\,\text{V} : \sqrt{2} = 8{,}93\,\text{V}$ ja tehollinen virta $8{,}93\,\text{V} : 0{,}050\,\Omega = 179\,\text{A}$; teho $8{,}93\,\text{V} \cdot 179\,\text{A} \approx 1600\,\text{W}$ täsmää. Tulos on keittoalueen tehon suuruusluokkaa; pyörrevirran oma kenttä pienentää todellisuudessa virtaa, joten tulos on yläraja.
 
 ## fy7-16-L3-03
 **Annettu:** lähetetty teho $P_0 = 1{,}0\,\text{mW}$, pienin tarvittava teho $P = 10\,\mu\text{W}$, vaimennuskerroin $a = 0{,}20\,\text{dB/km}$, neljä liitosta, joista kukin vaimentaa $0{,}50\,\text{dB}$, lasin taitekerroin $n = 1{,}47$, valon nopeus tyhjiössä $c = 3{,}00 \cdot 10^8\,\text{m/s}$

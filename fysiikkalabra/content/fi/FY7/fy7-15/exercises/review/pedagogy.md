@@ -1,19 +1,19 @@
-VERDICT: FAIL
-CONTENT-HASH: 65b809c8004384e8
+VERDICT: PASS
+CONTENT-HASH: 3d1522308c46aedd
 
 ## Blocking
-- exercises.json fy7-15-L1-04 (and solutions.md L1-04) — the lesson's Brewster paragraph states "Ilmasta veteen (n2 = 1,33) Brewsterin kulma on 53,1°", so the answer is given before the student acts and the task repeats the lesson's own example — change the medium to one the lesson does not work, e.g. akryyli  = 1{,}49$ (answer 56,1°) or etanoli 1,36 (53,7°), and update solution, answer and tolerance.
+(none)
 
 ## Polish
-- fy7-15-L2-01 — the lesson example with other numbers (840 W/m², 35° → 900 W/m², 40°). Make it a variation, e.g. given the final intensity find the angle, or an unpolarised source with the film angle unknown.
-- All twelve tasks are numeric; the LOPS goal is "kvalitatiivisesti", and the only qualitative explanation (lesson check 3) is optional. Add a level 2 or 3 short-answer item (which way glare is polarised, why a rotated phone screen turns black) if the format allows.
-- L1-02 and L1-03 differ only in numbers; replace L1-03 by a "cos² read-off" item (what share passes at 70°, then at 20°) or keep the set but note level 1 is purely plug-in (acceptable at five tasks).
+- fy7-15-L2-04 — glass 1,50 and its Brewster angle 56,3° are stated in the lesson, so the task is a one-step subtraction from a known value; use another medium (e.g. kvartsilasi 1,46) to keep it a task.
+- fy7-15-L2-01 — still the lesson example with new numbers (840 W/m², 35° vs 900 W/m², 40°); a variation (find the angle from the final intensity) would be better.
+- All twelve tasks numeric; no short qualitative item for "kvalitatiivisesti" (acceptable, optional).
 
 ## Checked
-- Level spread 5/4/3: L1 single formula; L2 two steps or rearrangement (angle from share, n from angle, refracted angle); L3 reasoning in new contexts (three films, light from under water with n1/n2 swapped, background offset).
-- L3-02 requires the student to recognise which medium is n1; the solution explains it and checks with the critical angle.
-- L3-03 follows the lesson's measurement section; solution separates background from signal.
-- Solutions: each has Annettu to Järkevyys, the principle explained not only named; sanity checks are real (bounds, cross-check by refraction law).
-- Answers verified by hand: L1-03 9,36; L2-01 264; L2-04 33,7°; L3-01 75,0; L3-03 117.
-- Finnish and units: no errors; cases after number+unit correct.
+- Round-1 blocker fixed: L1-04 now akryyli 1,49 (56,1°), solution, Järkevyys (taitekulma 33,87°, refraction-law check) and L1-05's comparison updated; the lesson no longer works acrylic.
+- Level counts 5/4/3; L1 single formula, L2 rearrangement or two steps, L3 new contexts (three films, light from under water, background offset).
+- Every solution has Annettu to Järkevyys with the principle explained, not only named; L3-02 explains which medium is n1 and checks with the critical angle.
+- Answers spot-checked: L1-03 9,36; L1-04 56,1; L2-01 264; L3-01 75,0; L3-03 117.
+- Finnish, units and cases after number+unit correct.
+- Captures not opened (checks already pass 360 px layout).
 - Hash unchanged at end.

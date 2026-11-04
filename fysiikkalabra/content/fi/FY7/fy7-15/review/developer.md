@@ -1,11 +1,16 @@
 VERDICT: DONE
 
-Drafted fy7-15 *Valon polarisaatio* (resumed after an interrupted run; the earlier draft was kept and completed).
+Fix round 1 for fy7-15 *Valon polarisaatio*.
 
-- `lesson.md`: opening illustration, Ydinajatus (transverse wave, polariser/analyser, unpolarised light halves), Kaava: Malusin laki, Brewsterin laki (tan α_B = n₂ : n₁, reflected ⊥ refracted), applications (sunglasses, LCD, 3D glasses), seven-stage worked example, misconception (incl. three-polariser surprise), summary. Fix in this run: the substitution block of the worked example now opens with the solved formula in symbols (lint human rule 2).
-- `inquiry.json`: prediction, sim experiment (two/three polarisers), I vs cos²θ fit graph (`fy7-15/fit`), transfer, checks.
-- `exercises/exercises.json` 5/4/3 with `solutions.md` complete; every answer in `lessons/FY7/fy7-15/answers.py`; lesson numbers in `lesson-answers.py`; figures in `figures.py`.
-- `exit-ticket.json`, `meta.json`.
-- Sim `assets/sims/fy7/fy7-15/sim.js` (all canvas words via `__()`, keys in `lang/fi.json` `sims.fy7-15`), tests `tests/sims/fy7-15.json`, `sim-spec.md`.
+## Blocking
+- science, lesson.md "Yleinen virhekäsitys" — the third misconception now reads "Kolmas virhe on kuvitella, että lisäkalvo voi vain vähentää läpi tulevaa valoa." The rest of the paragraph is unchanged.
 
-`check_lesson.py fy7-15` all ok; `check_layout --width 340` OK; `check_solutions` ok. Palette warnings are the brief's ray colour #e64980 and grey normals.
+## Polish applied
+- pedagogy + visual, Esimerkki "Järkevyys" — "Lähtevästä valosta" is now "Alkuperäisestä valosta ($840\,\text{W/m}^2$) läpi pääsee noin kolmannes."
+- pedagogy, inquiry.json "mittaus" — the task text no longer gives the slope $A = 360{,}7\,\text{lx}$. It gives only $\Delta A$ and $B$, so the student reads the slope from the fitted line in `fy7-15/fit`. The solution's Annettu line now matches, and its graph-reading step says the exact value comes from the program. The answer 360,7 and its 2 % tolerance are unchanged; a graph reading of about 360 lx passes.
+- visual, sim-1280 — the slider label `sims.fy7-15.p2_pois` in lang/fi.json is shortened to "$\text{P}_2$ (pois): θ₂ = …°" so it fits on one line.
+
+## Not done (teacher's call or optional)
+- Malus scope beyond "kvalitatiivisesti"; making "pohdi" required; the ennuste-yksi gloss; exit-ticket Q1 medium; glare-figure tint; "voi näkyä mustana".
+
+`python3 scripts/check_lesson.py fy7-15`: all ok.

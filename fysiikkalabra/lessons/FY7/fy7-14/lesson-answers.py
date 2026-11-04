@@ -57,7 +57,7 @@ for k in (1, 2, 3):
 # hook / figure: the colour bands; koe-3 at d = 200 nm, soap film: destructive 2nd = λ
 a["koe3-opd"] = 2 * NS * 200                         # 532 nm cancelled
 for lam in (400, 450, 500, 532, 550, 600, 650, 700):
-    a[f"koe3-R-{lam}"] = R(200, lam, NS, 1.0) * 100  # 400: 6,8 %, 532: 0, 700: 3,9 %
+    a[f"koe3-R-{lam}"] = R(200, lam, NS, 1.0) * 100  # 400: 5,8 %, 532: 0, 700: 3,8 %
 # koe-1: soap film, λ = 550 nm, d = 0, 50, 103, 150, 207
 for d in (0, 50, 100, 103, 150, 200, 207, 310):
     a[f"koe1-R-{d}"] = R(d, 550, NS, 1.0) * 100
@@ -68,7 +68,7 @@ for d in (0, 50, 100, 150, 199):
     a[f"koe2-R-{d}"] = R(d, 550, NC, NG) * 100
 a["koe2-half"] = 550 / (2 * NC)                      # 199,3 nm: the half-wave layer reflects like bare glass
 # ennuste-ohut feedback: d = 20 nm soap film at 550 nm
-a["thin-20"] = R(20, 550, NS, 1.0) * 100             # 0,5 %
+a["thin-20"] = R(20, 550, NS, 1.0) * 100             # 0,74 %
 # virhe: the student's wrong thickness λ / (2n) for the coating
 a["virhe-wrong"] = 550 / (2 * NC)                    # 199,3 nm
 a["virhe-right"] = 550 / (4 * NC)                    # 99,64 nm

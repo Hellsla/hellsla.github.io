@@ -52,7 +52,7 @@
 **Annettu:** aallonpituus $\lambda = 450\,\text{nm}$, viivatiheys $N = 600$ viivaa millimetrillä
 **Kysytty:** varjostimelle syntyvien valopisteiden lukumäärä
 **Periaate:** Jokainen maksimi on yksi valopiste. Hilayhtälön mukaan $\sin\theta = k\lambda : d$, ja koska sini on enintään $1$, maksimi syntyy vain kertaluvuilla, joille $k\lambda < d$. Keskimaksimin kummallakin puolella on yhtä monta maksimia.
-**Kaava:** $d = \dfrac{1\,\text{mm}}{N}$ ja $k \le \dfrac{d}{\lambda}$; pisteitä on $2k_\text{max} + 1$, missä $k_\text{max}$ on suurin ehdon täyttävä kokonaisluku.
+**Kaava:** $d = \dfrac{1\,\text{mm}}{N}$ ja $k < \dfrac{d}{\lambda}$; pisteitä on $2k_\text{max} + 1$, missä $k_\text{max}$ on suurin ehdon täyttävä kokonaisluku.
 **Muunnokset:** $d = 1 \cdot 10^{-3}\,\text{m} : 600 = 1{,}667 \cdot 10^{-6}\,\text{m}$ ja $450\,\text{nm} = 450 \cdot 10^{-9}\,\text{m}$.
 **Sijoitus:** $\dfrac{d}{\lambda} = \dfrac{1{,}667 \cdot 10^{-6}\,\text{m}}{450 \cdot 10^{-9}\,\text{m}} = 3{,}70$, joten $k_\text{max} = 3$ ja pisteitä on $2 \cdot 3 + 1 = 7$.
 **Vastaus:** $7$ valopistettä: keskimaksimi ja kertaluvut $\pm 1$, $\pm 2$ ja $\pm 3$. Vastaus on kokonaisluku, joten pyöristystä ei tarvita.

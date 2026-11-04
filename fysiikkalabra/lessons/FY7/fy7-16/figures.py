@@ -48,9 +48,10 @@ def field_line(R, level, rho_max=60.0, steps=120):
     return pts
 
 
-def _coil_mark(f, x, y, into, r=7):
-    """A wire bundle in cross-section: copper with the current's direction in violet (× into the page, • out of it)."""
-    f.circle(x, y, r, COPPER, INK, 1.5)
+def _coil_mark(f, x, y, into, r=7, fill=COPPER):
+    """A wire bundle in cross-section: a copper disc with the current's direction in white (× into the page, • out
+    of it); fill=CURRENT marks an eddy current in the pan bottom in violet, apart from the coil's copper."""
+    f.circle(x, y, r, fill, INK, 1.5)
     if into:
         d = r * 0.55
         f.line(x - d, y - d, x + d, y + d, WHITE, 2.5); f.line(x - d, y + d, x + d, y - d, WHITE, 2.5)
@@ -68,7 +69,7 @@ def _panel(f, cx, z_rx, tag, R=20.0, R2=20.0, s=4.0, y0=262):
     py = Y(z_rx)
     f.rect(cx - 30 * s, py - 36, 60 * s, 30, IRON, INK, 2, 6)
     ref = flux(R, R2, 3.0)                                   # flux through the receiver at 3 mm
-    step = ref / 6
+    step = ref / 6.5                                         # 6 lines at 3 mm, none exactly on the receiver wire
     phi_rx = flux(R, R2, z_rx)
     f.add(f'<g clip-path="url(#fy716-clip-{tag})">')
     for k in range(1, 15):
@@ -87,24 +88,30 @@ def _panel(f, cx, z_rx, tag, R=20.0, R2=20.0, s=4.0, y0=262):
     # coils: transmitter current into the page on the right, out on the left -> field up through the middle
     _coil_mark(f, X(R), Y(0), True); _coil_mark(f, X(-R), Y(0), False)
     f.circle(X(R2), py, 6, COPPER, INK, 1.5); f.circle(X(-R2), py, 6, COPPER, INK, 1.5)
+    f.tex(cx, py - 21, r"\text{puhelin}", "middle", bg=True)
     return phi_rx / ref
 
 
 def charger():
-    f = Fig("fy716-charger", 350, "Periaatekuva langattomasta laturista sivulta leikattuna, kentän muoto laskettu: "
+    f = Fig("fy716-charger", 380, "Periaatekuva langattomasta laturista sivulta leikattuna, kentän muoto laskettu: "
             "kaksi paneelia. Kummassakin alhaalla on latausalusta, jonka sisällä lähetinkäämi, ja sen yläpuolella "
             "puhelin, jonka pohjassa on samankokoinen vastaanotinkäämi. Lähetinkäämin vaihtovirta synnyttää "
             "magneettikentän, jonka vihreät kenttäviivat kiertävät käämin johtimien ympäri ja kulkevat käämin keskeltä "
-            "ylöspäin. Vasemmalla puhelin on 3 millimetrin päässä, ja kuusi kenttäviivaa kulkee vastaanotinkäämin läpi. "
+            "ylöspäin; vihreä kolmio käämin keskellä näyttää kentän suunnan. Vasemmalla puhelin on 3 millimetrin päässä, ja kuusi kenttäviivaa kulkee vastaanotinkäämin läpi. "
             "Oikealla puhelin on 20 millimetrin päässä, ja vastaanottimen läpi kulkee vain yksi viiva; muut viivat "
             "kääntyvät takaisin jo ennen puhelinta. Vastaanottimen läpi kulkevat viivat on piirretty tummemmin.")
     _panel(f, 150, 3.0, "a")
     _panel(f, 450, 20.0, "b")
-    f.line(300, 24, 300, 330, RULE, 1.5, "6 5")
+    f.line(300, 24, 300, 366, RULE, 1.5, "6 5")
     f.tex(150, 32, r"z = 3\,\text{mm}", "middle", w=150)
     f.tex(450, 32, r"z = 20\,\text{mm}", "middle", w=160)
     f.tex(150, 318, r"\text{laturi}", "middle", w=100)
     f.tex(450, 318, r"\text{laturi}", "middle", w=100)
+    # the two coils named once each: the transmitter in the left panel, the receiver in the right one
+    f.tex(8, 352, r"\text{lähetinkäämi}", "start")
+    f.line(42, 340, 66, 270, MUTED, 1.5)
+    f.tex(306, 100, r"\text{vastaanotinkäämi}", "start", bg=True)
+    f.line(344, 112, 367, 175, MUTED, 1.5)
     return f.svg()
 
 
@@ -113,7 +120,8 @@ def hob():
             "teräskattila, jossa on vettä. Kattila seisoo lieden lasilevyllä, ja lasin alla on litteä kuparikela. "
             "Kelan vaihtovirta synnyttää vaihtuvan magneettikentän, jonka vihreät kenttäviivat kiertävät kelan "
             "johtimien ympäri; uloimmat kulkevat lasin läpi kattilan pohjaan. Kattilan pohjassa kiertää pyörrevirta "
-            "vastakkaiseen suuntaan kuin kelan virta, mikä on merkitty violeteilla pisteillä ja risteillä. "
+            "vastakkaiseen suuntaan kuin kelan virta. Kelan virran suunta on merkitty kuparinvärisiin johtimiin "
+            "valkoisilla pisteillä ja risteillä, pyörrevirran suunta violetteihin merkkeihin. "
             "Oranssit nuolet näyttävät, että energia siirtyy kuumenevasta pohjasta veteen. Lasilevyssä ei kulje "
             "virtaa.")
     cx = 300
@@ -132,8 +140,8 @@ def hob():
     f.add('<g>')
     # eddy currents in the pan bottom: opposite to the coil's current
     for x in (196, 232, 268):
-        _coil_mark(f, 2 * cx - x, 180, False, r=6.5)
-        _coil_mark(f, x, 180, True, r=6.5)
+        _coil_mark(f, 2 * cx - x, 180, False, r=6.5, fill=CURRENT)
+        _coil_mark(f, x, 180, True, r=6.5, fill=CURRENT)
     f.add('</g>')
     # coil under the glass: copper turns, current out of the page on the right, into it on the left
     for x in (196, 222, 248, 274):
@@ -145,7 +153,7 @@ def hob():
     # labels with leaders
     f.tex(470, 100, r"\text{vesi}", "start", color=INK)
     f.line(436, 100, 466, 100, MUTED, 1.5)
-    f.tex(20, 120, r"\text{teräskattila}", "start")
+    f.tex(12, 120, r"\text{teräskattila}", "start")
     f.line(80, 136, 138, 160, MUTED, 1.5)
     f.tex(20, 300, r"\text{lasi}", "start")
     f.line(46, 286, 70, 218, MUTED, 1.5)

@@ -10,8 +10,8 @@ a = {}
 a["fy7-15-L1-01"] = 640 / 2                                  # unpolarised 640 W/m² through one polariser: 320 W/m²
 a["fy7-15-L1-02"] = 200 * cos(radians(30.0)) ** 2            # polarised 200 W/m², 30,0°: 150 W/m²
 a["fy7-15-L1-03"] = 80.0 * cos(radians(70.0)) ** 2           # polarised 80,0 W/m², 70,0°: 9,358 W/m² -> 9,36
-a["fy7-15-L1-04"] = degrees(atan(1.33 / 1.00))               # air -> water: α_B = 53,06° -> 53,1°
-a["fy7-15-L1-05"] = degrees(atan(2.42 / 1.00))               # air -> diamond: α_B = 67,55° -> 67,6°
+a["fy7-15-L1-04"] = degrees(atan(1.49 / 1.00))               # air -> acrylic: α_B = 56,13° -> 56,1°
+a["fy7-15-L1-05"] = degrees(atan(2.42 / 1.00))               # air -> diamond: α_B = 67,548° -> 67,5°
 # Level 2: two steps, a rearrangement or a conversion
 a["fy7-15-L2-01"] = 900 / 2 * cos(radians(40.0)) ** 2        # unpolarised 900 W/m², two polarisers at 40,0°: 264,07 W/m²
 a["fy7-15-L2-02"] = degrees(acos(sqrt(0.250)))               # I / I0 = 0,250 = cos² θ: θ = 60,0°

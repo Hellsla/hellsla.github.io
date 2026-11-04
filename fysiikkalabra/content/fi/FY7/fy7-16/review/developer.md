@@ -1,11 +1,8 @@
 VERDICT: DONE
-Draft completed from the files an interrupted developer left behind (kept: lesson text, inquiry, exercises 5/4/3, solutions, answers.py, lesson-answers.py, figures.py, sim.js, lang and glossary keys).
+Round-1 fixes (science, visual blocking; listed polish).
 
-- lesson.md: figures written in from figures.py; the worked example's Sijoitus starts from the symbolic formulas ($A = aL$, $P = P_0 \cdot 10^{-A/10\,\text{dB}}$).
-- figures.py: empty field-line paths skipped (console error); induction-hob field lines redrawn as closed loops around each side of the coil; eddy-current label moved off the pan wall.
-- sim.js: axis title and transmitter label inside the canvas at 360 px; labels get a background so field lines never cross them; "puhelin" and "laturi" moved off the axis and the coil wires.
-- sim-spec.md and tests/sims/fy7-16.json (21 assertions: load state, sliders, DOM order, legend, adapter, Φ0, e0 at five distances and three radii, the share, field-line counts, readout and slider labels) written; expected values from lesson-answers.py's model.
-- exercises.json, solutions.md: `{}^\circ\text{C}` (KaTeX parse error); L3-02 solution trimmed under 220 words.
-- inquiry.json: siirto substitution as a colon chain (overflowed at 340 px); option lengths balanced in ennuste-kattila and check-1.
-
-Not done here: `figcat.py build` (catalog under docs/), en/fi-easy sim strings (translation stage).
+- sim.js: the field-line step is now Φ(20, 20, 3) : 6,5, so no line sits exactly on the receiver wire. At z = 3 mm, R1 = 20 mm six lines are drawn dark and the readout says 6. At 20 mm it is still 1. tests/sims unchanged and passing.
+- figures.py, charger: the same step of 6,5. Labels $\text{puhelin}$ (both phones), $\text{lähetinkäämi}$ (left) and $\text{vastaanotinkäämi}$ (right), all at 24 px with leaders. The aria-label names the green triangle. Height 350 → 380.
+- figures.py, hob: eddy-current marks are now violet #7048e8, and the coil's current marks are copper. The aria-label says so. The "teräskattila" label moved 8 px left.
+- lesson.md: one sentence before the charger figure explains the green lines, the triangle and the darker lines. The decibel clause now says that losses in series add in dB while their power ratios multiply. The Järkevyys sentence no longer starts with a number. Figures regenerated.
+- inquiry.json: Φ0 headers are `$\Phi_0\ (\mu\text{Wb})$`. In ennuste-kela, the koe-2 intro (now adds 35 mm), the johtopäätös model and criterion 3, the voltage grows to about 35 mm (1,25 V) and then falls, so each distance has its own best coil size (values from lesson-answers.py sim-e0-35-20mm). Both check-1 feedbacks now say "samalla kelan virralla", and "eikä pohja lämpene" became "pohja lämpenee vain vähän".

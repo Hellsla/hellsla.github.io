@@ -96,7 +96,7 @@
         {
           "text": "Suurella käämillä, koska sen kenttä ulottuu kauemmas.",
           "correct": true,
-          "feedback": "Mallin arvot tukevat tätä: säteen $40\\,\\text{mm}$ käämillä jännite oli $1{,}23\\,\\text{V}$, kun $20\\,\\text{mm}$:n käämillä se oli $0{,}869\\,\\text{V}$ ja $10\\,\\text{mm}$:n käämillä $0{,}285\\,\\text{V}$. Suuren käämin kenttäviivat kaartuvat laajemmin ja ulottuvat kauemmas."
+          "feedback": "Mallin arvot tukevat tätä: säteen $40\\,\\text{mm}$ käämillä jännite oli $1{,}23\\,\\text{V}$, kun $20\\,\\text{mm}$:n käämillä se oli $0{,}869\\,\\text{V}$ ja $10\\,\\text{mm}$:n käämillä $0{,}285\\,\\text{V}$. Suuren käämin kenttäviivat kaartuvat laajemmin ja ulottuvat kauemmas. Kasvu ei kuitenkaan jatku loputtomiin: säteellä $35\\,\\text{mm}$ jännite on $1{,}25\\,\\text{V}$ ja säteellä $40\\,\\text{mm}$ jo hieman pienempi, joten kullakin etäisyydellä on oma paras käämin koko."
         },
         {
           "text": "Kaikilla yhtä suuri, koska kierrokset ja virta ovat samat.",
@@ -201,7 +201,7 @@
       "measure": [
         {
           "key": "phi0",
-          "label": "Φ_0 (µWb)"
+          "label": "$\\Phi_0\\ (\\mu\\text{Wb})$"
         },
         {
           "key": "e0",
@@ -242,7 +242,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 2: lähetinkäämin koko",
-      "intro": "Testaa ennuste 2. Etäisyys on $20\\,\\text{mm}$; muuta vain lähetinkäämin sädettä $R_1$. Kirjaa ainakin säteet $10\\,\\text{mm}$, $20\\,\\text{mm}$, $30\\,\\text{mm}$ ja $40\\,\\text{mm}$. Katso, miltä kenttäviivat näyttävät suurella ja pienellä käämillä.",
+      "intro": "Testaa ennuste 2. Etäisyys on $20\\,\\text{mm}$; muuta vain lähetinkäämin sädettä $R_1$. Kirjaa ainakin säteet $10\\,\\text{mm}$, $20\\,\\text{mm}$, $30\\,\\text{mm}$, $35\\,\\text{mm}$ ja $40\\,\\text{mm}$. Katso, miltä kenttäviivat näyttävät suurella ja pienellä käämillä.",
       "initial": {
         "z": 20,
         "R1": 10
@@ -262,7 +262,7 @@
       "measure": [
         {
           "key": "phi0",
-          "label": "Φ_0 (µWb)"
+          "label": "$\\Phi_0\\ (\\mu\\text{Wb})$"
         },
         {
           "key": "e0",
@@ -281,11 +281,11 @@
         "koe-2"
       ],
       "prompt": "Kirjoita taulukoidesi perusteella: miten vastaanotinkäämin jännite muuttuu, kun etäisyys kasvaa, ja miten lähetinkäämin koko vaikuttaa siihen $20\\,\\text{mm}$:n päässä? Selitä kenttäviivojen avulla, miksi.",
-      "model": "Kun lähetinkäämin säde oli $20\\,\\text{mm}$, jännite pieneni etäisyyden kasvaessa jyrkästi: $3\\,\\text{mm}$:n päässä se oli $4{,}40\\,\\text{V}$, $10\\,\\text{mm}$:n päässä $1{,}96\\,\\text{V}$, $20\\,\\text{mm}$:n päässä $0{,}869\\,\\text{V}$ ja $30\\,\\text{mm}$:n päässä $0{,}445\\,\\text{V}$. Lähettimen kenttäviivat kiertävät käämin johtimien ympäri ja kääntyvät takaisin jo lähellä käämiä, joten kauempana yhä harvempi viiva kulkee vastaanottimen läpi ja vuo pienenee. $20\\,\\text{mm}$:n päässä suurempi lähetinkäämi antoi suuremman jännitteen: säteellä $10\\,\\text{mm}$ $0{,}285\\,\\text{V}$, $20\\,\\text{mm}$ $0{,}869\\,\\text{V}$, $30\\,\\text{mm}$ $1{,}21\\,\\text{V}$ ja $40\\,\\text{mm}$ $1{,}23\\,\\text{V}$, koska suuren käämin kenttäviivat ulottuvat kauemmas. Langaton lataus toimii siis hyvin vain, kun käämien väli on pieni verrattuna käämien kokoon. Arvot ovat mallin laskemia.",
+      "model": "Kun lähetinkäämin säde oli $20\\,\\text{mm}$, jännite pieneni etäisyyden kasvaessa jyrkästi: $3\\,\\text{mm}$:n päässä se oli $4{,}40\\,\\text{V}$, $10\\,\\text{mm}$:n päässä $1{,}96\\,\\text{V}$, $20\\,\\text{mm}$:n päässä $0{,}869\\,\\text{V}$ ja $30\\,\\text{mm}$:n päässä $0{,}445\\,\\text{V}$. Lähettimen kenttäviivat kiertävät käämin johtimien ympäri ja kääntyvät takaisin jo lähellä käämiä, joten kauempana yhä harvempi viiva kulkee vastaanottimen läpi ja vuo pienenee. $20\\,\\text{mm}$:n päässä jännite kasvoi lähetinkäämin säteen kasvaessa noin $35\\,\\text{mm}$:iin asti ja pieneni sitten hieman: säteellä $10\\,\\text{mm}$ $0{,}285\\,\\text{V}$, $20\\,\\text{mm}$ $0{,}869\\,\\text{V}$, $30\\,\\text{mm}$ $1{,}21\\,\\text{V}$, $35\\,\\text{mm}$ $1{,}25\\,\\text{V}$ ja $40\\,\\text{mm}$ $1{,}23\\,\\text{V}$. Suuren käämin kenttäviivat ulottuvat kauemmas, mutta hyvin suuren käämin kenttä on keskeltä heikompi, joten kullakin etäisyydellä on paras käämin koko. Langaton lataus toimii siis hyvin vain, kun käämien väli on pieni verrattuna käämien kokoon. Arvot ovat mallin laskemia.",
       "criteria": [
         "Kerroin, että jännite pieneni etäisyyden kasvaessa jyrkästi, ja käytin taulukon arvoja.",
         "Selitin, että yhä harvempi kenttäviiva ja siis yhä pienempi vuo kulkee vastaanottimen läpi.",
-        "Kerroin, että suurempi lähetinkäämi antoi suuremman jännitteen 20 millimetrin päässä.",
+        "Kerroin, että 20 millimetrin päässä jännite kasvoi lähetinkäämin säteen kasvaessa noin 35 millimetriin asti ja pieneni sitten hieman.",
         "Totesin, että käämien välin on oltava pieni verrattuna käämien kokoon."
       ]
     },
@@ -425,11 +425,11 @@
         {
           "text": "Ferromagneettinen teräs kokoaa vuon, ja pyörrevirrat kulkevat ohuessa kerroksessa, jonka resistanssi on suuri.",
           "correct": true,
-          "feedback": "Oikein. Teräksessä pyörrevirtojen reitti on ohut ja resistanssiltaan suuri, joten sähköenergiaa muuttuu paljon sisäenergiaksi. Alumiini ei ole ferromagneettista ja johtaa erittäin hyvin, joten virrat leviävät eikä pohja lämpene."
+          "feedback": "Oikein. Teräksessä pyörrevirtojen reitti on ohut ja resistanssiltaan suuri, joten samalla kelan virralla sähköenergiaa muuttuu paljon sisäenergiaksi. Alumiini ei ole ferromagneettista ja johtaa erittäin hyvin, joten virrat leviävät ja pohja lämpenee vain vähän."
         },
         {
           "text": "Alumiini on niin hyvä johde, ettei siihen voi indusoitua pyörrevirtoja lainkaan, vaikka vuo muuttuu.",
-          "feedback": "Alumiiniin indusoituu pyörrevirtoja, kuten pyörrevirtajarruissa. Hyvässä johteessa resistanssi on kuitenkin pieni, joten virrat muuttavat vähän sähköenergiaa sisäenergiaksi. Teräksessä ferromagneettisuus ja suurempi resistanssi tekevät lämpenemisestä tehokasta."
+          "feedback": "Alumiiniin indusoituu pyörrevirtoja, kuten pyörrevirtajarruissa. Hyvässä johteessa resistanssi on kuitenkin pieni, joten samalla kelan virralla virrat muuttavat vähän sähköenergiaa sisäenergiaksi. Teräksessä ferromagneettisuus ja suurempi resistanssi tekevät lämpenemisestä tehokasta."
         },
         {
           "text": "Magneetti vetää teräskattilaa lasia vasten, ja tiivis kosketus siirtää lämmön lasista kattilaan.",

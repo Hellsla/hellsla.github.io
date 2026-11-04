@@ -226,7 +226,7 @@ def geometry():
     f.rect(xs - 5, 24, 10, ya - 7 - 24, IRON, INK, 2)
     f.rect(xs - 5, ya + 7, 10, yb - ya - 14, IRON, INK, 2)
     f.rect(xs - 5, yb + 7, 10, 316 - yb - 7, IRON, INK, 2)
-    Lr = 300
+    Lr = 200                                                 # the rays end above and left of the label "kohti varjostinta"
     ray(f, xs, ya, xs + Lr * u[0], ya + Lr * u[1]); ray(f, xs, yb, xs + Lr * u[0], yb + Lr * u[1])
     dashed(f, xs, yb, 430, yb)
     arc(f, xs, yb, 62, 0, 24)

@@ -28,7 +28,8 @@ new p5((p) => {
     return MU0 * Math.sqrt(R * r) * ((2 / k - k) * K - 2 / k * E);
   }
   const e0Of = (R, z) => N2 * 2 * Math.PI * F * N1 * I0 * phi1(R, R2, z);
-  const STEP = phi1(20, R2, 3) / 6;                         // one field line per this much flux (6 lines at 3 mm, R1 = 20 mm)
+  const STEP = phi1(20, R2, 3) / 6.5;                       // one field line per this much flux (6 lines at 3 mm, R1 = 20 mm;
+                                                            // the half step keeps no line exactly on the receiver wire)
 
   // one field line around the wire at (R, 0): along each ray from the wire, the point where the flux equals lv
   function fieldLine(R, lv) {

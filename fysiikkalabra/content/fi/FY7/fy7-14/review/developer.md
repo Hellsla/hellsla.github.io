@@ -1,12 +1,13 @@
 VERDICT: DONE
 
-Draft of *Ohuen kalvon interferenssi*, completed after the interrupted first draft (its lesson.md, figures, sim, tests, exit ticket and glossary terms kept).
+Stage 4 round 1: all six reviews PASS, no Blocking findings. Polish items fixed (small diff, no restructuring):
 
-- `inquiry.json` (new): hook (soap bubble colours), optional retrieval (path difference 1,5λ), two predictions (a 20 nm soap film; a quarter-wave MgF₂ layer vs bare glass), the sim, three guided experiments (soap film thickness with a numeric question, coating thickness, wavelength sweep at 200 nm for the colour), conclusion, theory, reflect, example, Etsi virhe (λ/(2n) coating), transfer (oil film on water), checks (which reflections flip, a numeric colour task, an optional explain), exit.
-- `exercises/exercises.json`, `exercises/solutions.md` (new): 5/4/3 tasks with complete seven-step solutions, all answers from `answers.py`.
-- `lesson-answers.py`: values for the new feedback and the solutions (soap comparison, k = 2 UV, n forgotten). `answers.py`: comment fixes and the uncoated comparison.
-- `lesson.md`: one sentence reworded (a formula overflowed at 340 px).
-- `figures.py`: the graph's origin 0 moved off the 400 tick label (overlap at 768 px). Regenerated.
-- `assets/sims/fy7/fy7-14/sim.js`: the phone layout is taller (960), x labels sit lower, every second y label shows when k > 1,5, and the film is drawn thinner. These fixes clear label overlaps in the inquiry column.
+- science Polish, lesson.md "Hyvin ohut kalvo on musta" (pedagogy Polish too): "molemmat aallot ovat kääntyneet" reworded — aalto 2 jää puoli aallonpituutta jälkeen, mikä vastaa kääntymistä; silloin aallot ovat samassa vaiheessa.
+- science Polish, lesson.md Heijastuksenestopinnoite: "heijastus pienenee pinnasta noin 4,3 %:sta noin 1,3 %:iin" (per surface, consistent with "kummastakin pinnastaan noin 4 %").
+- pedagogy Polish, Esimerkki Tulos: the significant-figures clause is now its own sentence ("Vastaukset on annettu kolmella merkitsevällä numerolla kuten taitekerroin ja paksuus.").
+- science Polish, lessons/FY7/fy7-14/lesson-answers.py: stale comments updated (koe3: 400 nm 5,8 %, 700 nm 3,8 %; thin-20: 0,74 %). No values changed.
+- visual Polish, figure "reflections": the "ei siirtymää" label moved left of the transmitted ray (figures.py, end-anchored at x 266); figures regenerated.
 
-check_lesson: all ok; check_layout 340 px ok.
+Not done (taste or larger changes): hero stripe styling, sim panel size at 390 px, line-breaking of inline brackets, optional retrieval question, workload trimming.
+
+check_lesson fy7-14: all ok.

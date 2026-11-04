@@ -1,21 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 2097bec4c0ac2497
+CONTENT-HASH: 9368ce31ea655078
 
 ## Blocking
 
 ## Polish
-- lessons/FY7/fy7-14/lesson-answers.py:60,71 — stale comments: koe-3 says "400: 6,8 %, 700: 3,9 %" and thin-20 "0,5 %", but the code (and inquiry.json) give 5,83 %, 3,77 % and 0,74 % — update the comments.
-- content/fi/FY7/fy7-14/lesson.md:206 — "Silloin molemmat aallot ovat kääntyneet" reads as if wave 2 were also inverted by a reflection; it is delayed by half a wavelength — e.g. "aalto 2 on jäänyt puoli aallonpituutta jälkeen, mikä vastaa kääntymistä, joten aallot ovat samassa vaiheessa".
-- content/fi/FY7/fy7-14/lesson.md:405 — "heijastus pienenee noin 4,3 %:sta noin 1,3 %:iin" is per surface (back face not counted); add "pinnasta" so it does not contradict the "kummastakin pinnastaan noin 4 %" just above.
 
 ## Checked
-- Theory: 2nd at normal incidence, λ_n = λ : n (550 : 1,33 = 413,5 nm), half-wave shift rule, one-shift vs two-/no-shift condition swap, oil (1,47/1,5) on water one shift; all consistent across Ydinajatus, Kaava, Tiivistelmä, glossary, exit ticket.
-- Recomputed (own exact single-layer Airy script): bare glass 4,258 %, quarter-wave MgF2 1,260 % at 99,64 nm, soap max 7,71 % at 103,38 nm, koe-1 R at 0/20/50/103/150/207 nm = 0/0,74/3,81/7,71/4,60/0 %, koe-2 0/50/100/150/199 nm = 4,26/2,77/1,26/2,81/4,26 %, koe-3 200 nm at 400/532/700 nm = 5,83/0/3,77 % — all match inquiry.json.
-- Worked example 380 nm: 673,9 and 404,3 nm constructive, 505 nm destructive, k = 0 and 3 outside visible; 7 steps, symbolic first.
-- 200 nm film: 532 nm cancelled, red/violet reflected → purple (correct, no visible maximum claimed).
-- 5 µm film: 14 constructive wavelengths in 400–700 nm (recomputed).
-- √1,52 = 1,233 ideal index condition; Dodge 1984 MgF2 n_o(550) = 1,3785.
-- Graph figure: green polyline recomputed point by point (400: 2,21, 550: 1,26, 700: 1,60 %) — to scale as captioned.
-- inquiry.json: exactly one correct option in kertaus, ennuste-ohut, ennuste-pinnoite, virhe, check-1; every distractor feedback correct; numeric answers 103,38 / 204,08 / 443,3 nm and their mistakes (206,8, 137,5, 300, 102,0, 408,2, 1330, 665, 266) are the stated errors.
-- Experiments: tilanne and λ (or d) locked, varied parameter isolated; simState exposes q and R.
-- sim.js: Fresnel amplitudes, δ = 4πnd/λ, exact R, shift count and vahvistava/heikentävä classification correct for both situations; wave 2 amplitude r2(1 − r1²); limits (no dispersion, no absorption, no back face, scaled colour) stated in the model text.
+- Round-1 Polish fixed correctly: "Hyvin ohut kalvo on musta" now says wave 2 lags half a wavelength, which is equivalent to an inversion (no second reflection inversion implied); coating text says "pinnasta 4,3 % → 1,3 %" (per surface, consistent with "kummastakin pinnastaan noin 4 %"); lesson-answers.py comments now 5,8 / 3,8 / 0,74 % as computed.
+- Figure "reflections" (390 px capture): "ei siirtymää" now sits at the lower-surface reflection point, "½λ siirtymä" at the upper one — correct film–air vs air–film rule.
+- Theory: 2nd at normal incidence, λ_n = λ : n, half-wave shift rule, condition swap for one vs zero/two shifts; consistent across Ydinajatus, Kaava, Tiivistelmä, glossary, exit ticket.
+- Recomputed with an independent exact single-layer Airy script: bare glass 4,258 %; quarter-wave MgF2 99,64 nm → 1,260 %; soap max 103,38 nm → 7,71 %; koe-1 0/0,74/3,81/7,71/4,60/0 %; koe-2 4,26/2,77/1,26/2,81/4,26 %; koe-3 at 200 nm 5,83/0/3,77 % — all match inquiry.json.
+- Worked example d = 380 nm: 673,9 and 404,3 nm constructive, 505 nm destructive, k = 0 and 3 outside visible; 7 steps, symbolic first; significant-figure sentence now separate and correct.
+- 5 µm film: 14 constructive wavelengths in 400–700 nm; √1,52 = 1,233.
+- Graph figure (to scale): 400/550/700 nm → 2,21/1,26/1,60 %, matches.
+- inquiry.json numeric answers 103,38 / 204,08 (oil 1,47 on water, one shift, 2nd = λ) / 443,3 nm recomputed; correct options and distractor feedback unchanged since round 1 and still right.
+- Experiments isolate the varied parameter (tilanne and λ or d locked); simState exposes q and R.
+- sim.js unchanged: Fresnel amplitudes, δ = 4πnd/λ, exact R, shift-count classification; limits stated.

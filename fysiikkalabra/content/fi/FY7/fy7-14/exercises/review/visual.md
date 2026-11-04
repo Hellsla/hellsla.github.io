@@ -1,19 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 68bd08668901c4a2
+CONTENT-HASH: 7fb5df5d9d49d6fd
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] L3-02 solution (Järkevyys) at 1280 px — "(1 − 0,0426)^8" breaks after "(1 −"; keep the bracket together.
-- [Minor] L3-02 Järkevyys — "lisäävät kennolle pääsevää valoa noin viidenneksellä": 90 : 70,6 is about +28 %, and the gain is about 19 percentage points of the incoming light; say "noin 19 prosenttiyksikköä tulevasta valosta" (for science: confirm).
-- [Minor] L1-05 solution — the plastic's index is written \text{lasi}$ although the task says plastic; use \text{linssi}$.
-- [Minor] L2-01 Järkevyys — "lähellä … ja sitä suurempi" is clumsy; rewrite as "suurempi kuin luvun 200 nm:n kalvon puuttuva 532 nm".
-- [Minor] L2-03 task text — "paksumpi kuin ohuin mahdollinen" and "toiseksi ohuin" repeat each other; the first can go.
+- [Minor] solutions L3-02 Järkevyys (L3-1280-3) — "(1 − 0,0426)^8" and "(90,06 : 70,6 ≈ 1,28)" break inside the bracket at the line end — keep the bracket together or put the check on its own line.
+- [Minor] solutions L3-01 Järkevyys (L3-1280-2) — "589 nm :" ends a line with the colon, the division continues on the next — non-breaking group.
 
 ## Checked
-- 1280 px: exercise level 1 part 1 (task, answer chip, full solution), level 3 part 3 (L3-02 end, L3-03), contact sheet 6 (all five L1, four L2 and three L3 solutions open); the Tehtävät stage at 390 px.
-- Seven-step solutions are complete and set apart (Annettu → Järkevyys); the chains render as aligned rows; units and decimal commas are consistent; no figures in the exercises; layout and a11y checks are green in the packet.
+- Delta: L1-05 (open-exercises-1280-5): n_muovi in Annettu, Periaate, Kaava, Sijoitus and Järkevyys renders consistently, subscript upright, no clipping.
+- L3-02 (open-exercises-L3-1280-2 and -3): new Järkevyys sentence "noin 19 prosenttiyksikköä eli runsaan neljänneksen (90,06 : 70,6 ≈ 1,28)" fluent, colon division, decimal commas, units correct.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

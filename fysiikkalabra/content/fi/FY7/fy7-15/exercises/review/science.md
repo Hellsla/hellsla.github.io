@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 65b809c8004384e8
+CONTENT-HASH: 3d1522308c46aedd
 
 ## Blocking
 
 ## Polish
-- lessons/FY7/fy7-15/answers.py:14 — the comment says "67,55° -> 67,6°", but 67,5485° rounds to 67,5° (solutions.md has it right). This is double rounding in the comment only. — Fix: "67,55° -> 67,5°" or "67,548° -> 67,5°".
-- Scope: Malus tasks (L1-02, L1-03, L2-01, L2-02, L3-01, L3-03) go past LOPS "polarisaatio kvalitatiivisesti". This is the teacher's call, since the glossary carries Malusin laki.
-- L1-02, L2-01: "kolme merkitsevää numeroa kuten kulma" — 200 and 900 W/m² are ambiguous. Optional: write them as 200,0 or name the angle as the limiting datum.
+- content/fi/FY7/fy7-15/exercises/solutions.md:58 (L2-01 Vastaus) — "kolme merkitsevää numeroa kuten kulma 40,0°": 900 W/m² is ambiguous (round 1, still open). Optional: name the angle as the limiting datum "(900 tulkitaan tarkaksi)".
+- Scope (round 1, still the teacher's call): the numeric Malus tasks go past "polarisaatio kvalitatiivisesti".
 
 ## Checked
-- One script recomputed all twelve answers from the task text with my own formulas, and all agree: 320; 150; 9,358; 53,06°; 67,55°; 264,07; 60,0°; 1,5697; 33,69° (also by Snell's law, not only 90° − α_B); 75,0; 36,94°; 117 lx.
-- L3-02 (from water): n₁ = 1,33 is right, and the check against the critical angle of 48,8° and the reversibility argument are correct.
-- L3-01: the angle to the last sheet is 60° and the 45° maximum is 100 W/m², which is a real check.
-- L3-03: the background-plus-Malus model with its assumptions is stated in the task, and the solution uses the same model.
-- L2-03: the plastics' refractive indices (acrylic 1,49, PC about 1,58) are realistic.
-- Every solution has the seven steps and solves for the unknown symbolically first, with correct units and rounding.
+- Round-1 fixes: L1-04 now uses acrylic (n = 1,49), so α_B = 56,13° → 56,1°. The taitekulma 33,87° and the Snell check 0,830 = 0,830 are correct. L1-05 now compares with acrylic's 56,1°. The answers.py comment for L1-05 now reads 67,5°.
+- One script recomputed all twelve answers from the task text with my own formulas (L2-04 by Snell's law), and all agree with exercises.json and answers.py: 320; 150; 9,358; 56,13°; 67,55°; 264,07; 60,0°; 1,5697; 33,69°; 75,0; 36,94°; 117 lx.
+- L3-01: the angle to the last sheet is 60°, and the 45° maximum of 100 W/m² is a real check.
+- L3-02 (light from water): n₁ = 1,33 is right, α_B = 36,9° is below the critical angle of 48,8°, and the reversibility argument is correct.
+- L3-03: the task states the background-plus-Malus model with its assumptions (the background does not depend on the film's angle, an ideal film, a reading proportional to intensity), and the solution uses the same model.
+- Every solution has the seven steps and solves for the unknown symbolically first. The units, the realistic data (plastics 1,49–1,58, diamond 2,42) and the rounding are right.

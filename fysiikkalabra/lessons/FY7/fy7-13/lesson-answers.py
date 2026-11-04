@@ -30,9 +30,7 @@ a["white-400"] = theta(300, 400e-9)                 # 6,89°
 a["white-700"] = theta(300, 700e-9)                 # 12,12°
 a["white-400-2"] = theta(300, 400e-9, 2)            # 13,89°
 a["white-700-2"] = theta(300, 700e-9, 2)            # 24,83°
-# figure "setup" and Kaava text: 600 lines/mm, 532 nm, L = 1,00 m (koe2-theta-532, koe2-x-532 below); here 300 lines/mm, 650 nm
-a["setup-x1"] = x_cm(300, 650e-9, 1.00)             # 19,88 cm
-a["setup-x2"] = x_cm(300, 650e-9, 1.00, 2)          # 42,35 cm (the same angle as 600 lines/mm in the first order)
+# figure "setup" and Kaava text: 600 lines/mm, 532 nm, L = 1,00 m: koe2-theta-532 and koe2-x-532 below
 # CD and DVD track pitches (IEC 60908:1999 CD 1,6 µm; ECMA-267:2001 DVD 0,74 µm) as lines per mm
 a["cd-N"] = mm / 1.6e-6                             # 625 per mm
 a["dvd-N"] = mm / 0.74e-6                           # 1351 per mm
@@ -44,11 +42,11 @@ a["ex-sin"] = sin(atan(0.396 / 2.00))
 a["ex-tan-lambda"] = (mm / 300) * 0.396 / 2.00 * 1e9   # with tan instead of sin: 660 nm, a little too large
 # hook / predictions / sim experiments (λ = 650 nm, L = 1,00 m)
 for N in (300, 600, 1000):
-    a[f"koe1-theta-{N}"] = theta(N, 650e-9)          # 11,25°, 22,95°, 40,54°
+    a[f"koe1-theta-{N}"] = theta(N, 650e-9)          # 11,245°, 22,95°, 40,54°
     a[f"koe1-x-{N}"] = x_cm(N, 650e-9, 1.00)         # 19,88, 42,34, 85,53 cm
     a[f"koe1-sin-{N}"] = sin(radians(theta(N, 650e-9)))   # 0,195, 0,390, 0,650
 for lam in (450, 532, 650):
-    a[f"koe2-theta-{lam}"] = theta(600, lam * 1e-9)  # 15,67°, 18,61°, 22,95°
+    a[f"koe2-theta-{lam}"] = theta(600, lam * 1e-9)  # 15,664°, 18,61°, 22,95°
     a[f"koe2-x-{lam}"] = x_cm(600, lam * 1e-9, 1.00)  # 28,05, 33,69, 42,34 cm
     a[f"koe2-sin-{lam}"] = lam * 1e-9 / (mm / 600)  # 0,270, 0,3192, 0,390
 a["koe2-question"] = theta(600, 532e-9)             # 18,61°

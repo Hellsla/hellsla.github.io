@@ -27,8 +27,8 @@
     {
       "id": "fy7-15-L1-04",
       "level": 1,
-      "text": "Auringonvalo heijastuu tyynen järven pinnasta. Veden taitekerroin on $1{,}33$ ja ilman $1{,}00$. Millä tulokulmalla heijastunut valo on täysin polarisoitunutta?",
-      "answer": 53.0612,
+      "text": "Auringonvalo heijastuu akryylilevyn pinnasta. Akryylin taitekerroin on $1{,}49$ ja ilman $1{,}00$. Millä tulokulmalla heijastunut valo on täysin polarisoitunutta?",
+      "answer": 56.1328,
       "unit": "°",
       "tolerance": 0.02
     },

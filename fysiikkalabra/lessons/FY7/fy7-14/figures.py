@@ -101,7 +101,7 @@ def reflections():
     f.tex(A[0] + (yt - top) * math.tan(th), 34, "1", "middle", w=30)
     f.tex(C[0] + (yt - top) * math.tan(th), 34, "2", "middle", w=30)
     f.tex(226, 118, r"\tfrac{1}{2}\lambda\ \text{siirtymä}", "end")
-    f.tex(256, 266, r"\text{ei siirtymää}", "start")
+    f.tex(266, 266, r"\text{ei siirtymää}", "end")
     dim_arrow(f, 150, yt, yb)
     f.tex(136, 190, "d", "end", w=30)
     f.tex(584, 84, r"\text{ilma},\ n = 1{,}00", "end")
