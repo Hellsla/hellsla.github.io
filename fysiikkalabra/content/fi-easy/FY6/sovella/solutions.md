@@ -2,7 +2,7 @@
 
 ### a)
 **Kysytty:** kuvaaja, jonka pisteisiin pariston mallin mukaan sopii suora
-**Kuvaaja:** Paristo mallinnetaan kahdella osalla. Ensimmäinen osa on ideaalinen jännitelähde, jonka lähdejännite on $E$. Lähdejännite on pariston jännite silloin, kun virtaa ei kulje. Toinen osa on sisäinen resistanssi $R_\text{s}$, joka on sarjassa lähteen kanssa. Kun paristosta kulkee virta $I$, sisäisen resistanssin yli on jännite $R_\text{s} I$. Napajännite eli jännite pariston napojen välillä on silloin $U = E - R_\text{s} I$. Tämä on suoran yhtälö. Kun virta $I$ on vaaka-akselilla ja napajännite $U$ pystyakselilla, suora leikkaa pystyakselin kohdassa $E$. Suoran kulmakerroin on $-R_\text{s}$. Mittaukset viedään siis kuvaajaan sellaisinaan.
+**Kuvaaja:** Paristo mallinnetaan kahdella osalla. Ensimmäinen osa on ideaalinen jännitelähde, jonka lähdejännite on $E$. Lähdejännite on pariston jännite silloin, kun virtaa ei kulje. Toinen osa on sisäinen resistanssi $R_\text{s}$, joka on sarjassa lähteen kanssa. Kun paristosta kulkee virta $I$, sisäisen resistanssin yli on jännite $R_\text{s} I$. Napajännite eli jännite pariston napojen välillä on silloin $U = E - R_\text{s} I$. Tämä on suoran yhtälö. Kun virta $I$ on vaaka-akselilla ja napajännite $U$ pystyakselilla, suora leikkaa pystyakselin kohdassa $E$. Suoran kulmakerroin eli jyrkkyys on $-R_\text{s}$. Mittaukset viedään siis kuvaajaan sellaisinaan.
 
 | $I\ (\text{A})$ | $U\ (\text{V})$ |
 |---|---|
@@ -95,12 +95,12 @@ Pystyakselin asteikko alkaa arvosta $3{,}6\,\text{V}$. Silloin pisteiden pieni l
 **Muunnokset:** Ei tarvita: jännite on voltteina ja virta ampeereina, ja $1\,\text{V/A} = 1\,\Omega$.
 **Sijoitus:** $R_\text{s} = -\dfrac{-0{,}60\,\text{V}}{0{,}50\,\text{A}} = 1{,}2\,\Omega$ ja $E = 4{,}48\,\text{V} + 1{,}2\,\Omega \cdot 0{,}10\,\text{A} = 4{,}48\,\text{V} + 0{,}12\,\text{V} = 4{,}60\,\text{V}$
 **Vastaus:** $E \approx 4{,}6\,\text{V}$ ja $R_\text{s} \approx 1{,}2\,\Omega$. Vastauksessa on kaksi merkitsevää numeroa, koska kulmakerroin luetaan kuvaajalta. Sitä ei voi lukea tarkemmin kuin kahden numeron tarkkuudella.
-**Järkevyys:** Lähdejännite on vähän suurempi kuin pariston nimellisjännite $4{,}5\,\text{V}$. Se sopii uudelle paristolle. Sisäinen resistanssi on ohmin luokkaa, kuten litteillä taskulamppuparistoilla. Oikosulkuvirta olisi $\dfrac{E}{R_\text{s}} \approx 3{,}8\,\text{A}$.
+**Järkevyys:** Lähdejännite on vähän suurempi kuin pariston nimellisjännite $4{,}5\,\text{V}$. Se sopii uudelle paristolle. Sisäinen resistanssi on ohmin luokkaa, kuten litteillä taskulamppuparistoilla. Oikosulkuvirta eli virta, kun navat yhdistetään suoraan, olisi $\dfrac{E}{R_\text{s}} \approx 3{,}8\,\text{A}$.
 
 ### c)
 **Annettu:** $E = 4{,}60\,\text{V}$, $R_\text{s} = 1{,}2\,\Omega$ ja ulkoinen vastus $R = 8{,}0\,\Omega$
 **Kysytty:** vastukseen siirtyvä teho $P$ ja pariston sisäisessä resistanssissa lämpönä siirtyvän tehon osuus pariston koko sähkötehosta
-**Periaate:** Virtapiirissä paristo, sisäinen resistanssi ja vastus ovat sarjassa. Kaikkien läpi kulkee siis sama virta. Silmukkasäännön mukaan lähdejännite jakautuu sisäisen resistanssin ja vastuksen yli: $E - R_\text{s} I - R I = 0$. Sähkötehosta siirtyy lämpönä sekä vastukseen että pariston sisälle. Pariston koko teho on näiden summa $E I$.
+**Periaate:** Virtapiirissä paristo, sisäinen resistanssi ja vastus ovat sarjassa. Kaikkien läpi kulkee siis sama virta. Silmukkasäännön mukaan jännitteet summautuvat piirin ympäri nollaksi. Siksi lähdejännite jakautuu sisäisen resistanssin ja vastuksen yli: $E - R_\text{s} I - R I = 0$. Sähkötehosta siirtyy lämpönä sekä vastukseen että pariston sisälle. Pariston koko teho on näiden summa $E I$.
 **Kaava:** $I = \dfrac{E}{R + R_\text{s}}$, $P = R I^2$, $P_\text{s} = R_\text{s} I^2$ ja osuus $\dfrac{P_\text{s}}{P + P_\text{s}} = \dfrac{R_\text{s}}{R + R_\text{s}}$
 **Muunnokset:** Ei tarvita, kaikki suureet ovat perusyksiköissä.
 **Sijoitus:** $I = \dfrac{4{,}60\,\text{V}}{8{,}0\,\Omega + 1{,}2\,\Omega} = \dfrac{4{,}60\,\text{V}}{9{,}2\,\Omega} = 0{,}50\,\text{A}$, $P = 8{,}0\,\Omega \cdot (0{,}50\,\text{A})^2 = 2{,}0\,\text{W}$ ja $P_\text{s} = 1{,}2\,\Omega \cdot (0{,}50\,\text{A})^2 = 0{,}30\,\text{W}$. Osuus on $\dfrac{0{,}30\,\text{W}}{2{,}0\,\text{W} + 0{,}30\,\text{W}} = 0{,}13$.
@@ -147,7 +147,7 @@ Pystyakselin asteikko alkaa arvosta $3{,}6\,\text{V}$. Silloin pisteiden pieni l
 ### b)
 **Annettu:** $E = 12{,}0\,\text{V}$, $R_\text{k} = 0{,}80\,\Omega$, $R_\text{A} = 6{,}0\,\Omega$ ja a-kohdan virta $I = 2{,}5\,\text{A}$
 **Kysytty:** lampun A todellinen teho $P_\text{A}$ ja sen vertailu nimellistehoon $24\,\text{W}$
-**Periaate:** Silmukkasäännön mukaan akun jännite jakautuu kaapelin jännitehäviön ja lamppujen jännitteen kesken: $E - R_\text{k} I - U_\text{L} = 0$. Lamppujen jännite jää siksi nimellisjännitettä pienemmäksi. Teho lasketaan tästä todellisesta jännitteestä.
+**Periaate:** Silmukkasäännön mukaan jännitteet summautuvat piirin ympäri nollaksi. Siksi akuston jännite jakautuu kaapelin jännitehäviön ja lamppujen jännitteen kesken: $E - R_\text{k} I - U_\text{L} = 0$. Lamppujen jännite jää siksi nimellisjännitettä pienemmäksi. Teho lasketaan tästä todellisesta jännitteestä.
 **Kaava:** $U_\text{L} = E - R_\text{k} I$ ja $P_\text{A} = \dfrac{U_\text{L}^2}{R_\text{A}}$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $U_\text{L} = 12{,}0\,\text{V} - 0{,}80\,\Omega \cdot 2{,}5\,\text{A} = 12{,}0\,\text{V} - 2{,}0\,\text{V} = 10{,}0\,\text{V}$ ja $P_\text{A} = \dfrac{(10{,}0\,\text{V})^2}{6{,}0\,\Omega} = 16{,}7\,\text{W}$
@@ -216,7 +216,7 @@ Pystyakselin asteikko alkaa arvosta $3{,}6\,\text{V}$. Silloin pisteiden pieni l
 
 *Laskenta.* Pisaran todellinen liike-energia on $\dfrac{1}{2} m v^2 = \dfrac{1}{2} \cdot 4{,}0 \cdot 10^{-10}\,\text{kg} \cdot (5{,}0\,\text{m/s})^2 = 5{,}0 \cdot 10^{-9}\,\text{J}$. Sähkökentän tekemä työ on $3{,}6 \cdot 10^{-8}\,\text{J}$. Liike-energiaksi päätyy siis vain $\dfrac{5{,}0 \cdot 10^{-9}\,\text{J}}{3{,}6 \cdot 10^{-8}\,\text{J}} \approx 14\,\%$.
 
-*Energian kohtalo.* Loput $3{,}6 \cdot 10^{-8}\,\text{J} - 5{,}0 \cdot 10^{-9}\,\text{J} = 3{,}1 \cdot 10^{-8}\,\text{J}$ siirtyy ilmaan. Ilman sisäenergia kasvaa, ja energia siirtyy edelleen lämpönä ympäristöön. Energia ei siis häviä.
+*Energian kohtalo.* Loput $3{,}6 \cdot 10^{-8}\,\text{J} - 5{,}0 \cdot 10^{-9}\,\text{J} = 3{,}1 \cdot 10^{-8}\,\text{J}$ siirtyy ilmaan. Ilman sisäenergia (ilman hiukkasten energia) kasvaa, ja energia siirtyy edelleen lämpönä ympäristöön. Energia ei siis häviä.
 
 *Johtopäätös.* B-kohdan oletus (ei ilmanvastusta) tekee nopeudesta liian suuren. Tulos on siksi suurin mahdollinen nopeus. Energia ei häviä, vaan se siirtyy ilmaan.
 
@@ -261,7 +261,7 @@ Pystyakselin asteikko alkaa arvosta $3{,}6\,\text{V}$. Silloin pisteiden pieni l
 **Muunnokset:** $330\,\mu\text{F} = 330 \cdot 10^{-6}\,\text{F}$
 **Sijoitus:** $E_1 = 14{,}85\,\text{J}$ ja $E_2 = \dfrac{1}{2} \cdot 330 \cdot 10^{-6}\,\text{F} \cdot (220\,\text{V})^2 = \dfrac{1}{2} \cdot 330 \cdot 10^{-6}\,\text{F} \cdot 48\,400\,\text{V}^2 = 7{,}99\,\text{J}$, joten $\Delta E = 14{,}85\,\text{J} - 7{,}99\,\text{J} = 6{,}86\,\text{J}$. Osuus on $\dfrac{6{,}86\,\text{J}}{14{,}85\,\text{J}} = 0{,}46$.
 **Vastaus:** Salamaan siirtyi $\Delta E \approx 6{,}9\,\text{J}$. Se on noin $46\,\%$ varastoidusta energiasta. Vastauksessa on kaksi merkitsevää numeroa, kuten a-kohdassa.
-**Järkevyys:** Jännite pieneni vain $\dfrac{80\,\text{V}}{300\,\text{V}} \approx 27\,\%$, mutta energiaa siirtyi $46\,\%$. Syy on se, että energia on verrannollinen jännitteen neliöön eli kasvaa samassa suhteessa kuin jännitteen neliö: $1 - \left(\dfrac{220}{300}\right)^2 = 0{,}46$. Siirtynyt energia on pienempi kuin alkuenergia, kuten pitääkin.
+**Järkevyys:** Jännite pieneni vain $\dfrac{80\,\text{V}}{300\,\text{V}} \approx 27\,\%$, mutta energiaa siirtyi $46\,\%$. Syy on se, että energia riippuu jännitteen neliöstä: $1 - \left(\dfrac{220}{300}\right)^2 = 0{,}46$. Siirtynyt energia on pienempi kuin alkuenergia, kuten pitääkin.
 
 ### c)
 **Annettu:** $C = 330\,\mu\text{F}$, jännitteen muutos $\Delta U = 300\,\text{V} - 220\,\text{V} = 80\,\text{V}$ ja kesto $\Delta t = 1{,}0\,\text{ms}$
