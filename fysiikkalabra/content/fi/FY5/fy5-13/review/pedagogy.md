@@ -1,10 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 41dcb60373a7417e
+CONTENT-HASH: d4a87ce48229af48
 
 ## Blocking
 
 ## Polish
 
-
 ## Checked
-batch delta review: title and chapter-reference renames only; every *chapter* reference in lesson.md, inquiry.json, exercises and solutions of FY5 resolves to a current lesson title; new titles are clear and consistent with neighbouring lessons.
+- delta review: the Find-the-error task is unchanged in content and difficulty; splitting the display formula over two rows (symbolic step, then substitution and result) makes the student's wrong calculation easier to read and keeps the error to be found in the same place.
+- Options, feedback and optional status unchanged; the sequence of the inquiry is unaffected.

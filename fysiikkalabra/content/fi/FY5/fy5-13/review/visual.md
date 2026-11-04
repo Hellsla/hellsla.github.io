@@ -1,10 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 419e7ec699ed8a62
+CONTENT-HASH: d4a87ce48229af48
+
 ## Blocking
-(none)
 
 ## Polish
-- Ei huomautettavaa.
+- [Minor] review/shots: no capture shows the optional Find-the-error item opened; I rendered it myself at 390 px (opened details) and checked it there. Consider adding it to the captures.
 
 ## Checked
-batch delta review: opened captures at 360 and 1280 px; photo loads, floats right beside the text at 1280 px and fills the column at 360 px, no clipping or horizontal overflow; alt text and caption natural Finnish, factual, consistent with the image and neighbouring paragraph; credit line present under the caption; numbers with units in LaTeX.
+- Own 390 px render of the opened Find-the-error item: the aligned display has two rows with the = signs aligned, fractions in display size, units upright with thin space, no clipping; the formula scrolls 306/306 px (no overflow) and the page scrollWidth is 390 (no horizontal scroll).
+- Contact captures fy5-13-stage-sovella-390-2.png (fi): the item sits collapsed and the surrounding layout is intact.
+- Decimal separator matches the language; text outside the formula unchanged.
