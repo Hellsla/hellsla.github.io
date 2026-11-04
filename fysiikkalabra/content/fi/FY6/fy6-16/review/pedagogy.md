@@ -1,21 +1,19 @@
-VERDICT: FAIL
-CONTENT-HASH: ad41a8dfa1fbe5f2
+VERDICT: PASS
+CONTENT-HASH: 8e3accc8a97e1b21
 
 ## Blocking
-- lesson.md l.30 ("Miksi latausasemalla on oma ryhmä ja vikavirtasuoja") — "kotelolla on suojausluokitus, esimerkiksi IP54" — in fy6-15 and the glossary suojausluokitus means class I/II/III (earthing, double insulation, safety voltage); IP54 is a different concept and the student now has one term for two things — "kotelointiluokka (IP-luokka), esimerkiksi IP54", or drop the IP sentence.
+(none)
 
 ## Polish
-- lesson.md "Akku, teho ja latausaika" — the efficiency paragraph repeats itself ("Hyötysuhde on enintään 100 %. Todellisissa laitteissa se jää usein alle...") — one sentence: "Hyötysuhde on alle 100 %, koska osa energiasta muuttuu sisäenergiaksi."
-- Slot goal "läpilyöntilujuus" appears in one clause and no task — name it in tarkista-3 or drop it from the lesson's claims; the exercises (no vikavirtasuoja or insulation task) leave goal 3 only via pääsulake.
-- inquiry.json tarkista-1 — the correct option is the longest and the only two-part one — shorten, give the distractors equal length.
-- Workload is high for an hour: efficiency, 3-phase, main fuse, load management, cable and contact heating, cost — mark the cost formula and the joint-heating part optional.
+- Slot goal "läpilyöntilujuus" is still one clause in "Johdon ja liitoksen lämpeneminen" and no task uses it — name it in tarkista-3's criteria or drop it from the lesson's claims.
+- inquiry.json tarkista-1 — the correct option is still the longest and the only two-part one — shorten it or lengthen the distractors.
+- Workload is still high (efficiency, 3-phase, main fuse, load management, cable and contact heating, cost) — mark the cost formula and the contact-heating paragraph optional.
 
-## Checked
-- Applied chapter: a new everyday situation (EV charging, sauna, neighbour's extension) combines battery energy, P = UI, Joule's law, fuse, RCD; not a restatement of earlier chapters.
-- Prerequisites retrieved (kertaus W = UQ); opening questions (capacity, time, extension cord) are answered by "tavat", "kuormat" and "tarkistus-3".
-- Predictions refutable by the two tables; wrong options address real errors (400 V, "no change", total power split).
-- Interpret tasks are data-complete, one step per hint, mistakes real (no η, multiply by η, one phase).
-- Figures (koti, vaiheet, kayra) legible at 390 px, the 25 A line and colours with labels; descriptions equal the data.
-- Worked example staged, cost uses grid energy, sanity check present; "Etsi virhe" targets multiply-vs-divide η.
-- Exit ticket tests P = 3UI and W = W_akku : η, the core.
-- Finnish and case after number+unit correct.
+## Checked (round 2, diff HEAD~1..HEAD)
+- IP54 now "kotelointiluokka (IP-luokka)": the term clash with suojausluokka I/II/III in fy6-15 is gone; blocking finding closed.
+- Efficiency paragraph rewritten to one clear statement (80–95 %, always below 100 %); the same range in "Lukuarvojen lähteet".
+- "Oma ryhmä" reasoning now correct and concrete (cable and socket contacts at near-rated current for hours, other loads may trip the charge) instead of the muddled "fuse would not know".
+- Main-fuse sentence now says a small overload does not blow it at once, a large lasting one can — consistent with fy6-15.
+- ennuste-1 distractor "1,7 kertaa nopeammin, 400 V" matches 400 : 230; its feedback still repairs the error.
+- Units in formula legends set in \text{} and fraction units in the example written €/kWh; figure labels "varaus 20 %/90 %/99 %" make the curve points readable.
+- Worked example, tables, hints and exit ticket unchanged and still consistent.

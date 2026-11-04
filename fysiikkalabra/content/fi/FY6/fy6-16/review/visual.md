@@ -1,21 +1,21 @@
-VERDICT: FAIL
-CONTENT-HASH: ad41a8dfa1fbe5f2
+VERDICT: PASS
+CONTENT-HASH: 8e3accc8a97e1b21
+
+Round 2. The round 1 Major (plain-text units in the Kaava "missä" lines) is fixed.
 
 ## Blocking
-- [Major] lesson.md, "Kaava: Latausaika, latausteho ja johdon lämpeneminen", all "missä" lines — units are plain text: (kWh), (h), (kW), (A), (W), (m), (€), (€/kWh); rendered in the body typeface next to KaTeX symbols — breaks the FY6 rule that every unit is LaTeX, and fy6-15 sets the same lines as ($\text{A}$) — write `($\text{kWh}$)`, `($\text{h}$)`, `($\text{kW}$)`, `($\text{A}$)`, `($\text{W}$)`, `($\text{m}$)`, `($\text{€}$)`, `($\text{€/kWh}$)`. The fix is mechanical, so it should not wait.
+(none)
 
 ## Polish
-- [Minor] Esimerkki Sijoitus and exercise L3-1 — `\tfrac{€}{kWh}` nested in a fraction renders tiny and cramped at 390 px — write `\text{€/kWh}` as the rest of the chapter does.
-- [Minor] fig 7 (kayra) — "20 %", "90 %", "99 %" have no word saying they are charge levels, the 11 kW plateau lies between the 10 and 12 ticks, and the curve beyond 4,5 h is solid although it is a model — label "$\text{varaustaso}$" once, add a tick at 11 and a "$\text{malli}$" note.
-- [Minor] lesson.md, Pääsulake ja samanaikaiset kuormat — the comma after "$17\,\text{kW}$" wraps to the start of the next line at 1280 px; join the comma into the maths or reword.
-- [Minor] lesson.md, Miksi latausasemalla… — "suojausluokitus, esimerkiksi IP54" clashes with fy6-15's glossary term (luokka I–III); IP is kotelointiluokka (for science: check the term).
-- [Minor] fig 3 (koti) — "3 · 25 A" and "3 · 16 A" labels are stacked close together; the phase lines carry no L1–L3 labels.
+- [Minor] fig 7 (kayra) — the plateau at 11 kW still lies between the 10 and 12 ticks, and the curve beyond 4,5 h is still solid although it is a model — add a tick at 11 and make the tail dashed or add "$\text{malli}$".
+- [Minor] lesson.md, Pääsulake ja samanaikaiset kuormat — the comma after "$17\,\text{kW}$" can still start a line at 1280 px — join it into the maths or reword.
+- [Minor] lesson.md, Miksi latausasemalla… — "suojausluokitus, esimerkiksi IP54" differs from fy6-15's glossary term (class I–III); IP is kotelointiluokka (for science: check the term).
+- [Minor] fig 3 (koti) — "3 · 25 A" and "3 · 16 A" labels sit close together; the phase lines have no L1–L3 labels.
 
 ## Checked
-- contact-1, -2, -3, -4; fig-3 (koti), fig-5 (vaiheet), fig-7 (kayra) at 390; hero in contact-1; theory-1280-1 to -3
-- example-390-1, -2; stage-ennusta-390-1; open-exercises L2-1 and L3-1 at 1280, exercise figure lataus-ex
-- Not opened separately: top-390, tarkista and exit opens (seen in contact sheets only).
-- Source read: lesson, exit ticket, solutions; plain-quantity scan hit only the lines above.
+- Diff HEAD~1..HEAD against the captures: theory-1280-3 (all "missä" lines, units now in KaTeX, and the figure), fig-7 at 390 (labels "varaus 20/90/99 %" fit), example-390-2 (no nested fraction), contact-1 and -2.
+- Earlier round: fig-3, fig-5, theory-1280-1 and -2, example-390-1, stage-ennusta-390-1, exercise L2-1 and L3-1 (layout unchanged).
+- Text edits (efficiency range, fuse and kuormanhallinta sentences, summary) read in the packet: fluent, no new finding.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4
