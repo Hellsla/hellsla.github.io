@@ -39,6 +39,96 @@
       "answer": 3.2,
       "unit": "%",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy1-8-L1-06",
+      "level": 1,
+      "text": "A student investigates how the temperature of water affects how long a sugar cube takes to dissolve. He dissolves sugar cubes of the same size in the same amount of water at different temperatures and measures the dissolving time. What is the independent (manipulated) variable of the investigation?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The temperature of the water",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The temperature of the water",
+          "feedback": "Correct: the independent variable is the one the investigator changes on purpose. Here the student chooses the temperature of the water and looks at how the dissolving time changes.",
+          "correct": true
+        },
+        {
+          "text": "The dissolving time of the sugar cube",
+          "feedback": "The dissolving time is the dependent variable: it is measured, and it changes according to what is done to the independent variable. The investigator does not choose it."
+        },
+        {
+          "text": "The amount of water and the size of the sugar cube",
+          "feedback": "These are kept the same in all measurements, so they are controlled variables. If they varied, it would not be known whether the change is caused by the temperature."
+        },
+        {
+          "text": "The clock used for the measurement",
+          "feedback": "The clock is a measuring instrument, not a variable that is changed in the investigation or that affects the result in the way being studied. It measures the dependent variable, that is, the time."
+        }
+      ]
+    },
+    {
+      "id": "fy1-8-L1-07",
+      "level": 1,
+      "text": "Students want to investigate a pendulum in a school physics lesson with a simple experiment. Which of the following is a good research question?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "How does the length of the pendulum string affect the length of the period?",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "How does the length of the pendulum string affect the length of the period?",
+          "feedback": "Correct: the question has one variable that is changed and one that is measured, and it can be answered by measuring with school equipment.",
+          "correct": true
+        },
+        {
+          "text": "What is a pendulum like?",
+          "feedback": "The question is too vague: it names no quantities to measure, and it cannot be answered by measuring while changing one variable."
+        },
+        {
+          "text": "Is a pendulum nice?",
+          "feedback": "Nice is not a measurable quantity, and the answer depends on opinion. A good research question is answered with measurement results."
+        },
+        {
+          "text": "Why does a pendulum swing at all?",
+          "feedback": "The question is too broad for a simple experiment, and it cannot be answered with one series of measurements. A good research question names the quantity that is changed and the quantity that is measured."
+        }
+      ]
+    },
+    {
+      "id": "fy1-8-L1-08",
+      "level": 1,
+      "text": "The writer of a lab report is thinking about which section each sentence belongs to. Which of the following sentences belongs in the results section of the report and not in the discussion?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The mean of the five measurements was $12.4\\,\\text{s}$ and half of the range was $0.2\\,\\text{s}$.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The mean of the five measurements was $12.4\\,\\text{s}$ and half of the range was $0.2\\,\\text{s}$.",
+          "feedback": "Correct: the results present the measured and calculated values as they are, for example a table, a mean and an uncertainty. Interpretation is left to the discussion.",
+          "correct": true
+        },
+        {
+          "text": "The result is probably too large, because reaction time delayed stopping the clock.",
+          "feedback": "This is an evaluation of a source of error, so it belongs in the discussion. The results only state what was measured and calculated."
+        },
+        {
+          "text": "The hypothesis is supported by the results.",
+          "feedback": "A conclusion about whether the results support the hypothesis is an interpretation of the results. It belongs in the discussion."
+        },
+        {
+          "text": "In future the measurement should be made with a photogate.",
+          "feedback": "A suggestion for improvement and further research belongs in the discussion. The results do not present suggestions."
+        }
+      ]
     }
   ],
   "level2": [
@@ -73,6 +163,126 @@
       "answer": 16,
       "unit": "%",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy1-8-L2-05",
+      "level": 2,
+      "text": "A student investigates whether a light ($50\\,\\text{g}$) and a heavy ($200\\,\\text{g}$) ball roll down the same slope equally fast. He changes only the mass and measures five travel times for each ball with a hand stopwatch. He concludes: “The heavy ball is faster, because its mean time is shorter.” Calculate the mean and the uncertainty (half of the range) of the times of each ball. What percentage of the uncertainty is the difference of the means? Also decide whether the data supports the student's conclusion.",
+      "kind": [
+        "data",
+        "error"
+      ],
+      "answer": 100,
+      "unit": "%",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Travel time of the ball on the slope",
+        "columns": [
+          "Repeat",
+          "$t_{50\\,\\text{g}}\\,(\\text{s})$",
+          "$t_{200\\,\\text{g}}\\,(\\text{s})$"
+        ],
+        "rows": [
+          [
+            "1",
+            "3.12",
+            "3.06"
+          ],
+          [
+            "2",
+            "3.08",
+            "3.12"
+          ],
+          [
+            "3",
+            "3.16",
+            "3.04"
+          ],
+          [
+            "4",
+            "3.10",
+            "3.10"
+          ],
+          [
+            "5",
+            "3.14",
+            "3.08"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy1-8-L2-06",
+      "level": 2,
+      "text": "A student investigates whether the mass of a cart affects how fast the cart rolls down a ramp. His plan is: “I let a light cart roll down a gentle ramp and a heavy cart down a steep ramp and compare the times.” Which change fixes the plan?",
+      "kind": [
+        "error",
+        "experiment"
+      ],
+      "answer": "Use the same ramp angle for both carts and change only the mass of the cart.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Use the same ramp angle for both carts and change only the mass of the cart.",
+          "feedback": "Correct: when only one investigated variable changes at a time and the others are controlled, the difference in times can be linked to the mass.",
+          "correct": true
+        },
+        {
+          "text": "Repeat the measurement of each cart ten times with the same plan.",
+          "feedback": "Repeats reduce random error, but they do not help here: the mass and the ramp angle still change at the same time, so the difference may be caused by either."
+        },
+        {
+          "text": "Choose an even heavier cart and an even steeper ramp, so that the difference shows more clearly.",
+          "feedback": "This would make the problem worse: the difference would show, but its cause would not be known, because two variables change at the same time."
+        },
+        {
+          "text": "Measure the times with a more accurate clock.",
+          "feedback": "A more accurate clock reduces the uncertainty of the measurement, but it does not remove the flaw in the plan: two variables change at the same time."
+        }
+      ]
+    },
+    {
+      "id": "fy1-8-L2-07",
+      "level": 2,
+      "text": "A student measures the position of a toy car at different moments (table). He draws a graph with the distance $s$ on the horizontal axis and the time $t$ on the vertical axis, and the axes have no quantities or units marked. He reads the slope of the fitted line as $3.3$ and gives it as the speed of the car. Draw the line fitted to the points the right way round ($t$ on the horizontal axis) and read its slope from two points of the line that are clearly far apart. What is the speed of the car? Answer in m/s and explain what the student's number $3.3$ actually describes.",
+      "kind": [
+        "data",
+        "graph",
+        "error"
+      ],
+      "answer": 0.3,
+      "unit": "m/s",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Position of the toy car",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$s\\,(\\text{m})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "0.00"
+          ],
+          [
+            "2.0",
+            "0.62"
+          ],
+          [
+            "4.0",
+            "1.18"
+          ],
+          [
+            "6.0",
+            "1.83"
+          ],
+          [
+            "8.0",
+            "2.39"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -99,6 +309,81 @@
       "answer": 4.0,
       "unit": "repeats",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy1-8-L3-04",
+      "level": 3,
+      "text": "A student investigated whether the mass of a ball affects the rolling time (compare the measurements of the light and heavy ball). The results of five repeats are the means $\\bar{t}_{50} = 3.12\\,\\text{s} \\pm 0.04\\,\\text{s}$ and $\\bar{t}_{200} = 3.08\\,\\text{s} \\pm 0.04\\,\\text{s}$ (the uncertainty is half of the range). The uncertainty of timing with a hand stopwatch was estimated at $0.15\\,\\text{s}$ for a single measurement. The discussion says: “The experiment went well. The mean of the heavy ball is smaller, so the hypothesis was correct. There were few errors.” How many times the difference of the means is the hand-timing uncertainty $0.15\\,\\text{s}$? Use this and the intervals of the results to justify which claims of the discussion the data supports and which it does not, and write two better sentences for the discussion.",
+      "kind": [
+        "data",
+        "reasoning",
+        "error"
+      ],
+      "answer": 3.75,
+      "unit": "",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Means of the travel times of the light and the heavy ball",
+        "columns": [
+          "Ball",
+          "$\\bar{t}\\,(\\text{s})$",
+          "$\\Delta t\\,(\\text{s})$"
+        ],
+        "rows": [
+          [
+            "$50\\,\\text{g}$",
+            "3.12",
+            "0.04"
+          ],
+          [
+            "$200\\,\\text{g}$",
+            "3.08",
+            "0.04"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy1-8-L3-05",
+      "level": 3,
+      "text": "A student plans an investigation for the question “Does the cooling rate of water depend on the material of the container?” He pours the same number of decilitres of $80\\,{}^\\circ\\text{C}$ water into three containers of the same size (glass, metal, plastic) and reads the temperature every minute. The independent (manipulated) variable is the material of the container and the dependent variable is the fall in temperature. The temperatures of the glass container in a preliminary experiment are in the table. Estimate the initial cooling rate from the change during the first three minutes of the table. The uncertainty of the fall in temperature $\\Delta T_\\text{fall}$ is estimated at $1.0\\,\\text{K}$, and the relative uncertainty of the fall is wanted to be at most $5.0\\,\\%$. Assume that even in the container that cools most slowly the initial rate is about the same as in the glass container. How long must the measurement period be planned to be at least? Also name three variables to be controlled, with reasons, and tell how the cooling curves of the three containers are compared.",
+      "kind": [
+        "data",
+        "model",
+        "experiment"
+      ],
+      "answer": 10,
+      "unit": "min",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Temperature of the water in the glass container",
+        "columns": [
+          "$t\\,(\\text{min})$",
+          "$T\\,({}^\\circ\\text{C})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "80.0"
+          ],
+          [
+            "1.0",
+            "77.9"
+          ],
+          [
+            "2.0",
+            "76.0"
+          ],
+          [
+            "3.0",
+            "74.0"
+          ],
+          [
+            "4.0",
+            "72.2"
+          ]
+        ]
+      }
     }
   ]
 }

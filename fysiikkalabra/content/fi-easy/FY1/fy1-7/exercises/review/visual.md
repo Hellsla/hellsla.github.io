@@ -1,18 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: 9299ea0ccc233bc3
+CONTENT-HASH: 41693b18077a3ffd
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
 (none)
 
+## Fixed
+(none needed)
+
 ## Polish
-- [Minor] solutions.md L2-03 — heading "Kuvaajan lukeminen" but the figure is a measuring cylinder, not a graph — "Kuvan lukeminen" or "Asteikon lukeminen".
-- [Minor] solutions.md L2-04 Järkevyys — "Ajattele, että unohdat vähentää pullon massan. Silloin saat…" is clumsy and shifts voice — "Jos unohtaisit vähentää pullon massan, saisit väärän tuloksen $1650\,\tfrac{\text{kg}}{\text{m}^3}$."
-- [Minor] solutions.md L3-02 — $\bar{\rho}$ for mean density, while the bar is the project's vector notation (\overline{F}) — use $\rho_\text{ka}$ or $\rho_\text{keski}$.
+(none)
 
 ## Checked
-- Contact sheet 4; open-exercises-1280 L1 (contact #38–42), L2-1280-2 and -3 (L2-02, L2-03 with cylinders-read figure), L3-1280-1, contact #43–48
-- Cylinders-read figure: levels 40 and 50 ml match the description and the solution; scale readable; the figure does not give the answer away.
-- Solutions: formula, substitution, answer, Järkevyys blocks readable, chains broken at "=", units upright.
+- Opened open-exercises-L2-1280-6 and open-exercises-L3-1280-4 captures for this language (plus the layout of the other new-task captures by name): stacked fractions, boxed answers, input unit label and solution blocks render cleanly, no clipping or overlap.
+- Translated strings are no longer than fi in a way that breaks layout; data table headers (V, m, m_tot) render as maths.
+- Decimal point (en) / comma (fi-easy) consistent in text, tables and answer boxes.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · language 5 · accessibility 5
