@@ -169,3 +169,96 @@ a vasen
 **Sijoitus:** $\Delta t = \dfrac{30\,\text{kg}\cdot(4{,}0\,\text{m/s} - 0)}{18\,\text{N}} = \dfrac{120\,\text{kg}\cdot\text{m/s}}{18\,\text{N}} = 6{,}67\,\text{s}$
 **Vastaus:** $6{,}7\,\text{s}$, kaksi merkitsevää numeroa kuten lähtötiedoissa $4{,}0\,\text{m/s}$, $18\,\text{N}$ ja $30\,\text{kg}$.
 **Järkevyys:** Hidastuvuus on $18\,\text{N} : 30\,\text{kg} = 0{,}60\,\text{m/s}^2$, joten nopeus pienenee sekunnissa $0{,}6\,\text{m/s}$, ja $4{,}0\,\text{m/s}$ kuluu noin seitsemässä sekunnissa. Pulkka liikkuu koko ajan eteenpäin, vaikka kokonaisvoima osoittaa taaksepäin: se vain hidastuu.
+
+## fy4-4-L1-06
+**Kysytty:** mihin suuntaan hissiin vaikuttava kokonaisvoima $\Sigma\overline{F}$ osoittaa, kun hissi nousee ja hidastuu
+**Periaate:** Newtonin toisen lain mukaan $\Sigma\overline{F} = m\overline{a}$, joten kokonaisvoima osoittaa aina kiihtyvyyden suuntaan. Kiihtyvyyden suunta on nopeuden muutoksen suunta: kun nopeus pienenee, kiihtyvyys osoittaa nopeutta vastaan.
+**Mallivastaus:** Oikea väite on se, jonka mukaan kokonaisvoima osoittaa alas, koska nopeus pienenee ja kiihtyvyys osoittaa alas. Hissi liikkuu yhä ylöspäin, mutta sen nopeus pienenee, joten kiihtyvyys ja kokonaisvoima osoittavat alas. Köyden voima on silloin painoa pienempi. Väite, jonka mukaan nopeuden suunta ratkaisee kokonaisvoiman suunnan, sekoittaa nopeuden ja kiihtyvyyden. Väite nollasta kokonaisvoimasta pätisi vain tasaisessa nousussa. Väite, jonka mukaan köyden voima on aina painoa suurempi, pätee vain nousua aloittaessa.
+
+## fy4-4-L1-07
+**Annettu:** $m = 170\,\text{g}$, $a = 400\,\text{m/s}^2$
+**Kysytty:** kokonaisvoima $\Sigma F$ yksikössä $\text{N}$
+**Periaate:** Newtonin toisen lain mukaan kiihtyvyys syntyy kokonaisvoimasta: $\Sigma F = ma$. Kiekon kiihtyvyys ja massa tunnetaan, joten kokonaisvoima saadaan, kun massa on ensin kilogrammoina.
+**Kaava:** $\Sigma F = ma$
+**Muunnokset:** $170\,\text{g} = 170 : 1000\,\text{kg} = 0{,}17\,\text{kg}$
+**Sijoitus:** $\Sigma F = 0{,}17\,\text{kg}\cdot 400\,\text{m/s}^2 = 68\,\text{N}$
+**Vastaus:** $68\,\text{N}$ liikkeen suuntaan, kaksi merkitsevää numeroa kuten massassa $170\,\text{g}$.
+**Järkevyys:** Kiekon paino on $0{,}17\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 \approx 1{,}7\,\text{N}$, joten isku on noin $40$ kertaa painon suuruinen, kun kiihtyvyys on noin $40$ kertaa putoamiskiihtyvyys: $400 : 9{,}81 \approx 41$. Pieni kiekko tarvitsee suuren voiman, koska kiihtyvyys on suuri.
+
+## fy4-4-L1-08
+**Annettu:** $\Sigma F = 0{,}60\,\text{kN}$, $a = 1{,}5\,\text{m/s}^2$
+**Kysytty:** massa $m$ yksikössä $\text{kg}$
+**Periaate:** Newtonin toinen laki $\Sigma F = ma$ yhdistää kokonaisvoiman, massan ja kiihtyvyyden. Kun kaksi niistä tunnetaan, kolmas saadaan ratkaisemalla laki sen suhteen.
+**Kaava:** $\Sigma F = ma$, joten $m = \dfrac{\Sigma F}{a}$
+**Muunnokset:** $0{,}60\,\text{kN} = 0{,}60 \cdot 1000\,\text{N} = 600\,\text{N}$
+**Sijoitus:** $m = \dfrac{600\,\text{N}}{1{,}5\,\text{m/s}^2} = 400\,\text{kg}$
+**Vastaus:** $4{,}0\cdot 10^{2}\,\text{kg}$ eli $400\,\text{kg}$, kaksi merkitsevää numeroa kuten lähtötiedoissa.
+**Järkevyys:** Tarkistus kertomalla: $400\,\text{kg}\cdot 1{,}5\,\text{m/s}^2 = 600\,\text{N}$. Moottorikelkan massa on realistisesti muutama sata kilogrammaa.
+
+## fy4-4-L2-05
+**Annettu:** taulukon pisteet $(F, a)$, esimerkiksi $F = 1{,}00\,\text{N}$ ja $a = 2{,}03\,\text{m/s}^2$; massa vakio, kitka jätetään huomiotta
+**Kysytty:** kärryn massa $m$ yksikössä $\text{kg}$
+**Periaate:** Kitka on pieni, joten vetovoima on kokonaisvoima, ja Newtonin toisen lain mukaan $a = \dfrac{1}{m}F$. Kiihtyvyys on verrannollinen voimaan, joten kuvaajan suora kulkee origon kautta (ei voimaa, ei kiihtyvyyttä) ja sen kulmakerroin on $\dfrac{1}{m}$.
+**Kuvaajan lukeminen:** Pisteet piirretään $(F, a)$-koordinaatistoon ja pisteiden lomaan sovitetaan suora origon kautta. Suoralta luetaan piste $F = 1{,}00\,\text{N}$, $a = 2{,}01\,\text{m/s}^2$. Kulmakerroin lasketaan origon ja tämän pisteen avulla, ei kahdesta vierekkäisestä mittauspisteestä.
+**Kaava:** $k = \dfrac{a}{F} = \dfrac{1}{m}$, joten $m = \dfrac{1}{k}$
+**Muunnokset:** Suureet ovat SI-yksiköissä, ja $\dfrac{\text{m/s}^2}{\text{N}} = \dfrac{1}{\text{kg}}$, joten muunnoksia ei tarvita.
+**Sijoitus:** $k = \dfrac{2{,}01\,\text{m/s}^2 - 0\,\text{m/s}^2}{1{,}00\,\text{N} - 0\,\text{N}} = 2{,}01\,\tfrac{1}{\text{kg}}$ ja $m = \dfrac{1}{2{,}01\,\tfrac{1}{\text{kg}}} = 0{,}4975\,\text{kg}$
+**Vastaus:** $0{,}50\,\text{kg}$, kaksi merkitsevää numeroa, koska kulmakerroin luetaan kuvaajasta noin kahden numeron tarkkuudella.
+**Järkevyys:** Mittauspisteissä $a : F$ on $0{,}41 : 0{,}20 \approx 2{,}05\,\tfrac{1}{\text{kg}}$ ja $2{,}03 : 1{,}00 = 2{,}03\,\tfrac{1}{\text{kg}}$, eli kaikki suhteet ovat lähellä arvoa $2{,}0\,\tfrac{1}{\text{kg}}$. Massa $0{,}5\,\text{kg}$ sopii pieneen ilmatyynykärryyn. Pisteet eivät ole täsmälleen suoralla mittauksen satunnaisvaihtelun vuoksi.
+
+## fy4-4-L2-06
+**Annettu:** vetovoima vakio, taulukon pisteet $(m, a)$, esimerkiksi $m = 0{,}20\,\text{kg}$ ja $a = 6{,}1\,\text{m/s}^2$; kitka jätetään huomiotta
+**Kysytty:** vetävän voiman suuruus $F$ yksikössä $\text{N}$
+**Periaate:** Vakiovoimalla $a = F \cdot \dfrac{1}{m}$, joten kiihtyvyys on verrannollinen massan käänteislukuun $\dfrac{1}{m}$. Käänteisluvun avulla käyrä $(m, a)$ muuttuu suoraksi, ja suoran kulmakerroin on voima $F$. Suora kulkee origon kautta, koska hyvin suurella massalla kiihtyvyys olisi lähes nolla. Kulmakertoimen ja suoran mielekkyyden edellytys on, että vain massa muuttuu: vetävän voiman, alustan ja kitkan pitää pysyä samoina.
+**Kuvaajan lukeminen:** Käänteisluvut ovat $5{,}0$, $3{,}3$, $2{,}5$, $2{,}0$ ja $1{,}7\,\tfrac{1}{\text{kg}}$. Pisteet $(1/m, a)$ asettuvat suoralle, ja suoralta luetaan pisteet $(0, 0)$ ja $(5{,}0\,\tfrac{1}{\text{kg}}, 6{,}0\,\text{m/s}^2)$.
+**Kaava:** $a = F \cdot \dfrac{1}{m}$, joten kulmakerroin $k = \dfrac{\Delta a}{\Delta(1/m)} = F$
+**Muunnokset:** Suureet ovat SI-yksiköissä, ja $\text{kg}\cdot\dfrac{\text{m}}{\text{s}^2} = \text{N}$, joten muunnoksia ei tarvita.
+**Sijoitus:** $F = k = \dfrac{6{,}0\,\text{m/s}^2 - 0\,\text{m/s}^2}{5{,}0\,\tfrac{1}{\text{kg}} - 0\,\tfrac{1}{\text{kg}}} = 1{,}2\,\text{N}$
+**Vastaus:** a) kulmakerroin on vetävä voima $F$; b) vakioina pidettiin vetävä voima, rata ja kitka, vain massa muuttui. Voiman suuruus on $1{,}2\,\text{N}$, kaksi merkitsevää numeroa kuten kiihtyvyyksien lukemissa.
+**Järkevyys:** Jokaisessa pisteessä $ma$ on lähellä samaa arvoa: $0{,}20\,\text{kg} \cdot 6{,}1\,\text{m/s}^2 = 1{,}22\,\text{N}$ ja $0{,}50\,\text{kg} \cdot 2{,}4\,\text{m/s}^2 = 1{,}20\,\text{N}$. Jos massa kaksinkertaistuu, kiihtyvyys puolittuu: $0{,}30\,\text{kg}$ antaa $3{,}9\,\text{m/s}^2$ ja $0{,}60\,\text{kg}$ antaa $2{,}0\,\text{m/s}^2$.
+
+## fy4-4-L2-07
+**Annettu:** $m = 820\,\text{kg}$, kiihtyvyyden suuruus $a = 1{,}20\,\text{m/s}^2$, elementti liikkuu alas ja hidastuu; $g = 9{,}81\,\text{m/s}^2$
+**Kysytty:** köyden jännitysvoima $T$ yksikössä $\text{N}$ ja opiskelijan ratkaisun virhe
+**Periaate:** Newtonin toisen lain $\Sigma\overline{F} = m\overline{a}$ mukaan kokonaisvoima osoittaa kiihtyvyyden suuntaan, ei nopeuden suuntaan. Elementti liikkuu alas mutta hidastuu, joten sen nopeus pienenee ja kiihtyvyys osoittaa ylös. Opiskelija valitsi kiihtyvyyden suunnaksi liikkeen suunnan eli alas. Köyden täytyy vetää ylöspäin painoa enemmän, jotta kokonaisvoima osoittaa ylös.
+**Voimakuvio:** Betonielementti suorakulmiona, positiivinen suunta ylös. Köyden jännitysvoima $\overline{T}$ yläpinnasta ylös ja paino $\overline{G}$ keskipisteestä alas. Nuoli $\overline{T}$ on pidempi kuin $\overline{G}$. Nopeus osoittaa alas ja kiihtyvyys ylös.
+```voimakuvio
+T 9028 ylös
+G 8044
+a ylös
+v alas
+```
+**Kaava:** $T - mg = ma$, joten $T = m(g + a)$
+**Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
+**Sijoitus:** $T = 820\,\text{kg}\cdot(9{,}81\,\text{m/s}^2 + 1{,}20\,\text{m/s}^2) = 820\,\text{kg}\cdot 11{,}01\,\text{m/s}^2 = 9028{,}2\,\text{N}$
+**Vastaus:** $9030\,\text{N}$ eli $9{,}03\,\text{kN}$, kolme merkitsevää numeroa kuten kiihtyvyydessä $1{,}20\,\text{m/s}^2$. Opiskelijan virhe oli ottaa kiihtyvyyden suunnaksi liikkeen suunta alas: kiihtyvyys osoittaa ylös, koska elementti hidastuu.
+**Järkevyys:** Paino on $820\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 = 8044{,}2\,\text{N}$. Hidastavaan kiihtyvyyteen tarvitaan lisäksi $820\,\text{kg}\cdot 1{,}20\,\text{m/s}^2 = 984\,\text{N}$, ja summa on $9028{,}2\,\text{N}$. Opiskelijan tulos $7{,}06\,\text{kN}$ olisi painoa pienempi, jolloin elementti kiihtyisi alas eikä hidastuisi.
+
+## fy4-4-L3-04
+**Annettu:** taulukon pisteet $(F, a)$ väliltä $F = 2{,}0 \ldots 6{,}0\,\text{N}$; massa vakio, kitkavoima vakio
+**Kysytty:** kitkavoiman suuruus $F_\mu$ yksikössä $\text{N}$ (lisäksi kärryn massa $m$)
+**Periaate:** Liikkuvaan kärryyn vaikuttaa vetovoima liikkeen suuntaan ja kitka sitä vastaan, joten Newtonin toisen lain mukaan $F - F_\mu = ma$ eli $a = \dfrac{1}{m}F - \dfrac{F_\mu}{m}$. Kuvaaja on suora, jonka kulmakerroin on $\dfrac{1}{m}$. Suora ei kulje origon kautta, koska osa vetovoimasta kuluu kitkan voittamiseen: kiihtyvyys on nolla, kun $F = F_\mu$, joten suora leikkaa $F$-akselin kitkavoiman kohdalla.
+**Kuvaajan lukeminen:** Pisteiden lomaan sovitetaan suora. Suoralta luetaan kaksi pistettä kaukana toisistaan: $(2{,}0\,\text{N}, 0{,}41\,\text{m/s}^2)$ ja $(6{,}0\,\text{N}, 2{,}40\,\text{m/s}^2)$. Kulmakerroin lasketaan niistä, ja leikkauskohta $F$-akselilla saadaan ensimmäisestä pisteestä kulmakertoimella.
+**Kaava:** $k = \dfrac{\Delta a}{\Delta F} = \dfrac{1}{m}$, joten $m = \dfrac{1}{k}$, ja leikkauskohdassa $a = 0$, joten $F_\mu = F_1 - \dfrac{a_1}{k}$
+**Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
+**Sijoitus:** $k = \dfrac{2{,}40\,\text{m/s}^2 - 0{,}41\,\text{m/s}^2}{6{,}0\,\text{N} - 2{,}0\,\text{N}} = 0{,}4975\,\tfrac{1}{\text{kg}}$, $m = \dfrac{1}{0{,}4975\,\tfrac{1}{\text{kg}}} = 2{,}01\,\text{kg}$ ja $F_\mu = 2{,}0\,\text{N} - \dfrac{0{,}41\,\text{m/s}^2}{0{,}4975\,\tfrac{1}{\text{kg}}} = 1{,}18\,\text{N}$
+**Vastaus:** $1{,}2\,\text{N}$ ($1{,}18\,\text{N}$ ennen pyöristystä), kaksi merkitsevää numeroa. Kärryn massa on noin $2{,}0\,\text{kg}$. Pisteet eivät ole täsmälleen suoralla mittauksen satunnaisvaihtelun vuoksi, joten tulos on arvio.
+**Järkevyys:** Kun $F = 4{,}0\,\text{N}$, kokonaisvoima on $4{,}0\,\text{N} - 1{,}18\,\text{N} = 2{,}82\,\text{N}$ ja $a = 2{,}82\,\text{N} : 2{,}01\,\text{kg} = 1{,}40\,\text{m/s}^2$, mikä vastaa taulukon arvoa $1{,}42\,\text{m/s}^2$. Kitka on pieni verrattuna painoon $2{,}01\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 \approx 19{,}7\,\text{N}$, noin $6\,\%$ siitä, mikä sopii sileälle alustalle.
+
+## fy4-4-L3-05
+**Annettu:** $m = 70\,\text{kg}$, vaihe 1: $0 \ldots 3{,}0\,\text{s}$, $a_1 = 1{,}0\,\text{m/s}^2$; vaihe 2: $3{,}0 \ldots 9{,}0\,\text{s}$, $a_2 = 0$; vaihe 3: $9{,}0 \ldots 13{,}0\,\text{s}$, tasainen hidastuminen pysähtymiseen; alkunopeus $0$; $g = 9{,}81\,\text{m/s}^2$
+**Kysytty:** suurin nopeus $v_{\max}$, kiihtyvyys $a_3$ ja lattian tukivoima $N$ vaiheessa 3
+**Periaate:** Tasaisesti kiihtyvässä liikkeessä nopeuden muutos on $\Delta v = a\Delta t$. Hissi kiihtyy vain vaiheessa 1, joten suurin nopeus on vaiheen 1 lopussa ja se säilyy vaiheessa 2. Vaiheessa 3 hissi hidastuu pysähtymiseen. Henkilöön vaikuttavat Maa (paino) ja lattia (tukivoima), ja Newtonin toisen lain mukaan niiden summa on $ma$.
+**Voimakuvio:** Henkilö suorakulmiona, positiivinen suunta ylös. Paino $\overline{G}$ keskipisteestä alas ja lattian tukivoima $\overline{N}$ alapinnasta ylös. Nuoli $\overline{N}$ on lyhyempi kuin $\overline{G}$, koska kiihtyvyys osoittaa alas. Nopeus osoittaa ylös.
+```voimakuvio
+pinta 0
+N 634,2 ylös
+G 686,7
+a alas
+v ylös
+```
+**Kaava:** $v_{\max} = a_1\Delta t_1$, $a_3 = \dfrac{0 - v_{\max}}{\Delta t_3}$ ja $N - mg = ma_3$, joten $N = m(g + a_3)$
+**Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita. Vaiheen 3 kesto on $\Delta t_3 = 13{,}0\,\text{s} - 9{,}0\,\text{s} = 4{,}0\,\text{s}$.
+**Sijoitus:** $v_{\max} = 1{,}0\,\text{m/s}^2 \cdot 3{,}0\,\text{s} = 3{,}0\,\text{m/s}$ ja $a_3 = \dfrac{0 - 3{,}0\,\text{m/s}}{4{,}0\,\text{s}} = -0{,}75\,\text{m/s}^2$. Tukivoima on $N = 70\,\text{kg}\cdot(9{,}81\,\text{m/s}^2 - 0{,}75\,\text{m/s}^2) = 70\,\text{kg}\cdot 9{,}06\,\text{m/s}^2 = 634{,}2\,\text{N}$
+**Vastaus:** $630\,\text{N}$ ($634\,\text{N}$ ennen pyöristystä), kaksi merkitsevää numeroa kuten massassa $70\,\text{kg}$ ja kiihtyvyydessä. Suurin nopeus on $3{,}0\,\text{m/s}$ ja kiihtyvyys vaiheessa 3 on $0{,}75\,\text{m/s}^2$ alaspäin. Tukivoima on painoa $mg = 686{,}7\,\text{N}$ pienempi, koska kokonaisvoima ja kiihtyvyys osoittavat alas.
+**Järkevyys:** Hissi pysähtyy: $3{,}0\,\text{m/s} - 0{,}75\,\text{m/s}^2 \cdot 4{,}0\,\text{s} = 0$. Tukivoiman ja painon erotus on $686{,}7\,\text{N} - 634{,}2\,\text{N} = 52{,}5\,\text{N} = 70\,\text{kg}\cdot 0{,}75\,\text{m/s}^2$, joten voimat täsmäävät liikeyhtälön kanssa. Vaiheessa 1 tukivoima olisi vastaavasti painoa suurempi, $70\,\text{kg}\cdot 10{,}81\,\text{m/s}^2 = 756{,}7\,\text{N}$, ja tasaisessa vaiheessa 2 yhtä suuri kuin paino.

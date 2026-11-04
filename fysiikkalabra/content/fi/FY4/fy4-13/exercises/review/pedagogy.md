@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: bc818ddb9a49965a
+CONTENT-HASH: db89440a4bef0c0d
+
 ## Blocking
-(none)
+
 ## Polish
-- solutions.md fy4-13-L3-01 — the question asks the force on the axle, but the pulley's diagram (two T down, F_akseli up) is only described in text and the pulley as a body is not taught in the lesson; add it as a third diagram block, or a hint "piirrä myös pyörän voimakuvio".
-- exercises.json fy4-13-L1-03 — same set-up as the worked example (cart + hanging weight, find T) with new numbers; make it ask for a, or give the cart a pull so it is not a copy.
-- solutions.md fy4-13-L2-01 — Periaate could say in one more sentence why alempi köysi vetää ylempää laatikkoa alas (third law); the lesson never shows a chain of bodies on ropes.
-- solutions.md fy4-13-L1-04 — "Vastaus: 29 N" with tolerance 2 % rejects 30 N (g = 10); note in Järkevyys that 29,4 N rounds to 29.
-- figures.py malli-ketju — at 360 px the G_1 label's subscript sits on the dashed divider between the panels (unchanged by this edit; for the visual review).
+- fy4-13-L2-06 still uses one table row only, and the plan's friction-estimate task is missing; the other rows could be used to show that $T < m_2 g$ every time.
+- L1-07 (Atwood, find $a$) is close to L2-02 (Atwood, find $T$).
+- Data tables use decimal points while the text uses commas.
+
 ## Checked
-- Full review after the malli-ketju label nudge. Rendered the model figure inside the opened L2-01 solution at 360 px (fi, en, fi-easy): T_1 and the upper T_2 labels now clear the "voimakuvio: ylempi/alempi" captions and the arrows; every label is readable and next to its own arrow; T_1 visibly longest, T_2 equal in both panels. The figure appears only in the solution, after the student's own drawing (fbd "draw"), so it gives nothing away; its description gives the same arrows and their relative lengths.
-- Levels rise: L1 one body or one rope, L2 two bodies with internal tension and inverse tasks, L3 limit, kinematics and pulley force.
-- Every task says to draw the diagram first; solutions follow annettu, kysytty, periaate, voimakuvio, kaava, sijoitus, vastaus, järkevyys with the diagram before equations.
-- All twelve answers recomputed: correct.
-- Variety: pulley, hanging pair, sleds, lift, rope strength. Finnish terms and case endings correct.
+- Changes: MC option orders rebalanced (L1-06 correct option now third, L1-08 second); L2-07 key is now 2,0 with 2 % (true 1,962; the student's 2,45 falls outside); the Järkevyys line of L2-07 is now readable.
+- L3-04 states that the locomotive mass is excluded and that its pull is the same in both orders; the solution has three voimakuvio blocks, with the 27 / 15 / 6 kN arrows consistent with the numbers; K12 = 15 kN, and 21 kN in the new order (above 20 kN).
+- L3-05 now says the track is long enough; the voimakuvio of the 0,200 kg measurement (T = 1,6 N) matches $m_1 a$; answer 0,91 kg.
+- The "kaksi merkitsevää numeroa" lines now give a reason (spread of the data).
+- 20 tasks in 8/7/5 with complete solutions; scope stays inside the lesson.
+- Hash identical at the start and the end.

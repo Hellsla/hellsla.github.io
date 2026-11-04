@@ -1,12 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 72023dfdc0bbc171
+CONTENT-HASH: ea2b4cf4411293ca
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
+(none)
+
+## Fixed
+(none needed: the English text already matched fi in every number)
 
 ## Polish
-- 'moving box' in L2-04, same remark as in the lesson review.
+(none)
 
 ## Checked
-Compared exercises.json (14 tasks) and solutions.md (all seven parts of each solution) with the Finnish: every datum, answer, unit, tolerance and intermediate number matches.
-Terms and decimal point are right (weight, normal force, kinetic/static friction, tension); symbols, \overline{G}, \cdot and units are LaTeX.
-check_latex is clean. No edits were needed.
+- All 14 tasks incl. the 8 new ones (L1-06..08, L2-05..07, L3-04..05) compared with content/fi by script: ids, levels, kinds, answers, units, tolerances, correct flags (one correct option in L1-06, L1-08), data-table cells and every number in texts, choices and feedback are equal (decimal point in en JSON/LaTeX where fi has a comma).
+- solutions.md: all numbers equal to fi (992 each; voimakuvio code blocks keep the DSL syntax of fi).
+- Terms: weight, normal force, static/kinetic friction, limiting angle are correct and consistent; no Finnish prose left in en.
+- check_i18n.py en: 0 errors. No edits were needed.

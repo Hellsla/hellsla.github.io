@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 9c86d3f377cf47f7
+CONTENT-HASH: e1dcbf2b13e4d6c6
 
 ## Blocking
 
 ## Polish
-- exercises.json fy4-6-L2-04 — "Kuinka monta newtonia komponentti ylittää suurimman lepokitkan? (Jos luku olisi negatiivinen…)" is a scaffolded comparison rather than a question a student would meet — fix: ask "Pysyykö laatikko paikallaan? Perustele laskemalla" and keep the 8,1 N as the check value.
-- solutions.md fy4-6-L1-05 — "Voimakuvio" comes before "Periaate", unlike every other solution — fix: reorder for consistency.
-- fy4-6-L1-03 repeats the spring-balance idea of the lesson's optional "Mittaus jousivaa'alla" at level 1 only with other numbers; acceptable, but no level-1 task uses static friction below the limit (only check-1 does) — fix: optional, swap L1-05 or add one.
+- fy4-6-L2-05 is still close to the existing L2-03 (slope of $F_\mu$ against $N$); it only adds $N = mg$.
+- L1-08 ($N < G$ on a slope) pre-answers the error of L3-05 ($N = mg$ on a slope).
+- L3-05 now has the fbd tag "equations" although the task is an error analysis; if the plan counts an "error" diagram task for this chapter, check that another task carries the tag.
+- Data tables use decimal points while the text uses commas.
 
 ## Checked
-- Counts 5/4/3; levels rise from one formula (L1) through rearrangement, graph reading and kinematics link (L2) to the accelerating truck bed, the up-slope stop and the Moon scaling (L3); none repeats the worked example.
-- Every task has answer, unit, tolerance; data significant figures match the stated answers.
-- fbd plan: seven tasks tagged equations ask for the diagram first; all solutions draw the diagram before any equation, with direction reasons (friction up the slope when sliding down, forward on the truck bed).
-- L3-01 and L3-02 cover friction along the motion and up-slope sliding (misconception from the lesson).
-- Solutions state the principle, symbolic step, units, significant figures and a reasonableness check; steps followable by a student who could not solve it.
-- Finnish: case after number+unit correct (150 N:n, 40 kg:n); glossary terms used.
+- L3-05 new data ($30^\circ$, $\mu = 0{,}35$, 20 kg): the student's $a = g(\sin\alpha - \mu) = 1{,}47$ so "1,5"; correct $a = 1{,}93$ m/s², $s = 8{,}69$ m, key 8,7 (3 %); the voimakuvio ($N$ = 169,9 N, $F_\mu$ = 59,5 N) and the Järkevyys are consistent.
+- L3-04: key now 73 m (2 significant figures, matches the solution Vastaus 73 m, exact 73,4 m is within the 3 % band); the unused "Lumi" row removed.
+- L1-06 asks about static friction $F_{\mu 0}$, correct option now first; L1-08 correct option third; answer strings match. L2-06 asks to read the largest table value (0,5 s step); the "$F_{\mu 0,\text{max}}$" in L1-07 became $\mu_0 N$; L2-07 gives 0,4748.
+- 20 tasks in 8/7/5, solutions complete.
+- Hash identical at the start and the end.

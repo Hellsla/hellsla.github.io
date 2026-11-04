@@ -37,4 +37,19 @@ a["fy4-13-L3-02"] = within(Tmax * m1 / (m1 * g - Tmax), 0.44, 0.02)    # T = m1 
 m1, m2, s = 1.5, 0.50, 0.90
 acc = m2 * g / (m1 + m2)                                               # a = 2,4525 m/s²
 a["fy4-13-L3-03"] = within(math.sqrt(2 * s / acc), 0.86, 0.02)         # s = ½ a t² → t = √(2s/a) = 0,857 s
+# Exercise bank additions: L1-06 and L1-08 are multiple choice (no number)
+a["fy4-13-L1-07"] = within((0.70 - 0.30) * g / (0.30 + 0.70), 3.9, 0.02)   # two hanging bodies: a = (m2 − m1) g/(m1 + m2) = 3,924 m/s²
+dm, acc_s = [0.050, 0.100, 0.150, 0.200, 0.250], [0.96, 2.02, 2.88, 3.97, 4.84]
+k = sum(x * y for x, y in zip(dm, acc_s)) / sum(x * x for x in dm)          # line through the origin: a = k Δm, k = 19,53 (m/s²)/kg
+a["fy4-13-L2-05"] = within(k * 0.500, 9.8, 0.03)                           # Atwood: k = g/M → g = k M = 9,77 m/s²
+m1, acc_m = 1.20, 2.84
+a["fy4-13-L2-06"] = within(m1 * acc_m, 3.4, 0.04)                          # cart: T = m1 a = 3,408 N (hanging body: m2 (g − a) = 3,485 N)
+m1, m2 = 2.0, 0.50
+a["fy4-13-L2-07"] = within(m2 * g / (m1 + m2), 2.0, 0.02)                 # error: a = m2 g/(m1 + m2) = 1,962 m/s², not m2 g/m1 = 2,45 m/s²
+tv = [(0, 0.00), (5, 2.46), (10, 5.03), (15, 7.48), (20, 10.02)]
+a_tr = round((tv[-1][1] - tv[0][1]) / (tv[-1][0] - tv[0][0]), 2)           # a = 10,02/20 = 0,50 m/s²
+a["fy4-13-L3-04"] = within((18.0 + 12.0) * a_tr, 15, 0.04)                 # coupling 1–2 pulls wagons 2 and 3: K = (m2 + m3) a = 15 kN (t·m/s² = kN); reordered 12, 18, 24 t: (18 + 24) a = 21 kN
+s_d, rows = 0.80, [(0.100, 1.29), (0.200, 0.96), (0.300, 0.80), (0.400, 0.73)]
+m1_list = [m2 * (g / (2 * s_d / t**2) - 1) for m2, t in rows]              # m1 = m2 (g/a − 1), a = 2 s/t²: 0,920; 0,930; 0,877; 0,907 kg
+a["fy4-13-L3-05"] = within(sum(m1_list) / len(m1_list), 0.91, 0.04)        # mean 0,9086 kg
 print(json.dumps(a))
