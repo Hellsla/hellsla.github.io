@@ -117,3 +117,69 @@
 **Sijoitus:** $t = 24\,100\,\text{a} \cdot \log_2 1000 = 24\,100\,\text{a} \cdot 9{,}9658 = 240\,175\,\text{a}$
 **Vastaus:** $2{,}40 \cdot 10^{5}\,\text{a}$, kolme merkitsevää numeroa kuten puoliintumisajassa $24\,100\,\text{a}$.
 **Järkevyys:** $2^{10} = 1024 \approx 1000$, joten aikaa kuluu noin kymmenen puoliintumisaikaa eli noin $241\,000\,\text{a}$. Siksi käytetty polttoaine on eristettävä satojatuhansia vuosia, kun taas cesium-137 ($30{,}1\,\text{a}$) pienenee tuhannesosaan noin $300$ vuodessa.
+
+## fy8-11-L1-06
+**Kysytty:** mikä on ydinreaktorin hidastimen tehtävä.
+**Periaate:** Fissiossa syntyvät neutronit ovat hyvin nopeita, mutta uraani-235-ydin kaappaa hitaan neutronin todennäköisemmin kuin nopean. Hidastin on aine, jonka kevyisiin ytimiin neutronit törmäävät ja menettävät liike-energiaa. Hidastin ei poista neutroneja eikä siirrä lämpöä: ensin mainittu on säätösauvojen ja jälkimmäinen jäähdytteen tehtävä.
+**Mallivastaus:** Hidastin hidastaa fissioissa syntyneet nopeat neutronit, koska hitaat neutronit aiheuttavat uraani-235:n fissioita todennäköisemmin kuin nopeat. Näin ketjureaktio pysyy käynnissä. Neutronien määrää ja kasvukerrointa säädetään säätösauvoilla, jotka sitovat neutroneja, ja lämmön siirtää turbiinille jäähdyte. Neutroni ei jakaudu osiin hidastuessaan, vaan se menettää liike-energiaa törmäyksissä.
+
+## fy8-11-L1-07
+**Kysytty:** miksi fuusio vaatii korkean lämpötilan.
+**Periaate:** Atomiytimillä on positiivinen varaus, joten ne hylkivät toisiaan sähköisesti. Ydinvoimat vaikuttavat vain hyvin lyhyellä matkalla, joten ytimien täytyy päästä sen verran lähelle toisiaan. Korkeassa lämpötilassa hiukkasten liike-energia on suuri, ja osa ytimistä pääsee hylkimisestä huolimatta riittävän lähelle.
+**Mallivastaus:** Ytimet hylkivät toisiaan sähköisesti, joten ne tarvitsevat suuren liike-energian päästäkseen toisiaan lähelle. Kun ytimet ovat tarpeeksi lähellä, lyhyen kantaman ydinvoimat voittavat sähköisen hylkimisen ja ytimet yhtyvät. Lämpötila ei tee ytimistä radioaktiivisia eikä pienennä niiden massaa, eikä aine ole näin kuumana nestettä vaan plasmaa. Massan pieneneminen tapahtuu vasta fuusioreaktiossa, ja siinä vapautuu energiaa.
+
+## fy8-11-L1-08
+**Annettu:** yhden fission energia $Q = 200\,\text{MeV}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
+**Kysytty:** energia $Q$ jouleina yksikössä $10^{-11}\,\text{J}$
+**Periaate:** Megaelektronivoltti on elektronivoltin miljoonakertainen yksikkö, ja elektronivoltti on energia jouleina annetun muuntokertoimen mukaan. Energia pysyy samana, vain yksikkö vaihtuu.
+**Kaava:** $Q = n\,e$, missä $n = 200 \cdot 10^{6}$ on energia elektronivoltteina ja $e = 1{,}602 \cdot 10^{-19}\,\text{J}$ on yksi elektronivoltti
+**Muunnokset:** $1\,\text{MeV} = 10^{6}\,\text{eV}$, joten $200\,\text{MeV} = 200 \cdot 10^{6}\,\text{eV}$.
+**Sijoitus:** $Q = 200 \cdot 10^{6} \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 3{,}204 \cdot 10^{-11}\,\text{J}$
+**Vastaus:** $3{,}20 \cdot 10^{-11}\,\text{J}$ eli $3{,}20$ yksikössä $10^{-11}\,\text{J}$, kolme merkitsevää numeroa kuten muuntokertoimessa.
+**Järkevyys:** Gramma uraani-235:tä sisältää $2{,}56 \cdot 10^{21}$ ydintä, joten täysin fissioituessaan se vapauttaa $2{,}56 \cdot 10^{21} \cdot 3{,}2 \cdot 10^{-11}\,\text{J} \approx 8{,}2 \cdot 10^{10}\,\text{J}$. Tämä on luvun $82\,\text{GJ}$, joten yhden fission energia on oikeaa suuruusluokkaa.
+
+## fy8-11-L2-05
+**Annettu:** neutronimäärät $N_0 = 1000$ ja $N_5 = 1064$ sukupolvissa $0$ ja $5$, kasvukerroin $k$ vakio, kysytty sukupolvi $g = 50$
+**Kysytty:** a) kasvukerroin $k$ ja reaktorin kriittisyys, b) neutronien määrä $N_{50}$
+**Periaate:** Kun kasvukerroin pysyy samana, neutronien määrä kerrotaan jokaisessa sukupolvessa luvulla $k$. Jos $k < 1$, reaktori on alikriittinen ja ketju sammuu, jos $k = 1$, kriittinen ja määrä pysyy samana, ja jos $k > 1$, ylikriittinen ja määrä kasvaa. Taulukon peräkkäisten arvojen suhteet vaihtelevat hieman ($1{,}009$–$1{,}016$), koska neutronien kohtalo on satunnainen, joten $k$ määritetään koko jaksolta ensimmäisen ja viimeisen arvon avulla.
+**Kaava:** $N_g = N_0 k^g$, josta $k = \left(\dfrac{N_5}{N_0}\right)^{1/5}$ ja $N_{50} = N_0 k^{50}$
+**Muunnokset:** Ei tarvita: neutronimäärät ovat paljaita lukuja.
+**Sijoitus:** a) $k = \left(\dfrac{1064}{1000}\right)^{1/5} = 1{,}01248$. Koska $k > 1$, reaktori on ylikriittinen. b) $k^{50} = (k^{5})^{10} = 1{,}064^{10}$, joten $N_{50} = 1000 \cdot 1{,}064^{10} = 1000 \cdot 1{,}8596 = 1859{,}6$
+**Vastaus:** $1860$ neutronia kohdan b) tuloksena; kasvukerroin on $k = 1{,}012$ ja reaktori ylikriittinen. Luku on keskiarvo ja kolme merkitsevää numeroa riittää, koska taulukon arvot vaihtelevat satunnaisesti.
+**Järkevyys:** Neutronimäärä kasvaa noin $1{,}2\,\%$ sukupolvessa, mikä sopii taulukon kasvuun ($6{,}4\,\%$ viidessä sukupolvessa). Kaksinkertaistumiseen tarvittaisiin yli $55$ sukupolvea, koska $1{,}0125^{55} \approx 1{,}98$, joten $50$ sukupolvessa määrä on hieman alle kaksinkertainen: $1860 < 2000$. Käytössä olevassa reaktorissa säätösauvat pitävät kasvukertoimen luvussa $k = 1$.
+
+## fy8-11-L2-06
+**Annettu:** reaktoreiden nettosähkötehot taulukosta ($890\,\text{MW}$, $890\,\text{MW}$, $1600\,\text{MW}$, $507\,\text{MW}$ ja $507\,\text{MW}$), kapasiteettikerroin $0{,}90$, aika $365\,\text{d}$
+**Kysytty:** a) yhteenlaskettu teho $P$, b) vuotuinen sähköenergia $E$ terawattitunteina
+**Periaate:** Yhteenlaskettu teho on reaktoreiden tehojen summa. Energia on teho kertaa aika, ja kapasiteettikertoimen $0{,}90$ mukaan reaktorit tuottavat vuodessa $90\,\%$ siitä energiasta, jonka ne tuottaisivat koko vuoden nimellisteholla.
+**Kaava:** $P = P_1 + P_2 + P_3 + P_4 + P_5$ ja $E = 0{,}90\,P\,t$
+**Muunnokset:** $t = 365 \cdot 24\,\text{h} = 8760\,\text{h}$, $P = 4394\,\text{MW} = 4394 \cdot 10^{6}\,\text{W}$ ja $1\,\text{TWh} = 10^{12}\,\text{Wh}$
+**Sijoitus:** a) Summa on $890 + 890 + 1600 + 507 + 507 = 4394$, joten $P = 4394\,\text{MW}$. b) $E = 0{,}90 \cdot 4394 \cdot 10^{6}\,\text{W} \cdot 8760\,\text{h} = 3{,}464 \cdot 10^{13}\,\text{Wh} = 34{,}64\,\text{TWh}$
+**Vastaus:** $34{,}6\,\text{TWh}$, kolme merkitsevää numeroa; taulukon tehot on pyöristetty ja kapasiteettikerroin on oletus, joten tulos on arvio.
+**Järkevyys:** Koko vuoden nimellisteholla energia olisi $4394\,\text{MW} \cdot 8760\,\text{h} \approx 38{,}5\,\text{TWh}$, ja $90\,\%$ siitä on noin $34{,}6\,\text{TWh}$. Pyöreillä luvuilla $4{,}4\,\text{GW} \cdot 0{,}9 \cdot 8800\,\text{h} \approx 35\,\text{TWh}$.
+
+## fy8-11-L2-07
+**Kysytty:** mikä oppilaan päättelyssä on virhe, kun hän päättelee, ettei fissiossa vapaudu energiaa.
+**Periaate:** Nukleonien lukumäärä säilyy ($236 = 236$), joten oppilaan lähtökohta on oikea. Massa ei kuitenkaan ole pelkästään nukleonien lukumäärä kertaa vakio, vaan siihen vaikuttaa sidosenergia. Tuotteissa sidosenergia nukleonia kohti on suurempi kuin uraanissa, joten tuotteiden kokonaismassa on pienempi. Massan ja energian ekvivalenssin mukaan massaero vapautuu energiana, $Q = \Delta m\,c^2$.
+**Mallivastaus:** Nukleonien määrä säilyy, mutta tuotteiden nukleonit ovat tiukemmin sidottuja kuin uraani-235:n nukleonit, joten tuotteiden kokonaismassa on pienempi kuin lähtöaineiden. Massaero vapautuu energiana, joten fissiossa vapautuu energiaa. Nukleonit eivät muutu energiaksi eivätkä katoa, ja massa ja energia ovat ekvivalentteja eivätkä toisistaan erillisiä. Jos tuotteiden nukleonit olisivat löyhemmin sidottuja, massa kasvaisi eikä energiaa vapautuisi.
+
+## fy8-11-L3-04
+**Annettu:** aktiivisuus tonnia kohti ajan funktiona (taulukko, esimerkkiaineisto), tavoitearvo $A_\text{raja} = 10\,\tfrac{\text{TBq}}{\text{t}}$, plutonium-239:n puoliintumisaika $24\,100\,\text{a}$
+**Kysytty:** a) puoliintumisaika $T_{1/2}$, b) aika $t$, jolloin aktiivisuus on $10\,\tfrac{\text{TBq}}{\text{t}}$, c) perustelu
+**Periaate:** Hajoamislain mukaan $A = A_0 e^{-\lambda t}$, joten $\ln A = \ln A_0 - \lambda t$ on ajan lineaarinen funktio, jonka kulmakerroin on $-\lambda$. Suora sovitetaan pisteisiin, ja puoliintumisaika on $T_{1/2} = \tfrac{\ln 2}{\lambda}$. Kun suoraa jatketaan, aika, jolloin aktiivisuus on $10\,\tfrac{\text{TBq}}{\text{t}}$, saadaan ratkaisemalla hajoamislaista $t$.
+**Kaava:** $\ln A = \ln A_0 - \lambda t$, $T_{1/2} = \dfrac{\ln 2}{\lambda}$ ja $t = \dfrac{1}{\lambda}\ln\dfrac{A_0}{A_\text{raja}}$
+**Muunnokset:** Ei tarvita: aika on vuosina ja aktiivisuus yksikössä $\tfrac{\text{TBq}}{\text{t}}$ koko tehtävän ajan.
+**Kuvaajan lukeminen:** Pisteet $(t, \ln A)$ ovat $(0\,\text{a}; 8{,}006)$, $(10\,\text{a}; 7{,}779)$, $(20\,\text{a}; 7{,}563)$, $(30\,\text{a}; 7{,}317)$, $(40\,\text{a}; 7{,}086)$ ja $(50\,\text{a}; 6{,}872)$. Ne asettuvat likimain suoralle mutta eivät täsmälleen sille, koska aktiivisuuden mittaus on epätarkka. Suora piirretään pisteiden lomaan. Sovitetun suoran yhtälö on $\ln A = 8{,}008 - 0{,}02285\,\tfrac{1}{\text{a}} \cdot t$, joten $\lambda = 0{,}02285\,\tfrac{1}{\text{a}}$ ja alkuaktiivisuus on $A_0 = e^{8{,}008}\,\tfrac{\text{TBq}}{\text{t}} = 3006\,\tfrac{\text{TBq}}{\text{t}}$.
+**Sijoitus:** a) $T_{1/2} = \dfrac{\ln 2}{0{,}02285\,\tfrac{1}{\text{a}}} = 30{,}3\,\text{a}$. b) $t = \dfrac{1}{0{,}02285\,\tfrac{1}{\text{a}}}\ln\dfrac{3006}{10} = 43{,}77\,\text{a} \cdot 5{,}706 = 249{,}7\,\text{a}$. c) Plutonium-239:n aktiivisuus pienenee puoleen vasta $24\,100$ vuodessa, joten $250$ vuodessa se on pienentynyt vain noin $1\,\%$: $\left(\tfrac{1}{2}\right)^{250/24100} = 0{,}993$.
+**Vastaus:** $250\,\text{a}$ kohdan b) tuloksena; puoliintumisaika on $30\,\text{a}$ ja kaksi merkitsevää numeroa riittää, koska suoran sovitus on epätarkka. Kohdassa c) perustelu: noin $250$ vuoden jälkeen aktiivisuuden määräävät pitkäikäiset nuklidit, kuten plutonium-239, jonka aktiivisuus pienenee vain hitaasti. Koko aktiivisuus pienenee tuhannesosaan vasta noin $240\,000$ vuodessa, ja siksi polttoaine eristetään Onkaloon pitkäksi aikaa.
+**Järkevyys:** Taulukossa aktiivisuus on $30$ vuodessa $1505$ eli noin puolet alkuarvosta $3000$, joten puoliintumisaika on noin $30\,\text{a}$. Kahdeksan puoliintumisaikaa pienentää aktiivisuuden tekijällä $2^{8} = 256$, ja $3000 : 256 \approx 12$, joten $10\,\tfrac{\text{TBq}}{\text{t}}$ saavutetaan noin $250\,\text{a}$ kuluttua. Malli kuvaa vain fissiotuotteita.
+
+## fy8-11-L3-05
+**Annettu:** nettosähköteho $P_\text{s} = 507\,\text{MW}$, hyötysuhde $\eta = 0{,}33$, käyttöaika $92\,\%$ vuodesta ($365\,\text{d}$), fission energia $Q = 200\,\text{MeV}$, $m_\text{U} = 235{,}0439282\,\text{u}$, $1\,\text{u} = 1{,}66054 \cdot 10^{-27}\,\text{kg}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$, kivihiilen lämpöarvo $24\,\tfrac{\text{MJ}}{\text{kg}}$
+**Kysytty:** a) lämpöteho $P_\text{th}$ ja jäähdytysveteen siirtyvä teho $P_\text{jäte}$, b) vuodessa fissioituva uraani-235:n massa $m$, c) vastaavan kivihiilen massa
+**Periaate:** Hyötysuhde on sähköteho jaettuna lämpöteholla, joten lämpöteho saadaan sähkötehosta. Se osa lämpötehosta, joka ei muutu sähköksi, siirtyy jäähdytysveteen. Oletuksen mukaan kaikki lämpöteho syntyy uraani-235:n fissioista. Vuodessa vapautunut energia jaettuna yhden fission energialla on fissioiden määrä, ja jokainen fissio kuluttaa yhden uraani-235-atomin.
+**Kaava:** $\eta = \dfrac{P_\text{s}}{P_\text{th}}$, $P_\text{jäte} = P_\text{th} - P_\text{s}$, $E = 0{,}92\,P_\text{th}\,t$, $N = \dfrac{E}{Q}$, $m = N\,m_\text{U}$ ja $m_\text{hiili} = \dfrac{E}{\text{lämpöarvo}}$
+**Muunnokset:** $t = 365 \cdot 24 \cdot 3600\,\text{s} = 31\,536\,000\,\text{s}$; $Q = 200 \cdot 10^{6} \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 3{,}204 \cdot 10^{-11}\,\text{J}$; $m_\text{U} = 235{,}0439282 \cdot 1{,}66054 \cdot 10^{-27}\,\text{kg} = 3{,}9030 \cdot 10^{-25}\,\text{kg}$; $24\,\tfrac{\text{MJ}}{\text{kg}} = 24 \cdot 10^{6}\,\tfrac{\text{J}}{\text{kg}}$
+**Sijoitus:** a) $P_\text{th} = \dfrac{507\,\text{MW}}{0{,}33} = 1536\,\text{MW}$ ja $P_\text{jäte} = 1536\,\text{MW} - 507\,\text{MW} = 1029\,\text{MW}$. b) $E = 0{,}92 \cdot 1536{,}4 \cdot 10^{6}\,\text{W} \cdot 31\,536\,000\,\text{s} = 4{,}457 \cdot 10^{16}\,\text{J}$, joten $N = \dfrac{4{,}457 \cdot 10^{16}\,\text{J}}{3{,}204 \cdot 10^{-11}\,\text{J}} = 1{,}391 \cdot 10^{27}$ ja $m = 1{,}391 \cdot 10^{27} \cdot 3{,}9030 \cdot 10^{-25}\,\text{kg} = 543{,}0\,\text{kg}$. c) $m_\text{hiili} = \dfrac{4{,}457 \cdot 10^{16}\,\text{J}}{24 \cdot 10^{6}\,\tfrac{\text{J}}{\text{kg}}} = 1{,}857 \cdot 10^{9}\,\text{kg} = 1{,}86 \cdot 10^{6}\,\text{t}$
+**Vastaus:** $543\,\text{kg}$ kohdan b) tuloksena; kolme merkitsevää numeroa kuten hyötysuhteessa $0{,}33$, joka on oletus. Kohdassa a) lämpöteho on $1540\,\text{MW}$ ja jäähdytysveteen siirtyy $1030\,\text{MW}$. Kohdassa c) tarvittaisiin noin $1{,}9$ miljoonaa tonnia kivihiiltä: ydinreaktioissa energia on miljoonia elektronivoltteja atomia kohti ja palamisessa elektronivoltin luokkaa, joten hiiltä tarvitaan noin $3{,}4$ miljoonaa kertaa enemmän massaa kuin uraani-235:tä.
+**Järkevyys:** Luvun mukaan gramma uraani-235:tä vapauttaa noin $82\,\text{GJ}$. Energia $4{,}457 \cdot 10^{16}\,\text{J}$ jaettuna luvulla $8{,}2 \cdot 10^{10}\,\tfrac{\text{J}}{\text{g}}$ on noin $5{,}4 \cdot 10^{5}\,\text{g} = 540\,\text{kg}$, mikä täsmää. Jäähdytysveteen siirtyvä teho on suurempi kuin sähköteho, mikä sopii hyötysuhteeseen $0{,}33$, koska $1029 > 507$.
