@@ -39,6 +39,52 @@
       "answer": 8.0,
       "unit": "µSv/h",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-13-L1-06",
+      "level": 1,
+      "text": "Absorbed dose is measured in the unit gray ($\\text{Gy}$) and effective dose in the unit sievert ($\\text{Sv}$). Both units can be written in the form $\\tfrac{\\text{J}}{\\text{kg}}$. Which statement describes the difference between these doses correctly?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Gray measures absorbed energy per unit mass, and sievert weights it according to the type of radiation and the tissue.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Gray tells the decay rate of the source and sievert the energy emitted by the source, so both describe the source.",
+          "feedback": "Both doses describe the target of the radiation, not the source. The activity of a source, that is, its decay rate, is measured in becquerels, and gray and sievert tell how much energy is absorbed in tissue per unit mass."
+        },
+        {
+          "text": "Gray and sievert are the same quantity, because both are joules per kilogram and the type of radiation does not affect the dose.",
+          "feedback": "The units have the same form, but the quantities are not the same. The same absorbed dose from alpha radiation gives an equivalent dose $20$ times that of gamma radiation, and that is why the unit of dose has its own name, sievert."
+        },
+        {
+          "text": "Gray measures absorbed energy per unit mass, and sievert weights it according to the type of radiation and the tissue.",
+          "correct": true,
+          "feedback": "Correct: the absorbed dose $D = \\tfrac{E}{m}$ is a physical quantity. In the equivalent dose it is multiplied by the radiation weighting factor $w_\\text{R}$ and in the effective dose also by the tissue weighting factor $w_\\text{T}$, so the sievert describes health risk."
+        },
+        {
+          "text": "Gray describes only gamma radiation and sievert only alpha radiation, because the types of radiation are absorbed differently.",
+          "feedback": "Neither unit is limited to one type of radiation. The absorbed dose can be calculated for any ionising radiation, and in the equivalent dose and the effective dose the type of radiation is taken into account with the weighting factor $w_\\text{R}$."
+        }
+      ]
+    },
+    {
+      "id": "fy8-13-L1-07",
+      "level": 1,
+      "text": "In an X-ray examination of the abdomen the liver receives an equivalent dose of $2.0\\,\\text{mSv}$ and the stomach $1.0\\,\\text{mSv}$ (example values). The other tissues receive no significant dose.\n\nThe tissue weighting factor of the liver is $0.04$ and that of the stomach $0.12$. How large is the patient's effective dose? Give the answer in millisieverts.",
+      "answer": 0.2,
+      "unit": "mSv",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-13-L1-08",
+      "level": 1,
+      "text": "The effective dose of a chest X-ray is about $0.10\\,\\text{mSv}$ (example value). The average effective dose of a Finn is $5.9\\,\\text{mSv}$ per year (STUK-A263, 2020).\n\nWhat percentage of the average annual dose is the dose of one examination? Give the answer as a percentage.",
+      "answer": 1.7,
+      "unit": "%",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -73,6 +119,86 @@
       "answer": 30,
       "unit": "mm",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-13-L2-05",
+      "level": 2,
+      "text": "The table shows the average annual effective dose of a Finn by source. The data is example data based on the average annual dose of $5.9\\,\\text{mSv}$ in STUK-A263 (2020). Other natural radiation includes radiation from the ground and building materials, cosmic radiation and the radioactive substances of the body.\n\na) Calculate the sum of the doses of the sources.\n\nb) What percentage of the total dose comes from indoor radon? Give the answer as a percentage.\n\nThe answer box takes the result of part b).",
+      "kind": [
+        "data"
+      ],
+      "answer": 68,
+      "unit": "%",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Average annual effective dose of a Finn by source (example data)",
+        "columns": [
+          "Source",
+          "$H_\\text{E}\\,(\\text{mSv})$"
+        ],
+        "rows": [
+          [
+            "Indoor radon",
+            "4.0"
+          ],
+          [
+            "Other natural radiation",
+            "1.1"
+          ],
+          [
+            "Medical use",
+            "0.8"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy8-13-L2-06",
+      "level": 2,
+      "text": "A group measured the dose rate of a small gamma source at different distances. The share of background radiation has been subtracted from the results (table, example data).\n\nWe want to investigate whether the dose rate obeys the inverse-square law of distance:\n\n$\\dot{H}_2 = \\dot{H}_1 \\left(\\dfrac{r_1}{r_2}\\right)^2$\n\na) Calculate the product $\\dot{H} r^2$ for each distance.\n\nb) What should happen to the product if the inverse-square law holds? Conclude whether the measurement obeys the law.\n\nc) Predict the dose rate at a distance of $3.0\\,\\text{m}$ using the mean $k_\\text{avg}$ of the four products. Give the answer in the unit $\\mu\\text{Sv/h}$.\n\nThe answer box takes the result of part c) obtained with the mean method.",
+      "kind": [
+        "data",
+        "experiment"
+      ],
+      "answer": 11.2,
+      "unit": "µSv/h",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Dose rate at different distances from the source (example data)",
+        "columns": [
+          "$r\\,(\\text{m})$",
+          "$\\dot{H}\\,(\\mu\\text{Sv/h})$"
+        ],
+        "rows": [
+          [
+            "0.50",
+            "410"
+          ],
+          [
+            "1.00",
+            "98.0"
+          ],
+          [
+            "1.50",
+            "44.0"
+          ],
+          [
+            "2.00",
+            "26.0"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy8-13-L2-07",
+      "level": 2,
+      "text": "An alpha-emitting substance has accumulated in the liver of a worker, with mass $1.8\\,\\text{kg}$. The liver absorbs an energy of $0.63\\,\\text{mJ}$ from alpha radiation in a year. The question is the equivalent dose of the liver.\n\nThe student's solution: $D = \\dfrac{0.63\\,\\text{mJ}}{1.8\\,\\text{kg}} = 0.35\\,\\text{mGy}$. Gray and sievert are the same thing, so the equivalent dose is $0.35\\,\\text{mSv}$.\n\na) What is wrong in the student's reasoning? Explain.\n\nb) Calculate the correct equivalent dose of the liver. The weighting factor of alpha radiation is $20$. Give the answer in millisieverts.\n\nThe answer box takes the result of part b).",
+      "kind": [
+        "error"
+      ],
+      "answer": 7.0,
+      "unit": "mSv",
+      "tolerance": 0.02
     }
   ],
   "level3": [
@@ -99,6 +225,81 @@
       "answer": 0.74,
       "unit": "mSv",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-13-L3-04",
+      "level": 3,
+      "text": "The resident of a detached house had the radon concentration of the indoor air measured. The concentration was measured over four three-month periods around the year (table, example data).\n\nThe average radon concentration of Finnish dwellings, $94\\,\\tfrac{\\text{Bq}}{\\text{m}^3}$, causes an effective dose of $4.0\\,\\text{mSv}$ per year on average (STUK-A263, 2020). Assume that the radon dose is directly proportional to the concentration and that the resident spends $80\\,\\%$ of the time that a Finn spends at home on average. The reference level of radon for dwellings is $300\\,\\tfrac{\\text{Bq}}{\\text{m}^3}$.\n\na) Calculate the mean concentration of the year.\n\nb) Calculate the annual effective dose the resident receives from radon.\n\nc) Explain why a concentration measured in winter overestimates the annual dose and why the official radon measurement is nevertheless made in the heating season. Does the mean concentration of the year exceed the reference level?\n\nd) The resident wants to reduce the radon dose by radon remediation to at most $2.0\\,\\text{mSv}$ per year. How large can the mean concentration of the year be at most after the remediation? Give the answer in the unit $\\tfrac{\\text{Bq}}{\\text{m}^3}$.\n\nThe answer box takes the result of part d).",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 59,
+      "unit": "Bq/m³",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Radon concentration in the indoor air of a dwelling (example data)",
+        "columns": [
+          "Period",
+          "$c\\,(\\tfrac{\\text{Bq}}{\\text{m}^3})$"
+        ],
+        "rows": [
+          [
+            "Winter",
+            "380"
+          ],
+          [
+            "Spring",
+            "260"
+          ],
+          [
+            "Summer",
+            "140"
+          ],
+          [
+            "Autumn",
+            "300"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy8-13-L3-05",
+      "level": 3,
+      "text": "A gamma source is used in an industrial plant. The effect of the thickness of a concrete wall was measured for the dose rate at a distance of $1.0\\,\\text{m}$ from the source (table, example data).\n\nThe workstation of a maintenance worker is behind the wall at a distance of $2.0\\,\\text{m}$ from the source, and the thickness of the wall is $10\\,\\text{cm}$. The worker's dose during a shift may be at most $25\\,\\mu\\text{Sv}$ (example value). Assume that the source is a point source and that the attenuation by concrete follows the law of half-value thickness.\n\na) Estimate the half-value thickness of concrete from the table.\n\nb) Calculate the dose rate at the workstation.\n\nc) How long may the worker work during a shift? Give the answer in hours.\n\nd) Name one assumption that may make the calculated working time too long, and tell how the working time should therefore be chosen.\n\nThe answer box takes the result of part c).",
+      "kind": [
+        "data",
+        "model"
+      ],
+      "answer": 2.4,
+      "unit": "h",
+      "tolerance": 0.04,
+      "data": {
+        "caption": "Dose rate at a distance of $1.0\\,\\text{m}$ behind a concrete wall (example data)",
+        "columns": [
+          "$d\\,(\\text{cm})$",
+          "$\\dot{H}\\,(\\mu\\text{Sv/h})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "240"
+          ],
+          [
+            "4.0",
+            "121"
+          ],
+          [
+            "8.0",
+            "60.5"
+          ],
+          [
+            "12.0",
+            "29.8"
+          ]
+        ]
+      }
     }
   ]
 }

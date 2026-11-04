@@ -39,6 +39,77 @@
       "answer": 1.17,
       "unit": "10⁻³ eV",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-16-L1-06",
+      "level": 1,
+      "text": "The spectral lines of distant galaxies have shifted to longer wavelengths. What is the cause of this redshift?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Space expands during the journey of the light, and the expansion stretches the wavelength of the light along with it.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Space expands during the journey of the light, and the expansion stretches the wavelength of the light along with it.",
+          "feedback": "Correct: when space expands, it also stretches the wavelength of the light travelling in it. The longer the journey, the greater the stretching, and the same fraction of the wavelength applies to every spectral line.",
+          "correct": true
+        },
+        {
+          "text": "The stars of the galaxies are cool and red, so the wavelengths of their light are long.",
+          "feedback": "Redshift does not mean the colour of the galaxy. Spectral lines shift in the same proportion to their wavelength, and the shift arises on the journey of the light, not from the temperature of the stars."
+        },
+        {
+          "text": "Dust and gas between the galaxies absorb the short wavelengths, so only long-wavelength light is left.",
+          "feedback": "Absorption reduces light at certain wavelengths, but it does not move the positions of the spectral lines. In redshift, every line has shifted entirely to a longer wavelength."
+        },
+        {
+          "text": "The galaxies move away through space (the Doppler effect), and the motion stretches the wavelength of the light.",
+          "feedback": "The redshift of distant galaxies is caused not by motion through space but by the expansion of space. The Doppler effect describes only the own motion of the galaxy, which is a small part of the shift."
+        }
+      ]
+    },
+    {
+      "id": "fy8-16-L1-07",
+      "level": 1,
+      "text": "A galaxy is at a distance of $185\\,\\text{Mpc}$, and it recedes from us at a speed of $12\\,800\\,\\text{km/s}$. What is the Hubble constant $H_0$ according to the measurement of this galaxy? Give the answer in the unit $\\tfrac{\\text{km/s}}{\\text{Mpc}}$.",
+      "kind": [
+        "data"
+      ],
+      "answer": 69.2,
+      "unit": "km/s/Mpc",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-16-L1-08",
+      "level": 1,
+      "text": "The cosmic background radiation arrives almost uniformly from every direction. What explains its origin?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "It is radiation that was released when atoms formed, and the expansion has stretched it into microwaves.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "It is the light of stars and galaxies mixed together so that its direction can no longer be distinguished.",
+          "feedback": "Stars and galaxies are only in certain directions, and they formed only after the background radiation was released. The background radiation arrives uniformly from every direction, even from regions that look empty."
+        },
+        {
+          "text": "It is radiation emitted by dark matter, which fills the whole of space because dark matter is everywhere.",
+          "feedback": "Dark matter neither emits nor absorbs light, which is why it is called dark. It cannot be the source of the background radiation."
+        },
+        {
+          "text": "It is radiation that was released when atoms formed, and the expansion has stretched it into microwaves.",
+          "feedback": "Correct: about $380\\,000$ years after the Big Bang, atoms formed and the universe became transparent. The radiation released then arrives from every direction, and the expansion has stretched its wavelength into microwaves.",
+          "correct": true
+        },
+        {
+          "text": "It is radiation released in supernova explosions, which has had time to spread evenly through all of space.",
+          "feedback": "Supernovae occur only in individual places, and they do not produce radiation of almost exactly the same temperature from every direction. The background radiation dates from the time before the first stars."
+        }
+      ]
     }
   ],
   "level2": [
@@ -73,6 +144,105 @@
       "answer": 160.9,
       "unit": "Mpc",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-16-L2-05",
+      "level": 2,
+      "text": "Sample data: an astronomer has measured the distance $d$ and the recession speed $v$ of nine galaxies. The results are in the table.\n\na) Draw the $(d, v)$ graph and fit a straight line through the origin to the points. Read the Hubble constant $H_0$ from the slope of the line. Give the answer in the unit $\\tfrac{\\text{km/s}}{\\text{Mpc}}$.\n\nb) The points are not exactly on the line. Which point deviates most from the line in relative terms, and what can the deviation be due to?\n\nEnter the result of part a) in the answer field.",
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "answer": 68.45,
+      "unit": "km/s/Mpc",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Distance and recession speed of nine galaxies (sample data)",
+        "columns": [
+          "$d\\,(\\text{Mpc})$",
+          "$v\\,(\\text{km/s})$"
+        ],
+        "rows": [
+          [
+            "28",
+            "2260"
+          ],
+          [
+            "45",
+            "2990"
+          ],
+          [
+            "63",
+            "4260"
+          ],
+          [
+            "88",
+            "6140"
+          ],
+          [
+            "112",
+            "7460"
+          ],
+          [
+            "135",
+            "9380"
+          ],
+          [
+            "166",
+            "$11\\,190$"
+          ],
+          [
+            "194",
+            "$13\\,310$"
+          ],
+          [
+            "238",
+            "$16\\,350$"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy8-16-L2-06",
+      "level": 2,
+      "text": "The $\\text{H}\\beta$ line of hydrogen is $486.1\\,\\text{nm}$ in the laboratory and $505.5\\,\\text{nm}$ in the spectrum of a galaxy. The distance of the galaxy is to be calculated when $H_0 = 70\\,\\tfrac{\\text{km/s}}{\\text{Mpc}}$ and $c = 2.998 \\cdot 10^{5}\\,\\text{km/s}$.\n\nStudent's solution: “The redshift is $z = 0.0399$ and the speed $v = c\\,z = 1.196 \\cdot 10^{4}\\,\\text{km/s}$. The distance is $d = v \\cdot H_0 = 1.196 \\cdot 10^{4} \\cdot 70 = 8.4 \\cdot 10^{5}\\,\\text{Mpc}$.”\n\na) Find the student's error and justify why the result is impossible already on the basis of units.\n\nb) Calculate the correct distance of the galaxy in megaparsecs.\n\nEnter the result of part b) in the answer field.",
+      "kind": [
+        "error"
+      ],
+      "answer": 170.9,
+      "unit": "Mpc",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-16-L2-07",
+      "level": 2,
+      "text": "A student reasons: “Galaxies recede from us in every direction. So the Big Bang was an explosion at the location of the Milky Way, and the galaxies fly from it into empty space.” Which correction to the student's reasoning is correct?",
+      "kind": [
+        "error",
+        "concept"
+      ],
+      "answer": "Space itself expands everywhere, so the picture is the same viewed from every galaxy and there is no centre.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The explosion happened at some specific place, and the Milky Way is closest to it, so the other galaxies recede from it.",
+          "feedback": "If the explosion had a centre, the recession would look different when viewed from different galaxies. According to observations it looks the same from anywhere, and the Milky Way is not in a special place."
+        },
+        {
+          "text": "Galaxies farther away recede more slowly, so the place of the explosion is near where the galaxies move the least.",
+          "feedback": "According to the Hubble–Lemaître law, speed grows with distance: distant galaxies recede faster, not slower. The law is the same everywhere, and no centre can be found from it."
+        },
+        {
+          "text": "The galaxies do not really recede, but the redshift is caused by light getting tired and losing energy on its way.",
+          "feedback": "The interpretation of the observations is that distances really do grow as space expands. Redshift arises when the expansion stretches the wavelength of light, and the student's original observation of the galaxies receding is not wrong."
+        },
+        {
+          "text": "Space itself expands everywhere, so the picture is the same viewed from every galaxy and there is no centre.",
+          "feedback": "Correct: the expansion does not happen in space but space itself expands, and all distances between galaxies grow in the same proportion. That is why the picture is the same viewed from every galaxy.",
+          "correct": true
+        }
+      ]
     }
   ],
   "level3": [
@@ -98,6 +268,76 @@
       "text": "The spectrum of a galaxy shows three absorption lines of hydrogen at wavelengths $447.2\\,\\text{nm}$, $500.9\\,\\text{nm}$ and $676.2\\,\\text{nm}$. In the laboratory the wavelengths of the hydrogen lines are $434.0\\,\\text{nm}$, $486.1\\,\\text{nm}$ and $656.3\\,\\text{nm}$. Work out which line of the galaxy corresponds to which laboratory line, and calculate the distance of the galaxy. The Hubble constant is $H_0 = 70\\,\\tfrac{\\text{km/s}}{\\text{Mpc}}$ and the speed of light $c = 2.998 \\cdot 10^{5}\\,\\text{km/s}$. Give the answer in megaparsecs.",
       "answer": 129.9,
       "unit": "Mpc",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-16-L3-04",
+      "level": 3,
+      "text": "Sample data: the orbital speed $v_{\\text{obs}}$ of the stars and gas of a spiral galaxy has been measured at different distances $r$ from the centre of the galaxy. The third column of the table gives the speed $v_{\\text{vis}}$ that visible matter, that is, stars, gas and dust alone, would cause according to the model.\n\na) By what percentage does the observed speed change between the distances $10\\,\\text{kpc}$ and $30\\,\\text{kpc}$? What about the speed of the model?\n\nb) Calculate the ratio $\\dfrac{v_{\\text{obs}}}{v_{\\text{vis}}}$ of the observed speed to the speed of the model at the distance $30\\,\\text{kpc}$.\n\nc) What does the data tell about the mass of the galaxy? Justify why the difference is not explained by measurement errors, and conclude what dark matter is in this interpretation.\n\nEnter the result of part b) in the answer field.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 1.885,
+      "unit": "",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Orbital speed of a galaxy as a function of distance (sample data)",
+        "columns": [
+          "$r\\,(\\text{kpc})$",
+          "$v_{\\text{obs}}\\,(\\text{km/s})$",
+          "$v_{\\text{vis}}\\,(\\text{km/s})$"
+        ],
+        "rows": [
+          [
+            "2",
+            "95",
+            "98"
+          ],
+          [
+            "5",
+            "168",
+            "172"
+          ],
+          [
+            "10",
+            "207",
+            "185"
+          ],
+          [
+            "15",
+            "214",
+            "160"
+          ],
+          [
+            "20",
+            "211",
+            "138"
+          ],
+          [
+            "25",
+            "217",
+            "124"
+          ],
+          [
+            "30",
+            "213",
+            "113"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy8-16-L3-05",
+      "level": 3,
+      "text": "Sample situation: in the spectrum of a distant quasar, the ultraviolet line of hydrogen (Lyman-alpha), whose wavelength in the laboratory is $121.6\\,\\text{nm}$, appears at the wavelength $486.4\\,\\text{nm}$. The wavelength of the light has stretched in the same proportion as space has expanded during the journey of the light.\n\nThe temperature of the cosmic background radiation is inversely proportional to the stretching of space: if space has stretched to $k$ times its size, the temperature at that time was $k$ times the present one. You can check the rule from the numbers: the wavelengths of the background radiation have stretched about $1100$-fold, and the temperature has fallen from $3000\\,\\text{K}$ to $2.725\\,\\text{K}$.\n\na) Calculate the redshift $z$ of the quasar.\n\nb) A student calculates the speed with the formula $v = c\\,z$ and gets three times the speed of light. Why can the result not be regarded as the speed of the galaxy?\n\nc) How high was the temperature of the background radiation when the light of the quasar set out? The present temperature is $2.725\\,\\text{K}$.\n\nEnter the result of part c) in kelvins in the answer field.",
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "answer": 10.9,
+      "unit": "K",
       "tolerance": 0.02
     }
   ]

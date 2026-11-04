@@ -39,6 +39,77 @@
       "answer": 6,
       "unit": "",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-15-L1-06",
+      "level": 1,
+      "text": "The photon is the mediator particle of which fundamental interaction?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The electromagnetic interaction, which acts on charges",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The strong interaction, which binds quarks together into hadrons",
+          "feedback": "The mediator of the strong interaction is the gluon, not the photon. The strong interaction really does bind quarks into hadrons, but its mediator is a different particle."
+        },
+        {
+          "text": "The weak interaction, which changes the type of a quark in a nucleus",
+          "feedback": "The mediators of the weak interaction are the $W$ and $Z$ bosons, not the photon. In beta decay a $d$ quark turns into a $u$ quark through a $W^-$ boson."
+        },
+        {
+          "text": "The electromagnetic interaction, which acts on charges",
+          "correct": true,
+          "feedback": "Correct: the photon mediates the electromagnetic interaction, which acts between electrically charged particles. No electric force acts on a neutron, because its total charge is zero."
+        },
+        {
+          "text": "Gravity, which pulls all bodies that have mass",
+          "feedback": "The graviton, proposed as the mediator of gravity, is hypothetical, and gravity is not part of the Standard Model. The photon does not mediate gravity."
+        }
+      ]
+    },
+    {
+      "id": "fy8-15-L1-07",
+      "level": 1,
+      "text": "The positron $e^+$ is the antiparticle of the electron $e^-$. Which of the following is true of the positron?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The mass is the same as that of the electron, and the charge and the lepton number are reversed",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The mass is smaller than that of the electron, because antiparticles are lighter",
+          "feedback": "The mass of an antiparticle is the same as that of the particle. That is why in the annihilation of a positron and an electron the energy released corresponds to the rest energy of two electrons."
+        },
+        {
+          "text": "The charge is the same as that of the electron, because only the lepton number is reversed",
+          "feedback": "An antiparticle has the opposite charge: the charge of the positron is $+e$ and that of the electron $-e$. The sign of the lepton number alone does not distinguish an antiparticle; all the charges are reversed."
+        },
+        {
+          "text": "The charge is zero, because the positron cancels the charge of the electron",
+          "feedback": "The charge of the positron is $+e$. The charges cancel each other only when the positron and the electron are in the same system, not inside a single particle."
+        },
+        {
+          "text": "The mass is the same as that of the electron, and the charge and the lepton number are reversed",
+          "correct": true,
+          "feedback": "Correct: an antiparticle has the same mass as the particle, but its charge and lepton number are opposite. The charge of the positron is $+e$ and its lepton number is $-1$."
+        }
+      ]
+    },
+    {
+      "id": "fy8-15-L1-08",
+      "level": 1,
+      "text": "The kaon $K^+$ is a meson made of a $u$ quark and an $\\bar{s}$ antiquark. Calculate its charge as a multiple of the elementary charge $e$. Quark charges: $u$ ($+\\tfrac{2}{3}e$), $d$ and $s$ ($-\\tfrac{1}{3}e$); the charge of an antiquark is opposite.",
+      "kind": [
+        "concept"
+      ],
+      "answer": 1,
+      "unit": "e",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -73,6 +144,135 @@
       "answer": 1.23,
       "unit": "%",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-15-L2-05",
+      "level": 2,
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "text": "A researcher tries out which combinations of quarks and antiquarks could form a hadron. The charge and the baryon number $B$ of a hadron are both integers.\n\nThe table has seven combinations (example data). Quark charges: $u$ ($+\\tfrac{2}{3}e$), $d$ and $s$ ($-\\tfrac{1}{3}e$); the charge of an antiquark is opposite, and the baryon number is $B = \\tfrac{n_\\text{q} - n_{\\bar{\\text{q}}}}{3}$.\n\nHow many of the combinations can be a hadron?",
+      "answer": 5,
+      "unit": "",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Quark combinations (example data)",
+        "columns": [
+          "No.",
+          "Combination"
+        ],
+        "rows": [
+          [
+            "1",
+            "$u\\,u\\,d$"
+          ],
+          [
+            "2",
+            "$u\\,d$"
+          ],
+          [
+            "3",
+            "$d\\,\\bar{s}$"
+          ],
+          [
+            "4",
+            "$u\\,u\\,\\bar{d}$"
+          ],
+          [
+            "5",
+            "$\\bar{u}\\,\\bar{u}\\,\\bar{d}$"
+          ],
+          [
+            "6",
+            "$s\\,s\\,s$"
+          ],
+          [
+            "7",
+            "$u\\,\\bar{s}$"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy8-15-L2-06",
+      "level": 2,
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "text": "The seven reactions in the table involve real particles, but not all of the reactions are possible (example data). Charge, baryon number and lepton number are conserved in all observed reactions. The lepton number of a neutrino $\\nu$ is $+1$ and that of an antineutrino $\\bar{\\nu}$ is $-1$.\n\nEnergy need not be considered. In how many reactions is one of the three conservation laws violated?",
+      "answer": 3,
+      "unit": "",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Reactions (example data)",
+        "columns": [
+          "No.",
+          "Reaction"
+        ],
+        "rows": [
+          [
+            "1",
+            "$n \\to p + e^- + \\bar{\\nu}$"
+          ],
+          [
+            "2",
+            "$p + \\bar{p} \\to \\gamma + \\gamma$"
+          ],
+          [
+            "3",
+            "$n \\to p + e^-$"
+          ],
+          [
+            "4",
+            "$p + e^- \\to n + \\nu$"
+          ],
+          [
+            "5",
+            "$p + n \\to p + p$"
+          ],
+          [
+            "6",
+            "$\\pi^- \\to e^- + \\bar{\\nu}$"
+          ],
+          [
+            "7",
+            "$n + n \\to \\pi^0 + \\pi^0$"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy8-15-L2-07",
+      "level": 2,
+      "text": "A student claims: “A free neutron is stable, because it is an elementary particle.”\n\nWhat is wrong in the claim?",
+      "kind": [
+        "error",
+        "concept"
+      ],
+      "answer": "The neutron is made of quarks, and the type of a quark can change",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "All elementary particles decay, so the decay of the neutron is certain",
+          "feedback": "Not all elementary particles decay: the electron is stable. Decay does not depend on whether the particle is elementary: the muon is an elementary particle but decays, and the proton is made of quarks but is stable. Decay is decided by the conservation laws and $Q > 0$."
+        },
+        {
+          "text": "The neutron is made of quarks, and the type of a quark can change",
+          "correct": true,
+          "feedback": "Correct: the neutron is not an elementary particle but is made of the quarks $u\\,d\\,d$, and in the weak interaction one $d$ quark turns into a $u$ quark. Some elementary particles do decay (the muon). Decay is decided by the conservation laws and $Q > 0$; the neutron decays into a proton, an electron and an antineutrino."
+        },
+        {
+          "text": "The conservation of energy prevents the neutron from decaying into lighter particles",
+          "feedback": "The conservation of energy allows the decay, because the total mass of the particles produced is smaller than the mass of the neutron. Energy is released in the decay."
+        },
+        {
+          "text": "The neutron has no antiparticle, so it cannot decay",
+          "feedback": "The neutron has an antiparticle, the antineutron. A decay does not require an antiparticle to exist, only that the conservation laws are satisfied and $Q$ is positive."
+        }
+      ]
     }
   ],
   "level3": [
@@ -99,6 +299,95 @@
       "answer": -1,
       "unit": "",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-15-L3-04",
+      "level": 3,
+      "kind": [
+        "data",
+        "model"
+      ],
+      "text": "In a lead shield a gamma photon can turn into an electron and a positron close to a nucleus if its energy is at least the sum of the rest energies of the electron and the positron.\n\nThe rest energy of each is $m_e c^2 = 0.511\\,\\text{MeV}$. The table gives energies of gamma photons hitting the shield (the situation is imaginary, and the energies are rounded from gamma lines).\n\na) Which photons in the table can produce an electron–positron pair?\n\nb) The photon with the greatest energy produces a pair. The part of the energy of the photon left over after the rest energies turns into kinetic energy and is shared equally between the electron and the positron. The kinetic energy of the nucleus is ignored. Calculate the kinetic energy of the electron in megaelectronvolts.\n\nc) The positron slows down and annihilates with an electron at rest into two photons. What is the energy of each photon, and why does it not depend on the energy of the original photon?\n\nThe answer box takes the result of part b).",
+      "answer": 0.797,
+      "unit": "MeV",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Energies of gamma lines (ENSDF, rounded)",
+        "columns": [
+          "Source",
+          "$E_\\gamma\\,(\\text{MeV})$"
+        ],
+        "rows": [
+          [
+            "${}^{137}\\text{Cs}$",
+            "0.662"
+          ],
+          [
+            "${}^{60}\\text{Co}$",
+            "1.173"
+          ],
+          [
+            "${}^{60}\\text{Co}$",
+            "1.332"
+          ],
+          [
+            "${}^{40}\\text{K}$",
+            "1.461"
+          ],
+          [
+            "${}^{208}\\text{Tl}$",
+            "2.615"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy8-15-L3-05",
+      "level": 3,
+      "kind": [
+        "data",
+        "experiment",
+        "model"
+      ],
+      "text": "In a bubble chamber picture (an imaginary measurement, described in words) a negative pion $\\pi^-$ hits a hydrogen nucleus, that is a proton $p$. No track leaves the collision point.\n\nA little further away, at two different places, a V-shaped pair of tracks starts: at place 1 the pair is a proton and a negative pion, at place 2 a positive and a negative pion. In both pairs the tracks curve in opposite directions in the magnetic field of the chamber.\n\nThe researcher’s interpretation is that the collision produced two uncharged particles, $\\Lambda^0$ and $K^0$, which decayed at the V places.\n\nThe quark composition and the masses of the particles are in the table.\n\na) Show that the reaction $\\pi^- + p \\to \\Lambda^0 + K^0$ conserves charge and baryon number and that the net numbers of the $u$, $d$ and $s$ quarks are the same on both sides of the reaction. An antiquark reduces the net number by one.\n\nb) Calculate the energy released when $K^0$ decays by the reaction $K^0 \\to \\pi^+ + \\pi^-$. Answer in megaelectronvolts.\n\nc) Explain why no track leaves the collision point and why the arms of the V curve in opposite directions.\n\nThe answer box takes the result of part b).",
+      "answer": 218.5,
+      "unit": "MeV",
+      "tolerance": 0.005,
+      "data": {
+        "caption": "Quarks and masses of the particles (Particle Data Group 2024)",
+        "columns": [
+          "Particle",
+          "Quarks",
+          "$m\\,(\\tfrac{\\text{MeV}}{c^2})$"
+        ],
+        "rows": [
+          [
+            "$\\pi^-$",
+            "$d\\,\\bar{u}$",
+            "139.570"
+          ],
+          [
+            "$p$",
+            "$u\\,u\\,d$",
+            "938.272"
+          ],
+          [
+            "$\\Lambda^0$",
+            "$u\\,d\\,s$",
+            "1115.683"
+          ],
+          [
+            "$K^0$",
+            "$d\\,\\bar{s}$",
+            "497.611"
+          ],
+          [
+            "$\\pi^+$",
+            "$u\\,\\bar{d}$",
+            "139.570"
+          ]
+        ]
+      }
     }
   ]
 }
