@@ -134,7 +134,6 @@
     "chapter_next": "Seuraava luku",
     "chapter_up": "Moduulin sivulle",
     "chapter_course": "Kaikki moduulin {{course}} luvut",
-    "exercise_path": "Kaikkia tehtäviä ei tarvitse tehdä. Aloita <strong>ydintehtävistä</strong>. Ne harjoittavat luvun pääasioita. Tasojen 1 ja 2 muut tehtävät ovat lisäharjoitusta. Tason 3 tehtävät ovat haastavaa soveltamista.",
     "core_exercise": "Ydintehtävä",
     "level_kind_1": "perusharjoitus",
     "level_kind_2": "soveltava harjoitus",
@@ -164,7 +163,6 @@
       "Kaava ratkaistuna"
     ],
     "solution_answer_step": "Vastaus",
-    "check_howto": "Kirjoita vastaus ja paina Tarkista. Vastaus on oikein, kun se on enintään $2\\,\\%$ tai yhden viimeisen numeron verran eri kuin mallivastaus. Suurempi näistä kahdesta rajasta ratkaisee. Jos vastaus on $2$–$5\\,\\%$ eri, palaute on Lähellä. Tarkista silloin pyöristys ja merkitsevät numerot. Vastaus ja ratkaisu avautuvat, kun olet tarkistanut oman vastauksesi kerran. Selain tarkistaa vastauksen. Mitään ei tallenneta.",
     "exercises_pending": "Tämän oppitunnin tehtäviä ei ole vielä tarkistettu. Ne tulevat tähän, kun ne on tarkistettu.",
     "notice_legacy": "Prototyyppiversio: tämä oppitunti on tehty ennen nykyistä tarkistustapaa. Se odottaa uudistusta. Sisältö voi vielä muuttua.",
     "notice_draft": "Luonnos: tätä oppituntia ei ole vielä tarkistettu.",
