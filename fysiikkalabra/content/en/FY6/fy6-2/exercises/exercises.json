@@ -193,10 +193,10 @@
       "choices": [
         {
           "text": "A smaller current range is chosen, because the current is too small for the resolution of the present range and for the meter.",
-          "feedback": "Too small a current does not cause the reading OL; the display then shows almost zero. OL tells of an overrange, and moving to a smaller range would make the situation worse."
+          "feedback": "Too small a current does not cause the reading OL; the display then shows almost zero. OL indicates an overrange, and moving to a smaller range would make the situation worse."
         },
         {
-          "text": "It is concluded that the meter has broken, because a working meter always shows numbers, and the measurement is stopped there.",
+          "text": "It is concluded that the meter is broken, because a working meter always shows numbers, and the measurement is stopped there.",
           "feedback": "OL is not a fault message. A working meter always shows it when the value being measured exceeds the range, and the solution is to change the range."
         },
         {
@@ -284,7 +284,7 @@
         "model",
         "reasoning"
       ],
-      "text": "An example situation: the voltage of an ideal voltage source is $12.0\\,\\text{V}$. Two resistors, $R_1 = 1.0\\,\\text{M}\\Omega$ and $R_2 = 1.0\\,\\text{M}\\Omega$, are connected to it one after another. A student measures the voltage of the resistor $R_2$ with a multimeter whose resistance on the voltage range is $R_\\text{m} = 10\\,\\text{M}\\Omega$. The meter is connected in parallel with the resistor $R_2$.\n\na) How large is the voltage of the resistor $R_2$ without the meter?\n\nb) Calculate the voltage $U$ shown by the meter. A hint: the resistor $R_2$ and the meter have the same voltage $U$, and the current through the resistor $R_1$ is the sum of the currents through the resistor $R_2$ and the meter. The voltage of the resistor $R_1$ is $12.0\\,\\text{V} - U$. The current through a resistor is $I = U : R$.\n\nc) By what percentage does the meter decrease the voltage being measured?\n\nd) The error limit of the meter on the range $20\\,\\text{V}$ is $\\pm(0.5\\,\\% + 2\\ \\text{digits})$ and the resolution $0.01\\,\\text{V}$. Compare the error limit of the meter with the change caused by the meter. Tell what follows from the comparison for the reliability of the measurement result and how the measurement would be made more reliable.\n\nEnter in the answer box the result of part c).",
+      "text": "An example situation: the voltage of an ideal voltage source is $12.0\\,\\text{V}$. Two resistors, $R_1 = 1.0\\,\\text{M}\\Omega$ and $R_2 = 1.0\\,\\text{M}\\Omega$, are connected to it one after another. A student measures the voltage of the resistor $R_2$ with a multimeter whose resistance on the voltage range is $R_\\text{m} = 10\\,\\text{M}\\Omega$. The meter is connected in parallel with the resistor $R_2$.\n\na) How large is the voltage of the resistor $R_2$ without the meter?\n\nb) Calculate the voltage $U$ shown by the meter. Hint: the resistor $R_2$ and the meter have the same voltage $U$, and the current through the resistor $R_1$ is the sum of the currents through the resistor $R_2$ and the meter. The voltage of the resistor $R_1$ is $12.0\\,\\text{V} - U$. The current through a resistor is $I = U : R$.\n\nc) By what percentage does the meter decrease the voltage being measured?\n\nd) The error limit of the meter on the range $20\\,\\text{V}$ is $\\pm(0.5\\,\\% + 2\\ \\text{digits})$ and the resolution $0.01\\,\\text{V}$. Compare the error limit of the meter with the change caused by the meter. Tell what follows from the comparison for the reliability of the measurement result and how the measurement would be made more reliable.\n\nEnter in the answer box the result of part c).",
       "answer": 4.76,
       "unit": "%",
       "tolerance": 0.03
