@@ -1,0 +1,21 @@
+{
+  "id": "fy6-7",
+  "course": "FY6",
+  "title": "Sähköenergia kotona",
+  "goals": [
+    "LOPS FY6: sähköteho ja Joulen laki",
+    "Temaattinen tarkastelu: yksinkertaiset sähkölaitteet",
+    "Täsmennys: laitteiden teho ja energiankulutus kilowattitunteina, sähkölasku ja säästökeinot"
+  ],
+  "prerequisites": [
+    "fy6-6"
+  ],
+  "glossary": [
+    "sähköteho",
+    "kilowattitunti",
+    "sähköenergia"
+  ],
+  "sim": false,
+  "solutions": "all",
+  "image": false
+}
