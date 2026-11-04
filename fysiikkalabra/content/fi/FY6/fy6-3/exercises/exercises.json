@@ -52,17 +52,17 @@
    "tolerance": 0.02,
    "choices": [
     {
-     "text": "Komponentti noudattaa Ohmin lakia, koska jännite on suoraan verrannollinen virtaan.",
-     "feedback": "Oikein: kun käyrä on origon kautta kulkeva suora, jännitteen kaksinkertaistuessa myös virta kaksinkertaistuu. Silloin suhde $R = U : I$ on vakio, ja suoran kulmakerroin on resistanssi.",
-     "correct": true
-    },
-    {
-     "text": "Komponentin resistanssi kasvaa jännitteen kasvaessa, koska suuremmalla jännitteellä virta vastustuu enemmän.",
+     "text": "Komponentin resistanssi kasvaa jännitteen mukana, koska suuri jännite vastustaa virtaa.",
      "feedback": "Jos resistanssi kasvaisi jännitteen mukana, ominaiskäyrä olisi kaareva. Suoralla suhde $U : I$ on joka pisteessä sama."
     },
     {
-     "text": "Komponentin resistanssi on nolla, koska käyrä kulkee origon kautta.",
+     "text": "Komponentin resistanssi on nolla, koska nollajännitteellä myös virta on nolla.",
      "feedback": "Origon kautta kulkeminen kertoo vain, että nollajännitteellä virtakin on nolla. Resistanssi on suoran kulmakerroin $U : I$, ja se on nollaa suurempi."
+    },
+    {
+     "text": "Komponentti noudattaa Ohmin lakia, koska jännite on suoraan verrannollinen virtaan.",
+     "feedback": "Oikein: kun käyrä on origon kautta kulkeva suora, jännitteen kaksinkertaistuessa myös virta kaksinkertaistuu. Silloin suhde $R = U : I$ on vakio, ja suoran kulmakerroin on resistanssi.",
+     "correct": true
     },
     {
      "text": "Komponentti ei noudata Ohmin lakia, koska virta ja jännite kasvavat yhtä aikaa.",
@@ -82,16 +82,16 @@
    "tolerance": 0.02,
    "choices": [
     {
+     "text": "Pidemmän langan resistiivisyys on suurempi, koska resistiivisyys kasvaa pituuden mukana.",
+     "feedback": "Resistiivisyys ei riipu langan pituudesta eikä paksuudesta vaan ainoastaan aineesta ja lämpötilasta. Pituudesta riippuu resistanssi, ei resistiivisyys."
+    },
+    {
      "text": "Resistiivisyys on sama, mutta pidemmän langan resistanssi on suurempi pituuden takia.",
      "feedback": "Oikein: resistiivisyys $\\rho$ on aineen ominaisuus ja sama molemmille langoille. Resistanssi $R = \\rho l : A$ on verrannollinen pituuteen, joten pidemmän langan resistanssi on kaksinkertainen.",
      "correct": true
     },
     {
-     "text": "Pidemmän langan resistiivisyys on suurempi, koska resistiivisyys kasvaa langan pituuden kasvaessa.",
-     "feedback": "Resistiivisyys ei riipu langan pituudesta eikä paksuudesta vaan ainoastaan aineesta ja lämpötilasta. Pituudesta riippuu resistanssi, ei resistiivisyys."
-    },
-    {
-     "text": "Langoilla on sama resistanssi, koska ne ovat samaa ainetta ja ne ovat yhtä paksuja, joten ne johtavat yhtä hyvin.",
+     "text": "Langoilla on sama resistanssi, koska ne ovat samaa ainetta ja yhtä paksuja.",
      "feedback": "Aine ja paksuus määräävät vain resistiivisyyden ja poikkipinta-alan. Resistanssi riippuu myös pituudesta: kaksi kertaa pidempi lanka on kuin kaksi lankaa peräkkäin."
     },
     {
@@ -202,7 +202,7 @@
   {
    "id": "fy6-3-L2-06",
    "level": 2,
-   "text": "Taskulampun hehkulampun jännite ja virta mitattiin viidellä jännitteellä (esimerkkiaineisto).\n\na) Laske lampun resistanssi $R = U : I$ jokaisella jännitteellä.\n\nb) Päättele laskemiesi arvojen perusteella, noudattaako lamppu Ohmin lakia, ja selitä, miksi resistanssi muuttuu.\n\nTehtävän vastauskenttään kirjoitetaan, kuinka monta kertaa suurempi lampun resistanssi on jännitteellä $5{,}0\\,\\text{V}$ kuin jännitteellä $1{,}0\\,\\text{V}$.",
+   "text": "Polkupyörän etulampun hehkulampun jännite ja virta mitattiin viidellä jännitteellä (esimerkkiaineisto).\n\na) Laske lampun resistanssi $R = U : I$ jokaisella jännitteellä.\n\nb) Päättele laskemiesi arvojen perusteella, noudattaako lamppu Ohmin lakia, ja selitä, miksi resistanssi muuttuu.\n\nTehtävän vastauskenttään kirjoitetaan, kuinka monta kertaa suurempi lampun resistanssi on jännitteellä $5{,}0\\,\\text{V}$ kuin jännitteellä $1{,}0\\,\\text{V}$.",
    "kind": [
     "data",
     "reasoning"
@@ -243,7 +243,7 @@
   {
    "id": "fy6-3-L2-07",
    "level": 2,
-   "text": "Opiskelija mittasi vastuksen jännitteen ja virran (esimerkkiaineisto). Hän päätteli: \"Kun jännite on $0{,}0\\,\\text{V}$, virta on $0{,}00\\,\\text{A}$ ja resistanssi $R = U : I$ on siis $0\\,\\Omega$. Jännitteellä $1{,}0\\,\\text{V}$ resistanssi on jo $5{,}0\\,\\Omega$, joten resistanssi kasvaa jännitteen mukana.\"\n\na) Selitä, mikä opiskelijan päättelyssä on virheellistä.\n\nb) Laske vastuksen resistanssi nollasta poikkeavien jännitteiden resistansseista keskiarvona $R_{\\text{ka}}$.\n\nTehtävän vastauskenttään kirjoitetaan b-kohdan keskiarvo $R_{\\text{ka}}$ ohmeina.",
+   "text": "Opiskelija mittasi vastuksen jännitteen ja virran (esimerkkiaineisto). Hän päätteli: ”Kun jännite on $0{,}0\\,\\text{V}$, virta on $0{,}00\\,\\text{A}$ ja resistanssi $R = U : I$ on siis $0\\,\\Omega$. Jännitteellä $1{,}0\\,\\text{V}$ resistanssi on jo $5{,}0\\,\\Omega$, joten resistanssi kasvaa jännitteen mukana.”\n\na) Selitä, mikä opiskelijan päättelyssä on virheellistä.\n\nb) Laske vastuksen resistanssi nollasta poikkeavien jännitteiden resistansseista keskiarvona $R_{\\text{ka}}$.\n\nTehtävän vastauskenttään kirjoitetaan b-kohdan keskiarvo $R_{\\text{ka}}$ ohmeina.",
    "kind": [
     "error",
     "data"
@@ -310,7 +310,7 @@
   {
    "id": "fy6-3-L3-04",
    "level": 3,
-   "text": "Kolmen komponentin jännite ja virta mitattiin samoilla jännitteillä (esimerkkiaineisto). Komponentit ovat vastus, hehkulamppu ja diodi (LED), mutta ne on merkitty sekaisin kirjaimilla A, B ja C.\n\na) Laske kunkin komponentin resistanssi $R = U : I$ jännitteillä, joilla virta ei ole nolla, ja tunnista komponentit. Perustele tunnistus resistanssin muutoksella jännitteen kasvaessa.\n\nb) Selitä, miksi vastuksen resistanssi pysyy vakiona mutta hehkulampun ei.\n\nc) Laske diodin resistanssi työpisteessä $U = 1{,}5\\,\\text{V}$ ja vertaa sitä hehkulampun resistanssiin samassa pisteessä.\n\nTehtävän vastauskenttään kirjoitetaan c-kohdan diodin resistanssi ohmeina.",
+   "text": "Kolmen komponentin jännite ja virta mitattiin samoilla jännitteillä (esimerkkiaineisto). Komponentit ovat vastus, hehkulamppu ja teholedi (LED-diodi), mutta ne on merkitty sekaisin kirjaimilla A, B ja C.\n\na) Laske kunkin komponentin resistanssi $R = U : I$ jännitteillä, joilla virta ei ole nolla, ja tunnista komponentit. Perustele tunnistus resistanssin muutoksella jännitteen kasvaessa.\n\nb) Selitä, miksi vastuksen resistanssi pysyy vakiona mutta hehkulampun ei.\n\nc) Laske diodin resistanssi työpisteessä $U = 1{,}5\\,\\text{V}$ ja vertaa sitä hehkulampun resistanssiin samassa pisteessä.\n\nTehtävän vastauskenttään kirjoitetaan c-kohdan diodin resistanssi ohmeina.",
    "kind": [
     "data",
     "reasoning",

@@ -52,17 +52,17 @@
       "tolerance": 0.02,
       "choices": [
         {
-          "text": "Piiri avataan ja mittari asetetaan aukkoon, jolloin lampun virta kulkee mittarin läpi.",
-          "feedback": "Oikein: virta mitataan siitä kohdasta, jonka läpi se kulkee. Haarattomassa piirissä virta on kaikkialla sama, joten mittari sarjassa lampun kanssa näyttää lampun virran.",
-          "correct": true
-        },
-        {
           "text": "Mittari liitetään lampun napojen väliin, jolloin mittari mittaa lampun yli olevan virran.",
           "feedback": "Näin kytketään jännitemittari. Virtaa ei mitata komponentin yli: virtamittari rinnalla ohjaa virran lampun ohi ja tekee oikosulun, koska sen resistanssi on hyvin pieni."
         },
         {
           "text": "Mittari liitetään pariston napojen väliin, jolloin mittari mittaa pariston antaman virran.",
           "feedback": "Pariston napojen väliin kytketty virtamittari on oikosulussa: sen pieni resistanssi päästää suuren virran, joka voi polttaa mittarin sulakkeen. Mittari kuuluu piirin johtoon."
+        },
+        {
+          "text": "Piiri avataan ja mittari asetetaan aukkoon, jolloin lampun virta kulkee mittarin läpi.",
+          "feedback": "Oikein: virta mitataan siitä kohdasta, jonka läpi se kulkee. Haarattomassa piirissä virta on kaikkialla sama, joten mittari sarjassa lampun kanssa näyttää lampun virran.",
+          "correct": true
         },
         {
           "text": "Mittari asetetaan lampun viereen ilman johtoja, jolloin mittari tunnistaa virran lampun säteilystä.",
@@ -82,13 +82,13 @@
       "tolerance": 0.02,
       "choices": [
         {
+          "text": "Mittarin läpi kulkee silloin suuri virta, joka pitää näytön lukeman vakaana mittauksen aikana.",
+          "feedback": "Suuri virta mittarin läpi veisi virtaa komponentilta ja muuttaisi mitattavaa jännitettä. Näytön vakaus ei riipu mittarin läpi kulkevasta virrasta."
+        },
+        {
           "text": "Mittarin läpi kulkee silloin vain hyvin pieni virta, joten mittari ei juuri muuta piiriä.",
           "feedback": "Oikein: mittari on rinnalla, joten sen läpi kulkeva virta on pois komponentilta. Kun mittarin resistanssi on hyvin suuri, tämä virta on mitätön eikä komponentin jännite muutu.",
           "correct": true
-        },
-        {
-          "text": "Mittarin läpi kulkee silloin suuri virta, joka pitää näytön lukeman vakaana mittauksen aikana.",
-          "feedback": "Suuri virta mittarin läpi veisi virtaa komponentilta ja muuttaisi mitattavaa jännitettä. Näytön vakaus ei riipu mittarin läpi kulkevasta virrasta."
         },
         {
           "text": "Mittari kasvattaa silloin mitattavaa jännitettä, joten pienikin jännite näkyy selvästi.",
@@ -103,12 +103,9 @@
     {
       "id": "fy6-2-L1-08",
       "level": 1,
-      "text": "Pienen moottorin virta mitataan yleismittarin alueella $10\\,\\text{A}$, ja näyttö näyttää $0{,}02\\,\\text{A}$. Tällä alueella resoluutio on $0{,}01\\,\\text{A}$ ja virheraja $\\pm(2{,}0\\,\\% + 3\\ \\text{numeroa})$. Kuinka suuri on lukeman virheraja? Anna vastaus ampeereina.",
-      "kind": [
-        "data"
-      ],
-      "answer": 0.0304,
-      "unit": "A",
+      "text": "Aurinkokennon jännite mitataan yleismittarin alueella $20\\,\\text{V}$, ja näyttö näyttää $5{,}98\\,\\text{V}$. Tällä alueella resoluutio on $0{,}01\\,\\text{V}$ ja virheraja $\\pm(0{,}5\\,\\% + 2\\ \\text{numeroa})$. Ilmoita mittaustulos muodossa $U \\pm \\Delta U$. Anna vastauslaatikkoon virheraja $\\Delta U$ voltteina.",
+      "answer": 0.0499,
+      "unit": "V",
       "tolerance": 0.03
     }
   ],
@@ -152,7 +149,7 @@
         "data",
         "reasoning"
       ],
-      "text": "Saman jännitelähteen napajännite mitataan samalla yleismittarilla kolmella jännitealueella. Taulukon mittaukset ovat esimerkkiaineistoa. Kaikilla alueilla virheraja on $\\pm(0{,}5\\,\\% + 2\\ \\text{numeroa})$.\n\na) Laske virheraja jokaisella alueella.\n\nb) Mikä alue kannattaa valita? Perustele vastauksesi.\n\nAnna vastauslaatikkoon parhaan alueen virheraja millivoltteina.",
+      "text": "Saman jännitelähteen napajännite mitataan samalla yleismittarilla kolmella jännitealueella. Taulukon mittaukset ovat esimerkkiaineistoa. Sarake $r$ on alueen resoluutio. Kaikilla alueilla virheraja on $\\pm(0{,}5\\,\\% + 2\\ \\text{numeroa})$.\n\na) Laske virheraja jokaisella alueella.\n\nb) Mikä alue kannattaa valita? Perustele vastauksesi.\n\nAnna vastauslaatikkoon parhaan alueen virheraja millivoltteina.",
       "answer": 11.235,
       "unit": "mV",
       "tolerance": 0.03,
@@ -190,15 +187,10 @@
         "error",
         "concept"
       ],
-      "answer": "Valitaan suurempi virta-alue, koska virta ylittää alueen, ja johto siirretään sen liittimeen.",
+      "answer": "Katkaistaan virta ja siirretään johto suuremman alueen liittimeen, koska virta ylittää alueen.",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
-        {
-          "text": "Valitaan suurempi virta-alue, koska virta ylittää alueen, ja johto siirretään sen liittimeen.",
-          "feedback": "Oikein: OL tarkoittaa, että arvo on yli valitun alueen. Virran suuruutta ei tiedetä, joten aloitetaan suurimmalta alueelta ja siirrytään sieltä pienimmälle alueelle, jolle lukema mahtuu.",
-          "correct": true
-        },
         {
           "text": "Valitaan pienempi virta-alue, koska virta on liian pieni nykyisen alueen resoluutiolle ja mittarille.",
           "feedback": "Liian pieni virta ei aiheuta lukemaa OL, vaan näyttö näyttää silloin lähes nollaa. OL kertoo ylityksestä, ja pienemmälle alueelle siirtyminen pahentaisi tilannetta."
@@ -210,6 +202,11 @@
         {
           "text": "Todetaan virran olevan nolla, koska mittari ei voi näyttää muuta, ja lamppu jätetään pois piiristä.",
           "feedback": "Nollavirta näkyisi lukemana nolla eikä lukemana OL. Lamppu kuuluu pitää piirissä, koska se on mitattava komponentti."
+        },
+        {
+          "text": "Katkaistaan virta ja siirretään johto suuremman alueen liittimeen, koska virta ylittää alueen.",
+          "feedback": "Oikein: OL tarkoittaa, että arvo on yli valitun alueen. Virta katkaistaan tai piiri avataan ennen johdon siirtämistä, koska mittarissa on erillinen liitin suurille virroille. Suuruutta ei tiedetä, joten aloitetaan suurimmalta alueelta ja siirrytään pienimmälle alueelle, jolle lukema mahtuu.",
+          "correct": true
         }
       ]
     },
@@ -220,7 +217,7 @@
         "data",
         "experiment"
       ],
-      "text": "Auton akun napajännite mitataan viisi kertaa peräkkäin yleismittarin alueella $20\\,\\text{V}$. Taulukon mittaukset ovat esimerkkiaineistoa. Alueen resoluutio on $0{,}01\\,\\text{V}$ ja virheraja $\\pm(0{,}5\\,\\% + 2\\ \\text{numeroa})$. Akun nimellisjännite on $12{,}60\\,\\text{V}$.\n\na) Laske lukemien keskiarvo.\n\nb) Laske lukemien hajonnan arvio puoleksi vaihteluvälistä.\n\nc) Laske mittarin virheraja keskiarvolle.\n\nd) Onko mittaustulos sopusoinnussa nimellisjännitteen kanssa? Perustele, ja kerro, auttaisiko lukemien toistaminen.\n\nAnna vastauslaatikkoon c)-kohdan virheraja voltteina.",
+      "text": "Auton akun napajännite mitataan viisi kertaa peräkkäin yleismittarin alueella $20\\,\\text{V}$. Taulukon mittaukset ovat esimerkkiaineistoa. Alueen resoluutio on $0{,}01\\,\\text{V}$ ja virheraja $\\pm(0{,}5\\,\\% + 2\\ \\text{numeroa})$. Täyteen ladatun akun lepojännite on $12{,}60\\,\\text{V}$.\n\na) Laske lukemien keskiarvo.\n\nb) Laske lukemien hajonnan arvio puoleksi vaihteluvälistä.\n\nc) Laske mittarin virheraja keskiarvolle.\n\nd) Onko mittaustulos sopusoinnussa täyteen ladatun akun lepojännitteen kanssa? Perustele, ja kerro, auttaisiko lukemien toistaminen.\n\nAnna vastauslaatikkoon c)-kohdan virheraja voltteina.",
       "answer": 0.08245,
       "unit": "V",
       "tolerance": 0.03,
@@ -287,7 +284,7 @@
         "model",
         "reasoning"
       ],
-      "text": "Esimerkkitilanne: ihanteellisen jännitelähteen jännite on $12{,}0\\,\\text{V}$. Siihen on kytketty peräkkäin kaksi vastusta, $R_1 = 1{,}0\\,\\text{M}\\Omega$ ja $R_2 = 1{,}0\\,\\text{M}\\Omega$. Opiskelija mittaa vastuksen $R_2$ jännitteen yleismittarilla, jonka resistanssi jännitealueella on $R_\\text{m} = 10\\,\\text{M}\\Omega$. Mittari on kytketty vastuksen $R_2$ rinnalle.\n\na) Kuinka suuri vastuksen $R_2$ jännite on ilman mittaria?\n\nb) Laske mittarin näyttämä jännite $U$. Apuna: vastuksella $R_2$ ja mittarilla on sama jännite $U$, ja vastuksen $R_1$ läpi kulkeva virta on vastuksen $R_2$ ja mittarin läpi kulkevien virtojen summa. Vastuksen $R_1$ jännite on $12{,}0\\,\\text{V} - U$.\n\nc) Kuinka monta prosenttia mittari pienentää mitattavaa jännitettä?\n\nd) Mittarin virheraja alueella $20\\,\\text{V}$ on $\\pm(0{,}5\\,\\% + 2\\ \\text{numeroa})$ ja resoluutio $0{,}01\\,\\text{V}$. Vertaa mittarin virherajaa mittarin aiheuttamaan muutokseen. Kerro, mitä vertailusta seuraa mittaustuloksen luotettavuudelle ja miten mittaus tehtäisiin luotettavammin.\n\nAnna vastauslaatikkoon c)-kohdan tulos.",
+      "text": "Esimerkkitilanne: ihanteellisen jännitelähteen jännite on $12{,}0\\,\\text{V}$. Siihen on kytketty peräkkäin kaksi vastusta, $R_1 = 1{,}0\\,\\text{M}\\Omega$ ja $R_2 = 1{,}0\\,\\text{M}\\Omega$. Opiskelija mittaa vastuksen $R_2$ jännitteen yleismittarilla, jonka resistanssi jännitealueella on $R_\\text{m} = 10\\,\\text{M}\\Omega$. Mittari on kytketty vastuksen $R_2$ rinnalle.\n\na) Kuinka suuri vastuksen $R_2$ jännite on ilman mittaria?\n\nb) Laske mittarin näyttämä jännite $U$. Apuna: vastuksella $R_2$ ja mittarilla on sama jännite $U$, ja vastuksen $R_1$ läpi kulkeva virta on vastuksen $R_2$ ja mittarin läpi kulkevien virtojen summa. Vastuksen $R_1$ jännite on $12{,}0\\,\\text{V} - U$. Vastuksen läpi kulkeva virta on $I = U : R$.\n\nc) Kuinka monta prosenttia mittari pienentää mitattavaa jännitettä?\n\nd) Mittarin virheraja alueella $20\\,\\text{V}$ on $\\pm(0{,}5\\,\\% + 2\\ \\text{numeroa})$ ja resoluutio $0{,}01\\,\\text{V}$. Vertaa mittarin virherajaa mittarin aiheuttamaan muutokseen. Kerro, mitä vertailusta seuraa mittaustuloksen luotettavuudelle ja miten mittaus tehtäisiin luotettavammin.\n\nAnna vastauslaatikkoon c)-kohdan tulos.",
       "answer": 4.76,
       "unit": "%",
       "tolerance": 0.03
@@ -299,7 +296,7 @@
         "error",
         "reasoning"
       ],
-      "text": "Opiskelija määrittää vastuksen resistanssin mittaamalla vastuksen jännitteen ja virran. Jännitemittari on kytketty vastuksen rinnalle ja virtamittari sarjaan vastuksen kanssa. Mittaukset ovat esimerkkiaineistoa. Jännitteen lukema alueella $20\\,\\text{V}$ on $4{,}52\\,\\text{V}$, resoluutio $0{,}01\\,\\text{V}$ ja virheraja $\\pm(0{,}5\\,\\% + 2\\ \\text{numeroa})$. Virran lukema alueella $200\\,\\text{mA}$ on $38{,}4\\,\\text{mA}$, resoluutio $0{,}1\\,\\text{mA}$ ja virheraja $\\pm(1{,}0\\,\\% + 2\\ \\text{numeroa})$. Opiskelija kirjoittaa raporttiinsa: ”$R = 117{,}71\\,\\Omega$, joten vastus ei ole nimellisarvoltaan $120\\,\\Omega$ vaan viallinen.”\n\na) Laske vastuksen resistanssi $R = U : I$ lukemista.\n\nb) Laske jännitteen ja virran suhteelliset virherajat.\n\nc) Osamäärän suhteellinen virheraja on osoittajan ja nimittäjän suhteellisten virherajojen summa. Laske resistanssin virheraja $\\Delta R$.\n\nd) Arvioi opiskelijan päätelmä ja kirjoita mittaustulos oikein. Mikä raportissa pitää korjata?\n\nAnna vastauslaatikkoon c)-kohdan virheraja $\\Delta R$ ohmeina.",
+      "text": "Opiskelija määrittää vastuksen resistanssin mittaamalla vastuksen jännitteen ja virran. Jännitemittari on kytketty vastuksen rinnalle ja virtamittari sarjaan vastuksen kanssa. Mittaukset ovat esimerkkiaineistoa. Jännitteen lukema alueella $20\\,\\text{V}$ on $4{,}52\\,\\text{V}$, resoluutio $0{,}01\\,\\text{V}$ ja virheraja $\\pm(0{,}5\\,\\% + 2\\ \\text{numeroa})$. Virran lukema alueella $200\\,\\text{mA}$ on $38{,}4\\,\\text{mA}$, resoluutio $0{,}1\\,\\text{mA}$ ja virheraja $\\pm(1{,}0\\,\\% + 2\\ \\text{numeroa})$. Jännitemittarin resistanssi on $10\\,\\text{M}\\Omega$. Opiskelija kirjoittaa raporttiinsa: ”$R = 117{,}71\\,\\Omega$, joten vastus ei ole nimellisarvoltaan $120\\,\\Omega$ vaan viallinen.”\n\na) Laske vastuksen resistanssi $R = U : I$ lukemista.\n\nb) Laske jännitteen ja virran suhteelliset virherajat.\n\nc) Osamäärän suhteellinen virheraja on osoittajan ja nimittäjän suhteellisten virherajojen summa. Laske resistanssin virheraja $\\Delta R$.\n\nd) Arvioi opiskelijan päätelmä ja kirjoita mittaustulos oikein. Mikä raportissa pitää korjata? Perustele myös, miksi jännitemittarin virtaa ei tarvitse ottaa huomioon.\n\nAnna vastauslaatikkoon c)-kohdan virheraja $\\Delta R$ ohmeina.",
       "answer": 2.8995,
       "unit": "Ω",
       "tolerance": 0.03
