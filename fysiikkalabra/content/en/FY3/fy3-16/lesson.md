@@ -201,7 +201,7 @@ The problem goes like this:
 5. Check the units and the order of magnitude.
 
 ## Worked example
-On a trip, a cool bag contains a $1.0\,\text{kg}$ ice pack at $0\,{}^\circ\text{C}$ and $0.50\,\text{kg}$ of drinks in bottles at $20\,{}^\circ\text{C}$. The total area of the walls of the bag is 0.80 m² and the U-value is $1.5\,\text{W/(m}^2\text{}\cdot\text{K)}$, and it is $28\,{}^\circ\text{C}$ outside. Assume that the drinks cool to $0\,{}^\circ\text{C}$ at once, melting ice, and that the inside stays at $0\,{}^\circ\text{C}$ until the ice has melted. How long does the ice last? The specific heat capacity of the drinks is the value for water.
+On a trip, a cool bag contains a $1.0\,\text{kg}$ ice pack at $0\,{}^\circ\text{C}$ and $0.50\,\text{kg}$ of drinks in bottles at $20\,{}^\circ\text{C}$. The total area of the walls of the bag is $0.80\,\text{m}^2$ and the U-value is $1.5\,\text{W/(m}^2\text{}\cdot\text{K)}$, and it is $28\,{}^\circ\text{C}$ outside. Assume that the drinks cool to $0\,{}^\circ\text{C}$ at once, melting ice, and that the inside stays at $0\,{}^\circ\text{C}$ until the ice has melted. How long does the ice last? The specific heat capacity of the drinks is the value for water.
 
 <!-- vaihe -->
 

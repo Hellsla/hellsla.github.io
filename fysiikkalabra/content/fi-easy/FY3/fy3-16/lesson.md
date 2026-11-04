@@ -203,7 +203,7 @@ Tehtävä etenee näin:
 5. Tarkista yksiköt ja suuruusluokka.
 
 ## Esimerkki
-Retkellä kylmälaukussa on $1{,}0\,\text{kg}$:n jääpussi. Sen lämpötila on $0\,{}^\circ\text{C}$. Pulloissa on $0{,}50\,\text{kg}$ juomaa, jonka lämpötila on $20\,{}^\circ\text{C}$. Laukun seinien yhteispinta-ala on 0,80 m² ja U-arvo $1{,}5\,\text{W/(m}^2\text{}\cdot\text{K)}$. Ulkona on $28\,{}^\circ\text{C}$. Oletetaan, että juomat jäähtyvät heti $0\,{}^\circ\text{C}$:seen ja sulattavat jäätä. Oletetaan myös, että sisällä pysyy $0\,{}^\circ\text{C}$, kunnes jää on sulanut. Kuinka kauan jäätä riittää? Juomien ominaislämpökapasiteetti on veden arvo.
+Retkellä kylmälaukussa on $1{,}0\,\text{kg}$:n jääpussi. Sen lämpötila on $0\,{}^\circ\text{C}$. Pulloissa on $0{,}50\,\text{kg}$ juomaa, jonka lämpötila on $20\,{}^\circ\text{C}$. Laukun seinien yhteispinta-ala on $0{,}80\,\text{m}^2$ ja U-arvo $1{,}5\,\text{W/(m}^2\text{}\cdot\text{K)}$. Ulkona on $28\,{}^\circ\text{C}$. Oletetaan, että juomat jäähtyvät heti $0\,{}^\circ\text{C}$:seen ja sulattavat jäätä. Oletetaan myös, että sisällä pysyy $0\,{}^\circ\text{C}$, kunnes jää on sulanut. Kuinka kauan jäätä riittää? Juomien ominaislämpökapasiteetti on veden arvo.
 
 <!-- vaihe -->
 
