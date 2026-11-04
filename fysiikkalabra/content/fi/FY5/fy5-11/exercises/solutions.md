@@ -61,7 +61,7 @@
 **Muunnokset:** Tulos saadaan sekunteina, ja lopuksi $1\,\text{s} = 1000\,\text{ms}$.
 **Sijoitus:** $t = \dfrac{2 \cdot 36\,\text{m}}{1500\,\text{m/s}} = \dfrac{72\,\text{m}}{1500\,\text{m/s}} = 0{,}048\,\text{s} = 0{,}048 \cdot 1000\,\text{ms} = 48\,\text{ms}$
 **Vastaus:** $48\,\text{ms}$, kaksi merkitsevää numeroa kuten syvyydessä $36\,\text{m}$.
-**Järkevyys:** Tarkistus: $1500\,\text{m/s} \cdot 0{,}048\,\text{s} = 72\,\text{m} = 2 \cdot 36\,\text{m}$. Ilmassa sama matka vaatisi $\tfrac{72\,\text{m}}{343\,\text{m/s}} \approx 0{,}21\,\text{s}$, joten vedessä kaiku palaa moninkertaisesti nopeammin, koska ääni etenee vedessä nopeammin.
+**Järkevyys:** Tarkistus: $1500\,\text{m/s} \cdot 0{,}048\,\text{s} = 72\,\text{m} = 2 \cdot 36\,\text{m}$. Ilmassa sama matka vaatisi $\tfrac{72\,\text{m}}{343\,\text{m/s}} \approx 0{,}21\,\text{s}$, joten vedessä kaiku palaa noin neljä kertaa nopeammin, koska ääni etenee vedessä noin $4{,}4$-kertaisella nopeudella ilmaan verrattuna.
 
 ## fy5-11-L2-01
 **Annettu:** tulokulma $\alpha = 30^\circ$, kohtien $A$ ja $B$ etäisyys seinällä $d = 0{,}60\,\text{m}$, aallon nopeus $v = 0{,}40\,\text{m/s}$
@@ -104,10 +104,10 @@
 **Järkevyys:** Taajuus on puheäänen alueella, joten puheen aallonpituus on oviaukon suuruusluokkaa ja puhe taipuu ovesta käytävään. Tätä matalammilla taajuuksilla aallonpituus on aukkoa pidempi ja taipuminen vielä voimakkaampaa.
 
 ## fy5-11-L2-05
-**Annettu:** ensimmäinen mittaus $d_1 = 20{,}0\,\text{m}$, $t_1 = 0{,}157\,\text{s}$; viimeinen mittaus $d_4 = 80{,}0\,\text{m}$, $t_4 = 0{,}507\,\text{s}$; jokainen aika on liian pitkä saman reaktioajan $t_\text{r}$ verran
+**Annettu:** ensimmäinen mittaus $d_1 = 20{,}0\,\text{m}$, $t_1 = 0{,}157\,\text{s}$; viimeinen mittaus $d_4 = 80{,}0\,\text{m}$, $t_4 = 0{,}507\,\text{s}$; puhelimen äänityksellä on tuntematon mutta vakio viive $t_0$, joten jokainen aika on liian pitkä saman verran
 **Kysytty:** äänen nopeus $v$
-**Periaate:** Ääni kulkee seinälle ja takaisin, matkan $2d$. Mitattu aika on tämän kulkuaika ja tuntematon reaktioaika. Kun otetaan kahden mittauksen aikojen erotus, sama reaktioaika kumoutuu, ja jäljelle jää pelkkä lisämatka $2(d_4 - d_1)$, jonka ääni kulkee ajan $t_4 - t_1$ kuluessa.
-**Kaava:** $t = \dfrac{2d}{v} + t_\text{r}$, joten $t_4 - t_1 = \dfrac{2(d_4 - d_1)}{v}$ ja $v = \dfrac{2(d_4 - d_1)}{t_4 - t_1}$
+**Periaate:** Ääni kulkee seinälle ja takaisin, matkan $2d$. Äänityksestä luettu aika on tämän kulkuaika ja tuntematon vakioviive $t_0$. Kun otetaan kahden mittauksen aikojen erotus, sama viive kumoutuu, ja jäljelle jää pelkkä lisämatka $2(d_4 - d_1)$, jonka ääni kulkee ajan $t_4 - t_1$ kuluessa.
+**Kaava:** $t = \dfrac{2d}{v} + t_0$, joten $t_4 - t_1 = \dfrac{2(d_4 - d_1)}{v}$ ja $v = \dfrac{2(d_4 - d_1)}{t_4 - t_1}$
 **Muunnokset:** Ei tarvita: matkat ovat metreinä ja ajat sekunteina.
 **Sijoitus:**
 $$
@@ -118,11 +118,11 @@ v &= \frac{2 \cdot (80{,}0 - 20{,}0)\,\text{m}}{(0{,}507 - 0{,}157)\,\text{s}} \
 \end{aligned}
 $$
 **Vastaus:** $343\,\text{m/s}$, kolme merkitsevää numeroa kuten ajoissa.
-**Järkevyys:** Reaktioaika on $t_\text{r} = 0{,}157\,\text{s} - \tfrac{40{,}0\,\text{m}}{342{,}86\,\text{m/s}} \approx 0{,}040\,\text{s}$, mikä on ihmiselle uskottava. Jos nopeus laskettaisiin yhdestä mittauksesta kaavalla $\tfrac{2d}{t}$, viimeisestä saataisiin $\tfrac{160\,\text{m}}{0{,}507\,\text{s}} \approx 316\,\text{m/s}$, liian pieni, koska aika sisältää reaktioajan. Välimittaus sopii malliin: $\tfrac{80{,}0\,\text{m}}{342{,}86\,\text{m/s}} + 0{,}040\,\text{s} = 0{,}273\,\text{s}$, kun mitattu on $0{,}274\,\text{s}$.
+**Järkevyys:** Vakioviive on $t_0 = 0{,}157\,\text{s} - \tfrac{40{,}0\,\text{m}}{342{,}86\,\text{m/s}} \approx 0{,}040\,\text{s}$, mikä on uskottava äänityksen aloitusviive. Jos nopeus laskettaisiin yhdestä mittauksesta kaavalla $\tfrac{2d}{t}$, viimeisestä saataisiin $\tfrac{160\,\text{m}}{0{,}507\,\text{s}} \approx 316\,\text{m/s}$, liian pieni, koska aika sisältää vakioviiveen. Välimittaus sopii malliin: $\tfrac{80{,}0\,\text{m}}{342{,}86\,\text{m/s}} + 0{,}040\,\text{s} = 0{,}273\,\text{s}$, kun luettu aika on $0{,}274\,\text{s}$.
 
 ## fy5-11-L2-06
 **Annettu:** taajuus $f = 12\,\text{Hz}$, nopeus $v = 0{,}216\,\text{m/s}$; rakoleveydet taulukossa, lähes suora keila raolla $b = 14{,}4\,\text{cm}$
-**Kysytty:** a) aallonpituus $\lambda$; b) suhde $\tfrac{b}{\lambda}$ siinä mittauksessa, jossa aalto jatkui lähes suorana
+**Kysytty:** a) aallonpituus $\lambda$; b) suhde $\tfrac{b}{\lambda}$ siinä mittauksessa, jossa aalto jatkui lähes suorana; c) sääntö, milloin aalto taipuu
 **Periaate:** Aallonpituus saadaan yhtälöstä $v = f\lambda$. Diffraktion voimakkuus riippuu siitä, kuinka leveä rako on aallonpituuteen verrattuna, joten taulukon rakoleveydet kannattaa jakaa aallonpituudella.
 **Kaava:** $\lambda = \dfrac{v}{f}$ ja suhde $\dfrac{b}{\lambda}$
 **Muunnokset:** $\lambda$ saadaan metreinä, ja $1\,\text{m} = 100\,\text{cm}$, jotta se vertautuu rakoihin.
@@ -134,8 +134,8 @@ $$
 \frac{b}{\lambda} &= \frac{14{,}4\,\text{cm}}{1{,}8\,\text{cm}} = 8{,}0
 \end{aligned}
 $$
-**Vastaus:** a) $\lambda = 1{,}8\,\text{cm}$. b) rako on $8{,}0$ kertaa aallonpituuden levyinen, kaksi merkitsevää numeroa kuten taajuudessa ja nopeudessa.
-**Järkevyys:** Muiden rakojen suhteet ovat $\tfrac{b}{\lambda} = 0{,}5$; $1{,}0$; $2{,}0$ ja $4{,}0$. Aalto leviää joka suuntaan, kun $\tfrac{b}{\lambda} \leq 1$, taipuu selvästi, kun suhde on $2{,}0$, ja taipuu vain vähän, kun suhde on $4{,}0$ tai suurempi. Taulukon havainnot noudattavat siis sääntöä: mitä leveämpi rako on aallonpituuteen verrattuna, sitä vähemmän aalto taipuu.
+**Vastaus:** a) $\lambda = 1{,}8\,\text{cm}$. b) rako on $8{,}0$ kertaa aallonpituuden levyinen, kaksi merkitsevää numeroa kuten taajuudessa ja nopeudessa. c) Aalto taipuu voimakkaasti, kun $\tfrac{b}{\lambda}$ on enintään noin $2$, ja vähän, kun suhde on selvästi suurempi.
+**Järkevyys:** Muiden rakojen suhteet ovat $\tfrac{b}{\lambda} = 0{,}5$; $1{,}0$; $2{,}0$ ja $4{,}0$. Aalto leviää joka suuntaan, kun $\tfrac{b}{\lambda} \leq 1$, taipuu selvästi, kun suhde on $2{,}0$, ja taipuu vain vähän, kun suhde on $4{,}0$ tai suurempi. c) Suhteet $0{,}5$; $1{,}0$; $2{,}0$; $4{,}0$ ja $8{,}0$ vastaavat havaintoja ”joka suuntaan”, ”joka suuntaan”, ”leviää selvästi”, ”vähän taipumista” ja ”lähes suora keila”. Taulukon havainnot noudattavat siis sääntöä: mitä leveämpi rako on aallonpituuteen verrattuna, sitä vähemmän aalto taipuu.
 
 ## fy5-11-L2-07
 **Annettu:** tulevan ja heijastuneen säteen välinen kulma $\varphi = 64^\circ$
@@ -199,7 +199,7 @@ $$
 \end{aligned}
 $$
 **Vastaus:** pohja on jyrkin välillä $x = 40\,\text{m}$ … $60\,\text{m}$, ja sen kaltevuuskulma on $35^\circ$, kaksi merkitsevää numeroa kuten viiveiden erotus $90\,\text{ms} - 71\,\text{ms} = 19\,\text{ms}$. Syvin kohta on $x = 80\,\text{m}$, syvyys noin $72\,\text{m}$.
-**c) Perustelut:** Pulssi kulkee alas pohjaan ja takaisin pintaan, joten mitattu viive vastaa kaksinkertaista syvyyttä. Siksi $d = \tfrac{vt}{2}$, eikä viivettä saa kertoa nopeudella sellaisenaan. Mittauspisteiden välistä tiedetään vain, että syvyys on päätepisteiden välillä, koska pohjan oletetaan olevan suora. Jyrkänteen kohdalla todellinen pohja voi poiketa suorasta, esimerkiksi kynnys tai kuoppa voi jäädä pisteiden väliin, joten tiheämmät mittaukset antavat tarkemman profiilin.
+**c) Perustelut:** Pulssi kulkee alas pohjaan ja takaisin pintaan, joten mitattu viive vastaa kaksinkertaista syvyyttä. Siksi $d = \tfrac{vt}{2}$, eikä viivettä saa kertoa nopeudella sellaisenaan. Mittauspisteiden välistä tiedetään vain, että syvyys on päätepisteiden välillä, koska pohjan oletetaan olevan suora. Oletus suorasta pohjasta pettää eniten siellä, missä rinne muuttuu nopeasti: jyrkässä rinteessä kynnys tai kuoppa voi jäädä pisteiden väliin, joten tiheämmät mittaukset antavat tarkemman profiilin. Lisäksi jyrkässä rinteessä ensimmäinen kaiku palaa pohjan lähimmästä pisteestä eikä suoraan alta, joten pystysuora malli aliarvioi syvyyden siinä kohdassa.
 **Järkevyys:** Muiden välien kulmat ovat $12{,}5^\circ$; $22{,}1^\circ$; $14{,}5^\circ$ ja $23{,}9^\circ$ (pohja nousee), kaikki alle $35^\circ$. Tarkistus: $\tan 35^\circ = 0{,}70$, ja $0{,}70 \cdot 20{,}0\,\text{m} = 14\,\text{m}$ vastaa syvyyden muutosta.
 
 ## fy5-11-L3-05

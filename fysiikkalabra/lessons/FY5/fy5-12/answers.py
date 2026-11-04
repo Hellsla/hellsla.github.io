@@ -32,7 +32,7 @@ a["fy5-12-L3-03"] = 2 * (s1h - 30.0)          # first nodal line (n = 0): Δs = 
 # Exercise bank additions (L1-06..08, L2-05..07, L3-04..05)
 # fy5-12-L1-06, L1-07, L2-06 are multiple choice (answered in words): superposition only adds the displacements, Δs = 0 on the central line, energy is redistributed
 a["fy5-12-L1-08"] = 340 / (2 * (5.30 - 4.45))   # Δs = 0,85 m, smallest f for destructive: λ = 2Δs = 1,70 m, f = v/λ = 200 Hz
-dx = (1.63 - 0.38) / 5                        # speakers 2,00 m apart: minima at Δs = |d − 2x|, neighbouring minima Δx = λ/2 = 0,250 m
+dx = (1.63 - 0.38) / 5                        # speakers 2,00 m apart, six consecutive weakest-sound points in 0,3...1,7 m: Δs = |d − 2x|, neighbouring minima Δx = λ/2 = 0,250 m
 a["fy5-12-L2-05"] = 340 / (2 * dx)            # f = v/(2Δx) = 340 m/s : 0,500 m = 680 Hz
 amax = (7.9 + 8.1 + 7.8) / 3                  # maxima of the amplitude table at Δs = 0, 2,0, 4,0 cm: mean 7,93 mm = 2A
 a["fy5-12-L2-07"] = round(amax / 2, 1)         # A = 3,97 mm -> 4,0 mm (λ = 2,0 cm is read from the maxima)

@@ -47,26 +47,26 @@
       "kind": [
         "concept"
       ],
-      "answer": "Jousen kohdat värähtelevät etenemissuunnan suuntaisesti, kun päätä työnnetään edestakaisin jousen suunnassa",
+      "answer": "Jousen kohdat värähtelevät etenemissuunnan suuntaisesti, ja jouseen syntyy tihentymiä ja harvennuksia",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
         {
-          "text": "Jousen kohdat värähtelevät kohtisuoraan etenemissuuntaa vastaan, kun päätä heilutetaan sivuttain",
+          "text": "Jousen kohdat värähtelevät kohtisuoraan etenemissuuntaa vastaan, ja jouseen syntyy harjoja ja aallonpohjia",
           "feedback": "Tämä kuvaa poikittaista aaltoa, ei pitkittäistä. Pitkittäisessä aallossa väliaineen kohdat värähtelevät etenemissuunnan suuntaisesti."
         },
         {
-          "text": "Jousen kohdat kulkevat aallon mukana lähteestä vastaanottajalle, kun päätä työnnetään edestakaisin",
+          "text": "Jousen kohdat kulkevat aallon mukana lähteestä vastaanottajalle, ja aine siirtyy jousen toiseen päähän",
           "feedback": "Aalto ei kuljeta ainetta mukanaan. Jousen kohdat värähtelevät tasapainoasemansa ympärillä ja palaavat paikalleen, ja eteenpäin siirtyy vain häiriö ja energia."
         },
         {
-          "text": "Jousen kohdat värähtelevät etenemissuunnan suuntaisesti, kun päätä työnnetään edestakaisin jousen suunnassa",
+          "text": "Jousen kohdat värähtelevät etenemissuunnan suuntaisesti, ja jouseen syntyy tihentymiä ja harvennuksia",
           "feedback": "Oikein: pitkittäisessä aallossa väliaineen kohdat värähtelevät etenemissuunnan suuntaisesti, jolloin jouseen syntyy eteneviä tihentymiä ja harvennuksia. Ääni ilmassa on samanlainen aalto.",
           "correct": true
         },
         {
-          "text": "Jousi muodostaa harjoja ja aallonpohjia, kun päätä työnnetään edestakaisin jousen suunnassa",
-          "feedback": "Harjat ja aallonpohjat kuuluvat poikittaiseen aaltoon, jossa poikkeama on kohtisuorassa etenemissuuntaa vastaan. Pitkittäisessä aallossa on tihentymiä ja harvennuksia."
+          "text": "Jousen kohdat pysyvät paikallaan, ja vain jousen päässä tapahtuu värähtelyä",
+          "feedback": "Aallon kulkiessa ohi jokainen jousen kohta värähtelee vuorollaan tasapainoasemansa ympärillä. Häiriö etenee koko jousen läpi, joten kaikki kohdat eivät pysy paikallaan."
         }
       ]
     },
@@ -191,7 +191,7 @@
     {
       "id": "fy5-10-L2-06",
       "level": 2,
-      "text": "Opiskelija tutkii kireässä narussa etenevää aaltoa. Narun yhden kohdan $(t, y)$-kuvaajassa peräkkäisten huippujen väli on $0{,}50\\,\\text{s}$. Narun valokuvassa eli $(x, y)$-kuvaajassa peräkkäisten harjojen väli on $1{,}5\\,\\text{m}$.\n\nOpiskelija ratkaisee: \"Huippujen väli on aallonpituus, eli $\\lambda = 0{,}50\\,\\text{m}$. Harjojen väli on jaksonaika, eli $T = 1{,}5\\,\\text{s}$. Siis $v = \\lambda/T = 0{,}33\\,\\text{m/s}$.\"\n\nMikä opiskelijan ratkaisussa on virheellistä? Laske aallon oikea nopeus.",
+      "text": "Opiskelija tutkii kireässä narussa etenevää aaltoa. Narun yhden kohdan $(t, y)$-kuvaajassa peräkkäisten huippujen väli on $0{,}50\\,\\text{s}$. Narun valokuvassa eli $(x, y)$-kuvaajassa peräkkäisten harjojen väli on $1{,}5\\,\\text{m}$.\n\nOpiskelija ratkaisee: ”Huippujen väli on aallonpituus, eli $\\lambda = 0{,}50\\,\\text{m}$. Harjojen väli on jaksonaika, eli $T = 1{,}5\\,\\text{s}$. Siis $v = \\lambda/T = 0{,}33\\,\\text{m/s}$.\"\n\nMikä opiskelijan ratkaisussa on virheellistä? Laske aallon oikea nopeus.",
       "kind": [
         "error"
       ],
@@ -202,12 +202,12 @@
     {
       "id": "fy5-10-L2-07",
       "level": 2,
-      "text": "Äänen nopeutta mitataan kahdella mikrofonilla, jotka ovat samalla suoralla kaiuttimen kanssa. Kaiutin antaa lyhyen napsahduksen, ja mittari näyttää ajan, jonka napsahdus tarvitsee kulkeakseen mikrofonien väli.\n\nEsimerkkiaineisto on taulukossa. Etäisyys $d$ on mikrofonien väli ja $\\Delta t$ äänen kulkuaika niiden välillä.\n\nMääritä äänen nopeus laskemalla pisteiden $d = 0{,}50\\,\\text{m}$ ja $d = 2{,}00\\,\\text{m}$ kautta kulkevan suoran kulmakerroin. Perustele, miksi kulmakerroin on parempi kuin yhden rivin osamäärä.",
+      "text": "Äänen nopeutta mitataan kahdella mikrofonilla, jotka ovat samalla suoralla kaiuttimen kanssa. Kaiutin antaa lyhyen napsahduksen, ja mittari näyttää ajan, jonka napsahdus tarvitsee kulkeakseen mikrofonien välin.\n\nEsimerkkiaineisto on taulukossa. Etäisyys $d$ on mikrofonien väli ja $\\Delta t$ äänen kulkuaika niiden välillä.\n\nMääritä äänen nopeus laskemalla pisteiden $d = 0{,}50\\,\\text{m}$ ja $d = 2{,}00\\,\\text{m}$ kautta kulkevan suoran kulmakerroin. Perustele, miksi kulmakerroin on parempi kuin yhden rivin osamäärä.",
       "kind": [
         "data",
         "experiment"
       ],
-      "answer": 341,
+      "answer": 340,
       "unit": "m/s",
       "tolerance": 0.02,
       "data": {
@@ -265,7 +265,7 @@
     {
       "id": "fy5-10-L3-04",
       "level": 3,
-      "text": "Esimerkkiaineisto: $12{,}0\\,\\text{m}$ pitkää narua kiristetään eri voimilla $F$, ja narun päähän tehty pulssi kulkee koko narun pituuden ajassa $t$. Mittaustulokset ovat taulukossa.\n\nLaske pulssin nopeus jokaiselle jännitykselle. Tutki, riippuuko nopeus jännityksestä suoraan verrannollisesti vai jollakin muulla tavalla (vihje: vertaa suureita $v^2$ ja $F$).\n\nNarua heilutetaan taajuudella $5{,}0\\,\\text{Hz}$, kun jännitys on $30\\,\\text{N}$. Mikä on syntyvän aallon aallonpituus? Perustele, miksi aallonpituus muuttuisi, jos naru vaihdettaisiin paksumpaan mutta taajuus pidettäisiin samana.\n\nAnna vastaus aallonpituutena.",
+      "text": "Esimerkkiaineisto: $12{,}0\\,\\text{m}$ pitkää narua kiristetään eri voimilla $F$, ja narun päähän tehty pulssi kulkee koko narun pituuden ajassa $t$. Mittaustulokset ovat taulukossa.\n\nLaske pulssin nopeus jokaiselle jännitykselle. Tutki, riippuuko nopeus jännityksestä suoraan verrannollisesti vai jollakin muulla tavalla.\n\nNarua heilutetaan taajuudella $5{,}0\\,\\text{Hz}$, kun jännitys on $30\\,\\text{N}$. Mikä on syntyvän aallon aallonpituus? Perustele, miksi aallonpituus muuttuisi, jos naru vaihdettaisiin paksumpaan mutta taajuus pidettäisiin samana.\n\nAnna vastaus aallonpituutena.",
       "kind": [
         "data",
         "model"

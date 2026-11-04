@@ -30,8 +30,8 @@ a["fy5-10-L1-08"] = 343 * 4.0 / 1000                    # thunder: d = v t = 343
 x = [0.10, 0.62, 1.13, 1.66, 2.17, 2.70]; tt = [0.0, 0.2, 0.4, 0.6, 0.8, 1.0]
 a["fy5-10-L2-05"] = round((x[-1] - x[0]) / (tt[-1] - tt[0]), 1)   # slope of the fitted line through the end points: 2,60 -> 2,6 m/s
 a["fy5-10-L2-06"] = 1.5 / 0.50                          # (t,y) peaks 0,50 s = T; (x,y) crests 1,5 m = λ: v = λ/T = 3,0 m/s
-a["fy5-10-L2-07"] = (2.00 - 0.50) / ((5.9 - 1.5) * 1e-3)   # slope of d(Δt): 1,50 m / 4,4 ms = 340,9 m/s -> 341 m/s
-# L3-04: v = L/t for each tension; v²/F is constant, k = mean(v²/F) = 22,0; at 30 N v = sqrt(kF), λ = v/f
+a["fy5-10-L2-07"] = round((2.00 - 0.50) / ((5.9 - 1.5) * 1e-3), -1)   # slope of d(Δt): 1,50 m / 4,4 ms = 340,9 m/s -> 3,4·10² m/s (two figures)
+# L3-04: v = L/t for each tension; v²/F is constant, C = mean(v²/F) = 22,0; at 30 N v = sqrt(CF), λ = v/f
 Fs = [5.0, 10.0, 20.0, 40.0]; ts = [1.15, 0.800, 0.570, 0.410]
 ks = [round(12.0 / t, 1) ** 2 / F for t, F in zip(ts, Fs)]
 k = round(sum(ks) / 4, 1)                               # 22,0

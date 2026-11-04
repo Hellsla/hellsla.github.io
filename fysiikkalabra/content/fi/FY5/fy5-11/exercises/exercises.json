@@ -82,7 +82,7 @@
       "tolerance": 0.02,
       "choices": [
         {
-          "text": "Taipuminen voimistuu, koska korkeampi taajuus tuo mukanaan enemmän energiaa.",
+          "text": "Taipuminen voimistuu, koska korkeampi taajuus tuo mukanaan lisää energiaa aaltoon.",
           "feedback": "Taipumisen voimakkuus riippuu aallonpituuden ja raon leveyden suhteesta, ei aallon energiasta."
         },
         {
@@ -149,12 +149,12 @@
         "data",
         "experiment"
       ],
-      "text": "Oppilas seisoo koulun pitkän seinän edessä, taputtaa käsiään ja mittaa kellolla ajan taputuksesta kaiun kuulumiseen. Hän toistaa mittauksen eri etäisyyksillä $d$ seinästä.\n\nKellon pysäytys tapahtuu aina saman reaktioajan kaiun jälkeen, joten jokainen mitattu aika on liian pitkä saman verran. Reaktioaikaa ei tunneta (esimerkkiaineisto).\n\nMääritä äänen nopeus käyttämällä taulukon ensimmäistä ja viimeistä mittausta. Anna vastaus yksikössä m/s.",
+      "text": "Oppilas seisoo koulun pitkän seinän edessä ja taputtaa käsiään. Puhelimen äänityssovellus tallentaa taputuksen ja kaiun, ja ajat luetaan äänityksen aaltomuodosta. Hän toistaa mittauksen eri etäisyyksillä $d$ seinästä.\n\nÄänityksellä on tuntematon mutta aina yhtä suuri viive, joten jokainen mitattu aika $t$ on liian pitkä saman verran (esimerkkiaineisto).\n\nMääritä äänen nopeus käyttämällä taulukon ensimmäistä ja viimeistä mittausta. Anna vastaus yksikössä $\\text{m/s}$.",
       "answer": 343,
       "unit": "m/s",
       "tolerance": 0.02,
       "data": {
-        "caption": "Kaiun mitattu viive eri etäisyyksillä, esimerkkiaineisto",
+        "caption": "Kaiun äänityksestä luettu viive eri etäisyyksillä, esimerkkiaineisto",
         "columns": [
           "$d\\,(\\text{m})$",
           "$t\\,(\\text{s})$"
@@ -186,7 +186,7 @@
         "data",
         "concept"
       ],
-      "text": "Aaltoaltaassa tehdään tasoaaltoja taajuudella $12\\,\\text{Hz}$, ja ne etenevät nopeudella $0{,}216\\,\\text{m/s}$. Aallot kulkevat esteessä olevan raon läpi. Raon leveyttä $b$ muutetaan, ja kustakin kuvasta kirjataan, miten aalto leviää raon takana (esimerkkiaineisto).\n\na) Laske aallonpituus.\n\nb) Kuinka moninkertainen rako on aallonpituuteen verrattuna siinä mittauksessa, jossa aalto jatkui lähes suorana keilana?\n\nKirjoita vastauskenttään b-kohdan tulos.",
+      "text": "Aaltoaltaassa tehdään tasoaaltoja taajuudella $12\\,\\text{Hz}$, ja ne etenevät nopeudella $0{,}216\\,\\text{m/s}$. Aallot kulkevat esteessä olevan raon läpi. Raon leveyttä $b$ muutetaan, ja kustakin kuvasta kirjataan, miten aalto leviää raon takana (esimerkkiaineisto).\n\na) Laske aallonpituus.\n\nb) Kuinka moninkertainen rako on aallonpituuteen verrattuna siinä mittauksessa, jossa aalto jatkui lähes suorana keilana?\n\nc) Laske myös muiden rakojen suhde $\\tfrac{b}{\\lambda}$ ja muotoile sääntö: milloin aalto taipuu raon takana voimakkaasti ja milloin vähän?\n\nKirjoita vastauskenttään b-kohdan tulos.",
       "answer": 8.0,
       "unit": "kertaa",
       "tolerance": 0.02,
@@ -226,7 +226,7 @@
       "kind": [
         "error"
       ],
-      "text": "Aaltoaltaassa tasoaalto heijastuu suorasta seinästä. Valokuvasta mitataan, että tuleva ja heijastunut säde muodostavat keskenään $64^\\circ$:n kulman.\n\nOpiskelija päättelee: \"Tulokulma on tulevan ja heijastuneen säteen välinen kulma, joten $\\alpha = 64^\\circ$.\"\n\nEtsi opiskelijan virhe ja laske oikea tulokulma.",
+      "text": "Aaltoaltaassa tasoaalto heijastuu suorasta seinästä. Valokuvasta mitataan, että tuleva ja heijastunut säde muodostavat keskenään $64^\\circ$:n kulman.\n\nOpiskelija päättelee: ”Tulokulma on tulevan ja heijastuneen säteen välinen kulma, joten $\\alpha = 64^\\circ$.”\n\nEtsi opiskelijan virhe ja laske oikea tulokulma.",
       "answer": 32,
       "unit": "°",
       "tolerance": 0.02
@@ -265,7 +265,7 @@
         "model",
         "reasoning"
       ],
-      "text": "Kalastaja ajaa veneellä suoraa linjaa pitkin järvellä ja mittaa kaikuluotaimella pohjan syvyyttä kuudessa pisteessä. Pisteiden väli on $20{,}0\\,\\text{m}$. Luotain lähettää pulssin suoraan alas, ja kaiun viive on taulukossa (esimerkkiaineisto).\n\nÄänen nopeus järven vedessä on $1480\\,\\text{m/s}$. Oleta, että pulssi kulkee pystysuoraan alas ja että pohja on suora mittauspisteiden välillä.\n\na) Laske pohjan syvyys jokaisessa pisteessä.\n\nb) Missä kahden peräkkäisen pisteen välissä pohja on jyrkin, ja kuinka suuri on pohjan kaltevuuskulma vaakatasoon nähden siinä?\n\nc) Perustele, miksi syvyys saadaan viiveestä puolittamalla, ja miksi jyrkänteen kohdalla kannattaa tehdä lisämittauksia.\n\nKirjoita vastauskenttään b-kohdan kaltevuuskulma.",
+      "text": "Kalastaja ajaa veneellä suoraa linjaa pitkin järvellä ja mittaa kaikuluotaimella pohjan syvyyttä kuudessa pisteessä. Pisteiden väli on $20{,}0\\,\\text{m}$. Luotain lähettää pulssin suoraan alas, ja kaiun viive on taulukossa (esimerkkiaineisto).\n\nÄänen nopeus järven vedessä on $1480\\,\\text{m/s}$. Oleta, että pulssi kulkee pystysuoraan alas ja että pohja on suora mittauspisteiden välillä.\n\na) Laske pohjan syvyys jokaisessa pisteessä.\n\nb) Missä kahden peräkkäisen pisteen välissä pohja on jyrkin, ja kuinka suuri on pohjan kaltevuuskulma vaakatasoon nähden siinä?\n\nc) Perustele, miksi syvyys saadaan viiveestä puolittamalla, ja miksi jyrkässä rinteessä kannattaa tehdä lisämittauksia.\n\nKirjoita vastauskenttään b-kohdan kaltevuuskulma.",
       "answer": 35,
       "unit": "°",
       "tolerance": 0.02,

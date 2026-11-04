@@ -148,7 +148,7 @@
     {
       "id": "fy5-12-L2-05",
       "level": 2,
-      "text": "Kaksi samassa vaiheessa olevaa kaiutinta A ja B on $2{,}00\\,\\text{m}$:n päässä toisistaan ja soittaa samaa siniääntä. Äänen nopeus on $340\\,\\text{m/s}$.\n\nMikrofonia siirretään kaiuttimien välistä janaa pitkin. Taulukossa on hiljaisten kohtien etäisyys $x$ kaiuttimesta A (esimerkkiaineisto). Mikrofonin etäisyys kaiuttimesta B on $2{,}00\\,\\text{m} - x$.\n\nMikä on äänen taajuus? Anna vastaus hertseinä.",
+      "text": "Kaksi samassa vaiheessa olevaa kaiutinta A ja B on $2{,}00\\,\\text{m}$:n päässä toisistaan ja soittaa samaa siniääntä. Äänen nopeus on $340\\,\\text{m/s}$.\n\nMikrofonia siirrettiin kaiuttimien välistä janaa pitkin välillä $x = 0{,}30\\,\\text{m}$ … $1{,}70\\,\\text{m}$, jossa $x$ on etäisyys kaiuttimesta A. Mikrofonin etäisyys kaiuttimesta B on $2{,}00\\,\\text{m} - x$. Taulukossa ovat kaikki tällä välillä havaitut heikoimman äänen kohdat peräkkäin (esimerkkiaineisto).\n\nMääritä äänen taajuus kaikkien kuuden kohdan avulla. Anna vastaus hertseinä.",
       "kind": [
         "data"
       ],
@@ -156,9 +156,9 @@
       "unit": "Hz",
       "tolerance": 0.03,
       "data": {
-        "caption": "Hiljaiset kohdat kaiuttimien välisellä janalla",
+        "caption": "Heikoimman äänen kohdat kaiuttimien välisellä janalla",
         "columns": [
-          "Hiljainen kohta",
+          "Heikoimman äänen kohta",
           "$x\\,(\\text{m})$"
         ],
         "rows": [
@@ -192,31 +192,31 @@
     {
       "id": "fy5-12-L2-06",
       "level": 2,
-      "text": "Opiskelija kirjoittaa: \"Kun kahden kaiuttimen äänet heikentävät toisiaan solmuviivalla, ääniaaltojen energia häviää.\"\n\nMikä seuraavista oikaisee väitteen oikein?",
+      "text": "Opiskelija kirjoittaa: ”Kun kahden kaiuttimen äänet heikentävät toisiaan solmuviivalla, ääniaaltojen energia häviää.”\n\nMikä seuraavista oikaisee väitteen oikein?",
       "kind": [
         "error",
         "concept"
       ],
       "unit": "",
       "tolerance": 0.02,
-      "answer": "Energia ei häviä, vaan jakautuu uudelleen: solmuviivoilla sitä siirtyy vähemmän ja vahvistavissa kohdissa enemmän.",
+      "answer": "Energia jakautuu uudelleen, koska solmuviivoille siirtyy vähemmän ja muualle enemmän.",
       "choices": [
         {
-          "text": "Väite on oikein, koska kaiuttimien tuottama kokonaisenergia pienenee, kun toinen aalto kumoaa toisen.",
+          "text": "Väite on oikein, koska kaiuttimien kokonaisenergia pienenee, kun toinen aalto kumoaa toisen.",
           "feedback": "Kaiuttimet tuottavat energiaa aivan yhtä paljon kuin ennenkin. Interferenssi vaikuttaa vain siihen, mihin energia kulkeutuu."
         },
         {
-          "text": "Energia muuttuu solmuviivoilla lämmöksi, koska aallot hankaavat toisiaan vasten kohdatessaan.",
+          "text": "Energia muuttuu solmuviivoilla lämmöksi, koska aallot hankaavat toisiaan kohdatessaan.",
           "feedback": "Aallot kulkevat toistensa läpi eivätkä hankaa toisiaan. Solmuviivoilla ei synny tavallista enempää lämpöä."
         },
         {
-          "text": "Energia siirtyy solmuviivoilla toiseen kaiuttimeen, jossa se vahvistaa tämän omaa ääntä.",
-          "feedback": "Kaiuttimet eivät ota energiaa vastaan toisiltaan. Interferenssi ei siirrä energiaa lähteille takaisin."
-        },
-        {
-          "text": "Energia ei häviä, vaan jakautuu uudelleen: solmuviivoilla sitä siirtyy vähemmän ja vahvistavissa kohdissa enemmän.",
+          "text": "Energia jakautuu uudelleen, koska solmuviivoille siirtyy vähemmän ja muualle enemmän.",
           "feedback": "Oikein: energian kokonaismäärä säilyy. Interferenssikuvio jakaa energian eri tavalla tilaan: solmuviivoille sitä tulee vähän ja vahvistavan interferenssin kohtiin vastaavasti enemmän.",
           "correct": true
+        },
+        {
+          "text": "Energia siirtyy solmuviivoilla toiseen kaiuttimeen, koska se vahvistaa tämän omaa ääntä.",
+          "feedback": "Kaiuttimet eivät ota energiaa vastaan toisiltaan. Interferenssi ei siirrä energiaa lähteille takaisin."
         }
       ]
     },

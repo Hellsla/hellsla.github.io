@@ -182,14 +182,14 @@ v &= \frac{1{,}50\,\text{m}}{4{,}4 \cdot 10^{-3}\,\text{s}} \\
 &= 341\,\text{m/s}
 \end{aligned}
 ```
-**Vastaus:** $341\,\text{m/s}$, kolme merkitsevää numeroa kuten matkan muutoksessa $1{,}50\,\text{m}$. Kulmakerroin on parempi kuin yhden rivin osamäärä, koska aikalukeman virhe vaikuttaa vähemmän, kun pisteet ovat kaukana toisistaan: virhe $0{,}1\,\text{ms}$ on lukemasta $1{,}5\,\text{ms}$ noin $7\,\%$ mutta lukemasta $4{,}4\,\text{ms}$ vain noin $2\,\%$. Lisäksi mahdollinen vakiovirhe ajan nollakohdassa kumoutuu erotuksessa.
-**Järkevyys:** Rivien osamäärät $d/\Delta t$ ovat noin $333\,\text{m/s}$, $345\,\text{m/s}$, $341\,\text{m/s}$ ja $339\,\text{m/s}$, ja kulmakerroin on niiden joukossa. Tulos on lähellä huoneilman äänen nopeutta $343\,\text{m/s}$.
+**Vastaus:** $3{,}4 \cdot 10^{2}\,\text{m/s}$, kaksi merkitsevää numeroa, koska aikaero $\Delta t = 4{,}4\,\text{ms}$ on annettu kahdella numerolla. Kulmakerroin on parempi kuin yhden rivin osamäärä, koska mittarin mahdollinen vakiovirhe kumoutuu erotuksessa $\Delta t$ ja koska kulmakerroin käyttää koko mittausväliä: virhe $0{,}1\,\text{ms}$ on erotuksesta $4{,}4\,\text{ms}$ vain noin $2\,\%$. 
+**Järkevyys:** Rivien osamäärät $d/\Delta t$ ovat noin $333\,\text{m/s}$, $345\,\text{m/s}$, $341\,\text{m/s}$ ja $339\,\text{m/s}$, ja kulmakerroin on niiden joukossa. Tulos $3{,}4 \cdot 10^{2}\,\text{m/s}$ on lähellä huoneilman äänen nopeutta $343\,\text{m/s}$.
 
 ## fy5-10-L3-04
 **Annettu:** narun pituus $L = 12{,}0\,\text{m}$, jännityksen $F$ ja pulssin kulkuajan $t$ pisteet $(5{,}0\,\text{N};\ 1{,}15\,\text{s})$, $(10{,}0\,\text{N};\ 0{,}800\,\text{s})$, $(20{,}0\,\text{N};\ 0{,}570\,\text{s})$ ja $(40{,}0\,\text{N};\ 0{,}410\,\text{s})$, taajuus $f = 5{,}0\,\text{Hz}$ ja jännitys $F = 30\,\text{N}$ heilutettaessa
 **Kysytty:** aallonpituus $\lambda$ jännityksellä $30\,\text{N}$ ja perustelu, miksi aallonpituus muuttuisi paksummassa narussa
-**Periaate:** Pulssi etenee narussa tasaisella nopeudella, joten $v = L/t$. Kun nopeudet on laskettu, tutkitaan, miten ne riippuvat jännityksestä: jos $v$ olisi suoraan verrannollinen jännitykseen, jännityksen kaksinkertaistuminen kaksinkertaistaisi nopeuden. Jos taas suhde $v^2/F$ on vakio, nopeus riippuu jännityksestä toisin. Mallista saadaan nopeus jännityksellä $30\,\text{N}$, ja aallonpituus tulee perusyhtälöstä. Nopeus määräytyy narusta ja jännityksestä, taajuus lähteestä.
-**Kaava:** $v = \dfrac{L}{t}$, $\quad v^2 = kF$ ja $\lambda = \dfrac{v}{f}$
+**Periaate:** Pulssi etenee narussa tasaisella nopeudella, joten $v = L/t$. Kun nopeudet on laskettu, tutkitaan, miten ne riippuvat jännityksestä: jos $v$ olisi suoraan verrannollinen jännitykseen, jännityksen kaksinkertaistuminen kaksinkertaistaisi nopeuden. Jos taas suhde $C = v^2/F$ on vakio, nopeus riippuu jännityksestä toisin. Mallista saadaan nopeus jännityksellä $30\,\text{N}$, ja aallonpituus tulee perusyhtälöstä. Nopeus määräytyy narusta ja jännityksestä, taajuus lähteestä.
+**Kaava:** $v = \dfrac{L}{t}$, $\quad v^2 = CF$ ja $\lambda = \dfrac{v}{f}$
 **Muunnokset:** Ei tarvita: pituus on metreinä ja aika sekunteina.
 **Sijoitus:** Nopeudet ovat $v = \tfrac{12{,}0\,\text{m}}{t}$:
 ```latex
@@ -200,25 +200,25 @@ v_3 &= \frac{12{,}0\,\text{m}}{0{,}570\,\text{s}} = 21{,}1\,\text{m/s} \\
 v_4 &= \frac{12{,}0\,\text{m}}{0{,}410\,\text{s}} = 29{,}3\,\text{m/s}
 \end{aligned}
 ```
-Kun jännitys kaksinkertaistuu, nopeus kasvaa kertoimella $\tfrac{15{,}0}{10{,}4} = 1{,}44$, $\tfrac{21{,}1}{15{,}0} = 1{,}41$ ja $\tfrac{29{,}3}{21{,}1} = 1{,}39$ eli noin $\sqrt{2} = 1{,}41$. Nopeus ei siis ole suoraan verrannollinen jännitykseen, mutta $v^2$ on. Lasketaan suhteet $k = v^2/F$:
+Kun jännitys kaksinkertaistuu, nopeus kasvaa kertoimella $\tfrac{15{,}0}{10{,}4} = 1{,}44$, $\tfrac{21{,}1}{15{,}0} = 1{,}41$ ja $\tfrac{29{,}3}{21{,}1} = 1{,}39$ eli noin $\sqrt{2} = 1{,}41$. Nopeus ei siis ole suoraan verrannollinen jännitykseen, mutta $v^2$ on. Lasketaan suhteet $C = v^2/F$:
 ```latex
 \begin{aligned}
-k_1 &= \frac{(10{,}4)^2}{5{,}0} = 21{,}8 \\
-k_2 &= \frac{(15{,}0)^2}{10{,}0} = 22{,}5 \\
-k_3 &= \frac{(21{,}1)^2}{20{,}0} = 22{,}2 \\
-k_4 &= \frac{(29{,}3)^2}{40{,}0} = 21{,}4
+C_1 &= \frac{(10{,}4)^2}{5{,}0} = 21{,}8 \\
+C_2 &= \frac{(15{,}0)^2}{10{,}0} = 22{,}5 \\
+C_3 &= \frac{(21{,}1)^2}{20{,}0} = 22{,}2 \\
+C_4 &= \frac{(29{,}3)^2}{40{,}0} = 21{,}4
 \end{aligned}
 ```
-Suhteet ovat likimain yhtä suuret. Niiden summa on $87{,}9$, joten keskiarvo on $k = \tfrac{87{,}9}{4} = 22{,}0\,\tfrac{\text{m}^2}{\text{s}^2\,\text{N}}$. Jännityksellä $30\,\text{N}$ nopeus ja aallonpituus ovat
+Suhteet ovat likimain yhtä suuret. Niiden summa on $87{,}9$, joten keskiarvo on $C = \tfrac{87{,}9}{4} = 22{,}0\,\tfrac{\text{m}^2}{\text{s}^2\,\text{N}}$. Jännityksellä $30\,\text{N}$ nopeus ja aallonpituus ovat
 ```latex
 \begin{aligned}
-v &= \sqrt{kF} \\
+v &= \sqrt{CF} \\
 &= \sqrt{22{,}0 \cdot 30} = 25{,}7\,\text{m/s} \\[6pt]
 \lambda &= \frac{v}{f} \\
 &= \frac{25{,}7\,\text{m/s}}{5{,}0\,\text{Hz}} = 5{,}1\,\text{m}
 \end{aligned}
 ```
-**Vastaus:** $5{,}1\,\text{m}$, kaksi merkitsevää numeroa kuten taajuudessa $5{,}0\,\text{Hz}$ ja jännityksessä $30\,\text{N}$. Aineiston perusteella nopeus kasvaa jännityksen kasvaessa mutta ei suoraan verrannollisesti: $v^2$ on verrannollinen jännitykseen. Paksumpaan narun vaihtaminen muuttaa väliainetta: yleensä sama jännitys saa raskaamman narun liikkumaan hitaammin, joten nopeus pienenee. Taajuus pysyy samana, koska sen määrää heiluttava käsi, joten aallonpituus $\lambda = v/f$ lyhenee.
+**Vastaus:** $5{,}1\,\text{m}$, kaksi merkitsevää numeroa kuten taajuudessa $5{,}0\,\text{Hz}$ ja jännityksessä $30\,\text{N}$. Aineiston perusteella nopeus kasvaa jännityksen kasvaessa mutta ei suoraan verrannollisesti: $v^2$ on verrannollinen jännitykseen. Narun vaihtaminen paksumpaan muuttaa väliainetta: yleensä sama jännitys saa raskaamman narun liikkumaan hitaammin, joten nopeus pienenee. Taajuus pysyy samana, koska sen määrää heiluttava käsi, joten aallonpituus $\lambda = v/f$ lyhenee.
 **Järkevyys:** Jännitys $30\,\text{N}$ on aineiston arvojen $20\,\text{N}$ ja $40\,\text{N}$ välissä, joten nopeuden täytyy olla niiden nopeuksien $21{,}1\,\text{m/s}$ ja $29{,}3\,\text{m/s}$ välissä, ja $25{,}7\,\text{m/s}$ on. Aallonpituuden täytyy olla välillä $\tfrac{21{,}1}{5{,}0} = 4{,}2\,\text{m}$ ja $\tfrac{29{,}3}{5{,}0} = 5{,}9\,\text{m}$, ja $5{,}1\,\text{m}$ on.
 
 ## fy5-10-L3-05
