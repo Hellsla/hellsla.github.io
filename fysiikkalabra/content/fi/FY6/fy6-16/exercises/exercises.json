@@ -1,0 +1,105 @@
+{
+  "level1": [
+    {
+      "id": "fy6-16-L1-01",
+      "level": 1,
+      "text": "Sähköauton akun energia on täyteen ladattuna $64\\,\\text{kWh}$. Kuinka paljon energiaa akkuun pitää varastoida, kun se ladataan varaustasosta $15\\,\\%$ tasoon $80\\,\\%$? Vastaa kilowattitunteina.",
+      "answer": 41.6,
+      "unit": "kWh",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-16-L1-02",
+      "level": 1,
+      "text": "Sähköautoa ladataan mökillä tavallisesta pistorasiasta latauskaapelilla, joka rajoittaa virran $10\\,\\text{A}$:iin. Jännite on $230\\,\\text{V}$. Kuinka suuri on latausteho? Vastaa kilowatteina.",
+      "answer": 2.3,
+      "unit": "kW",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-16-L1-03",
+      "level": 1,
+      "text": "Kolmivaiheisen latausaseman teho on $11\\,\\text{kW}$, ja se ottaa jokaisesta kolmesta vaihejohtimesta yhtä suuren virran. Vaihejännite on $230\\,\\text{V}$. Kuinka suuri virta kulkee yhdessä vaihejohtimessa?",
+      "answer": 15.942029,
+      "unit": "A",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-16-L1-04",
+      "level": 1,
+      "text": "Sähköauton lataus otti verkosta $45\\,\\text{kWh}$ energiaa. Sähkö maksaa siirtoineen $14\\,\\text{snt/kWh}$. Kuinka paljon lataus maksoi? Vastaa euroina.",
+      "answer": 6.3,
+      "unit": "€",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-16-L1-05",
+      "level": 1,
+      "text": "Latausaseman mittarin mukaan lataus otti verkosta $50\\,\\text{kWh}$, ja auton mukaan akkuun varastoitui $44\\,\\text{kWh}$. Mikä oli latauksen hyötysuhde? Vastaa prosentteina.",
+      "answer": 88.0,
+      "unit": "%",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy6-16-L2-01",
+      "level": 2,
+      "text": "Kuvaajassa on latausaseman verkosta ottama teho yhden latauksen aikana. Kahden tunnin kohdalla talossa kytkettiin kiuas päälle, ja kuormanhallinta pienensi latausvirtaa. Kuinka paljon energiaa latausasema otti verkosta koko latauksen aikana? Lue tarvittavat arvot kuvaajasta ja vastaa kilowattitunteina.",
+      "figure": "fy6-16/lataus-ex",
+      "answer": 27.5,
+      "unit": "kWh",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-16-L2-02",
+      "level": 2,
+      "text": "Yksivaiheinen latausasema ottaa virran $16\\,\\text{A}$ jännitteellä $230\\,\\text{V}$. Auton akun energia on $60\\,\\text{kWh}$, ja se ladataan varaustasosta $20\\,\\%$ tasoon $80\\,\\%$. Latauksen hyötysuhde on $90\\,\\%$, ja teho pysyy koko ajan vakiona. Kuinka kauan lataus kestää? Vastaa tunteina.",
+      "answer": 10.869565,
+      "unit": "h",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-16-L2-03",
+      "level": 2,
+      "text": "Omakotitalon pääsulakkeet ovat $3 \\cdot 25\\,\\text{A}$. Saunassa on päällä $9{,}0\\,\\text{kW}$:n kiuas, joka ottaa jokaisesta kolmesta vaihejohtimesta yhtä suuren virran. Vaihejännite on $230\\,\\text{V}$, eikä muita laitteita oleteta olevan päällä. Kuinka suuren virran kolmivaiheinen latausasema saa ottaa jokaisesta vaiheesta, jotta pääsulakkeiden virta ei ylity?",
+      "answer": 11.956522,
+      "unit": "A",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-16-L2-04",
+      "level": 2,
+      "text": "Yksivaiheinen latausasema on kytketty sähkökeskukseen $30\\,\\text{m}$ pitkällä kaapelilla, jonka kuparijohtimien poikkipinta-ala on $2{,}5\\,\\text{mm}^2$. Latausvirta $16\\,\\text{A}$ kulkee asemalle vaihejohdinta ja palaa nollajohdinta pitkin. Kuparin resistiivisyys on $1{,}7 \\cdot 10^{-8}\\,\\Omega\\cdot\\text{m}$. Kuinka suuri jännite kaapelissa häviää?",
+      "answer": 6.528,
+      "unit": "V",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy6-16-L3-01",
+      "level": 3,
+      "text": "Perhe lataa autonsa akkuun vuodessa yhteensä $3000\\,\\text{kWh}$. Latauskaapelilla tavallisesta pistorasiasta latauksen hyötysuhde on $82\\,\\%$, latausasemalla $92\\,\\%$. Sähkö maksaa siirtoineen $15\\,\\text{snt/kWh}$. Kuinka paljon perhe säästää vuodessa, jos se lataa aina latausasemalla? Vastaa euroina.",
+      "answer": 59.650053,
+      "unit": "€",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-16-L3-02",
+      "level": 3,
+      "text": "Auton latausvirta kasvatetaan $10\\,\\text{A}$:sta $16\\,\\text{A}$:iin samassa kaapelissa. Oletetaan, että kaapelin resistanssi pysyy samana. Kuinka monta prosenttia kaapeliin tuleva lämpenemisteho kasvaa?",
+      "answer": 156.0,
+      "unit": "%",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-16-L3-03",
+      "level": 3,
+      "text": "Auton akkuun pitää yön aikana varastoida $40\\,\\text{kWh}$. Lataus alkaa kello $22.00$, ja auton pitää olla valmis kello $7.00$. Latauksen hyötysuhde on $90\\,\\%$. Kolmivaiheinen latausasema ottaa jokaisesta vaihejohtimesta yhtä suuren virran, ja vaihejännite on $230\\,\\text{V}$. Kuinka suuri latausvirta yhdessä vaihejohtimessa vähintään tarvitaan, kun virta pidetään koko yön vakiona?",
+      "answer": 7.156915,
+      "unit": "A",
+      "tolerance": 0.02
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Palanut $10\\,\\text{A}$:n sulake korvataan $16\\,\\text{A}$:n sulakkeella. Miksi se on vaarallista, vaikka sähköt toimivat?",
+    "a": "Ryhmäjohto on mitoitettu $10\\,\\text{A}$:n virralle. Suurempi sulake päästää läpi jopa $16\\,\\text{A}$:n virran. Silloin johtimien lämpöteho $P = RI^2$ on $(16 : 10)^2 \\approx 2{,}6$-kertainen. Johto ja liitokset voivat kuumentua, eriste voi vaurioitua ja voi syttyä tulipalo."
+  },
+  {
+    "q": "Saako maallikko Suomessa asentaa seinään uuden pistorasian? Mainitse kaksi sähkötyötä, jotka maallikko saa tehdä itse. Maallikko on henkilö, jolla ei ole sähköalan ammattitutkintoa.",
+    "a": "Ei saa: sähköasennustyöt kuuluvat sähköalan ammattilaisille. Maallikko saa esimerkiksi vaihtaa sulakkeen ja lampun, palauttaa lauenneen johdonsuojakatkaisijan tai vikavirtasuojan ja korjata jatkojohdon. Ajantasainen luettelo on Tukesin verkkosivuilla."
+  }
+]

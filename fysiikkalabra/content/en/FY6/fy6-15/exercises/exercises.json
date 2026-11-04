@@ -1,0 +1,105 @@
+{
+  "level1": [
+    {
+      "id": "fy6-15-L1-01",
+      "level": 1,
+      "text": "The heating power of a fan heater is $1500\\,\\text{W}$, and it is plugged into a $230\\,\\text{V}$ socket. How large a current does the heater draw?",
+      "answer": 6.521739,
+      "unit": "A",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-15-L1-02",
+      "level": 1,
+      "text": "The circuit cable of a home is protected by a $10\\,\\text{A}$ fuse, and the mains voltage is $230\\,\\text{V}$. How large may the total power of the devices on the circuit be at most so that the rated current of the fuse is not exceeded? Answer in watts.",
+      "answer": 2300.0,
+      "unit": "W",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-15-L1-03",
+      "level": 1,
+      "text": "A person touches the live frame of a faulty device with wet hands. The touch voltage is $230\\,\\text{V}$, and the resistance of the whole current path is $2.3\\,\\text{k}\\Omega$. How large a current flows through the body? Answer in milliamperes.",
+      "answer": 100.0,
+      "unit": "mA",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-15-L1-04",
+      "level": 1,
+      "text": "When a person has dry hands and rubber-soled shoes on a dry floor, the resistance of the whole current path is $50\\,\\text{k}\\Omega$. How large a current flows through the body if they touch a part whose voltage relative to the ground is $230\\,\\text{V}$? Answer in milliamperes.",
+      "answer": 4.6,
+      "unit": "mA",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-15-L1-05",
+      "level": 1,
+      "text": "The total resistance of the two conductors of an extension cord is $0.20\\,\\Omega$, and a current of $16\\,\\text{A}$ flows in the cord. How large a thermal power is produced in the extension cord?",
+      "answer": 51.2,
+      "unit": "W",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy6-15-L2-01",
+      "level": 2,
+      "text": "A kitchen socket circuit is protected by a $16\\,\\text{A}$ fuse, and the mains voltage is $230\\,\\text{V}$. A kettle ($2000\\,\\text{W}$) and a microwave oven with an input power of $1200\\,\\text{W}$ are on in the circuit. How much more power can still be connected to the circuit before the rated current of the fuse is exceeded?",
+      "answer": 480.0,
+      "unit": "W",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-15-L2-02",
+      "level": 2,
+      "text": "An electric heater ($2000\\,\\text{W}$, $230\\,\\text{V}$) is connected to a long extension cord whose conductors have a total resistance of $0.30\\,\\Omega$. Assume that the current of the heater is the same as when it is connected directly to the socket. How large a thermal power is produced in the extension cord?",
+      "answer": 22.68431,
+      "unit": "W",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-15-L2-03",
+      "level": 2,
+      "text": "The greatest voltage between a conductor of a power line and an earthed pole is $90\\,\\text{kV}$. The dielectric strength of air is $3.0\\,\\text{MV/m}$. How long an air gap between the conductor and the pole is needed at least so that the air does not break down, when the field in between is taken as uniform? Calculate the lower limit given by the calculation. Answer in centimetres.",
+      "answer": 3.0,
+      "unit": "cm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-15-L2-04",
+      "level": 2,
+      "text": "In a bathroom the resistance of the current path of a wet person can be as low as $1.5\\,\\text{k}\\Omega$. How large may the touch voltage be at most so that the current through the body stays below the let-go threshold $10\\,\\text{mA}$?",
+      "answer": 15.0,
+      "unit": "V",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy6-15-L3-01",
+      "level": 3,
+      "text": "A circuit cable is dimensioned for a $10\\,\\text{A}$ fuse, and the total resistance of its conductors is $0.50\\,\\Omega$. A resident replaces a blown fuse without permission with a $25\\,\\text{A}$ fuse and connects devices that draw a total current of $22\\,\\text{A}$. How many times as large is the thermal power produced in the conductors compared with the power produced in them at a current of $10\\,\\text{A}$?",
+      "answer": 4.84,
+      "unit": "times",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-15-L3-02",
+      "level": 3,
+      "text": "A person touches the frame of a faulty device whose voltage relative to the ground is $230\\,\\text{V}$. The resistance of the body from hand to feet is $1.5\\,\\text{k}\\Omega$, but they wear undamaged, dry rubber-soled shoes, and the resistance of the shoes and the dry floor together is $100\\,\\text{k}\\Omega$. They do not touch anything else earthed at the same time. How large a current flows through the body? Answer in milliamperes.",
+      "answer": 2.26601,
+      "unit": "mA",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-15-L3-03",
+      "level": 3,
+      "text": "The graph shows the potential of the ground around a conductor that has fallen to the ground, in a calculated model. A person stands with their feet $1.0\\,\\text{m}$ apart directly away from the point of contact: the nearer foot is at a distance of $2.0\\,\\text{m}$ and the farther at $3.0\\,\\text{m}$. The resistance of the current path from one foot to the other, shoes included, is $4.0\\,\\text{k}\\Omega$. Read the needed values from the graph. How large a current flows from one foot to the other? Answer in milliamperes.",
+      "figure": "fy6-15/ex-askel",
+      "answer": 50.0,
+      "unit": "mA",
+      "tolerance": 0.02
+    }
+  ]
+}

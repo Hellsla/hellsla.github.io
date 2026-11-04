@@ -1,0 +1,22 @@
+{
+  "id": "fy6-12",
+  "course": "FY6",
+  "title": "Potential energy and potential in an electric field",
+  "goals": [
+    "LOPS FY6: potential energy and potential in a uniform electric field",
+    "LOPS FY6: can use the concepts of field and potential to describe an electric field"
+  ],
+  "prerequisites": [
+    "fy6-11"
+  ],
+  "glossary": [
+    "potentiaali",
+    "potentiaaliero",
+    "potentiaalienergia",
+    "elektronivoltti",
+    "tasapotentiaalipinta"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

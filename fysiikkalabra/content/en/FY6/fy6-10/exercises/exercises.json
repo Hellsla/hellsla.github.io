@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy6-10-L1-01",
+      "level": 1,
+      "text": "The charge of a comb rubbed on hair is $-6.4\\,\\text{nC}$. How many extra electrons does the comb have? The elementary charge is $e = 1.602 \\cdot 10^{-19}\\,\\text{C}$.",
+      "answer": 39950000000.0,
+      "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-10-L1-02",
+      "level": 1,
+      "text": "The charges of two small spheres are $+15\\,\\text{nC}$ and $+25\\,\\text{nC}$, and the distance between the centres of the spheres is $4.0\\,\\text{cm}$. How large is the electric force between the spheres? Give the answer in millinewtons.",
+      "answer": 2.107,
+      "unit": "mN",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-10-L1-03",
+      "level": 1,
+      "text": "In lightning, a charge of $5.0\\,\\text{C}$ moves between a thundercloud and the ground in a time of $0.20\\,\\text{ms}$. How large is the average electric current? Give the answer in kiloamperes.",
+      "answer": 25,
+      "unit": "kA",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-10-L1-04",
+      "level": 1,
+      "text": "The charges of two identical metal spheres are $+12\\,\\text{nC}$ and $-4.0\\,\\text{nC}$. The spheres are touched together and separated. How large is the charge of each sphere after the contact? Give the answer in nanocoulombs.",
+      "answer": 4.0,
+      "unit": "nC",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-10-L1-05",
+      "level": 1,
+      "text": "Two point charges, $+2.0\\,\\mu\\text{C}$ and $-4.0\\,\\mu\\text{C}$, are $0.50\\,\\text{m}$ apart. How large is the electric force between them?",
+      "answer": 0.2876,
+      "unit": "N",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy6-10-L2-01",
+      "level": 2,
+      "text": "Two small spheres, each with a charge of $+30\\,\\text{nC}$, repel each other with a force of $2.0\\,\\text{mN}$. How far apart are the centres of the spheres? Give the answer in centimetres.",
+      "answer": 6.36,
+      "unit": "cm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-10-L2-02",
+      "level": 2,
+      "text": "When the distance between the centres of two charged spheres is $4.0\\,\\text{cm}$, the force between them is $3.6\\,\\text{mN}$. The spheres are moved to a distance of $10\\,\\text{cm}$ from each other, and their charges stay the same. How large is the force now? Give the answer in millinewtons.",
+      "answer": 0.576,
+      "unit": "mN",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-10-L2-03",
+      "level": 2,
+      "text": "The charges of two identical metal spheres are $+18\\,\\text{nC}$ and $-6.0\\,\\text{nC}$. The spheres are touched together and separated so that the distance between their centres is $4.0\\,\\text{cm}$. How large is the force between the spheres now? Give the answer in millinewtons.",
+      "answer": 0.2022,
+      "unit": "mN",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-10-L2-04",
+      "level": 2,
+      "text": "Two identical small spheres each have a mass of $0.50\\,\\text{g}$, and they have equal charges. The distance between the centres of the spheres is $5.0\\,\\text{cm}$. How large is the charge on the spheres when the electric force between them is equal to the weight of a sphere? Give the answer in nanocoulombs.",
+      "answer": 36.94,
+      "unit": "nC",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy6-10-L3-01",
+      "level": 3,
+      "text": "A point charge $q_1 = +20\\,\\text{nC}$ is at $x = 0$ and a point charge $q_2 = -20\\,\\text{nC}$ at $x = 10\\,\\text{cm}$. A point charge $q_3 = +5.0\\,\\text{nC}$ is brought to the midpoint between them, to $x = 5.0\\,\\text{cm}$. How large is the net force on the charge $q_3$? Give the answer in millinewtons.",
+      "answer": 0.719,
+      "unit": "mN",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-10-L3-02",
+      "level": 3,
+      "text": "In a hydrogen atom, the electron and the proton attract each other with both an electric force and a gravitational force $F_\\text{g} = G\\,\\tfrac{m_\\text{e} m_\\text{p}}{r^2}$, where $G = 6.674 \\cdot 10^{-11}\\,\\tfrac{\\text{N} \\cdot \\text{m}^2}{\\text{kg}^2}$. The mass of the electron is $m_\\text{e} = 9.109 \\cdot 10^{-31}\\,\\text{kg}$ and that of the proton $m_\\text{p} = 1.673 \\cdot 10^{-27}\\,\\text{kg}$. How many times larger is the electric force than the gravitational force? Also explain why the answer does not depend on the distance.",
+      "answer": 2.268e+39,
+      "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-10-L3-03",
+      "level": 3,
+      "text": "A point charge $+4.0\\,\\text{nC}$ is at $x = 0$ and a point charge $+1.0\\,\\text{nC}$ at $x = 12\\,\\text{cm}$. A third point charge is brought to a point on the $x$-axis between them. At which point is there no net force on the third charge? Give the answer in centimetres from the point $x = 0$.",
+      "answer": 8.0,
+      "unit": "cm",
+      "tolerance": 0.02
+    }
+  ]
+}

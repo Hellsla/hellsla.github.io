@@ -1,0 +1,24 @@
+{
+  "id": "fy6-13",
+  "course": "FY6",
+  "title": "Kondensaattori ja sen energia",
+  "goals": [
+    "LOPS FY6: kondensaattori ja kondensaattorin energia",
+    "Täsmennys: levykondensaattorin rakenne; eristeaineen vaikutus kapasitanssiin varauksen, jännitteen ja energian kautta; kondensaattorien kytkennät eivät kuulu keskeisiin sisältöihin",
+    "Täsmennys: varaus- ja purkautumiskäyrä vain kvalitatiivisesti",
+    "LOPS FY6: sähköturvallisuus: läpilyöntilujuus"
+  ],
+  "prerequisites": [
+    "fy6-12"
+  ],
+  "glossary": [
+    "kondensaattori",
+    "kapasitanssi",
+    "eriste",
+    "kondensaattorin energia",
+    "läpilyöntilujuus"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

@@ -1,0 +1,10 @@
+[
+  {
+    "q": "An electron moves from a point whose potential is $20\\,\\text{V}$ to a point whose potential is $70\\,\\text{V}$. Does its potential energy increase or decrease, and by how much in electronvolts?",
+    "a": "The potential energy of the electron is $-eV$, so it decreases when the potential increases: the change is $-e \\cdot (70\\,\\text{V} - 20\\,\\text{V}) = -50\\,\\text{eV}$."
+  },
+  {
+    "q": "How much is $3.0\\,\\text{keV}$ in joules?",
+    "a": "$3.0\\,\\text{keV} = 3000 \\cdot 1.602 \\cdot 10^{-19}\\,\\text{J} = 4.8 \\cdot 10^{-16}\\,\\text{J}$."
+  }
+]

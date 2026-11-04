@@ -1,0 +1,105 @@
+{
+  "level1": [
+    {
+      "id": "fy6-12-L1-01",
+      "level": 1,
+      "text": "Protoni kulkee kahden levyn välissä positiiviselta levyltä negatiiviselle. Levyjen välinen jännite on $240\\,\\text{V}$. Kuinka suuren työn sähkökenttä tekee protoniin? Alkeisvaraus on $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$. Vastaa jouleina.",
+      "answer": 3.8448e-17,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-12-L1-02",
+      "level": 1,
+      "text": "Pienen pallon varaus on $+3{,}0\\,\\text{nC}$, ja se on sähkökentän kohdassa, jonka potentiaali on $120\\,\\text{V}$ nollakohtaan nähden. Kuinka suuri on pallon sähköinen potentiaalienergia? Vastaa mikrojouleina.",
+      "answer": 0.36,
+      "unit": "µJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-12-L1-03",
+      "level": 1,
+      "text": "Revontulia synnyttävän elektronin liike-energia on $5{,}0\\,\\text{keV}$. Kuinka suuri liike-energia on jouleina? Alkeisvaraus on $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$.",
+      "answer": 8.01e-16,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-12-L1-04",
+      "level": 1,
+      "text": "Varaus $4{,}0\\,\\mu\\text{C}$ siirtyy sähkökentässä kohdasta $A$, jonka potentiaali on $60\\,\\text{V}$, kohtaan $B$, jonka potentiaali on $15\\,\\text{V}$. Kuinka suuren työn sähkökenttä tekee varaukseen? Vastaa millijouleina.",
+      "answer": 0.18,
+      "unit": "mJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-12-L1-05",
+      "level": 1,
+      "text": "Kuvaajassa on kahden yhdensuuntaisen levyn välisen homogeenisen kentän potentiaali, kun $x$ on etäisyys negatiivisesta levystä. Protoni siirtyy kohdasta $x = 4{,}0\\,\\text{cm}$ kohtaan $x = 1{,}0\\,\\text{cm}$, ja siihen vaikuttaa vain sähköinen voima. Kuinka paljon protonin liike-energia kasvaa? Lue tarvittavat arvot kuvaajasta ja vastaa elektronivoltteina.",
+      "figure": "fy6-12/ex-vgraph",
+      "answer": 150.0,
+      "unit": "eV",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy6-12-L2-01",
+      "level": 2,
+      "text": "Homogeenisen sähkökentän voimakkuus on $2{,}5\\,\\text{kV/m}$. Protoni siirtyy kentässä $3{,}0\\,\\text{cm}$ kentän suuntaan. Kuinka paljon protonin potentiaalienergia muuttuu? Vastaa elektronivoltteina etumerkkeineen (negatiivinen, jos energia pienenee).",
+      "answer": -75.0,
+      "unit": "eV",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-12-L2-02",
+      "level": 2,
+      "text": "Kahden yhdensuuntaisen levyn väli on $2{,}0\\,\\text{cm}$, ja niiden välinen jännite on $300\\,\\text{V}$. Negatiivinen levy on nollakohta. Kohta $P$ on levyjen välissä $0{,}80\\,\\text{cm}$:n päässä negatiivisesta levystä. Kuinka suuri on kohdassa $P$ olevan elektronin potentiaalienergia? Vastaa elektronivoltteina etumerkkeineen.",
+      "answer": -120.0,
+      "unit": "eV",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-12-L2-03",
+      "level": 2,
+      "text": "Alfahiukkasen varaus on $+2e$ ja massa $6{,}645 \\cdot 10^{-27}\\,\\text{kg}$. Alfahiukkanen lähtee levosta ja kulkee $2{,}0\\,\\text{kV}$:n potentiaalieron läpi. Kuinka suuri on sen nopeus? Alkeisvaraus on $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$. Vastaa metreinä sekunnissa.",
+      "answer": 439166.0,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-12-L2-04",
+      "level": 2,
+      "text": "Elektronitykissä elektronit lähtevät levosta ja kiihdytetään jännitteellä. Kuinka suuri jännite tarvitaan, jotta elektronin nopeus on $1{,}0 \\cdot 10^{7}\\,\\text{m/s}$? Vastaa voltteina. Elektronin massa on $9{,}109 \\cdot 10^{-31}\\,\\text{kg}$. Alkeisvaraus on $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$.",
+      "answer": 284.301,
+      "unit": "V",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy6-12-L3-01",
+      "level": 3,
+      "text": "Elektroni kulkee kohdan $A$ kautta nopeudella $2{,}0 \\cdot 10^{6}\\,\\text{m/s}$. Kohdan $A$ potentiaali on $40\\,\\text{V}$. Elektroni jatkaa kohtaan $B$, jonka potentiaali on $160\\,\\text{V}$, ja siihen vaikuttaa vain sähköinen voima. Kuinka suuri on elektronin nopeus kohdassa $B$? Elektronin massa on $9{,}109 \\cdot 10^{-31}\\,\\text{kg}$. Alkeisvaraus on $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$.",
+      "answer": 6797710.0,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-12-L3-02",
+      "level": 3,
+      "text": "Elektroni ja protoni lähtevät levosta ja kulkevat kumpikin saman potentiaalieron läpi, kumpikin omaan suuntaansa. Kuinka monta kertaa suurempi on elektronin nopeus kuin protonin nopeus? Elektronin massa on $9{,}109 \\cdot 10^{-31}\\,\\text{kg}$ ja protonin massa $1{,}673 \\cdot 10^{-27}\\,\\text{kg}$.",
+      "answer": 42.8561,
+      "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-12-L3-03",
+      "level": 3,
+      "text": "Kahden yhdensuuntaisen levyn väli on $2{,}0\\,\\text{cm}$, ja niiden välinen jännite on $600\\,\\text{V}$. Protoni lähtee negatiivisen levyn reiästä kohti positiivista levyä nopeudella $3{,}0 \\cdot 10^{5}\\,\\text{m/s}$. Kuinka lähelle positiivista levyä protoni pääsee, ennen kuin se kääntyy takaisin? Protonin massa on $1{,}673 \\cdot 10^{-27}\\,\\text{kg}$. Alkeisvaraus on $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$. Vastaa millimetreinä.",
+      "answer": 4.33521,
+      "unit": "mm",
+      "tolerance": 0.02
+    }
+  ]
+}

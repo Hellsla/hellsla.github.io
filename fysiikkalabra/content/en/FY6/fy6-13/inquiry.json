@@ -1,0 +1,588 @@
+{
+  "version": 1,
+  "contribution": "The capacitor as two charged plates: capacitance as the ratio of charge to voltage, the structure of a parallel-plate capacitor and the effect of a dielectric, energy as the area under the (Q, U) graph, charging and discharging qualitatively, and dielectric strength; the model explains why a flash charges slowly and flashes quickly.",
+  "learn": [
+    "calculate the charge and capacitance of a capacitor, and the capacitance of a parallel-plate capacitor from its dimensions.",
+    "calculate the energy of a capacitor and explain how a dielectric changes the charge, the voltage and the energy.",
+    "describe the charging and discharging of a capacitor and estimate the maximum allowed voltage from the dielectric strength."
+  ],
+  "prior": [
+    "The strength of a uniform electric field between plates is $E = \\tfrac{U}{d}$ (chapter *Uniform electric field*)",
+    "When a charge $Q$ moves across a voltage $U$, its energy changes by $QU$ (chapter *Potential energy and potential in an electric field*)",
+    "Electric current is the movement of charge, and power is energy per unit of time (chapter *Electric power and heating of a resistor*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "A camera has two ordinary AA batteries. After a flash picture has been taken, the camera shows for a few seconds that the flash is charging. The flash itself lasts about a millisecond, and it is so bright that it lights up the whole room. The batteries could not deliver that much power directly.",
+      "question": "Where is the energy for the flash collected, and why does collecting it take seconds but releasing it only a millisecond?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Review: the field between plates",
+      "optional": true,
+      "prompt": "The voltage between two parallel metal plates is $300\\,\\text{V}$, and the distance between the plates is $2.0\\,\\text{mm}$. How strong is the electric field between the plates?",
+      "choices": [
+        {
+          "text": "$150\\,\\text{kV/m}$",
+          "correct": true,
+          "feedback": "Correct. The strength of a uniform field is $E = \\tfrac{U}{d} = 300\\,\\text{V} : 0.0020\\,\\text{m} = 150\\,000\\,\\text{V/m}$ (chapter *Uniform electric field*). Today a capacitor is made from plates like these."
+        },
+        {
+          "text": "$150\\,\\text{V/m}$",
+          "feedback": "You divided the voltage by the distance in millimetres. The unit of the field is $\\text{V/m}$, so the distance is converted to metres: $2.0\\,\\text{mm} = 0.0020\\,\\text{m}$, and $E = 300\\,\\text{V} : 0.0020\\,\\text{m} = 150\\,\\text{kV/m}$."
+        },
+        {
+          "text": "$0.60\\,\\text{V/m}$",
+          "feedback": "You multiplied the voltage by the distance. The field is the voltage per unit of distance, $E = \\tfrac{U}{d}$: the closer the plates are, the stronger the field at the same voltage. The correct value is $150\\,\\text{kV/m}$."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: the voltage doubles",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 3
+      },
+      "prompt": "A capacitor is connected to a voltage source whose voltage is $0.50\\,\\text{kV}$. The voltage of the source is raised to $1.0\\,\\text{kV}$, and the capacitor is not changed. How does the energy stored in the capacitor change?",
+      "choices": [
+        {
+          "text": "The energy doubles, because the voltage doubles.",
+          "feedback": "The values of the model contradict this: the energy grows from $11\\,\\mu\\text{J}$ to $44\\,\\mu\\text{J}$, that is, to four times as much. When the voltage doubles, the charge also doubles, and the energy $\\tfrac{1}{2} Q U$ is their product."
+        },
+        {
+          "text": "The energy becomes four times as large, because both the charge and the voltage double.",
+          "correct": true,
+          "feedback": "The values of the model support this: the charge grows from $44\\,\\text{nC}$ to $89\\,\\text{nC}$ and the energy from $11\\,\\mu\\text{J}$ to $44\\,\\mu\\text{J}$. The energy $\\tfrac{1}{2} Q U$ is the product of the charge and the voltage, and both double."
+        },
+        {
+          "text": "The energy stays the same, because the capacitor does not change.",
+          "feedback": "The capacitor stays the same, but in the model the energy grows from $11\\,\\mu\\text{J}$ to $44\\,\\mu\\text{J}$. A greater voltage brings more charge to the plates, and each charge moves across a greater voltage."
+        },
+        {
+          "text": "The energy halves, because a greater voltage discharges the capacitor faster.",
+          "feedback": "A connected capacitor does not discharge; the source charges it further: in the model the charge doubles and the energy grows from $11\\,\\mu\\text{J}$ to $44\\,\\mu\\text{J}$."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: a dielectric in a disconnected capacitor",
+      "justify": true,
+      "reveal": {
+        "after": "koe-3",
+        "min": 2
+      },
+      "prompt": "A capacitor with air between the plates is charged to a voltage of $1.0\\,\\text{kV}$, and the source is disconnected. Then the space between the plates is filled with glass. Capacitance tells how much charge the capacitor takes per unit of voltage. How does the voltage between the plates change?",
+      "choices": [
+        {
+          "text": "The voltage decreases, because the charge stays the same but the capacitance increases.",
+          "correct": true,
+          "feedback": "The values of the model support this: the charge stays at $89\\,\\text{nC}$, and the voltage drops from $1.0\\,\\text{kV}$ to about $0.18\\,\\text{kV}$. The glass becomes polarised and weakens the field, so $U = \\tfrac{Q}{C}$ decreases."
+        },
+        {
+          "text": "The voltage stays at $1.0\\,\\text{kV}$, because the capacitor was charged to that voltage.",
+          "feedback": "The voltage would stay the same only if the source were still connected. In a disconnected capacitor the charge stays the same, and in the model the voltage drops to about $0.18\\,\\text{kV}$ when the capacitance grows because of the glass."
+        },
+        {
+          "text": "The voltage increases, because the glass increases the capacitance and the capacitor can hold more.",
+          "feedback": "The glass increases the capacitance, but no more charge comes to a disconnected capacitor. In the model the voltage $U = \\tfrac{Q}{C}$ drops from $1.0\\,\\text{kV}$ to about $0.18\\,\\text{kV}$."
+        },
+        {
+          "text": "The voltage disappears completely, because glass is an insulator and cuts off the field.",
+          "feedback": "A dielectric weakens the field but does not remove it. In the model the voltage drops to about $0.18\\,\\text{kV}$, that is, to $5.6$ times smaller, like the relative permittivity of glass."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Change the distance and the area of the plates, the voltage of the source and the dielectric. Disconnect the source and see what stays the same.",
+      "howto": "Set the *distance of the plates* $d$, the *area of the plate* $A$ and the *voltage of the source* $U_0$ with the sliders, and the *dielectric* and the *source* from the menus. When the source is *connected*, the voltage of the capacitor is the voltage of the source. When you choose *disconnected*, the switch opens and the charge of the plates stays the same as it was at the moment of disconnecting; the slider for the voltage of the source then has no effect. The red circles are positive and the blue ones negative charges, and their number describes the charge per area. The density of the green field lines describes the strength of the field. The straight line of the graph is $U = \\tfrac{Q}{C}$, and the area of the orange triangle is the energy. A spark between the plates means a dielectric breakdown.",
+      "model": "The plates are parallel, and the distance between them is small compared with the size of the plates, so the field is uniform and the effect of the edges is ignored. The dielectric fills the space between the plates completely. The relative permittivities and the dielectric strengths of the dielectrics are rounded table values: air $1.0$ and $3\\,\\text{MV/m}$, Teflon $2.1$ and $60\\,\\text{MV/m}$, paper $3.7$ and $16\\,\\text{MV/m}$, glass $5.6$ and $14\\,\\text{MV/m}$. Charging and discharging happen immediately in the model, so the picture always shows the final state. A disconnected capacitor does not leak, but in a breakdown it discharges. The numbers are values calculated by the model, not measurements.",
+      "calc": "The capacitance is calculated from the formula of a parallel-plate capacitor\n\n$$C = \\frac{\\varepsilon_0 \\varepsilon_\\text{r} A}{d}$$\n\nwhere $\\varepsilon_0 = 8.854 \\cdot 10^{-12}\\,\\text{F/m}$. When the source is connected, $U = U_0$ and $Q = C U_0$. At the moment of disconnecting, the charge is kept, and after that the voltage is $U = \\tfrac{Q}{C}$. The field is $E = \\tfrac{U}{d}$, and the energy is $W = \\tfrac{1}{2} Q U$. A breakdown happens when $E$ exceeds the dielectric strength $E_\\text{max}$ of the dielectric. The units fit together: $\\text{pF} \\cdot \\text{kV} = \\text{nC}$, $\\text{nC} \\cdot \\text{kV} = \\mu\\text{J}$ and $\\text{kV} : \\text{mm} = \\text{MV/m}$."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 1: charge and energy as a function of voltage",
+      "intro": "Test prediction 1. The source is connected, and the distance of the plates, the area and the dielectric stay constant; change only the voltage of the source. Record the charge and the energy at at least three voltages, for example $0.5$, $1.0$, $1.5$ and $2.0\\,\\text{kV}$. Also calculate $Q : U$ for each row. What do you notice?",
+      "initial": {
+        "A": 200,
+        "d": 2,
+        "eriste": "ilma",
+        "lahde": "kytketty",
+        "U0": 0.5
+      },
+      "locked": [
+        "A",
+        "d",
+        "eriste",
+        "lahde"
+      ],
+      "vary": "U0",
+      "names": {
+        "U0": "voltage of the source",
+        "A": "area of the plate",
+        "d": "distance of the plates",
+        "eriste": "dielectric",
+        "lahde": "source"
+      },
+      "units": {
+        "U0": "kV",
+        "A": "cm²",
+        "d": "mm"
+      },
+      "values": {
+        "eriste": {
+          "ilma": "air",
+          "teflon": "Teflon",
+          "paperi": "paper",
+          "lasi": "glass"
+        },
+        "lahde": {
+          "kytketty": "connected",
+          "irrotettu": "disconnected"
+        }
+      },
+      "measure": [
+        {
+          "key": "Q",
+          "label": "Q (nC)"
+        },
+        {
+          "key": "W",
+          "label": "W (µJ)"
+        }
+      ],
+      "min": 3
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 2: the distance of the plates",
+      "intro": "The source is connected, and its voltage is $1.0\\,\\text{kV}$. The area and the dielectric stay constant; change only the distance of the plates. Record the capacitance, the charge and the strength of the field at at least three distances, for example $1.0$, $2.0$, $4.0$ and $8.0\\,\\text{mm}$. How does the capacitance depend on the distance?",
+      "initial": {
+        "A": 200,
+        "eriste": "ilma",
+        "lahde": "kytketty",
+        "U0": 1,
+        "d": 1
+      },
+      "locked": [
+        "A",
+        "eriste",
+        "lahde",
+        "U0"
+      ],
+      "vary": "d",
+      "names": {
+        "U0": "voltage of the source",
+        "A": "area of the plate",
+        "d": "distance of the plates",
+        "eriste": "dielectric",
+        "lahde": "source"
+      },
+      "units": {
+        "U0": "kV",
+        "A": "cm²",
+        "d": "mm"
+      },
+      "values": {
+        "eriste": {
+          "ilma": "air",
+          "teflon": "Teflon",
+          "paperi": "paper",
+          "lasi": "glass"
+        },
+        "lahde": {
+          "kytketty": "connected",
+          "irrotettu": "disconnected"
+        }
+      },
+      "measure": [
+        {
+          "key": "C",
+          "label": "C (pF)"
+        },
+        {
+          "key": "Q",
+          "label": "Q (nC)"
+        },
+        {
+          "key": "E",
+          "label": "E (MV/m)"
+        }
+      ],
+      "min": 3
+    },
+    {
+      "id": "koe-3",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 3: a dielectric in a disconnected capacitor",
+      "intro": "Test prediction 2. The capacitor is charged to $1.0\\,\\text{kV}$ with air between the plates, and the source is disconnected. The distance and the area stay constant; change only the dielectric. Record the charge, the voltage and the energy with at least two dielectrics. What stays the same, and what changes?",
+      "initial": {
+        "A": 200,
+        "d": 2,
+        "U0": 1,
+        "eriste": "ilma",
+        "lahde": "irrotettu"
+      },
+      "locked": [
+        "A",
+        "d",
+        "U0",
+        "lahde"
+      ],
+      "vary": "eriste",
+      "names": {
+        "U0": "voltage of the source",
+        "A": "area of the plate",
+        "d": "distance of the plates",
+        "eriste": "dielectric",
+        "lahde": "source"
+      },
+      "units": {
+        "U0": "kV",
+        "A": "cm²",
+        "d": "mm"
+      },
+      "values": {
+        "eriste": {
+          "ilma": "air",
+          "teflon": "Teflon",
+          "paperi": "paper",
+          "lasi": "glass"
+        },
+        "lahde": {
+          "kytketty": "connected",
+          "irrotettu": "disconnected"
+        }
+      },
+      "measure": [
+        {
+          "key": "Q",
+          "label": "Q (nC)"
+        },
+        {
+          "key": "U",
+          "label": "U (kV)"
+        },
+        {
+          "key": "W",
+          "label": "W (µJ)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "koe-4",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 4: a dielectric when the source is connected",
+      "optional": true,
+      "intro": "Repeat experiment 3 so that the source stays connected at a voltage of $1.0\\,\\text{kV}$. Change only the dielectric, and record the charge, the voltage and the energy. Compare the results with experiment 3: what stays the same now?",
+      "initial": {
+        "A": 200,
+        "d": 2,
+        "U0": 1,
+        "eriste": "ilma",
+        "lahde": "kytketty"
+      },
+      "locked": [
+        "A",
+        "d",
+        "U0",
+        "lahde"
+      ],
+      "vary": "eriste",
+      "names": {
+        "U0": "voltage of the source",
+        "A": "area of the plate",
+        "d": "distance of the plates",
+        "eriste": "dielectric",
+        "lahde": "source"
+      },
+      "units": {
+        "U0": "kV",
+        "A": "cm²",
+        "d": "mm"
+      },
+      "values": {
+        "eriste": {
+          "ilma": "air",
+          "teflon": "Teflon",
+          "paperi": "paper",
+          "lasi": "glass"
+        },
+        "lahde": {
+          "kytketty": "connected",
+          "irrotettu": "disconnected"
+        }
+      },
+      "measure": [
+        {
+          "key": "Q",
+          "label": "Q (nC)"
+        },
+        {
+          "key": "U",
+          "label": "U (kV)"
+        },
+        {
+          "key": "W",
+          "label": "W (µJ)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "koe-5",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 5: breakdown in air",
+      "intro": "There is air between the plates over a distance of $1.0\\,\\text{mm}$, and the source is connected. Raise the voltage of the source gradually and record the strength of the field. At what voltage does the breakdown happen, and what is the strength of the field then?",
+      "initial": {
+        "A": 200,
+        "d": 1,
+        "eriste": "ilma",
+        "lahde": "kytketty",
+        "U0": 2
+      },
+      "locked": [
+        "A",
+        "d",
+        "eriste",
+        "lahde"
+      ],
+      "vary": "U0",
+      "names": {
+        "U0": "voltage of the source",
+        "A": "area of the plate",
+        "d": "distance of the plates",
+        "eriste": "dielectric",
+        "lahde": "source"
+      },
+      "units": {
+        "U0": "kV",
+        "A": "cm²",
+        "d": "mm"
+      },
+      "values": {
+        "eriste": {
+          "ilma": "air",
+          "teflon": "Teflon",
+          "paperi": "paper",
+          "lasi": "glass"
+        },
+        "lahde": {
+          "kytketty": "connected",
+          "irrotettu": "disconnected"
+        }
+      },
+      "measure": [
+        {
+          "key": "E",
+          "label": "E (MV/m)"
+        },
+        {
+          "key": "lapilyonti",
+          "label": "breakdown (1 = yes)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion: what determines the charge and the energy?",
+      "after": [
+        "koe-1",
+        "koe-2",
+        "koe-3"
+      ],
+      "prompt": "Write on the basis of your tables: how did the charge and the energy depend on the voltage, and how did the capacitance depend on the distance of the plates? What happened to the charge, the voltage and the energy when a dielectric was added to a disconnected capacitor?",
+      "model": "In experiment 1 the charge grew in the same proportion as the voltage: $Q : U$ was about $88.5\\,\\text{nC/kV}$ in every row, that is, the capacitance was $88.5\\,\\text{pF}$. The energy grew with the square of the voltage: a doubled voltage gave four times the energy, because $W = \\tfrac{1}{2} Q U$ and both $Q$ and $U$ doubled. In experiment 2 the capacitance halved when the distance doubled, so the capacitance is inversely proportional to the distance. In experiment 3 the charge stayed at $88.5\\,\\text{nC}$, because the charge of a disconnected capacitor cannot change. The dielectric increased the capacitance, so the voltage and the energy decreased: with glass the voltage was about $0.18\\,\\text{kV}$ and the energy about $7.9\\,\\mu\\text{J}$. The values are calculated by the model.",
+      "criteria": [
+        "The answer states with numbers from the table that $Q : U$ stayed constant, that is, the charge is proportional to the voltage.",
+        "The answer states that the energy became four times as large when the voltage doubled, and justifies this with the product of the charge and the voltage.",
+        "The answer states that the capacitance decreased as the distance of the plates increased.",
+        "The answer states that in a disconnected capacitor the charge stayed the same but the voltage and the energy decreased because of the dielectric."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Return to your predictions",
+      "optional": true,
+      "prompt": "Compare your predictions with the values of the model in the experiments and with the formula $W = \\tfrac{1}{2} Q U$. Then return to the opening question: where is the energy of the flash collected, and why is it released so much faster than it is collected?",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2"
+      ]
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the error",
+      "prompt": "The capacitance of a capacitor is $470\\,\\mu\\text{F}$, and it has been charged to a voltage of $12\\,\\text{V}$. A student calculates its energy like this:\n\n$$W = \\tfrac{1}{2} \\cdot 470 \\cdot (12)^2\\,\\text{J} = 33\\,840\\,\\text{J}$$\n\nWhere is the error?",
+      "choices": [
+        {
+          "text": "The capacitance has not been converted to farads: $470\\,\\mu\\text{F} = 470 \\cdot 10^{-6}\\,\\text{F}$, so the energy is about $0.034\\,\\text{J}$.",
+          "correct": true,
+          "feedback": "Correct. The capacitance is substituted into the formula in farads: $W = \\tfrac{1}{2} \\cdot 470 \\cdot 10^{-6}\\,\\text{F} \\cdot (12\\,\\text{V})^2 \\approx 0.034\\,\\text{J}$. The student's result is a million times too large, and over $30\\,\\text{kJ}$ would be an absurd amount in a small capacitor."
+        },
+        {
+          "text": "The factor $\\tfrac{1}{2}$ is unnecessary, because the source delivers the energy $QU$, so the energy is $67\\,680\\,\\text{J}$.",
+          "feedback": "In charging the source delivers the energy $QU$, but only half of it is stored in the capacitor; the other half becomes internal energy of the wires and resistors. The factor $\\tfrac{1}{2}$ belongs in the formula. The error is not converting the microfarads."
+        },
+        {
+          "text": "The voltage should not be squared, so the energy is $\\tfrac{1}{2} \\cdot 470 \\cdot 12\\,\\text{J} = 2820\\,\\text{J}$.",
+          "feedback": "The voltage is squared, because $W = \\tfrac{1}{2} Q U$ and $Q = CU$. Removing the square does not correct the error: the capacitance must be converted to farads, $470\\,\\mu\\text{F} = 470 \\cdot 10^{-6}\\,\\text{F}$."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply to a new situation",
+      "prompt": "An empty capacitor with a capacitance of $4.7\\,\\mu\\text{F}$ is charged through a resistor with a $9.0\\,\\text{V}$ battery until the current stops. How much energy becomes internal energy of the resistor and the wires during charging? Give the answer in microjoules.",
+      "answer": 190.35,
+      "unit": "µJ",
+      "tolerance": 0.02,
+      "hints": [
+        "How much energy does the battery deliver when the whole charge $Q$ moves across its voltage $U$? How much of it stays in the capacitor?",
+        "The energy delivered by the battery is $QU = CU^2$, and $\\tfrac{1}{2} C U^2$ is stored in the capacitor. The difference becomes internal energy.",
+        "The charge is $Q = 4.7 \\cdot 10^{-6}\\,\\text{F} \\cdot 9.0\\,\\text{V} = 42.3\\,\\mu\\text{C}$, and the energy of the battery is $42.3\\,\\mu\\text{C} \\cdot 9.0\\,\\text{V}$."
+      ],
+      "mistakes": [
+        {
+          "value": 380.7,
+          "feedback": "You calculated the whole energy delivered by the battery, $QU = 381\\,\\mu\\text{J}$. Half of it, $\\tfrac{1}{2} Q U$, stays in the capacitor, and only the rest becomes internal energy."
+        },
+        {
+          "value": 0,
+          "feedback": "Energy becomes internal energy because the charging current passes through the resistor. The battery delivers the energy $QU$, but only $\\tfrac{1}{2} Q U$ is stored in the capacitor."
+        },
+        {
+          "value": 42.3,
+          "feedback": "This is the charge of the capacitor in microcoulombs, $Q = CU$. The energy is obtained by multiplying the charge by the voltage: the battery delivers $QU$, and half of it becomes internal energy."
+        }
+      ],
+      "solution": "**Given:** capacitance $C = 4.7\\,\\mu\\text{F}$, voltage of the battery $U = 9.0\\,\\text{V}$, the capacitor initially empty\n\n**Find:** the energy that becomes internal energy $W_\\text{int}$ in microjoules\n\n**Principle:** Energy is conserved. The battery moves the whole charge $Q$ across its voltage $U$, so it delivers the energy $QU$. The energy $\\tfrac{1}{2} Q U$ is stored in the capacitor, because its voltage grows during charging from zero to $U$. The rest becomes internal energy of the resistor and the wires.\n\n**Formula:** $Q = CU$ and $W_\\text{int} = QU - \\tfrac{1}{2} Q U$, from which $W_\\text{int} = \\tfrac{1}{2} C U^2$\n\n**Conversions:** $C = 4.7\\,\\mu\\text{F} = 4.7 \\cdot 10^{-6}\\,\\text{F}$\n\n**Substitution:** $W_\\text{int} = \\tfrac{1}{2} \\cdot 4.7 \\cdot 10^{-6}\\,\\text{F} \\cdot (9.0\\,\\text{V})^2 = 190.35 \\cdot 10^{-6}\\,\\text{J}$\n\n**Answer:** $190\\,\\mu\\text{J}$, that is, $1.9 \\cdot 10^{2}\\,\\mu\\text{J}$, two significant figures like the capacitance and the voltage.\n\n**Reasonableness:** The battery delivers $42.3\\,\\mu\\text{C} \\cdot 9.0\\,\\text{V} \\approx 381\\,\\mu\\text{J}$, and $190\\,\\mu\\text{J}$ stays in the capacitor. The energy balance works out: $190\\,\\mu\\text{J} + 190\\,\\mu\\text{J} \\approx 381\\,\\mu\\text{J}$. The size of the resistor was not needed: a greater resistance slows down the charging, but half still becomes internal energy."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise on three levels. Level 1 tasks calculate the capacitance, charge or energy with one formula, level 2 tasks use the dielectric strength, the formula of a parallel-plate capacitor and conversions, and level 3 requires reasoning about what stays the same when the source is connected or disconnected."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept",
+      "prompt": "A parallel-plate capacitor is connected to a voltage source. Which of the following increases the capacitance of the capacitor?",
+      "choices": [
+        {
+          "text": "Moving the plates closer to each other",
+          "correct": true,
+          "feedback": "Correct. The capacitance is $C = \\tfrac{\\varepsilon_0 \\varepsilon_\\text{r} A}{d}$, so it increases when the distance $d$ decreases. The same voltage then produces a stronger field, and the plates need more charge."
+        },
+        {
+          "text": "Increasing the voltage of the source",
+          "feedback": "A greater voltage brings a greater charge to the plates, but the ratio of the charge to the voltage, $C = \\tfrac{Q}{U}$, stays the same. The capacitance depends only on the structure: the area, the distance and the dielectric."
+        },
+        {
+          "text": "Using thicker metal plates while the space between the plates stays the same",
+          "feedback": "The charge is on the inner surfaces of the plates, and the thickness of the plates does not affect the field between them. The capacitance depends on the area $A$ of the plates, their distance $d$ and the dielectric."
+        },
+        {
+          "text": "Moving the plates further apart",
+          "feedback": "When the distance $d$ increases, the capacitance $C = \\tfrac{\\varepsilon_0 \\varepsilon_\\text{r} A}{d}$ decreases. The same voltage produces a weaker field, and the plates need less charge."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. The graph of charging",
+      "prompt": "An empty capacitor is charged with a battery through a resistor. Which describes the current of the circuit during charging correctly?",
+      "choices": [
+        {
+          "text": "The current is greatest at the very start and decreases gradually to zero.",
+          "correct": true,
+          "feedback": "Correct. At the start the voltage of the capacitor is zero, so the whole voltage of the battery is across the resistor and the current is greatest. As the voltage of the capacitor grows, the voltage of the resistor and the current decrease until the current stops."
+        },
+        {
+          "text": "The current is zero at first and grows steadily until the capacitor is full.",
+          "feedback": "At the start the voltage of an empty capacitor is zero, so only the resistor limits the current and the current is at its greatest. The current decreases as the voltage of the capacitor grows."
+        },
+        {
+          "text": "The current stays constant until the capacitor is full and then stops.",
+          "feedback": "The current does not stay constant, because the voltage of the capacitor grows throughout charging and the voltage of the resistor decreases with it. The current decreases gradually to zero."
+        },
+        {
+          "text": "No current passes at all, because there is an insulator between the plates.",
+          "feedback": "Charge does not pass through the dielectric, but a current passes in the wires when the battery moves electrons from one plate to the other. The current is greatest at the start and decreases to zero."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Explain the danger",
+      "optional": true,
+      "prompt": "The power supply of an old television has a capacitor with a capacitance of $220\\,\\mu\\text{F}$ and a voltage of $330\\,\\text{V}$. Explain why the capacitor can still be dangerous after the television has been disconnected from the mains, and how large its energy is.",
+      "model": "When the television is disconnected from the mains, there is no path between the plates of the capacitor along which the charge could move from one plate to the other, so the charge and the voltage are retained. The capacitor still has a voltage of $330\\,\\text{V}$, and its energy is $W = \\tfrac{1}{2} C U^2 = \\tfrac{1}{2} \\cdot 220 \\cdot 10^{-6}\\,\\text{F} \\cdot (330\\,\\text{V})^2 \\approx 12\\,\\text{J}$. If a person touches both terminals, the capacitor discharges through the person's body, and the current is greatest at the very start. Therefore an opened device is not touched until the capacitor has been discharged.",
+      "criteria": [
+        "The answer states that the charge and the voltage of a disconnected capacitor are retained, because the charge has no path from one plate to the other.",
+        "The answer calculates the energy with the formula $W = \\tfrac{1}{2} C U^2$ and gets about $12\\,\\text{J}$.",
+        "The answer states that on touching, the capacitor discharges through the body, and concludes that the capacitor must be discharged before the device is handled."
+      ]
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally two quick questions. Answer first yourself and open the answer only afterwards."
+    }
+  ]
+}
