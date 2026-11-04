@@ -1,12 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: ec25fa0cc4fb0fa3
+CONTENT-HASH: bc8bbdeca45b9de8
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
+(none)
+
+## Fixed
+(none needed: the English text matched fi in every number and was natural)
 
 ## Polish
-- L3-01 — "Two photographs are taken of a rope"; "snapshots" would tie it to the lesson's term, though "photographs" is clear.
+(none)
 
 ## Checked
-- Levels 1 (5), 2 (4), 3 (3) as in Finnish; core marks and the L2-01 (t, y) graph unchanged.
-- Task texts end with the question as their own sentence; L1-04 reworded to "The wave machine of an indoor wave pool makes waves …" (was "The machine of a swimming-pool wave pool").
-- Solutions sit behind Show the solution; capture contact-5 (#50–#60) shows the English solutions of levels 1–2 in full; level 3 checked from source.
+- Same sequence of Find/Principle/Model answer/Substitution/Answer/Reasonableness in solutions as fi; hints, error-analysis task (L2-06) and justification prompts preserved.
+- Language level: natural English, no Finnish left (grep).

@@ -92,7 +92,7 @@
         },
         {
           "text": "Aallonpituus pysyy samana, koska aallonpituuden määrää narun materiaali eikä käden liike",
-          "feedback": "Aallonpituuden ei määrää pelkkä naru. Narun määräämä on nopeus. Aallonpituus on $\\lambda = v/f$, joten se riippuu myös lähteen taajuudesta."
+          "feedback": "Aallonpituutta ei määrää pelkkä naru. Naru määrää nopeuden. Aallonpituus on $\\lambda = v/f$, joten se riippuu myös lähteen taajuudesta."
         },
         {
           "text": "Aallonpituus kaksinkertaistuu, koska tiheämpi heilutus venyttää aallon pidemmäksi",

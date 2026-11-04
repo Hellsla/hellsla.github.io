@@ -134,7 +134,7 @@ $$
 \frac{b}{\lambda} &= \frac{14.4\,\text{cm}}{1.8\,\text{cm}} = 8.0
 \end{aligned}
 $$
-**Answer:** a) $\lambda = 1.8\,\text{cm}$. b) the gap is $8.0$ times the wavelength in width, two significant figures like the frequency and the speed. c) The wave bends strongly when $\tfrac{b}{\lambda}$ is at most about $2$, and only a little when the ratio is clearly greater.
+**Answer:** a) $\lambda = 1.8\,\text{cm}$. b) the gap is $8.0$ times as wide as the wavelength, two significant figures like the frequency and the speed. c) The wave bends strongly when $\tfrac{b}{\lambda}$ is at most about $2$, and only a little when the ratio is clearly greater.
 **Reasonableness:** The ratios of the other gaps are $\tfrac{b}{\lambda} = 0.5$; $1.0$; $2.0$ and $4.0$. The wave spreads in every direction when $\tfrac{b}{\lambda} \leq 1$, bends clearly when the ratio is $2.0$, and bends only a little when the ratio is $4.0$ or greater. c) The ratios $0.5$; $1.0$; $2.0$; $4.0$ and $8.0$ correspond to the observations “in every direction”, “in every direction”, “spreads clearly”, “little bending” and “almost a straight beam”. The observations of the table thus follow the rule: the wider the gap is compared with the wavelength, the less the wave bends.
 
 ## fy5-11-L2-07
@@ -220,6 +220,6 @@ b) For FM radio
 $$
 \frac{b}{\lambda_\text{FM}} = \frac{600\,\text{m}}{3.00\,\text{m}} = 200
 $$
-**Answer:** the mountain is $2.0 \cdot 10^2$ times the width of the wavelength of FM, two significant figures like the width of the mountain.
+**Answer:** the mountain is $2.0 \cdot 10^2$ times as wide as the wavelength of FM radio, two significant figures like the width of the mountain.
 **c) Justification:** The wavelength of AM radio, $333\,\text{m}$, is of the same order as the width of the mountain, $\tfrac{b}{\lambda} = \tfrac{600\,\text{m}}{333\,\text{m}} = 1.8$, so diffraction is strong and the AM broadcast bends behind the mountain into the valley. The wavelength of FM radio is only $\tfrac{1}{200}$ of the width of the mountain and for digital TV $\tfrac{b}{\lambda} = \tfrac{600\,\text{m}}{0.500\,\text{m}} = 1200$, so their diffraction is weak: the waves travel almost straight, and a radio shadow remains behind the mountain. The wavelength of visible light, $550\,\text{nm} = 5.5 \cdot 10^{-7}\,\text{m}$, is still much shorter, $\tfrac{b}{\lambda} \approx 1 \cdot 10^9$, so light travels practically straight and does not bend behind the mountain.
 **Reasonableness:** The higher the frequency, the shorter the wavelength and the weaker the diffraction: $333\,\text{m} > 3.00\,\text{m} > 0.500\,\text{m} > 5.5 \cdot 10^{-7}\,\text{m}$. Check: $333\,\text{m} \cdot 9.00 \cdot 10^5\,\text{Hz} = 3.00 \cdot 10^8\,\text{m/s}$.
