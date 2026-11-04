@@ -1,21 +1,19 @@
-VERDICT: PASS
-CONTENT-HASH: 5154640e532cb66e
+VERDICT: FAIL
+CONTENT-HASH: 1cfcc22917415eec
 
 ## Blocking
-(none)
+- [Major] berkeley-cyclotron alt — says "kymmenkunta miestä seisoo ... ympärillä ja päällä"; the photo shows only two men standing at the left and right edges of the magnet — a screen-reader user gets a false picture — rewrite, e.g. "Mustavalkoinen valokuva vuodelta 1939: kaksi miestä seisoo suuren syklotronin sähkömagneetin ja tyhjiökammion vieressä tehdashallissa."
+- [Major] electron-beam-circle alt — says the beam glows "kahden suuren käämin välissä"; no coils are visible, only the glass bulb, a ruler strip and the electron gun — alt describes content absent from the image — e.g. "Pimeässä lasipallossa hehkuu sininen ympyränmuotoinen elektronisuihku; pallon edessä on mitta-asteikko ja alhaalla elektronitykki." (caption may keep the coil sentence, it is explanation, not description.)
+- [Major] aurora-levi alt — "alhaalla metsää ja valoja"; the photo shows treeless fell with a few pines and moss, no lights — e.g. "Leveä vihreä revontulivyö yötaivaalla, alhaalla tunturiylänkö ja yksittäisiä honkia." (Fix with the other two; all are one-line alt edits.)
 
 ## Polish
-- [Minor] lesson.md Ydinajatus, "Sähkökenttä kiihdyttää", last sentence — "Sähkökentällä varattu hiukkanen saadaan liikkeelle…" can be misread as "a particle charged by a field" — "Sähkökenttä saa varatun hiukkasen liikkeelle ja kasvattaa sen vauhtia."
-- [Minor] Display chain `qvB = mv²/r` over `r = mv/(qB)` (theory capture, Kaava) — the denominator r of the first fraction nearly touches the numerator of the second row — add row spacing, e.g. `\\[6pt]`.
-- [Minor] sim-390 and exp-koe-2-390 — canvas is about 290 px wide; the $\overline{v}$ and $\overline{F}$ labels at the slit crowd the particle, and in Koe 2 the brown E arrows fill the grid — acceptable, but a larger canvas on a phone would help.
-- [Minor] spectrometer figure — the arcs run through two B2 dots, and the 2r bracket does not say it belongs to the lighter ion — move the dots or label the bracket.
-- [Minor] circle-path figure — "B paperista ulos" sits close to the dot beneath it — shift it a few px up.
+- [Minor] electron-beam-circle caption — the ring is slightly tilted and the ruler crosses it; fine, optionally say "kuvassa näkyy myös mitta-asteikko".
 
 ## Checked
-- contact-1 and contact-6; top/intro-1280, sim-390, sim-1280, lab-1280-1, exp-koe-2-390-1
-- fig-2 (hero), fig-6 force-dir, fig-8 circle-path, fig-10 r-graph, fig-12 spectrometer, fig-20 track-sign at 390 px (field and force directions verified against the right-hand rule: all consistent)
-- theory-1280-1..4, example-390-1..2, stage-sovella-390-1, open-ennusta-1280-1, open-tarkista-1280-1..2, open-exit-1280
-- exercises seen through contact-6 (#62–#72) only; not read at full size
+- Delta, round 1: rendered preview/fy7-N.html myself with playwright at 390 and 1280 px, scrolled each lazy photo into view (all loaded, naturalWidth 1600, no horizontal overflow; photo sits in the side column at 1280 and column width at 390, credit line visible), opened the per-photo crops and the full-size sources.
+- aurora-levi, electron-beam-circle, berkeley-cyclotron at 390 and 1280 (context shot of the electron beam beside the magnetic-force text at 1280: layout good).
+- Captions accurate for physics: aurora, circular beam, 1939 60-inch cyclotron (public domain credit shown). Only the alts fail.
+- Hash unchanged at end.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 3

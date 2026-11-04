@@ -1,21 +1,12 @@
-VERDICT: PASS
-CONTENT-HASH: 20cc3b4af9d858d1
+VERDICT: FAIL
+CONTENT-HASH: a5ef0edf972a8ae9
 
 ## Blocking
-(none) Round-1 blocker re-checked: the experiment set-up lines (koe-1, koe-2) read fully in English ("particle: proton", "direction of the field: out of the page", "Kept constant", "Varied"); no untranslated Finnish token is visible on the page.
+- [Major] cyclotron photo (pics/fy7/berkeley-cyclotron.webp) alt text — the alt says "about ten men stand around and on top of the large electromagnet", but the image shows two men standing beside the machine and the beam chamber — a screen-reader user gets a wrong description (accessibility, accuracy) — rewrite the alt to match, e.g. "A black-and-white photograph from 1939: two men stand beside the large electromagnet and the vacuum chamber of a cyclotron."
 
 ## Polish
-- [Minor] Worked example step 5 (example-390-2, contact #19) — in the mass chain the continuation row starts with a bare "·" at the left margin, so it reads detached; break after the operator or keep the factor on the previous row.
-- [Minor] fig-12 (spectrometer) — the two semicircles run through the B2 dots, and the lighter/heavier labels sit close to the detector bar; shift the dots off the paths or the labels slightly left.
-- [Minor] fig-10 (r-graph) — the "B = 0.20 T" note sits against the y-axis arrow; move it right of the axis. The markers and lines are clearly distinct and the data are labelled as the radius at two speeds.
-- [Minor] sim-390 — the readout line "Press Launch." and the grid-square note are plain prose between the formulas; acceptable, but a thin separator would help scanning.
-- [Minor] Source headings carry Finnish ids in braces ("## Velocity selector and mass spectrometer {Nopeusvalitsin ja massaspektrometri}"); they are not shown on the page, so only noting it.
+- [Minor] cyclotron caption: "60–inch" shows an en dash in the rendered text; use a plain hyphen "60-inch".
+- [Minor] electron-beam alt says the bulb is "between two large coils"; the coils are not clearly visible in the crop (only a copper band) — say "inside a coil arrangement" or name what is seen.
 
 ## Checked
-- contact-1, -2 (triage); top/intro-1280, sim-390, fig-row/theory-1280-2 and -3, open-tarkista-1280-1.
-- fig-6 (force-dir, via contact-1), fig-8 (circle-path), fig-10 (r-graph), fig-12 (spectrometer), fig-20 (contact-2) at readable size or on sheet; hero in intro-1280.
-- example-390-2 (and -1/-3 on contact-2); exp-koe-1-390-1 and exp-koe-2-390-1 (blocker check).
-- Force directions in fig-6, fig-8 and fig-12 agree with the stated field direction and right-hand rule; colour convention (force red, velocity blue, E brown) consistent; no red KaTeX; units, colon division, decimal points correct.
-
-## Scores
-illustrations 4 · typography 4 · Finnish (English prose) 5 · accessibility 4
+batch delta review: rendered preview/en/fy7-2.html at 390 and 1280 px, opened all three unit-photo figures (aurora over Levi, electron-beam circle, cyclotron); aurora and electron-beam captions match; no overflow.
