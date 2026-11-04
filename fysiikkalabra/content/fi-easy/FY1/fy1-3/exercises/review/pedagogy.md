@@ -1,13 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 618d3d28a6fbd465
+CONTENT-HASH: 66a272c3a96649d3
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
+(none)
+
+## Fixed
+(none needed: the selkosuomi (fi-easy) text already matched fi in every number and was natural)
 
 ## Polish
-- None.
+(none)
 
 ## Checked
-- Delta review: the redundant "formula already solved" sentence was removed from the Formula step; each solution still has all seven steps in order and reads shorter and clearer.
-- Teaching sequence, levels (5/4/3), the figure task L1-03 and the reading-the-graph step are the same as in the reviewed Finnish source.
-- Language (plain Finnish): natural, short clear sentences as plain Finnish requires; tasks state what to give (unit, sign, micrometres) and do not give the answer away.
-- Reasonableness checks are real checks (backward check, interval, magnitude).
+- Structure of the translation matches fi: same hint-free tasks, same steps in Given/Find/Principle/Formula/Substitution/Answer/Reasonableness, same model answers for L2-07, L3-04 and L3-05.
+- Language level suits the course (selkosuomi (fi-easy)): terms (systematic error, random error, gross error, half of the range, consistent, uncertainty interval) are used consistently and explained where fi explains them.
+- No hints or answers added or removed compared with fi; feedback of L1-06 explains why each wrong option is wrong.

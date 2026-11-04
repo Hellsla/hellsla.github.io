@@ -65,7 +65,10 @@ for lang in i18n.languages():
     up_rows = re.findall(ROW, upcoming.group(1), re.S) if upcoming else []
     up = [c for _, c, _ in up_rows]
     expect(f"{lang}: the other modules are dimmed under Tulossa, linked to their pages", up == [c for c in curriculum if c not in want_left] and all(d for d, _, _ in up_rows), up)
-    expect(f"{lang}: Tulossa and the school's courses in the right column, under small headings",
+    if not [c for c in curriculum if c not in want_left]:  # every module published (teacher 2026-11-04: FY6–FY8 out of Tulossa)
+        expect(f"{lang}: no Tulossa heading when every module is published; the school's courses head the right column",
+               not upcoming and T("site.upcoming") not in home[home.find('class="mod-cols"'):] and re.search(r'<div class="mod-side">(<h3 class="mod-group mod-school"><img [^>]+></h3><ul class="mod-list local-list">|</div>)', home) is not None)
+    else: expect(f"{lang}: Tulossa and the school's courses in the right column, under small headings",
            bool(upcoming) and re.search(r'<div class="mod-side"><h3 class="mod-group">' + re.escape(T("site.upcoming")) + '</h3><ul class="mod-list up-list">', home) is not None)
     mods = {c: (r, curriculum[c]["title"]) for _, c, r in rows + up_rows}
     for li in re.findall(r"<li><a .*?</li>", home[home.find('class="mod-cols"'):], re.S):
@@ -100,19 +103,26 @@ for lang in i18n.languages():
            and f'<meta name="description" content="{_h.escape(T("site.home_description"))}">' in home)
     expect(f"{lang}: no sample lesson and no call to action on the front page",
            not re.search(r'class="(featured[^"]*|actions|button|quiet-link)"', home), re.findall(r'class="(featured[^"]*|actions|button|quiet-link)"', home)[:3])
-    intro = re.search(r'<section class="home-intro"[^>]*><h1 id="h-intro">(.*?)</h1><p class="lead">(.*?)</p></section>', home)
+    intro = re.search(r'<section class="home-intro"[^>]*><h1 id="h-intro">(.*?)</h1><p class="lead">(.*?)</p>(?:<img class="intro-school" [^>]+>)?</section>', home)
     expect(f"{lang}: the heading and one line under it, then the module list",
            bool(intro) and intro.group(1) == T("site.home_h1") and intro.group(2) == T("site.home_sub") and home.find('class="catalogue"') > intro.end())
     hdr = re.search(r'<header class="top">.*?</header>', home, re.S).group(0); ftr = re.search(r'<footer class="bottom">.*?</footer>', home, re.S).group(0)
     expect(f"{lang}: the header links Moduulit, Näin opiskelet and Lukuvinkit in that order",
            re.findall(r'<nav [^>]*><a class="nav-modules" href="index.html#moduulit">[^<]*</a><a class="nav-study" href="nain-opiskelet.html">([^<]*)</a><a class="nav-reading" href="lukuvinkit.html">', hdr) == [_h.escape(T("site.study"))], hdr[-400:])
-    expect(f"{lang}: the footer links Lukuvinkit and Sivustosta",
-           'href="tietoa.html"' in ftr and 'href="lukuvinkit.html"' in ftr, ftr)
+    expect(f"{lang}: the footer links Lukuvinkit, Sivustosta and Tietosuoja",
+           'href="tietoa.html"' in ftr and 'href="lukuvinkit.html"' in ftr and 'href="tietosuoja.html"' in ftr, ftr)
+    priv = (out / "tietosuoja.html").read_text() if (out / "tietosuoja.html").is_file() else ""
+    psrc = next((f for f in (ROOT / "content" / lang / "tietosuoja.md", ROOT / "content" / "fi" / "tietosuoja.md") if f.is_file()), None)
+    pheads = re.findall(r"^#+ (.+)$", psrc.read_text(), re.M) if psrc else []
+    expect(f"{lang}: Tietosuoja shows content/{lang}/tietosuoja.md with all its headings (teacher 2026-11-04)",
+           '<main class="reading privacy-page">' in priv and bool(pheads) and all(_h.escape(h) in priv for h in pheads), pheads)
+    expect(f"{lang}: no page sets a cookie (Tietosuoja says the site uses none)",
+           not [f.name for f in (ROOT / "templates").glob("*.js") if "document.cookie" in f.read_text(errors="ignore")])
     about = (out / "tietoa.html").read_text() if (out / "tietoa.html").is_file() else ""
     expect(f"{lang}: tietoa.html exists", bool(about))
     expect(f"{lang}: Sivustosta opens with Kiviruukin lukio's logo in the school's colours (teacher 2026-11-04)",
-           '<main class="reading about-page">' in about and (SITE / "brand/kiviruukin-lukio-valkoinen.svg").is_file()
-           and f'src="{"" if out == SITE else "../"}brand/kiviruukin-lukio-valkoinen.svg"' in about)
+           '<main class="reading about-page">' in about and (SITE / "brand/kiviruukin-lukio-oikea-valkoinen.svg").is_file()
+           and f'src="{"" if out == SITE else "../"}brand/kiviruukin-lukio-oikea-valkoinen.svg"' in about)
     leaks = sorted(str(f.relative_to(out)) for f in out.glob("*.html") if ('href="' + "../" * len(out.relative_to(ROOT.parent).parts) + 'index.html"') in f.read_text())
     expect(f"{lang}: no page links out of the site to the teacher's portfolio (teacher 2026-11-04)", not leaks, leaks[:5])
     expect(f"{lang}: the front page header links Sivustosta after Lukuvinkit",
@@ -131,8 +141,8 @@ for lang in i18n.languages():
     sec = re.search(r'<ul class="mod-list local-list">(.*?)</ul>', home, re.S)
     if local:
         school = next(iter(local.values()))["school"]
-        expect(f"{lang}: the school's courses under its name, after Tulossa",
-               bool(sec) and f'<h3 class="mod-group">{_h.escape(school)}</h3><ul class="mod-list local-list">' in home and home.find('class="mod-list up-list"') < sec.start(), sec and sec.start())
+        expect(f"{lang}: the school's courses under its logo (alt = its name), after Tulossa",
+               bool(sec) and re.search(r'<h3 class="mod-group mod-school"><img src="(?:\.\./)?brand/kiviruukin-lukio-oikea-yonsininen\.svg" alt="' + re.escape(_h.escape(school)) + r'"[^>]*></h3><ul class="mod-list local-list">', home) is not None and home.find('class="mod-list up-list"') < sec.start(), sec and sec.start())
         lrows = [r for d, c, r in re.findall(ROW, sec.group(1), re.S)] if sec else []
         lcodes = [c for d, c, r in re.findall(ROW, sec.group(1), re.S)] if sec else []
         expect(f"{lang}: one row per local course, in registry order", lcodes == list(local), lcodes)
@@ -271,7 +281,7 @@ JS = """() => { const R = (e) => e.getBoundingClientRect(), out = [];
       if (!two && q.scrollWidth > q.clientWidth + 1) out.push('question cut: ' + e.getAttribute('href'));
       if (getComputedStyle(go).opacity !== '0') out.push('arrow shown at rest: ' + e.getAttribute('href'));
     }
-    for (const e of document.querySelectorAll('.mod-group')) if (R(e).height > 30) out.push(`group heading ${Math.round(R(e).height)} px`);
+    for (const e of document.querySelectorAll('.mod-group')) if (R(e).height > (e.classList.contains('mod-school') ? 64 : 30)) out.push(`group heading ${Math.round(R(e).height)} px`);
   }
   return out; }"""
 try:
@@ -314,9 +324,16 @@ with sync_playwright() as pw:
                 if name == "index.html" and w == 1440:   # hover: the row is tinted and its arrow shows; a Tulossa row is not tinted
                     pg.hover('.mod-list:not(.up-list) .mod-row'); pg.wait_for_timeout(50)
                     hov = pg.evaluate("(() => { const a = document.querySelector('.mod-list:not(.up-list) .mod-row'); return [getComputedStyle(a).backgroundColor, getComputedStyle(a.querySelector('.mod-go')).opacity]; })()")
-                    pg.hover('.up-list .mod-row'); pg.wait_for_timeout(50)
-                    dim = pg.evaluate("getComputedStyle(document.querySelector('.up-list .mod-row')).backgroundColor")
+                    dim = "rgba(0, 0, 0, 0)"   # no Tulossa row when every module is published
+                    if pg.query_selector('.up-list .mod-row'):
+                        pg.hover('.up-list .mod-row'); pg.wait_for_timeout(50)
+                        dim = pg.evaluate("getComputedStyle(document.querySelector('.up-list .mod-row')).backgroundColor")
                     expect(f"{lang}: hover tints a row and shows its arrow; a Tulossa row stays untinted", hov[0] != "rgba(0, 0, 0, 0)" and hov[1] == "1" and dim == "rgba(0, 0, 0, 0)", (hov, dim))
+                if name == "index.html" and w >= 768 and pg.query_selector('.local-list'):   # teacher 2026-11-04: the school's list level with the national modules, its logo clear of the lead
+                    lv = pg.evaluate("""(() => { const r = s => document.querySelector(s).getBoundingClientRect(), rg = document.createRange();
+                        rg.selectNodeContents(document.querySelector('.home-intro .lead')); const t = rg.getBoundingClientRect(), l = r('.intro-school');
+                        return [Math.round(r('.mod-cols>.mod-list').top), Math.round(r('.local-list').top), l.width > 0 && (l.left >= t.right || l.top >= t.bottom)]; })()""")
+                    expect(f"{lang}: at {w} px the school's list starts level with the modules and its logo is clear of the lead", lv[0] == lv[1] and lv[2], lv)
                 if name == "index.html" and w == 390:
                     top = pg.evaluate("document.querySelector('.mod-row').getBoundingClientRect().top")
                     expect(f"{lang}: at 390 x 844 the first module row starts in the first screen ({round(top)} px)", top < 844 - 60)

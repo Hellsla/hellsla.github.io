@@ -40,6 +40,58 @@
       "answer": 9.33,
       "unit": "times",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy1-1-L1-06",
+      "level": 1,
+      "text": "In physics, observations and models are different things. For example, an observation is that a dropped stone hits the ground faster than a dropped feather. Which of the following separates a physical model from a mere observation?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "A prediction for a new situation can be deduced from a model, and the prediction can be tested by a measurement.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "A prediction for a new situation can be deduced from a model, and the prediction can be tested by a measurement.",
+          "correct": true,
+          "feedback": "Correct: an observation tells what happened, whereas a model is a simplified description from which you can deduce what would happen in a new situation. A model is tested with experiments and measurements, and it holds only in certain conditions."
+        },
+        {
+          "text": "A model is an observation that has been repeated so many times that it certainly holds in all conditions.",
+          "feedback": "A repeated observation is still an observation. A model describes a phenomenon and produces predictions, and its validity is limited to certain conditions: for example, a free-fall model that ignores air resistance does not describe the fall of a feather."
+        },
+        {
+          "text": "A model is a theory that cannot be changed any more once it has been found to work.",
+          "feedback": "A model is not unchangeable: it is valid only in the conditions where it has been tested. When a new measurement differs from the prediction, the model is corrected or its range of validity is limited. For example, a free-fall model without air resistance describes a stone but not a feather."
+        },
+        {
+          "text": "A model is a perfect description of a phenomenon, and if a measurement differs from it, the measurement is always wrong.",
+          "feedback": "A model is a simplification, not the whole truth. When a careful measurement differs from the model's prediction, the experiment decides: the model is corrected or its range of validity is limited, and the measurement is not rejected merely because it does not fit the model."
+        }
+      ]
+    },
+    {
+      "id": "fy1-1-L1-07",
+      "level": 1,
+      "text": "The distance from the Earth to the Moon is on average $3.84\\cdot10^{8}\\,\\text{m}$. The travel time of light is the distance divided by the speed, $t = s/c$. How long does light take to travel from the Earth to the Moon when the speed of light is $c = 2.998\\cdot10^{8}\\,\\text{m/s}$?",
+      "kind": [
+        "model"
+      ],
+      "answer": 1.28,
+      "unit": "s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-1-L1-08",
+      "level": 1,
+      "text": "The order of magnitude of the diameter of a grain of sand is $10^{-3}\\,\\text{m}$ and that of a virus $10^{-7}\\,\\text{m}$. Based on the orders of magnitude, how many times larger is a grain of sand than a virus?",
+      "kind": [
+        "model"
+      ],
+      "answer": 10000,
+      "unit": "times",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -74,6 +126,147 @@
       "answer": 1.31,
       "unit": "million times",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy1-1-L2-05",
+      "level": 2,
+      "text": "The table shows the mean distance $r$ of the planets from the Sun in astronomical units; one astronomical unit is $1\\,\\text{AU}$, the distance from the Earth to the Sun. A scale model of the solar system is drawn in a corridor so that Neptune is $2.0\\,\\text{m}$ from the Sun and all distances are reduced by the same factor. How far from the Sun is Jupiter in the model? Give the answer in centimetres. Which planet is closest in the model to the point of the corridor that is $1.0\\,\\text{m}$ from the Sun?",
+      "kind": [
+        "data",
+        "model"
+      ],
+      "answer": 34.6,
+      "unit": "cm",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Distances of the planets from the Sun",
+        "columns": [
+          "Planet",
+          "$r\\,(\\text{AU})$"
+        ],
+        "rows": [
+          [
+            "Mercury",
+            "0.387"
+          ],
+          [
+            "Venus",
+            "0.723"
+          ],
+          [
+            "Earth",
+            "1.00"
+          ],
+          [
+            "Mars",
+            "1.52"
+          ],
+          [
+            "Jupiter",
+            "5.20"
+          ],
+          [
+            "Saturn",
+            "9.58"
+          ],
+          [
+            "Uranus",
+            "19.2"
+          ],
+          [
+            "Neptune",
+            "30.1"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy1-1-L2-06",
+      "level": 2,
+      "text": "The table gives the diameter $d = a\\cdot10^{n}\\,\\text{m}$ of four objects in powers-of-ten form. Determine the order of magnitude of each object and calculate how many orders of magnitude there are between a human and the Milky Way. Justify why the order of magnitude of the Milky Way is not $10^{20}$ although its exponent is $20$.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 21,
+      "unit": "orders of magnitude",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Diameters of the objects $d = a\\cdot10^{n}\\,\\text{m}$",
+        "columns": [
+          "Object",
+          "$a$",
+          "$n$"
+        ],
+        "rows": [
+          [
+            "Human",
+            "1.7",
+            "0"
+          ],
+          [
+            "Earth",
+            "1.27",
+            "7"
+          ],
+          [
+            "Sun",
+            "1.39",
+            "9"
+          ],
+          [
+            "Milky Way",
+            "9.46",
+            "20"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy1-1-L2-07",
+      "level": 2,
+      "text": "A single sheet of paper is much thinner than the scale division $1\\,\\text{mm}$ of a ruler, so its thickness cannot be measured directly. A student stacked sheets of the same copy paper, pressed the stack lightly together and measured its height $h$ with a ruler, reading the result to half a millimetre. A stack of $N$ sheets has the height $h = dN$, where $d$ is the thickness of one sheet, so the points lie on a line that passes through the origin and whose slope is $d$. Draw a graph of the points and fit a line to them. Read the height of the stack at $N = 300$ from the line and calculate the thickness $d$ of one sheet in millimetres by dividing the height by the number of sheets. Explain why measuring a stack gives a more accurate result than measuring a single sheet.",
+      "kind": [
+        "experiment",
+        "data",
+        "graph"
+      ],
+      "answer": 0.102,
+      "unit": "mm",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Height of a paper stack as a function of the number of sheets",
+        "columns": [
+          "$N$ (sheets)",
+          "$h\\,(\\text{mm})$"
+        ],
+        "rows": [
+          [
+            "50",
+            "5.0"
+          ],
+          [
+            "100",
+            "10.5"
+          ],
+          [
+            "150",
+            "15.0"
+          ],
+          [
+            "200",
+            "20.5"
+          ],
+          [
+            "250",
+            "25.5"
+          ],
+          [
+            "300",
+            "30.5"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -99,6 +292,31 @@
       "text": "In a picture taken with an electron microscope, a virus with a diameter of $1.0\\cdot10^{-7}\\,\\text{m}$ appears $5.0\\,\\text{cm}$ wide. The picture is not altered in any way. How wide would a red blood cell with a diameter of $7.5\\cdot10^{-6}\\,\\text{m}$ appear in the same picture? Give the answer in centimetres.",
       "answer": 375,
       "unit": "cm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-1-L3-04",
+      "level": 3,
+      "text": "Estimate how many raindrops fall on a football pitch during one rain shower. Assumptions: the shower increases the thickness of the water layer on the pitch at the rate $5.0\\,\\text{mm/h}$ and lasts $10\\,\\text{min}$, the area of the pitch is $6.0\\cdot10^{3}\\,\\text{m}^2$ and every drop is a sphere with a diameter of $2.0\\,\\text{mm}$. The volume of a sphere is $V = 4\\pi r^{3}/3$. How many drops fall on the pitch, in billions? Which of the assumptions affects the result most if its value is $20\\,\\%$ too large, and why? Justify by calculation.",
+      "kind": [
+        "reasoning",
+        "model"
+      ],
+      "answer": 1.19,
+      "unit": "billion",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy1-1-L3-05",
+      "level": 3,
+      "text": "Voyager 2 crossed the heliopause on 5 November 2018 at a distance $d_0 = 119.7\\,\\text{AU}$ from the Sun, and its speed relative to the Sun is $v = 15.341\\,\\text{km/s}$. The model of uniform motion is $d = d_0 + vt$. A student calculated the model's prediction for February 2026, when $t = 7.25\\,\\text{a}$ has passed since the heliopause crossing. The student's solution: “The distance travelled is $s = vt = 15.341\\,\\text{km/s}\\cdot7.25 = 111.2\\,\\text{km}$. The distance is $d = 119.7\\,\\text{AU} + 111.2\\,\\text{km} \\approx 119.7\\,\\text{AU}$. So Voyager would be almost in the same place as in 2018, which means the model is wrong.” Use the values $1\\,\\text{AU} = 1.496\\cdot10^{8}\\,\\text{km}$ and $1\\,\\text{a} = 3.156\\cdot10^{7}\\,\\text{s}$. A measurement in February 2026 gave $143.05\\,\\text{AU}$. Find the student's error and calculate the correct prediction of the model for the distance $d$ in astronomical units. Explain why the measurement supports the model but does not prove that Voyager always moves at the same speed.",
+      "kind": [
+        "error",
+        "model",
+        "reasoning"
+      ],
+      "answer": 143.2,
+      "unit": "AU",
       "tolerance": 0.02
     }
   ]
