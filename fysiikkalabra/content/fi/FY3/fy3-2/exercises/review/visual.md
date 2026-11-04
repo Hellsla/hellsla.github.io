@@ -1,17 +1,22 @@
 VERDICT: PASS
-CONTENT-HASH: 97ec41ff120e01f4
+CONTENT-HASH: 24fb5d210fa3c9a2
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] exercises.json tasks — some number+unit still plain text ("4,0 minuutissa", "12 sekunnissa", "25 metrin") while neighbours are maths; one rule.
-- [Minor] solutions L1-01, L1-03 Sijoitus — "2,000 kJ", "3,000 kW" pseudo-precision before the 2-digit answer; write "2,0 kJ" / "3,0 kW".
-- [Minor] solutions Järkevyys fractions (\tfrac in blocks, e.g. 36 kJ/12 s, 360 000 J/...) render about 8 px; use \dfrac in a block.
-- [Minor] solutions L1-04, L2-04, L3-01 — "0\ldots 6\,m" spaced dots (round 1, not rechecked in these captures); use an en dash.
+- [Minor] L2-05 Sijoitus (open-exercises-L2-1280-6) — the long chain wraps inside a bracket ("(15,1 + / 11,0)"); the four trapezoids read better one per row — split the chain at the "+" between the terms, or show the four W values on separate lines.
+- [Minor] L3-05 Sijoitus (L3-1280-7) — the nested \tfrac in "v = 6,52 m / 8,0 s" and "t = 12 m / 0,815 m/s" is tiny — use \dfrac in these display chains (and the same with the stacked "m over s" units).
+- [Minor] Task tables (L2-05, L2-06, L3-04, L3-05, 1280 px) — the header is centred but the numbers are left or right aligned, so they do not line up — align both the same way.
+- [Minor] L3-05 d) — the check "P t = m g h" is an identity here (t = h/v), so it checks nothing about the data; for science/pedagogy: ask for a different check, e.g. the work from the fitted line against the table's last point.
+- [Minor] No 360 px captures of the new tasks (only the collapsed stage-exercises-390); check_layout 360 is clean.
 
 ## Checked
-- Round 1 Blocking (parenthesised chain lifted into a block): resolved. L1-01 Järkevyys now reads "Karkea arvio: ... ja" + block, "Sama työ nostaisi ...:" + block; L1-03 and L2-02 likewise, no stray parentheses.
-- open-exercises-1280-1, -3 (L1), L2-1280-2, L3-1280-2; layout intact, nothing clipped.
+- stage-exercises-390: level cards.
+- open-exercises-1280-6/7/8/9: L1-05 end, L1-06 (MC), L1-07, L1-08 (MC, feedback).
+- open-exercises-L2-1280-5/6/7/8/9: L2-05 (table, chain), L2-06 (table, solution), L2-07 (error task, solution).
+- open-exercises-L3-1280-4/5/6/7/8: L3-04 (table, solution, Järkevyys), L3-05 (4 sub-questions, table, solution).
+- The 8 retyped old quantities (L1-01 etc.) are in KaTeX; no clipping or overflow at 1280.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 5 · accessibility 4
