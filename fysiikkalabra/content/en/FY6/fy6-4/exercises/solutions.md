@@ -118,3 +118,78 @@
 **Substitution:** $R_\text{r} R_\text{s} = 60\,\Omega \cdot 250\,\Omega = 15\,000\,\Omega^2$ and $R_\text{s}^2 - 4 R_\text{r} R_\text{s} = 62\,500\,\Omega^2 - 60\,000\,\Omega^2 = 2500\,\Omega^2$, whose square root is $50\,\Omega$. So $R_1 = \dfrac{250\,\Omega \pm 50\,\Omega}{2}$, so $R_1 = 150\,\Omega$ or $R_1 = 100\,\Omega$
 **Answer:** $150\,\Omega$; the other resistor is $100\,\Omega$. Two significant figures like the value $60\,\Omega$; the data are taken as exact, because the difference $62\,500 - 60\,000$ under the root is small and the result is sensitive to the last digit of the data.
 **Reasonableness:** Check: $150\,\Omega + 100\,\Omega = 250\,\Omega$ and $\dfrac{150\,\Omega \cdot 100\,\Omega}{250\,\Omega} = 60\,\Omega$. The result of the parallel connection is smaller than the smaller resistor, $100\,\Omega$, as it should be.
+
+## fy6-4-L1-06
+**Find:** which connection of three identical $100\,\Omega$ resistors gives the smallest total resistance.
+**Principle:** A resistor added in parallel opens a new route for the current and reduces the total resistance, and a resistor added in series increases it. So the smallest total resistance is obtained when all the resistors are in parallel. Calculating the total resistance of each connection shows the difference: all in parallel $\tfrac{100\,\Omega}{3} \approx 33\,\Omega$, two in series and the third in parallel $\tfrac{200 \cdot 100}{300}\,\Omega \approx 67\,\Omega$, two in parallel and the third in series $50\,\Omega + 100\,\Omega = 150\,\Omega$, and all in series $300\,\Omega$.
+**Model answer:** The smallest total resistance is obtained by connecting all three resistors in parallel, because then the current has three parallel routes. The total resistance is $33\,\Omega$, and it is smaller than the resistance of any single resistor. The series connection of all three is the largest ($300\,\Omega$), and the mixed connections fall between these.
+
+## fy6-4-L1-07
+**Find:** what happens to the total resistance and to the current leaving the battery when a third lamp is added among the lamps in parallel.
+**Principle:** In a parallel connection the battery voltage $U$ is across every branch, and every branch takes a current $I = U : R$. The current leaving the battery is the sum of the branch currents, so a new branch increases it. When the voltage stays the same and the current increases, by Ohm's law the total resistance decreases. Two identical lamps, each with resistance $R_\text{L}$, give $\tfrac{R_\text{L}}{2}$ and three give $\tfrac{R_\text{L}}{3}$.
+**Model answer:** The total resistance decreases and the current leaving the battery increases, because the new branch opens more routes for the current. Each of the old lamps takes the same current as before, and the third lamp adds its own current on top of them. Adding resistors increases the total resistance only in a series connection.
+
+## fy6-4-L1-08
+**Given:** resistors in parallel $R_1 = 90\,\Omega$ and an unknown $R_x$, total resistance $R = 36\,\Omega$
+**Find:** the resistance $R_x$ of the unknown resistor
+**Principle:** In a parallel connection the reciprocal of the total resistance is the sum of the reciprocals of the branches. When the total resistance and one branch are known, the reciprocal of the unknown branch is obtained by subtraction, and finally it is inverted.
+**Formula:** $\dfrac{1}{R} = \dfrac{1}{R_1} + \dfrac{1}{R_x}$, so $\dfrac{1}{R_x} = \dfrac{1}{R} - \dfrac{1}{R_1}$
+**Conversions:** Not needed, all the resistances are in ohms.
+**Substitution:** $\dfrac{1}{R_x} = \dfrac{1}{36\,\Omega} - \dfrac{1}{90\,\Omega} = \dfrac{5 - 2}{180\,\Omega} = \dfrac{1}{60\,\Omega}$, so $R_x = 60\,\Omega$
+**Answer:** $60\,\Omega$, two significant figures like the given values.
+**Reasonableness:** The result of the parallel connection, $36\,\Omega$, is smaller than either of the resistors, $90\,\Omega$ and $60\,\Omega$. Check: $\dfrac{90\,\Omega \cdot 60\,\Omega}{90\,\Omega + 60\,\Omega} = \dfrac{5400\,\Omega^2}{150\,\Omega} = 36\,\Omega$.
+
+## fy6-4-L2-05
+**Given:** from the table the individual resistances $R_1 = 217\,\Omega$, $R_2 = 328\,\Omega$ and $R_3 = 468\,\Omega$, the measured series connection $1009\,\Omega$ and the measured parallel connection $101.4\,\Omega$; error limit of the meter $\pm 1.5\,\%$ of the reading
+**Find:** the calculated total resistance of the parallel connection $R_\text{parallel}$ and whether the difference from the measured value is within the error limit
+**Principle:** The formulas of the connections predict the total resistance from the individual resistances. In a series connection the resistances add up, in a parallel connection the reciprocals do. The calculated and measured values are compared by relating the difference to the measured value and comparing it with the error limit.
+**Reading the graph:** No graph; the values are read from the table.
+**Formula:** $R_\text{series} = R_1 + R_2 + R_3$ and $\dfrac{1}{R_\text{parallel}} = \dfrac{1}{R_1} + \dfrac{1}{R_2} + \dfrac{1}{R_3}$
+**Conversions:** Not needed, all the resistances are in ohms.
+**Substitution:** a) $R_\text{series} = 217\,\Omega + 328\,\Omega + 468\,\Omega = 1013\,\Omega$. The difference from the measured value is $1013\,\Omega - 1009\,\Omega = 4\,\Omega$, that is, $\dfrac{4\,\Omega}{1009\,\Omega} \approx 0.4\,\%$, which is smaller than $1.5\,\%$. b) $\dfrac{1}{R_\text{parallel}} = \dfrac{1}{217\,\Omega} + \dfrac{1}{328\,\Omega} + \dfrac{1}{468\,\Omega} = 0.009\,794\,\dfrac{1}{\Omega}$, so $R_\text{parallel} = 102.1\,\Omega$. The difference from the measured value is $102.1\,\Omega - 101.4\,\Omega = 0.7\,\Omega$, that is, $\dfrac{0.7\,\Omega}{101.4\,\Omega} \approx 0.7\,\%$.
+**Answer:** $102\,\Omega$, three significant figures like the measurement results. The difference for the series connection is about $0.4\,\%$ and for the parallel connection about $0.7\,\%$, both within the error limit of $1.5\,\%$, so the measurement supports the formulas of the connections.
+**Reasonableness:** The calculated parallel connection is smaller than the smallest individual resistance, $217\,\Omega$, and the series connection is larger than the largest, $468\,\Omega$, as they should be. With rounded numbers $\tfrac{1}{200} + \tfrac{1}{300} + \tfrac{1}{500} = 0.010$, so $R \approx 100\,\Omega$.
+
+## fy6-4-L2-06
+**Given:** battery $U = 9.0\,\text{V}$, $R_1 = 100\,\Omega$ in series with $R_2 = R_3 = 200\,\Omega$ in parallel; meter readings $I = 30.2\,\text{mA}$, $U_1 = 3.02\,\text{V}$ and $U_{23} = 5.98\,\text{V}$
+**Find:** the resistance $R_{23}$ of the parallel part from the meter readings and the cause of the wiring error
+**Principle:** The parallel part is in series with resistor $R_1$, so the current $I$ leaving the battery passes through it. By Ohm's law the resistance of the parallel part is its voltage divided by the current. The result is compared with the value that the formula of the parallel connection gives for the resistors $200\,\Omega$ and $200\,\Omega$.
+**Reading the graph:** No graph; the values are read from the table.
+**Formula:** $R_{23} = \dfrac{U_{23}}{I}$ and with the correct wiring $R_{23} = \dfrac{R_2 R_3}{R_2 + R_3}$
+**Conversions:** $I = 30.2\,\text{mA} = 30.2 \cdot 0.001\,\text{A} = 0.0302\,\text{A}$.
+**Substitution:** $R_{23} = \dfrac{5.98\,\text{V}}{0.0302\,\text{A}} = 198\,\Omega$. In a correctly wired circuit $R_{23} = \dfrac{200\,\Omega \cdot 200\,\Omega}{400\,\Omega} = 100\,\Omega$. The resistance of resistor $R_1$ from the meter readings is $\dfrac{3.02\,\text{V}}{0.0302\,\text{A}} = 100\,\Omega$, so $R_1$ is fine.
+**Answer:** a) $198\,\Omega$, three significant figures like the readings. In a correctly wired circuit it should be $100\,\Omega$. b) The measured value is approximately the resistance of a single $200\,\Omega$ resistor, so one of the parallel resistors is not part of the circuit: its wire is off or the branch is broken, and the current passes through only one resistor.
+**Reasonableness:** If one branch is missing, the total resistance is $100\,\Omega + 200\,\Omega = 300\,\Omega$ and the current is $9.0\,\text{V} : 300\,\Omega = 30\,\text{mA}$, which matches the reading $30.2\,\text{mA}$. The correct wiring would give $9.0\,\text{V} : 200\,\Omega = 45\,\text{mA}$, so the measurement clearly differs from it. The voltages add up: $3.02\,\text{V} + 5.98\,\text{V} = 9.00\,\text{V}$.
+
+## fy6-4-L2-07
+**Given:** known resistor $R_1 = 60\,\Omega$ in parallel with an unknown $R_x$; measurements $(U;\ I)$: $(2.0\,\text{V};\ 83\,\text{mA})$, $(4.0\,\text{V};\ 166\,\text{mA})$, $(6.0\,\text{V};\ 247\,\text{mA})$, $(8.0\,\text{V};\ 333\,\text{mA})$ and $(10.0\,\text{V};\ 414\,\text{mA})$
+**Find:** the resistance $R_x$ of the unknown resistor
+**Principle:** From the point of view of the source, the parallel connection behaves as one resistor whose resistance is obtained from Ohm's law $R = U : I$. The mean of the series of measurements reduces the scatter of a single measurement. When the total resistance and one branch are known, the unknown branch is obtained from the formula of the parallel connection.
+**Reading the graph:** No graph; the values are read from the table. If the points were plotted in an $(I;\ U)$ coordinate system, they would lie on a straight line through the origin whose slope is the total resistance.
+**Formula:** $R = \dfrac{U}{I}$, $\dfrac{1}{R} = \dfrac{1}{R_1} + \dfrac{1}{R_x}$, so $\dfrac{1}{R_x} = \dfrac{1}{R} - \dfrac{1}{R_1}$
+**Conversions:** $83\,\text{mA} = 83 \cdot 0.001\,\text{A} = 0.083\,\text{A}$, and similarly the other currents.
+**Substitution:** a) The ratios $U : I$ are $24.1\,\Omega$, $24.1\,\Omega$, $24.3\,\Omega$, $24.0\,\Omega$ and $24.2\,\Omega$. Their sum is $120.7\,\Omega$, so the mean is $R_\text{avg} = \dfrac{120.7\,\Omega}{5} = 24.13\,\Omega$. b) $\dfrac{1}{R_x} = \dfrac{1}{24.13\,\Omega} - \dfrac{1}{60\,\Omega} = 0.02477\,\dfrac{1}{\Omega}$, so $R_x = 40.4\,\Omega$.
+**Answer:** $40\,\Omega$, two significant figures like the voltages and currents; in the calculation one more digit is kept, $40.4\,\Omega$. The ratios vary only between $24.0\,\Omega$ and $24.3\,\Omega$, so the total resistance $24.1\,\Omega$ is reliable.
+**Reasonableness:** The total resistance $24.1\,\Omega$ is smaller than either branch, $60\,\Omega$ and $40.4\,\Omega$, as it should be in a parallel connection. Check: $\dfrac{60\,\Omega \cdot 40.4\,\Omega}{100.4\,\Omega} = 24.1\,\Omega$.
+
+## fy6-4-L3-04
+**Given:** $R_1 = 70\,\Omega$ in series with $R_2 = 110\,\Omega$ and $R_3 = 110\,\Omega$ in parallel; measured total resistance $180\,\Omega$; battery $U = 9.0\,\text{V}$; ammeter readings: battery current $49.8\,\text{mA}$, current of $R_2$ $49.7\,\text{mA}$ and current of $R_3$ $0.0\,\text{mA}$
+**Find:** a) the total resistance of a correctly wired board, b) the wiring that explains the fault and c) the current $I_3$ of resistor $R_3$ in the repaired circuit in milliamperes
+**Principle:** A correctly wired board is a mixed connection: the parallel resistors $R_2$ and $R_3$ are replaced with one resistor $R_{23}$, which is in series with resistor $R_1$. The measured $180\,\Omega$ is compared with the value for the correct wiring and with the value for a candidate fault. The current meters tell in which branch no current passes. In the repaired circuit the voltage of the parallel part is obtained from Ohm's law and divided by the resistance of resistor $R_3$.
+**Reading the graph:** No graph; the values are read from the table.
+**Formula:** $R_{23} = \dfrac{R_2 R_3}{R_2 + R_3}$, $R = R_1 + R_{23}$, $I = \dfrac{U}{R}$, $U_{23} = R_{23} I$ and $I_3 = \dfrac{U_{23}}{R_3}$
+**Conversions:** Not needed during the calculation. At the end $1\,\text{A} = 1000\,\text{mA}$.
+**Substitution:** a) $R_{23} = \dfrac{110\,\Omega \cdot 110\,\Omega}{220\,\Omega} = 55\,\Omega$ and $R = 70\,\Omega + 55\,\Omega = 125\,\Omega$. b) If one branch is off, only one $110\,\Omega$ resistor remains, and $R = 70\,\Omega + 110\,\Omega = 180\,\Omega$, which matches the measurement. The current in the wire of $R_3$ is $0.0\,\text{mA}$ and the current of $R_2$ is equal to the battery current, so $R_3$ is off. c) In the repaired circuit $I = \dfrac{9.0\,\text{V}}{125\,\Omega} = 0.072\,\text{A}$, $U_{23} = 55\,\Omega \cdot 0.072\,\text{A} = 3.96\,\text{V}$ and $I_3 = \dfrac{3.96\,\text{V}}{110\,\Omega} = 0.036\,\text{A} = 36\,\text{mA}$
+**Answer:** $36\,\text{mA}$, two significant figures like the voltage $9.0\,\text{V}$. The total resistance of the board should be $125\,\Omega$, and the measurements are explained by resistor $R_3$ being off its wire.
+**Reasonableness:** In the repaired circuit the current of each of the two equal branches is half of the total current, $0.072\,\text{A} : 2 = 0.036\,\text{A}$. The voltages add up: $0.072\,\text{A} \cdot 70\,\Omega + 3.96\,\text{V} = 5.04\,\text{V} + 3.96\,\text{V} = 9.0\,\text{V}$.
+
+## fy6-4-L3-05
+**Given:** target $R_\text{target} = 470\,\Omega$; resistors in stock $100\,\Omega$, $390\,\Omega$, $560\,\Omega$, $1200\,\Omega$, $1500\,\Omega$, $2700\,\Omega$ and $5600\,\Omega$, one of each
+**Find:** the total resistance of the best connection of two resistors and its deviation from $470\,\Omega$ as a percentage
+**Principle:** The result of a series connection is larger than either resistor and that of a parallel connection smaller than either. This narrows down the candidates before calculating. Only small resistors suit a series connection and only large ones a parallel connection. The total resistances of the candidates are calculated and the deviations $\dfrac{|R - R_\text{target}|}{R_\text{target}}$ are compared.
+**Reading the graph:** No graph; the values are read from the task.
+**Formula:** $R_\text{series} = R_a + R_b$, $R_\text{parallel} = \dfrac{R_a R_b}{R_a + R_b}$ and the deviation $p = \dfrac{|R - R_\text{target}|}{R_\text{target}} \cdot 100\,\%$
+**Conversions:** $1.2\,\text{k}\Omega = 1200\,\Omega$, $1.5\,\text{k}\Omega = 1500\,\Omega$, $2.7\,\text{k}\Omega = 2700\,\Omega$ and $5.6\,\text{k}\Omega = 5600\,\Omega$.
+**Substitution:** Series connection: the only resistors smaller than the target $470\,\Omega$ are $100\,\Omega$ and $390\,\Omega$, and their sum is $490\,\Omega$ (deviation $4.3\,\%$). Any other series connection is at least $100\,\Omega + 560\,\Omega = 660\,\Omega$ and worse. Parallel connection: the result is smaller than the smaller resistor, so the smaller resistor must be over $470\,\Omega$, which leaves the resistors $560\,\Omega$, $1200\,\Omega$, $1500\,\Omega$, $2700\,\Omega$ and $5600\,\Omega$. The pairs with $560\,\Omega$ give $382\,\Omega$, $408\,\Omega$, $\dfrac{560 \cdot 2700}{3260}\,\Omega = 463.8\,\Omega$ and $509\,\Omega$. In the other pairs the smaller resistor is at least $1200\,\Omega$, so the result is larger than $\dfrac{1200 \cdot 1500}{2700}\,\Omega = 667\,\Omega$. So the best is $560\,\Omega$ in parallel with $2700\,\Omega$: $R = 463.8\,\Omega$, and $p = \dfrac{470 - 463.8}{470} \cdot 100\,\% = 1.32\,\%$
+**Answer:** $1.3\,\%$, two significant figures. The connection is $560\,\Omega$ in parallel with $2700\,\Omega$, total resistance $464\,\Omega$. The best series connection ($100\,\Omega + 390\,\Omega$) deviates by $4.3\,\%$, so the parallel connection is over three times as accurate.
+**Reasonableness:** The result $463.8\,\Omega$ is smaller than $560\,\Omega$, as it should be in a parallel connection, and close to the target.
