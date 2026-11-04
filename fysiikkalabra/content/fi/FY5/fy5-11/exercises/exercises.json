@@ -149,12 +149,12 @@
         "data",
         "experiment"
       ],
-      "text": "Oppilas seisoo koulun pitkän seinän edessä ja taputtaa käsiään. Puhelimen äänityssovellus tallentaa taputuksen ja kaiun, ja ajat luetaan äänityksen aaltomuodosta. Hän toistaa mittauksen eri etäisyyksillä $d$ seinästä.\n\nÄänityksellä on tuntematon mutta aina yhtä suuri viive, joten jokainen mitattu aika $t$ on liian pitkä saman verran (esimerkkiaineisto).\n\nMääritä äänen nopeus käyttämällä taulukon ensimmäistä ja viimeistä mittausta. Anna vastaus yksikössä $\\text{m/s}$.",
+      "text": "Oppilas seisoo koulun pitkän seinän edessä. Puhelimen sovellus soittaa lyhyen äänimerkin ja mittaa ajan $t$ soittokäskystä siihen hetkeen, jolloin se havaitsee seinältä palaavan kaiun. Oppilas toistaa mittauksen eri etäisyyksillä $d$ seinästä.\n\nPuhelimen äänentoistolla on tuntematon mutta aina yhtä suuri viive $t_0$ soittokäskyn ja äänen lähdön välillä, joten jokainen mitattu aika $t$ on liian pitkä saman verran (esimerkkiaineisto).\n\nMääritä äänen nopeus käyttämällä taulukon ensimmäistä ja viimeistä mittausta. Anna vastaus yksikössä $\\text{m/s}$.",
       "answer": 343,
       "unit": "m/s",
       "tolerance": 0.02,
       "data": {
-        "caption": "Kaiun äänityksestä luettu viive eri etäisyyksillä, esimerkkiaineisto",
+        "caption": "Sovelluksen mittaama kaiun viive eri etäisyyksillä, esimerkkiaineisto",
         "columns": [
           "$d\\,(\\text{m})$",
           "$t\\,(\\text{s})$"

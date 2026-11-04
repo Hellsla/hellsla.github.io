@@ -1,19 +1,17 @@
 VERDICT: FAIL
-CONTENT-HASH: 2c00c7827a1d53fa
+CONTENT-HASH: 76d62114ae966053
 
 ## Blocking
-- exercises/exercises.json:146 (fy5-11-L2-05, kind experiment) — B: the times are hand-stopped ("mittaa kellolla", stop after the echo) yet given to 1 ms and lie on a line within 0,3 ms; a hand-stopped clock scatters by about 0,1–0,2 s (guardrails, "a stopwatch shows 0,01 s, but hand timing is uncertain by about 0,2 s"), more than the whole 0,117 s echo delay at 20 m. The task teaches a method that cannot give these data. — Keep the numbers and the difference method but change the timing: the clap and the echo are recorded with a phone (or a sound-card app) whose recording starts with an unknown but constant delay, and the delays are read from the waveform. Adjust solutions.md:106 ("reaktioaika" → the constant offset) to match.
+- exercises/exercises.json:146 + solutions.md:106 (fy5-11-L2-05) — A: the new offset mechanism does not produce the offset. The clap and its echo are on the same recording and t is read from the waveform between them, so a start delay of the recording ("äänityksen aloitusviive", Järkevyys) cancels in every single t; it cannot make each t 0,040 s too long. The data (t₀ ≈ +0,040 s) then have no physical cause, and the explanation of the data error does not give its direction. — Use a mechanism that really adds a constant positive delay, e.g. the phone itself emits a beep and its app times from the beep command to the detected echo; the phone's audio output latency (unknown but constant, tens of ms) makes every t too long by the same amount. Rewrite the task's second paragraph and the solution's Annettu/Periaate/Järkevyys to that cause ("puhelimen äänen ulostulon viive t₀").
 
 ## Polish
-- exercises.json:183 (L2-06) — the plan asks for ripple-tank pictures (figure); a table of verbal descriptions is given instead. Add a c) asking the rule (taipuminen vs. b/λ).
-- exercises.json:261 / solutions.md:175 (L3-04) — c) could add the real reason extra soundings are needed on a steep slope: the first echo comes from the nearest bottom point, not from straight below, so the vertical model underestimates the depth there.
-- exercises.json:104 (L1-08) and L3-04 — echo sounding also in fy5-17-L1-03; inverse question, not a duplicate.
-- Solution "Kaava"/"Sijoitus" lines with long inline formulas show as empty boxes in the 1280 px captures, in old tasks (L2-01) and new (L3-04) alike: site-wide inline-formula change, handled by the other thread.
+- solutions.md L2-06 c) — "voimakkaasti, kun b/λ on enintään noin 2" fits the table, but the lesson says strong bending when b is about λ or smaller; consider "noin 1–2 tai pienempi".
+- Long inline formulas in solutions render as empty boxes in the 1280 px captures in old and new tasks alike (site-wide, other thread).
 
 ## Checked
-- All answers recomputed in one script (L1-08 48 ms, L2-05 342,9 m/s with residuals ≤ 0,3 ms and t_r = 0,040 s, L2-06 b/λ = 0,5…8,0, L2-07 32°, L3-04 depths 40,0–71,8 m and slopes 12,5/22,1/35,1/14,5/23,9°, L3-05 200, AM 1,8, tv 1200, light 1,1·10⁹): all agree with answers.py and solutions.
-- L1-06: exactly one correct option; every distractor's feedback right (fixed end inverts, no loss, speed unchanged).
-- L3-04 sig figs (19 ms → 2 sf); stated assumptions match the solution.
-- L3-05 inside the teacher-approved plan (radio vs. light); assumption (only edge diffraction) stated; no contradiction with c).
-- Notation (α, β, λ, b, v = fλ) as in the lesson; scope within reflection/diffraction; no refraction task added.
-- No duplicate of an existing fy5-11 task or of fy5-10/fy5-12 tasks; levels fit (L2-07 is light for level 2 but acceptable as error analysis).
+- Changes since round 1 diffed (exercises.json, solutions.md); answers.py and all task data unchanged; every new answer recomputed again in one script: L1-08 48 ms, L2-05 342,9 m/s (residuals ≤ 0,3 ms), L2-06 8,0, L2-07 32°, L3-04 35,1°, L3-05 200; all agree.
+- L2-06 c): ratios 0,5; 1,0; 2,0; 4,0; 8,0 match the five observations; rule monotone and right.
+- L3-04 c): the nearest-point note is right (first echo from the nearest bottom point → vertical model underestimates the depth there); it qualifies, not contradicts, the stated vertical-pulse assumption, which still holds for a)–b).
+- L1-07: only distractor wording changed; one correct option, feedbacks right.
+- L1-08 Järkevyys: 1500/343 = 4,4, right.
+- Typographic quotes in L2-07 only; no physics change.
