@@ -238,6 +238,15 @@ def home_row(code, title, question, coming=False):
             f'<span class="mod-q" title="{q}">{q}</span></span><span class="mod-go" aria-hidden="true">→</span></a></li>')
 
 
+def planned_row(p):
+    """A planned course of the school (teacher 2026-11-04): icon, name and one sentence, greyed out and not a link, as
+    the course has no content yet."""
+    q = esc(p["text"])
+    return (f'<li><div class="mod-row coming planned">{module_icons.img(p["icon"], 40)}'
+            f'<span class="mod-text"><span class="mod-name"><span class="mod-title">{esc(p["title"])}</span></span>'
+            f'<span class="mod-q" title="{q}">{q}</span></span></div></li>')
+
+
 ABOUT = "tietoa.html"
 PRIVACY = "tietosuoja.html"   # Tietosuoja (teacher 2026-11-04): no student data, no cookies, what the browser keeps and why
 
@@ -916,6 +925,7 @@ def build_language(lang):
     # modules on the left; on the right Tulossa (dimmed) and the school's own courses under the school's name. The
     # study guide is a page of its own, nain-opiskelet.html (study_guide), linked from the header as "Näin opiskelet".
     school = next(iter(local.values()))["school"] if local else ""
+    plan_rows = "".join(planned_row(p) for p in local_courses.planned(lang))
     home = (local_notes +
         f'<section class="home-intro" aria-labelledby="h-intro"><h1 id="h-intro">{T("site.home_h1")}</h1>'
         f'<p class="lead">{T("site.home_sub")}</p>'
@@ -930,6 +940,8 @@ def build_language(lang):
         # national modules: from 700 px the logo sits above the column, out of the flow, site.css .mod-school)
         + (f'<h3 class="mod-group mod-school"><img src="brand/kiviruukin-lukio-rivi-musta.svg" alt="{esc(school)}" width="293" height="32"></h3>'
            f'<ul class="mod-list local-list">{local_rows}</ul>' if local_rows else "")
+        # after a gap, the school's planned courses, greyed out and unlinked (teacher 2026-11-04: no content yet)
+        + (f'<ul class="mod-list plan-list" aria-label="{esc(T("site.planned_courses"))}">{plan_rows}</ul>' if plan_rows else "")
         + '</div></div></section>')
     (out / "index.html").write_text(front_chrome(page(T("site.home_title"), home, "", "index.html", T("site.home_description"), main_class="home",
                                          full_title=f'{T("site.name")} — {T("site.subtitle")}')))

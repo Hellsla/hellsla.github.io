@@ -192,7 +192,16 @@ for lang in i18n.languages():
         page_html = (out / f"{code}.html").read_text()
         psrc = icon_of(page_html[page_html.find("<main"):])
         expect(f"{lang} {code}: the module page shows the same icon beside its title", psrc == src and page_html.find("mod-head-icon") < page_html.find("<h1"), psrc)
-    expect(f"{lang}: icons are counted once each (one per row, no stray icons)", len(re.findall(r'class="(?:mod-icon|up-icon)"', home)) == len(all_rows), len(all_rows))
+    # the school's planned courses (teacher 2026-11-04): after the school's own courses, greyed out, icon + name + one
+    # sentence, never a link (no content yet)
+    plans = local_courses.planned(lang)
+    pl = re.search(r'<ul class="mod-list plan-list" aria-label="[^"]+">(.*?)</ul>', home, re.S)
+    prow = re.findall(r'<li><div class="mod-row coming planned">(<img [^>]+>)<span class="mod-text">.*?<span class="mod-title">(.*?)</span>.*?</div></li>', pl.group(1), re.S) if pl else []
+    expect(f"{lang}: the planned courses greyed out after the school's courses, one unlinked row each with its icon",
+           (not plans and not pl) or (bool(pl) and [t for _, t in prow] == [_h.escape(p["title"]) for p in plans] and "<a " not in pl.group(1)
+                                      and home.find('class="mod-list local-list"') < pl.start()
+                                      and all(icon_of(i) and (out / icon_of(i)).resolve().is_file() for i, _ in prow)), [t for _, t in prow])
+    expect(f"{lang}: icons are counted once each (one per row, no stray icons)", len(re.findall(r'class="(?:mod-icon|up-icon)"', home)) == len(all_rows) + len(prow), len(all_rows))
     expect(f"{lang}: no icon has alternative text (the name is already said)", not re.search(r'<img class="(?:mod-icon|up-icon|mod-head-icon)"[^>]*alt="[^"]', home))
     lesson_pages = [f for f in out.glob("fy*-*.html")]
     expect(f"{lang}: no module icon on a chapter page ({len(lesson_pages)})", not any("module-icons/" in f.read_text() for f in lesson_pages))
@@ -275,11 +284,11 @@ JS = """() => { const R = (e) => e.getBoundingClientRect(), out = [];
     const two = innerWidth >= 700, n = getComputedStyle(cols).gridTemplateColumns.split(' ').length;
     if (n !== (two ? 2 : 1)) out.push(`${n} columns at ${innerWidth} px`);
     for (const e of document.querySelectorAll('.mod-row')) {
-      const ht = R(e).height, q = e.querySelector('.mod-q'), go = e.querySelector('.mod-go');
+      const ht = R(e).height, q = e.querySelector('.mod-q'), go = e.querySelector('.mod-go');   // a planned course's row has no arrow (no link)
       if (two && ht > 64.5) out.push(`row ${Math.round(ht)} px: ${e.getAttribute('href')}`);
       if (two && R(q).height > parseFloat(getComputedStyle(q).lineHeight) * 1.5) out.push('question on two lines: ' + e.getAttribute('href'));
       if (!two && q.scrollWidth > q.clientWidth + 1) out.push('question cut: ' + e.getAttribute('href'));
-      if (getComputedStyle(go).opacity !== '0') out.push('arrow shown at rest: ' + e.getAttribute('href'));
+      if (go && getComputedStyle(go).opacity !== '0') out.push('arrow shown at rest: ' + e.getAttribute('href'));
     }
     for (const e of document.querySelectorAll('.mod-group')) if (R(e).height > (e.classList.contains('mod-school') ? 64 : 30)) out.push(`group heading ${Math.round(R(e).height)} px`);
   }

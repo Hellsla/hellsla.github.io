@@ -66,6 +66,7 @@
     "unavailable_note": "<strong>{{title}}</strong> is not available in this language yet. Below you can see the lessons of this module and which of them you can already open.",
     "home_title": "Upper secondary physics through investigation.",
     "upcoming": "Coming soon",
+    "planned_courses": "Planned courses",
     "lessons_all": {
       "one": "{{n}} lesson",
       "other": "{{n}} lessons"
