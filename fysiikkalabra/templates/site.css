@@ -147,6 +147,19 @@ main.home+footer.bottom{margin-top:1.75rem}
 .mod-list>li{margin:0;border-bottom:1px solid var(--line)}
 .mod-group{font:700 .75rem/1.2 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--ink-2);margin:0 0 .35rem}
 .mod-group~.mod-group{margin-top:1rem}
+/* the school's logo (teacher 2026-11-04: the name and the emblem on one row in black, its courses level with the national modules). Under 700 px it
+   heads the school's list; from 700 px it stands in the intro over the right column and the list's heading is visually
+   hidden: under the heading and lead in two columns, beside them (in the right column) once they fit in the left one */
+.mod-school img{display:block;height:32px;width:auto;max-width:100%}
+.intro-school{display:none;height:32px;width:auto;max-width:100%}
+@media (min-width:700px){
+  .home-intro{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:clamp(1.25rem,3vw,2.5rem)}
+  .home-intro>h1,.home-intro>.lead{grid-column:1/-1}
+  .intro-school{display:block;grid-column:2;margin:.9rem 0 0}
+  .mod-side>.mod-school:first-child{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap;margin:0}}
+@media (min-width:1200px){
+  .home-intro>h1,.home-intro>.lead{grid-column:1}
+  .intro-school{grid-column:2;grid-row:1/3;align-self:end;margin:0}}
 .mod-row{display:flex;align-items:center;gap:.8rem;min-height:56px;padding:.45rem .6rem;color:var(--ink);text-decoration:none;border-radius:8px}
 .mod-icon{display:block;width:40px;height:40px;flex:none}
 .mod-text{display:flex;flex-direction:column;flex:1;min-width:0}
@@ -1009,12 +1022,12 @@ strong.kc-ready{font-weight:inherit}
 :root:has(main.about-page){--bg:#fff;--bg-tint:#f3f5f9;--ink:#0b1638;--ink-2:#3c4563;--line:#dfe5eb;--line-2:#ecf0f4;
   --accent:#012169;--accent-deep:#012169;--accent-soft:#fff0f6;--brand-green:#012169;--kr-navy:#012169;--kr-navy-deep:#00174f;--kr-pink:#fca5c7}
 body:has(main.about-page){background-image:none}
-.about-page .about-hero{margin:0 0 2.25rem;padding:2rem 2rem 1.75rem;border-radius:var(--card-radius);color:#fff;
+.about-page .about-hero{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:.9rem 1.75rem;margin:0 0 2.25rem;padding:1.25rem 1.75rem;border-radius:var(--card-radius);color:#fff;
   background:linear-gradient(135deg,var(--kr-navy) 0%,var(--kr-navy-deep) 100%)}
-.about-page .about-logo{display:block;width:128px;height:auto;margin:0 0 1.75rem}
+.about-page .about-logo{display:block;flex:none;order:2;width:auto;height:64px;margin:0 0 0 auto}   /* the logo at the right end of the banner, beside the heading (teacher 2026-11-04: less empty blue, logo on the right) */
 .about-page .about-hero h1{margin:0;color:#fff;display:flex;align-items:center;gap:.75rem}
 .about-page .about-hero h1::before{content:"";flex:none;width:26px;height:3px;background:var(--kr-pink)}
 .about-page h2{color:var(--kr-navy);padding-left:.75rem;border-left:4px solid var(--kr-pink)}
 .about-page strong{color:var(--kr-navy)}
-@media (max-width:600px){.about-page .about-hero{padding:1.5rem 1.25rem 1.25rem}.about-page .about-logo{width:104px;margin-bottom:1.25rem}}
+@media (max-width:600px){.about-page .about-hero{gap:.75rem;padding:1rem 1.1rem}.about-page .about-hero h1{gap:.5rem}.about-page .about-hero h1::before{width:16px}.about-page .about-logo{height:48px}}
 .about-page .about-tag{display:inline-block;margin:1.5rem 0 0;padding:.3rem .9rem;border-radius:999px;background:var(--kr-pink);color:var(--kr-navy);font:700 var(--fs-ui) var(--sans);letter-spacing:.01em}

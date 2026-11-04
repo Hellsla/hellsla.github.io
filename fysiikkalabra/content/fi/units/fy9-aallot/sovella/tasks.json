@@ -1,0 +1,789 @@
+{
+ "intro": "Kuusi ylioppilaskokeen tyylistä tehtävää kokoaa tunnin värähtelyt, aallot ja äänen. Ratkaise ne kuten kokeessa: nimeä ilmiö ja malli ja perustele, miksi malli sopii tilanteeseen, ratkaise kysytty suure ennen lukujen sijoittamista ja arvioi tuloksen järkevyys. Avaa mallivastaus ja pisteytys vasta, kun ratkaisusi on valmis.",
+ "tasks": [
+  {
+   "id": "fy9-aallot-s1",
+   "title": "Kitaran kieli ja viritys",
+   "source": "example",
+   "source_note": "Tilanne on keksitty esimerkki. Kielen pituus ja A- ja H-sävelten taajuudet vastaavat tavallista kitaraa.",
+   "skills": [
+    "fy5-13",
+    "fy5-10",
+    "fy5-14"
+   ],
+   "text": "Kitaran A-kielen värähtelevä osa satulasta tallaan on $648\\,\\text{mm}$, ja vapaana soitettuna kieli soi perustaajuudellaan $110{,}0\\,\\text{Hz}$. Kun kieltä painetaan nauhaa vasten, kielen värähtelevä osa ulottuu nauhasta tallaan. Kitaristi virittää kieltä kosketinsoittimen A-säveltä vasten, jonka taajuus on $110{,}0\\,\\text{Hz}$.\n\n- äänen nopeus huoneilmassa $343\\,\\text{m/s}$\n- kielen kireys pysyy samana a- ja b-kohdassa",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "calc",
+     "points": 4,
+     "text": "Kuinka suurella nopeudella aalto etenee kielessä? Kuinka pitkä on perustaajuuden aallonpituus kielessä ja kitarasta lähtevässä äänessä ilmassa?",
+     "answer": [
+      {
+       "name": "v",
+       "value": 142.6,
+       "unit": "m/s",
+       "tolerance": 0.02
+      },
+      {
+       "name": "lam",
+       "value": 3.118,
+       "unit": "m",
+       "tolerance": 0.02
+      }
+     ],
+     "criteria": [
+      {
+       "text": "Perustelee, että kielen päissä on solmut, joten perustaajuudella kielen pituus on puolet aallonpituudesta, ja että ilmassa ääni on samantaajuista mutta etenee eri nopeudella.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$\\lambda_1 = 2L$, $v = f_1 \\lambda_1 = 2Lf_1$ ja ilmassa $\\lambda_\\text{ilma} = \\dfrac{v_\\text{ilma}}{f_1}$"
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$\\lambda_1 = 1{,}296\\,\\text{m}$, $v = 110{,}0\\,\\text{Hz} \\cdot 1{,}296\\,\\text{m} \\approx 142{,}6\\,\\text{m/s}$ ja $\\lambda_\\text{ilma} = \\dfrac{343\\,\\text{m/s}}{110{,}0\\,\\text{Hz}} \\approx 3{,}12\\,\\text{m}$"
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "Kolme merkitsevää numeroa: $v \\approx 143\\,\\text{m/s}$, $1{,}30\\,\\text{m}$ ja $3{,}12\\,\\text{m}$"
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "calc",
+     "points": 4,
+     "text": "Kuinka pitkä kielen värähtelevän osan on oltava, jotta kieli soi H-säveltä $123{,}5\\,\\text{Hz}$? Kuinka kaukana satulasta nauha on?",
+     "answer": [
+      {
+       "name": "L",
+       "value": 577.2,
+       "unit": "mm",
+       "tolerance": 0.02
+      },
+      {
+       "name": "d",
+       "value": 70.8,
+       "unit": "mm",
+       "tolerance": 0.03
+      }
+     ],
+     "criteria": [
+      {
+       "text": "Perustelee, että aallon nopeus kielessä pysyy samana, koska kieli ja sen kireys eivät muutu; vain värähtelevä pituus lyhenee.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$f' = \\dfrac{v}{2L'}$, joten $L' = \\dfrac{v}{2f'}$, ja nauhan etäisyys satulasta on $L - L'$"
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$L' = \\dfrac{142{,}6\\,\\text{m/s}}{2 \\cdot 123{,}5\\,\\text{Hz}} \\approx 0{,}577\\,\\text{m}$ ja $648\\,\\text{mm} - 577\\,\\text{mm} \\approx 71\\,\\text{mm}$"
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$L' \\approx 577\\,\\text{mm}$ kolmella merkitsevällä numerolla; etäisyys $71\\,\\text{mm}$ erotuksena millimetrin tarkkuudella"
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "calc",
+     "points": 4,
+     "text": "Kun kieli ja kosketinsoittimen ääni soivat yhtä aikaa, kitaristi kuulee $6$ huojahdusta $4{,}0$ sekunnissa. Hän kiristää kieltä hieman, ja huojunta hidastuu. Mikä oli kielen taajuus ennen kiristämistä?",
+     "answer": {
+      "value": 108.5,
+      "unit": "Hz",
+      "tolerance": 0.01
+     },
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$f_\\text{h} = |f_\\text{kieli} - 110{,}0\\,\\text{Hz}|$ ja $f_\\text{h} = \\dfrac{6}{4{,}0\\,\\text{s}} = 1{,}5\\,\\text{Hz}$, joten kielen taajuus on $108{,}5\\,\\text{Hz}$ tai $111{,}5\\,\\text{Hz}$"
+      },
+      {
+       "text": "Perustelee valinnan: kiristäminen kasvattaa aallon nopeutta kielessä ja nostaa taajuutta. Huojunta hidastui, joten taajuusero pieneni, ja kielen taajuus oli alle $110{,}0\\,\\text{Hz}$.",
+       "tag": "concept",
+       "points": 2
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$f_\\text{kieli} = 108{,}5\\,\\text{Hz}$"
+      }
+     ]
+    },
+    {
+     "id": "d",
+     "kind": "word",
+     "points": 3,
+     "text": "Kitaristi koskettaa vapaana soivaa kieltä kevyesti tarkalleen sen keskikohdasta, ja kieli jatkaa soimistaan oktaavia korkeammalta. Selitä, miksi näin käy.",
+     "criteria": [
+      {
+       "text": "Selittää, että sormi pakottaa kielen keskikohtaan solmun, joten kieleen jäävät vain ne ominaistaajuudet, joilla keskikohdassa on solmu: $n = 2, 4, 6, \\ldots$",
+       "tag": "concept",
+       "points": 2
+      },
+      {
+       "key": "conclusion",
+       "points": 1,
+       "detail": "Alin jäljelle jäävä on $f_2 = 2f_1 = 220\\,\\text{Hz}$: kieli värähtelee kahtena kupuna, ja kaksinkertainen taajuus on oktaavi ylöspäin."
+      }
+     ]
+    }
+   ],
+   "links": {
+    "concept": "fy5-13",
+    "math": "fy5-13",
+    "communication": "fy5-13"
+   }
+  },
+  {
+   "id": "fy9-aallot-s2",
+   "title": "Lepakko saalistaa",
+   "source": "example",
+   "source_note": "Tilanne ja luvut ovat keksitty esimerkki. Pohjanlepakon kaikuluotausäänten taajuus on todellisen lajin suuruusluokkaa.",
+   "skills": [
+    "fy5-17",
+    "fy5-14",
+    "fy5-11"
+   ],
+   "text": "Pohjanlepakko saalistaa kesäyönä hyönteisiä järven rannalla. Se lähettää lyhyitä ultraäänipulsseja ja kuuntelee, mistä ja milloin niiden kaiut palaavat.\n\n- pulssin taajuus $30{,}0\\,\\text{kHz}$\n- äänen nopeus ilmassa $340\\,\\text{m/s}$, ilma tyyni\n- tavallisen hyttysen pituus noin $5\\,\\text{mm}$",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "calc",
+     "points": 3,
+     "text": "Kuinka pitkä on pulssin aallonpituus ilmassa?",
+     "answer": {
+      "value": 11.33,
+      "unit": "mm",
+      "tolerance": 0.02
+     },
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$v = f\\lambda$, joten $\\lambda = \\dfrac{v}{f}$"
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$\\lambda = \\dfrac{340\\,\\text{m/s}}{30\\,000\\,\\text{Hz}}$"
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$\\lambda \\approx 11{,}3\\,\\text{mm}$"
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "calc",
+     "points": 4,
+     "text": "Lepakko kuulee hyönteisestä heijastuneen kaiun $12{,}0\\,\\text{ms}$ pulssin lähettämisen jälkeen. Kuinka kaukana hyönteinen on? Arvioi, kuinka paljon tulokseen vaikuttaa se, että lepakko lentää koko ajan nopeudella $6{,}0\\,\\text{m/s}$.",
+     "answer": {
+      "value": 2.04,
+      "unit": "m",
+      "tolerance": 0.03
+     },
+     "criteria": [
+      {
+       "text": "Perustelee, että pulssi kulkee matkan hyönteiseen kahdesti, menossa ja kaikuna takaisin.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$d = \\dfrac{vt}{2}$"
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$d = \\dfrac{340\\,\\text{m/s} \\cdot 0{,}0120\\,\\text{s}}{2} \\approx 2{,}04\\,\\text{m}$"
+      },
+      {
+       "key": "assumptions",
+       "points": 1,
+       "detail": "Lepakko liikkuu kaiun aikana $6{,}0\\,\\text{m/s} \\cdot 0{,}0120\\,\\text{s} \\approx 7\\,\\text{cm}$, joten etäisyys muuttuu vain muutaman prosentin; vaikutus on pieni mutta näkyy kolmannessa numerossa."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "calc",
+     "points": 5,
+     "text": "Lepakko lentää nopeudella $6{,}0\\,\\text{m/s}$ suoraan kohti aitan seinää. Minkä taajuisena se kuulee seinästä heijastuneen kaiun?",
+     "answer": {
+      "value": 31.08,
+      "unit": "kHz",
+      "tolerance": 0.01
+     },
+     "criteria": [
+      {
+       "text": "Perustelee kaksi vaihetta: paikallaan oleva seinä vastaanottaa liikkuvan lähteen äänen ja heijastaa sen paikallaan olevana lähteenä, jonka ääntä lepakko kuulee lähestyvänä kuulijana.",
+       "tag": "concept",
+       "points": 2
+      },
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$f_\\text{s} = f_0 \\cdot \\dfrac{v}{v - v_\\text{l}}$ ja $f = f_\\text{s} \\cdot \\dfrac{v + v_\\text{l}}{v}$, joten $f = f_0 \\cdot \\dfrac{v + v_\\text{l}}{v - v_\\text{l}}$"
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$f_\\text{s} \\approx 30{,}54\\,\\text{kHz}$ ja $f = 30{,}0\\,\\text{kHz} \\cdot \\dfrac{346\\,\\text{m/s}}{334\\,\\text{m/s}} \\approx 31{,}08\\,\\text{kHz}$"
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$f \\approx 31{,}1\\,\\text{kHz}$ eli noin $1{,}1\\,\\text{kHz}$ pulssia korkeampi"
+      }
+     ]
+    },
+    {
+     "id": "d",
+     "kind": "word",
+     "points": 3,
+     "text": "Selitä, miksi lepakko ei voisi havaita hyttystä, jos se käyttäisi kuuloalueen ääntä, jonka taajuus on $3\\,\\text{kHz}$.",
+     "criteria": [
+      {
+       "text": "Laskee, että $3\\,\\text{kHz}$:n aallonpituus on noin $11\\,\\text{cm}$, yli kaksikymmentä kertaa hyttysen pituus, mutta $30\\,\\text{kHz}$:n noin $11\\,\\text{mm}$, hyttysen kokoluokkaa.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "text": "Selittää diffraktiolla, että aallonpituutta paljon pienempi este ei juuri heijasta eikä varjosta aaltoa, koska aalto taipuu sen ympäri.",
+       "tag": "transfer",
+       "points": 1
+      },
+      {
+       "key": "conclusion",
+       "points": 1,
+       "detail": "Lyhyt aallonpituus on edellytys pienen saaliin havaitsemiselle; siksi lepakko käyttää ultraääntä."
+      }
+     ]
+    }
+   ],
+   "links": {
+    "math": "fy5-17",
+    "concept": "fy5-14",
+    "transfer": "fy5-11",
+    "communication": "fy5-11"
+   }
+  },
+  {
+   "id": "fy9-aallot-s3",
+   "title": "Heilurin jaksonaika ja putoamiskiihtyvyys",
+   "source": "example",
+   "source_note": "Aineisto on keksitty esimerkki: luvut on laskettu heilurin mallista, kun $g = 9{,}81\\,\\text{m/s}^2$ ja todellinen heilurin pituus on $1{,}5\\,\\text{cm}$ mitattua suurempi, ja niihin on lisätty käsiajanoton kaltaista vaihtelua.",
+   "skills": [
+    "fy5-9",
+    "fy1-4",
+    "fy1-3"
+   ],
+   "text": "Opiskelijaryhmä tutki heilurin jaksonaikaa. Pieni teräskuula ripustettiin ohueen lankaan, ja langan pituutta muutettiin. Pituus $l$ mitattiin mittanauhalla langan kiinnityskohdasta kuulan yläpintaan. Kuula vedettiin noin $5^\\circ$:n kulmaan ja päästettiin irti, ja kymmenen heilahduksen aika $t_{10}$ mitattiin sekuntikellolla.\n\n| $l\\ (\\text{m})$ | $t_{10}\\ (\\text{s})$ |\n|---|---|\n| $0{,}200$ | $9{,}36$ |\n| $0{,}350$ | $12{,}07$ |\n| $0{,}500$ | $14{,}44$ |\n| $0{,}650$ | $16{,}29$ |\n| $0{,}800$ | $18{,}14$ |\n| $0{,}950$ | $19{,}76$ |",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "graph",
+     "points": 4,
+     "text": "Esitä heilurin jaksonaika langan pituuden funktiona kuvaajana. Onko jaksonaika suoraan verrannollinen pituuteen? Perustele kuvaajan avulla.",
+     "criteria": [
+      {
+       "key": "graph_axes",
+       "points": 1,
+       "detail": "Vaaka-akselilla $l\\ (\\text{m})$, pystyakselilla $T\\ (\\text{s})$; akselit alkavat nollasta."
+      },
+      {
+       "key": "graph_points",
+       "points": 1,
+       "detail": "Jaksonajat $T = \\dfrac{t_{10}}{10}$ jokaiselle pituudelle."
+      },
+      {
+       "text": "Perustelee kuvaajalla: pisteet eivät ole origon kautta kulkevalla suoralla, vaan kuvaaja loivenee; esimerkiksi nelinkertainen pituus $0{,}200\\,\\text{m} \\to 0{,}800\\,\\text{m}$ antaa vain noin kaksinkertaisen jaksonajan.",
+       "tag": "graph",
+       "points": 2
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "graph",
+     "points": 5,
+     "text": "Esitä aineisto niin, että pisteisiin sopii suora, kun heilahdukset ovat pieniä. Perustele valintasi ja sovita pisteisiin suora.",
+     "criteria": [
+      {
+       "text": "Perustelee linearisoinnin: kun $T = 2\\pi\\sqrt{\\dfrac{l}{g}}$ korotetaan toiseen, saadaan $T^2 = \\dfrac{4\\pi^2}{g}\\,l$, joten $T^2$ on suoraan verrannollinen pituuteen.",
+       "tag": "transfer",
+       "points": 2
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$T^2$ jokaiselle mittaukselle yksikössä $\\text{s}^2$, esimerkiksi $(0{,}936\\,\\text{s})^2 = 0{,}876\\,\\text{s}^2$."
+      },
+      {
+       "key": "graph_fit",
+       "points": 2,
+       "detail": "Yksi suora pisteiden lomitse; vaaka-akselilla $l\\ (\\text{m})$, pystyakselilla $T^2\\ (\\text{s}^2)$. Suoraa ei pakoteta origon kautta."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "calc",
+     "points": 6,
+     "text": "Määritä kuvaajasta putoamiskiihtyvyys. Vertaa tulosta arvoon $9{,}81\\,\\text{m/s}^2$.",
+     "answer": {
+      "value": 9.78,
+      "unit": "m/s²",
+      "tolerance": 0.02
+     },
+     "criteria": [
+      {
+       "key": "graph_read",
+       "points": 2,
+       "detail": "Kulmakerroin kahdesta kaukana toisistaan olevasta suoran pisteestä, esimerkiksi $(0{,}10\\,\\text{m};\\ 0{,}46\\,\\text{s}^2)$ ja $(0{,}90\\,\\text{m};\\ 3{,}69\\,\\text{s}^2)$: $k \\approx 4{,}04\\,\\text{s}^2\\text{/m}$."
+      },
+      {
+       "text": "Tulkitsee kulmakertoimen: $k = \\dfrac{4\\pi^2}{g}$.",
+       "tag": "graph",
+       "points": 1
+      },
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$g = \\dfrac{4\\pi^2}{k}$"
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$g \\approx 9{,}8\\,\\text{m/s}^2$; tulokset $9{,}6$–$10{,}0\\,\\text{m/s}^2$ hyväksytään."
+      },
+      {
+       "key": "reasonableness",
+       "points": 1,
+       "detail": "Ero arvoon $9{,}81\\,\\text{m/s}^2$ on alle $1\\,\\%$, mikä on käsiajanoton tarkkuuden rajoissa."
+      }
+     ]
+    },
+    {
+     "id": "d",
+     "kind": "calc",
+     "points": 5,
+     "text": "Suora ei kulje origon kautta. Mitä se kertoo mittauksesta? Kuinka pitkäksi ryhmän tavalla mitattu pituus $l$ on säädettävä, jotta heilurin jaksonaika on $2{,}00\\,\\text{s}$?",
+     "answer": {
+      "value": 0.976,
+      "unit": "m",
+      "tolerance": 0.02
+     },
+     "criteria": [
+      {
+       "text": "Tulkitsee vakiotermin: suora leikkaa $l$-akselin noin kohdassa $-0{,}014\\,\\text{m}$, joten heilurin todellinen pituus on noin $1{,}4\\,\\text{cm}$ mitattua suurempi. Pituus mitattiin kuulan yläpintaan eikä sen keskipisteeseen, joten kyse on systemaattisesta virheestä, joka on kuulan säteen suuruinen.",
+       "tag": "experiment",
+       "points": 2
+      },
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$T^2 = kl + b$, joten $l = \\dfrac{T^2 - b}{k}$"
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$l = \\dfrac{(2{,}00\\,\\text{s})^2 - 0{,}056\\,\\text{s}^2}{4{,}04\\,\\text{s}^2\\text{/m}} \\approx 0{,}976\\,\\text{m}$"
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$l \\approx 0{,}98\\,\\text{m}$; suoralta luetuilla arvoilla tulokset $0{,}97$–$0{,}98\\,\\text{m}$ hyväksytään."
+      }
+     ]
+    }
+   ],
+   "links": {
+    "graph": "fy1-4",
+    "math": "fy5-9",
+    "transfer": "fy5-9",
+    "experiment": "fy1-3"
+   }
+  },
+  {
+   "id": "fy9-aallot-s4",
+   "title": "Festivaali rantapuistossa",
+   "source": "example",
+   "source_note": "Festivaali, etäisyydet ja mittaustulos ovat keksitty esimerkki.",
+   "skills": [
+    "fy5-15",
+    "fy5-16",
+    "fy5-11"
+   ],
+   "text": "Kunnan rantapuistossa järjestetään kesäfestivaali. Lähimmät asuintalot ovat $400\\,\\text{m}$:n päässä lavasta, ja festivaalialue on aidattu $2\\,\\text{m}$:n korkuisella puuaidalla. Järjestäjän mittauksessa kaiutintornin edessä $20\\,\\text{m}$:n päässä intensiteettitaso oli $106\\,\\text{dB}$. Asukasillassa esitettiin kolme väitettä.\n\n1. ”Kun etäisyys kaksinkertaistuu, desibelilukema puolittuu, joten jo $40\\,\\text{m}$:n päässä taso on $53\\,\\text{dB}$, eikä taloille kuulu juuri mitään.”\n2. ”Aidan taakse kuuluu lähinnä bassoja, koska bassoäänet ovat aina voimakkaampia kuin korkeat äänet.”\n3. ”Lavan edessä $100\\,\\text{dB}$:n tasolla voi olla koko neljän tunnin konsertin ilman kuulonsuojaimia, koska taso on vain $15\\,\\text{dB}$ yli $85\\,\\text{dB}$:n.”\n\nOletetaan, että kaiutintorni on pistemäinen lähde ja ääni etenee ilman heijastuksia ja vaimenemista. Äänen nopeus on $340\\,\\text{m/s}$.",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "word",
+     "points": 5,
+     "text": "Arvioi väite 1. Kuinka suuri taso on mallin mukaan lähimpien talojen kohdalla?",
+     "criteria": [
+      {
+       "text": "Selittää, että pistemäisen lähteen intensiteetti $I = \\dfrac{P}{4\\pi r^2}$ putoaa kaksinkertaisella etäisyydellä neljäsosaan, joten taso laskee $10\\,\\text{dB} \\cdot \\lg 4 \\approx 6\\,\\text{dB}$ eikä puoleen.",
+       "tag": "concept",
+       "points": 2
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$40\\,\\text{m}$:n päässä noin $100\\,\\text{dB}$; $400\\,\\text{m}$:n päässä $106\\,\\text{dB} - 10\\,\\text{dB} \\cdot \\lg 20^2 \\approx 80\\,\\text{dB}$."
+      },
+      {
+       "key": "assumptions",
+       "points": 1,
+       "detail": "Malli on karkea arvio: ilma ja maasto vaimentavat ääntä, mutta myötätuuli ja heijastukset voivat nostaa tasoa."
+      },
+      {
+       "key": "conclusion",
+       "points": 1,
+       "detail": "Väite on väärä: desibeliasteikko on logaritminen, ja taloilla musiikki kuuluu selvästi."
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "word",
+     "points": 5,
+     "text": "Arvioi väite 2. Selitä aaltojen avulla, miksi aidan takana kuuluu eniten matalia ääniä.",
+     "criteria": [
+      {
+       "text": "Selittää diffraktion: aalto taipuu esteen taakse sitä voimakkaammin, mitä suurempi aallonpituus on esteen kokoon verrattuna.",
+       "tag": "concept",
+       "points": 2
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "Esimerkiksi $60\\,\\text{Hz}$:n aallonpituus on $\\tfrac{340\\,\\text{m/s}}{60\\,\\text{Hz}} \\approx 5{,}7\\,\\text{m}$, aitaa korkeampi, mutta $4\\,\\text{kHz}$:n vain noin $9\\,\\text{cm}$, joten aidan taakse jää korkeille äänille varjo."
+      },
+      {
+       "text": "Päättelee, että aita suojaa lähinnä korkeilta ääniltä, joten bassojen vähentäminen vaatii toimia lähteessä, esimerkiksi tason rajoittamista tai kaiuttimien suuntaamista.",
+       "tag": "transfer",
+       "points": 1
+      },
+      {
+       "key": "conclusion",
+       "points": 1,
+       "detail": "Havainto pitää paikkansa, mutta perustelu on väärä: bassot eivät ole aina voimakkaampia, vaan ne taipuvat aidan yli."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "word",
+     "points": 5,
+     "text": "Arvioi väite 3. Kuinka pitkä altistus on sallittu melun nyrkkisäännön mukaan, ja mitä muuttaisivat kuulonsuojaimet, joiden vaimennus on $20\\,\\text{dB}$?",
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$t_\\text{sall} = \\dfrac{t_0}{2^{\\,n}}$, missä $n = \\dfrac{L - 85\\,\\text{dB}}{3\\,\\text{dB}}$ ja $t_0 = 8\\,\\text{h}$"
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$n = 5$, joten $t_\\text{sall} = 8\\,\\text{h} : 32 = 0{,}25\\,\\text{h} = 15\\,\\text{min}$"
+      },
+      {
+       "text": "Selittää, että $15\\,\\text{dB}$ tarkoittaa intensiteettiä $10^{1{,}5} \\approx 32$-kertaisena, joten sama kuulolle haitallinen annos kertyy noin $\\tfrac{1}{32}$-osassa ajasta.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "text": "Päättelee, että hyvin asetetuilla suojaimilla taso korvalla on noin $80\\,\\text{dB}$, alle $85\\,\\text{dB}$:n, joten neljä tuntia on nyrkkisäännön rajoissa, kun suojaimia pidetään koko ajan.",
+       "tag": "transfer",
+       "points": 1
+      },
+      {
+       "key": "conclusion",
+       "points": 1,
+       "detail": "Väite on väärä: ilman suojaimia sallittu aika on vain noin $15\\,\\text{min}$, ja nyrkkisääntökin on arvio eikä takuu."
+      }
+     ]
+    }
+   ],
+   "links": {
+    "concept": "fy5-15",
+    "math": "fy5-16",
+    "transfer": "fy5-11",
+    "communication": "fy5-15"
+   }
+  },
+  {
+   "id": "fy9-aallot-s5",
+   "title": "Äänen nopeus kaiusta",
+   "source": "example",
+   "source_note": "Raportti ja mittaukset ovat keksitty esimerkki.",
+   "skills": [
+    "fy5-14",
+    "fy5-17",
+    "fy1-3",
+    "fy1-8"
+   ],
+   "text": "Opiskelijaryhmä mittasi äänen nopeuden koulun pihalla marraskuussa, kun ilman lämpötila oli $5\\,{}^\\circ\\text{C}$ ja sää tyyni. Ryhmä seisoi $85{,}0\\,\\text{m}$:n päässä koulun tiiliseinästä; etäisyys mitattiin mittapyörällä. Yksi opiskelija löi kaksi lautaa yhteen, ja toinen käynnisti sekuntikellon nähdessään lyönnin ja pysäytti sen kuullessaan kaiun.\n\n| Mittaus | $t\\ (\\text{s})$ |\n|---|---|\n| 1 | $0{,}45$ |\n| 2 | $0{,}52$ |\n| 3 | $0{,}41$ |\n| 4 | $0{,}55$ |\n| 5 | $0{,}47$ |\n\nRyhmän johtopäätös: ”Äänen nopeus oli $354\\,\\text{m/s}$. Se on suurempi kuin kirjan arvo $343\\,\\text{m/s}$, joten ääni kulkee kylmässä ilmassa nopeammin kuin lämpimässä.”",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "calc",
+     "points": 4,
+     "text": "Laske äänen nopeus mittausten keskiarvosta ja arvioi tuloksen epävarmuus.",
+     "answer": {
+      "value": 354.2,
+      "unit": "m/s",
+      "tolerance": 0.02
+     },
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$v = \\dfrac{2d}{\\bar{t}}$, missä $\\bar{t}$ on keskiarvo; $\\Delta t = \\dfrac{t_\\text{max} - t_\\text{min}}{2}$"
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$\\bar{t} = 0{,}48\\,\\text{s}$, joten $v = \\dfrac{170\\,\\text{m}}{0{,}48\\,\\text{s}} \\approx 354\\,\\text{m/s}$; $\\Delta t = 0{,}07\\,\\text{s}$"
+      },
+      {
+       "key": "uncertainty",
+       "points": 1,
+       "detail": "Suhteellinen epävarmuus $\\tfrac{0{,}07}{0{,}48} \\approx 15\\,\\%$, joten $\\Delta v \\approx 50\\,\\text{m/s}$; ääriarvoilla $v$ on noin $310$–$415\\,\\text{m/s}$."
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$v = (350 \\pm 50)\\,\\text{m/s}$: epävarmuus yhdellä merkitsevällä numerolla ja tulos samaan tarkkuuteen."
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "word",
+     "points": 5,
+     "text": "Arvioi ryhmän johtopäätös.",
+     "criteria": [
+      {
+       "text": "Toteaa, että kirjan $343\\,\\text{m/s}$ koskee $20\\,{}^\\circ\\text{C}$:n ilmaa ja että kaasussa äänen nopeus kasvaa lämpötilan noustessa, noin $0{,}6\\,\\text{m/s}$ astetta kohti, joten $5\\,{}^\\circ\\text{C}$:ssa odotetaan noin $334\\,\\text{m/s}$.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "key": "uncertainty",
+       "points": 2,
+       "detail": "Epävarmuus noin $\\pm 50\\,\\text{m/s}$ kattaa sekä $334\\,\\text{m/s}$:n että $343\\,\\text{m/s}$:n, joten mittaus ei pysty erottamaan niitä; aineisto ei osoita mitään eroa."
+      },
+      {
+       "key": "error_sources",
+       "points": 1,
+       "detail": "Käsiajanotossa reaktioaika käynnistettäessä ja pysäytettäessä on sekunnin kymmenesosien luokkaa, yhtä suuri kuin tulosten vaihtelu, eikä se välttämättä kumoudu; matkan epävarmuus on merkityksetön."
+      },
+      {
+       "key": "conclusion",
+       "points": 1,
+       "detail": "Johtopäätös ei ole perusteltu: kylmässä ilmassa ääni kulkee hitaammin, ja mittauksen tarkkuus ei riitä lämpötilan vaikutuksen havaitsemiseen."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "word",
+     "points": 6,
+     "text": "Suunnittele, miten mittausta parannetaan niin, että lämpötilan vaikutus äänen nopeuteen voidaan havaita.",
+     "criteria": [
+      {
+       "text": "Aika mitataan ilman reaktioaikaa: yksi mikrofoni, esimerkiksi puhelin, tallentaa sekä lyönnin että kaiun, ja aikaero luetaan äänen kuvaajasta; tai kaksi mikrofonia tunnetun matkan päässä toisistaan.",
+       "tag": "experiment",
+       "points": 2
+      },
+      {
+       "text": "Mitataan useilla etäisyyksillä ja piirretään matka ajan funktiona: kulmakerroin antaa nopeuden, ja vakioviive näkyy vakiotermissä eikä vääristä tulosta.",
+       "tag": "experiment",
+       "points": 1
+      },
+      {
+       "key": "uncertainty",
+       "points": 1,
+       "detail": "Arvioi tarvittavan tarkkuuden: $334\\,\\text{m/s}$ ja $343\\,\\text{m/s}$ eroavat noin $3\\,\\%$, joten ajan epävarmuuden on oltava alle noin $1\\,\\%$, esimerkiksi $0{,}5\\,\\text{s}$:n kulkuajassa alle $5\\,\\text{ms}$."
+      },
+      {
+       "text": "Mitataan ilman lämpötila jokaisen mittauksen aikana, toistetaan mittaukset, mitataan tyynellä säällä tai molempiin suuntiin tuulen vaikutuksen poistamiseksi ja ilmoitetaan tulos epävarmuuksineen.",
+       "tag": "experiment",
+       "points": 2
+      }
+     ]
+    }
+   ],
+   "links": {
+    "math": "fy5-17",
+    "concept": "fy5-14",
+    "experiment": "fy1-8",
+    "communication": "fy1-3"
+   }
+  },
+  {
+   "id": "fy9-aallot-s6",
+   "title": "Benjihyppy sillalta",
+   "source": "example",
+   "source_note": "Hyppy ja nauhan luvut ovat keksitty esimerkki. Todellisen kuminauhan voima ei ole täsmälleen harmoninen.",
+   "skills": [
+    "fy4-8",
+    "fy5-8",
+    "fy5-9",
+    "fy4-4"
+   ],
+   "text": "Benjihypyssä hyppääjä putoaa sillalta joen yllä. Hänen nilkkoihinsa kiinnitetty kuminauha alkaa venyä, kun hyppääjä on pudonnut nauhan lepopituuden verran, ja pysäyttää hänet ennen vettä.\n\n- hyppääjän massa varusteineen $72{,}0\\,\\text{kg}$\n- nauhan lepopituus $18{,}0\\,\\text{m}$\n- valmistajan kokeessa nauha venyi kuin jousi, jonka jousivakio on $120\\,\\text{N/m}$\n- ilmanvastus ja nauhan massa jätetään huomiotta, ja hyppääjä käsitellään pistemäisenä kappaleena, joka lähtee levosta",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "calc",
+     "points": 3,
+     "text": "Kuinka suuri hyppääjän nopeus on, kun nauha alkaa venyä?",
+     "answer": {
+      "value": 18.79,
+      "unit": "m/s",
+      "tolerance": 0.02
+     },
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "Mekaaninen energia säilyy: $mgL_0 = \\tfrac12 mv^2$, joten $v = \\sqrt{2gL_0}$"
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$v = \\sqrt{2 \\cdot 9{,}81\\,\\text{m/s}^2 \\cdot 18{,}0\\,\\text{m}}$"
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$v \\approx 18{,}8\\,\\text{m/s}$ kolmella merkitsevällä numerolla"
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "calc",
+     "points": 5,
+     "text": "Kuinka syvälle sillan alapuolelle hyppääjä putoaa?",
+     "answer": {
+      "value": 39.59,
+      "unit": "m",
+      "tolerance": 0.02
+     },
+     "criteria": [
+      {
+       "text": "Perustelee energian säilymisen koko pudotukselle: alimmassa kohdassa nopeus on nolla, ja painon potentiaalienergian muutos $mg(L_0 + x)$ on muuttunut nauhan potentiaalienergiaksi $\\tfrac12 kx^2$.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$mg(L_0 + x) = \\tfrac12 kx^2$, toisen asteen yhtälö $\\tfrac12 kx^2 - mgx - mgL_0 = 0$ ja sen positiivinen ratkaisu"
+      },
+      {
+       "key": "calculation",
+       "points": 2,
+       "detail": "$60\\,\\tfrac{\\text{N}}{\\text{m}} \\cdot x^2 - 706{,}3\\,\\text{N} \\cdot x - 12\\,714\\,\\text{J} = 0$, joten $x \\approx 21{,}6\\,\\text{m}$"
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "Syvyys $L_0 + x \\approx 39{,}6\\,\\text{m}$ kolmella merkitsevällä numerolla"
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "calc",
+     "points": 4,
+     "text": "Kuinka suuri ja minkä suuntainen on hyppääjän kiihtyvyys alimmassa kohdassa?",
+     "answer": {
+      "value": 26.17,
+      "unit": "m/s²",
+      "tolerance": 0.02
+     },
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "Newtonin toinen laki ylöspäin positiivisena: $kx - mg = ma$, joten $a = \\dfrac{kx}{m} - g$"
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$kx \\approx 2590\\,\\text{N}$ ja $a = \\dfrac{2590\\,\\text{N} - 706\\,\\text{N}}{72{,}0\\,\\text{kg}} \\approx 26{,}2\\,\\text{m/s}^2$"
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$a \\approx 26{,}2\\,\\text{m/s}^2$ ylöspäin"
+      },
+      {
+       "key": "reasonableness",
+       "points": 1,
+       "detail": "Kiihtyvyys on noin $2{,}7g$ ja nauhan voima noin $3{,}7$ kertaa paino: voimakas mutta lyhytaikainen, ja valjaat jakavat voiman."
+      }
+     ]
+    },
+    {
+     "id": "d",
+     "kind": "calc",
+     "points": 3,
+     "text": "Lopulta hyppääjä jää roikkumaan nauhan varaan ja keinuu ylös ja alas pienin värähdyksin. Kuinka suuri on värähtelyn jaksonaika?",
+     "answer": {
+      "value": 4.867,
+      "unit": "s",
+      "tolerance": 0.02
+     },
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$T = 2\\pi\\sqrt{\\dfrac{m}{k}}$; paino vain siirtää tasapainoasemaa $x_0 = \\dfrac{mg}{k}$ alemmas"
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$T = 2\\pi\\sqrt{\\dfrac{72{,}0\\,\\text{kg}}{120\\,\\text{N/m}}} \\approx 4{,}87\\,\\text{s}$"
+      },
+      {
+       "key": "assumptions",
+       "points": 1,
+       "detail": "Tulos on arvio: kuminauhan voima ei ole täsmälleen harmoninen, ja ilmanvastus vaimentaa värähtelyä."
+      }
+     ]
+    }
+   ],
+   "links": {
+    "math": "fy4-8",
+    "concept": "fy4-8",
+    "transfer": "fy5-9"
+   }
+  }
+ ]
+}

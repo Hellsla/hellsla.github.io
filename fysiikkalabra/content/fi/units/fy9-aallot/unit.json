@@ -1,0 +1,14 @@
+{
+ "id": "fy9-aallot",
+ "course": "FY9",
+ "chapter": 4,
+ "order": 1,
+ "title": "Värähtely, aallot ja ääni",
+ "description": "Kerrataan FY5-moduulin värähtelyn suureet, jousivoima ja jousen energia, jousivärähtelijä ja heiluri, aaltojen eteneminen, heijastuminen ja diffraktio, interferenssi, seisovat aallot, ääni ja Dopplerin ilmiö, intensiteetti ja desibelit, melu sekä ultraääni ja maanjäristysaallot ja ratkaistaan niistä ylioppilaskokeen tyylisiä tehtäviä.",
+ "kind": "review",
+ "minutes": 75,
+ "subjects": [
+  "physics"
+ ],
+ "sources": []
+}
