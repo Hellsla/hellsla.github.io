@@ -45,7 +45,7 @@ kA, kB = fit(list(zip(V, mA)))[0], fit(list(zip(V, mB)))[0]   # 2,707 g/cm³ and
 a["fy1-4-L2-07"] = round(kB / kA, 1)                      # 7,835 / 2,707 = 2,89 -> 2,9 (tolerance 0,05: 2,76…3,04)
 sx = [(100.0, 8.1), (200.0, 16.3), (300.0, 24.2), (400.0, 32.5), (500.0, 40.1), (600.0, 51.8), (700.0, 68.9)]   # data of L3-04
 a["fy1-4-L3-04"] = round(fit(sx[:5])[0], 3)               # linear part 100…500 g: 0,0802 mm/g (the points at 600 and 700 g lie 3,5 and 12,6 mm above the line)
-k_hi, k_lo = (3.50 - 0.20) / 6.0, (3.00 - 0.60) / 6.0     # steepest 0,55 m/s, shallowest 0,40 m/s
+k_hi, k_lo = (3.50 - 0.75) / (6.0 - 1.0), (2.60 - 1.40) / (5.0 - 2.0)   # steepest 0,55 m/s, shallowest 0,40 m/s (data table of L3-05; pupil wrongly used the whole difference 0,15 -> 32 %)
 a["fy1-4-L3-05"] = ((k_hi - k_lo) / 2) / ((k_hi + k_lo) / 2) * 100   # 0,075 / 0,475 = 15,8 % -> 16 %
 # Inquiry tasks (not in exercises.json): graph reading k = (50 − 20) km / (3,0 − 1,0) h = 15 km/h; walk tarkistus-2 k = 3,0 km/h, b = 4,0 km, t = 7,0 h (swapped k and b: (25 − 3,0)/4,0 = 5,5 h); kettle example k = (60,0 − 20,0)/5,0 = 8,0 °C/min, t(40 °C) = (40 − 20)/8,0 = 2,5 min
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))
