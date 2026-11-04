@@ -41,6 +41,58 @@
       "unit": "N",
       "tolerance": 0.02,
       "fbd": "equations"
+    },
+    {
+      "id": "fy4-4-L1-06",
+      "level": 1,
+      "text": "Hissi nousee ylöspäin ja hidastuu pysähtyäkseen. Positiivinen suunta on ylös. Mikä väite hissiin vaikuttavasta kokonaisvoimasta $\\Sigma\\overline{F}$ on oikein?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Kokonaisvoima osoittaa alas, koska nopeus pienenee ja kiihtyvyys osoittaa alas.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Kokonaisvoima osoittaa ylös, koska hissi liikkuu ylöspäin ja nopeuden suunta ratkaisee.",
+          "feedback": "Kokonaisvoiman suunnan määrää kiihtyvyyden suunta, ei nopeuden suunta. Kun hissi hidastuu, nopeus pienenee, joten kiihtyvyys ja kokonaisvoima osoittavat nopeuden vastaiseen suuntaan eli alas."
+        },
+        {
+          "text": "Kokonaisvoima osoittaa alas, koska nopeus pienenee ja kiihtyvyys osoittaa alas.",
+          "feedback": "Oikein: Newtonin toisen lain mukaan $\\Sigma\\overline{F} = m\\overline{a}$, joten kokonaisvoima osoittaa kiihtyvyyden suuntaan. Hidastuessaan hissi saa kiihtyvyyden alas, vaikka se liikkuu yhä ylöspäin. Köyden voima on tällöin painoa pienempi.",
+          "correct": true
+        },
+        {
+          "text": "Kokonaisvoima on nolla, koska hissin liikkeen suunta pysyy koko ajan samana.",
+          "feedback": "Kokonaisvoima on nolla vain, kun nopeus ei muutu. Hissin nopeus pienenee, joten kiihtyvyys ei ole nolla. Liikkeen suunnan pysyminen samana ei kerro kiihtyvyydestä mitään."
+        },
+        {
+          "text": "Kokonaisvoima osoittaa ylös, koska köyden voima on aina painoa suurempi hissin liikkuessa ylöspäin.",
+          "feedback": "Köyden voima on painoa suurempi vain nousua aloittaessa. Tasaisessa nousussa voimat ovat yhtä suuret, ja hidastuessa köyden voima on painoa pienempi. Kokonaisvoima seuraa kiihtyvyyttä, ei liikkeen suuntaa."
+        }
+      ]
+    },
+    {
+      "id": "fy4-4-L1-07",
+      "level": 1,
+      "kind": [
+        "reasoning"
+      ],
+      "text": "Jääkiekkokiekko, jonka massa on $0{,}17\\,\\text{kg}$, saa mailan iskusta vaakasuoran kiihtyvyyden $400\\,\\text{m/s}^2$. Kuinka suuri kokonaisvoima kiekkoon vaikuttaa iskun aikana?",
+      "answer": 68,
+      "unit": "N",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-4-L1-08",
+      "level": 1,
+      "kind": [
+        "reasoning"
+      ],
+      "text": "Moottorikelkkaan vaikuttaa vaakasuora kokonaisvoima $600\\,\\text{N}$, ja sen kiihtyvyys on $1{,}5\\,\\text{m/s}^2$. Mikä on moottorikelkan massa?",
+      "answer": 400,
+      "unit": "kg",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -78,6 +130,102 @@
       "unit": "m/s²",
       "tolerance": 0.02,
       "fbd": "equations"
+    },
+    {
+      "id": "fy4-4-L2-05",
+      "level": 2,
+      "kind": [
+        "data",
+        "graph",
+        "experiment"
+      ],
+      "text": "Ilmatyynyradalla kärryä veti vaakasuora vakiovoima, jonka suuruutta muutettiin. Kärryn massa pysyi samana, ja kitka oli niin pieni, että se voidaan jättää huomiotta. Kullakin voimalla $F$ mitattiin kärryn kiihtyvyys $a$. Taulukko on esimerkkiaineisto.\n\nPiirrä mittauspisteistä $(F, a)$-kuvaaja ja sovita pisteisiin suora origon kautta. Määritä suoran kulmakerroin ja sen avulla kärryn massa. Vastauslaatikkoon kärryn massa.",
+      "answer": 0.5,
+      "unit": "kg",
+      "tolerance": 0.04,
+      "data": {
+        "caption": "Kärryn kiihtyvyys eri vetovoimilla (esimerkkiaineisto)",
+        "columns": [
+          "$F\\,(\\text{N})$",
+          "$a\\,(\\text{m/s}^2)$"
+        ],
+        "rows": [
+          [
+            "0.20",
+            "0.41"
+          ],
+          [
+            "0.40",
+            "0.78"
+          ],
+          [
+            "0.60",
+            "1.22"
+          ],
+          [
+            "0.80",
+            "1.58"
+          ],
+          [
+            "1.00",
+            "2.03"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy4-4-L2-06",
+      "level": 2,
+      "kind": [
+        "data",
+        "graph",
+        "experiment"
+      ],
+      "text": "Kärryä vedettiin vaakasuoralla radalla joka kerta samalla vaakasuoralla voimalla. Kärryn massaa $m$ muutettiin lisäämällä siihen punnuksia, ja kullakin massalla mitattiin kiihtyvyys $a$. Kitka oli pieni ja jätetään huomiotta. Taulukko on esimerkkiaineisto.\n\na) Laske jokaiselle massalle käänteisluku $1/m$ ja piirrä $(1/m, a)$-kuvaaja. Sovita pisteisiin suora origon kautta ja määritä sen kulmakerroin. Mitä kulmakerroin kertoo?\n\nb) Mitkä suureet piti pitää vakioina, jotta mittaus on oikeudenmukainen? Vastauslaatikkoon vetävän voiman suuruus.",
+      "answer": 1.2,
+      "unit": "N",
+      "tolerance": 0.04,
+      "data": {
+        "caption": "Kärryn kiihtyvyys eri massoilla (esimerkkiaineisto)",
+        "columns": [
+          "$m\\,(\\text{kg})$",
+          "$a\\,(\\text{m/s}^2)$"
+        ],
+        "rows": [
+          [
+            "0.20",
+            "6.1"
+          ],
+          [
+            "0.30",
+            "3.9"
+          ],
+          [
+            "0.40",
+            "3.1"
+          ],
+          [
+            "0.50",
+            "2.35"
+          ],
+          [
+            "0.60",
+            "2.0"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy4-4-L2-07",
+      "level": 2,
+      "kind": [
+        "error"
+      ],
+      "text": "Rakennushissin korin ja kuorman yhteismassa on $500\\,\\text{kg}$. Hissi nousee, ja kannatinköyden jännitysvoima on $5{,}40\\,\\text{kN}$.\n\nOpiskelija ratkaisi kiihtyvyyden näin: \"Köysi vetää koria ylös voimalla $5{,}40\\,\\text{kN}$, joten kokonaisvoima on $5400\\,\\text{N}$ ja $a = 5400\\,\\text{N} : 500\\,\\text{kg} = 10{,}8\\,\\text{m/s}^2$.\"\n\nMikä on opiskelijan ratkaisun virhe? Laske oikea kiihtyvyys. Ilmanvastus jätetään huomiotta. Vastauslaatikkoon hissin kiihtyvyyden suuruus.",
+      "answer": 0.99,
+      "unit": "m/s²",
+      "tolerance": 0.02,
+      "fbd": "error"
     }
   ],
   "level3": [
@@ -106,6 +254,86 @@
       "unit": "s",
       "tolerance": 0.02,
       "fbd": "equations"
+    },
+    {
+      "id": "fy4-4-L3-04",
+      "level": 3,
+      "kind": [
+        "data",
+        "graph",
+        "experiment",
+        "model"
+      ],
+      "text": "Opiskelijat tutkivat, miten pöytää pitkin vedetyn kärryn kiihtyvyys $a$ riippuu vaakasuorasta vetovoimasta $F$. Kärryn massa pysyi samana. Liikkuvaan kärryyn vaikuttaa alustan vakiosuuruinen kitkavoima. Taulukko on esimerkkiaineisto.\n\na) Piirrä mittauspisteistä $(F, a)$-kuvaaja ja sovita pisteisiin suora. Perustele, miksi suora ei kulje origon kautta.\n\nb) Määritä suoran kulmakertoimesta kärryn massa.\n\nc) Määritä kitkavoiman suuruus suoran ja $F$-akselin leikkauskohdasta. Vastauslaatikkoon kitkavoiman suuruus.",
+      "answer": 1.18,
+      "unit": "N",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Kärryn kiihtyvyys eri vetovoimilla (esimerkkiaineisto)",
+        "columns": [
+          "$F\\,(\\text{N})$",
+          "$a\\,(\\text{m/s}^2)$"
+        ],
+        "rows": [
+          [
+            "2.0",
+            "0.40"
+          ],
+          [
+            "3.0",
+            "0.91"
+          ],
+          [
+            "4.0",
+            "1.42"
+          ],
+          [
+            "5.0",
+            "1.88"
+          ],
+          [
+            "6.0",
+            "2.41"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy4-4-L3-05",
+      "level": 3,
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "text": "Hississä seisoo henkilö, jonka massa on $70\\,\\text{kg}$. Hissi lähtee levosta ylöspäin ja liikkuu kolmessa vaiheessa. Vaiheiden 1 ja 2 kiihtyvyydet on mitattu kiihtyvyysanturilla (esimerkkiaineisto), ja positiivinen suunta on ylös.\n\nVaiheessa 3 hissi hidastuu tasaisesti ja pysähtyy hetkellä $t = 13{,}0\\,\\text{s}$.\n\na) Laske hissin suurin nopeus.\n\nb) Laske hissin kiihtyvyys vaiheessa 3.\n\nc) Piirrä henkilön voimakuvio vaiheessa 3 ja laske lattian tukivoima henkilöön. Vertaa sitä henkilön painoon ja perustele, miksi tukivoima eroaa painosta. Vastauslaatikkoon c)-kohdan tukivoima.",
+      "answer": 634.2,
+      "unit": "N",
+      "tolerance": 0.02,
+      "fbd": "equations",
+      "data": {
+        "caption": "Hissin kiihtyvyys vaiheissa 1 ja 2 (esimerkkiaineisto)",
+        "columns": [
+          "Vaihe",
+          "$t_{\\text{alku}}\\,(\\text{s})$",
+          "$t_{\\text{loppu}}\\,(\\text{s})$",
+          "$a\\,(\\text{m/s}^2)$"
+        ],
+        "rows": [
+          [
+            "1",
+            "0.0",
+            "3.0",
+            "1.0"
+          ],
+          [
+            "2",
+            "3.0",
+            "9.0",
+            "0.0"
+          ]
+        ]
+      }
     }
   ]
 }

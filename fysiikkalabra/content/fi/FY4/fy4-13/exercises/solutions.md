@@ -245,3 +245,120 @@ a alas
 **Sijoitus:** $a = \dfrac{0{,}50\,\text{kg} \cdot 9{,}81\,\text{m/s}^2}{2{,}0\,\text{kg}} = 2{,}4525\,\text{m/s}^2$ ja $t = \sqrt{\dfrac{2 \cdot 0{,}90\,\text{m}}{2{,}4525\,\text{m/s}^2}} = 0{,}857\,\text{s}$
 **Vastaus:** $0{,}86\,\text{s}$, kaksi merkitsevää numeroa kuten tiedoissa $0{,}90\,\text{m}$ ja $0{,}50\,\text{kg}$.
 **Järkevyys:** Tarkistus: loppunopeus on $at \approx 2{,}1\,\text{m/s}$ ja keskinopeus $1{,}05\,\text{m/s}$, jolloin $1{,}05\,\text{m/s} \cdot 0{,}857\,\text{s} \approx 0{,}90\,\text{m}$. Vapaasti putoava punnus ($a = g$) kulkisi saman matkan ajassa $0{,}43\,\text{s}$, joten $0{,}86\,\text{s}$ on järkevästi pidempi.
+
+## fy4-13-L1-06
+**Kysytty:** miten langan jännitysvoima $T$ ja punnuksen paino $G_2$ suhtautuvat toisiinsa, kun punnus laskee kiihtyen.
+**Periaate:** Newtonin toisen lain mukaan kappaleen kokonaisvoima osoittaa kiihtyvyyden suuntaan. Punnus kiihtyy alas, joten sen kokonaisvoima osoittaa alas. Punnukseen vaikuttavat vain paino alas ja langan jännitysvoima ylös.
+**Mallivastaus:** Punnukselle pätee $G_2 - T = m_2 a$, ja koska $a > 0$ alaspäin, $G_2 - T > 0$. Jännitysvoima on siis pienempi kuin punnuksen paino. Lanka ei kannattele koko painoa, koska punnus kiihtyy alas eikä ole levossa. Lanka ei myöskään voi vetää voimakkaammin kuin paino, sillä silloin punnuksen kokonaisvoima osoittaisi ylös eikä punnus laskisi. Lanka vetää kärryä ja punnusta samalla voimalla $T$, joten se ei jaa voimaansa puoliksi: erotus painoon on aina $m_2 a$.
+
+## fy4-13-L1-07
+**Annettu:** $m_1 = 0{,}30\,\text{kg}$ ja $m_2 = 0{,}70\,\text{kg}$ langan päissä, $g = 9{,}81\,\text{m/s}^2$; lanka on kevyt ja venymätön, väkipyörä kevyt ja kitkaton, ilmanvastus jätetään huomiotta
+**Kysytty:** kappaleiden yhteinen kiihtyvyys $a$ yksikössä $\text{m/s}^2$
+**Periaate:** Kummallekin kappaleelle kirjoitetaan oma liikeyhtälö. Lanka on venymätön, joten kappaleiden kiihtyvyyksillä on sama suuruus $a$, ja kevyt lanka vetää kumpaakin voimalla $T$. Raskaampi kappale laskee ja kevyempi nousee.
+**Voimakuvio:** Kevyempi kappale suorakulmiona, positiivinen suunta ylös: $\overline{T}_1$ ylös ja $\overline{G}_1$ alas. Raskaampi kappale suorakulmiona, positiivinen suunta alas: $\overline{G}_2$ alas ja $\overline{T}_2$ ylös. Nuoli $\overline{T}$ on lyhyempi kuin $\overline{G}_2$ ja pidempi kuin $\overline{G}_1$.
+```voimakuvio
+G_1 2,943
+T_1 4,12 ylös
+a ylös
+---
+G_2 6,867
+T_2 4,12 ylös
+a alas
+```
+**Kaava:** $T - m_1 g = m_1 a$ ja $m_2 g - T = m_2 a$. Yhteenlaskusta $T$ poistuu: $(m_2 - m_1)\,g = (m_1 + m_2)\,a$, joten $a = \dfrac{(m_2 - m_1)\,g}{m_1 + m_2}$
+**Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
+**Sijoitus:** $a = \dfrac{(0{,}70\,\text{kg} - 0{,}30\,\text{kg}) \cdot 9{,}81\,\text{m/s}^2}{0{,}30\,\text{kg} + 0{,}70\,\text{kg}} = \dfrac{0{,}40 \cdot 9{,}81}{1{,}00}\,\text{m/s}^2 = 3{,}924\,\text{m/s}^2$
+**Vastaus:** $3{,}9\,\text{m/s}^2$, kaksi merkitsevää numeroa kuten massoissa $0{,}30\,\text{kg}$ ja $0{,}70\,\text{kg}$.
+**Järkevyys:** Kiihtyvyys on pienempi kuin $g = 9{,}81\,\text{m/s}^2$, koska kevyempi kappale hidastaa raskaampaa. Jännitysvoima $T = m_1 (g + a) = 0{,}30\,\text{kg} \cdot 13{,}73\,\text{m/s}^2 = 4{,}12\,\text{N}$ antaa raskaammalle $m_2 g - T = 6{,}87\,\text{N} - 4{,}12\,\text{N} = 2{,}75\,\text{N} = m_2 a$.
+
+## fy4-13-L1-08
+**Kysytty:** mitkä voimat vaikuttavat kärryyn pöydän suunnassa, kun punnus laskee langan varassa.
+**Periaate:** Kappaleen voimakuvioon piirretään vain voimat, jotka kohdistuvat juuri siihen. Jokainen voima syntyy vuorovaikutuksesta: pöydän suunnassa kärryyn koskee vain lanka. Kärryn paino ja pöydän tukivoima ovat pystysuorat.
+**Mallivastaus:** Punnuksen paino on Maan voima punnukseen, ja se kuuluu punnuksen voimakuvioon. Lanka välittää punnuksen vaikutuksen kärryyn jännitysvoimana $T$, ja se on kärryn ainoa pöydän suuntainen voima. Kärryn liikeyhtälö pöydän suunnassa on siis $T = m_1 a$. Kärry liikkuu eteenpäin, mutta liike ei ole voima eikä liike-energiaa piirretä voimakuvioon. Koska punnus kiihtyy alas, jännitysvoima on pienempi kuin punnuksen paino: $T < m_2 g$.
+
+## fy4-13-L2-05
+**Annettu:** punnusten yhteenlaskettu massa $M = 0{,}500\,\text{kg}$; taulukosta $\Delta m = 50$; $100$; $150$; $200$ ja $250\,\text{g}$ sekä $a = 0{,}96$; $2{,}02$; $2{,}88$; $3{,}97$ ja $4{,}84\,\text{m/s}^2$ (esimerkkiaineisto)
+**Kysytty:** a) kaava $a$:lle massaeron $\Delta m$ avulla; b) putoamiskiihtyvyys $g$ yksikössä $\text{m/s}^2$
+**Periaate:** Kummallekin punnukselle kirjoitetaan oma liikeyhtälö. Lanka on venymätön ja kevyt, joten punnusten kiihtyvyyden suuruus $a$ ja jännitysvoima $T$ ovat samat. Kun yhtälöt lasketaan yhteen, $T$ poistuu ja jäljelle jää suora verrannollisuus $a \propto \Delta m$. Suoran kulmakertoimesta saadaan $g$.
+**Kuvaajan lukeminen:** Pisteet $(\Delta m, a)$ asettuvat lähes suoralle, joka kulkee origon kautta; yksittäiset pisteet poikkeavat siitä enintään noin $0{,}1\,\text{m/s}^2$, mikä on mittauksen satunnaisvaihtelua. Origon kautta kulkeva sovitussuora osuu viimeisen pisteen kohdalla arvoon $a = 4{,}9\,\text{m/s}^2$, kun $\Delta m = 0{,}250\,\text{kg}$, joten kulmakerroin on $k = \dfrac{4{,}9\,\text{m/s}^2}{0{,}250\,\text{kg}} = 19{,}6\,\dfrac{\text{m/s}^2}{\text{kg}}$.
+**Kaava:** Kevyempi $m_1$ nousee ja raskaampi $m_2$ laskee: $T - m_1 g = m_1 a$ ja $m_2 g - T = m_2 a$. Yhteenlaskusta $(m_2 - m_1)\,g = (m_1 + m_2)\,a$, joten $a = \dfrac{g}{M}\,\Delta m$. Kulmakerroin on $k = \dfrac{g}{M}$, joten $g = k\,M$
+**Muunnokset:** $\Delta m = 250\,\text{g} = 0{,}250\,\text{kg}$; muut suureet ovat SI-yksiköissä.
+**Sijoitus:** $g = 19{,}6\,\dfrac{\text{m/s}^2}{\text{kg}} \cdot 0{,}500\,\text{kg} = 9{,}8\,\text{m/s}^2$
+**Vastaus:** $9{,}8\,\text{m/s}^2$, kaksi merkitsevää numeroa kuten mittaustuloksissa.
+**Järkevyys:** Tulos on lähellä tunnettua arvoa $9{,}81\,\text{m/s}^2$. Pisteiden suhteet $a : \Delta m$ ovat $19{,}2$; $20{,}2$; $19{,}2$; $19{,}9$ ja $19{,}4$ yksikössä $\dfrac{\text{m/s}^2}{\text{kg}}$, siis kaikki lähellä arvoa $19{,}6$. Kaavan mukaan $\Delta m = 250\,\text{g}$ antaa $a = \dfrac{0{,}250 \cdot 9{,}81}{0{,}500}\,\text{m/s}^2 = 4{,}9\,\text{m/s}^2$, ja se on pienempi kuin $g$, kuten pitääkin.
+
+## fy4-13-L2-06
+**Annettu:** kärryn massa $m_1 = 1{,}20\,\text{kg}$; mittauksesta, jossa punnuksen massa on $m_2 = 0{,}50\,\text{kg}$, kiihtyvyys $a = 2{,}84\,\text{m/s}^2$ (esimerkkiaineisto); $g = 9{,}81\,\text{m/s}^2$; kitka jätetään huomiotta, lanka ja väkipyörä ovat kevyet
+**Kysytty:** langan jännitysvoima $T$ yksikössä $\text{N}$
+**Periaate:** Kärryyn vaikuttaa pöydän suunnassa vain lanka, joten sen liikeyhtälöstä saadaan $T$ suoraan mitatusta kiihtyvyydestä. Tarkistuksena samasta mittauksesta lasketaan $T$ punnuksen liikeyhtälöstä, jossa $T$ on vastakkaissuuntainen painoon.
+**Kuvaajan lukeminen:** Taulukon rivi $m_2 = 0{,}50\,\text{kg}$ antaa $a = 2{,}84\,\text{m/s}^2$. Kiihtyvyys kasvaa punnuksen massan kasvaessa, mutta ei suoraan verrannollisesti: massa viisinkertaistuu ($0{,}10\,\text{kg} \to 0{,}50\,\text{kg}$), mutta kiihtyvyys vain nelinkertaistuu ($0{,}74 \to 2{,}84\,\text{m/s}^2$).
+**Voimakuvio:** Kärry suorakulmiona, positiivinen suunta langan suuntaan: $\overline{G}_1$ ja $\overline{N}$ kumoavat toisensa, vaakasuunnassa vaikuttaa vain $\overline{T}_1$. Punnus suorakulmiona, positiivinen suunta alas: $\overline{G}_2$ alas ja $\overline{T}_2$ ylös.
+```voimakuvio
+pinta 0
+G_1 11,77
+N 11,77
+T_1 3,41 oikea
+a oikea
+---
+G_2 4,905
+T_2 3,41 ylös
+a alas
+```
+**Kaava:** Kärry: $T = m_1 a$. Punnus: $m_2 g - T = m_2 a$, joten tarkistus $T = m_2\,(g - a)$
+**Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
+**Sijoitus:** $T = 1{,}20\,\text{kg} \cdot 2{,}84\,\text{m/s}^2 = 3{,}408\,\text{N}$. Tarkistus: $T = 0{,}50\,\text{kg} \cdot (9{,}81\,\text{m/s}^2 - 2{,}84\,\text{m/s}^2) = 0{,}50\,\text{kg} \cdot 6{,}97\,\text{m/s}^2 = 3{,}485\,\text{N}$
+**Vastaus:** $3{,}4\,\text{N}$, kaksi merkitsevää numeroa kuten kiihtyvyyden mittauksessa.
+**Järkevyys:** Kaksi tapaa antaa $3{,}4\,\text{N}$ ja $3{,}5\,\text{N}$, eli ne eroavat noin $2\,\%$, mikä sopii mittauksen tarkkuuteen. Teorian mukaan $a = \dfrac{0{,}50 \cdot 9{,}81}{1{,}70}\,\text{m/s}^2 = 2{,}89\,\text{m/s}^2$, joten mitattu $2{,}84\,\text{m/s}^2$ on hieman pienempi. Jännitysvoima on pienempi kuin punnuksen paino $4{,}9\,\text{N}$, kuten pitääkin.
+
+## fy4-13-L2-07
+**Annettu:** kärry $m_1 = 2{,}0\,\text{kg}$, punnus $m_2 = 0{,}50\,\text{kg}$, $g = 9{,}81\,\text{m/s}^2$; kitka ja ilmanvastus jätetään huomiotta, lanka ja väkipyörä ovat kevyet; oppilaan tulos $2{,}5\,\text{m/s}^2$
+**Kysytty:** oppilaan ratkaisun virhe ja oikea kiihtyvyys $a$ yksikössä $\text{m/s}^2$
+**Periaate:** Kummallekin kappaleelle kirjoitetaan oma liikeyhtälö, ja kiihtyvyys kiihdyttää koko systeemiä: sekä kärryä että punnusta. Oppilaan yhtälöt $T = m_1 a$ ja $m_2 g - T = m_2 a$ ovat oikeat, mutta ratkaisussa on virhe.
+**Voimakuvio:** Kärry suorakulmiona, positiivinen suunta oikealle: $\overline{G}_1$ ja $\overline{N}$ kumoavat toisensa, ja vaakasuunnassa vaikuttaa vain $\overline{T}_1$. Punnus suorakulmiona, positiivinen suunta alas: $\overline{G}_2$ alas ja $\overline{T}_2$ ylös.
+```voimakuvio
+pinta 0
+G_1 19,62
+N 19,62
+T_1 3,924 oikea
+a oikea
+---
+G_2 4,905
+T_2 3,924 ylös
+a alas
+```
+**Kaava:** Virhe: sijoituksen jälkeen yhtälö on $m_2 g - m_1 a = m_2 a$, ja punnuksen massa kuuluu myös nimittäjään: $m_2 g = m_1 a + m_2 a = (m_1 + m_2)\,a$. Oppilas unohti punnuksen massan, eli koko liikkuvan systeemin massan $m_1 + m_2$. Oikein $a = \dfrac{m_2 g}{m_1 + m_2}$
+**Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
+**Sijoitus:** $a = \dfrac{0{,}50\,\text{kg} \cdot 9{,}81\,\text{m/s}^2}{2{,}0\,\text{kg} + 0{,}50\,\text{kg}} = \dfrac{4{,}905\,\text{N}}{2{,}5\,\text{kg}} = 1{,}962\,\text{m/s}^2$
+**Vastaus:** $2{,}0\,\text{m/s}^2$, kaksi merkitsevää numeroa kuten tiedoissa $2{,}0\,\text{kg}$ ja $0{,}50\,\text{kg}$. Oppilaan tulos oli liian suuri, koska hän jakoi vain kärryn massalla.
+**Järkevyys:** Jännitysvoima $T = m_1 a = 2{,}0\,\text{kg} \cdot 1{,}962\,\text{m/s}^2 = 3{,}92\,\text{N}$ on pienempi kuin punnuksen paino $4{,}9\,\text{N}$, ja erotus $0{,}98\,\text{N}$ on $m_2 a = 0{,}50\,\text{kg} \cdot 1{,}962\,\text{m/s}^2$. Oppilaan arvolla $a = 2{,}45\,\text{m/s}^2$ punnuksen liikeyhtälö ei toteutuisi: $4{,}905\,\text{N} - 4{,}9\,\text{N} \ne 0{,}50\,\text{kg} \cdot 2{,}45\,\text{m/s}^2$.
+
+## fy4-13-L3-04
+**Annettu:** vaunujen massat $m_1 = 24\,\text{t}$, $m_2 = 18\,\text{t}$ ja $m_3 = 12\,\text{t}$; taulukosta nopeus $v = 0$ hetkellä $t = 0$ ja $v = 10{,}02\,\text{m/s}$ hetkellä $t = 20{,}0\,\text{s}$ (esimerkkiaineisto); kytkimen suurin sallittu voima $20\,\text{kN}$; vastusvoimat jätetään huomiotta
+**Kysytty:** a) junan kiihtyvyys $a$; b) vaunujen 1 ja 2 välisen kytkimen voima $K_{12}$ yksikössä $\text{kN}$; c) kytkimen voima, kun vaunut ovat järjestyksessä $12\,\text{t}$, $18\,\text{t}$, $24\,\text{t}$, ja kestääkö kytkin
+**Periaate:** Vaunut ovat kytketyt, joten ne liikkuvat yhdessä samalla kiihtyvyydellä $a$. Kullekin vaunulle kirjoitetaan oma liikeyhtälö. Kytkin vaunujen 1 ja 2 välillä vetää vaunua 2 eteenpäin ja sen takana olevat vaunut 2 ja 3 vastustavat sitä, joten kytkimen voima kiihdyttää kaikkia sen takana olevia vaunuja. Kolmannen lain mukaan vaunu 2 vetää vaunua 1 taaksepäin yhtä suurella voimalla.
+**Kuvaajan lukeminen:** Nopeus kasvaa tasaisesti noin $2{,}5\,\text{m/s}$ jokaisella viiden sekunnin välillä ($2{,}46$; $2{,}57$; $2{,}45$; $2{,}54\,\text{m/s}$), joten $(t, v)$-kuvaaja on lähes suora ja kiihtyvyys on vakio. Kulmakerroin päätepisteistä on $a = \dfrac{10{,}02\,\text{m/s} - 0}{20{,}0\,\text{s} - 0} = 0{,}50\,\text{m/s}^2$.
+**Voimakuvio:** Vaunu 3 suorakulmiona, positiivinen suunta junan liikkeen suuntaan: vaakasuunnassa vain kytkimen voima $\overline{K}_{23}$ eteenpäin. Vaunu 2: $\overline{K}_{12}$ eteenpäin ja $\overline{K}_{23}$ taaksepäin. Vaunu 1: veturin voima eteenpäin ja $\overline{K}_{12}$ taaksepäin. Jokaisessa vaunussa paino ja tukivoima kumoavat toisensa. Nuolet $\overline{K}_{12}$ ovat yhtä pitkät vaunuissa 1 ja 2, ja $\overline{K}_{23}$ yhtä pitkät vaunuissa 2 ja 3 (kolmas laki), ja $\overline{K}_{12}$ on pidempi kuin $\overline{K}_{23}$.
+**Kaava:** Vaunu 3: $K_{23} = m_3 a$. Vaunu 2: $K_{12} - K_{23} = m_2 a$. Yhteenlaskusta $K_{12} = (m_2 + m_3)\,a$
+**Muunnokset:** $m_2 + m_3 = 18\,\text{t} + 12\,\text{t} = 30\,\text{t} = 30\,000\,\text{kg}$ ja $1\,\text{kN} = 1000\,\text{N}$.
+**Sijoitus:** b) $K_{12} = 30\,000\,\text{kg} \cdot 0{,}50\,\text{m/s}^2 = 15\,000\,\text{N} = 15\,\text{kN}$
+c) Uusi järjestys on $12\,\text{t}$, $18\,\text{t}$, $24\,\text{t}$, ja vaunujen 1 ja 2 välisen kytkimen takana ovat $18\,\text{t}$ ja $24\,\text{t}$, yhteensä $42\,\text{t}$. Silloin $K_{12}' = 42\,000\,\text{kg} \cdot 0{,}50\,\text{m/s}^2 = 21\,000\,\text{N} = 21\,\text{kN}$
+**Vastaus:** b) $15\,\text{kN}$, kaksi merkitsevää numeroa kuten tiedoissa $18\,\text{t}$ ja $12\,\text{t}$. a) $a = 0{,}50\,\text{m/s}^2$. c) $21\,\text{kN}$, joten kytkin, jonka raja on $20\,\text{kN}$, ei kestä uudessa järjestyksessä. Syy: kytkimen voima kiihdyttää kaikkia sen takana olevia vaunuja, ja raskain vaunu on nyt kytkimen takana.
+**Järkevyys:** Alkuperäisessä järjestyksessä kytkimet ovat $K_{12} = 15\,\text{kN}$ ja $K_{23} = 12\,000\,\text{kg} \cdot 0{,}50\,\text{m/s}^2 = 6{,}0\,\text{kN}$, ja veturin voima vaunuun 1 on $54\,000\,\text{kg} \cdot 0{,}50\,\text{m/s}^2 = 27\,\text{kN}$. Voima pienenee veturista taaksepäin, koska jokainen kytkin kiihdyttää yhä vähemmän massaa, ja vaunun 2 yhtälö tarkistuu: $15\,\text{kN} - 6{,}0\,\text{kN} = 9{,}0\,\text{kN} = 18\,000\,\text{kg} \cdot 0{,}50\,\text{m/s}^2$.
+
+## fy4-13-L3-05
+**Annettu:** matka $s = 0{,}80\,\text{m}$ levosta; taulukosta $m_2 = 0{,}100$; $0{,}200$; $0{,}300$ ja $0{,}400\,\text{kg}$ ja ajat $t = 1{,}29$; $0{,}96$; $0{,}80$ ja $0{,}73\,\text{s}$ (esimerkkiaineisto); $g = 9{,}81\,\text{m/s}^2$; kitka jätetään huomiotta, lanka ja väkipyörä ovat kevyet
+**Kysytty:** a) kiihtyvyydet ja kaava $m_1$:lle; b) kärryn massan $m_1$ keskiarvo yksikössä $\text{kg}$; c) kärryn liike punnuksen osuttua lattiaan ja sen nopeus
+**Periaate:** Kappaleet lähtevät levosta ja kiihtyvyys on vakio, joten $s = \tfrac{1}{2}at^2$ antaa $a$:n ajasta. Kummallekin kappaleelle kirjoitetaan oma liikeyhtälö, ja niistä $m_1$ ratkeaa, kun $a$ ja $m_2$ tunnetaan. Kun lanka löystyy, kärryyn ei vaikuta vaakasuunnassa enää mikään voima, joten ensimmäinen laki ratkaisee c)-kohdan.
+**Kuvaajan lukeminen:** Taulukosta luetaan neljä mittausta $(m_2, t)$. Aika lyhenee, kun punnus kasvaa, mikä on järkevää, koska kiihtyvyys kasvaa.
+**Kaava:** a) $a = \dfrac{2s}{t^2}$. Kärry: $T = m_1 a$. Punnus: $m_2 g - T = m_2 a$. Sijoittamalla $m_2 g = m_1 a + m_2 a$, joten $m_1 = m_2 \left(\dfrac{g}{a} - 1\right)$. b) $m_{1,\text{ka}} = \dfrac{\Sigma m_1}{n}$. c) $v = at$ ja $s = \tfrac{1}{2}vt$, joten $v = \dfrac{2s}{t}$
+**Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
+**Sijoitus:** a) Kiihtyvyydet ovat $a = \dfrac{1{,}60\,\text{m}}{t^2}$: $0{,}961$; $1{,}736$; $2{,}500$ ja $3{,}002\,\text{m/s}^2$.
+b) $m_1 = m_2 \left(\dfrac{g}{a} - 1\right)$ antaa kullekin mittaukselle
+$m_1 = 0{,}100\,\text{kg} \cdot (10{,}20 - 1) = 0{,}920\,\text{kg}$,
+$m_1 = 0{,}200\,\text{kg} \cdot (5{,}65 - 1) = 0{,}930\,\text{kg}$,
+$m_1 = 0{,}300\,\text{kg} \cdot (3{,}924 - 1) = 0{,}877\,\text{kg}$ ja
+$m_1 = 0{,}400\,\text{kg} \cdot (3{,}27 - 1) = 0{,}907\,\text{kg}$.
+Massojen summa on $3{,}634\,\text{kg}$, joten $m_{1,\text{ka}} = \dfrac{3{,}634\,\text{kg}}{4} = 0{,}909\,\text{kg}$.
+c) Kun $m_2 = 0{,}200\,\text{kg}$, $v = \dfrac{2 \cdot 0{,}80\,\text{m}}{0{,}96\,\text{s}} = 1{,}67\,\text{m/s}$.
+**Vastaus:** b) $0{,}91\,\text{kg}$, kaksi merkitsevää numeroa kuten mittaustuloksissa. c) Kun punnus osuu lattiaan, lanka löystyy eikä kärryyn vaikuta enää vaakasuuntaista voimaa. Ensimmäisen lain mukaan kärry jatkaa liikettä tasaisella nopeudella, noin $1{,}7\,\text{m/s}$, kunnes jokin muu voima vaikuttaa siihen.
+**Järkevyys:** Neljä massaa ovat $0{,}88$–$0{,}93\,\text{kg}$, eli ne poikkeavat keskiarvosta enintään $4\,\%$, ja ero on satunnaisvaihtelua, ei suuntautunutta. Tarkistus: $a = \dfrac{m_2 g}{m_1 + m_2} = \dfrac{0{,}200 \cdot 9{,}81}{1{,}109}\,\text{m/s}^2 = 1{,}77\,\text{m/s}^2$ on lähellä mitattua $1{,}74\,\text{m/s}^2$. Loppunopeus $1{,}67\,\text{m/s}$ on kaksinkertainen keskinopeuteen $s : t = 0{,}83\,\text{m/s}$ nähden, kuten tasaisesti kiihtyvässä liikkeessä pitääkin.
