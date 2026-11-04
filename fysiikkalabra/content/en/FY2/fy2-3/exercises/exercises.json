@@ -54,7 +54,7 @@
       "choices": [
         {
           "text": "Device B transforms twice as much energy every second as device A.",
-          "feedback": "Correct: power tells the quotient of the transformed energy and time, so twice the power means twice the energy in every unit of time.",
+          "feedback": "Correct: power is the energy transformed divided by the time taken, so twice the power means twice the energy in every unit of time.",
           "correct": true
         },
         {

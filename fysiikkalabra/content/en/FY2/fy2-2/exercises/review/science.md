@@ -1,13 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: bee145955f2ea545
+CONTENT-HASH: fbb196b146849b7c
+Mode: delta
+Round: 1
 
 ## Blocking
 (none)
+
+## Fixed
+- L2-07 exercises.json: "What does the slope tell?" changed to "What does the slope tell you?".
+- L2-06 solutions.md Principle: "are not of the same size class even if their numbers are combined" replaced with "are not in the same unit, even though their numbers can be added together" (clearer).
 
 ## Polish
 - (none)
 
 ## Checked
-- exercises.json and solutions.md compared with the Finnish, all 12 exercises: numbers, answers, tolerances, figure id (fy2-2/tikapuut-kohteet) and the graph reading in L1-05 are identical; solutions recomputed (54 000 J, 2.3, 140 GJ, 3 MJ, 10^5, 3.0 MJ, 1.3 GJ, 6.0 kJ, 950, 6 units, 3200 houses, 1.2*10^7 l).
-- Units: answer units 'kpl' translated correctly (bars, batteries, units, houses); J, kJ, MJ, GJ and l unchanged.
-- No Finnish words in the English text.
+- New exercises L1-06..08, L2-05..07, L3-04..05 compared with the reviewed Finnish in exercises.json: ids, kind, level, answers (incl. the choice answer 0.0033 GJ), units, tolerances, correct flag, all four choices and their feedback, all data table cells and every number are identical.
+- solutions.md: all math segments of the 8 new solutions equal the Finnish (formula parity); numbers recomputed: 1200 kJ, 350 MJ, 1.6 MJ and 7.3 km, 2.5 MJ, 6.0 km (slope 250 kJ/km), 49 000 times (3 200 000 / 65 GJ), 0.89 kg (1.10 MJ/day x 30 / 37).
+- Decimal point used throughout in JSON and LaTeX; no mixed separators.
+- Unit labels ("km", "kJ", "MJ", "times"/"kertaa", "kg") translated correctly.
+- check_i18n.py en: 0 errors. No Finnish left in the English text.

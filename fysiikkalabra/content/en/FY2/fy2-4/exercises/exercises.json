@@ -282,7 +282,7 @@
         "reasoning"
       ],
       "answer": 3.1,
-      "unit": "kertaa",
+      "unit": "times",
       "tolerance": 0.03
     },
     {

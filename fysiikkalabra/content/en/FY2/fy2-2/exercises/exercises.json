@@ -177,7 +177,7 @@
     {
       "id": "fy2-2-L2-07",
       "level": 2,
-      "text": "In an example data set, a test subject walked distances of different lengths, and the energy $E$ used during the distance $s$ was read from an activity band. Draw a graph of the measurement points and fit a straight line to the points. Determine its slope and use it to calculate what length of walk corresponds in energy to a chocolate bar of $1.5\\,\\text{MJ}$. Give the answer in kilometres. What does the slope tell?",
+      "text": "In an example data set, a test subject walked distances of different lengths, and the energy $E$ used during the distance $s$ was read from an activity band. Draw a graph of the measurement points and fit a straight line to the points. Determine its slope and use it to calculate what length of walk corresponds in energy to a chocolate bar of $1.5\\,\\text{MJ}$. Give the answer in kilometres. What does the slope tell you?",
       "kind": [
         "data",
         "graph",

@@ -157,7 +157,7 @@
 ## fy2-2-L2-06
 **Given:** breakfast $0.85\,\text{MJ}$, lunch $1200\,\text{kJ}$ and snack $450\,\text{kJ}$; the student's result $1650.85\,\text{kJ}$
 **Find:** the student's error and the correct energy $E$ in megajoules
-**Principle:** Energies are added only in the same unit. A prefix is a multiplier, so $0.85\,\text{MJ}$ and $1200\,\text{kJ}$ are not of the same size class even if their numbers are combined. The student added the numbers together and attached one unit to the sum.
+**Principle:** Energies are added only in the same unit. A prefix is a multiplier, so $0.85\,\text{MJ}$ and $1200\,\text{kJ}$ are not in the same unit, even though their numbers can be added together. The student added the numbers together and attached one unit to the sum.
 **Formula:** $E = E_\text{breakfast} + E_\text{lunch} + E_\text{snack}$
 **Conversions:** Convert the kilojoules to megajoules: $1200\,\text{kJ} = 1200 : 1000\,\text{MJ} = 1.2\,\text{MJ}$ and $450\,\text{kJ} = 0.45\,\text{MJ}$.
 **Substitution:** $E = 0.85\,\text{MJ} + 1.2\,\text{MJ} + 0.45\,\text{MJ} = 2.5\,\text{MJ}$

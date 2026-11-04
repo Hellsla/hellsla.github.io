@@ -1,11 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: c11e0f950044a3ea
+CONTENT-HASH: e321927e96884da9
 
 ## Blocking
 (none)
+
+## Fixed
+- L1-06 feedback reworded (see science.md).
 
 ## Polish
 (none)
 
 ## Checked
-- Full translation review: tasks keep the Finnish difficulty ladder and sequence (L1 direct use of P = E/t, L2 unit conversions, L3 multi-step and reasoning); wording is natural English and does not give answers away; solution structure (Given, Find, Principle, Formula, Conversions, Substitution, Answer, Reasonableness) as in the Finnish.
+- Natural, short English; tasks say what to give (unit, kW, W, GWh, EUR) and do not give answers away.
+- Feedback on wrong choices is the same as in the Finnish: names the misconception (kW vs kWh, power vs total energy, slope vs height of line).
+- Solutions keep all steps in the Finnish order with real reasonableness checks; "fridge (compressor running)", "balancing power" and "c/kWh" are natural terms.
+- Levels and sequence (8 new tasks) match the reviewed Finnish.
