@@ -187,7 +187,7 @@
 **Formula:** $E_\text{useful} = \eta H m$, so $m = \dfrac{E_\text{useful}}{\eta H}$, and $\Delta m = m_\text{wood} - m_\text{pellet}$
 **Conversions:** Not needed: the energy is in megajoules and the heats of combustion in megajoules per kilogram. The percentages as ratios are $70\,\% = 0.70$, $85\,\% = 0.85$, $90\,\% = 0.90$ and $75\,\% = 0.75$.
 **Substitution:** $m_\text{wood} = \dfrac{36\,000\,\text{MJ}}{0.70 \cdot 15\,\tfrac{\text{MJ}}{\text{kg}}} = 3429\,\text{kg}$, $m_\text{pellet} = \dfrac{36\,000\,\text{MJ}}{0.85 \cdot 17\,\tfrac{\text{MJ}}{\text{kg}}} = 2491\,\text{kg}$ and $m_\text{oil} = \dfrac{36\,000\,\text{MJ}}{0.90 \cdot 43\,\tfrac{\text{MJ}}{\text{kg}}} = 930\,\text{kg}$. The difference is $\Delta m = 3429\,\text{kg} - 2491\,\text{kg} = 938\,\text{kg}$. At efficiency $0.75$ the pellets used are $m_\text{pellet}' = \dfrac{36\,000\,\text{MJ}}{0.75 \cdot 17\,\tfrac{\text{MJ}}{\text{kg}}} = 2824\,\text{kg}$.
-**Answer:**
+**Answer:** in the answer box, the result of part b), $940\,\text{kg}$.
 a) The wood used is $3400\,\text{kg}$, the pellets $2500\,\text{kg}$ and the oil $930\,\text{kg}$.
 b) About $940\,\text{kg}$ more wood than pellets is used, two significant figures like the data $36\,000\,\text{MJ}$.
 c) The consumption of pellets rises at efficiency $0.75$ to $2800\,\text{kg}$, that is $330\,\text{kg}$ more: when the efficiency drops, part of the energy released goes to losses and more fuel is needed for the same useful energy.

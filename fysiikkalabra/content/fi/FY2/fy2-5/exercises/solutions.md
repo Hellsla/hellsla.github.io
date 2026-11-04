@@ -187,7 +187,7 @@
 **Kaava:** $E_\text{hyöty} = \eta H m$, josta $m = \dfrac{E_\text{hyöty}}{\eta H}$, ja $\Delta m = m_\text{puu} - m_\text{pelletti}$
 **Muunnokset:** Ei tarvita: energia on megajouleina ja lämpöarvot megajouleina kilogrammaa kohti. Prosentit ovat suhdelukuina $70\,\% = 0{,}70$, $85\,\% = 0{,}85$, $90\,\% = 0{,}90$ ja $75\,\% = 0{,}75$.
 **Sijoitus:** $m_\text{puu} = \dfrac{36\,000\,\text{MJ}}{0{,}70 \cdot 15\,\tfrac{\text{MJ}}{\text{kg}}} = 3429\,\text{kg}$, $m_\text{pelletti} = \dfrac{36\,000\,\text{MJ}}{0{,}85 \cdot 17\,\tfrac{\text{MJ}}{\text{kg}}} = 2491\,\text{kg}$ ja $m_\text{öljy} = \dfrac{36\,000\,\text{MJ}}{0{,}90 \cdot 43\,\tfrac{\text{MJ}}{\text{kg}}} = 930\,\text{kg}$. Erotus on $\Delta m = 3429\,\text{kg} - 2491\,\text{kg} = 938\,\text{kg}$. Hyötysuhteella $0{,}75$ pellettejä kuluu $m_\text{pelletti}' = \dfrac{36\,000\,\text{MJ}}{0{,}75 \cdot 17\,\tfrac{\text{MJ}}{\text{kg}}} = 2824\,\text{kg}$.
-**Vastaus:**
+**Vastaus:** vastauslaatikkoon kohdan b) tulos $940\,\text{kg}$.
 a) Puuta kuluu $3400\,\text{kg}$, pellettejä $2500\,\text{kg}$ ja öljyä $930\,\text{kg}$.
 b) Puuta kuluu noin $940\,\text{kg}$ enemmän kuin pellettejä, kaksi merkitsevää numeroa kuten tiedoissa $36\,000\,\text{MJ}$.
 c) Pellettien kulutus nousee hyötysuhteella $0{,}75$ määrään $2800\,\text{kg}$, eli $330\,\text{kg}$ enemmän: kun hyötysuhde laskee, osa vapautuvasta energiasta menee häviöihin ja samaan hyötyenergiaan tarvitaan enemmän polttoainetta.
