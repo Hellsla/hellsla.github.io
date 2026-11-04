@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 6aa4a2e3908d90f9
-Round: 2
+CONTENT-HASH: 60d9e9328cf45092
+Round: 3. Re-review: the only change since the PASS is the boxed value moved to the start of the first answer-step line (answers_shown).
 
 ## Blocking
 
@@ -15,3 +15,4 @@ Round: 2
 - L1-06, L1-07, L2-07 options reordered: exactly one `correct` each, `answer` equals that option's text, every distractor wrong and its feedback right.
 - L2-05 table only changed its decimal sign; 72,25 %, 92,0 %, 0,145 nm unchanged. answers.py unchanged and still equal to the keys.
 - Set coherent with the plan in docs/exercise-bank/FY8.md; no duplicates; levels fit. Hash identical at start and end.
+- L2-05 answer step now starts "Vastauslaatikkoon $72{,}3\,\%$." It equals 289 : 400 = 72,25 % rounded to 3 s.f., the key 72,25 (tol 0,02) and b); same unit, LaTeX with decimal comma; the line reads well.

@@ -1,7 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 6aa4a2e3908d90f9
-Round: 2
-
+CONTENT-HASH: 60d9e9328cf45092
+Round: 3
 ## Blocking
 (none) Round 1 Blocking resolved: the L2-05 (5-13) class ranges now read "0,00–0,05" … "0,25–0,30" with a decimal comma in all six rows, matching the task text and solution.
 
@@ -15,6 +14,7 @@ Round: 2
 - Opened at 1280 px: open-exercises-L2-1280-7 (5-14 changed task text, figure fy8-5/string, node labels, answer box Hz), open-exercises-L3-1280-8 (L3-05 with NIST source line, constants).
 - Read the diff against 8041d06bb: MC option order changed, L2-06 now asks λ and f for all three states (40/80/120 Hz recomputed, match), spectrum and L3-05 task texts split into paragraphs, L3-05 source (NIST) added. All numbers match answers.
 - No 360 px exercise capture exists; layout check at 360 px is clean per packet.
+- Delta (boxed value added to the Vastaus first line of L2-05): 72,3 % is correct (72,25 % in the solution and exercises.json within tolerance), LaTeX number+unit and decimal comma right; the line is short and reads well.
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 4 · accessibility 4

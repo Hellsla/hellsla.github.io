@@ -1,8 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: 6aa4a2e3908d90f9
+CONTENT-HASH: 60d9e9328cf45092
 
-Round: 2
-
+Round: 3
 ## Blocking
 (none)
 
@@ -18,3 +17,4 @@ Round: 2
 - Vastausvaihtoehtojen järjestys sekoitettu (oikea ei enää ensimmäisenä) L1-xx ja L2-07; vain yksi oikea kussakin.
 - Ratkaisut: kaikki vaiheet mukana, kohdat omina kappaleinaan L2-05 ja L2-06.
 - Määrät 8/7/5 ja tasot sopivat; ei kaksoiskappaleita. Kaappauksia ei avattu uudelleen, koska muutokset ovat tekstimuutoksia.
+- Delta (Vastaus line now starts with "Vastauslaatikkoon $72{,}3\,\%$."): L2-05 b) 72,25 % rounds to 72,3 %, matches the solution, exercises.json answer 72,25 (tol 2 %), same unit, decimal comma; the line reads well.
